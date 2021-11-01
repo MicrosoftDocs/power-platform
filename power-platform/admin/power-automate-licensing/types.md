@@ -108,7 +108,7 @@ You may want to communicate with apps/services that aren't available as prebuilt
 
 ### Robotic Process Automation
 
-What if I have an application that Power Automate doesn't have a connector for, and I can't create a custom connector because the app doesn't have an API? This is where _robotic process automation_ (RPA) comes in. You can use RPA to create automation even in older systems that don't have an API. With RPA, you automate applications by teaching Power Automate to mimic the mouse movements and keyboard entries of a human user, as if a robot was using the computer. In other words, whereas digital process automation provides connectors so you can _tell_ the application what to do, with RPA, you _show_ it what to do.
+What if I have an application that Power Automate doesn't have a connector for, and I can't create a custom connector because the app doesn't have an API? _Robotic process automation_ (RPA) is perfect for scenarios such as this one. You can use RPA to create automation even in older systems that don't have an API. With RPA, you automate applications by teaching Power Automate to mimic the mouse movements and keyboard entries of a human user, as if a robot was using the computer. In other words, whereas digital process automation provides connectors so you can _tell_ the application what to do, with RPA, you _show_ it what to do.
 
 ### On premises gateway
 
@@ -122,14 +122,14 @@ Different scenarios (for example, forms processing, prediction, etc.) consume se
 
 ### Dataverse database and file capacity
 
-Data volume continues to grow exponentially as businesses advance their digital transformation journey and bring data together across their organizations. Modern business applications need to support new business scenarios, manage new data types, and help organizations with the increasing complexity of compliance mandates. To support the growing needs of today's organizations, data storage solutions need to evolve continuously and provide the right solution to support expanding business needs. Microsoft Dataverse capacity storage is optimized for relational data (database), attachments (file), and audit logs (log). Power Automate standalone license customers receive a tenant-wide default entitlement for each of these three storage types. Additional storage can be purchased in 1-GB increments. Learn more about [Dataverse capacity storage](/power-platform/admin/capacity-storage).
+Data volume continues to grow exponentially as businesses advance their digital transformation journey and bring data together across their organizations. Modern business applications need to support new business scenarios, manage new data types, and help organizations with the increasing complexity of compliance mandates. To support the growing needs of today's organizations, data storage solutions need to evolve continuously and provide the right solution to support expanding business needs. Microsoft Dataverse capacity storage is optimized for relational data (database), attachments (file), and audit logs (log). Power Automate standalone license customers receive a tenant-wide default entitlement for each of these three storage types. You can buy more storage in 1-GB increments. Learn more about [Dataverse capacity storage](/power-platform/admin/capacity-storage).
 
 ## Power Platform requests
 
-To help ensure service levels, availability and quality, there are limits to the number of Power Platform requests users can make across all Power Platform products. Service limits are set against normal usage patterns in both 5 minute and per 24 hour intervals. Most customers will not exceed these limits.
+To help ensure service levels, availability and quality, there are limits to the number of Power Platform requests users can make across all Power Platform products. Service limits are set against normal usage patterns in both five minute and per 24 hour intervals. Most customers will not exceed these limits.
 
-- The 24 hour limit is based on the user or flow license. If a user has a Power Automate per user plan, they can make 40,000 Power Platform requests across all their flows of the tenant in a 24 hour period. This includes requests the platform makes to 3rd party connectors too. The 24 hours is a sliding window, meaning anytime a flow is running, the system looks at the requests in the past 24 hours to identify if the user is at the limit. If a flow has the per flow plan, the flow can make 250,000 Power Platform requests across all users of the flow in a 24 hour period. To prevent a usage-heavy flow or user from impacting other users, this capacity is tracked based on consumption at an individual user or flow level and it cannot be pooled at any other level like environment or tenant levels. For example, two users in a tenant may have per user licenses and each gets 40,000 requests per day. If the first person uses more than 40,000 requests, their flows will slow down and will not impact the second user who only used 20,000 requests and still has 20,000 requests remaining.
-- The 5 minute limit is 100,000 requests and it is independent of a user's license. For example, flows with a per flow license can make 250,000 requests in 24 hours but they cannot make more than 100,000 requests in 5 minutes. 
+- The 24 hour limit is based on the user or flow license. If a user has a Power Automate per user plan, they can make 40,000 Power Platform requests across all their flows of the tenant in a 24 hour period. This includes requests the platform makes to third party connectors too. The 24 hours is a sliding window, meaning anytime a flow is running, the system looks at the requests in the past 24 hours to identify if the user is at the limit. If a flow has the per flow plan, the flow can make 250,000 Power Platform requests across all users of the flow in a 24 hour period. To prevent a usage-heavy flow or user from impacting other users, this capacity is tracked based on consumption at an individual user or flow level and it cannot be pooled at any other level like environment or tenant levels. For example, two users in a tenant may have per user licenses and each gets 40,000 requests per day. If the first person uses more than 40,000 requests, their flows will slow down and will not impact the second user who only used 20,000 requests and still has 20,000 requests remaining.
+- The five minute limit is 100,000 requests and it is independent of a user's license. For example, flows with a per flow license can make 250,000 requests in 24 hours but they cannot make more than 100,000 requests in five minutes.
 
 - <!--todo: Create a table to replace this image-->
 
@@ -145,14 +145,14 @@ Based on license plan, there are limits to the number of actions a cloud flow ca
 
 Even when the flow uses fewer Power Platform requests, you can still reach your limits if the flow runs more frequently than you expect. For example, you might create a cloud flow that sends you a push notification whenever your manager sends you an email. That flow must run every time you get an email (from anyone) because the flow must check whether the email came from your manager. The limit applies to all runs across all your flows in a 24 hour period. Here are some guidelines to estimate the request usage of a flow.
 
-- One or more actions run as part of a flow run. A simple flow with 1 trigger and 1 action results in 2 "actions" each time the flow runs, consuming 2 requests.
-- Every trigger/action in the flow generates Power Platform requests. All kinds of actions like connector actions, HTTP actions, built-in actions (from initializing variables, creating scopes to a simple compose action) generate Power Platform requests. For example, a flow that connects SharePoint, Exchange, Twitter and Dataverse, all those actions are counted towards Power Platform request limits.
+- One or more actions run as part of a flow run. A simple flow with one trigger and one action results in two "actions" each time the flow runs, consuming 2 requests.
+- Every trigger/action in the flow generates Power Platform requests. All kinds of actions like connector actions, HTTP actions, built-in actions (from initializing variables, creating scopes to a simple compose action) generate Power Platform requests. For example, a flow that connects SharePoint, Exchange, Twitter, and Dataverse, all those actions are counted towards Power Platform request limits.
 - Both succeeded and failed actions count towards these limits. Skipped actions are not counted towards these limits.
 - Each action generates one request. If the action is in an apply to each loop, it generates more Power Platform requests as the loop executes.
 - An action can have multiple expressions but it's counted as one API request.
 - Retries and additional requests from pagination count as action executions as well.
 
-Consider the following flow where every email attachment is saved to OneDrive. The trigger consumes 1 Power Platform request, Apply to each consumes 1 request, and the actions within Apply to each consume multiple requests based on the number of times the loop runs. If there are 4 attachments, this section consumes 8 Power Platform requests (4 x 2 actions). In total, this flow consumes 10 Power Platform requests.
+Consider the following flow where every email attachment is saved to OneDrive. The trigger consumes one Power Platform request, Apply to each consumes one request, and the actions within Apply to each consume multiple requests based on the number of times the loop runs. If there are four attachments, this section consumes eight Power Platform requests (4 x 2 actions). In total, this flow consumes 10 Power Platform requests.
 
 ![An image of a sample flow](../media/power-automate-licensing/sample-flow.png)
 
@@ -186,7 +186,7 @@ Additionally, you can see the action usage for a given flow by selecting the  **
 
 #### As an admin, what tools do I have to analyze my environment's usage?
 
-Once the transition period ends, admins will have 2 reports available in the Power Platform admin center.
+Once the transition period ends, admins will have two reports available in the Power Platform admin center.
 
 - User report – This report displays the Power Platform request usage by every user in the environment, compared to their assigned limits.
 
@@ -262,7 +262,7 @@ Based on the license of the owner, a flow gets a performance profile which in tu
 | Medium | 100,000 | 40,000 |
 | High | 500,000 | 250,000 |
 
-#### In an organization, 8 users have Office 365 licenses and their daily Power Platform requests would be 6000 requests per user, in each 24 hour period. Does that mean that it will be pooled to the tenant level with a limit of 48000 requests in each 24 hour period (8X6000) and all users can consume from this pool?
+#### In an organization, eight users have Office 365 licenses and their daily Power Platform requests would be 6000 requests per user, in each 24 hour period. Does that mean that it will be pooled to the tenant level with a limit of 48000 requests in each 24 hour period (8X6000) and all users can consume from this pool?
 
 No. Power Platform requests are not pooled at the environment nor tenant level. This ensures that a heavy user doesn't consume all the Power Platform requests of the tenant and impact everyone else. Since the license is per user, the limit is per user too. So, all Office customers get 6000 requests each, whether they use them or not.
 
@@ -283,14 +283,14 @@ Best practices to scale your flow.
 - If your flow runs thousands of actions daily, you should consider purchasing a Per Flow license to get better throughput and higher quotas.Per Flow plan provides the best performance quota available (250K actions/day). Please reach out to your tenant administrator to purchase the license and assign it to the flow. Once the license is purchased and assigned, the author of the flow should save it again. Alternatively, flows will be updated in the background once per week to reflect current plans.
 - Consider splitting the workload across multiple flows to achieve high scale.
 
-### Pay-as-you-go 
+### Pay-as-you-go
 
-We revised the Power Platform request limts for all licenses in late 2021. The new limits are designed to be sufficient for most customer scenarios. For more information on Power Platform request limits, visit the [Requests limits and allocations](https://aka.ms/platformlimits) page.
+We revised the Power Platform request limits for all licenses in late 2021. The new limits are designed to be sufficient for most customer scenarios. For more information on Power Platform request limits, visit the [Requests limits and allocations](https://aka.ms/platformlimits) page.
 
 For customers with extremely high scale scenarios who need to exceed these limits you can link those environments to Azure subscription. By linking the environment, users and flows in the environment can consume more than their limits without being throttled and only pay for the Power Platform requests used above those limits. Flows still need to be licensed with a base license (either Power Automate per user, Power Automate per flow, Office 365, Power Apps, or Dynamics). For example, if you have Power Automate per user license, you have a limit of 40,000 Power Platform requests/per user/day. If the user used 45,000 requests a day, the additional 5,000 requests is multiplied by a $/request rate and billed to the Azure subscription. The total amount will be summed and billed based on the customer’s Azure billing cycle.
 
 >[!NOTE]
->If you link an environment to an Azure subscription, this meter will not be reported or billed. Reporting and billing will be turned on by the end of calendar year 2021. 
+>If you link an environment to an Azure subscription, this meter will not be reported or billed. Reporting and billing will be turned on by the end of calendar year 2021.
 
 ### FAQs about request limits
 
@@ -315,7 +315,7 @@ There is a [free community plan to learn about Power Platform](https://powerapps
 
 ## Trials
 
-Power Automate trials are available for 90 days. There are 2 types of trials available for Power Automate.
+Power Automate trials are available for 90 days. There are two types of trials available for Power Automate.
 
 ### Admin managed trial
 
@@ -375,7 +375,7 @@ Admins can use PowerShell cmdlets to enable or disable trails. Once disabled, al
 
 You can convert either type of trial environments to a production environment by switching it to consume from paid capacity, keeping it from being disabled and deleted. After it becomes a production environment, it follows the paid license lifecycle.
 
-#### Do trials work in GCC and gov clouds?
+#### Do trials work in GCC and government clouds?
 
 No. Trials won't work in government clouds (GCC), and they can only purchase plans with volume discounting.
 
