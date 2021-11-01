@@ -86,17 +86,21 @@ Connectors represent the app/service to which your flows connect. For example, O
 
 ### Standard connectors
 
-[Standard connectors](https://flow.microsoft.com/connectors/?filter=&category=standard) are included in your standard Microsoft 365 subscription. The list of available connectors increases continuously.
+[Standard connectors](/connectors/connector-reference/connector-reference-standard-connectors) are included in your standard Microsoft 365 subscription. We are continuously adding more standard connectors.
 
+<!--
 ![List of standard connectors](../media/power-automate-licensing/standard-connectors.png)
+-->
 
 ### Premium connectors
 
 Premium connectors are not included in the Microsoft 365 license but included in all [standalone plans](#standalone-plans).
 
-Here's the full list of [premium connectors](https://flow.microsoft.com/connectors/?filter=&category=premium) in Power Automate.
+Here's the full list of [premium connectors](/connectors/connector-reference/connector-reference-premium-connectors) in Power Automate.
 
+<!--
 ![List of premium connectors](../media/power-automate-licensing/premium-connectors.png)
+-->
 
 ### Business process flows
 
