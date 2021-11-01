@@ -63,14 +63,14 @@ Power Platform environments follow a specific service update schedule as environ
 
 ### Solution import and environment version
 
-When you have multiple environments in different regions, it’s important to understand the following implications when you import a solution:
+When you have multiple environments in different regions, it’s important to understand the following when you import a solution:
 
 - You *can* import a solution into an environment that is a newer version than the environment where the solution was exported. 
 - You *can’t* import a solution into an environment that’s an older version than the environment where the solution was exported.
 
 #### Example of successfully aligning environments with service update stations
 
-Imagine that you have production environments in Canada and the United States. In that case, your development environments should be in North America (station 5) and not in Canada (station 2). Then, your development environments will always be the same or an earlier version than your production environments and curtail solution import version conflicts.
+Imagine that you have production environments in Canada and the United States. In that case, your development environments should be in North America (station 5) and not in Canada (station 2). Then, your development environments will always be the same or an earlier version than your production environments, which will curtail solution import version conflicts.
 :::image type="content" source="media/environment-version-import.png" border="false" alt-text="Correct service update station environment alignment for successful solution import ":::
 
 ### See also
