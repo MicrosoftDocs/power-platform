@@ -61,7 +61,7 @@ Represents archival approval tasks started during the App Archive and Clean Up f
 | [Request Orphaned Objects Reassigned (Parent)](#request-orphaned-objects-reassigned-parent) | Schedule | Daily |
 | [HELPER - CanvasAppOperations Gov](#helper---canvasappoperations-gov) | Instant | helper |
 | [HELPER - CloudFlowOperations Gov](#helper---cloudflowoperations-gov) | Instant | helper |
-| [HELPER - ObjectOperations Gov](helper---objectoperations-gov) | Instant | helper |
+| [HELPER - ObjectOperations Gov](#helper---objectoperations-gov) | Instant | helper |
 
 ### Microsoft Teams Admin | Ask for Business Justification when Microsoft Teams environment is created
 
