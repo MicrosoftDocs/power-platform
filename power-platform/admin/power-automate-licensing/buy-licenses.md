@@ -217,7 +217,7 @@ Admins can turn off self-service purchasing on a per product basis via the [MSCo
 
 Central procurement and IT teams view all users who buy and deploy self-service purchase solutions through the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339). Admins can turn off self-service purchasing on a per product basis via PowerShell.
 
-More FAQs on self service purchase [here](https://docs.microsoft.com/en-us/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide). 
+More FAQs on self service purchase [here](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide). 
 
 ### Where does the self-service purchaser see and manage their purchases?
 
