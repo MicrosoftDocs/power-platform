@@ -138,7 +138,7 @@ To help ensure service levels, availability and quality, there are limits to the
 - The 24 hour limit is based on the user/flow license. If a user has Power Automate per user plan, they can make 5000 Power Platform requests across all their flows of the tenant in a 24 hour period. This includes requests made by the platform to 3rd party connectors too. If a flow has per flow plan, the flow can make 15,000 Power Platform requests across all users of the flow in a 24 hour period.
 - The 5 minute limit is 100,000 requests and it is independent of a user's license. For example, during transition period, flows with a per flow license can make 500,000 requests in 24 hours but they cannot make more than 100,000 requests in 5 minutes. This capacity is tracked based on consumption at an individual user/flow level and cannot be pooled at any other level like environment or tenant levels. For example, two users in a tenant have per user licenses and each get 5,000 requests per day. If the first user uses more than 5000 requests, their flows will slow down even though the second user only used 2000 requests and still has 3000 requests left. This prevents a usage-heavy flow/user from impacting another user.
 
-- <!--Create a table to replace this image-->
+- <!--todo: Create a table to replace this image-->
 
 ![List that displays license limits](../media/power-automate-licensing/license-limits.png)
 
