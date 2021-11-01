@@ -15,13 +15,8 @@ ms.custom: handoff, ceX
 
 # Configure hand-off for voice and text bot conversations to Dynamics 365 Customer Service
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 With Power Virtual Agents, you can seamlessly and contextually hand off escalated Power Virtual Agents conversations to live (human) agents using the Chat Add-in for [Dynamics 365 Customer Service](/dynamics365/omnichannel/omnichannel-customer-service-guide). You can connect both voice-based and text-based bot conversations.
-
->[!IMPORTANT]
->This is a preview feature.
->Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and [provide feedback](https://powerusers.microsoft.com/t5/Forums/ct-p/pva_forums).
 
 When you hand off a conversation, you share the full history of the conversation (the context) as well as all user-defined variables. This allows your omnichannel service to route incoming escalations to the right live agent queue and enables engaging live agents to review context from the prior conversation and resume the conversation.
 
@@ -67,8 +62,6 @@ For your bot to hand off a conversation to your omnichannel interface, you have 
 
 >[!IMPORTANT]
 >You must install the [Omnichannel Power Virtual Agents Extension](https://appsource.microsoft.com/product/dynamics-365/mscrm.omnichannelpvaextension) for all omnichannel hand off scenarios.  
->  
->If you only want to use voice capabilities, you must still install this extension.
 
 ## Connect omnichannel to your Power Virtual Agents bot
 
@@ -127,7 +120,7 @@ If you select **Refresh**, the connection between your bot and omnichannel insta
 
 ### Toggle voice capabilities
 
-You can enable voice-based hand off capabilities by switching the **Enable voice** toggle. This applies to the entire bot, not for individual bot sessions or connections.
+You can enable voice-based capabilities by switching the **Enable voice** toggle. This applies to the entire bot, not for individual bot sessions or connections.
 
 When voice is enabled, any connection with the bot can use voice, text, or both.
 
@@ -141,9 +134,9 @@ Authentication is not supported for voice-based hand off to omnichannel instance
 >If the environment (or environments) you use for your bot or omnichannel instance aren't in the US region, voice capabilities will not work and there will be no error messages or warnings.
 
 
-## Voice-based hand off capabilities
+## Voice-based capabilities
 
-The [Power Virtual Agents telephony extension](https://appsource.microsoft.com/product/dynamics-crm/mscrm.mspva_telephony_extension) adds a number of additional actions and variables to Power Virtual Agents that can be used by bots during hand off to your omnichannel instance.
+The [Power Virtual Agents telephony extension](https://appsource.microsoft.com/product/dynamics-crm/mscrm.mspva_telephony_extension) adds a number of additional actions and variables to Power Virtual Agents that can be used by Power Virtual Agents chatbots.
 
 ![List of voice-related actions that can be added to a node in Power Virtual Agents.](media/handoff-oc-voice-vars.png)
 
