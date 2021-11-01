@@ -3,9 +3,9 @@ title: "Types of Power Automate licenses"
 description: "Types of Power Automate licenses."
 author: msftman
 ms.service: power-platform
-ms.component: pa-admin
+ms.subservice: admin
 ms.topic: overview
-ms.date: 10/06/2021
+ms.date: 10/31/2021
 ms.author: jimholtz
 manager: kvivek
 search.audienceType: 
@@ -36,20 +36,20 @@ Power Automate P1 and P2 plans (grand fathered)| These plans are no longer avail
 
 Organizations also gain rights to use Power Automate if they are licensed to use any of the following plans where Power Automate licenses are **seeded**. <!-- if they have any of the following  through other The most important concept that potentially simplifies most licensing questions is "Is power automate capabilities included with my Office 365/Dynamics 365/Power App License?" "Seeded" in this case relates specifically for "inclusion" to another license type. Power Automate rights are included in the following plans: -->
 
-1. Microsoft 365 (formerly Office 365).
-1. Dynamics 365 Enterprise.
-1. Dynamics 365 Professional.
-1. Dynamics 365 Team Member.
-1. Power Apps (Canvas and Model driven Apps)- Per App plans.
-1. Power Apps per user.
-1. Power Apps Plan 1 (grandfathered).
-1. Power Apps Plan 2 (grandfathered)
-1. Windows licenses.
+- Microsoft 365 (formerly Office 365).
+- Dynamics 365 Enterprise.
+- Dynamics 365 Professional.
+- Dynamics 365 Team Member.
+- Power Apps (Canvas and Model driven Apps)- Per App plans.
+- Power Apps per user.
+- Power Apps Plan 1 (grandfathered).
+- Power Apps Plan 2 (grandfathered)
+- Windows licenses.
 
 When you use seeded plans, your flows must run within the context of the application in which the seeded plan is available. For example, flows included within a Dynamics/Power Apps application can connect to the following.
 
-- To any data source within the use rights of the Dynamics/Power Apps app.
-- Directly with the Dynamics/Power Apps app (via built in triggers/actions).
+- To any data source within the use rights of the Dynamics 365/Power Apps app.
+- Directly with the Dynamics 365/Power Apps app (via built in triggers/actions).
 
 For example, if a flow uses [premium connectors](#premium-connectors) and it's triggered by a Power App app, any user can run the flow if they have a Power Apps license.
 
