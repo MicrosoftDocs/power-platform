@@ -54,6 +54,11 @@ Content for image...
 
 Content for table...
 
+---
+
+
+
+
 
 Environment with three apps
 
