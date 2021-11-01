@@ -142,7 +142,7 @@
          href: configure-sso-teams.md
        - name: Configure hand-off to a generic engagement hub
          href: configure-generic-handoff.md
-       - name: Configure hand-off to Omnichannel for Customer Service
+       - name: Configure voice and text hand off to Dynamics 365 Customer Service
          href: configuration-hand-off-omnichannel.md
        - name: Configure the bot to automatically start the conversation
          href: configure-bot-greeting.md
