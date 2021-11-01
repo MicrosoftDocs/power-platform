@@ -87,11 +87,6 @@ If a user has a Power Apps per user license, the user is not counted in the mete
 ---
 
 
-
-
-
-
-
 ### Dataverse capacity add-on meter
 
 The Dataverse pay-as-you-go meters let you pay for your usage of all three categories of Dataverse storage (database, log, and file) using an Azure subscription.
@@ -102,6 +97,12 @@ Measurement for each category of Dataverse storage usage will happen three times
 
 > [!NOTE]
 > The prices shown in this example are illustrative only. Your organization's pricing may vary based on your contract with Microsoft.
+
+# [Image](#tab/image)
+
+:::image type="content" source="media/pay-as-you-go-measured-usage-above-per-environment-entitlements.png" alt-text="Measured usage above per environment entitlements":::
+
+# [Tabs](#tab/table)
 
 Measured usage *above* entitlements of 1GB Database and 1GB File
 
@@ -121,6 +122,8 @@ Example pricing
 |**Log**     | No usage         | 0.2 GB * $12 = $2.40         | 0.4 GB * $12 = $4.80         |
 |**Total cost:**     | **$28.80**        |  **$86.40**      |  **$148.80**       |
 
+---
+
 ### Power Platform request capacity add-on meter (coming soon)
 
 > [!NOTE]
@@ -137,6 +140,12 @@ In the example below, User A is licensed with a Power Apps per user license and 
 > [!NOTE]
 > The prices shown in this example are illustrative only. Your organization's pricing may vary based on your contract with Microsoft.
 
+# [Image](#tab/image)
+
+:::image type="content" source="media/pay-as-you-go-measured-usage-above-entitlements.png" alt-text="Measured usage above entitlements":::
+
+# [Table](#tab/table)
+
 Measured usage *above* limits
 
 |   |Month #1  |Month #2  |Month #3  |
@@ -150,6 +159,9 @@ Example pricing
 |---------|---------|---------|---------|
 |**Power Platform** <br />**Requests**     | No usage        | 110 K * $0.00004 = $4.40       | 50 K * $0.00004 = $2.00        |
 |**Total cost:**     |  $0.00       | $4.40        | $2.00        |
+
+---
+
 
 ## Next step
 
