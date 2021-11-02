@@ -27,8 +27,8 @@ If you are using Pay-as-you-go, usage of apps and any Dataverse or Power Platfor
 | **Meter** | **What is counted?** | **What is billed?** |
 |------|--------|--------|
 | Power Apps per app | The total number of unique monthly active users of each app and portal in a pay-as-you-go environment. </br>An active user is someone who opens an app/portal at least once in the given month. </br>Repeat access of an app/portal by a user is not counted. Users with Power Apps per user licenses are not counted. | $10/active user/app/month |
-| Dataverse capacity add-on | For database storage, any usage above 1 GB per pay-as-you-go environment. </br>For file storage, any usage above 1 GB per pay-as-you-go environment. </br>If auditing is enabled, any resulting log storage usage will be counted. | For usage above 1 GB for database: $48 per GB/month</br>For usage above 1 GB for file: $2.40 per GB/month </br>For any log usage: $12 per GB/month |
-| Power Platform requests capacity add-on (coming soon) | Each user in a pay-as-you-go enabled environment will get a daily entitlement of Power Platform requests based on their license. With Power Apps per app meter, you get an entitlement of 6000 API calls/per user/app/day. This will be sufficient for most customers and for those with high scale scenarios any Power Platform Requests needed above that entitlement will be counted | 0.00004$ per request/day above the daily entitled limits |
+| Dataverse | For database storage, any usage above 1 GB per pay-as-you-go environment. </br>For file storage, any usage above 1 GB per pay-as-you-go environment. </br>If auditing is enabled, any resulting log storage usage will be counted. | For usage above 1 GB for database: $48 per GB/month</br>For usage above 1 GB for file: $2.40 per GB/month </br>For any log usage: $12 per GB/month |
+| Power Platform requests (coming soon) | Each user in a pay-as-you-go enabled environment will get a daily entitlement of Power Platform requests based on their license. With Power Apps per app meter, you get an entitlement of 6000 API calls/per user/app/day. This will be sufficient for most customers and for those with high scale scenarios any Power Platform Requests needed above that entitlement will be counted | 0.00004$ per request/day above the daily entitled limits |
 
 For detailed pricing information, see [Power Apps pricing](https://powerapps.microsoft.com/pricing/).
 
@@ -87,7 +87,7 @@ If a user has a Power Apps per user license, the user is not counted in the mete
 ---
 
 
-### Dataverse capacity add-on meter
+### Dataverse capacity meter
 
 The Dataverse pay-as-you-go meters let you pay for your usage of all three categories of Dataverse storage (database, log, and file) using an Azure subscription.
 
@@ -124,7 +124,7 @@ Example pricing
 
 ---
 
-### Power Platform request capacity add-on meter (coming soon)
+### Power Platform request meter (coming soon)
 
 > [!NOTE]
 > As of Public Preview (November 1, 2021), if you link an environment to an Azure subscription this meter will not be reported or billed. Users and flows in the environment can consume more than their entitled usage without being throttled or paying for overages. Reporting and billing will be turned on in the weeks following the Public Preview announcement.
