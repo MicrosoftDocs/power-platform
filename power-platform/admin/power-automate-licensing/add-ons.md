@@ -5,7 +5,7 @@ author: msftman
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 10/06/2021
+ms.date: 10/30/2021
 ms.author: deonhe
 manager: kvivek
 search.audienceType: 
@@ -71,7 +71,7 @@ Each unit of "AI Builder capacity add-on" includes 1 million service credits per
 
 ### FAQs about the AI builder add-on
 
-1. I have a Power Automate per user with RPA plan and I got AI builder credits as part of the plan. Can I transfer the credits to someone else?
+I have a Power Automate per user with RPA plan and I got AI builder credits as part of the plan. Can I transfer the credits to someone else?
 
 No. AI builder service credits are pooled at the tenant level and can't be assigned to a particular user. So, any user who runs a flow that needs AI builder service credits needs to use credits from the pool.
 
