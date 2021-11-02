@@ -45,10 +45,10 @@ Power Automate Plans:
 More details can be found in [Microsoft Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
 
 ### How do I use Power Apps per app plans? 
-See [Power Apps per app plan](signup-for-powerapps-admin.md#power-apps-per-app-plan).
+See [About Power Apps per app plans](about-powerapps-perapp.md).
 
 ### How do I use Power Apps pay-as-you-go plan? 
-See [pay-as-you-go plan](pricing-billing-skus.md). 
+See [Preview: Pay-as-you-go plan](pay-as-you-go-overview.md).
 
 ### The Power Apps per app plan allows users to run specific apps. Can you explain what this means in terms of the number and types of apps I can use?
 
