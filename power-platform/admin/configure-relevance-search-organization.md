@@ -42,6 +42,10 @@ Dataverse search helps you quickly find what you're looking for. It delivers fas
 
 - **Intelligence**: Applies AI technology to interpret natural language such as misspellings, common abbreviations, and synonyms to deliver quality results.
 
+
+<!-- editor comment: The page title in the link below is "Search for tables and rows by using Dataverse search." Can you change the link text to match? I think it helps readers know they're in the right place. -->
+
+
 For more information about Dataverse search, see: [Using Dataverse search to search for records](/powerapps/user/relevance-search).
 
 ### Availability and language support
@@ -52,7 +56,7 @@ For more information about Dataverse search, see: [Using Dataverse search to se
 
 - Full-text Quick Find is available for Customer Engagement (on-premises) organizations, starting with Dynamics CRM 2015 Update Rollup 1.
 
-- For more detailed comparison of the searches available in Microsoft Dataverse, see: [Compare search options in Dataverse](/powerapps/user/search).
+- For more detailed comparison of the searches available in Microsoft Dataverse, see: [Compare search options in Microsoft Dataverse](/powerapps/user/search).
 
 - All searchable fields in Dataverse search are processed in the language most closely matching the organization's base language, except Kazakh where all fields are processed using a basic, language-agnostic text processor.
 
@@ -63,9 +67,9 @@ Dataverse search is an opt-out feature, set to **On** by default with [2021 re
 > [!IMPORTANT]
 > If you opt in to [early access of 2021 release wave 2](/power-platform/admin/opt-in-early-access-updates) on a production environment, Dataverse search is enabled automatically. If you are using your own encryption key, you can disable Dataverse search after enabling early access of 2021 release wave 2 in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). 
 
-:::image type="content" source="media/model-app1.png" alt-text="First sample model-driven app":::
+:::image type="content" source="media/model-app1.png" alt-text="First sample model-driven app.":::
 
-:::image type="content" source="media/model-app2.png" alt-text="Second sample model-driven app":::
+:::image type="content" source="media/model-app2.png" alt-text="Second sample model-driven app.":::
 
 > [!NOTE]
 > Dataverse search doesn't support lifecycle operations (create, delete, backup, recover, copy, reset, and so on). In the event of such an operation, re-enable Dataverse search.
@@ -80,14 +84,18 @@ To enable Dataverse search, do the following:
 
 4. Select **Save**.
 
-   :::image type="content" source="media/ppac-dataverse-search1.png" alt-text="Set Dataverse search to On":::
+   :::image type="content" source="media/ppac-dataverse-search1.png" alt-text="Set Dataverse search to On.":::
 
 If the Dataverse search index needs to be provisioned, you will see an indication that provisioning is in progress. Once the index is provisioned, it may take anywhere between an hour or more to complete a full sync for average size organizations, to a couple of days for very large size organizations.
 
 > [!IMPORTANT]
-> Disabling Dataverse search will deprovision and remove the index within a period of 12 hours. If you enable Dataverse search after about 12 hours of disabling it, a fresh index is provisioned, followed by a full sync which may take up to an hour or more for average size organizations, and a couple of days for very large size organizations. Consider this when you're disabling Dataverse search temporarily.
+> Disabling Dataverse search will deprovision and remove the index within a period of 12 hours. If you enable Dataverse search after about 12 hours of disabling it, a fresh index is provisioned, followed by a full sync that may take up to an hour or more for average size organizations, and a couple of days for very large size organizations. Consider this when you're disabling Dataverse search temporarily.
 
 ### Help improve Dataverse search
+
+
+<!-- editor comment: I can't find any mention of "Dynamics 365 Natural Language" in the style guide. Maybe "natural language" should be lowercase. -->
+
 
 To help Microsoft improve Dataverse search, you can share your environment's Dataverse search queries in Dynamics 365 and Power Platform applications with Microsoft. This data will help Microsoft build, improve, and validate the Microsoft machine learning model for the Dynamics 365 Natural Language search query technology.
 
@@ -103,21 +111,21 @@ Your queries and results are reviewed by people using secured computers in the U
 
 4. Select **Save**
 
-   :::image type="content" source="media/ppac-dataverse-search2.png" alt-text="Set Share anonymized search analytics with Microsoft to On":::
+   :::image type="content" source="media/ppac-dataverse-search2.png" alt-text="Set Share anonymized search analytics with Microsoft to On.":::
 
 ## Set up Dataverse search
 
-Setting up Dataverse search after enabling it in **Power Platform Admin Center**, involves three steps:
+Setting up Dataverse search after enabling it in the **Power Platform admin center** involves three steps:
 
-1. Select the searchable tables for Dataverse search - see below.
+1. Select the searchable tables for Dataverse search (see below).
 
-2. Review the columns that will be searched over, the columns that will be displayed, and the filter conditions that will be applied in model-driven Power Apps - see below.
+2. Review the columns that will be searched, the columns that will be displayed, and the filter conditions that will be applied in model-driven Power Apps (see below).
 
-3. Ensure the tables enabled for Dataverse search are included in the model-driven app. Use the Power Apps app designer to verify that the table is included in an app's components. For more information, see, [Add or edit model-driven app components](/powerapps/maker/model-driven-apps/add-edit-app-components#add-a-component).
+3. Ensure the tables enabled for Dataverse search are included in the model-driven app. Use the Power Apps app designer to verify that the table is included in an app's components. For more information, see: [Add or edit model-driven app components](/powerapps/maker/model-driven-apps/add-edit-app-components#add-a-component).
 
 ### Select tables for Dataverse search
 
-Setting up search starts with reviewing the tables that are enabled for Dataverse search, in context of a solution. Using the new solution explorer, you can see a snapshot of Dataverse search index on the **Overview** page.
+Setting up search starts with reviewing the tables that are enabled for Dataverse search, in context of a solution. Using the new solution explorer, you can see a snapshot of the Dataverse search index on the **Overview** page.
 
 1. Sign in to [Power Apps](https://make.powerapps.com/).
 
@@ -125,20 +133,20 @@ Setting up search starts with reviewing the tables that are enabled for Datavers
 
 3. Select the solution you want to make the changes in, and then select **Overview**.
 
-   :::image type="content" source="media/maker-portal1.png" alt-text="Select the solution and then select Overview":::
+   :::image type="content" source="media/maker-portal1.png" alt-text="Select the solution and then select Overview.":::
 
 4. Select **Manage search index**.
 
-   :::image type="content" source="media/maker-portal2.gif" alt-text="Select Manage search index":::
+   :::image type="content" source="media/maker-portal2.gif" alt-text="Select Manage search index.":::
 
-Although there is no limit on how many tables you can index for Dataverse search, there is a limit on the total number of **fields** that can be enabled for Dataverse search. The maximum is 1000 searchable fields for an organization. Out of these 1000 fields, up to 50 fields are required by the Dataverse search system, so you can configure up to **950 searchable fields**.
+Although there is no limit on how many tables you can index for Dataverse search, there is a limit on the total number of **fields** that can be enabled for Dataverse search. The maximum is 1,000 searchable fields for an organization. Out of these 1,000 fields, up to 50 fields are required by the Dataverse search system, so you can configure up to **950 searchable fields**.
 
 > [!IMPORTANT]
-> Some columns are common to all tables, like **Primary Name** and **ID**, are part of the 50 fields indexed by default for all tables, and are not counted for every table.
+> Some columns are common to all tables, like **Primary Name** and **ID**, which are part of the 50 fields indexed by default for all tables, and are not counted for every table.
 
 When you select a table to be indexed for Dataverse search, you can understand the number of fields that will be added to the index.
 
-:::image type="content" source="media/maker-portal3.png" alt-text="Manage search index pane with number of fields highlighted":::
+:::image type="content" source="media/maker-portal3.png" alt-text="Manage search index pane with number of fields highlighted.":::
 
 The number of fields indexed for a table is dependent on the tables quick find view. Additionally, some field types are treated as multiple fields in the Dataverse search index as indicated in this table.
 
@@ -150,11 +158,15 @@ The number of fields indexed for a table is dependent on the tables quick find v
 
 The progress bar at the bottom shows the percentage of indexed fields as a fraction of the maximum allowed number of searchable fields.
 
-:::image type="content" source="media/maker-portal4.png" alt-text="Search pane with progress bar highlighted":::
+:::image type="content" source="media/maker-portal4.png" alt-text="Search pane with progress bar highlighted.":::
 
 When you have reached the indexed field limit, you'll see a warning message. If you want to add more fields to the index, you'll have to free up space, either by removing some of the fields that are already in the index or removing entire tables from Dataverse search scope.
 
 By default, the following system tables are indexed for Dataverse search. However, custom tables aren't included. You must add them to Dataverse search for them to be searchable.
+
+
+
+
 
 | Tables enabled for Dataverse search<br /> without Dynamics 365 apps enabled | Tables enabled for Dataverse search<br /> with Dynamics 365 apps enabled |
 |-------------------------|-------------------------|
