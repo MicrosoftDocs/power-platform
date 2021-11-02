@@ -293,7 +293,7 @@ We revised the Power Platform request limits for all licenses in late 2021. The 
 
 For customers with extremely high scale scenarios who need to exceed these limits you can link those environments to Azure subscription. By linking the environment, users and flows in the environment can consume more than their limits without being throttled and only pay for the Power Platform requests used above those limits. Flows still need to be licensed with a base license (either Power Automate per user, Power Automate per flow, Office 365, Power Apps, or Dynamics). For example, if you have Power Automate per user license, you have a limit of 40,000 Power Platform requests/per user/day. If the user used 45,000 requests a day, the additional 5,000 requests is multiplied by a $/request rate and billed to the Azure subscription. The total amount will be summed and billed based on the customer’s Azure billing cycle.
 
-![An image that displays an overview of pay as you go](../media/platform-licensing/pay-as-you-go.png)
+![An image that displays an overview of pay as you go](../media/power-automate-licensing/pay-as-you-go.png)
 
 >[!NOTE]
 >If you link an environment to an Azure subscription, this meter will not be reported or billed. Reporting and billing will be turned on by the end of calendar year 2021.
