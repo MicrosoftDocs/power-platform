@@ -216,7 +216,7 @@ Here are some things you can do if you've exceeded the limits of your license.
 - Revisit your design and check for any places that can help reduce the number of actions being called. Check out [Best Practices section to create flows to use less actions](https://support.microsoft.com/topic/troubleshooting-slow-running-flows-2a51dcd6-0b21-33da-5ce8-1e908b1540ef).
 - If the flow is already optimized, but it uses many actions because of the nature of the business, consider buying a higher license. The per flow plan provides the best performance quota available (250K actions/day/flow).
 - Purchase the **Power Apps and Power Automate capacity add-on** for your organization. During the [transition period](#transition-period), because enforcement is currently less strict, there is no facility to assign the **Power Apps and Power Automate capacity add-on** to a user. However, Microsoft recommends that you purchase these add-ons now to remain within your license terms and create a support ticket with the flow details and add on details to get temporary relief from throttling.
-- Turn on [Pay-as-you go](#pay-as-you-go) for the environment to ensure none of the flows in the environment are throttled.
+- Turn on [ay-as-you go](#pay-as-you-go) for the environment to ensure none of the flows in the environment are throttled.
 
 If a flow is consistently above the transition period limits for 14 consecutive days, the flow is turned off and the owner is notified. You can update the flow or buy higher license, and then turn it on anytime.
 
