@@ -6,7 +6,7 @@ ms.reviewer: manasma
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/28/2020
+ms.date: 11/02/2020
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 

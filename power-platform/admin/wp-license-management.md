@@ -6,7 +6,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.custom: intro-internal
-ms.date: 10/28/2021
+ms.date: 11/02/2021
 ms.subservice: admin
 ms.author: dileeps
 ms.reviewer: jimholtz
