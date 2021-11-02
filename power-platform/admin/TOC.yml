@@ -54,7 +54,6 @@
           href: power-automate-licensing/add-ons.md
       - name: Power Platform licensing FAQs
         href: powerapps-flow-licensing-faq.md
-      # Comment out the following before Nov2  
       - name: Pay-as-you-go plan 
         items:
         - name: Overview
