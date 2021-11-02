@@ -33,26 +33,39 @@
       - name: Manage licenses in your org
         href: signup-question-and-answer.md
       - name: Administer without a license
-        href: global-service-administrators-can-administer-without-license.md      
-      - name: Purchase Power Apps 
-        href: signup-for-powerapps-admin.md
-      - name: About Power Apps per app plans
-        href: about-powerapps-perapp.md
-      - name: Power Apps and Power Automate licensing FAQs
+        href: global-service-administrators-can-administer-without-license.md
+      - name: Power Apps
+        items:      
+        - name: Purchase Power Apps 
+          href: signup-for-powerapps-admin.md
+        - name: About Power Apps per app plans
+          href: about-powerapps-perapp.md
+      - name: Power Automate
+        items:
+        - name: Overview
+          href: power-automate-licensing/overview.md
+        - name: Types of licenses
+          href: power-automate-licensing/types.md
+        - name: FAQs about licenses
+          href: power-automate-licensing/faqs.md
+        - name: Buy Power Automate licenses
+          href: power-automate-licensing/buy-licenses.md
+        - name: Add-ons
+          href: power-automate-licensing/add-ons.md
+      - name: Power Platform licensing FAQs
         href: powerapps-flow-licensing-faq.md
-      # Comment out the following before Nov2  
-      # - name: Pay-as-you-go plan 
-      #   items:
-      #   - name: Overview
-      #     href: pay-as-you-go-overview.md
-      #   - name: Meters
-      #     href: pay-as-you-go-meters.md
-      #   - name: Set up
-      #     href: pay-as-you-go-set-up.md
-      #   - name: View usage and manage costs 
-      #     href: pay-as-you-go-usage-costs.md
-      #   - name: Issues and frequently asked questions
-      #     href: pay-as-you-go-issues-faq.md
+      - name: Pay-as-you-go plan 
+        items:
+        - name: Overview
+          href: pay-as-you-go-overview.md
+        - name: Meters
+          href: pay-as-you-go-meters.md
+        - name: Set up
+          href: pay-as-you-go-set-up.md
+        - name: View usage and manage costs 
+          href: pay-as-you-go-usage-costs.md
+        - name: Issues and frequently asked questions
+          href: pay-as-you-go-issues-faq.md
       - name: Requests limits and allocations
         href: api-request-limits-allocations.md
     - name: Getting started
