@@ -33,7 +33,7 @@ If you are using Pay-as-you-go, usage of apps and any Dataverse or Power Platfor
 For detailed pricing information, see [Power Apps pricing](https://powerapps.microsoft.com/pricing/).
 
 > [!NOTE]
-> As of Public Preview (11/01/21), if you link an environment to an Azure subscription, the Power Platform requests meter will not be reported or billed. Users and flows in the environment can consume more than their entitled usage without being throttled or paying for overages. Reporting and billing will be turned on in the weeks following the Public Preview announcement.
+> As of Public Preview (November 1, 2021), if you link an environment to an Azure subscription, the Power Platform requests meter will not be reported or billed. Users and flows in the environment can consume more than their entitled usage without being throttled or paying for overages. Reporting and billing will be turned on in the weeks following the Public Preview announcement.
 
 ### Power Apps per app meter 
 
@@ -127,7 +127,7 @@ Example pricing
 ### Power Platform request capacity add-on meter (coming soon)
 
 > [!NOTE]
-> As of Public Preview (11/01/21), if you link an environment to an Azure subscription this meter will not be reported or billed. Users and flows in the environment can consume more than their entitled usage without being throttled or paying for overages. Reporting and billing will be turned on in the weeks following the Public Preview announcement.
+> As of Public Preview (November 1, 2021), if you link an environment to an Azure subscription this meter will not be reported or billed. Users and flows in the environment can consume more than their entitled usage without being throttled or paying for overages. Reporting and billing will be turned on in the weeks following the Public Preview announcement.
 
 Each Power Platform license includes a large entitlement of Power Platform requests which is designed to be sufficient for most customers and scenarios. For customers with extremely high scale scenarios who need to exceed these entitlements, the Power Platform requests meter enables them to scale without getting throttled and only pay for the Power Platform requests used above those entitlements.
 
