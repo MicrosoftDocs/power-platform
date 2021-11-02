@@ -1,12 +1,12 @@
 ---
 title: "Frequently asked questions about Power Automate licensing"
 description: "Frequently asked questions about Power Automate licensing."
-author: msftman
+author: PriyaKodukula
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: overview
 ms.date: 10/06/2021
-ms.author: deonhe
+ms.author: prkoduku
 manager: kvivek
 search.audienceType: 
   - admin
