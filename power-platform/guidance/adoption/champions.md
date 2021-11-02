@@ -85,7 +85,7 @@ Considerations and key actions you can take to initiate, grow, and sustain your 
 - Decide how you will communicate with the champions network (for example, in a Teams channel, a Yammer group, and/or an email distribution list).
 - Determine how the champions network will communicate and collaborate with each other directly (across organizational boundaries), to share updates and successes, and to connect with each other.
 - Hold regular meetings: Promote enthusiasm and cohesiveness of your community by holding regular monthly meetings. These can be a combination of in person and virtual meetings, but their consistency is key to having a thriving champions community.
-- Create a Champions team: Your champions should use the team you have setup for them for all program communications, feedback, and to find resources. In doing this they will become increasingly familiar with the product and its benefits. Get started with the [Adopt Office 365](https://docs.microsoft.com/microsoftteams/general-teams-templates-in-the-admin-console) teams template, which will create relevant channels and apps for your champions program.
+- Create a Champions team: Your champions should use the team you have setup for them for all program communications, feedback, and to find resources. In doing this they will become increasingly familiar with the product and its benefits. Get started with the [Adopt Office 365](/microsoftteams/general-teams-templates-in-the-admin-console) teams template, which will create relevant channels and apps for your champions program.
 
 ### Focus on the people
 

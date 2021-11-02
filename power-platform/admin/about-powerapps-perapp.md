@@ -193,7 +193,7 @@ Yes. If a user account is disabled in an environment, there are three different 
 
 **Mitigation steps**
 1. Add per app capacity to an environment, add disabled users to an Azure AD security group, and share the app with the security group. The user launching the app will be enabled in the environment.
-2. Add per app capacity and use the following PowerShell cmdlet to 'force sync' disabled users to enable these users in the environment. An admin can run the [Add-AdminPowerAppsSyncUser](https://docs.microsoft.com/powershell/module/microsoft.powerapps.administration.powershell/add-adminpowerappssyncuser?view=pa-ps-latest) PowerShell cmdlet to enable disabled users in an environment.
+2. Add per app capacity and use the following PowerShell cmdlet to 'force sync' disabled users to enable these users in the environment. An admin can run the [Add-AdminPowerAppsSyncUser](/powershell/module/microsoft.powerapps.administration.powershell/add-adminpowerappssyncuser?view=pa-ps-latest) PowerShell cmdlet to enable disabled users in an environment.
 3. Add per app capacity to an environment, use [this Power Automate flow template](https://us.flow.microsoft.com/galleries/public/templates/6e4162ca7afc48479e3ad1caadc6c1e6/force-sync-azure-active-directory-group-members-to-specified-cds-instance/) to enable many disabled users in an environment which an admin can run to force the sync operation to enable users. 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
