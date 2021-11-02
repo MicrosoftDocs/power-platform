@@ -46,8 +46,6 @@
           href: power-automate-licensing/faqs.md
         - name: Buy Power Automate licenses
           href: power-automate-licensing/buy-licenses.md
-        # - name: Request limits <!--Candidate to merge into existing requests doc-->
-        #   href: power-automate-licensing/request-limits.md
         - name: Add-ons
           href: power-automate-licensing/add-ons.md
       - name: Power Platform licensing FAQs
