@@ -4,7 +4,7 @@ description: "Learn about the special system and application users created when 
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 10/14/2021
+ms.date: 11/02/2021
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
