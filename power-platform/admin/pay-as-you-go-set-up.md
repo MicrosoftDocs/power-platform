@@ -93,7 +93,7 @@ Follow these steps to create a billing policy, link environments to it, and add 
 
 3. Add Azure subscription details.
 
-   1. Choose the Azure subscription you would like to bill to from the Azure subscription drop-down list. The drop-down list will show the Azure subscriptions in your tenant for which you have permissions to create resources and register resource providers (also known as "RPs"). Most commonly this will mean that you have an owner or contributor role for the subscription. If you don't see a subscription you expect to be listed, contact the owner of that subscription and ensure you have permissions.
+   1. Choose the Azure subscription you would like to bill to from the Azure subscription drop-down list. The drop-down list will show the Azure subscriptions in your tenant. Note that you have permissions to create resources in the subscription you choose otherwise you will see an error in the later step. Most commonly this will mean that you have an owner or contributor role for the subscription. If you don't see a subscription you expect to be listed or if you recieve a permission error at any point, contact the owner of that subscription and ensure you have permissions.
 
    2. Specify a resource group with that subscription. The Power Platform account resource that will be associated with this billing policy will be created in this resource group. If there are no resource groups in the specified subscription, you will need to create one in the Azure portal (https://portal.azure.com) before proceeding. To learn more about Azure resources, see [What is Azure Resource Manager?](/azure/azure-resource-manager/management/overview)
 
@@ -163,7 +163,7 @@ You can set up pay-as-you-go for your environment right from your app's setting 
 
 3. Enter a billing policy name and your Azure subscription details. Once entered, select **Connect subscription** to complete the set up.
 
-   Choose the Azure subscription you would like to bill to from the Azure subscription drop-down list. The drop-down list will show the Azure subscriptions in your tenant for which you have permissions to create resources and register resource providers (also known as "RPs"). Most commonly this will mean that you have an owner or contributor role for the subscription. If you don't see a subscription you expect to be listed, contact the owner of that subscription and ensure you have permissions.
+   Choose the Azure subscription you would like to bill to from the Azure subscription drop-down list. The drop-down list will show the Azure subscriptions in your tenant. Note that you have permissions to create resources in the subscription you choose otherwise you will see an error in the later step. Most commonly this will mean that you have an owner or contributor role for the subscription. If you don't see a subscription you expect to be listed or if you recieve a permission error at any point, contact the owner of that subscription and ensure you have permissions.
 
    Specify a resource group with that subscription. The Power Platform account resource that will be associated with this billing policy will be created in this resource group. If there are no resource groups in the specified subscription, you will need to create one in the Azure portal (https://portal.azure.com) before proceeding. To learn more about Azure resources, see [What is Azure Resource Manager?](/azure/azure-resource-manager/management/overview)
 
