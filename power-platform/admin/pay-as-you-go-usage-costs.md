@@ -89,10 +89,5 @@ Azure Cost Management provides options to set budgets for Azure resources and sp
 [Preview: Known issues and frequently asked questions](pay-as-you-go-issues-faq.md)
 
 
-### See also  
-
-
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

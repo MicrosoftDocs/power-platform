@@ -2,7 +2,7 @@
 title: "Work with chatbot variables - Preview"
 description: "Use variables to use custom and prebuilt entities to allow for customized conversations in your bot."
 keywords: "PVA"
-ms.date: 3/19/2021
+ms.date: 11/02/2021
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -24,7 +24,7 @@ Select the version of Power Virtual Agents you're using here:
 
 >[!IMPORTANT]
 >This is a preview feature.
->Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and [provide feedback](https://powerusers.microsoft.com/t5/Forums/ct-p/pva_forums).
+>Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and [provide feedback](https://powerusers.microsoft.com/t5/Forums/ct-p/pva_forums).
 
 
 Variables let you save responses from your customers in a conversation with your bot so that you can reuse them later in the conversation. 
@@ -49,35 +49,35 @@ For example, a **boolean** base type maps to an operator "is equal to" with poss
 
  Entity | Variable Base Type
  ---|---
- Multiple choice options | string
- User's entire response | string
- Age | number
- Boolean | boolean
- City | string
- Color | string
- Continent | string
- Country or region | string
- Date and time | string
- Duration | string
- Email | string
- Event | string
- Language | string
- Money | string
- Number | string
- Ordinal | string
- Organization | string
- Percentage | number
- Person name | string
- Phone number | string
- Point of interest | string
- Speed | number
- State | string
- Street address | string
- Temperature | number
- URL | string
- Weight | number
- Zip code | string
- Custom entity | string
+ Multiple choice options | String
+ User's entire response | String
+ Age | Number
+ Boolean | Boolean
+ City | String
+ Color | String
+ Continent | String
+ Country or region | String
+ Date and time | String
+ Duration | String
+ Email | String
+ Event | String
+ Language | String
+ Money | String
+ Number | String
+ Ordinal | String
+ Organization | String
+ Percentage | Number
+ Person name | String
+ Phone number | String
+ Point of interest | String
+ Speed | Number
+ State | String
+ Street address | String
+ Temperature | Number
+ URL | String
+ Weight | Number
+ Zip code | String
+ Custom entity | String
 
 ## Create a variable
 In the bot authoring canvas, add a question node by choosing **Ask a question**. A variable will be automatically created within the node.
