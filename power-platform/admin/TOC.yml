@@ -932,8 +932,6 @@
           href: powerapps-gdpr-delete-dsr.md
         - name: Dataverse customer data 
           href: common-data-service-gdpr-dsr-guide.md
-    - name: Power Apps US Government
-      href: powerapps-us-government.md
     - name: Datacenter regions
       href: new-datacenter-regions.md
       items: 
@@ -957,11 +955,15 @@
         href: about-microsoft-cloud-india.md
       - name: Japan
         href: about-microsoft-cloud-japan.md
-      - name: Dynamics 365 US Government
+      - name: U.S Government
         href: microsoft-dynamics-365-government.md
         items:
-        - name: Dynamics 365 US Government - Feature availability
+        - name: Dynamics 365 service description
           href: government-feature-availability.md
+        - name: Power Apps service description
+          href: powerapps-us-government.md
+        - name: Power Automate service description
+          href: power-automate-service-description.md
       - name: Geo to geo migrations
         href: geo-to-geo-migrations.md    
     - name: Partners
