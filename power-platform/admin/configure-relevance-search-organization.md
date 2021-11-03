@@ -245,12 +245,9 @@ To edit the searchable fields of a table:
 > 
 > If a common field is added to any table for Dataverse search, search will be performed for that common field across all entities. However, once you choose a specific table through the Record Type facet, Dataverse search will follow the settings you have defined for that specific table through Quick Find View.
 
-
-
-
 ### Configure quick actions that appear with Dataverse search in model-driven apps
 
-Dataverse search experience brings some of the most frequently used actions closer to search results, to help end users complete their tasks without having to navigate to the record page in model-driven apps. Quick actions are a small set of commands specific to a table. End users can see quick actions when they are interacting with search in model-driven apps running on a web browser. Some of the commonly used tables are configured to show a set of commands to help them complete their task without losing context.
+Dataverse search experience brings some of the most frequently used actions closer to search results, to help users complete their tasks without having to navigate to the record page in model-driven apps. Quick actions are a small set of commands specific to a table. Users can see quick actions when they are interacting with search in model-driven apps running on a web browser. Some of the commonly used tables are configured to show a set of commands to help them complete their task without losing context.
 
 | Table            | Quick actions      |
 |-------------|------------------------------------------------------------|
@@ -265,7 +262,7 @@ Quick actions are a subset of the table's homepage grid commands. For example, w
 
 The following three new enable rules give you the flexibility to optimize quick actions:
 
-- **ShowOnQuickAction rule** Use this rule to make a command appear only as a quick action.
+- **ShowOnQuickAction rule**: Use this rule to make a command appear only as a quick action.
 
   ```XML
   <CommandDefinition Id="new.contact.Command.Call">
@@ -280,14 +277,18 @@ The following three new enable rules give you the flexibility to optimize quick 
   </CommandDefinition>
   ```
 
-- **ShowOnGridAndQuickAction** **rule** Use this rule to make a command appear on the homepage grid as well as a quick action.
+- **ShowOnGridAndQuickAction rule**: Use this rule to make a command appear on the homepage grid as well as a quick action.
 
-- **ShowOnGrid** **rule** Use this rule to make a command appear on the homepage grid only. You can use this command to hide an existing quick action.
+- **ShowOnGrid rule**: Use this rule to make a command appear on the homepage grid only. You can use this command to hide an existing quick action.
 
 > [!NOTE]
 > Each table can have up to six quick actions.
->
-> Quick actions currently show up only in the context of search - alongside suggestions and in the results page on the primary column. The same set of quick actions appears alongside suggestions and in the results page.
+
+
+<!-- editor question: The second sentence below seems to duplicate the first sentence. Should it stay? -->
+
+
+> Quick actions currently show up only in the context of search—alongside suggestions and in the results page on the primary column. The same set of quick actions appears alongside suggestions and in the results page.
 
 ## Set managed properties for Dataverse search
 
@@ -295,7 +296,7 @@ If you want to include a table for Dataverse search, the **Can enable sync to ex
 
 To set the managed property, do the following:
 
-1. Go to **Advanced** **Settings** &gt; **Customizations**.
+1. Go to **Advanced Settings** &gt; **Customizations**.
 
 2. Select **Customize the System**.
 
@@ -303,19 +304,19 @@ To set the managed property, do the following:
 
 4. On the menu bar, select **Managed Properties**. For **Can enable sync to external search index**, select **True** or **False** to set the property to the desired state. Select **Set** to exit, as shown here.
 
-   :::image type="content" source="media/relevance-search-managed-properties.PNG" alt-text="Set the managed property":::
+   :::image type="content" source="media/relevance-search-managed-properties.PNG" alt-text="Set the managed property.":::
 
 5. Select **Publish** for your changes to take effect.
 
-If you want to change the **Can enable sync to external search index** property to **False**, you must first deselect the table from Dataverse search. If the table is included in Dataverse search, you'll see the following message: "This entity is currently syncing to an external search index. You must remove the entity from the external search index before you can set the **Can Enable Sync to External Search Index** property to **False**."
+If you want to change the **Can enable sync to external search index** property to **False**, you must first deselect the table from Dataverse search. If the table is included in Dataverse search, you'll see the following message: "This entity is currently syncing to an external search index. You must remove the entity from the external search index before you can set the **Can enable sync to external search index** property to **False**."
 
-If **Can Enable Sync to External Search Index** is set to **False**, you'll see the following message when you try to include a table in Dataverse search: "Entity can't be enabled for Dataverse search because of the configuration of its managed properties." For custom tables with sensitive data, you may consider setting the **Can enable sync to external search index** property to **False**.
+If **Can enable sync to external search index** is set to **False**, you'll see the following message when you try to include a table in Dataverse search: "Entity can't be enabled for Dataverse search because of the configuration of its managed properties." For custom tables with sensitive data, you may consider setting the **Can enable sync to external search index** property to **False**.
 
 > [!IMPORTANT]
-> Keep in mind, after you install the managed solution on the target system, you won't be able to change the value of the property because it's a managed property.
+> Keep in mind that after you install the managed solution on the target system, you won't be able to change the value of the property because it's a managed property.
 
 ### See also  
- [Use Dataverse search to search for records](/powerapps/user/relevance-search) <br />
+[Search for tables and rows by using Dataverse search](/powerapps/user/relevance-search) <br />
  
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
