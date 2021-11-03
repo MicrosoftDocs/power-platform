@@ -35,7 +35,8 @@ This type of automation is known as email message tracking. Users can select a f
 - **Email messages from records that are email enabled**. Email messages are tracked from any record type that resolves to an email address in Dynamics 365, including custom tables.
 - **No email messages**. No email messages received by the user are tracked (will have activities created). This option only affects auto tracked emails.
 
-![Convert incoming eamils.](media/email-filter-image1.png)
+    > [!div class="mx-imgBorder"] 
+    > ![Convert incoming eamils.](media/email-filter-image1.png)
 
 Emails manually tracked by the end user in Outlook via [Dynamics 365 App for Outlook](/dynamics365/outlook-app/dynamics-365-app-outlook-user-s-guide), [folder-level tracking](configure-outlook-exchange-folder-level-tracking.md), or [Outlook category](use-outlook-category-track-appointments-emails.md) get synchronized to Dynamics 365 regardless of the filtering options configured, as the user intended to manually track the email into Dynamics 365.
 
@@ -65,7 +66,9 @@ The email correlation logic will go through each of the following correlation op
 
 1. **In reply to correlation** (Set to **ON** by default, recommended): When an email message is analyzed for correlation, if the inreplyto header is present and contains a messageId of an email message already present in Dynamics 365, the email will be considered correlated to the pre-existing email message.
 
-![Use correlation to track eamil converstions.](media/email-filterimage2.png)
+
+    > [!div class="mx-imgBorder"] 
+    > ![Use correlation to track eamil converstions.](media/email-filter-image2.png)
 
 The email correlation is really accurate, no false positives and the correlation information is hidden in the email message headers.
 
@@ -73,17 +76,23 @@ The email correlation is really accurate, no false positives and the correlation
 
 Cons: tracking token information is visible to the client, Client can change the tracking token and cause an email to correlate to an unexpected email
 
-![Use tracking token.](media/email-filter-- **.png)
+
+    > [!div class="mx-imgBorder"] 
+    > ![Use tracking token.](media/email-filter-- **.png)
 
 3. **Conversation Index:** When an email message is analyzed for correlation, if a conversationIndex is present in the headers, and another email message is found in dynamics with the same conversationIndex header, the email message will be correlated
 
-![User correlation to track email converstions.](media/email-filterimage4.png)
+
+    > [!div class="mx-imgBorder"] 
+    > ![User correlation to track email converstions.](media/email-filterimage4.png)
 
 4. **Smart matching**: When an email message is analyzed for correlation, the recipients and the words in the subject are extracted, email messages with similar recipients and enough matching subject words will be correlated to it. Please review smartmatching configuration for more details around the thresholds configured.
 
 5. **Cons**: Smart matching can cause email correlation to hit false positives, hence it is not recommended to enable it. However, it is available in case customer needs to correlate emails which don't belong to the same email thread. More details around how smart matching work at the bottom.
 
-![User smart matching.](media/email-fitler-image5.png)
+
+    > [!div class="mx-imgBorder"] 
+    > ![User smart matching.](media/email-fitler-image5.png)
 
 
 ## How customer engagement apps associates email addresses with records
@@ -100,6 +109,12 @@ When customer engagement apps track an email, it associates the email address to
 8. Email-enabled tables (for example: Queues, custom, etc.)
 
 In the email **To** field,  all of the records of email-enabled tables with the email address will be listed.
+
+If **Set To,cc,bcc fields as unresolved values if multiple matches are found in Incoming Emails** is set to **No**, a tracked email in Dynamics that contains an email address that resolves to multiple records, will display each resolved record in the Email.
+
+
+    > [!div class="mx-imgBorder"] 
+    > ![Set email form options.](media/email-fitler-image6.png)
 
 <a name="BKMK_tracking-token"></a>   
 
