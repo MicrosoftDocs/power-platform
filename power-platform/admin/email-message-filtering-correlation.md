@@ -113,7 +113,7 @@ If **Set To,cc,bcc fields as unresolved values if multiple matches are found in 
 
 
    > [!div class="mx-imgBorder"] 
-   > ![Set email form options.](media/email-fitler-image6.png)
+   > ![Set email form options.](media/email-filter-image6.png)
 
 <a name="BKMK_tracking-token"></a>   
 
