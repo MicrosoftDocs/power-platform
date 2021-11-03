@@ -76,14 +76,14 @@ The email correlation is really accurate, no false positives and the correlation
 
 Cons: tracking token information is visible to the client, Client can change the tracking token and cause an email to correlate to an unexpected email
 
-    > [!div class="mx-imgBorder"] 
-    > ![Use tracking token.](media/email-filter-image2.png)
+   > [!div class="mx-imgBorder"] 
+   > ![Use tracking token.](media/email-filter-image3.png)
 
 3. **Conversation Index:** When an email message is analyzed for correlation, if a conversationIndex is present in the headers, and another email message is found in dynamics with the same conversationIndex header, the email message will be correlated
 
 
     > [!div class="mx-imgBorder"] 
-    > ![User correlation to track email converstions.](media/email-filter-image3.png)
+    > ![User correlation to track email converstions.](media/email-filter-image4.png)
 
 4. **Smart matching**: When an email message is analyzed for correlation, the recipients and the words in the subject are extracted, email messages with similar recipients and enough matching subject words will be correlated to it. Please review smartmatching configuration for more details around the thresholds configured.
 
@@ -91,7 +91,7 @@ Cons: tracking token information is visible to the client, Client can change the
 
 
     > [!div class="mx-imgBorder"] 
-    > ![User smart matching.](media/email-fitler-image5.png)
+    > ![User smart matching.](media/email-filter-image5.png)
 
 
 ## How customer engagement apps associates email addresses with records
@@ -112,8 +112,8 @@ In the email **To** field,  all of the records of email-enabled tables with the 
 If **Set To,cc,bcc fields as unresolved values if multiple matches are found in Incoming Emails** is set to **No**, a tracked email in Dynamics that contains an email address that resolves to multiple records, will display each resolved record in the Email.
 
 
-    > [!div class="mx-imgBorder"] 
-    > ![Set email form options.](media/email-fitler-image6.png)
+   > [!div class="mx-imgBorder"] 
+   > ![Set email form options.](media/email-fitler-image6.png)
 
 <a name="BKMK_tracking-token"></a>   
 
