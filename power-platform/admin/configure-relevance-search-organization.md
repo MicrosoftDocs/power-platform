@@ -43,10 +43,10 @@ Dataverse search helps you quickly find what you're looking for. It delivers fas
 - **Intelligence**: Applies AI technology to interpret natural language such as misspellings, common abbreviations, and synonyms to deliver quality results.
 
 
-<!-- editor comment: The page title in the link below is "Search for tables and rows by using Dataverse search." Can you change the link text to match? I think it helps readers know they're in the right place. -->
+<!-- editor comment: I changed the link text, below, to match the title of the page it links to. I think that helps readers know they're in the right place. -->
 
 
-For more information about Dataverse search, see: [Using Dataverse search to search for records](/powerapps/user/relevance-search).
+For more information about Dataverse search, see [Search for tables and rows by using Dataverse search](/powerapps/user/relevance-search).
 
 ### Availability and language support
 
@@ -56,7 +56,7 @@ For more information about Dataverse search, see: [Using Dataverse search to se
 
 - Full-text Quick Find is available for Customer Engagement (on-premises) organizations, starting with Dynamics CRM 2015 Update Rollup 1.
 
-- For more detailed comparison of the searches available in Microsoft Dataverse, see: [Compare search options in Microsoft Dataverse](/powerapps/user/search).
+- For more detailed comparison of the searches available in Microsoft Dataverse, see [Compare search options in Microsoft Dataverse](/powerapps/user/search).
 
 - All searchable fields in Dataverse search are processed in the language most closely matching the organization's base language, except Kazakh where all fields are processed using a basic, language-agnostic text processor.
 
@@ -121,7 +121,7 @@ Setting up Dataverse search after enabling it in the **Power Platform admin cent
 
 2. Review the columns that will be searched, the columns that will be displayed, and the filter conditions that will be applied in model-driven Power Apps (see below).
 
-3. Ensure the tables enabled for Dataverse search are included in the model-driven app. Use the Power Apps app designer to verify that the table is included in an app's components. For more information, see: [Add or edit model-driven app components](/powerapps/maker/model-driven-apps/add-edit-app-components#add-a-component).
+3. Ensure the tables enabled for Dataverse search are included in the model-driven app. Use the Power Apps app designer to verify that the table is included in an app's components. For more information, see [Add or edit model-driven app components](/powerapps/maker/model-driven-apps/add-edit-app-components#add-a-component).
 
 ### Select tables for Dataverse search
 
