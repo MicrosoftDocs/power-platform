@@ -73,7 +73,7 @@ The email correlation is really accurate, no false positives and the correlation
 
 Cons: tracking token information is visible to the client, Client can change the tracking token and cause an email to correlate to an unexpected email
 
-![Use tracking token.](media/email-filter-image3.png)
+![Use tracking token.](media/email-filter-- **.png)
 
 3. **Conversation Index:** When an email message is analyzed for correlation, if a conversationIndex is present in the headers, and another email message is found in dynamics with the same conversationIndex header, the email message will be correlated
 
