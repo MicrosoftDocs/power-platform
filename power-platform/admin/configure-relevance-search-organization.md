@@ -164,10 +164,6 @@ When you have reached the indexed field limit, you'll see a warning message. If 
 
 By default, the following system tables are indexed for Dataverse search. However, custom tables aren't included. You must add them to Dataverse search for them to be searchable.
 
-
-
-
-
 | Tables enabled for Dataverse search<br /> without Dynamics 365 apps enabled | Tables enabled for Dataverse search<br /> with Dynamics 365 apps enabled |
 |-------------------------|-------------------------|
 | Account (8)</br>Contact (11)</br>Goal (19)</br>Goal Metric (3)</br>Knowledge Article (56) | Campaign (2)</br>Campaign Activity (4)</br>Campaign Response (6)</br>Case (5)</br>Competitor (1)</br>Contract (7)</br>Invoice (4)</br>Lead (6)</br>Marketing List (5)</br>Opportunity (11)</br>Opportunity Product (8)</br>Order (4)</br>Product (5)</br>Quote (4)</br>Service (1)</br>Service Activity (9) |
@@ -182,6 +178,10 @@ The searchable fields and filters for a table enabled for Dataverse search are d
 - The **Find Columns** on a **Quick Find View** define the searchable fields in the Dataverse search index. Text fields such as Single Line of Text and Multiple Lines of Text, Lookups, and Option Sets are searchable. **Find Columns** of all other data types are ignored.
 
 - The **View Columns** on a **Quick Find View** define the fields that are displayed in model-driven apps' search results page when the matched results are returned.
+
+
+<!-- editor question: "filter columns" is mentioned above, and "filter conditions" below. Is it correct that one is columns and one is conditions? If columns is correct, seems like "filter" would be capitalized like View and Find. -->
+
 
 - The **filter conditions** on a **Quick Find View** are also applied to the Dataverse search results. See the table below for the list of filter clauses not supported by Dataverse search.
 
@@ -216,7 +216,7 @@ To edit the searchable fields of a table:
 
 4. Select the view of type **Quick Find View** in the list of views.
 
-5. Edit View columns and Find columns by adding, removing, or reordering columns. For a more detailed description of how to add or remove columns in a view, see [Choose and configure columns in model-driven app views in Power Apps](/powerapps/maker/model-driven-apps/choose-and-configure-columns)
+5. Edit View columns and Find columns by adding, removing, or reordering columns. For a more detailed description of how to add or remove columns in a view, see [Choose and configure columns in model-driven app views in Power Apps](/powerapps/maker/model-driven-apps/choose-and-configure-columns).
 
    :::image type="content" source="media/maker-portal5.gif" alt-text="Edit searchable fields of a table":::
 
@@ -224,6 +224,12 @@ To edit the searchable fields of a table:
 
 > [!IMPORTANT]
 > Changes to **Quick Find View** also apply to single-table and multi-table Quick Find configurations. Therefore, we don't prevent you from including fields that aren't supported for Dataverse search when you configure **Quick Find View**. However, unsupported fields aren't synced to the Dataverse search index and don't appear in the Dataverse search results.
+
+
+
+
+
+
 
 > [!TIP]
 > You can use the **Quick Find View** to define which fields appear as facets in model-driven apps with Dataverse search enabled. All **View Columns** with data types other than Single Line of Text and Multiple Lines of Text are marked as facetable and filterable in the index. By default, the first four facetable fields in the **Quick Find View** for the selected table are displayed as facets when users search by using Dataverse search. At any time, you can only have four fields selected as facets.
