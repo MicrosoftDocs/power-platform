@@ -30,6 +30,16 @@ In response to the unique and evolving requirements of the United States public 
 - Customer Voice
 - Omnichannel Engagement Hub
 
+## Dynamics 365 US Government feature limitations
+
+Microsoft strives to maintain functional parity between our commercially available services and those enabled though our U.S. Government clouds, specifically:
+
+- US Government Community Cloud (GCC)
+- US GC High
+- US Department of Defense (US DoD)
+
+There are exceptions to the principle of maintaining product functional parity within the U.S. Government clouds. These exceptions are highlighted through the [Product and Feature Availability](https://aka.ms/bapfunctionalparity) document, and intended to help customers understand and plan for successful implementations of their business application solutions. Microsoft continues to evaluate these services and capabilities for inclusion and updates in future releases.  Check back on a monthly basis for important updates and revisions.
+
 ## About Dynamics 365 US Government environments and products
 
 Select Dynamics 365 US Government products are Generally Available to customers through deployment into the Government Community Cloud (GCC).  Among other compliance commitments and reviews as documented in the Microsoft Trust Center, the service has received several agency Authority to Operate (ATOs) since it was originally launched in January, 2015. Microsoft is the first Cloud Solution Provider (CSP) to achieve a FedRAMP Joint Application Board Provisional Authority to Operate (JAB P-ATO) through the JAB Accelerated Process. In March, 2018, the service impact level was granted a FedRAMP JAB High P-ATO.

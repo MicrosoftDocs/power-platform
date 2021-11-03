@@ -237,13 +237,19 @@ Some of the features available in the commercial version of Power Apps are not a
 
 - Embed in [Power BI](/power-bi/).
 - [Test Studio](/powerapps/maker/canvas-apps/test-studio) is not available in government environments.
-
 - Ability to add apps to Teams using the [Add to Teams button](/powerapps/maker/canvas-apps/embed-teams-app).
-
 - [Connectors](https://gov.flow.microsoft.us/connectors/): The most popular connectors in use in our commercial service (based on usage telemetry) have been published; if there is a connector available in the commercial offering that you do not see deployed, contact support, and we will review your request. Note that third-party connectors will not be added to GCC High or DoD.  Features are being investigated with the Digital Loss Prevention (DLP) administration functionality that will enable Connectors to be added “blocked by default.”  Until this is possible, third-party connectors pose a measurable threat to organizations relying on the GCC High environment to maintain requisite data exfiltration controls.
-
 - [AI Builder](/ai-builder/) is not available in DoD.
 - [Geospatial features](/powerapps/maker/canvas-apps/geospatial-overview) are not available in government environments.
+
+Microsoft strives to maintain functional parity between our commercially available services and those enabled though our U.S. Government clouds, specifically:
+
+- US Government Community Cloud (GCC)
+- US GC High
+- US Department of Defense (US DoD)
+
+There are exceptions to the principle of maintaining product functional parity within the U.S. Government clouds. These exceptions are highlighted through the [Product and Feature Availability](https://aka.ms/bapfunctionalparity) document, and intended to help customers understand and plan for successful implementations of their business application solutions. Microsoft continues to evaluate these services and capabilities for inclusion and updates in future releases.  Check back on a monthly basis for important updates and revisions.
+
 
 ## Requesting support
 

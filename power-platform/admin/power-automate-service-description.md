@@ -252,25 +252,30 @@ Formerly, US Government customers needed to contact support before configuring t
 Some of the features available in the commercial version of Flow are not available in Flow US Government customers. The Power Automate team is actively working on making these features available to US Government customers and will update this article when these features become available.
 
 - [AI Builder](/ai-builder/) is not yet available in DoD tenants.
-
 - [Approvals](/power-automate/modern-approvals) are available, subject to the following: 
-  * There is no actionable approval support. Approval emails will contain links to the Power Automate approvals center for users to respond.
-  * There is no markdown support for approval email.
-  * Approvals are not available in DoD tenants. 
-
+  - There is no actionable approval support. Approval emails will contain links to the Power Automate approvals center for users to respond.
+  - There is no markdown support for approval email.
+  - Approvals are not available in DoD tenants. 
 - [Submitting Templates](/power-automate/publish-a-template)
-
 - [Connectors](/connectors/index) – The most popular connectors in use in our commercial service (based on usage telemetry) have been published; if there is a connector available in the commercial offering that you do not see deployed, contact support and we will review your request.
-
->[!NOTE]
->Third-party connectors will not be added to GCC High nor DoD. 
+  >[!NOTE]
+  >Third-party connectors will not be added to GCC High nor DoD. 
 
 Microsoft is investigating the data loss prevention (DLP) feature, considering the possibility for connectors to be *blocked by default*. Until this is possible, third-party connectors pose a measurable threat to organizations relying on the GCC High environment to maintain requisite data exfiltration controls.
 
 - [Power BI](/connectors/powerbi/) – Power Automate US Government doesn’t support Power BI.
-
 - [Power Platform admin center](/power-platform/admin/admin-documentation) – You can use the admin center to [open support tickets](/power-platform/admin/get-help-support), but other functionality is currently not available in US Government tenants.
 - [Desktop flows](/power-automate/desktop-flows/overview) - To install the on-premises data gateway in DoD, go to **Data > Gateways** in the left navigation, and then select **New gateway**. 
+
+Microsoft strives to maintain functional parity between our commercially available services and those enabled though our U.S. Government clouds, specifically:
+
+- US Government Community Cloud (GCC)
+- US GC High
+- US Department of Defense (US DoD)
+
+There are exceptions to the principle of maintaining product functional parity within the U.S. Government clouds. These exceptions are highlighted through the [Product and Feature Availability](https://aka.ms/bapfunctionalparity) document, and intended to help customers understand and plan for successful implementations of their business application solutions. Microsoft continues to evaluate these services and capabilities for inclusion and updates in future releases.  Check back on a monthly basis for important updates and revisions.
+
+
 
 ### See also
 [Desktop flows](/power-automate/desktop-flows/overview). 
