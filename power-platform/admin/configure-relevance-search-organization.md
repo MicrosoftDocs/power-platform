@@ -225,14 +225,8 @@ To edit the searchable fields of a table:
 > [!IMPORTANT]
 > Changes to **Quick Find View** also apply to single-table and multi-table Quick Find configurations. Therefore, we don't prevent you from including fields that aren't supported for Dataverse search when you configure **Quick Find View**. However, unsupported fields aren't synced to the Dataverse search index and don't appear in the Dataverse search results.
 
-
-
-
-
-
-
 > [!TIP]
-> You can use the **Quick Find View** to define which fields appear as facets in model-driven apps with Dataverse search enabled. All **View Columns** with data types other than Single Line of Text and Multiple Lines of Text are marked as facetable and filterable in the index. By default, the first four facetable fields in the **Quick Find View** for the selected table are displayed as facets when users search by using Dataverse search. At any time, you can only have four fields selected as facets.
+> You can use the **Quick Find View** to define which fields appear as facets in model-driven apps with Dataverse search enabled. All **View columns** with data types other than Single Line of Text and Multiple Lines of Text are marked as facetable and filterable in the index. By default, the first four facetable fields in the **Quick Find View** for the selected table are displayed as facets when users search by using Dataverse search. At any time, you can only have four fields selected as facets.
 
 > [!NOTE]
 >
@@ -247,9 +241,12 @@ To edit the searchable fields of a table:
 >   - owningbusinessunit (Name of lookup)
 >   - statecode (Label of optionset)
 >   - statuscode (Label of optionset)
->   - name (Primary name field of any table. This may or may not be the same as the logical name (fullname, subject, etc.) of the table).
+>   - name (Primary name field of any table. This may or may not be the same as the logical name (fullname, subject, and so on) of the table.)
 > 
-> If a common field is added to any table for Dataverse search, search will be performed for that common field across all entities. However, once you choose a specific table through the Record Type facet, Dataverse search will follow the settings you have defined for that specific table through Quick Find View
+> If a common field is added to any table for Dataverse search, search will be performed for that common field across all entities. However, once you choose a specific table through the Record Type facet, Dataverse search will follow the settings you have defined for that specific table through Quick Find View.
+
+
+
 
 ### Configure quick actions that appear with Dataverse search in model-driven apps
 
