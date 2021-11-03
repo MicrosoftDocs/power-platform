@@ -200,9 +200,9 @@ Basically it indicate that we internally (by default) will ignore any word at (m
 
 - **HashMaxCount**:This is the max number of hashes that will be generated for any subject or recipient list. I.e. if the subject after noise cancellation contains more than 20 words only the first 20 words are considered. <br\> **Default value**: 20
 
-- **HashDeltaSubjectCount**: This is the maximum delta allowed between subject hash counts of the emails to be correlated. <br\> **Default value** 0
+- **HashDeltaSubjectCount**: This is the maximum delta allowed between subject hash counts of the emails to be correlated. <br\> **Default value**: 0
 
-- **HashMinAddressCount**: This is the minimum hash count matches required on the recipients list for the emails to be correlated. <br\> **Default value**2
+- **HashMinAddressCount**: This is the minimum hash count matches required on the recipients list for the emails to be correlated. <br\> **Default value**: 2
 
 
 
