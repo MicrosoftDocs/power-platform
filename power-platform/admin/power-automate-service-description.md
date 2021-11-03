@@ -1,24 +1,23 @@
 ---
 title: Power Automate US Government
 description: Provides information about Power Automate US Government service description, plans, and limitations
-services: ''
-suite: flow
 author: msftman
-ms.service: power-automate
-ms.devlang: na
-ms.subservice: cloud-flow
+ms.service: power-platform
+ms.subservice: admin
+ms.component: pa-admin
 ms.topic: article
 ms.date: 10/27/2021
 ms.author: deonhe
 search.app: 
-  - Flow
+  - D365CE
+  - PowerApps
   - Powerplatform
+  - Flow
 search.audienceType: 
   - admin
 ---
 
 # Power Automate US Government
-
 
 In response to the unique and evolving requirements of the United States public sector, Microsoft has created Power Automate US Government plans. This section provides an overview of features that are specific to Power Automate US Government. We recommend that you read this supplementary section as well as the Power Automate service [getting started](/power-automate/getting-started) topic. For brevity, this service is commonly referred to as Power Automate Government Community Cloud (GCC), Power Automate Government Community Cloud – High (GCC High), or Power Automate Department of Defense (DoD).
 
@@ -254,7 +253,7 @@ Some of the features available in the commercial version of Flow are not availab
 
 - [AI Builder](/ai-builder/) is not yet available in DoD tenants.
 
-- [Approvals](./modern-approvals.md) are available, subject to the following:
+- [Approvals](/power-automate/modern-approvals) are available, subject to the following: 
   * There is no actionable approval support. Approval emails will contain links to the Power Automate approvals center for users to respond.
   * There is no markdown support for approval email.
   * Approvals are not available in DoD tenants. 
@@ -271,15 +270,13 @@ Microsoft is investigating the data loss prevention (DLP) feature, considering t
 - [Power BI](/connectors/powerbi/) – Power Automate US Government doesn’t support Power BI.
 
 - [Power Platform admin center](/power-platform/admin/admin-documentation) – You can use the admin center to [open support tickets](/power-platform/admin/get-help-support), but other functionality is currently not available in US Government tenants.
-- [Desktop flows](./desktop-flows/overview.md) - To install the on-premises data gateway in DoD, go to **Data > Gateways** in the left navigation, and then select **New gateay**. 
+- [Desktop flows](/power-automate/desktop-flows/overview) - To install the on-premises data gateway in DoD, go to **Data > Gateways** in the left navigation, and then select **New gateway**. 
 
 ### See also
-
-- [Desktop flows](./desktop-flows/overview.md).
-
-- [Dynamics 365 US Government](/power-platform/admin/microsoft-dynamics-365-government).
-
-- [Power Apps US Government](/power-platform/admin/powerapps-us-government).
+[Desktop flows](/power-automate/desktop-flows/overview). 
 
 
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
