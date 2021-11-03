@@ -43,7 +43,7 @@ Power Automate Plans:
 - **Power Automate per flow plan** which enables organizations to implement flows with reserved capacity that serve teams, department, or the entire organization without having to license each end user. This plan starts at $500/month for 5 flows.
 
 
-More details can be found in [Types of Power Automate licenses](https://docs.microsoft.com/en-us/power-platform/admin/power-automate-licensing/types) and in [Microsoft Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
+More details can be found in [Types of Power Automate licenses](power-automate-licensing/types.md) and in [Microsoft Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
 
 ### How do I use Power Apps per app plans? 
 See [About Power Apps per app plans](about-powerapps-perapp.md).
@@ -206,7 +206,7 @@ Yes, you can use the Dynamics 365 Finance and Operations connector to build canv
 
 ## Power Automate
 
-[Frequently asked questions about Power Automate licenses](https://docs.microsoft.com/en-us/power-platform/admin/power-automate-licensing/faqs)
+See [Frequently asked questions about Power Automate licensing](power-automate-licensing/faqs.md).
 
 ## Dataverse
 
