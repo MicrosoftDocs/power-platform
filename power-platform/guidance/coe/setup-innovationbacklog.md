@@ -137,7 +137,7 @@ Before you begin:
 
      ![View apps, flows and tables part of the Innovation Backlog solution.](media/ibteams-5.png "View apps, flows and tables part of the Innovation Backlog solution")
 
-1. Now, we will populate some of the tables with default values by running instant cloud flows.
+1. Now, populate some of the tables with default values by running instant cloud flows.
     1. Open the **Add pain points** cloud flow and select **Run** > **Run Flow**.
         ![Run Add Pain points cloud flow.](media/ib-2.png "Run Add Pain points cloud flow")
     1. Open the **Update Software Tools** cloud flow and select **Run** > **Run Flow**.
