@@ -85,7 +85,7 @@ Cons: tracking token information is visible to the client, Client can change the
     > [!div class="mx-imgBorder"] 
     > ![User correlation to track email converstions.](media/email-filter-image4.png)
 
-4. **Smart matching**: When an email message is analyzed for correlation, the recipients and the words in the subject are extracted, email messages with similar recipients and enough matching subject words will be correlated to it. Please review smartmatching configuration for more details around the thresholds configured.
+4. **Smart matching**: When an email message is analyzed for correlation, the recipients and the words in the subject are extracted, email messages with similar recipients and enough matching subject words will be correlated to it. Please review smart matching configuration for more details around the thresholds configured.
 
 5. **Cons**: Smart matching can cause email correlation to hit false positives, hence it is not recommended to enable it. However, it is available in case customer needs to correlate emails which don't belong to the same email thread. More details around how smart matching work at the bottom.
 
