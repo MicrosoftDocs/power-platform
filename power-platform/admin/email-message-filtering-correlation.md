@@ -68,7 +68,7 @@ The email correlation logic will go through each of the following correlation op
 
 
     > [!div class="mx-imgBorder"] 
-    > ![Use correlation to track eamil converstions.](media/email-filter-image2.png)
+     ![Use correlation to track eamil converstions.](media/email-filter-image2.png)
 
 The email correlation is really accurate, no false positives and the correlation information is hidden in the email message headers.
 
@@ -76,15 +76,14 @@ The email correlation is really accurate, no false positives and the correlation
 
 Cons: tracking token information is visible to the client, Client can change the tracking token and cause an email to correlate to an unexpected email
 
-
     > [!div class="mx-imgBorder"] 
-    > ![Use tracking token.](media/email-filter-- **.png)
+    > ![Use tracking token.](media/email-filter-image2.png)
 
 3. **Conversation Index:** When an email message is analyzed for correlation, if a conversationIndex is present in the headers, and another email message is found in dynamics with the same conversationIndex header, the email message will be correlated
 
 
     > [!div class="mx-imgBorder"] 
-    > ![User correlation to track email converstions.](media/email-filterimage4.png)
+    > ![User correlation to track email converstions.](media/email-filter-image3.png)
 
 4. **Smart matching**: When an email message is analyzed for correlation, the recipients and the words in the subject are extracted, email messages with similar recipients and enough matching subject words will be correlated to it. Please review smartmatching configuration for more details around the thresholds configured.
 
