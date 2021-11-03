@@ -20,7 +20,7 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Aggregated billing information is available in the Azure portal, and detailed usage drill downs are available in the Power Platform admin center. Reporting is available for Power Apps per app meter and Dataverse capacity add-on meters. Overages for Power Platform request meter is not reported or charged at this point.
+Aggregated billing information is available in the Azure portal, and detailed usage drill downs are available in the Power Platform admin center. Reporting is available for Power Apps per app meter and Dataverse capacity add-on meters. Overages for Power Platform request meter are not reported or charged at this point.
 
 ### View billing information in the Azure portal
 
@@ -72,15 +72,15 @@ Here is a sample of a detailed usage report.
 
 The units of measure and the reporting frequency impact the granular billed quantity amount in both the usage report and the quantities sent to Azure.  Today, usage is reported to Azure three times per 24-hour period. 
 
-There are two types of units of measure: Unique users, which is measured in numbers, and the dataverse capacity, which is measured in GigaBytes.
+There are two types of units of measure: Unique users, which are measured in numbers, and the dataverse capacity, which is measured in GigaBytes.
 
-For Power Apps per app meter, you will see the number of unique users in the report which will be a numeric quantity such as 15. This means that total 15 users used at least one app or portal in a month.
+For Power Apps per app meter, you will see the number of unique users in the report, which will be a numeric quantity such as 15. This means that total 15 users used at least one app or portal in a month.
 
 For Dataverse capacity add-on meters, units are in Gigabytes per month, and with three usage reports sent to Azure every 24 hours. In your report, you will see capacity distribution across database, file, and log based on your consumption. 
 
 ## How to manage costs
 
-You can leverage Azure cost management and alerting to effectively manage spending within your organization. When budgets amounts are approached or reached, you can configure alerts to be sent automatically or trigger actions to take place. For more details, see [Tutorial: Create and manage Azure budgets](/azure/cost-management-billing/costs/tutorial-acm-create-budgets) and [Create and manage action groups in the Azure portal](/azure/azure-monitor/alerts/action-groups).  
+You can leverage Azure cost management and alerting to effectively manage spending within your organization. When budgets amounts are approached or reached, you can configure alerts to be sent automatically or trigger actions. For more details, see [Tutorial: Create and manage Azure budgets](/azure/cost-management-billing/costs/tutorial-acm-create-budgets) and [Create and manage action groups in the Azure portal](/azure/azure-monitor/alerts/action-groups).  
 
 Azure Cost Management provides options to set budgets for Azure resources and specific meters. You can use this capability to set budgets at a billing policy level by setting a budget for its corresponding Power Platform account resource. You can also set budgets for individual Power Platform meters.
 
