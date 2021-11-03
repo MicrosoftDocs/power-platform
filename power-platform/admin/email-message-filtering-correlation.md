@@ -18,7 +18,7 @@ search.app:
 ---
 # Use Email message filtering and correlation to specify which emails are tracked 
 
-Server-side synchronization, [!INCLUDE[pn_microsoft_dynamics_crm_for_outlook](../includes/pn-microsoft-dynamics-crm-for-outlook.md)] or the Email Router can automatically create email activities in customer engagement apps. Example apps include Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation. These apps are based on received email messages. 
+With server-side synchronization and Dynamics 365 App for Outlook, you can automatically create email activities in customer engagement apps (such as [Dynamics 365 Sales](/dynamics365/sales-professional/help-hub), [Dynamics 365 Customer Service](/dynamics365/customer-service/help-hub), [Dynamics 365 Marketing](/dynamics365/marketing/help-hub), [Dynamics 365 Field Service](/dynamics365/field-service/overview), and [Dynamics 365 Project Service Automation](/dynamics365/project-operations/psa/overview)). These apps are based on received email messages. 
 
 This type of automation is known as email message tracking. Users can select a filtering option that determines what email messages will be tracked. You can set filtering on the **Email** tab of the **Set Personal Options** dialog box in client applications. Users can set the following options:  
 
