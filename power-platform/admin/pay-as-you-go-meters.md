@@ -79,9 +79,10 @@ If a user has a Power Apps per user license, the user is not counted in the mete
 |    |    |     |
 |----|------|-------|
 |  | App with Standard connectors    | App with Premium connectors    |
-| Unlicensed user   | ![Checkmark outline](media/checkmark.png) | ![Checkmark outline](media/checkmark.png) |
-| User with Power Apps for Microsoft 365 plan | Not counted    | ![Checkmark outline](media/checkmark.png) |
-| User with Power Apps per user plan          | Not counted     | Not counted    |
+| Unlicensed user   | Charged via Azure subscription.  | Charged via Azure subscription.  |
+| User with Power Apps for Microsoft 365 plan | Charged via Azure subscription. App passes are not consumed.    | Charged via Azure subscription. App passes are not consumed.  |
+| User with Power Apps per user plan          | Not counted in the meter.    | Charged via Azure subscription.    |
+| User with Power Apps per user plan          | Not counted in the meter.    | Not counted in the meter.    |
 
 > [!NOTE]
 > If an environment already has [app passes assigned](about-powerapps-perapp.md) and the environment is enabled for pay-as-you-go, app passes are ignored and not consumed. You can reallocate those app passes to a different environment. 
