@@ -61,7 +61,7 @@ Dynamics 365 uses the following information from an email to determine if a new 
 
 - **Tracking token in subject** (visible in the header): Dynamics 365 concept that's stamped directly in the subject line.
 
-- **Subject words and recipients** (visible in the header): Smart matching which is a Dynamics 365 concept which use this data based on configuration.
+- **Subject words and recipients** (visible in the header): Smart matching which is a Dynamics 365 concept that uses this information based on configuration.
 
 
 The email correlation logic goes through each of theses correlation options, in this order:
@@ -87,7 +87,7 @@ The email correlation logic goes through each of theses correlation options, in 
     > [!div class="mx-imgBorder"] 
     > ![User correlation to track email converstions.](media/email-filter-image4.png)
 
-4. **Smart matching**: When an email message is analyzed for correlation, the recipients and the words in the subject are extracted, email messages with similar recipients and enough matching subject words will be correlated to it. Please review smart matching configuration for more details around the thresholds configured.
+4. **Smart matching**: When an email message is analyzed for correlation, the recipients and the words in the subject are extracted, email messages with similar recipients and enough matching subject words will be correlated to it. For more information, see [Smart matching](email-message-filtering-correlation.md#smart-matching).
 
    > [!NOTE]
    > Smart matching can cause email correlation to hit false positives, hence it is not recommended to enable it. However, it is available in case you need to correlate emails which don't belong to the same email thread. 
@@ -99,9 +99,9 @@ The email correlation logic goes through each of theses correlation options, in 
 
 ## Associate an email address with a row
 
-When customer engagement apps track an email, it associates the email address to a record within customer engagement apps. The contents of the email **From** field can only be associated with one record. If there are duplicate records within customer engagement apps with the same email address, the contents of the email **From** field will resolve to the first active record in the following order:
+When customer engagement apps track an email, it associates the email address to a row within customer engagement apps. The contents of the email **From** field can only be associated with one row. If there are duplicate rows within customer engagement apps with the same email address, the contents of the email **From** field will resolve to the first active row in the following order:
 
-1. SystemUser (*This will be first unless the tracking user is also the owner of the duplicated record, such as Contact, Account and others listed below. If the tracking user does NOT own the duplicated record, such as Contact, the sender email will resolve to the SystemUser*).
+1. SystemUser (*This will be first unless the tracking user is also the owner of the duplicated row, such as Contact, Account and others listed below. If the tracking user does NOT own the duplicated row, such as Contact, the sender email will resolve to the SystemUser*).
 2. Contact
 3. Account
 4. Lead
@@ -110,9 +110,9 @@ When customer engagement apps track an email, it associates the email address to
 7. Business unit
 8. Email-enabled tables (such as Queues, custom, etc.)
 
-In the email **To** field,  all of the records of email-enabled tables with the email address will be listed.
+In the email **To** field,  all of the rowa of email-enabled tables with the email address will be listed.
 
-If **Set To,cc,bcc fields as unresolved values if multiple matches are found in Incoming Emails** is set to **No**, a tracked email in Dynamics that contains an email address that resolves to multiple records, will display each resolved record in the Email.
+If **Set To,cc,bcc fields as unresolved values if multiple matches are found in Incoming Emails** is set to **No**, a tracked email in Dynamics that contains an email address that resolves to multiple rows, will display each resolved row in the Email.
 
 
    > [!div class="mx-imgBorder"] 
@@ -153,19 +153,18 @@ By default, customer engagement apps use the following token structure, that con
 
 <a name="BKMK_smartmatching"></a>   
 
-### What is smart matching?  
- When an incoming email message is processed by Server Side Sync, the system extracts information associated with the email message subject, sender address, and recipients' addresses that link the email activity to other records. This correlation process, also known as smart matching, uses the following criteria to match received email message information to email activities:
+## Smart matching  
+ When an incoming email message is processed by server-side Sync, the system extracts information associated with the email message subject, sender address, and recipients' addresses that link the email activity to other rows. This correlation process, also known as smart matching, uses the following criteria to match received email message information to email activities:
 
-- **Subject matching**. Prefixes, such as RE: or Re:, and letter case are ignored. For example, email message subjects with *Re: hello* and *Hello* would be considered a match..  
-
-- **Sender and recipient matching**. The system calculates the number of exact sender and recipient email addresses in common.
+- **Subject matching**: Prefixes, such as RE: or Re:, and letter case are ignored. For example, email message subjects with *Re: hello* and *Hello* would be considered a match..  
+- **Sender and recipient matching**: The system calculates the number of exact sender and recipient email addresses in common.
 
 When the matching process is complete, the system selects the owner and the object of the incoming email message.
 
 By default, smart matching is turned off.  
 
 > [!NOTE]
->  You can disable, enable, and tune smart-matching settings in the [System Settings dialog box – Email tab](system-settings-dialog-box-email-tab.md).  
+>  You can disable, enable, and modify smart-matching settings in the [System Settings dialog box – Email tab](system-settings-dialog-box-email-tab.md).  
 
 
 ### How does smart matching work
