@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/13/2021
+ms.date: 11/04/2021
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -42,10 +42,6 @@ Dataverse search helps you quickly find what you're looking for. It delivers fas
 
 - **Intelligence**: Applies AI technology to interpret natural language such as misspellings, common abbreviations, and synonyms to deliver quality results.
 
-
-<!-- editor comment: I changed the link text, below, to match the title of the page it links to. I think that helps readers know they're in the right place. -->
-
-
 For more information about Dataverse search, see [Search for tables and rows by using Dataverse search](/powerapps/user/relevance-search).
 
 ### Availability and language support
@@ -78,7 +74,7 @@ To enable Dataverse search, do the following:
 
 1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), select an environment.
 
-2. Select **Settings** &gt; **Product** &gt; **Features**.
+2. Select **Settings** > **Product** > **Features**.
 
 3. Under **Search**, set **Dataverse search** to **On**.
 
@@ -93,10 +89,6 @@ If the Dataverse search index needs to be provisioned, you will see an indicatio
 
 ### Help improve Dataverse search
 
-
-<!-- editor comment: I can't find any mention of "Dynamics 365 Natural Language" in the style guide. Maybe "natural language" should be lowercase. -->
-
-
 To help Microsoft improve Dataverse search, you can share your environment's Dataverse search queries in Dynamics 365 and Power Platform applications with Microsoft. This data will help Microsoft build, improve, and validate the Microsoft machine learning model for the Dynamics 365 Natural Language search query technology.
 
 Your queries and results are reviewed by people using secured computers in the United States. Aggregate data about queries and results are used by Microsoft engineers and data scientists to improve future search query results for all users worldwide. Your data remains your property. Your organization's data will be stored within your tenant's compliance boundary and is automatically deleted after 30 days. You can delete the data at any time by navigating to the Power Platform admin center and toggling **Share anonymized search analytics with Microsoft** to **Off**. For more information, see **Terms of Service** in the Power Platform admin center.
@@ -105,7 +97,7 @@ Your queries and results are reviewed by people using secured computers in the U
 
 1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), select an environment.
 
-2. Select **Settings** &gt; **Product** &gt; **Features**.
+2. Select **Settings** > **Product** > **Features**.
 
 3. Under **Search**, set **Share anonymized search analytics with Microsoft** to **On**.
 
@@ -173,15 +165,11 @@ By default, the following system tables are indexed for Dataverse search. Howeve
 
 ### Select searchable fields and filters for each table
 
-The searchable fields and filters for a table enabled for Dataverse search are driven by the table's Quick Find View. The complete set of **View columns**, **Find columns**, and **filter columns** in a table's Quick Find View become part of the Dataverse search index when that table is enabled for Dataverse search. There is no limit on how many searchable fields you can add for each table. However, there is a limit on the total number of indexed fields, as explained in the previous section. 
+The searchable fields and filters for a table enabled for Dataverse search are driven by the table's Quick Find View. The complete set of **View columns**, **Find columns**, and **Filter columns** in a table's Quick Find View become part of the Dataverse search index when that table is enabled for Dataverse search. There is no limit on how many searchable fields you can add for each table. However, there is a limit on the total number of indexed fields, as explained in the previous section. 
 
 - The **Find Columns** on a **Quick Find View** define the searchable fields in the Dataverse search index. Text fields such as Single Line of Text and Multiple Lines of Text, Lookups, and Option Sets are searchable. **Find Columns** of all other data types are ignored.
 
 - The **View Columns** on a **Quick Find View** define the fields that are displayed in model-driven apps' search results page when the matched results are returned.
-
-
-<!-- editor question: "filter columns" is mentioned above, and "filter conditions" below. Is it correct that one is columns and one is conditions? If columns is correct, seems like "filter" would be capitalized like View and Find. -->
-
 
 - The **filter conditions** on a **Quick Find View** are also applied to the Dataverse search results. See the table below for the list of filter clauses not supported by Dataverse search.
 
@@ -210,7 +198,7 @@ To edit the searchable fields of a table:
 
 1. Sign in to [Power Apps](https://make.powerapps.com/).
 
-2. Select **Dataverse** &gt; **Tables**.
+2. Select **Data** > **Tables**.
 
 3. Select the table you want to make the changes for and then select the **Views** tab.
 
@@ -232,7 +220,7 @@ To edit the searchable fields of a table:
 >
 > - Changes made to the Dataverse search configuration or to the searchable data may take up to 15 minutes to appear in the search service. It may take up to an hour or more to complete a full sync for average size organizations, and a couple of days for very large size organizations.
 >
-> - Although you can have related table fields as a **View column** or a **Find column** or a **filter column** in a table's Quick Find View, related table fields are not supported by Dataverse search and hence ignored.
+> - Although you can have related table fields as a **View column** or a **Find column** or a **Filter column** in a table's Quick Find View, related table fields are not supported by Dataverse search and hence ignored.
 >
 > - Updates to calculated fields and lookups are not automatically synced in Dataverse search. Data is refreshed whenever a field that is configured for Dataverse search is updated in a record.
 > 
@@ -283,11 +271,6 @@ The following three new enable rules give you the flexibility to optimize quick 
 
 > [!NOTE]
 > Each table can have up to six quick actions.
-
-
-<!-- editor question: The second sentence below seems to duplicate the first sentence. Should it stay? -->
-
-
 > Quick actions currently show up only in the context of search—alongside suggestions and in the results page on the primary column. The same set of quick actions appears alongside suggestions and in the results page.
 
 ## Set managed properties for Dataverse search
@@ -296,7 +279,7 @@ If you want to include a table for Dataverse search, the **Can enable sync to ex
 
 To set the managed property, do the following:
 
-1. Go to **Advanced Settings** &gt; **Customizations**.
+1. Go to **Advanced Settings** > **Customizations**.
 
 2. Select **Customize the System**.
 
