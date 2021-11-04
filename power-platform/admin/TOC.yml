@@ -955,18 +955,7 @@
         href: about-microsoft-cloud-india.md
       - name: Japan
         href: about-microsoft-cloud-japan.md
-      - name: U.S Government
-        items:
-        - name: Dynamics 365 service description
-          href: microsoft-dynamics-365-government.md
-        - name: Power Apps service description
-          href: powerapps-us-government.md
-        - name: Power Automate service description
-          href: power-automate-service-description.md
-        - name: Dynamics 365 US Government feature availability 
-          href: government-feature-availability.md
-      - name: Geo to geo migrations
-        href: geo-to-geo-migrations.md    
+
     - name: Partners
       items:
       - name: Add a Partner of Record
