@@ -20,25 +20,28 @@ search.app:
 
 With server-side synchronization and Dynamics 365 App for Outlook, you can automatically create email activities in customer engagement apps (such as [Dynamics 365 Sales](/dynamics365/sales-professional/help-hub), [Dynamics 365 Customer Service](/dynamics365/customer-service/help-hub), [Dynamics 365 Marketing](/dynamics365/marketing/help-hub), [Dynamics 365 Field Service](/dynamics365/field-service/overview), and [Dynamics 365 Project Service Automation](/dynamics365/project-operations/psa/overview)). These apps are based on received email messages. 
 
-This type of automation is known as email message tracking. Users can select a filtering option that determines what email messages will be tracked. You can set filtering on the **Email** tab of the **Set Personal Options** dialog box in client applications. Users can set the following options:
 
-  > [!NOTE]
-  > - The options below have a configurable behavior for automatically tracking sent items. Please refer to documentation.
-  > - These options apply to user mailboxes and same options are also configurable in the queue form for queue mailboxes.
+With automation to track email messages users can select a filter option that determines which email messages are tracked. 
 
-- **All email messages**. All email messages received by the user are tracked into Dynamics 365 as an email activity.
+Users can set the following email filter options in the **Set Personal Options** dialog box on the **Email** tab. For more informations, see [Set personal options that affect tracking and synchronization between customer engagement apps and Outlook or Exchange](set-personal-options-affect-tracking-synchronization-between-dynamics-365-outlook-exchange.md).
 
-- **Email messages in response to email**. Only replies to email messages that have already been tracked will be saved as email activities in Dynamics 365.
 
-- **Email messages from Leads, Contacts, and Accounts**. Only email messages sent which resolved to a lead, contact or account in Dynamics 365 are saved as activities.
+- **All email messages**: All email messages received by the user are tracked in Dynamics 365 as an email activity.
 
-- **Email messages from records that are email enabled**. Email messages are tracked from any record type that resolves to an email address in Dynamics 365, including custom tables.
-- **No email messages**. No email messages received by the user are tracked (will have activities created). This option only affects auto tracked emails.
+- **Email messages in response to email**: Only replies to email messages that have already been tracked are saved as email activities in Dynamics 365.
 
-    > [!div class="mx-imgBorder"] 
-    > ![Convert incoming eamils.](media/email-filter-image1.png)
+- **Email messages from Leads, Contacts, and Accounts**: Only email messages sent which resolve to a lead, contact, or account row in Dynamics 365 is saved as activities.
 
-Emails manually tracked by the end user in Outlook via [Dynamics 365 App for Outlook](/dynamics365/outlook-app/dynamics-365-app-outlook-user-s-guide), [folder-level tracking](configure-outlook-exchange-folder-level-tracking.md), or [Outlook category](use-outlook-category-track-appointments-emails.md) get synchronized to Dynamics 365 regardless of the filtering options configured, as the user intended to manually track the email into Dynamics 365.
+- **Email messages from records that are email enabled**: Email messages are tracked from any row  that resolves to an email address in Dynamics 365, including custom tables.
+
+- **No email messages**: No email messages received by the user are tracked (will have activities created). This option only affects auto tracked emails.
+
+  > [!NOTE] These options are configurable to automatically track sent items and can also be configured for queues and queue mailboxes.
+
+     > [!div class="mx-imgBorder"] 
+     > ![Convert incoming eamils.](media/email-filter-image1.png)
+
+Emails that are manually tracked by a user in Outlook via [Dynamics 365 App for Outlook](/dynamics365/outlook-app/dynamics-365-app-outlook-user-s-guide), [folder-level tracking](configure-outlook-exchange-folder-level-tracking.md), or [Outlook category](use-outlook-category-track-appointments-emails.md) are synchronized with Dynamics 365 regardless of the configured filter options, as the user intended to manually track the email into Dynamics 365.
 
 By default, Email messages sent in response to email options are set to enabled. Correlation occurs after an email message is filtered. System admins can turn off all message tracking for a particular user by setting **Incoming Email** under **Synchronization Method** to **None** on the Mailbox form.
 
