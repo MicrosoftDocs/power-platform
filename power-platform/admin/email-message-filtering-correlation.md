@@ -44,7 +44,7 @@ Users can set the following email filter options in the **Set Personal Options**
 
 Emails that are manually tracked by a user in Outlook via [Dynamics 365 App for Outlook](/dynamics365/outlook-app/dynamics-365-app-outlook-user-s-guide), [folder-level tracking](configure-outlook-exchange-folder-level-tracking.md), or [Outlook category](use-outlook-category-track-appointments-emails.md) are synchronized with Dynamics 365 regardless of the configured filter options, as the user wants to manually track the email into Dynamics 365.
 
-The **Email messages sent in response to email** options is tunred on by default. Correlation occurs after an email message is filtered. An administrator can turn off all message tracking for a particular user by setting **Incoming Email** under **Synchronization Method** to **None** on the **Mailbox** form. This means server-side synchronization won't process the mailbox for incoming emails, so no incoming emails from the mailbox will be tracked in Dynamics 365.
+The **Email messages sent in response to email** options is turned on by default. Correlation occurs after an email message is filtered. An administrator can turn off all message tracking for a particular user by setting **Incoming Email** under **Synchronization Method** to **None** on the **Mailbox** form. This means server-side synchronization won't process the mailbox for incoming emails, so no incoming emails from the mailbox will be tracked in Dynamics 365.
 
 An administrator can by enable or disable email correlation from the **[System Settings](system-settings-dialog.md)** dialog box on the **Email** tab at the organization level.
 
@@ -73,7 +73,7 @@ The email correlation logic goes through each of theses correlation options, in 
     > ![Use correlation to track eamil converstions.](media/email-filter-image2.png)
 
 
-2. **Tracking token correlation**: When an email message is analyzed for correlation, if the subject contains a tracking token, then the system searches for existing emails in Dynamcis 365 looking the same tracking token. If there's a match, then the new email message is tracked and related to it the exiting email. This is option is set to **On** by default.
+2. **Tracking token correlation**: When an email message is analyzed for correlation, if the subject contains a tracking token, then the system searches for existing emails in Dynamics 365 looking the same tracking token. If there's a match, then the new email message is tracked and related to it the exiting email. This is option is set to **On** by default.
 
    > [!NOTE]
    > Tracking token information is visible to the user and it can be changed which can cause an email to correlate with the wrong email.
