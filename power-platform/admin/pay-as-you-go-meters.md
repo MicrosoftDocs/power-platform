@@ -80,7 +80,7 @@ If a user has a Power Apps per user license, the user is not counted in the mete
 |----|------|-------|
 |  | **App with Standard connectors**   | **App with Premium connectors**    |
 | Unlicensed user   | Charged via Azure subscription.  | Charged via Azure subscription.  |
-| Unlicensed user but Power Apps per app licenses are available in an environment   | Charged via Azure subscription. App passes are not consumed.    | Charged via Azure subscription. App passes are not consumed.  |
+| Unlicensed user but Power Apps per app licenses is available in an environment   | Charged via Azure subscription. App passes are not consumed.    | Charged via Azure subscription. App passes are not consumed.  |
 | User with Power Apps for Microsoft 365 plan          | Not counted in the meter.    | Charged via Azure subscription.    |
 | User with Power Apps per user plan          | Not counted in the meter.    | Not counted in the meter.    |
 
@@ -104,7 +104,7 @@ Measurement for each category of Dataverse storage usage will happen three times
 
 # [Table](#tab/table)
 
-Measured usage *above* entitlements of 1GB Database and 1GB File
+Measured usage *above* entitlements of 1 GB Database and 1 GB File
 
 |Storage category  |Month #1  |Month #2  |Month #3  |
 |---------|---------|---------|---------|
