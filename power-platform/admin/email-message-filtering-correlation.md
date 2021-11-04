@@ -50,7 +50,7 @@ This means server-side synchronization won't process the mailbox for incoming em
 
 Admins can set email correlation on the **Email** tab of the System Settings page by enabling or disabling them for the entire organization.
 
-## How customer engagement apps uses conversations to track emails  
+## Use conversations to track emails  
 
 Multiple pieces of information are stored on an email message and can be leveraged by Dynamics 365 to determine if a new email is correlating to a pre-existing email message in Dynamics 365:
 
@@ -98,7 +98,7 @@ The email correlation is really accurate, no false positives and the correlation
     > ![User smart matching.](media/email-filter-image5.png)
 
 
-## How customer engagement apps associates email addresses with records
+## Associate an email address with a row
 
 When customer engagement apps track an email, it associates the email address to a record within customer engagement apps. The contents of the email **From** field can only be associated with one record. If there are duplicate records within customer engagement apps with the same email address, the contents of the email **From** field will resolve to the first active record in the following order:
 
