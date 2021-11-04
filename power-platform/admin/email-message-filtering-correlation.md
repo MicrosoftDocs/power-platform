@@ -44,39 +44,39 @@ Users can set the following email filter options in the **Set Personal Options**
 
 Emails that are manually tracked by a user in Outlook via [Dynamics 365 App for Outlook](/dynamics365/outlook-app/dynamics-365-app-outlook-user-s-guide), [folder-level tracking](configure-outlook-exchange-folder-level-tracking.md), or [Outlook category](use-outlook-category-track-appointments-emails.md) are synchronized with Dynamics 365 regardless of the configured filter options, as the user wants to manually track the email into Dynamics 365.
 
-The **Email messages sent in response to email** options is enabled by default. Correlation occurs after an email message is filtered. An administrator can turn off all message tracking for a particular user by setting **Incoming Email** under **Synchronization Method** to **None** on the **Mailbox** form. This means server-side synchronization won't process the mailbox for incoming emails, so no incoming emails from the mailbox will be tracked in Dynamics 365.
+The **Email messages sent in response to email** options is tunred on by default. Correlation occurs after an email message is filtered. An administrator can turn off all message tracking for a particular user by setting **Incoming Email** under **Synchronization Method** to **None** on the **Mailbox** form. This means server-side synchronization won't process the mailbox for incoming emails, so no incoming emails from the mailbox will be tracked in Dynamics 365.
 
-An administrator can set email correlation on the **Email** tab in the **System Settings** by enabling or disabling them for the entire organization.
+An administrator can by enable or disable email correlation from the **[System Settings](system-settings-dialog.md)** dialog box on the **Email** tab at the organization level.
 
 ## Use conversations to track emails  
 
-Multiple pieces of information are stored on an email message and can be leveraged by Dynamics 365 to determine if a new email is correlating to a pre-existing email message in Dynamics 365:
-
-- MessageId (header – Not visible): Uniquely identifies an email message and it is stamped on each email message.
-
-- InreplyTo (header – Not visible): This will contain the messageId which the email message is in reply to.
-
-- ConversationIndex (header – Not visible): This contains data which allows to associate an email message into an email thread.
-
-- Tracking token in subject (visible): Tracking token is a D365 concept and is stamped directly in the subject.
-
-- Subject words and recipients (visible): This is a D365 concept, Smart matching will use this data based on its configuration.
+Dynamics 365 uses the following information from an email to determine if a new email correlates to an existing email message in Dynamics 365:
 
 
-The email correlation logic will go through each of the following correlation options in order:
+- **MessageId** (not visible in the header): Uniquely identifies an email message which is stamped on every email message.
+
+- **InreplyTo** (not visible in the header): Contains the **messageId** that the email message is in reply to.
+
+- **ConversationIndex** (not visible in the header): Contains data that associates an email message to an email thread.
+
+- **Tracking token in subject** (visible in the header): Dynamics 365 concept that's stamped directly in the subject line.
+
+- **Subject words and recipients** (visible in the header): Smart matching which is a Dynamics 365 concept which use this data based on configuration.
 
 
-1. **In reply to correlation** (set to **ON** by default, recommended): When an email message is analyzed for correlation, if the inreplyto header is present and contains a messageId of an email message already present in Dynamics 365, the email will be considered correlated to the pre-existing email message.
+The email correlation logic goes through each of theses correlation options, in this order:
 
+
+1. **In reply to correlation**: When an email message is analyzed for correlation, if the **inreplyto** header is present and contains a **messageId** of an email message that's already in Dynamics 365, the email is correlated to existing email message. This is set to **ON** by default, which is recommended. The email correlation is accurate, there is no false positives.
 
     > [!div class="mx-imgBorder"] 
     > ![Use correlation to track eamil converstions.](media/email-filter-image2.png)
 
-The email correlation is really accurate, no false positives and the correlation information is hidden in the email message headers.
 
-2. **Tracking token correlation** (set to **On** by default): When an email message is analyzed for correlation, if the subject contains a tracking token, the tracking token will be extracted, an email message within Dynamics 365 will be searched with the same tracking token and the email message will be considered related to it.
+2. **Tracking token correlation**: When an email message is analyzed for correlation, if the subject contains a tracking token, then the system searches for existing emails in Dynamcis 365 looking the same tracking token. If there's a match, then the new email message is tracked and related to it the exiting email. This is option is set to **On** by default.
 
-    Cons: tracking token information is visible to the client, Client can change the tracking token and cause an email to correlate to an unexpected email
+   > [!NOTE]
+   > Tracking token information is visible to the user and it can be changed which can cause an email to correlate with the wrong email.
 
      > [!div class="mx-imgBorder"] 
      > ![Use tracking token.](media/email-filter-image3.png)
@@ -89,7 +89,8 @@ The email correlation is really accurate, no false positives and the correlation
 
 4. **Smart matching**: When an email message is analyzed for correlation, the recipients and the words in the subject are extracted, email messages with similar recipients and enough matching subject words will be correlated to it. Please review smart matching configuration for more details around the thresholds configured.
 
-5. **Cons**: Smart matching can cause email correlation to hit false positives, hence it is not recommended to enable it. However, it is available in case customer needs to correlate emails which don't belong to the same email thread. More details around how smart matching work at the bottom.
+   > [!NOTE]
+   > Smart matching can cause email correlation to hit false positives, hence it is not recommended to enable it. However, it is available in case customer needs to correlate emails which don't belong to the same email thread. More details around how smart matching work at the bottom.
 
 
     > [!div class="mx-imgBorder"] 
