@@ -5,7 +5,7 @@ author: mduelae
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/3/2021
+ms.date: 11/4/2021
 ms.subservice: admin
 ms.author: mkaur
 search.audienceType: 
@@ -129,7 +129,7 @@ By default, the tracking token feature is turned on.
 
 ### Tracking token structure  
 
-By default, customer engagement apps use the following token structure, that consists of a 4 character prefix and a 7 digit identifier.
+By default, customer engagement apps use the following token structure, that consists of a four character prefix and a 7-digit identifier.
 
  ![Tracking token structure.](../admin/media/tracking-token.png "Tracking token structure")  
 
@@ -138,7 +138,7 @@ By default, customer engagement apps use the following token structure, that con
 
 |                  Part                   |                                                                                                                                                                                                                                                                                Description                                                                                                                                                                                                                                                                                |
 |-----------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                 Prefix                  |                                                                                               Configurable from 1-20 characters. The default value is *Dynamics 365 apps:*. The prefix can be unique for each organization or environment. For example, in a multi-tenant deployment of customer engagement apps, we recommend that each organization configure and use a unique prefix.                                                                                               |
+|                 Prefix                  |                                                                                               Configurable from 1-20 characters. The default value is *Dynamics 365 apps*:. The prefix can be unique for each organization or environment. For example, in a multi-tenant deployment of customer engagement apps, we recommend that each organization configure and use a unique prefix.                                                                                               |
 |     Deployment base tracking number     |                                                                                                                                                                                 Configurable from 0-2,147,483,647. Default value is 0. Can be used as an identifier for a specific environment.                                                                                                                                                                                  |
 |         User number digit range         |                                                                                                                          Configurable from 1-9. The default range is three (3) digits. This value determines how many digits to use when customer engagement apps generates the numeric identifier for the user who generated the email activity.                                                                                                                          |
 | Incremental message counter digit range | Configurable from 1-9. Default range is three (3) digits. This value determines how many digits to use when customer engagement apps generates the numeric identifier for the email activity (not the individual messages that the activity contains). If you use the default value to generate a token with a three-digit number, it will increment the number through 999, and then restart the number at 000. You can use a larger order of digits to reduce the possibility of assigning duplicate tokens to active email threads. |
@@ -154,7 +154,7 @@ By default, customer engagement apps use the following token structure, that con
 <a name="BKMK_smartmatching"></a>   
 
 ## Smart matching  
- When an incoming email message is processed by server-side Sync, the system extracts information associated with the email message subject, sender address, and recipients' addresses that link the email activity to other rows. This correlation process, also known as smart matching, uses the following criteria to match received email message information to email activities:
+ When an incoming email message is processed by server-side sync, the system extracts information associated with the email message subject, sender address, and recipients' addresses that link the email activity to other rows. This correlation process, also known as smart matching, uses the following criteria to match received email message information to email activities:
 
 - **Subject matching**: Prefixes, such as RE: or Re:, and letter case are ignored. For example, email message subjects with *Re: hello* and *Hello* would be considered a match..  
 - **Sender and recipient matching**: The system calculates the number of exact sender and recipient email addresses in common.
@@ -171,9 +171,9 @@ By default, smart matching is turned off.
 
 Smart matching relies completely on the existence of similarity between emails. The subject and recipients (from, to, cc and bcc) list are the two important components that are considered with checking for similarity.
 
-When an email is sent from CRM, there are two sets of hashes generated for it and stored in the database.
+When an email is sent from Dynamics 365, there is two sets of hashes that are generated and stored in the database.
 
-- **Subject hashes**: To generate subject hashes, the subject of the email, which may include the CRM token if its usage is enabled in system settings, is first checked for noise words like RE: FW: etc. The noise words are stripped off the subject and then tokenized. All the non empty tokens (words) are then hashed to generate subject hashes.
+- **Subject hashes**: To generate subject hashes, the subject of the email, which may include the Dynamics 365 token if its usage is enabled in system settings, is first checked for noise words like RE: FW: etc. The noise words are stripped off the subject and then tokenized. All the non empty tokens (words) are then hashed to generate subject hashes.
 
 - **Recipient hashes**: To generate the recipient hashes the recipient (from, to, cc, bcc) list is analyzed for unique email addresses. For each unique email address an address hash is generated.
 
@@ -200,7 +200,7 @@ Basically it indicate that we internally (by default) will ignore any word at (m
 > [!NOTE]
 >  By default we do not ignore starting phrases in the subject line like "Out of office:" as this does not have the first word with the ":" next to it. For ignoring this phrase you can update the regular expression in the registry as "^\[\\s\]\*(\[\\w\]+\\s?:\[\\s\]\*)+\|Out of office:". Do not place the double quote that I have around the string in the example into the registry. The text in the registry should only be the regular expression you want to use for ignoring words from the subject line.
 
-- **HashMaxCount**:This is the max number of hashes that will be generated for any subject or recipient list. I.e. if the subject after noise cancellation contains more than 20 words only the first 20 words are considered. <br\> **Default value**: 20
+- **HashMaxCount**:This is the max number of hashes that are generated for any subject or recipient list. For example, if the subject after noise cancellation contains more than 20 words only the first 20 words are considered. <br\> **Default value**: 20
 
 - **HashDeltaSubjectCount**: This is the maximum delta allowed between subject hash counts of the emails to be correlated. <br\> **Default value**: 0
 
