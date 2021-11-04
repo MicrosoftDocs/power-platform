@@ -36,11 +36,11 @@ Users can set the following email filter options in the **Set Personal Options**
 
 - **No email messages**: No email messages received by the user are tracked (will have activities created). This option only affects auto tracked emails.
 
-  > [!NOTE] 
-  > These options are configurable to automatically track sent items and can also be configured for queues and queue mailboxes.
+> [!NOTE]
+> These options are configurable to automatically track sent items and can also be configured for queues and queue mailboxes.
 
-     > [!div class="mx-imgBorder"] 
-     > ![Convert incoming eamils.](media/email-filter-image1.png)
+   > [!div class="mx-imgBorder"] 
+   > ![Convert incoming eamils.](media/email-filter-image1.png)
 
 Emails that are manually tracked by a user in Outlook via [Dynamics 365 App for Outlook](/dynamics365/outlook-app/dynamics-365-app-outlook-user-s-guide), [folder-level tracking](configure-outlook-exchange-folder-level-tracking.md), or [Outlook category](use-outlook-category-track-appointments-emails.md) are synchronized with Dynamics 365 regardless of the configured filter options, as the user intended to manually track the email into Dynamics 365.
 
