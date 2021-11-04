@@ -1,5 +1,5 @@
 ---
-title: "Dynamics 365 US Government overview"
+title: "Dynamics 365 service description"
 description: "Learn about features that are specific to Microsoft Dynamics 365 US Government as public sector customers deploy into government community cloud (GCC)." 
 author: jimholtz
 ms.service: power-platform
@@ -17,7 +17,7 @@ search.app:
   - Flow
 ---
 
-# Dynamics 365 US Government
+# Dynamics 365 service description
 
 In response to the unique and evolving requirements of the United States public sector, Microsoft has created Microsoft Dynamics 365 US Government that is available to qualified government tables in the United States. On October 11, 2016, Microsoft announced the next generation of intelligent business applications in the cloud under the brand Microsoft Dynamics 365. To this end, Microsoft Dynamics 365 US Government entails a continuity of the protected environment that was originally branded Microsoft CRM Online Government where the protections afforded to the government community cloud under the new brand are now represented by eight discrete functions: 
 

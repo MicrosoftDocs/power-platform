@@ -1,5 +1,5 @@
 ---
-title: Microsoft Power Apps US Government | Microsoft Docs
+title: Power Apps service description | Microsoft Docs
 description: Provides information about Power Apps US Government service description, plans, and limitations.
 author: jimholtz
 ms.service: power-platform
@@ -17,7 +17,7 @@ search.app:
   - Flow
 ---
 
-# Microsoft Power Apps US Government 
+# Power Apps service description
 
 In response to the unique and evolving requirements of the United States public sector, Microsoft has created Power Apps US Government, which consists of several plans for US government organizations. This section provides an overview of features that are specific to Power Apps US Government. It is recommended that you read this supplementary section alongside the Power Apps [documentation](/powerapps/powerapps-overview), which covers information about the general Power Apps service description. For brevity, this service is commonly referred to as Power Apps Government Community Cloud (GCC), or Power Apps Government Community Cloud – High (GCC High), or Power Apps Department of Defense (DoD).
 

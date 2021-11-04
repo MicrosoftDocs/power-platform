@@ -1,5 +1,5 @@
 ---
-title: Power Automate US Government
+title: Power Automate service description
 description: Provides information about Power Automate US Government service description, plans, and limitations
 author: msftman
 ms.service: power-platform
@@ -17,7 +17,7 @@ search.audienceType:
   - admin
 ---
 
-# Power Automate US Government
+# Power Automate service description
 
 In response to the unique and evolving requirements of the United States public sector, Microsoft has created Power Automate US Government plans. This section provides an overview of features that are specific to Power Automate US Government. We recommend that you read this supplementary section as well as the Power Automate service [getting started](/power-automate/getting-started) topic. For brevity, this service is commonly referred to as Power Automate Government Community Cloud (GCC), Power Automate Government Community Cloud – High (GCC High), or Power Automate Department of Defense (DoD).
 
