@@ -90,7 +90,7 @@ The email correlation logic goes through each of theses correlation options, in 
 4. **Smart matching**: When an email message is analyzed for correlation, the recipients and the words in the subject are extracted, email messages with similar recipients and enough matching subject words will be correlated to it. Please review smart matching configuration for more details around the thresholds configured.
 
    > [!NOTE]
-   > Smart matching can cause email correlation to hit false positives, hence it is not recommended to enable it. However, it is available in case customer needs to correlate emails which don't belong to the same email thread. More details around how smart matching work at the bottom.
+   > Smart matching can cause email correlation to hit false positives, hence it is not recommended to enable it. However, it is available in case you need to correlate emails which don't belong to the same email thread. 
 
 
     > [!div class="mx-imgBorder"] 
