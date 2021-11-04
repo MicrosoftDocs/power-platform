@@ -48,7 +48,7 @@ The following are prerequisites for installing the CoE Starter Kit as it's inclu
     - If you are using the CoE Starter Kit in **Production environment with a Dataverse**, premium licenses are required for all users interacting with the CoE Starter Kit. Depending on what components you will use, your organization size and the existing licenses available in your organization, you will require either a Power Apps per user or per app or Power Automate per user or per flow license or a combination of these licenses.
     - If you are using the CoE Starter Kit in a **Dataverse for Teams** environment, a Power Automate per user license will be required for the admin running the sync flows. No additional licenses will be required for users interacting with any of the canvas apps.
 
-- If you want a DLP policy on the environment, it should allow the following to be used together in the business data&ndash;only bucket of the DLP policy for this environment.
+- If you want a DLP policy on the environment, it should allow the following connectors to be used together in the business data&ndash;only bucket of the DLP policy for this environment.
     - [Approvals](/connectors/approvals/)
     - [Azure AD](/connectors/azuread/)
     - HTTP
@@ -69,6 +69,8 @@ The following are prerequisites for installing the CoE Starter Kit as it's inclu
 
     > [!NOTE]
     > The CoE Starter Kit records who owns a resource, such as an app or a flow. If the resource is owned by an interactive users, the Office 365 Users connector is used to get those details. If the resource is owned a Service Principal (Application User), the HTTP with Azure AD connector is used to get the name of the Application User to correctly mark ownership of resources and avoid resources being marked as orphaned (without an owner).
+
+- The HTTP and HTTP with Azure AD connectors connect to [https://graph.microsoft.com](https://graph.microsoft.com). You can set up [DLP endpoint filtering](/power-platform/admin/dlp-granular-controls#endpoint-filtering) for these connectors to only allow the [https://graph.microsoft.com](https://graph.microsoft.com) endpoint.
 
 - If you're using the [audit log](setup-auditlog.md) solution, the custom connector used to connect to the Microsoft 365 audit log also must be allowed in your business data&ndash;only bucket. Please see [Custom Connectors and DLP](/power-platform/admin/dlp-connector-classification#tenant-level-dlp-policies)
 
@@ -128,7 +130,7 @@ When you're ready to extend the CoE Starter Kit with your own ideas, you'll do s
 
 ## Installing updates
 
-Periodically, the solution will receive updates with new features, bug fixes, or optimizations. These updates will be announced as a [release](https://github.com/microsoft/coe-starter-kit/releases) on the [GitHub repo](https://aka.ms/CoEStarterKitRepo), and can be downloaded from there or by direct download at [aka.ms/CoEStarterKitDownload](https://aka.ms/CoEStarterKitDownload). We target releasing monthly during the first full week of each month.  
+The CoE Starter Kit is updated monthly with new features, bug fixes, or optimizations. These updates will be announced as a [release](https://github.com/microsoft/coe-starter-kit/releases) on the [GitHub repo](https://aka.ms/CoEStarterKitRepo), and can be downloaded from there or by direct download at [aka.ms/CoEStarterKitDownload](https://aka.ms/CoEStarterKitDownload). 
 
 Install the updates by importing the latest version to the environment where you originally installed the solution. Select **Upgrade** (the default) to update the solution.
 
