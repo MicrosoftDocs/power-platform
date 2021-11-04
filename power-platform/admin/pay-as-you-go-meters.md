@@ -78,7 +78,7 @@ If a user has a Power Apps per user license, the user is not counted in the mete
 
 |    |    |     |
 |----|------|-------|
-|  | App with Standard connectors    | App with Premium connectors    |
+|  | **App with Standard connectors**   | **App with Premium connectors**    |
 | Unlicensed user   | Charged via Azure subscription.  | Charged via Azure subscription.  |
 | Unlicensed user but Power Apps per app licenses are available in an environment   | Charged via Azure subscription. App passes are not consumed.    | Charged via Azure subscription. App passes are not consumed.  |
 | User with Power Apps for Microsoft 365 plan          | Not counted in the meter.    | Charged via Azure subscription.    |
