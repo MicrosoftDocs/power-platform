@@ -42,13 +42,11 @@ Users can set the following email filter options in the **Set Personal Options**
    > [!div class="mx-imgBorder"] 
    > ![Convert incoming eamils.](media/email-filter-image1.png)
 
-Emails that are manually tracked by a user in Outlook via [Dynamics 365 App for Outlook](/dynamics365/outlook-app/dynamics-365-app-outlook-user-s-guide), [folder-level tracking](configure-outlook-exchange-folder-level-tracking.md), or [Outlook category](use-outlook-category-track-appointments-emails.md) are synchronized with Dynamics 365 regardless of the configured filter options, as the user intended to manually track the email into Dynamics 365.
+Emails that are manually tracked by a user in Outlook via [Dynamics 365 App for Outlook](/dynamics365/outlook-app/dynamics-365-app-outlook-user-s-guide), [folder-level tracking](configure-outlook-exchange-folder-level-tracking.md), or [Outlook category](use-outlook-category-track-appointments-emails.md) are synchronized with Dynamics 365 regardless of the configured filter options, as the user wants to manually track the email into Dynamics 365.
 
-By default, Email messages sent in response to email options are set to enabled. Correlation occurs after an email message is filtered. System admins can turn off all message tracking for a particular user by setting **Incoming Email** under **Synchronization Method** to **None** on the Mailbox form.
+The **Email messages sent in response to email** options is enabled by default. Correlation occurs after an email message is filtered. An administrator can turn off all message tracking for a particular user by setting **Incoming Email** under **Synchronization Method** to **None** on the **Mailbox** form. This means server-side synchronization won't process the mailbox for incoming emails, so no incoming emails from the mailbox will be tracked in Dynamics 365.
 
-This means server-side synchronization won't process the mailbox for incoming emails, hence no incoming emails from the mailbox will be tracked to Dynamics 365.
-
-Admins can set email correlation on the **Email** tab of the System Settings page by enabling or disabling them for the entire organization.
+An administrator can set email correlation on the **Email** tab in the **System Settings** by enabling or disabling them for the entire organization.
 
 ## Use conversations to track emails  
 
