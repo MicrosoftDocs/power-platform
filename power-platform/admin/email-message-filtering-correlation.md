@@ -23,7 +23,7 @@ With server-side synchronization and Dynamics 365 App for Outlook, you can autom
 
 With automation to track email messages users can select a filter option that determines which email messages are tracked. 
 
-Users can set the following email filter options in the **Set Personal Options** dialog box on the **Email** tab. For more informations, see [Set personal options that affect tracking and synchronization between customer engagement apps and Outlook or Exchange](set-personal-options-affect-tracking-synchronization-between-dynamics-365-outlook-exchange.md).
+Users can set the following email filter options in the **Set Personal Options** dialog box on the **Email** tab. For more information, see [Set personal options that affect tracking and synchronization between customer engagement apps and Outlook or Exchange](set-personal-options-affect-tracking-synchronization-between-dynamics-365-outlook-exchange.md).
 
 
 - **All email messages**: All email messages received by the user are tracked in Dynamics 365 as an email activity.
