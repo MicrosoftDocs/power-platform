@@ -54,15 +54,15 @@ Admins can set email correlation on the **Email** tab of the System Settings p
 
 Multiple pieces of information are stored on an email message and can be leveraged by Dynamics 365 to determine if a new email is correlating to a pre-existing email message in Dynamics 365:
 
--   MessageId (header – Not visible): Uniquely identifies an email message and it is stamped on each email message.
+- MessageId (header – Not visible): Uniquely identifies an email message and it is stamped on each email message.
 
--   InreplyTo (header – Not visible): This will contain the messageId which the email message is in reply to.
+- InreplyTo (header – Not visible): This will contain the messageId which the email message is in reply to.
 
--   ConversationIndex (header – Not visible): This contains data which allows to associate an email message into an email thread.
+- ConversationIndex (header – Not visible): This contains data which allows to associate an email message into an email thread.
 
--   Tracking token in subject (visible): Tracking token is a D365 concept and is stamped directly in the subject.
+- Tracking token in subject (visible): Tracking token is a D365 concept and is stamped directly in the subject.
 
--   Subject words and recipients (visible): This is a D365 concept, Smart matching will use this data based on its configuration.
+- Subject words and recipients (visible): This is a D365 concept, Smart matching will use this data based on its configuration.
 
 
 The email correlation logic will go through each of the following correlation options in order:
@@ -72,16 +72,16 @@ The email correlation logic will go through each of the following correlation op
 
 
     > [!div class="mx-imgBorder"] 
-     ![Use correlation to track eamil converstions.](media/email-filter-image2.png)
+    > ![Use correlation to track eamil converstions.](media/email-filter-image2.png)
 
 The email correlation is really accurate, no false positives and the correlation information is hidden in the email message headers.
 
 2. **Tracking token correlation** (set to **On** by default): When an email message is analyzed for correlation, if the subject contains a tracking token, the tracking token will be extracted, an email message within Dynamics 365 will be searched with the same tracking token and the email message will be considered related to it.
 
-Cons: tracking token information is visible to the client, Client can change the tracking token and cause an email to correlate to an unexpected email
+    Cons: tracking token information is visible to the client, Client can change the tracking token and cause an email to correlate to an unexpected email
 
-   > [!div class="mx-imgBorder"] 
-   > ![Use tracking token.](media/email-filter-image3.png)
+     > [!div class="mx-imgBorder"] 
+     > ![Use tracking token.](media/email-filter-image3.png)
 
 3. **Conversation Index:** When an email message is analyzed for correlation, if a conversationIndex is present in the headers, and another email message is found in dynamics with the same conversationIndex header, the email message will be correlated
 
