@@ -17,33 +17,43 @@ search.app:
 ---
 # Power Platform adoption maturity model: Detailed capabilities
 
-The goal of the adoption maturity model is to help define a roadmap for Power Platform adoption. The roadmap presents a series of strategic and tactical considerations and action items that directly lead to successful Power Platform adoption.
+The goal of the adoption maturity model is to help define a roadmap for Microsoft Power Platform adoption. The roadmap presents a series of strategic and tactical considerations and action items that directly lead to successful Power Platform adoption.
 
 Advancing adoption and cultivating a low-code culture is about more than implementing technology features. Technology can assist an organization in making the greatest impact, but a healthy low-code culture involves many considerations across the spectrum of people, processes, and technology.
 
-The aim of the adoption maturity model is to provide organizations and their partners with a way to think through how they can improve their capabilities and decide which capabilities matter most to them. Each stage describes the states of individual disciplines such as Strategy & Vision, Administration, Governance, etc. The purpose of the model is to help organizations understand their capabilities along multiple dimensions on a clearly defined scale, decide which level they would like to achieve for each dimension and in what time frame, and improve their capabilities in tangible ways by progressing to the next level.
+The aim of the adoption maturity model is to provide organizations and their partners with a way to think through how they can improve their capabilities and decide which capabilities matter most to them. Each stage describes the states of individual disciplines such as Strategy and Vision, Administration, Governance, and so on. The purpose of the model is to help organizations understand their capabilities along multiple dimensions on a clearly defined scale, decide which level they would like to achieve for each dimension and in what time frame, and improve their capabilities in tangible ways by progressing to the next level.
 
-Find below detailed characteristics and capabilities of an organization in each stage:
+The following sections present detailed characteristics and capabilities of an organization in each stage.
 
 ## Strategy and Vision
 
+
+<!-- Note that the Goals and Opportunities article called level 500 the "Efficient" stage. -->
+
+
+
 | Level | State of Strategy and Vision |
 |----------|-----------|
-| 100: Initial | <ul><li>Innovation driven by Business Areas (bottom up)</li><li>Low-complexity scenarios</li><li>Limited reuse</li><li>Undefined strategy</li></ul> |
-| 200: Repeatable | <ul><li>Common vision between IT and Business</li><li>Demand-management process</li></ul> |
-| 300: Defined | <ul><li>Dedicated Power Platform product owner</li><li>Bottom up and top down innovation</li><li>Defined understanding of Power Platform’s role in your organization’s IT portfolio</li></ul> |
+| 100: Initial | <ul><li>Innovation driven by business areas (bottom up)</li><li>Low-complexity scenarios</li><li>Limited reuse</li><li>Undefined strategy</li></ul> |
+| 200: Repeatable | <ul><li>Common vision between IT and business</li><li>Demand-management process</li></ul> |
+| 300: Defined | <ul><li>Dedicated Power Platform product owner</li><li>Bottom-up and top-down innovation</li><li>Defined understanding of Power Platform’s role in your organization’s IT portfolio</li></ul> |
 | 400: Capable | <ul><li>Established [Center of Excellence](/power-platform/guidance/adoption/coe) team</a></li><li>Increased delivery efficiency supports rapidly changing business needs</li><li>Business plans shared across departments</li></ul> |
-| 500: Leading | <ul><li>Power Platform is key part of the digital transformation strategy</li><li>Vision and strategy understood by all</li><li>Organization-wide initiatives deliver larger scale apps</li><li>Enterprise Architecture decisions include Power Platform capabilities</li></ul> |
+| 500: Leading | <ul><li>Power Platform is key part of the digital transformation strategy</li><li>Vision and strategy understood by all</li><li>Organization-wide initiatives deliver larger-scale apps</li><li>Enterprise architecture decisions include Power Platform capabilities</li></ul> |
 
 ## Business Value
 
 | Level | State of Business Value |
 |----------|-----------|
-| 100: Initial | <ul><li>No formal Business Value Assessment</li><li>Undefined targets</li></ul> |
-| 200: Repeatable | <ul><li>No formal Business Value Assessment</li><li>Business cases understood but lacking review</li></ul> |
-| 300: Defined | <ul><li>Key Performance Indicators (KPIs) understood, operationalized, reported on and reviewed against goals</li><li>Ideas with the highest business value are chosen for development</li><li>Business pain points are quantified before project start and compared after finish</li></ul> |
+| 100: Initial | <ul><li>No formal business value assessment</li><li>Undefined targets</li></ul> |
+| 200: Repeatable | <ul><li>No formal business value assessment</li><li>Business cases understood but lacking review</li></ul> |
+| 300: Defined | <ul><li>Key performance indicators (KPIs) understood, operationalized, reported on, and reviewed against goals</li><li>Ideas with the highest business value are chosen for development</li><li>Business pain points are quantified before project start and compared after finish</li></ul> |
 | 400: Capable | <ul><li>Precise quantitative and qualitative measures used to effectively control, predict, and improve business efficiency</li><li>[CoE Starter Kit and Innovation Backlog](/power-platform/guidance/coe/use-innovationbacklog) or equivalent tooling for measuring business value adopted</li></ul> |
-| 500: Leading | <ul><li>“Big Picture” analytics visualize business value of Power Platform solutions all-up and per business area</li><li>Advanced dashboard and reporting provide decision-making capabilities and measure business value</li><li>Executive visibility of business value and impact of Power Platform solutions</li></ul> |
+| 500: Leading | <ul><li>“Big picture” analytics visualize business value of Power Platform solutions all-up and per business area</li><li>Advanced dashboard and reporting provide decision-making capabilities and measure business value</li><li>Executive visibility of business value and impact of Power Platform solutions</li></ul> |
+
+
+
+
+
 
 ## Admin and Governance
 
@@ -146,5 +156,5 @@ In the articles in this series, learn about the Power Platform adoption maturity
 Other helpful resources include:
 
 - [Administering a Power Apps enterprise deployment](/power-platform/admin/admin-powerapps-enterprise-deployment)
-- Upskilling? See [Power Platform In a day workshops](https://powerplatform.microsoft.com/instructor-led-training/) and [Power Platform on Microsoft Learn](/learn/powerplatform/)
+- Upskilling? See [Power Platform in a Day workshops](https://powerplatform.microsoft.com/instructor-led-training/) and [Power Platform on Microsoft Learn](/learn/powerplatform/)
 - Experienced Power Platform partners are available to help your organization succeed with adoption of Power Platform. To engage a Power Platform partner, visit the [Power Apps partner portal](https://powerapps.microsoft.com/partners/).
