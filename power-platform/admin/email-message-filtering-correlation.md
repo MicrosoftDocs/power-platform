@@ -110,7 +110,7 @@ When customer engagement apps track an email, it associates the email address to
 7. Business unit
 8. Email-enabled tables (such as Queues, custom, etc.)
 
-In the email **To** field,  all of the rowa of email-enabled tables with the email address will be listed.
+In the email **To** field,  all of the rows of email-enabled tables with the email address will be listed.
 
 If **Set To,cc,bcc fields as unresolved values if multiple matches are found in Incoming Emails** is set to **No**, a tracked email in Dynamics that contains an email address that resolves to multiple rows, will display each resolved row in the Email.
 
