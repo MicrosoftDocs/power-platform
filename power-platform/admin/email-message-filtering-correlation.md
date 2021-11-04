@@ -36,7 +36,8 @@ Users can set the following email filter options in the **Set Personal Options**
 
 - **No email messages**: No email messages received by the user are tracked (will have activities created). This option only affects auto tracked emails.
 
-  > [!NOTE] These options are configurable to automatically track sent items and can also be configured for queues and queue mailboxes.
+  > [!NOTE] 
+  > These options are configurable to automatically track sent items and can also be configured for queues and queue mailboxes.
 
      > [!div class="mx-imgBorder"] 
      > ![Convert incoming eamils.](media/email-filter-image1.png)
