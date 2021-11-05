@@ -20,16 +20,17 @@ search.app:
 
 # Access your storage with a SAS token
 
-Storage has valuable data that may be useful for custom reports. This article covers:
+Storage has important data from your environment. This article covers:
 
 - Accessing your storage with the SAS token
 - View and understand your data
 
 ## Prerequisites
+This section describes the prerequisites necessary to access the storage with the SAS token and view your data.
 
-**Environment Maker or System Customizer Role**. You must have the **Environment Maker** role or the **System Customizer** role on the Environment where you want to access the SAS token. For more information about environment roles, go to [Configure user security to resources in an environment](../database-security.md).
+- **Environment Maker or System Customizer Role**. You must have the **Environment Maker** role or the **System Customizer** role on the Environment where you want to access the SAS token. For more information about environment roles, go to [Configure user security to resources in an environment](database-security.md).
 
-**Storage Explorer**. [Get it now](https://azure.microsoft.com/en-us/features/storage-explorer/#overview)
+- **Storage Explorer**. [Get it now](https://azure.microsoft.com/features/storage-explorer/#overview)
 
 ## Access the storage with the SAS token
 
@@ -46,8 +47,6 @@ Storage has valuable data that may be useful for custom reports. This article co
 ```
 
 4. Locate the URL for the *containerendpoint* which specifies the **Container URL**.
-
-    ![Container URL](media/container-url.png "Container URL")
 
 5. Use the below link to access the SAS token by substituting the **Environment URL** and the **Container URL**.
 
@@ -66,7 +65,7 @@ Storage has valuable data that may be useful for custom reports. This article co
 ```
 
 > [!NOTE]
-> The SAS token will expire after one hour. You will need to follow the steps above to refresh the SAS token.
+> The SAS token will expire after **one hour**. You will need to follow the steps above to refresh the SAS token.
 
 9. After connecting, you will have access to the data in your storage in the Common Data Model format.
 
@@ -74,7 +73,7 @@ Storage has valuable data that may be useful for custom reports. This article co
 
 ## View and understand your data
 
-The data in your storage is written in the [Common Data Model](https://docs.microsoft.com/en-us/common-data-model/) format. There will be a model.json file that, along with its name and version, provides a list of tables that are available in storage. Each Dataverse table will have its own directory containing the data records as CSV files. Additionally, there will be a Microsoft.Athena.TrickleFeedService directory that contains extra metadata for each Dataverse table.
+The data in your storage is written in the [Common Data Model](https://docs.microsoft.com/common-data-model/) format. There will be a model.json file that, along with its name and version, provides a list of tables that are available in storage. Each Dataverse table will have its own directory containing the data records as CSV files. Additionally, there will be a Microsoft.Athena.TrickleFeedService directory that contains extra metadata for each Dataverse table.
 
 ### See also
 
