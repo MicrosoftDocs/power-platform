@@ -437,7 +437,9 @@
       - name: View self-service capacity
         href: view-self-service-capacity.md
       - name: Free up storage space
-        href: free-storage-space.md       
+        href: free-storage-space.md
+      - name: Access storage with SAS token
+        href: storage-sas-token.md      
     - name: Resources
       items:
       - name: Overview 

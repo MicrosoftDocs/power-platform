@@ -1,0 +1,86 @@
+---
+title: " Access your storage with a SAS token | MicrosoftDocs"
+description: "Learn how to gain access the SAS token for your storage and view the data in your storage."
+author: sama-zaki
+ms.service: power-platform
+ms.component: pa-admin
+ms.topic: conceptual
+ms.custom: intro-internal
+ms.date: 11/01/2021
+ms.subservice: admin
+ms.author: 
+search.audienceType: 
+  - admin
+search.app:
+  - D365CE
+  - PowerApps
+  - Powerplatform
+  - Flow
+---
+
+# Access your storage with a SAS token
+
+Storage has valuable data that may be useful for custom reports. This article covers:
+
+- Accessing your storage with the SAS token
+- View and understand your data
+
+## Prerequisites
+
+**Environment Maker or System Customizer Role**. You must have the **Environment Maker** role or the **System Customizer** role on the Environment where you want to access the SAS token. For more information about environment roles, go to [Configure user security to resources in an environment](../database-security.md).
+
+**Storage Explorer**. [Get it now](https://azure.microsoft.com/en-us/features/storage-explorer/#overview)
+
+## Access the storage with the SAS token
+
+1. Navigate to the [Power Platform Admin Center](https://make.powerapps.com) and select the correct environment.
+
+2. Locate and copy the **Environment URL**.
+
+    ![Environment URL](media/environment-url.png "Environment URL")
+
+3. Navigate to the below link by substituting the **Environment URL**.
+
+```http
+    https://<EnvironmentURL>/api/data/v9.1/datalakefolders
+```
+
+4. Locate the URL for the *containerendpoint* which specifies the **Container URL**.
+
+    ![Container URL](media/container-url.png "Container URL")
+
+5. Use the below link to access the SAS token by substituting the **Environment URL** and the **Container URL**.
+
+```http
+    https://<EnvironmentURL>/api/data/v9.1/RetrieveAnalyticsStoreAccess(Url=@a,ResourceType='Folder',Permissions='Read,List')?@a='<ContainerURL>/CDS'
+```
+
+6. Copy the SAS token. and launch Storage Explorer.
+
+7. Connect to a new storage and select the **ADLS Gen2 container or directory**. Select the **Shared access signature URL (SAS)** as the connection method.
+
+8. Use the below link to construct the SAS URL.
+
+```http
+    https://<ContainerURL>/CDS?<SASToken>'
+```
+
+> [!NOTE]
+> The SAS token will expire after one hour. You will need to follow the steps above to refresh the SAS token.
+
+9. After connecting, you will have access to the data in your storage in the Common Data Model format.
+
+    ![SAS Token Storage View](media/storage-sas-token.png "SAS Token Storage View")
+
+## View and understand your data
+
+The data in your storage is written in the [Common Data Model](https://docs.microsoft.com/en-us/common-data-model/) format. There will be a model.json file that, along with its name and version, provides a list of tables that are available in storage. Each Dataverse table will have its own directory containing the data records as CSV files. Additionally, there will be a Microsoft.Athena.TrickleFeedService directory that contains extra metadata for each Dataverse table.
+
+### See also
+
+[Legacy storage capacity](legacy-capacity-storage.md) <br />
+[Dataverse storage capacity](capacity-storage.md) <br />
+[Free up storage space](free-storage-space.md) <br />
+[Delete and recover environments](delete-environment.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
