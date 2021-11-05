@@ -189,7 +189,7 @@ Basically it indicate that we internally (by default) will ignore any word at (m
 
 ### See also  
  [Forward mailbox vs. individual mailboxes](../admin/forward-mailbox-vs-individual-mailboxes.md) <br>
- [Associate an email address with a row](associate-email-address.md)
+ [Associate an email address with a row](../admin/associate-email-address.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
