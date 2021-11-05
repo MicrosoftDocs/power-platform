@@ -1,6 +1,6 @@
 ---
 title: "Associate an email address with a row   | MicrosoftDocs"
-description: Associate an email address with a rowd. 
+description: Associate an email address with a row. 
 author: mduelae
 ms.service: power-platform
 ms.component: pa-admin
