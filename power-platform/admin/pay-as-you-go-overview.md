@@ -29,7 +29,7 @@ Pay-as-you-go allows you to share a Power Apps app with any user in your organiz
 This plan reduces the overhead of license procurement and provides ability to manage and split costs across business units by leveraging the cost management reporting capabilities of Azure subscriptions. Pricing information for this plan is available [here.](https://go.microsoft.com/fwlink/?linkid=2169167)
 
 > [!TIP]
-> Check out how T-Mobile is innovating with Power Apps pay-as-you-go: [T-Mobile adopts Microsoft Power Platform for fast and powerful low-code development](https://customers.microsoft.com/story/843531-t-mobile-telecommunications-power-platform).
+> Check out how T-Mobile is innovating with Power Apps pay-as-you-go: [T-Mobile adopts Microsoft Power Platform for fast and powerful low-code development](hhttps://customers.microsoft.com/en-us/story/1435340411391867976-t-mobile-telecommunications-power-platform).
 
 ## Common use cases
 
