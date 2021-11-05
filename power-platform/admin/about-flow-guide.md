@@ -18,10 +18,11 @@ search.app:
 ---
 # Administer Microsoft Power Automate
 
-Microsoft Power Automate administrators can use the Microsoft Power Platform admin center ([admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com/)) to manage an organization’s data policies and environments. Power Automate admin content is available at [Microsoft Power Automate documentation](/flow/admin-center-introduction).
+Microsoft Power Automate administrators can use the Microsoft Power Platform admin center ([admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com/)) to manage an organization’s data policies and environments. Power Automate admin content is available at [Microsoft Power Automate documentation](/power-automate/admin-center-introduction).
 
 ### See also
-[Working with the admin portals](wp-work-with-admin-portals.md)
-
+[Working with the admin portals](wp-work-with-admin-portals.md) <br />
+[Video: Top 10 tips to securely roll out Microsoft Power Apps and Microsoft Power Automate](https://youtu.be/BnolkTK2Sng) <br />
+[Deck: Top 10 tips to securely roll out Microsoft Power Apps and Microsoft Power Automate](https://medius.studios.ms/video/asset/PPT/MBAS19-BRK2005) 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

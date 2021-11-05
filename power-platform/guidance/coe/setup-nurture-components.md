@@ -123,7 +123,7 @@ The core components solution is required for the nurture components solution, or
 
 ## Import starter data set for the Maker Assessment app
 
-Important an initial set of assessment questions to get started using the [Maker Assessment](nurture-components.md#maker-assessment) app. You can add your own questions or customize the existing ones using the admin app for this solution.
+Import an initial set of assessment questions to get started using the [Maker Assessment](nurture-components.md#maker-assessment) app. You can add your own questions or customize the existing ones using the admin app for this solution.
 
 ### Upload starter data to SharePoint Online
 
@@ -137,7 +137,7 @@ This file is only needed once for import, and can be deleted after the dataflow 
 
 ### Update and run the Dataflow to load initial data into Dataverse
 
-Now we wil load the initial data from SharePoint Online into Dataverse using a Dataflow.
+Now load the initial data from SharePoint Online into Dataverse using a Dataflow:
 
 1. In your CoE environment, browse to **Data > Dataflows**, and edit the **Maker Assessment Starter Dataflow**
    ![Edit the Dataflow.](media/MakerJourneyDataSetup1.png "Edit the Dataflow")
@@ -185,7 +185,7 @@ All flows in this solution depend on all environment variables' being configured
 
 | Name | Description |
 |------|---------------|
-| Training in a day - Feedback Form     | The Training in a Day package includes a flow that automatically sends a feedback request to attendees on the day of the event. Configure the form URL (<https://forms.office.com/>...) here.    |
+| Training in a day - Feedback Form     | The Training in a Day package includes a flow that automatically sends a feedback request to attendees on the day of the event. Configure the form URL (<https://forms.office.com/> or https://forms.osi.apps.mil/ for a DoD tenant) here.    |
 | Power User Site URL (SharePoint Site) | The site that your Microsoft Power Platform power users can use to communicate and share files. You'll use it here to house the template library for them. |
 | Innovation Backlog URL | (optional) URl to the [Innovation Backlog](use-innovationbacklog.md) canvas app, if you are using this app |
 | Maker Assessment Admin eMail | eMail of the admin or CoE team that will respond to queries from the Maker Assessment app |
@@ -195,17 +195,15 @@ All flows in this solution depend on all environment variables' being configured
 
 The nurture components solution contains five flows:
 
--  Admin \| Newsletter with Product Updates
+- Admin \| Newsletter with Product Updates
 
--  Admin \| Welcome Email
+- Training in a day \| Feedback Reminder
 
--  Training in a day \| Feedback Reminder
+- Training in a day \| Registration Confirmation
 
--  Training in a day \| Registration Confirmation
+- Training in a day \| Reminder 3 days prior to event
 
--  Training in a day \| Reminder 3 days prior to event
-
-Follow the same instructions to configure the flows as explained in [Activate the sync template flows](setup-core-components.md#activate-the-sync-template-flows).
+Follow the same instructions to configure the flows as explained in [Activate the sync template flows](setup-core-components.md#activate-the-flows).
 
 ## Share apps with your organization
 

@@ -9,7 +9,7 @@ ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/10/2021
+ms.date: 10/18/2021
 search.audienceType: 
   - admin
 search.app:
@@ -198,7 +198,7 @@ Note that removing a license from a user might not always result in disabling th
 For users to have access to applications and data in a Dataverse environment, at a minimum the SystemUser table in Dataverse must have a record corresponding to the respective user identity. There are different mechanisms to add users in Dataverse, either automatic or on demand: 
 
 > [!TIP]
-> Check out the following video: [Adding users to Dataverse](https://youtu.be/TvPT5tn2GHo).
+> Check out the following video: [Adding users to Dataverse](https://www.microsoft.com/videoplayer/embed/RWJBra).
 
 1. A system background process runs every 30 minutes to synchronize changes from Azure AD and updates the SystemUser records in Dataverse based on pre-determined set of [requirements](#requirements-for-successfully-adding-users-in-dataverse). The time taken to synchronize all changes into Dataverse is dependent on total number of users must be added or updated. For large organizations with thousands of users in Azure AD, we recommend creating security groups associated with each environment, so only the required subset of users is added into Dataverse. 
 
@@ -254,7 +254,7 @@ By default, all licensed users are created with an access mode of **Read-Write**
 
 **To update the access mode of a user**
 
-1. In the Power Platform admin center, select an environment, and go to **Settings** > **User's + permissions** > **Users**.
+1. In the Power Platform admin center, select an environment, and go to **Settings** > **Users + permissions** > **Users**.
   
 2. Select **Enabled Users**, and then select a user's full name.  
   
@@ -285,7 +285,7 @@ You need to have the System Administrator security role or equivalent permission
   
   Wait for the user to sync to the environments.
 
-6. In the Power Platform admin center, select an environment, and go to **Settings** > **User's + permissions** > **Users**.
+6. In the Power Platform admin center, select an environment, and go to **Settings** > **Users + permissions** > **Users**.
   
 7. Select **Enabled Users**, and then select a user's full name.  
   
@@ -310,7 +310,7 @@ You need to have the System Administrator security role or equivalent permission
   
    Be sure to assign a license to the account.  
   
-2. In the Power Platform admin center, select an environment, and go to **Settings** > **User's + permissions** > **Users**.
+2. In the Power Platform admin center, select an environment, and go to **Settings** > **Users + permissions** > **Users**.
   
 3. Select **Enabled Users**, and then select a user's full name.  
   
@@ -332,6 +332,9 @@ You need to have the System Administrator security role or equivalent permission
 You can use server-to-server (S2S) authentication to securely and seamlessly communicate between Dataverse and your web applications and services. S2S authentication is the common way that apps registered on [!INCLUDE[pn_microsoft_appsource](../includes/pn-microsoft-appsource.md)] use to access the Dataverse data of their subscribers. All operations performed by your application or service by using S2S will be performed as the application user you provide, rather than the user who's accessing your application.  
 
 All application users are created with a non-interactive user account, however they aren't counted toward the limit of seven non-interactive user accounts. In addition, there's no limit on how many application users you can create in an environment.
+
+> [!CAUTION]
+> For an application user, the system adds a "#" as the First Name for the Application User you create. This is by design.
 
 For step-by-step information about creating an application user, see [Create an application user](manage-application-users.md#create-an-application-user).
 
@@ -360,7 +363,7 @@ A default security role is automatically assigned to these imported users. The *
 
 When you create a new user or update an existing user in Dynamics 365 Customer Engagement (on-premises), some fields in the user records, such as name and phone number, are populated with the information obtained from Active Directory Domain Services (AD DS). After the user record is created, no further synchronization occurs between Azure AD user accounts and customer engagement apps user records. If you make changes to the Azure AD user account, you must manually edit the user record to reflect the changes.
 
-1. In the Power Platform admin center, select an environment, and go to **Settings** > **User's + permissions** > **Users**.
+1. In the Power Platform admin center, select an environment, and go to **Settings** > **Users + permissions** > **Users**.
 
 2. In the list, select the user record you want to update, and then select **Edit**.
 

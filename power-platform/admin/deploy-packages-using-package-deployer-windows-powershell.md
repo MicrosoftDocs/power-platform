@@ -1,5 +1,6 @@
 ---
 title: "Deploy packages using Package Deployer and Windows PowerShell | MicrosoftDocs"
+description: Learn about deploying packages using Package Deployer and Windows PowerShell.
 ms.custom: 
 ms.date: 08/12/2021
 ms.reviewer: 

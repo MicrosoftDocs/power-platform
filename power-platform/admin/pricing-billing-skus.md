@@ -93,7 +93,7 @@ Dataverse functionality appears as the **Common Data Service** plan in the *
 
 #### When can Office-licensed users be seen inside of Dataverse?
 
-Users who have any Microsoft Power Platform or Dynamics 365 license are always synced into the Dataverse environments. However, for Office licenses where Dataverse service plans are included, users aren't automatically synced into Dataverse until the Office application is accessed by the user. After this occurs, the user can get access to Dataverse entities and records based on the additional security roles and privileges that the administrator assigned to this user. Such users, who just have the Office license, aren't automatically assigned any other security roles or privileges, other than the Maker role privilege in the [default environment](environments-overview.md#the-default-environment). As a security best practice, the administrator needs to ensure that security roles and privileges are assigned based on functional roles and needs only, and not automatically assigned based on the user being synced or present in Dataverse. 
+Users who have any Microsoft Power Platform or Dynamics 365 license are always synced into the Dataverse environments. However, for Office licenses where Dataverse service plans are included, users aren't automatically synced into Dataverse until the Office application is accessed by the user. After this occurs, the user can get access to Dataverse tables and rows based on the additional security roles and privileges that the administrator assigned to this user. Such users, who just have the Office license, aren't automatically assigned any other security roles or privileges, other than the Maker role privilege in the [default environment](environments-overview.md#the-default-environment). As a security best practice, the administrator needs to ensure that security roles and privileges are assigned based on functional roles and needs only, and not automatically assigned based on the user being synced or present in Dataverse. 
 
 ### Known issues
 
@@ -112,6 +112,7 @@ Dynamics 365 Applications can be customized using Power Apps and Power Automate 
 
 More information: [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/p/?LinkId=866544).
 
-
+### See also
+[Preview: Pay-as-you-go plan](pay-as-you-go-overview.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

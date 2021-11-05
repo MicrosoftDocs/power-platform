@@ -2,13 +2,14 @@
 title: Back up and restore environments | Microsoft Docs
 description: Covers how to back up and restore environments
 services: powerapps
-author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/19/2021
+ms.date: 10/14/2021
 ms.subservice: admin
-ms.author: jimholtz
+author: ChrisGarty
+ms.author: cgarty
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:
@@ -29,10 +30,13 @@ Some backups take place without you having to do anything.
 
 About **system backups**:  
   
+- Depending on the amount of copied and restored audit data, copy and restore operations can take up to 8 hours.
 - All your environments, except Trial environments (standard and subscription-based), are backed up.  
 - System backups occur continuously. The underlying technology used is Azure SQL Database. See SQL Database documentation [Automated backups](/azure/sql-database/sql-database-automated-backups) for details.
-- System backups for production environments that have been created with a database and have one or more Dynamics 365 applications installed are retained up to 28 days. System backups for production environments which do not have Dynamics 365 applications deployed in them will be retained for 7 days. System backups for sandbox environments will be retained for 7 days.
+- System backups for production environments that have been created with a database and have one or more Dynamics 365 applications installed are retained up to 28 days. System backups for production environments which don't have Dynamics 365 applications deployed in them will be retained for 7 days. System backups for sandbox environments will be retained for 7 days.
 - You must restore an environment to the same region in which it was backed up.
+- When an environment is restored onto itself, audit logs aren't deleted. For example, when an environment is restored onto itself to a past time t1, full audit data for the environment will be available, including any audit logs that were generated after t1.
+
   
 ### Restore a system backup  
   
@@ -182,9 +186,9 @@ Obtaining a copy of your database backup isn't available. Moving your online dat
 ### Do we have any database size restriction to take a backup or restore an organization through user interface (UI) or API?
 We don't have any restriction on database size (or storage capacity/entitlement) to take a backup through UI or API. However, when an organization’s storage capacity usage is greater than the entitled capacity, the following admin operations will be blocked:
 
-- Restore an environment (requires minimum 1GB capacity available)
-- Create new environment (requires minimum 1GB capacity available)
-- Copy an environment (requires minimum 1GB capacity available)
+- Restore an environment (requires minimum 1 GB capacity available)
+- Create new environment (requires minimum 1 GB capacity available)
+- Copy an environment (requires minimum 1 GB capacity available)
  
 To be compliant with storage usage requirements, customers can always [free up storage](free-storage-space.md), [archive data](recover-database-space-deleting-audit-logs.md), [delete unwanted environments](delete-environment.md), or buy more capacity. To learn more about capacity add-ons, see the Add-ons section in the Dynamics 365 Licensing Guide or the Power Apps and Power Automate Licensing Guide. You can work through your organization’s standard procurement process to purchase capacity add-ons.
  
@@ -193,6 +197,18 @@ In order to prevent accidental overwrites, we don't allow users to directly rest
 
 ### Why is my organization in administration mode after a restore and how do I disable it?
 The newly restored environment is placed in administration mode. To disable administration mode, see [Set administration mode](admin-mode.md#set-administration-mode). You can set administration mode in sandbox or production environments.  
+
+### What steps are needed after a restore to ensure flows are working as expected?
+
+- **Flows** - Review the flows in the environment. Edit flows that need triggers and actions adjusted. Enable and disable flows as needed.
+- **Connection References** - Connection References will require new connections. Create and set connections on Connection References.
+- **Custom Connectors** - Custom connectors should be reviewed and, if needed, deleted and reinstalled.
+
+### Are apps shared with Everyone still shared with Everyone in a restored environment? 
+No. Apps shared with Everyone in an environment that's backed up are not shared with Everyone in the restored environment. Alternatively, a canvas app can be shared with a security group and the app in the restored environment will be shared with that security group. 
+
+### Are Power Apps app identifiers the same after backup and restore operations?
+No for canvas apps. The app ID for a canvas app is different in a restored environment than the ID value when an environment was backed up. 
 
 ## Troubleshooting
 

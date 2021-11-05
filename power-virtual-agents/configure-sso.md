@@ -25,7 +25,7 @@ For example, the bot is hosted on the corporate intranet or in an app that the u
 >You can suggest support for additional account types [at the Power Virtual Agents ideas forum](https://powerusers.microsoft.com/t5/Power-Virtual-Agents-Ideas/idb-p/pva_ideas).
 
 >[!IMPORTANT] 
->SSO is only supported on the [live website publication channel](publication-connect-bot-to-web-channels.md) and the Teams channel. Other channels are not supported.
+>SSO is only supported on the [live website publication channel](publication-connect-bot-to-web-channels.md) and the Teams channel. Other channels are not supported. SSO on Sharepoint is not supported.
 >You can suggest support for additional channels [at the Power Virtual Agents ideas forum](https://powerusers.microsoft.com/t5/Power-Virtual-Agents-Ideas/idb-p/pva_ideas).
 
 >[!IMPORTANT]

@@ -45,7 +45,7 @@ Business and non-business classifications draw boundaries around what connectors
 
 The names "business" and "non-business" don't have any special meaning&mdash;they're simply labels. The grouping of the connectors themselves is of significance, not the name of the group they're placed in.
 
-More information: [Administer Microsoft Power Platform: Connector classification](../../admin/wp-data-loss-prevention.md#connector-classification)
+More information: [Administer Microsoft Power Platform: Connector classification](../../admin/dlp-connector-classification.md)
 
 ## Strategies for creating DLP policies
 
@@ -64,10 +64,10 @@ We recommend the following starting point for DLP policies for **production (bus
 
 Additional to the above, we also recommend:
 
-- Creating a minimal number of policies per environment. There is no strict hierarchy between tenant and environment policies, and at design and runtime, all policies that are applicable to the environment in which the app or flow resides are evaluated together to decide whether the resource is in compliance or violation of DLP policies.  [Multiple DLP policies](../../admin/wp-data-loss-prevention.md#combined-effect-of-multiple-dlp-policies) applied to one environment will fragment your connector space in complicated ways, and might make it difficult to understand issues your makers are facing.  
+- Creating a minimal number of policies per environment. There is no strict hierarchy between tenant and environment policies, and at design and runtime, all policies that are applicable to the environment in which the app or flow resides are evaluated together to decide whether the resource is in compliance or violation of DLP policies.  [Multiple DLP policies](../../admin/dlp-combined-effect-multiple-policies.md) applied to one environment will fragment your connector space in complicated ways, and might make it difficult to understand issues your makers are facing.  
 - Centrally managing DLP Policies using tenant level policies, and using environment policies only to categorize custom connectors or in exception cases.  
 
-With this in place, plan how to handle exceptions. You can:
+With this in place, plan how to handle exceptions. You can: 
 
 - Deny the request.
 - Add the connector to the default DLP policy.

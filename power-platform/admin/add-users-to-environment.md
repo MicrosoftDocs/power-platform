@@ -9,7 +9,7 @@ ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/11/2021
+ms.date: 08/17/2021
 search.audienceType: 
   - admin
 search.app:
@@ -18,7 +18,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Add users to an environment 
+# Add users to an environment  
 
 Environments can have zero or one Microsoft Dataverse database. The process for adding users to environments that have no Dataverse database differs from the process for environments that have one Dataverse database. For an overview of environments, see [Environments overview](environments-overview.md). 
 
@@ -39,7 +39,7 @@ When an environment is created with a Dataverse database or a Dataverse database
 - Because it can take a long time to automatically add users to an environment, you can use the following procedure to add specific users to the environment sooner. 
 
 > [!TIP]
-> Check out the following video: [Adding users to Dataverse](https://youtu.be/TvPT5tn2GHo).
+> Check out the following video: [Adding users to Dataverse](https://www.microsoft.com/videoplayer/embed/RWJBra).
 
 **To add users to an environment that has a Dataverse database**
 
@@ -49,17 +49,19 @@ When an environment is created with a Dataverse database or a Dataverse database
 
    You'll see the list of users that have already been added to the environment. This user list includes users with enabled and disabled status. More information: [Enable or disable users](create-users.md#enable-or-disable-user-accounts) 
 
-4. Check to see whether the user you want to add might already be present in the environment by doing a search (because automatic user addition might have added the user already). If you don't find the user in the environment yet, select **Add user**. 
+3. Check to see whether the user you want to add might already be present in the environment by doing a search (because automatic user addition might have added the user already). If you don't find the user in the environment yet, select **Add user**. 
 
    > [!div class="mx-imgBorder"] 
    > ![Add user.](media/add-user.png "Add user")
 
-6. In the **Add user** pane, enter the user's name or email address, select it, and add them to the environment. Note the requirements for successfully adding a user, and see [enable a user in an environment](create-users.md#enable-or-disable-user-accounts) for details about how to ensure the requirements are met. 
+4. In the **Add user** pane, enter the user's name or email address, select it, and add them to the environment. Note the requirements for successfully adding a user, and see [enable a user in an environment](create-users.md#enable-or-disable-user-accounts) for details about how to ensure the requirements are met. 
 
    > [!div class="mx-imgBorder"] 
    > ![Enter name.](media/add-user-enter-name.png "Enter name")
 
-7. After a user is added to the environment, [assign a security role to the user](database-security.md) to configure their access to resources in the environment. 
+5. Select **Refresh** to see the added user in the list.
+
+6. After a user is added to the environment, [assign a security role to the user](database-security.md) to configure their access to resources in the environment. 
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

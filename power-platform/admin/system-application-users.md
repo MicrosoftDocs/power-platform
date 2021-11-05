@@ -4,7 +4,7 @@ description: "Learn about the special system and application users created when 
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 07/26/2021
+ms.date: 11/04/2021
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
@@ -21,7 +21,7 @@ search.app:
 
 # System and application users 
 
-There is a list of special system and application users that is created when the system is provisioned.  Special system users are created for integration and support scenarios. Application users are created during system provisioning for setup and configuration management.  [Application users](create-users.md#create-an-application-user) can also be used for performing back-end services and their data access is managed by the special security role that is assigned. These security roles are managed by the system and cannot be modified. See other system [predefined security roles](database-security.md#predefined-security-roles).  
+There is a list of special system and application users that is created when the system is provisioned.  Special system users are created for integration and support scenarios. Application users are created during system provisioning for setup and configuration management.  [Application users](create-users.md#create-an-application-user) can also be used for performing back-end services and their data access is managed by the special security role that is assigned. These security roles are managed by the system and might not be modifiable. See other system [predefined security roles](database-security.md#predefined-security-roles).  
 
 Most of these users are hidden from user views but they can be found by using the Advanced Find on the Users table.  Do not delete or modify these users including changing or reassigning security role. 
 
@@ -31,11 +31,13 @@ Most of these users are hidden from user views but they can be found by using th
 | | Support user |crmoln@microsoft.com |To allow Microsoft support staff to have restricted/limited access to any customer environment for customer support. |Support user (does not have privilege to customer data) |
 | | Delegated admin |crmoln2@microsoft.com |See [For partners: the Delegated admin](for-partners-delegated-administrator.md). |System admin |
 |Application | Business Application Platform Service account |bap_sa@microsoft.com |To setup Power Apps system and configurations. |System admin |
-| | Dataverse relevance search | RelevanceSearch@onmicrosoft.com | To fetch table data and metadata for Dataverse search feature | Service Reader |
+| | App Management User | capam@microsoft.com | To allow App Management Services to query tenant details such as Tenant country | System admin |
+| | Dataverse Dataverse search | RelevanceSearch@onmicrosoft.com | To fetch table data and metadata for Dataverse search feature | System admin |
 | | Dynamics 365 Office Data Service | diofficedata@microsoft.com |Service Application to perform data integration between Microsoft Dataverse and Microsoft 365. | DataLakeWorkspaceAppAccess |
 | | Dynamics 365 Athena-CDStoAzuredatalake | Dynamics365Athena-CDStoAzuredatalake@onmicrosoft.com |Service application to perform data integration between Microsoft Dataverse to Azure Data Lake. |DataLakeWorkspaceAppAccess |
 | | Dynamics 365 Athena2-CDStoAzuredatalake | Dynamics365Athena2-CDStoAzuredatalake@onmicrosoft.com |Service application to perform data integration between Dataverse to Azure Data Lake. |DataLakeWorkspaceAppAccess |
 | | EnterpriseSales | EnterpriseSales@onmicrosoft.com |Service application to perform data integration between Dataverse (Sales) to Azure Data Lake. |N/A |
+| | Finance and Operations Runtime Integration User | FinanceandOperationsRuntimeIntegrationUser@onmicrosoft.com |Service application to perform dual-write data integration between Dataverse and Finance and Operations. |Finance and Operations Integration User |
 | | # SIAutoCapture | SIAutoCapture@onmicrosoft.com | To be used for Auto Capture solution business requirements to perform data query and execute plugins from backend services. | SalesInsights AutoCapture Admin |
 | | # Dynamics 365 Sales | Dynamics365Sales@onmicrosoft.com | To allow Dynamics 365 Sales to communicate with Dataverse and Azure Data Lake for analysis and data updates. | Sales system data sync and EAC App Access |
 | | Microsoft Project | Project@microsoft.com |Allow Project for the Web and Roadmap Service to communicate with Dataverse. |Project System and Portfolio User |
@@ -74,15 +76,17 @@ Most of these users are hidden from user views but they can be found by using th
 - Records created/updated by this user account are audited. 
 
 **Technical details on the security?**
-- This user account cannot sign in to Dynamics 365 apps.  
+- This user account can't sign in to Dynamics 365 apps.  
 - Administrators have the option to use this user account when registering their plug-ins. 
-- This user account does not have a mailbox, so they cannot be used to send or receive emails. 
-- The details of this user account cannot be modified from the User Form interface. 
-- This user account does not show up in any views.
+- This user account doesn't have a mailbox, so they can't be used to send or receive emails.
+- Since you can't log into the apps using this user account, it doesn't have any related entities (user settings, queues, calendar, team membership, internal address, etc.). 
+- The details of this user account can't be modified from the User Form interface. 
+- This user account doesn't show up in any views.
 
 **The purpose of the application users?** 
 - The application user is a built-in user account that is used to perform integration and system back-end service to support a particular feature.  
-- Since these are built-in user accounts, they cannot be updated. The security role that is assigned to these accounts cannot be updated either.  This is to prevent any service outages.  
+- Since these are built-in user accounts, they can't be updated. The security role that is assigned to these accounts cannot be updated either. This is to prevent any service outages.  
+- These users do not consume any service licenses.
 
 
 
