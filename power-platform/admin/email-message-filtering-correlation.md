@@ -61,7 +61,7 @@ Dynamics 365 uses the following information from an email to determine if a new 
 
 - **Tracking token in subject** (visible in the email subject): Dynamics 365 concept that's stamped directly in the subject line.
 
-- **Subject words and recipients** (visible in the header): Smart matching which is a Dynamics 365 concept that uses this information based on configuration.
+- **Subject words and recipients**: Smart matching which is a Dynamics 365 concept that uses this information based on configuration.
 
 
 The email correlation logic goes through each of theses correlation options, in this order:
