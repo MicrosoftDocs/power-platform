@@ -53,13 +53,13 @@ An administrator can by enable or disable email correlation from the **[System 
 Dynamics 365 uses the following information from an email to determine if a new email correlates to an existing email message in Dynamics 365:
 
 
-- **MessageId** (not visible in the header): Uniquely identifies an email message which is stamped on every email message.
+- **MessageId** (hidden in email client user interface but stamped on the email message header): Uniquely identifies an email message which is stamped on every email message.
 
-- **InreplyTo** (not visible in the header): Contains the **messageId** that the email message is in reply to.
+- **InreplyTo** (hidden in email clien tuser interface but stamped on the email message header): Contains the **messageId** that the email message is in reply to.
 
-- **ConversationIndex** (not visible in the header): Contains data that associates an email message to an email thread.
+- **ConversationIndex** (hidden in email client user interface but stamped on the email message headerr): Contains data that associates an email message to an email thread.
 
-- **Tracking token in subject** (visible in the header): Dynamics 365 concept that's stamped directly in the subject line.
+- **Tracking token in subject** (visible in the email subject): Dynamics 365 concept that's stamped directly in the subject line.
 
 - **Subject words and recipients** (visible in the header): Smart matching which is a Dynamics 365 concept that uses this information based on configuration.
 
@@ -200,11 +200,11 @@ Basically it indicate that we internally (by default) will ignore any word at (m
 > [!NOTE]
 >  By default we do not ignore starting phrases in the subject line like "Out of office:" as this does not have the first word with the ":" next to it. For ignoring this phrase you can update the regular expression in the registry as "^\[\\s\]\*(\[\\w\]+\\s?:\[\\s\]\*)+\|Out of office:". Do not place the double quote that I have around the string in the example into the registry. The text in the registry should only be the regular expression you want to use for ignoring words from the subject line.
 
-- **HashMaxCount**:This is the max number of hashes that are generated for any subject or recipient list. For example, if the subject after noise cancellation contains more than 20 words only the first 20 words are considered. <br\> **Default value**: 20
+- **HashMaxCount**:This is the max number of hashes that are generated for any subject or recipient list. For example, if the subject after noise cancellation contains more than 20 words only the first 20 words are considered. <br> **Default value**: 20
 
-- **HashDeltaSubjectCount**: This is the maximum delta allowed between subject hash counts of the emails to be correlated. <br\> **Default value**: 0
+- **HashDeltaSubjectCount**: This is the maximum delta allowed between subject hash counts of the emails to be correlated. <br> **Default value**: 0
 
-- **HashMinAddressCount**: This is the minimum hash count matches required on the recipients list for the emails to be correlated. <br\> **Default value**: 2
+- **HashMinAddressCount**: This is the minimum hash count matches required on the recipients list for the emails to be correlated. <br> **Default value**: 2
 
 
 
