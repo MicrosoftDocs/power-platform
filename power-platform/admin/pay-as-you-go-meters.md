@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/02/2021
+ms.date: 11/04/2021
 ms.subservice: admin
 ms.author: jimholtz 
 search.audienceType: 
@@ -72,20 +72,20 @@ Example pricing
 |**App C**     | 4 active users         | 0 active users         | 2 active users         |
 |**Total cost:**     | **$90** <br /> (9 * $10/active user/app)       | **$0** <br />(0 * $10/active user/app)        | **$60** <br /> (6 * $10/active user/app)       |
 
+---
+
 If a user has a Power Apps per user license, the user is not counted in the meter. If a user has a [Microsoft 365 license](pricing-billing-skus.md#power-appspower-automate-for-microsoft-365) which provides access to Power Apps and is using an app with standard connectors, the user is not counted in the meter. See below for how users are counted in the Power Apps per app meter. 
 
 |    |    |     |
 |----|------|-------|
-|  | App with Standard connectors    | App with Premium connectors    |
-| Unlicensed user   | ![Checkmark outline](media/checkmark.png) | ![Checkmark outline](media/checkmark.png) |
-| User with Power Apps for Microsoft 365 plan | Not counted    | ![Checkmark outline](media/checkmark.png) |
-| User with Power Apps per user plan          | Not counted     | Not counted    |
+|  | **App with Standard connectors**   | **App with Premium connectors**    |
+| Unlicensed user   | Charged via Azure subscription.  | Charged via Azure subscription.  |
+| Unlicensed user but Power Apps per app licenses is available in an environment   | Charged via Azure subscription. App passes are not consumed.    | Charged via Azure subscription. App passes are not consumed.  |
+| User with Power Apps for Microsoft 365 plan          | Not counted in the meter.    | Charged via Azure subscription.    |
+| User with Power Apps per user plan          | Not counted in the meter.    | Not counted in the meter.    |
 
 > [!NOTE]
 > If an environment already has [app passes assigned](about-powerapps-perapp.md) and the environment is enabled for pay-as-you-go, app passes are ignored and not consumed. You can reallocate those app passes to a different environment. 
-
----
-
 
 ### Dataverse capacity meter
 
@@ -104,7 +104,7 @@ Measurement for each category of Dataverse storage usage will happen three times
 
 # [Table](#tab/table)
 
-Measured usage *above* entitlements of 1GB Database and 1GB File
+Measured usage *above* entitlements of 1 GB Database and 1 GB File
 
 |Storage category  |Month #1  |Month #2  |Month #3  |
 |---------|---------|---------|---------|
