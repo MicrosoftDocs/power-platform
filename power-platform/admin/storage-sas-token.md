@@ -1,5 +1,5 @@
 ---
-title: " Access your storage with a SAS token | MicrosoftDocs"
+title: " Access your storage with an SAS token | MicrosoftDocs"
 description: "Learn how to gain access the SAS token for your storage and view the data in your storage."
 author: sama-zaki
 ms.service: power-platform
