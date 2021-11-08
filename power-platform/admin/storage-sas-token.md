@@ -74,7 +74,7 @@ This section describes the prerequisites necessary to access the storage with th
 
 ## View and understand your data
 
-The data in your storage is written in the [Common Data Model](https://docs.microsoft.com/common-data-model/) format. There will be a model.json file that, along with its name and version, provides a list of tables that are available in storage. Each Microsoft Dataverse table will have its own directory containing the data records as CSV files. Additionally, there will be a Microsoft.Athena.TrickleFeedService directory that contains extra metadata for each Dataverse table.
+The data in your storage is written in the [Common Data Model](/common-data-model/) format. There will be a model.json file that, along with its name and version, provides a list of tables that are available in storage. Each Microsoft Dataverse table will have its own directory containing the data records as CSV files. Additionally, there will be a Microsoft.Athena.TrickleFeedService directory that contains extra metadata for each Dataverse table.
 
 ### See also
 
