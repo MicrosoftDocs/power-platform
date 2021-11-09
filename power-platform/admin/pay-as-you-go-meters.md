@@ -93,7 +93,7 @@ Dataverse pay-as-you-go meters let you pay for your usage of all three categorie
 
 When an environment becomes enabled for pay-as-you-go and is linked to an Azure subscription, it stops consuming storage from the tenant-wide Dataverse storage pool. Instead, its consumption is billed to Azure. In pay-as-you-go environments, the first 1 GB of Dataverse database storage and 1 GB of file storage capacity are not billed to Azure. However, any log storage capacity will immediately be billed. Note that log storage capacity is only used if you decide to turn on auditing for an environment.
 
-The measurement of usage for each category of Dataverse storage will happen three times per day (90 measurements per month) at 08:00 UTC, 16:00 UTC, and 00:00 UTC. The usage snapshot in each 8-hour period is then multiplied by 1/90<sup>th</sup> to get the fractional usage of storage during the measurement period. This fractional usage will be multiplied by the monthly per GB rate and shown in Azure cost management. The total amount will be summed and billed based on the customer's Azure billing cycle.
+The measurement of usage for each category of Dataverse storage will happen three times per day (90 measurements per month) at 08:00 UTC, 16:00 UTC, and 00:00 UTC. The usage snapshot in each 8-hour period is then multiplied by 1/90<sup>th</sup> to get the fractional usage of storage during the measurement period. This fractional usage will be multiplied by the monthly per GB rate and shown in Azure Cost Management. The total amount will be summed and billed based on the customer's Azure billing cycle.
 
 > [!NOTE]
 > The prices shown in this example are illustrative only. Your organization's pricing may vary based on your contract with Microsoft.
@@ -135,7 +135,7 @@ For more information on Power Platform requests and the entitlements that are in
 
 Power Platform request entitlements are structured as daily entitlements (requests/day). In pay-as-you-go environments, users and flows that go above their daily entitlement will be billed to the linked Azure subscription. With the Power Apps per-app meter, you get an entitlement of 6,000 API calls per user/app/day. Note that flows still need to be licensed with a base license (either Power Automate per-user, Power Automate per-flow, or Office).
 
-In the example below, User A is licensed with a Power Apps per-user license and Flow A is licensed with a Power Automate per-flow license. The number of Power Platform requests consumed by User A and Flow B are measured daily and any usage above the daily entitlement is multiplied by a $/request rate and shown in Azure cost management. The total amount will be summed and billed based on the customer's Azure billing cycle.
+In the example below, User A is licensed with a Power Apps per-user license and Flow A is licensed with a Power Automate per-flow license. The number of Power Platform requests consumed by User A and Flow B are measured daily and any usage above the daily entitlement is multiplied by a $/request rate and shown in Azure Cost Management. The total amount will be summed and billed based on the customer's Azure billing cycle.
 
 > [!NOTE]
 > The prices shown in this example are illustrative only. Your organization's pricing may vary based on your contract with Microsoft.
