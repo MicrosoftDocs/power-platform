@@ -1,7 +1,7 @@
 ---
 title: "Important changes (deprecations) coming in Power Apps, Power Automate and customer engagement apps"
 description: Important changes (deprecations) coming in Power Apps, Power Automate and customer engagement apps 
-ms.date: 11/02/2021
+ms.date: 11/08/2021
 ms.topic: "article"
 ms.assetid: 994cc854-17f6-45d6-bc20-fcf1a3f2d6d6
 searchScope:
@@ -25,7 +25,7 @@ Admins and IT professionals can use this information to prepare for future relea
 
 ## OData v2.0 Service removal
 
-We plan to remove the OData v2.0 Organization Data Service on November 4, 2022.
+We plan to remove the OData v2.0 Organization Data Service on November 11, 2022.
 
 The Organization Data Service is an OData v2.0 endpoint introduced with Dynamics CRM 2011. The Organization Data Service was deprecated with Dynamics 365 Customer Engagement v8.0 in favor of the Web API, an OData v4.0 service. Today, less than .06% of requests to Dataverse use this endpoint. Removing this endpoint will enable Dataverse to improve overall performance.
 
