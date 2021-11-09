@@ -35,7 +35,7 @@ This plan reduces the overhead of license procurement and lets you manage and sp
 
 1. **Widely distributed apps:** Use the pay-as-you-go plan for apps that need to be shared with a large user base with infrequent and/or unpredictable use.
 
-2. **Establish usage patterns:** Understand adoption patterns for new apps to determine whether prepaid licenses make sense.
+2. **Establish usage patterns:** Understand adoption patterns for new apps to determine whether prepaid licenses make financial sense for your business.
 
 3. **Flexible purchasing:** Use an Azure subscription for Power Apps to reduce license procurement overhead and consolidate with other service purchases. This is especially helpful if you already have an Azure subscription that you use for other Microsoft services.
 
@@ -62,7 +62,7 @@ When an environment is linked to Azure via a billing policy, it becomes a *pay-a
 
 :::image type="content" source="media/pay-as-you-go-billing-policy-azure-subscription.png" alt-text="Billing policy linked to Azure subscription":::
 
-Billing policies provide flexible options for organizations that are looking to allocate Microsoft Power Platform meter costs across teams and departments. In the example below, the customer has decided to set up Power Platform meter usage for the Marketing team's two environments to be billed to that team's Azure subscription. However, for the Finance team, the customer has decided to set up individual billing policies for two different sub-teams (Accounting and Auditing), each of which will be connected to a separate Power Platform account resource. This allows the costs for each sub-team to be easily broken out, even though they're both billed to the same Azure subscription. Customers can also leverage [Azure resource groups](/azure/azure-resource-manager/management/manage-resource-groups-portal) and [Azure tags](/azure/azure-resource-manager/management/tag-resources?tabs=json) to organize their Power Platform account resources and track and allocate spending.
+Billing policies provide flexible options for organizations that are looking to allocate Microsoft Power Platform meter costs across teams and departments. In the example below, the customer has decided to set up Power Platform meter usage for the Marketing team's two environments to be billed to that team's Azure subscription. However, for the Finance team, the customer has decided to set up individual billing policies for the environments of two different sub-teams (Accounting and Auditing), each of which will be connected to a separate Power Platform account resource. This allows the costs for each sub-team to be easily broken out, even though they're both billed to the same Azure subscription. Customers can also leverage [Azure resource groups](/azure/azure-resource-manager/management/manage-resource-groups-portal) and [Azure tags](/azure/azure-resource-manager/management/tag-resources?tabs=json) to organize their Power Platform account resources and track and allocate spending.
 
 :::image type="content" source="media/pay-as-you-go-billing-policy-azure-subscription-examples.png" alt-text="Billing policy linked to Azure subscription example":::
 
