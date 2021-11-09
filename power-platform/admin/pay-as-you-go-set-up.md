@@ -89,7 +89,7 @@ Follow these steps to create a billing policy, link environments to it, and add 
 
 2. Provide a name for your new billing policy, and then select **Next**.
 
-   :::image type="content" source="media/pay-as-you-go-billing-policy-name.png" alt-text="Select New billing policy":::
+   :::image type="content" source="media/pay-as-you-go-billing-policy-name.png" alt-text="Name the new billing policy":::
 
 3. Add Azure subscription details.
 
@@ -101,7 +101,7 @@ Follow these steps to create a billing policy, link environments to it, and add 
 
    4. Select **Next**.
 
-      :::image type="content" source="media/pay-as-you-go-billing-policy-azure-details.png" alt-text="Select New billing policy":::
+      :::image type="content" source="media/pay-as-you-go-billing-policy-azure-details.png" alt-text="Select Next to bill to Azure":::
 
 4. Choose environments to link to the new billing policy.
 
@@ -170,14 +170,14 @@ You can set up pay-as-you-go for your environment right from your app's setting 
    3. If you don't have an Azure subscription, procure one within your organization or create a new one.
 
    Enter billing policy name
-   :::image type="content" source="media/pay-as-you-go-powerapps-billing-policy-name.png" alt-text="Select Set up pay-as-you-go billing":::
+   :::image type="content" source="media/pay-as-you-go-powerapps-billing-policy-name.png" alt-text="Enter billing policy name":::
 
    Enter Azure subscription details
    :::image type="content" source="media/pay-as-you-go-powerapps-connect-subscription.png" alt-text="Select Connect subscription":::
 
 4. Once an Azure subscription is successfully linked to your environment, you'll land back on the app settings page and see the following experience. 
 
-   :::image type="content" source="media/pay-as-you-go-powerapps-app-settings.png" alt-text="Select Connect subscription":::
+   :::image type="content" source="media/pay-as-you-go-powerapps-app-settings.png" alt-text="App settings page after Azure subscription is linked":::
 
    If you have app passes available for your environment and still want to set up pay-as-you-go, you can use Steps 2–4 to set it up. Once pay-as-you-go is set up, app passes are not consumed.
 
