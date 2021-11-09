@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/02/2021
+ms.date: 11/09/2021
 ms.subservice: admin
 ms.author: jimholtz 
 search.audienceType: 
@@ -69,9 +69,6 @@ Billing policies provide flexible options for organizations that are looking to 
 ## Next step
 
 [Preview: Pay-as-you-go meters](pay-as-you-go-meters.md)
-
-
-### See also  
 
 
 

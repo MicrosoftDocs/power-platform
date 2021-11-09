@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/02/2021
+ms.date: 11/09/2021
 ms.subservice: admin
 ms.author: jimholtz 
 search.audienceType: 
@@ -201,8 +201,6 @@ You can turn off pay-as-you-go for an environment at any time by doing either of
 ## Next step
 
 [Preview: View usage and billing information](pay-as-you-go-usage-costs.md)
-
-### See also  
 
 
 

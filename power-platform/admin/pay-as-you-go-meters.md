@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/04/2021
+ms.date: 11/09/2021
 ms.subservice: admin
 ms.author: jimholtz 
 search.audienceType: 
@@ -168,7 +168,6 @@ Example pricing
 [Preview: Set up pay-as-you-go](pay-as-you-go-set-up.md)
 
 
-### See also  
 
 
 
