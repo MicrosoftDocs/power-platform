@@ -87,9 +87,9 @@ Sign in to the Power Virtual Agents bot you want to connect to your omnichannel 
     >  
     >If you're using a [managed bot](authoring-export-import-bots.md), you might see a message that says we can't determine if omnichannel integration is enabled for this bot.  
     >  
-    >If the managed bot does have omnichannel capabilities enabled, you can ignore this message as the bot will still work properly. The message will disappear after your next import.  
+    >If the managed bot _does_ have omnichannel capabilities enabled, you can ignore this message as the bot will still work properly. The message will disappear after your next import.  
     >  
-    >If the bot doesn't have omnichannel capabilities enabled, the message will continue to show. 
+    >If the bot _doesn't_ have omnichannel capabilities enabled, the message will continue to show. 
     >  
     >:::image type="content" source="media/transfer-managed-bot.png" alt-text="Message that says we can't determine if this bot has omnichannel enabled or disabled.":::
 
