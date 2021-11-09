@@ -131,6 +131,8 @@ Setting up search starts with reviewing the tables that are enabled for Datavers
 
    > [!NOTE]
    > If you are selecting tables for Dataverse search on a Power Apps US Government environment, use the legacy solution explorer to choose the tables to be indexed for Dataverse search.
+   > 
+   > :::image type="content" source="media/legacy-solution-explorer-small.png" alt-text="Legacy solution explorer":::
 
    :::image type="content" source="media/maker-portal2.gif" alt-text="Select Manage search index.":::
 
