@@ -80,13 +80,15 @@ Sign in to the Power Virtual Agents bot you want to connect to your omnichannel 
     >You must [install at least the omnichannel extension solution](#install-extension-solutions) for hand off to Omnichannel to work.  
     >  
     >![Notification at the top of the omnichannel configuration panel that says your bot doesn't have access.](media/handoff-no-extension.png)
-    
-    <a href="managed-bot"></a>
     <a id="managed-bot-oc"></a>
+    
+    
     >[!IMPORTANT]   
     >  
     >If you're using a [managed bot](authoring-export-import-bots.md), you might see a message that says we can't determine if omnichannel integration is enabled for this bot.  
+    >  
     >If the managed bot does have omnichannel capabilities enabled, you can ignore this message as the bot will still work properly. The message will disappear after your next import.  
+    >  
     >If the bot doesn't have omnichannel capabilities enabled, the message will continue to show. 
     >  
     >:::image type="content" source="media/transfer-managed-bot.png" alt-text="Message that says we can't determine if this bot has omnichannel enabled or disabled.":::
