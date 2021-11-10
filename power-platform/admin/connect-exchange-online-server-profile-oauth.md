@@ -4,7 +4,7 @@ description: Exchange Online cross tenant authentication
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/11/2021
+ms.date: 09/30/2021
 author: revachauhan
 ms.author: rechauha
 ms.reviewer: mkaur
@@ -18,8 +18,6 @@ search.app:
 ---
 
 # Exchange Online cross-tenant authentication
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 Use server-side synchronization to synchronize Exchange Online mailboxes that reside on different Exchange Online tenants. Follow the steps in this topic to complete the prerequisites before you set up an Exchange Online server profile that uses Oauth cross-tenant authentication. More information: [Create an email server profile for Exchange Online](connect-exchange-online.md#preview-create-an-email-server-profile-for-exchange-online)
 
@@ -85,7 +83,7 @@ To [create an email server profile for Exchange Online that uses Oauth (Cross Te
 
 - TenantId: The tenant ID of the tenant where Exchange Online is configured
 - Application ID: The app ID used by Dynamics 365 to connect to Exchange Online
-- Client secret: The client secret used by Dynamics 365 to authenticate as the app
+- Client secret: The client secret value used by Dynamics 365 to authenticate as the app
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of the email server profile form.](media/server-profile-form.png "Email server profile form") 

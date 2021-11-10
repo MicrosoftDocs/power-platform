@@ -37,7 +37,7 @@ You can accept files for upload, sign-in to backend systems, and seamlessly inte
 
 Topic | Description
 - | -
-[Assign access and change security options](configuration-security.md) | Determine who can use the bot in Microsoft Teams
+[Assign access and change security options](configuration-end-user-authentication.md) | Determine who can use the bot in Microsoft Teams
 [Configure end-user authentication](configuration-end-user-authentication.md) | Allow users to sign in with any OAuth2 identity provider directly in a bot conversation.
 [Configure single sign-on](configure-sso.md) | Retain a user's authentication to use other signed-in products.
 [Configure hand off to a generic engagement hub](configure-generic-handoff.md) | Hand off conversations to any engagement hub.

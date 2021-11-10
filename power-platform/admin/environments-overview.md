@@ -6,7 +6,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.custom: intro-internal
-ms.date: 06/24/2021
+ms.date: 10/08/2021
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -90,7 +90,7 @@ There are multiple types of environments. The type indicates the purpose of the 
 </tr>
 <tr>
 <td width="20%"> Trial</td>
-<td width="50%">  Trial environments are intended to support short-term testing needs and are automatically cleaned up after a short period of time. They expire after 30 days and are limited to one user. Provisioning trial environments can be restricted to admins.</td>
+<td width="50%">  Trial environments are intended to support short-term testing needs and are automatically cleaned up after a short period of time. They expire after 30 days and are limited to one per user. Provisioning trial environments can be restricted to admins.</td>
 <td width="30%">  Full control.</td>
 </tr>
 <tr>
@@ -106,8 +106,6 @@ There are multiple types of environments. The type indicates the purpose of the 
 <tr><td colspan="3">*&#8202;Users licensed for Power Apps, Power Automate, Microsoft 365, and Dynamics 365, standalone licenses, and free and trial licenses.</td></tr>
 </table>
 
-<a name="the-default-environment"></a>
-
 ## The default environment
 A single default environment is automatically created by Power Apps for each tenant and shared by all users in that tenant. Whenever a new user signs up for Power Apps, they're automatically added to the Maker role of the default environment. The default environment is created in the region closest to the default region of the Azure AD tenant.
 
@@ -115,6 +113,8 @@ A single default environment is automatically created by Power Apps for each ten
 > - No users will be added to the Environment Admin role of the default environment automatically. More information: [Administer environments in Power Apps](environments-administration.md)
 > - You can't delete the default environment.
 > - You can't backup and restore the default environment.
+> - The default environment has the following free storage capacity: 3GB Dataverse Database Capacity, 3GB Dataverse File Capacity, and 1GB Dataverse Log Capacity. Note that we're in the process of rolling out this feature.
+> - The capacity check conducted prior to creating new environments will exclude the default environment's free storage capacity when calculating whether you have  sufficient capacity to create a new environment. 
 > - The default environment is limited to 32 GB of storage capacity. In case you need to store more data, you can create a production environment. More information: [Provisioning a new environment](create-environment.md#provisioning-a-new-environment)
 
 The default environment is named as follows: "{Azure AD tenant name} (default)"

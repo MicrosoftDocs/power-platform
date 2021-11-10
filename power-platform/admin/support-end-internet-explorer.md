@@ -4,7 +4,7 @@ description: Information about support end for Internet Explorer.
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/23/2021
+ms.date: 10/14/2021
 ms.subservice: admin
 ms.author: aorth 
 author: adrianorth
@@ -18,6 +18,9 @@ search.app:
   - Flow
 ---
 # Support end for Internet Explorer 
+
+> [!IMPORTANT]
+> With 2022 release wave 1, Internet Explorer 11 will be blocked. Please switch to a modern browser.
 
 Microsoft Internet Explorer and Microsoft Edge Legacy support has ended. This topic outlines the experience that administrators and end users will see related to the support end. 
 
@@ -42,12 +45,13 @@ All users using model-driven apps in Internet Explorer will see a warning messag
 **Prior to the 2022 Wave 1 release blocking Internet Explorer,** users using model-driven apps in Internet Explorer will see an error message at the top of the app like the following.  
 
 > **Alert** <br />
-> Internet Explorer support has ended and will be blocked soon. Please switch to a modern browser.
+> Internet Explorer support has ended and will be blocked with the 2022 Wave 1 release. Please switch to Microsoft Edge or another modern browser.
+
 
 **With the 2022 Wave 1 release,** users opening model-driven apps in Internet Explorer will be blocked and see a message like this. 
 
 > **Alert** <br />
-> Model-driven apps require Microsoft Edge or a supported browser. Please switch to a modern browser.
+> Internet Explorer support has ended and is now blocked. Please switch to Microsoft Edge or another modern browser.
 
 Administrators wanting to block Internet Explorer for users earlier can request this through support. 
 

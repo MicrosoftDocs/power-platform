@@ -1,13 +1,14 @@
 ---
 title: "Recover a recently deleted environment"
 description: "Learn how to restore a recently deleted environment by using Microsoft Power Platform admin center or Power Apps cmdlet."
-author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/27/2020
+ms.date: 10/01/2021
 ms.subservice: admin
-ms.author: jimholtz
+author: ChrisGarty
+ms.author: cgarty
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:
@@ -18,7 +19,7 @@ search.app:
 ---
 # Recover environment
 
-You can recover a recently deleted environment ([within 7 days of deletion](backup-restore-environments.md#how-long-are-my-manualon-demand-backups-and-system-backups-retained)), by using the Microsoft Power Platform admin center or the Power Apps cmdlet Recover-AdminPowerAppEnvironment.
+You can recover a recently deleted environment ([within 7 days of deletion](backup-restore-environments.md#how-long-are-my-manualon-demand-backups-and-system-backups-retained)), by using the Microsoft Power Platform admin center or the Power Apps cmdlet [Recover-AdminPowerAppEnvironment](/powershell/module/microsoft.powerapps.administration.powershell/recover-adminpowerappenvironment?view=pa-ps-latest).
 
 > [!NOTE]
 > Available storage capacity might be required in order to successfully recover an environment depending on the type of environment being recovered. For information on viewing your current storage capacity, see [Microsoft Dataverse storage capacity](capacity-storage.md). 
@@ -33,13 +34,10 @@ An administrator can recover a recently deleted environment by using the Power P
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin, Global admin, or Power Platform admin).
 
-2. In the navigation pane, select **Environments**, and then select **Click to view environments you may recover.**
+2. In the navigation pane, select **Environments**, and then select **Recover deleted environments**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Restore deleted environments alert.](media/restore-delete-alert.png "Restore deleted environments alert")
-
-   > [!NOTE]
-   > If the alert is not visible, navigate to another page such as **Resources** > **Capacity** and then return to the **Environments** page.
+   > ![Restore deleted environments.](media/restore-delete-alert.png "Restore deleted environments")
 
 3. Select an environment to recover, and then select **Recover**.
 
@@ -67,6 +65,9 @@ Recover-AdminPowerAppEnvironment -EnvironmentName $environmentName -WaitUntilFin
 
 To learn more on using PowerShell cmdlets for environments, see [Power Apps cmdlets for administrators](powerapps-powershell.md#power-apps-cmdlets-for-administrators).
 
+## Next steps after recovering an environment
+
+- **Flows** - Review the flows in the environment. Enable and disable flows as needed.
 
 ### See also 
 [Back up and restore environments](backup-restore-environments.md) <br />

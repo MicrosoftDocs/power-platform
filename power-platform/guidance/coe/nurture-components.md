@@ -6,7 +6,7 @@ manager: devkeydet
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/01/2021
+ms.date: 09/13/2021
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
@@ -19,13 +19,7 @@ search.app:
 ---
 # Use nurture components
 
-An essential part of establishing a Center of Excellence (CoE) is nurturing your makers and an internal community. You'll want to share best practices and templates, and onboard new makers. The assets in this solution can help you develop a strategy for this motion.  
-
-## Demo: Nurture components
-
-Watch how to use the nurture components solution.
-
-> [!VIDEO https://www.youtube.com/embed/StqxBgbt_ZM]
+An essential part of establishing a Center of Excellence (CoE) is nurturing your makers and an internal community. You'll want to share best practices and templates, and onboard new makers. The assets in this solution can help you develop a strategy for this motion.   More information: [Set up nurture components](setup-nurture-components.md) and [Watch](https://www.youtube.com/embed/StqxBgbt_ZM) how to use the core components solution.
 
 The CoE nurture components solution contains assets relevant to everyone in the organization: admins, makers, in addition to users of apps and flows. More information: [Set up nurture components](setup-nurture-components.md)
 
@@ -99,7 +93,7 @@ A canvas app that the Maker Assessment admin uses to enter or update the questio
 
 **Permission**: Share this app with the Maker Assessment admins - this can be your CoE or Power Platform adoption lead.
 
-**Prerequisite**: This app uses Dataverse; a Premium license is therefore required for every app user unless installed in Dataverse for Teams.
+**Prerequisite**: This app uses Microsoft Dataverse. If you have installed this solution in a Production environment, a Premium license is required for every app user. If you have installed this solution in a Dataverse for Teams environment, a Microsoft 365 license is required for every user.
 
 ![Maker Journey Admin app.](media/MakerJourneyAdminApp.png "Maker Journey Admin app")
 
@@ -109,7 +103,7 @@ The Maker Assessment app can be used to ask users a series of questions regardin
 
 **Permission**: The Maker Assessment app can be shared with the entire organization.
 
-**Prerequisite**: This app uses Dataverse; a Premium license is therefore required for every app user unless installed in Dataverse for Teams.
+**Prerequisite**: This app uses Microsoft Dataverse. If you have installed this solution in a Production environment, a Premium license is required for every app user. If you have installed this solution in a Dataverse for Teams environment, a Microsoft 365 license is required for every user.
 
 ![Maker Assessment app, screen 1.](media/MakerJourneyAssessmentApp_1.png "Maker Assessment app, screen 1")
 
@@ -130,7 +124,7 @@ If you're planning to run an internal Training in a Day event (such as App in a 
 
 **Permission**: Share with CoE admins or the owners of your internal training events.
 
-**Prerequisite**: This app uses Dataverse; a Premium license is therefore required for the admins who are using it.
+**Prerequisite**: This app uses Microsoft Dataverse. If you have installed this solution in a Production environment, a Premium license is required for every app user. If you have installed this solution in a Dataverse for Teams environment, a Microsoft 365 license is required for every user.
 
 ![Training in a Day Management app.](media/coe69.png "Training in a Day Management app")
 
@@ -140,7 +134,7 @@ If you're planning to run a Training in a Day event, use this canvas app to enab
 
 **Permission**: As soon as you're running internal training events, share with everyone in the organization.
 
-**Prerequisite**: This app uses Dataverse; a Premium license is therefore required for everyone in your org.
+**Prerequisite**: This app uses Microsoft Dataverse. If you have installed this solution in a Production environment, a Premium license is required for every app user. If you have installed this solution in a Dataverse for Teams environment, a Microsoft 365 license is required for every user.
 
 ![Training in a Day Registration app.](media/coe70.png "Training in a Day Registration app")
 

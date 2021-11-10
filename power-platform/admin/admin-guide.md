@@ -27,8 +27,12 @@ Features from the Power Apps admin center have moved to the Microsoft Power Plat
 
 ### See also
 [Working with the admin portals](wp-work-with-admin-portals.md) <br />
-[Reference: Videos and PowerPoint presentations](videos.md) <br />
-[What's the role of a Power Apps administrator?](overview-role-powerapps-admin.md)
+[What's the role of a Power Apps administrator?](overview-role-powerapps-admin.md) <br />
+[Video: Top 10 tips to securely roll out Microsoft Power Apps and Microsoft Power Automate](https://youtu.be/BnolkTK2Sng) <br />
+[Deck: Top 10 tips to securely roll out Microsoft Power Apps and Microsoft Power Automate](https://medius.studios.ms/video/asset/PPT/MBAS19-BRK2005) 
+
+
+
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

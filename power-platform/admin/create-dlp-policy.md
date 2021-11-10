@@ -4,7 +4,7 @@ description: In this quickstart, you learn how to create a data loss prevention 
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 08/03/2021
+ms.date: 10/11/2021
 author: jimholtz
 ms.subservice: admin
 ms.author: jimholtz
@@ -38,7 +38,10 @@ We refer to these roles throughout this article as *tenant admins*. More informa
 
 ### Environment-level
 
-To follow the steps for environment-level policies, you need to have Power Apps Environment Admin permissions.  
+To follow the steps for environment-level policies, you need to have Power Apps Environment Admin permissions. For environments with a Dataverse database, you need to be assigned the System Administrator role instead. 
+
+> [!NOTE] 
+> If using the **SingleEnvironment** EnvironmentType parameter when using PowerShell to create a DLP policy, the user account used to create the policy **MUST** have **Environment-level** and **MUST NOT** have **Tenant-level** permissions as described above, or a Bad Request error will be returned and the policy will not be created.
 
 ## Find and view DLP policies
 
@@ -193,7 +196,7 @@ After this policy is saved, any Power Apps or Power Automate maker who is part o
 
    For the purpose of this walkthrough, you will exclude test environments from this policy. Select **Exclude certain environments**, and on the **Add Environments** page, select **Next**.
   
-7. Review the various attributes and settings on the **Add Environments** page. For tenant-level policies, this list will show the tenant-level admin all the environments in the tenant. For environment-level policies, this list will only show the subset of environments in the tenant that are managed by the user who has signed in as an environment admin. 
+7. Review the various attributes and settings on the **Add Environments** page. For tenant-level policies, this list will show the tenant-level admin all the environments in the tenant. For environment-level policies, this list will only show the subset of environments in the tenant that are managed by the user who has signed in as an Environment Admin or as a System Administrator for environments with Dataverse database. 
 
    > [!div class="mx-imgBorder"] 
    > ![Add environments.](media/dlp-add-environments2.png "Add environments")

@@ -6,7 +6,7 @@ manager: devkeydet
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/06/2021
+ms.date: 09/13/2021
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
@@ -19,13 +19,7 @@ search.app:
 ---
 # Use governance components
 
-After you've become familiar with your environments and resources, you might start thinking about governance processes for your apps. You might want to gather additional information about your apps from your makers, or audit specific connectors or app usage.
-
-## Demo: Governance components
-
-Watch how to use the governance components solution.
-
-> [!VIDEO https://www.youtube.com/embed/6bfaFsFtLow]
+After you've become familiar with your environments and resources, you might start thinking about governance processes for your apps. You might want to gather additional information about your apps from your makers, or audit specific connectors or app usage. More information: [Set up governance components](setup-governance-components.md) and [Watch](https://www.youtube.com/embed/6bfaFsFtLow) how to use the core components solution.
 
 The governance components solution contains assets relevant to admins and makers. More information: [Set up governance components](setup-governance-components.md)
 
@@ -55,7 +49,7 @@ Represents archival approval tasks started during the App Archive and Clean Up f
 
 | Flow | Type | Schedule |
 | --- | --- | --- |
-|[Microsoft Teams Admin \|  Ask for Business Justification when Microsoft Teams environment is created](#microsoft-teams-admin--ask-for-business-justification-when-microsoft-teams-environment-is-created) | Automated |  when *Admin \| Sync Template v3* flow adds or modifies a record in the Environment table |
+|[Microsoft Teams Admin \|  Ask for Business Justification when Microsoft Teams environment is created](#microsoft-teams-admin--ask-for-business-justification-when-microsoft-teams-environment-is-created) | Automated |  triggered by Admin \| Sync Template v3 |
 | [Microsoft Teams Admin \|  Weekly Clean Up of Microsoft Teams environments](#microsoft-teams-admin--weekly-clean-up-of-microsoft-teams-environments) | Schedule | Weekly |
 | [Admin \| Archive and Clean Up v2 (Check Approval)](#admin--archive-and-clean-up-v2-check-approval) | Schedule | Daily |
 | [Admin \| Archive and Clean Up v2 (Clean Up and Delete)](#admin--archive-and-clean-up-v2-clean-up-and-delete) | Schedule | Daily |
@@ -67,7 +61,7 @@ Represents archival approval tasks started during the App Archive and Clean Up f
 | [Request Orphaned Objects Reassigned (Parent)](#request-orphaned-objects-reassigned-parent) | Schedule | Daily |
 | [HELPER - CanvasAppOperations Gov](#helper---canvasappoperations-gov) | Instant | helper |
 | [HELPER - CloudFlowOperations Gov](#helper---cloudflowoperations-gov) | Instant | helper |
-
+| [HELPER - ObjectOperations Gov](#helper---objectoperations-gov) | Instant | helper |
 
 ### Microsoft Teams Admin | Ask for Business Justification when Microsoft Teams environment is created
 
@@ -172,11 +166,11 @@ This flow is triggered daily for every manager that has objects owned by former 
 1) Take ownership of them all
 1) Delete them all
 1) Assign them all to someone else
-1) See each one individually 
+1) See each one individually
 
 ![Orphaned object list](media/orphanedobjects2.png "Orphaned object list")
 
-If they chose to see the items individually then they can make these decisions granularly. 
+If they chose to see the items individually then they can make these decisions granularly.
 
 ![Orphaned object item](media/orphanedobjects3.png "Orphaned object item")
 
@@ -192,12 +186,17 @@ This flow takes in the environment, flow, and operation to perform as well as th
 The operations supported are Delete and Assign (which reassigns owner) <br>
 It performs the action on the actual object in the tenant and also updates the inventory.
 
+### HELPER - ObjectOperations Gov
+
+This flow calls either HELPER - CanvasAppOperations Gov or HELPER - CloudFlowOperations Gov from the Developer Compliance Center app.
+
 ## Apps
 
 ### Cleanup Old Objects App
 
 As makers are asked to respond if objects are still useful with the Archival flows above, they will sometimes ignore these asks. In that case, a flow above will send their manager this email.
-![Mail sent to managers](media/ArchiveApps1.png "Mail sent to managers"
+
+![Mail sent to managers](media/ArchiveApps1.png "Mail sent to managers")
 
 The manager can click on the link in the mail and be brought to this app for cleaning.
 
@@ -225,7 +224,7 @@ This app is used in the [auditing process](example-processes.md) as a tool for u
 
 **Permission**: As soon as you're using the app auditing process, this app needs to be shared with your app makers. If you intend to use this process, modify the [Welcome email](setup-nurture-components.md) flow to add users to a security group, and then share this app with the security group.
 
-**Prerequisite**: This app uses Dataverse; a Premium license is therefore required for each app user.
+**Prerequisite**: This app uses Microsoft Dataverse. If you have installed this solution in a Production environment, a Premium license is required for every app user. If you have installed this solution in a Dataverse for Teams environment, a Microsoft 365 license is required for every user.
 
 #### Compliance Status
 
@@ -257,10 +256,6 @@ Makers can achieve compliance by providing additional information through the **
       ![Developer Compliance Center app detail.](media/coe57.png "Developer Compliance Center app detail")
    :::column-end:::
 :::row-end:::
-
-### App and Flow Archive and Clean Up View
-
-An app that provides an interface to canvas apps and cloud flows that have been highlighted for archiving and their approval status. This app works in conjunction with other apps and flows in the CoE Starter Kit to facilitate the process described for the [app auditing process](example-processes.md).
 
 ## Business process flows
 
@@ -348,6 +343,5 @@ All business process flows are disabled by default. To enable them, do the follo
 1. In **Power Apps App Approval BPF**, select the ellipsis (…) button, and then select **Turn On**.
 
 1. Repeat the previous step for **Flow Approval BPF**, **Custom Connector Approval BPF**, and **Chatbot Approval BPF**.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

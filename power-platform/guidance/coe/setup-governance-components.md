@@ -73,7 +73,7 @@ The Core Components solution is required for the Governance Components solution,
 1. Create a new connection to the all connectors.
     ![Import the Center of Excellence - Governance components solution.](media/msig-import.png "Import the Center of Excellence - Governance components solution")
 
-1. Select **Import** without adding values to the Environment Variables, as we will update them later - see [update environment variables](#update-environment-variables)
+1. Select **Import** without adding values to the Environment Variables, these will be updated later - see [update environment variables](#update-environment-variables)
 
 ## Update environment variables
 
@@ -92,24 +92,11 @@ All flows in this solution depend on all environment variables' being configured
    | Exclude Default environment from Compliance Requests | Determines if the default environment is excluded in the Compliance Details request flow. <br> Value must be Yes or No. A default value of No is provided.  |
    | ProductionEnvironment | Determines if the environment is Production or Dev/Test. True (the default) will mean that the approvals are sent to app/flow owners. False will send those approvals to the admin email. |
    | Cleanup Old Objects App URL | (Optional) Link to the Cleanup Old Objects canvas app included in this solution. <br> If included, communication about old objects which are considered no longer useful will include the link to make cleanup easier |
-   | Flow Approvals URL | (Optional) Link to Power Automate's Approval page for your CoE Environment <br> If included, communication about old objects which are considered no longer useful will include the link to make cleanup easier |
+   | Flow Approvals URL | (Optional) Link to Power Automate's Approval page for your CoE Environment <br> If included, communication about old objects which are considered no longer useful will include the link to make cleanup easier. <br> To get the URL Browse to flows.microsoft.com for your CoE Environment > Action Items > Approvals. <br> URL should end in **approvals/received** |
 
 ## Activate the flows
 
 This Governance Components solution contains flows that you'll need to manually turn on as soon as you're ready to use them.
-
-- Admin \| Archive and Clean Up v2 (Check Approval)
-- Admin \| Archive and Clean Up v2 (Clean Up and Delete)
-- Admin \| Archive and Clean Up v2 (Start Approval for Apps)
-- Admin \| Archive and Clean Up v2 (Start Approval for Flows)
-- Admin \| Email Managers Ignored Approvals
-- Admin \| Setup \| Ignored Archival Requests
-- HELPER - CanvasAppOperations Gov
-- HELPER - CloudFlowOperations Gov
-- Microsoft Teams Admin \| Ask for Business Justification when Microsoft Teams environment is created
-- Microsoft Teams Admin \| Weekly Clean Up of Microsoft Teams environments
-- Request Orphaned Objects Reassigned (Child)
-- Request Orphaned Objects Reassigned (Parent)
 
 ## Update Run only users
 
@@ -117,6 +104,7 @@ There are three child flows which will need their **Run only users** properties 
 
 - HELPER - CanvasAppOperations Gov
 - HELPER - CloudFlowOperations Gov
+- HELPER - ObjectOperations Gov
 - Request Orphaned Objects Reassigned (Child)
 
 For all three of these flows, go to the details page and click the **Run only users** edit button.
@@ -177,7 +165,7 @@ More information: [Sharing for broad distribution apps](/powerapps/teams/set-per
     1. Select Tables from the left pane.
     1. Select **PowerApps App** > **Manage Permissions**.
     1. Select **Colleagues with access**.
-    1. Set the permission to **Collaborate**.
+    1. Set the permission to **Full Access**.
         ![Sharing data with colleagues.](media/govteams-3.png "Sharing data with colleagues")
     1. Repeat these steps for the Environment, Flow, PVA, Desktop flow tables.
     1. Repeat these steps for the COE Settings table, but grant **Reference** permission only.

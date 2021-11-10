@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/11/2020
+ms.date: 09/21/2021
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -299,7 +299,7 @@ The following table lists the privileges shown in the security role editor misce
 <tr class="even">
 <td><p>Bulk Edit</p></td>
 <td><p>prvBulkEdit</p></td>
-<td><p></p></td>
+<td><p><a href="/powerapps/user/edit-rows">Edit multiple rows</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Change Hierarchy Security Settings</p></td>
@@ -406,17 +406,17 @@ The following table lists the privileges shown in the security role editor misce
 <tr class="odd">
 <td><p>Create own calendar</p></td>
 <td><p>prvCreateOwnCalendar</p></td>
-<td><p><a href="/power-platform/admin/customize-marketing-calendars">Create and customize marketing calendars</a></p></td>
+<td><p><a href="/dynamics365/marketing/customize-marketing-calendars">Create and customize marketing calendars</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Delete own calendar</p></td>
 <td><p>prvDeleteOwnCalendar</p></td>
-<td><p><a href="/power-platform/admin/customize-marketing-calendars">Create and customize marketing calendars</a></p></td>
+<td><p><a href="/dynamics365/marketing/customize-marketing-calendars">Create and customize marketing calendars</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Read own calendar</p></td>
 <td><p>prvReadOwnCalendar</p></td>
-<td><p><a href="/power-platform/admin/customize-marketing-calendars">Create and customize marketing calendars</a></p></td>
+<td><p><a href="/dynamics365/marketing/customize-marketing-calendars">Create and customize marketing calendars</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Search Availability</p></td>

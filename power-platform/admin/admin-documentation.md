@@ -40,7 +40,6 @@ Currently, the admin center provides the following capabilities.
 
 ### See also
 [Working with the admin portals](wp-work-with-admin-portals.md) <br />
-[Reference: Videos and PowerPoint presentations](videos.md) <br />
 [Introduction to Microsoft Power Platform](/learn/modules/introduction-power-platform/)
 
 
