@@ -221,6 +221,7 @@ When you first set up the CoE Starter Kit, enable these flows in a specific orde
     1. Select **Installed apps**.
     1. Select **See all** for Center of Excellence - Core Components.
     1. Select **Cloud flows**.
+1. Turn on: CLEANUP HELPER - Check Deleted (Cloud Flows), CLEANUP HELPER - Check Deleted (Model Driven Apps), CLEANUP HELPER - Check Deleted (Canvas Apps) and CLEANUP HELPER - Check Deleted (PVA).
 1. Turn on: CLEANUP - Admin \| Sync Template v3 (Check Deleted).
 1. Wait until it finishes before you turn on any other flows.
 1. Turn on: Admin \| Sync Template V3 (Connectors)
