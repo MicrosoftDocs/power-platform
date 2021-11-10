@@ -71,11 +71,12 @@ Here's a chart that lays out the limits that are associated with the different l
 
 ## Transition period
 
-All customers are in a transition period. That means that enforcement isn't strict and limits are higher. After the transition period ends (First quarter of calendar year 2022), which will be after the full reporting is available in the Power Platform admin center, organizations will have six months to analyze their usage and purchase licenses that are appropriate before strict enforcement on license limits begins.
+All customers are in a transition period. That means that enforcement isn't strict and limits are higher. The transition period ends (First quarter of calendar year 2022), which will be when the full reporting is available in the Power Platform admin center. Organizations will have six months to analyze their usage and purchase licenses that are appropriate before strict enforcement on license limits begins.
 
 Here are a few things to be aware of during the transition period.
 
-1. The transition period doesn't mean that there are no daily limits. It means that the currently enforced limits are more generous than the stated limits to prevent potential unintended impact on your apps or flows. See [Power Platform requests](#transition-period) to understand both plan limits and transition period limits. These transition period limits are applied at the flow level.
+1. The transition period doesn't mean that there are no daily limits. It means that the currently enforced limits are more generous than the stated limits to prevent potential unintended impact on your apps or flows. See [Power Platform requests](#transition-period) to understand both plan limits and transition period limits. 
+1. These transition period limits are applied at the flow level during transition period. Once the transition period ends, the limits will be applied at user level for per user plans and flow level for per flow plan.
 1. Since limits are more generous during the transition period, [stacking of user licenses isn't supported](/power-platform/admin/api-request-limits-allocations). If a user has multiple plans, such as a Microsoft 365 plan and a Dynamics 365 plan, the flow will use the higher plan (Dynamics 365 plan).
 1. Power Platform requests capacity add-on packs are not assignable to the users or flows during the transition period. However, Microsoft recommends that you purchase these add-ons to remain within your license terms and to be prepared for when the transition period ends. If your flows are currently being throttled, purchase add-ons and create a support ticket with the flow details and add-on details so that the support team can provide exceptions for your throttled flows.
 1. Seeded license users can only use flows within the context of the app. See [the seeded plans](#seeded-plans) section to learn more. The enforcement on license limits is less strict during transition period and Microsoft recommends that you remain within your license terms to avoid any disruptions when the transition period ends.
@@ -164,7 +165,7 @@ Consider the following flow where every email attachment is saved to OneDrive. T
 
 - If a flow has per flow license, the flow will always use the per flow limits and not the creator/owner/invoking user's limits.
 - [Automated and scheduled flows](/power-automate/flow-types#cloud-flows) always use the flow creator/owner's Power Platform request limits regardless of who started the process or what accounts are used for connections inside of the process. For a solution flow, you can change the owner of the flow using [Web API](/power-automate/web-api#update-a-cloud-flow). After you change the owner, the new owner's API request limits are used. For a non-solution flow, the flow always uses the original creator's limits which can't be changed. If the original creator leaves the company, any co-owners of the flow can export and import the flow as a different owner. <!-- to do: a bunch of ads play before the video starts. Check out the[video tutorial](https://www.youtube.com/watch?v=K7_xWJvEPUc) for me details.--> After you import the flow, it becomes a new flow and starts using limits from the new owner. Alternatively, you can assign a per flow license to the flow.
-- [Instant flows (button, power apps, hybrid triggers)](/power-automate/flow-types#cloud-flows) use the invoking user's limits, regardless of the connections that are used in the flow.
+- [Instant flows (button, power apps, hybrid triggers)](/power-automate/flow-types#cloud-flows) use the invoking user's limits. 
 - If you share an automated/scheduled flow with another user and then that user triggers the same flow, it uses the limits of the original owner and not the new user's limits. But if the user then leverages the flow to make their own new flow, then that new user becomes the owner of the new flow and that flow uses the new user's limits.
 - If a parent flow calls a child flow, the child flow uses the parent flow's limits. For example, if the parent flow is an automated flow, the child flow uses the parent flow creator/owner's limits.
 - If the parent flow is a manual flow, the child flow uses the limits of the parent flow's invoking user.
@@ -182,7 +183,7 @@ Here is an example of an email that was sent for a flow that was consistently ex
 
 The Power Platform admin center will soon contain reports on Power Automate requests. This reporting will help you to quickly view adoption and user metrics for your organization.
 
-Additionally, you can see the action usage for a given flow by selecting the  **Analytics**  action from the flow properties page, and this works across all types of actions. This helps you to understand how many actions are running each day. It can help you detect inefficiencies in your workflow logic and understand usage patterns to optimize for capacity.
+Additionally, you can see the action usage for a given flow by selecting the  **Analytics**  action from the flow properties page, and this works across all types of actions. This helps you to understand how many actions are running each day. It can help you understand usage patterns to optimize for capacity.
 
 <!-- ![](RackMultipart20211020-4-1g0es0r_html_506275adcda597da.png) -->
 
@@ -204,7 +205,7 @@ When you have a flow that runs many actions, it impacts the performance of your 
 
 In the most common case, exceeding limits results in delayed runs of subsequent actions, and this will slow down the overall run time of your flow. These delays are proportional to the degree of overages caused by a flow.
 
-Occasional overages are okay. For instance, if you exceed your daily limits by 500 actions it's not going to impact the performance of your flow, however exceeding your limit by 50,000 actions will have a significant performance impact on your flow.
+Occasional overages are okay. For instance, if you exceed your daily limits by 500 actions it's not going to impact the performance of your flow, however exceeding your limit by 50,000 actions will have a significant performance impact on your flow potentially for multiple days.
 
 
 #### What can I do if my flow is above limits?
@@ -214,11 +215,11 @@ Users won't be blocked from using an app or flow for occasional and reasonable o
 Here are some things you can do if you've exceeded the limits of your license.
 
 - Revisit your design and check for any places that can help reduce the number of actions being called. Check out [Best Practices section to create flows to use less actions](https://support.microsoft.com/topic/troubleshooting-slow-running-flows-2a51dcd6-0b21-33da-5ce8-1e908b1540ef).
-- If the flow is already optimized, but it uses many actions because of the nature of the business, consider buying a higher license. The per flow plan provides the best performance quota available (250K actions/day/flow).
-- Purchase the **Power Apps and Power Automate capacity add-on** for your organization. During the [transition period](#transition-period), because enforcement is currently less strict, there is no facility to assign the **Power Apps and Power Automate capacity add-on** to a user. However, Microsoft recommends that you purchase these add-ons now to remain within your license terms and create a support ticket with the flow details and add on details to get temporary relief from throttling.
+- If the flow is already optimized, but it uses many actions because of the nature of the business, consider buying a higher license. The per flow plan provides the best performance quota available (250K actions/24 hours/flow).
+- Purchase the **Power Apps and Power Automate capacity add-on** for your organization. During the [transition period](#transition-period), because enforcement is currently less strict, there is no facility to assign the **Power Apps and Power Automate capacity add-on** to a user. However, Microsoft recommends that you purchase these add-ons now to remain within your license terms and create a support ticket with the flow details and add on details to get temporary relief(30 days) from throttling.
 - Turn on [Pay-as-you go](#pay-as-you-go) for the environment to ensure none of the flows in the environment are throttled.
 
-If a flow is consistently above the transition period limits for 14 consecutive days, the flow is turned off and the owner is notified. You can update the flow or buy higher license, and then turn it on anytime.
+If a flow is consistently above the transition period limits for 14 consecutive days, the flow is turned off and the owner is notified. You can purchase higher license, and then turn it on anytime. You can edit and save the flow for the 14 day counter to reset while you purchase the license.  
 
 #### What are connector limits and are they different from Power Platform request limits?
 
