@@ -42,13 +42,13 @@ to the versions of the tools that are required for the pipeline to run properly.
 ```yml
 # Installs default Power Platform Build Tools
 - task: microsoft-IsvExpTools.PowerPlatform-BuildTools.tool-installer.PowerPlatformToolInstaller@0
-  displayName: 'Power Platform Tool Installer '
+  displayName: 'Power Platform Tool Installer'
 ```
 
 ```yml
 # Installs specific versions of the Power Platform Build Tools
 - task: microsoft-IsvExpTools.PowerPlatform-BuildTools.tool-installer.PowerPlatformToolInstaller@0
-  displayName: 'Power Platform Tool Installer '
+  displayName: 'Power Platform Tool Installer'
   inputs:
     DefaultVersion: false
     XrmToolingPackageDeploymentVersion: 3.3.0.928
