@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/21/2021
+ms.date: 11/10/2021
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -99,9 +99,13 @@ The process to install an app depends on your view.
 
 ### Install an app in the tenant view
 
-1. From the [tenant-level view of apps](#tenant-level-view-of-apps), select an **Enabled** app, and then select **Install** from the top menu bar. 
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
-2. Select an environment, review the packages to be installed, agree to the terms of service, and then select **Install**.
+2. Select **Resources** > **Dynamics 365 apps** from the left-side menu.
+
+3. Select an **Enabled** app, and then select **Install** from the top menu bar. 
+
+4. Select an environment, review the packages to be installed, agree to the terms of service, and then select **Install**.
 
    > [!div class="mx-imgBorder"] 
    > ![Install app.](media/app-management-install-app2.png "Install app")
@@ -113,14 +117,20 @@ The process to install an app depends on your view.
 
 ### Install an app in the environment view
 
-1. From the [environment-level view of apps](#environment-level-view-of-apps), select an environment, under **Resources** select **Dynamics 365 apps**, and then select **Install app**. 
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
-2. Select an **Enabled** app, and then select **Next**.
+2. Select **Environments** and then select an environment.
+
+3. Under **Resources**, select **Dynamics 365 apps**.
+
+4. Select **Install app**. 
+
+5. Select an **Enabled** app, and then select **Next**.
 
    > [!div class="mx-imgBorder"] 
    > ![Select enabled app.](media/app-management-install-app-env-view.png "Select enabled app")
 
-3. Agree to the terms of service, and then select **Install**.
+6. Agree to the terms of service, and then select **Install**.
 
 ## Troubleshooting a failed installation
 If the app installation has failed, select **Installation failed** from the environment-level view and review the troubleshooting details. 
@@ -144,10 +154,6 @@ Filters are applied to the **Select an environment** drop-down list as follows:
 2. Displays environments that only have a database.
 3. Displays environments that are only in a ready state. 
 
-<!-- 
-### See also
-[Portal administration with Power Platform admin center](/powerapps/maker/portals/admin/power-platform-admin-center) 
--->
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
