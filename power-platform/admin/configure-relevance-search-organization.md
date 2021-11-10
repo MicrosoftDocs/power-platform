@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/04/2021
+ms.date: 11/09/2021
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -119,6 +119,11 @@ Setting up Dataverse search after enabling it in the **Power Platform admin cent
 
 Setting up search starts with reviewing the tables that are enabled for Dataverse search, in context of a solution. Using the new solution explorer, you can see a snapshot of the Dataverse search index on the **Overview** page.
 
+   > [!NOTE]
+   > If you are selecting tables for Dataverse search on a Power Apps US Government environment, use the legacy solution explorer to choose the tables to be indexed for Dataverse search.
+   > 
+   > :::image type="content" source="media/legacy-solution-explorer-small.png" alt-text="Legacy solution explorer":::
+
 1. Sign in to [Power Apps](https://make.powerapps.com/).
 
 2. Select **Solutions**.
@@ -136,7 +141,7 @@ Although there is no limit on how many tables you can index for Dataverse search
 > [!IMPORTANT]
 > Some columns are common to all tables, like **Primary Name** and **ID**, which are part of the 50 fields indexed by default for all tables, and are not counted for every table.
 
-When you select a table to be indexed for Dataverse search, you can understand the number of fields that will be added to the index.
+When you select a table to be indexed for Dataverse search, you can see the number of fields that will be added to the index.
 
 :::image type="content" source="media/maker-portal3.png" alt-text="Manage search index pane with number of fields highlighted.":::
 

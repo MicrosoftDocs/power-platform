@@ -373,7 +373,7 @@ Follow these instructions to [create an admin trial, check expiry, and extend tr
 
 #### How can admins allow or block trial licenses?
 
-Admins can use PowerShell cmdlets to enable or disable trails. Once disabled, all existing plans of the specified type are removed from all users in the tenant. These aren't recoverable. Additionally, it will block all further assignment of plans of that type. Admins can enable trials at any time.
+Admins can use PowerShell cmdlets to enable or disable trials. Once disabled, all existing plans of the specified type are removed from all users in the tenant. These aren't recoverable. Additionally, it will block all further assignment of plans of that type. Admins can enable trials at any time.
 
 [Learn how to create a trial (subscription-based) environment in the Power Platform admin center](/power-platform/admin/trial-environments#create-a-trial-subscription-based-environment-in-the-power-platform-admin-center).
 
