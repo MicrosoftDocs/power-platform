@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/27/2021
+ms.date: 11/10/2021
 ms.subservice: admin
 ms.author: jimholtz 
 search.audienceType: 
@@ -59,7 +59,7 @@ Use the following methods to free up storage for each of the capacity types.
 > [!WARNING]
 >  If you delete this data, the attachments will no longer be available in customer engagement apps. However, if you have them saved in [!INCLUDE[pn_MS_Outlook_Full](../includes/pn-ms-outlook-full.md)], they will still be there.  
   
-1. Choose **Advanced Find** (![Advanced find button.](media/advanced-find-button2.png)).  
+1. In the upper-right corner, select **Advanced Find** (![Advanced find button.](media/advanced-find-button2.png)).  
   
 2. In the **Look for** list, select **Email Messages**.  
   
@@ -131,7 +131,7 @@ Use the following methods to free up storage for each of the capacity types.
 > [!WARNING]
 >  If you delete this data, notes and their associated attachments will no longer be available in customer engagement apps.  
   
-1. Choose **Advanced Find**.  
+1. In the upper-right corner, select **Advanced Find** (![Advanced find button.](media/advanced-find-button2.png)).  
   
 2. In the **Look for** list, select **Notes**.  
   
@@ -209,8 +209,10 @@ Microsoft is migrating audit logs to a new storage location. Environments whose 
 > [!WARNING]
 >  When you delete an audit log, you can no longer view the audit history for the period covered by that audit log.  
   
-1. [!INCLUDE[proc_settings_auditing](../includes/proc-settings-auditing.md)]  
+1. In the legacy web client, select **Settings** > **Auditing**.
   
+   For [Unified Interface](about-unified-interface.md), select Settings (![Gear button.](media/selection-rule-gear.png "Gear button")) in the upper-right corner > **Advanced Settings** > **Settings** > **Auditing**.
+
 2. In the **Audit** area choose **Audit Log Management**.  
   
 3. Select the oldest audit log, then choose **Delete Logs**.  
@@ -317,7 +319,7 @@ To monitor the status of audit delete jobs, see the next section.
 > [!WARNING]
 >  Some workflows will be in a suspended state because they are waiting for a condition that has not yet been met, which is expected. For example, a workflow may be waiting for a task to be completed.  
   
-1. Choose **Advanced Find**.  
+1. In the upper-right corner, select **Advanced Find** (![Advanced find button.](media/advanced-find-button2.png)).  
   
 2. In the **Look for** list, select **System Jobs**.  
   
