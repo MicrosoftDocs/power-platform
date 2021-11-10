@@ -54,7 +54,7 @@
           href: power-automate-licensing/add-ons.md
       - name: Power Platform licensing FAQs
         href: powerapps-flow-licensing-faq.md
-      - name: Pay-as-you-go plan 
+      - name: "Preview: Pay-as-you-go plan"
         items:
         - name: Overview
           href: pay-as-you-go-overview.md
@@ -935,6 +935,7 @@
         - name: Delete data 
           href: powerapps-gdpr-delete-dsr.md
         - name: Dataverse customer data 
+      # line 938 to 970 - is being reorged but keep until hear from Marty
           href: common-data-service-gdpr-dsr-guide.md
     - name: Datacenter regions
       href: new-datacenter-regions.md
