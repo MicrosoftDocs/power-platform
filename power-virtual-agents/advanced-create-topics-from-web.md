@@ -58,19 +58,19 @@ After the extraction is complete, you'll be shown the suggested topics for furth
 
 1. Select **Topics** on the side navigation pane.
 
-    ![The Topics menu item on the navigation pane](media/menu-topics.png "The Topics menu item on the navigation pane")
+    ![The Topics menu item on the navigation pane.](media/menu-topics.png "The Topics menu item on the navigation pane")
 
 2. Go to the **Suggested** tab. 
 
 3. If it's the first time you're getting suggestions, the list of suggested topics will be blank. A link to **Get started** or **Learn more** appears instead.
 
-    ![An empty Topics page, with a link to Get started or Learn more](media/suggested-web-get.png "An empty Topics page, with a link to Get started or Learn more")
+    ![An empty Topics page, with a link to Get started or Learn more.](media/suggested-web-get.png "An empty Topics page, with a link to Get started or Learn more")
 
 4. Select **Get started** or **Suggest topics**. 
 
-5. Enter links to each webpage or online file from which you want to extract content, and then select **Add**. If you add a link by mistake, you can remove it by selecting **Delete** ![Delete](media/delete-suggested-topic.png).
+5. Enter links to each webpage or online file from which you want to extract content, and then select **Add**. If you add a link by mistake, you can remove it by selecting **Delete** ![Delete.](media/delete-suggested-topic.png).
 
-    ![The Suggest topics page, where you enter URLs to extract suggested topics from](media/suggested-web-wizard.png "The Suggest topics page,where you enter URLs to extract suggested topics from")
+    ![The Suggest topics page, where you enter URLs to extract suggested topics from.](media/suggested-web-wizard.png "The Suggest topics page,where you enter URLs to extract suggested topics from")
 
     
 >[!IMPORTANT]
@@ -81,7 +81,7 @@ After the extraction is complete, you'll be shown the suggested topics for furth
 
 6. When you're done adding links to webpages and/or online files, select **Start**. The process can take several minutes, depending on the complexity and number of webpages or files you added. The message "Getting your suggestions. This may take several minutes" appears at the top of the screen while the extraction is in progress.
 
-    :::image type="content" source="media/suggested-web-wait.png" alt-text="An alert that says Getting your suggestions. This may take several minutes appears at the top of the page":::
+    :::image type="content" source="media/suggested-web-wait.png" alt-text="An alert that says Getting your suggestions. This may take several minutes appears at the top of the page.":::
 
 >[!TIP]
 >You can add multiple webpages and links to online files, but we recommend that you include only a few at a time to keep the list of suggestions manageable.
@@ -95,9 +95,45 @@ The tool provides explicit feedback about errors so that you can understand and 
 
 ![A pop-up window that describes the errors encountered when trying to get suggestions from a web page.](media/suggested-web-error-detail.png "A pop-up window that describes the errors encountered when trying to get suggestions from a web page.")
 
-After you've successfully extracted content, a number of suggestions will appear. You can now review these suggestions to see which ones you want to add to your bot.
+After you've successfully extracted content, a number of suggestions will appear. These may be either [single-turn or multi-turn topics](#single-turn-and-multi-turn-topic-suggestions). You can now review these suggestions to see which ones you want to add to your bot.
 
-![The Suggested tab on the Topics page lists each topic by name, trigger phrase, source, and date it was received](media/suggested-web-topics.png "The Suggested tab on the Topics page lists each topic by name, trigger phrase, source, and date it was received")
+![The Suggested tab on the Topics page lists each topic by name, trigger phrase, source, and date it was received.](media/suggested-web-topics.png "The Suggested tab on the Topics page lists each topic by name, trigger phrase, source, and date it was received")
+
+
+## Single-turn and multi-turn topic suggestions
+
+When Power Virtual Agents extracts content, it generates single-turn or multi-turn topic suggestions, based on the structure of the document. 
+
+
+A **single-turn topic** has a trigger phrase that contains a single answer. Topics such as these are typically generated if your online content has simple "question-and-answer" pairs, such as an FAQ page. 
+
+A **multi-turn topic** contains multiple bot responses, and is often associated with multiple dialog branches.  
+It provides a guided experience for your bot's users to navigate through a problem and reach a solution. These topics are typically generated when your online content is similar to a troubleshooting page or a reference manual or guidebook. 
+
+
+The original content's structure or hierarchy (such as headings and subheadings) will [contribute to whether a multi-turn or single-turn topic is generated](#how-the-ai-creates-topic-suggestions). 
+
+:::image type="content" source="media/advanced-create-topics-from-web/sample-multi-turn-topic.png" alt-text="A screenshot of the preview for a multi-turn topic suggestion showing multiple branches from the original question.":::
+
+
+### How the AI creates topic suggestions
+
+The Power Virtual Agents AI engine applies a number of steps to the content when it extracts topics and generates suggestions. These steps utilize AI to identify and parse visual and semantic cues from the content. 
+
+
+1. *Document parsing:* the Power Virtual Agents engine identifies and extracts the basic components of the document, such as text and image blocks.
+
+2. *Layout understanding:* the document is segmented into different zones that consist of the blocks of content.
+
+3. *Structure understanding:* the logical structure of the content is analyzed by determining the "role" of each zone (for example, what is actual content and what are headings). Power Virtual Agents creates a hierarchical map or "heading tree" of the content, based on the headings and their associated content.
+
+4. *Augmentation:* the Power Virtual Agents AI engine adds context to the tree by analyzing how the headings relate to each other and their content. At this point, it generates single-turn topics from identified simple "question-and-answer" pairs of headings and content.
+
+5. *Dialog generation:* multi-turn topics are generated from the augmented knowledge tree, depending on whether the topic's intent is a simple answer from a group of many, or if the topic has multiple solutions that are equally different, and are chosen based on a user's input or choices.
+
+
+
+
 
 ## Add suggested topics to an existing bot
 
@@ -115,18 +151,18 @@ After the extraction process has been completed, the topic suggestions appear on
 
     c. To completely remove the suggestion, select **Delete suggestion**. The topic will be deleted from the list of suggested topics. You can run the **Suggest topics** command again if you want to restore it.  
 
-    ![An editing window showing a snapshot of the topic's layout](media/suggested-web-add-edit.png)
+    ![An editing window showing a snapshot of the topic's layout.](media/suggested-web-add-edit.png)
 
 1. In the suggested topics list, hover over the name of the suggested topic you want to add or delete. 
 
-    1. To add the topic to your bot, select **Add to topics** ![Add to topics](media/add-to-topics.png). You won't see a preview of the topic and the topic will be moved from the list of **Suggested** topics into **Existing** topics.
+    1. To add the topic to your bot, select **Add to topics** ![Add to topics.](media/add-to-topics.png). You won't see a preview of the topic and the topic will be moved from the list of **Suggested** topics into **Existing** topics.
 
 
-    ![An up arrow icon next to the title of a topic](media/suggested-web-quick.png)
+    ![An up arrow icon next to the title of a topic.](media/suggested-web-quick.png)
     
 2. You can also add or delete multiple topic suggestions at a time. If you select multiple rows, you'll see options to **Add to topic** or **Delete**.
 
-    ![The list has three items selected](media/suggested-web-multi.png)
+    ![The list has three items selected.](media/suggested-web-multi.png)
 
 
 ## Enable topics in your bot
@@ -141,7 +177,7 @@ Suggested topics are added to the **Existing** tab with their status set to **Of
 
 3. For each topic you want to enable, turn on the toggle under **Status**.
 
-    ![A table that lists existing topics, where each topic has a toggle that switches between Off and On in the Status column](media/suggested-enable.png "A table that lists existing topics, where each topic has a toggle that switches between Off and On in the Status column")
+    ![A table that lists existing topics, where each topic has a toggle that switches between Off and On in the Status column.](media/suggested-enable.png "A table that lists existing topics, where each topic has a toggle that switches between Off and On in the Status column")
 
 
 ### See also

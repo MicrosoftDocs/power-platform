@@ -2,13 +2,14 @@
 title: "Use topics to design a chatbot conversation"
 description: "The authoring canvas provides an intuitive, no-code way of creating a bot that can help answer user questions, perform actions, and solve issues."
 keywords: "PVA"
-ms.date: 5/4/2021
+ms.date: 11/01/2021
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt
+ms.reviewer: clmori
 manager: shellyha
-ms.custom: authoring, ceX
+ms.custom: authoring, topics, variables, ceX
 ms.collection: virtual-agent
 searchScope:
   - "Power Virtual Agents"
@@ -48,7 +49,7 @@ For bot and topic limits, see the [Quotas, limits, and configuration values](req
 
 When you create a bot, a number of topics will be automatically created for you.
 
-:::image type="content" source="media/topics-system.png" alt-text="Four lesson topics and a number of system topics are in the Topics list":::
+:::image type="content" source="media/topics-system.png" alt-text="Four lesson topics and a number of system topics are in the Topics list.":::
 
 These are:
   
@@ -62,19 +63,20 @@ You can edit both of these topic types in the same manner as for topics you crea
 
 1. Go to the **Topics** tab on the side navigation pane to open the topics page.
 
-   ![Select Topics on the side navigation menu](media/topics-menu.png "Select Topics on the side navigation menu")
+   ![Select Topics on the side navigation menu.](media/topics-menu.png "Select Topics on the side navigation menu")
 
 1. On the topics page, select **New topic**.
 
-   ![Select New topic at the top of the Topics page](media/topics-new.png "Select New topic at the top of the Topics page")
+   ![Select New topic at the top of the Topics page.](media/topics-new.png "Select New topic at the top of the Topics page")
 
 1. Specify a name, description, and one or more trigger phrases for the topic.
 
    A trigger phrase is a phrase that a customer enters in the chat window to start a conversation with the bot. Once the conversation is started, the conversation follows the path you define. You can specify more than one trigger phrase for a topic. You can include punctuation in a trigger phrase, but it is best to use short phrases rather than long sentences.
 
-   ![The Topic details page contains a name, description, and trigger phrases](media/topics-details-triggers.png "The Topic details page contains a name, description, and trigger phrases")
+   ![The Topic details page contains a name, description, and trigger phrases.](media/topics-details-triggers.png "The Topic details page contains a name, description, and trigger phrases")
 
 1. Select **Save topic** to add the topic to the topics list.
+
 
 
 ## Design the topic's conversation path
@@ -107,12 +109,13 @@ When adding a node after the **Trigger Phrases** node, or between **Message node
 - **Ask a question**
 - **Call an action**
 - **Show a message**
+- **Go to another topic**
 
-:::image type="content" source="media/topics-node-after-triggers.png" alt-text="Add nodes between existing nodes from the options":::
+:::image type="content" source="media/topics-node-after-triggers.png" alt-text="Add nodes between existing nodes from the options.":::
 
 After the last node, you can also:
 
-- **Go to another topic**
+
 - **End the conversation**
 
 
@@ -122,7 +125,7 @@ Additionally, you can **Add a condition** when inserting a node after a **Questi
 
 1. To have the bot ask a question and get a response from the user, select **+** to add a node, and then **Ask a question** to add a new **Question** node.
 
-   ![Add a new question mode](media/topics-question.png "Add a new question mode")
+   ![Add a new question mode.](media/topics-question.png "Add a new question mode")
 
 1. Enter the question phrase in the first text box, **Ask a question**.
 
@@ -146,11 +149,11 @@ Additionally, you can **Add a condition** when inserting a node after a **Questi
 > You can define synonyms for each option. This can help the bot to determine the correct option in case it isn't clear what the user's response should be mapped to.
 > 1. Select the menu icon on the top of the **Question** node, and then select **Options for user**.
 >
->    ![Select options for users](media/topics-question-options.png "Select options for users")
+>    ![Select options for users.](media/topics-question-options.png "Select options for users")
 >
 > 1. Select the **Synonyms** icon for the option you want to add additional keywords to. 
 >
->    ![Select the synonyms icon](media/topics-question-synonyms.png "Select the synonyms icon")
+>    ![Select the synonyms icon.](media/topics-question-synonyms.png "Select the synonyms icon")
 >
 > 1. Add the keywords individually, and then once you're done, select **Done** to return to the **Authoring canvas**.
 
@@ -158,6 +161,7 @@ Additionally, you can **Add a condition** when inserting a node after a **Questi
 
 You can [call Power Automate Flows](advanced-flow.md) and [insert authentication nodes](advanced-end-user-authentication.md) by selecting **Call an action**.
  
+If you have configured hand off to Omnichannel with voice-based capabilities, you'll also see [additional actions](configuration-hand-off-omnichannel.md#voice-based-capabilities).
 
 #### Show a message
 
@@ -168,13 +172,122 @@ You can [call Power Automate Flows](advanced-flow.md) and [insert authentication
    You can also [use variables that you have defined elsewhere](authoring-variables.md) in your bot conversation.
 
 
-#### Go to another topic
+#### Redirect to another topic
 
-1. To automatically have the bot move to a separate topic, select **+** to add a node, and then **Go to another topic**.
+1. To automatically have the bot move to a separate topic, select **+** to add a node, and then **Redirect to another topic**.
 
 1. In the flyout menu, select the topic the bot should divert to. For example, you might want to send the user to a specific topic about the closure of a store if they ask about store hours for that store.
 
-    :::image type="content" source="teams/media/topics-nodes-other-topic-flyout-teams.png" alt-text="Go to another topic node with options for other topics":::
+
+    :::image type="content" source="teams/media/topics-nodes-other-topic-flyout-teams.png" alt-text="Redirect to another topic node with options for other topics.":::
+    
+When you insert a link to redirect to another topic, the bot will go through the conversation path for that topic. 
+
+You can consider the redirected topic as a "subtopic". 
+
+ 
+
+In the authoring canvas for the original topic, you can insert additional nodes under the subtopic's node.
+
+When the path for the subtopic is finished, the bot will return to the original topic. The bot will then follow the nodes that are under the subtopic's node.
+
+:::image type="content" source="media/authoring-create-edit-topics/authoring-subtopic-redirect.png" alt-text="Screenshot of the authoring canvas showing nodes under a redirected topic node.":::
+
+If you redirect to any of the following [system topics](#use-system-and-sample-topics), however, the entire conversation will end:
+
+- End of Conversation
+- Confirmed Success
+- Confirmed Failure
+- Goodbye
+- Escalate
+- Start over (this will also reset any [global variables](authoring-variables-bot.md))
+
+
+#### Passing variables between topics
+When redirecting to other topics, you might want to pass values into variables in the destination topic or get variables back from it. This is especially useful when you already have information that the topic needs and don’t want to have the user answer the question again to obtain the information. This can also be helpful when refactoring and separating your topics into reusable components, and you want to pass variables across the topics.
+
+For more information on using variables generally within Power Virtual Agents, see [Use variables](authoring-variables.md).
+
+>[!NOTE]
+>Variables of type `Custom Entity`, `Date Time`, and `Duration` can't be passed between topics.  
+
+##### Receive values from other topics
+When a topic defines a variable (for example, by a question node), the end user talking to the bot will be asked the question to fill in the variable’s value. If the value has already been acquired by the bot, there is no reason to ask the question again. For these cases, this variable can be defined as **Receive vales from other topics**. When other topics redirect to this topic, it can then pass a variable (or [literal values](authoring-create-edit-topics.md#using-literal-values-on-variable-inputs)) into this variable, and it will skip the question altogether. This leads to a seamless experience for the end user talking to the bot. 
+
+To receive values from other topics, set the variable's property:
+
+1. In the **Question** node, select the variable that you want to receive values from other topics. 
+
+2. In the **Variables properties** pane,  under **Topic (limited scope)** select **Receive values from other topics**.
+
+    :::image type="content" source="media/authoring-create-edit-topics/authoring-subtopic-pass-variable-properties-receive-input.png" alt-text="Screenshot of the authoring canvas showing variable properties pane with receive values selected.":::
+
+3. Save the topic.
+
+4. Go to the other topic which you want to redirect to, and follow the steps in [Redirect to another topic](authoring-create-edit-topics.md#redirect-to-another-topic) to redirect to the correct topic.
+
+5. Select **+ Add input for destination topic**. 
+
+    :::image type="content" source="media/authoring-create-edit-topics/authoring-subtopic-pass-variable-step1.png" alt-text="Screenshot of the authoring canvas showing adding input for destination topic.":::
+
+6. Select the desired variable from the redirected topic that you want to pass the variable to.
+
+    :::image type="content" source="media/authoring-create-edit-topics/authoring-subtopic-pass-variable-step2.png" alt-text="Screenshot of the authoring canvas showing selection of the variable from the redirected topic.":::
+
+7. Under **Enter or select a value**, select the variable from the current topic that you want to pass into the redirected topic.
+
+    :::image type="content" source="media/authoring-create-edit-topics/authoring-subtopic-pass-variable-step3.png" alt-text="Screenshot of the authoring canvas showing selection of variable from the list of options.":::
+
+8. Once selected, the variable will be shown in the redirected node.
+
+    :::image type="content" source="media/authoring-create-edit-topics/authoring-subtopic-pass-variable-step4.png" alt-text="Screenshot of the authoring canvas showing the variable being passed into the redirect node.":::
+
+
+##### Return values to original topics
+
+When a topic asks a question (or otherwise obtains a variable from an action), this variable can be returned to the original topic that redirected to it. 
+
+In this case, the variable also becomes part of the original topic and can be used as any other variable. This helps you construct the topic so that information obtained by the bot is used across topics. This also reduces the need for global variables.
+
+To return a variable to the original topic, set the variable's property:
+
+1. In the **Question** node, select the variable that you want to receive values from other topics. 
+
+2. In the **Variables properties** pane, under **Topic (limited scope)** select **Return values to original topics**.
+
+    :::image type="content" source="media/authoring-create-edit-topics/authoring-subtopic-pass-variable-properties-return-value.png" alt-text="Screenshot of the authoring canvas showing variable properties pane with return values selected.":::
+
+3. Save the topic.
+
+4. Go to the other topic which you want to redirect to, and follow the steps in [Redirect to another topic](authoring-create-edit-topics.md#redirect-to-another-topic) to redirect to the correct topic.
+
+5. The variable that's being returned to the topic is shown in the redirected topic.
+
+6. Use the returned variable in your topic.
+
+    :::image type="content" source="media/authoring-create-edit-topics/authoring-subtopic-pass-variable-pass-receive.png" alt-text="Screenshot of the authoring canvas showing redirect topic with both values input and returned.":::
+
+##### Using the variables pane
+
+You can also use the **Variables** pane to select the receive or return status of multiple variables at once:
+
+1. On the topic's menu bar, select **Variables**.
+
+    :::image type="content" source="media/authoring-create-edit-topics/authoring-subtopic-pass-variable-variables-bar.png" alt-text="Screenshot of the authoring canvas showing the variables pane icon.":::
+
+2. Select whether you want the values to be passed in or out (or both) between topics for each of the variables in the topic.
+
+    :::image type="content" source="media/authoring-create-edit-topics/authoring-subtopic-pass-variable-variable-return-value.png" alt-text="Screenshot of the authoring canvas showing variable pane with two variables and a combination of input and output selected.":::
+
+
+##### Using literal values on variable inputs
+
+When passing a variable into a topic, you can also pass in literal values instead of a variable. Type the value intended to be passed in directly into the redirect node input.
+
+To pass a literal value, type the value you want to use as the input instead of selecting a variable.
+
+:::image type="content" source="media/authoring-create-edit-topics/authoring-subtopic-pass-variable-literal-value.png" alt-text="Screenshot of the authoring canvas showing literal input on an input variable in a redirect note":::
+ 
 
 #### End the conversation
 
@@ -184,15 +297,15 @@ You can also have the conversation [handed over to a live agent](advanced-hand-o
 
 1. At the end of a response that resolves the user's issue or answers the question, select **End the conversation**.
 
-    ![End the conversation](media/topics-nodes-end.png "End the conversation")
+    ![End the conversation.](media/topics-nodes-end.png "End the conversation")
 
 1. To end with a customer satisfaction survey, select **End with survey**.
     
-    ![End with survey](media/topics-nodes-survey.png "End with survey")
+    ![End with survey.](media/topics-nodes-survey.png "End with survey")
 
 1. Select **Transfer To Agent** to insert a hand-off node that will link with your [configured hand-off product](configuration-hand-off-omnichannel.md). You can also enter a private message to the agent.
 
-    ![Transfer To Agent](media/topics-nodes-handoff.png "Transfer To Agent")
+    ![Transfer To Agent.](media/topics-nodes-handoff.png "Transfer To Agent")
 
 
 #### Add a condition
@@ -201,7 +314,7 @@ You can also have the conversation [handed over to a live agent](advanced-hand-o
 
 1. Choose the variable you want to use to determine if the bot conversation should branch at this point. For example, if you have set up [end-user authentication](advanced-end-user-authentication.md), then you might want to specify a different message if the user is signed on (which may have happened earlier in the conversation).
 
-    ![Choose a variable](media/topics-branch.png "Choose a variable")
+    ![Choose a variable.](media/topics-branch.png "Choose a variable")
 
 ### Delete nodes
 
@@ -209,7 +322,7 @@ You can also have the conversation [handed over to a live agent](advanced-hand-o
 
 1. Select **Delete**.
 
-    ![Select the menu icon and then the delete button](media/topics-delete.png "Select the menu icon and then the delete button")
+    ![Select the menu icon and then the delete button.](media/topics-delete.png "Select the menu icon and then the delete button")
 
 ## Test and publish your bot
 

@@ -1,11 +1,12 @@
 ---
-title: "Enable or disable security for a field  | MicrosoftDocs"
-description: Enable or disable security for a field 
+title: "Enable or disable field-level security"
+description: "Power Platform's field-level security lets you set which fields users can see or edit. Follow these steps to enable or disable security for a field."
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/17/2021
 author: jimholtz
+ms.subservice: admin
 ms.author: jimholtz
 ms.reviewer: jimholtz
 ms.custom: "admin-security"
@@ -28,7 +29,7 @@ Field-level security lets you set which fields users can see or edit. For exampl
 > [!NOTE]
 >  You can't change the permissions on a field that you don't have permission to access.  
 
-1. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
+1. In the web app, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
 
 2. Select **Settings** > **Customizations**.
 

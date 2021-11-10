@@ -52,11 +52,11 @@ You can change the bot's name and icon. This will affect the icon in all channel
 
 1. Select **Manage** on the side navigation pane, and then go to the **Details** tab.
 
-2. Change the bot's name and icon. [Review the recommendations on Microsoft Teams icon formats](https://review.docs.microsoft.com/microsoftteams/platform/resources/schema/manifest-schema#icons)
+2. Change the bot's name and icon. [Review the recommendations on Microsoft Teams icon formats](/microsoftteams/platform/resources/schema/manifest-schema#icons)
 
 3. Select **Save** to commit your changes.
 
-    :::image type="content" source="media/custom-canvas-name-icon.png" alt-text="The bot details pane lets you change the name and icon":::
+    :::image type="content" source="media/custom-canvas-name-icon.png" alt-text="The bot details pane lets you change the name and icon.":::
 
 ## Retrieve bot ID and tenant ID details
 
@@ -181,7 +181,7 @@ Once you get the customized canvas working with your bot, you can make changes t
 
 You can use the JavaScript `styleOptions` options to configure a number of pre-defined styles. 
 
-The [defaultStyleOptions.js file](https://github.com/Microsoft/BotFramework-WebChat/blob/master/packages/component/src/Styles/defaultStyleOptions.js) is available on our GitHub repo and contains the full list of all settings that you can modify. For more information on what you can customize and how it will look, see [Web Chat customization](/azure/bot-service/bot-builder-webchat-customization?view=azure-bot-service-4.0&preserve-view=true).
+See [Web Chat customization](/azure/bot-service/bot-builder-webchat-customization?view=azure-bot-service-4.0&preserve-view=true) for links to the defaultStyleOptions.js file and more information on what you can customize and how it will look.
 
 
 **To change the bot icon**
@@ -249,11 +249,11 @@ We recommend starting with one of these samples custom-built to work with Power 
 
 * [Full bundle](https://github.com/microsoft/PowerVirtualAgentsSamples/tree/master/BuildYourOwnCanvasSamples/1.starter-full-bundle) is a custom canvas capable of showing all rich content from Power Virtual Agents. For example:
 
-  ![Full bundle custom canvas](media/custom-canvas-full-bundle.png)
+  ![Full bundle custom canvas.](media/custom-canvas-full-bundle.png)
 
 * [Location and file uploading](https://github.com/microsoft/PowerVirtualAgentsSamples/tree/master/BuildYourOwnCanvasSamples/2.location-and-file-uploading) is a custom canvas capable of getting a user's location and sending it to a bot using Power Virtual Agents. For example:
 
-  ![Location and file uploading custom canvas](media/custom-canvas-location-file-upload.png)
+  ![Location and file uploading custom canvas.](media/custom-canvas-location-file-upload.png)
 
 Or you can pick from [other sample web chat canvases](https://github.com/microsoft/BotFramework-WebChat/#samples-list) provided by Bot Framework.
 

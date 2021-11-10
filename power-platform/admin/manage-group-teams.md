@@ -1,12 +1,14 @@
 ---
 title: "Manage group teams  | MicrosoftDocs"
 description: About managing group teams 
-author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/17/2021
-ms.author: jimholtz
+ms.date: 10/13/2021
+author: paulliew
+ms.subservice: admin
+ms.author: paulliew
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:
@@ -33,7 +35,7 @@ Both types of Azure AD groups—Office and Security—can be used to secure user
 
 Both types of Azure AD groups — Office and Security — with a Membership type *Assigned* can be used to secure user-access rights. Membership type *Dynamic User* and *Dynamic Device* is not supported. Using groups lets administrators assign a security role with its respective privileges to all the members of the group, instead of having to provide the access rights to an individual team member.
 
-The administrator can create Azure AD group teams that are associated to the Azure AD groups in each of the Dataverse environments and assign a security role to these group teams. For each Azure AD group, the administrator can create group teams based on the Azure AD group membership types. The administrator can create separate group teams for owners, members, guests and members, and guests, and assign a respective security role to each of these teams.
+The administrator can create Azure AD group teams that are associated to the Azure AD groups in each of the Dataverse environments and assign a security role to these group teams. For each Azure AD group, the administrator can create group teams based on the Azure AD group **Members**, and/or **Owners**, or **Guests**. For each Azure AD group, an administrator can create separate group teams for owners, members, guests and members, and guests, and assign a respective security role to each of these teams.
 
 When members of these group teams access these environments, their access rights are automatically granted based on the group team's security role.
 
@@ -82,7 +84,7 @@ For more information, see [Assign a record to a user or team](/powerapps/user/as
    2. Obtain the Azure AD Group's **ObjectID** from your https://portal.azure.com site.
    3. Create a custom security role that contains privileges per your team's collaboration requirement. Please see the discussion of [member's inherited privileges](security-roles-privileges.md#team-members-privilege-inheritance) if you need to extend the team member's privileges directly to a user.
 
-2. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
+2. In the web app, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
 
 3. Select **Settings** > **Security**. In Microsoft Dynamics 365 for Outlook, go to **Settings** > **System** > **Security**.
 
@@ -102,14 +104,14 @@ For more information, see [Assign a record to a user or team](/powerapps/user/as
 
 11. Enter the respective Azure AD **ObjectID** of the Azure AD Security or Office group.
 
-12. Select **Membership Type**, and then one of the following:
+12. Open the **Membership Type** dropdown, and then select one of the following:
   
     - **Members and guests**
     - **Members**
     - **Owners**
     - **Guests**
 
-    The Azure AD group members from the selected membership type will be mapped to the group team when the member accesses the system.   
+    The Azure AD group **Members**, **Owners**, **Guests**, or **Members and guests** from the selected Dataverse membership type will be mapped to the group team when the member accesses the system.   
 
 13. Select **Save**. 
     
@@ -123,7 +125,7 @@ For more information, see [Assign a record to a user or team](/powerapps/user/as
    - Follow the steps in [View your user profile](/powerapps/user/view-your-user-profile).
    - Don't have the correct permissions? Contact your system administrator.
 
-2. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
+2. In the web app, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
 
 3. Select **Settings** > **Security**. In Dynamics 365 for Outlook, go to **Settings** > **System** > **Security**.
 
@@ -136,17 +138,20 @@ For more information, see [Assign a record to a user or team](/powerapps/user/as
 7. On the Actions toolbar, select **Edit**, change the desired fields (Membership Type cannot be updated), and then select **Save**.
 
 > [!NOTE]
-> - You can only create one group team for each Azure AD group membership type per environment, and the Azure AD ObjectId of the group team cannot be edited once the group team is created.
-> - Membership Type cannot be changed after the group team is created.  If you need to update this field, you will need to delete the group team and create a new one.
+> - You can create up to four Dataverse group teams - one for each Azure AD group **Members**, **Owners**, **Guests**, or **Members and guests** per environment, and the Azure AD ObjectId of the group team cannot be edited once the group team is created.
+> - The Dataverse Membership Type cannot be changed after the group team is created.  If you need to update this field, you will need to delete the group team and create a new one.
 > - All existing group teams created prior to the new **Membership Type** field being added are automatically updated as **Members and guests**. There is no loss in functionality with these group teams as the default group team is mapped to the Azure AD Group **Members and guests** membership type. 
 > - If your environment has a security group, you will need to add the group team's Azure AD group as a member of that security group in order for the group team's users to be able to access the environment.
-> - **The list of team members listed in each group team only displays the user members who have accessed the environment.** This list doesn't show all the group members of the Azure AD group. The team member's privileges are derived dynamically at run-time when the team member accesses the application. The security role of the team is not assigned directly to the team member. Since team member's privileges are derived dynamically at run-time, the team member's Azure AD group memberships are cached upon the team member's log-in.  This means that any Azure AD group membership maintenance done on the team member in Azure AD will not be reflected until the next time the team member logs in or when the system refreshes the cache (after 8 hours of continuous log-in).
+> - **The list of team members listed in each group team only displays the user members who have accessed the environment.** This list doesn't show all the group members of the Azure AD group. When an Azure AD group member accesses the environment, the group member is added to the group team. The team member's privileges are derived dynamically at run-time by inheriting the group team's security role. Since the security role is assigned to the group team and the group team member inherits the privileges, the security role is not assigned directly to the group team member. Due to the team member's privileges being derived dynamically at run-time, the team member's Azure AD group memberships are cached upon the team member's log-in.  This means that any Azure AD group membership maintenance done on the team member in Azure AD will not be reflected until the next time the team member logs in or when the system refreshes the cache (after 8 hours of continuous log-in).
 > - **Azure AD group members are also added to the group team with [impersonation calls](/powerapps/developer/common-data-service/impersonate-another-user)**. You can use create group members in the group team on behalf of another user using impersonation. 
 > - Team members are maintained in each group team at run-time and the operation is done at the database level; therefore, the update to group team event is not available for plugin.
 > - You do not need to assign team members with an individual security role if your group team's security role has a [member's privilege inheritance](security-roles-privileges.md#team-members-privilege-inheritance) and the security role contains at least one privilege that has User level permission.
 
 ### See also
-[Manage teams](manage-teams.md)
+[Manage teams](manage-teams.md) <br />
+[Video: Azure Active Directory group membership](https://youtu.be/GW2Rz53BX6o) 
+
+
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

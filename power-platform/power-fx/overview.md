@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.topic: conceptual
 ms.reviewer: nabuthuk
 ms.date: 02/26/2021
+ms.subservice: power-fx
 ms.author: gregli
 search.audienceType: 
   - maker
@@ -57,7 +58,7 @@ Power Fx takes this a step further. An expression by itself says nothing about w
 For example, this [formula from Stack Overflow](https://stackoverflow.com/questions/350264/how-can-i-perform-a-reverse-string-search-in-excel-without-using-vba) searches a string in reverse order. In Excel, it looks like the following image.
 
 > [!div class="mx-imgBorder"]
-> ![Reverse search](media/overview/reverse-search-excel.png "Reverse search")
+> ![Reverse search.](media/overview/reverse-search-excel.png "Reverse search")
 
 Screenshot of a formula bar in Excel with the formula:
 =RIGHT(A1,LEN(A1)-
@@ -65,12 +66,11 @@ FIND("|",
 SUBSTITUTE(A1," ","|",
 LEN(A1)-LEN(SUBSTITUTE(A1," ",""))))
 Cell A1 contains the text "Hello, World! It is great to meet you!" Cell A2 contains the text "you!"
-:::image-end:::
 
 Power Fx works with this same formula, with the cell references replaced with control property references:
 
 > [!div class="mx-imgBorder"]
-> ![Power Fx reverse search](media/overview/reverse-search-power-apps.gif "Power Fx reverse search")
+> ![Power Fx reverse search.](media/overview/reverse-search-power-apps.gif "Power Fx reverse search")
 
 Screenshot of a Power Fx formula bar in Power Apps. The formula is
 =RIGHT(Input.Text,Len(Input.Text)-
@@ -78,21 +78,20 @@ FIND("|",
 SUBSTITUTE(Input.text," ","|",
 Len(Input.Text)-Len(Substitute(Input.Text," ",""))))
 In the Input box below the formula, the text "Hello, World! It is great to meet you!" appears, letter by letter. At the same time in the Label box, the letters of the last word appear. When the full text appears in the Input box, the word "you!" appears in the Label box.
-:::image-end:::
 
 As the `Input` control value is changed, the `Label` control automatically recalculates the formula and shows the new value. There are no `OnChange` event handlers here, as would be common in other languages.
 
 Another example that uses a formula for the `Fill` color of the screen. As the sliders that control Red, Green, and Blue are changed, the background color automatically changes as it's being recalculated.
 
 > [!div class="mx-imgBorder"]
-> ![Color slider](media/overview/color-sliders-power-apps.gif "Color slider")
+> ![Color slider.](media/overview/color-sliders-power-apps.gif "Color slider")
 
 There are no `OnChange` events for the slider controls, as would be common in other languages. There's no way to explicitly set the `Fill` property value at all. If the color isn't working as expected, you need to look at this one formula to understand why it isn't working. You don't need to search through the app to find a piece of code that sets the property at an unexpected time; there is no time element. The correct formula values are always maintained.
 
 As the sliders are set to a dark color, the labels for Red, Green, and Blue change to white to compensate. This is done through a simple formula on the `Color` property for each label control.
 
 > [!div class="mx-imgBorder"]
-> ![Power Fx color sliders](media/overview/color-sliders-power-apps-labels.png "Power Fx color sliders")
+> ![Power Fx color sliders.](media/overview/color-sliders-power-apps-labels.png "Power Fx color sliders")
 
 What's great about this is that it's isolated from what's happening for the `Fill` color: these are two entirely different calculations. Instead of large monolithic procedures, Power Fx logic is typically made up of lots of smaller formulas that are independent. This makes them easier to understand and enables enhancements without disturbing existing logic.
 
@@ -107,7 +106,7 @@ The same thing is implemented with Power Fx. An incremental compiler is used to 
 In the animation below, the order number is displayed in a label control dependent on the slider control, even though there are two errors on the labels below it. The app is very much alive and interactive. The first attempt at fixing the formula by entering `.InvalidName` results in an immediate red line and error displayed, as it should, but the app keeps running.
 
 > [!div class="mx-imgBorder"]
-> ![Always live](media/overview/always-live.gif "Always live")
+> ![Always live.](media/overview/always-live.gif "Always live")
 
 When `.Employee` is entered, this causes the `Data` pane to add the Employees table, metadata for this table is retrieved, and suggestions for columns are immediately offered. We just walked across a relationship from one table to another, and the system made the needed adjustments to the app's references. The same thing happens when adding a `.Customer`.
 
@@ -120,7 +119,7 @@ Power Fx describes business logic in concise, yet powerful, formulas. Most logic
 For example, to look up the first name of an employee for an order, you write the Power Fx as shown in the following animation. Beyond Excel concepts, the only added concept used here is the dot **"."** notation for drilling into a data structure, in this case `.Employee.'First Name'`. The animation shows the mapping between the parts of the Power Fx formula and the concepts that need to be explicitly coded in the equivalent JavaScript.
 
 > [!div class="mx-imgBorder"]
-> ![Low-code JavaScript](media/overview/low-code-javascript.gif "Low-code JavaScript")
+> ![Low-code JavaScript.](media/overview/low-code-javascript.gif "Low-code JavaScript")
 
 Let's look more in-depth at all the things that Power Fx is doing for us and the freedom it has to optimize because the formula was declarative:
 
@@ -147,12 +146,12 @@ You don't have to read and write Power Fx to start expressing logic. There are l
 Let's take a look at some examples. In Power Apps, the property panel provides no-code switches and knobs for the properties of the controls. In practice, most property values are static. You can use the color builder to change the background color of the `Gallery`. Notice that the formula bar reflects this change, updating the formula to a different `RGBA` call. At any time, you can go to the formula bar and take this a step further&mdash;in this example, by using `ColorFade` to adjust the color. The color property still appears in the properties panel, but an **fx** icon appears on hover and you're directed to the formula bar. This fully works in two ways: removing the `ColorFade` call returns the color to something the property panel can understand, and you can use it again to set a color.
 
 > [!div class="mx-imgBorder"]
-> ![No-code color](media/overview/no-code-color.gif "No-code color")
+> ![No-code color.](media/overview/no-code-color.gif "No-code color")
 
 Here's a more complicated example. The gallery shows a list of employees from Dataverse. Dataverse provides views over table data. We can select one of these views and the formula is changed to use the `Filter` function with this view name. The two drop-down menus can be used to dial in the correct table and view without touching the formula bar. But let's say you want to go further and add a sort. We can do that in the formula bar, and the property panel again shows an fx icon and directs modifications to the formula bar. And again, if we simplify the formula to something the property panel can read and write, it again can be used.
 
 > [!div class="mx-imgBorder"]
-> ![No-code sort](media/overview/no-code-sort.gif "No-code sort")
+> ![No-code sort.](media/overview/no-code-sort.gif "No-code sort")
 
 These have been simple examples. We believe Power Fx makes a great language for describing no-code interactions. It is concise, powerful, and easy to parse, and provides the headroom that is so often needed with "no cliffs" up to low-code.
 
@@ -163,10 +162,10 @@ Low-code makers sometimes build things that require the help of an expert or are
 Professionals want to use professional tools to be most productive. Power Fx formulas can be stored in [YAML source files](yaml-formula-grammar.md), which are easy to edit with Visual Studio Code, Visual Studio, or any other text editor and enable Power Fx to be put under source control with GitHub, Azure DevOps, or any other source code control system.
 
 > [!div class="mx-imgBorder"]
-> ![Pro code Visual Studio Code](media/overview/pro-code-vscode.gif "Pro code Visual Studio Code")
+> ![Pro code Visual Studio Code.](media/overview/pro-code-vscode.gif "Pro code Visual Studio Code")
 
 > [!div class="mx-imgBorder"]
-> ![Pro code GitHub](media/overview/pro-code-github.gif "Pro code GitHub")
+> ![Pro code GitHub.](media/overview/pro-code-github.gif "Pro code GitHub")
 
 Power Fx supports formula-based components for sharing and reuse. We announced support for parameters to component properties, enabling the creation of pure user-defined functions with more enhancements on the way.
 
@@ -251,13 +250,13 @@ A language version stamp is included with every Power Fx document that's saved. 
 
 For example, we introduced the `ShowError` function to display an error banner with a red background. 
 
-![Show error](media/overview/showerror-2018.png "Show error")
+![Show error.](media/overview/showerror-2018.png "Show error")
 
 Users loved it, but they also asked us for a way to show a success banner (green background) or an informational banner (blue background). So, we came up with a more generic `Notify` function that takes a second argument for the kind of notification. We could have just added `Notify` and kept `ShowError` the way it was, but instead we replaced `ShowError` with `Notify`. We removed a function that had previously been in production and replaced it with something else. Because there would have been two ways to do the same thing, this would have caused confusion&mdash;especially for new users&mdash;and, most importantly it would have added complexity. Nobody complained, everybody appreciated the change and then moved on to their next Notify feature.
 
 This is how the same app looks when loaded into the latest version of Power Apps. No action was required by the user to make this transformation happen, it occurred automatically when the app was opened.
 
-![Notify function replaces ShowError](media/overview/showerror-2021.png "New show error")
+![Notify function replaces ShowError.](media/overview/showerror-2021.png "New show error")
 
 With this facility, Power Fx can evolve faster and more aggressively than most programming languages.
 

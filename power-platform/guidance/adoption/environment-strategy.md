@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/09/2020
+ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -107,11 +108,11 @@ In addition to the above recommendations, establishing your environment strategy
 
 | | |
 |---|---|
-| Everyone is a maker. Communicate with everyone that **Default** isn't for development of critical apps | ![Default environment](media/env-default.png "Default environment") |
-| Only one user has access. **Developer** environments are completely locked for any other user except the user who subscribed to the community plan. Applications can be moved out of the environment if needed.| ![Developer environment](media/env-dev.png "Default Developer") |  |
-| Approved users have access. **Shared** environments for user and team productivity scenarios, with an approved maker list. | ![Power User and Power Dev environment](media/env-power.png "Power User and Power Dev Developer") |
-| **Dedicated** environments for critical projects and workloads. Developers have environment maker access in the development environment, but only user access in the test and production environments. End users only have end user access to the production solution so no one can modify the production applications. | ![Critical Project Development, Test and Production environments](media/env-critical.png "Critical Project Development, Test and Production environments") |
-| **Shared** test and production environments for important but medium complex apps. Individual projects and business units have their own development environment to protect data, but solutions are deployed to shared test and production environments. Developers are end users in the test environment, and end users only have basic user access to solutions and data in the production environment. | ![Business Unit and Project Development environments, with shared test and production environments](media/env-important.png "Business Unit and Project Development environments, with shared test and production environments") |
+| Everyone is a maker. Communicate with everyone that **Default** isn't for development of critical apps | ![Default environment.](media/env-default.png "Default environment") |
+| Only one user has access. **Developer** environments are completely locked for any other user except the user who subscribed to the community plan. Applications can be moved out of the environment if needed.| ![Developer environment.](media/env-dev.png "Default Developer") |  |
+| Approved users have access. **Shared** environments for user and team productivity scenarios, with an approved maker list. | ![Power User and Power Dev environment.](media/env-power.png "Power User and Power Dev Developer") |
+| **Dedicated** environments for critical projects and workloads. Developers have environment maker access in the development environment, but only user access in the test and production environments. End users only have end user access to the production solution so no one can modify the production applications. | ![Critical Project Development, Test and Production environments.](media/env-critical.png "Critical Project Development, Test and Production environments") |
+| **Shared** test and production environments for important but medium complex apps. Individual projects and business units have their own development environment to protect data, but solutions are deployed to shared test and production environments. Developers are end users in the test environment, and end users only have basic user access to solutions and data in the production environment. | ![Business Unit and Project Development environments, with shared test and production environments.](media/env-important.png "Business Unit and Project Development environments, with shared test and production environments") |
 
 <font color="#ffc000">&#9679;</font> Critical Project<br>
 <font color="#92D050">&#9679;</font> Important Project<br>
@@ -162,9 +163,9 @@ Some factors influence when to provision which types of environments:
 
     | | |
     |:---:|---|
-    | ![Critical apps](media/env-l1.png "Critical apps") | Mission-critical scenarios and/or high-complexity and/or org-wide usage. Support owned by IT. Robust ALM process (dev/test/prod). Longer development cycle, often greater than 3 months to minimum viable product.
-     | ![Important apps](media/env-l2.png "Important apps") | Important but not critical and/or medium complexity and/or scoped to business unit. Support owned by app owner or business unit, blessed by IT. ALM-using environments are advised but might not be necessary. Development typically less than three months to Minimum Viable Product.
-    | ![Productivity apps](media/env-l3.png "Productivity apps") | Productivity app that doesn't need high level of governance. Support by app developer. Typically, application lifecycle management isn't necessary. Less than two weeks to minimum viable product.
+    | ![Critical apps.](media/env-l1.png "Critical apps") | Mission-critical scenarios and/or high-complexity and/or org-wide usage. Support owned by IT. Robust ALM process (dev/test/prod). Longer development cycle, often greater than 3 months to minimum viable product.
+     | ![Important apps.](media/env-l2.png "Important apps") | Important but not critical and/or medium complexity and/or scoped to business unit. Support owned by app owner or business unit, blessed by IT. ALM-using environments are advised but might not be necessary. Development typically less than three months to Minimum Viable Product.
+    | ![Productivity apps.](media/env-l3.png "Productivity apps") | Productivity app that doesn't need high level of governance. Support by app developer. Typically, application lifecycle management isn't necessary. Less than two weeks to minimum viable product.
 
 - **Capacity**
 

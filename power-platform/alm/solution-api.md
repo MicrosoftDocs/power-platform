@@ -3,6 +3,7 @@ title: "Work with solutions using the SDK APIs | Microsoft Docs"
 description: "Learn about the APIs that are available to manage Microsoft Dataverse solutions."
 keywords: 
 author: mikkelsen2000
+ms.subservice: alm
 ms.author: pemikkel
 manager: kvivek
 ms.custom: ""
@@ -63,7 +64,7 @@ Publisher _myPublisher = new Publisher
    UniqueName = "contoso-publisher",
    FriendlyName = "Contoso publisher",
    SupportingWebsiteUrl =
-      "https://docs.microsoft.com/powerapps/developer/common-data-service/overview",
+      "https://docs.microsoft.com/powerapps/developer/data-platform/overview",
    CustomizationPrefix = "contoso",
    EMailAddress = "someone@contoso.com",
    Description = "This publisher was created from sample code"

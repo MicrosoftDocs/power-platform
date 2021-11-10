@@ -3,6 +3,7 @@ title: "Solution concepts | Microsoft Docs"
 description: "Learn about solutions in Power Apps, Power Automate, and Power Virtual Agents"
 keywords: 
 author: Mattp123
+ms.subservice: alm
 ms.author: matp
 manager: kvivek
 ms.custom: ""
@@ -51,7 +52,7 @@ Makers and developers work in development environments using unmanaged
 solutions, then import them to other downstream environments&mdash;such as test&mdash;as
 managed solutions.
 
-![Distribute a solution from dev to test environments](media/dev-to-test-alm.png "Distribute a solution from dev to test environments")
+![Distribute a solution from dev to test environments.](media/dev-to-test-alm.png "Distribute a solution from dev to test environments")
 
 > [!NOTE]
 > When you customize in the development environment, you're working in
@@ -65,7 +66,7 @@ managed solutions.
 A component represents something that you can potentially customize. Anything that can be included in a solution is a component. To view the components included in a solution, open the solution you want. The components are listed in the **Components** list.
 
 > [!div class="mx-imgBorder"] 
-> ![Components in solution](media/components-in-solution.png "Components in solution") 
+> ![Components in solution.](media/components-in-solution.png "Components in solution") 
 
 > [!NOTE]
 > You can't edit components directly within a managed solution.
@@ -107,7 +108,7 @@ Every app and other solution components such as entities you create or any custo
 > are known as the *Common Data Service Default Solution* and the *Default* solutions.
 > More information: [Default Solution and Common Data Service Default Solution](use-solutions-for-your-customizations.md)
 
-The publisher of a solution where a component is created is considered the owner of that component. The owner of a component controls what changes other publishers of solutions including that component are allowed to make or restricted from making. It is possible to move the ownership of a component from one solution to another within the same publisher, but not across publishers. Because of this, it's often best to define a single publisher so you can change the layering model across publishers later.
+The publisher of a solution where a component is created is considered the owner of that component. The owner of a component controls what changes other publishers of solutions including that component are allowed to make or restricted from making. It is possible to move the ownership of a component from one solution to another within the same publisher, but not across publishers. Once you introduce a publisher for a component in a managed solution, you can’t change the publisher for the component. Because of this, it's best to define a single publisher so you can change the layering model across solutions later.
 
 The solution publisher specifies who developed the app. For this reason, you
 should create a solution publisher name that's meaningful.
@@ -117,7 +118,7 @@ should create a solution publisher name that's meaningful.
 A solution publisher includes a prefix. The publisher prefix is a mechanism to help avoid naming collisions. This allows for solutions from different publishers to be installed in an environment with few conflicts. For example, the Contoso solution displayed here includes a solution publisher prefix of *contoso*.
 
 > [!div class="mx-imgBorder"]
-> ![Solution publisher prefix example](media/solution-publisher-prefix.png "Solution publisher prefix example")
+> ![Solution publisher prefix example.](media/solution-publisher-prefix.png "Solution publisher prefix example")
 
 > [!NOTE]
 > When you change a solution publisher prefix, you should do it before

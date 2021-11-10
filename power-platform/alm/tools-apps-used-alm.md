@@ -3,6 +3,7 @@ title: "Overview of tools and apps used with application lifecycle management (A
 description: "Learn about the tools and apps used with application lifecycle management (ALM) in Microsoft Power Platform."
 keywords: 
 author: Mattp123
+ms.subservice: alm
 ms.author: matp
 manager: kvivek
 ms.custom: ""
@@ -95,11 +96,11 @@ Solution Packager is a tool that can unpack a compressed solution file into
 multiple XML files and other files, so they can be easily managed by
 a source control system. More information: [Use the Solution Packager tool to compress and extract a solution file](solution-packager-tool.md)
 
-## Power Apps CLI
+## Power Platform CLI
 
-Microsoft Power Apps CLI is a simple, single-stop developer command-line
+Microsoft Power Platform CLI is a simple, single-stop developer command-line
 interface that empowers developers and app makers to create code components.
-More information: [What is Microsoft Power Apps CLI?](/powerapps/developer/common-data-service/powerapps-cli)
+More information: [What is Microsoft Power Platform CLI?](/powerapps/developer/common-data-service/powerapps-cli)
 
 ## PowerShell modules
 

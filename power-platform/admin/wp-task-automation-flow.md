@@ -6,6 +6,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/12/2020
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -36,7 +37,7 @@ One of the unique things about Power Automate is you can use it to manage itself
 *List new Microsoft Flow connectors* is a simple template you can get started with right away. It triggers daily on schedule, and uses the Power Automate Management connector to get a list of the connections in the environment and sends you an email. You can add it to your flows quickly using the template at https://us.flow.microsoft.com/galleries/public/templates/5a6ef26db3b749ed88b7afb377d11ecf/list-new-microsoft-flow-connectors/.
 
 > [!div class="mx-imgBorder"] 
-> ![List new connectors](media/list-new-flow-connectors.png "List new connectors")
+> ![List new connectors.](media/list-new-flow-connectors.png "List new connectors")
 
 If you want to try building it yourself, here is a good walkthrough of creating the flow from scratch: https://flow.microsoft.com/blog/new-flow-connector-notifications/
 

@@ -1,12 +1,14 @@
 ---
 title: "About on-premises gateways  | Microsoft Docs"
 description: About on-premises gateway
-author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 10/22/2020
-ms.author: jimholtz
+author: arthiriyer
+ms.subservice: admin
+ms.author: arthii
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:
@@ -20,7 +22,7 @@ search.app:
 The on-premises gateway allows Power Apps and Power Automate to reach back to on-premises resources to support hybrid integration scenarios. The gateway enables Azure Service Bus relay technology to securely allow access to on-premises resources.
 
 > [!div class="mx-imgBorder"] 
-> ![On-premises data gateway](media/onpremises-data-gateway.png "On-premises data gateway")
+> ![On-premises data gateway.](media/onpremises-data-gateway.png "On-premises data gateway")
 
 ## Gateway on-premises install
 

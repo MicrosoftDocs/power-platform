@@ -5,7 +5,8 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/08/2020
+ms.date: 07/16/2021
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -18,9 +19,6 @@ search.app:
 # Manage transactions with multiple currencies
 
 Currencies determine the prices for products in the product catalog and the cost of transactions, such as sales orders. If your customers are spread across geographies, add their currencies to manage your transactions. Add the currencies that are most appropriate for your current and future business needs.  
-
-> [!NOTE]
-> If your environment is a [Microsoft Dataverse environment](/powerapps/maker/common-data-service/data-platform-intro), you are in the Power Platform admin center, and you select the **Currencies** page (**Environments** > [select environment] > **Settings** > **Business** > **Currencies**), the page will be blank. This is because setting a currency is not supported in Dataverse environments.
 
 ## Add a currency 
 
@@ -45,7 +43,7 @@ Currencies determine the prices for products in the product catalog and the cost
 
    |          Field          |                                                                                                                                                                                                                                                                                                                                                                            Description                                                                                                                                                                                                                                                                                                                                                                            |
    |-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-   |    **Currency Type**    | - **System** - Select this option if you want to use the currencies available in customer engagement apps (such as Dynamics 365 Sales and Customer Service). To search for a currency,  select the **Lookup** button ![Lookup button](../admin/media/lookup-button-4.png "Lookup button") next to **Currency Code**. When you select a currency code, **Currency Name** and **Currency Symbol** are automatically added for the selected currency.<br />- **Custom** - Select this option if you want to add a currency that's not available in customer engagement apps. In this case, you must manually enter the values for **Currency Code**, **Currency Precision**, **Currency Name**, **Currency Symbol**, and **Currency Conversion**. |
+   |    **Currency Type**    | - **System** - Select this option if you want to use the currencies available in customer engagement apps (such as Dynamics 365 Sales and Customer Service). To search for a currency,  select the **Lookup** button ![Lookup button.](../admin/media/lookup-button-4.png "Lookup button") next to **Currency Code**. When you select a currency code, **Currency Name** and **Currency Symbol** are automatically added for the selected currency.<br />- **Custom** - Select this option if you want to add a currency that's not available in customer engagement apps. In this case, you must manually enter the values for **Currency Code**, **Currency Precision**, **Currency Name**, **Currency Symbol**, and **Currency Conversion**. |
    |    **Currency Code**    |                                                                                                                                                                                                                                                                                                                                            Short form for the currency. For example, **USD** for United States Dollar.                                                                                                                                                                                                                                                                                                                                            |
    | **Currency Precision**  |                                                                                                                                                                                  Type the number of decimals that you want to use for the currency.  You can add a value between 0 and 4. **Note:**  If you've set a precision value in the **System Settings** dialog box, that value will appear here. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [System Settings dialog box - General tab](system-settings-dialog-box-general-tab.md).                                                                                                                                                                                  |
    |    **Currency Name**    |                                                                                                                                                                                                                                         If you selected a currency code from the list of available currencies in customer engagement apps, the currency name for the selected code is displayed here. If you selected **Custom** as the currency type, type the name of the currency.                                                                                                                                                                                                                                          |
@@ -68,7 +66,7 @@ Currencies determine the prices for products in the product catalog and the cost
 
 4. From the list of currencies displayed, select the currency to delete.  
 
-5. Select **Delete**  ![Delete button](media/crm-ua-delete.png "Delete button").  
+5. Select **Delete**  ![Delete button.](media/crm-ua-delete.png "Delete button").  
 
 6. Confirm the deletion.  
 

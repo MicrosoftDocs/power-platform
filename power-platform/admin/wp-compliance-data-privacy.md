@@ -6,6 +6,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/11/2020
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -46,7 +47,7 @@ By default, Microsoft stores and manages the database encryption keys for your e
 
 ## Resources to manage GDPR Compliance
 
-The European Union General Data Protection Regulation (GDPR) is one of the newest privacy regulations enacted that gives rights to people to manage their personal data. In this section, we will look at some of the tools and resources available for the Microsoft Power Platform to assist administrators in their efforts to comply with GDPR. Some of these resources and tools may also helpful to assist you in other data privacy-related tasks not directly related to GDPR. A complete discussion of GDPR is beyond the scope of this content, however in this section we will focus on the tools and resources to support your efforts. Additionally, Microsoft has a section on the trust center dedicated to GDPR resources and information that can be helpful. You can find that here https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx
+The European Union General Data Protection Regulation (GDPR) is one of the newest privacy regulations enacted that gives rights to people to manage their personal data. In this section, we will look at some of the tools and resources available for the Microsoft Power Platform to assist administrators in their efforts to comply with GDPR. Some of these resources and tools may also be helpful to assist you in other data privacy-related tasks not directly related to GDPR. A complete discussion of GDPR is beyond the scope of this content, however in this section we will focus on the tools and resources to support your efforts. Additionally, Microsoft has a section on the trust center dedicated to GDPR resources and information that can be helpful. You can find that here https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx
 
 First, let’s review at some of GDPR’s terminology that matters in this context:
 
@@ -78,17 +79,17 @@ You may also find Microsoft Compliance Manager helpful to manage your compliance
 In the compliance center Audit Log Search, administrators can now search and view Power Automate events. Events include Created flow, Edited flow, Deleted flow, Edited Permissions, Deleted Permissions, Started a paid trial, Renewed a paid trial. Using the portal you can choose what you want to search and a time window.
 
 > [!div class="mx-imgBorder"] 
-> ![Power Automate audit log events](media/flow-audit-log-events.png "Power Automate audit log events")
+> ![Power Automate audit log events.](media/flow-audit-log-events.png "Power Automate audit log events")
 
 From the resulting query results, when you drill down into an item you get a details page with the following type of information.
 
 > [!div class="mx-imgBorder"] 
-> ![Power Automate audit log events details](media/flow-audit-log-events-detail.png "Power Automate audit log events details")
+> ![Power Automate audit log events details.](media/flow-audit-log-events-detail.png "Power Automate audit log events details")
 
 The real good information comes from clicking on the More Information and drilling down into the real detail page:
 
 > [!div class="mx-imgBorder"] 
-> ![Power Automate audit log events details more information](media/flow-audit-log-events-detail-information.png "Power Automate audit log events details more information")
+> ![Power Automate audit log events details more information.](media/flow-audit-log-events-detail-information.png "Power Automate audit log events details more information")
 
 Audit data is retained for 90 days. You can do CDSV exports of the data allowing you to move it into Excel or PowerBI for further analysis. You can find a complete walkthrough of using the audit information here https://flow.microsoft.com/blog/security-and-compliance-center/
 

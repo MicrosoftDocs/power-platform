@@ -6,7 +6,8 @@ manager: devkeydet
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/18/2020
+ms.date: 06/11/2020
+ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -22,7 +23,7 @@ Microsoft Dataverse for Teams empowers users to build custom apps, bots, and flo
 
 Dataverse for Teams honors the existing data governance paradigms of Microsoft Power Platform and enables access control in the Microsoft Teams admin center. The Power Platform admin center provides more detail, including monitoring dedicated capacity usage and [data loss prevention (DLP) policies](../../admin/wp-data-loss-prevention.md).  
 
-Dataverse for Teams greatly simplifies environment lifecycle management and user security role management by aligning to Microsoft Teams constructs. More information: [User access to Microsoft Teams environments](../../admin/about-teams-environment.md#user-access-to-project-oakdale-environments)
+Dataverse for Teams greatly simplifies environment lifecycle management and user security role management by aligning to Microsoft Teams constructs. More information: [User access to Dataverse for Teams environments](../../admin/about-teams-environment.md#user-access-to-dataverse-for-teams-environments) 
 
 Dataverse for Teams is a fully embedded experience. Governance controls specific to Microsoft Power Platform are also provided directly in the context of the Microsoft Teams admin center. More information: [Manage Microsoft Power Platform apps in the Microsoft Teams admin center](/microsoftteams/manage-power-platform-apps)
 
@@ -34,11 +35,11 @@ We recommend setting up reactive governance workflows and monitoring abilities. 
 
 1. The team owner can provide a business justification for their new environment within *n* days of creating the environment.
 
-    ![A team owner is prompted to provide a business justification](media/teams-1.png "A team owner is prompted to provide a business justification")
+    ![A team owner is prompted to provide a business justification.](media/teams-1.png "A team owner is prompted to provide a business justification")
 
 1. An admin can approve or reject the submitted business justification, and&mdash;optionally&mdash;mark it for later review.
 
-    ![Admins approve or reject the submitted business justification](media/teams-2.png "Admins approve or reject the submitted business justifications")
+    ![Admins approve or reject the submitted business justification.](media/teams-2.png "Admins approve or reject the submitted business justifications")
 
 1. An automated cleanup runs periodically, and deletes rejected or unclaimed (that is, no justification was provided) environments. If needed, deleted environments can be restored within seven days by using the [recover environment feature in the Power Platform admin center](../../admin/recover-environment.md#power-platform-admin-center).
 
@@ -54,7 +55,7 @@ Admins can use Power Apps and Power Automate analytics reports in the Power Plat
 
 Admins can monitor capacity usage for Microsoft Teams environments by using dedicated [capacity views in the Power Platform admin center](../../admin/about-teams-environment.md#capacity-limits). Notifications are sent to the makers in Microsoft Teams when the environment is nearing 80&nbsp;percent of its capacity. Notifications are also sent to tenant admins when the tenant is reaching 80&nbsp;percent of its capacity. These capacity limits can't be extended. Admins can monitor inactive Microsoft Teams environments in the tenant and invoke cleanup when necessary, in addition to having an automated cleanup of unused environments in place to help free up capacity.
 
-![Admins can monitor capacity usage for Microsoft Teams environments by using dedicated capacity views in the Power Platform admin center](media/teams-4.png "Admins can monitor capacity usage for Microsoft Teams environments by using dedicated capacity views in the Power Platform admin center")
+![Admins can monitor capacity usage for Microsoft Teams environments by using dedicated capacity views in the Power Platform admin center.](media/teams-4.png "Admins can monitor capacity usage for Microsoft Teams environments by using dedicated capacity views in the Power Platform admin center")
 
 A dashboard in the CoE Starter Kit further identifies the usage of Dataverse for Teams environments, in addition to inactive environments that have no apps or flows.
 

@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/10/2020
+ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -39,7 +40,7 @@ Get ready to use the dashboard by installing the [core components of the CoE Sta
 
 The first page of the dashboard provides an overview of all areas and their purpose, in addition to buttons to use to go to different sections and pages.
 
-![Power BI dashboard overview](media/pb-1.png "Power BI dashboard overview")
+![Power BI dashboard overview.](media/pb-1.png "Power BI dashboard overview")
 
 Within each section, you'll find [bookmarks](/power-bi/desktop-bookmarks) at the top of each page to help you get to the information you're looking for.
 

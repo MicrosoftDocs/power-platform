@@ -6,6 +6,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/17/2021
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -54,17 +55,17 @@ Organizations can create a model and visualize their sales territories in a hier
 
 6.    Select the **Related** tab, and then select **Members**.
 
-      ![Members option on Related tab of territory form](/dynamics365/customer-engagement/sales-enterprise/media/members-option-related-tab-territory-form.png "Members option on Related tab of territory form")
+      ![Members option on Related tab of territory form.](/dynamics365/customer-engagement/sales-enterprise/media/members-option-related-tab-territory-form.png "Members option on Related tab of territory form")
  
 7.    On the **Members** tab, select **Add members**.
 
 8.    In the **Lookup Records** pane, select the search icon, select a user record, and then select **Add**.
 
-      ![Lookup Records pane](/dynamics365/customer-engagement/sales-enterprise/media/lookup-records.png "Lookup Records pane")
+      ![Lookup Records pane.](/dynamics365/customer-engagement/sales-enterprise/media/lookup-records.png "Lookup Records pane")
 
 9. To add sub territories to this territory, select the **Sub-territories** tab, and select **Add New Territory**. 
  
-    ![Add sub-territory](media/sales-add-sub-territory.png "Add sub-territory")
+    ![Add sub-territory.](media/sales-add-sub-territory.png "Add sub-territory")
 
     Enter the necessary information and select **Save**. This territory will be added as a sub territory in the Sub-territories grid.
 
@@ -81,7 +82,7 @@ Organizations can create a model and visualize their sales territories in a hier
   
    - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
   
-2. In the web app, go to **Settings** (![Settings](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
+2. In the web app, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
   
 3. Choose **Sales Territories**.  
   

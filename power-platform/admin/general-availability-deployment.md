@@ -2,12 +2,13 @@
 title: "General availability deployment  | MicrosoftDocs"
 description: About general availability deployment
 author: jimholtz
+ms.subservice: admin
 ms.author: jimholtz
 ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/21/2021
+ms.date: 09/22/2021
 search.audienceType: 
   - admin
 search.app:
@@ -36,14 +37,14 @@ Each notification from the Message Center includes dates, the maintenance window
 
 The general availability deployment is based on the regions where environments are created.
 
-|Regions  |Schedule for 2021 wave 1 general availability deployment|
+|Regions  |Schedule for 2021 wave 2 general availability deployment|
 |---------|---------|
-|South America<br />Canada<br />India<br />France<br />Emirates<br />South Africa<br />Germany  |  Friday, April 2nd to Sunday, April 4th     |
-|Japan<br />Asia Pacific<br />Great Britain<br />Australia   | Friday, April 9th to Sunday, April 11th      |
-|Europe     | Friday, April 16th to Sunday, April 18th       |
-|North America     |  Friday, April 23nd to Sunday, April 25th        |
-|China | Friday, April 30th to Sunday, May 2nd  |
-|GCC<br />GCC High<br />DOD  | Friday, April 30th to Sunday, May 2nd <br />See [Dynamics 365 US Government](microsoft-dynamics-365-government.md). |
+|South America<br />Canada<br />India<br />France<br />South Africa<br />Germany<br />Switzerland |  Friday, October 1st to Sunday, October 3rd     |
+|Japan<br />Asia Pacific<br />Great Britain<br />Australia <br /> United Arab Emirates     | Friday, October 8th to Sunday, October 10th       |
+|Europe    | Friday, October 15th to Sunday, October 17th      |
+|North America     |  Friday, October 22nd to Sunday, October 24th           |
+|China | Friday, October 29th to Sunday, October 31st      |
+|GCC<br />GCC High<br />DOD  | Friday, October 29th to Sunday, October 31st  <br />See [Dynamics 365 US Government](microsoft-dynamics-365-government.md). |
 
 ### See also
 [Dynamics 365 release schedule](/dynamics365/get-started/release-schedule) <br />

@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 07/08/2020
+ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -38,7 +39,7 @@ Information available for chatbots:
 - Number of components, plus component details
 - Number of flows
 
-![Power Platform Admin View - Virtual Agents inventory](../media/pb-4.png "Power Platform Admin View - Virtual Agents inventory")
+![Power Platform Admin View - Virtual Agents inventory.](../media/pb-4.png "Power Platform Admin View - Virtual Agents inventory")
 
 ## Power Apps (canvas apps) "shared with" information
 
@@ -53,7 +54,7 @@ Information available for users an app is shared with:
 
 The Power Platform Admin View has been updated to show this information on the PowerApps App form:
 
-![Power Platform Admin View - View who an app is shared with](../media/coe-mda2.png "Power Platform Admin View - View who an app is shared with")
+![Power Platform Admin View - View who an app is shared with.](../media/coe-mda2.png "Power Platform Admin View - View who an app is shared with")
 
 ## Set App Permissions and Set Flow Permissions
 

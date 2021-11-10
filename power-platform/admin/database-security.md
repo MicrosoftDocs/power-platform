@@ -1,6 +1,7 @@
 ---
 title: Configure user security in an environment | Microsoft Docs
 description: Configure user security in environment
+ms.subservice: admin
 ms.author: jimholtz
 author: jimholtz
 ms.reviewer: jimholtz
@@ -8,7 +9,7 @@ ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/16/2021
+ms.date: 10/22/2021
 search.audienceType: 
   - admin
 search.app:
@@ -28,7 +29,7 @@ An environment can have zero or one Dataverse database. The process for assignin
 
 Environments include predefined security roles that reflect common user tasks with access levels defined to match the security best-practice goal of providing access to the minimum amount of business data required to use the app. 
 
-These security roles can be assigned to the user, [owner team](manage-teams.md#about-owner-teams) and [group team](manage-group-teams.md). 
+These security roles can be assigned to the user, [owner team](manage-teams.md#types-of-teams) and [group team](manage-group-teams.md). 
 
 There is another set of security roles that is assigned to [application users](system-application-users.md). Those security roles are installed by our services and cannot be updated.
 
@@ -58,9 +59,10 @@ For users who make apps that connect to the database and need to create or updat
 | System Customizer     | Create (self), Read (self), Write (self), Delete (self), Customizations         | Has full permission to customize the environment. However, users with this role can only view records for environment entities that they create. More information: [Privileges required for customization](/dynamics365/customer-engagement/customize/privileges-required-customization)        |
 | Basic User   |  Read (self), Create (self), Write (self), Delete (self)       | Can run an app within the environment and perform common tasks for the records that they own. Note that this only applies to non-custom entities. More information: [Create or configure a custom security role](#create-or-configure-a-custom-security-role) <br /><br />  **Note**: the Common Data Service User security role was renamed to Basic User. There is no action required - this is just a name changed and it doesn't impact the user privileges or role assignment.  If you have a Solution with the Common Data Service User security role, you can inadvertently update the security role name back to Common Data Service User when you import the Solution. Please update the Solution before re-importing.|
 | Service Reader | Read | Has full Read permission to all entities including custom entities. This is primarily used by backend service that requires reading all entities.    |
-| Service Writer | Create, Read, Write | Has full Create, Read, and Write to all entities including custom entities. This is primarily used by backend service that requires creating and updating records.    |
+| Service Writer | Create, Read, Write | Has full Create, Read, and Write permission to all entities including custom entities. This is primarily used by backend service that requires creating and updating records.    |
 | Delegate     | Act on behalf of another user        | Allows code to *impersonate*, or run as another user.  Typically used with another security role to allow access to records. More information: [Impersonate another user](/powerapps/developer/common-data-service/impersonate-another-user)        |
 | Support User | Read Customizations, Read Business Management settings      | Has full Read permission to customization and business management settings to allow Support staff to troubleshoot environment configuration issues. Does not have access to core records.      |
+| Office Collaborator | Read (self) | Has Read permission to tables where a record from these tables was shared with the organization. Does not have access to any other core and custom table records. This role is assigned to the Office Collaborators owner team and not to an individual user.   |
 | Global Reader  |   | The [Global Reader](/azure/active-directory/roles/permissions-reference) role is not yet supported in the Power Platform admin center.  |
 
 *The scope of these privileges is global, unless specified otherwise.
@@ -114,16 +116,16 @@ For environments with no Dataverse database, security roles can be assigned to i
 3. In the **Access** tile, select **See all** for **Environment admin** or **Environment maker** to add or remove people for either role.
 
    > [!div class="mx-imgBorder"] 
-   > ![Choose a role](media/assign-security-role-nodb.png "Choose a role")
+   > ![Choose a role.](media/assign-security-role-nodb.png "Choose a role")
 
 4. Select **Add people**, and then specify the name or email address of one or more users or groups from Azure AD to assign this role to.
 
    > [!div class="mx-imgBorder"] 
-   > ![Select an action](media/assign-security-role-nodb-action.png "Select an action")
+   > ![Select an action.](media/assign-security-role-nodb-action.png "Select an action")
 
 ## Assign security roles to users in an environment that has a Dataverse database 
 
-Security roles can be assigned to [owner teams](manage-teams.md#create-an-owner-team) and [Azure AD group teams](manage-group-teams.md), in addition to individual users. Before assigning a role to a user, [verify that the user is present in the environment in Enabled status](troubleshooting-user-needs-read-write-access-organization.md). [Add the user to the environment](add-users-to-environment.md) or [fix their status to become Enabled](troubleshooting-user-needs-read-write-access-organization.md) before assigning a role to them. You'll be able to assign a role as part of the process of adding the user. 
+Security roles can be assigned to [owner teams](manage-teams.md#types-of-teams) and [Azure AD group teams](manage-group-teams.md), in addition to individual users. Before assigning a role to a user, [verify that the user is present in the environment in Enabled status](troubleshooting-user-needs-read-write-access-organization.md). [Add the user to the environment](add-users-to-environment.md) or [fix their status to become Enabled](troubleshooting-user-needs-read-write-access-organization.md) before assigning a role to them. You'll be able to assign a role as part of the process of adding the user. 
 
 In general, a security role can only be assigned to users who have Enabled status. But if you need to assign a security role to users in the Disabled state, you can do so by enabling **allowRoleAssignmentOnDisabledUsers** in OrgDBOrgSettings. 
 
@@ -136,17 +138,17 @@ To add a security role to an owner team, group team, or a user who has Enabled s
 3. In the **Access** tile, select **See all** under Security roles.
 
    > [!div class="mx-imgBorder"] 
-   > ![See all security roles](media/see-all-security-roles.png "See all security roles")
+   > ![See all security roles.](media/see-all-security-roles.png "See all security roles")
 
 4. Make sure the right Business unit is selected from the dropdown, and select a role from the list of roles in the environment.
 
    > [!div class="mx-imgBorder"] 
-   > ![Select Business unit](media/security-role-business-unit.png "Select Business unit")
+   > ![Select Business unit.](media/security-role-business-unit.png "Select Business unit")
 
 5. Select **Add people** to add a user, owner team, or group team to the role. If you do not find a user or team to assign the role to, make sure the user or team is present in the environment and the user has Enabled status before assigning a role to them. 
 
    > [!div class="mx-imgBorder"] 
-   > ![Add people](media/security-role-add-people.png "Add people")
+   > ![Add people.](media/security-role-add-people.png "Add people")
 
 ## Create or configure a custom security role 
 
@@ -167,19 +169,19 @@ For more information about access and scope privileges, see [Security roles an
 2. Select the environment's URL. 
 
    > [!div class="mx-imgBorder"] 
-   > ![Select environment URL](media/select-environment-url.png "Select environment URL")
+   > ![Select environment URL.](media/select-environment-url.png "Select environment URL")
 
-3. If you see published apps and tiles, select the gear icon (![Settings](media/selection-rule-gear-button.png)) in the upper-right corner, and then select **Advanced settings**. 
+3. If you see published apps and tiles, select the gear icon (![Settings.](media/selection-rule-gear-button.png)) in the upper-right corner, and then select **Advanced settings**. 
 
 4. In the menu bar, select **Settings** > **Security**. 
 
    > [!div class="mx-imgBorder"] 
-   > ![Select Settings > Security](./media/database-security/dyn365-settings-security.png "Select Settings > Security")
+   > ![Select Settings > Security.](./media/database-security/dyn365-settings-security.png "Select Settings > Security")
 
 5. Select **Security roles**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Select Security roles](./media/database-security/dyn365-securityroles.png "Select Security roles")
+   > ![Select Security roles.](./media/database-security/dyn365-securityroles.png "Select Security roles")
 
 6. Select **New**.
 

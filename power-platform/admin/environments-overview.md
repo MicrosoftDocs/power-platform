@@ -6,7 +6,8 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.custom: intro-internal
-ms.date: 04/06/2021
+ms.date: 10/08/2021
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -38,7 +39,7 @@ When you create an app in an environment, that app is only permitted to connect 
 
 You can also move resources between environments. More information: [Migrate resources](/powerapps/maker/data-platform/export-solutions)
 
-![The Contoso Corporation tenant encompasses three environments, each of which has its own apps, flows, and Dataverse database](./media/environments-overview/Environments.png "The Contoso Corporation tenant encompasses three environments, each of which has its own apps, flows, and Dataverse database")
+![The Contoso Corporation tenant encompasses three environments, each of which has its own apps, flows, and Dataverse database.](./media/environments-overview/Environments.png "The Contoso Corporation tenant encompasses three environments, each of which has its own apps, flows, and Dataverse database")
 
 ## Environment permissions
 Environments have two built-in roles that provide access to permissions within an environment:
@@ -89,13 +90,13 @@ There are multiple types of environments. The type indicates the purpose of the 
 </tr>
 <tr>
 <td width="20%"> Trial</td>
-<td width="50%">  Trial environments are intended to support short-term testing needs and are automatically cleaned up after a short period of time. They expire after 30 days and are limited to one user. Provisioning trial environments can be restricted to admins.</td>
+<td width="50%">  Trial environments are intended to support short-term testing needs and are automatically cleaned up after a short period of time. They expire after 30 days and are limited to one per user. Provisioning trial environments can be restricted to admins.</td>
 <td width="30%">  Full control.</td>
 </tr>
 <tr>
 <td width="20%"> Developer</td>
-<td width="50%">  Developer environments are created by users who have the Community Plan license. They're special environments intended only for use by the owner, and they can't be shared with other users. Provisioning developer environments can't be restricted unless through a support ticket. </td>
-<td width="30%">  Only a single user account with the Community Plan has access.</td>
+<td width="50%">  Developer environments are created by users who have the Developer Plan license. They're special environments intended only for use by the owner. Provisioning developer environments can't be restricted unless through a support ticket. Developer environment will be available as long as you actively use the Power Apps Developer Plan. More information: <a href="/powerapps/maker/developer-plan">Power Apps Developer Plan</a></td>
+<td width="30%">  The user with the Developer Plan can choose to add other users as makers. </td>
 </tr>
 <tr>
 <td width="20%"> Microsoft Dataverse for Teams</td>
@@ -105,8 +106,6 @@ There are multiple types of environments. The type indicates the purpose of the 
 <tr><td colspan="3">*&#8202;Users licensed for Power Apps, Power Automate, Microsoft 365, and Dynamics 365, standalone licenses, and free and trial licenses.</td></tr>
 </table>
 
-<a name="the-default-environment"></a>
-
 ## The default environment
 A single default environment is automatically created by Power Apps for each tenant and shared by all users in that tenant. Whenever a new user signs up for Power Apps, they're automatically added to the Maker role of the default environment. The default environment is created in the region closest to the default region of the Azure AD tenant.
 
@@ -114,6 +113,8 @@ A single default environment is automatically created by Power Apps for each ten
 > - No users will be added to the Environment Admin role of the default environment automatically. More information: [Administer environments in Power Apps](environments-administration.md)
 > - You can't delete the default environment.
 > - You can't backup and restore the default environment.
+> - The default environment has the following free storage capacity: 3GB Dataverse Database Capacity, 3GB Dataverse File Capacity, and 1GB Dataverse Log Capacity. Note that we're in the process of rolling out this feature.
+> - The capacity check conducted prior to creating new environments will exclude the default environment's free storage capacity when calculating whether you have  sufficient capacity to create a new environment. 
 > - The default environment is limited to 32 GB of storage capacity. In case you need to store more data, you can create a production environment. More information: [Provisioning a new environment](create-environment.md#provisioning-a-new-environment)
 
 The default environment is named as follows: "{Azure AD tenant name} (default)"
@@ -126,7 +127,7 @@ You can create environments for different purposes. A trial environment is for t
 You can view and manage your environments on the **Environments** page. 
 
 > [!div class="mx-imgBorder"] 
-> ![Environment list](media/environment-list.png "Environment list")
+> ![Environment list.](media/environment-list.png "Environment list")
 
 You can sort and search the list of environments; this is useful if you have a large number of environments to manage.
 
@@ -135,12 +136,12 @@ You can sort and search the list of environments; this is useful if you have a l
 You can see some the details of your environments by selecting an environment. Select **See all** to see more environment details.
 
 > [!div class="mx-imgBorder"] 
-> ![Environment details](media/environment-details-see-all.png "Environment details")
+> ![Environment details.](media/environment-details-see-all.png "Environment details")
 
 Select **Edit** to review and edit environment details.
 
 > [!div class="mx-imgBorder"] 
-> ![More environment details](media/environment-details-more.png "More environment details")
+> ![More environment details.](media/environment-details-more.png "More environment details")
 
 ### See also
 [Microsoft Learn: Create and manage environments in Dataverse](/learn/modules/create-manage-environments/)<br />
