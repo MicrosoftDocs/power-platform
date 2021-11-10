@@ -6,10 +6,8 @@ ms.date: 06/17/2021
 ms.reviewer: ""
 ms.service: power-platform
 ms.topic: article
-keywords: "PVA"
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.collection: virtual-agent
 author: iaanw
 ms.subservice: admin
 ms.author: iawilt
