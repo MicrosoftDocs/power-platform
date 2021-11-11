@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/20/2021
+ms.date: 11/11/2021
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -79,9 +79,6 @@ Follow these steps to turn off assigning per app plans for users when an app is 
 
 > [!IMPORTANT]
 > If per app plans are not allocated to the environment the app is installed in, the toggle is disabled. 
-> 
-> Turning off the per app plan is currently available only for canvas apps. Model-driven apps and portals will have this ability in the future.
-
 
 ### Check capacity
 Check the **App passes** capacity for the environment with the app you're sharing. Make sure you have sufficient app passes assigned for the number of users using the app.
@@ -122,7 +119,7 @@ The per app license gives a user access to one Power Apps or one portal for a si
   <tr>
     <td>User 1</td>
     <td>App A</td>
-    <td>App A</td>
+    <td>App B</td>
     <td>Portal 1</td>
     <td></td>
     <td></td>
