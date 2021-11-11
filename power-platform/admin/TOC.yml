@@ -54,7 +54,7 @@
           href: power-automate-licensing/add-ons.md
       - name: Power Platform licensing FAQs
         href: powerapps-flow-licensing-faq.md
-      - name: Pay-as-you-go plan 
+      - name: "Preview: Pay-as-you-go plan"
         items:
         - name: Overview
           href: pay-as-you-go-overview.md
@@ -474,9 +474,11 @@
       - name: View self-service capacity
         href: view-self-service-capacity.md
       - name: Free up storage space
-        href: free-storage-space.md       
+        href: free-storage-space.md        
       - name: Add storage capacity
         href: add-storage.md      
+      - name: Access storage with SAS token
+        href: storage-sas-token.md 
     - name: Resources
       items:
       - name: Overview 
@@ -821,6 +823,8 @@
               href: set-incoming-outgoing-email-synchronization.md
             - name: Configure correlation settings for incoming email
               href: email-message-filtering-correlation.md 
+            - name: Associate an email address with a row
+              href: associate-email-address.md
             - name: Create queue items from incoming email
               href: create-queue-items-from-synchronized-email-messages.md
           - name: Configure appointment, contact, and task synchronization
@@ -931,6 +935,7 @@
         - name: Delete data 
           href: powerapps-gdpr-delete-dsr.md
         - name: Dataverse customer data 
+      # line 938 to 970 - is being reorged but keep until hear from Marty
           href: common-data-service-gdpr-dsr-guide.md
     - name: Power Apps US Government
       href: powerapps-us-government.md

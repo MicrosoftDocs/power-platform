@@ -26,9 +26,7 @@ The Center of Excellence (CoE) core components solution provides components that
 
 The core components solution contains assets that are only relevant to admins.
 
-Watch how to setup the core components solution.
-
-> [!VIDEO https://www.youtube.com/embed/Z9Vp2IxFzpU]
+[Watch how to setup](https://www.youtube.com/embed/Z9Vp2IxFzpU) the core components solution.
 
 ## Import the solution
 
@@ -83,20 +81,25 @@ This is the first step of the installation process and is required for every oth
 
     Configure the following variables for the core components solution, and then select **Save**. (If you need to change the value of an environment variable after you import the solution, go to [Update environment variables](#update-environment-variables).)
 
-    | Name | Description |
-    |------|---------------|
-    |Admin eMail |Admin eMailed with this solution, and copy the web link (to launch the app) and paste it into this variable. This environment variable is not used until you adopt the Developer Compliance Center.  |
-    |Also Delete from CoE | Recommend Yes here to delete objects from the CoE inventory when they are deleted from the tenant. No will keep a record that an app or flow existed in the past |
-    |Approval Admin | The email address used in flows to send approvals to admins; this cannot be a distribution list. |
-    | Community URL         | Link to your internal Microsoft Power Platform community (for example, Yammer or Teams).  |
-    | Developer Compliance Center URL        | Leave empty on Import and do the following to populated after set up of the [Governance components](setup-governance-components.md).<br> Navigate to the details page of the Developer Compliance Center (canvas app) included with this solution, and copy the web link (to launch the app) and paste it into this variable.  |
-    | Environment Request Admin App Url | Link to the **Admin - Power Platform Resouce RMS** canvas app included in this solution. Leave empty on Import and fill it in once the app is installed. <br> To do that, navigate to the details page of the **Admin - Power Platform Resouce RMS** (canvas app) included with this solution, and use the wek link (to launch the app).  |
-    |PowerApp Maker environment variable | The maker URL used by PowerApps for your cloud, including trailing slash. Here are examples:<br> For a US environment: <https://make.powerapps.com/> <br> For a GCC environment: <https://make.gov.powerapps.us/> <br>For a GCC High environment: <https://make.high.powerapps.us/> |
-    |PowerApp Player environment variable<br>For a DoD environment: <https://make.apps.appsplatform.us/> |
-    |PowerApp Player environment variable | The player URL used by PowerApps for your cloud, including trailing slash. Here are examples:<br> For a US environment: <https://apps.powerapps.com/> <br> For a GCC environment: <https://apps.gov.powerapps.us/> <br>For a GCC High environment: <https://apps.gov.powerapps.us/> <br>For a DoD environment: <https://play.apps.appsplatform.us> |
-    |Power Automate environment variable | The URL used by flow for your region. Here are examples:<br> For a US environment: <https://us.flow.microsoft.com/manage/environments/> <br> For a Canadian environment: <https://canada.flow.microsoft.com/manage/environments/> <br>For an EMEA environment: <https://emea.flow.microsoft.com/manage/environments/> <br>For a GCC environment: <https://gov.flow.microsoft.us/manage/environments/> <br> For a GCC High environment: <https://high.flow.microsoft.us/manage/environments><br> For a DoD environment: <https://flow.appsplatform.us/manage/environments/><br>If your region is not listed here, navigate to [flow.microsoft.com](https://flow.microsoft.com) and copy the URL the page directs to from the browser.|
-    | Power Platform Maker Microsoft 365 Group | The Admin \| Welcome Email flow sends a welcome email to onboard new makers and adds them to a Microsoft 365 group. You can use this group to send communications to your makers or invite them to a Yammer or Teams group. Configure the group ID here.|
-    | TenantID | Your Azure Tenant ID.|
+    | Name | Description | Default Value |
+    |------|---------------|------|
+    |Admin eMail |Admin eMailed with this solution, and copy the web link (to launch the app) and paste it into this variable. This environment variable is not used until you adopt the Developer Compliance Center.  | n/a |
+    |Also Delete from CoE | Recommend Yes here to delete objects from the CoE inventory when they are deleted from the tenant. No will keep a record that an app or flow existed in the past | Yes |
+    |Approval Admin | The email address used in flows to send approvals to admins; this cannot be a distribution list. | n/a |
+    | Community URL         | Link to your internal Microsoft Power Platform community (for example, Yammer or Teams).  | n/a |
+    | Developer Compliance Center URL        | Leave empty on Import and do the following to populated after set up of the [Governance components](setup-governance-components.md).<br> Navigate to the details page of the Developer Compliance Center (canvas app) included with this solution, and copy the web link (to launch the app) and paste it into this variable.  | n/a|
+    | Environment Request Admin App Url | Link to the **Admin - Power Platform Resouce RMS** canvas app included in this solution. Leave empty on Import and fill it in once the app is installed. <br> To do that, navigate to the details page of the **Admin - Power Platform Resouce RMS** (canvas app) included with this solution, and use the wek link (to launch the app).  | n/a |
+    |PowerApp Maker environment variable | The maker URL used by PowerApps for your cloud, including trailing slash. Here are examples:<br> For a US environment: <https://make.powerapps.com/> <br> For a GCC environment: <https://make.gov.powerapps.us/> <br>For a GCC High environment: <https://make.high.powerapps.us/> | n/a |
+    |PowerApp Player environment variable<br>For a DoD environment: <https://make.apps.appsplatform.us/> | n/a |
+    |PowerApp Player environment variable | The player URL used by PowerApps for your cloud, including trailing slash. Here are examples:<br> For a US environment: <https://apps.powerapps.com/> <br> For a GCC environment: <https://apps.gov.powerapps.us/> <br>For a GCC High environment: <https://apps.gov.powerapps.us/> <br>For a DoD environment: <https://play.apps.appsplatform.us> | n/a |
+    |Power Automate environment variable | The URL used by flow for your region. Here are examples:<br> For a US environment: <https://us.flow.microsoft.com/manage/environments/> <br> For a Canadian environment: <https://canada.flow.microsoft.com/manage/environments/> <br>For an EMEA environment: <https://emea.flow.microsoft.com/manage/environments/> <br>For a GCC environment: <https://gov.flow.microsoft.us/manage/environments/> <br> For a GCC High environment: <https://high.flow.microsoft.us/manage/environments><br> For a DoD environment: <https://flow.appsplatform.us/manage/environments/><br>If your region is not listed here, navigate to [flow.microsoft.com](https://flow.microsoft.com) and copy the URL the page directs to from the browser.| n/a |
+    | Power Platform Maker Microsoft 365 Group | The Admin \| Welcome Email flow sends a welcome email to onboard new makers and adds them to a Microsoft 365 group. You can use this group to send communications to your makers or invite them to a Yammer or Teams group. Configure the group ID here.| n/a |
+    | TenantID | Your Azure Tenant ID.| n/a |
+    | Compliance – Apps – Number Users Shared | The Admin \| Compliance detail request flow sends an email to makers asking for business justification if their app is shared with more than x number of users. The number of users is specified in this variable. | 20 users |
+    | Compliance – Apps – Number Groups Shared | The Admin \| Compliance detail request flow sends an email to makers asking for business justification if their app is shared with more than x number of groups. The number of groups is specified in this variable. | 1 group |
+    | Compliance – Apps – Number Days Since Published | The Admin \| Compliance detail request flow sends an email to makers asking for business justification if their app has not been published in x number of days. The number of days is specified in this variable. | 60 days |
+    | Compliance – Apps – Number Launches Last 30 Days | The Admin \| Compliance detail request flow sends an email to makers asking for business justification if their app has been launched more than x number of times in the past 30 days. The number of app launches is specified in this variable. | 30 app launches |
+    | Compliance – Chatbots – Number Launches | The Admin \| Compliance detail request flow sends an email to makers asking for business justification if their chatbot has been launched more than x number of times in the past 30 days. The number of chatbot launches is specified in this variable. | 50 app launches |
 
 1. Select **Import**.
 
@@ -157,19 +160,25 @@ Before you begin:
 
     Configure the following variables for the core components solution, and then select **Save**. (If you need to change the value of an environment variable after you import the solution, go to [Update environment variables](#update-environment-variables).)
 
-    | Name | Description |
-    |------|---------------|
-    |Admin eMail |Admin eMailed with this solution, and copy the web link (to launch the app) and paste it into this variable. This environment variable is not used until you adopt the Developer Compliance Center.  |
-    |Also Delete from CoE | Recommend Yes here to delete objects from the CoE inventory when they are deleted from the tenant. No will keep a record that an app or flow existed in the past |
-    |Approval Admin | The email address used in flows to send approvals to admins; this cannot be a distribution list. |
-    | Community URL         | Link to your internal Microsoft Power Platform community (for example, Yammer or Teams).  |
-    | Developer Compliance Center         | Leave empty on Import and do the following to populated after set up of the [Governance components](setup-governance-components.md).<br> Navigate to the details page of the Developer Compliance Center (canvas app) included with this solution, and copy the web link (to launch the app) and paste it into this variable.  |
-    | Environment Request Admin App Url | Link to the **Admin - Power Platform Resouce RMS** canvas app included in this solution. Leave empty on Import and fill it in once the app is installed. <br> To do that, navigate to the details page of the **Admin - Power Platform Resouce RMS** (canvas app) included with this solution, and use the wek link (to launch the app).  |
-    |PowerApp Maker environment variable | The maker URL used by PowerApps for your cloud, including trailing slash. Here are examples:<br> For a US environment: <https://make.powerapps.com/> <br> For a GCC environment: <https://make.gov.powerapps.us/> <br>For a GCC High environment: <https://make.high.powerapps.us/> |
-    |PowerApp Player environment variable | The player URL used by PowerApps for your cloud, including trailing slash. Here are examples:<br> For a US environment: <https://apps.powerapps.com/> <br> For a GCC environment: <https://apps.gov.powerapps.us/> <br>For a GCC High environment: <https://apps.gov.powerapps.us/> |
-    |Power Automate environment variable | The URL used by flow for your region. Here are examples:<br> For a US environment: <https://us.flow.microsoft.com/manage/environments/> <br> For a Canadian environment: <https://canada.flow.microsoft.com/manage/environments/> <br>For an EMEA environment: <https://emea.flow.microsoft.com/manage/environments/> <br>For a GCC environment: <https://gov.flow.microsoft.us/manage/environments/> |
-    | Power Platform Maker Microsoft 365 Group | The Admin \| Welcome Email flow sends a welcome email to onboard new makers and adds them to a Microsoft 365 group. You can use this group to send communications to your makers or invite them to a Yammer or Teams group. Configure the group ID here.|
-    | TenantID | Your Azure Tenant ID.|
+    | Name | Description | Default Value |
+    |------|---------------|------|
+    |Admin eMail |Admin eMailed with this solution, and copy the web link (to launch the app) and paste it into this variable. This environment variable is not used until you adopt the Developer Compliance Center.  | n/a |
+    |Also Delete from CoE | Recommend Yes here to delete objects from the CoE inventory when they are deleted from the tenant. No will keep a record that an app or flow existed in the past | Yes |
+    |Approval Admin | The email address used in flows to send approvals to admins; this cannot be a distribution list. | n/a |
+    | Community URL         | Link to your internal Microsoft Power Platform community (for example, Yammer or Teams).  | n/a |
+    | Developer Compliance Center URL        | Leave empty on Import and do the following to populated after set up of the [Governance components](setup-governance-components.md).<br> Navigate to the details page of the Developer Compliance Center (canvas app) included with this solution, and copy the web link (to launch the app) and paste it into this variable.  | n/a|
+    | Environment Request Admin App Url | Link to the **Admin - Power Platform Resouce RMS** canvas app included in this solution. Leave empty on Import and fill it in once the app is installed. <br> To do that, navigate to the details page of the **Admin - Power Platform Resouce RMS** (canvas app) included with this solution, and use the wek link (to launch the app).  | n/a |
+    |PowerApp Maker environment variable | The maker URL used by PowerApps for your cloud, including trailing slash. Here are examples:<br> For a US environment: <https://make.powerapps.com/> <br> For a GCC environment: <https://make.gov.powerapps.us/> <br>For a GCC High environment: <https://make.high.powerapps.us/> | n/a |
+    |PowerApp Player environment variable<br>For a DoD environment: <https://make.apps.appsplatform.us/> | n/a |
+    |PowerApp Player environment variable | The player URL used by PowerApps for your cloud, including trailing slash. Here are examples:<br> For a US environment: <https://apps.powerapps.com/> <br> For a GCC environment: <https://apps.gov.powerapps.us/> <br>For a GCC High environment: <https://apps.gov.powerapps.us/> <br>For a DoD environment: <https://play.apps.appsplatform.us> | n/a |
+    |Power Automate environment variable | The URL used by flow for your region. Here are examples:<br> For a US environment: <https://us.flow.microsoft.com/manage/environments/> <br> For a Canadian environment: <https://canada.flow.microsoft.com/manage/environments/> <br>For an EMEA environment: <https://emea.flow.microsoft.com/manage/environments/> <br>For a GCC environment: <https://gov.flow.microsoft.us/manage/environments/> <br> For a GCC High environment: <https://high.flow.microsoft.us/manage/environments><br> For a DoD environment: <https://flow.appsplatform.us/manage/environments/><br>If your region is not listed here, navigate to [flow.microsoft.com](https://flow.microsoft.com) and copy the URL the page directs to from the browser.| n/a |
+    | Power Platform Maker Microsoft 365 Group | The Admin \| Welcome Email flow sends a welcome email to onboard new makers and adds them to a Microsoft 365 group. You can use this group to send communications to your makers or invite them to a Yammer or Teams group. Configure the group ID here.| n/a |
+    | TenantID | Your Azure Tenant ID.| n/a |
+    | Compliance – Apps – Number Users Shared | The Admin \| Compliance detail request flow sends an email to makers asking for business justification if their app is shared with more than x number of users. The number of users is specified in this variable. | 20 users |
+    | Compliance – Apps – Number Groups Shared | The Admin \| Compliance detail request flow sends an email to makers asking for business justification if their app is shared with more than x number of groups. The number of groups is specified in this variable. | 1 group |
+    | Compliance – Apps – Number Days Since Published | The Admin \| Compliance detail request flow sends an email to makers asking for business justification if their app has not been published in x number of days. The number of days is specified in this variable. | 60 days |
+    | Compliance – Apps – Number Launches Last 30 Days | The Admin \| Compliance detail request flow sends an email to makers asking for business justification if their app has been launched more than x number of times in the past 30 days. The number of app launches is specified in this variable. | 30 app launches |
+    | Compliance – Chatbots – Number Launches | The Admin \| Compliance detail request flow sends an email to makers asking for business justification if their chatbot has been launched more than x number of times in the past 30 days. The number of chatbot launches is specified in this variable. | 50 app launches |
 
 1. Select **Import**.
 
@@ -205,8 +214,6 @@ The Admin \| Sync Template flows part of this solution crawl through all the res
 
 When you first set up the CoE Starter Kit, enable these flows in a specific order which will start the process of crawling and storing the information in Dataverse. Depending on the size of your tenant, the first run of may take long to complete. See the [limitations information](limitations.md) for more details.
 
-We will more quickly resolve issues around dependencies between tables by enabling the flows in an explicit order. Enabling the flows in this order is not required, but it may cause errors or incorrect data during the first week until the inventory dependencies align.
-
 1. For Option 1 (Core Components installed in Production environment):
     1. Go to [make.powerapps.com](https://make.powerapps.com/), select **Solutions**, and then open the **Center of Excellence - Core Components** solution to view the flows.
 1. For Option 2 (Core Components installed in Dataverse for Teams environment)
@@ -214,6 +221,7 @@ We will more quickly resolve issues around dependencies between tables by enabli
     1. Select **Installed apps**.
     1. Select **See all** for Center of Excellence - Core Components.
     1. Select **Cloud flows**.
+1. Turn on: CLEANUP HELPER - Check Deleted (Cloud Flows), CLEANUP HELPER - Check Deleted (Model Driven Apps), CLEANUP HELPER - Check Deleted (Canvas Apps) and CLEANUP HELPER - Check Deleted (PVA).
 1. Turn on: CLEANUP - Admin \| Sync Template v3 (Check Deleted).
 1. Wait until it finishes before you turn on any other flows.
 1. Turn on: Admin \| Sync Template V3 (Connectors)
@@ -231,7 +239,7 @@ We will more quickly resolve issues around dependencies between tables by enabli
     1. Turn on the flows starting with Command Center App if you are using the [Admin - Command Center](core-components.md#admin---command-center)
 
 >[!IMPORTANT]
-> Note that **Admin \| Compliance Detail Request v3** will not pass until you complete setup of the Governance component so you should leave it turned off until then.
+> Note that **Admin \| Compliance request** flows will not pass until you complete setup of the Governance component so you should leave it turned off until then.
 
 ## (Optional) Create an Azure AD app registration to connect to Microsoft Graph
 
@@ -284,7 +292,7 @@ Using these steps, you'll set up an Azure AD app registration that will be used 
     ![Update HTTP action with client ID and secret](media/commandcenter3.png "Update HTTP action with client ID and secret")
 
     >[!NOTE]
-    > We recommend storing the client ID and secret in Azure Key Vault and using the [Azure Key Vault connector](/connectors/keyvault/) to retrieve them in the flow.
+    > Store the client ID and secret in Azure Key Vault and modify the flow to use the [Azure Key Vault connector](/connectors/keyvault/) to retrieve them.
 
 1. **Save** this flow.
 
@@ -341,22 +349,24 @@ Environment variables are used to store application and flow configuration data 
 
     Update one of the following variables for the core components solution, and then select **Save**.
 
-    | Name | Description |
-    |------|---------------|
-    |Admin eMail |Admin eMailed with this solution, and copy the web link (to launch the app) and paste it into this variable. This environment variable is not used until you adopt the Developer Compliance Center.  |
-    |Also Delete from CoE | Recommend Yes here to delete objects from the CoE inventory when they are deleted from the tenant. No will keep a record that an app or flow existed in the past |
-    |Approval Admin | The email address used in flows to send approvals to admins; this cannot be a distribution list. |
-    | Community URL         | Link to your internal Microsoft Power Platform community (for example, Yammer or Teams).  |
-    | Developer Compliance Center         | Leave empty on Import and do the following to populated after set up of the [Governance components](setup-governance-components.md).<br> Navigate to the details page of the Developer Compliance Center (canvas app) included with this solution, and copy the web link (to launch the app) and paste it into this variable.  |
-    | eMail Header Style | the CSS / Style to use for eMails<br> Note a default is given so this will not appear on setup|
-    | Environment Request Admin App Url | Link to the **Admin - Power Platform Resouce RMS** canvas app included in this solution. Leave empty on Import and fill it in once the app is installed. <br> To do that, navigate to the details page of the **Admin - Power Platform Resouce RMS** (canvas app) included with this solution, and use the wek link (to launch the app).  |
-    | Exclude Default environment from Compliance Request flows | Set to Yes if you want to Exclude the Default environment from the Admin \| Compliance Details request flow. <br> Note a default of Yes is given so this will not appear on setup|
-    | FullInventory | Determines if you want to only update objects that have changed, or all objects. <br> Note a default of No is given so this will not appear on setup| 
-    |PowerApp Maker environment variable | The maker URL used by PowerApps for your cloud, including trailing slash. Here are examples:<br> For a US environment: <https://make.powerapps.com/> <br> For a GCC environment: <https://make.gov.powerapps.us/> <br>For a GCC High environment: <https://make.high.powerapps.us/> |
-    |PowerApp Player environment variable | The player URL used by PowerApps for your cloud, including trailing slash. Here are examples:<br> For a US environment: <https://apps.powerapps.com/> <br> For a GCC environment: <https://apps.gov.powerapps.us/> <br>For a GCC High environment: <https://apps.gov.powerapps.us/> |
-    |Power Automate environment variable | The URL used by flow for your region. Here are examples:<br> For a US environment: <https://us.flow.microsoft.com/manage/environments/> <br> For a Canadian environment: <https://canada.flow.microsoft.com/manage/environments/> <br>For an EMEA environment: <https://emea.flow.microsoft.com/manage/environments/> <br>For a GCC environment: <https://gov.flow.microsoft.us/manage/environments/> |
-    | Power Platform Maker Microsoft 365 Group | The Admin \| Welcome Email flow sends a welcome email to onboard new makers and adds them to a Microsoft 365 group. You can use this group to send communications to your makers or invite them to a Yammer or Teams group. Configure the group ID here.|
-    | ProductionEnvironment | Set to false if you are creating a dev type environment. This will allow some flows to set target users to the admin instead of object owners. <br> Note a default of Yes is given so this will not appear on setup|
-    | TenantID | Your Azure Tenant ID.|
+    | Name | Description | Default Value |
+    |------|---------------|------|
+    |Admin eMail |Admin eMailed with this solution, and copy the web link (to launch the app) and paste it into this variable. This environment variable is not used until you adopt the Developer Compliance Center.  | n/a |
+    |Also Delete from CoE | Recommend Yes here to delete objects from the CoE inventory when they are deleted from the tenant. No will keep a record that an app or flow existed in the past | Yes |
+    |Approval Admin | The email address used in flows to send approvals to admins; this cannot be a distribution list. | n/a |
+    | Community URL         | Link to your internal Microsoft Power Platform community (for example, Yammer or Teams).  | n/a |
+    | Developer Compliance Center URL        | Leave empty on Import and do the following to populated after set up of the [Governance components](setup-governance-components.md).<br> Navigate to the details page of the Developer Compliance Center (canvas app) included with this solution, and copy the web link (to launch the app) and paste it into this variable.  | n/a|
+    | Environment Request Admin App Url | Link to the **Admin - Power Platform Resouce RMS** canvas app included in this solution. Leave empty on Import and fill it in once the app is installed. <br> To do that, navigate to the details page of the **Admin - Power Platform Resouce RMS** (canvas app) included with this solution, and use the wek link (to launch the app).  | n/a |
+    |PowerApp Maker environment variable | The maker URL used by PowerApps for your cloud, including trailing slash. Here are examples:<br> For a US environment: <https://make.powerapps.com/> <br> For a GCC environment: <https://make.gov.powerapps.us/> <br>For a GCC High environment: <https://make.high.powerapps.us/> | n/a |
+    |PowerApp Player environment variable<br>For a DoD environment: <https://make.apps.appsplatform.us/> | n/a |
+    |PowerApp Player environment variable | The player URL used by PowerApps for your cloud, including trailing slash. Here are examples:<br> For a US environment: <https://apps.powerapps.com/> <br> For a GCC environment: <https://apps.gov.powerapps.us/> <br>For a GCC High environment: <https://apps.gov.powerapps.us/> <br>For a DoD environment: <https://play.apps.appsplatform.us> | n/a |
+    |Power Automate environment variable | The URL used by flow for your region. Here are examples:<br> For a US environment: <https://us.flow.microsoft.com/manage/environments/> <br> For a Canadian environment: <https://canada.flow.microsoft.com/manage/environments/> <br>For an EMEA environment: <https://emea.flow.microsoft.com/manage/environments/> <br>For a GCC environment: <https://gov.flow.microsoft.us/manage/environments/> <br> For a GCC High environment: <https://high.flow.microsoft.us/manage/environments><br> For a DoD environment: <https://flow.appsplatform.us/manage/environments/><br>If your region is not listed here, navigate to [flow.microsoft.com](https://flow.microsoft.com) and copy the URL the page directs to from the browser.| n/a |
+    | Power Platform Maker Microsoft 365 Group | The Admin \| Welcome Email flow sends a welcome email to onboard new makers and adds them to a Microsoft 365 group. You can use this group to send communications to your makers or invite them to a Yammer or Teams group. Configure the group ID here.| n/a |
+    | TenantID | Your Azure Tenant ID.| n/a |
+    | Compliance – Apps – Number Users Shared | The Admin \| Compliance detail request flow sends an email to makers asking for business justification if their app is shared with more than x number of users. The number of users is specified in this variable. | 20 users |
+    | Compliance – Apps – Number Groups Shared | The Admin \| Compliance detail request flow sends an email to makers asking for business justification if their app is shared with more than x number of groups. The number of groups is specified in this variable. | 1 group |
+    | Compliance – Apps – Number Days Since Published | The Admin \| Compliance detail request flow sends an email to makers asking for business justification if their app has not been published in x number of days. The number of days is specified in this variable. | 60 days |
+    | Compliance – Apps – Number Launches Last 30 Days | The Admin \| Compliance detail request flow sends an email to makers asking for business justification if their app has been launched more than x number of times in the past 30 days. The number of app launches is specified in this variable. | 30 app launches |
+    | Compliance – Chatbots – Number Launches | The Admin \| Compliance detail request flow sends an email to makers asking for business justification if their chatbot has been launched more than x number of times in the past 30 days. The number of chatbot launches is specified in this variable. | 50 app launches |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
