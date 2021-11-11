@@ -28,7 +28,7 @@ If you don't use a custom solution, you'll be working in one of these default so
 ## Why you shouldn't use the default solutions to manage customizations
 
 There are a few reasons why you shouldn't create apps and make customizations in either of the default solutions:  
-- When you use either default solution to create components, you'll also use the default publisher assigned to the solution. This often results in the wrong publisher prefix being applied to some components.
+- When you use either default solution to create components, you'll also use the default publisher assigned to the solution. This often results in the wrong publisher prefix being applied to some components. More information: [Solution publisher](solution-concepts-alm.md#solution-publisher)
 - The default solution can't be exported; therefore, you can't distribute the default solution to another environment.
 - If you aren't consistently using the same solution while you're configuring the environment, you may accidentally leave components behind that are necessary to deploy your application to another environment.
 
