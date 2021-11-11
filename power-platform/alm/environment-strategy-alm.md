@@ -66,7 +66,7 @@ Power Platform environments follow a specific service update schedule as environ
 When you have multiple environments in different regions, it’s important to understand the following when you import a solution:
 
 - You *can* import a solution into an environment that is a newer version than the environment where the solution was exported. 
-- You *can’t* import a solution into an environment that’s an older version than the environment where the solution was exported.
+- You *can’t* reliably import a solution into an environment that’s an older version than the environment where the solution was exported. This is because there may be  missing components in the older environment, which causes "there are missing dependencies" errors during solution import.
 
 #### Example of successfully aligning environments with service update stations
 
