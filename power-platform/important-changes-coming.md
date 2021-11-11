@@ -23,9 +23,12 @@ Admins and IT professionals can use this information to prepare for future relea
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability will continue to work and is fully supported until it is officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
 
-## OData v2.0 Service removal
+## Dataverse OData v2.0 Service removal
 
-We plan to remove the OData v2.0 Organization Data Service on November 11, 2022.
+We plan to remove the Dataverse OData v2.0 Organization Data Service on November 11, 2022.
+
+> [!NOTE]
+> This announcement does not involve the deprecated Organization Service SOAP endpoint. At this time, no date has been announced for the removal of the SOAP endpoint.
 
 The Organization Data Service is an OData v2.0 endpoint introduced with Dynamics CRM 2011. The Organization Data Service was deprecated with Dynamics 365 Customer Engagement v8.0 in favor of the Web API, an OData v4.0 service. Today, less than .06% of requests to Dataverse use this endpoint. Removing this endpoint will enable Dataverse to improve overall performance.
 
