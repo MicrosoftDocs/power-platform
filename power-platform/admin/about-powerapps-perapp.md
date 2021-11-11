@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/28/2021
+ms.date: 11/11/2021
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -119,7 +119,7 @@ The per app license gives a user access to one Power Apps or one portal for a si
   <tr>
     <td>User 1</td>
     <td>App A</td>
-    <td>App A</td>
+    <td>App B</td>
     <td>Portal 1</td>
     <td></td>
     <td></td>
