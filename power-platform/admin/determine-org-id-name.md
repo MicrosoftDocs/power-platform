@@ -28,7 +28,7 @@ To find your organization ID and name:
 
 3. Under **Instance Reference Information**, make note of **ID** and **Unique Name**. **Unique Name** is the organization name.
 
-    :::image type="content" source="media/org-id-name.png" alt-text="Find the organization ID and name.":::
+    :::image type="content" source="media/org-id-name-sm.png" alt-text="Find the organization ID and name.":::
 
 > [!NOTE]
 > The organization name is derived from the domain name when the environment was provisioned. You cannot change the organization name using the [Business Unit](create-edit-business-units.md) form but it can be changed using the [Web API](/dynamics365/customer-engagement/web-api/businessunit?view=dynamics-ce-odata-9).
