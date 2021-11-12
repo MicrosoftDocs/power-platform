@@ -48,6 +48,8 @@
          href: authoring-system-fallback-topic.md
        - name: Manage topics
          href: authoring-topic-management.md
+       - name: Add comments to bots (Preview)
+         href: authoring-comments.md
        - name: Test your bot
          href: authoring-test-bot.md
        - name: Supported languages
@@ -60,7 +62,7 @@
          href: advanced-ai-features.md
        - name: Use entities and slot filling
          href: advanced-entities-slot-filling.md
-       - name: Use variables
+       - name: Use variables (Preview)
          href: authoring-variables.md
        - name: Reuse variables across topics
          href: authoring-variables-bot.md
@@ -142,7 +144,7 @@
          href: configure-sso-teams.md
        - name: Configure hand-off to a generic engagement hub
          href: configure-generic-handoff.md
-       - name: Configure hand-off to Omnichannel for Customer Service
+       - name: Configure voice and text hand off to Dynamics 365 Customer Service
          href: configuration-hand-off-omnichannel.md
        - name: Configure the bot to automatically start the conversation
          href: configure-bot-greeting.md
