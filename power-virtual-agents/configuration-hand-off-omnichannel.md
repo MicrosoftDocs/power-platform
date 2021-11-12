@@ -97,13 +97,9 @@ Sign in to the Power Virtual Agents bot you want to connect to your omnichannel 
     >  
     >1. Sign in to Power Apps and select the managed bot's environment.  
     >1. Select the **Solutions** tab on the side navigation pane, and then select the solution that contains the bot with the unmanaged layer.  
-    >  
     >1. Select **See solution layers** from the contextual **...** menu next to the chatbot component in the solution.  
-    >
-    >    ![Solution layer selection in Power Apps.](media/handoff-no-extension.png)  
-    >    
-    >1. Select the unmanaged layer and then select **Remove unmanaged layer**.  
-    >  
+    >    ![Solution layer selection in Power Apps.](media/handoff-no-extension.png)      
+    >1. Select the unmanaged layer and then select **Remove unmanaged layer**.    
     >    ![Remove unmanaged layer in Power Apps.](media/handoff-no-extension.png)
     >    
     >If the bot _doesn't_ have omnichannel capabilities enabled, the message will always show. 
