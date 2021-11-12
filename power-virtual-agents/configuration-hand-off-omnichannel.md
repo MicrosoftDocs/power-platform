@@ -2,7 +2,7 @@
 title: "Configure hand-off to Dynamics 365 Customer Service"
 description: "Have human agents intercede in voice-based and text-based bot conversations by connecting Power Virtual Agents to Dynamics 365 Customer Service omnichannel capabilities."
 keywords: "PVA"
-ms.date: 11/01/2021
+ms.date: 11/11/2021
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw  
@@ -80,15 +80,31 @@ Sign in to the Power Virtual Agents bot you want to connect to your omnichannel 
     >You must [install at least the omnichannel extension solution](#install-extension-solutions) for hand off to Omnichannel to work.  
     >  
     >![Notification at the top of the omnichannel configuration panel that says your bot doesn't have access.](media/handoff-no-extension.png)
+    <a id="managed-bot-oc"></a>
+    
+    
+    >[!IMPORTANT]   
+    >  
+    >If you've [set up ALM for your Power Virtual Agents bots](/power-platform/alm/basics-alm), and are exporting and impoting bots between [sandbox (unmanaged) and test or production (managed) environments](/power-platform/alm/basics-alm#types-of-environments-used-in-alm), you might see a message that says we can't determine if omnichannel integration is enabled for the managed environment's bot.
+    >
+    >:::image type="content" source="media/transfer-managed-bot.png" alt-text="Message that says we can't determine if this bot has omnichannel enabled or disabled.":::
+    >
+    >If the bot you exported _does_ have omnichannel capabilities enabled, you can ignore this message as the bot will still work properly. 
+    >  
+    >The message will disappear after you export the latest versions of your bot from your unmanaged environment (first confirming that omnichannel integration is enabled), and then import it into your targeted, managed environment.
+    >
+    >If the message continues to show after exporting and importing the latest version of your bot, ensure that you have [removed any unmanaged layers from your bot's solution](/powerapps/maker/data-platform/solution-layers#remove-an-unmanaged-layer).
+    >    
+    >If the bot _doesn't_ have omnichannel capabilities enabled, the message will always show. 
+    
 
 1. Under **See the environment this bot is connected to**, select the environment where your omnichannel instance is provisioned.
 
-    >[!IMPORTANT]
-    >You'll see a message if you haven't set up omnichannel in the environment you select here.  
+   >[!NOTE]
+    >You'll see a message inviting you to begin a trial if you haven't set up omnichannel in the environment you select here.
     >  
-    >You might also see this message if you're using a [managed bot](authoring-export-import-bots.md). If the managed bot has omnichannel capabilities enabled, the message will disappear after your next import. If the bot doesn't have omnichannel capabilities enabled, the message will continue to show.
-    >  
-    >:::image type="content" source="media/transfer-no-oc.png" alt-text="Message that says you haven't set up Omnichannel in this environment.":::
+    >:::image type="content" source="media/transfer-no-oc.png" alt-text="Message that says you haven't set up omnichannel integration in this environment.":::
+
 
 1. Follow the steps to create or reuse an existing Azure application ID. Copy the *Application (client) ID* and paste it in the text box provided.
 
