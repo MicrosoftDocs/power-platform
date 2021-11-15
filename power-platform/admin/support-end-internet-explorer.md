@@ -21,10 +21,8 @@ search.app:
 
 > [!IMPORTANT]
 > With 2022 release wave 1, Internet Explorer 11 will be blocked. Please switch to a modern browser.
-
-> [!NOTE]
+> 
 > Dynamics 365 App for Outlook users using Outlook desktop client on Windows 10 lower than 1903 or Office versions lower than 16.0.11629 can continue to use Internet Explorer 11. These users won't be blocked. For more information on Internet Explorer 11 support in Office products [See Microsoft Edge WebView for Office Add-ins](https://devblogs.microsoft.com/microsoft365dev/microsoft-edge-webview-for-office-add-ins/).   
-
 
 Microsoft Internet Explorer and Microsoft Edge Legacy support has ended. This topic outlines the experience that administrators and end users will see related to the support end. 
 
