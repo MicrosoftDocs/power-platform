@@ -97,7 +97,7 @@ For more information about generating and transferring an HSM-protected key over
 3.    [Manage encryption for an environment](#manage-encryption-for-an-environment) 
 
 
-Administrators can use the [Power Platform admin center](https://admin.powerplatform.microsoft.com/environments) or the [Power Platform administration module](/powershell/module/microsoft.powerapps.administration.powershell/get-powerappretrieveavailabletenantprotectionkeys) cmdlets to perform the tenant protection key management tasks described here.
+Administrators can use the [Power Platform admin center](https://admin.powerplatform.microsoft.com/environments) or the [Power Platform administration module](/powershell/module/microsoft.powerapps.administration.powershell) cmdlets to perform the tenant protection key management tasks described here.
   
 ### Generate or upload the encryption key for a tenant  
 All encryption keys are stored in the Azure Key Vault, and there can only be one active key at any time. Since the active key is used to encrypt all the environments in the tenant, managing the encryption is operated at the tenant level. Once the key is activated, each individual environment can then be selected to use the key for encryption. 
