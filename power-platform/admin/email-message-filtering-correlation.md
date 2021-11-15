@@ -73,7 +73,7 @@ The email correlation logic goes through each of theses correlation options, in 
     > ![Use correlation to track eamil converstions.](media/email-filter-image2.png)
 
 
-2. **Tracking token correlation**: When an email message is analyzed for correlation, if the subject contains a tracking token, then the system searches for existing emails in Dynamics 365 looking the same tracking token. If there's a match, then the new email message is tracked and related to it the exiting email. This is option is set to **On** by default.
+2. **Tracking token correlation**: When an email message is analyzed for correlation, if the subject contains a tracking token, then the system searches for existing emails in Dynamics 365 looking the same tracking token. If there's a match, then the new email message is tracked and related to it the existing email. This option is set to **On** by default.
 
    > [!NOTE]
    > Tracking token information is visible to the user and it can be changed which can cause an email to correlate with the wrong email.
