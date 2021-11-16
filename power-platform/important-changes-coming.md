@@ -57,6 +57,10 @@ Existing customers can create teams from their existing Microsoft 365 Groups and
 
 If you've questions about the deprecation, contact your Microsoft Customer Service representative or Microsoft Partner.
 
+## Support for viewing and managing application users in legacy web client is deprecated
+
+Effective February 2022, the list of "Application Users" will not be available under Advanced Settings->Security->Users. You can use Power Platform Admin Center (PPAC) to view and manage Application Users.
+
 ## The Analyze section, in mobile offline profiles is deprecated
 
 Effective September 2021, the **Analyze** action and the **Offline profile** report that is used to configure mobile offline profiles is deprecated. 
