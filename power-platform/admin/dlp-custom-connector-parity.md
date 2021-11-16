@@ -3,7 +3,7 @@ title: "Custom connector parity | MicrosoftDocs"
 description: About allowing makers to create and share custom connectors.
 ms.service: power-platform
 ms.topic: conceptual
-ms.date: 09/08/2021
+ms.date: 11/16/2021
 ms.subservice: admin
 author: mikferland-msft
 ms.author: miferlan
@@ -79,6 +79,9 @@ $UrlPatterns = @{
   )
 } 
 ```
+
+> [!NOTE]
+> In the following cmdlets, *PolicyName* refers to the unique GUID. You can retrieve the DLP GUID by running the **Get-DlpPolicy** cmdlet.
 
 ### Retrieve existing custom connector URL patterns for a policy
 ```powershell
