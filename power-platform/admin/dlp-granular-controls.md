@@ -102,7 +102,7 @@ Goal:
 -	Allow action GetRepositoryById of connector GitHub; block all other actions.
 
 > [!NOTE]
-> Use the DLP policy GUID for *PolicyName* in the following cmdlet.
+> In the following cmdlet, *PolicyName* refers to the unique GUID. You can retrieve the DLP GUID by running the **Get-DlpPolicy**cmdlet.
 
 ```powershell
 $ConnectorConfigurations = @{ 
@@ -222,7 +222,7 @@ For the HTTP connector:
   -	Deny all other URLs
 
 > [!NOTE]
-> Use the DLP policy GUID for *PolicyName* in the following cmdlet.
+> In the following cmdlet, *PolicyName* refers to the unique GUID. You can retrieve the DLP GUID by running the **Get-DlpPolicy**cmdlet.
 
 ```powershell
 $ConnectorConfigurations = @{ 

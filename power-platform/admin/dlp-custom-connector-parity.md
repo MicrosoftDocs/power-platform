@@ -81,7 +81,7 @@ $UrlPatterns = @{
 ```
 
 > [!NOTE]
-> Use the DLP policy GUID for *PolicyName* in the following cmdlets.
+> In the following cmdlets, *PolicyName* refers to the unique GUID. You can retrieve the DLP GUID by running the **Get-DlpPolicy**cmdlet.
 
 ### Retrieve existing custom connector URL patterns for a policy
 ```powershell
