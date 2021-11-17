@@ -1,7 +1,7 @@
 ---
 title: "Important changes (deprecations) coming in Power Apps, Power Automate and customer engagement apps"
 description: Important changes (deprecations) coming in Power Apps, Power Automate and customer engagement apps 
-ms.date: 11/11/2021
+ms.date: 11/17/2021
 ms.topic: "article"
 ms.assetid: 994cc854-17f6-45d6-bc20-fcf1a3f2d6d6
 searchScope:
@@ -59,7 +59,7 @@ If you've questions about the deprecation, contact your Microsoft Customer Servi
 
 ## Support for viewing and managing application users in legacy web client is deprecated
 
-Effective February 2022, the list of "Application Users" will not be available under Advanced Settings->Security->Users. You can use Power Platform Admin Center (PPAC) to view and manage Application Users.
+Effective February 2022, the list of "Application Users" will not be available under **Advanced Settings** > **Security** > **Users**. You can use the Power Platform admin center to view and manage application users.
 
 ## The Analyze section, in mobile offline profiles is deprecated
 
