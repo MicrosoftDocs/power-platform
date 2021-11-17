@@ -1,7 +1,7 @@
 ---
 title: "Important changes (deprecations) coming in Power Apps, Power Automate and customer engagement apps"
 description: Important changes (deprecations) coming in Power Apps, Power Automate and customer engagement apps 
-ms.date: 11/11/2021
+ms.date: 11/17/2021
 ms.topic: "article"
 ms.assetid: 994cc854-17f6-45d6-bc20-fcf1a3f2d6d6
 searchScope:
@@ -56,6 +56,10 @@ Effective February 2022, support for Microsoft 365 Groups (previously known as O
 Existing customers can create teams from their existing Microsoft 365 Groups and map them to individual records as per the requirements. They can also continue to use Microsoft 365 Groups but have a custom experience to host it inside Dynamics 365.
 
 If you've questions about the deprecation, contact your Microsoft Customer Service representative or Microsoft Partner.
+
+## Support for viewing and managing application users in legacy web client is deprecated
+
+Effective February 2022, the list of "Application Users" will not be available under **Advanced Settings** > **Security** > **Users**. You can use the Power Platform admin center to view and manage application users.
 
 ## The Analyze section, in mobile offline profiles is deprecated
 
