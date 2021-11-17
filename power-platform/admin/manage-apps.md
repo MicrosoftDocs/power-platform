@@ -152,6 +152,12 @@ Filters are applied to the **Select an environment** drop-down list as follows:
 2. Displays environments that only have a database.
 3. Displays environments that are only in a ready state. 
 
+### Error: Installing this app is only supported in environments that’ve been created with a database with the option to enable one or more Dynamics 365 apps  
+
+Installing Dynamics 365 applications, such as Dynamics 365 Sales, Dynamics 365 Customer Service etc., is only supported on environments that have been created with a database with the option to enable one or more D365 Applications. Try installing this application in an environment with a database and Dynamics Applications enabled on it. 
+
+> [!div class="mx-imgBorder"] 
+> ![Select Enable Dynamics 365 apps.](media/new-environment-page2-enable-apps-callout.png "Select Enable Dynamics 365 apps.")
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
