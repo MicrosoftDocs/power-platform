@@ -35,7 +35,8 @@ For more information about hand off, and how to use hand-off within a bot conver
 * Environments:
   * You must install the [extension solutions](#install-extension-solutions) in the same environment where you have your bots.
   - Your bot (and extension solutions) environment and omnichannel environment must be in the same [geographical region](data-location.md#data-locations).
-  - For voice-based hand off capabilities, your environments must be hosted in a datacenter within the [United States Azure geographic location](data-location.md#data-locations).
+  - For voice-based capabilities, your environments must be hosted in a datacenter within the [United States Azure geographic location](data-location.md#data-locations).
+  - For voice-based capabilities, your tenant and environment must be in the same [Azure geographic location](data-location.md#data-locations).
 * You need a [product license for Power Virtual Agents](https://go.microsoft.com/fwlink/?LinkId=2092080&clcid=0x409) and a [product license with the Chat Add-in for Dynamics 365 Customer service](/dynamics365/customer-engagement/omnichannel/try-chat-for-dynamics365).
 * You must be [assigned the omnichannel administrator role](/dynamics365/omnichannel/administrator/add-users-assign-roles#understand-roles-and-their-privileges) to connect bots with omnichannel.
 * You'll need an [application registered in Azure](/azure/active-directory/develop/howto-create-service-principal-portal#create-an-azure-active-directory-application) before you can connect to omnichannel.
