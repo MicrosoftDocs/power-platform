@@ -23,6 +23,21 @@ The Data Integrator is a point-to-point integration service used to integrate da
 
 While we are constantly evolving and driving fixes into the platform based on customer feedback, we understand there is a need to provide guidance when you run into issues. This topic walks you through error management and troubleshooting some of these issues.
 
+## Supported regions
+
+The Data Integrator offers support for the following regions:
+* Asia
+* Australia
+* Canada
+* Europe
+* India
+* Japan
+* South America
+* United Kingdom
+* United States
+
+There are no plans to enable Data Integrator within any other region.
+
 ## View health of project executions
 
 Every time a data integration project is executed (manually or scheduled), you can view the status of the execution on the admin dashboard and/or the project list page.  
