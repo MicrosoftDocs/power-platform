@@ -40,7 +40,7 @@ The target end user for AA4AM is the Power Platform Maker who is comfortable wit
 3. [Build applications with Azure DevOps Services](https://docs.microsoft.com/learn/paths/build-applications-with-azure-devops/)
 4. [Manage solutions in Power Apps and Power Automate](https://docs.microsoft.com/learn/modules/manage-solutions-power-automate/)
 
-The target user for setting up AA4AM would generally be an Administrator with a deeper understanding of Power Platform Environments and Solutions, Azure DevOps Pipelines, and Administration as well as familiarity with Azure Active Directory and Dataverse Administration.
+The target user for setting up AA4AM would generally be an Administrator with a deeper understanding of Power Platform Environments and Solutions, Azure Pipelines, and Administration as well as familiarity with Azure Active Directory and Dataverse Administration.
 
 ![The Maker Team](media/almacceleratoradvanced-components/TheMakerTeam.png)
 
