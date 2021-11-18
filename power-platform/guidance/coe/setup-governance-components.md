@@ -103,11 +103,10 @@ This Governance Components solution contains flows that you'll need to manually 
 There are three child flows which will need their **Run only users** properties updated.
 
 - HELPER - CanvasAppOperations Gov
-- HELPER - CloudFlowOperations Gov
 - HELPER - ObjectOperations Gov
 - Request Orphaned Objects Reassigned (Child)
 
-For all three of these flows, go to the details page and click the **Run only users** edit button.
+For all of the above flows, go to the details page and click the **Run only users** edit button.
 
 You will see all the connections in the child flow. For each one, change the value to **Use this connection (userPrincipalName\@company.com)**. If there is no connection for any of the connectors, go to **Data** > **Connections**, and create one for the connector.
 
