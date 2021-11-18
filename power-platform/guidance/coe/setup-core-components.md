@@ -221,17 +221,22 @@ When you first set up the CoE Starter Kit, enable these flows in a specific orde
     1. Select **Installed apps**.
     1. Select **See all** for Center of Excellence - Core Components.
     1. Select **Cloud flows**.
-1. Turn on: CLEANUP HELPER - Check Deleted (Cloud Flows), CLEANUP HELPER - Check Deleted (Model Driven Apps), CLEANUP HELPER - Check Deleted (Canvas Apps) and CLEANUP HELPER - Check Deleted (PVA).
-1. Turn on: CLEANUP - Admin \| Sync Template v3 (Check Deleted).
-1. Wait until it finishes before you turn on any other flows.
-1. Turn on: Admin \| Sync Template V3 (Connectors)
-1. Wait until it finishes before you turn on any other flows.
-1. Turn on the Admin \| Sync Template flows for the following object types: Apps, Custom Connectors, Desktop Flows, Flows, Model Driven Apps, and PVA
-1. Turn on Admin \| Sync Template v3.
-1. Wait for Admin \| Sync Template v3 to complete its run and then turn it back off. This will avoid write conflicts for large organizations.
-1. Check the Admin \| Sync Template flows for apps, flows and other resources and wait until all of these complete.
-1. Turn back on Admin \| Sync Template v3.
-1. Now you're ready to turn on all the other flows
+1. Turn on:
+    1. CLEANUP HELPER - Check Deleted (Cloud Flows)
+    2. CLEANUP HELPER - Check Deleted (Model Driven Apps)
+    3. CLEANUP HELPER - Check Deleted (Canvas Apps)
+    4. CLEANUP HELPER - Check Deleted (PVA)
+    5. CLEANUP HELPER - Check Deleted (Custom Connectors)
+3. Turn on: CLEANUP - Admin \| Sync Template v3 (Check Deleted).
+4. Wait until it finishes before you turn on any other flows.
+5. Turn on: Admin \| Sync Template V3 (Connectors)
+6. Wait until it finishes before you turn on any other flows.
+7. Turn on the Admin \| Sync Template flows for the following object types: Apps, Custom Connectors, Desktop Flows, Flows, Model Driven Apps, and PVA
+8. Turn on Admin \| Sync Template v3.
+9. Wait for Admin \| Sync Template v3 to complete its run and then turn it back off. This will avoid write conflicts for large organizations.
+10. Check the Admin \| Sync Template flows for apps, flows and other resources and wait until all of these complete.
+11. Turn back on Admin \| Sync Template v3.
+12. Now you're ready to turn on all the other flows
     1. Turn on all the flows starting with CLEANUP.
     1. Turn on the [Admin | Capacity Alerts](core-components.md#flows) if you would like to receive alerts when environments get close to approved capacity.
     1. Turn on the [Admin | Welcome Email v3](core-components.md#flows) if you would like to send welcome emails to new makers.
