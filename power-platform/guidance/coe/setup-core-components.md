@@ -190,7 +190,6 @@ There are several child flows which will need their **Run only users** propertie
 
 - HELPER - CloudFlowOperations
 - HELPER - CanvasAppOperations
-- HELPER - ObjectOperations
 - CLEANUP HELPER - Check Deleted (Canvas Apps)
 - CLEANUP HELPER - Check Deleted (Cloud Flows)
 - CLEANUP HELPER - Check Deleted (Model Driven Apps)
