@@ -2,7 +2,7 @@
 title: "Fundamentals - Publish a chatbot to various channels"
 description: "Publish your bot to the web, Microsoft Teams, Facebook, or even use an existing Azure Bot Service framework."
 keywords: "Publish; demo; demo website; channels, PVA"
-ms.date: 9/22/2020
+ms.date: 11/22/2021
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -17,16 +17,17 @@ ms.collection: virtual-agent
 Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
+>
 > - [Power Virtual Agents web app](publication-fundamentals-publish-channels.md)
 > - [Power Virtual Agents app in Microsoft Teams](teams/publication-fundamentals-publish-channels-teams.md)
 
-With Power Virtual Agents, you can publish bots to engage with your customers on multiple platforms or channels. These include live websites, mobile apps, and messaging platforms like Microsoft Teams and Facebook. 
+With Power Virtual Agents, you can publish bots to engage with your customers on multiple platforms or channels. These include live websites, mobile apps, and messaging platforms like Microsoft Teams and Facebook.
 
-After you've published at least once, you can connect your bot to additional channels. 
+After you've published at least once, you can connect your bot to additional channels.
 
 Each time you want to update your bot, you publish it again from within the Power Virtual Agents app itself. This will update the bot across all the channels where you've inserted or connected your bot.
 
->   
+>
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4mGa9]
 >
 
@@ -34,24 +35,23 @@ Each time you want to update your bot, you publish it again from within the Powe
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 
-
 ## Publish the latest bot content
 
-You need to publish the bot at least once before your customers can interact with it or you can share it with your teammates. 
+You need to publish the bot at least once before your customers can interact with it or you can share it with your teammates.
 
 After the first publish, you can do subsequent publishes whenever you would like your customers to engage with the latest bot content.
 
 **Publish the latest bot content:**
 
-1. Go to the **Publish** tab on the side navigation pane. 
+1. Go to the **Publish** tab on the side navigation pane.
 
 2. Select **Publish** to make the latest bot content available to your customers.
 
     ![Publish latest bot content.](media/channel-publish-latest-content.png)
 
-The publishing process will check for errors in the latest bot content.
+    The publishing process will check for errors in the latest bot content.
 
-![Validate latest bot content for publish.](media/channel-publish-validation.png)
+    ![Validate latest bot content for publish.](media/channel-publish-validation.png)
 
 Publication should take less than a few minutes and, when successful, you can view the bot in action and share it with your team by selecting the **demo website** link. This is useful to gather feedback from stakeholders involved in the bot. The link will open a new tab and display a prebuilt demo website where you and your team can interact with the bot.
 
@@ -78,10 +78,9 @@ Each channel requires different steps and configurations, which can be found in 
 - [Add bot to mobile and custom apps (web-based or native)](publication-connect-bot-to-custom-application.md)
 - [Add bot to Azure Bot Service channels](publication-connect-bot-to-azure-bot-service-channels.md)
 
-
-
 ## Channel experience reference table
-Different channels have different end-user experiences. The following table shows a high-level overview of the experiences for each channel. You can take the channel experiences into account when optimizing your bot content for specific channels.
+
+Different channels have different end-user experiences. The following table shows a high-level overview of the experiences for each channel. Take the channel experiences into account when optimizing your bot content for specific channels.
 
  Experience | Website | Microsoft Teams(1) | Facebook | Dynamics Omnichannel for Customer Service
  ---|---|---|---|---
@@ -89,7 +88,7 @@ Different channels have different end-user experiences. The following table show
  [Multiple-choice options](authoring-create-edit-topics.md#insert-nodes) | Supported | [Supported up to 6](/microsoftteams/platform/concepts/cards/cards-reference#hero-card) | [Supported up to 13](https://developers.facebook.com/docs/messenger-platform/send-messages/quick-replies/) | [Partially Supported](/dynamics365/customer-service/asynchronous-channels#suggested-actions-support)
  [Markdown](https://daringfireball.net/projects/markdown/) | Supported | [Partially Supported](/microsoftteams/platform/bots/how-to/format-your-bot-messages#text-only-messages) | [Partially supported](https://www.facebook.com/help/147348452522644?helpref=related) | [Partially Supported](/dynamics365/customer-service/asynchronous-channels#card-support)
  [Welcome message](authoring-create-edit-topics.md#insert-nodes) | Supported | Supported | Not supported | Supported for [Microsoft Teams](/dynamics365/customer-service/configure-microsoft-teams) and [Chat](/dynamics365/customer-service/set-up-chat-widget). Not supported for other channels.
-
+ Did-You-Mean | Supported | Supported up to 6 | Unknown | Suggested actions will be presented as a text-only list that users will need to type
 
 >[!IMPORTANT]
 >Users can't send attachments to Power Virtual Agents chatbots. If they try to upload a file (including media, such as images), the bot will say:
@@ -100,15 +99,12 @@ Different channels have different end-user experiences. The following table show
 >
 >Attachments can be supported if the message is sent to a skill, where the skill bot supports the processing of attachments. See the [Use Microsoft Bot Framework skills topic](advanced-use-skills.md) for more details on skills.
 
-
- ## In this section
-
+## In this section
 
 - [Configure the demo website and add the bot to your live website](publication-connect-bot-to-web-channels.md) | Publish your bot on your live website, or use a demo website to share internally.
 - [Add bot to Microsoft Teams](publication-add-bot-to-microsoft-teams.md) | Use Teams to distribute your bot.
 - [Add bot to Facebook](publication-add-bot-to-facebook.md) | Add your bot to Facebook Messenger.
 - [Add bot to mobile and custom apps (web-based or native)](publication-connect-bot-to-custom-application.md) | Add your bot to mobile or custom native apps (developer coding required).
 - [Add bot to Azure Bot Service channels](publication-connect-bot-to-azure-bot-service-channels.md) | Add your bot to Azure Bot Service channels (developer coding required).
-
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
