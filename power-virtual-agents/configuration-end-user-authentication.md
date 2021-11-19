@@ -63,6 +63,9 @@ This configuration option provides no authentication for the bot. This is the st
 
 ### Only for Teams
 
+> [!IMPORTANT] 
+> When choosing this option, only the Teams channel will be available. All other channels will be disabled and a warning will be displayed.
+
 This configuration option is optimized for Teams channel usage. It automatically sets up Azure Active Directory (Azure AD) authentication for Teams without the need for any manual configuration. 
 
 It uses the Teams authentication itself to identify the user, meaning the user will not be prompted to sign-in while in Teams, unless there is a need for expanded scope. Only the Teams channel is available once this configuration is selected. 
