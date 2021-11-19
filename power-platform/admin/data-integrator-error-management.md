@@ -4,7 +4,7 @@ description: "Troubleshoot issues and manage errors when executing data integrat
 ms.service: power-platform
 ms.topic: how-to
 ms.component: cds
-ms.date: 02/04/2021
+ms.date: 11/19/2021
 author: sabinn-msft
 ms.subservice: admin
 ms.author: sabinn
@@ -25,20 +25,19 @@ While we are constantly evolving and driving fixes into the platform based on cu
 
 ## Supported regions
 
-The Data Integrator offers support for the following regions:
-* Asia
-* Australia
-* Canada
-* Europe
-* India
-* Japan
-* South America
-* United Kingdom
-* United States
+The Data Integrator is supported for the following regions:
+- Asia
+- Australia
+- Canada
+- Europe
+- India
+- Japan
+- South America
+- United Kingdom
+- United States
 
-There are no plans to enable Data Integrator within any other region.
+There are no plans to enable Data Integrator for any other region.
 
-## View health of project executions
 ## View health of project executions
 
 Every time a data integration project is executed (manually or scheduled), you can view the status of the execution on the admin dashboard and/or the project list page.  
