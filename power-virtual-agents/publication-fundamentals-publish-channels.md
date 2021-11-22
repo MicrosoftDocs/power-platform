@@ -12,7 +12,7 @@ ms.custom: "publication, fundamentals, ceX"
 ms.collection: virtual-agent
 ---
 
-# Key Concepts - Publish your bot
+# Key concepts - Publish your bot
 
 Select the version of Power Virtual Agents you're using here:
 
@@ -37,9 +37,7 @@ Each time you want to update your bot, you publish it again from within the Powe
 
 ## Publish the latest bot content
 
-You need to publish the bot at least once before your customers can interact with it or you can share it with your teammates.
-
-After the first publish, you can do subsequent publishes whenever you would like your customers to engage with the latest bot content.
+You need to publish the bot at least once before your customers can interact with it or before you can share it with your teammates. After the first publish, you can publish the bot again whenever you would like your customers to engage with the latest bot content. 
 
 **Publish the latest bot content:**
 
@@ -53,7 +51,7 @@ After the first publish, you can do subsequent publishes whenever you would like
 
     ![Validate latest bot content for publish.](media/channel-publish-validation.png)
 
-Publication should take less than a few minutes and, when successful, you can view the bot in action and share it with your team by selecting the **demo website** link. This is useful to gather feedback from stakeholders involved in the bot. The link will open a new tab and display a prebuilt demo website where you and your team can interact with the bot.
+Publication should take less than a few minutes. When successful, you can view the bot in action and share it with your team by selecting the **demo website** link. The link will open a new tab and display a prebuilt demo website where you and your team can interact with the bot. This is useful to gather feedback from stakeholders involved in the bot.
 
 ![Go to demo website.](media/channel-go-to-demo-website.png)
 
@@ -62,11 +60,11 @@ Go to the [Configure the demo website and add the bot to your live website](publ
 > [!TIP]
 > **What's the difference between the test chat and the demo website?**  
 > The demo website lets you share a URL with other members of your team, or other stakeholders who want to try out the bot. It's not intended for production uses (for example, you shouldn't use it directly with customers).  
-> The test chat is intended for bot authors to test how conversation nodes flow and if there are errors when they are creating and testing their bot.
+> The test chat is intended for bot authors to test how conversation nodes flow and to check if for errors when they are creating and testing their bot.
 
 ## Configure channels
 
-After publishing your bot at least once, you can add channels to make the bot reachable by your customers. You can see what channels we currently support by selecting **Manage** and going to the **Channels** tab in the side navigation pane.
+After publishing your bot at least once, you can add channels to make the bot reachable by your customers. The channels we currently support by selecting **Manage** and going to the **Channels** tab in the side navigation pane.
 
 ![Channel settings.](media/channel-channels-menu.png)
 
