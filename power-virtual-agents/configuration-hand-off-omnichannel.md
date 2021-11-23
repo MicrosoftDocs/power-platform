@@ -74,10 +74,11 @@ Sign in to the Power Virtual Agents bot you want to connect to your omnichannel 
 
     * You may see a message that says we can't determine if omnichannel integration is enabled for the environment with the managed bot if you have [ALM enabled in your bot](#power-virtual-agent-bots-with-alm).
 
-   >[!NOTE]
-    >You'll see a message inviting you to begin a trial if you haven't set up omnichannel in the environment you select here.
-    >  
-    >:::image type="content" source="media/transfer-no-oc.png" alt-text="Message that says you haven't set up omnichannel integration in this environment.":::
+        :::image type="content" source="media/transfer-managed-bot.png" alt-text="Message that says we can't determine if this bot has omnichannel enabled or disabled.":::
+        
+1. Under **See the environment this bot is connected to**, select the environment where your omnichannel instance is provisioned. You'll see a message inviting you to begin a trial if you haven't set up omnichannel in the environment you select here.
+
+    :::image type="content" source="media/transfer-no-oc.png" alt-text="Message that says you haven't set up omnichannel integration in this environment.":::
 
 
 1. Follow the steps to create or reuse an existing Azure application ID. Copy the *Application (client) ID* and paste it in the text box provided.
