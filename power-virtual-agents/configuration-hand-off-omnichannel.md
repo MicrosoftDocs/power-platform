@@ -40,12 +40,7 @@ For more information about hand off, and how to use hand-off within a bot conver
 * You must be [assigned the omnichannel administrator role](/dynamics365/omnichannel/administrator/add-users-assign-roles#understand-roles-and-their-privileges) to connect bots with omnichannel.
 * You'll need an [application registered in Azure](/azure/active-directory/develop/howto-create-service-principal-portal#create-an-azure-active-directory-application) before you can connect to omnichannel.
 * [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
-
->[!IMPORTANT]
->Your bot must be in a published state for end-to-end capabilities to work as expected. Ensure that you have [published your bot](./publication-fundamentals-publish-channels.md) prior to validating the integrated experience.  
->  
->If you want to test the bot on your custom website, you must use the embed code that is specified in the chat widget you set up in Omnichannel (see **Prerequisites** in the [Integrate a Power Virtual Agents bot](/dynamics365/omnichannel/administrator/configure-bot-virtual-agent#prerequisites) article). If you use the embed code from the Power Virtual Agents site, hand-off will not occur correctly.
-
+* Your bot must be in a published state for end-to-end capabilities to work as expected. Ensure that you have [published your bot](./publication-fundamentals-publish-channels.md) prior to validating the integrated experience.  
 
 ## Install extension solutions
 
@@ -133,6 +128,9 @@ After you've configured the connection, you'll see your bot in the **Omnichannel
 ![Connected bot details in Power Virtual Agents.](media/handoff-bot-connected.png)
 
 You can also toggle voice capabilities on or off.
+
+>[!IMPORTANT]
+>If you want to test the bot on your custom website, you must use the embed code that is specified in the chat widget you set up in Omnichannel (see **Prerequisites** in the [Integrate a Power Virtual Agents bot](/dynamics365/omnichannel/administrator/configure-bot-virtual-agent#prerequisites) article). If you use the embed code from the Power Virtual Agents site, hand-off will not occur correctly.
 
 ### Disconnect your bot from omnichannel or disable the omnichannel connection
 
