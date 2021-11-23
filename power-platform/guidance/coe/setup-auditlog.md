@@ -58,17 +58,13 @@ Using these steps, you'll set up an Azure AD app registration that will be used 
 
       ![Delegated permissions.](media/coe36.png "Delegated permissions")
 
-   1. Select **Application permissions**, and then select **ActivityFeed.Read** and **ServiceHealth.Read**.
-
-      ![Application permissions.](media/coe37.png "Application permissions")
+   1. Select **Application permissions**, and then select **ActivityFeed.Read**.
 
    1. Select **Add permissions**.
 
 1. Select **Grant Admin Consent for (your organization)**.
 
-   The API permissions now reflect delegated **ActivityFeed.Read**, and application **ActivityFeed.Read** and **ServiceHealth.Read** permissions, with a status of **Granted for _(your organization)_**.
-
-   ![API permissions.](media/coe38.png "API permissions")
+   The API permissions now reflect delegated **ActivityFeed.Read**, and application **ActivityFeed.Read** permissions, with a status of **Granted for _(your organization)_**.
 
 1. Select **Certificates and secrets**.
 
@@ -150,7 +146,7 @@ Go back to the custom connector to set up a connection to the custom connector a
 
    ![Custom connector Start Subscription.](media/coe43.png "Custom connector Start Subscription")
 
-1. Paste the **directory (tenant) ID**&mdash;copied earlier from the **App Registration** overview page in Azure AD&mdash;into the **Tenant** field, and then paste the **application (client) ID** into **PublisherIdentifier**.
+1. Paste the **directory (tenant) ID**&mdash;copied earlier from the **App Registration** overview page in Azure AD&mdash;into the **Tenant** field, and then paste the **Tenant ID** into **PublisherIdentifier**.
 
 1. Select **Test Operation**.
 

@@ -90,13 +90,15 @@ This is the first step of the installation process and is required for every oth
     |Approval Admin | The email address used in flows to send approvals to admins; this cannot be a distribution list. |
     | Community URL         | Link to your internal Microsoft Power Platform community (for example, Yammer or Teams).  |
     | Developer Compliance Center URL        | Leave empty on Import and do the following to populated after set up of the [Governance components](setup-governance-components.md).<br> Navigate to the details page of the Developer Compliance Center (canvas app) included with this solution, and copy the web link (to launch the app) and paste it into this variable.  |
-    | Environment Request Admin App Url | Link to the **Admin - Power Platform Resouce RMS** canvas app included in this solution. Leave empty on Import and fill it in once the app is installed. <br> To do that, navigate to the details page of the **Admin - Power Platform Resouce RMS** (canvas app) included with this solution, and use the wek link (to launch the app).  |
+    | Environment Request Admin App Url | Link to the **Admin - Environment Request** canvas app included in this solution. Leave empty on Import and fill it in once the app is installed. <br> To do that, navigate to the details page of the **Admin - Environment Request** (canvas app) included with this solution, and use the wek link (to launch the app).  |
     |PowerApp Maker environment variable | The maker URL used by PowerApps for your cloud, including trailing slash. Here are examples:<br> For a US environment: <https://make.powerapps.com/> <br> For a GCC environment: <https://make.gov.powerapps.us/> <br>For a GCC High environment: <https://make.high.powerapps.us/> |
     |PowerApp Player environment variable<br>For a DoD environment: <https://make.apps.appsplatform.us/> |
     |PowerApp Player environment variable | The player URL used by PowerApps for your cloud, including trailing slash. Here are examples:<br> For a US environment: <https://apps.powerapps.com/> <br> For a GCC environment: <https://apps.gov.powerapps.us/> <br>For a GCC High environment: <https://apps.gov.powerapps.us/> <br>For a DoD environment: <https://play.apps.appsplatform.us> |
     |Power Automate environment variable | The URL used by flow for your region. Here are examples:<br> For a US environment: <https://us.flow.microsoft.com/manage/environments/> <br> For a Canadian environment: <https://canada.flow.microsoft.com/manage/environments/> <br>For an EMEA environment: <https://emea.flow.microsoft.com/manage/environments/> <br>For a GCC environment: <https://gov.flow.microsoft.us/manage/environments/> <br> For a GCC High environment: <https://high.flow.microsoft.us/manage/environments><br> For a DoD environment: <https://flow.appsplatform.us/manage/environments/><br>If your region is not listed here, navigate to [flow.microsoft.com](https://flow.microsoft.com) and copy the URL the page directs to from the browser.|
     | Power Platform Maker Microsoft 365 Group | The Admin \| Welcome Email flow sends a welcome email to onboard new makers and adds them to a Microsoft 365 group. You can use this group to send communications to your makers or invite them to a Yammer or Teams group. Configure the group ID here.|
     | TenantID | Your Azure Tenant ID.|
+    | Command Center - Application Client ID | Application Client ID for the app registered to fetch M365 Service Messages. Leave empty on Import. |
+    | Command Center - Client Secret | Client Secret for the app registered to fetch M365 Service Messages. Leave empty on Import. |
 
 1. Select **Import**.
 
@@ -164,12 +166,14 @@ Before you begin:
     |Approval Admin | The email address used in flows to send approvals to admins; this cannot be a distribution list. |
     | Community URL         | Link to your internal Microsoft Power Platform community (for example, Yammer or Teams).  |
     | Developer Compliance Center         | Leave empty on Import and do the following to populated after set up of the [Governance components](setup-governance-components.md).<br> Navigate to the details page of the Developer Compliance Center (canvas app) included with this solution, and copy the web link (to launch the app) and paste it into this variable.  |
-    | Environment Request Admin App Url | Link to the **Admin - Power Platform Resouce RMS** canvas app included in this solution. Leave empty on Import and fill it in once the app is installed. <br> To do that, navigate to the details page of the **Admin - Power Platform Resouce RMS** (canvas app) included with this solution, and use the wek link (to launch the app).  |
+    | Environment Request Admin App Url | Link to the **Admin - Environment Request** canvas app included in this solution. Leave empty on Import and fill it in once the app is installed. <br> To do that, navigate to the details page of the **Admin - Environment Request** (canvas app) included with this solution, and use the wek link (to launch the app).  |
     |PowerApp Maker environment variable | The maker URL used by PowerApps for your cloud, including trailing slash. Here are examples:<br> For a US environment: <https://make.powerapps.com/> <br> For a GCC environment: <https://make.gov.powerapps.us/> <br>For a GCC High environment: <https://make.high.powerapps.us/> |
     |PowerApp Player environment variable | The player URL used by PowerApps for your cloud, including trailing slash. Here are examples:<br> For a US environment: <https://apps.powerapps.com/> <br> For a GCC environment: <https://apps.gov.powerapps.us/> <br>For a GCC High environment: <https://apps.gov.powerapps.us/> |
     |Power Automate environment variable | The URL used by flow for your region. Here are examples:<br> For a US environment: <https://us.flow.microsoft.com/manage/environments/> <br> For a Canadian environment: <https://canada.flow.microsoft.com/manage/environments/> <br>For an EMEA environment: <https://emea.flow.microsoft.com/manage/environments/> <br>For a GCC environment: <https://gov.flow.microsoft.us/manage/environments/> |
     | Power Platform Maker Microsoft 365 Group | The Admin \| Welcome Email flow sends a welcome email to onboard new makers and adds them to a Microsoft 365 group. You can use this group to send communications to your makers or invite them to a Yammer or Teams group. Configure the group ID here.|
     | TenantID | Your Azure Tenant ID.|
+    | Command Center - Application Client ID | Application Client ID for the app registered to fetch M365 Service Messages. Leave empty on Import. |
+    | Command Center - Client Secret | Client Secret for the app registered to fetch M365 Service Messages. Leave empty on Import. |
 
 1. Select **Import**.
 
@@ -225,6 +229,7 @@ We will more quickly resolve issues around dependencies between tables by enabli
 1. Turn back on Admin \| Sync Template v3.
 1. Now you're ready to turn on all the other flows
     1. Turn on all the flows starting with CLEANUP.
+    1. Turn on and run the **Admin | Sync Template V3 Configure Emails** flow to populate the default texts for emails.
     1. Turn on the [Admin | Capacity Alerts](core-components.md#flows) if you would like to receive alerts when environments get close to approved capacity.
     1. Turn on the [Admin | Welcome Email v3](core-components.md#flows) if you would like to send welcome emails to new makers.
     1. Turn on the flows starting with Env Request and DLP Request if you are using the [Power Platform Request Center](core-components.md#power-platform-request-center). Make sure the Admin eMail and Environment Request Admin App Url [environment variables](#update-environment-variables) are configured before turning on those flows.
@@ -278,15 +283,10 @@ Using these steps, you'll set up an Azure AD app registration that will be used 
 
 1. Go to [make.powerapps.com](https://make.powerapps.com/), select **Solutions**, and then open the **Center of Excellence - Core Components** solution to view the flows.
 
-1. Edit the **Command Center App >  Get M365 Service Messages** flow.
-
-1. Update the **List serviceAnnouncements from Graph** with your client ID and client secret.
+1. We recommend storing the client ID and secret in Azure Key Vault and using the [Azure Key Vault connector](/connectors/keyvault/) to retrieve them in the flow. Edit the **Command Center App >  Get M365 Service Messages** flow to retrieve the values from Azure Key Vault and update the **List serviceAnnouncements from Graph** with your client ID and client secret.
     ![Update HTTP action with client ID and secret](media/commandcenter3.png "Update HTTP action with client ID and secret")
 
-    >[!NOTE]
-    > We recommend storing the client ID and secret in Azure Key Vault and using the [Azure Key Vault connector](/connectors/keyvault/) to retrieve them in the flow.
-
-1. **Save** this flow.
+1. Alternatively, you can use the **Command Center - Application Client ID** and **Command Center - Client Secret** [environment variables](#update-environment-variables) to save your client ID and secret values. The **Command Center App >  Get M365 Service Messages** flow is configured to retrieve values from those enviornment variable, so no changes to the flow are needed.
 
 ## Set up Audit Logs solution
 
@@ -349,7 +349,7 @@ Environment variables are used to store application and flow configuration data 
     | Community URL         | Link to your internal Microsoft Power Platform community (for example, Yammer or Teams).  |
     | Developer Compliance Center         | Leave empty on Import and do the following to populated after set up of the [Governance components](setup-governance-components.md).<br> Navigate to the details page of the Developer Compliance Center (canvas app) included with this solution, and copy the web link (to launch the app) and paste it into this variable.  |
     | eMail Header Style | the CSS / Style to use for eMails<br> Note a default is given so this will not appear on setup|
-    | Environment Request Admin App Url | Link to the **Admin - Power Platform Resouce RMS** canvas app included in this solution. Leave empty on Import and fill it in once the app is installed. <br> To do that, navigate to the details page of the **Admin - Power Platform Resouce RMS** (canvas app) included with this solution, and use the wek link (to launch the app).  |
+    | Environment Request Admin App Url | Link to the **Admin - Environment Request** canvas app included in this solution. Leave empty on Import and fill it in once the app is installed. <br> To do that, navigate to the details page of the **Admin - Environment Request** (canvas app) included with this solution, and use the web link (to launch the app).  |
     | Exclude Default environment from Compliance Request flows | Set to Yes if you want to Exclude the Default environment from the Admin \| Compliance Details request flow. <br> Note a default of Yes is given so this will not appear on setup|
     | FullInventory | Determines if you want to only update objects that have changed, or all objects. <br> Note a default of No is given so this will not appear on setup| 
     |PowerApp Maker environment variable | The maker URL used by PowerApps for your cloud, including trailing slash. Here are examples:<br> For a US environment: <https://make.powerapps.com/> <br> For a GCC environment: <https://make.gov.powerapps.us/> <br>For a GCC High environment: <https://make.high.powerapps.us/> |
@@ -358,5 +358,8 @@ Environment variables are used to store application and flow configuration data 
     | Power Platform Maker Microsoft 365 Group | The Admin \| Welcome Email flow sends a welcome email to onboard new makers and adds them to a Microsoft 365 group. You can use this group to send communications to your makers or invite them to a Yammer or Teams group. Configure the group ID here.|
     | ProductionEnvironment | Set to false if you are creating a dev type environment. This will allow some flows to set target users to the admin instead of object owners. <br> Note a default of Yes is given so this will not appear on setup|
     | TenantID | Your Azure Tenant ID.|
+    | Admin eMail Preferred Language | The preferred language for emails sent to the admin email alias, which is specified in the Admin eMail environment variable. A default value of en-US is provided so this will not appear on setup. |
+    | Command Center - Application Client ID | Application Client ID for the app registered to fetch M365 Service Messages. Leave empty on Import. |
+    | Command Center - Client Secret | Client Secret for the app registered to fetch M365 Service Messages. Leave empty on Import. |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
