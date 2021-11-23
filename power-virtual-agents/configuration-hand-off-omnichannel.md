@@ -76,7 +76,7 @@ Sign in to the Power Virtual Agents bot you want to connect to your omnichannel 
 
         :::image type="content" source="media/transfer-managed-bot.png" alt-text="Message that says we can't determine if this bot has omnichannel enabled or disabled.":::
         
-1. Under **See the environment this bot is connected to**, select the environment where your omnichannel instance is provisioned. You'll see a message inviting you to begin a trial if you haven't set up omnichannel in the environment you select here.
+1. Under **See the environment this bot is connected to**, select the environment where your omnichannel instance is provisioned. If you haven't set up omnichannel in the selected environment, you'll see a message inviting you to begin a trial.
 
     :::image type="content" source="media/transfer-no-oc.png" alt-text="Message that says you haven't set up omnichannel integration in this environment.":::
 
