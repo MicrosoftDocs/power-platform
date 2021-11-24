@@ -2,7 +2,7 @@
 title: "Fundamentals - Publish a chatbot to various channels"
 description: "Publish your bot to the web, Microsoft Teams, Facebook, or even use an existing Azure Bot Service framework."
 keywords: "Publish; demo; demo website; channels, PVA"
-ms.date: 11/22/2021
+ms.date: 11/24/2021
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -83,10 +83,10 @@ Different channels have different end-user experiences. The following table show
 | Experience | Website | Microsoft Teams(1) | Facebook | Dynamics Omnichannel for Customer Service |
 |---|---|---|---|---|
 | [Customer satisfaction survey](authoring-create-edit-topics.md#insert-nodes) | Adaptive card | Text-only | Text-only | Text-only |
-| [Multiple-choice options](authoring-create-edit-topics.md#insert-nodes) | Supported | [Supported up to 6](/microsoftteams/platform/concepts/cards/cards-reference#hero-card) | [Supported up to 13](https://developers.facebook.com/docs/messenger-platform/send-messages/quick-replies/) | [Partially Supported](/dynamics365/customer-service/asynchronous-channels#suggested-actions-support) |
+| [Multiple-choice options](authoring-create-edit-topics.md#insert-nodes) | Supported | [Supported up to 6 (as hero card)](/microsoftteams/platform/concepts/cards/cards-reference#hero-card) | [Supported up to 13](https://developers.facebook.com/docs/messenger-platform/send-messages/quick-replies/) | [Partially Supported](/dynamics365/customer-service/asynchronous-channels#suggested-actions-support) |
 | [Markdown](https://daringfireball.net/projects/markdown/) | Supported | [Partially Supported](/microsoftteams/platform/bots/how-to/format-your-bot-messages#text-only-messages) | [Partially supported](https://www.facebook.com/help/147348452522644?helpref=related) | [Partially Supported](/dynamics365/customer-service/asynchronous-channels#preview-support-for-formatted-messages) |
-| [Welcome message](authoring-create-edit-topics.md#insert-nodes) | Supported | Supported | Not supported | Supported for [Microsoft Teams](/dynamics365/customer-service/configure-microsoft-teams) and [Chat](/dynamics365/customer-service/set-up-chat-widget).<br> Not supported for other channels. |
-| [Did-You-Mean](advanced-ai-features.md#automatic-triggering-improvements-preview) | Supported | Supported up to 6 | Unknown | Supported for text-only channels (SMS, [WhatsApp](/dynamics365/customer-service/configure-whatsapp-channel), [WeChat](/dynamics365/customer-service/configure-wechat-channel), and [Twitter](/dynamics365/customer-service/configure-twitter-channel)).<br>Suggested actions will be presented as a text-only list; users will need to retype an option to respond |
+| [Welcome message](authoring-create-edit-topics.md#insert-nodes) | Supported | Supported | Not supported | Supported for [Microsoft Teams](/dynamics365/customer-service/configure-microsoft-teams) and [Chat](/dynamics365/customer-service/set-up-chat-widget). Not supported for other channels. |
+| [Did-You-Mean](advanced-ai-features.md#automatic-triggering-improvements-preview) | Supported | Supported up to 6 | Supported | Supported for text-only channels: SMS (via [TeleSign](/dynamics/customer-service/configure-sms-channel) and [Twilio](/dynamics365/customer-service-configure-sms-channel-twilio)), [WhatsApp](/dynamics365/customer-service/configure-whatsapp-channel), [WeChat](/dynamics365/customer-service/configure-wechat-channel), and [Twitter](/dynamics365/customer-service/configure-twitter-channel).<br>Suggested actions will be presented as a text-only list; users will need to retype an option to respond |
 
 >[!IMPORTANT]
 >Users can't send attachments to Power Virtual Agents chatbots. If they try to upload a file (including media, such as images), the bot will say:
