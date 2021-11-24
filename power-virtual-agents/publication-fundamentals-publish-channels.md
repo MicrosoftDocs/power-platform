@@ -60,7 +60,7 @@ Go to the [Configure the demo website and add the bot to your live website](publ
 > [!TIP]
 > **What's the difference between the test chat and the demo website?**  
 > The demo website lets you share a URL with other members of your team, or other stakeholders who want to try out the bot. It's not intended for production uses (for example, you shouldn't use it directly with customers).  
-> The test chat is intended for bot authors to test how conversation nodes flow and to check if for errors when they are creating and testing their bot.
+> The test chat is intended for bot authors to test how conversation nodes flow and to check for errors when they are creating and testing their bot.
 
 ## Configure channels
 
