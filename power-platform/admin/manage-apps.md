@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/10/2021
+ms.date: 11/29/2021
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -130,13 +130,25 @@ The process to install an app depends on your view.
 
 6. Agree to the terms of service, and then select **Install**.
 
+## Troubleshooting installation error
+
+If you see the following error:
+
+"Installing this application is only supported on environments that have been created with a database with option to enable one or more Dynamics 365 applications such as Dynamics 365 Sales, Dynamics 365 Customer Service, etc. Please try installing this application in an environment with a database and Dynamics Applications deployed on it."
+
+> [!div class="mx-imgBorder"] 
+> ![Installing this app is only supported on environments that have been created with a database with option to enable apps.](media/install-app-error.png "Installing this app is only supported on environments that have been created with a database with option to enable apps.")
+
+You'll need to follow the steps in [Create an environment with a database](create-environment.md#create-an-environment-with-a-database). You need to set **Enable Dynamics 365 apps** to **Yes**.
+
 ## Troubleshooting a failed installation
+
 If the app installation has failed, select **Installation failed** from the environment-level view and review the troubleshooting details. 
 
 If it's necessary to [contact Support](support-overview.md), be sure to provide the details listed on the **Error details** page.
 
 > [!div class="mx-imgBorder"] 
-> ![Error details.](media/app-management-error-details.png "Error details")
+> ![Error details.](media/app-management-error-details.png "Error details.")
 
 ## Delete an app
 For information on how to delete an app, see [Delete a model-driven app](/powerapps/maker/model-driven-apps/delete-model-driven-app). 
