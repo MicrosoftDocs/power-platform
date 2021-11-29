@@ -139,7 +139,7 @@ If you see the following error:
 > [!div class="mx-imgBorder"] 
 > ![Installing this app is only supported on environments that have been created with a database with option to enable apps.](media/install-app-error.png "Installing this app is only supported on environments that have been created with a database with option to enable apps.")
 
-You'll need to follow the steps in [Create an environment with a database](create-environment.md#create-an-environment-with-a-database). You need to set **Enable Dynamics 365 apps** to **Yes**.
+You'll need to create a new environment as directed in [Create an environment with a database](create-environment.md#create-an-environment-with-a-database). In Step 4, be sure to set **Enable Dynamics 365 apps** to **Yes**.
 
 ## Troubleshooting a failed installation
 
