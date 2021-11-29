@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/04/2020
+ms.date: 11/29/2021
 ms.subservice: admin
 ms.author: jimholtz 
 search.audienceType: 
@@ -53,7 +53,7 @@ Make sure you have the System Administrator or System Customizer security role o
 6. Select **OK** on any confirmation dialog boxes that open.  
 
    > [!NOTE]
-   >  It may take several minutes to provision or unprovision the languages.  
+   >  It may take an hour or more to provision or unprovision the languages.  
 
 7. Select **Close** to close the **Language Settings** dialog box.
 
