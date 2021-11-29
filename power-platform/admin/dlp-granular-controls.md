@@ -4,7 +4,7 @@ description: About fine-grained controls such as the ability to block specific c
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/16/2021
+ms.date: 11/28/2021
 ms.subservice: admin
 author: mikferland-msft
 ms.author: miferlan
@@ -24,7 +24,10 @@ search.app:
 
 # Granular DLP controls
 
-Although the connector classification capability is very helpful in governing Microsoft Power Platform connectors, fine-grained controls&mdash;such as the ability to block specific connector actions or connection endpoints&mdash;help you strike a balance between productivity and protection. 
+Although the connector classification capability is very helpful in governing Microsoft Power Platform connectors, fine-grained controls&mdash;such as the ability to block specific connector actions or connection endpoints&mdash;help you strike a balance between productivity and protection.
+
+> [!NOTE]
+> Both connector action control and connector endpoint filtering are currently in Public Preview.
 
 ## Connector action control 
 
