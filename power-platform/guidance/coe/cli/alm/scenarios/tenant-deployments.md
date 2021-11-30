@@ -19,9 +19,9 @@ search.app:
 
 # Tenant Deployments
 
-AA4AM can be deployed in the following scenarios single demo tenant, single enterprise tenant.
+AA4PP can be deployed in the following scenarios single demo tenant, single enterprise tenant.
 
-Currently AA4AM **does not** automatically support a multi tenant enterprise deployment model and additional manual configuration will be required to configure this scenario.
+Currently AA4PP **does not** automatically support a multi tenant enterprise deployment model and additional manual configuration will be required to configure this scenario.
 
 ![Deployments Scenarios](../../media/alm-deployments.png)
 
@@ -39,7 +39,7 @@ Currently AA4AM **does not** automatically support a multi tenant enterprise dep
 
 ## Demonstration Deployment
 
-In this scenario you are looking to quickly install AA4AM to demonstrate how it works and showcase the end to end process. For this scenario the following is expected:
+In this scenario you are looking to quickly install AA4PP to demonstrate how it works and showcase the end to end process. For this scenario the following is expected:
 
 1. Using Trial tenant and environments to demonstrate the solution
 
@@ -82,15 +82,15 @@ Once these steps are completed makers can then [Setup Managed Solutions](../make
 
 ## Enterprise Deployment
 
-In this scenario the aim is to install AA4AM inside an enterprise tenant and the following is expected.
+In this scenario the aim is to install AA4PP inside an enterprise tenant and the following is expected.
 
 1. Likely to have different administration teams. For example
    - Azure Active Directory Administrators
    - Power Platform Administrators. May be Global Administrator or Environment Administrators
    - Azure DevOps Administrators
-1. Configuration files for AA4AM install can be shared among different Administration teams
+1. Configuration files for AA4PP install can be shared among different Administration teams
 1. Makers have separate development environments to work on changes
-1. AA4AM Azure DevOps pipeline used to validate and promote to Test and Production environments
+1. AA4PP Azure DevOps pipeline used to validate and promote to Test and Production environments
 
 ### Azure Active Directory Administrators
 
@@ -201,7 +201,7 @@ This deployment type involves different Azure Active Directory deployments that 
 
 - contoso-dev.onmicrosoft.com
 
-Currently the AA4AM installation does not automatically support a multi-tenant deployment without further manual updated.
+Currently the AA4PP installation does not automatically support a multi-tenant deployment without further manual updated.
 
 ### Multi Tenant Deployment Assumptions
 

@@ -20,13 +20,13 @@ search.app:
 
 # Personas
 
-Understanding the roles that different personas play in ALM Accelerator for Power Platform (AA4AM) is important in helping you plan for and implement a AA4AM deployment in your organization.
+Understanding the roles that different personas play in ALM Accelerator for Power Platform (AA4PP) is important in helping you plan for and implement a ALM deployment in your organization.
 
 ## Persona Description
 
 ### Business Users
 
-Licensed internal users of the created solutions. Will not directly use the AA4AM tools they will be able to see the shared applications. May report version number of application to the support team.
+Licensed internal users of the created solutions. Will not directly use the AA4PP tools they will be able to see the shared applications. May report version number of application to the support team.
 
 ### Maker
 
@@ -34,7 +34,7 @@ Wants to use components or services produced by an advanced maker or professiona
 
 ### Advanced Maker
 
-Collaborates with Professional Development and Information Technology (IT) teams to integrate and build applications. Assumed to be familiar with concepts like Application Lifecycle Management (ALM), DevOps, Branching and Merging. Works in Development environment and push changes into validation and testing and production environments. Uses managed AA4AM Canvas management application and Azure DevOps website.
+Collaborates with Professional Development and Information Technology (IT) teams to integrate and build applications. Assumed to be familiar with concepts like Application Lifecycle Management (ALM), DevOps, Branching and Merging. Works in Development environment and push changes into validation and testing and production environments. Uses managed AA4PP Canvas management application and Azure DevOps website.
 
 ### Professional Developer
 
@@ -128,7 +128,7 @@ More information on the [coe alm install](https://github.com/microsoft/coe-start
 
 ## Solution Setup
 
-Assuming that AA4AM has been setup and installed, the first command that the Advanced Maker will run is the **coe alm user add** command. This command will register an Application User created during install as a System administrator in their development environment to integrate with the solution. For example using the default parameters
+Assuming that AA4PP has been setup and installed, the first command that the Advanced Maker will run is the **coe alm user add** command. This command will register an Application User created during install as a System administrator in their development environment to integrate with the solution. For example using the default parameters
 
 ```bash
 coe alm user add \
@@ -190,7 +190,7 @@ More information on the [coe alm connection add](https://github.com/microsoft/co
 
 ## Install
 
-To deploy an instance of AA4AM in your organization the **coe alm generate install** and **coe alm install** commands are used once to deploy the Managed solution. The install will automate key elements:
+To deploy an instance of AA4PP in your organization the **coe alm generate install** and **coe alm install** commands are used once to deploy the Managed solution. The install will automate key elements:
 
 1. Azure Active Directory
     - New Azure Active directory Application that will be used by Azure DevOps for Service Connections and Access to Power Platform Environment

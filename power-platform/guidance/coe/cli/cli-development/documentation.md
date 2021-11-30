@@ -42,7 +42,7 @@ Example diagrams:
 
 - [Maturity](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/alm/alm/maturity/maturity.mmd)
 
-- [AA4AM Decision Tree](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/alm/alm/maturity/decision-tree.mmd)
+- [AA4PP Decision Tree](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/alm/alm/maturity/decision-tree.mmd)
 
 ### Diagram Styles
 

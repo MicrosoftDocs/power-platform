@@ -25,7 +25,7 @@ The [Power CAT adoption maturity model](https://aka.ms/powercatadoptionmaturity)
 
 ![Decision Tree](./decision-tree.png)
 
-AA4AM is a good match if you can check to see if the following apply:
+AA4PP is a good match if you can check to see if the following apply:
 
 1. What is the impact of the solution?
    - Are the applications classified as Critical or High [Business Impact](#business-impact)?
@@ -42,7 +42,7 @@ AA4AM is a good match if you can check to see if the following apply:
    - Do you use Azure DevOps or can you integrate with Azure DevOps for Source Control and Build Pipelines?
    - Do you have license prerequisites in place?
      - Do you have Basic or above Azure DevOps licenses for Makers?
-     - Per App or Per User Power Apps licenses to access the AA4AM Maker Solution?
+     - Per App or Per User Power Apps licenses to access the AA4PP Maker Solution?
 
 1. Are you looking to move to Level 300 - Defined or beyond?
 

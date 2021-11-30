@@ -19,7 +19,7 @@ search.app:
 
 # Before You Start
 
-Before you start an install of AA4AM ensure that you have the following in place
+Before you start an install of ALM ensure that you have the following in place
 
 ## CoE Command Line
 
@@ -78,7 +78,7 @@ Global Administrator or Privileged Role Administrator|Grant tenant-wide admin co
 
 ### Azure DevOps
 
-The following must be installed before the CoE CLI AA4AM install can begin
+The following must be installed before the CoE CLI ALM install can begin
 
 Component | Description
 --------- | ----------

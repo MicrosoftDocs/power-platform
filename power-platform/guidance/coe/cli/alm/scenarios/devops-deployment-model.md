@@ -57,7 +57,7 @@ In this scenario the following elements are assumed:
 
 ## Multiple Power Platform Environments and DevOps
 
-This scenario is not a recommended deployment model as is requires the deployment and management of multiple AA4AM deployments withing the organization.
+This scenario is not a recommended deployment model as is requires the deployment and management of multiple AA4PP deployments withing the organization.
 
 In this scenario the following is assumed:
 

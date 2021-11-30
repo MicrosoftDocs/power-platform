@@ -27,7 +27,7 @@ Development as a team of Makers, Advanced Makers and Professional developers oft
 
 1. [Build Pipelines](/azure/devops/pipelines/get-started/key-pipelines-concepts) - What build pipelines are and how they help automate the integration and deployment process
 
-The ALM Accelerator for Power Platform (AA4AM) builds on these concepts to allow Power Platform solutions to be managed.
+The ALM Accelerator for Power Platform (AA4PP) builds on these concepts to allow Power Platform solutions to be managed.
 
 ## Example
 
@@ -58,9 +58,9 @@ More information on the [coe alm branch](https://github.com/microsoft/coe-starte
 
 3. The Advanced Maker **Alan Steiener** creates an unmanaged Solution named **Onboarding** in his development environment
 
-4. Using the AA4AM Administration application Alan Created a new feature branch and **Push changes to Git**
+4. Using the AA4PP Administration application Alan Created a new feature branch and **Push changes to Git**
 
-5. Once the initial set of features is complete **Create Pull Request** using the AA4AM Administration application. The validation build pipeline is executed. The Pull Request is approved and then the feature branch is committed to the solution branch
+5. Once the initial set of features is complete **Create Pull Request** using the AA4PP Administration application. The validation build pipeline is executed. The Pull Request is approved and then the feature branch is committed to the solution branch
 
 6. The merged commit can trigger a Continuous Deployment to the test environment
 
@@ -99,9 +99,9 @@ More information on the [coe alm branch](https://github.com/microsoft/coe-starte
 
 3. **Karen Berg** creates an unmanaged Solution named **Expense** in her development environment
 
-4. Using the AA4AM Administration application Karen creates a new feature branch with the ID of the work item that has been assigned **385** and **Push changes to Git**
+4. Using the AA4PP Administration application Karen creates a new feature branch with the ID of the work item that has been assigned **385** and **Push changes to Git**
 
-5. Once the initial set of features is complete **Create Pull Request** using the AA4AM Administration application. The validation build pipeline is executed. The Pull Request is approved and then the feature branch is committed to the solution branch
+5. Once the initial set of features is complete **Create Pull Request** using the AA4PP Administration application. The validation build pipeline is executed. The Pull Request is approved and then the feature branch is committed to the solution branch
 
 6. The merged commit can trigger a Continuous Deployment to the test environment
 

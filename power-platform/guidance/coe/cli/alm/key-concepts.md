@@ -20,7 +20,7 @@ search.app:
 
 # Key Concepts
 
-As you deploy and use the AA4AM CLI it is important to understand the following key concepts that the CLI is automating.
+As you deploy and use the ALM CLI it is important to understand the following key concepts that the CLI is automating.
 
 ## Azure Active Directory
 

@@ -77,14 +77,14 @@ coe alm maker add \
 
 ## Understand the Concepts
 
-Not sure what AA4AM is and how it can help? The main GitHub project [README](https://github.com/microsoft/coe-starter-kit/blob/main/ALMAcceleratorForAdvancedMakers/README.md) provides further context and examples of usage.
+Not sure what ALM is and how it can help? The main GitHub project [README](https://github.com/microsoft/coe-starter-kit/blob/main/ALMAcceleratorForAdvancedMakers/README.md) provides further context and examples of usage.
 
 ### Getting Started
 
-- [Scenarios](./scenarios/overview.md) - Discusses different install scenarios for AA4AM from Demo Installs to Enterprise Deployments
-- [Personas](./personas.md) - Understand the key personas and how they map to AA4AM CLI commands and the wider AA4AM process
+- [Scenarios](./scenarios/overview.md) - Discusses different install scenarios for ALM from Demo Installs to Enterprise Deployments
+- [Personas](./personas.md) - Understand the key personas and how they map to ALM CLI commands and the wider ALM process
 - [Key Concepts](./key-concepts.md) - Understand the key concepts for the components that are being automated under the hood by the CLI commands
-- [Branching and Merging](./branching-and-merging.md) - Provides examples of branching and merging approach using AA4AM
+- [Branching and Merging](./branching-and-merging.md) - Provides examples of branching and merging approach using ALM
 
 ### Overview
 
@@ -94,7 +94,7 @@ The diagram below provides an overview of the key components required and permis
 
 ### Sample Install
 
-The following recording shows a sample generating an install configuration file and installing AA4AM using the configuration file using a [Demo Deployment](./scenarios/tenant-deployments.md#demonstration-deployment).
+The following recording shows a sample generating an install configuration file and installing ALM using the configuration file using a [Demo Deployment](./scenarios/tenant-deployments.md#demonstration-deployment).
 
 ![Example](./install.svg)
 
@@ -114,7 +114,7 @@ Notes:
 
 ### Read Next
 
-- [ALM Accelerator for Power Platform](https://github.com/microsoft/coe-starter-kit/tree/main/ALMAcceleratorForAdvancedMakers) - Overview for AA4AM
+- [ALM Accelerator for Power Platform](https://github.com/microsoft/coe-starter-kit/tree/main/ALMAcceleratorForAdvancedMakers) - Overview for ALM
 - Manual Setup - Understand the key steps that the CLI is automating
   - [Foundational Setup](https://github.com/microsoft/coe-starter-kit/blob/main/ALMAcceleratorForAdvancedMakers/SETUPGUIDE.md#foundational-setup) - Foundational Setup for Manual steps automated by the CLI install command
   - [Development Project Setup](https://github.com/microsoft/coe-starter-kit/blob/main/ALMAcceleratorForAdvancedMakers/SETUPGUIDE.md#development-project-setup) - Documents the Manual steps that are automated by the CLI install command
