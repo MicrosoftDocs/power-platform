@@ -70,7 +70,7 @@ In this step, you'll be creating the Validation and Test Pipelines for reference
 
 1. Update the following values in your new Pipeline YAML.
 
-   - Change the **resources -> repositories -> name**  to the repo name that contains your pipeline templates. If your template repository is in another AzDO project, you can use the format **projectname/reponame** here. In this case, the repo is called **coe-alm-accelerator-templates** (remember we told you to remember the pipeline repo name?) and it exists in the same project as our **ALMAcceleratorSampleSolution repo**. Additionally, you can specify a branch for where your templates live using the **ref** parameter if necessary.
+   - Change the **resources -> repositories -> name**  to the repo name that contains your pipeline templates. If your template repository is in another AzDO project, you can use the format **projectname/reponame** here. In this case, the repo is called **coe-alm-accelerator-templates** (remember we told you to remember the pipeline repo name), and it exists in the same project as our **ALMAcceleratorSampleSolution repo**. Additionally, you can specify a branch for where your templates live using the **ref** parameter if necessary.
 
       ![Update ref and name in the pipeline YAML based on where the pipeline templates are stored in Azure DevOps](media/setup-almacceleratoradvanced-sample-solution/image-20210505163452491.png)
 
@@ -228,7 +228,7 @@ The **EnvironmentName** variable is used to specify the Azure DevOps environment
 
    ![Enter EnvironmentName for the name of the Variable](media/setup-almacceleratoradvanced-sample-solution/image-20210506101906429.png)
 
-1. Repeat the steps above to create the **ServiceConnection** variable. This is used to specify how the deployment pipeline connects to the Power Platform. The values used for the Service Connection variable are the names of the Service Connections created during setup [Create a Service Connection for DevOps to access Power Platform](setup-almacceleratoradvanced.md#create-service-connections-for-devops-to-access-power-platform)
+1. Repeat the steps above to create the **ServiceConnection** variable. The ServiceConnection variable is used to specify how the deployment pipeline connects to the Power Platform. The values used for the Service Connection variable are the names of the Service Connections created during setup [Create a Service Connection for DevOps to access Power Platform](setup-almacceleratoradvanced.md#create-service-connections-for-devops-to-access-power-platform)
 
    > [!NOTE]
    > The Value for the ServiceConnection variable must be identical to the Name of the Service Connection. Including any trailing slashes.
@@ -243,7 +243,7 @@ To configure your pipelines to update **connection references, environment varia
 
 ## Importing the Solution and Configuring the ALM Accelerator App
 
-To get started using the ALM Accelerator For Advanced Makers App follow the instructions in the [setup-almacceleratoradvanced](setup-almacceleratoradvanced.md#importing-the-solution-and-configuring-the-app).
+To get started using the ALM Accelerator For Advanced Makers App, follow the instructions in the [setup-almacceleratoradvanced](setup-almacceleratoradvanced.md#importing-the-solution-and-configuring-the-app).
 
 ## Test the ALM Accelerator App
 
@@ -282,7 +282,7 @@ To get started using the ALM Accelerator For Advanced Makers App follow the inst
    > [!NOTE]
    > There is an option to specify if the latest changes contain Delete Components. This allows the user to specify whether to perform an **update** or an **upgrade** of the solution when it's deployed. The former will increase the performance of the pipelines and reduce the overall time to deploy.
    - When the push begins, a waiting indicator will appear. If the push is successful, a checkbox will appear otherwise a red x will appear. In order to see the progress of your push select the progress indicator, which will take you to the running pipeline in Azure DevOps.
-   - Note that the first time you run the pipeline, you may need to give it permission to run in the Azure DevOps interface (see the [Troubleshooting](./setup-almacceleratoradvanced.md#troubleshooting) section of the Setup Guide for more information)
+   - The first time you run the pipeline, you may need to give it permission to run in the Azure DevOps interface (see the [Troubleshooting](./setup-almacceleratoradvanced.md#troubleshooting) section of the Setup Guide for more information)
 
 1. Once the initial push completes successfully, validate that the changes were exported to your branch.
 
@@ -314,7 +314,7 @@ To get started using the ALM Accelerator For Advanced Makers App follow the inst
 
      ![Select a Deployment Environment](media/setup-almacceleratoradvanced-sample-solution/image-20210920121425929.png)
 
-     - The environments listed here are based on the pipeline(s) configured for the solution in Azure DevOps. In the example above we have 3 pipelines configured in Azure DevOps for this solution deploy-validation-ALMAcceleratorSampleSolution, deploy-test-ALMAcceleratorSampleSolution, and deploy-prod-ALMAcceleratorSampleSolution. **The app will look for pipelines named deploy-*-UniqueSolutionName to populate this list. If you have named your pipelines different than the pattern above you won't be able to use the deployment configuration functionality.**
+     - The environments listed here are based on the pipeline(s) configured for the solution in Azure DevOps. In the example above we have three pipelines configured in Azure DevOps for this solution deploy-validation-ALMAcceleratorSampleSolution, deploy-test-ALMAcceleratorSampleSolution, and deploy-prod-ALMAcceleratorSampleSolution. **The app will look for pipelines named deploy-*-UniqueSolutionName to populate this list. If you have named your pipelines different than the pattern above you won't be able to use the deployment configuration functionality.**
 
    - Connection References
 
@@ -340,7 +340,7 @@ To get started using the ALM Accelerator For Advanced Makers App follow the inst
 
      - This screen lists all of the apps in your solution and allows users to share the apps in the downstream environment with an Azure AAD Group.
      - Use  the dropdown to **select the Azure AAD group** with which you'd like to share the app.
-     - To view the Group details **select the details icon**. This will launch a new browser window with a link to the AAD Group in the Azure Portal.
+     - To view the Group details **select the details icon**. The details icon will launch a new browser window with a link to the AAD Group in the Azure portal.
      - To set the permissions **select the permissions dropdown** and set the permissions to either Can View, Can Edit or Can View and Share.
 
    - Component Ownership

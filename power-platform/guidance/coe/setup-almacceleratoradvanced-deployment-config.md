@@ -29,7 +29,7 @@ For an example of configuration and data deployment configuration see the ALMAcc
 
 ## Before you start
 
-The following documentation is intended to be a step-by-step process for setting up deployment configuration files manually. However, it is recommended that you use the in app feature to generate this information on export of your solution. This document will provide details and context for the actions that are performed by the AA4PP app and pipelines and act as a reference for administrators who want to know the specifics of each step in the process.
+The following documentation is intended to be a step-by-step process for setting up deployment configuration files manually. However, it is **recommended that you use the in app feature to generate this information** on export of your solution. This document will provide details and context for the actions that are performed by the AA4PP app and pipelines and act as a reference for administrators who want to know the specifics of each step in the process.
 
 ## Creating a Deployment Settings Json File
 
@@ -212,7 +212,7 @@ The environment variable property in the customDeploymentConfiguration.json is *
 
 ### Creating a Custom Deployment Settings Json File
 
-The custom deployment settings json file contains the configuration settings required to automate the deployment of your solution. This file contains the configuration for Activating Flows on behalf of a user, specify ownership of Flows, Sharing Canvas Apps with AAD Groups and Creating Dataverse Group Teams after deployment. The following is a sample of a custom deployment settings json file that will provide your pipelines with the necessary information required to configure a solution after it's been deployed to an environment.
+The custom deployment settings json file contains the configuration settings required to automate the deployment of your solution. This file contains the configuration for Activating Flows on behalf of a user, specify ownership of Flows, Sharing Canvas Apps with AAD Groups and Creating Dataverse Group Teams after deployment. The following sample is a custom deployment settings json file that will provide your pipelines with the necessary information required to configure a solution after it's been deployed to an environment.
 
 ```json
 {
@@ -355,7 +355,7 @@ The AAD group canvas configuration property in the customDeploymentConfiguration
    - The **schema name** for the Canvas App can be obtained from the **Canvas App component** in your solution.
      ![Schema name of canvas app label under Name column in solution component view](media/setup-almacceleratoradvanced-deployment-config/canvasschemaname.png)
 
-   - The **azure active directory group id** can be obtained from the **Group blade in Azure Active Directory** from the Azure Portal.
+   - The **azure active directory group id** can be obtained from the **Group blade in Azure Active Directory** from the Azure portal.
      ![Group ID in disabled text box next to Object Id label](media/setup-almacceleratoradvanced-deployment-config/aadobjectid.png)
 
 1. Once you've gathered the environment variable schema names and values go to the **customDeploymentSettings.json** and paste the json in the **AadGroupCanvasConfiguration property**.
@@ -410,7 +410,7 @@ The AAD group canvas configuration property in the customDeploymentConfiguration
 
    - The **Dataverse team name** can be any **existing team or a new team** to be created in Dataverse and mapped to an AAD Group after the solution is imported via the pipeline.
 
-   - The **azure active directory group id** can be obtained from the **Group blade in Azure Active Directory** from the Azure Portal.
+   - The **azure active directory group id** can be obtained from the **Group blade in Azure Active Directory** from the Azure portal.
 
    ![Group ID in disabled text box next to Object Id label](media/setup-almacceleratoradvanced-deployment-config/aadobjectid.png)
 
@@ -434,7 +434,7 @@ The AAD group canvas configuration property in the customDeploymentConfiguration
 
 1. If you're using **'Replace Tokens' extension** and adding tokens in your configuration like in the above example, navigate to the pipeline for your solution **Select Edit -> Variables**
 
-1. On the Pipeline Variables screen create a **pipeline variable** for each of the tokens in your configuration (for example, team.aadSecurityGroupId).
+1. On the Pipeline Variables screen, create a **pipeline variable** for each of the tokens in your configuration (for example, team.aadSecurityGroupId).
 
 1. Set the value to the **azure active directory group id** to associate with the team in Dataverse and **Select Keep this value secret** if you want to ensure the value is not saved as plain text.
 
@@ -442,7 +442,7 @@ The AAD group canvas configuration property in the customDeploymentConfiguration
 
 #### Create Solution Component Ownership Json
 
-The solution component ownership property in the customDeploymentConfiguration.json is **SolutionComponentOwnershipConfiguration**. The solution component ownership property is used for assigning ownership of solution components to Dataverse Users after the solution is imported into an environment. This is  useful for components such as Flows that will be owned by default by the Service Principal user when the solution is imported by the pipeline and organizations want to reassign them after import. Additionally, the  **SolutionComponentOwnershipConfiguration** will be used to enable flows that don't have any connection references. The flow will be enabled by the user specified when no connection references are found to use to enable the flow.
+The solution component ownership property in the customDeploymentConfiguration.json is **SolutionComponentOwnershipConfiguration**. The solution component ownership property is used for assigning ownership of solution components to Dataverse Users after the solution is imported into an environment. Assigning component ownership is useful for components such as Flows that will be owned by default by the Service Principal user when the solution is imported by the pipeline and organizations want to reassign them after import. Additionally, the  **SolutionComponentOwnershipConfiguration** will be used to enable flows that don't have any connection references. The flow will be enabled by the user specified when no connection references are found to use to enable the flow.
 
 > [!NOTE]
 > The current pipeline only implements the ability to set ownership of Flows. The ability to assign other components to users could be added in the future.

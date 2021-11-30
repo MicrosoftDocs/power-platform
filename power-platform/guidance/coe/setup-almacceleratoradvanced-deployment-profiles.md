@@ -57,7 +57,7 @@ To create User Settings for AA4PP, use the following steps.
     > [!NOTE] In addition to creating Deployment Profiles using the AA4PP Administration App. Users who have access to User Settings with **Create Profile permissions** in the AA4PP App can create profiles in the App. The AA4PP App makes some assumptions about the setup of your pipelines based on the documentation for setting up your pipelines and doesn't provide the flexibility that the AA4PP Administration App does. It does, however, allow you to jump start this process.
     - From the User Setting, you created above. Select
 
-### Creating ALM Accelerator Profiles Using AA4PP App
+## Creating ALM Accelerator Profiles Using AA4PP App
 
 If a user logs in to the AA4PP App and doesn't have a Deployment User Settings assigned to them, **the App will automatically create a Deployment User Setting for the user**. This user setting will be created with all of the functionality enabled (for example, Import, Delete and All Advanced Features).
 
@@ -88,7 +88,7 @@ If a user logs in to the AA4PP App and doesn't have a Deployment User Settings a
       - Once the Profile is saved, you'll be able to Commit and Deploy your solution.
         ![AA4PP App with Solution Actions Enabled after Creating a New Profile](media/setup-almacceleratoradvanced-deployment-profiles/image-20211126135223693.png)
 
-### Sharing ALM Accelerator User Settings and Profiles Using AA4PP Administration App
+## Sharing ALM Accelerator User Settings and Profiles Using AA4PP Administration App
 
 In order to share User Settings created for a particular user profile it is recommended that you share the user setting row with an AAD Group Team. Sharing with an AAD Group Team will allow you to manage access to User Settings and Deployment Profiles from Azure Active Directory by adding the user to the group in AAD. Below is how to share and provide the appropriate roles to an AAD Group Team after installing the AA4PP Solution.
 

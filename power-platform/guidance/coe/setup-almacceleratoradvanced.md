@@ -28,7 +28,7 @@ The ALM Accelerator components solution doesn't have a dependency on other compo
 
 ## Before you start
 
-The following documentation is intended to be a step-by-step process for setting up AA4PP manually. However, **it's recommended that you use the [Center of Excellence Command Line Interface (coe-cli)](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli#readme) to assist in automating these steps**. This document will provide details and context for the actions that are performed by the coe-cli and act as a reference for those who want to know the specifics of each step in the process.
+The following documentation is intended to be a step-by-step process for setting up AA4PP manually. However, **it's recommended that you use the [Center of Excellence Command Line Interface (coe-cli)](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli#readme) to assist in automating these steps**. This document will provide details and context for the actions that are performed by the coe-cli and act as a reference for anyone who wants to know the specifics of each step in the process.
 
 ## Document structure
 
@@ -40,7 +40,7 @@ The Setup Guide is structured into seven main sections
 - **Solution Setup** - These steps are specific to each solution you wish to support with the ALM Accelerator. The section covers setting up the solution-specific pipelines, branch policies, deployment variables to support connections references, environment variables, and AAD group sharing.
 - **Importing the Solution and Configuring the App** - This section takes you through the steps required to import the actual AA4PP canvas app and configuring the included custom connector.
 - **Using the ALM Accelerator App** - A short introduction to using the AA4PP canvas app
-- **Troubleshooting** - A few pointers on some known issues and how to remediate these.
+- **Troubleshooting** - A few pointers on some known issues and how to remediate them.
 
 ## Prerequisites
 
@@ -283,7 +283,7 @@ The following section will guide you through the setup steps required for each o
 
 ### Create Service Connections for DevOps to access Power Platform
 
-Each Dataverse environment (e.g Development, Validation, Test, and Production) will need to have a **Power Platform service connection in DevOps**. For each of your environments follow the steps below to setup the service connection.
+Each Dataverse environment (e.g Development, Validation, Test, and Production) will need to have a **Power Platform service connection in DevOps**. For each of your environments follow the steps below to set up the service connection.
 
 > [!NOTE]
 > Users of the AA4PP app will only see environments for which they have either User or Administrator role on the Service Connection in Azure DevOps. If using personal development environments all developers should have User or Administrator role for the Service Connection for their own development environment. Validation, Test, and Production environment service connections only need permissions granted to pipelines (for example Build Service)
@@ -326,7 +326,7 @@ Each Dataverse environment (e.g Development, Validation, Test, and Production) w
 
 ### Create an App User in your Dataverse Environments
 
-**Each environment (Development, Validation, Test and Production) will need to have an Application User.** For each of your environments follow the steps below to setup the Application User.
+**Each environment (Development, Validation, Test and Production) will need to have an Application User.** For each of your environments follow the steps below to set up the Application User.
 
 1. Go to Power Platform Admin Center [https://aka.ms/ppac](https://aka.ms/ppac)
 
@@ -472,7 +472,7 @@ As mentioned in the note above, the previous section allows you to create pipeli
 | ----------------------------- | ------------------------- | --------------------- |
 | deploy-prod-MyNewSolution.yml | deploy-prod-MyNewSolution | No                    |
 
-1. In Azure DevOps go to the **Repo** that contains the [Pipelines folder you committed](#clone-the-yaml-pipelines-from-github-to-your-azure-devops-instance) and select the Pipelines folder
+1. In Azure DevOps, go to the **Repo** that contains the [Pipelines folder you committed](#clone-the-yaml-pipelines-from-github-to-your-azure-devops-instance) and select the Pipelines folder
 
 1. Open the sample deployment pipeline (that is, **deploy-prod-pipelineartifact-SampleSolution.yml**) and copy the YAML to use in your new Pipeline. **Note the name of this repo** for use in your pipeline.
 
