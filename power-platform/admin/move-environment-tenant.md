@@ -26,7 +26,7 @@ search.app:
 
 ## Move an environment to a different tenant
 
-You can use the Tenant-to-Tenant Migration feature to request to have an environment in one tenant moved to another tenant. This feature enables customers to support the following cases:
+You can use the tenant-to-tenant migration feature to request to have an environment in one tenant moved to another tenant. This feature enables customers to support the following cases:
 
 - Multiple tenant consolidation under one tenant
 - Support acquisition from Company A to Company B
