@@ -137,7 +137,7 @@ This file is only needed once for import, and can be deleted after the dataflow 
 
 ### Update and run the Dataflow to load initial data into Dataverse
 
-Now we wil load the initial data from SharePoint Online into Dataverse using a Dataflow.
+Now load the initial data from SharePoint Online into Dataverse using a Dataflow:
 
 1. In your CoE environment, browse to **Data > Dataflows**, and edit the **Maker Assessment Starter Dataflow**
    ![Edit the Dataflow.](media/MakerJourneyDataSetup1.png "Edit the Dataflow")

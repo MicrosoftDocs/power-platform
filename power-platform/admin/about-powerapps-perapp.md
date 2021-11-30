@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/11/2021
+ms.date: 11/11/2021
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -41,9 +41,6 @@ You can purchase per app plans from your sales channel or in the [Microsoft 365 
 > ![Power Apps per app plan.](media/per-app-plan-tile.png "Power Apps per app plan")
 
 You can see your purchased plan in the Microsoft 365 admin center (**Billing** > **Your products**).
-
-> [!div class="mx-imgBorder"] 
-> ![Power Apps per app plan purchased.](media/per-app-plan-purchased.png "Power Apps per app plan purchased")
 
 Once you've made your purchase, there are no further actions needed in the Microsoft 365 admin center such as license assignment since this license is not assigned to users but rather to environments.
 
@@ -82,9 +79,6 @@ Follow these steps to turn off assigning per app plans for users when an app is 
 
 > [!IMPORTANT]
 > If per app plans are not allocated to the environment the app is installed in, the toggle is disabled. 
-> 
-> Turning off the per app plan is currently available only for canvas apps. Model-driven apps and portals will have this ability in the future.
-
 
 ### Check capacity
 Check the **App passes** capacity for the environment with the app you're sharing. Make sure you have sufficient app passes assigned for the number of users using the app.
@@ -125,7 +119,7 @@ The per app license gives a user access to one Power Apps or one portal for a si
   <tr>
     <td>User 1</td>
     <td>App A</td>
-    <td>App A</td>
+    <td>App B</td>
     <td>Portal 1</td>
     <td></td>
     <td></td>
@@ -188,10 +182,6 @@ Power Apps per user plan is a user license assigned by admins from https://admin
 ### Can I assign Power Apps per app plans in the Microsoft 365 admin center (admin.microsoft.com)? 
 No. Although after purchasing Power Apps per app plans they appear in [https://admin.microsoft.com](https://admin.microsoft.com), they shouldn't be assigned to users in this website. Power Apps per app plans are to be allocated to an environment by an admin in [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com). After per app plans are allocated to an environment, the plans are assigned to users when apps are shared with users in the environment.
 
-### For users expected to use a Power Apps per app plan, why are users that use an app shared with them prompted to start a Power Apps trial? 
-
-For users to run Power Apps apps they must have a license, this includes being assigned a trial, per user plan or be accessing an app in an environment with Power Apps per app plan allocation. 
-
 ### Why are makers prompted to start a trial when creating a premium connection using gateways? 
 This is an artifact of previous, but no longer required, licenses being assigned to Power Apps makers. This license check and prompt to start a trial will eventually be removed. 
 
@@ -199,6 +189,11 @@ This is an artifact of previous, but no longer required, licenses being assigned
 The maker should sign up for the trial to proceed with creating the connection that uses a gateway. 
 
 ### Are users with a disabled account in an environment able to use per app plan? 
-Yes. If a user account is disabled in an environment, adding per app capacity, sharing the app with the user, and the user launching the app will enable the user. 
+Yes. If a user account is disabled in an environment, there are three different mitigation steps that may be followed.
+
+**Mitigation steps**
+1. Add per app capacity to an environment, add disabled users to an Azure AD security group, and share the app with the security group. The user launching the app will be enabled in the environment.
+2. Add per app capacity and use the following PowerShell cmdlet to 'force sync' disabled users to enable these users in the environment. An admin can run the [Add-AdminPowerAppsSyncUser](/powershell/module/microsoft.powerapps.administration.powershell/add-adminpowerappssyncuser?view=pa-ps-latest) PowerShell cmdlet to enable disabled users in an environment.
+3. Add per app capacity to an environment, use [this Power Automate flow template](https://us.flow.microsoft.com/galleries/public/templates/6e4162ca7afc48479e3ad1caadc6c1e6/force-sync-azure-active-directory-group-members-to-specified-cds-instance/) to enable many disabled users in an environment which an admin can run to force the sync operation to enable users. 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

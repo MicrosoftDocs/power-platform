@@ -6,7 +6,7 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/18/2021
+ms.date: 10/22/2021
 ms.subservice: admin
 ms.author: astockli
 search.audienceType: 
@@ -121,7 +121,7 @@ The following are service update times. Database updates run 24 hours after serv
 
 ## Service incidents 
 
-A service incident occurs when your environment is inaccessible or you’re unable to use one or more of the service components. We communicate service incidents through an authenticated experience on the Microsoft 365 admin portal Service health dashboard to provide visibility of service health to administrators across multiple Cloud services. Examples of service incidents may include: 
+A service incident is a term used to refer to an event (or series of events) that typically causes multiple customers to have a degraded experience with one or more of our services. ​These incidents are effectively platform issues that cause unplanned downtime – including unavailability, performance degradation, and problems interfering with service management. We communicate service incidents through an authenticated experience on the Microsoft 365 admin portal Service health dashboard to provide visibility of service health to administrators across multiple Cloud services. Examples of service incidents may include: 
 
 - Unable to sign-in to a specific environment or admin portal 
 - Slow performance in apps or Dataverse queries 
@@ -129,7 +129,7 @@ A service incident occurs when your environment is inaccessible or you’re unab
 
 **How do I find out about service incidents?**  
 
-Check the [Service health dashboard](/office365/enterprise/view-service-health) to view the status of the service. If you are experiencing an issue that is not displayed in the Service health dashboard, contact Microsoft support by creating a ticket in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+Check the [Service health dashboard](/office365/enterprise/view-service-health) to view the status of the service, details about existing service incidents, and up to 30 days’ worth of history. Service Health (within the Microsoft 365 admin center) knows which tenants you manage, so it shows a much more accurate view of any known issues impacting your services than non-authenticated sources of information. If you are experiencing an issue that is not displayed in the Service health dashboard, contact Microsoft support by creating a ticket in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
 If there is a broad customer impact during a service incident, we may also provide status updates on one of several service-specific support pages, including the [Power Apps support page](https://powerapps.microsoft.com/support/), [Power Automate support page](https://flow.microsoft.com/support/), or the [Power BI support page](https://powerbi.microsoft.com/support/). 
 
@@ -137,9 +137,9 @@ If the Microsoft 365 admin portal is unavailable, we will provide status updates
 
 **What information is provided about service incidents?**
 
-During the event, we include information that is related to the user impact, duration, any feasible workaround, and preliminary root cause. Our goal is to provide status updates on a hourly cadence, although this guideline may be reduced for substantive new information, or extended based on waiting on recovery activities. At the restoration of the service to optimal operation, we will publish a final status update and determine if additional post incident report will be provided based on the breadth and type of impact to customers. 
+During the event, we include information that is related to the user impact, duration, any feasible workaround, and preliminary root cause. Our goal is to provide status updates on a hourly cadence, although this guideline may be reduced for substantive new information or extended based on waiting on recovery activities. At the restoration of the service to optimal operation, we will publish a final status update and determine if additional post incident report will be provided based on the breadth and type of impact to customers. 
 
-A post incident report (PIR) may be published after 5 business days on the Microsoft 365 Service health dashboard for certain events. 
+A post incident report (PIR) may be published after five business days on the Microsoft 365 Service health dashboard for certain events. 
 
 This report summarizes the following details: 
 

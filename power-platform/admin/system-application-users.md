@@ -4,7 +4,7 @@ description: "Learn about the special system and application users created when 
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 10/14/2021
+ms.date: 11/04/2021
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
@@ -21,7 +21,7 @@ search.app:
 
 # System and application users 
 
-There is a list of special system and application users that is created when the system is provisioned.  Special system users are created for integration and support scenarios. Application users are created during system provisioning for setup and configuration management.  [Application users](create-users.md#create-an-application-user) can also be used for performing back-end services and their data access is managed by the special security role that is assigned. These security roles are managed by the system and cannot be modified. See other system [predefined security roles](database-security.md#predefined-security-roles).  
+There is a list of special system and application users that is created when the system is provisioned.  Special system users are created for integration and support scenarios. Application users are created during system provisioning for setup and configuration management.  [Application users](create-users.md#create-an-application-user) can also be used for performing back-end services and their data access is managed by the special security role that is assigned. These security roles are managed by the system and might not be modifiable. See other system [predefined security roles](database-security.md#predefined-security-roles).  
 
 Most of these users are hidden from user views but they can be found by using the Advanced Find on the Users table.  Do not delete or modify these users including changing or reassigning security role. 
 
@@ -37,6 +37,7 @@ Most of these users are hidden from user views but they can be found by using th
 | | Dynamics 365 Athena-CDStoAzuredatalake | Dynamics365Athena-CDStoAzuredatalake@onmicrosoft.com |Service application to perform data integration between Microsoft Dataverse to Azure Data Lake. |DataLakeWorkspaceAppAccess |
 | | Dynamics 365 Athena2-CDStoAzuredatalake | Dynamics365Athena2-CDStoAzuredatalake@onmicrosoft.com |Service application to perform data integration between Dataverse to Azure Data Lake. |DataLakeWorkspaceAppAccess |
 | | EnterpriseSales | EnterpriseSales@onmicrosoft.com |Service application to perform data integration between Dataverse (Sales) to Azure Data Lake. |N/A |
+| | Finance and Operations Runtime Integration User | FinanceandOperationsRuntimeIntegrationUser@onmicrosoft.com |Service application to perform dual-write data integration between Dataverse and Finance and Operations. |Finance and Operations Integration User |
 | | # SIAutoCapture | SIAutoCapture@onmicrosoft.com | To be used for Auto Capture solution business requirements to perform data query and execute plugins from backend services. | SalesInsights AutoCapture Admin |
 | | # Dynamics 365 Sales | Dynamics365Sales@onmicrosoft.com | To allow Dynamics 365 Sales to communicate with Dataverse and Azure Data Lake for analysis and data updates. | Sales system data sync and EAC App Access |
 | | Microsoft Project | Project@microsoft.com |Allow Project for the Web and Roadmap Service to communicate with Dataverse. |Project System and Portfolio User |

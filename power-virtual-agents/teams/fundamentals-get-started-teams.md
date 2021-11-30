@@ -299,7 +299,7 @@ In this pane, you can edit the bot icon that shows in Teams, and change the shor
 
 This will add the bot to the **Built by your colleagues** section in the Teams app store.
 
-Select **Add to Teams** and you will see a check mark indicating that the bot was added to Teams. With this, anyone in your team [can find the bot in the **Built by your colleagues**](publication-add-bot-to-microsoft-teams-teams.md#share-the-bot-with-your-team) section in the Teams app store and add the bot to chat with it.
+Select **Add to Teams** and you will see a check mark indicating that the bot was added to Teams. With this, anyone in your team [can find the bot in the **Built by your colleagues**](publication-add-bot-to-microsoft-teams-teams.md#show-the-bot-in-microsoft-teams-app-store) section in the Teams app store and add the bot to chat with it.
 
 This is a workaround to see the bot in action since it does not require any admin involvement and avoids any spam to the admin. Once you are fully satisfied, you can follow the steps to share the bot with your organization which requires admin approval.
 
@@ -308,7 +308,7 @@ This is a workaround to see the bot in action since it does not require any admi
 
 #### Share the bot with your organization 
 
-Sharing your bot with the entire organization will feature your bot [in the **Built by your org** section in the Teams app store](publication-add-bot-to-microsoft-teams-teams.md#share-the-bot-with-your-organization). This requires admin approval.
+Sharing your bot with the entire organization will feature your bot [in the **Built by your org** section in the Teams app store](publication-add-bot-to-microsoft-teams-teams.md#show-the-bot-in-microsoft-teams-app-store). This requires admin approval.
 
 1. Select **Submit for admin approval** and follow the steps.
 
