@@ -1,6 +1,6 @@
 ---
-title: "ALM Accelerator for Power Platform | MicrosoftDocs"
-description: "The ALM Accelerator for Power Platform will help you follow ALM patterns and practices to source control and move your solutions from your development environment to test and production environments using Azure DevOps"
+title: "Configuring Deployment User Settings and Profiles | MicrosoftDocs"
+description: "Deployment User Settings and Profiles direct the ALM Accelerator for Power Platform on how to display UI Components and how to source control and deploy solutions."
 author: mikefactorial
 manager: devkeydet
 ms.service: power-platform
@@ -19,7 +19,8 @@ search.app:
 ---
 # Configuring User Settings and Deployment Profiles (Preview)
 
-> [!NOTE] The ALM Accelerator for Power Platform (AA4PP) is currently in public preview. Please see Issues currently tagged as [vnext](https://github.com/microsoft/coe-starter-kit/issues?q=is%3Aopen+is%3Aissue+label%3Aalm-accelerator+label%3Avnext) for the Roadmap to be completed prior to general availability. While in Public Preview it can be expected that there will be breaking changes and frequent updates to address feedback from preview members. Additionally, the Public Preview is reliant on the experimental [Power Apps Source File Pack and Unpack Utility](https://github.com/microsoft/PowerApps-Language-Tooling) that is being developed separately from AA4PP.
+> [!NOTE]
+The ALM Accelerator for Power Platform (AA4PP) is currently in public preview. Please see Issues currently tagged as [vnext](https://github.com/microsoft/coe-starter-kit/issues?q=is%3Aopen+is%3Aissue+label%3Aalm-accelerator+label%3Avnext) for the Roadmap to be completed prior to general availability. While in Public Preview it can be expected that there will be breaking changes and frequent updates to address feedback from preview members. Additionally, the Public Preview is reliant on the experimental [Power Apps Source File Pack and Unpack Utility](https://github.com/microsoft/PowerApps-Language-Tooling) that is being developed separately from AA4PP.
 
 The ALM Accelerator is configurable based on user preferences to turn on and off certain features in the user interface depending on a user's role. A common scenario is to create an **Advanced Maker and a Maker experience** to help both users familiar and unfamiliar with Application Life-Cycle Management to use the app effectively. Linked to the User Settings are Deployment Profiles. Deployment Profiles are used by the app to make decisions for the user on where and how to create branches and approvals for deployment.
 
@@ -58,7 +59,7 @@ To create User Settings for AA4PP, use the following steps.
 
 1. Update **User Labels**. Below are the specific areas that are configurable in the app related to user labels for functions. These values also show in the Deployment History view under the action that was executed.
 
-    ![image-20211126121414294](media/setup-almacceleratoradvanced-deployment-profiles/image-20211126121414294.png)
+    ![User Labels set in the Administration App](media/setup-almacceleratoradvanced-deployment-profiles/image-20211126121414294.png)
 
     ![Action Labels based on User Labels in Deployment Request History Screen](media/setup-almacceleratoradvanced-deployment-profiles/image-20211126112601630.png)
 
@@ -73,7 +74,8 @@ To create User Settings for AA4PP, use the following steps.
 
 1. Add **New Deployment Profiles** to your User Settings. Deployment Profiles are used by the AA4PP App to determine where and how to **create Branches** during the Commit stage and how to **create Pull Requests** when deploying. Below are the steps to create a Deployment Profile using the AA4PP Administration App to **associate with one or many Deployment User Settings**.
 
-    > [!NOTE] In addition to creating Deployment Profiles using the AA4PP Administration App. Users who have access to User Settings with **Create Profile permissions** in the AA4PP App can create profiles in the App. The AA4PP App makes some assumptions about the setup of your pipelines based on the documentation for setting up your pipelines and doesn't provide the flexibility that the AA4PP Administration App does. It does, however, allow you to jump start this process.
+    > [!NOTE]
+    In addition to creating Deployment Profiles using the AA4PP Administration App. Users who have access to User Settings with **Create Profile permissions** in the AA4PP App can create profiles in the App. The AA4PP App makes some assumptions about the setup of your pipelines based on the documentation for setting up your pipelines and doesn't provide the flexibility that the AA4PP Administration App does. It does, however, allow you to jump start this process.
     - From the User Setting, you created above. Select
 
 ## Creating ALM Accelerator Profiles Using AA4PP App
@@ -90,7 +92,8 @@ If a user logs in to the AA4PP App and doesn't have a Deployment User Settings a
       - If no user setting is shared with them, the app will create a new User Deployment setting for the user and use the default interface for the app.
         ![Default User Setting Created In App or Single User Setting Shared with User](media/setup-almacceleratoradvanced-deployment-profiles/image-20211126131500223.png)
    1. Create a New Profile for your Solution. In order to begin source controlling and deploying a solution, you must have a profile associated with that solution.
-      > [!NOTE] Users who have a User Setting shared with them will only be able to perform functions on solutions to which they have been assigned a profile already. If a user has a User Setting shared with them that doesn't have a profile that is already assigned to a solution they won't be able to perform actions on that profile.
+      >
+      [!NOTE] Users who have a User Setting shared with them will only be able to perform functions on solutions to which they have been assigned a profile already. If a user has a User Setting shared with them that doesn't have a profile that is already assigned to a solution they won't be able to perform actions on that profile.
 
       - Select the **Choose a Profile link** for a solution that doesn't have a profile assigned.
         ![Choose a Profile Link in AA4PP App](media/setup-almacceleratoradvanced-deployment-profiles/image-20211126132517844.png)
