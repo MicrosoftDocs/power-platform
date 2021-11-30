@@ -134,12 +134,12 @@ The process to install an app depends on your view.
 
 If you see the following error:
 
-"Installing Dynamics 365 apps such as Dynamics 365 Sales and Dynamics 365 Customer Service is only supported on environments that have been created with a database with the option to **Enable Dynamics 365 apps** set to **Yes**. Try installing this application in an environment with a database and **Enable Dynamics 365 apps** enabled on it. "
+"Installing Dynamics 365 apps such as Dynamics 365 Sales and Dynamics 365 Customer Service is only supported on environments that have been created with a database with the option to **Enable Dynamics 365 apps** set to **Yes**. Try installing this application in an environment with a database and **Enable Dynamics 365 apps** enabled on it."
 
 > [!div class="mx-imgBorder"] 
 > ![Installing this app is only supported on environments that have been created with a database with option to enable apps.](media/install-app-error.png "Installing this app is only supported on environments that have been created with a database with option to enable apps.")
 
-You'll need to create a new environment as directed in [Create an environment with a database](create-environment.md#create-an-environment-with-a-database). In Step 4, be sure to set **Enable Dynamics 365 apps** to **Yes**.
+You'll need to create a new environment as directed in [Create an environment with a database](create-environment.md#create-an-environment-with-a-database). In step 4, be sure to set **Enable Dynamics 365 apps** to **Yes**.
 
 ## Troubleshooting a failed installation
 
