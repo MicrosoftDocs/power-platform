@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/09/2021
+ms.date: 11/29/2021
 ms.subservice: admin
 ms.author: jimholtz 
 search.audienceType: 
@@ -48,18 +48,7 @@ The following table describes the permissions of who can create a [billing polic
       Azure Cloud Shell
       :::image type="content" source="media/pay-as-you-go-azure-cloud-shell.png" alt-text="Azure Cloud Shell in Azure Portal":::
 
-   2. Enter the following command in the Azure Cloud Shell to enable the Purchase via Azure feature. (Remove the { } in the subscriptionId parameter):
-
-      ```PowerShell
-      az feature register --namespace Microsoft.PowerPlatform --name accountPreview --subscription {subscriptionId}
-      ```
-      
-      The above command will run asynchronously and may take a few minutes to complete. You can check whether the command has completed by running:
-
-      ```PowerShell
-      az feature show --namespace Microsoft.PowerPlatform --name accountPreview --subscription {subscriptionId}
-      ```
-   3. Enter the following command in the Azure Cloud Shell to register the Power Platform resource provider. (Remove the { } in the subscriptionId parameter):
+   2. Enter the following command in the Azure Cloud Shell to register the Power Platform resource provider. (Remove the { } in the subscriptionId parameter):
 
       ```PowerShell
       az provider register -n Microsoft.PowerPlatform --subscription {subscriptionId}
