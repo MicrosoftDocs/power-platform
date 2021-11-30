@@ -28,7 +28,7 @@ search.app:
 
 You can use the tenant-to-tenant migration feature to request to have an environment in one tenant moved to another tenant. This feature enables customers to support the following cases:
 
-- Multiple tenant consolidation under one tenant
+- Consolidate multiple tenants  nder one tenant
 - Support acquisition from Company A to Company B
 
 You need to [submit a support request](get-help-support) to initiate tenant-to-tenant migration.
@@ -89,12 +89,12 @@ The destination tenant needs an equal or higher number of active user licenses, 
 
 In order to perform this operation, you'll need to provide some information, such as:
 
--   What is the source tenant domain and its region? (example: EMEA, NA, APAC)
--   What is the destination tenant domain and its region? (example: EMEA, NA, APAC)
--   Does the destination tenant have a valid subscription?
--   Does the destination tenant have enough available user licenses?
--   Does the destination tenant have enough environment licenses?
--   Does the destination tenant have enough storage available for the environments being migrated?
+- What is the source tenant domain and its region? (example: EMEA, NA, APAC)
+- What is the destination tenant domain and its region? (example: EMEA, NA, APAC)
+- Does the destination tenant have a valid subscription?
+- Does the destination tenant have enough available user licenses?
+- Does the destination tenant have enough environment licenses?
+- Does the destination tenant have enough storage available for the environments being migrated?
 
 ## Post Migration
 
