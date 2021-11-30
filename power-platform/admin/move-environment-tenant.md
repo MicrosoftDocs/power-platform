@@ -59,20 +59,16 @@ There are no user-interface changes or version changes as part of this move. You
 
 <table>
   <tr>
-    <td>Submit request </td>
+    <td>Submit request<br>|<br>v </td>
     <td colspan="5"></td>
   </tr>
   <tr>
-    <td>|<br>v</td>
-    <td colspan="5"></td>
-  </tr>
-  <tr>
-    <td>Pre-<br>verification--></td>
-    <td>Create and restore<br>database--></td>
-    <td>Change org's <br>mapping--></td>
-    <td>User mapping <br>and sync--></td>
-    <td>Publish destination <br>organization--></td>
-    <td>Disable source <br>organization--></td>
+    <td>Pre-verification<br>--></td>
+    <td>Create and restore database<br>--></td>
+    <td>Change org's mapping<br>--></td>
+    <td>User mapping and sync<br>--></td>
+    <td>Publish destination organization<br>--></td>
+    <td>Disable source organization<br>--></td>
   </tr>
 </table>
 
