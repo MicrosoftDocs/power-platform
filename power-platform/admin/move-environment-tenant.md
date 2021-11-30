@@ -28,7 +28,7 @@ search.app:
 
 You can use the tenant-to-tenant migration feature to request to have an environment in one tenant moved to another tenant. This feature enables customers to support the following cases:
 
-- Consolidate multiple tenants  nder one tenant
+- Consolidate multiple tenants under one tenant
 - Support acquisition from Company A to Company B
 
 You need to [submit a support request](get-help-support.md) to initiate tenant-to-tenant migration. 
