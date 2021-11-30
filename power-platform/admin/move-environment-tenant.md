@@ -51,7 +51,36 @@ There are no user-interface changes or version changes as part of this move. You
 
 ### Migration flow
 
- image
+# [Image](#tab/image)
+
+:::image type="content" source="media/migration-flow.png" alt-text="Migration flow":::
+
+# [Table](#tab/table)
+
+<table>
+  <tr>
+    <td>Submit request </td>
+    <td colspan="5"></td>
+  </tr>
+  <tr>
+    <td>|</td>
+    <td colspan="5"></td>
+  </tr>
+  <tr>
+    <td>v</td>
+    <td colspan="5"></td>
+  </tr>
+  <tr>
+    <td>Pre-verification--></td>
+    <td>Create and restore database--></td>
+    <td>Chage org's mapping--></td>
+    <td>User mapping and sync--></td>
+    <td>Publish destination orginization--></td>
+    <td>Disable source organization--></td>
+  </tr>
+</table>
+
+---
 
 ### Prerequisite:
 
