@@ -63,8 +63,8 @@ coe alm generate install -o quickstart.json
 coe alm install -f quickstart.json
 ```
 
-More information on the [coe alm generate install](../https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/generate/install.md) command
-More information on the [coe alm install](../https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/install.md) command
+More information on the [coe alm generate install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/generate/install.md) command
+More information on the [coe alm install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/install.md) command
 
 Then add a demo user as a maker
 
@@ -76,7 +76,7 @@ coe alm maker add \
   -u alan-s@crm716415.onmicrosoft.com
 ```
 
-More information on the [coe alm maker add](../https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/maker/add.md) command
+More information on the [coe alm maker add](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/maker/add.md) command
 
 Once these steps are completed makers can then [Setup Managed Solutions](../maker-setup.md)
 

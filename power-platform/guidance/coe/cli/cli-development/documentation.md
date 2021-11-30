@@ -26,7 +26,7 @@ Documentation is key to understanding how the CLI works. As you add new commands
 
 ## Add Markdown Pages
 
-Add new pages to [help](../help/overview.md) that describes the new command and explains to the user expected usage.
+Add new pages to [help](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/overview.md) that describes the new command and explains to the user expected usage.
 
 Consider adding the following to the page:
 
@@ -117,7 +117,7 @@ npm run diagrams
 
 ## Add Help Pages
 
-Add new help pages to [help](../help/overview.md). Each page in help provides detailed information on the command and options. The help markdown file can be accessed using the help command that will display the associated help markdown file in the console window.
+Add new help pages to [help](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/overview.md). Each page in help provides detailed information on the command and options. The help markdown file can be accessed using the help command that will display the associated help markdown file in the console window.
 
 ```bash
 coe help alm
