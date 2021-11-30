@@ -6,7 +6,7 @@ author: Grant-Archibald-MS
 ms.author: grarchib
 manager: pladhani
 ms.custom: ""
-ms.date: 10/20/2021
+ms.date: 11/30/2021
 ms.service: power-platform
 ms.topic: "article"
 ms.reviewer: jimholtz
@@ -40,9 +40,9 @@ For decision trees the diagrams are generated via [mermaid](https://mermaid-js.g
 
 Example diagrams:
 
-- [Maturity](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/aa4am/aa4am/maturity/maturity.mmd)
+- [Maturity](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/alm/alm/maturity/maturity.mmd)
 
-- [AA4AM Decision Tree](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/aa4am/aa4am/maturity/decision-tree.mmd)
+- [AA4AM Decision Tree](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/alm/alm/maturity/decision-tree.mmd)
 
 ### Diagram Styles
 
@@ -120,10 +120,10 @@ npm run diagrams
 Add new help pages to [help](../help/overview.md). Each page in help provides detailed information on the command and options. The help markdown file can be accessed using the help command that will display the associated help markdown file in the console window.
 
 ```bash
-coe help aa4am
+coe help alm
 ```
 
-The command above will display the contents of [help/aa4am/overview.md](../help/aa4am/overview.md)
+The command above will display the contents of [help/alm/overview.md](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/overview.md)
 
 ## Recording Command Line
 

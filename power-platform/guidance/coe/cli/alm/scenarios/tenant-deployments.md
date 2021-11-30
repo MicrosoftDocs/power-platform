@@ -6,7 +6,7 @@ author: Grant-Archibald-MS
 ms.author: grarchib
 manager: pladhani
 ms.custom: ""
-ms.date: 10/20/2021
+ms.date: 11/30/2021
 ms.service: power-platform
 ms.topic: "article"
 ms.reviewer: jimholtz
@@ -23,7 +23,7 @@ AA4AM can be deployed in the following scenarios single demo tenant, single ente
 
 Currently AA4AM **does not** automatically support a multi tenant enterprise deployment model and additional manual configuration will be required to configure this scenario.
 
-![Deployments Scenarios](../../media/aa4am-deployments.png)
+![Deployments Scenarios](../../media/alm-deployments.png)
 
 ## Factors to Consider
 
@@ -59,24 +59,24 @@ Once you have the [Admin Install](../admin-install.md) completed, Advanced maker
 This will typically use the following commands as the **single administrator**
 
 ```bash
-coe aa4am generate install -o quickstart.json
-coe aa4am install -f quickstart.json
+coe alm generate install -o quickstart.json
+coe alm install -f quickstart.json
 ```
 
-More information on the [coe aa4am generate install](../../help/aa4am/generate/install.md) command
-More information on the [coe aa4am install](../../help/aa4am/install.md) command
+More information on the [coe alm generate install](../https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/generate/install.md) command
+More information on the [coe alm install](../https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/install.md) command
 
 Then add a demo user as a maker
 
 ```bash
-coe aa4am maker add \
+coe alm maker add \
   -e https://alans-dev.crm.dynamics.com \
   -o https://dev.azure.com/contoso-dev \
   -p alm-sandbox \
   -u alan-s@crm716415.onmicrosoft.com
 ```
 
-More information on the [coe aa4am maker add](../../help/aa4am/maker/add.md) command
+More information on the [coe alm maker add](../https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/maker/add.md) command
 
 Once these steps are completed makers can then [Setup Managed Solutions](../maker-setup.md)
 
@@ -89,7 +89,7 @@ In this scenario the aim is to install AA4AM inside an enterprise tenant and the
    - Power Platform Administrators. May be Global Administrator or Environment Administrators
    - Azure DevOps Administrators
 1. Configuration files for AA4AM install can be shared among different Administration teams
-1. Advanced Makers have separate development environments to work on changes
+1. Makers have separate development environments to work on changes
 1. AA4AM Azure DevOps pipeline used to validate and promote to Test and Production environments
 
 ### Azure Active Directory Administrators
@@ -97,7 +97,7 @@ In this scenario the aim is to install AA4AM inside an enterprise tenant and the
 The tenant administration team will need to create the following
 
 1. Azure Active Directory Application that will be used as Service Principal in Azure DevOps and Power Platform Environments
-1. Azure Active Directory Group that will be used to grant access to Advanced Makers to Azure DevOps resources, Maker Canvas Application and Dataverse Tables.
+1. Azure Active Directory Group that will be used to grant access to Makers to Azure DevOps resources, Maker Canvas Application and Dataverse Tables.
 1. Grant Tenant Consent for Azure Active Directory Application. This required as the Azure DevOps pipeline uses APIs where an interactive user is not involved. As a result the tenant administrator consent is required.
 
 To install the solution resources the following options can be used
@@ -107,7 +107,7 @@ To install the solution resources the following options can be used
 1. Use the CLI to install the AAD components. For example using the default install parameters
 
 ```bash
-coe aa4am install -c aad
+coe alm install -c aad
 ```
 
 2. Using a shared configuration file and setting components array value to be [ "aad" ]
@@ -147,7 +147,7 @@ coe aa4am install -c aad
 #### Azure DevOps
 
 ```bash
-coe aa4am install -c devops \
+coe alm install -c devops \
   -o https://dev.azure.com/contoso-dev \
   -p alm-sandbox
 ```
@@ -155,7 +155,7 @@ coe aa4am install -c devops \
 #### Power Platform Environment
 
 ```bash
-coe aa4am install -f install.json
+coe alm install -f install.json
 
 ```
 

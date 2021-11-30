@@ -6,7 +6,7 @@ author: Grant-Archibald-MS
 ms.author: grarchib
 manager: pladhani
 ms.custom: ""
-ms.date: 10/20/2021
+ms.date: 11/30/2021
 ms.service: power-platform
 ms.topic: "article"
 ms.reviewer: jimholtz
@@ -20,7 +20,7 @@ search.app:
 
 # Personas
 
-Understanding the roles that different personas play in ALM Accelerator for Advanced Makers (AA4AM) is important in helping you plan for and implement a AA4AM deployment in your organization.
+Understanding the roles that different personas play in ALM Accelerator for Power Platform (AA4AM) is important in helping you plan for and implement a AA4AM deployment in your organization.
 
 ## Persona Description
 
@@ -67,130 +67,130 @@ Review the entire ALM process and components and verify matches solution methodo
 Global right to Power Platform Administration - Manage Environments (Create, Update, Delete). Common commands
 
 ```bash
-coe aa4am generate install -o quickstart.json
-coe aa4am install -f quickstart.json
+coe alm generate install -o quickstart.json
+coe alm install -f quickstart.json
 ```
 
-More information on the [coe aa4am generate install](../help/aa4am/generate/install.md) command
+More information on the [coe alm generate install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/generate/install.md) command
 
-More information on the [coe aa4am install](../help/aa4am/install.md) command
+More information on the [coe alm install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/install.md) command
 
 #### Power Platform Environment Administrator
 
 Manage One or more Power Platform Environments - Import solution, add users assign roles
 
 ```bash
-coe aa4am generate install -o data.json
-coe aa4am install \
+coe alm generate install -o data.json
+coe alm install \
   -c environment \
   -e https://contoso-maker.crm.dynamics.com
 ```
 
-More information on the [coe aa4am generate install](../help/aa4am/generate/install.md) command
+More information on the [coe alm generate install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/generate/install.md) command
 
-More information on the [coe aa4am install](../help/aa4am/install.md) command
+More information on the [coe alm install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/install.md) command
 
 Add makers to an environment (Assuming they also have Azure DevOps Administrator rights)
 
 ```bash
-coe aa4am maker add \
+coe alm maker add \
   -e https://user-Dev.crm.dynamics.com \
   -o https://dev.azure.com/dev12345 \
   -p alm-sandbox \
   -u user@contoso.com
 ```
 
-More information on the [coe aa4am maker add](../help/aa4am/maker/add.md) command
+More information on the [coe alm maker add](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/maker/add.md) command
 
 #### Azure Tenant Administrator
 
 Manage the AAD Tenant - Create User, Groups,  Applications and Service Principals (O365 or Azure Administrators). Common commands
 
 ```bash
-coe aa4am install -c aad
+coe alm install -c aad
 ```
 
-More information on the [coe aa4am install](../help/aa4am/install.md) command
+More information on the [coe alm install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/install.md) command
 
 #### Azure DevOps Project Administrators
 
 ```bash
-coe aa4am install -c devops \
+coe alm install -c devops \
   -o https://dev.azure.com/dev12345 \
   -p alm-sandbox
 ``` 
 
-More information on the [coe aa4am install](../help/aa4am/install.md) command
+More information on the [coe alm install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/install.md) command
 
 ## Persona Command Mapping
 
-![Common Commands](../media/aa4am-command-summary.png)
+![Common Commands](../media/alm-command-summary.png)
 
 ## Solution Setup
 
-Assuming that AA4AM has been setup and installed, the first command that the Advanced Maker will run is the **coe aa4am user add** command. This command will register an Application User created during install as a System administrator in their development environment to integrate with the solution. For example using the default parameters
+Assuming that AA4AM has been setup and installed, the first command that the Advanced Maker will run is the **coe alm user add** command. This command will register an Application User created during install as a System administrator in their development environment to integrate with the solution. For example using the default parameters
 
 ```bash
-coe aa4am user add \
+coe alm user add \
   -e https://contoso-alans-dev.crm.dynamics.com
 ```
 
-Read more on the [coe aa4am user add](../help/aa4am/user/add.md)
+Read more on the [coe alm user add](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/user/add.md)
 
-The **coe aa4am branch** command will be run each time a new solution is created. The branch command allows a new solution branch to be created in Azure DevOps. This new branch will be created with the associated ALM DevOps pipeline to validate pull requests and push changes to test and production environments.
+The **coe alm branch** command will be run each time a new solution is created. The branch command allows a new solution branch to be created in Azure DevOps. This new branch will be created with the associated ALM DevOps pipeline to validate pull requests and push changes to test and production environments.
 
 ```bash
-coe aa4am branch \
+coe alm branch \
   -o https://dev.azure.com/contoso \
   -p alm-sandbox \
   -d MySolution
 ```
 
-More information on the [coe aa4am branch](../help/aa4am/branch.md) command
+More information on the [coe alm branch](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/branch.md) command
 
 ## Administrator Setup
 
 As each Advanced Maker or Professional Developer creates a development environment, it will need to be registered with Azure DevOps and the Azure Active Directory Application. The user running this command requires Project Administrator rights in Azure DevOps and Owner rights of the Azure Active Directory Application.
 
 ```bash
-coe aa4am maker add \
+coe alm maker add \
   -o https://dev.azure.com/contoso \
   -p alm-sandbox \
   -e https://contoso-userdev.crm.dynamics.com \
-  -a aa4am-ado-service-principal \
-  -g aa4am-makers \
+  -a alm-ado-service-principal \
+  -g alm-makers \
   -u alan-s@contoso.com
 ```
 
-More information on the [coe aa4am maker add](../help/aa4am/maker/add.md) command
+More information on the [coe alm maker add](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/maker/add.md) command
 
 Each Azure DevOps project will also require connections to deployment environments used by Azure DevOps Pipelines
 
 ```bash
-coe aa4am connection add \
+coe alm connection add \
   -o https://dev.azure.com/contoso \
   -p alm-sandbox \
   -e https://contoso-build.crm.dynamics.com \
-  -a aa4am-ado-service-principal
+  -a alm-ado-service-principal
 
-coe aa4am connection add \
+coe alm connection add \
   -o https://dev.azure.com/contoso \
   -p alm-sandbox \
   -e https://contoso-test.crm.dynamics.com \
-  -a aa4am-ado-service-principal
+  -a alm-ado-service-principal
 
-coe aa4am connection add \
+coe alm connection add \
   -o https://dev.azure.com/contoso \
   -p alm-sandbox \
   -e https://contoso-prod.crm.dynamics.com \
-  -a aa4am-ado-service-principal
+  -a alm-ado-service-principal
 ```
 
-More information on the [coe aa4am connection add](../help/aa4am/connection/add.md) command
+More information on the [coe alm connection add](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/connection/add.md) command
 
 ## Install
 
-To deploy an instance of AA4AM in your organization the **coe aa4am generate install** and **coe aa4am install** commands are used once to deploy the Managed solution. The install will automate key elements:
+To deploy an instance of AA4AM in your organization the **coe alm generate install** and **coe alm install** commands are used once to deploy the Managed solution. The install will automate key elements:
 
 1. Azure Active Directory
     - New Azure Active directory Application that will be used by Azure DevOps for Service Connections and Access to Power Platform Environment
@@ -204,10 +204,10 @@ To deploy an instance of AA4AM in your organization the **coe aa4am generate ins
     - Import Managed Solution and Setup Security
 
 ```bash
-coe aa4am generate install -o install.json
-coe aa4am install -f install.json
+coe alm generate install -o install.json
+coe alm install -f install.json
 ```
 
-More information on the [coe aa4am generate install](../help/aa4am/generate/install.md) command
+More information on the [coe alm generate install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/generate/install.md) command
 
-More information on the [coe aa4am install](../help/aa4am/install.md) command
+More information on the [coe alm install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/install.md) command

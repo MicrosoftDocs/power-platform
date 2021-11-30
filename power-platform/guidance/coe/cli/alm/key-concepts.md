@@ -6,7 +6,7 @@ author: Grant-Archibald-MS
 ms.author: grarchib
 manager: pladhani
 ms.custom: ""
-ms.date: 10/20/2021
+ms.date: 11/30/2021
 ms.service: power-platform
 ms.topic: "article"
 ms.reviewer: jimholtz
@@ -92,7 +92,7 @@ The install performs the following key steps:
 
 ### Branch Automation
 
-The [coe aa4am branch](./maker-setup.md#maker-create-solution) command performs the following steps
+The [coe alm branch](./maker-setup.md#maker-create-solution) command performs the following steps
 
 1. Create a new branch to store the Solution
 
@@ -102,11 +102,11 @@ The [coe aa4am branch](./maker-setup.md#maker-create-solution) command performs 
 
 ### Other Concepts
 
-In addition to install automation the following concepts are also assumed for Advanced Makers
+In addition to install automation the following concepts are also assumed for Makers
 
 1. A git [branching strategy](./branching-and-merging.md)
 
-- The AA4AM assumes a branch per solution
+- The alm commands assumes a branch per solution
 
 - Changes merged back into main branch can be promoted to production environment
 
@@ -118,7 +118,7 @@ In addition to install automation the following concepts are also assumed for Ad
 
 The CoE CLI provides the following key steps:
 
-1. Import Managed solution into environment to allow Advanced Makers to Manage git import, create branches, pull requests and updates to test and production.
+1. Import Managed solution into environment to allow Makers to Manage git import, create branches, pull requests and updates to test and production.
 
 1. Fix Custom Connectors used to connect to Azure DevOps
 
@@ -138,9 +138,9 @@ The CoE CLI commands currently assume the following environments have been creat
 
 ### Assumed Environments
 
-The ALM Accelerator for Advanced Makers assumes the following environments have been created and configured:
+The ALM Accelerator for Power Platform assumes the following environments have been created and configured:
 
-1. Maker Environment - An environment that the ALM Accelerator for Advanced Makers will be installed to. In addition it requires the following:
+1. Maker Environment - An environment that the ALM Accelerator for Power Platform will be installed to. In addition it requires the following:
 
    - Created "Microsoft Dataverse (legacy)" connection - [Read More](./before-you-start.md#maker-environment-dataverse)
 

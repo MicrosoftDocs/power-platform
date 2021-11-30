@@ -6,7 +6,7 @@ author: Grant-Archibald-MS
 ms.author: grarchib
 manager: pladhani
 ms.custom: ""
-ms.date: 10/20/2021
+ms.date: 11/30/2021
 ms.service: power-platform
 ms.topic: "article"
 ms.reviewer: jimholtz
@@ -19,7 +19,7 @@ search.app:
 
 # Branching and Merging
 
-Development as a team of Advanced Makers and Professional developers often uncovers new concepts. Often one area of complexity is branching and merging. Using the links below different [Personas](./personas.md) to can review each concept and determine their level of comfort:
+Development as a team of Makers, Advanced Makers and Professional developers often uncovers new concepts. Often one area of complexity is branching and merging. Using the links below different [Personas](./personas.md) to can review each concept and determine their level of comfort:
 
 1. [Branching and Merging](/azure/devops/repos/git/git-branching-guidance) - Review approaches to branching and merge changes between team members and push changes to test and production environments
 
@@ -27,7 +27,7 @@ Development as a team of Advanced Makers and Professional developers often uncov
 
 1. [Build Pipelines](/azure/devops/pipelines/get-started/key-pipelines-concepts) - What build pipelines are and how they help automate the integration and deployment process
 
-The ALM Accelerator for Advanced Makers (AA4AM) builds on these concepts to allow Power Platform solutions to be managed.
+The ALM Accelerator for Power Platform (AA4AM) builds on these concepts to allow Power Platform solutions to be managed.
 
 ## Example
 
@@ -37,14 +37,14 @@ The example below illustrates two parts of the organization the HR and Finance t
 
 ### Human Resources Team
 
-The Human Resources team manages one Azure DevOps git repository that stores each solution as a folder within the repository. This approach allows Advanced Makers in the HR team to see and collaborate on Human Resources related solutions.
+The Human Resources team manages one Azure DevOps git repository that stores each solution as a folder within the repository. This approach allows Makers in the HR team to see and collaborate on Human Resources related solutions.
 
 #### Steps
 
 1. Create a new Azure DevOps Project and from the main branch for a new solution branch named Onboarding.
 
 ```bash
-coe aa4am branch \
+coe alm branch \
     -o https://dev.azure.com/contoso \
     -p HR \
     -r HR-Solutions \
@@ -52,7 +52,7 @@ coe aa4am branch \
     -s validation=https://contoso-hr-validation.crm.dynamics.com,test=https://contoso-hr-test.crm.dynamics.com,https://contoso-hr.crm.dynamics.com
 ```
 
-More information on the [coe aa4am branch](../help/aa4am/branch.md) command
+More information on the [coe alm branch](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/branch.md) command
 
 2. After this command is run a default branch with Azure DevOps Pipelines has been created in the repository
 
@@ -85,7 +85,7 @@ Karen as the Advanced Maker in the finance team follows a similar process to wha
 1. **Karen** creates a new Azure DevOps solution branch for the Expense application.
 
 ```bash
-coe aa4am branch \
+coe alm branch \
     -o https://dev.azure.com/contoso \
     -p Finance \
     -r Finance-Solutions \
@@ -93,7 +93,7 @@ coe aa4am branch \
     -s validation=https://contoso-fin-validation.crm.dynamics.com,test=https://contoso-fin-test.crm.dynamics.com,https://contoso-fin.crm.dynamics.com
 ```
 
-More information on the [coe aa4am branch](../help/aa4am/branch.md) command
+More information on the [coe alm branch](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs//help/alm/branch.md) command
 
 2. After this command is run a default branch with Azure DevOps Pipelines has been created in the repository
 

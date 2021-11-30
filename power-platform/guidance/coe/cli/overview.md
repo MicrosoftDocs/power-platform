@@ -6,7 +6,7 @@ author: Grant-Archibald-MS
 ms.author: grarchib
 manager: pladhani
 ms.custom: ""
-ms.date: 10/20/2021
+ms.date: 11/30/2021
 ms.service: power-platform
 ms.topic: "article"
 ms.reviewer: jimholtz
@@ -19,7 +19,7 @@ search.app:
 
 # Center of Excellence (CoE) Command Line Interface (CLI) overview
 
-A Center of Excellence (CoE) command line interface provides automation for common tasks of the CoE starter toolkit. It has been designed to provide a set of commands that meet the needs of different [personas](./aa4am/personas.md) across the organization.
+A Center of Excellence (CoE) command line interface provides automation for common tasks of the CoE starter toolkit. It has been designed to provide a set of commands that meet the needs of different [personas](./alm/personas.md) across the organization.
 
 It can be used to automate the process of installing CoE CLI components covering Azure, Azure DevOps and the Power Platform.
 
@@ -45,7 +45,7 @@ As you consider an enterprise deployment the following sections outline the key 
 
 1. [Install CoE CLI](./install.md) - How to install the CoE CLI using local host computer or via a docker container.
 
-1. [ALM Accelerator for Advanced Makers](./aa4am/overview.md) - Use CLI commands to setup and configure an environment for Advanced Makers to enable them to achieve more within your organization.
+1. [ALM Accelerator for Power Platform](./alm/overview.md) - Use CLI commands to setup and configure an environment for ALM Accelerator to enable them to achieve more within your organization.
 
 ## Getting Started
 
@@ -59,19 +59,19 @@ Authentication for tasks is managed using the Azure CLI. Using standard Azure CL
 
 ```bash
 az login
-coe aa4am install -c aad
+coe alm install -c aad
 az logout
 ```
 
 ## Getting Help
 
-You can get short descriptions of any command by adding **--help** to the command line. To get more detailed help you can use the help command. For example to get help on the ALM Accelerator for Advanced Makers use the following command
+You can get short descriptions of any command by adding **--help** to the command line. To get more detailed help you can use the help command. For example to get help on the ALM Accelerator for Power Platform use the following command
 
 ```bash
-coe help aa4am install
+coe help alm install
 ```
 
-Read more in [help](./help/overview.md) pages for detailed description for each command.
+Read more in [help](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/overview.md) pages for detailed description for each command.
 
 ## Read More
 

@@ -6,7 +6,7 @@ author: Grant-Archibald-MS
 ms.author: grarchib
 manager: pladhani
 ms.custom: ""
-ms.date: 10/20/2021
+ms.date: 11/30/2021
 ms.service: power-platform
 ms.topic: "article"
 ms.reviewer: jimholtz
@@ -19,7 +19,7 @@ search.app:
 
 # Maturity Model
 
-The [Power CAT adoption maturity model](https://powerapps.microsoft.com/blog/power-cat-adoption-maturity-model-repeatable-patterns-for-successful-power-platform-adoption/) provides a set of levels and capabilities that can be used to evaluate usage of the Application Lifecycle Management (ALM) and how the ALM Accelerator for Advanced Makers (AA4AM) can assist.
+The [Power CAT adoption maturity model](https://aka.ms/powercatadoptionmaturity) provides a set of levels and capabilities that can be used to evaluate usage of the Application Lifecycle Management (ALM) and how the ALM Accelerator for Power Platform (AA4PP) can assist.
 
 ## Quick Start
 
@@ -31,8 +31,8 @@ AA4AM is a good match if you can check to see if the following apply:
    - Are the applications classified as Critical or High [Business Impact](#business-impact)?
    - Who is using the application?
       - Is this a Productivity application used by everyone in your organization?
-      - Is it used by Senior Leadership to make Business Impact Decisions?
-      - Is it integrated with External users e.g. Partners / Customer who will rely on solution as part of external process?
+      - Is it used by Senior Leadership to make business impact Decisions?
+      - Is it integrated with External users for example Partners / Customer who will rely on solution as part of external process?
    - Are there specific Compliance and Auditing needs?
       - How important is tracking and auditing who is using the application?
       - Is there compliance and auditing requirements of the solution?
@@ -233,7 +233,7 @@ Leading questions to consider:
 
 Leading questions to consider:
 
-1. Do you have a [Training and Upskilling](/power-platform/guidance/adoption/training-strategy) program for your makers to help them learn key concepts to grow your pool of Advanced Makers?
+1. Do you have a [Training and Upskilling](/power-platform/guidance/adoption/training-strategy) program for your makers to help them learn key concepts to grow your pool of Makers?
 
 1. Do you have an Internal [Champions](/power-platform/guidance/adoption/champions) Community established?
 
@@ -243,7 +243,7 @@ Leading questions to consider:
 
 1. Do you have an adoption campaign to demonstrate how fusion development processes work?
 
-1. Do you have a career path options for makers?
+1. Do you have a career path option for makers?
 
 1. Have you built a community of mentors to share Advanced Maker concepts and best practices?
 

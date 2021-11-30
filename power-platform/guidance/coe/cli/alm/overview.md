@@ -6,7 +6,7 @@ author: Grant-Archibald-MS
 ms.author: grarchib
 manager: pladhani
 ms.custom: ""
-ms.date: 10/20/2021
+ms.date: 11/30/2021
 ms.service: power-platform
 ms.topic: "article"
 ms.reviewer: jimholtz
@@ -17,64 +17,63 @@ search.app:
   - Powerplatform
 ---
 
-# ALM Accelerator for Advanced Makers
+# ALM Accelerator for Power Platform
 
-The [ALM Accelerator for Advanced Makers](https://github.com/microsoft/coe-starter-kit/tree/main/ALMAcceleratorForAdvancedMakers) (AA4AM) 
-command allows you to manage common Application Lifecycle Management (ALM) tasks for Advanced Makers to install, setup and administration of Power Platform Solutions.
+The cli alm command allows you to manage common Application Lifecycle Management (ALM) tasks to install, setup and administration of Power Platform Solutions.
 
 - [Quick Start](#quick-start) - Guides you through the process of a [demo tenant install](./scenarios/tenant-deployments.md#demonstration-deployment)
-- [Understand the Concepts](#understand-the-concepts) - Covers Scenarios, Personas and Key Concepts behind AA4AM and the install process using the CoE CLI
+- [Understand the Concepts](#understand-the-concepts) - Covers Scenarios, Personas and Key Concepts and the install process using the CoE CLI
 
 ## Quick Start
 
 For an Administrator the quick start guide should take around 30 minutes and by the end have configured Azure Active Directory, Azure DevOps and the Power Platform environments.
 
-1. Validate organization [maturity model](./maturity/overview.md#quick-start) for AA4AM
+1. Validate organization [maturity model](./maturity/overview.md#quick-start) for ALM
 
 1. Create your [Power Platform Environments](./before-you-start.md#power-platform) and [Azure DevOps](./before-you-start.md#azure-devops) Organization and Azure DevOps project.
 
-1. Create an install configuration. Review the [install help](../help/aa4am/install.md) for install parameters
+1. Create an install configuration. Review the [install help](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/install.md) for install parameters
 
 ```bash
-coe aa4am generate install -o quickstart.json
+coe alm generate install -o quickstart.json
 ```
 
-   More information on the [coe aa4am generate install](../help/aa4am/generate/install.md) command
+   More information on the [coe alm generate install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/generate/install.md) command
 
 1. Install the ALM Accelerator using the generated configuration file
 
 ```bash
-coe aa4am install -f quickstart.json
+coe alm install -f quickstart.json
 ```
 
-   More information on the [coe aa4am install](../help/aa4am/install.md) command
+   More information on the [coe alm install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/install.md) command
 
    Deploying to your enterprise? Refer to [Enterprise Deployment](./scenarios/tenant-deployments.md#enterprise-deployment) for further information.
 
 1. [Update permissions for the project build service](https://github.com/microsoft/coe-starter-kit/blob/main/ALMAcceleratorForAdvancedMakers/SETUPGUIDE.md#update-permissions-for-the-project-build-service) to enable build pipelines to interact with Git Repositories
 
-1. Have Advanced Makers create [development environments](./development-environments.md) then Add Advanced Makers to Azure DevOps and share the Canvas Application
+1. Have  Makers create [development environments](./development-environments.md) then Add Makers to Azure DevOps and share the Canvas Application
 
 ```bash
-coe aa4am maker add \
+coe alm maker add \
    -o https://dev.azure.com/contoso \
    -p alm-sandbox \
    -e https://contoso-userdev.crm.dynamics.com \
-   -a aa4am-ado-service-principal \
-   -g aa4am-makers -u user@contoso.com
+   -a alm-ado-service-principal \
+   -g alm-makers -u user@contoso.com
 ```
 
-   More information on the [coe aa4am maker add](../help/aa4am/maker/add.md) command
+   More information on the [coe alm maker add](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/maker/add.md) command
 
    You can also generate a user configuration file. Using this approach will allow you to explore each parameter and review the settings before adding the maker.
 
 ```bash
-coe aa4am generate maker add -o user.config
-coe aa4am maker add \
+coe alm generate maker add -o user.config
+coe alm maker add \
    -f user.config
 ```
 
-   More information on the [coe aa4am generate maker add](../help/aa4am/generate/maker/add.md) command
+   More information on the [coe alm generate maker add](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/generate/maker/add.md) command
 
 ## Understand the Concepts
 
@@ -91,7 +90,7 @@ Not sure what AA4AM is and how it can help? The main GitHub project [README](htt
 
 The diagram below provides an overview of the key components required and permissions required.
 
-![ALM Accelerator for Advanced Makers Overview](../media/aa4am-overview.jpg)
+![ALM Accelerator for Power Platform Overview](../media/alm-overview.jpg)
 
 ### Sample Install
 
@@ -105,7 +104,7 @@ The following recording shows a sample generating an install configuration file 
 
 2. As an administrator completes the [Admin Install](./admin-install.md)
 
-3. Have Advanced Makers create [Development Environments](./development-environments.md)
+3. Have Makers create [Development Environments](./development-environments.md)
 
 4. Use [Maker Setup](./maker-setup.md) to create and setup environment and solution branches in the Azure DevOps repository.
 
@@ -115,7 +114,7 @@ Notes:
 
 ### Read Next
 
-- [ALM Accelerator for Advanced Makers](https://github.com/microsoft/coe-starter-kit/tree/main/ALMAcceleratorForAdvancedMakers) - Overview for AA4AM
+- [ALM Accelerator for Power Platform](https://github.com/microsoft/coe-starter-kit/tree/main/ALMAcceleratorForAdvancedMakers) - Overview for AA4AM
 - Manual Setup - Understand the key steps that the CLI is automating
   - [Foundational Setup](https://github.com/microsoft/coe-starter-kit/blob/main/ALMAcceleratorForAdvancedMakers/SETUPGUIDE.md#foundational-setup) - Foundational Setup for Manual steps automated by the CLI install command
   - [Development Project Setup](https://github.com/microsoft/coe-starter-kit/blob/main/ALMAcceleratorForAdvancedMakers/SETUPGUIDE.md#development-project-setup) - Documents the Manual steps that are automated by the CLI install command

@@ -6,7 +6,7 @@ author: Grant-Archibald-MS
 ms.author: grarchib
 manager: pladhani
 ms.custom: ""
-ms.date: 10/20/2021
+ms.date: 11/30/2021
 ms.service: power-platform
 ms.topic: "article"
 ms.reviewer: jimholtz
@@ -19,7 +19,7 @@ search.app:
 
 # DevOps Deployment Model
 
-![DevOps Scenarios](../../media/aa4am-devops-deployment-model.png)
+![DevOps Scenarios](../../media/alm-devops-deployment-model.png)
 
 ## Factors to Consider
 
@@ -41,11 +41,11 @@ In this scenario the following is assumed:
 
 - Single Power Platform Advanced Maker Deployment with Shared Power Platform Environments for the Advanced Maker Canvas Application, Validation, Test and Production Environments
 
-- Single Shared Azure DevOps where all Advanced Makers collaborate on Solutions.
+- Single Shared Azure DevOps where all Makers collaborate on Solutions.
 
 ## Power Platform 1 to Many DevOps
 
-In this scenario the following is assumed:
+In this scenario the following elements are assumed:
 
 - Single Power Platform Advanced Maker Deployment with Shared Power Platform Environments for the Advanced Maker Canvas Application, Validation, Test and Production Environments
 
@@ -61,7 +61,7 @@ This scenario is not a recommended deployment model as is requires the deploymen
 
 In this scenario the following is assumed:
 
-- Multiple Power Platform Advanced Maker Deployment with Shared Power Platform Environments for the Advanced Maker Canvas Application, Validation, Test and Production Environments
+- Multiple Power Platform Advanced Maker Deployments with Shared Power Platform Environments for the Advanced Maker Canvas Application, Validation, Test and Production Environments
 
 - Multiple Azure DevOps for different teams or Business Units
 

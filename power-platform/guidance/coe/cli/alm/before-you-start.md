@@ -6,7 +6,7 @@ author: Grant-Archibald-MS
 ms.author: grarchib
 manager: pladhani
 ms.custom: ""
-ms.date: 10/20/2021
+ms.date: 11/30/2021
 ms.service: power-platform
 ms.topic: "article"
 ms.reviewer: jimholtz
@@ -38,7 +38,7 @@ Production | Production Environment for managed solutions                       
 
 Notes:
 
-1. As a Microsoft Partner you can request access to demo tenants to test ALM Accelerators for Advanced Makers
+1. As a Microsoft Partner you can request access to demo tenants to test ALM Accelerators for Power Platform
    1) Visit [Partner Center](/partner-center/mpn-demos) for more information
    2) Go to [https://demos.microsoft.com](https://demos.microsoft.com) to request a new environment
    3) Select My Environments
@@ -58,7 +58,7 @@ This can be done using the following steps:
 
 1. Go to [https://make.powerapps.com/](https://make.powerapps.com/)
 
-2. Select your maker environment that you will deploy the ALM Accelerator for Advanced Makers into
+2. Select your maker environment that you will deploy the ALM Accelerator for Power Platform into
 
 3. Navigate to Data -> Connections
 
@@ -85,7 +85,7 @@ Component | Description
 Organization | Review [Add Organization Users](/azure/devops/organizations/accounts/add-organization-users) to create Azure DevOps organization and add users
 Project | An Azure DevOps project to integrate with. This guide uses the name **alm-sandbox** as the project name
 
-The following will be setup or used as part of the install and follow on [coe aa4am branch](../help/aa4am/branch.md)
+The following will be setup or used as part of the install and follow on [coe alm branch](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/branch.md)
 
 Component | Description
 --------- | ----------

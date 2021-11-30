@@ -6,7 +6,7 @@ author: Grant-Archibald-MS
 ms.author: grarchib
 manager: pladhani
 ms.custom: ""
-ms.date: 10/20/2021
+ms.date: 11/30/2021
 ms.service: power-platform
 ms.topic: "article"
 ms.reviewer: jimholtz
@@ -19,7 +19,7 @@ search.app:
 
 # Scenarios
 
-As you plan your ALM Accelerator for Advanced Makers (AA4AM) deployment one or more of the following scenarios may apply to you:
+As you plan your ALM Accelerator for Power Platform (AA4AM) deployment one or more of the following scenarios may apply to you:
 
 - [Tenant Deployments](./tenant-deployments.md) - Discusses different Azure Active Directory configurations across Demo, Single AAD and Multiple AAD deployment models
 

@@ -6,7 +6,7 @@ author: Grant-Archibald-MS
 ms.author: grarchib
 manager: pladhani
 ms.custom: ""
-ms.date: 10/20/2021
+ms.date: 11/30/2021
 ms.service: power-platform
 ms.topic: "article"
 ms.reviewer: jimholtz
@@ -21,7 +21,7 @@ search.app:
 
 As a first step you will need to complete the initial steps of an AA4AM deployment as Administrator. The commands below allow you to quickly automate the install. When you completed these steps, you can add Advanced Makers and setup connections to their Power Platform development environments.
 
-![ALM Accelerator for Advanced Makers Install Overview](../media/aa4am-install-overview.png)
+![ALM Accelerator for Power Platform Install Overview](../media/alm-install-overview.png)
 
 It is assumed that the Administrator Install will be run by a single user that has the following rights:
 
@@ -46,10 +46,10 @@ C. CoE CLI installed
 1. Create install configuration file and review the generated JSON file and confirm the settings before you start the install process
 
 ```bash
-coe aa4am generate install -o test.json
+coe alm generate install -o test.json
 ```
 
-More information on the [coe aa4am generate install](../help/aa4am/generate/install.md) command
+More information on the [coe alm generate install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/generate/install.md) command
 
 Which will generate a file similar to
 
@@ -88,10 +88,10 @@ Which will generate a file similar to
 1. Review the JSON and install using the following command
 
 ```bash
-coe aa4am install -f test.json
+coe alm install -f test.json
 ```
 
-More information on the [coe aa4am install](../help/aa4am/install.md) command
+More information on the [coe alm install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/install.md) command
 
 1. [Update permissions for the project build service](https://github.com/microsoft/coe-starter-kit/blob/main/ALMAcceleratorForAdvancedMakers/SETUPGUIDE.md#update-permissions-for-the-project-build-service) to enable build pipelines to interact with Git Repositories
 

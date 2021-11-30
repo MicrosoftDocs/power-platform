@@ -6,7 +6,7 @@ author: Grant-Archibald-MS
 ms.author: grarchib
 manager: pladhani
 ms.custom: ""
-ms.date: 10/20/2021
+ms.date: 11/30/2021
 ms.service: power-platform
 ms.topic: "article"
 ms.reviewer: jimholtz
@@ -27,7 +27,7 @@ The first step is to ensure that the maker and an environment to build and manag
 
 ## Setup Service Principal
 
-The ALM Accelerator for Advanced Makers uses the created Azure Active Directory Service Principal to connect to  environments and import and export the solutions. The user add command enables the ALM Accelerator to access each  environment. The user add command adds the service principal as a user and assigned the System Administrator role to the nominated environment.
+The ALM Accelerator for Power Platform uses the created Azure Active Directory Service Principal to connect to  environments and import and export the solutions. The user add command enables the ALM Accelerator to access each  environment. The user add command adds the service principal as a user and assigned the System Administrator role to the nominated environment.
 
 1. Log out of any existing sessions if not the maker or a Power Platform tenant Administrator
 
@@ -39,10 +39,10 @@ az logout
 1. Add the Service Principal to the environment
 
 ```bash
-coe aa4am user add -e https://org12345-dev.crm.dynamics.com
+coe alm user add -e https://org12345-dev.crm.dynamics.com
 ```
 
-More information on the [coe aa4am user add](../help/aa4am/user/add.md) command
+More information on the [coe alm user add](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/user/add.md) command
 
 ## Maker Create Solution
 
@@ -50,7 +50,7 @@ Power Platform solutions managed by the ALM Accelerator require a branch to be c
 
 1. Switch to Developer Environment
 
-1. Create new solution, for example,  NewSolution1
+1. Create new solution for example NewSolution1
 
 1. Add items to the solution. For example
 
@@ -65,14 +65,14 @@ Power Platform solutions managed by the ALM Accelerator require a branch to be c
 1. Create Solution branch using the following CLI command
 
 ```bash
-coe aa4am branch \
+coe alm branch \
   -o https://dev.azure.com/dev12345 \
   -p alm-sandbox \
   -d MySolution1
 
 ```
 
-More information on the [coe aa4am branch](../help/aa4am/branch.md) command
+More information on the [coe alm branch](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/branch.md) command
 
 NOTES:
 

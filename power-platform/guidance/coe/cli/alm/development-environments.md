@@ -6,7 +6,7 @@ author: Grant-Archibald-MS
 ms.author: grarchib
 manager: pladhani
 ms.custom: ""
-ms.date: 10/20/2021
+ms.date: 11/30/2021
 ms.service: power-platform
 ms.topic: "article"
 ms.reviewer: jimholtz
@@ -26,14 +26,14 @@ Each advanced maker will need a development environment created. Advanced makers
 As Azure DevOps Administrator the following command will add the required service connection to the development environment and setup security for the user
 
 ```bash
-coe aa4am maker add \
+coe alm maker add \
   -o https://dev.azure.com/dev12345 \
   -p alm-sandbox \
   -e https://org12345-dev.crm.dynamics.com \
   -u username@contoso.com
 ```
 
-More information on the [core aa4am maker add](../help/aa4am/maker/add.md) command
+More information on the [core alm maker add](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/maker/add.md) command
 
 ## Read Next
 
