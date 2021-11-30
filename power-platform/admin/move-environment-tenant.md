@@ -35,6 +35,13 @@ You need to [submit a support request](get-help-support.md) to initiate tenant-
 
 There are no user-interface changes or version changes as part of this move. You can move one or multiple environments. Once complete, your environment(s) will appear in your new tenant.
 
+> [!IMPORTANT]
+> When moving individual environments from one tenant to another, if that requires a geographical region change, your tenant becomes a multiregional tenant. Regional features are enabled in the Power Platform admin center.
+> 
+> You might need to reconfigure some applications and settings after tenant to tenant migration such as Microsoft Dynamics 365 for Outlook, server-side sync, SharePoint integration, etc.
+>
+> Geographical region changes are not supported into or out of US GCC, US GCC High, US DoD, or China.
+
 ### Applications and platform supported
 
 | Supported | Not fully supported<sup>*</sup> |
@@ -87,7 +94,7 @@ Depending on how many source environments you are migrating, you'll need to crea
 
 The destination tenant needs an equal or higher number of active user licenses, environment licenses for the environments being migrated, and equal or greater storage as the source tenant.
 
-In order to perform this operation, you'll need to provide some information, such as:
+When your organization is moved from one tenant to another within the same region, the URL does not change.In order to perform this operation, you'll need to provide some information, such as:
 
 - What is the source tenant domain and its region? (example: EMEA, NA, APAC)
 - What is the destination tenant domain and its region? (example: EMEA, NA, APAC)
@@ -105,7 +112,26 @@ After moving environments to another tenant:
 - The source environment will not be accessible.
 - Security group mapping is handled as part of the manual tenant-to-tenant migration process. At the very least, a replacement (or removal) will be needed because the security group won't exist with the same ID in the new Azure AD tenant.
 
+## How the move works
 
+You’ll be provided with a list of prerequisites and post-requisites for your migration as part of the support request raised. The following table describes what Microsoft does before, during, and after your move.
+
+
+| |Before the move<br/>Notification   |During the move<br/>Cut-over  |After the move<br/>Notification and support |
+|---------|---------|---------|---------|
+|**What Microsoft does**   |Your support representative or Account Manager will work with you to request a move and schedule it.         |Cut-over for the migration takes several hours, depending on the number of users and the amount of data. During this period, the organization is not accessible, so the cut-over should be scheduled during the evening or over a weekend.<br/><br/>There is a step that will require your involvement, which is to provide a User Mapping File. This is requested in advance so that we can validate the users being moved before the migration takes place.         |You will be alerted by email or telephone when your environment is migrated to the new tenant.<br/><br/>After the tenant migration is complete, your support representative or Account Manager will assist you to contact with billing to cancel and/or credit your previous subscription, if needed.         |
+
+We will adhere to the terms of the [Microsoft Online Services Service Level Agreement](https://go.microsoft.com/fwlink/p/?LinkID=523897) for all moves.
+
+## Frequently asked questions
+
+## Are background operations in setting enabled during T2T ?
+Administration mode is enabled during T2T migration so background operations don’t run. [Administration mode - Power Platform ](https://docs.microsoft.com/en-us/power-platform/admin/admin-mode)
+
+## Can we migrate all users from source to destination ?
+we can migrate all source users to destination only if users in the destination org.e.g
+user001@source.com,user001@destination.com
+user002@source.com,user002@destination.com        
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
