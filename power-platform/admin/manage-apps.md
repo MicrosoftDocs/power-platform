@@ -131,7 +131,7 @@ The process to install an app depends on your view.
 6. Agree to the terms of service, and then select **Install**.
 
 ## Troubleshooting installation error
-
+<!-- fwlink  2182141 -->
 If you see the following error:
 
 "Installing Dynamics 365 apps such as Dynamics 365 Sales and Dynamics 365 Customer Service is only supported on environments that have been created with a database with the option to **Enable Dynamics 365 apps** set to **Yes**. Try installing this application in an environment with a database and **Enable Dynamics 365 apps** enabled on it."
@@ -140,6 +140,9 @@ If you see the following error:
 > ![Installing this app is only supported on environments that have been created with a database with option to enable apps.](media/install-app-error.png "Installing this app is only supported on environments that have been created with a database with option to enable apps.")
 
 You'll need to create a new environment as directed in [Create an environment with a database](create-environment.md#create-an-environment-with-a-database). In step 4, be sure to set **Enable Dynamics 365 apps** to **Yes**.
+
+> [!div class="mx-imgBorder"] 
+> ![Select Enable Dynamics 365 apps.](media/new-environment-page2-enable-apps-callout.png "Select Enable Dynamics 365 apps.")
 
 ## Troubleshooting a failed installation
 
@@ -164,12 +167,13 @@ Filters are applied to the **Select an environment** drop-down list as follows:
 2. Displays environments that only have a database.
 3. Displays environments that are only in a ready state. 
 
+<!-- 
 ### Error: Installing this app is only supported in environments that’ve been created with a database with the option to enable one or more Dynamics 365 apps  
 
 Installing Dynamics 365 applications, such as Dynamics 365 Sales, Dynamics 365 Customer Service etc., is only supported on environments that have been created with a database with the option to enable one or more D365 Applications. Try installing this application in an environment with a database and Dynamics Applications enabled on it. 
 
 > [!div class="mx-imgBorder"] 
 > ![Select Enable Dynamics 365 apps.](media/new-environment-page2-enable-apps-callout.png "Select Enable Dynamics 365 apps.")
-
+-->
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
