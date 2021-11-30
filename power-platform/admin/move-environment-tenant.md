@@ -39,7 +39,7 @@ There are no user-interface changes or version changes as part of this move. You
 
 | Supported | Not fully supported<sup>*</sup> |
 |-------------------------|-------------------------|
-| <ul></br><li>CRM 9.0</li></br><li>CRM8.1</li></br><li>Dataverse</li></br><li>Customer Engagement Apps</li></br></ul> | <ul></br><li>Power Apps</li></br><li>Power Automate</li></br><li>Power Flow</li></br><li>Power Virtual Agent</li></br></ul> |
+| <ul></br><li>Dynamics 365 version 9.0 or later</li></br><li>Dynamics 365 version 8.1</li></br><li>Dataverse</li></br><li>customer engagement apps</li></br></ul> | <ul></br><li>Power Apps</li></br><li>Power Automate</li></br><li>Power Flow</li></br><li>Power Virtual Agent</li></br></ul> |
 
 <sup>*</sup>There could be potential data loss during migration.
 
