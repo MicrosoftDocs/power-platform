@@ -1,6 +1,6 @@
 ---
-title: "Use the ALM Accelerator for Advanced Maker App | MicrosoftDocs"
-description: "The ALM Accelerator for Advanced Makers will help you follow ALM patterns and practices. It enables you to source control your solutions and move them from your development environment to test and production environments using Azure DevOps"
+title: "Use the ALM Accelerator for Power Platform App | MicrosoftDocs"
+description: "The ALM Accelerator for Power Platform will help you follow ALM patterns and practices. It enables you to source control your solutions and move them from your development environment to test and production environments using Azure DevOps"
 author: manuelap-msft
 manager: devkeydet
 ms.service: power-platform
@@ -17,37 +17,37 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Use the ALM Accelerator for Advanced Maker App (Preview)
+# Use the ALM Accelerator for Power Platform App (Preview)
 
 > [!NOTE]
-> ALM Accelerator for Advanced Makers is currently in public preview. Please see Issues currently tagged as [vnext](https://github.com/microsoft/coe-starter-kit/issues?q=is%3Aopen+is%3Aissue+label%3Aalm-accelerator+label%3Avnext) for the Roadmap to be completed prior to general availability. While in Public Preview it can be expected that there will be breaking changes and frequent updates to address feedback from preview members. Additionally, the Public Preview is reliant on the experimental [Power Apps Source File Pack and Unpack Utility](https://github.com/microsoft/PowerApps-Language-Tooling) that is being developed separately from AA4AM.
+> ALM Accelerator for Power Platform is currently in public preview. Please see Issues currently tagged as [vnext](https://github.com/microsoft/coe-starter-kit/issues?q=is%3Aopen+is%3Aissue+label%3Aalm-accelerator+label%3Avnext) for the Roadmap to be completed prior to general availability. While in Public Preview it can be expected that there will be breaking changes and frequent updates to address feedback from preview members. Additionally, the Public Preview is reliant on the experimental [Power Apps Source File Pack and Unpack Utility](https://github.com/microsoft/PowerApps-Language-Tooling) that is being developed separately from AA4PP.
 
-## Demo: ALM Accelerator for Advanced Makers
+## Demo: ALM Accelerator for Power Platform
 
-Watch how to use the ALM Accelerator for Advanced Makers solution.
+Watch how to use the ALM Accelerator for Power Platform solution.
 > [!VIDEO https://www.youtube.com/watch?v=-P3uSUTdsSY]
 >
 
 ## What's in the solution
 
-The ALM Accelerator for Advanced Makers is a Canvas App and a set of Azure Pipelines and templates to provide a simplified interface for developers. With the ALM Accelerator for Advanced Makers, developers can commit and create pull requests for their development work in the Power Platform. The combination of the Azure Pipelines and the App is what make up the full ALM Accelerator for Advanced Makers (AA4AM) solution. The pipelines and the App are **reference implementations**. It was developed for use by the internal development team for the CoE Starter Kit. AA4AM is open-source and is available to the public to show how healthy ALM can be achieved in the Power Platform. AA4AM can be used as is or customized for specific business scenarios.
+The ALM Accelerator for Power Platform is a Canvas App and a set of Azure Pipelines and templates to provide a simplified interface for developers. With the ALM Accelerator for Power Platform, developers can commit and create pull requests for their development work in the Power Platform. The combination of the Azure Pipelines and the App is what make up the full ALM Accelerator for Power Platform (AA4PP) solution. The pipelines and the App are **reference implementations**. It was developed for use by the internal development team for the CoE Starter Kit. AA4PP is open-source and is available to the public to show how healthy ALM can be achieved in the Power Platform. AA4PP can be used as is or customized for specific business scenarios.
 
-The solution is the Dataverse Solution System. All Application Lifecycle Management in the Power Platform is based on makers creating components within a Solution. To use the AA4AM your components (Apps, Flows, Customizations, and other components) must first be included in a solution. A solution in Dataverse is a deployable package of components that AA4AM will unpack and store in Azure DevOps Git source control.
+The solution is the Dataverse Solution System. All Application Lifecycle Management in the Power Platform is based on makers creating components within a Solution. To use the AA4PP your components (Apps, Flows, Customizations, and other components) must first be included in a solution. A solution in Dataverse is a deployable package of components that AA4PP will unpack and store in Azure DevOps Git source control.
 
-The target end user for AA4AM is the Power Platform Maker who is comfortable with Solutions, Git, Azure DevOps, and ALM concepts. If you're not already familiar with these technologies and concepts, you should consider taking the following courses.
+The target end user for AA4PP is the Power Platform Maker who is comfortable with Solutions, Git, Azure DevOps, and ALM concepts. If you're not already familiar with these technologies and concepts, you should consider taking the following courses.
 
 1. [Introduction to version control with Git](/learn/paths/intro-to-vc-git/)
 2. [Use Git version-control tools in Visual Studio Code](/learn/modules/use-git-from-vs-code/)
 3. [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops/)
 4. [Manage solutions in Power Apps and Power Automate](/learn/modules/manage-solutions-power-automate/)
 
-The target user for setting up AA4AM would generally be an Administrator with a deeper understanding of Power Platform Environments and Solutions, Azure Pipelines, and Administration as well as familiarity with Azure Active Directory and Dataverse Administration.
+The target user for setting up AA4PP would generally be an Administrator with a deeper understanding of Power Platform Environments and Solutions, Azure Pipelines, and Administration as well as familiarity with Azure Active Directory and Dataverse Administration.
 
 ![The Maker Team](media/almacceleratoradvanced-components/TheMakerTeam.png "The Maker Team")
 
 ## Pipelines
 
-The AA4AM Pipelines are a set of YAML pipelines intended to be used with Azure DevOps. Eventually, these pipelines will be ported to support GitHub workflows, but currently only support Azure Pipelines. These reference pipelines were written to demonstrate an end to end ALM process for Power Platform solutions. The pipelines use first-party tasks provided by Microsoft, some third-party tasks and low-level PowerShell scripts to automate all of the ALM scenarios. As such, the pipelines support scenarios related to unpacking / source controlling / building and deploying a solution from a development environment. The pipelines support the ability to deploy to many environments, but only currently demonstrate deployment from a Development environment to a Build Validation to Test and ultimately to Production based on the ALM process used by the CoE Starter Kit development team.
+The AA4PP Pipelines are a set of YAML pipelines intended to be used with Azure DevOps. Eventually, these pipelines will be ported to support GitHub workflows, but currently only support Azure Pipelines. These reference pipelines were written to demonstrate an end to end ALM process for Power Platform solutions. The pipelines use first-party tasks provided by Microsoft, some third-party tasks and low-level PowerShell scripts to automate all of the ALM scenarios. As such, the pipelines support scenarios related to unpacking / source controlling / building and deploying a solution from a development environment. The pipelines support the ability to deploy to many environments, but only currently demonstrate deployment from a Development environment to a Build Validation to Test and ultimately to Production based on the ALM process used by the CoE Starter Kit development team.
 
 The Pipelines handle the following.
 
@@ -92,7 +92,7 @@ The Pipelines handle the following.
 
 ## ALM Accelerator App
 
-The AA4AM Canvas App provides a convenience layer on top of the AA4AM Pipelines. The AA4AM Canvas App allows Power Platform Makers to easily invoke the Azure Pipelines to perform their complex tasks without context switching between the Power Apps environment and the Azure DevOps. The goal of the App is to provider Makers with a friction free way of performing common Development and ALM tasks as described in the following.
+The AA4PP Canvas App provides a convenience layer on top of the AA4PP Pipelines. The AA4PP Canvas App allows Power Platform Makers to easily invoke the Azure Pipelines to perform their complex tasks without context switching between the Power Apps environment and the Azure DevOps. The goal of the App is to provider Makers with a friction free way of performing common Development and ALM tasks as described in the following.
 
 
 
@@ -117,7 +117,7 @@ The AA4AM Canvas App provides a convenience layer on top of the AA4AM Pipelines.
 > When you first launch the app you may need to consent to the app using your connections.
 
 2. Select the **Cog** in the top right to select your **Azure DevOps Environment**, **Project**, and **Repo** to which you'll push your changes and submit your pull requests and select **Save**
-   ![Configure Settings for AA4AM](media/almacceleratoradvanced-components/image-20210303085854533.png "Configure Settings for AA4AM")
+   ![Configure Settings for AA4PP](media/almacceleratoradvanced-components/image-20210303085854533.png "Configure Settings for AA4PP")
 
 > [!NOTE]
 > If you don't see your DevOps Organization / Project in the dropdown double check that the Custom connector is working correctly after updating it's Security settings.

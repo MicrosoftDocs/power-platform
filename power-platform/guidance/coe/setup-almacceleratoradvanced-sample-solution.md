@@ -1,6 +1,6 @@
 ---
 title: "ALM Accelerator Sample Solution Setup | MicrosoftDocs"
-description: "The ALM Accelerator Sample Solution is a solution you can use to test your setup of the ALM Accelerator for Advanced Makers and provide a step-by-step introduction to configuring your own solution to be used with the ALM Accelerator For Advanced Makers."
+description: "The ALM Accelerator Sample Solution is a solution you can use to test your setup of the ALM Accelerator for Power Platform and provide a step-by-step introduction to configuring your own solution to be used with the ALM Accelerator For Advanced Makers."
 author: mikefactorial
 manager: devkeydet
 ms.service: power-platform
@@ -20,7 +20,7 @@ search.app:
 # ALM Accelerator Sample Solution Setup (Preview)
 
 > [!NOTE]
-> ALM Accelerator for Advanced Makers is currently in public preview. Please see Issues currently tagged as [vnext](https://github.com/microsoft/coe-starter-kit/issues?q=is%3Aopen+is%3Aissue+label%3Aalm-accelerator+label%3Avnext) for the Roadmap to be completed prior to general availability. While in Public Preview it can be expected that there will be breaking changes and frequent updates to address feedback from preview members. Additionally, the Public Preview is reliant on the experimental [Power Apps Source File Pack and Unpack Utility](https://github.com/microsoft/PowerApps-Language-Tooling) that is being developed separately from AA4AM.
+> ALM Accelerator for Power Platform is currently in public preview. Please see Issues currently tagged as [vnext](https://github.com/microsoft/coe-starter-kit/issues?q=is%3Aopen+is%3Aissue+label%3Aalm-accelerator+label%3Avnext) for the Roadmap to be completed prior to general availability. While in Public Preview it can be expected that there will be breaking changes and frequent updates to address feedback from preview members. Additionally, the Public Preview is reliant on the experimental [Power Apps Source File Pack and Unpack Utility](https://github.com/microsoft/PowerApps-Language-Tooling) that is being developed separately from AA4PP.
 
 When you create a solution in Dataverse, you'll need to create pipelines specifically for that solution. Follow these steps for creating pipelines for the ALM Accelerator Sample Solution in Azure DevOps. There are sample pipelines included in the Pipeline directory in the CoE ALM Templates repo.
 

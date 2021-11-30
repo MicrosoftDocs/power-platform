@@ -1,6 +1,6 @@
 ---
-title: "ALM Accelerator for Advanced Makers | MicrosoftDocs"
-description: "The ALM Accelerator for Advanced Makers will help you follow ALM patterns and practices to source control and move your solutions from your development environment to test and production environments using Azure DevOps"
+title: "ALM Accelerator for Power Platform | MicrosoftDocs"
+description: "The ALM Accelerator for Power Platform will help you follow ALM patterns and practices to source control and move your solutions from your development environment to test and production environments using Azure DevOps"
 author: mikefactorial
 manager: devkeydet
 ms.service: power-platform
@@ -17,10 +17,10 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Set up ALM Accelerator for Advanced Makers (AA4AM) components (Preview)
+# Set up ALM Accelerator for Power Platform (AA4PP) components (Preview)
 
 > [!NOTE]
-> ALM Accelerator for Advanced Makers is currently in public preview. Please see Issues currently tagged as [vnext](https://github.com/microsoft/coe-starter-kit/issues?q=is%3Aopen+is%3Aissue+label%3Aalm-accelerator+label%3Avnext) for the Roadmap to be completed prior to general availability. While in Public Preview it can be expected that there will be breaking changes and frequent updates to address feedback from preview members. Additionally, the Public Preview is reliant on the experimental [Power Apps Source File Pack and Unpack Utility](https://github.com/microsoft/PowerApps-Language-Tooling) that is being developed separately from AA4AM.
+> ALM Accelerator for Power Platform is currently in public preview. Please see Issues currently tagged as [vnext](https://github.com/microsoft/coe-starter-kit/issues?q=is%3Aopen+is%3Aissue+label%3Aalm-accelerator+label%3Avnext) for the Roadmap to be completed prior to general availability. While in Public Preview it can be expected that there will be breaking changes and frequent updates to address feedback from preview members. Additionally, the Public Preview is reliant on the experimental [Power Apps Source File Pack and Unpack Utility](https://github.com/microsoft/PowerApps-Language-Tooling) that is being developed separately from AA4PP.
 
 The ALM Accelerator components enable makers to apply source control strategies using Azure DevOps and use automated builds and deployment of solutions to their environments without the need for manual intervention by the maker, administrator, developer, or tester. In addition, the ALM Accelerator provides makers the ability to work without intimate knowledge of the downstream technologies and to be able to switch quickly from developing solutions to source controlling the solution and ultimately pushing their apps to other environments with as few interruptions to their work as possible.
 
@@ -28,18 +28,18 @@ The ALM Accelerator components solution doesn't have a dependency on other compo
 
 ## Before you start
 
-The following documentation is intended to be a step-by-step process for setting up AA4AM manually. However, **it's recommended that you use the [Center of Excellence Command Line Interface (coe-cli)](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli#readme) to assist in automating these steps**. This document will provide details and context for the actions that are performed by the coe-cli and act as a reference for those who want to know the specifics of each step in the process.
+The following documentation is intended to be a step-by-step process for setting up AA4PP manually. However, **it's recommended that you use the [Center of Excellence Command Line Interface (coe-cli)](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli#readme) to assist in automating these steps**. This document will provide details and context for the actions that are performed by the coe-cli and act as a reference for those who want to know the specifics of each step in the process.
 
 ## Document structure
 
 The Setup Guide is structured into seven main sections
 
 - **Prerequisites** - Considerations and requirements to complete the setup.
-- **Foundational Setup** - This section walks through the base setup of the AA4AM. The base setup consists of the steps and configurations required.
+- **Foundational Setup** - This section walks through the base setup of the AA4PP. The base setup consists of the steps and configurations required.
 - **Development Project Setup** - This section includes the steps required to set up a new Development Project covering project-specific setup of Azure DevOps, generic build and deployment pipelines, Service Connections, Power Platform Environments, and Application Users
 - **Solution Setup** - These steps are specific to each solution you wish to support with the ALM Accelerator. The section covers setting up the solution-specific pipelines, branch policies, deployment variables to support connections references, environment variables, and AAD group sharing.
-- **Importing the Solution and Configuring the App** - This section takes you through the steps required to import the actual AA4AM canvas app and configuring the included custom connector.
-- **Using the ALM Accelerator App** - A short introduction to using the AA4AM canvas app
+- **Importing the Solution and Configuring the App** - This section takes you through the steps required to import the actual AA4PP canvas app and configuring the included custom connector.
+- **Using the ALM Accelerator App** - A short introduction to using the AA4PP canvas app
 - **Troubleshooting** - A few pointers on some known issues and how to remediate these.
 
 ## Prerequisites
@@ -49,9 +49,9 @@ The Setup Guide is structured into seven main sections
 The application will manage deploying solutions from Development to Validation to Testing and to Production. The environment into which you're deploying the ALM Accelerator app will need to be created with a Dataverse database. Additionally, any target environment requires a Dataverse database in order to deploy your solutions.
 
 > [!NOTE]
-> Currently the ALM Accelerator is not compatible with Dataverse for Teams. Both the AA4AM App and the associated AzDO pipelines assume the full version of Dataverse is being used in all environments.
+> Currently the ALM Accelerator is not compatible with Dataverse for Teams. Both the AA4PP App and the associated AzDO pipelines assume the full version of Dataverse is being used in all environments.
 
-You'll need to **create an environment in which to set up the AA4AM Solution**. It's recommended to install AA4AM in the same environment as other CoE Starter Kit Solutions. For more information about how to decide on the best strategy for your organization, see [Establishing an Environment Strategy for Microsoft Power Platform](/power-platform/guidance/adoption/environment-strategy) and [Environment strategy for ALM](/power-platform/alm/environment-strategy-alm).
+You'll need to **create an environment in which to set up the AA4PP Solution**. It's recommended to install AA4PP in the same environment as other CoE Starter Kit Solutions. For more information about how to decide on the best strategy for your organization, see [Establishing an Environment Strategy for Microsoft Power Platform](/power-platform/guidance/adoption/environment-strategy) and [Environment strategy for ALM](/power-platform/alm/environment-strategy-alm).
 
 ### Azure DevOps Environment
 
@@ -68,7 +68,7 @@ To complete the steps below, you'll need the following users and permissions in 
 
 ### Connectors and DLPs
 
-For the AA4AM Canvas App to work, the following connectors must be available to be used together in the environment into which the ALM Accelerator solution is imported.
+For the AA4PP Canvas App to work, the following connectors must be available to be used together in the environment into which the ALM Accelerator solution is imported.
 
 - [Dataverse (Legacy)](/connectors/commondataservice/)
 - [Power Apps for Makers](/connectors/powerappsforappmakers/)
@@ -77,7 +77,7 @@ For the AA4AM Canvas App to work, the following connectors must be available to 
 
 ## Foundational Setup
 
-The following steps will guide you through setting up the foundations of AA4AM. These steps are general to the functionality of the ALM Accelerator and not project or solution-specific.
+The following steps will guide you through setting up the foundations of AA4PP. These steps are general to the functionality of the ALM Accelerator and not project or solution-specific.
 
 ### Create an App Registration in your AAD Environment
 
@@ -139,7 +139,7 @@ Sign in to [portal.azure.com](https://portal.azure.com).
 In order for the pipelines to perform certain actions against the environments in your Power Platform tenant you'll need to grant Power App Management permissions to your App registration. To do so, you'll need to run the following PowerShell commandlet as an interactive user that has Power Apps administrative privileges. You'll need to run this command once, using an interactive user, in PowerShell after your app registration has been created. The command gives permissions to the Service Principal to be able to execute environment-related functions including querying for environments and connections via Microsoft.PowerApps.Administration.PowerShell. For more information on the **New-PowerAppManagementApp** cmdlet, see [here](/powershell/module/microsoft.powerapps.administration.powershell/new-powerappmanagementapp)
 
 > [IMPORTANT!]
-Currently this commandlet gives elevated permissions (for example Power Platform Admin) to the app registration. Your organization's security policies may not allow for these types of permissions. Ensure that these permissions are allowed before continuing. In the case that these elevated permissions are not allowed you'll not be able to use the AA4AM pipelines.
+Currently this commandlet gives elevated permissions (for example Power Platform Admin) to the app registration. Your organization's security policies may not allow for these types of permissions. Ensure that these permissions are allowed before continuing. In the case that these elevated permissions are not allowed you'll not be able to use the AA4PP pipelines.
 
 ```powershell
 Install-Module -Name Microsoft.PowerApps.Administration.PowerShell
@@ -209,7 +209,7 @@ There are a few optional pipeline variables that can be set on the export-soluti
 The **DoNotExportCurrentEnvironmentVariableValues** variable can be used to ensure that the current values of environment variables are never committed to source control during the export process.
 
 > [!IMPORTANT]
-> This pipeline variable is recommended in order to use the deployment configuration functionality in the AA4AM App.
+> This pipeline variable is recommended in order to use the deployment configuration functionality in the AA4PP App.
 
 ![Create the DoNotExportCurrentEnvironmentVariableValues pipeline variable and set the value to true](media/setup-almacceleratoradvanced/image-20210723164226271.png)
 
@@ -286,7 +286,7 @@ The following section will guide you through the setup steps required for each o
 Each Dataverse environment (e.g Development, Validation, Test, and Production) will need to have a **Power Platform service connection in DevOps**. For each of your environments follow the steps below to setup the service connection.
 
 > [!NOTE]
-> Users of the AA4AM app will only see environments for which they have either User or Administrator role on the Service Connection in Azure DevOps. If using personal development environments all developers should have User or Administrator role for the Service Connection for their own development environment. Validation, Test, and Production environment service connections only need permissions granted to pipelines (for example Build Service)
+> Users of the AA4PP app will only see environments for which they have either User or Administrator role on the Service Connection in Azure DevOps. If using personal development environments all developers should have User or Administrator role for the Service Connection for their own development environment. Validation, Test, and Production environment service connections only need permissions granted to pipelines (for example Build Service)
 
 1. Go to <https://dev.azure.com> and select your **Project**
 
@@ -300,7 +300,7 @@ Each Dataverse environment (e.g Development, Validation, Test, and Production) w
 1. Enter the same value as above for the **Service Connection Name**.  **NOTE: You must include the trailing forward slash**
 
    > [!IMPORTANT]
-   > AA4AM will use the Service connection name to identify the service connection to use per environment so this needs to be the same URL you entered above **including the trailing forward slash**).
+   > AA4PP will use the Service connection name to identify the service connection to use per environment so this needs to be the same URL you entered above **including the trailing forward slash**).
 
 1. Enter the **Tenant ID**, **Application (client) ID**, and **Client Secret** you copied from AAD when you created your App Registration and select **Grant access permissions to all pipelines** then select **Save**.
 
@@ -576,7 +576,7 @@ Download the **latest managed solution**(s) from GitHub (<https://github.com/mic
 
 1. The screenshot below is for reference as to where the managed solution exists under a release. The actual version should be the most recent release.
 
-   ![GitHub Releases for ALM Accelerator for Advanced Makers](media/setup-almacceleratoradvanced/image-20210430150752479.png)
+   ![GitHub Releases for ALM Accelerator for Power Platform](media/setup-almacceleratoradvanced/image-20210430150752479.png)
 
 1. Go to <https://make.powerapps.com> and select the environment you want to use to host the ALM Accelerator App
 

@@ -1,6 +1,6 @@
 ---
-title: "ALM Accelerator for Advanced Maker User Setup | MicrosoftDocs"
-description: "Configuring user permissions to access the ALM Accelerator for Advanced Makers App and Pipelines."
+title: "ALM Accelerator for Power Platform User Setup | MicrosoftDocs"
+description: "Configuring user permissions to access the ALM Accelerator for Power Platform App and Pipelines."
 author: mikefactorial
 manager: devkeydet
 ms.service: power-platform
@@ -17,16 +17,16 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# ALM Accelerator for Advanced Maker User Setup (Preview)
+# ALM Accelerator for Power Platform User Setup (Preview)
 
 > [!NOTE]
-> ALM Accelerator for Advanced Makers is currently in public preview. Please see Issues currently tagged as [vnext](https://github.com/microsoft/coe-starter-kit/issues?q=is%3Aopen+is%3Aissue+label%3Aalm-accelerator+label%3Avnext) for the Roadmap to be completed prior to general availability. While in Public Preview it can be expected that there will be breaking changes and frequent updates to address feedback from preview members. Additionally, the Public Preview is reliant on the experimental [Power Apps Source File Pack and Unpack Utility](https://github.com/microsoft/PowerApps-Language-Tooling) that is being developed separately from AA4AM.
+> ALM Accelerator for Power Platform is currently in public preview. Please see Issues currently tagged as [vnext](https://github.com/microsoft/coe-starter-kit/issues?q=is%3Aopen+is%3Aissue+label%3Aalm-accelerator+label%3Avnext) for the Roadmap to be completed prior to general availability. While in Public Preview it can be expected that there will be breaking changes and frequent updates to address feedback from preview members. Additionally, the Public Preview is reliant on the experimental [Power Apps Source File Pack and Unpack Utility](https://github.com/microsoft/PowerApps-Language-Tooling) that is being developed separately from AA4PP.
 
-The AA4AM App is intended to be used by makers to increase productivity while developing solutions in Power Platform. The following are instructions for the recommended setup of a maker's user account in Dataverse and Azure DevOps. It's recommended that you use Azure AD groups and Dataverse Group Teams to control access to Dataverse resources and Azure DevOps Groups to control access to Azure DevOps resources. However, assigning permissions on a user by user basis is possible as well.
+The AA4PP App is intended to be used by makers to increase productivity while developing solutions in Power Platform. The following are instructions for the recommended setup of a maker's user account in Dataverse and Azure DevOps. It's recommended that you use Azure AD groups and Dataverse Group Teams to control access to Dataverse resources and Azure DevOps Groups to control access to Azure DevOps resources. However, assigning permissions on a user by user basis is possible as well.
 
 ## Dataverse User Setup
 
-In order for users to access resources in Dataverse when running the AA4AM app they need to be assigned the appropriate roles. The recommended way to do this is to create a Group Team in Dataverse to which all of your makers will be added and assign the appropriate role(s) to the team. Set up a group team as follows and you'll be able to manage your makers using Azure AD by adding and removing them from a Group.
+In order for users to access resources in Dataverse when running the AA4PP app they need to be assigned the appropriate roles. The recommended way to do this is to create a Group Team in Dataverse to which all of your makers will be added and assign the appropriate role(s) to the team. Set up a group team as follows and you'll be able to manage your makers using Azure AD by adding and removing them from a Group.
 
 1. Navigate to <https://admin.powerplatform.microsoft.com/>
 1. **Select the Environment** in which the user exists

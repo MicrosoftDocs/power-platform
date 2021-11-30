@@ -48,7 +48,7 @@ When a user submits this request, an Approval request is sent to a predefined ad
 
 ## Create an environment and GitHub repository
 
-When an administrator approves a project, a new environment with a Dataverse database is created. This environment is dedicated to the maker and their solution. By default, this developer environment is set to expire in 30 days, but users can request an extension.  
+When an administrator approves a project, a new environment with a Dataverse database is created. This environment is dedicated to the maker and their solution. By default, this developer environment is set to expire in 30 days, but users can request an extension.
 
 ![When an administrator approves a project, a new environment with a Dataverse database is created.](media/git-28.png "When an administrator approves a project, a new environment with a Dataverse database is created.")
 

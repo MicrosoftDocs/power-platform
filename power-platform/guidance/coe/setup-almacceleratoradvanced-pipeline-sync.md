@@ -1,6 +1,6 @@
 ---
-title: "ALM Accelerator for Advanced Makers Pipeline Sync Setup | MicrosoftDocs"
-description: "Creating a pipeline to sync the latest ALM Accelerator for Advanced Makers pipeline templates to your Azure DevOps repository."
+title: "ALM Accelerator for Power Platform Pipeline Sync Setup | MicrosoftDocs"
+description: "Creating a pipeline to sync the latest ALM Accelerator for Power Platform pipeline templates to your Azure DevOps repository."
 author: mikefactorial
 manager: devkeydet
 ms.service: power-platform
@@ -17,14 +17,14 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# ALM Accelerator for Advanced Makers Pipeline Sync Setup (Preview)
+# ALM Accelerator for Power Platform Pipeline Sync Setup (Preview)
 
 > [!NOTE]
-> ALM Accelerator for Advanced Makers is currently in public preview. Please see Issues currently tagged as [vnext](https://github.com/microsoft/coe-starter-kit/issues?q=is%3Aopen+is%3Aissue+label%3Aalm-accelerator+label%3Avnext) for the Roadmap to be completed prior to general availability. While in Public Preview it can be expected that there will be breaking changes and frequent updates to address feedback from preview members. Additionally, the Public Preview is reliant on the experimental [Power Apps Source File Pack and Unpack Utility](https://github.com/microsoft/PowerApps-Language-Tooling) that is being developed separately from AA4AM.
+> ALM Accelerator for Power Platform is currently in public preview. Please see Issues currently tagged as [vnext](https://github.com/microsoft/coe-starter-kit/issues?q=is%3Aopen+is%3Aissue+label%3Aalm-accelerator+label%3Avnext) for the Roadmap to be completed prior to general availability. While in Public Preview it can be expected that there will be breaking changes and frequent updates to address feedback from preview members. Additionally, the Public Preview is reliant on the experimental [Power Apps Source File Pack and Unpack Utility](https://github.com/microsoft/PowerApps-Language-Tooling) that is being developed separately from AA4PP.
 
 ## Pipeline Sync Setup
 
-The Pipeline Sync script was created to make synchronizing the ALM Accelerator for Advanced Makers' (AA4AM) pipeline templates simpler. As the pipeline templates grow and change, users are required to update the pipelines with each release of AA4AM. To simplify this process, we created another pipeline template that will automatically sync your Azure DevOps repo with the pipeline template repo in GitHub. Follow the steps below to get started using the Pipeline Sync pipeline.
+The Pipeline Sync script was created to make synchronizing the ALM Accelerator for Power Platform' (AA4PP) pipeline templates simpler. As the pipeline templates grow and change, users are required to update the pipelines with each release of AA4PP. To simplify this process, we created another pipeline template that will automatically sync your Azure DevOps repo with the pipeline template repo in GitHub. Follow the steps below to get started using the Pipeline Sync pipeline.
 
 1. Initially, you'll need to manually sync a copy of the pipeline templates from <https://github.com/microsoft/coe-alm-accelerator-templates/blob/main/Pipelines/>. Follow the steps in the [Setup Docs](setup-almacceleratoradvanced.md#clone-the-yaml-pipelines-from-github-to-your-azure-devops-instance) to clone the pipeline template repo to your Azure DevOps repo.
 
