@@ -41,7 +41,7 @@ There are no user-interface changes or version changes as part of this move. You
 |-------------------------|-------------------------|
 | <ul></br><li>CRM 9.0</li></br><li>CRM8.1</li></br><li>Dataverse</li></br><li>Customer Engagement Apps</li></br></ul> | <ul></br><li>Power Apps</li></br><li>Power Automate</li></br><li>Power Flow</li></br><li>Power Virtual Agent</li></br></ul> |
 
-<sup>*</sup>There could be potential data loss during migration
+<sup>*</sup>There could be potential data loss during migration.
 
 ### Scenarios supported
 
@@ -63,20 +63,16 @@ There are no user-interface changes or version changes as part of this move. You
     <td colspan="5"></td>
   </tr>
   <tr>
-    <td>|</td>
+    <td>|<br>v</td>
     <td colspan="5"></td>
   </tr>
   <tr>
-    <td>v</td>
-    <td colspan="5"></td>
-  </tr>
-  <tr>
-    <td>Pre-verification--></td>
-    <td>Create and restore database--></td>
-    <td>Chage org's mapping--></td>
-    <td>User mapping and sync--></td>
-    <td>Publish destination orginization--></td>
-    <td>Disable source organization--></td>
+    <td>Pre-<br>verification--></td>
+    <td>Create and restore<br>database--></td>
+    <td>Change org's <br>mapping--></td>
+    <td>User mapping <br>and sync--></td>
+    <td>Publish destination <br>organization--></td>
+    <td>Disable source <br>organization--></td>
   </tr>
 </table>
 
