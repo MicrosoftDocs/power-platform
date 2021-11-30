@@ -68,7 +68,7 @@ There are no user-interface changes or version changes as part of this move. You
     <td>Change org's mapping<br>--></td>
     <td>User mapping and sync<br>--></td>
     <td>Publish destination organization<br>--></td>
-    <td>Disable source organization<br>--></td>
+    <td>Disable source organization</td>
   </tr>
 </table>
 
