@@ -47,7 +47,6 @@ There are no user-interface changes or version changes as part of this move. You
 | Supported | Not fully supported<sup>*</sup> |
 |-------------------------|-------------------------|
 | <ul></br><li>Dataverse</li></br><li>Dynamics apps</li></br></ul> | <ul></br><li>Power Apps</li></br><li>Power Automate</li></br><li>Power Virtual Agent</li></br></ul> |
-
 <sup>*</sup>There could be potential data loss during migration.
 
 ### Supported environment types
