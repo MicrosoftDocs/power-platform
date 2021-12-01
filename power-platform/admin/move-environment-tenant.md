@@ -113,18 +113,18 @@ When your environment is moved from one tenant to another within the same region
    3.	Assign security roles in the environments.
    4.	Provision user mailboxes in the destination tenant.
 4. Once the users are created and enabled, the mapping file will need to be generated (following the steps mentioned previously).
-5. If there are any Power Apps or Power Automate Flows solutions, these need to be exported from the [Power Apps admin center](https://make.powerapps.com), and imported again in the new environment after the migration.
+5. If there are any Power Apps or Power Automate Flows solutions, these need to be exported from the [Power Apps maker portal](https://make.powerapps.com), and imported again in the new environment after the migration.
 
 ## Confirm if any of the solutions below are installed in the environments to be migrated, as these may require additional steps, either from Support or from you:
  
-1.	Power Apps or Power Automate
-2.	Dynamics 365 Customer Voice
-3.	Power Pages (formerly Power Apps portals)
-4.	Café X
-5.	Forms Pro
-6.	SharePoint
-7.	Mailboxes (if the mapped user has a mailbox in the destination environment, then the mailbox is automatically provisioned during the migration. For all the other users, you will need to reconfigure the mailbox)
-8.	Marketing 
+- Power Apps or Power Automate
+- Dynamics 365 Customer Voice
+- Power Apps portals
+- Café X
+- Forms Pro
+- SharePoint
+- Mailboxes (if the mapped user has a mailbox in the destination environment, then the mailbox is automatically provisioned during the migration. For all the other users, you will need to reconfigure the mailbox)
+- Marketing 
 
 ## Steps to create the mapping file
  
@@ -161,57 +161,56 @@ For administrative access users:
 
 ## Do the following steps for Power Apps, Power Automate, Power Pages (formerly Power Apps portals), and Marketing before the migrations are started: 
 
-## 1.	For Portals (must be done for each portal in the environment(s)): 
+### For Portals (must be done for each portal in the environment(s)): 
               
 Before the migration: 
--	Login to the environment
--	Open Portals administration page
--	Reset the portal (reference: https://docs.microsoft.com/en-us/dynamics365/customer-engagement/portals/reset-portal)
+1. Sign in to the environment.
+2. Open the [Power Apps portals admin center](/powerapps/maker/portals/admin/admin-overview#open-power-apps-portals-admin-center).
+3. [Reset](/powerapps/maker/portals/admin/reset-portal) the portal.
 
 After the migration: 
--	Login to the environment
--	Open Portals administration page
--	Provision portal with the same portal type and language
+1. Sign in to the environment.
+2. Open the [Power Apps portals admin center](/powerapps/maker/portals/admin/admin-overview#open-power-apps-portals-admin-center).
+3. Provision portal with the same portal type and language.
 
-Note: the following configurations are not preserved by the reset portal and if used have to be configured again in the new portal. 
+> [!NOTE]
+> The following configurations are not preserved by the portal reset and must be configured again in the new portal. 
 
-## 2.	For Power Apps and Power Automate: 
+### For Power Apps and Power Automate: 
 
 -	Any Power Apps and Flows must be manually exported. 
--	We do not support the migration of Customer Connectors, Connections and Gateways, so if you do have any of these components setup, these must be manually reconfigured again after the migration. 
+-	We do not support the migration of Customer Connectors, Connections, and Gateways. If you do have any of these components setup, they must be manually reconfigured after the migration. 
 
-| For apps which are solution aware
+#### For apps which are solution aware
+
 Before the migration: 
--	For apps which are solution aware, you can go to https://web.powerapps.com/, navigate to the Solutions page, and export all apps/solutions (either individually or group them all together in a single solution, if they are not already)
+1. For apps which are solution aware, you can go to https://web.powerapps.com/, navigate to the Solutions page, and export all apps/solutions (either individually or group them all together in a single solution, if they are not already)
 
 After the migration: 
--	Select the new environment from https://web.powerapps.com/ and navigate to the Solutions page
--	Select “Import” button and use the file selector to pick the packages exported from the above steps
--	Confirm that the import was successfully completed by checking the solution contents in the target environment. 
+1. Select the new environment from https://web.powerapps.com/ and navigate to the Solutions page.
+2. Select **Import** and use the file selector to pick the packages exported from the above steps.
+3. Confirm that the import was successfully completed by checking the solution contents in the target environment. 
 
-| For apps which are not solution aware
+#### For apps which are not solution aware
+
 Before the migration: 
--	Go to https://web.powerapps.com/, navigate to the Apps page
--	For each app that you want to move, click the “…” menu button and select “Export package (preview)” 
--	Fill the details required to perform the export of the app and click “Export”. Once the export completes, a download should begin. The resulting file contains the app package that was selected. 
--	Repeat these steps until all apps have been exported. 
+1. Go to https://make.powerapps.com, and then select **Apps**.
+2. For each app that you want to move, select **More Commands** (…), and then select **Export package (preview)**. 
+3. Fill in the details required to perform the export of the app, and then select **Export**. Once the export completes, a download should begin. The resulting file contains the app package that was selected. 
+4. Repeat these steps until all apps have been exported. 
 
 After the migration: 
--	Select the new environment from the environment picker in the top right
--	Navigate to the 'Apps' page on the left side
--	Select the 'Import package (preview)' button
--	Upload the app package file from the upload step
--	Complete all of the import option selections and press 'Import'
--	Repeat these steps until all apps have been imported. 
+1. Go to https://make.powerapps.com.
+2. Select the new environment from the environment picker in the upper-right.
+3. Select **Apps**.
+4. Select **Import canvas app**.
+5. Upload the app package file.
+6. Complete all of the import option selections, and then select **Import**.
+7. Repeat these steps until all apps have been imported. 
 
+#### For Marketing application
 
-
-## 3.	For Marketing application:
-
-If there’s Marketing application deployed in the tenant, you’ll need to also ensure that the needed licenses are present in the destination tenant in order to reprovision the application once the migration is completed. 
-
-Public documentation: https://docs.microsoft.com/en-us/dynamics365/marketing/tenant-to-tenant 
-
+If the Marketing app is deployed in the tenant, ensure that the needed licenses are present in the destination tenant in order to reprovision the application once the migration is completed. See: [Tenant to tenant migration for Dynamics 365 Marketing](/dynamics365/marketing/tenant-to-tenant).
 
 ## Post Migration
 
@@ -220,26 +219,26 @@ After moving environments to another tenant:
 - The [organization ID (OrgID)](determine-org-id-name.md) in the target tenant cannot be set to the same organization ID as in the source tenant. This is not supported.
 - The environment URL, organization ID (OrgID), and the name do not change.
 - The source environment will not be accessible.
-- Security group mapping is handled as part of the manual tenant-to-tenant migration process. At the very least, a replacement (or removal) will be needed because the security group won't exist with the same ID in the new Azure AD tenant.
+- Security group mapping is handled as part of the manual tenant-to-tenant migration process. At the very least, a security group replacement (or removal) will be needed because the security group won't exist with the same organization ID in the new Azure AD tenant.
 
 ## How the move works
 
-You’ll be provided with a list of prerequisites and post-requisites for your migration as part of the support request raised. The following table describes what Microsoft does before, during, and after your move.
+You’ll be provided with a list of pre and post requisites for your migration as part of the support request raised. The following table describes what Microsoft does before, during, and after your move.
 
 
 | |Before the move<br/>Notification   |During the move<br/>Cut-over  |After the move<br/>Notification and support |
 |---------|---------|---------|---------|
-|**What Microsoft does**   |Your support representative or Account Manager will work with you to request a move and schedule it.         |Cut-over for the migration takes several hours, depending on the number of users and the amount of data. During this period, the environment is not accessible, so the cut-over should be scheduled during the evening or over a weekend.<br/><br/>There is a step that will require your involvement, which is to provide a User Mapping File. This is requested in advance so that we can validate the users being moved before the migration takes place.         |You will be alerted by email or telephone when your environment is migrated to the new tenant.<br/><br/>After the tenant migration is complete, your support representative or Account Manager will assist you to contact with billing to cancel and/or credit your previous subscription, if needed.         |
+|**What Microsoft does**   |Your support representative or Account Manager will work with you to request a move and schedule it.         |Cut-over for the migration takes several hours, depending on the number of users and the amount of data. During this period, the environment is not accessible, so the cut-over should be scheduled during the evening or over a weekend.<br/>There is a step that will require your involvement, which is to provide a User Mapping File. This is requested in advance so that we can validate the users being moved before the migration takes place.         |You will be alerted by email or telephone when your environment is migrated to the new tenant.<br/>After the tenant migration is complete, your support representative or Account Manager will assist you to contact with billing to cancel and/or credit your previous subscription, if needed.         |
 
 We will adhere to the terms of the [Microsoft Online Services Service Level Agreement](https://go.microsoft.com/fwlink/p/?LinkID=523897) for all moves.
 
 ## Frequently asked questions
 
-## Are background operations in setting enabled during T2T migration ?
-Administration mode is enabled during T2T migration so background operations don’t run. [Administration mode - Power Platform ](https://docs.microsoft.com/en-us/power-platform/admin/admin-mode)
+### Are background operations enabled during tenant to tenant migration?
+Administration mode is enabled during tenant to tenant migration so background operations don’t run. See [Administration mode - Power Platform ](admin-mode.md)
 
-## Can we migrate all users from the source to the destination environment?
-We can migrate all source users to destination only if users exist in the destination environment. For example:
+### Can we migrate all users from the source to the destination environment?
+We can migrate all source users to the destination environment only if users exist in the destination environment. For example:
 
 user001@source.com,user001@destination.com <br />
 user002@source.com,user002@destination.com        
