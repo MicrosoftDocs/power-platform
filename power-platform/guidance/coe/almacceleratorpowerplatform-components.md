@@ -43,7 +43,7 @@ The target end user for AA4PP is the Power Platform Maker who is comfortable wit
 
 The target user for setting up AA4PP would generally be an Administrator with a deeper understanding of Power Platform Environments and Solutions, Azure Pipelines, and Administration as well as familiarity with Azure Active Directory and Dataverse Administration.
 
-![The Maker Team](media/almacceleratoradvanced-components/TheMakerTeam.png "The Maker Team")
+![The Maker Team](media/almacceleratorpowerplatform-components/TheMakerTeam.png "The Maker Team")
 
 ## Pipelines
 
@@ -109,7 +109,7 @@ The AA4PP Canvas App provides a convenience layer on top of the AA4PP Pipelines.
 
 ## ALM Accelerator Flow and Maker Experience
 
-![ALM Accelerator Flow](media/almacceleratoradvanced-components/AdvancedMakerExprerience.png "ALM Accelerator Flow")
+![ALM Accelerator Flow](media/almacceleratorpowerplatform-components/AdvancedMakerExprerience.png "ALM Accelerator Flow")
 
 1. Once the app is installed and configured launch it from your Environment under Apps.
 
@@ -117,16 +117,16 @@ The AA4PP Canvas App provides a convenience layer on top of the AA4PP Pipelines.
 > When you first launch the app you may need to consent to the app using your connections.
 
 2. Select the **Cog** in the top right to select your **Azure DevOps Environment**, **Project**, and **Repo** to which you'll push your changes and submit your pull requests and select **Save**
-   ![Configure Settings for AA4PP](media/almacceleratoradvanced-components/image-20210303085854533.png "Configure Settings for AA4PP")
+   ![Configure Settings for AA4PP](media/almacceleratorpowerplatform-components/image-20210303085854533.png "Configure Settings for AA4PP")
 
 > [!NOTE]
 > If you don't see your DevOps Organization / Project in the dropdown double check that the Custom connector is working correctly after updating it's Security settings.
 
 3. From the Environment Drop Down **Select the Dataverse Environment** in which you'll be doing your development work.
-   ![Select Dataverse Environment](media/almacceleratoradvanced-components/image-20210303085806618.png "Select Dataverse Environment")
+   ![Select Dataverse Environment](media/almacceleratorpowerplatform-components/image-20210303085806618.png "Select Dataverse Environment")
 
 > [!NOTE]
-> In order for your Environment to show up in this drop down a service connection in the Azure DevOps project you just selected is required (see [Create a Service Connection for DevOps to access Power Platform](setup-almacceleratoradvanced.md#create-service-connections-for-devops-to-access-power-platform). Additionally, verify that you've followed the steps to reconnect the flow above if you do not see any environments in the list.
+> In order for your Environment to show up in this drop down a service connection in the Azure DevOps project you just selected is required (see [Create a Service Connection for DevOps to access Power Platform](setup-almacceleratorpowerplatform.md#create-service-connections-for-devops-to-access-power-platform). Additionally, verify that you've followed the steps to reconnect the flow above if you do not see any environments in the list.
 
 4. By default the **unmanaged solutions** in your Environment will be displayed in the main window with buttons to **Push Changes** and **Create Pull Requests**.
 
@@ -136,12 +136,12 @@ The AA4PP Canvas App provides a convenience layer on top of the AA4PP Pipelines.
 
    - **Solution Folder** is a list of folders in the selected branch that contain a **SolutionPackage folder** from a previous export.
 
-   - **Configuration** is a directory under the config directory in the Solution Folder that contains deployment settings and configuration data. For more information on this, see the [Deployment Configuration Guide](setup-almacceleratoradvanced-deployment-config.md)
+   - **Configuration** is a directory under the config directory in the Solution Folder that contains deployment settings and configuration data. For more information on this, see the [Deployment Configuration Guide](setup-almacceleratorpowerplatform-deployment-config.md)
 
 > [!NOTE]
 > The idea here is that you're either pulling the latest from the Solution branch or possibly want to pull another makers branch into your own environment. The configuration allows you to ensure that all of the necessary post solution import configuration and data exists in your environment.
 
-   ![Import Solution from Branch in Azure DevOps](media/almacceleratoradvanced-components/image-20210303085946610.png "Import Solution from Branch in Azure DevOps")
+   ![Import Solution from Branch in Azure DevOps](media/almacceleratorpowerplatform-components/image-20210303085946610.png "Import Solution from Branch in Azure DevOps")
 
 6. Once your solution is imported into Dataverse, or you've created a new unmanaged solution and made your customizations, you can begin configuring your solution for deployment.
 
@@ -149,13 +149,13 @@ The AA4PP Canvas App provides a convenience layer on top of the AA4PP Pipelines.
 
    - Deployment Environments
 
-     ![Deployment Environments List](media/almacceleratoradvanced-components/image-20210920121425929.png "Deployment Environments List")
+     ![Deployment Environments List](media/almacceleratorpowerplatform-components/image-20210920121425929.png "Deployment Environments List")
 
      - The environments listed here are based on the pipeline(s) configured for the solution in Azure DevOps. In the example above we have three pipelines configured in Azure DevOps for this solution deploy-validation-ALMAcceleratorSampleSolution, deploy-test-ALMAcceleratorSampleSolution and deploy-prod-ALMAcceleratorSampleSolution. **The app will look for pipelines named deploy-*-UniqueSolutionName to populate this list. If you have named your pipelines different than the pattern above you won't be able to use the deployment configuration functionality.**
 
    - Connection References
 
-      ![Connection Reference Configuration](media/almacceleratoradvanced-components/image-20210920120530010.png "Connection Reference Configuration")
+      ![Connection Reference Configuration](media/almacceleratorpowerplatform-components/image-20210920120530010.png "Connection Reference Configuration")
 
       - This screen lists all of the connection references in your solution and allows users to create connections in their downstream environments to hook up the connection references in the target environment.
       - To create a new connection **select the + button**.
@@ -165,7 +165,7 @@ The AA4PP Canvas App provides a convenience layer on top of the AA4PP Pipelines.
 
    - Environment Variables
 
-      ![Environment Variables Configuration](media/almacceleratoradvanced-components/image-20210920120825279.png "Environment Variables Configuration")
+      ![Environment Variables Configuration](media/almacceleratorpowerplatform-components/image-20210920120825279.png "Environment Variables Configuration")
 
       - This screen lists all of the environment variables in your solution and allows users to set the value of the environment variables in the downstream environment.
       - For standard environment variables (for example String, Number, JSON) **enter the value in the text box** to the right of the environment variable name
@@ -173,7 +173,7 @@ The AA4PP Canvas App provides a convenience layer on top of the AA4PP Pipelines.
 
    - App Sharing
 
-      ![App Sharing Configuration](media/almacceleratoradvanced-components/image-20210920120908855.png "App Sharing Configuration")
+      ![App Sharing Configuration](media/almacceleratorpowerplatform-components/image-20210920120908855.png "App Sharing Configuration")
 
       - This screen lists all of the apps in your solution and allows users to share the apps in the downstream environment with an Azure AAD Group.
       - Use  the dropdown to **select the Azure AAD group** with which you'd like to share the app.
@@ -182,7 +182,7 @@ The AA4PP Canvas App provides a convenience layer on top of the AA4PP Pipelines.
 
    - Component Ownership
 
-      ![Component Ownership Configuration](media/almacceleratoradvanced-components/image-20210920120946888.png "Component Ownership Configuration")
+      ![Component Ownership Configuration](media/almacceleratorpowerplatform-components/image-20210920120946888.png "Component Ownership Configuration")
 
       - This screen lists all of the Flows in your solution. Users can configure the owner of the Flow in the downstream environment by selecting a Dataverse user.
       - Use  the **dropdown to select a Dataverse user** to own the Flow in the downstream environment.
@@ -194,7 +194,7 @@ The AA4PP Canvas App provides a convenience layer on top of the AA4PP Pipelines.
 > Be sure to publish your changes before initiating the push. If a newly created solution doesn't show in your list immediately. Click the Refresh button to reload all solutions.
 
    - Select an **existing branch** or **create a new branch** based on an existing branch and enter a **comment**. Use the hashtag notation for example `#123` to link the changes to a specific work item in Azure DevOps and Select **Commit**.
-     ![Export Solution from Dataverse to New Azure DevOps Branch](media/almacceleratoradvanced-components/image-20210303085710535.png "Export Solution from Dataverse to New Azure DevOps Branch")
+     ![Export Solution from Dataverse to New Azure DevOps Branch](media/almacceleratorpowerplatform-components/image-20210303085710535.png "Export Solution from Dataverse to New Azure DevOps Branch")
 
    - When the push begins, a waiting indicator will appear. If the push is successful, a checkbox will appear otherwise a red x will appear. To see the progress of your push, click the progress indicator which will take you to the running pipeline in Azure DevOps.
    - Repeat the pushes as you iterate on your solution.
@@ -205,17 +205,17 @@ The AA4PP Canvas App provides a convenience layer on top of the AA4PP Pipelines.
 > Be sure to publish your changes before initiating the push.
 
    - Specify the Source and Target branch and enter a Title and Comment for your Pull Request and Select Create.**
-     ![Create Pull Request properties](media/almacceleratoradvanced-components/image-20210303085409740.png "Create Pull Request properties")
+     ![Create Pull Request properties](media/almacceleratorpowerplatform-components/image-20210303085409740.png "Create Pull Request properties")
 
 10. Once a Pull Request is created for your changes, the remaining steps to Merge and Release to Test occur in Azure DevOps. Depending on the Branch Policies and Triggers configured for your Target Branch, an Azure DevOps user can approve or reject your Pull Request based on their findings in the submitted changes. The status of the Pull Request will appear in the App.
 
 11. In order to initiate a **solution upgrade** in the target environment, you can tag a Pull Request with the **solution-upgrade** tag.
 
-   ![Tag Pull Request for Solution Upgrade](media/setup-almacceleratoradvanced/image-20210524113929989.png "Tag Pull Request for Solution Upgrade")
+   ![Tag Pull Request for Solution Upgrade](media/setup-almacceleratorpowerplatform/image-20210524113929989.png "Tag Pull Request for Solution Upgrade")
 
 12. Approving the PR will start the deployment of your solution to the Test environment. If the Pull Request is approved, you'll see the progress move to Test and a status based on the pipeline's success or failure in that stage.
 
-   ![Deployment progress status indicators](media/almacceleratoradvanced-components/image-20210303085132733.png "Deployment progress status indicators")
+   ![Deployment progress status indicators](media/almacceleratorpowerplatform-components/image-20210303085132733.png "Deployment progress status indicators")
 
 13. For Production, a Pull Request will need to be created in Azure DevOps that merges the changes into your Production release branch. The same approval process will be required depending on your branch policies and once the PR is completed your solution will be pushed to Production. When the pipeline for deploying to Production is finished, you'll see the status of the deployment in the App.
 

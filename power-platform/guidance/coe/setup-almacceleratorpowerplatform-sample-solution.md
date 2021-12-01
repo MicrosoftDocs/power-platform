@@ -41,11 +41,11 @@ In this step, you'll be creating the Validation and Test Pipelines for reference
 | build-deploy-validation-SampleSolution.yml | deploy-validation-SampleSolution | Yes                   |
 | build-deploy-test-SampleSolution.yml       | deploy-test-SampleSolution       | No                    |
 
-1. In Azure DevOps, go to the **Repo** that contains the [Pipelines folder you committed](setup-almacceleratoradvanced.md#clone-the-yaml-pipelines-from-github-to-your-azure-devops-instance) and select the Pipelines folder
+1. In Azure DevOps, go to the **Repo** that contains the [Pipelines folder you committed](setup-almacceleratorpowerplatform.md#clone-the-yaml-pipelines-from-github-to-your-azure-devops-instance) and select the Pipelines folder
 
 1. Open the sample deployment pipeline (that is, **build-deploy-validation-SampleSolution.yml or build-deploy-test-SampleSolution.yml**) and copy the YAML to use in your new Pipeline. **Note the name of this repo** for use in your pipeline.
 
-   ![build-deploy-validation-SampleSolution.yml under Pipelines folder in templates repo](media/almacceleratoradvanced-components/image-20210408172106137.png)
+   ![build-deploy-validation-SampleSolution.yml under Pipelines folder in templates repo](media/almacceleratorpowerplatform-components/image-20210408172106137.png)
 
 1. Navigate to the **Repo where you want to source control the ALM Accelerator Sample Solution**.
 
@@ -54,52 +54,52 @@ In this step, you'll be creating the Validation and Test Pipelines for reference
    >[!NOTE]
    > This branch will be your v-next branch in the repo. All development work should be branched from this branch to a developers personal working branch and then merged into the v-next branch in order to push to Validation and Testing. Later when a release is ready the v-next branch can be merged into the main or default branch.
 
-   ![Create New Branch for Solution](media/setup-almacceleratoradvanced-sample-solution/image-20210505162502432.png)
+   ![Create New Branch for Solution](media/setup-almacceleratorpowerplatform-sample-solution/image-20210505162502432.png)
 
 1. Select **New** from the top menu and then **Folder**
 
-   ![Create New Folder for Solution in New Branch](media/setup-almacceleratoradvanced-sample-solution/image-20210505162848092.png)
+   ![Create New Folder for Solution in New Branch](media/setup-almacceleratorpowerplatform-sample-solution/image-20210505162848092.png)
 
 1. Give the new Folder the name **ALMAcceleratorSampleSolution** and the new Pipeline YAML file a name (**build-deploy-validation-ALMAcceleratorSampleSolution.yml** or **build-deploy-test-ALMAcceleratorSampleSolution.yml**). Select **Create**.
 
-   ![Create New Folder and Pipeline yaml file for Solution in New Branch](media/setup-almacceleratoradvanced-sample-solution/image-20210505163013011.png)
+   ![Create New Folder and Pipeline yaml file for Solution in New Branch](media/setup-almacceleratorpowerplatform-sample-solution/image-20210505163013011.png)
 
 1. Paste the YAML from **build-deploy-validation-SampleSolution.yml** or **build-deploy-test-SampleSolution.yml** into your new Pipeline YAML file.
 
-   ![Copy and Paste YAML from build-deploy-validation-SampleSolution.yml or build-deploy-test-SampleSolution.yml](media/setup-almacceleratoradvanced-sample-solution/image-20210505163334414.png)
+   ![Copy and Paste YAML from build-deploy-validation-SampleSolution.yml or build-deploy-test-SampleSolution.yml](media/setup-almacceleratorpowerplatform-sample-solution/image-20210505163334414.png)
 
 1. Update the following values in your new Pipeline YAML.
 
    - Change the **resources -> repositories -> name**  to the repo name that contains your pipeline templates. If your template repository is in another AzDO project, you can use the format **projectname/reponame** here. In this case, the repo is called **coe-alm-accelerator-templates** (remember we told you to remember the pipeline repo name), and it exists in the same project as our **ALMAcceleratorSampleSolution repo**. Additionally, you can specify a branch for where your templates live using the **ref** parameter if necessary.
 
-      ![Update ref and name in the pipeline YAML based on where the pipeline templates are stored in Azure DevOps](media/setup-almacceleratoradvanced-sample-solution/image-20210505163452491.png)
+      ![Update ref and name in the pipeline YAML based on where the pipeline templates are stored in Azure DevOps](media/setup-almacceleratorpowerplatform-sample-solution/image-20210505163452491.png)
 
    - Change any value that references **SampleSolutionName** to the unique name of the ALM Accelerator Sample Solution (that is, **ALMAcceleratorSampleSolution**).
 
-      ![Update the paths for the triggers](media/setup-almacceleratoradvanced-sample-solution/image-20210505163733070.png)
+      ![Update the paths for the triggers](media/setup-almacceleratorpowerplatform-sample-solution/image-20210505163733070.png)
 
    - Select **Commit** to save your changes.
 
 1. In Azure DevOps, go to **Pipelines** and **Create a New Pipeline**
 
 1. Select **Azure Repos Git** for your code Repository.
-   ![Select Azure Repos Git](media/setup-almacceleratoradvanced-sample-solution/image-20210505164249272.png)
+   ![Select Azure Repos Git](media/setup-almacceleratorpowerplatform-sample-solution/image-20210505164249272.png)
 
 1. Select the **Azure DevOps repo** which contains the deployment **Pipeline YAML created above**.
 
-    ![Select your Azure DevOps repo](media/setup-almacceleratoradvanced-sample-solution/image-20210505164327459.png)
+    ![Select your Azure DevOps repo](media/setup-almacceleratorpowerplatform-sample-solution/image-20210505164327459.png)
 
 1. On the **Configure your pipeline** page, select **Existing Azure Pipelines YAML file**, point to the **YAML File in your repo that you created in step 5** and Select **Continue**.
-   ![Select Existing Azure Pipelines YAML file](media/setup-almacceleratoradvanced-sample-solution/image-20210505164425446.png)
+   ![Select Existing Azure Pipelines YAML file](media/setup-almacceleratorpowerplatform-sample-solution/image-20210505164425446.png)
 
 1. On the next screen, Select **Save** and then Select the 3 dots next to Run Pipeline and Select **Rename/Move**.
-   ![Select Save](media/setup-almacceleratoradvanced-sample-solution/image-20210505164641102.png)
+   ![Select Save](media/setup-almacceleratorpowerplatform-sample-solution/image-20210505164641102.png)
 
-   ![Select Rename/Move](media/setup-almacceleratoradvanced-sample-solution/image-20210301103145498.png)
+   ![Select Rename/Move](media/setup-almacceleratorpowerplatform-sample-solution/image-20210301103145498.png)
 
 1. Update the pipeline name to **deploy-validation-ALMAcceleratorSampleSolution** or **deploy-test-ALMAcceleratorSampleSolution** (where 'ALMAcceleratorSampleSolution' is the name of the ALM Accelerator Sample Solution) and select **Save**.
 
-    ![Update pipeline name](media/setup-almacceleratoradvanced-sample-solution/image-20210505164834987.png)
+    ![Update pipeline name](media/setup-almacceleratorpowerplatform-sample-solution/image-20210505164834987.png)
 
 1. Update the **Default branch for manual and scheduled builds**
 
@@ -107,13 +107,13 @@ In this step, you'll be creating the Validation and Test Pipelines for reference
 
    - **Select the 3 dots** on the top right and **Select Triggers**
 
-   ![Select Triggers](media/setup-almacceleratoradvanced-sample-solution/image-20210510163520532.png)
+   ![Select Triggers](media/setup-almacceleratorpowerplatform-sample-solution/image-20210510163520532.png)
 
    - **Select the YAML tab** and **Select Get Sources**.
 
    - Update the **Default branch for manual and scheduled builds** to point to your **Solution branch**
 
-   ![Update Default Branch](media/setup-almacceleratoradvanced-sample-solution/image-20210510163722833.png)
+   ![Update Default Branch](media/setup-almacceleratorpowerplatform-sample-solution/image-20210510163722833.png)
 
    - **Drop-down and Select Save** (not Save & queue) to save the pipeline
 
@@ -127,25 +127,25 @@ As mentioned in the note above, the previous section allows you to create pipeli
 | -------------------------------------------- | ---------------------------------------- | --------------------- |
 | deploy-prod-ALMAcceleratorSampleSolution.yml | deploy-prod-ALMAcceleratorSampleSolution | No                    |
 
-1. In Azure DevOps, go to the **Repo** that contains the [Pipelines folder you committed](setup-almacceleratoradvanced.md#clone-the-yaml-pipelines-from-github-to-your-azure-devops-instance) and select the Pipelines folder
+1. In Azure DevOps, go to the **Repo** that contains the [Pipelines folder you committed](setup-almacceleratorpowerplatform.md#clone-the-yaml-pipelines-from-github-to-your-azure-devops-instance) and select the Pipelines folder
 
 1. Open the sample deployment pipeline (that is, **deploy-prod-pipelineartifact-SampleSolution.yml**) and copy the YAML to use in your new Pipeline. **Note the name of this repo** for use in your pipeline.
 
-   ![Copy deploy-prod-pipelineartifact-SampleSolution.yml YAML](media/setup-almacceleratoradvanced/image-20210429113205147.png)
+   ![Copy deploy-prod-pipelineartifact-SampleSolution.yml YAML](media/setup-almacceleratorpowerplatform/image-20210429113205147.png)
 
 1. Navigate to the **Repo where you want to source control the ALM Accelerator Sample Solution**.
 
 1. Navigate to the [SolutionName] subfolder and then Select **New** from the top menu and then **File**
 
-   ![Select New - File](media/setup-almacceleratoradvanced-sample-solution/image-20210616130145498.png)
+   ![Select New - File](media/setup-almacceleratorpowerplatform-sample-solution/image-20210616130145498.png)
 
 1. Give the new Pipeline YAML file a name (for example, **deploy-prod-ALMAcceleratorSampleSolution.yml**). Select **Create**
 
-   ![Set the name of the file (deploy-prod-ALMAcceleratorSampleSolution.yml)](media/setup-almacceleratoradvanced-sample-solution/image-20210505171311552.png)
+   ![Set the name of the file (deploy-prod-ALMAcceleratorSampleSolution.yml)](media/setup-almacceleratorpowerplatform-sample-solution/image-20210505171311552.png)
 
 1. Paste the YAML from **deploy-prod-pipelineartifact-SampleSolution.yml** into your new Pipeline YAML file.
 
-   ![Paste YAML](media/setup-almacceleratoradvanced-sample-solution/image-20210505171429254.png)
+   ![Paste YAML](media/setup-almacceleratorpowerplatform-sample-solution/image-20210505171429254.png)
 
 1. Update the following values in your new Pipeline YAML.
 
@@ -153,15 +153,15 @@ As mentioned in the note above, the previous section allows you to create pipeli
 
    - Change the **resources -> repositories -> name** to the repo name that contains your pipeline templates. If your template repository is in another AzDO project, you can use the format **projectname/reponame** here. In this case, the repo is called **coe-alm-accelerator-templates** and it exists in the same project as our ALMAcceleratorSampleSolution repo. Additionally, you can specify a branch for where your templates live using the **ref** parameter if necessary.
 
-     ![Change Resources Repository Name](media/setup-almacceleratoradvanced-sample-solution/image-20210505171609319.png)
+     ![Change Resources Repository Name](media/setup-almacceleratorpowerplatform-sample-solution/image-20210505171609319.png)
 
    - Update **resources -> pipelines -> source** to specify **the build pipeline that contains the artifacts to be deployed** by this pipeline. In this case, we are going to deploy the artifacts from our Test pipeline that built and deployed our ALMAcceleratorSampleSolution to the Test environment.
 
-     ![Update Resources Pipelines Source](media/setup-almacceleratoradvanced-sample-solution/image-20210505172559804.png)
+     ![Update Resources Pipelines Source](media/setup-almacceleratorpowerplatform-sample-solution/image-20210505172559804.png)
 
    - Change any value that references **SampleSolutionName** to the unique name of the ALM Accelerator Sample Solution (that is, **ALMAcceleratorSampleSolution**).
 
-     ![Change the Solution Name](media/setup-almacceleratoradvanced-sample-solution/image-20210505172803107.png)
+     ![Change the Solution Name](media/setup-almacceleratorpowerplatform-sample-solution/image-20210505172803107.png)
 
    - Select **Commit** to save the changes to your repository.
 
@@ -175,13 +175,13 @@ In order to execute the build pipeline for the ALM Accelerator Sample Solution w
 
 1. Locate the **target branch** on which you want to run the **Pull Request policy** and select the ellipsis to the right of the target branch and Select **Branch Policies**.
 
-   ![Navigate to Branch Policies](media/setup-almacceleratoradvanced-sample-solution/image-20210506105054480.png)
+   ![Navigate to Branch Policies](media/setup-almacceleratorpowerplatform-sample-solution/image-20210506105054480.png)
 
 1. On the **Branch Policies** screen, go to **Build Validation**
 
 1. Select the **+ Button** to add a **new Branch Policy**
 
-   ![Add a New Branch Policy](media/setup-almacceleratoradvanced-sample-solution/image-20210506120940195.png)
+   ![Add a New Branch Policy](media/setup-almacceleratorpowerplatform-sample-solution/image-20210506120940195.png)
 
 1. Select the Pipeline you created from the **Build pipeline** dropdown
 
@@ -197,7 +197,7 @@ In order to execute the build pipeline for the ALM Accelerator Sample Solution w
 
 1. Select **Save**
 
-   ![Save the Branch Policy](media/setup-almacceleratoradvanced-sample-solution/image-20210506121134045.png)
+   ![Save the Branch Policy](media/setup-almacceleratorpowerplatform-sample-solution/image-20210506121134045.png)
 
 ### Setting Deployment Pipeline Variables
 
@@ -214,36 +214,36 @@ The **EnvironmentName** variable is used to specify the Azure DevOps environment
 
 1. Open the pipeline you created previously (**deploy-validation-ALMAcceleratorSampleSolution**, **deploy-test-ALMAcceleratorSampleSolution**, or **deploy-production-ALMAcceleratorSampleSolution**) and **Select Edit**
 
-   ![Open the Pipeline](media/setup-almacceleratoradvanced-sample-solution/image-20210506101338620.png)
+   ![Open the Pipeline](media/setup-almacceleratorpowerplatform-sample-solution/image-20210506101338620.png)
 
 1. **Select Variables**
 
-   ![Select Variables](media/setup-almacceleratoradvanced-sample-solution/image-20210506101437500.png)
+   ![Select Variables](media/setup-almacceleratorpowerplatform-sample-solution/image-20210506101437500.png)
 
 1. Select New Variable
 
-   ![Select New Variable](media/setup-almacceleratoradvanced-sample-solution/image-20210506101519756.png)
+   ![Select New Variable](media/setup-almacceleratorpowerplatform-sample-solution/image-20210506101519756.png)
 
 1. In the New Variable Screen Enter "**EnvironmentName**" for the Name and either (**Validate, Test or Production**) for the Value depending on which pipeline you're editing and **Select OK**
 
-   ![Enter EnvironmentName for the name of the Variable](media/setup-almacceleratoradvanced-sample-solution/image-20210506101906429.png)
+   ![Enter EnvironmentName for the name of the Variable](media/setup-almacceleratorpowerplatform-sample-solution/image-20210506101906429.png)
 
-1. Repeat the steps above to create the **ServiceConnection** variable. The ServiceConnection variable is used to specify how the deployment pipeline connects to the Power Platform. The values used for the Service Connection variable are the names of the Service Connections created during setup [Create a Service Connection for DevOps to access Power Platform](setup-almacceleratoradvanced.md#create-service-connections-for-devops-to-access-power-platform)
+1. Repeat the steps above to create the **ServiceConnection** variable. The ServiceConnection variable is used to specify how the deployment pipeline connects to the Power Platform. The values used for the Service Connection variable are the names of the Service Connections created during setup [Create a Service Connection for DevOps to access Power Platform](setup-almacceleratorpowerplatform.md#create-service-connections-for-devops-to-access-power-platform)
 
    > [!NOTE]
    > The Value for the ServiceConnection variable must be identical to the Name of the Service Connection. Including any trailing slashes.
 
-   ![Set the ServiceConnection variable value](media/setup-almacceleratoradvanced-sample-solution/image-20210506102307068.png)
+   ![Set the ServiceConnection variable value](media/setup-almacceleratorpowerplatform-sample-solution/image-20210506102307068.png)
 
 1. Repeat adding the **EnvironmentName** and **ServiceConnection** for each of the pipelines created above (that is, **deploy-test-ALMAcceleratorSampleSolution** and **deploy-production-ALMAcceleratorSampleSolution**)
 
 #### Create Deployment Configuration
 
-To configure your pipelines to update **connection references, environment variables, set permissions for AAD Groups and Dataverse teams** as well as **sharing Canvas Apps and updating ownership of solution components** such as Power Automate flows follow the instructions in the [Deployment Configuration Guide](setup-almacceleratoradvanced-deployment-config.md).
+To configure your pipelines to update **connection references, environment variables, set permissions for AAD Groups and Dataverse teams** as well as **sharing Canvas Apps and updating ownership of solution components** such as Power Automate flows follow the instructions in the [Deployment Configuration Guide](setup-almacceleratorpowerplatform-deployment-config.md).
 
 ## Importing the Solution and Configuring the ALM Accelerator App
 
-To get started using the ALM Accelerator For Advanced Makers App, follow the instructions in the [setup-almacceleratoradvanced](setup-almacceleratoradvanced.md#importing-the-solution-and-configuring-the-app).
+To get started using the ALM Accelerator For Advanced Makers App, follow the instructions in the [setup-almacceleratorpowerplatform](setup-almacceleratorpowerplatform.md#importing-the-solution-and-configuring-the-app).
 
 ## Test the ALM Accelerator App
 
@@ -252,7 +252,7 @@ To get started using the ALM Accelerator For Advanced Makers App, follow the ins
     > [!NOTE]
     > The screenshot below is for reference as to where the unmanaged solution exists under a release. The actual version should be the most recent release.
 
-    ![GitHub Releases](media/setup-almacceleratoradvanced-sample-solution/image-20210506140023521.png)
+    ![GitHub Releases](media/setup-almacceleratorpowerplatform-sample-solution/image-20210506140023521.png)
 
 1. Import the solution into a developer environment
 
@@ -262,63 +262,63 @@ To get started using the ALM Accelerator For Advanced Makers App, follow the ins
     > When you first launch the app you may need to consent to the app using your connections.
 
 1. Select the **Cog** in the top right to select your **Azure DevOps Environment**, **Project**, and **Repo** to which you'll push your changes and submit your pull requests and select **Save**
-   ![Select the Settings Cog](media/almacceleratoradvanced-components/image-20210303085854533.png)
+   ![Select the Settings Cog](media/almacceleratorpowerplatform-components/image-20210303085854533.png)
 
    > [!NOTE]
    > If you don't see your DevOps Organization / Project in the dropdown double check that the Custom connector is working correctly after updating it's Security settings.
 
 1. From the Environment Drop Down **Select the Dataverse Environment** in which you'll be doing your development work.
-   ![Select your Maker Environment](media/setup-almacceleratoradvanced-sample-solution/image-20210506141321294.png)
+   ![Select your Maker Environment](media/setup-almacceleratorpowerplatform-sample-solution/image-20210506141321294.png)
 
    > [!NOTE]
-   > In order for your Environment to show up in this drop down a service connection in the Azure DevOps project you just selected is required (see [Create a Service Connection for DevOps to access Power Platform](setup-almacceleratoradvanced.md#create-service-connections-for-devops-to-access-power-platform). Additionally, verify that you've followed the steps to reconnect the flow above if you do not see any environments in the list.
+   > In order for your Environment to show up in this drop down a service connection in the Azure DevOps project you just selected is required (see [Create a Service Connection for DevOps to access Power Platform](setup-almacceleratorpowerplatform.md#create-service-connections-for-devops-to-access-power-platform). Additionally, verify that you've followed the steps to reconnect the flow above if you do not see any environments in the list.
 
 1. By default the **unmanaged solutions**, including the **ALM Accelerator Sample Solution**, in your Environment should be displayed in the main window with buttons to **Push Changes** and **Create Pull Requests**.
 
 1. Now that the ALM Accelerator Sample Solution is imported into Dataverse you can push your changes to Git using the **Push Changes to Git** button for the ALM Accelerator Sample Solution.
 
    - Select an **existing branch** or **create a new branch** based on an existing branch and enter a **comment**. Use the hashtag notation (for example, `#123`) to link the changes to a specific work item in Azure DevOps, and Select **Commit**.
-   ![Enter Branch Information and Commit](media/setup-almacceleratoradvanced-sample-solution/image-20210506145231393.png)
+   ![Enter Branch Information and Commit](media/setup-almacceleratorpowerplatform-sample-solution/image-20210506145231393.png)
    > [!NOTE]
    > There is an option to specify if the latest changes contain Delete Components. This allows the user to specify whether to perform an **update** or an **upgrade** of the solution when it's deployed. The former will increase the performance of the pipelines and reduce the overall time to deploy.
    - When the push begins, a waiting indicator will appear. If the push is successful, a checkbox will appear otherwise a red x will appear. In order to see the progress of your push select the progress indicator, which will take you to the running pipeline in Azure DevOps.
-   - The first time you run the pipeline, you may need to give it permission to run in the Azure DevOps interface (see the [Troubleshooting](./setup-almacceleratoradvanced.md#troubleshooting) section of the Setup Guide for more information)
+   - The first time you run the pipeline, you may need to give it permission to run in the Azure DevOps interface (see the [Troubleshooting](./setup-almacceleratorpowerplatform.md#troubleshooting) section of the Setup Guide for more information)
 
 1. Once the initial push completes successfully, validate that the changes were exported to your branch.
 
-   ![View changes in Azure DevOps](media/setup-almacceleratoradvanced-sample-solution/image-20210506143212409.png)
+   ![View changes in Azure DevOps](media/setup-almacceleratorpowerplatform-sample-solution/image-20210506143212409.png)
 
 1. Next make a small change to the Solution by selecting Open Solution from the ALM Accelerator App.
 
-   ![Open the ALM Accelerator Sample Solution](media/setup-almacceleratoradvanced-sample-solution/image-20210506143308679.png)
+   ![Open the ALM Accelerator Sample Solution](media/setup-almacceleratorpowerplatform-sample-solution/image-20210506143308679.png)
 
 1. Find the **DevOpsKitSampleCanvasApp** and **Select the Ellipses** then **Select Edit**
 
-   ![Edit the Sample App](media/setup-almacceleratoradvanced-sample-solution/image-20210506143558225.png)
+   ![Edit the Sample App](media/setup-almacceleratorpowerplatform-sample-solution/image-20210506143558225.png)
 
 1. In the Canvas Editor Menu **Select Insert then Label**.
 
 1. Position the new label on the App and **set the Text value**
 
-   ![Add a New Label to the App](media/setup-almacceleratoradvanced-sample-solution/image-20210506143921943.png)
+   ![Add a New Label to the App](media/setup-almacceleratorpowerplatform-sample-solution/image-20210506143921943.png)
 
 1. Select **File** from the Canvas Editor Menu and **Select Save** then **Publish**
 
-   ![Select Save and Publish](media/setup-almacceleratoradvanced-sample-solution/image-20210506144027724.png)
+   ![Select Save and Publish](media/setup-almacceleratorpowerplatform-sample-solution/image-20210506144027724.png)
 
 1. Return to the ALM Accelerator App and **Select the Configure Deployment Settings link** under the name of the Solution.
 
-   ![Select Configure Deployment Settings](media/setup-almacceleratoradvanced-sample-solution/image-20210920151916114.png)On the configuration deployment page you'll see the following items
+   ![Select Configure Deployment Settings](media/setup-almacceleratorpowerplatform-sample-solution/image-20210920151916114.png)On the configuration deployment page you'll see the following items
 
    - Deployment Environments
 
-     ![Select a Deployment Environment](media/setup-almacceleratoradvanced-sample-solution/image-20210920121425929.png)
+     ![Select a Deployment Environment](media/setup-almacceleratorpowerplatform-sample-solution/image-20210920121425929.png)
 
      - The environments listed here are based on the pipeline(s) configured for the solution in Azure DevOps. In the example above we have three pipelines configured in Azure DevOps for this solution deploy-validation-ALMAcceleratorSampleSolution, deploy-test-ALMAcceleratorSampleSolution, and deploy-prod-ALMAcceleratorSampleSolution. **The app will look for pipelines named deploy-*-UniqueSolutionName to populate this list. If you have named your pipelines different than the pattern above you won't be able to use the deployment configuration functionality.**
 
    - Connection References
 
-     ![Set Connection References](media/setup-almacceleratoradvanced-sample-solution/image-20210920120530010.png)
+     ![Set Connection References](media/setup-almacceleratorpowerplatform-sample-solution/image-20210920120530010.png)
 
      - This screen lists all of the connection references in your solution and allows users to create connections in their downstream environments to hook up the connection references in the target environment.
      - To create a new connection **select the + button**.
@@ -328,7 +328,7 @@ To get started using the ALM Accelerator For Advanced Makers App, follow the ins
 
    - Environment Variables
 
-     ![Set Environment Variables](media/setup-almacceleratoradvanced-sample-solution/image-20210920120825279.png)
+     ![Set Environment Variables](media/setup-almacceleratorpowerplatform-sample-solution/image-20210920120825279.png)
 
      - This screen lists all of the environment variables in your solution and allows users to set the value of the environment variables in the downstream environment.
      - For standard environment variables (String, Number, or JSON) **enter the value in the text box** to the right of the environment variable name
@@ -336,7 +336,7 @@ To get started using the ALM Accelerator For Advanced Makers App, follow the ins
 
    - App Sharing
 
-     ![Set App Sharing](media/setup-almacceleratoradvanced-sample-solution/image-20210920120908855.png)
+     ![Set App Sharing](media/setup-almacceleratorpowerplatform-sample-solution/image-20210920120908855.png)
 
      - This screen lists all of the apps in your solution and allows users to share the apps in the downstream environment with an Azure AAD Group.
      - Use  the dropdown to **select the Azure AAD group** with which you'd like to share the app.
@@ -345,7 +345,7 @@ To get started using the ALM Accelerator For Advanced Makers App, follow the ins
 
    - Component Ownership
 
-     ![Set Component Ownership](media/setup-almacceleratoradvanced-sample-solution/image-20210920120946888.png)
+     ![Set Component Ownership](media/setup-almacceleratorpowerplatform-sample-solution/image-20210920120946888.png)
 
      - This screen lists all of the Flows in your solution and allows users to update the owner of the Flow in the downstream environment by selecting a Dataverse user.
      - Use  the **dropdown to select a Dataverse user** to own the Flow in the downstream environment.
@@ -353,54 +353,54 @@ To get started using the ALM Accelerator For Advanced Makers App, follow the ins
 
 1. After configuring your deployment configuration settings, return to the ALM Accelerator App and **Select Push Changes to Git** again and repeat the steps above except this time commit to the branch you already created.
 
-   ![Push your Changes to the Branch Created Previously](media/setup-almacceleratoradvanced-sample-solution/image-20210920163633739.png)
+   ![Push your Changes to the Branch Created Previously](media/setup-almacceleratorpowerplatform-sample-solution/image-20210920163633739.png)
 
    > [!NOTE]
    > Be sure to publish your changes before initiating the push.
 1. Once the **latest changes are Committed** create a new Pull Request by **Selecting Create Pull Request**
 
    - Specify the **Source and Target branch** and enter a **Title and Comment** for your Pull Request and **Select Create**.
-   ![Select Branch and Commit Changes](media/setup-almacceleratoradvanced-sample-solution/image-20210506144141234.png)
+   ![Select Branch and Commit Changes](media/setup-almacceleratorpowerplatform-sample-solution/image-20210506144141234.png)
 
 1. Once a Pull Request is created for your changes, the remaining steps to Merge and Release to Test occur in Azure DevOps.
 
 1. Select the Icon under the **Latest PR** Column to Launch Azure DevOps and **View the Pull Request**
 
-    ![Select Create Pull Request and Choose Source and Target Branch](media/setup-almacceleratoradvanced-sample-solution/image-20210506144309761.png)
+    ![Select Create Pull Request and Choose Source and Target Branch](media/setup-almacceleratorpowerplatform-sample-solution/image-20210506144309761.png)
 
 1. Verify that your **Validation Build Branch Policy** was created successfully in the Pull Request by confirming that the Validation Build is running.
 
-     ![Verify Build is Started from Pull Request](media/setup-almacceleratoradvanced-sample-solution/image-20210506144651140.png)
+     ![Verify Build is Started from Pull Request](media/setup-almacceleratorpowerplatform-sample-solution/image-20210506144651140.png)
 
 1. Very that your changes are reflected in the PR by Selecting Files and Finding your Canvas App MainScreen.fx.yaml.
 
-     ![Verify the changes made in the Pull Request Screen](media/setup-almacceleratoradvanced-sample-solution/image-20210506150545363.png)
+     ![Verify the changes made in the Pull Request Screen](media/setup-almacceleratorpowerplatform-sample-solution/image-20210506150545363.png)
 
 1. Once the **PR Validation Build** completes **Select Approve** then **Select Complete** and **Select Complete merge**.
 
-     ![Select Approve in the Pull Request Screen](media/setup-almacceleratoradvanced-sample-solution/image-20210506151631470.png)
+     ![Select Approve in the Pull Request Screen](media/setup-almacceleratorpowerplatform-sample-solution/image-20210506151631470.png)
 
 1. After the Merge completes, navigate back to the **ALM Accelerator App** and verify that the **Test Deployment** is in Progress.
 
-     ![Verify Test Deployment Starts after Merge](media/setup-almacceleratoradvanced-sample-solution/image-20210506152042025.png)
+     ![Verify Test Deployment Starts after Merge](media/setup-almacceleratorpowerplatform-sample-solution/image-20210506152042025.png)
 
 1. After the ALM Accelerator Sample Solution has been deployed to Validation and Test you can validate that the changes appear in both environments and that your environment variables, connection references and sharing have been successfully configured in each of the environments.
 
-     ![Verify settings and changes in the Target Environments](media/setup-almacceleratoradvanced-sample-solution/image-20210506152743903.png)
+     ![Verify settings and changes in the Target Environments](media/setup-almacceleratorpowerplatform-sample-solution/image-20210506152743903.png)
 
 1. The final step is to deploy your Solution to the **production environment**.
 
      - Create a new Pull Request in Azure DevOps that will pull the changes in ALMAcceleratorSampleSolution branch into the main branch and enter any required information.
 
-       ![Create a New Pull Request in Azure DevOps](media/setup-almacceleratoradvanced-sample-solution/image-20210506151302121.png)
+       ![Create a New Pull Request in Azure DevOps](media/setup-almacceleratorpowerplatform-sample-solution/image-20210506151302121.png)
 
      - This time you'll notice that there is **no Build Validation Policy enforcement** since we are only running the build validation for the ALMAcceleratorSampleSolution branch and **not the main branch**.
 
-       ![Verify No Validation Build Starts](media/setup-almacceleratoradvanced-sample-solution/image-20210506151536128.png)
+       ![Verify No Validation Build Starts](media/setup-almacceleratorpowerplatform-sample-solution/image-20210506151536128.png)
 
      - **Approve and Complete** the Pull Request as before and verify that the **deploy-prod-ALMAcceleratorSampleSolution** pipeline runs to push your changes to Production.
 
-       ![Approve and Complete the Pull Request to Main](media/setup-almacceleratoradvanced-sample-solution/image-20210506152930801.png)
+       ![Approve and Complete the Pull Request to Main](media/setup-almacceleratorpowerplatform-sample-solution/image-20210506152930801.png)
 
      - Once the pipeline for deploying to Production is finished, you'll see the status of the deployment in the App similar to the other stages.
 

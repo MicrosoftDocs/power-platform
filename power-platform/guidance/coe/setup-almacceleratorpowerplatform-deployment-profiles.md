@@ -32,38 +32,38 @@ To create User Settings for AA4PP, use the following steps.
 
 1. Open the Power **Platform ALM Accelerator Administration App** and Navigate to **Deployment User Settings**
 
-   ![ALM Accelerator for Power Platform Administration App](media/setup-almacceleratoradvanced-deployment-profiles/image-20211126094411050.png)
+   ![ALM Accelerator for Power Platform Administration App](media/setup-almacceleratorpowerplatform-deployment-profiles/image-20211126094411050.png)
 
 1. Select **New** and **Provide a Name** of the User Setting. This name will only be displayed to users with access than more than one User Setting option.
 
-   ![Creating a New Maker Experience that includes Import and Delete](media/setup-almacceleratoradvanced-deployment-profiles/image-20211126094853011.png)
+   ![Creating a New Maker Experience that includes Import and Delete](media/setup-almacceleratorpowerplatform-deployment-profiles/image-20211126094853011.png)
 
 1. Select **User Functions to Allow or Disallow**. Below are the specific areas that are configurable in the app.
     - **Import Solutions** - Allowing this function will show the Import Solution button in the App.
-      ![Import Solution Button in the AA4PP App](media/setup-almacceleratoradvanced-deployment-profiles/image-20211126100248455.png)
+      ![Import Solution Button in the AA4PP App](media/setup-almacceleratorpowerplatform-deployment-profiles/image-20211126100248455.png)
     - **Delete Solutions** - This function will show the Delete Solution button in the App.
-      ![Delete Solution Button in the AA4PP App](media/setup-almacceleratoradvanced-deployment-profiles/image-20211126102504179.png)
+      ![Delete Solution Button in the AA4PP App](media/setup-almacceleratorpowerplatform-deployment-profiles/image-20211126102504179.png)
     - **Manage Solutions** - This function will show the Manage Solutions button in the App.
-      ![Manage Solution Button in the AA4PP App](media/setup-almacceleratoradvanced-deployment-profiles/image-20211126102639665.png)
+      ![Manage Solution Button in the AA4PP App](media/setup-almacceleratorpowerplatform-deployment-profiles/image-20211126102639665.png)
     - **Drillthrough Status** - This function will allow users to drill into the Azure DevOps pipeline runs for the Promote and Deploy functionality.
 
-      ![Status Icon in AA4PP App](media/setup-almacceleratoradvanced-deployment-profiles/image-20211126111447987.png)
+      ![Status Icon in AA4PP App](media/setup-almacceleratorpowerplatform-deployment-profiles/image-20211126111447987.png)
     - **Profile Creation** - This function will provide users with the ability to create new Deployment Profiles in the App.
-      ![Create Profile Button in the AA4PP App](media/setup-almacceleratoradvanced-deployment-profiles/image-20211126104415673.png)
+      ![Create Profile Button in the AA4PP App](media/setup-almacceleratorpowerplatform-deployment-profiles/image-20211126104415673.png)
     - **Advanced Promote** - This function will provide users with the ability to change between using the Advanced Promote functionality (that is, specifying a source / target branch and creating a new branch).
-      ![Advanced Promote Toggle in AA4PP App](media/setup-almacceleratoradvanced-deployment-profiles/image-20211126104541318.png)
+      ![Advanced Promote Toggle in AA4PP App](media/setup-almacceleratorpowerplatform-deployment-profiles/image-20211126104541318.png)
     - **Advanced Deploy** - This function will provide users with the ability to toggle between using the Advanced Deploy functionality (that is, specifying a source / target branch for a Pull Request).
-      ![Advanced Deploy Toggle in AA4PP App](media/setup-almacceleratoradvanced-deployment-profiles/image-20211126111323976.png)
+      ![Advanced Deploy Toggle in AA4PP App](media/setup-almacceleratorpowerplatform-deployment-profiles/image-20211126111323976.png)
     - **Bypass Prepare** - This function will provide the user with the ability to skip the Preparation step during promotion of a solution (that is, bypass configuring deployment settings before committing to source control)
-      ![Bypass Prepare Toggle in AA4PP App](media/setup-almacceleratoradvanced-deployment-profiles/image-20211126111625176.png)
+      ![Bypass Prepare Toggle in AA4PP App](media/setup-almacceleratorpowerplatform-deployment-profiles/image-20211126111625176.png)
 
 1. Update **User Labels**. Below are the specific areas that are configurable in the app related to user labels for functions. These values also show in the Deployment History view under the action that was executed.
 
-    ![User Labels set in the Administration App](media/setup-almacceleratoradvanced-deployment-profiles/image-20211126121414294.png)
+    ![User Labels set in the Administration App](media/setup-almacceleratorpowerplatform-deployment-profiles/image-20211126121414294.png)
 
-    ![Action Labels based on User Labels in Deployment Request History Screen](media/setup-almacceleratoradvanced-deployment-profiles/image-20211126112601630.png)
+    ![Action Labels based on User Labels in Deployment Request History Screen](media/setup-almacceleratorpowerplatform-deployment-profiles/image-20211126112601630.png)
 
-    ![Action Buttons based on User Labels in AA4PP](media/setup-almacceleratoradvanced-deployment-profiles/image-20211126114058899.png)
+    ![Action Buttons based on User Labels in AA4PP](media/setup-almacceleratorpowerplatform-deployment-profiles/image-20211126114058899.png)
 
     - **Deploy Solution** - Updating this label changes the text of the button for the **deployment action** in the app. The default value is **"DEPLOY SOLUTION"**
     - **Commit Solution** - Updating this label changes the text of the button for the **promote action** in the app. The default value is **"COMMIT SOLUTION"**
@@ -86,29 +86,29 @@ If a user logs in to the AA4PP App and doesn't have a Deployment User Settings a
 
       - If the user has more than one Deployment User Setting shared with them, the app will display a drop-down for the user to choose their experience.
 
-        ![Dropdown of User Settings to Choose From](media/setup-almacceleratoradvanced-deployment-profiles/image-20211126131106991.png)
+        ![Dropdown of User Settings to Choose From](media/setup-almacceleratorpowerplatform-deployment-profiles/image-20211126131106991.png)
 
       - If a user only has one Deployment User Setting shared with them, they won't see the drop-down to choose from. Their default user setting will be used by the app.
       - If no user setting is shared with them, the app will create a new User Deployment setting for the user and use the default interface for the app.
-        ![Default User Setting Created In App or Single User Setting Shared with User](media/setup-almacceleratoradvanced-deployment-profiles/image-20211126131500223.png)
+        ![Default User Setting Created In App or Single User Setting Shared with User](media/setup-almacceleratorpowerplatform-deployment-profiles/image-20211126131500223.png)
    1. Create a New Profile for your Solution. In order to begin source controlling and deploying a solution, you must have a profile associated with that solution.
       >[!NOTE]
       >Users who have a User Setting shared with them will only be able to perform functions on solutions to which they have been assigned a profile already. If a user has a User Setting shared with them that doesn't have a profile that is already assigned to a solution, they won't be able to perform actions on that profile.
 
       - Select the **Choose a Profile link** for a solution that doesn't have a profile assigned.
-        ![Choose a Profile Link in AA4PP App](media/setup-almacceleratoradvanced-deployment-profiles/image-20211126132517844.png)
+        ![Choose a Profile Link in AA4PP App](media/setup-almacceleratorpowerplatform-deployment-profiles/image-20211126132517844.png)
 
       - Choose an **existing profile or select the plus button** to create a new profile.
-        ![Dropdown of existing profiles and create profile button](media/setup-almacceleratoradvanced-deployment-profiles/image-20211126132915840.png)
+        ![Dropdown of existing profiles and create profile button](media/setup-almacceleratorpowerplatform-deployment-profiles/image-20211126132915840.png)
 
       - Enter a **name for the Profile and Select the Organization, Project, Repo and Target Branch**.
-        ![New Profile Dialog in AA4PP App](media/setup-almacceleratoradvanced-deployment-profiles/image-20211126133149618.png)
+        ![New Profile Dialog in AA4PP App](media/setup-almacceleratorpowerplatform-deployment-profiles/image-20211126133149618.png)
       - Select Create. Creating a new Profile will automatically populate the Deployment Environments with the default configuration for Validation, Test, and Production. These environments' URLs will contain a placeholder for your environments actual URL.
-        ![New Profile with Placeholders for the Actual Environment URLs](media/setup-almacceleratoradvanced-deployment-profiles/image-20211126134710777.png)
+        ![New Profile with Placeholders for the Actual Environment URLs](media/setup-almacceleratorpowerplatform-deployment-profiles/image-20211126134710777.png)
 
       - Select Save to save your changes to the Profile and save the profile as the default for the solution
       - After the Profile is saved, you'll be able to Commit and Deploy your solution
-        ![AA4PP App with Solution Actions Enabled after Creating a New Profile](media/setup-almacceleratoradvanced-deployment-profiles/image-20211126135223693.png)
+        ![AA4PP App with Solution Actions Enabled after Creating a New Profile](media/setup-almacceleratorpowerplatform-deployment-profiles/image-20211126135223693.png)
 
 ## Sharing ALM Accelerator User Settings and Profiles Using AA4PP Administration App
 
@@ -124,11 +124,11 @@ In order to share User Settings created for a particular user profile it is reco
 
    - Select the **AAD Group** to use for this Team and Select **Next**
 
-     ![Creating a new AAD Group Team in Dataverse](.attachments/setup-almacceleratoradvanced-deployment-profiles/image-20211130122535631.png)
+     ![Creating a new AAD Group Team in Dataverse](media/setup-almacceleratorpowerplatform-deployment-profiles/image-20211130122535631.png)
 
    - Select **ALM Power App Access** and **Basic User** as the Roles for the Team and Select **Save**
 
-     ![Selecting roles for the Team](.attachments/setup-almacceleratoradvanced-deployment-profiles/image-20211130124013596.png)
+     ![Selecting roles for the Team](media/setup-almacceleratorpowerplatform-deployment-profiles/image-20211130124013596.png)
 
 1. Open the Power **Platform ALM Accelerator Administration App** and Navigate to **Deployment User Settings**
 
@@ -140,7 +140,7 @@ In order to share User Settings created for a particular user profile it is reco
 
    - Select **All AAD Security Group Teams** from the View dropdown
 
-     ![Advanced Lookup Selecting Teams and All AAD Security Group Teams](.attachments/setup-almacceleratoradvanced-deployment-profiles/image-20211201065240199.png)
+     ![Advanced Lookup Selecting Teams and All AAD Security Group Teams](media/setup-almacceleratorpowerplatform-deployment-profiles/image-20211201065240199.png)
 
    - Select the **Team you created previously** and select **Done**
 
@@ -148,4 +148,4 @@ In order to share User Settings created for a particular user profile it is reco
 
 1. Select Share
 
-   ![Share records completed](.attachments/setup-almacceleratoradvanced-deployment-profiles/image-20211201065707140.png)
+   ![Share records completed](media/setup-almacceleratorpowerplatform-deployment-profiles/image-20211201065707140.png)
