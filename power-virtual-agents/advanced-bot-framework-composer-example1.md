@@ -77,7 +77,7 @@ Go to the **Bot Responses** tab in Composer and open the **Meals** section. Sele
 
 :::image type="content" source="media\Composer_Example1\E1_Meals_showCode.png" alt-text="Composer show code button.":::
 
-In the code window, copy and paste the following LG templates that you will use in your Adaptive Card:
+In the code window, copy and paste the following language generation templates that you will use in your Adaptive Card:
 ```JSON
 # Chicken()
 -Chicken
