@@ -94,7 +94,7 @@ There are few key guidelines to follow when using Composer to create your bot co
 
 :::image type="content" source="media/Composer_Guidelines/Gd_PVA_Topics.png" alt-text="Bot Framework Composer - Power Virtual Agents topics.":::
 
-- You can call Power Virtual Agents topics in Composer by using the **Begin a PVA Topic** action.
+- You can call Power Virtual Agents topics in Composer by using the **Begin a Power Virtual Agents Topic** action.
 
 :::image type="content" source="media/Composer_Guidelines/Gd_call_PVA_Topic.png" alt-text="Bot Framework Composer - call Power Virtual Agents topics.":::
 
