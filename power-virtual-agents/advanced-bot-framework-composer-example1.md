@@ -45,6 +45,7 @@ Go to **Topics** in Power Virtual Agents and create a new topic called **Meal de
 
 Select **Save topic** to save your new topic and then select **Go to authoring canvas** to create your dialog. 
 
+In the **Authoring canvas**, remove the default **Message** node.
 
 Select the + below the **Trigger phrases** node, and select **Ask a question**. 
 
