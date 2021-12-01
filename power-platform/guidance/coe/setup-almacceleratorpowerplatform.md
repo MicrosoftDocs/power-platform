@@ -623,7 +623,8 @@ Download the **latest managed solution**(s) from GitHub (<https://github.com/mic
 
 ## Setup Makers to Use the ALM Accelerator App
 
-See the [User Setup Guide](setup-almacceleratorpowerplatform-users.md) for the recommended setup of a maker's user account in Dataverse and Azure DevOps.
+- See the [User Setup Guide](setup-almacceleratorpowerplatform-users.md) for the recommended setup of a maker's user account in Dataverse and Azure DevOps.
+- See the [User Deployment Setting and Profile Guide](setup-almacceleratorpowerplatform-deployment-profiles.md) for how to configure users' experience in the App and access to solutions and deployment profiles.
 
 ## Using the ALM Accelerator App
 
