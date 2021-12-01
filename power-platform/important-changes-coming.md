@@ -1,7 +1,7 @@
 ---
 title: "Important changes (deprecations) coming in Power Apps, Power Automate and customer engagement apps"
 description: Important changes (deprecations) coming in Power Apps, Power Automate and customer engagement apps 
-ms.date: 11/17/2021
+ms.date: 11/30/2021
 ms.topic: "article"
 ms.assetid: 994cc854-17f6-45d6-bc20-fcf1a3f2d6d6
 searchScope:
@@ -329,11 +329,6 @@ Effective March 2, 2020, the *regional* [Discovery Service](/powerapps/developer
 
 Customers must transition to using the [global OData V4 Discovery Service](/powerapps/developer/common-data-service/webapi/discover-url-organization-web-api#global-discovery-service) before April 21, 2021 so their applications aren't impacted. More information: [Modify your code to use global Discovery Service](/powerapps/developer/common-data-service/webapi/discovery-orgsdk-to-webapi).
 
-## Rules feature in canvas apps is deprecated
-
-Effective October 14, 2019, the [rules](/powerapps/maker/canvas-apps/working-with-rules) feature in canvas apps in Power Apps is deprecated. Few people have made use of rules in their canvas apps. From feedback collected through research and discussions with makers of Power Apps, the rules feature was confusing, and expressions were easier to learn, use, and debug. For more information about the rules feature deprecation, see [Blog: Canvas Rules feature deprecation](https://powerapps.microsoft.com/blog/canvas-rules-feature-deprecation/).
-
-
 ## Legacy web client is deprecated
 
 As of September 2019, the legacy web client is deprecated. Customers must transition to Unified Interface before December 4, 2020. Microsoft will continue to provide support, security, and other critical updates to the legacy web client until December 4, 2020 but won't release any more functionality beyond what has already been announced.
@@ -517,6 +512,10 @@ The Silverlight (XAP) web resource is deprecated on the web client, and isn't
 supported on Unified Interface. Instead of Silverlight web resources, you must use custom
 controls created using the HTML web resources
 with HTML5 to create UI components to visualize and interact with data.
+
+## Canvas apps
+
+See [Important upcoming changes and deprecations in canvas apps](/powerapps/maker/canvas-apps/important-changes-deprecations).
 
 ## Power Apps portals
 
