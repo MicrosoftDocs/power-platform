@@ -258,8 +258,11 @@ To get started using the ALM Accelerator For Advanced Makers App, follow the ins
 
 1. Once the solution is installed run the ALM Accelerator For Advanced Makers App.
 
-    > [!NOTE]
-    > When you first launch the app you may need to consent to the app using your connections.
+1. When prompted to create connections / grant consent create the necessary connections or accept the consent dialog.
+
+1. When prompted with the following screen enter 'https://graph.microsoft.com' for both the **Base Resource URL** and **Azure AD Resource URI**
+
+      ![image-20211201183325356](.attachments/almacceleratorpowerplatform-advancedmaker/image-20211201183325356.png)
 
 1. Select the **Cog** in the top right to select your **Azure DevOps Environment**, **Project**, and **Repo** to which you'll push your changes and submit your pull requests and select **Save**
    ![Select the Settings Cog](media/almacceleratorpowerplatform-components/image-20210303085854533.png)
@@ -356,7 +359,7 @@ To get started using the ALM Accelerator For Advanced Makers App, follow the ins
    ![Push your Changes to the Branch Created Previously](media/setup-almacceleratorpowerplatform-sample-solution/image-20210920163633739.png)
 
    > [!NOTE]
-   > Be sure to publish your changes before initiating the push.
+   > Be sure to publish any App changes before initiating the push
 1. Once the **latest changes are Committed** create a new Pull Request by **Selecting Create Pull Request**
 
    - Specify the **Source and Target branch** and enter a **Title and Comment** for your Pull Request and **Select Create**.

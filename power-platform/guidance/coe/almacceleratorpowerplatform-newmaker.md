@@ -31,8 +31,11 @@ Watch how to use the ALM Accelerator for Power Platform solution
 
 1. Once you have installed and configured the app, launch it from your Environment under Apps.
 
-    > [!NOTE]
-    > When you first launch the app you may need to consent to the app using your connections.
+1. When prompted to create connections / grant consent create the necessary connections or accept the consent dialog.
+
+1. When prompted with the following screen enter 'https://graph.microsoft.com' for both the **Base Resource URL** and **Azure AD Resource URI**
+
+      ![image-20211201183325356](.attachments/almacceleratorpowerplatform-advancedmaker/image-20211201183325356.png)
 
 1. The first time you open the app you will be asked to select an environment. Next time you open the app, it will remember which environment you were working on.
 
@@ -116,7 +119,7 @@ Watch how to use the ALM Accelerator for Power Platform solution
 1. Once you've configured your solution, you can push your changes to Git using the **Commit Solution** button for your solution. Depending on the permissions you are given, you will see here a toggle to **Show Advanced** options. This allows you to choose an existing branch or to create a new one with a specific naming convention. When not given permission to these options the app will create a new branch based on your username and **deployment profile** data.
 
     > [!NOTE]
-    > Be sure to publish your changes before initiating the push.
+    > Be sure to publish any App changes before initiating the push
 
    - Select an **existing branch** or **create a new branch** based on an existing branch and enter a **comment**. Use the hashtag notation for example `#123` to link the changes to a specific work item in Azure DevOps and Select **Commit**.
      ![Export Solution from Dataverse to New Azure DevOps Branch](media/almacceleratorpowerplatform-components/aa4pp-commit-solution.png "Export Solution from Dataverse to New Azure DevOps Branch")
@@ -130,7 +133,7 @@ Watch how to use the ALM Accelerator for Power Platform solution
 1. Once you have finished the changes in your solution and you are ready to deploy them across other environment use the **Deploy Solution** button.
 
     > [!NOTE]
-    > Be sure to publish your changes before initiating the push.
+    > Be sure to publish any App changes before initiating the push
 
     Depending on the permissions, you will see the **Advanced Settings** toggle.
 
