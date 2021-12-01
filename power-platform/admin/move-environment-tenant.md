@@ -126,16 +126,16 @@ When your environment is moved from one tenant to another within the same region
 7.	Mailboxes (if the mapped user has a mailbox in the destination environment, then the mailbox is automatically provisioned during the migration. For all the other users, you will need to reconfigure the mailbox)
 8.	Marketing 
 
-## Steps to create the mapping file:
+## Steps to create the mapping file
  
-Full Access Users:
-1.	Access the source instance
-2.	Open Advanced Find window and look for Users
-3.	Use saved view: Full Access Users and Edit Columns
-4.	Remove all columns except Full Name
-5.	Add columns: Windows Live ID
-6.	Click Ok and display all the results
-7.	Select all the records, click on "Export Users" in the ribbon and choose "Static Worksheet (Page only)"
+Full access users:
+1. Access the source environment.
+2. Use (![Screen shot of Advanced Find button.](../admin/media/advanced-find-button.PNG "Screen shot of Advanced Find button")) and look for users.
+3. Use Saved View: **Full Access Users** and **Edit Columns**.
+4. Remove all columns except **Full Name**.
+5. Select **Add Columns** > **Windows Live ID**.
+6. Select **OK** and display all the results.
+7. Select all the records, click on "Export Users" in the ribbon and choose "Static Worksheet (Page only)"
 8.	Perform the same steps above for the destination instance. You should now have two separate Excel sheets (one for source, one for target)
 9.	Open the files for editing
 10.	Starting with the source Excel sheet, copy the records under Windows Live ID column into Notepad (do not copy header)
@@ -218,8 +218,8 @@ Public documentation: https://docs.microsoft.com/en-us/dynamics365/marketing/ten
 
 After moving environments to another tenant:
 
-- The environment ID in the target tenant cannot be set to the same environment ID as in the source tenant. This is not supported.
-- The environment URL, environment ID, and the name do not change.
+- The [organization ID (OrgID)](determine-org-id-name.md) in the target tenant cannot be set to the same organization ID as in the source tenant. This is not supported.
+- The environment URL, organization ID (OrgID), and the name do not change.
 - The source environment will not be accessible.
 - Security group mapping is handled as part of the manual tenant-to-tenant migration process. At the very least, a replacement (or removal) will be needed because the security group won't exist with the same ID in the new Azure AD tenant.
 
