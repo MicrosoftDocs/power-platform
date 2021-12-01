@@ -156,7 +156,7 @@ Now that you've done the work of giving the bot the knowledge about outdoor gear
 
 
 
-Slot filling is a natural language understanding concept that means saving an extracted entity to an object. In Power Virtual Agents, slot filling means placing the extracted entity value into a variable.
+_Slot filling_ is a natural language understanding concept that means saving an extracted entity to an object. However, in Power Virtual Agents, slot filling means placing the extracted entity value into a variable.
 
 We will continue to use the outdoor gear topic as an example, which is triggered by typing "I want to buy something" in the test chat. 
 
