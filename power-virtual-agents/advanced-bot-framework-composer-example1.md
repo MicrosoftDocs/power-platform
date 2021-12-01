@@ -43,11 +43,17 @@ Go to **Topics** in Power Virtual Agents and create a new topic called **Meal de
 - what dishes do you deliver
 - entrees available for delivery 
 
-Select **Save topic** to save your new topic and then select **Go to authoring canvas** to create your dialog.
+Select **Save topic** to save your new topic and then select **Go to authoring canvas** to create your dialog. 
 
-In the **Authoring canvas**, create a **Question** node to ask the user about their location. Make sure to select entity **City** from the dropdown list in the **Identity** field.
 
-Rename the output variable **Var** to **user_city**. Set the variable **Usage** to **Bot (any topic can access)** and **Save** the topic.
+Select the + below the **Trigger phrases** node, and select **Ask a question**. 
+
+Enter "What city are you in?" in the **Ask a question** field.
+
+Select **City** from the dropdown list in the **Identity** field.
+
+Select the variable in the **Save response as** field then
+rename the output variable **Var** to **user_city**. Set the variable **Usage** to **Bot (any topic can access)** and **Save** the topic.
 
 :::image type="content" source="media/Composer_Example1/E1_Dialog2.png" alt-text="Power Virtual Agents variable.":::
 
