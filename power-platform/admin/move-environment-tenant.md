@@ -101,7 +101,7 @@ When your environment is moved from one tenant to another within the same region
 - Provide the destination environments in the target tenant. These environments in the target tenant will act as a placeholder and will be replaced with the source instance in the migration process. Make sure that these target environments are enabled for Dynamics 365 apps.
 - Provide the user mapping file for the first environment to be migrated. Each environment will need to have a separate mapping file. Please note, that the users need to exist both in source and target tenants, and they will need to be licensed and enabled in the environments in order for the migration to succeed. They can have different source and target domains, as long as they are active. 
 
-## Steps to be performed by a Global Admin, Dynamics 365 admin, or Power Platform Admin
+### Steps to be performed by a Global Admin, Dynamics 365 admin, or Power Platform Admin
 
 1. Be authorized to perform the migration.
 2. Create the Dynamics 365 destination environments (if they are not already created) in the target tenant.
@@ -114,7 +114,7 @@ When your environment is moved from one tenant to another within the same region
 4. Once the users are created and enabled, the mapping file will need to be generated (following the steps mentioned previously).
 5. If there are any Power Apps or Power Automate Flows solutions, these need to be exported from the [Power Apps maker portal](https://make.powerapps.com), and imported again in the new environment after the migration.
 
-## Confirm if any of the solutions below are installed in the environments to be migrated, as these may require additional steps, either from Support or from you:
+### Confirm if any of the solutions below are installed in the environments to be migrated, as these may require additional steps, either from Support or from you:
  
 - Power Apps or Power Automate
 - Dynamics 365 Customer Voice
@@ -125,7 +125,7 @@ When your environment is moved from one tenant to another within the same region
 - Mailboxes (if the mapped user has a mailbox in the destination environment, then the mailbox is automatically provisioned during the migration. For all the other users, you will need to reconfigure the mailbox)
 - Marketing 
 
-## Steps to create the mapping file
+### Steps to create the mapping file
  
 For full access users:
 1. Access the source environment.
@@ -158,9 +158,9 @@ For administrative access users:
       Note: If the destination user is not assigned any license, the migration will fail.
    3. Save the CSV file which has both full access users and administrative access users mapped.
 
-## Do the following steps for Power Apps, Power Automate, Power Pages (formerly Power Apps portals), and Marketing before the migrations are started: 
+### Do the following steps for Power Apps, Power Automate, Power Pages (formerly Power Apps portals), and Marketing before the migrations are started: 
 
-### For Portals (must be done for each portal in the environment(s)): 
+#### For Portals (must be done for each portal in the environment(s)): 
               
 Before the migration: 
 1. Sign in to the environment.
@@ -175,12 +175,12 @@ After the migration:
 > [!NOTE]
 > The following configurations are not preserved by the portal reset and must be configured again in the new portal. 
 
-### For Power Apps and Power Automate: 
+#### For Power Apps and Power Automate: 
 
 -	Any Power Apps and Flows must be manually exported. 
 -	We do not support the migration of Customer Connectors, Connections, and Gateways. If you do have any of these components setup, they must be manually reconfigured after the migration. 
 
-#### For apps which are solution aware
+##### For apps which are solution aware
 
 Before the migration: 
 1. For apps which are solution aware, you can go to https://web.powerapps.com/, navigate to the Solutions page, and export all apps/solutions (either individually or group them all together in a single solution, if they are not already)
@@ -190,7 +190,7 @@ After the migration:
 2. Select **Import** and use the file selector to pick the packages exported from the above steps.
 3. Confirm that the import was successfully completed by checking the solution contents in the target environment. 
 
-#### For apps which are not solution aware
+##### For apps which are not solution aware
 
 Before the migration: 
 1. Go to https://make.powerapps.com, and then select **Apps**.
@@ -207,7 +207,7 @@ After the migration:
 6. Complete all of the import option selections, and then select **Import**.
 7. Repeat these steps until all apps have been imported. 
 
-#### For Marketing application
+##### For Marketing application
 
 If the Marketing app is deployed in the tenant, ensure that the needed licenses are present in the destination tenant in order to reprovision the application once the migration is completed. See: [Tenant to tenant migration for Dynamics 365 Marketing](/dynamics365/marketing/tenant-to-tenant).
 
