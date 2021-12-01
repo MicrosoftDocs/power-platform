@@ -119,7 +119,7 @@ When your environment is moved from one tenant to another within the same region
  
 1.	Power Apps or Power Automate
 2.	Dynamics 365 Customer Voice
-3.	Power Pages
+3.	Power Pages (formerly Power Apps portals)
 4.	Café X
 5.	Forms Pro
 6.	SharePoint
@@ -128,39 +128,38 @@ When your environment is moved from one tenant to another within the same region
 
 ## Steps to create the mapping file
  
-Full access users:
+For full access users:
 1. Access the source environment.
 2. Use (![Screen shot of Advanced Find button.](../admin/media/advanced-find-button.PNG "Screen shot of Advanced Find button")) and look for users.
-3. Use Saved View: **Full Access Users** and **Edit Columns**.
+3. Select **Use Saved View** > **Full Access Users**, and then select **Edit Columns**.
 4. Remove all columns except **Full Name**.
 5. Select **Add Columns** > **Windows Live ID**.
-6. Select **OK** and display all the results.
-7. Select all the records, click on "Export Users" in the ribbon and choose "Static Worksheet (Page only)"
-8.	Perform the same steps above for the destination instance. You should now have two separate Excel sheets (one for source, one for target)
-9.	Open the files for editing
-10.	Starting with the source Excel sheet, copy the records under Windows Live ID column into Notepad (do not copy header)
-11.	Save the Notepad file
-12.	Next, enter destination "Windows Live ID" (UPNs) in the same Notepad document to the right of the corresponding Source UPN, separating Source and Destination UPNs by a comma (,). 
+6. Select **OK** > **Results** to see the list of full access users.
+7. Select all the records, select **Export Users** in the ribbon, and then choose **Static Worksheet (Page only)**.
+8. Do Steps 1-7 above for the destination environment. You should now have two separate Excel sheets - one for source, one for target.
+9. Open the files for editing.
+10.	Starting with the source Excel sheet, copy the records under the **Windows Live ID** column into Notepad. Do not copy the header.
+11.	Save the Notepad file.
+12.	Next, enter the destination Windows Live ID (UPNs) in the same Notepad document to the right of the corresponding Source UPN, separating Source and Destination UPNs by a comma (,). 
 
-Example below: 
-user001@source.com,user001@destination.com
-user002@source.com,user002@destination.com        
-user003@source.com,user003@destination.com
+    Example: <br />
+    user001@source.com,user001@destination.com<br />
+    user002@source.com,user002@destination.com  <br />      
+    user003@source.com,user003@destination.com
 
-13.	Save file as CSV
+13.	Save the file as a CSV.
 
-For Administrative access users: 
-1.   Use Saved View: Administrative access users to see the list of administrative access users
-2.   If you decide not to include any of these users, ignore below steps
-3.   If you decide to include these users in mapping:
- 
--	 Find the corresponding users in the destination tenant
--	 Make sure a valid dynamics license is assigned to the destination user in destination tenant
-PS: If the destination user is not assigned any license, the migration will fail
--  If the destination user is not assigned any license, the migration will fail
-- Save the CSV file which has both ‘Full access users’ and ‘Administrative access users’ mapped
+For administrative access users: 
+1. Access the source environment.
+2. Use (![Screen shot of Advanced Find button.](../admin/media/advanced-find-button.PNG "Screen shot of Advanced Find button")) and look for users.
+3. Select **Use Saved View** > **Administrative Access Users**, and then select **Results** to see the list of administrative access users.
+4. If you decide not to include any of these users, skip the following steps. Otherwise, to to include these users in mapping:
+   1. Find the corresponding users in the destination tenant.
+   2. Make sure a valid dynamics license is assigned to the destination user in the destination tenant.
+      Note: If the destination user is not assigned any license, the migration will fail.
+   3. Save the CSV file which has both full access users and administrative access users mapped.
 
-## These are the steps that need to be executed on customer’s side for Power Apps, Power Automate, Portals and Marketing application, before the migrations are started: 
+## Do the following steps for Power Apps, Power Automate, Power Pages (formerly Power Apps portals), and Marketing before the migrations are started: 
 
 ## 1.	For Portals (must be done for each portal in the environment(s)): 
               
