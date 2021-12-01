@@ -68,6 +68,8 @@ Name your new dialog **Meals**. Select **OK** to create a new dialog, **Meals**,
 
 Go to the **Bot Responses** tab in Composer and open the **Meals** section. Select **Show code**.
 
+:::image type="content" source="media\Composer_Example1\E1_Meals_showCode.png" alt-text="Composer show code button.":::
+
 In the code window, copy and paste the following LG templates that you will use in your Adaptive Card:
 ```JSON
 # Chicken()
