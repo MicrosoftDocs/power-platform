@@ -373,7 +373,7 @@ Use the Admin - Command Center app to configure subject and body texts for email
     1. Send on Behalf: this will add the person or group to the From (Send as) property for the mail.
 
     >[!NOTE]
-    > These properties are reliant on your mailbox permissions, and relevant [Exchange properties](https://docs.microsoft.com/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user?view=o365-worldwide) being configured.
+    > These properties are reliant on your mailbox permissions, and relevant [Exchange properties](/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user) being configured.
 
 1. You can store localized versions of each mail. If the user has a preferred language set in their Office 365 User profile, mails will be sent in the localized version. If no localized version is found for a language, the default english text is sent. Designate the language with the ISO Language Code: [Language Code Table (lingoes.net)](http://www.lingoes.net/en/translator/langcode.htm). Emails are formatted as html, be careful when changing the text so as to not overwrite html tags.
 
