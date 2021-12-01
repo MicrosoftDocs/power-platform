@@ -43,7 +43,7 @@ Go to **Topics** in Power Virtual Agents and create a new topic called **Meal de
 - what dishes do you deliver
 - entrees available for delivery 
 
-Select **Save** to save your new topic and then select **Go to authoring canvas** to create your dialog.
+Select **Save topic** to save your new topic and then select **Go to authoring canvas** to create your dialog.
 
 In the **Authoring canvas**, create a **Question** node to ask the user about their location. Make sure to select entity **City** from the dropdown list in the **Identity** field.
 
