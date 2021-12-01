@@ -220,7 +220,7 @@ The AA4PP Canvas App provides a convenience layer on top of the AA4PP Pipelines.
 
    - Using the **Advanced Settings** Specify the Source and Target branch and enter a Title and Comment for your Pull Request and use the **Deploy Solution** button.
 
-       ![Create Pull Request properties](media/almacceleratorpowerplatform-components/aa4pp-deploy-solution-advanced.png "Create Pull Request properties")
+       ![Create Pull Request properties Advanced](media/almacceleratorpowerplatform-components/aa4pp-deploy-solution-advanced.png "Create Pull Request properties Advanced")
 
 10. Once you deploy the solution the next things that happen is going to depend on the **approval type** of the **deployment step**. 
     
