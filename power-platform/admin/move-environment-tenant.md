@@ -50,14 +50,14 @@ There are no user-interface changes or version changes as part of this move. You
 
 <sup>*</sup>There could be potential data loss during migration.
 
-### Supported Environment types
+### Supported environment types
 
 | Supported | Not Supported |
 |-------------------------|-------------------------|
-| <ul></br><li>Migrating production org</li></br><li>Migrating sandbox org</li></br><li>Migrating tenants from GCC to GCC</li></br><li>One or multiple environments</li></br></ul> | <ul></br><li>Migrating default org</li></br><li>Migrating teams org</li></br><li>Migrating trial org</li></br><li>Migrating demo environment</li></br><li>Migrating tenants from GCC to another geo or from another geo to GCC</li></br></ul> |
+| <ul></br><li>Migrating production environment</li></br><li>Migrating sandbox environment</li></br><li>Migrating tenants from GCC to GCC</li></br><li>One or multiple environments</li></br></ul> | <ul></br><li>Migrating default environment</li></br><li>Migrating teams environment</li></br><li>Migrating trial environment</li></br><li>Migrating demo environment</li></br><li>Migrating tenants from GCC to another geo or from another geo to GCC</li></br></ul> |
 
 ### Migration flow
-Once migration request is submitted, support team is engaged to review the migration request manually.Below are the list of steps performed during entire migration process.
+Once a migration request is submitted, the support team is engaged to review the migration request manually. Below are the list of steps performed during the entire migration process.
 
 # [Image](#tab/image)
 
@@ -72,10 +72,10 @@ Once migration request is submitted, support team is engaged to review the migra
   </tr>
   <tr>
     <td>Pre-verification<br>--></td>
-    <td>Change org's mapping<br>--></td>
+    <td>Change environment's mapping<br>--></td>
     <td>User mapping and sync<br>--></td>
-    <td>Publish destination organization<br>--></td>
-    <td>Disable source organization</td>
+    <td>Publish destination environment<br>--></td>
+    <td>Disable source environment</td>
   </tr>
 </table>
 
@@ -89,42 +89,42 @@ Depending on how many source environments you are migrating, you'll need to crea
 
 The destination tenant needs an equal or higher number of active user licenses, environment licenses for the environments being migrated, and equal or greater storage as the source tenant.
 
-When your organization is moved from one tenant to another within the same region, the URL does not change. In order to perform this operation, you'll need to provide some information, such as:
+When your environment is moved from one tenant to another within the same region, the URL does not change. In order to perform this operation, you'll need to provide some information, such as:
 
 - What is the source tenant domain and its region? (example: EMEA, NA, APAC)
 - What is the destination tenant domain and its region? (example: EMEA, NA, APAC)
-- Does the destination tenant have a valid Dynamics 365 subscription with enough seats for all the users to be mapped? Please take in consideration that the users to be provided in the mapping file will need to be active and licensed both in source and target organizations
+- Does the destination tenant have a valid Dynamics 365 subscription with enough seats for all the users to be mapped? The users to be provided in the mapping file will need to be active and licensed both in the source and target environments.
 - Does the destination tenant have enough available user licenses?
 - Does the destination tenant have enough environment licenses?
 - Does the destination tenant have enough storage available for the environments being migrated?
-- For production organizations, we need to migrate a sandbox copy of it first. Do you have sufficient capacity to provision a copy of your production environment to proceed with this test? 
-- Provide the organizations to be migrated from the source tenant
-- Provide the destination organizations in the target tenant. These organizations in the target tenant will act as a placeholder and will be replaced with the source instance with the migration process. Please make sure that these target environments are enabled for Dynamics 365 apps
-- Provide the user mapping file for the first organization to be migrated. Each organization will need to have a separate mapping file. Please note, that the users need to exist both in source and target tenants, and they will need to be licensed and enabled in the organizations in order for the migration to succeed. They can have different source and target domains, as long as they are active. 
+- For production environments, we need to migrate a sandbox copy of it first. Do you have sufficient capacity to provision a copy of your production environment to proceed with this test? 
+- Provide the environments to be migrated from the source tenant.
+- Provide the destination environments in the target tenant. These environments in the target tenant will act as a placeholder and will be replaced with the source instance in the migration process. Make sure that these target environments are enabled for Dynamics 365 apps.
+- Provide the user mapping file for the first environment to be migrated. Each environment will need to have a separate mapping file. Please note, that the users need to exist both in source and target tenants, and they will need to be licensed and enabled in the environments in order for the migration to succeed. They can have different source and target domains, as long as they are active. 
 
 ## Steps to be performed by a Global Admin, Dynamics 365 admin, or Power Platform Admin
 
-- Authorization to perform the migration
-- Creation of the Dynamics 365 destination environments (if they are not already created) in the target tenant.
-- If we will be moving a production environment, we also need to first migrate a sandbox copy. In that case, we will also need a new environment in the source tenant to copy the production into it.
-- Creation of the users in the destination environments in the target tenant, which include:
-a.	Creation of the users in Office 365 / Azure AD
-b.	Assignment of the licenses
-c.	Assignment of security roles in the environments
-d.	Provision the user mailboxes in the destination tenant
-- Once the users are created and enabled, the mapping file will need to be generated (following the steps mentioned previously)
-- If there are any solutions of PowerApps / or any Power Automate Flows, these need to be exported as well from the make.powerapps.com admin center, and imported again in the new environment after the migration
+1. Be authorized to perform the migration.
+2. Create the Dynamics 365 destination environments (if they are not already created) in the target tenant.
+3. If we will be moving a production environment, we first need to migrate a sandbox copy. In that case, we'll also need a new environment in the source tenant so we can copy the production environment into the new environment.
+4. Create users in the destination environments in the target tenant, which include:
+   1. Create users in Microsoft 365/Azure AD.
+   2. Assign licenses.
+   3.	Assign security roles in the environments.
+   4.	Provision user mailboxes in the destination tenant.
+4. Once the users are created and enabled, the mapping file will need to be generated (following the steps mentioned previously).
+5. If there are any Power Apps or Power Automate Flows solutions, these need to be exported from the [Power Apps admin center](https://make.powerapps.com), and imported again in the new environment after the migration.
 
-## Please confirm if any of the solutions below are installed in the organizations to be migrated, as these may require additional steps, either from Support or from your side:
+## Confirm if any of the solutions below are installed in the environments to be migrated, as these may require additional steps, either from Support or from you:
  
-1.	PowerApps/Power Automate
-2.	Voice of the Customer
-3.	Portals
-4.	Cafe X
+1.	Power Apps or Power Automate
+2.	Dynamics 365 Customer Voice
+3.	Power Pages
+4.	Café X
 5.	Forms Pro
 6.	SharePoint
-7.	Mailboxes (if the mapped user has a mailbox in the destination organization, then the mailbox is automatically provisioned during the migration. For all the other users, you will need to re-configure the mailbox again)
-8.	Marketing application
+7.	Mailboxes (if the mapped user has a mailbox in the destination environment, then the mailbox is automatically provisioned during the migration. For all the other users, you will need to reconfigure the mailbox)
+8.	Marketing 
 
 ## Steps to create the mapping file:
  
@@ -162,15 +162,15 @@ PS: If the destination user is not assigned any license, the migration will fail
 
 ## These are the steps that need to be executed on customer’s side for Power Apps, Power Automate, Portals and Marketing application, before the migrations are started: 
 
-## 1.	For Portals (must be done for each portal in the organization(s)): 
+## 1.	For Portals (must be done for each portal in the environment(s)): 
               
 Before the migration: 
--	Login to the organization
+-	Login to the environment
 -	Open Portals administration page
 -	Reset the portal (reference: https://docs.microsoft.com/en-us/dynamics365/customer-engagement/portals/reset-portal)
 
 After the migration: 
--	Login to the organization
+-	Login to the environment
 -	Open Portals administration page
 -	Provision portal with the same portal type and language
 
@@ -219,7 +219,7 @@ Public documentation: https://docs.microsoft.com/en-us/dynamics365/marketing/ten
 After moving environments to another tenant:
 
 - The environment ID in the target tenant cannot be set to the same environment ID as in the source tenant. This is not supported.
-- The org URL, org ID, and the name do not change.
+- The environment URL, environment ID, and the name do not change.
 - The source environment will not be accessible.
 - Security group mapping is handled as part of the manual tenant-to-tenant migration process. At the very least, a replacement (or removal) will be needed because the security group won't exist with the same ID in the new Azure AD tenant.
 
@@ -230,7 +230,7 @@ You’ll be provided with a list of prerequisites and post-requisites for your m
 
 | |Before the move<br/>Notification   |During the move<br/>Cut-over  |After the move<br/>Notification and support |
 |---------|---------|---------|---------|
-|**What Microsoft does**   |Your support representative or Account Manager will work with you to request a move and schedule it.         |Cut-over for the migration takes several hours, depending on the number of users and the amount of data. During this period, the organization is not accessible, so the cut-over should be scheduled during the evening or over a weekend.<br/><br/>There is a step that will require your involvement, which is to provide a User Mapping File. This is requested in advance so that we can validate the users being moved before the migration takes place.         |You will be alerted by email or telephone when your environment is migrated to the new tenant.<br/><br/>After the tenant migration is complete, your support representative or Account Manager will assist you to contact with billing to cancel and/or credit your previous subscription, if needed.         |
+|**What Microsoft does**   |Your support representative or Account Manager will work with you to request a move and schedule it.         |Cut-over for the migration takes several hours, depending on the number of users and the amount of data. During this period, the environment is not accessible, so the cut-over should be scheduled during the evening or over a weekend.<br/><br/>There is a step that will require your involvement, which is to provide a User Mapping File. This is requested in advance so that we can validate the users being moved before the migration takes place.         |You will be alerted by email or telephone when your environment is migrated to the new tenant.<br/><br/>After the tenant migration is complete, your support representative or Account Manager will assist you to contact with billing to cancel and/or credit your previous subscription, if needed.         |
 
 We will adhere to the terms of the [Microsoft Online Services Service Level Agreement](https://go.microsoft.com/fwlink/p/?LinkID=523897) for all moves.
 
@@ -239,9 +239,10 @@ We will adhere to the terms of the [Microsoft Online Services Service Level Agre
 ## Are background operations in setting enabled during T2T migration ?
 Administration mode is enabled during T2T migration so background operations don’t run. [Administration mode - Power Platform ](https://docs.microsoft.com/en-us/power-platform/admin/admin-mode)
 
-## Can we migrate all users from source to destination ?
-we can migrate all source users to destination only if users in the destination org.e.g
-user001@source.com,user001@destination.com
+## Can we migrate all users from the source to the destination environment?
+We can migrate all source users to destination only if users exist in the destination environment. For example:
+
+user001@source.com,user001@destination.com <br />
 user002@source.com,user002@destination.com        
 
 
