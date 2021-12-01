@@ -244,7 +244,7 @@ Go to the Power Virtual Agents **Topics** page to see your new Bot Framework con
 
 :::image type="content" source="media/Composer_Example1/E1_Meals_in_PVA_Topics.png" alt-text="Power Virtual Agents Topics page - new Bot Framework dialog.":::
 
-Open the **Meal delivery options** topic in the **Authoring canvas** in Power Virtual Agents. Under the **Question** node, add a new **Go to another topic** node, and choose the Bot Framework dialog **Meals** from the list of available topics. Note that you can continue building your dialog in Power Virtual Agents after calling a Bot Framework Composer dialog if you wish.
+Open the **Meal delivery options** topic in the **Authoring canvas** in Power Virtual Agents. Under the **Question** node, add a new **Redirect to another topic** node, and choose the Bot Framework dialog **Meals** from the list of available topics. Note that you can continue building your dialog in Power Virtual Agents after calling a Bot Framework Composer dialog if you wish.
 
 Your Power Virtual Agents topic **Meal delivery options** will call the Bot Framework dialog **Meals** to display an Adaptive Card. Select **Save** to save the changes to your topic.
 
