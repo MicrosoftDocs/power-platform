@@ -181,16 +181,18 @@ The import can take up to 60 minutes to be completed. Learn more about the apps 
 
 ## Update and turn on child flows
 
-There are several child flows which will need their **Run only users** properties updated.
+You may have to update **Run only users** properties for these child flows:
 
+- HELPER - Send Email
+- HELPER - Maker Check
 - HELPER - CloudFlowOperations
-- HELPER - CanvasAppOperations
 - HELPER - ObjectOperations
+- HELPER - CanvasAppOperations
 - CLEANUP HELPER - Check Deleted (Canvas Apps)
 - CLEANUP HELPER - Check Deleted (Cloud Flows)
+- CLEANUP HELPER - Check Deleted (Custom Connectors)
 - CLEANUP HELPER - Check Deleted (Model Driven Apps)
 - CLEANUP HELPER - Check Deleted (PVA)
-- CLEANUP HELPER - Check Deleted (Custom Connectors)
 - CLEANUP HELPER - Power Apps User Shared With
 
 First, [remove the unmanaged layer](setup.md#installing-updates) for all flows. Then, go to the details page and click the **Run only users** edit button.
@@ -201,7 +203,7 @@ You will see all the connections in the child flow. For each one, change the val
   
 ![Configure run only users.](media/runonlyusersgov2.png "Configure run only users")
 
-Once you have updated the run only users, turn on all the child flows.
+Once you have updated the run only users, **turn on** all the child flows.
 
 ## Activate the flows
 
