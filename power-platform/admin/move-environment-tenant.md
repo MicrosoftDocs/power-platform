@@ -129,7 +129,7 @@ When your environment is moved from one tenant to another within the same region
  
 For full access users:
 1. Access the source environment.
-2. Use (![Screen shot of Advanced Find button.](../admin/media/advanced-find-button.PNG "Screen shot of Advanced Find button")) and look for users.
+2. Use (![Screen shot of Advanced Find button.](../admin/media/advanced-find-button2.png "Screen shot of Advanced Find button")) and look for users.
 3. Select **Use Saved View** > **Full Access Users**, and then select **Edit Columns**.
 4. Remove all columns except **Full Name**.
 5. Select **Add Columns** > **Windows Live ID**.
@@ -150,7 +150,7 @@ For full access users:
 
 For administrative access users: 
 1. Access the source environment.
-2. Use (![Screen shot of Advanced Find button.](../admin/media/advanced-find-button.PNG "Screen shot of Advanced Find button")) and look for users.
+2. Use (![Screen shot of Advanced Find button.](../admin/media/advanced-find-button2.png "Screen shot of Advanced Find button")) and look for users.
 3. Select **Use Saved View** > **Administrative Access Users**, and then select **Results** to see the list of administrative access users.
 4. If you decide not to include any of these users, skip the following steps. Otherwise, to to include these users in mapping:
    1. Find the corresponding users in the destination tenant.
