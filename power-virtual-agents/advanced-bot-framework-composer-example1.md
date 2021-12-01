@@ -230,7 +230,7 @@ Select the new **Send a response** action to open the **Properties pane**. Under
 >You can [access Power Virtual Agents global variables in Composer](advanced-bot-framework-composer.md#use-and-update-power-virtual-agents-variables-in-bot-framework-composer) by referencing the scope **virtualagent**. For example, **${virtualagent.user_city}** will refer to the value of a variable that was created in the Power Virtual Agents bot.
 
 
-You are now ready to upload the **Meals** dialog to your Power Virtual Agents bot. Select the **Publish** tab and then the **Publish profile** of your bot, and choose **Publish to selected profile**. Add an optional comment and select **Okay** in the confirmation window to start uploading.
+You are now ready to upload the **Meals** dialog to your Power Virtual Agents bot. Select the **Publish** tab and select the checkbox next to your bot, and choose **Publish selected bot**. Add an optional comment and select **Okay** in the confirmation window to start uploading.
 
 :::image type="content" source="media/Composer_Example1/E1_Meals_Publish.png" alt-text="Composer Publish Example 1 publish.":::
 
