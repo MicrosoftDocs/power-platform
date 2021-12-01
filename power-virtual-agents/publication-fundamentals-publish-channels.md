@@ -37,21 +37,21 @@ Each time you want to update your bot, you publish it again from within the Powe
 
 ## Publish the latest bot content
 
-You need to publish the bot at least once before your customers can interact with it or before you can share it with your teammates. After the first publish, you can publish the bot again whenever you would like your customers to engage with the latest bot content. 
+You need to publish the bot at least once before your customers can interact with it or before you can share it with your teammates. After the first publish, you can publish the bot again whenever you'd like your customers to engage with the latest bot content. 
 
 **Publish the latest bot content:**
 
-1. Go to the **Publish** tab on the side navigation pane.
+1. On the left side navigation pane, select the **Publish** tab.
 
 2. Select **Publish** to make the latest bot content available to your customers.
 
     ![Publish latest bot content.](media/channel-publish-latest-content.png)
 
-    The publishing process will check for errors in the latest bot content.
+    The publishing process will take less than a few minutes as it checks for errors in the latest bot content.
 
     ![Validate latest bot content for publish.](media/channel-publish-validation.png)
 
-Publication should take less than a few minutes. When successful, you can view the bot in action and share it with your team by selecting the **demo website** link. The link will open a new tab and display a prebuilt demo website where you and your team can interact with the bot. This is useful to gather feedback from stakeholders involved in the bot.
+3.  After publishing completes, select the **demo website** link. The link will open a new tab and display a prebuilt demo website where you and your team can interact with the bot. This is useful to gather feedback from stakeholders involved in the bot.
 
 ![Go to demo website.](media/channel-go-to-demo-website.png)
 
@@ -59,12 +59,17 @@ Go to the [Configure the demo website and add the bot to your live website](publ
 
 > [!TIP]
 > **What's the difference between the test chat and the demo website?**  
-> The demo website lets you share a URL with other members of your team, or other stakeholders who want to try out the bot. It's not intended for production uses (for example, you shouldn't use it directly with customers).  
-> The test chat is intended for bot authors to test how conversation nodes flow and to check for errors when they are creating and testing their bot.
+> On the demo website, you can share a URL with members of your team, or other stakeholders who want to try out the bot.  However, the website isn't intended for production use, and you shouldn't use it directly with customers.  
+> You can use the test chat to see whether conversation flows as expected, and to spot any errors during the bot creation process.
 
 ## Configure channels
 
-After publishing your bot at least once, you can add channels to make the bot reachable by your customers. The channels we currently support by selecting **Manage** and going to the **Channels** tab in the side navigation pane.
+After publishing your bot at least once, you can add channels to make the bot reachable by your customers. 
+
+To view the currently supported channels:
+
+1. Select **Manage**.
+2. In the left side navigation pane, select the **Channels** tab.
 
 ![Channel settings.](media/channel-channels-menu.png)
 
@@ -83,7 +88,7 @@ Different channels have different end-user experiences. The following table show
 | Experience | Website | Microsoft Teams(1) | Facebook | Dynamics Omnichannel for Customer Service |
 |---|---|---|---|---|
 | [Customer satisfaction survey](authoring-create-edit-topics.md#insert-nodes) | Adaptive card | Text-only | Text-only | Text-only |
-| [Multiple-choice options](authoring-create-edit-topics.md#insert-nodes) | Supported | [Supported up to 6 (as hero card)](/microsoftteams/platform/concepts/cards/cards-reference#hero-card) | [Supported up to 13](https://developers.facebook.com/docs/messenger-platform/send-messages/quick-replies/) | [Partially Supported](/dynamics365/customer-service/asynchronous-channels#suggested-actions-support) |
+| [Multiple-choice options](authoring-create-edit-topics.md#insert-nodes) | Supported | [Supported up to six (as hero card)](/microsoftteams/platform/concepts/cards/cards-reference#hero-card) | [Supported up to 13](https://developers.facebook.com/docs/messenger-platform/send-messages/quick-replies/) | [Partially Supported](/dynamics365/customer-service/asynchronous-channels#suggested-actions-support) |
 | [Markdown](https://daringfireball.net/projects/markdown/) | Supported | [Partially Supported](/microsoftteams/platform/bots/how-to/format-your-bot-messages#text-only-messages) | [Partially supported](https://www.facebook.com/help/147348452522644?helpref=related) | [Partially Supported](/dynamics365/customer-service/asynchronous-channels#preview-support-for-formatted-messages) |
 | [Welcome message](authoring-create-edit-topics.md#insert-nodes) | Supported | Supported | Not supported | Supported for [Microsoft Teams](/dynamics365/customer-service/configure-microsoft-teams) and [Chat](/dynamics365/customer-service/set-up-chat-widget). Not supported for other channels. |
 | [Did-You-Mean](advanced-ai-features.md#automatic-triggering-improvements-preview) | Supported | Supported | Supported | Supported for [Microsoft Teams](/dynamics365/customer-service/configure-microsoft-teams), [Chat](/dynamics365/customer-service/set-up-chat-widget), Facebook, and text-only channels (SMS via [TeleSign](/dynamics/customer-service/configure-sms-channel) and [Twilio](/dynamics365/customer-service-configure-sms-channel-twilio), [WhatsApp](/dynamics365/customer-service/configure-whatsapp-channel), [WeChat](/dynamics365/customer-service/configure-wechat-channel), and [Twitter](/dynamics365/customer-service/configure-twitter-channel)).<br>Suggested actions will be presented as a text-only list; users will need to retype an option to respond |
