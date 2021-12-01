@@ -70,7 +70,7 @@ The Core Components solution is required for the Governance Components solution,
 1. Follow the instructions detailed under [Set up core components](setup-core-components.md) to import the solution either into your Production or your Dataverse for Teams environment.
 
 1. Import the *CenterOfExcellenceAuditComponents_x_x_x_xx_managed.zip* file.
-1. Create a new connection to the all connectors.
+1. Select a connection for all connectors.
     ![Import the Center of Excellence - Governance components solution.](media/msig-import.png "Import the Center of Excellence - Governance components solution")
 
 1. Select **Import** without adding values to the Environment Variables, these will be updated later - see [update environment variables](#update-environment-variables)
