@@ -42,7 +42,7 @@ In addition to this guide, you can also [download and use templates to help you 
 
 ## Create your first bot
 
-1. Go to [https://aka.ms/TryPVA](https://aka.ms/TryPVA) in your browser to begin. Supported browsers include Microsoft Edge, Chrome, and Firefox. On the website, select **Start free**, and then sign in with your work email address. Note that personal Microsoft accounts aren't currently supported.
+1. Go to [Power Virtual Agents website](https://aka.ms/TryPVA) in your browser to begin. Supported browsers include Microsoft Edge, Chrome, and Firefox. On the website, select **Start free**, and then sign in with your work email address. Note that personal Microsoft accounts aren't currently supported.
 
     
 
