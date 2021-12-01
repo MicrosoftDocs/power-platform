@@ -143,7 +143,7 @@ For full access users:
 
     Example: <br />
     user001@source.com,user001@destination.com<br />
-    user002@source.com,user002@destination.com  <br />      
+    user002@source.com,user002@destination.com
     user003@source.com,user003@destination.com
 
 13.	Save the file as a CSV.
