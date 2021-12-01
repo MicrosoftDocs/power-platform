@@ -40,7 +40,7 @@ For more information about hand off, and how to use hand-off within a bot conver
 * You must be [assigned the omnichannel administrator role](/dynamics365/omnichannel/administrator/add-users-assign-roles#understand-roles-and-their-privileges) to connect bots with omnichannel.
 * You'll need an [application registered in Azure](/azure/active-directory/develop/howto-create-service-principal-portal#create-an-azure-active-directory-application) before you can connect to omnichannel.
 * [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
-* Your bot must be in a published state for end-to-end capabilities to work as expected. Ensure that you have [published your bot](./publication-fundamentals-publish-channels.md) prior to validating the integrated experience.  
+* For end-to-end capabilities to work as expected, your bot must be in a published state . Ensure that you have [published your bot](./publication-fundamentals-publish-channels.md) before validating the integrated experience.  
 
 ## Install extension solutions
 
