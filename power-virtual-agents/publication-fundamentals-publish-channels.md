@@ -37,7 +37,7 @@ Each time you want to update your bot, you publish it again from within the Powe
 
 ## Publish the latest bot content
 
-You need to publish the bot at least once before your customers can interact with it or before you can share it with your teammates. After the first publish, you can publish the bot again whenever you'd like your customers to engage with the latest bot content. 
+You need to publish the bot at least once before your customers can interact with it or before you can share it with your teammates. After the first publish, you can publish the bot again whenever you'd like your customers to engage with the latest bot content.
 
 **Publish the latest bot content:**
 
@@ -51,11 +51,11 @@ You need to publish the bot at least once before your customers can interact wit
 
     ![Validate latest bot content for publish.](media/channel-publish-validation.png)
 
-3.  After publishing completes, select the **demo website** link. The link will open a new tab and display a prebuilt demo website where you and your team can interact with the bot. This is useful to gather feedback from stakeholders involved in the bot.
+3. After publishing completes, select the **demo website** link. The link will open a new tab and display a prebuilt demo website where you and your team can interact with the bot. This is useful to gather feedback from stakeholders involved in the bot.
 
 ![Go to demo website.](media/channel-go-to-demo-website.png)
 
-Go to the [Configure the demo website and add the bot to your live website](publication-connect-bot-to-web-channels.md) topic for details on updating the welcome message and help text on the demo website.
+For details on updating the welcome message and help text on the demo website, go to [Configure the demo website and add the bot to your live website](publication-connect-bot-to-web-channels.md).
 
 > [!TIP]
 > **What's the difference between the test chat and the demo website?**  
