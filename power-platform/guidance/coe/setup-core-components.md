@@ -26,9 +26,7 @@ The Center of Excellence (CoE) core components solution provides components that
 
 The core components solution contains assets that are only relevant to admins.
 
-Watch how to setup the core components solution.
-
-> [!VIDEO https://www.youtube.com/embed/Z9Vp2IxFzpU]
+[Watch how to setup](https://www.youtube.com/embed/Z9Vp2IxFzpU) the core components solution.
 
 ## Import the solution
 
@@ -99,6 +97,11 @@ This is the first step of the installation process and is required for every oth
     | TenantID | Your Azure Tenant ID.|
     | Command Center - Application Client ID | Application Client ID for the app registered to fetch M365 Service Messages. Leave empty on Import. |
     | Command Center - Client Secret | Client Secret for the app registered to fetch M365 Service Messages. Leave empty on Import. |
+    | Compliance – Apps – Number Users Shared | The Admin \| Compliance detail request flow sends an email to makers asking for business justification if their app is shared with more than x number of users. The number of users is specified in this variable. | 20 users |
+    | Compliance – Apps – Number Groups Shared | The Admin \| Compliance detail request flow sends an email to makers asking for business justification if their app is shared with more than x number of groups. The number of groups is specified in this variable. | 1 group |
+    | Compliance – Apps – Number Days Since Published | The Admin \| Compliance detail request flow sends an email to makers asking for business justification if their app has not been published in x number of days. The number of days is specified in this variable. | 60 days |
+    | Compliance – Apps – Number Launches Last 30 Days | The Admin \| Compliance detail request flow sends an email to makers asking for business justification if their app has been launched more than x number of times in the past 30 days. The number of app launches is specified in this variable. | 30 app launches |
+    | Compliance – Chatbots – Number Launches | The Admin \| Compliance detail request flow sends an email to makers asking for business justification if their chatbot has been launched more than x number of times in the past 30 days. The number of chatbot launches is specified in this variable. | 50 app launches |
 
 1. Select **Import**.
 
@@ -174,6 +177,11 @@ Before you begin:
     | TenantID | Your Azure Tenant ID.|
     | Command Center - Application Client ID | Application Client ID for the app registered to fetch M365 Service Messages. Leave empty on Import. |
     | Command Center - Client Secret | Client Secret for the app registered to fetch M365 Service Messages. Leave empty on Import. |
+    | Compliance – Apps – Number Users Shared | The Admin \| Compliance detail request flow sends an email to makers asking for business justification if their app is shared with more than x number of users. The number of users is specified in this variable. | 20 users |
+    | Compliance – Apps – Number Groups Shared | The Admin \| Compliance detail request flow sends an email to makers asking for business justification if their app is shared with more than x number of groups. The number of groups is specified in this variable. | 1 group |
+    | Compliance – Apps – Number Days Since Published | The Admin \| Compliance detail request flow sends an email to makers asking for business justification if their app has not been published in x number of days. The number of days is specified in this variable. | 60 days |
+    | Compliance – Apps – Number Launches Last 30 Days | The Admin \| Compliance detail request flow sends an email to makers asking for business justification if their app has been launched more than x number of times in the past 30 days. The number of app launches is specified in this variable. | 30 app launches |
+    | Compliance – Chatbots – Number Launches | The Admin \| Compliance detail request flow sends an email to makers asking for business justification if their chatbot has been launched more than x number of times in the past 30 days. The number of chatbot launches is specified in this variable. | 50 app launches |
 
 1. Select **Import**.
 
@@ -211,8 +219,6 @@ The Admin \| Sync Template flows part of this solution crawl through all the res
 
 When you first set up the CoE Starter Kit, enable these flows in a specific order which will start the process of crawling and storing the information in Dataverse. Depending on the size of your tenant, the first run of may take long to complete. See the [limitations information](limitations.md) for more details.
 
-We will more quickly resolve issues around dependencies between tables by enabling the flows in an explicit order. Enabling the flows in this order is not required, but it may cause errors or incorrect data during the first week until the inventory dependencies align.
-
 1. For Option 1 (Core Components installed in Production environment):
     1. Go to [make.powerapps.com](https://make.powerapps.com/), select **Solutions**, and then open the **Center of Excellence - Core Components** solution to view the flows.
 1. For Option 2 (Core Components installed in Dataverse for Teams environment)
@@ -220,6 +226,7 @@ We will more quickly resolve issues around dependencies between tables by enabli
     1. Select **Installed apps**.
     1. Select **See all** for Center of Excellence - Core Components.
     1. Select **Cloud flows**.
+1. Turn on: CLEANUP HELPER - Check Deleted (Cloud Flows), CLEANUP HELPER - Check Deleted (Model Driven Apps), CLEANUP HELPER - Check Deleted (Canvas Apps) and CLEANUP HELPER - Check Deleted (PVA).
 1. Turn on: CLEANUP - Admin \| Sync Template v3 (Check Deleted).
 1. Wait until it finishes before you turn on any other flows.
 1. Turn on: Admin \| Sync Template V3 (Connectors)
@@ -238,7 +245,7 @@ We will more quickly resolve issues around dependencies between tables by enabli
     1. Turn on the flows starting with Command Center App if you are using the [Admin - Command Center](core-components.md#admin---command-center)
 
 >[!IMPORTANT]
-> Note that **Admin \| Compliance Detail Request v3** will not pass until you complete setup of the Governance component so you should leave it turned off until then.
+> Note that **Admin \| Compliance request** flows will not pass until you complete setup of the Governance component so you should leave it turned off until then.
 
 ## (Optional) Create an Azure AD app registration to connect to Microsoft Graph
 
@@ -289,6 +296,8 @@ Using these steps, you'll set up an Azure AD app registration that will be used 
     ![Update HTTP action with client ID and secret](media/commandcenter3.png "Update HTTP action with client ID and secret")
 
 1. Alternatively, you can use the **Command Center - Application Client ID** and **Command Center - Client Secret** [environment variables](#update-environment-variables) to save your client ID and secret values. The **Command Center App >  Get M365 Service Messages** flow is configured to retrieve values from those enviornment variable, so no changes to the flow are needed.
+
+1. **Save** this flow.
 
 ## Set up Audit Logs solution
 
@@ -363,5 +372,11 @@ Environment variables are used to store application and flow configuration data 
     | Admin eMail Preferred Language | The preferred language for emails sent to the admin email alias, which is specified in the Admin eMail environment variable. A default value of en-US is provided so this will not appear on setup. |
     | Command Center - Application Client ID | Application Client ID for the app registered to fetch M365 Service Messages. Leave empty on Import. |
     | Command Center - Client Secret | Client Secret for the app registered to fetch M365 Service Messages. Leave empty on Import. |
+    | Compliance – Apps – Number Users Shared | The Admin \| Compliance detail request flow sends an email to makers asking for business justification if their app is shared with more than x number of users. The number of users is specified in this variable. | 20 users |
+    | Compliance – Apps – Number Groups Shared | The Admin \| Compliance detail request flow sends an email to makers asking for business justification if their app is shared with more than x number of groups. The number of groups is specified in this variable. | 1 group |
+    | Compliance – Apps – Number Days Since Published | The Admin \| Compliance detail request flow sends an email to makers asking for business justification if their app has not been published in x number of days. The number of days is specified in this variable. | 60 days |
+    | Compliance – Apps – Number Launches Last 30 Days | The Admin \| Compliance detail request flow sends an email to makers asking for business justification if their app has been launched more than x number of times in the past 30 days. The number of app launches is specified in this variable. | 30 app launches |
+    | Compliance – Chatbots – Number Launches | The Admin \| Compliance detail request flow sends an email to makers asking for business justification if their chatbot has been launched more than x number of times in the past 30 days. The number of chatbot launches is specified in this variable. | 50 app launches |
+
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

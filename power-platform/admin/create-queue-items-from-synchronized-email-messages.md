@@ -1,7 +1,7 @@
 ---
 title: "Create queue items from synchronized email messages | MicrosoftDocs"
 description: Provides information about creating queue items from synchronized email messages.
-ms.date: 02/03/2021
+ms.date: 11/18/2021
 ms.service: power-platform
 ms.topic: "article"
 author: mduelae
@@ -21,7 +21,7 @@ search.app:
 There are several OrgDbOrgSetting options available to control how queue items are automatically created for synchronized email. If you are unfamiliar with OrgDbOrgSettings, see the [KB article](https://support.microsoft.com/topic/orgdborgsettings-tool-for-microsoft-dynamics-crm-20a10f46-2a24-a156-7144-365d49b842ba). Note that the following settings are applied to the entire organization.
 
 - **CreateQueueItemForSynchronizingMailbox**
-  - When enabled, the system will add the currently synchronizing queue mailbox to the list of queues for which to create a queue item. Consider enabling this option if queue mailboxes potentially receive or process email in which they are not in the recipient list, such as through distribution list memberships or as BCC recipients.  The default value is false.
+  - When enabled, the system will add the currently synchronizing queue mailbox to the list of queues for which to create a queue item. Consider enabling this option if queue mailboxes potentially receive or process email in which they are not in the recipient list, such as through distribution list memberships or as BCC recipients.  The default value is true.
 - **CreateQueueItemsForAcceptingQueueRecipients**
   - When enabled, the system will create a queue item for each resolved queue recipient during incoming email processing. If **AutoRouteToOwnerQueue** is enabled for the email table, the system additionally creates a queue item in the email owner’s default queue.  The default value is true.
 - **SSSCreateAdditionalQueueItemsForAlreadyTrackedEmail**

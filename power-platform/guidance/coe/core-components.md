@@ -20,13 +20,8 @@ search.app:
 
 # Use core components
 
-These components provide the core to get started with setting up a Center of Excellence (CoE). They sync all your resources into tables and build admin apps on top of that to help you get more visibility of the apps, flows, and makers in your environment. Additionally, apps like the Set App Permissions help with daily admin tasks. More information: [Set up core components](setup-core-components.md)
+These components provide the core to get started with setting up a Center of Excellence (CoE). They sync all your resources into tables and build admin apps on top of that to help you get more visibility of the apps, flows, and makers in your environment. Additionally, apps like the Set App Permissions help with daily admin tasks. The core components solution contains assets relevant only to admins. More information: [Set up core components](setup-core-components.md) and [Watch](https://www.youtube.com/embed/l0kJQAeKthw) how to use the core components solution.
 
-## Demo: Core components
-
-Watch how to use the core components solution.
-
-> [!VIDEO https://www.youtube.com/embed/l0kJQAeKthw]
 
 ## What's in the solution
 
@@ -259,7 +254,7 @@ Additional to the above listed inventory tables, the following helper tables sup
 - **Power Platform User SR**  Gives read-only access to the resources in the custom tables.
 
 > [!NOTE]
-> To easily explore and manage data stored in Dataverse, we recommend that you install the [Microsoft Power Apps Office Add-in](https://appsource.microsoft.com/product/office/WA104380330?tab=Overview). More information: [Working with data in Dataverse using the Excel Add-in!](https://powerapps.microsoft.com/blog/cds-for-apps-excel-importexport/)
+> To easily explore and manage data stored in Dataverse, install the [Microsoft Power Apps Office Add-in](https://appsource.microsoft.com/product/office/WA104380330?tab=Overview). More information: [Working with data in Dataverse using the Excel Add-in!](https://powerapps.microsoft.com/blog/cds-for-apps-excel-importexport/)
 
 ## Flows
 
@@ -270,13 +265,13 @@ Additional to the above listed inventory tables, the following helper tables sup
 | Admin \| Sync Template v3 (Apps) | Automated | triggered by Admin \| Sync Template v3 | This flow gets app information by using [Get Apps as Admin](/connectors/powerappsforadmins/#get-apps-as-admin). This information is then created or updated in the PowerApps App table. |
 | Admin \| Sync Template v3 (Connectors) | Scheduled | Daily | This flow gets connector information by using [Get Connectors](/connectors/powerappsforappmakers/#get-connectors), and stores information such as the connector name, publisher, and tier. |
 | Admin \| Sync Template v3 (Custom Connector) | Automated | triggered by Admin \| Sync Template v3 | This flow gets custom connector information by using [Get Custom Connectors as Admin](/connectors/powerappsforadmins/#get-custom-connectors-as-admin), and stores information such as the name, endpoint, and created by/on. |
-| Admin \| Sync Template v3 (Desktop Flow - Runs) | Scheduled | Daily | This flow gets desktop flow run history and session details. Turning on this flow is optional, and we recommended that you do so only if you're using desktop flows in your tenant and are interested in getting a tenant-wide overview. |
-| Admin \| Sync Template v3 (Desktop Flow) | Automated | triggered by Admin \| Sync Template v3 | This flow retrieves desktop flow information. This information is retrieved from underlying Dataverse tables and requires the user running the flow to have system administrator privileges in the environment. Turning on this flow is optional, and we recommend that you do so only if you're using desktop flows in your tenant and are interested in getting a tenant-wide overview. |
-| Admin \| Sync Template v3 (Flow Action Details) | Scheduled | Daily | This flow gets the actions and triggers for all flows. This flow uses [Get Flow as Admin](/connectors/flowmanagement/#get-flow-as-admin) to get action and trigger details for every individual flow in your tenant. Thus, it can be a very time-consuming and resource-consuming flow to run. Turning on this flow is optional, and we recommend that you do so only to perform action-level reporting or analysis, such as reporting on who's using the Send Email action of the Microsoft 365 Outlook connector. |
+| Admin \| Sync Template v3 (Desktop Flow - Runs) | Scheduled | Daily | This flow gets desktop flow run history and session details. Turning on this flow is optional, only turn this flow on if a tenant-level overview of desktop flows is important. |
+| Admin \| Sync Template v3 (Desktop Flow) | Automated | triggered by Admin \| Sync Template v3 | This flow retrieves desktop flow information. This information is retrieved from underlying Dataverse tables and requires the user running the flow to have system administrator privileges in the environment. Turning on this flow is optional, only turn this flow on if a tenant-level overview of desktop flows is important. |
+| Admin \| Sync Template v3 (Flow Action Details) | Scheduled | Daily | This flow gets the actions and triggers for all flows. This flow uses [Get Flow as Admin](/connectors/flowmanagement/#get-flow-as-admin) to get action and trigger details for every individual flow in your tenant. Thus, it can be a very time-consuming and resource-consuming flow to run. Turning on this flow is optional, only do so to perform action-level reporting or analysis, such as reporting on who's using the Send Email action of the Microsoft 365 Outlook connector. |
 | Admin \| Sync Template v3 (Flows) | Automated | triggered by Admin \| Sync Template v3 | This flow gets cloud flow information by using [List Flows as Admin](/connectors/flowmanagement/#list-flows-as-admin). Also updates the record if flows have been deleted. |
 | Admin \| Sync Template v3 (Model Driven Apps) | Automated | triggered by Admin \| Sync Template v3 | This flow gets model-driven app information. This information is retrieved from underlying Dataverse tables and requires the user running the flow to have system administrator privileges in the environment. |
-| Admin \| Sync Template v3 (Portals) | Automated | triggered by Admin \| Sync Template v3 | This flow retrieves Power Apps Portal information. This information is retrieved from underlying Dataverse tables and requires the user running the flow to have system administrator privileges in the environment. Turning on this flow is optional, and we recommend that you do so only if you're using portals in your tenant and are interested in getting a tenant-wide overview. |
-| Admin \| Sync Template v3 (PVA) | Automated | triggered by Admin \| Sync Template v3 | This flow retrieves Power Virtual Agents (bot) information. This information is retrieved from underlying Dataverse tables and requires the user running the flow to have system administrator privileges in the environment. Turning on this flow is optional, and we recommend that you do so only if you're using Power Virtual Agents in your tenant and are interested in getting a tenant-wide overview. |
+| Admin \| Sync Template v3 (Portals) | Automated | triggered by Admin \| Sync Template v3 | This flow retrieves Power Apps Portal information. This information is retrieved from underlying Dataverse tables and requires the user running the flow to have system administrator privileges in the environment. Turning on this flow is optional, only turn this flow if you're using portals in your tenant and are interested in getting a tenant-wide overview. |
+| Admin \| Sync Template v3 (PVA) | Automated | triggered by Admin \| Sync Template v3 | This flow retrieves Power Virtual Agents (bot) information. This information is retrieved from underlying Dataverse tables and requires the user running the flow to have system administrator privileges in the environment. Turning on this flow is optional, only turn this flow on if a tenant-level overview of chatbots is important. |
 | Admin \| Sync Template v3 (Sync Flow Errors) | Scheduled | Daily | This flow sends an email to the admin about environments that failed to sync (with a link to the flow instance). |
 | Admin \| Welcome Email v3 | Automated | when any sync flow adds a new maker to the Maker table | This flow sends an email to a user who created an app, flow, custom connector, or environment. This flow gets triggered when a new record is created in the maker table. You can customize the email sent out by the flow. |
 | CLEANUP - Admin \| Sync Template v3 (Check Deleted) | Scheduled | Every two weeks | This long running flow runs every other week, and compares CoE to the tenant to determine if any objects were deleted since last run. Either just marks them as deleted (if env var Also Delete from CoE = no) or deletes them from the CoE (if Also Delete from CoE = yes). The audit log solution is able to find this information in on a daily basis for apps and flows, but not for other resources such as environments, desktop flows and chatbots. Run this flow periodically to check for deleted resources. |
@@ -303,12 +298,18 @@ Additional to the above listed inventory tables, the following helper tables sup
 | HELPER - Maker Check | Child flow | from all Admin - Sync Template (v3) flows | this flow calls uses Office 365 Users and HTTP with Azure AD connectors to determine if the resource owner can be found in the tenant or if this resource is now orphaned, and updates the status in the Maker table. |
 | HELPER - Send Email | Child flow | from all flows that send emails | this flow consolidates the calls to send email into a single location and can be updated to different communication methods, such as sending adaptive cards in Teams. |
 | Admin \| Sync Template v3 Configure Emails | Instant | on setup or upgrade | this flow updates the Customized Email table with default values. |
+| Admin \| Compliance request complete apps v3 | Automated | This flow waits for the Business Process flow for App Compliance to be finished and updates the Admin Requirement - Risk Assessment State field of the PowerApps Apps table. |
+| Admin \| Compliance request complete bots | Automated | This flow waits for the Business Process flow for Bot Compliance to be finished and updates the Admin Requirement - Risk Assessment State field of the PVA table.|
+| Admin \| Compliance request complete custom connector v3 | Automated | This flow waits for the Business Process flow for Custom Connector Compliance to be finished and updates the Admin Requirement - Risk Assessment State field of the PowerApps Connectors table.|
+| Admin \| Compliance request complete flows v3 | Automated | This flow waits for the Business Process flow for Cloud flow Compliance to be finished and updates the Admin Requirement - Risk Assessment State field of the Flows table.|
+| Admin \| Compliance Teams Environment BPF kickoff v3 | Automated | This flow waits for Date Asked for Business Justification field in the Environment table to be updated and starts a new Microsoft Teams Environment Approval BPF. |
 
 ### Admin \| Compliance Detail request v3
 
 This flow works in conjunction with other apps and flows in the CoE Starter Kit to facilitate the process described in [App auditing process](example-processes.md). Compliance detail request emails are sent for apps and chatbots.
 
-This flow is in Core even though most of its functionality is in Governance in order to facilitate easier shipping for DfT. It should be left turned off until instructed to turn on in Gov setup.
+>[!NOTE]
+>This flow is part of the Core components solution however most of its functionality is implemented in the Governance components solution. This is in order to facilitate easier shipping for Dataverse for Teams. This flow, and its related flows (Admin | Compliance request complete apps/bots/custom connectors/flows) should be left turned off until instructed to turn when you setup the [Governance components](setup-governance-components.md).
 
 This flow sends an email to users who have apps in the tenant that aren't compliant with the following thresholds:
 
@@ -323,6 +324,8 @@ This flow sends an email to users who have chatbots in the tenant that aren't co
 - The chatbot has been launched more than 50 times, and no business justification details have been provided for it.
 
 - The chatbot has business justification details and an indication of high business impact, but no mitigation plan has been submitted to the attachments field.
+
+You can customize the criteria for when makers are asked to provide a business justification using [environment variables](setup-core-components.md#update-environment-variables). Default values are provided.
 
 You can customize the email sent out by the flow; by default, it will look like the following image.
 
