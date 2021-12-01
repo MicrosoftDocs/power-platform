@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/09/2021
+ms.date: 12/1/2021
 ms.subservice: admin
 ms.author: jimholtz 
 search.audienceType: 
@@ -93,6 +93,9 @@ You can leverage Azure Cost Management and alerting capabilities to manage spend
 
 ### Can I use the Power Platform request or Dataverse capacity add-ons in a pay-as-you-go environment?
 No, you can't use add-ons in a pay-as-you-go environment. Overages for both Dataverse and Power Platform requests will be charged via Azure subscription in a pay-as-you-go environment. 
+
+### What storage model does the Dataverse capacity meter use?
+All environments enabled for pay-as-you-go will use the [new Dataverse storage model](capacity-storage.md)  that has three separate categories of storage usage. If a tenant is still on the [legacy storage model](legacy-capacity-storage.md), the tenant’s storage model status will not change when an environment is enabled for pay-as-you-go.
 
 
 
