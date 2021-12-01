@@ -58,7 +58,7 @@ rename the output variable **Var** to **user_city**. Set the variable **Usage** 
 
 :::image type="content" source="media/Composer_Example1/E1_Dialog2.png" alt-text="Power Virtual Agents variable.":::
 
-Next, you will enhance the topic **Meal delivery options** to show the images of the meal choices available in your user’s city by extending your bot with Bot Framework Composer content. Go back to the **Topics** page and select **Open in Bot Framework Composer** and then the **+ New topic** dropdown menu to launch Bot Framework Composer.
+Next, you will enhance the topic **Meal delivery options** to show the images of the meal choices available in your user’s city by extending your bot with Bot Framework Composer content. Go back to the **Topics** page and select **Open in Bot Framework Composer** in the **+ New topic** dropdown menu to launch Bot Framework Composer.
 
 Your Power Virtual Agents bot will open in a Bot Framework Composer project. You will see the list of all Power Virtual Agents topics in your bot in Composer, but they are not editable. The **Recognizer Type** field is set to **Default Recognizer**, which is **Power Virtual Agents NLU**.
 
