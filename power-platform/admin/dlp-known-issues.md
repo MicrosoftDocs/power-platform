@@ -35,6 +35,7 @@ Below are known limitations to know about when leveraging our suite of data loss
 ## Connector endpoint filtering
 
 - Endpoint filtering enforcement on **environment variables** and **dynamically bound endpoints** during runtime is currently out of scope. Similarly, endpoints provided as a **custom input** in the flow are out of scope. Only static endpoints known and selected during design time are in scope. For example, if a custom connector definition includes the Route Request policy template to route the request to an alternate URL pattern, DLP policies aren't applied to routed URLs and can only classify the original host URL pattern of the custom connector. 
+- Endpoint filtering for SQL Server and Azure Blob Storage do not work if the actions are authenticated via Azure Active Directory.
 
 ## DLP support for custom connectors
 
