@@ -31,7 +31,7 @@ The start of any successful automation project is to ensure that the key stakeho
 
 In this stage, the CoE and business collaborate on what processes to automate based on the intended ROI, organize the development team, and set up the Power Automate environment.
 
-While automation enables organizations to become more efficient, the decision about which processes to automate is often a challenge. It’s impossible to automate every process, so COEs can use the Automation Project app in the Automation COE Starter Kit (preview) to manage the backlog and pick an automation project based on ROI.
+While automation enables organizations to become more efficient, the decision about which processes to automate is often a challenge. It’s impossible to automate every process, so CoEs can use the Automation Project app in the [Automation CoE Starter Kit (preview)](automation-coe-starter-kit.md) to manage the backlog and pick an automation project based on ROI.
 
 [Process Advisor](https://docs.microsoft.com/power-automate/process-advisor-overview) enables organizations to gain deep insight on a variety of tasks.
 
@@ -52,13 +52,13 @@ In the [Robotic process automation (RPA) with SAP series](https://docs.microsoft
 Power Automate provides a rich set of capabilities for admins and developers throughout the deployment cycle.
 Developers can set up CI/CD with test integration to deploy automation and prevent against accidental changes that would break the automation in production.
 
-Power Automate also helps users manage their automations, including detailed information about the success or failure of each individual run, as well as the ability to schedule, queue, and prioritize an automation.
+Power Automate also helps users manage their automations, including detailed information about the success or failure of each individual run, and the ability to schedule, queue, and prioritize an automation.
 
-All execution data is available in Dataverse, with included reports and views that visualize this data. Power Automate provides real-time information on individual bots and the machines/clusters these run on. This allows more detailed visibility into the full automation health, bot health, and infrastructure health.
+All execution data is available in Dataverse, with included reports and views that visualize this data. Power Automate provides real-time information on individual bots and the machines/clusters they run on, giving more detailed visibility into the full automation health, bot health, and infrastructure health.
 
 ## Secure & Govern
 
-In this stage, the Automation COE can leverage the built-in security controls in Power Automate and Azure to establish guard rails to scale RPA across their organization. They can leverage Azure Active Directory, a key foundation that allows admins to create and manage access controls on users and resources centrally. Power Automate provides rich governance and security controls to ensure you can run your business-critical processes in a trusted and compliant manner.
+In this stage, the Automation COE can use the built-in security controls in Power Automate and Azure to establish guard rails to scale RPA across their organization. They can leverage Azure Active Directory, a key foundation that allows admins to create and manage access controls on users and resources centrally. Power Automate provides rich governance and security controls to ensure you can run your business-critical processes in a trusted and compliant manner.
 
 The platform provides a rich set of audit logs that help admins keep track of what happened in the system. The deep integration of Power Platform with Azure and Microsoft 365 allows IT admins to define reactive and proactive policies and procedures to track automation activity.
 
@@ -66,7 +66,7 @@ The platform provides a rich set of audit logs that help admins keep track of wh
 
 An Automation CoE can create a community of champions, train them, run events, and evangelize success stories. Power Automate provides a rich set of [learning resources](https://powerapps.microsoft.com/blog/microsoft-powerapps-learning-resources/) (documentation, videos, tutorials, labs, courses, certifications, whitepapers, etc.).
 
-## Additional resources
+## More resources
 
 - [HEAT blog post](<https://aka.ms/rpapnp>)
 - [HEAT video series](<https://aka.ms/rpapnpvideo>)
