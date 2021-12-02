@@ -25,10 +25,10 @@ These adoption best practices from Microsoft employees, partners, and customers 
 
 Read the following sections to learn more about how roll out the Microsoft automation platform at enterprise scale.
 
-- [Strategy](strategy.md) – Define the role of an Automation CoE and the business outcome
-- [Holistic Enterprise Automation Techniques (HEAT)](heat.md) – Best practices for deploying an automation platform and managing and the end-to-end lifecycle of automation projects.
-- [Whitepaper: Automation administration and governance](automation-admin-gov.md) – Technical whitepaper that shows how to use the principles of HEAT for planning, deploying, and managing an Automation Center of Excellence (CoE) for robotic process automation (RPA) and other hyperautomation scenarios using Microsoft Power Automate.
-- [Whitepaper: Manage Power Automate for Desktop on Windows](manage-pad-on-windows.md) – Manage the lifecycle of Power Automate for desktop, using Microsoft Endpoint Manager tools such as Intune, SCCM, and ring deployment techniques to deploy, monitor, and audit Power Automate for desktop.
-- [Automation CoE Starter Kit (Preview)](automation-coe-starter-kit.md) – Tools to help you automate, manage, govern, and drive adoption of the automation platform.
+- [Strategy](strategy.md) – The role of an Automation CoE in your adoption strategy
+- [Holistic Enterprise Automation Techniques (HEAT)](heat.md) – Best practices for deploying an automation platform and managing and the end-to-end lifecycle of automation projects
+- [Whitepaper: Automation administration and governance](automation-admin-gov.md) – Technical whitepaper that shows how to use the principles of HEAT for planning, deploying, and managing an Automation Center of Excellence (CoE) for robotic process automation (RPA) and other hyperautomation scenarios using Microsoft Power Automate
+- [Whitepaper: Manage Power Automate for Desktop on Windows](manage-pad-on-windows.md) – Manage the lifecycle of Power Automate for desktop, using Microsoft Endpoint Manager tools such as Intune, SCCM, and ring deployment techniques to deploy, monitor, and audit Power Automate for desktop
+- [Automation CoE Starter Kit (Preview)](automation-coe-starter-kit.md) – Tools to help you automate, manage, govern, and drive adoption of the automation platform
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

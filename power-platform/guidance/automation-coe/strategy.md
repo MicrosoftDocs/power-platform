@@ -15,11 +15,15 @@ search.app:
   - Flow
   - Powerplatform
 ---
-# Strategy
+# Automation adoption strategy
 
 Power Automate includes powerful workflow automation directly in your apps with a no-code approach that connects to hundreds of popular apps and services. It covers the full range of hyperautomation scenarios, which includes automating using APIs, UI, and AI. The cloud-first robotic process automation (RPA) platform delivers fundamental technology benefits that can help your enterprise execute multiple business strategies.
 
-As you scale adoption of the platform, you will need to ensure your system is managed and governed according to your organization’s strategic priorities. This is where the Automation CoE comes in. The Automation CoE ensures that the organization can realize its automation and productivity objectives safely and efficiently. It does this by employing:
+As you scale adoption of the platform, you will need to ensure your system is managed and governed according to your organization’s strategic priorities. This is where the Automation CoE comes in.
+
+## Automation Center of Excellence (CoE)
+
+The Automation CoE ensures that the organization can realize its automation and productivity objectives safely and efficiently. It does this by employing:
 
 - **Governance: Security, data integrity, auditing** – Ensures that only the right people have the access to specific data that's governed in a very specific way to avoid any risk to the organization itself
 - **Repeatable patterns and templates: Error handling, instrumentation, components** – Avoids duplication and rework and enables everyone to get the benefits of automation with the least effort
@@ -34,6 +38,10 @@ Some of common stakeholders and their roles and responsibilities within the auto
 - **Citizen developers**: Business users, citizen developers, process owners, and pro-developers who can propose new project ideas, develop and deploy projects into production
 
 ![Diagram of CoE stakeholders and their responsibilities](./media/automation-coe-stakeholders.jpg)
+
+## Getting started with your Automation CoE
+
+To get started, we recommend that you [learn about the HEAT techniques](heat.md) and [how they can be applied for automation administration and governance](automation-admin-gov.md), and that you install the [Automation CoE Starter Kit (Preview)](automation-coe-starter-kit).
 
 ## Additional strategy resources
 

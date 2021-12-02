@@ -25,15 +25,15 @@ We have recorded [a special series on our video channel “Automate It”](https
 
 Begin with this video: ["Introducing HEAT"](https://youtu.be/OmQpIjC2Vlc)
 
-![A slide from the video "Introduce HEAT" showing an overview of the stages of HEAT](./media/heat-overview-large.png)
+:::image type="content" source="media/heat-overview-large.png" alt-text="A slide from the video "Introduce HEAT" showing an overview of the stages of HEAT" link="https://youtu.be/OmQpIjC2Vlc":::
 
 ## Empower
 
 The start of any successful automation project it to ensure that the key stakeholders understand the automation capabilities of the platform. In this stage, users new to Power Automate can learn about the automation capabilities in Power Automate.
 
-Watch the video: ["Power Automate & Power Platform"](https://youtu.be/OmQpIjC2Vlc?t=345)
+Watch the video: ["Power Automate & Power Platform"](https://youtu.be/OmQpIjC2Vlc?t=410)
 
-![A slide from the video "Power Automate & Power Platform" showing an infographic about the Microsoft Azure and Power Platform apps and services for developers](./media/heat-overview-large.png)
+:::image type="content" source="media/pp-overview-large.jpg" alt-text="A slide from the video Power Automate & Power Platform showing an infographic about the Microsoft Azure and Power Platform apps and services for developer" link="https://youtu.be/OmQpIjC2Vlc?t=410":::
 
 Here are some resources for getting started with RPA in Power Automate.
 
@@ -52,7 +52,7 @@ Power Automate provides environments of different types (production, sandbox, tr
 
 Watch the video: ["Empower, Discover & Plan"](https://www.youtube.com/watch?v=94Lq15PNDDg&amp;list=PLi9EhCY4z99UlSA7ykeZtSLraL8qlhFeq&amp;index=13)
 
-![Screenshot of M365 Admin Center, showing Active Groups area](./media/m365admin-large.png)
+:::image type="content" source="media/m365admin-large.png" alt-text="Slide from Empower, Discover, and Plan video showing a screenshot of M365 Admin Center, showing Active Groups area" link="https://www.youtube.com/watch?v=94Lq15PNDDg&amp;list=PLi9EhCY4z99UlSA7ykeZtSLraL8qlhFeq&amp;index=13":::
 
 Resources for ROI, process discovery and setting up Power Automate environment:
 
@@ -70,7 +70,7 @@ Building robust automation solutions require well-defined design principles that
 
 Watch the video: ["Design Phase"](href="https://www.youtube.com/watch?v=ur1-y0lrexU&amp;list=PLi9EhCY4z99UlSA7ykeZtSLraL8qlhFeq&amp;index=14)
 
-![Slide from the Design Phase video, showing Core Design Principles of Intuitive User Experience, Intelligent Process Automation, and Accessible to Everybody](./media/rpadesign.png)
+:::image type="content" source="media/rpadesign.png" alt-text="Slide from the Design Phase video, showing Core Design Principles of Intuitive User Experience, Intelligent Process Automation, and Accessible to Everybody" link="href="https://www.youtube.com/watch?v=ur1-y0lrexU&amp;list=PLi9EhCY4z99UlSA7ykeZtSLraL8qlhFeq&amp;index=14":::
 
 Some other design principles (not a comprehensive list) to consider are:
 
@@ -85,7 +85,7 @@ Building is the heart of the automation lifecycle.
 
 Watch the video: ["Build & Test"](href="https://www.youtube.com/watch?v=qvzBNfnjbpA&amp;list=PLi9EhCY4z99UlSA7ykeZtSLraL8qlhFeq&amp;index=15)
 
-![Slide from the Build & Test video, showing a desktop flow being built in Power Automate for desktop](./media/pad-implement-large.png)
+:::image type="content" source="media/pad-implement-large.png" alt-text="Slide from the Build & Test video, showing a desktop flow being built in Power Automate for desktop" link="https://www.youtube.com/watch?v=qvzBNfnjbpA&amp;list=PLi9EhCY4z99UlSA7ykeZtSLraL8qlhFeq&amp;index=15":::
 
 Some key concepts covered in this video are:
 
@@ -103,7 +103,7 @@ Some key concepts covered in this video are:
 
 In the [Robotic process automation (RPA) with SAP series](/power-automate/guidance/rpa-sap-playbook/introduction), we build an enterprise grade Invoice Processing automation solution. This intelligent automation solution processes invoices in SAP and showcases some of the key enterprise concerns around logging, auditing, tracking each invoice processing, human in the loop, ROI calculation, and more.
 
-![Slide from the Robotic process automation (RPA) with SAP video series, showing a flowchart for processing an invoice](./media/invoice-processing-large.png)
+:::image type="content" source="media/invoice-processing-large.png" alt-text="Slide from the Robotic process automation (RPA) with SAP video series, showing a flowchart for processing an invoice" link="https://docs.microsoft.com/power-automate/guidance/rpa-sap-playbook/introduction":::
 
 ## Deploy, Monitor & Manage
 
@@ -115,7 +115,7 @@ Power Automate also helps users manage their automations. All execution data is 
 
 Watch the video: ["Deploy & Manage"](https://www.youtube.com/watch?v=VukO0gHj7YU&amp;list=PLi9EhCY4z99UlSA7ykeZtSLraL8qlhFeq&amp;index=16)
 
-![Slide from the Deploy & Manage video , showing a screenshot of the "Desktop flow runs" screen](./media/livemonitor-large.png)
+:::image type="content" source="media/livemonitor-large.png" alt-text="Slide from the Deploy & Manage video , showing a screenshot of the "Desktop flow runs" screen" link="https://www.youtube.com/watch?v=VukO0gHj7YU&amp;list=PLi9EhCY4z99UlSA7ykeZtSLraL8qlhFeq&amp;index=16":::
 
 Some resources for deploying, monitoring, and managing automations:
 
@@ -138,7 +138,7 @@ COEs should establish their strategy to nurture and upskill their employees. The
 
 Watch the video: ["Secure, Govern & Nurture"](https://www.youtube.com/watch?v=5_3s8floInk&amp;list=PLi9EhCY4z99UlSA7ykeZtSLraL8qlhFeq&amp;index=17)
 
-![A slide from the Secure, Govern, & Nurture video showing an infographic](./media/coe-large.png)
+:::image type="content" source="media/coe-large.png" alt-text="A slide from the Secure, Govern, & Nurture video showing an infographic" link="https://www.youtube.com/watch?v=5_3s8floInk&amp;list=PLi9EhCY4z99UlSA7ykeZtSLraL8qlhFeq&amp;index=17":::
 
 Some helpful resources for security, governance, and adoption nurturing:
 
