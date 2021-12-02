@@ -146,7 +146,7 @@ ${user.name} - thanks for starting a ${user.weeks} week trial with us! Your meal
 
 :::image type="content" source="media/Composer_Example4/E4_formSubmit_confirm.png" alt-text="Composer - add form submission confirmation.":::
 
-Use the **Begin a PVA Topic** action to call the Power Virtual Agents bot's **End of Conversation** topic to ask the user to rate their experience with the bot:
+Use the **Begin a Power Virtual Agents Topic** action to call the Power Virtual Agents bot's **End of Conversation** topic to ask the user to rate their experience with the bot:
 
 :::image type="content" source="media/Composer_Example4/E4_call_PVA_End_of_Conversation.png" alt-text="Composer - call Power Virtual Agents topic.":::
 
