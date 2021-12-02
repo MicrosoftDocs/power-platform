@@ -44,8 +44,8 @@ Open the Power Virtual Agents bot used in [Example 1](advanced-bot-framework-com
 
 While on the **Create** tab in Composer add another Bot Framework dialog. Name your new dialog **DailySpecials** in Composer.
 
-In your new **DailySpecials** dialog in Composer, go to **Manage properties** and select **Set a property** to create a new Composer property in the dialog.
-Give this property the following name in the **Set a property** panel on the right:
+In your new **DailySpecials** dialog in Composer select the **BeginDialog** trigger to open the **Authoring canvas**. Go to **Manage properties** and select **Set a property** to create a new Composer property in the dialog.
+Set the **Property** field to the following in the **Set a property** panel on the right:
 
 ```JSON
 conversation.days_array
