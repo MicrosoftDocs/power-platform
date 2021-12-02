@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/29/2021
+ms.date: 12/02/2021
 ms.subservice: admin
 ms.author: jimholtz 
 search.audienceType: 
@@ -50,16 +50,30 @@ The following table describes the permissions of who can create a [billing polic
 
    2. Enter the following command in the Azure Cloud Shell to register the Power Platform resource provider. (Remove the { } in the subscriptionId parameter):
 
-      ```PowerShell
+      ```Azure Cloud Shell
       az provider register -n Microsoft.PowerPlatform --subscription {subscriptionId}
       ```
 
        The above command will run asynchronously and may take a few minutes to complete. You can check whether the command has completed by running:
 
-      ```PowerShell
+      ```Azure Cloud Shell
       az provider show -n Microsoft.PowerPlatform --subscription {subscriptionId}
       ```
-      
+  
+      Alternatively, in PowerShell you can use the following commands to register the resource provider:
+
+      ```PowerShell
+      Select-AzSubscription <Subscription ID>
+      Register-AzResourceProvider -ProviderNamespace Microsoft.PowerPlatform
+
+      ```
+
+       The above command will run asynchronously and may take a few minutes to complete. You can check whether the command has completed by running:
+
+      ```PowerShell
+      Get-AzResourceProvider -ProviderNamespace Microsoft.PowerPlatform
+      ```
+    
 Your Azure subscription is now set up to use Power Platform pay-as-you-go.
 
 ## Link an Azure subscription to an environment 
