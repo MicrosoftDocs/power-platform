@@ -25,7 +25,7 @@ We have recorded [a special series on our video channel “Automate It”](https
 
 Begin with this video: ["Introducing HEAT"](https://youtu.be/OmQpIjC2Vlc)
 
-:::image type="content" source="media/heat-overview-large.png" alt-text="A slide from the video "Introduce HEAT" showing an overview of the stages of HEAT" link="https://youtu.be/OmQpIjC2Vlc":::
+:::image type="content" source="media/heat-overview-large.png" alt-text="A slide from the video Introduce HEAT showing an overview of the stages of HEAT" link="https://youtu.be/OmQpIjC2Vlc":::
 
 ## Empower
 
@@ -115,7 +115,7 @@ Power Automate also helps users manage their automations. All execution data is 
 
 Watch the video: ["Deploy & Manage"](https://youtu.be/VukO0gHj7YU)
 
-:::image type="content" source="media/livemonitor-large.png" alt-text="Slide from the Deploy & Manage video , showing a screenshot of the "Desktop flow runs" screen" link="https://youtu.be/VukO0gHj7YU":::
+:::image type="content" source="media/livemonitor-large.png" alt-text="Slide from the Deploy & Manage video, showing a screenshot of the Desktop flow runs screen" link="https://youtu.be/VukO0gHj7YU":::
 
 Some resources for deploying, monitoring, and managing automations:
 
