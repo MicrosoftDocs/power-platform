@@ -101,7 +101,7 @@ Enter the following for the **Text** prompt:
 
 :::image type="content" source="media/Composer_Example2/E2_DailySpecials_prompt.png" alt-text="Composer Create tab - add bot response.":::
 
-Select the **User Input (Choice)** action. In the **Prompt with multi-choice** panel, under **User Input**, set **Property** to **conversation.day_choice**. 
+Select the **User Input (Choice)** action. In the **Prompt with multi-choice** panel, under **User Input**, set **Property** to `conversation.day_choice`. 
 
 Set **Output format** to **index** to return the index of the selected option instead of a value.
 
@@ -109,13 +109,13 @@ Set **Output format** to **index** to return the index of the selected option in
 
 Next, scroll down the **Prompt with multi-choice** panel and set **List style** to **heroCard** to display our options list vertically. 
 
-Select **Write an expression** for the **Array of choices** field and set it to use the **conversation.days_array** property we created.
+Select **Write an expression** for the **Array of choices** field and set it to use the `conversation.days_array` property we created.
 
 :::image type="content" source="media/Composer_Example2/E2_DailySpecials_array_multi_option.png" alt-text="Composer Create tab - set up array of choices.":::
 
-You have created a multi-choice option list that is based on **conversation.days_array** and stores the user selection into the **conversation.day_choice** property.
+You have created a multi-choice option list that is based on `conversation.days_array` and stores the user selection into the `conversation.day_choice` property.
 
-You can use this **conversation.day_choice** property to display the daily special for the selected day. 
+You can use this `conversation.day_choice` property to display the daily special for the selected day. 
 
 Select **Show code** and add a **Send a response** action to your **DailySpecials** dialog under the **User Input** action. Add the following expression in the **Bot response** panel on the side:
 
