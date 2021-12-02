@@ -88,7 +88,7 @@ Next, go to the **Bot Responses** tab in Composer and select **DailySpecials**. 
     - Holiday special - free delivery anywhere in Seattle, Bellevue and Redmond on orders over $70 today!
     - Holiday Delivery is on us if you are in Seattle, Bellevue and Redmond and your order is over $70 total!
 ```
-:::image type="content" source="media/Composer_Example2/E2_DailySpecials_BotResponse.png" alt-text="Composer Bot Responses tab - Language Generation code.":::
+:::image type="content" source="media/Composer_Example2/E2_DailySpecials_BotResponse.png" alt-text="Composer Bot Responses tab - bot responses code.":::
 
 Go back to the **Create** tab in Composer and select **BeginDialog** under **DailySecials**. 
 
@@ -99,7 +99,7 @@ Add a new prompt for user input to this dialog by selecting **Multi-choice** und
 Enter the following for the **Text** prompt:
 `Please select a day:`
 
-:::image type="content" source="media/Composer_Example2/E2_DailySpecials_prompt.png" alt-text="Composer Create tab - add prompt language generation.":::
+:::image type="content" source="media/Composer_Example2/E2_DailySpecials_prompt.png" alt-text="Composer Create tab - add bot response.":::
 
 Select the **User Input (Choice)** action. In the **Prompt with multi-choice** panel, under **User Input**, set **Property** to **conversation.day_choice**. 
 
@@ -117,7 +117,7 @@ You have created a multi-choice option list that is based on **conversation.days
 
 You can use this **conversation.day_choice** property to display the daily special for the selected day. 
 
-Select **Show code** and add a **Send a response** action to your **DailySpecials** dialog under the **User Input** action. Add the following expression in the **Language Generation** panel on the side:
+Select **Show code** and add a **Send a response** action to your **DailySpecials** dialog under the **User Input** action. Add the following expression in the **Bot response** panel on the side:
 
 ```JSON
 - ${DailySpecials(conversation.day_choice)}
