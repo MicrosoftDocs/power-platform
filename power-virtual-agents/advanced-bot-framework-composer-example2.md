@@ -117,7 +117,7 @@ You have created a multi-choice option list that is based on `conversation.days_
 
 You can use this `conversation.day_choice` property to display the daily special for the selected day. 
 
-Select **Show code** and add a **Send a response** action to your **DailySpecials** dialog under the **User Input** action. Add the following expression in the **Bot response** panel on the side:
+Add a **Send a response** action to your **DailySpecials** dialog under the **User Input** action. In the **Bot response** panel on the side select **Show code** and add the following expression:
 
 ```JSON
 - ${DailySpecials(conversation.day_choice)}
