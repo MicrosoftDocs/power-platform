@@ -40,7 +40,7 @@ Here are some resources for getting started with RPA in Power Automate.
 - [Power Automate product information overview](https://flow.microsoft.com/)
 - Learn RPA in a day: [Video overview](https://www.youtube.com/watch?v=7LhJ36ioeyY&amp;list=PLi9EhCY4z99UlSA7ykeZtSLraL8qlhFeq&amp;index=9) | [Download materials](https://aka.ms/rpainadaypackage)
 - Automate It video series: [Where to use RPA](https://www.youtube.com/watch?v=QybEIbqZVQg)
-- Microsoft Learn: [Step-by-step modules about Power Automate on desktop](https://docs.microsoft.com/learn/browse/?expanded=power-platform&amp;products=power-automate&amp;terms=%22power%20automate%20desktop%22)
+- Microsoft Learn: [Step-by-step modules about Power Automate on desktop](/learn/browse/?expanded=power-platform&amp;products=power-automate&amp;terms=%22power%20automate%20desktop%22)
 
 ## Discover & Plan
 
@@ -58,8 +58,8 @@ Resources for ROI, process discovery and setting up Power Automate environment:
 
 - Discover which process to automate using [Process Advisor](https://flow.microsoft.com/process-advisor/)
 - Use the [Automation Project app](automation-coe-starter-kit.md) for curating and managing ideas
-- [Power Automate for desktop](https://docs.microsoft.com/power-automate/desktop-flows/introduction)
-- [Power Automate IP address configuration](https://docs.microsoft.com/power-automate/limits-and-config)
+- [Power Automate for desktop](/power-automate/desktop-flows/introduction)
+- [Power Automate IP address configuration](/power-automate/limits-and-config)
 - [Service administrator roles (Microsoft 365 Global / Power Platform/ Dynamics 365/ Azure/ Power BI admin)](/power-platform/admin/use-service-admin-role-manage-tenant)
 - [Assign Power Automate RPA attended user plan through Microsoft 365 admin center](/power-automate/organization-q-and-a#power-automate-rpa-license)
 - [Manage unattended RPA add-on capacity](/power-platform/admin/capacity-add-on) in [Power Platform admin center](https://aka.ms/ppac)
@@ -103,7 +103,7 @@ Some key concepts covered in this video are:
 
 In the [Robotic process automation (RPA) with SAP series](/power-automate/guidance/rpa-sap-playbook/introduction), we build an enterprise grade Invoice Processing automation solution. This intelligent automation solution processes invoices in SAP and showcases some of the key enterprise concerns around logging, auditing, tracking each invoice processing, human in the loop, ROI calculation, and more.
 
-:::image type="content" source="media/invoice-processing-large.png" alt-text="Slide from the Robotic process automation (RPA) with SAP video series, showing a flowchart for processing an invoice" link="https://docs.microsoft.com/power-automate/guidance/rpa-sap-playbook/introduction":::
+:::image type="content" source="media/invoice-processing-large.png" alt-text="Slide from the Robotic process automation (RPA) with SAP video series, showing a flowchart for processing an invoice" link="/power-automate/guidance/rpa-sap-playbook/introduction":::
 
 ## Deploy, Monitor & Manage
 
