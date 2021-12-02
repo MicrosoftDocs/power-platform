@@ -1,7 +1,7 @@
 - name: Power Platform guidance
   href: index.yml
   items: 
-  - name: Adoption best practices
+  - name: Power Platform Adoption best practices
     href: adoption/methodology.md
     items: 
     - name: Strategy and vision
@@ -81,7 +81,7 @@
             href: adoption/in-a-day.md
           - name: Solution envisioning workshops
             href: adoption/solution-envisioning.md  
-  - name: Center of Excellence (CoE) Kit
+  - name: Power Platform Center of Excellence (CoE) Kit
     href: coe/starter-kit.md
     items: 
     - name: Overview
@@ -154,6 +154,20 @@
       href: coe/release-notes.md
     - name: Feedback and support
       href: coe/feedback-support.md
+  - name: Automation adoption best practices
+    items:
+    - name: Overview
+      href: automation-coe/overview.md
+    - name: Strategy
+      href: automation-coe/strategy.md
+    - name: Holistic Enterprise Automation Techniques
+      href: automation-coe/heat.md
+    - name: Automation admin and governance
+      href: automation-coe/automation-admin-gov.md
+    - name: Automation CoE Starter Kit
+      href: automation-coe/automation-coe-starter-kit.md
+    - name: Manage Power Automate for desktop on Windows
+      href: automation-coe/manage-pad-on-windows.md      
   - name: Real-world architecture examples
     items: 
     - name: Overview
@@ -172,7 +186,7 @@
       href: architecture/real-world-examples/sql-gateway-canvas.md
     - name: Using Power Apps component framework with canvas apps
       href: architecture/real-world-examples/pcf-canvas-components.md
-  - name: Use ExpressRoute
+  - name: ExpressRoute and Power Platform
     items: 
     - name: Overview     
       href: expressroute/overview.md

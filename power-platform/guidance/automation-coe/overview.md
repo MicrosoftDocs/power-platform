@@ -1,6 +1,6 @@
 ---
-title: "Automation Center of Excellence overview  | Microsoft Docs"
-description: Microsoft Power Platform adoption best practices for Automation CoEs provides proven guidance for establishing and scaling an Automation Center of Excellence in your organization. 
+title: "Automation adoption best practices overview  | Microsoft Docs"
+description: Automation adoption best practices provides proven guidance for establishing and scaling an Automation Center of Excellence in your organization. 
 author: kathyos
 ms.service: power-platform
 ms.component: pa-admin
