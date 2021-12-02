@@ -159,6 +159,13 @@
           href: coe/almaccelerator-components.md
         - name: Use the ALM Accelerator for Power Platform
           href: coe/almacceleratorpowerplatform-components.md
+          items:
+          - name: Advanced Maker Experience     
+            href: coe/almacceleratorpowerplatform-advancedmaker.md
+          - name: New Maker Experience
+            href: coe/almacceleratorpowerplatform-newmaker.md
+          - name: Administrator Experience
+            href: coe/setup-almacceleratorpowerplatform-deployment-profiles.md
         - name: Environment management
           href: coe/env-mgmt.md
     - name: Limitations
