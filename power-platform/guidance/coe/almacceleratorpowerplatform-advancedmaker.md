@@ -1,6 +1,6 @@
 ---
 title: "ALM Accelerator for Power Platform Advanced Maker Experience | MicrosoftDocs"
-description: "The ALM Accelerator for Power Platform will help you follow ALM patterns and practices. It enables you to source control your solutions and move them from your development environment to test and production environments using Azure DevOps"
+description: "The ALM Accelerator for Power Platform Advanced Maker Experience will help you follow ALM patterns and practices. It enables you to source control your solutions and move them from your development environment to test and production environments using Azure DevOps"
 author: alvarezskinner
 manager: devkeydet
 ms.service: power-platform
@@ -35,7 +35,7 @@ Watch how to use the ALM Accelerator for Power Platform solution
 
 1. When prompted with the following screen enter 'https://graph.microsoft.com' for both the **Base Resource URL** and **Azure AD Resource URI**
 
-      ![image-20211201183325356](media/almacceleratorpowerplatform-advancedmaker/image-20211201183325356.png)
+      ![HTTP with Azure AD configuration](media/almacceleratorpowerplatform-advancedmaker/image-20211201183325356.png "HTTP with Azure AD configuration")
 
 1. The first time you open the app you will be asked to select an environment. Next time you open the app, it will remember which environment you were working on.
 
