@@ -38,8 +38,6 @@ About **system backups**:
 - When an environment is restored onto itself, audit logs aren't deleted. For example, when an environment is restored onto itself to a past time t1, full audit data for the environment will be available, including any audit logs that were generated after t1.
 - The target environment will be listed in the **Select environment to overwrite** drop-down. If you do not see an environment, note that the target environment must be in the same geo (geographical region) as the source environment. 
 
-  :::image type="content" source="media/copy-environment-no-target.png" alt-text="No target for copying environment."::: 
-
   
 ### Restore a system backup  
   
