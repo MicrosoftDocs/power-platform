@@ -130,11 +130,11 @@ Switch to **Show code** view and add the following to the code window:
 
 :::image type="content" source="media/Composer_Example4/e4_call_starttrialform_activity.png" alt-text="Composer - call StartTrialForm activity.":::
 
-Select the **User Input** node and save user input data. Set **Property** to **user.name** and set **Value** to **=turn.activity.value.Name** to extract and save the value of the from field **Name** from our Adaptive card **StartTrialForm** into **user.name**.
+Select the **User Input** node and goto the **User Input** tab. Set **Property** to `user.name` and set **Value** to `=turn.activity.value.Name` to extract and save the value of the from field **Name** from our Adaptive card **StartTrialForm** into `user.name`.
 
 :::image type="content" source="media/Composer_Example4/E4_saveUserInput.png" alt-text="Composer - save user input.":::
 
-Your Adaptive card **StartTrialForm** has two more fields, **Address** and **Weeks**. Use the **Set properties** action to extract them from **turn.activity.value** and save them to **user.address** and **user.weeks**:
+Your Adaptive card **StartTrialForm** has two more fields, **Address** and **Weeks**. Use the **Set properties** action to extract them from `turn.activity.value` and save them to `user.address` and `user.weeks`:
 
 :::image type="content" source="media/Composer_Example4/E4_setProperties.png" alt-text="Composer - set properties.":::
 
