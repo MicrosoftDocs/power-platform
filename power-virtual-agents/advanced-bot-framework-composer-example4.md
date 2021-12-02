@@ -111,7 +111,7 @@ Next, add the following Activity below the Adaptive Card JSON:
 
 
 ````JSON
- # AdaptiveCard_StartTrialForm()
+# AdaptiveCard_StartTrialForm()
 [Activity
     Attachments = ${json(adaptivecardjson_StartTrialForm())}
 ]
