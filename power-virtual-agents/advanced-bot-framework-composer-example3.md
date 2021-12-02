@@ -2,7 +2,7 @@
 title: "Use Bot Framework Composer to use Bing search in chatbots"
 description: "Use Bot Framework Composer to fall back to Bing search in your Power Virtual Agents chatbot."
 keywords: "composer, adaptive card"
-ms.date: 5/24/2021
+ms.date: 12/02/2021
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
