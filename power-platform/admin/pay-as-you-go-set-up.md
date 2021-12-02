@@ -56,7 +56,7 @@ The following table describes the permissions of who can create a [billing polic
 
        The above command will run asynchronously and may take a few minutes to complete. You can check whether the command has completed by running:
 
-      ```Azure CLI
+      ```azurecli
       az provider show -n Microsoft.PowerPlatform --subscription {subscriptionId}
       ```
   
@@ -70,7 +70,7 @@ The following table describes the permissions of who can create a [billing polic
 
        The above command will run asynchronously and may take a few minutes to complete. You can check whether the command has completed by running:
 
-      ```PowerShell
+      ```powershell
       Get-AzResourceProvider -ProviderNamespace Microsoft.PowerPlatform
       ```
     
