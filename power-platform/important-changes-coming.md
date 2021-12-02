@@ -25,7 +25,7 @@ Admins and IT professionals can use this information to prepare for future relea
 
 ## Data Export Service deprecation
 
-In November 2021, deprecation of the Data Export Service was announced. The Data Export Service will continue to work and will be fully supported until it reaches end-of-support and end-of-life a year from this announcement date, in November 2022. This will impact Dynamics 365 and Power Platform customers who use the Data Export Service add-on from Microsoft AppSource. We recommend that customers transition to [Azure Synapse Link for Dataverse](/powerapps/maker/data-platform/export-to-data-lake). For more information, see our [blog](https://powerapps.microsoft.com/blog/do-more-with-data-from-data-export-service-to-azure-synapse-link-for-dataverse/) or download [the deprecation playbook](https://aka.ms/DESDeprecationPlaybook).
+Effective November 2021, Data Export Service was deprecated. The Data Export Service will continue to work and will be fully supported until it reaches end-of-support and end-of-life in November 2022. This will impact Dynamics 365 and Power Platform customers who use Data Export Service add-on from Microsoft AppSource. We recommend that customers transition to [Azure Synapse Link for Dataverse](/powerapps/maker/data-platform/export-to-data-lake). For more information, see our [blog](https://powerapps.microsoft.com/blog/do-more-with-data-from-data-export-service-to-azure-synapse-link-for-dataverse/) or download [the deprecation playbook](https://aka.ms/DESDeprecationPlaybook).
 
 ## Dataverse OData v2.0 Service removal
 
