@@ -50,13 +50,13 @@ The following table describes the permissions of who can create a [billing polic
 
    2. Enter the following command in the Azure Cloud Shell to register the Power Platform resource provider. (Remove the { } in the subscriptionId parameter):
 
-      ```Azure Cloud Shell
+      ```AzureCLI
       az provider register -n Microsoft.PowerPlatform --subscription {subscriptionId}
       ```
 
        The above command will run asynchronously and may take a few minutes to complete. You can check whether the command has completed by running:
 
-      ```Azure Cloud Shell
+      ```AzureCLI
       az provider show -n Microsoft.PowerPlatform --subscription {subscriptionId}
       ```
   
