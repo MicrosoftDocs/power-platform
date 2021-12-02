@@ -2,7 +2,7 @@
 title: "Migrate an environment to a different tenant"
 description: "Learn about the impact of moving an environment from one tenant to another. Review the prerequisites and considerations before submitting a request." 
 ms.custom: ""
-ms.date: 11/29/2021
+ms.date: 12/01/2021
 ms.service: power-platform
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -47,6 +47,7 @@ There are no user-interface changes or version changes as part of this move. You
 | Supported | Not fully supported<sup>*</sup> |
 |-------------------------|-------------------------|
 | <ul></br><li>Dataverse</li></br><li>Dynamics apps</li></br></ul> | <ul></br><li>Power Apps</li></br><li>Power Automate</li></br><li>Power Virtual Agent</li></br></ul> |
+
 <sup>*</sup>There could be potential data loss during migration.
 
 ### Supported environment types
@@ -135,7 +136,7 @@ For full access users:
 5. Select **Add Columns** > **Windows Live ID**.
 6. Select **OK** > **Results** to see the list of full access users.
 7. Select all the records, select **Export Users** in the ribbon, and then choose **Static Worksheet (Page only)**.
-8. Do Steps 1-7 above for the destination environment. You should now have two separate Excel sheets - one for source, one for target.
+8. Do steps 1-7 above for the destination environment. You should now have two separate Excel sheets - one for source, one for target.
 9. Open the files for editing.
 10.	Starting with the source Excel sheet, copy the records under the **Windows Live ID** column into Notepad. Do not copy the header.
 11.	Save the Notepad file.
@@ -143,7 +144,7 @@ For full access users:
 
     Example: <br />
     user001@source.com,user001@destination.com<br />
-    user002@source.com,user002@destination.com
+    user002@source.com,user002@destination.com<br />
     user003@source.com,user003@destination.com
 
 13.	Save the file as a CSV.
@@ -227,7 +228,7 @@ You’ll be provided with a list of pre and post requisites for your migration a
 
 | |Before the move<br/>Notification   |During the move<br/>Cut-over  |After the move<br/>Notification and support |
 |---------|---------|---------|---------|
-|**What Microsoft does**   |Your support representative or Account Manager will work with you to request a move and schedule it.         |Cut-over for the migration takes several hours, depending on the number of users and the amount of data. During this period, the environment is not accessible, so the cut-over should be scheduled during the evening or over a weekend.<br/>There is a step that will require your involvement, which is to provide a User Mapping File. This is requested in advance so that we can validate the users being moved before the migration takes place.         |You will be alerted by email or telephone when your environment is migrated to the new tenant.<br/>After the tenant migration is complete, your support representative or Account Manager will assist you to contact with billing to cancel and/or credit your previous subscription, if needed.         |
+|**What Microsoft does**   |Your support representative or Account Manager will work with you to request a move and schedule it.         |Cut-over for the migration takes several hours, depending on the number of users and the amount of data. During this period, the environment is not accessible, so the cut-over should be scheduled during the evening or over a weekend.<br/><br/>There is a step that will require your involvement, which is to provide a User Mapping File. This is requested in advance so that we can validate the users being moved before the migration takes place.         |You will be alerted by email or telephone when your environment is migrated to the new tenant.<br/><br/>After the tenant migration is complete, your support representative or Account Manager will assist you to contact with billing to cancel and/or credit your previous subscription, if needed.         |
 
 We will adhere to the terms of the [Microsoft Online Services Service Level Agreement](https://go.microsoft.com/fwlink/p/?LinkID=523897) for all moves.
 
