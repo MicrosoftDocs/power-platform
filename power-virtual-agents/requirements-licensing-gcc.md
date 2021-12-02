@@ -2,7 +2,7 @@
 title: "Understand the US Government plans available"
 description: "This document lists the capabilities, requirements, and features for US Government plans for Power Virtual Agents."
 keywords: "Administration, licensing, PVA, standalone, compare, comparison"
-ms.date: 9/22/2021
+ms.date: 12/02/2021
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -40,7 +40,7 @@ In addition to the features and capabilities of Power Virtual Agents, organizati
 
 ### GCC High environment
 
-Beginning September 2021, eligible customers can choose to deploy Power Virtual Agents US Government to the GCC High environment, which enables single sign-on and seamless integration with Office 365 GCC High deployments.  
+Beginning December 2021, eligible customers can choose to deploy Power Virtual Agents US Government to the GCC High environment, which enables single sign-on and seamless integration with Office 365 GCC High deployments.  
 
 Microsoft has designed the platform and our operational procedures to meet the requirements aligning with the DISA SRG IL4 compliance framework. We anticipate the US Department of Defense contractor customer base and other Federal agencies currently leveraging Office 365 GCC High to use the Power Virtual Agents US Government GCC High deployment option. 
 
