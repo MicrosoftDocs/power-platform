@@ -262,7 +262,7 @@ To get started using the ALM Accelerator For Advanced Makers App, follow the ins
 
 1. When prompted with the following screen enter 'https://graph.microsoft.com' for both the **Base Resource URL** and **Azure AD Resource URI**
 
-      ![image-20211201183325356](.attachments/almacceleratorpowerplatform-advancedmaker/image-20211201183325356.png)
+      ![HTTP with Azure AD configuration](media/almacceleratorpowerplatform-advancedmaker/image-20211201183325356.png "HTTP with Azure AD configuration")
 
 1. Select the **Cog** in the top right to select your **Azure DevOps Environment**, **Project**, and **Repo** to which you'll push your changes and submit your pull requests and select **Save**
    ![Select the Settings Cog](media/almacceleratorpowerplatform-components/image-20210303085854533.png)

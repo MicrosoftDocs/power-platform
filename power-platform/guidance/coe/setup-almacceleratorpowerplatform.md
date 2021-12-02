@@ -64,7 +64,6 @@ To complete the steps below, you'll need the following users and permissions in 
 - A licensed **Azure user** with Permissions to **create and view AAD Groups**, **create App Registrations** and **Grant Admin consent** to App Registrations in Azure Active Directory.
 - A licensed **Azure DevOps** user with Permissions to **create and manage Pipelines, Service Connections, Repos and Extensions**.
 - A licensed **Power Platform** user with Permissions to **create Application Users** and **grant Administrative Permissions** to the Application User.
-- Ability to assign **Power Platform Admin level permissions** to an App Registration in Azure. For more information, see [Give Power App Management Permission to your App](#give-power-app-management-permission-to-your-app).
 
 ### Connectors and DLPs
 
