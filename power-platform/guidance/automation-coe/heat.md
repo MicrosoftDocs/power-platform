@@ -33,7 +33,7 @@ The start of any successful automation project it to ensure that the key stakeho
 
 Watch the video: ["Power Automate & Power Platform"](https://youtu.be/OmQpIjC2Vlc?t=410)
 
-:::image type="content" source="media/pp-overview-large.jpg" alt-text="A slide from the video Power Automate & Power Platform showing an infographic about the Microsoft Azure and Power Platform apps and services for developer" link="https://youtu.be/OmQpIjC2Vlc?t=410":::
+:::image type="content" source="media/pp-overview-large.jpg" alt-text="A slide from the video Power Automate & Power Platform showing an infographic about the Microsoft Azure and Power Platform apps and services for developer" link="https://youtu.be/OmQpIjC2Vlc":::
 
 Here are some resources for getting started with RPA in Power Automate.
 
@@ -50,9 +50,9 @@ While automation enables organizations to become more efficient, the decision on
 
 Power Automate provides environments of different types (production, sandbox, trial) that can be created.  Each environment has a defined set of users who are role-based. Admins can bring their own compute infrastructure to install Power Automate Desktop and the necessary software.
 
-Watch the video: ["Empower, Discover & Plan"](https://www.youtube.com/watch?v=94Lq15PNDDg&amp;list=PLi9EhCY4z99UlSA7ykeZtSLraL8qlhFeq&amp;index=13)
+Watch the video: ["Empower, Discover & Plan"](https://youtu.be/94Lq15PNDDg)
 
-:::image type="content" source="media/m365admin-large.png" alt-text="Slide from Empower, Discover, and Plan video showing a screenshot of M365 Admin Center, showing Active Groups area" link="https://www.youtube.com/watch?v=94Lq15PNDDg&amp;list=PLi9EhCY4z99UlSA7ykeZtSLraL8qlhFeq&amp;index=13":::
+:::image type="content" source="media/m365admin-large.png" alt-text="Slide from Empower, Discover, and Plan video showing a screenshot of M365 Admin Center, showing Active Groups area" link="https://youtu.be/94Lq15PNDDg":::
 
 Resources for ROI, process discovery and setting up Power Automate environment:
 
@@ -60,17 +60,17 @@ Resources for ROI, process discovery and setting up Power Automate environment:
 - Use the [Automation Project app](automation-coe-starter-kit.md) for curating and managing ideas
 - [Power Automate for desktop](https://docs.microsoft.com/power-automate/desktop-flows/introduction)
 - [Power Automate IP address configuration](https://docs.microsoft.com/power-automate/limits-and-config)
-- [Service administrator roles (Microsoft 365 Global / Power Platform/ Dynamics 365/ Azure/ Power BI admin)](../../admin/use-service-admin-role-manage-tenant#service-administrator-permission-matrix)
-- [Assign Power Automate RPA attended user plan through Microsoft 365 admin center](https://docs.microsoft.com/power-automate/organization-q-and-a#power-automate-rpa-license)
-- [Manage unattended RPA add-on capacity](../../admin/capacity-add-on) in [Power Platform admin center](https://aka.ms/ppac)
+- [Service administrator roles (Microsoft 365 Global / Power Platform/ Dynamics 365/ Azure/ Power BI admin)](/power-platform/admin/use-service-admin-role-manage-tenant)
+- [Assign Power Automate RPA attended user plan through Microsoft 365 admin center](/power-automate/organization-q-and-a#power-automate-rpa-license)
+- [Manage unattended RPA add-on capacity](/power-platform/admin/capacity-add-on) in [Power Platform admin center](https://aka.ms/ppac)
 
 ## Design
 
 Building robust automation solutions require well-defined design principles that will build the foundation for scale, security, and compliance!
 
-Watch the video: ["Design Phase"](href="https://www.youtube.com/watch?v=ur1-y0lrexU&amp;list=PLi9EhCY4z99UlSA7ykeZtSLraL8qlhFeq&amp;index=14)
+Watch the video: ["Design Phase"](https://youtu.be/ur1-y0lrexU)
 
-:::image type="content" source="media/rpadesign.png" alt-text="Slide from the Design Phase video, showing Core Design Principles of Intuitive User Experience, Intelligent Process Automation, and Accessible to Everybody" link="href="https://www.youtube.com/watch?v=ur1-y0lrexU&amp;list=PLi9EhCY4z99UlSA7ykeZtSLraL8qlhFeq&amp;index=14":::
+:::image type="content" source="media/rpadesign.png" alt-text="Slide from the Design Phase video, showing Core Design Principles of Intuitive User Experience, Intelligent Process Automation, and Accessible to Everybody" link="https://youtu.be/ur1-y0lrexU":::
 
 Some other design principles (not a comprehensive list) to consider are:
 
@@ -83,9 +83,9 @@ Some other design principles (not a comprehensive list) to consider are:
 
 Building is the heart of the automation lifecycle.
 
-Watch the video: ["Build & Test"](href="https://www.youtube.com/watch?v=qvzBNfnjbpA&amp;list=PLi9EhCY4z99UlSA7ykeZtSLraL8qlhFeq&amp;index=15)
+Watch the video: ["Build & Test"](https://youtu.be/qvzBNfnjbpA)
 
-:::image type="content" source="media/pad-implement-large.png" alt-text="Slide from the Build & Test video, showing a desktop flow being built in Power Automate for desktop" link="https://www.youtube.com/watch?v=qvzBNfnjbpA&amp;list=PLi9EhCY4z99UlSA7ykeZtSLraL8qlhFeq&amp;index=15":::
+:::image type="content" source="media/pad-implement-large.png" alt-text="Slide from the Build & Test video, showing a desktop flow being built in Power Automate for desktop" link="https://youtu.be/qvzBNfnjbpA":::
 
 Some key concepts covered in this video are:
 
@@ -95,7 +95,7 @@ Some key concepts covered in this video are:
 - Automate It video series: ["Power Automate for desktop and SAP"](https://www.youtube.com/watch?v=u1-8oKytJAU)
 - [Using Sensitive Text in Power Automate Desktop + Azure Key Vault](https://powerusers.microsoft.com/t5/Webinars-and-Video-Gallery/Using-Sensitive-Text-In-Power-Automate-Desktop-Azure-Key-Vault/td-p/790556)
 - [Sharing desktop flows](/power-automate/desktop-flows/manage#share-desktop-flows)
-- Automate It video series: ["Power Automate Desktop Monitoring Dashboard"](https://www.youtube.com/watch?v=zME5ZaKx2bk&amp;list=PLi9EhCY4z99UlSA7ykeZtSLraL8qlhFeq&amp;index=18)
+- Automate It video series: ["Power Automate Desktop Monitoring Dashboard"](https://youtu.be/zME5ZaKx2bk)
 - Central logging
 - Human in the loop (Handle Business exceptions from SAP, AI Builder and more)
 - Calculate ROI at the item level (each invoice)
@@ -113,9 +113,9 @@ Developers can set up CI/ CD with test integration to deploy automation and prev
 
 Power Automate also helps users manage their automations. All execution data is available in Dataverse, with out of the box reports and views that visualize this data. Power Automate provides real-time information on individual bots and the machines/clusters these run on. This allows more detailed visibility into the full automation health, bot health, and the infrastructure health.
 
-Watch the video: ["Deploy & Manage"](https://www.youtube.com/watch?v=VukO0gHj7YU&amp;list=PLi9EhCY4z99UlSA7ykeZtSLraL8qlhFeq&amp;index=16)
+Watch the video: ["Deploy & Manage"](https://youtu.be/VukO0gHj7YU)
 
-:::image type="content" source="media/livemonitor-large.png" alt-text="Slide from the Deploy & Manage video , showing a screenshot of the "Desktop flow runs" screen" link="https://www.youtube.com/watch?v=VukO0gHj7YU&amp;list=PLi9EhCY4z99UlSA7ykeZtSLraL8qlhFeq&amp;index=16":::
+:::image type="content" source="media/livemonitor-large.png" alt-text="Slide from the Deploy & Manage video , showing a screenshot of the "Desktop flow runs" screen" link="https://youtu.be/VukO0gHj7YU":::
 
 Some resources for deploying, monitoring, and managing automations:
 
@@ -126,7 +126,7 @@ Some resources for deploying, monitoring, and managing automations:
 - [Prioritize desktop flow using queues](/power-automate/desktop-flows/monitor-desktop-flow-queues)
 - Video: [On Premises Data Gateway Monitoring Status](https://www.youtube.com/watch?v=963KPiL2PZk&amp;t=1053s)
 - Video: [Automating on Premises Data Gateway Installs](https://www.youtube.com/watch?v=WJ_AJxUSiYU)
-- Video: [Clustering your Gateways](https://www.youtube.com/watch?v=2SOXPUsJfb0&amp;list=PLi9EhCY4z99UlSA7ykeZtSLraL8qlhFeq&amp;index=6)
+- Video: [Clustering your Gateways](https://youtu.be/2SOXPUsJfb0)
 
 ## Secure, Govern & Nurture
 
@@ -136,14 +136,14 @@ The platform provides a rich set of auditing logs that help admins keep track of
 
 COEs should establish their strategy to nurture and upskill their employees. They can create a community of champions, train them, run hackathons and evangelize their success stories. Power Automate provides a rich set of [learning resources](https://powerapps.microsoft.com/blog/microsoft-powerapps-learning-resources/) (documentation, videos, tutorials, labs, courses, certifications, whitepapers, etc.). [Microsoft Power Platform Adoption Center](https://adoption.microsoft.com/powerplatform/) provides guidance, workbooks, and tools to accelerate adoption within your enterprise.
 
-Watch the video: ["Secure, Govern & Nurture"](https://www.youtube.com/watch?v=5_3s8floInk&amp;list=PLi9EhCY4z99UlSA7ykeZtSLraL8qlhFeq&amp;index=17)
+Watch the video: ["Secure, Govern & Nurture"](https://youtu.be/5_3s8floInk)
 
-:::image type="content" source="media/coe-large.png" alt-text="A slide from the Secure, Govern, & Nurture video showing an infographic" link="https://www.youtube.com/watch?v=5_3s8floInk&amp;list=PLi9EhCY4z99UlSA7ykeZtSLraL8qlhFeq&amp;index=17":::
+:::image type="content" source="media/coe-large.png" alt-text="A slide from the Secure, Govern, & Nurture video showing an infographic" link="https://youtu.be/5_3s8floInk":::
 
 Some helpful resources for security, governance, and adoption nurturing:
 
 - [Microsoft Power Platform Adoption Center](https://adoption.microsoft.com/powerplatform/)
-- [Admin and governance best practices - Microsoft Power Platform](../adoption/admin-best-practices)
+- [Admin and governance best practices - Microsoft Power Platform](/power-platform/guidance/adoption/admin-best-practices)
 - [Governance considerations - Power Platform | Microsoft Docs](/power-platform/admin/governance-considerations)
 - [Power Platform Compliance and data privacy](/power-platform/admin/wp-compliance-data-privacy)
 - [Microsoft Trust Center](https://www.microsoft.com/trustcenter)
@@ -152,7 +152,7 @@ Some helpful resources for security, governance, and adoption nurturing:
 - [Microsoft Power Platform nurture best practices](/power-platform/guidance/adoption/nurture-best-practices)
 - [Microsoft Power Platform Center of Excellence (CoE) Starter Kit](/power-platform/guidance/coe/starter-kit)
 - [Microsoft Automation Center of Excellence (CoE) Starter Kit](automation-coe-starter-kit.md)
-- Video: [Automate It - The CoE Starter Kit & Managing your RPA](https://www.youtube.com/watch?v=ed9hRtL38Kg&amp;list=PLi9EhCY4z99UlSA7ykeZtSLraL8qlhFeq&amp;index=11)
+- Video: [Automate It - The CoE Starter Kit & Managing your RPA](https://youtu.be/ed9hRtL38Kg)
 
 ## Applying HEAT techniques
 
