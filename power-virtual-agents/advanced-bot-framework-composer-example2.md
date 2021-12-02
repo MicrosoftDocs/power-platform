@@ -125,7 +125,7 @@ Select **Show code** and add a **Send a response** action to your **DailySpecial
 
 :::image type="content" source="media/Composer_Example2/E2_DailySpecials_addResponse.png" alt-text="Composer Create tab - display Daily Special for the selected day.":::
 
-Go to the **Create** tab in Composer and navigate to the Power Virtual Agents **main (root) dialog**. This dialog is the top-level read-only dialog in Composer that you created when you opened your bot in Composer. Choose the **Add new trigger** option on the actions menu.
+In the **bot explorer** navigate to the Power Virtual Agents **main (root) dialog**. This dialog is the top-level read-only dialog in Composer that you created when you opened your bot in Composer. Choose the **Add new trigger** option on the actions menu.
 
 :::image type="content" source="media/Composer_Example2/E2_main_addNewTrigger.png" alt-text="Composer Create_tab - add new trigger.":::
 
