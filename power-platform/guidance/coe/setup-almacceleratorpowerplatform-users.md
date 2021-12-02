@@ -22,7 +22,7 @@ search.app:
 > [!NOTE]
 > ALM Accelerator for Power Platform is currently in public preview. Please see Issues currently tagged as [vnext](https://github.com/microsoft/coe-starter-kit/issues?q=is%3Aopen+is%3Aissue+label%3Aalm-accelerator+label%3Avnext) for the Roadmap to be completed prior to general availability. While in Public Preview it can be expected that there will be breaking changes and frequent updates to address feedback from preview members. Additionally, the Public Preview is reliant on the experimental [Power Apps Source File Pack and Unpack Utility](https://github.com/microsoft/PowerApps-Language-Tooling) that is being developed separately from AA4PP.
 
-The AA4PP App is intended to be used by makers to increase productivity while developing solutions in Power Platform. Below are instructions for the setup of a maker's user account in Dataverse and Azure DevOps.
+The AA4PP App is intended to be used by makers to increase productivity while developing solutions in Power Platform. Below are instructions for the setup of a maker's user account in Dataverse and DevOps.
 
 ## Dataverse User Setup
 
@@ -40,7 +40,7 @@ So users can access resources in Dataverse when running the AA4PP app they need 
 
    ![Manage Security Roles](media/setup-almacceleratorpowerplatform-users/image-20210709150149120.png)
 
-## Azure DevOps User Setup
+## DevOps User Setup
 
 For users to use the service connection from the ALM Accelerator App the Service Connections must provide **User** permissions to all users who should have access to the Service Connections. Update Permissions as follows for environments that user's should be able to access from the App, for example, Development environment(s):
 

@@ -1,6 +1,6 @@
 ---
 title: "ALM Accelerator for Power Platform Advanced Maker Experience | MicrosoftDocs"
-description: "The ALM Accelerator for Power Platform Advanced Maker Experience will help you follow ALM patterns and practices. It enables you to source control your solutions and move them from your development environment to test and production environments using Azure DevOps"
+description: "The ALM Accelerator for Power Platform Advanced Maker Experience will help you follow ALM patterns and practices. It enables you to source control your solutions and move them from your development environment to test and production environments using DevOps"
 author: alvarezskinner
 manager: devkeydet
 ms.service: power-platform
@@ -51,11 +51,11 @@ Watch how to use the ALM Accelerator for Power Platform solution
 
    ![Solution List](media/almacceleratorpowerplatform-components/aa4pp-main-screen.png "Solution List")
 
-1. You can now create a new solution from the maker portal or also import an unmanaged solution from an existing Azure DevOps project to begin making changes to it. To import a solution, use the **Import Solutions** button and select a **Profile, Solution Source, Solution Folder and Configuration (Optional)**.
+1. You can now create a new solution from the maker portal or also import an unmanaged solution from an existing DevOps project to begin making changes to it. To import a solution, use the **Import Solutions** button and select a **Profile, Solution Source, Solution Folder and Configuration (Optional)**.
 
-   - **Profile** the configured profiles your user has access to, this profile points to an organization and project in Azure DevOps.
+   - **Profile** the configured profiles your user has access to, this profile points to an organization and project in DevOps.
 
-   - **Solution Source** is based on the branches in Azure DevOps for the Project you selected in the configuration.
+   - **Solution Source** is based on the branches in DevOps for the Project you selected in the configuration.
 
    - **Solution Folder** is a list of folders in the selected branch that contain a **SolutionPackage folder** from a previous export.
 
@@ -64,7 +64,7 @@ Watch how to use the ALM Accelerator for Power Platform solution
     > [!NOTE]
     > The idea here is that you're either pulling the latest from the Solution branch or possibly want to pull another makers branch into your own environment. The configuration allows you to ensure that all of the necessary post solution import configuration and data exists in your environment.
 
-   ![Import Solution from Branch in Azure DevOps](media/almacceleratorpowerplatform-components/aa4pp-solution-import.png "Import Solution from Branch in Azure DevOps")
+   ![Import Solution from Branch in DevOps](media/almacceleratorpowerplatform-components/aa4pp-solution-import.png "Import Solution from Branch in DevOps")
 
 1. Once you have created or imported your solution, you are going to need to choose a **solution profile** to the solution so you can associate the solution to a specific **Organization**, **Project**, **Repository**, **Target Branch**, and **Environments** where you will be able to deploy the solution into
 
@@ -121,14 +121,14 @@ Watch how to use the ALM Accelerator for Power Platform solution
     > [!NOTE]
     > Be sure to publish any App changes before initiating the push
 
-   - Select an **existing branch** or **create a new branch** based on an existing branch and enter a **comment**. Use the hashtag notation for example `#123` to link the changes to a specific work item in Azure DevOps and Select **Commit**.
-     ![Export Solution from Dataverse to New Azure DevOps Branch](media/almacceleratorpowerplatform-components/aa4pp-commit-solution.png "Export Solution from Dataverse to New Azure DevOps Branch")
+   - Select an **existing branch** or **create a new branch** based on an existing branch and enter a **comment**. Use the hashtag notation for example `#123` to link the changes to a specific work item in DevOps and Select **Commit**.
+     ![Export Solution from Dataverse to New DevOps Branch](media/almacceleratorpowerplatform-components/aa4pp-commit-solution.png "Export Solution from Dataverse to New DevOps Branch")
 
-   - When the push begins, a waiting indicator will appear. If the push is successful, a checkbox will appear otherwise a red x will appear. To see the progress of your push, select the progress indicator, which will take you to the running pipeline in Azure DevOps.
+   - When the push begins, a waiting indicator will appear. If the push is successful, a checkbox will appear otherwise a red x will appear. To see the progress of your push, select the progress indicator, which will take you to the running pipeline in DevOps.
    - Repeat the pushes as you iterate on your solution.
 
     > [!NOTE]
-    > Using the progress icons links to visualize what is happening in the pipelines in Azure DevOps can be disabled for makers.
+    > Using the progress icons links to visualize what is happening in the pipelines in DevOps can be disabled for makers.
 
 1. Once you have finished the changes in your solution and you are ready to deploy them across other environment use the **Deploy Solution** button.
 
@@ -147,9 +147,9 @@ Watch how to use the ALM Accelerator for Power Platform solution
 
 1. Once you deploy the solution the next things that happen is going to depend on the **approval type** of the **deployment step**.
 
-    - **Pull Request**: A Pull Request is created for your changes, the remaining steps to Merge and Release to Test occur in Azure DevOps. Depending on the Branch Policies and Triggers configured for your Target Branch, an Azure DevOps user can approve or reject your Pull Request based on their findings in the submitted changes. The status of the Pull Request will appear in the App.
+    - **Pull Request**: A Pull Request is created for your changes, the remaining steps to Merge and Release to Test occur in DevOps. Depending on the Branch Policies and Triggers configured for your Target Branch, an DevOps user can approve or reject your Pull Request based on their findings in the submitted changes. The status of the Pull Request will appear in the App.
 
-    - **Environment**: The pipeline to deploy the solution to the target environment will be triggered, the remaining approval steps will occur in Azure DevOps.
+    - **Environment**: The pipeline to deploy the solution to the target environment will be triggered, the remaining approval steps will occur in DevOps.
 
 1. To initiate a **solution upgrade** in the target environment, you can tag a Pull Request with the **solution-upgrade** tag.
 
@@ -159,5 +159,5 @@ Watch how to use the ALM Accelerator for Power Platform solution
 
       ![Request History for a solution](media/almacceleratorpowerplatform-components/aa4pp-request-history.png "Request History for a solution")
 
-1. For Production, you can either need to go into **advanced settings** for the deployment and choose the main branch used to trigger the deployment to production or create the PR directly in Azure DevOps
+1. For Production, you can either need to go into **advanced settings** for the deployment and choose the main branch used to trigger the deployment to production or create the PR directly in DevOps
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

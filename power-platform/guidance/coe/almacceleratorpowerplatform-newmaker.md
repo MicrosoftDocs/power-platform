@@ -1,6 +1,6 @@
 ---
 title: "ALM Accelerator for Power Platform New Maker Experience | MicrosoftDocs"
-description: "The ALM Accelerator for Power Platform New Maker Experience will help you follow ALM patterns and practices. It enables you to source control your solutions and move them from your development environment to test and production environments using Azure DevOps"
+description: "The ALM Accelerator for Power Platform New Maker Experience will help you follow ALM patterns and practices. It enables you to source control your solutions and move them from your development environment to test and production environments using DevOps"
 author: alvarezskinner
 manager: devkeydet
 ms.service: power-platform
@@ -43,9 +43,9 @@ Watch how to use the ALM Accelerator for Power Platform solution
 
 1. The main screen will display a list of all the **unmanaged solutions** in the environment. You can refresh the list using the **refresh** button if you don't see new solutions you've created:
 
-    - **Save Solution**: Saves the current state of the solution into version control so all changes done to the solution can be tracked.
-    - **Publish Solution**: Allows you to request the move the solution across environments.
-    - **Choose a Profile**: Allows you to select a **Solution profile** to associate a solution to a **Repository** in a given **Organization** and **Project** in DevOps
+    - **Save Solution**: Saves the current state of the solution into version control so all changes done to the solution can be tracked
+    - **Publish Solution**: Allows you to request to move the solution across environments
+    - **Choose a Profile**: Allows you to select a **Solution profile** to associate a solution to a **Repository** in a given **Organization** and **Project**. If you're unsure what profile to select ask your administrator to provide the name of the solution profile for your solution.
     - **Request History**: (right chevron icon): Provides a list of requests (saves and deployments) done for that solution.
 
    ![Solution List](media/almacceleratorpowerplatform-components/aa4pp-new-maker-main-screen.png "Solution List")
@@ -57,23 +57,29 @@ Watch how to use the ALM Accelerator for Power Platform solution
     > [!NOTE]
     > If you don't find a Solution Profile that suits your needs, you will need to talk to an administrator to get it created.
 
-1. Configure now the deployment setting using the **Select the Configure Deployment Settings** link under the name of the Solution. On the configuration deployment page, you'll see the following items
+1. Configure the deployment setting using the **Select the Configure Deployment Settings** link under the name of the Solution. On the configuration deployment page, you'll see the following items
 
    - Deployment Environments
 
      ![Deployment Environments List](media/almacceleratorpowerplatform-components/aa4pp-deployment-settings-environment.png "Deployment Environments List")
 
-     - These environments are the ones specified in the **Solution Profile**.
+     - These environments are the ones specified in the **Solution Profile**. They correspond with the environments in which your solution will be available after you publish.
 
    - Connection References
 
       ![Connection Reference Configuration](media/almacceleratorpowerplatform-components/aa4pp-deployment-settings-connection-references.png "Connection Reference Configuration")
 
       - This screen lists all of the connection references in your solution and allows users to create connections in their downstream environments to hook up the connection references in the target environment.
-      - To create a new connection **select the + button**.
-      - After creating a new connection, **select the refresh button** in the top right to get the latest list of connections.
-      - To select an existing connection in the target environment **select a connection from the dropdown list**.
-      - To Navigate to the connection in the target environment **select the name or the status of the connection**.
+      - If you have permissions to create connections in the target environment you'll see the + button.
+         - To create a new connection **select the + button**.
+         - After creating a new connection, **select the refresh button** in the top right to get the latest list of connections.
+         - To select an existing connection in the target environment **select a connection from the dropdown list**.
+         - To Navigate to the connection in the target environment **select the name or the status of the connection**.
+      - If you don't have permissions to create connections in the target environment the + button will be disabled and you will have to request a connection be created by another user.
+         - To request a connection **select the Request a Connection button**.
+         - Enter the name of the team member you need to create the connection and select the user.
+         - To open the preformatted email  **select send**.
+         - The preformatted email will include a link for the recipient to create the required connection.
 
    - Environment Variables
 
@@ -100,17 +106,17 @@ Watch how to use the ALM Accelerator for Power Platform solution
       - Use  the **dropdown to select a Dataverse user** to own the Flow in the downstream environment.
       - To view the Flow **select the name of the Flow** to open a new window with the Flow Definition.
 
-1. After selecting the **Solution Profile** and configuring the **Deployment Settings**, you can push your changes to Git using the **Publish Solution** button. In the background. the app will push your change to version control automatically creating a branch. Repeat the pushes as you iterate on your solution.
+1. After selecting the **Solution Profile** and configuring the **Deployment Settings**, you can push your changes to Git using the **Publish Solution** button. In the background, the app will push your change to version control automatically creating a branch. Repeat the pushes as you make changes to your solution so your change history is kept.
 
     > [!NOTE]
     > Be sure to publish any App changes before initiating the push
 
-     ![Export Solution from Dataverse to New Azure DevOps Branch](media/almacceleratorpowerplatform-components/aa4pp-new-maker-commit-solution.png "Export Solution from Dataverse to New Azure DevOps Branch")
+     ![Export Solution from Dataverse to New DevOps Branch](media/almacceleratorpowerplatform-components/aa4pp-new-maker-commit-solution.png "Export Solution from Dataverse to New DevOps Branch")
 
     > [!NOTE]
     > When the publishing begins, a waiting indicator will appear. If the push is successful, a checkbox will appear otherwise a red x will appear.
 
-1. Use the **Publish Solution** button to publish your solution to other environments. Provide a **Title** and **Notes** (this information is added to the Pull Request created in Azure DevOps) and select the environment you want to publish the solution into.
+1. Use the **Publish Solution** button to publish your solution to other environments. Provide a **Title** and **Notes** (this information is added to the Pull Request created in DevOps) and select the environment you want to publish the solution into.
 
     ![Create Pull Request properties](media/almacceleratorpowerplatform-components/aa4pp-new-maker-deploy-solution.png "Create Pull Request properties")
 

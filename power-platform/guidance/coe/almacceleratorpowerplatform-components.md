@@ -1,6 +1,6 @@
 ---
 title: "Use the ALM Accelerator for Power Platform App | MicrosoftDocs"
-description: "The ALM Accelerator for Power Platform will help you follow ALM patterns and practices. It enables you to source control your solutions and move them from your development environment to test and production environments using Azure DevOps"
+description: "The ALM Accelerator for Power Platform will help you follow ALM patterns and practices. It enables you to source control your solutions and move them from your development environment to test and production environments using DevOps"
 author: jenschristianschroder
 manager: devkeydet
 ms.service: power-platform
@@ -41,7 +41,7 @@ The target user for setting up AA4PP is an Administrator with a deeper understan
 
 ## Pipelines
 
-The AA4PP Pipelines are a set of YAML pipelines intended to be used with Azure DevOps. Eventually, these pipelines will be ported to support GitHub workflows, but currently only support Azure Pipelines. These reference pipelines were written to demonstrate an end-to-end ALM process for Power Platform solutions. The pipelines use first-party tasks provided by Microsoft, some third-party tasks, and low-level PowerShell scripts to automate all of the ALM scenarios. As such, the pipelines support scenarios related to unpacking / source controlling / building and deploying a solution from a development environment. The pipelines support the ability to deploy to many environments, but only currently demonstrate deployment from a Development environment to a Build Validation to Test and ultimately to Production based on the ALM process used by the CoE Starter Kit development team.
+The AA4PP Pipelines are a set of YAML pipelines intended to be used with DevOps. Eventually, these pipelines will be ported to support GitHub workflows, but currently only support Azure Pipelines. These reference pipelines were written to demonstrate an end-to-end ALM process for Power Platform solutions. The pipelines use first-party tasks provided by Microsoft, some third-party tasks, and low-level PowerShell scripts to automate all of the ALM scenarios. As such, the pipelines support scenarios related to unpacking / source controlling / building and deploying a solution from a development environment. The pipelines support the ability to deploy to many environments, but only currently demonstrate deployment from a Development environment to a Build Validation to Test and ultimately to Production based on the ALM process used by the CoE Starter Kit development team.
 
 The Pipelines handle the following.
 
@@ -51,22 +51,22 @@ The Pipelines handle the following.
 1. Import a build of that Solution from Source Control
 1. Future: Handle seeding environments with Data and configuring Connection References, Environment Variables, Sharing, and Ownership
 
-### Delete Unmanaged Solution
+### Delete Solution
 
 1. Export an Unmanaged Solution from a Development Environment as Managed.
 1. Import Managed Solution to Development Environment
 1. Delete the Managed Solution from a Development Environment.
 
-### Export to Git
+### Commit Solution
 
 1. Create a New Branch Based on an Existing Branch
 1. Export an Unmanaged Solution from a Development Environment
 1. Unpack Solutions to Human Readable Format
 1. Store Unpacked Files in a Git Repository Branch
 
-### Create Pull Request
+### Deploy Solution
 
-1. Create a Pull Request in Azure DevOps for your New Branch
+1. Create a Pull Request in DevOps for your New Branch
 1. Run a Build on a Pull Request via Branch Policy to validate your changes including running Solution Checker
 1. Include Branch Policies to require more checks such as Reviewers, Work Items Linking
 
@@ -86,18 +86,19 @@ The Pipelines handle the following.
 
 ## ALM Accelerator App
 
-The AA4PP Canvas App provides a convenience layer on top of the AA4PP Pipelines. The AA4PP Canvas App allows Power Platform Makers to easily invoke the Azure Pipelines to perform their complex tasks without context switching between the Power Apps environment and the Azure DevOps. The goal of the App is to provider Makers with a friction-free way of performing common Development and ALM tasks as described in the following.
+The AA4PP Canvas App provides a convenience layer on top of the AA4PP Pipelines. The AA4PP Canvas App allows Power Platform Makers to easily invoke the Azure Pipelines to perform their complex tasks without context switching between the Power Apps environment and the DevOps. The goal of the App is to provider Makers with a friction-free way of performing common Development and ALM tasks as described in the following.
 
-1. Target multiple Organization / Projects and Repos in Azure DevOps
+1. Target multiple personas (for example: New Maker, Advanced Maker, Team Maker)
+1. Target multiple Organization / Projects and Repos in DevOps
 1. Get the latest version of a solution into the development environment by importing the solution
-1. Remove existing work that needs to be rebased from source control by deleting an unmanaged solution
-1. Push the latest changes from the development environment to source control by exporting to Git
+1. Remove existing work that needs to be rebased from source control by deleting a solution
+1. Push the latest changes from the development environment to source control by committing your solution.
 1. Submit the changes tied to a Work Item for Review by creating a pull request
 1. Monitor the progress of moving the changes between environments
 
 ## ALM Accelerator Flow and Maker Experience
 
-The ALM Accelerator provides the ability for administrators to target specific personas and enable functions based on a maker's needs. For example, teams of makers may require the ability to get others' changes into their isolated maker environment. Retrieving others' changes is possible by using the Import function in the App. However, makers building in isolation on their own solutions may not need this capability and could be confused by its purpose. Additionally, makers who are comfortable with navigating between Azure DevOps and the App may want to be able to drill into a particular process in Azure DevOps to view details about a pipeline's execution. The Drillthrough experience can be enabled for these users or turned off for others to avoid confusion.
+The ALM Accelerator provides the ability for administrators to target specific personas and enable functions based on a maker's needs. For example, teams of makers may require the ability to get others' changes into their isolated maker environment. Retrieving others' changes is possible by using the Import function in the App. However, makers building in isolation on their own solutions may not need this capability and could be confused by its purpose. Additionally, makers who are comfortable with navigating between DevOps and the App may want to be able to drill into a particular process in DevOps to view details about a pipeline's execution. The Drillthrough experience can be enabled for these users or turned off for others to avoid confusion.
 
 Realizing that ALM isn't a one-size-fits-all experience we've included the ability for administrators to cater experiences to their varying users. As such we've created examples of a user experience to explore for the following scenarios.
 

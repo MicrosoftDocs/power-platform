@@ -45,7 +45,7 @@ To create User Settings for AA4PP, use the following steps.
       ![Delete Solution Button in the AA4PP App](media/setup-almacceleratorpowerplatform-deployment-profiles/image-20211126102504179.png)
     - **Manage Solutions** - This function will show the Manage Solutions button in the App.
       ![Manage Solution Button in the AA4PP App](media/setup-almacceleratorpowerplatform-deployment-profiles/image-20211126102639665.png)
-    - **Drillthrough Status** - This function will allow users to drill into the Azure DevOps pipeline runs for the Promote and Deploy functionality.
+    - **Drillthrough Status** - This function will allow users to drill into the DevOps pipeline runs for the Promote and Deploy functionality.
 
       ![Status Icon in AA4PP App](media/setup-almacceleratorpowerplatform-deployment-profiles/image-20211126111447987.png)
     - **Profile Creation** - This function will provide users with the ability to create new Deployment Profiles in the App.

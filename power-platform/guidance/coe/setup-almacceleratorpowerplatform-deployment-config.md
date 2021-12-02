@@ -525,7 +525,7 @@ In many cases, there will be configuration or seed data that you'll want to impo
 
    ![Select specific tables and columns from the list of tables and columns and add them](media/setup-almacceleratorpowerplatform-deployment-config/image-20210217093237070.png)
 
-1. Select **Save and Export** and save the data to the directory path **config\ConfigurationMigrationData** in your **local Azure DevOps repo** under the **solution folder** for which this configuration data is to be imported.
+1. Select **Save and Export** and save the data to the directory path **config\ConfigurationMigrationData** in your **local DevOps repo** under the **solution folder** for which this configuration data is to be imported.
 
    > [!NOTE]
    > The pipeline will look for this specific folder to run the import after your solution is imported. Ensure that the name of the folder and the location are the same as the screenshot below.
@@ -548,6 +548,6 @@ In many cases, there will be configuration or seed data that you'll want to impo
 
    ![Configuration Migration Data unzipped in ConfigurationMigrationData directory](media/setup-almacceleratorpowerplatform-deployment-config/image-20210309121221510.png)
 
-1. Finally, **Commit the changes** with your data to Azure DevOps.
+1. Finally, **Commit the changes** with your data to DevOps.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
