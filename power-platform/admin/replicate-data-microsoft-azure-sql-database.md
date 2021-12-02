@@ -4,7 +4,7 @@ description: Replicate data to Azure SQL Database using Data Export Service
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/16/2021
+ms.date: 12/02/2021
 ms.subservice: admin
 ms.author: sabinn
 author: sabinn-msft
@@ -20,11 +20,13 @@ search.app:
 # Replicate data to Azure SQL Database using Data Export Service
 
 > [!NOTE]
-> It is highly encouraged that you export your Dataverse data to Azure Synapse Analytics and/or Azure Data Lake Gen2 with **Azure Synapse Link for Dataverse**. More information: [Accelerate time to insight with Azure Synapse Link for Dataverse](https://cloudblogs.microsoft.com/powerplatform/2021/05/26/accelerate-time-to-insight-with-azure-synapse-link-for-dataverse/)
+> In November 2021, deprecation of the Data Export Service was announced. The Data Export Service will continue to work and will be fully supported until it reaches end-of-support and end-of-life a year from this announcement date, in November 2022. More information: https://aka.ms/DESDeprecationBlog
 
 The [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] is an add-on service made available on [!INCLUDE[pn_microsoft_appsource](../includes/pn-microsoft-appsource.md)] that adds the ability to replicate data from Microsoft Dataverse database to a [!INCLUDE[pn_ms_azure_sql_database](../includes/pn-ms-azure-sql-database.md)] store in a customer-owned [!INCLUDE[pn_Windows_Azure](../includes/pn-windows-azure.md)] subscription. The supported target destinations are [!INCLUDE[pn_ms_azure_sql_database](../includes/pn-ms-azure-sql-database.md)] and [!INCLUDE[pn_SQL_Server_short](../includes/pn-sql-server-short.md)] on [!INCLUDE[pn_Windows_Azure](../includes/pn-windows-azure.md)] virtual machines.  The [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] intelligently synchronizes the entire data initially and thereafter synchronizes on a continuous basis as changes occur (delta changes) in the system. This helps enable several analytics and reporting scenarios on top of data with [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] data and analytics services, and opens up new possibilities for customers and partners to build custom solutions.  
 
 > [!NOTE]
+> It is highly encouraged that you export your Dataverse data to Azure Synapse Analytics and/or Azure Data Lake Gen2 with **Azure Synapse Link for Dataverse**. More information: [Accelerate time to insight with Azure Synapse Link for Dataverse](https://cloudblogs.microsoft.com/powerplatform/2021/05/26/accelerate-time-to-insight-with-azure-synapse-link-for-dataverse/)
+> 
 > You can use the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] with customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation).
   
 For information about the programmatic interface for managing configuration and administration of the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)], see [Data Export Service](/powerapps/developer/common-data-service/data-export-service) in the developer guide.
