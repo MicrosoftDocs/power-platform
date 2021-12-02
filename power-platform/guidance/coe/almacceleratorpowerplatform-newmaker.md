@@ -35,7 +35,7 @@ Watch how to use the ALM Accelerator for Power Platform solution
 
 1. When prompted with the following screen enter 'https://graph.microsoft.com' for both the **Base Resource URL** and **Azure AD Resource URI**
 
-      ![Configure HTTP with Azure AD](.attachments/almacceleratorpowerplatform-advancedmaker/image-20211201183325356.png "Configure HTTP with Azure AD")
+   ![HTTP with Azure AD configuration](media/almacceleratorpowerplatform-advancedmaker/image-20211201183325356.png "HTTP with Azure AD configuration")
 
 1. Now select an environment, next time you open the app, it will remember which environment you were working on.
 
