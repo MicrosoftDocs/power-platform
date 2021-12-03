@@ -145,9 +145,11 @@ You can share your bot by adding it to the Microsoft Teams app store, **Built fo
 
 6. Select **Show to my teammates and shared users** and review who has access to the bot.
 
-   :::image type="content" source="../media/sharing-security-groups/add-bot-to-teams-bbyc-teams.PNG" alt-text="Show bot in Teams app store Built by your colleague section.":::
+   :::image type="content" source="../media/sharing-security-groups/add-bot-to-teams-show-bbyc.PNG" alt-text="Show bot in Teams app store Built by your colleague section.":::
 
 7. Confirm the **Visible in Built by your colleagues** checkbox is selected and select **Share**.
+
+   :::image type="content" source="media/sharing-security-groups/add-bot-to-teams-visible-in-bbyc.PNG" alt-text="Select visible in Built by your colleagues checkbox in sharing UI.":::
 
    :::image type="content" source="../media/sharing-security-groups/add-bot-to-teams-visible-in-bbyc.PNG" alt-text="Select visible in Built by your colleagues checkbox in sharing UI.":::
 
@@ -164,7 +166,7 @@ You can share your bot by adding it to the Microsoft Teams app store, **Built fo
 
 
 
-### Remove the bot from the Built by your colleagues section
+#### Remove the bot from the Built by your colleagues section
 
 
 You can remove the bot from showing in the **Built by your colleagues** section. This does not impact users who have already installed the bot.
@@ -188,7 +190,7 @@ You can remove the bot from showing in the **Built by your colleagues** section.
 
 
 
-## Show to the organization
+### Show to the organization
 
 You can share the bot with your organization by submitting your bot for admin approval to be featured in the **Built for your org** > **Built by your colleagues** section. This is a great way to broadly distribute your bot by partnering with your admin to roll out the bot to everyone in the organization, or a subset of users. 
 
@@ -209,7 +211,7 @@ Before submitting the bot to your organization, make sure:
 >Once a bot is approved by an admin, the bot availability in the **Built by your org** section will be completely managed by your admin. Only an admin can remove the bot from the **Built by your org** section.
 
 
-### Submit for the Built by your org section
+#### Submit for the Built by your org section
 
 1. Go to the **Chatbot** tab.
 
