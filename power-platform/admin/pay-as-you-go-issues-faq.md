@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/1/2021
+ms.date: 12/03/2021
 ms.subservice: admin
 ms.author: jimholtz 
 search.audienceType: 
@@ -82,8 +82,11 @@ No. Once you enable pay-as-you-go, both the Power Apps per app-meter and Dataver
 ### How is Dataverse capacity calculated when one environment is enabled for pay-as-you-go and the other is not within my tenant?
 Environments draw from a tenant-wide pool of Dataverse storage. However, when an environment is linked to an Azure subscription, it stops drawing from the tenant-wide pool. All pay-as-you-go environments will get an initial entitlement of 1 GB of Dataverse database and 1 GB of Dataverse file storage capacities to cover the typical initial storage footprint consumed by Dataverse. Any usage above the initial entitlement is billed to Azure via the Dataverse pay-as-you-go meter. 
 
-### Will I be throttled if I exceed Power Platform requests entitlement in a pay-as-you-go environment?
-No. If you exceed your entitlement, you'll automatically be charged for the overages via Azure subscription without experiencing any disruption. However, at this time, you're not getting charged even if you exceed entitlements.
+### Is there throttling if I exceed Power Platform requests entitlements in a pay-as-you-go environment?
+In the context of Power Platform Request entitlement limits, any high usage throttling will be removed when an environment has pay-as-you-go enabled.  When Power Platform Request metering is active in the Public Preview, if you exceed a daily entitlement limit, you will automatically be charged for the overages via Azure subscription without experiencing high usage throttling. 
+
+> [!NOTE]
+> This does not supersede [Service Protection Limit](/powerapps/developer/data-platform/api-limits) browser errors that are separate from high usage throttling.  If service protection limits are exceeded, the user could still experience issues on client applications described on the service protection limits page.
 
 ### Can I stop using pay-as-you-go billing at any time?
 Yes, you can disable pay-as-you-go at any point by either deleting the billing policy or removing the environment from the billing policy. Doing so will stop any further charges on the Azure subscription. For more information, go to [Turning off pay-as-you-go](pay-as-you-go-set-up.md#turning-off-pay-as-you-go).
