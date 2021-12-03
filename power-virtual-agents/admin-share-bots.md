@@ -27,7 +27,7 @@ Share your bot with other users so they can chat with it or collaborate together
 Bot owners and managers from [sharing a bot for collaboration](#share-a-bot-for-collaboration) always have permission to chat with a bot. You can share bots with additional users to only chat with it.
 
 ### Prerequisites
-- The bot's [end user authentication setting](configuration-end-user-authentication.md) must be configured to **Only for Teams** or **Manual**, with *Azure Active Directory** or **Azure Active Directory V2** as the provider. **Required user sign-in** must be enabled to manage who can chat with the bot in your organization. 
+- The bot's [end user authentication setting](configuration-end-user-authentication.md) must be configured to **Only for Teams** or **Manual**, with **Azure Active Directory** or **Azure Active Directory V2** as the provider. **Required user sign-in** must be enabled to manage who can chat with the bot in your organization. 
 
 ### Share bot with security groups
 You can share your bot with security groups so their members can chat with the bot.
