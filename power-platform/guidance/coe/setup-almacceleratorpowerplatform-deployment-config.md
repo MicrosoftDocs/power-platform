@@ -35,6 +35,8 @@ The following documentation is intended to be a step-by-step process for setting
 
 When storing the customDeploymentSettings.json in the root of the config directory, the same configuration will apply to all environments. Assuming that you're using File Transformation or Token Replacement to store all of the environment-specific information, you can specify the environment-specific values in your Pipeline Variables. However, **you can also create environment specific customDeploymentSettings.json files** by creating subdirectories in the config directory with the name of the Environment to allow for more flexibility. The directory name in this case **must match the EnvironmentName pipeline variable** you created when setting up your pipeline (Validate, Test, Production). If no environment-specific deployment settings json / directory is found, the pipelines will revert to the configuration in the root of the config directory.
 
+![Config folder sample](media/setup-almacceleratorpowerplatform-deployment-config/image-20211203085159850.png)
+
 Additionally, you can **create user specific configuration files** (for example, the JohannaDev directory pictured above) for individual developers to use when importing unmanaged solutions from source control. When the user imports an unmanaged solution from source control, they will be presented with the option to choose a specific configuration.
 
 ![Select a configuration from the list](media/setup-almacceleratorpowerplatform-deployment-config/image-20210622130424580.png)
@@ -465,7 +467,7 @@ The solution component ownership property in the customDeploymentConfiguration.j
    ```
 
    - The **solution component type code** is based on the component types specified in the following [doc](/dynamics365/customer-engagement/web-api/solutioncomponent) (for example, a Power Automate Flow is component type 29). The component type should be specified as an integer value (that is, with no quotes)
-   - The **unique name of the solution component**, in the case of a Power Automate Flow, has to be taken from the unpacked solution. This is a limitation of flows currently not requiring unique names when they are created. As such, the only true unique identifier for a Flow is the internal ID the system uses to identify it in a solution.
+   - The **unique name of the solution component**, if a Power Automate Flow, has to be taken from the unpacked solution. Retrieving the unique name from the solution is a limitation of flows currently not requiring unique names when they are created. As such, the only true unique identifier for a Flow is the internal ID the system uses to identify it in a solution.
      ![Unpacked solution workflow xml file](media/setup-almacceleratorpowerplatform-deployment-config/flowuniquename.png)
       ![Unpacked solution workflow xml showing WorkflowId](media/setup-almacceleratorpowerplatform-deployment-config/flowuniquename2.png)
    - The **owner email** can be gathered from the user's record in Dataverse or Office 365.
