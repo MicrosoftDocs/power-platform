@@ -157,7 +157,7 @@ The ALM Accelerator uses several DevOps extensions, including some third-party E
 
    ![Import a repository into DevOps](media/setup-almacceleratorpowerplatform/clone-template-repository-1.png)
 
-1. Enter <https://github.com/microsoft/coe-alm-accelerator-templates> as the **Clone URL** and select **Import**
+1. Enter the url of the tag for the latest release (for example: [https://github.com/microsoft/coe-alm-accelerator-templates/tree/ALMAcceleratorForAdvancedMakers-September2021a](https://github.com/microsoft/coe-alm-accelerator-templates/tree/ALMAcceleratorForAdvancedMakers-September2021a) as the **Clone URL** and select **Import**
 1. Check that the default branch for this repo is `main`. Choose **Repos** and **Branches** and ensure that the `main` branch is tagged as the default:
    ![Verify that the Default Branch in the imported repository](media/setup-almacceleratorpowerplatform/check-default-branch-imported-repository.png)
    If it's not, select the 3 vertical dots corresponding to the `main` branch and from the **More options** menu, choose **Set as default branch**
@@ -367,7 +367,7 @@ The following steps show how to **create a pipeline from the sample pipeline YAM
 > [!NOTE]
 > The following steps will create pipelines that **build and deploy for each environment** (Validation, Test and Production). However, you may want to only build and deploy for Validation and Test and then deploy the artifacts from the Test build to Production. Included in [the section following this section](#create-the-solution-deployment-pipeline-optional) are instructions for doing the latter. If this is your preferred method of setting up the pipelines follow the steps below for **only the Validation and Test environment** and then skip to the next section to see how to configure your release pipeline.
 
-1. In DevOps, go to the **Repo** that contains the [Pipelines folder you committed](#clone-the-yaml-pipelines-from-github-to-your-azure-devops-instance) and select the Pipelines folder
+1. In DevOps, go to the **Repo** that contains the [Pipelines folder you committed](#clone-the-yaml-pipelines-from-github-to-your-devops-instance) and select the Pipelines folder
 
 1. Open the sample deployment pipeline (that is, **build-deploy-validation-SampleSolution.yml, build-deploy-test-SampleSolution.yml or build-deploy-prod-SampleSolution.yml**) and copy the YAML to use in your new Pipeline. **Note the name of this repo** for use in your pipeline.
 
@@ -458,7 +458,7 @@ As mentioned in the note above, the previous section allows you to create pipeli
 | ----------------------------- | ------------------------- | --------------------- |
 | deploy-prod-MyNewSolution.yml | deploy-prod-MyNewSolution | No                    |
 
-1. In DevOps, go to the **Repo** that contains the [Pipelines folder you committed](#clone-the-yaml-pipelines-from-github-to-your-azure-devops-instance) and select the Pipelines folder
+1. In DevOps, go to the **Repo** that contains the [Pipelines folder you committed](#clone-the-yaml-pipelines-from-github-to-your-devops-instance) and select the Pipelines folder
 
 1. Open the sample deployment pipeline (that is, **deploy-prod-pipelineartifact-SampleSolution.yml**) and copy the YAML to use in your new Pipeline. **Note the name of this repo** for use in your pipeline.
 

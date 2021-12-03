@@ -22,11 +22,11 @@ search.app:
 > [!NOTE]
 > ALM Accelerator for Power Platform is currently in public preview. Please see Issues currently tagged as [vnext](https://github.com/microsoft/coe-starter-kit/issues?q=is%3Aopen+is%3Aissue+label%3Aalm-accelerator+label%3Avnext) for the Roadmap to be completed prior to general availability. While in Public Preview it can be expected that there will be breaking changes and frequent updates to address feedback from preview members. Additionally, the Public Preview is reliant on the experimental [Power Apps Source File Pack and Unpack Utility](https://github.com/microsoft/PowerApps-Language-Tooling) that is being developed separately from AA4PP.
 
-When you create a solution in Dataverse, you'll need to create pipelines specifically for that solution. Follow these steps for creating pipelines for the ALM Accelerator Sample Solution in DevOps. There are sample pipelines included in the Pipeline directory in the CoE ALM Templates repo.
+When you create a solution in Dataverse, you'll need to create pipelines specifically for that solution. Follow these steps for creating pipelines for the ALM Accelerator Sample Solution in DevOps. There are sample pipelines included in the Pipeline directory in the CoE ALM Templates repo [latest release](https://github.com/microsoft/coe-alm-accelerator-templates/releases)
 
-- <https://github.com/microsoft/coe-alm-accelerator-templates/blob/main/Pipelines/build-deploy-validation-SampleSolution.yml>
-- <https://github.com/microsoft/coe-alm-accelerator-templates/blob/main/Pipelines/build-deploy-test-SampleSolution.yml>
-- <https://github.com/microsoft/coe-alm-accelerator-templates/blob/main/Pipelines/deploy-prod-pipelineartifact-SampleSolution.yml>
+- /Pipelines/build-deploy-validation-SampleSolution.yml>
+- /Pipelines/build-deploy-test-SampleSolution.yml>
+- /Pipelines/deploy-prod-pipelineartifact-SampleSolution.yml>
 
 ## Create the Solution Build and Deployment Pipeline(s)
 
@@ -41,7 +41,7 @@ In this step, you'll be creating the Validation and Test Pipelines for reference
 | build-deploy-validation-SampleSolution.yml | deploy-validation-SampleSolution | Yes                   |
 | build-deploy-test-SampleSolution.yml       | deploy-test-SampleSolution       | No                    |
 
-1. In DevOps, go to the **Repo** that contains the [Pipelines folder you committed](setup-almacceleratorpowerplatform.md#clone-the-yaml-pipelines-from-github-to-your-azure-devops-instance) and select the Pipelines folder
+1. In DevOps, go to the **Repo** that contains the [Pipelines folder you committed](setup-almacceleratorpowerplatform.md#clone-the-yaml-pipelines-from-github-to-your-devops-instance) and select the Pipelines folder
 
 1. Open the sample deployment pipeline (that is, **build-deploy-validation-SampleSolution.yml or build-deploy-test-SampleSolution.yml**) and copy the YAML to use in your new Pipeline. **Note the name of this repo** for use in your pipeline.
 
@@ -127,7 +127,7 @@ As mentioned in the note above, the previous section allows you to create pipeli
 | -------------------------------------------- | ---------------------------------------- | --------------------- |
 | deploy-prod-ALMAcceleratorSampleSolution.yml | deploy-prod-ALMAcceleratorSampleSolution | No                    |
 
-1. In DevOps, go to the **Repo** that contains the [Pipelines folder you committed](setup-almacceleratorpowerplatform.md#clone-the-yaml-pipelines-from-github-to-your-azure-devops-instance) and select the Pipelines folder
+1. In DevOps, go to the **Repo** that contains the [Pipelines folder you committed](setup-almacceleratorpowerplatform.md#clone-the-yaml-pipelines-from-github-to-your-devops-instance) and select the Pipelines folder
 
 1. Open the sample deployment pipeline (that is, **deploy-prod-pipelineartifact-SampleSolution.yml**) and copy the YAML to use in your new Pipeline. **Note the name of this repo** for use in your pipeline.
 
