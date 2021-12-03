@@ -33,7 +33,9 @@ The following documentation is intended to be a step-by-step process for setting
 
 ## Creating a Deployment Settings Json File
 
-When storing the customDeploymentSettings.json in the root of the config directory, the same configuration will apply to all environments. Assuming that you're using File Transformation or Token Replacement to store all of the environment-specific information, you can specify the environment-specific values in your Pipeline Variables. However, **you can also create environment specific customDeploymentSettings.json files** by creating subdirectories in the config directory with the name of the Environment to allow for more flexibility. The directory name in this case **must match the EnvironmentName pipeline variable** you created when setting up your pipeline (Validate, Test, Production). If no environment-specific deployment settings json / directory is found, the pipelines will revert to the configuration in the root of the config directory.
+When storing the customDeploymentSettings.json in the root of the config directory, the same configuration will apply to all environments. Assuming that you're using File Transformation or Token Replacement Pipeline Tasks to store all of the environment-specific information, you can specify the environment-specific values in your Pipeline Variables. However, **you can also create environment specific customDeploymentSettings.json files** by creating subdirectories in the config directory with the name of the Environment to allow for more flexibility. The directory name in this case **must match the EnvironmentName pipeline variable** you created when setting up your pipeline (Validate, Test, Production). If no environment-specific deployment settings json / directory is found, the pipelines will revert to the configuration in the root of the config directory.
+
+![Config folder sample](media/setup-almacceleratorpowerplatform-deployment-config/image-20211203085159850.png)
 
 Additionally, you can **create user specific configuration files** (for example, the JohannaDev directory pictured above) for individual developers to use when importing unmanaged solutions from source control. When the user imports an unmanaged solution from source control, they will be presented with the option to choose a specific configuration.
 
@@ -126,7 +128,7 @@ The connection reference property in the customDeploymentConfiguration.json is *
    - The **connection id** can be obtained via the URL of the connection after you create it. For example, the ID of the connection below is **9f66d1d455f3474ebf24e4fa2c04cea2** where the URL is 'https://.../connections/shared_commondataservice/9f66d1d455f3474ebf24e4fa2c04cea2/details'
      ![The connection id embedded in the connection url](media/setup-almacceleratorpowerplatform-deployment-config/connid.png)
 
-1. Once you've gathered the connection reference schema names and connection IDs, go to the **customDeploymentSettings.json** and paste the json in  the **ConnectionReferences property**.
+1. Once you've gathered the connection reference schema names and connection IDs, go to the **customDeploymentSettings.json** and paste the values into  the **ConnectionReferences property**.
 
    ```json
    "ConnectionReferences": 
@@ -144,9 +146,9 @@ The connection reference property in the customDeploymentConfiguration.json is *
    ]
    ```
 
-1. Using **'Replace Tokens' extension** and adding tokens in your configuration like in the above example navigate to the pipeline for your solution **Select Edit -> Variables**
+1. Using **'Replace Tokens' extension** and adding tokens in your configuration like in the above example, navigate to the pipeline for your solution **Select Edit -> Variables**
 
-1. On the Pipeline Variables screen, create the **connection.cat_CDS_Current pipeline variable**.
+1. On the Pipeline Variables screen, create the **connection.[connection_reference_logicalname]**. For above example this will be **connection.cat_CDS_Current pipeline variable**.
 
 1. Set the value to the **connection id** you gathered above and **Select Keep this value secret** if you want to ensure the value is not saved as plain text.
 
@@ -200,7 +202,7 @@ The environment variable property in the customDeploymentConfiguration.json is *
    }
    ```
 
-1. If you're using **'Replace Tokens' extension** and adding tokens in your configuration like in the above example. Navigate to the pipeline for your solution **Select Edit -> Variables**
+1. If you're using **'Replace Tokens' extension** and adding tokens in your configuration like in the above example, navigate to the pipeline for your solution **Select Edit -> Variables**
 
 1. On the Pipeline Variables screen, create a **pipeline variable** for each of the tokens in your configuration (for example, variable.cat_TextEnvironmentVariable).
 
@@ -277,7 +279,7 @@ To create the custom deployment settings json file, follow the steps below
 
 1. Copy the above json to a new file called **customDeploymentSettings.json**
 
-2. Create a **new Directory called config** and save the new file **under the config folder** in git.
+2. If haven't already, create a **new Directory called config** and save the new file **under the config folder** in git.
 
    ![Config Folder](media/setup-almacceleratorpowerplatform-deployment-config/image-20210917153336262.png)
 
