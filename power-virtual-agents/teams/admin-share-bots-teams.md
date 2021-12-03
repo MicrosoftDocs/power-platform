@@ -27,9 +27,11 @@ Share your bot with other users so they can chat with the bot or collaborate tog
 A user can always chat with a bot if it was created in the same team. You can share bots with users outside of the team with the **Share** options available in Power Virtual Agents.
 
 ### Prerequisites
+
 - To manage who can chat with the bot in your organization, the bot's [end user authentication setting](configuration-end-user-authentication-teams.md) must be configured to **Only for Teams** or **Manual**, with **Azure Active Directory** or **Azure Active Directory V2** as the provider and **Require user sign-in** enabled.  
 
 ### Share bot with security groups
+
 You can share your bot with security groups so their members can chat with the bot.
 
 1. Select **Share** at the top of the bot's home page.
