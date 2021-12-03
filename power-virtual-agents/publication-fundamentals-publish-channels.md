@@ -85,7 +85,7 @@ Each channel requires different steps and configurations, which can be found in 
 
 Different channels have different end-user experiences. The following table shows a high-level overview of the experiences for each channel. Take the channel experiences into account when optimizing your bot content for specific channels.
 
-| Experience | Website | Microsoft Teams(1) | Facebook | Dynamics Omnichannel for Customer Service |
+| Experience | Website | Microsoft Teams | Facebook | Dynamics Omnichannel for Customer Service |
 |---|---|---|---|---|
 | [Customer satisfaction survey](authoring-create-edit-topics.md#insert-nodes) | Adaptive card | Text-only | Text-only | Text-only |
 | [Multiple-choice options](authoring-create-edit-topics.md#insert-nodes) | Supported | [Supported up to six (as hero card)](/microsoftteams/platform/concepts/cards/cards-reference#hero-card) | [Supported up to 13](https://developers.facebook.com/docs/messenger-platform/send-messages/quick-replies/) | [Partially Supported](/dynamics365/customer-service/asynchronous-channels#suggested-actions-support) |
