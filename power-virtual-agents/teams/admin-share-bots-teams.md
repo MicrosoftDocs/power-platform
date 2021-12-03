@@ -28,7 +28,7 @@ A user can always chat with a bot if it was created in the same team. You can sh
 
 ### Prerequisites
 
-- To manage who can chat with the bot in your organization, the bot's [end user authentication setting](configuration-end-user-authentication-teams.md) must be configured to **Only for Teams** or **Manual**, with **Azure Active Directory** or **Azure Active Directory V2** as the provider and **Require user sign-in** enabled.  
+- To manage who can chat with the bot in your organization, the bot's [end user authentication setting](configuration-end-user-authentication-teams.md) must be configured to **Only for Teams** or **Manual**, with __Azure Active Directory__ or **Azure Active Directory V2** as the provider and **Require user sign-in** enabled.  
 
 ### Share bot with security groups
 
