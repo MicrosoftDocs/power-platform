@@ -575,7 +575,7 @@ Download the **latest managed solution**(s) from GitHub (<https://github.com/mic
 1. On the Connections page, select or create a new connection to use to connect to Dataverse for the **CDS DevOps connection**.
 
     > [!NOTE]
-    > When creating a connection for **HTTP with Azure AD** use *https://graph.microsoft.com* for both parameters
+    > When creating a connection for **HTTP with Azure AD** use 'https://graph.microsoft.com' for both parameters
 
 1. Select **Import** and wait for the solution to complete the import process.
 
