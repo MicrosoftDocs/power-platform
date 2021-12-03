@@ -149,8 +149,6 @@ You can share your bot by adding it to the Microsoft Teams app store, **Built fo
 
 7. Confirm the **Visible in Built by your colleagues** checkbox is selected and select **Share**.
 
-   :::image type="content" source="media/sharing-security-groups/add-bot-to-teams-visible-in-bbyc.PNG" alt-text="Select visible in Built by your colleagues checkbox in sharing UI.":::
-
    :::image type="content" source="../media/sharing-security-groups/add-bot-to-teams-visible-in-bbyc.PNG" alt-text="Select visible in Built by your colleagues checkbox in sharing UI.":::
 
 8. This will automatically add the bot to the **Built by your colleagues** section, and will show a green label **Added to Teams** in the availability options page.
