@@ -106,10 +106,9 @@ Watch how to use the ALM Accelerator for Power Platform solution
       - Use  the **dropdown to select a Dataverse user** to own the Flow in the downstream environment.
       - To view the Flow **select the name of the Flow** to open a new window with the Flow Definition.
 
-1. After selecting the **Solution Profile** and configuring the **Deployment Settings**, you can push your changes to Git using the **Publish Solution** button. In the background, the app will push your change to version control automatically creating a branch. Repeat the pushes as you make changes to your solution so your change history is kept.
+1. After selecting the **Solution Profile** and configuring the **Deployment Settings**, you can push your changes to Git using the **Save Solution** button. In the background, the app will push your change to version control automatically creating a branch. Repeat the pushes as you make changes to your solution so your change history is kept.
 
-    > [!NOTE]
-    > Be sure to publish any App changes before initiating the push
+    Be sure to publish any App changes before initiating the saving of the solution. During this step you will also be asked to configure the deployment settings which will ask for the same information as detailed in the previous step.
 
      ![Export Solution from Dataverse to New DevOps Branch](media/almacceleratorpowerplatform-components/aa4pp-new-maker-commit-solution.png "Export Solution from Dataverse to New DevOps Branch")
 

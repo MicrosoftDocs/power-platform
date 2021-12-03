@@ -145,6 +145,8 @@ Watch how to use the ALM Accelerator for Power Platform solution
 
        ![Create Pull Request properties Advanced](media/almacceleratorpowerplatform-components/aa4pp-deploy-solution-advanced.png "Create Pull Request properties Advanced")
 
+    After doing your selection, you will need to provide the configuration for the deployment settings in case you have not done so as explained in the last step.
+
 1. Once you deploy the solution the next things that happen is going to depend on the **approval type** of the **deployment step**.
 
     - **Pull Request**: A Pull Request is created for your changes, the remaining steps to Merge and Release to Test occur in DevOps. Depending on the Branch Policies and Triggers configured for your Target Branch, an DevOps user can approve or reject your Pull Request based on their findings in the submitted changes. The status of the Pull Request will appear in the App.
