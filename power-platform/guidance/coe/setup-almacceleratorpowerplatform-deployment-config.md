@@ -37,8 +37,6 @@ When storing the customDeploymentSettings.json in the root of the config directo
 
 ![Config folder sample](media/setup-almacceleratorpowerplatform-deployment-config/image-20211203085159850.png)
 
-![Config folder sample](media/setup-almacceleratorpowerplatform-deployment-config/image-20211203085159850.png)
-
 Additionally, you can **create user specific configuration files** (for example, the JohannaDev directory pictured above) for individual developers to use when importing unmanaged solutions from source control. When the user imports an unmanaged solution from source control, they will be presented with the option to choose a specific configuration.
 
 ![Select a configuration from the list](media/setup-almacceleratorpowerplatform-deployment-config/image-20210622130424580.png)
