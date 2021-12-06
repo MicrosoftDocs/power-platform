@@ -222,12 +222,12 @@ Update the custom canvas page where the bot is located to intercept the login ca
     <script>
     function getOAuthCardResourceUri(activity) {
       if (activity &&
-           activitymedia &&
-           activitymedia[0] &&
-           activitymedia[0].contentType === 'application/vnd.microsoft.card.oauth' &&
-           activitymedia[0].content.tokenExchangeResource) {
+           activity.attachments &&
+           activity.attachments[0] &&
+           activity.attachments[0].contentType === 'application/vnd.microsoft.card.oauth' &&
+           activity.attachments[0].content.tokenExchangeResource) {
              // asking for token exchange with AAD
-             return activitymedia[0].content.tokenExchangeResource.uri;
+             return activity.attachments[0].content.tokenExchangeResource.uri;
        }
     }
    
@@ -307,8 +307,8 @@ Update the custom canvas page where the bot is located to intercept the login ca
                                     type: 'invoke',
                                     name: 'signin/tokenExchange',
                                     value: {
-                                        id: activitymedia[0].content.tokenExchangeResource.id,
-                                        connectionName: activitymedia[0].content.connectionName,
+                                        id: activity.attachments[0].content.tokenExchangeResource.id,
+                                        connectionName: activity.attachments[0].content.connectionName,
                                         token,
                                     },
                                     "from": {
