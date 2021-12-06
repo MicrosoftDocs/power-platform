@@ -1,0 +1,1119 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Power Platform API",
+    "description": "Unified API surface for all administrative capabilities in Power Platform",
+    "version": "2021-10-01-preview"
+  },
+  "host": "api.powerplatform.com",
+  "schemes": [
+    "https"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "security": [
+    {
+      "azure_auth": [
+        "AppManagement.ApplicationPackages.Install"
+      ]
+    }
+  ],
+  "securityDefinitions": {
+    "azure_auth": {
+      "type": "oauth2",
+      "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/authorize",
+      "flow": "implicit",
+      "description": "Azure Active Directory OAuth2 Flow",
+      "scopes": {
+        "AppManagement.ApplicationPackages.Install": "Install Application Packages"
+      }
+    }
+  },
+  "paths": {
+    "/appmanagement/tenants/{tenantId}/applicationPackages": {
+      "get": {
+        "operationId": "TenantApplicationPackages_Read",
+        "summary": "Summary 1",
+        "description": "Description 1",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "description": "Parameter description",
+            "format": "uuid",
+            "in": "path",
+            "name": "tenantId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/ApplicationPackageContinuationResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        },
+        "tags": [
+          "Applications"
+        ]
+      }
+    },
+    "/appmanagement/tenants/{tenantId}/environments/{environmentId}/applicationPackages": {
+      "get": {
+        "operationId": "ApplicationPackages_Read",
+        "summary": "Summary 1",
+        "description": "Description 1",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "description": "Parameter description",
+            "format": "uuid",
+            "in": "path",
+            "name": "tenantId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "Parameter description",
+            "in": "path",
+            "name": "environmentId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "Parameter description",
+            "enum": [
+              "All",
+              "Installed",
+              "NotInstalled"
+            ],
+            "in": "query",
+            "name": "appInstallState",
+            "type": "string"
+          },
+          {
+            "description": "Parameter description",
+            "in": "query",
+            "name": "lcid",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/ApplicationPackageContinuationResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        },
+        "tags": [
+          "Applications"
+        ]
+      }
+    },
+    "/appmanagement/tenants/{tenantId}/environments/{environmentId}/applicationPackages/{uniqueName}/install": {
+      "post": {
+        "operationId": "ApplicationPackages_Install",
+        "summary": "Summary 1",
+        "description": "Description 1",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "description": "Parameter description",
+            "format": "uuid",
+            "in": "path",
+            "name": "tenantId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "Parameter description",
+            "in": "path",
+            "name": "environmentId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "Parameter description",
+            "in": "path",
+            "name": "uniqueName",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "Parameter description",
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/TpsInstallRequestPayload"
+            }
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "Success"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        },
+        "tags": [
+          "Applications"
+        ]
+      }
+    },
+    "/appmanagement/tenants/{tenantId}/environments/{environmentId}/operations/{operationId}": {
+      "get": {
+        "operationId": "Operations_Read",
+        "summary": "Summary 1",
+        "description": "Description 1",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "description": "Parameter description",
+            "format": "uuid",
+            "in": "path",
+            "name": "tenantId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "Parameter description",
+            "in": "path",
+            "name": "environmentId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "Parameter description",
+            "format": "uuid",
+            "in": "path",
+            "name": "operationId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/InstancePackageOperationPollingResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        },
+        "tags": [
+          "Applications"
+        ]
+      }
+    },
+    "/licensing/tenants/{tenantId}/billingPolicies": {
+      "get": {
+        "operationId": "BillingPolicies_List",
+        "description": "Description 1",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "description": "Parameter description",
+            "in": "path",
+            "name": "tenantId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "default": "1.0",
+            "description": "The requested API version",
+            "in": "query",
+            "name": "api-version",
+            "type": "string"
+          },
+          {
+            "description": "Top limit of results",
+            "in": "query",
+            "name": "$top",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/BillingPolicyResponseModelResponseWithOdataContinuation"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        },
+        "tags": [
+          "BillingPolicy"
+        ],
+        "summary": "Get the list of billing policy for the tenant."
+      },
+      "post": {
+        "operationId": "BillingPolicies_Create",
+        "description": "Description 1",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "description": "Parameter description",
+            "in": "path",
+            "name": "tenantId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "Parameter description",
+            "in": "query",
+            "name": "api-version",
+            "type": "string"
+          },
+          {
+            "description": "The Billing Policy",
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/BillingPolicyPostRequestModel"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Successfully created",
+            "schema": {
+              "$ref": "#/definitions/BillingPolicyResponseModel"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        },
+        "tags": [
+          "BillingPolicy"
+        ],
+        "summary": "Create billing policy."
+      }
+    },
+    "/licensing/tenants/{tenantId}/billingPolicies/{billingPolicyId}": {
+      "delete": {
+        "operationId": "BillingPolicies_Delete",
+        "description": "Description 1",
+        "parameters": [
+          {
+            "description": "The Billing Policy Id",
+            "in": "path",
+            "name": "billingPolicyId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "Parameter description",
+            "in": "path",
+            "name": "tenantId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "Parameter description",
+            "in": "query",
+            "name": "api-version",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Success"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "tags": [
+          "BillingPolicy"
+        ],
+        "summary": "Delete billing policy."
+      },
+      "get": {
+        "operationId": "BillingPolicies_Read",
+        "description": "Description 1",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "description": "The Billing Policy Id",
+            "in": "path",
+            "name": "billingPolicyId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "Parameter description",
+            "in": "path",
+            "name": "tenantId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "Parameter description",
+            "in": "query",
+            "name": "api-version",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/BillingPolicyResponseModel"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "tags": [
+          "BillingPolicy"
+        ],
+        "summary": "Get billing policy."
+      },
+      "put": {
+        "operationId": "BillingPolicies_CreateOrUpdate",
+        "description": "Description 1",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "description": "The Billing Policy Id",
+            "in": "path",
+            "name": "billingPolicyId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "Parameter description",
+            "in": "path",
+            "name": "tenantId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "Parameter description",
+            "in": "query",
+            "name": "api-version",
+            "type": "string"
+          },
+          {
+            "description": "The Billing Policy",
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/BillingPolicyPutRequestModel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/BillingPolicyResponseModel"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "tags": [
+          "BillingPolicy"
+        ],
+        "summary": "Update billing policy."
+      }
+    }
+  },
+  "definitions": {
+    "ApplicationInstallState": {
+      "description": "Definition description",
+      "enum": [
+        "All",
+        "Installed",
+        "NotInstalled"
+      ],
+      "type": "string"
+    },
+    "ApplicationPackage": {
+      "description": "Definition description",
+      "additionalProperties": false,
+      "properties": {
+        "applicationDescription": {
+          "description": "Type description",
+          "type": "string",
+          "x-nullable": true
+        },
+        "applicationId": {
+          "description": "Type description",
+          "format": "uuid",
+          "type": "string"
+        },
+        "applicationName": {
+          "description": "Type description",
+          "type": "string",
+          "x-nullable": true
+        },
+        "applicationVisibility": {
+          "$ref": "#/definitions/ApplicationVisibility"
+        },
+        "catalogVisibility": {
+          "$ref": "#/definitions/CatalogVisibility"
+        },
+        "customHandleUpgrade": {
+          "description": "Type description",
+          "type": "boolean"
+        },
+        "endDateUtc": {
+          "description": "Type description",
+          "format": "date-time",
+          "type": "string"
+        },
+        "id": {
+          "description": "Type description",
+          "format": "uuid",
+          "type": "string"
+        },
+        "instancePackageId": {
+          "description": "Type description",
+          "format": "uuid",
+          "type": "string",
+          "x-nullable": true
+        },
+        "lastError": {
+          "$ref": "#/definitions/ErrorDetails"
+        },
+        "learnMoreUrl": {
+          "description": "Type description",
+          "type": "string",
+          "x-nullable": true
+        },
+        "localizedDescription": {
+          "description": "Type description",
+          "type": "string",
+          "x-nullable": true
+        },
+        "localizedName": {
+          "description": "Type description",
+          "type": "string",
+          "x-nullable": true
+        },
+        "platformMaxVersion": {
+          "description": "Type description",
+          "type": "string",
+          "x-nullable": true
+        },
+        "platformMinVersion": {
+          "description": "Type description",
+          "type": "string",
+          "x-nullable": true
+        },
+        "publisherName": {
+          "description": "Type description",
+          "type": "string",
+          "x-nullable": true
+        },
+        "singlePageApplicationUrl": {
+          "description": "Type description",
+          "type": "string",
+          "x-nullable": true
+        },
+        "startDateUtc": {
+          "description": "Type description",
+          "format": "date-time",
+          "type": "string"
+        },
+        "state": {
+          "$ref": "#/definitions/InstancePackageState"
+        },
+        "supportedCountries": {
+          "description": "Type description",
+          "items": {
+            "type": "string"
+          },
+          "type": "array",
+          "x-nullable": true
+        },
+        "uniqueName": {
+          "description": "Type description",
+          "type": "string",
+          "x-nullable": true
+        },
+        "version": {
+          "description": "Type description",
+          "type": "string",
+          "x-nullable": true
+        }
+      },
+      "type": "object"
+    },
+    "ApplicationPackageContinuationResponse": {
+      "description": "Definition description",
+      "additionalProperties": false,
+      "properties": {
+        "@odata.nextLink": {
+          "description": "Type description",
+          "type": "string",
+          "x-nullable": true
+        },
+        "value": {
+          "items": {
+            "$ref": "#/definitions/ApplicationPackage"
+          },
+          "type": "array",
+          "x-nullable": true
+        }
+      },
+      "type": "object"
+    },
+    "ApplicationVisibility": {
+      "description": "Type description",
+      "enum": [
+        "None",
+        "CrmAdminCenter",
+        "BapAdminCenter",
+        "OneAdminCenter",
+        "All"
+      ],
+      "type": "string"
+    },
+    "BillingAssignmentMode": {
+      "description": "Type description",
+      "enum": [
+        "Auto",
+        "AdminAssigned",
+        "IsvAssigned"
+      ],
+      "type": "string"
+    },
+    "BillingInstrumentModel": {
+      "description": "Type description",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "x-nullable": true
+        },
+        "location": {
+          "type": "string",
+          "x-deprecated": true,
+          "x-nullable": true
+        },
+        "resourceGroup": {
+          "type": "string",
+          "x-nullable": true
+        },
+        "subscriptionId": {
+          "type": "string",
+          "x-nullable": true
+        }
+      },
+      "type": "object"
+    },
+    "BillingPolicyPostRequestModel": {
+      "description": "Type description",
+      "additionalProperties": false,
+      "properties": {
+        "billingInstrument": {
+          "$ref": "#/definitions/BillingInstrumentModel"
+        },
+        "location": {
+          "type": "string",
+          "x-nullable": true
+        },
+        "name": {
+          "type": "string"
+        },
+        "powerAppsPolicy": {
+          "$ref": "#/definitions/PowerAppsPolicyModel"
+        },
+        "powerAutomatePolicy": {
+          "$ref": "#/definitions/PowerAutomatePolicyModel"
+        },
+        "provider": {
+          "$ref": "#/definitions/ProviderIdentityModel"
+        },
+        "status": {
+          "$ref": "#/definitions/BillingPolicyStatus"
+        },
+        "storagePolicy": {
+          "$ref": "#/definitions/StoragePolicyModel"
+        },
+        "type": {
+          "$ref": "#/definitions/BillingPolicyType"
+        }
+      },
+      "type": "object"
+    },
+    "BillingPolicyPutRequestModel": {
+      "description": "Type description",
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "powerAppsPolicy": {
+          "$ref": "#/definitions/PowerAppsPolicyModel"
+        },
+        "powerAutomatePolicy": {
+          "$ref": "#/definitions/PowerAutomatePolicyModel"
+        },
+        "status": {
+          "$ref": "#/definitions/BillingPolicyStatus"
+        },
+        "storagePolicy": {
+          "$ref": "#/definitions/StoragePolicyModel"
+        }
+      },
+      "type": "object"
+    },
+    "BillingPolicyResponseModel": {
+      "description": "Type description",
+      "additionalProperties": false,
+      "properties": {
+        "activationCode": {
+          "type": "string",
+          "x-nullable": true
+        },
+        "billingInstrument": {
+          "$ref": "#/definitions/BillingInstrumentModel"
+        },
+        "createdBy": {
+          "$ref": "#/definitions/Principal"
+        },
+        "createdOn": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "environmentPolicy": {
+          "$ref": "#/definitions/EnvironmentPolicyModel"
+        },
+        "id": {
+          "type": "string"
+        },
+        "lastModifiedBy": {
+          "$ref": "#/definitions/Principal"
+        },
+        "lastModifiedOn": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "licensePolicy": {
+          "$ref": "#/definitions/LicensePolicyModel"
+        },
+        "location": {
+          "type": "string",
+          "x-nullable": true
+        },
+        "name": {
+          "type": "string"
+        },
+        "powerAppsPolicy": {
+          "$ref": "#/definitions/PowerAppsPolicyModel"
+        },
+        "powerAutomatePolicy": {
+          "$ref": "#/definitions/PowerAutomatePolicyModel"
+        },
+        "provider": {
+          "$ref": "#/definitions/ProviderIdentityModel"
+        },
+        "status": {
+          "$ref": "#/definitions/BillingPolicyStatus"
+        },
+        "storagePolicy": {
+          "$ref": "#/definitions/StoragePolicyModel"
+        },
+        "type": {
+          "$ref": "#/definitions/BillingPolicyType"
+        }
+      },
+      "type": "object"
+    },
+    "BillingPolicyResponseModelResponseWithOdataContinuation": {
+      "description": "Type description",
+      "additionalProperties": false,
+      "properties": {
+        "@odata.nextLink": {
+          "type": "string",
+          "x-nullable": true
+        },
+        "value": {
+          "items": {
+            "$ref": "#/definitions/BillingPolicyResponseModel"
+          },
+          "type": "array",
+          "x-nullable": true
+        }
+      },
+      "type": "object"
+    },
+    "BillingPolicyStatus": {
+      "description": "Type description",
+      "enum": [
+        "Enabled",
+        "Disabled",
+        "DisabledBySubscription",
+        "Deleted"
+      ],
+      "type": "string"
+    },
+    "BillingPolicyType": {
+      "description": "Type description",
+      "enum": [
+        "TenantOwned",
+        "IsvOwned"
+      ],
+      "type": "string"
+    },
+    "CatalogVisibility": {
+      "description": "Type description",
+      "enum": [
+        "None",
+        "AdminCenter",
+        "Teams",
+        "All"
+      ],
+      "type": "string"
+    },
+    "EnvironmentCreationState": {
+      "description": "Type description",
+      "enum": [
+        "Allow",
+        "Disallow"
+      ],
+      "type": "string"
+    },
+    "EnvironmentPolicyModel": {
+      "description": "Type description",
+      "additionalProperties": false,
+      "properties": {
+        "environmentCreation": {
+          "$ref": "#/definitions/EnvironmentCreationState"
+        },
+        "maxAllowedEnvironmentCount": {
+          "format": "int32",
+          "type": "integer"
+        }
+      },
+      "type": "object"
+    },
+    "ErrorDetails": {
+      "description": "Type description",
+      "additionalProperties": false,
+      "properties": {
+        "errorCode": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "errorName": {
+          "type": "string",
+          "x-nullable": true
+        },
+        "message": {
+          "type": "string",
+          "x-nullable": true
+        },
+        "source": {
+          "type": "string",
+          "x-nullable": true
+        },
+        "statusCode": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "type": {
+          "type": "string",
+          "x-nullable": true
+        }
+      },
+      "type": "object"
+    },
+    "InstancePackageOperationPollingResponse": {
+      "description": "Type description",
+      "additionalProperties": false,
+      "properties": {
+        "createdDateTime": {
+          "format": "date-time",
+          "type": "string",
+          "x-nullable": true
+        },
+        "error": {
+          "$ref": "#/definitions/ErrorDetails"
+        },
+        "lastActionDateTime": {
+          "format": "date-time",
+          "type": "string",
+          "x-nullable": true
+        },
+        "operationId": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "status": {
+          "$ref": "#/definitions/InstancePackageOperationStatus"
+        },
+        "statusMessage": {
+          "type": "string",
+          "x-nullable": true
+        }
+      },
+      "type": "object"
+    },
+    "InstancePackageOperationStatus": {
+      "description": "Type description",
+      "enum": [
+        "NotStarted",
+        "Running",
+        "Succeeded",
+        "Failed",
+        "Canceled"
+      ],
+      "type": "string"
+    },
+    "InstancePackageState": {
+      "description": "Type description",
+      "enum": [
+        "None",
+        "Installed",
+        "Uninstalled",
+        "InstallRequested",
+        "UninstallRequested",
+        "InstallFailed",
+        "UninstallFailed",
+        "Installing",
+        "Uninstalling",
+        "InstallScheduled",
+        "InstallRetrying",
+        "TemplateInstalled"
+      ],
+      "type": "string"
+    },
+    "LicensePolicyModel": {
+      "description": "Type description",
+      "additionalProperties": false,
+      "properties": {
+        "allocations": {
+          "items": {
+            "$ref": "#/definitions/LicenseSkuAllocationModel"
+          },
+          "type": "array",
+          "x-nullable": true
+        },
+        "assignmentMode": {
+          "$ref": "#/definitions/BillingAssignmentMode"
+        },
+        "overageState": {
+          "$ref": "#/definitions/OverageState"
+        }
+      },
+      "type": "object"
+    },
+    "LicenseSkuAllocationModel": {
+      "description": "Type description",
+      "additionalProperties": false,
+      "properties": {
+        "allocated": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "licenseSkuId": {
+          "type": "string",
+          "x-nullable": true
+        }
+      },
+      "type": "object"
+    },
+    "OverageState": {
+      "description": "Type description",
+      "enum": [
+        "Allow",
+        "Disallow"
+      ],
+      "type": "string"
+    },
+    "PayAsYouGoState": {
+      "description": "Type description",
+      "enum": [
+        "Enabled",
+        "Disabled"
+      ],
+      "type": "string"
+    },
+    "PowerAppsPolicyModel": {
+      "description": "Type description",
+      "additionalProperties": false,
+      "properties": {
+        "payAsYouGoState": {
+          "$ref": "#/definitions/PayAsYouGoState"
+        }
+      },
+      "type": "object"
+    },
+    "PowerAutomatePolicyModel": {
+      "description": "Type description",
+      "additionalProperties": false,
+      "properties": {
+        "payAsYouGoState": {
+          "$ref": "#/definitions/PayAsYouGoState"
+        }
+      },
+      "type": "object"
+    },
+    "Principal": {
+      "description": "Type description",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "x-nullable": true
+        },
+        "type": {
+          "$ref": "#/definitions/PrincipalType"
+        }
+      },
+      "type": "object"
+    },
+    "PrincipalType": {
+      "description": "Type description",
+      "enum": [
+        "None",
+        "Application",
+        "User",
+        "DelegatedAdmin"
+      ],
+      "type": "string"
+    },
+    "ProviderIdentityModel": {
+      "description": "Type description",
+      "additionalProperties": false,
+      "properties": {
+        "tenantId": {
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "StoragePolicyModel": {
+      "description": "Type description",
+      "additionalProperties": false,
+      "properties": {
+        "payAsYouGoState": {
+          "$ref": "#/definitions/PayAsYouGoState"
+        }
+      },
+      "type": "object"
+    },
+    "TpsInstallRequestPayload": {
+      "description": "Type description",
+      "additionalProperties": false,
+      "properties": {
+        "payloadValue": {
+          "type": "string",
+          "x-nullable": true
+        }
+      },
+      "type": "object"
+    }
+  },
+  "x-components": {}
+}
