@@ -66,20 +66,29 @@ For details on updating the welcome message and help text on the demo website, g
 
 After publishing your bot at least once, you can add channels to make the bot reachable by your customers. 
 
-To view the currently supported channels:
+To configure channels:
 
 1. Select **Manage**.
 2. In the left side navigation pane, select the **Channels** tab.
 
 ![Channel settings.](media/channel-channels-menu.png)
 
-Each channel requires different steps and configurations, which can be found in the following topics:
+The connection steps are different for each channel. See the related article in the list below more information.
 
-- [Configure the demo website and add the bot to your live website](publication-connect-bot-to-web-channels.md)
-- [Add bot to Microsoft Teams](publication-add-bot-to-microsoft-teams.md)
-- [Add bot to Facebook](publication-add-bot-to-facebook.md)
-- [Add bot to mobile and custom apps (web-based or native)](publication-connect-bot-to-custom-application.md)
-- [Add bot to Azure Bot Service channels](publication-connect-bot-to-azure-bot-service-channels.md)
+* [Microsoft Teams](publication-add-bot-to-microsoft-teams.md)
+* [Website](publication-connect-bot-to-web-channels.md)
+* [Mobile App (web-based or native)](publication-connect-bot-to-custom-application.md)
+* [Facebook](publication-add-bot-to-facebook.md)
+* Skype
+* Cortana
+* Slack
+* Telegram
+* Twilio
+* Line
+* Kik
+* GroupMe
+* Direct Line Speech
+* Email
 
 ## Channel experience reference table
 
