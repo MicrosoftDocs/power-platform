@@ -5,7 +5,7 @@ services: powerapps
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/14/2021
+ms.date: 12/06/2021
 ms.subservice: admin
 author: ChrisGarty
 ms.author: cgarty
@@ -36,6 +36,7 @@ About **system backups**:
 - System backups for production environments that have been created with a database and have one or more Dynamics 365 applications installed are retained up to 28 days. System backups for production environments which don't have Dynamics 365 applications deployed in them will be retained for 7 days. System backups for sandbox environments will be retained for 7 days.
 - You must restore an environment to the same region in which it was backed up.
 - When an environment is restored onto itself, audit logs aren't deleted. For example, when an environment is restored onto itself to a past time t1, full audit data for the environment will be available, including any audit logs that were generated after t1.
+- The target environment will be listed in the **Select environment to overwrite** drop-down. If you do not see an environment, note that the target environment must be in the same geo (geographical region) as the source environment. 
 
   
 ### Restore a system backup  
