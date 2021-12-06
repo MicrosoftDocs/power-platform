@@ -28,11 +28,12 @@ The ALM Accelerator components solution doesn't have a dependency on other compo
 
 ## Setup Options
 There are 2 setup options available for the ALM Accelerator for Power Platform.
-1. Set up using the [Center of Excellence Command Line Interface (coe-cli)](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli#readme)
+
+1. Set up using the [Center of Excellence Command Line Interface (coe-cli)](/power-platform/guidance/coe/cli/overview)
 1. Set up manually by using this step-by-step walkthrough
 
 > [!IMPORTANT]
-> **It's recommended that you use the [Center of Excellence Command Line Interface (coe-cli)](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli#readme) to assist in automating these steps**. This document will provide details and context for the actions that are performed by the coe-cli and act as a reference for anyone who wants to know the specifics of each step in the process.
+> **It's recommended that you use the [Center of Excellence Command Line Interface (coe-cli)](/power-platform/guidance/coe/cli/overview) to assist in automating these steps**. This document will provide details and context for the actions that are performed by the coe-cli and act as a reference for anyone who wants to know the specifics of each step in the process.
 
 ## Document structure
 

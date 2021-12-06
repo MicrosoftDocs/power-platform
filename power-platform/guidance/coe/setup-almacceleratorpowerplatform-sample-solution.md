@@ -247,7 +247,7 @@ To get started using the ALM Accelerator For Advanced Makers App, follow the ins
 
 ## Test the ALM Accelerator App
 
-1. Download the **latest unmanaged solution** of the **ALM Accelerator Sample Solution** from the latest release of the ALM Accelerator For Advanced Makers on GitHub (<https://github.com/microsoft/coe-starter-kit/releases>).
+1. Download the **latest unmanaged solution** of the **ALM Accelerator Sample Solution** from the latest release of the ALM Accelerator For Advanced Makers on [GitHub](https://github.com/microsoft/coe-starter-kit/releases).
 
     > [!NOTE]
     > The screenshot below is for reference as to where the unmanaged solution exists under a release. The actual version should be the most recent release.

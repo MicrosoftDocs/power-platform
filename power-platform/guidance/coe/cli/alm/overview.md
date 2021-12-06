@@ -77,7 +77,7 @@ coe alm maker add \
 
 ## Understand the Concepts
 
-Not sure what ALM is and how it can help? The main GitHub project [README](https://github.com/microsoft/coe-starter-kit/blob/main/ALMAcceleratorForAdvancedMakers/README.md) provides further context and examples of usage.
+Not sure what ALM is and how it can help? The [User Guide](/power-platform/guidance/coe/almacceleratorpowerplatform-components) provides further context and examples of usage.
 
 ### Getting Started
 
@@ -114,7 +114,7 @@ Notes:
 
 ### Read Next
 
-- [ALM Accelerator for Power Platform](https://github.com/microsoft/coe-starter-kit/tree/main/ALMAcceleratorForAdvancedMakers) - Overview for ALM
+- [ALM Accelerator for Power Platform](/power-platform/guidance/coe/almacceleratorpowerplatform-components) - Overview for ALM
 - Manual Setup - Understand the key steps that the CLI is automating
   - [Foundational Setup](/power-platform/guidance/coe/setup-almacceleratorpowerplatform#foundational-setup) - Foundational Setup for Manual steps automated by the CLI install command
   - [Development Project Setup](/power-platform/guidance/coe/setup-almacceleratorpowerplatform#development-project-setup) - Documents the Manual steps that are automated by the CLI install command
