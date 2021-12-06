@@ -20,13 +20,13 @@ search.app:
 
 # Personas
 
-Understanding the roles that different personas play in ALM Accelerator for Power Platform (AA4PP) is important in helping you plan for and implement a ALM deployment in your organization.
+Understanding the roles that different personas play in ALM Accelerator for Power Platform (AA4PP) is important in helping you plan for and implement an ALM deployment in your organization.
 
 ## Persona Description
 
 ### Business Users
 
-Licensed internal users of the created solutions. Will not directly use the AA4PP tools they will be able to see the shared applications. May report version number of application to the support team.
+Internal users of the created solutions. Won't directly use the AA4PP tools but they'll be able to see the shared applications. May report version number of application to the support team.
 
 ### Maker
 
@@ -34,19 +34,19 @@ Wants to use components or services produced by an advanced maker or professiona
 
 ### Advanced Maker
 
-Collaborates with Professional Development and Information Technology (IT) teams to integrate and build applications. Assumed to be familiar with concepts like Application Lifecycle Management (ALM), DevOps, Branching and Merging. Works in Development environment and push changes into validation and testing and production environments. Uses managed AA4PP Canvas management application and Azure DevOps website.
+Collaborates with Professional Development and Information Technology (IT) teams to integrate and build applications. Assumed to be familiar with concepts like Application Lifecycle Management (ALM), DevOps, Branching, and Merging. Works in Development environment and push changes into validation and testing and production environments. Uses managed AA4PP Canvas management application and Azure DevOps website.
 
 ### Professional Developer
 
-Advanced maker knowledge plus the ability to use lower level development programing languages and SDKs to create components and services. For example JavaScript and PCF controls, Dataverse Plugins in C#, Azure Services and APIs for example Azure Functions, API Management. Likely to work in tools like Visual Studio Code.
+Advanced maker knowledge plus the ability to use lower-level development programing languages and SDKs to create components and services. For example JavaScript and PCF controls, Dataverse Plugins in C#, Azure Services and APIs, for example,  Azure Functions, API Management. Likely to work in tools like Visual Studio Code.
 
 ### Data Analyst
 
-Develop data model, Create and manage data services and post data collection analysis / reporting. For example Power BI reporting, Datalake. For data elements that are covered in the SOlution system for example, Dataverse Modeling, AI Models. Items not covered today in solution system like Power BI will have separate ALM process.
+Develop data model, Create, and manage data services and post data collection analysis / reporting. For example, using Power BI reporting and Azure Data Lake. For data elements that are covered in the Solution system, for example, Dataverse Modeling, AI Models. Items not covered today in solution system like Power BI will have separate ALM process.
 
 ### Operations Teams
 
-Deploy solution to environments across Power Platform and Microsoft Cloud Services (For example Azure). Distribute solutions into Power Platform and run Azure Resource Manager templates in Azure. Will not use the CLI commands directly. May use managed canvas application to view and Azure DevOps Pipelines to view the status or promote applications from test to production.
+Deploy solution to environments across Power Platform and Microsoft Cloud Services (For example Azure). Distribute solutions into Power Platform and run Azure Resource Manager templates in Azure. Won't use the CLI commands directly. May use managed canvas application to view and Azure Pipelines to view the status or promote applications from test to production.
 
 ### Support Teams
 
@@ -54,7 +54,7 @@ Post application deployment look at version of applications deployed, triage iss
 
 ### Information Security Team
 
-Will compare against organization standards for Data Loss Prevention (DLP), Authentication and Authorization, Service Principals, Teams and Security. Review the ALM process against Threat models, risks and mitigations.
+Will compare against organization standards for Data Loss Prevention (DLP), Authentication and Authorization, Service Principals, Teams and Security. Review the ALM process against Threat models, risks, and mitigations.
 
 ### Architecture Team
 
@@ -104,7 +104,7 @@ More information on the [coe alm maker add](https://github.com/microsoft/coe-sta
 
 #### Azure Tenant Administrator
 
-Manage the AAD Tenant - Create User, Groups,  Applications and Service Principals (O365 or Azure Administrators). Common commands
+Manage the AAD Tenant - Create User, Groups,  Applications, and Service Principals (O365 or Azure Administrators). Common commands
 
 ```bash
 coe alm install -c aad
@@ -118,7 +118,7 @@ More information on the [coe alm install](https://github.com/microsoft/coe-start
 coe alm install -c devops \
   -o https://dev.azure.com/dev12345 \
   -p alm-sandbox
-``` 
+```
 
 More information on the [coe alm install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/install.md) command
 
@@ -128,7 +128,7 @@ More information on the [coe alm install](https://github.com/microsoft/coe-start
 
 ## Solution Setup
 
-Assuming that AA4PP has been setup and installed, the first command that the Advanced Maker will run is the **coe alm user add** command. This command will register an Application User created during install as a System administrator in their development environment to integrate with the solution. For example using the default parameters
+Assuming that AA4PP has been set up and installed, the first command that the Advanced Maker will run is the **coe alm user add** command. This command will register an Application User created during install as a System administrator in their development environment to integrate with the solution. For example, using the default parameters
 
 ```bash
 coe alm user add \
@@ -164,7 +164,7 @@ coe alm maker add \
 
 More information on the [coe alm maker add](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/maker/add.md) command
 
-Each Azure DevOps project will also require connections to deployment environments used by Azure DevOps Pipelines
+Each Azure DevOps project will also require connections to deployment environments used by Azure Pipelines
 
 ```bash
 coe alm connection add \
@@ -193,10 +193,10 @@ More information on the [coe alm connection add](https://github.com/microsoft/co
 To deploy an instance of AA4PP in your organization the **coe alm generate install** and **coe alm install** commands are used once to deploy the Managed solution. The install will automate key elements:
 
 1. Azure Active Directory
-    - New Azure Active directory Application that will be used by Azure DevOps for Service Connections and Access to Power Platform Environment
+    - New Azure Active directory Application used by Azure DevOps for Service Connection access to Power Platform
     - New Azure Active Directory Group to provide access to Azure DevOps resources and Share the Maker Canvas application
 1. Azure DevOps resources
-    - Import Azure DevOps Pipelines
+    - Import Azure Pipelines
     - Variable Groups
     - Create Service Connections to Power Platform Environments
 1. Power Platform Environments

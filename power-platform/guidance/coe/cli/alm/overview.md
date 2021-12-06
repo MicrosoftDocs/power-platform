@@ -19,14 +19,14 @@ search.app:
 
 # ALM Accelerator for Power Platform
 
-The cli alm command allows you to manage common Application Lifecycle Management (ALM) tasks to install, setup and administration of Power Platform Solutions.
+The cli alm command allows you to manage common Application Lifecycle Management (ALM) tasks to install, setup, and administration of Power Platform Solutions.
 
 - [Quick Start](#quick-start) - Guides you through the process of a [demo tenant install](./scenarios/tenant-deployments.md#demonstration-deployment)
-- [Understand the Concepts](#understand-the-concepts) - Covers Scenarios, Personas and Key Concepts and the install process using the CoE CLI
+- [Understand the Concepts](#understand-the-concepts) - Covers Scenarios, Personas, and Key Concepts and the install process using the CoE CLI
 
 ## Quick Start
 
-For an Administrator the quick start guide should take around 30 minutes and by the end have configured Azure Active Directory, Azure DevOps and the Power Platform environments.
+For an Administrator, the quick start guide should take around 30 minutes and by the end have configured Azure Active Directory, Azure DevOps, and the Power Platform environments.
 
 1. Validate organization [maturity model](./maturity/overview.md#quick-start) for ALM
 
@@ -48,7 +48,7 @@ coe alm install -f quickstart.json
 
    More information on the [coe alm install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/install.md) command
 
-   Deploying to your enterprise? Refer to [Enterprise Deployment](./scenarios/tenant-deployments.md#enterprise-deployment) for further information.
+   Deploying to your enterprise? For more information, see [Enterprise Deployment](./scenarios/tenant-deployments.md#enterprise-deployment).
 
 1. [Update permissions for the project build service](https://github.com/microsoft/coe-starter-kit/blob/main/ALMAcceleratorForAdvancedMakers/SETUPGUIDE.md#update-permissions-for-the-project-build-service) to enable build pipelines to interact with Git Repositories
 
@@ -106,11 +106,11 @@ The following recording shows a sample generating an install configuration file 
 
 3. Have Makers create [Development Environments](./development-environments.md)
 
-4. Use [Maker Setup](./maker-setup.md) to create and setup environment and solution branches in the Azure DevOps repository.
+4. Use [Maker Setup](./maker-setup.md) to create and set up environment and solution branches in the Azure DevOps repository.
 
 Notes:
 
-1. If this is your first build pipeline you will need to set Pipeline Variables for your environment. At a minimum, you will need to set **ServiceConnection** variable to your environment you have setup for validation, test and production.
+1. If this is your first build pipeline, you'll need to set Pipeline Variables for your environment. At a minimum, you'll need to set **ServiceConnection** variable to your environment you have setup for validation, test, and production.
 
 ### Read Next
 
@@ -118,5 +118,5 @@ Notes:
 - Manual Setup - Understand the key steps that the CLI is automating
   - [Foundational Setup](https://github.com/microsoft/coe-starter-kit/blob/main/ALMAcceleratorForAdvancedMakers/SETUPGUIDE.md#foundational-setup) - Foundational Setup for Manual steps automated by the CLI install command
   - [Development Project Setup](https://github.com/microsoft/coe-starter-kit/blob/main/ALMAcceleratorForAdvancedMakers/SETUPGUIDE.md#development-project-setup) - Documents the Manual steps that are automated by the CLI install command
-  - [Solution Setup](https://github.com/microsoft/coe-starter-kit/blob/main/ALMAcceleratorForAdvancedMakers/SETUPGUIDE.md#solution-setup) - Documents the manual steps to setup Azure DevOps that are performed by the CLI install command
+  - [Solution Setup](https://github.com/microsoft/coe-starter-kit/blob/main/ALMAcceleratorForAdvancedMakers/SETUPGUIDE.md#solution-setup) - Documents the manual steps to set up Azure DevOps that are performed by the CLI install command
   - [Importing Solution](https://github.com/microsoft/coe-starter-kit/blob/main/ALMAcceleratorForAdvancedMakers/SETUPGUIDE.md#importing-the-solution-and-configuring-the-app) - Documents the manual steps to import the managed solution that are performed by the CLI install command

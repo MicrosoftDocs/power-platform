@@ -19,7 +19,7 @@ search.app:
 
 # Development Environments
 
-Each advanced maker will need a development environment created. Advanced makers can use a community environment to work in. Community environments can be accessed from the sign-up page https://web.powerapps.com/community/signup
+Each advanced maker will need a development environment created. Advanced makers can use a community environment to work in. Community environments can be accessed from the sign-up page [https://web.powerapps.com/community/signup](https://web.powerapps.com/community/signup)
 
 ## Admin Maker Setup
 

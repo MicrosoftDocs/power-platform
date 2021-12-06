@@ -19,11 +19,11 @@ search.app:
 
 # Administrator Install
 
-As a first step you will need to complete the initial steps of an ALM deployment as Administrator. The commands below allow you to quickly automate the install. When you completed these steps, you can add Advanced Makers and setup connections to their Power Platform development environments.
+As a first step you'll need to complete the initial steps of an ALM deployment as an Administrator. The commands below allow you to quickly automate the install. When you completed these steps, you can add Advanced Makers and setup connections to their Power Platform development environments.
 
 ![ALM Accelerator for Power Platform Install Overview](../media/alm-install-overview.png)
 
-It is assumed that the Administrator Install will be run by a single user that has the following rights:
+It's assumed that this installation will be run by a single user that has the following rights:
 
 1. Power Platform Global Administrator
 

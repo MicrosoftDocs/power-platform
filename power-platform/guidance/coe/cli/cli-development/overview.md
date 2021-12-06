@@ -1,6 +1,6 @@
 ---
 title: "Center of Excellence (CoE) Command Line Interface (CLI) Overview"
-description: "Overview of development for Center of Excellence Command Line interface commands"
+description: "Overview of development for Center of Excellence Command-Line interface commands"
 keywords: 
 author: Grant-Archibald-MS
 ms.author: grarchib
@@ -19,7 +19,7 @@ search.app:
 
 # CLI Development
 
-This section outlines the following key sections on the CoE CLI. The information below can help guide you in making contributions back to the open source repository.
+This section outlines the following key sections on the CoE CLI. The information below can help guide you in making contributions back to the open-source repository.
 
 - [Quick Start](#quick-start) - Provides set of links of the technology used to build and test the CLI
 
@@ -31,10 +31,10 @@ This section outlines the following key sections on the CoE CLI. The information
 
 ## Quick Start
 
-The coe-cli command line application makes use of following components
+The coe-cli command-line application makes use of following components
 
-1. [NodeJS](https://nodejs.org/en/) to provide cross platform support
-1. TypeScript to leverage published type definitions for dependent components
+1. [NodeJS](https://nodejs.org/en/) to provide cross-platform support
+1. TypeScript to use published type definitions for dependent components
 1. Jest for unit tests.
 
 ### Initial Commands
@@ -73,20 +73,20 @@ Documentation is critical for users of the CoE understanding the commands. The [
 
 ### Development Frameworks
 
-If you are new to TypeScript the following links may help
+If you're new to TypeScript, the following links may help
 
 - [Typescript docs](https://www.typescriptlang.org/docs/)
 - [Getting Started with TypeScript - Learning Module](/learn/modules/typescript-get-started/)
 
-If you are new to unit testing with Jest you can start with 
+If you're new to unit testing with Jest, you can start with
 
 - [Jest getting started](https://jestjs.io/docs/getting-started)
 
 ### Development Environment Setup
 
-You can edit and debug the cli using Visual Studio Code
+You can edit and debug the CLI using Visual Studio Code
 
-1. If you do not have Visual Studio Code you can visit [https://code.visualstudio.com/Download](https://code.visualstudio.com/Download)
+1. If you don't have Visual Studio Code, you can visit [https://code.visualstudio.com/Download](https://code.visualstudio.com/Download)
 
 1. Once installed Open the coe-cli folder in Visual Studio Code
 
@@ -98,9 +98,9 @@ You can edit and debug the cli using Visual Studio Code
 
 NOTES:
 
-- Depending on the command you want to debug you may be prompted to login in the DEBUG CONSOLE
+- Depending on the command, you want to debug you may be prompted to log in to the DEBUG CONSOLE
 
-- If you are testing with a different account you will need to log out of any existing Azure CLI sessions
+- If you're testing with a different account, you will need to log out of any existing Azure CLI sessions
 
 ```bash
 az logout
@@ -109,7 +109,7 @@ az logout
 
 ### Debugging Commands
 
-You can debug the coe-cli application commands using Visual Studio Code. 
+You can debug the coe-cli application commands using Visual Studio Code.
 
 1. Change the sample.json to the command or commands you want to run
 1. Open the coe-cli folder in Visual Studio Code

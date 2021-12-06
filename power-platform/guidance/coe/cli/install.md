@@ -1,6 +1,6 @@
 ---
 title: "Center of Excellence (CoE) Command Line Interface (CLI) Install"
-description: "Install instructions for the Center of Excellence Command Line interface"
+description: "Install instructions for the Center of Excellence Command-Line interface"
 keywords: 
 author: Grant-Archibald-MS
 ms.author: grarchib
@@ -42,11 +42,11 @@ Next select either [Local Install](#local-install) or [Docker Install](#docker-i
 
 ### Prerequisites
 
-To run the CoE CLI application you will require the following
+To run the CoE CLI application, you'll need to install the components below
 
 1. An installation of Node 11+
 
-   a. https://nodejs.org/en/download/
+   a. [https://nodejs.org/en/download/](https://nodejs.org/en/download/)
 
 2. Azure CLI (version 2.24.0 or greater) is required for user authentication and Azure Active Directory Integration
 
@@ -54,7 +54,7 @@ To run the CoE CLI application you will require the following
 
 ### Checking Prerequisites
 
-To check prerequisites have been installed correctly and have the correct versions at the command prompt
+To check prerequisites have been installed correctly and the correct versions are installed use the following commands at the command prompt
 
 1. Verify node version
 
@@ -90,9 +90,9 @@ npm link
 
 NOTE:
 
-1. On Windows you may need to add %APPDATA%\npm to your PATH environment variable to access the coe command
+1. On Windows, you may need to add %APPDATA%\npm to your PATH environment variable to access the coe command
 
-1. Install Azure CLI. Follow install instructions for your operating system at [Install Azure CLI](/cli/azure/install-azure-cli) 
+1. Install Azure CLI. Follow install instructions for your operating system at [Install Azure CLI](/cli/azure/install-azure-cli)
 
 ## Docker Install
 
@@ -100,13 +100,14 @@ One method of installation is via docker.
 
 ### Docker Prerequisites
 
-To run the CoE CLI application you will require the following
+To run the CoE CLI application, you'll require the following
 
-1. A local install of [Docker](https://docs.docker.com/get-docker/) this can be either Community Edition or Enterprise Edition. If you are installing onto a desktop environment you will normally pick a Community Edition deployment.
+1. A local install of [Docker](https://docs.docker.com/get-docker/). The install can be either Community Edition or Enterprise Edition. If you're installing onto a desktop environment, you'll normally pick a Community Edition deployment.
 
 ### Docker Install Steps
 
-NOTE: On some operating systems you may need to use sudo before each of the docker commands.
+>[!Note]
+>On some operating systems, you may need to use sudo before each of the docker commands.
 
 1. Build docker image.
 
@@ -121,4 +122,4 @@ docker build -t coe-cli .
 docker run -it --rm coe-cli
 ```
 
-This will start a new interactive console (-it) and remove the docker container (--rm) when the console session exits. Using --rm ensures that any cached credentials are removed when you exit.
+This command will start a new interactive console (-it) and remove the docker container (--rm) when the console session exits. Using --rm ensures that any cached credentials are removed when you exit.

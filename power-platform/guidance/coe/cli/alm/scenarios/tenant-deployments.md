@@ -21,13 +21,13 @@ search.app:
 
 AA4PP can be deployed in the following scenarios single demo tenant, single enterprise tenant.
 
-Currently AA4PP **does not** automatically support a multi tenant enterprise deployment model and additional manual configuration will be required to configure this scenario.
+Currently AA4PP **doesn't** automatically support a multitenant enterprise deployment model and more manual configuration will be required to configure this scenario.
 
 ![Deployments Scenarios](../../media/alm-deployments.png)
 
 ## Factors to Consider
 
-- Does ALM for Low Code solutions introduce new concepts to parts of the business that has not been exposed to them before?
+- Does ALM for Low Code solutions introduce new concepts to parts of the business that hasn't been exposed to them before?
 
 - Would a demo deployment provide an environment to allow the different [personas](../personas.md) to experiment and accelerate adoption of ALM processes?
 
@@ -35,28 +35,28 @@ Currently AA4PP **does not** automatically support a multi tenant enterprise dep
 
 - How will the maker community be expanded to adopt new ALM concepts?
 
-- What steps can be put in place to adopt a self service model to provision environments and move between validation, test and production environments.
+- What steps can be put in place to adopt a self-service model to create environments and move between validation, test and production environments.
 
 ## Demonstration Deployment
 
-In this scenario you are looking to quickly install AA4PP to demonstrate how it works and showcase the end to end process. For this scenario the following is expected:
+For this scenario, you're looking to quickly install AA4PP to demonstrate how it works and showcase the end-to-end process. For this scenario, the following configuration is expected:
 
 1. Using Trial tenant and environments to demonstrate the solution
 
-1. Single Administrator that has rights to the following:
+1. Single Administrator that has the following rights:
    - Azure Active Directory tenant administrator
    - Power Platform Global Administrator
    - Power Platform Organization Administrator
 
-1. Demo non administration maker users that will be used to show process of creating ALM process for Power Platform solutions
+1. Demo non-administration maker users that will be used to show process of creating ALM process for Power Platform solutions
 
-1. Non production applications
+1. Non-production applications
 
 ## Post Install
 
 Once you have the [Admin Install](../admin-install.md) completed, Advanced makers can create [Development environments](../development-environments.md) and have Administrators add them to Azure DevOps and the required Azure Active Directory Security Group.
 
-This will typically use the following commands as the **single administrator**
+You'll typically use the following commands as the **single administrator**
 
 ```bash
 coe alm generate install -o quickstart.json
@@ -78,11 +78,11 @@ coe alm maker add \
 
 More information on the [coe alm maker add](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/maker/add.md) command
 
-Once these steps are completed makers can then [Setup Managed Solutions](../maker-setup.md)
+Once these steps are completed, makers can then [Setup Managed Solutions](../maker-setup.md)
 
 ## Enterprise Deployment
 
-In this scenario the aim is to install AA4PP inside an enterprise tenant and the following is expected.
+In this scenario, the aim is to install AA4PP inside an enterprise tenant and the following configuration is expected.
 
 1. Likely to have different administration teams. For example
    - Azure Active Directory Administrators
@@ -97,20 +97,20 @@ In this scenario the aim is to install AA4PP inside an enterprise tenant and the
 The tenant administration team will need to create the following
 
 1. Azure Active Directory Application that will be used as Service Principal in Azure DevOps and Power Platform Environments
-1. Azure Active Directory Group that will be used to grant access to Makers to Azure DevOps resources, Maker Canvas Application and Dataverse Tables.
-1. Grant Tenant Consent for Azure Active Directory Application. This required as the Azure DevOps pipeline uses APIs where an interactive user is not involved. As a result the tenant administrator consent is required.
+1. Azure Active Directory Group that will be used to grant access to Makers to Azure DevOps resources, Maker Canvas Application, and Dataverse Tables.
+1. Grant Tenant Consent for Azure Active Directory Application. This permission is required as the Azure DevOps pipeline uses APIs where there's no interactive user involved. As a result the tenant administrator consent is required.
 
-To install the solution resources the following options can be used
+To install the solution resources, the following options can be used
 
 #### Azure Active Directory
 
-1. Use the CLI to install the AAD components. For example using the default install parameters
+1. Use the CLI to install the AAD components. For example, using the default install parameters
 
 ```bash
 coe alm install -c aad
 ```
 
-2. Using a shared configuration file and setting components array value to be [ "aad" ]
+1. Using a shared configuration file and setting components array value to be [ "aad" ]
 
 ```json
 {
@@ -191,25 +191,25 @@ coe alm install -f install.json
 }
 ```
 
-1. Manual install using the [Create An App Registration in your AAD environment](https://github.com/microsoft/coe-starter-kit/blob/main/ALMAcceleratorForAdvancedMakers/SETUPGUIDE.md#create-an-app-registration-in-your-aad-environment)
+1. Manual installation using the [Create An App Registration in your AAD environment](https://github.com/microsoft/coe-starter-kit/blob/main/ALMAcceleratorForAdvancedMakers/SETUPGUIDE.md#create-an-app-registration-in-your-aad-environment)
 
 ## Multi Tenant Deployment
 
-This deployment type involves different Azure Active Directory deployments that separate development, test and production systems. For example the following Azure Active Directory tenants
+This deployment type involves different Azure Active Directory deployments that separate development, test, and production systems. For example, the following Azure Active Directory tenants
 
 - contoso.onmicrosoft.com
 
 - contoso-dev.onmicrosoft.com
 
-Currently the AA4PP installation does not automatically support a multi-tenant deployment without further manual updated.
+Currently the AA4PP installation doesn't automatically support a multi-tenant deployment without manual updates.
 
 ### Multi Tenant Deployment Assumptions
 
-The multi tenant deployment is assumed to have one or more of the following
+The multi-tenant deployment is assumed to have one or more of the following
 
 1. Multiple Azure Active Directory tenants
 
-1. Power Platform Environments for Development, Validation, Test and Production may be in different tenants.
+1. Power Platform Environments for Development, Validation, Test, and Production may be in different tenants.
 
 1. The Azure DevOps environment may be in the Development tenant
 
@@ -219,7 +219,7 @@ The multi tenant deployment is assumed to have one or more of the following
 
 ### Azure Active Directory Implications
 
-To support multi tenant deployments the Azure Active Directory application will need to be configured to support multi tenant authentication.
+To support multi-tenant deployments, the Azure Active Directory application will need to be configured to support multi-tenant authentication.
 
 #### Further reading
 

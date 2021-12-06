@@ -1,6 +1,6 @@
 ---
 title: "Center of Excellence (CoE) Command Line Interface (CLI) Upgrade"
-description: "Upgrade instructions for the Center of Excellence Command Line interface"
+description: "Upgrade instructions for the Center of Excellence Command-Line interface"
 keywords: 
 author: Grant-Archibald-MS
 ms.author: grarchib
@@ -23,7 +23,7 @@ Upgrade will depend on how you installed the CoE CLI
 
 ## Download
 
-It you downloaded the CoE CLI as a zip file or a git clone from [coe-starter-kit](https://github.com/microsoft/coe-starter-kit)
+If you downloaded the CoE CLI as a zip file or a git clone from [coe-starter-kit](https://github.com/microsoft/coe-starter-kit)
 
 - Download the new zip file
 - Unzip the zip file to a new folder
@@ -45,7 +45,7 @@ cd coe-cli
 
 ### Local Upgrade
 
-In the coe-cli folder run the following commands
+In the coe-cli folder, run the following commands
 
 1. Install the dependencies
 
@@ -70,7 +70,7 @@ npm link --force
 
 ## Docker Image
 
-In the coe-cli folder run the following commands
+In the coe-cli folder, run the following commands
 
 1. Build new docker image
 

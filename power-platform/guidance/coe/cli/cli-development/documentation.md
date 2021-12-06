@@ -1,6 +1,6 @@
 ---
 title: "Center of Excellence (CoE) Command Line Interface (CLI) documentation"
-description: "Documentation for the Center of Excellence Command Line interface commands"
+description: "Documentation for the Center of Excellence Command-Line interface commands"
 keywords: 
 author: Grant-Archibald-MS
 ms.author: grarchib
@@ -19,7 +19,7 @@ search.app:
 
 # Documentation
 
-Documentation is key to understanding how the CLI works. As you add new commands consider the following:
+Documentation is key to understanding how the CLI works. As you add new commands, consider the following documentation:
 
 - [Add Markdown Pages](#add-markdown-pages) - Describe the functionality for end users
 - [Recording Command Line](#recording-command-line) to demonstrate process
@@ -36,7 +36,7 @@ Consider adding the following to the page:
 
 ## Diagrams
 
-For decision trees the diagrams are generated via [mermaid](https://mermaid-js.github.io/mermaid).
+For decision trees, the diagrams are generated via [mermaid](https://mermaid-js.github.io/mermaid).
 
 Example diagrams:
 
@@ -80,7 +80,7 @@ graph TD
    end
 ```
 
-To color the end circle green using css [starts with selector](https://www.w3schools.com/cssref/sel_attr_begin.asp). This is required as each item will have a unique id assigned by mermaid.
+To color the end circle green using css [starts with selector](https://www.w3schools.com/cssref/sel_attr_begin.asp). This is required as each item will have a unique ID assigned by mermaid.
 
 ```css
 [id^=flowchart-finish] circle {
@@ -127,7 +127,7 @@ The command above will display the contents of [help/alm/overview.md](https://gi
 
 ## Recording Command Line
 
-To include a short animated recording of commands that demonstrate the expected output you can use the following process
+To include a short animated recording of commands that demonstrate the expected output, you can use the following process
 
 1. Install termtosvg in a Unix based terminal
 

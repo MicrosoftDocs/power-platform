@@ -1,6 +1,6 @@
 ---
 title: "Center of Excellence (CoE) Command Line Interface (CLI) Application Lifecycle Management (ALM) Accelerator key concepts"
-description: "Key concepts related tp ALM Accelerator using the Center of Excellence (CoE) Command Line Interface (CLI)"
+description: "Key concepts related to ALM Accelerator using the Center of Excellence (CoE) Command Line Interface (CLI)"
 keywords: 
 author: Grant-Archibald-MS
 ms.author: grarchib
@@ -20,13 +20,13 @@ search.app:
 
 # Key Concepts
 
-As you deploy and use the ALM CLI it is important to understand the following key concepts that the CLI is automating.
+As you deploy and use the ALM CLI, it's important to understand the following key concepts that the CLI is automating.
 
 ## Azure Active Directory
 
 ### Azure Active Directory Application
 
-The CoE CLI application can create a Azure Active Directory application that automates the following key steps:
+The CoE CLI application can create an Azure Active Directory application that automates the following key steps:
 
 1. User authenticated via Azure CLI
    - [Azure Login](/cli/azure/reference-index?#az_login)
@@ -47,11 +47,11 @@ The CoE CLI application can create a Azure Active Directory application that aut
 
    - Client secrets should have an established key rotation process to generate new keys for connections
 
-   - After new keys are generated old keys should be removed
+   - After new keys are generated, old keys should be removed
 
 ### Azure Active Directory Group
 
-The CoE CLI application can create a Azure Active Directory group that is used for Azure DevOps and Power Platform authentication and role based access security.
+The CoE CLI application can create an Azure Active Directory group that is used for Azure DevOps and Power Platform authentication and role-based access security.
 
 1. Group Created via Azure CLI
    - [Create Group](/cli/azure/ad/group?#az_ad_group_create)
@@ -66,9 +66,9 @@ The install performs the following key steps:
 
 1. Install Azure DevOps Extensions defined in [AzureDevOpsExtensionsDetails.json](https://github.com/microsoft/coe-starter-kit/blob/main/coe-cli/config/AzureDevOpsExtensionsDetails.json)
 
-   a. New extensions can be added from https://marketplace.visualstudio.com/item. Visit each extension and add the publisher and the **itemName** from the query string in the browser
+   a. New extensions can be added from [https://marketplace.visualstudio.com/item](https://marketplace.visualstudio.com/item). Visit each extension and add the publisher and the **itemName** from the query string in the browser
 
-1. Clone Azure Templates [https://github.com/microsoft/coe-alm-accelerator-templates.git](https://github.com/microsoft/coe-alm-accelerator-templates.git) into a Azure DevOps git repository named **pipelines** by default
+1. Clone Azure Templates [https://github.com/microsoft/coe-alm-accelerator-templates.git](https://github.com/microsoft/coe-alm-accelerator-templates.git) into an Azure DevOps git repository named **pipelines** by default
 
 1. Create Azure DevOps build pipelines
   
@@ -80,7 +80,7 @@ The install performs the following key steps:
 
 1. Setup Azure Active Group access the Azure DevOps project
 
-1. Create Variable Groups for shared variables used by build pipelines 
+1. Create Variable Groups for shared variables used by build pipelines
 
    - [Read More](/azure/devops/pipelines/library/variable-groups)
 
@@ -106,7 +106,7 @@ In addition to install automation the following concepts are also assumed for Ma
 
 1. A git [branching strategy](./branching-and-merging.md)
 
-- The alm commands assumes a branch per solution
+- The alm commands assume a branch per solution
 
 - Changes merged back into main branch can be promoted to production environment
 
@@ -130,9 +130,9 @@ The CoE CLI provides the following key steps:
 
 ### Environments
 
-The CoE CLI commands currently assume the following environments have been created https://aka.ms/ppac as a Global Administrator or Environment Administrator with the following:
+The CoE CLI commands currently assume the following environments have been created [https://aka.ms/ppac](https://aka.ms/ppac) as a Global Administrator or Environment Administrator with the following configuration:
 
-1. Dataverse enabled 
+1. Dataverse enabled
 
 1. Azure Active Directory Service principal has be ganged Administration role rights.
 
@@ -140,11 +140,11 @@ The CoE CLI commands currently assume the following environments have been creat
 
 The ALM Accelerator for Power Platform assumes the following environments have been created and configured:
 
-1. Maker Environment - An environment that the ALM Accelerator for Power Platform will be installed to. In addition it requires the following:
+1. Maker Environment - An environment that the ALM Accelerator for Power Platform will be installed to. It also requires the following components:
 
    - Created "Microsoft Dataverse (legacy)" connection - [Read More](./before-you-start.md#maker-environment-dataverse)
 
-1. Validation- Environment used to validate deployment before a changes is merged into feature branch
+1. Validation- Environment used to validate deployment before a change is merged into feature branch
 
 1. Test - Environment used to validate changes before merging into Production
 

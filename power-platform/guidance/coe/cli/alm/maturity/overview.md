@@ -32,13 +32,13 @@ AA4PP is a good match if you can check to see if the following apply:
    - Who is using the application?
       - Is this a Productivity application used by everyone in your organization?
       - Is it used by Senior Leadership to make business impact Decisions?
-      - Is it integrated with External users for example Partners / Customer who will rely on solution as part of external process?
+      - Is it integrated with External users, for example,  Partners / Customer who will rely on solution as part of external process?
    - Are there specific Compliance and Auditing needs?
       - How important is tracking and auditing who is using the application?
       - Is there compliance and auditing requirements of the solution?
 
 1. Do you have the prerequisites in place?
-   - Do you have a defined [Environment strategy](../before-you-start.md#power-platform) for Development, Validation, Test and Production?
+   - Do you have a defined [Environment strategy](../before-you-start.md#power-platform) for Development, Validation, Test, and Production?
    - Do you use Azure DevOps or can you integrate with Azure DevOps for Source Control and Build Pipelines?
    - Do you have license prerequisites in place?
      - Do you have Basic or above Azure DevOps licenses for Makers?
@@ -63,7 +63,7 @@ AA4PP is a good match if you can check to see if the following apply:
 
 1. Do your Pro Code and Operations teams manage Azure Pipelines?
 
-1. Are you Pro code team creating components in JavaScript?
+1. Are you a Pro code team creating components in JavaScript?
 
 1. Are you integrating with OpenAPI enabled Web APIs?
 
@@ -75,7 +75,7 @@ AA4PP is a good match if you can check to see if the following apply:
 
 ## Addressing Gaps
 
-Where some gaps exist from the leading questions, then consider what proactive training and or workshops can help grow the maturity of people, process and technology to assist them in moving toward Advanced Maker integration inside your organization.
+Where some gaps exist from the leading questions, then consider what proactive training and or workshops can help grow the maturity of people, process, and technology to assist them in moving toward Advanced Maker integration inside your organization.
 
 ## Leading questions
 
@@ -105,7 +105,7 @@ The following questions may help with qualifying impact:
 
 1. Do applications focus on increased delivery efficiency, supporting rapidly changing business needs?
 
-1. Are there Organization wide initiatives to deliver larger scale integrated apps?
+1. Are there organization-wide initiatives to deliver large-scale integrated apps?
 
 ### Strategy
 
@@ -131,7 +131,7 @@ Evaluate the business value looking at:
 
 Leading questions to consider:
 
-1. What Business outcomes will this realize?
+1. What Business outcomes will this solution realize?
 
 1. What is the expected time frame?
 
@@ -187,9 +187,9 @@ Issues demand an immediate response and require 24x7 operation, every day.
 
 The system has moderate business impact and can be dealt with during business hours. The expected usage could be by multiple users or single users, customers.
 
-Initial Response time 2, 4 Hours or Next Day, Business hours access with 24x7 available support
+Initial Response time 2, 4 Hours, or Next Day, Business hours access with 24x7 available support
 
-### Non Critical
+### Non-Critical
 
 The system has minimal business impact. The issue is important but does not have a significant current service or productivity impact. Acceptable workarounds will be considered.
 
@@ -203,7 +203,7 @@ Leading questions to consider:
 
 1. What [Data Loss Prevention (DLP)](/power-platform/admin/wp-data-loss-prevention) policies are in place?
 
-1. [Power Platform Service Admin](/power-platform/admin/overview-role-powerapps-admin) roles exists to Administer Power Platform tenants and Environments?
+1. [Power Platform Service Admin](/power-platform/admin/overview-role-powerapps-admin) roles exist to Administer Power Platform tenants and Environments?
 
 1. Are tenants / environments isolated from each other?
 
@@ -257,10 +257,10 @@ Leading questions to consider:
 
 ### Fusion Teams
 
-1. Do you have [Standard libraries, custom connectors and components](/power-platform/guidance/adoption/reusable) to be consumed by makers?
+1. Do you have [Standard libraries, custom connectors, and components](/power-platform/guidance/adoption/reusable) to be consumed by makers?
 
-1. Do you have the need for fusion teams manage source control and app lifecycle (e.g. Build, Verification, Test, Production)
+1. Do you have the need for fusion teams manage source control and app lifecycle (for example, Build, Verification, Test, Production)
 
-1.Do you have Cross-functional teams that plan and execute work jointly, including makers, testers and operational teams?
+1.Do you have Cross-functional teams that plan and execute work jointly, including makers, testers, and operational teams?
 
 1. Do you have Common development strategy and goals for Citizen and Pro developers needed for new projects?
