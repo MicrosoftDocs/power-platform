@@ -2,15 +2,17 @@
 title: "Advanced AI features"
 description: "Use advanced AI features in Power Virtual Agents to improve how your bots interact with your bot users."
 keywords: "PVA, AI, advanced, topic intent, intent triggering"
-ms.date: 7/27/2021
+ms.date: 11/01/2021
 ms.service: power-virtual-agents
-ms.topic: article
+ms.topic: how-to
 author: iaanw
 ms.author: iawilt
 manager: shellyha
+ms.reviewer: micchow
 ms.custom: "advanced-authoring, ceX"
 ms.collection: virtual-agent
 ---
+
 # Enable advanced AI features in Power Virtual Agents
 
 - [!INCLUDE [Preview documentation notice](includes/cc-beta-prerelease-disclaimer.md)]
@@ -28,17 +30,16 @@ Select the version of Power Virtual Agents you're using here:
 
 Power Virtual Agents hosts multiple AI models and AI capabilities on a single service, the core of which is a transformer-based natural language understanding (NLU) model.
 
-Traditionally, intent triggering (how an AI model determines the intent of a question posed to it, by using NLU to understand what a user is asking) is formalized as a multi-class classification problem, in which the model is highly associated with known categories; any change to these categories will result in the need to build a new AI model. 
+Traditionally, intent triggering (how an AI model determines the intent of a question posed to it, by using NLU to understand what a user is asking) is formalized as a multi-class classification problem, in which the model is highly associated with known categories; any change to these categories will result in the need to build a new AI model.
 
-Power Virtual Agents, however, employs a language understanding model that uses an example-based approach, powered by a deep neural model. This type of large-scale model only needs to be trained once with large amounts of data using AI supercomputing, and can then be used for specific tasks with few examples without further training. The use of this model is part of the [AI at Scale](https://innovation.microsoft.com/en-us/ai-at-scale) initiative by Microsoft, and means the way AI is developed and used is changing. Specifically for Power Virtual Agents, the use of this model allows for an intuitive way for bot makers to work on their bot content confidently, without having to involve AI experts. 
+Power Virtual Agents, however, employs a language understanding model that uses an example-based approach, powered by a deep neural model. This type of large-scale model only needs to be trained once with large amounts of data using AI supercomputing, and can then be used for specific tasks with few examples without further training. The use of this model is part of the [AI at Scale](https://innovation.microsoft.com/en-us/ai-at-scale) initiative by Microsoft, and means the way AI is developed and used is changing. Specifically for Power Virtual Agents, the use of this model allows for an intuitive way for bot makers to work on their bot content confidently, without having to involve AI experts.
 
-The use of this type of model means that in Power Virtual Agents, when you craft trigger phrases for a topic, you only need to provide a few examples, usually in the range of five to 10 phrases for a single topic. 
+The use of this type of model means that in Power Virtual Agents, when you craft trigger phrases for a topic, you only need to provide a few examples, usually in the range of five to 10 phrases for a single topic.
 Shorter trigger phrases are better, and you should aim for two to 10 words. You just need to make sure trigger phrases are semantically different: changing a single verb or noun could be enough to expand a topic's coverage. Adding things like new articles (changing or adding 'the' or 'a' or 'an'), changing capitalization, adding contractions (you're or don't), or adding plurals won't improve the triggering because contractions are already accounted for in the AI model.
 
-These tips for creating tooltips are described in the tooltip associated with the **Trigger phrases** section on a topic's **Details** page.
+These tips for creating trigger phrases are described in the tooltip associated with the **Trigger phrases** section on a topic's **Details** page.
 
 ![Screenshot of the trigger phrase section in the topic details page.](media/advanced-ai-features/trigger-phrase-tooltip.png)
-
 
 >[!NOTE]
 >The AI capabilities listed in this topic are in preview, available to bots created with English as the set language.
@@ -53,8 +54,7 @@ There are some specific features that further improve how the AI in Power Virtua
 
 >  
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWKo4a]
->   
-
+>
 
 ## Topic overlap detection (preview)
 
@@ -100,43 +100,28 @@ After reviewing the suggested trigger phrases, you can choose to delete the enti
 
 :::image type="content" source="media/advanced-ai-features/topic-editing.png" alt-text="Screenshot of the topic editing window.":::
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Automatic triggering improvements (preview)
 
-[Once enabled](#enable-or-disable-ai-capabilities), the automatic triggering feature improves intent triggering by using AI to automatically generate new trigger phrases by analyzing previous bot traffic. 
+[Once enabled](#enable-or-disable-ai-capabilities), the automatic triggering feature improves intent triggering by using AI to automatically generate new trigger phrases by analyzing previous bot traffic.
 
-With the continuous learning in Power Virtual Agents provided by this feature, each conversation will make the next one better - using reinforcement learning and signals from responses to "Did you mean" questions: when the bot is unsure of the bot user's response it will ask a clarifying question. The bot then learns automatically from the bot user's responses and will not have to ask again. 
+With the continuous learning in Power Virtual Agents provided by this feature, each conversation will make the next one better - using reinforcement learning and signals from responses to "Did you mean" questions: when the bot is unsure of the bot user's response it will ask a clarifying question. The bot then learns automatically from the bot user's responses and will not have to ask again.
 
 Over time, as users interact and talk to the bot, it will get better and better.
 
-In the following screenshot, the first time the bot comes across a question it doesn't understand, it asks for clarification. 
+In the following screenshot, the first time the bot comes across a question it doesn't understand, it asks for clarification.
 
 On the left side of the image, a bot user asks "I'd like to purchase somethign", to which the bot says "Sorry, I didn't get that. Did you mean:" and then provides a few options such as "Buy items" and "Buy service". In this case, the bot user selected "Buy items".
 
 The next time someone asks the same question, the bot doesn't ask for clarification – it knows from previous interactions what the bot user is likely asking to buy items, so it goes straight into the purchasing topic, replying to the question "I'd like to purchase somethign" with "I am happy to help you place your order. To what state will you be shipping?".
 In this example, it also understands the misspelling of "somethign" to mean "something", so it's able to carry over the improved intent triggering even though the bot user's question is spelled differently.
 
-
 ![Screenshot of a bot conversation showing the improvements to auto triggering.](media/advanced-ai-features/triggering-improvements.png)
 
 ## Conversation personalization (preview)
 
-[When this feature is enabled](#enable-or-disable-ai-capabilities), the bot will reuse information from Microsoft Graph and Azure Active Directory (Azure AD) throughout the course of a conversation. This feature allows the bot to use already existing information to enhance and personalize future conversations. For example, if a user mentions a name, email, or zip code these properties are stored and used in later conversations without having to reprompt the user. 
+[When this feature is enabled](#enable-or-disable-ai-capabilities), the bot will reuse information from Microsoft Graph and Azure Active Directory (Azure AD) throughout the course of a conversation. This feature allows the bot to use already existing information to enhance and personalize future conversations. For example, if a user mentions a name, email, or zip code these properties are stored and used in later conversations without having to reprompt the user.
 
-Specifically, with this feature enabled, when the bot asks questions such as those in the following table, the corresponding user information will be pulled from Microsoft Graph and Azure AD (for authenticated users) and provided as prompts for the user to choose as an option. 
-
+Specifically, with this feature enabled, when the bot asks questions such as those in the following table, the corresponding user information will be pulled from Microsoft Graph and Azure AD (for authenticated users) and provided as prompts for the user to choose as an option.
 
 ![Screenshot of the triggering improvements highlighted as part of topic authoring.](media/advanced-ai-features/improvements-authoring.png)
 
@@ -165,21 +150,15 @@ Specifically, with this feature enabled, when the bot asks questions such as tho
 | <ul></br><li>`Can you please tell me what your state of residence is?`</li></br><li>`I can help you out with that. What's your state of residence so I can go ahead?`</li></br></ul> | State/province of residence |
 | <ul></br><li>`Wondering if you would please provide your zip code?`</li></br><li>`I can help you out with that. What's your zip code so I can go ahead?`</li></br></ul> | Zip code |
 
-
 ## Enable or disable AI capabilities
 
 To use these advanced AI capabilities in Power Virtual Agents:
 
-1.  Open a bot you want to enable or disable the features for.
-
-2.  Expand **Manage** on the side navigation pane, then go to the **AI
-    capabilities** tab.
-
-3.  For each feature, select the checkbox to turn the feature on or off.
-
-4.  Select **Save** at the top of the tab.
+1. Open a bot you want to enable or disable the features for.
+1. Expand **Manage** on the side navigation pane, then go to the **AI capabilities** tab.
+1. For each feature, select the checkbox to turn the feature on or off.
+1. Select **Save** at the top of the tab.
 
 :::image type="content" source="media/advanced-ai-features/enable-features.png" alt-text="Screenshot showing the new AI capabilities section under the Manage tab.":::
-
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
