@@ -92,9 +92,9 @@ There are few key guidelines to follow when using Composer to create your bot co
 
 - The Power Virtual Agents topics from your bot will be displayed in Composer. You can't edit these Power Virtual Agents topics in Composer; selecting them will open these topics in Power Virtual Agents for editing.
 
-:::image type="content" source="media/Composer_Guidelines/Gd_PVA_Topics.png" alt-text="Bot Framework Composer - Power Virtual Agents topics.":::
+:::image type="content" source="media/Composer_Guidelines/Gd_PVA_Topics.png" alt-text="Bot Framework Composer - Power Virtual Agents topics":::
 
-- You can call Power Virtual Agents topics in Composer by using the **Begin a Power Virtual Agents Topic** action.
+- Use the **Begin a Power Virtual Agents Topic** to call Power Virtual Agents topics in Composer.
 
 :::image type="content" source="media/Composer_Guidelines/Gd_call_PVA_Topic.png" alt-text="Bot Framework Composer - call Power Virtual Agents topics.":::
 
@@ -232,9 +232,15 @@ Selecting the log will bring up the list of warnings and errors that were encoun
 
 :::image type="content" source="media/Composer_Troubleshooting/Tl_PublishError.png" alt-text="Composer Publish - warnings and errors.":::
 
-If you encounter issues developing in Bot Framework Composer, go to [Bot Framework Composer issues on GitHub](https://github.com/microsoft/BotFramework-Composer/issues) to see the list of known issues in Composer or to [log a new Composer issue](https://github.com/microsoft/BotFramework-Composer/issues/new/choose). 
 
-For troubleshooting your bot in Power Virtual Agents, refer to the [Troubleshoot your bot](advanced-flow.md#troubleshoot-your-bot) topic in Power Virtual Agents documentation.
+
+If you encounter issues developing in Bot Framework Composer, you can:
+
+- Go to [Bot Framework Composer issues on GitHub](https://github.com/microsoft/BotFramework-Composer/issues) 
+
+- See a list of known issues in Composer or [log a new Composer issue](https://github.com/microsoft/BotFramework-Composer/issues/new/choose). 
+
+To troubleshoot your bot in Power Virtual Agents, go to [Troubleshoot your bot](advanced-flow.md#troubleshoot-your-bot).
 
 ## Learn More
 

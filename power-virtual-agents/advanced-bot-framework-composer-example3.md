@@ -101,7 +101,7 @@ Add this **Activity** to the same **Bot Responses** window in Composer:
 
 ```
 
-:::image type="content" source="media/Composer_Example3/E3_BingSearch_BotResponses_Activity.png" alt-text="Composer Bot Responses - add Activity.":::
+:::image type="content" source="media/Composer_Example3/E3_BingSearch_BotResponses_Activity.png" alt-text="Composer Bot Responses - add Activity":::
 
 
 Go to the **Create** tab in Composer and select the **Unknown intent** trigger. Add the **Send a response** action and select **Show code**. Add the following expression to the **Bot response** panel:
