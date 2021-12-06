@@ -58,9 +58,9 @@ rename the output variable **Var** to **user_city**. Set the variable **Usage** 
 
 :::image type="content" source="media/Composer_Example1/E1_Dialog2.png" alt-text="Power Virtual Agents variable.":::
 
-Next, we'll instruct the topic, **Meal delivery options**, to display meal choice images that are available in the user’s city . We'll retrieve the images from Bot Framework Composer content. 
+Next, we'll instruct the topic, **Meal delivery options**, to display meal choice images that are available in the user’s city. We'll retrieve the images from Bot Framework Composer content. 
 
-On the left-hand menu, select **Topics**.  Select the down-arrow icon next to **+ New topic**, and then select **Open in Bot Framework Composer**.
+On the left-hand menu, select **Topics**. Select the down-arrow icon next to **+ New topic**, and then select **Open in Bot Framework Composer**.
 
 Your Power Virtual Agents bot will open in a Bot Framework Composer project. You will see the list of all Power Virtual Agents topics in your bot in Composer, but they are not editable. The **Recognizer Type** field is set to **Default Recognizer**, which is **Power Virtual Agents NLU**.
 
@@ -75,11 +75,12 @@ Name your new dialog **Meals**. Select **OK** to create a new dialog, **Meals**,
 
 :::image type="content" source="media/Composer_Example1/E1_Meals_newDialog.png" alt-text="Composer Create tab new dialog.":::
 
-In Composer, go to the **Bot Responses** tab and, in the  **Meals** section,  select **Show code**.
+In Composer, go to the **Bot Responses** tab and, in the **Meals** section, select **Show code**.
 
 :::image type="content" source="media\Composer_Example1\E1_Meals_showCode.png" alt-text="Composer show code button.":::
 
 In the code window, copy and paste the following bot responses that you'll use in your Adaptive Card:
+
 ```JSON
 # Chicken()
 -Chicken
@@ -232,7 +233,7 @@ Select the new **Send a response** action to open the **Properties pane**. Under
 >You can [access Power Virtual Agents global variables in Composer](advanced-bot-framework-composer.md#use-and-update-power-virtual-agents-variables-in-bot-framework-composer) by referencing the scope **virtualagent**. For example, **${virtualagent.user_city}** will refer to the value of a variable that was created in the Power Virtual Agents bot.
 
 
-You're now ready to upload the **Meals** dialog to your Power Virtual Agents bot. Select the **Publish** tab, and then select the checkbox next to your bot.  Select **Publish selected bot**. Add an optional comment, and select **Okay** in the confirmation window.
+You're now ready to upload the **Meals** dialog to your Power Virtual Agents bot. Select the **Publish** tab, and then select the checkbox next to your bot. Select **Publish selected bot**. Add an optional comment, and select **Okay** in the confirmation window.
 
 :::image type="content" source="media/Composer_Example1/E1_Meals_Publish.png" alt-text="Composer Publish Example 1 publish.":::
 
@@ -246,7 +247,7 @@ Go to the Power Virtual Agents **Topics** page to see your new Bot Framework con
 
 :::image type="content" source="media/Composer_Example1/E1_Meals_in_PVA_Topics.png" alt-text="Power Virtual Agents Topics page - new Bot Framework dialog.":::
 
-In Power Virtual Agents, open the **Meal delivery options** topic in the **Authoring canvas** . Under the **Question** node, add a new **Redirect to another topic** node, and select the Bot Framework dialog **Meals** from the list of available topics. 
+In Power Virtual Agents, open the **Meal delivery options** topic in the **Authoring canvas**. Under the **Question** node, add a new **Redirect to another topic** node, and select the Bot Framework dialog **Meals** from the list of available topics. 
 
 >[!NOTE]
 >You can continue building your dialog in Power Virtual Agents after calling a Bot Framework Composer dialog if you wish.

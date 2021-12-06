@@ -117,7 +117,7 @@ You have created a multi-choice option list that is based on `conversation.days_
 
 You can use this `conversation.day_choice` property to display the daily special for the selected day. 
 
-Under the **User Input** action, add a **Send a response** action to your **DailySpecials** dialog. In the **Bot response** panel on the side, select **Show code**.  Add the following expression:
+Under the **User Input** action, add a **Send a response** action to your **DailySpecials** dialog. In the **Bot response** panel on the side, select **Show code**. Add the following expression:
 
 ```JSON
 - ${DailySpecials(conversation.day_choice)}
@@ -125,7 +125,7 @@ Under the **User Input** action, add a **Send a response** action to your **Dail
 
 :::image type="content" source="media/Composer_Example2/E2_DailySpecials_addResponse.png" alt-text="Composer Create tab - display Daily Special for the selected day":::
 
-In the **bot explorer**, navigate to the Power Virtual Agents **main (root) dialog**. This dialog is the top-level read-only dialog in Composer that you created when you opened your bot in Composer. On the on the actions menu, select the **Add new trigger** option .
+In the **Bot explorer**, navigate to the Power Virtual Agents **main (root) dialog**. This dialog is the top-level read-only dialog in Composer that you created when you opened your bot in Composer. On the on the actions menu, select the **Add new trigger** option.
 
 :::image type="content" source="media/Composer_Example2/E2_main_addNewTrigger.png" alt-text="Composer Create_tab - add new trigger":::
 
