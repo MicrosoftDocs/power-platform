@@ -20,7 +20,7 @@ search.app:
 
 # Microsoft Power Platform Build Tools tasks
 
-The available build tasks are described in the following sections. Afterwards, we will showcase some example Azure DevOps Pipelines making use of these tasks. For information about the build tools and how to download them, see [Microsoft Power Platform Build Tools for Azure DevOps](devops-build-tools.md).
+The available build tasks are described in the following sections. Afterwards, we will showcase some example Azure DevOps pipelines making use of these tasks. For information about the build tools and how to download them, see [Microsoft Power Platform Build Tools for Azure DevOps](devops-build-tools.md).
 
 ## Helper task
 
@@ -624,7 +624,7 @@ To learn more about creating these pipelines and actually do hands-on pipeline
 authoring using the Microsoft Power Platform Build Tools, complete the [build tools labs](https://github.com/microsoft/PowerApps-Samples/tree/master/build-tools),
 which you can download from GitHub.
 
-More information about Azure DevOps Pipelines: [Use Azure Pipelines](/azure/devops/pipelines/get-started/pipelines-get-started)
+More information about Azure DevOps pipelines: [Use Azure Pipelines](/azure/devops/pipelines/get-started/pipelines-get-started)
 
 <a name="build-pipeline-export-solution-from-development"></a>
 
