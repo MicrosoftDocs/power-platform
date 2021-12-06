@@ -27,6 +27,7 @@ The ALM Accelerator components enable makers to apply source control strategies 
 The ALM Accelerator components solution doesn't have a dependency on other components of the CoE Starter Kit. It can be used independently.
 
 ## Setup Options
+
 There are 2 setup options available for the ALM Accelerator for Power Platform.
 
 1. Set up using the [Center of Excellence Command Line Interface (coe-cli)](/power-platform/guidance/coe/cli/overview)
