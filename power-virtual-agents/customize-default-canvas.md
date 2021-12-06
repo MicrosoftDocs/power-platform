@@ -194,7 +194,7 @@ See [Web Chat customization](/azure/bot-service/bot-builder-webchat-customizatio
                 botAvatarInitials: 'BT',
                 accent: '#00809d',
                 botAvatarBackgroundColor: "#FFFFFF",
-                botAvatarImage: 'https://docs.microsoft.com/azure/bot-service/v4sdk/media/logo_bot.svg',
+                botAvatarImage: 'https://docs.microsoft.com/en-us/azure/bot-service/v4sdk/media/logo_bot.svg',
                 userAvatarImage: 'https://avatars.githubusercontent.com/u/661465'
             };  
 
