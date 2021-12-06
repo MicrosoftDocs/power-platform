@@ -49,7 +49,7 @@ In the **Authoring canvas**, select the default **Message** node. Select the thr
 
 Select the + symbol below the **Trigger phrases** node, and then select **Ask a question**. 
 
- For **Ask a question** , enter "What city are you in?".
+For **Ask a question** , enter "What city are you in?".
 
 In the **Identity** list, select **City**.
 
