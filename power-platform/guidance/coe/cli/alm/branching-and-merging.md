@@ -118,3 +118,5 @@ In this example, the Finance application makes use of a common component to visu
 This PCF component is managed in a separate code repository. As new releases are created, they are tagged with release versions.
 
 A release version is imported into a feature branch for a Power Platform solution. This approach allows different versions of the PCF control to be developed and integrated with different solutions over time. In the Finance example version 1.0 to 1.1, which is committed to the **Expense-435** branch to update the PCF control being used.
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

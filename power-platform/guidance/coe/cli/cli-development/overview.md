@@ -100,7 +100,7 @@ NOTES:
 
 - Depending on the command, you want to debug you may be prompted to log in to the DEBUG CONSOLE
 
-- If you're testing with a different account, you will need to log out of any existing Azure CLI sessions
+- If you're testing with a different account, you'll need to log out of any existing Azure CLI sessions
 
 ```bash
 az logout
@@ -115,3 +115,5 @@ You can debug the coe-cli application commands using Visual Studio Code.
 1. Open the coe-cli folder in Visual Studio Code
 1. Place breakpoints in the TypeScript code you want to debug
 1. Press F5 or Select Run -> Start Debugging
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

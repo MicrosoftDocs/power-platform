@@ -149,3 +149,5 @@ The ALM Accelerator for Power Platform assumes the following environments have b
 1. Test - Environment used to validate changes before merging into Production
 
 1. Production Environments - Environment used to deploy production ready application
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

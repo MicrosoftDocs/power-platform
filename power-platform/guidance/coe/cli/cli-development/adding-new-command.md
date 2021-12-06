@@ -1,6 +1,6 @@
 ---
 title: "Center of Excellence (CoE) Command-Line Interface (CLI) Add New Command"
-description: "Add a new command to the Center of Excellence Command Line interface application"
+description: "Add a new command to the Center of Excellence Command-Line interface application"
 keywords: 
 author: Grant-Archibald-MS
 ms.author: grarchib
@@ -110,3 +110,5 @@ describe('Sample', () => {
 npm run test
 
 ```
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

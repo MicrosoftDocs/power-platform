@@ -38,3 +38,5 @@ More information on the [core alm maker add](https://github.com/microsoft/coe-st
 ## Read Next
 
 - Complete the [Install Overview](./overview.md#install-overview)
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

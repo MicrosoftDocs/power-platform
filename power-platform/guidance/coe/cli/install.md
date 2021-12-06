@@ -123,3 +123,5 @@ docker run -it --rm coe-cli
 ```
 
 This command will start a new interactive console (-it) and remove the docker container (--rm) when the console session exits. Using --rm ensures that any cached credentials are removed when you exit.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

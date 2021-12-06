@@ -40,9 +40,9 @@ For decision trees, the diagrams are generated via [mermaid](https://mermaid-js.
 
 Example diagrams:
 
-- [Maturity](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/alm/alm/maturity/maturity.mmd)
+- [Maturity](/power-platform/guidance/coe/cli/alm/maturity/maturity.svg)
 
-- [AA4PP Decision Tree](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/alm/alm/maturity/decision-tree.mmd)
+- [AA4PP Decision Tree](/power-platform/guidance/coe/cli/alm/maturity/decision-tree.svg)
 
 ### Diagram Styles
 
@@ -163,3 +163,5 @@ The generated cast file is a simple text file that can be edited with any text e
 ```bash
 termtosvg render test2.cast test.svg -t window_frame
 ```
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

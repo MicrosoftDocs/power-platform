@@ -82,3 +82,5 @@ Further reading
 ## How does it work
 
 Interested in learning how the CoE CLI works or want to extend the functionality? The [CLI Development](./cli-development/overview.md) provides the best place to start.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

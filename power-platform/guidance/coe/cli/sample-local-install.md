@@ -22,3 +22,5 @@ search.app:
 The following captures the results of a sample local install
 
 ![Local Install](./media/install-local.svg)
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

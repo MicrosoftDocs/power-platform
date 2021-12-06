@@ -211,3 +211,5 @@ coe alm install -f install.json
 More information on the [coe alm generate install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/generate/install.md) command
 
 More information on the [coe alm install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/install.md) command
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

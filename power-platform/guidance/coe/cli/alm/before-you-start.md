@@ -118,3 +118,5 @@ Once you've verified the above
 1. Determine the install [deployment scenario](./scenarios/overview.md) you're targeting
 
 1. Complete the [Administration Install](./admin-install.md)
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

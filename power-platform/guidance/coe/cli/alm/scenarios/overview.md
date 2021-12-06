@@ -24,3 +24,5 @@ As you plan your ALM Accelerator for Power Platform (AA4PP) deployment, one or m
 - [Tenant Deployments](./tenant-deployments.md) - Discusses different Azure Active Directory configurations across Demo, Single AAD, and Multiple AAD deployment models
 
 - [DevOps Deployment Model](./devops-deployment-model.md) - Discusses the relationship between AA4PP deployments and one or more different Azure DevOps organizations
+
+[!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]

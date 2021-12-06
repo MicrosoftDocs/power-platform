@@ -78,3 +78,5 @@ In the coe-cli folder, run the following commands
 docker build -t coe-cli .
 
 ```
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

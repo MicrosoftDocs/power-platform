@@ -93,8 +93,10 @@ coe alm install -f test.json
 
 More information on the [coe alm install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/install.md) command
 
-1. [Update permissions for the project build service](https://github.com/microsoft/coe-starter-kit/blob/main/ALMAcceleratorForAdvancedMakers/SETUPGUIDE.md#update-permissions-for-the-project-build-service) to enable build pipelines to interact with Git Repositories
+1. [Update permissions for the project build service](/power-platform/guidance/coe/setup-almacceleratorpowerplatform#update-permissions-for-the-project-build-service) to enable build pipelines to interact with Git Repositories
 
 ## Read Next
 
 - Complete the [Install Overview](./overview.md#install-overview)
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

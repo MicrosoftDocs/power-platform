@@ -50,7 +50,7 @@ coe alm install -f quickstart.json
 
    Deploying to your enterprise? For more information, see [Enterprise Deployment](./scenarios/tenant-deployments.md#enterprise-deployment).
 
-1. [Update permissions for the project build service](https://github.com/microsoft/coe-starter-kit/blob/main/ALMAcceleratorForAdvancedMakers/SETUPGUIDE.md#update-permissions-for-the-project-build-service) to enable build pipelines to interact with Git Repositories
+1. [Update permissions for the project build service](/power-platform/guidance/coe/setup-almacceleratorpowerplatform#update-permissions-for-the-project-build-service) to enable build pipelines to interact with Git Repositories
 
 1. Have  Makers create [development environments](./development-environments.md) then Add Makers to Azure DevOps and share the Canvas Application
 
@@ -116,7 +116,9 @@ Notes:
 
 - [ALM Accelerator for Power Platform](https://github.com/microsoft/coe-starter-kit/tree/main/ALMAcceleratorForAdvancedMakers) - Overview for ALM
 - Manual Setup - Understand the key steps that the CLI is automating
-  - [Foundational Setup](https://github.com/microsoft/coe-starter-kit/blob/main/ALMAcceleratorForAdvancedMakers/SETUPGUIDE.md#foundational-setup) - Foundational Setup for Manual steps automated by the CLI install command
-  - [Development Project Setup](https://github.com/microsoft/coe-starter-kit/blob/main/ALMAcceleratorForAdvancedMakers/SETUPGUIDE.md#development-project-setup) - Documents the Manual steps that are automated by the CLI install command
-  - [Solution Setup](https://github.com/microsoft/coe-starter-kit/blob/main/ALMAcceleratorForAdvancedMakers/SETUPGUIDE.md#solution-setup) - Documents the manual steps to set up Azure DevOps that are performed by the CLI install command
-  - [Importing Solution](https://github.com/microsoft/coe-starter-kit/blob/main/ALMAcceleratorForAdvancedMakers/SETUPGUIDE.md#importing-the-solution-and-configuring-the-app) - Documents the manual steps to import the managed solution that are performed by the CLI install command
+  - [Foundational Setup](/power-platform/guidance/coe/setup-almacceleratorpowerplatform#foundational-setup) - Foundational Setup for Manual steps automated by the CLI install command
+  - [Development Project Setup](/power-platform/guidance/coe/setup-almacceleratorpowerplatform#development-project-setup) - Documents the Manual steps that are automated by the CLI install command
+  - [Solution Setup](/power-platform/guidance/coe/setup-almacceleratorpowerplatform#solution-setup) - Documents the manual steps to set up Azure DevOps that are performed by the CLI install command
+  - [Importing Solution](/power-platform/guidance/coe/setup-almacceleratorpowerplatform#importing-the-solution-and-configuring-the-app) - Documents the manual steps to import the managed solution that are performed by the CLI install command
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -264,3 +264,5 @@ Leading questions to consider:
 1.Do you have Cross-functional teams that plan and execute work jointly, including makers, testers, and operational teams?
 
 1. Do you have Common development strategy and goals for Citizen and Pro developers needed for new projects?
+
+[!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]

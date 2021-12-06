@@ -22,3 +22,5 @@ search.app:
 The following captures the results of a sample docker install on Linux
 
 ![Docker Install](./media/install-docker.svg)
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

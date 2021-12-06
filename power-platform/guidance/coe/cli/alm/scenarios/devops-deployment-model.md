@@ -66,3 +66,5 @@ In this scenario, the following configuration is assumed:
 - Multiple Azure DevOps for different teams or Business Units
 
 - Each Azure DevOps organization can have a different set of users protected buy different Role-Based Access Security Rules
+
+[!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]
