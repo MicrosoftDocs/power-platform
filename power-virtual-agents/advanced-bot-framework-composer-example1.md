@@ -81,7 +81,7 @@ In Composer, go to the **Bot Responses** tab and, in the **Meals** section, sele
 
 In the code window, copy and paste the following bot responses that you'll use in your Adaptive Card:
 
-```JSON
+```lu
 # Chicken()
 -Chicken
 
@@ -102,9 +102,9 @@ In the code window, copy and paste the following bot responses that you'll use i
 
 :::image type="content" source="media/Composer_Example1/E1_Meals_BotResponse_data.png" alt-text="Composer Bot Responses tab with strings.":::
 
-Next, add the Adaptive Card by adding the following JSON code to the same window. This Adaptive Card takes a parameter and displays a set of three images based on the image URLs.
+Next, add the Adaptive Card by adding the following code to the same window. This Adaptive Card takes a parameter and displays a set of three images based on the image URLs.
 
-````JSON
+````lg
 # adaptivecardjson_meals(location)
 - ```
 {
@@ -209,7 +209,7 @@ Next, add the Adaptive Card by adding the following JSON code to the same window
 
 Add the **Activity** that will display this Adaptive Card in the Bot Framework dialog to the same window in Composer:
 
-```JSON
+```lg
 # AdaptiveCardMeals(location)
 [Activity
     Attachments = ${json(adaptivecardjson_meals(location))}
@@ -223,7 +223,7 @@ Go back to the **Create** tab in Composer and select the **Meals** dialog. Selec
 
 Select the new **Send a response** action to open the **Properties pane**. Under **Bot responses**, select **Show code**. Add the following expression to this window to show the Adaptive Card, and pass the Power Virtual Agents global variable `user_city` as a parameter: 
 
-```JSON
+```lu
 - ${AdaptiveCardMeals(virtualagent.user_city)}
 ```
 

@@ -60,7 +60,7 @@ In the **Value** field in the **Set a property** panel, change the type to **\[\
 
 Next, go to the **Bot Responses** tab in Composer and select **DailySpecials**. Select **Show code** and add the following template to the **Bot Responses** tab for **DailySpecials** to create daily offers for all the days of the week:
 
-```JSON
+```lu
 # DailySpecials(day)
 - SWITCH: ${day}
 - CASE: ${0}
@@ -119,7 +119,7 @@ You can use this `conversation.day_choice` property to display the daily special
 
 Under the **User Input** action, add a **Send a response** action to your **DailySpecials** dialog. In the **Bot response** panel on the side, select **Show code**. Add the following expression:
 
-```JSON
+```lu
 - ${DailySpecials(conversation.day_choice)}
 ```
 
@@ -131,7 +131,7 @@ In the **Bot explorer**, navigate to the Power Virtual Agents **main (root) dial
 
 Set the type of trigger to **Intent recognized** and name it **Specials**. Add the following trigger phrases for your intent and select **Submit**.
 
-```JSON
+```lu
 -what specials do you have
 -any special deals
 -do you have discounts

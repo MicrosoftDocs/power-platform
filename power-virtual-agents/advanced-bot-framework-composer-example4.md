@@ -57,7 +57,7 @@ Add the following trigger phrases and select **Submit**.
 After the **StartTrial** trigger is added, go to the **Bot Responses** tab for this **Contoso Meal Delivery Service** dialog. Switch to **Show code** view, and insert the following Adaptive Card JSON:
 
 
-````JSON
+````lg
 
 # adaptivecardjson_StartTrialForm()
 - ```
@@ -110,7 +110,7 @@ Note that every data field in this Adaptive card was given an ID: **Name**, **Ad
 Next, add the following Activity below the Adaptive Card JSON:
 
 
-````JSON
+````lg
 # AdaptiveCard_StartTrialForm()
 [Activity
     Attachments = ${json(adaptivecardjson_StartTrialForm())}
@@ -124,7 +124,7 @@ Go to the **Create** tab in Composer and select the **StartTrial** trigger. Add 
 
 Switch to **Show code** view and add the following to the code window:
 
-```JSON
+```lu
 - ${AdaptiveCard_StartTrialForm()}
 ```
 
@@ -140,7 +140,7 @@ Your Adaptive card **StartTrialForm** has two more fields, **Address** and **Wee
 
 Add a **Send a Response** action to provide a form submission confirmation:
 
-```JSON
+```lu
 ${user.name} - thanks for starting a ${user.weeks} week trial with us! Your meals will be delivered to this address: ${user.address}.
 ```
 

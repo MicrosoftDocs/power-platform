@@ -53,7 +53,7 @@ Select **+ Add new trigger** to add another Bot Framework trigger to **Contoso M
 
 After the **Unknown intent** trigger is added, go to the **Bot Responses** tab for this **Contoso Meal Delivery Service** dialog. Switch to **Show code** view, and insert the following Adaptive Card JSON:
 
-````JSON
+````lg
 
 # adaptivecardjson_BingSearch(user_utterance)
 - ```
@@ -93,7 +93,7 @@ After the **Unknown intent** trigger is added, go to the **Bot Responses** tab f
 
 Add this **Activity** to the same **Bot Responses** window in Composer:
 
-```JSON
+```lg
 # AdaptiveCardBingSearch(user_utterance)
 [Activity
     Attachments = ${json(adaptivecardjson_BingSearch(user_utterance))}
@@ -106,7 +106,7 @@ Add this **Activity** to the same **Bot Responses** window in Composer:
 
 Go to the **Create** tab in Composer and select the **Unknown intent** trigger. Add the **Send a response** action and select **Show code**. Add the following expression to the **Bot response** panel:
 
-```JSON
+```lu
 -${AdaptiveCardBingSearch(turn.activity.text)}
 ```
 

@@ -168,7 +168,7 @@ For example, create a variable called **user_city** in your Power Virtual Agents
 
 This setting makes the Power Virtual Agents variable **user_city** available in Bot Framework Composer within the **virtualagent** scope. Use the following notation to refer to it in Composer:
 
- ```JSON
+```lu
 ${virtualagent.user_city} 
 ```
 
