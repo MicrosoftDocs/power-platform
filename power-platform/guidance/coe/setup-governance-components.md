@@ -70,10 +70,10 @@ The Core Components solution is required for the Governance Components solution,
 1. Follow the instructions detailed under [Set up core components](setup-core-components.md) to import the solution either into your Production or your Dataverse for Teams environment.
 
 1. Import the *CenterOfExcellenceAuditComponents_x_x_x_xx_managed.zip* file.
-1. Create a new connection to the all connectors.
+1. Select a connection for all connectors.
     ![Import the Center of Excellence - Governance components solution.](media/msig-import.png "Import the Center of Excellence - Governance components solution")
 
-1. Select **Import** without adding values to the Environment Variables, as we will update them later - see [update environment variables](#update-environment-variables)
+1. Select **Import** without adding values to the Environment Variables, these will be updated later - see [update environment variables](#update-environment-variables)
 
 ## Update environment variables
 
@@ -104,6 +104,7 @@ There are three child flows which will need their **Run only users** properties 
 
 - HELPER - CanvasAppOperations Gov
 - HELPER - CloudFlowOperations Gov
+- HELPER - ObjectOperations Gov
 - Request Orphaned Objects Reassigned (Child)
 
 For all three of these flows, go to the details page and click the **Run only users** edit button.
@@ -164,7 +165,7 @@ More information: [Sharing for broad distribution apps](/powerapps/teams/set-per
     1. Select Tables from the left pane.
     1. Select **PowerApps App** > **Manage Permissions**.
     1. Select **Colleagues with access**.
-    1. Set the permission to **Collaborate**.
+    1. Set the permission to **Full Access**.
         ![Sharing data with colleagues.](media/govteams-3.png "Sharing data with colleagues")
     1. Repeat these steps for the Environment, Flow, PVA, Desktop flow tables.
     1. Repeat these steps for the COE Settings table, but grant **Reference** permission only.

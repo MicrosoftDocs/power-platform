@@ -4,7 +4,7 @@ description: How access to a record is determined
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 07/26/2021
+ms.date: 11/30/2021
 author: jimholtz
 ms.subservice: admin
 ms.author: jimholtz
@@ -71,41 +71,32 @@ A user can have access to a particular record because either they own the record
  
 Users can have access to perform an action on a record because of the security roles they hold. In this case, the access level of the privilege a role has is taken into account. There are four major scenarios that correspond to the different access levels that are not User, which is covered in the ownership case.
 
-#### The record belongs to the user or a team the user belongs to
-In this case, the user must either have or belong to a team that has a role assigned that has the required privilege with at least User-level access.
+|  |  |
+|---------|---------|
+| **The record belongs to the user or to a team the user is a member of**     | In this case, the user must either have or belong to a team that has a role assigned with at least User-level access privilege. <sup>*</sup>See **Note** below.    |
+|**The record belongs to the same business unit as the user**  | In this case, the user must either have or belong to a team that has a role assigned with at least Business Unit-level access privilege.         |
+|**The record belongs to the same business unit as the team of which the user is a member of**  | In this case, the user must either have or belong to the team that has a role assigned with at least Business Unit-level access privilege.       |
+|**The record belongs to a business unit that is a descendant of the user's business unit**   | In this case, the user must either have or belong to a team that has a role assigned with at least Parent:Child business units access privilege.        |
+|**The record belongs to a business unit that is a descendant of the user's business unit or a descendant of the team's business unit of which the user is a member of**    | In this case, the user must either have or belong to a team that has a role assigned with at least Parent: Child Business Units access privilege.         |
+|**The record belongs to a business unit that is not a descendant of the user's business unit**  |  In this case, the user must either have or belong to a team that has a role assigned with Organization-level access privilege.       |
 
 > [!NOTE]
-> For roles assigned to teams with Basic-level access user privilege, the role's inheritance configuration also comes into play. If the team has the **Member's privilege inheritance** set to **Team privileges only**, then the user will only be able make use of that privilege for records owned by the team. For more information, go to [Team member's privilege inheritance](security-roles-privileges.md#team-members-privilege-inheritance).
+> <sup>*</sup>For roles assigned to teams with Basic-level access user privilege, the role's inheritance configuration also comes into play. If the team has the **Member's privilege inheritance** set to **Team privileges only**, then the user will only be able to make use of that privilege for records owned by the team. For more information, go to [Team member's privilege inheritance](security-roles-privileges.md#team-members-privilege-inheritance).
 > 
-> :::image type="content" source="media/member-privilege-inheritance.png" alt-text="Member's privilege inheritance":::
- 
-#### The record belongs to the same business unit as the user
-In this case, the user must either have or belong to a team that has a role assigned that has the required privilege with at least Business Unit-level access.
- 
-#### The record belongs to a business unit that is a descendant of the user's business unit
-In this case, the user must either have or belong to a team that has a role assigned that has the required privilege with at least the access level Parent:Child Business Units.
- 
-#### The record belongs to a business unit that is not a descendant of the user's business unit
-In this case, the user must either have or belong to a team that has a role assigned that has the required privilege with Organization-level access.
- 
+> :::image type="content" source="media/member-privilege-inheritance.png" alt-text="Member's privilege inheritance":::  
+
 ### Shared access
  
 Another way to get access to a record without having an explicit role assigned that allows this is through shared access. Shared access is obtained when a record is shared with a user, team, or organization by a user that has appropriate share rights. There are five ways in which a user can have shared access to a record.
 
-#### The record was shared with the user directly
-If a record is shared with the user to perform a certain action, then the user would have access to do that action provided the user passed the privilege check.
- 
-#### A related record was shared with the user directly
-The following scenario takes place when a record A is related to a record B. If the user has shared access to perform a certain action on the record A, it would then have inherited access to perform the same action on the record B, provided the user passed the privilege check.
- 
-#### The record was shared with a team that the user belongs to
-If a record is shared with a team to perform a set of actions, then the users that belong to that team would have access to do those actions provided they passed the privilege check.
- 
-#### A related record was shared with a team that the user belongs to
-The following scenario takes place when a record A is related to a record B. If record A is shared with a team to perform a set of actions, and record A is related to record B, then the users that belong to that team would have access to do those actions in both records A and B, provided they passed the privilege check.
- 
-#### The record was shared with the entire organization
-If a record is shared with an organization to perform a set of actions, then all the users that belong to that organization will be able to perform those actions provided they passed the privilege check.
+
+|  | |
+|---------|---------|
+|**The record was shared with the user directly**    | If a record is shared with the user to perform a certain action, then the user would have access to do that action provided the user passed the privilege check.        |
+|**A related record was shared with the user directly**     |  The following scenario takes place when a record A is related to a record B. If the user has shared access to perform a certain action on the record A, it would then have inherited access to perform the same action on the record B, provided the user passed the privilege check.       |
+|**The record was shared with a team that the user belongs to**     | If a record is shared with a team to perform a set of actions, then the users that belong to that team would have access to do those actions provided they passed the privilege check.        |
+|**A related record was shared with a team that the user belongs to**    |  The following scenario takes place when a record A is related to a record B. If record A is shared with a team to perform a set of actions, and record A is related to record B, then the users that belong to that team would have access to do those actions in both records A and B, provided they passed the privilege check.       |
+|**The record was shared with the entire organization**    | If a record is shared with an organization to perform a set of actions, then all the users that belong to that organization will be able to perform those actions provided they passed the privilege check.        |
 
 ### Hierarchy access
  

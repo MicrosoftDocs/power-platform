@@ -218,7 +218,9 @@ If you redirect to any of the following [system topics](#use-system-and-sample-t
 - Escalate
 - Start over (this will also reset any [global variables](authoring-variables-bot-teams.md))
 
+#### Use variables
 
+You can also [use variables that you have defined elsewhere](authoring-variables-teams.md) in your bot conversation.
 
 
 ### Delete nodes

@@ -88,9 +88,7 @@ Leave the Azure portal open, because you'll need to copy some information when y
 
 ## Import the solution
 
-1. Download the CoE Starter Kit compressed file ([aka.ms/CoeStarterKitDownload](https://aka.ms/CoeStarterKitDownload)).
-
-1. Extract the zip file.
+1. Download the ALM Accelerator for Makers solution zip file from the CoE Starter Kit repository ([aka.ms/CoeStarterKitDownload](https://aka.ms/CoeStarterKitDownload) - download the file ALMAcceleratorForMakers_x.x.xxxxxxxx.x_managed.zip under "Assets").
 
 1. Go to [make.powerapps.com](<https://make.powerapps.com>).
 
@@ -118,7 +116,7 @@ Leave the Azure portal open, because you'll need to copy some information when y
 
 1. In the pop-up window, select **Choose File**.
 
-1. Select the ALM Accelerator solution from File Explorer (PowerPlatformGitHubALM_x_x_x_xx_managed.zip).
+1. Select the ALM Accelerator solution from File Explorer (ALMAcceleratorForMakers_x.x.xxxxxxxx.x_managed.zip).
 
 1. When the compressed (.zip) file has been loaded, select **Next**.
 

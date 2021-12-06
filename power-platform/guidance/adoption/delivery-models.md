@@ -27,9 +27,6 @@ These models can help you consider what your current software delivery model is 
 
 ![Delivery models.](media/delivery-models.png "Delivery models")
 
-## Decentralized
-
-In this model, you can create multiple teams across the organization that are close to the day-to-day running of various teams. They'll have resources to deliver apps consistently within organizational guidelines. Each team can run autonomously, and they can split and grow in cellular fashion. However, with this model, you'll still need centralized governance to apply some high-level digital guardrails to ensure corporate compliance. These can include things like data loss prevention (DLP) governance, connector management, and license management to ensure users and developers can safely build and release solutions with minimal intervention from IT, while keeping company data safe and compliant. This is a great self-service option.
 
 ## Centralized  
 
@@ -46,6 +43,10 @@ Here is a digital briefing from Schlumberger depicting this type of model having
 | Multiple-department or large line-of-business solutions | Matrixed/Centralized | 3-6 months | 6-24 months | Large matrixed teams working to deliver medium and large solutions or intra-department solutions. | Centralized IT |
 | Large-scale product delivery | Centralized | 1-2 years | 5-7 years | Large product deliveries across an enterprise leveraging a mixture of low-code and code-first Power Apps solutions along with vendor and first-party solutions. | Centralized IT |
 | Large enterprise vendor delivery | Centralized | 7 years | 10-15 years | Surround strategy for a third-party system of record and support framework. For example, SAP implementation and surrounding it with a mixture of low-code and code-first solutions in Power Apps and other Microsoft and third-party integrations. | Centralized IT |
+
+## Decentralized
+
+In this model, you can create multiple teams across the organization that are close to the day-to-day running of various teams. They'll have resources to deliver apps consistently within organizational guidelines. Each team can run autonomously, and they can split and grow in cellular fashion. However, with this model, you'll still need centralized governance to apply some high-level digital guardrails to ensure corporate compliance. These can include things like data loss prevention (DLP) governance, connector management, and license management to ensure users and developers can safely build and release solutions with minimal intervention from IT, while keeping company data safe and compliant. This is a great self-service option.
 
 ## Matrix
 

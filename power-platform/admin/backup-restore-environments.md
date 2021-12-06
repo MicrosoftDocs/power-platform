@@ -5,7 +5,7 @@ services: powerapps
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/08/2021
+ms.date: 10/14/2021
 ms.subservice: admin
 author: ChrisGarty
 ms.author: cgarty
@@ -30,11 +30,13 @@ Some backups take place without you having to do anything.
 
 About **system backups**:  
   
+- Depending on the amount of copied and restored audit data, copy and restore operations can take up to 8 hours.
 - All your environments, except Trial environments (standard and subscription-based), are backed up.  
 - System backups occur continuously. The underlying technology used is Azure SQL Database. See SQL Database documentation [Automated backups](/azure/sql-database/sql-database-automated-backups) for details.
 - System backups for production environments that have been created with a database and have one or more Dynamics 365 applications installed are retained up to 28 days. System backups for production environments which don't have Dynamics 365 applications deployed in them will be retained for 7 days. System backups for sandbox environments will be retained for 7 days.
 - You must restore an environment to the same region in which it was backed up.
 - When an environment is restored onto itself, audit logs aren't deleted. For example, when an environment is restored onto itself to a past time t1, full audit data for the environment will be available, including any audit logs that were generated after t1.
+
   
 ### Restore a system backup  
   

@@ -138,7 +138,7 @@ In the examples described here, a simple declaration is made for the variables. 
 
     - Your bot's URL is *https://web.powerva.microsoft.com/webchat/bots/12345*.
 
-    - To pass in the user name when starting a bot conversation on a website, you can attach the `UserName=` query string as: *https://web.powerva.microsoft.com/webchat/bots/12345?**UserName=Renata***.
+    - To pass in the user name when starting a bot conversation on a website, you can attach the `UserName=` query string as: _https://web.powerva.microsoft.com/webchat/bots/12345?UserName=Renata_.
 
 2. The parameter name is case-insensitive. This means `username=Renata` will also work in this example. 
 

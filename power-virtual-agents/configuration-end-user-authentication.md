@@ -2,12 +2,13 @@
 title: "Configure user authentication"
 description: "Configure authentication with your identity provider to enable users to sign in when having a bot conversation."
 keywords: "Authentication, IdP, PVA, AAD"
-ms.date: 2/11/2021
+ms.date: 10/22/2021
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
+ms.reviewr: micchow
 ms.custom: authentication, ceX
 ms.collection: virtual-agent
 ---
@@ -23,7 +24,7 @@ Select the version of Power Virtual Agents you're using here:
 
 You can configure a Power Virtual Agents bot to provide authentication capabilities, so users can sign in with an Azure Active Directory (AAD), or any [OAuth2 identity provider](/azure/active-directory/develop/v2-oauth2-auth-code-flow), such as a Microsoft account, or Facebook. 
 
-To learn how to add authentication to a bot topic, see [Add user authentication to a Power Virtual Agents bot](advanced-end-user-authentication.md).
+You can [add user authentication to a Power Virtual Agents bot](advanced-end-user-authentication.md) when editing a topic. 
 
 Power Virtual Agents supports the following authentication providers:
 * Azure Active Directory v1
@@ -41,7 +42,7 @@ Power Virtual Agents supports the following authentication providers:
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 
-## Chose the best authentication option
+## Choose the best authentication option
 
 Power Virtual Agents supports a set of different authentication options, each targeted to a different usage scenario. 
 
@@ -61,6 +62,9 @@ You will see the following three options to configure your authentication
 This configuration option provides no authentication for the bot. This is the standard configuration for bots that are not created from Teams. 
 
 ### Only for Teams
+
+> [!IMPORTANT] 
+> When choosing this option, only the Teams channel will be available. All other channels will be disabled and a warning will be displayed.
 
 This configuration option is optimized for Teams channel usage. It automatically sets up Azure Active Directory (Azure AD) authentication for Teams without the need for any manual configuration. 
 
@@ -93,6 +97,35 @@ Once the configuration is saved, make sure to publish your bot so the changes ta
 
 > [!NOTE]
 > Authentication changes only take effect after the bot is published.
+
+## Required user sign in and bot sharing
+
+**Require users to sign in** controls if a user needs to sign in before talking with the bot. If is only available to **Only for Teams** and **Manual** authentication options. It is highly recommended to turn on this setting when the bot contains sensitive information. 
+
+:::image type="content" source="media/sharing-security-groups/auth-require-user-to-sign-in.PNG" alt-text="Screenshot of the Authentication pane showing require user to sign in.":::
+
+Bots with this configuration turned **Off** won't ask users to sign in until they encounter a topic which requires them to do so.
+
+When the **Require users to sign in** option is turned **On**, a new system topic called **Require users to sign in** is created. This topic is only relevant for the "Manual" authentication setting, as users are always authenticated on Teams.
+
+This topic is automatically triggered for any user who talks to the bot without being authenticated. This topic is read-only and cannot be customized. If the user fails to sign in, this topic redirects the user to the **Escalate** system topic. You can see the topic by selecting **Go to the authoring canvas**.
+
+### Control who can chat with bot in the organization
+
+Your bot's **authentication option** and **Require user to sign in** combination determines whether you can [share the bot](admin-share-bots.md) to control who in your organization can chat with your bot or not.  Sharing a bot for collaboration is not impacted by the end-user authentication setting. 
+
+- **No authentication**. Any user who has a link to the bot (or can find it, for example, on your website) can chat with it. You cannot control which users can chat with the bot in your organization.
+
+- **Only for Teams**. The bot will only work on [the Teams channel](publication-add-bot-to-microsoft-teams.md). This means the user will always be signed in, and therefore the **Require users to sign in** option will be enabled and can't be changed. You can control who can chat with the bot in your organization with bot sharing.
+
+- **Manual (for any channel including Teams)**. 
+  - If your authentication setting is configured to **Manual**, and the service provider is either **Azure Active Directory** or **Azure Active Directory V2**, you can enable the **Require users to sign in** option to control who can chat with the bot in your organization via bot sharing.
+  - If your authentication provider is set as **Generic OAuth 2**, you can toggle the **Require users to sign in** option. When turned on, a user who signs in can chat with the bot, but you cannot control which specific users are allowed to chat with the bot in your organization with bot sharing. 
+
+**Share** at the top of the bot's homepage will show to everyone who can chat with the bot when the bot's authentication configuration can't control who can chat with the bot in the organization.
+
+:::image type="content" source="media/sharing-security-groups/auth-allow-everyone-chat-with-bot.PNG" alt-text="Everyone in the organization can chat with bot because of authentication setting.":::
+
 
 ## Register a new app with your identity provider when using Manual (for any channel including Teams)
 
@@ -165,10 +198,6 @@ Authorization URL Query String Template | Query template for authorization, prov
 ## Test your configuration
 
 After the setup steps are complete, save your configuration and test it by [creating a new topic using authentication](advanced-end-user-authentication.md).
-
-## Set the appropriate access control for your end users
-
-Once you have your authentication configured, make sure to go to **Manage** -> **Security** -> **Access** and configure the appropriate access control for your bot. You can learn more about access control in the [Assign access and change security options documentation](configuration-security.md) documentation topic.
 
 
 ## Remove the authentication configuration

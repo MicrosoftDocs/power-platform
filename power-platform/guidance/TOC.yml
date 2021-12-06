@@ -4,6 +4,14 @@
   - name: Adoption best practices
     href: adoption/methodology.md
     items: 
+    - name: Adoption maturity model
+      items: 
+      - name: Overview
+        href: adoption/maturity-model.md
+      - name: Goals and opportunities
+        href: adoption/maturity-model-goals.md
+      - name: Detailed capabilities
+        href: adoption/maturity-model-details.md
     - name: Strategy and vision
       href: adoption/strategy-best-practices.md
       items:

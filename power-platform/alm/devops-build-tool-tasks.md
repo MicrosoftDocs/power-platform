@@ -20,7 +20,7 @@ search.app:
 
 # Microsoft Power Platform Build Tools tasks
 
-The available build tasks are described in the following sections. Afterwards, we will showcase some example Azure DevOps pipelines making use of these tasks. For information about the build tools and how to download them, see [Microsoft Power Platform Build Tools for Azure DevOps](devops-build-tools.md).
+The available build tasks are described in the following sections. Afterwards, we will showcase some example Azure DevOps Pipelines making use of these tasks. For information about the build tools and how to download them, see [Microsoft Power Platform Build Tools for Azure DevOps](devops-build-tools.md).
 
 ## Helper task
 
@@ -42,13 +42,13 @@ to the versions of the tools that are required for the pipeline to run properly.
 ```yml
 # Installs default Power Platform Build Tools
 - task: microsoft-IsvExpTools.PowerPlatform-BuildTools.tool-installer.PowerPlatformToolInstaller@0
-  displayName: 'Power Platform Tool Installer '
+  displayName: 'Power Platform Tool Installer'
 ```
 
 ```yml
 # Installs specific versions of the Power Platform Build Tools
 - task: microsoft-IsvExpTools.PowerPlatform-BuildTools.tool-installer.PowerPlatformToolInstaller@0
-  displayName: 'Power Platform Tool Installer '
+  displayName: 'Power Platform Tool Installer'
   inputs:
     DefaultVersion: false
     XrmToolingPackageDeploymentVersion: 3.3.0.928
@@ -92,8 +92,8 @@ Verifies a Power Platform environment service connection by connecting and makin
 
 | Parameters    | Description   |
 |---------------|---------------|
-| `authenticationType`<br/>Type of authentication | (Optional) Specify either **PowerPlatformEnvironment** for a username/password connection or **PowerPlatformSPN** for a Service Principal/client secret connection. |
-| `PowerPlatformEnvironment`<br/>Power Platform environment URL | The service endpoint for the environment to connect to. Defined under **Service Connections** in **Project Settings**. |
+| `authenticationType`<br/>Type of authentication | (Optional) Specify either **PowerPlatformEnvironment** for a username/password connection or **PowerPlatformSPN** for a Service Principal/client secret connection. More information: see `BuildTools.EnvironmentUrl` under [Power Platform Create Environment](#power-platform-create-environment) |
+| `PowerPlatformEnvironment`<br/>Power Platform environment URL | The service endpoint for the environment to connect to. Defined under **Service Connections** in **Project Settings**. More information: see `BuildTools.EnvironmentUrl` under [Power Platform Create Environment](#power-platform-create-environment) |
 | `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint for the environment to connect to. Defined under **Service Connections** in **Project Settings**. |
 
 ## Quality check
@@ -137,7 +137,7 @@ you might have inadvertently introduced when building your solution.
 
 | Parameters         | Description      |
 |--------------------|------------------|
-| `PowerPlatformSPN`<br/>Service Connection | (Required) A connection to a licensed Microsoft Power Platform environment is required to use the Power Platform checker.  Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type.<p/>Note: Service Principal is the only authentication method available for the checker task so if you are using username/password for all other tasks, you will have to create a separate connection to use with the checker task. For more information on how to configure service principals to be used with this task, see [Configure service principal connections for Power Platform environments](devops-build-tools.md#configure-service-connections-using-a-service-principal). |
+| `PowerPlatformSPN`<br/>Service Connection | (Required) A connection to a licensed Microsoft Power Platform environment is required to use the Power Platform checker.  Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type. More information: see `BuildTools.EnvironmentUrl` under [Power Platform Create Environment](#power-platform-create-environment)<p/>Note: Service Principal is the only authentication method available for the checker task so if you are using username/password for all other tasks, you will have to create a separate connection to use with the checker task. For more information on how to configure service principals to be used with this task, see [Configure service principal connections for Power Platform environments](devops-build-tools.md#configure-service-connections-using-a-service-principal). |
 | `UseDefaultPACheckerEndpoint`<br/>Use default Power Platform Checker endpoint | By default (**true**), the geographic location of the checker service will use the same geography as the environment you connect to. |
 | `CustomPACheckerEndpoint`<br/>Custom PAC checker endpoint | Required when `UseDefaultPACheckerEndpoint` is **false**. You have an option to specify another geo to use, for example https://japan.api.advisor.powerapps.com. For a list of available geographies, see [Use the Power Platform Checker API](/powerapps/developer/common-data-service/checker/webapi/overview#determine-a-geography). |
 | `FileLocation`<br/>Location of file(s) to analyze       | Required when referencing a file from a shared access signature (SAS) URL `sasUriFile`.<p/>Note: It is important to reference an exported solution file and not the unpacked source files in your repository. Both managed and unmanaged solution files can be analyzed. |
@@ -182,7 +182,8 @@ steps:
     authenticationType: PowerPlatformSPN
     PowerPlatformSPN: 'Dataverse service connection '
     SolutionInputFile: 'C:\Public\Contoso_sample_1_0_0_1_managed.zip'
-    AsyncOperation: false
+    AsyncOperation: true
+    MaxAsyncWaitTime: 60
     PublishWorkflows: false
 ```
 
@@ -191,110 +192,282 @@ steps:
 | Parameters           | Description        |
 |----------------------|--------------------------|
 | `authenticationType`<br/>Type of authentication | (Required for SPN) Specify either **PowerPlatformEnvironment** for a username/password connection or **PowerPlatformSPN** for a Service Principal/client secret connection. |
-| `PowerPlatformEnvironment`<br/>Power Platform environment URL | The service endpoint that you want to import the solution into (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
-| `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint that you want to import the solution into (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
+| `PowerPlatformEnvironment`<br/>Power Platform environment URL | The service endpoint that you want to import the solution into (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. More information: see `BuildTools.EnvironmentUrl` under [Power Platform Create Environment](#power-platform-create-environment) |
+| `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint that you want to import the solution into (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. More information: see `BuildTools.EnvironmentUrl` under [Power Platform Create Environment](#power-platform-create-environment) |
 | `SolutionInputFile`<br/>Solution input file | (Required) The path and file name of the solution .zip file to import into the target environment (e.g., $(Build.ArtifactStagingDirectory)\$(SolutionName).zip). <p/>Note: Variables give you a convenient way to get key bits of data into various parts of your pipeline. See [Use predefined variables](/azure/devops/pipelines/build/variables) for a comprehensive list.  |
-| `AsyncOperation`<br/>Import solution as asynchronous operation | If selected (**true**), the import operation will be performed asynchronously. This is recommended for larger solutions as this task will automatically timeout after 4 minutes otherwise. |
 | `HoldingSolution`<br/>Import as a holding solution | An advance parameter (true\|false) used when a solution needs to be upgraded. This parameter hosts the solution in Dataverse but does not upgrade the solution until the Apply Solution Upgrade task is run. |
 | `OverwriteUnmanagedCustomizations`<br/>Overwrite un-managed customizations | Specify whether to overwrite un-managed customizations (true\|false). |
 | `SkipProductUpdateDependencies`<br/>Skip product update dependencies | Specify whether the enforcement of dependencies related to product updates should be skipped (true\|false). |
 | `ConvertToManaged`<br/>Convert to managed | Specify whether to import as a managed solution (true\|false). |
-| `AsyncOperation`<br/>Asynchronous import | Import solution as asynchronous batch job; selecting asynchronous will poll and wait until MaxAsyncWaitTime has been reached (true\|false). |
+| `AsyncOperation`<br/>Asynchronous import | If selected (**true**), the import operation will be performed asynchronously. This is recommended for larger solutions as this task will automatically timeout after 4 minutes otherwise. Selecting asynchronous will poll and wait until MaxAsyncWaitTime has been reached (true\|false). |
+| `MaxAsyncWaitTime`<br/>Maximum wait time | Maximum wait time in minutes for the asynchronous operation; default is 60 min (1 hr), same as Azure DevOps default for tasks.|
 | `PublishWorkflows`<br/>Activate processes after import | Specify whether any processes (workflows) in the solution should be activated after import (true\|false). |
-| `UseDeploymentSettingsFile`<br/>Use deployment settings file | Connection references and environment variable values can be set using a deployment settings file (true\|false). |
+| `UseDeploymentSettingsFile`<br/>Use deployment settings file | Connection references and environment variable values can be set using a [deployment settings](conn-ref-env-variables-build-tools.md#deployment-settings-file) file (true\|false). |
 | `DeploymentSettingsFile`<br/>Deployment settings file | (Required when `UseDeploymentSettingsFile`=**true**) The path and file name of the deployment settings file. |
 
 ### Power Platform Apply Solution Upgrade
+
 Upgrades a solution that has been imported as a holding solution.
+
+#### YAML snippet (Upgrade)
+
+```yml
+steps:
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.apply-solution-upgrade.PowerPlatformApplySolutionUpgrade@0
+  displayName: 'Power Platform Apply Solution Upgrade '
+  inputs:
+    PowerPlatformEnvironment: 'My service connection'
+    SolutionName: 'Contoso_sample'
+    AsyncOperation: false
+```
+
+```yml
+steps:
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.apply-solution-upgrade.PowerPlatformApplySolutionUpgrade@0
+  displayName: 'Power Platform Apply Solution Upgrade '
+  inputs:
+    authenticationType: PowerPlatformSPN
+    PowerPlatformSPN: 'Dataverse service connection '
+    SolutionName: 'Contoso_sample'
+    MaxAsyncWaitTime: 45
+```
+
+#### Parameters (Upgrade)
 
 | Parameters           | Description        |
 |----------------------|--------------------------|
-| Authentication type | (Required) Select whether to use username/password or service principal authentication. Username/password does not support multi-factor authentication (MFA). |
-| Service connection | (Required) The service connection to the target environment that you want to import the solution into (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type. |
-| Solution name | (Required) The name of the solution to export. Always use the solution *Name* not its *Display Name*. |
-| Apply solution upgrade as asynchronous operation | If selected, the import operation will be performed asynchronously. This is recommended for larger solutions as this task will automatically timeout after 4 minutes otherwise. |
-| Convert solution to managed| If selected, the import operation will convert the solution, if unmanaged, will be converted to managed|
+| `authenticationType`<br/>Type of authentication | (Required for SPN) Specify either **PowerPlatformEnvironment** for a username/password connection or **PowerPlatformSPN** for a Service Principal/client secret connection. |
+| `PowerPlatformEnvironment`<br/>Power Platform environment URL | The service endpoint that you want to upgrade the solution into (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. More information: see `BuildTools.EnvironmentUrl` under [Power Platform Create Environment](#power-platform-create-environment) |
+| `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint that you want to upgrade the solution into (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. More information: see `BuildTools.EnvironmentUrl` under [Power Platform Create Environment](#power-platform-create-environment) |
+| `SolutionName`<br/>Solution name | (Required) The name of the solution to apply the upgrade. Always use the solution *Name* not its *Display Name*. |
+| `AsyncOperation`<br/>Asynchronous upgrade | If selected (**true**), the upgrade operation will be performed as an asynchronous batch job. Selecting asynchronous will poll and wait until MaxAsyncWaitTime has been reached. |
+| `MaxAsyncWaitTime`<br/>Maximum wait time | Maximum wait time in minutes for the asynchronous operation; default is 60 min (1 hr), same as Azure DevOps default for tasks.|
+<!-- | Convert solution to managed| If selected, the import operation will convert the solution, if unmanaged, will be converted to managed| -->
+
 > [!NOTE]
 > Variables give you a convenient way to get key bits of data into various parts of your pipeline. See [Use predefined variables](/azure/devops/pipelines/build/variables) for a comprehensive list.
-> You can pre-populate connection reference and environment variables information for the target environment while importing a solution using a deployment settings file. More information: [Pre-populate connection references and environment variables for automated deployments](conn-ref-env-variables-build-tools.md) 
+> You can pre-populate connection reference and environment variables information for the target environment while importing a solution using a deployment settings file.<p/>More information: [Pre-populate connection references and environment variables for automated deployments](conn-ref-env-variables-build-tools.md) 
 
 ### Power Platform Export Solution
 
 Exports a solution from a source environment.
 
+#### YAML snippet (Export)
+
+```yml
+steps:
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.export-solution.PowerPlatformExportSolution@0
+  displayName: 'Power Platform Export Solution '
+  inputs:
+    PowerPlatformEnvironment: 'My service connection'
+    SolutionName: 'Contoso_sample'
+    SolutionOutputFile: 'C:\Public\Contoso_sample_1_0_0_1_managed.zip'
+    Managed: true
+    MaxAsyncWaitTime: 120
+```
+
+```yml
+steps:
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.export-solution.PowerPlatformExportSolution@0
+  displayName: 'Power Platform Export Solution '
+  inputs:
+    authenticationType: PowerPlatformSPN
+    PowerPlatformSPN: 'Dataverse service connection '
+    SolutionName: 'Contoso_sample'
+    SolutionOutputFile: 'C:\Public\Contoso_sample_1_0_0_1_managed.zip'
+    Managed: true
+    MaxAsyncWaitTime: 120
+    ExportAutoNumberingSettings: true
+    ExportCalendarSettings: true
+    ExportCustomizationSettings: true
+    ExportEmailTrackingSettings: true
+    ExportGeneralSettings: true
+    ExportIsvConfig: true
+    ExportMarketingSettings: true
+    ExportOutlookSynchronizationSettings: true
+    ExportRelationshipRoles: true
+    ExportSales: true
+```
+
+#### Parameters (Export)
+
 | Parameters      | Description     |
 |-----------------|---------------------|
-| Authentication type | (Required) Select whether to use username/password or service principal authentication. Username/password does not support multi-factor authentication. |
-| Service connection | (Required) The service connection to the source environment that you want to export the solution from.  Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type.|
-| Solution name              | (Required) The name of the solution to export.<p/>Always use the solution *Name*, not its *Display Name*.    |
-| Solution output file       | (Required) The path and file name of the solution.zip file to export the source environment to (e.g., $(Build.ArtifactStagingDirectory)\$(SolutionName).zip ). <p/>Note: Variables give you a convenient way to get key bits of data into various parts of your pipeline. See [Use predefined variables](/azure/devops/pipelines/build/variables) for a comprehensive list.   |
+| `authenticationType`<br/>Type of authentication | (Required for SPN) Specify either **PowerPlatformEnvironment** for a username/password connection or **PowerPlatformSPN** for a Service Principal/client secret connection. |
+| `PowerPlatformEnvironment`<br/>Power Platform environment URL | The service endpoint that you want to upgrade the solution into (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. More information: see `BuildTools.EnvironmentUrl` under [Power Platform Create Environment](#power-platform-create-environment) |
+| `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint that you want to upgrade the solution into (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. More information: see `BuildTools.EnvironmentUrl` under [Power Platform Create Environment](#power-platform-create-environment) |
+| `SolutionName`<br/>Solution name | (Required) The name of the solution to export. Always use the solution *Name* not its *Display Name*. |
+| `SolutionOutputFile`<br/>Solution output file | (Required) The path and file name of the solution.zip file to export the source environment to (e.g., $(Build.ArtifactStagingDirectory)\$(SolutionName).zip ). <p/>Note: Variables give you a convenient way to get key bits of data into various parts of your pipeline. See [Use predefined variables](/azure/devops/pipelines/build/variables) for a comprehensive list. |
+| `AsyncOperation`<br/>Asynchronous export | If selected (**true**), the export operation will be performed as an asynchronous batch job. Selecting asynchronous will poll and wait until MaxAsyncWaitTime has been reached. |
+| `MaxAsyncWaitTime`<br/>Maximum wait time | Maximum wait time in minutes for the asynchronous operation; default is 60 min (1 hr), same as Azure DevOps default for tasks.|
+| `Managed`<br/>Export as managed | If selected (**true**), export the solution as a managed solution; otherwise export as an unmanaged solution. |
+| `ExportAutoNumberingSettings`<br/>Export auto-numbering settings | Export auto-numbering settings (true\|false). |
+| `ExportCalendarSettings`<br/>Export calendar settings |Export calendar settings (true\|false). |
+| `ExportCustomizationSettings`<br/>Export customization settings | Export customization settings (true\|false). |
+| `ExportEmailTrackingSettings`<br/>Export email tracking settings | Export email tracking settings (true\|false). |
+| `ExportGeneralSettings`<br/>Export general settings | Export general settings (true\|false). |
+| `ExportIsvConfig`<br/>Export ISV configuration | Export ISV configuration (true\|false). |
+| `ExportMarketingSettings`<br/>Export marketing settings | Export marketing settings (true\|false). |
+| `ExportOutlookSynchronizationSettings`<br/>Export Outlook sync settings | Export Outlook synchronization settings (true\|false). |
+| `ExportRelationshipRoles`<br/>Export relationship roles | Export relationship roles (true\|false). |
+| `ExportSales`<br/>Exports sales | Exports sales (true\|false). |
 
 ### Power Platform Unpack Solution
 
 Takes a compressed solution file and decomposes it into multiple XML files so that these files can be more easily read and managed by a source control system.
 
+#### YAML snippet (Unpack)
+
+```yml
+steps:
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.unpack-solution.PowerPlatformUnpackSolution@0
+  displayName: 'Power Platform Unpack Solution '
+  inputs:
+    SolutionInputFile: 'C:\Public\Contoso_sample_1_0_0_1_managed.zip'
+    SolutionTargetFolder: 'C:\Public'
+    SolutionType: Both
+```
+
+#### Parameters (Unpack)
+
 | Parameters    | Description       |
 |---------------|-------------------|
-| Solution input file              | (Required) The path and file name of the solution.zip file to unpack.     |
-| Target folder to unpack solution | (Required) The path and target folder you want to unpack the solution into.      |
-| Type of solution                 | (Required) The type of solution you want to unpack. Options include: **Unmanaged** (recommended), **Managed**, and **Both**. |
+| `SolutionInputFile`<br/>Solution input file | (Required) The path and file name of the solution.zip file to unpack. |
+| `SolutionTargetFolder`<br/>Target folder to unpack solution | (Required) The path and target folder you want to unpack the solution into. |
+| `SolutionType`<br/>Type of solution | (Required) The type of solution you want to unpack. Options include: **Unmanaged** (recommended), **Managed**, and **Both**. |
 
 ### Power Platform Pack Solution
 
 Packs a solution represented in source control into a solution.zip file that can be imported into another environment.
 
+#### YAML snippet (Pack)
+
+```yml
+steps:
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.pack-solution.PowerPlatformPackSolution@0
+  displayName: 'Power Platform Pack Solution '
+  inputs:
+    SolutionSourceFolder: 'C:\Public'
+    SolutionOutputFile: 'Contoso_sample_1_0_0_1_managed.zip'
+    SolutionType: Managed
+```
+
+#### Parameters (Pack)
+
 | Parameters       | Description     |
 |------------------|-----------------|
-| Solution output file              | (Required) The path and file name of the solution.zip file to pack the solution into.     |
-| Source folder of solution to pack | (Required) The path and source folder of the solution to pack.      |
-| Type of solution                  | (Required) The type of solution you want to pack. Options include: **Unmanaged** (recommended), **Managed**, and **Both**. |
-
+| `SolutionOutputFile`<br/>Solution output file | (Required) The path and file name of the solution.zip file to pack the solution into. |
+| `SolutionSourceFolder`<br/>sSource folder of solution to pack | (Required) The path and source folder of the solution to pack. |
+| `SolutionType`<br/>Type of solution | (Required) The type of solution you want to pack. Options include: **Unmanaged** (recommended), **Managed**, and **Both**. |
 
 ### Power Platform Delete Solution
 
 Deletes a solution in the target environment.
 
+#### YAML snippet (Delete)
+
+```yml
+steps:
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.delete-solution.PowerPlatformDeleteSolution@0
+  displayName: 'Power Platform Delete Solution '
+  inputs:
+    authenticationType: PowerPlatformSPN
+    PowerPlatformSPN: 'Dataverse service connection '
+    SolutionName: 'Contoso_sample'
+```
+
+#### Parameters (Delete)
+
 | Parameters       | Description     |
 |------------------|-----------------|
-| Authentication type | (Required) Select whether to use username/password or Service Principal authentication. Username/password does not support multi-factor authentication (MFA). |
-| Service connection | (Required) The service connection to the source environment that you want to export the solution from.  Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type.     |
-| Solution name  | (Required) The name of the solution to export. Always use the solution *Name* not its *Display Name*. |
+| `authenticationType`<br/>Type of authentication | (Required for SPN) Specify either **PowerPlatformEnvironment** for a username/password connection or **PowerPlatformSPN** for a Service Principal/client secret connection. |
+| `PowerPlatformEnvironment`<br/>Power Platform environment URL | The service endpoint that you want to delete the solution (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. More information: see `BuildTools.EnvironmentUrl` under [Power Platform Create Environment](#power-platform-create-environment) |
+| `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint that you want to delete the solution (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. More information: see `BuildTools.EnvironmentUrl` under [Power Platform Create Environment](#power-platform-create-environment) |
+| `SolutionName`<br/>Solution name  | (Required) The name of the solution to delete. Always use the solution *Name* not its *Display Name*. |
 
 ### Power Platform Publish Customizations
 
 Publishes all customizations in an environment.
 
+#### YAML snippet (Publish)
+
+```yml
+steps:
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.publish-customizations.PowerPlatformPublishCustomizations@0
+  displayName: 'Power Platform Publish Customizations '
+  inputs:
+    authenticationType: PowerPlatformSPN
+    PowerPlatformSPN: 'Dataverse service connection '
+```
+
+#### Parameters (Publish)
+
 | Parameters     | Description    |
 |----------------|----------------|
-| Authentication type | (Required) Select whether to use username/password or service principal authentication. Username/password does not support multi-factor authentication. |
-| Service connection | (Required) The service connection to the environment in which you want to publish customizations. Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type. |
-
+| `authenticationType`<br/>Type of authentication | (Required for SPN) Specify either **PowerPlatformEnvironment** for a username/password connection or **PowerPlatformSPN** for a Service Principal/client secret connection. |
+| `PowerPlatformEnvironment`<br/>Power Platform environment URL | The service endpoint that you want to publish the customizations (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. More information: see `BuildTools.EnvironmentUrl` under [Power Platform Create Environment](#power-platform-create-environment) |
+| `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint that you want to publish the customizations (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. More information: see `BuildTools.EnvironmentUrl` under [Power Platform Create Environment](#power-platform-create-environment) |
 
 ### Power Platform Set Solution Version
 
-Updates the version of a solution. 
+Updates the version of a solution.
+
+#### YAML snippet (Version)
+
+```yml
+steps:
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.set-solution-version.PowerPlatformSetSolutionVersion@0
+  displayName: 'Power Platform Set Solution Version '
+  inputs:
+    authenticationType: PowerPlatformSPN
+    PowerPlatformSPN: 'Dataverse service connection '
+    SolutionName: 'Contoso_sample'
+    SolutionVersionNumber: 1.0.0.0
+```
+
+#### Parameters (Version)
 
 | Parameters    | Description   |
 |---------------|---------------|
-| Authentication type | (Required) Select whether to use username/password or service principal authentication. Username/password does not support multi-factor authentication. |
-| Service connection | (Required) The service connection to the target environment that holds the solution you want to update.  Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type.|
-| Solution name              | (Required) The name of the solution you want to set the version number for.     |
-| Solution Version Number              | (Required) Version number you want to set.     |
+| `authenticationType`<br/>Type of authentication | (Required for SPN) Specify either **PowerPlatformEnvironment** for a username/password connection or **PowerPlatformSPN** for a Service Principal/client secret connection. |
+| `PowerPlatformEnvironment`<br/>Power Platform environment URL | The service endpoint that you want to set the solution version (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. More information: see `BuildTools.EnvironmentUrl` under [Power Platform Create Environment](#power-platform-create-environment) |
+| `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint that you want to set the solution version (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. More information: see `BuildTools.EnvironmentUrl` under [Power Platform Create Environment](#power-platform-create-environment) |
+| `SolutionName`<br/>Solution name  | (Required) The name of the solution to set the version for. Always use the solution *Name* not its *Display Name*. |
+| `SolutionVersionNumber`<br/>Solution version number | (Required) Version number you want to set. |
 
 While version number can be hardcoded in the pipeline, it is recommended to use an Azure DevOps pipeline variable like [BuildId](/azure/devops/pipelines/build/variables#build-variables). 
 This provides options to define the exact shape of version number under the "Options" tab, for example: $(Year:yyyy)-$(Month:MM)-$(Day:dd)-$(rev:rr)-3
 
 This definition can then be used in the Set Solution Version task by setting the Version Number property with: $(Build.BuildId) instead of hard coding 20200824.0.0.2.
 
+Alternatively a powershell inline task script $(Get-Date -Format yyyy.MM.dd.HHmm) output set to empty variable named SolutionVersion as Write-Host ("##vso[task.setvariable variable=SolutionVersion;]$version"), Set Solution Version as $(SolutionVersion).
+
 ### Power Platform Deploy Package
 
 Deploys a package to an environment. Deploying a [package](/powerapps/developer/common-data-service/package-deployer/create-packages-package-deployer) as opposed to a single solution file provides an option to deploy multiple solutions, data, and code into an environment.
 
+#### YAML snippet (Deploy)
+
+```yml
+steps:
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.deploy-package.PowerPlatformDeployPackage@0
+  displayName: 'Power Platform Deploy Package '
+  inputs:
+    authenticationType: PowerPlatformSPN
+    PowerPlatformSPN: 'Dataverse service connection '
+    PackageFile: 'C:\Users\Public\package.dll'
+    MaxAsyncWaitTime: 120
+```
+
+#### Parameters (Deploy)
+
 | Parameters      | Description    |
 |-----------------|----------------|
-| Authentication type | (Required) Select whether to use username/password or service principal authentication. Username/password does not support multi-factor authentication. |
-| Service connection | (Required) The service connection to the target environment into which you want to deploy the package.  Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type.|
-| Package file | (Required) The path and file name of the path and file name of the package file assembly (.dll). |
+| `authenticationType`<br/>Type of authentication | (Required for SPN) Specify either **PowerPlatformEnvironment** for a username/password connection or **PowerPlatformSPN** for a Service Principal/client secret connection. |
+| `PowerPlatformEnvironment`<br/>Power Platform environment URL | The service endpoint that you want to deploy the package into (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. More information: see `BuildTools.EnvironmentUrl` under [Power Platform Create Environment](#power-platform-create-environment) |
+| `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint that you want to deploy the package into (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. More information: see `BuildTools.EnvironmentUrl` under [Power Platform Create Environment](#power-platform-create-environment) |
+| `PackageFile`<br/>Package file | (Required) The path and file name of the package file assembly (.dll). |
+| `MaxAsyncWaitTime`<br/>Maximum wait time | Maximum wait time in minutes for the asynchronous operation; default is 60 min (1 hr), same as Azure DevOps default for tasks.|
 
 ## Environment management tasks
 
@@ -302,55 +475,144 @@ Automate common Environment Lifecycle Management (ELM) tasks.
 
 ### Power Platform Create Environment
 
-Creates a new environment. Creating a new environment also automatically creates the BuildTools.EnvironmentUrl which will be used as default service connection for subsequent tasks in the pipeline
+Creates a new environment. Creating a new environment also automatically creates `BuildTools.EnvironmentUrl`.
 
-> [!NOTE]
+> [!IMPORTANT]
+> When set, `BuildTools.EnvironmentUrl` will be used as the **default service connection** for subsequent tasks in the pipeline. Each task described in this article only uses the endpoint from the service connection when `BuildTools.EnvironmentUrl` is not set.<p/>
 > A new environment can only be provisioned if your license or capacity
 > allows for the creation of additional environments. For more information on how to view capacity see [Capacity page details](../admin/capacity-storage.md#capacity-page-details).
 
+#### YAML snippet (Create-env)
+
+```yml
+steps:
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.create-environment.PowerPlatformCreateEnvironment@0
+  displayName: 'Power Platform Create Environment '
+  inputs:
+    PowerPlatformEnvironment: 'My service connection'
+    DisplayName: 'First Coffee test'
+    DomainName: firstcoffee
+```
+
+```yml
+steps:
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.create-environment.PowerPlatformCreateEnvironment@0
+  displayName: 'Power Platform Create Environment '
+  inputs:
+    authenticationType: PowerPlatformSPN
+    PowerPlatformSPN: 'Dataverse service connection '
+    DisplayName: 'First Coffee prod'
+    EnvironmentSku: Production
+    AppsTemplate: 'D365_CustomerService,D365_FieldService'
+    LocationName: canada
+    LanguageName: 1036
+    CurrencyName: ALL
+    DomainName: firstcoffee
+```
+
+#### Parameters (Create-env)
+
 | Parameters        | Description     |
 |-------------------|-----------------|
-| Authentication type | (Required) Select whether to use username/password or service principal authentication. Username/password does not support multi-factor authentication. |
-| Service connection | (Required) The service connection to the tenant for which you want to create the environment. Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type.|
-| Display name | (Required) The display name of the environment created. |
-| Deployment Region | (Required) The region that the environment should be deployed into.         |
-| Environment Type     | (Required) The type of instance to deploy. Options are **Sandbox** or **Production**.      |
-| Region | (Required) The region that the environment should be created in.  |
-| Currency | (Required) Base currency for the environment created. The currency cannot be updated after the environment is created. |
-| Language     | (Required) The base language in the environment.      |
-| Domain Name       | (Required) This is the environment-specific string that forms part of the URL. For example, for an environment with the following URL: [https://powerappsbuildtasks.crm.dynamics.com](https://powerappsbuildtasks.crm.dynamics.com/), the domain name would be 'powerappsbuildtasks'. <p/>Note: If you enter a domain name that's already in use, the task appends a numeric value to the domain name, starting with 0. For the example above, the URL might become [https://powerappsbuildtasks0.crm.dynamics.com](https://powerappsbuildtasks0.crm.dynamics.com/). |
+| `authenticationType`<br/>Type of authentication | (Required for SPN) Specify either **PowerPlatformEnvironment** for a username/password connection or **PowerPlatformSPN** for a Service Principal/client secret connection. |
+| `PowerPlatformEnvironment`<br/>Power Platform environment URL | The service endpoint that you want to create the environment (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
+| `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint that you want to create the environment (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
+| `DisplayName`<br/>Display name | (Required) The display name of the environment created. |
+| `LocationName`<br/>Deployment region | (Required) The region that the environment should be created in. |
+| `EnvironmentSku`<br/>Environment type | (Required) The type of instance to deploy. Options are **Sandbox**, **Production**, **Trial**, and **SubscriptionBasedTrial**. |
+| `AppsTemplate`<br/>Apps | For a non-trial environment type, the supported apps are D365_CustomerService, D365_FieldService, D365_ProjectServiceAutomation, and D365_Sales. |
+| `CurrencyName`<br/>Currency | (Required) Base currency for the environment created. The currency cannot be updated after the environment is created. |
+| `LanguageName`<br/>Language     | (Required) The base language in the environment. |
+| `DomainName`<br/>Domain Name | (Required) This is the environment-specific string that forms part of the URL. For example, for an environment with the following URL: [https://powerappsbuildtasks.crm.dynamics.com](https://powerappsbuildtasks.crm.dynamics.com/), the domain name would be 'powerappsbuildtasks'. <p/>Note: If you enter a domain name that's already in use, the task appends a numeric value to the domain name, starting with 0. For the example above, the URL might become [https://powerappsbuildtasks0.crm.dynamics.com](https://powerappsbuildtasks0.crm.dynamics.com/). |
 
 ### Power Platform Delete Environment
 
 Deletes an environment.
 
+#### YAML snippet (Delete-env)
+
+```yml
+steps:
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.delete-environment.PowerPlatformDeleteEnvironment@0
+  displayName: 'Power Platform Delete Environment '
+  inputs:
+    PowerPlatformEnvironment: 'My service connection'
+```
+
+#### Parameters (Delete-env)
+
 | Parameters       | Description         |
 |------------------|---------------------|
-| Authentication type | (Required) Select whether to use username/password or service principal authentication. Username/password does not support multi-factor authentication. |
-| Service connection | (Required) The service connection to the tenant for which you want to delete the environment. Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type. |
+| `authenticationType`<br/>Type of authentication | (Required for SPN) Specify either **PowerPlatformEnvironment** for a username/password connection or **PowerPlatformSPN** for a Service Principal/client secret connection. |
+| `PowerPlatformEnvironment`<br/>Power Platform environment URL | The service endpoint that you want to delete the environment (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
+| `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint that you want to delete the environment (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
 
 ### Power Platform Backup Environment
 
 Backs up an environment.
 
+#### YAML snippet (Backup-env)
+
+```yml
+steps:
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.backup-environment.PowerPlatformBackupEnvironment@0
+  displayName: 'Power Platform Backup Environment '
+  inputs:
+    PowerPlatformEnvironment: 'My service connection'
+    BackupLabel: 'Full backup - $(Build.BuildNumber)'
+```
+
+#### Parameters (Backup-env)
+
 | Parameters   | Description   |
 |--------------|---------------|
-| Authentication type | (Required) Select whether to use username/password or service principal authentication. Username/password does not support multi-factor authentication.|
-| Service connection | (Required) The service connection to the tenant for which you want to back up the environment. Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type. |
-| Backup label               | (Required) The label to be assigned to the backup.                                                                         |
+| `authenticationType`<br/>Type of authentication | (Required for SPN) Specify either **PowerPlatformEnvironment** for a username/password connection or **PowerPlatformSPN** for a Service Principal/client secret connection. |
+| `PowerPlatformEnvironment`<br/>Power Platform environment URL | The service endpoint that you want to back up the environment (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
+| `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint that you want to back up the environment (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
+| `BackupLabel`<br/>Backup label | (Required) The label to be assigned to the backup. |
 
 ### Power Platform Copy Environment
 
-Copies an environment to a target environment. Two
-types of copies are available: full and minimal. A *Full* copy includes both data and
-solution metadata (customizations), whereas a *minimal* copy only includes solution
-metadata and not the actual data. 
+Copies an environment to a target environment. Two types of copies are available: full and minimal. A *Full* copy includes both data and solution metadata (customizations), whereas a *minimal* copy only includes solution
+metadata and not the actual data.
+
+#### YAML snippet (Copy-env)
+
+```yml
+steps:
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.copy-environment.PowerPlatformCopyEnvironment@0
+  displayName: 'Power Platform Copy Environment '
+  inputs:
+    PowerPlatformEnvironment: 'My service connection'
+    TargetEnvironmentUrl: 'https://contoso-test.crm.dynamics.com'
+```
+
+```yml
+steps:
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.copy-environment.PowerPlatformCopyEnvironment@0
+  displayName: 'Power Platform Copy Environment '
+  inputs:
+    authenticationType: PowerPlatformSPN
+    PowerPlatformSPN: 'Dataverse service connection '
+    TargetEnvironmentUrl: 'https://contoso-test.crm.dynamics.com'
+    CopyType: MinimalCopy
+    OverrideFriendlyName: true
+    FriendlyName: 'Contoso Test'
+    DisableAdminMode: false
+```
+
+#### Parameters (Copy-env)
 
 | Parameters     | Description     |
 |----------------|-----------------|
-| Authentication type | (Required) Select whether to use username/password or service principal authentication. Username/password does not support multi-factor authentication. |
-| Service connection | (Required) The service connection for the source environment that you want to copy from. Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type. |
-| Target environment URL | (Required) The URL for the target environment that you want to copy to.  | 
+| `authenticationType`<br/>Type of authentication | (Required for SPN) Specify either **PowerPlatformEnvironment** for a username/password connection or **PowerPlatformSPN** for a Service Principal/client secret connection. |
+| `PowerPlatformEnvironment`<br/>Power Platform environment URL | The service endpoint for the source environment that you want to copy from (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
+| `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint for the source environment that you want to copy from (e.g., [https://powerappsbuildtools.crm.dynamics.com](https://powerappsbuildtools.crm.dynamics.com)). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
+| `TargetEnvironmentUrl`<br/>Target environment URL | (Required) The URL for the target environment that you want to copy to. |
+| `CopyType`<br/>Copy type | The type of copy to perform: FullCopy or MinimalCopy |
+| `OverrideFriendlyName`<br/>Override friendly name | Change the target environment's friendly name to another name (true\|false). |
+| `FriendlyName`<br/>Friendly name | The friendly name of the target environment. |
+| `DisableAdminMode`<br/>Disable admin mode | Whether to disable administration mode (true\|false). |
 
 ## Build and release pipelines
 
@@ -362,7 +624,7 @@ To learn more about creating these pipelines and actually do hands-on pipeline
 authoring using the Microsoft Power Platform Build Tools, complete the [build tools labs](https://github.com/microsoft/PowerApps-Samples/tree/master/build-tools),
 which you can download from GitHub.
 
-More information about Azure DevOps pipelines: [Use Azure Pipelines](/azure/devops/pipelines/get-started/pipelines-get-started)
+More information about Azure DevOps Pipelines: [Use Azure Pipelines](/azure/devops/pipelines/get-started/pipelines-get-started)
 
 <a name="build-pipeline-export-solution-from-development"></a>
 
