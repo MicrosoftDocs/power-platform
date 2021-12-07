@@ -446,7 +446,7 @@
         - name: "Preview: Power Automate analytics report"
           href: power-automate-analytics-reports.md
         - name: "Preview: Power Apps license utilization"
-          href: power-apps-license-utilization.md
+          href: powerapps-license-utilization.md
       - name: Data export
         items:
         - name: "Preview: Export Power Apps inventory and usage data"
