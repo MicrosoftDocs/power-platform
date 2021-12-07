@@ -41,7 +41,8 @@ Custom dialogs added with Bot Framework Composer are deployed, hosted, and execu
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 
 ## Access Bot Framework Composer from within Power Virtual Agents 
-1. Go to the **Topics** tab for the bot you want to edit and select **+ New topic**.
+
+1. Go to the **Topics** tab for the bot you want to edit and select the down-arrow symbol next to **+ New topic**.
 
 2. Select **Open in Bot Framework Composer** from the dropdown menu. 
 
@@ -63,7 +64,7 @@ During installation, make sure to unselect the **Run Bot Framework Composer** ch
 
 :::image type="content" source="media/Composer_InstallWizardFinish.png" alt-text="Bot Framework Composer Install Complete.":::
 
-Go back to the  Power Virtual Agents **Topics** page and select **+ New topic**. Select **Open in Bot Framework Composer** in the dropdown menu and then **Open Composer** to open your bot in Composer.
+Go back to the Power Virtual Agents **Topics** page and select the down-arrow symbol next to **+ New topic**. Select **Open in Bot Framework Composer** in the dropdown menu and then **Open Composer** to open your bot in Composer.
 
 
 >[!NOTE]

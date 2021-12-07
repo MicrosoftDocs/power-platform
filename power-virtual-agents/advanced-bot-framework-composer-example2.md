@@ -40,7 +40,7 @@ Before you begin, ensure you read [Extend your bot with Bot Framework Composer](
 
 Using Composer, you can create a multi-select options list to be used in your chatbot.
 
-Open the Power Virtual Agents bot used in [Example 1](advanced-bot-framework-composer-example1.md) and select the **Open in Bot Framework Composer** option on the **Topics** page under **+ New topic** to open the bot in Composer. 
+Open the Power Virtual Agents bot used in [Example 1](advanced-bot-framework-composer-example1.md) and on the left-hand menu, select **Topics**. Select the down-arrow symbol next to **+ New topic**, and then select **Open in Bot Framework Composer** to open the bot in Composer. 
 
 While on the **Create** tab in Composer add another Bot Framework dialog. Name your new dialog **DailySpecials** in Composer.
 

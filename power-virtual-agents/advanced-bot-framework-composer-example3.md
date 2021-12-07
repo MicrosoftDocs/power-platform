@@ -44,7 +44,7 @@ Before you begin, ensure you read [Extend your bot with Bot Framework Composer](
 
 Open the Power Virtual Agents bot used in the previous examples.
 
-Go to the **Topics** page and select **Open in Bot Framework Composer** under the **+ New topic** dropdown menu to open Composer. 
+On the left-hand menu, select **Topics**. Select the down-arrow symbol next to **+ New topic**, and then select **Open in Bot Framework Composer**.
 
 Select **+ Add new trigger** to add another Bot Framework trigger to **Contoso Meal Delivery Service** dialog. Choose the type **Unknown intent** for your new trigger.
 

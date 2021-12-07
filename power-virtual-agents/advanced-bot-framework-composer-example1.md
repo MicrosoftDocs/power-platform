@@ -60,7 +60,7 @@ rename the output variable **Var** to **user_city**. Set the variable **Usage** 
 
 Next, we'll instruct the topic, **Meal delivery options**, to display meal choice images that are available in the user’s city. We'll retrieve the images from Bot Framework Composer content. 
 
-On the left-hand menu, select **Topics**. Select the down-arrow icon next to **+ New topic**, and then select **Open in Bot Framework Composer**.
+On the left-hand menu, select **Topics**. Select the down-arrow symbol next to **+ New topic**, and then select **Open in Bot Framework Composer**.
 
 Your Power Virtual Agents bot will open in a Bot Framework Composer project. You will see the list of all Power Virtual Agents topics in your bot in Composer, but they are not editable. The **Recognizer Type** field is set to **Default Recognizer**, which is **Power Virtual Agents NLU**.
 
