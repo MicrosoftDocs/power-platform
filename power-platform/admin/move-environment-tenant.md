@@ -109,7 +109,7 @@ You'll also need to provide the following information:
 
 1. Be authorized to perform the migration.
 2. Create the Dynamics 365 destination environments (if they're not already created) in the target tenant.
-3. If you'll be moving a production environment, you first need to migrate a sandbox copy. In that case, you'll also need a new environment in the source tenant so we can copy the production environment into the new environment.
+3. If we'll be moving a production environment, we first need to migrate a sandbox copy. In that case, we'll also need a new environment in the source tenant so we can copy the production environment into the new environment.
 4. Create users in the destination environments in the target tenant. You must:
    1. Create users in Microsoft 365/Azure AD.
    2. Assign licenses.
