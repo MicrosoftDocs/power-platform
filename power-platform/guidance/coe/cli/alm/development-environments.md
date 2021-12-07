@@ -19,7 +19,7 @@ search.app:
 
 # Development Environments
 
-Each maker will need a development environment created. Advanced makers can use a community environment to work in. Community environments can be accessed from the sign-up page [https://powerapps.microsoft.com/en-us/developerplan/](https://powerapps.microsoft.com/en-us/developerplan/) with **Get Started Free**
+Each maker will need a development environment created. Advanced makers can use a community environment to work in. Community environments can be accessed from the sign-up page [https://powerapps.microsoft.com/developerplan/](https://powerapps.microsoft.com/developerplan/) with **Get Started Free**
 
 ## Microsoft Power Platform for Developer Licenses
 
@@ -39,23 +39,23 @@ Get-MsolCompanyInformation | fl AllowAdHocSubscriptions
 Set-MsolCompanySettings -AllowAdHocSubscriptions $true 
 ```
 
-1. Verify that only Viral consent plan using [Get-AllowedConsentPlans](https://docs.microsoft.com/powershell/module/microsoft.powerapps.administration.powershell/get-allowedconsentplans) is enabled as Administrator
+1. Verify that only Viral consent plan using [Get-AllowedConsentPlans](/powershell/module/microsoft.powerapps.administration.powershell/get-allowedconsentplans) is enabled as Administrator
 
 ```powershell
 Import-Module -Name Microsoft.PowerApps.Administration.PowerShell
 Get-AllowedConsentPlans
 ```
 
-1. The results should be {Viral}. If it does not have this value then can update consent plans using [Add-AllowedConsentPlans](https://docs.microsoft.com/powershell/module/microsoft.powerapps.administration.powershell/add-allowedconsentplans) and [Remove-AllowedConsentPlans](https://docs.microsoft.com/en-us/powershell/module/microsoft.powerapps.administration.powershell/remove-allowedconsentplans)
+1. The results should be {Viral}. If it does not have this value then can update consent plans using [Add-AllowedConsentPlans](/powershell/module/microsoft.powerapps.administration.powershell/add-allowedconsentplans) and [Remove-AllowedConsentPlans](/powershell/module/microsoft.powerapps.administration.powershell/remove-allowedconsentplans)
 
 ```powershell
 Add-AllowedConsentPlans -Type Viral
 Remove-AllowedConsentPlans -Type Internal
 ```
 
-1. Once these steps are completed then complete the sign-up process using [https://powerapps.microsoft.com/en-us/developerplan/](https://powerapps.microsoft.com/en-us/developerplan/) with **Get Started Free**
+1. Once these steps are completed then complete the sign-up process using [https://powerapps.microsoft.com/developerplan/](https://powerapps.microsoft.com/developerplan/) with **Get Started Free**
 
-1. The license type **Microsoft Power Apps for Developers** can how be [assigned to users](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users) or [Azure Active Groups](https://docs.microsoft.com/azure/active-directory/enterprise-users/licensing-groups-assign)
+1. The license type **Microsoft Power Apps for Developers** can how be [assigned to users](/microsoft-365/admin/manage/assign-licenses-to-users) or [Azure Active Groups](/azure/active-directory/enterprise-users/licensing-groups-assign)
 
 1. If the AllowAdHocSubscriptions value was changed to true then can update to value to false
 
