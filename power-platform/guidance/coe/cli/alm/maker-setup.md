@@ -39,7 +39,7 @@ az logout
 1. Add the Service Principal to the environment
 
 ```bash
-coe alm user add -e https://org12345-dev.crm.dynamics.com
+coe alm user add -e https://contoso-dev-user1.crm.dynamics.com
 ```
 
 More information on the [coe alm user add](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/user/add.md) command

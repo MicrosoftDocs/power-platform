@@ -19,7 +19,51 @@ search.app:
 
 # Development Environments
 
-Each advanced maker will need a development environment created. Advanced makers can use a community environment to work in. Community environments can be accessed from the sign-up page [https://web.powerapps.com/community/signup](https://web.powerapps.com/community/signup)
+Each maker will need a development environment created. Advanced makers can use a community environment to work in. Community environments can be accessed from the sign-up page [https://powerapps.microsoft.com/en-us/developerplan/](https://powerapps.microsoft.com/en-us/developerplan/) with **Get Started Free**
+
+## Microsoft Power Platform for Developer Licenses
+
+One approach for organizations to manage and assign development environments to makers. To sign up for the developer plan to your organization you will may to enable viral sign-up to have the license assigned to your organization.
+
+1. Check if ad-hoc subscriptions are enabled in your tenant
+
+```powershell
+Import-Module -Name MSOnline
+Connect-MsolService
+Get-MsolCompanyInformation | fl AllowAdHocSubscriptions
+```
+
+1. If **AllowAdHocSubscriptions** is false then will need to temporarily enable AllowAdHocSubscriptions
+
+```powershell
+Set-MsolCompanySettings -AllowAdHocSubscriptions $true 
+```
+
+1. Verify that only Viral consent plan using [Get-AllowedConsentPlans](https://docs.microsoft.com/powershell/module/microsoft.powerapps.administration.powershell/get-allowedconsentplans) is enabled as Administrator
+
+```powershell
+Import-Module -Name Microsoft.PowerApps.Administration.PowerShell
+Get-AllowedConsentPlans
+```
+
+1. The results should be {Viral}. If it does not have this value then can update consent plans using [Add-AllowedConsentPlans](https://docs.microsoft.com/powershell/module/microsoft.powerapps.administration.powershell/add-allowedconsentplans) and [Remove-AllowedConsentPlans](https://docs.microsoft.com/en-us/powershell/module/microsoft.powerapps.administration.powershell/remove-allowedconsentplans)
+
+```powershell
+Add-AllowedConsentPlans -Type Viral
+Remove-AllowedConsentPlans -Type Internal
+```
+
+1. Once these steps are completed then complete the sign-up process using [https://powerapps.microsoft.com/en-us/developerplan/](https://powerapps.microsoft.com/en-us/developerplan/) with **Get Started Free**
+
+1. The license type **Microsoft Power Apps for Developers** can how be [assigned to users](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users) or [Azure Active Groups](https://docs.microsoft.com/azure/active-directory/enterprise-users/licensing-groups-assign)
+
+1. If the AllowAdHocSubscriptions value was changed to true then can update to value to false
+
+```powershell
+Set-MsolCompanySettings -AllowAdHocSubscriptions $false 
+```
+
+1. Makers who have been assigned the license can now visit [https://make.powerapps.com](https://make.powerapps.com) and a development environment will be created
 
 ## Admin Maker Setup
 
@@ -29,7 +73,7 @@ As Azure DevOps Administrator the following command will add the required servic
 coe alm maker add \
   -o https://dev.azure.com/dev12345 \
   -p alm-sandbox \
-  -e https://org12345-dev.crm.dynamics.com \
+  -e https://contoso-dev-user1.crm.dynamics.com \
   -u username@contoso.com
 ```
 

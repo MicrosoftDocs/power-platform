@@ -70,10 +70,10 @@ Then add a demo user as a maker
 
 ```bash
 coe alm maker add \
-  -e https://alans-dev.crm.dynamics.com \
+  -e https://contoso-dev-alans.crm.dynamics.com \
   -o https://dev.azure.com/contoso-dev \
   -p alm-sandbox \
-  -u alan-s@crm716415.onmicrosoft.com
+  -u alan-s@contoso.onmicrosoft.com
 ```
 
 More information on the [coe alm maker add](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/maker/add.md) command
@@ -169,7 +169,7 @@ coe alm install -f install.json
   ],
   "aad": "ALMAcceleratorServicePrincipal",
   "group": "ALMAcceleratorForAdvancedMakers",
-  "devOpsOrganization": "https://dev.azure.com/contoso-dev",
+  "devOpsOrganization": "https://dev.azure.com/contoso",
   "project": "alm-sandbox",
   "repository": "pipelines",
   "settings": {
@@ -178,9 +178,9 @@ coe alm install -f install.json
       "test",
       "prod"
     ],
-    "validation": "https://sample-validation.crm.dyamics.com",
-    "test": "https://sample-test.crm.dyamics.com",
-    "prod": "https://sample-prod.crm.dyamics.com",
+    "validation": "https://contoso-validation.crm.dyamics.com",
+    "test": "https://contoso-test.crm.dyamics.com",
+    "prod": "https://contoso-prod.crm.dyamics.com",
     "createSecret": "true",
     "region": [
       "NAM"

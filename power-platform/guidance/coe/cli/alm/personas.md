@@ -157,8 +157,8 @@ coe alm maker add \
   -o https://dev.azure.com/contoso \
   -p alm-sandbox \
   -e https://contoso-userdev.crm.dynamics.com \
-  -a alm-ado-service-principal \
-  -g alm-makers \
+  -a ALMAcceleratorServicePrincipal \
+  -g ALMAcceleratorForMakers \
   -u alan-s@contoso.com
 ```
 
@@ -171,19 +171,19 @@ coe alm connection add \
   -o https://dev.azure.com/contoso \
   -p alm-sandbox \
   -e https://contoso-build.crm.dynamics.com \
-  -a alm-ado-service-principal
+  -a ALMAcceleratorServicePrincipal
 
 coe alm connection add \
   -o https://dev.azure.com/contoso \
   -p alm-sandbox \
   -e https://contoso-test.crm.dynamics.com \
-  -a alm-ado-service-principal
+  -a ALMAcceleratorServicePrincipal
 
 coe alm connection add \
   -o https://dev.azure.com/contoso \
   -p alm-sandbox \
   -e https://contoso-prod.crm.dynamics.com \
-  -a alm-ado-service-principal
+  -a ALMAcceleratorServicePrincipal
 ```
 
 More information on the [coe alm connection add](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/connection/add.md) command

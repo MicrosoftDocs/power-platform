@@ -38,6 +38,42 @@ For an Administrator, the quick start guide should take around 30 minutes and by
 coe alm generate install -o quickstart.json
 ```
 
+   This command will generate a json configuration file similar to the following. You could replace **contoso** with your tenant name
+
+```json
+{
+  "log": [
+    "info"
+  ],
+  "components": [
+    "all"
+  ],
+  "aad": "ALMAcceleratorServicePrincipal",
+  "group": "ALMAcceleratorForMakers",
+  "devOpsOrganization": "https://dev.azure.com/contoso",
+  "project": "alm-sandbox",
+  "repository": "alm-sandbox",
+  "pipelineRepository": "coe-alm-accelerator-templates",
+  "environments": "https://contoso-prod.crm.dynamics.com/",
+  "settings": {
+    "installEnvironments": [
+      "validation",
+      "test",
+      "prod"
+    ],
+    "validation": "https://contoso-validation.crm.dynamics.com/",
+    "test": "https://contoso-test.crm.dynamics.com/",
+    "prod": "https://contoso-prod.crm.dynamics.com/",
+    "createSecret": "true",
+    "region": [
+      "NAM"
+    ]
+  },
+  "importMethod": "api",
+  "endpoint": "prod"
+}
+```
+
    More information on the [coe alm generate install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/generate/install.md) command
 
 1. Install the ALM Accelerator using the generated configuration file
@@ -59,8 +95,8 @@ coe alm maker add \
    -o https://dev.azure.com/contoso \
    -p alm-sandbox \
    -e https://contoso-userdev.crm.dynamics.com \
-   -a alm-ado-service-principal \
-   -g alm-makers -u user@contoso.com
+   -a ALMAcceleratorServicePrincipal \
+   -g ALMAcceleratorForMakers -u user@contoso.com
 ```
 
    More information on the [coe alm maker add](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/maker/add.md) command
