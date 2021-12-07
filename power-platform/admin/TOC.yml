@@ -574,88 +574,96 @@
       - name: Server cipher suites and TLS requirements
         href: server-cipher-tls-requirements.md
     - name: Security and governance
-      items:
+      items:      
       - name: Security and governance
         href: security.yml
       - name: Overview
-        href: wp-security.md     
-      - name: Governance considerations
-        href: governance-considerations.md
-      - name: Security concepts in Dataverse
-        href: wp-security-cds.md
-      - name: System and application users
-        href: system-application-users.md
-      - name: Configure user security
-        href: database-security.md
-      - name: How access to records is determined
-        href: how-record-access-determined.md
-      - name: Email exfiltration controls for connectors
-        href: block-forwarded-email-from-power-automate.md
-      - name: Configure environment security 
-        items: 
-        - name: Control user access to environments
-          href: control-user-access.md  
-        - name: Restrict cross-tenant access 
-          href: cross-tenant-restrictions.md
-      - name: Data loss prevention policies 
-        items: 
-        - name: DLP policies
-          items: 
-          - name: Overview
-            href: wp-data-loss-prevention.md
-          - name: Connector classification
-            href: dlp-connector-classification.md
-          # Comment out next until given go ahead
-          # - name: Disable new connectors by default 
-          #   href: connector-off-by-default.md
-          - name: Custom connector parity  
-            href: dlp-custom-connector-parity.md 
-          - name: Granular controls
-            href: dlp-granular-controls.md
-          - name: Endpoint input
-            href: dlp-endpoint-input-formats-examples.md
-          - name: View policies and policy scope
-            href: dlp-policy-scope.md
-          - name: Effect of multiple policies
-            href: dlp-combined-effect-multiple-policies.md
-          - name: Resource exemption
-            href: dlp-resource-exemption.md
-          - name: Impact on apps and flows
-            href: dlp-impact-policies-apps-flows.md
-          - name: Known issues
-            href: dlp-known-issues.md
-        - name: Create a DLP policy
-          href: create-dlp-policy.md
-        - name: Manage DLP policies
-          href: prevent-data-loss.md
-        - name: Data loss prevention SDK 
-          href: data-loss-prevention-sdk.md
-      - name: Configure field-level security
+        href: security/overview.md
+      - name: Authenticating to Power Platform services
+        href: security/authenticate-services.md
+      - name: Connect to data sources
+        href: security/connect-data-sources.md
+      - name: Security and governance considerations
+        href: governance-considerations.md 
+      - name: Configure security for Dataverse
         items:
         - name: Overview
-          href: field-level-security.md
-        - name: Set permissions for a field
-          href: set-up-security-permissions-field.md
-        - name: Enable or disable field security
-          href: enable-disable-security-field.md
-        - name: Add teams or users to field security profile
-          href: add-teams-users-field-security-profile.md
-      - name: Configure teams and team templates
-        items:
-        - name: Manage teams
-          href: manage-teams.md
-        - name: Manage group teams
-          href: manage-group-teams.md
-        - name: Team templates
-          href: about-team-templates.md
-        - name: Team templates for access rights 
-          href: create-team-template-add-entity-form.md
-      - name: Encryption
-        items:
+          href: wp-security.md
+        - name: Security concepts in Dataverse
+          href: wp-security-cds.md
+        - name: System and application users
+          href: system-application-users.md
+        - name: Configure user security
+          href: database-security.md
+        - name: How access to records is determined
+          href: how-record-access-determined.md
+        - name: Email exfiltration controls for connectors
+          href: block-forwarded-email-from-power-automate.md
+        - name: Configure environment security 
+          items: 
+          - name: Control user access to environments
+            href: control-user-access.md  
+          - name: Restrict cross-tenant access 
+            href: cross-tenant-restrictions.md
+        - name: Data loss prevention policies 
+          items: 
+          - name: DLP policies
+            items: 
+            - name: Overview
+              href: wp-data-loss-prevention.md
+            - name: Connector classification
+              href: dlp-connector-classification.md
+            # Comment out next until given go ahead
+            # - name: Disable new connectors by default 
+            #   href: connector-off-by-default.md
+            - name: Custom connector parity  
+              href: dlp-custom-connector-parity.md 
+            - name: Granular controls
+              href: dlp-granular-controls.md
+            - name: Endpoint input
+              href: dlp-endpoint-input-formats-examples.md
+            - name: View policies and policy scope
+              href: dlp-policy-scope.md
+            - name: Effect of multiple policies
+              href: dlp-combined-effect-multiple-policies.md
+            - name: Resource exemption
+              href: dlp-resource-exemption.md
+            - name: Impact on apps and flows
+              href: dlp-impact-policies-apps-flows.md
+            - name: Known issues
+              href: dlp-known-issues.md
+          - name: Create a DLP policy
+            href: create-dlp-policy.md
+          - name: Manage DLP policies
+            href: prevent-data-loss.md
+          - name: Data loss prevention SDK 
+            href: data-loss-prevention-sdk.md
+        - name: Configure field-level security
+          items:
+          - name: Overview
+            href: field-level-security.md
+          - name: Set permissions for a field
+            href: set-up-security-permissions-field.md
+          - name: Enable or disable field security
+            href: enable-disable-security-field.md
+          - name: Add teams or users to field security profile
+            href: add-teams-users-field-security-profile.md
+        - name: Configure teams and team templates
+          items:
+          - name: Manage teams
+            href: manage-teams.md
+          - name: Manage group teams
+            href: manage-group-teams.md
+          - name: Team templates
+            href: about-team-templates.md
+          - name: Team templates for access rights 
+            href: create-team-template-add-entity-form.md
         - name: Encryption
-          href: data-encryption.md
-        - name: Manage encryption key
-          href: manage-encryption-key.md 
+          items:
+          - name: Encryption
+            href: data-encryption.md
+          - name: Manage encryption key
+            href: manage-encryption-key.md 
     - name: SharePoint and Power Apps
       items:
       - name: Manage your documents using SharePoint
