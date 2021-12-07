@@ -4,7 +4,7 @@ description: View tenant-level Power Apps analytics reports.
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/20/2021
+ms.date: 12/07/2021
 author: tjvass
 ms.subservice: admin
 ms.author: tjvass
@@ -58,7 +58,7 @@ The Power Apps Maker Activity report provide insights into tenant and environmen
 
 ## Power Apps - Inventory report
 
-The Power Apps Inventory report offers a complete catalog of Power Apps distributed across the tenant. This view includes filters that allow admins to search for apps based on various criteria. The report answers questions such as:
+The Power Apps Inventory report offers a complete catalog of Power Apps distributed across the tenant. This view includes the **Apps last used** filter that allow admins to identify stale and orphaned Power Apps. The report answers questions such as:
 
 - What is the total number of model-driven and canvas apps across the tenant or environments? 
 - Which apps depend on specific connectors or connector types like Premium? 
