@@ -26,4 +26,3 @@ search.app:
 [Add related articles]
 
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

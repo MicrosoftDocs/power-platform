@@ -27,4 +27,3 @@ TO DO: Add content
 [Add related articles]
 
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
