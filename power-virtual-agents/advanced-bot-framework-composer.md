@@ -138,8 +138,8 @@ Bot Framework Orchestrator is not supported in Composer for Power Virtual Agents
 - Custom recognizer  
 Custom recognizer is not supported in Composer for Power Virtual Agents
 
-- Bot Skills  
-Cannot invoke Bot Skills in Composer content meant for Power Virtual Agents
+- Bot skills  
+Cannot invoke Bot skills in Composer content meant for Power Virtual Agents
 
 - QnA Maker  
 This feature is not available in Composer for Power Virtual Agents
