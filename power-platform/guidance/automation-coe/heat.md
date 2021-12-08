@@ -152,7 +152,7 @@ CoEs should establish their strategy to nurture and upskill their employees. The
 
 ## Apply HEAT techniques
 
- Learn how to apply the HEAT techniques in your Automation CoE with the [Administering a Low-Code Intelligent Automation Platform whitepaper](<https://aka.ms/autocoeadminwhitepaper>).
+ Learn how to apply the HEAT techniques in your Automation CoE with the [Administering a low-code intelligent automation platform whitepaper](<https://aka.ms/autocoeadminwhitepaper>).
 
 ## More resources to start automating
 
