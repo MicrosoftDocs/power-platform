@@ -54,7 +54,7 @@ For **Ask a question** , enter "What city are you in?".
 In the **Identity** list, select **City**.
 
 In **Save response as** , select the variable for city,
-rename the output variable **Var** to **user_city**. Set the variable **Usage** to **Bot (any topic can access)** and **Save** the topic.
+For **Name**, enter **user_city**.  For **Usage**, select **Bot (any topic can access)** then select **Save**.
 
 :::image type="content" source="media/Composer_Example1/E1_Dialog2.png" alt-text="Power Virtual Agents variable.":::
 
@@ -62,7 +62,7 @@ Next, we'll instruct the topic, **Meal delivery options**, to display meal choic
 
 On the left-hand menu, select **Topics**. Select the down-arrow symbol next to **+ New topic**, and then select **Open in Bot Framework Composer**.
 
-Your Power Virtual Agents bot will open in a Bot Framework Composer project. You will see the list of all Power Virtual Agents topics in your bot in Composer, but they are not editable. The **Recognizer Type** field is set to **Default Recognizer**, which is **Power Virtual Agents NLU**.
+After you open, the Bot Framework Composer project, you'll see the list of all Power Virtual Agents topics in your bot. However, you won't be able to edit these PVA topics. **Recognizer Type** is set to **Default Recognizer**, which is **Power Virtual Agents NLU**.
 
 >[!TIP]
 >The **LUIS** service is not supported as a Recognizer for Power Virtual Agents in Composer. The **Default Recognizer** is set to **Power Virtual Agents NLU** instead. You do not need to have an additional subscription to use **Power Virtual Agents NLU** because it is included in your Power Virtual Agents license.
