@@ -1,5 +1,5 @@
 ---
-title: "Export and import bots using solutions"
+title: "Export and import bots using solutions (Video)"
 description: "Transfer bots between environments by adding them to Power Apps solutions."
 keywords: "export, import, transfer, environment, PVA"
 ms.date: 6/28/2021

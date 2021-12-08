@@ -1,5 +1,5 @@
 ---
-title: "Fundamentals - Analyze chatbot usage"
+title: "Fundamentals - Analyze chatbot usage (Video)"
 description: "Analyze customer satisfaction, topic usage, and bot performance in Power Virtual Agents."
 keywords: "PVA"
 ms.date: 9/22/2020

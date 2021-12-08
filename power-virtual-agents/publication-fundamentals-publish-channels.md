@@ -1,5 +1,5 @@
 ---
-title: "Fundamentals - Publish a chatbot to various channels"
+title: "Fundamentals - Publish a chatbot to various channels (Video)"
 description: "Publish your bot to the web, Microsoft Teams, Facebook, or even use an existing Azure Bot Service framework."
 keywords: "Publish; demo; demo website; channels, PVA"
 ms.date: 11/30/2021

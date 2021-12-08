@@ -1,5 +1,5 @@
 ---
-title: "Get topic suggestions from online content"
+title: "Get topic suggestions from online content (Video)"
 description: "Use existing help and support content to quickly generate new topics for your Power Virtual Agents bot."
 keywords: "PVA"
 ms.date: 9/22/2020

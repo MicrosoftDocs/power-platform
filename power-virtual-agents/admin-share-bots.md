@@ -1,5 +1,5 @@
 ---
-title: "Share and collaborate on chatbots with other users"
+title: "Share and collaborate on chatbots with other users (Video)"
 description: "Share Power Virtual Agents chatbots with other users, assign security roles, and work together."
 keywords: "Administration, share, multi-author, PVA"
 ms.date: 10/22/2021
