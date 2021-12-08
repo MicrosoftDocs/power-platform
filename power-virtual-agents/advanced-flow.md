@@ -28,8 +28,10 @@ You can enable your bot to perform an action by calling a Microsoft Power Automa
 You call flows from within topics, as a discrete **Call an action** node. You can utilize flows that have already been created in your [Power Apps environment](environments-first-run-experience.md), or you can create a flow from within the Power Virtual Agents [authoring canvas](authoring-create-edit-topics.md).
 
 >[!IMPORTANT]
->A flow can only be called from a topic located in the same [Microsoft Dataverse environment](/powerapps/maker/common-data-service/data-platform-intro) as your bot.
->Flows must also be in a solution in Power Automate. You can [move flows into solutions](#optionally-move-a-flow-from-default-solution-to-another-solution) so they are listed in the authoring canvas.
+>To use flows within Power Virtual Agents, they must meet the following requirements:
+>* A flow can only be called from a topic located in the same [Microsoft Dataverse environment](/powerapps/maker/common-data-service/data-platform-intro) as your bot.
+>* Flows must also be in a solution in Power Automate. You can [move flows into solutions](#optionally-move-a-flow-from-default-solution-to-another-solution) so they are listed in the authoring canvas.
+>* Flow values must be returned syncronously to Power Virtual Agents. This is the default behavior when creating new flows from within Power Virtual agents.
 
 
 Flows typically use variables to input and output information. The variables can then be used in other nodes within the topic.
