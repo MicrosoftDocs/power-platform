@@ -19,7 +19,17 @@ search.app:
 
 # DevOps Deployment Model
 
-![DevOps Scenarios](../../media/alm-devops-deployment-model.png)
+## Overview
+
+Scenarios
+
+- Power Platform 1:1 DevOps - Single Azure DevOps Organization and Project used by the ALM Accelerator
+- Power Platform 1:Many DevOps - Single Azure DevOps Organization and multiple projects used by the ALM Accelerator
+- Multiple Power Platform Environments and DevOps - Multiple Azure DevOps Organizations with multiple ALM Accelerator installations.
+
+NOTE:
+
+1. Multiple Power Platform Environments and DevOps not recommended by ALM Accelerator as seperate instances will need to be updated and managed. Projects displayed to the user will be managed by users role based access security.
 
 ## Factors to Consider
 

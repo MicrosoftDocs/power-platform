@@ -23,7 +23,44 @@ AA4PP can be deployed in the following scenarios single demo tenant, single ente
 
 Currently AA4PP **doesn't** automatically support a multitenant enterprise deployment model and more manual configuration will be required to configure this scenario.
 
-![Deployments Scenarios](../../media/alm-deployments.png)
+## Deployments Scenarios
+
+### Demo Deployment
+
+Example Tenant: https://v1234f.onmicrosoft.com
+Azure DevOps: https://dev.azure.com/v1234f
+
+Attributes:
+
+- Separated from Enterprise Environment in Demo Azure Active Directory Tenant
+- Use Trial environment / licenses
+- Demonstrate end to end ALM Process
+- Learn and Explore
+- Typical Users: 1-5 Users
+
+### Enterprise Deployment
+
+Example Tenant: https://contoso.onmicrosoft.com
+Azure DevOps: https://dev.azure.com/contoso
+
+Attributes:
+
+- Integrated into Single Enterprise Azure Active Directory tenant
+- Multiple environments Development, Test and Production
+- End to end ALM Process for enterprise wide applications with thousands of users
+- Fusion Development Teams of Makers, Pro Developers, Administrators
+
+### Multi Tenant Deployment
+
+Example Tenants: https://contoso-dev.onmicrosoft.com, https://contoso.onmicrosoft.com
+Azure DevOps: https://dev.azure.com/contoso, https://dev.azure.com/contoso-dev
+
+Attributes:
+
+- Multiple AAD tenants – Internal in organization or with partners
+- Multiple environments Development, Test and Production
+- End to end ALM Process for enterprise wide applications with thousands of users or applications shared across organizations
+- Fusion Development Teams of Makers, Pro Developers, Administrators from within and outside the organization
 
 ## Factors to Consider
 

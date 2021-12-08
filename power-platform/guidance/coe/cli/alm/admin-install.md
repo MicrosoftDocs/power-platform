@@ -21,9 +21,23 @@ search.app:
 
 As a first step you'll need to complete the initial steps of an ALM deployment as an Administrator. The commands below allow you to quickly automate the install. When you completed these steps, you can add Advanced Makers and setup connections to their Power Platform development environments.
 
-![ALM Accelerator for Power Platform Install Overview](../media/alm-install-overview.png)
+## Overview
 
-It's assumed that this installation will be run by a single user that has the following rights:
+The following roles are involved with Power Platform
+
+1. Administrator
+
+- Azure Active Directory - Permissions to Create Azure Active Directory Application with [Admin Level Consent](/azure/active-directory/manage-apps/grant-admin-consent)
+)
+- Power Platform - Environment Administrator to Create Validation, Test and Production environments
+- Azure DevOps - Organization and Project Administrator
+
+1. Maker
+
+- Power Platform - Create Development environment
+- Azure DevOps - Azure DevOps project user, create solution branch
+
+It is assumed that this installation will be run by a single user that has the following rights:
 
 1. Power Platform Global Administrator
 

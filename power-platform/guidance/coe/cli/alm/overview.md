@@ -124,10 +124,6 @@ Not sure what ALM is and how it can help? The [User Guide](/power-platform/guida
 
 ### Overview
 
-The diagram below provides an overview of the key components required and permissions required.
-
-![ALM Accelerator for Power Platform Overview](../media/alm-overview.jpg)
-
 ### Sample Install
 
 The following recording shows a sample generating an install configuration file and installing ALM using the configuration file using a [Demo Deployment](./scenarios/tenant-deployments.md#demonstration-deployment).
