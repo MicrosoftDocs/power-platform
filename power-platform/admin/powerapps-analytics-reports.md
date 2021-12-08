@@ -1,6 +1,6 @@
 ---
-title: "Preview: Power Apps analytics reports" 
-description: View tenant-level Power Apps analytics reports.
+title: "Preview: Tenant-level Analytics for Power Apps" 
+description: View tenant-level analytics for Power Apps.
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
@@ -18,7 +18,7 @@ search.app:
   - Flow
 ---
 
-# Preview: Power Apps analytics reports
+# Preview: Tenant-level Analytics for Power Apps
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
