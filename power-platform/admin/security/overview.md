@@ -24,7 +24,7 @@ search.app:
 > **Working notes**
 > 
 > This is the first page people will read so we should:
-> 
+> - Start by highlighting how much we care about security and how Power Platform has the best-in-class security
 > - Add info about Power Platform components and talk about the types/levels of security that can be implemented 
 > - Explain the architecture for:
 >    - Power Platform as a whole
