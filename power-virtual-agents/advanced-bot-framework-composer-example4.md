@@ -124,7 +124,7 @@ Go to the **Create** tab in Composer and select the **StartTrial** trigger. Add 
 
 Switch to **Show code** view and add the following to the code window:
 
-```lu
+```lg
 - ${AdaptiveCard_StartTrialForm()}
 ```
 
@@ -140,7 +140,7 @@ Your Adaptive card **StartTrialForm** has two more fields, **Address** and **Wee
 
 Add a **Send a Response** action to provide a form submission confirmation:
 
-```lu
+```lg
 ${user.name} - thanks for starting a ${user.weeks} week trial with us! Your meals will be delivered to this address: ${user.address}.
 ```
 

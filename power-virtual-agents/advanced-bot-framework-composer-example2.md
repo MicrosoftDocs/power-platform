@@ -119,7 +119,7 @@ You can use this `conversation.day_choice` property to display the daily special
 
 Under the **User Input** action, add a **Send a response** action to your **DailySpecials** dialog. In the **Bot response** panel on the side, select **Show code**. Add the following expression:
 
-```lu
+```lg
 - ${DailySpecials(conversation.day_choice)}
 ```
 

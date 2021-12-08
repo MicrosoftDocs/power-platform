@@ -81,7 +81,7 @@ In Composer, go to the **Bot Responses** tab and, in the **Meals** section, sele
 
 In the code window, copy and paste the following bot responses that you'll use in your Adaptive Card:
 
-```lu
+```lg
 # Chicken()
 -Chicken
 
@@ -223,7 +223,7 @@ Go back to the **Create** tab in Composer and select the **Meals** dialog. Selec
 
 Select the new **Send a response** action to open the **Properties pane**. Under **Bot responses**, select **Show code**. Add the following expression to this window to show the Adaptive Card, and pass the Power Virtual Agents global variable `user_city` as a parameter: 
 
-```lu
+```lg
 - ${AdaptiveCardMeals(virtualagent.user_city)}
 ```
 
