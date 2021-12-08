@@ -21,7 +21,11 @@ search.app:
 ---
 # Authenticating to Power Platform services
 
-TO DO: Add content
+> **Working notes**
+> 
+> Explain in detail how users can authenticate to Power Platform/Dataverse.
+> 
+> Link to Power BI whitepaper for the Power BI part
 
 ### See also
 [Add related articles]
