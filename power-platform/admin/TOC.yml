@@ -443,7 +443,7 @@
         # Comment out the next two topics before publish
         - name: "Preview: Power Apps analytics report"
           href: powerapps-analytics-reports.md
-        - name: "Preview: Power Automate analytics report"
+        - name: "Preview: Tenant-level analytics for Power Automate"
           href: power-automate-analytics-reports.md
         - name: "Preview: Power Apps license utilization"
           href: powerapps-license-utilization.md
