@@ -455,12 +455,12 @@
         - name: "Preview: Tenant-level analytics (default)" 
           href: tenant-level-analytics.md
         # Comment out the next topics before publish
-        - name: "Preview: Power Apps analytics report"
-          href: powerapps-analytics-reports.md
-        - name: "Preview: Tenant-level analytics for Power Automate"
-          href: power-automate-analytics-reports.md
-        - name: "Preview: Power Apps license utilization"
-          href: powerapps-license-utilization.md
+        # - name: "Preview: Power Apps analytics report"
+        #   href: powerapps-analytics-reports.md
+        # - name: "Preview: Tenant-level analytics for Power Automate"
+        #   href: power-automate-analytics-reports.md
+        # - name: "Preview: Power Apps license utilization"
+        #   href: powerapps-license-utilization.md
       - name: Data export
         items:
         - name: "Preview: Export Power Apps inventory and usage data"
@@ -968,8 +968,6 @@
           href: microsoft-dynamics-365-government.md
         - name: Power Apps service description
           href: powerapps-us-government.md
-        - name: Power Automate service description
-          href: power-automate-service-description.md
         - name: Dynamics 365 US Government feature availability 
           href: government-feature-availability.md
       - name: Geo to geo migrations
