@@ -1,7 +1,7 @@
 ---
-title: "Connect to data sources | MicrosoftDocs"
+title: "Power Platform security FAQs | MicrosoftDocs"
 description: Provides information about the security concepts in Microsoft Dataverse.
-ms.date: 12/08/2021
+ms.date: 12/08/2020
 ms.service: power-platform
 ms.topic: "get-started-article"
 ms.custom: 
@@ -19,15 +19,11 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Connect to data sources
+# Power Platform security FAQs
 
 > **Working notes**
 > 
-> This topic is all about connecting to data and associated security:
-> 
-> - Explain the various data sources that Power Platform components can connect to; talk in detail about Dataverse (data platform), connectors, on-premises data gateways, VNets
-> - Talk about data centers and residency/sovereignty 
-
+> Add top questions based on IcMs and fields queries with appropriate links to new and existing content.
 
 ### See also
 [Add related articles]
