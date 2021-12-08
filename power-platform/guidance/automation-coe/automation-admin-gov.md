@@ -5,7 +5,7 @@ author: kathyos
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/6/2021
+ms.date: 12/9/2021
 ms.subservice: guidance
 ms.author: kathyos
 ms.reviewer: deonhe
@@ -18,7 +18,7 @@ search.app:
 ---
 # Automation administration and governance
 
-The *Administering a Low-Code Intelligent Automation Platform* whitepaper outlines key considerations for planning, deploying, and managing an Automation Center of Excellence (CoE) for hyperautomation scenarios with Power Automate.
+The *Administering a Low-Code Intelligent Automation Platform* whitepaper outlines key considerations for planning, deploying, and managing an Automation Center of Excellence (CoE) for hyperautomation scenarios with Microsoft Power Automate.
 
 The purpose of this whitepaper is to streamline the exploration, implementation, security, governance, and scaling of process automation across your organization. This practical guidance helps you understand your network setup, build an environment to support automation, proactively plan for automations being developed and deployed, and run administrative tasks.
 The whitepaper is based on HEAT, a collection of learnings from deploying hyperautomation solutions at many enterprises.
@@ -27,6 +27,6 @@ The whitepaper is based on HEAT, a collection of learnings from deploying hypera
 
 ![alt text for image](./media/coe-whitepaper-thumbnails.jpg)
 
-*Sample pages of the* Administering a Low-Code Intelligent Automation Platform *whitepaper.*
+Sample pages of the *Administering a Low-Code Intelligent Automation Platform* whitepaper.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
