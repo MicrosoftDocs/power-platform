@@ -122,7 +122,7 @@ Go to the **Create** tab in Composer and select the **StartTrial** trigger. Add 
 
 :::image type="content" source="media/Composer_Example4/E4_ask_question.png" alt-text="Composer - ask a question.":::
 
-Switch to **Show code** view and add the following to the code window:
+Select the **Prompt for text** node, then in the properties pane under the **Bot response** tab, select **Show code**. Add the following to the code window:
 
 ```lg
 - ${AdaptiveCard_StartTrialForm()}
