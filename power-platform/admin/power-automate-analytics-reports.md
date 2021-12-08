@@ -1,6 +1,6 @@
 ---
-title: "Preview: Power Automate analytics reports" 
-description: View tenant-level Power Automate analytics reports.
+title: "Preview: Tenant-level Analytics for Power Automate" 
+description: View Tenant-level Analytics for Power Automate.
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
@@ -18,7 +18,7 @@ search.app:
   - Flow
 ---
 
-# Preview: Power Automate analytics reports
+# Preview: Tenant-level Analytics for Power Automate
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
