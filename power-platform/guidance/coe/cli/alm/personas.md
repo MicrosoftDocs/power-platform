@@ -124,7 +124,31 @@ More information on the [coe alm install](https://github.com/microsoft/coe-start
 
 ## Persona Command Mapping
 
-![Common Commands](../media/alm-command-summary.png)
+### Command Commands
+
+### coe alm branch
+
+|Outcome|Frequency|Persona|Components|
+|-------|---------|-------|----------|
+|Create a solution branch in Azure DevOps|Run per new solution|Makers, Professional Developers|Azure DevOps|
+
+### coe alm user add
+
+|Outcome|Frequency|Persona|Components|
+|-------|---------|-------|----------|
+|Add Application User to development environment|Run once per environment|Makers, Professional Developers|Dataverse|
+
+### coe alm maker add
+
+|Outcome|Frequency|Persona|Components|
+|-------|---------|-------|----------|
+|Create Service Connection and add maker to security group|Run once per maker|USer who is owner of Azure Active Directory Group and Azure DevOps Project Administrator|Azure DevOps|
+
+### coe alm install
+
+|Outcome|Frequency|Persona|Components|
+|-------|---------|-------|----------|
+|Import managed solution and setup security|Run once per organization|Azure Active Directory Group, Azure DevOps and Power Power Platform Administrator|Azure Active directory, Azure DevOps, Power Platform|
 
 ## Solution Setup
 
