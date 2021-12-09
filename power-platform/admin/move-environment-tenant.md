@@ -55,7 +55,7 @@ There are no user interface changes or version changes as part of this move. You
 
 | Supported | Not supported |
 |-------------------------|-------------------------|
-| <ul></br><li>Migrating production environment</li></br><li>Migrating sandbox environment</li></br><li>Migrating tenants from GCC to GCC</li></br><li>One or multiple environments</li></br></ul> | <ul></br><li>Migrating default environment</li></br><li>Migrating teams environment</li></br><li>Migrating trial environment</li></br><li>Migrating demo environment</li></br><li>Migrating  developer ennvironment</li></br><li>Migrating tenants from GCC to another geo or from another geo to GCC</li></ul> |
+| <ul></br><li>Migrating production environment</li></br><li>Migrating sandbox environment</li></br><li>Migrating tenants from GCC to GCC</li></br><li>One or multiple environments</li></br></ul> | <ul></br><li>Migrating default environment</li></br><li>Migrating teams environment</li></br><li>Migrating trial environment</li></br><li>Migrating demo environment</li></br><li>Migrating  developer environment</li></br><li>Migrating tenants from GCC to another geo or from another geo to GCC</li></ul> |
 
 ### Migration flow
 Once a migration request is submitted, the support team is engaged to review the request manually. Below is the list of steps performed during the entire migration process.
