@@ -160,11 +160,11 @@
       href: automation-coe/overview.md
     - name: Strategy
       href: automation-coe/strategy.md
-    - name: Holistic Enterprise Automation Techniques
+    - name: Holistic enterprise automation techniques
       href: automation-coe/heat.md
     - name: Automation admin and governance
       href: automation-coe/automation-admin-gov.md
-    - name: Automation CoE Starter Kit
+    - name: Automation CoE starter kit
       href: automation-coe/automation-coe-starter-kit.md
     - name: Manage Power Automate for desktop on Windows
       href: automation-coe/manage-pad-on-windows.md      
