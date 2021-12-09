@@ -88,7 +88,7 @@ Next, go to the **Bot Responses** tab in Composer and select **DailySpecials**. 
     - Holiday special - free delivery anywhere in Seattle, Bellevue and Redmond on orders over $70 today!
     - Holiday Delivery is on us if you are in Seattle, Bellevue and Redmond and your order is over $70 total!
 ```
-:::image type="content" source="media/Composer_Example2/E2_DailySpecials_BotResponse.png" alt-text="Composer Bot Responses tab - bot responses code":::
+:::image type="content" source="media/Composer_Example2/E2_DailySpecials_BotResponse.png" alt-text="Composer Bot Responses tab - bot responses code.":::
 
 Go back to the **Create** tab in Composer and select **BeginDialog** under **DailySecials**. 
 
@@ -99,19 +99,19 @@ Add a new prompt for user input to this dialog by selecting **Multi-choice** und
 Enter the following for the **Text** prompt:
 `Please select a day:`
 
-:::image type="content" source="media/Composer_Example2/E2_DailySpecials_prompt.png" alt-text="Composer Create tab - add bot response":::
+:::image type="content" source="media/Composer_Example2/E2_DailySpecials_prompt.png" alt-text="Composer Create tab - add bot response.":::
 
 Select the **User Input (Choice)** action. In the **Prompt with multi-choice** panel, under **User Input**, set **Property** to `conversation.day_choice`. 
 
 Set **Output format** to **index** to return the index of the selected option instead of a value.
 
-:::image type="content" source="media/Composer_Example2/E2_DailySpecials_input_variable.png" alt-text="Composer Create tab - set up choice output property":::
+:::image type="content" source="media/Composer_Example2/E2_DailySpecials_input_variable.png" alt-text="Composer Create tab - set up choice output property.":::
 
 Next, scroll down the **Prompt with multi-choice** panel and set **List style** to **heroCard** to display our options list vertically. 
 
 Select **Write an expression** for the **Array of choices** field and set it to use the `conversation.days_array` property we created.
 
-:::image type="content" source="media/Composer_Example2/E2_DailySpecials_array_multi_option.png" alt-text="Composer Create tab - set up array of choices":::
+:::image type="content" source="media/Composer_Example2/E2_DailySpecials_array_multi_option.png" alt-text="Composer Create tab - set up array of choices.":::
 
 You have created a multi-choice option list that is based on `conversation.days_array` and stores the user selection into the `conversation.day_choice` property.
 
@@ -123,11 +123,11 @@ Under the **User Input** action, add a **Send a response** action to your **Dail
 - ${DailySpecials(conversation.day_choice)}
 ```
 
-:::image type="content" source="media/Composer_Example2/E2_DailySpecials_addResponse.png" alt-text="Composer Create tab - display Daily Special for the selected day":::
+:::image type="content" source="media/Composer_Example2/E2_DailySpecials_addResponse.png" alt-text="Composer Create tab - display Daily Special for the selected day.":::
 
 In the **Bot explorer**, navigate to the Power Virtual Agents **main (root) dialog**. This dialog is the top-level read-only dialog in Composer that you created when you opened your bot in Composer. On the on the actions menu, select the **Add new trigger** option.
 
-:::image type="content" source="media/Composer_Example2/E2_main_addNewTrigger.png" alt-text="Composer Create_tab - add new trigger":::
+:::image type="content" source="media/Composer_Example2/E2_main_addNewTrigger.png" alt-text="Composer Create_tab - add new trigger.":::
 
 Set the type of trigger to **Intent recognized** and name it **Specials**. Add the following trigger phrases for your intent and select **Submit**.
 
