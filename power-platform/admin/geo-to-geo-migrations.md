@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/09/2021
+ms.date: 12/09/2021
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -26,7 +26,7 @@ We continue to open new datacenter regions for business services, and to add dat
 > - Support for geo migration is limited and generally not available.
 > - To request a regional migration, please contact your account manager or see [Technical Support](get-help-support.md).
 > - After making a request, expect at least 10 days for the migration to be completed.  
-> - Geo migrations are not supported into or out of US GCC, US GCC High, OCE, IND or China.
+> - Geo migrations are not supported into or out of US GCC, US GCC High, OCE, IND, or China.
 > - The Dynamics 365 Marketing app does not support geo migration, due to component dependencies. For more information, see [Manage your Dynamics 365 Marketing instances](/dynamics365/marketing/manage-marketing-instances).
 > - Geo migration is not supported for Microsoft Dataverse for Teams environments.
 
