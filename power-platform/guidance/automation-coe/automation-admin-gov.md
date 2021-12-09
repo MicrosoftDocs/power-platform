@@ -25,8 +25,6 @@ The whitepaper is based on holistic enterprise automation techniques (HEAT), a c
 
 [Download your copy of the whitepaper now.](https://aka.ms/autocoeadminwhitepaper)
 
-![alt text for image](./media/coe-whitepaper-thumbnails.jpg)
-
 Sample pages of the *Administering a Low-Code Intelligent Automation Platform* whitepaper.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
