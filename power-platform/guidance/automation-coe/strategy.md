@@ -25,7 +25,7 @@ As you scale adoption of the platform, you will need to ensure your system is ma
 
 The Automation CoE ensures that the organization can realize its automation and productivity objectives safely and efficiently. It does this by employing:
 
-- **Governance: Security, data integrity, auditing**: Ensures that only the right people have the access to specific data that's governed in a very specific way to avoid any risk to the organization itself.
+- **Governance: Security, data integrity, auditing**: Ensures that only the right people have the access to specific data that's governed in a specific way to avoid any risk to the organization itself.
 - **Repeatable patterns and templates: Error handling, instrumentation, components**: Avoids duplication and rework and enables everyone to get the benefits of automation with the least effort.
 - **Consistent benefits realization: KPIs/tracking/metrics, process rationalization**: Defines strategic benefit indicators, tracks and measures the return on investment (such as time saved), and ensures that the processes being automated are optimized.
 
@@ -34,8 +34,8 @@ As a result of these activities, the CoE helps the organization to scale by enab
 Some of common stakeholders and their roles and responsibilities within the automation platform and projects are:
 
 - **Executive Sponsors**: Organization leaders who set goals and business KPIs for an automation initiative.
-- **Automation CoE team**: Automation CoE team comprising of admins, pro-devs, RPA-devs, architects, and administrators to deploy, manage and scale the automation platform.
-- **Citizen developers**: Business users, citizen developers, process owners, and pro-developers who can propose new project ideas, develop and deploy projects into production.
+- **Automation CoE team**: Automation CoE team comprised of admins, pro-devs, RPA-devs, architects, and administrators to deploy, manage, and scale the automation platform.
+- **Citizen developers**: Business users, citizen developers, process owners, and pro-developers who can propose new project ideas, develop, and deploy projects into production.
 
 ![Diagram of CoE stakeholders and their responsibilities](./media/automation-coe-stakeholders.jpg)
 
