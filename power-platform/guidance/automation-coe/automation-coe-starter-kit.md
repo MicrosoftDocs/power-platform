@@ -7,7 +7,7 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 12/8/2021
 ms.subservice: guidance
-ms.author: pranava
+ms.author: pranavra
 ms.reviewer: deonhe
 search.audienceType: 
   - admin
