@@ -47,7 +47,7 @@ Select **Save topic**, and then select **Go to authoring canvas**.
 
 In the **Authoring canvas**, select the default **Message** node. Select the three vertical dots, then select **Delete**.
 
-Select the **Add node** (+) button below the **Trigger phrases** node, and then select **Ask a question**.
+Select the **Add node** (+) button under the **Trigger phrases** node, and then select **Ask a question**.
 
 For **Ask a question** , enter "What city are you in?".
 
