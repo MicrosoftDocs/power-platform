@@ -23,7 +23,7 @@ Microsoft Power Platform Automation CoE starter kit is designed to help organiza
 
 > [!IMPORTANT]
 > - This is a preview feature.
-> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
+> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback
 > - This feature is being gradually rolled out across regions and might not be available yet in your region.
 
 We are pleased to announce a limited public preview of the toolkit. We are actively looking to work closely with customers to learn and improve the product. If you're interested in joining the limited preview, please [fill out the Automation CoE Starter Kit Preview form](https://aka.ms/autocoestarterkitpreview).
