@@ -17,7 +17,7 @@ search.app:
 ---
 # Microsoft Power Platform Automation CoE starter kit (preview)
 
-[!INCLUDEcc-beta-prerelease-disclaimer]
+[This topic is pre-release documentation and is subject to change.]
 
 Microsoft Power Platform Automation CoE starter kit is designed to help organizations manage, govern, and scale automation platform adoption based on industry best practices. The toolkit is a collection of components and tools based on holistic enterprise automation techniques (HEAT).
 
