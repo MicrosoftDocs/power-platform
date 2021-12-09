@@ -72,11 +72,11 @@ Once a migration request is submitted, the support team is engaged to review the
     <td colspan="5"></td>
   </tr>
   <tr>
-    <td>Pre-verification<br>--></td>
-    <td>Change environment's mapping<br>--></td>
+    <td>Verify prerequisites<br>--></td>
+    <td>Migrate environment<br>--></td>
     <td>User mapping and sync<br>--></td>
-    <td>Publish destination environment<br>--></td>
-    <td>Disable source environment</td>
+    <td>Post migration<br>--></td>
+    <td>Migration completed</td>
   </tr>
 </table>
 
