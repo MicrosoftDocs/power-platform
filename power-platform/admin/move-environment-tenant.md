@@ -132,7 +132,7 @@ You'll also need to provide the following information:
  
 For full access users:
 1. Access the source environment.
-2. Use (![Screen shot of Advanced Find button.](../admin/media/advanced-find-button2.png "Screen shot of Advanced Find button")) and look for users.
+2. Use Advanced Find (![Screen shot of Advanced Find button.](../admin/media/advanced-find-button2.png "Screen shot of Advanced Find button")) and look for users.
 3. Select **Use Saved View** > **Full Access Users**, and then select **Edit Columns**.
 4. Remove all columns except **Full Name**.
 5. Select **Add Columns** > **Windows Live ID**.
