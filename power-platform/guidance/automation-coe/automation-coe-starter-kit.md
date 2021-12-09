@@ -40,8 +40,8 @@ The key components of the Automation CoE starter kit are:
  
 ## Resources
 
-- Sign up for the preview of Automation CoE starter kit.
-- Watch the introductory demo video here.
+- Sign up for the [preview of Automation CoE starter kit](https://aka.ms/autocoestarterkitpreview).
+- Watch the introductory demo video: [Building an automation CoE with Microsoft Power Platform](https://aka.ms/autocoeblueprintvideo).
 
 ## Support
 Although the underlying features and components used to build the Automation Center of Excellence (CoE) starter kit (such as Azure services, Dataverse, admin APIs, and Power Automate flows) are fully supported, the kit itself represents sample implementations of these features. Our customers and community can use and customize these features to implement admin and governance capabilities in their organizations.
