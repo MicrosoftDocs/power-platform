@@ -36,11 +36,11 @@ You need to [submit a support request](get-help-support.md) to initiate tenant-
 There are no user interface changes or version changes as part of this move. You can move one or multiple environments. Once complete, your environment(s) will appear in your new tenant.
 
 > [!IMPORTANT]
-> If moving individual environments from one tenant to another requires a geographical region change, your tenant becomes a multiregional tenant. Regional features are enabled in the Power Platform admin center.
+> If moving individual environments from one tenant to another requires a geographical region change, your tenant becomes a multiregional tenant. Regional features are enabled in the Power Platform admin center by support team. Link to GCC Document - https://github.com/MicrosoftDocs/power-platform-pr/blob/main/power-platform/admin/geo-to-geo-migrations.md
 > 
 > You might need to reconfigure some applications and settings after tenant-to-tenant migration, such as Microsoft Dynamics 365 for Outlook, server-side sync, SharePoint integration, or others.
 >
-> Geographical region changes are not supported into or out of US GCC, US GCC High, US DoD, or China.
+> Geographical region changes are not supported into or out of US GCC, US GCC High, US DoD, OCE, IND or China.
 
 ### Supported applications and platforms
 
@@ -48,13 +48,13 @@ There are no user interface changes or version changes as part of this move. You
 |-------------------------|-------------------------|
 | <ul></br><li>Dataverse</li></br><li>Dynamics apps</li></br></ul> | <ul></br><li>Power Apps</li></br><li>Power Automate</li></br><li>Power Virtual Agent</li></br></ul> |
 
-<sup>*</sup>There may be potential data loss during migration.
+<sup>*</sup>There may be potential data loss during migration and requires additional steps. <a href="#Confirm if any of the solutions below are installed in the environments to be migrated, as these may require additional steps either from you or Support">described later in this topic</a>.
 
 ### Supported environment types
 
 | Supported | Not supported |
 |-------------------------|-------------------------|
-| <ul></br><li>Migrating production environment</li></br><li>Migrating sandbox environment</li></br><li>Migrating tenants from GCC to GCC</li></br><li>One or multiple environments</li></br></ul> | <ul></br><li>Migrating default environment</li></br><li>Migrating teams environment</li></br><li>Migrating trial environment</li></br><li>Migrating demo environment</li></br><li>Migrating tenants from GCC to another geo or from another geo to GCC</li></br></ul> |
+| <ul></br><li>Migrating production environment</li></br><li>Migrating sandbox environment</li></br><li>Migrating tenants from GCC to GCC</li></br><li>One or multiple environments</li></br></ul> | <ul></br><li>Migrating default environment</li></br><li>Migrating teams environment</li></br><li>Migrating trial environment</li></br><li>Migrating demo environment</li></br><li>Migrating tenants from GCC to another geo or from another geo to GCC</li></br><li>Migrating  developer ennvironment</li></br></ul> |
 
 ### Migration flow
 Once a migration request is submitted, the support team is engaged to review the request manually. Below is the list of steps performed during the entire migration process.
@@ -83,11 +83,11 @@ Once a migration request is submitted, the support team is engaged to review the
 
 ### Prerequisites:
 
-If you don't have a paid subscription in the destination tenant, you'll need to create one. You might need to purchase a new subscription, or convert a trial to paid, if not already done.
+If you don't have a paid subscription of Dynamics 365 (CRM) or PowerApps in the destination tenant, you'll need to create one. You might need to purchase a new subscription, or convert a trial to paid, if not already done.
 
 Depending on how many source environments you're migrating, you'll need to create a temporary environment or environments in the destination tenant. The source environment type and destination environment type—production vs non-production (sandbox)—must match. The users to be migrated from one tenant to another need to be created on the target tenant as well.
 
-The destination tenant needs an equal or higher number of active user licenses, environment licenses for the environments being migrated, and equal or greater storage as the source tenant.
+The destination tenant needs an equal or higher number of active user licenses and equal or greater storage as the source tenant.
 
 When your environment is moved from one tenant to another within the same region, the URL does not change. In order to perform this operation, you'll need to answer some questions including:
 
@@ -95,7 +95,6 @@ When your environment is moved from one tenant to another within the same region
 - What is the destination tenant domain and its region? (Example: EMEA, NA, APAC)
 - Does the destination tenant have a valid Dynamics 365 subscription with enough seats for all the users to be mapped? The users to be provided in the mapping file will need to be active and licensed both in the source and target environments.
 - Does the destination tenant have enough available user licenses?
-- Does the destination tenant have enough environment licenses?
 - Does the destination tenant have enough storage available for the environments being migrated?
 - For production environments, we need to migrate a sandbox copy of it first. Do you have sufficient capacity to provision a copy of your production environment to proceed with this test? 
 
@@ -113,8 +112,6 @@ You'll also need to provide the following information:
 4. Create users in the destination environments in the target tenant. You must:
    1. Create users in Microsoft 365/Azure AD.
    2. Assign licenses.
-   3.	Assign security roles in the environments.
-   4.	Provision user mailboxes in the destination tenant.
 4. Once the users are created and enabled, the mapping file will need to be generated following the steps <a href="#steps-to-create-the-mapping-file">described later in this topic</a>.
 5. If there are any solutions for Power Apps or Power Automate flows, these need to be exported from the [Power Apps maker portal](https://make.powerapps.com) and imported again into the new environment after the migration.
 
@@ -123,6 +120,7 @@ You'll also need to provide the following information:
 - Power Apps or Power Automate
 - Dynamics 365 Customer Voice
 - Power Apps portals
+- PowerApps Checker App
 - Café X
 - Forms Pro
 - SharePoint
@@ -172,10 +170,10 @@ For administrative access users:
 ##### For apps which are solution aware
 
 Before the migration: 
-1. For apps which are solution aware, you can go to https://web.powerapps.com/, navigate to the Solutions page, and export all apps/solutions (either individually or group them together in a single solution if they're not already)
+1. For apps which are solution aware, you can go to https://make.powerapps.com/, navigate to the Solutions page, and export all apps/solutions (either individually or group them together in a single solution if they're not already)
 
 After the migration: 
-1. Select the new environment from https://web.powerapps.com/ and navigate to the Solutions page.
+1. Select the new environment from https://make.powerapps.com/ and navigate to the Solutions page.
 2. Select **Import** and use the file selector to pick the packages exported from the above steps.
 3. Confirm that the import was successfully completed by checking the solution contents in the target environment. 
 
