@@ -2,7 +2,7 @@
 title: "Share chatbots with other users in Microsoft Teams"
 description: "Work on Power Virtual Agents chatbots with other people in your team, and see who else has recently modified topics."
 keywords: "Administration, share, multi-author, PVA, teams"
-ms.date: 10/22/2021
+ms.date: 12/10/2021
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -39,7 +39,7 @@ You can share your bot with security groups so their members can chat with the b
 2. Specify the security group name that you would like to share the bot with.
 
   >[!NOTE]
-  >You can only share a bot with security groups. You cannot share with individual users directly.  
+  >You can only share a bot with security groups. You cannot share with Microsoft 365 groups or individual users directly.  
   >You can manage individual user access by adding or removing users from the security group.
 
   :::image type="content" source="../media/sharing-security-groups/sharing-bot-specify-security-group-teams.PNG" alt-text="Specify security group in Sharing UI.":::
