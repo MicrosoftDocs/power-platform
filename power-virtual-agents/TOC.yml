@@ -48,6 +48,8 @@
          href: authoring-system-fallback-topic.md
        - name: Manage topics
          href: authoring-topic-management.md
+       - name: Add comments to bots (Preview)
+         href: authoring-comments.md
        - name: Test your bot
          href: authoring-test-bot.md
        - name: Supported languages
@@ -60,7 +62,7 @@
          href: advanced-ai-features.md
        - name: Use entities and slot filling
          href: advanced-entities-slot-filling.md
-       - name: Use variables
+       - name: Use variables (Preview)
          href: authoring-variables.md
        - name: Reuse variables across topics
          href: authoring-variables-bot.md
@@ -72,6 +74,8 @@
          href: advanced-end-user-authentication.md
        - name: Add actions using Power Automate
          href: advanced-flow.md
+       - name: Send proactive messages and cards in Microsoft Teams (Preview) 
+         href: advanced-proactive-message.md
        - name: Trigger hand-off to a live agent
          href: advanced-hand-off.md
     - name: Publish and integrate
@@ -132,8 +136,6 @@
          href: configuration-fundamentals.md
        - name: Configure end-user authentication
          href: configuration-end-user-authentication.md
-       - name: Assign access and change security options
-         href: configuration-security.md
        - name: Configure web and Direct Line channel security
          href: configure-web-security.md
        - name: Configure single sign-on for Web
@@ -142,7 +144,7 @@
          href: configure-sso-teams.md
        - name: Configure hand-off to a generic engagement hub
          href: configure-generic-handoff.md
-       - name: Configure hand-off to Omnichannel for Customer Service
+       - name: Configure voice and text hand off to Dynamics 365 Customer Service
          href: configuration-hand-off-omnichannel.md
        - name: Configure the bot to automatically start the conversation
          href: configure-bot-greeting.md
@@ -172,7 +174,7 @@
       items:
        - name: Licensing for Virtual Power Agents in Teams
          href: teams/requirements-licensing-teams.md
-       - name: Collaborate with others
+       - name: Share bot with users in your organization
          href: teams/admin-share-bots-teams.md
        - name: Upgrade a Dataverse for Teams environment
          href: teams/admin-upgrade-dataverse-teams.md
@@ -216,6 +218,8 @@
          href: teams/advanced-end-user-authentication-teams.md
        - name: Add actions using Power Automate
          href: teams/advanced-flow-teams.md
+       - name: Send proactive messages and cards (Preview) 
+         href: teams/advanced-proactive-message-teams.md
        - name: Use Bot Framework Skills
          href: teams/advanced-use-skills-teams.md
     - name: Publish and integrate
@@ -244,8 +248,6 @@
       items:
        - name: Key concepts - Configuration
          href: teams/configuration-fundamentals-teams.md
-       - name: Assign access and change security options
-         href: teams/configuration-security-teams.md
        - name: Configure web and Direct Line channel security
          href: teams/configure-web-security-teams.md
        - name: Configure end-user authentication

@@ -4,10 +4,10 @@ description: Connect to Exchange Online
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/11/2021
-author: revachauhan
+ms.date: 12/09/2021
+author: mduelae
 ms.subservice: admin
-ms.author: rechauha
+ms.author: mkaur
 ms.reviewer: mkaur
 search.audienceType: 
   - admin
@@ -18,8 +18,6 @@ search.app:
   - Flow
 ---
 # Connect to Exchange Online
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 With both [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] and customer engagement apps (such as [Dynamics 365 Sales](/dynamics365/sales-professional/help-hub), [Dynamics 365 Customer Service](/dynamics365/customer-service/help-hub), [Dynamics 365 Marketing](/dynamics365/marketing/help-hub), [Dynamics 365 Field Service](/dynamics365/field-service/overview), and [Dynamics 365 Project Service Automation](/dynamics365/project-operations/psa/overview)) hosted as online services, connecting the two is a simpler, more straightforward configuration.  
   
@@ -166,6 +164,17 @@ To approve emails for customer engagement apps, a user requires:
 
 - The **Approve Email Addresses for Users or Queues** privilege. 
 - The permissions as described in the **Permissions model** table later in this topic.
+
+### Approve your own user mailbox
+
+A Dynamics 365 user can approve their own user mailbox if all of these conditions are met: 
+
+- Their UPN matches the email address on the mailbox.
+
+- The user has **Approve Email Addresses for Users or Queues** privilege.
+
+- The mailbox is not a queue mailbox.
+
 
 ### Require admin approval?
 

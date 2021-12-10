@@ -48,7 +48,7 @@ The following are prerequisites for installing the CoE Starter Kit as it's inclu
     - If you are using the CoE Starter Kit in **Production environment with a Dataverse**, premium licenses are required for all users interacting with the CoE Starter Kit. Depending on what components you will use, your organization size and the existing licenses available in your organization, you will require either a Power Apps per user or per app or Power Automate per user or per flow license or a combination of these licenses.
     - If you are using the CoE Starter Kit in a **Dataverse for Teams** environment, a Power Automate per user license will be required for the admin running the sync flows. No additional licenses will be required for users interacting with any of the canvas apps.
 
-- If you want a DLP policy on the environment, it should allow the following to be used together in the business data&ndash;only bucket of the DLP policy for this environment.
+- If you want a DLP policy on the environment, it should allow the following connectors to be used together in the business data&ndash;only bucket of the DLP policy for this environment.
     - [Approvals](/connectors/approvals/)
     - [Azure AD](/connectors/azuread/)
     - HTTP
@@ -56,7 +56,6 @@ The following are prerequisites for installing the CoE Starter Kit as it's inclu
     - [Microsoft Dataverse](/connectors/commondataserviceforapps/)
     - [Microsoft Dataverse (legacy)](/connectors/commondataservice/)
     - [Microsoft Teams](/connectors/teams/)
-    - [Notifications](/connectors/flowpush/)
     - [Office 365 Groups](/connectors/office365groups/)
     - [Office 365 Outlook](/connectors/office365/)
     - [Office 365 Users](/connectors/office365users/)
@@ -70,6 +69,8 @@ The following are prerequisites for installing the CoE Starter Kit as it's inclu
 
     > [!NOTE]
     > The CoE Starter Kit records who owns a resource, such as an app or a flow. If the resource is owned by an interactive users, the Office 365 Users connector is used to get those details. If the resource is owned a Service Principal (Application User), the HTTP with Azure AD connector is used to get the name of the Application User to correctly mark ownership of resources and avoid resources being marked as orphaned (without an owner).
+
+- The HTTP and HTTP with Azure AD connectors connect to [https://graph.microsoft.com](https://graph.microsoft.com). You can set up [DLP endpoint filtering](/power-platform/admin/dlp-granular-controls#endpoint-filtering) for these connectors to only allow the [https://graph.microsoft.com](https://graph.microsoft.com) endpoint.
 
 - If you're using the [audit log](setup-auditlog.md) solution, the custom connector used to connect to the Microsoft 365 audit log also must be allowed in your business data&ndash;only bucket. Please see [Custom Connectors and DLP](/power-platform/admin/dlp-connector-classification#tenant-level-dlp-policies)
 
@@ -115,7 +116,7 @@ When you're ready to extend the CoE Starter Kit with your own ideas, you'll do s
 
 1. Read about solutions in our documentation, which will introduce you to the concepts in addition to notions like how to create your publisher. More information: [Introduction to solutions](/powerapps/developer/common-data-service/introduction-solutions)
 
-1. Create a new unmanaged solution.
+1. Create a new unmanaged solution. Environment variables that are part of the CoE Starter Kit can only be used from solutions. If you save a copy of apps or flows outside of a solution, environment variables will not get picked up.
 
 1. Choose components from the CoE Starter Kit to add to your new solution. You decide which ones you want to customize.
 
@@ -129,13 +130,13 @@ When you're ready to extend the CoE Starter Kit with your own ideas, you'll do s
 
 ## Installing updates
 
-Periodically, the solution will receive updates with new features, bug fixes, or optimizations. These updates will be announced on the [GitHub repo](https://aka.ms/CoEStarterKitRepo), and can be downloaded from there or by direct download at [aka.ms/CoEStarterKitDownload](https://aka.ms/CoEStarterKitDownload). We target releasing monthly during the first full week of each month.  
+The CoE Starter Kit is updated monthly with new features, bug fixes, or optimizations. These updates will be announced as a [release](https://github.com/microsoft/coe-starter-kit/releases) on the [GitHub repo](https://aka.ms/CoEStarterKitRepo), and can be downloaded from there or by direct download at [aka.ms/CoEStarterKitDownload](https://aka.ms/CoEStarterKitDownload). 
 
 Install the updates by importing the latest version to the environment where you originally installed the solution. Select **Upgrade** (the default) to update the solution.
 
 > [!NOTE]
 > If you have made any changes to the flows / apps in the solution they will not receive updates until you remove that unmanaged layer. <br>
-> For every flow/app that you changed, go to the solution layers and remove it.
+> For every flow/app that you changed and for every child flow, go to the solution layers and remove it.
 > ![Upgrade 1.](media/Upgrade1.png "Upgrade 1")
 > ![Upgrade 2.](media/Upgrade2.png "Upgrade 2")
 

@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/29/2021
+ms.date: 10/08/2021
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -300,7 +300,7 @@ The "Active Dynamics 365 Customer Engagement Plan Users by Application" report a
 > | Most active workflows | List of top 10 most executed workflows in the Dataverse environment over the specified time.   |
 > | Most active plug-ins | List of top 10 most executed plug-ins in the Dataverse environment over the specified time.  |
 > | Most used API  | List of top 10 most executed API calls in the Dataverse environment database.   |
-> | Active Dynamics 365 Customer Engagement Plan Users by Application | Active Dynamics 365 Customer Engagement plan users by application. Helps customers to know usage across different apps and entities so that when it is time to renew their subscription, they can chose the individual apps to be bought (for example Dynamics 365 for Sales, Dynamics 365 for Customer Service, etc.). The Customer Engagement plan which was a suite of all Customer Engagement applications is no longer being sold and people need to choose the individual apps to be bought.    |
+> | Active Dynamics 365 Customer Engagement Plan Users by Application | Active Dynamics 365 Customer Engagement plan users by application. Helps customers to know usage across different apps so that when it is time to renew their subscription, they can chose the individual apps to be bought (for example Dynamics 365 for Sales, Dynamics 365 for Customer Service, etc.). The Customer Engagement plan which was a suite of all Customer Engagement applications is no longer being sold and people need to choose the individual apps to be bought.    |
 > | Non-conformant usage by users with Team Member license   | Shows customers how their users (with team member licenses) are using the product in ways that are deemed to be not conformant with the use rights entitled to this license, as per licensing guide.   |
 
 <a name="BKMK_ViewData"></a>   

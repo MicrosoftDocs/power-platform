@@ -43,7 +43,7 @@ and the bot name at any time, and add a long and short description when you publ
     We recommend you use a 32x32 pixel or 64x64 pixel .png file with transparency, so that way the color will come through the icon.
     
 >[!NOTE]
->Setting the bot avatar icon will not show up for bots that are approved by an admin. Bots approved by an admin will use the Teams app icon as the bot avatar. Learn more on [sharing the bot with organization](publication-add-bot-to-microsoft-teams-teams.md#share-the-bot-with-your-organization). 
+>Setting the bot avatar icon will not show up for bots that are approved by an admin. Bots approved by an admin will use the Teams app icon as the bot avatar. Learn more on [sharing the bot with organization](publication-add-bot-to-microsoft-teams-teams.md#show-the-bot-in-microsoft-teams-app-store). 
     
 
 

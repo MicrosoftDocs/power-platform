@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/06/2021
+ms.date: 11/08/2021
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -45,21 +45,25 @@ Notice that these values are recommendations and don’t guarantee satisfactory 
 
 The web application can run in any of the following web browsers running on the specified operating systems:  
 
-- Microsoft Edge (latest publicly-released version) running on Windows 10, Window 8.1, Windows 8, Windows 7 
+- Microsoft Edge (latest publicly-released version) running on Windows 11, Windows 10, Window 8.1
+  - [Windows 8.1 extended support will end January 10, 2023](/lifecycle/products/windows-81)
+  - [Windows 8 extended support ended January 12, 2016](/lifecycle/products/windows-8)
+  - [Windows 7 extended support ended January 14, 2020](/lifecycle/products/windows-7)
 
-- Mozilla Firefox (latest publicly-released version) running on Windows 10, Windows 8.1, Windows 8, or Windows 7  
+- Mozilla Firefox (latest publicly-released version) running on Windows 11, Windows 10, Windows 8.1
 
 - [!INCLUDE[tn_Google_Chrome](../includes/tn-google-chrome.md)]
-  - [!INCLUDE[tn_Google_Chrome](../includes/tn-google-chrome.md)] (latest publicly-released version) running on Windows 10, Windows 8.1, Windows 8, Windows 7
+  - [!INCLUDE[tn_Google_Chrome](../includes/tn-google-chrome.md)] (latest publicly-released version) running on Windows 11, Windows 10, Windows 8.1
   - Google Chrome (latest publicly-released version) running on the two latest publicly-release Mac OS versions 
 
-- [!INCLUDE[tn_Apple_Safari](../includes/tn-apple-safari.md)] (latest publicly-released version) running on the two latest publicly-release Mac OS versions, or [Apple iPad](/dynamics365/mobile-app/support-phones-tablets)  
+- Apple Safari (latest publicly-released version) running on the two latest publicly-release Mac OS versions  
 
 To find the latest release for these web browsers, visit the software manufacturer’s website.  
 
 > [!IMPORTANT]
 > - Using plug-ins or other third-party extensions in your browser can increase load times on pages with lists of data.  
 > - Mozilla Firefox ESR (Extended Support Release) versions aren’t supported.  
+> - For supported experiences on mobile devices like Apple iPad, Apple iPhone, Android Tablet, or Android Phone, use the device’s apps instead of the browser as outlined in [Run model-driven apps and canvas apps on Power Apps mobile](/powerapps/user/run-canvas-and-model-apps-on-mobile) and [Install Dynamics 365 for phones and tablets app](/dynamics365/mobile-app/install-dynamics-365-for-phones-and-tablets).
 
 ## Support for Microsoft Internet Explorer and Microsoft Edge Legacy 
 

@@ -1,7 +1,7 @@
 ---
 title: "Security concepts in Microsoft Dataverse | MicrosoftDocs"
 description: Provides detailed information about the security model and concepts in Microsoft Dataverse.
-ms.date: 09/27/2021
+ms.date: 10/29/2021
 ms.service: power-platform
 ms.topic: "article"
 author: jimholtz
@@ -29,6 +29,10 @@ One of the key features of [Dataverse](/powerapps/maker/common-data-service/data
 Dataverse uses role-based security to group together a collection of privileges. These [security roles](security-roles-privileges.md) can be associated directly to users, or they can be associated with Dataverse teams and business units. Users can then be associated with the team, and therefore all users associated with the team will benefit from the role. A key concept of Dataverse security to understand is all privilege grants are accumulative with the greatest amount of access prevailing. If you gave broad organization level read access to all contact records, you can’t go back and hide a single record.
 
 ## Business units
+
+> [!TIP]
+> ![Video symbol](../admin/media/video-thumbnail-4.png "Video symbol") Check out the following video: [Modernize business units](https://youtu.be/NBBYinF9B7g) 
+
 
 Business units work with security roles to determine the effective security that a user has. Business units are a security modeling building block that helps in managing users and the data they can access. Business units define a security boundary. Every Dataverse database has a single root business unit.
 
@@ -62,6 +66,9 @@ User A can be associated with any of the business units, including the root busi
 
 #### To enable this Matrix data access structure (preview): 
 
+> [!NOTE]
+> **Record ownership across business units** is a preview feature and is being rolled out over time.
+
 1. Sign in to the Power Platform admin center, as an admin (Dynamics 365 admin, Global admin, or Microsoft Power Platform admin). 
 2. Select the **Environments** tab, and then choose the environment that you want to enable this feature for. 
 3. Select **Settings** > **Product** > **Features**. 
@@ -69,11 +76,30 @@ User A can be associated with any of the business units, including the root busi
 
 Once this feature switch is turned on, you can select Business unit when you [assign a security role to a user](assign-security-roles.md). This allows you to assign security from different business units to a user.
 
+> [!NOTE]
+> This feature switch is stored in the **EnableOwnershipAcrossBusinessUnits** [environment database settings](environment-database-settings.md) and can also be set using the [OrgDBOrgSettings tool for Microsoft Dynamics CRM](
+https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm).
+
 ### Owning Business Unit
 
 Each record has an Owning Business Unit field which determines which business unit owns the record. This field defaults to the user’s business unit when the record is created and cannot be changed except when the feature switch is turned ON. 
 
-You can manage whether you want to allow your user to set the Owning Business Unit field when the feature switch is ON. To set the Owning Business Unit field, you need to grant the user’s security role the Business Unit table’s **Append** and **Append To** privileges with Business Unit permission.  
+> [!NOTE]
+> When you change which business unit owns a record, be sure to check out the following for cascade effects: [Using Organization Service to configure cascading behavior](/powerapps/developer/data-platform/configure-entity-relationship-cascading-behavior#using-organization-service-to-configure-cascading-behavior).
+
+You can manage whether you want to allow your user to set the Owning Business Unit field when the feature switch is ON. To set the Owning Business Unit field, you need to grant the user’s security role the Business Unit table’s **Append To** privilege with local level permission.  
+
+To allow your user to set this field, you can enable this field in the following:
+1. Form - both the body and header.
+2. View.
+3. [Column mappings](/powerapps/developer/data-platform/customize-entity-attribute-mappings). If you are using the [AutoMapEntity](/powerapps/developer/data-platform/customize-entity-attribute-mappings#auto-mapping-columns-between-tables), you can specify the field in your column mapping. 
+
+> [!NOTE]
+> If you have a job/process to sync data between environments and the **Owning Business Unit** is included as part of the schema, your job will fail with a **Foreign KEY** constraint violation if the target environment does not have the same **Owning Business Unit** value. 
+> 
+> You can either remove the **Owning Business Unit** field from the source schema, or update the **Owning Business Unit** field value of the Source to any of the business units of the target.
+>
+> If you have a job/process to copy data from an environment to an external resource, for example PowerBI, you will need to select or deselect the **Owning Business Unit** field from your source. Select it if your resource can receive it otherwise deselect it.
 
 ## Table/record ownership
 

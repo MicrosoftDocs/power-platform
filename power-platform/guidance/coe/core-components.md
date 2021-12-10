@@ -20,13 +20,8 @@ search.app:
 
 # Use core components
 
-These components provide the core to get started with setting up a Center of Excellence (CoE). They sync all your resources into tables and build admin apps on top of that to help you get more visibility of the apps, flows, and makers in your environment. Additionally, apps like the Set App Permissions help with daily admin tasks. The core components solution contains assets relevant only to admins. More information: [Set up core components](setup-core-components.md)
+These components provide the core to get started with setting up a Center of Excellence (CoE). They sync all your resources into tables and build admin apps on top of that to help you get more visibility of the apps, flows, and makers in your environment. Additionally, apps like the Set App Permissions help with daily admin tasks. The core components solution contains assets relevant only to admins. More information: [Set up core components](setup-core-components.md) and [Watch](https://www.youtube.com/embed/l0kJQAeKthw) how to use the core components solution.
 
-## Demo: Core components
-
-Watch how to use the core components solution.
-
-> [!VIDEO https://www.youtube.com/embed/l0kJQAeKthw]
 
 ## What's in the solution
 
@@ -259,7 +254,7 @@ Additional to the above listed inventory tables, the following helper tables sup
 - **Power Platform User SR**  Gives read-only access to the resources in the custom tables.
 
 > [!NOTE]
-> To easily explore and manage data stored in Dataverse, we recommend that you install the [Microsoft Power Apps Office Add-in](https://appsource.microsoft.com/product/office/WA104380330?tab=Overview). More information: [Working with data in Dataverse using the Excel Add-in!](https://powerapps.microsoft.com/blog/cds-for-apps-excel-importexport/)
+> To easily explore and manage data stored in Dataverse, install the [Microsoft Power Apps Office Add-in](https://appsource.microsoft.com/product/office/WA104380330?tab=Overview). More information: [Working with data in Dataverse using the Excel Add-in!](https://powerapps.microsoft.com/blog/cds-for-apps-excel-importexport/)
 
 ## Flows
 
@@ -268,42 +263,53 @@ Additional to the above listed inventory tables, the following helper tables sup
 | Admin \| Capacity Alerts | Scheduled | Daily | This flow checks actual capacity consumption and compares it with approved capacity, that an admin sets. The flow will send an alert to the admin for environments that exceed the approved capacity, or are at 80% of approved capacity. The approved capacity can be set in the Power Platform Admin View model-driven app. |
 | Admin \| Sync Template v3 | Schedule | Daily | This flow retrieves the environments in your tenant by using [List Environments as Admin](/connectors/powerplatformforadmins/#list-environments-as-admin), and creates or updates a record for each environment in the Dataverse Environment table. Running this flow will also trigger the rest of the sync flows indirectly by updating the environment records in the Dataverse instance. |
 | Admin \| Sync Template v3 (Apps) | Automated | triggered by Admin \| Sync Template v3 | This flow gets app information by using [Get Apps as Admin](/connectors/powerappsforadmins/#get-apps-as-admin). This information is then created or updated in the PowerApps App table. |
-|Admin \| Sync Template v3 (Connectors) | Scheduled | Daily | This flow gets connector information by using [Get Connectors](/connectors/powerappsforappmakers/#get-connectors), and stores information such as the connector name, publisher, and tier. |
+| Admin \| Sync Template v3 (Connectors) | Scheduled | Daily | This flow gets connector information by using [Get Connectors](/connectors/powerappsforappmakers/#get-connectors), and stores information such as the connector name, publisher, and tier. |
 | Admin \| Sync Template v3 (Custom Connector) | Automated | triggered by Admin \| Sync Template v3 | This flow gets custom connector information by using [Get Custom Connectors as Admin](/connectors/powerappsforadmins/#get-custom-connectors-as-admin), and stores information such as the name, endpoint, and created by/on. |
-| Admin \| Sync Template v3 (Desktop Flow - Runs) | Scheduled | Daily | This flow gets desktop flow run history and session details. Turning on this flow is optional, and we recommended that you do so only if you're using desktop flows in your tenant and are interested in getting a tenant-wide overview. |
-| Admin \| Sync Template v3 (Desktop Flow) | Automated | triggered by Admin \| Sync Template v3 | This flow retrieves desktop flow information. This information is retrieved from underlying Dataverse tables and requires the user running the flow to have system administrator privileges in the environment. Turning on this flow is optional, and we recommend that you do so only if you're using desktop flows in your tenant and are interested in getting a tenant-wide overview. |
-| Admin \| Sync Template v3 (Flow Action Details) | Scheduled | Daily | This flow gets the actions and triggers for all flows. This flow uses [Get Flow as Admin](/connectors/flowmanagement/#get-flow-as-admin) to get action and trigger details for every individual flow in your tenant. Thus, it can be a very time-consuming and resource-consuming flow to run. Turning on this flow is optional, and we recommend that you do so only to perform action-level reporting or analysis, such as reporting on who's using the Send Email action of the Microsoft 365 Outlook connector. |
+| Admin \| Sync Template v3 (Desktop Flow - Runs) | Scheduled | Daily | This flow gets desktop flow run history and session details. Turning on this flow is optional, only turn this flow on if a tenant-level overview of desktop flows is important. |
+| Admin \| Sync Template v3 (Desktop Flow) | Automated | triggered by Admin \| Sync Template v3 | This flow retrieves desktop flow information. This information is retrieved from underlying Dataverse tables and requires the user running the flow to have system administrator privileges in the environment. Turning on this flow is optional, only turn this flow on if a tenant-level overview of desktop flows is important. |
+| Admin \| Sync Template v3 (Flow Action Details) | Scheduled | Daily | This flow gets the actions and triggers for all flows. This flow uses [Get Flow as Admin](/connectors/flowmanagement/#get-flow-as-admin) to get action and trigger details for every individual flow in your tenant. Thus, it can be a very time-consuming and resource-consuming flow to run. Turning on this flow is optional, only do so to perform action-level reporting or analysis, such as reporting on who's using the Send Email action of the Microsoft 365 Outlook connector. |
 | Admin \| Sync Template v3 (Flows) | Automated | triggered by Admin \| Sync Template v3 | This flow gets cloud flow information by using [List Flows as Admin](/connectors/flowmanagement/#list-flows-as-admin). Also updates the record if flows have been deleted. |
 | Admin \| Sync Template v3 (Model Driven Apps) | Automated | triggered by Admin \| Sync Template v3 | This flow gets model-driven app information. This information is retrieved from underlying Dataverse tables and requires the user running the flow to have system administrator privileges in the environment. |
-| Admin \| Sync Template v3 (Portals) | Automated | triggered by Admin \| Sync Template v3 | This flow retrieves Power Apps Portal information. This information is retrieved from underlying Dataverse tables and requires the user running the flow to have system administrator privileges in the environment. Turning on this flow is optional, and we recommend that you do so only if you're using portals in your tenant and are interested in getting a tenant-wide overview. |
-| Admin \| Sync Template v3 (PVA) | Automated | triggered by Admin \| Sync Template v3 | This flow retrieves Power Virtual Agents (bot) information. This information is retrieved from underlying Dataverse tables and requires the user running the flow to have system administrator privileges in the environment. Turning on this flow is optional, and we recommend that you do so only if you're using Power Virtual Agents in your tenant and are interested in getting a tenant-wide overview. |
+| Admin \| Sync Template v3 (Portals) | Automated | triggered by Admin \| Sync Template v3 | This flow retrieves Power Apps Portal information. This information is retrieved from underlying Dataverse tables and requires the user running the flow to have system administrator privileges in the environment. Turning on this flow is optional, only turn this flow if you're using portals in your tenant and are interested in getting a tenant-wide overview. |
+| Admin \| Sync Template v3 (PVA) | Automated | triggered by Admin \| Sync Template v3 | This flow retrieves Power Virtual Agents (bot) information. This information is retrieved from underlying Dataverse tables and requires the user running the flow to have system administrator privileges in the environment. Turning on this flow is optional, only turn this flow on if a tenant-level overview of chatbots is important. |
 | Admin \| Sync Template v3 (Sync Flow Errors) | Scheduled | Daily | This flow sends an email to the admin about environments that failed to sync (with a link to the flow instance). |
 | Admin \| Welcome Email v3 | Automated | when any sync flow adds a new maker to the Maker table | This flow sends an email to a user who created an app, flow, custom connector, or environment. This flow gets triggered when a new record is created in the maker table. You can customize the email sent out by the flow. |
 | CLEANUP - Admin \| Sync Template v3 (Check Deleted) | Scheduled | Every two weeks | This long running flow runs every other week, and compares CoE to the tenant to determine if any objects were deleted since last run. Either just marks them as deleted (if env var Also Delete from CoE = no) or deletes them from the CoE (if Also Delete from CoE = yes). The audit log solution is able to find this information in on a daily basis for apps and flows, but not for other resources such as environments, desktop flows and chatbots. Run this flow periodically to check for deleted resources. |
-| CLEANUP - Admin \| Sync Template v3 (Connection Status) | Scheduled | Weekly | This flow runs weekly, and checks if any apps or flows have unresolved connections. |
-| CLEANUP - Admin \| Sync Template v3 (Delete Bad Data) | Scheduled | Daily | This flow runs daily, and looks for data in the inventory that is not complete, for example flows without an environment. These dead rows are removed from the inventory. |
+| CLEANUP - Admin \| Sync Template v3 (Connection Status) | Scheduled | Weekly | This flow runs weekly, and checks if any apps or flows have unresolved connections.|
+| CLEANUP - Admin \| Sync Template v3 (Delete Bad Data) | Scheduled | Daily | This flow runs daily, and looks for data in the inventory that is not complete, for example flows without an environment, and removes this data. |
 | CLEANUP - Admin \| Sync Template v3 (Orphaned Makers) | Scheduled | Weekly | This flow runs weekly, and checks if any makers have left the organization - if maker information can not be found in Azure AD/Office 365 Users, any resources created by the maker (apps, cloud and desktop flows, environments, chatbots) are marked as orphaned. |
 | CLEANUP - Admin \| Sync Template v3 (Power Apps User Shared With) | Scheduled | Every two weeks | This long running flow runs every other week, and gets who the app is shared with by using [Get App Role Assignments as Admin](/connectors/powerappsforadmins/#get-app-role-assignments-as-admin). |
-| CLEANUP HELPER - Check Deleted (Canvas Apps) | Child Flow | called from Check Deleted | Does the check deleted work for a given environment for canvas apps  |
-| CLEANUP HELPER - Check Deleted (Cloud Flows) | Child Flow | called from Check Deleted | Does the check deleted work for a given environment for cloud flows  |
-| CLEANUP HELPER - Check Deleted (Model Driven Apps) | Child Flow | called from Check Deleted | Does the check deleted work for a given environment for model driven apps  |
-| CLEANUP HELPER - Check Deleted (PVA) | Child Flow | called from Check Deleted | Does the check deleted work for a given environment for power virtual agents  |
+| CLEANUP HELPER - Check Deleted (Canvas Apps) | Child flow | called from Check Deleted | Does the check deleted work for a given environment for canvas apps  |
+| CLEANUP HELPER - Check Deleted (Cloud Flows) | Child flow | called from Check Deleted | Does the check deleted work for a given environment for cloud flows  |
+| CLEANUP HELPER - Check Deleted (Model Driven Apps) | Child flow | called from Check Deleted | Does the check deleted work for a given environment for model driven apps  |
+| CLEANUP HELPER - Check Deleted (PVA) | Child Flow | called from Check Deleted | Does the check deleted work for a given environment for chatbots  |
+| CLEANUP HELPER - Check Deleted (Custom Connectors) | Child flow | called from Check Deleted | Does the check deleted work for a given environment for custom connectors  |
+| CLEANUP HELPER - Power Apps User Shared With | Child flow | called from CLEANUP - Admin \| Sync Template v3 (Power Apps User Shared With) | runs once per environment to check |
 | DLP Request \| Make approved policy change | Automated | when a DLP Policy Change Request record is updated to Approved state | Modifies the existing DLP Policies identified in the request depending on the action type.  |
 | Env Request \| Cleanup expired environments | Schedule | Daily | Cleans up environments with expiration dates identified or sends weekly warning email notifications every Monday if the expiration date is coming up within the month. |
 | Env Request \| Create approved environment | Automated | when an Environment Creation Request’s status is updated to Approved state | Provisions the Environment and other resources identified in the request. |
 | Env Request \| Notify admin when a new request is submitted | Automated | when a new Environment Creation Request record’s status is updated by a user to Pending state | Sends an email to the admin alias with instructions on how to review the request. |
 | Env Request \| Notify requestor when rejected | Automated | when an Environment Creation Request’s status is updated to Rejected state | Sends an email notification to the requestor with the rejection status and reason, then changes the request to inactive. |
-| HELPER - CanvasAppOperations | Child Flow | Instant | This flow takes in the environment, app, and operation to perform as well as the GUID for the new maker if the operation is to reassign ownership. The operations supported are Delete and Assign (which reassigns owner). It performs the action on the actual object in the tenant and also updates the inventory. |
-| HELPER - CloudFlowOperations | Child Flow | Instant | This flow takes in the environment, flow, and operation to perform as well as the GUID for the new maker if the operation is to reassign ownership. The operations supported are Delete and Assign (which reassigns owner). It performs the action on the actual object in the tenant and also updates the inventory. |
-| HELPER - ObjectOperations | Child Flow | Instant | This flow takes in the environment, flow, and operation to perform as well as the GUID for the new maker if the operation is to reassign ownership. It calls either the The operations supported are Delete and Assign (which reassigns owner). It calls either the **HELPER - CloudFlowOperations** or the **HELPER - CanvasAppOperations** child flow depending on its last parameter, objectType. It is needed due to a product bug in which you cannot call child flows with the Dataverse Connector from Canvas Apps. |
+| HELPER - CanvasAppOperations | Child flow | Instant | This flow takes in the environment, app, and operation to perform as well as the GUID for the new maker if the operation is to reassign ownership. The operations supported are Delete and Assign (which reassigns owner). It performs the action on the actual object in the tenant and also updates the inventory. |
+| HELPER - CloudFlowOperations | Child flow | Instant | This flow takes in the environment, flow, and operation to perform as well as the GUID for the new maker if the operation is to reassign ownership. The operations supported are Delete and Assign (which reassigns owner). It performs the action on the actual object in the tenant and also updates the inventory. |
+| HELPER - ObjectOperations | Child flow | Instant | This flow takes in the environment, flow, and operation to perform as well as the GUID for the new maker if the operation is to reassign ownership. It calls either the The operations supported are Delete and Assign (which reassigns owner). It calls either the **HELPER - CloudFlowOperations** or the **HELPER - CanvasAppOperations** child flow depending on its last parameter, objectType. It is needed due to a product bug in which you cannot call child flows with the Dataverse Connector from Canvas Apps. |
 | Command Center > Get M365 Service Messages | Instant | from Admin - Command Center canvas apps | this flow connects to [Microsoft Graph](/graph/api/serviceannouncement-list-messages) to list Power Platform Message Center service updates and returns them to the Admin - Command Center canvas app. |
 | Command Center > Initially Populate Bookmarks | Instant | from Admin - Command Center canvas app | this flow runs once to get all CoE Starter Kit apps in the environment and store them to the Command Center Config table as bookmarks used in both the Admin - Command Center and Maker - Command Center canvas apps. |
+| HELPER - Maker Check | Child flow | from all Admin - Sync Template (v3) flows | this flow calls uses Office 365 Users and HTTP with Azure AD connectors to determine if the resource owner can be found in the tenant or if this resource is now orphaned, and updates the status in the Maker table. |
+| HELPER - Send Email | Child flow | from all flows that send emails | this flow consolidates the calls to send email into a single location and can be updated to different communication methods, such as sending adaptive cards in Teams. |
+| Admin \| Sync Template v3 Configure Emails | Instant | on setup or upgrade | this flow updates the Customized Email table with default values. |
+| Admin \| Compliance request complete apps v3 | Automated | This flow waits for the Business Process flow for App Compliance to be finished and updates the Admin Requirement - Risk Assessment State field of the PowerApps Apps table. |
+| Admin \| Compliance request complete bots | Automated | This flow waits for the Business Process flow for Bot Compliance to be finished and updates the Admin Requirement - Risk Assessment State field of the PVA table.|
+| Admin \| Compliance request complete custom connector v3 | Automated | This flow waits for the Business Process flow for Custom Connector Compliance to be finished and updates the Admin Requirement - Risk Assessment State field of the PowerApps Connectors table.|
+| Admin \| Compliance request complete flows v3 | Automated | This flow waits for the Business Process flow for Cloud flow Compliance to be finished and updates the Admin Requirement - Risk Assessment State field of the Flows table.|
+| Admin \| Compliance Teams Environment BPF kickoff v3 | Automated | This flow waits for Date Asked for Business Justification field in the Environment table to be updated and starts a new Microsoft Teams Environment Approval BPF. |
 
 ### Admin \| Compliance Detail request v3
 
 This flow works in conjunction with other apps and flows in the CoE Starter Kit to facilitate the process described in [App auditing process](example-processes.md). Compliance detail request emails are sent for apps and chatbots.
 
-This flow is in Core even though most of its functionality is in Governance in order to facilitate easier shipping for DfT. It should be left turned off until instructed to turn on in Gov setup.
+>[!NOTE]
+>This flow is part of the Core components solution however most of its functionality is implemented in the Governance components solution. This is in order to facilitate easier shipping for Dataverse for Teams. This flow, and its related flows (Admin | Compliance request complete apps/bots/custom connectors/flows) should be left turned off until instructed to turn when you setup the [Governance components](setup-governance-components.md).
 
 This flow sends an email to users who have apps in the tenant that aren't compliant with the following thresholds:
 
@@ -318,6 +324,8 @@ This flow sends an email to users who have chatbots in the tenant that aren't co
 - The chatbot has been launched more than 50 times, and no business justification details have been provided for it.
 
 - The chatbot has business justification details and an indication of high business impact, but no mitigation plan has been submitted to the attachments field.
+
+You can customize the criteria for when makers are asked to provide a business justification using [environment variables](setup-core-components.md#update-environment-variables). Default values are provided.
 
 You can customize the email sent out by the flow; by default, it will look like the following image.
 
@@ -338,6 +346,7 @@ Use this app to:
 - Download the latest CoE Starter Kit version and raise support tickets with the team.
 - Launch Microsoft Learn learning paths to learn more about Microsoft Power Platform.
 - Launch the latest posts of the Power Apps, Power Automate, Power BI and Power Virtual Agent blogs.
+- Configure email subject and body text for emails send through the CoE Starter Kit.
 
 **Permission**: Intended to be used only by admins. Power Platform Service Admin or Global Admin permission is required. Share this app with your CoE Admins.
 
@@ -347,6 +356,26 @@ Use this app to:
 > When you first launch the app, bookmarks to all apps included in the CoE Starter Kit get created. Additionally add other relevant bookmarks such as links to the Power BI dashboard and your Power Platform wiki and community by selecting **Edit bookmarks**.
 
 ![Admin - Command Center canvas app](media\commandcenter1.png "Admin - Command Center canvas app")
+
+### Configurable emails
+
+Use the Admin - Command Center app to configure subject and body texts for emails send by the CoE Starter Kit.
+
+>[!NOTE]
+> This feature only works for emails part of the [Center of Excellence - Core Components](core-components.md).
+
+1. Open the Admin - Command Center app and select the email icon in the navigation.
+    ![Select the email icon in the Admin - Command Center canvas app](media\commandcenter4.png "Select the email icon in the Admin - Command Center canvas app")
+1. Default email body and subject texts are provided. You can edit the email body and subject, which will change the *Default Body* and *Default Subject* properties to No. This means that running the **Admin | Sync Template V3 Configure Emails** flow that sets the default body and subject will not update those records, and your modified text will continue to be used in these emails.
+1. Optionally, configure the below for your email:
+    1. CC: this will add the user or group to the CC line of the mail.
+    1. ReplyTo: this will add the user or group to the Reply To Property for the mail.
+    1. Send on Behalf: this will add the person or group to the From (Send as) property for the mail.
+
+    >[!NOTE]
+    > These properties are reliant on your mailbox permissions, and relevant [Exchange properties](/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user) being configured.
+
+1. You can store localized versions of each mail. If the user has a preferred language set in their Office 365 User profile, mails will be sent in the localized version. If no localized version is found for a language, the default english text is sent. Designate the language with the ISO Language Code: [Language Code Table (lingoes.net)](http://www.lingoes.net/en/translator/langcode.htm). Emails are formatted as html, be careful when changing the text so as to not overwrite html tags.
 
 ### DLP Editor v2
 

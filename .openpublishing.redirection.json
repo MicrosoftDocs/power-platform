@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "power-platform/admin/videos.md",
+      "redirect_url": "https://www.youtube.com/c/MicrosoftDynamics365/videos",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "power-platform/admin/enable-teams-integration.md",
       "redirect_url": "/dynamics365/teams-integration/teams-install-app",
       "redirect_document_id": "false"
@@ -291,24 +296,34 @@
       "redirect_document_id": "false"
     },
     {
+      "source_path": "power-virtual-agents/configuration-security.md",
+      "redirect_url": "configuration-end-user-authentication.md",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-virtual-agents/teams/configuration-security-teams.md",
+      "redirect_url": "configuration-end-user-authentication-teams.md",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "power-platform/admin/preview-april-2019-updates.md",
       "redirect_url": "preview-october-2019-updates",
-      "redirect_document_id": false
+      "redirect_document_id": "false"
     },
     {
       "source_path": "power-platform/admin/synchronize-user-information-active-directory.md",
       "redirect_url": "/dynamics365/customerengagement/on-premises/admin/synchronize-user-information-active-directory",
-      "redirect_document_id": false
+      "redirect_document_id": "false"
     },
     {
       "source_path": "power-platform/admin/wp-controlling-access.md",
       "redirect_url": "wp-security",
-      "redirect_document_id": false
+      "redirect_document_id": "false"
     },
     {
       "source_path": "power-platform/flow/index.md",
       "redirect_url": "/power-platform/flow/stub",
-      "redirect_document_id": false
+      "redirect_document_id": "false"
     }
   ]
 }

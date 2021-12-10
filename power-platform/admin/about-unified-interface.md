@@ -4,7 +4,7 @@ description: About Unified Interface
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/16/2021
+ms.date: 10/20/2021
 author: jimholtz
 ms.subservice: admin
 ms.author: jimholtz
@@ -35,13 +35,15 @@ Once provisioned, you can access the installed Unified Interface and legacy web 
 
 You can access Unified Interface apps from the following locations in a browser: 
 
-1. In app navigation:
+1. Sign in to [Power Apps](https://make.powerapps.com) and select your environment.
+
+2. Select your app from the menu bar.
 
    ![In app navigation.](media/uci-in-app-navigation.png "In app navigation")
 
-2. In **My Apps** page under **Settings**:
+3. Select an app to open.
 
-   ![Unified Interface apps on My Apps page.](media/uci-my-apps-page.png "Unified Interface apps on My Apps page")
+   ![Unified Interface apps](media/uci-my-apps-page.png "Unified Interface apps")
 
 ## Accessing Unified Interface apps on phone and tablets
 The Unified Interface apps are the only apps supported on phones and tablets. When users sign in to their environment, they will see the Unified Interface apps only on their apps landing page. 
@@ -56,13 +58,13 @@ Some capabilities of the legacy web client are available in the hybrid experienc
 
 There are certain capabilities that continue to be unavailable in Unified Interface and we are working to provide these in future releases:
 
--	Custom styling of advanced chart properties (excluding colors and basic formatting)
--	Composite address control
+- Custom styling of advanced chart properties (excluding colors and basic formatting)
+- Composite address control
 - Composite fullname control
--	Global notifications
--	Admin experiences
--	Editable grids on phones
--	Learning Path
+- Global notifications
+- Admin experiences
+- Editable grids on phones
+- Learning Path
 - Duplicate detection in Lookups
 
 ## Read-only entities on Unified Interface
@@ -81,9 +83,6 @@ The following are entities that are currently read-only in Unified Interface:
 - SLA
 - SLAKPIInstance
 - Template
-- Contract
-- Contract Lines
-- Contract Templates
 - Case Resolution
 
 ### Workaround for out-of-the-box or custom entities appearing as read-only

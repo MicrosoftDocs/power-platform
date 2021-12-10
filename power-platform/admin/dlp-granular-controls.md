@@ -4,7 +4,7 @@ description: About fine-grained controls such as the ability to block specific c
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/21/2021
+ms.date: 11/28/2021
 ms.subservice: admin
 author: mikferland-msft
 ms.author: miferlan
@@ -24,7 +24,10 @@ search.app:
 
 # Granular DLP controls
 
-Although the connector classification capability is very helpful in governing Microsoft Power Platform connectors, fine-grained controls&mdash;such as the ability to block specific connector actions or connection endpoints&mdash;help you strike a balance between productivity and protection. 
+Although the connector classification capability is very helpful in governing Microsoft Power Platform connectors, fine-grained controls&mdash;such as the ability to block specific connector actions or connection endpoints&mdash;help you strike a balance between productivity and protection.
+
+> [!NOTE]
+> Both connector action control and connector endpoint filtering are currently in Public Preview.
 
 ## Connector action control 
 
@@ -100,6 +103,9 @@ Set-PowerAppDlpPolicyConnectorConfigurations
 Goal:
 -	Block actions TodaysForecast and CurrentWeather of connector MSN Weather; allow all other actions.
 -	Allow action GetRepositoryById of connector GitHub; block all other actions.
+
+> [!NOTE]
+> In the following cmdlet, *PolicyName* refers to the unique GUID. You can retrieve the DLP GUID by running the **Get-DlpPolicy** cmdlet.
 
 ```powershell
 $ConnectorConfigurations = @{ 
@@ -217,6 +223,9 @@ For the SMTP connector:
 For the HTTP connector:
   -	Allow endpoints https://mywebsite.com/allowedPath1 and https://mywebsite.com/allowedPath2 
   -	Deny all other URLs
+
+> [!NOTE]
+> In the following cmdlet, *PolicyName* refers to the unique GUID. You can retrieve the DLP GUID by running the **Get-DlpPolicy** cmdlet.
 
 ```powershell
 $ConnectorConfigurations = @{ 

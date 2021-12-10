@@ -85,7 +85,7 @@ The deployment setting file can be generated using the [Power Platform CLI](/pow
 Use the `create-settings` property with Power Platform CLI:
 
 ```
-C:\> pac solution create-settings –solution -zip <solution_zip_file_path> --settings-file <settings_file_name>
+C:\> pac solution create-settings --solution-zip <solution_zip_file_path> --settings-file <settings_file_name>
 ```
 
 This command will generate a JSON file as shown below.

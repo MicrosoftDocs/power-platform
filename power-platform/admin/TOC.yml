@@ -2,6 +2,8 @@
   items: 
   - name: Administer Power Platform
     items:    
+    - name: Administer Power Platform
+      href: index.yml
     - name: Overview
       href: admin-documentation.md
     - name: Working with the Admin Portals 
@@ -18,7 +20,7 @@
         href: manage-email-notifications.md
       - name: Policies and communications
         href: policies-communications.md
-      - name: "Preview: Manage maintenance window"
+      - name: Manage maintenance window
         href: manage-maintenance-window.md
       - name: Notifications explained
         href: notifications-explained.md 
@@ -31,13 +33,39 @@
       - name: Manage licenses in your org
         href: signup-question-and-answer.md
       - name: Administer without a license
-        href: global-service-administrators-can-administer-without-license.md      
-      - name: Purchase Power Apps 
-        href: signup-for-powerapps-admin.md
-      - name: About Power Apps per app plans
-        href: about-powerapps-perapp.md
-      - name: Power Apps and Power Automate licensing FAQs
+        href: global-service-administrators-can-administer-without-license.md
+      - name: Power Apps
+        items:      
+        - name: Purchase Power Apps 
+          href: signup-for-powerapps-admin.md
+        - name: About Power Apps per app plans
+          href: about-powerapps-perapp.md
+      - name: Power Automate
+        items:
+        - name: Overview
+          href: power-automate-licensing/overview.md
+        - name: Types of licenses
+          href: power-automate-licensing/types.md
+        - name: FAQs about licenses
+          href: power-automate-licensing/faqs.md
+        - name: Buy Power Automate licenses
+          href: power-automate-licensing/buy-licenses.md
+        - name: Add-ons
+          href: power-automate-licensing/add-ons.md
+      - name: Power Platform licensing FAQs
         href: powerapps-flow-licensing-faq.md
+      - name: "Preview: Pay-as-you-go plan"
+        items:
+        - name: Overview
+          href: pay-as-you-go-overview.md
+        - name: Meters
+          href: pay-as-you-go-meters.md
+        - name: Set up
+          href: pay-as-you-go-set-up.md
+        - name: View usage and manage costs 
+          href: pay-as-you-go-usage-costs.md
+        - name: Issues and frequently asked questions
+          href: pay-as-you-go-issues-faq.md
       - name: Requests limits and allocations
         href: api-request-limits-allocations.md
     - name: Getting started
@@ -60,6 +88,20 @@
         href: check-online-service-health.md
       - name: Enabling preview features
         href: what-are-preview-features-how-do-i-enable-them.md
+      - name: Requirements
+        items:
+        - name: Requirements/supported configurations
+          href: online-requirements.md
+        - name: Plan for deployment and administration
+          href: plan-for-deployment-and-administration.md
+        - name: Supported web browsers and mobile devices
+          href: supported-web-browsers-and-mobile-devices.md
+        - name: Web application requirements
+          href: web-application-requirements.md
+        - name: Support end for Internet Explorer
+          href: support-end-internet-explorer.md
+        - name: Server cipher suites and TLS requirements
+          href: server-cipher-tls-requirements.md
       - name: Unified Interface
         items:
         - name: About Unified Interface
@@ -140,7 +182,7 @@
             href: enable-languages.md
           - name: Privacy preferences
             href: settings-privacy-security.md
-          - name: Configure Relevance Search
+          - name: Configure Dataverse search
             href: configure-relevance-search-organization.md 
         - name: Business 
           items:
@@ -166,6 +208,8 @@
           items:
           - name: Create or edit business unit
             href: create-edit-business-units.md
+          - name: Update record owner
+            href: update-record-owner.md
           - name: Delete business unit
             href: delete-business-unit.md 
           - name: Assign business units
@@ -410,11 +454,13 @@
         items:
         - name: "Preview: Tenant-level analytics (default)" 
           href: tenant-level-analytics.md
-        # Comment out the next two topics before 10/1 publish
+        # Comment out the next topics before publish
         # - name: "Preview: Power Apps analytics report"
         #   href: powerapps-analytics-reports.md
-        # - name: "Preview: Power Automate analytics report"
+        # - name: "Preview: Tenant-level analytics for Power Automate"
         #   href: power-automate-analytics-reports.md
+        # - name: "Preview: Power Apps license utilization"
+        #   href: powerapps-license-utilization.md
       - name: Data export
         items:
         - name: "Preview: Export Power Apps inventory and usage data"
@@ -444,9 +490,11 @@
       - name: View self-service capacity
         href: view-self-service-capacity.md
       - name: Free up storage space
-        href: free-storage-space.md       
+        href: free-storage-space.md        
       - name: Add storage capacity
         href: add-storage.md      
+      - name: Access storage with SAS token
+        href: storage-sas-token.md 
     - name: Resources
       items:
       - name: Overview 
@@ -515,6 +563,10 @@
               items:
               - name: "Preview: List environments"
                 href: list-environments.md
+            - name: Tenant Settings
+              items:
+              - name: "Preview: List tenant settings"
+                href: list-tenantsettings.md
     - name: PowerShell support for Power Apps 
       items:
       - name: About PowerShell support
@@ -523,24 +575,10 @@
         href: wp-task-automation-powershell.md
       - name: Data loss prevention SDK 
         href: data-loss-prevention-sdk.md
-    - name: Requirements
-      items:
-      - name: Requirements/supported configurations
-        href: online-requirements.md
-      - name: Plan for deployment and administration
-        href: plan-for-deployment-and-administration.md
-      - name: Supported web browsers and mobile devices
-        href: supported-web-browsers-and-mobile-devices.md
-      - name: Web application requirements
-        href: web-application-requirements.md
-      - name: Support end for Internet Explorer
-        href: support-end-internet-explorer.md
-      - name: Server cipher suites and TLS requirements
-        href: server-cipher-tls-requirements.md
     - name: Security and governance
       items:
       - name: Security and governance
-        href: index.yml
+        href: security.yml
       - name: Overview
         href: wp-security.md     
       - name: Governance considerations
@@ -569,6 +607,9 @@
             href: wp-data-loss-prevention.md
           - name: Connector classification
             href: dlp-connector-classification.md
+          # Comment out next until given go ahead
+          # - name: Disable new connectors by default 
+          #   href: connector-off-by-default.md
           - name: Custom connector parity  
             href: dlp-custom-connector-parity.md 
           - name: Granular controls
@@ -784,6 +825,8 @@
               href: set-incoming-outgoing-email-synchronization.md
             - name: Configure correlation settings for incoming email
               href: email-message-filtering-correlation.md 
+            - name: Associate an email address with a row
+              href: associate-email-address.md
             - name: Create queue items from incoming email
               href: create-queue-items-from-synchronized-email-messages.md
           - name: Configure appointment, contact, and task synchronization
@@ -894,9 +937,8 @@
         - name: Delete data 
           href: powerapps-gdpr-delete-dsr.md
         - name: Dataverse customer data 
+      # line 938 to 970 - is being reorged but keep until hear from Marty
           href: common-data-service-gdpr-dsr-guide.md
-    - name: Power Apps US Government
-      href: powerapps-us-government.md
     - name: Datacenter regions
       href: new-datacenter-regions.md
       items: 
@@ -920,10 +962,13 @@
         href: about-microsoft-cloud-india.md
       - name: Japan
         href: about-microsoft-cloud-japan.md
-      - name: Dynamics 365 US Government
-        href: microsoft-dynamics-365-government.md
-        items:
-        - name: Dynamics 365 US Government - Feature availability
+      - name: U.S Government 
+        items: 
+        - name: Dynamics 365 service description
+          href: microsoft-dynamics-365-government.md
+        - name: Power Apps service description
+          href: powerapps-us-government.md
+        - name: Dynamics 365 US Government feature availability 
           href: government-feature-availability.md
       - name: Geo to geo migrations
         href: geo-to-geo-migrations.md    

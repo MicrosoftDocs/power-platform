@@ -58,17 +58,13 @@ Using these steps, you'll set up an Azure AD app registration that will be used 
 
       ![Delegated permissions.](media/coe36.png "Delegated permissions")
 
-   1. Select **Application permissions**, and then select **ActivityFeed.Read** and **ServiceHealth.Read**.
-
-      ![Application permissions.](media/coe37.png "Application permissions")
+   1. Select **Application permissions**, and then select **ActivityFeed.Read**.
 
    1. Select **Add permissions**.
 
 1. Select **Grant Admin Consent for (your organization)**.
 
-   The API permissions now reflect delegated **ActivityFeed.Read**, and application **ActivityFeed.Read** and **ServiceHealth.Read** permissions, with a status of **Granted for _(your organization)_**.
-
-   ![API permissions.](media/coe38.png "API permissions")
+   The API permissions now reflect delegated **ActivityFeed.Read**, and application **ActivityFeed.Read** permissions, with a status of **Granted for _(your organization)_**.
 
 1. Select **Certificates and secrets**.
 
@@ -93,13 +89,16 @@ Now you'll configure and set up a custom connector that uses the [Office 365 Man
 
   ![Custom connector setup.](media/coe-custom1.png "Custom connector setup")
 
-1. Leave the **1. General** page as-is, and then select **2. Security**.
-    
+1. If your tenant is in the commercial cloud, leave  the **1. General** page as-is. If your tenant is in the Government cloud, you have to change the host URL on the **1. General** page:
+
    >[!IMPORTANT]
-   > If your tenant is a GCC tenant, change the host to https://manage-gcc.office.com.
-   > If your tenant is a GCC high tenant, change the host to https://manage.office365.us
+   > - If your tenant is a GCC tenant, change the host to https://manage-gcc.office.com.
+   > - If your tenant is a GCC high tenant, change the host to https://manage.office365.us.
+   > - If your tenant is a DoD tenant, change the host to https://manage.protection.apps.mil.
+   >
    > More information: [Activity API operations](/office/office-365-management-api/office-365-management-activity-api-reference?preserve-view=true&view=o365-worldwide#activity-api-operations)
 
+1. Select **Security**.
 1. Select **Edit** at the bottom of the **OAuth 2.0** area to edit the authentication parameters.
 
    ![Edit OAuth configuration.](media/coe42.png "Edit OAuth configuration")
@@ -110,16 +109,16 @@ Now you'll configure and set up a custom connector that uses the [Office 365 Man
 
 1. Don't change the **Tenant ID**.
 
-1. Leave the **Login URL** as is  for commercial and GCC tenants, and change it to https://login.microsoftonline.us/ for a GCC High tenant.
+1. Leave the **Login URL** as is  for commercial and GCC tenants, and change it to https://login.microsoftonline.us/ for a GCC High or DoD tenant.
 
-1. Set the **Resource URL** to https://manage.office.com for a commercial tenant, https://manage-gcc.office.com for a GCC tenant, and https://manage.office365.us for a GCC high tenant.
+1. Set the **Resource URL** to https://manage.office.com for a commercial tenant, https://manage-gcc.office.com for a GCC tenant, https://manage.office365.us for a GCC high tenant and https://manage.protection.apps.mil for a DoD tenant.
 
 1. Copy the **Redirect URL** into your text document in Notepad.
 
 1. Select **Update Connector**.
 
 > [!NOTE]
-> If you have a [data loss prevention (DLP) policy](../../admin/wp-data-loss-prevention.md) configured for your CoE Starter Kit environment, you'll need to add this connector to the business data&ndash;only group of this policy. 
+> If you have a [data loss prevention (DLP) policy](../../admin/wp-data-loss-prevention.md) configured for your CoE Starter Kit environment, you'll need to add this connector to the business data&ndash;only group of this policy.
 
 ### Update Azure AD app registration with the redirect URL
 
@@ -148,7 +147,7 @@ Go back to the custom connector to set up a connection to the custom connector a
 
    ![Custom connector Start Subscription.](media/coe43.png "Custom connector Start Subscription")
 
-1. Paste the **directory (tenant) ID**&mdash;copied earlier from the **App Registration** overview page in Azure AD&mdash;into the **Tenant** field, and then paste the **application (client) ID** into **PublisherIdentifier**.
+1. Paste the **directory (tenant) ID**&mdash;copied earlier from the **App Registration** overview page in Azure AD&mdash;into the **Tenant** field, and then paste the **Tenant ID** into **PublisherIdentifier**.
 
 1. Select **Test Operation**.
 
@@ -177,8 +176,9 @@ A Power Automate flow uses the custom connector, queries the audit log daily, an
 1. Establish connections to activate your solution. If you create a new connection, you must select **Refresh**. You won't lose your import progress.
     ![Import the CoE audit log components solution.](media/coe-custom2.png "Import the CoE audit log components solution")
 
-1. Open the **Center of Excellence – Audit Log solution**, and select **Admin \| \[Child\] Admin | Sync Logs**.
-
+1. Open the **Center of Excellence – Audit Log solution**.
+1. [Remove the unmanaged layer](setup.md#installing-updates) from the **Admin \| \[Child\] Admin | Sync Logs**.
+1. Select the **Admin \| \[Child\] Admin | Sync Logs**.
 1. Edit the **Run only users** settings.
 
    ![Child flow - run only users.](media/coe49.png "Child flow - run only users")
@@ -200,7 +200,7 @@ A Power Automate flow uses the custom connector, queries the audit log daily, an
     |TimeSegment-CountLimit | Must be a whole number to represent the limit on the number of chunks that can be created.<br> Default value: 60 |
 
     > [!IMPORTANT]
-    > We cannot assist in your attempts to configure these, they have been added as a courtesy for you to test and find settings that work for you. The default values provided work in a medium sized tenant.
+    > The default values provided work in a medium sized tenant. You may have to adjust the values multiple times for this to work for your tenant size.
 
     > [!IMPORTANT]
     > Learn how to about environment variables: [Update Environment Variables](limitations.md#updating-environment-variables)
