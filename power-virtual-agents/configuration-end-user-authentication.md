@@ -122,7 +122,7 @@ Your bot's **authentication option** and **Require user to sign in** combination
   - If your authentication setting is configured to **Manual**, and the service provider is either **Azure Active Directory** or **Azure Active Directory V2**, you can enable the **Require users to sign in** option to control who can chat with the bot in your organization via bot sharing.
   - If your authentication provider is set as **Generic OAuth 2**, you can toggle the **Require users to sign in** option. When turned on, a user who signs in can chat with the bot, but you cannot control which specific users are allowed to chat with the bot in your organization with bot sharing. 
 
-**Share** at the top of the bot's homepage will show everyone can chat with the bot when the bot's authentication configuration can't control who can chat with the bot in the organization.
+When a bot's authentication option can't control who can chat with the bot, selecting **Share** on the bot's homepage will inform you that anyone can chat with the bot.
 
 :::image type="content" source="media/sharing-security-groups/auth-allow-everyone-chat-with-bot.PNG" alt-text="Everyone in the organization can chat with bot because of authentication setting.":::
 
