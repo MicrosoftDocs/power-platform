@@ -27,18 +27,13 @@ The following sections present detailed characteristics and capabilities of an o
 
 ## Strategy and Vision
 
-
-<!-- Note that the Goals and Opportunities article called level 500 the "Efficient" stage. -->
-
-
-
 | Level | State of Strategy and Vision |
 |----------|-----------|
 | 100: Initial | <ul><li>Innovation driven by business areas (bottom up)</li><li>Low-complexity scenarios</li><li>Limited reuse</li><li>Undefined strategy</li></ul> |
 | 200: Repeatable | <ul><li>Common vision between IT and business</li><li>Demand-management process</li></ul> |
 | 300: Defined | <ul><li>Dedicated Power Platform product owner</li><li>Bottom-up and top-down innovation</li><li>Defined understanding of Power Platform’s role in your organization’s IT portfolio</li></ul> |
 | 400: Capable | <ul><li>Established [Center of Excellence](/power-platform/guidance/adoption/coe) team</a></li><li>Increased delivery efficiency supports rapidly changing business needs</li><li>Business plans shared across departments</li></ul> |
-| 500: Leading | <ul><li>Power Platform is key part of the digital transformation strategy</li><li>Vision and strategy understood by all</li><li>Organization-wide initiatives deliver larger-scale apps</li><li>Enterprise architecture decisions include Power Platform capabilities</li></ul> |
+| 500: Efficient | <ul><li>Power Platform is key part of the digital transformation strategy</li><li>Vision and strategy understood by all</li><li>Organization-wide initiatives deliver larger-scale apps</li><li>Enterprise architecture decisions include Power Platform capabilities</li></ul> |
 
 ## Business Value
 
@@ -48,7 +43,7 @@ The following sections present detailed characteristics and capabilities of an o
 | 200: Repeatable | <ul><li>No formal business value assessment</li><li>Business cases understood but lacking review</li></ul> |
 | 300: Defined | <ul><li>Key performance indicators (KPIs) understood, operationalized, reported on, and reviewed against goals</li><li>Ideas with the highest business value are chosen for development</li><li>Business pain points are quantified before project start and compared after finish</li></ul> |
 | 400: Capable | <ul><li>Precise quantitative and qualitative measures used to effectively control, predict, and improve business efficiency</li><li>[CoE Starter Kit and Innovation Backlog](/power-platform/guidance/coe/use-innovationbacklog) or equivalent tooling for measuring business value adopted</li></ul> |
-| 500: Leading | <ul><li>“Big picture” analytics visualize business value of Power Platform solutions all-up and per business area</li><li>Advanced dashboard and reporting provide decision-making capabilities and measure business value</li><li>Executive visibility of business value and impact of Power Platform solutions</li></ul> |
+| 500: Efficient | <ul><li>“Big picture” analytics visualize business value of Power Platform solutions all-up and per business area</li><li>Advanced dashboard and reporting provide decision-making capabilities and measure business value</li><li>Executive visibility of business value and impact of Power Platform solutions</li></ul> |
 
 ## Admin and Governance
 
@@ -58,7 +53,7 @@ The following sections present detailed characteristics and capabilities of an o
 | 200: Repeatable | <ul><li>[Power Platform service admin](/power-platform/admin/overview-role-powerapps-admin) role assigned to specific administrators</li><li>Default environment covered by [DLP controls](/power-platform/admin/wp-data-loss-prevention)</a></li><li>Tenant Isolation configured</li><li>[CoE Starter Kit - Core Module](/power-platform/guidance/coe/core-components) adopted to gain tenant-wide insights of existing usage</li></ul> |
 | 300: Defined | <ul><li>[Defined environment, DLP, and request management strategies](/power-platform/guidance/adoption/environment-strategy)</li><li>[Monitoring of app usage](/power-platform/guidance/adoption/resource-usage) and adoption</li><li>[Monitoring of new connectors](/power-platform/guidance/adoption/new-connectors), to update DLP policies</li><li>[License, capacity, and consumption monitoring](/power-platform/guidance/adoption/capacity-and-licenses) informs decision making</li><li>[Tiered approach to productivity environments](/power-platform/guidance/adoption/environment-strategy) based on maker maturity</li><li>Custom environments are used for specific use cases and ALM scenarios</li></ul> |
 | 400: Capable | <ul><li>Overshared, unused, and orphaned resources are identified and appropriate actions are taken</li><li>Reactive governance to automatically gather business and compliance information</li><li>[CoE Starter Kit - Governance Module](/power-platform/guidance/coe/governance-components) adopted to gain compliance insights and archive resources</li><li>Telemetry helps identify business-critical apps</li><li>Power Platform Operations team looks after tenant hygiene</li><li>Maker responsibilities are clearly defined and understood and automatically communicated</li></ul> |
-| 500: Leading | <ul><li>Further automation takes place through chatbots embedded in Teams &#8211; through clear risk profiles, tasks are auto-approved or routed through multi-step approval processes (for example, line manager, information security department, environment or tenant admin)</li><li>Practices that worked in their organization are shared externally at Microsoft or  community events</li></ul> |
+| 500: Efficient | <ul><li>Further automation takes place through chatbots embedded in Teams &#8211; through clear risk profiles, tasks are auto-approved or routed through multi-step approval processes (for example, line manager, information security department, environment or tenant admin)</li><li>Practices that worked in their organization are shared externally at Microsoft or  community events</li></ul> |
 
 ## Support
 
@@ -68,7 +63,7 @@ The following sections present detailed characteristics and capabilities of an o
 | 200: Repeatable | <ul><li>Community support</li><li>Some degree of commitment and governance measures to manage solution lifecycle stages</li></ul>|
 | 300: Defined | <ul><li>Support strategy involves Helpdesk</li><li>Defined risk profile dictates the level of support a solution will receive (for example, IT supported, IT blessed, maker supported)</li></ul> |
 | 400: Capable | <ul><li>Dedicated support team</li><li>Continuous improvement plans in line with business strategy</li><li>Clearly understood roles and responsibilities</li></ul>|
-| 500: Leading |<ul><li>Automation of support activities (for example, change ownership, bot for FAQ)</li><li>Responsibilities and ownership to build and operate solutions are fully understood</li></ul> |
+| 500: Efficient |<ul><li>Automation of support activities (for example, change ownership, bot for FAQ)</li><li>Responsibilities and ownership to build and operate solutions are fully understood</li></ul> |
 
 ## Nurture and Citizen Makers
 
@@ -78,7 +73,7 @@ The following sections present detailed characteristics and capabilities of an o
 | 200: Repeatable | <ul><li>[On-boarding strategy](/power-platform/guidance/adoption/onboard-makers) for new makers</li><li>Some staff have participated in a [hackathon](/power-platform/guidance/adoption/hackathons)</li><li>Makers become ambassadors across their departments and evangelize the capabilities</li></ul>|
 | 300: Defined |<ul><li>Makers provide insights into business pain points</li><li>[Training and upskilling](/power-platform/guidance/adoption/training-strategy) strategy for makers</li><li>Internal [champions](/power-platform/guidance/adoption/champions) community</li><li>[CoE Starter Kit - Nurture Module](/power-platform/guidance/coe/nurture-components) adopted</li></ul> |
 | 400: Capable |<ul><li>Regular events for champions</li><li>Regular hackathons</li><li>Maker assessments and certificates</li><li>Sharing and celebrating [success stories](/power-platform/guidance/adoption/show-and-tell)</li><li>Show &amp; Tell sessions</li><li>Adoption campaign</li></ul> |
-| 500: Leading |<ul><li>Large internal community with proven value</li><li>Career path for makers</li><li>Community of mentors</li><li>Common development strategy and goals for citizen and pro developers</li></ul> |
+| 500: Efficient |<ul><li>Large internal community with proven value</li><li>Career path for makers</li><li>Community of mentors</li><li>Common development strategy and goals for citizen and pro developers</li></ul> |
 
 ## Automation
 
@@ -88,7 +83,7 @@ The following sections present detailed characteristics and capabilities of an o
 | 200: Repeatable | <ul><li>Processes are standardized, but implemented manually</li></ul>|
 | 300: Defined | <ul><li>Environment and DLP connector policy requests are automated</li><li>Apps are deployed manually, but using solutions</li><li>Communication about processes and compliance between admin and makers is automated</li></ul>|
 | 400: Capable | <ul><li>ALM processes are defined and implemented centrally</li><li>Admin tasks to identify overshared, unused, and orphaned resources are largely automated</li><li>Governance tasks to gather compliance and support information are automated</li></ul>|
-| 500: Leading |<ul><li>ALM processes are owned by each Fusion team</li><li>Environment Lifecycle Management is automated</li><li>[CoE Starter Kit – ALM Accelerator](/power-platform/guidance/coe/almaccelerator-components) is adopted</li></ul> |
+| 500: Efficient |<ul><li>ALM processes are owned by each Fusion team</li><li>Environment Lifecycle Management is automated</li><li>[CoE Starter Kit – ALM Accelerator](/power-platform/guidance/coe/almaccelerator-components) is adopted</li></ul> |
 
 ## Fusion Teams
 
@@ -98,7 +93,7 @@ The following sections present detailed characteristics and capabilities of an o
 | 200: Repeatable | <ul><li>Teams review and ratify each other’s work</li><li>Pro devs pilot high-value use cases</li></ul>  |
 | 300: Defined | <ul><li>Teams plan work as a team, but operate independently</li><li>Teams manage source control and app lifecycles</li><li>[Standard libraries, custom connectors and components](/power-platform/guidance/adoption/reusable) to be consumed by makers</li></ul> |
 | 400: Capable | <ul><li>Cross-functional teams plan and execute work jointly, including makers, testers, and operational teams.</li><li>Collaborative planning for infrastructure and change enablement</li><li>Use of Common Data Model to aid data reuse</li></ul>|
-| 500: Leading |<ul><li>Teams form seamlessly to accommodate cross-functional skills</li><li>Common development strategy and goals for citizen and pro developers needed for new projects</li></ul>  |
+| 500: Efficient |<ul><li>Teams form seamlessly to accommodate cross-functional skills</li><li>Common development strategy and goals for citizen and pro developers needed for new projects</li></ul>  |
 
 > [!NOTE]
 > You can [download a printable version](https://go.microsoft.com/fwlink/?linkid=2174946) of the Power Platform adoption maturity model.

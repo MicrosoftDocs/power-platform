@@ -27,10 +27,6 @@ Let’s now look in detail at the five stages of the model and the opportunities
 
 ### Opportunities
 
-
-<!-- editor comment: The images in each of these phases don't add anything because they're too small to read. -->
-
-
 :::row:::
    :::column span="":::
       ![Organize training events](media/adoption-1.png "Organize training events")
@@ -50,11 +46,7 @@ Let’s now look in detail at the five stages of the model and the opportunities
 
 *This phase describes a process that is at least documented sufficiently such that repeating the same steps may be attempted.* In the context of Microsoft Power Platform, organizations in the Repeatable stage are taking what they’ve learned in the Initial stage to put structure around the deployment of Power Platform, often through controls implemented by a central IT team or other team focused on Power Platform.  
 
-
-<!-- It might help to link CoE Starter Kit to a page that explains what it is. -->
-
-
-The Center of Excellence (CoE) Starter Kit is deployed to provide tenant-wide visibility into the use of Power Platform and begin to identify, if not control, applications that are beginning to become broadly used in the organization. Environments are used as needed, but in an ad hoc manner—for example, various production environments and different DLP policies might be created without a consistent strategy. These organizations sometimes believe that the use of Power Platform is running “out of control” until they shape their use of the administrative and governance controls available for Power Platform, transitioning to the Defined stage.
+The [Center of Excellence (CoE) Starter Kit](https://aka.ms/coestarterkit) is deployed to provide tenant-wide visibility into the use of Power Platform and begin to identify, if not control, applications that are beginning to become broadly used in the organization. Environments are used as needed, but in an ad hoc manner—for example, various production environments and different DLP policies might be created without a consistent strategy. These organizations sometimes believe that the use of Power Platform is running “out of control” until they shape their use of the administrative and governance controls available for Power Platform, transitioning to the Defined stage.
 
 ### Opportunities
 
@@ -118,11 +110,7 @@ Create [shared component libraries](/power-platform/guidance/adoption/reusable) 
 
 ## Level 500 – Efficient
 
-
-<!-- Editor question: This paragraph mentions a "Leading" stage, which isn't one of the five stages in this topic. Should there be an explanation of it, or a link to what it is? -->
-
-
-*This phase describes a process that is quantitatively managed in accordance with agreed-upon metrics.*  In the context of Microsoft Power Platform, in the Efficient stage the organization has proven the capabilities of Power Platform to rapidly transform mission-critical capabilities.  Standardized, automated processes and an established community of experts allow new digitization opportunities to be implemented rapidly, allowing the organization to recognize value quickly and begin to integrate more advanced capabilities, such as AI. Fusion teams enable legacy capabilities and modern cloud architecture to be used easily within Power Platform, unlocking broad use of existing data and automation. In organizations at the Leading stage, Power Platform is a key part of the digital transformation strategy and enterprise architecture in the organization. Organizations at this stage have exec sponsorship for Power Platform. Organizations at the Leading stage influence best practices in the community and drive new uses of Power Platform.
+*This phase describes a process that is quantitatively managed in accordance with agreed-upon metrics.*  In the context of Microsoft Power Platform, in the Efficient stage the organization has proven the capabilities of Power Platform to rapidly transform mission-critical capabilities.  Standardized, automated processes and an established community of experts allow new digitization opportunities to be implemented rapidly, allowing the organization to recognize value quickly and begin to integrate more advanced capabilities, such as AI. Fusion teams enable legacy capabilities and modern cloud architecture to be used easily within Power Platform, unlocking broad use of existing data and automation. In organizations at the Efficient stage, Power Platform is a key part of the digital transformation strategy and enterprise architecture in the organization. Organizations at this stage have exec sponsorship for Power Platform. Organizations at the Efficient stage influence best practices in the community and drive new uses of Power Platform.
 
 ### Opportunities
 
