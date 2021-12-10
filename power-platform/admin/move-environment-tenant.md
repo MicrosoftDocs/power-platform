@@ -37,11 +37,12 @@ There are no user interface changes or version changes as part of this move. You
 
 > [!IMPORTANT]
 > If moving individual environments from one tenant to another requires a geographical region change, your tenant becomes a multiregional tenant. Regional features are enabled in the Power Platform admin center by support team. More information: [Geo to geo migrations](geo-to-geo-migrations.md).
-
 > 
 > You might need to reconfigure some applications and settings after tenant-to-tenant migration, such as Microsoft Dynamics 365 for Outlook, server-side sync, SharePoint integration, or others.
 >
 > Geographical region changes are not supported into or out of US GCC, US GCC High, US DoD, OCE, IND, or China.
+> 
+> Existing source DB backups will not be migrated to destination tenant.
 
 ### Supported applications and platforms
 
@@ -218,9 +219,9 @@ If the Marketing app is deployed in the tenant, ensure that the necessary licens
 
 After moving environments to another tenant:
 
-- The [organization ID (OrgID)](determine-org-id-name.md) in the target tenant cannot be set to the same organization ID as in the source tenant. This is not supported.
 - The environment URL, organization ID (OrgID), and the name do not change.
 - The source environment will not be accessible.
+- Users not included in maping file will not be migrated and mapped post migration.
 - Security group mapping is handled as part of the manual tenant-to-tenant migration process. At the very least, a security group replacement (or removal) will be needed because the security group won't exist with the same organization ID in the new Azure AD tenant.
 
 ## How the move works
