@@ -126,7 +126,6 @@ When a bot's authentication option can't control who can chat with the bot, sele
 
 :::image type="content" source="media/sharing-security-groups/auth-allow-everyone-chat-with-bot.PNG" alt-text="Everyone in the organization can chat with bot because of authentication setting.":::
 
-
 ## Register a new app with your identity provider when using Manual (for any channel including Teams)
 
 You need to register a new app with your identity provider and get a Client ID and Client Secret before you can configure a manual authentication in Power Virtual Agents. This section describes how to do that with the [Azure portal](https://portal.azure.com) for Azure AD. If you have a different identity provider, you should consult its setup instructions.
