@@ -2,7 +2,7 @@
 title: "Migrate an environment to a different tenant"
 description: "Learn about the impact of moving an environment from one tenant to another. Review the prerequisites and considerations before submitting a request." 
 ms.custom: ""
-ms.date: 12/01/2021
+ms.date: 12/10/2021
 ms.service: power-platform
 ms.suite: ""
 ms.tgt_pltfrm: ""
