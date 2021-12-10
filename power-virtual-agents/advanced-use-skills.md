@@ -30,12 +30,12 @@ Power Virtual Agents enables you to extend your bot using Microsoft Bot Framewor
 - [Review restrictions and validation for skills used in Power Virtual Agents](/azure/bot-service/skill-pva)
 
 
-## Add a Skill to bot conversations
-First, [create a Power Virtual Agents bot](authoring-first-bot.md) and [create and deploy the Skill using pro-code tools](https://go.microsoft.com/fwlink/?linkid=2110533) into your organization.
+## Add a skill to bot conversations
+First, [create a Power Virtual Agents bot](authoring-first-bot.md) and [create and deploy the skill using pro-code tools](https://go.microsoft.com/fwlink/?linkid=2110533) into your organization.
 
 Next, [register a skill in Power Virtual Agents](configuration-add-skills.md).
 
-**Add a Skill into a conversation:**
+**Add a skill into a conversation:**
 
 1. Go to the [**Topics page**](authoring-create-edit-topics.md) for the bot you want to edit.
 
@@ -55,7 +55,7 @@ Next, [register a skill in Power Virtual Agents](configuration-add-skills.md).
 
 1. Select **Save** to persist your changes to the topic.
 
-1. You should [test your bot](authoring-test-bot.md) to make sure it's using the Skill properly.
+1. You should [test your bot](authoring-test-bot.md) to make sure it's using the skill properly.
 
 
 

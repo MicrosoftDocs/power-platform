@@ -2,7 +2,7 @@
 title: "Use Bot Framework Composer with chatbots"
 description: "Use Bot Framework Composer to add Adaptive Cards, multi-select options, and more to your Power Virtual Agents chatbot."
 keywords: "composer, adaptive card"
-ms.date: 5/24/2021
+ms.date: 12/02/2021
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -41,7 +41,8 @@ Custom dialogs added with Bot Framework Composer are deployed, hosted, and execu
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 
 ## Access Bot Framework Composer from within Power Virtual Agents 
-1. Go to the **Topics** tab for the bot you want to edit and select **+ New topic**.
+
+1. Go to the **Topics** tab for the bot you want to edit and select the down-arrow symbol next to **+ New topic**.
 
 2. Select **Open in Bot Framework Composer** from the dropdown menu. 
 
@@ -63,7 +64,7 @@ During installation, make sure to unselect the **Run Bot Framework Composer** ch
 
 :::image type="content" source="media/Composer_InstallWizardFinish.png" alt-text="Bot Framework Composer Install Complete.":::
 
-Go back to the  Power Virtual Agents **Topics** page and select **+ New topic**. Select **Open in Bot Framework Composer** in the dropdown menu and then **Open Composer** to open your bot in Composer.
+Go back to the Power Virtual Agents **Topics** page and select the down-arrow symbol next to **+ New topic**. Select **Open in Bot Framework Composer** in the dropdown menu and then **Open Composer** to open your bot in Composer.
 
 
 >[!NOTE]
@@ -94,15 +95,15 @@ There are few key guidelines to follow when using Composer to create your bot co
 
 :::image type="content" source="media/Composer_Guidelines/Gd_PVA_Topics.png" alt-text="Bot Framework Composer - Power Virtual Agents topics.":::
 
-- You can call Power Virtual Agents topics in Composer by using the **Begin a PVA Topic** action.
+- Use the **Begin a Power Virtual Agents Topic** to call Power Virtual Agents topics in Composer.
 
 :::image type="content" source="media/Composer_Guidelines/Gd_call_PVA_Topic.png" alt-text="Bot Framework Composer - call Power Virtual Agents topics.":::
 
-- You can add new **Bot Framework triggers** of any kind to your **main (root) dialog**. You can use **Send a response**, **Ask a question**, and **Language Generation** in the new **triggers** added to **main (root) dialog**.
+- You can add new **Bot Framework triggers** of any kind to your **main (root) dialog**. You can use **Send a response** and **Ask a question** in the new **triggers** added to **main (root) dialog**.
 
 - You can't use the Regular expression recognizer (RegEx) in the **main (root) dialog**. Using the Regular expression recognizer in the **main (root) dialog** will prevent you from publishing your Composer content to Power Virtual Agents. However, you can use the Regular expression recognizer in any other Composer dialogs.
 
-- You can create new **Bot Framework dialogs** and add **events** and **triggers** of any kind to them. **Send a response**, **Ask a question**, and **Language Generation** can be used in **triggers** that belong to the new **dialogs**.
+- You can create new **Bot Framework dialogs** and add **events** and **triggers** of any kind to them. **Send a response** and **Ask a question** can be used in **triggers** that belong to the new **dialogs**.
 
 - On the **Bot Responses** tab, the **All** section should be empty (that is, the **common.lg** file should be empty). Having any assets there will result in validation errors and prevent you from publishing your Composer content to Power Virtual Agents.
 
@@ -137,8 +138,8 @@ Bot Framework Orchestrator is not supported in Composer for Power Virtual Agents
 - Custom recognizer  
 Custom recognizer is not supported in Composer for Power Virtual Agents
 
-- Bot Skills  
-Cannot invoke Bot Skills in Composer content meant for Power Virtual Agents
+- Bot skills  
+Cannot invoke Bot skills in Composer content meant for Power Virtual Agents
 
 - QnA Maker  
 This feature is not available in Composer for Power Virtual Agents
@@ -168,7 +169,7 @@ For example, create a variable called **user_city** in your Power Virtual Agents
 
 This setting makes the Power Virtual Agents variable **user_city** available in Bot Framework Composer within the **virtualagent** scope. Use the following notation to refer to it in Composer:
 
- ```JSON
+```JSON
 ${virtualagent.user_city} 
 ```
 
@@ -232,9 +233,15 @@ Selecting the log will bring up the list of warnings and errors that were encoun
 
 :::image type="content" source="media/Composer_Troubleshooting/Tl_PublishError.png" alt-text="Composer Publish - warnings and errors.":::
 
-If you encounter issues developing in Bot Framework Composer, go to [Bot Framework Composer issues on GitHub](https://github.com/microsoft/BotFramework-Composer/issues) to see the list of known issues in Composer or to [log a new Composer issue](https://github.com/microsoft/BotFramework-Composer/issues). 
 
-For troubleshooting your bot in Power Virtual Agents, refer to the [Troubleshoot your bot](advanced-flow.md#troubleshoot-your-bot) topic in Power Virtual Agents documentation.
+
+If you encounter issues developing in Bot Framework Composer, you can:
+
+- Go to [Bot Framework Composer issues on GitHub](https://github.com/microsoft/BotFramework-Composer/issues) 
+
+- See a list of known issues in Composer or [log a new Composer issue](https://github.com/microsoft/BotFramework-Composer/issues/new/choose). 
+
+To troubleshoot your bot in Power Virtual Agents, go to [Troubleshoot your bot](advanced-flow.md#troubleshoot-your-bot).
 
 ## Learn More
 
