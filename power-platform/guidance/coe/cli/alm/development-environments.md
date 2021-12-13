@@ -23,7 +23,7 @@ Each maker will need a development environment created. Advanced makers can use 
 
 ## Microsoft Power Platform for Developer Licenses
 
-One approach for organizations to manage and assign development environments to makers. To sign up for the developer plan to your organization you will may to enable viral sign-up to have the license assigned to your organization.
+One approach for organizations to manage and assign development environments to makers. To sign up for the developer plan to your organization, you may need to enable viral sign-up to have the license assigned to your organization.
 
 1. Check if ad-hoc subscriptions are enabled in your tenant
 
@@ -33,7 +33,7 @@ Connect-MsolService
 Get-MsolCompanyInformation | fl AllowAdHocSubscriptions
 ```
 
-1. If **AllowAdHocSubscriptions** is false then will need to temporarily enable AllowAdHocSubscriptions
+1. The value of **AllowAdHocSubscriptions** will need to be false, if the value it is not then you will need to temporarily enable AllowAdHocSubscriptions
 
 ```powershell
 Set-MsolCompanySettings -AllowAdHocSubscriptions $true 
@@ -53,11 +53,11 @@ Add-AllowedConsentPlans -Type Viral
 Remove-AllowedConsentPlans -Type Internal
 ```
 
-1. Once these steps are completed then complete the sign-up process using [https://powerapps.microsoft.com/developerplan/](https://powerapps.microsoft.com/developerplan/) with **Get Started Free**
+1. Complete the sign-up process using [https://powerapps.microsoft.com/developerplan/](https://powerapps.microsoft.com/developerplan/) by selecting the **Get Started Free** button
 
-1. The license type **Microsoft Power Apps for Developers** can how be [assigned to users](/microsoft-365/admin/manage/assign-licenses-to-users) or [Azure Active Groups](/azure/active-directory/enterprise-users/licensing-groups-assign)
+1. The license type **Microsoft Power Apps for Developers** can now be [assigned to users](/microsoft-365/admin/manage/assign-licenses-to-users) or [Azure Active Groups](/azure/active-directory/enterprise-users/licensing-groups-assign)
 
-1. If the AllowAdHocSubscriptions value was changed to true then can update to value to false
+1. If the AllowAdHocSubscriptions value was changed to true, then can update to value to false
 
 ```powershell
 Set-MsolCompanySettings -AllowAdHocSubscriptions $false 
@@ -67,7 +67,7 @@ Set-MsolCompanySettings -AllowAdHocSubscriptions $false
 
 ## Admin Maker Setup
 
-As Azure DevOps Administrator the following command will add the required service connection to the development environment and setup security for the user
+As Azure DevOps Services Administrator the following command will add the required service connection to the development environment and setup security for the user
 
 ```bash
 coe alm maker add \
