@@ -77,18 +77,7 @@ conceptualContent:
         text: Training on Microsoft Learn
       - url: https://www.youtube.com/user/mspowerbi
         itemType: video
-        text: Videos
-    - title: Power Pages (New!)
-      links:
-      - url: /power-bi/
-        itemType: overview
-        text: Documentation
-      - url: /learn/powerplatform/power-bi
-        itemType: learn
-        text: Training on Microsoft Learn
-      - url: https://www.youtube.com/user/mspowerbi
-        itemType: video
-        text: Videos
+        text: Videos    
     - title: Power Virtual Agents
       links:
       - url: /power-virtual-agents/
@@ -128,7 +117,7 @@ conceptualContent:
       - url: ./guidance/expressroute/overview.md
         itemType: overview
         text: Azure ExpressRoute with Power Platform
-    - title: Introducing Microsoft Power Fx
+    - title: Microsoft Power Fx
       links:      
       - url: ./power-fx/overview.md
         itemType: overview
