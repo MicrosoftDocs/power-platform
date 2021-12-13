@@ -1,6 +1,6 @@
 ---
 title: "Error Codes"
-description: #FIXME: Required; article description that is displayed in search results.
+description: "Troubleshoot error code responses from your bot."
 author: v-alarioza
 ms.author: v-alarioza
 ms.topic: troubleshooting
@@ -12,9 +12,11 @@ manager: shellyha
 ---
 # Error codes: Power Virtual Agents
 
-<!-- TODO: error in topic view -->
-<!-- TODO: topic checker -->
-<!-- TODO: bot error message -->
+You will see the following error messages as a bot response when it has encountered a problem. Your users will see a more generic message but will still include the error code. For example:
+> Sorry, the bot can't talk for a while. It’s something your admin needs to address. Error code:{ErrorCode}. Conversation ID: {Conversation ID}. Time (UTC): {time}.
+
+Errors may also appear in the [Topic Checker](authoring-topic-management.md#topic-errors) where you can easily locate and fix them.
+
 ## Error List
 
 <!-- Best viewed and edited without word wrap -->
