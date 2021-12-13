@@ -45,7 +45,7 @@ As you consider an enterprise deployment the following sections outline the key 
 
 1. [Install CoE CLI](./install.md) - How to install the CoE CLI using local host computer or via a docker container.
 
-1. [ALM Accelerator for Power Platform](./alm/overview.md) - Use CLI commands to set up and configure an environment for ALM Accelerator to enable them to achieve more within your organization.
+1. [Setup ALM Accelerator for Power Platform](./alm/overview.md) - Use CLI commands to set up and configure an environment for ALM Accelerator to enable them to achieve more within your organization.
 
 ## Getting Started
 

@@ -117,7 +117,7 @@
       - name: Set up ALM Accelerator for Makers components
         href: coe/setup-almaccelerator.md
       - name: Set up ALM Accelerator for Power Platform components
-        href: coe/setup-almacceleratorpowerplatform.md
+        href: coe/setup-almacceleratorpowerplatform-cli.md
         items:  
         - name: Configuring Deployment Configuration and Data
           href: coe/setup-almacceleratorpowerplatform-deployment-config.md

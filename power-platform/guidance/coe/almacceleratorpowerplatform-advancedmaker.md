@@ -33,21 +33,22 @@ Watch how to use the ALM Accelerator for Power Platform solution
 
 1. When prompted to create connections / grant consent create the necessary connections or accept the consent dialog.
 
-1. When prompted with the following screen enter 'https://graph.microsoft.com' for both the **Base Resource URL** and **Azure AD Resource URI**
+1. If prompted to create a HTTP with Azure AD connection, enter 'https://graph.microsoft.com' for both the **Base Resource URL** and **Azure AD Resource URI**.
 
-      ![HTTP with Azure AD configuration](media/almacceleratorpowerplatform-advancedmaker/image-20211201183325356.png "HTTP with Azure AD configuration")
+1. Select **Create** for each connection when prompted.
 
-1. The first time you open the app you will be asked to select an environment. Next time you open the app, it will remember which environment you were working on.
+1. The first time you open the app you will be asked to **select an environment**. Next time you open the app, it will remember which environment you were working on.
 
     ![Configure Settings for AA4PP](media/almacceleratorpowerplatform-components/aa4pp-environment-selection.png "Configure Settings for AA4PP")
 
 1. Once the environment is selected, the main screen will display a list of all the **unmanaged solutions** in the environment. Depending on the *user deployment settings*, your user has assigned you will be able to see the following options for each solution:
 
-    - **Commit Solution**: It commits all the changes you have done within the solution in your version control system.
-    - **Deploy Solution**: Allows you to move the changes across environment.
-    - **Choose a Profile**: Allows you to configure what **Organization**, **Project**, **Repository**, **Target Branch**, and **Environments** your solution can be deployed to.
-    - **Delete a solution**: Deletes the solution allowing you to reimport if necessary from source control again with latest changes.
-    - **Request History**: (right chevron icon): Provides a list of requests (commits and deployments) done for that solution.
+   - **Commit Solution**: It commits all the changes you have done within the solution in your version control system.
+   - **Deploy Solution**: Allows you to move the changes across environment.
+   - **Choose a Profile**: Allows you to configure what **Organization**, **Project**, **Repository**, **Target Branch**, and **Environments** your solution can be deployed to.
+   - **Delete a Solution**: Deletes the solution allowing you to reimport if necessary from source control again with latest changes.
+   - **Import a Solution**: Imports an unmanaged solution into your maker environment from source control. 
+   - **Request History**: (right chevron icon): Provides a list of requests (commits and deployments) done for that solution.
 
    ![Solution List](media/almacceleratorpowerplatform-components/aa4pp-main-screen.png "Solution List")
 

@@ -140,17 +140,20 @@ The following recording shows a sample generating an install configuration file 
 
 4. Use [Maker Setup](./maker-setup.md) to create and set up environment and solution branches in the Azure DevOps repository.
 
-Notes:
-
-1. If this is your first build pipeline, you'll need to set Pipeline Variables for your environment. At a minimum, you'll need to set **ServiceConnection** variable to your environment you have setup for validation, test, and production.
+>[!Note]
+>If this is your first build pipeline, you'll need to set Pipeline Variables for your environment. At a minimum, you'll need to set **ServiceConnection** variable to your environment you have setup for validation, test, and production.
 
 ### Read Next
 
-- [ALM Accelerator for Power Platform](/power-platform/guidance/coe/almacceleratorpowerplatform-components) - Overview for ALM
-- Manual Setup - Understand the key steps that the CLI is automating
-  - [Foundational Setup](/power-platform/guidance/coe/setup-almacceleratorpowerplatform#foundational-setup) - Foundational Setup for Manual steps automated by the CLI install command
-  - [Development Project Setup](/power-platform/guidance/coe/setup-almacceleratorpowerplatform#development-project-setup) - Documents the Manual steps that are automated by the CLI install command
-  - [Solution Setup](/power-platform/guidance/coe/setup-almacceleratorpowerplatform#solution-setup) - Documents the manual steps to set up Azure DevOps that are performed by the CLI install command
-  - [Importing Solution](/power-platform/guidance/coe/setup-almacceleratorpowerplatform#importing-the-solution-and-configuring-the-app) - Documents the manual steps to import the managed solution that are performed by the CLI install command
+- [ALM Accelerator for Power Platform](/power-platform/guidance/coe/almacceleratorpowerplatform-components) - An overview of the ALM Accelerator.
+- [Deployment Profile Setup](/power-platform/power-platform/guidance/coe/setup-almacceleratorpowerplatform-deployment-profiles) - Configuring User Settings and Deployment Profiles.
+- Manual Setup - Understand the key steps that the CLI is automating.
+  - [Foundational Setup](/power-platform/guidance/coe/setup-almacceleratorpowerplatform#foundational-setup) - Foundational Setup for Manual steps automated by the CLI install command.
+  - [Development Project Setup](/power-platform/guidance/coe/setup-almacceleratorpowerplatform#development-project-setup) - Documents the Manual steps that are automated by the CLI install command.
+  - [Solution Setup](/power-platform/guidance/coe/setup-almacceleratorpowerplatform#solution-setup) - Documents the manual steps to set up Azure DevOps that are performed by the CLI install command.
+  - [Importing Solution](/power-platform/guidance/coe/setup-almacceleratorpowerplatform#importing-the-solution-and-configuring-the-app) - Documents the manual steps to import the managed solution that are performed by the CLI install command.
+- [Deployment Configuration Settings](/power-platform/power-platform/guidance/coe/setup-almacceleratorpowerplatform-deployment-config) - Configuring solution assets for the deployment (for example, Connection References, Envionment Variables and Sharing).
+- [Pipeline Sync Setup](/power-platform/power-platform/guidance/coe/setup-almacceleratorpowerplatform-pipeline-sync) - Creating a pipeline to sync the latest YAML from the CoE Starter Kit GitHub repo.
+- [Sample Solution Setup](/power-platform/power-platform/guidance/coe/setup-almacceleratorpowerplatform-sample-solution) - Getting started with a Sample Solution using the ALM Accelerator for Power Platform.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
