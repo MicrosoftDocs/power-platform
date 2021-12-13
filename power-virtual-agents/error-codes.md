@@ -1,5 +1,5 @@
 ---
-title: #FIXME: Required; page title is displayed in search results. Include the brand.
+title: "Error Codes"
 description: #FIXME: Required; article description that is displayed in search results.
 author: v-alarioza
 ms.author: v-alarioza
@@ -8,16 +8,16 @@ ms.date: 12/06/2021
 ms.service: power-virtual-agents
 ms.reviewer: clmori
 manager: shellyha
+#Customer intent: As a bot maker, I want learn about error codes so that I can resolve issues with my bots.
 ---
 # Error codes: Power Virtual Agents
 
-<!--FIXME: #Customer intent: As a < type of user >, I want < what? > so that < why? >.-->
-## Where to view errors
 <!-- TODO: error in topic view -->
 <!-- TODO: topic checker -->
 <!-- TODO: bot error message -->
 ## Error List
 
+<!-- Best viewed and edited without word wrap -->
 | Error    | Message                                                                                                                                                   | Resolution                                                                                                                                                           |
 | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **2000** | "The user is trapped in an infinite loop. Check to make sure `{Topic Name}` reaches a logical conclusion."                                                | Topic loops indefinitely. Check the topic to ensure it reaches a logical conclusion.                                                                                 |
