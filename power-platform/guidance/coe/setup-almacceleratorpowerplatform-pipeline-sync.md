@@ -24,7 +24,7 @@ search.app:
 
 ## Pipeline Sync Setup
 
-The Pipeline Sync script was created to make synchronizing the ALM Accelerator for Power Platform' (AA4PP) pipeline templates simpler. As the pipeline templates grow and change, users are required to update the pipelines with each release of AA4PP. To simplify this process, we created another pipeline template that will automatically sync your DevOps repo with the pipeline template repo in GitHub. Follow the steps below to get started using the Pipeline Sync pipeline.
+The Pipeline Sync script was created to make synchronizing the ALM Accelerator for Power Platform' (AA4PP) pipeline templates simpler. As the pipeline templates grow and change, users are required to update the pipelines with each release of AA4PP. To simplify this process, we created another pipeline template that will automatically sync your DevOps repo with the pipeline template repo in the CoE Starter Kit GitHub repository. Follow the steps below to get started using the Pipeline Sync pipeline.
 
 1. Initially, you'll need to manually sync a copy of the pipeline templates from the [latest release](https://github.com/microsoft/coe-alm-accelerator-templates/releases). Follow the steps in the [Setup Docs](setup-almacceleratorpowerplatform.md#clone-the-yaml-pipelines-from-github-to-your-devops-instance) to clone the pipeline template repo to your DevOps repo.
 
