@@ -1,13 +1,13 @@
 ---
 title: Microsoft Power Platform Automation CoE starter kit (preview) | Microsoft Docs
 description: Microsoft Power Platform Automation CoE starter kit is designed to help organizations manage, govern, and scale automation platform adoption based on industry best practices.
-author: rustd
+author: kathyos
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 12/8/2021
 ms.subservice: guidance
-ms.author: pranavra
+ms.author: kathyos
 ms.reviewer: deonhe
 search.audienceType: 
   - admin
@@ -22,7 +22,7 @@ search.app:
 Microsoft Power Platform Automation CoE starter kit is designed to help organizations manage, govern, and scale automation platform adoption based on industry best practices. The toolkit is a collection of components and tools based on holistic enterprise automation techniques (HEAT).
 
 > [!IMPORTANT]
-> - This is a preview feature.
+> - This is a preview feature.
 > - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 > - This feature is being gradually rolled out across regions and might not be available yet in your region.
 
@@ -35,7 +35,9 @@ The key components of the Automation CoE starter kit are:
 - Microsoft Power Platform solutions for syncing data in near-real-time for ROI and SLA.
 - Apps for CoEs and makers to manage automation development projects and deployments.
 - A Power BI dashboard for makers, executive sponsors, and admins to monitor the health and business status of the automation program and projects.
- 
+
+![Diagram of CoE stakeholders and their responsibilities](./media/starter.png)
+
 ## Resources
 
 - Sign up for the [preview of Automation CoE starter kit](https://aka.ms/autocoestarterkitpreview).
