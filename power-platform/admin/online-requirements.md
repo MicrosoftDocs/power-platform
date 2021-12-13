@@ -5,7 +5,8 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/14/2021
+ms.date: 12/13/2021
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -53,7 +54,7 @@ If certain IP address ranges or individual IP addresses are blocked in the envir
 > You can search the Azure IP Ranges json file for the AzureCloud service tag for your region. For example, for Japan you'd search for "azurecloud.japaneast" and "azurecloud.japanwest" to find the list of IP addresses to allow.
 >
 > [!div class="mx-imgBorder"] 
-> ![AzureCloud service tag for region IPs](media/example-azurecloud-tag.png "AzureCloud service tag for region IPs")
+> ![AzureCloud service tag for region IPs.](media/example-azurecloud-tag.png "AzureCloud service tag for region IPs")
 
 Dynamics 365 apps use several Microsoft URLs to help provide security, services, and features. Blocking any of the required URLs will cause apps in Dynamics 365 to operate incorrectly or not at all. See: [Troubleshooting: Unblock required URLs](troubleshooting-unblock-urls-required.md).
   
@@ -63,71 +64,23 @@ If you cannot access Microsoft Dynamics 365 apps, or specific URLs fail to load 
 
 Add the following URLs to the approved list to allow traffic to proceed to these URLs.
 
-<table>
-<thead>
-  <tr>
-    <th>URL</th>
-    <th>Justification</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td>http://login.microsoftonline-p.com </td>
-    <td rowspan="6">Required for Microsoft Cloud Authentication. Includes business-to-consumer (B2C) and guest scenarios. </td>
-  </tr>
-  <tr>
-    <td>https://login.live.com </td>
-  </tr>
-  <tr>
-    <td>https://secure.aadcdn.microsoftonline-p.com    </td>
-  </tr>
-  <tr>
-    <td>https://auth.gfx.ms  </td>
-  </tr>
-  <tr>
-    <td>https://*.windows.net  </td>
-  </tr>
-  <tr>
-    <td>http://*.passport.net </td>
-  </tr>
-  <tr>
-    <td>http://*.crm#.dynamics.com </td>
-    <td rowspan="5">Required for Dynamics 365 and Dataverse environments access. Includes integration and static Content Delivery Network (CDN) content endpoints. <br /><br />Replace # in http://*.crm#.dynamics.com and https://*.crm#.dynamics.com with your region's number: <ul><li>Asia/Pacific: 5</li><li>Canada: 3 </li><li>Europe, Africa, and Middle East: 15 and 4</li><li>France: 12</li><li>Germany: 16</li><li>India: 8</li><li>Japan: 7</li><li>North America: no number</li><li>Oceania: 6</li><li>South Africa: 14</li><li>South America: 2</li><li>Switzerland: 17</li><li>UAE: 15</li><li>United Kingdom: 11</li><li>Dynamics 365 US Government: 9</li></ul></td>
-  </tr>
-  <tr>
-    <td>https://*.crm#.dynamics.com </td>
-  </tr>
-  <tr>
-    <td>https://home.dynamics.com </td>
-  </tr>
-  <tr>
-    <td>https://www.crmdynint.com  </td>
-  </tr>
-  <tr>
-    <td>https://*.azureedge.net  </td>
-  </tr>
-  <tr>
-    <td>https://*.microsoftonline.com  </td>
-    <td>Required for authentication and Microsoft 365 services such as the Microsoft 365 admin center.</td>
-  </tr>
-  <tr>
-    <td>https://go.microsoft.com  </td>
-    <td>Required for product documentation and context-sensitive help pages.   </td>
-  </tr>
-  <tr>
-    <td>https://urs.microsoft.com   </td>
-    <td>Required for Microsoft defender SmartScreen filtering.   </td>
-  </tr>
-  <tr>
-    <td>http://crl.microsoft.com/pki/crl/products/microsoftrootcert.crl  </td>
-    <td>Required for Certification Revocation List checks.    </td>
-  </tr>
-  <tr>
-    <td>https://dynamics.microsoft.com  </td>
-    <td>  </td>
-  </tr>
-</tbody>
-</table>
+|  Endpoint URL | Justification  |
+|---|---|
+| http://login.microsoftonline-p.com  | Required for Microsoft Cloud Authentication. Includes business-to-consumer (B2C) and guest scenarios.   |
+| https://login.live.com  |  |
+| https://secure.aadcdn.microsoftonline-p.com  |   |
+| https://auth.gfx.ms  |   |
+| https://*.windows.net  |    |
+| http://*.passport.net  |    |
+| https://*.crm#.dynamics.com and http://*.crm#.dynamics.com | Required for Dynamics 365 and Dataverse environments access. Includes integration and static Content Delivery Network (CDN) content endpoints. <br /><br />Replace # in http://*.crm#.dynamics.com and https://*.crm#.dynamics.com with your region's number: <ul><li>Asia/Pacific: 5</li><li>Canada: 3 </li><li>Europe, Africa, and Middle East: 15 and 4</li><li>France: 12</li><li>Germany: 16</li><li>India: 8</li><li>Japan: 7</li><li>North America: no number</li><li>Oceania: 6</li><li>South Africa: 14</li><li>South America: 2</li><li>Switzerland: 17</li><li>UAE: 15</li><li>United Kingdom: 11</li><li>Dynamics 365 US Government: 9</li>   |
+| https://www.crmdynint.com  |    |
+| https://*.azureedge.net  |    |
+| https://*.microsoftonline.com  | Required for authentication and Microsoft 365 services such as the Microsoft 365 admin center.   |
+| https://go.microsoft.com  | Required for product documentation and context-sensitive help pages.    |
+| https://urs.microsoft.com  |  Required for Microsoft defender SmartScreen filtering.    |
+| http://crl.microsoft.com/pki/crl/products/microsoftrootcert.crl  | Required for Certification Revocation List checks.    |
+| https://dynamics.microsoft.com |    |
+| https://*.api.powerplatform.com | Required for Power Platform API connectivity used internally by Microsoft products as well as admin automation scenarios as  [documented here](programmability-extensibility-overview.md).
 
 ## Ports
 Dataverse exposes ports *18085* and *8085* to perform maintenance operations for customer databases.  The maintenance operations are executed to ensure that Microsoft Dynamics 365 environments are performing at optimal performance standards.  These maintenance operations include but are not limited to: 

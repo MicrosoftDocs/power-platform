@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 06/01/2021
+ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -24,7 +25,7 @@ As an admin, you'll want to use the insights you gather to drive action, such as
 
 You can use the App license assessment page to view apps that use premium or standard features and drill down into connectors, departments or makers that are using premium connectors.
 
-![Apps License Assessment](media/pb-22.png "Apps License Assessment")
+![Apps License Assessment.](media/pb-22.png "Apps License Assessment")
 
 ## App risk assessment
 
@@ -58,7 +59,7 @@ Set **Shared with Everyone** to **True**, or select the **Number of Shared Users
 
 - Often apps are shared with the entire organization because it's the easy option. If the app is for a single department, job role, or group of people, you can help the maker by setting up an Azure Active Directory (Azure AD) group to share their app. Otherwise, (a) Your entire org will see the app in the Power Apps mobile player or on make.powerapps.com (even if it's not relevant to them), and (b) If a user doesn't have access to the underlying data source, they'll receive an error message when they try to open the app, which can cause an increase in support tickets and confusion.
 
-- Apps shared with a large number of individual users pose a different risk: if the app is for a specific job role or department, when a user leaves the department or job role they'll still see the app and be able to access the information. Therefore, we recommend sharing role-specific apps with an Azure AD group instead.
+- Apps shared with a large number of individual users pose a different risk: if the app is for a specific job role or department, when a user leaves the department or job role they'll still see the app and be able to access the information. Therefore, it is recommended to share role-specific apps with an Azure AD group instead.
 
 ### Identify orphaned apps
 
@@ -74,7 +75,7 @@ Orphaned apps, where the app owner has left the organization, will still work fo
 
 Select **SQL Server** in the **Connector** drop-down on the rightmost filter pane to find apps that use the SQL Server Connector.
 
-![Apps Risk Assessment](media/pb-15.png "Apps Risk Assessment")
+![Apps Risk Assessment.](media/pb-15.png "Apps Risk Assessment")
 
 ## Flows risk assessment
 
@@ -122,7 +123,7 @@ Select **SQL Server** in the **Connector** drop-down list on the rightmost filte
 
 Select actions or connectors you're interested in from the **Connector** and **Action** lists on the rightmost side of this page to find flows that use those connectors or actions.
 
-![Flows Risk Assessment ](media/pb-25.png "Flows Risk Assessment")
+![Flows Risk Assessment .](media/pb-25.png "Flows Risk Assessment")
 
 ## Desktop flows risk assessment
 
@@ -142,7 +143,7 @@ Some typical assessments an admin might perform are described in the following s
 
 Select **Blank** in the **Owner** drop-down list on the rightmost filter pane to find orphaned flows.
 
-![Desktop flows Risk Assessment ](media/pb-26.png "Desktop flows Risk Assessment")
+![Desktop flows Risk Assessment .](media/pb-26.png "Desktop flows Risk Assessment")
 
 ## App and Flow Archive
 
@@ -156,10 +157,10 @@ Using the CoE dashboard, admins also have the ability to identify unused apps an
 
 :::row:::
    :::column span="":::
-      ![Power Apps Archive](media/pb-16.png "Power Apps Archive")
+      ![Power Apps Archive.](media/pb-16.png "Power Apps Archive")
    :::column-end:::
    :::column span="":::
-      ![Power Automate Archive](media/pb-24.png "Power Automate Archive")
+      ![Power Automate Archive.](media/pb-24.png "Power Automate Archive")
    :::column-end:::
 :::row-end:::
 
@@ -177,11 +178,11 @@ The **Archive Score** is the sum of multiple criteria:
 
 A [tooltip](/power-bi/desktop-tooltips) shows additional details like the number of launches and last launched date.
 
-![App Archive](media/pb-33.png "App Archive")
+![App Archive.](media/pb-33.png "App Archive")
 
 Right-click to select a specific app, and then select **Drill through** >  **App Detail** to open the detail page for the selected app.
 
-![Go to the app detail page](media/pb-32.png "Go to the app detail page")
+![Go to the app detail page.](media/pb-32.png "Go to the app detail page")
 
 The **Flow Archive** page is sorted by highest archive score. You can target specific makers, date ranges, environments, departments, or connectors.
 
@@ -201,7 +202,7 @@ The **Archive Score** is the sum of multiple criteria:
 
 A tooltip shows additional details like the number of launches and last launched date, in addition to the scores for the above criteria.
 
-![Flow Archive](media/pb-24.png "Flow Archive")
+![Flow Archive.](media/pb-24.png "Flow Archive")
 
 The **desktop flow Archive** page is sorted by highest archive score. You can target specific makers, date ranges, environments, departments, or connectors.
 
@@ -217,7 +218,7 @@ The **Archive Score** is the sum of multiple criteria:
 
 A tooltip shows additional details like the number of launches and last launched date, in addition to the scores for the above criteria.
 
-![Desktop flow Archive](media/pb-27.png "Desktop flow Archive")
+![Desktop flow Archive.](media/pb-27.png "Desktop flow Archive")
 
 By right-clicking to select a specific flow and going to **Drill through** > **Flow Detail**, you can open the detail page for the selected flow.
 
@@ -235,7 +236,7 @@ With the embedded app, you don't have to leave the Power BI dashboard to take ac
 
 - After you've granted yourself ownership, you can open the maker portal to view the version number.
 
-![App Details](media/pb-30.png "App Details")
+![App Details.](media/pb-30.png "App Details")
 
 ### Flow Detail
 
@@ -253,13 +254,13 @@ With the embedded app, you don't have to leave the Power BI dashboard to take ac
 
 - After you've granted yourself ownership, you can open the maker portal to view flow analytics and details.
 
-![Flow Details](media/pb-31.png "Flow Details")
+![Flow Details.](media/pb-31.png "Flow Details")
 
 ### Desktop flow Detail
 
 The **desktop flow Detail** page provides you with richer information about the runs of this desktop flow. You will be able to review the run history, identify anomalies in time it takes to complete a single run, and view error codes and messages if the desktop flow has failed.
 
-![Desktop flow Details](media/pb-34.png "Desktop flow Details")
+![Desktop flow Details.](media/pb-34.png "Desktop flow Details")
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

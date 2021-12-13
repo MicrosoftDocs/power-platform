@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/17/2021
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -35,7 +36,7 @@ There are various ways to add or create a database:
 
 3. Select **+ Add database**. 
     
-    ![Add a database](./media/add-database.png)
+    ![Add a database.](./media/add-database.png)
 
 4. Enter the following, and then select **Add**.
 
@@ -52,7 +53,7 @@ There are various ways to add or create a database:
 
 2. Select **Create a database** to create the database.
 
-    ![Create database from tables](./media/create-database.png)
+    ![Create database from tables.](./media/create-database.png)
 
 ## Security model for the databases
 When a database is created, the users who have environment roles assigned to them, will continue to maintain those privileges.  

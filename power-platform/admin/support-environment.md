@@ -2,7 +2,7 @@
 title: "Manage non-production support environments in your tenant"
 description: "Learn about support environments created in your tenant by Microsoft to resolve customer issues. These non-production environments are managed by system admins."
 ms.custom: ""
-ms.date: 06/08/2020
+ms.date: 11/30/2021
 ms.reviewer: ""
 ms.service: power-platform
 ms.suite: ""
@@ -13,6 +13,7 @@ applies_to:
 author: "jimholtz"
 ms.assetid: 
 caps.latest.revision: 63
+ms.subservice: admin
 ms.author: "jimholtz"
 search.audienceType: 
   - admin
@@ -39,7 +40,7 @@ A support environment is any non-production environment of Microsoft Dataverse u
 
 - When a support environment is initially created by Microsoft, it contains no customer data or customizations.
 - System admins manage support environments in the Power Platform admin center.
-- System admins can [copy an environment](copy-environment.md) to a support environment, and then choose whether to provide a [Minimal](copy-environment.md#copy-over-everything) or a [Full](copy-environment.md#copy-over-customizations-and-schemas-only) copy of their environment.
+- System admins can [copy an environment](copy-environment.md) to a support environment, and then choose whether to provide a [Minimal](copy-environment.md#copy-over-customizations-and-schemas-only) or a [Full](copy-environment.md#copy-over-everything) copy of their environment.  
 - Prior to provisioning, system admins must consent to providing a copy of their data to Microsoft.
 
 ## Who has access to a support environment?
@@ -78,7 +79,7 @@ Yes.
 To assist with diagnosing and resolving a support issue, you must consent to the creation of a [Minimal](copy-environment.md#copy-over-everything) or a [Full](copy-environment.md#copy-over-customizations-and-schemas-only) copy of the environment with the issue. The consent form shown below records your instructions to Microsoft for the creation of a support environment. 
 
 > [!div class="mx-imgBorder"] 
-> ![Consent for support environment](./media/consent-support-environment.png "Consent for support environment")
+> ![Consent for support environment.](./media/consent-support-environment.png "Consent for support environment")
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -3,6 +3,7 @@ title: "Use segmented solutions in Power Apps"
 description: "Learn how to use solution segmentation when you distribute solution updates so that only updated entity components are included."
 keywords: 
 author: Mattp123
+ms.subservice: alm
 ms.author: matp
 manager: kvivek
 ms.custom: ""

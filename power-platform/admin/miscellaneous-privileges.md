@@ -5,7 +5,8 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/11/2020
+ms.date: 09/21/2021
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -18,10 +19,10 @@ search.app:
 
 # Miscellaneous privileges
 
-This topic provides a mapping of the security role user interface to the privilege names. Each section in this topic corresponds to a tab in the user interface (Power Platform admin center > **Environments** > [select an environment] > **Settings** > **Users + permissions** > **Security Roles** > select a role). A blank cell means that there is no privilege for that combination of entity and action.
+This topic provides a mapping of the security role user interface to the privilege names. Each section in this topic corresponds to a tab in the user interface (Power Platform admin center > **Environments** > [select an environment] > **Settings** > **Users + permissions** > **Security Roles** > select a role). A blank cell means that there is no privilege for that combination of table and action.
 
 > [!div class="mx-imgBorder"] 
-> ![Miscellaneous privileges](media/miscellaneous-privileges.png "Miscellaneous privileges")
+> ![Miscellaneous privileges.](media/miscellaneous-privileges.png "Miscellaneous privileges")
 
 ## Core Records tab
 
@@ -298,7 +299,7 @@ The following table lists the privileges shown in the security role editor misce
 <tr class="even">
 <td><p>Bulk Edit</p></td>
 <td><p>prvBulkEdit</p></td>
-<td><p></p></td>
+<td><p><a href="/powerapps/user/edit-rows">Edit multiple rows</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Change Hierarchy Security Settings</p></td>
@@ -318,7 +319,7 @@ The following table lists the privileges shown in the security role editor misce
 <tr class="even">
 <td><p>Enable or Disable User</p></td>
 <td><p>prvDisableUser</p></td>
-<td><p><a href="/power-platform/admin/create-users-assign-online-security-roles#enable-or-disable-user-accounts">Enable or disable user accounts</a></p></td>
+<td><p><a href="/power-platform/admin/create-users#enable-or-disable-user-accounts">Enable or disable user accounts</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Language Settings</p></td>
@@ -358,7 +359,7 @@ The following table lists the privileges shown in the security role editor misce
 <tr class="even">
 <td><p>Reparent user</p></td>
 <td><p>prvReparentUser</p></td>
-<td><p><a href="/power-platform/admin/create-users-assign-online-security-roles">Create users and assign security roles</a></p></td>
+<td><p><a href="/power-platform/admin/create-users">Create users</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Send Email as Another User</p></td>
@@ -405,17 +406,17 @@ The following table lists the privileges shown in the security role editor misce
 <tr class="odd">
 <td><p>Create own calendar</p></td>
 <td><p>prvCreateOwnCalendar</p></td>
-<td><p><a href="/power-platform/admin/customize-marketing-calendars">Create and customize marketing calendars</a></p></td>
+<td><p><a href="/dynamics365/marketing/customize-marketing-calendars">Create and customize marketing calendars</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Delete own calendar</p></td>
 <td><p>prvDeleteOwnCalendar</p></td>
-<td><p><a href="/power-platform/admin/customize-marketing-calendars">Create and customize marketing calendars</a></p></td>
+<td><p><a href="/dynamics365/marketing/customize-marketing-calendars">Create and customize marketing calendars</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Read own calendar</p></td>
 <td><p>prvReadOwnCalendar</p></td>
-<td><p><a href="/power-platform/admin/customize-marketing-calendars">Create and customize marketing calendars</a></p></td>
+<td><p><a href="/dynamics365/marketing/customize-marketing-calendars">Create and customize marketing calendars</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Search Availability</p></td>

@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 06/16/2021
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -112,7 +113,7 @@ An admin can grant administrative access to an environment by following these st
 2. If the environment was created by the user from the DSR request, under **Access**, **Environment admin**, select **See all**.
 
 > [!div class="mx-imgBorder"] 
-> ![Select Environment admin, See all](media/environment-admin-see-all.png "Select Environment admin, See all")
+> ![Select Environment admin, See all.](media/environment-admin-see-all.png "Select Environment admin, See all")
 
 ### Delete environments created by a user
 An admin can review and delete environments created by a specific user by following these steps:
@@ -122,7 +123,7 @@ An admin can review and delete environments created by a specific user by follow
 2. If the environment was created by the user from the DSR request, select **Delete** and then proceed with the steps to delete the environment.
 
 > [!div class="mx-imgBorder"] 
-> ![Delete environment](media/environment-delete.png "Delete environment")
+> ![Delete environment.](media/environment-delete.png "Delete environment")
 
 ### Give access to a user's environments using PowerShell
 An administrator can assign themselves (or another user within their organization) access to all environments created by a user by using the **Set-AdminEnvironmentRoleAssignment** function in the [PowerShell cmdlets for Power Apps administrators](./powerapps-powershell.md):
@@ -169,7 +170,7 @@ An administrator can delete a user's environment permissions starting from the [
 2. If your environment does not have a Dataverse database, you will see a section **Access**. Under **Access**, select either **Environment admin** or **Environment maker**, and then select **See all**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Select Environment admin, See all](media/environment-admin-see-all.png "Select Environment admin, See all")
+   > ![Select Environment admin, See all.](media/environment-admin-see-all.png "Select Environment admin, See all")
 
 3. Select a user, select **Remove** to remove their permission, and then select **Continue**.
 
@@ -378,7 +379,7 @@ If you are a member of an unmanaged tenant then you will need to follow these st
 
 2. Select **Close account** and follow the instructions to delete your account from your Azure AD tenant.
 
-    ![Select Close account](./media/powerapps-gdpr-delete-dsr/close-account.png)
+    ![Select Close account.](./media/powerapps-gdpr-delete-dsr/close-account.png)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

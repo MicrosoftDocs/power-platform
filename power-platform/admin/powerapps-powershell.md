@@ -6,7 +6,8 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 06/28/2021
+ms.date: 08/23/2021
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -57,7 +58,7 @@ To run the PowerShell cmdlets for app creators, do the following:
 1. Run PowerShell as an administrator.
 
    > [!div class="mx-imgBorder"] 
-   > ![Run PowerShell as an administrator](media/open-powershell-as-admin75.png "Run PowerShell as an administrator")
+   > ![Run PowerShell as an administrator.](media/open-powershell-as-admin75.png "Run PowerShell as an administrator")
 
 2. Import the necessary modules using the following commands:
 
@@ -77,7 +78,7 @@ To run the PowerShell cmdlets for app creators, do the following:
 
 3. If you are prompted to accept the change to *InstallationPolicy* value of the repository, accept [A] Yes to all modules by typing 'A' and pressing **Enter** for each module.
 
-   ![Accept InstallationPolicy value](media/accept-installationpolicy-value75.png "Accept InstallationPolicy value")
+   ![Accept InstallationPolicy value.](media/accept-installationpolicy-value75.png "Accept InstallationPolicy value")
 
 4. Before accessing any of the commands, you have the option to provide your credentials using the following command. These credentials are refreshed for up to ~8 hours before you're required to sign in again to continue using the cmdlets.
 
@@ -127,7 +128,7 @@ For information on Power Apps cmdlets for admins, see [Get started with PowerShe
 
 - Use Get-Help 'CmdletName' to get a list of examples.
 
-     ![Get-Help command](media/get-help-cmdlet.png "Get-Help command")
+     ![Get-Help command.](media/get-help-cmdlet.png "Get-Help command")
 
 - To cycle through the possible options for input tags, click on the tab key after typing out the dash (-) character, after the cmdlet name.
 
@@ -179,7 +180,7 @@ Get-AdminPowerAppEnvironment –EnvironmentName 'EnvironmentName'
 
 **Note**: The *EnvironmentName* field is a unique identifier, which is different from the *DisplayName* (see first and second fields in the output in the following image).
 
-![Get-AdminEnvironment command](media/get-adminenvironment.png "Get-AdminEnvironment command")
+![Get-AdminEnvironment command.](media/get-adminenvironment.png "Get-AdminEnvironment command")
 
 ### Power Apps commands
 
@@ -233,7 +234,7 @@ Get-AdminPowerApp | Select –ExpandProperty Owner | Select –ExpandProperty di
 
 You can combine native PowerShell functions with the Power Apps cmdlets to manipulate data even further. Here we use the Select function to isolate the Owner attribute (an object) from the Get-AdminApp object. We then isolate the name of the owner object by pipelining that output into another Select function. Finally, passing the second Select function output into the Group function returns a nice table that includes a count of each owner's number of apps.
 
-![Get-AdminPowerApp command](media/get-adminpowerapp.png "Get-AdminPowerApp command")
+![Get-AdminPowerApp command.](media/get-adminpowerapp.png "Get-AdminPowerApp command")
 
 #### Display the number of apps in each environment
 
@@ -241,7 +242,7 @@ You can combine native PowerShell functions with the Power Apps cmdlets to manip
 Get-AdminPowerApp | Select -ExpandProperty EnvironmentName | Group | %{ New-Object -TypeName PSObject -Property @{ DisplayName = (Get-AdminPowerAppEnvironment -EnvironmentName $_.Name | Select -ExpandProperty displayName); Count = $_.Count } }
 ```
 
-![Get-AdminPowerApp environment](media/get-adminpowerapp-environment.png "Get-AdminPowerApp environment")
+![Get-AdminPowerApp environment.](media/get-adminpowerapp-environment.png "Get-AdminPowerApp environment")
 
 #### Download Power Apps user details
 
@@ -256,10 +257,12 @@ The above command will store the Power Apps user details (basic usage informatio
 ```powershell
 Get-AdminPowerAppLicenses -OutputFilePath '<licenses.csv>'
 ```
-
 Exports all the assigned user licenses (Power Apps and Power Automate) in your tenant into a tabular view .csv file. The exported file contains both self-service sign up internal trial plans as well as plans that are sourced from Azure Active Directory. The internal trial plans are not visible to admins in the Microsoft 365 admin center.
 
 The export can take a while for tenants with a large number of Microsoft Power Platform users.
+
+> [!NOTE]
+> Output of the Get-AdminPowerAppLicenses cmdlet only includes licenses for users that have accessed Power Platform services (for example, Power Apps, Power Automate, or Power Platform admin center). Users that have had licenses assigned in Azure AD (typically via the Microsoft 365 admin center) but have never accessed Power Platform services will not have their licenses included in the generated .csv output. Furthermore, since the Power Platform licensing services caches the licenses, updates made to license assignments in Azure AD can take up to seven days to reflect in the output for users that haven't accessed the service recently.
 
 #### Set logged in user as the owner of a canvas app
 
@@ -318,7 +321,7 @@ $settings = Get-TenantSettings
 $settings.PowerPlatform.PowerApps.disableShareWithEveryone 
 ```
 
-This setting controls whether users with the Environment Maker security role can share canvas apps with '[Everyone in an organization](/powerapps/maker/canvas-apps/share-app)'. When the setting is set to ‘false’, only users with an admin role (Dynamics 365 admin, Power Platform Service admin, Azure AD tenant admin) can share apps with ‘Everyone in an organization’.  
+This setting controls whether users with the Environment Maker security role can share canvas apps with '[Everyone in an organization](/powerapps/maker/canvas-apps/share-app)'. When the setting is set to ‘true’, only users with an admin role (Dynamics 365 admin, Power Platform Service admin, Azure AD tenant admin) can share apps with ‘Everyone in an organization’.  
 
 Note, regardless of this tenant settings value makers with the sharing privilege can share apps with security groups of any size. This control only determines whether the ‘Everyone’ shorthand may be used when sharing.  
 
@@ -531,7 +534,7 @@ The governance error message URL and email can be shown independently or togethe
 |     1    |     User launches a Power Apps app that’s not DLP compliant                                                        |     Generally available    |
 |     2    |     Maker shares a Power Apps canvas app but doesn’t have share privilege                                        |     Generally available    |
 |     3    |     Maker shares a Power Apps canvas app with ‘Everyone’ but doesn’t have privilege to share with ‘Everyone’    |     Generally available    |
-|     4    |     Maker saves a Power Apps app that’s not DLP compliant                                                          |     Not yet available     |
+|     4    |     Maker saves a Power Apps app that’s not DLP compliant                                                          |     Generally available     |
 |     5    |     Maker saves a Flow that’s not DLP compliant                                                                    |     Not yet available     |
 
 #### Display governance error message content 

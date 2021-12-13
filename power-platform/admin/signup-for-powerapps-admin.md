@@ -2,12 +2,12 @@
 title: Purchase Power Apps for your organization | Microsoft Docs
 description: Provides information about how to purchase Power Apps plans.
 author: jimholtz
-ms.reviewer: manasmams
-manager: kvivek
+ms.reviewer: manasma
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/04/2020
+ms.date: 11/02/2020
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -53,7 +53,7 @@ You can purchase Power Apps subscriptions for your organization from the [Micros
 3. In the search box, enter *trial* and then select the magnifying glass.
 
    > [!div class="mx-imgBorder"] 
-   > ![Search for trial](media/purchase-services-search-trial.png "Search for trial")
+   > ![Search for trial.](media/purchase-services-search-trial.png "Search for trial")
 
 4. Choose a trial, and then select **Get free trial**. Proceed through the order confirmation.
 
@@ -72,6 +72,13 @@ You can purchase Power Apps subscriptions for your organization from the [Micros
 ## Power Apps per app plan
 
 See [About Power Apps per app plans](about-powerapps-perapp.md).
+
+## Power Apps pay-as-you-go plan
+ 
+Pay-as-you-go is a new way to pay for Power Apps using an Azure subscription which allows you to get started with building and sharing apps without any license commitment or up-front purchasing.  See [Preview: Pay-as-you-go plan](pay-as-you-go-overview.md).
+
+
+
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

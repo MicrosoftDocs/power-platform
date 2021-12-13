@@ -6,6 +6,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
 ms.date: 06/16/2021
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin 
@@ -110,7 +111,7 @@ You have multiple options when creating an environment:
 - The URL can't be that of an environment that's been [deleted](delete-environment.md) or [changed](edit-properties-environment.md) until at least 24 hours have passed since an environment deletion or change.
 
 ## Create an environment with a database
-You create a database to use Dataverse as a data store. The Dataverse is a cloud scale database used to securely store data for business applications built on Power Apps. Dataverse provides not just data storage, but a way to implement business logic that enforces business rules and automation against the data. For more information, see [Why use Dataverse?](/powerapps/maker/common-data-service/data-platform-intro#why-use-common-data-service)
+You create a database to use Dataverse as a data store. The Dataverse is a cloud scale database used to securely store data for business applications built on Power Apps. Dataverse provides not just data storage, but a way to implement business logic that enforces business rules and automation against the data. For more information, see [Why use Dataverse?](/powerapps/maker/common-data-service/data-platform-intro#why-use-dataverse)
 
 ### Prerequisites 
 To create an environment with a database, you need 1GB available database capacity.
@@ -121,7 +122,7 @@ To create an environment with a database, you need 1GB available database capaci
 2. In the navigation pane, select **Environments**, and then select **New**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Create new environment](./media/new-environment.png "Create new environment")
+   > ![Create new environment.](./media/new-environment.png "Create new environment")
 
 3. Enter the following, and then select **Next**.
 
@@ -134,7 +135,7 @@ To create an environment with a database, you need 1GB available database capaci
    |Create a database for this environment? | Select **Yes**. |
 
    > [!div class="mx-imgBorder"] 
-   > ![Create new environment settings](./media/new-environment-page1.png "Create new environment settings")
+   > ![Create new environment settings.](./media/new-environment-page1.png "Create new environment settings")
 
 4. Enter the following, and then select **Save**.
 
@@ -148,7 +149,7 @@ To create an environment with a database, you need 1GB available database capaci
    |Security group | Select a security group to restrict access to this environment. |
 
    > [!div class="mx-imgBorder"] 
-   > ![Create new environment settings](./media/new-environment-page2-enable-apps.png "Create new environment settings")
+   > ![Create new environment settings.](./media/new-environment-page2-enable-apps.png "Create new environment settings")
    
 ## Create an environment without a database 
 You can create an environment without a database and use your own data store.
@@ -162,7 +163,7 @@ You need 1GB available database capacity.
 2. In the navigation pane, select **Environments**, and then select **New**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Create new environment](./media/new-environment.png "Create new environment")
+   > ![Create new environment.](./media/new-environment.png "Create new environment")
 
 3. Enter the following, and then select **Save**.
    
@@ -175,7 +176,7 @@ You need 1GB available database capacity.
    |Create a database for this environment? | Select **No**. |
 
    > [!div class="mx-imgBorder"] 
-   > ![Create new environment settings](./media/new-environment-page1-nodb.png "Create new environment settings")
+   > ![Create new environment settings.](./media/new-environment-page1-nodb.png "Create new environment settings")
 
 ## Setting an environment refresh cadence
 You can indicate how often you would prefer an environment to receive updates and features to certain Microsoft Power Platform services. You have two options to choose from after creating an environment.
@@ -194,7 +195,7 @@ To set refresh cadence:
 3. Select **Edit**
 
    > [!div class="mx-imgBorder"] 
-   > ![Select Edit](media/select-edit.png "Select Edit")
+   > ![Select Edit.](media/select-edit.png "Select Edit")
 
 4. Under **Refresh cadence**, choose the cadence type. 
 

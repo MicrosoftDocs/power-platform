@@ -5,7 +5,8 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/06/2021
+ms.date: 11/10/2021
+ms.subservice: admin
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -48,7 +49,7 @@ Use the following methods to free up storage for each of the capacity types.
 |     | **Method 7**: Remove bulk duplicate detection jobs and associated copies of duplicate records        |
 |     | **Method 8**: Delete bulk import instances using a bulk deletion job        |
 |     | **Method 9**: Delete bulk deletion job instances using a bulk deletion job        |
-|     | **Method 11**: Remove unrequired tables and columns from Relevance Search        |
+|     | **Method 11**: Remove unrequired tables and columns from Dataverse search        |
 
 
 ## Reduce file storage
@@ -56,9 +57,9 @@ Use the following methods to free up storage for each of the capacity types.
 ### Method 3: Remove email attachments using Advanced Find  
   
 > [!WARNING]
->  If you delete this data, the attachments will no longer be available in customer engagement apps. However, if you have them saved in [!INCLUDE[pn_MS_Outlook_Full](../includes/pn-ms-outlook-full.md)], they will still be there.  
+> If you delete this data, the attachments will no longer be available in customer engagement apps. However, if you have them saved in [!INCLUDE[pn_MS_Outlook_Full](../includes/pn-ms-outlook-full.md)], they will still be there.  
   
-1. Choose **Advanced Find** (![Advanced find button](media/advanced-find-button2.png)).  
+1. In the upper-right corner, select **Advanced Find** (![Advanced find button.](media/advanced-find-button2.png)).  
   
 2. In the **Look for** list, select **Email Messages**.  
   
@@ -69,23 +70,25 @@ Use the following methods to free up storage for each of the capacity types.
    **File Size (Bytes)** – **Is Greater Than** - In the text box, type a byte value, such as 1,048,576 (this is binary for 1MB).  
  
 > [!div class="mx-imgBorder"] 
-> ![Free up storage method 3](media/free-storage-method3a.png "Free up storage method 3")  
+> ![Free up storage method 3.](media/free-storage-method3a.png "Free up storage method 3")  
  
 4. Choose **Results**.  
   
 5. You will now have a list of email messages that have attachments that are larger than 'X' bytes. Review the emails and delete the attachments as needed.  
   
 > [!div class="mx-imgBorder"] 
-> ![Free up storage method 3](media/free-storage-method3b.png "Free up storage method 3")  
+> ![Free up storage method 3.](media/free-storage-method3b.png "Free up storage method 3")  
 
 ### Method 4: Remove email messages with attachments using a bulk deletion job  
   
 > [!WARNING]
 >  If you delete this data, the email messages and their associated attachments will no longer be available in customer engagement apps. However, if you have them saved in [!INCLUDE[pn_MS_Outlook_Full](../includes/pn-ms-outlook-full.md)], they will still be there.  
   
-1. [!INCLUDE[proc_settings_datamanagement](../includes/proc-settings-datamanagement.md)]  
-  
-2. Choose **Bulk Record Deletion**, and then in the menu bar, choose **New**. This opens the Bulk Deletion Wizard.  
+1.	In the Power Platform admin center, select an environment.
+
+    For [Unified Interface](about-unified-interface.md), in the upper-right corner select Settings (![Gear button.](media/selection-rule-gear.png "Gear button")) > **Advanced Settings** > **Settings**.
+
+2.	Select **Settings** > **Data management** > **Bulk deletion**. In the menu bar, select **New**. This opens the Bulk Deletion Wizard.  
   
 3. Choose **Next**.  
   
@@ -93,7 +96,7 @@ Use the following methods to free up storage for each of the capacity types.
   
 5. In the search criteria area, add criteria similar to the following:  
   
-   **Status Reason** – **Equals** – **Completed**  
+   **Status Reason** – **Equals** – **Sent** or **Received**
   
    **Actual End** – **Older Than X Months** – 1  
   
@@ -108,7 +111,7 @@ Use the following methods to free up storage for each of the capacity types.
    2.  With both rows selected, choose **Group AND**.  
   
    > [!div class="mx-imgBorder"] 
-   > ![Free up storage method 4](media/free-storage-method4a.png "Free up storage method 4")  
+   > ![Free up storage method 4.](media/free-storage-method4a.png "Free up storage method 4")  
 
 7. Choose **Next**.  
   
@@ -121,7 +124,7 @@ Use the following methods to free up storage for each of the capacity types.
 11. If you want a notification e-mail sent, select the **Send an email to me (email@domain.com) when this job is finished** check box.  
   
 > [!div class="mx-imgBorder"] 
-> ![Free up storage method 4](media/free-storage-method6b.png "Free up storage method 4")  
+> ![Free up storage method 4.](media/free-storage-method6b.png "Free up storage method 4")  
 
 12. Choose **Next**, review the bulk deletion job, and then choose **Submit** to create the recurring job.  
   
@@ -130,7 +133,7 @@ Use the following methods to free up storage for each of the capacity types.
 > [!WARNING]
 >  If you delete this data, notes and their associated attachments will no longer be available in customer engagement apps.  
   
-1. Choose **Advanced Find**.  
+1. In the upper-right corner, select **Advanced Find** (![Advanced find button.](media/advanced-find-button2.png)).  
   
 2. In the **Look for** list, select **Notes**.  
   
@@ -139,28 +142,30 @@ Use the following methods to free up storage for each of the capacity types.
    **File Size (Bytes)** – **Is Greater Than** – In the text box, type a byte value, such as 1048576.  
 
 > [!div class="mx-imgBorder"] 
-> ![Free up storage method 5](media/free-storage-method5a.png "Free up storage method 5")
+> ![Free up storage method 5.](media/free-storage-method5a.png "Free up storage method 5")
   
 4. Choose **Results**.  
   
 5. You will now have a list of attachments that are larger than the size you specified.  
   
 > [!div class="mx-imgBorder"] 
-> ![Free up storage method 5](media/free-storage-method5b.png "Free up storage method 5")
+> ![Free up storage method 5.](media/free-storage-method5b.png "Free up storage method 5")
 
 6. Select individual or a multiple attachments, and then choose **Delete** (X).  
   
 > [!div class="mx-imgBorder"] 
-> ![Free up storage method 5](media/free-storage-method5c.png "Free up storage method 5")
+> ![Free up storage method 5.](media/free-storage-method5c.png "Free up storage method 5")
 
 ### Method 6: Remove notes with attachments using a bulk deletion job  
   
 > [!WARNING]
 >  If you delete this data, notes and their associated attachments will no longer be available in customer engagement apps.  
   
-1. [!INCLUDE[proc_settings_datamanagement](../includes/proc-settings-datamanagement.md)]  
-  
-2. Choose **Bulk Record Deletion**, and then in the menu bar, choose **New**. This opens the Bulk Deletion Wizard.  
+1.	In the Power Platform admin center, select an environment.
+
+    For [Unified Interface](about-unified-interface.md), in the upper-right corner select Settings (![Gear button.](media/selection-rule-gear.png "Gear button")) > **Advanced Settings** > **Settings**.
+
+2.	Select **Settings** > **Data management** > **Bulk deletion**. In the menu bar, select **New**. This opens the Bulk Deletion Wizard.  
   
 3. Choose **Next**.  
   
@@ -179,7 +184,7 @@ Use the following methods to free up storage for each of the capacity types.
    2.  With all three rows selected, choose **Group AND**.  
 
    > [!div class="mx-imgBorder"] 
-   > ![Free up storage method 6](media/free-storage-method6a.png "Free up storage method 6")  
+   > ![Free up storage method 6.](media/free-storage-method6a.png "Free up storage method 6")  
   
 7. Choose **Next**.  
   
@@ -192,33 +197,77 @@ Use the following methods to free up storage for each of the capacity types.
 11. If you want a notification e-mail sent, select the **Send an email to me (email@domain.com) when this job is finished** check box.  
   
 > [!div class="mx-imgBorder"] 
-> ![Free up storage method 6](media/free-storage-method6b.png "Free up storage method 6")  
+> ![Free up storage method 6.](media/free-storage-method6b.png "Free up storage method 6")  
   
 12. Choose **Next**, review the bulk deletion job, and then choose **Submit** to create the recurring job.  
 
 ## Reduce log storage
+Microsoft is migrating audit logs to a new storage location. Environments whose data migration is complete can use the new audit delete method. An environment with completed migration can be easily identified by the Auditing card visible below the Environment details.
 
-### Method 10: Delete audit logs  
+:::image type="content" source="media/audit-log-new-storage-sign.png" alt-text="Audit tile appears for new storage":::
+
+### Method 10: Delete audit logs - legacy process
 
  When you enable auditing, customer engagement apps create audit logs to store the audit history of the records. You can delete these audit logs to free space when they are no longer needed.  
   
 > [!WARNING]
 >  When you delete an audit log, you can no longer view the audit history for the period covered by that audit log.  
   
-1. [!INCLUDE[proc_settings_auditing](../includes/proc-settings-auditing.md)]  
-  
+1. In the upper-right corner of an app, select Settings (![Gear button.](media/selection-rule-gear.png "Gear button"))  > **Advanced Settings** > **Settings** > **Auditing**.
+
 2. In the **Audit** area choose **Audit Log Management**.  
   
 3. Select the oldest audit log, then choose **Delete Logs**.  
  
 > [!div class="mx-imgBorder"] 
-> ![Free up storage method 10](media/free-storage-method10a.png "Free up storage method 10")  
+> ![Free up storage method 10.](media/free-storage-method10a.png "Free up storage method 10")  
  
 4. In the confirmation message choose **OK**.  
   
 > [!NOTE]
 >  You can only delete the oldest audit log in the system. To delete more than one audit log repeat deleting the oldest available audit log until you have deleted enough logs.  
   
+### Method 10: Delete audit logs - new process
+
+Microsoft is migrating audit logs to a new storage location. Environments whose data migration is complete can use the new audit delete experience.
+
+When you enable auditing, customer engagement apps create audit logs to store the audit history of the records. You can delete these audit logs to free space when they are no longer needed.  
+
+> [!WARNING]
+> When you delete an audit log, you can no longer view the audit history for the period covered by that audit log.  
+
+1. Sign in to the Power Platform admin center, and then select an environment. 
+
+2. Under **Auditing**, select **Delete logs**.
+
+   :::image type="content" source="media/audit-log-delete.png" alt-text="Select Delete to delete audit logs.":::
+
+3. Delete audit logs to free up log storage capacity for the selected environment.
+ 
+   :::image type="content" source="media/audit-log-delete-select.png" alt-text="Select audit logs to delete.":::
+
+   |Setting  |Description  |
+   |---------|---------|
+   |**Delete logs by table**     |Select one or more tables for which you want to delete audit logs. By default all tables in the environment will be shown, whether they contain audit data or not.         |
+   |**Delete access logs by people and systems**     | Delete all access logs. This will delete all logs for all users and systems.        |
+   |**Delete all logs up to and including the selected date**     | Delete logs including the date selected.         |
+
+4. Select **Delete**, and then confirm the deletions.
+
+All data will be deleted in an asynchronous background system job. 
+
+To monitor the status of audit delete jobs, see the next section.
+
+#### Monitor the status of audit delete jobs in the Power Platform admin center
+
+1.	In the Power Platform admin center, select an environment.
+
+    For [Unified Interface](about-unified-interface.md), in the upper-right corner select Settings (![Gear button.](media/selection-rule-gear.png "Gear button")) > **Advanced Settings** > **Settings**.
+
+2.	Select **Settings** > **Data management** > **Bulk deletion**.
+
+3.	Select the system job name to open details about your delete job.
+
 
 ## Reduce database storage
 
@@ -227,9 +276,11 @@ Use the following methods to free up storage for each of the capacity types.
 > [!WARNING]
 >  If you delete this data, you will no longer be able to tell if an email was sent through bulk email or if a workflow rule ran against a record. The emails that were sent and the actions that ran against the record in the workflow will remain.  
   
-1. [!INCLUDE[proc_settings_datamanagement](../includes/proc-settings-datamanagement.md)]  
-  
-2. Choose **Bulk Record Deletion**. In the menu bar, choose **New**. This opens the Bulk Deletion Wizard.  
+1.	In the Power Platform admin center, select an environment.
+
+    For [Unified Interface](about-unified-interface.md), in the upper-right corner select Settings (![Gear button.](media/selection-rule-gear.png "Gear button")) > **Advanced Settings** > **Settings**.
+
+2.	Select **Settings** > **Data management** > **Bulk deletion**. In the menu bar, select **New**. This opens the Bulk Deletion Wizard.  
   
 3. Choose **Next**.  
   
@@ -250,7 +301,7 @@ Use the following methods to free up storage for each of the capacity types.
    2.  With all three rows selected, choose **Group AND**.  
 
    > [!div class="mx-imgBorder"] 
-   > ![Free up storage method 10](media/free-storage-method1b.png "Free up storage method 10")  
+   > ![Free up storage method 10.](media/free-storage-method1b.png "Free up storage method 10")  
   
 7. Choose **Next**.  
   
@@ -263,7 +314,7 @@ Use the following methods to free up storage for each of the capacity types.
 11. If you want a notification e-mail sent, select the **Send an e-mail to me (email@domain.com) when this job is finished** check box.  
  
 > [!div class="mx-imgBorder"] 
-> ![Free up storage method 10](media/free-storage-method6b.png "Free up storage method 10")  
+> ![Free up storage method 10.](media/free-storage-method6b.png "Free up storage method 10")  
  
 12. Choose **Next**, review the bulk deletion job, and then choose **Submit** to create the recurring job.  
   
@@ -274,7 +325,7 @@ Use the following methods to free up storage for each of the capacity types.
 > [!WARNING]
 >  Some workflows will be in a suspended state because they are waiting for a condition that has not yet been met, which is expected. For example, a workflow may be waiting for a task to be completed.  
   
-1. Choose **Advanced Find**.  
+1. In the upper-right corner, select **Advanced Find** (![Advanced find button.](media/advanced-find-button2.png)).  
   
 2. In the **Look for** list, select **System Jobs**.  
   
@@ -291,7 +342,7 @@ Use the following methods to free up storage for each of the capacity types.
    2.  With both rows selected, choose **Group AND**.  
   
    > [!div class="mx-imgBorder"] 
-   > ![Free up storage method 2](media/free-storage-method2b.png "Free up storage method 2")  
+   > ![Free up storage method 2.](media/free-storage-method2b.png "Free up storage method 2")  
 
 5. Choose **Results**.  
   
@@ -301,16 +352,18 @@ Use the following methods to free up storage for each of the capacity types.
 
  Every time that a duplicate detection job runs, a copy of each duplicate record is stored in the database as part of the duplicate detection job. For example, if you have 100 duplicate records, every time that you run a duplicate detection job that finds these duplicates, whether it is manual or reoccurring, those 100 duplicate records will be stored in the database under that instance of that duplicate job until the duplicates are merged or deleted, or until the instance of that duplicate detection job is deleted.  
   
-1. [!INCLUDE[proc_settings_datamanagement](../includes/proc-settings-datamanagement.md)]  
-  
-2. Choose **Duplicate Detection Jobs**.  
+1.	In the Power Platform admin center, select an environment.
+
+    For [Unified Interface](about-unified-interface.md), in the upper-right corner select Settings (![Gear button.](media/selection-rule-gear.png "Gear button")) > **Advanced Settings** > **Settings**.
+
+2.	Select **Settings** > **Data management** > **Duplicate Detection Jobs**.  
   
 3. Select the duplicate detection job instances you want to delete and then choose **Delete** (X).  
   
    To avoid wasting storage space, make sure duplicates are resolved promptly so that they are not reported in multiple duplicate detection jobs.  
 
 > [!div class="mx-imgBorder"] 
-> ![Free up storage method 7](media/free-storage-method7a.png "Free up storage method 7")  
+> ![Free up storage method 7.](media/free-storage-method7a.png "Free up storage method 7")  
   
 ### Method 8: Delete bulk import instances using a bulk deletion job  
 
@@ -319,9 +372,11 @@ Use the following methods to free up storage for each of the capacity types.
 > [!WARNING]
 >  After you delete these bulk import jobs, you will not be able to see what data was imported and you cannot roll back the import.  
   
-1. [!INCLUDE[proc_settings_datamanagement](../includes/proc-settings-datamanagement.md)]  
-  
-2. Choose **Bulk Record Deletion**, and then in the menu bar, choose **New**. This opens the Bulk Deletion Wizard.  
+1.	In the Power Platform admin center, select an environment.
+
+    For [Unified Interface](about-unified-interface.md), in the upper-right corner select Settings (![Gear button.](media/selection-rule-gear.png "Gear button")) > **Advanced Settings** > **Settings**.
+
+2.	Select **Settings** > **Data management** > **Bulk deletion**. In the menu bar, select **New**. This opens the Bulk Deletion Wizard.  
   
 3. Choose **Next**.  
   
@@ -342,7 +397,7 @@ Use the following methods to free up storage for each of the capacity types.
    2.  With all three rows selected, choose **Group AND**.  
  
    > [!div class="mx-imgBorder"] 
-   > ![Free up storage method 8](media/free-storage-method8a.png "Free up storage method 8")  
+   > ![Free up storage method 8.](media/free-storage-method8a.png "Free up storage method 8")  
  
 7. Choose **Next**.  
   
@@ -355,7 +410,7 @@ Use the following methods to free up storage for each of the capacity types.
 11. If you want a notification e-mail sent, select the **Send an email to me (email@domain.com) when this job is finished** check box.  
   
 > [!div class="mx-imgBorder"] 
-> ![Free up storage method 8](media/free-storage-method6b.png "Free up storage method 8")  
+> ![Free up storage method 8.](media/free-storage-method6b.png "Free up storage method 8")  
 
 12. Choose **Next**, review the bulk deletion job, and then choose **Submit** to create the recurring job.  
   
@@ -366,9 +421,11 @@ Use the following methods to free up storage for each of the capacity types.
 > [!WARNING]
 >  After you delete these jobs, you will lose the history of the prior bulk deletion jobs that you've run.  
   
-1. [!INCLUDE[proc_settings_datamanagement](../includes/proc-settings-datamanagement.md)]  
-  
-2. Choose **Bulk Record Deletion**, and then in the menu bar, choose **New**. This opens the Bulk Deletion Wizard.  
+1.	In the Power Platform admin center, select an environment.
+
+    For [Unified Interface](about-unified-interface.md), in the upper-right corner select Settings (![Gear button.](media/selection-rule-gear.png "Gear button")) > **Advanced Settings** > **Settings**.
+
+2.	Select **Settings** > **Data management** > **Bulk deletion**. In the menu bar, select **New**. This opens the Bulk Deletion Wizard.  
   
 3. Choose **Next**.  
   
@@ -392,7 +449,7 @@ Use the following methods to free up storage for each of the capacity types.
    2.  With all three rows selected, choose **Group AND**.  
 
    > [!div class="mx-imgBorder"] 
-   > ![Free up storage method 9](media/free-storage-method9a.png "Free up storage method 9")  
+   > ![Free up storage method 9.](media/free-storage-method9a.png "Free up storage method 9")  
   
 7. Choose **Next**.  
   
@@ -405,16 +462,16 @@ Use the following methods to free up storage for each of the capacity types.
 11. If you want a notification e-mail sent, select the **Send an email to me (email@domain.com) when this job is finished** check box.  
   
 > [!div class="mx-imgBorder"] 
-> ![Free up storage method 9](media/free-storage-method6b.png "Free up storage method 9")  
+> ![Free up storage method 9.](media/free-storage-method6b.png "Free up storage method 9")  
 
 12. Choose **Next**, review the bulk deletion job, and then choose **Submit** to create the recurring job.  
 
-### Method 11: Remove unrequired tables and columns from Relevance Search
+### Method 11: Remove unrequired tables and columns from Dataverse search
 
-Tables and tables fields enabled for Relevance Search have an impact on the database storage capacity. 
+Tables and tables fields enabled for Dataverse search have an impact on the database storage capacity. 
 
-- To revise the list of tables selected for Relevance Search results, see [Select entities for Relevance Search](configure-relevance-search-organization.md#select-entities-for-relevance-search).
-- To revise the list of fields selected for each table for Relevance Search results, see [Configure searchable fields for Relevance Search](configure-relevance-search-organization.md#configure-searchable-fields-for-relevance-search). 
+- To revise the list of tables selected for Dataverse search results, see [Select entities for Dataverse search](configure-relevance-search-organization.md#select-tables-for-dataverse-search).
+- To revise the list of fields selected for each table for Dataverse search results, see [Select searchable fields and filters for each table](configure-relevance-search-organization.md#select-searchable-fields-and-filters-for-each-table).
 
 ## Free up storage used by flow approvals
 

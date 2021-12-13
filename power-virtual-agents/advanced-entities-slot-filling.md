@@ -2,7 +2,7 @@
 title: "Create and use entities"
 description: "Entities can be used to streamline bot conversations by allowing custom lists, information type mapping, and proactive slot filling."
 keywords: "PVA"
-ms.date: 9/22/2020
+ms.date: 7/30/2021
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -42,15 +42,15 @@ To help understand that notion, the **Money** entity can be used as an example.
 
 1. In Power Virtual Agents, go to the **Entities** tab on the side navigation pane.
 
-   ![Entities tab](media/entities-menu.png)
+   :::image type="content" source="media/advanced-entities-slot-filling/entities-menu.png" alt-text="Go to the Entities tab.":::
 
    You'll see a list of the prebuilt entities available. 
 
-   ![Entities pane](media/entities-1(draft).png)
+   ![Entities pane.](media/entities-1(draft).png)
 
 1. Select the **Money** entity, which will open the details panel for the entity.
 
-   ![Money entity description](media/entities-2(draft).png)
+   ![Money entity description.](media/entities-2(draft).png)
 
 Here you can see an explanation of this entity and the ways it can be used to look for information related to money or currency from a user's input.
 
@@ -65,36 +65,68 @@ To do this, you need to create a custom entity. In this case, you can create an 
 
 1. In Power Virtual Agents, go to the **Entities** tab on the side navigation pane.
 
-   ![Go to Entities tab](media/entities-menu.png)
+   :::image type="content" source="media/advanced-entities-slot-filling/entities-menu.png" alt-text="Go to the Entities tab to create a new entity.":::
 
-2. Select **New custom entity** on the main menu.
+2. Select **New entity** on the main menu.
 
-   ![Select New custom entity](media/entities-new.png)
+   :::image type="content" source="media/advanced-entities-slot-filling/entities-new.png" alt-text="Select New entity.":::
 
-3. This opens the entity creation window. Enter a name for the entity.
-
-   ![Outdoor Store Categories entity](media/entities-3(draft).png)
-
-4. Provide the items that you want to be included in the entity; in this example, this is a list of outdoor product category names. You can do this by entering one item at a time in the **Enter item** input box to build out the full list. 
-
-This panel also gives you a few other options. 
-
-### Smart match
-
-This option is part of the intelligence supported by the bot's language understanding model. It provides the flexibility to let the bot take in user input in a fuzzy way based on the list items given to the entity. 
-
-Specifically, when this toggle is on, it lets the bot autocorrect misspellings and expands the matching logic semantically, such as automatically matching "softball" to "baseball". 
-
-![Smart match](media/entities-4(draft).png)
+3. This opens a panel where you can choose the type of entity: either a [**Closed list** entity](#closed-list-entities) or a [**Regular expression (regex)** entity](#regular-expression-regex-entities). 
 
 
-### Synonyms
-This option allows you to manually expand the matching logic by adding synonyms. Smart match and synonyms seamlessly work together to make your bot even smarter. 
+### Closed list entities
 
-For example, for the "hiking" product category, you can add "trekking" and "mountaineering" as synonyms. For "Yoga", you can add "Pilates" as a synonym.
+Closed list entities let you define a list of items. This is best used for small lists that are easy to manage and that have simple item labels.
 
-![Synonyms](media/entities-5(draft).png)
+:::image type="content" source="media/advanced-entities-slot-filling/create-entities-closed.png" alt-text="Screenshot of the entity creation window, with the Closed list option highlighted.":::
 
+Selecting this option when creating an entity will show a panel where you can specify the name of the entity, an optional description, and enter the items you want included in the entity.
+
+:::image type="content" source="media/advanced-entities-slot-filling/edit-closed-list.png" alt-text="Screenshot of the entities list panel.":::
+
+When you enter items you can:
+
+- Select each item to change its name.
+- Select the trash can icon to delete the item from the list.
+- Select **+ Synonyms** (or select the listed synonyms if they've already been added) to open the **Edit synonyms** panel.
+
+You can add synonyms to manually expand the matching logic for each item in the entity's list. For example, in the "hiking" item, you can add "trekking" and "mountaineering" as synonyms.
+
+:::image type="content" source="media/advanced-entities-slot-filling/edit-synonyms.png" alt-text="Screenshot of the Edit synonyms panel.":::
+
+
+For each entity you can also enable **Smart matching**. 
+
+Smart matching is part of the intelligence supported by the bot's language understanding model. With this option enabled, the bot will interpret the user's input using fuzzy logic, based on the listed items in the entity. 
+
+In particular, the bot will autocorrect misspellings and expand its matching logic semantically. For example, the bot can automatically match "softball" to "baseball". 
+
+:::image type="content" source="media/advanced-entities-slot-filling/entities-smart-match.png" alt-text="Screenshot of the smart matching option toggle.":::
+
+
+When you're finished creating or editing your entity, select **Save** to save and return to the list of entities. Select **Close** to discard your changes (you will be given an option to go back to editing the entity in case you accidentally selected the wrong option).
+
+
+### Regular expression (regex) entities
+
+Regular expression (regex) entities let you define logical patterns that you can use to match and extract information from an input. Regex entities are great for complex pattern matching against a user's input, or if you need to allow for specific variations in how a user might format or enter their input in a conversation.
+
+For example, you could use a regex entity to identify items such as a tracking ID, a license number, a credit card number, or an IP address from a string the user enters into the bot.
+
+:::image type="content" source="media/advanced-entities-slot-filling/create-entities-regex.png" alt-text="Screenshot of the entity creation window, with the Regex option highlighted.":::
+
+Selecting this option when creating an entity will show a panel where you can specify the name of the entity, an optional description, and enter the regex pattern that should be used to match and extract entity items from the input.
+ 
+:::image type="content" source="media/advanced-entities-slot-filling/edit-regex-list.png" alt-text="Screenshot of the regex entity panel.":::
+ 
+
+A Power Virtual Agents regex entity uses the [.NET regular expressions syntax](/dotnet/standard/base-types/regular-expressions). 
+
+By default, pattern matching is case sensitive, to make it case insensitive use the `(?i)` regular expression option in your pattern string. Some basic examples are included in the regex entity panel, and additional information on the syntax and more examples can be found in the [Regular Expression Language - Quick Reference](/dotnet/standard/base-types/regular-expression-language-quick-reference) topic.
+
+If you need to make the regular expression accommodate multiple patterns you can use the alternation operator `|` to concatenate regular expressions. For example, you could combine two regex patterns to look for both the old and new formats of a product ID code. 
+
+When you're finished creating or editing your entity, select **Save** to save and return to the list of entities. Select **Close** to discard your changes (you will be given an option to go back to editing the entity in case you accidentally selected the wrong option).
 
 ## Use entities in a conversation
 Now that you've done the work of giving the bot the knowledge about outdoor gear by creating that product category entity and a few other custom entities, you can start to use them when constructing a bot conversation. 
@@ -105,17 +137,17 @@ Now that you've done the work of giving the bot the knowledge about outdoor gear
 
 1. Select the plus (**+**) icon and then select **Ask a question**. 
 
-   ![Screenshot of adding a node](media/handoff-add-node.png)
+   ![Screenshot of adding a node.](media/handoff-add-node.png)
 
 1. Under **Identify**, select the entity you created in [Custom entities](#custom-entities).
 
-   ![Question node with entity selection](media/entities-6(draft).png)
+   ![Question node with entity selection.](media/entities-6(draft).png)
 
 1. You can also optionally select items to show as buttons. For example, if you'd like to show some categories as buttons for users to conveniently choose from as their input, you can simply choose **Select user options** and then pick them from the list that contains the items you added when you created the custom entity.
 
-   ![Add condition nodes](media/entities-8(draft).png)
+   ![Add condition nodes.](media/entities-8(draft).png)
     
-   ![More condition nodes](media/entities-9(draft).png)
+   ![More condition nodes.](media/entities-9(draft).png)
 
 1. Name the variable for the output of the user's response, if necessary.
 
@@ -124,29 +156,29 @@ Now that you've done the work of giving the bot the knowledge about outdoor gear
 
 
 
-Slot filling is a natural language understanding concept that means saving an extracted entity to an object. In Power Virtual Agents, slot filling means landing the extracted entity value into a variable.
+_Slot filling_ is a natural language understanding concept that means saving an extracted entity to an object. However, in Power Virtual Agents, slot filling means placing the extracted entity value into a variable.
 
 We will continue to use the outdoor gear topic as an example, which is triggered by typing "I want to buy something" in the test chat. 
 
 The topic is successfully triggered and the bot asks for the product category, also showing the button choices specified when authoring the **Ask a question** node. In the dialog tree, tracking between topics also shows the bot is running to the question node you just edited. 
 
-![tracking between topics](media/entities-10(draft).png)
+![tracking between topics.](media/entities-10(draft).png)
 
 A user can use the predefined choices by selecting one of the buttons. Alternatively, they can also type in something like "trekking" and see that it maps to "hiking", because those words were defined as synonyms. 
 
-![Additional tracking between topics](media/entities-11(draft).png)
+![Additional tracking between topics.](media/entities-11(draft).png)
 
 In tracking between topics, it shows the dialog is correctly routed to the path in which the product category value is "Hiking". You can inspect the variable value from the variable watch window at the bottom of the authoring canvas. In the watch window, it shows the variable value is "Hiking". 
 
 Essentially, slot filling has happened by inserting the extracted entity "Hiking" into the variable `VarProductCategory`. 
 
-![Variable watch window](media/entities-12(draft).png)
+![Variable watch window.](media/entities-12(draft).png)
 
 You can also use what is known as "proactive slot filling" where the user can specify multiple pieces of information that map to multiple entities. The bot is able to understand what information belongs to which entity automatically. In cases where it is unsure of the intended mapping, it will prompt the user to be more specific by providing choices.
 
 In this example, the user wrote "I want to buy some trekking gears". This includes both the trigger phrase that the user wants to buy gear and also provides a second piece of information—the actual type of gear. In this case, the bot fills in both the entity for buying gear, and for the type of gear.
 
-![Multiple and proactive slot filling](media/entities-13(draft).png)
+![Multiple and proactive slot filling.](media/entities-13(draft).png)
 
 In tracking between topics, you can see the bot takes in this user input, and intelligently skips the question node asking for the product category. 
 
@@ -156,11 +188,11 @@ Let's restart the testing again and try another case. In this round, you can add
 
 This time when the product category question is presented, instead of telling the bot only the product category, the user can say "I want to buy a pair of hiking boots under $100". In this example, the bot is not only able to route to the correct hiking product category path, but also actively fill the slots asking for the type of hiking gear and the target price range information. 
 
-![tracking between topics for product and price categories](media/entities-14(draft).png)
+![tracking between topics for product and price categories.](media/entities-14(draft).png)
 
 Proactive slot filling can be manually controlled at the node level. If you'd like to always prompt for the question within a specific node, regardless of whether the slot has been filled from previous user responses, you can disable the **Skip question** option for that question node.
 
-![Skip question](media/entities-skip-node.png)
+![Skip question.](media/entities-skip-node.png)
 
 ## Watch a deep dive video
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4ncEw]

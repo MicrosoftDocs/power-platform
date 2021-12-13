@@ -5,7 +5,8 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/09/2021
+ms.date: 12/09/2021
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -25,7 +26,7 @@ We continue to open new datacenter regions for business services, and to add dat
 > - Support for geo migration is limited and generally not available.
 > - To request a regional migration, please contact your account manager or see [Technical Support](get-help-support.md).
 > - After making a request, expect at least 10 days for the migration to be completed.  
-> - Geo migrations are not supported into or out of US GCC, US GCC High, or China.
+> - Geo migrations are not supported into or out of US GCC, US GCC High, OCE, IND, or China.
 > - The Dynamics 365 Marketing app does not support geo migration, due to component dependencies. For more information, see [Manage your Dynamics 365 Marketing instances](/dynamics365/marketing/manage-marketing-instances).
 > - Geo migration is not supported for Microsoft Dataverse for Teams environments.
 
@@ -44,8 +45,6 @@ We continue to open new datacenter regions for business services, and to add dat
 - India (IND) = *.crm8.dynamics.com 
 - United Kingdom (UK) = *.crm11.dynamics.com  
 - United Arab Emirates (UAE) = *.crm15.dynamics.com 
-
- [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Direct sign in](sign-in-office-365-apps.md#BKMK_directsignin)
 
  For example, if your existing organization URL is https://myorg.crm<strong>5</strong>.dynamics.com and you request it to be moved to Australia, the new organization URL will be https://myorg.crm<strong>6</strong>.dynamics.com.  
 

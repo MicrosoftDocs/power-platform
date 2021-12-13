@@ -181,9 +181,9 @@ You'll need to deploy a custom canvas that includes arguments that cause the [de
 
 The code in the *index.html* file causes a topic to be called automatically when the bot is loaded. By default, it calls the system greeting topic. You can also create a new topic and divert the default system greeting topic to that new topic.
 
-
-
 In both instances, you [make changes to the topic you want to call as you would normally](authoring-create-edit-topics.md).
+
+If you modify or create a new greeting topic, it's a best practice to include some sort of identification that the user is talking to a bot (or "virtual agent"), so they don't think they're talking to a human.
 
 We recommend you modify the system greeting topic so that you don't have to edit the *index.html* code.
 
@@ -193,17 +193,17 @@ We recommend you modify the system greeting topic so that you don't have to edit
 
 2. Under **System Topics**, select the **Go to authoring canvas** icon on the **Greeting** topic row.
 
-    ![Screenshot of the Topics page, with the Greeting topic highlighted](media/custom-greeting-topic.png "Screenshot of the Topics page, with the Greeting topic highlighted")
+    ![Screenshot of the Topics page, with the Greeting topic highlighted.](media/custom-greeting-topic.png "Screenshot of the Topics page, with the Greeting topic highlighted")
 
 3. Edit the text inside the **Message** nodes. You can also [add or delete additional nodes](authoring-create-edit-topics.md#insert-nodes).
 
 4. Select **Save** when you're finished editing the message.
 
-    ![Screenshot of the system greeting topic showing the message nodes that can be edited](media/custom-greeting-message.png "Screenshot of the system greeting topic showing the message nodes that can be edited")
+    ![Screenshot of the system greeting topic showing the message nodes that can be edited.](media/custom-greeting-message.png "Screenshot of the system greeting topic showing the message nodes that can be edited")
 
 5. [**Publish** your bot](publication-fundamentals-publish-channels.md).
 
-    ![Publish latest bot content](media/channel-publish-latest-content.png "Publish latest bot content")
+    ![Publish latest bot content.](media/channel-publish-latest-content.png "Publish latest bot content")
 
 You can now test your bot by going to the webpage where you deployed your bot's custom canvas. You'll see the bot start the conversation by automatically showing the greeting topic.
 
@@ -230,7 +230,7 @@ You can now test your bot by going to the webpage where you deployed your bot's
 
 1. [Delete the message nodes](authoring-create-edit-topics.md#insert-nodes) on the **Greeting** topic.
 
-1. To automatically divert the bot to a user topic, select **+** to add a node, and then [Go to another topic](authoring-create-edit-topics.md#go-to-another-topic).
+1. To automatically divert the bot to a user topic, select **+** to add a node, and then [Go to another topic](authoring-create-edit-topics.md#redirect-to-another-topic).
 
 1. In the flyout menu, select the user topic you created above.
 

@@ -1,12 +1,13 @@
 ---
-title: "Available GitHub Actions for Microsoft Power Platform | Microsoft Docs"
+title: "Available GitHub Actions for Microsoft Power Platform development | Microsoft Docs"
 description: "Learn about the available GitHub Actions to support continuous integration and delivery for Microsoft Power Platform development."
 keywords: 
 author: kkanakas
+ms.subservice: alm
 ms.author: kartikka
 manager: kvivek
 ms.custom: ""
-ms.date: 06/28/2021
+ms.date: 08/30/2021
 ms.reviewer: "pehecke"
 ms.service: power-platform
 ms.topic: "article"
@@ -17,11 +18,11 @@ search.app:
   - D365CE
 ---
 
-# Available GitHub Actions for Microsoft Power Platform
+# Available GitHub Actions for Microsoft Power Platform development
 
 [GitHub Actions for Microsoft Power Platform](https://github.com/marketplace/actions/powerplatform-actions) are described in the following sections. In addition, sample GitHub workflows shown as well. For more information about GitHub Actions and how to download them, go to [GitHub Actions for Microsoft Power Platform](devops-github-actions.md).
 
-## Configure deployment credentials
+## Configure credentials to use with GitHub Actions with Microsoft Power Platform
 
 Many of the actions require you to connect to a Microsoft Dataverse environment. You can add service principal or user credentials as secrets in your GitHub repository and then use them in your workflows.
 
@@ -196,6 +197,23 @@ Provides the ability to deploy a package dll or a zip file with a package.
 |client-secret| The client secret used to authenticate the GitHub pipeline. This parameter is **required** when authenticating with Service Principal credentials.|
 |tenant-id| The tenant ID when authenticating with `app-id` and `client-secret`.|
 |package| (Required) The path to the package dll or zip file with a package.|
+
+## Portal tasks
+
+These tasks perform the following actions against Power Apps portals.
+
+### upload-paportal
+
+Uploads data to Power Apps portals.
+
+| Parameter    | Description       |
+|---------------|-------------------|
+|environment-url| (Required) The URL for the  environment that you want to import the solution into (for example, https://YourOrg.crm.dynamics.com).|
+|app-id| The application ID to authenticate with. This parameter is **required** when authenticating with Service Principal credentials.|
+|client-secret| The client secret used to authenticate the GitHub pipeline. This parameter is **required** when authenticating with Service Principal credentials.|
+|tenant-id| The tenant ID when authenticating with `app-id` and `client-secret`.|
+|upload-path|Path where the website content is stored (alias: -p).|
+|deployment-profile| Upload portal data with environment details defined through [profile variables](/powerapps/maker/portals/power-apps-cli#use-deployment-profile) in deployment-profiles/\[profile-name].deployment.yaml file.|
 
 ## GitHub workflow authoring
 

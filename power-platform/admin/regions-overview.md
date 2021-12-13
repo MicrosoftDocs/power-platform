@@ -6,6 +6,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/26/2021
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -31,7 +32,7 @@ If you're an administrator, you can determine the region of each environment in 
   From the left-side menu, select **Environments**.
   
   > [!div class="mx-imgBorder"] 
-  > ![Environments page](media/environment-list-region.png "Environments page")
+  > ![Environments page.](media/environment-list-region.png "Environments page")
 
 ## What regions are available?
 

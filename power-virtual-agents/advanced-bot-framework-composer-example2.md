@@ -2,7 +2,7 @@
 title: "Use Bot Framework Composer to display an options list in chatbots"
 description: "Use Bot Framework Composer to add multi-select options to your Power Virtual Agents chatbot."
 keywords: "composer, adaptive card"
-ms.date: 5/24/2021
+ms.date: 12/02/2021
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -40,12 +40,12 @@ Before you begin, ensure you read [Extend your bot with Bot Framework Composer](
 
 Using Composer, you can create a multi-select options list to be used in your chatbot.
 
-Open the Power Virtual Agents bot used in [Example 1](advanced-bot-framework-composer-example1.md) and select the **Open in Bot Framework Composer** option on the **Topics** page under **+ New topic** to open the bot in Composer. 
+Open the Power Virtual Agents bot used in [Example 1](advanced-bot-framework-composer-example1.md) and on the left-hand menu, select **Topics**. Select the down-arrow symbol next to **+ New topic**, and then select **Open in Bot Framework Composer** to open the bot in Composer. 
 
 While on the **Create** tab in Composer add another Bot Framework dialog. Name your new dialog **DailySpecials** in Composer.
 
-In your new **DailySpecials** dialog in Composer, go to **Manage properties** and select **Set a property** to create a new Composer property in the dialog.
-Give this property the following name in the **Set a property** panel on the right:
+In your new **DailySpecials** dialog in Composer select the **BeginDialog** trigger to open the **Authoring canvas**. Go to **Manage properties** and select **Set a property** to create a new Composer property in the dialog.
+Set the **Property** field to the following in the **Set a property** panel on the right:
 
 ```JSON
 conversation.days_array
@@ -60,7 +60,7 @@ In the **Value** field in the **Set a property** panel, change the type to **\[\
 
 Next, go to the **Bot Responses** tab in Composer and select **DailySpecials**. Select **Show code** and add the following template to the **Bot Responses** tab for **DailySpecials** to create daily offers for all the days of the week:
 
-```JSON
+```lu
 # DailySpecials(day)
 - SWITCH: ${day}
 - CASE: ${0}
@@ -88,7 +88,7 @@ Next, go to the **Bot Responses** tab in Composer and select **DailySpecials**. 
     - Holiday special - free delivery anywhere in Seattle, Bellevue and Redmond on orders over $70 today!
     - Holiday Delivery is on us if you are in Seattle, Bellevue and Redmond and your order is over $70 total!
 ```
-:::image type="content" source="media/Composer_Example2/E2_DailySpecials_BotResponse.png" alt-text="Composer Bot Responses tab - Language Generation code.":::
+:::image type="content" source="media/Composer_Example2/E2_DailySpecials_BotResponse.png" alt-text="Composer Bot Responses tab - bot responses code.":::
 
 Go back to the **Create** tab in Composer and select **BeginDialog** under **DailySecials**. 
 
@@ -99,9 +99,9 @@ Add a new prompt for user input to this dialog by selecting **Multi-choice** und
 Enter the following for the **Text** prompt:
 `Please select a day:`
 
-:::image type="content" source="media/Composer_Example2/E2_DailySpecials_prompt.png" alt-text="Composer Create tab - add prompt language generation.":::
+:::image type="content" source="media/Composer_Example2/E2_DailySpecials_prompt.png" alt-text="Composer Create tab - add bot response.":::
 
-Select the **User Input (Choice)** action. In the **Prompt with multi-choice** panel, under **User Input**, set **Property** to **conversation.day_choice**. 
+Select the **User Input (Choice)** action. In the **Prompt with multi-choice** panel, under **User Input**, set **Property** to `conversation.day_choice`. 
 
 Set **Output format** to **index** to return the index of the selected option instead of a value.
 
@@ -109,29 +109,29 @@ Set **Output format** to **index** to return the index of the selected option in
 
 Next, scroll down the **Prompt with multi-choice** panel and set **List style** to **heroCard** to display our options list vertically. 
 
-Select **Write an expression** for the **Array of choices** field and set it to use the **conversation.days_array** property we created.
+Select **Write an expression** for the **Array of choices** field and set it to use the `conversation.days_array` property we created.
 
 :::image type="content" source="media/Composer_Example2/E2_DailySpecials_array_multi_option.png" alt-text="Composer Create tab - set up array of choices.":::
 
-You have created a multi-choice option list that is based on **conversation.days_array** and stores the user selection into the **conversation.day_choice** property.
+You have created a multi-choice option list that is based on `conversation.days_array` and stores the user selection into the `conversation.day_choice` property.
 
-You can use this **conversation.day_choice** property to display the daily special for the selected day. 
+You can use this `conversation.day_choice` property to display the daily special for the selected day. 
 
-Select **Show code** and add a **Send a response** action to your **DailySpecials** dialog under the **User Input** action. Add the following expression in the **Language Generation** panel on the side:
+Under the **User Input** action, add a **Send a response** action to your **DailySpecials** dialog. In the **Bot response** panel on the side, select **Show code**. Add the following expression:
 
-```JSON
+```lg
 - ${DailySpecials(conversation.day_choice)}
 ```
 
 :::image type="content" source="media/Composer_Example2/E2_DailySpecials_addResponse.png" alt-text="Composer Create tab - display Daily Special for the selected day.":::
 
-Go to the **Create** tab in Composer and navigate to the Power Virtual Agents **main (root) dialog**. This dialog is the top-level read-only dialog in Composer that you created when you opened your bot in Composer. Choose the **Add new trigger** option on the actions menu.
+In the **Bot explorer**, navigate to the Power Virtual Agents **main (root) dialog**. This dialog is the top-level read-only dialog in Composer that you created when you opened your bot in Composer. On the on the actions menu, select the **Add new trigger** option.
 
 :::image type="content" source="media/Composer_Example2/E2_main_addNewTrigger.png" alt-text="Composer Create_tab - add new trigger.":::
 
 Set the type of trigger to **Intent recognized** and name it **Specials**. Add the following trigger phrases for your intent and select **Submit**.
 
-```JSON
+```lu
 -what specials do you have
 -any special deals
 -do you have discounts
@@ -159,6 +159,9 @@ Make sure **Track between topics** is turned on, and test your new bot content b
 :::image type="content" source="media/Composer_Example2/Example2._cropped.png" alt-text="Power Virtual Agents Test pane.":::
 
 
+>[!Note]
+>Selecting **Publish** in Composer makes the changes available for testing, but does not automatically Publish your Power Virtual Agents bot.  
+>Use the [Publish](publication-fundamentals-publish-channels.md) feature in Power Virtual Agents to publish your bot changes to channels.
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

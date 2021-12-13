@@ -6,6 +6,7 @@ ms.reviewer:
 ms.service: "power-platform"
 ms.topic: "quickstart"
 author: jimholtz
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -32,11 +33,11 @@ There are three stages for using capacity add-ons:
 
 If your organization has purchased capacity add-ons, an **Add-ons** tile appears on the **Capacity** screen in the Microsoft [Power Platform admin center](https://admin.powerplatform.microsoft.com/). Sign into the admin center, and select **Resources** > **Capacity** > **Summary** tab.
 
-![Summary tab](media/add-on-tile1.png "Summary tab")
+![Summary tab.](media/add-on-tile1.png "Summary tab")
 
 The **Add-ons** tile shows summary information about the capacity add-ons that your organization has.
 
-![Add-on tile](media/add-on-tile2.png "Add-on tile")
+![Add-on tile.](media/add-on-tile2.png "Add-on tile")
 
 Each capacity has a usage gauge that shows how many units have been assigned compared to the available capacity. Capacities are measured in different ways depending on the product. For example, App passes are assigned individually, while AI Builder capacity is measured in credits. Refer to the product documentation for more information about metering.
 
@@ -56,12 +57,12 @@ To allocate capacity to an environment:
 
    You can also select **Download reports** to download usage reports for various capacities.
    
-   ![Download reports](media/add-on-tile3.png "Download reports")
+   ![Download reports.](media/add-on-tile3.png "Download reports")
 
 4. Select the environment where you want to add capacity from the **Environment** drop-down menu, and then allocate from your available capacity.
 
    > [!div class="mx-imgBorder"] 
-   > ![Manage add-ons](./media/manage-add-ons.png "Manage add-ons")
+   > ![Manage add-ons.](./media/manage-add-ons.png "Manage add-ons")
 
    **Some examples**
 
@@ -75,12 +76,12 @@ To allocate capacity to an environment:
 As an admin, you can restrict who can allocate add-on capacity to environments.
 
 1. Sign in to the Power Platform admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com).
-2. Select the **Gear** icon (![Gear icon](media/selection-rule-gear-button.png)) in the upper-right corner of the Power Platform site.
+2. Select the **Gear** icon (![Gear icon.](media/selection-rule-gear-button.png)) in the upper-right corner of the Power Platform site.
 3. Select **Power Platform settings**.
 4. Under **Who can allocated add-on capacity to environments**, select **Only specific admins**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Control add-on capacity allocation](./media/add-on-governance.png "Control add-on capacity allocation")
+   > ![Control add-on capacity allocation.](./media/add-on-governance.png "Control add-on capacity allocation")
 
 The following admins will be able to allocate add-on capacity in the Power Platform admin center:
 

@@ -6,6 +6,7 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/29/2021
 author: paulliew
+ms.subservice: admin
 ms.author: paulliew
 ms.reviewer: jimholtz
 ms.custom: "admin-security"
@@ -51,14 +52,14 @@ Block access by location is set using Azure Active Directory (AD) Conditional Ac
   For **Step 6. Under Cloud apps or actions**, select the Microsoft Dataverse application.
 
   > [!div class="mx-imgBorder"] 
-  > ![Restricted IP Dataverse cloud app](media/restrictedip-cds.png "Restricted IP Dataverse cloud app")
+  > ![Restricted IP Dataverse cloud app.](media/restrictedip-cds.png "Restricted IP Dataverse cloud app")
 
   or
 
   For **Step 6. Under Cloud apps or actions**, select the Microsoft Dynamics ERP for Finance and Operations application.
 
   > [!div class="mx-imgBorder"] 
-  > ![Restricted IP Microsoft Dynamics ERP cloud app](media/restrictedip-erp.png "Restricted IP Microsoft Dynamics ERP cloud app")
+  > ![Restricted IP Microsoft Dynamics ERP cloud app.](media/restrictedip-erp.png "Restricted IP Microsoft Dynamics ERP cloud app")
 
 ### See also  
 [How to set Azure AD device-based conditional access policy for access control to Azure AD connected applications](/azure/active-directory/conditional-access/require-managed-devices) <br />

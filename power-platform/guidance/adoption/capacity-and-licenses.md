@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/09/2020
+ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -18,8 +19,6 @@ search.app:
 ---
 
 # Plan and manage license and capacity allocations
-
-[!INCLUDE[cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
 
 Do you have questions about how to plan licensing and capacity for your organization's or team's applications or processes? Watch the following session to learn about the current and incoming capabilities of the platform and how you can take advantage and choose the right plans for your organization.
 >
@@ -68,7 +67,7 @@ Every environment can have zero or one Dataverse database, which provides storag
 
 As an administrator, you can monitor your capacity usage in the admin portal.
 
-![Microsoft Power Platform storage capacity](media/resource-usage2.png "Microsoft Power Platform storage capacity")
+![Microsoft Power Platform storage capacity.](media/resource-usage2.png "Microsoft Power Platform storage capacity")
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

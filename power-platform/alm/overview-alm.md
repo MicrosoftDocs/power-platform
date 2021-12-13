@@ -3,6 +3,7 @@ title: "Application lifecycle management (ALM) with Microsoft Power Platform"
 description: "Overview of how to implement application lifecycle management (ALM) using Power Apps, Power Automate, Power Virtual Agents, and Microsoft Dataverse."
 keywords: 
 author: shmcarth
+ms.subservice: alm
 ms.author: shmcarth
 manager: kvivek
 ms.custom: ""
@@ -43,7 +44,7 @@ software delivery.
 
 The *application lifecycle* is the cyclical software development process that involves these areas: plan and track, develop, build and test, deploy, operate, monitor, and learn from discovery.
 
-![The application lifecycle](media/application-lifecycle.png "The application lifecycle") 
+![The application lifecycle.](media/application-lifecycle.png "The application lifecycle") 
 
 ## ALM for Power Apps, Power Automate, Power Virtual Agents, and Dataverse
 
@@ -62,7 +63,7 @@ For more information about how ALM and Azure DevOps technologies&mdash;combined 
 ### See also
 [ALM basics with Microsoft Power Platform](basics-alm.md)<br/>
 [What is Dataverse?](/powerapps/maker/common-data-service/data-platform-intro) <br/>
-[Application lifecycle management for Finance and Operations apps](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/app-lifecycle-management)
+[Application lifecycle management for Finance and Operations apps](/learn/modules/application-lifecycle-finance-operations/)
 [ALM for chatbots](/power-virtual-agents/authoring-export-import-bots)
 
 

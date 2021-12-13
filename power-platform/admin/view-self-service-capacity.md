@@ -7,6 +7,7 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/29/2020
+ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -30,19 +31,19 @@ With the introduction of [self-service purchases](/microsoft-365/commerce/subscr
 3. In the **Storage capacity, by source** tile, select **View self-service sources**.
 
    > [!div class="mx-imgBorder"] 
-   > ![View self-service sources](media/view-individual-sources.png "View self-service sources")
+   > ![View self-service sources.](media/view-individual-sources.png "View self-service sources")
 
 ### If you are signed in as a Power Platform admin 
 You will see all licenses purchased by users in the tenant. You can filter or search for licenses to shorten the list.
 
   > [!div class="mx-imgBorder"] 
-  > ![Power Platform admin view](media/capacity-from-licenses-admin.png "Power Platform admin view")
+  > ![Power Platform admin view.](media/capacity-from-licenses-admin.png "Power Platform admin view")
 
 ### If you are signed in as an end user 
 You will see the license and capacity information for the licenses you have purchased.
 
   > [!div class="mx-imgBorder"] 
-  > ![User view](media/capacity-from-licenses-user.png "User view")
+  > ![User view.](media/capacity-from-licenses-user.png "User view")
 
 ### If there are no licenses purchased by tenant users 
 The **Capacity from self-service user licenses** page will be blank.

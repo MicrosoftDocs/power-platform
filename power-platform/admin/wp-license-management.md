@@ -6,7 +6,8 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.custom: intro-internal
-ms.date: 06/16/2021
+ms.date: 11/02/2021
+ms.subservice: admin
 ms.author: dileeps
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -19,22 +20,13 @@ search.app:
 ---
 # About licensing and license management
 
-Organizations can obtain licenses by either licensing Microsoft Power Apps or
-Microsoft Power Automate specifically or by it being included in the license of another Microsoft
-cloud service offering. For example, both Microsoft 365 and Dynamics 365 provide
-entitlements for Power Apps and Power Automate. As with most Microsoft licensing,
-you can mix and match for users as appropriate, giving some additional
-entitlements.
+Organizations can obtain licenses by either licensing Microsoft Power Apps or Microsoft Power Automate specifically or by it being included in the license of another Microsoft cloud service offering. For example, both Microsoft 365 and Dynamics 365 provide entitlements for Power Apps and Power Automate. As with most Microsoft licensing, you can mix and match for users as appropriate, giving some additional entitlements.
 
-In the rest of this section, we will highlight some of the key implications and
-scenarios related to licensing, but it is not the product licensing
-documentation. You should consult licensing documentation for the latest details. Pricing
-and specific plan details for Power Apps and Power Automate can be found in the 
-[licensing guide](https://go.microsoft.com/fwlink/?linkid=2085130).
+In the rest of this section, we will highlight some of the key implications and scenarios related to licensing, but it is not the product licensing documentation. You should consult licensing documentation for the latest details. Pricing and specific plan details for Power Apps and Power Automate can be found in the [licensing guide](https://go.microsoft.com/fwlink/?linkid=2085130).
 
 ## Use of connectors
 
-Power Apps and Power Automate use connectors to interact with services. Connectors can be standard, premium, or custom. To use premium connectors, users must be licensed with Standalone Power Apps or Power Automate licenses.
+Power Apps and Power Automate use connectors to interact with services. Connectors can be [standard](/connectors/connector-reference/connector-reference-standard-connectors), [premium](/connectors/connector-reference/connector-reference-premium-connectors), or [custom](/connectors/custom-connectors/). To use premium connectors for Power Apps, users must have Power Apps licenses or use [pay-as-you-go plan](pricing-billing-skus.md). To use premium connectors for Power Automate, users must be licensed with Standalone Power Automate licenses.  
 
 ## Trial Plans
 

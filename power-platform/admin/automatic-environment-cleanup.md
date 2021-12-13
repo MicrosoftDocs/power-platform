@@ -2,11 +2,11 @@
 title: "Automatic cleanup of inactive environments"
 description: "Learn about the automatic process to identify and disable environments with an inactive subscription, and the actions you can take to prevent deletion."
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/23/2020
+ms.subservice: admin
 ms.author: jimholtz 
 search.audienceType: 
   - admin
@@ -18,7 +18,7 @@ search.app:
 ---
 # Automatic environment cleanup
 
-Operational processes for datacenters periodically identify environments that do not have an active subscription. They also and mark them for deactivation and eventual deletion. These processes can free up capacity from environments that are not in use, so that you can apply it elsewhere in your tenant.
+Operational processes for datacenters periodically identify environments that do not have an active subscription. They mark them for deactivation and eventual deletion. These processes can free up capacity from environments that are not in use, so that you can apply it elsewhere in your tenant.
 
 To see the status of your environments:
 
@@ -27,7 +27,7 @@ To see the status of your environments:
 3. Look for environments with **Inactive** status.
 
 > [!div class="mx-imgBorder"] 
-> ![Inactive environment](media/inactive-environment.png "Inactive environment")
+> ![Inactive environment.](media/inactive-environment.png "Inactive environment")
 
 ## Scope
 

@@ -12,7 +12,7 @@ metadata:
   ms.topic: hub-page # Required
   author: KumarVivek #Required; your GitHub user alias, with correct capitalization.
   ms.author: kvivek #Required; microsoft alias of author; optional team alias.
-  ms.date: 09/11/2020 #Required; mm/dd/yyyy format.
+  ms.date: 07/06/2021 #Required; mm/dd/yyyy format.
   hide_bc: false
 
 highlightedContent:
@@ -35,21 +35,16 @@ highlightedContent:
     - title: Microsoft Power Platform training on Microsoft Learn
       itemType: learn
       url: /learn/powerplatform/
+      
+    # Card
+    - title: Microsoft Power Platform In a Day workshops
+      itemType: get-started
+      url: https://aka.ms/PowerPlatformIAD
 
 conceptualContent:
   # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
-    - title: Power BI
-      links:
-      - url: /power-bi/
-        itemType: overview
-        text: Documentation
-      - url: /learn/powerplatform/power-bi
-        itemType: learn
-        text: Training on Microsoft Learn
-      - url: https://www.youtube.com/user/mspowerbi
-        itemType: video
-        text: Videos            
+              
     - title: Power Apps
       links:
       - url: /powerapps
@@ -72,6 +67,17 @@ conceptualContent:
       - url: https://www.youtube.com/channel/UCG98S4lL7nwlN8dxSF322bA
         itemType: video
         text: Videos
+    - title: Power BI
+      links:
+      - url: /power-bi/
+        itemType: overview
+        text: Documentation
+      - url: /learn/powerplatform/power-bi
+        itemType: learn
+        text: Training on Microsoft Learn
+      - url: https://www.youtube.com/user/mspowerbi
+        itemType: video
+        text: Videos    
     - title: Power Virtual Agents
       links:
       - url: /power-virtual-agents/
@@ -105,7 +111,13 @@ conceptualContent:
       - url: https://www.youtube.com/playlist?list=PLi9EhCY4z99W2QOTgbwhFZEjpqc8YZDVH
         itemType: video
         text: "Videos: Power Apps and Power Automate Architecture Series"
-    - title: Introducing Microsoft Power Fx
+      - url: ./guidance/architecture/real-world-examples/overview.md
+        itemType: overview
+        text: Real-world architecture examples
+      - url: ./guidance/expressroute/overview.md
+        itemType: overview
+        text: Azure ExpressRoute with Power Platform
+    - title: Microsoft Power Fx
       links:      
       - url: ./power-fx/overview.md
         itemType: overview
