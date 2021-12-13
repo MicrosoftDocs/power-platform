@@ -187,9 +187,27 @@ Power Platform services use connectors to work with all other data sources. The 
 
 
 ### Authentication to data sources
-Again, authentication of an end user to a Power Apps app data source is a separate and distinct step from authentication to the Power Apps service. First each user authenticates to the Power Apps service and then the credentials required by the connector are used to authenticate to the data source. In all cases credentials are stored and managed by the API Hub credentials service.  It is important to note that some connector types support more than one authentication method. Authentication to a data source in for a Power Platform service is then specific to each data source instance and is based on the authentication choice made when creating the connection for the service. 
+Again, authentication of an end user to a Power Platform data source is a separate and distinct step from authentication to the Power Platform service. First each user authenticates to the Power Platform service and then the credentials required by the connector are used to authenticate to the data source. In all cases credentials are stored and managed by the API Hub credentials service.  It is important to note that some connector types support more than one authentication method. Authentication to a data source for a Power Platform service is then specific to each data source instance and is based on the authentication choice made when creating the connection for the service. 
 
-For Power Apps, there are two types of Power Apps data source authentication: explicit and implicit. And it’s important to know the difference to keep your data secure.  Explicit authentication means that only the end user’s credentials will be used to access the data source. Implicit authentication means that the credentials the author used when creating the connection for the Power Apps will be used. The most secure connection type is explicit and we recommend it. [Canvas Apps SQL Server security ](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/connections/sql-server-security). 
+For Power Apps specifically, there are two types of Power Apps data source authentication: explicit and implicit. And it’s important to know the difference to keep your data secure.  Explicit authentication means that only the end user’s credentials will be used to access the data source. Implicit authentication means that the credentials the author used when creating the connection for the Power Apps will be used. The most secure connection type is explicit and we recommend it. [Canvas Apps SQL Server security ](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/connections/sql-server-security). 
+
+
+Additional topics:
+
+## Data residency 
+### Multiple geographies
+### Regions and data centers
+### Data handling
+### Data at rest
+### Data in processing
+### Data in transit
+## Network isolation
+Service tags
+Private link integration
+VNET connectivity
+Data loss prevention
+
+
 
 
 ### See also
