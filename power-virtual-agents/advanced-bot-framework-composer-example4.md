@@ -2,7 +2,7 @@
 title: "Use Bot Framework Composer to display a form in chatbots"
 description: "Use Bot Framework Composer to add a form with a Submit button to your Power Virtual Agents chatbot."
 keywords: "composer, adaptive card"
-ms.date: 5/24/2021
+ms.date: 12/02/2021
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -43,7 +43,7 @@ Before you begin, ensure you read [Extend your bot with Bot Framework Composer](
 
 Open the Power Virtual Agents bot used in the previous examples.
 
-Go to the **Topics** page and select **Open in Bot Framework Composer** under the **+ New topic** dropdown menu to open Composer. 
+On the left-hand menu, select **Topics**. Select the down-arrow symbol next to **+ New topic**, and then select **Open in Bot Framework Composer**.
 
 Select **+ Add new trigger** to add another Bot Framework trigger of type **Intent recognized** to the **Contoso Meal Delivery Service** dialog and call it **StartTrial**. 
 
@@ -57,7 +57,7 @@ Add the following trigger phrases and select **Submit**.
 After the **StartTrial** trigger is added, go to the **Bot Responses** tab for this **Contoso Meal Delivery Service** dialog. Switch to **Show code** view, and insert the following Adaptive Card JSON:
 
 
-````JSON
+````lg
 
 # adaptivecardjson_StartTrialForm()
 - ```
@@ -110,8 +110,8 @@ Note that every data field in this Adaptive card was given an ID: **Name**, **Ad
 Next, add the following Activity below the Adaptive Card JSON:
 
 
-````JSON
- # AdaptiveCard_StartTrialForm()
+````lg
+# AdaptiveCard_StartTrialForm()
 [Activity
     Attachments = ${json(adaptivecardjson_StartTrialForm())}
 ]
@@ -122,31 +122,31 @@ Go to the **Create** tab in Composer and select the **StartTrial** trigger. Add 
 
 :::image type="content" source="media/Composer_Example4/E4_ask_question.png" alt-text="Composer - ask a question.":::
 
-Switch to **Show code** view and add the following to the code window:
+Select the **Prompt for text** node, then in the properties pane under the **Bot response** tab, select **Show code**. Add the following to the code window:
 
-```JSON
+```lg
 - ${AdaptiveCard_StartTrialForm()}
 ```
 
 :::image type="content" source="media/Composer_Example4/e4_call_starttrialform_activity.png" alt-text="Composer - call StartTrialForm activity.":::
 
-Select the **User Input** node and save user input data. Set **Property** to **user.name** and set **Value** to **=turn.activity.value.Name** to extract and save the value of the from field **Name** from our Adaptive card **StartTrialForm** into **user.name**.
+Select the **User Input** node. Select the **User Input** tab. Set **Property** to `user.name` and set **Value** to `=turn.activity.value.Name` to extract and save the value of the from field **Name** from our Adaptive card **StartTrialForm** into `user.name`.
 
 :::image type="content" source="media/Composer_Example4/E4_saveUserInput.png" alt-text="Composer - save user input.":::
 
-Your Adaptive card **StartTrialForm** has two more fields, **Address** and **Weeks**. Use the **Set properties** action to extract them from **turn.activity.value** and save them to **user.address** and **user.weeks**:
+Your Adaptive card **StartTrialForm** has two more fields, **Address** and **Weeks**. Use the **Set properties** action to extract them from `turn.activity.value` and save them to `user.address` and `user.weeks`:
 
 :::image type="content" source="media/Composer_Example4/E4_setProperties.png" alt-text="Composer - set properties.":::
 
 Add a **Send a Response** action to provide a form submission confirmation:
 
-```JSON
+```lg
 ${user.name} - thanks for starting a ${user.weeks} week trial with us! Your meals will be delivered to this address: ${user.address}.
 ```
 
 :::image type="content" source="media/Composer_Example4/E4_formSubmit_confirm.png" alt-text="Composer - add form submission confirmation.":::
 
-Use the **Begin a PVA Topic** action to call the Power Virtual Agents bot's **End of Conversation** topic to ask the user to rate their experience with the bot:
+Use the **Begin a Power Virtual Agents Topic** action to call the Power Virtual Agents bot's **End of Conversation** topic:
 
 :::image type="content" source="media/Composer_Example4/E4_call_PVA_End_of_Conversation.png" alt-text="Composer - call Power Virtual Agents topic.":::
 
