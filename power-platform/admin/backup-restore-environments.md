@@ -5,7 +5,7 @@ services: powerapps
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/06/2021
+ms.date: 12/13/2021
 ms.subservice: admin
 author: ChrisGarty
 ms.author: cgarty
