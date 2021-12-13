@@ -26,7 +26,7 @@ Microsoft Power Platform Automation CoE starter kit is designed to help organiza
 > - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 > - This feature is being gradually rolled out across regions and might not be available yet in your region.
 
-We are pleased to announce a limited public preview of the toolkit. We are actively looking to work closely with customers to learn and improve the product. If you're interested in joining the limited preview, please [fill out the Automation CoE Starter Kit Preview form](https://aka.ms/autocoestarterkitpreview).
+We are pleased to announce a limited public preview of the toolkit. We are actively looking to work closely with customers to learn and improve the product. If you're interested in joining the limited preview, [fill out the Automation CoE Starter Kit Preview form](https://aka.ms/autocoestarterkitpreview).
 
 This toolkit is for organizations that have an existing Automation CoE for robotic process automation (RPA) and other hyperautomation scenarios or are looking to set up an RPA or Automation CoE for Microsoft Power Platform. The toolkit can be used by various stakeholders to automate the enterprise rollout of Microsoft Power Automate and manage the entire lifecycle of an automation project.
 
