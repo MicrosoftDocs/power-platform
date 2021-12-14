@@ -21,14 +21,14 @@ search.app:
 # Set up ALM Accelerator for Makers components
 
 > [!IMPORTANT]
-> The ALM Accelerator for Makers components are for reference only. For more robust deployment configurations including components that need to be configured as part of or after the solution deployment, it's recommended to use the ALM Accelerator for Power Platform. The GitHub integration in the ALM Accelerator for Makers will eventually be replaced by functionality in the ALM Accelerator for Power Platform, but remains as part of the CoE Starter Kit for reference. More information: [Set up ALM Accelerator for Power Platform components](setup-almacceleratorpowerplatform-cli.md) and [Use ALM Accelerator for Power Platform components](almacceleratorpowerplatform-components.md)
+> The ALM Accelerator for Makers components are **for reference only**. For more robust deployment configurations including components that need to be configured as part of or after the solution deployment, it's recommended to use the ALM Accelerator for Power Platform. The GitHub integration in the ALM Accelerator for Makers will eventually be replaced by functionality in the ALM Accelerator for Power Platform, but remains as part of the CoE Starter Kit for reference. More information: [Set up ALM Accelerator for Power Platform components](setup-almacceleratorpowerplatform-cli.md) and [Use ALM Accelerator for Power Platform components](almacceleratorpowerplatform-components.md)
 
 This solution uses [GitHub actions](../../alm/devops-github-actions.md) for source control and deployments. The [GitHub connector](/connectors/github/) is used in flows to interact with GitHub. More information: [Use the ALM Accelerator for Makers components](almaccelerator-components.md)
 
-> [!IMPORTANT]
-> The ALM Accelerator for Makers components don't have a dependency on other components of the CoE Starter Kit. It can be used independently.
-
 ## Prerequisites
+
+> [!NOTE]
+> The ALM Accelerator for Makers components don't have a dependency on other components of the CoE Starter Kit. It can be used independently.
 
 ### Environments
 

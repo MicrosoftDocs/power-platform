@@ -166,8 +166,6 @@
           href: coe/teams-governance.md  
         - name: Use the Innovation Backlog app
           href: coe/use-innovationbacklog.md 
-        - name: Use the ALM Accelerator for Makers
-          href: coe/almaccelerator-components.md
         - name: Use the ALM Accelerator for Power Platform
           href: coe/almacceleratorpowerplatform-components.md
           items:
@@ -177,6 +175,9 @@
             href: coe/almacceleratorpowerplatform-newmaker.md
           - name: Use the Administrator Experience
             href: coe/setup-almacceleratorpowerplatform-deployment-profiles.md
+          - name: Use the ALM Accelerator for Makers
+            href: coe/almaccelerator-components.md
+
         - name: Environment management
           href: coe/env-mgmt.md
     - name: Limitations
