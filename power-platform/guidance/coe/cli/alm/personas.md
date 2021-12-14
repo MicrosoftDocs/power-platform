@@ -234,8 +234,8 @@ To deploy an instance of AA4PP in your organization the **generate install** and
     - Variable Groups
     - Create Service Connections to Power Platform Environments
 1. Power Platform Environments
-    - Setup Application Users
-    - Import Managed Solution and Setup Security
+    - Set up Application Users
+    - Import Managed Solution and Set up Security
 
 ```bash
 coe alm generate install -o install.json

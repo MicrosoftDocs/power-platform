@@ -115,7 +115,7 @@ coe alm maker add \
 
 More information on the [maker add](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/maker/add.md) command
 
-Once these steps are completed, the next step is to [Setup Managed Solutions](../maker-setup.md) for makers
+Once these steps are completed, the next step is to [Set up Managed Solutions](../maker-setup.md) for makers
 
 ## Enterprise Deployment
 

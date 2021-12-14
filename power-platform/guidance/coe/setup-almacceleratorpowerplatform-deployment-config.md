@@ -1,5 +1,5 @@
 ---
-title: "Configuration and Data Deployment in Pipelines (Preview) | MicrosoftDocs"
+title: "Configuration and Data Deployment in Pipelines | MicrosoftDocs"
 description: "Creating deployment configuration files the ALM Accelerator for Power Platform pipelines to configure your solution in a downstream environment."
 author: mikefactorial
 manager: devkeydet

@@ -1,5 +1,5 @@
 ---
-title: "Use the ALM Accelerator for Power Platform App (Preview) | MicrosoftDocs"
+title: "Use the ALM Accelerator for Power Platform App | MicrosoftDocs"
 description: "The ALM Accelerator for Power Platform will help you follow ALM patterns and practices. It enables you to source control your solutions and move them from your development environment to test and production environments using DevOps"
 author: jenschristianschroder
 manager: devkeydet

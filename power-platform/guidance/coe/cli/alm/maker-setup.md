@@ -21,11 +21,11 @@ search.app:
 
 The first step is to ensure that the maker and an environment to build and manage solutions. Normally each maker has a unique [development environment](./development-environments.md) created. Having successfully gained access to a development environment the commands below allow either a Power Platform administrator or a Maker to perform the following tasks:
 
-1. [Setup Service Principal](#setup-service-principal) - Provide access to the Service Principal used by the Azure DevOps Pipeline
+1. [Set up Service Principal](#setup-service-principal) - Provide access to the Service Principal used by the Azure DevOps Pipeline
 
 1. [Maker Create Solution](#maker-create-solution) - Create a solution branch in the Azure DevOps repository.
 
-## Setup Service Principal
+## Set up Service Principal
 
 The ALM Accelerator for Power Platform uses the created Azure Active Directory Service Principal to connect to environments and import and export the solutions. The user add command enables the ALM Accelerator to access each environment. The user add command adds the service principal as a user and assigned the System Administrator role to an environment.
 

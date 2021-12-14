@@ -1,5 +1,5 @@
 ---
-title: "ALM Accelerator for Power Platform Advanced Maker Experience (Preview) | MicrosoftDocs"
+title: "ALM Accelerator for Power Platform Advanced Maker Experience | MicrosoftDocs"
 description: "The ALM Accelerator for Power Platform Advanced Maker Experience will help you follow ALM patterns and practices. It enables you to source control your solutions and move them from your development environment to test and production environments using DevOps"
 author: alvarezskinner
 manager: devkeydet

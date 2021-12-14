@@ -1,5 +1,5 @@
 ---
-title: "ALM Accelerator for Power Platform Pipeline Sync Setup (Preview) | MicrosoftDocs"
+title: "ALM Accelerator for Power Platform Pipeline Sync Setup | MicrosoftDocs"
 description: "Creating a pipeline to sync the latest ALM Accelerator for Power Platform pipeline templates to your DevOps repository."
 author: mikefactorial
 manager: devkeydet

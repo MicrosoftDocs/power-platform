@@ -1,5 +1,5 @@
 ---
-title: "Use the ALM Accelerator for Makers app | MicrosoftDocs"
+title: "ALM Accelerator for Makers | MicrosoftDocs"
 description: "The ALM Accelerator for Makers will help you follow ALM patterns and practices to source control and move your solutions from your development environment to test and production environments using GitHub."
 author: manuelap-msft
 manager: devkeydet

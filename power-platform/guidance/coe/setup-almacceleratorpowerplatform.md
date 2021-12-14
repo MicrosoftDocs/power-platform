@@ -17,7 +17,7 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Set up ALM Accelerator for Power Platform components Manual (Preview)
+# Set up ALM Accelerator for Power Platform components Manually (Preview)
 
 > [!NOTE]
 > ALM Accelerator for Power Platform is currently in public preview. Please see [Issues currently tagged as vnext](https://github.com/microsoft/coe-starter-kit/issues?q=is%3Aopen+is%3Aissue+label%3Aalm-accelerator+label%3Avnext) for the Roadmap to be completed prior to general availability. While the tool is in Public Preview, you should expect that there will be breaking changes and frequent updates to address feedback from preview members. Additionally, the Public Preview is reliant on the experimental [Power Apps Source File Pack and Unpack Utility](https://github.com/microsoft/PowerApps-Language-Tooling) that is being developed separately from AA4PP.
@@ -522,7 +522,7 @@ If your solution requires these other configuration settings and / or data, foll
 
     ![Test Security Settings for Custom DevOps Connector](media/almacceleratorpowerplatform-components/image-20210222135128137.png)
 
-## Setup Makers to Use the ALM Accelerator App
+## Set up Makers to Use the ALM Accelerator App
 
 - See the [User Setup Guide](setup-almacceleratorpowerplatform-users.md) for the recommended setup of a maker's user account in Dataverse and DevOps.
 - See the [User Deployment Setting and Profile Guide](setup-almacceleratorpowerplatform-deployment-profiles.md) for how to configure users' experience in the App and access to solutions and deployment profiles.

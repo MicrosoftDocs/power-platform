@@ -1,5 +1,5 @@
 ---
-title: "ALM Accelerator for Power Platform User Setup (Preview) | MicrosoftDocs"
+title: "ALM Accelerator for Power Platform User Setup | MicrosoftDocs"
 description: "Configuring user permissions to access the ALM Accelerator for Power Platform App and Pipelines."
 author: mikefactorial
 manager: devkeydet

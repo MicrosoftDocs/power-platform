@@ -78,7 +78,7 @@ The install performs the following key steps:
 
 - [delete-unmanaged-solution-and-components.yml](https://github.com/microsoft/coe-alm-accelerator-templates/blob/main/Pipelines/delete-unmanaged-solution-and-components.yml) - Delete or "clean up" an unmanaged solution from a Dataverse environment
 
-1. Setup Azure Active Group access the Azure DevOps project
+1. Set up Azure Active Group access the Azure DevOps project
 
 1. Create Variable Groups for shared variables used by build pipelines
 
