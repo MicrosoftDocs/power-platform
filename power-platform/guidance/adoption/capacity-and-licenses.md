@@ -20,8 +20,6 @@ search.app:
 
 # Plan and manage license and capacity allocations
 
-[!INCLUDE[cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
-
 Do you have questions about how to plan licensing and capacity for your organization's or team's applications or processes? Watch the following session to learn about the current and incoming capabilities of the platform and how you can take advantage and choose the right plans for your organization.
 >
 > [!VIDEO https://medius.studios.ms/video/asset/HIGHMP4/IG19-BRK2223]
