@@ -33,6 +33,6 @@ The following will guide you through setting up the Center of Excellence CLI and
 
 1. [Install CoE CLI](./cli/install.md) - How to install the CoE CLI using local host computer or via a docker container.
 
-1. [Set up ALM Accelerator for Power Platform using CoE CLI](./cli/alm/overview.md) - Use CLI commands to set up and configure an environment for ALM Accelerator to enable them to achieve more within your organization.
+1. [Set up ALM Accelerator for Power Platform using CoE CLI](./cli/alm/admin-install.md) - Use CLI commands to set up and configure an environment for ALM Accelerator to enable them to achieve more within your organization.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

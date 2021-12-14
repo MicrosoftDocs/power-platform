@@ -185,6 +185,52 @@
       href: coe/limitations.md
     - name: Release notes
       href: coe/release-notes.md
+    - name: CoE Command Line Interface
+      href: coe/cli/overview.md
+      items:
+      - name: Install CoE CLI
+      - href: coe/cli/install.md
+      - name: Install CoE CLI using Docker
+      - href: coe/cli/sample-docker-install.md
+      - name: Install CoE CLI using Local Machine
+      - href: coe/cli/sample-local-install.md
+      - name: Upgrade CoE CLI
+      - href: coe/cli/upgrade.md
+      - name: ALM Accelerator for Power Platform CoE CLI
+      - href: coe/cli/alm/overview.md
+        items:
+        - name: Set up ALM Accelerator for Power Platform with CoE CLI
+        - href: coe/cli/alm/admin-install.md
+        - name: Before You Start
+        - href: coe/cli/alm/before-you-start.md
+        - name: Branching and Merging
+        - href: coe/cli/alm/branching-and-merging.md
+        - name: Development Environments
+        - href: coe/cli/alm/development-environments.md
+        - name: Key Concepts
+        - href: coe/cli/alm/key-concepts.md
+        - name: Maker Setup
+        - href: coe/cli/alm/maker-setup.md
+        - name: Maturity
+        - href: coe/cli/alm/maturity
+        - name: Personas
+        - href: coe/cli/alm/personas.md
+      - name: Maturity Model
+      - href: coe/cli/alm/maturity/overview.md
+      - name: Scenarios
+      - href: coe/cli/alm/scenarios/overview.md
+        items: 
+        - name: DevOps Deployment Model
+        - href: coe/cli/alm/scenarios/devops-deployment-model.md
+        - name: Tenant Deployments
+        - href: coe/cli/alm/scenarios/tenant-deployments.md
+      - name: CLI Development
+      - href: coe/cli/cli-development/overview.md
+        items: 
+        - name: Adding a new Command
+        - href: coe/cli/cli-development/adding-new-command.md
+        - name: Documentation
+        - href: coe/cli/cli-development/documentation.md
     - name: Feedback and support
       href: coe/feedback-support.md
   - name: Automation adoption best practices

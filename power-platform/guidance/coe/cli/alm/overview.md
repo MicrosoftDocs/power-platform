@@ -21,28 +21,28 @@ search.app:
 
 The cli alm command allows you to manage common Application Lifecycle Management (ALM) tasks to install, setup, and administration of Power Platform Solutions.
 
-- [Quick Start](#quick-start) - Guides you through the process of a [demo tenant install](./scenarios/tenant-deployments.md#demonstration-deployment)
-- [Understand the Concepts](#understand-the-concepts) - Covers Scenarios, Personas, and Key Concepts and the install process using the CoE CLI
+- [Quick Start](#quick-start) - Guides you through the process of a [demo tenant install](./scenarios/tenant-deployments.md#demonstration-deployment).
+- [Understand the Concepts](#understand-the-concepts) - Covers Scenarios, Personas, and Key Concepts and the install process using the CoE CLI.
 
 ## Prerequisites
 
-In order to set up the ALM Accelerator for Power Platform you'll need to first [install the CoE CLI](../install.md)
+In order to set up the ALM Accelerator for Power Platform you'll need to first [install the CoE CLI](../install.md).
 
 ## Quick Start
 
 For an Administrator, the quick start guide should take around 30 minutes and by the end have configured Azure Active Directory, Azure DevOps, and the Power Platform environments.
 
-1. Validate organization [maturity model](./maturity/overview.md#quick-start) for ALM
+1. Validate organization [maturity model](./maturity/overview.md#quick-start) for ALM.
 
 1. Create your [Power Platform Environments](./before-you-start.md#power-platform) and [Azure DevOps](./before-you-start.md#azure-devops) Organization and Azure DevOps project.
 
-1. Create an install configuration. Review the [install help](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/install.md) for install parameters
+1. Create an install configuration. Review the [install help](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/install.md) for install parameters.
 
 ```bash
 coe alm generate install -o quickstart.json
 ```
 
-   This command will generate a json configuration file similar to the following. You could replace **contoso** with your tenant name
+   This command will generate a json configuration file similar to the following. You could replace **contoso** with your tenant name.
 
 ```json
 {
@@ -80,7 +80,7 @@ coe alm generate install -o quickstart.json
 
    More information on the [coe alm generate install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/generate/install.md) command
 
-1. Install the ALM Accelerator using the generated configuration file
+1. Install the ALM Accelerator using the generated configuration file.
 
 ```bash
 coe alm install -f quickstart.json
@@ -90,9 +90,9 @@ coe alm install -f quickstart.json
 
    Deploying to your enterprise? For more information, see [Enterprise Deployment](./scenarios/tenant-deployments.md#enterprise-deployment).
 
-1. [Update permissions for the project build service](/power-platform/guidance/coe/setup-almacceleratorpowerplatform#update-permissions-for-the-project-build-service) to enable build pipelines to interact with Git Repositories
+1. [Update permissions for the project build service](/power-platform/guidance/coe/setup-almacceleratorpowerplatform#update-permissions-for-the-project-build-service) to enable build pipelines to interact with Git Repositories.
 
-1. Have  Makers create [development environments](./development-environments.md) then Add Makers to Azure DevOps and share the Canvas Application
+1. Have  Makers create [development environments](./development-environments.md) then Add Makers to Azure DevOps and share the Canvas Application.
 
 ```bash
 coe alm maker add \
@@ -121,10 +121,10 @@ Not sure what ALM is and how it can help? The [User Guide](/power-platform/guida
 
 ### Getting Started
 
-- [Scenarios](./scenarios/overview.md) - Discusses different install scenarios for ALM from Demo Installs to Enterprise Deployments
-- [Personas](./personas.md) - Understand the key personas and how they map to ALM CLI commands and the wider ALM process
-- [Key Concepts](./key-concepts.md) - Understand the key concepts for the components that are being automated under the hood by the CLI commands
-- [Branching and Merging](./branching-and-merging.md) - Provides examples of branching and merging approach using ALM
+- [Scenarios](./scenarios/overview.md) - Discusses different install scenarios for ALM from Demo Installs to Enterprise Deployments.
+- [Personas](./personas.md) - Understand the key personas and how they map to ALM CLI commands and the wider ALM process.
+- [Key Concepts](./key-concepts.md) - Understand the key concepts for the components that are being automated under the hood by the CLI commands.
+- [Branching and Merging](./branching-and-merging.md) - Provides examples of branching and merging approach using ALM.
 
 ### Overview
 
@@ -136,11 +136,11 @@ The following recording shows a sample generating an install configuration file 
 
 ### Install Overview
 
-1. Review the [Before You Start](./before-you-start.md) to ensure you have the required Power Platform environments and Azure DevOps organizations created
+1. Review the [Before You Start](./before-you-start.md) to ensure you have the required Power Platform environments and Azure DevOps organizations created.
 
-2. As an administrator completes the [Admin Install](./admin-install.md)
+2. As an administrator, complete the [Admin Install](./admin-install.md).
 
-3. Have Makers create [Development Environments](./development-environments.md)
+3. Have Makers create [Development Environments](./development-environments.md).
 
 4. Use [Maker Setup](./maker-setup.md) to create and set up environment and solution branches in the Azure DevOps repository.
 
