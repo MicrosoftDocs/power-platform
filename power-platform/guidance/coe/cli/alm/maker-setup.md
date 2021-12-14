@@ -21,7 +21,7 @@ search.app:
 
 The first step is to ensure that the maker and an environment to build and manage solutions. Normally each maker has a unique [development environment](./development-environments.md) created. Having successfully gained access to a development environment the commands below allow either a Power Platform administrator or a Maker to perform the following tasks:
 
-1. [Set up Service Principal](#setup-service-principal) - Provide access to the Service Principal used by the Azure DevOps Pipeline
+1. [Set up Service Principal](#set-up-service-principal) - Provide access to the Service Principal used by the Azure DevOps Pipeline
 
 1. [Maker Create Solution](#maker-create-solution) - Create a solution branch in the Azure DevOps repository.
 
