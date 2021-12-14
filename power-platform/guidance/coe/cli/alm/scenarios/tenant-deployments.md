@@ -1,6 +1,6 @@
 ---
 title: "Center of Excellence (CoE) Command Line Interface (CLI) Application Lifecycle Management (ALM) Accelerator Tenant Deployments"
-description: "Overview of tenant deployment models for the ALM Accelerator using the Center of Excellence (CoE) Command Line Interface (CLI)"
+description: "Overview of tenant deployment models for the ALM Accelerator"
 keywords: 
 author: Grant-Archibald-MS
 ms.author: grarchib
@@ -76,7 +76,7 @@ Attributes:
 
 ## Demonstration Deployment
 
-For this scenario, you're looking to quickly install AA4PP to demonstrate how it works and showcase the end-to-end process. For this scenario, the following configuration is expected:
+To setup a demonstration deployment, you're looking to quickly install AA4PP to and showcase the end-to-end process. For this scenario, the following configuration is expected:
 
 1. Using Trial tenant and environments to demonstrate the solution
 
@@ -100,8 +100,8 @@ coe alm generate install -o quickstart.json
 coe alm install -f quickstart.json
 ```
 
-More information on the [coe alm generate install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/generate/install.md) command
-More information on the [coe alm install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/install.md) command
+More information on the [generate install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/generate/install.md) command
+More information on the [install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/install.md) command
 
 Then add a demo user as a maker
 
@@ -113,9 +113,9 @@ coe alm maker add \
   -u alan-s@contoso.onmicrosoft.com
 ```
 
-More information on the [coe alm maker add](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/maker/add.md) command
+More information on the [maker add](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/maker/add.md) command
 
-Once these steps are completed, makers can then [Setup Managed Solutions](../maker-setup.md)
+Once these steps are completed, the next step is to [Setup Managed Solutions](../maker-setup.md) for makers
 
 ## Enterprise Deployment
 
@@ -141,7 +141,7 @@ To install the solution resources, the following options can be used
 
 #### Azure Active Directory
 
-1. Use the CLI to install the AAD components. For example, using the default install parameters
+1. Use the CLI to install the Azure Active Directory components. For example, using the default install parameters
 
 ```bash
 coe alm install -c aad
@@ -228,7 +228,7 @@ coe alm install -f install.json
 }
 ```
 
-1. Manual installation using the [Create An App Registration in your AAD environment](/power-platform/guidance/coe/setup-almacceleratorpowerplatform#create-an-app-registration-in-your-aad-environment)
+1. Manual installation using the [Create An App Registration in your Azure Active Directory environment](/power-platform/guidance/coe/setup-almacceleratorpowerplatform#create-an-app-registration-in-your-aad-environment)
 
 ## Multi Tenant Deployment
 

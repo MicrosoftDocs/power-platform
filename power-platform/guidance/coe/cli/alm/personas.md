@@ -26,7 +26,7 @@ Understanding the roles that different personas play in ALM Accelerator for Powe
 
 ### Business Users
 
-Internal users of the created solutions. Won't directly use the AA4PP tools but they'll be able to see the shared applications. May report version number of application to the support team.
+Business users represent the users of the created solutions. These users don't use the ALM Accelerator tools directly but they can see the shared applications. Business users may report version number of application to the support team.
 
 ### Maker
 
@@ -86,9 +86,9 @@ coe alm install \
   -e https://contoso-maker.crm.dynamics.com
 ```
 
-More information on the [coe alm generate install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/generate/install.md) command
+More information on the [generate install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/generate/install.md) command
 
-More information on the [coe alm install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/install.md) command
+More information on the [install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/install.md) command
 
 Add makers to an environment (Assuming they also have Azure DevOps Administrator rights)
 
@@ -100,17 +100,17 @@ coe alm maker add \
   -u user@contoso.com
 ```
 
-More information on the [coe alm maker add](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/maker/add.md) command
+More information on the [maker add](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/maker/add.md) command
 
 #### Azure Tenant Administrator
 
-Manage the AAD Tenant - Create User, Groups,  Applications, and Service Principals (O365 or Azure Administrators). Common commands
+Manage the Azure Active Directory Tenant - Create User, Groups,  Applications, and Service Principals (O365 or Azure Administrators). Common commands
 
 ```bash
 coe alm install -c aad
 ```
 
-More information on the [coe alm install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/install.md) command
+More information on the [install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/install.md) command
 
 #### Azure DevOps Project Administrators
 
@@ -120,39 +120,47 @@ coe alm install -c devops \
   -p alm-sandbox
 ```
 
-More information on the [coe alm install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/install.md) command
-
 ## Persona Command Mapping
 
 ### Command Commands
 
-### coe alm branch
+Providing a quick overview of each of the coe commands
+
+### alm branch
 
 |Outcome|Frequency|Persona|Components|
 |-------|---------|-------|----------|
 |Create a solution branch in Azure DevOps|Run per new solution|Makers, Professional Developers|Azure DevOps|
 
-### coe alm user add
+[Read alm branch help](https://github.com/microsoft/coe-starter-kit/blob/main/coe-cli/docs/help/alm/branch.md)
+
+### alm user add
 
 |Outcome|Frequency|Persona|Components|
 |-------|---------|-------|----------|
 |Add Application User to development environment|Run once per environment|Makers, Professional Developers|Dataverse|
 
-### coe alm maker add
+[Read alm user add help](https://github.com/microsoft/coe-starter-kit/blob/main/coe-cli/docs/help/alm/user/add.md)
+
+### alm maker add
 
 |Outcome|Frequency|Persona|Components|
 |-------|---------|-------|----------|
 |Create Service Connection and add maker to security group|Run once per maker|USer who is owner of Azure Active Directory Group and Azure DevOps Project Administrator|Azure DevOps|
 
-### coe alm install
+[Read alm maker add help](https://github.com/microsoft/coe-starter-kit/blob/main/coe-cli/docs/help/alm/maker/add.md)
+
+### alm install
 
 |Outcome|Frequency|Persona|Components|
 |-------|---------|-------|----------|
 |Import managed solution and setup security|Run once per organization|Azure Active Directory Group, Azure DevOps and Power Power Platform Administrator|Azure Active directory, Azure DevOps, Power Platform|
 
+[Read alm install help](https://github.com/microsoft/coe-starter-kit/blob/main/coe-cli/docs/help/alm/install.md)
+
 ## Solution Setup
 
-Assuming that AA4PP has been set up and installed, the first command that the Advanced Maker will run is the **coe alm user add** command. This command will register an Application User created during install as a System administrator in their development environment to integrate with the solution. For example, using the default parameters
+Assuming that AA4PP has been set up and installed, the first command that the Advanced Maker will run is the **coe alm user add** command. The user add command will register an Application User created during install as a System administrator in their development environment to integrate with the solution. For example, using the default parameters
 
 ```bash
 coe alm user add \
@@ -170,11 +178,11 @@ coe alm branch \
   -d MySolution
 ```
 
-More information on the [coe alm branch](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/branch.md) command
+More information on the [branch](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/branch.md) command
 
 ## Administrator Setup
 
-As each Advanced Maker or Professional Developer creates a development environment, it will need to be registered with Azure DevOps and the Azure Active Directory Application. The user running this command requires Project Administrator rights in Azure DevOps and Owner rights of the Azure Active Directory Application.
+Each development environment used by makers will need to be registered with Azure DevOps and give rights to the Azure Active Directory Application.
 
 ```bash
 coe alm maker add \
@@ -186,7 +194,9 @@ coe alm maker add \
   -u alan-s@contoso.com
 ```
 
-More information on the [coe alm maker add](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/maker/add.md) command
+NOTE: The user running this command requires Project Administrator rights in Azure DevOps and Owner rights of the Azure Active Directory Application.
+
+More information on the [maker add](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/maker/add.md) command
 
 Each Azure DevOps project will also require connections to deployment environments used by Azure Pipelines
 
@@ -210,11 +220,11 @@ coe alm connection add \
   -a ALMAcceleratorServicePrincipal
 ```
 
-More information on the [coe alm connection add](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/connection/add.md) command
+More information on the [connection add](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/connection/add.md) command
 
 ## Install
 
-To deploy an instance of AA4PP in your organization the **coe alm generate install** and **coe alm install** commands are used once to deploy the Managed solution. The install will automate key elements:
+To deploy an instance of AA4PP in your organization the **generate install** and **install** commands are used once to deploy the Managed solution. The install will automate key elements:
 
 1. Azure Active Directory
     - New Azure Active directory Application used by Azure DevOps for Service Connection access to Power Platform
@@ -232,8 +242,8 @@ coe alm generate install -o install.json
 coe alm install -f install.json
 ```
 
-More information on the [coe alm generate install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/generate/install.md) command
+More information on the [generate install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/generate/install.md) command
 
-More information on the [coe alm install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/install.md) command
+More information on the [install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/install.md) command
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
