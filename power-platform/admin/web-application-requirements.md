@@ -45,7 +45,7 @@ Notice that these values are recommendations and don’t guarantee satisfactory 
 
 The web application can run in any of the following web browsers running on the specified operating systems:  
 
-- Microsoft Edge (latest publicly-released version) running on Windows 11, Windows 10, Window 8.1
+- Microsoft Edge (latest publicly-released version) running on Windows 11, Windows 10, Windows 8.1
   - [Windows 8.1 extended support will end January 10, 2023](/lifecycle/products/windows-81)
   - [Windows 8 extended support ended January 12, 2016](/lifecycle/products/windows-8)
   - [Windows 7 extended support ended January 14, 2020](/lifecycle/products/windows-7)
