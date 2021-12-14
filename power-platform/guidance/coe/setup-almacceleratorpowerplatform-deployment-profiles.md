@@ -1,5 +1,5 @@
 ---
-title: "Configuring the ALM Accelerator for Power Platform App (Preview) | MicrosoftDocs"
+title: "Configuring the ALM Accelerator for Power Platform App | MicrosoftDocs"
 description: "Deployment User Settings and Profiles direct the ALM Accelerator for Power Platform on how to display UI Components and how to source control and deploy solutions."
 author: mikefactorial
 manager: devkeydet
@@ -20,7 +20,7 @@ search.app:
 # Configuring the ALM Accelerator for Power Platform App (Preview)
 
 >[!NOTE]
->The ALM Accelerator for Power Platform (AA4PP) is currently in public preview. Please see Issues currently tagged as [vnext](https://github.com/microsoft/coe-starter-kit/issues?q=is%3Aopen+is%3Aissue+label%3Aalm-accelerator+label%3Avnext) for the Roadmap to be completed prior to general availability. While in Public Preview it can be expected that there will be breaking changes and frequent updates to address feedback from preview members. Additionally, the Public Preview is reliant on the experimental [Power Apps Source File Pack and Unpack Utility](https://github.com/microsoft/PowerApps-Language-Tooling) that is being developed separately from AA4PP.
+>The ALM Accelerator for Power Platform (AA4PP) is currently in public preview. Please see [Issues currently tagged as vnext](https://github.com/microsoft/coe-starter-kit/issues?q=is%3Aopen+is%3Aissue+label%3Aalm-accelerator+label%3Avnext) for the Roadmap to be completed prior to general availability. While the tool is in Public Preview, you should expect that there will be breaking changes and frequent updates to address feedback from preview members. Additionally, the Public Preview is reliant on the experimental [Power Apps Source File Pack and Unpack Utility](https://github.com/microsoft/PowerApps-Language-Tooling) that is being developed separately from AA4PP.
 
 The ALM Accelerator is configurable based on user preferences to turn on and off certain features in the user interface depending on a user's role. A common scenario is to create an **Advanced Maker and a Maker experience** to help both users familiar and unfamiliar with Application Life-Cycle Management to use the app effectively. Linked to the User Settings are Deployment Profiles. Deployment Profiles are used by the app to make decisions for the user on where and how to create branches and approvals for deployment.
 

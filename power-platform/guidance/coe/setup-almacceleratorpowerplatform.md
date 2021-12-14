@@ -1,5 +1,5 @@
 ---
-title: "ALM Accelerator for Power Platform | MicrosoftDocs"
+title: "Set up ALM Accelerator for Power Platform components Manual | MicrosoftDocs"
 description: "The ALM Accelerator for Power Platform will help you follow ALM patterns and practices to source control and move your solutions from your development environment to test and production environments using DevOps. This guide will walk through the manual setup steps of the Accelerator."
 author: mikefactorial
 manager: devkeydet
@@ -17,12 +17,12 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Set up ALM Accelerator for Power Platform (AA4PP) components (Preview)
+# Set up ALM Accelerator for Power Platform components Manual (Preview)
 
 > [!NOTE]
-> ALM Accelerator for Power Platform is currently in public preview. Please see Issues currently tagged as [vnext](https://github.com/microsoft/coe-starter-kit/issues?q=is%3Aopen+is%3Aissue+label%3Aalm-accelerator+label%3Avnext) for the Roadmap to be completed prior to general availability. While in Public Preview it can be expected that there will be breaking changes and frequent updates to address feedback from preview members. Additionally, the Public Preview is reliant on the experimental [Power Apps Source File Pack and Unpack Utility](https://github.com/microsoft/PowerApps-Language-Tooling) that is being developed separately from AA4PP.
+> ALM Accelerator for Power Platform is currently in public preview. Please see [Issues currently tagged as vnext](https://github.com/microsoft/coe-starter-kit/issues?q=is%3Aopen+is%3Aissue+label%3Aalm-accelerator+label%3Avnext) for the Roadmap to be completed prior to general availability. While the tool is in Public Preview, you should expect that there will be breaking changes and frequent updates to address feedback from preview members. Additionally, the Public Preview is reliant on the experimental [Power Apps Source File Pack and Unpack Utility](https://github.com/microsoft/PowerApps-Language-Tooling) that is being developed separately from AA4PP.
 
-The ALM Accelerator components enable makers to apply source control strategies using DevOps and use automated builds and deployment of solutions to their environments without the need for manual intervention by the maker, administrator, developer, or tester. In addition, the ALM Accelerator provides makers the ability to work without intimate knowledge of the downstream technologies and to be able to switch quickly from developing solutions to source controlling the solution and ultimately pushing their apps to other environments with as few interruptions to their work as possible.
+The ALM Accelerator components enable makers to apply source control strategies using DevOps and use automated builds and deployment of solutions to their environments without the need for manual intervention by the maker, administrator, developer, or tester. In addition, the ALM Accelerator helps makers work without intimate knowledge of the downstream technologies and to be able to switch quickly from developing solutions to source controlling the solution and ultimately pushing their apps to other environments with as few interruptions to their work as possible.
 
 The ALM Accelerator components solution doesn't have a dependency on other components of the CoE Starter Kit. It can be used independently.
 

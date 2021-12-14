@@ -17,7 +17,7 @@ search.app:
   - Powerplatform
 ---
 
-# ALM Accelerator for Power Platform
+# Setup ALM Accelerator for Power Platform with CoE CLI
 
 The cli alm command allows you to manage common Application Lifecycle Management (ALM) tasks to install, setup, and administration of Power Platform Solutions.
 

@@ -1,5 +1,5 @@
 ---
-title: "ALM Accelerator for Makers | MicrosoftDocs"
+title: "Use the ALM Accelerator for Makers app | MicrosoftDocs"
 description: "The ALM Accelerator for Makers will help you follow ALM patterns and practices to source control and move your solutions from your development environment to test and production environments using GitHub."
 author: manuelap-msft
 manager: devkeydet
@@ -24,7 +24,7 @@ search.app:
 
 Use the ALM Accelerator for Makers app to follow ALM patterns and practices for source control, and move your solutions from development to test to production environments by using GitHub. More information: [Set up ALM Accelerator for Makers components](setup-almaccelerator.md)
 
-ALM Accelerator for Makers enables makers to apply source control strategies by using GitHub, and use automated builds and deployment of solutions to their environments without the need for manual intervention by the maker, administrator, developer, or tester. In addition, ALM Accelerator for Makers provides makers the ability to work without intimate knowledge of downstream technologies and switch quickly from developing solutions to implementing source control for the solution&mdash;and, ultimately, pushing their apps to other environments with as few interruptions to their work as possible.
+ALM Accelerator for Makers enables makers to apply source control strategies by using GitHub, and use automated builds and deployment of solutions to their environments without the need for manual intervention by the maker, administrator, developer, or tester. In addition, ALM Accelerator for Makers helps makers work without intimate knowledge of downstream technologies and switch quickly from developing solutions to implementing source control for the solution&mdash;and, ultimately, pushing their apps to other environments with as few interruptions to their work as possible.
 
 Makers can use the ALM Accelerator for Makers app to view all their projects, and deploy their work-in-progress or completed solution to a test or production environment. After a new project has been created and approved, makers can go to [make.powerapps.com](https://make.powerapps.com) to build and create assets&mdash;such as apps, flows, and tables&mdash;in a solution that has been created for them.
 

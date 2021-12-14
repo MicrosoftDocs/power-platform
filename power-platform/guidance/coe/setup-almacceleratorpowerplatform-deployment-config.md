@@ -1,5 +1,5 @@
 ---
-title: "Configuration and Data Deployment in Pipelines | MicrosoftDocs"
+title: "Configuration and Data Deployment in Pipelines (Preview) | MicrosoftDocs"
 description: "Creating deployment configuration files the ALM Accelerator for Power Platform pipelines to configure your solution in a downstream environment."
 author: mikefactorial
 manager: devkeydet
@@ -21,7 +21,7 @@ search.app:
 # Configuration and Data Deployment in Pipelines (Preview)
 
 > [!NOTE]
-> ALM Accelerator for Power Platform is currently in public preview. Please see Issues currently tagged as [vnext](https://github.com/microsoft/coe-starter-kit/issues?q=is%3Aopen+is%3Aissue+label%3Aalm-accelerator+label%3Avnext) for the Roadmap to be completed prior to general availability. While in Public Preview it can be expected that there will be breaking changes and frequent updates to address feedback from preview members. Additionally, the Public Preview is reliant on the experimental [Power Apps Source File Pack and Unpack Utility](https://github.com/microsoft/PowerApps-Language-Tooling) that is being developed separately from AA4PP.
+> ALM Accelerator for Power Platform is currently in public preview. Please see [Issues currently tagged as vnext](https://github.com/microsoft/coe-starter-kit/issues?q=is%3Aopen+is%3Aissue+label%3Aalm-accelerator+label%3Avnext) for the Roadmap to be completed prior to general availability. While the tool is in Public Preview, you should expect that there will be breaking changes and frequent updates to address feedback from preview members. Additionally, the Public Preview is reliant on the experimental [Power Apps Source File Pack and Unpack Utility](https://github.com/microsoft/PowerApps-Language-Tooling) that is being developed separately from AA4PP.
 
 The ALM Accelerator uses json formatted files for updating **connection references, environment variables, setting permissions for AAD Groups and Dataverse teams** as well as **sharing Canvas Apps and updating ownership of solution components** such as Power Automate flows. The instructions below are **optional** and depend on what type of components your solution pipelines deploy. For instance, if your solutions only contain Dataverse Tables, Columns and Model Driven Apps with no per environment configuration or data needed then **some of these steps may not be necessary** and can be skipped. The following configuration files allow you to fully automate the deployment of your solutions and specify how to configure items that are specific to the environment to which the solution is being deployed.
 
