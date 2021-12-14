@@ -31,25 +31,28 @@ So users can access resources in Dataverse when running the AA4PP app they need 
 1. Navigate to <https://admin.powerplatform.microsoft.com/>
 1. **Select the Environment** in which the user exists
 1. **Select See all under Teams** under the Access section
-   ![Select See all under Teams](media/setup-almacceleratorpowerplatform-users/image-20210709143811208.png)
 1. Select Create Team
-   ![Select Create Team](media/setup-almacceleratorpowerplatform-users/image-20210709144020206.png)
 1. Enter a **Team name, Business unit, Administrator and Select AAD Security Group as the Team type and Select a Membership Type and Select Next**.
-   ![Enter New Teams Details](media/setup-almacceleratorpowerplatform-users/image-20210709145337373.png)
 1. On the Manage security roles page, select the **ALM Power App Access** and **Basic User** role and **select Save**.
-
-   ![Manage Security Roles](media/setup-almacceleratorpowerplatform-users/image-20210709150149120.png)
 
 ## DevOps User Setup
 
 For users to use the service connection from the ALM Accelerator App the Service Connections must provide **User** permissions to all users who should have access to the Service Connections. Update Permissions as follows for environments that user's should be able to access from the App, for example, Development environment(s):
 
-1. Select the **Service Connection** to be **shared with users** from the **Service Connections** list.
-   ![Select the Service Connection](media/almacceleratorpowerplatform-components/image-20210401084558807.png)
+1. Go to Azure DevOps
+
+1. Select your Project and select the COG in the bottom left corner to access project settings.
+
+1. Select Service connections and select the **Service Connection** to be **shared with users** from the **Service Connections** list.
+
 1. Select the **3 dots** in the top-right corner and Select **Security**.
-   ![Select Security](media/almacceleratorpowerplatform-components/image-20210401084807231.png)
+
 1. Select the **Group or User** you want to provide User permissions to in the Dropdown.
-1. Select the **User** **Role** and Select **Add**
-   ![Select the Group, User and Role](media/setup-almacceleratorpowerplatform/SetServiceConnectionPermissions.png)
+
+1. Select the **User** for the **Role** and Select **Add**
+
+   ![Select the Group, User and Role](media/setup-almacceleratorpowerplatform-users/SetServiceConnectionPermissions.png)
+
+1. Repeat the steps above for each of the Service Connections to be shared with a user.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
