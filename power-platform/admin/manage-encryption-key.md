@@ -4,7 +4,7 @@ description: "Learn how you can manage database encryption key for your environm
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/10/2021
+ms.date: 12/14/2021
 author: Mattp123
 ms.subservice: admin
 ms.author: miferlan
@@ -28,7 +28,7 @@ All environments of Microsoft Dataverse use [!INCLUDE[pn_MS_SQL_Server](../inclu
 >  Self-managed database encryption keys are only available in the [!INCLUDE[pn_CRM_Online](../includes/pn-crm-8-2-0-online.md)] and may not be made available for later versions. --> 
 
 > [!IMPORTANT]
-> Self-managed database encryption keys are only available for customers who have more than 1000 Power Apps per user licenses and/or Dynamics 365 Enterprise licenses (or a combination of these) and who have opted in to the feature.  To opt in to this program, submit a [support request](./support-overview.md#using-support).
+> Self-managed database encryption keys are only available for customers who have more than 1000 Power Apps per user licenses and/or Dynamics 365 Enterprise licenses (or a combination of these) in a single tenant and who have opted in to the feature.  To opt in to this program, submit a [support request](./support-overview.md#using-support).
 >
 > Encryption key management is only applicable to Azure SQL environment databases. The following features and services use their own key to encrypt their data and can't be encrypted with the self-managed encryption key:
 > - Dataverse search
