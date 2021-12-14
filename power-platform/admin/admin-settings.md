@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/09/2021
+ms.date: 12/14/2021
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -105,7 +105,7 @@ When the **[Display behavior -> Use updated experience for classic settings wher
 
 ### Settings in Unified Interface apps
 
-To open settings for apps that use [Unified Interface](about-unified-interface.md), look in the upper-right corner and select the **Gear** icon (![Gear icon.](media/selection-rule-gear-button.png)). Then select **Advanced settings**. 
+To open legacy settings for apps that use [Unified Interface](about-unified-interface.md), look in the upper-right corner and select the **Gear** icon (![Gear icon.](media/selection-rule-gear-button.png)). Then select **Advanced settings**. 
 
 > [!div class="mx-imgBorder"] 
 > ![Advanced settings.](media/advanced-settings.png "Advanced settings")
