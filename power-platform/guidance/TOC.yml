@@ -117,8 +117,8 @@
       - name: Set up ALM Accelerator for Power Platform components
         href: coe/setup-almacceleratorpowerplatform-cli.md
         items:
-        - name: Set up ALM Accelerator for Power Platform step-by-step
-          href: coe/setup-almacceleratorpowerplatform-cli.md
+        - name: Set up ALM Accelerator for Power Platform components (Advanced)
+          href: coe/setup-almacceleratorpowerplatform.md
         - name: Configuring Deployment Configuration and Data
           href: coe/setup-almacceleratorpowerplatform-deployment-config.md
         - name: Configuring Pipeline Sync

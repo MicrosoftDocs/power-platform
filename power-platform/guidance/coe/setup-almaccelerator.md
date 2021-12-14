@@ -20,6 +20,9 @@ search.app:
 
 # Set up ALM Accelerator for Makers components
 
+> [!IMPORTANT]
+> The ALM Accelerator for Makers components are for reference only. For more robust deployment configurations including components that need to be configured as part of or after the solution deployment, it's recommended to use the ALM Accelerator for Power Platform. The GitHub integration in the ALM Accelerator for Makers will eventually be replaced by functionality in the ALM Accelerator for Power Platform, but remains as part of the CoE Starter Kit for reference. More information: [Set up ALM Accelerator for Power Platform components](setup-almacceleratorpowerplatform-cli.md) and [Use ALM Accelerator for Power Platform components](almacceleratorpowerplatform-components.md)
+
 This solution uses [GitHub actions](../../alm/devops-github-actions.md) for source control and deployments. The [GitHub connector](/connectors/github/) is used in flows to interact with GitHub. More information: [Use the ALM Accelerator for Makers components](almaccelerator-components.md)
 
 > [!IMPORTANT]
@@ -32,6 +35,7 @@ This solution uses [GitHub actions](../../alm/devops-github-actions.md) for sour
 The ALM Accelerator for Makers components will manage deploying solutions from development to testing to production environments. You'll need separate environments for deploying ALM Accelerator for Makers, and for the development, testing, and production of your project.
 
 - Create an environment with a Microsoft Dataverse database for deploying ALM Accelerator for Makers.
+- The environment must have a DLP policy that allows [Dataverse](/connectors/commondataservice/), [Office 365 Outlook](/connectors/office365/), [Power Apps for Makers](/connectors/powerappsforappmakers/), [Approvals](/connectors/approvals/), [GitHub](/connectors/github/) [Power Platform for Admins](/connectors/powerplatformforadmins/) to be used together. Those connectors must be in the business data&ndash;only bucket of the DLP policy for this environment.
 - Any target environment (development, test, or production) will require a Dataverse database for deploying solutions.
 - Create a GitHub account at [GitHub.com](https://github.com).
 - Create a [GitHub org](https://docs.github.com/free-pro-team@latest/github/setting-up-and-managing-organizations-and-teams/creating-a-new-organization-from-scratch).

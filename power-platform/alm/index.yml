@@ -94,9 +94,9 @@ landingContent:
           - text: Use GitHub Actions for Power Platform
             url: devops-github-actions.md
           - text: "CoE: Set up ALM Accelerator"
-            url: /power-platform/guidance/coe/setup-almaccelerator
+            url: /power-platform/guidance/coe/setup-almacceleratorpowerplatform-cli
           - text: "CoE: Use ALM Accelerator"
-            url: /power-platform/guidance/coe/almaccelerator-components
+            url: /power-platform/guidance/coe/almacceleratorpowerplatform-components
   
   
   # Card
