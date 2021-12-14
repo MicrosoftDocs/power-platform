@@ -99,7 +99,7 @@ There's a difference in the models for adding users to Dataverse environments an
 
 ### Role assignments 
 
-<table style="width:100%">
+<table width="100%">
 <tr>
 <th>Persona</th>
 <th>Description</th>
@@ -334,7 +334,7 @@ Follow these steps to apply a DLP policy:
 [Power Apps and Teams](/powerapps/teams/overview) <br/>
 [Power Automate and Teams](/power-automate/teams/overview)<br/>
 [Power Virtual Agents and Teams](/power-virtual-agents/teams/fundamentals-what-is-power-virtual-agents-teams)<br />
-[Enable Microsoft Teams Integration for model-driven apps](enable-teams-integration.md) <br />
+[Manage your apps in the Microsoft Teams admin center](/MicrosoftTeams/manage-apps) <br />
 [Microsoft Learn: Get started with Microsoft Dataverse for Teams](/learn/modules/get-started-dataverse-teams/)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

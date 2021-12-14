@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/29/2021
+ms.date: 12/09/2021
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -46,7 +46,7 @@ The following web client admin settings have moved.
 
 These security settings are now managed in the Power Platform admin center.
 
-- [Manage application users in the Power Platform admin center](manage-application-users.md)
+- [Manage application users in the [Microsoft 365 admin center](https://admin.microsoft.com)
 - [Dataverse teams management](manage-teams.md)
 - [Assign security roles to users in an environment that has a Dataverse database](database-security.md#assign-security-roles-to-users-in-an-environment-that-has-a-dataverse-database)
 
