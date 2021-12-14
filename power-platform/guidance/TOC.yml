@@ -114,11 +114,11 @@
         href: coe/setup-theming.md
       - name: Set up Innovation Backlog components
         href: coe/setup-innovationbacklog.md
-      - name: Set up ALM Accelerator for Makers components
-        href: coe/setup-almaccelerator.md
       - name: Set up ALM Accelerator for Power Platform components
         href: coe/setup-almacceleratorpowerplatform-cli.md
-        items:  
+        items:
+        - name: Set up ALM Accelerator for Power Platform step-by-step
+          href: coe/setup-almacceleratorpowerplatform-cli.md
         - name: Configuring Deployment Configuration and Data
           href: coe/setup-almacceleratorpowerplatform-deployment-config.md
         - name: Configuring Pipeline Sync
@@ -127,6 +127,9 @@
           href: coe/setup-almacceleratorpowerplatform-users.md
         - name: Configuring Deployment User Settings and Profiles
           href: coe/setup-almacceleratorpowerplatform-deployment-profiles.md
+        - name: Set up ALM Accelerator for Makers components
+          href: coe/setup-almaccelerator.md
+
     - name: What's in the CoE Starter Kit
       items:  
       - name: CoE Starter Kit modules
