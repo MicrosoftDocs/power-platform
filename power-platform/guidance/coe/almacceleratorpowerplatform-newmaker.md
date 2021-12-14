@@ -29,19 +29,17 @@ Watch how to use the ALM Accelerator for Power Platform solution
 
 ## Walkthrough: ALM Accelerator New Maker Experience
 
-1. Once the app is installed and configured, launch it from your Environment under Apps.
+1. Once you have installed and configured the app, launch it from your Environment under Apps by select **ALM Accelerator for Power Platform**.
 
-1. Review and create the necessary connections and accept the consent dialog.
+1. When prompted to create connections / grant consent create the necessary connections or accept the consent dialog.
 
-1. When prompted with the following screen enter 'https://graph.microsoft.com' for both the **Base Resource URL** and **Azure AD Resource URI**
+1. If prompted to create a HTTP with Azure AD connection, enter 'https://graph.microsoft.com' for both the **Base Resource URL** and **Azure AD Resource URI**.
 
-   ![HTTP with Azure AD configuration](media/almacceleratorpowerplatform-advancedmaker/image-20211201183325356.png "HTTP with Azure AD configuration")
+1. Select **Create** for each connection when prompted.
 
-1. Now select an environment, next time you open the app, it will remember which environment you were working on.
+1. The first time you open the app a dialog will open and you'll be asked to **select an environment**. Next time you open the app, it will remember which environment you were working on.
 
-    ![Configure Settings for AA4PP](media/almacceleratorpowerplatform-components/aa4pp-new-maker-environment-selection.png "Configure Settings for AA4PP")
-
-1. The main screen will display a list of all the **unmanaged solutions** in the environment. You can refresh the list using the **refresh** button if you don't see new solutions you've created:
+1. Once the environment is selected, the main screen will display a list of all the **unmanaged solutions** in the environment. You can refresh the list using the **refresh** button if you don't see new solutions you've created:
 
     - **Save Solution**: Saves the current state of the solution into version control so all changes done to the solution can be tracked
     - **Publish Solution**: Allows you to request to move the solution across environments
@@ -52,7 +50,8 @@ Watch how to use the ALM Accelerator for Power Platform solution
 
 1. Next step will be to choose a **Solution Profile** for the solution so you can associate it to a specific to a **Repository** in a given **Organization** and **Project** in DevOps. This selection will determine which environments you can deploy the solution into:
 
-   ![Solution Profile Selection](media/almacceleratorpowerplatform-components/aa4pp-new-maker-solution-profile-selection.png "Solution Profile Selection")
+   - Select **Choose a Profile** for your Solution in the Solution list.
+   - In the Solution Profile Dialog select a **Profile** and Select **Save**.
 
     > [!NOTE]
     > If you don't find a Solution Profile that suits your needs, you will need to talk to an administrator to get it created.

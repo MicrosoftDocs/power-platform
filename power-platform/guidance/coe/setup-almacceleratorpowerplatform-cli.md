@@ -1,6 +1,6 @@
 ---
 title: "Setup ALM Accelerator for Power Platform Using CoE CLI | MicrosoftDocs"
-description: "The ALM Accelerator for Power Platform will help you follow ALM patterns and practices to source control and move your solutions from your development environment to test and production environments using DevOps"
+description: "The ALM Accelerator for Power Platform will help you follow ALM patterns and practices to source control and move your solutions from your development environment to test and production environments using DevOps. This guide will walk through the setup of the Accelerator using the Center of Excellence CLI"
 author: mikefactorial
 manager: devkeydet
 ms.service: power-platform
@@ -17,7 +17,8 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Set up ALM Accelerator for Power Platform (AA4PP) components (Preview)
+
+# Set up ALM Accelerator for Power Platform (AA4PP) components with CoE CLI (Preview)
 
 > [!NOTE]
 > ALM Accelerator for Power Platform is currently in public preview. Please see Issues currently tagged as [vnext](https://github.com/microsoft/coe-starter-kit/issues?q=is%3Aopen+is%3Aissue+label%3Aalm-accelerator+label%3Avnext) for the Roadmap to be completed prior to general availability. While in Public Preview it can be expected that there will be breaking changes and frequent updates to address feedback from preview members. Additionally, the Public Preview is reliant on the experimental [Power Apps Source File Pack and Unpack Utility](https://github.com/microsoft/PowerApps-Language-Tooling) that is being developed separately from AA4PP.
