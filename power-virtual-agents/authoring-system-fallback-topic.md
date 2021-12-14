@@ -57,7 +57,7 @@ When you open this topic in the authoring canvas, you'll see that the default fa
 
 ![Fallback topic default content.](media/system-fallback-default-content.png "Fallback topic default content")
  
-You can customize this topic as with any other [system topic](authoring-create-edit-topics.md). You can also use the *UnrecognizedTriggerPhrase* variable that stores the user input the bot couldn't understand. For example, you can use the variable as an input and pass it to a [Power Automate flow](advanced-flow.md) or [Bot Framework Skill](advanced-use-skills.md).
+You can customize this topic as with any other [system topic](authoring-create-edit-topics.md). You can also use the *UnrecognizedTriggerPhrase* variable that stores the user input the bot couldn't understand. For example, you can use the variable as an input and pass it to a [Power Automate flow](advanced-flow.md) or [Bot Framework skill](advanced-use-skills.md).
 
 >[!Note]
 >The system fallback topic doesn't have a trigger phrase.

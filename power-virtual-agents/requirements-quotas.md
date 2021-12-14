@@ -27,7 +27,7 @@ The following quotas, defined as requests per minute (RPM), apply to Power Virtu
 
 Action | Quota with the paid plan
 --|--
-**Messages to a chatbot**<br/>(Includes any message from a user or integrations, such as Azure Bot Framework Skills, to a single chatbot.)  | 800 RPM per bot	
+**Messages to a chatbot**<br/>(Includes any message from a user or integrations, such as Azure Bot Framework skills, to a single chatbot.)  | 800 RPM per bot	
 
 
 If the quota for **messages to a chatbot** is met, the user chatting with the chatbot will see a failure notice when they try to send a message. They'll be prompted to retry.
