@@ -37,9 +37,7 @@ When storing the customDeploymentSettings.json in the root of the config directo
 
 ![Config folder sample](media/setup-almacceleratorpowerplatform-deployment-config/image-20211203085159850.png)
 
-Additionally, you can **create user specific configuration files** (for example, the JohannaDev directory pictured above) for individual developers to use when importing unmanaged solutions from source control. When the user imports an unmanaged solution from source control, they will be presented with the option to choose a specific configuration.
-
-![Select a configuration from the list](media/setup-almacceleratorpowerplatform-deployment-config/image-20210622130424580.png)
+Additionally, you can **create user specific configuration files** (for example, the JohannaDev directory pictured above) for individual developers to use when importing unmanaged solutions from source control. When the user imports an unmanaged solution from source control in the ALM Accelerator, they will be presented with the option to choose a specific configuration.
 
 The deployment settings json file is used to configure connection references and environment variables
 
@@ -126,8 +124,7 @@ The connection reference property in the customDeploymentConfiguration.json is *
      ![Schema Name in the disabled text field below Name *](media/setup-almacceleratorpowerplatform-deployment-config/connrefschema.png)
 
    - The **connection id** can be obtained via the URL of the connection after you create it. For example, the ID of the connection below is **9f66d1d455f3474ebf24e4fa2c04cea2** where the URL is 'https://.../connections/shared_commondataservice/9f66d1d455f3474ebf24e4fa2c04cea2/details'
-     ![The connection id embedded in the connection url](media/setup-almacceleratorpowerplatform-deployment-config/connid.png)
-
+   
 1. Once you've gathered the connection reference schema names and connection IDs, go to the **customDeploymentSettings.json** and paste the values into  the **ConnectionReferences property**.
 
    ```json
@@ -151,8 +148,6 @@ The connection reference property in the customDeploymentConfiguration.json is *
 1. On the Pipeline Variables screen, create the **connection.[connection_reference_logicalname]**. For above example this will be **connection.cat_CDS_Current pipeline variable**.
 
 1. Set the value to the **connection id** you gathered above and **Select Keep this value secret** if you want to ensure the value is not saved as plain text.
-
-   ![Set connection id as a pipeline variable](media/setup-almacceleratorpowerplatform-deployment-config/image-20210708141947185.png)
 
 1. Where applicable repeat the steps above for each solution / pipeline you create.
 
@@ -207,8 +202,6 @@ The environment variable property in the customDeploymentConfiguration.json is *
 1. On the Pipeline Variables screen, create a **pipeline variable** for each of the tokens in your configuration (for example, variable.cat_TextEnvironmentVariable).
 
 1. Set the value to the **environment variable value** for that specific environment and **Select Keep this value secret** if you want to ensure the value is not saved as plain text.
-
-   ![Set Text Environment Variable as a pipeline variable](media/setup-almacceleratorpowerplatform-deployment-config/image-20210708150430680.png)
 
 1. Where applicable repeat the steps above for each solution / pipeline you create.
 
@@ -323,8 +316,6 @@ The environment variable property in the customDeploymentConfiguration.json is *
 1. If you're using **'Replace Tokens' extension** and adding tokens in your configuration like in the above example, navigate to the pipeline for your solution **Select Edit -> Variables**
 
 1. On the Pipeline Variables screen, create a **pipeline variable** for each of the tokens in your configuration (for example, **defaultvariable.cat_TextEnvironmentVariable**).
-
-   ![cat_TextEnvironmentVariable pipeline variable](media/setup-almacceleratorpowerplatform-deployment-config/image-20210723173238713.png)
 
 1. As necessary, repeat the steps above for each solution / pipeline you create.
 
@@ -517,34 +508,20 @@ In many cases, there will be configuration or seed data that you'll want to impo
 
 1. **Login to the tenant** from which you want to **export your configuration data**
 
-   ![Login to tenant using Office 365 authentication](media/setup-almacceleratorpowerplatform-deployment-config/image-20210217092809637.png)
-
 1. Select your **environment**
 
-   ![Select an environment from the list of environments](media/setup-almacceleratorpowerplatform-deployment-config/image-20210217092931725.png)
-
 1. Select the specific **Tables and Columns** you want to export for your configuration data.
-
-   ![Select specific tables and columns from the list of tables and columns and add them](media/setup-almacceleratorpowerplatform-deployment-config/image-20210217093237070.png)
 
 1. Select **Save and Export** and save the data to the directory path **config\ConfigurationMigrationData** in your **local DevOps repo** under the **solution folder** for which this configuration data is to be imported.
 
    > [!NOTE]
    > The pipeline will look for this specific folder to run the import after your solution is imported. Ensure that the name of the folder and the location are the same as the screenshot below.
 
-   ![ConfigurationMigrationData directory shown under config directory](media/setup-almacceleratorpowerplatform-deployment-config/image-20210217093914368.png)
-
     - Similar to the note regarding specific configuration files per environment the steps above create configuration data that will be deployed to all environments. However, if you have specific configuration data per environment you can **create sub-directories in the config directory** with the name of the Environment to allow for more flexibility. The directory name in this case **must match the EnvironmentName pipeline variable** you created when setting up your pipeline (Validate, Test, Production). If no environment-specific configuration data / directory is found, the pipelines will revert to the configuration data in the root of the config directory.
 
 1. When prompted to **export the data** select **Yes**
 
-   ![Select yes for Would you like to export the data?](media/setup-almacceleratorpowerplatform-deployment-config/image-20210217094104975.png)
-
 1. Choose the **same location** for your exported data and **select Save** then **Export Data**.
-
-   ![ConfigurationMigrationData directory](media/setup-almacceleratorpowerplatform-deployment-config/image-20210217094247030.png)
-
-   ![Select Export Data button](media/setup-almacceleratorpowerplatform-deployment-config/image-20210217094341476.png)
 
 1. When the export is complete **unzip the files from the data.zip** file to the ConfigurationMigrationData directory and **delete the data.zip and SampleData.xml** file.
 

@@ -46,8 +46,6 @@ Watch how to use the ALM Accelerator for Power Platform solution
     - **Choose a Profile**: Allows you to select a **Solution profile** to associate a solution to a **Repository** in a given **Organization** and **Project**. If you're unsure what profile to select ask your administrator to provide the name of the solution profile for your solution.
     - **Request History**: (right chevron icon): Provides a list of requests (saves and deployments) done for that solution.
 
-   ![Solution List](media/almacceleratorpowerplatform-components/aa4pp-new-maker-main-screen.png "Solution List")
-
 1. Next step will be to choose a **Solution Profile** for the solution so you can associate it to a specific to a **Repository** in a given **Organization** and **Project** in DevOps. This selection will determine which environments you can deploy the solution into:
 
    - Select **Choose a Profile** for your Solution in the Solution list.
@@ -58,9 +56,7 @@ Watch how to use the ALM Accelerator for Power Platform solution
 
 1. Configure the deployment setting using the **Select the Configure Deployment Settings** link under the name of the Solution. On the configuration deployment page, you'll see the following items
 
-   - Deployment Environments
-
-     ![Deployment Environments List](media/almacceleratorpowerplatform-components/aa4pp-deployment-settings-environment.png "Deployment Environments List")
+   - Deployment Environment List (for example, Validation, Test, and Production)
 
      - These environments are the ones specified in the **Solution Profile**. They correspond with the environments in which your solution will be available after you publish.
 
@@ -109,14 +105,10 @@ Watch how to use the ALM Accelerator for Power Platform solution
 
     Be sure to publish any App changes before initiating the saving of the solution. During this step you will also be asked to configure the deployment settings which will ask for the same information as detailed in the previous step.
 
-     ![Export Solution from Dataverse to New DevOps Branch](media/almacceleratorpowerplatform-components/aa4pp-new-maker-commit-solution.png "Export Solution from Dataverse to New DevOps Branch")
-
     > [!NOTE]
     > When the publishing begins, a waiting indicator will appear. If the push is successful, a checkbox will appear otherwise a red x will appear.
-
-1. Use the **Publish Solution** button to publish your solution to other environments. Provide a **Title** and **Notes** (this information is added to the Pull Request created in DevOps) and select the environment you want to publish the solution into.
-
-    ![Create Pull Request properties](media/almacceleratorpowerplatform-components/aa4pp-new-maker-deploy-solution.png "Create Pull Request properties")
+    
+1. Use the **Deploy Solution** button to publish your solution to other environments. Provide a **Title** and **Notes** (this information is added to the Pull Request created in DevOps) and select the **Environment** you want to deploy the solution into.
 
 1. Depending on the **Solution Profile** configuration, the application will either create a pull request that needs to be completed in DevOps, or trigger a pipeline that someone will need to approve for it to run and complete the publishing. You'll see the progress indicator state the deployment has started. You can also use the right chevron icon to visualize the request history.
 

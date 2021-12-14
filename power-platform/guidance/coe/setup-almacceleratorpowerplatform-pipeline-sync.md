@@ -31,14 +31,11 @@ The Pipeline Sync script was created to make synchronizing the ALM Accelerator f
 1. In DevOps, go to **Pipelines** and **Create a New Pipeline**
 
 1. Select **Azure Repos Git** for your code Repository and point to DevOps repo you created and seeded with the pipeline templates in step 1.
-   ![Select Azure Repos Git in "Where is your code?" dialog](media/almacceleratorpowerplatform-components/image-b27c7dc5-7fe7-449f-99bc-73b9b351cc94.png)
-
+   
 1. On the **Configure your pipeline** page, select **Existing Azure Pipelines YAML file** and point to **/Pipelines/sync-pipeline-repo.yml** and Select **Continue**.
-   ![Select Existing Azure Pipelines YAML file in "Configure your pipeline" dialog](media/setup-almacceleratorpowerplatform-pipeline-sync/image-20210524091622017.png)
-
+   
 1. On the next screen Select **Save** and then Select the **3 dots next to Run Pipeline** and Select **Rename/Move**.
-   ![Rename/move pipeline after Save](media/almacceleratorpowerplatform-components/image-c4e3cc16-3abd-453b-a420-9366ef587e8c.png)
-
+   
 1. Update the pipeline name to **sync-pipeline-repo** and select **Save**.
 
 1. Set the **TEMPLATE-REPO pipeline variable** to <https://github.com/microsoft/coe-alm-accelerator-templates>
@@ -46,15 +43,9 @@ The Pipeline Sync script was created to make synchronizing the ALM Accelerator f
    > [!NOTE]
    > The Sync Pipeline can be used to sync any GitHub repo to DevOps. Setting the TEMPLATE-REPO to the source GitHub repo allows you to specify the source of the sync.
 
-   ![Update TEMPLATE-REPO pipeline variable with url of GitHub repo](media/setup-almacceleratorpowerplatform-pipeline-sync/image-20210524095158923.png)
-
 1. Run the new Pipeline
 
-   ![Select Run pipeline to test](media/setup-almacceleratorpowerplatform-pipeline-sync/image-20210524091948116.png)
-
 1. Enter the name of the **SourceBranch**, **BranchToCreate** in DevOps and the **TargetBranch** (for example main) and **Select Run**
-
-   ![Enter SourceBranch, BranchToCreate and TargetBranch as parameters to run the pipeline](media/setup-almacceleratorpowerplatform-pipeline-sync/image-20210524101705475.png)
 
 1. After the Pipeline runs, a Pull Request will be created for the **BranchToCreate** into the **TargetBranch**. To commit the changes **Approve and Complete the Pull Request**.
 

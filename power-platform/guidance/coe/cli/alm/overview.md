@@ -153,8 +153,7 @@ The following recording shows a sample generating an install configuration file 
   - [Development Project Setup](/power-platform/guidance/coe/setup-almacceleratorpowerplatform#development-project-setup) - Documents the Manual steps that are automated by the CLI install command.
   - [Solution Setup](/power-platform/guidance/coe/setup-almacceleratorpowerplatform#solution-setup) - Documents the manual steps to set up Azure DevOps that are performed by the CLI install command.
   - [Importing Solution](/power-platform/guidance/coe/setup-almacceleratorpowerplatform#importing-the-solution-and-configuring-the-app) - Documents the manual steps to import the managed solution that are performed by the CLI install command.
-- [Deployment Configuration Settings](/power-platform/power-platform/guidance/coe/setup-almacceleratorpowerplatform-deployment-config) - Configuring solution assets for the deployment (for example, Connection References, Envionment Variables and Sharing).
+- [Deployment Configuration Settings](/power-platform/power-platform/guidance/coe/setup-almacceleratorpowerplatform-deployment-config) - Configuring solution assets for the deployment (for example, Connection References, Environment Variables and Sharing).
 - [Pipeline Sync Setup](/power-platform/power-platform/guidance/coe/setup-almacceleratorpowerplatform-pipeline-sync) - Creating a pipeline to sync the latest YAML from the CoE Starter Kit GitHub repo.
-- [Sample Solution Setup](/power-platform/power-platform/guidance/coe/setup-almacceleratorpowerplatform-sample-solution) - Getting started with a Sample Solution using the ALM Accelerator for Power Platform.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
