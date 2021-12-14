@@ -31,7 +31,7 @@ You call flows from within topics, as a discrete **Call an action** node. You ca
 >To use flows within Power Virtual Agents, they must meet the following requirements:
 >* A flow can only be called from a topic located in the same [Microsoft Dataverse environment](/powerapps/maker/common-data-service/data-platform-intro) as your bot.
 >* Flows must also be in a solution in Power Automate. You can [move flows into solutions](#optionally-move-a-flow-from-default-solution-to-another-solution) so they are listed in the authoring canvas.
->* Flow values must be returned synchronously to Power Virtual Agents. This is the default behavior when creating new flows from within Power Virtual agents.
+>* [Flow values must be returned synchronously to Power Virtual Agents.](#disable-asynchronous-responses-from-flows)
 
 
 Flows typically use variables to input and output information. The variables can then be used in other nodes within the topic.
@@ -305,7 +305,22 @@ Enter your city and zip code at the prompt to get today's weather forecast from 
 
 ![Test Dialog.](media/GetWeatherE2E.png)
 
+## Disable asynchronous responses from flows
+Power Virtual agents does not support returning values from flows asynchronously. By default this behavior is disabled when creating a new flow. 
 
+<!-- TODO: link to error code page when it exists -->
+If this behavior is enabled, your bot may respond with:
+
+> Something unexpected happened. We're looking into it. Error code: 3000.
+
+<!-- TODO: remove these steps and replace with link to relevant power automate docs when they are made -->
+To confirm your flow is returning values synchronously:
+1. Follow the instructions to [locate and modify your flow](#modify-a-flow-on-the-power-automate-portal).
+1. Locate the Power Virtual Agents step that returns values.
+1. Select the three dot menu and then select **Settings**.
+    ![Open step settings.](media/advanced-flow/async1.png)
+1. Ensure the **Asynchronous Response** toggle is set to **Off** and select **Done**.
+    ![Disable asynchronous response.](media/advanced-flow/async2.png)
 ## Troubleshoot your bot
 
 While testing your bot in the **Test chat** pane, you can use the **Save snapshot** command to get conversational diagnostics data. This data can help you troubleshoot issues, such as the bot not responding in the way you expect. 
