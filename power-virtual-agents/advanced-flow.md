@@ -306,23 +306,24 @@ Enter your city and zip code at the prompt to get today's weather forecast from 
 ![Test Dialog.](media/GetWeatherE2E.png)
 
 ## Disable asynchronous responses from flows
-Power Virtual Agents doesn't support Power Automate flows that return values [asynchronously](/power-automate/guide-staff-through-common-tasks-processes#when-to-use-workflows). By default this behavior is disabled when creating a new flow from within Power Virtual Agents.
+Power Virtual Agents doesn't support Power Automate flows that return values [asynchronously](/power-automate/guide-staff-through-common-tasks-processes#when-to-use-workflows). When creating a new flow from within Power Virtual Agents, this behavior is disabled by default.
 
 <!-- TODO: link to error code page when it exists -->
 Flows that have the Asynchronous Response feature enabled may cause an error when your bot tries to run the flow. Instead of running the flow, the bot will say "Something unexpected happened. We're looking into it. Error code: 3000.".
 
 <!-- TODO: remove these steps and replace with link to relevant power automate docs when they are made -->
-You might have enabled the feature in the flow to help with managing it, however, you'll need to disable the feature for the bot to work properly when it runs the flow:
+If you've enabled the Asynchronous Response, you'll need to disable it for the bot to work properly when it runs the flow:
+**To disable Asynchronous Response**
 
 1. [Locate and modify your flow](#modify-a-flow-on-the-power-automate-portal).
    
 1. In your Power Automate flow, locate the Power Virtual Agents step that returns values.
    
-1. Select the three dots next to the name of the flow and then **Settings**.
+Next to the name of the flow, select the three dots, and then select **Settings**.
    
     ![Open step settings.](media/advanced-flow/async1.png)
 
-1. Set the **Asynchronous Response** toggle to **Off** and select **Done**.
+Set **Asynchronous Response**  to **Off**, and then select **Done**.
    
     ![Disable asynchronous response.](media/advanced-flow/async2.png)
 
