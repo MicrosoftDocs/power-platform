@@ -1,5 +1,5 @@
 ---
-title: "Set up ALM Accelerator for Power Platform using CoE CLI"
+title: "Set up ALM Accelerator for Power Platform"
 description: "Steps to do administrator install of the ALM Accelerator using the Center of Excellence (CoE) Command Line Interface (CLI)"
 keywords: 
 author: Grant-Archibald-MS
@@ -17,7 +17,7 @@ search.app:
   - Powerplatform
 ---
 
-# Set up ALM Accelerator for Power Platform using CoE CLI
+# Set up ALM Accelerator for Power Platform
 
 As a first step you'll need to complete the initial steps of an ALM deployment as an Administrator. The commands below allow you to quickly automate the install. When you completed these steps, you can add Advanced Makers and setup connections to their Power Platform development environments.
 

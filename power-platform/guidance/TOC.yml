@@ -196,10 +196,10 @@
         href: coe/cli/sample-local-install.md
       - name: Upgrade CoE CLI
         href: coe/cli/upgrade.md
-      - name: ALM Accelerator for Power Platform CoE CLI
+      - name: ALM Accelerator for Power Platform
         href: coe/cli/alm/overview.md
         items:
-        - name: Set up ALM Accelerator for Power Platform with CoE CLI
+        - name: Set up ALM Accelerator for Power Platform
           href: coe/cli/alm/admin-install.md
         - name: Before You Start
           href: coe/cli/alm/before-you-start.md
