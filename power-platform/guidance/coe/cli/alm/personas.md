@@ -120,9 +120,9 @@ coe alm install -c devops \
   -p alm-sandbox
 ```
 
-## Persona Command Mapping
+## Persona command mapping
 
-### Command Commands
+### Command commands
 
 Providing a quick overview of each of the coe commands
 
@@ -158,7 +158,7 @@ Providing a quick overview of each of the coe commands
 
 [Read alm install help](https://github.com/microsoft/coe-starter-kit/blob/main/coe-cli/docs/help/alm/install.md)
 
-## Solution Setup
+## Solution setup
 
 Assuming that AA4PP has been set up and installed, the first command that the Advanced Maker will run is the **coe alm user add** command. The user add command will register an Application User created during install as a System administrator in their development environment to integrate with the solution. For example, using the default parameters
 
@@ -180,7 +180,7 @@ coe alm branch \
 
 More information: [branch](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/branch.md) command
 
-## Administrator Setup
+## Administrator setup
 
 Each development environment used by makers will need to be registered with Azure DevOps and give rights to the Azure Active Directory Application.
 

@@ -25,17 +25,14 @@ As a first step you'll need to complete the initial steps of an ALM deployment a
 
 The following roles are involved with Power Platform
 
-1. Administrator
+  1. Administrator
+    - Azure Active Directory - Permissions to Create Azure Active Directory Application with [Admin Level Consent](/azure/active-directory/manage-apps/grant-admin-consent)
+    - Power Platform - Environment Administrator to Create Validation, Test and Production environments
+    - Azure DevOps - Organization and Project Administrator
 
-- Azure Active Directory - Permissions to Create Azure Active Directory Application with [Admin Level Consent](/azure/active-directory/manage-apps/grant-admin-consent)
-)
-- Power Platform - Environment Administrator to Create Validation, Test and Production environments
-- Azure DevOps - Organization and Project Administrator
-
-1. Maker
-
-- Power Platform - Create Development environment
-- Azure DevOps - Azure DevOps project user, create solution branch
+  1. Maker
+    - Power Platform - Create Development environment
+    - Azure DevOps - Azure DevOps project user, create solution branch
 
 It is assumed that this installation will be run by a single user that has the following rights:
 
