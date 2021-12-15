@@ -306,15 +306,13 @@ Enter your city and zip code at the prompt to get today's weather forecast from 
 ![Test Dialog.](media/GetWeatherE2E.png)
 
 ## Disable asynchronous responses from flows
-Power Virtual agents does not support returning values from flows asynchronously. By default this behavior is disabled when creating a new flow. 
+Power Virtual Agents doesn't support Power Automate flows that return values asynchronously. By default this behavior is disabled when creating a new flow from within Power Virtual Agents.
 
 <!-- TODO: link to error code page when it exists -->
-If this behavior is enabled, your bot may respond with:
-
-> Something unexpected happened. We're looking into it. Error code: 3000.
+Flows that have the Asynchronous Response feature enabled may cause an error when your bot tries to run the flow. Instead of running the flow, the bot will say "Something unexpected happened. We're looking into it. Error code: 3000.".
 
 <!-- TODO: remove these steps and replace with link to relevant power automate docs when they are made -->
-To confirm your flow is returning values synchronously:
+You might have enabled the feature in the flow to help with managing it, however, you'll need to disable the feature for the bot to work properly when it runs the flow:
 1. Follow the instructions to [locate and modify your flow](#modify-a-flow-on-the-power-automate-portal).
 1. Locate the Power Virtual Agents step that returns values.
 1. Select the three dot menu and then select **Settings**.
