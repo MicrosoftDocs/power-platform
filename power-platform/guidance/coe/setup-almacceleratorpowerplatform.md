@@ -20,7 +20,7 @@ search.app:
 # Set up ALM Accelerator for Power Platform components Manually (Preview)
 
 > [!NOTE]
-> ALM Accelerator for Power Platform is currently in public preview. Please see [Issues currently tagged as vnext](https://github.com/microsoft/coe-starter-kit/issues?q=is%3Aopen+is%3Aissue+label%3Aalm-accelerator+label%3Avnext) for the Roadmap to be completed prior to general availability. While the tool is in Public Preview, you should expect that there will be breaking changes and frequent updates to address feedback from preview members. Additionally, the Public Preview is reliant on the experimental [Power Apps Source File Pack and Unpack Utility](https://github.com/microsoft/PowerApps-Language-Tooling) that is being developed separately from AA4PP.
+> ALM Accelerator for Power Platform (AA4PP) is currently in public preview. Please see [Issues currently tagged as vnext](https://github.com/microsoft/coe-starter-kit/issues?q=is%3Aopen+is%3Aissue+label%3Aalm-accelerator+label%3Avnext) for the Roadmap to be completed prior to general availability. While the tool is in Public Preview, you should expect that there will be breaking changes and frequent updates to address feedback from preview members. Additionally, the Public Preview is reliant on the experimental [Power Apps Source File Pack and Unpack Utility](https://github.com/microsoft/PowerApps-Language-Tooling) that is being developed separately from AA4PP.
 
 The ALM Accelerator components enable makers to apply source control strategies using DevOps and use automated builds and deployment of solutions to their environments without the need for manual intervention by the maker, administrator, developer, or tester. In addition, the ALM Accelerator helps makers work without intimate knowledge of the downstream technologies and to be able to switch quickly from developing solutions to source controlling the solution and ultimately pushing their apps to other environments with as few interruptions to their work as possible.
 
@@ -90,50 +90,50 @@ Creating an App Registration for the ALM Accelerator is a one time setup step to
 
 1. Sign in to [portal.azure.com](https://portal.azure.com).
 1. Go to **Azure Active Directory** > **App registrations**.
-    
+
 1. Select **New Registration** and give the registration a name (for example ALMAcceleratorServicePrincipal) leave all other options as default and select **Register**.
 
 1. Select **API Permissions** > **+ Add a permission**.
 
 1. Select **Dynamics CRM**, and configure permissions as follows:
-    
+
 1. Select **Delegated permissions**, and then select **user_impersonation**.
-    
+
 1. Select **Add permissions**.
 
 1. Repeat the steps above for the following permissions:
     - **PowerApps-Advisor (Analysis All)** (Required for running static analysis via [App Checker](/power-platform/alm/checker-api/overview). This permission can be found under **APIs my organization uses**.
-      
+
     - **DevOps**. (Required for connecting to DevOps via the custom connector in the ALM Accelerator App). This permission can be found under **APIs my organization uses**.
-    
+
       - When adding the DevOps permission, go to APIs my organization uses and search for DevOps and **copy the Application (client) ID**.
-    
+
         > [!IMPORTANT]
         > Disambiguation: We'll use this value later and specifically call it out as the **DevOps Application (client) ID** which is different from the **Application (client) ID** copied in Step 12 [below](#create-an-app-registration-in-your-aad-environment)
-    
-    - ![Copy the Application client ID](media/almacceleratorpowerplatform-components/image-4c6d6244-004e-4ac9-9034-79274f9be4c8.png)
-    
-1. After adding permissions in your App Registration, select **Grant Admin consent for (your tenant)**.
 
-1. Select **Certificates & Secrets** and select **New client secret**.
+      ![Copy the Application client ID](media/almacceleratorpowerplatform-components/image-4c6d6244-004e-4ac9-9034-79274f9be4c8.png)
 
-1. Set the **Expiration** and select **Add**.
+2. After adding permissions in your App Registration, select **Grant Admin consent for (your tenant)**.
 
-1. After adding the secret **copy the value** and store for safe keeping to be used later.
+3. Select **Certificates & Secrets** and select **New client secret**.
 
-1. Return to the **Overview** section of your App Registration and copy the **Application (client) ID** and **Directory (tenant) ID**.
+4. Set the **Expiration** and select **Add**.
+
+5. After adding the secret **copy the value** and store for safe keeping to be used later.
+
+6. Return to the **Overview** section of your App Registration and copy the **Application (client) ID** and **Directory (tenant) ID**.
 
      > [!IMPORTANT]
      > Disambiguation: We'll use this value later and call it out as the **Application (client) ID** which is different from the **DevOps Application (client) ID** copied in Step 7 [above](#create-an-app-registration-in-your-aad-environment).
 
-1. Select **Add a Redirect URI** > **Add a Platform** > **Web**.
+7. Select **Add a Redirect URI** > **Add a Platform** > **Web**.
 
-1. Set the **Redirect URI** to <https://global.consent.azure-apim.net/redirect>.
+8. Set the **Redirect URI** to <https://global.consent.azure-apim.net/redirect>.
 
     > [!NOTE]
     > You may need to update this later when configuring your custom connector after installing the app if this URL is different than the Redirect URL populated in the Custom Connector
 
-1. Select **Configure**.
+9. Select **Configure**.
 
 ### Install DevOps Extensions
 
@@ -159,7 +159,7 @@ The ALM Accelerator uses several DevOps extensions, including some third-party E
 1. Enter the url of the tag for the latest release (for example: [https://github.com/microsoft/coe-alm-accelerator-templates/tree/ALMAcceleratorForAdvancedMakers-September2021a](https://github.com/microsoft/coe-alm-accelerator-templates/tree/ALMAcceleratorForAdvancedMakers-September2021a) as the **Clone URL** and select **Import**.
 1. Check that the default branch for this repo is `main`. Choose **Repos** and **Branches** and ensure that the `main` branch is tagged as the default.
    If it's not, select the 3 vertical dots corresponding to the `main` branch and from the **More options** menu, choose **Set as default branch**.
-   
+
    > [!NOTE]
    > The AzDO repo you created above will be where the Solution Pipeline Templates and the Export / Import Pipelines will run. Later when you create the Pipelines for your solutions you may need to reference this specific Project/Repo if you choose to source control your solutions in another repo in AzDO.
 
@@ -247,7 +247,6 @@ The **VerifyDefaultEnvironmentVariableValues** can be used to ensure that specif
    | View build pipeline                   | Allow |
    | View builds                           | Allow |
 
-
 ## Development Project Setup
 
 The following section will guide you through the setup steps required for each of the Development Projects you'll support. In this context, a Development Project signifies the required infrastructure and configuration needed to support healthy ALM including configuration of you Dataverse environment that will support the ALM process.
@@ -264,7 +263,7 @@ Each Dataverse environment (e.g Development, Validation, Test, and Production) w
 1. Under **Project Settings** in your DevOps project, select the **Service connections** menu item.
 
 1. Select **Create/New service connection** and Search for Power Platform and select the **Power Platform** Service connection type and Select **Next**.
-    
+
 1. In the **Server URL**, put your environment URL (for example <https://myorg.crm.dynamics.com/>). **NOTE: You must include the trailing forward slash see below**
 
 1. Enter the same value as above for the **Service Connection Name**.  **NOTE: You must include the trailing forward slash**.
@@ -295,16 +294,16 @@ Each Dataverse environment (e.g Development, Validation, Test, and Production) w
 1. Select your environment.
 
 1. Select **Settings**.
-   
+
 1. Select **Users + permissions** > **Application users**.
-   
+
 1. Select **New app user** to add a new Application user.
-   
+
 1. Select the **Azure App Registration** you created, **Business Unit** and **Security Role**.
-   
+
     > [!NOTE]
     > It's recommended you give this user System Administrator rights to be able to perform the required functions in each of the environments.
-   
+
 1. Repeat these steps for each of your environments (Development, Validation, Test, and Production).
 
 ## Solution Setup
@@ -363,13 +362,13 @@ The following steps show how to **create a pipeline from the sample pipeline YAM
 1. In DevOps, go to **Pipelines** and **Create a New Pipeline**.
 
 1. Select **Azure Repos Git** for your code Repository.
-   
+
 1. Select the **DevOps repo** which contains the deployment Pipeline YAML.
 
 1. On the **Configure your pipeline** page select **Existing Azure Pipelines YAML file**, point to the **YAML File in your repo that you created in step 5** and Select **Continue**.
-   
+
 1. On the next screen Select **Save** and then Select the 3 dots next to Run Pipeline and Select **Rename/Move**.
-   
+
 1. Update the pipeline name to **deploy-validation-MyNewSolution**, **deploy-test-MyNewSolution**,or **deploy-prod-MyNewSolution** (where 'MyNewSolution' is the name of your solution) and select **Save**.
 
 1. Update the **Default branch for manual and scheduled builds** for more information, see [Configure pipeline triggers - Azure Pipelines | Microsoft Docs](/azure/devops/pipelines/process/pipeline-triggers?tabs=YAML#branch-considerations-for-pipeline-completion-triggers).
@@ -497,14 +496,14 @@ If your solution requires these other configuration settings and / or data, foll
 1. In the Power App maker portal, select your **Environment** and Select **Data** > **Custom Connectors** > **CustomAzureDevOps**
 
 1. Select **Edit** and go to the **Security** section and select **Edit** and set the following fields.
-   
+
    | Name | Value |
    |--|--|
    | Client ID | [The **Application (client) ID** you copied when [creating the App Registration](#create-an-app-registration-in-your-aad-environment)] |
    | Client secret | [The **Application (client) Secret** you copied when [creating the App Registration](#create-an-app-registration-in-your-aad-environment)] |
    | Tenant ID | leave as the default **common** |
    | Resource URL | [The **DevOps Application (client) ID** you copied when [adding permissions to your App Registration](#create-an-app-registration-in-your-aad-environment)] |
-   
+
 1. Select **Update Connector**
 
 1. Verify that the **Redirect URL** is populated on the Security page with the URL <https://global.consent.azure-apim.net/redirect>. If the **Redirect URL is other than <https://global.consent.azure-apim.net/redirect>** copy the URL and [return to the app registration your created](#create-an-app-registration-in-your-aad-environment) and update the [Redirect URI](#create-an-app-registration-in-your-aad-environment) you set earlier to the updated URL.

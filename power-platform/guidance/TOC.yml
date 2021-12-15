@@ -119,7 +119,7 @@
         items:
         - name: Setup ALM Accelerator for Power Platform using CoE CLI
           href: coe/cli/alm/overview.md
-        - name: Set up ALM Accelerator for Power Platform components Manually
+        - name: Set up ALM Accelerator for Power Platform components manually
           href: coe/setup-almacceleratorpowerplatform.md
         - name: Configuring Deployment Configuration and Data
           href: coe/setup-almacceleratorpowerplatform-deployment-config.md
