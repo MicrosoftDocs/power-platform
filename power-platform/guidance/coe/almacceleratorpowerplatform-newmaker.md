@@ -107,7 +107,7 @@ Watch how to use the ALM Accelerator for Power Platform solution
 
     > [!NOTE]
     > When the publishing begins, a waiting indicator will appear. If the push is successful, a checkbox will appear otherwise a red x will appear.
-    
+
 1. Use the **Deploy Solution** button to publish your solution to other environments. Provide a **Title** and **Notes** (this information is added to the Pull Request created in DevOps) and select the **Environment** you want to deploy the solution into.
 
 1. Depending on the **Solution Profile** configuration, the application will either create a pull request that needs to be completed in DevOps, or trigger a pipeline that someone will need to approve for it to run and complete the publishing. You'll see the progress indicator state the deployment has started. You can also use the right chevron icon to visualize the request history.

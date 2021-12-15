@@ -31,11 +31,11 @@ The Pipeline Sync script was created to make synchronizing the ALM Accelerator f
 1. In DevOps, go to **Pipelines** and **Create a New Pipeline**
 
 1. Select **Azure Repos Git** for your code Repository and point to DevOps repo you created and seeded with the pipeline templates in step 1.
-   
+
 1. On the **Configure your pipeline** page, select **Existing Azure Pipelines YAML file** and point to **/Pipelines/sync-pipeline-repo.yml** and Select **Continue**.
-   
+
 1. On the next screen Select **Save** and then Select the **3 dots next to Run Pipeline** and Select **Rename/Move**.
-   
+
 1. Update the pipeline name to **sync-pipeline-repo** and select **Save**.
 
 1. Set the **TEMPLATE-REPO pipeline variable** to <https://github.com/microsoft/coe-alm-accelerator-templates>

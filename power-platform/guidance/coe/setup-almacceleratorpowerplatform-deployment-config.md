@@ -124,7 +124,7 @@ The connection reference property in the customDeploymentConfiguration.json is *
      ![Schema Name in the disabled text field below Name *](media/setup-almacceleratorpowerplatform-deployment-config/connrefschema.png)
 
    - The **connection id** can be obtained via the URL of the connection after you create it. For example, the ID of the connection below is **9f66d1d455f3474ebf24e4fa2c04cea2** where the URL is 'https://.../connections/shared_commondataservice/9f66d1d455f3474ebf24e4fa2c04cea2/details'
-   
+
 1. Once you've gathered the connection reference schema names and connection IDs, go to the **customDeploymentSettings.json** and paste the values into  the **ConnectionReferences property**.
 
    ```json

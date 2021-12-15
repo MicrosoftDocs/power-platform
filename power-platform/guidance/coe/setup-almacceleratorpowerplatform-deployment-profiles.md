@@ -45,14 +45,14 @@ To create User Settings for AA4PP, use the following steps.
     - **Advanced Promote** - This function will provide users with the ability to change between using the Advanced Promote functionality (that is, specifying a source / target branch and creating a new branch).
     - **Advanced Deploy** - This function will provide users with the ability to toggle between using the Advanced Deploy functionality (that is, specifying a source / target branch for a Pull Request).
     - **Bypass Prepare** - This function will provide the user with the ability to skip the Preparation step during promotion of a solution (that is, bypass configuring deployment settings before committing to source control)
-    
+
 1. Update **User Labels**. Below are the specific areas that are configurable in the app related to user labels for functions. These values also show in the Deployment History view under the action that was executed.
 
     - **Deploy Solution** - Updating this label changes the text of the button for the **deployment action** in the app. The default value is **"DEPLOY SOLUTION"**
     - **Commit Solution** - Updating this label changes the text of the button for the **promote action** in the app. The default value is **"COMMIT SOLUTION"**
     - **Import Solution** - Updating this label changes the text of the button for the **import solution action** in the app. The default value is **"IMPORT SOLUTION"**
     - **Delete Solution** - Updating this label changes the text of the button for the **delete solution action** in the app. The default value is **"DELETE SOLUTION"**
-    
+
 1. Select **Save** to save your User Settings.
 
 1. Add **New Deployment Profiles** to your User Settings. Deployment Profiles are used by the AA4PP App to determine where and how to **create Branches** during the Commit stage and how to **create Pull Requests** when deploying. Below are the steps to create a Deployment Profile using the AA4PP Administration App to **associate with one or many Deployment User Settings**.
@@ -71,8 +71,8 @@ If a user logs in to the AA4PP App and doesn't have a Deployment User Settings a
 
       - If a user only has one Deployment User Setting shared with them, they won't see the drop-down to choose from. Their default user setting will be used by the app.
       - If no user setting is shared with them, the app will create a new User Deployment setting for the user and use the default interface for the app.
-      
-   1. Create a New Profile for your Solution. In order to begin source controlling and deploying a solution, you must have a profile associated with that solution.
+
+   2. Create a New Profile for your Solution. In order to begin source controlling and deploying a solution, you must have a profile associated with that solution.
       >[!NOTE]
       >Users who have a User Setting shared with them will only be able to perform functions on solutions to which they have been assigned a profile already. If a user has a User Setting shared with them that doesn't have a profile that is already assigned to a solution, they won't be able to perform actions on that profile.
 

@@ -119,7 +119,7 @@ Watch how to use the ALM Accelerator for Power Platform solution
    > [!NOTE]
    > Be sure to publish any App changes before initiating the push
 
-   - Select Commit Solution 
+   - Select Commit Solution
    - In the Commit Solution dialog Select an **existing branch** or **create a new branch** based on an existing branch and enter a **comment**. Use the hashtag notation for example `#123` to link the changes to a specific work item in DevOps and Select **Prepare Solution**.
    - After configuring / confirming your solution configuration as described in the previous step, Select **Commit Solution** in the Commit Solution dialog.
    - When the push begins, a waiting indicator will appear. If the push is successful, a checkbox will appear otherwise a red x will appear. To see the progress of your push, select the progress indicator, which will take you to the running pipeline in DevOps.
