@@ -31,7 +31,7 @@ You call flows from within topics, as a discrete **Call an action** node. You ca
 >To use flows within Power Virtual Agents, they must meet the following requirements:
 >* A flow can only be called from a topic located in the same [Microsoft Dataverse environment](/powerapps/maker/common-data-service/data-platform-intro) as your bot.
 >* Flows must also be in a solution in Power Automate. You can [move flows into solutions](#optionally-move-a-flow-from-default-solution-to-another-solution) so they are listed in the authoring canvas.
->* [Flow values must be returned synchronously to Power Virtual Agents.](#disable-asynchronous-responses-from-flows)
+>* [Flow values must be returned synchronously to Power Virtual Agents](#disable-asynchronous-responses-from-flows).
 
 
 Flows typically use variables to input and output information. The variables can then be used in other nodes within the topic.
