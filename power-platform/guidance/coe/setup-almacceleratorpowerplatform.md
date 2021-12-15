@@ -113,27 +113,27 @@ Creating an App Registration for the ALM Accelerator is a one time setup step to
 
       ![Copy the Application client ID](media/almacceleratorpowerplatform-components/image-4c6d6244-004e-4ac9-9034-79274f9be4c8.png)
 
-2. After adding permissions in your App Registration, select **Grant Admin consent for (your tenant)**.
+1. After adding permissions in your App Registration, select **Grant Admin consent for (your tenant)**.
 
-3. Select **Certificates & Secrets** and select **New client secret**.
+1. Select **Certificates & Secrets** and select **New client secret**.
 
-4. Set the **Expiration** and select **Add**.
+1. Set the **Expiration** and select **Add**.
 
-5. After adding the secret **copy the value** and store for safe keeping to be used later.
+1. After adding the secret **copy the value** and store for safe keeping to be used later.
 
-6. Return to the **Overview** section of your App Registration and copy the **Application (client) ID** and **Directory (tenant) ID**.
+1. Return to the **Overview** section of your App Registration and copy the **Application (client) ID** and **Directory (tenant) ID**.
 
      > [!IMPORTANT]
      > Disambiguation: We'll use this value later and call it out as the **Application (client) ID** which is different from the **DevOps Application (client) ID** copied in Step 7 [above](#create-an-app-registration-in-your-aad-environment).
 
-7. Select **Add a Redirect URI** > **Add a Platform** > **Web**.
+1. Select **Add a Redirect URI** > **Add a Platform** > **Web**.
 
-8. Set the **Redirect URI** to <https://global.consent.azure-apim.net/redirect>.
+1. Set the **Redirect URI** to <https://global.consent.azure-apim.net/redirect>.
 
     > [!NOTE]
     > You may need to update this later when configuring your custom connector after installing the app if this URL is different than the Redirect URL populated in the Custom Connector
 
-9. Select **Configure**.
+1. Select **Configure**.
 
 ### Install DevOps Extensions
 
