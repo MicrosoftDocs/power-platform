@@ -71,7 +71,7 @@ You can get short descriptions of any command by adding **--help** to the comman
 coe help alm install
 ```
 
-Read more in [help](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/overview.md) pages for detailed description for each command.
+Read more in [help](https://aka.ms/coe-cli/help/overview) pages for detailed description for each command.
 
 ## Read More
 
