@@ -138,11 +138,11 @@ The following recording shows a sample generating an install configuration file 
 
 1. Review the [Before You Start](./before-you-start.md) to ensure you have the required Power Platform environments and Azure DevOps organizations created.
 
-2. As an administrator, complete the [Admin Install](./admin-install.md).
+1. As an administrator, complete the [Admin Install](./admin-install.md).
 
-3. Have Makers create [Development Environments](./development-environments.md).
+1. Have Makers create [Development Environments](./development-environments.md).
 
-4. Use [Maker Setup](./maker-setup.md) to create and set up environment and solution branches in the Azure DevOps repository.
+1. Use [Maker Setup](./maker-setup.md) to create and set up environment and solution branches in the Azure DevOps repository.
 
 >[!Note]
 >If this is your first build pipeline, you'll need to set Pipeline Variables for your environment. At a minimum, you'll need to set **ServiceConnection** variable to your environment you have setup for validation, test, and production.

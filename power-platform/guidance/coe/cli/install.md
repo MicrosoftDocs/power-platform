@@ -48,7 +48,7 @@ To run the CoE CLI application, you'll need to install the components below
 
    a. [https://nodejs.org/en/download/](https://nodejs.org/en/download/)
 
-2. Azure CLI (version 2.24.0 or greater) is required for user authentication and Azure Active Directory Integration
+1. Azure CLI (version 2.24.0 or greater) is required for user authentication and Azure Active Directory Integration
 
    a. [Install Azure CLI](/cli/azure/install-azure-cli)
 

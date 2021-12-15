@@ -117,7 +117,7 @@ More information: [maker add](https://github.com/microsoft/coe-starter-kit/tree/
 
 Once these steps are completed, the next step is to [Set up Managed Solutions](../maker-setup.md) for makers
 
-## Enterprise Deployment
+## Enterprise deployment
 
 In this scenario, the aim is to install AA4PP inside an enterprise tenant and the following configuration is expected.
 
@@ -129,7 +129,7 @@ In this scenario, the aim is to install AA4PP inside an enterprise tenant and th
 1. Makers have separate development environments to work on changes
 1. AA4PP Azure DevOps pipeline used to validate and promote to Test and Production environments
 
-### Azure Active Directory Administrators
+### Azure Active Directory administrators
 
 The tenant administration team will need to create the following
 
@@ -230,7 +230,7 @@ coe alm install -f install.json
 
 1. Manual installation using the [Create An App Registration in your Azure Active Directory environment](/power-platform/guidance/coe/setup-almacceleratorpowerplatform#create-an-app-registration-in-your-aad-environment)
 
-## Multi Tenant Deployment
+## Multi-tenant deployment
 
 This deployment type involves different Azure Active Directory deployments that separate development, test, and production systems. For example, the following Azure Active Directory tenants
 
@@ -240,7 +240,7 @@ This deployment type involves different Azure Active Directory deployments that 
 
 Currently the AA4PP installation doesn't automatically support a multi-tenant deployment without manual updates.
 
-### Multi Tenant Deployment Assumptions
+### Multi-tenant deployment assumptions
 
 The multi-tenant deployment is assumed to have one or more of the following
 
@@ -254,7 +254,7 @@ The multi-tenant deployment is assumed to have one or more of the following
 
 1. External users from outside the organization maybe invited to the development tenant and not have access to the main tenant
 
-### Azure Active Directory Implications
+### Azure Active Directory implications
 
 To support multi-tenant deployments, the Azure Active Directory application will need to be configured to support multi-tenant authentication.
 

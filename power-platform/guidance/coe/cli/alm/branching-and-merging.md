@@ -56,17 +56,17 @@ More information: [coe alm branch](https://github.com/microsoft/coe-starter-kit/
 
 1. After this command is run, a default branch with Azure Pipelines has been created in the repository
 
-2. The Advanced Maker **Alan Steiener** creates an unmanaged Solution named **Onboarding** in his development environment
+1. The Advanced Maker **Alan Steiener** creates an unmanaged Solution named **Onboarding** in his development environment
 
-3. Using the AA4PP Administration application Alan Created a new feature branch and **Push changes to Git**
+1. Using the AA4PP Administration application Alan Created a new feature branch and **Push changes to Git**
 
-4. Once the initial set of features is complete **Create Pull Request** using the AA4PP Administration application. The validation build pipeline is executed. The Pull Request is approved and then the feature branch is committed to the solution branch
+1. Once the initial set of features is complete **Create Pull Request** using the AA4PP Administration application. The validation build pipeline is executed. The Pull Request is approved and then the feature branch is committed to the solution branch
 
-5. The merged commit can trigger a Continuous Deployment to the test environment
+1. The merged commit can trigger a Continuous Deployment to the test environment
 
-6. The sets of features are ready for a production deployment a Pull Request can be made to merge changes into the main branch
+1. The sets of features are ready for a production deployment a Pull Request can be made to merge changes into the main branch
 
-7. The build and deployment pipelines can be configured to package the solution to the production environment
+1. The build and deployment pipelines can be configured to package the solution to the production environment
 
 ### Finance
 
@@ -97,17 +97,17 @@ More information: [coe alm branch](https://github.com/microsoft/coe-starter-kit/
 
 1. After this command is run, a default branch with Azure Pipelines has been created in the repository
 
-2. **Karen Berg** creates an unmanaged Solution named **Expense** in her development environment
+1. **Karen Berg** creates an unmanaged Solution named **Expense** in her development environment
 
-3. Using the AA4PP Administration application Karen creates a new feature branch with the ID of the work item that has been assigned **385** and **Push changes to Git**
+1. Using the AA4PP Administration application Karen creates a new feature branch with the ID of the work item that has been assigned **385** and **Push changes to Git**
 
-4. Once the initial set of features is complete **Create Pull Request** using the AA4PP Administration application. The validation build pipeline is executed. The Pull Request is approved and then the feature branch is committed to the solution branch
+1. Once the initial set of features is complete **Create Pull Request** using the AA4PP Administration application. The validation build pipeline is executed. The Pull Request is approved and then the feature branch is committed to the solution branch
 
-5. The merged commit can trigger a Continuous Deployment to the test environment
+1. The merged commit can trigger a Continuous Deployment to the test environment
 
-6. When the features are ready for a production deployment, a Pull Request can be made to merge changes into the main branch
+1. When the features are ready for a production deployment, a Pull Request can be made to merge changes into the main branch
 
-7. The build and deployment pipelines can be configured to package the solution to the production environment
+1. The build and deployment pipelines can be configured to package the solution to the production environment
 
 Steps 9 through 14 repeat the process of 3-8 to contribute a new feature to the solution.
 

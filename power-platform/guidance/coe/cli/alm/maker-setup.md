@@ -78,15 +78,15 @@ NOTES:
 
 1. **-o** is the name of your DevOps Organization
 
-2. **-p** is the name of the Azure DevOps Project
+1. **-p** is the name of the Azure DevOps Project
 
-3. **-d** is the name of the solution branch to create
+1. **-d** is the name of the solution branch to create
 
-4. If the repository you want to create a branch for is empty, you'll need to commit an initial commit before a branch can be created.
+1. If the repository you want to create a branch for is empty, you'll need to commit an initial commit before a branch can be created.
 
-5. Open ALM Accelerator for Advanced Maker Application
+1. Open ALM Accelerator for Advanced Maker Application
 
-6. Select Push change to Git
+1. Select Push change to Git
 
    a. Create New Branch, for example,  MySolution1-WIP
 
@@ -94,7 +94,7 @@ NOTES:
 
    c. Add a comment, for example "Initial version"
 
-7. Select Latest Push Status
+1. Select Latest Push Status
 
    a. Permit permissions for pipeline to run (Variable Group, Service Connection, Pipeline)
 
