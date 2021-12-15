@@ -6,7 +6,7 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 03/19/2021
+ms.date: 12/15/2021
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -81,3 +81,10 @@ The above example contains placeholders that you can retrieve from your client a
 ```
 
 Use the **access_token** value in subsequent calls to the Power Platform API using the **Authorization** HTTP header.
+
+
+
+### See also
+[Preview: Creating a service principal application via API](powerplatform-api-create-service-principal.md)
+
+
