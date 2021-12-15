@@ -25,6 +25,8 @@ search.app:
 > 
 > Add top questions based on IcMs and fields queries with appropriate links to new and existing content.
 
+This section focus on the Frequently Asked Questions (FAQ) with respect to Power Platform Security.
+
 ### See also
 [Add related articles]
 
