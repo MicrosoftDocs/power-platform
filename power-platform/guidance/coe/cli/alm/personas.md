@@ -22,9 +22,9 @@ search.app:
 
 Understanding the roles that different personas play in ALM Accelerator for Power Platform (AA4PP) is important in helping you plan for and implement an ALM deployment in your organization.
 
-## Persona Description
+## Persona description
 
-### Business Users
+### Business users
 
 Business users represent the users of the created solutions. These users don't use the ALM Accelerator tools directly but they can see the shared applications. Business users may report version number of application to the support team.
 
@@ -32,37 +32,37 @@ Business users represent the users of the created solutions. These users don't u
 
 Wants to use components or services produced by an advanced maker or professional developer. Uses off the shelf components and documentation. Not directly exposed to the Application Lifecycle as this process is abstracted away. Create and Share the Application with Business Users.
 
-### Advanced Maker
+### Advanced maker
 
 Collaborates with Professional Development and Information Technology (IT) teams to integrate and build applications. Assumed to be familiar with concepts like Application Lifecycle Management (ALM), DevOps, Branching, and Merging. Works in Development environment and push changes into validation and testing and production environments. Uses managed AA4PP Canvas management application and Azure DevOps website.
 
-### Professional Developer
+### Professional developer
 
 Advanced maker knowledge plus the ability to use lower-level development programing languages and SDKs to create components and services. For example JavaScript and PCF controls, Dataverse Plugins in C#, Azure Services and APIs, for example,  Azure Functions, API Management. Likely to work in tools like Visual Studio Code.
 
-### Data Analyst
+### Data analyst
 
 Develop data model, Create, and manage data services and post data collection analysis / reporting. For example, using Power BI reporting and Azure Data Lake. For data elements that are covered in the Solution system, for example, Dataverse Modeling, AI Models. Items not covered today in solution system like Power BI will have separate ALM process.
 
-### Operations Teams
+### Operations teams
 
 Deploy solution to environments across Power Platform and Microsoft Cloud Services (For example Azure). Distribute solutions into Power Platform and run Azure Resource Manager templates in Azure. Won't use the CLI commands directly. May use managed canvas application to view and Azure Pipelines to view the status or promote applications from test to production.
 
-### Support Teams
+### Support teams
 
 Post application deployment look at version of applications deployed, triage issues. May use managed canvas application to view deployed solution versions.
 
-### Information Security Team
+### Information security team
 
 Will compare against organization standards for Data Loss Prevention (DLP), Authentication and Authorization, Service Principals, Teams and Security. Review the ALM process against Threat models, risks, and mitigations.
 
-### Architecture Team
+### Architecture team
 
 Review the entire ALM process and components and verify matches solution methodology and architecture
 
 ### Administrators
 
-#### Power Platform Tenant Administrator
+#### Power Platform tenant administrator
 
 Global right to Power Platform Administration - Manage Environments (Create, Update, Delete). Common commands
 
@@ -71,11 +71,11 @@ coe alm generate install -o quickstart.json
 coe alm install -f quickstart.json
 ```
 
-More information on the [coe alm generate install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/generate/install.md) command
+More information: [coe alm generate install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/generate/install.md) command
 
-More information on the [coe alm install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/install.md) command
+More information: [coe alm install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/install.md) command
 
-#### Power Platform Environment Administrator
+#### Power Platform environment administrator
 
 Manage One or more Power Platform Environments - Import solution, add users assign roles
 
@@ -86,9 +86,9 @@ coe alm install \
   -e https://contoso-maker.crm.dynamics.com
 ```
 
-More information on the [generate install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/generate/install.md) command
+More information: [generate install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/generate/install.md) command
 
-More information on the [install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/install.md) command
+More information: [install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/install.md) command
 
 Add makers to an environment (Assuming they also have Azure DevOps Administrator rights)
 
@@ -100,9 +100,9 @@ coe alm maker add \
   -u user@contoso.com
 ```
 
-More information on the [maker add](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/maker/add.md) command
+More information: [maker add](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/maker/add.md) command
 
-#### Azure Tenant Administrator
+#### Azure tenant administrator
 
 Manage the Azure Active Directory Tenant - Create User, Groups,  Applications, and Service Principals (O365 or Azure Administrators). Common commands
 
@@ -110,9 +110,9 @@ Manage the Azure Active Directory Tenant - Create User, Groups,  Applications, a
 coe alm install -c aad
 ```
 
-More information on the [install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/install.md) command
+More information: [install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/install.md) command
 
-#### Azure DevOps Project Administrators
+#### Azure DevOps project administrators
 
 ```bash
 coe alm install -c devops \
@@ -178,7 +178,7 @@ coe alm branch \
   -d MySolution
 ```
 
-More information on the [branch](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/branch.md) command
+More information: [branch](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/branch.md) command
 
 ## Administrator Setup
 
@@ -196,7 +196,7 @@ coe alm maker add \
 
 NOTE: The user running this command requires Project Administrator rights in Azure DevOps and Owner rights of the Azure Active Directory Application.
 
-More information on the [maker add](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/maker/add.md) command
+More information: [maker add](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/maker/add.md) command
 
 Each Azure DevOps project will also require connections to deployment environments used by Azure Pipelines
 
@@ -220,7 +220,7 @@ coe alm connection add \
   -a ALMAcceleratorServicePrincipal
 ```
 
-More information on the [connection add](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/connection/add.md) command
+More information: [connection add](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/connection/add.md) command
 
 ## Install
 
@@ -242,8 +242,8 @@ coe alm generate install -o install.json
 coe alm install -f install.json
 ```
 
-More information on the [generate install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/generate/install.md) command
+More information: [generate install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/generate/install.md) command
 
-More information on the [install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/install.md) command
+More information: [install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/install.md) command
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -63,7 +63,7 @@ C. CoE CLI installed
 coe alm generate install -o test.json
 ```
 
-More information on the [coe alm generate install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/generate/install.md) command
+More information: [coe alm generate install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/generate/install.md) command
 
 Which will generate a file similar to
 
@@ -105,11 +105,11 @@ Which will generate a file similar to
 coe alm install -f test.json
 ```
 
-More information on the [coe alm install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/install.md) command
+More information: [coe alm install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/install.md) command
 
 1. [Update permissions for the project build service](/power-platform/guidance/coe/setup-almacceleratorpowerplatform#update-permissions-for-the-project-build-service) to enable build pipelines to interact with Git Repositories
 
-## Read Next
+## Read next
 
 - Complete the [Install Overview](./overview.md#install-overview)
 

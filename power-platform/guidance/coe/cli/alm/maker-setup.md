@@ -17,7 +17,7 @@ search.app:
   - Powerplatform
 ---
 
-# Maker Setup
+# Maker setup
 
 The first step is to ensure that the maker and an environment to build and manage solutions. Normally each maker has a unique [development environment](./development-environments.md) created. Having successfully gained access to a development environment the commands below allow either a Power Platform administrator or a Maker to perform the following tasks:
 
@@ -25,7 +25,7 @@ The first step is to ensure that the maker and an environment to build and manag
 
 1. [Maker Create Solution](#maker-create-solution) - Create a solution branch in the Azure DevOps repository.
 
-## Set up Service Principal
+## Set up service principal
 
 The ALM Accelerator for Power Platform uses the created Azure Active Directory Service Principal to connect to environments and import and export the solutions. The user add command enables the ALM Accelerator to access each environment. The user add command adds the service principal as a user and assigned the System Administrator role to an environment.
 
@@ -42,9 +42,9 @@ az logout
 coe alm user add -e https://contoso-dev-user1.crm.dynamics.com
 ```
 
-More information on the [coe alm user add](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/user/add.md) command
+More information: [coe alm user add](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/user/add.md) command
 
-## Maker Create Solution
+## Maker create solution
 
 Power Platform solutions managed by the ALM Accelerator require a branch to be created in an Azure DevOps Repository. This branch called a "solution branch" allows the maker to build and test changes. Once changes have been verified, they can then be merged back into the main branch to deploy to production. The branch command creates a solution branch in Azure DevOps and configures the required Azure Pipelines for the created branch.
 
@@ -72,21 +72,21 @@ coe alm branch \
 
 ```
 
-More information on the [coe alm branch](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/branch.md) command
+More information: [coe alm branch](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/branch.md) command
 
 NOTES:
 
 1. **-o** is the name of your DevOps Organization
 
-1. **-p** is the name of the Azure DevOps Project
+2. **-p** is the name of the Azure DevOps Project
 
-1. **-d** is the name of the solution branch to create
+3. **-d** is the name of the solution branch to create
 
-1. If the repository you want to create a branch for is empty, you'll need to commit an initial commit before a branch can be created.
+4. If the repository you want to create a branch for is empty, you'll need to commit an initial commit before a branch can be created.
 
-1. Open ALM Accelerator for Advanced Maker Application
+5. Open ALM Accelerator for Advanced Maker Application
 
-1. Select Push change to Git
+6. Select Push change to Git
 
    a. Create New Branch, for example,  MySolution1-WIP
 
@@ -94,11 +94,11 @@ NOTES:
 
    c. Add a comment, for example "Initial version"
 
-1. Select Latest Push Status
+7. Select Latest Push Status
 
    a. Permit permissions for pipeline to run (Variable Group, Service Connection, Pipeline)
 
-## Post Setup Checks
+## Post setup checks
 
 After setting up an advanced maker, you may need to verify the following setup is correctly configured:
 
@@ -122,7 +122,7 @@ NOTES:
 
 1. If you're using a free Azure Subscription, you may receive error "No hosted parallelism has been purchased or granted.". To resolve this issue visit [https://aka.ms/azpipelines-parallelism-request](https://aka.ms/azpipelines-parallelism-request) to request Azure Pipeline build compute
 
-### Read Next
+### Read next
 
 - Complete the [Install Overview](./overview.md#install-overview)
 

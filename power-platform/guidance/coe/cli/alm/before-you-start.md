@@ -111,7 +111,7 @@ Notes:
   
    - [SARIF SAST Scans Tab](https://marketplace.visualstudio.com/items?itemName=sariftools.scans)
 
-## Read Next
+## Read next
 
 Once you've verified the above
 

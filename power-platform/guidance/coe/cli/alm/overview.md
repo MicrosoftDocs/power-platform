@@ -19,16 +19,16 @@ search.app:
 
 # ALM Accelerator for Power Platform
 
-The cli alm command allows you to manage common Application Lifecycle Management (ALM) tasks to install, setup, and administration of Power Platform Solutions.
+The cli alm command allows you to manage common Application Lifecycle Management (ALM) tasks to install, set up, and administer Application Lifecycle Management solutions in Power Platform.
 
-- [Quick Start](#quick-start) - Guides you through the process of a [demo tenant install](./scenarios/tenant-deployments.md#demonstration-deployment).
+- [Quick start](#quick-start) - Guides you through the process of a [demo tenant install](./scenarios/tenant-deployments.md#demonstration-deployment).
 - [Understand the Concepts](#understand-the-concepts) - Covers Scenarios, Personas, and Key Concepts and the install process using the CoE CLI.
 
 ## Prerequisites
 
 In order to set up the ALM Accelerator for Power Platform you'll need to first [install the CoE CLI](../install.md).
 
-## Quick Start
+## Quick start
 
 For an Administrator, the quick start guide should take around 30 minutes and by the end have configured Azure Active Directory, Azure DevOps, and the Power Platform environments.
 
@@ -78,7 +78,7 @@ coe alm generate install -o quickstart.json
 }
 ```
 
-   More information on the [coe alm generate install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/generate/install.md) command
+   More information: [coe alm generate install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/generate/install.md) command
 
 1. Install the ALM Accelerator using the generated configuration file.
 
@@ -86,13 +86,13 @@ coe alm generate install -o quickstart.json
 coe alm install -f quickstart.json
 ```
 
-   More information on the [coe alm install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/install.md) command
+   More information: [coe alm install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/install.md) command
 
    Deploying to your enterprise? For more information, see [Enterprise Deployment](./scenarios/tenant-deployments.md#enterprise-deployment).
 
 1. [Update permissions for the project build service](/power-platform/guidance/coe/setup-almacceleratorpowerplatform#update-permissions-for-the-project-build-service) to enable build pipelines to interact with Git Repositories.
 
-1. Have  Makers create [development environments](./development-environments.md) then Add Makers to Azure DevOps and share the Canvas Application.
+2. Have  Makers create [development environments](./development-environments.md) then Add Makers to Azure DevOps and share the Canvas Application.
 
 ```bash
 coe alm maker add \
@@ -103,7 +103,7 @@ coe alm maker add \
    -g ALMAcceleratorForMakers -u user@contoso.com
 ```
 
-   More information on the [coe alm maker add](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/maker/add.md) command
+   More information: [coe alm maker add](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/maker/add.md) command
 
    You can also generate a user configuration file. Using this approach will allow you to explore each parameter and review the settings before adding the maker.
 
@@ -113,13 +113,13 @@ coe alm maker add \
    -f user.config
 ```
 
-   More information on the [coe alm generate maker add](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/generate/maker/add.md) command
+   More information: [coe alm generate maker add](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/generate/maker/add.md) command
 
-## Understand the Concepts
+## Understand the concepts
 
 Not sure what ALM is and how it can help? The [User Guide](/power-platform/guidance/coe/almacceleratorpowerplatform-components) provides further context and examples of usage.
 
-### Getting Started
+### Getting started
 
 - [Scenarios](./scenarios/overview.md) - Discusses different install scenarios for ALM from Demo Installs to Enterprise Deployments.
 - [Personas](./personas.md) - Understand the key personas and how they map to ALM CLI commands and the wider ALM process.
@@ -128,13 +128,13 @@ Not sure what ALM is and how it can help? The [User Guide](/power-platform/guida
 
 ### Overview
 
-### Sample Install
+### Sample install
 
 The following recording shows a sample generating an install configuration file and installing ALM using the configuration file using a [Demo Deployment](./scenarios/tenant-deployments.md#demonstration-deployment).
 
 ![Example](./install.svg)
 
-### Install Overview
+### Install overview
 
 1. Review the [Before You Start](./before-you-start.md) to ensure you have the required Power Platform environments and Azure DevOps organizations created.
 
@@ -147,7 +147,7 @@ The following recording shows a sample generating an install configuration file 
 >[!Note]
 >If this is your first build pipeline, you'll need to set Pipeline Variables for your environment. At a minimum, you'll need to set **ServiceConnection** variable to your environment you have setup for validation, test, and production.
 
-### Read Next
+### Read next
 
 - [ALM Accelerator for Power Platform](/power-platform/guidance/coe/almacceleratorpowerplatform-components) - An overview of the ALM Accelerator.
 - [Deployment Profile Setup](/power-platform/power-platform/guidance/coe/setup-almacceleratorpowerplatform-deployment-profiles) - Configuring User Settings and Deployment Profiles.

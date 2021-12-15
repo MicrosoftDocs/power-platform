@@ -77,9 +77,9 @@ coe alm maker add \
   -u username@contoso.com
 ```
 
-More information on the [core alm maker add](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/maker/add.md) command
+More information: [core alm maker add](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/maker/add.md) command
 
-## Read Next
+## Read next
 
 - Complete the [Install Overview](./overview.md#install-overview)
 
