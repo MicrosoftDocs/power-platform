@@ -314,15 +314,15 @@ Flows that have the Asynchronous Response feature enabled may cause an error whe
 <!-- TODO: remove these steps and replace with link to relevant power automate docs when they are made -->
 You might have enabled the feature in the flow to help with managing it, however, you'll need to disable the feature for the bot to work properly when it runs the flow:
 
-1. Follow the instructions to [locate and modify your flow](#modify-a-flow-on-the-power-automate-portal).
+1. [Locate and modify your flow](#modify-a-flow-on-the-power-automate-portal).
    
-1. Locate the Power Virtual Agents step that returns values.
+1. In your Power Automate flow, locate the Power Virtual Agents step that returns values.
    
-1. Select the three dot menu and then select **Settings**.
+1. Select the three dots next to the name of the flow and then **Settings**.
    
     ![Open step settings.](media/advanced-flow/async1.png)
 
-1. Ensure the **Asynchronous Response** toggle is set to **Off** and select **Done**.
+1. Set the **Asynchronous Response** toggle to **Off** and select **Done**.
    
     ![Disable asynchronous response.](media/advanced-flow/async2.png)
 
