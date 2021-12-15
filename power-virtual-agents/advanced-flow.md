@@ -319,11 +319,11 @@ If you've enabled the Asynchronous Response, you'll need to disable it for the b
    
 1. In your Power Automate flow, locate the Power Virtual Agents step that returns values.
    
-Next to the name of the flow, select the three dots, and then select **Settings**.
+1. Next to the name of the flow, select the three dots, and then select **Settings**.
    
     ![Open step settings.](media/advanced-flow/async1.png)
 
-Set **Asynchronous Response**  to **Off**, and then select **Done**.
+1. Set **Asynchronous Response** to **Off**, and then select **Done**.
    
     ![Disable asynchronous response.](media/advanced-flow/async2.png)
 
