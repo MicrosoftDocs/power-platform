@@ -84,7 +84,7 @@ Error message | Troubleshoot / Mitigation
 ---|---
 We ran into problems getting the skill manifest.<br/>(`MANIFEST_FETCH_FAILED`)| Try opening your manifest URL in a web browser. If the URL renders the page within 10 seconds, re-register your skill.
 The manifest is incompatible. <br/>(`MANIFEST_MALFORMED`) | (a) Check if the manifest is a valid JSON file.<br/>(b) Check if the manifest contains required properties <br/>For example, (`name`, `msaAppId`, single `endpoint`, `activities`/`id`, `activities`/`description`, `activities`/`type` (only `event` or `message` supported)).
-There is a mismatch in your endpoints <br/>(`MANIFEST_ENDPOINT_ORIGIN_MISMATCH`) | Check if your skill endpoint matches your Azure AD application registration's `Publisher domain` (preferred) or `Home page URL` field. [Learn more about setting the home page for endpoints](/azure/active-directory/manage-apps/application-proxy-configure-custom-home-page).
+There is a mismatch in your endpoints <br/>(`MANIFEST_ENDPOINT_ORIGIN_MISMATCH`) | Check if your skill endpoint matches your Azure AD application registration's `Publisher domain` (preferred) or `Home page URL` field. [Learn more about setting the home page for endpoints](/azure/active-directory/app-proxy/application-proxy-configure-custom-home-page).
 To add a skill, it must first be registered <br/>(`APPID_NOT_IN_TENANT`) | Check if your skill's application ID is registered in your organization's Azure AD tenant. |
 The link isn't valid; The link must begin with https:// <br/>(`URL_MALFORMED`, `URL_NOT_HTTPS`) | Re-enter the link as a secure URL. |
 The manifest is too large; <br/>(`MANIFEST_TOO_LARGE`)| Check size of the manifest. It must be less than or equal to 500KB. |
