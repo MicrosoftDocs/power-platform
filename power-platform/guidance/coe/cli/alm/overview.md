@@ -92,7 +92,7 @@ For an administrator, the quick start guide should take around 30 minutes and by
 
 1. [Update permissions for the project build service](/power-platform/guidance/coe/setup-almacceleratorpowerplatform#update-permissions-for-the-project-build-service) to enable build pipelines to interact with Git Repositories.
 
-1. Have  Makers create [development environments](./development-environments.md) then Add Makers to Azure DevOps and share the Canvas Application.
+1. When your makers create [development environments](./development-environments.md), run coe alm maker add to add the makers to Azure DevOps and share the ALM Accelerator canvas app.
 
    ```bash
    coe alm maker add \
@@ -125,8 +125,6 @@ Not sure what ALM is and how it can help? The [User Guide](/power-platform/guida
 - [Personas](./personas.md) - Understand the key personas and how they map to ALM CLI commands and the wider ALM process.
 - [Key Concepts](./key-concepts.md) - Understand the key concepts for the components that are being automated under the hood by the CLI commands.
 - [Branching and Merging](./branching-and-merging.md) - Provides examples of branching and merging approach using ALM.
-
-### Overview
 
 ### Sample install
 

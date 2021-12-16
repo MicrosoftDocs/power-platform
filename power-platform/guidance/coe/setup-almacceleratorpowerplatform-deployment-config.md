@@ -23,17 +23,17 @@ search.app:
 > [!NOTE]
 > ALM Accelerator for Power Platform (AA4PP) is currently in public preview. Please see [Issues currently tagged as vnext](https://github.com/microsoft/coe-starter-kit/issues?q=is%3Aopen+is%3Aissue+label%3Aalm-accelerator+label%3Avnext) for the Roadmap to be completed prior to general availability. While the tool is in Public Preview, you should expect that there will be breaking changes and frequent updates to address feedback from preview members. Additionally, the Public Preview is reliant on the experimental [Power Apps Source File Pack and Unpack Utility](https://github.com/microsoft/PowerApps-Language-Tooling) that is being developed separately from AA4PP.
 
-The ALM Accelerator uses json formatted files for updating **connection references, environment variables, setting permissions for AAD Groups and Dataverse teams** as well as **sharing Canvas Apps and updating ownership of solution components** such as Power Automate flows. The instructions below are **optional** and depend on what type of components your solution pipelines deploy. For instance, if your solutions only contain Dataverse Tables, Columns and Model Driven Apps with no per environment configuration or data needed then **some of these steps may not be necessary** and can be skipped. The following configuration files allow you to fully automate the deployment of your solutions and specify how to configure items that are specific to the environment to which the solution is being deployed.
+The ALM Accelerator uses json formatted files for updating **connection references, environment variables, setting permissions for AAD Groups and Dataverse teams** as well as **sharing Canvas Apps and updating ownership of solution components** such as Power Automate flows. The instructions below are **optional** and depend on what type of components your solution pipelines deploy. For instance, if your solutions contains only Dataverse tables, columns and model driven apps with no per-environment configuration or data needed then **some of these steps may not be necessary** and can be skipped. The following configuration files allow you to fully automate the deployment of your solutions and specify how to configure items that are specific to the environment to which the solution is being deployed.
 
 For an example of configuration and data deployment configuration see the ALMAcceleratorSampleSolution [Deployment Settings](https://github.com/microsoft/coe-starter-kit/blob/ALMAcceleratorSampleSolution/ALMAcceleratorSampleSolution/config/deploymentSettings.json) and [Custom Deployment Settings](https://github.com/microsoft/coe-starter-kit/blob/ALMAcceleratorSampleSolution/ALMAcceleratorSampleSolution/config/customDeploymentSettings.json)
 
 ## Before you start
 
-The following documentation is intended to be a step-by-step process for setting up deployment configuration files manually. However, it is **recommended that you use the in app feature to generate this information** on export of your solution. This document will provide details and context for the actions that are performed by the AA4PP app and pipelines and act as a reference for administrators who want to know the specifics of each step in the process.
+The following documentation is intended to be a step-by-step process for setting up deployment configuration files manually. However, we **recommended that you use the [in-app feature](almacceleratorpowerplatform-newmaker.md) to generate this information** on export of your solution. This document provides details and context for the actions that are performed by the AA4PP app and pipelines and act as a reference for administrators who want to know the specifics of each step in the process.
 
 ## Creating a deployment settings json file
 
-When storing the customDeploymentSettings.json in the root of the config directory, the same configuration will apply to all environments. Assuming that you're using File Transformation or Token Replacement Pipeline Tasks to store all of the environment-specific information, you can specify the environment-specific values in your Pipeline Variables. However, **you can also create environment specific customDeploymentSettings.json files** by creating subdirectories in the config directory with the name of the Environment to allow for more flexibility. The directory name in this case **must match the EnvironmentName pipeline variable** you created when setting up your pipeline (Validate, Test, Production). If no environment-specific deployment settings json / directory is found, the pipelines will revert to the configuration in the root of the config directory.
+When storing the customDeploymentSettings.json in the root of the config directory, the same configuration will apply to all environments. Assuming that you're using File Transformation or Token Replacement Pipeline Tasks to store all of the environment-specific information, you can specify the environment-specific values in your Pipeline Variables. However, **you can also create environment specific customDeploymentSettings.json files** by creating subdirectories in the config directory with the name of the Environment to allow for more flexibility. The directory name in this case **must match the EnvironmentName pipeline variable** you created when setting up your pipeline (Validate, Test, Production). If no environment-specific deployment settings json and directory is found, the pipelines will revert to the configuration in the root of the config directory.
 
 ![Config folder sample](media/setup-almacceleratorpowerplatform-deployment-config/image-20211203085159850.png)
 
@@ -100,9 +100,11 @@ To create the deployment settings json file, follow the steps below.
 
 The connection reference property in the customDeploymentConfiguration.json is **ConnectionReferences**. The connection reference property is used for setting connection references in your solution to specific connections after the solution is imported. Additionally, the **ConnectionReferences** are used to **enable flows after the solution is imported based on owner of the connection** specified in the variable.
 
-1. **You'll need to create the connections manually in your target environments and copy the IDs** for the connection to use in the json value below.
+1. Create the connections manually in your target environments.
 
-1. The format of the json for these variables take the form of an array of name/value pairs.
+1. Copy the IDs for the connections, to use in the json value below.
+
+   - The format of the json for these variables take the form of an array of name/value pairs.
 
    ```json
    "ConnectionReferences": 
@@ -143,20 +145,20 @@ The connection reference property in the customDeploymentConfiguration.json is *
    ]
    ```
 
-1. Using **'Replace Tokens' extension** and adding tokens in your configuration like in the above example, navigate to the pipeline for your solution **Select Edit -> Variables**.
+1. If you're using the 'Replace Tokens' extension and adding tokens in your configuration like in the above example, navigate to the pipeline for your solution **select Edit -> Variables**.
 
 1. On the Pipeline Variables screen, create the **connection.[connection_reference_logicalname]**. For above example this will be **connection.cat_CDS_Current pipeline variable**.
 
-1. Set the value to the **connection id** you gathered above and **Select Keep this value secret** if you want to ensure the value is not saved as plain text.
+1. Set the value to the **connection id** you gathered above and **select Keep this value secret** if you want to ensure the value is not saved as plain text.
 
-1. Where applicable repeat the steps above for each solution / pipeline you create.
+1. Where applicable repeat the steps above for each solution and pipeline you create.
 
 ### Create Environment Variable Json
 
 The environment variable property in the customDeploymentConfiguration.json is **EnvironmentVariables**. The environment variable property is used for setting Dataverse **Environment variables** in your solution after the solution is imported into an environment.
 
 > [!NOTE]
-> When exporting and source controlling solutions. Environment variable values are exported with the solution. In some cases this could be a security risk if the environment variables contain sensitive information although it's recommended that you not store sensitive information in environment variables. One way to ensure that your environment variable values are not source controlled is to create a solution specifically for environment variable values in your development environment(s) and set the current value of the environment variables in that solution. This will prevent the current values from being exported during the solution export and being stored in source control.
+> When exporting and source controlling solutions, environment variable values are exported with the solution. In some cases this could be a security risk if the environment variables contain sensitive information although it's recommended that you not store sensitive information in environment variables. One way to ensure that your environment variable values are not source controlled is to create a solution specifically for environment variable values in your development environment(s) and set the current value of the environment variables in that solution. This will prevent the current values from being exported during the solution export and being stored in source control.
 
 1. The format of the json for these variables take the form of an array of name/value pairs.
 
@@ -197,17 +199,17 @@ The environment variable property in the customDeploymentConfiguration.json is *
    }
    ```
 
-1. If you're using **'Replace Tokens' extension** and adding tokens in your configuration like in the above example, navigate to the pipeline for your solution **Select Edit -> Variables**.
+1. If you're using 'Replace Tokens' extension and adding tokens in your configuration like in the above example, navigate to the pipeline for your solution **select Edit -> Variables**.
 
 1. On the Pipeline Variables screen, create a **pipeline variable** for each of the tokens in your configuration (for example, variable.cat_TextEnvironmentVariable).
 
-1. Set the value to the **environment variable value** for that specific environment and **Select Keep this value secret** if you want to ensure the value is not saved as plain text.
+1. Set the value to the **environment variable value** for that specific environment and **select Keep this value secret** if you want to ensure the value is not saved as plain text.
 
-1. Where applicable repeat the steps above for each solution / pipeline you create.
+1. Where applicable repeat the steps above for each solution and pipeline you create.
 
 ### Creating a custom deployment settings json file
 
-The custom deployment settings json file contains the configuration settings required to automate the deployment of your solution. This file contains the configuration for Activating Flows on behalf of a user, specify ownership of Flows, Sharing Canvas Apps with AAD Groups and Creating Dataverse Group Teams after deployment. The following sample is a custom deployment settings json file that will provide your pipelines with the necessary information required to configure a solution after it's been deployed to an environment.
+The custom deployment settings json file contains the configuration settings required to automate the deployment of your solution. This file contains the configuration for activating flows on behalf of a user, specify ownership of flows, sharing canvas apps with AAD Groups and creating Dataverse group teams after deployment. The following sample is a custom deployment settings json file that will provide your pipelines with the necessary information required to configure a solution after it's been deployed to an environment.
 
 ```json
 {
@@ -313,11 +315,11 @@ The environment variable property in the customDeploymentConfiguration.json is *
    }
    ```
 
-1. If you're using **'Replace Tokens' extension** and adding tokens in your configuration like in the above example, navigate to the pipeline for your solution **Select Edit -> Variables**.
+1. If you're using 'Replace Tokens' extension and adding tokens in your configuration like in the above example, navigate to the pipeline for your solution **select Edit -> Variables**.
 
 1. On the Pipeline Variables screen, create a **pipeline variable** for each of the tokens in your configuration (for example, **defaultvariable.cat_TextEnvironmentVariable**).
 
-1. As necessary, repeat the steps above for each solution / pipeline you create.
+1. As necessary, repeat the steps above for each solution and pipeline you create.
 
 #### Create AAD Group Canvas Configuration Json
 
@@ -365,15 +367,15 @@ The AAD group canvas configuration property in the customDeploymentConfiguration
    }
    ```
 
-1. If you're using **'Replace Tokens' extension** and adding tokens in your configuration like in the above example, navigate to the pipeline for your solution **Select Edit -> Variables**.
+1. If you're using 'Replace Tokens' extension and adding tokens in your configuration like in the above example, navigate to the pipeline for your solution **select Edit -> Variables**.
 
 1. On the Pipeline Variables screen, create a **pipeline variable** for each of the tokens in your configuration (for example, canvasshare.aadGroupId).
 
-1. Set the value to the **azure active directory group id** to which the app should be shared for that specific environment and **Select Keep this value secret** if you want to ensure the value is not saved as plain text.
+1. Set the value to the **azure active directory group id** to which the app should be shared for that specific environment and **select Keep this value secret** if you want to ensure the value is not saved as plain text.
 
-1. Where applicable repeat the steps above for each solution / pipeline you create.
+1. Where applicable repeat the steps above for each solution and pipeline you create.
 
-### Create AAD group / team configuration json
+### Create AAD group and team configuration json
 
 The AAD group canvas configuration property in the customDeploymentConfiguration.json is **AadGroupTeamConfiguration**. The AAD group canvas configuration property is used for **mapping Dataverse Teams and Roles** to specific **Azure Active Directory Groups** in your solution with specific **Azure Active Directory Groups** after the solution is imported into an environment.
 
@@ -425,13 +427,13 @@ The AAD group canvas configuration property in the customDeploymentConfiguration
     }
     ```
 
-1. If you're using **'Replace Tokens' extension** and adding tokens in your configuration like in the above example, navigate to the pipeline for your solution **Select Edit -> Variables**.
+1. If you're using 'Replace Tokens' extension and adding tokens in your configuration like in the above example, navigate to the pipeline for your solution **select Edit -> Variables**.
 
 1. On the Pipeline Variables screen, create a **pipeline variable** for each of the tokens in your configuration (for example, team.aadSecurityGroupId).
 
-1. Set the value to the **azure active directory group id** to associate with the team in Dataverse and **Select Keep this value secret** if you want to ensure the value is not saved as plain text.
+1. Set the value to the **azure active directory group id** to associate with the team in Dataverse and **select Keep this value secret** if you want to ensure the value is not saved as plain text.
 
-1. Where applicable repeat the steps above for each solution / pipeline you create.
+1. Where applicable repeat the steps above for each solution and pipeline you create.
 
 #### Create solution component ownership json
 
@@ -482,13 +484,13 @@ The solution component ownership property in the customDeploymentConfiguration.j
    }
    ```
 
-1. If you're using **'Replace Tokens' extension** and adding tokens in your configuration like in the above example, navigate to the pipeline for your solution **Select Edit -> Variables**.
+1. If you're using 'Replace Tokens' extension and adding tokens in your configuration like in the above example, navigate to the pipeline for your solution **select Edit -> Variables**.
 
 1. On the Pipeline Variables screen, create a **pipeline variable** for each of the tokens in your configuration (for example, owner.ownerEmail).
 
-1. Set the value to the **email address** of the owner of the component and **Select Keep this value secret** if you want to ensure the value is not saved as plain text.
+1. Set the value to the **email address** of the owner of the component and **select Keep this value secret** if you want to ensure the value is not saved as plain text.
 
-1. Where applicable repeat the steps above for each solution / pipeline you create.
+1. Where applicable repeat the steps above for each solution and pipeline you create.
 
 ### Importing sata from your pipeline
 
@@ -517,7 +519,7 @@ In many cases, there will be configuration or seed data that you'll want to impo
    > [!NOTE]
    > The pipeline will look for this specific folder to run the import after your solution is imported. Ensure that the name of the folder and the location are the same as the screenshot below.
 
-    - Similar to the note regarding specific configuration files per environment the steps above create configuration data that will be deployed to all environments. However, if you have specific configuration data per environment you can **create sub-directories in the config directory** with the name of the Environment to allow for more flexibility. The directory name in this case **must match the EnvironmentName pipeline variable** you created when setting up your pipeline (Validate, Test, Production). If no environment-specific configuration data / directory is found, the pipelines will revert to the configuration data in the root of the config directory.
+    - Similar to the note regarding specific configuration files per environment the steps above create configuration data that will be deployed to all environments. However, if you have specific configuration data per environment you can **create sub-directories in the config directory** with the name of the Environment to allow for more flexibility. The directory name in this case **must match the EnvironmentName pipeline variable** you created when setting up your pipeline (Validate, Test, Production). If no environment-specific configuration data and directory is found, the pipelines will revert to the configuration data in the root of the config directory.
 
 1. When prompted to **export the data** select **Yes**.
 

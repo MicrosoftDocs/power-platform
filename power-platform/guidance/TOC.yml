@@ -121,13 +121,13 @@
           href: coe/cli/alm/overview.md
         - name: Set up ALM Accelerator for Power Platform components manually
           href: coe/setup-almacceleratorpowerplatform.md
-        - name: Configuring Deployment Configuration and Data
+        - name: Configuration and data deployment in pipelines
           href: coe/setup-almacceleratorpowerplatform-deployment-config.md
-        - name: Configuring Pipeline Sync
+        - name: Configuring pipeline sync
           href: coe/setup-almacceleratorpowerplatform-pipeline-sync.md
-        - name: Configuring User Permissions
+        - name: Configuring user permissions
           href: coe/setup-almacceleratorpowerplatform-users.md
-        - name: Configuring Deployment User Settings and Profiles
+        - name: Configuring deployment user settings and profiles
           href: coe/setup-almacceleratorpowerplatform-deployment-profiles.md
         - name: Set up ALM Accelerator for Makers components
           href: coe/setup-almaccelerator.md

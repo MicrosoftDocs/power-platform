@@ -33,17 +33,17 @@ Watch how to use the ALM Accelerator for Power Platform solution.
 
 1. When prompted to create connections / grant consent create the necessary connections or accept the consent dialog.
 
-1. If prompted to create a HTTP with Azure AD connection, enter 'https://graph.microsoft.com' for both the **Base Resource URL** and **Azure AD Resource URI**.
+1. If prompted to create a HTTP with Azure AD connection, enter 'https://graph.microsoft.com' for both the Base Resource URL and Azure AD Resource URI.
 
 1. Select **Create** for each connection when prompted.
 
-1. The first time you open the app a dialog will open and you'll be asked to **select an environment**. Next time you open the app, it will remember which environment you were working on.
+1. The first time you open the app a dialog will open and you'll be asked to select an environment. Next time you open the app, it will remember which environment you were working on.
 
-1. Once the environment is selected, the main screen will display a list of all the **unmanaged solutions** in the environment. Depending on the *user deployment settings*, your user has assigned you'll be able to see the following options for each solution:
+1. Once the environment is selected, the main screen will display a list of all the unmanaged solutions in the environment. Depending on the *user deployment settings*, your user has assigned you'll be able to see the following options for each solution:
 
    - **Commit Solution**: Commits all the changes you have done within the solution in your version control system.
    - **Deploy Solution**: Allows you to move the changes across environment.
-   - **Choose a Profile**: Allows you to configure what **Organization**, **Project**, **Repository**, **Target Branch**, and **Environments** your solution can be deployed to.
+   - **Choose a Profile**: Allows you to configure what Organization, Project, Repository, Target Branch, and Environments your solution can be deployed to.
    - **Delete a Solution**: Deletes the solution allowing you to reimport if necessary from source control again with latest changes.
    - **Import a Solution**: Imports an unmanaged solution into your maker environment from source control.
    - **Request History**: (right arrow icon): Provides a list of requests (commits and deployments) requested and completed for that solution.
@@ -52,20 +52,20 @@ Watch how to use the ALM Accelerator for Power Platform solution.
 
 1. You can now create a new solution from the maker portal or import an unmanaged solution from an existing DevOps project to begin making changes to it. To import a solution, use the **Import Solutions** button and select a **Profile, Solution Source, Solution Folder and Configuration (Optional)**.
 
-   - **Profile** the configured profiles your user has access to, this profile points to an organization and project in DevOps.
+   - **Profile**: the configured profiles your user has access to, this profile points to an organization and project in DevOps.
 
-   - **Solution Source** is based on the branches in DevOps for the Project you selected in the configuration.
+   - **Solution Source**: is based on the branches in DevOps for the Project you selected in the configuration.
 
-   - **Solution Folder** is a list of folders in the selected branch that contain a **SolutionPackage folder** from a previous export.
+   - **Solution Folder**: is a list of folders in the selected branch that contain a **SolutionPackage folder** from a previous export.
 
-   - **Configuration** is a directory under the config directory in the Solution Folder that contains deployment settings and configuration data. For more information on configuration settings, see the [Deployment Configuration Guide](setup-almacceleratorpowerplatform-deployment-config.md).
+   - **Configuration**: is a directory under the config directory in the Solution Folder that contains deployment settings and configuration data. For more information on configuration settings, see the [Deployment Configuration Guide](setup-almacceleratorpowerplatform-deployment-config.md).
 
     > [!NOTE]
     > The idea here is that you're either pulling the latest from the Solution branch or possibly want to pull another makers branch into your own environment. The configuration allows you to ensure that all of the necessary post solution import configuration and data exists in your environment.
 
    ![Import Solution from Branch in DevOps](media/almacceleratorpowerplatform-components/aa4pp-solution-import.png "Import Solution from Branch in DevOps")
 
-1. Once you have created or imported your solution, you are going to need to **Choose a Profile** for the solution so you can associate the solution to a specific **Organization**, **Project**, **Repository**, **Target Branch**, and **Environments** where you'll be able to deploy the solution into.
+1. Once you have created or imported your solution, you are going to need to Choose a Profile for the solution so you can associate the solution to a specific Organization, Project, Repository, Target Branch, and Environments where you'll be able to deploy the solution into.
 
    - Select Choose a Profile for your Solution in the Solution list.
    - In the Solution Profile Dialog select a Profile and Select Save.
@@ -73,7 +73,7 @@ Watch how to use the ALM Accelerator for Power Platform solution.
     > [!NOTE]
     > Depending on wether you are an admin or not, you'll be able to create new deployment profiles from here. If you are a maker the likelihood is that an administrator from your organization has made some profiles available for you to choose from. If still nothing suits what you want, you'll need to work with your administrator to request a new profile.
 
-1. Once you have a profile associated, you can also begin to configure your solution for deployment. **Select the Configure Deployment Settings link** under the name of the Solution. On the configuration deployment page, you'll see the following items:
+1. Once you have a profile associated, you can also begin to configure your solution for deployment. Select the **Configure Deployment Settings link** under the name of the Solution. On the configuration deployment page, you'll see the following items:
 
    - Deployment Environment List (for example, Validation, Test, and Production).
 
@@ -84,10 +84,10 @@ Watch how to use the ALM Accelerator for Power Platform solution.
       ![Connection Reference Configuration](media/almacceleratorpowerplatform-components/aa4pp-deployment-settings-connection-references.png "Connection Reference Configuration")
 
       - This screen lists all of the connection references in your solution and allows users to create connections in their downstream environments to hook up the connection references in the target environment.
-      - To create a new connection **select the + button**.
-      - After creating a new connection, **select the refresh button** in the top right to get the latest list of connections.
-      - To select an existing connection in the target environment **select a connection from the dropdown list**.
-      - To Navigate to the connection in the target environment **select the name or the status of the connection**.
+      - To create a new connection select the **+ button**.
+      - After creating a new connection, select the **refresh button** in the top right to get the latest list of connections.
+      - To select an existing connection in the target environment select a **connection from the dropdown list**.
+      - To Navigate to the connection in the target environment select the **name or the status of the connection**.
 
    - Environment Variables
 
