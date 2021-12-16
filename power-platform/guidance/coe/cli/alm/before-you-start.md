@@ -1,5 +1,5 @@
 ---
-title: "Center of Excellence (CoE) Command Line Interface (CLI) Application Lifecycle Management (ALM) Accelerator Before you start"
+title: "CoE ALM Accelerator for Power Platform before you start"
 description: "Key prerequisites and requirements for the ALM Accelerator using the Center of Excellence (CoE) Command Line Interface (CLI)"
 keywords: 
 author: Grant-Archibald-MS
@@ -17,7 +17,7 @@ search.app:
   - Powerplatform
 ---
 
-# Before you start
+# CoE ALM Accelerator for Power Platform before you start
 
 Before you start an install of ALM, ensure that you've the following components in place.
 

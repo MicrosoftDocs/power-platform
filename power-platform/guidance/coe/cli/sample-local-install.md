@@ -1,5 +1,5 @@
 ---
-title: "Sample local install of Center of Excellence (CoE) Command Line Interface (CLI) Upgrade"
+title: "Center of Excellence (CoE) Command Line Interface (CLI) local installation"
 description: "Sample of installation of Center of Excellence (CoE) Command Line Interface (CLI) to a local deployment"
 keywords: 
 author: Grant-Archibald-MS
@@ -17,7 +17,7 @@ search.app:
   - Powerplatform
 ---
 
-# Sample local install
+# Center of Excellence (CoE) Command Line Interface (CLI) local installation
 
 The following captures the results of a sample local install.
 

@@ -1,5 +1,5 @@
 ---
-title: "Center of Excellence (CoE) Command Line Interface (CLI) Application Lifecycle Management (ALM) Accelerator key concepts"
+title: "CoE ALM Accelerator for Power Platform key concepts"
 description: "Key concepts related to ALM Accelerator using the Center of Excellence (CoE) Command Line Interface (CLI)"
 keywords: 
 author: Grant-Archibald-MS
@@ -18,7 +18,7 @@ search.app:
 ---
 
 
-# Key concepts
+# CoE ALM Accelerator for Power Platform key concepts
 
 As you deploy and use the ALM CLI, it's important to understand the following key concepts that the CLI is automating.
 

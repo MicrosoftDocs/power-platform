@@ -1,5 +1,5 @@
 ---
-title: "Center of Excellence (CoE) Command Line Interface (CLI) documentation"
+title: "CoE CLI development documentation"
 description: "Documentation for the Center of Excellence Command-Line interface commands"
 keywords: 
 author: Grant-Archibald-MS
@@ -17,7 +17,7 @@ search.app:
   - Powerplatform
 ---
 
-# Documentation
+# CoE CLI development documentation
 
 Documentation is key to understanding how the CLI works. As you add new commands, consider the following documentation:
 

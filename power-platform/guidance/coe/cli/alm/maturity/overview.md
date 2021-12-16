@@ -1,5 +1,5 @@
 ---
-title: "Center of Excellence (CoE) Command Line Interface (CLI) Application Lifecycle Management (ALM) Accelerator maturity model"
+title: "CoE ALM Maturity model"
 description: "Apply Power Platform Maturity to decide when to use ALM Accelerator using the Center of Excellence (CoE) and Command Line Interface (CLI)"
 keywords: 
 author: Grant-Archibald-MS
@@ -17,7 +17,7 @@ search.app:
   - Powerplatform
 ---
 
-# Maturity model
+# CoE ALM Maturity model
 
 The [Power CAT adoption maturity model](https://aka.ms/powercatadoptionmaturity) provides a set of levels and capabilities that can be used to evaluate usage of the Application Lifecycle Management (ALM) and how the ALM Accelerator for Power Platform (AA4PP) can assist.
 

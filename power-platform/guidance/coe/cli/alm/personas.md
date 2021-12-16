@@ -1,5 +1,5 @@
 ---
-title: "Center of Excellence (CoE) Command Line Interface (CLI) Application Lifecycle Management (ALM) Accelerator Personas"
+title: "CoE ALM Accelerator for Power Platform personas"
 description: "Overview of the personas related to Center of Excellence (CoE) Command Line Interface (CLI) Application Lifecycle Management (ALM) Accelerator commands"
 keywords: 
 author: Grant-Archibald-MS
@@ -18,7 +18,7 @@ search.app:
 ---
 
 
-# Personas
+# CoE ALM Accelerator for Power Platform personas
 
 Understanding the roles that different personas play in ALM Accelerator for Power Platform (AA4PP) is important in helping you plan for and implement an ALM deployment in your organization.
 

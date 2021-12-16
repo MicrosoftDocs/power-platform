@@ -1,5 +1,5 @@
 ---
-title: "Center of Excellence (CoE) Command Line Interface (CLI) Overview"
+title: "CoE CLI development"
 description: "Overview of development for Center of Excellence Command-Line interface commands"
 keywords: 
 author: Grant-Archibald-MS
@@ -17,7 +17,7 @@ search.app:
   - Powerplatform
 ---
 
-# CLI development
+# CoE CLI development
 
 This section outlines the following key sections on the CoE CLI. The information below can help guide you in making contributions back to the open-source repository.
 

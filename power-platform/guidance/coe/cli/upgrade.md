@@ -1,5 +1,5 @@
 ---
-title: "Center of Excellence (CoE) Command Line Interface (CLI) Upgrade"
+title: "Center of Excellence (CoE) Command Line Interface (CLI) upgrade"
 description: "Upgrade instructions for the Center of Excellence Command-Line interface"
 keywords: 
 author: Grant-Archibald-MS
@@ -17,7 +17,7 @@ search.app:
   - Powerplatform
 ---
 
-# Upgrade
+# Center of Excellence (CoE) Command Line Interface (CLI) upgrade
 
 Upgrade will depend on how you installed the CoE CLI.
 

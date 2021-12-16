@@ -1,5 +1,5 @@
 ---
-title: "Center of Excellence (CoE) Command Line Interface (CLI) Application Lifecycle Management (ALM) Accelerator maker setup"
+title: "CoE ALM Accelerator for Power Platform maker setup"
 description: "Summary of how to add a maker to the ALM Accelerator using the Center of Excellence (CoE) Command Line Interface (CLI)"
 keywords: 
 author: Grant-Archibald-MS
@@ -17,7 +17,7 @@ search.app:
   - Powerplatform
 ---
 
-# Maker setup
+# CoE ALM Accelerator for Power Platform maker setup
 
 The first step is to ensure that the maker and an environment to build and manage solutions. Normally each maker has a unique [development environment](./development-environments.md) created. Having successfully gained access to a development environment the commands below allow either a Power Platform administrator or a Maker to perform the following tasks:
 

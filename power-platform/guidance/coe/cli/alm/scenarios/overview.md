@@ -1,5 +1,5 @@
 ---
-title: "Center of Excellence (CoE) Command Line Interface (CLI) Application Lifecycle Management (ALM) Accelerator Deployment Scenarios"
+title: "CoE ALM Accelerator for Power Platform deployment scenarios"
 description: "Overview of deployment scenarios for the ALM Accelerator using the Center of Excellence (CoE) Command Line Interface (CLI)"
 keywords: 
 author: Grant-Archibald-MS
@@ -17,7 +17,7 @@ search.app:
   - Powerplatform
 ---
 
-# Scenarios
+# CoE ALM Accelerator for Power Platform deployment scenarios
 
 As you plan your ALM Accelerator for Power Platform (AA4PP) deployment, one or more of the following scenarios may apply to you:
 

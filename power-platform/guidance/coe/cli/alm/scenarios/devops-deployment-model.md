@@ -1,5 +1,5 @@
 ---
-title: "Center of Excellence (CoE) Command Line Interface (CLI) Application Lifecycle Management (ALM) Accelerator Deployment Models"
+title: "CoE ALM Accelerator for Power Platform DevOps deployment model"
 description: "Overview of deployment models for the ALM Accelerator using the Center of Excellence (CoE) Command Line Interface (CLI)"
 keywords: 
 author: Grant-Archibald-MS
@@ -17,7 +17,7 @@ search.app:
   - Powerplatform
 ---
 
-# DevOps deployment model
+# CoE ALM Accelerator for Power Platform DevOps deployment model
 
 ## Overview
 

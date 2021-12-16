@@ -1,5 +1,5 @@
 ---
-title: "Center of Excellence (CoE) Command Line Interface (CLI) Application Lifecycle Management (ALM) Accelerator Tenant Deployments"
+title: "CoE ALM Accelerator for Power Platform tenant deployments"
 description: "Overview of tenant deployment models for the ALM Accelerator"
 keywords: 
 author: Grant-Archibald-MS
@@ -17,7 +17,7 @@ search.app:
   - Powerplatform
 ---
 
-# Tenant deployments
+# CoE ALM Accelerator for Power Platform tenant deployments
 
 AA4PP can be deployed in the following scenarios single demo tenant, single enterprise tenant.
 

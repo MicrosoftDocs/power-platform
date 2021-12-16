@@ -1,5 +1,5 @@
 ---
-title: "Center of Excellence (CoE) Command Line Interface (CLI)"
+title: "Center of Excellence (CoE) Command Line Interface (CLI) overview"
 description: "Overview of the Center of Excellence Command-Line interface and how it automates the setup and administrator of common tasks"
 keywords: 
 author: Grant-Archibald-MS

@@ -1,5 +1,5 @@
 ---
-title: "Center of Excellence (CoE) Command Line Interface (CLI) Install"
+title: "Center of Excellence (CoE) Command Line Interface (CLI) installation"
 description: "Install instructions for the Center of Excellence Command-Line interface"
 keywords: 
 author: Grant-Archibald-MS
@@ -18,7 +18,7 @@ search.app:
 ---
 
 
-# Installation
+# Center of Excellence (CoE) Command Line Interface (CLI) installation
 
 To install the CoE CLI:
 

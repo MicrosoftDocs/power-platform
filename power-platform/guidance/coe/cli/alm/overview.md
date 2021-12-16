@@ -1,5 +1,5 @@
 ---
-title: "Center of Excellence (CoE) Command Line Interface (CLI) Application Lifecycle Management (ALM) Accelerator"
+title: "CoE CLI ALM Accelerator for Power Platform"
 description: "Overview of the Center of Excellence (CoE) Command Line Interface (CLI) Application Lifecycle Management (ALM) Accelerator commands"
 keywords: 
 author: Grant-Archibald-MS
@@ -17,7 +17,7 @@ search.app:
   - Powerplatform
 ---
 
-# ALM Accelerator for Power Platform
+# CoE CLI ALM Accelerator for Power Platform
 
 The cli alm command allows you to manage common Application Lifecycle Management (ALM) tasks to install, set up, and administer the ALM Accelerator for Power Platform.
 

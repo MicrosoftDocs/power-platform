@@ -1,5 +1,5 @@
 ---
-title: "Center of Excellence (CoE) Command Line Interface (CLI) Application Lifecycle Management (ALM) Accelerator Branching and Merging"
+title: "CoE ALM Accelerator for Power Platform branching and merging"
 description: "Discussion of branching and merging for ALM Accelerator using the Center of Excellence (CoE) Command Line Interface (CLI)"
 keywords: 
 author: Grant-Archibald-MS
@@ -17,7 +17,7 @@ search.app:
   - Powerplatform
 ---
 
-# Branching and merging
+# CoE ALM Accelerator for Power Platform branching and merging
 
 Development as a team of Makers, Advanced Makers, and Professional developers often uncovers new concepts. Often one area of complexity is branching and merging. Using the links below different [Personas](./personas.md) to can review each concept and determine their level of comfort.
 

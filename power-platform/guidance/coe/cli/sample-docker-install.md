@@ -1,5 +1,5 @@
 ---
-title: "Sample docker install of Center of Excellence (CoE) Command Line Interface (CLI) Upgrade"
+title: "Center of Excellence (CoE) Command Line Interface (CLI) Docker installation"
 description: "Sample of installation of Center of Excellence (CoE) Command Line Interface (CLI) to aa linux docker image"
 keywords: 
 author: Grant-Archibald-MS
@@ -17,7 +17,7 @@ search.app:
   - Powerplatform
 ---
 
-# Sample Docker install
+# Center of Excellence (CoE) Command Line Interface (CLI) Docker installation
 
 The following captures the results of a sample docker install on Linux.
 
