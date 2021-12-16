@@ -581,6 +581,8 @@
         href: security/overview.md
       - name: Authenticating to Power Platform services
         href: security/authenticate-services.md
+      - name: Data storage in Power Platform
+        href: security/data-storage.md
       - name: Connect to data sources
         href: security/connect-data-sources.md
       - name: Security and governance considerations
