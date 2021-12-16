@@ -31,7 +31,7 @@ Environment | Description
 ----------- | -------------
 Developer | Development environments that each Advanced Maker will use to create and manage source-controlled solutions.
 ALM Environment | Environment with Dataverse enabled. Will be used to deploy managed solution.
-ALM Environment - Dataverse Connection | See [Maker Environment Dataverse](#maker-environment-dataverse) below to create the Dataverse Connection.
+ALM Environment - Dataverse Connection | See [Maker Environment Dataverse](#maker-environment-dataverse-connection) below to create the Dataverse Connection.
 Validation | Environment used to validate builds before merging into a solution branch.              |
 Test | Pre-production Environment used to test solutions before moving to production.          |
 Production | Production Environment for managed solutions.                                         |

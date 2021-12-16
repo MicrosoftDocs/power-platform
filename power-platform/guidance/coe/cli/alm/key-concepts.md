@@ -142,7 +142,7 @@ The ALM Accelerator for Power Platform assumes the following environments have b
 
 1. Maker Environment - An environment that the ALM Accelerator for Power Platform will be installed to. It also requires the following components:
 
-   - Created "Microsoft Dataverse (legacy)" connection - [Read More](./before-you-start.md#maker-environment-dataverse).
+   - Created "Microsoft Dataverse (legacy)" connection - [Read More](./before-you-start.md#maker-environment-dataverse-connection).
 
 1. Validation - Environment used to validate deployment before a change is merged into feature branch.
 
