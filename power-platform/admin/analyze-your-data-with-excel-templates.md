@@ -101,7 +101,7 @@ Let's walk through a simple example of customizing an [!INCLUDE[pn_Excel_short](
   
 4. Create a pivot table and chart. These and other demo steps will be explained in a future update to this topic.  
   
-    Place user-added content above or to the right of the existing data table. This prevents the content from being overwritten if you add new data later and you create a new [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] template. For more information, see: [Best practices and considerations for using Excel templates](../admin/analyze-your-data-with-excel-templates.md#BKMK_BestPractices).  
+    Place user-added content above or to the right of the existing data table. This prevents the content from being overwritten if you add new data later and you create a new [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] template. For more information, see: [Best practices and considerations for using Excel templates](#best-practices-and-considerations-for-using-excel-templates).  
   
    ![Excel template with Pivot Chart.](../admin/media/excel-template-pivot-chart.png "Excel template with Pivot Chart")  
   
@@ -143,7 +143,7 @@ Let's walk through a simple example of customizing an [!INCLUDE[pn_Excel_short](
 5. Click **Upload**.  
   
 ### Step 4: Choose who can use the new template  
- Access to the newly-created [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] template depends on how you uploaded it, and on the access granted to the security role. Be sure to check out [Use security roles to control access to templates](../admin/analyze-your-data-with-excel-templates.md#BKMK_SecurityRole).  
+ Access to the newly-created [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] template depends on how you uploaded it, and on the access granted to the security role. Be sure to check out [Use security roles to control access to templates](#use-security-roles-to-control-access-to-templates).  
   
  **If you uploaded the template from the Settings page**  
   
