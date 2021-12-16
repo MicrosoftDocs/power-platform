@@ -667,16 +667,16 @@
             href: data-encryption.md
           - name: Manage encryption key
             href: manage-encryption-key.md 
-      - name: Configure security for individual components
-        items:
-        - name: Security for Power BI
-          href: security/power-bi.md
-        - name: Security for Power Apps
-          href: security/power-apps.md
-        - name: Security for Power Automate
-          href: security/power-automate.md
-        - name: Security for Power Virtual Agents
-          href: security/pva.md
+      # - name: Configure security for individual components
+      #   items:
+      #   - name: Security for Power BI
+      #     href: security/power-bi.md
+      #   - name: Security for Power Apps
+      #     href: security/power-apps.md
+      #   - name: Security for Power Automate
+      #     href: security/power-automate.md
+      #   - name: Security for Power Virtual Agents
+      #     href: security/pva.md
       - name: Security FAQs
         href: security/faqs.md
     - name: SharePoint and Power Apps
