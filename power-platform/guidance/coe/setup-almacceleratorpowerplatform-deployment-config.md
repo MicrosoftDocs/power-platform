@@ -203,7 +203,7 @@ The environment variable property in the customDeploymentConfiguration.json is E
 
 1. On the Pipeline Variables screen, create a pipeline variable for each of the tokens in your configuration (for example, variable.cat_TextEnvironmentVariable).
 
-1. Set the value to the environment variable value for that specific environment and select Keep this value secret if you want to ensure the value is not saved as plain text.
+1. Set the value to the environment variable value for that specific environment and select **Keep this value secret** if you want to ensure the value is not saved as plain text.
 
 1. Where applicable repeat the steps above for each solution and pipeline you create.
 
@@ -431,7 +431,7 @@ The AAD group canvas configuration property in the customDeploymentConfiguration
 
 1. On the Pipeline Variables screen, create a pipeline variable for each of the tokens in your configuration (for example, team.aadSecurityGroupId).
 
-1. Set the value to the azure active directory group id to associate with the team in Dataverse and select Keep this value secret if you want to ensure the value is not saved as plain text.
+1. Set the value to the azure active directory group id to associate with the team in Dataverse and select **Keep this value secret** if you want to ensure the value is not saved as plain text.
 
 1. Where applicable repeat the steps above for each solution and pipeline you create.
 
@@ -488,7 +488,7 @@ The solution component ownership property in the customDeploymentConfiguration.j
 
 1. On the Pipeline Variables screen, create a pipeline variable for each of the tokens in your configuration (for example, owner.ownerEmail).
 
-1. Set the value to the email address of the owner of the component and select Keep this value secret if you want to ensure the value is not saved as plain text.
+1. Set the value to the email address of the owner of the component and select **Keep this value secret** if you want to ensure the value is not saved as plain text.
 
 1. Where applicable repeat the steps above for each solution and pipeline you create.
 
@@ -504,7 +504,7 @@ In many cases, there will be configuration or seed data that you'll want to impo
 
 1. Install the Configuration Migration tool per the instructions [here](/dynamics365/customerengagement/on-premises/developer/download-tools-nuget).
 
-1. Open the Configuration Migration tool select Create schema and select **Continue**.
+1. Open the Configuration Migration tool select **Create schema** and select **Continue**.
 
    ![Select Create Schema](media/setup-almacceleratorpowerplatform-deployment-config/image-20210217093038901.png)
 
@@ -521,7 +521,7 @@ In many cases, there will be configuration or seed data that you'll want to impo
 
     - Similar to the note regarding specific configuration files per environment the steps above create configuration data that will be deployed to all environments. However, if you have specific configuration data per environment you can create sub-directories in the config directory with the name of the Environment to allow for more flexibility. The directory name in this case must match the EnvironmentName pipeline variable you created when setting up your pipeline (Validate, Test, Production). If no environment-specific configuration data and directory is found, the pipelines will revert to the configuration data in the root of the config directory.
 
-1. When prompted to export the data select Yes.
+1. When prompted to export the data select **Yes**.
 
 1. Choose the same location for your exported data and select **Save** then Export Data.
 

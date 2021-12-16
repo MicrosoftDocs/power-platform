@@ -37,7 +37,7 @@ Watch how to use the ALM Accelerator for Power Platform solution.
 
 1. Select **Create** for each connection when prompted.
 
-1. The first time you open the app a dialog will open and you'll be asked to select an environment. Next time you open the app, it will remember which environment you were working on.
+1. The first time you open the app a dialog will open and you'll be asked to select an **environment**. Next time you open the app, it will remember which environment you were working on.
 
 1. Once the environment is selected, the main screen will display a list of all the unmanaged solutions in the environment. Depending on the *user deployment settings*, your user has assigned you'll be able to see the following options for each solution:
 
@@ -50,7 +50,7 @@ Watch how to use the ALM Accelerator for Power Platform solution.
 
    [Solution List](media/almacceleratorpowerplatform-components/aa4pp-main-screen.png "Solution List")
 
-1. You can now create a new solution from the maker portal or import an unmanaged solution from an existing DevOps project to begin making changes to it. To import a solution, use the **Import Solutions** button and select a **Profile, Solution Source, Solution Folder and Configuration (Optional)**.
+1. You can now create a new solution from the maker portal or import an unmanaged solution from an existing DevOps project to begin making changes to it. To import a solution, use the Import Solutions button and select a **Profile, Solution Source, Solution Folder and Configuration (Optional)**.
 
    - **Profile**: the configured profiles your user has access to, this profile points to an organization and project in DevOps.
 
@@ -67,13 +67,13 @@ Watch how to use the ALM Accelerator for Power Platform solution.
 
 1. Once you have created or imported your solution, you are going to need to Choose a Profile for the solution so you can associate the solution to a specific Organization, Project, Repository, Target Branch, and Environments where you'll be able to deploy the solution into.
 
-   - Select Choose a Profile for your Solution in the Solution list.
-   - In the Solution Profile Dialog select a Profile and Select Save.
+   - Select **Choose a Profile** for your Solution in the Solution list.
+   - In the Solution Profile Dialog select a **Profile** and Select **Save**.
 
     > [!NOTE]
     > Depending on wether you are an admin or not, you'll be able to create new deployment profiles from here. If you are a maker the likelihood is that an administrator from your organization has made some profiles available for you to choose from. If still nothing suits what you want, you'll need to work with your administrator to request a new profile.
 
-1. Once you have a profile associated, you can also begin to configure your solution for deployment. Select the **Configure Deployment Settings link** under the name of the Solution. On the configuration deployment page, you'll see the following items:
+1. Once you have a profile associated, you can also begin to configure your solution for deployment. Select the **Configure Deployment Settings** link under the name of the Solution. On the configuration deployment page, you'll see the following items:
 
    - Deployment Environment List (for example, Validation, Test, and Production).
 
@@ -94,35 +94,35 @@ Watch how to use the ALM Accelerator for Power Platform solution.
       ![Environment Variables Configuration](media/almacceleratorpowerplatform-components/aa4pp-deployment-settings-environment-vars.png "Environment Variables Configuration")
 
       - This screen lists all of the environment variables in your solution and allows users to set the value of the environment variables in the downstream environment.
-      - For standard environment variables (for example String, Number, JSON) **enter the value in the text box** to the right of the environment variable name.
-      - For data source environment variables **use the dropdowns to select the appropriate data source** to use in the downstream environment.
+      - For standard environment variables (for example String, Number, JSON) enter the value in the text box to the right of the environment variable name.
+      - For data source environment variables use the dropdowns to select the appropriate data source to use in the downstream environment.
 
    - App Sharing
 
       ![App Sharing Configuration](media/almacceleratorpowerplatform-components/aa4pp-deployment-settings-app-sharing.png "App Sharing Configuration")
 
       - This screen lists all of the apps in your solution and allows users to share the apps in the downstream environment with an Azure AAD Group.
-      - Use  the dropdown to **select the Azure AAD group** with which you'd like to share the app.
-      - To view the Group details **select the details icon**. This button will launch a new browser window with a link to the AAD Group in the Azure portal.
-      - To set the permissions **select the permissions dropdown** and set the permissions to either Can View, Can Edit or Can View and Share.
+      - Use  the dropdown to select the **Azure AAD group** with which you'd like to share the app.
+      - To view the Group details select the **details icon**. This button will launch a new browser window with a link to the AAD Group in the Azure portal.
+      - To set the permissions select the **permissions dropdown** and set the permissions to either Can View, Can Edit or Can View and Share.
 
    - Component Ownership
 
       ![Component Ownership Configuration](media/almacceleratorpowerplatform-components/aa4pp-deployment-settings-comp-ownership.png "Component Ownership Configuration")
 
       - This screen lists all of the Flows in your solution. Users can configure the owner of the Flow in the downstream environment by selecting a Dataverse user.
-      - Use the **dropdown to select a Dataverse user** to own the Flow in the downstream environment.
-      - To view the Flow **select the name of the Flow** to open a new window with the Flow Definition.
+      - Use the dropdown to select a **Dataverse user** to own the Flow in the downstream environment.
+      - To view the Flow select the **name of the Flow** to open a new window with the Flow Definition.
 
 1. Once you've configured your solution, you can push your changes to Git using the **Commit Solution** button for your solution. Depending on the permissions you are given, you'll see here a toggle to **Show Advanced** options. Show Advanced allows you to choose an existing branch or to create a new one with a specific naming convention. When not given permission to these options the app will create a new branch based on your username and **deployment profile** data.
 
    > [!NOTE]
    > Be sure to publish any App changes before initiating the push.
 
-   - Select Commit Solution
-   - In the Commit Solution dialog Select an **existing branch** or **create a new branch** based on an existing branch and enter a **comment**. Use the hashtag notation for example `#123` to link the changes to a specific work item in DevOps and Select **Prepare Solution**.
+   - Select **Commit Solution**
+   - In the Commit Solution dialog Select an **existing branch** or **create a new branch** based on an existing branch and enter a comment. Use the hashtag notation for example `#123` to link the changes to a specific work item in DevOps and Select **Prepare Solution**.
    - After configuring / confirming your solution configuration as described in the previous step, Select **Commit Solution** in the Commit Solution dialog.
-   - When the push begins, a waiting indicator will appear. If the push is successful, a checkbox will appear otherwise a red x will appear. To see the progress of your push, select the progress indicator, which will take you to the running pipeline in DevOps.
+   - When the push begins, a waiting indicator will appear. If the push is successful, a checkbox will appear otherwise a red x will appear. To see the progress of your push, select the **progress indicator**, which will take you to the running pipeline in DevOps.
    - Repeat the pushes as you iterate on your solution.
 
     > [!NOTE]

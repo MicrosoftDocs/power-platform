@@ -158,7 +158,7 @@ The ALM Accelerator uses several DevOps extensions, including some third-party E
 
 1. Enter the url of the tag for the latest release (for example: [https://github.com/microsoft/coe-alm-accelerator-templates/tree/ALMAcceleratorForAdvancedMakers-September2021a](https://github.com/microsoft/coe-alm-accelerator-templates/tree/ALMAcceleratorForAdvancedMakers-September2021a) as the **Clone URL** and select **Import**.
 1. Check that the default branch for this repo is `main`. Choose **Repos** and **Branches** and ensure that the `main` branch is tagged as the default.
-   If it's not, select the 3 vertical dots corresponding to the `main` branch and from the **More options** menu, choose **Set as default branch**.
+   If it's not, select the **3 vertical dots** corresponding to the `main` branch and from the **More options** menu, choose **Set as default branch**.
 
    > [!NOTE]
    > The AzDO repo you created above will be where the Solution Pipeline Templates and the Export / Import Pipelines will run. Later when you create the Pipelines for your solutions you may need to reference this specific Project/Repo if you choose to source control your solutions in another repo in AzDO.
@@ -178,8 +178,8 @@ Following the steps below to create the following pipelines based on the YAML in
 
 1. In DevOps, go to **Pipelines** and **Create a New Pipeline**.
 1. Select **Azure Repos Git** for your code Repository and point to DevOps repo you created and seeded with the pipeline templates in the steps above.
-1. On the **Configure your pipeline** page select **Existing Azure Pipelines YAML file** and point to **/Pipelines/export-solution-to-git.yml**, **/Pipelines/import-unmanaged-to-dev-environment.yml** or **/Pipelines/delete-unmanaged-solution-and-components.yml**  and Select **Continue**.
-1. On the next screen Select **Save** and then Select the **3 dots next to Run Pipeline** and Select **Rename/Move**.
+1. On the **Configure your pipeline** page select **Existing Azure Pipelines YAML file** and point to **/Pipelines/export-solution-to-git.yml**, **/Pipelines/import-unmanaged-to-dev-environment.yml** or **/Pipelines/delete-unmanaged-solution-and-components.yml** and select **Continue**.
+1. On the next screen Select **Save** and then select the **3 dots next to Run Pipeline** and select **Rename/Move**.
 1. Update the pipeline name to **export-solution-to-git**, **import-unmanaged-to-dev-environment**, or **delete-unmanaged-solution-and-components** and select **Save**.
 
 ### Create export pipeline variables (optional)
@@ -233,7 +233,7 @@ The **VerifyDefaultEnvironmentVariableValues** can be used to ensure that specif
 
 1. Find and select the user name **[Your Project Name] Build Service ([Your Organization Name])** under Users and set the **same values as above**.
 
-1. Select **Pipelines** and Select the 3 dots in the top right corner then Select **Manage Security**.
+1. Select **Pipelines** and select the **3 dots in the top right corner** then select **Manage Security**.
 
 1. Set the following permissions for the Build Service user.
 
@@ -262,7 +262,7 @@ Each Dataverse environment (e.g Development, Validation, Test, and Production) w
 
 1. Under **Project Settings** in your DevOps project, select the **Service connections** menu item.
 
-1. Select **Create/New service connection** and Search for Power Platform and select the **Power Platform** Service connection type and Select **Next**.
+1. Select **Create/New service connection** and Search for Power Platform and select the **Power Platform** Service connection type and select **Next**.
 
 1. In the **Server URL**, put your environment URL (for example <https://myorg.crm.dynamics.com/>). **NOTE: You must include the trailing forward slash see below**.
 
@@ -277,11 +277,11 @@ Each Dataverse environment (e.g Development, Validation, Test, and Production) w
 
     - Select the **Service Connection** to be **shared with users** from the **Service Connections** list.
 
-    - Select the **3 dots** in the top-right corner and Select **Security**.
+    - Select the **3 dots** in the top-right corner and select **Security**.
 
     - Select the **Group or User** you want to provide User permissions to in the Dropdown.
 
-    - Select the **User** **Role** and Select **Add**.
+    - Select the **User** **Role** and select **Add**.
 
 1. Repeat these steps for each of your environments (Development, Validation, Test, and Production).
 
@@ -365,9 +365,9 @@ The following steps show how to **create a pipeline from the sample pipeline YAM
 
 1. Select the **DevOps repo** which contains the deployment Pipeline YAML.
 
-1. On the **Configure your pipeline** page select **Existing Azure Pipelines YAML file**, point to the **YAML File in your repo that you created in step 5** and Select **Continue**.
+1. On the **Configure your pipeline** page select **Existing Azure Pipelines YAML file**, point to the **YAML File in your repo that you created in step 5** and select **Continue**.
 
-1. On the next screen Select **Save** and then Select the 3 dots next to Run Pipeline and Select **Rename/Move**.
+1. On the next screen Select **Save** and then select the 3 dots next to Run Pipeline and select **Rename/Move**.
 
 1. Update the pipeline name to **deploy-validation-MyNewSolution**, **deploy-test-MyNewSolution**,or **deploy-prod-MyNewSolution** (where 'MyNewSolution' is the name of your solution) and select **Save**.
 
@@ -442,7 +442,7 @@ In order to execute the build pipeline for your solution when a **Pull Request i
 
 1. In DevOps, go to **Repos** and select the **Branches** folder.
 
-1. Locate the **target branch** on which you want to run the **Pull Request policy** and select the ellipsis to the right of the target branch and Select **Branch Policies**.
+1. Locate the **target branch** on which you want to run the **Pull Request policy** and select the ellipsis to the right of the target branch and select **Branch Policies**.
 
 1. On the **Branch Policies** screen, go to **Build Validation**.
 
@@ -493,7 +493,7 @@ If your solution requires these other configuration settings and / or data, foll
 
 ### Configure the DevOps custom connector
 
-1. In the Power App maker portal, select your **Environment** and Select **Data** > **Custom Connectors** > **CustomAzureDevOps**.
+1. In the Power App maker portal, select your **Environment** and select **Data** > **Custom Connectors** > **CustomAzureDevOps**.
 
 1. Select **Edit** and go to the **Security** section and select **Edit** and set the following fields.
 
@@ -513,7 +513,7 @@ If your solution requires these other configuration settings and / or data, foll
 
     - Select **New Connection** and follow the prompts to create a new connection.
 
-    - In the Power App maker portal, select your **Environment** and Select **Data** > **Custom Connectors** > **CustomAzureDevOps**.
+    - In the Power App maker portal, select your **Environment** and select **Data** > **Custom Connectors** > **CustomAzureDevOps**.
 
     - Select **Edit** and go to the **Test** section and find the **GetOrganizations** operation.
 

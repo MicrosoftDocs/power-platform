@@ -37,7 +37,7 @@ Watch how to use the ALM Accelerator for Power Platform solution.
 
 1. Select **Create** for each connection when prompted.
 
-1. The first time you open the app a dialog will open and you'll be asked to **select an environment**. Next time you open the app, it will remember which environment you were working on.
+1. The first time you open the app a dialog will open and you'll be asked to select an **environment**. Next time you open the app, it will remember which environment you were working on.
 
 1. Once the environment is selected, the main screen will display a list of all the **unmanaged solutions** in the environment. You can refresh the list using the **refresh** button if you don't see new solutions you've created:
 
@@ -54,7 +54,7 @@ Watch how to use the ALM Accelerator for Power Platform solution.
     > [!NOTE]
     > If you don't find a Solution Profile that suits your needs, you will need to talk to an administrator to get it created.
 
-1. Configure the deployment setting using the **Select the Configure Deployment Settings** link under the name of the Solution. On the configuration deployment page, you'll see the following items:
+1. Configure the deployment setting by selecting the **Configure Deployment Settings** link under the name of the Solution. On the configuration deployment page, you'll see the following items:
 
    - Deployment Environment List (for example, Validation, Test, and Production)
 
@@ -66,14 +66,14 @@ Watch how to use the ALM Accelerator for Power Platform solution.
 
       - This screen lists all of the connection references in your solution and allows users to create connections in their downstream environments to hook up the connection references in the target environment.
       - If you have permissions to create connections in the target environment you'll see the + button.
-         - To create a new connection **select the + button**.
-         - After creating a new connection, **select the refresh button** in the top right to get the latest list of connections.
-         - To select an existing connection in the target environment **select a connection from the dropdown list**.
-         - To Navigate to the connection in the target environment **select the name or the status of the connection**.
+         - To create a new connection select the **+ button**.
+         - After creating a new connection, select the **refresh button** in the top right to get the latest list of connections.
+         - To select an existing connection in the target environment select a **connection from the dropdown list**.
+         - To Navigate to the connection in the target environment select **the name or the status of the connection**.
       - If you don't have permissions to create connections in the target environment the + button will be disabled and you will have to request a connection be created by another user.
-         - To request a connection **select the Request a Connection button**.
+         - To request a connection select the **Request a Connection button**.
          - Enter the name of the team member you need to create the connection and select the user.
-         - To open the preformatted email  **select send**.
+         - To open the preformatted email  select **Send**.
          - The preformatted email will include a link for the recipient to create the required connection.
 
    - Environment Variables
@@ -89,17 +89,17 @@ Watch how to use the ALM Accelerator for Power Platform solution.
       ![App Sharing Configuration](media/almacceleratorpowerplatform-components/aa4pp-deployment-settings-app-sharing.png "App Sharing Configuration")
 
       - This screen lists all of the apps in your solution and allows users to share the apps in the downstream environment with an Azure AAD Group.
-      - Use  the dropdown to **select the Azure AAD group** with which you'd like to share the app.
-      - To view the Group details **select the details icon**. This button will launch a new browser window with a link to the AAD Group in the Azure portal.
-      - To set the permissions **select the permissions dropdown** and set the permissions to either Can View, Can Edit or Can View and Share.
+      - Use  the dropdown to select the **Azure AAD group** with which you'd like to share the app.
+      - To view the Group details select the **details icon**. This button will launch a new browser window with a link to the AAD Group in the Azure portal.
+      - To set the permissions select the **permissions dropdown** and set the permissions to either Can View, Can Edit or Can View and Share.
 
    - Component Ownership
 
       ![Component Ownership Configuration](media/almacceleratorpowerplatform-components/aa4pp-deployment-settings-comp-ownership.png "Component Ownership Configuration")
 
       - This screen lists all of the Flows in your solution. Users can configure the owner of the Flow in the downstream environment by selecting a Dataverse user.
-      - Use  the **dropdown to select a Dataverse user** to own the Flow in the downstream environment.
-      - To view the Flow **select the name of the Flow** to open a new window with the Flow Definition.
+      - Use  the dropdown to select a **Dataverse user** to own the Flow in the downstream environment.
+      - To view the Flow select the **name of the Flow** to open a new window with the Flow Definition.
 
 1. After selecting the **Solution Profile** and configuring the **Deployment Settings**, you can push your changes to Git using the **Save Solution** button. In the background, the app will push your change to version control automatically creating a branch. Repeat the pushes as you make changes to your solution so your change history is kept.
 

@@ -30,7 +30,7 @@ In this section, we'll describe how to use the ALM Accelerator for Power Platfor
 
 To create User Settings for AA4PP, use the following steps.
 
-1. Open the Power **Platform ALM Accelerator Administration App** and Navigate to **Deployment User Settings**.
+1. Open the Power **Platform ALM Accelerator Administration App** and navigate to **Deployment User Settings**.
 
    ![ALM Accelerator for Power Platform Administration App](media/setup-almacceleratorpowerplatform-deployment-profiles/image-20211126094411050.png)
 
@@ -77,10 +77,10 @@ If a user logs in to the AA4PP App and doesn't have a Deployment User Settings a
 
       - Select the **Choose a Profile link** for a solution that doesn't have a profile assigned.
       - Choose an **existing profile from the drop-down or select the plus button** to create a new profile.
-      - Enter a **name for the Profile and Select the Organization, Project, Repo and Target Branch**.
-      - Select Create. Creating a new Profile will automatically populate the Deployment Environments with the default configuration for Validation, Test, and Production. These environments' URLs will contain a placeholder for your environments actual URL.
+      - Enter a **name for the Profile and select the Organization, Project, Repo and Target Branch**.
+      - Select **Create**. Creating a new Profile will automatically populate the Deployment Environments with the default configuration for Validation, Test, and Production. These environments' URLs will contain a placeholder for your environments actual URL.
       - Enter the URLs for your Validation, Test, and Production environments.
-      - Select Save to save your changes to the Profile and save the profile as the default for the solution.
+      - Select **Save** to save your changes to the Profile and save the profile as the default for the solution.
       - After the Profile is saved, you'll be able to Commit and Deploy your solution.
         ![AA4PP App with Solution Actions Enabled after Creating a New Profile](media/setup-almacceleratorpowerplatform-deployment-profiles/image-20211126135223693.png)
 
@@ -90,19 +90,19 @@ In order to share User Settings created for a particular user profile it is reco
 
 1. If you haven't already created an AAD Group Team in Dataverse to share your User Settings with follow the steps below otherwise skip to step 2.
 
-   - Navigate to [https://admin.powerplatform.com](https://admin.powerplatform.com) and Select the environment in which you've installed AA4PP.
+   - Navigate to [https://admin.powerplatform.com](https://admin.powerplatform.com) and select the environment in which you've installed AA4PP.
 
-   - Select **See all** under Access - Teams and Select **Create Team**.
+   - Select **See all** under Access - Teams and select **Create Team**.
 
-   - Enter the required fields and Select **AAD Group Team** as the Team Type.
+   - Enter the required fields and select **AAD Group Team** as the Team Type.
 
-   - Select the **AAD Group** to use for this Team and Select **Next**.
+   - Select the **AAD Group** to use for this Team and select **Next**.
 
-   - Select **ALM Power App Access** and **Basic User** as the Roles for the Team and Select **Save**.
+   - Select **ALM Power App Access** and **Basic User** as the Roles for the Team and select **Save**.
 
-1. Open the Power **Platform ALM Accelerator Administration App** and Navigate to **Deployment User Settings**.
+1. Open the Power **Platform ALM Accelerator Administration App** and navigate to **Deployment User Settings**.
 
-1. Open the **Deployment User Setting** that you want to share with your Team and Select **Share**.
+1. Open the **Deployment User Setting** that you want to share with your Team and select **Share**.
 
 1. Locate your AAD Group Team by Using **Advanced lookup** in the Sharing dialog.
 
@@ -112,6 +112,6 @@ In order to share User Settings created for a particular user profile it is reco
 
    - Select the **Team you created previously** and select **Done**.
 
-1. Under Manage Share Access, select the **Team** and Select **Read** and **Append** as the permissions.
+1. Under Manage Share Access, select the **Team** and select **Read** and **Append** as the permissions.
 
 1. Select Share.

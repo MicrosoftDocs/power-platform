@@ -29,11 +29,11 @@ The AA4PP App is intended to be used by makers to increase productivity while de
 So users can access resources in Dataverse when running the AA4PP app they need to be assigned the appropriate roles. The recommended way to assign roles is to create a Group Team in Dataverse to which all of your makers will be added and assign the appropriate role(s) to the team. Set up a group team as follows and you'll be able to manage your makers using Azure AD by adding and removing them from a Group.
 
 1. Navigate to <https://admin.powerplatform.microsoft.com/>.
-1. **Select the Environment** in which the user exists.
-1. **Select See all under Teams** under the Access section.
-1. Select Create Team.
-1. Enter a **Team name, business unit, administrator and Select AAD Security Group as the Team type and Select a Membership Type and Select Next**.
-1. On the Manage security roles page, select the **ALM Power App Access** and **Basic User** role and **select Save**.
+1. Select the **Environment** in which the user exists.
+1. Select **See all under Teams** under the Access section.
+1. Select **Create Team**.
+1. Enter a **Team name, business unit, administrator** and select **AAD Security Group** as the Team type and select a **Membership Type** and select Next**.
+1. On the Manage security roles page, select the **ALM Power App Access** and **Basic User** role and select **Save**.
 
 ## DevOps user setup
 
@@ -43,13 +43,13 @@ For users to use the service connection from the ALM Accelerator App the Service
 
 1. Select your Project and select the COG in the bottom left corner to access project settings.
 
-1. Select Service connections and select the **Service Connection** to be **shared with users** from the **Service Connections** list.
+1. Select **Service connections** and select the **Service Connection** to be **shared with users** from the **Service Connections** list.
 
-1. Select the **3 dots** in the top-right corner and Select **Security**.
+1. Select the **3 dots** in the top-right corner and select **Security**.
 
 1. Select the **Group or User** you want to provide User permissions to in the Dropdown.
 
-1. Select the **User** for the **Role** and Select **Add**.
+1. Select the **User** for the **Role** and select **Add**.
 
    ![Select the Group, User and Role](media/setup-almacceleratorpowerplatform-users/SetServiceConnectionPermissions.png)
 
