@@ -41,6 +41,9 @@ The following questions are common security questions and answers for Power Plat
 
   **Common Security questions from customers**
   - The below are some of the common security questions that customers have raised in the past. We are capturing them here along with useful information that helps to answer their questions.
+  - How does Power Platform guard against [Clickjacking](https://owasp.org/www-community/attacks/Clickjacking) risks?
+  -- To be updated
+  - Does Power Platform support Content Security Policy ([CSP](https://owasp.org/www-community/controls/Content_Security_Policy))?
 
 
 
