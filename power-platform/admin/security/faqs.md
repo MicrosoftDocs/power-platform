@@ -21,10 +21,6 @@ search.app:
 ---
 # Power Platform security FAQs
 
-> **Working notes**
-> 
-> Add top questions based on IcMs and fields queries with appropriate links to new and existing content.
-
 The following questions are common security questions and answers for Power Platform Security. These are categorized into 2 sections.
   - The first section covers Top 10 OWASP Risks and how Power platform has been designed to help mitigate those risks.
   - The second section covers some of the common security questions that have been raised by customers in the past. These are organized based on when they were added to this white paper, to facilitate your ability to quickly find new questions and answers when this paper is updated. The newest questions are added to the end of this list.
