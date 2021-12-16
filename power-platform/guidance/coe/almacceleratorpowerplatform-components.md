@@ -24,7 +24,7 @@ search.app:
 
 ## Demo: ALM Accelerator for Power Platform
 
-Watch how to use the ALM Accelerator for Power Platform solution
+Watch how to use the ALM Accelerator for Power Platform solution.
 [Demo Videos](https://github.com/microsoft/coe-starter-kit/CenterofExcellenceALMAccelerator/WALKTHROUGHS.md)
 
 ## What's in the solution?
@@ -45,58 +45,58 @@ The AA4PP Pipelines are a set of YAML pipelines intended to be used with DevOps.
 
 The Pipelines handle the following.
 
-### Import Solution
+### Import solution
 
-1. Select an existing Solution from Source Control
-1. Import a build of that Solution from Source Control
-1. Future: Handle seeding environments with Data and configuring Connection References, Environment Variables, Sharing, and Ownership
+1. Select an existing Solution from Source Control.
+1. Import a build of that Solution from Source Control.
+1. Future: Handle seeding environments with Data and configuring Connection References, Environment Variables, Sharing, and Ownership.
 
-### Delete Solution
+### Delete solution
 
 1. Export an Unmanaged Solution from a Development Environment as Managed.
-1. Import Managed Solution to Development Environment
+1. Import Managed Solution to Development Environment.
 1. Delete the Managed Solution from a Development Environment.
 
-### Commit Solution
+### Commit solution
 
-1. Create a New Branch Based on an Existing Branch
-1. Export an Unmanaged Solution from a Development Environment
-1. Unpack Solutions to Human Readable Format
-1. Store Unpacked Files in a Git Repository Branch
+1. Create a New Branch Based on an Existing Branch.
+1. Export an Unmanaged Solution from a Development Environment.
+1. Unpack Solutions to Human Readable Format.
+1. Store Unpacked Files in a Git Repository Branch.
 
-### Deploy Solution
+### Deploy solution
 
-1. Create a Pull Request in DevOps for your New Branch
-1. Run a Build on a Pull Request via Branch Policy to validate your changes including running Solution Checker
-1. Include Branch Policies to require more checks such as Reviewers, Work Items Linking
+1. Create a Pull Request in DevOps for your New Branch.
+1. Run a Build on a Pull Request via Branch Policy to validate your changes including running Solution Checker.
+1. Include Branch Policies to require more checks such as Reviewers, Work Items Linking.
 
-### Deploy to Environment
+### Deploy to environment
 
-1. Create a trigger for when your Solution is deployed to an environment
-1. Build Managed Solution and Deploy based on Trigger
-1. Handle Upgrade vs Update of Solution based on changes in the Solution
-1. Handle Setup of the Solution in the Target Environment
-   - Deploy configuration data
-   - Update Connection References
-   - Update Environment Variable Values
-   - Share Apps with Azure Active Directory Groups
-   - Activate Flows
-   - Create Teams in Dataverse for Azure Active Directory Groups
-   - Update Solution Component Ownership
+1. Create a trigger for when your Solution is deployed to an environment.
+1. Build Managed Solution and Deploy based on Trigger.
+1. Handle Upgrade vs Update of Solution based on changes in the Solution.
+1. Handle Setup of the Solution in the Target Environment.
+   - Deploy configuration data.
+   - Update Connection References.
+   - Update Environment Variable Values.
+   - Share Apps with Azure Active Directory Groups.
+   - Activate Flows.
+   - Create Teams in Dataverse for Azure Active Directory Groups.
+   - Update Solution Component Ownership.
 
-## ALM Accelerator App
+## ALM Accelerator app
 
 The AA4PP Canvas App provides a convenience layer on top of the AA4PP Pipelines. The AA4PP Canvas App allows Power Platform Makers to easily invoke the Azure Pipelines to perform their complex tasks without context switching between the Power Apps environment and the DevOps. The goal of the App is to provider Makers with a friction-free way of performing common Development and ALM tasks as described in the following.
 
-1. Target multiple personas (for example: New Maker, Advanced Maker, Team Maker)
-1. Target multiple Organization / Projects and Repos in DevOps
-1. Get the latest version of a solution into the development environment by importing the solution
-1. Remove existing work that needs to be rebased from source control by deleting a solution
+1. Target multiple personas (for example: New Maker, Advanced Maker, Team Maker).
+1. Target multiple Organization / Projects and Repos in DevOps.
+1. Get the latest version of a solution into the development environment by importing the solution.
+1. Remove existing work that needs to be rebased from source control by deleting a solution.
 1. Push the latest changes from the development environment to source control by committing your solution.
-1. Submit the changes tied to a Work Item for Review by creating a pull request
-1. Monitor the progress of moving the changes between environments
+1. Submit the changes tied to a Work Item for Review by creating a pull request.
+1. Monitor the progress of moving the changes between environments.
 
-## ALM Accelerator Flow and Maker Experience
+## ALM Accelerator flow and maker experience
 
 The ALM Accelerator provides the ability for administrators to target specific personas and enable functions based on a maker's needs. For example, teams of makers may require the ability to get others' changes into their isolated maker environment. Retrieving others' changes is possible by using the Import function in the App. However, makers building in isolation on their own solutions may not need this capability and could be confused by its purpose. Additionally, makers who are comfortable with navigating between DevOps and the App may want to be able to drill into a particular process in DevOps to view details about a pipeline's execution. The Drillthrough experience can be enabled for these users or turned off for others to avoid confusion.
 

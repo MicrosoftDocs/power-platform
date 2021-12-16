@@ -31,13 +31,13 @@ The CoE CLI provides a set of commands that can be used to automate the end-to-e
 
 Comparing and contrasting the CoE CLI to other CLI / APIs:
 
-1. The CoE CLI aims to automate the end-to-end deployment of components across the Microsoft Cloud
+1. The CoE CLI aims to automate the end-to-end deployment of components across the Microsoft Cloud.
 
-1. The [Azure CLI](/cli/azure/) is aimed at Automating Azure Resources and via extensions Azure DevOps. The CoE CLI uses the Azure CLI for authentication and managing Azure related resources
+1. The [Azure CLI](/cli/azure/) is aimed at Automating Azure Resources and via extensions Azure DevOps. The CoE CLI uses the Azure CLI for authentication and managing Azure related resources.
 
-1. The [Power Platform CLI](/powerapps/developer/data-platform/powerapps-cli) is a simple, one-stop developer CLI that empowers developers and Independent Software Vendors (ISVs) to perform various operations in Microsoft Power Platform related to environment lifecycle features, and to authenticate and work with Microsoft Dataverse environments, solution packages, portals, code components. As new features are added to the cross platform Power Platform CLI, the CoE CLI will use the Power Platform CLI features
+1. The [Power Platform CLI](/powerapps/developer/data-platform/powerapps-cli) is a simple, one-stop developer CLI that empowers developers and Independent Software Vendors (ISVs) to perform various operations in Microsoft Power Platform related to environment lifecycle features, and to authenticate and work with Microsoft Dataverse environments, solution packages, portals, code components. As new features are added to the cross platform Power Platform CLI, the CoE CLI will use the Power Platform CLI features.
 
-1. The [Azure DevOps Services REST API](/rest/api/azure/devops/) provides a REST based set of commands to interact with Azure DevOps. The CoE CLI makes use of these APIs to build aggregate commands
+1. The [Azure DevOps Services REST API](/rest/api/azure/devops/) provides a REST based set of commands to interact with Azure DevOps. The CoE CLI makes use of these APIs to build aggregate commands.
 
 ## What next
 
@@ -49,13 +49,13 @@ As you consider an enterprise deployment the following sections outline the key 
 
 ## Getting started
 
-Once the CoE CLI has been [installed](./install.md), you can use -h argument to see help options
+Once the CoE CLI has been [installed](./install.md), you can use -h argument to see help options.
 
 ```bash
 coe -h
 ```
 
-Authentication for tasks is managed using the Azure CLI. Using standard Azure CLI commands you can log in, log out and select accounts. For example
+Authentication for tasks is managed using the Azure CLI. Using standard Azure CLI commands you can log in, log out and select accounts. For example:
 
 ```bash
 az login
@@ -65,7 +65,7 @@ az logout
 
 ## Getting help
 
-You can get short descriptions of any command by adding **--help** to the command line. To get more detailed help, you can use the help command. For example, to get help on the ALM Accelerator for Power Platform use the following command
+You can get short descriptions of any command by adding **--help** to the command line. To get more detailed help, you can use the help command. For example, to get help on the ALM Accelerator for Power Platform use the following command.
 
 ```bash
 coe help alm install

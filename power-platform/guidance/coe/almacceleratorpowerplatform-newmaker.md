@@ -1,6 +1,6 @@
 ---
-title: "ALM Accelerator for Power Platform New Maker Experience | MicrosoftDocs"
-description: "The ALM Accelerator for Power Platform New Maker Experience will help you follow ALM patterns and practices. It enables you to source control your solutions and move them from your development environment to test and production environments using DevOps"
+title: "ALM Accelerator for Power Platform new maker experience | MicrosoftDocs"
+description: "The ALM Accelerator for Power Platform new maker experience will help you follow ALM patterns and practices. It enables you to source control your solutions and move them from your development environment to test and production environments using DevOps"
 author: alvarezskinner
 manager: devkeydet
 ms.service: power-platform
@@ -17,17 +17,17 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# ALM Accelerator for Power Platform New Maker Experience (Preview)
+# ALM Accelerator for Power Platform new maker experience (Preview)
 
 > [!NOTE]
 > ALM Accelerator for Power Platform (AA4PP) is currently in public preview. Please see [Issues currently tagged as vnext](https://github.com/microsoft/coe-starter-kit/issues?q=is%3Aopen+is%3Aissue+label%3Aalm-accelerator+label%3Avnext) for the Roadmap to be completed prior to general availability. While the tool is in Public Preview, you should expect that there will be breaking changes and frequent updates to address feedback from preview members. Additionally, the Public Preview is reliant on the experimental [Power Apps Source File Pack and Unpack Utility](https://github.com/microsoft/PowerApps-Language-Tooling) that is being developed separately from AA4PP.
 
-## Demo: ALM Accelerator New Maker Experience
+## Demo: ALM Accelerator new maker experience
 
-Watch how to use the ALM Accelerator for Power Platform solution
+Watch how to use the ALM Accelerator for Power Platform solution.
 [Demo Videos](https://github.com/microsoft/coe-starter-kit/CenterofExcellenceALMAccelerator/WALKTHROUGHS.md)
 
-## Walkthrough: ALM Accelerator New Maker Experience
+## Walkthrough: ALM Accelerator new maker experience
 
 1. Once you have installed and configured the app, launch it from your Environment under Apps by select **ALM Accelerator for Power Platform**.
 
@@ -41,8 +41,8 @@ Watch how to use the ALM Accelerator for Power Platform solution
 
 1. Once the environment is selected, the main screen will display a list of all the **unmanaged solutions** in the environment. You can refresh the list using the **refresh** button if you don't see new solutions you've created:
 
-    - **Save Solution**: Saves the current state of the solution into version control so all changes done to the solution can be tracked
-    - **Publish Solution**: Allows you to request to move the solution across environments
+    - **Save Solution**: Saves the current state of the solution into version control so all changes done to the solution can be tracked.
+    - **Publish Solution**: Allows you to request to move the solution across environments.
     - **Choose a Profile**: Allows you to select a **Solution profile** to associate a solution to a **Repository** in a given **Organization** and **Project**. If you're unsure what profile to select ask your administrator to provide the name of the solution profile for your solution.
     - **Request History**: (right chevron icon): Provides a list of requests (saves and deployments) done for that solution.
 
@@ -54,7 +54,7 @@ Watch how to use the ALM Accelerator for Power Platform solution
     > [!NOTE]
     > If you don't find a Solution Profile that suits your needs, you will need to talk to an administrator to get it created.
 
-1. Configure the deployment setting using the **Select the Configure Deployment Settings** link under the name of the Solution. On the configuration deployment page, you'll see the following items
+1. Configure the deployment setting using the **Select the Configure Deployment Settings** link under the name of the Solution. On the configuration deployment page, you'll see the following items:
 
    - Deployment Environment List (for example, Validation, Test, and Production)
 
@@ -81,7 +81,7 @@ Watch how to use the ALM Accelerator for Power Platform solution
       ![Environment Variables Configuration](media/almacceleratorpowerplatform-components/aa4pp-deployment-settings-environment-vars.png "Environment Variables Configuration")
 
       - This screen lists all of the environment variables in your solution and allows users to set the value of the environment variables in the downstream environment.
-      - For standard environment variables (for example String, Number, JSON) **enter the value in the text box** to the right of the environment variable name
+      - For standard environment variables (for example String, Number, JSON) **enter the value in the text box** to the right of the environment variable name.
       - For data source environment variables **use the dropdowns to select the appropriate data source** to use in the downstream environment.
 
    - App Sharing

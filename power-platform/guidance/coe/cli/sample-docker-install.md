@@ -17,9 +17,9 @@ search.app:
   - Powerplatform
 ---
 
-# Sample Docker Install
+# Sample Docker install
 
-The following captures the results of a sample docker install on Linux
+The following captures the results of a sample docker install on Linux.
 
 ![Docker Install](./media/install-docker.svg)
 

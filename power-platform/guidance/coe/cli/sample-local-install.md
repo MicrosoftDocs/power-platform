@@ -17,9 +17,9 @@ search.app:
   - Powerplatform
 ---
 
-# Sample Local Install
+# Sample local install
 
-The following captures the results of a sample local install
+The following captures the results of a sample local install.
 
 ![Local Install](./media/install-local.svg)
 

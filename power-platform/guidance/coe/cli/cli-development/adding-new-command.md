@@ -30,23 +30,23 @@ coe cli add -n sample
 
 One you have unit test completed for your new command:
 
-1. Review [https://www.npmjs.com/package/commander](https://www.npmjs.com/package/commander) on commands, options
+1. Review [https://www.npmjs.com/package/commander](https://www.npmjs.com/package/commander) on commands, options.
 
-1. Update [commands.ts](https://github.com/microsoft/coe-starter-kit/blob/main/coe-cli/src/commands/commands.ts) to include a new command or sub command
+1. Update [commands.ts](https://github.com/microsoft/coe-starter-kit/blob/main/coe-cli/src/commands/commands.ts) to include a new command or sub command.
 
-- Import your files at the top of the file
+- Import your files at the top of the file.
 
 ```typescript
 import { SampleArguments, SampleCommand} from './sample';
 ```
 
-- Add function for mock injection
+- Add function for mock injection.
 
 ```typescript
     createSampleCommand: () => SampleCommand
 ```
 
-- Create command in the constructor function
+- Create command in the constructor function.
 
 ```typescript
        this.createSampleCommand = () => new SampleCommand
@@ -68,7 +68,7 @@ import { SampleArguments, SampleCommand} from './sample';
     }
 ```
 
-- Register new command to init function
+- Register new command to init function.
 
 ```typescript
         this.AddSampleCommand(program);
@@ -76,7 +76,7 @@ import { SampleArguments, SampleCommand} from './sample';
 
 1. Update [commands.spec.ts](https://github.com/microsoft/coe-starter-kit/blob/main/coe-cli/test/commands/commands.spec.ts) to include unit tests
 
-- Include reference to the command
+- Include reference to the command.
 
 ```typescript
 import { SampleCommand } from '../../src/commands/sample'
@@ -104,7 +104,7 @@ describe('Sample', () => {
 });
 ```
 
-1. Run the unit tests with new changes
+1. Run the unit tests with new changes.
 
 ```bash
 npm run test

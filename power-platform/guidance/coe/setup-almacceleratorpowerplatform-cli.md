@@ -27,7 +27,7 @@ The ALM Accelerator components enable makers to apply source control strategies 
 
 The ALM Accelerator components solution doesn't have a dependency on other components of the CoE Starter Kit. It can be used independently.
 
-## Setting Up the ALM Accelerator Using the CoE CLI
+## Setting Up the ALM Accelerator using the CoE CLI
 
 The following will guide you through setting up the Center of Excellence CLI and using the CoE CLI to install the ALM Accelerator in your tenant.
 

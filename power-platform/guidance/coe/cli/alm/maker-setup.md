@@ -21,22 +21,22 @@ search.app:
 
 The first step is to ensure that the maker and an environment to build and manage solutions. Normally each maker has a unique [development environment](./development-environments.md) created. Having successfully gained access to a development environment the commands below allow either a Power Platform administrator or a Maker to perform the following tasks:
 
-1. [Set up Service Principal](#set-up-service-principal) - Provide access to the Service Principal used by the Azure DevOps Pipeline
+1. [Set up Service Principal](#set-up-service-principal) - Provide access to the Service Principal used by the Azure DevOps Pipeline.
 
 1. [Maker Create Solution](#maker-create-solution) - Create a solution branch in the Azure DevOps repository.
 
 ## Set up service principal
 
-The ALM Accelerator for Power Platform uses the created Azure Active Directory Service Principal to connect to environments and import and export the solutions. The user add command enables the ALM Accelerator to access each environment. The user add command adds the service principal as a user and assigned the System Administrator role to an environment.
+The ALM Accelerator for Power Platform uses the created Azure Active Directory Service Principal to connect to environments and import and export the solutions. The user add command enables the ALM Accelerator to access each environment. The user add command adds the service principal as a user and assigned the System administrator role to an environment.
 
-1. Log out of any existing sessions if not the maker or a Power Platform tenant Administrator
+1. Log out of any existing sessions if not the maker or a Power Platform tenant administrator.
 
 ```bash
 az logout
 
 ```
 
-1. Add the Service Principal to the environment
+1. Add the Service Principal to the environment.
 
 ```bash
 coe alm user add -e https://contoso-dev-user1.crm.dynamics.com
@@ -48,21 +48,21 @@ More information: [coe alm user add](https://github.com/microsoft/coe-starter-ki
 
 Power Platform solutions managed by the ALM Accelerator require a branch to be created in an Azure DevOps Repository. This branch called a "solution branch" allows the maker to build and test changes. Once changes have been verified, they can then be merged back into the main branch to deploy to production. The branch command creates a solution branch in Azure DevOps and configures the required Azure Pipelines for the created branch.
 
-1. Switch to Developer Environment
+1. Switch to the Developer Environment.
 
-1. Create new solution, for example,  NewSolution1
+1. Create new solution, for example,  NewSolution1.
 
-1. Add items to the solution. For example
+1. Add items to the solution. For example:
 
-   a. Select Solution
+   a. Select solution.
 
-   b. Add Canvas Application
+   b. Add a canvas application.
 
-   c. Add Button
+   c. Add a Button.
 
-   d. Save Application and Close
+   d. Save the application and close.
 
-1. Create Solution branch using the following CLI command
+1. Create Solution branch using the following CLI command.
 
 ```bash
 coe alm branch \
@@ -76,27 +76,27 @@ More information: [coe alm branch](https://github.com/microsoft/coe-starter-kit/
 
 NOTES:
 
-1. **-o** is the name of your DevOps Organization
+1. **-o** is the name of your DevOps Organization.
 
-1. **-p** is the name of the Azure DevOps Project
+1. **-p** is the name of the Azure DevOps Project.
 
-1. **-d** is the name of the solution branch to create
+1. **-d** is the name of the solution branch to create.
 
 1. If the repository you want to create a branch for is empty, you'll need to commit an initial commit before a branch can be created.
 
-1. Open ALM Accelerator for Advanced Maker Application
+1. Open ALM Accelerator for Advanced Maker Application.
 
-1. Select Push change to Git
+1. Select Push change to Git.
 
-   a. Create New Branch, for example,  MySolution1-WIP
+   a. Create New Branch, for example,  MySolution1-WIP.
 
-   b. An existing solution Branch, for example MySolution1
+   b. Select an existing solution Branch, for example MySolution1.
 
-   c. Add a comment, for example "Initial version"
+   c. Add a comment, for example "Initial version".
 
-1. Select Latest Push Status
+1. Select Latest Push Status.
 
-   a. Permit permissions for pipeline to run (Variable Group, Service Connection, Pipeline)
+   a. Permit permissions for pipeline to run (Variable Group, Service Connection, Pipeline).
 
 ## Post setup checks
 
@@ -106,21 +106,21 @@ After setting up an advanced maker, you may need to verify the following setup i
 
 1. The first time that each pipeline is run from the administration application you'll need to open the pipeline in Azure DevOps and approve the resources used by the pipeline.
 
-1. Select the blue icon for the Azure DevOps Build in the application
+1. Select the blue icon for the Azure DevOps Build in the application.
 
    ![Latest Push Status](../media/latest-push-status.jpg)
 
-1. Check if there's a message similar to the screenshot below that requires approval of the pipeline to run
+1. Check if there's a message similar to the screenshot below that requires approval of the pipeline to run.
 
    ![Azure DevOps Permissions](../media/devops-pipeline-permissions.jpg)
 
-1. If necessary, select "View" and permit the build pipeline to access the required resources (Variable group. Repository and Service Connection)
+1. If necessary, select "View" and permit the build pipeline to access the required resources (Variable group. Repository and Service Connection).
 
    ![Azure DevOps Permit](../media/devops-pipeline-permit.jpg)
 
 NOTES:
 
-1. If you're using a free Azure Subscription, you may receive error "No hosted parallelism has been purchased or granted.". To resolve this issue visit [https://aka.ms/azpipelines-parallelism-request](https://aka.ms/azpipelines-parallelism-request) to request Azure Pipeline build compute
+1. If you're using a free Azure Subscription, you may receive error "No hosted parallelism has been purchased or granted.". To resolve this issue visit [https://aka.ms/azpipelines-parallelism-request](https://aka.ms/azpipelines-parallelism-request) to request Azure Pipeline build compute.
 
 ### Read next
 

@@ -54,17 +54,17 @@ Post application deployment look at version of applications deployed, triage iss
 
 ### Information security team
 
-Will compare against organization standards for Data Loss Prevention (DLP), Authentication and Authorization, Service Principals, Teams and Security. Review the ALM process against Threat models, risks, and mitigations.
+Will compare against organization standards for Data Loss Prevention (DLP), Authentication and Authorization, Service Principals, Teams and Security. Review the ALM process against Threat models, risks, and mitigation.
 
 ### Architecture team
 
-Review the entire ALM process and components and verify matches solution methodology and architecture
+Review the entire ALM process and components and verify matches solution methodology and architecture.
 
 ### Administrators
 
 #### Power Platform tenant administrator
 
-Global right to Power Platform Administration - Manage Environments (Create, Update, Delete). Common commands
+Global right to Power Platform Administration - Manage Environments (Create, Update, Delete).
 
 ```bash
 coe alm generate install -o quickstart.json
@@ -77,7 +77,7 @@ More information: [coe alm install](https://github.com/microsoft/coe-starter-kit
 
 #### Power Platform environment administrator
 
-Manage One or more Power Platform Environments - Import solution, add users assign roles
+Manage One or more Power Platform Environments - Import solution, add users assign roles.
 
 ```bash
 coe alm generate install -o data.json
@@ -90,7 +90,7 @@ More information: [generate install](https://github.com/microsoft/coe-starter-ki
 
 More information: [install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/install.md) command
 
-Add makers to an environment (Assuming they also have Azure DevOps Administrator rights)
+Add makers to an environment (Assuming they also have Azure DevOps administrator rights).
 
 ```bash
 coe alm maker add \
@@ -104,7 +104,7 @@ More information: [maker add](https://github.com/microsoft/coe-starter-kit/tree/
 
 #### Azure tenant administrator
 
-Manage the Azure Active Directory Tenant - Create User, Groups,  Applications, and Service Principals (O365 or Azure Administrators). Common commands
+Manage the Azure Active Directory Tenant - Create User, Groups,  Applications, and Service Principals (O365 or Azure Administrators).
 
 ```bash
 coe alm install -c aad
@@ -124,7 +124,7 @@ coe alm install -c devops \
 
 ### Command commands
 
-Providing a quick overview of each of the coe commands
+Providing a quick overview of each of the coe commands.
 
 ### alm branch
 
@@ -146,7 +146,7 @@ Providing a quick overview of each of the coe commands
 
 |Outcome|Frequency|Persona|Components|
 |-------|---------|-------|----------|
-|Create Service Connection and add maker to security group|Run once per maker|USer who is owner of Azure Active Directory Group and Azure DevOps Project Administrator|Azure DevOps|
+|Create Service Connection and add maker to security group|Run once per maker|USer who is owner of Azure Active Directory Group and Azure DevOps Project administrator|Azure DevOps|
 
 [Read alm maker add help](https://github.com/microsoft/coe-starter-kit/blob/main/coe-cli/docs/help/alm/maker/add.md)
 
@@ -154,13 +154,13 @@ Providing a quick overview of each of the coe commands
 
 |Outcome|Frequency|Persona|Components|
 |-------|---------|-------|----------|
-|Import managed solution and setup security|Run once per organization|Azure Active Directory Group, Azure DevOps and Power Power Platform Administrator|Azure Active directory, Azure DevOps, Power Platform|
+|Import managed solution and setup security|Run once per organization|Azure Active Directory Group, Azure DevOps and Power Power Platform administrator|Azure Active directory, Azure DevOps, Power Platform|
 
 [Read alm install help](https://github.com/microsoft/coe-starter-kit/blob/main/coe-cli/docs/help/alm/install.md)
 
 ## Solution setup
 
-Assuming that AA4PP has been set up and installed, the first command that the Advanced Maker will run is the **coe alm user add** command. The user add command will register an Application User created during install as a System administrator in their development environment to integrate with the solution. For example, using the default parameters
+Assuming that AA4PP has been set up and installed, the first command that the Advanced Maker will run is the **coe alm user add** command. The user add command will register an Application User created during install as a System administrator in their development environment to integrate with the solution. For example, using the default parameters.
 
 ```bash
 coe alm user add \
@@ -194,11 +194,11 @@ coe alm maker add \
   -u alan-s@contoso.com
 ```
 
-NOTE: The user running this command requires Project Administrator rights in Azure DevOps and Owner rights of the Azure Active Directory Application.
+NOTE: The user running this command requires Project administrator rights in Azure DevOps and Owner rights of the Azure Active Directory Application.
 
 More information: [maker add](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/maker/add.md) command
 
-Each Azure DevOps project will also require connections to deployment environments used by Azure Pipelines
+Each Azure DevOps project will also require connections to deployment environments used by Azure Pipelines.
 
 ```bash
 coe alm connection add \
@@ -227,15 +227,15 @@ More information: [connection add](https://github.com/microsoft/coe-starter-kit/
 To deploy an instance of AA4PP in your organization the **generate install** and **install** commands are used once to deploy the Managed solution. The install will automate key elements:
 
 1. Azure Active Directory
-    - New Azure Active directory Application used by Azure DevOps for Service Connection access to Power Platform
-    - New Azure Active Directory Group to provide access to Azure DevOps resources and Share the Maker Canvas application
+    - New Azure Active directory Application used by Azure DevOps for Service Connection access to Power Platform.
+    - New Azure Active Directory Group to provide access to Azure DevOps resources and Share the Maker Canvas application.
 1. Azure DevOps resources
-    - Import Azure Pipelines
-    - Variable Groups
-    - Create Service Connections to Power Platform Environments
+    - Import Azure Pipelines.
+    - Create Variable Groups.
+    - Create Service Connections to Power Platform Environments.
 1. Power Platform Environments
-    - Set up Application Users
-    - Import Managed Solution and Set up Security
+    - Set up Application Users.
+    - Import Managed Solution and set up security.
 
 ```bash
 coe alm generate install -o install.json

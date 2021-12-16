@@ -51,7 +51,7 @@ A GitHub repository is also created. This repository will be used to persist all
 
 ## Open your project
 
-When a project is approved, the **Deploy** button is activated and a link to the solution is shown. A user can go to the maker portal directly and open their solution in the newly created environment by selecting Open project solution
+When a project is approved, the **Deploy** button is activated and a link to the solution is shown. A user can go to the maker portal directly and open their solution in the newly created environment by selecting Open project solution.
 
 ## Deploy your project to test
 

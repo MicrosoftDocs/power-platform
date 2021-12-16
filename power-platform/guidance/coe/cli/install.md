@@ -20,29 +20,29 @@ search.app:
 
 # Installation
 
-To install the CoE CLI
+To install the CoE CLI:
 
-1. Download zip or clone repository [coe-starter-kit](https://github.com/microsoft/coe-starter-kit)
+1. Download zip or clone repository [coe-starter-kit](https://github.com/microsoft/coe-starter-kit).
 
-1. Change to unzipped or cloned repository
+1. Change to unzipped or cloned repository.
 
 ```bash
 cd coe-starter-kit
 ```
 
-1. Change to the coe-cli folder
+1. Change to the coe-cli folder.
 
 ```bash
 cd coe-cli
 ```
 
-Next select either [Local Install](#local-install) or [Docker Install](#docker-install)
+Next select either [Local Install](#local-install) or [Docker Install](#docker-install).
 
-## Local Install
+## Local install
 
 ### Prerequisites
 
-To run the CoE CLI application, you'll need to install the components below
+To run the CoE CLI application, you'll need to install the components below.
 
 1. An installation of Node 11+
 
@@ -52,17 +52,17 @@ To run the CoE CLI application, you'll need to install the components below
 
    a. [Install Azure CLI](/cli/azure/install-azure-cli)
 
-### Checking Prerequisites
+### Checking prerequisites
 
-To check prerequisites have been installed correctly and the correct versions are installed use the following commands at the command prompt
+To check prerequisites have been installed correctly and the correct versions are installed use the following commands at the command prompt.
 
-1. Verify node version
+1. Verify the node version.
 
 ```bash
 node --version
 ```
 
-1. Verify Azure CLI Version
+1. Verify the Azure CLI version.
 
 ```bash
 az --version
@@ -70,19 +70,19 @@ az --version
 
 ### Install
 
-1. Install application dependencies
+1. Install application dependencies.
 
 ```bash
 npm install
 ```
 
-1. Build the application
+1. Build the application.
 
 ```bash
 npm run build
 ```
 
-1. Link to the CoE CLI application
+1. Link to the CoE CLI application.
 
 ```bash
 npm link
@@ -90,21 +90,21 @@ npm link
 
 NOTE:
 
-1. On Windows, you may need to add %APPDATA%\npm to your PATH environment variable to access the coe command
+1. On Windows, you may need to add %APPDATA%\npm to your PATH environment variable to access the coe command.
 
-1. Install Azure CLI. Follow install instructions for your operating system at [Install Azure CLI](/cli/azure/install-azure-cli)
+1. Install Azure CLI. Follow install instructions for your operating system at [Install Azure CLI](/cli/azure/install-azure-cli).
 
-## Docker Install
+## Docker install
 
 One method of installation is via docker.
 
-### Docker Prerequisites
+### Docker prerequisites
 
-To run the CoE CLI application, you'll require the following
+To run the CoE CLI application, you'll require the following.
 
 1. A local install of [Docker](https://docs.docker.com/get-docker/). The install can be either Community Edition or Enterprise Edition. If you're installing onto a desktop environment, you'll normally pick a Community Edition deployment.
 
-### Docker Install Steps
+### Docker install steps
 
 >[!Note]
 >On some operating systems, you may need to use sudo before each of the docker commands.
@@ -116,7 +116,7 @@ cd coe-cli
 docker build -t coe-cli . 
 ```
 
-1. Using the docker image
+1. Using the docker image.
 
 ```bash
 docker run -it --rm coe-cli

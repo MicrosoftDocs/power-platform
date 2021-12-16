@@ -26,11 +26,11 @@ The ALM Accelerator is configurable based on user preferences to turn on and off
 
 In this section, we'll describe how to use the ALM Accelerator for Power Platform Administration app to configure these settings for use by the ALM Accelerator.
 
-## Creating User Settings and Profiles Using AA4PP Administration App
+## Creating user settings and profiles using AA4PP administration app
 
 To create User Settings for AA4PP, use the following steps.
 
-1. Open the Power **Platform ALM Accelerator Administration App** and Navigate to **Deployment User Settings**
+1. Open the Power **Platform ALM Accelerator Administration App** and Navigate to **Deployment User Settings**.
 
    ![ALM Accelerator for Power Platform Administration App](media/setup-almacceleratorpowerplatform-deployment-profiles/image-20211126094411050.png)
 
@@ -44,14 +44,14 @@ To create User Settings for AA4PP, use the following steps.
     - **Profile Creation** - This function will provide users with the ability to create new Deployment Profiles in the App.
     - **Advanced Promote** - This function will provide users with the ability to change between using the Advanced Promote functionality (that is, specifying a source / target branch and creating a new branch).
     - **Advanced Deploy** - This function will provide users with the ability to toggle between using the Advanced Deploy functionality (that is, specifying a source / target branch for a Pull Request).
-    - **Bypass Prepare** - This function will provide the user with the ability to skip the Preparation step during promotion of a solution (that is, bypass configuring deployment settings before committing to source control)
+    - **Bypass Prepare** - This function will provide the user with the ability to skip the Preparation step during promotion of a solution (that is, bypass configuring deployment settings before committing to source control).
 
 1. Update **User Labels**. Below are the specific areas that are configurable in the app related to user labels for functions. These values also show in the Deployment History view under the action that was executed.
 
-    - **Deploy Solution** - Updating this label changes the text of the button for the **deployment action** in the app. The default value is **"DEPLOY SOLUTION"**
-    - **Commit Solution** - Updating this label changes the text of the button for the **promote action** in the app. The default value is **"COMMIT SOLUTION"**
-    - **Import Solution** - Updating this label changes the text of the button for the **import solution action** in the app. The default value is **"IMPORT SOLUTION"**
-    - **Delete Solution** - Updating this label changes the text of the button for the **delete solution action** in the app. The default value is **"DELETE SOLUTION"**
+    - **Deploy Solution** - Updating this label changes the text of the button for the **deployment action** in the app. The default value is **"DEPLOY SOLUTION"**.
+    - **Commit Solution** - Updating this label changes the text of the button for the **promote action** in the app. The default value is **"COMMIT SOLUTION"**.
+    - **Import Solution** - Updating this label changes the text of the button for the **import solution action** in the app. The default value is **"IMPORT SOLUTION"**.
+    - **Delete Solution** - Updating this label changes the text of the button for the **delete solution action** in the app. The default value is **"DELETE SOLUTION"**.
 
 1. Select **Save** to save your User Settings.
 
@@ -59,7 +59,6 @@ To create User Settings for AA4PP, use the following steps.
 
     >[!NOTE]
     >In addition to creating Deployment Profiles using the AA4PP Administration App. Users who have access to User Settings with **Create Profile permissions** in the AA4PP App can create profiles in the App. The AA4PP App makes some assumptions about the setup of your pipelines based on the documentation for setting up your pipelines and doesn't provide the flexibility that the AA4PP Administration App does. It does, however, allow you to jump start this process.
-    - From the User Setting, you created above. Select
 
 ## Creating ALM Accelerator Profiles Using AA4PP App
 
@@ -81,15 +80,15 @@ If a user logs in to the AA4PP App and doesn't have a Deployment User Settings a
       - Enter a **name for the Profile and Select the Organization, Project, Repo and Target Branch**.
       - Select Create. Creating a new Profile will automatically populate the Deployment Environments with the default configuration for Validation, Test, and Production. These environments' URLs will contain a placeholder for your environments actual URL.
       - Enter the URLs for your Validation, Test, and Production environments.
-      - Select Save to save your changes to the Profile and save the profile as the default for the solution
-      - After the Profile is saved, you'll be able to Commit and Deploy your solution
+      - Select Save to save your changes to the Profile and save the profile as the default for the solution.
+      - After the Profile is saved, you'll be able to Commit and Deploy your solution.
         ![AA4PP App with Solution Actions Enabled after Creating a New Profile](media/setup-almacceleratorpowerplatform-deployment-profiles/image-20211126135223693.png)
 
-## Sharing ALM Accelerator User Settings and Profiles Using AA4PP Administration App
+## Sharing ALM Accelerator User Settings and Profiles using AA4PP administration app
 
 In order to share User Settings created for a particular user profile it is recommended that you share the user setting row with an AAD Group Team. Sharing with an AAD Group Team will allow you to manage access to User Settings and Deployment Profiles from Azure Active Directory by adding the user to the group in AAD. Below is how to share and provide the appropriate roles to an AAD Group Team after installing the AA4PP Solution.
 
-1. If you haven't already created an AAD Group Team in Dataverse to share your User Settings with follow the steps below otherwise skip to step 2
+1. If you haven't already created an AAD Group Team in Dataverse to share your User Settings with follow the steps below otherwise skip to step 2.
 
    - Navigate to [https://admin.powerplatform.com](https://admin.powerplatform.com) and Select the environment in which you've installed AA4PP.
 
@@ -99,9 +98,9 @@ In order to share User Settings created for a particular user profile it is reco
 
    - Select the **AAD Group** to use for this Team and Select **Next**.
 
-   - Select **ALM Power App Access** and **Basic User** as the Roles for the Team and Select **Save.**
+   - Select **ALM Power App Access** and **Basic User** as the Roles for the Team and Select **Save**.
 
-1. Open the Power **Platform ALM Accelerator Administration App** and Navigate to **Deployment User Settings.**
+1. Open the Power **Platform ALM Accelerator Administration App** and Navigate to **Deployment User Settings**.
 
 1. Open the **Deployment User Setting** that you want to share with your Team and Select **Share**.
 
@@ -111,7 +110,7 @@ In order to share User Settings created for a particular user profile it is reco
 
    - Select **All AAD Security Group Teams** from the View dropdown.
 
-   - Select the **Team you created previously** and select **Done.**
+   - Select the **Team you created previously** and select **Done**.
 
 1. Under Manage Share Access, select the **Team** and Select **Read** and **Append** as the permissions.
 

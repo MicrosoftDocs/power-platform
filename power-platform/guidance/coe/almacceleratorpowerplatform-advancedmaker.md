@@ -1,6 +1,6 @@
 ---
-title: "ALM Accelerator for Power Platform Advanced Maker Experience | MicrosoftDocs"
-description: "The ALM Accelerator for Power Platform Advanced Maker Experience will help you follow ALM patterns and practices. It enables you to source control your solutions and move them from your development environment to test and production environments using DevOps"
+title: "ALM Accelerator for Power Platform advanced maker experience | MicrosoftDocs"
+description: "The ALM Accelerator for Power Platform advanced maker experience will help you follow ALM patterns and practices. It enables you to source control your solutions and move them from your development environment to test and production environments using DevOps"
 author: alvarezskinner
 manager: devkeydet
 ms.service: power-platform
@@ -17,17 +17,17 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# ALM Accelerator for Power Platform Advanced Maker Experience (Preview)
+# ALM Accelerator for Power Platform advanced maker experience (Preview)
 
 > [!NOTE]
 > ALM Accelerator for Power Platform (AA4PP) is currently in public preview. Please see [Issues currently tagged as vnext](https://github.com/microsoft/coe-starter-kit/issues?q=is%3Aopen+is%3Aissue+label%3Aalm-accelerator+label%3Avnext) for the Roadmap to be completed prior to general availability. While the tool is in Public Preview, you should expect that there will be breaking changes and frequent updates to address feedback from preview members. Additionally, the Public Preview is reliant on the experimental [Power Apps Source File Pack and Unpack Utility](https://github.com/microsoft/PowerApps-Language-Tooling) that is being developed separately from AA4PP.
 
-## Demo: ALM Accelerator Advanced Maker Experience
+## Demo: ALM Accelerator advanced maker experience
 
-Watch how to use the ALM Accelerator for Power Platform solution
+Watch how to use the ALM Accelerator for Power Platform solution.
 [Demo Videos](https://github.com/microsoft/coe-starter-kit/CenterofExcellenceALMAccelerator/WALKTHROUGHS.md)
 
-## Walkthrough: ALM Accelerator Advanced Maker Experience
+## Walk-through: ALM Accelerator advanced maker experience
 
 1. Once you have installed and configured the app, launch it from your Environment under Apps by select **ALM Accelerator for Power Platform**.
 
@@ -58,7 +58,7 @@ Watch how to use the ALM Accelerator for Power Platform solution
 
    - **Solution Folder** is a list of folders in the selected branch that contain a **SolutionPackage folder** from a previous export.
 
-   - **Configuration** is a directory under the config directory in the Solution Folder that contains deployment settings and configuration data. For more information on configuration settings, see the [Deployment Configuration Guide](setup-almacceleratorpowerplatform-deployment-config.md)
+   - **Configuration** is a directory under the config directory in the Solution Folder that contains deployment settings and configuration data. For more information on configuration settings, see the [Deployment Configuration Guide](setup-almacceleratorpowerplatform-deployment-config.md).
 
     > [!NOTE]
     > The idea here is that you're either pulling the latest from the Solution branch or possibly want to pull another makers branch into your own environment. The configuration allows you to ensure that all of the necessary post solution import configuration and data exists in your environment.
@@ -73,9 +73,9 @@ Watch how to use the ALM Accelerator for Power Platform solution
     > [!NOTE]
     > Depending on wether you are an admin or not, you'll be able to create new deployment profiles from here. If you are a maker the likelihood is that an administrator from your organization has made some profiles available for you to choose from. If still nothing suits what you want, you'll need to work with your administrator to request a new profile.
 
-1. Once you have a profile associated, you can also begin to configure your solution for deployment. **Select the Configure Deployment Settings link** under the name of the Solution. On the configuration deployment page, you'll see the following items
+1. Once you have a profile associated, you can also begin to configure your solution for deployment. **Select the Configure Deployment Settings link** under the name of the Solution. On the configuration deployment page, you'll see the following items:
 
-   - Deployment Environment List (for example, Validation, Test, and Production)
+   - Deployment Environment List (for example, Validation, Test, and Production).
 
      - The environments listed are the ones configured in the deployment steps in the deployment profiles created by the administrator.
 
@@ -94,7 +94,7 @@ Watch how to use the ALM Accelerator for Power Platform solution
       ![Environment Variables Configuration](media/almacceleratorpowerplatform-components/aa4pp-deployment-settings-environment-vars.png "Environment Variables Configuration")
 
       - This screen lists all of the environment variables in your solution and allows users to set the value of the environment variables in the downstream environment.
-      - For standard environment variables (for example String, Number, JSON) **enter the value in the text box** to the right of the environment variable name
+      - For standard environment variables (for example String, Number, JSON) **enter the value in the text box** to the right of the environment variable name.
       - For data source environment variables **use the dropdowns to select the appropriate data source** to use in the downstream environment.
 
    - App Sharing
@@ -117,7 +117,7 @@ Watch how to use the ALM Accelerator for Power Platform solution
 1. Once you've configured your solution, you can push your changes to Git using the **Commit Solution** button for your solution. Depending on the permissions you are given, you'll see here a toggle to **Show Advanced** options. Show Advanced allows you to choose an existing branch or to create a new one with a specific naming convention. When not given permission to these options the app will create a new branch based on your username and **deployment profile** data.
 
    > [!NOTE]
-   > Be sure to publish any App changes before initiating the push
+   > Be sure to publish any App changes before initiating the push.
 
    - Select Commit Solution
    - In the Commit Solution dialog Select an **existing branch** or **create a new branch** based on an existing branch and enter a **comment**. Use the hashtag notation for example `#123` to link the changes to a specific work item in DevOps and Select **Prepare Solution**.
@@ -131,7 +131,7 @@ Watch how to use the ALM Accelerator for Power Platform solution
 1. Once you have finished the changes in your solution and you are ready to deploy them across other environments using the **Deploy Solution** button.
 
     > [!NOTE]
-    > Be sure to publish any App changes before initiating the push
+    > Be sure to publish any App changes before initiating the push.
 
     Depending on the permissions, you'll see the **Advanced Settings** toggle.
 
@@ -151,5 +151,5 @@ Watch how to use the ALM Accelerator for Power Platform solution
 
       ![Request History for a solution](media/almacceleratorpowerplatform-components/aa4pp-request-history.png "Request History for a solution")
 
-1. For Production, you can either need to go into **advanced settings** for the deployment and choose the main branch used to trigger the deployment to production or create the PR directly in DevOps
+1. For Production, you can either need to go into **advanced settings** for the deployment and choose the main branch used to trigger the deployment to production or create the PR directly in DevOps.
    [!INCLUDE[footer-include](../../includes/footer-banner.md)]
