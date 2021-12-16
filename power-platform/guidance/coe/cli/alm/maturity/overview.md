@@ -17,11 +17,11 @@ search.app:
   - Powerplatform
 ---
 
-# Maturity Model
+# Maturity model
 
 The [Power CAT adoption maturity model](https://aka.ms/powercatadoptionmaturity) provides a set of levels and capabilities that can be used to evaluate usage of the Application Lifecycle Management (ALM) and how the ALM Accelerator for Power Platform (AA4PP) can assist.
 
-## Quick Start
+## Quick start
 
 ![Decision Tree](./decision-tree.png)
 
@@ -73,7 +73,7 @@ AA4PP is a good match if you can check to see if the following apply:
    - Who is supporting the application / solution?
    - Do you have formal support team to manage issues for the solution?
 
-## Addressing Gaps
+## Addressing gaps
 
 Where some gaps exist from the leading questions, then consider what proactive training and or workshops can help grow the maturity of people, process, and technology to assist them in moving toward Advanced Maker integration inside your organization.
 
@@ -123,11 +123,11 @@ The following questions may help with qualifying strategy:
 
 1. Do Enterprise Architecture decisions include Power Platform capabilities?
 
-### Business Value
+### Business value
 
 Evaluate the business value looking at:
 
-### Business Strategy Viability
+### Business strategy viability
 
 Leading questions to consider:
 
@@ -141,7 +141,7 @@ Leading questions to consider:
 
 1. What thing do you want to do differently?
 
-## Technological Viability
+## Technological viability
 
 Leading questions to consider:
 
@@ -155,7 +155,7 @@ Leading questions to consider:
 
 1. On what frequency are analytics updated?
 
-1. How frequently are changes required
+1. How frequently are changes required?
 
 1. What is the technical debt that needs to be accounted for?
 
@@ -173,13 +173,13 @@ Leading questions to consider
 
 1. What investment model is required?
 
-## Business Impact
+## Business impact
 
 ### Critical
 
 Production, operations, or deployment deadlines will be severely affected, or there will be a severe impact on production or profitability. Multiple users or services are affected.
 
-Initial Response time < 60 minutes with 24x7 access
+Initial Response time < 60 minutes with 24x7 access.
 
 Issues demand an immediate response and require 24x7 operation, every day.
 
@@ -187,15 +187,15 @@ Issues demand an immediate response and require 24x7 operation, every day.
 
 The system has moderate business impact and can be dealt with during business hours. The expected usage could be by multiple users or single users, customers.
 
-Initial Response time 2, 4 Hours, or Next Day, Business hours access with 24x7 available support
+Initial Response time 2, 4 Hours, or Next Day, Business hours access with 24x7 available support.
 
-### Non-Critical
+### Non-critical
 
 The system has minimal business impact. The issue is important but does not have a significant current service or productivity impact. Acceptable workarounds will be considered.
 
-Initial Response time 4-8 hours or greater with Business hours access and support (For example 9:00AM - 5:00PM)
+Initial Response time 4-8 hours or greater with Business hours access and support (For example 9:00AM - 5:00PM).
 
-#### Administration and Governance
+#### Administration and governance
 
 Leading questions to consider:
 
@@ -229,7 +229,7 @@ Leading questions to consider:
 
 1. Do the roles and responsibilities include ownership to build and operate the solution?
 
-#### Nurture and Citizen Makers
+#### Nurture and citizen makers
 
 Leading questions to consider:
 
@@ -255,13 +255,13 @@ Leading questions to consider:
 
 1. Do you have Communication about processes and compliance between Admin and Makers? Is this process automated?
 
-### Fusion Teams
+### Fusion teams
 
 1. Do you have [Standard libraries, custom connectors, and components](/power-platform/guidance/adoption/reusable) to be consumed by makers?
 
-1. Do you have the need for fusion teams manage source control and app lifecycle (for example, Build, Verification, Test, Production)
+1. Do you have the need for fusion teams manage source control and app lifecycle (for example, Build, Verification, Test, Production)?
 
-1.Do you have Cross-functional teams that plan and execute work jointly, including makers, testers, and operational teams?
+1. Do you have Cross-functional teams that plan and execute work jointly, including makers, testers, and operational teams?
 
 1. Do you have Common development strategy and goals for Citizen and Pro developers needed for new projects?
 

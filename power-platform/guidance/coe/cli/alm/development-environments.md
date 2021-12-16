@@ -17,11 +17,11 @@ search.app:
   - Powerplatform
 ---
 
-# Development Environments
+# Development environments
 
 Each maker will need a development environment created. Advanced makers can use a community environment to work in. Community environments can be accessed from the sign-up page [https://powerapps.microsoft.com/developerplan/](https://powerapps.microsoft.com/developerplan/) with **Get Started Free**
 
-## Microsoft Power Platform for Developer Licenses
+## Power Platform for developer licenses
 
 One approach for organizations to manage and assign development environments to makers. To sign up for the developer plan to your organization, you may need to enable viral sign-up to have the license assigned to your organization.
 
@@ -65,7 +65,7 @@ Set-MsolCompanySettings -AllowAdHocSubscriptions $false
 
 1. Makers who have been assigned the license can now visit [https://make.powerapps.com](https://make.powerapps.com) and a development environment will be created
 
-## Admin Maker Setup
+## Admin maker setup
 
 As Azure DevOps Services Administrator the following command will add the required service connection to the development environment and setup security for the user
 

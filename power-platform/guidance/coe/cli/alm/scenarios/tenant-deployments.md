@@ -143,43 +143,43 @@ To install the solution resources, the following options can be used
 
 1. Use the CLI to install the Azure Active Directory components. For example, using the default install parameters
 
-```bash
-coe alm install -c aad
-```
+    ```bash
+    coe alm install -c aad
+    ```
 
 1. Using a shared configuration file and setting components array value to be [ "aad" ]
 
-```json
-{
-  "log": [
-    "info"
-  ],
-  "components": [
-    "aad"
-  ],
-  "aad": "ALMAcceleratorServicePrincipal",
-  "group": "ALMAcceleratorForAdvancedMakers",
-  "devOpsOrganization": "https://dev.azure.com/contoso-dev",
-  "project": "alm-sandbox",
-  "repository": "pipelines",
-  "settings": {
-    "installEnvironments": [
-      "validation",
-      "test",
-      "prod"
-    ],
-    "validation": "https://sample-validation.crm.dyamics.com",
-    "test": "https://sample-test.crm.dyamics.com",
-    "prod": "https://sample-prod.crm.dyamics.com",
-    "createSecret": "true",
-    "region": [
-      "NAM"
-    ]
-  },
-  "importMethod": "api",
-  "endpoint": "prod"
-}
-```
+    ```json
+    {
+      "log": [
+        "info"
+      ],
+      "components": [
+        "aad"
+      ],
+      "aad": "ALMAcceleratorServicePrincipal",
+      "group": "ALMAcceleratorForAdvancedMakers",
+      "devOpsOrganization": "https://dev.azure.com/contoso-dev",
+      "project": "alm-sandbox",
+      "repository": "pipelines",
+      "settings": {
+        "installEnvironments": [
+          "validation",
+          "test",
+          "prod"
+        ],
+        "validation": "https://sample-validation.crm.dyamics.com",
+        "test": "https://sample-test.crm.dyamics.com",
+        "prod": "https://sample-prod.crm.dyamics.com",
+        "createSecret": "true",
+        "region": [
+          "NAM"
+        ]
+      },
+      "importMethod": "api",
+      "endpoint": "prod"
+    }
+    ```
 
 #### Azure DevOps
 
@@ -191,42 +191,41 @@ coe alm install -c devops \
 
 #### Power Platform Environment
 
-```bash
-coe alm install -f install.json
+   ```bash
+   coe alm install -f install.json
+   ```
 
-```
-
-```json
-{
-  "log": [
-    "info"
-  ],
-  "components": [
-    "environment"
-  ],
-  "aad": "ALMAcceleratorServicePrincipal",
-  "group": "ALMAcceleratorForAdvancedMakers",
-  "devOpsOrganization": "https://dev.azure.com/contoso",
-  "project": "alm-sandbox",
-  "repository": "pipelines",
-  "settings": {
-    "installEnvironments": [
-      "validation",
-      "test",
-      "prod"
+  ```json
+  {
+    "log": [
+      "info"
     ],
-    "validation": "https://contoso-validation.crm.dyamics.com",
-    "test": "https://contoso-test.crm.dyamics.com",
-    "prod": "https://contoso-prod.crm.dyamics.com",
-    "createSecret": "true",
-    "region": [
-      "NAM"
-    ]
-  },
-  "importMethod": "api",
-  "endpoint": "prod"
-}
-```
+    "components": [
+      "environment"
+    ],
+    "aad": "ALMAcceleratorServicePrincipal",
+    "group": "ALMAcceleratorForAdvancedMakers",
+    "devOpsOrganization": "https://dev.azure.com/contoso",
+    "project": "alm-sandbox",
+    "repository": "pipelines",
+    "settings": {
+      "installEnvironments": [
+        "validation",
+        "test",
+        "prod"
+      ],
+      "validation": "https://contoso-validation.crm.dyamics.com",
+      "test": "https://contoso-test.crm.dyamics.com",
+      "prod": "https://contoso-prod.crm.dyamics.com",
+      "createSecret": "true",
+      "region": [
+        "NAM"
+      ]
+    },
+    "importMethod": "api",
+    "endpoint": "prod"
+  }
+  ```
 
 1. Manual installation using the [Create An App Registration in your Azure Active Directory environment](/power-platform/guidance/coe/setup-almacceleratorpowerplatform#create-an-app-registration-in-your-aad-environment)
 

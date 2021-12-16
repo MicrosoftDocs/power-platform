@@ -41,7 +41,7 @@ It is assumed that this installation will be run by a single user that has the f
 
 - Azure Active directory Administrator rights.
 
-## Before You Start
+## Before you start
 
 Complete [Before You Start](./before-you-start.md) to ensure that:
 
@@ -51,7 +51,7 @@ Complete [Before You Start](./before-you-start.md) to ensure that:
 
 - CoE CLI installed
 
-## Initial Install
+## Initial install
 
 1. Create install configuration file and review the generated JSON file and confirm the settings before you start the install process
 

@@ -17,7 +17,7 @@ search.app:
   - Powerplatform
 ---
 
-# Branching and Merging
+# Branching and merging
 
 Development as a team of Makers, Advanced Makers, and Professional developers often uncovers new concepts. Often one area of complexity is branching and merging. Using the links below different [Personas](./personas.md) to can review each concept and determine their level of comfort:
 
@@ -35,11 +35,11 @@ The example below illustrates two parts of the organization the HR and Finance t
 
 ![Branching and Merging Strategy](../media/branching-and-merging-example.png)
 
-### Human Resources Team
+### Human Resources team
 
 The Human Resources team manages one Azure DevOps git repository that stores each solution as a folder within the repository. This approach allows Makers in the HR team to see and collaborate on Human Resources related solutions.
 
-#### Human Resources Team Steps
+#### Human Resources team steps
 
 1. Create a new Azure DevOps Project and from the main branch for a new solution branch named Onboarding.
 
@@ -78,7 +78,7 @@ The Finance team maintains a separate Azure DevOps Project for Finance related s
 
 1. A separate Azure DevOps Organization, Project, and repository. This configuration would allow different Azure Active Directory tenants to be used.
 
-#### Finance Steps
+#### Finance steps
 
 Karen as the Advanced Maker in the finance team follows a similar process to what Alan did inside the HR team.
 

@@ -23,7 +23,7 @@ The Center of Excellence (CoE) command-line interface provides automation for co
 
 It can be used to automate the process of installing CoE CLI components covering Azure, Azure DevOps, and the Power Platform.
 
-## Unified Administration
+## Unified administration
 
 ![CLI Unified Process](./media/cli-unified-process.png)
 
@@ -39,7 +39,7 @@ Comparing and contrasting the CoE CLI to other CLI / APIs:
 
 1. The [Azure DevOps Services REST API](/rest/api/azure/devops/) provides a REST based set of commands to interact with Azure DevOps. The CoE CLI makes use of these APIs to build aggregate commands
 
-## What Next
+## What next
 
 As you consider an enterprise deployment the following sections outline the key concepts, you will need to understand:
 
@@ -47,7 +47,7 @@ As you consider an enterprise deployment the following sections outline the key 
 
 1. [Set up ALM Accelerator for Power Platform (AA4PP) components](./alm/overview.md) - Use CLI commands to set up and configure an environment for ALM Accelerator to enable them to achieve more within your organization.
 
-## Getting Started
+## Getting started
 
 Once the CoE CLI has been [installed](./install.md), you can use -h argument to see help options
 
@@ -63,7 +63,7 @@ coe alm install -c aad
 az logout
 ```
 
-## Getting Help
+## Getting help
 
 You can get short descriptions of any command by adding **--help** to the command line. To get more detailed help, you can use the help command. For example, to get help on the ALM Accelerator for Power Platform use the following command
 
@@ -73,7 +73,7 @@ coe help alm install
 
 Read more in [help](https://aka.ms/coe-cli/help/overview) pages for detailed description for each command.
 
-## Read More
+## Read more
 
 Further reading
 

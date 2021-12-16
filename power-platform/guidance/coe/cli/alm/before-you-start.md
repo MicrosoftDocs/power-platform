@@ -17,11 +17,11 @@ search.app:
   - Powerplatform
 ---
 
-# Before You Start
+# Before you start
 
 Before you start an install of ALM, ensure that you've the following components in place
 
-## CoE Command Line
+## CoE command line
 
 Install the CoE CLI [locally](../install.md#local-install) or via a [docker image](../install.md#docker-install)
 
@@ -50,7 +50,7 @@ Notes:
 
    ![Sample image Environments from Power Platform Admin Portal](../media/environments.jpg)
 
-## Maker Environment Dataverse
+## Maker environment Dataverse
 
 In the maker environment, you'll need a Dataverse connection to be created by the install user.
 
