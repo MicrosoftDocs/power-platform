@@ -2,7 +2,7 @@
 title: "Automate chatbot actions with flows"
 description: "Retrieve data and automate processes in your Power Virtual Agents bot with flows."
 keywords: "PVA, flow, automate"
-ms.date: 3/19/2020
+ms.date: 12/15/2021
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -28,8 +28,10 @@ You can enable your bot to perform an action by calling a Microsoft Power Automa
 You call flows from within topics, as a discrete **Call an action** node. You can utilize flows that have already been created in your [Power Apps environment](environments-first-run-experience.md), or you can create a flow from within the Power Virtual Agents [authoring canvas](authoring-create-edit-topics.md).
 
 >[!IMPORTANT]
->A flow can only be called from a topic located in the same [Microsoft Dataverse environment](/powerapps/maker/common-data-service/data-platform-intro) as your bot.
->Flows must also be in a solution in Power Automate. You can [move flows into solutions](#optionally-move-a-flow-from-default-solution-to-another-solution) so they are listed in the authoring canvas.
+>To use flows within Power Virtual Agents, they must meet the following requirements:
+>* A flow can only be called from a topic located in the same [Microsoft Dataverse environment](/powerapps/maker/common-data-service/data-platform-intro) as your bot.
+>* Flows must also be in a solution in Power Automate. You can [move flows into solutions](#optionally-move-a-flow-from-default-solution-to-another-solution) so they are listed in the authoring canvas.
+>* [Flow values must be returned synchronously to Power Virtual Agents](#disable-asynchronous-responses-from-flows).
 
 
 Flows typically use variables to input and output information. The variables can then be used in other nodes within the topic.
@@ -303,6 +305,27 @@ Enter your city and zip code at the prompt to get today's weather forecast from 
 
 ![Test Dialog.](media/GetWeatherE2E.png)
 
+## Disable asynchronous responses from flows
+Power Virtual Agents doesn't support Power Automate flows that return values [asynchronously](/power-automate/guide-staff-through-common-tasks-processes#when-to-use-workflows). When creating a new flow from within Power Virtual Agents, this behavior is disabled by default.
+
+<!-- TODO: link to error code page when it exists -->
+Flows that have the Asynchronous Response feature enabled may cause an error when your bot tries to run the flow. Instead of running the flow, the bot will say "Something unexpected happened. We're looking into it. Error code: 3000.".
+
+<!-- TODO: remove these steps and replace with link to relevant power automate docs when they are made -->
+If you've enabled the Asynchronous Response, you'll need to disable it for the bot to work properly when it runs the flow:
+**To disable Asynchronous Response**
+
+1. [Locate and modify your flow](#modify-a-flow-on-the-power-automate-portal).
+   
+1. In your Power Automate flow, locate the Power Virtual Agents step that returns values.
+   
+1. Next to the name of the flow, select the three dots, and then select **Settings**.
+   
+    ![Open step settings.](media/advanced-flow/async1.png)
+
+1. Set **Asynchronous Response** to **Off**, and then select **Done**.
+   
+    ![Disable asynchronous response.](media/advanced-flow/async2.png)
 
 ## Troubleshoot your bot
 
