@@ -145,7 +145,7 @@ The following recording shows a sample generating an install configuration file 
 >[!Note]
 >If this is your first build pipeline, you'll need to set Pipeline Variables for your environment. At a minimum, you'll need to set **ServiceConnection** variable to your environment you have setup for validation, test, and production.
 
-### Read next
+### Read more
 
 - [ALM Accelerator for Power Platform](/power-platform/guidance/coe/almacceleratorpowerplatform-components) - An overview of the ALM Accelerator.
 - [Deployment Profile Setup](/power-platform/power-platform/guidance/coe/setup-almacceleratorpowerplatform-deployment-profiles) - Configuring User Settings and Deployment Profiles.
