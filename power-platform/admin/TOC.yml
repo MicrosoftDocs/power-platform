@@ -586,6 +586,7 @@
       - name: Security and governance considerations
         href: governance-considerations.md 
       - name: Configure security for Dataverse
+        expanded: true
         items:
         - name: Overview
           href: wp-security.md
