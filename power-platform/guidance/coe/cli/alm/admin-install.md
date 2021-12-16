@@ -27,7 +27,7 @@ The following roles are involved with Power Platform.
 
 - Administrator
   - Azure Active Directory - Permissions to create Azure Active Directory Application with [Admin Level Consent](/azure/active-directory/manage-apps/grant-admin-consent).
-  - Power Platform - Environment administrator to Create Validation, Test and Production environments.
+  - Power Platform - Environment administrator to Create Validation, Test, and Production environments.
   - Azure DevOps - Organization and Project administrator.
 - Maker
   - Power Platform - Create Development environment.
@@ -59,9 +59,7 @@ Complete [Before You Start](./before-you-start.md) to ensure that:
    coe alm generate install -o test.json
    ```
 
-   More information: [coe alm generate install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/generate/install.md) command
-
-   Which will generate a file similar to:
+   More information: [coe alm generate install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/generate/install.md) command. This command will generate a file similar to the one below.
 
    ```json
    {
