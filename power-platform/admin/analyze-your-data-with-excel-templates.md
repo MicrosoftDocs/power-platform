@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/26/2021
+ms.date: 12/16/2021
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -37,15 +37,12 @@ search.app:
   You can try out the [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] templates included with customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), to get a quick view of what kind of analysis is possible.  
   
   ![Example of a pipeline analysis Excel template.](../admin/media/excel-template-example-pipeline-analysis.png "Example of a pipeline analysis Excel template")  
-  
  
-<a name="BKMK_CreateTemplate"></a>   
 ## Create a new Excel template  
  Following are the steps for creating an [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] template.  
   
  ![The process to create an Excel template.](../admin/media/excel-template-create-process.png "The process to create an Excel template")  
-  
-<a name="BKMK_CreateStep1"></a>   
+
 ### Step 1: Create a new template from existing data  
  There are two places where you can create an [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] template:  
   
@@ -79,13 +76,16 @@ search.app:
 >
 > During the creation of an Excel template, a maximum of 50 records are exported in the template file.
   
-<a name="BKMK_CreateCustomize"></a>   
 ### Step 2: Customize the data in Excel  
- Open the newly-created template in [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] to customize the data.  
+
+Open the newly-created template in your local instance of Excel to customize the data.  
   
  ![New Excel Template.](../admin/media/excel-template-new.png "New Excel Template")  
+
+> [!IMPORTANT]
+> Do not use Excel online for customizing the template data as the changes cannot be saved. Any updates to the template data made in Excel online will be lost after you close the tab.
   
- Let's walk through a simple example of customizing an [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] template using  sample data.  
+Let's walk through a simple example of customizing an [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] template using  sample data.  
   
 #### Example customization of Opportunities data  
   
@@ -109,7 +109,6 @@ search.app:
   
    You're now ready to upload the [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] template.  
   
-<a name="BKMK_CreateUpload"></a>   
 ### Step 3: Upload the template and share with others  
  When you have your [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] template customized the way you want, you can upload it. Where you upload the template determines its availability.  
   
@@ -143,7 +142,6 @@ search.app:
   
 5. Click **Upload**.  
   
-<a name="BKMK_CreateChoose"></a>   
 ### Step 4: Choose who can use the new template  
  Access to the newly-created [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] template depends on how you uploaded it, and on the access granted to the security role. Be sure to check out [Use security roles to control access to templates](../admin/analyze-your-data-with-excel-templates.md#BKMK_SecurityRole).  
   
@@ -169,19 +167,16 @@ search.app:
   
    ![Share the Excel template with other users.](../admin/media/excel-template-share.png "Share the Excel template with other users")  
   
-<a name="BKMK_UseTemplate"></a>   
 ## Export and analyze data using the new template  
  The process for using an [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] template looks like this.  
   
  ![Process flow to use Excel template.](../admin/media/excel-template-process-flow.png "Process flow to use Excel template")  
   
-<a name="BKMK_UseSelectEntity"></a>   
 ### Step 1: Select an entity to analyze  
  Select an entity (record type) to analyze with the [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] template you created. For example, go to **Sales** > **Opportunities** > **My Open Opportunities**. Two new opportunities were added since the template was created.  
   
  ![List of Open Opportunities.](../admin/media/excel-template-list-open-opportunities.png "List of Open Opportunities")  
   
-<a name="BKMK_UseExport"></a>   
 ### Step 2: Export data using your new Excel template  
  Choose the [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] template you created.  
   
@@ -191,7 +186,6 @@ search.app:
   
  If you have [!INCLUDE[pn_microsoft_excel_online](../includes/pn-microsoft-excel-online.md)], you can see the data in place in an [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] window in customer engagement apps (such as Dynamics 365 Sales and Customer Service). If not, or if you'd rather create the [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] file, click **Download \<template name>**.  
   
-<a name="BKMK_UseAnalyze"></a>   
 ### Step 3: Analyze your data in Excel  
  What you see in the [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] spreadsheet is based on two things:  
   
@@ -199,11 +193,9 @@ search.app:
   
 - **Columns**. The template you used determines what columns appear in the table in the exported [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] file. For example, the Closed Opportunities view has these columns: Potential Customer, Status, Actual Revenue, and Actual Close Date. But if the template you used was based on My Open Opportunities, you'd see columns associated with that view and any column filtering done when you created the template.  
   
-<a name="BKMK_UseShare"></a>   
 ### Step 4: Share the results with others  
  If you're using [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)], save a copy either online or to your computer. Send the file to others for their review and input.  
   
-<a name="BKMK_SampleTemplates"></a>   
 ## Try out the sample Excel templates  
  There are four [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] templates included with customer engagement apps.  
   
@@ -227,9 +219,8 @@ search.app:
 3. Download the template or open it in place in [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)].  
   
 > [!TIP]
->  You can export the templates that are included in customer engagement apps, modify them, and then reimport them as new templates. This can give you a running start on creating your own custom [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] templates.  
+> You can export the templates that are included in customer engagement apps, modify them, and then reimport them as new templates. This can give you a running start on creating your own custom [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] templates.  
   
-<a name="BKMK_BestPractices"></a>   
 ## Best practices and considerations for using Excel templates  
  Here are some things you need to be aware of to create and make best use of [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] templates.  
   
@@ -272,7 +263,6 @@ search.app:
 ### Use table column names and range names in formulas  
  When you create [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] formulas, don't use column titles or cell numbers. Instead, use the table column names, and define names for cells or cell ranges.  
   
-<a name="BKMK_SecurityRole"></a>   
 ## Use security roles to control access to templates  
  Administrators can control access to [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] templates with some granularity. For example, you can give salespeople Read but not Write access to an [!INCLUDE[pn_Excel_short](../includes/pn-excel-short.md)] template.  
   
