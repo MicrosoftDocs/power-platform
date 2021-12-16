@@ -25,6 +25,9 @@ The more variety of skills and roles represented, the better. One or more facili
 
 A successful hackathon usually includes team colors, prizes, food, music, laughter, and competition.
 
+> [!TIP]
+> In addition to the guidance on this page, the [Microsoft Power Platform Hackathon Workbook](https://aka.ms/powerplatformhackathonworkbook) contains practical step-by-step guidance and templates for running a hackathon. You'll find this workbook and other resources on [the Microsoft Power Platform Adoption website](https://adoption.microsoft.com/powerplatform).
+
 ## Planning and logistics
 
 Preparation is key for a successful hackathon, so make sure to consider the following:
