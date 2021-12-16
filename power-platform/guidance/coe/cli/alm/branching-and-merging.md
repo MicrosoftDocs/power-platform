@@ -43,14 +43,14 @@ The Human Resources team manages one Azure DevOps git repository that stores eac
 
 1. Create a new Azure DevOps Project and from the main branch for a new solution branch named Onboarding.
 
-```bash
-coe alm branch \
-    -o https://dev.azure.com/contoso \
-    -p HR \
-    -r HR-Solutions \
-    -d Onboarding \
-    -s validation=https://contoso-hr-validation.crm.dynamics.com,test=https://contoso-hr-test.crm.dynamics.com,https://contoso-hr.crm.dynamics.com
-```
+   ```bash
+   coe alm branch \
+      -o https://dev.azure.com/contoso \
+      -p HR \
+      -r HR-Solutions \
+      -d Onboarding \
+      -s validation=https://contoso-hr-validation.crm.dynamics.com,test=https://contoso-hr-test.crm.dynamics.com,https://contoso-hr.crm.dynamics.com
+   ```
 
 More information: [coe alm branch](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/branch.md) command
 
@@ -84,16 +84,16 @@ Karen as the Advanced Maker in the finance team follows a similar process to wha
 
 1. **Karen** creates a new Azure DevOps solution branch for the Expense application.
 
-```bash
-coe alm branch \
-    -o https://dev.azure.com/contoso \
-    -p Finance \
-    -r Finance-Solutions \
-    -d Expense \
-    -s validation=https://contoso-fin-validation.crm.dynamics.com,test=https://contoso-fin-test.crm.dynamics.com,https://contoso-fin.crm.dynamics.com
-```
+   ```bash
+   coe alm branch \
+      -o https://dev.azure.com/contoso \
+      -p Finance \
+      -r Finance-Solutions \
+      -d Expense \
+      -s validation=https://contoso-fin-validation.crm.dynamics.com,test=https://contoso-fin-test.crm.dynamics.com,https://contoso-fin.crm.dynamics.com
+   ```
 
-More information: [coe alm branch](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs//help/alm/branch.md) command
+   More information: [coe alm branch](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs//help/alm/branch.md) command
 
 1. After this command is run, a default branch with Azure Pipelines has been created in the repository.
 

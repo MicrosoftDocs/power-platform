@@ -27,31 +27,31 @@ One approach for organizations to manage and assign development environments to 
 
 1. Check if ad-hoc subscriptions are enabled in your tenant.
 
-```powershell
-Import-Module -Name MSOnline
-Connect-MsolService
-Get-MsolCompanyInformation | fl AllowAdHocSubscriptions
-```
+   ```powershell
+   Import-Module -Name MSOnline
+   Connect-MsolService
+   Get-MsolCompanyInformation | fl AllowAdHocSubscriptions
+   ```
 
 1. The value of **AllowAdHocSubscriptions** will need to be false, if the value it is not then you will need to temporarily enable AllowAdHocSubscriptions.
 
-```powershell
-Set-MsolCompanySettings -AllowAdHocSubscriptions $true 
-```
+   ```powershell
+   Set-MsolCompanySettings -AllowAdHocSubscriptions $true 
+   ```
 
 1. Verify that only Viral consent plan using [Get-AllowedConsentPlans](/powershell/module/microsoft.powerapps.administration.powershell/get-allowedconsentplans) is enabled as administrator.
 
-```powershell
-Import-Module -Name Microsoft.PowerApps.Administration.PowerShell
-Get-AllowedConsentPlans
-```
+   ```powershell
+   Import-Module -Name Microsoft.PowerApps.Administration.PowerShell
+   Get-AllowedConsentPlans
+   ```
 
 1. The results should be {Viral}. If it does not have this value then can update consent plans using [Add-AllowedConsentPlans](/powershell/module/microsoft.powerapps.administration.powershell/add-allowedconsentplans) and [Remove-AllowedConsentPlans](/powershell/module/microsoft.powerapps.administration.powershell/remove-allowedconsentplans).
 
-```powershell
-Add-AllowedConsentPlans -Type Viral
-Remove-AllowedConsentPlans -Type Internal
-```
+   ```powershell
+   Add-AllowedConsentPlans -Type Viral
+   Remove-AllowedConsentPlans -Type Internal
+   ```
 
 1. Complete the sign-up process using [https://powerapps.microsoft.com/developerplan/](https://powerapps.microsoft.com/developerplan/) by selecting the **Get Started Free** button.
 
@@ -59,9 +59,9 @@ Remove-AllowedConsentPlans -Type Internal
 
 1. If the AllowAdHocSubscriptions value was changed to true, then can update to value to false.
 
-```powershell
-Set-MsolCompanySettings -AllowAdHocSubscriptions $false 
-```
+   ```powershell
+   Set-MsolCompanySettings -AllowAdHocSubscriptions $false 
+   ```
 
 1. Makers who have been assigned the license can now visit [https://make.powerapps.com](https://make.powerapps.com) and a development environment will be created.
 
@@ -69,13 +69,13 @@ Set-MsolCompanySettings -AllowAdHocSubscriptions $false
 
 As Azure DevOps Services administrator the following command will add the required service connection to the development environment and setup security for the user.
 
-```bash
-coe alm maker add \
-  -o https://dev.azure.com/dev12345 \
-  -p alm-sandbox \
-  -e https://contoso-dev-user1.crm.dynamics.com \
-  -u username@contoso.com
-```
+   ```bash
+   coe alm maker add \
+   -o https://dev.azure.com/dev12345 \
+   -p alm-sandbox \
+   -e https://contoso-dev-user1.crm.dynamics.com \
+   -u username@contoso.com
+   ```
 
 More information: [core alm maker add](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/maker/add.md) command
 

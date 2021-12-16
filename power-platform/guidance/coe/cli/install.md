@@ -26,15 +26,15 @@ To install the CoE CLI:
 
 1. Change to unzipped or cloned repository.
 
-```bash
-cd coe-starter-kit
-```
+   ```bash
+   cd coe-starter-kit
+   ```
 
 1. Change to the coe-cli folder.
 
-```bash
-cd coe-cli
-```
+   ```bash
+   cd coe-cli
+   ```
 
 Next select either [Local Install](#local-install) or [Docker Install](#docker-install).
 
@@ -58,35 +58,35 @@ To check prerequisites have been installed correctly and the correct versions ar
 
 1. Verify the node version.
 
-```bash
-node --version
-```
+   ```bash
+   node --version
+   ```
 
 1. Verify the Azure CLI version.
 
-```bash
-az --version
-```
+   ```bash
+   az --version
+   ```
 
 ### Install
 
 1. Install application dependencies.
 
-```bash
-npm install
-```
+   ```bash
+   npm install
+   ```
 
 1. Build the application.
 
-```bash
-npm run build
-```
+   ```bash
+   npm run build
+   ```
 
 1. Link to the CoE CLI application.
 
-```bash
-npm link
-```
+   ```bash
+   npm link
+   ```
 
 NOTE:
 
@@ -111,16 +111,16 @@ To run the CoE CLI application, you'll require the following.
 
 1. Build docker image.
 
-```bash
-cd coe-cli
-docker build -t coe-cli . 
-```
+   ```bash
+   cd coe-cli
+   docker build -t coe-cli . 
+   ```
 
 1. Using the docker image.
 
-```bash
-docker run -it --rm coe-cli
-```
+   ```bash
+   docker run -it --rm coe-cli
+   ```
 
 This command will start a new interactive console (-it) and remove the docker container (--rm) when the console session exits. Using --rm ensures that any cached credentials are removed when you exit.
 

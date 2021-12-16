@@ -32,7 +32,7 @@ So users can access resources in Dataverse when running the AA4PP app they need 
 1. **Select the Environment** in which the user exists.
 1. **Select See all under Teams** under the Access section.
 1. Select Create Team.
-1. Enter a **Team name, Business unit, Administrator and Select AAD Security Group as the Team type and Select a Membership Type and Select Next**.
+1. Enter a **Team name, business unit, administrator and Select AAD Security Group as the Team type and Select a Membership Type and Select Next**.
 1. On the Manage security roles page, select the **ALM Power App Access** and **Basic User** role and **select Save**.
 
 ## DevOps user setup

@@ -44,7 +44,7 @@ The ALM Accelerator for Makers components will manage deploying solutions from d
 
 You'll need the following users and permissions in Microsoft Power Platform and Azure Active Directory (Azure AD):
 
-- A licensed Power Apps user with the System Administrator role in the environment where ALM Accelerator for Makers will be deployed.
+- A licensed Power Apps user with the system administrator role in the environment where ALM Accelerator for Makers will be deployed.
     >[!NOTE]
     > This user must not have enabled multifactor authentication until the full support of service principals is enabled in GitHub workflows.
 

@@ -34,81 +34,81 @@ One you have unit test completed for your new command:
 
 1. Update [commands.ts](https://github.com/microsoft/coe-starter-kit/blob/main/coe-cli/src/commands/commands.ts) to include a new command or sub command.
 
-- Import your files at the top of the file.
+   - Import your files at the top of the file.
 
-```typescript
-import { SampleArguments, SampleCommand} from './sample';
-```
+   ```typescript
+   import { SampleArguments, SampleCommand} from './sample';
+   ```
 
-- Add function for mock injection.
+   - Add function for mock injection.
 
-```typescript
-    createSampleCommand: () => SampleCommand
-```
+   ```typescript
+       createSampleCommand: () => SampleCommand
+   ```
 
-- Create command in the constructor function.
+   - Create command in the constructor function.
 
-```typescript
-       this.createSampleCommand = () => new SampleCommand
-```
+   ```typescript
+          this.createSampleCommand = () => new SampleCommand
+   ```
 
-- Add function
+   - Add function
 
-```typescript
-    AddSampleCommand(program: commander.Command) {
-        var run = program.command('sample')
-            .description('A new sample command')
-            .option('-c, --comment <comment>', 'The comment for the command')
-            .action(async (options: any) : Promise<void> => {
-                let args = new SampleArguments();
-                args.comment = options.comment;
-                let command = this.createSampleCommand();
-                await command.execute(args)
-            });
-    }
-```
+   ```typescript
+       AddSampleCommand(program: commander.Command) {
+           var run = program.command('sample')
+               .description('A new sample command')
+               .option('-c, --comment <comment>', 'The comment for the command')
+               .action(async (options: any) : Promise<void> => {
+                   let args = new SampleArguments();
+                   args.comment = options.comment;
+                   let command = this.createSampleCommand();
+                   await command.execute(args)
+               });
+       }
+   ```
 
-- Register new command to init function.
+   - Register new command to init function.
 
-```typescript
-        this.AddSampleCommand(program);
-```
+   ```typescript
+           this.AddSampleCommand(program);
+   ```
 
 1. Update [commands.spec.ts](https://github.com/microsoft/coe-starter-kit/blob/main/coe-cli/test/commands/commands.spec.ts) to include unit tests
 
-- Include reference to the command.
+   - Include reference to the command.
 
-```typescript
-import { SampleCommand } from '../../src/commands/sample'
-```
+   ```typescript
+   import { SampleCommand } from '../../src/commands/sample'
+   ```
 
-- Add a set of Jest tests
+   - Add a set of Jest tests
 
-```typescript
-describe('Sample', () => {
-    test('Execute', async () => {
-        // Arrange
-        var commands = new CoeCliCommands();
-        let mockSampleCommand = mock<SampleCommand>(); 
+   ```typescript
+   describe('Sample', () => {
+       test('Execute', async () => {
+           // Arrange
+           var commands = new CoeCliCommands();
+           let mockSampleCommand = mock<SampleCommand>(); 
 
-        commands.createSampleCommand = () => { return mockSampleCommand }
+           commands.createSampleCommand = () => { return mockSampleCommand }
 
-        mockSampleCommand.execute.mockResolvedValue()
-        
-        // Act
-        await commands.execute(['node', 'commands.spec', 'sample', '-c', 'Some comment'])
+           mockSampleCommand.execute.mockResolvedValue()
+           
+           // Act
+           await commands.execute(['node', 'commands.spec', 'sample', '-c', 'Some comment'])
 
-        // Assert
-        expect(mockSampleCommand.execute).toHaveBeenCalled()
-    })
-});
-```
+           // Assert
+           expect(mockSampleCommand.execute).toHaveBeenCalled()
+       })
+   });
+   ```
 
 1. Run the unit tests with new changes.
 
-```bash
-npm run test
+   ```bash
+   npm run test
 
-```
+   ```
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

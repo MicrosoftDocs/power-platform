@@ -19,7 +19,7 @@ search.app:
 
 # ALM Accelerator for Power Platform
 
-The cli alm command allows you to manage common Application Lifecycle Management (ALM) tasks to install, set up, and administer Application Lifecycle Management solutions in Power Platform.
+The cli alm command allows you to manage common Application Lifecycle Management (ALM) tasks to install, set up, and administer the ALM Accelerator for Power Platform.
 
 - [Quick start](#quick-start) - Guides you through the process of a [demo tenant install](./scenarios/tenant-deployments.md#demonstration-deployment).
 - [Understand the Concepts](#understand-the-concepts) - Covers Scenarios, Personas, and Key Concepts and the install process using the CoE CLI.
@@ -30,7 +30,7 @@ In order to set up the ALM Accelerator for Power Platform you'll need to first [
 
 ## Quick start
 
-For an Administrator, the quick start guide should take around 30 minutes and by the end have configured Azure Active Directory, Azure DevOps, and the Power Platform environments.
+For an administrator, the quick start guide should take around 30 minutes and by the end have configured Azure Active Directory, Azure DevOps, and the Power Platform environments.
 
 1. Validate organization [maturity model](./maturity/overview.md#quick-start) for ALM.
 
@@ -38,53 +38,53 @@ For an Administrator, the quick start guide should take around 30 minutes and by
 
 1. Create an install configuration. Review the [install help](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/install.md) for install parameters.
 
-```bash
-coe alm generate install -o quickstart.json
-```
+   ```bash
+   coe alm generate install -o quickstart.json
+   ```
 
    This command will generate a json configuration file similar to the following. You could replace **contoso** with your tenant name.
 
-```json
-{
-  "log": [
-    "info"
-  ],
-  "components": [
-    "all"
-  ],
-  "aad": "ALMAcceleratorServicePrincipal",
-  "group": "ALMAcceleratorForMakers",
-  "devOpsOrganization": "https://dev.azure.com/contoso",
-  "project": "alm-sandbox",
-  "repository": "alm-sandbox",
-  "pipelineRepository": "coe-alm-accelerator-templates",
-  "environments": "https://contoso-prod.crm.dynamics.com/",
-  "settings": {
-    "installEnvironments": [
-      "validation",
-      "test",
-      "prod"
-    ],
-    "validation": "https://contoso-validation.crm.dynamics.com/",
-    "test": "https://contoso-test.crm.dynamics.com/",
-    "prod": "https://contoso-prod.crm.dynamics.com/",
-    "createSecret": "true",
-    "region": [
-      "NAM"
-    ]
-  },
-  "importMethod": "api",
-  "endpoint": "prod"
-}
-```
+   ```json
+   {
+   "log": [
+      "info"
+   ],
+   "components": [
+      "all"
+   ],
+   "aad": "ALMAcceleratorServicePrincipal",
+   "group": "ALMAcceleratorForMakers",
+   "devOpsOrganization": "https://dev.azure.com/contoso",
+   "project": "alm-sandbox",
+   "repository": "alm-sandbox",
+   "pipelineRepository": "coe-alm-accelerator-templates",
+   "environments": "https://contoso-prod.crm.dynamics.com/",
+   "settings": {
+      "installEnvironments": [
+         "validation",
+         "test",
+         "prod"
+      ],
+      "validation": "https://contoso-validation.crm.dynamics.com/",
+      "test": "https://contoso-test.crm.dynamics.com/",
+      "prod": "https://contoso-prod.crm.dynamics.com/",
+      "createSecret": "true",
+      "region": [
+         "NAM"
+      ]
+   },
+   "importMethod": "api",
+   "endpoint": "prod"
+   }
+   ```
 
    More information: [coe alm generate install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/generate/install.md) command
 
 1. Install the ALM Accelerator using the generated configuration file.
 
-```bash
-coe alm install -f quickstart.json
-```
+   ```bash
+   coe alm install -f quickstart.json
+   ```
 
    More information: [coe alm install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/install.md) command
 
@@ -92,26 +92,26 @@ coe alm install -f quickstart.json
 
 1. [Update permissions for the project build service](/power-platform/guidance/coe/setup-almacceleratorpowerplatform#update-permissions-for-the-project-build-service) to enable build pipelines to interact with Git Repositories.
 
-2. Have  Makers create [development environments](./development-environments.md) then Add Makers to Azure DevOps and share the Canvas Application.
+1. Have  Makers create [development environments](./development-environments.md) then Add Makers to Azure DevOps and share the Canvas Application.
 
-```bash
-coe alm maker add \
-   -o https://dev.azure.com/contoso \
-   -p alm-sandbox \
-   -e https://contoso-userdev.crm.dynamics.com \
-   -a ALMAcceleratorServicePrincipal \
-   -g ALMAcceleratorForMakers -u user@contoso.com
-```
+   ```bash
+   coe alm maker add \
+      -o https://dev.azure.com/contoso \
+      -p alm-sandbox \
+      -e https://contoso-userdev.crm.dynamics.com \
+      -a ALMAcceleratorServicePrincipal \
+      -g ALMAcceleratorForMakers -u user@contoso.com
+   ```
 
    More information: [coe alm maker add](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/maker/add.md) command
 
    You can also generate a user configuration file. Using this approach will allow you to explore each parameter and review the settings before adding the maker.
 
-```bash
-coe alm generate maker add -o user.config
-coe alm maker add \
-   -f user.config
-```
+   ```bash
+   coe alm generate maker add -o user.config
+   coe alm maker add \
+      -f user.config
+   ```
 
    More information: [coe alm generate maker add](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/generate/maker/add.md) command
 

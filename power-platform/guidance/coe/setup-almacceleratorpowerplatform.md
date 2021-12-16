@@ -256,7 +256,7 @@ The following section will guide you through the setup steps required for each o
 Each Dataverse environment (e.g Development, Validation, Test, and Production) will need to have a **Power Platform service connection in DevOps**. For each of your environments follow the steps below to set up the service connection.
 
 > [!NOTE]
-> Users of the AA4PP app will only see environments for which they have either User or Administrator role on the Service Connection in DevOps. If using personal development environments all developers should have User or Administrator role for the Service Connection for their own development environment. Validation, Test, and Production environment service connections only need permissions granted to pipelines (for example Build Service).
+> Users of the AA4PP app will only see environments for which they have either User or administrator role on the Service Connection in DevOps. If using personal development environments all developers should have User or Administrator role for the Service Connection for their own development environment. Validation, Test, and Production environment service connections only need permissions granted to pipelines (for example Build Service).
 
 1. Go to <https://dev.azure.com> and select your **Project**.
 
@@ -302,7 +302,7 @@ Each Dataverse environment (e.g Development, Validation, Test, and Production) w
 1. Select the **Azure App Registration** you created, **Business Unit** and **Security Role**.
 
     > [!NOTE]
-    > It's recommended you give this user System Administrator rights to be able to perform the required functions in each of the environments.
+    > It's recommended you give this user system administrator rights to be able to perform the required functions in each of the environments.
 
 1. Repeat these steps for each of your environments (Development, Validation, Test, and Production).
 

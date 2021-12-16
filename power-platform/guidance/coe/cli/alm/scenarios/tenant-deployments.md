@@ -60,7 +60,7 @@ Attributes:
 - Multiple Azure Active Directory tenants – Internal in organization or with partners
 - Multiple environments Development, Test and Production
 - End to end ALM Process for enterprise wide applications with thousands of users or applications shared across organizations
-- Fusion Development Teams of Makers, Pro Developers, Administrators from within and outside the organization
+- Fusion Development Teams of Makers, Pro Developers, administrators from within and outside the organization
 
 ## Factors to consider
 
@@ -80,10 +80,10 @@ To setup a demonstration deployment, you're looking to quickly install AA4PP to 
 
 1. Using Trial tenant and environments to demonstrate the solution.
 
-1. Single Administrator that has the following rights:
+1. Single administrator that has the following rights:
    - Azure Active Directory tenant administrator
-   - Power Platform Global Administrator
-   - Power Platform Organization Administrator
+   - Power Platform Global administrator
+   - Power Platform Organization administrator
 
 1. Demo non-administration maker users that will be used to show process of creating ALM process for Power Platform solutions.
 
@@ -195,39 +195,39 @@ coe alm install -c devops \
    coe alm install -f install.json
    ```
 
-  ```json
-  {
-    "log": [
-      "info"
-    ],
-    "components": [
-      "environment"
-    ],
-    "aad": "ALMAcceleratorServicePrincipal",
-    "group": "ALMAcceleratorForAdvancedMakers",
-    "devOpsOrganization": "https://dev.azure.com/contoso",
-    "project": "alm-sandbox",
-    "repository": "pipelines",
-    "settings": {
-      "installEnvironments": [
-        "validation",
-        "test",
-        "prod"
-      ],
-      "validation": "https://contoso-validation.crm.dyamics.com",
-      "test": "https://contoso-test.crm.dyamics.com",
-      "prod": "https://contoso-prod.crm.dyamics.com",
-      "createSecret": "true",
-      "region": [
-        "NAM"
-      ]
-    },
-    "importMethod": "api",
-    "endpoint": "prod"
-  }
-  ```
+   ```json
+   {
+   "log": [
+   "info"
+   ],
+   "components": [
+   "environment"
+   ],
+   "aad": "ALMAcceleratorServicePrincipal",
+   "group": "ALMAcceleratorForAdvancedMakers",
+   "devOpsOrganization": "https://dev.azure.com/contoso",
+   "project": "alm-sandbox",
+   "repository": "pipelines",
+   "settings": {
+   "installEnvironments": [
+      "validation",
+      "test",
+      "prod"
+   ],
+   "validation": "https://contoso-validation.crm.dyamics.com",
+   "test": "https://contoso-test.crm.dyamics.com",
+   "prod": "https://contoso-prod.crm.dyamics.com",
+   "createSecret": "true",
+   "region": [
+      "NAM"
+   ]
+   },
+   "importMethod": "api",
+   "endpoint": "prod"
+   }
+   ```
 
-1. Manual installation using the [Create An App Registration in your Azure Active Directory environment](/power-platform/guidance/coe/setup-almacceleratorpowerplatform#create-an-app-registration-in-your-aad-environment).
+Manual installation using the [Create An App Registration in your Azure Active Directory environment](/power-platform/guidance/coe/setup-almacceleratorpowerplatform#create-an-app-registration-in-your-aad-environment).
 
 ## Multi-tenant deployment
 

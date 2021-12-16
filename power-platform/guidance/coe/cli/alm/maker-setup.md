@@ -31,16 +31,16 @@ The ALM Accelerator for Power Platform uses the created Azure Active Directory S
 
 1. Log out of any existing sessions if not the maker or a Power Platform tenant administrator.
 
-```bash
-az logout
+   ```bash
+   az logout
 
-```
+   ```
 
 1. Add the Service Principal to the environment.
 
-```bash
-coe alm user add -e https://contoso-dev-user1.crm.dynamics.com
-```
+   ```bash
+   coe alm user add -e https://contoso-dev-user1.crm.dynamics.com
+   ```
 
 More information: [coe alm user add](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/user/add.md) command
 
@@ -64,13 +64,13 @@ Power Platform solutions managed by the ALM Accelerator require a branch to be c
 
 1. Create Solution branch using the following CLI command.
 
-```bash
-coe alm branch \
-  -o https://dev.azure.com/dev12345 \
-  -p alm-sandbox \
-  -d MySolution1
+   ```bash
+   coe alm branch \
+   -o https://dev.azure.com/dev12345 \
+   -p alm-sandbox \
+   -d MySolution1
 
-```
+   ```
 
 More information: [coe alm branch](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/branch.md) command
 

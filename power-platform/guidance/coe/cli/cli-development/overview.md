@@ -43,27 +43,27 @@ The coe-cli command-line application makes use of following components.
 
 1. Change to coe-cli folder.
 
-```bash
-cd coe-cli
-```
+   ```bash
+   cd coe-cli
+   ```
 
 1. Install dependent components.
 
-```bash
-npm install
-```
+   ```bash
+   npm install
+   ```
 
 1. Build from the source code.
 
-```bash
-npm run build
-```
+   ```bash
+   npm run build
+   ```
 
 1. Install the coe command.
 
-```bash
-npm link
-```
+   ```bash
+   npm link
+   ```
 
 ## Understand The Concepts
 
@@ -102,10 +102,10 @@ NOTES:
 
 - If you're testing with a different account, you'll need to log out of any existing Azure CLI sessions.
 
-```bash
-az logout
+   ```bash
+   az logout
 
-```
+   ```
 
 ### Debugging commands
 

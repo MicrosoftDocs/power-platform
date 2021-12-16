@@ -51,25 +51,25 @@ As you consider an enterprise deployment the following sections outline the key 
 
 Once the CoE CLI has been [installed](./install.md), you can use -h argument to see help options.
 
-```bash
-coe -h
-```
+   ```bash
+   coe -h
+   ```
 
 Authentication for tasks is managed using the Azure CLI. Using standard Azure CLI commands you can log in, log out and select accounts. For example:
 
-```bash
-az login
-coe alm install -c aad
-az logout
-```
+   ```bash
+   az login
+   coe alm install -c aad
+   az logout
+   ```
 
 ## Getting help
 
 You can get short descriptions of any command by adding **--help** to the command line. To get more detailed help, you can use the help command. For example, to get help on the ALM Accelerator for Power Platform use the following command.
 
-```bash
-coe help alm install
-```
+   ```bash
+   coe help alm install
+   ```
 
 Read more in [help](https://aka.ms/coe-cli/help/overview) pages for detailed description for each command.
 

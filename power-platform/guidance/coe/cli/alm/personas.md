@@ -104,7 +104,7 @@ More information: [maker add](https://github.com/microsoft/coe-starter-kit/tree/
 
 #### Azure tenant administrator
 
-Manage the Azure Active Directory Tenant - Create User, Groups,  Applications, and Service Principals (O365 or Azure Administrators).
+Manage the Azure Active Directory Tenant - Create User, Groups,  Applications, and Service Principals (O365 or Azure administrators).
 
 ```bash
 coe alm install -c aad

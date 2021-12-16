@@ -72,11 +72,11 @@ The install performs the following key steps:
 
 1. Create Azure DevOps build pipelines.
   
-- [export-solution-to-git.yml](https://github.com/microsoft/coe-alm-accelerator-templates/blob/main/Pipelines/export-solution-to-git.yml) - Export a solution from a Dataverse environment and commit it to a git branch.
+   - [export-solution-to-git.yml](https://github.com/microsoft/coe-alm-accelerator-templates/blob/main/Pipelines/export-solution-to-git.yml) - Export a solution from a Dataverse environment and commit it to a git branch.
 
-- [import-unmanaged-to-dev-environment.yml](https://github.com/microsoft/coe-alm-accelerator-templates/blob/main/Pipelines/import-unmanaged-to-dev-environment.yml) - Import solution into Dataverse environment.
+   - [import-unmanaged-to-dev-environment.yml](https://github.com/microsoft/coe-alm-accelerator-templates/blob/main/Pipelines/import-unmanaged-to-dev-environment.yml) - Import solution into Dataverse environment.
 
-- [delete-unmanaged-solution-and-components.yml](https://github.com/microsoft/coe-alm-accelerator-templates/blob/main/Pipelines/delete-unmanaged-solution-and-components.yml) - Delete or "clean up" an unmanaged solution from a Dataverse environment.
+   - [delete-unmanaged-solution-and-components.yml](https://github.com/microsoft/coe-alm-accelerator-templates/blob/main/Pipelines/delete-unmanaged-solution-and-components.yml) - Delete or "clean up" an unmanaged solution from a Dataverse environment.
 
 1. Set up Azure Active Group access the Azure DevOps project.
 
@@ -106,9 +106,9 @@ In addition to install automation the following concepts are also assumed for Ma
 
 1. A git [branching strategy](./branching-and-merging.md)
 
-- The alm commands assume a branch per solution.
+   - The alm commands assume a branch per solution.
 
-- Changes merged back into main branch can be promoted to production environment.
+   - Changes merged back into main branch can be promoted to production environment.
 
 1. Manage Pull Requests to merge changes into Solution Branches using [Pull Request](/azure/devops/repos/git/pull-requests).
 
@@ -130,7 +130,7 @@ The CoE CLI provides the following key steps:
 
 ### Environments
 
-The CoE CLI commands currently assume the following environments have been created [https://aka.ms/ppac](https://aka.ms/ppac) as a Global Administrator or Environment Administrator with the following configuration:
+The CoE CLI commands currently assume the following environments have been created [https://aka.ms/ppac](https://aka.ms/ppac) as a Global administrator or Environment Administrator with the following configuration:
 
 1. Dataverse is enabled.
 
