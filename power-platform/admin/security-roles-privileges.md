@@ -9,7 +9,7 @@ ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/24/2021
+ms.date: 12/16/2021
 search.audienceType: 
   - admin
 search.app:
@@ -89,7 +89,7 @@ This member's privilege inheritance role is applicable to [Owner](manage-teams.m
 #### Prerequisites
 These settings can be found in the Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Users + permissions** > **Security roles**.
 
-Make sure you have the System Administrator or System Customizer security role or equivalent permissions.
+Make sure you have the System Administrator security role or equivalent permissions.
 
 Check your security role:
 - Follow the steps in [View your user profile](/powerapps/user/view-your-user-profile).
