@@ -23,15 +23,15 @@ As a first step you'll need to complete the initial steps of an ALM deployment a
 
 ## Overview
 
-The following roles are involved with Power Platform
+The following roles are involved with Power Platform.
 
 - Administrator
-  - Azure Active Directory - Permissions to Create Azure Active Directory Application with [Admin Level Consent](/azure/active-directory/manage-apps/grant-admin-consent)
-  - Power Platform - Environment Administrator to Create Validation, Test and Production environments
-  - Azure DevOps - Organization and Project Administrator
+  - Azure Active Directory - Permissions to create Azure Active Directory Application with [Admin Level Consent](/azure/active-directory/manage-apps/grant-admin-consent).
+  - Power Platform - Environment Administrator to Create Validation, Test and Production environments.
+  - Azure DevOps - Organization and Project Administrator.
 - Maker
-  - Power Platform - Create Development environment
-  - Azure DevOps - Azure DevOps project user, create solution branch
+  - Power Platform - Create Development environment.
+  - Azure DevOps - Azure DevOps project user, create solution branch.
 
 It is assumed that this installation will be run by a single user that has the following rights:
 
@@ -39,21 +39,21 @@ It is assumed that this installation will be run by a single user that has the f
 
 - DevOps Administrator rights
 
-- Azure Active directory Administrator rights.
+- Azure Active directory Administrator rights
 
 ## Before you start
 
 Complete [Before You Start](./before-you-start.md) to ensure that:
 
-- Power Platform Environments have been created
+- Power Platform Environments have been created.
 
-- The Azure DevOps Organization and Azure DevOps Project have been created
+- The Azure DevOps Organization and Azure DevOps Project have been created.
 
-- CoE CLI installed
+- CoE CLI is installed.
 
 ## Initial install
 
-1. Create install configuration file and review the generated JSON file and confirm the settings before you start the install process
+1. Create install configuration file and review the generated JSON file and confirm the settings before you start the install process.
 
   ```bash
   coe alm generate install -o test.json
@@ -61,7 +61,7 @@ Complete [Before You Start](./before-you-start.md) to ensure that:
 
   More information: [coe alm generate install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/generate/install.md) command
 
-  Which will generate a file similar to
+  Which will generate a file similar to:
 
   ```json
   {
@@ -95,7 +95,7 @@ Complete [Before You Start](./before-you-start.md) to ensure that:
   }
   ```
 
-1. Review the JSON and install using the following command
+1. Review the JSON and install using the following command.
 
   ```bash
   coe alm install -f test.json
@@ -103,10 +103,10 @@ Complete [Before You Start](./before-you-start.md) to ensure that:
 
   More information: [coe alm install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/install.md) command
 
-1. [Update permissions for the project build service](/power-platform/guidance/coe/setup-almacceleratorpowerplatform#update-permissions-for-the-project-build-service) to enable build pipelines to interact with Git Repositories
+1. [Update permissions for the project build service](/power-platform/guidance/coe/setup-almacceleratorpowerplatform#update-permissions-for-the-project-build-service) to enable build pipelines to interact with Git Repositories.
 
 ## Read next
 
-- Complete the [Install Overview](./overview.md#install-overview)
+- Complete the [Install Overview](./overview.md#install-overview).
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

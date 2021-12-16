@@ -19,13 +19,13 @@ search.app:
 
 # Development environments
 
-Each maker will need a development environment created. Advanced makers can use a community environment to work in. Community environments can be accessed from the sign-up page [https://powerapps.microsoft.com/developerplan/](https://powerapps.microsoft.com/developerplan/) with **Get Started Free**
+Each maker will need a development environment created. Advanced makers can use a community environment to work in. Community environments can be accessed from the sign-up page [https://powerapps.microsoft.com/developerplan/](https://powerapps.microsoft.com/developerplan/) with **Get Started Free**.
 
 ## Power Platform for developer licenses
 
 One approach for organizations to manage and assign development environments to makers. To sign up for the developer plan to your organization, you may need to enable viral sign-up to have the license assigned to your organization.
 
-1. Check if ad-hoc subscriptions are enabled in your tenant
+1. Check if ad-hoc subscriptions are enabled in your tenant.
 
 ```powershell
 Import-Module -Name MSOnline
@@ -33,41 +33,41 @@ Connect-MsolService
 Get-MsolCompanyInformation | fl AllowAdHocSubscriptions
 ```
 
-1. The value of **AllowAdHocSubscriptions** will need to be false, if the value it is not then you will need to temporarily enable AllowAdHocSubscriptions
+1. The value of **AllowAdHocSubscriptions** will need to be false, if the value it is not then you will need to temporarily enable AllowAdHocSubscriptions.
 
 ```powershell
 Set-MsolCompanySettings -AllowAdHocSubscriptions $true 
 ```
 
-1. Verify that only Viral consent plan using [Get-AllowedConsentPlans](/powershell/module/microsoft.powerapps.administration.powershell/get-allowedconsentplans) is enabled as Administrator
+1. Verify that only Viral consent plan using [Get-AllowedConsentPlans](/powershell/module/microsoft.powerapps.administration.powershell/get-allowedconsentplans) is enabled as administrator.
 
 ```powershell
 Import-Module -Name Microsoft.PowerApps.Administration.PowerShell
 Get-AllowedConsentPlans
 ```
 
-1. The results should be {Viral}. If it does not have this value then can update consent plans using [Add-AllowedConsentPlans](/powershell/module/microsoft.powerapps.administration.powershell/add-allowedconsentplans) and [Remove-AllowedConsentPlans](/powershell/module/microsoft.powerapps.administration.powershell/remove-allowedconsentplans)
+1. The results should be {Viral}. If it does not have this value then can update consent plans using [Add-AllowedConsentPlans](/powershell/module/microsoft.powerapps.administration.powershell/add-allowedconsentplans) and [Remove-AllowedConsentPlans](/powershell/module/microsoft.powerapps.administration.powershell/remove-allowedconsentplans).
 
 ```powershell
 Add-AllowedConsentPlans -Type Viral
 Remove-AllowedConsentPlans -Type Internal
 ```
 
-1. Complete the sign-up process using [https://powerapps.microsoft.com/developerplan/](https://powerapps.microsoft.com/developerplan/) by selecting the **Get Started Free** button
+1. Complete the sign-up process using [https://powerapps.microsoft.com/developerplan/](https://powerapps.microsoft.com/developerplan/) by selecting the **Get Started Free** button.
 
 1. The license type **Microsoft Power Apps for Developers** can now be [assigned to users](/microsoft-365/admin/manage/assign-licenses-to-users) or [Azure Active Groups](/azure/active-directory/enterprise-users/licensing-groups-assign)
 
-1. If the AllowAdHocSubscriptions value was changed to true, then can update to value to false
+1. If the AllowAdHocSubscriptions value was changed to true, then can update to value to false.
 
 ```powershell
 Set-MsolCompanySettings -AllowAdHocSubscriptions $false 
 ```
 
-1. Makers who have been assigned the license can now visit [https://make.powerapps.com](https://make.powerapps.com) and a development environment will be created
+1. Makers who have been assigned the license can now visit [https://make.powerapps.com](https://make.powerapps.com) and a development environment will be created.
 
 ## Admin maker setup
 
-As Azure DevOps Services Administrator the following command will add the required service connection to the development environment and setup security for the user
+As Azure DevOps Services administrator the following command will add the required service connection to the development environment and setup security for the user.
 
 ```bash
 coe alm maker add \
@@ -81,6 +81,6 @@ More information: [core alm maker add](https://github.com/microsoft/coe-starter-
 
 ## Read next
 
-- Complete the [Install Overview](./overview.md#install-overview)
+- Complete the [Install Overview](./overview.md#install-overview).
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
