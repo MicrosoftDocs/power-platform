@@ -48,7 +48,7 @@ The following questions are common security questions and answers for Power Plat
   [A06:2021-Vulnerable and Outdated Components](https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components/):
   - To be updated
   - Power Platform follows Microsoft's industry leading [SDL](https://www.microsoft.com/en-us/securityengineering/sdl/practices) practices to manage open-source and third-party components. As part of this process, the [Tools and Techniques](https://www.microsoft.com/en-us/securityengineering/opensource/?activetab=security+analysis%3aprimaryr3) involve maintaining complete inventory, performing security analysis, keeping the components up to date, and aligningg them with a tested and tried security incident response process.
-  - <To be updated on why we still have some deprecated components in use - we will have to explain that it can happen due to customer dependencies and can only happen in low risk scenarios>
+  - [-------------To be updated on why we still have some deprecated components in use - we will have to explain that it can happen due to customer dependencies and can only happen in low risk scenarios-------------]
 
   [A07:2021-Identification and Authentication Failures](https://owasp.org/Top10/A07_2021-Identification_and_Authentication_Failures/):
   - To be updated
