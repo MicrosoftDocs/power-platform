@@ -40,7 +40,7 @@ The following questions are common security questions and answers for Power Plat
   - [A10:2021-Server-Side Request Forgery](https://owasp.org/Top10/A10_2021-Server-Side_Request_Forgery_%28SSRF%29/):
 
   # Common Security questions from customers
-  - The below are some of the common security questions that customers have raised in the past. We are capturing them here along with useful information that helps to answer their questions.
+  The below are some of the common security questions that customers have raised in the past. We are capturing them here along with useful information that helps to answer their questions.
 
   **How does Power Platform guard against [Clickjacking](https://owasp.org/www-community/attacks/Clickjacking) risks?**
   - To be updated
