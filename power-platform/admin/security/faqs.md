@@ -66,6 +66,7 @@ The following questions are common security questions and answers for Power Plat
 
   **How does Power Platform protect against Distributed Denial of Service ([DDoS](https://owasp.org/www-project-automated-threats-to-web-applications/assets/oats/EN/OAT-015_Denial_of_Service.html)) attacks?**
   - To be updated
+  - Power Platform is built on top of Microsoft Azure. As such, Power Platform leverages [Azure DDoS Protection](https://docs.microsoft.com/en-us/azure/ddos-protection/ddos-protection-standard-features) to guard against Distributed Denial of Service (DDoS) attacks.
   
   **Does Power Platform detect rooted Android devices?**
   - To be updated
