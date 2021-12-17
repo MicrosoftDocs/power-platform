@@ -1,5 +1,5 @@
 ---
-title: "Configure user authentication (Video)"
+title: "Configure user authentication (contains video)"
 description: "Configure authentication with your identity provider to enable users to sign in when having a bot conversation."
 keywords: "Authentication, IdP, PVA, AAD"
 ms.date: 10/22/2021
