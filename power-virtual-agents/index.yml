@@ -30,7 +30,7 @@ highlightedContent:
     # Card
     - title: What's new in Power Virtual Agents?
       itemType: whats-new
-      url: /power-platform-release-plan/2020wave2/power-virtual-agents/planned-features
+      url: https://go.microsoft.com/fwlink/?linkid=2082154
 
     # Card
     - title: "Power Virtual Agents videos"
