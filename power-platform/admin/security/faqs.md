@@ -29,7 +29,7 @@ The following questions are common security questions and answers for Power Plat
   The Open Web Application Security Project® ([OWASP](https://owasp.org/about/)) is a nonprofit foundation that works to improve the security of software. Through community-led open-source software projects, hundreds of local chapters worldwide, tens of thousands of members, and leading educational and training conferences, the OWASP Foundation is the source for developers and technologists to secure the web.
 
   The [OWASP Top 10](https://owasp.org/www-project-top-ten/) is a standard awareness document for developers and web application security. It represents a broad consensus about the most critical security risks to web applications.
-  [A01:2021-Broken Access Control](https://owasp.org/Top10/A01_2021-Broken_Access_Control/):
+  **[A01:2021-Broken Access Control](https://owasp.org/Top10/A01_2021-Broken_Access_Control/)**:
   [A02:2021-Cryptographic Failures](https://owasp.org/Top10/A02_2021-Cryptographic_Failures/):
   [A03:2021-Injection](https://owasp.org/Top10/A03_2021-Injection/):
   [A04:2021–Insecure Design](https://owasp.org/Top10/A04_2021-Insecure_Design/):
