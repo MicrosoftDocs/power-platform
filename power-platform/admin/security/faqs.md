@@ -48,8 +48,14 @@ The following questions are common security questions and answers for Power Plat
   
   **How does Power Platform help protect against Cross-Site Scripting ([XSS](https://owasp.org/www-community/attacks/Clickjacking)) risks?**
   - To be updated
+
+  **How does Power Platform help protect against Cross Site Request Forgery ([CSRF](https://owasp.org/www-community/attacks/csrf)) risks?**
+  - To be updated
   
   **Does Power Platform support Content Security Policy ([CSP](https://owasp.org/www-community/controls/Content_Security_Policy))?**
+  - To be updated
+
+  **Does Power Platform support Cross-Origin Resource Sharing ([CORS](https://owasp.org/www-community/attacks/CORS_OriginHeaderScrutiny))?**
   - To be updated
 
   **How can we connect to SQL Server securely?**
@@ -70,8 +76,18 @@ The following questions are common security questions and answers for Power Plat
   **Why is the cookie scoped to parent domain?**
   - To be updated
 
-  **Why is [Certificate Pinning](https://owasp.org/www-community/controls/Certificate_and_Public_Key_Pinning) not supported in mobile players?**
+  **How can we set the application session to timeout after, say, 15 minutes?**
   - To be updated
+
+  **The application allows the same user to access from more than one machine/browser at the same time. How can we prevent that?**
+  - To be updated
+  - Accessing the application from more than one machine/browser at the same time is a convenience. However, the access needs to be continuously evaluated to ensure that the access is from legitimate source and still valid.
+  - Azure Active Directory (AAD) has rolled out Continuous Access Evaluation ([CAE](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/concept-continuous-access-evaluation)) feature which will be coming to Power Platform to help with the above.
+
+
+  ****
+  - To be updated
+
 
 
 
