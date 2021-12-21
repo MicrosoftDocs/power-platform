@@ -313,6 +313,7 @@ Flows that have the Asynchronous Response feature enabled may cause an error whe
 
 <!-- TODO: remove these steps and replace with link to relevant power automate docs when they are made -->
 If you've enabled the [Asynchronous Response](/azure/connectors/connectors-native-http#asynchronous-request-response-behavior), you'll need to disable it for the bot to work properly when it runs the flow:
+
 **To disable Asynchronous Response**
 
 1. [Locate and modify your flow](#modify-a-flow-on-the-power-automate-portal).
