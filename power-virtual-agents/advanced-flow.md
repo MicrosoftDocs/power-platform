@@ -312,7 +312,7 @@ Power Virtual Agents doesn't support Power Automate flows that return values [as
 Flows that have the Asynchronous Response feature enabled may cause an error when your bot tries to run the flow. Instead of running the flow, the bot will say "Something unexpected happened. We're looking into it. Error code: 3000.".
 
 <!-- TODO: remove these steps and replace with link to relevant power automate docs when they are made -->
-If you've enabled the Asynchronous Response, you'll need to disable it for the bot to work properly when it runs the flow:
+If you've enabled the [Asynchronous Response](/azure/connectors/connectors-native-http#asynchronous-request-response-behavior), you'll need to disable it for the bot to work properly when it runs the flow:
 **To disable Asynchronous Response**
 
 1. [Locate and modify your flow](#modify-a-flow-on-the-power-automate-portal).
