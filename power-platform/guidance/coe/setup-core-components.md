@@ -1,5 +1,5 @@
 ---
-title: "Set up core components | MicrosoftDocs"
+title: "Set up inventory components | MicrosoftDocs"
 description: "Setup instructions for how to set up the core admin components solution of the CoE Starter Kit"
 author: manuelap-msft
 manager: devkeydet
@@ -18,222 +18,24 @@ search.app:
   - Powerplatform
 ---
 
-# Set up core components
+# Set up inventory components
 
 [!INCLUDE[cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
 
-The Center of Excellence (CoE) core components solution provides components that you need to get started with setting up a CoE. They sync all your resources into tables and build admin apps on top of that to help you get more visibility into the apps, flows, and makers that exist in your environment. Additionally, apps like DLP Editor and Set App Permissions help with daily admin tasks.  
+This article will help you to setup the inventory components of the Core solution of the CoE Starter Kit. The inventory is the heart of the CoE and before embarking on your Power Platform adoption journey, you'll want to first understand if you have existing apps, flows and makers and lay the foundation to monitor new apps and flows being created.
 
-The core components solution contains assets that are only relevant to admins.
+The flows in this solution sync all your resources into tables and build admin apps, flows and dashboards on top of this inventory to help you get a holistic overview into the apps, flows, and makers that exist in your environment. Additionally, apps like DLP Editor and Set App Permissions help with daily admin tasks.
 
 Watch how to setup the core components solution.
 
 > [!VIDEO https://www.youtube.com/embed/Z9Vp2IxFzpU]
 
-## Import the solution
-
-The Core Components can be used in both Production environments and Dataverse for Teams environments. Where you install it will depend on your organization setup, your adoption of Microsoft Power Platform so far and what you want to achieve with the CoE Starter Kit. Before you decide, compare [Dataverse vs Dataverse for Teams](/powerapps/teams/data-platform-compare)
-
-Learn more: [What is Dataverse for Teams](/powerapps/teams/overview-data-platform)
-
-### Option 1: Import the solution into a Production environment
-
-This is the first step of the installation process and is required for every other component in the starter kit to work. You'll need to create an environment in which to set up the CoE. For more information about how to decide on the best strategy for your organization, go to [Establishing an Environment Strategy for Microsoft Power Platform](/power-platform/guidance/adoption/environment-strategy) and [Environment strategy for ALM](/power-platform/alm/environment-strategy-alm).
-
-1. Download the CoE Starter Kit compressed file ([aka.ms/CoeStarterKitDownload](https://aka.ms/CoeStarterKitDownload)).
-
-    >[!IMPORTANT]
-    > **Extract the zip file** after downloading and before moving on to the next step. The CoE Starter Kit compressed file contains all solution components as well as non-solution aware components that make up the CoE Starter Kit.
-
-1. Create an environment in which to set up the CoE.
-
-   1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-   1. Select **Environments** > **+ New**, and then enter a name, type, and purpose.
-   1. Select **Yes** for creating the database, and then select **Next**.
-   1. Leave **Sample apps and data** set to **No**
-   1. Select **Save**.
-
-1. Go to your new environment.
-
-    1. Go to [make.powerapps.com](<https://make.powerapps.com>).
-    1. Go to the environment you just created, in which the CoE solution will be hosted. In the example in the following screenshot, we're importing to the environment named **Contoso CoE**.
-
-     ![Power Apps maker portal environment selection.](media/coe6.png "Power Apps maker portal environment selection")
-
-1. On the left pane, select **Solutions**.
-
-1. Select **Import**, and then **Browse**.
-
-1. Select the Center of Excellence core components solution from File Explorer (CenterOfExcellenceCoreComponents_*x_x_x_xx*_managed.zip).
-
-1. When the compressed (.zip) file has been loaded, select **Next**.
-
-1. Review the information, and then select **Next**.
-1. Establish connections to activate your solution. If you create a new connection, you must select **Refresh**. You won't lose your import progress.
-
-     ![Establish connections to activate your solution.](media/msi-import.png "Establish connections to activate your solution.")
-
-    When you create the connection for HTTP with Azure AD enter the following into the Base Resource URL and Azure AD Resource URI (Application ID URI): [https://graph.microsoft.com](https://graph.microsoft.com) or [https://dod-graph.microsoft.us/](https://dod-graph.microsoft.us/) if you're in a DoD environment.
-
-     ![Establish HTTP with Azure AD.](media/httpazuread.png "Establish connections to activate your solution.")
-
-1. Update environment variable values. The environment variables are used to store application and flow configuration data with data specific to your organization or environment. This means that you only have to set the value once per environment and it will be used in all necessary flows and apps in that environment. All the flows in the solution depend on all environment variables' being configured.
-
-    ![Update environment variable values.](media/msi-envvar.png "Update environment variable values")
-
-    Configure the following variables for the core components solution, and then select **Save**. (If you need to change the value of an environment variable after you import the solution, go to [Update environment variables](#update-environment-variables).)
-
-    | Name | Description |
-    |------|---------------|
-    |Admin eMail |Admin eMailed with this solution, and copy the web link (to launch the app) and paste it into this variable. This environment variable is not used until you adopt the Developer Compliance Center.  |
-    |Also Delete from CoE | Recommend Yes here to delete objects from the CoE inventory when they are deleted from the tenant. No will keep a record that an app or flow existed in the past |
-    |Approval Admin | The email address used in flows to send approvals to admins; this cannot be a distribution list. |
-    | Community URL         | Link to your internal Microsoft Power Platform community (for example, Yammer or Teams).  |
-    | Developer Compliance Center URL        | Leave empty on Import and do the following to populated after set up of the [Governance components](setup-governance-components.md).<br> Navigate to the details page of the Developer Compliance Center (canvas app) included with this solution, and copy the web link (to launch the app) and paste it into this variable.  |
-    | Environment Request Admin App Url | Link to the **Admin - Power Platform Resouce RMS** canvas app included in this solution. Leave empty on Import and fill it in once the app is installed. <br> To do that, navigate to the details page of the **Admin - Power Platform Resouce RMS** (canvas app) included with this solution, and use the wek link (to launch the app).  |
-    |PowerApp Maker environment variable | The maker URL used by PowerApps for your cloud, including trailing slash. Here are examples:<br> For a US environment: <https://make.powerapps.com/> <br> For a GCC environment: <https://make.gov.powerapps.us/> <br>For a GCC High environment: <https://make.high.powerapps.us/> |
-    |PowerApp Player environment variable<br>For a DoD environment: <https://make.apps.appsplatform.us/> |
-    |PowerApp Player environment variable | The player URL used by PowerApps for your cloud, including trailing slash. Here are examples:<br> For a US environment: <https://apps.powerapps.com/> <br> For a GCC environment: <https://apps.gov.powerapps.us/> <br>For a GCC High environment: <https://apps.gov.powerapps.us/> <br>For a DoD environment: <https://play.apps.appsplatform.us> |
-    |Power Automate environment variable | The URL used by flow for your region. Here are examples:<br> For a US environment: <https://us.flow.microsoft.com/manage/environments/> <br> For a Canadian environment: <https://canada.flow.microsoft.com/manage/environments/> <br>For an EMEA environment: <https://emea.flow.microsoft.com/manage/environments/> <br>For a GCC environment: <https://gov.flow.microsoft.us/manage/environments/> <br> For a GCC High environment: <https://high.flow.microsoft.us/manage/environments><br> For a DoD environment: <https://flow.appsplatform.us/manage/environments/><br>If your region is not listed here, navigate to [flow.microsoft.com](https://flow.microsoft.com) and copy the URL the page directs to from the browser.|
-    | Power Platform Maker Microsoft 365 Group | The Admin \| Welcome Email flow sends a welcome email to onboard new makers and adds them to a Microsoft 365 group. You can use this group to send communications to your makers or invite them to a Yammer or Teams group. Configure the group ID here.|
-    | TenantID | Your Azure Tenant ID.|
-
-1. Select **Import**.
-
-The import can take up to 10 minutes to be completed.
-
-### Option 2: Import the solution into a Dataverse for Teams environment
-
-This is the first step of the installation process and is required for every other component in the starter kit to work.
-
-Before you begin:
-
-- decide which team to add the Core Components solution to or create a new team.
-- [install the Power Apps app](/powerapps/teams/install-personal-app) in Teams.
-- [create your first app](/powerapps/teams/create-first-app) (at least one app is required in the environment to enable the solution import experience).
-
-1. Download the CoE Starter Kit compressed file ([aka.ms/CoeStarterKitDownload](https://aka.ms/CoeStarterKitDownload)).
-
-    >[!IMPORTANT]
-    > **Extract the zip file** after downloading and before moving on to the next step. The CoE Starter Kit compressed file contains all solution components as well as non-solution aware components that make up the CoE Starter Kit.
-
-1. Open to the Power Apps app in Teams, select **Build**, and select the Team you want to add the solution to.
-
-1. Select **See All**
-
-    ![Open the Power Apps app in Teams to import a new solution.](media/ibteams-1.png "Open the Power Apps app in Teams to import a new solution.")
-
-1. Select **Import**
-
-1. In the pop-up window, select **Choose File**.
-
-1. Select the Center Of Excellence Core Components for Teams solution: CenterOfExcellenceCoreComponentsTeams_*x_x_x_xx*_managed.zip.
-
-1. When the compressed (.zip) file has been loaded, select **Next**.
-
-1. Establish connections to the required connectors including:
-
-    - Microsoft Dataverse
-    - Microsoft Dataverse (current environment)
-    - Power Apps for Admins
-    - Power Apps for Makers
-    - Power Platform for Admins
-    - Power Automate for Admins
-    - Power Automate Management
-    - Office 365 Users
-    - Office 365 Outlook
-    - Office 365 Groups
-    - SharePoint
-    - Microsoft Teams
-    - HTTP with Azure AD: set the Resource URL and Azure AD Resource URI to [https://graph.microsoft.com/](https://graph.microsoft.com/) for a commercial tenant, and [https://graph.microsoft.us/](https://graph.microsoft.us/) for a GCC High tenant.
-
-    If you create a new connection, you must select **Refresh**. You won't lose your import progress.
-
-     ![Establish connections to all connectors used in the solution.](media/coreteams-1.png "Establish connections to all connectors used in the solution.")
-
-1. Update environment variable values. The environment variables are used to store application and flow configuration data with data specific to your organization or environment. This means that you only have to set the value once per environment and it will be used in all necessary flows and apps in that environment. All the flows in the solution depend on all environment variables' being configured.
-
-     ![Set environment variable values.](media/coreteams-2.png "Set environment variable values.")
-
-    Configure the following variables for the core components solution, and then select **Save**. (If you need to change the value of an environment variable after you import the solution, go to [Update environment variables](#update-environment-variables).)
-
-    | Name | Description |
-    |------|---------------|
-    |Admin eMail |Admin eMailed with this solution, and copy the web link (to launch the app) and paste it into this variable. This environment variable is not used until you adopt the Developer Compliance Center.  |
-    |Also Delete from CoE | Recommend Yes here to delete objects from the CoE inventory when they are deleted from the tenant. No will keep a record that an app or flow existed in the past |
-    |Approval Admin | The email address used in flows to send approvals to admins; this cannot be a distribution list. |
-    | Community URL         | Link to your internal Microsoft Power Platform community (for example, Yammer or Teams).  |
-    | Developer Compliance Center         | Leave empty on Import and do the following to populated after set up of the [Governance components](setup-governance-components.md).<br> Navigate to the details page of the Developer Compliance Center (canvas app) included with this solution, and copy the web link (to launch the app) and paste it into this variable.  |
-    | Environment Request Admin App Url | Link to the **Admin - Power Platform Resouce RMS** canvas app included in this solution. Leave empty on Import and fill it in once the app is installed. <br> To do that, navigate to the details page of the **Admin - Power Platform Resouce RMS** (canvas app) included with this solution, and use the wek link (to launch the app).  |
-    |PowerApp Maker environment variable | The maker URL used by PowerApps for your cloud, including trailing slash. Here are examples:<br> For a US environment: <https://make.powerapps.com/> <br> For a GCC environment: <https://make.gov.powerapps.us/> <br>For a GCC High environment: <https://make.high.powerapps.us/> |
-    |PowerApp Player environment variable | The player URL used by PowerApps for your cloud, including trailing slash. Here are examples:<br> For a US environment: <https://apps.powerapps.com/> <br> For a GCC environment: <https://apps.gov.powerapps.us/> <br>For a GCC High environment: <https://apps.gov.powerapps.us/> |
-    |Power Automate environment variable | The URL used by flow for your region. Here are examples:<br> For a US environment: <https://us.flow.microsoft.com/manage/environments/> <br> For a Canadian environment: <https://canada.flow.microsoft.com/manage/environments/> <br>For an EMEA environment: <https://emea.flow.microsoft.com/manage/environments/> <br>For a GCC environment: <https://gov.flow.microsoft.us/manage/environments/> |
-    | Power Platform Maker Microsoft 365 Group | The Admin \| Welcome Email flow sends a welcome email to onboard new makers and adds them to a Microsoft 365 group. You can use this group to send communications to your makers or invite them to a Yammer or Teams group. Configure the group ID here.|
-    | TenantID | Your Azure Tenant ID.|
-
-1. Select **Import**.
-
-The import can take up to 60 minutes to be completed. Learn more about the apps and flows in the Core components: [What's in the Core Components](core-components.md)
-
-## Update and turn on child flows
-
-There are several child flows which will need their **Run only users** properties updated.
-
-- HELPER - CloudFlowOperations
-- HELPER - CanvasAppOperations
-- HELPER - ObjectOperations
-- CLEANUP HELPER - Check Deleted (Canvas Apps)
-- CLEANUP HELPER - Check Deleted (Cloud Flows)
-- CLEANUP HELPER - Check Deleted (Model Driven Apps)
-- CLEANUP HELPER - Check Deleted (PVA)
-- CLEANUP HELPER - Check Deleted (Custom Connectors)
-- CLEANUP HELPER - Power Apps User Shared With
-
-First, [remove the unmanaged layer](setup.md#installing-updates) for all flows. Then, go to the details page and click the **Run only users** edit button.
-
- ![Find setting for run only users.](media/runonlyusersgov1.png "Find setting for run only users")
-
-You will see all the connections in the child flow. For each one, change the value to **Use this connection (userPrincipalName\@company.com)**. If there is no connection for any of the connectors, go to **Data** > **Connections**, and create one for the connector.
-  
-![Configure run only users.](media/runonlyusersgov2.png "Configure run only users")
-
-Once you have updated the run only users, turn on all the child flows.
-
-## Activate the flows
-
-The Admin \| Sync Template flows part of this solution crawl through all the resources stored in Microsoft Power Platform and make a copy of details in each resource (for example, apps and flows) to Dataverse (table definitions are provided in this solution). All data displayed in most of the starter kit components must be in Dataverse, which means that the sync template must be configured for everything else to work. The sync flows run daily overnight.
-
-When you first set up the CoE Starter Kit, enable these flows in a specific order which will start the process of crawling and storing the information in Dataverse. Depending on the size of your tenant, the first run of may take long to complete. See the [limitations information](limitations.md) for more details.
-
-We will more quickly resolve issues around dependencies between tables by enabling the flows in an explicit order. Enabling the flows in this order is not required, but it may cause errors or incorrect data during the first week until the inventory dependencies align.
-
-1. For Option 1 (Core Components installed in Production environment):
-    1. Go to [make.powerapps.com](https://make.powerapps.com/), select **Solutions**, and then open the **Center of Excellence - Core Components** solution to view the flows.
-1. For Option 2 (Core Components installed in Dataverse for Teams environment)
-    1. Open to the Power Apps app in Teams, select **Build**, and select the Team you have added the solution to.
-    1. Select **Installed apps**.
-    1. Select **See all** for Center of Excellence - Core Components.
-    1. Select **Cloud flows**.
-1. Turn on: CLEANUP - Admin \| Sync Template v3 (Check Deleted).
-1. Wait until it finishes before you turn on any other flows.
-1. Turn on: Admin \| Sync Template V3 (Connectors)
-1. Wait until it finishes before you turn on any other flows.
-1. Turn on the Admin \| Sync Template flows for the following object types: Apps, Custom Connectors, Desktop Flows, Flows, Model Driven Apps, and PVA
-1. Turn on Admin \| Sync Template v3.
-1. Wait for Admin \| Sync Template v3 to complete its run and then turn it back off. This will avoid write conflicts for large organizations.
-1. Check the Admin \| Sync Template flows for apps, flows and other resources and wait until all of these complete.
-1. Turn back on Admin \| Sync Template v3.
-1. Now you're ready to turn on all the other flows
-    1. Turn on all the flows starting with CLEANUP.
-    1. Turn on the [Admin | Capacity Alerts](core-components.md#flows) if you would like to receive alerts when environments get close to approved capacity.
-    1. Turn on the [Admin | Welcome Email v3](core-components.md#flows) if you would like to send welcome emails to new makers.
-    1. Turn on the flows starting with Env Request and DLP Request if you are using the [Power Platform Request Center](core-components.md#power-platform-request-center). Make sure the Admin eMail and Environment Request Admin App Url [environment variables](#update-environment-variables) are configured before turning on those flows.
-    1. Turn on the flows starting with Command Center App if you are using the [Admin - Command Center](core-components.md#admin---command-center)
-
 >[!IMPORTANT]
-> Note that **Admin \| Compliance Detail Request v3** will not pass until you complete setup of the Governance component so you should leave it turned off until then.
+>Get started by completing the [before the setup](before-setup.md) instructions. This article assumes you have your environment setup, and are logged in with the correct identity.
 
-## (Optional) Create an Azure AD app registration to connect to Microsoft Graph
+## Before you start
+
+### (Optional) Create an Azure AD app registration to connect to Microsoft Graph
 
 >[!NOTE]
 > Only complete this steps if you want to review Power Platform related [Microsoft 365 Message Center](/microsoft-365/admin/manage/message-center) updates in the [Admin - Command Center](core-components.md#admin---command-center) canvas app.
@@ -276,17 +78,127 @@ Using these steps, you'll set up an Azure AD app registration that will be used 
 
 1. Select **Overview**, and copy and paste the application (client) ID value to the same text document; be sure to make a note of which GUID is for which value. You'll need these values in the next step as you configure the custom connector.
 
-1. Go to [make.powerapps.com](https://make.powerapps.com/), select **Solutions**, and then open the **Center of Excellence - Core Components** solution to view the flows.
+## Gather Environment variable values
 
+During solution import, you will configure environment variable values. Make sure to have the below information ready:
+
+| Name | Description |
+|------|---------------|
+|Admin eMail |This is the email address to which most admin communications in the starter kit will be sent. Please refer to [What groups will you use](internal link to Before you Setup)  |
+| Power Platform Maker Microsoft 365 Group | Get the ID of the Microsoft 365 group which will contain all your Power Platform Makers. You will use this to communicate and share apps with them. It is needed for the inventory setup in the Admin | Add Maker to Group flow. Please refer to [What groups will you use](internal link to Before you Setup) |
+| Command Center - Application Client ID | (optional) Enter the application client ID from the [Create an Azure AD app registration to connect to Microsoft Graph](internal link) step above. Leave empty if you would like to use Azure KeyVault to store your client ID and secret. |
+| Command Center - Client Secret | (optional) Enter the application client secret from the [Create an Azure AD app registration to connect to Microsoft Graph](internal link) step above. Leave empty if you would like to use Azure KeyVault to store your client ID and secret. |
+|Power Automate environment variable | The URL used by flow for your region. Here are examples:<br> For a US environment: <https://us.flow.microsoft.com/manage/environments/> <br> For a Canadian environment: <https://canada.flow.microsoft.com/manage/environments/> <br>For an EMEA environment: <https://emea.flow.microsoft.com/manage/environments/> <br>For a GCC environment: <https://gov.flow.microsoft.us/manage/environments/> <br> For a GCC High environment: <https://high.flow.microsoft.us/manage/environments><br> For a DoD environment: <https://flow.appsplatform.us/manage/environments/><br>If your region is not listed here, navigate to [flow.microsoft.com](https://flow.microsoft.com) and copy the URL the page directs to from the browser.|
+|PowerApp Maker environment variable | The maker URL used by PowerApps for your cloud, including trailing slash. Here are examples:<br> For a US environment: <https://make.powerapps.com/> <br> For a GCC environment: <https://make.gov.powerapps.us/> <br>For a GCC High environment: <https://make.high.powerapps.us/> |
+|PowerApp Player environment variable | The player URL used by PowerApps for your cloud, including trailing slash. Here are examples:<br> For a US environment: <https://apps.powerapps.com/> <br> For a GCC environment: <https://apps.gov.powerapps.us/> <br>For a GCC High environment: <https://apps.gov.powerapps.us/> <br>For a DoD environment: <https://play.apps.appsplatform.us> |
+| TenantID | Your Azure Tenant ID.|
+
+## Create connections
+
+We recommend to create connections to all connectors used in the solution prior to importing the solution, this will make the setup experience faster.
+
+1. Navigate to [flow.microsoft.com](https://flow.microsoft.com/).
+1. Select your CoE environment and navigate to **Data > Connections > + New connection**.
+1. Create a connection for
+    - [Approvals](/connectors/approvals/)
+    - [Azure AD](/connectors/azuread/)
+    - [Microsoft Dataverse](/connectors/commondataserviceforapps/)
+    - [Microsoft Dataverse (legacy)](/connectors/commondataservice/)
+    - [Microsoft Teams](/connectors/teams/)
+    - [Office 365 Groups](/connectors/office365groups/)
+    - [Office 365 Outlook](/connectors/office365/)
+    - [Office 365 Users](/connectors/office365users/)
+    - [Power Apps for Admins](/connectors/powerappsforadmins/)
+    - [Power Apps for Makers](/connectors/powerappsforappmakers/)
+    - [Power Automate for Admins](/connectors/microsoftflowforadmins/)
+    - [Power Automate Management](/connectors/flowmanagement/)
+    - [Power Platform for Admins](/connectors/powerplatformforadmins/)
+    - [RSS](/connectors/rss/)
+    - [SharePoint](/connectors/sharepointonline/)
+    - [HTTP with Azure AD](/connectors/webcontents/)
+1. When you create the connection for HTTP with Azure AD enter the following into the Base Resource URL and Azure AD Resource URI (Application ID URI): [https://graph.microsoft.com](https://graph.microsoft.com) or [https://dod-graph.microsoft.us/](https://dod-graph.microsoft.us/) if you're in a DoD environment.
+
+     ![Establish HTTP with Azure AD.](media/httpazuread.png "Establish connections to activate your solution.")
+
+## Import the solution
+
+1. Download the CoE Starter Kit compressed file ([aka.ms/CoeStarterKitDownload](https://aka.ms/CoeStarterKitDownload)).
+
+    >[!IMPORTANT]
+    > **Extract the zip file** after downloading and before moving on to the next step. The CoE Starter Kit compressed file contains all solution components as well as non-solution aware components that make up the CoE Starter Kit.
+
+1. Import the solution
+    1. If [Installing to Production Environment](internal link) – use the solution file from the download called CenterOfExcellenceCoreComponents_x_x_x_xx_managed.zip.
+    1. If [Installing to Dataverse for Teams Environment](internal link) – use the solution file from the download called CenterOfExcellenceCoreComponentsTeams_x_x_x_xx_managed.zip.
+
+1. Update environment variable values with the values collected earlier[link]. The environment variables are used to store application and flow configuration data with data specific to your organization or environment. This means that you only have to set the value once per environment and it will be used in all necessary flows and apps in that environment. All the flows in the solution depend on all environment variables' being configured.
+1. The import can take up to 15 minutes to be completed.
+
+## Turn on child flows
+
+There are several child flows which will need to be turned on in this order:
+
+- HELPER – Send Email
+- HELPER – Maker Check
+- HELPER – CloudFlowOperations
+- HELPER – CanvasAppOperations
+- HELPER – ObjectOperations
+- CLEANUP HELPER – Check Deleted (Canvas Apps)
+- CLEANUP HELPER – Check Deleted (Cloud Flows)
+- CLEANUP HELPER – Check Deleted (Custom Connectors)
+- CLEANUP HELPER – Check Deleted (Model Driven Apps)
+- CLEANUP HELPER – Check Deleted (PVA)
+- CLEANUP HELPER – Power Apps User Shared With
+
+If you get an error turning on the flow, you may need to set the [run only users](TODO):
+
+## Activate setup flows
+
+The below flows support the inventory setup and need to be **turned on** before proceeding
+
+- Admin | Add Maker to Group
+- Admin | Excuse Support Envts from Governance Flows
+- Admin | Sync Template v3 Configure Emails
+- Command Center App >  Get M365 Service Messages
+- Command Center App > Initially Populate Bookmarks
+- DLP Editor > Parse impacted resources into CSV
+
+Ensure that the Admin | Sync Template v3 Configure Emails flow runs before moving on.
+
+### Modify the Command Center App > Get M365 Service Messages flow to use Azure KeyVault
+
+1. If you store your client ID and secret from [] in Azure KeyVault, you will need to update the Command Center App > Get M365 Service Messages flow
+1. Go to [flow.microsoft.com](https://flow.microsoft.com), select **Solutions**, and then open the **Center of Excellence - Core Components** solution to view the flows.
 1. Edit the **Command Center App >  Get M365 Service Messages** flow.
-
+1. Use the [Azure Key Vault connector](/connectors/keyvault/) to retrieve the client ID and secret in Azure Key Vault.
 1. Update the **List serviceAnnouncements from Graph** with your client ID and client secret.
     ![Update HTTP action with client ID and secret](media/commandcenter3.png "Update HTTP action with client ID and secret")
-
-    >[!NOTE]
-    > We recommend storing the client ID and secret in Azure Key Vault and using the [Azure Key Vault connector](/connectors/keyvault/) to retrieve them in the flow.
-
 1. **Save** this flow.
+
+## Activate the inventory flows
+
+The Admin \| Sync Template flows part of this solution crawl through all the resources stored in Microsoft Power Platform and make a copy of details in each resource (for example, apps and flows) to Dataverse (table definitions are provided in this solution). All apps and flows in the CoE Starter Kit rely on this, which means that the inventory flows must be configured for everything else to work. Most sync flows run daily, and some of the clean up flows run every two weeks.
+
+- Admin | Sync Template v3 (Connectors)
+- Admin | Sync Template v3 (Apps)
+- Admin | Sync Template v3 (Custom Connectors)
+- Admin | Sync Template v3 (Desktop Flow - Runs)
+- Admin | Sync Template v3 (Desktop flows)
+- Admin | Sync Template v3 (Flow Action Details)
+- Admin | Sync Template v3 (Flows)
+- Admin | Sync Template v3 (Model Driven Apps)
+- Admin | Sync Template v3 (Portals)
+- Admin | Sync Template v3 (PVA)
+- Admin | Sync Template v3 (Sync Flow Errors)
+- Admin | Sync Template v3
+- CLEANUP - Admin | Sync Template v3 (Check Deleted)
+- CLEANUP - Admin | Sync Template v3 (Connection Status)
+- CLEANUP - Admin | Sync Template v3 (Delete Bad Data)
+- CLEANUP - Admin | Sync Template v3 (Orphaned Makers)
+- CLEANUP - Admin | Sync Template v3 (Power Apps User Shared With)
+
+>![NOTE]
+> To load balance queries against Dataverse, the **Admin | Sync Template v3** implements a delay of 0-12 hours before starting to collect the inventory. This flow therefore may appear to be running for a long time.
 
 ## Set up Audit Logs solution
 
@@ -298,16 +210,29 @@ The CoE Power BI dashboard provides a holistic view with visualizations and insi
 
 ## Share apps with other admins
 
-The core components solution contains apps designed to give admins better visibility and overview of resources and usage in their environments. Share those apps with other Power Platform admins. Take a look at the [Admin - Command Center](core-components.md#admin---command-center) app which is your central place to launch all CoE Starter Kit apps from.
+The core components solution contains apps designed to give admins better visibility and overview of resources and usage in their environments.
+
+Share these apps with other Power Platform admins and assign them the **Power Platform Admin SR** security role:
+
+- Admin - Access this App
+- Admin - Access this Flow
+- Admin - Command Center
+- DLP Editor v2
+- Power Platform Admin View
+- Set App Permissions
+- Set Flow Permissions
+
+Take a look at the [Admin - Command Center](core-components.md#admin---command-center) app which is your central place to launch all CoE Starter Kit apps from.
 
 More information:
-<br>
-[Share a canvas app in Power Apps](/powerapps/maker/canvas-apps/share-app)<br>
+[Share a canvas app in Power Apps](/powerapps/maker/canvas-apps/share-app)
 [Publish and add an app to Teams](/powerapps/teams/publish-and-share-apps#publish-and-add-an-app-to-teams)
 
 ## Wait for flows to finish
 
-After the sync flows have finished running (depending on the number of environments and resources, this can take a few hours), you're ready to use the core components of the CoE Starter Kit.
+After the sync flows have finished running, you're ready to use many of the features of the CoE Starter Kit core solution.  
+
+The first run of the inventory can take a few hours depending on the number of environments and resources in your tenants. Future runs will be faster as they will only look at new and modified resources.
 
 **To check the status of a flow**
 
@@ -319,44 +244,29 @@ After the sync flows have finished running (depending on the number of environme
 
 ## Update environment variables
 
+Here is the full list of environment variables that impact the inventory sync flows, including environment variables with Default values.
+
 >[!IMPORTANT]
-> You don't have to complete this step during setup, just when you need to change the value of an environment variable that you configured during import. Re-start all flows after you change environment variables, to make sure the latest value is picked up.
+> You don't have to change the values during setup, just when you need to change the value of an environment variable that you configured during import or when you want to change a default value. Re-start all flows after you change environment variables, to make sure the latest value is picked up.
 
 Environment variables are used to store application and flow configuration data with data specific to your organization or environment.
 
-1. If you have installed the solution in a Production environment:
-   1. Go to [flow.microsoft.com](<https://flow.microsoft.com>).
-   1. On the left pane, select **Solutions**.
-   1. Select the **Default Solution**, and change the filter to show **Environment Variables**.
-   1. Select a variable that you want to update, and then configure its **Current Value**.
-
-1. If you have installed the solution in a Dataverse for Teams environment:
-   1. Go to [flow.microsoft.com](<https://flow.microsoft.com>).
-   1. On the left pane, select **Solutions**.
-   1. Select the **Common Data Service Default Solution**.
-   1. Select **+ Add > Environment Variables**.
-   1. Select the existing Environment Variables from the managed solution that you want to update.
-   1. Now, change the filter to show **Environment Variables**.
-   1. Select a variable that you want to update, and then configure its **Current Value**.
-
-    Update one of the following variables for the core components solution, and then select **Save**.
-
-    | Name | Description |
-    |------|---------------|
-    |Admin eMail |Admin eMailed with this solution, and copy the web link (to launch the app) and paste it into this variable. This environment variable is not used until you adopt the Developer Compliance Center.  |
-    |Also Delete from CoE | Recommend Yes here to delete objects from the CoE inventory when they are deleted from the tenant. No will keep a record that an app or flow existed in the past |
-    |Approval Admin | The email address used in flows to send approvals to admins; this cannot be a distribution list. |
-    | Community URL         | Link to your internal Microsoft Power Platform community (for example, Yammer or Teams).  |
-    | Developer Compliance Center         | Leave empty on Import and do the following to populated after set up of the [Governance components](setup-governance-components.md).<br> Navigate to the details page of the Developer Compliance Center (canvas app) included with this solution, and copy the web link (to launch the app) and paste it into this variable.  |
-    | eMail Header Style | the CSS / Style to use for eMails<br> Note a default is given so this will not appear on setup|
-    | Environment Request Admin App Url | Link to the **Admin - Power Platform Resouce RMS** canvas app included in this solution. Leave empty on Import and fill it in once the app is installed. <br> To do that, navigate to the details page of the **Admin - Power Platform Resouce RMS** (canvas app) included with this solution, and use the wek link (to launch the app).  |
-    | Exclude Default environment from Compliance Request flows | Set to Yes if you want to Exclude the Default environment from the Admin \| Compliance Details request flow. <br> Note a default of Yes is given so this will not appear on setup|
-    | FullInventory | Determines if you want to only update objects that have changed, or all objects. <br> Note a default of No is given so this will not appear on setup| 
-    |PowerApp Maker environment variable | The maker URL used by PowerApps for your cloud, including trailing slash. Here are examples:<br> For a US environment: <https://make.powerapps.com/> <br> For a GCC environment: <https://make.gov.powerapps.us/> <br>For a GCC High environment: <https://make.high.powerapps.us/> |
-    |PowerApp Player environment variable | The player URL used by PowerApps for your cloud, including trailing slash. Here are examples:<br> For a US environment: <https://apps.powerapps.com/> <br> For a GCC environment: <https://apps.gov.powerapps.us/> <br>For a GCC High environment: <https://apps.gov.powerapps.us/> |
-    |Power Automate environment variable | The URL used by flow for your region. Here are examples:<br> For a US environment: <https://us.flow.microsoft.com/manage/environments/> <br> For a Canadian environment: <https://canada.flow.microsoft.com/manage/environments/> <br>For an EMEA environment: <https://emea.flow.microsoft.com/manage/environments/> <br>For a GCC environment: <https://gov.flow.microsoft.us/manage/environments/> |
-    | Power Platform Maker Microsoft 365 Group | The Admin \| Welcome Email flow sends a welcome email to onboard new makers and adds them to a Microsoft 365 group. You can use this group to send communications to your makers or invite them to a Yammer or Teams group. Configure the group ID here.|
-    | ProductionEnvironment | Set to false if you are creating a dev type environment. This will allow some flows to set target users to the admin instead of object owners. <br> Note a default of Yes is given so this will not appear on setup|
-    | TenantID | Your Azure Tenant ID.|
+| Name | Description | Default Value |
+|------|---------------|------|
+|Admin eMail |Admin eMailed with this solution, and copy the web link (to launch the app) and paste it into this variable. This environment variable is not used until you adopt the Developer Compliance Center.  | n/a|
+| Admin eMail Preferred Language | The preferred language for the emails sent to the admin email alias, which is specified in theAdmin eMail environment variable. | en-US | 
+|Also Delete from CoE | When we run "Admin | Sync Template v2 (Check Deleted)", delete the items from CoE (yes) or just mark deleted (no)  | Yes |
+| Command Center - Application Client ID | (optional) Enter the application client ID from the [Create an Azure AD app registration to connect to Microsoft Graph](internal link) step above. Leave empty if you would like to use Azure KeyVault to store your client ID and secret. | n/a |
+| Command Center - Client Secret | (optional) Enter the application client secret from the [Create an Azure AD app registration to connect to Microsoft Graph](internal link) step above. Leave empty if you would like to use Azure KeyVault to store your client ID and secret. | n/a |
+| DelayInventory | If Yes, will run a delay step to assist with the Dataverse load balancing. Only turn to No for debugging. | Yes |
+| eMail Header Style | The CSS / Style to use for eMails | [Default CSS](https://docs.microsoft.com/power-platform/guidance/coe/code-samples/css/default-value-email-header-style) |
+| FullInventory | Determines if you want to only update objects that have changed, or all objects. Switching to Yes will cause the flows to inventory every single app/flow/etc in the tenant every day, and is not recommended for large tenants.  | No |
+| Is Teams Install | DO NOT EDIT. This is used to determine if this install is in a Production environment or Dataverse for Teams environment and is set for you on install. | No - Core solution, Yes - Core for Teams solution |
+| Power Platform Maker Microsoft 365 Group | Get the ID of the Microsoft 365 group which will contain all your Power Platform Makers. You will use this to communicate and share apps with them. It is needed for the inventory setup in the Admin | Add Maker to Group flow. Please refer to [What groups will you use](internal link to Before you Setup) | n/a |
+|Power Automate environment variable | The URL used by flow for your region. Here are examples:<br> For a US environment: <https://us.flow.microsoft.com/manage/environments/> <br> For a Canadian environment: <https://canada.flow.microsoft.com/manage/environments/> <br>For an EMEA environment: <https://emea.flow.microsoft.com/manage/environments/> <br>For a GCC environment: <https://gov.flow.microsoft.us/manage/environments/> | n/a |
+|PowerApp Maker environment variable | The maker URL used by PowerApps for your cloud, including trailing slash. Here are examples:<br> For a US environment: <https://make.powerapps.com/> <br> For a GCC environment: <https://make.gov.powerapps.us/> <br>For a GCC High environment: <https://make.high.powerapps.us/> | n/a |
+|PowerApp Player environment variable | The player URL used by PowerApps for your cloud, including trailing slash. Here are examples:<br> For a US environment: <https://apps.powerapps.com/> <br> For a GCC environment: <https://apps.gov.powerapps.us/> <br>For a GCC High environment: <https://apps.gov.powerapps.us/> | n/a |
+| ProductionEnvironment | Set to No if you are creating a development/test environment. This will allow some flows to set target users to the admin instead of object owners.| Yes |
+| TenantID | Your Azure Tenant ID.| n/a|
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
