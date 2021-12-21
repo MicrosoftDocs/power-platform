@@ -308,12 +308,12 @@ Enter your city and zip code at the prompt to get today's weather forecast from 
 ## Disable asynchronous responses from flows
 Power Virtual Agents doesn't support Power Automate flows that return values [asynchronously](/power-automate/guide-staff-through-common-tasks-processes#when-to-use-workflows). When creating a new flow from within Power Virtual Agents, this behavior is disabled by default.
 
-<!-- TODO: link to error code page when it exists -->
+<!-- TODO: link to 3000 error code page when it exists -->
 Flows that have the Asynchronous Response feature enabled may cause an error when your bot tries to run the flow. Instead of running the flow, the bot will say "Something unexpected happened. We're looking into it. Error code: 3000.".
 
 If you've enabled [Asynchronous Response](/azure/connectors/connectors-native-http#asynchronous-request-response-behavior), you'll need to disable it for the bot to work properly when it runs the flow:
 
-<!-- At the time of writing, steps to find the async response setting didn't exist in PA docs. If this has changed, please remove these steps and replace with the relevant link. -->
+<!-- At the time of writing, steps to find the async response setting (specifically in the PVA step/action) didn't exist in PA docs. If this has changed, please remove these steps and replace with the relevant link. -->
 **To disable Asynchronous Response**
 
 1. [Locate and modify your flow](#modify-a-flow-on-the-power-automate-portal).
