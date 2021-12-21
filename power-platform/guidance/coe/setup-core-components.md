@@ -120,7 +120,7 @@ We recommend to create connections to all connectors used in the solution prior 
 
      ![Establish HTTP with Azure AD.](media/httpazuread.png "Establish connections to activate your solution.")
 
-## Import the solution
+## Import the Core components solution
 
 1. Download the CoE Starter Kit compressed file ([aka.ms/CoeStarterKitDownload](https://aka.ms/CoeStarterKitDownload)).
 
@@ -152,7 +152,7 @@ There are several child flows which will need to be turned on in this order:
 
 If you get an error turning on the flow, you may need to set the [run only users](TODO):
 
-## Activate setup flows
+## Turn on setup flows
 
 The below flows support the inventory setup and need to be **turned on** before proceeding
 
@@ -175,7 +175,7 @@ Ensure that the Admin | Sync Template v3 Configure Emails flow runs before movin
     ![Update HTTP action with client ID and secret](media/commandcenter3.png "Update HTTP action with client ID and secret")
 1. **Save** this flow.
 
-## Activate the inventory flows
+## Turn on inventory flows
 
 The Admin \| Sync Template flows part of this solution crawl through all the resources stored in Microsoft Power Platform and make a copy of details in each resource (for example, apps and flows) to Dataverse (table definitions are provided in this solution). All apps and flows in the CoE Starter Kit rely on this, which means that the inventory flows must be configured for everything else to work. Most sync flows run daily, and some of the clean up flows run every two weeks.
 
@@ -242,7 +242,7 @@ The first run of the inventory can take a few hours depending on the number of e
 
 1. View **Runs**.
 
-## Update environment variables
+## All environment variables
 
 Here is the full list of environment variables that impact the inventory sync flows, including environment variables with Default values.
 

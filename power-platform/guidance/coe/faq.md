@@ -71,9 +71,19 @@ The following sections describe limitations for some components.
 1. Select **Import**.
 1. Once the import is complete, your solution will be available by choosing **Installed apps**. Select **See all** to see all tables, apps and flows part of the solution.
 
+## Set flow run only users properties
+
+1. Remove [unmanged layers](setup.md#installing-updates) for all flows.
+1. Go to the details page and click the **Run only users** edit button
+![Find setting for run only users.](media/runonlyusersgov1.png "Find setting for run only users")
+1. You will see all the connections in the child flow. For each one, change the value to **Use this connection (userPrincipalName\@company.com)**.
+1. If there is no connection for any of the connectors, go to **Data** > **Connections**, and create one for the connector.
+![Configure run only users.](media/runonlyusersgov2.png "Configure run only users")
+1. Once you have updated all run only users, you can turn on the child flow.
+
 ## Running a full inventory
 
-The sync flows in the Core Component solution will only update resources that have changed since the last run. After an upgrade, you will only see the benefits of bug fixes or changes when you run a full inventory sync: 
+The sync flows in the Core Component solution will only update resources that have changed since the last run. After an upgrade, you will only see the benefits of bug fixes or changes when you run a full inventory sync:
 
 1) Set the value of the **Full inventory** environment variable to *Yes* (Learn more: [update environment variables](setup-core-components.md#update-environment-variables)).
 1) Turn all flows in Core off and back on (note this step is temporary while we await a fix to a caching bug in flow).
@@ -81,9 +91,24 @@ The sync flows in the Core Component solution will only update resources that ha
 1) Set the **Full inventory** environment variable back to *No*.
 1) Turn all flows in Core off and back on
 
-## Updating Environment Variables
+## Update Environment Variables
 
-You cannot update the values for environment variables from within the solution.
+The following limitations apply when updating environment variables:
+
+- You cannot update the values for environment variables from within the imported solution.
+- You need to always add/update a Current value, not the Default value, because the Default value will be overwritten when you install an upgrade.
+- Environment variables are cached in cloud flows until the flow is reset (example: turn the cloud flow off and back on).
+
+To update Environment Variables, you can use the [Admin - Command Center](core-components.md#admin---command-center)
+
+1. Go to [make.powerapps.com](https://make.powerapps.com) and select your CoE environment
+1. Open the **Admin - Command Center** app.
+1. Select the tool icon and update the current value.
+
+>[!NOTE]
+>After changing an environment variable value, you will need to turn on and off all flows using that environment variable to make sure the flow uses the latest value.
+
+If you are not using the [Admin - Command Center](core-components.md#admin---command-center)
 
 To update Environment Variables:
 
@@ -101,6 +126,41 @@ To update Environment Variables:
    1. Select the existing Environment Variables from the managed solution that you want to update.
    1. Now, change the filter to show **Environment Variables**.
    1. Select a variable that you want to update, and then configure its **Current Value**.
+
+## Share an app from a Production environment
+
+1. Go to [make.powerapps.com](https://make.powerapps.com) and select your CoE environment.
+1. Select **... > Share** on the app you want to share.
+1. Select the Dataverse security role - **Power Platform Admin SR** when sharing an app with admins, **Power Platform Maker SR** when sharing an app with your makers, ****Power Platform User SR** when sharing an app with end users.
+1. Select **Share**.
+
+## Share an app from a Dataverse for Teams environment
+
+1. Open to the Power Apps app in Teams > Build > Select the team you have installed the CoE Starter Kit in > **Share with colleagues**. You must be a team owner to see this option.
+1. Search for and select the security group you want to share the apps and tables with.
+1. Select the apps you want to share with members of this security group.
+1. Select **Save**.
+1. Select **Installed apps**.
+1. Select **See all**.
+1. Select **Tables** from the left pane.
+1. Select the table you want to manage > **Manage Permissions**.
+1. Assign **[table permissions](/powerapps/teams/set-perms-and-share#assign-table-permissions)** to the security group. The level of permission will depend on the app you are sharing. Perform this step for all tables used by the app you are sharing.
+1. To access the app, colleagues with access can go to Microsoft Teams > **Apps** > **Built by your colleagues** and select the app from there.
+1. Note that apps are only accessible from within Microsoft Teams.
+
+## Get a Power Apps URL from a Production environment
+
+1. Go to [make.powerapps.com](https://make.powerapps.com) and select your CoE environment.
+1. Select **... > Details**.
+1. Select the **web link**.
+
+## Add apps to Microsoft Teams
+
+1. Open to the Power Apps app in Teams > Build > Select the team you have installed the CoE Starter Kit in > **Installed apps**.
+1. Select **Apps** and select **Edit** for the app you want to add to teams.
+1. Select **Publish to Teams > Next**.
+1. Select **Add to a Channel > Save and close**.
+1. If you would like to save the app URL, navigate to that channel in Microsoft Teams, open the app and select **Go to website**.
 
 ## Timeouts in the Admin | Sync Template v3
 
