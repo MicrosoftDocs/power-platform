@@ -20,7 +20,7 @@ search.app:
 
 # Set up Archive components
 
-This article will help you to setup the Archive components of the Governance solution of the CoE Starter Kit.  
+This article will help you to setup the Archive components of the Governance solution.
 
 >[!NOTE]
 >Although the flows are called **archive** flows, they do not automatically archive apps and flows. Instead, they ask makers to backup and archive their apps and flows.

@@ -1,5 +1,5 @@
 ---
-title: "Set up Dataverse for Teams environment management | MicrosoftDocs"
+title: "Set up clean up for orphaned objects | MicrosoftDocs"
 description: "Learn how to set up the governance components of the CoE Starter Kit"
 author: manuelap-msft
 manager: devkeydet
@@ -18,11 +18,11 @@ search.app:
   - Powerplatform
 ---
 
-# Set up Dataverse for Teams environment management
+# Set up clean up for orphaned objects
 
-This article will help you to setup the Dataverse for Teams environment management components of the Governance solution. Learn more: [Microsoft Dataverse for Teams environment management](teams-governance.md)
+This article will help you to setup the clean up for orphaned objects.
 
-This set of functionality allows you to monitor new Dataverse for Teams environments.
+This set of functionality allows you to identify objects where the maker has left the organization, and ask managers to maintain permissions of their former employees.
 
 >[!IMPORTANT]
 >This article assumes you have [installed the governance components solution](before-setup-gov.md) and you have your environment setup, and are logged in with the correct identity.
@@ -31,7 +31,7 @@ This set of functionality allows you to monitor new Dataverse for Teams environm
 
 Turn on these flows which are installed as part of the **Governance components** solution:
 
-- Microsoft Teams Admin | Weekly Clean Up of Microsoft Teams environments 
-- Microsoft Teams Admin | Ask for Business Justification when Microsoft Teams environment is created
+- Request Orphaned Objects Reassigned (Child)
+- Request Orphaned Objects Reassigned (Parent) 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
