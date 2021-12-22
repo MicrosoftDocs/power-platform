@@ -52,14 +52,14 @@ The Setup Guide is structured into seven main sections.
 
 ### Dataverse environments
 
-The application will manage deploying solutions from Development to Validation to Testing and to Production. The environment into which you're deploying the ALM Accelerator app will need to be created with a Dataverse database. Additionally, any target environment requires a Dataverse database in order to deploy your solutions.
+The AA4PP solution must be installed into a Power Platform environment with a Dataverse database. From this environment the AA4PP application can be used to deploy solutions from Development to Validation to Testing and to Production. All of these environments will also require a Dataverse database in order to deploy your solutions.
 
 > [!NOTE]
 > Currently the ALM Accelerator is not compatible with Dataverse for Teams. Both the AA4PP App and the associated AzDO pipelines assume the full version of Dataverse is being used in all environments.
 
 You'll need to **create an environment in which to set up the AA4PP Solution**. It's recommended to install AA4PP in the same environment as other CoE Starter Kit Solutions. For more information about how to decide on the best strategy for your organization, see [Establishing an Environment Strategy for Microsoft Power Platform](/power-platform/guidance/adoption/environment-strategy) and [Environment strategy for ALM](/power-platform/alm/environment-strategy-alm).
 
-### DevOps environment
+### DevOps organization
 
 This solution uses DevOps for source control and deployments (pipelines). You can sign up for DevOps for free for up to five users on the [DevOps](https://azure.microsoft.com/services/DevOps/) site.
 
@@ -78,7 +78,7 @@ For the AA4PP Canvas App to work, the following connectors must be available to 
 - [Dataverse (Legacy)](/connectors/commondataservice/)
 - [Power Apps for Makers](/connectors/powerappsforappmakers/)
 - [HTTP with Azure AD](/connectors/webcontents/) (with endpoint access to <https://graph.microsoft.com>)
-- ALM Accelerator Custom DevOps
+- ALM Accelerator Custom DevOps (this connector will be created as part of the [AA4PP solution import](#importing-the-solution-and-configuring-the-app))
 
 ## Foundational setup
 
@@ -142,7 +142,7 @@ The ALM Accelerator uses several DevOps extensions, including some third-party E
 1. Go to <https://dev.azure.com> and select **Organization settings**.
 1. Select **General** > **Extension**.
 1. Install the following Extensions.
-   - **Power Platform Build Tools (required)**: This extension contains the first-party build tasks for Dataverse. (<https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.PowerPlatform-BuildTools>)
+   - **Power Platform Build Tools (required)**: This extension contains the first-party build tasks for Power Platform. (<https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.PowerPlatform-BuildTools>)
 
    - **Replace Tokens (required)**: This extension is used by the pipelines to replace tokens in configuration files in order to be able to store secure values in private variables configured for a pipeline. (<https://marketplace.visualstudio.com/items?itemName=qetza.replacetokens> | <https://github.com/qetza/vsts-replacetokens-task>)
 
