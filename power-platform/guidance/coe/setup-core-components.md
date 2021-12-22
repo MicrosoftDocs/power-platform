@@ -71,7 +71,7 @@ We recommend to create connections to all connectors used in the solution prior 
     - [RSS](/connectors/rss/)
     - [SharePoint](/connectors/sharepointonline/)
     - [HTTP with Azure AD](/connectors/webcontents/)
-1. When you create the connection for HTTP with Azure AD enter the following into the Base Resource URL and Azure AD Resource URI (Application ID URI): [https://graph.microsoft.com](https://graph.microsoft.com) or [https://dod-graph.microsoft.us/](https://dod-graph.microsoft.us/) if you're in a DoD environment.
+1. When you create the connection for HTTP with Azure AD enter the following into the Base Resource URL and Azure AD Resource URI (Application ID URI): [https://graph.microsoft.com](https://graph.microsoft.com) for commercial tenants. If your tenant is in GCC, GCC High or DoD check your [service root endpoint for Microsoft Graph](/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints).
 
      ![Establish HTTP with Azure AD.](media/httpazuread.png "Establish connections to activate your solution.")
 
@@ -172,6 +172,15 @@ Ensure that the Admin | Sync Template v3 Configure Emails flow runs before movin
 1. Use the [Azure Key Vault connector](/connectors/keyvault/) to retrieve the client ID and secret in Azure Key Vault.
 1. Update the **List serviceAnnouncements from Graph** with your client ID and client secret.
     ![Update HTTP action with client ID and secret](media/commandcenter3.png "Update HTTP action with client ID and secret")
+1. **Save** this flow.
+
+### Modify the Command Center App > Get M365 Service Messages flow for a GCC High or DoD tenant
+
+1. If your CoE Starter Kit is installed in a commercial or GCC tenant, you can skip this step.
+1. If your CoE Starter Kit is installed in a GCC High or DoD tenant, update the **Authority** the HTTP request runs with.
+1. Go to [flow.microsoft.com](https://flow.microsoft.com), select **Solutions**, and then open the **Center of Excellence - Core Components** solution to view the flows.
+1. Edit the **Command Center App >  Get M365 Service Messages** flow.
+1. Update the **List serviceAnnouncements from Graph** action and change the **Authority** to https://login.microsoftonline.us/ for a GCC High or DoD tenant.
 1. **Save** this flow.
 
 ## Turn on inventory flows

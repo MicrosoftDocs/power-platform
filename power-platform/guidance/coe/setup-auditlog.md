@@ -96,9 +96,10 @@ Now you'll configure and set up a custom connector that uses the [Office 365 Man
 1. Leave the **1. General** page as-is, and then select **2. Security**.
     
    >[!IMPORTANT]
-   > - If your tenant is a GCC tenant, change the host to https://manage-gcc.office.com.
-   > - If your tenant is a GCC high tenant, change the host to https://manage.office365.us.
-   > - If your tenant is a DoD tenant, change the host to https://manage.protection.apps.mil.
+   >
+   > - If your tenant is a GCC tenant, change the host to manage-gcc.office.com.
+   > - If your tenant is a GCC high tenant, change the host to manage.office365.us.
+   > - If your tenant is a DoD tenant, change the host to manage.protection.apps.mil.
    >
    > More information: [Activity API operations](/office/office-365-management-api/office-365-management-activity-api-reference?preserve-view=true&view=o365-worldwide#activity-api-operations)
 
@@ -180,8 +181,8 @@ A Power Automate flow uses the custom connector, queries the audit log daily, an
     ![Import the CoE audit log components solution.](media/coe-custom2.png "Import the CoE audit log components solution")
 
 1. Open the **Center of Excellence – Audit Log solution**.
-1. [Remove the unmanaged layer](setup.md#installing-updates) from the **Admin \| \[Child\] Admin | Sync Logs**.
-1. Select the **Admin \| \[Child\] Admin | Sync Logs**.
+1. [Remove the unmanaged layer](setup.md#installing-updates) from the **\[Child\] Admin | Sync Logs**.
+1. Select the **\[Child\] Admin | Sync Logs**.
 1. Edit the **Run only users** settings.
 
    ![Child flow - run only users.](media/coe49.png "Child flow - run only users")

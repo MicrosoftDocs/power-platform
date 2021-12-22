@@ -94,9 +94,7 @@ Now we wil load the initial data from SharePoint Online into Dataverse using a D
 
    ![Select Next without changing any default settings.](media/MakerJourneyDataSetup7.png "Select Next without changing any default settings")
 
-1. Select **Create** to create the Dataflow.
-
-   ![Create the dataflow.](media/MakerJourneyDataSetup8.png "Create the dataflow")
+1. Select **Publish now** to create the Dataflow.
 
 1. Wait while the Dataflow refresh is in progress.
 
