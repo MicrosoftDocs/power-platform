@@ -54,12 +54,12 @@ Flows typically use variables to input and output information. The variables can
 1. In the node selection window, select **Call an action**, and then select **Create a flow**. 
 
 
-    ![Create a new Power Automate flow.](media/UseCreateFlowOption.jpg)
+    :::image type="content" source="media/UseCreateFlowOption.jpg" alt-text="Create a new Power Automate flow." border="false":::
 
 
 Using the **Create a flow** option opens a starter flow template in the [Power Automate portal](https://flow.microsoft.com/) in a separate tab.
 
-![Power Automate flow template.](media/PVAConnectorTemplate.JPG)
+:::image type="content" source="media/PVAConnectorTemplate.JPG" alt-text="Power Automate flow template." border="false":::
 
 >[!NOTE]
 >The Power Automate portal automatically opens in the same environment as the bot (using the same user credentials).
@@ -68,12 +68,12 @@ This template is an example of a flow that can be used by bots. To be suitable f
 
 - Flow trigger:  **Power Virtual Agents**  
 
-    ![Power Virtual Agents trigger.](media/PVAConnectorTrigger.JPG)
+    :::image type="content" source="media/PVAConnectorTrigger.JPG" alt-text="Power Virtual Agents trigger." border="false":::
 
 
 - Response action:  **Power Virtual Agents**  
 
-    ![Power Virtual Agents response.](media/PVAConnectorResponse.JPG)
+    :::image type="content" source="media/PVAConnectorResponse.JPG" alt-text="Power Virtual Agents response." border="false":::
 
 ## Input and output parameters
 
@@ -103,40 +103,40 @@ The following types are not supported:
 To specify a flow to accept input parameters from a bot, select the **Add an input** option in the **Power Virtual Agents trigger** user interface, and then select the type a - `string`, `number`, or a `boolean`.
 
 
-![Power Virtual Agents trigger input types.](media/PVAConnector_Inputs_1.JPG)
+:::image type="content" source="media/PVAConnector_Inputs_1.JPG" alt-text="Power Virtual Agents trigger input types." border="false":::
 
 
 For example, you can select **Text** and **Number** to add the following input parameters to the flow:
 - **String_Input** of type `string`
 - **Number_Input** ot type `number` 
 
-![Power Virtual Agents trigger inputs.](media/PVAConnector_Inputs_2.JPG)
+:::image type="content" source="media/PVAConnector_Inputs_2.JPG" alt-text="Power Virtual Agents trigger inputs." border="false":::
 
 ### Output parameters
 
 To return output parameters to the bot that can be a `string`, `number`, or a `boolean`, select **Add an output** option in **Power Virtual Agents response** user interface, and then select the type for the output.
 
 
-![Power Virtual Agents response output types.](media/PVAConnector_Output_1.JPG)
+:::image type="content" source="media/PVAConnector_Output_1.JPG" alt-text="Power Virtual Agents response output types." border="false":::
 
 
 For example, you can select **Text** and **Number** to add the following output parameters to the flow and assign return values for them.
 - **String_Output** of type `string`
 - **Number_Output** ot type `number`
 
-![Power Virtual Agents response outputs.](media/PVAConnector_Output_2.JPG)
+:::image type="content" source="media/PVAConnector_Output_2.JPG" alt-text="Power Virtual Agents response outputs." border="false":::
 
 This example creates a fully functional flow that accepts two parameters, a `string` and a `number`, and returns them to a bot as outputs. 
 
 Select **Save** to save your new flow.
 
-![Power Automate flow template - Save.](media/PVAConnectorTemplate_SAVE.jpg)
+:::image type="content" source="media/PVAConnectorTemplate_SAVE.jpg" alt-text="Power Automate flow template - Save." border="false":::
 
 
 Your flow is saved to the **Default Solution** under the **Solutions** tab on the Power Automate portal.
 
 
-![Power Automate flow template - Default Solution.](media/default-solution.png)
+:::image type="content" source="media/default-solution.png" alt-text="Power Automate flow template - Default Solution." border="false":::
 
 
 
@@ -146,7 +146,7 @@ All flows created from the Power Virtual Agents authoring canvas are saved in a 
 
 In Power Virtual Agents, you can now see this new flow on the list of available actions when you use the **Call an action node** in the authoring canvas.
 
-![New flow shows up in Action picker.](media/FlowInActionPicker.png)
+:::image type="content" source="media/FlowInActionPicker.png" alt-text="New flow shows up in Action picker." border="false":::
 
 
 
@@ -161,26 +161,26 @@ To be available to your bots, flows must be stored in a solution in Power Automa
 
 1. To create a new solution, select **New solution**.
 
-    ![Create a solution.](media/NewSolution.jpg)
+    :::image type="content" source="media/NewSolution.jpg" alt-text="Create a solution." border="false":::
 
 
 1. Give your new solution a name, select **CDS Default Publisher** in the **Publisher** field, enter a **Version** number, and then select **Create**. 
 
-    ![Save a new solution.](media/NewSolution_details.jpg)
+    :::image type="content" source="media/NewSolution_details.jpg" alt-text="Save a new solution." border="false":::
 
 
 1. On the **Solutions** tab, go to the solution you want to use. Select **Add existing** to add a flow.
 
-    ![Add existing menu.](media/AddExistingFlow.jpg)
+    :::image type="content" source="media/AddExistingFlow.jpg" alt-text="Add existing menu." border="false":::
 
 
 1. On the **Add existing flow** page, select the **From solutions** tab, and then select your flow. Select **Add** to add your flow to the solution.
 
-    ![Add flow to a solution.](media/move-flow-from-solution.png)
+    :::image type="content" source="media/move-flow-from-solution.png" alt-text="Add flow to a solution." border="false":::
     
    To move a flow from **My flows** tab to a solution, select the **Outside solutions** option. Select **Add** to add your flow to the solution.
 
-    ![Add flow from outside solutions.](media/AddExistingFlow_details.jpg)
+    :::image type="content" source="media/AddExistingFlow_details.jpg" alt-text="Add flow from outside solutions." border="false":::
     
 
 ## Modify a flow on the Power Automate portal
@@ -189,19 +189,19 @@ You can rename and modify your flow on the Power Automate portal. For example, t
 
 1. In Power Virtual Agents, you can open a flow by using the flow's **View flow details** link on the list of available actions when you use the **Call an action node** in the authoring canvas.
 
-    ![Modify a flow from Action Picker.](media/ModifyFlowInPicker.png)
+    :::image type="content" source="media/ModifyFlowInPicker.png" alt-text="Modify a flow from Action Picker." border="false":::
 
     If you want to update a flow that is already used in your dialog, the same **View flow details** link is available directly in the Action node.
  
-    ![Modify a flow from Action node.](media/ModifyFlowInAction.png)
+    :::image type="content" source="media/ModifyFlowInAction.png" alt-text="Modify a flow from Action node." border="false":::
  
     Using the flow's **View flow details** link launches the Power Automate portal in a separate browser tab, and opens the flow in a **Details** page where you can modify it using the **Edit** command.
 
-    ![Edit your flow using the Details page.](media/FlowEditDetailsPage.png)
+    :::image type="content" source="media/FlowEditDetailsPage.png" alt-text="Edit your flow using the Details page." border="false":::
 
     If you want to open a flow on the Power Automate portal, go to the **Solutions** tab and then open your flow's solution. Use the flow's **Edit menu** to open the flow for editing.
 
-    ![Open your flow for editing.](media/EditFlow.jpg)
+    :::image type="content" source="media/EditFlow.jpg" alt-text="Open your flow for editing." border="false":::
 
     
 1.  Rename the flow to **Get weather forecast** and then add the following flow input parameters to **Power Virtual Agents** trigger:
@@ -210,21 +210,21 @@ You can rename and modify your flow on the Power Automate portal. For example, t
     - Zipcode (Number)
 
 
-    ![Add inputs to the flow.](media/RenameFlow.jpg)
+    :::image type="content" source="media/RenameFlow.jpg" alt-text="Add inputs to the flow." border="false":::
 
    
 
 1. Choose **Add an action** to create a new action below the **Power Virtual Agents** trigger.
 
-    ![Add flow action.](media/AddAction.jpg)
+    :::image type="content" source="media/AddAction.jpg" alt-text="Add flow action." border="false":::
 
 1. Enter **MSN weather** into the search box, and then select the **Get forecast for today** action from the list.
 
-    ![Add Get forecast action.](media/AddMSNWeather.jpg)
+    :::image type="content" source="media/AddMSNWeather.jpg" alt-text="Add Get forecast action." border="false":::
 
 1. A new **MSN Weather Connector** is added to the flow. Under **Location**, select **Add dynamic content**. Select **City** and **Zipcode** from the list. 
 
-    ![Pass flow's input parameters to MSN Weather connector as location.](media/AddLocationForMSN.jpg)
+    :::image type="content" source="media/AddLocationForMSN.jpg" alt-text="Pass flow's input parameters to MSN Weather connector as location." border="false":::
 
 
 1. In the response node **Return value(s) to Power Virtual Agents**, add the output parameters that you want to return to the bot. **Save** your flow. 
@@ -234,7 +234,7 @@ You can rename and modify your flow on the Power Automate portal. For example, t
     - chance_of_rain (Number)
 
 
-    ![Add dynamic variables to the flow's response.](media/AddDynamicVariables.jpg)
+    :::image type="content" source="media/AddDynamicVariables.jpg" alt-text="Add dynamic variables to the flow's response." border="false":::
 
 
 This flow is now ready to be used in your bots.
@@ -261,21 +261,21 @@ These instructions use adding weather information to a flow as an example. If yo
 
 1. Go to the **Authoring canvas** for the new topic.
 
-    ![Create a new Topic.](media/CreateTopic.jpg)
+    :::image type="content" source="media/CreateTopic.jpg" alt-text="Create a new Topic." border="false":::
 
 1. By default, a message node is created. Enter **I can help you with that** into the node, and then select the plus (**+**) button under it to add a new node. 
 
-    ![Screenshot of adding a node.](media/handoff-add-node.png)
+    :::image type="content" source="media/handoff-add-node.png" alt-text="Screenshot of adding a node." border="false":::
 
 1. Add two new **Ask a question** nodes to ask users for the **City (String)** and **Zipcode (Number)** inputs.
 
 
-    ![Add Topic Dialog questions.](media/TopicDialogQuestions.jpg)
+    :::image type="content" source="media/TopicDialogQuestions.jpg" alt-text="Add Topic Dialog questions." border="false":::
 
 
 1. Select the plus (**+**) button under the question nodes to add a new node. In the node selection window, select **Call an action**, and then select the flow you created earlier called **Get weather forecast**. 
 
-    ![Call action.](media/SelectFlowGetWeatherForecast.png)
+    :::image type="content" source="media/SelectFlowGetWeatherForecast.png" alt-text="Call action." border="false":::
 
 
 1. Map the flow input blocks to the output variables from the question nodes. **City (text)** gets its value from `Var1 (text)` and **Zipcode (number)** gets its value from `Var2 (number)`.
@@ -286,7 +286,7 @@ These instructions use adding weather information to a flow as an example. If yo
     Chance of rain is `{x}chance_of_rain`%**
 
 
-    ![Input the variables.](media/ActionNodeGetWeatherForecast.png)
+    :::image type="content" source="media/ActionNodeGetWeatherForecast.png" alt-text="Input the variables." border="false":::
 
 
 1. Select **Save** to save your topic. 
@@ -303,7 +303,7 @@ In the **Test chat** pane, start a conversation with the bot by typing in a trig
 
 Enter your city and zip code at the prompt to get today's weather forecast from the bot.
 
-![Test Dialog.](media/GetWeatherE2E.png)
+:::image type="content" source="media/GetWeatherE2E.png" alt-text="Test Dialog." border="false":::
 
 ## Disable asynchronous responses from flows
 Power Virtual Agents doesn't support Power Automate flows that return values [asynchronously](/power-automate/guide-staff-through-common-tasks-processes#when-to-use-workflows). When creating a new flow from within Power Virtual Agents, this behavior is disabled by default.
@@ -321,11 +321,11 @@ If you've enabled the Asynchronous Response, you'll need to disable it for the b
    
 1. Next to the name of the flow, select the three dots, and then select **Settings**.
    
-    ![Open step settings.](media/advanced-flow/async1.png)
+    :::image type="content" source="media/advanced-flow/async1.png" alt-text="Open step settings.":::
 
 1. Set **Asynchronous Response** to **Off**, and then select **Done**.
    
-    ![Disable asynchronous response.](media/advanced-flow/async2.png)
+    :::image type="content" source="media/advanced-flow/async2.png" alt-text="Disable asynchronous response.":::
 
 ## Troubleshoot your bot
 
@@ -336,21 +336,21 @@ While testing your bot in the **Test chat** pane, you can use the **Save snapsho
 
 1. At the top of the **Test chat** pane, select the menu icon (three vertical periods) and then **Save snapshot**.
 
-    ![Save snapshot.](media/save-snapshot.png)
+    :::image type="content" source="media/save-snapshot.png" alt-text="Save snapshot.":::
 
 2. In the window that appears, select **Save**.
 
-    ![Save snapshot message.](media/save-snapshot-window.png)
+    :::image type="content" source="media/save-snapshot-window.png" alt-text="Save snapshot message.":::
 
 3. The bot's content and conversational diagnostics will be saved in a .zip archive file called *DSAT.zip*.
 
-    ![Conversational diagnostics archive.](media/dsat.png)
+    :::image type="content" source="media/dsat.png" alt-text="Conversational diagnostics archive.":::
 
 4. The *DSAT.zip* file contains two files: *botContent.json* and *dialog.json*. 
 
     1. *dialog.json* contains conversational diagnostics, including detailed descriptions of errors.
 
-        ![Conversational diagnostics file.](media/conversation-file.png)
+        :::image type="content" source="media/conversation-file.png" alt-text="Conversational diagnostics file.":::
 
     1. *botContent.json* contains the bot's topics and other content, including entities and variables used in the bot.
 
@@ -358,7 +358,7 @@ While testing your bot in the **Test chat** pane, you can use the **Save snapsho
 You can help us improve Power Virtual Agents by flagging issues with the **Flag an issue** command on the test bot pane. This submits your conversation ID to Microsoft, which is a unique identifier that Microsoft uses to troubleshoot the issue of the conversation. Other information, such as that in the *DSAT.zip* file, is not sent when you flag an issue.
 
 
-![Flag an issue.](media/flag-issue.png)
+:::image type="content" source="media/flag-issue.png" alt-text="Flag an issue.":::
 
 
 All information collected is anonymous and will be used to help improve bot quality.

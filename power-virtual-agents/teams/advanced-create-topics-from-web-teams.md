@@ -65,13 +65,13 @@ After the extraction is complete, you'll be shown the suggested topics for furth
 
 3. If it's the first time you're getting suggestions, the list of suggested topics will be blank. A link to **Get started** or **Learn more** appears instead.
 
-    ![An empty Topics page, with a link to Get started or Learn more.](media/suggested-web-get-teams.png "An empty Topics page, with a link to Get started or Learn more")
+    :::image type="content" source="media/suggested-web-get-teams.png "An empty Topics page, with a link to Get started or Learn more"" alt-text="An empty Topics page, with a link to Get started or Learn more.":::
 
 4. Select **Get started** or **Suggest topics**. 
 
-5. Enter each webpage or file you want to extract content from, and then select **Add**. The URLs must be secure (they must start with *https://*). If you add a page by mistake, you can remove it by selecting **Delete** ![Delete.](media/delete-suggested-topic-teams.png).
+5. Enter each webpage or file you want to extract content from, and then select **Add**. The URLs must be secure (they must start with *https://*). If you add a page by mistake, you can remove it by selecting **Delete** :::image type="content" source="media/delete-suggested-topic-teams.png" alt-text="Delete." border="false":::.
 
-    ![The Suggest topics page, where you enter URLs to extract suggested topics from.](media/suggested-web-wizard-teams.png "The Suggest topics page,where you enter URLs to extract suggested topics from")
+    :::image type="content" source="media/suggested-web-wizard-teams.png "The Suggest topics page,where you enter URLs to extract suggested topics from"" alt-text="The Suggest topics page, where you enter URLs to extract suggested topics from." border="false":::
 
 7. When you're done adding pages, select **Start**. The message "Getting your suggestions. This may take several minutes" appears at the top of the screen while the extraction is in progress.
 
@@ -89,7 +89,7 @@ Now the suggested topics will appear. These were all taken from the links you su
 
 
 
-![The Suggested tab on the Topics page lists each topic by name, trigger phrase, source, and date it was received.](media/suggested-web-topics-teams.png "The Suggested tab on the Topics page lists each topic by name, trigger phrase, source, and date it was received")
+:::image type="content" source="media/suggested-web-topics-teams.png "The Suggested tab on the Topics page lists each topic by name, trigger phrase, source, and date it was received"" alt-text="The Suggested tab on the Topics page lists each topic by name, trigger phrase, source, and date it was received." border="false":::
 
 
 ## Single-turn and multi-turn topic suggestions
@@ -130,14 +130,14 @@ You can also delete or add the suggestion without opening the preview:
 1. Hover over the name of the suggested topic you want to add or delete. 
 
 1. To delete, select the trashcan icon.
-1. To add the topic to your bot, select the **Add to topics** icon ![Add to topics.](media/add-to-topics-teams.png). You won't see a preview of the topic, and the topic will be automatically moved to the list of "Existing" topics.
+1. To add the topic to your bot, select the **Add to topics** icon :::image type="content" source="media/add-to-topics-teams.png" alt-text="Add to topics." border="false":::. You won't see a preview of the topic, and the topic will be automatically moved to the list of "Existing" topics.
 
 
-    ![An up arrow icon next to the title of a topic.](media/suggested-web-quick-teams.png)
+    :::image type="content" source="media/suggested-web-quick-teams.png" alt-text="An up arrow icon next to the title of a topic." border="false":::
     
 2. You can also add or delete multiple topic suggestions at a time. If you select multiple rows, you'll see options to **Add to topic** or **Delete**.
 
-    ![The list has three items selected.](media/suggested-web-multi-teams.png)
+    :::image type="content" source="media/suggested-web-multi-teams.png" alt-text="The list has three items selected." border="false":::
 
 
 ## Enable topics in your bot

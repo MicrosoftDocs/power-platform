@@ -105,7 +105,7 @@ A topic's conversation path is how the bot will respond to a person's questions 
 
 1. You can add additional nodes by selecting the **Plus** (**+**) icon on the line or branch between or after a node.
 
-   ![Screenshot of adding a node.](media/handoff-add-node-teams.png "Screenshot of adding a node")
+   :::image type="content" source="media/handoff-add-node-teams.png "Screenshot of adding a node"" alt-text="Screenshot of adding a node." border="false":::
 
 ### Insert nodes
 
@@ -130,7 +130,7 @@ If the node you are adding is the last in a topic, you can also add a **Go to an
 
 1. To have the bot ask a question and get a response from the user, select **+** to add a node, and then **Ask a question** to add a new **Question** node.
 
-    ![Add a new question mode.](media/topics-question-teams.png "Add a new question mode")
+    :::image type="content" source="media/topics-question-teams.png "Add a new question mode"" alt-text="Add a new question mode." border="false":::
 
 1. Enter the question phrase in the first text box, **Ask a question**.
 
@@ -154,11 +154,11 @@ If the node you are adding is the last in a topic, you can also add a **Go to an
 > You can define synonyms for each option. This can help the bot to determine the correct option in case it isn't clear what the user's response should be mapped to.
 > 1. Select the menu icon on the top of the **Question** node, and then select **Options for user**.
 >
->    ![Select options for users.](media/topics-question-options-teams.png "Select options for users")
+>    :::image type="content" source="media/topics-question-options-teams.png "Select options for users"" alt-text="Select options for users." border="false":::
 >
 > 1. Select the **Synonyms** icon for the option you want to add additional keywords to. 
 >
->    ![Select the synonyms icon.](media/topics-question-synonyms-teams.png "Select the synonyms icon")
+>    :::image type="content" source="media/topics-question-synonyms-teams.png "Select the synonyms icon"" alt-text="Select the synonyms icon." border="false":::
 >
 > 1. Add the keywords individually, and then once you're done, select **Done** to return to the **Authoring canvas**.
 
@@ -168,7 +168,7 @@ If the node you are adding is the last in a topic, you can also add a **Go to an
 
 1. Choose the variable you want to use to determine if the bot conversation should branch at this point. 
 
-    ![Choose a variable.](media/topics-branch-teams.png "Choose a variable")
+    :::image type="content" source="media/topics-branch-teams.png "Choose a variable"" alt-text="Choose a variable." border="false":::
 
 #### Call an action
 
@@ -193,7 +193,7 @@ When you end the conversation, you can have a survey appear that asks the user i
 
 1. At the end of a response that resolves the user's issue or answers the question, select **End with survey**.
     
-    ![End with survey.](media/topics-nodes-survey-teams.png "End with survey")
+    :::image type="content" source="media/topics-nodes-survey-teams.png "End with survey"" alt-text="End with survey." border="false":::
 
 #### Go to another topic
 
@@ -229,7 +229,7 @@ You can also [use variables that you have defined elsewhere](authoring-variables
 
 1. Select **Delete**.
 
-    ![Select the menu icon and then the delete button.](media/topics-delete-teams.png "Select the menu icon and then the delete button")
+    :::image type="content" source="media/topics-delete-teams.png "Select the menu icon and then the delete button"" alt-text="Select the menu icon and then the delete button." border="false":::
 
 ## Test and publish your bot
 
