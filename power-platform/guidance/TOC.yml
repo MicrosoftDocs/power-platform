@@ -111,7 +111,7 @@
       - name: Set up compliance processes
         href: coe/setup-governance-components.md 
       - name: Set up archival processes
-        href: coe/setup-archival-components.md 
+        href: coe/setup-archive-components.md 
       - name: Set up Microsoft Teams governance processes
         href: coe/setup-teams-components.md  
       - name: Set up cleanup for orphaned resources

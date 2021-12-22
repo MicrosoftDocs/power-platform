@@ -1,5 +1,5 @@
 ---
-title: "Set up the CoE Starter Kit | MicrosoftDocs"
+title: "Get started setting up the Governance components | MicrosoftDocs"
 description: "Prerequisites and instructions for setting up the Center of Excellence (CoE) Starter Kit for adopting and supporting Microsoft Power Platform, with a focus on Power Apps and Power Automate"
 author: manuelap-msft
 manager: devkeydet
