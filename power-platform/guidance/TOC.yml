@@ -168,6 +168,8 @@
           href: coe/almaccelerator-components.md
         - name: Environment management
           href: coe/env-mgmt.md
+    - name: FAQ and Tips
+      href: coe/faq.md
     - name: Limitations
       href: coe/limitations.md
     - name: Release notes
