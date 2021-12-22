@@ -23,7 +23,7 @@ search.app:
 This article will help you to setup the environment request components of the Core solution, which automate the request, approval and creation of environments and Data Loss Prevention (DLP) policies.
 
 >[!IMPORTANT]
-> Get started by completing the [before the setup](before-setup.md) and [setup inventory](setup-core-components.md) instructions. This article assumes you have your environment setup, and are logged in with the correct identity.
+> Get started by completing the **[Get started](setup.md)** and **[Setup Inventory](setup-core-components.md)** instructions. This article assumes you have your environment setup, and are logged in with the correct identity.
 
 ## Before you start
 
@@ -33,11 +33,11 @@ During solution import, you will configure environment variable values. Make sur
 
 | Name | Description |
 |------|---------------|
-|Environment Request Admin App Url | Update this environment variable with the URL for the **Admin - Environment Request** canvas app. To collect the URL: <br>[Get App URL – Production Environment](internal link) <Br> |
+|Environment Request Admin App Url | Update this environment variable with the URL for the **Admin - Environment Request** canvas app: <br>- [Get App URL – Production Environment](faq.md#linklink) <Br>- [Get App URL – Dataverse for Teams Environment](faq.md#linklink) |
 
 ## Turn on flows
 
-There are several flows which will need to be turned on for this component:  
+There are several flows which will need to be **turned on** for these components:  
 
 - DLP Request | Make approved policy change
 - Env Request | Cleanup expired environments
@@ -53,12 +53,12 @@ The Environment Request components consist of two apps:
 - **Environment Request** app for makers to request environments and connectors - share this app with your makers and assign them the **Power Platform Maker SR** security role.
 
 More information:
-[Share a canvas app in Power Apps](/powerapps/maker/canvas-apps/share-app)
-[Publish and add an app to Teams](/powerapps/teams/publish-and-share-apps#publish-and-add-an-app-to-teams)
+[Share a canvas app in Power Apps](faq.md#share)
+[Publish and add an app to Teams](faq.md#share)
 
-## Environment variables in the Core components solution
+## All environment variables
 
-Here is the full list of environment variables that impact the environment request components. You may have to [update environment variables](setup-core-components.md#update- environment-variables) after import.
+Here is the full list of environment variables that impact the environment request components. You may have to [update environment variables](faq.md#update-environment-variables) after import.
 
 | Name | Description | Default Value
 |------|---------------|------|

@@ -31,7 +31,7 @@ This set of functionality allows you to monitor new Dataverse for Teams environm
 
 Turn on these flows which are installed as part of the **Governance components** solution:
 
-- Microsoft Teams Admin | Weekly Clean Up of Microsoft Teams environments 
+- Microsoft Teams Admin | Weekly Clean Up of Microsoft Teams environments
 - Microsoft Teams Admin | Ask for Business Justification when Microsoft Teams environment is created
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

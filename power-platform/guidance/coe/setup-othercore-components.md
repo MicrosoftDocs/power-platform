@@ -20,11 +20,10 @@ search.app:
 
 # Set up other core components
 
-
-This article will help you to setup the remaining components in the Core solution, not related to [inventory](setup-core-components.md) and [environment request management](setup-environment-components.md). These components are related to **capacity alerting** and **welcoming new makers**.
+This article will help you to setup the remaining components in the Core solution, not related to [inventory](setup-core-components.md) and [environment request management](setup-environment-components.md). These components are related to **capacity alerting**, making apps discoverable in an **app catalog** and **welcoming new makers**.
 
 >[!IMPORTANT]
-> Get started by completing the [before the setup](before-setup.md) and [setup inventory](setup-core-components.md) instructions. This article assumes you have your environment setup, and are logged in with the correct identity.
+> Get started by completing the **[Get started](setup.md)** and **[Setup Inventory](setup-core-components.md)** instructions. This article assumes you have your environment setup, and are logged in with the correct identity.
 
 ## Before you start
 
@@ -34,11 +33,11 @@ During solution import, you will configure environment variable values. Make sur
 
 | Name | Description |
 |------|---------------|
-|Community URL  | Link to your internal Microsoft Power Platform community (for example, Yammer or Teams). It is needed for the flow: Admin | Welcome Email v3. Please refer to [What groups will you use](internal link to Before you Setup)  |
+|Community URL  | Link to your internal Microsoft Power Platform community (for example, Yammer or Teams). It is needed for the flow: Admin \| Welcome Email v3. See: [What groups will you use](setup.md#how-will-you-communicate-with-your-admins-makers-and-end-users)  |
 
 ## Turn on flows
 
-There are several flows which will need to be turned on for this component:  
+There are several flows which will need to be turned on for these components:  
 
 - Admin | Capacity Alerts
 - Admin | Welcome Email v3
@@ -50,12 +49,12 @@ Share the **Maker - Command Center** with your makers and assign them the **Powe
 Share the **App Catalog** with your end users and assign them the **Power Platform User SR**.
 
 More information:
-[Share a canvas app in Power Apps](/powerapps/maker/canvas-apps/share-app)
-[Publish and add an app to Teams](/powerapps/teams/publish-and-share-apps#publish-and-add-an-app-to-teams)
+[Share a canvas app in Power Apps](faq.md#share)
+[Publish and add an app to Teams](faq.md#share)
 
-## Environment variables in the Core components solution
+## All environment variables
 
-Here is the full list of environment variables that impact other components. You may have to [update environment variables](setup-core-components.md#update- environment-variables) after import.
+Here is the full list of environment variables that impact other components. You may have to [update environment variables](faq.md#update-environment-variables) after import.
 
 | Name | Description | Default Value |
 |------|---------------|------|

@@ -100,20 +100,32 @@
       items: 
       - name: Get started with setup
         href: coe/setup.md
-      - name: Set up core components
+      - name: Set up inventory components
         href: coe/setup-core-components.md  
-      - name: Set up governance components
-        href: coe/setup-governance-components.md  
-      - name: Set up nurture components
-        href: coe/setup-nurture-components.md
+      - name: Set up environment request management
+        href: coe/setup-environment-components.md 
+      - name: Set up other core components
+        href: coe/setup-othercore-components.md
+      - name: Get started with setting up governance components
+        href: coe/before-setup-gov.md  
+      - name: Set up compliance processes
+        href: coe/setup-governance-components.md 
+      - name: Set up archival processes
+        href: coe/setup-archival-components.md 
+      - name: Set up Teams governance processes
+        href: coe/setup-teams-components.md  
+      - name: Set up cleanup for orphaned resources
+        href: coe/setup-orphan-components.md 
       - name: Collect audit log data
         href: coe/setup-auditlog.md
       - name: Set up Power BI report
         href: coe/setup-powerbi.md
-      - name: Set up theming components
-        href: coe/setup-theming.md
+      - name: Set up nurture components
+        href: coe/setup-nurture-components.md
       - name: Set up Innovation Backlog components
         href: coe/setup-innovationbacklog.md
+      - name: Set up theming components
+        href: coe/setup-theming.md
       - name: Set up ALM Accelerator for Makers components
         href: coe/setup-almaccelerator.md
     - name: What's in the CoE Starter Kit

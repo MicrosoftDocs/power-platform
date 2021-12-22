@@ -20,9 +20,9 @@ search.app:
 
 # Set up Developer Compliance components
 
-This article will help you to setup the Developer Compliance Center components of the Core and Governance solutions of the CoE Starter Kit.  
+This article will help you to setup the [Developer Compliance Center](example-processes.md) components of the Core and Governance solutions of the CoE Starter Kit.  
 
-This set of functionality allows you to detect frequently used apps and chatbots in your tenant and request their makers provide additional information about them, such as a business justification, data classification and support plan. The goal is for admins to have better visibility into the solutions built by their makers, and support decisions such as when to provide additional support to a solution or when to move a solution to a dedicated environment.
+This set of functionality allows you to detect frequently used apps and chatbots in your tenant and request their makers provide additional information about them, such as a business justification, data classification and support plan. The goal is for admins to have better visibility into the solutions built by their makers, and make decisions such as when to provide additional support to a solution or when to move a solution to a dedicated environment.
 
 >[!IMPORTANT]
 >This article assumes you have [installed the governance components solution](before-setup-gov.md) and you have your environment setup, and are logged in with the correct identity.
@@ -53,6 +53,8 @@ If your solution is installed in a Production Environment, your app will be a mo
 1. Open the **Power Platform Admin View** app.
 1. Select Environments > Chose the environment you want to exempt > Set the **Excuse From Compliance Flows** field to Yes > **Save**
 
+    ![Exclude an environment from the compliance process in a Production environment](media/coe-compliance1.png "Exclude an environment from the compliance process in a Production environment")
+
 ## Dataverse for Teams environment
 
 1. Open to the Power Apps app in Teams, select **Build**, and select the Team you have installed the CoE Starter Kit solutions in.
@@ -60,9 +62,11 @@ If your solution is installed in a Production Environment, your app will be a mo
 1. Open the **Power Platform Admin View** app.
 1. Select Environments > Chose the environment you want to exempt > Set the **Excuse From Compliance Flows** field to Yes > **Save**.
 
+   ![Exclude an environment from the compliance process in Dataverse for Teams](media/coe-compliance2.png "Exclude an environment from the compliance process in Dataverse for Teams")
+
 ## Turn on flows
 
-Turn on these flows which are installed as part of the **Core components** solution:
+**Turn on** these flows which are installed as part of the **Core components** solution:
 
 - Admin | Compliance request complete apps v3
 - Admin | Compliance request complete bots v3
@@ -76,7 +80,11 @@ If your solution is installed in a Dataverse for Teams environment, additionally
 
 ## Share apps with makers
 
-The Governance Components solution contains the **Developer Compliance Center** canvas app, which is used by makers to update the compliance details of their applications.
+The Governance Components solution contains the **Developer Compliance Center** canvas app, which is used by makers to update the compliance details of their applications. Share this apps with your Power Platform makers and assign them the **Power Platform Maker SR** security role.
+
+More information:
+[Share a canvas app in Power Apps](faq.md#update)
+[Publish and add an app to Teams](faq.md#update)
 
 Your app, flow, and bot makers will use the Developer Compliance Center app to provide further information about the resources they're building. Get familiar with the [audit process](example-processes.md) and share the app with your makers.
 
@@ -84,7 +92,7 @@ Consider adding this app to the **Maker - Command Center** for makers to easily 
 
 ## All environment variables
 
-Here is the full list of environment variables that impact the compliance process, including environment variables with Default values.
+Here is the full list of environment variables that impact the compliance process, including environment variables with Default values. You may have to [update environment variables](faq.md#update-environment-variables) after import.
 
 >[!IMPORTANT]
 > You don't have to change the values during setup, just when you need to change the value of an environment variable that you configured during import or when you want to change a default value. Re-start all flows after you change environment variables, to make sure the latest value is picked up.

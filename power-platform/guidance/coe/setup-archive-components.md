@@ -32,20 +32,20 @@ This set of functionality allows you to detect unused objects and ask makers to 
 
 ## Grant makers environment access
 
-If your solution is installed in a Production environment, make sure your enviornment is not restricted with an [environment security group](limitations.md#security-groups-and-approvals).
+If your solution is installed in a Production environment, make sure your environment is not restricted with an [environment security group](limitations.md#security-groups-and-approvals).
 
-If your solution is installed in a Dataverse for Teams environment, you first need to grant makers that are not part of your Microsoft Team access to the environment so they can participate in approval workflows. [Share an app in Teams Environment](internal link) with your [Power Platform Maker group](). 
+If your solution is installed in a Dataverse for Teams environment, you first need to grant makers that are not part of your Microsoft Team access to the environment so they can participate in approval workflows. [Share an app in Teams Environment](internal link) with your [Power Platform Maker group]().
 
 ## Configure mandatory environment variables
 
-This step will be completed after you import the solution. Environment variables are used to store application and flow configuration data. This means that you only have to set the value once per environment and it will be used in all necessary flows and apps in that environment..
+You will [update these environment variables](faq.md#update-environment-variables) after solution import. Environment variables are used to store application and flow configuration data. This means that you only have to set the value once per environment and it will be used in all necessary flows and apps in that environment.
 
 >[!TIP]
 >Learn how to update environment variables for Production and Dataverse for Teams environments: [Update Environment Variables](faq.md#update-environment-variables).
 
 | Name | Description |
 |------|---------------|
-| Approval Admin | This is separate from the Admin Email env var because you cannot use a distribution list for approvals. This env var holds the individual or shared account as a result who will be charged with approving removal of unused orphaned objects. 
+| Approval Admin | This is separate from the Admin Email env var because you cannot use a distribution list for approvals. This env var holds the individual or shared account as a result who will be charged with approving removal of unused orphaned objects. |
 | Cleanup Old Objects App URL | (Optional) Link to the Cleanup Old Objects canvas app included in this solution. If included, communication about old objects which are considered no longer useful will include the link to make cleanup easier. To collect the URL: [Get App URL – Production Environment](internal link) [Get App URL – Teams Environment](internal link) |
 | Flow Approvals URL | (Optional) Link to Power Automate's Approval page for your CoE Environment. If included, communication about old objects which are considered no longer useful will include the link to make cleanup easier. To get the URL Browse to flows.microsoft.com for your CoE Environment > Action Items > Approvals. URL should end in **approvals/received** |  
 
@@ -64,6 +64,8 @@ If your solution is installed in a Production Environment, your app will be a mo
 1. Open the **Power Platform Admin View** app.
 1. Select Environments > Chose the environment you want to exempt > Set the **Excuse From Archival Flows** field to Yes > **Save**
 
+   ![Exclude an environment from the archive process in a Production environment](media/coe-archive2.png "Exclude an environment from the compliance process in a Production environment")
+
 ## Dataverse for Teams environment
 
 1. Open to the Power Apps app in Teams, select **Build**, and select the Team you have installed the CoE Starter Kit solutions in.
@@ -71,9 +73,11 @@ If your solution is installed in a Production Environment, your app will be a mo
 1. Open the **Power Platform Admin View** app.
 1. Select Environments > Chose the environment you want to exempt > Set the **Excuse From Archival Flows** field to Yes > **Save**.
 
+   ![Exclude an environment from the archive process in Dataverse for Teams](media/coe-archive1.png "Exclude an environment from the archive process in Dataverse for Teams")
+
 ## Turn on flows
 
-Turn on these flows which are installed as part of the **Governance components** solution:
+**Turn on** these flows which are installed as part of the **Governance components** solution:
 
 - Admin | Setup | Ignored Archival Requests
 - Admin | Archive and Clean Up v2 (Check Approval)
@@ -90,7 +94,7 @@ Consider adding this app to the **Maker - Command Center** for makers to easily 
 
 ## All environment variables
 
-Here is the full list of environment variables that impact the compliance process, including environment variables with Default values.
+Here is the full list of environment variables that impact the compliance process, including environment variables with Default values. You may have to [update environment variables](faq.md#update-environment-variables) after import.
 
 >[!IMPORTANT]
 > You don't have to change the values during setup, just when you need to change the value of an environment variable that you configured during import or when you want to change a default value. Re-start all flows after you change environment variables, to make sure the latest value is picked up.

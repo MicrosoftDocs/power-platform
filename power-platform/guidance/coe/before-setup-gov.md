@@ -22,7 +22,7 @@ search.app:
 This article will provide you with pre-requisites before setting up the Governance components of the CoE Starter Kit.
 
 >[!IMPORTANT]
-> Get started by completing the [before the setup](before-setup.md) and [setup inventory](setup-core-components.md) instructions. This article assumes you have your environment setup, and are logged in with the correct identity.
+> Get started by completing the **[Get started](setup.md)** and **[Setup Inventory](setup-core-components.md)** instructions. This article assumes you have your environment setup, and are logged in with the correct identity.
 
 ## Initialize flow approval tables in your environment
 
@@ -65,8 +65,8 @@ If you are installing the solution in a new environment, or one in which Approva
     > **Extract the zip file** after downloading and before moving on to the next step. The CoE Starter Kit compressed file contains all solution components as well as non-solution aware components that make up the CoE Starter Kit.
 
 1. Import the solution
-    1. If [Installing to Production Environment](internal link) – use the solution file from the download called  CenterOfExcellenceAuditComponents_x_x_x_xx_managed.zip.
-    1. If [Installing to Dataverse for Teams Environment](internal link) – use the solution file from the download called  CenterOfExcellenceAuditComponents_x_x_x_xx_managed.zip.
+    1. If [Installing to Production Environment](faq.md#installing-a-solution-in-a-production-environment) – use the solution file from the download called  CenterOfExcellenceAuditComponents_x_x_x_xx_managed.zip.
+    1. If [Installing to Dataverse for Teams Environment](faq.md#installing-a-solution-in-a-dataverse-for-teams-environment) – use the solution file from the download called  CenterOfExcellenceAuditComponents_x_x_x_xx_managed.zip.
 
 1. Leave all environment variables blank on import.
 
@@ -78,6 +78,6 @@ There are several child flows which will need to be turned on in this order:
 - HELPER – CanvasAppOperations
 - HELPER – ObjectOperations
 
-If you get an error turning on the flow, you may need to set the [run only users](TODO).
+If you get an error turning on the flow, you may need to set the [run only user properties](faq.md#set-flow-run-only-users-properties) of the flow.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
