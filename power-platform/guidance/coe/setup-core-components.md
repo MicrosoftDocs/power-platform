@@ -20,8 +20,6 @@ search.app:
 
 # Set up inventory components
 
-[!INCLUDE[cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
-
 This article will help you to setup the inventory components of the Core solution of the CoE Starter Kit. The inventory is the heart of the CoE and before embarking on your Power Platform adoption journey, you'll want to first understand if you have existing apps, flows and makers and lay the foundation to monitor new apps and flows being created.
 
 The flows in this solution sync all your resources into tables and build admin apps, flows and dashboards on top of this inventory to help you get a holistic overview into the apps, flows, and makers that exist in your environment. Additionally, apps like DLP Editor and Set App Permissions help with daily admin tasks.

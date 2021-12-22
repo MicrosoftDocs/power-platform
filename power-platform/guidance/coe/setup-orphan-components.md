@@ -32,6 +32,6 @@ This set of functionality allows you to identify objects where the maker has lef
 Turn on these flows which are installed as part of the **Governance components** solution:
 
 - Request Orphaned Objects Reassigned (Child)
-- Request Orphaned Objects Reassigned (Parent) 
+- Request Orphaned Objects Reassigned (Parent)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

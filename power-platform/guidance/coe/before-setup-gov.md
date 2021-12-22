@@ -19,8 +19,6 @@ search.app:
 ---
 # Before setting up the Governance components
 
-[!INCLUDE[cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
-
 This article will provide you with pre-requisites before setting up the Governance components of the CoE Starter Kit.
 
 >[!IMPORTANT]

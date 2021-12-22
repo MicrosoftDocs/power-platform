@@ -20,8 +20,6 @@ search.app:
 
 # Set up environment request components
 
-[!INCLUDE[cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
-
 This article will help you to setup the environment request components of the Core solution, which automate the request, approval and creation of environments and Data Loss Prevention (DLP) policies.
 
 >[!IMPORTANT]
