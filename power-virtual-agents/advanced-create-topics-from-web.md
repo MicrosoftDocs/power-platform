@@ -58,19 +58,19 @@ After the extraction is complete, you'll be shown the suggested topics for furth
 
 1. Select **Topics** on the side navigation pane.
 
-    :::image type="content" source="media/menu-topics.png "The Topics menu item on the navigation pane"" alt-text="The Topics menu item on the navigation pane." border="false":::
+    :::image type="content" source="media/menu-topics.png" alt-text="The Topics menu item on the navigation pane." border="false":::
 
 2. Go to the **Suggested** tab. 
 
 3. If it's the first time you're getting suggestions, the list of suggested topics will be blank. A link to **Get started** or **Learn more** appears instead.
 
-    :::image type="content" source="media/suggested-web-get.png "An empty Topics page, with a link to Get started or Learn more"" alt-text="An empty Topics page, with a link to Get started or Learn more." border="false":::
+    :::image type="content" source="media/suggested-web-get.png" alt-text="An empty Topics page, with a link to Get started or Learn more." border="false":::
 
 4. Select **Get started** or **Suggest topics**. 
 
 5. Enter links to each webpage or online file from which you want to extract content, and then select **Add**. If you add a link by mistake, you can remove it by selecting **Delete** :::image type="content" source="media/delete-suggested-topic.png" alt-text="Delete." border="false":::.
 
-    :::image type="content" source="media/suggested-web-wizard.png "The Suggest topics page,where you enter URLs to extract suggested topics from"" alt-text="The Suggest topics page, where you enter URLs to extract suggested topics from." border="false":::
+    :::image type="content" source="media/suggested-web-wizard.png" alt-text="The Suggest topics page, where you enter URLs to extract suggested topics from." border="false":::
 
     
 >[!IMPORTANT]
@@ -91,13 +91,13 @@ After the extraction is complete, you'll be shown the suggested topics for furth
 
 The tool provides explicit feedback about errors so that you can understand and address any issues. For example, you might be unable to extract content because the site you're referencing is down or it may be gated behind a user login, such as a SharePoint page.
 
-:::image type="content" source="media/suggested-web-error-bar.png "A red banner alert that says We ran into problems getting suggestions appears at the top of the page with a link to more details."" alt-text="A red banner alert that says We ran into problems getting suggestions appears at the top of the page with a link to more details." border="false":::
+:::image type="content" source="media/suggested-web-error-bar.png" alt-text="A red banner alert that says We ran into problems getting suggestions appears at the top of the page with a link to more details." border="false":::
 
-:::image type="content" source="media/suggested-web-error-detail.png "A pop-up window that describes the errors encountered when trying to get suggestions from a web page."" alt-text="A pop-up window that describes the errors encountered when trying to get suggestions from a web page." border="false":::
+:::image type="content" source="media/suggested-web-error-detail.png" alt-text="A pop-up window that describes the errors encountered when trying to get suggestions from a web page." border="false":::
 
 After you've successfully extracted content, a number of suggestions will appear. These may be either [single-turn or multi-turn topics](#single-turn-and-multi-turn-topic-suggestions). You can now review these suggestions to see which ones you want to add to your bot.
 
-:::image type="content" source="media/suggested-web-topics.png "The Suggested tab on the Topics page lists each topic by name, trigger phrase, source, and date it was received"" alt-text="The Suggested tab on the Topics page lists each topic by name, trigger phrase, source, and date it was received." border="false":::
+:::image type="content" source="media/suggested-web-topics.png" alt-text="The Suggested tab on the Topics page lists each topic by name, trigger phrase, source, and date it was received." border="false":::
 
 
 ## Single-turn and multi-turn topic suggestions
@@ -177,7 +177,7 @@ Suggested topics are added to the **Existing** tab with their status set to **Of
 
 3. For each topic you want to enable, turn on the toggle under **Status**.
 
-    :::image type="content" source="media/suggested-enable.png "A table that lists existing topics, where each topic has a toggle that switches between Off and On in the Status column"" alt-text="A table that lists existing topics, where each topic has a toggle that switches between Off and On in the Status column." border="false":::
+    :::image type="content" source="media/suggested-enable.png" alt-text="A table that lists existing topics, where each topic has a toggle that switches between Off and On in the Status column." border="false":::
 
 
 ### See also

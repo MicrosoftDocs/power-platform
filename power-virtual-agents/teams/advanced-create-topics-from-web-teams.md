@@ -65,13 +65,13 @@ After the extraction is complete, you'll be shown the suggested topics for furth
 
 3. If it's the first time you're getting suggestions, the list of suggested topics will be blank. A link to **Get started** or **Learn more** appears instead.
 
-    :::image type="content" source="media/suggested-web-get-teams.png "An empty Topics page, with a link to Get started or Learn more"" alt-text="An empty Topics page, with a link to Get started or Learn more.":::
+    :::image type="content" source="media/suggested-web-get-teams.png" alt-text="An empty Topics page, with a link to Get started or Learn more.":::
 
 4. Select **Get started** or **Suggest topics**. 
 
 5. Enter each webpage or file you want to extract content from, and then select **Add**. The URLs must be secure (they must start with *https://*). If you add a page by mistake, you can remove it by selecting **Delete** :::image type="content" source="media/delete-suggested-topic-teams.png" alt-text="Delete." border="false":::.
 
-    :::image type="content" source="media/suggested-web-wizard-teams.png "The Suggest topics page,where you enter URLs to extract suggested topics from"" alt-text="The Suggest topics page, where you enter URLs to extract suggested topics from." border="false":::
+    :::image type="content" source="media/suggested-web-wizard-teams.png" alt-text="The Suggest topics page, where you enter URLs to extract suggested topics from." border="false":::
 
 7. When you're done adding pages, select **Start**. The message "Getting your suggestions. This may take several minutes" appears at the top of the screen while the extraction is in progress.
 
@@ -89,7 +89,7 @@ Now the suggested topics will appear. These were all taken from the links you su
 
 
 
-:::image type="content" source="media/suggested-web-topics-teams.png "The Suggested tab on the Topics page lists each topic by name, trigger phrase, source, and date it was received"" alt-text="The Suggested tab on the Topics page lists each topic by name, trigger phrase, source, and date it was received." border="false":::
+:::image type="content" source="media/suggested-web-topics-teams.png" alt-text="The Suggested tab on the Topics page lists each topic by name, trigger phrase, source, and date it was received." border="false":::
 
 
 ## Single-turn and multi-turn topic suggestions
