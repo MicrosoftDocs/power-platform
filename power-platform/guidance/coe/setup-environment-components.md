@@ -53,8 +53,8 @@ The Environment Request components consist of two apps:
 - **Environment Request** app for makers to request environments and connectors - share this app with your makers and assign them the **Power Platform Maker SR** security role.
 
 More information:
-[Share a canvas app in Power Apps](faq.md#share)
-[Publish and add an app to Teams](faq.md#share)
+[Share a canvas app in Power Apps](faq.md#share-an-app-from-a-production-environment)
+[Share a canvas app in Microsoft Teams](faq.md#share-an-app-from-a-dataverse-for-teams-environment)
 
 ## All environment variables
 
