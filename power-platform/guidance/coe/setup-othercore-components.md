@@ -33,7 +33,7 @@ During solution import, you will configure environment variable values. Make sur
 
 | Name | Description |
 |------|---------------|
-|Community URL  | Link to your internal Microsoft Power Platform community (for example, Yammer or Teams). It is needed for the flow: Admin \| Welcome Email v3. See: [What groups will you use](setup.md#how-will-you-communicate-with-your-admins-makers-and-end-users)  |
+|Community URL  | Link to your internal Microsoft Power Platform community (for example, Yammer or Teams). It is needed for the flow: Admin \| Welcome Email v3. See: [How will you communicate with your admins, makers and end users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-end-users)  |
 
 ## Turn on flows
 

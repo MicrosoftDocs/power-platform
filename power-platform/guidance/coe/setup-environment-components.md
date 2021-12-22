@@ -33,7 +33,7 @@ During solution import, you will configure environment variable values. Make sur
 
 | Name | Description |
 |------|---------------|
-|Environment Request Admin App Url | Update this environment variable with the URL for the **Admin - Environment Request** canvas app: <br>- [Get App URL – Production Environment](faq.md#linklink) <Br>- [Get App URL – Dataverse for Teams Environment](faq.md#linklink) |
+|Environment Request Admin App Url | Update this environment variable with the URL for the **Admin - Environment Request** canvas app. See: [Get App URL – Production Environment](faq.md#get-a-power-apps-url-from-a-production-environment) or [Get App URL – Teams Environment](faq.md#add-apps-to-microsoft-teams) |
 
 ## Turn on flows
 
@@ -62,6 +62,6 @@ Here is the full list of environment variables that impact the environment reque
 
 | Name | Description | Default Value
 |------|---------------|------|
-|Environment Request Admin App Url | Update this environment variable with the URL for the **Admin - Environment Request** canvas app. To collect the URL: <br>[Get App URL – Production Environment](internal link) <Br> | n/a |
+|Environment Request Admin App Url | Update this environment variable with the URL for the **Admin - Environment Request** canvas app. See: [Get App URL – Production Environment](faq.md#get-a-power-apps-url-from-a-production-environment) or [Get App URL – Teams Environment](faq.md#add-apps-to-microsoft-teams) | n/a |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

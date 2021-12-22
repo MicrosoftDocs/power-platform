@@ -36,7 +36,7 @@ This step will be completed after you import the solution. Environment variables
 
 | Name | Description |
 |------|---------------|
-| Developer Compliance Center URL  | Set this environment variable to the URL for the **Developer Compliance Center** canvas app.<Br>   - [Get App URL – Production Environment](internal link)<Br>- [Get App URL – Teams Environment](internal link)<Br>If you have installed the CoE Starter Kit components in a Dataverse for Teams environment, this app is called: Developer Compliance Center (Teams version) and is part of the Core for Teams solution. If you have installed the CoE starter Kit ina  Production environment, this app is called Developer Compliance Center and is part of the Governance components solution.
+| Developer Compliance Center URL  | Set this environment variable to the URL for the **Developer Compliance Center** canvas app. See: [Get App URL – Production Environment](faq.md#get-a-power-apps-url-from-a-production-environment) or [Get App URL – Teams Environment](faq.md#add-apps-to-microsoft-teams). If you have installed the CoE Starter Kit components in a Dataverse for Teams environment, this app is called: Developer Compliance Center (Teams version) and is part of the Core for Teams solution. If you have installed the CoE starter Kit ina  Production environment, this app is called Developer Compliance Center and is part of the Governance components solution.
 
 ## Exempt environments from the compliance process
 
@@ -101,7 +101,7 @@ Environment variables are used to store application and flow configuration data 
 
 | Name | Description | Default Value |
 |------|---------------|------|
-| Developer Compliance Center URL  | Set this environment variable to the URL for the **Developer Compliance Center** canvas app.<Br>   - [Get App URL – Production Environment](internal link)<Br>- [Get App URL – Teams Environment](internal link)<Br>If you have installed the CoE Starter Kit components in a Dataverse for Teams environment, this app is called: Developer Compliance Center (Teams version) and is part of the Core for Teams solution. If you have installed the CoE starter Kit ina  Production environment, this app is called Developer Compliance Center and is part of the Governance components solution. | n/a |
+| Developer Compliance Center URL  | Set this environment variable to the URL for the **Developer Compliance Center** canvas app. See: [Get App URL – Production Environment](faq.md#get-a-power-apps-url-from-a-production-environment) or [Get App URL – Teams Environment](faq.md#add-apps-to-microsoft-teams). If you have installed the CoE Starter Kit components in a Dataverse for Teams environment, this app is called: Developer Compliance Center (Teams version) and is part of the Core for Teams solution. If you have installed the CoE starter Kit ina  Production environment, this app is called Developer Compliance Center and is part of the Governance components solution. | n/a |
 | Compliance – Apps – Number Days Since Published | If an app is broadly shared and was last published this many days ago or older, makers are asked to re-publish the app to stay compliant | 60 |
 | Compliance – Apps – Number Groups Shared | If the app is shared with this many or more groups, makers are asked for a business justification | 1 |
 | Compliance – Apps – Number Launches Last 30 Days | If the app was launched at least this many times in the last 30 days, makers are asked for a business justification | 30 |

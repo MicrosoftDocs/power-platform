@@ -34,7 +34,7 @@ This set of functionality allows you to detect unused objects and ask makers to 
 
 If your solution is installed in a Production environment, make sure your environment is not restricted with an [environment security group](limitations.md#security-groups-and-approvals).
 
-If your solution is installed in a Dataverse for Teams environment, you first need to grant makers that are not part of your Microsoft Team access to the environment so they can participate in approval workflows. [Share an app in Teams Environment](internal link) with your [Power Platform Maker group]().
+If your solution is installed in a Dataverse for Teams environment, you first need to grant makers that are not part of your Microsoft Team access to the environment so they can participate in approval workflows. [Share an app in Teams Environment](faq.md##share-an-app-from-a-dataverse-for-teams-environment) with your [Power Platform Maker group](setup.md#how-will-you-communicate-with-your-admins-makers-and-end-users).
 
 ## Configure mandatory environment variables
 
@@ -46,7 +46,7 @@ You will [update these environment variables](faq.md#update-environment-variable
 | Name | Description |
 |------|---------------|
 | Approval Admin | This is separate from the Admin Email env var because you cannot use a distribution list for approvals. This env var holds the individual or shared account as a result who will be charged with approving removal of unused orphaned objects. |
-| Cleanup Old Objects App URL | (Optional) Link to the Cleanup Old Objects canvas app included in this solution. If included, communication about old objects which are considered no longer useful will include the link to make cleanup easier. To collect the URL: [Get App URL – Production Environment](internal link) [Get App URL – Teams Environment](internal link) |
+| Cleanup Old Objects App URL | (Optional) Link to the Cleanup Old Objects canvas app included in this solution. If included, communication about old objects which are considered no longer useful will include the link to make cleanup easier. See: [Get App URL – Production Environment](faq.md#get-a-power-apps-url-from-a-production-environment) or [Get App URL – Teams Environment](faq.md#add-apps-to-microsoft-teams) |
 | Flow Approvals URL | (Optional) Link to Power Automate's Approval page for your CoE Environment. If included, communication about old objects which are considered no longer useful will include the link to make cleanup easier. To get the URL Browse to flows.microsoft.com for your CoE Environment > Action Items > Approvals. URL should end in **approvals/received** |  
 
 ## Exempt environments from the compliance process
@@ -105,7 +105,7 @@ Environment variables are used to store application and flow configuration data 
 |------|---------------|------|
 | Approval Admin | This is separate from the Admin Email env var because you cannot use a distribution list for approvals. This env var holds the individual or shared account as a result who will be charged with approving removal of unused orphaned objects. | n/a |
 | Auto Delete on Archive | Determines whether apps andd flows are deleted when they're approved for deletion in the following flow: Admin | App Archive and Clean Up - Check Approvals and Archive. Value must be Yes or No.  | Yes |
-| Cleanup Old Objects App URL | (Optional) Link to the Cleanup Old Objects canvas app included in this solution. If included, communication about old objects which are considered no longer useful will include the link to make cleanup easier. To collect the URL: [Get App URL – Production Environment](internal link) [Get App URL – Teams Environment](internal link) | n/a |
+| Cleanup Old Objects App URL | (Optional) Link to the Cleanup Old Objects canvas app included in this solution. If included, communication about old objects which are considered no longer useful will include the link to make cleanup easier. See: [Get App URL – Production Environment](faq.md#get-a-power-apps-url-from-a-production-environment) or [Get App URL – Teams Environment](faq.md#add-apps-to-microsoft-teams) | n/a |
 | Flow Approvals URL | (Optional) Link to Power Automate's Approval page for your CoE Environment. If included, communication about old objects which are considered no longer useful will include the link to make cleanup easier. To get the URL Browse to flows.microsoft.com for your CoE Environment > Action Items > Approvals. URL should end in **approvals/received** |  n/a |
 | ProductionEnvironment | Set to No if you have installed the solution for development/test purposes. This will send approvals to the admin email instead of the maker. | Yes |
 
