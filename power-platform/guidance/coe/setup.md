@@ -166,8 +166,10 @@ Install the updates by importing the latest version to the environment where you
 1. Watch releases on our [GitHub repository](https://github.com/microsoft/coe-starter-kit) to receive notifications about the latest release.
     1. Go to our [GitHub repository](https://github.com/microsoft/coe-starter-kit) and login with your GitHub user.
     1. Select **Watch > Custom**.
+
       ![Select to watch the repository to receive notifications about new releases](media/github-watch1.png "Select to watch the repository to receive notifications about new releases")
     1. Select **Releases**.
+
        ![Check to only watch new releases](media/github-watch2.png "Check to only watch new releases")
     1. Select **Apply**.
 1. Download the latest version CoE Starter Kit compressed file ([aka.ms/CoeStarterKitDownload](https://aka.ms/CoeStarterKitDownload)).
@@ -176,8 +178,10 @@ Install the updates by importing the latest version to the environment where you
     > **Extract the zip file** after downloading and before moving on to the next step. The CoE Starter Kit compressed file contains all solution components as well as non-solution aware components that make up the CoE Starter Kit.
 1. If you have made any changes to the flows or apps in the solution, they will not receive updates until you remove that unmanaged layer. For every flow/app that you changed, go to the solution layers and remove the unmanaged layer. A good indication that a component has been changed is if the modified date is more recent than the latest install. Read our recommendations for [extending the CoE Starter Kit](#extending-the-starter-kit) to avoid creating unmanaged layers.
     1. Select **... > See solution layers**.
+
         ![See solution layers](media/Upgrade1.png "See solution layers")
     1. Select **Remove unmanaged layer**
+
         ![Remove unmanaged solution layer](media/Upgrade2.png "Remove unmanaged solution layer")
 1. Import the solution
     1. If [Installing to Production Environment](faq.md#installing-a-solution-in-a-production-environment) – use the solution file from the download called CenterOfExcellenceCoreComponents_x_x_x_xx_managed.zip.
