@@ -80,7 +80,7 @@ This article will provide you with answers to frequently asked questions and tip
 
 The sync flows in the Core Component solution will only update resources that have changed since the last run. After an upgrade, you will only see the benefits of bug fixes or changes when you run a full inventory sync:
 
-1) Set the value of the **Full inventory** environment variable to *Yes* (Learn more: [update environment variables](setup-core-components.md#update-environment-variables)).
+1) Set the value of the **Full inventory** environment variable to *Yes* (Learn more: [update environment variables](#update-environment-variables)).
 1) Turn all flows in Core off and back on (note this step is temporary while we await a fix to a caching bug in flow).
 1) Run the *Admin | Sync Template v3* flow.
 1) Set the **Full inventory** environment variable back to *No*.
