@@ -232,8 +232,9 @@ Share these apps with other Power Platform admins and assign them the **Power Pl
 Take a look at the [Admin - Command Center](core-components.md#admin---command-center) app which is your central place to launch all CoE Starter Kit apps from.
 
 More information:
-[Share a canvas app in Power Apps](faq.md#share-an-app-from-a-production-environment)
-[Share a canvas app in Microsoft Teams](faq.md#share-an-app-from-a-dataverse-for-teams-environment)
+
+- [Share a canvas app in Power Apps](faq.md#share-an-app-from-a-production-environment)
+- [Share a canvas app in Microsoft Teams](faq.md#share-an-app-from-a-dataverse-for-teams-environment)
 
 ## Wait for flows to finish
 

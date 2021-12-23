@@ -55,7 +55,7 @@ If your solution is installed in a Production Environment, your app will be a mo
 
     ![Exclude an environment from the compliance process in a Production environment](media/coe-compliance1.png "Exclude an environment from the compliance process in a Production environment")
 
-## Dataverse for Teams environment
+### Dataverse for Teams environment
 
 1. Open to the Power Apps app in Teams, select **Build**, and select the Team you have installed the CoE Starter Kit solutions in.
 1. Select **Center of Excellence - Core for Teams > See All**.
@@ -83,8 +83,9 @@ If your solution is installed in a Dataverse for Teams environment, additionally
 The Governance Components solution contains the **Developer Compliance Center** canvas app, which is used by makers to update the compliance details of their applications. Share this apps with your Power Platform makers and assign them the **Power Platform Maker SR** security role.
 
 More information:
-[Share a canvas app in Power Apps](faq.md#update)
-[Publish and add an app to Teams](faq.md#update)
+
+- [Share a canvas app in Power Apps](faq.md#update)
+- [Publish and add an app to Teams](faq.md#update)
 
 Your app, flow, and bot makers will use the Developer Compliance Center app to provide further information about the resources they're building. Get familiar with the [audit process](example-processes.md) and share the app with your makers.
 

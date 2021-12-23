@@ -66,7 +66,7 @@ If your solution is installed in a Production Environment, your app will be a mo
 
    ![Exclude an environment from the archive process in a Production environment](media/coe-archive2.png "Exclude an environment from the compliance process in a Production environment")
 
-## Dataverse for Teams environment
+### Dataverse for Teams environment
 
 1. Open to the Power Apps app in Teams, select **Build**, and select the Team you have installed the CoE Starter Kit solutions in.
 1. Select **Center of Excellence - Core for Teams > See All**.
@@ -89,6 +89,11 @@ If your solution is installed in a Production Environment, your app will be a mo
 ## Share apps with makers
 
 The Governance Components solution contains the **Archival – Cleanup Unused Objects** app for makers and admins to manage archive approvals. Share this app with your makers and admins, assigning them the **Power Platform Maker SR** security role.
+
+More information:
+
+- [Share a canvas app in Power Apps](faq.md#update)
+- [Publish and add an app to Teams](faq.md#update)
 
 Consider adding this app to the **Maker - Command Center** for makers to easily find and access it.
 

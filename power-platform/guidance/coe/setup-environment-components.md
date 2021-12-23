@@ -23,13 +23,13 @@ search.app:
 This article will help you to setup the environment request components of the Core solution, which automate the request, approval and creation of environments and Data Loss Prevention (DLP) policies.
 
 >[!IMPORTANT]
-> Get started by completing the **[Get started](setup.md)** and **[Setup Inventory](setup-core-components.md)** instructions. This article assumes you have your environment setup, and are logged in with the correct identity.
+>Complete the **[Get started](setup.md)** and **[Setup Inventory](setup-core-components.md)** instructions before continuing with the setup here. This article assumes you have your environment setup, and are logged in with the correct identity.
 
 ## Before you start
 
-### Update environment variables
+### Update environment variables values
 
-During solution import, you will configure environment variable values. Make sure to have the below information ready:
+[Update environment variables](faq.md#update-environment-variables) used by the environment request management components:
 
 | Name | Description |
 |------|---------------|
@@ -53,8 +53,9 @@ The Environment Request components consist of two apps:
 - **Environment Request** app for makers to request environments and connectors - share this app with your makers and assign them the **Power Platform Maker SR** security role.
 
 More information:
-[Share a canvas app in Power Apps](faq.md#share-an-app-from-a-production-environment)
-[Share a canvas app in Microsoft Teams](faq.md#share-an-app-from-a-dataverse-for-teams-environment)
+
+- [Share a canvas app in Power Apps](faq.md#share-an-app-from-a-production-environment)
+- [Share a canvas app in Microsoft Teams](faq.md#share-an-app-from-a-dataverse-for-teams-environment)
 
 ## All environment variables
 

@@ -22,7 +22,7 @@ search.app:
 This article will provide you with pre-requisites before setting up the Governance components of the CoE Starter Kit.
 
 >[!IMPORTANT]
-> Get started by completing the **[Get started](setup.md)** and **[Setup Inventory](setup-core-components.md)** instructions. This article assumes you have your environment setup, and are logged in with the correct identity.
+>Complete the **[Get started](setup.md)** and **[Setup Inventory](setup-core-components.md)** instructions before continuing with the setup here. This article assumes you have your environment setup, and are logged in with the correct identity.
 
 ## Initialize flow approval tables in your environment
 

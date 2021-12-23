@@ -82,7 +82,7 @@ The CoE Starter Kit can be used in both Production environments and Dataverse fo
 
 If you decide to use a Production Environment:
 
-- [Create an environment with a database](create-environment#create-an-environment-with-a-database).
+- [Create an environment with a database](/admin/create-environment#create-an-environment-with-a-database).
 - Do not add sample apps and data sets.
 - Do not restrict environment access with a security group as some parts of the CoE Starter Kit use [approval actions](/power-automate/get-started-approvals) and require makers to be able to interact with the environment.
 
