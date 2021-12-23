@@ -207,7 +207,7 @@ A Power Automate flow uses the custom connector, queries the audit log daily, an
     > We cannot assist in your attempts to configure these, they have been added as a courtesy for you to test and find settings that work for you. The default values provided work in a medium sized tenant.
 
     > [!IMPORTANT]
-    > Learn how to about environment variables: [Update Environment Variables](faq.md#updating-environment-variables)
+    > Learn how to about environment variables: [Update Environment Variables](faq.md#update-environment-variables)
 
 1. Back in the solution, turn on both the \[Child\] Admin | Sync Logs flow and the Admin | Sync Audit Logs flow.
 

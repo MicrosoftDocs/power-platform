@@ -37,7 +37,7 @@ The CoE Starter Kit requires access to your tenants Power Platform environments,
 - Power Apps Per User license (non trial), and Microsoft 365 license
 - The identity must be email enabled
 
-These roles and licenses must be available to this user continuously; if admin access is granted to your user temporarily via PIM this will not be sufficient to run the CoE Starter Kit.
+These roles and licenses must be available to this user continuously; if admin access is granted only temporarily via PIM this will not be sufficient to run the CoE Starter Kit.
 
 Additionally, if you would like to share the Power BI report that is part of the CoE Starter Kit, this identity needs to have the Power BI Pro license.  
 
@@ -56,7 +56,7 @@ In particular, consider the following:
 - **User persona**
   - Power Platform Users to be contacted by Power Platform Admins
 
-It is recommended to use three [Microsoft 365 groups](/microsoft-365/admin/create-groups/compare-groups?view=o365-worldwide#microsoft-365-groups) for this, one for each persona. This group type is an email enabled security group and can be associated with a Microsoft Team for collaboration between the people in the group.  
+We recommend using three [Microsoft 365 groups](/microsoft-365/admin/create-groups/compare-groups?view=o365-worldwide#microsoft-365-groups) for this, one for each persona. This group type is an email enabled security group and can be associated with a Microsoft Team for collaboration between the people in the group.  
 
 ## Prepare your environment
 
@@ -117,9 +117,9 @@ The [DLP policy](/admin/wp-data-loss-prevention) applied to your CoE Starter Kit
 > [!NOTE]
 > The CoE Starter Kit records who owns a resource, such as an app or a flow. If the resource is owned by an interactive users, the Office 365 Users connector is used to get those details. If the resource is owned a Service Principal (Application User), the HTTP with Azure AD connector is used to get the name of the Application User to correctly mark ownership of resources and avoid resources being marked as orphaned (without an owner).
 
-- The HTTP and HTTP with Azure AD connectors connect to [https://graph.microsoft.com]. You can set up [DLP endpoint filtering](/admin/dlp-granular-controls#endpoint-filtering) for these connectors to only allow the [https://graph.microsoft.com] endpoint.
+- The HTTP and HTTP with Azure AD connectors connect to [https://graph.microsoft.com](https://developer.microsoft.com/graph). You can set up [DLP endpoint filtering](/admin/dlp-granular-controls#endpoint-filtering) for these connectors to only allow the [https://graph.microsoft.com](https://developer.microsoft.com/graph) endpoint.
 
-- If you're using the [audit log](setup-auditlog.md) solution, the custom connector used to connect to the Microsoft 365 audit log also must be allowed in your business group. Configure the [https://manage.office.com/] endpoint in the business group of your tenant-level policy. Learn more: [Configure Custom Connector endpoints in tenant-level policies](/power-platform/admin/dlp-connector-classification#tenant-level-dlp-policies).
+- If you're using the [audit log](setup-auditlog.md) solution, the custom connector used to connect to the Microsoft 365 audit log also must be allowed in your business group. Configure the [https://manage.office.com/](/office/office-365-management-api/office-365-management-apis-overview) endpoint in the business group of your tenant-level policy. Learn more: [Configure Custom Connector endpoints in tenant-level policies](/power-platform/admin/dlp-connector-classification#tenant-level-dlp-policies).
 
 - Check that no other DLP policies apply to this environment. Learn more: [Combined effect of multiple DLP policies](/admin/dlp-combined-effect-multiple-policies)
 

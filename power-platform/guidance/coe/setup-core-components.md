@@ -24,33 +24,16 @@ This article will help you setup the inventory components of the Core solution o
 
 The flows in this solution sync all your resources into tables and build admin apps, flows and dashboards on top of this inventory to help you get a holistic overview into the apps, flows, and makers that exist in your environment. Additionally, apps like DLP Editor and Set App Permissions help with daily admin tasks.
 
-Watch how to setup the core components solution.
-
-> [!VIDEO https://www.youtube.com/embed/Z9Vp2IxFzpU]
+[Watch a walk-through](https://www.youtube.com/embed/Z9Vp2IxFzpU) on how to setup the core components solution.
 
 >[!IMPORTANT]
->Get started by completing the **[Get started](setup.md)** instructions. This article assumes you have your environment setup, and are logged in with the correct identity.
+>Complete the **[Get started](setup.md)** instructions before continuing with the setup. This article assumes you have your environment setup, and are logged in with the correct identity.
 
 ## Before you start
 
-### Gather Environment variable values
-
-During solution import, you will configure environment variable values. Make sure to have the below information ready:
-
-| Name | Description |
-|------|---------------|
-|Admin eMail |This is the email address to which most admin communications in the starter kit will be sent. See: [How will you communicate with your admins, makers and end users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-end-users)  |
-| Power Platform Maker Microsoft 365 Group | Get the ID of the Microsoft 365 group which will contain all your Power Platform Makers. [Create a new group](/microsoft-365/admin/create-groups/create-groups?view=o365-worldwide#create-a-microsoft-365-group) if needed. You will use this to communicate and share apps with them. It is needed for the inventory setup in the Admin \| Add Maker to Group flow. See: [How will you communicate with your admins, makers and end users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-end-users) |
-| Command Center - Application Client ID | (optional) Enter the application client ID from the [Create an Azure AD app registration to connect to Microsoft Graph](#optional-create-an-azure-ad-app-registration-to-connect-to-microsoft-graph) step. Leave empty if you would like to use Azure KeyVault to store your client ID and secret. |
-| Command Center - Client Secret | (optional) Enter the application client secret from the [Create an Azure AD app registration to connect to Microsoft Graph](#optional-create-an-azure-ad-app-registration-to-connect-to-microsoft-graph) step. Leave empty if you would like to use Azure KeyVault to store your client ID and secret. |
-|Power Automate environment variable | The URL used by flow for your region. Here are examples:<br> For a US environment: <https://us.flow.microsoft.com/manage/environments/> <br>For an EMEA environment: <https://emea.flow.microsoft.com/manage/environments/> <br>For a GCC, GCC High or DoD environments check [Powr Automate US government service URLs](/power-automate/us-govt#power-automate-us-government-service-urls). If your region is not listed here, navigate to [flow.microsoft.com](https://flow.microsoft.com) and copy the URL the page directs to from the browser.|
-|PowerApp Maker environment variable | The maker URL used by PowerApps for your cloud, including trailing slash. Here are examples:<br> For a US environment: <https://make.powerapps.com/> <br> For a GCC environment: <https://make.gov.powerapps.us/> <br>For a GCC High environment: <https://make.high.powerapps.us/> |
-|PowerApp Player environment variable | The player URL used by PowerApps for your cloud, including trailing slash. Here are examples:<br> For a US environment: <https://apps.powerapps.com/> <br> For a GCC environment: <https://apps.gov.powerapps.us/> <br>For a GCC High environment: <https://apps.gov.powerapps.us/> <br>For a DoD environment: <https://play.apps.appsplatform.us> |
-| TenantID | Your Azure Tenant ID.|
-
 ### Create connections
 
-We recommend to create connections to all connectors used in the solution prior to importing the solution, this will make the setup faster.
+We recommend you create connections to all connectors used in the solution prior to importing the solution, this will make the setup faster.
 
 1. Navigate to [flow.microsoft.com](https://flow.microsoft.com/).
 1. Select your CoE environment and navigate to **Data > Connections > + New connection**.
@@ -71,7 +54,7 @@ We recommend to create connections to all connectors used in the solution prior 
     - [RSS](/connectors/rss/)
     - [SharePoint](/connectors/sharepointonline/)
     - [HTTP with Azure AD](/connectors/webcontents/)
-1. When you create the connection for HTTP with Azure AD enter the following into the Base Resource URL and Azure AD Resource URI (Application ID URI): [https://graph.microsoft.com](https://graph.microsoft.com) for commercial tenants. If your tenant is in GCC, GCC High or DoD check your [service root endpoint for Microsoft Graph](/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints).
+1. When you create the connection for HTTP with Azure AD set the Base Resource URL and Azure AD Resource URI (Application ID URI): to [https://graph.microsoft.com](https://graph.microsoft.com) for commercial tenants. If your tenant is in GCC, GCC High or DoD check your [service root endpoint for Microsoft Graph](/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints).
 
      ![Establish HTTP with Azure AD.](media/httpazuread.png "Establish connections to activate your solution.")
 
@@ -79,6 +62,7 @@ We recommend to create connections to all connectors used in the solution prior 
 
 >[!NOTE]
 > Only complete this steps if you want to review Power Platform related [Microsoft 365 Message Center](/microsoft-365/admin/manage/message-center) updates in the [Admin - Command Center](core-components.md#admin---command-center) canvas app.
+> Skip to [Gather Environment Variable values](#gather-environment-variable-values) if you are not planning to use the [Admin - Command Center](core-components.md#admin---command-center) canvas app.
 
 The [Admin - Command Center](core-components.md#admin---command-center) connects to [Microsoft Graph API](/graph/api/serviceannouncement-list-messages) to get [Microsoft 365 Message Center](/microsoft-365/admin/manage/message-center) updates.
 
@@ -117,6 +101,21 @@ Using these steps, you'll set up an Azure AD app registration that will be used 
 1. Copy and paste the **Secret** to a text document in Notepad for the time being.
 
 1. Select **Overview**, and copy and paste the application (client) ID value to the same text document; be sure to make a note of which GUID is for which value. You'll need these values in the next step as you configure the custom connector.
+
+### Gather Environment variable values
+
+During solution import, you will configure environment variable values. Make sure to have the below information ready:
+
+| Name | Description |
+|------|---------------|
+|Admin eMail |This is the email address to which most admin communications in the starter kit will be sent. See: [How will you communicate with your admins, makers and end users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-end-users)  |
+| Power Platform Maker Microsoft 365 Group | Get the ID of the Microsoft 365 group which will contain all your Power Platform Makers. [Create a new group](/microsoft-365/admin/create-groups/create-groups?view=o365-worldwide#create-a-microsoft-365-group) if needed. You will use this to communicate and share apps with them. It is needed for the inventory setup in the **Admin \| Add Maker to Group** flow. See: [How will you communicate with your admins, makers and end users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-end-users) |
+| Command Center - Application Client ID | (optional) The application client ID from the [Create an Azure AD app registration to connect to Microsoft Graph](#optional-create-an-azure-ad-app-registration-to-connect-to-microsoft-graph) step. Leave empty if you would like to use Azure KeyVault to store your client ID and secret. |
+| Command Center - Client Secret | (optional) The application client secret from the [Create an Azure AD app registration to connect to Microsoft Graph](#optional-create-an-azure-ad-app-registration-to-connect-to-microsoft-graph) step. Leave empty if you would like to use Azure KeyVault to store your client ID and secret. |
+|Power Automate environment variable | The URL used by flow for your region. Here are examples:<br> For a US environment: <https://us.flow.microsoft.com/manage/environments/> <br>For an EMEA environment: <https://emea.flow.microsoft.com/manage/environments/> <br>For a GCC, GCC High or DoD environments check [Powr Automate US government service URLs](/power-automate/us-govt#power-automate-us-government-service-urls). If your region is not listed here, navigate to [flow.microsoft.com](https://flow.microsoft.com) and copy the URL the page directs to from the browser.|
+|PowerApp Maker environment variable | The maker URL used by PowerApps for your cloud, including trailing slash. Here are examples:<br> For a US environment: <https://make.powerapps.com/> <br> For a GCC environment: <https://make.gov.powerapps.us/> <br>For a GCC High environment: <https://make.high.powerapps.us/> |
+|PowerApp Player environment variable | The player URL used by PowerApps for your cloud, including trailing slash. Here are examples:<br> For a US environment: <https://apps.powerapps.com/> <br> For a GCC environment: <https://apps.gov.powerapps.us/> <br>For a GCC High environment: <https://apps.gov.powerapps.us/> <br>For a DoD environment: <https://play.apps.appsplatform.us> |
+| TenantID | Your Azure Tenant ID.|
 
 ## Import the Core components solution
 
@@ -166,26 +165,26 @@ Ensure that the Admin | Sync Template v3 Configure Emails flow runs before movin
 ### Modify the Command Center App > Get M365 Service Messages flow to use Azure KeyVault
 
 1. If you store the client ID and secret for [connecting to Microsoft Graph](#optional-create-an-azure-ad-app-registration-to-connect-to-microsoft-graph) in Environment Variables, you can skip this step.
-1. If you store your client ID and secret from in Azure KeyVault, you will need to update the Command Center App > Get M365 Service Messages flow.
-1. Go to [flow.microsoft.com](https://flow.microsoft.com), select **Solutions**, and then open the **Center of Excellence - Core Components** solution to view the flows.
-1. Edit the **Command Center App >  Get M365 Service Messages** flow.
-1. Use the [Azure Key Vault connector](/connectors/keyvault/) to retrieve the client ID and secret in Azure Key Vault.
-1. Update the **List serviceAnnouncements from Graph** with your client ID and client secret.
-    ![Update HTTP action with client ID and secret](media/commandcenter3.png "Update HTTP action with client ID and secret")
-1. **Save** this flow.
+1. If you store your client ID and secret for [connecting to Microsoft Graph](#optional-create-an-azure-ad-app-registration-to-connect-to-microsoft-graph)  in Azure KeyVault, you will need to update the **Command Center App > Get M365 Service Messages** flow:
+    1. Go to [flow.microsoft.com](https://flow.microsoft.com), select **Solutions**, and then open the **Center of Excellence - Core Components** solution to view the flows.
+    1. Edit the **Command Center App >  Get M365 Service Messages** flow.
+    1. Use the [Azure Key Vault connector](/connectors/keyvault/) to retrieve the client ID and secret in Azure Key Vault.
+    1. Update the **List serviceAnnouncements from Graph** with your client ID and client secret.
+        ![Update HTTP action with client ID and secret](media/commandcenter3.png "Update HTTP action with client ID and secret")
+    1. **Save** this flow.
 
 ### Modify the Command Center App > Get M365 Service Messages flow for a GCC High or DoD tenant
 
 1. If your CoE Starter Kit is installed in a commercial or GCC tenant, you can skip this step.
-1. If your CoE Starter Kit is installed in a GCC High or DoD tenant, update the **Authority** the HTTP request runs with.
-1. Go to [flow.microsoft.com](https://flow.microsoft.com), select **Solutions**, and then open the **Center of Excellence - Core Components** solution to view the flows.
-1. Edit the **Command Center App >  Get M365 Service Messages** flow.
-1. Update the **List serviceAnnouncements from Graph** action and change the **Authority** to https://login.microsoftonline.us/ for a GCC High or DoD tenant.
-1. **Save** this flow.
+1. If your CoE Starter Kit is installed in a GCC High or DoD tenant, update the **Authority** in HTTP action:
+    1. Go to [flow.microsoft.com](https://flow.microsoft.com), select **Solutions**, and then open the **Center of Excellence - Core Components** solution to view the flows.
+    1. Edit the **Command Center App >  Get M365 Service Messages** flow.
+    1. Update the **List serviceAnnouncements from Graph** action and change the **Authority** to https://login.microsoftonline.us/ for a GCC High or DoD tenant.
+    1. **Save** this flow.
 
 ## Turn on inventory flows
 
-The Admin \| Sync Template flows part of this solution crawl through all the resources stored in Microsoft Power Platform and make a copy of details in each resource (for example, apps and flows) to Dataverse. Most apps and flows in the CoE Starter Kit rely on this, which means that the inventory flows must be configured for everything else to work. Most sync flows run daily, and some of the clean up flows run every two weeks.
+The Admin \| Sync Template flows part of this solution crawl through all the resources stored in your Microsoft Power Platform environments and make a copy of details in each resource (for example, apps and flows) to Microsoft Dataverse tables. Most apps and flows in the CoE Starter Kit rely on this, which means that the inventory flows must be configured for everything else to work. The sync flows run daily, and some of the clean up flows run every two weeks.
 
 - Admin | Sync Template v3 (Connectors)
 - Admin | Sync Template v3 (Apps)
@@ -205,7 +204,7 @@ The Admin \| Sync Template flows part of this solution crawl through all the res
 - CLEANUP - Admin | Sync Template v3 (Orphaned Makers)
 - CLEANUP - Admin | Sync Template v3 (Power Apps User Shared With)
 
->![NOTE]
+>[!NOTE]
 > To load balance queries against Dataverse, the **Admin | Sync Template v3** implements a delay of 0-12 hours before starting to collect the inventory. This flow therefore may appear to be running for a long time.
 
 ## Set up Audit Logs solution
@@ -264,8 +263,8 @@ Environment variables are used to store application and flow configuration data 
 |Admin eMail |CoE Admin eMail. Email address used in flows to send notifications to admins; this should be either your email address or a distribution list. | n/a|
 | Admin eMail Preferred Language | The preferred language for the emails sent to the admin email alias, which is specified in the Admin eMail environment variable. | en-US |
 |Also Delete from CoE | When running the "Admin \| Sync Template v2 (Check Deleted)" flow, delete the items from CoE (yes) or just mark deleted (no)  | Yes |
-| Command Center - Application Client ID | (optional) Enter the application client ID from the [Create an Azure AD app registration to connect to Microsoft Graph](#optional-create-an-azure-ad-app-registration-to-connect-to-microsoft-graph) step above. Leave empty if you would like to use Azure KeyVault to store your client ID and secret. | n/a |
-| Command Center - Client Secret | (optional) Enter the application client secret from the [Create an Azure AD app registration to connect to Microsoft Graph](#optional-create-an-azure-ad-app-registration-to-connect-to-microsoft-graph) step above. Leave empty if you would like to use Azure KeyVault to store your client ID and secret. | n/a |
+| Command Center - Application Client ID | (optional) The application client ID from the [Create an Azure AD app registration to connect to Microsoft Graph](#optional-create-an-azure-ad-app-registration-to-connect-to-microsoft-graph) step above. Leave empty if you would like to use Azure KeyVault to store your client ID and secret. | n/a |
+| Command Center - Client Secret | (optional) The application client secret from the [Create an Azure AD app registration to connect to Microsoft Graph](#optional-create-an-azure-ad-app-registration-to-connect-to-microsoft-graph) step above. Leave empty if you would like to use Azure KeyVault to store your client ID and secret. | n/a |
 | DelayInventory | If Yes, will run a delay step to assist with the Dataverse load balancing. Only turn to No for debugging. | Yes |
 | eMail Header Style | The CSS / Style to use for eMails | [Default CSS](/code-samples/css/default-value-email-header-style) |
 | eMail Body Start | Starting HTML format for eMails | Default style provided |
