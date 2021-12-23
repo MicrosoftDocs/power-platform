@@ -134,10 +134,20 @@
         href: coe/starter-kit-explained.md  
       - name: Components overview     
         items:  
-        - name: Core components
+        - name: Core components - Inventory
           href: coe/core-components.md
-        - name: Governance components
-          href: coe/governance-components.md       
+        - name: Core components - Environment request management
+          href: coe/core-components.md
+        - name: Core components - Other
+          href: coe/core-components.md
+        - name: Governance components - Compliance processes
+          href: coe/governance-components.md
+        - name: Governance components - Archive processes
+          href: coe/governance-components.md
+        - name: Governance components - Microsoft Teams governance
+          href: coe/governance-components.md   
+        - name: Governance components - Cleanup for orphaned resources
+          href: coe/governance-components.md      
         - name: Nurture components
           href: coe/nurture-components.md  
         - name: Theming components
