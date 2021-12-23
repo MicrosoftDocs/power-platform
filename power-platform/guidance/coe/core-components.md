@@ -22,8 +22,6 @@ search.app:
 
 These components provide the core to get started with setting up a Center of Excellence (CoE). They sync all your resources into tables and build admin apps on top of that to help you get more visibility of the apps, flows, and makers in your environment. Additionally, apps like the Set App Permissions help with daily admin tasks. The core components solution contains assets relevant only to admins. More information: [Set up core components](setup-core-components.md)
 
-## Demo: Core components
-
 [Watch an overview](https://www.youtube.com/embed/l0kJQAeKthw) on how to use the core components solution.
 
 ## Inventory components
@@ -253,9 +251,9 @@ Additional to the above listed inventory tables, the following helper tables sup
 | Command Center > Initially Populate Bookmarks | Instant | from Admin - Command Center canvas app | This flow runs once to get all CoE Starter Kit apps in the environment and store them to the Command Center Config table as bookmarks used in both the Admin - Command Center and Maker - Command Center canvas apps. |
 | DLP Editor > Parse impacted resources into CSV | Instant | from DLP Editor v2 | This flow creates a CSV file of flows and apps impacted by DLP changes and sends it to the admin. |
 
-## Apps
+### Apps
 
-### Admin - Command Center
+#### Admin - Command Center
 
 A canvas app used by admins as a starting point to launch other apps in the CoE Starter Kit and review content relevant to admins.
 
@@ -278,7 +276,7 @@ Use this app to:
 
 ![Admin - Command Center canvas app](media\commandcenter1.png "Admin - Command Center canvas app")
 
-### DLP Editor v2
+#### DLP Editor v2
 
 DLP Editor v2 is a canvas app that reads and updates data loss prevention (DLP) policies while showing a list of apps and flows that are impacted by the policy configurations.
 
@@ -311,7 +309,7 @@ You can also use this app to find apps that have been orphaned by the owner's ha
 
 ![Set App Permissions.](media/SetAppPerms.png "Set App Permissions")
 
-### Set Flow Permissions
+#### Set Flow Permissions
 
 Similar to Set App Permissions, Set Flow Permissions is a canvas app that admins can use to discover flows by flow name, environment, or owner name.
 
@@ -328,7 +326,7 @@ You can also use this app to find flows that have been orphaned by the owner's h
 
 ![Set Flow Permissions.](media/SetFlowPerms.png "Set Flow Permissions")
 
-### Power Platform Admin View
+#### Power Platform Admin View
 
 > [!NOTE]
 > This app is not available if you have installed the Core Components in Dataverse for Teams. A canvas app is available to browse tenant inventory.
@@ -406,7 +404,7 @@ Follow the [setup instructions](setup-powerbi.md) to set up the Power BI dashboa
 
 ### Apps
 
-### Admin - Environment Requests
+#### Admin - Environment Requests
 
 A canvas app used by admins as an interface to view and approve or reject requests to create or modify Power Platform development resources. Supports Environment Creation Requests and changes to DLP Policies are logged in the DLP Policy Change Request table.
 
@@ -422,7 +420,7 @@ Use this app to:
 
 ![Power Platform Resource RMS canvas app.](media\dev-resources-admin-details.png "Power Platform Resource RMS canvas app")
 
-### Environment Requests
+#### Environment Requests
 
 A canvas app designed to easily submit requests for Power Platform resources (such as Environment Creation Requests).
 
