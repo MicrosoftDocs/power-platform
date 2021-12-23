@@ -111,7 +111,7 @@ Environment variables are used to store application and flow configuration data.
 All flows in this solution depend on all environment variables' being configured.
 
 >[!TIP]
->Learn how to update environment variables for Production and Dataverse for Teams environments: [Update Environment Variables](setup-core-components.md#update-environment-variables).
+>Learn how to update environment variables for Production and Dataverse for Teams environments: [Update Environment Variables](faq.md#update-environment-variables).
 
 1. Select **See Environment Variables** to set the current values as described in the following table.
 
@@ -125,17 +125,12 @@ All flows in this solution depend on all environment variables' being configured
 
 ## Activate the flows
 
-The nurture components solution contains five flows:
+**Turn on** these flows which are installed as part of the **Nurture components** solution:
 
 - Admin \| Newsletter with Product Updates
-
 - Training in a day \| Feedback Reminder
-
 - Training in a day \| Registration Confirmation
-
 - Training in a day \| Reminder 3 days prior to event
-
-Follow the same instructions to configure the flows as explained in [Activate the sync template flows](setup-core-components.md#activate-the-flows).
 
 ## Add your own templates to the Template Catalog
 

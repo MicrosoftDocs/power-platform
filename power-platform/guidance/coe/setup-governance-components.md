@@ -84,8 +84,8 @@ The Governance Components solution contains the **Developer Compliance Center** 
 
 More information:
 
-- [Share a canvas app in Power Apps](faq.md#update)
-- [Publish and add an app to Teams](faq.md#update)
+- [Share a canvas app in Power Apps](faq.md#share-an-app-from-a-production-environment)
+- [Share a canvas app in Microsoft Teams](faq.md#share-an-app-from-a-dataverse-for-teams-environment)
 
 Your app, flow, and bot makers will use the Developer Compliance Center app to provide further information about the resources they're building. Get familiar with the [audit process](example-processes.md) and share the app with your makers.
 

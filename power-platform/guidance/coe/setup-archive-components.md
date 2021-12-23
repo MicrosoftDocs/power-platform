@@ -92,8 +92,8 @@ The Governance Components solution contains the **Archival – Cleanup Unused Ob
 
 More information:
 
-- [Share a canvas app in Power Apps](faq.md#update)
-- [Publish and add an app to Teams](faq.md#update)
+- [Share a canvas app in Power Apps](faq.md#share-an-app-from-a-production-environment)
+- [Share a canvas app in Microsoft Teams](faq.md#share-an-app-from-a-dataverse-for-teams-environment)
 
 Consider adding this app to the **Maker - Command Center** for makers to easily find and access it.
 
