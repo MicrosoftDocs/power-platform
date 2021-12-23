@@ -154,8 +154,6 @@
           href: coe/theming-components.md   
         - name: Innovation Backlog components
           href: coe/innovationbacklog-components.md   
-        - name: Extend and modify components
-          href: coe/modify-components.md
     - name: How to use the CoE Starter Kit
       items:
         - name: CoE Dashboard Explained
