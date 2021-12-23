@@ -45,8 +45,6 @@ The governance components solution contains assets relevant to admins and makers
 
 This flow works in conjunction with other apps and flows in the CoE Starter Kit to facilitate the process described in [App auditing process](example-processes.md). Compliance detail request emails are sent for apps and chatbots.
 
-
-
 This flow sends an email to users who have apps in the tenant that aren't compliant with the following thresholds:
 
 - The app is shared with more than 20 users or at least one group, and no business justification details have been provided for it.
@@ -343,7 +341,7 @@ Learn more about the Microsoft Teams governance process in the CoE Starter Kit: 
 
 ## Cleanup for orphaned resources
 
-## Flows
+### Flows
 
 | Flow | Type | Schedule |
 | --- | --- | --- |
@@ -352,14 +350,14 @@ Learn more about the Microsoft Teams governance process in the CoE Starter Kit: 
 | [HELPER - CanvasAppOperations Gov](#helper---canvasappoperations-gov) | Instant | helper |
 | [HELPER - CloudFlowOperations Gov](#helper---cloudflowoperations-gov) | Instant | helper |
 
-### Request Orphaned Objects Reassigned (Parent)
+#### Request Orphaned Objects Reassigned (Parent)
 
 On a daily basis, this collects all the orphaned objects in the tenant and attempts to associate them with the manager of the former owner. It then sends a teams bot note to each impacted manager and let's them know that there are objects to clean, and then concurrently calls the child flow for each manager. <br>
 For those orphaned objects which cannot resolve to a previous manager, it sends the list to the admin email so that admins know which orphaned objects will need cleaned manually.
 
 ![Orphaned object count](media/orphanedobjects1.png "Orphaned object count")
 
-### Request Orphaned Objects Reassigned (Child)
+#### Request Orphaned Objects Reassigned (Child)
 
 This flow is triggered daily for every manager that has objects owned by former employees that have left the company. It shows all the cloud flows and canvas apps owned by the employees that left the company and lets the manager decide what they want to do:
 
@@ -375,13 +373,13 @@ If they chose to see the items individually then they can make these decisions g
 
 ![Orphaned object item](media/orphanedobjects3.png "Orphaned object item")
 
-### HELPER - CanvasAppOperations Gov
+#### HELPER - CanvasAppOperations Gov
 
 This flow takes in the environment, app, and operation to perform as well as the GUID for the new maker if the operation is to reassign ownership. <br>
 The operations supported are Delete and Assign (which reassigns owner) <br>
 It performs the action on the actual object in the tenant and also updates the inventory.
 
-### HELPER - CloudFlowOperations Gov
+#### HELPER - CloudFlowOperations Gov
 
 This flow takes in the environment, flow, and operation to perform as well as the GUID for the new maker if the operation is to reassign ownership. <br>
 The operations supported are Delete and Assign (which reassigns owner) <br>
