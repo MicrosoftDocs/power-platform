@@ -6,7 +6,7 @@ manager: devkeydet
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/06/2021
+ms.date: 01/10/2022
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
@@ -94,7 +94,7 @@ Now you'll configure and set up a custom connector that uses the [Office 365 Man
   ![Custom connector setup.](media/coe-custom1.png "Custom connector setup")
 
 1. Leave the **1. General** page as-is, and then select **2. Security**.
-    
+
    >[!IMPORTANT]
    >
    > - If your tenant is a GCC tenant, change the host to manage-gcc.office.com.
