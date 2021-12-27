@@ -98,7 +98,7 @@ After you've configured the connection, you'll see your bot in the **Omnichannel
 You can also toggle voice capabilities on or off.
 
 >[!IMPORTANT]
->If you want to test the bot on your custom website, you must use the embed code that is specified in the chat widget you set up in Omnichannel (see **Prerequisites** in the [Integrate a Power Virtual Agents bot](/dynamics365/omnichannel/administrator/configure-bot-virtual-agent#prerequisites) article). If you use the embed code from the Power Virtual Agents site, hand-off will not occur correctly.
+>If you want to test the bot on your custom website, you must use the embed code that is specified in the chat widget you set up in Omnichannel (see [Embed chat widget in your website or portal](/dynamics365/customer-service/embed-chat-widget-portal) for more information). If you use the embed code from the Power Virtual Agents site, hand-off will not occur correctly.
 
 <a id="managed-bot-oc"></a>
 ### Power Virtual Agent bots with ALM
