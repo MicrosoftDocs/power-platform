@@ -23,9 +23,9 @@ Select the version of Power Virtual Agents you're using here:
 
 With Power Virtual Agents, you can publish bots to engage with your customers on multiple platforms or channels. These include live websites, mobile apps, and messaging platforms like Microsoft Teams and Facebook.
 
-After you've published at least once, you can connect your bot to additional channels.
+After you've published at least once, you can connect your bot to more channels.
 
-Each time you want to update your bot, you publish it again from within the Power Virtual Agents app itself. This will update the bot across all the channels where you've inserted or connected your bot.
+Each time you want to update your bot, you publish it again from within the Power Virtual Agents app itself. Publishing your bot will update the bot across all the channels where you've inserted or connected your bot.
 
 >
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4mGa9]
@@ -51,7 +51,7 @@ You need to publish the bot at least once before your customers can interact wit
 
     ![Validate latest bot content for publish.](media/channel-publish-validation.png)
 
-3. After publishing completes, select the **demo website** link. The link will open a new tab and display a prebuilt demo website where you and your team can interact with the bot. This is useful to gather feedback from stakeholders involved in the bot.
+3. After publishing completes, select the **demo website** link. The link will open a new tab and display a prebuilt demo website where you and your team can interact with the bot. The demo website is useful to gather feedback from stakeholders involved in the bot.
 
 ![Go to demo website.](media/channel-go-to-demo-website.png)
 
@@ -111,7 +111,7 @@ Different channels have different end-user experiences. The following table show
 >
 >This applies to all channels, even if the channel or end-user-facing experience supports attachments (for example, if you're using the Direct Line API or Microsoft Teams).
 >
->Attachments can be supported if the message is sent to a skill, where the skill bot supports the processing of attachments. See the [Use Microsoft Bot Framework skills topic](advanced-use-skills.md) for more details on skills.
+>Attachments can be supported if the message is sent to a skill, where the skill bot supports the processing of attachments. For more information, see the [Use Microsoft Bot Framework skills topic](advanced-use-skills.md) for more details on skills.
 
 ## In this section
 
