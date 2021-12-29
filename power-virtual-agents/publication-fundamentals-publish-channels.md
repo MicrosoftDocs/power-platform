@@ -80,7 +80,7 @@ The connection steps are different for each channel. See the related article in 
 * [Custom Website](publication-connect-bot-to-web-channels.md#custom-website)
 * [Mobile App](publication-connect-bot-to-custom-application.md)
 * [Facebook](publication-add-bot-to-facebook.md)
-* [Azure Bot Service channels](publication-connect-bot-to-azure-bot-service-channels.md)
+* [Azure Bot Service channels](publication-connect-bot-to-azure-bot-service-channels.md), including:
   * Skype 
   * Cortana
   * Slack
