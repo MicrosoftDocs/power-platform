@@ -73,22 +73,23 @@ To configure channels:
 
 ![Channel settings.](media/channel-channels-menu.png)
 
-The connection steps are different for each channel. See the related article in the list below more information.
+The connection steps are different for each channel. See the related article in the list below more information:
 
 * [Microsoft Teams](publication-add-bot-to-microsoft-teams.md)
 * [Website](publication-connect-bot-to-web-channels.md)
 * [Mobile App (web-based or native)](publication-connect-bot-to-custom-application.md)
 * [Facebook](publication-add-bot-to-facebook.md)
-* Skype
-* Cortana
-* Slack
-* Telegram
-* Twilio
-* Line
-* Kik
-* GroupMe
-* Direct Line Speech
-* Email
+* [Azure Bot Service channels](publication-connect-bot-to-azure-bot-service-channels.md)
+  * Skype 
+  * Cortana
+  * Slack
+  * Telegram
+  * Twilio
+  * Line
+  * Kik
+  * GroupMe
+  * Direct Line Speech
+  * Email
 
 ## Channel experience reference table
 
