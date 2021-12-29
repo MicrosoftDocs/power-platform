@@ -39,7 +39,7 @@ The governance components solution contains assets relevant to admins and makers
 | Admin \| Compliance request complete custom connector v3 | Automated |  triggered if the [Custom Connector Approval BPF] is marked complete. |
 | Admin \| Compliance request complete flow v3 | Automated |  triggered if the [Flow Approval BPF] is marked complete. |
 | Admin \| Compliance Teams Environment BPF kickoff v3 | Automated |  triggered when a business justification is submitted for a Microsoft Teams environment |
-| [Admin \| Compliance Detail request v3](admin--compliance-detail-request-v3) | Scheduled | facilitate the process described in [App auditing process](example-processes.md) |
+| [Admin \| Compliance Detail request v3](#admin--compliance-detail-request-v3) | Scheduled | facilitate the process described in [App auditing process](example-processes.md) |
 
 #### Admin \| Compliance Detail request v3
 
@@ -59,7 +59,7 @@ This flow sends an email to users who have chatbots in the tenant that aren't co
 
 - The chatbot has business justification details and an indication of high business impact, but no mitigation plan has been submitted to the attachments field.
 
-You can customize the criteria for when makers are asked to provide a business justification using [environment variables](setup-core-components.md#update-environment-variables). Default values are provided.
+You can customize the criteria for when makers are asked to provide a business justification using [environment variables](faq.md#update-environment-variables). Default values are provided.
 
 You can customize the email sent out by the flow; by default, it will look like the following image.
 
@@ -224,7 +224,7 @@ This flow starts the approval process and writes the approval task to the Archiv
 
 ![Archive and Clean Up v2 (Start Approval for Apps) flow.](media/coe58.png "Archive and Clean Up v2 (Start Approval for Apps) flow")
 
-**Customize**: By default, this flow will assign approvals to the app owner. In order to test in a debug environment, in which you do not want to involve users, you can update the [*ProductionEnvironment* environment variable](setup-governance-components.md#update-environment-variables) to **No**, and the approvals will be sent to the admin account instead.
+**Customize**: By default, this flow will assign approvals to the app owner. In order to test in a debug environment, in which you do not want to involve users, you can update the [*ProductionEnvironment* environment variable](setup-governance-components.md#all-environment-variables) to **No**, and the approvals will be sent to the admin account instead.
 
 ![Archive and Clean Up v2 - workflow for Apps.](media/archivalFlow-Apps.png)
 
@@ -236,7 +236,7 @@ It recommends that the flow owner take a backup of the app in the event that the
 
 This flow starts the approval process and writes the approval task to the Archive Approval Dataverse table.
 
-**Customize**: By default, this flow will assign approvals to the flow owner. In order to test in a debug environment, in which you do not want to involve users, you can update the [*ProductionEnvironment* environment variable](setup-governance-components.md#update-environment-variables) to **No**, and the approvals will be sent to the admin account instead.
+**Customize**: By default, this flow will assign approvals to the flow owner. In order to test in a debug environment, in which you do not want to involve users, you can update the [*ProductionEnvironment* environment variable](setup-governance-components.md#all-environment-variables) to **No**, and the approvals will be sent to the admin account instead.
 
 ![Archive and Clean Up v2 - workflow for Flows.](media/archivalFlow-Flows.png)
 
@@ -254,7 +254,7 @@ Runs on a daily basis and does two clean up tasks for the workflow.
 
 1. Deletes the flows and apps that were approved for deletion more than 3 weeks ago (configurable).
 
-**Customize**: By default, this flow will not delete the apps and flows. This is to ensure you explicitly are ready for that to occur. To begin deletion of flows and apps, update the [*Auto Delete On Archive* environment variable](setup-governance-components.md#update-environment-variables) to **Yes**.
+**Customize**: By default, this flow will not delete the apps and flows. This is to ensure you explicitly are ready for that to occur. To begin deletion of flows and apps, update the [*Auto Delete On Archive* environment variable](setup-governance-components.md#all-environment-variables) to **Yes**.
 
 #### Admin \| Setup - Ignored Archival Requests
 
@@ -302,7 +302,7 @@ And if the reason is sound, they can chose to exempt the object from future runs
 | --- | --- | --- |
 |[Microsoft Teams Admin \|  Ask for Business Justification when Microsoft Teams environment is created](#microsoft-teams-admin--ask-for-business-justification-when-microsoft-teams-environment-is-created) | Automated |  triggered by Admin \| Sync Template v3 |
 | [Microsoft Teams Admin \|  Weekly Clean Up of Microsoft Teams environments](#microsoft-teams-admin--weekly-clean-up-of-microsoft-teams-environments) | Schedule | Weekly |
-| Microsoft Teams Admin \| Send Reminder Mail | Schedule | Daily
+| [Microsoft Teams Admin \| Send Reminder Mail](#microsoft-teams-admin--send-reminder-mail) | Schedule | Daily
 
 #### Microsoft Teams Admin | Ask for Business Justification when Microsoft Teams environment is created
 
