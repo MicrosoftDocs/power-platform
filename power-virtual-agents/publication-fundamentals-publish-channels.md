@@ -76,8 +76,9 @@ To configure channels:
 The connection steps are different for each channel. See the related article in the list below more information:
 
 * [Microsoft Teams](publication-add-bot-to-microsoft-teams.md)
-* [Website](publication-connect-bot-to-web-channels.md)
 * [Mobile App (web-based or native)](publication-connect-bot-to-custom-application.md)
+* [Demo Website](publication-connect-bot-to-web-channels.md#demo-website)
+* [Custom Website](publication-connect-bot-to-web-channels.md#custom-website)
 * [Facebook](publication-add-bot-to-facebook.md)
 * [Azure Bot Service channels](publication-connect-bot-to-azure-bot-service-channels.md)
   * Skype 
