@@ -302,6 +302,7 @@ And if the reason is sound, they can chose to exempt the object from future runs
 | --- | --- | --- |
 |[Microsoft Teams Admin \|  Ask for Business Justification when Microsoft Teams environment is created](#microsoft-teams-admin--ask-for-business-justification-when-microsoft-teams-environment-is-created) | Automated |  triggered by Admin \| Sync Template v3 |
 | [Microsoft Teams Admin \|  Weekly Clean Up of Microsoft Teams environments](#microsoft-teams-admin--weekly-clean-up-of-microsoft-teams-environments) | Schedule | Weekly |
+| Microsoft Teams Admin \| Send Reminder Mail | Schedule | Daily
 
 #### Microsoft Teams Admin | Ask for Business Justification when Microsoft Teams environment is created
 
@@ -338,6 +339,10 @@ Environments are deleted from the tenant and marked as deleted in the Environmen
 Save a copy of this flow in case you want to make any changes to the criteria for when environments are deleted.
 
 Learn more about the Microsoft Teams governance process in the CoE Starter Kit: [Microsoft Teams environment audit process](teams-governance.md)
+
+#### Microsoft Teams Admin \| Send Reminder Mail
+
+This flow sends a daily reminder email to environment owners who have been asked for a business justification for their Dataverse for Teams environment but have not yet provided one. The email additionally provides information on how to turn on flow integration in Microsoft Teams.
 
 ## Cleanup for orphaned resources
 
