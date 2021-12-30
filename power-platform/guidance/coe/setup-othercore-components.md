@@ -23,7 +23,7 @@ search.app:
 This article will help you to setup the remaining components in the Core solution, not related to [inventory](setup-core-components.md) and [environment request management](setup-environment-components.md). These components are related to **capacity alerting**, making apps discoverable in an **app catalog** and **welcoming new makers**.
 
 >[!IMPORTANT]
->Complete the **[Get started](setup.md)** and **[Setup Inventory](setup-core-components.md)** instructions before continuing with the setup here. This article assumes you have your environment setup, and are logged in with the correct identity.
+>Complete the **[Get started](setup.md)** and **[Setup Inventory](setup-core-components.md)** instructions before continuing with the setup here. This article assumes you have your [environment setup](setup.md#create-your-environment), and are logged in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
 
 ## Before you start
 
@@ -39,14 +39,14 @@ This article will help you to setup the remaining components in the Core solutio
 
 There are several flows which will need to be turned on for these components:  
 
-- Admin | Capacity Alerts
-- Admin | Welcome Email v3
-- App Catalog > Request Access
+- [Admin | Capacity Alerts](core-components.md#flows-2)
+- [Admin | Welcome Email v3](core-components.md#flows-2)
+- [App Catalog > Request Access](core-components.md#flows-2)
 
 ## Share apps with admins and makers
 
 Share the **Maker - Command Center** with your makers and assign them the **Power Platform Maker SR**.
-Share the **App Catalog** with your end users and assign them the **Power Platform User SR**.
+Share the [**App Catalog**](core-components.md#app-catalog) with your end users and assign them the **Power Platform User SR**.
 
 More information:
 

@@ -25,13 +25,13 @@ This article will help you to setup the clean up for orphaned objects.
 This set of functionality allows you to identify objects where the maker has left the organization, and ask managers to maintain permissions of their former employees.
 
 >[!IMPORTANT]
->This article assumes you have [installed the governance components solution](before-setup-gov.md) and you have your environment setup, and are logged in with the correct identity.
+>This article assumes you have [installed the governance components solution](before-setup-gov.md) and you have your [environment setup](setup.md#create-your-environment), and are logged in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
 
 ## Turn on flows
 
 Turn on these flows which are installed as part of the **Governance components** solution:
 
-- Request Orphaned Objects Reassigned (Child)
-- Request Orphaned Objects Reassigned (Parent)
+- [Request Orphaned Objects Reassigned (Child)](governance-components.md#request-orphaned-objects-reassigned-child)
+- [Request Orphaned Objects Reassigned (Parent)](governance-components.md#request-orphaned-objects-reassigned-parent)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

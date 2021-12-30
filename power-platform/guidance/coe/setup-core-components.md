@@ -27,7 +27,7 @@ The flows in this solution sync all your resources into tables and build admin a
 [Watch a walk-through](https://www.youtube.com/embed/Z9Vp2IxFzpU) on how to setup the core components solution.
 
 >[!IMPORTANT]
->Complete the **[Get started](setup.md)** instructions before continuing with the setup. This article assumes you have your environment setup, and are logged in with the correct identity.
+>Complete the **[Get started](setup.md)** instructions before continuing with the setup. This article assumes you have your [environment setup](setup.md#create-your-environment), and are logged in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
 
 ## Before you start
 
@@ -54,13 +54,13 @@ We recommend you create connections to all connectors used in the solution prior
     - [RSS](/connectors/rss/)
     - [SharePoint](/connectors/sharepointonline/)
     - [HTTP with Azure AD](/connectors/webcontents/)
-1. When you create the connection for HTTP with Azure AD set the Base Resource URL and Azure AD Resource URI (Application ID URI): to [https://graph.microsoft.com](https://graph.microsoft.com) for commercial tenants. If your tenant is in GCC, GCC High or DoD check your [service root endpoint for Microsoft Graph](/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints).
+1. Create a connection for [HTTP with Azure AD](/connectors/webcontents/) set the Base Resource URL and Azure AD Resource URI (Application ID URI): to [https://graph.microsoft.com](https://graph.microsoft.com) for commercial tenants. If your tenant is in GCC, GCC High or DoD check your [service root endpoint for Microsoft Graph](/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints).
 
      ![Establish HTTP with Azure AD.](media/httpazuread.png "Establish connections to activate your solution.")
 
 ### (Optional) Create an Azure AD app registration to connect to Microsoft Graph
 
->[!NOTE]
+>[!IMPORTANT]
 > Only complete this steps if you want to review Power Platform related [Microsoft 365 Message Center](/microsoft-365/admin/manage/message-center) updates in the [Admin - Command Center](core-components.md#admin---command-center) canvas app.
 > Skip to [Gather Environment Variable values](#gather-environment-variable-values) if you are not planning to use the [Admin - Command Center](core-components.md#admin---command-center) canvas app.
 
@@ -109,12 +109,12 @@ During solution import, you will configure environment variable values. Make sur
 | Name | Description |
 |------|---------------|
 |Admin eMail |This is the email address to which most admin communications in the starter kit will be sent. See: [How will you communicate with your admins, makers and end users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-end-users)  |
-| Power Platform Maker Microsoft 365 Group | Get the ID of the Microsoft 365 group which will contain all your Power Platform Makers. [Create a new group](/microsoft-365/admin/create-groups/create-groups?view=o365-worldwide#create-a-microsoft-365-group) if needed. You will use this to communicate and share apps with them. It is needed for the inventory setup in the **Admin \| Add Maker to Group** flow. See: [How will you communicate with your admins, makers and end users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-end-users) |
+| Power Platform Maker Microsoft 365 Group | Get the ID of the Microsoft 365 group which will contain all your Power Platform Makers. [Create a new group](/microsoft-365/admin/create-groups/create-groups?view=o365-worldwide#create-a-microsoft-365-group) if needed. You will use this to communicate and share apps with them. Makers are automatically added to this group with the **Admin \| Add Maker to Group** flow. See: [How will you communicate with your admins, makers and end users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-end-users) |
 | Command Center - Application Client ID | (optional) The application client ID from the [Create an Azure AD app registration to connect to Microsoft Graph](#optional-create-an-azure-ad-app-registration-to-connect-to-microsoft-graph) step. Leave empty if you would like to use Azure KeyVault to store your client ID and secret. |
 | Command Center - Client Secret | (optional) The application client secret from the [Create an Azure AD app registration to connect to Microsoft Graph](#optional-create-an-azure-ad-app-registration-to-connect-to-microsoft-graph) step. Leave empty if you would like to use Azure KeyVault to store your client ID and secret. |
-|Power Automate environment variable | The URL used by flow for your region. Here are examples:<br> For a US environment: <https://us.flow.microsoft.com/manage/environments/> <br>For an EMEA environment: <https://emea.flow.microsoft.com/manage/environments/> <br>For a GCC, GCC High or DoD environments check [Powr Automate US government service URLs](/power-automate/us-govt#power-automate-us-government-service-urls). If your region is not listed here, navigate to [flow.microsoft.com](https://flow.microsoft.com) and copy the URL the page directs to from the browser.|
-|PowerApp Maker environment variable | The maker URL used by PowerApps for your cloud, including trailing slash. Here are examples:<br> For a US environment: <https://make.powerapps.com/> <br> For a GCC environment: <https://make.gov.powerapps.us/> <br>For a GCC High environment: <https://make.high.powerapps.us/> |
-|PowerApp Player environment variable | The player URL used by PowerApps for your cloud, including trailing slash. Here are examples:<br> For a US environment: <https://apps.powerapps.com/> <br> For a GCC environment: <https://apps.gov.powerapps.us/> <br>For a GCC High environment: <https://apps.gov.powerapps.us/> <br>For a DoD environment: <https://play.apps.appsplatform.us> |
+|Power Automate environment variable | The URL used by Power Automate for your cloud.<br> For an environment in the commercial cloud: <https://flow.microsoft.com/manage/environments/> <br>For a GCC, GCC High or DoD environments check [Power Automate US government service URLs](/power-automate/us-govt#power-automate-us-government-service-urls). |
+|PowerApp Maker environment variable | The URL used by the Power Apps Maker Portal for your cloud, including trailing slash. <br> For an environment in the commercial cloud: <https://make.powerapps.com/> <br>For a GCC, GCC High or DoD environments check [Power Apps US Government service URLs](power-platform/admin/powerapps-us-government#power-apps-us-government-service-urls). |
+|PowerApp Player environment variable | The URL used by the Power Apps Player for your cloud, including trailing slash.<br> For an environment in the commercial cloud: <https://apps.powerapps.com/> <br> For a GCC environment: <https://apps.gov.powerapps.us/> <br>For a GCC High environment: <https://apps.gov.powerapps.us/> <br>For a DoD environment: <https://play.apps.appsplatform.us> |
 | TenantID | Your Azure Tenant ID.|
 
 ## Import the Core components solution
@@ -164,7 +164,9 @@ Ensure that the Admin | Sync Template v3 Configure Emails flow runs before movin
 
 ### Modify the Command Center App > Get M365 Service Messages flow to use Azure KeyVault
 
-1. If you store the client ID and secret for [connecting to Microsoft Graph](#optional-create-an-azure-ad-app-registration-to-connect-to-microsoft-graph) in Environment Variables, you can skip this step.
+>[!IMPORTANT]
+>If you store the client ID and secret for [connecting to Microsoft Graph](#optional-create-an-azure-ad-app-registration-to-connect-to-microsoft-graph) in Environment Variables, you can skip this step.
+
 1. If you store your client ID and secret for [connecting to Microsoft Graph](#optional-create-an-azure-ad-app-registration-to-connect-to-microsoft-graph)  in Azure KeyVault, you will need to update the **Command Center App > Get M365 Service Messages** flow:
     1. Go to [flow.microsoft.com](https://flow.microsoft.com), select **Solutions**, and then open the **Center of Excellence - Core Components** solution to view the flows.
     1. Edit the **Command Center App >  Get M365 Service Messages** flow.
@@ -175,7 +177,9 @@ Ensure that the Admin | Sync Template v3 Configure Emails flow runs before movin
 
 ### Modify the Command Center App > Get M365 Service Messages flow for a GCC High or DoD tenant
 
-1. If your CoE Starter Kit is installed in a commercial or GCC tenant, you can skip this step.
+>[!IMPORTANT]
+>If your CoE Starter Kit is installed in a commercial or GCC tenant, you can skip this step.
+
 1. If your CoE Starter Kit is installed in a GCC High or DoD tenant, update the **Authority** in HTTP action:
     1. Go to [flow.microsoft.com](https://flow.microsoft.com), select **Solutions**, and then open the **Center of Excellence - Core Components** solution to view the flows.
     1. Edit the **Command Center App >  Get M365 Service Messages** flow.
@@ -184,7 +188,7 @@ Ensure that the Admin | Sync Template v3 Configure Emails flow runs before movin
 
 ## Turn on inventory flows
 
-The Admin \| Sync Template flows part of this solution crawl through all the resources stored in your Microsoft Power Platform environments and make a copy of details in each resource (for example, apps and flows) to Microsoft Dataverse tables. Most apps and flows in the CoE Starter Kit rely on this, which means that the inventory flows must be configured for everything else to work. The sync flows run daily, and some of the clean up flows run every two weeks.
+The **Admin \| Sync Template** flows part of this solution crawl through all the resources stored in your Microsoft Power Platform environments and make a copy of details in each resource (for example, apps and flows) to Microsoft Dataverse tables. Most apps and flows in the CoE Starter Kit rely on this, which means that the inventory flows must be configured for everything else to work. The sync flows run daily, and some of the clean up flows run every two weeks.
 
 - Admin | Sync Template v3 (Connectors)
 - Admin | Sync Template v3 (Apps)
@@ -221,13 +225,11 @@ The core components solution contains apps designed to give admins better visibi
 
 Share these apps with other Power Platform admins and assign them the **Power Platform Admin SR** security role:
 
-- Admin - Access this App
-- Admin - Access this Flow
-- Admin - Command Center
-- DLP Editor v2
-- Power Platform Admin View
-- Set App Permissions
-- Set Flow Permissions
+- [Admin - Command Center](core-components.md#admin---command-center)
+- [DLP Editor v2](core-components.md#dlp-editor-v2)
+- [Power Platform Admin View](core-components.md#power-platform-admin-view)
+- [Set App Permissions](core-components.md#set-app-permissions)
+- [Set Flow Permissions](core-components.md#set-flow-permissions)
 
 Take a look at the [Admin - Command Center](core-components.md#admin---command-center) app which is your central place to launch all CoE Starter Kit apps from.
 
@@ -273,9 +275,9 @@ Environment variables are used to store application and flow configuration data 
 | FullInventory | Determines if you want to only update objects that have changed, or all objects. Switching to Yes will cause the flows to inventory every single app/flow/etc in the tenant every day, and is not recommended for large tenants.  | No |
 | Is Teams Install | DO NOT EDIT. This is used to determine if this install is in a Production environment or Dataverse for Teams environment and is set for you on install. | No - Core solution, Yes - Core for Teams solution |
 | Power Platform Maker Microsoft 365 Group | Get the ID of the Microsoft 365 group which will contain all your Power Platform Makers. You will use this to communicate and share apps with them. It is needed for the inventory setup in the Admin \| Add Maker to Group flow. See: [How will you communicate with your admins, makers and end users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-end-users) | n/a |
-|Power Automate environment variable | The URL used by flow for your region. Here are examples:<br> For a US environment: <https://us.flow.microsoft.com/manage/environments/> <br>For an EMEA environment: <https://emea.flow.microsoft.com/manage/environments/> <br>For a GCC, GCC High or DoD environments check [Power Automate US government service URLs](/power-automate/us-govt#power-automate-us-government-service-urls). If your region is not listed here, navigate to [flow.microsoft.com](https://flow.microsoft.com) and copy the URL the page directs to from the browser. | n/a |
-|PowerApp Maker environment variable | The maker URL used by Power Apps for your cloud, including trailing slash. For environments in a commercial tenant: <https://make.powerapps.com/> <br>For environments in a GCC, GCC High or DoD tenant check [Power Apps US government service URLs](/power-platform/admin/powerapps-us-government#power-apps-us-government-service-urls) | n/a |
-|PowerApp Player environment variable | The player URL used by PowerApps for your cloud, including trailing slash. Here are examples:<br> For a US environment: <https://apps.powerapps.com/> <br> For a GCC environment: <https://apps.gov.powerapps.us/> <br>For a GCC High environment: <https://apps.gov.powerapps.us/> | n/a |
+|Power Automate environment variable | The URL used by Power Automate for your cloud.<br> For an environment in the commercial cloud: <https://flow.microsoft.com/manage/environments/> <br>For a GCC, GCC High or DoD environments check [Power Automate US government service URLs](/power-automate/us-govt#power-automate-us-government-service-urls). | n/a|
+|PowerApp Maker environment variable | The URL used by the Power Apps Maker Portal for your cloud, including trailing slash. <br> For an environment in the commercial cloud: <https://make.powerapps.com/> <br>For a GCC, GCC High or DoD environments check [Power Apps US Government service URLs](power-platform/admin/powerapps-us-government#power-apps-us-government-service-urls). | n/a|
+|PowerApp Player environment variable | The URL used by the Power Apps Player for your cloud, including trailing slash.<br> For an environment in the commercial cloud: <https://apps.powerapps.com/> <br> For a GCC environment: <https://apps.gov.powerapps.us/> <br>For a GCC High environment: <https://apps.gov.powerapps.us/> <br>For a DoD environment: <https://play.apps.appsplatform.us> | n/a|
 | ProductionEnvironment | Set to No if you are creating a development/test environment. This will allow some flows to set target users to the admin instead of resource owners.| Yes |
 | TenantID | Your Azure Tenant ID.| n/a|
 

@@ -25,7 +25,7 @@ This article will help you to setup the [Developer Compliance Center](example-pr
 This set of functionality allows you to detect frequently used apps and chatbots in your tenant and request their makers provide additional information about them, such as a business justification, data classification and support plan. The goal is for admins to have better visibility into the solutions built by their makers, and make decisions such as when to provide additional support to a solution or when to move a solution to a dedicated environment.
 
 >[!IMPORTANT]
->This article assumes you have [installed the governance components solution](before-setup-gov.md) and you have your environment setup, and are logged in with the correct identity.
+>This article assumes you have [installed the governance components solution](before-setup-gov.md) and you have your [environment setup](setup.md#create-your-environment), and are logged in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
 
 ## Configure mandatory environment variables
 
@@ -74,13 +74,13 @@ If your solution is installed in a Production Environment, your app will be a mo
 - Admin | Compliance request complete flows v3
 - Admin | Compliance Teams Environment BPF kickoff v3
 
-If your solution is installed in a Production environment, additionally turn on the **Admin | Compliance detail request v3** flow which is installed with the Core components solution.
+If your solution is installed in a Production environment, additionally turn on the [**Admin | Compliance detail request v3**]((governance-components.md#admin--compliance-detail-request-v3) flow which is installed with the Core components solution.
 
 If your solution is installed in a Dataverse for Teams environment, additionally turn on the **Admin | Compliance detail request [Teams] v3** flow which is installed with the Core for Teams components solution.
 
 ## Share apps with makers
 
-The Governance Components solution contains the **Developer Compliance Center** canvas app, which is used by makers to update the compliance details of their applications. Share this apps with your Power Platform makers and assign them the **Power Platform Maker SR** security role.
+The Governance Components solution contains the [**Developer Compliance Center**](governance-components.md#developer-compliance-center) canvas app, which is used by makers to update the compliance details of their applications. Share this apps with your Power Platform makers and assign them the **Power Platform Maker SR** security role.
 
 More information:
 

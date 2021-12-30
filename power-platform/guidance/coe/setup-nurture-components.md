@@ -23,7 +23,7 @@ search.app:
 Multiple nurture components are provided in the Center of Excellence (CoE) Starter Kit; each will require some configuration to install. The installation instructions in this article have been segmented based on the set of components that should be grouped and installed together, and dependencies on other segments are outlined in each section.
 
 >[!IMPORTANT]
->Complete the **[Get started](setup.md)** and **[Setup Inventory](setup-core-components.md)** instructions before continuing with the setup here. This article assumes you have your environment setup, and are logged in with the correct identity.
+>Complete the **[Get started](setup.md)** and **[Setup Inventory](setup-core-components.md)** instructions before continuing with the setup here. This article assumes you have your [environment setup](setup.md#create-your-environment), and are logged in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
 
 ## Before you start
 

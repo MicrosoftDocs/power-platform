@@ -28,7 +28,7 @@ This article will help you to setup the Archive components of the Governance sol
 This set of functionality allows you to detect unused objects and ask makers to either archive or unshare them to keep your tenant tidy.
 
 >[!IMPORTANT]
->This article assumes you have [installed the governance components solution](before-setup-gov.md) and you have your environment setup, and are logged in with the correct identity.
+>This article assumes you have [installed the governance components solution](before-setup-gov.md) and you have your [environment setup](setup.md#create-your-environment), and are logged in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
 
 ## Grant makers environment access
 
@@ -49,7 +49,7 @@ You will [update these environment variables](faq.md#update-environment-variable
 | Cleanup Old Objects App URL | (Optional) Link to the Cleanup Old Objects canvas app included in this solution. If included, communication about old objects which are considered no longer useful will include the link to make cleanup easier. See: [Get App URL – Production Environment](faq.md#get-a-power-apps-url-from-a-production-environment) or [Get App URL – Teams Environment](faq.md#add-apps-to-microsoft-teams) |
 | Flow Approvals URL | (Optional) Link to Power Automate's Approval page for your CoE Environment. If included, communication about old objects which are considered no longer useful will include the link to make cleanup easier. To get the URL Browse to flows.microsoft.com for your CoE Environment > Action Items > Approvals. URL should end in **approvals/received** |  
 
-## Exempt environments from the compliance process
+## Exempt environments from the archive process
 
 There are some environments that you may want to exempt from the archive process - this could be dedicated environments that are already well managed. Learn more: [Establishing an environment strategy](/adoption/environment-strategy)
 
@@ -79,16 +79,16 @@ If your solution is installed in a Production Environment, your app will be a mo
 
 **Turn on** these flows which are installed as part of the **Governance components** solution:
 
-- Admin | Setup | Ignored Archival Requests
-- Admin | Archive and Clean Up v2 (Check Approval)
-- Admin | Archive and Clean Up v2 (Clean Up and Delete)
-- Admin | Archive and Clean Up v2 (Start Approval for Apps)
-- Admin | Archive and Clean Up v2 (Start Approval for Flows)
-- Admin | Email Managers Ignored Approvals
+- [Admin | Setup | Ignored Archival Requests](governance-components.md#admin--setup---ignored-archival-requests)
+- [Admin | Archive and Clean Up v2 (Check Approval)](governance-components.md#admin--archive-and-clean-up-v2-check-approval)
+- [Admin | Archive and Clean Up v2 (Clean Up and Delete)](governance-components.md#admin--archive-and-clean-up-v2-clean-up-and-delete)
+- [Admin | Archive and Clean Up v2 (Start Approval for Apps)](governance-components.md#admin--archive-and-clean-up-v2-start-approval-for-apps)
+- [Admin | Archive and Clean Up v2 (Start Approval for Flows)](governance-components.md#admin--archive-and-clean-up-v2-start-approval-for-flows)
+- [Admin | Email Managers Ignored Approvals](governance-components.md#admin--setup---ignored-archival-requests)
 
 ## Share apps with makers
 
-The Governance Components solution contains the **Archival – Cleanup Unused Objects** app for makers and admins to manage archive approvals. Share this app with your makers and admins, assigning them the **Power Platform Maker SR** security role.
+The Governance Components solution contains the [**Archival – Cleanup Unused Objects**](governance-components.md#cleanup-old-objects-app) app for makers and admins to manage archive approvals. Share this app with your makers and admins, assigning them the **Power Platform Maker SR** security role.
 
 More information:
 

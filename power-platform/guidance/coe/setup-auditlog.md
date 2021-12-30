@@ -26,6 +26,9 @@ The Audit Log Sync flow connects to the Microsoft 365 audit log to gather teleme
 
 The Center of Excellence (CoE) Starter Kit will work without this flow, but the usage information (app launches, unique users) in the Power BI dashboard will be blank.
 
+>[!IMPORTANT]
+>Complete the **[Get started](setup.md)** and **[Setup Inventory](setup-core-components.md)** instructions before continuing with the setup here. This article assumes you have your [environment setup](setup.md#create-your-environment), and are logged in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
+
 ## Before you use the audit log connector
 
 1. Microsoft 365 audit log search must be turned on for the audit log connector to work. More information: [Turn audit log search on or off](/microsoft-365/compliance/turn-audit-log-search-on-or-off?preserve-view=true&view=o365-worldwide)

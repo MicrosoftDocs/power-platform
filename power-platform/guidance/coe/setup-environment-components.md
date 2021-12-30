@@ -23,7 +23,7 @@ search.app:
 This article will help you to setup the environment request components of the Core solution, which automate the request, approval and creation of environments and Data Loss Prevention (DLP) policies.
 
 >[!IMPORTANT]
->Complete the **[Get started](setup.md)** and **[Setup Inventory](setup-core-components.md)** instructions before continuing with the setup here. This article assumes you have your environment setup, and are logged in with the correct identity.
+>Complete the **[Get started](setup.md)** and **[Setup Inventory](setup-core-components.md)** instructions before continuing with the setup here. This article assumes you have your [environment setup](setup.md#create-your-environment), and are logged in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
 
 ## Before you start
 
@@ -49,8 +49,8 @@ There are several flows which will need to be **turned on** for these components
 
 The Environment Request components consist of two apps:
 
-- **Admin - Environment Request** app for admins to view and approve environment and connectors requests - share this app with other admins and assign them the **Power Platform Admin SR** security role.
-- **Environment Request** app for makers to request environments and connectors - share this app with your makers and assign them the **Power Platform Maker SR** security role.
+- [**Admin - Environment Requests**](core-components.md#admin---environment-requests) app for admins to view and approve environment and connectors requests - share this app with other admins and assign them the **Power Platform Admin SR** security role.
+- [**Environment Request**](core-components.md#environment-requests) app for makers to request environments and connectors - share this app with your makers and assign them the **Power Platform Maker SR** security role.
 
 More information:
 
