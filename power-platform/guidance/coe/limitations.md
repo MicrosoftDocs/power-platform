@@ -104,10 +104,52 @@ Model-driven apps that are not published are not surfaced in the inventory becau
 
 ## Large desktop flows
 
-Desktop Flows that are large are not surfaced in the inventory because one of the fields returned is too big for the flows.  This is a product limitation that will be fixed when the new Dataverse connector allows us to select environments. 
+Desktop Flows that are large are not surfaced in the inventory because one of the fields returned is too big for the flows.  This is a product limitation that will be fixed when the new Dataverse connector allows us to select environments.
 
 ## Missing custom connectors
 
 We are able to collect only the intersect of all custom connectors outside of solutions, and all custom connectors to which you have access. As a result, custom connectors in a solution, to which the identity running the sync flows do not have access, will not show up in the inventory.
+
+## Inventory differences between PowerShell, Power Platform Admin Center and CoE Starter Kit
+
+If you are using [PowerShell for Power Platform Administrators](/power-platform/admin/powershell-getting-started) and the [Power Platform Admin Center](/power-platform/admin/wp-work-with-admin-portals) together with the CoE Starter Kit, you may be noticing a discrepancy in inventory - e.g. the number of apps returned by PowerShell looks different than the number of apps returned by the CoE Starter Kit.
+
+There are expected differences, and the below information should help you understand what to expect.
+
+### PowerShell
+
+[Get-AdminPowerApp](/powershell/module/microsoft.powerapps.administration.powershell/get-adminpowerapp?view=pa-ps-latest) and [Get-AdminFlow](/powershell/module/microsoft.powerapps.administration.powershell/get-adminflow?view=pa-ps-latest) will always return the latest and most up to date inventory of the environment you're querying.
+
+[Get-AdminPowerApp](/powershell/module/microsoft.powerapps.administration.powershell/get-adminpowerapp?view=pa-ps-latest) returns only canvas apps and SharePoint custom forms, but not model-driven apps.
+
+[Get-AdminFlow](/powershell/module/microsoft.powerapps.administration.powershell/get-adminflow?view=pa-ps-latest) returns all cloud flows.
+
+### Power Platform Admin Center
+
+[Power Apps](/power-platform/admin/admin-manage-apps) and [Power Automate](/power-platform/admin/manage-power-automate) resources will always return the latest and most up to date inventory of the environment you're looking at. Make sure to refresh the page in the Admin Center to show the latest information.
+
+[Power Apps resources](/power-platform/admin/admin-manage-apps) returns canvas apps and published and unpublished model driven apps, but not SharePoint custom forms.
+
+[Power Automate resources](/power-platform/admin/manage-power-automate) returns all cloud flows.
+
+### CoE Starter Kit
+
+The [inventory](setup-core-components.md) in the CoE Starter Kit runs daily to look for a new and modified resources since the last run. However, certain clean up flows only run every 2 weeks. One of these is [CLEANUP - Admin | Sync Template v3 (Check Deleted)](core-components.md#flows) which checks if a resource, for example a canvas app, is still in the environment and if not marks it as deleted. This flow compares every single row in the CoE tables to every single Power Platform resource in your tenant and consumes a high volume of API calls, therefore this and similar flows are scheduled to run only every two weeks. This means that your data may be out of date if resources have been deleted in the past two weeks.
+
+The CoE starter kit expects all [inventory flows](core-components.md#flows) to run with elevated Power Platform admin privileges at all times – if admin access expires during a flow run or if the flow is run with a user that doesn’t have admin privileges, any resources that can’t be retrieved will be marked as deleted in the CoE tables. Once an app is marked as deleted, it will not be marked as active again. Just one flow run with insufficient privileges can therefore have a big impact on the inventory.
+
+The CoE Starter Kit shows canvas apps, published model driven apps, and SharePoint custom forms but not unpublished model driven apps (if the "play" button on a model driven apps is disabled).
+
+The CoE Starter Kit shows all cloud flows.
+
+### SharePoint custom forms
+
+SharePoint custom forms apps can be either in the Default environment or a [designated SharePoint form environment](/power-platform/admin/powerapps-powershell#designate-sharepoint-custom-form-environment) – or both. For example, if you have existing SharePoint custom forms in the Default environment and then designate a SharePoint form environment, existing forms will remain in the Default environment and will not be migrated.
+
+### Deleted apps and flows
+
+There are two options in the CoE Starter Kit to handle deleted resources – either they are deleted from the inventory table or they are kept in the inventory table and a 'Deleted' field is set to yes (true). This is controlled via an Environment Variable called [Also Delete from CoE](setup-core-components.md#all-environment-variables).
+
+If this environment variable is set to **No** it will keep a record of deleted apps and flows and highlight them as deleted via a field. This can also lead to a discrepancy in numbers - for example, if you're looking at the data and don't filter out records where the Deleted field is set to yes.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
