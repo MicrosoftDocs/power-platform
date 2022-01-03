@@ -129,7 +129,7 @@
           href: coe/setup-almacceleratorpowerplatform-users.md
         - name: Configuring deployment user settings and profiles
           href: coe/setup-almacceleratorpowerplatform-deployment-profiles.md
-        - name: Set up ALM Accelerator for Makers components
+        - name: Set up ALM Accelerator for Makers components (preview)
           href: coe/setup-almaccelerator.md
     - name: What's in the CoE starter kit
       items:  
@@ -176,7 +176,7 @@
             href: coe/almacceleratorpowerplatform-newmaker.md
           - name: Use the Administrator Experience
             href: coe/setup-almacceleratorpowerplatform-deployment-profiles.md
-          - name: Use the ALM Accelerator for Makers
+          - name: Use the ALM Accelerator for Makers (preview)
             href: coe/almaccelerator-components.md
 
         - name: Environment management
