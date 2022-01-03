@@ -55,7 +55,7 @@ See [Preview: Pay-as-you-go plan](pay-as-you-go-overview.md).
 
 The Power Apps per app plan is designed to help organizations solve for one business scenario at a time, which may involve a combination of individual apps. Each “per app” license provides an individual user with rights to one app (canvas and/or model-driven) or one Power Apps Portal, within a single environment. A single user might be covered by multiple “per app” licenses to allow the user to use multiple apps, without requiring a per-user license. In other words, the “per app” license is stackable.
 
-An important part of this feature simplification is that we will no longer require any standalone plans for maker or admin capabilities. Previously admins required a Power Apps P2 license for certain management operations; this will no longer be the case.
+An important part of this feature simplification is that we will no longer require any standalone plans for maker or admin capabilities. Previously admins required a PowerApps P2 license for certain management operations; this will no longer be the case.
 
 ### Do embedded canvas apps in model-driven apps count consume multiple per app plans?
 
