@@ -152,7 +152,7 @@ To change settings for a Dataverse for Teams environment, go to **Environments**
 <!-- fwlink 2123134 2127762 -->
 
 > [!NOTE]
-> Before doing the below, be sure to add users to security group associated with your Dataverse for Teams environment. See xxxxxx
+> Before doing the steps below, be sure to add users to the security group associated with your Dataverse for Teams environment. See [To add a user to a security group](create-users.md#to-add-a-user-to-a-security-group).
 
 You can specify users in an environment to provide access to Dataverse for Teams environment apps, bots, and data.
 
