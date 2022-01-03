@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/11/2021
+ms.date: 12/14/2021
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -21,8 +21,9 @@ search.app:
 Power Apps per app plan allows individual users to run one application or portal for a specific business scenario in a **specific environment** based on the full capabilities of Power Apps. This plan provides an easy way for users to get started with Power Apps before broader scale adoption. These are available to purchase from the Office admin center and you can allocate add-ons in the [Capacity](https://admin.powerplatform.microsoft.com/resources/capacity) area in the Microsoft Power Platform admin center.More information: [Capacity add-ons](capacity-add-on.md).
 
 > [!IMPORTANT]
-> - Although, Power Apps per app plans appear in the [Microsoft 365 admin center](https://admin.microsoft.com), you shouldn't attempt to assign them to users there. Power Apps per app plans must be allocated to an environment (and not to users) by an admin in the [Power Platform admin center](https://admin.powerplatform.microsoft.com). After per app plans are allocated to an environment, they are assigned when apps are shared with users in the environment.
+> - Power Apps per app plans don't appear on the **Billing > Licenses** page in the [Microsoft 365 admin center](https://admin.microsoft.com). Admins should allocate Power Apps per app plans in the [Power Platform admin center](https://admin.powerplatform.microsoft.com). After per app plans are allocated to an environment, they are assigned when apps are shared with users in the environment.
 > - Power Apps for Windows isn't supported if you have the Power Apps per app plan.
+
 
 ## Steps for using per app plans 
 

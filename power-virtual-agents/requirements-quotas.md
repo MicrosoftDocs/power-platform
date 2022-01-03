@@ -66,7 +66,7 @@ Skills | 100 per bot | 100 per bot
 Feature | Standard subscription | Teams (select Microsoft 365 subscriptions)
 -- | -- | --
 Sessions | N/A | 10 per user every 24 hours across all bots in a tenant<sup>1</sup>
-Power Platform requests<sup>2</sup> | 30,000 every 24 hours<sup>3</sup> | 2,000 every 24 hours
+Power Platform requests<sup>2</sup> | 250,000 every 24 hours<sup>3</sup> | 2,000 every 24 hours
 
 <sup>1</sup> Power Virtual Agents [sessions](analytics-sessions.md) that are included with [Microsoft 365 subscriptions](requirements-licensing-subscriptions.md#power-virtual-agents-for-microsoft-teams-plan) aren't pooled.  
 <sup>2</sup> These requests are consumed by Power Automate flows that are triggering by Power Virtual Agents chatbots. Learn more about [Power Automate limits](/power-platform/admin/api-request-limits-allocations).  
