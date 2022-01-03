@@ -454,13 +454,13 @@
         items:
         - name: "Preview: Tenant-level analytics (default)" 
           href: tenant-level-analytics.md
-        # Comment out the next topics before publish
-        # - name: "Preview: Power Apps analytics report"
-        #   href: powerapps-analytics-reports.md
-        # - name: "Preview: Tenant-level analytics for Power Automate"
-        #   href: power-automate-analytics-reports.md
-        # - name: "Preview: Power Apps license utilization"
-        #   href: powerapps-license-utilization.md
+        # Comment out the next topics before publish 
+        - name: "Preview: Power Apps analytics report"
+          href: powerapps-analytics-reports.md
+        - name: "Preview: Tenant-level analytics for Power Automate"
+          href: power-automate-analytics-reports.md
+        - name: "Preview: Power Apps license utilization"
+          href: powerapps-license-utilization.md
       - name: Data export
         items:
         - name: "Preview: Export Power Apps inventory and usage data"
