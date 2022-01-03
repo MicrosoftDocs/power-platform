@@ -81,7 +81,7 @@ The pipelines handle the following actions.
    - Share apps with Azure Active Directory Groups.
    - Activate flows.
    - Create teams in Dataverse for Azure Active Directory Groups.
-   - Update solution component wwnership.
+   - Update solution component ownership.
 
 ## ALM Accelerator app
 
