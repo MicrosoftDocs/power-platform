@@ -10,7 +10,7 @@ ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/20/2021
+ms.date: 01/04/2022
 search.audienceType: 
   - admin
 search.app:
@@ -70,7 +70,7 @@ Note the following about security groups:
 
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).  
   
-2. Select **Groups** > **Groups**.  
+2. Select **Teams & groups** > **Active teams & groups**.  
   
 3. Select **+ Add a group**.  
   
