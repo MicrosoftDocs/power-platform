@@ -33,11 +33,11 @@ Although the connector classification capability is very helpful in governing Mi
 
 You can use connector action control to allow or block individual actions within a given connector. On the **Connectors** page, right-click the connector, and then select **Configure connector** > **Connector actions**.
 
-:::image type="content" source="media/dlp-connector-actions.png" alt-text="Select Configure connector > Connector actions.":::
+![Slide1](https://user-images.githubusercontent.com/90638770/147949865-e7be80c3-0a66-4ecc-ba33-a4c7f8b8a227.PNG)
 
 This opens a side panel where you can allow or deny specific actions. You can also set the default value (Allow or Deny) for any new connector actions that will be added to the connector in the future.
 
-:::image type="content" source="media/dlp-allow-deny-connector-actions.png" alt-text="Set Allow or Deny for connector actions.":::
+![Slide2](https://user-images.githubusercontent.com/90638770/147949897-4cf33380-62da-41ad-8508-8e6b9234c73b.PNG)
 
 ### Availability
 Configuring a connector's actions is available for all *blockable* connectors, but not for [unblockable connectors](dlp-connector-classification.md#list-of-connectors-that-cant-be-blocked). 
@@ -145,23 +145,23 @@ Endpoint filtering allows admins to govern at a fine grain which specific endpoi
 
 The **Endpoint configurable** column on the **Prebuilt Connectors** page in **Data Policies** indicates whether the endpoint filtering capability is supported for the connector
 
-:::image type="content" source="media/dlp-endpoint-configurable-prebuilt-connectors.png" alt-text="Endpoint configurable in the Prebuilt Connectors page.":::
+![Slide3](https://user-images.githubusercontent.com/90638770/147949947-5372f7d9-dad1-47a7-a535-661c84160e1b.PNG)
 
 If the value of the **Endpoint configurable** column is **Yes**, you can use this capability by right-clicking and then selecting **Configure connector** > **Connector endpoints**.
 
-:::image type="content" source="media/dlp-configure-connector-connector-endpoints.png" alt-text="Configure connector > Connector endpoints.":::
+![Slide4](https://user-images.githubusercontent.com/90638770/147949961-1ea91b85-9aa7-413f-956e-2b5f2b2ae627.PNG)
 
 This opens a side panel where you can specify an ordered list of Allow or Deny URL patterns for custom connectors. The last row in the list will always be a rule for the wildcard character `*`, which applies to all endpoints in that connector. By default, the `*` pattern is set up as Allow for new DLP policies, but you can tag this as Allow or Deny.
 
-:::image type="content" source="media/dlp-specify-ordered-list-allow-deny-url-patterns.png" alt-text="Specify an ordered list of Allow and Deny URL patterns for custom connectors.":::
+![Slide5](https://user-images.githubusercontent.com/90638770/147949970-add603d4-044c-43c2-8f25-ba243926622c.PNG)
 
 You can add new rules by selecting **Add endpoint**. New rules are added to the end of the pattern list (as the second-to-the-last rule, because `*` will always be the last entry in the list). However, you can update the order of the patterns by using the **Order** dropdown list or selecting **Move up** or **Move down**. 
 
-:::image type="content" source="media/dlp-add-endpoint-new-rules.png" alt-text="Select Add endpoint to add new rules.":::
+![Slide6](https://user-images.githubusercontent.com/90638770/147949980-da6799e4-4fb6-4d3a-af59-c5ed3cdfb674.PNG)
 
-After a pattern has been added, you can edit or delete these patterns by selecting a specific row and then selecting **Delete**. 
+After a pattern has been added, you can edit or delete these patterns by selecting a specific row and then selecting **Delete**.
 
-:::image type="content" source="media/dlp-delete-pattern.png" alt-text="Delete a pattern.":::
+![Slide7](https://user-images.githubusercontent.com/90638770/147949995-c8df736d-c679-4dea-9851-4cb8f9f2dbbd.PNG)
 
 ### PowerShell support for endpoint filtering
 
