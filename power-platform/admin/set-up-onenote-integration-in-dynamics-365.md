@@ -145,7 +145,7 @@ On subsequent clicks in [!INCLUDE[pn_onenote](../includes/pn-onenote.md)], this 
 
 Consider this scenario:
 
-User A opens a OneNote note in Dynamics 365 Customer Engagement (on-premises) and adds content (For example: **Sales** > **Accounts** > <account> > **Summary** > Timeline section > **+** > OneNote). User A, or a second user, User B, changes the name of the OneNote file in a document grid (For example: **Sales** > **Accounts** > <account> > **Related** > **Documents**). User A opens the note using Timeline (For example: **Sales** > **Accounts** > <account> > **Summary** > Timeline section > **+** > **OneNote**). User A should see the renamed note with the existing content. Instead, a new note is opened. -->
+User A opens a OneNote note in Dynamics 365 Customer Engagement (on-premises) and adds content (For example: **Sales** > **Accounts** > "\<"account"\>" > **Summary** > Timeline section > **+** > OneNote). User A, or a second user, User B, changes the name of the OneNote file in a document grid (For example: **Sales** > **Accounts** > <account> > **Related** > **Documents**). User A opens the note using Timeline (For example: **Sales** > **Accounts** > "\<"account"\>" > **Summary** > Timeline section > **+** > **OneNote**). User A should see the renamed note with the existing content. Instead, a new note is opened. 
 
 ### See also
 
