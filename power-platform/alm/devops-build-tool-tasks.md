@@ -357,8 +357,8 @@ steps:
 | Parameters       | Description     |
 |------------------|-----------------|
 | `SolutionOutputFile`<br/>Solution output file | (Required) The path and file name of the solution.zip file to pack the solution into. |
-| `SolutionSourceFolder`<br/>sSource folder of solution to pack | (Required) The path and source folder of the solution to pack. |
-| `SolutionType`<br/>Type of solution | (Required) The type of solution you want to pack. Options include: **Unmanaged** (recommended), **Managed**, and **Both**. |
+| `SolutionSourceFolder`<br/>Source folder of solution to pack | (Required) The path and source folder of the solution to pack. |
+| `SolutionType`<br/>Type of solution | (Required) The type of solution you want to pack. Options include: **Managed** (recommended), **Unmanaged**, and **Both**. |
 
 ### Power Platform Delete Solution
 
