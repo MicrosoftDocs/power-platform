@@ -2,7 +2,7 @@
 title: "Use topics to design a chatbot conversation"
 description: "The authoring canvas provides an intuitive, no-code way of creating a bot that can help answer user questions, perform actions, and solve issues."
 keywords: "PVA"
-ms.date: 11/01/2021
+ms.date: 01/04/2022
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -51,29 +51,26 @@ When you create a bot, a number of topics will be automatically created for you.
 
 :::image type="content" source="media/topics-system.png" alt-text="Four lesson topics and a number of system topics are in the Topics list.":::
 
-These are:
+These topics fall into two categories:
   
-  - Four prepopulated **User Topics** that are titled as lessons. These [lesson topics](authoring-template-topics.md) can be used to help understand simple to complex ways of using nodes to create bot conversations.
-  - A number of **System Topics**. These are prepopulated topics that you are likely to need during a bot conversation. We recommend you keep these and use them until you are comfortable with creating an end-to-end bot conversation.
-
-You can edit both of these topic types in the same manner as for topics you create; however, you cannot delete them.
-
+  - Four prepopulated **User Topics** that are titled as lessons. These [lesson topics](authoring-template-topics.md) can be used to help understand simple to complex ways of using nodes to create bot conversations. You can edit these topics in the same manner as for topics you create. You can also choose to delete them entirely.
+  - A number of **System Topics**. These are prepopulated topics that you are likely to need during a bot conversation. You can't delete, disable, or edit the trigger phrases of these topics, but you can customize the nodes on the authoring canvas. We recommend not customizing these topics until you are comfortable with creating an end-to-end bot conversation. 
 
 ## Create a topic
 
 1. Go to the **Topics** tab on the side navigation pane to open the topics page.
 
-   ![Select Topics on the side navigation menu.](media/topics-menu.png "Select Topics on the side navigation menu")
+   :::image type="content" source="media/topics-menu.png" alt-text="Select Topics on the side navigation menu." border="false":::
 
 1. On the topics page, select **New topic**.
 
-   ![Select New topic at the top of the Topics page.](media/topics-new.png "Select New topic at the top of the Topics page")
+   :::image type="content" source="media/topics-new.png" alt-text="Select New topic at the top of the Topics page." border="false":::
 
 1. Specify a name, description, and one or more trigger phrases for the topic.
 
    A trigger phrase is a phrase that a customer enters in the chat window to start a conversation with the bot. Once the conversation is started, the conversation follows the path you define. You can specify more than one trigger phrase for a topic. You can include punctuation in a trigger phrase, but it is best to use short phrases rather than long sentences.
 
-   ![The Topic details page contains a name, description, and trigger phrases.](media/topics-details-triggers.png "The Topic details page contains a name, description, and trigger phrases")
+   :::image type="content" source="media/topics-details-triggers.png" alt-text="The Topic details page contains a name, description, and trigger phrases." border="false":::
 
 1. Select **Save topic** to add the topic to the topics list.
 
@@ -83,7 +80,7 @@ You can edit both of these topic types in the same manner as for topics you crea
 
 1. In the topic details for the topic you want to edit, select **Go to authoring canvas**.
 
-   ![The Go to authoring canvas is to the side of the trigger phrases.](media/topics-details-canvas.png "The Go to authoring canvas is to the side of the trigger phrases")
+   :::image type="content" source="media/topics-details-canvas.png" alt-text="The Go to authoring canvas is to the side of the trigger phrases." border="false":::
 
 1. Power Virtual Agents opens the topic in the authoring canvas and displays the topic's trigger phrases. The authoring canvas is where you define the conversation path between a customer and the bot.
 
@@ -94,7 +91,7 @@ You can edit both of these topic types in the same manner as for topics you crea
 
 1. You can add additional nodes by selecting the **Plus** (**+**) icon on the line or branch between or after a node.
 
-   ![Screenshot of adding a node.](media/handoff-add-node.png "Screenshot of adding a node")
+   :::image type="content" source="media/handoff-add-node.png" alt-text="Screenshot of adding a node." border="false":::
    
 1. You can also move or change the paths between a node by clicking and dragging the node anchor, which looks like a small circle on top of the node. When dragging, you'll see a dotted line indicating the original path. You can also double-click the anchor and then select the new place for the anchor (you won't see a dotted line).
 
@@ -125,7 +122,7 @@ Additionally, you can **Add a condition** when inserting a node after a **Questi
 
 1. To have the bot ask a question and get a response from the user, select **+** to add a node, and then **Ask a question** to add a new **Question** node.
 
-   ![Add a new question mode.](media/topics-question.png "Add a new question mode")
+   :::image type="content" source="media/topics-question.png" alt-text="Add a new question mode." border="false":::
 
 1. Enter the question phrase in the first text box, **Ask a question**.
 
@@ -149,11 +146,11 @@ Additionally, you can **Add a condition** when inserting a node after a **Questi
 > You can define synonyms for each option. This can help the bot to determine the correct option in case it isn't clear what the user's response should be mapped to.
 > 1. Select the menu icon on the top of the **Question** node, and then select **Options for user**.
 >
->    ![Select options for users.](media/topics-question-options.png "Select options for users")
+>    :::image type="content" source="media/topics-question-options.png" alt-text="Select options for users." border="false":::
 >
 > 1. Select the **Synonyms** icon for the option you want to add additional keywords to. 
 >
->    ![Select the synonyms icon.](media/topics-question-synonyms.png "Select the synonyms icon")
+>    :::image type="content" source="media/topics-question-synonyms.png" alt-text="Select the synonyms icon." border="false":::
 >
 > 1. Add the keywords individually, and then once you're done, select **Done** to return to the **Authoring canvas**.
 
@@ -297,15 +294,15 @@ You can also have the conversation [handed over to a live agent](advanced-hand-o
 
 1. At the end of a response that resolves the user's issue or answers the question, select **End the conversation**.
 
-    ![End the conversation.](media/topics-nodes-end.png "End the conversation")
+    :::image type="content" source="media/topics-nodes-end.png" alt-text="End the conversation." border="false":::
 
 1. To end with a customer satisfaction survey, select **End with survey**.
     
-    ![End with survey.](media/topics-nodes-survey.png "End with survey")
+    :::image type="content" source="media/topics-nodes-survey.png" alt-text="End with survey." border="false":::
 
 1. Select **Transfer To Agent** to insert a hand-off node that will link with your [configured hand-off product](configuration-hand-off-omnichannel.md). You can also enter a private message to the agent.
 
-    ![Transfer To Agent.](media/topics-nodes-handoff.png "Transfer To Agent")
+    :::image type="content" source="media/topics-nodes-handoff.png" alt-text="Transfer To Agent." border="false":::
 
 
 #### Add a condition
@@ -314,7 +311,7 @@ You can also have the conversation [handed over to a live agent](advanced-hand-o
 
 1. Choose the variable you want to use to determine if the bot conversation should branch at this point. For example, if you have set up [end-user authentication](advanced-end-user-authentication.md), then you might want to specify a different message if the user is signed on (which may have happened earlier in the conversation).
 
-    ![Choose a variable.](media/topics-branch.png "Choose a variable")
+    :::image type="content" source="media/topics-branch.png" alt-text="Choose a variable." border="false":::
 
 ### Delete nodes
 
@@ -322,7 +319,7 @@ You can also have the conversation [handed over to a live agent](advanced-hand-o
 
 1. Select **Delete**.
 
-    ![Select the menu icon and then the delete button.](media/topics-delete.png "Select the menu icon and then the delete button")
+    :::image type="content" source="media/topics-delete.png" alt-text="Select the menu icon and then the delete button." border="false":::
 
 ## Test and publish your bot
 

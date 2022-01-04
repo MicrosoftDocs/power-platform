@@ -84,7 +84,7 @@ In Power Automate, add the Microsoft Teams connector action **Post message in a 
 
 5.  Compose the message you want to send.
 
-![Post message action in Power Automate.](media/advanced-proactive-message/image1.png)
+:::image type="content" source="media/advanced-proactive-message/image1.png" alt-text="Post message action in Power Automate.":::
 
 When the flow is run, the recipient will receive the proactive message from the bot in Microsoft Teams.
 
@@ -102,7 +102,7 @@ In Power Automate, add the Microsoft Teams connector action **Post adaptive card
 
 5.  Provide the adaptive card JSON. See this [example JSON for a weather card](https://adaptivecards.io/samples/WeatherCompact.html).
 
-![Post adaptive card action in Power Automate.](media/advanced-proactive-message/image2.png)
+:::image type="content" source="media/advanced-proactive-message/image2.png" alt-text="Post adaptive card action in Power Automate.":::
 
 When the flow is run, the recipient will receive the adaptive card from the bot in Microsoft Teams.
 
@@ -122,15 +122,15 @@ In Power Automate, add the Microsoft Teams connector action **Post adaptive card
 
 6.  Select the bot that you want the card to be posted from.
 
-![Post adaptive card and wait for response action in Power Automate.](media/advanced-proactive-message/image3.png)
+:::image type="content" source="media/advanced-proactive-message/image3.png" alt-text="Post adaptive card and wait for response action in Power Automate.":::
 
-![Post adaptive card and wait for response update message.](media/advanced-proactive-message/image4.png)
+:::image type="content" source="media/advanced-proactive-message/image4.png" alt-text="Post adaptive card and wait for response update message.":::
 
 When the flow is run, the recipient will receive the adaptive card from the bot in Microsoft Teams that they can then provide a response to. 
 
 You can use the response from the recipient as dynamic content for later steps in the flow. For example, you could store their responses in a database.
 
-![Dynamic content selection in a flow.](media/advanced-proactive-message/image5.png)
+:::image type="content" source="media/advanced-proactive-message/image5.png" alt-text="Dynamic content selection in a flow.":::
 
 ## Send proactive messages or cards to multiple recipients
 
@@ -163,7 +163,7 @@ In this example, the bot will send a reminder to the members of a team to comple
 
 8.  At the **Recipient** field, select the dynamic content **User Principle Name** from the **List group members** action.
 
-![Send to teammates example.](media/advanced-proactive-message/image6.png)
+:::image type="content" source="media/advanced-proactive-message/image6.png" alt-text="Send to teammates example.":::
 
 When the flow runs, each user in the team will receive the proactive message in a private chat with the bot.
 
@@ -181,7 +181,7 @@ In this example, the bot will send a reminder to a security group to complete th
 
 5.  At the **Recipient** field, select the dynamic content **Group Members User Principle Name** from the **Get group members** action.
 
-![Send to a security group option.](media/advanced-proactive-message/image7.png)
+:::image type="content" source="media/advanced-proactive-message/image7.png" alt-text="Send to a security group option.":::
 
 When the flow runs, each user in the security group will receive the proactive message in a private chat with the bot.
 
@@ -193,24 +193,24 @@ By increasing parallelism, the bot will send to more recipients in parallel with
 
 1.  Select **. . .** from the **Apply to each** control and select **Settings**.
 
-![Settings under the more options menu.](media/advanced-proactive-message/image8.png)
+:::image type="content" source="media/advanced-proactive-message/image8.png" alt-text="Settings under the more options menu.":::
 
 2.  Turn on **Concurrency control** and set the degree of parallelism.
 
-![Slider control for setting the level or concurrency.](media/advanced-proactive-message/image9.png)
+:::image type="content" source="media/advanced-proactive-message/image9.png" alt-text="Slider control for setting the level or concurrency.":::
 
 ## Configure advanced options for proactive messages
 
 Power Virtual Agents allows you to control detail behavior on your bot under **Show advanced options** in the Microsoft Teams connector.
 
-![Expanded options panel in the connector.](media/advanced-proactive-message/image10.png)
+:::image type="content" source="media/advanced-proactive-message/image10.png" alt-text="Expanded options panel in the connector.":::
 
 ### Label sent message or card as a notification
 
 **Label as notification** controls whether the message or card will have the text **Notification via** in front of the bot's name. Labeling the bot's response allows the recipient to identify the bot's response to their inquiry. 
 
 
-![The setting shows Notification via bot name.](media/advanced-proactive-message/image11.png)
+:::image type="content" source="media/advanced-proactive-message/image11.png" alt-text="The setting shows Notification via bot name.":::
 
 ### When the recipient is currently in an active chat with the bot
 
