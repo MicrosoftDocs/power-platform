@@ -58,14 +58,6 @@ You can also install the bot for your own use in Microsoft Teams by selecting **
 >You can do so by typing *start over* in an existing conversation.  
 >This will restart the conversation with the latest content you have published.
 
-
-## In this section
-
-| Topic                                                                            | Description                                                                  |
-| -------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| [Add bot to Microsoft Teams](publication-add-bot-to-microsoft-teams-teams.md)    | Make your bot available to users in Microsoft Teams.                         |
-| [Create a privacy statement and terms of use](publication-terms-of-use-teams.md) | Create and link to a privacy statement and terms of use for bots you create. |
-
 ## Known limitations
 - Customer satisfaction survey is a text-only version in Microsoft Teams instead of an adaptive card.
 - Microsoft Teams can only render up to six suggested actions for user in one question node.
@@ -73,5 +65,12 @@ You can also install the bot for your own use in Microsoft Teams by selecting **
   - This applies to all channels, even if the channel or end-user-facing experience supports attachments (for example, if you're using the Direct Line API or Microsoft Teams).  
   - Attachments can be supported if the message is sent to a skill, where the skill bot supports the processing of attachments.  
   - See the [Use Microsoft Bot Framework skills topic](advanced-use-skills-teams.md) for more details on skills.
+
+## In this section
+
+| Topic                                                                            | Description                                                                  |
+| -------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| [Add bot to Microsoft Teams](publication-add-bot-to-microsoft-teams-teams.md)    | Make your bot available to users in Microsoft Teams.                         |
+| [Create a privacy statement and terms of use](publication-terms-of-use-teams.md) | Create and link to a privacy statement and terms of use for bots you create. |
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
