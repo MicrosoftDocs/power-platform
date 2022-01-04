@@ -44,7 +44,7 @@ Topic | Description
 [Configure hand off to Omnichannel for Customer Service](configuration-hand-off-omnichannel.md) | Seamlessly and contextually hand off bot conversations to live (human) agents using Omnichannel for Dynamics 365 Customer Service.
 [Configure your bot to automatically start the conversation](configure-bot-greeting.md) | Make your bot start the conversation automatically whenever the bot is loaded.
 [Customize the look and feel of your bot](customize-default-canvas.md) | Send and receive dynamic responses (such as adaptive cards and carousels) that you can custom render directly in the bot conversation.
-[Enable and configure Azure Bot Framework Skills](configuration-add-skills.md) | Extend your bot with Bot Framework Skills.
+[Enable and configure Azure Bot Framework skills](configuration-add-skills.md) | Extend your bot with Bot Framework skills.
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

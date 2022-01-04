@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/16/2021
+ms.date: 11/11/2021
 ms.subservice: admin
 ms.author: jimholtz 
 search.audienceType: 
@@ -48,7 +48,9 @@ Make sure you have the System Administrator or System Customizer security role o
 > |Use Skype for Business| Default: not enabled. |
 > |**Search**||  
 > |Dataverse search|Default: Off. If **On**, you can use Dataverse search to find records across multiple tables, sorted by relevance.|  
+> | Share anonymized search analytics with Microsoft | Default: Off. To help Microsoft improve Dataverse search, you can share your environment's Dataverse search queries in Dynamics 365 and Power Platform applications with Microsoft. More information: [Help improve Dataverse search](configure-relevance-search-organization.md#help-improve-dataverse-search)      |
 > |Quick Find record limits|Default: On. If **On**, if more than 10,000 records are found, a message will be displayed that suggests a more selective search. More information: [Configure Dataverse search for the organization](configure-relevance-search-organization.md)| 
+> | Use quick find view of an entity for searching on grids and sub-grids| Default Off. Select **Yes** to show the traditional Quick Find search in an entity grid.      |
 > |**Help features**||  
 > |Custom help for customizable tables|Default: Off. Select **On** to replace the default Help content with custom Help designed for your users. After you enable custom Help, you can enter a Global Custom Help URL.|  
 > |Global custom help URL| To replace the default Help with a single URL for all customizable record types (tables), enter the URL here. You also have the option of entering override URLs for each record type (table) for customizable record types. More information: [Create your own guided help](/powerapps/maker/model-driven-apps/create-guided-help-learning-path)|  

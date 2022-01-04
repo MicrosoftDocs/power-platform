@@ -59,7 +59,7 @@ Set **Shared with Everyone** to **True**, or select the **Number of Shared Users
 
 - Often apps are shared with the entire organization because it's the easy option. If the app is for a single department, job role, or group of people, you can help the maker by setting up an Azure Active Directory (Azure AD) group to share their app. Otherwise, (a) Your entire org will see the app in the Power Apps mobile player or on make.powerapps.com (even if it's not relevant to them), and (b) If a user doesn't have access to the underlying data source, they'll receive an error message when they try to open the app, which can cause an increase in support tickets and confusion.
 
-- Apps shared with a large number of individual users pose a different risk: if the app is for a specific job role or department, when a user leaves the department or job role they'll still see the app and be able to access the information. Therefore, we recommend sharing role-specific apps with an Azure AD group instead.
+- Apps shared with a large number of individual users pose a different risk: if the app is for a specific job role or department, when a user leaves the department or job role they'll still see the app and be able to access the information. Therefore, it is recommended to share role-specific apps with an Azure AD group instead.
 
 ### Identify orphaned apps
 

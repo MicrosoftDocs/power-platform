@@ -23,6 +23,7 @@ After you've become familiar with your environments and resources, you might sta
 
 [Watch an overview](https://www.youtube.com/embed/6bfaFsFtLow) of how to use the governance components solution.
 
+
 The governance components solution contains assets relevant to admins and makers. More information: [Set up governance components](setup-governance-components.md)
 
 ## Compliance processes

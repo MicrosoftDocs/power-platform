@@ -61,17 +61,13 @@ Using these steps, you'll set up an Azure AD app registration that will be used 
 
       ![Delegated permissions.](media/coe36.png "Delegated permissions")
 
-   1. Select **Application permissions**, and then select **ActivityFeed.Read** and **ServiceHealth.Read**.
-
-      ![Application permissions.](media/coe37.png "Application permissions")
+   1. Select **Application permissions**, and then select **ActivityFeed.Read**.
 
    1. Select **Add permissions**.
 
 1. Select **Grant Admin Consent for (your organization)**.
 
-   The API permissions now reflect delegated **ActivityFeed.Read**, and application **ActivityFeed.Read** and **ServiceHealth.Read** permissions, with a status of **Granted for _(your organization)_**.
-
-   ![API permissions.](media/coe38.png "API permissions")
+   The API permissions now reflect delegated **ActivityFeed.Read**, and application **ActivityFeed.Read** permissions, with a status of **Granted for _(your organization)_**.
 
 1. Select **Certificates and secrets**.
 
@@ -106,6 +102,7 @@ Now you'll configure and set up a custom connector that uses the [Office 365 Man
    >
    > More information: [Activity API operations](/office/office-365-management-api/office-365-management-activity-api-reference?preserve-view=true&view=o365-worldwide#activity-api-operations)
 
+1. Select **Security**.
 1. Select **Edit** at the bottom of the **OAuth 2.0** area to edit the authentication parameters.
 
    ![Edit OAuth configuration.](media/coe42.png "Edit OAuth configuration")
@@ -154,7 +151,7 @@ Go back to the custom connector to set up a connection to the custom connector a
 
    ![Custom connector Start Subscription.](media/coe43.png "Custom connector Start Subscription")
 
-1. Paste the **directory (tenant) ID**&mdash;copied earlier from the **App Registration** overview page in Azure AD&mdash;into the **Tenant** field, and then paste the **application (client) ID** into **PublisherIdentifier**.
+1. Paste the **directory (tenant) ID**&mdash;copied earlier from the **App Registration** overview page in Azure AD&mdash;into the **Tenant** field, and then paste the **Tenant ID** into **PublisherIdentifier**.
 
 1. Select **Test Operation**.
 
@@ -207,7 +204,7 @@ A Power Automate flow uses the custom connector, queries the audit log daily, an
     |TimeSegment-CountLimit | Must be a whole number to represent the limit on the number of chunks that can be created.<br> Default value: 60 |
 
     > [!IMPORTANT]
-    > We cannot assist in your attempts to configure these, they have been added as a courtesy for you to test and find settings that work for you. The default values provided work in a medium sized tenant.
+    > The default values provided work in a medium sized tenant. You may have to adjust the values multiple times for this to work for your tenant size.
 
     > [!IMPORTANT]
     > Learn how to about environment variables: [Update Environment Variables](faq.md#update-environment-variables)

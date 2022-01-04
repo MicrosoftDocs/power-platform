@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/21/2021
+ms.date: 11/30/2021
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -30,9 +30,8 @@ You can manage apps from either the [tenant level](#tenant-level-view-of-apps) o
 
 App management in the **Applications** tab of the Dynamics 365 admin center is now done from the tenant-level view of apps in the Power Platform admin center. Follow these steps to see a list of all licensed Dynamics 365 apps for your tenant.
 
-|Legacy app management  | New app management  |
-|---------|---------|
-| ![Legacy tenant view](media/app-management-legacy-application.png "Legacy tenant view")    | ![New tenant view](media/app-management-tenant-view-sm.png "New tenant view")        |
+> [!div class="mx-imgBorder"] 
+> ![New tenant view](media/app-management-tenant-view-sm.png "New tenant view")
 
 Follow these steps to see a list of all licensed applications for your tenant.
 
@@ -68,9 +67,8 @@ Follow these steps to see a list of all licensed applications for your tenant.
 
 In addition to the environment level, solution management can also be done from the environment-level view in the Power Platform admin center.
 
-|Legacy app management  | New app management  | 
-|---------|---------|
-| ![Legacy solution view](media/select-solution-upgrade2.png "Legacy solution view")  | ![New tenant view2](media/app-management-environment-view-sm.png "New tenant view2")        |
+> [!div class="mx-imgBorder"] 
+> ![New tenant view2](media/app-management-environment-view-sm.png "New tenant view2") 
 
 Follow these steps to see a list of all the licensed applications you installed for your environment.
 
@@ -99,9 +97,13 @@ The process to install an app depends on your view.
 
 ### Install an app in the tenant view
 
-1. From the [tenant-level view of apps](#tenant-level-view-of-apps), select an **Enabled** app, and then select **Install** from the top menu bar. 
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
-2. Select an environment, review the packages to be installed, agree to the terms of service, and then select **Install**.
+2. Select **Resources** > **Dynamics 365 apps** from the left-side menu.
+
+3. Select an **Enabled** app, and then select **Install** from the top menu bar. 
+
+4. Select an environment, review the packages to be installed, agree to the terms of service, and then select **Install**.
 
    > [!div class="mx-imgBorder"] 
    > ![Install app.](media/app-management-install-app2.png "Install app")
@@ -113,22 +115,43 @@ The process to install an app depends on your view.
 
 ### Install an app in the environment view
 
-1. From the [environment-level view of apps](#environment-level-view-of-apps), select an environment, under **Resources** select **Dynamics 365 apps**, and then select **Install app**. 
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
-2. Select an **Enabled** app, and then select **Next**.
+2. Select **Environments** and then select an environment.
+
+3. Under **Resources**, select **Dynamics 365 apps**.
+
+4. Select **Install app**. 
+
+5. Select an **Enabled** app, and then select **Next**.
 
    > [!div class="mx-imgBorder"] 
    > ![Select enabled app.](media/app-management-install-app-env-view.png "Select enabled app")
 
-3. Agree to the terms of service, and then select **Install**.
+6. Agree to the terms of service, and then select **Install**.
+
+## Troubleshooting installation error
+<!-- fwlink  2182141 -->
+If you see the following error:
+
+"Installing Dynamics 365 apps such as Dynamics 365 Sales and Dynamics 365 Customer Service is only supported on environments that have been created with a database with the option to **Enable Dynamics 365 apps** set to **Yes**. Try installing this application in an environment with a database and **Enable Dynamics 365 apps** enabled on it."
+
+> [!div class="mx-imgBorder"] 
+> ![Installing this app is only supported on environments that have been created with a database with option to enable apps.](media/install-app-error.png "Installing this app is only supported on environments that have been created with a database with option to enable apps.")
+
+You'll need to create a new environment as directed in [Create an environment with a database](create-environment.md#create-an-environment-with-a-database). In step 4, be sure to set **Enable Dynamics 365 apps** to **Yes**.
+
+> [!div class="mx-imgBorder"] 
+> ![Select Enable Dynamics 365 apps.](media/new-environment-page2-enable-apps-callout.png "Select Enable Dynamics 365 apps.")
 
 ## Troubleshooting a failed installation
+
 If the app installation has failed, select **Installation failed** from the environment-level view and review the troubleshooting details. 
 
 If it's necessary to [contact Support](support-overview.md), be sure to provide the details listed on the **Error details** page.
 
 > [!div class="mx-imgBorder"] 
-> ![Error details.](media/app-management-error-details.png "Error details")
+> ![Error details.](media/app-management-error-details.png "Error details.")
 
 ## Delete an app
 For information on how to delete an app, see [Delete a model-driven app](/powerapps/maker/model-driven-apps/delete-model-driven-app). 
@@ -145,9 +168,12 @@ Filters are applied to the **Select an environment** drop-down list as follows:
 3. Displays environments that are only in a ready state. 
 
 <!-- 
-### See also
-[Portal administration with Power Platform admin center](/powerapps/maker/portals/admin/power-platform-admin-center) 
--->
+### Error: Installing this app is only supported in environments that’ve been created with a database with the option to enable one or more Dynamics 365 apps  
 
+Installing Dynamics 365 applications, such as Dynamics 365 Sales, Dynamics 365 Customer Service etc., is only supported on environments that have been created with a database with the option to enable one or more D365 Applications. Try installing this application in an environment with a database and Dynamics Applications enabled on it. 
+
+> [!div class="mx-imgBorder"] 
+> ![Select Enable Dynamics 365 apps.](media/new-environment-page2-enable-apps-callout.png "Select Enable Dynamics 365 apps.")
+-->
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
