@@ -1,7 +1,7 @@
 ---
 title: "Security concepts in Microsoft Dataverse | MicrosoftDocs"
 description: Provides detailed information about the security model and concepts in Microsoft Dataverse.
-ms.date: 10/29/2021
+ms.date: 01/04/2022
 ms.service: power-platform
 ms.topic: "article"
 author: jimholtz
@@ -121,7 +121,7 @@ In the above you can see the standard privilege types for each table Create, Rea
 
 In the above example, we have given organization level access to Contact which means that the user in Division A could see and update contacts owned by anyone. In fact, one of the most common administrative mistakes is getting frustrated with permissions and just over granting access. Very quickly a well-crafted security model starts looking like swiss cheese (full of holes!).
 
-## Teams
+## Teams (including [group teams](manage-group-teams.md))
 
 Teams are another important security building block. Teams are owned by a Business Unit. Every Business Unit has one default team that is automatically created when the Business Unit is created. The default team members are managed by Dataverse and always contain all users associated with that Business Unit. You can’t manually add or remove members from the default team, they're dynamically adjusted by the system as [new users are associated/disassociated with business units](./create-edit-business-units.md). There are two types of teams, owning teams and access teams.
 - Owning Teams can own records, which give any team member direct access to that record. Users can be members of multiple teams. This will allow it to be a powerful way of granting permissions to users in a broad way without micromanaging access at the individual user level. 
