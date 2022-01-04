@@ -583,7 +583,7 @@
         href: security/authenticate-services.md
       - name: Data storage in Power Platform
         href: security/data-storage.md
-      - name: Connect to data sources
+      - name: Connecting and authenticating to data sources
         href: security/connect-data-sources.md
       - name: Security and governance considerations
         href: governance-considerations.md 
@@ -666,17 +666,7 @@
           - name: Encryption
             href: data-encryption.md
           - name: Manage encryption key
-            href: manage-encryption-key.md 
-      # - name: Configure security for individual components
-      #   items:
-      #   - name: Security for Power BI
-      #     href: security/power-bi.md
-      #   - name: Security for Power Apps
-      #     href: security/power-apps.md
-      #   - name: Security for Power Automate
-      #     href: security/power-automate.md
-      #   - name: Security for Power Virtual Agents
-      #     href: security/pva.md
+            href: manage-encryption-key.md      
       - name: Security FAQs
         href: security/faqs.md
     - name: SharePoint and Power Apps
