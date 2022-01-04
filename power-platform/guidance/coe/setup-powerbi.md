@@ -140,4 +140,8 @@ The dashboard can be configured to use embedded apps to enable you to drive acti
 
 Republish the dashboard, and view it under [app.powerbi.com](https://app.powerbi.com/).
 
+## It looks like I found a bug with the CoE Starter Kit; where should I go?
+
+To file a bug against the solution, go to [aka.ms/coe-starter-kit-issues](https://aka.ms/coe-starter-kit-issues).
+
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

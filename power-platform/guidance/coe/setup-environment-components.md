@@ -65,4 +65,8 @@ Here is the full list of environment variables that impact the environment reque
 |------|---------------|------|
 |Environment Request Admin App Url | Update this environment variable with the URL for the **Admin - Environment Request** canvas app. See: [Get App URL – Production Environment](faq.md#get-a-power-apps-url-from-a-production-environment) or [Get App URL – Teams Environment](faq.md#add-apps-to-microsoft-teams) | n/a |
 
+## It looks like I found a bug with the CoE Starter Kit; where should I go?
+
+To file a bug against the solution, go to [aka.ms/coe-starter-kit-issues](https://aka.ms/coe-starter-kit-issues).
+
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

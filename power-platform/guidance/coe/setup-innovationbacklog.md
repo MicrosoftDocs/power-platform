@@ -166,5 +166,8 @@ Before you begin:
 
 You can now [use the Innovation Backlog app](innovationbacklog-components.md).
 
+## It looks like I found a bug with the CoE Starter Kit; where should I go?
+
+To file a bug against the solution, go to [aka.ms/coe-starter-kit-issues](https://aka.ms/coe-starter-kit-issues).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

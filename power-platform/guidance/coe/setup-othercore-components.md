@@ -61,4 +61,8 @@ Here is the full list of environment variables that impact other components. You
 |------|---------------|------|
 |Community URL  | Link to your internal Microsoft Power Platform community (for example, Yammer or Teams)  | n/a|
 
+## It looks like I found a bug with the CoE Starter Kit; where should I go?
+
+To file a bug against the solution, go to [aka.ms/coe-starter-kit-issues](https://aka.ms/coe-starter-kit-issues).
+
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -114,4 +114,8 @@ Environment variables are used to store application and flow configuration data 
 | Flow Approvals URL | (Optional) Link to Power Automate's Approval page for your CoE Environment. If included, communication about old objects which are considered no longer useful will include the link to make cleanup easier. To get the URL Browse to flows.microsoft.com for your CoE Environment > Action Items > Approvals. URL should end in **approvals/received** |  n/a |
 | ProductionEnvironment | Set to No if you have installed the solution for development/test purposes. This will send approvals to the admin email instead of the maker. | Yes |
 
+## It looks like I found a bug with the CoE Starter Kit; where should I go?
+
+To file a bug against the solution, go to [aka.ms/coe-starter-kit-issues](https://aka.ms/coe-starter-kit-issues).
+
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

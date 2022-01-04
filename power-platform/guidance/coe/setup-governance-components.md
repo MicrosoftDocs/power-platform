@@ -110,4 +110,8 @@ Environment variables are used to store application and flow configuration data 
 | Compliance – Chatbots – Number Launches | If the chatbot is launched this many or more times, makers are asked for a business justification | 50 |
 | Exclude Default environment from Compliance Request flows | **(DEPRECATED)** Please use [exempt environments from the compliance process](#exempt-environments-from-the-compliance-process) instead. Set to Yes if you want to Exclude the Default environment from the Admin \| Compliance Details request flows | No |
 
+## It looks like I found a bug with the CoE Starter Kit; where should I go?
+
+To file a bug against the solution, go to [aka.ms/coe-starter-kit-issues](https://aka.ms/coe-starter-kit-issues).
+
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

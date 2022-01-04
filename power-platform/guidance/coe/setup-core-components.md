@@ -292,4 +292,8 @@ Environment variables are used to store application and flow configuration data 
 | ProductionEnvironment | Set to No if you are creating a development/test environment. This will allow some flows to set target users to the admin instead of resource owners.| Yes |
 | TenantID | Your Azure Tenant ID.| n/a|
 
+## It looks like I found a bug with the CoE Starter Kit; where should I go?
+
+To file a bug against the solution, go to [aka.ms/coe-starter-kit-issues](https://aka.ms/coe-starter-kit-issues).
+
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
