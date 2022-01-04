@@ -35,7 +35,7 @@ The consumption of the capacity isn't reported at the tenant level, but can be s
 
 1. Go to the **Billing** tab.
 
- ![Billed session view.](media/analytics-billed-sessions.png "Billed session view")
+ :::image type="content" source="media/analytics-billed-sessions.png" alt-text="Billed session view." border="false":::
 
 You can change the date range to filter the **Total billed sessions over time** chart. You can also see the total billed sessions and trend percentage next to the chart.
 

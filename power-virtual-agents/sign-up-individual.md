@@ -24,8 +24,8 @@ Follow the instructions below to sign up for a Power Virtual Agents trial. After
 
 2. Enter your email address and then select **Sign up**.
 
-> [!div class="mx-imgBorder"]
-> ![sign up portal get started.](media/sign-up-get-started.jpg)
+
+:::image type="content" source="media/sign-up-get-started.jpg" alt-text="sign up portal get started." border="false":::
 
 You'll then be taken to the Power Virtual Agents sign-in page and you can start using your account.
 
@@ -36,11 +36,11 @@ You'll then be taken to the Power Virtual Agents sign-in page and you can start 
 
 
 ## Trial expiration
-> ![Trial expiration notification.](media/trial_expiration_notification.jpg)
+:::image type="content" source="media/trial_expiration_notification.jpg" alt-text="Trial expiration notification.":::
 
 After you finish the sign-up process, your time-limited free trial for Power Virtual Agents will start. You will see notification and receive emails to inform you about the trial expiry. When the trial expires, you will be able to extend the trial by 30 days. 
 
-> ![License invalid page. Extend trial.](media/extend_trial_screen.jpg)
+:::image type="content" source="media/extend_trial_screen.jpg" alt-text="License invalid page. Extend trial.":::
 
 > [!NOTE]
 > Your bot will continue to work for up to 90 days after your trial has expired so you don't have to worry about extending at the exact time of expiry. 
@@ -54,8 +54,7 @@ You can't sign up for Power Virtual Agents using a personal email address. You n
 ### Self-service sign-up disabled
 If you receive a message that your sign-up couldn't be completed it means your organization's IT administrator has disabled self-service sign-up for Power Virtual Agents. To finish signing up, contact your IT administrator and ask them to follow the instructions to [enable sign-up](requirements-licensing.md#trial-plans).
 
-> [!div class="mx-imgBorder"]
-> ![Viral sign up disabled with message saying Sorry we can't finish signing you up.](media/licensing-sign-up-disabled.jpg)
+:::image type="content" source="media/licensing-sign-up-disabled.jpg" alt-text="Viral sign up disabled with message saying Sorry we can't finish signing you up." border="false":::
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
