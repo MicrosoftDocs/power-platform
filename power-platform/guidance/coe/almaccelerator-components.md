@@ -34,7 +34,7 @@ Makers can use the ALM Accelerator for Makers app to view all their projects, an
 
 This app uses Microsoft Dataverse and a premium license is required for every app user.
 
-1. Go to [make.powerapps.com](https://make.powerapps.com>).
+1. Go to [make.powerapps.com](https://make.powerapps.com).
 1. On the left pane, select **Solutions**.
 1. Select the **Power Platform GitHub ALM** solution, and then select **ALM Accelerator for Makers**. You might need to open the app in a private browser session if the app fails to load. The app dashboard shows all projects created by your user.
 
