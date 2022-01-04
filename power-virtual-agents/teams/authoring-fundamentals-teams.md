@@ -35,9 +35,8 @@ Topics are discrete conversation paths that, when used together within a single 
 
 ## Accessibility
 
-Microsoft wants to provide the best possible experience for all customers, including customers with disabilities. The bot authoring canvas is built to be accessible from the get-go. 
+The bot authoring canvas is built for accessibility in accordance with [Microsoft Accessibility Guidelines](https://www.microsoft.com/accessibility/), and supports standard navigational patterns. For complex scenarios, users who author content with keyboard navigation can use the following routing anchors.
 
-In general, using the authoring canvas follows standard navigation patterns. For complex scenarios, we've built keyboard shortcuts tailored to help users authoring content using keyboard navigation.
 In some instances, these shortcuts [may be overwritten by Microsoft Teams shortcuts](https://support.microsoft.com/office/keyboard-shortcuts-for-microsoft-teams-2e8e2a70-e8d8-4a19-949b-4c36dd5292d2).
 
 ###  Routing anchors

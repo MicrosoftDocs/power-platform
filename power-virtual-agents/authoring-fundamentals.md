@@ -39,9 +39,7 @@ You can also [choose what language you want your bot to use](authoring-language-
 
 ## Accessibility
 
-Microsoft wants to provide the best possible experience for all customers, including customers with disabilities. The bot **Authoring canvas** is built to be accessible from the get-go. 
-
-In general, using the authoring canvas follows standard navigation patterns. For complex scenarios, we've built keyboard shortcuts tailored to help users authoring content using keyboard navigation.
+The bot authoring canvas is built for accessibility in accordance with [Microsoft Accessibility Guidelines](https://www.microsoft.com/accessibility/), and supports standard navigational patterns. For complex scenarios, users who author content with keyboard navigation can use the following routing anchors.
 
 ###  Routing anchors
 Press enter or space on a route anchor to go into editing mode for that route. Once in the editing mode, you can tab to other node anchors. Once the anchor is selected, you can:
