@@ -88,6 +88,20 @@
         href: check-online-service-health.md
       - name: Enabling preview features
         href: what-are-preview-features-how-do-i-enable-them.md
+      - name: Requirements
+        items:
+        - name: Requirements/supported configurations
+          href: online-requirements.md
+        - name: Plan for deployment and administration
+          href: plan-for-deployment-and-administration.md
+        - name: Supported web browsers and mobile devices
+          href: supported-web-browsers-and-mobile-devices.md
+        - name: Web application requirements
+          href: web-application-requirements.md
+        - name: Support end for Internet Explorer
+          href: support-end-internet-explorer.md
+        - name: Server cipher suites and TLS requirements
+          href: server-cipher-tls-requirements.md
       - name: Unified Interface
         items:
         - name: About Unified Interface
@@ -440,11 +454,13 @@
         items:
         - name: "Preview: Tenant-level analytics (default)" 
           href: tenant-level-analytics.md
-        # Comment out the next two topics before publish
+        # Comment out the next topics before publish
         # - name: "Preview: Power Apps analytics report"
         #   href: powerapps-analytics-reports.md
-        # - name: "Preview: Power Automate analytics report"
+        # - name: "Preview: Tenant-level analytics for Power Automate"
         #   href: power-automate-analytics-reports.md
+        # - name: "Preview: Power Apps license utilization"
+        #   href: powerapps-license-utilization.md
       - name: Data export
         items:
         - name: "Preview: Export Power Apps inventory and usage data"
@@ -559,20 +575,6 @@
         href: wp-task-automation-powershell.md
       - name: Data loss prevention SDK 
         href: data-loss-prevention-sdk.md
-    - name: Requirements
-      items:
-      - name: Requirements/supported configurations
-        href: online-requirements.md
-      - name: Plan for deployment and administration
-        href: plan-for-deployment-and-administration.md
-      - name: Supported web browsers and mobile devices
-        href: supported-web-browsers-and-mobile-devices.md
-      - name: Web application requirements
-        href: web-application-requirements.md
-      - name: Support end for Internet Explorer
-        href: support-end-internet-explorer.md
-      - name: Server cipher suites and TLS requirements
-        href: server-cipher-tls-requirements.md
     - name: Security and governance
       items:
       - name: Security and governance
@@ -937,8 +939,6 @@
         - name: Dataverse customer data 
       # line 938 to 970 - is being reorged but keep until hear from Marty
           href: common-data-service-gdpr-dsr-guide.md
-    - name: Power Apps US Government
-      href: powerapps-us-government.md
     - name: Datacenter regions
       href: new-datacenter-regions.md
       items: 
@@ -962,10 +962,13 @@
         href: about-microsoft-cloud-india.md
       - name: Japan
         href: about-microsoft-cloud-japan.md
-      - name: Dynamics 365 US Government
-        href: microsoft-dynamics-365-government.md
-        items:
-        - name: Dynamics 365 US Government - Feature availability
+      - name: U.S Government 
+        items: 
+        - name: Dynamics 365 service description
+          href: microsoft-dynamics-365-government.md
+        - name: Power Apps service description
+          href: powerapps-us-government.md
+        - name: Dynamics 365 US Government feature availability 
           href: government-feature-availability.md
       - name: Geo to geo migrations
         href: geo-to-geo-migrations.md    

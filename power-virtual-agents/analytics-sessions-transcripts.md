@@ -116,7 +116,7 @@ Power BI refreshes data from the Dataflow and all compute infrastructure is mana
 
 ### Azure Data Lake Store (ADLS) + Synapse approach
 
-If data size in the Standard Azure Data Lake Store approach causes slow refreshes or other operational problems, you can use [Azure Synapse Analytics](https://azure.microsoft.com/en-us/services/synapse-analytics/) and integrate it [into Power BI](https://powerbi.microsoft.com/en-us/blog/announcing-azure-synapse-analytics-public-preview/).
+If data size in the Standard Azure Data Lake Store approach causes slow refreshes or other operational problems, you can use [Azure Synapse Analytics](https://azure.microsoft.com/services/synapse-analytics/) and integrate it [into Power BI](https://powerbi.microsoft.com/en-us/blog/announcing-azure-synapse-analytics-public-preview/).
 
 :::image type="content" source="media/analytics-sessions-transcripts/transcripts-asynapse.png" alt-text="Diagram of data flowing from Dataverse into Azure Data Lake and being processed by Azure Synapse and Power Platform.":::
 
