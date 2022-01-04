@@ -113,7 +113,7 @@ These topics fall into two categories:
 
    :::image type="content" source="media/handoff-add-node.png" alt-text="Screenshot of adding a node." border="false":::
    
-1. You can also move or change the paths between a node by clicking and dragging the node anchor, which looks like a small circle on top of the node. When dragging, you'll see a dotted line indicating the original path. You can also double-click the anchor and then select the new place for the anchor (you won't see a dotted line).
+1. You can also move or change the paths between a node by clicking and dragging the node anchor, which looks like a small circle on top of the node. When dragging, you'll see a dotted line indicating the original path.
 
     :::image type="content" source="media/move-anchor-node.png" alt-text="Screenshot of moving a node's anchor.":::
 
