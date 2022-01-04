@@ -298,6 +298,7 @@ This options allows end users to add the bot to any team that they are part of w
 5. Select **Edit details**
 
 6. Check **Allow your users to add this bot to a team** checkbox.
+
    :::image type="content" source="media/teams-allow-end-users-to-add-to-team.png" alt-text="Checkbox is checked to allow end user to add bot to teams that they are part of":::
 
 >[!IMPORTANT]
