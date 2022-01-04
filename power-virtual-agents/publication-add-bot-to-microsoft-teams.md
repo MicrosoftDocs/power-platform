@@ -280,7 +280,7 @@ After enabling this option, end users can add the bot to any team that they are 
    :::image type="content" source="media/teams-allow-end-users-to-add-to-team.png" alt-text="Checkbox is checked to allow end user to add bot to teams that they are part of":::
 
 >[!IMPORTANT]
->The bot will be configured to allow everyone in the organization to chat with it. This ensure the bot allows users from different teams have permission to chat with the bot for all teams the end users add the bot to. It is highly recommended to not change the security setting of the bot after enabling this capability to prevent users seeing permission errors when interacting with the bot in team channels.
+>The bot will be configured to allow everyone in the organization to chat with it. This ensure all team members have permission to chat with the bot when end users add the bot to a team that they are part of. It is highly recommended to not change the security setting of the bot after enabling this capability to prevent users seeing permission errors when interacting with the bot in team channels.
 
 5. Select **Save**. End users who install bot will now see the option to add bot to a team.
 >[!NOTE]
