@@ -92,7 +92,7 @@ This is the first step of the installation process and is required for every oth
     |PowerApp Maker environment variable | The maker URL used by PowerApps for your cloud, including trailing slash. Here are examples:<br> For a US environment: <https://make.powerapps.com/> <br> For a GCC environment: <https://make.gov.powerapps.us/> <br>For a GCC High environment: <https://make.high.powerapps.us/> |
     |PowerApp Player environment variable<br>For a DoD environment: <https://make.apps.appsplatform.us/> | n/a |
     |PowerApp Player environment variable | The player URL used by PowerApps for your cloud, including trailing slash. Here are examples:<br> For a US environment: <https://apps.powerapps.com/> <br> For a GCC environment: <https://apps.gov.powerapps.us/> <br>For a GCC High environment: <https://apps.gov.powerapps.us/> <br>For a DoD environment: <https://play.apps.appsplatform.us> | n/a |
-    |Power Automate environment variable | The URL used by flow for your region. Here are examples:<br> For a US environment: <https://us.flow.microsoft.com/manage/environments/> <br> For a Canadian environment: <https://canada.flow.microsoft.com/manage/environments/> <br>For an EMEA environment: <https://emea.flow.microsoft.com/manage/environments/> <br>For a GCC environment: <https://gov.flow.microsoft.us/manage/environments/> <br> For a GCC High environment: <https://high.flow.microsoft.us/manage/environments><br> For a DoD environment: <https://flow.appsplatform.us/manage/environments/><br>If your region is not listed here, navigate to [flow.microsoft.com](https://flow.microsoft.com) and copy the URL the page directs to from the browser.| n/a |
+    |Power Automate environment variable | The URL used by flow for your region. Here are examples:<br> For a US environment: <https://us.flow.microsoft.com/manage/environments/> <br> For a Canadian environment: <https://canada.flow.microsoft.com/manage/environments/> <br>For an EMEA environment: <https://emea.flow.microsoft.com/manage/environments/> <br> For Australia environment: <https://australia.flow.microsoft.com/manage/environments/> <br>For a GCC environment: <https://gov.flow.microsoft.us/manage/environments/> <br> For a GCC High environment: <https://high.flow.microsoft.us/manage/environments><br> For a DoD environment: <https://flow.appsplatform.us/manage/environments/><br>If your region is not listed here, navigate to [flow.microsoft.com](https://flow.microsoft.com) and copy the URL the page directs to from the browser.| n/a |
     | Power Platform Maker Microsoft 365 Group | The Admin \| Welcome Email flow sends a welcome email to onboard new makers and adds them to a Microsoft 365 group. You can use this group to send communications to your makers or invite them to a Yammer or Teams group. Configure the group ID here.| n/a |
     | TenantID | Your Azure Tenant ID.| n/a |
     | Command Center - Application Client ID | Application Client ID for the app registered to fetch M365 Service Messages. Leave empty on Import. | n/a |
@@ -173,7 +173,7 @@ Before you begin:
     |PowerApp Maker environment variable | The maker URL used by PowerApps for your cloud, including trailing slash. Here are examples:<br> For a US environment: <https://make.powerapps.com/> <br> For a GCC environment: <https://make.gov.powerapps.us/> <br>For a GCC High environment: <https://make.high.powerapps.us/> |
     |PowerApp Player environment variable<br>For a DoD environment: <https://make.apps.appsplatform.us/> | n/a |
     |PowerApp Player environment variable | The player URL used by PowerApps for your cloud, including trailing slash. Here are examples:<br> For a US environment: <https://apps.powerapps.com/> <br> For a GCC environment: <https://apps.gov.powerapps.us/> <br>For a GCC High environment: <https://apps.gov.powerapps.us/> <br>For a DoD environment: <https://play.apps.appsplatform.us> | n/a |
-    |Power Automate environment variable | The URL used by flow for your region. Here are examples:<br> For a US environment: <https://us.flow.microsoft.com/manage/environments/> <br> For a Canadian environment: <https://canada.flow.microsoft.com/manage/environments/> <br>For an EMEA environment: <https://emea.flow.microsoft.com/manage/environments/> <br>For a GCC environment: <https://gov.flow.microsoft.us/manage/environments/> <br> For a GCC High environment: <https://high.flow.microsoft.us/manage/environments><br> For a DoD environment: <https://flow.appsplatform.us/manage/environments/><br>If your region is not listed here, navigate to [flow.microsoft.com](https://flow.microsoft.com) and copy the URL the page directs to from the browser.| n/a |
+    |Power Automate environment variable | The URL used by flow for your region. Here are examples:<br> For a US environment: <https://us.flow.microsoft.com/manage/environments/> <br> For a Canadian environment: <https://canada.flow.microsoft.com/manage/environments/> <br>For an EMEA environment: <https://emea.flow.microsoft.com/manage/environments/> <br> For Australia environment: <https://australia.flow.microsoft.com/manage/environments/><br>For a GCC environment: <https://gov.flow.microsoft.us/manage/environments/> <br> For a GCC High environment: <https://high.flow.microsoft.us/manage/environments><br> For a DoD environment: <https://flow.appsplatform.us/manage/environments/><br>If your region is not listed here, navigate to [flow.microsoft.com](https://flow.microsoft.com) and copy the URL the page directs to from the browser.| n/a |
     | Power Platform Maker Microsoft 365 Group | The Admin \| Welcome Email flow sends a welcome email to onboard new makers and adds them to a Microsoft 365 group. You can use this group to send communications to your makers or invite them to a Yammer or Teams group. Configure the group ID here.| n/a |
     | TenantID | Your Azure Tenant ID.| n/a |
     | Command Center - Application Client ID | Application Client ID for the app registered to fetch M365 Service Messages. Leave empty on Import. | n/a |
@@ -227,17 +227,22 @@ When you first set up the CoE Starter Kit, enable these flows in a specific orde
     1. Select **Installed apps**.
     1. Select **See all** for Center of Excellence - Core Components.
     1. Select **Cloud flows**.
-1. Turn on: CLEANUP HELPER - Check Deleted (Cloud Flows), CLEANUP HELPER - Check Deleted (Model Driven Apps), CLEANUP HELPER - Check Deleted (Canvas Apps) and CLEANUP HELPER - Check Deleted (PVA).
-1. Turn on: CLEANUP - Admin \| Sync Template v3 (Check Deleted).
-1. Wait until it finishes before you turn on any other flows.
-1. Turn on: Admin \| Sync Template V3 (Connectors)
-1. Wait until it finishes before you turn on any other flows.
-1. Turn on the Admin \| Sync Template flows for the following object types: Apps, Custom Connectors, Desktop Flows, Flows, Model Driven Apps, and PVA
-1. Turn on Admin \| Sync Template v3.
-1. Wait for Admin \| Sync Template v3 to complete its run and then turn it back off. This will avoid write conflicts for large organizations.
-1. Check the Admin \| Sync Template flows for apps, flows and other resources and wait until all of these complete.
-1. Turn back on Admin \| Sync Template v3.
-1. Now you're ready to turn on all the other flows
+1. Turn on:
+    1. CLEANUP HELPER - Check Deleted (Cloud Flows)
+    2. CLEANUP HELPER - Check Deleted (Model Driven Apps)
+    3. CLEANUP HELPER - Check Deleted (Canvas Apps)
+    4. CLEANUP HELPER - Check Deleted (PVA)
+    5. CLEANUP HELPER - Check Deleted (Custom Connectors)
+3. Turn on: CLEANUP - Admin \| Sync Template v3 (Check Deleted).
+4. Wait until it finishes before you turn on any other flows.
+5. Turn on: Admin \| Sync Template V3 (Connectors)
+6. Wait until it finishes before you turn on any other flows.
+7. Turn on the Admin \| Sync Template flows for the following object types: Apps, Custom Connectors, Desktop Flows, Flows, Model Driven Apps, and PVA
+8. Turn on Admin \| Sync Template v3.
+9. Wait for Admin \| Sync Template v3 to complete its run and then turn it back off. This will avoid write conflicts for large organizations.
+10. Check the Admin \| Sync Template flows for apps, flows and other resources and wait until all of these complete.
+11. Turn back on Admin \| Sync Template v3.
+12. Now you're ready to turn on all the other flows
     1. Turn on all the flows starting with CLEANUP.
     1. Turn on and run the **Admin | Sync Template V3 Configure Emails** flow to populate the default texts for emails.
     1. Turn on the [Admin | Capacity Alerts](core-components.md#flows) if you would like to receive alerts when environments get close to approved capacity.
@@ -364,7 +369,7 @@ Environment variables are used to store application and flow configuration data 
     |PowerApp Maker environment variable | The maker URL used by PowerApps for your cloud, including trailing slash. Here are examples:<br> For a US environment: <https://make.powerapps.com/> <br> For a GCC environment: <https://make.gov.powerapps.us/> <br>For a GCC High environment: <https://make.high.powerapps.us/> |
     |PowerApp Player environment variable<br>For a DoD environment: <https://make.apps.appsplatform.us/> | n/a |
     |PowerApp Player environment variable | The player URL used by PowerApps for your cloud, including trailing slash. Here are examples:<br> For a US environment: <https://apps.powerapps.com/> <br> For a GCC environment: <https://apps.gov.powerapps.us/> <br>For a GCC High environment: <https://apps.gov.powerapps.us/> <br>For a DoD environment: <https://play.apps.appsplatform.us> | n/a |
-    |Power Automate environment variable | The URL used by flow for your region. Here are examples:<br> For a US environment: <https://us.flow.microsoft.com/manage/environments/> <br> For a Canadian environment: <https://canada.flow.microsoft.com/manage/environments/> <br>For an EMEA environment: <https://emea.flow.microsoft.com/manage/environments/> <br>For a GCC environment: <https://gov.flow.microsoft.us/manage/environments/> <br> For a GCC High environment: <https://high.flow.microsoft.us/manage/environments><br> For a DoD environment: <https://flow.appsplatform.us/manage/environments/><br>If your region is not listed here, navigate to [flow.microsoft.com](https://flow.microsoft.com) and copy the URL the page directs to from the browser.| n/a |
+    |Power Automate environment variable | The URL used by flow for your region. Here are examples:<br> For a US environment: <https://us.flow.microsoft.com/manage/environments/> <br> For a Canadian environment: <https://canada.flow.microsoft.com/manage/environments/> <br>For an EMEA environment: <https://emea.flow.microsoft.com/manage/environments/> <br> For Australia environment: <https://australia.flow.microsoft.com/manage/environments/><br>For a GCC environment: <https://gov.flow.microsoft.us/manage/environments/> <br> For a GCC High environment: <https://high.flow.microsoft.us/manage/environments><br> For a DoD environment: <https://flow.appsplatform.us/manage/environments/><br>If your region is not listed here, navigate to [flow.microsoft.com](https://flow.microsoft.com) and copy the URL the page directs to from the browser.| n/a |
     | Power Platform Maker Microsoft 365 Group | The Admin \| Welcome Email flow sends a welcome email to onboard new makers and adds them to a Microsoft 365 group. You can use this group to send communications to your makers or invite them to a Yammer or Teams group. Configure the group ID here.| n/a |
     | TenantID | Your Azure Tenant ID.| n/a |
     | Command Center - Application Client ID | Application Client ID for the app registered to fetch M365 Service Messages. Leave empty on Import. | n/a |

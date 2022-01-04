@@ -92,7 +92,7 @@ All flows in this solution depend on all environment variables' being configured
    | Exclude Default environment from Compliance Requests | Determines if the default environment is excluded in the Compliance Details request flow. <br> Value must be Yes or No. A default value of No is provided.  |
    | ProductionEnvironment | Determines if the environment is Production or Dev/Test. True (the default) will mean that the approvals are sent to app/flow owners. False will send those approvals to the admin email. |
    | Cleanup Old Objects App URL | (Optional) Link to the Cleanup Old Objects canvas app included in this solution. <br> If included, communication about old objects which are considered no longer useful will include the link to make cleanup easier |
-   | Flow Approvals URL | (Optional) Link to Power Automate's Approval page for your CoE Environment <br> If included, communication about old objects which are considered no longer useful will include the link to make cleanup easier. <br> To get the URL Browse to flows.microsoft.com for your CoE Environment > Action Items > Approvals. <br> URL should end in **approvals/received** |
+   | Flow Approvals URL | (Optional) Link to Power Automate's Approval page for your CoE Environment <br> If included, communication about old objects which are considered no longer useful will include the link to make cleanup easier. <br> To get the URL Browse to flow.microsoft.com for your CoE Environment > Action Items > Approvals. <br> URL should end in **approvals/received** |
 
 ## Activate the flows
 
@@ -103,11 +103,10 @@ This Governance Components solution contains flows that you'll need to manually 
 There are three child flows which will need their **Run only users** properties updated.
 
 - HELPER - CanvasAppOperations Gov
-- HELPER - CloudFlowOperations Gov
 - HELPER - ObjectOperations Gov
 - Request Orphaned Objects Reassigned (Child)
 
-For all three of these flows, go to the details page and click the **Run only users** edit button.
+For all of the above flows, go to the details page and click the **Run only users** edit button.
 
 You will see all the connections in the child flow. For each one, change the value to **Use this connection (userPrincipalName\@company.com)**. If there is no connection for any of the connectors, go to **Data** > **Connections**, and create one for the connector.
 
