@@ -59,11 +59,12 @@ You can also install the bot for your own use in Microsoft Teams by selecting **
 >This will restart the conversation with the latest content you have published.
 
 
- ## In this section
+## In this section
 
-
-- [Add bot to Microsoft Teams](publication-add-bot-to-microsoft-teams-teams.md) | Make your bot available to users in Microsoft Teams.
-- [Create a privacy statement and terms of use](publication-terms-of-use-teams.md) | Create and link to a privacy statement and terms of use for bots you create.
+| Topic                                                                            | Description                                                                  |
+| -------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| [Add bot to Microsoft Teams](publication-add-bot-to-microsoft-teams-teams.md)    | Make your bot available to users in Microsoft Teams.                         |
+| [Create a privacy statement and terms of use](publication-terms-of-use-teams.md) | Create and link to a privacy statement and terms of use for bots you create. |
 
 ## Known limitations
 - Customer satisfaction survey is a text-only version in Microsoft Teams instead of an adaptive card.
