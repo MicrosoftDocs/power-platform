@@ -34,6 +34,7 @@ You can:
 - Show the bot in the Microsoft Teams app store
    - Show the bot to your teammates or [shared users](admin-share-bots-teams.md) by adding it to the Microsoft Teams app store **Built by your colleagues** section
    - Show the bot with your organization by submitting the bot for admin approval to be featured in the Microsoft Teams app store **Built by your org** section
+- Add the bot to a team channel
 - Download the pre-generated Teams app manifest to distribute it within your Microsoft Teams tenant
 
 
