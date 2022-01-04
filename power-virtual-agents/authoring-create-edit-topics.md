@@ -2,7 +2,7 @@
 title: "Use topics to design a chatbot conversation"
 description: "The authoring canvas provides an intuitive, no-code way of creating a bot that can help answer user questions, perform actions, and solve issues."
 keywords: "PVA"
-ms.date: 11/01/2021
+ms.date: 01/04/2022
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -51,13 +51,10 @@ When you create a bot, a number of topics will be automatically created for you.
 
 :::image type="content" source="media/topics-system.png" alt-text="Four lesson topics and a number of system topics are in the Topics list.":::
 
-These are:
+These topics fall into two categories:
   
-  - Four prepopulated **User Topics** that are titled as lessons. These [lesson topics](authoring-template-topics.md) can be used to help understand simple to complex ways of using nodes to create bot conversations.
-  - A number of **System Topics**. These are prepopulated topics that you are likely to need during a bot conversation. We recommend you keep these and use them until you are comfortable with creating an end-to-end bot conversation.
-
-You can edit both of these topic types in the same manner as for topics you create; however, you cannot delete them.
-
+  - Four prepopulated **User Topics** that are titled as lessons. These [lesson topics](authoring-template-topics.md) can be used to help understand simple to complex ways of using nodes to create bot conversations. You can edit these topics in the same manner as for topics you create. You can also choose to delete them entirely.
+  - A number of **System Topics**. These are prepopulated topics that you are likely to need during a bot conversation. You can't delete, disable, or edit the trigger phrases of these topics, but you can customize the nodes on the authoring canvas. We recommend not customizing these topics until you are comfortable with creating an end-to-end bot conversation. 
 
 ## Create a topic
 
