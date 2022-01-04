@@ -280,12 +280,12 @@ After enabling this option, end users can add the bot to any team that they are 
    :::image type="content" source="media/teams-allow-end-users-to-add-to-team.png" alt-text="Checkbox is checked to allow end user to add bot to teams that they are part of":::
 
 >[!IMPORTANT]
->The bot will be configured to allow everyone in the organization to chat with it. This ensure all team members have permission to chat with the bot when end users add the bot to a team that they are part of. It is highly recommended to not change the security setting of the bot after enabling this capability to prevent users seeing permission errors when interacting with the bot in team channels.
+>The bot will be configured to allow everyone in the organization to chat with it. This ensures all team members have permission to chat with the bot when end users add the bot to a team that they are part of. It is highly recommended to not change the security setting of the bot after enabling this capability to prevent users seeing permission errors when interacting with the bot in team channels.
 
 5. Select **Save**. End users who install bot will now see the option to add bot to a team.
 >[!NOTE]
 >Microsoft Teams caches information so it could take a while before users see the option to add the bot to a team. You can refresh the browser or sign in and out of Microsoft Teams desktop client to reflect changes immediately.
->If you have previously [submitted bot for admin approval](#Submit-for-the-built-by-your-org-section), you will need to resubmit for admin to approve the changes for end users to add bot to their teams from Microsoft Teams app store Built by your org section.
+>If you have previously [submitted bot for admin approval](#Submit-for-the-built-by-your-org-section), you will need to resubmit for admin to approve the changes before end users can add bot to their teams from Microsoft Teams app store Built by your org section.
 
 
 #### Disallow end user to add the bot to teams they are part of
@@ -304,12 +304,12 @@ Disabling this option will prevent users from adding bot to a new team and will 
 5. Select **Save**.
 
 ### Configure bot's private greeting behavior when added to a team
-Private greeting from bot to user when added to a team is very powerful when you want team members to be able to have private conversations with the bot in 1:1 chat without needing to manually install the bot themselves. You can control bot's private greerting to user:
-1. When your bot is added to a team, privately message all members on the team. This is a great way to bot to greet every team member in Microsoft Teams Chat interface besides greeting in the team channel. This option is enabled by default.
-2. Message new members privately when they join a team where the bot has been added. This is a great behavior for the bot to be helpful to them the moment they are added to the team. This option is disabled by default.
+Private greeting from bot is very powerful when you want team members to be able to have 1:1 conversations with the bot without needing to manually install the bot themselves. You can control bot's private greerting behavior:
+1. When your bot is added to a team, privately message all members on the team. Bot will greet every team member in Microsoft Teams Chat interface besides greeting in the team channel. This option is enabled by default.
+2. Message new members privately when they join a team where the bot has been added. This allows new team members to immediately know about the bot when added to the team. This option is disabled by default.
 
 >[!IMPORTANT]
->Automatically greeting user in private chat is a very powerful tool. Consider how relevant the bot is to team members and make sure the bot's greeting let users understand what to do with it, find out its limitations and, most importantly, get comfortable interacting with it. Automatically greeting irrelevant user can cause spammy impression on the bot with users end up blocking the bot.
+>Automatically greeting user in private chat is a very powerful tool. Consider how relevant the bot is to team members and make sure the bot's greeting let users understand what to do with it, find out its limitations and, most importantly, get comfortable interacting with it. Automatically greeting irrelevant user can cause spammy impression on the bot that results in a negative experience and end users blocking the bot.
 
 1. Go to **Manage**, then **Channels** on the side navigation pane. 
 
