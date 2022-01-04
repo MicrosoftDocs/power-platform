@@ -302,6 +302,8 @@ This options allows end users to add the bot to any team that they are part of w
 7. Select **Save**. End users who install bot will now see the option to add bot to a team.
 >[!NOTE]
 >Microsoft Teams caches information so it could take a while before users see the option to add the bot to a team. You can refresh the browser or sign in and out of Microsoft Teams desktop client to reflect changes immediately.
+>If you have previously [submitted bot for admin approval](#Submit-for-the-built-by-your-org-section), you will need to resubmit for admin to approve the changes for end users to add bot to their teams from Microsoft Teams app store Built by your org section.
+
 
 #### Disallow end user to add the bot to teams they are part of
 Disabling this option will prevent users from adding bot to a new team and will not remove bot from teams that are already added to. Those bots will need to be manually [removed from the team](https://docs.microsoft.com/powerapps/teams/remove-your-apps). 
