@@ -90,11 +90,8 @@ The following questions are common security questions and answers for Power Plat
   - To be updated
   - Power Platform is built on top of Microsoft Azure. As such, Power Platform leverages [Azure DDoS Protection](https://docs.microsoft.com/en-us/azure/ddos-protection/ddos-protection-standard-features) to guard against Distributed Denial of Service (DDoS) attacks.
   
-  **Does Power Platform detect rooted Android devices?**
-  - To be updated
-
-  **Does Power Platform detect jailbroken iOS devices?**
-  - To be updated
+  **Does Power Platform detect jailbroken iOS devices and rooted Android devices to help with protecting organizational data?**
+  - The recommendation is to use Microsoft Intune, a Mobile Device Management (MDM) solution which can help protect organizational data by requiring users and devices to meet some requirements. For more details, please see Intune's [Compliance Policy settings](https://docs.microsoft.com/en-us/mem/intune/protect/device-compliance-get-started#compliance-policy-settings).
 
   **Why is the cookie scoped to parent domain?**
   - To be updated
