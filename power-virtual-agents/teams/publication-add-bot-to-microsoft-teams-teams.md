@@ -254,6 +254,93 @@ Before submitting the bot to your organization, make sure:
 >If your app doesn't appear in the **Built by your org** section even though it's marked as **Approved**, your Teams app might be caching information. 
 >Try signing out and back in again (if you're using the desktop app) or refreshing your browser (if you're using the Teams web app).
 
+## Add the bot to a team channel
+Microsoft Teams supports [adding bots into teams](https://docs.microsoft.com/microsoftteams/platform/bots/how-to/conversations/channel-and-group-conversations?tabs=dotnet) where team members can @mention the bot in channels under the team and allow teammates to see the response from the bot. This is great for scenarios where:
+1. Your bot supports collaboration scenario, for example sharing the latest sales report insight with the rest of the Sales team member in a team channel
+2. Allow every team member to engage with the bot in team channel or via private chat without needing to manually install the bot themselves
+
+You can add the bot directly into the team that the bot is created in or allow your end users to add the bot to any team that they are part of. Team members can [remove the bot from the team](https://docs.microsoft.com/powerapps/teams/remove-your-apps).
+
+### Add bot to the team it is created in
+When creating a bot in Power Virtual Agents Teams app, you will need to select a team for the bot to be created in. You can directly add the bot to the team so members of the team can interact with it. This is great for bots that are built just for that team. For example, an Accounting helper bot is created in Contoso Accounting team. The bot is added to the team to help accountants be more productive as they can now @mention the bot in channel conversations to share latest reports with their teammates.
+
+1. Go to the **Chatbot** tab.
+
+2. Open the bot you want to add to the team.
+
+3. On the side navigation pane, select **Publish**.
+
+4. Select **Make the bot available to others**.
+
+5. Select **Availability options**. 
+
+6. Select **Add to {team name}**
+
+7. Follow the steps to add the bot the taem and see **Available in your taem** confirmation
+
+### Allow end user to add the bot to teams they are part of
+This options allows end users to add the bot to any team that they are part of when adding the bot in Microsoft Teams. This is great for end users to engage with org-wide bots in team channel. For example, Contoso Hybrid work assistant bot can be added to any team. Everyone from those teams can ask the bot about their office building's availability in team channels.
+
+>[!NOTE]
+>Once enabled, any user who install the bot from Teams app store or via installation link will see the option to add the bot to a team
+
+1. Go to the **Chatbot** tab.
+
+2. Open the bot you want to allow end user to add to any team.
+
+3. On the side navigation pane, select **Publish**.
+
+4. Select **Make the bot available to others**.
+
+5. Select **Edit details**
+
+6. Check **Allow your users to add this bot to a team** checkbox.
+>[!IMPORTANT]
+>The bot will be configured to allow everyone in the organization to chat with it. This ensure the bot allows users from different teams have permission to chat with the bot for all teams the end users add the bot to. It is highly recommended to not change the security setting of the bot after enabling this capability to prevent users seeing permission errors when interacting with the bot in team channels.
+
+7. Select **Save**. End users who install bot will now see the option to add bot to a team.
+>[!NOTE]
+>Microsoft Teams caches information so it could take a while before users see the option to add the bot to a team. You can refresh the browser or sign in and out of Microsoft Teams desktop client to reflect changes immediately.
+
+#### Disallow end user to add the bot to teams they are part of
+Disabling this option will prevent users from adding bot to a new team and will not remove bot from teams that are already added to. Those bots will need to be manually [removed from the team](https://docs.microsoft.com/powerapps/teams/remove-your-apps). 
+
+1. Go to the **Chatbot** tab.
+
+2. Open the bot you want to disallow end user to add to any team.
+
+3. On the side navigation pane, select **Publish**.
+
+4. Select **Make the bot available to others**.
+
+5. Select **Edit details**.
+
+6. Uncheck **Allow your users to add this bot to a team** checkbox.
+
+7. Select **Save**.
+
+### Configure bot's private greeting behavior when added to a team
+Private greeting from bot to user when added to a team is very powerful when you want team members to be able to have private conversations with the bot in 1:1 chat without needing to manually install the bot themselves. You can control bot's private greerting to user:
+1. When your bot is added to a team, privately message all members on the team. This is a great way to bot to greet every team member in Microsoft Teams Chat interface besides greeting in the team channel. This option is enabled by default.
+2. Message new members privately when they join a team where the bot has been added. This is a great behavior for the bot to be helpful to them the moment they are added to the team. This option is disabled by default.
+
+>[!IMPORTANT]
+>Automatically greeting user in private chat is a very powerful tool. Consider how relevant the bot is to team members and make sure the bot's greeting let users understand what to do with it, find out its limitations and, most importantly, get comfortable interacting with it. Automatically greeting irrelevant user can cause spammy impression on the bot with users end up blocking the bot.
+
+1. Go to the **Chatbot** tab.
+
+2. Open the bot you want to download.
+
+3. On the side navigation pane, select **Publish**.
+
+4. Select **Make the bot available to others**.
+
+5. Select **Settings**
+
+6. Configure the private greeting options and select **Save**
+
+
+
 ## Download the bot's Teams app manifest (advanced)
 
 You can download the bot's Teams app manifest to make detail changes to the manifest directly and share with your admin or users in the tenant. You can also directly upload the app manifest into Microsoft Teams if your organization's policy allows you to [upload custom applications](/microsoftteams/platform/concepts/deploy-and-publish/apps-upload).
@@ -314,7 +401,7 @@ You can always reconnect your bot after disconnecting it by selecting **Turn on 
 
 
 ## Known limitations
-- Currently only the **Personal** scope is supported for Microsoft Teams, so users can only have a private conversation with the bot.
+- Currently only **Personal** and **Team** scope are supported for Microsoft Teams. **Group chat** is not supported.
 - [Setting the bot avatar icon](customize-default-canvas-teams.md) from the side navigation pane under **Manage** > **Details** will not show up for bots that are approved by an admin. Bots approved by an admin will use the app icon as the bot avatar.
 - Teams has [rate limiting](/microsoftteams/platform/concepts/bots/rate-limit) on bots. Depending on your business needs, you might want to keep your bot content concise for bots that are added to Microsoft Teams.
 - Disconnecting your bot might take a few minutes before the bot becomes unreachable by users on Microsoft Teams.
