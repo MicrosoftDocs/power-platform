@@ -97,8 +97,7 @@ The following questions are common security questions and answers for Power Plat
   - To be updated
 
   **How can we set the application session to timeout after, say, 15 minutes?**
-  - To be updated
-  - Power Platform uses Azure Active Directory (AAD) for Identity and Access Management. Power Platform follows AAD's [recommended configuration](https://docs.microsoft.com/en-us/azure/active-directory/develop/access-tokens#access-token-lifetime) for session management for optimal user experience. Together with upcoming AAD's Continuous Access Evaluation (CAE), the experience will be secure and performant for end users.
+  - Power Platform uses Azure Active Directory (AAD) for Identity and Access Management(IAM). Power Platform follows AAD's [recommended configuration](https://docs.microsoft.com/en-us/azure/active-directory/develop/access-tokens#access-token-lifetime) for session management for optimal user experience. Together with upcoming AAD's Continuous Access Evaluation (CAE), the experience will be secure, reliable, and performant for end users.
 
   **The application allows the same user to access from more than one machine/browser at the same time. How can we prevent that?**
   - To be updated
