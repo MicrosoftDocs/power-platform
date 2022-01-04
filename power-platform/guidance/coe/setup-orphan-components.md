@@ -1,6 +1,6 @@
 ---
 title: "Set up clean up for orphaned objects | MicrosoftDocs"
-description: "Learn how to set up the governance components of the CoE Starter Kit"
+description: "Learn how to set up the clean up for orphaned objects components of the CoE Starter Kit"
 author: manuelap-msft
 manager: devkeydet
 ms.service: power-platform

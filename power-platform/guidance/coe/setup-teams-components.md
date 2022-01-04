@@ -1,6 +1,6 @@
 ---
 title: "Set up Dataverse for Teams environment management | MicrosoftDocs"
-description: "Learn how to set up the governance components of the CoE Starter Kit"
+description: "Learn how to set up the Microsoft Teams governance components of the CoE Starter Kit"
 author: manuelap-msft
 manager: devkeydet
 ms.service: power-platform

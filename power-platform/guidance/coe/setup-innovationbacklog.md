@@ -31,7 +31,7 @@ The Innovation Backlog solution contains assets that are relevant to all users i
 
 ## Option 1: Import the solution into a Production environment
 
-Before you begin, review the [prerequisites](setup.md#prerequisites) for using the starter kit solution.
+Before you begin, review the [prerequisites](setup.md) for using the starter kit solution.
 
 - If you aren't already using the CoE Starter Kit, we recommend [creating a new environment](../../admin/create-environment.md) for CoE solutions.
 - If you are already using other CoE Starter Kit components, use the environment that you created as part of setting up the [core components](setup-core-components.md) for this solution.

@@ -57,7 +57,7 @@ In particular, consider the following:
 - **User persona**
   - Power Platform Users to be contacted by Power Platform Admins
 
-We recommend using three [Microsoft 365 groups](/microsoft-365/admin/create-groups/compare-groups?view=o365-worldwide#microsoft-365-groups) for this, one for each persona. This group type is an email enabled security group and can be associated with a Microsoft Team for collaboration between the people in the group.  
+We recommend using three [Microsoft 365 groups](/microsoft-365/admin/create-groups/compare-groups#microsoft-365-groups) for this, one for each persona. This group type is an email enabled security group and can be associated with a Microsoft Team for collaboration between the people in the group.  
 
 ## Prepare your environment
 
@@ -196,7 +196,7 @@ Install the updates by importing the latest version to the environment where you
     ![Check the solution history for progress](media/coe-upgrade3.png "Check the solution history for progress")
   The upgrade will be complete when the end time is no longer empty.
 
-    ![Check the solution history for progress](media/coe-upgrade2.png "Check the solution history for progress")
+    ![Check the end time for the solution import is not empty.](media/coe-upgrade2.png "Check the end time for the solution import is not empty")
 1. The [solution history](/powerapps/maker/data-platform/solution-history#view-solution-history) will also show you if the upgrade has failed and why. Raise an [issue](https://aka.ms/coe-starter-kit-issues) and provide the [solution operation error details](/powerapps/maker/data-platform/solution-history#view-solution-operation-error-details).
 
     ![View solution operation error details](media/coe-upgrade4.png "View solution operation error details")

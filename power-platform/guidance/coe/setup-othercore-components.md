@@ -1,6 +1,6 @@
 ---
 title: "Set up other core components | MicrosoftDocs"
-description: "Setup instructions for how to set up the core admin components solution of the CoE Starter Kit"
+description: "Setup instructions for how to set up other parts of the core admin components solution of the CoE Starter Kit"
 author: manuelap-msft
 manager: devkeydet
 ms.service: power-platform
