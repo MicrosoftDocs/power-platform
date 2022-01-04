@@ -40,13 +40,13 @@ You can go beyond basic authoring in Power Virtual Agents by taking advantage of
 
 ## In this section
 
-Topic | Description
-- | -
-[Use entities and slot filling](advanced-entities-slot-filling-teams.md) | Use prebuilt entities, and define custom ones, to expand the types of information the bot can parse.
-[Use variables](authoring-variables-teams.md) | Retrieve information for consistent usage across topics.
-[Create topics from existing support content](advanced-create-topics-from-web-teams.md) | Utilize your existing web content to quickly create bots and topics.
-[Add end-user authentication](advanced-end-user-authentication-teams.md) | Allow users to sign in from within the bot.
-[Add actions using Power Automate](advanced-flow-teams.md) | Connect to existing and create new flows that let you automate and send and receive data.
+| Topic                                                                                   | Description                                                                                          |
+| --------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| [Use entities and slot filling](advanced-entities-slot-filling-teams.md)                | Use prebuilt entities, and define custom ones, to expand the types of information the bot can parse. |
+| [Use variables](authoring-variables-teams.md)                                           | Retrieve information for consistent usage across topics.                                             |
+| [Create topics from existing support content](advanced-create-topics-from-web-teams.md) | Utilize your existing web content to quickly create bots and topics.                                 |
+| [Add end-user authentication](advanced-end-user-authentication-teams.md)                | Allow users to sign in from within the bot.                                                          |
+| [Add actions using Power Automate](advanced-flow-teams.md)                              | Connect to existing and create new flows that let you automate and send and receive data.            |
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
