@@ -35,9 +35,8 @@ Topics are discrete conversation paths that, when used together within a single 
 
 ## Accessibility
 
-Microsoft wants to provide the best possible experience for all customers, including customers with disabilities. The bot authoring canvas is built to be accessible from the get-go. 
+The bot authoring canvas is built for accessibility in accordance with [Microsoft Accessibility Guidelines](https://www.microsoft.com/accessibility/), and supports standard navigational patterns. For complex scenarios, users who author content with keyboard navigation can use the following routing anchors.
 
-In general, using the authoring canvas follows standard navigation patterns. For complex scenarios, we've built keyboard shortcuts tailored to help users authoring content using keyboard navigation.
 In some instances, these shortcuts [may be overwritten by Microsoft Teams shortcuts](https://support.microsoft.com/office/keyboard-shortcuts-for-microsoft-teams-2e8e2a70-e8d8-4a19-949b-4c36dd5292d2).
 
 ###  Routing anchors
@@ -58,15 +57,15 @@ At any time, pressing these hotkeys on a route anchor will read out the properti
 
 ## In this section
 
-Topic | Description
-- | -
-[Create and delete bots](authoring-first-bot-teams.md) | Create and delete bots.
-[Use lesson topics](authoring-template-topics-teams.md) | Use a series of prebuilt topics that guide you through authoring topics - from simple to advanced.
-[Create and edit topics](authoring-create-edit-topics-teams.md) | Create and edit topics..
-[Use system fallback topic](authoring-system-fallback-topic-teams.md) | Use a system fallback topic for when your bot can't find an answer.
-[Manage topics](authoring-topic-management-teams.md) | Copy, edit, and manage which topics should be available in your bot.
-[Test your bot](authoring-test-bot-teams.md) | Test your bot directly within the Power Virtual Agents app as you make changes.
-[Supported languages](authoring-language-support-teams.md) | Choose from a number of languages when you create your bot.
+| Topic                                                                 | Description                                                                                        |
+| --------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| [Create and delete bots](authoring-first-bot-teams.md)                | Create and delete bots.                                                                            |
+| [Use lesson topics](authoring-template-topics-teams.md)               | Use a series of prebuilt topics that guide you through authoring topics - from simple to advanced. |
+| [Create and edit topics](authoring-create-edit-topics-teams.md)       | Create and edit topics..                                                                           |
+| [Use system fallback topic](authoring-system-fallback-topic-teams.md) | Use a system fallback topic for when your bot can't find an answer.                                |
+| [Manage topics](authoring-topic-management-teams.md)                  | Copy, edit, and manage which topics should be available in your bot.                               |
+| [Test your bot](authoring-test-bot-teams.md)                          | Test your bot directly within the Power Virtual Agents app as you make changes.                    |
+| [Supported languages](authoring-language-support-teams.md)            | Choose from a number of languages when you create your bot.                                        |
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

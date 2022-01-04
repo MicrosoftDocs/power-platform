@@ -44,7 +44,7 @@ While the topics are functional, they are examples for the purposes of learning 
 
 1. Select **Go to authoring canvas** on each topic's details page to see the bot's flow; including the bot's comments, expected user responses, decision points, and entity references.
 
-   ![List of lesson topics.](media/template-list.png)
+   :::image type="content" source="media/template-list.png" alt-text="List of lesson topics." border="false":::
 
 >[!IMPORTANT]
 >You will see these lessons when you create a new bot. If you have previously created a bot and don't see them, try creating a new bot and then going to the **Topics** tab.

@@ -46,11 +46,11 @@ To help understand that notion, the **Money** entity can be used as an example.
 
    You'll see a list of the prebuilt entities available. 
 
-   ![Entities pane.](media/entities-1(draft).png)
+   :::image type="content" source="media/entities-1(draft).png" alt-text="Entities pane." border="false":::
 
 1. Select the **Money** entity, which will open the details panel for the entity.
 
-   ![Money entity description.](media/entities-2(draft).png)
+   :::image type="content" source="media/entities-2(draft).png" alt-text="Money entity description." border="false":::
 
 Here you can see an explanation of this entity and the ways it can be used to look for information related to money or currency from a user's input.
 
@@ -137,17 +137,17 @@ Now that you've done the work of giving the bot the knowledge about outdoor gear
 
 1. Select the plus (**+**) icon and then select **Ask a question**. 
 
-   ![Screenshot of adding a node.](media/handoff-add-node.png)
+   :::image type="content" source="media/handoff-add-node.png" alt-text="Screenshot of adding a node." border="false":::
 
 1. Under **Identify**, select the entity you created in [Custom entities](#custom-entities).
 
-   ![Question node with entity selection.](media/entities-6(draft).png)
+   :::image type="content" source="media/entities-6(draft).png" alt-text="Question node with entity selection." border="false":::
 
 1. You can also optionally select items to show as buttons. For example, if you'd like to show some categories as buttons for users to conveniently choose from as their input, you can simply choose **Select user options** and then pick them from the list that contains the items you added when you created the custom entity.
 
-   ![Add condition nodes.](media/entities-8(draft).png)
+   :::image type="content" source="media/entities-8(draft).png" alt-text="Add condition nodes." border="false":::
     
-   ![More condition nodes.](media/entities-9(draft).png)
+   :::image type="content" source="media/entities-9(draft).png" alt-text="More condition nodes." border="false":::
 
 1. Name the variable for the output of the user's response, if necessary.
 
@@ -162,23 +162,23 @@ We will continue to use the outdoor gear topic as an example, which is triggered
 
 The topic is successfully triggered and the bot asks for the product category, also showing the button choices specified when authoring the **Ask a question** node. In the dialog tree, tracking between topics also shows the bot is running to the question node you just edited. 
 
-![tracking between topics.](media/entities-10(draft).png)
+:::image type="content" source="media/entities-10(draft).png" alt-text="tracking between topics." border="false":::
 
 A user can use the predefined choices by selecting one of the buttons. Alternatively, they can also type in something like "trekking" and see that it maps to "hiking", because those words were defined as synonyms. 
 
-![Additional tracking between topics.](media/entities-11(draft).png)
+:::image type="content" source="media/entities-11(draft).png" alt-text="Additional tracking between topics." border="false":::
 
 In tracking between topics, it shows the dialog is correctly routed to the path in which the product category value is "Hiking". You can inspect the variable value from the variable watch window at the bottom of the authoring canvas. In the watch window, it shows the variable value is "Hiking". 
 
 Essentially, slot filling has happened by inserting the extracted entity "Hiking" into the variable `VarProductCategory`. 
 
-![Variable watch window.](media/entities-12(draft).png)
+:::image type="content" source="media/entities-12(draft).png" alt-text="Variable watch window." border="false":::
 
 You can also use what is known as "proactive slot filling" where the user can specify multiple pieces of information that map to multiple entities. The bot is able to understand what information belongs to which entity automatically. In cases where it is unsure of the intended mapping, it will prompt the user to be more specific by providing choices.
 
 In this example, the user wrote "I want to buy some trekking gears". This includes both the trigger phrase that the user wants to buy gear and also provides a second piece of information—the actual type of gear. In this case, the bot fills in both the entity for buying gear, and for the type of gear.
 
-![Multiple and proactive slot filling.](media/entities-13(draft).png)
+:::image type="content" source="media/entities-13(draft).png" alt-text="Multiple and proactive slot filling." border="false":::
 
 In tracking between topics, you can see the bot takes in this user input, and intelligently skips the question node asking for the product category. 
 
@@ -188,11 +188,11 @@ Let's restart the testing again and try another case. In this round, you can add
 
 This time when the product category question is presented, instead of telling the bot only the product category, the user can say "I want to buy a pair of hiking boots under $100". In this example, the bot is not only able to route to the correct hiking product category path, but also actively fill the slots asking for the type of hiking gear and the target price range information. 
 
-![tracking between topics for product and price categories.](media/entities-14(draft).png)
+:::image type="content" source="media/entities-14(draft).png" alt-text="tracking between topics for product and price categories." border="false":::
 
 Proactive slot filling can be manually controlled at the node level. If you'd like to always prompt for the question within a specific node, regardless of whether the slot has been filled from previous user responses, you can disable the **Skip question** option for that question node.
 
-![Skip question.](media/entities-skip-node.png)
+:::image type="content" source="media/entities-skip-node.png" alt-text="Skip question." border="false":::
 
 ## Watch a deep dive video
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4ncEw]
