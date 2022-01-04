@@ -60,15 +60,15 @@ At any time, pressing these hotkeys on a route anchor will read out the properti
 
 ## In this section
 
-Topic | Description
-- | -
-[Create your first bot](authoring-first-bot.md) | Create your first bot in less than 30 minutes.
-[Use lesson topics](authoring-template-topics.md) | Use a series of prebuilt topics that guide you through authoring topics - from simple to advanced.
-[Create and edit topics](authoring-create-edit-topics.md) | Create and edit topics using the no-code authoring canvas.
-[Use system fallback topic](authoring-system-fallback-topic.md) | Use a system fallback topic for when your bot can't find an answer.
-[Manage topics](authoring-topic-management.md) | Copy, edit, and manage which topics should be available in your bot.
-[Test your bot](authoring-test-bot.md) | Test your bot directly within the Power Virtual Agents portal without needing to deploy or publish it.
-[Supported languages](authoring-language-support.md) | Choose from a number of languages when you create your bot, with user interface, system, and template topic localization.
+| Topic                                                           | Description                                                                                                               |
+| --------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| [Create your first bot](authoring-first-bot.md)                 | Create your first bot in less than 30 minutes.                                                                            |
+| [Use lesson topics](authoring-template-topics.md)               | Use a series of prebuilt topics that guide you through authoring topics - from simple to advanced.                        |
+| [Create and edit topics](authoring-create-edit-topics.md)       | Create and edit topics using the no-code authoring canvas.                                                                |
+| [Use system fallback topic](authoring-system-fallback-topic.md) | Use a system fallback topic for when your bot can't find an answer.                                                       |
+| [Manage topics](authoring-topic-management.md)                  | Copy, edit, and manage which topics should be available in your bot.                                                      |
+| [Test your bot](authoring-test-bot.md)                          | Test your bot directly within the Power Virtual Agents portal without needing to deploy or publish it.                    |
+| [Supported languages](authoring-language-support.md)            | Choose from a number of languages when you create your bot, with user interface, system, and template topic localization. |
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

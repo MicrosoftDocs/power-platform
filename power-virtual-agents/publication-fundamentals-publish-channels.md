@@ -103,11 +103,12 @@ Different channels have different end-user experiences. The following table show
 >Attachments can be supported if the message is sent to a skill, where the skill bot supports the processing of attachments. See the [Use Microsoft Bot Framework skills topic](advanced-use-skills.md) for more details on skills.
 
 ## In this section
-
-- [Configure the demo website and add the bot to your live website](publication-connect-bot-to-web-channels.md) | Publish your bot on your live website, or use a demo website to share internally.
-- [Add bot to Microsoft Teams](publication-add-bot-to-microsoft-teams.md) | Use Teams to distribute your bot.
-- [Add bot to Facebook](publication-add-bot-to-facebook.md) | Add your bot to Facebook Messenger.
-- [Add bot to mobile and custom apps (web-based or native)](publication-connect-bot-to-custom-application.md) | Add your bot to mobile or custom native apps (developer coding required).
-- [Add bot to Azure Bot Service channels](publication-connect-bot-to-azure-bot-service-channels.md) | Add your bot to Azure Bot Service channels (developer coding required).
+| Topic                                                                                                         | Description                                                                       |
+| ------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| [Configure the demo website and add the bot to your live website](publication-connect-bot-to-web-channels.md) | Publish your bot on your live website, or use a demo website to share internally. |
+| [Add bot to Microsoft Teams](publication-add-bot-to-microsoft-teams.md)                                       | Use Teams to distribute your bot.                                                 |
+| [Add bot to Facebook](publication-add-bot-to-facebook.md)                                                     | Add your bot to Facebook Messenger.                                               |
+| [Add bot to mobile and custom apps (web-based or native)](publication-connect-bot-to-custom-application.md)   | Add your bot to mobile or custom native apps (developer coding required).         |
+| [Add bot to Azure Bot Service channels](publication-connect-bot-to-azure-bot-service-channels.md)             | Add your bot to Azure Bot Service channels (developer coding required).           |
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

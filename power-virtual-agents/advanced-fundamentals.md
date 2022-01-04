@@ -39,14 +39,14 @@ You can go beyond basic authoring in Power Virtual Agents by taking advantage of
 
 ## In this section
 
-Topic | Description
-- | -
-[Use advanced AI features](advanced-ai-features.md) |  Learn more about the AI models in Power Virtual Agents and use advanced AI capabilities, such as improved intent triggering and automatic personalization from Azure Active Directory and Microsoft Graph.
-[Use entities and slot filling](advanced-entities-slot-filling.md) | Use prebuilt entities, and define custom ones, to expand the types of information the bot can parse.
-[Use variables](authoring-variables.md) | Retrieve information for consistent usage across topics.
-[Create topics from existing support content](advanced-create-topics-from-web.md) | Utilize your existing web content to quickly create bots and topics.
-[Add end-user authentication](advanced-end-user-authentication.md) | Allow users to sign in from within the bot.
-[Add actions using Power Automate](advanced-flow.md) | Connect to existing and create new flows that let you automate and send and receive data.
-[Trigger hand-off to a live agent](advanced-hand-off.md) | Send entire transcripts of a bot conversation to a live agent when the bot isn't able to resolve the issue.
+| Topic                                                                             | Description                                                                                                                                                                                                |
+| --------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Use advanced AI features](advanced-ai-features.md)                               | Learn more about the AI models in Power Virtual Agents and use advanced AI capabilities, such as improved intent triggering and automatic personalization from Azure Active Directory and Microsoft Graph. |
+| [Use entities and slot filling](advanced-entities-slot-filling.md)                | Use prebuilt entities, and define custom ones, to expand the types of information the bot can parse.                                                                                                       |
+| [Use variables](authoring-variables.md)                                           | Retrieve information for consistent usage across topics.                                                                                                                                                   |
+| [Create topics from existing support content](advanced-create-topics-from-web.md) | Utilize your existing web content to quickly create bots and topics.                                                                                                                                       |
+| [Add end-user authentication](advanced-end-user-authentication.md)                | Allow users to sign in from within the bot.                                                                                                                                                                |
+| [Add actions using Power Automate](advanced-flow.md)                              | Connect to existing and create new flows that let you automate and send and receive data.                                                                                                                  |
+| [Trigger hand-off to a live agent](advanced-hand-off.md)                          | Send entire transcripts of a bot conversation to a live agent when the bot isn't able to resolve the issue.                                                                                                |
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
