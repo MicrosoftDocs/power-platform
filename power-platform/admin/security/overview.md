@@ -37,12 +37,11 @@ Microsoft Power Platform enables both non-professional and professional develope
 
 As organizations accelerate their transition their work to the cloud, we see a massive increase in remote working, increased customer demand for online services, and increased use of advanced technologies in operations and business decision-making.  Power Platform enables these scenarios with applications on the cloud in a secure way.
 
-Traditional on-premise application security will not suffice.  Organizations must look for a cloud-native, multi-tiered, defense-in-depth security solution for their business intelligence data.
-Power Platform was built to provide industry-leading complete protection for data. Today many national security agencies, financial institutions, and health care providers entrust it with their most sensitive information.
+Traditional on-premise application security will not suffice.  Organizations must look for a cloud-native, multi-tiered, defense-in-depth security solution for their business intelligence data. Power Platform was built to provide industry-leading complete protection for data. Today, many national security agencies, financial institutions, and health care providers entrust it with their most sensitive information.
 
 It all starts with the foundation. After a rough period in the early 2000s, Microsoft made massive investments to address its security vulnerabilities, and in the following decades built a very strong security stack that goes as deep as the machine on-chip bios kernel and extends all the way up to end-user experiences. These deep investments continue and today over 3,500 Microsoft engineers are engaged in building and enhancing Microsoft's security stack and proactively addressing the ever-shifting threat landscape. With billions of computers, trillions of logins, and countless zettabytes of information entrusted to Microsoft's protection, the company now possesses the most advanced security stack in the tech industry and is broadly viewed as the global leader in the fight against malicious actors.
 
-Power Platform builds on this very strong foundation. It uses the same security stack that earned Azure the right to serve and protect the world's most sensitive data, and it integrates with the most advanced information protection and compliance tools of Microsoft 365. On top of this it delivers security through multi-layered security measures, resulting in end-to-end protection designed to deal with the unique challenges of the cloud era.
+Power Platform builds on this very strong foundation. It uses the same security stack that earned Azure the right to serve and protect the world's most sensitive data, and it integrates with the most advanced information protection and compliance tools of Microsoft 365. On top of this, it delivers security through multi-layered security measures, resulting in end-to-end protection designed to deal with the unique challenges of the cloud era.
 
 To provide an end-to-end solution for protecting sensitive assets, the product team addressed challenging customer concerns on multiple simultaneous fronts:
 
@@ -57,20 +56,20 @@ This article provides a comprehensive answer to all these questions. Power Platf
 
 Security topics that are common to all of Power Platform include:
 
-- The Power Platform service architecture - how the main flows in the system work.
+- The Power Platform service architecture - how the main flows in the system work
 - Authentication to the service for the Power Platform services
 - Data connections including authentication
 - Data at rest and encryption
 
 The Power Platform service is governed by the [Microsoft Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31), and the [Microsoft Enterprise Privacy Statement](https://www.microsoft.com/privacystatement/OnlineServices/Default.aspx). For the location of data processing, refer to the Location of Data Processing terms in the [Microsoft Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31) and to the [Data Protection Addendum](https://www.microsoft.com/download/details.aspx?id=101581).
 
-For compliance information, the [Microsoft Trust Center](https://www.microsoft.com/trustcenter) is the primary resource for Power Platform. The Power Platform team is working hard to bring its customers the latest innovations and productivity. Learn more about compliance in the [Microsoft compliance offerings](https://docs.microsoft.com/en-us/compliance/regulatory/offering-home).
+For compliance information, the [Microsoft Trust Center](https://www.microsoft.com/trustcenter) is the primary resource for Power Platform. The Power Platform team is working hard to bring its customers the latest innovations and productivity. Learn more about compliance in the [Microsoft compliance offerings](/compliance/regulatory/offering-home). 
 
 The Power Platform service follows the Security Development Lifecycle (SDL), strict security practices that support security assurance and compliance requirements. The SDL helps developers build more secure software by reducing the number and severity of vulnerabilities in software, while reducing development cost. Learn more at [Microsoft Security Development Lifecycle Practices](https://www.microsoft.com/securityengineering/sdl/practices).
 
 ## Power Platform service architecture
 
-The Power Platform services are built on Azure, Microsoft's cloud computing platform. The Power Platform services are currently deployed in many datacenters around the world – there are many active deployments made available to customers in the regions served by those datacenters and an equal number of passive deployments that serve as backups for each active deployment.
+The Power Platform services are built on Azure, Microsoft's cloud computing platform. The Power Platform services are currently deployed in many datacenters around the world. There are many active deployments made available to customers in the regions served by those datacenters and an equal number of passive deployments that serve as backups for each active deployment.
 
    ![Power Platform service architecture.](./media/PowerPlatformBasicArch.png "Various front-end technologies (web front end, mobile, embedded, and other) flowing to Power Platform back-end clusters.")
 
@@ -80,31 +79,28 @@ For the Power Platform services that display UI, the WFE cluster provides the us
 
   ![Web front end cluster.](./media/WFEcluster.png "Web front-end cluster (WFE) depends on the Azure App Service environment which in turn depends on ASP.NET.  WFE talks to Power Platform service back-ends.")
 
-A WFE cluster consists of an ASP.NET website running in the Azure App Service Environment. When users attempt to connect to a Power Platform service, the client's DNS service may communicate with the Azure Traffic Manager to find the most appropriate (usually nearest) datacenter with the Power Platform service's deployment. For more information about this process, see Performance traffic-routing method for Azure Traffic Manager.
+A WFE cluster consists of an ASP.NET website running in the Azure App Service Environment. When users attempt to connect to a Power Platform service, the client's DNS service may communicate with the Azure Traffic Manager to find the most appropriate (usually nearest) datacenter with the Power Platform service's deployment. For more information about this process, see [Performance traffic-routing method for Azure Traffic Manager](/azure/traffic-manager/traffic-manager-routing-methods#performance-traffic-routing-method).
 
 The WFE cluster assigned to the user manages the login and authentication sequence (described later in this article) and obtains an Azure AD access token once authentication is successful. The ASP.NET component within the WFE cluster parses the token to determine which organization the user belongs to, and then consults the Power Platform service back-end global service. The WFE specifies to the browser which back-end cluster houses the organization's tenant.
 
-Once a user is authenticated, subsequent client interactions for customer data occur with the back-end  cluster directly without the WFE being an intermediator for those requests.
-Static resources such as *.js,*.css, and image files are mostly stored on Azure Content Delivery Network (CDN) and retrieved directly by the browser.
+Once a user is authenticated, subsequent client interactions for customer data occur with the back-end  cluster directly without the WFE being an intermediator for those requests. Static resources such as *.js,*.css, and image files are mostly stored on Azure Content Delivery Network (CDN) and retrieved directly by the browser.
 
 Note that Sovereign Government cluster deployments are an exception to this rule, and for compliance reasons will omit the CDN and instead use a WFE cluster from a compliant region for hosting static content.
 
 ### Power Platform back-end clusters (BE)
 
-The back-end cluster for a given Power Platform service is the backbone of all the functionality available in the service. It consists of several service endpoints consumed by Web Front End and API clients as well as background working services, databases, caches, and various other components.
-The back end is available in most Azure regions, and is deployed in new regions as they become available. A single Azure region hosts one or more back-end clusters that allow unlimited horizontal scaling of the Power Platform services once the vertical and horizontal scaling limits of a single cluster are exhausted.
+The back-end cluster for a given Power Platform service is the backbone of all the functionality available in the service. It consists of several service endpoints consumed by Web Front End and API clients as well as background working services, databases, caches, and various other components. The back end is available in most Azure regions, and is deployed in new regions as they become available. A single Azure region hosts one or more back-end clusters that allow unlimited horizontal scaling of the Power Platform services once the vertical and horizontal scaling limits of a single cluster are exhausted.
 
 Each back-end cluster is stateful and hosts all the data of all the tenants assigned to that cluster. A cluster that contains the data of a specific tenant is referred to as the tenant’s home cluster. An authenticated user's home cluster information is provided by Global Service and used by the Web Front End to route requests to the tenant’s home cluster.
 
 Each back-end cluster consists of multiple virtual machines combined into multiple resizable-scale sets tuned for performing specific tasks, stateful resources such as SQL Azure databases, storage accounts, service buses, caches, and other necessary cloud components.
 
-Tenant metadata and data are stored within cluster limits except for data replication to a secondary back-end cluster in a paired Azure region in the same Azure geography. The secondary back-end cluster serves as a failover cluster in case of regional outage, and is passive at any other time.
-The back-end (“BE”) functionality is also serviced by micro-services running on different machines within the cluster’s virtual network that are not accessible from the outside, except for two components that can be accessed from the public internet:
+Tenant metadata and data are stored within cluster limits, except for data replication to a secondary back-end cluster in a paired Azure region in the same Azure geography. The secondary back-end cluster serves as a failover cluster in case of regional outage, and is passive at any other time. The back-end (“BE”) functionality is also serviced by micro-services running on different machines within the cluster’s virtual network that are not accessible from the outside, except for two components that can be accessed from the public internet:
 
 - Gateway Service
 - Azure API Management
 
-  ![Backend with API and Gateway services.](./media/backendClusterGatewayAPI.png "Back end services diagram showing three major pieces:  API and Gateway services which are accessible from the outside and the collection of microservices which are private.")
+![Backend with API and Gateway services.](./media/backendClusterGatewayAPI.png "Back end services diagram showing three major pieces:  API and Gateway services which are accessible from the outside and the collection of microservices which are private.")
 
 ### Power Platform Premium infrastructure
 
@@ -137,14 +133,11 @@ The Power Platform services securely store data on the device that facilitates u
 - Geolocation is enabled or disabled explicitly by the user. If enabled, geolocation data is not saved on the device and is not shared with Microsoft.
 - Notifications are enabled or disabled explicitly by the user. If enabled, Android and iOS do not support geographic data residency requirements for notifications.
 
-Data encryption can be enhanced by applying file-level encryption via Microsoft Intune, a software service that provides mobile device and application management. All three platforms for which the Power Platform Mobile apps are available support Intune. With Intune enabled and configured, data on the mobile device is encrypted, and the Power Platform application itself cannot be installed on an SD card. Learn more about [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune). The Windows app also supports [Windows Information Protection (WIP)](https://docs.microsoft.com/en-us/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip).
+Data encryption can be enhanced by applying file-level encryption via Microsoft Intune, a software service that provides mobile device and application management. All three platforms for which the Power Platform Mobile apps are available support Intune. With Intune enabled and configured, data on the mobile device is encrypted, and the Power Platform application itself cannot be installed on an SD card. Learn more about [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune). The Windows app also supports [Windows Information Protection (WIP)](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip).  
 
-In order to implement SSO, some secured storage values related to the token-based authentication are available for other Microsoft 1st party apps (such as Microsoft Authenticator) and are managed by the Azure Active Directory Authentication Library (ADAL) SDK.
+In order to implement SSO, some secured storage values related to the token-based authentication are available for other Microsoft apps (such as Microsoft Authenticator) and are managed by the Azure Active Directory Authentication Library (ADAL) SDK.
 
 Mobile cached data is deleted when the app is removed, when the user signs out of the Power Platform service for Mobile, or when the user fails to sign in (such as after a token expiration event or password change). The data cache includes dashboards and reports previously accessed from the Power Platform Mobile app.
 
 The Power Platform Mobile services do not access other application folders or files on the device.
 
-### See also
-
-[Add related articles]
