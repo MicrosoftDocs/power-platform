@@ -2,7 +2,7 @@
 title: "Fundamentals - Publish a chatbot to various channels (contains video)"
 description: "Publish your bot to the web, Microsoft Teams, Facebook, or even use an existing Azure Bot Service framework."
 keywords: "Publish; demo; demo website; channels, PVA"
-ms.date: 11/30/2021
+ms.date: 12/29/2021
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -23,9 +23,9 @@ Select the version of Power Virtual Agents you're using here:
 
 With Power Virtual Agents, you can publish bots to engage with your customers on multiple platforms or channels. These include live websites, mobile apps, and messaging platforms like Microsoft Teams and Facebook.
 
-After you've published at least once, you can connect your bot to additional channels.
+After you've published at least once, you can connect your bot to more channels.
 
-Each time you want to update your bot, you publish it again from within the Power Virtual Agents app itself. This will update the bot across all the channels where you've inserted or connected your bot.
+Each time you want to update your bot, you publish it again from within the Power Virtual Agents app itself. Publishing your bot will update the bot across all the channels where you've inserted or connected your bot.
 
 >
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4mGa9]
@@ -51,7 +51,7 @@ You need to publish the bot at least once before your customers can interact wit
 
     :::image type="content" source="media/channel-publish-validation.png" alt-text="Validate latest bot content for publish." border="false":::
 
-3. After publishing completes, select the **demo website** link. The link will open a new tab and display a prebuilt demo website where you and your team can interact with the bot. This is useful to gather feedback from stakeholders involved in the bot.
+3. After publishing completes, select the **demo website** link. The link will open a new tab and display a prebuilt demo website where you and your team can interact with the bot. The demo website is useful to gather feedback from stakeholders involved in the bot.
 
 :::image type="content" source="media/channel-go-to-demo-website.png" alt-text="Go to demo website." border="false":::
 
@@ -66,26 +66,37 @@ For details on updating the welcome message and help text on the demo website, g
 
 After publishing your bot at least once, you can add channels to make the bot reachable by your customers. 
 
-To view the currently supported channels:
+To configure channels:
 
 1. Select **Manage**.
 2. In the left side navigation pane, select the **Channels** tab.
 
 :::image type="content" source="media/channel-channels-menu.png" alt-text="Channel settings." border="false":::
 
-Each channel requires different steps and configurations, which can be found in the following topics:
+The connection steps are different for each channel. See the related article in the list below more information:
 
-- [Configure the demo website and add the bot to your live website](publication-connect-bot-to-web-channels.md)
-- [Add bot to Microsoft Teams](publication-add-bot-to-microsoft-teams.md)
-- [Add bot to Facebook](publication-add-bot-to-facebook.md)
-- [Add bot to mobile and custom apps (web-based or native)](publication-connect-bot-to-custom-application.md)
-- [Add bot to Azure Bot Service channels](publication-connect-bot-to-azure-bot-service-channels.md)
+* [Microsoft Teams](publication-add-bot-to-microsoft-teams.md)
+* [Demo Website](publication-connect-bot-to-web-channels.md#demo-website)
+* [Custom Website](publication-connect-bot-to-web-channels.md#custom-website)
+* [Mobile App](publication-connect-bot-to-custom-application.md)
+* [Facebook](publication-add-bot-to-facebook.md)
+* [Azure Bot Service channels](publication-connect-bot-to-azure-bot-service-channels.md), including:
+  * Skype 
+  * Cortana
+  * Slack
+  * Telegram
+  * Twilio
+  * Line
+  * Kik
+  * GroupMe
+  * Direct Line Speech
+  * Email
 
 ## Channel experience reference table
 
 Different channels have different end-user experiences. The following table shows a high-level overview of the experiences for each channel. Take the channel experiences into account when optimizing your bot content for specific channels.
 
-| Experience | Website | Microsoft Teams(1) | Facebook | Dynamics Omnichannel for Customer Service |
+| Experience | Website | Microsoft Teams | Facebook | Dynamics Omnichannel for Customer Service |
 |---|---|---|---|---|
 | [Customer satisfaction survey](authoring-create-edit-topics.md#insert-nodes) | Adaptive card | Text-only | Text-only | Text-only |
 | [Multiple-choice options](authoring-create-edit-topics.md#insert-nodes) | Supported | [Supported up to six (as hero card)](/microsoftteams/platform/concepts/cards/cards-reference#hero-card) | [Supported up to 13](https://developers.facebook.com/docs/messenger-platform/send-messages/quick-replies/) | [Partially Supported](/dynamics365/customer-service/asynchronous-channels#suggested-actions-support) |
@@ -100,7 +111,7 @@ Different channels have different end-user experiences. The following table show
 >
 >This applies to all channels, even if the channel or end-user-facing experience supports attachments (for example, if you're using the Direct Line API or Microsoft Teams).
 >
->Attachments can be supported if the message is sent to a skill, where the skill bot supports the processing of attachments. See the [Use Microsoft Bot Framework skills topic](advanced-use-skills.md) for more details on skills.
+>Attachments can be supported if the message is sent to a skill, where the skill bot supports the processing of attachments. For more information, see the [Use Microsoft Bot Framework skills topic](advanced-use-skills.md) for more details on skills.
 
 ## In this section
 | Topic                                                                                                         | Description                                                                       |
