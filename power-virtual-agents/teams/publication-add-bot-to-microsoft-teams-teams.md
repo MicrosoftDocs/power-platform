@@ -298,10 +298,10 @@ This options allows end users to add the bot to any team that they are part of w
 5. Select **Edit details**
 
 6. Check **Allow your users to add this bot to a team** checkbox.
+   :::image type="content" source="media/teams-allow-end-users-to-add-to-team.png" alt-text="Checkbox is checked to allow end user to add bot to teams that they are part of":::
+
 >[!IMPORTANT]
 >The bot will be configured to allow everyone in the organization to chat with it. This ensure the bot allows users from different teams have permission to chat with the bot for all teams the end users add the bot to. It is highly recommended to not change the security setting of the bot after enabling this capability to prevent users seeing permission errors when interacting with the bot in team channels.
-
-    :::image type="content" source="media/teams-allow-end-users-to-add-to-team.png" alt-text="Checkbox is checked to allow end user to add bot to teams that they are part of":::
 
 7. Select **Save**. End users who install bot will now see the option to add bot to a team.
 >[!NOTE]
@@ -345,9 +345,11 @@ Private greeting from bot to user when added to a team is very powerful when you
 4. Select **Make the bot available to others**.
 
 5. Select **Settings**
+    
     :::image type="content" source="media/teams-private-greeting-settings.png" alt-text="Settings entry point to configure bot's private greeting behavior":::
 
 6. Configure the private greeting options and select **Save**
+    
     :::image type="content" source="media/teams-private-greeting-settings-detail.png" alt-text="Private greeting to user setting options":::
 
 
