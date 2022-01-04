@@ -7,9 +7,9 @@ ms.topic: "get-started-article"
 ms.custom: 
   - "admin-security"
   - "intro-internal"
-author: jimholtz
+author: lancedMicrosoft
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: lanced
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
@@ -21,6 +21,7 @@ search.app:
 ---
 # Overview: Security in Microsoft Power Platform
 
+<!-- 
 > **Working notes**
 >
 > This is the first page people will read so we should:
@@ -30,17 +31,18 @@ search.app:
 > - Explain the architecture for:
 >   - Power Platform as a whole
 >   - Each Power Platform component
+-->
 
-The Microsoft Power Platform enables both non-professional and professional developers to quickly and easily create end to end solutions. These solutions may include applications, databases, and workflows both for small work groups or the entire organization. Security is critical for these solutions and the Power Platform is built to provide industry-leading complete protection.  
+Microsoft Power Platform enables both non-professional and professional developers to quickly and easily create end-to-end solutions. These solutions may include applications, databases, and workflows both for small work groups or the entire organization. Security is critical for these solutions and Power Platform is built to provide industry-leading complete protection.  
 
-As organizations accelerate their transition their work to the cloud, we see a massive increase in remote working, increased customer demand for online services, and increased use of advanced technologies in operations and business decision-making.  The Power Platform enables these scenarios with applications on the cloud in a secure way.
+As organizations accelerate their transition their work to the cloud, we see a massive increase in remote working, increased customer demand for online services, and increased use of advanced technologies in operations and business decision-making.  Power Platform enables these scenarios with applications on the cloud in a secure way.
 
 Traditional on-premise application security will not suffice.  Organizations must look for a cloud-native, multi-tiered, defense-in-depth security solution for their business intelligence data.
-The Power Platform was built to provide industry-leading complete protection for data. Today many national security agencies, financial institutions, and health care providers entrust it with their most sensitive information.
+Power Platform was built to provide industry-leading complete protection for data. Today many national security agencies, financial institutions, and health care providers entrust it with their most sensitive information.
 
 It all starts with the foundation. After a rough period in the early 2000s, Microsoft made massive investments to address its security vulnerabilities, and in the following decades built a very strong security stack that goes as deep as the machine on-chip bios kernel and extends all the way up to end-user experiences. These deep investments continue and today over 3,500 Microsoft engineers are engaged in building and enhancing Microsoft's security stack and proactively addressing the ever-shifting threat landscape. With billions of computers, trillions of logins, and countless zettabytes of information entrusted to Microsoft's protection, the company now possesses the most advanced security stack in the tech industry and is broadly viewed as the global leader in the fight against malicious actors.
 
-The Power Platform builds on this very strong foundation. It uses the same security stack that earned Azure the right to serve and protect the world's most sensitive data, and it integrates with the most advanced information protection and compliance tools of Microsoft 365. On top of this it delivers security through multi-layered security measures, resulting in end-to-end protection designed to deal with the unique challenges of the cloud era.
+Power Platform builds on this very strong foundation. It uses the same security stack that earned Azure the right to serve and protect the world's most sensitive data, and it integrates with the most advanced information protection and compliance tools of Microsoft 365. On top of this it delivers security through multi-layered security measures, resulting in end-to-end protection designed to deal with the unique challenges of the cloud era.
 
 To provide an end-to-end solution for protecting sensitive assets, the product team addressed challenging customer concerns on multiple simultaneous fronts:
 
@@ -49,14 +51,14 @@ To provide an end-to-end solution for protecting sensitive assets, the product t
 - How do I control and protect my sensitive data? How do I ensure this data cannot leak outside the organization?
 - How do I audit who conducts what operations? How do I react quickly if there's suspicious activity on the service?
 
-This article provides a comprehensive answer to all these questions. The Power Platform includes several services.  Some of the security concepts are broadly used by all the services and some are specific to individual services.  
+This article provides a comprehensive answer to all these questions. Power Platform includes several services.  Some of the security concepts are broadly used by all the services and some are specific to individual services.  
 
 ## Common security topics
 
-Security toptics that are common to all of Power Platform include:
+Security topics that are common to all of Power Platform include:
 
-- Power Platform service architecture - how the main flows in the system work.
-- Authentication to the service for Power Platform services
+- The Power Platform service architecture - how the main flows in the system work.
+- Authentication to the service for the Power Platform services
 - Data connections including authentication
 - Data at rest and encryption
 
@@ -68,15 +70,15 @@ The Power Platform service follows the Security Development Lifecycle (SDL), str
 
 ## Power Platform service architecture
 
-Power Platform services are built on Azure, Microsoft's cloud computing platform. Power Platform services are currently deployed in many datacenters around the world – there are many active deployments made available to customers in the regions served by those datacenters and an equal number of passive deployments that serve as backups for each active deployment.
+The Power Platform services are built on Azure, Microsoft's cloud computing platform. The Power Platform services are currently deployed in many datacenters around the world – there are many active deployments made available to customers in the regions served by those datacenters and an equal number of passive deployments that serve as backups for each active deployment.
 
-   ![Power Platform service architecture.](./media/PowerPlatformBasicArch.png "Various front-end technologies (web front end, mobile, embedded, and other) flowing to the Power Platform back-end clusters.")
+   ![Power Platform service architecture.](./media/PowerPlatformBasicArch.png "Various front-end technologies (web front end, mobile, embedded, and other) flowing to Power Platform back-end clusters.")
 
 ### Web front-end cluster (WFE)
 
-For Power Platform services that display UI, the WFE cluster provides the user's browser with the initial HTML page contents on site load and manages the initial connection and authentication process using Azure Active Directory (Azure AD) to authenticate clients and provide tokens for subsequent client connections to the Power Platform back-end service.
+For the Power Platform services that display UI, the WFE cluster provides the user's browser with the initial HTML page contents on site load and manages the initial connection and authentication process using Azure Active Directory (Azure AD) to authenticate clients and provide tokens for subsequent client connections to the Power Platform back-end service.
 
-  ![Web front end cluster.](./media/WFEcluster.png "Web front-end cluster (WFE) depends on the Azure App Service environment which in turn depends on ASP.NET.  WFE talks to the Power Platform service back-ends.")
+  ![Web front end cluster.](./media/WFEcluster.png "Web front-end cluster (WFE) depends on the Azure App Service environment which in turn depends on ASP.NET.  WFE talks to Power Platform service back-ends.")
 
 A WFE cluster consists of an ASP.NET website running in the Azure App Service Environment. When users attempt to connect to a Power Platform service, the client's DNS service may communicate with the Azure Traffic Manager to find the most appropriate (usually nearest) datacenter with the Power Platform service's deployment. For more information about this process, see Performance traffic-routing method for Azure Traffic Manager.
 
@@ -106,7 +108,7 @@ The back-end (“BE”) functionality is also serviced by micro-services running
 
 ### Power Platform Premium infrastructure
 
-The Power Platform Premium offers access to a set of connectors as a premium offering.  Power Platform authors are not restricted in the use of these connectors but users of an app are.  These connectors include, for instance, Dataverse and Microsoft SQL Azure.  End users of a Power App must have the correct license to access these premium connectors. The Power Platform Back-end service determines if a user has access to premium connectors or not.
+Power Platform Premium offers access to a set of connectors as a premium offering.  The Power Platform authors are not restricted in the use of these connectors but users of an app are.  These connectors include, for instance, Dataverse and Microsoft SQL Azure.  End users of a Power App must have the correct license to access these premium connectors. The Power Platform Back-end service determines if a user has access to premium connectors or not.
 
 ### Mobile
 
@@ -115,7 +117,7 @@ Mobile supported on the three primary mobile platforms: Android, iOS, and Window
 - Device communication
 - The application and data on the device
 
-For device communication, all Power Platform mobile applications communicate with the service and use the same connection and authentication sequences used by browsers. The mobile applications for iOS and Android bring up a browser session within the application itself, while the Windows mobile app brings up a broker to establish the communication channel with Power Platform services (for the sign-in process).
+For device communication, all Power Platform mobile applications communicate with the service and use the same connection and authentication sequences used by browsers. The mobile applications for iOS and Android bring up a browser session within the application itself, while the Windows mobile app brings up a broker to establish the communication channel with the Power Platform services (for the sign-in process).
 
 The following table shows certificate-based authentication (CBA) support for mobile, based on mobile device platform:
 
@@ -127,7 +129,7 @@ SSRS App Proxy |Supported |Supported |Not supported
 
 Mobile apps actively communicate with the Power Platform services. Telemetry is used to gather mobile app usage statistics and similar data, which is transmitted to services that are used to monitor usage and activity; no customer data is sent with telemetry.
 
-Power Platform services securely store data on the device that facilitates use of the mobile app:
+The Power Platform services securely store data on the device that facilitates use of the mobile app:
 
 - Azure AD and refresh tokens are stored in a secure mechanism on the device, using industry-standard security measures.
 - Data and settings (key-value pairs for user configuration) are cached in storage on the device, and can be encrypted by the OS. In iOS this is automatically done when the user sets a passcode. In Android this can be configured in the settings. In Windows it is accomplished by using BitLocker.
@@ -135,13 +137,13 @@ Power Platform services securely store data on the device that facilitates use o
 - Geolocation is enabled or disabled explicitly by the user. If enabled, geolocation data is not saved on the device and is not shared with Microsoft.
 - Notifications are enabled or disabled explicitly by the user. If enabled, Android and iOS do not support geographic data residency requirements for notifications.
 
-Data encryption can be enhanced by applying file-level encryption via Microsoft Intune, a software service that provides mobile device and application management. All three platforms for which Power Platform Mobile apps are available support Intune. With Intune enabled and configured, data on the mobile device is encrypted, and the Power Platform application itself cannot be installed on an SD card. Learn more about [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune). The Windows app also supports [Windows Information Protection (WIP)](https://docs.microsoft.com/en-us/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip).
+Data encryption can be enhanced by applying file-level encryption via Microsoft Intune, a software service that provides mobile device and application management. All three platforms for which the Power Platform Mobile apps are available support Intune. With Intune enabled and configured, data on the mobile device is encrypted, and the Power Platform application itself cannot be installed on an SD card. Learn more about [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune). The Windows app also supports [Windows Information Protection (WIP)](https://docs.microsoft.com/en-us/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip).
 
 In order to implement SSO, some secured storage values related to the token-based authentication are available for other Microsoft 1st party apps (such as Microsoft Authenticator) and are managed by the Azure Active Directory Authentication Library (ADAL) SDK.
 
 Mobile cached data is deleted when the app is removed, when the user signs out of the Power Platform service for Mobile, or when the user fails to sign in (such as after a token expiration event or password change). The data cache includes dashboards and reports previously accessed from the Power Platform Mobile app.
 
-Power Platform Mobile services do not access other application folders or files on the device.
+The Power Platform Mobile services do not access other application folders or files on the device.
 
 ### See also
 
