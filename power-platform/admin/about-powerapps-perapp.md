@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/20/2021
+ms.date: 12/14/2021
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -21,8 +21,9 @@ search.app:
 Power Apps per app plan allows individual users to run one application or portal for a specific business scenario in a **specific environment** based on the full capabilities of Power Apps. This plan provides an easy way for users to get started with Power Apps before broader scale adoption. These are available to purchase from the Office admin center and you can allocate add-ons in the [Capacity](https://admin.powerplatform.microsoft.com/resources/capacity) area in the Microsoft Power Platform admin center.More information: [Capacity add-ons](capacity-add-on.md).
 
 > [!IMPORTANT]
-> - Although, Power Apps per app plans appear in the [Microsoft 365 admin center](https://admin.microsoft.com), you shouldn't attempt to assign them to users there. Power Apps per app plans must be allocated to an environment (and not to users) by an admin in the [Power Platform admin center](https://admin.powerplatform.microsoft.com). After per app plans are allocated to an environment, they are assigned when apps are shared with users in the environment.
+> - Power Apps per app plans don't appear on the **Billing > Licenses** page in the [Microsoft 365 admin center](https://admin.microsoft.com). Admins should allocate Power Apps per app plans in the [Power Platform admin center](https://admin.powerplatform.microsoft.com). After per app plans are allocated to an environment, they are assigned when apps are shared with users in the environment.
 > - Power Apps for Windows isn't supported if you have the Power Apps per app plan.
+
 
 ## Steps for using per app plans 
 
@@ -79,9 +80,6 @@ Follow these steps to turn off assigning per app plans for users when an app is 
 
 > [!IMPORTANT]
 > If per app plans are not allocated to the environment the app is installed in, the toggle is disabled. 
-> 
-> Turning off the per app plan is currently available only for canvas apps. Model-driven apps and portals will have this ability in the future.
-
 
 ### Check capacity
 Check the **App passes** capacity for the environment with the app you're sharing. Make sure you have sufficient app passes assigned for the number of users using the app.
@@ -122,7 +120,7 @@ The per app license gives a user access to one Power Apps or one portal for a si
   <tr>
     <td>User 1</td>
     <td>App A</td>
-    <td>App A</td>
+    <td>App B</td>
     <td>Portal 1</td>
     <td></td>
     <td></td>

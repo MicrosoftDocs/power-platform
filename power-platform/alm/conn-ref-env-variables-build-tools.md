@@ -16,9 +16,7 @@ search.app:
   - D365CE
 ---
 
-# Pre-populate connection references and environment variables for automated deployments (preview)
-
-[This topic is pre-release documentation and is subject to change.]
+# Pre-populate connection references and environment variables for automated deployments
 
 *Connection references* and *environment variables* enable you to interactively specify the connection details and configuration settings specific to the target environment where your app or solution is deployed.
 
@@ -85,7 +83,7 @@ The deployment setting file can be generated using the [Power Platform CLI](/pow
 Use the `create-settings` property with Power Platform CLI:
 
 ```
-C:\> pac solution create-settings –solution -zip <solution_zip_file_path> --settings-file <settings_file_name>
+C:\> pac solution create-settings --solution-zip <solution_zip_file_path> --settings-file <settings_file_name>
 ```
 
 This command will generate a JSON file as shown below.

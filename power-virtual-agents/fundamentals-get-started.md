@@ -1,5 +1,5 @@
 ---
-title: "Quickstart: Create and deploy a bot on the portal"
+title: "Quickstart: Create and deploy a bot on the portal (contains video)"
 description: "Create and publish a Power Virtual Agents bot on the online portal in minutes with this quickstart guide."
 keywords: "PVA, online, web, portal, quickstart"
 ms.date: 9/22/2020
@@ -42,7 +42,7 @@ In addition to this guide, you can also [download and use templates to help you 
 
 ## Create your first bot
 
-1. Go to [https://aka.ms/TryPVA](https://aka.ms/TryPVA) in your browser to begin. Supported browsers include Microsoft Edge, Chrome, and Firefox. On the website, select **Try preview**, and then sign in with your work email address. Note that personal Microsoft accounts aren't currently supported.
+1. Go to the [Power Virtual Agents introduction website](https://aka.ms/TryPVA) in your browser to begin. Supported browsers include Microsoft Edge, Chrome, and Firefox. On the website, select **Start free**, and then sign in with your work email address. Note that personal Microsoft accounts aren't currently supported.
 
     
 

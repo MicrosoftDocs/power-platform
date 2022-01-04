@@ -9,7 +9,7 @@ ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/14/2021
+ms.date: 11/04/2021
 search.audienceType: 
   - admin
 search.app:
@@ -56,6 +56,9 @@ It can take from 30 minutes to 6 hours for a user's status to be updated in an e
 
 4. From the drop-down menu, select **Disabled users**. 
 
+> [!NOTE]
+> If a disabled user accesses Power Automate while the user is in the disabled state, the user will automatically be re-enabled in the environment.
+
 ## Restore deleted users
 
 1. In the [Microsoft 365 admin center](https://admin.microsoft.com/), go to the **Users** > [**Deleted users**](https://go.microsoft.com/fwlink/p/?linkid=834822) page.
@@ -66,6 +69,7 @@ It can take from 30 minutes to 6 hours for a user's status to be updated in an e
 
 > [!NOTE]
 > You can restore deleted users up to 30 days after deletion. When a deleted user is restored and a license is reassigned, the user's status is set to **Enabled** in the respective environments in which the user was disabled.
+
 
 ### See also
 

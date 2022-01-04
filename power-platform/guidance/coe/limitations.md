@@ -1,6 +1,6 @@
 ---
 title: "Limitations | MicrosoftDocs"
-description: "Limitations of some components within the CoE Starter Kit, such as potential timeouts, Government Community Cloud availability, and more."
+description: "Limitations of some components within the CoE Starter Kit, such as potential timeouts, supported languages, and more."
 author: manuelap-msft
 manager: devkeydet
 ms.service: power-platform
@@ -31,7 +31,7 @@ To help ensure service levels, availability, and quality, there are entitlement 
 
 Larger tenants might require a per flow license in order for these flows to complete in a timely manner. More information: [Power Automate License Pricing](https://flow.microsoft.com/pricing/)
 
-You can also request a throttle limit raise while we work on a longer term product solution. Please see [this tracking issue](https://github.com/microsoft/coe-starter-kit/issues/917) for more information.
+You can also [raise a support ticket](https://github.com/microsoft/coe-starter-kit/issues/917) to request an exception from throttling limits.
 
 >[!TIP]
 >The first run of the Sync flows in the Core Solution will run long as it will do an update for every flow/app/etc in the tenant. Subsequent runs  will only update apps/flows/etc that have changed since the last run and so these will not require a per flow license for most tenants.
@@ -66,18 +66,14 @@ Microsoft Power Platform protects developer-type SKUs from inquiry by non-authen
 
 To fix this, you must have your admin security role added to the security roles for all developer environments, and then remove the selection from the sync flow. More information: [Power Apps Community Plan](/powerapps/maker/dev-community-plan)
 
-## Sync flow limitations for Developer and Microsoft Team environments
-
-It currently isn't possible to retrieve the model-driven apps, chatbots, and Desktop flows for developer environments (*My Name's* environment) and Microsoft Teams environments.
-
 ## Supported languages
 
 The CoE Starter Kit solutions are not localized, and only support English. Add the English language pack to your environment to make sure all apps and flows work. More information: [Regional and language options for your environment](/power-platform/admin/enable-languages)
 
 ## Security groups and approvals
 
-We recommend against using security groups to control access to the CoE environment, because it's likely that users who don't have access to this environment will be participating in approvals.
-If you choose to use a security group to control access, users will have to be a part of that group to work with the archival solutions.
+Using security groups to control access to the CoE environment is not recommended, because it's likely that users who don't have access to this environment will be participating in approvals.
+If a security group is used to control access, users will have to be a part of that group to work with the archival solutions.
 
 ## Shared component library in the theming components solution
 
@@ -108,7 +104,7 @@ Desktop Flows that are large are not surfaced in the inventory because one of th
 
 ## Missing custom connectors
 
-We are able to collect only the intersect of all custom connectors outside of solutions, and all custom connectors to which you have access. As a result, custom connectors in a solution, to which the identity running the sync flows do not have access, will not show up in the inventory.
+Only custom connectors outside of solutions, and all custom connectors inside a solution that the identity running the Admin | Sync Flow v3 (Custom Connectors) has access to are available in the inventory. Custom connectors inside a solution, to which the identity running the sync flows does not have access, will not show up in the inventory.
 
 ## Inventory differences between PowerShell, Power Platform Admin Center and CoE Starter Kit
 

@@ -2,7 +2,7 @@
 title: "Publish your chatbot with the Power Virtual Agents app in Microsoft Teams"
 description: "Publish and share your bot with teammates in your teams and across your organization."
 keywords: "Publish, channel, Microsoft Teams, Teams"
-ms.date: 10/15/2021
+ms.date: 12/10/2021
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -129,7 +129,7 @@ You can share your bot by adding it to the Microsoft Teams app store, **Built fo
 
 >[!IMPORTANT]
 >Only teammates or shared users can find and install the bot in the Microsoft Teams app store **Built by your colleague** section. The bot will not show for everyone in the organization even if it is configured to allow everyone to use the bot. To [show the bot to the organization](publication-add-bot-to-microsoft-teams-teams.md#show-to-the-organization), submit the bot for admin's approval to show in Microsoft Teams app store **Built by your org** section.  
->The bot can only be shown in the Microsoft Teams app store **Built by your colleague** section when the total number of shared users does not exceed the tenant's Teams app store discovery policy. To show the bot beyond your organization's policy limit, partner with your admin to [show the bot to the organization](#show-to-the-organization).
+>The bot can only be shown in the Microsoft Teams app store **Built by your colleague** section when the total number of shared users does not exceed the tenant's [Teams app store discovery policy](/power-platform/admin/list-tenantsettings). To show the bot beyond your organization's policy limit, partner with your admin to [show the bot to the organization](#show-to-the-organization).
 
 :::image type="content" source="../media/sharing-security-groups/add-bot-to-teams-bbyc-teams.PNG" alt-text="The Built by your colleagues section as at the bottom of the Built for your org section in the Teams app store.":::
 
@@ -145,7 +145,7 @@ You can share your bot by adding it to the Microsoft Teams app store, **Built fo
 
 6. Select **Show to my teammates and shared users** and review who has access to the bot.
 
-   :::image type="content" source="../media/sharing-security-groups/add-bot-to-teams-bbyc-teams.PNG" alt-text="Show bot in Teams app store Built by your colleague section.":::
+   :::image type="content" source="../media/sharing-security-groups/add-bot-to-teams-show-bbyc.PNG" alt-text="Show bot in Teams app store Built by your colleague section.":::
 
 7. Confirm the **Visible in Built by your colleagues** checkbox is selected and select **Share**.
 
@@ -164,7 +164,7 @@ You can share your bot by adding it to the Microsoft Teams app store, **Built fo
 
 
 
-### Remove the bot from the Built by your colleagues section
+#### Remove the bot from the Built by your colleagues section
 
 
 You can remove the bot from showing in the **Built by your colleagues** section. This does not impact users who have already installed the bot.
@@ -188,7 +188,7 @@ You can remove the bot from showing in the **Built by your colleagues** section.
 
 
 
-## Show to the organization
+### Show to the organization
 
 You can share the bot with your organization by submitting your bot for admin approval to be featured in the **Built for your org** > **Built by your colleagues** section. This is a great way to broadly distribute your bot by partnering with your admin to roll out the bot to everyone in the organization, or a subset of users. 
 
@@ -209,7 +209,7 @@ Before submitting the bot to your organization, make sure:
 >Once a bot is approved by an admin, the bot availability in the **Built by your org** section will be completely managed by your admin. Only an admin can remove the bot from the **Built by your org** section.
 
 
-### Submit for the Built by your org section
+#### Submit for the Built by your org section
 
 1. Go to the **Chatbot** tab.
 

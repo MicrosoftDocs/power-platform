@@ -5,7 +5,7 @@ author: mduelae
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/25/2021
+ms.date: 11/18/2021
 ms.subservice: admin
 ms.author: mkaur
 search.audienceType: 
@@ -26,7 +26,7 @@ This topic covers the default values of OrgDBOrgSettings that are specific to se
 | AutoCreateContactOnPromote | true | Disables the ability to automatically create a contact row for unresolved senders on promotion of an email. <br> This option is organization-wide, but can also be disabled from the personal options setting for each user. More information: [Set personal options](/powerapps/user/set-personal-options#email-tab-options) |
 | SSSUpdatePastMeetingsInNonDraftMode | false | Allows updates for meetings set entirely within the past in Dynamics 365 to be propagated to Exchange when properties such as start, end, subject, body, attendees, or location are changed. <br>**Note**: If this setting is enabled, Exchange will send out meeting invites, updates, and cancellations for past meetings synchronized from Dynamics 365. |
 | DoNotIgnoreInternalEmailToQueues | true | If **Track emails sent between Dynamics 365 users as two activities** is disabled in [system settings](settings-email-tracking.md), this setting allows emails sent from a user to a queue mailbox to be synchronized to Dynamics 365 if the queue's incoming email delivery settings would otherwise accept the email. |
-| CreateQueueItemForSynchronizingMailbox | false | Allows queue items to be created for a synchronized mailbox when there's no recipient in the **To:** or **Cc:** field. <br> More information: [Create queue items from synchronized email messages](create-queue-items-from-synchronized-email-messages.md) |
+| CreateQueueItemForSynchronizingMailbox | true | Allows queue items to be created for a synchronized mailbox when there's no recipient in the **To:** or **Cc:** field. <br> More information: [Create queue items from synchronized email messages](create-queue-items-from-synchronized-email-messages.md) |
 | UsePlainTextForEmailTemplateBody | false | Changes the email template to use plain text where otherwise text with the following symbols wouldn't appear: &lt;text&gt;. |
 | EmailTemplateRetrieveFallbackContact | false | When referencing a contact on a lead or opportunity in an email template, use fallback logic to pick up a fallback contact such as primarycontactid or parentcontactId when the referenced contact is empty. |
 | ResolveForInactiveEntities | false | When enabled, email addresses for inactive tables are ignored for email address resolution. <br> **Note**: This setting doesn't apply to system users whose accounts have been disabled, who are always excluded. |
