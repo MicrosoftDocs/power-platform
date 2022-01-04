@@ -1,15 +1,15 @@
 ---
 title: "Data storage in Power Platform | MicrosoftDocs"
 description: Provides information about data storage concepts in Microsoft Dataverse.
-ms.date: 12/08/2021
+ms.date: 01/04/2022
 ms.service: power-platform
 ms.topic: "get-started-article"
 ms.custom: 
   - "admin-security"
   - "intro-internal"
-author: jimholtz
+author: lancedMicrosoft
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: lanced
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
