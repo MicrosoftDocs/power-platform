@@ -256,7 +256,7 @@ Before submitting the bot to your organization, make sure:
 >Try signing out and back in again (if you're using the desktop app) or refreshing your browser (if you're using the Teams web app).
 
 ## Add the bot to a team channel
-Microsoft Teams supports [adding bots into teams](https://docs.microsoft.com/microsoftteams/platform/bots/how-to/conversations/channel-and-group-conversations?tabs=dotnet) where team members can @mention the bot in channels under the team and allow teammates to see the response from the bot. This is great for scenarios where:
+Microsoft Teams supports [adding bots into teams](https://docs.microsoft.com/microsoftteams/platform/bots/how-to/conversations/channel-and-group-conversations?tabs=dotnet) where team members can @mention the bot in channels under the team and allow teammates to see the response from the bot. The bot will greet in the General channel of the team when added. This is great for scenarios where:
 1. Your bot supports collaboration scenario, for example sharing the latest sales report insight with the rest of the Sales team member in a team channel
 2. Allow every team member to engage with the bot in team channel or via private chat without needing to manually install the bot themselves
 
