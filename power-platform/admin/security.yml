@@ -19,7 +19,7 @@ metadata:
 landingContent:
 
   # Card 
-  - title: Overview
+  - title: Power Platform security overview
     linkLists:
        - linkListType: overview
          links:
@@ -35,7 +35,7 @@ landingContent:
     linkLists:
        - linkListType: overview
          links:
-          - text: Grant user access
+          - text: Grant users access
             url: grant-users-access.md              
        - linkListType: how-to-guide
          links:
