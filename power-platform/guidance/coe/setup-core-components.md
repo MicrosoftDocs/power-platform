@@ -263,6 +263,11 @@ The first run of the inventory can take a few hours depending on the number of e
 
 1. View **Runs**.
 
+## What's next?
+
+- Learn how to [regularly upgrade and extend](after-setup.md) the CoE Starter Kit.
+- Check out [other components part of the Core solution](core-components.md##environment-request-management-components), and the [Governance](governance-components.md) and [Nurture](nurture-components.md) solutions.
+
 ## All environment variables
 
 Here is the full list of environment variables that impact the inventory sync flows, including environment variables with Default values. You may have to [update environment variables](faq.md#update-environment-variables) after import.

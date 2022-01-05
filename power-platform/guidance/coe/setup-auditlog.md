@@ -181,7 +181,7 @@ A Power Automate flow uses the custom connector, queries the audit log daily, an
     ![Import the CoE audit log components solution.](media/coe-custom2.png "Import the CoE audit log components solution")
 
 1. Open the **Center of Excellence – Audit Log solution**.
-1. [Remove the unmanaged layer](setup.md#installing-upgrades) from the **\[Child\] Admin | Sync Logs**.
+1. [Remove the unmanaged layer](after-setup.md#installing-upgrades) from the **\[Child\] Admin | Sync Logs**.
 1. Select the **\[Child\] Admin | Sync Logs**.
 1. Edit the **Run only users** settings.
 
