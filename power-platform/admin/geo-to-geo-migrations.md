@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/09/2021
+ms.date: 01/05/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -32,6 +32,9 @@ We continue to open new datacenter regions for business services, and to add dat
 
 ## Impact of migrating  
  Moving an environment to a different region changes your tenant to be multiregional - enabling regional features in the [!INCLUDE[pn_dyn_365_admin_center](../includes/pn-dyn-365-admin-center.md)].  
+
+> [!IMPORTANT]
+> Once an environment is moved to the new region, prior backups of that environment are no longer available.
 
  The other significant change is to your organization URL. Each of the regional datacenters has a unique identifier in the URL. When your organization is moved from one regional datacenter to another this identifier will change. For example:  
 
