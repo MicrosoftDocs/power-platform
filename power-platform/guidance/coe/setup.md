@@ -132,9 +132,6 @@ The [DLP policy](/admin/wp-data-loss-prevention) applied to your CoE Starter Kit
 
 - Both the governance components and nurture components solutions require the core solution before they can be installed.
 
-> [!NOTE]
->The Admin \| Sync Template flows crawl through all the resources stored in Microsoft Power Platform and make a copy of details in each resource (for example, apps and flows) to Dataverse (table definitions are provided in this solution). All data displayed in most of the starter kit components must be in Dataverse, which means that the sync template must be configured for everything else to work. The sync flows run daily overnight. When you first set up the CoE Starter Kit, you can manually start the Admin \| Sync Template v3 flow, which will start the process of crawling and storing the information in Dataverse.
-
 > [!div class="nextstepaction"]
 > [Next step: Set up inventory components](setup-core-components.md)
 
