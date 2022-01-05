@@ -93,14 +93,13 @@ The following questions are common security questions and answers for Power Plat
   **Does Power Platform detect jailbroken iOS devices and rooted Android devices to help with protecting organizational data?**
   - The recommendation is to use Microsoft Intune, a Mobile Device Management (MDM) solution which can help protect organizational data by requiring users and devices to meet some requirements. For more details, please see Intune's [Compliance Policy settings](https://docs.microsoft.com/en-us/mem/intune/protect/device-compliance-get-started#compliance-policy-settings).
 
-  **Why is the cookie scoped to parent domain?**
-  - To be updated
+  **Why are the session cookies scoped to parent domain?**
+  - This is to allow Auth across Orgs. The subdomains aren't used as security boundaries and also don't host customer contents.
 
   **How can we set the application session to timeout after, say, 15 minutes?**
   - Power Platform uses Azure Active Directory (AAD) for Identity and Access Management(IAM). Power Platform follows AAD's [recommended configuration](https://docs.microsoft.com/en-us/azure/active-directory/develop/access-tokens#access-token-lifetime) for session management for optimal user experience. Together with upcoming AAD's Continuous Access Evaluation (CAE), the experience will be secure, reliable, and performant for end users.
 
   **The application allows the same user to access from more than one machine/browser at the same time. How can we prevent that?**
-  - To be updated
   - Accessing the application from more than one machine/browser at the same time is a convenience. However, the access needs to be continuously evaluated to ensure that the access is from legitimate source and still valid.
   - Azure Active Directory (AAD) has rolled out Continuous Access Evaluation ([CAE](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/concept-continuous-access-evaluation)) feature which will be coming to Power Platform to help with the above.
 
