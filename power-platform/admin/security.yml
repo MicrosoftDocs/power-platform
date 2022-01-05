@@ -85,6 +85,20 @@ landingContent:
             url: /learn/modules/manage-environmental-changes/
 
   # Card
+  - title: Configure teams and team templates
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Manage teams
+            url: manage-teams.md
+          - text: Manage group teams
+            url: manage-group-teams.md
+          - text: Team templates
+            url: about-team-templates.md
+          - text: Team templates for access rights
+            url: create-team-template-add-entity-form.md
+
+  # Card
   - title: Configure field-level security
     linkLists:
       - linkListType: overview
@@ -99,20 +113,6 @@ landingContent:
             url: enable-disable-security-field.md
           - text: Add teams or users to field security
             url: add-teams-users-field-security-profile.md
-
-  # Card
-  - title: Configure teams and team templates
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Manage teams
-            url: manage-teams.md
-          - text: Manage group teams
-            url: manage-group-teams.md
-          - text: Team templates
-            url: about-team-templates.md
-          - text: Team templates for access rights
-            url: create-team-template-add-entity-form.md
 
   # Card
   - title: Encryption
