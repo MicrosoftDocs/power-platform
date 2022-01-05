@@ -19,7 +19,7 @@ metadata:
 landingContent:
 
   # Card 
-  - title: Get started
+  - title: Overview
     linkLists:
        - linkListType: overview
          links:
@@ -27,20 +27,16 @@ landingContent:
             url: ./security/overview.md
           - text: Authenticating to Power Platform services
             url: ./security/authenticate-services.md
-          - text: Overview of user security
-            url: grant-users-access.md            
-       - linkListType: learn
-         links:
-          - text: Get started with security roles in Dataverse
-            url: /learn/modules/get-started-security-roles/
+          - text: Connecting and authenticating to data sources
+            url: ./security/connect-data-sources.md            
 
   # Card
   - title: Configure user security
     linkLists:
-       - linkListType: concept
+       - linkListType: overview
          links:
-          - text: Security roles and privileges
-            url: security-roles-privileges.md                
+          - text: Grant user access
+            url: grant-users-access.md              
        - linkListType: how-to-guide
          links:
           - text: Control user access
@@ -49,7 +45,11 @@ landingContent:
             url: assign-security-roles.md
           - text: Add users to an environment
             url: add-users-to-environment.md
-
+       - linkListType: learn
+         links:
+          - text: Get started with security roles in Dataverse
+            url: /learn/modules/get-started-security-roles/
+  
   # Card
   - title: Configure environment security
     linkLists:
