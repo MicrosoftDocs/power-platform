@@ -19,35 +19,35 @@ search.app:
 
 # Set up ALM Accelerator for Power Platform
 
-As a first step you'll need to complete the initial steps of an ALM deployment as an administrator. The commands below allow you to quickly automate the install. When you completed these steps, you can add Advanced Makers and setup connections to their Power Platform development environments.
+As a first step you'll need to complete the initial steps of an ALM deployment as an administrator. The commands below allow you to quickly automate the install. When you've completed these steps, you can add advanced makers and set up connections to their Power Platform development environments.
 
 ## Overview
 
 The following roles are involved with Power Platform.
 
 - Administrator
-  - Azure Active Directory - Permissions to create Azure Active Directory Application with [Admin Level Consent](/azure/active-directory/manage-apps/grant-admin-consent).
-  - Power Platform - Environment administrator to Create Validation, Test, and Production environments.
-  - Azure DevOps - Organization and Project administrator.
+  - Azure Active Directory - Permissions to create Azure Active Directory applications with [Admin Level Consent](/azure/active-directory/manage-apps/grant-admin-consent).
+  - Power Platform - Environment administrator to create validation, test, and production environments.
+  - Azure DevOps - Organization and project administrator.
 - Maker
-  - Power Platform - Create Development environment.
+  - Power Platform - Create development environment.
   - Azure DevOps - Azure DevOps project user, create solution branch.
 
 It is assumed that this installation will be run by a single user that has the following rights:
 
-- Power Platform Global administrator
+- Power Platform global administrator.
 
-- DevOps administrator rights
+- DevOps administrator rights.
 
-- Azure Active directory administrator rights
+- Azure Active Directory administrator rights.
 
 ## Before you start
 
 Complete [Before You Start](./before-you-start.md) to ensure that:
 
-- Power Platform Environments have been created.
+- Power Platform environments have been created.
 
-- The Azure DevOps Organization and Azure DevOps Project have been created.
+- The Azure DevOps organization and Azure DevOps project have been created.
 
 - CoE CLI is installed.
 
@@ -59,7 +59,7 @@ Complete [Before You Start](./before-you-start.md) to ensure that:
    coe alm generate install -o test.json
    ```
 
-   More information: [coe alm generate install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/generate/install.md) command. This command will generate a file similar to the one below.
+   This command generates a file similar to the one below.
 
    ```json
    {
@@ -93,15 +93,17 @@ Complete [Before You Start](./before-you-start.md) to ensure that:
    }
    ```
 
+More information: [COE ALM generate install](https://aka.ms/coe-cli/help/alm/install)
+
 1. Review the JSON and install using the following command.
 
    ```bash
    coe alm install -f test.json
    ```
 
-   More information: [coe alm install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/install.md) command
+More information: [CoE ALM generate install](https://aka.ms/coe-cli/help/alm/install)
 
-1. [Update permissions for the project build service](/power-platform/guidance/coe/setup-almacceleratorpowerplatform#update-permissions-for-the-project-build-service) to enable build pipelines to interact with Git Repositories.
+1. [Update permissions for the project build service](/power-platform/guidance/coe/setup-almacceleratorpowerplatform#update-permissions-for-the-project-build-service) to enable build pipelines to interact with Git repositories.
 
 ## Read next
 
