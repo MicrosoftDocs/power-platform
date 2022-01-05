@@ -39,7 +39,7 @@ Watch how to use the ALM Accelerator for Power Platform solution.
 
 1. Select **Create** for each connection when prompted.
 
-1. The first time you open the app a dialog will open and you'll be asked to select an **Environment**. Next time you open the app, it will remember which environment you were working on.
+1. The first time you open the app a dialog opens and you are asked to select an **Environment**. Next time you open the app, it will remember which environment you were working on.
 
 1. Once the environment is selected, the main screen displays a list of all the unmanaged solutions in the environment. Depending on the *user deployment settings* your user has assigned, you'll be able to see the following options for each solution:
 
