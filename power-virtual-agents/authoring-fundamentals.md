@@ -39,9 +39,7 @@ You can also [choose what language you want your bot to use](authoring-language-
 
 ## Accessibility
 
-Microsoft wants to provide the best possible experience for all customers, including customers with disabilities. The bot **Authoring canvas** is built to be accessible from the get-go. 
-
-In general, using the authoring canvas follows standard navigation patterns. For complex scenarios, we've built keyboard shortcuts tailored to help users authoring content using keyboard navigation.
+The bot authoring canvas is built for accessibility in accordance with [Microsoft Accessibility Guidelines](https://www.microsoft.com/accessibility/), and supports standard navigational patterns. For complex scenarios, users who author content with keyboard navigation can use the following routing anchors.
 
 ###  Routing anchors
 Press enter or space on a route anchor to go into editing mode for that route. Once in the editing mode, you can tab to other node anchors. Once the anchor is selected, you can:
@@ -60,15 +58,15 @@ At any time, pressing these hotkeys on a route anchor will read out the properti
 
 ## In this section
 
-Topic | Description
-- | -
-[Create your first bot](authoring-first-bot.md) | Create your first bot in less than 30 minutes.
-[Use lesson topics](authoring-template-topics.md) | Use a series of prebuilt topics that guide you through authoring topics - from simple to advanced.
-[Create and edit topics](authoring-create-edit-topics.md) | Create and edit topics using the no-code authoring canvas.
-[Use system fallback topic](authoring-system-fallback-topic.md) | Use a system fallback topic for when your bot can't find an answer.
-[Manage topics](authoring-topic-management.md) | Copy, edit, and manage which topics should be available in your bot.
-[Test your bot](authoring-test-bot.md) | Test your bot directly within the Power Virtual Agents portal without needing to deploy or publish it.
-[Supported languages](authoring-language-support.md) | Choose from a number of languages when you create your bot, with user interface, system, and template topic localization.
+| Topic                                                           | Description                                                                                                               |
+| --------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| [Create your first bot](authoring-first-bot.md)                 | Create your first bot in less than 30 minutes.                                                                            |
+| [Use lesson topics](authoring-template-topics.md)               | Use a series of prebuilt topics that guide you through authoring topics - from simple to advanced.                        |
+| [Create and edit topics](authoring-create-edit-topics.md)       | Create and edit topics using the no-code authoring canvas.                                                                |
+| [Use system fallback topic](authoring-system-fallback-topic.md) | Use a system fallback topic for when your bot can't find an answer.                                                       |
+| [Manage topics](authoring-topic-management.md)                  | Copy, edit, and manage which topics should be available in your bot.                                                      |
+| [Test your bot](authoring-test-bot.md)                          | Test your bot directly within the Power Virtual Agents portal without needing to deploy or publish it.                    |
+| [Supported languages](authoring-language-support.md)            | Choose from a number of languages when you create your bot, with user interface, system, and template topic localization. |
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
