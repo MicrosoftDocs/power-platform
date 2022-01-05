@@ -33,7 +33,7 @@ Watch how to use the ALM Accelerator for Power Platform solution.
 
 1. Once you have installed and configured the app, launch it from your environment under **Apps** by selecting **ALM Accelerator for Power Platform**.
 
-1. When prompted to create connections / grant consent create the necessary connections or accept the consent dialog.
+1. When prompted to create connections and grant consent, create the necessary connections or accept the consent dialog.
 
 1. If prompted to create an HTTP with Azure AD connection, enter 'https://graph.microsoft.com' for both the **Base Resource URL** and **Azure AD Resource URI**.
 
@@ -45,7 +45,7 @@ Watch how to use the ALM Accelerator for Power Platform solution.
 
     - **Save Solution**: Saves the current state of the solution into version control so all changes done to the solution can be tracked.
     - **Publish Solution**: Allows you to request to move the solution across environments.
-    - **Choose a Profile**: Allows you to select a **Solution profile** to associate a solution to a **Repository** in a given **Organization** and **Project**. If you're unsure what profile to select ask your administrator to provide the name of the solution profile for your solution.
+    - **Choose a Profile**: Allows you to select a **Solution profile** to associate a solution to a **Repository** in a given **Organization** and **Project**. If you're unsure what profile to select, ask your administrator to provide the name of the solution profile for your solution.
     - **Request History**: (right chevron icon): Provides a list of requests (saves and deployments) done for that solution.
 
 1. Next step is to choose a **Solution Profile** for the solution so you can associate it to a specific repository in a given organization and project in DevOps. This selection will determine which environments you can deploy the solution into:
@@ -75,7 +75,7 @@ Watch how to use the ALM Accelerator for Power Platform solution.
       - If you don't have permission to create connections in the target environment, the + button will be disabled and you'll have to request a connection be created by another user.
          - To request a connection, select **Request a Connection**.
          - Enter the name of the team member you need to create the connection, and select the user.
-         - To open the preformatted email select **Send**.
+         - To open the preformatted email, select **Send**.
          - The preformatted email includes a link for the recipient to create the required connection.
 
    - **Environment Variables**
@@ -93,7 +93,7 @@ Watch how to use the ALM Accelerator for Power Platform solution.
       - This screen lists all of the apps in your solution and allows users to share the apps in the downstream environment with an Azure AD Group.
       - Use  the dropdown list to select the Azure AD group with which you'd like to share the app.
       - To view the group details select **Details**. This button opens a new browser tab with a link to the Azure AD group in the Azure portal.
-      - To set the permissions select the permissions dropdown list and set the permissions to either **Can View**, **Can Edit**, or **Can View and Share**.
+      - To set the permissions, select the permissions dropdown list and set the permissions to either **Can View**, **Can Edit**, or **Can View and Share**.
 
    - **Component Ownership**
 
@@ -101,7 +101,7 @@ Watch how to use the ALM Accelerator for Power Platform solution.
 
       - This screen lists all of the flows in your solution. Users can configure the owner of the flow in the downstream environment by selecting a Dataverse user.
       - Use  the dropdown list to select a Dataverse user to own the flow in the downstream environment.
-      - To view the flow select the name of the flow to open a new tab with the flow definition.
+      - To view the flow, select the name of the flow to open a new tab with the flow definition.
 
 1. After you select the **Solution Profile** and configure the **Deployment Settings**, push your changes to Git by selecting **Save Solution**. In the background, the app pushes your change to version control automatically creating a branch. Repeat the pushes as you make changes to your solution so your change history is kept.
 
