@@ -266,7 +266,7 @@ The first run of the inventory can take a few hours depending on the number of e
 ## What's next?
 
 - Learn how to [regularly upgrade and extend](after-setup.md) the CoE Starter Kit.
-- Check out [other components part of the Core solution](core-components.md##environment-request-management-components), and the [Governance](governance-components.md) and [Nurture](nurture-components.md) solutions.
+- Check out [other components part of the Core solution](core-components.md#environment-request-management-components), and the [Governance](governance-components.md) and [Nurture](nurture-components.md) solutions.
 
 ## All environment variables
 
