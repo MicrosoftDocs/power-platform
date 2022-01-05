@@ -23,8 +23,8 @@ landingContent:
     linkLists:
        - linkListType: overview
          links:
-          - text: Security in Microsoft Dataverse
-            url: wp-security.md
+          - text: Security in Microsoft Power Platform
+            url: ./admin/security/overview.md
           - text: Security concepts in Microsoft Dataverse
             url: wp-security-cds.md
           - text: Overview of user security

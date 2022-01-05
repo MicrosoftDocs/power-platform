@@ -31,7 +31,7 @@ search.app:
 
 User authentication to the Power Platform services consists of a series of requests, responses, and redirects between the user's browser and the Power Platform service or the Azure services used by Power Platform. That sequence describes the process of user authentication in the Power Platform services, which follows the [Azure Active Directory's auth code](/azure/active-directory/develop/v2-oauth2-auth-code-flow) grant flow. For more information about options for an organization's user authentication models (sign-in models), see [Choosing a sign-in model for Microsoft 365](https://www.microsoft.com/microsoft-365/blog/2014/05/13/choosing-a-sign-in-model-for-office-365/).  
 
-### End user authentication steps to Power Platform
+## End user authentication steps to Power Platform
 
 The user authentication sequence for the Power Platform services occurs as described in the following steps, which are illustrated in the image that follows.
 
