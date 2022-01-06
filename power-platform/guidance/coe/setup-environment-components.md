@@ -39,7 +39,11 @@ This article will help you to setup the environment request components of the Co
 
 There are several flows which will need to be **turned on** for these components:  
 
-- DLP Request | Make approved policy change
+- DLP Request | Apply Policy to Environment (Child)
+- DLP Request | Sync Policy to Dataverse (Child)
+- DLP Request | Process Approved Policy Change
+- DLP Request | Sync new Policy
+- DLP Request | Sync Shared Policies
 - Env Request | Cleanup expired environments
 - Env Request | Create approved environment
 - Env Request | Notify admin when new request submitted

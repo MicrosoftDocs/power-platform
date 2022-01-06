@@ -101,7 +101,9 @@ There are several child flows which will need to be **turned on** in this order:
 - CLEANUP HELPER – Check Deleted (PVA)
 - CLEANUP HELPER – Power Apps User Shared With
 
-If you get an error turning on the flow, you may need to set the [run only user properties](faq.md#set-flow-run-only-users-properties) of the flow.
+If you get a connection authorization error turning on the flow, you may need to set the [run only user properties](faq.md#set-flow-run-only-users-properties) of the flow.
+
+ ![Connection authorization error when turning on the flow.](media/connerror.png "Connection authorization error when turning on the flow.")
 
 ## Turn on setup flows
 
