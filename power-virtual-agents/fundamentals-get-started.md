@@ -63,34 +63,25 @@ In addition to this guide, you can also [download and use templates to help you 
 
 1. Now that you have full functionality within your bot, you can create your own topic—or, in other words, a dialog tree specifying how your bot responds to a user's question.
 
-2. Start by selecting **Topics** in the side navigation pane, and then select **New topic** at the top of the page.
+2. Start by selecting **Topics** in the side navigation pane, and then select **New topic** at the top of the page to open the authoring canvas for an empty topic.
 
     :::image type="content" source="media/topics-new.png" alt-text="New topic." border="false":::
+
+3.  You can now name your topic and include some trigger phrases for this topic. Trigger phrases are examples of the type of user questions or utterances that help teach the bot when to respond with this dialog. 
     
-
-
-3. You can now name your topic and include some trigger phrases for this topic. Trigger phrases are examples of the type of user questions or utterances that help teach the bot when to respond with this dialog. 
+    As an example, let's create a topic called 'Personal Hello World' and add 'hello world' as a trigger phrase. 
     
+    :::image type="content" source="media\fundamentals-get-started\hello-world-topic.png" alt-text="Name topic and add trigger phrase.":::
 
-
-   As an example, let's create a topic called 'Personal Hello World' and add 'hello world' as a trigger phrase. Select **Save topic** to add the topic to the topics list.
-    
-    :::image type="content" source="media/overview-trigger.png" alt-text="Create topic and trigger phrase." border="false":::
-
-
-4. After saving your topic, select **Go to authoring canvas**. This is the graphical dialog tree editor that allows you to define bot responses and the overall bot conversation.
+4. Next you'll define bot responses and the overall bot conversation.
 
    Start by entering 'Hello! I'll create a personalized greeting for you.' into the first **Message** node. 
    
     :::image type="content" source="media/quickstart-add-node.png" alt-text="Add node." border="false":::
-    
-
-    
 
 5. Then, click on the **+** below the node, and add an **Ask a question** node by selecting it in the menu. Enter the question text, 'Where do you live?', in the **Ask a question** box. To give the customer a choice between different responses, select **Multiple choice options** under **Identify**.
     
     :::image type="content" source="media/quickstart-create-topic-02.png" alt-text="Bot answer." border="false":::
-
 
 6. Add two options for the user, by selecting **+ New option**. Enter 'Seattle' and 'Bellevue' in the text boxes called 'Options for user'. Each option is presented as a multiple choice button to the user.
 
@@ -100,13 +91,10 @@ In addition to this guide, you can also [download and use templates to help you 
 
 7. In the forked conversation path, each node has automatically checked for 'Seattle' in one path, and 'Bellevue' in the other path to take the appropriate next step.
 
-
-
 8. Finally, click the **+** below each of the Condition nodes to add a **Message** node in each branch. Add a simple message like 'Hello Seattle!' in the Seattle branch, and 'Hello Bellevue!' in the Bellevue branch. Select **Save** at the top.
 
     :::image type="content" source="media/quickstart-create-topic-03.png" alt-text="Complete conversation." border="false":::
     
-
 You now have a very simple branching dialog tree, congratulations! You can begin to create more complex versions of this tree by incorporating [variables](authoring-variables.md), [entities](advanced-entities-slot-filling.md), and [Power Automate flows](advanced-flow.md).
 
  
