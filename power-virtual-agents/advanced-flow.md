@@ -250,18 +250,14 @@ These instructions use adding weather information to a flow as an example. If yo
 
 1. In Power Virtual Agents, go to the [**Topics page**](authoring-create-edit-topics.md) for the bot you want to edit.
 
-1. Create a new topic, and name it **Get weather**. 
-
-1. Add the following **trigger phrases**:
+1. Create a new topic, then name it **Get weather** and add the following **trigger phrases**:
 
     - will it rain
     - today's forecast
     - get weather
     - what's the weather
 
-1. Go to the **Authoring canvas** for the new topic.
-
-    :::image type="content" source="media/CreateTopic.jpg" alt-text="Create a new Topic." border="false":::
+    :::image type="content" source="media\advanced-flow\create-get-weather-topic.png" alt-text="Create a new Topic." border="false":::
 
 1. By default, a message node is created. Enter **I can help you with that** into the node, and then select the plus (**+**) button under it to add a new node. 
 
