@@ -84,10 +84,10 @@ If the flow is a solution flow, you can change the owner using [Power Automate W
 
 The flow will be downgraded to lower performance and all flow owners will be notified and the flow will be turned off in 30 days if no action is taken.
 
-### Do guest users(not from your tenant) need license to use Power Automate?
+### Do guest users (not from your tenant) need a license to use Power Automate?
 Yes. The guest user must have a Power Automate license assigned through one of the following tenants:
 - The tenant hosting the flow. You can assign them admin trials for temporary access or standalone licenses.
- - The home tenant of the guest user.
+- The home tenant of the guest user.
 
 For example, If a guest user has a Power Automate per user license assigned in the home tenant, they can use premium features in the guest tenant that is hosting the flow. 
 Power Automate included with Office, Power Automate per user, per user with attended RPA, Power Apps per user, Dynamics user plans will  have the following characteristics:
