@@ -1,6 +1,6 @@
 ---
 title: "Set up the Power Apps theming solution | MicrosoftDocs"
-description: "The Power Apps theming solution contains a set apps, tables, custom controls and a component library.  The Theme editor app allows designers to create and manage themes."
+description: "Setup instructions for the Power Apps theming solution, which contains a set apps, tables, custom controls and a component library.  The Theme editor app allows designers to create and manage themes."
 author: manuelap-msft
 manager: devkeydet
 ms.service: power-platform
@@ -27,7 +27,7 @@ The theming components solution contains assets that are relevant to makers in a
 >[!IMPORTANT]
 >The theming components solution doesn't have a dependency on other components of the CoE Starter Kit. It can be used independently.
 
-Before you begin, review the [prerequisites](setup.md#prerequisites) for using the starter kit solution.
+Before you begin, review the [prerequisites](setup.md) for using the starter kit solution.
 
 - If you aren't already using the CoE Starter Kit, we recommend [creating a new environment](../../admin/create-environment.md) for CoE solutions.
 - If you are already using other CoE Starter Kit components, use the environment that you created as part of setting up the [core components](setup-core-components.md) for this solution.
