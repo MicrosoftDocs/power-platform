@@ -5,7 +5,7 @@ author: PriyaKodukula
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 10/06/2021
+ms.date: 01/06/2022
 ms.author: prkoduku
 manager: kvivek
 search.audienceType: 
@@ -90,9 +90,9 @@ Yes. The guest user must have a Power Automate license assigned through one of t
 - The home tenant of the guest user.
 
 For example, if a guest user has a Power Automate per user license assigned in the home tenant, they can use premium features in the guest tenant that is hosting the flow. 
-Power Automate, included with Office, Power Automate per user, per user with attended RPA, Power Apps per user, and Dynamics user plans, will have the following characteristics:
-- In the Azure public cloud, they're recognized across tenants in guest scenarios because they aren't bound to a specific environment.
-- In Azure national or sovereign clouds, they're recognized across tenants in guest scenarios. More information: [National clouds](https://docs.microsoft.com/en-us/azure/active-directory/develop/authentication-national-cloud), [Azure geographies](https://azure.microsoft.com/en-us/global-infrastructure/geographies/#geographies)
+Power Automate, included with Office, Power Automate per user, per user with attended Robotic Process Automation (RPA), Power Apps per user, and Dynamics user plans, will have the following characteristics:
+- In the Azure public cloud, the above plans are recognized across tenants in guest scenarios because they aren't bound to a specific environment.
+- In Azure national or sovereign clouds, the above plans are recognized across tenants in guest scenarios. More information: [National clouds](/azure/active-directory/develop/authentication-national-cloud), [Azure geographies](https://azure.microsoft.com/global-infrastructure/geographies/#geographies)
  - Licenses are not recognized across tenants in difference Azure clouds.
 
 ### What Power Automate capabilities are included in Windows licenses?
