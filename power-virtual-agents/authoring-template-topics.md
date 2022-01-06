@@ -42,7 +42,7 @@ While the topics are functional, they are examples for the purposes of learning 
 
 1. Select **Lesson 1** and work through to **Lesson 4**. Review the title and description, and see what trigger phrases are being used.  
 
-1. Select **Go to authoring canvas** on each topic's details page to see the bot's flow; including the bot's comments, expected user responses, decision points, and entity references.
+1. Select each topic to go to the authoring canvas and see the bot's flow; including the bot's comments, expected user responses, decision points, and entity references.
 
    :::image type="content" source="media/template-list.png" alt-text="List of lesson topics." border="false":::
 
