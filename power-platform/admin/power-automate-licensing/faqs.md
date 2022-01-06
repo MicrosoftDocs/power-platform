@@ -89,8 +89,8 @@ Yes. The guest user must have a Power Automate license assigned through one of t
 - The tenant hosting the flow. You can assign them admin trials for temporary access or standalone licenses.
 - The home tenant of the guest user.
 
-For example, If a guest user has a Power Automate per user license assigned in the home tenant, they can use premium features in the guest tenant that is hosting the flow. 
-Power Automate included with Office, Power Automate per user, per user with attended RPA, Power Apps per user, Dynamics user plans will  have the following characteristics:
+For example, if a guest user has a Power Automate per user license assigned in the home tenant, they can use premium features in the guest tenant that is hosting the flow. 
+Power Automate, included with Office, Power Automate per user, per user with attended RPA, Power Apps per user, and Dynamics user plans, will have the following characteristics:
 - In the Azure public cloud, they're recognized across tenants in guest scenarios because they aren't bound to a specific environment.
 - In Azure national or sovereign clouds, they're recognized across tenants in guest scenarios. More information: [National clouds](https://docs.microsoft.com/en-us/azure/active-directory/develop/authentication-national-cloud), [Azure geographies](https://azure.microsoft.com/en-us/global-infrastructure/geographies/#geographies)
  - Licenses are not recognized across tenants in difference Azure clouds.
