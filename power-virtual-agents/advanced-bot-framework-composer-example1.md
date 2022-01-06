@@ -43,8 +43,6 @@ Go to **Topics** in Power Virtual Agents and create a new topic called **Meal de
 - what dishes do you deliver
 - entrees available for delivery 
 
-Select **Save topic**, and then select **Go to authoring canvas**. 
-
 In the **Authoring canvas**, select the default **Message** node. Select the three vertical dots, then select **Delete**.
 
 Select the **Add node** (+) button under the **Trigger phrases** node, and then select **Ask a question**.
