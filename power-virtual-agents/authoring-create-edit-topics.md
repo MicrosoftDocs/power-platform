@@ -100,7 +100,7 @@ These topics fall into two categories:
 
 1. In the topic list, select the topic you want to edit.
 
-   :::image type="content" source="media/topics-details-canvas.png" alt-text="Selecting a topic will take you to the authoring canvas"":::
+   :::image type="content" source="media/topics-details-canvas.png" alt-text="Selecting a topic will take you to the authoring canvas":::
 
 1. Power Virtual Agents opens the topic in the authoring canvas and displays the topic's trigger phrases. The authoring canvas is where you define the conversation path between a customer and the bot.
 
