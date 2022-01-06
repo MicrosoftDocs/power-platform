@@ -19,9 +19,9 @@ search.app:
 
 # CoE ALM Accelerator for Power Platform tenant deployments
 
-AA4PP can be deployed in the following scenarios single demo tenant, single enterprise tenant.
+AA4PP can be deployed in the following scenarios single demo tenant or single enterprise tenant.
 
-Currently AA4PP **doesn't** automatically support a multi-tenant enterprise deployment model and more manual configuration will be required to configure this scenario.
+Currently AA4PP doesn't automatically support a multi-tenant enterprise deployment model and more manual configuration will be required to configure that scenario.
 
 ## Deployments scenarios
 
@@ -32,11 +32,11 @@ Azure DevOps: <https://dev.azure.com/v1234f>
 
 Attributes:
 
-- Separated from enterprise environment in Demo Azure Active Directory tenant.
-- Use Trial environment / licenses.
-- Demonstrate end to end ALM Process.
+- Separated from enterprise environment in a demo Azure Active Directory tenant.
+- Uses trial environment and licenses.
+- Demonstrates an end-to-end ALM process.
 - Learn and explore.
-- Typical Users: 1-5 users.
+- Typical number of users is 1-5.
 
 ### Enterprise deployment scenario
 
@@ -45,9 +45,9 @@ Azure DevOps: <https://dev.azure.com/contoso>
 
 Attributes:
 
-- Integrated into single enterprise Azure Active Directory tenant.
-- Multiple environments Development, Test and Production.
-- End to end ALM process for enterprise wide applications with thousands of users.
+- Integrated into a single enterprise Azure Active Directory tenant.
+- Multiple environments development, test, and production.
+- End-to-end ALM process for enterprise-wide applications with thousands of users.
 - Fusion development teams of makers, professional developers, and administrators.
 
 ### Multi-tenant deployment scenario
@@ -57,14 +57,14 @@ Azure DevOps: <https://dev.azure.com/contoso>, <https://dev.azure.com/contoso-de
 
 Attributes:
 
-- Multiple Azure Active Directory tenants – Internal in organization or with partners
-- Multiple environments Development, Test and Production
-- End to end ALM Process for enterprise wide applications with thousands of users or applications shared across organizations
-- Fusion Development Teams of Makers, Pro Developers, administrators from within and outside the organization
+- Multiple Azure Active Directory tenants – Internal in organization or with partners.
+- Multiple environments development, test, and production.
+- End-to-end ALM Process for enterprise-wide applications with thousands of users or applications shared across organizations.
+- Fusion development teams of makers, pro developers, and administrators from within and outside the organization.
 
 ## Factors to consider
 
-- Does ALM for Low Code solutions introduce new concepts to parts of the business that hasn't been exposed to them before?
+- Does ALM for low-code solutions introduce new concepts to parts of the business that hasn't been exposed to them before?
 
 - Would a demo deployment provide an environment to allow the different [personas](../personas.md) to experiment and accelerate adoption of ALM processes?
 
@@ -72,36 +72,36 @@ Attributes:
 
 - How will the maker community be expanded to adopt new ALM concepts?
 
-- What steps can be put in place to adopt a self-service model to create environments and move between validation, test and production environments.
+- What steps can be put in place to adopt a self-service model to create environments and move between validation, test, and production environments.
 
 ## Demonstration deployment
 
-To setup a demonstration deployment, you're looking to quickly install AA4PP to and showcase the end-to-end process. For this scenario, the following configuration is expected:
+To setup a demonstration deployment, you're looking to quickly install AA4PP and showcase the end-to-end process. For this scenario, the following configuration is expected:
 
-1. Using Trial tenant and environments to demonstrate the solution.
+1. Use a trial tenant and environments to demonstrate the solution.
 
 1. Single administrator that has the following rights:
    - Azure Active Directory tenant administrator
-   - Power Platform Global administrator
-   - Power Platform Organization administrator
+   - Power Platform global administrator
+   - Power Platform organization administrator
 
-1. Demo non-administration maker users that will be used to show process of creating ALM process for Power Platform solutions.
+1. Demo non-administration maker users that will be used to show how to create an ALM process for Power Platform solutions.
 
 1. Non-production applications
 
 ## Post install
 
-Once you have the [Admin Install](../admin-install.md) completed, advanced makers can create [Development environments](../development-environments.md) and have administrators add them to Azure DevOps and the required Azure Active Directory security group.
+Once you have the [Admin install](../admin-install.md) completed, advanced makers can create [development environments](../development-environments.md) and have administrators add them to Azure DevOps and the required Azure Active Directory security group.
 
-You'll typically use the following commands as the **single administrator**
+You'll typically use the following commands as the single administrator.
 
 ```bash
 coe alm generate install -o quickstart.json
 coe alm install -f quickstart.json
 ```
 
-More information: [generate install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/generate/install.md) command
-More information: [install](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/install.md) command
+More information: [generate install](https://aka.ms/coe-cli/help/alm/generate/install)
+More information: [install](https://aka.ms/coe-cli/help/alm/install)
 
 Then add a demo user as a maker.
 
@@ -113,29 +113,29 @@ coe alm maker add \
   -u alan-s@contoso.onmicrosoft.com
 ```
 
-More information: [maker add](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/maker/add.md) command
+More information: [maker add](https://aka.ms/coe-cli/help/alm/maker/add)
 
-Once these steps are completed, the next step is to [Set up Managed Solutions](../maker-setup.md) for makers
+Once these steps are completed, the next step is to [Set up managed solutions](../maker-setup.md) for makers.
 
 ## Enterprise deployment
 
 In this scenario, the aim is to install AA4PP inside an enterprise tenant and the following configuration is expected.
 
 1. Likely to have different administration teams. For example:
-   - Azure Active Directory administrators
-   - Power Platform administrators. May be Global administrator or Environment administrators
-   - Azure DevOps administrators
+   - Azure Active Directory administrators.
+   - Power Platform administrators. May be global administrator or environment administrators.
+   - Azure DevOps administrators.
 1. Configuration files for AA4PP install can be shared among different administration teams.
 1. Makers have separate development environments to work on changes.
-1. AA4PP Azure DevOps pipeline used to validate and promote to Test and Production environments.
+1. AA4PP Azure DevOps pipeline used to validate and promote to test and production environments.
 
 ### Azure Active Directory administrators
 
 The tenant administration team will need to create the following:
 
-1. Azure Active Directory Application that will be used as service principal in Azure DevOps and Power Platform Environments
-1. Azure Active Directory Group that will be used to grant access to Makers to Azure DevOps resources, Maker Canvas Application, and Dataverse Tables.
-1. Grant Tenant Consent for Azure Active Directory Application. This permission is required as the Azure DevOps pipeline uses APIs where there's no interactive user involved. As a result the tenant administrator consent is required.
+1. Azure Active Directory application that will be used as a service principal in Azure DevOps and Power Platform environments.
+1. Azure Active Directory group that will be used to grant access to makers to Azure DevOps resources, Maker Canvas application, and Microsoft Dataverse tables.
+1. Grant tenant consent for Azure Active Directory application. This permission is required as the Azure DevOps pipeline uses APIs where there's no interactive user involved. As a result the tenant administrator consent is required.
 
 To install the solution resources, the following options can be used.
 
@@ -227,7 +227,7 @@ coe alm install -c devops \
    }
    ```
 
-Manual installation using the [Create An App Registration in your Azure Active Directory environment](/power-platform/guidance/coe/setup-almacceleratorpowerplatform#create-an-app-registration-in-your-aad-environment).
+Manual installation using the [Create an app registration in your Azure Active Directory environment](/power-platform/guidance/coe/setup-almacceleratorpowerplatform#create-an-app-registration-in-your-aad-environment).
 
 ## Multi-tenant deployment
 
@@ -245,11 +245,11 @@ The multi-tenant deployment is assumed to have one or more of the following:
 
 1. Multiple Azure Active Directory tenants.
 
-1. Power Platform Environments for Development, Validation, Test, and Production may be in different tenants.
+1. Power Platform environments for development, validation, test, and production might be in different tenants.
 
-1. The Azure DevOps environment may be in the Development tenant.
+1. The Azure DevOps environment might be in the development tenant.
 
-1. Users of the main tenant my use Azure Business to Business authentication to access the development tenant.
+1. Users of the main tenant might use Azure business to business authentication to access the development tenant.
 
 1. External users from outside the organization maybe invited to the development tenant and not have access to the main tenant.
 
@@ -257,7 +257,7 @@ The multi-tenant deployment is assumed to have one or more of the following:
 
 To support multi-tenant deployments, the Azure Active Directory application will need to be configured to support multi-tenant authentication.
 
-#### Further reading
+#### Learn more
 
 1. [Tenancy in Azure Active Directory](/azure/active-directory/develop/single-and-multi-tenant-apps)
 

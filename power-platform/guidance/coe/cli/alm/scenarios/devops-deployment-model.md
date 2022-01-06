@@ -21,28 +21,28 @@ search.app:
 
 ## Overview
 
-Scenarios
+Scenarios:
 
-- Power Platform 1:1 DevOps - Single Azure DevOps Organization and Project used by the ALM Accelerator.
-- Power Platform 1:Many DevOps - Single Azure DevOps Organization and multiple projects used by the ALM Accelerator.
-- Multiple Power Platform Environments and DevOps - Multiple Azure DevOps Organizations with multiple ALM Accelerator installations.
+- Power Platform 1:1 DevOps - Single Azure DevOps organization and project used by the ALM Accelerator.
+- Power Platform 1:Many DevOps - Single Azure DevOps organization and multiple projects used by the ALM Accelerator.
+- Multiple Power Platform environments and DevOps - Multiple Azure DevOps organizations with multiple ALM Accelerator installations.
 
->[!NOTE]
->Multiple Power Platform Environments and DevOps not recommended by ALM Accelerator as separate instances will need to be updated and managed. Projects displayed to the user will be managed by users role based access security.
+> [!NOTE]
+> Multiple Power Platform environments and DevOps aren't recommended by ALM Accelerator as separate instances will need to be updated and managed. Projects displayed to the user will be managed by role-based access security.
 
 ## Factors to consider
 
 As you plan your DevOps deployment model, the following factors may help you decide the best approach:
 
-- Do different teams and / or business units require separate locations to store and manage solutions?
+- Do different teams or business units require separate locations to store and manage solutions?
 
-- Cost / benefit of the overhead of managing and maintaining managing multiple DevOps process for different Power Platform Environments?
+- Is there a cost and benefit of the overhead in managing and maintaining managing multiple DevOps processes for different Power Platform environments?
 
 - Do different teams or business units have differing levels of business sensitivity or data loss prevention that will require separate handling?
 
-- How will common shared assets be shared and managed between multiple teams? For example, shared DevOps templates or Shared components.
+- How will common assets be shared and managed between multiple teams? For example, shared DevOps templates or shared components.
 
-- Azure Active Directory security model. Will each team manage and maintain Active Directory Applications and Service Principals or will they be shared across different Power Platform environments and Azure DevOps organizations?
+- Azure Active Directory security model. Will each team manage and maintain Active Directory applications and service principals or will they be shared across different Power Platform environments and Azure DevOps organizations?
 
 ## Power Platform 1 to 1 DevOps
 
@@ -56,11 +56,11 @@ In this scenario, the following configuration is assumed:
 
 In this scenario, the following configuration is assumed:
 
-- Single Power Platform Advanced Maker Deployment with Shared Power Platform Environments for the Advanced Maker Canvas Application, Validation, Test, and Production Environments.
+- Single Power Platform advanced maker deployment with shared Power Platform environments for the Advanced Maker Canvas application, validation, test, and production environments.
 
 - Multiple Azure DevOps for different teams or Business Units.
 
-- Each Azure DevOps organization can have a different set of users protected buy different Role-Based Access Security Rules.
+- Each Azure DevOps organization can have a different set of users protected buy different role-based access security rules.
 
 - Multiple pipelines can be defined and used at an Azure DevOps level that allows solutions to be deployed to different validation, test, and production environments.
 
@@ -70,7 +70,7 @@ This scenario is not a recommended deployment model as it requires the deploymen
 
 In this scenario, the following configuration is assumed:
 
-- Multiple Power Platform Advanced Maker Deployments with Shared Power Platform Environments for the Advanced Maker Canvas Application, Validation, Test, and Production Environments.
+- Multiple Power Platform advanced maker deployments with shared Power Platform Environments for the Advanced Maker Canvas application, validation, test, and production environments.
 
 - Multiple Azure DevOps for different teams or business units.
 

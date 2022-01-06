@@ -19,10 +19,10 @@ search.app:
 
 # CoE ALM Accelerator for Power Platform deployment scenarios
 
-As you plan your ALM Accelerator for Power Platform (AA4PP) deployment, one or more of the following scenarios may apply to you:
+As you plan your ALM Accelerator for Power Platform (AA4PP) deployment, one or more of the following scenarios might apply to you:
 
-- [Tenant Deployments](./tenant-deployments.md) - Discusses different Azure Active Directory configurations across demo, single AAD, and multiple AAD deployment models.
+- [Tenant deployments](./tenant-deployments.md) - Discusses different Azure Active Directory configurations across demo, single Azure AD, and multiple Azure AD deployment models.
 
-- [DevOps Deployment Model](./devops-deployment-model.md) - Discusses the relationship between AA4PP deployments and one or more different Azure DevOps organizations.
+- [DevOps deployment model](./devops-deployment-model.md) - Discusses the relationship between AA4PP deployments and one or more different Azure DevOps organizations.
 
 [!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]
