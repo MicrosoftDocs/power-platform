@@ -17,30 +17,32 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Environment management
+# Environment and DLP Policy management
 
 ## Process description
 
-**Problem statement**: When a development project requires a new Environment, and non-admins are restricted from creating Environments, the only way for non-admins to access new Environments is for admins to provision the Environment and grant permissions to users. Admins can become the bottleneck of development if volume of demand for environments is high because multiple steps are involved.
+**Problem statement**: When a development project requires a new Environment, and non-admins are restricted from creating Environments, the only way for non-admins to access new Environments is for admins to provision the Environment and grant permissions to users. Admins can become the bottleneck of development if volume of demand for environments is high because multiple steps are involved. New environments may also require new connectors or DLP policies.
 
-**Solution**: The below process can be used by non-admins to request new environments.
+**Solution**: The below process can be used by non-admins to request new environments and changes to DLP policies for their environments.
 
 ![Environment management process.](media\env-mgmt-process.png "Environment management process")
 
 Developers (non-admins) can:
 
 - Submit requests for new environments.
+- Submit requests for DLP policies to be applied to their environments.
 
 Admins can:
 
 - Provision new environments for developers using the app.
 - See how new environments will be affected by data loss prevention policies.
+- Approve or reject DLP policy requests.
 
 ## Developer: Request an environment
 
 Developers (non-admins) can request new environments for their admin to triage.
 
-1. Open the **Power Platform Resource Request canvas app**.
+1. Open **Maker – Environment Request** app.
 1. Select + New
 1. In the fly-out menu, choose the desired connectors that will be needed in the new environment. Then select Next.
 ![Choose connectors](media\dev-resources-maker-connectors.png "Choose connectors")
@@ -66,7 +68,7 @@ View any of your submitted requests in the canvas app.
 
 ![View requests](media\dev-resources-maker-pending.png "View requests")
 
-## Admin: Approve or deny a request
+## Admin: Approve or deny an environment request
 
 As the admin, you can view and triage requests for new environments.
 
@@ -140,3 +142,73 @@ Matrix for recommended action based on the policy and the requested connectors. 
 | Not blocked or restricted | No action needed.<br><br>Requested connectors are not blocked by this policy. This type of policy will cover this new environment once created, so no action is needed. | Add policy if the new environment it not covered. If it is covered, no action needed. | Requested connectors would not be blocked by this policy if added to its environment list. Add to this policy’s list if this environment will be added to another "Exclude certain environments" policy list that is affecting the requested connectors. |
 | Blocked | Unblock allowed connectors in the policy’s definition in the Power Platform Admin Center. <br><br>⚠CAUTION: changing policies that affect "All environments" can potentially impact any canvas app and cloud flow in the tenant. Confirm impact in the DLP Editor tool.<br><br>If this policy's connector rules cannot be changed, you can make an exception for this new environment by changing this policy to an "Exclude certain environments" type policy in the Power Platform Admin Center. Find or create a "Multiple environments" type policy that allows the requested connectors to add the environment to. Come back to this Environment Request Admin App record and add this to the environments list of both policies. | Add to this policy or unblock the blocked connectors. <br><br>If there are no other policies covering the environment, add it to another existing or new "Multiple environments" policy that will not block the requested connectors.  | Do not add the new environment to this policy.<br><br>The environment only needs to be added to a "Multiple environments" type policy if it is not covered by other policies. For example, if there are no "All environment policies" and the environment is being excluded from all "Exclude except environments" type policies, no policies are covering the environment.<br><br>If there are no better policies to add this environment to, consider updating this policy's connector groups, or create a new policy in the Power Platform Admin Center. |
 | Restricted | Put the restricted connectors in the same group in the policy’s definition in the Power Platform Admin Center. <br><br>⚠CAUTION: changing "All environments" type policies can potentially impact any canvas app and cloud flow in the tenant.<br><br>If this policy’s connector rules cannot be changed, you can make an exception for this new environment by changing this policy to an "Exclude certain environments" type policy in the Power Platform Admin Center. Find or create a "Multiple environments" type policy that has the requested connectors in the same group. Come back to this Environment Creation Request Admin App record and add this to the environments list of both policies. | Add the environment to this policy’s exception list.<br><br>If this is added to the exception list and there are no other policies covering the environment, add it to another "Multiple environments" policy that will not restrict the acceptable requested connector(s), or create another policy to cover the most critical security requirements.<br><br>Consider if acceptable requested connectors can be unrestricted by updating this policy in the Power Platform admin center. <br><br>Caution: Make sure other environments excluded from this policy will not be negatively impacted by this change. | Do not add the new environment to this policy.<br><br>The environment only needs to be added to a "Multiple environments" type policy if it is being excluded from an "Exclude except environments" type policy and there are no other policies that will cover the environment.<br><br>If no existing policies work, consider if updating this policy to include the requested connectors in the same group is an option. making sure the other environments included in the environment list will not be negatively impacted. Go to the Power Platform admin center to update policy rules. |
+
+## Developer: Request an DLP Policy Change
+
+Makers can use the DLP Policy Change Request system to modify the DLP Policy applied to environments where they are the administrator. If approved, this will enable the connectors you need in the environments you work in.
+
+1. Open **Maker – Environment Request** app.
+1. Navigate to the **Data Policy Change Requests** page using the left navigation.
+    ![Data Policy Change Requests screen](media\dlp-1.png "Data Policy Change Requests screen")
+1. Select + New
+1. In the "Action Requested" field, choose the "Apply Policy to Environment" option.
+1. In the "Policy" field, select the desired policy.
+    1. Confirm if the connectors required by your environment are in the policy by clicking the information icon next to the field header.
+    1. Then search for the connectors you need to confirm if the policy will allow it.
+            ![Confirm your required connectors are allowed by this policy.](media\dlp-2.png "Confirm your required connectors are allowed by this policy.")
+1. Choose the environment to apply this policy to. You will only be select environments you are an administrator of.
+    1. If you do not see any environments in the drop-down, then you do not have an environment administrator role to any environments.
+    1. Provide a reason for the request. For example, it helps to specify your project details and the connectors you require.
+1. Select **Save** to submit the request.
+1. If the administrator approves the request, the policy will be applied to the environment.
+
+## Admin: Approve or deny a DLP policy change request
+
+> [!IMPORTANT]
+> If a DLP Policy Change request is approved in this system, it will update the status to **Approved**, which will trigger a flow that automatically applies the selected policy to the indicated environment. It will also remove the environment from all other policies that have an “include” environment scope, and add the environment to all policies with an “exclude” environment scope. Before using the DLP policy request tooling, ensure this process fits with your setup.
+
+### Configure Shared Policies
+
+Configure [data policies](/admin/wp-data-loss-prevention) in the Power Platform Admin Center.
+
+> [!NOTE]
+> Follow our best practices to create a [DLP strategy](/guidance/adoption/dlp-strategy ).
+
+Example set of shared DLP Policies that can address different levels of groups:
+
+- **Productivity** (Apply to all environments except) – This policy is intended to cover the Default environment, trial environments, and all other environments that are not covered by the other environments. It has the most restrictive rules.
+- **Power User** (Apply to multiple environments) – Available for individual environments with slightly less restrictive rules than Productivity.
+- **Pro Dev** (Apply to multiple environments) – Available for individual environments with access to most connectors compared to Power User and is intended for users who are well trained and agree to company data security policies that should be defined with an acknowledgement of liability for use.
+
+### Sync shared Policies
+
+Since makers cannot see all data policies, the request system makes it easy to display that information to the makers via Dataverse. The system syncs the indicated policies from the Power Platform service to a Dataverse table, and makers can see the policies an admin allow them to view. Makers can then request to apply those shared policies to their environments.
+
+To make a **Shared DLP Policy** visible to makers, the policy needs to be created as a record in Dataverse.
+
+- Open the **Admin – Environment Request** app.
+- Navigate to the **Data policies** page in the left navigation.
+- Select the policy you want to make visible to makers, then select the **Make visible** option in the ribbon
+     ![Make shared policies visible to makers.](media\dlp-4.png "Make shared policies visible to makers.")
+
+### Share app and instructions with makers
+
+-	Grant your makers access to the **Maker – Environment Request** canvas app and assign them the **Power Platform Maker SR** security role. Use an Azure AD group to make assignment easier.
+- Provide users with instructions on how to use the request system.
+
+### Approve or Reject requests
+
+Once users have access and begin making requests, admins can see those requests in the **Admin – Environment Request** canvas app.
+  ![View requests in the Admin Environment Request app.](media\dlp-5.png "View requests in the Admin Environment Request app")
+ 
+To view and respond to the DLP Policy Change requests:
+
+1. Open the **Admin – Environment Request** app.
+1. Navigate to the **Policy Change Requests** page using the left navigation.
+1. View the list of requests. You can filter the request by status using the status filter in the right side of the ribbon.
+    ![View the list of requests.](media\dlp-6.png "View the list of requests")
+1. To view the request in more detail, select one of the requests and click the **Details** action in the ribbon.
+1. To approve or deny a request, filter the status to “Pending” and select one of the requests. Only requests with pending status can be responded to in the app.
+1. Once a request is selected, you can choose to “approve” or “reject” the request using the actions in the ribbon.
+    1. If a request is approved, it will update the status to “Approved”, which will trigger a flow that automatically applies the selected policy to the indicated environment. It will also remove the environment from all other policies that have an “include” environment scope and add the environment to all policies with an “exclude” environment scope. Make sure this behavior fits with your company’s security requirements before continuing. Once the automation completes, the request status is set to “Fulfilled” and the record is deactivated.
+    1. If the request is rejected, the status is set to “Rejected” and the record is deactivated.
