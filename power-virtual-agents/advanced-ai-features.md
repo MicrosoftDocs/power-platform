@@ -106,10 +106,10 @@ Over time, as users interact and talk to the bot, it will get better and better.
 
 In the following screenshot, the first time the bot comes across a question it doesn't understand, it asks for clarification.
 
-On the left side of the image, a bot user asks "I'd like to purchase somethign", to which the bot says "Sorry, I didn't get that. Did you mean:" and then provides a few options such as "Buy items" and "Buy service". In this case, the bot user selected "Buy items".
+On the left side of the image, a bot user asks "I'd like to purchase something", to which the bot says "Sorry, I didn't get that. Did you mean:" and then provides a few options such as "Buy items" and "Buy service". In this case, the bot user selected "Buy items".
 
-The next time someone asks the same question, the bot doesn't ask for clarification – it knows from previous interactions what the bot user is likely asking to buy items, so it goes straight into the purchasing topic, replying to the question "I'd like to purchase somethign" with "I am happy to help you place your order. To what state will you be shipping?".
-In this example, it also understands the misspelling of "somethign" to mean "something", so it's able to carry over the improved intent triggering even though the bot user's question is spelled differently.
+The next time someone asks the same question, the bot doesn't ask for clarification – it knows from previous interactions what the bot user is likely asking to buy items, so it goes straight into the purchasing topic, replying to the question "I'd like to purchase something" with "I am happy to help you place your order. To what state will you be shipping?".
+In this example, it also understands the misspelling of "something" to mean "something", so it's able to carry over the improved intent triggering even though the bot user's question is spelled differently.
 
 :::image type="content" source="media/advanced-ai-features/triggering-improvements.png" alt-text="Screenshot of a bot conversation showing the improvements to auto triggering.":::
 
