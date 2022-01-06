@@ -37,10 +37,6 @@ Power Virtual Agents, however, employs a language understanding model that uses 
 The use of this type of model means that in Power Virtual Agents, when you craft trigger phrases for a topic, you only need to provide a few examples, usually in the range of 5-10 phrases for a single topic.
 Shorter trigger phrases are better, and you should aim for two to 10 words. You just need to make sure trigger phrases are semantically different: changing a single verb or noun could be enough to expand a topic's coverage. Adding things like new articles (changing or adding 'the' or 'a' or 'an'), changing capitalization, adding contractions (you're or don't), or adding plurals won't improve the triggering because contractions are already accounted for in the AI model.
 
-These tips for creating trigger phrases are described in the tooltip associated with the **Trigger phrases** section on a topic's **Details** page.
-
-:::image type="content" source="media/advanced-ai-features/trigger-phrase-tooltip.png" alt-text="Screenshot of the trigger phrase section in the topic details page.":::
-
 >[!NOTE]
 >The AI capabilities listed in this topic are in preview, available to bots created with English as the set language.
 
