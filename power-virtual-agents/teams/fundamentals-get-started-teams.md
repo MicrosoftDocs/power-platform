@@ -129,9 +129,7 @@ A bot comes with a collection of topics that defines the bot's interaction with 
 
     Power Virtual Agents comes with built-in natural language capabilities. You only need to define a few trigger phrases about time off - phrases that you expect employees to use - and the bot can accurately trigger the topic based on the employee's input.
 
-4. Select **Save** topic.
-
-5. Select **Go to authoring canvas** to start building the conversation flow for this topic.
+4. Select **Save** to add it to the topic list.
 
 Now that the trigger phrases are defined, you can proceed to define the bot's interaction with the user when this topic is engaged. The graphical interface in Power Virtual Agents lets you build the topic without needing to write a single line of code.
 
