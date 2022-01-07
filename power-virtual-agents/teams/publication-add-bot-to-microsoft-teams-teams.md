@@ -146,7 +146,7 @@ You can share your bot by adding it to the Microsoft Teams app store, **Built fo
 
 6. Select **Show to my teammates and shared users** and review who has access to the bot.
 
-   :::image type="content" source="../media/sharing-security-groups/add-bot-to-teams-show-bbyc-teams.PNG" alt-text="Show bot in Teams app store Built by your colleague section.":::
+   :::image type="content" source="../media/add-bot-to-teams-show-bbyc-teams.PNG" alt-text="Show bot in Teams app store Built by your colleague section.":::
 
 7. Confirm the **Visible in Built by your colleagues** checkbox is selected and select **Share**.
 
@@ -226,7 +226,7 @@ Before submitting the bot to your organization, make sure:
 
 6. Select **Show to everyone in my org**.
 
-   :::image type="content" source="../media/sharing-security-groups/add-bot-to-teams-show-bbyo-teams.PNG" alt-text="Show bot to organization in Teams panel availability options.":::
+   :::image type="content" source="../media/add-bot-to-teams-show-bbyo-teams.PNG" alt-text="Show bot to organization in Teams panel availability options.":::
 
 
 7. Review the requirements for submission, and select **Submit for admin approval**.
@@ -256,11 +256,11 @@ Before submitting the bot to your organization, make sure:
 >Try signing out and back in again (if you're using the desktop app) or refreshing your browser (if you're using the Teams web app).
 
 ## Add the bot to a team channel
-Microsoft Teams supports [adding bots into teams](https://docs.microsoft.com/microsoftteams/platform/bots/how-to/conversations/channel-and-group-conversations?tabs=dotnet) where team members can @mention the bot in channels under the team and allow teammates to see the response from the bot. The bot will greet in the General channel of the team when added. This is great for scenarios where:
+Microsoft Teams supports [adding bots into teams](/microsoftteams/platform/bots/how-to/conversations/channel-and-group-conversations?tabs=dotnet) where team members can @mention the bot in channels under the team and allow teammates to see the response from the bot. The bot will greet in the General channel of the team when added. This is great for scenarios where:
 1. Your bot supports collaboration scenario, for example sharing the latest sales report insight with the rest of the Sales team member in a team channel
 2. Allow every team member to engage with the bot in team channel or via private chat without needing to manually install the bot themselves
 
-You can add the bot directly into the team that the bot is created in or allow your end users to add the bot to any team that they are part of. Team members can [remove the bot from the team](https://docs.microsoft.com/powerapps/teams/remove-your-apps).
+You can add the bot directly into the team that the bot is created in or allow your end users to add the bot to any team that they are part of. Team members can [remove the bot from the team](/powerapps/teams/remove-your-apps).
 
 ### Add bot to the team it is created in
 When creating a bot in Power Virtual Agents Teams app, you will need to select a team for the bot to be created in. You can directly add the bot to the team so members of the team can interact with it. This is great for bots that are built just for that team. For example, an Accounting helper bot is created in Contoso Accounting team. The bot is added to the team to help accountants be more productive as they can now @mention the bot in channel conversations to share latest reports with their teammates.
@@ -277,7 +277,7 @@ When creating a bot in Power Virtual Agents Teams app, you will need to select a
 
 6. Select **Add to {team name}**
 
-    :::image type="content" source="media/teams-add-to-a-team-teams.png" alt-text="The UI has a button to let maker add bot to the team the bot is created in":::
+    :::image type="content" source="../media/teams-add-to-a-team-teams.png" alt-text="The UI has a button to let maker add bot to the team the bot is created in":::
 
 7. Follow the steps to add the bot the taem and see **Available in your team** confirmation
 
@@ -299,7 +299,7 @@ This options allows end users to add the bot to any team that they are part of w
 
 6. Check **Allow your users to add this bot to a team** checkbox.
 
-   :::image type="content" source="media/teams-allow-end-users-to-add-to-team.png" alt-text="Checkbox is checked to allow end user to add bot to teams that they are part of":::
+   :::image type="content" source="../media/teams-allow-end-users-to-add-to-team.png" alt-text="Checkbox is checked to allow end user to add bot to teams that they are part of":::
 
 >[!IMPORTANT]
 >The bot will be configured to allow everyone in the organization to chat with it. This ensures all team members have permission to chat with the bot when end users add the bot to a team that they are part of. It is highly recommended to not change the security setting of the bot after enabling this capability to prevent users seeing permission errors when interacting with the bot in team channels.
@@ -307,11 +307,11 @@ This options allows end users to add the bot to any team that they are part of w
 7. Select **Save**. End users who install bot will now see the option to add bot to a team.
 >[!NOTE]
 >Microsoft Teams caches information so it could take a while before users see the option to add the bot to a team. You can refresh the browser or sign in and out of Microsoft Teams desktop client to reflect changes immediately.
->If you have previously [submitted bot for admin approval](#Submit-for-the-built-by-your-org-section), you will need to resubmit for admin to approve the changes before end users can add bot to their teams from Microsoft Teams app store Built by your org section.
+>If you have previously [submitted bot for admin approval](#submit-for-the-built-by-your-org-section), you will need to resubmit for admin to approve the changes before end users can add bot to their teams from Microsoft Teams app store Built by your org section.
 
 
 #### Disallow end user to add the bot to teams they are part of
-Disabling this option will prevent users from adding bot to a new team and will not remove bot from teams that are already added to. Those bots will need to be manually [removed from the team](https://docs.microsoft.com/powerapps/teams/remove-your-apps). 
+Disabling this option will prevent users from adding bot to a new team and will not remove bot from teams that are already added to. Those bots will need to be manually [removed from the team](/powerapps/teams/remove-your-apps). 
 
 1. Go to the **Chatbot** tab.
 
@@ -325,7 +325,7 @@ Disabling this option will prevent users from adding bot to a new team and will 
 
 6. Uncheck **Allow your users to add this bot to a team** checkbox.
 
-    :::image type="content" source="media/teams-disallow-end-users-to-add-to-team.png" alt-text="Checkbox is unchecked to disallow end user to add bot to teams that they are part of":::
+    :::image type="content" source="../media/teams-disallow-end-users-to-add-to-team.png" alt-text="Checkbox is unchecked to disallow end user to add bot to teams that they are part of":::
 
 7. Select **Save**.
 
@@ -347,11 +347,11 @@ Private greeting from bot is very powerful when you want team members to be able
 
 5. Select **Settings**
     
-    :::image type="content" source="media/teams-private-greeting-settings.png" alt-text="Settings entry point to configure bot's private greeting behavior":::
+    :::image type="content" source="../media/teams-private-greeting-settings.png" alt-text="Settings entry point to configure bot's private greeting behavior":::
 
 6. Configure the private greeting options and select **Save**
     
-    :::image type="content" source="media/teams-private-greeting-settings-detail.png" alt-text="Private greeting to user setting options":::
+    :::image type="content" source="../media/teams-private-greeting-settings-detail.png" alt-text="Private greeting to user setting options":::
 
 
 ## Download the bot's Teams app manifest (advanced)

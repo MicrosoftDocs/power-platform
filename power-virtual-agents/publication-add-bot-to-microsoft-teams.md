@@ -259,7 +259,7 @@ Before submitting the bot to your organization, make sure:
 
 
 ## Add the bot to a team channel
-Microsoft Teams supports [adding bots into teams](https://docs.microsoft.com/microsoftteams/platform/bots/how-to/conversations/channel-and-group-conversations?tabs=dotnet) where team members can @mention the bot in channels under the team and allow teammates to see the response from the bot. The bot will greet in the General channel of the team when added. This is great for scenarios where:
+Microsoft Teams supports [adding bots into teams](/microsoftteams/platform/bots/how-to/conversations/channel-and-group-conversations?tabs=dotnet) where team members can @mention the bot in channels under the team and allow teammates to see the response from the bot. The bot will greet in the General channel of the team when added. This is great for scenarios where:
 1. Your bot supports collaboration scenario, for example sharing the latest sales report insight with the rest of the Sales team member in a team channel
 2. Allow every team member to engage with the bot in team channel or via private chat without needing to manually install the bot themselves
 
@@ -267,7 +267,7 @@ After enabling this option, end users can add the bot to any team that they are 
 
 >[!NOTE]
 >Once enabled, any user who install the bot from Teams app store or via installation link will see the option to add the bot to a team
->Team members can [remove the bot from the team] after it has been added to a team(https://docs.microsoft.com/powerapps/teams/remove-your-apps).
+>Team members can [remove the bot from the team] after it has been added to a team(/powerapps/teams/remove-your-apps).
 
 1. Go to **Manage**, then **Channels** on the side navigation pane. 
 
@@ -285,11 +285,11 @@ After enabling this option, end users can add the bot to any team that they are 
 5. Select **Save**. End users who install bot will now see the option to add bot to a team.
 >[!NOTE]
 >Microsoft Teams caches information so it could take a while before users see the option to add the bot to a team. You can refresh the browser or sign in and out of Microsoft Teams desktop client to reflect changes immediately.
->If you have previously [submitted bot for admin approval](#Submit-for-the-built-by-your-org-section), you will need to resubmit for admin to approve the changes before end users can add bot to their teams from Microsoft Teams app store Built by your org section.
+>If you have previously [submitted bot for admin approval](#submit-for-the-built-by-your-org-section), you will need to resubmit for admin to approve the changes before end users can add bot to their teams from Microsoft Teams app store Built by your org section.
 
 
 #### Disallow end user to add the bot to teams they are part of
-Disabling this option will prevent users from adding bot to a new team and will not remove bot from teams that are already added to. Those bots will need to be manually [removed from the team](https://docs.microsoft.com/powerapps/teams/remove-your-apps). 
+Disabling this option will prevent users from adding bot to a new team and will not remove bot from teams that are already added to. Those bots will need to be manually [removed from the team](/powerapps/teams/remove-your-apps). 
 
 1. Go to **Manage**, then **Channels** on the side navigation pane. 
 
