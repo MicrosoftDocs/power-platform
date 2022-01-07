@@ -1,6 +1,6 @@
 ---
-title: "Center of Excellence (CoE) Command Line Interface (CLI) local installation"
-description: "Sample of installation of Center of Excellence (CoE) Command Line Interface (CLI) to a local deployment"
+title: "Center of Excellence (CoE) command line interface (CLI) local installation"
+description: "Sample of installation of Center of Excellence (CoE) command line interface (CLI) to a local deployment"
 keywords: 
 author: Grant-Archibald-MS
 ms.author: grarchib
@@ -17,10 +17,10 @@ search.app:
   - Powerplatform
 ---
 
-# Center of Excellence (CoE) Command Line Interface (CLI) local installation
+# Center of Excellence (CoE) command line interface (CLI) local installation
 
-The following captures the results of a sample local install.
+The following video captures the results of a sample local install.
 
-![Local Install](./media/install-local.svg)
+![Local install](./media/install-local.svg)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

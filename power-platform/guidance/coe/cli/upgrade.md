@@ -1,6 +1,6 @@
 ---
-title: "Center of Excellence (CoE) Command Line Interface (CLI) upgrade"
-description: "Upgrade instructions for the Center of Excellence Command-Line interface"
+title: "Center of Excellence (CoE) command line interface (CLI) upgrade"
+description: "Upgrade instructions for the Center of Excellence command line interface"
 keywords: 
 author: Grant-Archibald-MS
 ms.author: grarchib
@@ -17,26 +17,26 @@ search.app:
   - Powerplatform
 ---
 
-# Center of Excellence (CoE) Command Line Interface (CLI) upgrade
+# Center of Excellence (CoE) command line interface (CLI) upgrade
 
 Upgrade will depend on how you installed the CoE CLI.
 
 ## Download
 
-If you downloaded the CoE CLI as a zip file or a git clone from [coe-starter-kit](https://github.com/microsoft/coe-starter-kit).
+If you downloaded the CoE CLI as a zip file or a Git clone from [coe-starter-kit](https://github.com/microsoft/coe-starter-kit).
 
-- Download the new zip file
-- Unzip the zip file to a new folder
+- Download the new zip file.
+- Unzip the zip file to a new folder.
 
 OR
 
-- Pull changes from git
+- Pull changes from Git.
 
    ```bash
    git pull
    ```
 
-Once you have a local version of the coe-cli change to coe-cli folder.
+Once you have a local version of the coe-cli, go to the **coe-cli** folder.
 
    ```bash
    cd coe-cli
@@ -45,7 +45,7 @@ Once you have a local version of the coe-cli change to coe-cli folder.
 
 ### Local Upgrade
 
-In the coe-cli folder, run the following commands:
+In the **coe-cli** folder, run the following commands:
 
 1. Install the dependencies.
 
@@ -61,21 +61,21 @@ In the coe-cli folder, run the following commands:
 
    ```
 
-1. Update coe-cli to new version.
+1. Update coe-cli to the new version.
 
    ```bash
    npm link --force
 
    ```
 
-## Docker Image
+## Docker image
 
-In the coe-cli folder, run the following commands:
+In the coe-cli folder, run the following command:
 
-1. Build a ew docker image.
+1. Build a new docker image.
 
    ```bash
-   docker build -t coe-cli .
+   docker build -t coe-cli
 
    ```
 

@@ -1,6 +1,6 @@
 ---
-title: "Center of Excellence (CoE) Command Line Interface (CLI) Docker installation"
-description: "Sample of installation of Center of Excellence (CoE) Command Line Interface (CLI) to aa linux docker image"
+title: "Center of Excellence (CoE) command line interface (CLI) Docker installation"
+description: "Sample of installation of Center of Excellence (CoE) command line interface (CLI) to a Linux Docker image"
 keywords: 
 author: Grant-Archibald-MS
 ms.author: grarchib
@@ -19,8 +19,8 @@ search.app:
 
 # Center of Excellence (CoE) Command Line Interface (CLI) Docker installation
 
-The following captures the results of a sample docker install on Linux.
+The following video captures the results of a sample Docker install on Linux.
 
-![Docker Install](./media/install-docker.svg)
+![Docker install](./media/install-docker.svg)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

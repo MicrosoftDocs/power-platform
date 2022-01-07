@@ -123,7 +123,7 @@ Add new help pages to [help](https://github.com/microsoft/coe-starter-kit/tree/m
 coe help alm
 ```
 
-<!-- NOT FOUND The command above will display the contents of [help/alm/overview.md](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/overview.md). -->
+The command above will display the contents of the [help](https://aka.ms/coe-cli/help/alm).
 
 ## Recording command line
 
