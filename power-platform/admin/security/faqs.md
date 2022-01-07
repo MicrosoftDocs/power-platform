@@ -38,7 +38,6 @@ The following questions are common security questions and answers for Power Plat
   - Using a hardened TLS configuration - Uses only TLS 1.2 or above. Uses ECDHE-based ciphers suites and NIST curves. Uses strong keys. Enables HTTP Strict Transport Security (HSTS). 
   - Encryption of data at rest - All customer data will be encrypted before being written to non-volatile storage media.
   
-
   [A03:2021-Injection](https://owasp.org/Top10/A03_2021-Injection/):
   - To be updated
 
@@ -49,7 +48,9 @@ The following questions are common security questions and answers for Power Plat
   - Microsoft's SDL is equivalent of OWASP Software Assurance Maturity Model ([SAMM](https://owaspsamm.org/)) with both of them built on the premise that Secure Design is integral to web application security.
 
   [A05:2021-Security Misconfiguration](https://owasp.org/Top10/A05_2021-Security_Misconfiguration/):
-  - To be updated
+  - One of the foundations of Power Platform design principles is "Default Deny" where customers need to review, and opt-in for new features and configurations.
+  - Any misconfigurations during the build time will caught through integrated security analysis by leveraging [Secure Develolpment Tools](https://marketplace.visualstudio.com/items?itemName=securedevelopmentteam.vss-secure-development-tools)
+  - In addition, Power Platform goes through Dynamic Analysis Security Testing ([DAST](https://www.microsoft.com/en-us/securityengineering/sdl/practices#practice10)) by leveraging internal service that is built on OWASP Top 10 risks.
 
   [A06:2021-Vulnerable and Outdated Components](https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components/):
   - Power Platform follows Microsoft's industry leading [SDL](https://www.microsoft.com/en-us/securityengineering/sdl/practices) practices to manage open-source and third-party components. As part of this process, the [Tools and Techniques](https://www.microsoft.com/en-us/securityengineering/opensource/?activetab=security+analysis%3aprimaryr3) involve maintaining complete inventory, performing security analysis, keeping the components up to date, and aligning them with a tested and tried security incident response process.
