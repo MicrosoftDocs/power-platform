@@ -81,7 +81,7 @@ The following questions are common security questions and answers for Power Plat
 
   **How does Power Platform help protect against [Clickjacking](https://owasp.org/www-community/attacks/Clickjacking) risks?**
   - Clickjacking is a significant threat for login pages as it can allow them to steal credentials. In Power Platform, all login pages are not iframeable which significantly reduces the risk of clickjacking.
-  - In addition, CSP policies can be used to restrict embedding to safe domains with org settings.
+  - In addition, CSP policies can be used to restrict embedding to trusted domains with org settings.
   
   **How does Power Platform help protect against Cross-Site Scripting ([XSS](https://owasp.org/www-community/attacks/Clickjacking)) risks?**
   - To be updated
