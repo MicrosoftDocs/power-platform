@@ -51,15 +51,19 @@ The following questions are common security questions and answers for Power Plat
 
   [A07:2021-Identification and Authentication Failures](https://owasp.org/Top10/A07_2021-Identification_and_Authentication_Failures/):
   - To be updated
+  - Focus on AAD
 
   [A08:2021-Software and Data Integrity Failures](https://owasp.org/Top10/A08_2021-Software_and_Data_Integrity_Failures/):
   - To be updated
+  - Focus on SDL Build task
 
   [A09:2021-Security Logging and Monitoring Failures](https://owasp.org/Top10/A09_2021-Security_Logging_and_Monitoring_Failures/):
   - To be updated
+  - Focus on Azure Security logging features and Incident response
 
   [A10:2021-Server-Side Request Forgery](https://owasp.org/Top10/A10_2021-Server-Side_Request_Forgery_%28SSRF%29/):
   - To be updated
+  - Focus on Azure Security capabilities 
 
   # Common Security questions from customers
   The below are some of the common security questions that customers have raised in the past. We are capturing them here along with useful information that helps to answer their questions.
@@ -79,9 +83,6 @@ The following questions are common security questions and answers for Power Plat
     - Full blog post on how to implement CSP for UCI
     - Supporting all available CSP directives
     - Same CSP support for Canvas applications as well
-
-  **Does Power Platform support Cross-Origin Resource Sharing ([CORS](https://owasp.org/www-community/attacks/CORS_OriginHeaderScrutiny))?**
-  - To be updated
 
   **How can we connect to SQL Server securely?**
   - The best practices for securely connecting to external data sources has been documented [here](https://powerapps.microsoft.com/en-us/blog/best-security-practices-for-power-apps/).
