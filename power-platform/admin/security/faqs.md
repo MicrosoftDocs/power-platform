@@ -84,7 +84,11 @@ The following questions are common security questions and answers for Power Plat
   - To be updated
 
   **What Ciphers are supported by Power Platform? What's the roadmap of continuously moving towards stronger Ciphers?**
-  - To be updated
+  - All Microsoft services and products are configured to use the approved cipher suites, in the exact order as mentioned by Microsoft Crypto Board. The exact list and order can be found in [Power Platform documentation](https://docs.microsoft.com/en-us/power-platform/admin/server-cipher-tls-requirements).
+  - Any changes related to deprecations of cipher suites will be communicated through Power Platform's [Important Changes](https://docs.microsoft.com/en-us/power-platform/important-changes-coming#tls-rsa-cipher-suites-are-deprecated) documentation.
+
+  **Why does Power Platform still support RSA-CBC ciphers (TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256 (0xC027) and TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384 (0xC028)) which are considered weaker?**
+  - Microsoft weighs in the relative risk and customer disruption in choosing the support of cipher suites. Since these cipher suites are not broken yet, to ensure consistency across all services, and products, and also to support all customer configurations, these were enabled. However, these are at the bottom of the priority list.
 
   **How does Power Platform protect against Distributed Denial of Service ([DDoS](https://owasp.org/www-project-automated-threats-to-web-applications/assets/oats/EN/OAT-015_Denial_of_Service.html)) attacks?**
   - Power Platform is built on top of Microsoft Azure. As such, Power Platform leverages [Azure DDoS Protection](https://docs.microsoft.com/en-us/azure/ddos-protection/ddos-protection-standard-features) to guard against Distributed Denial of Service (DDoS) attacks.
@@ -96,7 +100,7 @@ The following questions are common security questions and answers for Power Plat
   - This is to allow Auth across Orgs. The subdomains aren't used as security boundaries and also don't host customer contents.
 
   **How can we set the application session to timeout after, say, 15 minutes?**
-  - Power Platform uses Azure Active Directory (AAD) for Identity and Access Management(IAM). Power Platform follows AAD's [recommended configuration](https://docs.microsoft.com/en-us/azure/active-directory/develop/access-tokens#access-token-lifetime) for session management for optimal user experience. Together with upcoming AAD's Continuous Access Evaluation (CAE), the experience will be secure, reliable, and performant for end users.
+  - Power Platform uses Azure Active Directory (AAD) for Identity and Access Management (IAM). Power Platform follows AAD's [recommended configuration](https://docs.microsoft.com/en-us/azure/active-directory/develop/access-tokens#access-token-lifetime) for session management for optimal user experience. Together with upcoming AAD's Continuous Access Evaluation (CAE), the experience will be secure, reliable, and performant for end users.
 
   **The application allows the same user to access from more than one machine/browser at the same time. How can we prevent that?**
   - Accessing the application from more than one machine/browser at the same time is a convenience. However, the access needs to be continuously evaluated to ensure that the access is from legitimate source and still valid.
