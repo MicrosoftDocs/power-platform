@@ -40,7 +40,10 @@ The following questions are common security questions and answers for Power Plat
   - To be updated
 
   [A04:2021–Insecure Design](https://owasp.org/Top10/A04_2021-Insecure_Design/):
-  - To be updated
+  - Power Platform has been built on a culture and methodology of Secure Design which gets constantly reinforced through Microsoft's industry leading [SDL](https://www.microsoft.com/en-us/securityengineering/sdl/practices) practices of [Threat Modeling](https://www.microsoft.com/en-us/securityengineering/sdl/threatmodeling).
+  - The robust Threat Modeling review process ensures that Power Platform identifies the threats during design phase, tracks them, mitigates them, and validates to make sure that the threats have been mitigated.
+  - The process also accounts for all new changes to the services that are already live, through regular reviews so that this is a continuous process that helps to address most common insecure design issues by relying on [STRIDE](https://docs.microsoft.com/en-us/azure/security/develop/threat-modeling-tool-threats#stride-model) model.
+  - Microsoft's SDL is equivalent of OWASP Software Assurance Maturity Model ([SAMM](https://owaspsamm.org/)) with both of them built on the premise that Secure Design is integral to web application security.
 
   [A05:2021-Security Misconfiguration](https://owasp.org/Top10/A05_2021-Security_Misconfiguration/):
   - To be updated
