@@ -38,7 +38,7 @@ For information about the programmatic interface for managing configuration and 
   
 - A customer owned [!INCLUDE[pn_Azure_SQL_Database_long](../includes/pn-azure-sql-database-long.md)] subscription. This subscription must allow the volume of data that is synchronized.  
   
-- Firewall settings.  We recommend that you turn off **Allow access to Azure services** and specify the appropriate client IP addresses listed in this topic. More information: [Azure SQL database static IP addresses used by the Data Export Service](#SQLDB_IP_addresses)  
+- Firewall settings.  We recommend that you turn off **Allow access to Azure services** and specify the appropriate client IP addresses listed in this topic. More information: [Azure SQL database static IP addresses used by the Data Export Service](#azure-sql-database-static-ip-addresses-used-by-the-data-export-service)  
   
    Alternatively, you can turn on **Allow access to Azure services** to allow all Azure services access.  
   
@@ -75,9 +75,9 @@ For information about the programmatic interface for managing configuration and 
   
 - Customer owned Key Vault subscription, which is used to securely maintain the database connection string.  
   
-- Grant PermissionsToSecrets permission to the application with the id "b861dbcc-a7ef-4219-a005-0e4de4ea7dcf." This can be completed by running the [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)][!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] command below and is used to access the Key Vault that contains the connection string secret. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [How to set up Azure Key Vault](#SetupAzureKV)  
+- Grant PermissionsToSecrets permission to the application with the id "b861dbcc-a7ef-4219-a005-0e4de4ea7dcf." This can be completed by running the [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)][!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] command below and is used to access the Key Vault that contains the connection string secret. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [How to set up Azure Key Vault](#how-to-set-up-azure-key-vault)  
   
-- Secrets within the Key Vault should be tagged with the organization (OrgId) and tenant ids (TenantId).  This can be completed by running the [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)][!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] command below. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [How to set up Azure Key Vault](#SetupAzureKV)  
+- Secrets within the Key Vault should be tagged with the organization (OrgId) and tenant ids (TenantId).  This can be completed by running the [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)][!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] command below. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [How to set up Azure Key Vault](#how-to-set-up-azure-key-vault)  
   
 - Configure your firewall rules to allow communication between Data Export Service and Azure Key Vault.
 
@@ -120,7 +120,7 @@ For information about the programmatic interface for managing configuration and 
   - Reset an environment.
   - Move an environment to a different country or region.
 
-  To do this, delete the Export Profile in the EXPORT PROFILES view, then delete the tables and stored procedures, and then create a new profile. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [How to delete all Data Export Profile tables and stored procedures](#Delete_DEP)  
+  To do this, delete the Export Profile in the EXPORT PROFILES view, then delete the tables and stored procedures, and then create a new profile. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [How to delete all Data Export Profile tables and stored procedures](#how-to-delete-all-data-export-profile-tables-and-stored-procedures)  
   
 - The [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] doesn't work for sandbox or production environments that are configured with **Enable administration mode** turned on. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Administration mode](sandbox-environments.md#administration-mode)
 
@@ -129,8 +129,8 @@ For information about the programmatic interface for managing configuration and 
   - A field is deleted.
   - An entity is removed from an Export Profile.
    
-    These items must be dropped manually.  [How to delete Data Export Profile tables and stored procedures for a specific entity](#drop_entity)
-    Metadata delete notifications are logged in the unprocessablemessages folder. [Error handling and monitoring](#error_handling)
+    These items must be dropped manually.  [How to delete Data Export Profile tables and stored procedures for a specific entity](#how-to-delete-all-data-export-profile-tables-and-stored-procedures) 
+    Metadata delete notifications are logged in the unprocessablemessages folder. [Error handling and monitoring](#error-handling-and-monitoring)
    
 ## Export Profile  
  To export data from customer engagement apps, the administrator creates an Export Profile.  Multiple profiles can be created and activated to synchronize data to different destination databases simultaneously.  
@@ -179,7 +179,7 @@ For information about the programmatic interface for managing configuration and 
   
    - **Name**. Unique name of the profile. This field is mandatory.  
   
-   - **Key Vault Connection URL**. Key Vault URL pointing to the connection string stored with credentials used to connect to the destination database. This field is mandatory. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [How to set up Azure Key Vault](#SetupAzureKV)  
+   - **Key Vault Connection URL**. Key Vault URL pointing to the connection string stored with credentials used to connect to the destination database. This field is mandatory. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [How to set up Azure Key Vault](#how-to-set-up-azure-key-vault)
   
      > [!IMPORTANT]
      >  The Key Vault Connection URL is case-sensitive. Enter the Key Vault Connection URL exactly as it is displayed after you run the [!INCLUDE[pn_PowerShell](../includes/pn-powershell.md)] commands in this topic.  
@@ -228,7 +228,7 @@ For information about the programmatic interface for managing configuration and 
 5. Click **Update** to submit your changes to the Export Profile.  
   
 > [!IMPORTANT]
-> When you remove an entity or entity relationship from an Export Profile it doesn't drop the corresponding table in the destination database. Before you can re-add an entity that has been removed, you must drop the corresponding table in the destination database.  To drop an entity table, see [How to delete Data Export Profile tables and stored procedures for a specific entity](#drop_entity).  
+> When you remove an entity or entity relationship from an Export Profile it doesn't drop the corresponding table in the destination database. Before you can re-add an entity that has been removed, you must drop the corresponding table in the destination database.  To drop an entity table, see [How to delete Data Export Profile tables and stored procedures for a specific entity](#how-to-delete-all-data-export-profile-tables-and-stored-procedures).  
     
 ## Table details for the destination Azure SQL Database  
  The [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] creates tables for both data and metadata. A table is created for each entity and M:N relationship that is synchronized.  
@@ -252,7 +252,7 @@ For information about the programmatic interface for managing configuration and 
   
    ![DataExport&#95;failed&#95;records&#95;exist.](../admin/media/data-export-failed-records-exist.PNG "DataExport_failed_records_exist")  
   
-2. Examine the source of the synchronization failure and resolve it. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Error handling and monitoring](#error_handling)  
+2. Examine the source of the synchronization failure and resolve it. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Error handling and monitoring](#error-handling-and-monitoring)  
   
 3. After the problem has been resolved, resynchronize the failed records.  
   
@@ -373,7 +373,7 @@ The statement has been terminated.
   
    The database 'databasename' has reached its size quota. Partition or delete data, drop indexes, or consult the documentation for possible resolutions.  
   
-- Synchronization timeouts with [!INCLUDE[pn_Azure_SQL_Database_long](../includes/pn-azure-sql-database-long.md)]. This can occur during the initial synchronization of a data export profile when large amounts of data are processed at one time. When this issue occurs, resynchronize the failed records. [Resolving synchronization issues](#resolve_issues)  
+- Synchronization timeouts with [!INCLUDE[pn_Azure_SQL_Database_long](../includes/pn-azure-sql-database-long.md)]. This can occur during the initial synchronization of a data export profile when large amounts of data are processed at one time. When this issue occurs, resynchronize the failed records. [Resolving synchronization issues](#resolving-synchronization-issues)  
   
 ## Best practices when using Azure SQL Database with Data Export  
   
