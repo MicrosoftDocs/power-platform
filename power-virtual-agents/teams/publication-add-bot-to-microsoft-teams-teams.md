@@ -384,7 +384,7 @@ You can remove the bot from your list of apps if you no longer want to use it. T
 
 2. Select **Uninstall** and then select **Uninstall**.
 
-   ![Uninstall the bot.](media/channel-teams-delete-channel-teams.png)
+   :::image type="content" source="media/channel-teams-delete-channel-teams.png" alt-text="Uninstall the bot.":::
 
 ## Disconnect your bot from Teams
 
