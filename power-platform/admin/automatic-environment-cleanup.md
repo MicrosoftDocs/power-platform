@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/23/2020
+ms.date: 01/10/2022
 ms.subservice: admin
 ms.author: jimholtz 
 search.audienceType: 
@@ -28,6 +28,9 @@ To see the status of your environments:
 
 > [!div class="mx-imgBorder"] 
 > ![Inactive environment.](media/inactive-environment.png "Inactive environment")
+
+> [!NOTE]
+> Environments become inactive if the subscription plan associated with the environment is not renewed or purchased and the subscription enters the disabled state, and eventually, the deleted/deprovisioned state. Once deprovisioned, the cleanup process is run and the environments are deleted. Subscription licenses affect determining activity status; license assignment to users does not.
 
 ## Scope
 
