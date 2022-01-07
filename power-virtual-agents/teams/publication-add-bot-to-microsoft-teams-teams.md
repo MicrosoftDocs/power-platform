@@ -279,7 +279,7 @@ When creating a bot in Power Virtual Agents Teams app, you will need to select a
 
     :::image type="content" source="../media/teams-add-to-a-team-teams.png" alt-text="The UI has a button to let maker add bot to the team the bot is created in":::
 
-7. Follow the steps to add the bot the taem and see **Available in your team** confirmation
+7. Follow the steps to add the bot the team and see **Available in your team** confirmation
 
 ### Allow end user to add the bot to teams they are part of
 This options allows end users to add the bot to any team that they are part of when adding the bot in Microsoft Teams. This is great for end users to engage with org-wide bots in team channel. For example, Contoso Hybrid work assistant bot can be added to any team. Everyone from those teams can ask the bot about their office building's availability in team channels.
@@ -330,7 +330,7 @@ Disabling this option will prevent users from adding bot to a new team and will 
 7. Select **Save**.
 
 ### Configure bot's private greeting behavior when added to a team
-Private greeting from bot is very powerful when you want team members to be able to have 1:1 conversations with the bot without needing to manually install the bot themselves. You can control bot's private greerting behavior:
+Private greeting from bot is very powerful when you want team members to be able to have 1:1 conversations with the bot without needing to manually install the bot themselves. You can control bot's private greeting behavior:
 1. When your bot is added to a team, privately message all members on the team. Bot will greet every team member in Microsoft Teams Chat interface besides greeting in the team channel. This option is enabled by default.
 2. Message new members privately when they join a team where the bot has been added. This allows new team members to immediately know about the bot when added to the team. This option is disabled by default.
 

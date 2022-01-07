@@ -304,7 +304,7 @@ Disabling this option will prevent users from adding bot to a new team and will 
 5. Select **Save**.
 
 ### Configure bot's private greeting behavior when added to a team
-Private greeting from bot is very powerful when you want team members to be able to have 1:1 conversations with the bot without needing to manually install the bot themselves. You can control bot's private greerting behavior:
+Private greeting from bot is very powerful when you want team members to be able to have 1:1 conversations with the bot without needing to manually install the bot themselves. You can control bot's private greeting behavior:
 1. When your bot is added to a team, privately message all members on the team. Bot will greet every team member in Microsoft Teams Chat interface besides greeting in the team channel. This option is enabled by default.
 2. Message new members privately when they join a team where the bot has been added. This allows new team members to immediately know about the bot when added to the team. This option is disabled by default.
 
