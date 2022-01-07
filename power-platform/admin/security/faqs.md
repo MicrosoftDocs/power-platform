@@ -46,7 +46,6 @@ The following questions are common security questions and answers for Power Plat
   - To be updated
 
   [A06:2021-Vulnerable and Outdated Components](https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components/):
-  - To be updated
   - Power Platform follows Microsoft's industry leading [SDL](https://www.microsoft.com/en-us/securityengineering/sdl/practices) practices to manage open-source and third-party components. As part of this process, the [Tools and Techniques](https://www.microsoft.com/en-us/securityengineering/opensource/?activetab=security+analysis%3aprimaryr3) involve maintaining complete inventory, performing security analysis, keeping the components up to date, and aligning them with a tested and tried security incident response process.
   - In some rare cases, the process takes time due to external dependencies which is why there will still be some copies of outdated components in some applications. However, as per above process, those will be tracked, and updated once dependencies have been addressed.
 
