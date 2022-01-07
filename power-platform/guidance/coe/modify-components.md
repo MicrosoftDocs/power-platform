@@ -19,7 +19,7 @@ search.app:
 ---
 # Extend, customize, and modify components
 
-Before making any changes to the Center of Excellence (CoE) Starter Kit, follow the steps in [Extending the starter kit](setup.md#extending-the-starter-kit) and create a new unmanaged solution for your changes.
+Before making any changes to the Center of Excellence (CoE) Starter Kit, follow the steps in [Extending the starter kit](after-setup.md) and create a new unmanaged solution for your changes.
 
 ## Change the Welcome email to an Azure AD security group
 
