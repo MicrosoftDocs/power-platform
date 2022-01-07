@@ -84,15 +84,15 @@ These topics fall into two categories:
 
     The display name is used when the bot needs to ask the person chatting which topic they're asking about.
 
-    The description is never shown to users, so you can use this to describe the purpose of the topic to yourself and other bot makers.
+    The description is never shown to users. Use this to describe the purpose of the topic to yourself and other bot makers.
 
     :::image type="content" source="media\authoring-create-edit-topics\details-pane.png" alt-text="The Topic details pane contains a name, display name, and description":::
 
-1. You can also quickly rename the topic by selecting its name and entering a new value.
+1. You can also rename the topic by selecting its name and entering a new value.
    
     :::image type="content" source="media\authoring-create-edit-topics\rename-topic-shortcut.png" alt-text="Quickly rename a topic by selecting its name":::
 
-1. Select **Save** to save the topic so that it's added to the topics list.
+1. Select **Save** to add the topic to the topics list.
 
 
 
