@@ -56,8 +56,9 @@ The following questions are common security questions and answers for Power Plat
   - In some rare cases, the process takes time due to external dependencies which is why there will still be some copies of outdated components in some applications. However, as per above process, those will be tracked, and updated once dependencies have been addressed.
 
   [A07:2021-Identification and Authentication Failures](https://owasp.org/Top10/A07_2021-Identification_and_Authentication_Failures/):
-  - To be updated
-  - Focus on AAD
+  - Power Platform is built on and depends on Azure Active Directory (AAD) for both Identification and Authentication.
+  - AAD helps Power Platform to enable multiple [secure features](https://azure.microsoft.com/en-us/services/active-directory/#features) such as Single Sign-on (SSO), Multi-Factor Authentication (MFA), single platform to engage with both internal and external users more securely.
+  - Together with Power Platform's upcoming implemenation of AAD's Continuous Access Evaluation ([CAE](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/concept-continuous-access-evaluation)), the experience will be even more secure, reliable, and performant for end users.
 
   [A08:2021-Software and Data Integrity Failures](https://owasp.org/Top10/A08_2021-Software_and_Data_Integrity_Failures/):
   - Power Platform's Component Governance process ensures that software integrity is maintained by enforcing package source files are securely configured.
@@ -111,7 +112,8 @@ The following questions are common security questions and answers for Power Plat
   - This is to allow Auth across Orgs. The subdomains aren't used as security boundaries and also don't host customer contents.
 
   **How can we set the application session to timeout after, say, 15 minutes?**
-  - Power Platform uses Azure Active Directory (AAD) for Identity and Access Management (IAM). Power Platform follows AAD's [recommended configuration](https://docs.microsoft.com/en-us/azure/active-directory/develop/access-tokens#access-token-lifetime) for session management for optimal user experience. Together with upcoming AAD's Continuous Access Evaluation (CAE), the experience will be secure, reliable, and performant for end users.
+  - Power Platform uses Azure Active Directory (AAD) for Identity and Access Management (IAM). Power Platform follows AAD's [recommended configuration](https://docs.microsoft.com/en-us/azure/active-directory/develop/access-tokens#access-token-lifetime) for session management for optimal user experience. 
+  - Together with Power Platform's upcoming implemenation of AAD's Continuous Access Evaluation ([CAE](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/concept-continuous-access-evaluation)), the experience will be even more secure, reliable, and performant for end users.
 
   **The application allows the same user to access from more than one machine/browser at the same time. How can we prevent that?**
   - Accessing the application from more than one machine/browser at the same time is a convenience. However, the access needs to be continuously evaluated to ensure that the access is from legitimate source and still valid.
