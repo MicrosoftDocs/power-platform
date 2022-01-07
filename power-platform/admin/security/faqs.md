@@ -70,11 +70,11 @@ The following questions are common security questions and answers for Power Plat
 
   [A09:2021-Security Logging and Monitoring Failures](https://owasp.org/Top10/A09_2021-Security_Logging_and_Monitoring_Failures/):
   - To be updated
-  - Focus on Azure Security logging features and Incident response
+  - *Focus on Azure Security logging features and Incident response*
 
   [A10:2021-Server-Side Request Forgery](https://owasp.org/Top10/A10_2021-Server-Side_Request_Forgery_%28SSRF%29/):
   - To be updated
-  - Focus on Azure Security capabilities 
+  - *Focus on Azure Security capabilities* 
 
   # Common Security questions from customers
   The below are some of the common security questions that customers have raised in the past. We are capturing them here along with useful information that helps to answer their questions.
