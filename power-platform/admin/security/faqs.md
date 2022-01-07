@@ -81,7 +81,7 @@ The following questions are common security questions and answers for Power Plat
   - To be updated
 
   **How can we connect to SQL Server securely?**
-  - To be updated
+  - The best practices for securely connecting to external data sources has been documented [here](https://powerapps.microsoft.com/en-us/blog/best-security-practices-for-power-apps/).
 
   **What Ciphers are supported by Power Platform? What's the roadmap of continuously moving towards stronger Ciphers?**
   - All Microsoft services and products are configured to use the approved cipher suites, in the exact order as mentioned by Microsoft Crypto Board. The exact list and order can be found in [Power Platform documentation](https://docs.microsoft.com/en-us/power-platform/admin/server-cipher-tls-requirements).
