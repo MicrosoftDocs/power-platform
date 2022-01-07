@@ -49,7 +49,7 @@ The following questions are common security questions and answers for Power Plat
 
   [A05:2021-Security Misconfiguration](https://owasp.org/Top10/A05_2021-Security_Misconfiguration/):
   - One of the foundations of Power Platform design principles is "Default Deny" where customers need to review, and opt-in for new features and configurations.
-  - Any misconfigurations during the build time will caught through integrated security analysis by leveraging [Secure Develolpment Tools](https://marketplace.visualstudio.com/items?itemName=securedevelopmentteam.vss-secure-development-tools)
+  - Any misconfigurations during the build time will be caught through integrated security analysis by leveraging [Secure Develolpment Tools](https://marketplace.visualstudio.com/items?itemName=securedevelopmentteam.vss-secure-development-tools)
   - In addition, Power Platform goes through Dynamic Analysis Security Testing ([DAST](https://www.microsoft.com/en-us/securityengineering/sdl/practices#practice10)) by leveraging internal service that is built on OWASP Top 10 risks.
 
   [A06:2021-Vulnerable and Outdated Components](https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components/):
