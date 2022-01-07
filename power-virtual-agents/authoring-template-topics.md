@@ -22,7 +22,7 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](authoring-template-topics.md)
 > - [Power Virtual Agents app in Microsoft Teams](teams/authoring-template-topics-teams.md)
 
-Power Virtual Agents includes a set of four lessons from which you can see examples of topics. These range from simple to complex scenarios that leverage the use of [conditional branching](authoring-create-edit-topics.md) and [custom entities](advanced-entities-slot-filling.md).
+Power Virtual Agents includes a set of four lessons from which you can see examples of topics. These lessons range from simple to complex scenarios that use [conditional branching](authoring-create-edit-topics.md) and [custom entities](advanced-entities-slot-filling.md).
 
 ## Prerequisites
 
@@ -32,7 +32,7 @@ Power Virtual Agents includes a set of four lessons from which you can see examp
 
 ## Access and use lesson topics for new bots
 
-When a bot is created, a number of lessons are automatically created as topics. 
+When a bot is created, several lessons are automatically created as topics. 
 
 While the topics are functional, they are examples for the purposes of learning how to create content for your bots and are not designed for production use.
 
@@ -63,9 +63,9 @@ This lesson shows you how to create a simple topic with one conditional branch.
 
 This lesson shows you how you can create a simple topic with one conditional branch and [a variable](authoring-variables.md).
 
-A variable is a name for an item which will be used later in the topic flow. In this example, `pva_StoreLocation` is the variable to store the user's response when you ask for their preferred store location.
+A variable is a name for an item, which will be used later in the topic flow. In this example, `pva_StoreLocation` is the variable to store the user's response when you ask for their preferred store location.
 
-### Lesson 3 - A topic with a conditions, variables and a pre-built entity
+### Lesson 3 - A topic with a conditions, variables, and a pre-built entity
 
 This lesson shows you how you can create a simple topic with one conditional branch, [a variable](authoring-variables.md), and [an entity](advanced-entities-slot-filling.md).
 
@@ -76,7 +76,7 @@ For example, if you type "I want to buy a red car," the bot doesn't need to ask 
 In this lesson, the bot uses the State entity and will recognize any US state the user enters.
 
 
-### Lesson 4 - A topic with conditions, variables and a custom entity
+### Lesson 4 - A topic with conditions, variables, and a custom entity
 
 This lesson shows a topic with a conditional branch, [a variable](authoring-variables.md), and [a custom entity](advanced-entities-slot-filling.md#custom-entities). 
 

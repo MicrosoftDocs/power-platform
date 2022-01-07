@@ -37,13 +37,13 @@ In addition to this guide, you can also [download and use templates to help you 
 
 ## Create your first bot
 
-1. Go to the [Power Virtual Agents introduction website](https://aka.ms/TryPVA) in your browser to begin. Supported browsers include Microsoft Edge, Chrome, and Firefox. On the website, select **Start free**, and then sign in with your work email address. Note that personal Microsoft accounts aren't currently supported.
+1. Go to the [Power Virtual Agents introduction website](https://aka.ms/TryPVA) in your browser to begin. Supported browsers include Microsoft Edge, Chrome, and Firefox. On the website, select **Start free**, and then sign in with your work email address. Personal Microsoft accounts aren't currently supported.
 
     
 
-2. Next, you'll choose a name for your bot. This can be something generic to your company or specific to the scenario you are tailoring your bot to.
+2. Next, you'll choose a name for your bot. The name can be something generic to your company or specific to the scenario you are tailoring your bot to.
 
-    Your bot is created in the default Power Apps environment that was created for you when you signed up. For most users, this is sufficient. However, if you want to specify a custom Power Apps environment for your Power Virtual Agents, you can do so by expanding the **More options** menu and selecting a different environment.
+    Your bot is created in the default Power Apps environment that was created for you when you signed up. For most users, this environment is sufficient. However, if you want to specify a custom Power Apps environment for your Power Virtual Agents, you can do so by expanding the **More options** menu and selecting a different environment.
 
    > [!NOTE] 
    > Power Virtual Agents is supported only in the locations listed in the [supported data locations](data-location.md) topic, with data stored in respective data centers. If your company is located outside of the supported data locations, you need to create a custom environment with **Region** set to a supported data location before you can create your bot. For more information on how to create a custom Power Apps environment, see [Working with environments](environments-first-run-experience.md).
@@ -53,7 +53,7 @@ In addition to this guide, you can also [download and use templates to help you 
 
 3. Once you select **Create**, the process of creating the first bot within a new environment can take up to 15 minutes. Subsequent bots will be created much faster. 
 
-4. After a few minutes, you'll land on the home page and have an opportunity to play around with the bot in read-only mode. You can't save any edits during this time, but you can explore the overall user interface, look at the topics, experiment with the preloaded User Topics and System Topics, and interact with your bot using the Test Canvas. During this time, you can review additional documentation on authoring topics in your bot. See [Authoring key concepts](authoring-fundamentals.md).
+4. After a few minutes, you'll land on the home page and have an opportunity to play around with the bot in read-only mode. You can't save any edits during this time, but you can explore the overall user interface, look at the topics, experiment with the preloaded User Topics and System Topics, and interact with your bot using the Test Canvas. During this time, you can review more documentation on authoring topics in your bot. See [Authoring key concepts](authoring-fundamentals.md).
    
 
 5. When the bot creation process completes, the banner changes. You now have full functionality in the bot and can modify any User or System topic, test out your content changes, or deploy your bot.
@@ -95,12 +95,12 @@ In addition to this guide, you can also [download and use templates to help you 
 
     :::image type="content" source="media/quickstart-create-topic-03.png" alt-text="Complete conversation." border="false":::
     
-You now have a very simple branching dialog tree, congratulations! You can begin to create more complex versions of this tree by incorporating [variables](authoring-variables.md), [entities](advanced-entities-slot-filling.md), and [Power Automate flows](advanced-flow.md).
+You now have a simple branching dialog tree, congratulations! You can begin to create more complex versions of this tree by incorporating [variables](authoring-variables.md), [entities](advanced-entities-slot-filling.md), and [Power Automate flows](advanced-flow.md).
 
  
 ## Test your content in real time
 
-1. Now that you have some content authored into a dialog tree, it's time to test this out in real time to see if it's working as you expected. For this, you'll use the test bot panel.
+1. Now that you have some content authored into a dialog tree, it's time to test it out in real time to see if it's working as you expected. To test the bot, you'll use the test bot panel.
 
     :::image type="content" source="media/test-bot-panel.png" alt-text="Start bot with latest content." border="false":::
     
@@ -126,9 +126,9 @@ The bot is now waiting for you to respond and has provided suggestions on how to
     
   
 
-4. You can continue the dialog by selecting the Seattle branch. You'll see the chat stop once you've reached the bottom of this branch. If you author more content, the dialog will continue, but since we've only created a very simple and small dialog tree, we can reach the end of the content very quickly.
+4. You can continue the dialog by selecting the Seattle branch. You'll see the chat stop once you've reached the bottom of this branch. If you author more content, the dialog will continue, but since we've only created a simple and small dialog tree, we can reach the end of the content quickly.
 
-    This test experience empowers you to quickly create and test a conversation to ensure that the conversation will flow as anticipated. If the dialog does not reflect your intention, you can change the dialog, and save it. The latest content will be pushed into the test bot, and you can try it out again. None of this changes the published version of the bot, so feel free to play around with your content until you are happy with it.
+    This test experience empowers you to quickly create and test a conversation to ensure that the conversation will flow as anticipated. If the dialog does not reflect your intention, you can change the dialog, and save it. The latest content will be pushed into the test bot, and you can try it out again. These changes don't affect the published version of the bot, so feel free to play around with your content until you are happy with it.
  
 
 
@@ -142,7 +142,7 @@ The bot is now waiting for you to respond and has provided suggestions on how to
 2. Select **Publish** to activate your bot with a single click. If the publish is successful, a green banner on the top of the page will indicate so.
 
  
-3. Then click on the demo website link under **Share your bot** to see it in action on a demo website. A new window opens in your browser. If this doesn't happen automatically, check whether a pop-up blocker has been activated and, if so, allow the window to be opened. Usually, you can allow pop-ups from the URL field directly. This is a webpage that demonstrates what your bot looks like to an end-user who comes to your webpage. The bot canvas is at the bottom. You can interact with it by typing into the window or by selecting a starter phrase from the provided options. This is your bot in action. 
+3. Then click on the demo website link under **Share your bot** to see it in action on a demo website. A new window opens in your browser. If a window doesn't open automatically, check whether a pop-up blocker has been activated and, if so, allow the window to be opened. Usually, you can allow pop-ups from the URL field directly. This is a webpage that demonstrates what your bot looks like to an end-user who comes to your webpage. The bot canvas is at the bottom. You can interact with it by typing into the window or by selecting a starter phrase from the provided options. This is your bot in action. 
 
     :::image type="content" source="media/channel-go-to-demo-website.png" alt-text="Share your bot." border="false":::
     
@@ -152,7 +152,7 @@ For more information on publishing your bot to other channels, see the documenta
 
 ## Analyze the performance of your bot
 
-1. Once your bot has completed interactions with users, the statistics are available on the **Analytics** tab in the side navigation pane. Here, you can find key performance indicators (KPIs) showing the volume of sessions your bot has handled, how effectively your bot was able to engage end-users and resolve issues, escalation rates to human agents, and abandonment rates during conversations. You will also find customer satisfaction information at the KPI level as well as in the **Customer Satisfaction** tab.
+1. Once your bot has completed interactions with users, the statistics are available on the **Analytics** tab in the side navigation pane. Here, you can find key performance indicators (KPIs) showing the volume of sessions your bot has handled, how effectively your bot was able to engage end-users and resolve issues, escalation rates to human agents, and abandonment rates during conversations. You will also find customer satisfaction information at the KPI level and in the **Customer Satisfaction** tab.
 
     > [!NOTE]
     > There is up to a 1-hour delay between when the conversations occur and when the statistics for those conversations appear in the analytics views. Also, all interactions with the bot are logged in analytics, including interactions from your demo website, custom website, or test bot.
@@ -160,7 +160,7 @@ For more information on publishing your bot to other channels, see the documenta
 
 
 
-2. You can also view detailed session history and transcripts by selecting **Sessions** from the **Analytics** tab. This enables you to download a CSV file with the full session transcript. This can be a helpful way for you to tune the performance of your bot and change the content in your topics to improve your bot's efficiency.
+2. You can view detailed session history and transcripts by selecting **Sessions** from the **Analytics** tab. On this tab you can also download a CSV file with the full session transcript. Reviewing the transcript can be a helpful way for you to tune the performance of your bot and change the content in your topics to improve your bot's efficiency.
 
     :::image type="content" source="media/analytics-sessions.png" alt-text="Download sessions." border="false":::
     
