@@ -185,7 +185,7 @@
       href: coe/limitations.md
     - name: Release notes
       href: coe/release-notes.md
-    - name: CoE Command Line Interface
+    - name: CoE command line interface
       href: coe/cli/overview.md
       items:
       - name: Install CoE CLI
