@@ -184,17 +184,17 @@ This is what your topic should look like now:
 Power Virtual Agents comes with a built-in test bot that lets you test the bot in real time. Let's test the bot by launching the test bot canvas and providing the employee's input. When you save the topic, the test bot will be refreshed with the latest content. You can now test the bot with the latest content changes.
 
 1. Select the purple bot icon at the bottom of the screen to launch the test bot canvas. 
-2. Type in *I need time-off information*.
+2. Enter *I need time-off information*. 
 
-    Even though *I need time-off information* does not match the trigger phrases directly, Power Virtual Agents is able to process the user's input and triggers the employee time-off topic. 
+    Even though *I need time-off information* doesn't match the trigger phrases directly, Power Virtual Agents is able to process the user's input and triggers the employee time-off topic. 
 
     As you chat with the bot in the test bot canvas, you can see where the bot is in the conversation in real-time in the authoring canvas by following the green highlights.
 
 3. Select **Paid vacation**.
 
-    As you can see now, the topic branches off based on the user's response. You can also open the variable to show the *TimeoffType* variable is set to **Paid time-off** by the user. However, what happens if the user has already made it clear that they are looking for national holidays in their inquiry? The user may feel annoyed if the bot asks them to repeat themselves. Let's give it a try.
+Now the topic branches off based on the user's response. You can also open the variable to show the *TimeoffType* variable is set to **Paid time-off** by the user. However, what happens if the user has already made it clear that they are looking for national holidays in their inquiry? The user may feel annoyed if the bot asks them to repeat themselves. Let's give it a try.
 
-4. Reset the test bot canvas by selecting **Reset** above the test bot pane.
+4. Above the test bot pane, select **Reset** .
 
 5. Type in *Need information on national holidays*
 
@@ -225,9 +225,9 @@ First, let's create the flow to send a message to a Teams channel and then call 
     :::image type="content" source="media/get-started-variable-description.png" alt-text="Add a question node with the answer as a variable called Description.":::
 
 2. Add a node under the question and select **Call an action**.
-3. Select **Create a flow**. This launches Power Automate within the Power Virtual Agents app in Teams. We will use a built-in template to send a message to a channel, which makes it easy to get started.
+3. Select **Create a flow**. 
 
-4. Choose the template **Send a message to a Teams channel**, then select **Continue**.  
+4. Choose the template **Send a message to a Teams channel**, and then select **Continue**.  
     The flow template takes in two inputs from the bot, the **Subject** (title for the message) and **Message text** (actual message) to post to the channel. 
     1. Under the **Post a message (v3)** flow definition, select the **Team ID** and the **Team channel ID** where the message should be posted. 
     2. You can add some text to the message in addition to the description entered by the user, and complete the **Message** field as appropriate. 
@@ -266,7 +266,7 @@ Once the topics are constructed and the bot is tested, you are ready to publish 
 
 1. Select **Publish**.
 
-You will need to follow a few more actions to actually make the bot available to employees.
+You'll need to follow a few more actions to actually make the bot available to employees.
 
 >[!TIP]
 > If you are already in a conversation with the bot, you can type *start over* to the bot after publishing the latest bot content. This will restart the conversation with the bot, with the latest content published.
@@ -342,7 +342,7 @@ The **Greeting** topic which is available as a [default or "system" topic](autho
 
 Melissa needs time-off in the summer for personal reasons.
 
-She types in *Need time-off information*.
+She enters *Need time-off information*.
 
 She sees an option for **Paid vacation** and begins there to get some initial information, so she selects **Paid vacation**.
 
