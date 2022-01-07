@@ -78,9 +78,9 @@ The following questions are common security questions and answers for Power Plat
   - There are various directives that can be configured as part of CSP. Currently only the [frame-ancestors](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/frame-ancestors) directive is supported by UCI/CRM.
   - Additional details can be found in the [Developer Reference](https://docs.microsoft.com/en-us/powerapps/developer/data-platform/reference/entities/organization#BKMK_ContentSecurityPolicyConfiguration). 
   - Supporting CSP is an extremely important priority for Power Platform. There will be more updates coming up in future roadmap regarding CSP support like below:
-  - - Full blog post on how to implement CSP for UCI
-  - - Supporting all available CSP directives
-  - - Same CSP support for Canvas applications as well
+    - Full blog post on how to implement CSP for UCI
+    - Supporting all available CSP directives
+    - Same CSP support for Canvas applications as well
 
   **Does Power Platform support Cross-Origin Resource Sharing ([CORS](https://owasp.org/www-community/attacks/CORS_OriginHeaderScrutiny))?**
   - To be updated
