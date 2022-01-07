@@ -31,7 +31,6 @@ The [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] is
   
 For information about the programmatic interface for managing configuration and administration of the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)], see [Data Export Service](/powerapps/developer/common-data-service/data-export-service) in the developer guide.
   
-<a name="Prereq_DES"></a>   
 ## Prerequisites for using [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)]  
  To start using the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)], the following prerequisites are required.  
   
@@ -97,7 +96,6 @@ For information about the programmatic interface for managing configuration and 
 ### Web browser  
  Enable pop-ups for the domain https://discovery.crmreplication.azure.net/ in your web browser. This is required for auto-sign in when you navigate to Settings > Data Export.  
   
-<a name="perms"></a>   
 ## Services, credentials, and privileges required  
  To use the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] feature, you must have the following services, credentials, and privileges.  
   
@@ -110,11 +108,10 @@ For information about the programmatic interface for managing configuration and 
   - [!INCLUDE[pn_azure_key_vault](../includes/pn-azure-key-vault.md)].  
   
 > [!IMPORTANT]
->  To use the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] the customer engagement apps and [!INCLUDE[pn_azure_key_vault](../includes/pn-azure-key-vault.md)] services must operate under the same tenant and within the same [!INCLUDE[pn_microsoft_azure_active_directory](../includes/pn-microsoft-azure-active-directory.md)]. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Azure integration with Microsoft 365](https://support.office.com/article/Azure-integration-with-Office-365-a5efce5d-9c9c-4190-b61b-fd273c1d425f)  
+> To use the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] the customer engagement apps and [!INCLUDE[pn_azure_key_vault](../includes/pn-azure-key-vault.md)] services must operate under the same tenant and within the same [!INCLUDE[pn_microsoft_azure_active_directory](../includes/pn-microsoft-azure-active-directory.md)]. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Azure integration with Microsoft 365](https://support.office.com/article/Azure-integration-with-Office-365-a5efce5d-9c9c-4190-b61b-fd273c1d425f)  
 > 
->  The [!INCLUDE[pn_Azure_SQL_Database_long](../includes/pn-azure-sql-database-long.md)] service can be in the same or a different tenant from the service.  
-  
-<a name="shouldknowDES"></a>   
+> The [!INCLUDE[pn_Azure_SQL_Database_long](../includes/pn-azure-sql-database-long.md)] service can be in the same or a different tenant from the service.  
+   
 ## What you should know before using the Data Export Service  
   
 - Export Profiles must be deleted and then re-created whenever you perform any of the following actions on an environment. 
@@ -134,8 +131,7 @@ For information about the programmatic interface for managing configuration and 
    
     These items must be dropped manually.  [How to delete Data Export Profile tables and stored procedures for a specific entity](#drop_entity)
     Metadata delete notifications are logged in the unprocessablemessages folder. [Error handling and monitoring](#error_handling)
-  
-<a name="dataexportprofile"></a>   
+   
 ## Export Profile  
  To export data from customer engagement apps, the administrator creates an Export Profile.  Multiple profiles can be created and activated to synchronize data to different destination databases simultaneously.  
   
@@ -159,8 +155,7 @@ For information about the programmatic interface for managing configuration and 
 |Delta Sync|Modify Schema - Advanced Types|Add or modify field change, all advanced data types.|  
 |Delta Sync|Modify Data - Basic Types|All basic data types.|  
 |Delta Sync|Modify Data - Advanced Types|All advanced data types, such as PartyList.|  
-  
-<a name="createdataexportprofile"></a>   
+   
 ## Create an Export Profile  
  Ensure that following requirements are met before creating an Export Profile.  
   
@@ -213,7 +208,6 @@ For information about the programmatic interface for managing configuration and 
   
    ![Summary tab in Create Export Profile dialog box.](../admin/media/data-export-profile-4.PNG "Summary tab in Create Export Profile dialog box")  
   
-<a name="modify_export_profile"></a>   
 ## Modify an existing Export Profile  
  You can add or remove the entities and relationships in an existing Export Profile that you want to replicate.  
   
@@ -234,9 +228,8 @@ For information about the programmatic interface for managing configuration and 
 5. Click **Update** to submit your changes to the Export Profile.  
   
 > [!IMPORTANT]
->  When you remove an entity or entity relationship from an Export Profile it doesn't drop the corresponding table in the destination database. Before you can re-add an entity that has been removed, you must drop the corresponding table in the destination database.  To drop an entity table, see [How to delete Data Export Profile tables and stored procedures for a specific entity](#drop_entity).  
-  
-<a name="table_details"></a>   
+> When you remove an entity or entity relationship from an Export Profile it doesn't drop the corresponding table in the destination database. Before you can re-add an entity that has been removed, you must drop the corresponding table in the destination database.  To drop an entity table, see [How to delete Data Export Profile tables and stored procedures for a specific entity](#drop_entity).  
+    
 ## Table details for the destination Azure SQL Database  
  The [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] creates tables for both data and metadata. A table is created for each entity and M:N relationship that is synchronized.  
   
@@ -252,7 +245,6 @@ For information about the programmatic interface for managing configuration and 
 |\<Prefix>_AttributeMetadata|Upon Export Profile activation.|  
 |\<Prefix>_DeleteLog|Upon Export Profile activation when the delete log option is enabled.|  
   
-<a name="resolve_issues"></a>   
 ## Resolving synchronization issues  
  Even after several retry attempts, record synchronization failures  may occur from database storage constraints or table locking due to long running queries. To resolve these failures you can force a resynchronization of only failed records or a  resynchronization of all records.  
   
@@ -287,15 +279,13 @@ For information about the programmatic interface for managing configuration and 
   
 4.  If the record synchronization failures persist after you've tried resynchronizing by following the previous steps, contact [Microsoft Customer Support Services](get-help-support.md).  
   
-<a name="error_handling"></a>   
 ## Error handling and monitoring  
  To view the synchronization status of an Export Profile, go to **Settings** > **Data Export** and open the Export Profile. On the **ENTITIES** tab, the synchronization status is displayed including a **Failed Records** column for records that could not be synchronized. For any failed records, a list of those records including the status reason can be downloaded by clicking **FAILED RECORDS** on the command bar.  
   
  ![Export Profile command bar - Failed Records button.](../admin/media/data-export-command-bar.png "Export Profile command bar - Failed Records button")  
   
  In the Export Profile you can click **PROPERTIES & OVERVIEW** to display the properties of the profile. Click **RELATIONSHIPS** to view the relationships synchronization status.  
-  
-<a name="view_failure_records"></a>   
+    
 ### How to view detailed information about the records that failed to sync  
  Viewing the failed record logs can help you determine the cause of synchronization failures. To view failed records in the destination Azure destination database, use Azure Storage Explorer, a free standalone app that allows you to easily work with Azure Storage data. More information:  [Azure Storage Explorer](https://storageexplorer.com/).  
   
@@ -355,7 +345,7 @@ You can now download the failed records directly from within the Data Export Ser
    > ![Sample error log.](media/sample-error-log.png "Sample error log")
 
 #### Failed record synchronization folder structure and log files  
- The Failed Records Azure Blob storage URL points to a location that has the following folder structure:  
+The Failed Records Azure Blob storage URL points to a location that has the following folder structure:  
   
 - **data**. This folder contains failed data notifications and the associated JSON for record data.  
   
@@ -376,7 +366,6 @@ Entity: contact, RecordId: 459d1d3e-7cc8-e611-80f7-5065f38bf1c1, NotificationTim
 The statement has been terminated.  
 ```  
   
-<a name="recordsync_failure_reason"></a>   
 #### Common reasons for record synchronization failures  
  Here are a few reasons why record synchronization failures may occur.  
   
@@ -386,7 +375,6 @@ The statement has been terminated.
   
 - Synchronization timeouts with [!INCLUDE[pn_Azure_SQL_Database_long](../includes/pn-azure-sql-database-long.md)]. This can occur during the initial synchronization of a data export profile when large amounts of data are processed at one time. When this issue occurs, resynchronize the failed records. [Resolving synchronization issues](#resolve_issues)  
   
-<a name="DES_best_practice"></a>   
 ## Best practices when using Azure SQL Database with Data Export  
   
 - To avoid synchronization errors due to resource throttling, we recommend that you have an [!INCLUDE[pn_Azure_SQL_Database_long](../includes/pn-azure-sql-database-long.md)] Premium P1 or better plan when you use the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)]. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Azure SQL Database resource limits](/azure/sql-database/sql-database-resource-limits) and [SQL Database Pricing](https://azure.microsoft.com/pricing/details/sql-database/)  
@@ -426,7 +414,6 @@ Based on our monitoring of the service it's been observed that most on-going del
 
 When the above conditions are met, 15 minutes is a typical synchronization latency. Microsoft provides no service level agreement (SLA) for the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] and makes no guarantees or commitments regarding synchronization latency times.
 
-<a name="SetupAzureKV"></a>   
 ## How to set up Azure Key Vault  
  Run the [!INCLUDE[pn_PowerShell](../includes/pn-powershell.md)] script described here as an [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] account administrator to give permission to the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] feature so it may access your Azure Key Vault. This script displays the key vault URL required for creating the Export Profile that is used to access the connection string.  
   
@@ -443,7 +430,10 @@ When the above conditions are met, 15 minutes is a typical synchronization laten
 - $tenantId.  Specifies the [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] Active Directory tenant Id to which the Key Vault subscription.  
   
 > [!IMPORTANT]
->  An [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] subscription can have multiple [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] Active Directory tenant Ids. Make sure that you select the correct [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] Active Directory tenant Id that is associated with the environment that you will use for data export.  
+> An [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] subscription can have multiple [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] Active Directory tenant Ids. Make sure that you select the correct [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] Active Directory tenant Id that is associated with the environment that you will use for data export.  
+
+> [!NOTE]
+> Ensure the user has the appropriate permission to target the Azure SQL database.
 
 ```powershell
 # -------------------------------------------------------------------------------- #
@@ -493,8 +483,6 @@ Set-AzKeyVaultAccessPolicy -VaultName $keyvaultName -ServicePrincipalName $servi
 Write-Host "Connection key vault URL is "$secret.id.TrimEnd($secret.Version)""
 ```
 
-
-<a name="Delete_DEP"></a>   
 ## How to delete all Data Export Profile tables and stored procedures
 
 > [!IMPORTANT]
@@ -537,7 +525,6 @@ PRINT @sql
 EXEC SP_EXECUTESQL @sql;
 ```
 
-<a name="drop_entity"></a> 
 ## How to delete Data Export Profile tables and stored procedures for a specific entity
 
 > [!IMPORTANT]
@@ -583,8 +570,7 @@ EXEC SP_EXECUTESQL @sql;
 1. Sign in to the [Azure portal](https://portal.azure.com/).
 2. Under **Azure services** select **Tenant properties**. 
 3. Select the value in the **Tenant ID** field.
-
-<a name="SQLDB_IP_addresses"></a>   
+  
 ## Azure SQL database static IP addresses used by the Data Export Service  
  In [!INCLUDE[pn_Azure_SQL_Database_long](../includes/pn-azure-sql-database-long.md)], click **Set server firewall**, turn **Allow access to Azure services** to **OFF**, click **Add client IP**, and then add the IP addresses appropriate for the region of your Dynamics 365 environment. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Azure: Configure an Azure SQL Database server-level firewall rule using the Azure Porta](/azure/azure-sql/database/firewall-configure)l  
   
@@ -611,7 +597,6 @@ EXEC SP_EXECUTESQL @sql;
 > [!NOTE]
 > North America customers should add IP addresses to an approved list for both East US and West US.
 
-<a name="DES_knownissues"></a>   
 ## Known issues  
   
 ### Deleted records may get reinserted into entity table after a synchronization failure  
