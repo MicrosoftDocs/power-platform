@@ -34,7 +34,10 @@ The following questions are common security questions and answers for Power Plat
   - To be updated
 
   [A02:2021-Cryptographic Failures](https://owasp.org/Top10/A02_2021-Cryptographic_Failures/):
-  - To be updated
+  - Encryption of data in transit - Power Platform uses TLS to encrypt all HTTP-based network traffic. It uses other mechanisms to encrypt non-HTTP network traffic that contains customer or confidential data (IPSec, SMTP, SQL).
+  - Using a hardened TLS configuration - Uses only TLS 1.2 or above. Uses ECDHE-based ciphers suites and NIST curves. Uses strong keys. Enables HTTP Strict Transport Security (HSTS). *To be validated* Turns off TLS compression and does not use ticket-bassed session resumption.
+  - Encryption of data at rest - All customer data will be encrypted before being written to non-volatile storage media.
+  - All encrypted data has integrity protection applied before it is transmitted, and all the integrity protection metadata present for incoming encrypted data will be validated. *To be validated*
 
   [A03:2021-Injection](https://owasp.org/Top10/A03_2021-Injection/):
   - To be updated
@@ -58,7 +61,7 @@ The following questions are common security questions and answers for Power Plat
 
   [A08:2021-Software and Data Integrity Failures](https://owasp.org/Top10/A08_2021-Software_and_Data_Integrity_Failures/):
   - To be updated
-  - Focus on SDL Build task
+  - Software and Data Integrity is quintessantial and stands right next to Secure Design, which is why Power Platform leverages industry trusted static analysis solutions Semmle, as well as many internal tools.
 
   [A09:2021-Security Logging and Monitoring Failures](https://owasp.org/Top10/A09_2021-Security_Logging_and_Monitoring_Failures/):
   - To be updated
