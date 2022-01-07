@@ -22,21 +22,21 @@ search.app:
 
 To install the CoE CLI:
 
-1. Download zip or clone repository [coe-starter-kit](https://github.com/microsoft/coe-starter-kit).
+1. Download the zip file or clone the repository [coe-starter-kit](https://github.com/microsoft/coe-starter-kit).
 
-1. Change to unzipped or cloned repository.
+1. Go to the unzipped or cloned repository.
 
    ```bash
    cd coe-starter-kit
    ```
 
-1. Change to the coe-cli folder.
+1. Go to the **coe-cli** folder.
 
    ```bash
    cd coe-cli
    ```
 
-Next select either [Local Install](#local-install) or [Docker Install](#docker-install).
+Next, select either [local install](#local-install) or [Docker install](#docker-install).
 
 ## Local install
 
@@ -44,17 +44,17 @@ Next select either [Local Install](#local-install) or [Docker Install](#docker-i
 
 To run the CoE CLI application, you'll need to install the components below.
 
-1. An installation of Node 11+
+1. An installation of Node 11+.
 
    a. [https://nodejs.org/en/download/](https://nodejs.org/en/download/)
 
-1. Azure CLI (version 2.24.0 or greater) is required for user authentication and Azure Active Directory Integration
+1. Azure CLI (version 2.24.0 or later) is required for user authentication and Azure Active Directory integration.
 
    a. [Install Azure CLI](/cli/azure/install-azure-cli)
 
 ### Checking prerequisites
 
-To check prerequisites have been installed correctly and the correct versions are installed use the following commands at the command prompt.
+To check that the prerequisites have been installed correctly and the correct versions are installed, use the following commands at the command prompt.
 
 1. Verify the node version.
 
@@ -88,26 +88,26 @@ To check prerequisites have been installed correctly and the correct versions ar
    npm link
    ```
 
-NOTE:
+#### Notes
 
-1. On Windows, you may need to add %APPDATA%\npm to your PATH environment variable to access the coe command.
+- On Windows, you may need to add `%APPDATA%\npm` to your PATH environment variable to access the coe command.
 
-1. Install Azure CLI. Follow install instructions for your operating system at [Install Azure CLI](/cli/azure/install-azure-cli).
+- Install Azure CLI. Follow the install instructions for your operating system at [Install Azure CLI](/cli/azure/install-azure-cli).
 
 ## Docker install
 
-One method of installation is via docker.
+One method of installation is via Docker.
 
 ### Docker prerequisites
 
-To run the CoE CLI application, you'll require the following.
+To run the CoE CLI application, you'll need the following software.
 
-1. A local install of [Docker](https://docs.docker.com/get-docker/). The install can be either Community Edition or Enterprise Edition. If you're installing onto a desktop environment, you'll normally pick a Community Edition deployment.
+- A local install of [Docker](https://docs.docker.com/get-docker/). The install can be either Community Edition or Enterprise Edition. If you're installing onto a desktop environment, you'll normally pick a Community Edition deployment.
 
 ### Docker install steps
 
->[!Note]
->On some operating systems, you may need to use sudo before each of the docker commands.
+> [!Note]
+> On some operating systems, you may need to use `sudo` before each of the Docker commands.
 
 1. Build docker image.
 
@@ -122,6 +122,6 @@ To run the CoE CLI application, you'll require the following.
    docker run -it --rm coe-cli
    ```
 
-This command will start a new interactive console (-it) and remove the docker container (--rm) when the console session exits. Using --rm ensures that any cached credentials are removed when you exit.
+This command will start a new interactive console (`-it`) and remove the Docker container (`--rm`) when the console session exits. Using `--rm` ensures that any cached credentials are removed when you exit.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

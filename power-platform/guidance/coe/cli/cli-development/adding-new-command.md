@@ -19,7 +19,7 @@ search.app:
 
 # CoE CLI development adding a new command
 
-To add a new sample command, you can use the following command to template the initial setup of the TypeScript command and the jest unit test.
+To add a new sample command, you can use the following command to template the initial set-up of the TypeScript command and the Jest JavaScript testing framework unit test.
 
 ```bash
 cd coe-cli
@@ -28,7 +28,7 @@ coe cli add -n sample
 
 ## Connecting the command to the command line
 
-One you have unit test completed for your new command:
+Once you have the unit test completed for your new command, perform these tasks:
 
 1. Review [https://www.npmjs.com/package/commander](https://www.npmjs.com/package/commander) on commands, options.
 
@@ -40,19 +40,19 @@ One you have unit test completed for your new command:
    import { SampleArguments, SampleCommand} from './sample';
    ```
 
-   - Add function for mock injection.
+   - Add a function for mock injection.
 
    ```typescript
        createSampleCommand: () => SampleCommand
    ```
 
-   - Create command in the constructor function.
+   - Create the command in the constructor function.
 
    ```typescript
           this.createSampleCommand = () => new SampleCommand
    ```
 
-   - Add function
+   - Add the function.
 
    ```typescript
        AddSampleCommand(program: commander.Command) {
@@ -68,21 +68,21 @@ One you have unit test completed for your new command:
        }
    ```
 
-   - Register new command to init function.
+   - Register the new command to init function.
 
    ```typescript
            this.AddSampleCommand(program);
    ```
 
-1. Update [commands.spec.ts](https://github.com/microsoft/coe-starter-kit/blob/main/coe-cli/test/commands/commands.spec.ts) to include unit tests
+1. Update [commands.spec.ts](https://github.com/microsoft/coe-starter-kit/blob/main/coe-cli/test/commands/commands.spec.ts) to include the unit tests.
 
-   - Include reference to the command.
+   - Include a reference to the command.
 
    ```typescript
    import { SampleCommand } from '../../src/commands/sample'
    ```
 
-   - Add a set of Jest tests
+   - Add a set of Jest tests.
 
    ```typescript
    describe('Sample', () => {
@@ -104,7 +104,7 @@ One you have unit test completed for your new command:
    });
    ```
 
-1. Run the unit tests with new changes.
+1. Run the unit tests with the new changes.
 
    ```bash
    npm run test
