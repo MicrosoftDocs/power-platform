@@ -79,19 +79,19 @@ You can edit both of these topic types in the same manner as for topics you crea
    
 1. Specify one or more trigger phrases for the topic in the **Trigger phrases** pane.
 
-   A trigger phrase is a phrase that a customer enters in the chat window to start a conversation with the bot. Once the conversation is started, the conversation follows the path you define. You can specify more than one trigger phrase for a topic. You can include punctuation in a trigger phrase, but it is best to use short phrases rather than long sentences.
+   A trigger phrase is a phrase that a customer enters in the chat window to start a conversation with the bot. Once the conversation is started, the conversation follows the path you define. You can specify more than one trigger phrase for a topic. You can include punctuation in a trigger phrase, but it's best to use short phrases rather than long sentences.
 
     :::image type="content" source="..\media\topics-details-triggers.png" alt-text="Edit trigger phrases in the trigger phrases pane":::
 
-1. Select **Details** to open the details pane.
+1. Select **Details**.
 
     :::image type="content" source="..\media\authoring-create-edit-topics\open-details-pane.png" alt-text="Selecting Details will open the topic details pane":::
 
-1. In the **Name** field, enter a name for your topic. You can also optionally add a **Display name** and **Description**.
+1. For **Name**, enter a name for your topic. You can optionally add a **Display name** and **Description**.
 
     The display name is used when the bot needs to ask the person chatting which topic they're asking about.
 
-    The description is never shown to users. Use this to describe the purpose of the topic to yourself and other bot makers.
+    The description is never shown to users. Use the description to describe the purpose of the topic to yourself and other bot makers.
 
     :::image type="content" source="..\media\authoring-create-edit-topics\details-pane.png" alt-text="The Topic details pane contains a name, display name, and description":::
 

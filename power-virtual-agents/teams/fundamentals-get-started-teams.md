@@ -48,7 +48,7 @@ This is just one example of many use cases of Power Virtual Agents chatbots in T
 
 ## Scenario
 
-You are from Contoso HR and need to build a human resources (HR) support bot in Microsoft Teams. This bot will answer common HR questions, such as those related to time-off, with relevant information from the company's internal knowledge base. The bot can also contact human HR experts and notify them that an employee needs help for uncommon scenarios.
+You work in human resources (HR) at Contoso and need to build a human resources support bot in Microsoft Teams. This bot will answer common HR questions, like those related to time-off, with relevant information from the company's internal knowledge base. The bot can also contact human HR experts and notify them that an employee needs help for uncommon scenarios.
 
 Once this bot is published, Contoso employees can access HR information in Microsoft Teams without needing to search the company's intranet. 
 
@@ -84,7 +84,7 @@ Start by launching the Power Virtual Agents app in Microsoft Teams:
 :::image type="content" source="media/get-started-install-app.png" alt-text="Add the Power Virtual Agents app.":::
 
 
-The app is added and visible in the side navigation bar in Teams, and the app opens to the Power Virtual Agents Home page. This app is where Teams users can come and build bots without needing to leave the Microsoft Teams interface.
+The app is added and visible in the side navigation bar in Teams, and the app opens to the Power Virtual Agents home page. This app is where Teams users can come and build bots without leaving the Microsoft Teams interface.
 
 >[!TIP]
 >To make it easier to get back to, select and hold (or right-click) the Power Virtual Agents icon and select **Pin**.
@@ -115,7 +115,7 @@ A bot comes with a collection of topics that defines the bot's interaction with 
 
 2. Name the topic **Employee time-off** and give it an appropriate description.
 
-3. Create trigger phrases. Trigger phrases for each topic define the sorts of ways that users will ask questions about that topic. Let's go ahead and add a few common ways that we expect employees to ask about time-off. Enter these trigger phrases:
+3. Now create the trigger phrases. We'll add a few common ways that we expect employees to ask about time-off. Enter the following phrases:
 
    - Need information on time off
   

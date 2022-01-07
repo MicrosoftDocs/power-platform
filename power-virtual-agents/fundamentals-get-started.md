@@ -43,7 +43,7 @@ In addition to this guide, you can also [download and use templates to help you 
 
 2. Next, you'll choose a name for your bot. The name can be something generic to your company or specific to the scenario you are tailoring your bot to.
 
-    Your bot is created in the default Power Apps environment that was created for you when you signed up. For most users, this environment is sufficient. However, if you want to specify a custom Power Apps environment for your Power Virtual Agents, you can do so by expanding the **More options** menu and selecting a different environment.
+    Your bot is created in the default Power Apps environment that was created for you when you signed up. For most users, this environment is sufficient. However, if you want to specify a custom Power Apps environment for your Power Virtual Agents, expand the **More options** menu and select a different environment.
 
    > [!NOTE] 
    > Power Virtual Agents is supported only in the locations listed in the [supported data locations](data-location.md) topic, with data stored in respective data centers. If your company is located outside of the supported data locations, you need to create a custom environment with **Region** set to a supported data location before you can create your bot. For more information on how to create a custom Power Apps environment, see [Working with environments](environments-first-run-experience.md).
@@ -63,7 +63,7 @@ In addition to this guide, you can also [download and use templates to help you 
 
 1. Now that you have full functionality within your bot, you can create your own topic—or, in other words, a dialog tree specifying how your bot responds to a user's question.
 
-2. Start by selecting **Topics** in the side navigation pane, and then select **New topic** at the top of the page to open the authoring canvas for an empty topic.
+2. 2. Start by selecting **Topics** in the side navigation pane, and then select **New topic** at the top of the page.
 
     :::image type="content" source="media/topics-new.png" alt-text="New topic." border="false":::
 
@@ -73,7 +73,7 @@ In addition to this guide, you can also [download and use templates to help you 
     
     :::image type="content" source="media\fundamentals-get-started\hello-world-topic.png" alt-text="Name topic and add trigger phrase.":::
 
-4. Next you'll define bot responses and the overall bot conversation.
+4. Next, you'll define bot responses and the overall bot conversation.
 
    Start by entering 'Hello! I'll create a personalized greeting for you.' into the first **Message** node. 
    
@@ -95,7 +95,7 @@ In addition to this guide, you can also [download and use templates to help you 
 
     :::image type="content" source="media/quickstart-create-topic-03.png" alt-text="Complete conversation." border="false":::
     
-You now have a simple branching dialog tree, congratulations! You can begin to create more complex versions of this tree by incorporating [variables](authoring-variables.md), [entities](advanced-entities-slot-filling.md), and [Power Automate flows](advanced-flow.md).
+Now that you have a simple branching dialog tree, you can begin to create more complex versions by incorporating [variables](authoring-variables.md), [entities](advanced-entities-slot-filling.md), and [Power Automate flows](advanced-flow.md).
 
  
 ## Test your content in real time
@@ -126,7 +126,7 @@ The bot is now waiting for you to respond and has provided suggestions on how to
     
   
 
-4. You can continue the dialog by selecting the Seattle branch. You'll see the chat stop once you've reached the bottom of this branch. If you author more content, the dialog will continue, but since we've only created a simple and small dialog tree, we can reach the end of the content quickly.
+4. You can continue the dialog by selecting the Seattle branch. You'll see the chat stop once you've reached the bottom of this branch. If you author more content, the dialog will continue. Since we've only created a simple and small dialog tree, we can reach the end of the content quickly.
 
     This test experience empowers you to quickly create and test a conversation to ensure that the conversation will flow as anticipated. If the dialog does not reflect your intention, you can change the dialog, and save it. The latest content will be pushed into the test bot, and you can try it out again. These changes don't affect the published version of the bot, so feel free to play around with your content until you are happy with it.
  
@@ -152,15 +152,21 @@ For more information on publishing your bot to other channels, see the documenta
 
 ## Analyze the performance of your bot
 
-1. Once your bot has completed interactions with users, the statistics are available on the **Analytics** tab in the side navigation pane. Here, you can find key performance indicators (KPIs) showing the volume of sessions your bot has handled, how effectively your bot was able to engage end-users and resolve issues, escalation rates to human agents, and abandonment rates during conversations. You will also find customer satisfaction information at the KPI level and in the **Customer Satisfaction** tab.
+1. Once your bot has completed interactions with users, the statistics are available on the **Analytics** tab in the side navigation pane. On the **Analytics** tab you'll find key performance indicators (KPIs) that show:
+   - the volume of sessions your bot has handled.
+   - how effectively your bot was able to engage end-users and resolve issues.
+   - escalation rates to human agents.
+   - abandonment rates during conversations .
+   - customer satisfaction information at the KPI level and in the **Customer Satisfaction** tab.
+   
 
     > [!NOTE]
-    > There is up to a 1-hour delay between when the conversations occur and when the statistics for those conversations appear in the analytics views. Also, all interactions with the bot are logged in analytics, including interactions from your demo website, custom website, or test bot.
+    > There's up to a 1-hour delay between when the conversations occur and when the statistics for those conversations appear in the analytics views. Also, all interactions with the bot are logged in analytics, including interactions from your demo website, custom website, or test bot.
 
 
 
 
-2. You can view detailed session history and transcripts by selecting **Sessions** from the **Analytics** tab. On this tab you can also download a CSV file with the full session transcript. Reviewing the transcript can be a helpful way for you to tune the performance of your bot and change the content in your topics to improve your bot's efficiency.
+2. To view detailed session history and transcripts, select **Sessions** from the **Analytics** tab. On this tab, you can download a CSV file with the full session transcript. Review the transcript to tune the performance of your bot and change the content in your topics to improve your bot's efficiency.
 
     :::image type="content" source="media/analytics-sessions.png" alt-text="Download sessions." border="false":::
     

@@ -34,7 +34,7 @@ Power Virtual Agents includes a set of four lessons from which you can see examp
 
 When a bot is created, several lessons are automatically created as topics. 
 
-While the topics are functional, they are examples for the purposes of learning how to create content for your bots and are not designed for production use.
+While the topics are functional, they are examples for the purposes of learning how to create content for your bots. The topics aren't designed for production use.
 
 **Use lesson topics to understand how topics work:**
 
@@ -42,7 +42,7 @@ While the topics are functional, they are examples for the purposes of learning 
 
 1. Select **Lesson 1** and work through to **Lesson 4**. Review the title and description, and see what trigger phrases are being used.  
 
-1. Select each topic to see the bot's flow; including the bot's comments, expected user responses, decision points, and entity references.
+1. To see the bot's flow, select each topic. The flow includes the bot's comments, expected user responses, decision points, and entity references.
 
    :::image type="content" source="media/template-list.png" alt-text="List of lesson topics." border="false":::
 

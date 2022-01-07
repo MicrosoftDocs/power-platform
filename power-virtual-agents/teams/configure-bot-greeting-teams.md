@@ -51,7 +51,7 @@ You can also combine the customized greeting with [customization to the look and
 
 1. Edit the text inside the **Message** nodes. You can also [add or delete additional nodes](authoring-create-edit-topics-teams.md#insert-nodes).
 
-1. Select **Save** when you're finished editing the message.
+1. Select **Save**.
 
 
     :::image type="content" source="media/custom-greeting-message-teams.png" alt-text="Screenshot of the system greeting topic showing the message nodes that can be edited.":::

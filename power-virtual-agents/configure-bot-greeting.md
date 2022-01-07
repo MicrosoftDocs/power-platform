@@ -195,7 +195,7 @@ We recommend you modify the system greeting topic so that you don't have to edit
 
 1. Edit the text inside the **Message** nodes. You can also [add or delete additional nodes](authoring-create-edit-topics.md#insert-nodes).
 
-1. Select **Save** when you're finished editing the message.
+1. Select **Save**.
 
     :::image type="content" source="media/custom-greeting-message.png" alt-text="Screenshot of the system greeting topic showing the message nodes that can be edited." border="false":::
 

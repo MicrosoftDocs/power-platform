@@ -62,11 +62,11 @@ These topics fall into two categories:
 
    :::image type="content" source="media/topics-menu.png" alt-text="Select Topics on the side navigation menu." border="false":::
 
-1. On the topics page, select **New topic** to open the authoring canvas for an empty topic.
+1. On the topics page, select **New topic**.
 
    :::image type="content" source="media/topics-new.png" alt-text="Select New topic at the top of the Topics page." border="false":::
 
-1. When you enter the authoring canvas, the **Trigger phrases** pane will automatically open for you. You can also open the pane by selecting **Trigger phrases**.
+1. When you enter the authoring canvas, the **Trigger phrases** pane should open. If it doesn't open, select **Trigger phrases**.
 
     :::image type="content" source="media\authoring-create-edit-topics\trigger-phrases-button.png" alt-text="Selecting Trigger phrases will open the topic details pane":::
    
@@ -76,11 +76,11 @@ These topics fall into two categories:
 
     :::image type="content" source="media/topics-details-triggers.png" alt-text="Edit trigger phrases in the trigger phrases pane":::
 
-1. Select **Details** to open the details pane.
+1. Select **Details**.
 
     :::image type="content" source="media\authoring-create-edit-topics\open-details-pane.png" alt-text="Selecting Details will open the topic details pane":::
 
-1. In the **Name** field, enter a name for your topic. You can also optionally add a **Display name** and **Description**.
+1. For **Name**, enter a name for your topic. You can also optionally add a **Display name** and **Description**.
 
     The display name is used when the bot needs to ask the person chatting which topic they're asking about.
 
@@ -113,7 +113,7 @@ These topics fall into two categories:
 
    :::image type="content" source="media/handoff-add-node.png" alt-text="Screenshot of adding a node." border="false":::
    
-1. You can also move or change the paths between a node by clicking and dragging the node anchor, which looks like a small circle on top of the node. When dragging, you'll see a dotted line indicating the original path.
+1. To move or change the paths between a node, click and drag the node anchor, which looks like a small circle on top of the node. When you drag the node anchor, you'll see a dotted line indicating the original path.
 
     :::image type="content" source="media/move-anchor-node.png" alt-text="Screenshot of moving a node's anchor.":::
 
