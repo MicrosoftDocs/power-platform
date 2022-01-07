@@ -31,7 +31,9 @@ The following questions are common security questions and answers for Power Plat
   The [OWASP Top 10](https://owasp.org/www-project-top-ten/) is a standard awareness document for developers and web application security. It represents a broad consensus about the most critical security risks to web applications.
 
   [A01:2021-Broken Access Control](https://owasp.org/Top10/A01_2021-Broken_Access_Control/):
-  - To be updated
+  - Power Platform security model is built on Least Privileged Access (LPA) and enabling customers to build applications with more granular access control.
+  - The platform uses Azure Active Directory's (AAD) [Microsoft Identity Platform](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-overview) for authorization of all API calls with industry-standard OAuth 2.0 protocol
+  - Dataverse which powers the underlying data for Power Platform has a rich security model that can adapt to many business scenarios like Environment-level security, Role-based security, Record and Field level security. 
 
   [A02:2021-Cryptographic Failures](https://owasp.org/Top10/A02_2021-Cryptographic_Failures/):
   - Encryption of data in transit - Power Platform uses TLS to encrypt all HTTP-based network traffic. It uses other mechanisms to encrypt non-HTTP network traffic that contains customer or confidential data (IPSec, SMTP, SQL).
