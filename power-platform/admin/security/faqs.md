@@ -47,8 +47,8 @@ The following questions are common security questions and answers for Power Plat
 
   [A06:2021-Vulnerable and Outdated Components](https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components/):
   - To be updated
-  - Power Platform follows Microsoft's industry leading [SDL](https://www.microsoft.com/en-us/securityengineering/sdl/practices) practices to manage open-source and third-party components. As part of this process, the [Tools and Techniques](https://www.microsoft.com/en-us/securityengineering/opensource/?activetab=security+analysis%3aprimaryr3) involve maintaining complete inventory, performing security analysis, keeping the components up to date, and aligningg them with a tested and tried security incident response process.
-  - [-------------To be updated on why we still have some deprecated components in use - we will have to explain that it can happen due to customer dependencies and can only happen in low risk scenarios-------------]
+  - Power Platform follows Microsoft's industry leading [SDL](https://www.microsoft.com/en-us/securityengineering/sdl/practices) practices to manage open-source and third-party components. As part of this process, the [Tools and Techniques](https://www.microsoft.com/en-us/securityengineering/opensource/?activetab=security+analysis%3aprimaryr3) involve maintaining complete inventory, performing security analysis, keeping the components up to date, and aligning them with a tested and tried security incident response process.
+  - In some rare cases, the process takes time due to external dependencies which is why there will still be some copies of outdated components in some applications. However, as per above process, those will be tracked, and updated once dependencies have been addressed.
 
   [A07:2021-Identification and Authentication Failures](https://owasp.org/Top10/A07_2021-Identification_and_Authentication_Failures/):
   - To be updated
@@ -87,7 +87,6 @@ The following questions are common security questions and answers for Power Plat
   - To be updated
 
   **How does Power Platform protect against Distributed Denial of Service ([DDoS](https://owasp.org/www-project-automated-threats-to-web-applications/assets/oats/EN/OAT-015_Denial_of_Service.html)) attacks?**
-  - To be updated
   - Power Platform is built on top of Microsoft Azure. As such, Power Platform leverages [Azure DDoS Protection](https://docs.microsoft.com/en-us/azure/ddos-protection/ddos-protection-standard-features) to guard against Distributed Denial of Service (DDoS) attacks.
   
   **Does Power Platform detect jailbroken iOS devices and rooted Android devices to help with protecting organizational data?**
