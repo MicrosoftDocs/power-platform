@@ -35,7 +35,7 @@ The following questions are common security questions and answers for Power Plat
 
   [A02:2021-Cryptographic Failures](https://owasp.org/Top10/A02_2021-Cryptographic_Failures/):
   - Encryption of data in transit - Power Platform uses TLS to encrypt all HTTP-based network traffic. It uses other mechanisms to encrypt non-HTTP network traffic that contains customer or confidential data (IPSec, SMTP, SQL).
-  - Using a hardened TLS configuration - Uses only TLS 1.2 or above. Uses ECDHE-based ciphers suites and NIST curves. Uses strong keys. Enables HTTP Strict Transport Security (HSTS). *To be validated* Turns off TLS compression and does not use ticket-bassed session resumption.
+  - Using a hardened TLS configuration - Uses only TLS 1.2 or above. Uses ECDHE-based ciphers suites and NIST curves. Uses strong keys. Enables HTTP Strict Transport Security (HSTS). 
   - Encryption of data at rest - All customer data will be encrypted before being written to non-volatile storage media.
   
 
