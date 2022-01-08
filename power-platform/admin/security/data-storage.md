@@ -1,12 +1,11 @@
 ---
-title: "Data storage in Power Platform | MicrosoftDocs"
-description: Provides information about data storage concepts in Microsoft Dataverse.
+title: "Data storage in Microsoft Power Platform | MicrosoftDocs"
+description: Provides information about data storage concepts in Power Platform.
 ms.date: 01/04/2022
 ms.service: power-platform
 ms.topic: "get-started-article"
 ms.custom: 
   - "admin-security"
-  - "intro-internal"
 author: lancedMicrosoft
 ms.subservice: admin
 ms.author: lanced
@@ -23,12 +22,13 @@ search.app:
 
 ## Data residency
 
-To understand how Power Platform stores data, it’s important to make a distinction between personal data and more general customer data.
+To understand how Microsoft Power Platform stores data, it’s important to make a distinction between personal data and more general customer data.
 
-- Personal data is information about people which contains Personally Identifiable Information (PII) and is subject to the control of GDPR/Schrems II.  
+- Personal data is information about people that contains personally identifiable information and is subject to the control of GDPR/Schrems II.  
+
 - Customer data includes personal data but also includes other customer data like URLs, metadata, and employee authentication information such as DNS names.
 
-Power Platform protects all customer data with care and, unless otherwise indicated in the documentation, stores customer data in an Azure geography that is assigned when an Azure AD tenant signs up for the Power Platform services for the first time. An Azure AD tenant houses the user and application identities, groups, and other relevant information that pertain to an organization and its security.
+Power Platform protects all customer data with care and unless otherwise indicated in the documentation, stores customer data in an Azure geography that is assigned when an Azure AD tenant signs up for the Power Platform services for the first time. An Azure AD tenant houses the user and application identities, groups, and other relevant information that pertain to an organization and its security.
 
 ### Regions
 
@@ -39,7 +39,7 @@ Some organizations have a global presence and may require the Power Platform ser
 
 Only the environment-related metadata is stored in the home tenant. All metadata/data for products within that environment will be stored in the selected target geo environment. Microsoft may replicate data to other regions for data resiliency but will not replicate or move personal data outside the geo. Data replicated to other regions may include non-personal data such as employee authentication information.
 
-The Power Platform services are available in specific Azure geographies as described in the [Microsoft Trust Center](https://www.microsoft.com/trustcenter). For more information about where your data is stored and how it is used, refer to the Microsoft Trust Center. Commitments concerning the location of customer data at rest are specified in the Data Processing Terms of the Microsoft Online Services Terms. Microsoft also provides datacenters for sovereign entities. See [Regions Overview](../regions-overview.md). 
+The Power Platform services are available in specific Azure geographies as described in the [Microsoft Trust Center](https://www.microsoft.com/trustcenter). For more information about where your data is stored and how it is used, see [Microsoft Trust Center](https://www.microsoft.com/trustcenter). Commitments concerning the location of customer data at rest are specified in the Data Processing Terms of the Microsoft Online Services Terms. Microsoft also provides data centers for sovereign entities. See [Regions Overview](../regions-overview.md). 
 
 ## Data handling
 
@@ -50,7 +50,7 @@ This section outlines the Power Platform data handling practices when it comes t
 - Azure SQL Databases
 - Azure Storage (various types)
 
-Unless otherwise stated in documentation, customer data remains in its original data source location (for example, Dataverse, SharePoint, SQL Server) while the Power Platform app is stored in Azure Storage as part of an environment. For mobile scenarios, data is encrypted and stored in SQL Express. In the majority of scenarios, Azure Storage is utilized to persist the data of the Power Platform artifacts, while Azure SQL Databases are used to persist artifact metadata.
+Unless otherwise stated in documentation, customer data remains in its original data source location (for example, Dataverse, SharePoint, SQL Server) while the Power Platform app is stored in Azure Storage as part of an environment. For mobile scenarios, data is encrypted and stored in SQL Express. In most scenarios, Azure Storage is utilized to persist the data of the Power Platform artifacts, while Azure SQL Databases are used to persist artifact metadata.
 
 All data persisted by Power Platform is encrypted by default using Microsoft-managed keys. Customer data stored in Azure SQL Databases is fully encrypted using Azure SQL's Transparent Data Encryption (TDE) technology. Customer data stored in Azure Blob storage is encrypted using Azure Storage Encryption. 
 
@@ -68,7 +68,7 @@ This section outlines advanced security features in Power Platform. Some of the 
 
 ### Service tags
 
-A service tag represents a group of IP address prefixes from a given Azure service. It helps minimize the complexity of frequent updates to network security rules. Customers can use service tags to define network access controls on Network Security Groups or Azure Firewall. Customers can use service tags in place of specific IP addresses when creating security rules. By specifying the service tag name (for example, PowerBI) in the appropriate source or destination (for APIs) field of a rule, customers can allow or deny the traffic for the corresponding service. Microsoft manages the address prefixes encompassed by the service tag and automatically updates the service tag as addresses change.
+A service tag represents a group of IP address prefixes from a given Azure service. It helps minimize the complexity of frequent updates to network security rules. Customers can use service tags to define network access controls on Network Security Groups or Azure Firewall. Customers can use service tags in place of specific IP addresses when creating security rules. By specifying the service tag name (for example, Power BI) in the appropriate source or destination (for APIs) field of a rule, customers can allow or deny the traffic for the corresponding service. Microsoft manages the address prefixes encompassed by the service tag and automatically updates the service tag as addresses change.
 
 ### Data loss prevention
 

@@ -579,7 +579,7 @@
       items:      
       - name: Security and governance
         href: security.yml
-      - name: Overview
+      - name: Overview of Power Platform security
         href: security/overview.md
       - name: Authenticating to Power Platform services
         href: security/authenticate-services.md
@@ -592,7 +592,7 @@
       - name: Configure security for Dataverse
         expanded: true
         items:
-        - name: Overview
+        - name: Dataverse security
           href: wp-security.md
         - name: Security concepts in Dataverse
           href: wp-security-cds.md

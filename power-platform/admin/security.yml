@@ -19,7 +19,7 @@ metadata:
 landingContent:
 
   # Card 
-  - title: Power Platform security overview
+  - title: Get started with security
     linkLists:
        - linkListType: overview
          links:
@@ -30,6 +30,22 @@ landingContent:
           - text: Connecting and authenticating to data sources
             url: ./security/connect-data-sources.md            
 
+  # Card
+  - title: Configure environment security
+    linkLists:
+       - linkListType: how-to-guide
+         links:
+          - text: Control environment creation
+            url: control-environment-creation.md
+          - text: Restrict cross-tenant access
+            url: cross-tenant-restrictions.md
+          - text: Administration mode
+            url: admin-mode.md
+       - linkListType: concept
+         links:
+          - text: Multiple online environments or tenants
+            url: multiple-online-environments-tenants.md
+  
   # Card
   - title: Configure user security
     linkLists:
@@ -50,22 +66,6 @@ landingContent:
           - text: Get started with security roles in Dataverse
             url: /learn/modules/get-started-security-roles/
   
-  # Card
-  - title: Configure environment security
-    linkLists:
-       - linkListType: how-to-guide
-         links:
-          - text: Control environment creation
-            url: control-environment-creation.md
-          - text: Restrict cross-tenant access
-            url: cross-tenant-restrictions.md
-          - text: Administration mode
-            url: admin-mode.md
-       - linkListType: concept
-         links:
-          - text: Multiple online environments or tenants
-            url: multiple-online-environments-tenants.md
-
   # Card
   - title: Data loss prevention policies
     linkLists:
