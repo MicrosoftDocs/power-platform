@@ -28,7 +28,9 @@ landingContent:
           - text: Authenticating to Power Platform services
             url: ./security/authenticate-services.md
           - text: Connecting and authenticating to data sources
-            url: ./security/connect-data-sources.md            
+            url: ./security/connect-data-sources.md 
+          - text: Security and governance considerations
+            url: governance-considerations.md           
 
   # Card
   - title: Configure environment security
