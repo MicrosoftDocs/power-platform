@@ -21,18 +21,6 @@ search.app:
 ---
 # Overview: Security in Microsoft Power Platform
 
-<!-- 
-> **Working notes**
->
-> This is the first page people will read so we should:
->
-> - Start by highlighting how much we care about security and how Power Platform has the best-in-class security
-> - Add info about Power Platform components and talk about the types/levels of security that can be implemented
-> - Explain the architecture for:
->   - Power Platform as a whole
->   - Each Power Platform component
--->
-
 Microsoft Power Platform enables both non-professional and professional developers to quickly and easily create end-to-end solutions. These solutions may include applications, databases, and workflows both for small work groups or the entire organization. Security is critical for these solutions and Power Platform is built to provide industry-leading complete protection.  
 
 As organizations accelerate their transition their work to the cloud, we see a massive increase in remote working, increased customer demand for online services, and increased use of advanced technologies in operations and business decision-making.  Power Platform enables these scenarios with applications on the cloud in a secure way.
@@ -87,7 +75,7 @@ Once a user is authenticated, subsequent client interactions for customer data o
 
 Note that Sovereign Government cluster deployments are an exception to this rule, and for compliance reasons will omit the CDN and instead use a WFE cluster from a compliant region for hosting static content.
 
-### Power Platform back-end clusters (BE)
+### Power Platform back-end clusters
 
 The back-end cluster for a given Power Platform service is the backbone of all the functionality available in the service. It consists of several service endpoints consumed by Web Front End and API clients as well as background working services, databases, caches, and various other components. The back end is available in most Azure regions, and is deployed in new regions as they become available. A single Azure region hosts one or more back-end clusters that allow unlimited horizontal scaling of the Power Platform services once the vertical and horizontal scaling limits of a single cluster are exhausted.
 
@@ -104,7 +92,7 @@ Tenant metadata and data are stored within cluster limits, except for data repli
 
 ### Power Platform Premium infrastructure
 
-Power Platform Premium offers access to a set of connectors as a premium offering.  The Power Platform authors are not restricted in the use of these connectors but users of an app are.  These connectors include, for instance, Dataverse and Microsoft SQL Azure.  End users of a Power App must have the correct license to access these premium connectors. The Power Platform Back-end service determines if a user has access to premium connectors or not.
+Power Platform Premium offers access to a set of connectors as a premium offering. The Power Platform authors are not restricted in the use of these connectors but users of an app are.  These connectors include, for instance, Dataverse and Microsoft SQL Azure. End users of an app created using Power Apps must have the correct license to access these premium connectors. The Power Platform back-end service determines if a user has access to premium connectors or not.
 
 ### Mobile
 
@@ -141,3 +129,9 @@ Mobile cached data is deleted when the app is removed, when the user signs out o
 
 The Power Platform Mobile services do not access other application folders or files on the device.
 
+### Related topics
+
+[Authenticating to Power Platform services](authenticate-services.md)<br/>
+[Data storage in Power Platform](data-storage.md)<br/>
+[Connecting and authenticating to data sources](connect-data-sources.md)<br/>
+[Security in Microsoft Dataverse](../wp-security.md)
