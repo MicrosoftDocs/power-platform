@@ -50,7 +50,7 @@ The following questions are common security questions and answers for Power Plat
   [A04:2021–Insecure Design](https://owasp.org/Top10/A04_2021-Insecure_Design/):
   - Power Platform has been built on a culture and methodology of Secure Design which gets constantly reinforced through Microsoft's industry leading [SDL](https://www.microsoft.com/securityengineering/sdl/practices) practices of [Threat Modeling](https://www.microsoft.com/securityengineering/sdl/threatmodeling).
   - The robust Threat Modeling review process ensures that Power Platform identifies the threats during design phase, tracks them, mitigates them, and validates to make sure that the threats have been mitigated.
-  - The process also accounts for all new changes to the services that are already live, through regular reviews so that this is a continuous process that helps to address most common insecure design issues by relying on the [STRIDE](https://docs.microsoft.com/azure/security/develop/threat-modeling-tool-threats#stride-model) model.
+  - The process also accounts for all new changes to the services that are already live, through regular reviews so that this is a continuous process that helps to address most common insecure design issues by relying on the [STRIDE](/azure/security/develop/threat-modeling-tool-threats#stride-model) model.
   - Microsoft's SDL is equivalent of the OWASP Software Assurance Maturity Model ([SAMM](https://owaspsamm.org/)) with both of them built on the premise that Secure Design is integral to web application security.
 
   [A05:2021-Security Misconfiguration](https://owasp.org/Top10/A05_2021-Security_Misconfiguration/):
@@ -65,7 +65,7 @@ The following questions are common security questions and answers for Power Plat
   [A07:2021-Identification and Authentication Failures](https://owasp.org/Top10/A07_2021-Identification_and_Authentication_Failures/):
   - Power Platform is built on and depends on Azure Active Directory (Azure AD) for both identification and authentication.
   - Azure AD helps Power Platform to enable multiple [secure features](https://azure.microsoft.com/services/active-directory/#features) such as single sign on (SSO), multifactor authentication, and single platform to engage with both internal and external users more securely.
-  - Together with Power Platform's upcoming implementation of Azure AD's Continuous Access Evaluation ([CAE](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-continuous-access-evaluation)), the experience will be even more secure, reliable, and performant for end users.
+  - Together with Power Platform's upcoming implementation of Azure AD's Continuous Access Evaluation ([CAE](/azure/active-directory/conditional-access/concept-continuous-access-evaluation)), the experience will be even more secure, reliable, and performant for end users.
 
   [A08:2021-Software and Data Integrity Failures](https://owasp.org/Top10/A08_2021-Software_and_Data_Integrity_Failures/):
   - Power Platform's Component Governance process ensures that software integrity is maintained by enforcing that package source files are securely configured.
