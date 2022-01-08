@@ -5,7 +5,7 @@ services: powerapps
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/06/2021
+ms.date: 12/13/2021
 ms.subservice: admin
 author: ChrisGarty
 ms.author: cgarty
@@ -37,6 +37,7 @@ About **system backups**:
 - You must restore an environment to the same region in which it was backed up.
 - When an environment is restored onto itself, audit logs aren't deleted. For example, when an environment is restored onto itself to a past time t1, full audit data for the environment will be available, including any audit logs that were generated after t1.
 - The target environment will be listed in the **Select environment to overwrite** drop-down. If you do not see an environment, note that the target environment must be in the same geo (geographical region) as the source environment. 
+- Only Power Apps and Power Automate flows in a Dataverse solution participate in backup and restore operations.  
 
   
 ### Restore a system backup  

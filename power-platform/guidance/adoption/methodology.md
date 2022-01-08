@@ -21,6 +21,9 @@ search.app:
 
 Microsoft Power Platform adoption best practices provides proven guidance that's designed to help you create and implement the business and technology strategies necessary for your organization to succeed with Microsoft Power Platform. This guidance provides best practices, documentation, and tools that architects, IT pros, and business decision makers need to successfully achieve short-term and long-term objectives.
 
+> [!TIP]
+> In addition to the material found in the section of the documentation, a great resource for your adoption journey is [Microsoft Power Platform Adoption](https://adoption.microsoft.com/powerplatform) website, with links to resources and workbooks that guide you step by step through your Power Platform adoption.
+
 By using Microsoft Power Platform adoption best practices, organizations can better align their business and technical strategies to ensure success.
 
 These Microsoft Power Platform adoption best practices will help establish "digital guardrails" for the platform within an enterprise. That way, professional and citizen developers can build solutions with the confidence that what they build will be managed, secured, and otherwise looked after in a compliant way, following best practices. A key objective is creating an environment—both technically and culturally speaking—in which your users can thrive.

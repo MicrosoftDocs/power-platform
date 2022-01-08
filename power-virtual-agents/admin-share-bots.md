@@ -1,8 +1,8 @@
 ---
-title: "Share and collaborate on chatbots with other users"
+title: "Share and collaborate on chatbots with other users (contains video)"
 description: "Share Power Virtual Agents chatbots with other users, assign security roles, and work together."
 keywords: "Administration, share, multi-author, PVA"
-ms.date: 10/22/2021
+ms.date: 12/10/2021
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -27,19 +27,19 @@ Share your bot with other users so they can chat with it or collaborate together
 Bot owners and managers from [sharing a bot for collaboration](#share-a-bot-for-collaboration) always have permission to chat with a bot. You can share bots with additional users to only chat with it.
 
 ### Prerequisites
-- The bot's [end user authentication setting](configuration-end-user-authentication.md) must be configured to **Only for Teams** or **Manual**, with *Azure Active Directory** or **Azure Active Directory V2** as the provider. **Required user sign-in** must be enabled to manage who can chat with the bot in your organization. 
+- The bot's [end user authentication setting](configuration-end-user-authentication.md) must be configured to **Only for Teams** or **Manual**, with **Azure Active Directory** or **Azure Active Directory V2** as the provider. **Required user sign-in** must be enabled to manage who can chat with the bot in your organization. 
 
 ### Share bot with security groups
 You can share your bot with security groups so their members can chat with the bot.
 
 1. Select **Share** at the top of the bot's home page.
 
-  :::image type="content" source="media/sharing-security-groups/sharing-home.png" alt-text="Sharing UI entry point in bot homepage.":::
+  :::image type="content" source="media/sharing-security-groups/sharing-home.png" alt-text="Sharing UI entry point in bot homepage." border="false":::
 
 2. Specify the security group name that you would like to share the bot with.
 
   >[!NOTE]
-  >You can only share a bot with security groups. You cannot share with individual users directly. You can manage individual user access by adding or removing users from the security group.
+  >You can only share a bot with security groups. You cannot share with Microsoft 365 groups or individual users directly. You can manage individual user access by adding or removing users from the security group.
 
   :::image type="content" source="media/sharing-security-groups/sharing-bot-specify-security-group.PNG" alt-text="Specify security group in Sharing UI":::
 
@@ -108,7 +108,7 @@ Everyone you share the bot with can view, edit, configure, share, and publish th
 
 1. To share a bot, sign in to Power Virtual Agents and select **Share** at the top of the bot's home page.
 
-    ![Power Virtual Agents bot homepage with the Share button highlighted.](media/sharing-security-groups/sharing-home.png)
+    :::image type="content" source="media/sharing-security-groups/sharing-home.png" alt-text="Power Virtual Agents bot homepage with the Share button highlighted." border="false":::
 
 2. Specify the name or email address of each user that you would like to share the bot with.  
 
@@ -117,12 +117,12 @@ Everyone you share the bot with can view, edit, configure, share, and publish th
     >You also can't share with users or groups outside of your organization.  
 
 
-    ![Screenshot showing name input in the share window.](media/sharing-input-invitee.png)
+    :::image type="content" source="media/sharing-input-invitee.png" alt-text="Screenshot showing name input in the share window." border="false":::
 
 3. Review the user's permissions.
  
 
-    ![Screenshot showing share window with user permissions.](media/sharing-view-permission.png)
+    :::image type="content" source="media/sharing-view-permission.png" alt-text="Screenshot showing share window with user permissions." border="false":::
 
 4. If you want to let users know you've shared the bot with them, select the **Send an email invitation to new users** check box.
 
@@ -136,7 +136,7 @@ Everyone you share the bot with can view, edit, configure, share, and publish th
 
 Users in the environment must have the **Environment maker** security role before a bot can be shared with them. 
 
-![User does not have sufficient permissions.](media/sharing-insufficient-permission.png)
+:::image type="content" source="media/sharing-insufficient-permission.png" alt-text="User does not have sufficient permissions." border="false":::
 
 **System administrators** of the environment need to assign the **Environment maker** security role to the user before you share the bot. If you're a **System administrator**, you can [assign the **Environment maker** role when you share the bot](#assign-environment-security-roles).
 
@@ -153,11 +153,11 @@ To let other users edit or add flows you'll need to share them in Power Automate
 
 1. Select **View flow details** to go to the flow's details page in Power Automate.
  
-    ![Highlight of the view flow details on a flow in a topic.](media/sharing-view-flow-details.png)
+    :::image type="content" source="media/sharing-view-flow-details.png" alt-text="Highlight of the view flow details on a flow in a topic." border="false":::
 
 2. Select **Edit** in the **Owners** section.
  
-    ![Select the Edit link.](media/sharing-flow-owners.png)
+    :::image type="content" source="media/sharing-flow-owners.png" alt-text="Select the Edit link." border="false":::
 
 3. Enter the name or email address of the user you want to give editing permissions to.
 
@@ -170,7 +170,7 @@ You can stop sharing a bot with a user, and any shared user can stop the bot fro
 
 2. Select **X** next to the users that you want to stop sharing the bot with.
  
-    ![Remove bot access 'X'.](media/sharing-remove-user.png) 
+    :::image type="content" source="media/sharing-remove-user.png" alt-text="Remove bot access 'X'." border="false"::: 
 
 3. Select **Share** to stop sharing the bot with the user.
 
@@ -193,7 +193,7 @@ You can assign the **Environment maker** security role when sharing a bot with a
 
 When [sharing the bot](#share-a-bot), if the specified user does not have sufficient permissions to use Power Virtual Agents in the environment, you'll be notified that **Environment maker** security role will be assigned to the user so they can use the bot.
  
-![Share panel with permission notice bubble.](media/sharing-input-invitee-no-permission.png)
+:::image type="content" source="media/sharing-input-invitee-no-permission.png" alt-text="Share panel with permission notice bubble." border="false":::
 
 
 
@@ -209,7 +209,7 @@ Based on the content and target audience of the bot, you may want to give transc
 
 When [sharing the bot](#share-a-bot), you can assign the **Bot transcript viewer** role by selecting the check box.
  
-![Share panel with Bot transcript viewer role selected.](media/sharing-assign-transcript-viewer.png)
+:::image type="content" source="media/sharing-assign-transcript-viewer.png" alt-text="Share panel with Bot transcript viewer role selected." border="false":::
 
  
 ### Manage security roles
@@ -226,18 +226,18 @@ In the **Topics** list, you can see who's working on a topic under the **Current
 
 This can help prevent conflicts if multiple people are working on the same topic.
 
-![Screenshot showing the Power Virtual Agents list of topics with the Currently editing column highlighted.](media/sharing-multi-authors.png)
+:::image type="content" source="media/sharing-multi-authors.png" alt-text="Screenshot showing the Power Virtual Agents list of topics with the Currently editing column highlighted.":::
 
 >[!NOTE]
 >The list of authors in the **Currently editing** column is only refreshed when the page is loaded.
 
 A topic's **Properties** page also shows all the people currently editing a topic, as well as the last time someone saved.
 
-![Screenshot of a topic's details page on the properties pane with the Modified by section on the right highlighted.](media/sharing-multi-details.png)
+:::image type="content" source="media/sharing-multi-details.png" alt-text="Screenshot of a topic's details page on the properties pane with the Modified by section on the right highlighted.":::
 
 A list of who's editing the page also appears as user icons on the top of the authoring canvas when you've opened a topic for editing.
 
-![Screenshot of a topic being edited with user profile pictures appearing on the top menu bar.](media/sharing-multi-editing.png)
+:::image type="content" source="media/sharing-multi-editing.png" alt-text="Screenshot of a topic being edited with user profile pictures appearing on the top menu bar.":::
 
 If an author does not make any changes to the topic, or disconnects their computer or closes the browser window, they are considered to have abandoned the topic. After 30 minutes of inactivity the user will not be identified as editing the topic.
 
@@ -245,7 +245,7 @@ Occasionally, multiple people might make changes to a topic and attempt to save 
 
 Power Virtual Agents will detect this and prevent you from overwriting your coworker by prompting you with an option - you can reload the content with the latest changes (discarding your work), or you can save a copy of the topic (keeping your changes in a new, duplicate copy of the topic). 
 
-![Screenshot showing a prompt that says Updated content available and gives you options to discard your changes or save a copy.](media/sharing-multi-conflict.png)
+:::image type="content" source="media/sharing-multi-conflict.png" alt-text="Screenshot showing a prompt that says Updated content available and gives you options to discard your changes or save a copy." border="false":::
 
 If you save your changes to a new topic, you can then review your coworker's changes and merge the two topics, deleting the copy of the topic once you've finished.
 

@@ -1,7 +1,7 @@
 - name: Power Platform guidance
   href: index.yml
   items: 
-  - name: Adoption best practices
+  - name: Power Platform Adoption best practices
     href: adoption/methodology.md
     items: 
     - name: Adoption maturity model
@@ -89,51 +89,63 @@
             href: adoption/in-a-day.md
           - name: Solution envisioning workshops
             href: adoption/solution-envisioning.md  
-  - name: Center of Excellence (CoE) Kit
+  - name: Power Platform Center of Excellence (CoE) Kit
     href: coe/starter-kit.md
     items: 
     - name: Overview
       href: coe/overview.md
     - name: Establishing a Center of Excellence
       href: coe/motivation.md   
-    - name: Set up the CoE Starter Kit    
+    - name: Set up the CoE starter kit    
       items: 
       - name: Get started with setup
         href: coe/setup.md
-      - name: Set up core components
+      - name: Set up inventory components
         href: coe/setup-core-components.md  
-      - name: Set up governance components
-        href: coe/setup-governance-components.md  
-      - name: Set up nurture components
-        href: coe/setup-nurture-components.md
+      - name: Set up environment request management
+        href: coe/setup-environment-components.md 
+      - name: Set up other core components
+        href: coe/setup-othercore-components.md
+      - name: Get started with setting up governance components
+        href: coe/before-setup-gov.md  
+      - name: Set up compliance processes
+        href: coe/setup-governance-components.md 
+      - name: Set up archival processes
+        href: coe/setup-archive-components.md 
+      - name: Set up Microsoft Teams governance processes
+        href: coe/setup-teams-components.md  
+      - name: Set up cleanup for orphaned resources
+        href: coe/setup-orphan-components.md 
       - name: Collect audit log data
         href: coe/setup-auditlog.md
       - name: Set up Power BI report
         href: coe/setup-powerbi.md
-      - name: Set up theming components
-        href: coe/setup-theming.md
+      - name: Set up nurture components
+        href: coe/setup-nurture-components.md
       - name: Set up Innovation Backlog components
         href: coe/setup-innovationbacklog.md
+      - name: Set up theming components
+        href: coe/setup-theming.md
       - name: Set up ALM Accelerator for Makers components
         href: coe/setup-almaccelerator.md
-    - name: What's in the CoE Starter Kit
+      - name: What's next - after setting up the CoE Starter Kit
+        href: coe/after-setup.md
+    - name: What's in the CoE starter kit
       items:  
-      - name: CoE Starter Kit modules
+      - name: CoE starter kit modules
         href: coe/starter-kit-explained.md  
       - name: Components overview     
         items:  
         - name: Core components
           href: coe/core-components.md
         - name: Governance components
-          href: coe/governance-components.md       
+          href: coe/governance-components.md
         - name: Nurture components
           href: coe/nurture-components.md  
         - name: Theming components
           href: coe/theming-components.md   
         - name: Innovation Backlog components
           href: coe/innovationbacklog-components.md   
-        - name: Extend and modify components
-          href: coe/modify-components.md
     - name: How to use the CoE Starter Kit
       items:
         - name: CoE Dashboard Explained
@@ -156,12 +168,28 @@
           href: coe/almaccelerator-components.md
         - name: Environment management
           href: coe/env-mgmt.md
+    - name: FAQ and Tips
+      href: coe/faq.md
     - name: Limitations
       href: coe/limitations.md
     - name: Release notes
       href: coe/release-notes.md
     - name: Feedback and support
       href: coe/feedback-support.md
+  - name: Automation adoption best practices
+    items:
+    - name: Overview
+      href: automation-coe/overview.md
+    - name: Strategy
+      href: automation-coe/strategy.md
+    - name: Holistic enterprise automation techniques
+      href: automation-coe/heat.md
+    - name: Automation admin and governance
+      href: automation-coe/automation-admin-gov.md
+    - name: Automation CoE starter kit (preview)
+      href: automation-coe/automation-coe-starter-kit.md
+    - name: Manage Power Automate for desktop on Windows
+      href: automation-coe/manage-pad-on-windows.md      
   - name: Real-world architecture examples
     items: 
     - name: Overview
@@ -180,7 +208,7 @@
       href: architecture/real-world-examples/sql-gateway-canvas.md
     - name: Using Power Apps component framework with canvas apps
       href: architecture/real-world-examples/pcf-canvas-components.md
-  - name: Use ExpressRoute
+  - name: ExpressRoute and Power Platform
     items: 
     - name: Overview     
       href: expressroute/overview.md

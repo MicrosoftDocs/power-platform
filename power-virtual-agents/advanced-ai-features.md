@@ -1,5 +1,5 @@
 ---
-title: "Advanced AI features"
+title: "Advanced AI features (contains video)"
 description: "Use advanced AI features in Power Virtual Agents to improve how your bots interact with your bot users."
 keywords: "PVA, AI, advanced, topic intent, intent triggering"
 ms.date: 11/01/2021
@@ -26,7 +26,7 @@ Select the version of Power Virtual Agents you're using here:
 
 ## AI models in Power Virtual Agents - background
 
-![In Power Virtual Agents conversational AI is infused in each step of the bot building journey wrapped in an experience friendly to business users.](media/advanced-ai-features/nlu-models.png)
+:::image type="content" source="media/advanced-ai-features/nlu-models.png" alt-text="In Power Virtual Agents conversational AI is infused in each step of the bot building journey wrapped in an experience friendly to business users.":::
 
 Power Virtual Agents hosts multiple AI models and AI capabilities on a single service, the core of which is a transformer-based natural language understanding (NLU) model.
 
@@ -39,7 +39,7 @@ Shorter trigger phrases are better, and you should aim for two to 10 words. You 
 
 These tips for creating trigger phrases are described in the tooltip associated with the **Trigger phrases** section on a topic's **Details** page.
 
-![Screenshot of the trigger phrase section in the topic details page.](media/advanced-ai-features/trigger-phrase-tooltip.png)
+:::image type="content" source="media/advanced-ai-features/trigger-phrase-tooltip.png" alt-text="Screenshot of the trigger phrase section in the topic details page.":::
 
 >[!NOTE]
 >The AI capabilities listed in this topic are in preview, available to bots created with English as the set language.
@@ -115,7 +115,7 @@ On the left side of the image, a bot user asks "I'd like to purchase somethign",
 The next time someone asks the same question, the bot doesn't ask for clarification – it knows from previous interactions what the bot user is likely asking to buy items, so it goes straight into the purchasing topic, replying to the question "I'd like to purchase somethign" with "I am happy to help you place your order. To what state will you be shipping?".
 In this example, it also understands the misspelling of "somethign" to mean "something", so it's able to carry over the improved intent triggering even though the bot user's question is spelled differently.
 
-![Screenshot of a bot conversation showing the improvements to auto triggering.](media/advanced-ai-features/triggering-improvements.png)
+:::image type="content" source="media/advanced-ai-features/triggering-improvements.png" alt-text="Screenshot of a bot conversation showing the improvements to auto triggering.":::
 
 ## Conversation personalization (preview)
 
@@ -123,7 +123,7 @@ In this example, it also understands the misspelling of "somethign" to mean "som
 
 Specifically, with this feature enabled, when the bot asks questions such as those in the following table, the corresponding user information will be pulled from Microsoft Graph and Azure AD (for authenticated users) and provided as prompts for the user to choose as an option.
 
-![Screenshot of the triggering improvements highlighted as part of topic authoring.](media/advanced-ai-features/improvements-authoring.png)
+:::image type="content" source="media/advanced-ai-features/improvements-authoring.png" alt-text="Screenshot of the triggering improvements highlighted as part of topic authoring.":::
 
 | Sample bot questions | User property automatically filled from Microsoft Graph or Azure AD |
 |-------------------------|-------------------------|

@@ -20,7 +20,7 @@ metadata:
 landingContent:
 
   # Card 
-  - title: Adoption best practices
+  - title: Power Platform Adoption best practices
     linkLists:
        - linkListType: overview
          links:
@@ -34,7 +34,7 @@ landingContent:
             url: ./adoption/nurture-best-practices.md
         
   # Card
-  - title: Center of Excellence (CoE) Kit
+  - title: Power Platform Center of Excellence (CoE) Kit
     linkLists:
        - linkListType: overview
          links:
@@ -48,6 +48,24 @@ landingContent:
             url: ./coe/setup.md
           - text: How to use the CoE Starter Kit?
             url: ./coe/power-bi.md
+
+  # Card
+  - title: Automation adoption best practices
+    linkLists:
+       - linkListType: overview
+         links:
+          - text: Overview
+            url: ./automation-coe/overview.md
+          - text: Holistic Enterprise Automation Techniques (HEAT)
+            url: ./automation-coe/heat.md
+       - linkListType: how-to-guide
+         links:
+          - text: Automation admin and governance
+            url: ./automation-coe/automation-admin-gov.md
+          - text: Automation CoE Starter Kit
+            url: ./automation-coe/automation-coe-starter-kit.md
+          - text: Manage Power Automate for desktop on Windows
+            url: ./automation-coe/manage-pad-on-windows.md  
 
   # Card
   - title: Architecture

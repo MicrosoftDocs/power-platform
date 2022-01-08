@@ -40,7 +40,7 @@ After you set a bot variable, it will be available to all topics.
 
 When you select the `{x}` button in a message node or question node when you're composing a bot message, you'll see that the bot variable is available. Variables are sorted in alphabetical order, so you'll find that all bot variables are grouped together in the variable menu because they all begin with `bot.`.
 
-![Screenshot showing selection of the x variable icon to display a list of variables.](media/bot-variable-message.png "Screenshot showing selection of the x variable icon to display a list of variables")
+:::image type="content" source="media/bot-variable-message.png" alt-text="Screenshot showing selection of the x variable icon to display a list of variables." border="false":::
 
 When you use a condition node, a flow action node, or a skill node, you'll also see bot variables available there. 
  
@@ -194,7 +194,7 @@ When removing a bot variable used in other topics, the references to that variab
 
 You'll receive a warning about deleting the bot variable before you can confirm the operation.
 
-![The bot variable delete message indicates that references to that variable will be labeled as unknown.](media/bot-variable-delete.png "The bot variable delete message indicates that references to that variable will be labeled as unknown")
+:::image type="content" source="media/bot-variable-delete.png" alt-text="The bot variable delete message indicates that references to that variable will be labeled as unknown." border="false":::
   
 Nodes that contain references to the deleted bot variable will tell you they contain an unknown variable. 
 
