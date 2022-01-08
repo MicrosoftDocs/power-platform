@@ -1,12 +1,11 @@
 ---
 title: "Power Platform security FAQs | MicrosoftDocs"
-description: Provides information about the security concepts in Microsoft Dataverse.
+description: Provides common security questions and answers for Power Platform security.
 ms.date: 01/10/2022
 ms.service: power-platform
 ms.topic: ""
 ms.custom: 
   - "admin-security"
-  - "intro-internal"
 author: RajSesMicrosoft
 ms.subservice: admin
 ms.author: rajses
@@ -24,7 +23,7 @@ search.app:
 The following questions are common security questions and answers for Power Platform security. These are categorized into two sections.
   - The first section, [OWASP top 10 risks: Mitigations in Power Platform](#owasp-top-10-risks-mitigations-in-power-platform) covers the top 10 Open Web Application Security Project® (OWASP) risks and how Power Platform has been designed to help mitigate those risks.
   
-  - The second section, [Common Security questions from customers](#common-security-questions-from-customers), covers some of the common security questions that have been raised by customers in the past. These are organized based on when they were added to this white paper to facilitate your ability to quickly find new questions and answers when this paper is updated. The newest questions are added to the end of this list.
+  - The second section, [Common security questions from customers](#common-security-questions-from-customers), covers some of the common security questions that have been raised by customers in the past. These questions are organized based on when they were added to this white paper to facilitate your ability to quickly find new questions and answers when this paper is updated. The newest questions are added to the end of this list.
 
 ## OWASP top 10 risks: Mitigations in Power Platform
   The Open Web Application Security Project® ([OWASP](https://owasp.org/about/)) is a nonprofit foundation that works to improve the security of software. Through community-led open-source software projects, hundreds of local chapters worldwide, tens of thousands of members, and leading educational and training conferences, the OWASP Foundation is the source for developers and technologists to secure the web.
@@ -49,23 +48,23 @@ The following questions are common security questions and answers for Power Plat
   - To be updated.
 
   [A04:2021–Insecure Design](https://owasp.org/Top10/A04_2021-Insecure_Design/):
-  - Power Platform has been built on a culture and methodology of Secure Design which gets constantly reinforced through Microsoft's industry leading [SDL](https://www.microsoft.com/securityengineering/sdl/practices) practices of [Threat Modeling](https://www.microsoft.com/securityengineering/sdl/threatmodeling).
+  - Power Platform has been built on a culture and methodology of secure design, which gets constantly reinforced through Microsoft's industry leading [SDL](https://www.microsoft.com/securityengineering/sdl/practices) practices of [Threat Modeling](https://www.microsoft.com/securityengineering/sdl/threatmodeling).
   - The robust Threat Modeling review process ensures that Power Platform identifies the threats during design phase, tracks them, mitigates them, and validates to make sure that the threats have been mitigated.
   - The process also accounts for all new changes to the services that are already live, through regular reviews so that this is a continuous process that helps to address most common insecure design issues by relying on the [STRIDE](/azure/security/develop/threat-modeling-tool-threats#stride-model) model.
   - Microsoft's SDL is equivalent of the OWASP Software Assurance Maturity Model ([SAMM](https://owaspsamm.org/)) with both of them built on the premise that Secure Design is integral to web application security.
 
   [A05:2021-Security Misconfiguration](https://owasp.org/Top10/A05_2021-Security_Misconfiguration/):
   - One of the foundations of the Power Platform design principles is "Default Deny" where customers need to review, and opt in for new features and configurations.
-  - Any misconfigurations during the build time will be caught through integrated security analysis by leveraging [Secure Development Tools](https://marketplace.visualstudio.com/items?itemName=securedevelopmentteam.vss-secure-development-tools)
-  - In addition, Power Platform goes through Dynamic Analysis Security Testing ([DAST](https://www.microsoft.com/securityengineering/sdl/practices#practice10)) by leveraging an internal service that is built on OWASP Top 10 risks.
+  - Any misconfigurations during the build time will be caught through integrated security analysis by using [Secure Development Tools](https://marketplace.visualstudio.com/items?itemName=securedevelopmentteam.vss-secure-development-tools)
+  - In addition, Power Platform goes through Dynamic Analysis Security Testing ([DAST](https://www.microsoft.com/securityengineering/sdl/practices#practice10)) by using an internal service that is built on OWASP Top 10 risks.
 
   [A06:2021-Vulnerable and Outdated Components](https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components/):
   - Power Platform follows Microsoft's industry leading [SDL](https://www.microsoft.com/securityengineering/sdl/practices) practices to manage open-source and third-party components. As part of this process, the [Tools and Techniques](https://www.microsoft.com/securityengineering/opensource/?activetab=security+analysis%3aprimaryr3) involve maintaining complete inventory, performing security analysis, keeping the components up to date, and aligning them with a tested and tried security incident response process.
-  - In some rare cases, the process takes time due to external dependencies which is why there will still be some copies of outdated components in some applications. However, as per the above process, those will be tracked and updated once dependencies have been addressed.
+  - In some rare cases, the process takes time due to external dependencies that is why there will still be some copies of outdated components in some applications. However, as per the above process, those will be tracked and updated once dependencies have been addressed.
 
   [A07:2021-Identification and Authentication Failures](https://owasp.org/Top10/A07_2021-Identification_and_Authentication_Failures/):
   - Power Platform is built on and depends on Azure Active Directory (Azure AD) for both identification and authentication.
-  - Azure AD helps Power Platform to enable multiple [secure features](https://azure.microsoft.com/services/active-directory/#features) such as single sign on (SSO), multifactor authentication, and single platform to engage with both internal and external users more securely.
+  - Azure AD helps Power Platform to enable multiple [secure features](https://azure.microsoft.com/services/active-directory/#features) such as single sign-on (SSO), multi-factor authentication, and single platform to engage with both internal and external users more securely.
   - Together with Power Platform's upcoming implementation of Azure AD's Continuous Access Evaluation ([CAE](/azure/active-directory/conditional-access/concept-continuous-access-evaluation)), the experience will be even more secure, reliable, and performant for end users.
 
   [A08:2021-Software and Data Integrity Failures](https://owasp.org/Top10/A08_2021-Software_and_Data_Integrity_Failures/):
@@ -81,11 +80,11 @@ The following questions are common security questions and answers for Power Plat
   - To be updated.
   <!--  *Focus on Azure Security capabilities* -->
 
-  ## Common Security questions from customers
-  The below are some of the common security questions that customers have raised in the past. We are capturing them here along with useful information that helps to answer their questions.
+## Common security questions from customers
+The below are some of the common security questions that customers have raised in the past. We are capturing them here along with useful information that helps to answer their questions.
 
   ### How does Power Platform help protect against Clickjacking risks?
-  - [Clickjacking](https://owasp.org/www-community/attacks/Clickjacking) is a significant threat for sign-in pages as it can allow them to steal credentials. In Power Platform, all sign-in pages are not iframeable which significantly reduces the risk of clickjacking.
+  - [Clickjacking](https://owasp.org/www-community/attacks/Clickjacking) is a significant threat for sign-in pages as it can allow them to steal credentials. In Power Platform, all sign-in pages are not iframeable, which significantly reduces the risk of clickjacking.
   - In addition, Content Security Policy (CSP) policies can be used to restrict embedding to trusted domains with org settings.
   
   ### How does Power Platform help protect against cross-site scripting ([XSS](https://owasp.org/www-community/attacks/Clickjacking)) risks?
@@ -96,7 +95,7 @@ The following questions are common security questions and answers for Power Plat
   
   ### Does Power Platform support Content Security Policy ([CSP](https://owasp.org/www-community/controls/Content_Security_Policy))?
   - There are various directives that can be configured as part of CSP. Currently only the [frame-ancestors](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/frame-ancestors) directive is supported by UCI/CRM as documented in the [Developer Reference](/powerapps/developer/data-platform/reference/entities/organization#BKMK_ContentSecurityPolicyConfiguration). 
-  - Supporting CSP is an extremely important priority for Power Platform. There will be more updates coming in a future roadmap regarding CSP support like:
+  - Supporting CSP is an important priority for Power Platform. There will be more updates coming in a future roadmap regarding CSP support like:
     - Full blog post on how to implement CSP for Unified Interface
     - Supporting all available CSP directives
     - Same CSP support for Canvas applications
@@ -112,10 +111,10 @@ The following questions are common security questions and answers for Power Plat
   - Microsoft weighs the relative risk and customer disruption in choosing the support of cipher suites. Since these cipher suites are not broken yet, to ensure consistency across all services and products, and also to support all customer configurations, these were enabled. However, these are at the bottom of the priority list. These will be deprecated at the right time; Microsoft's Crypto Board makes continuous assessment time-to-time.
 
   ### How does Power Platform protect against Distributed Denial of Service DDoS attacks?
-  - Power Platform is built on top of Microsoft Azure. As such, Power Platform leverages [Azure DDoS Protection](/azure/ddos-protection/ddos-protection-standard-features) to guard against Distributed Denial of Service ([DDoS](https://owasp.org/www-project-automated-threats-to-web-applications/assets/oats/EN/OAT-015_Denial_of_Service.html)) attacks.
+  - Power Platform is built on top of Microsoft Azure. As such, Power Platform uses [Azure DDoS Protection](/azure/ddos-protection/ddos-protection-standard-features) to guard against Distributed Denial of Service ([DDoS](https://owasp.org/www-project-automated-threats-to-web-applications/assets/oats/EN/OAT-015_Denial_of_Service.html)) attacks.
   
   ### Does Power Platform detect jailbroken iOS devices and rooted Android devices to help with protecting organizational data?
-  - The recommendation is to use Microsoft Intune, a Mobile Device Management (MDM) solution which can help protect organizational data by requiring users and devices to meet some requirements. For more information, see Intune's [Compliance policy settings](/mem/intune/protect/device-compliance-get-started#compliance-policy-settings).
+  - The recommendation is to use Microsoft Intune, a Mobile Device Management (MDM) solution, which can help protect organizational data by requiring users and devices to meet some requirements. For more information, see Intune's [Compliance policy settings](/mem/intune/protect/device-compliance-get-started#compliance-policy-settings).
 
   ### Why are the session cookies scoped to the parent domain?
   - This is to allow Auth across orgs. The subdomains aren't used as security boundaries and also don't host customer content.
@@ -126,7 +125,7 @@ The following questions are common security questions and answers for Power Plat
 
   ### The application allows the same user to access from more than one machine/browser at the same time. How can we prevent that?
   - Accessing the application from more than one machine/browser at the same time is a convenience. However, the access needs to be continuously evaluated to ensure that the access is from legitimate sources and still valid.
-  - Azure Active Directory (Azure AD) has rolled out the Continuous Access Evaluation ([CAE](/azure/active-directory/conditional-access/concept-continuous-access-evaluation)) feature which will be coming to Power Platform to help with the above.
+  - Azure Active Directory (Azure AD) has rolled out the Continuous Access Evaluation ([CAE](/azure/active-directory/conditional-access/concept-continuous-access-evaluation)) feature, which will be coming to Power Platform to help with the above.
 
 
 ### See also
