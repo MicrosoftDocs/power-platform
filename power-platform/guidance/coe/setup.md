@@ -74,7 +74,7 @@ The CoE Starter Kit can be used in both Production environments and Dataverse fo
 | Data capacity | 2GB | Unlimited through capacity purchases |
 | Collecting telemetry information from the Audit Log | No | Yes
 | Power Platform Admin View to view and filter resources | Canvas App | Model Driven App |
-| Power BI Dashboard | Yes | Ye, using the [Dataverse](/powerapps/maker/data-platform/data-platform-powerbi-connector#connect-to-dataverse-using-the-connector) connector only |
+| Power BI Dashboard | Yes | Yes, using the [Dataverse](/powerapps/maker/data-platform/data-platform-powerbi-connector#connect-to-dataverse-using-the-connector) connector only |
 | Data Permissions | Team members have full access, and [pre-built table permissions](/powerapps/teams/set-perms-and-share#assign-table-permissions) can be applied to colleagues with access | Granular permissions through [Dataverse security roles](/security-roles-privileges) that can be tailored to your requirements |
 | Sharing apps | Share with colleagues who have a Microsoft 365 license in Teams | Sharing requires users to have a Power Apps Per User or Per App License |
 | Accessing apps | Apps can only be accessed within Microsoft Teams | Apps can be viewed in the browser or mobile app |
