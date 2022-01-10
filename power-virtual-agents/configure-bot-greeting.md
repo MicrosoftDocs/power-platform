@@ -193,17 +193,17 @@ We recommend you modify the system greeting topic so that you don't have to edit
 
 2. Under **System Topics**, select the **Go to authoring canvas** icon on the **Greeting** topic row.
 
-    ![Screenshot of the Topics page, with the Greeting topic highlighted.](media/custom-greeting-topic.png "Screenshot of the Topics page, with the Greeting topic highlighted")
+    :::image type="content" source="media/custom-greeting-topic.png" alt-text="Screenshot of the Topics page, with the Greeting topic highlighted." border="false":::
 
 3. Edit the text inside the **Message** nodes. You can also [add or delete additional nodes](authoring-create-edit-topics.md#insert-nodes).
 
 4. Select **Save** when you're finished editing the message.
 
-    ![Screenshot of the system greeting topic showing the message nodes that can be edited.](media/custom-greeting-message.png "Screenshot of the system greeting topic showing the message nodes that can be edited")
+    :::image type="content" source="media/custom-greeting-message.png" alt-text="Screenshot of the system greeting topic showing the message nodes that can be edited." border="false":::
 
 5. [**Publish** your bot](publication-fundamentals-publish-channels.md).
 
-    ![Publish latest bot content.](media/channel-publish-latest-content.png "Publish latest bot content")
+    :::image type="content" source="media/channel-publish-latest-content.png" alt-text="Publish latest bot content." border="false":::
 
 You can now test your bot by going to the webpage where you deployed your bot's custom canvas. You'll see the bot start the conversation by automatically showing the greeting topic.
 

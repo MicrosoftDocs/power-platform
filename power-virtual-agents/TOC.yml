@@ -174,7 +174,7 @@
       items:
        - name: Licensing for Virtual Power Agents in Teams
          href: teams/requirements-licensing-teams.md
-       - name: Collaborate with others
+       - name: Share bot with users in your organization
          href: teams/admin-share-bots-teams.md
        - name: Upgrade a Dataverse for Teams environment
          href: teams/admin-upgrade-dataverse-teams.md

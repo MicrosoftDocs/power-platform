@@ -26,11 +26,11 @@ The CoE nurture components solution contains assets relevant to everyone in the 
 Here's a breakdown of the assets that form the nurture components solution:
 
 - Onboard new makers and share best practices
-  - [Maker Assessment](#apps)
-  - [Template Catalog (canvas app)](#apps)
+  - [Maker Assessment](#maker-assessment)
+  - [Template Catalog (canvas app)](#template-catalog)
   - [Admin | Newsletter with Product Updates (flow)](#flows)
 - Encourage adoption
-  - [Training in a Day Management and Registration (canvas apps)](#apps)
+  - [Training in a Day Management and Registration (canvas apps)](#training-in-a-day--management)
   - [Training in a Day Feedback Reminder, Registration Confirmation and Reminder (flow)](#flows)
 
 ## Security roles

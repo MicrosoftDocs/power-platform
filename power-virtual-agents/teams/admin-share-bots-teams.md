@@ -2,7 +2,7 @@
 title: "Share chatbots with other users in Microsoft Teams"
 description: "Work on Power Virtual Agents chatbots with other people in your team, and see who else has recently modified topics."
 keywords: "Administration, share, multi-author, PVA, teams"
-ms.date: 10/22/2021
+ms.date: 12/10/2021
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -39,7 +39,7 @@ You can share your bot with security groups so their members can chat with the b
 2. Specify the security group name that you would like to share the bot with.
 
   >[!NOTE]
-  >You can only share a bot with security groups. You cannot share with individual users directly.  
+  >You can only share a bot with security groups. You cannot share with Microsoft 365 groups or individual users directly.  
   >You can manage individual user access by adding or removing users from the security group.
 
   :::image type="content" source="../media/sharing-security-groups/sharing-bot-specify-security-group-teams.PNG" alt-text="Specify security group in Sharing UI.":::
@@ -141,18 +141,18 @@ In the **Topics** list, you can see who's working on a topic under the **Current
 
 This can help prevent conflicts if multiple people are working on the same topic.
 
-![Screenshot showing the Power Virtual Agents list of topics with the Currently editing column highlighted.](media/sharing-multi-authors-teams.png)
+:::image type="content" source="media/sharing-multi-authors-teams.png" alt-text="Screenshot showing the Power Virtual Agents list of topics with the Currently editing column highlighted.":::
 
 >[!NOTE]
 >The list of authors in the **Currently editing** column is only refreshed when the page is loaded.
 
 A topic's **Details** page also shows all the people currently editing a topic, as well as the last time someone saved.
 
-![Screenshot of a topic's details page on the properties pane with the Modified by section on the right highlighted.](media/sharing-multi-details-teams.png)
+:::image type="content" source="media/sharing-multi-details-teams.png" alt-text="Screenshot of a topic's details page on the properties pane with the Modified by section on the right highlighted.":::
 
 A list of who's editing the page also appears as user icons on the top of the authoring canvas when you've opened a topic for editing.
 
-![Screenshot of a topic being edited with user profile pictures appearing on the top menu bar.](media/sharing-multi-editing-teams.png)
+:::image type="content" source="media/sharing-multi-editing-teams.png" alt-text="Screenshot of a topic being edited with user profile pictures appearing on the top menu bar.":::
 
 After 30 minutes of inactivity you will not be identified as editing the topic.
 
@@ -160,7 +160,7 @@ Occasionally, multiple people might make changes to a topic and attempt to save 
 
 Power Virtual Agents will detect this and prevent you from overwriting your coworker by prompting you with an option - you can reload the content with the latest changes (discarding your work), or you can save a copy of the topic (keeping your changes in a new, duplicate copy of the topic). 
 
-![Screenshot showing a prompt that says Updated content available and gives you options to discard your changes or save a copy.](media/sharing-multi-conflict-teams.png)
+:::image type="content" source="media/sharing-multi-conflict-teams.png" alt-text="Screenshot showing a prompt that says Updated content available and gives you options to discard your changes or save a copy." border="false":::
 
 If you save your changes to a new topic, you can then review your coworker's changes and merge the two topics, deleting the copy of the topic once you've finished.
 
