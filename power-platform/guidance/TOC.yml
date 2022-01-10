@@ -100,37 +100,36 @@
       items: 
       - name: Get started with set-up
         href: coe/setup.md
-      - name: Set-up core components
+      - name: Set up inventory components
         href: coe/setup-core-components.md  
-      - name: Set-up governance components
-        href: coe/setup-governance-components.md  
-      - name: Set-up nurture components
-        href: coe/setup-nurture-components.md
+      - name: Set up environment request management
+        href: coe/setup-environment-components.md 
+      - name: Set up other core components
+        href: coe/setup-othercore-components.md
+      - name: Get started with setting up governance components
+        href: coe/before-setup-gov.md  
+      - name: Set up compliance processes
+        href: coe/setup-governance-components.md 
+      - name: Set up archival processes
+        href: coe/setup-archive-components.md 
+      - name: Set up Microsoft Teams governance processes
+        href: coe/setup-teams-components.md  
+      - name: Set up cleanup for orphaned resources
+        href: coe/setup-orphan-components.md 
       - name: Collect audit log data
         href: coe/setup-auditlog.md
       - name: Set-up Power BI reporting
         href: coe/setup-powerbi.md
-      - name: Set-up theming components
-        href: coe/setup-theming.md
-      - name: Set-up Innovation Backlog components
+      - name: Set up nurture components
+        href: coe/setup-nurture-components.md
+      - name: Set up Innovation Backlog components
         href: coe/setup-innovationbacklog.md
-      - name: Set-up ALM Accelerator for Power Platform components
-        href: coe/setup-almacceleratorpowerplatform-cli.md
-        items:
-        - name: Set-up ALM Accelerator for Power Platform using CoE CLI
-          href: coe/cli/alm/overview.md
-        - name: Set-up ALM Accelerator for Power Platform components manually
-          href: coe/setup-almacceleratorpowerplatform.md
-        - name: Configuration and data deployment in pipelines
-          href: coe/setup-almacceleratorpowerplatform-deployment-config.md
-        - name: Configuring pipeline sync
-          href: coe/setup-almacceleratorpowerplatform-pipeline-sync.md
-        - name: Configuring user permissions
-          href: coe/setup-almacceleratorpowerplatform-users.md
-        - name: Configuring deployment user settings and profiles
-          href: coe/setup-almacceleratorpowerplatform-deployment-profiles.md
-        - name: Set-up ALM Accelerator for Makers components (preview)
-          href: coe/setup-almaccelerator.md
+      - name: Set up theming components
+        href: coe/setup-theming.md
+      - name: Set up ALM Accelerator for Makers components
+        href: coe/setup-almaccelerator.md
+      - name: What's next - after setting up the CoE Starter Kit
+        href: coe/after-setup.md
     - name: What's in the CoE starter kit
       items:  
       - name: CoE starter kit modules
@@ -140,16 +139,14 @@
         - name: Core components
           href: coe/core-components.md
         - name: Governance components
-          href: coe/governance-components.md       
+          href: coe/governance-components.md
         - name: Nurture components
           href: coe/nurture-components.md  
         - name: Theming components
           href: coe/theming-components.md   
         - name: Innovation backlog components
           href: coe/innovationbacklog-components.md   
-        - name: Extend and modify components
-          href: coe/modify-components.md
-    - name: How to use the CoE starter kit
+    - name: How to use the CoE Starter Kit
       items:
         - name: CoE dashboard explained
           items:
@@ -181,6 +178,8 @@
 
         - name: Environment management
           href: coe/env-mgmt.md
+    - name: FAQ and Tips
+      href: coe/faq.md
     - name: Limitations
       href: coe/limitations.md
     - name: Release notes

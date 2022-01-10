@@ -34,23 +34,23 @@ Power Virtual Agents offers the following capabilities to find or export persona
 **Export customer data – Bot content (tenant admin):**
 1. Go to [https://www.powerapps.com](https://www.powerapps.com) and sign in with your credentials.
 
-   ![Sign in to powerapps.com.](media/export-1.png)
+   :::image type="content" source="media/export-1.png" alt-text="Sign in to powerapps.com." border="false":::
 
 2. After signing in, you are redirected to the Microsoft Power Platform admin center.
 
-   ![Power Platform admin center.](media/export-2.png)
+   :::image type="content" source="media/export-2.png" alt-text="Power Platform admin center." border="false":::
 
 3. In the side navigation pane, expand the **Data** node. Select **Entities** and select **Export data**.
 
-   ![Export data.](media/export-3.png)
+   :::image type="content" source="media/export-3.png" alt-text="Export data.":::
 
 4. On the Export data screen, select **BotContent** and **Note** from the entity list. Select **Export data** at the top. Your data will take a couple of minutes to be compiled for export.
 
-   ![Select entities for export.](media/export-4.png)
+   :::image type="content" source="media/export-4.png" alt-text="Select entities for export." border="false":::
 
 5. Select **Download exported data** to download the content.
 
-   ![Download exported data.](media/export-6.png)
+   :::image type="content" source="media/export-6.png" alt-text="Download exported data." border="false":::
 
 
 **Export customer data – Bot sessions (bot author):**
