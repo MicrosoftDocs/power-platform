@@ -26,6 +26,8 @@ When you add a Power Virtual Agents bot as a skill, the Bot Framework bot will d
 
 If there is a match, the Bot Framework bot will invoke the Power Virtual Agents bot and pass the entire user utterance to it to extract any [entities](advanced-entities-slot-filling.md) and trigger a matching Power Virtual Agents topic.
 
+Addiotnally, when you add a Power Virtual Agents bot as a skill, you can invoke a specfic Power Virtual Agents bot's Topic with inouts and outputs as part of business logic in your Bot Framework bot. 
+
 >[!NOTE]
 >This article is intended for system administrators or IT professionals who are familiar with [Bot Framework skills](/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0&preserve-view=true).
 
@@ -175,6 +177,11 @@ You can use Power Virtual Agents bot skill manifests to create a skill connectio
 6. Verify that the Power Virtual Agents skill is added to your Bot Framework bot correctly and a new trigger with your Power Virtual Agents bot's name is added to the project in Composer.
 
     :::image type="content" source="media/PVA-as-a-skill/Composer_PVASkillAdded.png" alt-text="Composer - Power Virtual Agents skill added":::
+
+
+## Invoke a specific Power Virtual Agents skill's Topic
+You can directly call any specfic Power Virtual Agents skill topic in Bot Framework bot's business logic rather than rely on a user utterance to trigger it. Only the Power Virtual Agents topic that are listed in skill manifest can be directly invoked from your Bot Framework bot.
+
 
 ## Test you Power Virtual Agents bot as a skill with a Bot Framework bot
 
