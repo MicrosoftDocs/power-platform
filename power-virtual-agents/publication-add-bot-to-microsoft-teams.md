@@ -264,7 +264,9 @@ Microsoft Teams supports [adding bots to teams](/microsoftteams/platform/bots/ho
 * You want to allow every team member to engage with the bot in a team channel or via private chat without needing to manually install the bot themselves.
 
 ### Allow users to add bot to a team
-After enabling this option, any user who [installs the bot from the Teams app store](teams/publication-add-bot-to-microsoft-teams-teams#install-a-bot-as-an-app-in-microsoft-teams) or via [installation link](teams/publication-add-bot-to-microsoft-teams-teams#share-a-link-so-others-can-install-the-bot) will see the option to add the bot to a team in Microsoft Teams. Team members can also [remove the bot from the team](/powerapps/teams/remove-your-apps).
+This option allows users to add the bot to any team that they are part of when adding the bot in Microsoft Teams.
+
+After enabling this option, any user who [installs the bot from the Teams app store](teams/publication-add-bot-to-microsoft-teams-teams#install-a-bot-as-an-app-in-microsoft-teams) or via [installation link](teams/publication-add-bot-to-microsoft-teams-teams#share-a-link-so-others-can-install-the-bot) will see the option to add the bot to a team in Microsoft Teams. Team members can also [remove the bot from a team](/powerapps/teams/remove-your-apps).
 
 >[!IMPORTANT]
 >The bot will be configured to allow everyone in the organization to chat with it. This ensures all team members have permission to chat with the bot in team channels. It's highly recommended to not change the security setting of the bot after enabling this capability to prevent users seeing permission errors when interacting with the bot in team channels.
@@ -279,7 +281,7 @@ To allow users to add a bot to a team:
 
 4. Check **Allow your users to add this bot to a team** checkbox.
 
-   :::image type="content" source="media/teams-allow-end-users-to-add-to-team.png" alt-text="Checkbox is checked to allow end user to add bot to teams that they are part of":::
+   :::image type="content" source="media/teams-allow-end-users-to-add-to-team.png" alt-text="Checkbox is checked to allow user to add bot to teams that they are part of":::
 
 5. Select **Save**.
    
@@ -301,7 +303,7 @@ To disallow users from adding a bot to a team:
 
 4. Uncheck **Allow your users to add this bot to a team** checkbox.
 
-    :::image type="content" source="media/teams-disallow-end-users-to-add-to-team.png" alt-text="Checkbox is unchecked to disallow end user to add bot to teams that they are part of":::
+    :::image type="content" source="media/teams-disallow-end-users-to-add-to-team.png" alt-text="Checkbox is unchecked to disallow user to add bot to teams that they are part of":::
 
 5. Select **Save**.
 
