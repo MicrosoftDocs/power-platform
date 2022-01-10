@@ -9,7 +9,7 @@ ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/22/2021
+ms.date: 01/10/2022
 search.audienceType: 
   - admin
 search.app:
@@ -97,7 +97,7 @@ The following table describes which resources can be authored by each security r
 |Data gateway     |X         |X         |-         |X         |
 |Dataflow     |X         |X         |-         |X         |
 |Dataverse tables     |-         |-         |X         |X         |
-|Model-driven app     |-         |-         |X         |X         |
+|Model-driven app     |X        |-         |X         |X         |
 |Solution framework     |-         |-         |X         |X         |
 |Desktop flow     |-         |-         |X         |X         |
 |AI Builder     |-         |-         |X         |X         |
