@@ -47,7 +47,7 @@ You can also combine the customized greeting with [customization to the look and
 
 1. Select **Topics** on the side navigation pane, then select the **Greeting** topic row.
 
-    :::image type="content" source="..\media\configure-bot-greeting\select-greeting-topic.png" alt-text="Screenshot of the Topics page, with the Greeting topic highlighted.":::
+    :::image type="content" source="../media/configure-bot-greeting/select-greeting-topic.png" alt-text="Screenshot of the Topics page, with the Greeting topic highlighted.":::
 
 1. Edit the text inside the **Message** nodes. You can also [add or delete additional nodes](authoring-create-edit-topics-teams.md#insert-nodes).
 

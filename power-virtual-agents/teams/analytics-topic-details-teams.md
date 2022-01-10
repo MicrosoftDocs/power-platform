@@ -43,11 +43,11 @@ You can display the topic details page by selecting the **Detail** link in one o
 
 The topic details page can also be displayed by opening an individual topic from the [Topics page](authoring-create-edit-topics-teams.md) and selecting **Analytics** at the top of the page.
 
-:::image type="content" source="..\media\analytics-topic-details\canvas-button.png" alt-text="From the Topic details page, select the Analytics tab.":::
+:::image type="content" source="../media/analytics-topic-details/canvas-button.png" alt-text="From the Topic details page, select the Analytics tab.":::
 
 You can also select **More actions** on a topic from the Topics page and select **Go to analytics**. 
 
-:::image type="content" source="..\media\analytics-topic-details\topic-button.png" alt-text="Hovering shows the Go to analytics icon." border="false":::::
+:::image type="content" source="../media/analytics-topic-details/topic-button.png" alt-text="Hovering shows the Go to analytics icon." border="false":::::
 
 The topic details page includes a variety of charts with graphical views of a topic's key performance indicators. For information about each chart, see:
 

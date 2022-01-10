@@ -68,7 +68,7 @@ These topics fall into two categories:
 
 1. When you enter the authoring canvas, the **Trigger phrases** pane should open. If it doesn't open, select **Trigger phrases**.
 
-    :::image type="content" source="media\authoring-create-edit-topics\trigger-phrases-button.png" alt-text="Selecting Trigger phrases will open the topic details pane":::
+    :::image type="content" source="media/authoring-create-edit-topics/trigger-phrases-button.png" alt-text="Selecting Trigger phrases will open the topic details pane":::
    
 1. Specify one or more trigger phrases for the topic in the **Trigger phrases** pane.
 
@@ -78,7 +78,7 @@ These topics fall into two categories:
 
 1. Select **Details**.
 
-    :::image type="content" source="media\authoring-create-edit-topics\open-details-pane.png" alt-text="Selecting Details will open the topic details pane":::
+    :::image type="content" source="media/authoring-create-edit-topics/open-details-pane.png" alt-text="Selecting Details will open the topic details pane":::
 
 1. For **Name**, enter a name for your topic. You can also optionally add a **Display name** and **Description**.
 
@@ -86,11 +86,11 @@ These topics fall into two categories:
 
     The description is never shown to users. Use this to describe the purpose of the topic to yourself and other bot makers.
 
-    :::image type="content" source="media\authoring-create-edit-topics\details-pane.png" alt-text="The Topic details pane contains a name, display name, and description":::
+    :::image type="content" source="media/authoring-create-edit-topics/details-pane.png" alt-text="The Topic details pane contains a name, display name, and description":::
 
 1. You can also rename the topic by selecting its name and entering a new value.
    
-    :::image type="content" source="media\authoring-create-edit-topics\rename-topic-shortcut.png" alt-text="Quickly rename a topic by selecting its name":::
+    :::image type="content" source="media/authoring-create-edit-topics/rename-topic-shortcut.png" alt-text="Quickly rename a topic by selecting its name":::
 
 1. Select **Save** to add the topic to the topics list.
 

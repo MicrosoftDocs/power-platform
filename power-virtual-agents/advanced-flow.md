@@ -257,7 +257,7 @@ These instructions use adding weather information to a flow as an example. If yo
     - get weather
     - what's the weather
 
-    :::image type="content" source="media\advanced-flow\create-get-weather-topic.png" alt-text="Create a new Topic." border="false":::
+    :::image type="content" source="media/advanced-flow/create-get-weather-topic.png" alt-text="Create a new Topic." border="false":::
 
 1. By default, a message node is created. Enter **I can help you with that** into the node, and then select the plus (**+**) button under it to add a new node. 
 

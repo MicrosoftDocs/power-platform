@@ -71,7 +71,7 @@ In addition to this guide, you can also [download and use templates to help you 
     
     As an example, let's create a topic called 'Personal Hello World' and add 'hello world' as a trigger phrase. 
     
-    :::image type="content" source="media\fundamentals-get-started\hello-world-topic.png" alt-text="Name topic and add trigger phrase.":::
+    :::image type="content" source="media/fundamentals-get-started/hello-world-topic.png" alt-text="Name topic and add trigger phrase.":::
 
 4. Next, you'll define bot responses and the overall bot conversation.
 
