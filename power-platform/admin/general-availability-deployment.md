@@ -37,7 +37,7 @@ Each notification from the Message Center includes dates, the maintenance window
 
 The general availability deployment is based on the regions where environments are created.
 
-|Regions  |Schedule for 2021 wave 2 general availability deployment|
+|Regions  |Schedule for 2022 wave 1 general availability deployment|
 |---------|---------|
 |South America<br />Canada<br />India<br />France<br />South Africa<br />Germany<br />Switzerland |  Friday, April 1st to Sunday, April 3rd     |
 |Japan<br />Asia Pacific<br />Great Britain<br />Australia <br /> United Arab Emirates     | Friday, April 8th to Sunday, April 10th       |
