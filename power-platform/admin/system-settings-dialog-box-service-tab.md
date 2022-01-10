@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/17/2021
+ms.date: 01/10/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -52,7 +52,7 @@ Use this tab to set preferences for the customer service area, such as service l
 |                                                                                                                                                                                                                                                                      **Automatically apply entitlement**                                                                                                                                                                                                                                                                      |                                                                                                                                                                                                                                                                                                                                                                        -   Select whether to automatically apply the default customer entitlement when a case is created.<br />-   Select whether to automatically apply the default customer entitlement when a case is updated and the customer, contact, or product field has changed.                                                                                                                                                                                                                                                                                                                                                                        |
   
 ### See also  
-[Service Manager guide (Customer Service Hub)](/dynamics365/customer-service/service-manager-guide) 
+[Learn the basics of the Customer Service Hub)](/dynamics365/customer-service/customer-service-hub-user-guide-basics) 
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
