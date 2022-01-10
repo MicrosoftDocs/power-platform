@@ -266,7 +266,7 @@ Microsoft Teams supports [adding bots to teams](/microsoftteams/platform/bots/ho
 ### Allow users to add bot to a team
 This option allows users to add the bot to any team that they are part of when adding the bot in Microsoft Teams.
 
-After enabling this option, any user who [installs the bot from the Teams app store](teams/publication-add-bot-to-microsoft-teams-teams#install-a-bot-as-an-app-in-microsoft-teams) or via [installation link](teams/publication-add-bot-to-microsoft-teams-teams#share-a-link-so-others-can-install-the-bot) will see the option to add the bot to a team in Microsoft Teams. Team members can also [remove the bot from a team](/powerapps/teams/remove-your-apps).
+After enabling this option, any user who [installs the bot from the Teams app store](teams/publication-add-bot-to-microsoft-teams-teams.md#install-a-bot-as-an-app-in-microsoft-teams) or via [installation link](teams/publication-add-bot-to-microsoft-teams-teams.md#share-a-link-so-others-can-install-the-bot) will see the option to add the bot to a team in Microsoft Teams. Team members can also [remove the bot from a team](/powerapps/teams/remove-your-apps).
 
 >[!IMPORTANT]
 >The bot will be configured to allow everyone in the organization to chat with it. This ensures all team members have permission to chat with the bot in team channels. It's highly recommended to not change the security setting of the bot after enabling this capability to prevent users seeing permission errors when interacting with the bot in team channels.
@@ -310,7 +310,7 @@ To disallow users from adding a bot to a team:
 ### Configure private greeting behavior
 Private greetings from a bot are useful for when you want team members to have 1:1 conversations with the bot without needing to manually install the bot themselves.
 
-When enabled your bot will automatically start a conversation with team members. To customize the bot's greeting message, [modify the Greeting system topic](configure-bot-greeting#modify-the-system-greeting-topic-recommended).
+When enabled your bot will automatically start a conversation with team members. To customize the bot's greeting message, [modify the Greeting system topic](configure-bot-greeting.md#modify-the-system-greeting-topic-recommended).
 
 Consider how relevant the bot is to team members and make sure the bot's greeting helps them understand what to do with it, learn about its limitations and, most importantly, get comfortable interacting with it.
 
