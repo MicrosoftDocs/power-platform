@@ -256,15 +256,15 @@ Before submitting the bot to your organization, make sure:
 >Try signing out and back in again (if you're using the desktop app) or refreshing your browser (if you're using the Teams web app).
 
 ## Add a bot to a team
-Microsoft Teams supports [adding bots to teams](/microsoftteams/platform/bots/how-to/conversations/channel-and-group-conversations?tabs=dotnet). Once added, team members can @mention the bot in any team channels and all teammates will see the response from the bot. This is useful for scenarios where:
+Microsoft Teams supports [adding bots to teams](/microsoftteams/platform/bots/how-to/conversations/channel-and-group-conversations?tabs=dotnet). Once added, team members can @mention the bot in any team channels and all teammates will see the response from the bot. This feature is useful for scenarios where:
 
 * Your bot supports collaboration, for example sharing the latest sales report insight with the rest of the Sales team.
 * You want to allow every team member to engage with the bot in a team channel or via private chat without needing to manually install the bot themselves.
 
-You can [add the bot directly into the team that the bot is created in](#add-bot-to-the-team-it-is-created-in) or [allow users to add the bot to any team that they are part of](#allow-users-to-add-bot-to-their-teams). Team members can also [remove the bot from the team](/powerapps/teams/remove-your-apps).
+You can [add the bot directly into the team that the bot is created in](#add-bot-to-the-team-it-is-created-in) or [allow users to add the bot to any team that they're part of](#allow-users-to-add-bot-to-their-teams). Team members can also [remove the bot from the team](/powerapps/teams/remove-your-apps).
 
 ### Add bot to the team it is created in
-When you create a bot you need to select a team for the bot to be created in. You can directly add the bot to this team so members of the team can interact with it.
+When you create a bot, you need to select a team for the bot to be created in. You can directly add the bot to this team so members of the team can interact with it.
 
 To add a bot to the team it was created in:
 
@@ -286,7 +286,7 @@ To add a bot to the team it was created in:
    
 
 ### Allow users to add bot to their teams
-This option allows users to add the bot to any team that they are part of when adding the bot in Microsoft Teams. 
+This option allows users to add the bot to any team that they're part of when adding the bot in Microsoft Teams. 
 
 After enabling this option, any user who [installs the bot from the Teams app store](#install-a-bot-as-an-app-in-microsoft-teams) or via [installation link](#share-a-link-so-others-can-install-the-bot) will see the option to add the bot to a team in Microsoft Teams. Team members can also [remove the bot from a team](/powerapps/teams/remove-your-apps).
 
@@ -313,7 +313,7 @@ To allow users to add a bot to a team:
    
 Microsoft Teams caches information so it could take a while before users see the option to add the bot to a team. Users can refresh the browser or sign in and out of the Microsoft Teams desktop client to reflect changes immediately.
 
-If you have previously [submitted the bot for admin approval](#submit-for-the-built-by-your-org-section), you will need to resubmit after enabling this option. The admin needs to approve these changes before users can add the bot to their teams from Microsoft Teams app store in the "Built by your org" section.
+If you've previously [submitted the bot for admin approval](#submit-for-the-built-by-your-org-section), you'll need to resubmit after enabling this option. The admin needs to approve these changes before users can add the bot to their teams from Microsoft Teams app store in the "Built by your org" section.
 
 
 ### Disallow users from adding bot to a team
@@ -342,7 +342,7 @@ Private greetings from a bot are useful for when you want team members to have 1
 
 When enabled your bot will automatically start a conversation with team members. To customize the bot's greeting message, [modify the Greeting system topic](configure-bot-greeting-teams.md#change-the-bots-default-greeting).
 
-Consider how relevant the bot is to team members and make sure the bot's greeting helps them understand what to do with it, learn about its limitations and, most importantly, get comfortable interacting with it.
+Consider how relevant the bot is to team members. Make sure the bot's greeting helps them understand what to do with it, describes its limitations and, most importantly, gets them comfortable interacting with it.
 
 To configure a when a bot sends a private greeting:
 
