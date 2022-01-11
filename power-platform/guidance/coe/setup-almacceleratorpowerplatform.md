@@ -1,6 +1,6 @@
 ---
-title: "Set up ALM Accelerator for Power Platform components Manual | MicrosoftDocs"
-description: "The ALM Accelerator for Power Platform will help you follow ALM patterns and practices to source control and move your solutions from your development environment to test and production environments using DevOps. This guide will walk through the manual setup steps of the Accelerator."
+title: "Set up ALM Accelerator for Power Platform components manual | MicrosoftDocs"
+description: "The ALM Accelerator for Power Platform helps you follow ALM patterns and practices to source control and move your solutions from your development environment to test and production environments using DevOps. This guide walks through the manual set-up steps of the accelerator."
 author: mikefactorial
 manager: devkeydet
 ms.service: power-platform
@@ -17,47 +17,47 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Set up ALM Accelerator for Power Platform components manually (Preview)
+# Set-up ALM Accelerator for Power Platform components manually (preview)
+
+The ALM Accelerator for Power Platform (AA4PP) components enable makers to apply source control strategies using DevOps and use automated builds and deployment of solutions to their environments without the need for manual intervention by the maker, administrator, developer, or tester. In addition, the ALM Accelerator helps makers work without intimate knowledge of the downstream technologies and to be able to switch quickly from developing solutions to source controlling the solution and ultimately pushing their apps to other environments with as few interruptions to their work as possible.
 
 > [!NOTE]
-> ALM Accelerator for Power Platform (AA4PP) is currently in public preview. Please see [Issues currently tagged as vnext](https://github.com/microsoft/coe-starter-kit/issues?q=is%3Aopen+is%3Aissue+label%3Aalm-accelerator+label%3Avnext) for the Roadmap to be completed prior to general availability. While the tool is in Public Preview, you should expect that there will be breaking changes and frequent updates to address feedback from preview members. Additionally, the Public Preview is reliant on the experimental [Power Apps Source File Pack and Unpack Utility](https://github.com/microsoft/PowerApps-Language-Tooling) that is being developed separately from AA4PP.
-
-The ALM Accelerator components enable makers to apply source control strategies using DevOps and use automated builds and deployment of solutions to their environments without the need for manual intervention by the maker, administrator, developer, or tester. In addition, the ALM Accelerator helps makers work without intimate knowledge of the downstream technologies and to be able to switch quickly from developing solutions to source controlling the solution and ultimately pushing their apps to other environments with as few interruptions to their work as possible.
+> ALM Accelerator for Power Platform is currently in public preview. Go to [Issues currently tagged as vnext](https://github.com/microsoft/coe-starter-kit/issues?q=is%3Aopen+is%3Aissue+label%3Aalm-accelerator+label%3Avnext) for the roadmap to be completed prior to general availability. While the tool is in public preview, there will be breaking changes and frequent updates to address feedback from preview members. Additionally, the public preview is reliant on the experimental [Power Apps Source File Pack and Unpack Utility](https://github.com/microsoft/PowerApps-Language-Tooling) that is being developed separately from AA4PP.
 
 The ALM Accelerator components solution doesn't have a dependency on other components of the CoE Starter Kit. It can be used independently.
 
 ## Setup options
 
-There are 2 setup options available for the ALM Accelerator for Power Platform.
+There are two set-up options available for the ALM Accelerator for Power Platform.
 
-1. Set up using the [Center of Excellence Command Line Interface (coe-cli)](/power-platform/guidance/coe/cli/overview).
-1. Set up manually by using this step-by-step walk-through.
+1. Set-up using the [Center of Excellence command line interface (CoE CLI)](/power-platform/guidance/coe/cli/overview).
+1. Set-up manually by using this step-by-step walk-through.
 
 > [!IMPORTANT]
-> **It's recommended that you use the [Center of Excellence Command Line Interface (coe-cli)](/power-platform/guidance/coe/cli/overview) to assist in automating these steps**. This document provides details and context for the actions that are performed by the coe-cli and act as a reference for anyone who wants to know the specifics of each step in the process.
+> We recommend that you use the [Center of Excellence command line interface (CoE CLI)](/power-platform/guidance/coe/cli/overview) to assist in automating these steps. This document provides details and context for the actions that are performed by the CoE CLI and act as a reference for anyone who wants to know the specifics of each step in the process.
 
 ## Document structure
 
-The Setup Guide is structured into seven main sections.
+The set-up guide is structured into seven main sections:
 
-- **Prerequisites** - Considerations and requirements to complete the setup.
-- **Foundational Setup** - This section walks through the base setup of the AA4PP. The base setup consists of the steps and configurations required.
-- **Development Project Setup** - This section includes the steps required to set up a new Development Project covering project-specific setup of DevOps, generic build and deployment pipelines, Service Connections, Power Platform Environments, and Application Users.
-- **Solution Setup** - These steps are specific to each solution you wish to support with the ALM Accelerator. The section covers setting up the solution-specific pipelines, branch policies, deployment variables to support connections references, environment variables, and AAD group sharing.
-- **Importing the Solution and Configuring the App** - This section takes you through the steps required to import the actual AA4PP canvas app and configuring the included custom connector.
-- **Using the ALM Accelerator App** - A short introduction to using the AA4PP canvas app.
+- **Prerequisites** - Considerations and requirements to complete the set-up.
+- **Foundational Set-up** - This section walks through the base set-up of the AA4PP. The base setup consists of the steps and configurations required.
+- **Development Project Set-up** - This section includes the steps required to set up a new development project covering project-specific setup of DevOps, generic build and deployment pipelines, Service connections, Power Platform environments, and application users.
+- **Solution Set-up** - These steps are specific to each solution you wish to support with the ALM Accelerator. The section covers setting up the solution-specific pipelines, branch policies, deployment variables to support connections references, environment variables, and Azure AD group sharing.
+- **Importing the Solution and Configuring the app** - This section takes you through the steps required to import the actual AA4PP canvas app and configuring the included custom connector.
+- **Using the ALM Accelerator app** - A short introduction to using the AA4PP canvas app.
 - **Troubleshooting** - A few pointers on some known issues and how to remediate them.
 
 ## Prerequisites
 
 ### Dataverse environments
 
-The AA4PP solution must be installed into a Power Platform environment with a Dataverse database. From this environment the AA4PP application can be used to deploy solutions from Development to Validation to Testing and to Production. All of these environments will also require a Dataverse database in order to deploy your solutions.
+The AA4PP solution must be installed into a Power Platform environment with a Microsoft Dataverse database. From this environment the AA4PP application can be used to deploy solutions from development to validation to testing and to production. All of these environments will also require a Dataverse database in order to deploy your solutions.
 
 > [!NOTE]
-> Currently the ALM Accelerator is not compatible with Dataverse for Teams. Both the AA4PP App and the associated AzDO pipelines assume the full version of Dataverse is being used in all environments.
+> Currently the ALM Accelerator is not compatible with Dataverse for Teams. Both the AA4PP app and the associated AzDO pipelines assume the full version of Dataverse is being used in all environments.
 
-You'll need to **create an environment in which to set up the AA4PP Solution**. It's recommended to install AA4PP in the same environment as other CoE Starter Kit Solutions. For more information about how to decide on the best strategy for your organization, see [Establishing an Environment Strategy for Microsoft Power Platform](/power-platform/guidance/adoption/environment-strategy) and [Environment strategy for ALM](/power-platform/alm/environment-strategy-alm).
+You'll need to create an environment in which to set up the AA4PP Solution. We recommend you install AA4PP in the same environment as other CoE Starter Kit solutions. For more information about how to decide on the best strategy for your organization, see [Establishing an environment strategy for Microsoft Power Platform](/power-platform/guidance/adoption/environment-strategy) and [Environment strategy for ALM](/power-platform/alm/environment-strategy-alm).
 
 ### DevOps organization
 
@@ -67,77 +67,78 @@ This solution uses DevOps for source control and deployments (pipelines). You ca
 
 To complete the steps below, you'll need the following users and permissions in Power Platform, DevOps, and Azure.
 
-- A licensed **Azure user** with Permissions to **create and view AAD Groups**, **create App Registrations** and **Grant Admin consent** to App Registrations in Azure Active Directory.
-- A licensed **DevOps** user with Permissions to **create and manage Pipelines, Service Connections, Repos and Extensions**.
-- A licensed **Power Platform** user with Permissions to **create Application Users** and **grant Administrative Permissions** to the Application User.
+- A licensed Azure user with permissions to create and view Azure AD groups, create app registrations and gGrant admin consent to app registrations in Azure AD.
+- A licensed DevOps user with permissions to create and manage pipelines, service connections, repos, and extensions.
+- A licensed Power Platform user with permissions to create application users and grant administrative permissions to the application user.
 
 ### Connectors and DLPs
 
-For the AA4PP Canvas App to work, the following connectors must be available to be used together in the environment into which the ALM Accelerator solution is imported.
+For the AA4PP canvas app to work, the following connectors must be available to be used together in the environment into which the ALM Accelerator solution is imported.
 
-- [Dataverse (Legacy)](/connectors/commondataservice/)
+- [Dataverse (legacy)](/connectors/commondataservice/)
 - [Power Apps for Makers](/connectors/powerappsforappmakers/)
 - [HTTP with Azure AD](/connectors/webcontents/) (with endpoint access to <https://graph.microsoft.com>)
 - ALM Accelerator Custom DevOps (this connector will be created as part of the [AA4PP solution import](#importing-the-solution-and-configuring-the-app))
 
-## Foundational setup
+## Foundational set-up
 
-The following steps will guide you through setting up the foundations of AA4PP. These steps are general to the functionality of the ALM Accelerator and not project or solution-specific.
+The following steps guide you through setting up the foundations of AA4PP. These steps are general to the functionality of the ALM Accelerator and not project or solution-specific.
 
-### Create an app registration in your AAD environment
+### Create an app registration in your Azure AD environment
 
-Creating an App Registration for the ALM Accelerator is a one time setup step to grant permissions to the App and the associated pipelines the permissions required to perform operations in **DevOps** and **Power Apps / Dataverse**. The steps below show how to create a single app registration with permissions for both Dataverse and DevOps. However, you might **choose to separate responsibilities into specifically Dataverse and DevOps as separate app registrations**.
+Creating an app registration for the ALM Accelerator is a one time set-up step to grant permissions to the app and the associated pipelines the permissions required to perform operations in DevOps and Power Apps or Dataverse. The steps below show how to create a single app registration with permissions for both Dataverse and DevOps. However, you might want to separate responsibilities into specifically Dataverse and DevOps as separate app registrations.
 
-1. Sign in to [portal.azure.com](https://portal.azure.com).
+1. Sign in to the [Azure portal](https://portal.azure.com).
 1. Go to **Azure Active Directory** > **App registrations**.
 
-1. Select **New Registration** and give the registration a name (for example ALMAcceleratorServicePrincipal) leave all other options as default and select **Register**.
+1. Select **New registration**, and then give the registration a name, such as *ALMAcceleratorServicePrincipal*. Leave all other options as default and select **Register**.
 
-1. Select **API Permissions** > **+ Add a permission**.
+1. Select **API permissions** > **+ Add a permission**.
 
 1. Select **Dynamics CRM**, and configure permissions as follows:
 
-1. Select **Delegated permissions**, and then select **user_impersonation**.
+    - Select **Delegated permissions**.
+    - Select **user_impersonation**.
 
 1. Select **Add permissions**.
 
 1. Repeat the steps above for the following permissions:
-    - **PowerApps-Advisor (Analysis All)** (Required for running static analysis via [App Checker](/power-platform/alm/checker-api/overview). This permission can be found under **APIs my organization uses**.
+    - **PowerApps-Advisor (Analysis All)**. This is required for running static analysis via [App checker](/power-platform/alm/checker-api/overview). This permission can be found under **APIs my organization uses**.
 
-    - **DevOps**. (Required for connecting to DevOps via the custom connector in the ALM Accelerator App). This permission can be found under **APIs my organization uses**.
+    - **DevOps**. This is required for connecting to DevOps via the custom connector in the ALM Accelerator app. This permission can be found under **APIs my organization uses**.
 
-      - When adding the DevOps permission, go to APIs my organization uses and search for DevOps and **copy the Application (client) ID**.
+      - When adding the DevOps permission, select **APIs my organization uses**, and then search for *DevOps* and copy the **Application (client) ID**.
 
         > [!IMPORTANT]
-        > Disambiguation: We'll use this value later and specifically call it out as the **DevOps Application (client) ID** which is different from the **Application (client) ID** copied in Step 12 [below](#create-an-app-registration-in-your-aad-environment)
+        > You'll use this value later and specifically call it out as the **DevOps Application (client) ID**, which is different from the **Application (client) ID** copied in [step 12 below](#create-an-app-registration-in-your-aad-environment)
 
       ![Copy the Application client ID](media/almacceleratorpowerplatform-components/image-4c6d6244-004e-4ac9-9034-79274f9be4c8.png)
 
-1. After adding permissions in your App Registration, select **Grant Admin consent for (your tenant)**.
+1. After adding permissions in your app registration, select **Grant Admin consent for (your tenant)**.
 
-1. Select **Certificates & Secrets** and select **New client secret**.
+1. Select **Certificates & Secrets**, and then select **New client secret**.
 
-1. Set the **Expiration** and select **Add**.
+1. Set the **Expiration**, and then select **Add**.
 
-1. After adding the secret **copy the value** and store for safe keeping to be used later.
+1. After adding the secret copy the value and store for safe keeping to be used later.
 
-1. Return to the **Overview** section of your App Registration and copy the **Application (client) ID** and **Directory (tenant) ID**.
+1. Return to the **Overview** section of your app registration and copy the **Application (client) ID** and **Directory (tenant) ID**.
 
      > [!IMPORTANT]
-     > Disambiguation: We'll use this value later and call it out as the **Application (client) ID** which is different from the **DevOps Application (client) ID** copied in Step 7 [above](#create-an-app-registration-in-your-aad-environment).
+     > You'll use this value later and call it out as the **Application (client) ID** which is different from the **DevOps Application (client) ID** copied in [Step 7 above](#create-an-app-registration-in-your-aad-environment).
 
 1. Select **Add a Redirect URI** > **Add a Platform** > **Web**.
 
-1. Set the **Redirect URI** to <https://global.consent.azure-apim.net/redirect>.
+1. Set the **Redirect URI** to *https://global.consent.azure-apim.net/redirect*.
 
     > [!NOTE]
-    > You may need to update this later when configuring your custom connector after installing the app if this URL is different than the Redirect URL populated in the Custom Connector
+    > You might need to update this later when configuring your custom connector after installing the app if this URL is different than the **Redirect URI** populated in the custom connector.
 
 1. Select **Configure**.
 
 ### Install DevOps extensions
 
-The ALM Accelerator uses several DevOps extensions, including some third-party Extensions that are available in the DevOps marketplace. Under Organization Settings in DevOps, install the following extensions. For more information regarding Microsoft and third-party DevOps extensions, see [here](/azure/devops/marketplace/trust). In addition, each of the third-party extensions web pages and the link to their source code are provided below.
+The ALM Accelerator uses several DevOps extensions, including some third-party extensions that are available in the DevOps marketplace. Under **Organization settings** in Azure DevOps, install the following extensions. For more information regarding Microsoft and third-party DevOps extensions, see [here](/azure/devops/marketplace/trust). In addition, each of the third-party extensions web pages and the link to their source code are provided below.
 
 1. Go to <https://dev.azure.com> and select **Organization settings**.
 1. Select **General** > **Extension**.
