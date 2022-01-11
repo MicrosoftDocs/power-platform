@@ -183,6 +183,31 @@ You can use Power Virtual Agents bot skill manifests to create a skill connectio
 You can directly call any specfic Power Virtual Agents skill topic in Bot Framework bot's business logic rather than rely on a user utterance to trigger it. Only the Power Virtual Agents topic that are listed in skill manifest can be directly invoked from your Bot Framework bot.
 
 
+1. In a Bot Framework Composer project, select **Access external resources** and then **Connect to a skill**.
+
+    :::image type="content" source="media/PVA-as-a-skill/ConnectToSkill.png" alt-text="Composer - connect to a skill":::
+
+2. Select your Power Visrtual Agents bot skill in **Skill Dialog Name** dropdown and then click on the **Show skill manifest** link below to open the skill manifest. 
+ 
+    :::image type="content" source="media/PVA-as-a-skill/SelectSkillManifest.png" alt-text="Show skill manifest":::
+
+3. In the skill manifest, select full **name** property for the Power Virtual Agents topic that you want to call. Copy this **name** property (without quotes) and save it to use in the next steps.
+
+    :::image type="content" source="media/PVA-as-a-skill/SelectPVAName.png" alt-text="Select Power Virtual Agents topic name from the manifest":::
+    
+4. Close the manifest window and go to **Activity** section in **Connect to a skill** panel.  Click on **Show code** option.
+   :::image type="content" source="media/PVA-as-a-skill/ActivityShowCode.png" alt-text="Select Show Code option in Activity panel":::
+  
+6. In the  **Show code** window, add the following code and use the **name** property that you have copied from the skill manifest. Make sure there are quotes in the **name** property. 
+```
+[Activity
+    type = event
+    name = dispatchTo_new_topic_***
+]
+```
+ :::image type="content" source="media/PVA-as-a-skill/ActivityWithTopicName.png" alt-text="Add Activity event with Power Virtual Agents topic name to Show Code window":::
+    
+    
 ## Test you Power Virtual Agents bot as a skill with a Bot Framework bot
 
 You can test that your Bot Framework bot is properly calling a Power Virtual Agents bot as a skill by using the [Bot Framework Emulator](/composer/how-to-connect-to-a-skill#test-in-the-emulator).
