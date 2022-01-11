@@ -433,7 +433,7 @@ When the above conditions are met, 15 minutes is a typical synchronization laten
 > An [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] subscription can have multiple [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] Active Directory tenant Ids. Make sure that you select the correct [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] Active Directory tenant Id that is associated with the environment that you will use for data export.  
 
 > [!NOTE]
-> Ensure the user has the appropriate permission to target the Azure SQL database.
+> Ensure that the User ID referenced within the $connectionString has appropriate permission to the target Azure SQL database.
 
 ```powershell
 # -------------------------------------------------------------------------------- #
