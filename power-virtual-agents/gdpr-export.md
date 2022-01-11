@@ -32,30 +32,28 @@ Power Virtual Agents offers the following capabilities to find or export persona
 ## Export the bot content
 
 **Export customer data – Bot content (tenant admin):**
-1. Go to [https://www.powerapps.com](https://www.powerapps.com) and sign in with your credentials.
+1. Go to [https://make.powerapps.com](https://make.powerapps.com) and sign in with your credentials.
 
    :::image type="content" source="media/export-1.png" alt-text="Sign in to powerapps.com." border="false":::
 
-2. After signing in, you are redirected to the Microsoft Power Platform admin center.
+2. In the side navigation pane, expand the **Data** node. Select **Tables** and select **Export data** on the **Data** menu.
 
-   :::image type="content" source="media/export-2.png" alt-text="Power Platform admin center." border="false":::
+   :::image type="content" source="media/ExportDataMenu" alt-text="Export data.":::
 
-3. In the side navigation pane, expand the **Data** node. Select **Entities** and select **Export data**.
+3. On the Export data screen, select **Chatbot** and **Chatbot subcomponent** from the entity list. Select **Export data** at the top right. Your data will take a couple of minutes to be compiled for export.
 
-   :::image type="content" source="media/export-3.png" alt-text="Export data.":::
-
-4. On the Export data screen, select **BotContent** and **Note** from the entity list. Select **Export data** at the top. Your data will take a couple of minutes to be compiled for export.
-
-   :::image type="content" source="media/export-4.png" alt-text="Select entities for export." border="false":::
+   :::image type="content" source="media/ExportChatbotAndChatbotSubComponent.png" alt-text="Select entities for export." border="false":::
 
 5. Select **Download exported data** to download the content.
 
-   :::image type="content" source="media/export-6.png" alt-text="Download exported data." border="false":::
+   :::image type="content" source="media/DownloadExportedData.png" alt-text="Download exported data." border="false":::
 
 
 **Export customer data – Bot sessions (bot author):**
  
-You can download session data from the [sessions analytics page](analytics-sessions.md) in Power Virtual Agents.
+You can download session data of last 28 days from the [sessions analytics page](analytics-sessions.md) in Power Virtual Agents. Alternately, you can export data from the **ConversationTranscripts** table.
+
+:::image type="content" source="media/ExportConversationTranscriptTable.png" alt-text="Download exported data." border="false":::
 
 **Export system-generated logs (tenant admin)**
 
