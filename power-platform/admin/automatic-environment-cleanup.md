@@ -18,7 +18,7 @@ search.app:
 ---
 # Automatic environment cleanup
 
-Operational processes for datacenters periodically identify environments that do not have an active subscription. They mark them for deactivation and eventual deletion. These processes can free up capacity from environments that are not in use, so that you can apply it elsewhere in your tenant.
+Operational processes for datacenters periodically identify environments that do not have an active subscription. The automatic environment cleanup process starts after all commerce-based licenses acquired for a tenant reach a deprovisioned state. Environments within such a tenant are marked for deactivation and eventual deletion. These processes can free up capacity from environments that are not in use, so that you can apply it elsewhere in your tenant.
 
 To see the status of your environments:
 
@@ -29,8 +29,6 @@ To see the status of your environments:
 > [!div class="mx-imgBorder"] 
 > ![Inactive environment.](media/inactive-environment.png "Inactive environment")
 
-> [!NOTE]
-> Environments become inactive if the subscription plan associated with the environment is not renewed or purchased and the subscription enters the disabled state, and eventually, the deleted/deprovisioned state. Once deprovisioned, the cleanup process is run and the environments are deleted. Subscription licenses affect determining activity status; license assignment to users does not.
 
 ## Scope
 
