@@ -87,7 +87,7 @@ You can edit both of these topic types in the same manner as for topics you crea
 
     :::image type="content" source="../media/authoring-create-edit-topics/open-details-pane.png" alt-text="Selecting Details will open the topic details pane":::
 
-1. For **Name**, enter a name for your topic. You can optionally add a **Display name** and **Description**.
+1. For **Name**, enter a name for your topic. You can add a **Display name** and **Description**.
 
     The display name is used when the bot needs to ask the person chatting which topic they're asking about.
 
