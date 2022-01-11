@@ -179,7 +179,7 @@ You can use Power Virtual Agents bot skill manifests to create a skill connectio
     :::image type="content" source="media/PVA-as-a-skill/Composer_PVASkillAdded.png" alt-text="Composer - Power Virtual Agents skill added":::
 
 
-## Call a specific Power Virtual Agents skill's topic
+## Call a specific Power Virtual Agents skill topic
 You can directly call any specfic Power Virtual Agents skill topic in Bot Framework bot's business logic rather than rely on a user utterance to trigger it. Only the Power Virtual Agents topic that are listed in skill manifest can be directly invoked from your Bot Framework bot.
 
 
@@ -212,15 +212,15 @@ It is possible to pass a variable to a Power Virtual Agents skill topic as an in
 
 If you have a Power Virtual Agents topic that can receive an input varible listed in your skill manifest, you can pass a Composer variable to it.
 
-1. In the skill manifest, select full **name** property for the Power Virtual Agents topic that you want to call. Copy this **name** property (without quotes) and save it to use in the next steps.
+1. In the skill manifest, select full **name** property for the Power Virtual Agents topic that you want to call. Copy this **name** property (without quotes); you will use in the next steps.
 
     :::image type="content" source="media/PVA-as-a-skill/SelectPVAName.png" alt-text="Select Power Virtual Agents topic name from the manifest":::
     
-2. If a Power Virtual Agents topic has inputs or outputs, there will a **value** propertylisted in skill manifest. Take note of the **$ref** in **value** property as you will use it to locate the in the next step.
+2. If a Power Virtual Agents topic has **inputs**, there will a **value** propertylisted in skill manifest. Take note of the **$ref** in **value** property as you will use it to locate the in the next step.
 
     :::image type="content" source="media/PVA-as-a-skill/Lesson2_InputsValueSection.png" alt-text="Locate the values property for a Power Virtual Agents topic in skill manifest":::
     
-3. Locate the **definitions** section that corresponds to **$ref** value you found in the previous step in manifeast window. Take note of the the Power Virtual Agents topic's inputs names and types as you will use them in the next steps.
+3. Locate the **definitions** section that corresponds to **$ref** value you found in the previous step in manifeast window. Take note of the the Power Virtual Agents topic's inputs names and types; you will use them in the next steps.
 
    :::image type="content" source="media/PVA-as-a-skill/Lesson2_InputsDefinitions.png" alt-text="Locate the defintions property for a Power Virtual Agents topic in skill manifest":::
    
@@ -246,13 +246,13 @@ If you have a Power Virtual Agents skill topic that returns outputs, you can ext
 
     :::image type="content" source="media/PVA-as-a-skill/SelectPVAName.png" alt-text="Select Power Virtual Agents topic name from the manifest":::
     
-2. If a Power Virtual Agents topic has inputs or outputs, there will a **value** propertylisted in skill manifest. Take note of the **$ref** in **value** property as you will use it to locate the in the next step.
+2. If a Power Virtual Agents topic has **outputs**, there will a **resultValue** property listed in skill manifest. Take note of the **$ref** in the **resultValue** property; you will use it to locate the in the next step.
 
-    :::image type="content" source="media/PVA-as-a-skill/Lesson2_InputsValueSection.png" alt-text="Locate the values property for a Power Virtual Agents topic in skill manifest":::
+    :::image type="content" source="media/PVA-as-a-skill/Lesson3_OutputsResultValueSection.png" alt-text="Locate the result value property for a Power Virtual Agents topic in skill manifest":::
     
-3. Locate the **definitions** section that corresponds to **$ref** value you found in the previous step in manifeast window. Take note of the the Power Virtual Agents topic's inputs names and types as you will use them in the next steps.
+3. Locate the **definitions** section that corresponds to **$ref** value you found in the previous step in manifeast window. Take note of the the Power Virtual Agents topic's output variables names and types; you will use them in the next steps. Note that in this example, the Power Virtual Agents topic returns 2 outputs of type String, **pva_State** and **pva_Item**.
 
-   :::image type="content" source="media/PVA-as-a-skill/Lesson2_InputsDefinitions.png" alt-text="Locate the defintions property for a Power Virtual Agents topic in skill manifest":::
+   :::image type="content" source="media/PVA-as-a-skill/Lesson3_DefintionsOutputsSection.png" alt-text="Locate the defintions property for a Power Virtual Agents topic in skill manifest":::
    
  4. Close the manifest window and go to **Activity** section in **Connect to a skill** panel.  Click on **Show code** option.
    :::image type="content" source="media/PVA-as-a-skill/ActivityShowCode.png" alt-text="Select Show Code option in Activity panel"::: 
@@ -264,9 +264,17 @@ If you have a Power Virtual Agents skill topic that returns outputs, you can ext
     name = dispatchTo_new_topic_***
 ]
 ```
- :::image type="content" source="media/PVA-as-a-skill/ActivityWithTopicName.png" alt-text="Add Activity event with Power Virtual Agents topic name to Show Code window":::
+ :::image type="content" source="media/PVA-as-a-skill/Lesson3_ActivitySection.png" alt-text="Add Activity event with the Power Virtual Agents topic name to Show Code window":::
  
- 6. 
+ 6. Set the **Property** field in **Acivity** window to receive the ouputs values from a Power Virtual Agents skill topicand store them in **dialog.skillResult**.
+
+:::image type="content" source="media/PVA-as-a-skill/Lesson3_SetResultProperty.png" alt-text="Set the Property field in Acivity window to dialog.skillResult":::
+
+7. Next, select **Set properties** under **Manage properties** menu option in Composer.
+:::image type="content" source="media/PVA-as-a-skill/Lesson3_SelectSetProperties.png" alt-text="Select Set Properties under Manage Properties menu option":::
+
+8. Extract the output values from **dialog.skillResult.pvaState** and **dialog.skillResult.pvaItem** into new Composer variables **dialog.State** and **dialog.Item** in **Set properties** window.
+:::image type="content" source="media/PVA-as-a-skill/Lesson3_ExtractTopicOutputs.png" alt-text="Save the output values into dialog.State and dialog.Item in Composer Set properties window":::
   
 ## Test you Power Virtual Agents bot as a skill with a Bot Framework bot
 
