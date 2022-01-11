@@ -74,9 +74,9 @@ If you are installing the solution in a new environment, or one in which Approva
 
 There are several child flows which will need to be turned on in this order:
 
-- HELPER – CloudFlowOperations
-- HELPER – CanvasAppOperations
-- HELPER – ObjectOperations
+- HELPER – CloudFlowOperations Gov
+- HELPER – CanvasAppOperations Gov
+- HELPER – ObjectOperations Gov
 
 If you get an error turning on the flow, you may need to set the [run only user properties](faq.md#set-flow-run-only-users-properties) of the flow.
 
