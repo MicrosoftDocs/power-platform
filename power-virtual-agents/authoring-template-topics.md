@@ -63,7 +63,7 @@ This lesson shows you how to create a simple topic with one conditional branch.
 
 This lesson shows you how you can create a simple topic with one conditional branch and [a variable](authoring-variables.md).
 
-A variable is a name for an item, which will be used later in the topic flow. In this example, `pva_StoreLocation` is the variable to store the user's response when you ask for their preferred store location.
+A variable is a name for an item that will be used later in the topic flow. In this example, `pva_StoreLocation` is the variable to store the user's response when you ask for their preferred store location.
 
 ### Lesson 3 - A topic with a conditions, variables, and a pre-built entity
 
