@@ -44,7 +44,7 @@ There are several flows which will need to be **turned on** for these components
 - DLP Request | Process Approved Policy Change
 - DLP Request | Sync new Policy
 - DLP Request | Sync Shared Policies
-- Env Request | Cleanup expired environments
+- Env Request | Cleanup environments
 - Env Request | Create approved environment
 - Env Request | Notify admin when new request submitted
 - Env Request | Notify requestor when rejected
