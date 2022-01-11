@@ -110,7 +110,7 @@ Creating an app registration for the ALM Accelerator is a one time set-up step t
       - When adding the DevOps permission, select **APIs my organization uses**, and then search for *DevOps* and copy the **Application (client) ID**.
 
         > [!IMPORTANT]
-        > You'll use this value later and specifically call it out as the **DevOps Application (client) ID**, which is different from the **Application (client) ID** copied in [step 12 below](#create-an-app-registration-in-your-aad-environment)
+        > You'll use this value later and specifically call it out as the **DevOps Application (client) ID**, which is different from the **Application (client) ID** copied in [step 12 below](#create-an-app-registration-in-your-azure-ad-environment)
 
       ![Copy the Application client ID](media/almacceleratorpowerplatform-components/image-4c6d6244-004e-4ac9-9034-79274f9be4c8.png)
 
@@ -125,7 +125,7 @@ Creating an app registration for the ALM Accelerator is a one time set-up step t
 1. Return to the **Overview** section of your app registration and copy the **Application (client) ID** and **Directory (tenant) ID**.
 
      > [!IMPORTANT]
-     > You'll use this value later and call it out as the **Application (client) ID**, which is different from the **DevOps Application (client) ID** copied in [Step 7 above](#create-an-app-registration-in-your-aad-environment).
+     > You'll use this value later and call it out as the **Application (client) ID**, which is different from the **DevOps Application (client) ID** copied in [Step 7 above](#create-an-app-registration-in-your-azure-ad-environment).
 
 1. Select **Add a Redirect URI** > **Add a Platform** > **Web**.
 
@@ -506,14 +506,14 @@ If your solution requires these other configuration settings and/or data, follow
 
    | Name | Value |
    |--|--|
-   | **Client ID** | [The **Application (client) ID** you copied when [creating the app registration](#create-an-app-registration-in-your-aad-environment)] |
-   | **Client secret** | [The **Application (client) Secret** you copied when [creating the app registration](#create-an-app-registration-in-your-aad-environment)] |
+   | **Client ID** | [The **Application (client) ID** you copied when [creating the app registration](#create-an-app-registration-in-your-azure-ad-environment)] |
+   | **Client secret** | [The **Application (client) Secret** you copied when [creating the app registration](#create-an-app-registration-in-your-azure-ad-environment)] |
    | **Tenant ID** | leave as the default **common** |
-   | **Resource URL** | [The **DevOps Application (client) ID** you copied when [adding permissions to your app registration](#create-an-app-registration-in-your-aad-environment)] |
+   | **Resource URL** | [The **DevOps Application (client) ID** you copied when [adding permissions to your app registration](#create-an-app-registration-in-your-azure-ad-environment)] |
 
 1. Select **Update connector**.
 
-1. Verify that the **Redirect URL** is populated on the **Security** page with the URL <https://global.consent.azure-apim.net/redirect>. If the redirect URL is other than <https://global.consent.azure-apim.net/redirect>, copy the URL and [return to the app registration your created](#create-an-app-registration-in-your-aad-environment) and update the [redirect URI](#create-an-app-registration-in-your-aad-environment) you set earlier to the updated URL.
+1. Verify that the **Redirect URL** is populated on the **Security** page with the URL <https://global.consent.azure-apim.net/redirect>. If the redirect URL is other than <https://global.consent.azure-apim.net/redirect>, copy the URL and [return to the app registration your created](#create-an-app-registration-in-your-azure-ad-environment) and update the [redirect URI](#create-an-app-registration-in-your-azure-ad-environment) you set earlier to the updated URL.
 
 1. Verify the connector from the **Test** menu once you've completed the steps above.
     - Open the **Test** menu.
