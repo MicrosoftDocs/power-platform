@@ -36,7 +36,7 @@ Only production and sandbox environments are affected by the automatic cleanup.
 
 ## Admin notification because of environment cleanup 
 
-This section covers what you can expect to receive if you, as an admin or someone in your organization, has created an environment that is marked for clean up. 
+Here's what you can expect to receive if you, as an admin or someone in your organization, has created an environment that is marked for clean up. 
 
 - 14 days prior to disabling the environment, an email is sent to all admins in your organization.
 - 7 days prior to disabling the environment, an email is sent to all admins in your organization.
