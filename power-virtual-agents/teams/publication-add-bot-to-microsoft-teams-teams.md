@@ -31,11 +31,11 @@ You can:
 - Customize your bot's appearance in Microsoft Teams
 - Install the bot for yourself in Microsoft Teams
 - Share the bot's installation link with other users
-- Show the bot in the Microsoft Teams app store
-   - Show the bot to your teammates or [shared users](admin-share-bots-teams.md) by adding it to the Microsoft Teams app store **Built by your colleagues** section
-   - Show the bot with your organization by submitting the bot for admin approval to be featured in the Microsoft Teams app store **Built by your org** section
-- Add the bot to a team channel
-- Download the pre-generated Teams app manifest to distribute it within your Microsoft Teams tenant
+- Show the bot in the Microsoft Teams app store.
+   - Show the bot to your teammates or [shared users](admin-share-bots-teams.md) by adding it to the Microsoft Teams app store **Built by your colleagues** section.
+   - Show the bot with your organization by submitting the bot for admin approval to be featured in the Microsoft Teams app store **Built by your org** section.
+- Add the bot to a team channel.
+- Download the pre-generated Teams app manifest to distribute it within your Microsoft Teams tenant.
 
 
 ## Prerequisites
@@ -148,7 +148,7 @@ You can share your bot by adding it to the Microsoft Teams app store, **Built fo
 
    :::image type="content" source="../media/add-bot-to-teams-show-bbyc-teams.PNG" alt-text="Show bot in Teams app store Built by your colleague section.":::
 
-7. Confirm the **Visible in Built by your colleagues** checkbox is selected and select **Share**.
+7. Confirm that **Visible in Built by your colleagues** is selected and select **Share**.
 
    :::image type="content" source="../media/sharing-security-groups/add-bot-to-teams-visible-in-bbyc.PNG" alt-text="Select visible in Built by your colleagues checkbox in sharing UI.":::
 
@@ -305,7 +305,7 @@ To allow users to add a bot to a team:
 
 5. Select **Edit details**.
 
-6. Check **Allow your users to add this bot to a team** checkbox.
+6. Select **Allow your users to add this bot to a team** .
 
    :::image type="content" source="../media/teams-allow-end-users-to-add-to-team.png" alt-text="Checkbox is checked to allow user to add bot to teams that they are part of":::
 
@@ -331,7 +331,7 @@ To disallow users from adding a bot to a team:
 
 5. Select **Edit details**.
 
-6. Uncheck **Allow your users to add this bot to a team** checkbox.
+6. Clear the **Allow your users to add this bot to a team** checkbox.
 
     :::image type="content" source="../media/teams-disallow-end-users-to-add-to-team.png" alt-text="Checkbox is unchecked to disallow user to add bot to teams that they are part of":::
 
@@ -340,7 +340,7 @@ To disallow users from adding a bot to a team:
 ### Configure private greeting behavior
 Private greetings from a bot are useful for when you want team members to have 1:1 conversations with the bot without needing to manually install the bot themselves.
 
-When enabled your bot will automatically start a conversation with team members. To customize the bot's greeting message, [modify the Greeting system topic](configure-bot-greeting-teams.md#change-the-bots-default-greeting).
+When enabled, your bot will automatically start a conversation with team members. To customize the bot's greeting message, [modify the Greeting system topic](configure-bot-greeting-teams.md#change-the-bots-default-greeting).
 
 Consider how relevant the bot is to team members. Make sure the bot's greeting helps them understand what to do with it, describes its limitations and, most importantly, gets them comfortable interacting with it.
 
@@ -424,7 +424,7 @@ You can always reconnect your bot after disconnecting it by selecting **Turn on 
 
 
 ## Known limitations
-- Currently only **Personal** and **Team** scope are supported for Microsoft Teams. **Group chat** is not supported.
+- Currently, only **Personal** and **Team** scope are supported for Microsoft Teams. **Group chat** is not supported.
 - [Setting the bot avatar icon](customize-default-canvas-teams.md) from the side navigation pane under **Manage** > **Details** will not show up for bots that are approved by an admin. Bots approved by an admin will use the app icon as the bot avatar.
 - Teams has [rate limiting](/microsoftteams/platform/concepts/bots/rate-limit) on bots. Depending on your business needs, you might want to keep your bot content concise for bots that are added to Microsoft Teams.
 - Disconnecting your bot might take a few minutes before the bot becomes unreachable by users on Microsoft Teams.
