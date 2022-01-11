@@ -2,7 +2,7 @@
 title: "Use topics to design a chatbot conversation in Microsoft Teams"
 description: "Use the authoring canvas in the Power Virtual Agents app in Microsoft Teams to create an end-to-end conversation."
 keywords: "PVA, authoring canvas, conversation"
-ms.date: 8/27/2021
+ms.date: 01/07/2022
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -53,12 +53,12 @@ For bot and topic limits, see the [Quotas, limits, and configuration values](../
 
 When you create a bot, a number of topics are automatically created.
 
-
 :::image type="content" source="media/topics-system-teams.png" alt-text="Four lesson topics and a number of system topics are in the Topics list.":::
-
   
-  - Four **User Topics** that can be used as [lesson topics](authoring-template-topics-teams.md) can to help understand how to make a bot conversation.
-  - A number of **System Topics**. We recommend you keep these and use them until you are comfortable with creating an end-to-end bot conversation.
+These topics fall into two categories:
+  
+  - Four prepopulated **User Topics** that are titled as lessons. These [lesson topics](authoring-template-topics-teams.md) can be used to help understand simple to complex ways of using nodes to create bot conversations. You can edit these topics in the same manner as for topics you create. You can also choose to delete them entirely.
+  - A number of **System Topics**. These are prepopulated topics that you are likely to need during a bot conversation. You can't delete, disable, or edit the trigger phrases of these topics, but you can customize the nodes on the authoring canvas. We recommend not customizing these topics until you are comfortable with creating an end-to-end bot conversation. 
 
 You can edit both of these topic types in the same manner as for topics you create but you can't delete them.
 
