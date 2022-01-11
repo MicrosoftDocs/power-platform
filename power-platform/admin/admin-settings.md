@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/14/2021
+ms.date: 01/11/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -48,9 +48,7 @@ These security settings are now managed in the Power Platform admin center.
 
 - [Dataverse teams management](manage-teams.md)
 - [Assign security roles to users in an environment that has a Dataverse database](database-security.md#assign-security-roles-to-users-in-an-environment-that-has-a-dataverse-database)
-
-> [!NOTE]
-> Manage application users in the [Microsoft 365 admin center](https://admin.microsoft.com).
+- [Manage application users](create-users.md#manage-application-users-in-the-power-platform-admin-center)
 
 ## App settings
 
