@@ -210,26 +210,35 @@ You can directly call any specfic Power Virtual Agents skill topic in Bot Framew
 ## Pass an input variable to a Power Virtual Agents skill topic 
 It is possible to pass a variable to a Power Virtual Agents skill topic as an input from Bot Framework Composer. You can refer to [Passing variables between topics](/authoring-create-edit-topics#passing-variables-between-topics) to learn how to create Power Virtual Agents topics that would accept input variables.
 
-If you have a Power Virtual Agents topic that can receive an input varible listed in your skill manifest, you can pass a Composer variable to it by followng these steps:
+If you have a Power Virtual Agents topic that can receive an input varible listed in your skill manifest, you can pass a Composer variable to it.
 
 1. In the skill manifest, select full **name** property for the Power Virtual Agents topic that you want to call. Copy this **name** property (without quotes) and save it to use in the next steps.
 
     :::image type="content" source="media/PVA-as-a-skill/SelectPVAName.png" alt-text="Select Power Virtual Agents topic name from the manifest":::
     
-2. Close the manifest window and go to **Activity** section in **Connect to a skill** panel.  Click on **Show code** option.
-   :::image type="content" source="media/PVA-as-a-skill/ActivityShowCode.png" alt-text="Select Show Code option in Activity panel":::
-  
-3. In the  **Show code** window, add the following code and use the **name** property that you have copied from the skill manifest. Make sure there are no quotes in the **name** property. 
+2. If a Power Virtual Agents topic has inputs or outputs, there will a **value** propertylisted in skill manifest. Take note of the **$ref** in **value** property as you will use it to locate the in the next step.
+
+    :::image type="content" source="media/PVA-as-a-skill/Lesson2_InputsValueSection.png" alt-text="Locate the values property for a Power Virtual Agents topic in skill manifest":::
+    
+3. Locate the **definitions** section that correspooinds to **$ref** value you found in the previous step in manifeast window. Take note of the the Power Virtual Agents topic's inputs names and types as you will use them in the next steps.
+
+   :::image type="content" source="media/PVA-as-a-skill/Lesson2_InputsDefinitions.png" alt-text="Locate the defintions property for a Power Virtual Agents topic in skill manifest":::
+   
+ 4. Close the manifest window and go to **Activity** section in **Connect to a skill** panel.  Click on **Show code** option.
+   :::image type="content" source="media/PVA-as-a-skill/ActivityShowCode.png" alt-text="Select Show Code option in Activity panel"::: 
+   
+5. To pass an input value to a Power Virtual Agents skill topic, use details you have obtained in **Step 3** and add the following code to the code window, using a Composer variable ${dialog.storeLocation} to pass a value to a Power Virtual Agents topic. Make sure there are no quotes in the **name** property. 
 ```
 [Activity
     type = event
     name = dispatchTo_new_topic_***
+    Value = ${json("{'pva_StoreLocation': ${dialog.storeLocation}}")}
 ]
 ```
- :::image type="content" source="media/PVA-as-a-skill/ActivityWithTopicName.png" alt-text="Add Activity event with Power Virtual Agents topic name to Show Code window":::
+ :::image type="content" source="media/PVA-as-a-skill/Lesson2_InputsActivityCode.png" alt-text="Add Activity event with a Power Virtual Agents input value to Show Code window":::
  
 ## Receive an output variable from a Power Virtual Agents skill topic 
-It is possible to receive outputs variables from a Power Virtual Agents skill topic. You can refer to [Passing variables between topics](/authoring-create-edit-topics#passing-variables-between-topics) to learn how to create Power Virtual Agents topics that return outputs.
+It is possible to receive outputs as variables from a Power Virtual Agents skill topic. You can refer to [Passing variables between topics](/authoring-create-edit-topics#passing-variables-between-topics) to learn how to create Power Virtual Agents topics that return outputs.
 
 If you have a Power Virtual Agents topic that returns output variables listed in your skill manifest, you can extract them in Composer by followng these steps:
 
