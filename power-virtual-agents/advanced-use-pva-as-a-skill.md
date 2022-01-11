@@ -179,7 +179,7 @@ You can use Power Virtual Agents bot skill manifests to create a skill connectio
     :::image type="content" source="media/PVA-as-a-skill/Composer_PVASkillAdded.png" alt-text="Composer - Power Virtual Agents skill added":::
 
 
-## Invoke a specific Power Virtual Agents skill's Topic
+## Call a specific Power Virtual Agents skill's topic
 You can directly call any specfic Power Virtual Agents skill topic in Bot Framework bot's business logic rather than rely on a user utterance to trigger it. Only the Power Virtual Agents topic that are listed in skill manifest can be directly invoked from your Bot Framework bot.
 
 
@@ -198,7 +198,7 @@ You can directly call any specfic Power Virtual Agents skill topic in Bot Framew
 4. Close the manifest window and go to **Activity** section in **Connect to a skill** panel.  Click on **Show code** option.
    :::image type="content" source="media/PVA-as-a-skill/ActivityShowCode.png" alt-text="Select Show Code option in Activity panel":::
   
-6. In the  **Show code** window, add the following code and use the **name** property that you have copied from the skill manifest. Make sure there are quotes in the **name** property. 
+6. In the  **Show code** window, add the following code and use the **name** property that you have copied from the skill manifest. Make sure there are no quotes in the **name** property. 
 ```
 [Activity
     type = event
@@ -207,7 +207,48 @@ You can directly call any specfic Power Virtual Agents skill topic in Bot Framew
 ```
  :::image type="content" source="media/PVA-as-a-skill/ActivityWithTopicName.png" alt-text="Add Activity event with Power Virtual Agents topic name to Show Code window":::
     
+## Pass an input variable to a Power Virtual Agents skill topic 
+It is possible to pass a variable to a Power Virtual Agents skill topic as an input from Bot Framework Composer. You can refer to [Passing variables between topics](/authoring-create-edit-topics#passing-variables-between-topics) to learn how to create Power Virtual Agents topics that would accept input variables.
+
+If you have a Power Virtual Agents topic that can receive an input varible listed in your skill manifest, you can pass a Composer variable to it by followng these steps:
+
+1. In the skill manifest, select full **name** property for the Power Virtual Agents topic that you want to call. Copy this **name** property (without quotes) and save it to use in the next steps.
+
+    :::image type="content" source="media/PVA-as-a-skill/SelectPVAName.png" alt-text="Select Power Virtual Agents topic name from the manifest":::
     
+2. Close the manifest window and go to **Activity** section in **Connect to a skill** panel.  Click on **Show code** option.
+   :::image type="content" source="media/PVA-as-a-skill/ActivityShowCode.png" alt-text="Select Show Code option in Activity panel":::
+  
+3. In the  **Show code** window, add the following code and use the **name** property that you have copied from the skill manifest. Make sure there are no quotes in the **name** property. 
+```
+[Activity
+    type = event
+    name = dispatchTo_new_topic_***
+]
+```
+ :::image type="content" source="media/PVA-as-a-skill/ActivityWithTopicName.png" alt-text="Add Activity event with Power Virtual Agents topic name to Show Code window":::
+ 
+## Receive an output variable from a Power Virtual Agents skill topic 
+It is possible to receive outputs variables from a Power Virtual Agents skill topic. You can refer to [Passing variables between topics](/authoring-create-edit-topics#passing-variables-between-topics) to learn how to create Power Virtual Agents topics that return outputs.
+
+If you have a Power Virtual Agents topic that returns output variables listed in your skill manifest, you can extract them in Composer by followng these steps:
+
+1. In the skill manifest, select full **name** property for the Power Virtual Agents topic that you want to call. Copy this **name** property (without quotes) and save it to use in the next steps.
+
+    :::image type="content" source="media/PVA-as-a-skill/SelectPVAName.png" alt-text="Select Power Virtual Agents topic name from the manifest":::
+    
+2. Close the manifest window and go to **Activity** section in **Connect to a skill** panel.  Click on **Show code** option.
+   :::image type="content" source="media/PVA-as-a-skill/ActivityShowCode.png" alt-text="Select Show Code option in Activity panel":::
+  
+3. In the  **Show code** window, add the following code and use the **name** property that you have copied from the skill manifest. Make sure there are no quotes in the **name** property. 
+```
+[Activity
+    type = event
+    name = dispatchTo_new_topic_***
+]
+```
+ :::image type="content" source="media/PVA-as-a-skill/ActivityWithTopicName.png" alt-text="Add Activity event with Power Virtual Agents topic name to Show Code window":::
+  
 ## Test you Power Virtual Agents bot as a skill with a Bot Framework bot
 
 You can test that your Bot Framework bot is properly calling a Power Virtual Agents bot as a skill by using the [Bot Framework Emulator](/composer/how-to-connect-to-a-skill#test-in-the-emulator).
