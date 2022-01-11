@@ -42,7 +42,7 @@ For users to use the service connection from the ALM Accelerator app the service
 
 1. Go to Azure DevOps.
 
-1. Open your project, and then select **Organization settings** in the bottom left corner to access project settings.
+1. Open your project, and then select **Organization settings** in the bottom-left corner to access project settings.
 
 1. Select **Service connections**, and then select the service connection to be shared with users from the **Service Connections** list.
 
