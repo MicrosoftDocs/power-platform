@@ -82,13 +82,13 @@ These topics fall into two categories:
 
 1. For **Name**, enter a name for your topic. You can also add a **Display name** and **Description**.
 
-    The display name is used when the bot needs to ask the person chatting which topic they're asking about.
+    The **Display name** is used by the bot when it needs to know which topic the person is asking about.
 
-    The description is never shown to users. Use this to describe the purpose of the topic to yourself and other bot makers.
+    The **Description** is never shown to users. Use this to describe the purpose of the topic to yourself and other bot makers.
 
     :::image type="content" source="media/authoring-create-edit-topics/details-pane.png" alt-text="The Topic details pane contains a name, display name, and description":::
 
-1. You can also rename the topic by selecting its name and entering a new value.
+    You can also rename the topic by selecting its name and entering a new value.
    
     :::image type="content" source="media/authoring-create-edit-topics/rename-topic-shortcut.png" alt-text="Quickly rename a topic by selecting its name":::
 

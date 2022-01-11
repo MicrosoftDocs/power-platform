@@ -48,7 +48,7 @@ This is just one example of many use cases of Power Virtual Agents chatbots in T
 
 ## Scenario
 
-You work in human resources (HR) at Contoso and need to build a human resources support bot in Microsoft Teams. This bot will answer common HR questions, like those related to time-off, with relevant information from the company's internal knowledge base. The bot can also contact human HR experts and notify them that an employee needs help for uncommon scenarios.
+You work in human resources (HR) at Contoso and need to build a HR support bot in Microsoft Teams. This bot will answer common HR questions, like those related to time-off, with relevant information from the company's internal knowledge base. The bot can also contact human HR experts and notify them that an employee needs help for uncommon scenarios.
 
 Once this bot is published, Contoso employees can access HR information in Microsoft Teams without needing to search the company's intranet. 
 

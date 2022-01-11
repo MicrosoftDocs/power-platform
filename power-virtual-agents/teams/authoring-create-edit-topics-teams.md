@@ -95,7 +95,7 @@ You can edit both of these topic types in the same manner as for topics you crea
 
     :::image type="content" source="../media/authoring-create-edit-topics/details-pane.png" alt-text="The Topic details pane contains a name, display name, and description":::
 
-1. You can also rename the topic by selecting its name and entering a new value.
+    You can also rename the topic by selecting its name and entering a new value.
    
     :::image type="content" source="../media/authoring-create-edit-topics/rename-topic-shortcut.png" alt-text="Quickly rename a topic by selecting its name":::
 

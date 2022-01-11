@@ -153,11 +153,12 @@ For more information on publishing your bot to other channels, see the documenta
 ## Analyze the performance of your bot
 
 1. Once your bot has completed interactions with users, the statistics are available on the **Analytics** tab in the side navigation pane. On the **Analytics** tab you'll find key performance indicators (KPIs) that show:
-   - the volume of sessions your bot has handled.
-   - how effectively your bot was able to engage end-users and resolve issues.
-   - escalation rates to human agents.
-   - abandonment rates during conversations .
-   - customer satisfaction information at the KPI level and in the **Customer Satisfaction** tab.
+   
+   - The volume of sessions your bot has handled.
+   - How effectively your bot was able to engage end-users and resolve issues.
+   - Escalation rates to human agents.
+   - Abandonment rates during conversations.
+   - Customer satisfaction information at the KPI level and in the **Customer Satisfaction** tab.
    
 
     > [!NOTE]
