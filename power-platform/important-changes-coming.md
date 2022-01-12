@@ -526,8 +526,10 @@ See [Important upcoming changes and deprecations in canvas apps](/powerapps/make
 See [Important changes coming in Power Apps portals](/powerapps/maker/portals/important-changes-deprecations).
 
 ## Other deprecation articles
-[Deprecations in Dynamics 365 Sales](/dynamics365/sales/deprecations-sales)<br/>
-[Deprecations in Dynamics 365 Customer Service](/dynamics365/customer-service/deprecations-customer-service)<br/>
+[Deprecated features in Dynamics 365 Sales](/dynamics365/sales/deprecations-sales)<br/>
+[Deprecated features in Dynamics 365 Customer Service](/dynamics365/customer-service/deprecations-customer-service)<br/>
+[Deprecated features in Dynamics 365 Field Service](/dynamics365/field-service/deprecations-field-service)<br/>
+[Deprecated features in Universal Resource Scheduling](/dynamics365/common-scheduler/deprecations)<br/>
 [Removed or deprecated features in Finance and Operations apps](/dynamics365/fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page)<br/>
 
 
