@@ -6,7 +6,7 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/22/2021
+ms.date: 01/12/2022
 ms.subservice: admin
 ms.author: astockli
 search.audienceType: 
@@ -96,7 +96,7 @@ To limit the impact on customers and their users, we plan the maintenance window
 
 To limit the impact on users, the maintenance window is planned according to the region where environments are deployed. The following list shows the maintenance window for each region. The times are shown in Coordinated Universal Time (UTC, which is also known as Greenwich Mean Time).
 
-The following are service update times. Database updates run 24 hours after service updates.
+The following are service update times. Database updates run as soon as possible depending on the system load during the maintenance window of the Dataverse environment.
 
 |Region | URL | Window (UTC) |
 | ------------- | -------------     | ------------- |
