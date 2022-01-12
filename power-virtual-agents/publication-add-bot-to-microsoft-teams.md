@@ -285,7 +285,7 @@ To allow users to add a bot to a team:
 
 5. Select **Save**.
    
-Microsoft Teams caches information, and so it could take a while before users see the option to add the bot to a team. Users can refresh the browser or sign in and out of the Microsoft Teams desktop client to reflect changes immediately.
+Microsoft Teams caches information, so it could take a while before users see the option to add the bot to a team. Users can refresh the browser or sign in and out of the Microsoft Teams desktop client to reflect changes immediately.
 
 If you've previously [submitted the bot for admin approval](#submit-for-the-built-by-your-org-section), you'll need to resubmit after enabling this option. The admin needs to approve these changes before users can add the bot to their teams from the Microsoft Teams app store in the "Built by your org" section.
 
@@ -373,7 +373,7 @@ You can always reconnect your bot after disconnecting by selecting **Turn on Tea
 
 
 ## Known limitations
-- Currently, only **Personal** and **Team** scope are supported for Microsoft Teams. **Group chat** is not supported.
+- Currently, only the **Personal** and **Team** scopes are supported for Microsoft Teams. **Group chat** is not supported.
 - [Setting the bot avatar icon](customize-default-canvas.md) from the side navigation pane **Manage** > **Details** will not show up for bots that are approved by an admin. Bots approved by an admin will use the app icon as the bot avatar.
 - Teams has [rate limiting](/microsoftteams/platform/concepts/bots/rate-limit) on bots. Depending on your business needs, you might want to keep your bot content concise for bots that are added to Microsoft Teams.
 - Currently, if your bot supports [end-user authentication](advanced-end-user-authentication.md), the user will not be able to explicitly sign out. This will fail the Microsoft Teams AppSource certification if you are publishing your bot in the Seller Dashboard. This does not apply to personal or tenant usage of the bot. Learn more at [Publish your Microsoft Teams app](/microsoftteams/platform/publishing/apps-publish) and [AppSource Validation Policy](/office/dev/store/validation-policies).
