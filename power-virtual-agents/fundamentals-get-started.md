@@ -27,6 +27,13 @@ Power Virtual Agents empowers teams to quickly and easily create powerful bots u
 
 This quickstart guide takes you through the end-to-end experience of creating a bot for the first time, adding topics to your bot, testing content changes in real time, deploying your bot to a test page, and analyzing the performance of your bot after it's been deployed. 
 
+> 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mLcX ]
+>
+
+> [!NOTE]
+> Parts of this video may show older versions of the app.
+
 In addition to this guide, you can also [download and use templates to help you create, develop, and publish chatbots with Power Virtual Agents](fundamentals-templates.md).
 
 
