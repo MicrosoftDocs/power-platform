@@ -193,12 +193,6 @@
 
         - name: Environment management
           href: coe/env-mgmt.md
-    - name: FAQ and Tips
-      href: coe/faq.md
-    - name: Limitations
-      href: coe/limitations.md
-    - name: Release notes
-      href: coe/release-notes.md
     - name: CoE command line interface
       href: coe/cli/overview.md
       items:
@@ -245,6 +239,13 @@
           href: coe/cli/cli-development/adding-new-command.md
         - name: Documentation
           href: coe/cli/cli-development/documentation.md
+
+    - name: FAQ and Tips
+      href: coe/faq.md
+    - name: Limitations
+      href: coe/limitations.md
+    - name: Release notes
+      href: coe/release-notes.md
     - name: Feedback and support
       href: coe/feedback-support.md
   - name: Automation adoption best practices
