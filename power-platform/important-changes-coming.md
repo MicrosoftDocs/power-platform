@@ -1,7 +1,7 @@
 ---
-title: "Important changes (deprecations) coming in Power Apps, Power Automate and customer engagement apps"
-description: Important changes (deprecations) coming in Power Apps, Power Automate and customer engagement apps 
-ms.date: 01/10/2022
+title: "Important changes (deprecations) coming in Power Apps and Power Automate"
+description: Important changes (deprecations) coming in Power Apps and Power Automate 
+ms.date: 01/12/2022
 ms.topic: "article"
 ms.assetid: 994cc854-17f6-45d6-bc20-fcf1a3f2d6d6
 searchScope:
@@ -14,11 +14,11 @@ ms.author: kvivek
 manager: annbe
 ---
 
-# Important changes (deprecations) coming in Power Apps, Power Automate, and customer engagement apps
+# Important changes (deprecations) coming in Power Apps and Power Automate
 
-The announcements and deprecations described in this article apply to Power Apps, Power Automate, and customer engagement apps. Engagement apps include Dynamics 365 Sales, Dynamics 365 Marketing, Dynamics 365 Field Service, and Dynamics 365 Project Service Automation.
+The announcements and deprecations described in this article apply to Power Apps and Power Automate. Admins and IT professionals can use this information to prepare for future releases. This article was first published on June 27, 2017.
 
-Admins and IT professionals can use this information to prepare for future releases. This article was first published on June 27, 2017.
+For deprecation information of other products, see [Other deprecation articles](#other-deprecation-articles) later in this article.
 
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability will continue to work and is fully supported until it is officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
@@ -525,9 +525,11 @@ See [Important upcoming changes and deprecations in canvas apps](/powerapps/make
 
 See [Important changes coming in Power Apps portals](/powerapps/maker/portals/important-changes-deprecations).
 
-## Release plans
+## Other deprecation articles
+[Deprecations in Dynamics 365 Sales](/dynamics365/sales/deprecations-sales)<br/>
+[Deprecations in Dynamics 365 Customer Service](/dynamics365/customer-service/deprecations-customer-service)<br/>
+[Removed or deprecated features in Finance and Operations apps](/dynamics365/fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page)<br/>
 
-[Removed or deprecated features in Finance and Operations apps](/dynamics365/fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page)
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
