@@ -266,7 +266,7 @@ In Microsoft Teams, you can [add bots to teams](/microsoftteams/platform/bots/ho
 ### Allow users to add bot to a team
 This option allows users to add the bot to any team that they're part of when adding the bot in Microsoft Teams.
 
-After enabling this option, any user who [installs the bot from the Teams app store](teams/publication-add-bot-to-microsoft-teams-teams.md#install-a-bot-as-an-app-in-microsoft-teams) or via [installation link](teams/publication-add-bot-to-microsoft-teams-teams.md#share-a-link-so-others-can-install-the-bot) will see the option to add the bot to a team in Microsoft Teams. Team members can also [remove the bot from a team](/powerapps/teams/remove-your-apps).
+After enabling this option, any user who [installs the bot from the Teams app store](teams/publication-add-bot-to-microsoft-teams-teams.md#install-a-bot-as-an-app-in-microsoft-teams) or via the [installation link](teams/publication-add-bot-to-microsoft-teams-teams.md#share-a-link-so-others-can-install-the-bot) will see the option to add the bot to a team in Microsoft Teams. Team members can also [remove the bot from a team](/powerapps/teams/remove-your-apps).
 
 >[!IMPORTANT]
 >The bot will be configured to allow everyone in the organization to chat with it. This ensures all team members have permission to chat with the bot in team channels. It's highly recommended to not change the security setting of the bot after enabling this capability to prevent users seeing permission errors when interacting with the bot in team channels.
@@ -287,7 +287,7 @@ To allow users to add a bot to a team:
    
 Microsoft Teams caches information, and so it could take a while before users see the option to add the bot to a team. Users can refresh the browser or sign in and out of the Microsoft Teams desktop client to reflect changes immediately.
 
-If you've previously [submitted the bot for admin approval](#submit-for-the-built-by-your-org-section), you'll need to resubmit after enabling this option. The admin needs to approve these changes before users can add the bot to their teams from Microsoft Teams app store in the "Built by your org" section.
+If you've previously [submitted the bot for admin approval](#submit-for-the-built-by-your-org-section), you'll need to resubmit after enabling this option. The admin needs to approve these changes before users can add the bot to their teams from the Microsoft Teams app store in the "Built by your org" section.
 
 
 ### Disallow users from adding bot to a team
@@ -308,15 +308,15 @@ To disallow users from adding a bot to a team:
 5. Select **Save**.
 
 ### Configure private greeting behavior
-Private greetings from a bot are useful for when you want team members to have 1:1 conversations with the bot without needing to manually install the bot themselves.
+Private greetings from a bot are useful for when you want team members to have one-on-one conversations with the bot without needing to manually install the bot themselves.
 
 When enabled, your bot will automatically start a conversation with team members. To customize the bot's greeting message, [modify the Greeting system topic](configure-bot-greeting.md#modify-the-system-greeting-topic-recommended).
 
 Consider how relevant the bot is to team members. Make sure the bot's greeting helps them understand what to do with it, describes its limitations and, most importantly, gets them comfortable interacting with it.
 
-To configure a when a bot sends a private greeting:
+To configure when a bot sends a private greeting:
 
-1. Go to **Manage**, then **Channels** on the side navigation pane. 
+1. Go to **Manage** and then **Channels** on the side navigation pane. 
 
 2. Select **Microsoft Teams**.
 

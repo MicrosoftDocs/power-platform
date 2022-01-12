@@ -28,9 +28,9 @@ After you've built a bot, you'll want people to use it.
 Now that you have published your bot, you can make your bot available to users in Microsoft Teams so you, your teammates, and the broader organization can interact with it. You need to [publish the bot at least once](publication-fundamentals-publish-channels-teams.md) before users can interact with the bot in Microsoft Teams. 
 
 You can:
-- Customize your bot's appearance in Microsoft Teams
-- Install the bot for yourself in Microsoft Teams
-- Share the bot's installation link with other users
+- Customize your bot's appearance in Microsoft Teams.
+- Install the bot for yourself in Microsoft Teams.
+- Share the bot's installation link with other users.
 - Show the bot in the Microsoft Teams app store.
    - Show the bot to your teammates or [shared users](admin-share-bots-teams.md) by adding it to the Microsoft Teams app store **Built by your colleagues** section.
    - Show the bot with your organization by submitting the bot for admin approval to be featured in the Microsoft Teams app store **Built by your org** section.
@@ -288,7 +288,7 @@ To add a bot to the team it was created in:
 ### Allow users to add bot to their teams
 This option allows users to add the bot to any team that they're part of when adding the bot in Microsoft Teams. 
 
-After enabling this option, any user who [installs the bot from the Teams app store](#install-a-bot-as-an-app-in-microsoft-teams) or via [installation link](#share-a-link-so-others-can-install-the-bot) will see the option to add the bot to a team in Microsoft Teams. Team members can also [remove the bot from a team](/powerapps/teams/remove-your-apps).
+After enabling this option, any user who [installs the bot from the Teams app store](#install-a-bot-as-an-app-in-microsoft-teams) or via the [installation link](#share-a-link-so-others-can-install-the-bot) will see the option to add the bot to a team in Microsoft Teams. Team members can also [remove the bot from a team](/powerapps/teams/remove-your-apps).
 
 >[!IMPORTANT]
 >The bot will be configured to allow everyone in the organization to chat with it. This ensures all team members have permission to chat with the bot in team channels. It's highly recommended to not change the security setting of the bot after enabling this capability to prevent users seeing permission errors when interacting with the bot in team channels.
@@ -297,7 +297,7 @@ To allow users to add a bot to a team:
 
 1. Go to the **Chatbot** tab.
 
-2. Open the bot you want to allow user to add to any team.
+2. Open the bot you want to allow users to add to any team.
 
 3. On the side navigation pane, select **Publish**.
 
@@ -338,7 +338,7 @@ To disallow users from adding a bot to a team:
 7. Select **Save**.
 
 ### Configure private greeting behavior
-Private greetings from a bot are useful for when you want team members to have 1:1 conversations with the bot without needing to manually install the bot themselves.
+Private greetings from a bot are useful for when you want team members to have one-on-one conversations with the bot without needing to manually install the bot themselves.
 
 When enabled, your bot will automatically start a conversation with team members. To customize the bot's greeting message, [modify the Greeting system topic](configure-bot-greeting-teams.md#change-the-bots-default-greeting).
 
@@ -424,7 +424,7 @@ You can always reconnect your bot after disconnecting it by selecting **Turn on 
 
 
 ## Known limitations
-- Currently, only **Personal** and **Team** scope are supported for Microsoft Teams. **Group chat** is not supported.
+- Currently, only the **Personal** and **Team** scopes are supported for Microsoft Teams. **Group chat** is not supported.
 - [Setting the bot avatar icon](customize-default-canvas-teams.md) from the side navigation pane under **Manage** > **Details** will not show up for bots that are approved by an admin. Bots approved by an admin will use the app icon as the bot avatar.
 - Teams has [rate limiting](/microsoftteams/platform/concepts/bots/rate-limit) on bots. Depending on your business needs, you might want to keep your bot content concise for bots that are added to Microsoft Teams.
 - Disconnecting your bot might take a few minutes before the bot becomes unreachable by users on Microsoft Teams.
