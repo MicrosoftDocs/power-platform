@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/10/2022
+ms.date: 01/12/2022
 ms.subservice: admin
 ms.author: jimholtz 
 search.audienceType: 
@@ -18,7 +18,10 @@ search.app:
 ---
 # Automatic environment cleanup
 
-Operational processes for datacenters periodically identify environments that do not have an active subscription. The automatic environment cleanup process starts after all commerce-based licenses acquired for a tenant reach a deprovisioned state. Environments within such a tenant are marked for deactivation and eventual deletion. These processes can free up capacity from environments that are not in use, so that you can apply it elsewhere in your tenant.
+Operational processes for datacenters periodically identify environments for tenants that do not have an active subscription. The automatic environment cleanup process starts after all commerce-based licenses acquired for a tenant reach a deprovisioned state. Environments within such a tenant are marked for deactivation and eventual deletion. You can renew or purchase a subscription for the tenant to return environments to **active** status.
+
+> [!TIP]
+> If you get notifications about exceeding your entitled storage capacity, see [Changes for exceeding storage capacity entitlements](capacity-storage.md#changes-for-exceeding-storage-capacity-entitlements) for actions you can take. 
 
 To see the status of your environments:
 
