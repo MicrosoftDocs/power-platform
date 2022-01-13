@@ -10,7 +10,7 @@ ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/20/2021
+ms.date: 01/13/2022
 search.audienceType: 
   - admin
 search.app:
@@ -57,7 +57,7 @@ Note the following about security groups:
 - If you do not specify a security group, all users who have a Dataverse license (customer engagement apps (such as Dynamics 365 Sales and Customer Service)) or per app plan will be added to the new environment.
 - **New**: Security groups cannot be assigned to default and developer environment types. If you've already assigned a security group to your default or developer environment, we recommend removing it since the default environment is intended to be shared with all users in the tenant and the developer environment is intended for use by only the owner of the environment.
 - Dataverse environments support associating the following group types: Security and Microsoft 365. Associating [other group types](/microsoft-365/admin/create-groups/compare-groups?view=o365-worldwide&WT.mc_id=365AdminCSH) is not supported.
-
+- When you select a security group, be sure to select an Azure AD security group and not one created in on-prem Windows Active Directory. On-prem Windows AD security groups aren't supported.
 <!-- 
 - When you remove a security group that is associated with a Dataverse environment, either by editing the environment and removing the security group or by deleting the security group, Dataverse licensed users who were members of the security group will have the same access to Dynamics 365 apps. 
 - You cannot yet make security groups members of other security groups. Check back for availability of support for nested security groups.
@@ -70,7 +70,7 @@ Note the following about security groups:
 
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).  
   
-2. Select **Groups** > **Groups**.  
+2. Select **Teams & groups** > **Active teams & groups**.  
   
 3. Select **+ Add a group**.  
   
