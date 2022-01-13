@@ -28,9 +28,6 @@ If there is a match, the Bot Framework bot will invoke the Power Virtual Agents 
 
 Additionally, when you add a Power Virtual Agents bot as a skill, you can invoke a specific Power Virtual Agents bot's Topic with inputs and outputs as part of business logic in your Bot Framework bot. 
 
->[!NOTE]
->This article is intended for system administrators or IT professionals who are familiar with [Bot Framework skills](/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0&preserve-view=true).
-
 >[!IMPORTANT]
 >This feature is not available with the [Teams Power Virtual Agents license](requirements-licensing-subscriptions.md).  
 >You must have a [trial](sign-up-individual.md) or full Power Virtual Agents license.
