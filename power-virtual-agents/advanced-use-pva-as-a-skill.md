@@ -34,10 +34,10 @@ Additionally, when you add a Power Virtual Agents bot as a skill, you can invoke
 
 To set up your Power Virtual Agents bot as a skill:
 
-1. You add the Bot Framework bot to the allowlist for the Power Virtual Agents bot.
-2. You download the skill manifest for the Power Virtual Agents bot.
-3. You use the downloaded skill manifest in Bot Framework Composer to create a connection between the bots.
-3. You test the bot works as a skill by using the Bot Framework Emulator.
+1. [Add the Bot Framework bot to the allowlist for the Power Virtual Agents bot](#add-your-bot-framework-bot-to-the-allowlist-for-your-power-virtual-agents-bot).
+2. [Download the skill manifest for the Power Virtual Agents bot](#download-the-bot-skill-manifest-for-your-power-virtual-agents-bot).
+3. [Use the downloaded skill manifest in Bot Framework Composer to create a connection between the bots](#connect-to-a-power-virtual-agents-skill-in-composer).
+3. [Test the bot works as a skill by using the Bot Framework Emulator](#test-your-power-virtual-agents-bot-as-a-skill-with-a-bot-framework-bot).
 
 ## Prerequisites
 
