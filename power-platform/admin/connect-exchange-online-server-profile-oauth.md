@@ -4,7 +4,7 @@ description: Exchange Online cross tenant authentication
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/30/2021
+ms.date: 01/13/2022
 author: revachauhan
 ms.author: rechauha
 ms.reviewer: mkaur
@@ -20,6 +20,11 @@ search.app:
 # Exchange Online cross-tenant authentication
 
 Use server-side synchronization to synchronize Exchange Online mailboxes that reside on different Exchange Online tenants. Follow the steps in this topic to complete the prerequisites before you set up an Exchange Online server profile that uses Oauth cross-tenant authentication. More information: [Create an email server profile for Exchange Online](connect-exchange-online.md#preview-create-an-email-server-profile-for-exchange-online)
+
+> [!NOTE]
+> The following limitations apply to connecting cross-tenant: 
+> - Dynamics 365 App for Outlook is not supported. 
+> - Approval of Dynamics 365 mailbox records must be performed by a global tenant admin or an Exchange admin of the primary tenant. 
 
 ## Configuration
 
