@@ -19,14 +19,12 @@ ms.collection: virtualagent
 
 You can use your Power Virtual Agents bot as a [skill](/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0&preserve-view=true) with Bot Framework bots. 
 
-If you already have Bot Framework bots in your organization, you can call a Power Virtual Agents bot as a skill from within your Bot Framework bots.
+When you add a Power Virtual Agents bot as a skill, the Bot Framework bot will determine if anything the bot user says matches [with any of the trigger phrases in the Power Virtual Agents bot](authoring-create-edit-topics.md). 
 
+If there is a match, the Bot Framework bot will invoke the Power Virtual Agents bot with the entire user utterance. The Power Virtual Agents bot will extract any [entities](advanced-entities-slot-filling.md) then trigger the matching topic.
 
-When you add a Power Virtual Agents bot as a skill, the Bot Framework bot will determine if anything the bot user says matches [with any of the trigger phrases in the Power Virtual Agent's bot](authoring-create-edit-topics.md). 
+Additionally, from a Bot Framework bot, you can invoke a Power Virtual Agents bot's topic with inputs and utilize the outputs it returns.
 
-If there is a match, the Bot Framework bot will invoke the Power Virtual Agents bot and pass the entire user utterance to it to extract any [entities](advanced-entities-slot-filling.md) and trigger a matching Power Virtual Agents topic.
-
-Additionally, when you add a Power Virtual Agents bot as a skill, you can invoke a specific Power Virtual Agents bot's Topic with inputs and outputs as part of business logic in your Bot Framework bot. 
 
 >[!IMPORTANT]
 >This feature is not available with the [Teams Power Virtual Agents license](requirements-licensing-subscriptions.md).  
