@@ -5,9 +5,9 @@ ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/13/2022
-author: revachauhan
-ms.author: rechauha
-ms.reviewer: mkaur
+author: mduelae
+ms.author: magatti
+ms.reviewer: magatti
 search.audienceType: 
   - admin
 search.app:
