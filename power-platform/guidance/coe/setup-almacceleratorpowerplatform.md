@@ -231,6 +231,7 @@ The **VerifyDefaultEnvironmentVariableValues** can be used to ensure that specif
    | Contribute | Allow |
    | Contribute to pull requests | Allow |
    | Create branch | Allow |
+   | Edit policies | Allow |
 
 1. Find and select the user name **[Your Project Name] Build Service ([Your Organization Name])** under **Users**, and then set the same values as above.
 
@@ -248,13 +249,21 @@ The **VerifyDefaultEnvironmentVariableValues** can be used to ensure that specif
    | View build pipeline                   | Allow |
    | View builds                           | Allow |
 
+1. Select **Service connections**, select the three dots in the top right corner, and then select **Security** and select **Add**.
+
+1. Find and select the user name **[Your Project Name] Build Service ([Your Organization Name])**, and then set the **Role** to Administrator and select **Add**.
+
+1. Select **Agent pools** and select **Security**, then select **Add**.
+
+1. Find and select the user name **[Your Project Name] Build Service ([Your Organization Name])**, and then set the **Role** to Reader and select **Add**.
+
 ## Development project set-up
 
 The following section guides you through the set-up steps required for each of the development projects you'll support. In this context, a development project signifies the required infrastructure and configuration needed to support healthy ALM including configuration of you Dataverse environment that will support the ALM process.
 
 ### Create service connections for DevOps to access Power Platform
 
-Each Dataverse environment, such as development, validation, test, and production), must have a Power Platform service connection in DevOps. For each of your environments, follow the steps below to set up the service connection.
+Each Dataverse environment, such as development, validation, test, and production, must have a Power Platform service connection in DevOps. For each of your environments, follow the steps below to set up the service connection.
 
 > [!NOTE]
 > Users of the AA4PP app only see environments for which they have either a user or administrator role on the service connection in DevOps. If using personal development environments, all developers should have a user or administrator role for the service connection for their own development environment. Validation, test, and production environment service connections only need permissions granted to pipelines. For example, build service.
@@ -263,7 +272,7 @@ Each Dataverse environment, such as development, validation, test, and productio
 
 1. Under **Project settings** in your DevOps project, select **Service connections**.
 
-1. Select **Create/New service connection**, search for P*ower Platform*, and then select the **Power Platform** service connection type. Select **Next**.
+1. Select **Create/New service connection**, search for Power Platform, and then select the **Power Platform** service connection type. Select **Next**.
 
 1. In the **Server URL**, put your environment URL. For example *https://myorg.crm.dynamics.com/*.
    > [!IMPORTANT]
@@ -272,6 +281,7 @@ Each Dataverse environment, such as development, validation, test, and productio
 1. Enter the same URL as in step 4 for the **Service Connection Name**.
 
    > [!IMPORTANT]
+   >
    > - AA4PP will use the service connection name to identify the service connection to use per environment, so this needs to be the same URL you entered in step 4.
    > - You must include the trailing forward slash after the URL. In the example above it is .com/.
 
@@ -338,7 +348,7 @@ The following steps show how to create a pipeline from the sample pipeline YAML.
 
 1. In DevOps, go to the repo that contains the [pipelines folder you committed](#clone-the-yaml-pipelines-from-github-to-your-devops-instance), and select the **Pipelines** folder.
 
-1. Open the sample deployment pipeline (that is, **build-deploy-validation-SampleSolution.yml**, **build-deploy-test-SampleSolution.yml**, or **build-deploy-prod-SampleSolution.yml**) and copy the YAML to use in your new Pipeline. 
+1. Open the sample deployment pipeline (that is, **build-deploy-validation-SampleSolution.yml**, **build-deploy-test-SampleSolution.yml**, or **build-deploy-prod-SampleSolution.yml**) and copy the YAML to use in your new Pipeline.
 1. Note the name of the repo for use in your pipeline.
 
 1. Go to the repo where you want to source control your solution.
@@ -438,7 +448,7 @@ The **ServiceConnection** variable is used to specify how the deployment pipelin
 
 #### Create EnableFlows variable (optional)
 
-You can optionally set a pipeline variable on your deployment pipelines to turn off the automatic enabling of flows after your solution is imported. This variable is **EnableFlows**. Setting EnableFlows to 'false' results in the pipeline skipping the steps to enable Power Automate flows as part of your deployment. The default of the EnableFlows variable value is 'true'. 
+You can optionally set a pipeline variable on your deployment pipelines to turn off the automatic enabling of flows after your solution is imported. This variable is **EnableFlows**. Setting EnableFlows to 'false' results in the pipeline skipping the steps to enable Power Automate flows as part of your deployment. The default of the EnableFlows variable value is 'true'.
 
 > [!NOTE]
 > You only need to set the EnableFlows variable if you want to skip enabling flows after your solution is imported.
