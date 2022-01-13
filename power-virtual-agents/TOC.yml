@@ -100,7 +100,7 @@
             href: configuration-add-skills.md
           - name: Use Bot Framework Skills
             href: advanced-use-skills.md
-          - name: Use a Power Virtual Agents bot as a skill (Preview)
+          - name: Use a Power Virtual Agents bot as a skill
             href: advanced-use-pva-as-a-skill.md
           - name: Use Bot Framework Composer
             items:
