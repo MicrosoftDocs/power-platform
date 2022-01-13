@@ -176,7 +176,7 @@ You can use Power Virtual Agents bot skill manifests to create a skill connectio
     :::image type="content" source="media/PVA-as-a-skill/Composer_PVASkillAdded.png" alt-text="Composer - Power Virtual Agents skill added.":::
 
 
-## Call a specific Power Virtual Agents skill topic
+### Call a specific Power Virtual Agents skill topic
 You can directly call any specific Power Virtual Agents skill topic in Bot Framework bot's business logic rather than rely on a user utterance to trigger it. Only the Power Virtual Agents topic that are listed in skill manifest can be directly invoked from your Bot Framework bot.
 
 
@@ -204,7 +204,7 @@ You can directly call any specific Power Virtual Agents skill topic in Bot Frame
 ```
  :::image type="content" source="media/PVA-as-a-skill/ActivityWithTopicName.png" alt-text="Add Activity event with Power Virtual Agents topic name to Show Code window.":::
     
-## Pass an input variable to a Power Virtual Agents skill topic 
+### Pass an input variable to a Power Virtual Agents skill topic 
 It is possible to pass a variable to a Power Virtual Agents skill topic as an input from Bot Framework Composer. You can refer to [Passing variables between topics](/authoring-create-edit-topics#passing-variables-between-topics) to learn how to create Power Virtual Agents topics that would accept input variables.
 
 If you have a Power Virtual Agents topic that can receive an input variole listed in your skill manifest, you can pass a Composer variable to it.
@@ -234,7 +234,7 @@ If you have a Power Virtual Agents topic that can receive an input variole liste
 ```
  :::image type="content" source="media/PVA-as-a-skill/Lesson2_InputsActivityCode.png" alt-text="Add Activity event with a Power Virtual Agents input value to Show Code window.":::
  
-## Receive an output variable from a Power Virtual Agents skill topic 
+### Receive an output variable from a Power Virtual Agents skill topic 
 It is possible to receive outputs from a Power Virtual Agents skill topic in Composer. You can refer to [Passing variables between topics](/authoring-create-edit-topics#passing-variables-between-topics) to learn how to create Power Virtual Agents topics that return outputs.
 
 If you have a Power Virtual Agents skill topic that returns outputs, you can extract these outputs as variables in Composer:
