@@ -193,7 +193,7 @@ You can directly call any specfic Power Virtual Agents skill topic in Bot Framew
 
 3. In the skill manifest, select full **name** property for the Power Virtual Agents topic that you want to call. Copy this **name** property (without quotes) and save it to use in the next steps.
 
-    :::image type="content" source="media/PVA-as-a-skill/SelectPVAName.png" alt-text="Select Power Virtual Agents topic name from the manifest":::
+    :::image type="content" source="media/PVA-as-a-skill/SelectPVATopicName.png" alt-text="Select Power Virtual Agents topic name from the manifest":::
     
 4. Close the manifest window and go to **Activity** section in **Connect to a skill** panel.  Click on **Show code** option.
    :::image type="content" source="media/PVA-as-a-skill/ActivityShowCode.png" alt-text="Select Show Code option in Activity panel":::
@@ -214,7 +214,7 @@ If you have a Power Virtual Agents topic that can receive an input varible liste
 
 1. In the skill manifest, select full **name** property for the Power Virtual Agents topic that you want to call. Copy this **name** property (without quotes); you will use in the next steps.
 
-    :::image type="content" source="media/PVA-as-a-skill/SelectPVAName.png" alt-text="Select Power Virtual Agents topic name from the manifest":::
+    :::image type="content" source="media/PVA-as-a-skill/SelectPVATopicName.png" alt-text="Select Power Virtual Agents topic name from the manifest":::
     
 2. If a Power Virtual Agents topic has **inputs**, there will a **value** propertylisted in skill manifest. Take note of the **$ref** in **value** property as you will use it to locate the in the next step.
 
@@ -244,7 +244,7 @@ If you have a Power Virtual Agents skill topic that returns outputs, you can ext
 
 1. In the skill manifest, select full **name** property for the Power Virtual Agents topic that you want to call. Copy this **name** property (without quotes) and save it to use in the next steps.
 
-    :::image type="content" source="media/PVA-as-a-skill/SelectPVAName.png" alt-text="Select Power Virtual Agents topic name from the manifest":::
+    :::image type="content" source="media/PVA-as-a-skill/SelectPVATopicName.png" alt-text="Select Power Virtual Agents topic name from the manifest":::
     
 2. If a Power Virtual Agents topic has **outputs**, there will a **resultValue** property listed in skill manifest. Take note of the **$ref** in the **resultValue** property; you will use it to locate the in the next step.
 
