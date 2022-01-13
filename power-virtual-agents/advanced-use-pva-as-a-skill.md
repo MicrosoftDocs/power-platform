@@ -273,7 +273,7 @@ If you have a Power Virtual Agents skill topic that returns outputs, you can ext
 8. Extract the output values from **dialog.skillResult.pvaState** and **dialog.skillResult.pvaItem** into new Composer variables **dialog.State** and **dialog.Item** in **Set properties** window.
 :::image type="content" source="media/PVA-as-a-skill/Lesson3_ExtractTopicOutputs.png" alt-text="Save the output values into dialog.State and dialog.Item in Composer Set properties window.":::
   
-## Test you Power Virtual Agents bot as a skill with a Bot Framework bot
+## Test your Power Virtual Agents bot as a skill with a Bot Framework bot
 
 You can test that your Bot Framework bot is properly calling a Power Virtual Agents bot as a skill by using the [Bot Framework Emulator](/composer/how-to-connect-to-a-skill#test-in-the-emulator).
 
