@@ -28,14 +28,14 @@ While the specific pattern of how a Power Platform service connects to external 
 
 ## Connecting to Microsoft Dataverse
 
-Power Platform services use connectors to work with external data sources generally. However, Power Apps (canvas and model driven apps) connects directly to Dataverse without using any underlining connectors. Canvas apps do store consent to work with other Dataverse environments in the Power Apps Request Processor (RP). Similarly, Power Automate first authenticates using an API Hub, but all data interactions after that are direct to Dataverse. Both Power Apps and Power Automate support legacy connectors that access Dataverse using connectors (for example, [Dynamics 365 (deprecated)](/connectors/dynamicscrmonline/) and [Microsoft Dataverse (legacy)](/connectors/commondataservice/)).
+Power Platform services use connectors to work with external data sources generally. However, Power Apps (canvas and model driven apps) connects directly to Dataverse without using any underlining connectors. Canvas apps do store consent to work with other Dataverse environments in the Power Apps Resource Provider (RP). Similarly, Power Automate first authenticates using an API Hub, but all data interactions after that are direct to Dataverse. Both Power Apps and Power Automate support legacy connectors that access Dataverse using connectors (for example, [Dynamics 365 (deprecated)](/connectors/dynamicscrmonline/) and [Microsoft Dataverse (legacy)](/connectors/commondataservice/)).
 
 > [!NOTE]
 > Creating canvas apps with [Start from data](/powerapps/maker/canvas-apps/data-platform-create-app) uses a placeholder connector icon to allow the abovementioned path for connecting to Dataverse. However, there's no actual connector involved. Legacy connectors mentioned above also use connectors. More information: [Connect canvas apps to Microsoft Dataverse](/powerapps/maker/canvas-apps/connections/connection-common-data-service)
 
 The following diagram shows how canvas apps work with Dataverse.
 
-:::image type="content" source="./media/PowerAppToDataverse.png" alt-text="Diagram showing that Power Apps connects directly to Dataverse.  Power Apps back-end cluster works directly with Dataverse. No explicit separate connection is made.  Consent to working with other environments is stored in the Power Apps request processor.":::
+:::image type="content" source="./media/PowerAppToDataverse.png" alt-text="Diagram showing that Power Apps connects directly to Dataverse.  Power Apps back-end cluster works directly with Dataverse. No explicit separate connection is made.  Consent to working with other environments is stored in the Power Apps Resource Provider.":::
 
 **Step 1** - Power Apps back-end services request data from Dataverse directly.
 <br>**Step 2** - Dataverse returns query results back to Power Apps back-end services.
@@ -46,7 +46,7 @@ Power Platform services use connectors to work with all other data sources. The 
 
 :::image type="content" source="./media/generaldataconnection.png" alt-text="Power Platform connector model. Power Platform back-end cluster services work with external services such as API Hub/APIM to reach connectors that retrieve data.":::
 
-**Steps 1-2** - Power Platform service requests a connection of the Power Apps Request Processor (RP) service. Power Apps RP requests API Hub to create and store the connection and credentials.
+**Steps 1-2** - Power Platform service requests a connection of the Power Apps Resource Provider (RP) service. Power Apps RP requests API Hub to create and store the connection and credentials.
 
 **Steps 3-6** - Having previously secured an authenticated connection, a user requests data through a query. And the request goes directly to APIM. The APIM uses the consent service to get user permission to access the data source.
 
