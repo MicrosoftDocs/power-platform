@@ -41,6 +41,8 @@ landingContent:
             url: control-environment-creation.md
           - text: Restrict cross-tenant access
             url: cross-tenant-restrictions.md
+          - text: Content security policy
+            url: content-security-policy.md
           - text: Administration mode
             url: admin-mode.md
        - linkListType: concept
