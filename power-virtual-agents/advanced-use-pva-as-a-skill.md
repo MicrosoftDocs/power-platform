@@ -202,7 +202,7 @@ You can directly call any specific Power Virtual Agents skill topic in Bot Frame
 ### Pass an input variable to a Power Virtual Agents skill topic 
 It is possible to pass a variable to a Power Virtual Agents skill topic as an input from Bot Framework Composer. You can refer to [Passing variables between topics](/authoring-create-edit-topics#passing-variables-between-topics) to learn how to create Power Virtual Agents topics that would accept input variables.
 
-If you have a Power Virtual Agents topic that can receive an input variole listed in your skill manifest, you can pass a Composer variable to it.
+If you have a Power Virtual Agents topic that can receive an input variable listed in your skill manifest, you can pass a Composer variable to it.
 
 1. In the skill manifest, select full **name** property for the Power Virtual Agents topic that you want to call. Copy this **name** property (without quotes); you will use in the next steps.
 
