@@ -1,7 +1,7 @@
 ---
 title: "Content security policy"
 description: "Use content security policy to control which assets can be downloaded by model-driven app customizations."  
-ms.date: 01/09/2022
+ms.date: 01/14/2022
 ms.service: power-platform
 ms.suite: ""
 ms.tgt_pltfrm: ""
