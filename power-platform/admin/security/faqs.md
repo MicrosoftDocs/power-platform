@@ -94,7 +94,7 @@ The below are some of the common security questions that customers have raised i
   - To be updated.
   
   ### Does Power Platform support Content Security Policy ([CSP](https://owasp.org/www-community/controls/Content_Security_Policy))?
-  - Yes, CSP can be enabled and configured using [the docs](/power-platform/admin/content-security-policy.md).  The doc also gives a roadmap of improvements we will make to CSP in the future.
+  - Yes, CSP can be enabled and configured using [the docs](/power-platform/admin/content-security-policy).  The doc also gives a roadmap of improvements we will make to CSP in the future.
 
   ### How can we connect to SQL Server securely?
   - The best practices for securely connecting to external data sources has been documented [here](https://powerapps.microsoft.com/blog/best-security-practices-for-power-apps/).
