@@ -64,7 +64,8 @@ Most of these users are hidden from user views but they can be found by using th
 | | Dynamics365 SalesForecasting | Dynamics365SalesForecasting@onmicrosoft.com | To fetch table data and metadata for forecasting feature | ForecastAppUser    |
 | | # Omnichannel | Ominichannel@onmicrosoft.com | To perform data integration between Omnichannel for Customer Service and Dataverse | System admin    |
 | | # Flow-RP | Flow-RP@onmicrosoft.com | To allow Power Automate to integrate with Dataverse | Flow-RP Role, Service Reader |
-
+| | # DataSyncService-\<REGION\> | DataSyncService-\<REGION\>@onmicrosoft.com | To read data for Azure Data Lake sync | Data Sync Service Role |
+| | # DataSyncFramework-\<REGION\> | DataSyncFramework-\<REGION\>@onmicrosoft.com | To read data for Azure Data Lake sync | Data Sync Framework Role |
 
 **The purpose of the system account?** 
 - The System user is a built-in user account that is used to allow customers to perform system updates via plug-ins. 
