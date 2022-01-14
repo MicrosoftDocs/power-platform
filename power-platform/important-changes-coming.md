@@ -1,7 +1,7 @@
 ---
-title: "Important changes (deprecations) coming in Power Apps, Power Automate and customer engagement apps"
-description: Important changes (deprecations) coming in Power Apps, Power Automate and customer engagement apps 
-ms.date: 12/02/2021
+title: "Important changes (deprecations) coming in Power Apps and Power Automate"
+description: Important changes (deprecations) coming in Power Apps and Power Automate 
+ms.date: 01/12/2022
 ms.topic: "article"
 ms.assetid: 994cc854-17f6-45d6-bc20-fcf1a3f2d6d6
 searchScope:
@@ -14,11 +14,11 @@ ms.author: kvivek
 manager: annbe
 ---
 
-# Important changes (deprecations) coming in Power Apps, Power Automate, and customer engagement apps
+# Important changes (deprecations) coming in Power Apps and Power Automate
 
-The announcements and deprecations described in this article apply to Power Apps, Power Automate, and customer engagement apps. Engagement apps include Dynamics 365 Sales, Dynamics 365 Marketing, Dynamics 365 Field Service, and Dynamics 365 Project Service Automation.
+The announcements and deprecations described in this article apply to Power Apps and Power Automate. Admins and IT professionals can use this information to prepare for future releases. This article was first published on June 27, 2017.
 
-Admins and IT professionals can use this information to prepare for future releases. This article was first published on June 27, 2017.
+For deprecation information of other products, see [Other deprecation articles](#other-deprecation-articles) later in this article.
 
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability will continue to work and is fully supported until it is officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
@@ -333,11 +333,6 @@ Effective March 2, 2020, the *regional* [Discovery Service](/powerapps/developer
 
 Customers must transition to using the [global OData V4 Discovery Service](/powerapps/developer/common-data-service/webapi/discover-url-organization-web-api#global-discovery-service) before April 21, 2021 so their applications aren't impacted. More information: [Modify your code to use global Discovery Service](/powerapps/developer/common-data-service/webapi/discovery-orgsdk-to-webapi).
 
-## Rules feature in canvas apps is deprecated
-
-Effective October 14, 2019, the [rules](/powerapps/maker/canvas-apps/working-with-rules) feature in canvas apps in Power Apps is deprecated. Few people have made use of rules in their canvas apps. From feedback collected through research and discussions with makers of Power Apps, the rules feature was confusing, and expressions were easier to learn, use, and debug. For more information about the rules feature deprecation, see [Blog: Canvas Rules feature deprecation](https://powerapps.microsoft.com/blog/canvas-rules-feature-deprecation/).
-
-
 ## Legacy web client is deprecated
 
 As of September 2019, the legacy web client is deprecated. Customers must transition to Unified Interface before December 4, 2020. Microsoft will continue to provide support, security, and other critical updates to the legacy web client until December 4, 2020 but won't release any more functionality beyond what has already been announced.
@@ -522,13 +517,21 @@ supported on Unified Interface. Instead of Silverlight web resources, you must u
 controls created using the HTML web resources
 with HTML5 to create UI components to visualize and interact with data.
 
+## Canvas apps
+
+See [Important upcoming changes and deprecations in canvas apps](/powerapps/maker/canvas-apps/important-changes-deprecations).
+
 ## Power Apps portals
 
 See [Important changes coming in Power Apps portals](/powerapps/maker/portals/important-changes-deprecations).
 
-## Release plans
+## Other deprecation articles
+[Deprecated features in Dynamics 365 Sales](/dynamics365/sales/deprecations-sales)<br/>
+[Deprecated features in Dynamics 365 Customer Service](/dynamics365/customer-service/deprecations-customer-service)<br/>
+[Deprecated features in Dynamics 365 Field Service](/dynamics365/field-service/deprecations-field-service)<br/>
+[Deprecated features in Universal Resource Scheduling](/dynamics365/common-scheduler/deprecations)<br/>
+[Removed or deprecated features in Finance and Operations apps](/dynamics365/fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page)<br/>
 
-[Removed or deprecated features in Finance and Operations apps](/dynamics365/fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page)
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
