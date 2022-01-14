@@ -53,7 +53,7 @@ Power Platform services use connectors to work with all other data sources. The 
 For Power Apps, the consent triple (*Connection*, *Application*, *User*) is stored in Power Apps RP so that Power Apps doesn't prompt for consent when the user requests data subsequently.
 
 > [!NOTE]
-> Consent for a given connection application combination does not give consent for all applications. Each application connection consent per user is separate. For Power Automate, this is the double (Connection, User). Consent is not required for subsequent use of the connection.
+> Consent for a given connection application combination does not give consent for all applications. Each application connection consent per user is separate. For Power Automate, when a user provides a connection which they access to for use in a flow, they consent for the flow to use that connection going forward. Additional consent is not required for subsequent use of that connection in that flow. For a connection provided by a flow author, this consent double is (Connection, Flow). For a connection provided by a user invoking a flow (e.g. from a PowerApp) this is a consent triple of (Connection, Flow, User).
 
 **Steps 7-8** - The data query is passed on to the connector&mdash;which then passes it on to the actual data source.
 
