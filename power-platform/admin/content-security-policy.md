@@ -28,7 +28,7 @@ search.app:
 > [!NOTE]
 > CSP is curently only supported in model-driven apps.  Canvas app support is on the roadmap, and will be enabled by April 2022.
 
-- [IsContentSecurityPolicyEnabled](/powerapps/developer/data-platform/reference/entities/organization#BKMK_IsContentSecurityPolicyEnabled) controls whether the Content-Security-Policy header is sent in the base app page (main.aspx).  By default, the header is set to `script-src * 'unsafe-inline' 'unsafe-eval';style-src * 'unsafe-inline'; font-src * data: ;frame-ancestors 'self';`. Each component of this header value controls the assets that can be downloaded and is described in more detail on MDN:
+- [IsContentSecurityPolicyEnabled](/powerapps/developer/data-platform/reference/entities/organization#BKMK_IsContentSecurityPolicyEnabled) controls whether the Content-Security-Policy header is sent in the base app page (main.aspx).  By default, the header is set to `script-src * 'unsafe-inline' 'unsafe-eval'; worker-src 'self' blob:;style-src * 'unsafe-inline'; font-src * data: ;frame-ancestors 'self';`. Each component of this header value controls the assets that can be downloaded and is described in more detail on MDN:
   - [script-src](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/script-src)
   - [style-src](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/style-src)
   - [font-src](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/font-src)
