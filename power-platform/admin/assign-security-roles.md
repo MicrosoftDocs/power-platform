@@ -9,7 +9,7 @@ ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/26/2021
+ms.date: 01/13/2022
 search.audienceType: 
   - admin
 search.app:
@@ -53,14 +53,14 @@ Follow these steps to assign a security role.
 
    :::image type="content" source="media/manage-security-roles-page.png" alt-text="Manage security roles page.":::
 
-> When the [allow record ownership across business units](wp-security-cds.md#to-enable-this-matrix-data-access-structure-preview) is enabled, you can select security roles from different business unit. 
+When the [allow record ownership across business units](wp-security-cds.md#to-enable-this-matrix-data-access-structure-preview) is enabled, you can select security roles from different business unit. 
 
 > [!IMPORTANT] 
 > You must assign at least one security role to every user either directly or indirectly as a member of a [group team](manage-group-teams.md). The service doesn't allow access to users who don't have at least one security role.
 
 ## User settings privileges for record ownership across business units
 
-> If you have enabled [allow record ownership across business units](wp-security-cds.md#to-enable-this-matrix-data-access-structure-preview), your users can be created in the root business unit, and their data access is managed by assigning security roles from respective business units. The root business unit's users still required a security role with these privileges in order to create/update user settings:
+If you have enabled [allow record ownership across business units](wp-security-cds.md#to-enable-this-matrix-data-access-structure-preview), your users can be created in the root business unit, and their data access is managed by assigning security roles from respective business units. The root business unit's users still required a security role with these privileges in order to create/update user settings:
   
 - Action Card User Settings
 - Saved View
