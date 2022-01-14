@@ -94,11 +94,7 @@ The below are some of the common security questions that customers have raised i
   - To be updated.
   
   ### Does Power Platform support Content Security Policy ([CSP](https://owasp.org/www-community/controls/Content_Security_Policy))?
-  - There are various directives that can be configured as part of CSP. Currently only the [frame-ancestors](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/frame-ancestors) directive is supported by UCI/CRM as documented in the [Developer Reference](/powerapps/developer/data-platform/reference/entities/organization#BKMK_ContentSecurityPolicyConfiguration). 
-  - Supporting CSP is an important priority for Power Platform. There will be more updates coming in a future roadmap regarding CSP support like:
-    - Full blog post on how to implement CSP for Unified Interface
-    - Supporting all available CSP directives
-    - Same CSP support for Canvas applications
+  - Yes, CSP can be enabled and configured using [the docs](/power-platform/admin/content-security-policy.md).  The doc also gives a roadmap of improvements we will make to CSP in the future.
 
   ### How can we connect to SQL Server securely?
   - The best practices for securely connecting to external data sources has been documented [here](https://powerapps.microsoft.com/blog/best-security-practices-for-power-apps/).
