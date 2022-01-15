@@ -41,7 +41,12 @@ search.app:
 
 Currently, there is no UI for editing these attributes, but we do plan to expose these in the Power Platform admin center in the future.  In the meantime, you can use the below script to enable and update the frame-ancestors attribute.  **It is important to enable on a dev/test environment first** since enabling this could start blocking assets from being downloaded if the policy is violated.  We plan to support a "report-only mode" in the future to allow for easier ramp-up in production.
 
-To revert to the default configuration (with CSP enabled), run `enableFrameAncestors(["'self'"])`.  To disable CSP, run `disableCSP()`.
+Steps:
+- Open browser dev tools while using the model-driven app as a user with organization entity update privileges (System Administrator is a good option).
+- Paste and execute the below script into the console.
+- To simply enable CSP, pass the default configuration - `enableFrameAncestors(["'self'"])`
+- As an example of enabling additional origins to embed the app - `enableFrameAncestors(["*.powerapps.com", "'self'", "abcxyz"])`
+- To disable CSP - `disableCSP()`
 
 ```js
 async function enableFrameAncestors(sources) {
