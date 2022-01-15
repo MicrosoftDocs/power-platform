@@ -4,7 +4,7 @@ description: "Use Power Virtual Agents in Teams to create chatbots for fellow em
 keywords: "PVA, teams"
 ms.date: 9/22/2020
 ms.service: power-virtual-agents
-ms.topic: article
+ms.topic: overview
 author: iaanw
 ms.author: iawilt
 manager: shellyha

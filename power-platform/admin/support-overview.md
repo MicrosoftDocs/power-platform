@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.service: power-platform
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: overview
 ms.custom: 
   - "admin-security"
   - "intro-internal"

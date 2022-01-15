@@ -4,8 +4,8 @@ description: Overview of licensing in Microsoft Power Platform (Power Apps, Powe
 author: dileepsinghmicrosoft
 ms.service: power-platform
 ms.component: pa-admin
-ms.topic: conceptual
-ms.custom: intro-internal
+ms.topic: overview
+
 ms.date: 06/16/2021
 ms.subservice: admin
 ms.author: dileeps
