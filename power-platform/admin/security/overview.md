@@ -63,19 +63,19 @@ The Power Platform services are built on Azure, Microsoft's cloud computing plat
 
    ![Power Platform service architecture.](./media/PowerPlatformBasicArch.png "Various front-end technologies (web front end, mobile, embedded, and other) flowing to Power Platform back-end clusters.")
 
-### Web front-end cluster (WFE)
+### Web front-end cluster 
 
-For the Power Platform services that display UI, the WFE cluster provides the user's browser with the initial HTML page contents on site load and manages the initial connection and authentication process using Azure Active Directory (Azure AD) to authenticate clients and provide tokens for subsequent client connections to the Power Platform back-end service.
+For the Power Platform services that display UI, the web front-end cluster provides the user's browser with the initial HTML page contents on site load and manages the initial connection and authentication process using Azure Active Directory (Azure AD) to authenticate clients and provide tokens for subsequent client connections to the Power Platform back-end service.
 
-  ![Web front end cluster.](./media/WFEcluster.png "Web front-end cluster (WFE) depends on the Azure App Service environment which in turn depends on ASP.NET.  WFE talks to Power Platform service back-ends.")
+  ![Web front end cluster.](./media/WFEcluster.png "Web front-end cluster depends on the Azure App Service environment which in turn depends on ASP.NET.  Web front-end talks to Power Platform service back-ends.")
 
-A WFE cluster consists of an ASP.NET website running in the Azure App Service Environment. When users attempt to connect to a Power Platform service, the client's DNS service may communicate with the Azure Traffic Manager to find the most appropriate (usually nearest) datacenter with the Power Platform service's deployment. For more information about this process, see [Performance traffic-routing method for Azure Traffic Manager](/azure/traffic-manager/traffic-manager-routing-methods#performance-traffic-routing-method).
+A web front-end  cluster consists of an ASP.NET website running in the Azure App Service Environment. When users attempt to connect to a Power Platform service, the client's DNS service may communicate with the Azure Traffic Manager to find the most appropriate (usually nearest) datacenter with the Power Platform service's deployment. For more information about this process, see [Performance traffic-routing method for Azure Traffic Manager](/azure/traffic-manager/traffic-manager-routing-methods#performance-traffic-routing-method).
 
-The WFE cluster assigned to the user manages the login and authentication sequence (described later in this article) and obtains an Azure AD access token once authentication is successful. The ASP.NET component within the WFE cluster parses the token to determine which organization the user belongs to, and then consults the Power Platform service back-end global service. The WFE specifies to the browser which back-end cluster houses the organization's tenant.
+The web front-end cluster assigned to the user manages the login and authentication sequence (described later in this article) and obtains an Azure AD access token once authentication is successful. The ASP.NET component within the web front-end cluster parses the token to determine which organization the user belongs to, and then consults the Power Platform service back-end global service. The web front-end specifies to the browser which back-end cluster houses the organization's tenant.
 
-Once a user is authenticated, subsequent client interactions for customer data occur with the back-end  cluster directly without the WFE being an intermediator for those requests. Static resources such as *.js,*.css, and image files are mostly stored on Azure Content Delivery Network (CDN) and retrieved directly by the browser.
+Once a user is authenticated, subsequent client interactions for customer data occur with the back-end  cluster directly without the web front-end being an intermediator for those requests. Static resources such as *.js,*.css, and image files are mostly stored on Azure Content Delivery Network and retrieved directly by the browser.
 
-Note that Sovereign Government cluster deployments are an exception to this rule, and for compliance reasons will omit the CDN and instead use a WFE cluster from a compliant region for hosting static content.
+Note that Sovereign Government cluster deployments are an exception to this rule, and for compliance reasons will omit the Azure Content Delivery Network and instead use a web front-end cluster from a compliant region for hosting static content.
 
 ### Power Platform back-end clusters
 
@@ -85,7 +85,7 @@ Each back-end cluster is stateful and hosts all the data of all the tenants assi
 
 Each back-end cluster consists of multiple virtual machines combined into multiple resizable-scale sets tuned for performing specific tasks, stateful resources such as SQL Azure databases, storage accounts, service buses, caches, and other necessary cloud components.
 
-Tenant metadata and data are stored within cluster limits, except for data replication to a secondary back-end cluster in a paired Azure region in the same Azure geography. The secondary back-end cluster serves as a failover cluster in case of regional outage, and is passive at any other time. The back-end (“BE”) functionality is also serviced by micro-services running on different machines within the cluster’s virtual network that are not accessible from the outside, except for two components that can be accessed from the public internet:
+Tenant metadata and data are stored within cluster limits, except for data replication to a secondary back-end cluster in a paired Azure region in the same Azure geography. The secondary back-end cluster serves as a failover cluster in case of regional outage, and is passive at any other time. The back-end functionality is also serviced by micro-services running on different machines within the cluster’s virtual network that are not accessible from the outside, except for two components that can be accessed from the public internet:
 
 - Gateway Service
 - Azure API Management
@@ -125,7 +125,7 @@ The Power Platform services securely store data on the device that facilitates u
 
 Data encryption can be enhanced by applying file-level encryption via Microsoft Intune, a software service that provides mobile device and application management. All three platforms for which the Power Platform Mobile apps are available support Intune. With Intune enabled and configured, data on the mobile device is encrypted, and the Power Platform application itself cannot be installed on an SD card. Learn more about [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune). The Windows app also supports [Windows Information Protection (WIP)](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip).  
 
-In order to implement SSO, some secured storage values related to the token-based authentication are available for other Microsoft apps (such as Microsoft Authenticator) and are managed by the Azure Active Directory Authentication Library (ADAL) SDK.
+In order to implement SSO, some secured storage values related to the token-based authentication are available for other Microsoft apps (such as Microsoft Authenticator) and are managed by the Azure Active Directory Authentication Library SDK.
 
 Mobile cached data is deleted when the app is removed, when the user signs out of the Power Platform service for Mobile, or when the user fails to sign in (such as after a token expiration event or password change). The data cache includes dashboards and reports previously accessed from the Power Platform Mobile app.
 

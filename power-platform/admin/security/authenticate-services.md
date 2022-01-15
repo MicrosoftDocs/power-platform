@@ -39,7 +39,7 @@ The user authentication sequence for the Power Platform services occurs as descr
 
 6. When the client's browser requires customer data, it will send requests to the back-end cluster address with the Azure AD access token in the Authorization header. The Power Platform back-end cluster reads the Azure AD access token and validates the signature to ensure that the identity for the request is valid. The Azure AD access token has a default lifetime of one hour, and to maintain the current session, the user's browser will make periodic requests to renew the access token before it expires.
 
-  ![End user authentication sequence.](./media/EndUserAuthSequence.png "End user authentication sequence to Power Platform services with browser, Azure traffic Manager, Azure CDN, the web front-end Azure Active Directly, and Power Platform back-end cluster.  Authentication to back-end data sources is separate.")
+  ![End user authentication sequence.](./media/EndUserAuthSequence.png "End user authentication sequence to Power Platform services with browser, Azure traffic Manager, Azure Content Delivery Network, the web front-end Azure Active Directly, and Power Platform back-end cluster.  Authentication to back-end data sources is separate.")
 
 The user authentication sequence, when a Power Platform service is embedded in SharePoint, Power BI, or Teams, is slightly more complicated as these services perform some of the steps; some steps still remain with the Power Platform service.
 

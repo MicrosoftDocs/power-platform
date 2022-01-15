@@ -20,7 +20,7 @@ search.app:
 ---
 # Data storage in Power Platform
 
-Microsoft Power Platform stores personal data in a securely and protectively. In this article, you'll understand how Power Platform handles data, stores and isolates data.
+Microsoft Power Platform stores personal data securely and protectively. In this article, you'll understand how Power Platform handles data, stores and isolates data.
 
 ## Data residency
 
