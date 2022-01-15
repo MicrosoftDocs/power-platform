@@ -29,17 +29,17 @@ The user authentication sequence for the Power Platform services occurs as descr
 
 1. A user initiates a connection to a Power Platform service from a browser, either by typing in the Power Platform address in the address bar or by selecting **Sign in** from a Power Platform service (for example, the Power Apps landing page). The connection is established using TLS 1.2 and HTTPS. All subsequent communication between the browser and the Power Platform service uses HTTPS.
 
-2. The Azure Traffic Manager checks the user's DNS record to determine the most appropriate (usually nearest) datacenter where the Power Platform service is deployed and responds to the DNS with the IP address of the WFE cluster to which the user should be sent.
+2. The Azure Traffic Manager checks the user's DNS record to determine the most appropriate (usually nearest) datacenter where the Power Platform service is deployed and responds to the DNS with the IP address of the web front-end cluster to which the user should be sent.
 
-3. WFE then redirects the user to the Microsoft Online Services login page.
+3. Web front-end then redirects the user to the Microsoft Online Services login page.
 
-4. After the user has been authenticated, the login page redirects the user to the previously determined nearest Power Platform service WFE cluster with an auth code.
+4. After the user has been authenticated, the login page redirects the user to the previously determined nearest Power Platform service web front-end  cluster with an auth code.
 
-5. The WFE cluster checks with the Azure AD service to obtain an Azure AD security token by using the auth code. When Azure AD returns the successful authentication of the user and returns an Azure AD security token, the WFE cluster consults the Power Platform Global Service. The Power Platform Global Service maintains a list of tenants and their Power Platform back-end cluster locations and determines which Power Platform back-end service cluster contains the user's tenant. The WFE cluster then returns an application page to the user's browser with the session, access, and routing information required for its operation.
+5. The web front-end  cluster checks with the Azure AD service to obtain an Azure AD security token by using the auth code. When Azure AD returns the successful authentication of the user and returns an Azure AD security token, the web front-end  cluster consults the Power Platform Global Service. The Power Platform Global Service maintains a list of tenants and their Power Platform back-end cluster locations and determines which Power Platform back-end service cluster contains the user's tenant. The web front-end  cluster then returns an application page to the user's browser with the session, access, and routing information required for its operation.
 
 6. When the client's browser requires customer data, it will send requests to the back-end cluster address with the Azure AD access token in the Authorization header. The Power Platform back-end cluster reads the Azure AD access token and validates the signature to ensure that the identity for the request is valid. The Azure AD access token has a default lifetime of one hour, and to maintain the current session, the user's browser will make periodic requests to renew the access token before it expires.
 
-  ![End user authentication sequence.](./media/EndUserAuthSequence.png " End user authentication sequence to Power Platform services with browser, Azure traffic Manager, Azure CDN, the Web Front end (WFE) Azure Active Directly, and Power Platform back-end cluster.  Authentication to back-end data sources is separate.")
+  ![End user authentication sequence.](./media/EndUserAuthSequence.png "End user authentication sequence to Power Platform services with browser, Azure traffic Manager, Azure CDN, the web front-end Azure Active Directly, and Power Platform back-end cluster.  Authentication to back-end data sources is separate.")
 
 The user authentication sequence, when a Power Platform service is embedded in SharePoint, Power BI, or Teams, is slightly more complicated as these services perform some of the steps; some steps still remain with the Power Platform service.
 
