@@ -31,11 +31,11 @@ The user authentication sequence for the Power Platform services occurs as descr
 
 2. The Azure Traffic Manager checks the user's DNS record to determine the most appropriate (usually nearest) datacenter where the Power Platform service is deployed and responds to the DNS with the IP address of the web front-end cluster to which the user should be sent.
 
-3. Web front-end then redirects the user to the Microsoft Online Services login page.
+3. The web front-end then redirects the user to the Microsoft Online Services login page.
 
 4. After the user has been authenticated, the login page redirects the user to the previously determined nearest Power Platform service web front-end  cluster with an auth code.
 
-5. The web front-end  cluster checks with the Azure AD service to obtain an Azure AD security token by using the auth code. When Azure AD returns the successful authentication of the user and returns an Azure AD security token, the web front-end  cluster consults the Power Platform Global Service. The Power Platform Global Service maintains a list of tenants and their Power Platform back-end cluster locations and determines which Power Platform back-end service cluster contains the user's tenant. The web front-end  cluster then returns an application page to the user's browser with the session, access, and routing information required for its operation.
+5. The web front-end cluster checks with the Azure AD service to obtain an Azure AD security token by using the auth code. When Azure AD returns the successful authentication of the user and returns an Azure AD security token, the web front-end  cluster consults the Power Platform Global Service. The Power Platform Global Service maintains a list of tenants and their Power Platform back-end cluster locations and determines which Power Platform back-end service cluster contains the user's tenant. The web front-end  cluster then returns an application page to the user's browser with the session, access, and routing information required for its operation.
 
 6. When the client's browser requires customer data, it will send requests to the back-end cluster address with the Azure AD access token in the Authorization header. The Power Platform back-end cluster reads the Azure AD access token and validates the signature to ensure that the identity for the request is valid. The Azure AD access token has a default lifetime of one hour, and to maintain the current session, the user's browser will make periodic requests to renew the access token before it expires.
 
