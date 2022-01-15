@@ -21,7 +21,7 @@ search.app:
 ---
 # Overview: Security in Microsoft Power Platform
 
-This article is intended to give security professional and other interested parties an overview of how the Power Platform handles security.  The Power Platform embodies many different technologies and this article will provide a general overview with links to specific technolgies that differ from the norm.  In particular Dataverse has a very rich set of security practices that are optmized around data storage and the Power Platform technogies (e.g., Power Apps, Power Automate, ... ) have a rich set of practices oriented around web technology. 
+The articles in this section are intended to give security professionals an overview of how Power Platform handles security. Power Platform embodies many different technologies and this article will provide a general overview with additional resources to specific technologies that differ from the standard practice. Microsoft Dataverse has a rich set of security practices that are optimized around data storage. Whereas other Power Platform services such as Power Apps and Power Automate have a rich set of practices oriented towards a web-based technology.
 
 Microsoft Power Platform enables both non-professional and professional developers to quickly and easily create end-to-end solutions. These solutions may include applications, databases, and workflows both for small work groups or the entire organization. Security is critical for these solutions and Power Platform is built to provide industry-leading complete protection.  
 
