@@ -12,7 +12,7 @@ ms.assetid:
 caps.latest.revision: 63
 author: JesseParsons
 ms.subservice: admin
-ms.author: JesseParsons
+ms.author: jeparson
 ms.reviewer: jimholtz
 ms.custom: "admin-security"
 search.audienceType: 
