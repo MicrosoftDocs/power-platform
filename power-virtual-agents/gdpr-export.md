@@ -18,9 +18,9 @@ ms.collection: virtual-agent
 
 Power Virtual Agents offers the following capabilities to find or export personal data for a specific user:
 
-1. Export customer data – Bot content (tenant admin)
-2. Export customer data – Bot sessions (bot author)
-3. Export system-generated logs (tenant admin) 
+1. [Export customer data – Bot content (as tenant admin)](#bot-content-as-tenant-admin)
+2. [Export customer data – Bot sessions (as bot author)](#bot-sessions-as-bot-author)
+3. [Export system-generated logs (as tenant admin)](#export-system-generated-logs-as-tenant-admin)
 
 
 ## Prerequisites
@@ -28,10 +28,10 @@ Power Virtual Agents offers the following capabilities to find or export persona
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 
 
+## Export customer data 
 
-## Export the bot content
+### Bot content (as tenant admin)
 
-**Export customer data – Bot content (tenant admin):**
 1. Go to [https://make.powerapps.com](https://make.powerapps.com) and sign in with your credentials.
 
    :::image type="content" source="media/gdpr-export/export-1.png" alt-text="Sign in to powerapps.com." border="false":::
@@ -49,14 +49,18 @@ Power Virtual Agents offers the following capabilities to find or export persona
    :::image type="content" source="media/gdpr-export/DownloadExportedData.png" alt-text="Download exported data.":::
 
 
-**Export customer data – Bot sessions (bot author):**
+### Bot sessions (as bot author)
+
+Bot authors can export bot sessions.
  
 You can download session data of last 28 days from the [sessions analytics page](analytics-sessions.md) in Power Virtual Agents. 
 
 Alternately, you can [export data from the ConversationTranscripts table](analytics-sessions.md#export-conversation-transcripts).
 
-**Export system-generated logs (tenant admin)**
 
+## Export system-generated logs (as tenant admin)
+
+As a tenant administrator, To export bot content:
 
 1. Go to [https://www.microsoft.com/en-us/trust-center/privacy/gdpr-dsr](https://www.microsoft.com/en-us/trust-center/privacy/gdpr-dsr).
 
