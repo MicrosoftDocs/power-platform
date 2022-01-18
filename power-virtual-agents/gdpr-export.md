@@ -36,15 +36,21 @@ Power Virtual Agents offers the following capabilities to find or export persona
 
    :::image type="content" source="media/gdpr-export/export-1.png" alt-text="Sign in to powerapps.com." border="false":::
 
-2. In the side navigation pane, expand the **Data** node. Select **Tables** and select **Export data** on the **Data** menu.
+1. In the side navigation pane, select **Data** then select **Tables**.
+   
+   :::image type="content" source="media/gdpr-export/open-table.png" alt-text="Export data.":::
+
+1. Select the **Data** dropdown, then select **Export data**.
 
    :::image type="content" source="media/gdpr-export/ExportDataMenu.png" alt-text="Export data.":::
 
-3. On the Export data screen, select **Chatbot** and **Chatbot subcomponent** from the entity list. Select **Export data** at the top right. Your data will take a couple of minutes to be compiled for export.
+1. Select **Chatbot** and **Chatbot subcomponent** from the entity list, then select **Export data**. Your data will take a couple of minutes to be compiled for export.
 
    :::image type="content" source="media/gdpr-export/ExportChatbotAndChatbotSubComponent.png" alt-text="Select entities for export.":::
 
-5. Select **Download exported data** to download the content.
+   :::image type="content" source="media/gdpr-export/export-data-button.png" alt-text="Select entities for export.":::
+
+1. When your export is ready, select **Download exported data** to download the content.
 
    :::image type="content" source="media/gdpr-export/DownloadExportedData.png" alt-text="Download exported data.":::
 
