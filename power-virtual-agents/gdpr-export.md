@@ -42,18 +42,18 @@ Power Virtual Agents offers the following capabilities to find or export persona
 
 3. On the Export data screen, select **Chatbot** and **Chatbot subcomponent** from the entity list. Select **Export data** at the top right. Your data will take a couple of minutes to be compiled for export.
 
-   :::image type="content" source="media/ExportChatbotAndChatbotSubComponent.png" alt-text="Select entities for export." border="false":::
+   :::image type="content" source="media/ExportChatbotAndChatbotSubComponent.png" alt-text="Select entities for export.":::
 
 5. Select **Download exported data** to download the content.
 
-   :::image type="content" source="media/DownloadExportedData.png" alt-text="Download exported data." border="false":::
+   :::image type="content" source="media/DownloadExportedData.png" alt-text="Download exported data.":::
 
 
 **Export customer data – Bot sessions (bot author):**
  
 You can download session data of last 28 days from the [sessions analytics page](analytics-sessions.md) in Power Virtual Agents. Alternately, you can export data from the **ConversationTranscripts** table.
 
-:::image type="content" source="media/ExportConversationTranscriptTable.png" alt-text="Download exported data." border="false":::
+:::image type="content" source="media/ExportConversationTranscriptTable.png" alt-text="Download exported data.":::
 
 **Export system-generated logs (tenant admin)**
 
