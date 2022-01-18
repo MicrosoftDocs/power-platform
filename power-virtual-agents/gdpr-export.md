@@ -38,7 +38,7 @@ Power Virtual Agents offers the following capabilities to find or export persona
 
 2. In the side navigation pane, expand the **Data** node. Select **Tables** and select **Export data** on the **Data** menu.
 
-   :::image type="content" source="media/ExportDataMenu" alt-text="Export data.":::
+   :::image type="content" source="media/ExportDataMenu.png" alt-text="Export data.":::
 
 3. On the Export data screen, select **Chatbot** and **Chatbot subcomponent** from the entity list. Select **Export data** at the top right. Your data will take a couple of minutes to be compiled for export.
 
