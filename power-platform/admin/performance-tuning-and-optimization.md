@@ -4,7 +4,7 @@ description: "Plan and optimize application performance with Dynamics 365 custom
 author: Mattp123
 ms.service: power-platform
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: overview
 ms.date: 09/08/2020
 ms.subservice: admin
 ms.author: matp

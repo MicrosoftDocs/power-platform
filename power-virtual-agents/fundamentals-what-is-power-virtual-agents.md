@@ -4,7 +4,7 @@ description: "Power Virtual Agents lets you create chatbots, both in a dedicated
 keywords: "PVA, portal, online, teams"
 ms.date: 9/22/2020
 ms.service: power-virtual-agents
-ms.topic: article
+ms.topic: overview
 author: iaanw
 ms.author: iawilt
 manager: shellyha

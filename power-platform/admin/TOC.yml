@@ -599,6 +599,8 @@
           href: control-user-access.md  
         - name: Restrict cross-tenant access 
           href: cross-tenant-restrictions.md
+        - name: Content security policy
+          href: content-security-policy.md
       - name: Data loss prevention policies 
         items: 
         - name: DLP policies
