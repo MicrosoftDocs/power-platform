@@ -10,7 +10,7 @@ ms.custom:
   - "intro-internal"
 ms.service: power-platform
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: overview
 ms.date: 02/23/2021
 search.audienceType: 
   - admin
