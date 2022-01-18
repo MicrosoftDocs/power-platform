@@ -68,7 +68,7 @@ Alternately, you can [export data from the ConversationTranscripts table](analyt
 
 2. Select **Add export request**.
 
-   :::image type="content" source="media/gdpr-export/export-azure-portal.png" alt-text="Download exported data.":::
+   :::image type="content" source="media/gdpr-export/export-azure-portal.png" alt-text="Export system generated logs.":::
 
 
 
