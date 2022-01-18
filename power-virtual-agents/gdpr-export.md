@@ -64,9 +64,11 @@ Alternately, you can [export data from the ConversationTranscripts table](analyt
 
 ## Export system-generated logs (as tenant admin)
 
-1. Go to [https://www.microsoft.com/en-us/trust-center/privacy/gdpr-dsr](https://www.microsoft.com/en-us/trust-center/privacy/gdpr-dsr).
+1. Go to the [User Privacy Overview in Azure Portal](https://portal.azure.com/#blade/Microsoft_Azure_Policy/UserPrivacyMenuBlade/Overview).
 
-2. Select the **Learn more about the Data Log Export** link under the **Microsoft Data Log Export** section. This will open a new tab or window and go to the [User Privacy blade in the Azure Portal](https://portal.azure.com/#blade/Microsoft_Azure_Policy/UserPrivacyMenuBlade/Overview). Here you can request an export of data.
+2. Select **Add export request**.
+
+   :::image type="content" source="media/gdpr-export/export-azure-portal.png" alt-text="Download exported data.":::
 
 
 
