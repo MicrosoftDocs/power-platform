@@ -70,15 +70,7 @@ The following questions are common security questions and answers for Power Plat
   [A08:2021-Software and Data Integrity Failures](https://owasp.org/Top10/A08_2021-Software_and_Data_Integrity_Failures/):
   - Power Platform's Component Governance process ensures that software integrity is maintained by enforcing that package source files are securely configured.
   - The process ensures that it will only serve internally sourced packages to address [substitution attack](https://azure.microsoft.com/resources/3-ways-to-mitigate-risk-using-private-package-feeds/) which is a technique (also know as dependency confusion) that can be used to poison the app-building process inside secure enterprise environments.
-  - All encrypted data has integrity protection applied before it is transmitted, and all the integrity protection metadata present for incoming encrypted data will be validated. <!-- *To be validated* -->
-
-  [A09:2021-Security Logging and Monitoring Failures](https://owasp.org/Top10/A09_2021-Security_Logging_and_Monitoring_Failures/):
-  - To be updated.
-  <!-- *Focus on Azure Security logging features and Incident response* -->
-
-  [A10:2021-Server-Side Request Forgery](https://owasp.org/Top10/A10_2021-Server-Side_Request_Forgery_%28SSRF%29/):
-  - To be updated.
-  <!--  *Focus on Azure Security capabilities* -->
+  - All encrypted data has integrity protection applied before it is transmitted, and all the integrity protection metadata present for incoming encrypted data will be validated.
 
 ## Common security questions from customers
 The below are some of the common security questions that customers have raised in the past. We are capturing them here along with useful information that helps to answer their questions.
@@ -88,9 +80,6 @@ The below are some of the common security questions that customers have raised i
   - In addition, Content Security Policy (CSP) policies can be used to restrict embedding to trusted domains with org settings.
   
   ### How does Power Platform help protect against cross-site scripting ([XSS](https://owasp.org/www-community/attacks/Clickjacking)) risks?
-  - To be updated.
-
-  ### How does Power Platform help protect against cross-site request forgery ([CSRF](https://owasp.org/www-community/attacks/csrf)) risks?
   - To be updated.
   
   ### Does Power Platform support Content Security Policy ([CSP](https://owasp.org/www-community/controls/Content_Security_Policy))?
