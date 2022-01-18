@@ -38,7 +38,7 @@ Power Virtual Agents offers the following capabilities to find or export persona
 
 1. In the side navigation pane, select **Data** then select **Tables**.
    
-   :::image type="content" source="media/gdpr-export/open-table.png" alt-text="Export data.":::
+   :::image type="content" source="media/gdpr-export/open-table.png" alt-text="Open Data table.":::
 
 1. Select the **Data** dropdown, then select **Export data**.
 
@@ -48,7 +48,7 @@ Power Virtual Agents offers the following capabilities to find or export persona
 
    :::image type="content" source="media/gdpr-export/ExportChatbotAndChatbotSubComponent.png" alt-text="Select entities for export.":::
 
-   :::image type="content" source="media/gdpr-export/export-data-button.png" alt-text="Select entities for export.":::
+   :::image type="content" source="media/gdpr-export/export-data-button.png" alt-text="Select export data button.":::
 
 1. When your export is ready, select **Download exported data** to download the content.
 
