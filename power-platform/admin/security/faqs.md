@@ -47,7 +47,7 @@ The following questions are common security questions and answers for Power Plat
   [A03:2021-Injection](https://owasp.org/Top10/A03_2021-Injection/):
   - Power Platform uses industry-standard best practices to prevent injection attacks. These include:
     - Using safe APIs with parameterized interfaces
-    - Leveraging the ever evovling capabilities of frontend frameworks to sanitize input
+    - Leveraging the ever evolving capabilities of frontend frameworks to sanitize input
     - Sanitizing the output with server-side validation
     - Using static analysis tools during build time
     - Review the Threat Model of each and every service every 6 months whether the code/design/infrastructure has been updated or not
