@@ -50,8 +50,6 @@ Power Virtual Agents offers the following capabilities to find or export persona
 
 
 ### Bot sessions (as bot author)
-
-Bot authors can export bot sessions.
  
 You can download session data of last 28 days from the [sessions analytics page](analytics-sessions.md) in Power Virtual Agents. 
 
@@ -59,8 +57,6 @@ Alternately, you can [export data from the ConversationTranscripts table](analyt
 
 
 ## Export system-generated logs (as tenant admin)
-
-As a tenant administrator, To export bot content:
 
 1. Go to [https://www.microsoft.com/en-us/trust-center/privacy/gdpr-dsr](https://www.microsoft.com/en-us/trust-center/privacy/gdpr-dsr).
 
