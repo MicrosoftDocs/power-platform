@@ -45,7 +45,12 @@ The following questions are common security questions and answers for Power Plat
   - Encryption of data at rest - All customer data will be encrypted before being written to non-volatile storage media.
   
   [A03:2021-Injection](https://owasp.org/Top10/A03_2021-Injection/):
-  - To be updated.
+  - Power Platform uses industry-standard best practices to prevent injection attacks. These include:
+    - Using safe APIs with parameterized interfaces
+    - Leveraging the ever evovling capabilities of frontend frameworks to sanitize input
+    - Sanitizing the output with server-side validation
+    - Using static analysis tools during build time
+    - Review the Threat Model of each and every service every 6 months whether the code/design/infrastructure has been updated or not
 
   [A04:2021–Insecure Design](https://owasp.org/Top10/A04_2021-Insecure_Design/):
   - Power Platform has been built on a culture and methodology of secure design, which gets constantly reinforced through Microsoft's industry leading [SDL](https://www.microsoft.com/securityengineering/sdl/practices) practices of [Threat Modeling](https://www.microsoft.com/securityengineering/sdl/threatmodeling).
@@ -78,9 +83,6 @@ The below are some of the common security questions that customers have raised i
   ### How does Power Platform help protect against Clickjacking risks?
   - [Clickjacking](https://owasp.org/www-community/attacks/Clickjacking) is a significant threat for sign-in pages as it can allow them to steal credentials. In Power Platform, all sign-in pages are not iframeable, which significantly reduces the risk of clickjacking.
   - In addition, Content Security Policy (CSP) policies can be used to restrict embedding to trusted domains with org settings.
-  
-  ### How does Power Platform help protect against cross-site scripting ([XSS](https://owasp.org/www-community/attacks/Clickjacking)) risks?
-  - To be updated.
   
   ### Does Power Platform support Content Security Policy ([CSP](https://owasp.org/www-community/controls/Content_Security_Policy))?
   - Yes, CSP can be enabled and configured using [the docs](/power-platform/admin/content-security-policy).  The doc also gives a roadmap of improvements we will make to CSP in the future.
