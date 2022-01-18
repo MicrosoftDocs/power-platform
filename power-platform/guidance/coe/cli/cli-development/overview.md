@@ -23,7 +23,7 @@ This section outlines the following key sections on the CoE CLI. The information
 
 - [Quick start](#quick-start) - Provides a set of links to the technology used to build and test the CLI.
 
-- [Development environment set-up](#development-environment-setup) - How to edit the CLI using Visual Studio Code.
+- [Development environment set-up](#development-environment-set-up) - How to edit the CLI using Visual Studio Code.
 
 - [Adding a new command](./adding-new-command.md) - How to add a new CLI command.
 

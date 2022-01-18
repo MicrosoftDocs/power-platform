@@ -93,7 +93,7 @@ To create the deployment settings JSON file, follow these steps:
 
 1. Create a new folder called **config** and save the new file under the config folder in Git.
 
-   ![Config folder](media/setup-almacceleratorpowerplatform-deployment-config/image-20210917153532062.png)
+   ![New folder named Config](media/setup-almacceleratorpowerplatform-deployment-config/image-20210917153532062.png)
 
 ### Create connection reference JSON
 

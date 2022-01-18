@@ -146,7 +146,7 @@ This section provides a brief overview of each CoE command.
 |-------|---------|-------|----------|
 |Create a service connection and add maker to security group|Run once per maker|User who is owner of Azure Active Directory Group and Azure DevOps project administrator|Azure DevOps|
 
-[Read ALM maker add help](hhttps://aka.ms/coe-cli/help/alm/maker/add)
+[Read ALM maker add help](https://aka.ms/coe-cli/help/alm/maker/add)
 
 ### alm install
 
