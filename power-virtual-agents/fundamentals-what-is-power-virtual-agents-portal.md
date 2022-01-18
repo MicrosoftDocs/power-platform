@@ -4,7 +4,7 @@ description: "Use Power Virtual Agents and start solving problems with its AI-dr
 keywords: "PVA, portal"
 ms.date: 9/22/2020
 ms.service: power-virtual-agents
-ms.topic: article
+ms.topic: overview
 author: iaanw
 ms.author: iawilt
 manager: shellyha

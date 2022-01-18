@@ -4,7 +4,7 @@ description: "Analyze customer satisfaction, topic usage, and bot performance in
 keywords: "PVA"
 ms.date: 9/22/2020
 ms.service: power-virtual-agents
-ms.topic: article
+ms.topic: overview
 author: iaanw
 ms.author: iawilt
 manager: shellyha
