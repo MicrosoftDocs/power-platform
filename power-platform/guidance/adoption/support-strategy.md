@@ -50,9 +50,9 @@ The six types of support shown in the above diagram include:
 | ![Type 6.](media/support-6.png  "Type 6") | **Microsoft support (external)** often occurs to raise platform related technical issues. Based on your support plan, different technical support and advisory services are available to you. Learn more: [Support for Microsoft Power Platform](/power-platform/admin/support-overview) |
 
 Depending on the size of your organization and existing delivery approaches for low code and pro code technologies, you might choose different ways of formalizing your support.
-If your Power Platform adoption approach is largely [decentralized](delivery-models#decentralized), you will have autonomous teams across the organization delivering and governing Power Platform solutions. With this model, support may also be delegated, and team-assisted support may be the most relevant service for end users and makers.
+If your Power Platform adoption approach is largely [decentralized](delivery-models.md#decentralized), you will have autonomous teams across the organization delivering and governing Power Platform solutions. With this model, support may also be delegated, and team-assisted support may be the most relevant service for end users and makers.
 
-If your Power Platform adoption approach is largely [centralized](delivery-models#centralized), you will have central teams of product owners who own the low-code delivery of departmental solutions from around the organization's business units. With this model, support will also be centralized and a central support team answers queries and questions.
+If your Power Platform adoption approach is largely [centralized](delivery-models.md#centralized), you will have central teams of product owners who own the low-code delivery of departmental solutions from around the organization's business units. With this model, support will also be centralized and a central support team answers queries and questions.
 
 In most organizations, a mix of delivery models is best – even if decentralized teams support solutions for their makers, a helpdesk and central support team may still be required for technical issues, end user queries and Level 100 support.
 
@@ -90,7 +90,7 @@ Additional to this proactive way of communicating processes to makers, also make
 
 ### Team-assisted support
 
-Team-assisted support refers to when team members take on co-ownership of apps and flows built for their team/used by their team and help support the solutions during their daily work. This means answering queries from end users, fixing bugs, and making change requests. Makers who emerge as [your champions](champions) tend to take on this type of informal support role voluntarily because they have an intrinsic desire to help.
+Team-assisted support refers to when team members take on co-ownership of apps and flows built for their team/used by their team and help support the solutions during their daily work. This means answering queries from end users, fixing bugs, and making change requests. Makers who emerge as [your champions](champions.md) tend to take on this type of informal support role voluntarily because they have an intrinsic desire to help.
 
 Whilst this often starts off as an informal process, many organizations formalize team-assisted support to scale their Power Platform efforts. This involves business units owning their dedicated environments, taking on the Environment Admin role and supporting solutions in those environments. In larger organizations, dedicated Power Platform teams per business unit take on this role.
 
@@ -185,21 +185,20 @@ Each of the types of internal user support introduced above are described in fur
 
 ### Team-assisted support
 
-Team-assisted support refers to makers learning from each other as they build applications. Makers who emerge as [your champions](champions) tend to take on this type of informal support role voluntarily because they have an intrinsic desire to help
+Team-assisted support refers to makers learning from each other as they build applications. Makers who emerge as [your champions](champions.md) tend to take on this type of informal support role voluntarily because they have an intrinsic desire to help
 
 ### Internal community support
 
-At the heart of growth is a [community](wiki-community), a place for people to collaborate, share ideas, and discover new ways to apply technology to achieve more. A community is a place to ask questions, to share knowledge and expand skill sets.
+At the heart of growth is a [community](wiki-community.md), a place for people to collaborate, share ideas, and discover new ways to apply technology to achieve more. A community is a place to ask questions, to share knowledge and expand skill sets.
 
 Internal communities may start as an informal motion, driven by makers who want to share their success with their colleagues – other makers may learn about the community through word of mouth. Often, those communities are formalized as your Power Platform maturity grows – then, new makers are automatically invited to the community, regular events are used to show case success stories and learnings and existing champions take on mentorship opportunities to develop their career.
 
 >[!TIP]
 >The goal of an internal community is to be self-sustaining, which can lead to reduced formal support demands and costs. However, there will always be a need to monitor, manage, and nurture the internal community. Here are specific tips:
-
-    - Set the community up for success by cultivating multiple experts in different topics.
-    - Allow the community a chance to respond, but the CoE should also monitor activity and unanswered questions to help out.
-    - Document FAQ and make them easily accessible to your community.
-    - If makers reach out directly to the dedicated support team or CoE leads, ask them to raise questions in the community instead.
+  - Set the community up for success by cultivating multiple experts in different topics.
+  - Allow the community a chance to respond, but the CoE should also monitor activity and unanswered questions to help out.
+  - Document FAQ and make them easily accessible to your community.
+  - If makers reach out directly to the dedicated support team or CoE leads, ask them to raise questions in the community instead.
 
 An internal community discussion channel is commonly set up as a Teams channel or a Yammer group. The technology chosen should reflect where users already work, so that the activities occur within their natural workflow.
 
