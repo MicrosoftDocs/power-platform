@@ -203,7 +203,7 @@
        - name: Supported languages
          href: teams/authoring-language-support-teams.md
        - name: Troubleshoot error codes
-         href: error-codes-teams.md
+         href: teams/error-codes-teams.md
     - name: Enhance and improve
       items:
        - name: Key concepts - Enhanced authoring
