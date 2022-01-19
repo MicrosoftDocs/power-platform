@@ -36,6 +36,7 @@ To set up your Power Virtual Agents bot as a skill:
 
 ## Prerequisites
 
+- An [Orchestrator bot](/composer/how-to-create-orchestrator-bot) created in Composer. LUIS and RegEx recognizers are not supported.
 - [Understand how Bot Framework skills work](/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0&preserve-view=true) 
 - [Learn how to use Bot Framework Composer](/composer/introduction)
 - [Learn how to use skills in Bot Framework Composer](/composer/concept-skills)
