@@ -4,7 +4,7 @@ description: "Learn how to copy apps and data from an environment. Review next s
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/14/2021 
+ms.date: 01/18/2022
 ms.subservice: admin
 author: ChrisGarty
 ms.author: cgarty
@@ -175,7 +175,7 @@ Once the copy process is complete, the target environment is placed in [Administ
 ### Next steps after copying an environment  
  To ensure the newly created copy (target) environment does not impact your production environment, once the copy operation is complete, two things happen:  
   
-1. The newly created copy environment is placed in administration mode. Only those with System Administrator or System Customizer security roles can sign in and manage the copy environment. Regular users cannot sign in and use the copy environment.  
+1. The newly created copy environment is placed in administration mode. Only those with System Administrator security roles can sign in and manage the copy environment. Regular users cannot sign in and use the copy environment.  
   
 2. Background operations are disabled in the copy environment. Disabled operations include workflows and synchronization with Microsoft Exchange.  
   

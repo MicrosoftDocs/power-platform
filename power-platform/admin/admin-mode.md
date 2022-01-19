@@ -4,7 +4,7 @@ description: Administration mode
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/13/2021
+ms.date: 01/18/2022
 ms.subservice: admin
 author: ChrisGarty
 ms.author: cgarty
@@ -24,6 +24,7 @@ You can set a sandbox, production, or trial (subscription-based) environment in 
 > [!NOTE]
 > - You can place sandbox, production, or trial (subscription-based) environments in administration mode.  
 > - Processes that use code, such as plug-ins or custom workflow assemblies, continue to be processed by the Microsoft Dataverse platform when administration mode is enabled and background operations are disabled.
+> - System Customizers will need to sign in to the environment directly through the URL as the environment in administration mode will not appear to System Customizers in the Environments page of the Power Platform admin center.
   
  On the **Settings** panel, you can set the following:  
   

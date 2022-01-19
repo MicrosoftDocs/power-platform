@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/12/2021
+ms.date: 01/18/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -56,7 +56,7 @@ A business unit is a logical grouping of related business activities.
   
 These settings can be found in the Microsoft Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Users + permissions** > **Business units**.
 
-Make sure you have the System Administrator or System Customizer security role or equivalent permissions to update the setting.
+Make sure you have the System Administrator permission to update the setting.
 
 - Follow the steps in [View your user profile](/powerapps/user/view-your-user-profile).
 - Don’t have the correct permissions? Contact your system administrator. 
