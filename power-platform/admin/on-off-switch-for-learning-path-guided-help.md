@@ -31,7 +31,7 @@ Learning Path (guided help) is turned on by default.
 ## Turn Learning Path on or off for an entire organization  
 This setting changes access to Learning Path for an entire organization. 
   
-1. Make sure that you have the System Administrator or equivalent permissions.
+1. Make sure that you have the System Administrator permission.
   
     Check your security role  
   

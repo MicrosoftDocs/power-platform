@@ -30,7 +30,7 @@ Users who have the system administrator security role can change the encryption 
 
 These settings can be found in the Microsoft Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Encryption** > **Data encryption**.
 
-Make sure you have the System Administrator or equivalent permissions to update the setting.
+Make sure you have the System Administrator permission to update the setting.
 
 - Follow the steps in [View your user profile](/powerapps/user/view-your-user-profile).
 - Don’t have the correct permissions? Contact your system administrator.

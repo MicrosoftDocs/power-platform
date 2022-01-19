@@ -79,7 +79,7 @@ The hierarchy security model is an extension to the existing security models tha
 ## Set up hierarchy security  
 These settings can be found in the Microsoft Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Users + Permissions** > **Hierarchy security**.
 
-Make sure you have the System Administrator or equivalent permissions to update the setting.
+Make sure you have the System Administrator permission to update the setting.
 
 - Follow the steps in [View your user profile](/powerapps/user/view-your-user-profile).
 - Don’t have the correct permissions? Contact your system administrator.

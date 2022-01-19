@@ -28,7 +28,7 @@ For information on predefined security roles, see [Predefined security roles](da
   
 ## Create a security role  
   
-1. Make sure that you have the System Administrator or equivalent permissions.
+1. Make sure that you have the System Administrator permission.
   
     Check your security role  
   
@@ -54,7 +54,7 @@ For information on predefined security roles, see [Predefined security roles](da
   
 ## Create a security role by Copy Role
 
-1. Make sure that you have the System Administrator or equivalent permissions.
+1. Make sure that you have the System Administrator permission.
   
     Check your security role  
   
