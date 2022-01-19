@@ -64,12 +64,15 @@ You can also [export data from the ConversationTranscripts table](analytics-sess
 
 ## Export system-generated logs (as tenant admin)
 
+Microsoft provides the ability to access, delete, and export certain customer data through Azure Portal so that tenant admins can execute [Data Subject Requests](/compliance/regulatory/gdpr-dsr-azure#introduction-to-data-subject-requests-dsrs).
+
+**To submit an export request:**
+
 1. Go to the [User Privacy Overview in Azure Portal](https://portal.azure.com/#blade/Microsoft_Azure_Policy/UserPrivacyMenuBlade/Overview).
 
 2. Select **Add export request**.
 
    :::image type="content" source="media/gdpr-export/export-azure-portal.png" alt-text="Export system generated logs.":::
-
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
