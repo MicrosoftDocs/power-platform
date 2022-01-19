@@ -74,7 +74,7 @@ The following questions are common security questions and answers for Power Plat
 
   [A08:2021-Software and Data Integrity Failures](https://owasp.org/Top10/A08_2021-Software_and_Data_Integrity_Failures/):
   - Power Platform's Component Governance process ensures that software integrity is maintained by enforcing that package source files are securely configured.
-  - The process ensures that it will only serve internally sourced packages to address [substitution attack](https://azure.microsoft.com/resources/3-ways-to-mitigate-risk-using-private-package-feeds/) which is a technique (also know as dependency confusion) that can be used to poison the app-building process inside secure enterprise environments.
+  - The process ensures that it will only serve internally sourced packages to address [substitution attack](https://azure.microsoft.com/resources/3-ways-to-mitigate-risk-using-private-package-feeds/) which is a technique (also known as dependency confusion) that can be used to poison the app-building process inside secure enterprise environments.
   - All encrypted data has integrity protection applied before it is transmitted, and all the integrity protection metadata present for incoming encrypted data will be validated.
 
 ## Common security questions from customers
