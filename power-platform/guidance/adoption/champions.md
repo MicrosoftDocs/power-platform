@@ -117,4 +117,16 @@ Incentives that champions find particularly rewarding can include:
 - **Specialized or deep dive information and training:** Access to additional information to help champions grow their skillsets (as well as help their colleagues) will be appreciated. It could include attending advanced training classes, privileged access to relevant events, or speaking engagements.
 - Is there a company reward or benefit program that their work could tie into? Are there vouchers or other goodies they could receive? Could the benefit even be a premium license or their own environment to play in?
 
+## Maturity levels
+
+The following maturity levels will help you assess the current state of your community of practice:
+
+| **Level** | **State of Power Platform community** |
+| --- | --- |
+| 100: Initial | Some content creators do great work, but their efforts are unrecognized.</br></br>Efforts to share knowledge are rare and unstructured.</br></br>Some staff may have attended App in a Day events (Partner or Microsoft delivered).</br></br>Team-based initiatives for nurturing makers.|
+| 200: Repeatable | [On-boarding strategy](onboard-makers.md) for new makers.</br></br>Makers become ambassadors across their departments and evangelize the capabilities.</br></br>Some staff have participated in a [hackathon](hackathons.md).</br></br>Makers become ambassadors across their departments and evangelize the capabilities.|
+| 300: Defined | Makers provide insights into business pain points.</br></br>Knowledge sharing in multiple forms is a normal and regularly scheduled occurrence.</br></br>[Training and upskilling](training-strategy.md) strategy for makers.</br></br>Internal Champions community.</br></br>[CoE Starter Kit – Nurture Module](../coe/nurture-components.md) adopted.|
+| 400: Capable | Regular events for Champions.</br></br>Regular hackathons.</br></br>Maker assessments and certificates.</br></br>Sharing and celebrating [success stories](show-and-tell.md).</br></br>Show & Tell sessions.</br></br>Adoption campaign. |
+| 500: Efficient | Large internal community with proven value.</br></br>Career path for makers.</br></br>Community of mentors.</br></br>Common development strategy and goals for Citizen and Pro developers. |
+
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
