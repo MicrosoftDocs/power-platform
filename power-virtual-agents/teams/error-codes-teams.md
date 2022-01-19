@@ -15,8 +15,8 @@ manager: shellyha
 Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
-> - [Power Virtual Agents web app](error-codes.md)
-> - [Power Virtual Agents app in Microsoft Teams](teams/error-codes-teams.md)
+> - [Power Virtual Agents web app](../error-codes.md)
+> - [Power Virtual Agents app in Microsoft Teams](error-codes-teams.md)
 
 When your bot encounters a problem, it will respond with an error message from the table below. 
 
