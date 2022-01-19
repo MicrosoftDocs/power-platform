@@ -101,6 +101,9 @@ The reset process starts.
  
  Administration mode is useful when you want to make operational changes and not have regular users affect your work, and not have your work affect regular users.  
 
+> [!NOTE]
+> System Customizers will need to sign in to the environment directly through the URL as the environment in administration mode will not appear to System Customizers in the Environments page of the Power Platform admin center.
+
 See [Administration mode](admin-mode.md).
 
 
