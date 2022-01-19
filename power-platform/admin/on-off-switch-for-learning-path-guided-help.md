@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/30/2020
+ms.date: 01/18/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -31,7 +31,7 @@ Learning Path (guided help) is turned on by default.
 ## Turn Learning Path on or off for an entire organization  
 This setting changes access to Learning Path for an entire organization. 
   
-1. [!INCLUDE[proc_permissions_system_admin_and_customizer](../includes/proc-permissions-system-admin-and-customizer.md)]  
+1. Make sure that you have the System Administrator or equivalent permissions.
   
     Check your security role  
   

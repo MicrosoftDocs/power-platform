@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/09/2020
+ms.date: 01/18/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -23,7 +23,7 @@ When you enable auditing, customer engagement apps (Dynamics 365 Sales, Dynamics
 > [!CAUTION]
 >  When you delete an audit log, you can no longer view the audit history for the period covered by that audit log.  
   
-1. [!INCLUDE[proc_permissions_system_admin_and_customizer](../includes/proc-permissions-system-admin-and-customizer.md)]  
+1. Make sure that you have the System Administrator or equivalent permissions.
   
     Check your security role  
   

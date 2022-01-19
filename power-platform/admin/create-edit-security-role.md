@@ -9,7 +9,7 @@ ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/14/2021
+ms.date: 01/18/2022
 search.audienceType: 
   - admin
 search.app:
@@ -28,7 +28,7 @@ For information on predefined security roles, see [Predefined security roles](da
   
 ## Create a security role  
   
-1. [!INCLUDE[proc_permissions_system_admin_and_customizer](../includes/proc-permissions-system-admin-and-customizer.md)]  
+1. Make sure that you have the System Administrator or equivalent permissions.
   
     Check your security role  
   
@@ -54,7 +54,7 @@ For information on predefined security roles, see [Predefined security roles](da
   
 ## Create a security role by Copy Role
 
-1. [!INCLUDE[proc_permissions_system_admin_and_customizer](../includes/proc-permissions-system-admin-and-customizer.md)]  
+1. Make sure that you have the System Administrator or equivalent permissions.
   
     Check your security role  
   
@@ -86,9 +86,9 @@ For information on predefined security roles, see [Predefined security roles](da
  Before you edit an existing security role, make sure that you understand the principles of data access. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Controlling Data Access](../admin/security-roles-privileges.md)  
   
 > [!NOTE]
->  You can't edit the System Administrator security role. To create a security role similar to the System Administrator security role, copy the System Administrator security role, and make changes to the new role.  
+> You can't edit the System Administrator security role. To create a security role similar to the System Administrator security role, copy the System Administrator security role, and make changes to the new role.  
   
-1. [!INCLUDE[proc_permissions_system_admin_and_customizer](../includes/proc-permissions-system-admin-and-customizer.md)]  
+1. Make sure that you have the System Administrator or equivalent permissions.
   
     Check your security role  
   
