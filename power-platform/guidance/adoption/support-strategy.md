@@ -195,10 +195,11 @@ Internal communities may start as an informal motion, driven by makers who want 
 
 >[!TIP]
 >The goal of an internal community is to be self-sustaining, which can lead to reduced formal support demands and costs. However, there will always be a need to monitor, manage, and nurture the internal community. Here are specific tips:
-  - Set the community up for success by cultivating multiple experts in different topics.
-  - Allow the community a chance to respond, but the CoE should also monitor activity and unanswered questions to help out.
-  - Document FAQ and make them easily accessible to your community.
-  - If makers reach out directly to the dedicated support team or CoE leads, ask them to raise questions in the community instead.
+>
+> - Set the community up for success by cultivating multiple experts in different topics.
+> - Allow the community a chance to respond, but the CoE should also monitor activity and unanswered questions to help out.
+> - Document FAQ and make them easily accessible to your community.
+> - If makers reach out directly to the dedicated support team or CoE leads, ask them to raise questions in the community instead.
 
 An internal community discussion channel is commonly set up as a Teams channel or a Yammer group. The technology chosen should reflect where users already work, so that the activities occur within their natural workflow.
 
