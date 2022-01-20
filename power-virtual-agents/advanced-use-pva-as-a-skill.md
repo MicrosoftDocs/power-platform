@@ -190,7 +190,9 @@ When calling specific topics from Composer, you'll need to refer to the topic by
    
 1. Locate the respective property of the topic you're looking for.
    
-1. The topic property will contain the nested property **name** which is the topic's event activity name. In this example, the event activity name is `dispatchTo_new_topic_87609dabd86049f7bc6507c6f7263aba_33d`.
+1. The topic property will contain the nested property **name** which is the topic's event activity name. 
+   
+   In the following example, the event activity name is `dispatchTo_new_topic_87609dabd86049f7bc6507c6f7263aba_33d`.
 
     :::image type="content" source="media/PVA-as-a-skill/SelectPVATopicName.png" alt-text="Select Power Virtual Agents topic name from the manifest.":::
 
