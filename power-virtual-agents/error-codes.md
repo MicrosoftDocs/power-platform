@@ -20,7 +20,7 @@ Select the version of Power Virtual Agents you're using here:
 
 When your bot encounters a problem, it will respond with an error message from the table below. 
 
-Your users will see a more generic message but will still be provided with an error code. For example, "Sorry, the bot can't talk for a while. It’s something your admin needs to address. Error code:{ErrorCode}. Conversation ID: {Conversation ID}. Time (UTC): {time}."
+Users will see a more generic message but will still be provided with an error code. For example, "Sorry, the bot can't talk for a while. It’s something your admin needs to address. Error code:{ErrorCode}. Conversation ID: {Conversation ID}. Time (UTC): {time}."
 
 Errors may also appear in the [Topic Checker](authoring-topic-management.md#topic-errors) where you can easily locate and fix them.
 
