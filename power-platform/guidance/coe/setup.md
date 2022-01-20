@@ -42,7 +42,7 @@ These roles and licenses must be available to this user continuously; if admin a
 
 Additionally, if you'd like to share the [Power BI report](power-bi.md) that's part of the CoE Starter Kit, this identity needs to have the Power BI Pro license.  
 
-<a name="how-will-you-communitcate-with-your-admins-makers-and-end-users"></a>
+<a name="how-will-you-communicate-with-your-admins-makers-and-end-users"></a>
 ## How will you communicate with your admins, makers, and users?
 
 You should consider how you'll communicate with different groups of people before you start the setup.  
