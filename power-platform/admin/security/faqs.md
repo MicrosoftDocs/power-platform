@@ -118,7 +118,7 @@ The below are some of the common security questions that customers have raised i
   - While exposed web server versions help browsers to work around some of the [known bugs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Server), it needs to be balanced with exposing too much information that could weaken the overall security posture.
   - Power Platform services have been working towards that and removing unnecessary information in the server header. 
 
-  ### How does Log4j vulnerabilites impact Power Platform? What should customers do in this regard?
+  ### How does Log4j vulnerabilities impact Power Platform? What should customers do in this regard?
   - Power Platform has analyzed and assessed that there are no Log4j vulnerabilities that impact the platform.
   - Customers looking for general guidance on preventing, detecting, and hunting for exploitation of the Log4j vulnerabilities should review Microsoft's [blog post](https://www.microsoft.com/security/blog/2021/12/11/guidance-for-preventing-detecting-and-hunting-for-cve-2021-44228-log4j-2-exploitation/) on this. 
 
