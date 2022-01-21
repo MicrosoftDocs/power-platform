@@ -149,9 +149,8 @@ If you previously had connected a bot to your omnichannel instance (before Novem
 Authentication is not supported for voice-based hand off to omnichannel instances. If you've set up authentication for the bot, the [authentication variables](advanced-end-user-authentication.md) will not contain authentication information in them when sent to your omnichannel instance.
 
 >[!WARNING]
->For voice-based hand off capabilities, your bot and omnichannel environments must be hosted in a datacenter within the [United States Azure geographic location](data-location.md#data-locations).
->  
->If the environment (or environments) you use for your bot or omnichannel instance aren't in the US region, voice capabilities will not work and there will be no error messages or warnings.
+>For voice-based hand off capabilities, both your bot and omnichannel environments must be hosted in a datacenter within the [United States, Europe, Asia, or Australia geographies](data-location.md#data-locations).
+>If the environment (or environments) you use for your bot or omnichannel instance aren't in a supported region, voice capabilities will not work and there will be no error messages or warnings.
 
 
 ## Voice-based capabilities
