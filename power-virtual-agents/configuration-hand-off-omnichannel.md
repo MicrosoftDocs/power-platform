@@ -35,7 +35,7 @@ For more information about hand off, and how to use hand-off within a bot conver
 * Environments:
   * You must install the [extension solutions](#install-extension-solutions) in the same environment where you have your bots.
   - Your bot (and extension solutions) environment and omnichannel environment must be in the same [geographical region](data-location.md#data-locations).
-  - For voice-based capabilities, both your tenant _and_ environment must be in the [United States Azure geographic location](data-location.md#data-locations).
+  - For voice-based capabilities, both your tenant _and_ environment must be in either the [United States, Europe, Asia, or Australia geographies](data-location.md#data-locations).
 * You need a [product license for Power Virtual Agents](https://go.microsoft.com/fwlink/?LinkId=2092080&clcid=0x409) and a [product license with the Chat Add-in for Dynamics 365 Customer service](/dynamics365/customer-engagement/omnichannel/try-chat-for-dynamics365).
 * You must be [assigned the omnichannel administrator role](/dynamics365/omnichannel/administrator/add-users-assign-roles#understand-roles-and-their-privileges) to connect bots with omnichannel.
 * You'll need an [application registered in Azure](/azure/active-directory/develop/howto-create-service-principal-portal#create-an-azure-active-directory-application) before you can connect to omnichannel.
@@ -149,9 +149,8 @@ If you previously had connected a bot to your omnichannel instance (before Novem
 Authentication is not supported for voice-based hand off to omnichannel instances. If you've set up authentication for the bot, the [authentication variables](advanced-end-user-authentication.md) will not contain authentication information in them when sent to your omnichannel instance.
 
 >[!WARNING]
->For voice-based hand off capabilities, your bot and omnichannel environments must be hosted in a datacenter within the [United States Azure geographic location](data-location.md#data-locations).
->  
->If the environment (or environments) you use for your bot or omnichannel instance aren't in the US region, voice capabilities will not work and there will be no error messages or warnings.
+>For voice-based hand off capabilities, both your bot and omnichannel environments must be hosted in a datacenter within the [United States, Europe, Asia, or Australia geographies](data-location.md#data-locations).
+>If the environment (or environments) you use for your bot or omnichannel instance aren't in a supported region, voice capabilities will not work and there will be no error messages or warnings.
 
 
 ## Voice-based capabilities
