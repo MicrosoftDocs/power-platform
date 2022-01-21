@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.date: 01/21/2022
 author: revachauhan
 ms.subservice: admin
-ms.author: rechauha
+ms.author: mkaur
 ms.reviewer: mkaur
 search.audienceType: 
   - admin
