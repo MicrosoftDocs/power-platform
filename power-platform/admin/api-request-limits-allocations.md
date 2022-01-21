@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/08/2021
+ms.date: 01/21/2022
 ms.subservice: admin
 ms.author: jimholtz
 ms.reviewer: jimholtz
@@ -26,9 +26,11 @@ Originally announced in October 2019, Power Platform Request limits exist to hel
 Requests in Microsoft Power Platform consist of various actions that a user makes across various products. At a high level, below is what constitutes an API request:
 
 - **Power Apps** – all API requests to connectors and Microsoft Dataverse.
-- **Power Automate** – all API requests to connectors, process advisor analysis, HTTP actions, and built-in actions from initializing variables to a simple compose action. Both succeeded and failed actions count towards these limits. Additionally, retries and other requests from pagination count as action executions as well.
-- **Power Virtual Agents** - API requests (or calls) to Power Automate flows from within a chatbot conversation.
+- **Power Automate** – all API requests to connectors, process advisor analysis, HTTP actions, and built-in actions from initializing variables to a simple compose action. Both succeeded and failed actions count towards these limits. Additionally, retries and other requests from pagination count as action executions as well. For more information, see [What counts as Power Platform request?](power-automate-licensing/types.md#what-counts-as-power-platform-request)
+- **Power Virtual Agents** - API requests (or calls) to Power Automate flows from within a chatbot conversation. 
 - **Dataverse** – all create, read, update, and delete (CRUD), assign, and share operations including user-driven and internal system requests required to complete CRUD transactions, and special operations like share or assign. These can be from any client or application (including Dynamics 365) and using any endpoint (SOAP or REST). These include, but are not limited to, plug-ins, classic workflows, and custom controls making the earlier-mentioned operations.
+
+
 
 > [!NOTE]
 > For Dataverse, there is a small set of system internal operations that are excluded from limits, such as login, logout, and system metadata operations.
