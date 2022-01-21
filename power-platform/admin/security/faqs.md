@@ -114,6 +114,9 @@ The below are some of the common security questions that customers have raised i
   - Accessing the application from more than one machine/browser at the same time is a convenience. However, the access needs to be continuously evaluated to ensure that the access is from legitimate sources and still valid.
   - Azure Active Directory (Azure AD) has rolled out the Continuous Access Evaluation ([CAE](/azure/active-directory/conditional-access/concept-continuous-access-evaluation)) feature, which will be coming to Power Platform to help with the above.
 
+  ### Why does some of Power Platform services expose server headers with verbose information?
+  - While exposed web server versions help browsers to work around some of the [known bugs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Server), it needs to be balanced with exposing too much information that could weaken the overall security posture.
+  - Power Platform services have been working towards that and removing unnecessary information in the server header. 
 
 ### See also
 
