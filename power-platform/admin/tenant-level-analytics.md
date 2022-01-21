@@ -4,7 +4,7 @@ description: View tenant-level analytics in a variety of reports
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/20/2021
+ms.date: 01/21/2022
 author: tjvass
 ms.subservice: admin
 ms.author: tjvass
@@ -64,7 +64,7 @@ Environment admins are not able to do these steps. The admin doesn't need to be 
 
    :::image type="content" source="media/enable-tenant-level-analytics.png" alt-text="Enable tenant-level analytics.":::
 
-3. **Granting consent for tenant-level analytics:** The process of collecting information for tenant-level analytics includes copying service telemetry data from other GEO locations into a central location for reporting.  Customers must explicitly enable this Power Platform operation.  For more information, see [Manage environments in the Power Platform admin center](environments-overview.md#manage-environments-in-the-power-platform-admin-center). 
+3. **Granting consent for tenant-level analytics:** The process of collecting information for tenant-level analytics includes copying service telemetry data from other GEO locations into a central location for reporting.  Customers must explicitly enable this Power Platform operation.  For more information, see [Application and service principal objects in Azure Active Directory](/azure/active-directory/develop/app-objects-and-service-principals).
 
    Select **Enable** to grant consent for the service to collocate service telemetry data in the location associated with the default environment. 
 
