@@ -120,7 +120,7 @@ The below are some of the common security questions that customers have raised i
 
   ### How does Log4j vulnerabilites impact Power Platform? What should customers do in this regard?
   - Power Platform has analyzed and assessed that there are no Log4j vulnerabilities that impact the platform.
-  - Customers looking for general guidance on preventing, detectiong, and hunting for exploitation of the Log4j vulnerabilities should review Microsoft's [blog post](https://www.microsoft.com/security/blog/2021/12/11/guidance-for-preventing-detecting-and-hunting-for-cve-2021-44228-log4j-2-exploitation/) on this. 
+  - Customers looking for general guidance on preventing, detecting, and hunting for exploitation of the Log4j vulnerabilities should review Microsoft's [blog post](https://www.microsoft.com/security/blog/2021/12/11/guidance-for-preventing-detecting-and-hunting-for-cve-2021-44228-log4j-2-exploitation/) on this. 
 
 ### See also
 
