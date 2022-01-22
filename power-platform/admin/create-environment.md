@@ -215,12 +215,11 @@ The refresh cadence does not change when you will receive updates for:
 
 ### Who can access environments?
 Users are able to access resources in an environment when they have:
-- a license granting use rights for the resource being accessed in an environment. For example, a user with a Power Apps per user plan can access premium apps shared with them in any environment. 
+- a license granting use rights for the resource being accessed in an environment. For example, a user with a Power Apps per user plan can access premium apps shared with them in any environment. [This documentation](pricing-billing-skus.md) highlights use rights included with different licenses. 
 
 AND
 
 - permissions to access a resource. For example, a user can only access Power Apps that are shared with them. The following documentation outlines how to share some Power Platform resources:
-  - [This documentation](pricing-billing-skus.md) highlights use rights included with different licenses. 
   - [This documentation](/powerapps/maker/canvas-apps/share-app) highlights how to share an app with users. 
   - [This documentation](/power-automate/create-team-flows) highlights how to share a cloud flow. 
 
