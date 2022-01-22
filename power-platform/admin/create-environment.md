@@ -215,7 +215,8 @@ The refresh cadence does not change when you will receive updates for:
 
 ### Who can access environments?
 Users are able to access resources in an environment when they have:
-- a license granting use rights for the resource being accessed in an environment. For example, a user with a Power Apps per user plan can access premium apps shared with them in any environment. [This documentation](pricing-billing-skus.md) highlights use rights included with different licenses. 
+- a license granting use rights for the resource being accessed in an environment. For example, a user with a Power Apps per user plan can access premium apps shared with them in any environment. 
+  - [This documentation](pricing-billing-skus.md) highlights use rights included with different licenses. 
 
 AND
 
