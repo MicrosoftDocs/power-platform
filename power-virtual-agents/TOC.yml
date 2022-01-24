@@ -82,8 +82,10 @@
       items:
        - name: Key concepts - Publish your bot
          href: publication-fundamentals-publish-channels.md
-       - name: Add bot to your live website or Power Apps portal
+       - name: Add bot to your live website
          href: publication-connect-bot-to-web-channels.md
+       - name: Add bot to Power Apps portal
+         href: publication-add-bot-to-power-apps-portal.md
        - name: Add bot to Microsoft Teams
          href: publication-add-bot-to-microsoft-teams.md
        - name: Add bot to Facebook
