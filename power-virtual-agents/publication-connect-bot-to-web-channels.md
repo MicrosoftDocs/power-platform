@@ -68,47 +68,55 @@ You can also add the bot to your Power Platform admin center.
 
 ## Power Apps portals
 
-You can add your bot to a Power Apps portal either directly with the chatbot component, or with a URL snippet in an IFrame.
+[What are Power App portals?](https://docs.microsoft.com/en-us/powerapps/maker/portals/overview) You can  now add your bot to a Power Apps portal directly within the portal designer using the Chatbot component. This no-code experience in Power Apps portals allow you to add a Power Virtual Agents chatbot to answer questions posted by a visitor on your portals page. The chatbot (bot) can be configured with different topics and trigger phrases to automatically respond to questions posted by a visitor in a chat conversation. 
 
-**Add bot to a Power Apps portal (preview):**
+**Prerequisites**
 
-You can add your bot to a Power Apps portal in a few quick steps without any code. Power Apps portals allow you to add a Power Virtual Agents chatbot on your portal page by adding a chatbot component with limited customization.
+Create a Power Apps portal. You can learn more about [Creating a starter portal](https://docs.microsoft.com/en-us/powerapps/maker/portals/create-portal) and view samples.
 
-See the [Add chatbot to a page](/powerapps/maker/portals/add-chatbot) topic in the Power Apps documentation library for details.
+Before you can add a Power Virtual Agents bot to a Power Apps portals page, you must create a bot first. If you don't already have an available bot or one that fits your needs, you'll have the option in portals to go to Power Virtual Agents to create one. To learn how to create a bot, go to [Create and delete Power Virtual Agents bots](https://docs.microsoft.com/en-us/power-virtual-agents/authoring-first-bot).
 
->[!IMPORTANT]
->This is a preview feature.
->Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
-
-
-**Add bot to Power Apps with an IFrame:**
-
-You can also add your bot to Power Apps as an IFrame. Your live website can be a customer-facing external website or an internal site, like a SharePoint or Yammer site.
-
-You can also add the bot to your Power Platform admin center.
-
-1. In the Power Virtual Agents Portal, select **Manage** on the side navigation pane, and then go to the **Channels** tab.
-
-1. Select **Custom website** and then copy only the URL of the IFrame snippet: this URL is defined by `src="<URL>"`.
-
-    :::image type="content" source="media/channel-custom-website-url.png" alt-text="Select only the src URL." border="false":::
-
-1. Go to Power Apps Studio and add an [IFrame component](/powerapps/maker/portals/compose-page#add-iframe) into your app by selecting **Components** on the side navigation pane, and then **IFrame**.
-
-    :::image type="content" source="media/channel-custom-website-portal-iframe.png" alt-text="Add IFrame to Power Apps." border="false":::
-
-1. Paste in the URL you copied from the IFrame snippet into the **Link** field of the IFrame component. You can adjust the size of the chat window by adjusting the **Width** and **Height** field.
-
-    :::image type="content" source="media/channel-custom-website-portal-pva-iframe.png" alt-text="Add bot IFrame to Power Apps." border="false":::
-    
-1. You can interact with your bot by clicking on **Browse website**.
-
-    :::image type="content" source="media/channel-custom-website-portal-browse-website.png" alt-text="Browse website with IFrame added." border="false":::
+ **Important**
+This feature requires the following versions for starter portal package and portal host:
+•	Portal host version [9.3.4.x](https://docs.microsoft.com/en-us/powerapps/maker/portals/versions/version-9.3.4.x) or later.
+•	Starter portal package version [9.2.2103.x](https://docs.microsoft.com/en-us/powerapps/maker/portals/versions/package-version-9.2.2103) or later. More information: [additional considerations](https://docs.microsoft.com/en-us/powerapps/maker/portals/add-chatbot#additional-considerations)
 
 
+**Add a bot to your Power Apps portal**
+
+You can add a bot to your Power Apps portal in a few quick steps without any code. Power Apps portals allow you to add a Power Virtual Agents chatbot on your portal page by adding a chatbot component.
+
+Once you have a Power Apps portal and a chatbot created, you can add this component to a portals page with the following steps:
+
+1. Go to Power Apps.
+
+2. Select Apps from the left pane.
+
+3. Select your portal.
+
+4. Select Edit from the overflow menu to open the portals Studio.
+
+5. Select Components from the left pane.
+
+6. Select Chatbot component.
+
+<<<< insert image of component menu >>>>
+
+Here, you can choose with chatbot to point to. If you don't have a bot already created, or want to create a new bot to use in portals, select **Power Virtual Agents**. Or pick an existing chatbot from the list of bots in the dropdown. After you create your bot, select Sync configuration inside portals Studio to reflect the bot changes.
 
 
+7. Select whether the bot appears on all pages in your portal, or on specific pages.
 
+<<<<< insert image of chatbot property pane >>>>>
 
+If you select **Specific pages**, use **Manage bots in pages** to control the pages that can use this bot.
+
+You can add more bots from your environment across different pages in a portal. For example, a bot that answers questions related to the workplace can be added to an HR page. Or a bot that answers basic payroll queries can be added to a Finance page. However, you can't have one page use more than one bot.
+
+The chatbot will automatically style to match the Portal theme. If the Portal theme is changed, the chatbot will pick up matching syles for the header and background colors. 
+
+**Advanced Configuration**
+
+For further customization of chatbot styles, you can do advanced customization as explained [in detail here](https://docs.microsoft.com/en-us/powerapps/maker/portals/add-chatbot#advanced-configuration). Since the chatbot component is rendered using a web template called Power Virtual Agents, the template can be updated with custom style options.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
