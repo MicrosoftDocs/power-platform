@@ -176,7 +176,6 @@ You can use Power Virtual Agents bot skill manifests to create a skill connectio
 
 When calling specific topics from Composer, you'll need to refer to the topic by its event activity's name. 
 
-**To find the event activity's name for a Power Virtual Agents bot topic:**
 
 1. Select the **Connect to a Skill** action.
 
@@ -200,8 +199,6 @@ When calling specific topics from Composer, you'll need to refer to the topic by
 ### Call a Power Virtual Agents skill topic
 You can directly call any Power Virtual Agents skill topic from a Bot Framework bot instead of relying on a user utterance to trigger it. Only the Power Virtual Agents topics that are listed in skill manifest can be directly invoked from your Bot Framework bot.
 
-
-**To call a Power Virtual Agents skill topic:**
 
 1. In the Composer authoring canvas select **+ Add**. Select **Access external resources**, then **Connect to a skill**.
 
@@ -230,8 +227,6 @@ You can directly call any Power Virtual Agents skill topic from a Bot Framework 
 It is possible to pass a variable to a Power Virtual Agents skill topic as an input from Bot Framework Composer. Refer to [Passing variables between topics](/authoring-create-edit-topics#passing-variables-between-topics) to learn how to create Power Virtual Agents topics that accept input variables.
 
 If you have a Power Virtual Agents topic that can receive an input variable listed in your skill manifest, you can pass a Composer variable to it.
-
-**Pass an input variable to a Power Virtual Agents skill topic:**
 
 1. In the Composer authoring canvas select **+ Add**. Select **Access external resources**, then **Connect to a skill**.
 
@@ -272,8 +267,6 @@ If you have a Power Virtual Agents topic that can receive an input variable list
  
 ### Receive an output variable from a Power Virtual Agents skill topic 
 It is possible to receive outputs from a Power Virtual Agents skill topic in Composer. You can refer to [Passing variables between topics](/authoring-create-edit-topics#passing-variables-between-topics) to learn how to create Power Virtual Agents topics that return outputs.
-
-**To receive an output variable from a Power Virtual Agents skill topic:**
 
 1. In the Composer authoring canvas select **+ Add**. Select **Access external resources**, then **Connect to a skill**.
 
