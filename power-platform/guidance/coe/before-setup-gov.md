@@ -19,7 +19,7 @@ search.app:
 ---
 # Before setting up the governance components
 
-This article will provide you with prerequisite steps to perform<!--note from editor: Suggested.--> before setting up the governance components of the CoE Starter Kit.
+This article will provide you with prerequisite steps to perform before setting up the governance components of the CoE Starter Kit.
 
 >[!IMPORTANT]
 >Complete the instructions in [Before setting up the CoE Starter Kit](setup.md) and [Set up inventory components](setup-core-components.md) before continuing with the setup here. This article assumes you have your environment set up and are signed in with the correct identity.

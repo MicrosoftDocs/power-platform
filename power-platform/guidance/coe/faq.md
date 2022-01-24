@@ -82,7 +82,7 @@ This article will provide you with answers to frequently asked questions and tip
 The sync flows in the core component solution will only update resources that have changed since the last run. After an upgrade, you'll only see the benefits of bug fixes or changes when you run a full inventory sync by doing the following:
 
 1. Set the value of the **Full inventory** environment variable to **Yes** (Learn more: [update environment variables](#update-environment-variables)).
-1. Turn all flows in the core solution off and back on (note that this step is temporary while we await a fix to a caching bug in the flow).<!--note from editor: Edit okay, or should it be "core components"? Also, is there a way to mark this as something to come back to when the bug is fixed? -->
+1. Turn all flows in the core solution off and back on.
 1. Run the Admin | Sync Template v3 flow.
 1. Set the **Full inventory** environment variable back to **No**.
 1. Turn all flows in the core solution off and back on.
@@ -174,7 +174,7 @@ If you aren't using the [Admin - Command Center](core-components.md#admin---comm
 ## Add apps to Microsoft Teams
 
 1. Open the Power Apps app in Teams, select **Build**.
-1. Select the team you've installed the CoE Starter Kit in, and then select **Installed apps**.<!--note from editor: Edit okay? I wasn't sure how this step went.-->
+1. Select the team you've installed the CoE Starter Kit in, and then select **Installed apps**.
 1. Select **Apps**, and then select **Edit** for the app you want to add to Teams.
 
       ![Edit the app in Teams.](media/tips-link2.png "Edit the app in teams")

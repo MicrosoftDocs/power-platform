@@ -34,7 +34,7 @@ You use this functionality to detect unused objects, and ask makers to either ar
 
 If your solution is installed in a production environment, make sure your environment isn't restricted with an [environment security group](limitations.md#security-groups-and-approvals).
 
-If your solution is installed in a Dataverse for Teams environment, you first need to grant access to makers who aren't part of your team in Microsoft Teams<!--!note from editor: Edit okay?--> so they can participate in approval workflows. [Share an app in a Teams environment](faq.md#share-an-app-from-a-dataverse-for-teams-environment) with your [Power Platform maker group](setup.md#how-will-you-communicate-with-your-admins-makers-and-end-users).
+If your solution is installed in a Dataverse for Teams environment, you first need to grant access to makers who aren't part of your team in Microsoft Teams so they can participate in approval workflows. [Share an app in a Teams environment](faq.md#share-an-app-from-a-dataverse-for-teams-environment) with your [Power Platform maker group](setup.md#how-will-you-communicate-with-your-admins-makers-and-end-users).
 
 ## Configure mandatory environment variables
 
@@ -106,7 +106,7 @@ Consider adding this app to the **Maker - Command Center** for makers to easily 
 This section includes the full list of environment variables that affect the compliance process, including environment variables with default values. You might have to [update environment variables](faq.md#update-environment-variables) after import.
 
 >[!IMPORTANT]
-> You don't have to change the values during setup, just when you need to change the value of an environment variable that you configured during import or when you want to change a default value. To make sure the latest values are picked up, restart all flows after you change environment variables.<!--note from editor: Suggested.-->
+> You don't have to change the values during setup, just when you need to change the value of an environment variable that you configured during import or when you want to change a default value. To make sure the latest values are picked up, restart all flows after you change environment variables.
 
 Environment variables are used to store application and flow configuration data with data specific to your organization or environment.
 
