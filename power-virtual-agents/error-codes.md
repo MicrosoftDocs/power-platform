@@ -18,9 +18,17 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](error-codes.md)
 > - [Power Virtual Agents app in Microsoft Teams](teams/error-codes-teams.md)
 
-When your bot encounters a problem, it will respond with an error message from the table below. 
+When a bot encounters a problem during a conversation it will respond with an error message.
 
-Users will see a more generic message but will still be provided with an error code. For example, "Sorry, the bot can't talk for a while. It’s something your admin needs to address. Error code:{ErrorCode}. Conversation ID: {Conversation ID}. Time (UTC): {time}."
+If you're a bot user, the error message will contain an error code for the specific problem that was encountered.
+
+:::image type="content" source="media/error-codes/c2-error.png" alt-text="Highlight of the Add allowed called button at the top of the Manage allowlist flyout panel.":::
+
+If you're a bot maker testing the bot in the [Test bot pane](authoring-test-bot.md), you'll see an additional message that gives more context about the problem.
+
+:::image type="content" source="media/error-codes/c1-error.png" alt-text="Highlight of the Add allowed called button at the top of the Manage allowlist flyout panel.":::
+
+
 
 Errors may also appear in the [Topic Checker](authoring-topic-management.md#topic-errors) where you can easily locate and fix them.
 
