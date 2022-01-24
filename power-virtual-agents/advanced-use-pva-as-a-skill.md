@@ -24,7 +24,7 @@ If there is a match, the Bot Framework bot will invoke the Power Virtual Agents 
 Additionally, from a Bot Framework bot, you can invoke a Power Virtual Agents bot's topic with inputs and utilize the outputs it returns.
 
 > [!IMPORTANT]
-> Using Power Virtual Agents bots as a skill is not available with the [Teams Power Virtual Agents license](requirements-licensing-subscriptions.md).  
+> The use of Power Virtual Agents bots as skills is not available with the [Teams Power Virtual Agents license](requirements-licensing-subscriptions.md).  
 > You must have a [trial](sign-up-individual.md) or full Power Virtual Agents license.
 
 To set up your Power Virtual Agents bot as a skill:
@@ -36,7 +36,7 @@ To set up your Power Virtual Agents bot as a skill:
 
 ## Prerequisites
 
-- An [Orchestrator bot](/composer/how-to-create-orchestrator-bot) created in Composer. LUIS and RegEx recognizers are not supported.
+-  A Composer bot with the [Orchestrator package](/composer/how-to-create-orchestrator-bot#add-orchestrator-in-package-manager). The bot must use the Orchestrator recognizer in the dialog that invokes the PVA skill. Note that the other recognizers (default, regular expression, and custom) won't work for this process.
 - [Understand how Bot Framework skills work](/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0&preserve-view=true) 
 - [Learn how to use Bot Framework Composer](/composer/introduction)
 - [Learn how to use skills in Bot Framework Composer](/composer/concept-skills)
@@ -180,7 +180,7 @@ When calling specific topics from Composer, you'll need to refer to the topic by
 
 1. Select the **Connect to a Skill** action.
 
-1. In the properties pane under **Skill Dialog Name** select **Show skill manifest**.
+1. In the properties pane under **Skill Dialog Name**, select **Show skill manifest**.
    
     :::image type="content" source="media/PVA-as-a-skill/SelectSkillManifest.png" alt-text="Show skill manifest":::
    
@@ -266,7 +266,7 @@ If you have a Power Virtual Agents topic that can receive an input variable list
     ]
     ```
 
-    In following the example, the Composer variable `dialog.storeLocation` is used to provide a value to the input variable `pva_StoreLocation` in the Power Virtual Agents bot topic `dispatchTo_new_topic_127cdcdbbb4a480ea113c5101f309089_21a34f16`. 
+    In the following the example, the Composer variable `dialog.storeLocation` is used to provide a value to the input variable `pva_StoreLocation` in the Power Virtual Agents bot topic `dispatchTo_new_topic_127cdcdbbb4a480ea113c5101f309089_21a34f16`. 
 
     :::image type="content" source="media/PVA-as-a-skill/Lesson2_InputsActivityCode.png" alt-text="Add Activity event with a Power Virtual Agents input value to Show Code window.":::
  
@@ -281,7 +281,7 @@ It is possible to receive outputs from a Power Virtual Agents skill topic in Com
 
 1. [Locate the event activity's name for your Power Virtual Agents bot topic](#locate-a-power-virtual-agents-topics-event-activity-name) you want to call. Copy the value (without quotes) and save it to use in the next steps.
     
-1. If a Power Virtual Agents topic has outputs, there will a **resultValue** property  nested within the topic property. Take note of the **$ref** in the **resultValue** property; you will use it to locate the in the next step.
+1. If a Power Virtual Agents topic has outputs, there will be a **resultValue** property nested within the topic property. Take note of the **$ref** in the **resultValue** property; you will use it to locate the in the next step.
 
     :::image type="content" source="media/PVA-as-a-skill/Lesson3_OutputsResultValueSection.png" alt-text="Locate the result value property for a Power Virtual Agents topic in skill manifest.":::
     
