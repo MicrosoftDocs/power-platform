@@ -22,11 +22,11 @@ When a bot encounters a problem during a conversation it will respond with an er
 
 If you're a bot user, the error message will contain an error code for the specific problem that was encountered.
 
-:::image type="content" source="media/error-codes/c2-error.png" alt-text="Highlight of the Add allowed called button at the top of the Manage allowlist flyout panel.":::
+:::image type="content" source="media/error-codes/c2-error.png" alt-text="Bot error message displayed to users.":::
 
 If you're a bot maker testing the bot in the [Test bot pane](authoring-test-bot.md), you'll see an additional message that gives more context about the problem.
 
-:::image type="content" source="media/error-codes/c1-error.png" alt-text="Highlight of the Add allowed called button at the top of the Manage allowlist flyout panel.":::
+:::image type="content" source="media/error-codes/c1-error.png" alt-text="Bot error message displayed to bot makers.":::
 
 
 
