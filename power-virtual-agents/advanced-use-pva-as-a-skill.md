@@ -171,8 +171,8 @@ You can use Power Virtual Agents bot skill manifests to create a skill connectio
 
     :::image type="content" source="media/PVA-as-a-skill/Composer_PVASkillAdded.png" alt-text="Composer - Power Virtual Agents skill added.":::
 
+### Locate the topic in the skill manifest
 
-### Locate a Power Virtual Agents topic's event activity name
 
 When calling specific topics from Composer, you'll need to refer to the topic by its event activity's name. 
 
@@ -204,7 +204,7 @@ You can directly call any Power Virtual Agents skill topic from a Bot Framework 
 
     :::image type="content" source="media/PVA-as-a-skill/ConnectToSkill.png" alt-text="Composer - connect to a skill.":::
 
-1. [Locate the event activity's name for your Power Virtual Agents bot topic](#locate-a-power-virtual-agents-topics-event-activity-name) you want to call. Copy the value (without quotes) and save it to use in the next steps.
+1. [Locate the event activity's name for your Power Virtual Agents bot topic](#locate-the-topic-in-the-skill-manifest) you want to call. Copy the value (without quotes) and save it to use in the next steps.
     
 1. Select **Close** to close the manifest window.
    
@@ -232,7 +232,7 @@ If you have a Power Virtual Agents topic that can receive an input variable list
 
     :::image type="content" source="media/PVA-as-a-skill/ConnectToSkill.png" alt-text="Composer - connect to a skill.":::
 
-1. [Locate the event activity's name for your Power Virtual Agents bot topic](#locate-a-power-virtual-agents-topics-event-activity-name) you want to call. Copy the value (without quotes) and save it to use in the next steps.
+1. [Locate the event activity's name for your Power Virtual Agents bot topic](#locate-the-topic-in-the-skill-manifest) you want to call. Copy the value (without quotes) and save it to use in the next steps.
     
 1. If a Power Virtual Agents topic has inputs, there will a **value** property nested within the topic property. The **value** property will contain a **$ref** property. Take note of its value as you will use it in the next step.
 
@@ -272,7 +272,7 @@ It is possible to receive outputs from a Power Virtual Agents skill topic in Com
 
     :::image type="content" source="media/PVA-as-a-skill/ConnectToSkill.png" alt-text="Composer - connect to a skill.":::
 
-1. [Locate the event activity's name for your Power Virtual Agents bot topic](#locate-a-power-virtual-agents-topics-event-activity-name) you want to call. Copy the value (without quotes) and save it to use in the next steps.
+1. [Locate the event activity's name for your Power Virtual Agents bot topic](#locate-the-topic-in-the-skill-manifest) you want to call. Copy the value (without quotes) and save it to use in the next steps.
     
 1. If a Power Virtual Agents topic has outputs, there will be a **resultValue** property nested within the topic property. Take note of the **$ref** in the **resultValue** property; you will use it to locate the in the next step.
 
