@@ -173,9 +173,11 @@ You can use Power Virtual Agents bot skill manifests to create a skill connectio
 
 ### Locate the topic in the skill manifest
 
+You can use an event to trigger a Power Virtual Agents topic in the skill.
 
-When calling specific topics from Composer, you'll need to refer to the topic by its event activity's name. 
+To call a specific topic from Composer, refer to the topic by its name in the skill manifest.
 
+The name is the value of the associated event's name property.
 
 1. Select the **Connect to a Skill** action.
 
@@ -189,7 +191,7 @@ When calling specific topics from Composer, you'll need to refer to the topic by
    
 1. Locate the respective property of the topic you're looking for.
    
-1. The topic property will contain the nested property **name** which is the topic's event activity name. 
+1. The topic property will contain the nested property **name**. When the Power Virtual Agents skill receives an event with this name, it triggers the topic.
    
    In the following example, the event activity name is `dispatchTo_new_topic_87609dabd86049f7bc6507c6f7263aba_33d`.
 
@@ -208,7 +210,7 @@ You can directly call any Power Virtual Agents skill topic from a Bot Framework 
     
 1. Select **Close** to close the manifest window.
    
-1. In the **Connect to a skill** panel under the **Activity** section, then select **Show code**.
+1. In the properties pane, in the **Activity** section, select **Show code**.
    
     :::image type="content" source="media/PVA-as-a-skill/ActivityShowCode.png" alt-text="Select Show Code option in Activity panel.":::
   
