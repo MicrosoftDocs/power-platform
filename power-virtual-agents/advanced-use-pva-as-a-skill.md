@@ -206,6 +206,10 @@ You can directly call any Power Virtual Agents skill topic from a Bot Framework 
 
     :::image type="content" source="media/PVA-as-a-skill/ConnectToSkill.png" alt-text="Composer - connect to a skill.":::
 
+1. In the properties pane, for **Skill Dialog Name**, select your Power Virtual Agents bot.
+
+    :::image type="content" source="media/PVA-as-a-skill/SelectSkillManifest.png" alt-text="Show skill manifest":::
+
 1. [Locate the event activity's name for your Power Virtual Agents bot topic](#locate-the-topic-in-the-skill-manifest) you want to call. Copy the value (without quotes) and save it to use in the next steps.
     
 1. Select **Close** to close the manifest window.
@@ -233,6 +237,10 @@ If you have a Power Virtual Agents topic that can receive an input variable list
 1. In the Composer authoring canvas select **+ Add**. Select **Access external resources**, then **Connect to a skill**.
 
     :::image type="content" source="media/PVA-as-a-skill/ConnectToSkill.png" alt-text="Composer - connect to a skill.":::
+
+1. In the properties pane, for **Skill Dialog Name**, select your Power Virtual Agents bot.
+
+    :::image type="content" source="media/PVA-as-a-skill/SelectSkillManifest.png" alt-text="Show skill manifest":::
 
 1. [Locate the event activity's name for your Power Virtual Agents bot topic](#locate-the-topic-in-the-skill-manifest) you want to call. Copy the value (without quotes) and save it to use in the next steps.
     
@@ -273,6 +281,10 @@ It is possible to receive outputs from a Power Virtual Agents skill topic in Com
 1. In the Composer authoring canvas select **+ Add**. Select **Access external resources**, then **Connect to a skill**.
 
     :::image type="content" source="media/PVA-as-a-skill/ConnectToSkill.png" alt-text="Composer - connect to a skill.":::
+
+1. In the properties pane, for **Skill Dialog Name**, select your Power Virtual Agents bot.
+
+    :::image type="content" source="media/PVA-as-a-skill/SelectSkillManifest.png" alt-text="Show skill manifest":::
 
 1. [Locate the event activity's name for your Power Virtual Agents bot topic](#locate-the-topic-in-the-skill-manifest) you want to call. Copy the value (without quotes) and save it to use in the next steps.
     
