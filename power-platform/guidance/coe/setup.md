@@ -35,6 +35,7 @@ The CoE Starter Kit requires access to your tenant's Power Platform environments
 
 - [Microsoft Power Platform service admin](/power-platform/admin/use-service-admin-role-manage-tenant#power-platform-administrator), global tenant admin, or Dynamics 365 service admin.
 - Power Apps Per User license (non-trial) and Microsoft 365 license.
+- Power Automate Per User or Per Flow license (non-trial).
 - The identity must be email-enabled.
 - If you'd like to collect telemetry information, such as app launches and unique users per app, the identity must have access to the [Microsoft 365 audit log](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance#before-you-search-the-audit-log).
 
@@ -76,7 +77,7 @@ The CoE Starter Kit can be used in both production environments and Dataverse fo
 | Collecting telemetry information from the audit log | No | Yes
 | Power Platform admin view to view and filter resources | Canvas app | Model-driven app |
 | Power BI Dashboard | Yes | Yes |
-| Canvas apps part of core components (DLP Editor, Set App Permissions and Set Flow Permissions apps<!--note from editor: Edit okay?-->) | Yes | Yes |
+| Canvas apps part of core components (DLP Editor, Set App Permissions and Set Flow Permissions apps) | Yes | Yes |
 | Apps and flows part of governance components | Yes | Yes |
 | Apps and flows part of nurture components | Yes | Yes |
 | Sharing the Developer Compliance Center with makers | Share with colleagues who have a Microsoft 365 license in Teams | Sharing requires users to have a Power Apps Per User or Per App license |
@@ -131,7 +132,7 @@ The [DLP policy](/admin/wp-data-loss-prevention) applied to your CoE Starter Kit
 
 - If you're using the [audit log](setup-auditlog.md) solution, the custom connector used to connect to the Microsoft 365 audit log also must be allowed in your business group. Configure the [https://manage.office.com/](/office/office-365-management-api/office-365-management-apis-overview) endpoint in the business group of your tenant-level policy. Learn more: [Configure custom connector endpoints in tenant-level policies](/power-platform/admin/dlp-connector-classification#tenant-level-dlp-policies).
 
-- Check that no other DLP policies apply to this environment. Learn more: [Combined effect of multiple DLP policies](../../admin/dlp-combined-effect-multiple-policies.md) 
+- Check that no other DLP policies apply to this environment. Learn more: [Combined effect of multiple DLP policies](../../admin/dlp-combined-effect-multiple-policies.md)
 
 - If you're using the [ALM Accelerator for Makers](almaccelerator-components.md) components, the environment must have a DLP policy that allows [Dataverse](/connectors/commondataservice/), [Office 365 Outlook](/connectors/office365/), [Power Apps for Makers](/connectors/powerappsforappmakers/), [Approvals](/connectors/approvals/), [GitHub](/connectors/github/), and [Power Platform for Admins](/connectors/powerplatformforadmins/) to be used together. Those connectors must be in the business data&ndash;only bucket of the DLP policy for this environment.
 
