@@ -1,7 +1,7 @@
 ---
 title: "Authenticating to Power Platform services | MicrosoftDocs"
 description: Provides information about how you can authenticate to Power Platform services.
-ms.date: 01/04/2022
+ms.date: 01/25/2022
 ms.service: power-platform
 ms.topic: "get-started-article"
 ms.custom: 

@@ -1,7 +1,7 @@
 ---
 title: Connecting and authenticating to data sources
 description: Provides information about connecting and authenticating to different data sources from Power Platform.
-ms.date: 01/04/2021
+ms.date: 01/25/2022
 ms.service: power-platform
 ms.topic: "get-started-article"
 ms.custom: 

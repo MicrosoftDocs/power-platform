@@ -1,7 +1,7 @@
 ---
 title: "Data storage in Microsoft Power Platform | MicrosoftDocs"
 description: Provides information about data storage concepts in Power Platform.
-ms.date: 01/04/2022
+ms.date: 01/25/2022
 ms.service: power-platform
 ms.topic: "get-started-article"
 ms.custom: 

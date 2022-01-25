@@ -1,7 +1,7 @@
 ---
 title: "Power Platform security FAQs | MicrosoftDocs"
 description: Provides common security questions and answers for Power Platform security.
-ms.date: 01/10/2022
+ms.date: 01/25/2022
 ms.service: power-platform
 ms.topic: ""
 ms.custom: 
