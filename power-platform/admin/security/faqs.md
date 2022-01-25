@@ -88,7 +88,7 @@ The below are some of the common security questions that customers have raised i
   - Yes, CSP can be enabled and configured using [the docs](/power-platform/admin/content-security-policy).  The doc also gives a roadmap of improvements we will make to CSP in the future.
 
   ### How can we connect to SQL Server securely?
-  - For the best practices about connecting securely to the external data sources, read [Use Microsoft SQL Server securely with Power Apps](/maker/canvas-apps/connections/sql-server-security).
+  - For the best practices about connecting securely to the external data sources, read [Use Microsoft SQL Server securely with Power Apps](/powerapps/maker/canvas-apps/connections/sql-server-security).
 
   ### What ciphers are supported by Power Platform? What's the roadmap of continuously moving towards stronger ciphers?
   - All Microsoft services and products are configured to use the approved cipher suites, in the exact order as mentioned by Microsoft Crypto Board. The exact list and order can be found in [Power Platform documentation](/power-platform/admin/server-cipher-tls-requirements).
