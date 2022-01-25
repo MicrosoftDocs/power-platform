@@ -6,7 +6,7 @@ manager: devkeydet
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/10/2022
+ms.date: 01/24/2022
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
@@ -20,41 +20,41 @@ search.app:
 
 # Set up environment request components
 
-This article will help you to setup the environment request components of the Core solution, which automate the request, approval and creation of environments and Data Loss Prevention (DLP) policies.
+This article will help you to set up the environment request components of the core solution, which automate the request, approval, and creation of environments and data loss prevention (DLP) policies.
 
 >[!IMPORTANT]
->Complete the **[Get started](setup.md)** and **[Setup Inventory](setup-core-components.md)** instructions before continuing with the setup here. This article assumes you have your [environment setup](setup.md#create-your-environment), and are logged in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
+>Complete the instructions in [Before setting up the CoE Starter Kit](setup.md) and [Set up inventory components](setup-core-components.md) before continuing with the setup here. This article assumes you have your [environment set up](setup.md#create-your-environment) and are logged in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
 
 ## Before you start
 
 ### Update environment variables values
 
-[Update environment variables](faq.md#update-environment-variables) used by the environment request management components:
+[Update environment variables](faq.md#update-environment-variables) used by the environment request management components as described in the following table.
 
 | Name | Description |
 |------|---------------|
-|Environment Request Admin App Url | Update this environment variable with the URL for the **Admin - Environment Request** canvas app. See: [Get App URL – Production Environment](faq.md#get-a-power-apps-url-from-a-production-environment) or [Get App URL – Teams Environment](faq.md#add-apps-to-microsoft-teams) |
+|Environment Request Admin App Url | Update this environment variable with the URL for the Admin - Environment Request canvas app. More information: [Get an app URL from a production environment](faq.md#get-a-power-apps-url-from-a-production-environment) or [Get an app URL from a Teams environment](faq.md#add-apps-to-microsoft-teams) |
 
 ## Turn on flows
 
-There are several flows which will need to be **turned on** for these components:  
+There are several flows which will need to be turned on for these components:  
 
 - DLP Request | Apply Policy to Environment (Child)
 - DLP Request | Sync Policy to Dataverse (Child)
 - DLP Request | Process Approved Policy Change
 - DLP Request | Sync new Policy
 - DLP Request | Sync Shared Policies
-- Env Request | Cleanup expired environments
+- Env Request | Cleanup environments
 - Env Request | Create approved environment
 - Env Request | Notify admin when new request submitted
 - Env Request | Notify requestor when rejected
 
 ## Share apps with admins and makers
 
-The Environment Request components consist of two apps:
+The environment request components consist of two apps:
 
-- [**Admin - Environment Requests**](core-components.md#admin---environment-requests) app for admins to view and approve environment and connectors requests - share this app with other admins and assign them the **Power Platform Admin SR** security role.
-- [**Environment Request**](core-components.md#environment-requests) app for makers to request environments and connectors - share this app with your makers and assign them the **Power Platform Maker SR** security role.
+- [**Admin - Environment Requests**](core-components.md#admin---environment-requests) app for admins to view and approve environment and connectors requests. Share this app with other admins, and assign them the Power Platform Admin SR security role.
+- [**Environment Request**](core-components.md#environment-requests) app for makers to request environments and connectors. Share this app with your makers, and assign them the Power Platform Maker SR security role.
 
 More information:
 
@@ -63,11 +63,11 @@ More information:
 
 ## All environment variables
 
-Here is the full list of environment variables that impact the environment request components. You may have to [update environment variables](faq.md#update-environment-variables) after import.
+This section includes the full list of environment variables that affect the environment request components. You might have to [update environment variables](faq.md#update-environment-variables) after import.
 
-| Name | Description | Default Value
+| Name | Description | Default value
 |------|---------------|------|
-|Environment Request Admin App Url | Update this environment variable with the URL for the **Admin - Environment Request** canvas app. See: [Get App URL – Production Environment](faq.md#get-a-power-apps-url-from-a-production-environment) or [Get App URL – Teams Environment](faq.md#add-apps-to-microsoft-teams) | n/a |
+|Environment Request Admin App Url | Update this environment variable with the URL for the Admin - Environment Request canvas app. More information: [Get an app URL from a production environment](faq.md#get-a-power-apps-url-from-a-production-environment) or [Get an app URL from a Microsoft Teams environment](faq.md#add-apps-to-microsoft-teams) | None |
 
 ## It looks like I found a bug with the CoE Starter Kit; where should I go?
 
