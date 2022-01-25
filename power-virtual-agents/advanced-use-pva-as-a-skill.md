@@ -64,9 +64,9 @@ The Bot Framework and Power Virtual Agents bots must be deployed in the same ten
     >
     >:::image type="content" source="media/PVA-as-a-skill/Skill_ManageAllowlistSecurity.png" alt-text="Screenshot of the allowlist tile on the Security or Authentication page.":::
 
-1. Select **+ Add allowed caller** on the **Manage allowlist for \<bot name\>** panel.
+1. Select **+ Add allowed caller** on the **Manage allowlist for \<bot name\>** pane.
 
-    :::image type="content" source="media/PVA-as-a-skill/Skill_AddAllowedCallers.png" alt-text="Highlight of the Add allowed called button at the top of the Manage allowlist flyout panel.":::
+    :::image type="content" source="media/PVA-as-a-skill/Skill_AddAllowedCallers.png" alt-text="Highlight of the Add allowed called button at the top of the Manage allowlist flyout pane.":::
 
 1. Enter your Bot Frameworks bot's [app ID](/azure/bot-service/bot-service-manage-overview#get-azure-bot-resource-app-id) and select **Next**.
 
@@ -90,9 +90,9 @@ The Bot Framework and Power Virtual Agents bots must be deployed in the same ten
 
 1. Select **Save** to add your bot to the allowlist.
 
-The Bot Framework bot will be displayed by the **Display name** (if you entered one) or by its **App ID**. You can **Delete** or **Edit** it at any time from the **Manage allowlist for \<bot name\>** panel.
+The Bot Framework bot will be displayed by the **Display name** (if you entered one) or by its **App ID**. You can **Delete** or **Edit** it at any time from the **Manage allowlist for \<bot name\>** pane.
 
-:::image type="content" source="media/PVA-as-a-skill/Skill_AllowedCallerAdded.png" alt-text="The manage allowlist panel showing a list of allowed bot.":::
+:::image type="content" source="media/PVA-as-a-skill/Skill_AllowedCallerAdded.png" alt-text="The manage allowlist pane showing a list of allowed bot.":::
 
 >[!Note]
 >The Bot Framework bots added to the allowlist will not be [exported as part of the bot content](authoring-export-import-bots.md).
@@ -124,9 +124,9 @@ All Power Virtual Agents skill manifests are automatically generated and updated
 >  
 >To generate your bot's **Published manifest**, your need to [publish your Power Virtual Agents bot](publication-fundamentals-publish-channels.md).
 
-Both skill manifests can be found on **Manage allowlist** panel.
+Both skill manifests can be found on **Manage allowlist** pane.
 
-:::image type="content" source="media/PVA-as-a-skill/Skill_Manifest1.png" alt-text="Power Virtual Agents bot Manifests on the Manage Allowlist panel.":::
+:::image type="content" source="media/PVA-as-a-skill/Skill_Manifest1.png" alt-text="Power Virtual Agents bot Manifests on the Manage Allowlist pane.":::
 
 Additionally, you can find the skill manifests by navigating to **Manage** > **Details**. The **Details** tab shows other metadata like **Environment ID**, **Tenant ID**, and **Bot app ID**.
 

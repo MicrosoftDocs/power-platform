@@ -49,7 +49,7 @@ To help understand that notion, the **Money** entity can be used as an example.
 
    :::image type="content" source="media/entities-1(draft).png" alt-text="Entities pane." border="false":::
 
-1. Select the **Money** entity, which will open the details panel for the entity.
+1. Select the **Money** entity, which will open the details pane for the entity.
 
    :::image type="content" source="media/entities-2(draft).png" alt-text="Money entity description." border="false":::
 
@@ -73,7 +73,7 @@ To do this, you need to create a custom entity. In this case, you can create an 
 
    :::image type="content" source="media/advanced-entities-slot-filling/entities-new.png" alt-text="Select New entity.":::
 
-1. This opens a panel where you can choose the type of entity: either a [**Closed list** entity](#closed-list-entities) or a [**Regular expression (regex)** entity](#regular-expression-regex-entities).
+1. This opens a pane where you can choose the type of entity: either a [**Closed list** entity](#closed-list-entities) or a [**Regular expression (regex)** entity](#regular-expression-regex-entities).
 
 ### Closed list entities
 
@@ -81,19 +81,19 @@ Closed list entities let you define a list of items. This is best used for small
 
 :::image type="content" source="media/advanced-entities-slot-filling/create-entities-closed.png" alt-text="Screenshot of the entity creation window, with the Closed list option highlighted.":::
 
-Selecting this option when creating an entity will show a panel where you can specify the name of the entity, an optional description, and enter the items you want included in the entity.
+Selecting this option when creating an entity will show a pane where you can specify the name of the entity, an optional description, and enter the items you want included in the entity.
 
-:::image type="content" source="media/advanced-entities-slot-filling/edit-closed-list.png" alt-text="Screenshot of the entities list panel.":::
+:::image type="content" source="media/advanced-entities-slot-filling/edit-closed-list.png" alt-text="Screenshot of the entities list pane.":::
 
 When you enter items you can:
 
 - Select each item to change its name.
 - Select the trash can icon to delete the item from the list.
-- Select **+ Synonyms** (or select the listed synonyms if they've already been added) to open the **Edit synonyms** panel.
+- Select **+ Synonyms** (or select the listed synonyms if they've already been added) to open the **Edit synonyms** pane.
 
 You can add synonyms to manually expand the matching logic for each item in the entity's list. For example, in the "hiking" item, you can add "trekking" and "mountaineering" as synonyms.
 
-:::image type="content" source="media/advanced-entities-slot-filling/edit-synonyms.png" alt-text="Screenshot of the Edit synonyms panel.":::
+:::image type="content" source="media/advanced-entities-slot-filling/edit-synonyms.png" alt-text="Screenshot of the Edit synonyms pane.":::
 
 For each entity you can also enable **Smart matching**.
 
@@ -113,13 +113,13 @@ For example, you could use a regex entity to identify items such as a tracking I
 
 :::image type="content" source="media/advanced-entities-slot-filling/create-entities-regex.png" alt-text="Screenshot of the entity creation window, with the Regex option highlighted.":::
 
-Selecting this option when creating an entity will show a panel where you can specify the name of the entity, an optional description, and enter the regex pattern that should be used to match and extract entity items from the input.
+Selecting this option when creating an entity will show a pane where you can specify the name of the entity, an optional description, and enter the regex pattern that should be used to match and extract entity items from the input.
 
-:::image type="content" source="media/advanced-entities-slot-filling/edit-regex-list.png" alt-text="Screenshot of the regex entity panel.":::
+:::image type="content" source="media/advanced-entities-slot-filling/edit-regex-list.png" alt-text="Screenshot of the regex entity pane.":::
 
 A Power Virtual Agents regex entity uses the [.NET regular expressions syntax](/dotnet/standard/base-types/regular-expressions).
 
-By default, pattern matching is case sensitive, to make it case insensitive use the `(?i)` regular expression option in your pattern string. Some basic examples are included in the regex entity panel, and additional information on the syntax and more examples can be found in the [Regular Expression Language - Quick Reference](/dotnet/standard/base-types/regular-expression-language-quick-reference) topic.
+By default, pattern matching is case sensitive, to make it case insensitive use the `(?i)` regular expression option in your pattern string. Some basic examples are included in the regex entity pane, and additional information on the syntax and more examples can be found in the [Regular Expression Language - Quick Reference](/dotnet/standard/base-types/regular-expression-language-quick-reference) topic.
 
 If you need to make the regular expression accommodate multiple patterns you can use the alternation operator `|` to concatenate regular expressions. For example, you could combine two regex patterns to look for both the old and new formats of a product ID code.
 

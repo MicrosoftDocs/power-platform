@@ -51,7 +51,7 @@ You will then need to submit your app for Facebook review before you can publish
 
 1. Sign in to the Facebook app that you want to add your bot to at [Facebook for Developers](https://developers.facebook.com/).
 
-1. Under **Settings** on the side menu panel, select **Basic** .
+1. Under **Settings** on the side menu pane, select **Basic** .
 
 1. Copy the *App ID* and *App Secret*. You will need these when you [configure the Facebook channel in Power Virtual Agents](#configure-the-facebook-channel-in-power-virtual-agents).
 
@@ -61,7 +61,7 @@ You will then need to submit your app for Facebook review before you can publish
 
 1. Sign in to the Facebook app that you want to add your bot to at [Facebook for Developers](https://developers.facebook.com/).
 
-1. Under **Settings** on the side menu panel, select **Advanced**.
+1. Under **Settings** on the side menu pane, select **Advanced**.
 
 1. Make sure **Allow API Access to App Settings** is set to **Yes**.  
 
@@ -81,7 +81,7 @@ You will then need to submit your app for Facebook review before you can publish
 
 1. Sign in to the Facebook App that you want to add your bot to at [Facebook for Developers](https://developers.facebook.com/).
 
-1. Select **Settings** under **Products** and **Messenger** on the side menu panel.
+1. Select **Settings** under **Products** and **Messenger** on the side menu pane.
 
 1. Add the pages you want to add the bot to by selecting **Add or Remove Pages** under the **Access Tokens** section. You can also create a new page by selecting **Create New Page**.
 
@@ -119,7 +119,7 @@ You will then need to submit your app for Facebook review before you can publish
 
 1. Sign in to the Facebook app that you want to add your bot to at [Facebook for Developers](https://developers.facebook.com/).
 
-1. Select **Settings** under **Products** and **Messenger** on the side menu panel.
+1. Select **Settings** under **Products** and **Messenger** on the side menu pane.
 
 1. Under the **Webhooks** section, select **Add Callback URL**.
 
@@ -145,7 +145,7 @@ You will then need to submit your app for Facebook review before you can publish
 
 ### Submit for Facebook review
 
-You need to submit your app for Facebook review before you can make your Facebook app public. Facebook requires a Privacy Policy URL and Terms of Service URL. You need to provide those on the Facebook basic app settings page (after signing in to your app at [Facebook for Developers](https://developers.facebook.com/), select **Basic** under **Settings** on the side menu panel).
+You need to submit your app for Facebook review before you can make your Facebook app public. Facebook requires a Privacy Policy URL and Terms of Service URL. You need to provide those on the Facebook basic app settings page (after signing in to your app at [Facebook for Developers](https://developers.facebook.com/), select **Basic** under **Settings** on the side menu pane).
 
 The [Code of Conduct](https://investor.fb.com/corporate-governance/code-of-conduct/default.aspx) page contains third-party resources to help create a privacy policy. The [Terms of Service](https://www.facebook.com/terms.php) page contains sample terms to help create an appropriate Terms of Service document.
 

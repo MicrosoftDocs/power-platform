@@ -64,12 +64,12 @@ Sign in to the Power Virtual Agents bot you want to connect to your omnichannel 
 
 1. On the side pane, expand the **Manage** tab, go to **Agent transfers**, and then select the **Omnichannel** tile.
 
-    :::image type="content" source="media/handoff-settings.png" alt-text="IMAGE-SHOWING-SETTINGS-PANEL-OPENED.":::
+    :::image type="content" source="media/handoff-settings.png" alt-text="IMAGE-SHOWING-SETTINGS-PANE-OPENED.":::
 
 1. Select **Enable**.
     - If you haven't installed any of the [extension solutions required for hand off](#install-extension-solutions), you'll see a notification that your bot doesn't have access to the variables or actions needed for hand off to omnichannel. You must [install at least the omnichannel extension solution](#install-extension-solutions) for hand off to Omnichannel to work.  
 
-        :::image type="content" source="media/handoff-no-extension.png" alt-text="Notification at the top of the omnichannel configuration panel that says your bot doesn't have access.":::
+        :::image type="content" source="media/handoff-no-extension.png" alt-text="Notification at the top of the omnichannel configuration pane that says your bot doesn't have access.":::
 
     - You may see a message that says we can't determine if omnichannel integration is enabled for the environment with the managed bot if you have [ALM enabled in your bot](#power-virtual-agent-bots-with-alm).
 

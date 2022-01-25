@@ -73,7 +73,7 @@ Purchase licenses for your organization by going to the [Microsoft 365 admin cen
 
    :::image type="content" source="media/licensing-manage.png" alt-text="Select a user, and then manage product licenses." border="false":::
 
-1. On the flyout panel, select the check box next to **Power Virtual Agent user license**, and then select **Save changes**.
+1. On the flyout pane, select the check box next to **Power Virtual Agent user license**, and then select **Save changes**.
 
 Repeat these steps to add more users, or exit the Microsoft 365 admin center if you're finished.
 

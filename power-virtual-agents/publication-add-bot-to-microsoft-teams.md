@@ -110,7 +110,7 @@ You should add your bot to your own version of Teams before sharing it with othe
 
 1. Select **Open bot** to have the installation prompt launch in Microsoft Teams. Select **Add** to have it added as an app in Teams. This only installs the bot for you.
 
-   :::image type="content" source="media/sharing-security-groups/add-bot-to-teams-open-bot-teams-panel.PNG" alt-text="Install bot for yourself in Teams panel":::
+   :::image type="content" source="media/sharing-security-groups/add-bot-to-teams-open-bot-teams-panel.PNG" alt-text="Install bot for yourself in Teams pane":::
 
 ## Share a link so others can install the bot
 
@@ -208,7 +208,7 @@ Before submitting the bot to your organization, make sure:
 
 1. Select **Show to everyone in my org**.
 
-   :::image type="content" source="media/sharing-security-groups/add-bot-to-teams-show-bbyo.PNG" alt-text="Show bot to organization in Teams panel availability options.":::
+   :::image type="content" source="media/sharing-security-groups/add-bot-to-teams-show-bbyo.PNG" alt-text="Show bot to organization in Teams pane availability options.":::
 
 1. Review the requirements for submission, and select **Submit for admin approval**.
 
@@ -324,7 +324,7 @@ You can download the bot's Teams app manifest to make detail changes to the mani
 
 1. Select **Download .zip**.
 
-   :::image type="content" source="media/sharing-security-groups/add-bot-to-teams-download-zip.png" alt-text="Download Teams app manifest zip file from Teams panel availability options.":::
+   :::image type="content" source="media/sharing-security-groups/add-bot-to-teams-download-zip.png" alt-text="Download Teams app manifest zip file from Teams pane availability options.":::
 
 1. The manifest will be generated as a .zip file, and will be saved according to your browser's save settings.
 
@@ -342,7 +342,7 @@ For bots that are approved by an admin, the bots will continue to be shown in th
 
 1. Select **Disconnect from Teams**.
 
-   :::image type="content" source="media/sharing-security-groups/add-bot-to-teams-disconnect-teams.PNG" alt-text="Disconnect Teams channel in Teams channel panel.":::
+   :::image type="content" source="media/sharing-security-groups/add-bot-to-teams-disconnect-teams.PNG" alt-text="Disconnect Teams channel in Teams channel pane.":::
 
 1. Review the information about disconnecting your bot, and select **Disconnect** to continue.
 

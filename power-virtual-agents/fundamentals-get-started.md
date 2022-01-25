@@ -115,7 +115,7 @@ You now have a very simple branching dialog tree, congratulations! You can begin
 
 ## Test your content in real time
 
-Now that you have some content authored into a dialog tree, it's time to test this out in real time to see if it's working as you expected. For this, you'll use the test bot panel.
+Now that you have some content authored into a dialog tree, it's time to test this out in real time to see if it's working as you expected. For this, you'll use the test bot pane.
 
 :::image type="content" source="media/test-bot-panel.png" alt-text="Start bot with latest content." border="false":::
 
