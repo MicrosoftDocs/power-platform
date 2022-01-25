@@ -80,7 +80,7 @@ Now you can add the app ID URI to your Azure AD app registration:
 
 1. Go to the [Azure AD portal](https://portal.azure.com) and find the Azure AD app that you registered and configured as part of the [prerequisites](#prerequisites).
 
-1. Select **Expose an API** on the side panel and set the **Application ID URI** to be in format of `api://botid-{teamsbotid}`, where you replace `{teamsbotid}` with the  app ID you copied.
+1. Select **Expose an API** on the side pane and set the **Application ID URI** to be in format of `api://botid-{teamsbotid}`, where you replace `{teamsbotid}` with the  app ID you copied.
 
 1. Select **Save**.
 
@@ -103,7 +103,7 @@ To grant admin consent:
 
 To define a custom scope for your bot:
 
-1. In the app registration screen for your Azure AD app, go to **Expose an API** on the side panel.
+1. In the app registration screen for your Azure AD app, go to **Expose an API** on the side pane.
 
 1. Select **Add a scope**.
 

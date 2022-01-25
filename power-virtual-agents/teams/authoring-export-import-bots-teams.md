@@ -30,7 +30,7 @@ You might want to do this to copy a working chatbot into a new team so you don't
 
 Follow the instructions in the section titled **Export customizations from Dataverse for Teams** in the [Move customizations between environments](/powerapps/teams/import-solution-in-teams#export-customizations-from-dataverse-for-teams) topic.
 
-When selecting the customizations to export, select the bot you want to export. You can use the filter on the side panel to only show bots within that team.
+When selecting the customizations to export, select the bot you want to export. You can use the filter on the side pane to only show bots within that team.
 
 The chatbot will be saved into the **Downloads** folder on your PC.
 
