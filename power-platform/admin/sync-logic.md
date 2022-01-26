@@ -21,45 +21,39 @@ search.app:
 # Synchronization logic for appointments, contacts, and tasks 
 
 
-Appointment, Task and Contact Sync is a bidirectional sync experience provided with server-side synchronization.
+Appointment, task, and contact sync bilaterally using server-side synchronization.
 
-Each entity has specific behaviors during sync which are documented below. The behavior also depends on the sync direction:
+Each entity has specific behaviors during synchronizationnc which is covered in this topic. The sync behavior also depends on the sync direction, from Dynamics 365 to Microsoft Exchange or from Exchange to Dynamics 365.
 
--   From Dynamics 365 to Microsoft Exchange
+## Sync eligibility
 
--   From Exchange to Dynamics 365
-
-## Item synchronization eligibility
+### Item synchronization eligibility
 
 Not all appointments, tasks, or contacts created or updated in Dynamics 365 with Exchange will automatically be synced to Exchange with Dynamics 365.
 
 Specific conditions need to be met or actions need to be taken for this to happen.
 
-## Sync configuration eligibility
+### Sync configuration eligibility
 
-In order to synchronize appointments, contacts, or tasks with an Exchange mailbox, the corresponding mailbox record in Dynamics 365 needs meet these conditions:
+In order to synchronize appointments, contacts, or tasks with an Exchange mailbox, the corresponding mailbox record in Dynamics 365 needs meet the following conditions:
 
-\- A user mailbox (queue mailboxes do not support appointment contact task sync)
+- A user mailbox that is approved. Note, queue mailboxes do not support appointment contact task sync.
 
-\- Approved
+- Enabled for appointment, contacts, and tasks sync.
 
-\- Enabled for appointment, contacts, and tasks sync
+![Mailbox page screenshot](media/image1.png)
 
-Mailbox page screenshot
+- the mailbox is successfully tested and enabled.
 
-![](media/image1.png)
-
-\- Successfully tested and enabled
-
-## Sync eligibility from Dynamics 365 to Exchange
+### Sync eligibility from Dynamics 365 to Exchange
 
 Synchronization filters determine which records will be synchronized from customer engagement apps to Exchange (using server-side synchronization).
 
-Only the records which match the criteria specified in the sync filters will be eligible for processing with server-side sync. For more information see, <https://docs.microsoft.com/power-platform/admin/choose-records-synchronize-dynamics-365-outlook-exchange>
+Only the records which match the criteria specified in the sync filters will be eligible for processing with server-side sync. For more information see, [Choose the records to synchronize between customer engagement apps and Exchange]<choose-records-synchronize-dynamics-365-outlook-exchange.md>
 
 Once an item is synced to Exchange, the link between the two items is established and bidirectional sync will always be performed. Changes on any of the two systems will be propagated.
 
-## Sync eligibility from Exchange to Dynamics
+### Sync eligibility from Exchange to Dynamics
 
 Even when your mailbox is configured for server-side sync, creating an appointment, contact, or task on Exchange using Outlook on the Web or Outlook, won't cause the item to be synced to Dynamics 365 automatically unless:
 
@@ -75,17 +69,15 @@ Once the link is established, bidirectional sync will be performed from now on. 
 
 For more information about Outlook tracking and category tracking, see:
 
--   <https://docs.microsoft.com/dynamics365/outlook-app/user/track-message-or-appointment>
+- [Link and track an email or appointment to a specific row in your app]</dynamics365/outlook-app/user/track-message-or-appointment>
 
--   <https://docs.microsoft.com/dynamics365/outlook-app/user/track-without-set-regarding>
+- [Track an email or appointment without linking it to a specific row]</dynamics365/outlook-app/user/track-without-set-regarding>
 
--   <https://docs.microsoft.com/power-platform/admin/use-outlook-category-track-appointments-emails>
+- [Use Outlook category to track appointments and emails]<use-outlook-category-track-appointments-emails.md>
 
 ## Appointment - sync from Dynamics 365 to Exchange
 
 -   Mapping: Appointment records in Dynamics 365 will be synchronized to Exchange as meetings.
-
-<!-- -->
 
 -   Appointment status and reminder: When the appointment status in Dynamics 365 is **Completed**, **Canceled**, or **Free** the appointment will be synced to Exchange as **Free** and no reminder set. When creating an appointment, if the appointment is more than 7 days in the past the reminder won't be set.
 
@@ -95,7 +87,7 @@ When the appointment is updated in Dynamics 365 and synced to Exchange, invitati
 
 \**Sensitive properties are those properties for which Exchange will trigger an invite as they are relevant for all the parties involved in the meeting: Subject, Body, Location, IsAllDayEvent, ScheduledStart, ScheduledEnd, RequiredAttendees, OptionalAttendees, Organizer, AppointmentStatus, PriorityCode, RecurrencePattern.*
 
-## 
+
 
 ## Appointment deletion and cancellations
 
