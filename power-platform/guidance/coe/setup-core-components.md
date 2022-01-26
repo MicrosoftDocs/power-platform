@@ -125,7 +125,7 @@ Before proceeding, ensure that the Admin | Sync Template v3 Configure Emails flo
 The Admin \| Sync Template flows part of this solution crawl through all the resources stored in your Microsoft Power Platform environments and make a copy of details in each resource (for example, apps and flows) to Microsoft Dataverse tables. Most apps and flows in the CoE Starter Kit rely on this, which means that the inventory flows must be configured for everything else to work. The sync flows run daily, and some of the clean-up flows run every two weeks.
 
 >[!IMPORTANT]
-> If you see an *Invalid Pagination Policy* error when trying to turn on the flows, it indicates that you are using an insufficient or trial license. All our flows require a medium or high performance profile to run. License requirements are listed in our [prerequisites](setup#what-identity-should-i-install-the-coe-starter-kit-with).
+> If you see an *Invalid Pagination Policy* error when trying to turn on the flows, it indicates that you are using an insufficient or trial license. All our flows require a medium or high performance profile to run. License requirements are listed in our [prerequisites](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
 >
 > ![Error when turning on a flow with an insufficient license.](media/flowpaginationerror.png "Error when turning on a flow with an insufficient license.")
 >
