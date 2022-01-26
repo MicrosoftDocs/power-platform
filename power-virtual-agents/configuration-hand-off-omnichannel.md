@@ -55,9 +55,10 @@ For your bot to hand off a conversation to your omnichannel interface, you have 
     1. [Omnichannel Power Virtual Agents extension](https://appsource.microsoft.com/product/dynamics-365/mscrm.omnichannelpvaextension)
     1. [Omnichannel voice Power Virtual Agents extension](https://appsource.microsoft.com/product/dynamics-365/mscrm.omnichannelvoicepvaextension)
 
->[!IMPORTANT]
->You must install the [Omnichannel Power Virtual Agents Extension](https://appsource.microsoft.com/product/dynamics-365/mscrm.omnichannelpvaextension) for all omnichannel hand off scenarios.  
->If you don't have all three extension solutions installed, you will get a message in the UI indicating that "You don't have access to all the required variables and actions." You will see this message even if you only need the Omnichannel Power Virtual Agents Extension for text-based hand-off. You can ignore the message if you don't need the voice and telephony extensions.
+> [!IMPORTANT]
+> You must install the [Omnichannel Power Virtual Agents Extension](https://appsource.microsoft.com/product/dynamics-365/mscrm.omnichannelpvaextension) for all omnichannel hand off scenarios.  
+>
+> If you don't have all three extensions installed, you will get a message in the UI indicating that "You don't have access to all the required variables and actions". You'll see this message even if you only need the Omnichannel Power Virtual Agents Extension for text-based hand-off. You can ignore the message if you don't need the voice and telephony extensions.
 
 ## Connect omnichannel to your Power Virtual Agents bot
 
