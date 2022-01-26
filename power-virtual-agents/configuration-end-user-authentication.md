@@ -100,7 +100,7 @@ Once the configuration is saved, make sure to publish your bot so the changes ta
 
 ## Required user sign in and bot sharing
 
-**Require users to sign in** controls if a user needs to sign in before talking with the bot. If is only available to **Only for Teams** and **Manual** authentication options. It is highly recommended to turn on this setting when the bot contains sensitive information. 
+**Require users to sign in** controls if a user needs to sign in before talking with the bot. It is only available to **Only for Teams** and **Manual** authentication options. It is highly recommended to turn on this setting when the bot contains sensitive information. 
 
 :::image type="content" source="media/sharing-security-groups/auth-require-user-to-sign-in.PNG" alt-text="Screenshot of the Authentication pane showing require user to sign in.":::
 
