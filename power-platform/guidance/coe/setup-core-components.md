@@ -125,10 +125,13 @@ Before proceeding, ensure that the Admin | Sync Template v3 Configure Emails flo
 The Admin \| Sync Template flows part of this solution crawl through all the resources stored in your Microsoft Power Platform environments and make a copy of details in each resource (for example, apps and flows) to Microsoft Dataverse tables. Most apps and flows in the CoE Starter Kit rely on this, which means that the inventory flows must be configured for everything else to work. The sync flows run daily, and some of the clean-up flows run every two weeks.
 
 >[!IMPORTANT]
-> If you see the below error when trying to turn on the flows, it indicates that you are using an insufficient or trial license. All our flows require a medium or high performance profile to run. Learn more: [Power Automate performance profiles](https://docs.microsoft.com/power-automate/limits-and-config#performance-profiles) and [Concurrency looping and pagination limits](https://docs.microsoft.com/power-automate/limits-and-config#concurrency-looping-and-debatching-limits)
+> If you see the below error when trying to turn on the flows, it indicates that you are using an insufficient or trial license. All our flows require a medium or high performance profile to run. License requirements are listed in our [prerequisites](https://docs.microsoft.com/power-platform/guidance/coe/setup##what-identity-should-i-install-the-coe-starter-kit-with).
+>
 > ![Error when turning on a flow with an insufficient license.](media/flowpaginationerror.png "Error when turning on a flow with an insufficient license.")
+>
+> Learn more: [Power Automate performance profiles](https://docs.microsoft.com/power-automate/limits-and-config#performance-profiles) and [Concurrency looping and pagination limits](https://docs.microsoft.com/power-automate/limits-and-config#concurrency-looping-and-debatching-limits)
 
-And hence our requirements for licenses as described in our [prerequisites](https://docs.microsoft.com/power-platform/guidance/coe/setup#prerequisites). 
+And hence our requirements for licenses as described in our  
 
 - Admin | Sync Template v3 (Apps)
 - Admin | Sync Template v3 (Custom Connectors)
