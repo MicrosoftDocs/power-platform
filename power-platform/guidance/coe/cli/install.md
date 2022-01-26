@@ -124,7 +124,7 @@ To run the CoE CLI application, you'll need the following software.
 
 This command will start a new interactive console (`-it`) and remove the Docker container (`--rm`) when the console session exits. Using `--rm` ensures that any cached credentials are removed when you exit.
 
-## Next Steps
+## Next steps
 
 Install [ALM Accelerator](./alm/overview.md)
 
