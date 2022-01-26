@@ -1,6 +1,25 @@
-﻿---
-title: Synchronization logic for appointments, contacts, and tasks
 ---
+title: Synchronization logic for appointments, contacts, and tasks | Microsoft Docs
+description: Synchronization logic for appointments, contacts, and tasks.
+author: mduelae
+manager: kvivek
+ms.service: power-platform
+ms.component: pa-admin
+ms.topic: conceptual
+ms.date: 01/26/2021
+ms.subservice: admin
+ms.author: mkaur
+search.audienceType: 
+  - admin
+search.app:
+  - D365CE
+  - PowerApps
+  - Powerplatform
+  - Flow
+---
+
+# Synchronization logic for appointments, contacts, and tasks 
+
 
 Appointment, Task and Contact Sync is a bidirectional sync experience provided with server-side synchronization.
 
@@ -200,3 +219,5 @@ For mor information, see [OrgDbOrgSettings documentation](https://github.com/Mic
 ## Address Synchronization for contacts
 
 ## Enable synchronization for tasks that are assigned in Outlook
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
