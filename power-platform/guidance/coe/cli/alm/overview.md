@@ -90,16 +90,18 @@ For an administrator, the quick start guide should take about 30 minutes. By the
 
    Deploying to your enterprise? For more information, go to [Enterprise deployment](./scenarios/tenant-deployments.md#enterprise-deployment).
 
+   If you're prompted to create an HTTP with Azure Active Directory (AD) connection, enter 'https://graph.microsoft.com' for both the **Base Resource URL** and **Azure AD Resource URI**.
+
 1. [Update permissions for the project build service](/power-platform/guidance/coe/setup-almacceleratorpowerplatform#update-permissions-for-the-project-build-service) to enable build pipelines to interact with Git Repositories.
 
 1. When your makers create [development environments](./development-environments.md), run CoE ALM maker add to add the makers to Azure DevOps and share the ALM Accelerator canvas app.
 
    ```bash
-   coe alm maker add \
-      -o https://dev.azure.com/contoso \
-      -p alm-sandbox \
-      -e https://contoso-userdev.crm.dynamics.com \
-      -a ALMAcceleratorServicePrincipal \
+   coe alm maker add 
+      -o https://dev.azure.com/contoso 
+      -p alm-sandbox 
+      -e https://contoso-userdev.crm.dynamics.com 
+      -a ALMAcceleratorServicePrincipal 
       -g ALMAcceleratorForMakers -u user@contoso.com
    ```
 
@@ -109,8 +111,7 @@ For an administrator, the quick start guide should take about 30 minutes. By the
 
    ```bash
    coe alm generate maker add -o user.config
-   coe alm maker add \
-      -f user.config
+   coe alm maker add -f user.config
    ```
 
    More information: [CoE ALM generate maker add](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/generate/maker/add.md)
