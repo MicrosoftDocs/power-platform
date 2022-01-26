@@ -43,7 +43,7 @@ You can share your bot with security groups so their members can chat with the b
   >
   > You can manage individual user access by adding or removing users from the security group.
   >
-  > To make a security-enabled group, please refer to [public Graph documentation](/graph/api/resources/groups-overview)
+  > To make a security-enabled group, please refer to [Microsoft Graph documentation](/graph/api/resources/groups-overview#security-groups-and-mail-enabled-security-groups).
   
   :::image type="content" source="../media/sharing-security-groups/sharing-bot-specify-security-group-teams.PNG" alt-text="Specify security group in Sharing UI.":::
 
