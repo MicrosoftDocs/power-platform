@@ -100,6 +100,8 @@ coe alm generate install -o quickstart.json
 coe alm install -f quickstart.json
 ```
 
+If you're prompted to create an HTTP with Azure Active Directory (AD) connection, enter 'https://graph.microsoft.com' for both the **Base Resource URL** and **Azure AD Resource URI**.
+
 More information: [generate install](https://aka.ms/coe-cli/help/alm/generate/install)
 More information: [install](https://aka.ms/coe-cli/help/alm/install)
 
