@@ -20,7 +20,6 @@ search.app:
 
 # Synchronization logic for appointments, contacts, and tasks 
 
-
 Appointment, task, and contact sync bilaterally using server-side synchronization.
 
 Each entity has specific behaviors during synchronizationnc which is covered in this topic. The sync behavior also depends on the sync direction, from Dynamics 365 to Microsoft Exchange or from Exchange to Dynamics 365.
@@ -77,19 +76,20 @@ For more information about Outlook tracking and category tracking, see:
 
 ## Appointment - sync from Dynamics 365 to Exchange
 
--   Mapping: Appointment records in Dynamics 365 will be synchronized to Exchange as meetings.
+Synchronization for an appointment from Dynamics 365 to Exchanges works as follows:
 
--   Appointment status and reminder: When the appointment status in Dynamics 365 is **Completed**, **Canceled**, or **Free** the appointment will be synced to Exchange as **Free** and no reminder set. When creating an appointment, if the appointment is more than 7 days in the past the reminder won't be set.
+- Mapping: Appointment records in Dynamics 365 will be synchronized to Exchange as meetings.
 
--   Appointment invitations: When the appointment is created in Dynamics 365 and synced to Exchange, invitations won't be sent when the **scheduledStart** is in the past or no attendees are present.
+- Appointment status and reminder: When the appointment status in Dynamics 365 is **Completed**, **Canceled**, or **Free** the appointment will be synced to Exchange as **Free** and no reminder set. When creating an appointment, if the appointment is more than 7 days in the past the reminder won't be set.
+
+- Appointment invitations: When the appointment is created in Dynamics 365 and synced to Exchange, invitations won't be sent when the **scheduledStart** is in the past or no attendees are present.
 
 When the appointment is updated in Dynamics 365 and synced to Exchange, invitations won't be sent when the **scheduledStart** is in the past or the user syncing the appointment is not the appointment organizer, the appointment doesn't have attendees, or none of the sensitive properties\* have changed.
 
 \**Sensitive properties are those properties for which Exchange will trigger an invite as they are relevant for all the parties involved in the meeting: Subject, Body, Location, IsAllDayEvent, ScheduledStart, ScheduledEnd, RequiredAttendees, OptionalAttendees, Organizer, AppointmentStatus, PriorityCode, RecurrencePattern.*
 
 
-
-## Appointment deletion and cancellations
+### Appointment deletion and cancellations
 
 An appointment cancellation will be sent to the parties by Exchange only when the appointment gets physically deleted in the organizer's mailbox.
 
@@ -97,40 +97,30 @@ When an appointment is deleted in Dynamics 365, cancellations won't be sent when
 
 When a appointment is deleted in Dynamics and synced to Exchange the appointment will be deleted on Exchange only if all these conditions are met:
 
--   The appointment is linked, the syncing user is the appointment organizer.
-
--   The appointment is in the future.
-
--   the appointment hasn't been logically deleted (see advanced topics).
+- The appointment is linked, the syncing user is the appointment organizer.
+- The appointment is in the future.
+- the appointment hasn't been logically deleted (see advanced topics).
 
 If these conditions are not met, the appointment will still exist on Exchange, but it will appear unlinked.
 
 When tracking a recurring meeting, Dynamics 365 will not send new invites to the attendees if all occurrences of that series still exist in Outlook and Exchange and no attendees have been added or deleted. If the organizer has deleted historical instances of the series, when it is tracked to Dynamics 365, it will see those as missing from Exchange and will recreate those instances. In that scenario, attendees would get a new invitation.
 
-## Appointment organizer
+### Appointment organizer
 
 Appointment organizer is a key field when it comes to appointment synchronization as it drives different synchronization behaviors. When creating appointments using customizations, please ensure the appointment organizer is correctly populated. The organizer field is not exposed on the appointment form by default but can be added to forms, views, or advanced find queries as needed to confirm the value is populated as expected.
 
-## Sync from Exchange to Dynamics 365
+### Sync from Exchange to Dynamics 365
 
--   Mapping: Meetings in Exchange will be synchronized to Dynamics 365 as Appointments
-
-<!-- -->
-
--   Appointment FreeBusy information: When an appointment FreeBusy information is set to Free on Exchange and this is synced to Dynamics 365, if the appointment is in Completed or Cancelled state on Dynamics 365, the status code will be set to Completed. When the state is Open in Dynamics 365 the status will be changed to Free**. Working elsewhere** reeBusy status will sync to Dynamics 365 as state Open and status Free.
-
--   Appointment booking and conflict management: When an appointment is tracked to Dynamics 365, Server Side Synchronization will still leverage booking API to ensure the parties are available at the specified time. (e.g. if another appointment is already in the organizer's calendar in Dynamics 365 at the same time, the booking won't succeed) When the appointment booking doesn't succeed the appointment won't be synced, however the user can [address the scheduling conflict](https://support.microsoft.com/en-us/topic/a-scheduling-conflict-was-found-when-saving-appointment-appointment-subject-from-exchange-to-microsoft-dynamics-365-because-user-is-unavailable-at-this-time-fc18bc49-f77a-1ca3-c3c8-3b85d2776525) in their mailbox alert wall, select to ignore the specific conflict and let the appointment sync. Booking from Dynamics 365 mail app will automatically suppress the scheduling conflict. For more information, see  
-    <https://github.com/MicrosoftDocs/SupportArticles-docs/blob/main/support/dynamics-365/sales/scheduling-conflict-saving-appointment.md>
-
--   Appointment deletion: When deleting a tracked appointment in Exchange, during sync the appointment deletion won't propagate to Dynamics 365 if the state is completed or cancelled, or if **scheduledStart** is in the past, or if the syncing user is not the appointment organizer. This applies to **exceptionAppointments** as well. An exception appointment represents an specific instance within a recurring appointment series which has been individually modified.
+- Mapping: Meetings in Exchange will be synchronized to Dynamics 365 as Appointments
+- Appointment FreeBusy information: When an appointment FreeBusy information is set to Free on Exchange and this is synced to Dynamics 365, if the appointment is in Completed or Cancelled state on Dynamics 365, the status code will be set to Completed. When the state is Open in Dynamics 365 the status will be changed to Free**. Working elsewhere** reeBusy status will sync to Dynamics 365 as state Open and status Free.
+- Appointment booking and conflict management: When an appointment is tracked to Dynamics 365, Server Side Synchronization will still leverage booking API to ensure the parties are available at the specified time. (e.g. if another appointment is already in the organizer's calendar in Dynamics 365 at the same time, the booking won't succeed) When the appointment booking doesn't succeed the appointment won't be synced, however the user can [address the scheduling conflict](https://support.microsoft.com/en-us/topic/a-scheduling-conflict-was-found-when-saving-appointment-appointment-subject-from-exchange-to-microsoft-dynamics-365-because-user-is-unavailable-at-this-time-fc18bc49-f77a-1ca3-c3c8-3b85d2776525) in their mailbox alert wall, select to ignore the specific conflict and let the appointment sync. Booking from Dynamics 365 mail app will automatically suppress the scheduling conflict. For more information, see [A scheduling conflict was found when saving appointment [appointment subject] from Exchange to Microsoft Dynamics 365](/dynamics-365/sales/scheduling-conflict-saving-appointment.md)
+- Appointment deletion: When deleting a tracked appointment in Exchange, during sync the appointment deletion won't propagate to Dynamics 365 if the state is completed or cancelled, or if **scheduledStart** is in the past, or if the syncing user is not the appointment organizer. This applies to **exceptionAppointments** as well. An exception appointment represents an specific instance within a recurring appointment series which has been individually modified.
 
 When deleting a recurring appointment in Exchange, during sync, the deletion won't propagate to Dynamics 365 if the state is **Completed** or **Cancelled**, or if the syncing user is not the appointment organizer.
 
-## Service appointments - Sync from Dynamics 365 to Exchange
+## Service appointments - sync from Dynamics 365 to Exchange
 
 -   Mapping: Service appointment records in Dynamics 365 will be synchronized to Exchange as Meetings
-
-<!-- -->
 
 -   Invites and cancellations: Invites and cancellations are never sent for service appointments
 
