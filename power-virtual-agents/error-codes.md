@@ -28,9 +28,10 @@ If you're a bot maker testing the bot in the [Test bot pane](authoring-test-bot.
 
 :::image type="content" source="media/error-codes/c1-error.png" alt-text="Bot error message displayed to bot makers.":::
 
-
-
 Errors may also appear in the [Topic Checker](authoring-topic-management.md#topic-errors) where you can easily locate and fix them.
+
+> [!NOTE]
+> The following errors can occur in both the web app and Microsoft Teams. To view errors that are exclusive to Teams, please refer [the Teams version of this topic](teams/error-codes-teams.md).
 
 ## Error List
 

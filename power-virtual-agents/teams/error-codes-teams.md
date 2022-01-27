@@ -24,6 +24,9 @@ Your users will see a more generic message but will still be provided with an er
 
 Errors may also appear in the [Topic Checker](authoring-topic-management-teams.md#topic-errors) where you can easily locate and fix them.
 
+> [!NOTE]
+> The following errors can only occur in Microsoft Teams. To view the full list of errors that can appear in both the web app and Teams, please refer [the web app version of this topic](../error-codes.md).
+
 ## Error List
 
 <!-- Best viewed and edited without word wrap -->
