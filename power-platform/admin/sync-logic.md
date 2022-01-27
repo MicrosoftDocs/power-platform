@@ -20,9 +20,9 @@ search.app:
 
 # Synchronization logic for appointments, contacts, and tasks 
 
-Appointment, task, and contact sync bilaterally using server-side synchronization.
+This topic covers how synchronization work with appointments, contacts, and tasks. Appointment, task, and contact sync bilaterally using server-side synchronization.
 
-Each entity has specific behaviors during synchronizationnc which is covered in this topic. The sync behavior also depends on the sync direction, from Dynamics 365 to Microsoft Exchange or from Exchange to Dynamics 365.
+Each table has specific behaviors during synchronizationnc which is covered in this topic. The sync behavior also depends on the sync direction, from Dynamics 365 to Microsoft Exchange or from Exchange to Dynamics 365.
 
 ## Sync eligibility
 
@@ -46,9 +46,9 @@ In order to synchronize appointments, contacts, or tasks with an Exchange mailbo
 
 ### Sync eligibility from Dynamics 365 to Exchange
 
-Synchronization filters determine which records will be synchronized from customer engagement apps to Exchange (using server-side synchronization).
+Synchronization filters determine which rows will be synchronized from customer engagement apps to Exchange (using server-side synchronization).
 
-Only the records which match the criteria specified in the sync filters will be eligible for processing with server-side sync. For more information see, [Choose the records to synchronize between customer engagement apps and Exchange]<choose-records-synchronize-dynamics-365-outlook-exchange.md>
+Only the rows which match the criteria specified in the sync filters will be eligible for processing with server-side sync. For more information see, [Choose the records to synchronize between customer engagement apps and Exchange]<choose-records-synchronize-dynamics-365-outlook-exchange.md>
 
 Once an item is synced to Exchange, the link between the two items is established and bidirectional sync will always be performed. Changes on any of the two systems will be propagated.
 
@@ -164,19 +164,19 @@ When deleting a recurring appointment in Exchange, during sync, the deletion won
 
 -   Task actual start: When a task create is synced to Dynamics 365, the **actualStart** will be set to current timestamp.
 
--   Task deletion: Task deletion on Exchange will also delete the task in Dynamics 365. This applies to all entities which synchronize as task to Exchange task entities such as fax, letter, phone call, or task.
+-   Task deletion: Task deletion on Exchange will also delete the task in Dynamics 365. This applies to all tables which synchronize as task to Exchange task tables such as fax, letter, phone call, or task.
 
 ## Advanced appointment, contact, and task synchronization topics
 
 ### Distinct physical and logical deletion
 
-When an item doesn't match the [sync filters](https://docs.microsoft.com/power-platform/admin/choose-records-synchronize-dynamics-365-outlook-exchange) anymore, server-side sync will propagate a delete operation to Microsoft Exchange. This applies to all entities.
+When an item doesn't match the [sync filters](https://docs.microsoft.com/power-platform/admin/choose-records-synchronize-dynamics-365-outlook-exchange) anymore, server-side sync will propagate a delete operation to Microsoft Exchange. This applies to all tables.
 
 There are two scenarios which can cause an item to not match the sync filters anymore:
 
--   Physical delete: The record doesn't exist in Dynamics 365 anymore.
+-   Physical delete: The row doesn't exist in Dynamics 365 anymore.
 
--   Logical delete: Access to the record has been lost (the record still exists in Dynamics 365 but the user associated to the mailbox lost access to it or the record is not matching sync filters anymore.
+-   Logical delete: Access to the row has been lost (the row still exists in Dynamics 365 but the user associated to the mailbox lost access to it or the row is not matching sync filters anymore.
 
 By default, both these scenarios will propagate a delete operation to Microsoft Exchange.
 
@@ -190,7 +190,7 @@ For more information on sync filter, see:
 
 ## Ignore copied items
 
-When a linked item is copied on Exchange side, server-side sync by default will ignore the copy action to avoid bringing duplicate information to Dynamics 365. This applies to all entities.
+When a linked item is copied on Exchange side, server-side sync by default will ignore the copy action to avoid bringing duplicate information to Dynamics 365. This applies to all tables.
 
 If customer wants to bring the duplicate to Dynamics 365 please disable [orgdborgsetting](https://github.com/MicrosoftDocs/power-platform/blob/main/power-platform/admin/OrgDbOrgSettings.md) *IgnoreCopiedItemsInSSSForMailbox*. This setting is**On** by default.
 
