@@ -19,7 +19,7 @@ search.app:
 ---
 # Establishing an environment strategy
 
-[!INCLUDE[cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
+
 
 Environments are containers that administrators can use to manage apps, flows, connections, and other assets, along with permissions to allow organization members to use the resources. This article walks you through important details about environments in Microsoft Power Platform and discusses recommended ways to benefit from proactively managing them. More information: [Microsoft Power Platform environments overview](../../admin/environments-overview.md)
 
