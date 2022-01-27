@@ -31,6 +31,9 @@ Watch how to use the ALM Accelerator for Power Platform solution.
 
 ## Walk-through: ALM Accelerator advanced maker experience
 
+> [!IMPORTANT]
+> The following user experience has been configured using the ALM Accelerator for Power Platform Administration app that is installed with the ALM accelerator solution. For more information on how to use the administration app and configure and share experiences, see [Creating user settings and profiles](setup-almacceleratorpowerplatform-deployment-profiles.md)
+
 1. Once you have installed and configured the app, start it from your environment under **Apps** by selecting **ALM Accelerator for Power Platform**.
 
 1. When you're prompted to create connections and grant consent, create the necessary connections or accept the consent dialog.

@@ -543,19 +543,12 @@ If your solution requires these other configuration settings and/or data, follow
 - See the [user set-up guide](setup-almacceleratorpowerplatform-users.md) for the recommended set-up of a maker's user account in Dataverse and DevOps.
 - See the [user deployment setting and profile guide](setup-almacceleratorpowerplatform-deployment-profiles.md) for how to configure user experience in the app and access to solutions and deployment profiles.
 
-## Using the ALM Accelerator app
+## Read more
 
-See the [user guide](almacceleratorpowerplatform-components.md) for help using the ALM Accelerator app.
-
-## Troubleshooting
-
-When you set-up your pipelines with the pipeline templates stored in a different repository than the solution pipeline, you may get the following message when trying to run your pipeline for the first time. To eliminate the error, select **Permit** to grant the repo running the pipeline access to the template repository.
-
-![Permit access to Pipelines](media/almacceleratorpowerplatform-components/image-20210311114131170.png)
-
-Alternatively, to disable this notification for all pipelines you can turn off **Limit Job authorization scope to referenced Azure DevOps repositories** in **Project Settings** > **Settings**. This setting is turned on by default when you create a new project.  ![Permit access to all repositories](media/almacceleratorpowerplatform-components/image-20210426143538533.png).
-
-> [!NOTE]
-> The project settings can be overridden at the DevOps organization level. So, if the option to change this is disabled in project settings, verify the setting in **Organization settings**.
+- [ALM Accelerator for Power Platform](/power-platform/guidance/coe/almacceleratorpowerplatform-components) - An overview of the ALM Accelerator.
+- [Deployment experience and profile set up](/power-platform/power-platform/guidance/coe/setup-almacceleratorpowerplatform-deployment-profiles) - Configuring user settings and deployment profiles.
+- [User permissions set up](/power-platform/power-platform/guidance/coe/setup-almacceleratorpowerplatform-users) - Configuring Microsoft Dataverse users to access the ALM Accelerator for Power Platform.
+- [Deployment configuration settings](/power-platform/power-platform/guidance/coe/setup-almacceleratorpowerplatform-deployment-config) - Configuring solution assets for the deployment. For example, connection references, environment variables, and sharing.
+- [Pipeline sync set up](/power-platform/power-platform/guidance/coe/setup-almacceleratorpowerplatform-pipeline-sync) - Creating a pipeline to sync the latest YAML from the CoE Starter Kit GitHub repo.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
