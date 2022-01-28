@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/26/2021
+ms.date: 01/28/2021
 ms.subservice: admin
 ms.author: mkaur
 search.audienceType: 
@@ -181,7 +181,7 @@ For more information on sync filters, see:
 
 When a linked item is copied on the Exchange side, by default server-side sync will ignore the copy action to avoid duplicate information in Dynamics 365. This applies to all tables.
 
-If you want bring in duplicate items in Dynamics 365, then you need to disable [orgdborgsetting](OrgDbOrgSettings.md) *IgnoreCopiedItemsInSSSForMailbox*. This setting is**On** by default. For mor information, see [OrgDbOrgSettings documentation](OrgDbOrgSettings.md).
+If you want bring in duplicate items in Dynamics 365, then you need to disable [orgdborgsetting](OrgDbOrgSettings.md) *IgnoreCopiedItemsInSSSForMailbox*. This setting is **On** by default. For mor information, see [OrgDbOrgSettings documentation](OrgDbOrgSettings.md).
 
 
 ## Enable appointment attachment synchronization with Outlook or Exchange
