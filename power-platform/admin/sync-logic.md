@@ -160,7 +160,7 @@ When deleting a recurring appointment in Exchange, during sync, the deletion won
 
 When an item doesn't match the [sync filters](choose-records-synchronize-dynamics-365-outlook-exchange.md) anymore, server-side sync will propagate a delete operation to Microsoft Exchange. This applies to all tables.
 
-There are two scenarios which can cause an item to not match the sync filters anymore:
+There are two scenarios where an item doesn't meet sync filters:
 
 -   Physical delete: The row doesn't exist in Dynamics 365 anymore.
 
@@ -170,7 +170,7 @@ By default, both these scenarios will propagate a delete operation to Microsoft 
 
 To change this behavior and ignore logical deletes, turn on [orgdborgsetting](OrgDbOrgSettings.md) *DistinctPhysicalAndLogicalDeletesForExchangeSync*.
 
-For more information on sync filter, see:
+For more information on sync filters, see:
 
 -   [Choose the records to synchronize between customer engagement apps and Exchange](choose-records-synchronize-dynamics-365-outlook-exchange.md)
 
@@ -178,18 +178,16 @@ For more information on sync filter, see:
 
 ## Ignore copied items
 
-When a linked item is copied on Exchange side, server-side sync by default will ignore the copy action to avoid bringing duplicate information to Dynamics 365. This applies to all tables.
+When a linked item is copied on the Exchange side, by default server-side sync will ignore the copy action to avoid duplicate information in Dynamics 365. This applies to all tables.
 
-If customer wants to bring the duplicate to Dynamics 365 please disable [orgdborgsetting](OrgDbOrgSettings.md) *IgnoreCopiedItemsInSSSForMailbox*. This setting is**On** by default.
-
-For mor information, see [OrgDbOrgSettings documentation](OrgDbOrgSettings.md).
+If you want bring in duplicate items in Dynamics 365, then you need to disable [orgdborgsetting](OrgDbOrgSettings.md) *IgnoreCopiedItemsInSSSForMailbox*. This setting is**On** by default. For mor information, see [OrgDbOrgSettings documentation](OrgDbOrgSettings.md).
 
 
 ## Enable appointment attachment synchronization with Outlook or Exchange
 
 This section applies to message synchronization done through Microsoft Dynamics 365 for Outlook or server-side synchronization. More information: [Integrate your email system](/integrate-synchronize-your-email-system.md) 
   
-Users can attach documents, pictures, recordings, etc. to the appointments they create in the Customer Engagement web application or Dynamics 365 for Outlook. By default, appointment attachment synchronization is disabled. To enable:
+Users can attach documents, pictures, recordings, etc. to the appointments they create in the Dynamics 365 apps or Dynamics 365 App for Outlook. By default, appointment attachment synchronization is disabled. Follow these step to enable it:
   
 1. Go to **Settings** > **Administration**.
   
