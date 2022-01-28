@@ -22,17 +22,13 @@ search.app:
 
 This topic covers how synchronization works with appointments, contacts, and tasks. 
 
-Appointment, task, and contact sync bilaterally using server-side synchronization. Each table has specific behaviors during synchronizationnc which is covered in this topic. The sync behavior also depends on the sync direction, which can be from Dynamics 365 to Microsoft Exchange or from Exchange to Dynamics 365.
+Appointment, task, and contact sync bilaterally using server-side synchronization. Each table has specific behaviors during synchronization, which is covered in this topic. The sync behavior also depends on the sync direction, which can be from Dynamics 365 to Microsoft Exchange or from Exchange to Dynamics 365.
 
-## Sync requirements
+## Sync configuration requirments
 
-Not all appointments, tasks, or contacts created or updated in Dynamics 365 with Exchange will automatically be synced to Exchange with Dynamics 365.
+Not all appointments, tasks, or contacts created or updated in Dynamics 365 with Exchange will automatically be synced to Exchange with Dynamics 365. Specific conditions need to be met or actions need to be taken for synchronization to take place.
 
-Specific conditions need to be met or actions need to be taken for this to happen.
-
-### Required configuration 
-
-In order to synchronize appointments, contacts, or tasks with an Exchange mailbox, the corresponding mailbox record in Dynamics 365 needs meet the following conditions:
+In order to synchronize appointments, contacts, or tasks with an Exchange mailbox, the corresponding mailbox record in Dynamics 365 needs to meet the following conditions:
 
 - A user mailbox that is approved. Note, queue mailboxes do not support appointment, contact, or task sync.
 
@@ -47,21 +43,21 @@ In order to synchronize appointments, contacts, or tasks with an Exchange mailbo
 
 Synchronization filters determine which rows will be synchronized from customer engagement apps to Exchange (using server-side synchronization).
 
-Only the rows which match the criteria specified in the sync filters will be eligible for processing with server-side sync. For more information see, [Choose the records to synchronize between customer engagement apps and Exchange](choose-records-synchronize-dynamics-365-outlook-exchange.md).
+Only the rows that match the criteria specified in the sync filters will be eligible for processing with server-side sync. For more information see, [Choose the records to synchronize between customer engagement apps and Exchange](choose-records-synchronize-dynamics-365-outlook-exchange.md).
 
-Once an item is synced to Exchange, the link between the two items is established and bidirectional sync will always be performed. Changes on any of the two systems will be propagated.
+Once an item is synced with Exchange, the link between the two items is established and a bidirectional sync will always be performed. Changes on any of the two systems will be propagated.
 
-### Sync requirments from Exchange to Dynamics
+### Sync requirments from Exchange to Dynamics 365
 
-Even when your mailbox is configured for server-side sync, creating an appointment, contact, or task on Exchange using Outlook on the Web or Outlook, won't cause the item to be synced to Dynamics 365 automatically unless:
+Even if your mailbox is configured for server-side sync, when you create an appointment, contact, or task on Exchange using Outlook on the Web or Outlook on the desktop, the items won't sync to Dynamics 365 automatically. For sync to take place, the following requirement need to be met:
 
--   The item has been created using App for Outlook
+-   The item has been created using App for Outlook.
 
--   The item is tracked to Dynamics 365 using App for Outlook
+-   The item is tracked to Dynamics 365 using App for Outlook.
 
--   The **Tracked to Dynamics 365** category has been applied from Outlook on the Web, Outlook desktop, or email clients
+-   The **Tracked to Dynamics 365** category has been applied from Outlook on the Web, Outlook desktop, or email clients.
 
-If any of these actions have been performed, the item will be selected by server-side sync for processing and server-side sync will attempt to create the item in Dynamics and establish the link.
+When these requirments are met, the item will be selected by server-side sync for processing and server-side sync will attempt to create the item in Dynamics and establish the link.
 
 Once the link is established, bidirectional sync will be performed from now on. Changes on any of the two systems will be propagated.
 
