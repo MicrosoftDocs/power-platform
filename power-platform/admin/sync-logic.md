@@ -92,7 +92,7 @@ When the appointment is updated in Dynamics 365 and synced to Exchange, invitati
 
 An appointment cancellation will be sent to the parties by Exchange only when the appointment gets physically deleted in the organizer's mailbox.
 
-When an appointment is deleted in Dynamics 365, cancellations won't be sent when the scheduled start is in the past or if the user syncing the appointment is not the appointment organizer, or if the appointment doesn't have attendees. By default appointments that are cancelled in Dynamics 365 won't propagate to Exchange as cancellation. This behavior can be changed with the *SSSPropagateAppointmentCancellationsToExchange* [orgsDbOrgSetting](https://docs.microsoft.com/en-us/power-platform/admin/orgdborgsettings). When this is enabled, cancelling an appointment in Dynamics 365 will cancel the meeting on Exchange which will send appointment cancellation to the attendees.
+When an appointment is deleted in Dynamics 365, cancellations won't be sent when the scheduled start is in the past or if the user syncing the appointment is not the appointment organizer, or if the appointment doesn't have attendees. By default appointments that are cancelled in Dynamics 365 won't propagate to Exchange as cancellation. This behavior can be changed with the *SSSPropagateAppointmentCancellationsToExchange* [orgsDbOrgSetting](orgdborgsettings.md). When this is enabled, cancelling an appointment in Dynamics 365 will cancel the meeting on Exchange which will send appointment cancellation to the attendees.
 
 When a appointment is deleted in Dynamics and synced to Exchange the appointment will be deleted on Exchange only if all these conditions are met:
 
