@@ -46,7 +46,7 @@ In order to synchronize appointments, contacts, or tasks with an Exchange mailbo
 
 Synchronization filters determine which rows will be synchronized from customer engagement apps to Exchange (using server-side synchronization).
 
-Only the rows which match the criteria specified in the sync filters will be eligible for processing with server-side sync. For more information see, [Choose the records to synchronize between customer engagement apps and Exchange]<choose-records-synchronize-dynamics-365-outlook-exchange.md>
+Only the rows which match the criteria specified in the sync filters will be eligible for processing with server-side sync. For more information see, [Choose the records to synchronize between customer engagement apps and Exchange](choose-records-synchronize-dynamics-365-outlook-exchange.md).
 
 Once an item is synced to Exchange, the link between the two items is established and bidirectional sync will always be performed. Changes on any of the two systems will be propagated.
 
@@ -66,11 +66,11 @@ Once the link is established, bidirectional sync will be performed from now on. 
 
 For more information about Outlook tracking and category tracking, see:
 
-- [Link and track an email or appointment to a specific row in your app]</dynamics365/outlook-app/user/track-message-or-appointment>
+- [Link and track an email or appointment to a specific row in your app](/dynamics365/outlook-app/user/track-message-or-appointment)
 
-- [Track an email or appointment without linking it to a specific row]</dynamics365/outlook-app/user/track-without-set-regarding>
+- [Track an email or appointment without linking it to a specific row](/dynamics365/outlook-app/user/track-without-set-regarding)
 
-- [Use Outlook category to track appointments and emails]<use-outlook-category-track-appointments-emails.md>
+- [Use Outlook category to track appointments and emails](use-outlook-category-track-appointments-emails.md)
 
 ## Appointment - sync from Dynamics 365 to Exchange
 
@@ -118,27 +118,23 @@ When deleting a recurring appointment in Exchange, during sync, the deletion won
 
 ## Service appointments - sync from Dynamics 365 to Exchange
 
--   Mapping: Service appointment records in Dynamics 365 will be synchronized to Exchange as Meetings
+-   Mapping: Service appointment records in Dynamics 365 will be synchronized to Exchange as Meetings.
 
--   Invites and cancellations: Invites and cancellations are never sent for service appointments
+-   Invites and cancellations: Invites and cancellations are never sent for service appointments.
 
 -   Copies: When sync happens, each user gets their own copy of **serviceAppointment** in their mailboxes. There is no central organizer for service appointments in this case.
 
 ## Contacts - Sync from Dynamics 365 to Exchange
 
--   Mapping: Contact records in Dynamics 365 will be synchronized to Exchange as Contacts
+-   Mapping: Contact records in Dynamics 365 will be synchronized to Exchange as Contacts.
 
-<!-- -->
-
--   Address synchronization: For more information, see <https://docs.microsoft.com/dynamics365/outlook-addin/admin-guide/configure-synchronization-appointments-contacts-tasks#address-synchronization-for-contacts>
+-   Address synchronization: For more information, see [Address synchronization for Contacts](/dynamics365/outlook-addin/admin-guide/configure-synchronization-appointments-contacts-tasks#address-synchronization-for-contacts).
 
 -   Contact deletion: The contact will only be deleted on Exchange if the syncing user is not the original contact record owner.
 
 ## Tasks - Sync from Dynamics 365 to Exchange
 
--   Mapping: Faxes, letters, phone calls and tasks records in Dynamics 365 will be synchronized to Exchange as Tasks
-
-<!-- -->
+-   Mapping: Faxes, letters, phone calls and tasks records in Dynamics 365 will be synchronized to Exchange as Tasks.
 
 -   Reminder: If the task **dueDate** is greater than a day ago and the task stateCode in Dynamics 365 is Open or Scheduled, the reminder will be set during sync.
 
@@ -156,8 +152,6 @@ When deleting a recurring appointment in Exchange, during sync, the deletion won
 
 -   Mapping: Tasks in Exchange will be synchronized to Dynamics 365 as tasks.
 
-<!-- -->
-
 -   Task status: When a task not started in Exchange gets synced to Dynamics 365 the task will be synced as **Not Started**.
 
 -   Task actual start: When a task create is synced to Dynamics 365, the **actualStart** will be set to current timestamp.
@@ -168,7 +162,7 @@ When deleting a recurring appointment in Exchange, during sync, the deletion won
 
 ## Distinct physical and logical deletion
 
-When an item doesn't match the [sync filters](https://docs.microsoft.com/power-platform/admin/choose-records-synchronize-dynamics-365-outlook-exchange) anymore, server-side sync will propagate a delete operation to Microsoft Exchange. This applies to all tables.
+When an item doesn't match the [sync filters](choose-records-synchronize-dynamics-365-outlook-exchange.md) anymore, server-side sync will propagate a delete operation to Microsoft Exchange. This applies to all tables.
 
 There are two scenarios which can cause an item to not match the sync filters anymore:
 
@@ -178,21 +172,21 @@ There are two scenarios which can cause an item to not match the sync filters an
 
 By default, both these scenarios will propagate a delete operation to Microsoft Exchange.
 
-To change this behavior and ignore logical deletes, turn on [orgdborgsetting](https://github.com/MicrosoftDocs/power-platform/blob/main/power-platform/admin/OrgDbOrgSettings.md) *DistinctPhysicalAndLogicalDeletesForExchangeSyn*c.
+To change this behavior and ignore logical deletes, turn on [orgdborgsetting](OrgDbOrgSettings.md) *DistinctPhysicalAndLogicalDeletesForExchangeSync*.
 
 For more information on sync filter, see:
 
--   <https://docs.microsoft.com/power-platform/admin/choose-records-synchronize-dynamics-365-outlook-exchange>
+-   [Choose the records to synchronize between customer engagement apps and Exchange](choose-records-synchronize-dynamics-365-outlook-exchange.md)
 
--   <https://docs.microsoft.com/power-platform/admin/configure-default-sync-filters>
+-   [Set up default sync filters for multiple users for appointments, contacts, or tasks](configure-default-sync-filters.md)
 
 ## Ignore copied items
 
 When a linked item is copied on Exchange side, server-side sync by default will ignore the copy action to avoid bringing duplicate information to Dynamics 365. This applies to all tables.
 
-If customer wants to bring the duplicate to Dynamics 365 please disable [orgdborgsetting](https://github.com/MicrosoftDocs/power-platform/blob/main/power-platform/admin/OrgDbOrgSettings.md) *IgnoreCopiedItemsInSSSForMailbox*. This setting is**On** by default.
+If customer wants to bring the duplicate to Dynamics 365 please disable [orgdborgsetting](OrgDbOrgSettings.md) *IgnoreCopiedItemsInSSSForMailbox*. This setting is**On** by default.
 
-For mor information, see [OrgDbOrgSettings documentation](https://github.com/MicrosoftDocs/power-platform/blob/main/power-platform/admin/OrgDbOrgSettings.md).
+For mor information, see [OrgDbOrgSettings documentation](OrgDbOrgSettings.md).
 
 ## Enable appointment attachment synchronization with Outlook or Exchange
 
