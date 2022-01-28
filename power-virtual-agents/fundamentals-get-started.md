@@ -124,9 +124,10 @@ Now that you have some content authored into a dialog tree, it's time to test th
     :::image type="content" source="media/test-bot-menu.png" alt-text="Test bot control." border="false":::
 
 1. Try out your newly authored dialog tree by typing into the test bot window.
-    1. Turn on **Track between topics** at the top, which enables you to follow along with the bot as it executes your dialog. You'll start to see parts of your dialog tree highlighted as the bot gets to that portion of the dialog.
 
-        :::image type="content" source="media/test-bot-track.png" alt-text="Start conversation." border="false":::
+1. Turn on **Track between topics** at the top, which enables you to follow along with the bot as it executes your dialog. You'll start to see parts of your dialog tree highlighted as the bot gets to that portion of the dialog.
+
+    :::image type="content" source="media/test-bot-track.png" alt-text="Start conversation." border="false":::
 
 1. Type "hello world" in the chat window, and send the message to the bot. You'll see the top portion of your dialog tree highlighted in green, and you'll see **Seattle** and **Bellevue** presented as user options in the test bot window.
 

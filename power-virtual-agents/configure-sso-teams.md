@@ -164,7 +164,7 @@ To add Teams SSO configuration information in the Power Virtual Agents bot:
 
 1. Select **Edit details**.
 
-1. Select **More** to see the Teams SSO configuration details. Scroll all the way to the bottom of the   -. Add the following information:
+1. Select **More** to see the Teams SSO configuration details. Scroll all the way to the bottom of the pane. Add the following information:
 
     - **AAD application's client ID**: Add the **Application ID** from the **Overview** page of the Azure AD app registration. This ID is the same client ID that was added in the **Client ID** field when creating the Azure AD authentication in the Power Virtual Agents web app.
 

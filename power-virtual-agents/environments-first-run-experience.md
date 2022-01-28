@@ -43,8 +43,6 @@ When you first sign in and create a new bot, a default environment is created fo
 
 You can, however, create additional environments by using the [Power Platform Admin Center](/power-platform/admin/create-environment).
 
-### Create a new environment
-
 1. Go to [https://admin.powerplatform.com](https://admin.powerplatform.com) and sign in using your work account. Use the same tenant that you use for Power Virtual Agents.
 
 1. Go to the **Environments** tab and select **+ New** to open the **New environment** pane.

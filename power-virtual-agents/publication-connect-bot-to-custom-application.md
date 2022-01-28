@@ -104,7 +104,7 @@ GET /api/botmanagement/v1/directline/directlinetoken
 
 Example:
 
-```powershell
+```rest-api
 GET https://powerva.microsoft.com/api/botmanagement/v1/directline/directlinetoken?botId=<ENTER-YOUR-BOTID>&tenantId=<ENTER-YOUR-TENANTID>
 ```
 

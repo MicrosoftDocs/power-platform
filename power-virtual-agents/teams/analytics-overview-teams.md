@@ -47,11 +47,11 @@ The analytics section is divided into a number of pages to give you multiple way
 
 ### See also
 
-| Topic | Description |
-| - | - |
-| [Analyze bot performance and usage](analytics-summary-teams.md) | Review overall analytics for your bots. |
-| [Analyze customer satisfaction](analytics-csat-teams.md) | Identify overall trends in customer satisfaction, and where satisfaction is falling behind. |
-| [Analyze topic usage](analytics-topic-details-teams.md) | See how individual topics are doing and how well they're working at resolving issues. |
-| [Analyze billed session information](analytics-billed-sessions-teams.md) | Understand how sessions are being billed, based on their usage. |
+| Topic                                                                    | Description                                                                                 |
+| ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------- |
+| [Analyze bot performance and usage](analytics-summary-teams.md)          | Review overall analytics for your bots.                                                     |
+| [Analyze customer satisfaction](analytics-csat-teams.md)                 | Identify overall trends in customer satisfaction, and where satisfaction is falling behind. |
+| [Analyze topic usage](analytics-topic-details-teams.md)                  | See how individual topics are doing and how well they're working at resolving issues.       |
+| [Analyze billed session information](analytics-billed-sessions-teams.md) | Understand how sessions are being billed, based on their usage.                             |
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
