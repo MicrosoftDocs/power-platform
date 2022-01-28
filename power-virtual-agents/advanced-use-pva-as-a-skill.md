@@ -267,7 +267,7 @@ If you have a Power Virtual Agents topic that can receive an input variable list
     [Activity
         Type = event
         Name = TOPIC_ACTIVITY_NAME
-        Value = ${json("{'PVA_INPUT_VARIABLE': ${COMPOSER_INPUT_VARIABLE}}")}
+        Value = ${addProperty(json("{}"), 'PVA_INPUT_VARIABLE', COMPOSER_INPUT_VARIABLE)}
     ]
     ```
 
