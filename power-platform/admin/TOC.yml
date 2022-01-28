@@ -846,8 +846,6 @@
               href: create-queue-items-from-synchronized-email-messages.md
           - name: Configure appointment, contact, and task synchronization
             items: 
-             -name: Synchronization logic for appointments, contacts, and tasks
-              href: sync-logic.md
             - name: Configure appointment, contact, and task synchronization
               href: choose-records-synchronize-dynamics-365-outlook-exchange.md
             - name: Set up default sync filters for multiple users
