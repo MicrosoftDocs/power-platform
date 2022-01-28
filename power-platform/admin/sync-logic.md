@@ -20,7 +20,7 @@ search.app:
 
 # Synchronization logic for appointments, contacts, and tasks 
 
-This topic covers how synchronization work with appointments, contacts, and tasks. 
+This topic covers how synchronization works with appointments, contacts, and tasks. 
 
 Appointment, task, and contact sync bilaterally using server-side synchronization. Each table has specific behaviors during synchronizationnc which is covered in this topic. The sync behavior also depends on the sync direction, which can be from Dynamics 365 to Microsoft Exchange or from Exchange to Dynamics 365.
 
