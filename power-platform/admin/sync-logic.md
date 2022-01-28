@@ -22,13 +22,13 @@ search.app:
 
 This topic covers how synchronization works with appointments, contacts, and tasks. 
 
-Appointment, task, and contact sync bilaterally using server-side synchronization. Each table has specific behaviors during synchronization, which is covered in this topic. The sync behavior also depends on the sync direction, which can be from Dynamics 365 to Microsoft Exchange or from Exchange to Dynamics 365.
+Appointment, task, and contact sync bilaterally using server-side synchronization. Each table has specific behaviors during synchronization. The sync behavior also depends on the sync direction, which can be from Dynamics 365 to Microsoft Exchange or from Exchange to Dynamics 365.
 
 ## Sync configuration requirments
 
-Not all appointments, tasks, or contacts created or updated in Dynamics 365 with Exchange will automatically be synced to Exchange with Dynamics 365. Specific conditions need to be met or actions need to be taken for synchronization to take place.
+Not all appointments, tasks, or contacts created or updated in Dynamics 365 with Exchange will automatically sync to Exchange with Dynamics 365. Specific conditions need to be met or actions need to be taken for synchronization to take place.
 
-In order to synchronize appointments, contacts, or tasks with an Exchange mailbox, the corresponding mailbox record in Dynamics 365 needs to meet the following conditions:
+In order to synchronize appointments, contacts, or tasks with an Exchange mailbox, the corresponding mailbox record in Dynamics 365 has meet these requirements:
 
 - A user mailbox that is approved. Note, queue mailboxes do not support appointment, contact, or task sync.
 
