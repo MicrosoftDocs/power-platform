@@ -17,7 +17,7 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-## Ongoing production solution support
+# Ongoing production solution support
 
 The following section covers formal and informal ways of supporting solutions that have been built with Microsoft Power Platform, such as apps, flows and chatbots.
 
@@ -43,7 +43,7 @@ If your Power Platform adoption approach is largely [centralized](delivery-model
 
 In most organizations, a mix of delivery models is best – even if decentralized teams support solutions for their makers, a help desk and central support team may still be required for technical issues, end user queries and first-tier support.
 
-### Define tiers of applications
+## Define tiers of applications
 
 As you define your support process and escalation path, it is important to categorize solutions built based on criticality – this will allow you to come up with processes that ensure that critical applications have the necessary guardrails around them to support them whilst at the same time not stifling innovation of productivity scenarios.
 
@@ -64,7 +64,7 @@ As you define your support models, also think about a graduation path – a solu
 
 Each of the types of internal user support introduced above are described in further detail in this article.
 
-### Maker support
+## Maker support
 
 Maker support refers to when the maker supports their own apps and flows built for themselves, their team or colleagues. This means answering queries from end users, fixing bugs and making change requests. This is an informal way of support; often end users know who the maker is and will reach out directly to them.
 
@@ -73,13 +73,13 @@ Maker support refers to when the maker supports their own apps and flows built f
 
 Additional to this proactive way of communicating processes to makers, also make sure you have reactive governance in place to identify highly shared and highly used solutions that may be important to your business and reach out to makers to make sure those solutions have the necessary support guardrails around them. Use [tenant-level analytics](/admin/tenant-level-analytics) to find out more about your applications usage, [export your telemetry to your own data storage account](/admin/self-service-analytics) to build your own enhanced reporting or use the [CoE Starter Kit](https://aka.ms/coestarterkit) as a starting point.
 
-### Team-assisted support
+## Team-assisted support
 
 Team-assisted support refers to when team members take on co-ownership of apps and flows built for their team/used by their team and help support the solutions during their daily work. This means answering queries from end users, fixing bugs, and making change requests. Makers who emerge as [your champions](champions.md) tend to take on this type of informal support role voluntarily because they have an intrinsic desire to help.
 
 Whilst this often starts off as an informal process, many organizations formalize team-assisted support to scale their Power Platform efforts. This involves business units owning their dedicated environments, taking on the Environment Admin role and supporting solutions in those environments. In larger organizations, dedicated Power Platform teams per business unit take on this role.
 
-### Help desk support
+## Help desk support
 
 The help desk is usually operated as a shared service by the IT department.
 
@@ -89,7 +89,7 @@ The help desk can:
 - Answering end user and governance related questions, such as how to request access to applications, where to find applications.
 - Routing issues with critical apps to the correct support team.
 
-### Dedicated Power Platform support team
+## Dedicated Power Platform support team
 
 As your adoption grows and makers develop more business-important and critical solutions, you may require a dedicated Power Platform support team.
 
@@ -103,18 +103,18 @@ Some customers chose to outsource this level of support to a partner.
 
 Managing requests as purely an escalation path from the help desk gets difficult to enforce since these Power Platform technical experts are often well-known to business users. To encourage the habit of going through the proper channels, this team should redirect users to submit a help desk ticket. It will also improve the data quality for analyzing help desk requests.
 
-### Partner support
+## Partner support
 
 Many customers choose to work with partners on their Power Platform adoption, including support. This can include development assistance for makers, help in establishing a CoE and technical support procedures, as well as 24/7 technical support for critical apps.
 
-### Microsoft support
+## Microsoft support
 
 Microsoft support is used to raise platform related technical issues. Based on your [support plan](/admin/support-overview), different technical support and advisory services are available to you.
 
 >[!TIP]
 >Before raising a support ticket, also check [Power Apps support](https://powerapps.microsoft.com/support/), [Power Automate support](https://flow.microsoft.com/support/) and [Power Virtual Agents support](https://powervirtualagents.microsoft.com/support/) for high-priority issues that broadly affect all customers.
 
-### Considerations and key actions
+## Considerations and key actions
 
 Considerations and key actions you can take to improve self and team-assisted supported solutions:
 

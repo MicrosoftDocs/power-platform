@@ -37,11 +37,11 @@ The diagram shows some common types of maker support that organizations employ s
 
 Each of the types of internal user support introduced above are described in further detail in this article.
 
-### Team-assisted support
+## Team-assisted support
 
 Team-assisted support refers to makers learning from each other as they build applications. Makers who emerge as [your champions](champions.md) tend to take on this type of informal support role voluntarily because they have an intrinsic desire to help
 
-### Internal community support
+## Internal community support
 
 At the heart of growth is a [community](wiki-community.md), a place for people to collaborate, share ideas, and discover new ways to apply technology to achieve more. A community is a place to ask questions, to share knowledge and expand skill sets.
 
@@ -59,7 +59,7 @@ An internal community discussion channel is commonly set up as a Teams channel o
 
 Use of an internal community discussion channel allows the Center of Excellence (CoE) to monitor the kind of questions people are asking. It's one way the CoE can understand the issues users are experiencing and shape the future of the CoE based on this input. Monitoring the discussion channel can also reveal additional experts and potential champions who were previously unknown to the CoE.
 
-### Help desk support
+## Help desk support
 
 The help desk is usually operated as a shared service, operated by the IT department. 
 
@@ -73,17 +73,17 @@ The help desk can:
 
 Over time, troubleshooting and problem resolution skills become more effective as help desk personnel expand their knowledge base and experience with Power Platform.
 
-### Microsoft support
+## Microsoft support
 
 Based on your support plan, you may be eligible for advisory support services provided through Premier/Unified support. Learn more about support available to you: [Get Help + Support](/power-platform/admin/get-help-support)
 
 Refer to the comprehensive [Microsoft Power Platform documentation](/power-platform/). It's an authoritative resource that can aid you with troubleshooting and searching for information.
 
-### Partner support
+## Partner support
 
 Many customers choose to work with partners on their Power Platform adoption, including support. This can include development assistance for makers, help in establishing a CoE and technical support procedures, as well as training for your help desk and makers.
 
-### Power Platform community support
+## Power Platform community support
 
 Connect with peers and Power Platform technical experts through our worldwide [Power Platform community](https://powerusers.microsoft.com/). The community features forums for you to ask questions, trainings, blogs and sample galleries to take inspiration form.  It can be very powerful and exceedingly helpful. However, as is the case with any public forum, it's important to validate the advice and information posted on the forum.
 
@@ -93,7 +93,7 @@ The Power Platform community is vibrant. Every day, there are a great number of 
 - Whether the situation and context of the solution found online truly fits your circumstance.
 - The credibility of the information being presented.
 
-### Considerations and key actions
+## Considerations and key actions
 
 Considerations and key actions you can take to improve your team-assisted support:
 
@@ -121,17 +121,5 @@ Considerations and key actions you can take to improve your Power Platform Nurtu
 - Create a feedback loop from the help desk to the dedicated support team. When support personnel observe redundancies or inefficiencies, they can communicate that information to the Nurture team, who might choose to update existing internal documentation or provide additional training paths for makers.
 - Consider offering drop-in sessions / office hours where makers can show up with their questions to get immediate help.
 - Consider hosting frequent webinars to share Power Platform maker and development knowledge, such as how to use specific actions in a cloud flow or how to make canvas apps responsive. Record those sessions and make them available on your Power Platform community space.
-
-## Maturity levels
-
-The following maturity levels will help you assess the current state of your support strategy:
-
-| **Level** | **State of Power Platform support strategy** |
-| --- | --- |
-| 100: Initial | <ul><li>Makers support their own apps and flows.</li><li>No or limited rules on how apps and flows should be supported by IT and Business stakeholders.</li><li>The help desk is not aware and not prepared to handle Power Platform queries.</li><li>Individual business units find ways of supporting each other; however this happens in silos and is not consistent across the organization – makers in different business units will receive different support based on the maturity of their department.</li></ul> |
-| 200: Repeatable | <ul><li>Community support is getting established, often driven by individual Power Platform technical experts who are passionate about Power Platform. They are working on bringing together and connecting makers to establish a support network.</li><li>An internal discussion channel is available, and becomes a place for Q&A. This channel may be growing organically, and new makers discover it through word of mouth rather than by being automatically invited to it. The CoE has little oversight of the channel. </li><li>There is some degree of commitment and governance measures to manage solution lifecycle stages, this often depends on the individual maker and their knowledge. They learned best practices themselves.</li><li>The help desk handles a small number of the most common technical support issues. |
-| 300: Defined | <ul><li>Support strategy involves help desk. The help desk is prepared to handle all known and expected Power Platform technical support issues, and the CoE provides appropriate extended support when required.</li><li>Defined risk profile dictates the level of support a solution will receive (e.g. IT supported, IT blessed, Maker supported). Makers are quickly able to assess the risk profile of their solution through a decision matrix and are able to identify what next steps to take – e.g. get test/prod environments, hand over solution, knowledge transfer to support team. Often this work is reactive, after the solution has been built, meaning IT does not have advance visibility.</li><li>The internal discussion channel is now popular and largely self-sustaining. CoE members actively monitor and manage the discussion channel to ensure questions are answered quickly and correctly.</li></ul>|
-| 400: Capable | <ul><li>Dedicated Support team.</li><li>Continuous improvement plans in line with business strategy.</li><li>Clearly understood roles and responsibilities.</li><li>SLAs are in place to define help desk support expectations, including extended support, and they are clear to everyone involved. </li></ul>|
-| 500: Efficient | <ul><li>Automation of support activities (e.g. change ownership, bot for FAQ). </li><li>Responsibilities and ownership to build and operate solutions are fully understood. </li><li>Bidirectional feedback loops exist between the help desk and the CoE.</li><li>Key performance indicators measure community engagement and satisfaction.</li><li>Automation is in place when it adds direct value to the user experience (for example, automatic access to the community), or for specific help desk activities (for example, use of APIs and scripts that increase speed and reduce error). </li></ul>|
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
