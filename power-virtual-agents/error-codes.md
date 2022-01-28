@@ -4,7 +4,7 @@ description: "Troubleshoot error code responses from your bot."
 author: v-alarioza
 ms.author: v-alarioza
 ms.topic: troubleshooting
-ms.date: 12/06/2021
+ms.date: 01/28/2022
 ms.service: power-virtual-agents
 ms.reviewer: clmori
 manager: shellyha
@@ -18,7 +18,7 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](error-codes.md)
 > - [Power Virtual Agents app in Microsoft Teams](teams/error-codes-teams.md)
 
-When a bot encounters a problem during a conversation it will respond with an error message.
+When a bot encounters a problem during a conversation, it will respond with an error message.
 
 If you're a bot user, the error message will contain an error code for the specific problem that was encountered.
 
@@ -31,7 +31,7 @@ If you're a bot maker testing the bot in the [Test bot pane](authoring-test-bot.
 Errors may also appear in the [Topic Checker](authoring-topic-management.md#topic-errors) where you can easily locate and fix them.
 
 > [!NOTE]
-> The following errors can occur in both the web app and Microsoft Teams. To view errors that are exclusive to Teams, please refer [the Teams version of this topic](teams/error-codes-teams.md).
+> The following errors can occur in both the web app and Microsoft Teams. To view errors that are exclusive to Teams, please refer to [the Teams version of this topic](teams/error-codes-teams.md).
 
 ## Error List
 
