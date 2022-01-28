@@ -145,7 +145,7 @@ This test experience empowers you to quickly create and test a conversation to e
 
 ## Publish your bot
 
-Once you are fine with the content authored in your bot, you can publish your bot to a website.
+Once you're fine with the content authored in your bot, you can publish your bot to a website.
 
 1. Select the **Publish** tab on the side pane.
 

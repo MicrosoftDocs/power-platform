@@ -93,7 +93,7 @@ To start a conversation with your Power Virtual Agents bot, you need a *Direct L
 
 To request a *Direct Line* token, issue a GET request to the endpoint below:
 
-```powershell
+```rest-api
 GET /api/botmanagement/v1/directline/directlinetoken
 ```
 

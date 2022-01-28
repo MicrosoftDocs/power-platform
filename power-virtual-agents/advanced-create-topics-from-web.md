@@ -126,7 +126,6 @@ The Power Virtual Agents AI engine applies a number of steps to the content when
 
 After the extraction process has been completed, the topic suggestions appear on the **Suggested** tab. Review them individually to decide which ones you want to include in your bot. You can also add suggestions without reviewing them.
 
-### Review suggestions and add them to your bot
 
 1. Select the name of the suggested topic.  
 
@@ -154,7 +153,6 @@ After the extraction process has been completed, the topic suggestions appear on
 
 Suggested topics are added to the **Existing** tab with their status set to **Off**. This way, topics won't be prematurely added to your bot.
 
-### Enable topics for use
 
 1. Select **Topics** on the side pane.
 
