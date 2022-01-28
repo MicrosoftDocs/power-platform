@@ -75,7 +75,7 @@ There are two types of data source authentication methods in Power Apps&mdash;**
 - Explicit authentication means that only the end user's credentials will be used to access the data source.
 - Implicit authentication means that the credentials the author used when creating the connection for the Power Apps will be used.
 
-We recommend that you use **explicit** connection type as it's more secure. For more information, see [Difference between explicit and implicit connections](/powerapps/maker/canvas-apps/connections/sql-server-security#difference-between-explicit-and-implicit-connections). Though this article references SQL Server, it applies to all relational databases, and implicit connections.
+We recommend that you use **explicit** connection type as it's more secure. For more information, see [Difference between explicit and implicit connections](/powerapps/maker/canvas-apps/connections/sql-server-security#difference-between-explicit-and-implicit-connections) (Note: though this article references SQL Server, it applies to all relational databases, and implicit connections).
 
 ### See also
 
