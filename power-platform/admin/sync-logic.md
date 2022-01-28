@@ -116,45 +116,45 @@ When deleting a recurring appointment in Exchange, during sync, the deletion won
 
 ## Service appointments - sync from Dynamics 365 to Exchange
 
--   Mapping: Service appointment records in Dynamics 365 will be synchronized to Exchange as Meetings.
+- Mapping: Service appointment records in Dynamics 365 will be synchronized to Exchange as Meetings.
 
--   Invites and cancellations: Invites and cancellations are never sent for service appointments.
+- Invites and cancellations: Invites and cancellations are never sent for service appointments.
 
--   Copies: When sync happens, each user gets their own copy of **serviceAppointment** in their mailboxes. There is no central organizer for service appointments in this case.
+- Copies: When sync happens, each user gets their own copy of **serviceAppointment** in their mailboxes. There is no central organizer for service appointments in this case.
 
 ## Contacts - Sync from Dynamics 365 to Exchange
 
--   Mapping: Contact records in Dynamics 365 will be synchronized to Exchange as Contacts.
+- Mapping: Contact records in Dynamics 365 will be synchronized to Exchange as Contacts.
 
--   Address synchronization: For more information, see [Address synchronization for Contacts](/dynamics365/outlook-addin/admin-guide/configure-synchronization-appointments-contacts-tasks#address-synchronization-for-contacts).
+- Address synchronization: For more information, see [Address synchronization for Contacts](/dynamics365/outlook-addin/admin-guide/configure-synchronization-appointments-contacts-tasks#address-synchronization-for-contacts).
 
 -   Contact deletion: The contact will only be deleted on Exchange if the syncing user is not the original contact record owner.
 
 ## Tasks - Sync from Dynamics 365 to Exchange
 
--   Mapping: Faxes, letters, phone calls and tasks records in Dynamics 365 will be synchronized to Exchange as Tasks.
+- Mapping: Faxes, letters, phone calls and tasks records in Dynamics 365 will be synchronized to Exchange as Tasks.
 
--   Reminder: If the task **dueDate** is greater than a day ago and the task stateCode in Dynamics 365 is Open or Scheduled, the reminder will be set during sync.
+- Reminder: If the task **dueDate** is greater than a day ago and the task stateCode in Dynamics 365 is Open or Scheduled, the reminder will be set during sync.
 
--   Due date: The task **scheduledEnd** on Dynamics will be synced as task due date on Exchange.
+- Due date: The task **scheduledEnd** on Dynamics will be synced as task due date on Exchange.
 
--   Task status: When **percentcomplete** is not specified, a task in open status will be synced as not started and a task in Completed or Canceled state will sync as completed on Exchange.
+- Task status: When **percentcomplete** is not specified, a task in open status will be synced as not started and a task in Completed or Canceled state will sync as completed on Exchange.
 
--   Complete date: **actualEnd** will be synced as task complete date on Exchange
+- Complete date: **actualEnd** will be synced as task complete date on Exchange
 
--   Task deletion: Task delete in Dynamics will be propagated to Exchange only for tasks which are not in the Completed status on Exchange.
+- Task deletion: Task delete in Dynamics will be propagated to Exchange only for tasks which are not in the Completed status on Exchange.
 
--   Task autocompletion: When a task is completed in Dynamics the **actualEnd** field will be populated. If this task is syncing to Exchange using server-side synchronization, if the **actualEnd** field is populated and it is in the past, the task will be automatically completed. When using customizations to reactivate a task the **actualEnd** date should also be cleared to avoid autocompletion when server-side Sync is syncing this task.
+- Task autocompletion: When a task is completed in Dynamics the **actualEnd** field will be populated. If this task is syncing to Exchange using server-side synchronization, if the **actualEnd** field is populated and it is in the past, the task will be automatically completed. When using customizations to reactivate a task the **actualEnd** date should also be cleared to avoid autocompletion when server-side Sync is syncing this task.
 
 ### Sync from Exchange to Dynamics 365
 
--   Mapping: Tasks in Exchange will be synchronized to Dynamics 365 as tasks.
+- Mapping: Tasks in Exchange will be synchronized to Dynamics 365 as tasks.
 
--   Task status: When a task not started in Exchange gets synced to Dynamics 365 the task will be synced as **Not Started**.
+- Task status: When a task not started in Exchange gets synced to Dynamics 365 the task will be synced as **Not Started**.
 
--   Task actual start: When a task create is synced to Dynamics 365, the **actualStart** will be set to current timestamp.
+- Task actual start: When a task create is synced to Dynamics 365, the **actualStart** will be set to current timestamp.
 
--   Task deletion: Task deletion on Exchange will also delete the task in Dynamics 365. This applies to all tables which synchronize as task to Exchange task tables such as fax, letter, phone call, or task.
+- Task deletion: Task deletion on Exchange will also delete the task in Dynamics 365. This applies to all tables which synchronize as task to Exchange task tables such as fax, letter, phone call, or task.
 
 
 ## Distinct physical and logical deletion
@@ -163,9 +163,9 @@ When an item doesn't match the [sync filters](choose-records-synchronize-dynamic
 
 There are two scenarios where an item doesn't meet sync filters:
 
--   Physical delete: The row doesn't exist in Dynamics 365 anymore.
+- Physical delete: The row doesn't exist in Dynamics 365 anymore.
 
--   Logical delete: Access to the row has been lost (the row still exists in Dynamics 365 but the user associated to the mailbox lost access to it or the row is not matching sync filters anymore.
+- Logical delete: Access to the row has been lost (the row still exists in Dynamics 365 but the user associated to the mailbox lost access to it or the row is not matching sync filters anymore.
 
 By default, both these scenarios will propagate a delete operation to Microsoft Exchange.
 
@@ -173,9 +173,9 @@ To change this behavior and ignore logical deletes, turn on [orgdborgsetting](Or
 
 For more information on sync filters, see:
 
--   [Choose the records to synchronize between customer engagement apps and Exchange](choose-records-synchronize-dynamics-365-outlook-exchange.md)
+- [Choose the records to synchronize between customer engagement apps and Exchange](choose-records-synchronize-dynamics-365-outlook-exchange.md)
 
--   [Set up default sync filters for multiple users for appointments, contacts, or tasks](configure-default-sync-filters.md)
+- [Set up default sync filters for multiple users for appointments, contacts, or tasks](configure-default-sync-filters.md)
 
 ## Ignore copied items
 
@@ -198,12 +198,12 @@ Users can attach documents, pictures, recordings, etc. to the appointments they 
   
    **Considerations**.  
   
-   -   When you disable attachment synchronization, the attachments will not appear in appointments in Dynamics 365 apps but will remain in Dynamics 365 for Outlook appointments.  
-   -   Recurring appointment attachment synchronization is not supported. When users synchronize recurring appointments with attachments, the attachments do not sync.  
+   - When you disable attachment synchronization, the attachments will not appear in appointments in Dynamics 365 apps but will remain in Dynamics 365 for Outlook appointments.  
+   - Recurring appointment attachment synchronization is not supported. When users synchronize recurring appointments with attachments, the attachments do not sync.  
   
-   -   Attachments could affect sync times so you may want to use attachments sparingly if your using to a low bandwidth network.  
+   - Attachments could affect sync times so you may want to use attachments sparingly if your using to a low bandwidth network.  
   
-   -   Service activity attachment synchronization is not supported.  
+   - Service activity attachment synchronization is not supported.  
 
 ## Address synchronization for Contacts  
   
@@ -235,12 +235,12 @@ By default, task synchronization is disabled. User created tasks in Dynamics 365
 
 3. Choose **Synchronize tasks that are assigned in Outlook**
 
-   **Considerations**
+   **Considerations**.
 
--   Recurring task synchronization is not supported. When users synchronize recurring tasks, the tasks do not synch.
+   - Recurring task synchronization is not supported. When users synchronize recurring tasks, the tasks do not synch.
 
--   The person assigning the task and the person the task is assigned to must be in the same organization.
+   - The person assigning the task and the person the task is assigned to must be in the same organization.
 
--   Tasks cannot be synchronized to multiple email addresses.
+   - Tasks cannot be synchronized to multiple email addresses.
 
 
