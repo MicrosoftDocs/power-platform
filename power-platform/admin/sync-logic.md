@@ -28,7 +28,7 @@ Appointment, task, and contact sync bilaterally using server-side synchronizatio
 
 Not all appointments, tasks, or contacts created or updated in Dynamics 365 with Exchange will automatically sync to Exchange with Dynamics 365. Specific conditions need to be met or actions need to be taken for synchronization to take place.
 
-In order to synchronize appointments, contacts, or tasks with an Exchange mailbox, the corresponding mailbox record in Dynamics 365 has meet these requirements:
+To synchronize appointments, contacts, or tasks with an Exchange mailbox, the corresponding mailbox record in Dynamics 365 has to meet these requirements:
 
 - A user mailbox that is approved. Note, queue mailboxes do not support appointment, contact, or task sync.
 
