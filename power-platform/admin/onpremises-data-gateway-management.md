@@ -4,7 +4,7 @@ description: View and manage on-premises gateways.
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/14/2020
+ms.date: 01/28/2022
 author: arthiriyer
 ms.subservice: admin
 ms.author: arthii
@@ -23,6 +23,9 @@ search.app:
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 The on-premises data gateway acts as a bridge, providing quick and secure data transfer between on-premises data (data that is not in the cloud) and the Power BI, Power Automate, Logic Apps, and Power Apps services. More information: [What is an on-premises data gateway?](/data-integration/gateway/service-gateway-onprem)
+
+> [!NOTE]
+> The gateway and data source management feature in the Power Platform admin center isn’t supported on mobile or smaller screens with a resolution lower or equal to 320x256. 
 
 On the **Data** page of the [Power Platform admin center](https://admin.powerplatform.microsoft.com), you can view and manage on-premises data gateways.
 
