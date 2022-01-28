@@ -42,7 +42,7 @@ To provide an end-to-end solution for protecting sensitive assets, the product t
 
 ## Common security topics
 
-The following security articles provide a comprehensive answer to all questions mentioned above. As Power Platform includes several services, some of the security concepts are broadly used by all the services. However, some are specific to individual services. For instance, security articles dedicated to [Dataverse](../wp-security.md) since the security concepts around it are scoped to the data-layer concerns.  
+The security articles in this section provide a comprehensive answer to all questions mentioned above. As Power Platform includes several services, some of the security concepts are broadly used by all the services. However, some are specific to individual services. For instance, security articles dedicated to [Dataverse](../wp-security.md) since the security concepts around it are scoped to the data-layer concerns.  
 
 The first few articles in this section give an overview of the common security concepts in Power Platform, but with an emphasis on traditional web-based services such as Power Apps and Power Automate. While majority of concepts apply to all of the services for a given area, there are some differences between services. In places where services differ, they are specifically called out. Specific security topics such as Data Loss Prevention (DLP) are covered as specific articles, available under the section [Security and governance](/power-platform/admin/security).
 
