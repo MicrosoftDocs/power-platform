@@ -38,7 +38,8 @@ In order to synchronize appointments, contacts, or tasks with an Exchange mailbo
 
 - Enabled for appointment, contacts, and tasks sync.
 
-![Mailbox page screenshot](media/image1.png)
+   > [!div class="mx-imgBorder"]
+   > ![Mailbox page screenshot](media/image1.png)
 
 - The mailbox is successfully tested and enabled.
 
