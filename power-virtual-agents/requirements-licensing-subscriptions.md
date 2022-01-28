@@ -52,10 +52,6 @@ To access the full range of Power Virtual Agents capabilities, you need to upgra
 
 After you upgrade your license, you can continue using the same bot in the same environment. Capabilities that were previously only available in a standalone license will now be available. These capabilities may include those that result in [billed sessions that require Power Virtual Agents capacity](analytics-billed-sessions.md)).
 
-You can upgrade from within the Power Virtual Agents app for Microsoft Teams when prompted, as in the following example when publishing to other channels:
-   
-:::image type="content" source="media/upgrade-channels.png" alt-text="You need an upgraded license to publish to channels other than Teams.":::
-
 You can also [start a 60 day free trial of Power Virtual Agents](https://aka.ms/trypva) to try out all the capabilities. You'll be prompted to sign up for a trial if you try to create a bot without a license.
 
 :::image type="content" source="media/upgrade-create.png" alt-text="You are prompted to start a free trial or upgrade to a premium when creating a bot without a license.":::
