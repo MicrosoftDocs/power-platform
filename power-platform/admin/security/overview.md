@@ -1,7 +1,7 @@
 ---
 title: "Overview: Security in Microsoft Power Platform | MicrosoftDocs"
 description: Provides an overview about security concepts in Microsoft Power Platform.
-ms.date: 01/25/2022
+ms.date: 01/28/2022
 ms.service: power-platform
 ms.topic: "get-started-article"
 ms.custom: 
@@ -21,7 +21,7 @@ search.app:
 ---
 # Overview: Security in Microsoft Power Platform
 
-The articles in this section are intended to give security professionals an overview of how Power Platform handles security. Power Platform embodies many different technologies and this article will provide a general overview with additional resources to specific technologies that differ from the standard practice. Microsoft Dataverse has a rich set of security practices that are optimized around data storage. Whereas other Power Platform services such as Power Apps and Power Automate have a rich set of practices oriented towards a web-based technology.
+The articles in this section give security professionals an overview of how Power Platform handles security. Power Platform embodies many different technologies and this article will provide a general overview with additional resources to specific technologies that differ from the standard practice. Microsoft Dataverse has a rich set of security practices that are optimized around data storage. Whereas other Power Platform services such as Power Apps and Power Automate have a rich set of practices oriented towards a web-based technology.
 
 Microsoft Power Platform enables both non-professional and professional developers to quickly and easily create end-to-end solutions. These solutions may include applications, databases, and workflows both for small work groups or the entire organization. Security is critical for these solutions and Power Platform is built to provide industry-leading complete protection.  
 
@@ -40,9 +40,11 @@ To provide an end-to-end solution for protecting sensitive assets, the product t
 - How do I control and protect my sensitive data? How do I ensure this data cannot leak outside the organization?
 - How do I audit who conducts what operations? How do I react quickly if there's suspicious activity on the service?
 
-This article provides a comprehensive answer to all these questions. Power Platform includes several services.  Some of the security concepts are broadly used by all the services and some are specific to individual services.  
-
 ## Common security topics
+
+The security articles in this section provide a comprehensive answer to all questions mentioned above. As Power Platform includes several services, some of the security concepts are broadly used by all the services. However, some are specific to individual services. For instance, security articles dedicated to [Dataverse](../wp-security.md) since the security concepts around it are scoped to the data-layer concerns.  
+
+The first few articles in this section give an overview of the common security concepts in Power Platform, but with an emphasis on traditional web-based services such as Power Apps and Power Automate. While majority of concepts apply to all of the services for a given area, there are some differences between services. In places where services differ, they are specifically called out. Specific security topics such as Data Loss Prevention (DLP) are covered as specific articles, available under the section [Security and governance](/power-platform/admin/security).
 
 Security topics that are common to all of Power Platform include:
 
