@@ -158,7 +158,6 @@ When deleting a recurring appointment in Exchange, during sync, the deletion won
 
 -   Task deletion: Task deletion on Exchange will also delete the task in Dynamics 365. This applies to all tables which synchronize as task to Exchange task tables such as fax, letter, phone call, or task.
 
-## Advanced appointment, contact, and task synchronization topics
 
 ## Distinct physical and logical deletion
 
