@@ -1,7 +1,7 @@
 ---
 title: "Data storage in Microsoft Power Platform | MicrosoftDocs"
 description: Provides information about data storage concepts in Power Platform.
-ms.date: 01/25/2022
+ms.date: 01/28/2022
 ms.service: power-platform
 ms.topic: "get-started-article"
 ms.custom: 
@@ -52,7 +52,7 @@ This section outlines the Power Platform data handling practices when it comes t
 - Azure SQL Databases
 - Azure Storage (various types)
 
-Unless otherwise stated in documentation, customer data remains in its original data source location (for example, Dataverse, SharePoint, SQL Server) while the Power Platform app is stored in Azure Storage as part of an environment. For mobile scenarios, data is encrypted and stored in SQL Express. In most scenarios, Azure Storage is utilized to persist the data of the Power Platform service artifacts, while Azure SQL Databases are used to persist artifact metadata.  End-user entered data is stored in the respective datasource for the service (e.g., Dataverse.)
+Unless otherwise stated in documentation, customer data remains in its original data source location (for example, Microsoft Dataverse, SharePoint, SQL Server) while the Power Platform app is stored in Azure Storage as part of an environment. For mobile scenarios, data is encrypted and stored in SQL Express. In most scenarios, Azure Storage is utilized to persist the data of the Power Platform service artifacts, while Azure SQL Databases are used to persist artifact metadata. End-user entered data is stored in the respective data source for the service (such as Dataverse).
 
 All data persisted by Power Platform is encrypted by default using Microsoft-managed keys. Customer data stored in Azure SQL Databases is fully encrypted using Azure SQL's Transparent Data Encryption (TDE) technology. Customer data stored in Azure Blob storage is encrypted using Azure Storage Encryption. 
 
@@ -70,7 +70,7 @@ This section outlines advanced security features in Power Platform. Some of the 
 
 ### Service tags
 
-A service tag represents a group of IP address prefixes from a given Azure service. It helps minimize the complexity of frequent updates to network security rules. Customers can use service tags to define network access controls on Network Security Groups or Azure Firewall. Customers can use service tags in place of specific IP addresses when creating security rules. (See [Azure IP Ranges and Service Tags - Public Cloud](https://www.microsoft.com/en-us/download/details.aspx?id=56519).) By specifying the service tag name (for example, Power BI) in the appropriate source or destination (for APIs) field of a rule, customers can allow or deny the traffic for the corresponding service. Microsoft manages the address prefixes encompassed by the service tag and automatically updates the service tag as addresses change.
+A service tag represents a group of IP address prefixes from a given Azure service. It helps minimize the complexity of frequent updates to network security rules. Customers can use service tags to define network access controls on Network Security Groups or Azure Firewall. Customers can use service tags in place of specific IP addresses when creating security rules. (See [Azure IP Ranges and Service Tags - Public Cloud](https://www.microsoft.com/en-us/download/details.aspx?id=56519)). By specifying the service tag name (for example, Power BI) in the appropriate source or destination (for APIs) field of a rule, customers can allow or deny the traffic for the corresponding service. Microsoft manages the address prefixes encompassed by the service tag and automatically updates the service tag as addresses change.
 
 ### Data loss prevention
 
