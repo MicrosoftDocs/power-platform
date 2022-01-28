@@ -112,7 +112,7 @@ Appointment organizer is a key field when it comes to appointment synchronizatio
 
 - Mapping: Meetings in Exchange will be synchronized to Dynamics 365 as Appointments
 - Appointment FreeBusy information: When an appointment FreeBusy information is set to Free on Exchange and this is synced to Dynamics 365, if the appointment is in Completed or Cancelled state on Dynamics 365, the status code will be set to Completed. When the state is Open in Dynamics 365 the status will be changed to Free**. Working elsewhere** reeBusy status will sync to Dynamics 365 as state Open and status Free.
-- Appointment booking and conflict management: When an appointment is tracked to Dynamics 365, Server Side Synchronization will still leverage booking API to ensure the parties are available at the specified time. (e.g. if another appointment is already in the organizer's calendar in Dynamics 365 at the same time, the booking won't succeed) When the appointment booking doesn't succeed the appointment won't be synced, however the user can [address the scheduling conflict](https://support.microsoft.com/en-us/topic/a-scheduling-conflict-was-found-when-saving-appointment-appointment-subject-from-exchange-to-microsoft-dynamics-365-because-user-is-unavailable-at-this-time-fc18bc49-f77a-1ca3-c3c8-3b85d2776525) in their mailbox alert wall, select to ignore the specific conflict and let the appointment sync. Booking from Dynamics 365 mail app will automatically suppress the scheduling conflict. For more information, see [A scheduling conflict was found when saving appointment [appointment subject] from Exchange to Microsoft Dynamics 365](/dynamics-365/sales/scheduling-conflict-saving-appointment.md)
+- Appointment booking and conflict management: When an appointment is tracked to Dynamics 365, Server Side Synchronization will still leverage booking API to ensure the parties are available at the specified time. (e.g. if another appointment is already in the organizer's calendar in Dynamics 365 at the same time, the booking won't succeed) When the appointment booking doesn't succeed the appointment won't be synced, however the user can [address the scheduling conflict](https://support.microsoft.com/topic/a-scheduling-conflict-was-found-when-saving-appointment-appointment-subject-from-exchange-to-microsoft-dynamics-365-because-user-is-unavailable-at-this-time-fc18bc49-f77a-1ca3-c3c8-3b85d2776525) in their mailbox alert wall, select to ignore the specific conflict and let the appointment sync. Booking from Dynamics 365 mail app will automatically suppress the scheduling conflict. For more information, see [A scheduling conflict was found when saving appointment [appointment subject] from Exchange to Microsoft Dynamics 365](/dynamics-365/sales/scheduling-conflict-saving-appointment.md)
 - Appointment deletion: When deleting a tracked appointment in Exchange, during sync the appointment deletion won't propagate to Dynamics 365 if the state is completed or cancelled, or if **scheduledStart** is in the past, or if the syncing user is not the appointment organizer. This applies to **exceptionAppointments** as well. An exception appointment represents an specific instance within a recurring appointment series which has been individually modified.
 
 When deleting a recurring appointment in Exchange, during sync, the deletion won't propagate to Dynamics 365 if the state is **Completed** or **Cancelled**, or if the syncing user is not the appointment organizer.
@@ -191,12 +191,11 @@ For mor information, see [OrgDbOrgSettings documentation](OrgDbOrgSettings.md).
 
 ## Enable appointment attachment synchronization with Outlook or Exchange
 
-> [!NOTE]
->  This section applies to message synchronization done through [!INCLUDE[pn_microsoft_dynamics_crm_for_outlook](../../includes/pn-microsoft-dynamics-crm-for-outlook.md)] or server-side synchronization. [!INCLUDE[proc_more_information](../../includes/proc-more-information.md)] [Integrate your email system](/power-platform/admin/integrate-synchronize-your-email-system) 
+This section applies to message synchronization done through Microsoft Dynamics 365 for Outlook or server-side synchronization. More information: [Integrate your email system](/integrate-synchronize-your-email-system.md) 
   
- Users can attach documents, pictures, recordings, etc. to the appointments they create in the [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)] web application or [!INCLUDE[pn_crm_for_outlook_short](../../includes/pn-crm-for-outlook-short.md)]. By default, appointment attachment synchronization is disabled. To enable:  
+Users can attach documents, pictures, recordings, etc. to the appointments they create in the Customer Engagement web application or Dynamics 365 for Outlook. By default, appointment attachment synchronization is disabled. To enable:
   
-1. [!INCLUDE[proc_settings_administration](../../includes/proc-settings-administration.md)]  
+1. Go to **Settings** > **Administration**.
   
 2. Choose **System Settings**, then choose **Synchronization**.  
   
@@ -214,32 +213,29 @@ For mor information, see [OrgDbOrgSettings documentation](OrgDbOrgSettings.md).
 
 ## Address synchronization for Contacts  
   
-> [!NOTE]
->  This section applies to message synchronization done through [!INCLUDE[pn_crm_for_outlook_short](../../includes/pn-crm-for-outlook-short.md)] or server-side synchronization. [!INCLUDE[proc_more_information](../../includes/proc-more-information.md)] [Integrate your email system](/power-platform/admin/integrate-synchronize-your-email-system)
+This section applies to message synchronization done through Dynamics 365 for Outlook or server-side synchronization. More information: [Integrate your email system](integrate-synchronize-your-email-system.md)
 
  Admins have two options they can specify for how contact synchronization occurs.
 
  **Synchronize mailing address only in Outlook contact**
-
- By default, just one [!INCLUDE[pn_Outlook_short](../../includes/pn-outlook-short.md)] mailing address field is synchronized between [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)] and [!INCLUDE[pn_Outlook_short](../../includes/pn-outlook-short.md)]. This is sufficient for most organizations.
+By default, just one Outlook mailing address field is synchronized between Customer Engagement and Outlook. This is sufficient for most organizations.
 
  **Synchronize all three addresses (Business, Home, Other) in Outlook contact**
 
- Choose this option to synchronize all three Outlook mailing address fields (Business, Home, and Other fields) between [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)] and [!INCLUDE[pn_Outlook_short](../../includes/pn-outlook-short.md)].
+Choose this option to synchronize all three Outlook mailing address fields (Business, Home, and Other fields) between Customer Engagement and Outlook.
 
 > [!WARNING]
->  Enabling this option can cause data loss if you have existing data. This is due to the remapping of the attributes for existing tracked contacts. We recommend you test this option prior to deployment to understand how the re-mapping affects your environment and your data. In most cases, you should have the full data in one side (normally in [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)]) and have them sync to the other side (normally [!INCLUDE[pn_Outlook_short](../../includes/pn-outlook-short.md)] or [!INCLUDE[pn_Exchange](../../includes/pn-exchange.md)]).  
+>  Enabling this option can cause data loss if you have existing data. This is due to the remapping of the attributes for existing tracked contacts. We recommend you test this option prior to deployment to understand how the re-mapping affects your environment and your data. In most cases, you should have the full data in one side (normally in Customer Engagement) and have them sync to the other side (normally Outlook or Exchange).  
 > 
->  [!INCLUDE[proc_more_information](../../includes/proc-more-information.md)] [Which fields can be synchronized between Dynamics 365 apps and Outlook?](which-fields-synchronized.md)
+>  More information: [Which fields can be synchronized between Dynamics 365 apps and Outlook?](/dynamics365/outlook-addin/admin-guide/which-fields-synchronized.md)
   
 ## Enable synchronization for tasks that are assigned in Outlook  
   
-> [!NOTE]
->  This section applies to message synchronization done through [!INCLUDE[pn_crm_for_outlook_short](../../includes/pn-crm-for-outlook-short.md)] only. [!INCLUDE[proc_more_information](../../includes/proc-more-information.md)] [Integrate your email system](/power-platform/admin/integrate-synchronize-your-email-system)
+This section applies to message synchronization done through Dynamics 365 for Outlook only. More information: [Integrate your email system](integrate-synchronize-your-email-system.md)
 
- By default, task synchronization is disabled. User created tasks in [!INCLUDE[pn_crm_for_outlook_short](../../includes/pn-crm-for-outlook-short.md)] are not synchronized with the [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)] web application. To enable:
+By default, task synchronization is disabled. User created tasks in Dynamics 365 for Outlook are not synchronized with the Customer Engagement web application. To enable:
 
-1. [!INCLUDE[proc_settings_administration](../../includes/proc-settings-administration.md)]
+1.  Go to **Settings** > **Administration**.
 
 2. Choose **System Settings**, then choose **Synchronization**.
 
