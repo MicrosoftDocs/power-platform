@@ -88,7 +88,16 @@
           - name: Internal training events
             href: adoption/in-a-day.md
           - name: Solution envisioning workshops
-            href: adoption/solution-envisioning.md  
+            href: adoption/solution-envisioning.md 
+    - name: support
+      href: adoption/support-strategy.md
+      items:
+      - name: Ongoing production solution support
+        href: adoption/support-strategy-solutions.md
+      - name: Maker education and development support
+        href: adoption/support-strategy-makers.md
+      - name: Maturity of your support strategy
+        href: adoption/support-strategy-maturity.md
   - name: Center of Excellence (CoE) Kit
     href: coe/starter-kit.md
     items: 
