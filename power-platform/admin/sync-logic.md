@@ -57,9 +57,9 @@ Even if your mailbox is configured for server-side sync, when you create an appo
 
 -   The **Tracked to Dynamics 365** category has been applied from Outlook on the Web, Outlook desktop, or email clients.
 
-When these requirments are met, the item will be selected by server-side sync for processing and server-side sync will attempt to create the item in Dynamics and establish the link.
+When these requirments are met, the item is selected by server-side sync for processing and server-side sync will attempt to create the item in Dynamics and establish a link.
 
-Once the link is established, bidirectional sync will be performed from now on. Changes on any of the two systems will be propagated.
+Once a link is established, a bidirectional sync is always performed. Changes on any of the two systems will be propagated.
 
 For more information about Outlook tracking and category tracking, see:
 
