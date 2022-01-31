@@ -124,7 +124,41 @@ You can invite other users to access your environment. The [!INCLUDE[pn_Office_3
   
 ## Notify your invited users  
  To complete the user invitation, notify your invited users and provide them with the URL for the environment they are invited to (for example, https://contoso.crm.dynamics.com).  
-  
+ 
+ ## Power Apps Maker B2B user support (preview)
+[Power Apps allows B2B users to run apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/share-app-guests) and it is introducing the ability for B2B users to make and edit apps as well. This section outlines what is currently supported for B2B users to create and edit Power Apps. 
+ 
+ ### Glossary 
+ |     #     |     Term                  |     Definition                                                                                                                                                                                                                      |
+|-----------|---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|     1     |     Home   tenant         |     The   Azure AD tenant a user identity is ‘mastered’, and where a user ultimately   authenticates their identity.                                                                                                                |
+|     2     |     Resource   tenant     |     The   Azure AD tenant where a user is accessing a resource. When a user is invited   as a guest (via Azure B2B) and is accessing resources, such as apps, in   another tenant (the non-home tenant is the resource tenant).     |
+
+### Scenarios
+
+|     #    |     Scenario                                                                                                       |     Availability                       |
+|----------|--------------------------------------------------------------------------------------------------------------------|----------------------------------------|
+|     1    |     B2B user   creates or edits SharePoint custom form in a resource tenant                                        |     Preview                            |
+|     2    |     B2B user signs   in to https://make.powerapps.com to create   and edit standalone apps in a resource tenant    |     Not available   in preview yet     |
+
+### Prerequisites
+
+1.	[Audit which users have the ‘Environment Maker’ security role](https://docs.microsoft.com/power-platform/admin/database-security), particularly in the default environment, and remove B2B users that aren’t expected to have Maker privileges.
+2.	Update the Power Apps tenant level setting which enables guests to make Power Apps. This requires using PowerShell.
+
+```PowerShell
+$requestBody = Get-TenantSettings 
+$requestBody.powerPlatform.powerApps.enableGuestsToMake = $True 
+Set-TenantSettings $requestBody 
+```
+3.	Assign the ‘Environment Maker’ security role to B2B users expected to make SharePoint custom forms. 
+
+### Steps
+1. In the resource tenant, a B2B user can initiate [creating a SharePoint custom form by clicking ‘customize forms’ in SharePoint](https://docs.microsoft.com/powerapps/maker/canvas-apps/customize-list-form#open-the-form).
+
+### Known limitations
+1. B2B users can create a SharePoint custom form in a resource tenant, however, B2B users aren’t able to edit a SharePoint custom form. 
+
 ### See also  
  [Azure AD B2B Collaboration is Generally Available!](https://blogs.technet.microsoft.com/enterprisemobility/2017/04/12/azure-ad-b2b-collaboration-is-generally-available/)   
  [Azure Active Directory B2B collaboration code and PowerShell samples](/azure/active-directory/b2b/code-samples)   
