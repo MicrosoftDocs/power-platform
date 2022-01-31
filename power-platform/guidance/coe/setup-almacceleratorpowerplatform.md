@@ -336,6 +336,8 @@ The sample pipelines provide flexibility for organizations to store their pipeli
 Solution pipelines are used to build and deploy your source-controlled solutions to environments in your tenant. You can create as many solution pipelines as needed based on your organization's environment strategy. The sample pipelines provided assume only three environments: validation, test, production. However, more or less can be created as needed with specific triggers in the pipelines or without triggers that can be run manually as well. The sample deployment pipelines trigger off of changes to a branch (that is, test and production) or as a part of a branch policy in DevOps (that is, validation). For more information about branch policies, go to [Setting branch policies for pull request validation](#setting-branch-policies-for-pull-request-validation).
 
 The following steps show how to create a pipeline from the sample pipeline YAML. Follow these steps to create all of your deployment pipelines. For reference, your pipelines will follow this configuration.
+> [!IMPORTANT]
+> The pipeline name below must be named exactly as shown below. You'll replace 'MyNewSolution' with the name of your solution.
 
 | Pipeline YAML File Name                   | Pipeline Name                   | Branch Policy Enabled | Required              |
 | ----------------------------------------- | ------------------------------- | --------------------- | --------------------- |
@@ -404,6 +406,9 @@ The following steps show how to create a pipeline from the sample pipeline YAML.
 ### Create the solution deployment pipeline (optional)
 
 As mentioned in the note above, the previous section allows you to create pipelines that build and deploy for each environment, such as validation, test, and production. However, if you want to only build and deploy for validation and test, and then deploy the artifacts from the test build to production, you can follow these instructions to create your production deployment pipeline after you've created your build and deploy pipeline for validation and test. For reference, your pipeline will be configured as follows.
+
+> [!IMPORTANT]
+> The pipeline name below must be named exactly as shown below. You'll replace 'MyNewSolution' with the name of your solution.
 
 | Pipeline YAML File Name       | Pipeline Name             | Branch Policy Enabled |
 | ----------------------------- | ------------------------- | --------------------- |

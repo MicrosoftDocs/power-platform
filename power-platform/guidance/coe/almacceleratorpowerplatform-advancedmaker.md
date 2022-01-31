@@ -46,7 +46,7 @@ Watch how to use the ALM Accelerator for Power Platform solution.
 
 1. Once the environment is selected, the main screen displays a list of all the unmanaged solutions in the environment. Depending on the *user deployment settings* your user has assigned, you'll be able to see the following options for each solution:
 
-   - **Commit Solution**: Commits all the changes you have done within the solution in your version control system.
+   - **Commit Solution**: Commits all the changes you have done within the solution in your version control system. Additionally, the commit will create your deployment pipelines in Azure DevOps as part of the commit process.
    - **Deploy Solution**: Allows you to move the changes across environment.
    - **Choose a Profile**: Allows you to configure what organization, project, repository, target branch, and environments your solution can be deployed to.
    - **Delete Solution**: Deletes the solution allowing you to reimport if necessary from source control again with the latest changes.
