@@ -1,6 +1,6 @@
 ﻿---
-title: "Connectors off by default | MicrosoftDocs"
-description: Describes how the connectors are off by default for GCC High and DoD.
+title: "Disable new connectors by default | MicrosoftDocs"
+description: Describes how new connectors are now disabled by default in GCC High and DoD.
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
