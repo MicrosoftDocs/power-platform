@@ -36,7 +36,6 @@ To set up your Power Virtual Agents bot as a skill:
 
 ## Prerequisites
 
--  A Composer bot with the [Orchestrator package](/composer/how-to-create-orchestrator-bot#add-orchestrator-in-package-manager). The bot must use the Orchestrator recognizer in the dialog that invokes the PVA skill. Note that the other recognizers (default, regular expression, and custom) won't work for this process.
 - [Understand how Bot Framework skills work](/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0&preserve-view=true) 
 - [Learn how to use Bot Framework Composer](/composer/introduction)
 - [Learn how to use skills in Bot Framework Composer](/composer/concept-skills)
