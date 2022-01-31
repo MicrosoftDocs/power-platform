@@ -30,9 +30,9 @@ Additionally, from a Bot Framework bot, you can invoke a PVA bot's topic with in
 To set up your PVA bot as a skill:
 
 1. [Add the Bot Framework bot to the allowlist for the PVA bot](#add-your-bot-framework-bot-to-the-allowlist-for-your-power-virtual-agents-bot).
-2. [Download the skill manifest for the PVA bot](#download-the-bot-skill-manifest-for-your-power-virtual-agents-bot).
-3. [Use the downloaded skill manifest in Bot Framework Composer to create a connection between the bots](#connect-to-a-power-virtual-agents-skill-in-composer).
-3. [Test the bot works as a skill by using the Bot Framework Emulator](#test-your-power-virtual-agents-bot-as-a-skill-with-a-bot-framework-bot).
+1. [Download the skill manifest for the PVA bot](#download-the-bot-skill-manifest-for-your-power-virtual-agents-bot).
+1. [Use the downloaded skill manifest in Bot Framework Composer to create a connection between the bots](#connect-to-a-power-virtual-agents-skill-in-composer).
+1. [Test the bot works as a skill by using the Bot Framework Emulator](#test-your-power-virtual-agents-bot-as-a-skill-with-a-bot-framework-bot).
 
 ## Prerequisites
 
@@ -51,7 +51,7 @@ The Bot Framework and PVA bots must be deployed in the same tenant.
 
 1. In PVA, expand the **Manage** section on the side navigation pane for the bot you want to use as a skill, and go to the **Skills** tab.
 
-2. Select **Manage allowlist** on the top menu bar.
+1. Select **Manage allowlist** on the top menu bar.
 
     :::image type="content" source="media/PVA-as-a-skill/Skill_ManageAllowlistMenu.png" alt-text="Screenshot highlighting the Manage, Skills, and Manage allowlist elements in the web portal.":::
 
@@ -60,12 +60,12 @@ The Bot Framework and PVA bots must be deployed in the same tenant.
     >
     >:::image type="content" source="media/PVA-as-a-skill/Skill_ManageAllowlistSecurity.png" alt-text="Screenshot of the allowlist tile on the Security or Authentication page.":::
 
-3. Select **+ Add allowed caller** on the **Manage allowlist for \<bot name\>** panel.
+1. Select **+ Add allowed caller** on the **Manage allowlist for \<bot name\>** panel.
 
     :::image type="content" source="media/PVA-as-a-skill/Skill_AddAllowedCallers.png" alt-text="Highlight of the Add allowed called button at the top of the Manage allowlist flyout panel.":::
 
 
-4. Enter your Bot Frameworks bot's [app ID](/azure/bot-service/bot-service-manage-overview#get-azure-bot-resource-app-id) and select **Next**.
+1. Enter your Bot Frameworks bot's [app ID](/azure/bot-service/bot-service-manage-overview#get-azure-bot-resource-app-id) and select **Next**.
 
     :::image type="content" source="media/PVA-as-a-skill/Skill_AddBotAppID.png" alt-text="Screenshot of the Add allowed caller dialog window.":::
 
@@ -84,11 +84,11 @@ The Bot Framework and PVA bots must be deployed in the same tenant.
 
     PVA will validate the Bot Framework bot's app ID and confirm that it belongs to a bot deployed in the same tenant. 
 
-5. You can optionally add a **Display name** for the bot you've added.
+1. You can optionally add a **Display name** for the bot you've added.
 
     :::image type="content" source="media/PVA-as-a-skill/Skill_AllowedCallerDisplayName.png" alt-text="Add a display name for the bot on the allowlist.":::
 
-6. Select **Save** to add your bot to the allowlist.
+1. Select **Save** to add your bot to the allowlist.
 
 
 The Bot Framework bot will be displayed by the **Display name** (if you entered one) or by its **App ID**. You can **Delete** or **Edit** it at any time from the **Manage allowlist for \<bot name\>** panel.
@@ -150,7 +150,7 @@ You can use PVA bot skill manifests to create a skill connection in your Bot Fra
 
     :::image type="content" source="media/PVA-as-a-skill/Composer_ConnectToSkill.png" alt-text="Composer - connect Bot Framework bot to a skill.":::
 
-2. On the **Add a skill** screen, select a PVA manifest .zip archive and then **Next**.
+1. On the **Add a skill** screen, select a PVA manifest .zip archive and then **Next**.
 
     :::image type="content" source="media/PVA-as-a-skill/Composer_AddSkillZip.png" alt-text="Composer - select a Power Virtual Agents skill zip archive.":::
 
@@ -162,11 +162,11 @@ You can use PVA bot skill manifests to create a skill connection in your Bot Fra
 
     :::image type="content" source="media/PVA-as-a-skill/Composer_EditTriggerPhrases.png" alt-text="Composer - edit trigger phrases.":::
 
-5. Make sure the **Orchestrator** option is checked and select **Continue**.
+1. Make sure the **Orchestrator** option is checked and select **Continue**.
 
     :::image type="content" source="media/PVA-as-a-skill/Composer_Orchestrator.png" alt-text="Composer - enable Orchestrator.":::
 
-6. Verify that the PVA skill is added to your Bot Framework bot correctly and a new trigger with your PVA bot's name is added to the project in Composer.
+1. Verify that the PVA skill is added to your Bot Framework bot correctly and a new trigger with your PVA bot's name is added to the project in Composer.
 
     :::image type="content" source="media/PVA-as-a-skill/Composer_PVASkillAdded.png" alt-text="Composer - Power Virtual Agents skill added.":::
 
