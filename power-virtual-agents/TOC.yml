@@ -54,6 +54,8 @@
          href: authoring-test-bot.md
        - name: Supported languages
          href: authoring-language-support.md
+       - name: Troubleshoot error codes
+         href: error-codes.md
     - name: Enhance and improve
       items:
        - name: Key concepts - Enhanced authoring
@@ -202,6 +204,8 @@
          href: teams/authoring-test-bot-teams.md
        - name: Supported languages
          href: teams/authoring-language-support-teams.md
+       - name: Troubleshoot error codes
+         href: teams/error-codes-teams.md
     - name: Enhance and improve
       items:
        - name: Key concepts - Enhanced authoring
