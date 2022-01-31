@@ -4,7 +4,7 @@ description: Describes how the connectors are off by default for GCC High and Do
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/11/2021
+ms.date: 01/31/2022
 ms.subservice: admin
 author: mikferland-msft
 ms.author: miferlan
