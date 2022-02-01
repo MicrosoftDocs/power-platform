@@ -38,6 +38,11 @@ highlightedContent:
       url: https://www.youtube.com/channel/UCn8PsBlVsGUt8J3tZCKsMPA
 
     # Card
+    - title: "Try Power Virtual Agents for free"
+      itemType: get-started
+      url: https://powervirtualagents.microsoft.com/
+
+    # Card
     - title: Power Virtual Agents training on Microsoft Learn
       itemType: learn
       url: /learn/browse/?expanded=power-platform&products=power-virtual-agents
