@@ -2,19 +2,18 @@
 title: "Work with chatbot variables - Preview"
 description: "Use variables to use custom and prebuilt entities to allow for customized conversations in your bot."
 keywords: "PVA"
-ms.date: 11/02/2021
+ms.date: 02/01/2022
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt
+ms.reviewer: climori
 manager: shellyha
 ms.custom: authoring, ceX
 ms.collection: virtual-agent
 ---
 
-# Use variables (Preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+# Use variables
 
 Select the version of Power Virtual Agents you're using here:
 
