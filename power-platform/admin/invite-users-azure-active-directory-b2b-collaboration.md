@@ -133,7 +133,7 @@ You can invite other users to access your environment. The [!INCLUDE[pn_Office_3
 
 > [!IMPORTANT]
 > - This is a preview feature.
-> - [!INCLUDE[cc_preview_features_definition](../../includes/cc-preview-features-definition.md)] 
+> - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)] 
 
 B2B guest users can [run Power Apps](powerapps/maker/canvas-apps/share-app-guests). With this preview feature, B2B guests can now create [custom SharePoint forms using Power Apps](/powerapps/maker/canvas-apps/customize-list-form).
 
