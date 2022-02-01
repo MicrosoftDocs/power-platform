@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/27/2021
+ms.date: 02/01/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -33,7 +33,7 @@ You can identify a Dataverse for Teams environment in the [Power Platform admin 
 
 Note the following regarding access to Microsoft Power Platform apps in Teams:
 
-- Dataverse for Teams will be available as part of select Microsoft 365 subscriptions with Microsoft Power Platform and Microsoft Teams capabilities, excluding plans for some US government environments (GCC High and DoD) and EDU A1 and SUB SKUs. 
+- Dataverse for Teams will be available as part of select Microsoft 365 subscriptions with Microsoft Power Platform and Microsoft Teams capabilities, excluding plans for EDU A1 and SUB SKUs. 
 
 - Apps created in Microsoft Teams that use Dataverse for Teams will be accessible outside of Microsoft Teams in a web browser if you have a trial or standalone Power Apps license. However, note the following:
   - Apps created in Teams are not displayed in the list of apps in make.powerapps.com or Power Apps mobile app. The only way to run these apps is to launch them in a web browser from Teams using **Go to website** or **Open in browser** in the Power Apps mobile app.
@@ -44,8 +44,6 @@ Note the following regarding access to Microsoft Power Platform apps in Teams:
 - Teams can invite guests who can access the apps, bots, flows, and data in the Dataverse for Teams database within their team. However, they won't be allowed to install, make, or edit apps. They can only discover and run apps in their team.
 
 - No direct API access to Dataverse for Teams will be provided, and only apps, bots, and flows embedded within the Microsoft Teams client will be able to access the Dataverse for Teams runtime.
-
-- Dataverse for Teams is not available in GCC High.
 
 More information: [Dataverse for Teams licensing FAQ](powerapps-flow-licensing-faq.md#dataverse-for-teams)
 
