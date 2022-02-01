@@ -21,7 +21,9 @@ search.app:
 
 When customer engagement apps track an email, it associates the email address to a row within customer engagement apps. The contents of the email **From** field can only be associated with one row. If there are duplicate rows within customer engagement apps with the same email address, the contents of the email **From** field will resolve to the first active row in the following order:
 
-1. SystemUser (*This will be first unless the tracking user is also the owner of the duplicated row, such as Contact, Account and others listed below. If the tracking user does NOT own the duplicated row, such as Contact, the sender email will resolve to the SystemUser*).
+NOTE: An exception to this order is if the owner of the mailbox or queue tracking the email is the owner of the duplicated row. A row they own takes precedence over any rows they do not own. For example: If the email address exists in a Contact and Account and the mailbox owner also owns the Account but not the Contact, the From field would resolve to the Account.
+
+1. SystemUser
 2. Contact
 3. Account
 4. Lead
