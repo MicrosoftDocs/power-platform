@@ -140,7 +140,7 @@ B2B guest users can [run Power Apps](/powerapps/maker/canvas-apps/share-app-gues
 Follow these steps to allow B2B guest users to create custom SharePoint list forms using Power Apps.
 
 > [!NOTE]
-> Ensure you change the following tenant setting on the **Home tenant** of the user (where the user's account resides and authenticates). And not on the **Resource tenant** where the SharePoint list exists (where the user is expected to create custom SharePoint list form using Power Apps as a guest).
+> Ensure you change the following tenant setting on the **Resource tenant** where the SharePoint list exists (where the user is expected to create custom SharePoint list form using Power Apps as a guest). And not on the **Home tenant** of the user (where the user's account resides and authenticates against).
 
 1. Use the following PowerShell cmdlet to configure the tenant level setting to enable guests to create Power Apps.
 
@@ -155,7 +155,7 @@ Follow these steps to allow B2B guest users to create custom SharePoint list for
     > [!TIP]
     > In addition, you can also review all other members of this security role (especially in the default environment), and remove users that aren't expected to have this privilege.
 
-After the B2B users are given the required access to the SharePoint list on the resource tenant as a guest, they can now [create](/powerapps/maker/canvas-apps/customize-list-form#open-the-form) custom SharePoint list forms using Power Apps.
+After the B2B users are given the required edit the SharePoint list on the resource tenant as a guest, they can now [create](/powerapps/maker/canvas-apps/customize-list-form#open-the-form) custom SharePoint list forms using Power Apps.
 
 ### See also  
  [Azure AD B2B Collaboration is Generally Available!](https://blogs.technet.microsoft.com/enterprisemobility/2017/04/12/azure-ad-b2b-collaboration-is-generally-available/)   
