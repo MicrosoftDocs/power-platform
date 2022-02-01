@@ -8,7 +8,7 @@ ms.topic: how-to
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: eaglez
 ms.custom: "advanced-authoring, ceX"
 ms.collection: virtual-agent
 ---
