@@ -190,7 +190,7 @@ The name is the value of the associated event's name property.
    
 1. Locate the respective property of the topic you're looking for.
    
-1. The topic property will contain the nested property **name**. When the PVA skill receives an event with this name, it triggers the topic.
+1. The topic property will contain the property **name**. When the PVA skill receives an event with this name, it triggers the topic.
    
    In the following example, the event activity name is `dispatchTo_new_topic_87609dabd86049f7bc6507c6f7263aba_33d`.
 
@@ -243,7 +243,10 @@ If you have a PVA topic that can receive an input variable listed in your skill 
 
 1. [Locate the event activity's name for your PVA bot topic](#locate-the-topic-in-the-skill-manifest) you want to call. Copy the value (without quotes) and save it to use in the next steps.
     
-1. If a PVA topic has inputs, there will a **value** property nested within the topic property. The **value** property will contain a **$ref** property. Take note of its value as you will use it in the next step.
+1. The topic property will contain the property **value**. The **value** property will contain a **$ref** property. Take note of its value as you will use it in the next step.
+
+    > [!WARNING]
+    > If a PVA topic doesn't have inputs, it won't contain a **value** property.
 
     :::image type="content" source="media/PVA-as-a-skill/Lesson2_InputsValueSection.png" alt-text="Locate the values property for a Power Virtual Agents topic in skill manifest.":::
     
@@ -286,8 +289,11 @@ It is possible to receive outputs from a PVA skill topic in Composer. You can re
     :::image type="content" source="media/PVA-as-a-skill/SelectSkillManifest.png" alt-text="Show skill manifest":::
 
 1. [Locate the event activity's name for your PVA bot topic](#locate-the-topic-in-the-skill-manifest) you want to call. Copy the value (without quotes) and save it to use in the next steps.
-    
-1. If a PVA topic has outputs, there will be a **resultValue** property nested within the topic property. Take note of the **$ref** in the **resultValue** property; you will use it to locate the in the next step.
+
+1. The topic property will contain the property **resultValue**. The **resultValue** property will contain a **$ref** property. Take note of its value as you will use it in the next step.
+
+    > [!WARNING]
+    > If a PVA topic doesn't have outputs, it won't contain a **resultValue** property.
 
     :::image type="content" source="media/PVA-as-a-skill/Lesson3_OutputsResultValueSection.png" alt-text="Locate the result value property for a Power Virtual Agents topic in skill manifest.":::
     
