@@ -164,7 +164,7 @@ Train and recreate the dispatcher app and add your exported topics and utterance
 
 ## Register and trigger your new dispatch endpoint in code
 
-The following steps require you to add code that registers your new dispatch endpoint and trigger it whenever a user's utterance matches intent. We are using the [sample provided by the Microsoft Bot Framework](https://github.com/Microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/14.nlp-with-dispatch).
+The following steps require you to add code that registers your new dispatch endpoint and trigger it whenever a user's utterance matches intent. We are using the [sample provided by the Microsoft Bot Framework](https://github.com/microsoft/BotBuilder-Samples/tree/main/Migration/Dispatch/csharp/14.nlp-with-dispatch).
 
 1.  Update `appsettings.json` in your dispatcher app to include the new endpoint for your Power Virtual Agents bot.
   
