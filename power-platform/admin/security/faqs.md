@@ -122,6 +122,10 @@ The below are some of the common security questions that customers have raised i
   - Power Platform has analyzed and assessed that there are no Log4j vulnerabilities that impact the platform.
   - Customers looking for general guidance on preventing, detecting, and hunting for exploitation of the Log4j vulnerabilities should review Microsoft's [blog post](https://www.microsoft.com/security/blog/2021/12/11/guidance-for-preventing-detecting-and-hunting-for-cve-2021-44228-log4j-2-exploitation/) on this. 
 
+  ### How can we ensure there are no unauthorized transactions due to browser extensions or Unified Interface Client APIs allowing disabled controls to be enabled?
+  - The concept of disabled controls are not part of the security model of Power Apps. Disabled controls should not be relied on to provide security. The ability to disable controls is a UI enhancement.
+  - Use Dataverse security controls like Field-level security instead to prevent unauthorized transaction.
+
 ### See also
 
 [Overview: Security in Microsoft Power Platform](overview.md)
