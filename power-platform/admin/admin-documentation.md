@@ -20,9 +20,6 @@ search.app:
 
 The [Power Platform admin center](https://admin.powerplatform.microsoft.com) provides a unified portal for administrators to manage environments and settings for Power Apps, Power Automate, and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation).
 
-> [!div class="mx-imgBorder"] 
-> ![Power Platform admin center.](media/power-platform-admin-center.png "Power Platform admin center")
-
 ## Power Platform admin center capabilities
 
 Currently, the admin center provides the following capabilities.
@@ -46,9 +43,6 @@ To personalize your dashboard, select **+ Add cards** on top of the homepage and
 :::image type="content" source="media/home-page.png" alt-text="Power Platform admin center Home page":::
 
 The following are the cards you can add to the dashboard.
-
-> [!NOTE]
-> Cards typically don't include data from the last 24 to 48 hours.
 
 ### Service health
 
