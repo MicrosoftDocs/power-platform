@@ -1,7 +1,7 @@
 ---
 title: "Power Platform security FAQs | MicrosoftDocs"
 description: Provides common security questions and answers for Power Platform security.
-ms.date: 01/25/2022
+ms.date: 02/02/2022
 ms.service: power-platform
 ms.topic: ""
 ms.custom: 
@@ -124,7 +124,7 @@ The below are some of the common security questions that customers have raised i
 
   ### How can we ensure there are no unauthorized transactions due to browser extensions or Unified Interface Client APIs allowing disabled controls to be enabled?
   - The concept of disabled controls are not part of the security model of Power Apps. Disabled controls should not be relied on to provide security. The ability to disable controls is a UI enhancement.
-  - Use Dataverse security controls like Field-level security instead to prevent unauthorized transaction.
+  - Use Dataverse security controls like field-level security instead to prevent unauthorized transaction.
 
 ### See also
 
