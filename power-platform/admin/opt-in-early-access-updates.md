@@ -84,7 +84,7 @@ Some apps require additional steps to enable early access features. If you have 
 
 |Early access apps  |Description of manual steps  |
 |---------|---------|
-|Dynamics 365 Project Service Automation and Project Operations    | As part of April Wave 1 2022, Project Operations and Project Service Automation will be releasing an update to alter the Modern Approvals feature to be enabled. For more information, see [Upgrade considerations for Modern Approvals](/dynamics365/project-operations/upgrade/upgrade-considerations-modern-approvals).  |
+|Dynamics 365 Project Service Automation and Project Operations    | As part of April Wave 1 2022, Project Operations and Project Service Automation will be releasing an update to enable the Modern Approvals feature. For more information, see [Upgrade considerations for Modern Approvals](/dynamics365/project-operations/upgrade/upgrade-considerations-modern-approvals).  |
 | Dynamics 365 Resource Scheduling Optimization | If you have Dynamics 365 Resource Scheduling Optimization, you will need to update or deploy Resource Scheduling Optimization in the Power Platform admin center. For instructions, see [Manage Dynamics 365 apps](manage-apps.md), [Update RSO](/dynamics365/field-service/upgrade-field-service#resource-scheduling-optimization), and [Deploy RSO](/dynamics365/field-service/rso-deployment). |
 |Microsoft Cloud for Healthcare | If you have Microsoft Cloud for Healthcare solutions powered by Dynamics 365, you will need to update or deploy from the [Microsoft Cloud Solution Center](https://solutions.microsoft.com/Microsoft%20Cloud%20for%20Healthcare#). For detailed instructions, see [Deploy Microsoft Cloud for Healthcare](/dynamics365/industry/healthcare/deploy). | 
 
