@@ -21,7 +21,7 @@ When you add a Power Virtual Agents bot as a skill, the Bot Framework bot will d
 
 If there is a match, [the Bot Framework bot will pass everything the bot user has said to the Power Virtual Agents bot](#call-a-power-virtual-agents-skill-topic). The Power Virtual Agents bot will extract any [entities](advanced-entities-slot-filling.md) and trigger the matching topic.
 
-Additionally, from a Bot Framework bot, you can invoke a Power Virtual Agents bot's topic with inputs and utilize the outputs it returns.
+You can also [pass a variable to a Power Virtual Agents skill topic as an input from Bot Framework Composer](#pass-an-input-variable-to-a-power-virtual-agents-skill-topic) and [utilize the outputs it returns](#receive-an-output-variable-from-a-power-virtual-agents-skill-topic).
 
 > [!IMPORTANT]
 > The use of Power Virtual Agents bots as skills is not available with the [Teams Power Virtual Agents license](requirements-licensing-subscriptions.md).  
