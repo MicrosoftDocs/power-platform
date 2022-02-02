@@ -198,7 +198,7 @@ The name is the value of the associated event's name property.
 
 
 ### Call a Power Virtual Agents skill topic
-You can directly call any Power Virtual Agents skill topic from a Bot Framework bot instead of relying on a user utterance to trigger it. Only the Power Virtual Agents topics that are listed in skill manifest can be directly invoked from your Bot Framework bot.
+You can directly call any Power Virtual Agents skill topic from a Bot Framework bot, instead of relying on what a user says to trigger it. Only the Power Virtual Agents topics that are listed in the skill manifest can be called directly from your Bot Framework bot.
 
 
 1. In the Composer authoring canvas, select **+ Add**. Select **Access external resources**, then **Connect to a skill**.
