@@ -299,7 +299,7 @@ It is possible to receive outputs from a Power Virtual Agents skill topic in Com
     
 1. Locate the **definitions** property, then look for a nested property that matches the **$ref** value you found in the previous step. Take note of the the Power Virtual Agents topic's output variables names and types; you will use them in the next steps. 
    
-   In the following example, the Power Virtual Agents topic returns 2 outputs of type String, **pva_State** and **pva_Item**.
+   In the following example, the Power Virtual Agents topic returns two outputs of type String, **pva_State** and **pva_Item**.
 
     :::image type="content" source="media/advanced-use-pva-as-a-skill/Lesson3_DefinitionsOutputsSection.png" alt-text="Locate the output variables for a Power Virtual Agents topic within the definitions property.":::
 
