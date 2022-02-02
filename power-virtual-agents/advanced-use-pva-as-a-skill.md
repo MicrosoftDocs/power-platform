@@ -332,7 +332,7 @@ It is possible to receive outputs from a Power Virtual Agents skill topic in Com
    
     In the following example, the output values from **dialog.skillResult.pvaState** and **dialog.skillResult.pvaItem** are extracted into new Composer variables **dialog.State** and **dialog.Item**.
 
-    :::image type="content" source="media/advanced-use-pva-as-a-skill/Lesson3_ExtractTopicOutputs.png" alt-text="Save the output values into dialog.State and dialog.Item in Composer Set properties window.":::
+    :::image type="content" source="media/advanced-use-pva-as-a-skill/Lesson3_ExtractTopicOutputs.png" alt-text="Save the output values into dialog.State and dialog.Item in the Composer Set properties window.":::
   
 ## Test your Power Virtual Agents bot as a skill with a Bot Framework bot
 
