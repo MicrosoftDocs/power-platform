@@ -32,8 +32,8 @@ As you define your support process, it’s important to both review how makers a
 
 The following articles can help you understand how to get started with establishing a support strategy:
 
-- [Ongoing production solution support](support-strategy-solutions.md)
-- [Maker education and development support](support-strategy-makers.md)
-- [Maturity levels to assess the current maturity of your support strategy](support-strategy-maturity.md)
+- [End-user support](support-strategy-solutions.md)
+- [Maker support](support-strategy-makers.md)
+- [Maturity levels](support-strategy-maturity.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
