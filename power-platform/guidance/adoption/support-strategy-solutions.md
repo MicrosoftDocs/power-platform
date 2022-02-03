@@ -1,6 +1,6 @@
 ---
 title: "End-user support strategy - Microsoft Power Platform | MicrosoftDocs"
-description: "Guidance on establishing a support and graduation framework, decision matrix and user support process for ongoing solution support of Microsoft Power Platform solutions."
+description: "Guidance on establishing a support and graduation framework, decision matrix and user support process for Microsoft Power Platform solutions."
 author: manuelap-msft
 manager: devkeydet
 ms.service: power-platform
@@ -19,7 +19,7 @@ search.app:
 ---
 # End-user support: Ongoing production solution support
 
-The following section covers formal and informal ways of supporting end-users using solutions that have been built with Microsoft Power Platform, such as apps, flows and chatbots.
+The following section covers formal and informal ways of supporting end-users using Microsoft Power Platform solutions, such as apps, flows and chatbots.
 
 This diagram shows a common support and graduation framework that organizations employ successfully:
 
@@ -29,23 +29,23 @@ The six types of support shown in the above diagram include:
 
 | **Type** | **Description** |
 | --- | --- |
-| ![Type 1.](media/support-1.png "Type 1") | **Maker support (internal)** occurs when a maker supports their own solution. End users of the solution know to reach out to the maker for support, and there is often no visibility to IT or the team on the level or type of support the maker provides. |
-| ![Type 2.](media/support-2.png "Type 2") | **Team-assisted support (internal)** occurs when team members learn from each other as they develop Power Platform solutions. Team members become co-owners of their team's apps, flows and chatbots, and are able to support end user queries and can make small bug fixes and changes. Whilst this sometimes happens informally, it’s a good idea to formalize this process as your adoption and growth matures.  |
-| ![Type 3.](media/support-3.png  "Type 3") | **Help desk support (internal)** handles formal support issues and requests. They may help with non-solution related questions, such as how to access an app on a mobile device or how to request access to a backend datasource. They will redirect solution related questions to the channel supporting the solution. |
-| ![Type 4.](media/support-4.png  "Type 4") | **Dedicated Power Platform support (internal)** involves handling complex issues escalated by the help desk. Critical applications are handed over to this team, and they are able to deploy bug fixes.  |
+| ![Type 1.](media/support-1.png "Type 1") | **Maker support (internal)** occurs when a maker supports their own solution. End users of the solution know to reach out to the maker for support, and there's often no visibility to IT or the team on the level or type of support the maker provides. |
+| ![Type 2.](media/support-2.png "Type 2") | **Team-assisted support (internal)** occurs when team members learn from each other as they develop Power Platform solutions. Team members become co-owners of their team's apps, flows and chatbots. Co-owners are able to support end user queries and can make small bug fixes and changes. Whilst team-assisted support sometimes happens informally, it’s a good idea to formalize this process as your adoption and growth matures.  |
+| ![Type 3.](media/support-3.png  "Type 3") | **Help desk support (internal)** handles formal support issues and requests. The help desk may help with questions such as how to access an app on a mobile device or how to request access to a backend datasource. They'll redirect solution related questions to the channel supporting the solution. |
+| ![Type 4.](media/support-4.png  "Type 4") | **Dedicated Power Platform support (internal)** involves handling complex issues escalated by the help desk. Critical applications are handed over to this team, and they're able to deploy bug fixes.  |
 | ![Type 5.](media/support-5.png "Type 5") | **Partner support (external)** can complement your internal support offering, and either support critical applications or work with specific departments on supporting their apps. Learn more: [Get expert help from Power Apps partners](https://powerapps.microsoft.com/partners/). |
 | ![Type 6.](media/support-6.png  "Type 6") | **Microsoft support (external)** can be used to raise platform-related technical issues. Based on your support plan, different technical support and advisory services are available to you. Learn more: [Support for Microsoft Power Platform](/power-platform/admin/support-overview) |
 
 Depending on the size of your organization and existing delivery approaches for low code and pro code technologies, you might choose different ways of formalizing your support.
-If your Power Platform adoption approach is largely [decentralized](delivery-models.md#decentralized), you will have autonomous teams across the organization delivering and governing Power Platform solutions. With this model, support may also be delegated, and team-assisted support may be the most relevant service for end users and makers.
+If your Power Platform adoption approach is largely [decentralized](delivery-models.md#decentralized), you'll have autonomous teams across the organization delivering and governing Power Platform solutions. With this model, support may also be delegated, and team-assisted support may be the most relevant service for end users and makers.
 
-If your Power Platform adoption approach is largely [centralized](delivery-models.md#centralized), you will have central teams of product owners who own the low-code delivery of departmental solutions from around the organization's business units. With this model, support will also be centralized and a central support team answers queries and questions.
+If your Power Platform adoption approach is largely [centralized](delivery-models.md#centralized), you'll have central teams of product owners who own the low-code delivery of departmental solutions from around the organization's business units. With this model, support will also be centralized and a central support team answers queries and questions.
 
 In most organizations, a mix of delivery models is best – even if decentralized teams support solutions for their makers, a help desk and central support team may still be required for technical issues, end user queries and first-tier support.
 
 ## Define tiers of applications
 
-As you define your support process and escalation path, it is important to categorize solutions built based on criticality – this will allow you to come up with processes that ensure that critical applications have the necessary guardrails around them to support them whilst at the same time not stifling innovation of productivity scenarios.
+As you define your support process and escalation path, it's important to categorize solutions built based on criticality – this will allow you to come up with processes that ensure that critical applications have the necessary guardrails around them to support them whilst at the same time not stifling innovation of productivity scenarios.
 
 | **Characteristics and Processes** | **Productivity** | **Important** | **Critical** |
 | --- | --- |--- |--- |
@@ -71,7 +71,7 @@ Maker support refers to when the maker supports their own apps and flows built f
 >[!IMPORTANT]
 >As part of onboarding new makers, make sure makers are aware of support, graduation and escalation paths – makers who are overwhelmed with the support of their business-important solutions will no longer be able to innovate and create new solutions. Clearly define how makers can graduate their solutions to the next level of support, and what that looks like.
 
-Additional to this proactive way of communicating processes to makers, also make sure you have reactive governance in place to identify highly shared and highly used solutions that may be important to your business and reach out to makers to make sure those solutions have the necessary support guardrails around them. Use [tenant-level analytics](/admin/tenant-level-analytics) to find out more about your applications usage, [export your telemetry to your own data storage account](/admin/self-service-analytics) to build your own enhanced reporting or use the [CoE Starter Kit](https://aka.ms/coestarterkit) as a starting point.
+Next to this proactive way of communicating processes to makers, also make sure you have reactive governance in place to identify highly shared and highly used solutions that may be important to your business and reach out to makers to make sure those solutions have the necessary support guardrails around them. Use [tenant-level analytics](/admin/tenant-level-analytics) to find out more about your applications usage, [export your telemetry to your own data storage account](/admin/self-service-analytics) to build your own enhanced reporting or use the [CoE Starter Kit](https://aka.ms/coestarterkit) as a starting point.
 
 ## Team-assisted support
 
@@ -81,11 +81,11 @@ Whilst this often starts off as an informal process, many organizations formaliz
 
 ## Help desk support
 
-The help desk is usually operated as a shared service by the IT department.
+The help desk is operated as a shared service by the IT department.
 
 The help desk can:
 
-- Support technical issues that can not be resolved without IT involvement, for example Power Platform service issues that require an admin to [raise a support ticket](/admin/get-help-support#view-solutions-or-enter-a-support-request-through-the-new-support-center) in [Power Platform admin center](https://aka.ms/ppac).
+- Support technical issues that cannot be resolved without IT involvement, for example Power Platform service issues that require an admin to [raise a support ticket](/admin/get-help-support#view-solutions-or-enter-a-support-request-through-the-new-support-center) in [Power Platform admin center](https://aka.ms/ppac).
 - Answering end user and governance related questions, such as how to request access to applications, where to find applications.
 - Routing issues with critical apps to the correct support team.
 
@@ -105,7 +105,7 @@ Managing requests as purely an escalation path from the help desk gets difficult
 
 ## Partner support
 
-Many customers choose to work with partners on their Power Platform adoption, including support. This can include development assistance for makers, help in establishing a CoE and technical support procedures, as well as 24/7 technical support for critical apps.
+Many customers choose to work with partners on their Power Platform adoption, including support. This can include development assistance for makers, help in establishing a CoE and technical support procedures, and 24/7 technical support for critical apps.
 
 ## Microsoft support
 
@@ -129,13 +129,13 @@ Considerations and key actions you can take to improve your internal help desk s
 
 - Determine the initial scope of Power Platform topics that the help desk will handle.
 - Assess the readiness level of your help desk to handle support.
-- Arrange for additional training for help desk staff, based on readiness gaps.
-- Determine what the escalation path will be for requests the help desk cannot directly handle.
+- Arrange for more training for help desk staff, based on readiness gaps.
+- Determine what the escalation path will be for requests the help desk can’t directly handle.
 - Update the help desk knowledge base for known Power Platform topics. Ensure someone is responsible for regular updates to the knowledge base to reflect new and enhanced features over time. Keep up to date by subscribing to the [Power Apps blog](https://powerapps.microsoft.com/blog/feed/), [Power Automate blog](https://flow.microsoft.com/blog/feed/) and [Power Virtual Agents blog](https://powervirtualagents.microsoft.com/blog/feed/) RSS feeds.
 - Ensure a good issue tracking system is in place. It's often a ticketing system that can manage priority levels.
 - Decide if anyone will be on-call for any issues related to Power Platform. If appropriate, ensure the expectations for 24/7 support are clear.
 - Determine what SLAs will exist, and that expectations for response and resolution are clearly communicated.
-- Be prepared to address specific common issues extremely quickly. For example, a request to use a new connector should be handled quickly. Slow support response may result in users finding workarounds.
+- Be prepared to address specific common issues quickly. For example, a request to use a new connector should be handled quickly. Slow support response may result in users finding workarounds.
 - Ensure your help desk has a security role that allows them to [raise support tickets with Microsoft](/admin/get-help-support). Decide if the help desk or the dedicated support team will triage those issues.
 
 Considerations and key actions you can take to improve your internal Power Platform dedicated support:
@@ -144,7 +144,7 @@ Considerations and key actions you can take to improve your internal Power Platf
 - Ensure that the Power Platform dedicated support team have a direct escalation path to reach global administrators for Microsoft 365 and Azure. It's critical when a widespread issue arises that's beyond the scope of Power Platform. Such issues could be related to user accounts and permissions, network configuration or data sources used in Power Platform solutions.
 - Create a feedback loop from the dedicated support team back to the help desk so that the IT knowledge base can be updated. The goal is for the primary help desk to continually become better equipped at handling more issues in the future.
 - Create a feedback loop from the help desk to the dedicated support team. When support personnel observe redundancies or inefficiencies, they can communicate that information to the dedicated support team, who might choose to change and improve internal processes. Example: If the help desk is inundated with creating and configuring new Power Platform environments for makers, the dedicated team may look at automating this process using the [environment request management components in the CoE Starter Kit](/guidance/coe/env-mgmt).
-- Create an escalation path from individuals and teams supporting their solutions to the dedicated support team, so they can get unblocked if they face issues they can not solve themselves.
+- Create an escalation path from individuals and teams supporting their solutions to the dedicated support team, so they can get unblocked if they face issues they cannot solve themselves.
 - Create a handover path from individuals and teams supporting their solutions to the dedicated support team, so that critical applications can transition.
 - Decide on your overall strategy for transitioning solutions to the dedicated team – as your number of important and critical solutions increase, will you increase staffing on the dedicated support team, or will you rely on business units to staff support teams for their areas?
 
