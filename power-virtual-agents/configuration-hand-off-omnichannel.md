@@ -2,7 +2,7 @@
 title: "Configure hand-off to Dynamics 365 Customer Service"
 description: "Have human agents intercede in voice-based and text-based bot conversations by connecting Power Virtual Agents to Dynamics 365 Customer Service omnichannel capabilities."
 keywords: "PVA"
-ms.date: 11/01/2021
+ms.date: 11/11/2021
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw  
@@ -35,17 +35,12 @@ For more information about hand off, and how to use hand-off within a bot conver
 * Environments:
   * You must install the [extension solutions](#install-extension-solutions) in the same environment where you have your bots.
   - Your bot (and extension solutions) environment and omnichannel environment must be in the same [geographical region](data-location.md#data-locations).
-  - For voice-based hand off capabilities, your environments must be hosted in a datacenter within the [United States Azure geographic location](data-location.md#data-locations).
+  - For voice-based capabilities, both your tenant _and_ environment must be in either the [United States, Europe, Asia, or Australia geographies](data-location.md#data-locations).
 * You need a [product license for Power Virtual Agents](https://go.microsoft.com/fwlink/?LinkId=2092080&clcid=0x409) and a [product license with the Chat Add-in for Dynamics 365 Customer service](/dynamics365/customer-engagement/omnichannel/try-chat-for-dynamics365).
 * You must be [assigned the omnichannel administrator role](/dynamics365/omnichannel/administrator/add-users-assign-roles#understand-roles-and-their-privileges) to connect bots with omnichannel.
 * You'll need an [application registered in Azure](/azure/active-directory/develop/howto-create-service-principal-portal#create-an-azure-active-directory-application) before you can connect to omnichannel.
 * [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
-
->[!IMPORTANT]
->Your bot must be in a published state for end-to-end capabilities to work as expected. Ensure that you have [published your bot](./publication-fundamentals-publish-channels.md) prior to validating the integrated experience.  
->  
->If you want to test the bot on your custom website, you must use the embed code that is specified in the chat widget you set up in Omnichannel (see **Prerequisites** in the [Integrate a Power Virtual Agents bot](/dynamics365/omnichannel/administrator/configure-bot-virtual-agent#prerequisites) article). If you use the embed code from the Power Virtual Agents site, hand-off will not occur correctly.
-
+* For end-to-end capabilities to work as expected, your bot must be in a published state . Ensure that you have [published your bot](./publication-fundamentals-publish-channels.md) before validating the integrated experience.  
 
 ## Install extension solutions
 
@@ -60,8 +55,10 @@ For your bot to hand off a conversation to your omnichannel interface, you have 
     1. [Omnichannel Power Virtual Agents extension](https://appsource.microsoft.com/product/dynamics-365/mscrm.omnichannelpvaextension)
     1. [Omnichannel voice Power Virtual Agents extension](https://appsource.microsoft.com/product/dynamics-365/mscrm.omnichannelvoicepvaextension)
 
->[!IMPORTANT]
->You must install the [Omnichannel Power Virtual Agents Extension](https://appsource.microsoft.com/product/dynamics-365/mscrm.omnichannelpvaextension) for all omnichannel hand off scenarios.  
+> [!IMPORTANT]
+> You must install the [Omnichannel Power Virtual Agents Extension](https://appsource.microsoft.com/product/dynamics-365/mscrm.omnichannelpvaextension) for all omnichannel hand off scenarios.  
+>
+> If you don't have all three extensions installed, you will get a message in the UI indicating that "You don't have access to all the required variables and actions". You'll see this message even if you only need the Omnichannel Power Virtual Agents Extension for text-based hand-off. You can ignore the message if you don't need the voice and telephony extensions.
 
 ## Connect omnichannel to your Power Virtual Agents bot
 
@@ -72,23 +69,19 @@ Sign in to the Power Virtual Agents bot you want to connect to your omnichannel 
     
     :::image type="content" source="media/handoff-settings.png" alt-text="IMAGE-SHOWING-SETTINGS-PANEL-OPENED.":::
 
-1. Select **Enable**.
+1. Select **Enable**. 
+    * If you haven't installed any of the [extension solutions required for hand off](#install-extension-solutions), you'll see a notification that your bot doesn't have access to the variables or actions needed for hand off to omnichannel. You must [install at least the omnichannel extension solution](#install-extension-solutions) for hand off to Omnichannel to work.  
+    
+        :::image type="content" source="media/handoff-no-extension.png" alt-text="Notification at the top of the omnichannel configuration panel that says your bot doesn't have access.":::
 
-    >[!NOTE]
-    >If you haven't installed any of the [extension solutions required for hand off](#install-extension-solutions), you'll see a notification that your bot doesn't have access to the variables or actions needed for hand off to omnichannel.  
-    >  
-    >You must [install at least the omnichannel extension solution](#install-extension-solutions) for hand off to Omnichannel to work.  
-    >  
-    >![Notification at the top of the omnichannel configuration panel that says your bot doesn't have access.](media/handoff-no-extension.png)
+    * You may see a message that says we can't determine if omnichannel integration is enabled for the environment with the managed bot if you have [ALM enabled in your bot](#power-virtual-agent-bots-with-alm).
 
-1. Under **See the environment this bot is connected to**, select the environment where your omnichannel instance is provisioned.
+        :::image type="content" source="media/transfer-managed-bot.png" alt-text="Message that says we can't determine if this bot has omnichannel enabled or disabled.":::
+        
+1. Under **See the environment this bot is connected to**, select the environment where your omnichannel instance is provisioned. If you haven't set up omnichannel in the selected environment, you'll see a message inviting you to begin a trial.
 
-    >[!IMPORTANT]
-    >You'll see a message if you haven't set up omnichannel in the environment you select here.  
-    >  
-    >You might also see this message if you're using a [managed bot](authoring-export-import-bots.md). If the managed bot has omnichannel capabilities enabled, the message will disappear after your next import. If the bot doesn't have omnichannel capabilities enabled, the message will continue to show.
-    >  
-    >:::image type="content" source="media/transfer-no-oc.png" alt-text="Message that says you haven't set up Omnichannel in this environment.":::
+    :::image type="content" source="media/transfer-no-oc.png" alt-text="Message that says you haven't set up omnichannel integration in this environment.":::
+
 
 1. Follow the steps to create or reuse an existing Azure application ID. Copy the *Application (client) ID* and paste it in the text box provided.
 
@@ -102,9 +95,38 @@ Sign in to the Power Virtual Agents bot you want to connect to your omnichannel 
 
 After you've configured the connection, you'll see your bot in the **Omnichannel** tile under **Agent transfers**. From here, you can disconnect the bot, refresh the connection, or view the connection details in your omnichannel interface.
 
-![Connected bot details in Power Virtual Agents.](media/handoff-bot-connected.png)
+:::image type="content" source="media/handoff-bot-connected.png" alt-text="Connected bot details in Power Virtual Agents." border="false":::
 
 You can also toggle voice capabilities on or off.
+
+>[!IMPORTANT]
+>If you want to test the bot on your custom website, you must use the embed code that is specified in the chat widget you set up in Omnichannel (see [Embed chat widget in your website or portal](/dynamics365/customer-service/embed-chat-widget-portal) for more information). If you use the embed code from the Power Virtual Agents site, hand-off will not occur correctly.
+
+<a id="managed-bot-oc"></a>
+### Power Virtual Agent bots with ALM
+If you've [set up ALM for your Power Virtual Agents bots](/power-platform/alm/basics-alm), and are exporting and importing bots between [development (unmanaged) and test or production (managed) environments](/power-platform/alm/basics-alm#types-of-environments-used-in-alm), you might see a message that says we can't determine if omnichannel integration is enabled for the environment with the managed bot.
+
+:::image type="content" source="media/transfer-managed-bot.png" alt-text="Message that says we can't determine if this bot has omnichannel enabled or disabled.":::
+
+If the bot you exported _does_ have omnichannel capabilities enabled, you can ignore this message as the bot will still work properly. 
+  
+The message will disappear after you export the latest versions of your bot from your development environment (first confirming that omnichannel integration is enabled), and then import it into a targeted test or production environment with managed bots.
+
+If the message continues to show after exporting and importing the latest version of your bot, ensure that you have removed any unmanaged layers from your managed bot:
+  
+1. Sign in to Power Apps and select the managed bot's environment.  
+
+1. Select the **Solutions** tab on the side navigation pane, and then select the solution that contains the bot with the unmanaged layer.  
+
+1. Select **See solution layers** from the contextual **...** menu next to the chatbot component in the solution.  
+
+    :::image type="content" source="media/handoff-see-layers.png" alt-text="Solution layer selection in Power Apps.":::      
+    
+1. Select the unmanaged layer and then select **Remove unmanaged layer**.    
+
+    :::image type="content" source="media/handoff-remove-layer.png" alt-text="Remove unmanaged layer in Power Apps.":::
+    
+If the bot _doesn't_ have omnichannel capabilities enabled, the message will always show. 
 
 ### Disconnect your bot from omnichannel or disable the omnichannel connection
 
@@ -129,16 +151,15 @@ If you previously had connected a bot to your omnichannel instance (before Novem
 Authentication is not supported for voice-based hand off to omnichannel instances. If you've set up authentication for the bot, the [authentication variables](advanced-end-user-authentication.md) will not contain authentication information in them when sent to your omnichannel instance.
 
 >[!WARNING]
->For voice-based hand off capabilities, your bot and omnichannel environments must be hosted in a datacenter within the [United States Azure geographic location](data-location.md#data-locations).
->  
->If the environment (or environments) you use for your bot or omnichannel instance aren't in the US region, voice capabilities will not work and there will be no error messages or warnings.
+>For voice-based hand off capabilities, both your bot and omnichannel environments must be hosted in a datacenter within the [United States, Europe, Asia, or Australia geographies](data-location.md#data-locations).
+>If the environment (or environments) you use for your bot or omnichannel instance aren't in a supported region, voice capabilities will not work and there will be no error messages or warnings.
 
 
 ## Voice-based capabilities
 
 The [Power Virtual Agents telephony extension](https://appsource.microsoft.com/product/dynamics-crm/mscrm.mspva_telephony_extension) adds a number of additional actions and variables to Power Virtual Agents that can be used by Power Virtual Agents chatbots.
 
-![List of voice-related actions that can be added to a node in Power Virtual Agents.](media/handoff-oc-voice-vars.png)
+:::image type="content" source="media/handoff-oc-voice-vars.png" alt-text="List of voice-related actions that can be added to a node in Power Virtual Agents.":::
 
 ### Send uninterruptible voice message
 
@@ -148,11 +169,11 @@ This action can be used to send messages which can't be interrupted by the calle
 
 1. Select **Add input for destination topic** and then **UninterruptibleMessage (string)**.
 
-    ![Handoff Voice Config Interrupt Add](media/handoff-voice-config-interrupt-add.png)
+    :::image type="content" source="media/handoff-voice-config-interrupt-add.png" alt-text="Handoff Voice Config Interrupt Add":::
 
 3. Select an existing variable that defines the message content, or directly enter the message that should be used.
 
-    ![Handoff Voice Config Interrupt](media/handoff-voice-config-interrupt.png)
+    :::image type="content" source="media/handoff-voice-config-interrupt.png" alt-text="Handoff Voice Config Interrupt":::
 
 
 ### Transfer the call to a different phone number
@@ -162,7 +183,7 @@ This action can be used to transfer the call to a different phone number altoget
 
 3. Select **Add input for destination topic** and then **TargetPhoneNumber (string)**.
 
-    ![Handoff Voice Config Transfer Input](media/handoff-voice-config-transfer-input.png)
+    :::image type="content" source="media/handoff-voice-config-transfer-input.png" alt-text="Handoff Voice Config Transfer Input":::
   
 3. Select an existing variable that defines the number that should be called instead, or directly enter the number.
 
@@ -177,7 +198,7 @@ This action can be used to hang up the call. Once the conversation reaches this 
 
 1. Add this action as you would [any other action when adding nodes](authoring-create-edit-topics.md#insert-nodes). 
 
-    ![Handoff Voice Config Hangup.](media/handoff-voice-config-hangup.png)
+    :::image type="content" source="media/handoff-voice-config-hangup.png" alt-text="Handoff Voice Config Hangup.":::
 
 
 ### *bot.CustomerPhoneNumber* variable

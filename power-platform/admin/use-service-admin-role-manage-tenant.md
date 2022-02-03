@@ -76,6 +76,7 @@ The following matrix shows what management is possible with the various service 
 |**Environments** |||||  
 |Full access<sup>1</sup> |Yes|Yes|Yes<sup>2</sup>|No|  
 |Create|Yes|Yes|Yes<sup>2</sup>|No|  
+|Delete|Yes|Yes|Yes<sup>2</sup>|No|  
 |Backup and restore|Yes|Yes| Yes<sup>2</sup>|No|  
 |Copy |Yes|Yes|Yes<sup>2</sup>|No|  
 |Ability to exclude access from selected environments (using security groups) |No|No|Yes|Yes|  

@@ -2,7 +2,7 @@
 title: "Use topics to design a chatbot conversation in Microsoft Teams"
 description: "Use the authoring canvas in the Power Virtual Agents app in Microsoft Teams to create an end-to-end conversation."
 keywords: "PVA, authoring canvas, conversation"
-ms.date: 8/27/2021
+ms.date: 01/07/2022
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -53,12 +53,12 @@ For bot and topic limits, see the [Quotas, limits, and configuration values](../
 
 When you create a bot, a number of topics are automatically created.
 
-
 :::image type="content" source="media/topics-system-teams.png" alt-text="Four lesson topics and a number of system topics are in the Topics list.":::
-
   
-  - Four **User Topics** that can be used as [lesson topics](authoring-template-topics-teams.md) can to help understand how to make a bot conversation.
-  - A number of **System Topics**. We recommend you keep these and use them until you are comfortable with creating an end-to-end bot conversation.
+These topics fall into two categories:
+  
+  - Four prepopulated **User Topics** that are titled as lessons. These [lesson topics](authoring-template-topics-teams.md) can be used to help understand simple to complex ways of using nodes to create bot conversations. You can edit these topics in the same manner as for topics you create. You can also choose to delete them entirely.
+  - A number of **System Topics**. These are prepopulated topics that you are likely to need during a bot conversation. You can't delete, disable, or edit the trigger phrases of these topics, but you can customize the nodes on the authoring canvas. We recommend not customizing these topics until you are comfortable with creating an end-to-end bot conversation. 
 
 You can edit both of these topic types in the same manner as for topics you create but you can't delete them.
 
@@ -105,7 +105,7 @@ A topic's conversation path is how the bot will respond to a person's questions 
 
 1. You can add additional nodes by selecting the **Plus** (**+**) icon on the line or branch between or after a node.
 
-   ![Screenshot of adding a node.](media/handoff-add-node-teams.png "Screenshot of adding a node")
+   :::image type="content" source="media/handoff-add-node-teams.png" alt-text="Screenshot of adding a node." border="false":::
 
 ### Insert nodes
 
@@ -130,7 +130,7 @@ If the node you are adding is the last in a topic, you can also add a **Go to an
 
 1. To have the bot ask a question and get a response from the user, select **+** to add a node, and then **Ask a question** to add a new **Question** node.
 
-    ![Add a new question mode.](media/topics-question-teams.png "Add a new question mode")
+    :::image type="content" source="media/topics-question-teams.png" alt-text="Add a new question mode." border="false":::
 
 1. Enter the question phrase in the first text box, **Ask a question**.
 
@@ -154,11 +154,11 @@ If the node you are adding is the last in a topic, you can also add a **Go to an
 > You can define synonyms for each option. This can help the bot to determine the correct option in case it isn't clear what the user's response should be mapped to.
 > 1. Select the menu icon on the top of the **Question** node, and then select **Options for user**.
 >
->    ![Select options for users.](media/topics-question-options-teams.png "Select options for users")
+>    :::image type="content" source="media/topics-question-options-teams.png" alt-text="Select options for users." border="false":::
 >
 > 1. Select the **Synonyms** icon for the option you want to add additional keywords to. 
 >
->    ![Select the synonyms icon.](media/topics-question-synonyms-teams.png "Select the synonyms icon")
+>    :::image type="content" source="media/topics-question-synonyms-teams.png" alt-text="Select the synonyms icon." border="false":::
 >
 > 1. Add the keywords individually, and then once you're done, select **Done** to return to the **Authoring canvas**.
 
@@ -168,7 +168,7 @@ If the node you are adding is the last in a topic, you can also add a **Go to an
 
 1. Choose the variable you want to use to determine if the bot conversation should branch at this point. 
 
-    ![Choose a variable.](media/topics-branch-teams.png "Choose a variable")
+    :::image type="content" source="media/topics-branch-teams.png" alt-text="Choose a variable." border="false":::
 
 #### Call an action
 
@@ -193,7 +193,7 @@ When you end the conversation, you can have a survey appear that asks the user i
 
 1. At the end of a response that resolves the user's issue or answers the question, select **End with survey**.
     
-    ![End with survey.](media/topics-nodes-survey-teams.png "End with survey")
+    :::image type="content" source="media/topics-nodes-survey-teams.png" alt-text="End with survey." border="false":::
 
 #### Go to another topic
 
@@ -229,7 +229,7 @@ You can also [use variables that you have defined elsewhere](authoring-variables
 
 1. Select **Delete**.
 
-    ![Select the menu icon and then the delete button.](media/topics-delete-teams.png "Select the menu icon and then the delete button")
+    :::image type="content" source="media/topics-delete-teams.png" alt-text="Select the menu icon and then the delete button." border="false":::
 
 ## Test and publish your bot
 

@@ -27,12 +27,12 @@ The following quotas, defined as requests per minute (RPM), apply to Power Virtu
 
 Action | Quota with the paid plan
 --|--
-**Messages to a chatbot**<br/>(Includes any message from a user or integrations, such as Azure Bot Framework Skills, to a single chatbot.)  | 800 RPM per bot	
+**Messages to a chatbot**<br/>(Includes any message from a user or integrations, such as Azure Bot Framework skills, to a single chatbot.)  | 800 RPM per bot	
 
 
 If the quota for **messages to a chatbot** is met, the user chatting with the chatbot will see a failure notice when they try to send a message. They'll be prompted to retry.
 
-![Error message in the chat bot window that says 'Send failed. Retry.'.](media/requirements-quota-error.png "Error message in the chatbot window that says 'Send failed. Retry.'")
+:::image type="content" source="media/requirements-quota-error.png" alt-text="Error message in the chat bot window that says 'Send failed. Retry.'." border="false":::
  
 
 
@@ -66,7 +66,7 @@ Skills | 100 per bot | 100 per bot
 Feature | Standard subscription | Teams (select Microsoft 365 subscriptions)
 -- | -- | --
 Sessions | N/A | 10 per user every 24 hours across all bots in a tenant<sup>1</sup>
-Power Platform requests<sup>2</sup> | 30,000 every 24 hours<sup>3</sup> | 2,000 every 24 hours
+Power Platform requests<sup>2</sup> | 250,000 every 24 hours<sup>3</sup> | 2,000 every 24 hours
 
 <sup>1</sup> Power Virtual Agents [sessions](analytics-sessions.md) that are included with [Microsoft 365 subscriptions](requirements-licensing-subscriptions.md#power-virtual-agents-for-microsoft-teams-plan) aren't pooled.  
 <sup>2</sup> These requests are consumed by Power Automate flows that are triggering by Power Virtual Agents chatbots. Learn more about [Power Automate limits](/power-platform/admin/api-request-limits-allocations).  

@@ -54,6 +54,8 @@
          href: authoring-test-bot.md
        - name: Supported languages
          href: authoring-language-support.md
+       - name: Troubleshoot error codes
+         href: error-codes.md
     - name: Enhance and improve
       items:
        - name: Key concepts - Enhanced authoring
@@ -82,8 +84,10 @@
       items:
        - name: Key concepts - Publish your bot
          href: publication-fundamentals-publish-channels.md
-       - name: Add bot to your live website or Power Apps portal
+       - name: Add bot to your live website
          href: publication-connect-bot-to-web-channels.md
+       - name: Add bot to Power Apps portal
+         href: publication-add-bot-to-power-apps-portal.md
        - name: Add bot to Microsoft Teams
          href: publication-add-bot-to-microsoft-teams.md
        - name: Add bot to Facebook
@@ -100,7 +104,7 @@
             href: configuration-add-skills.md
           - name: Use Bot Framework Skills
             href: advanced-use-skills.md
-          - name: Use a Power Virtual Agents bot as a skill (Preview)
+          - name: Use a Power Virtual Agents bot as a skill
             href: advanced-use-pva-as-a-skill.md
           - name: Use Bot Framework Composer
             items:
@@ -174,7 +178,7 @@
       items:
        - name: Licensing for Virtual Power Agents in Teams
          href: teams/requirements-licensing-teams.md
-       - name: Collaborate with others
+       - name: Share bot with users in your organization
          href: teams/admin-share-bots-teams.md
        - name: Upgrade a Dataverse for Teams environment
          href: teams/admin-upgrade-dataverse-teams.md
@@ -200,6 +204,8 @@
          href: teams/authoring-test-bot-teams.md
        - name: Supported languages
          href: teams/authoring-language-support-teams.md
+       - name: Troubleshoot error codes
+         href: teams/error-codes-teams.md
     - name: Enhance and improve
       items:
        - name: Key concepts - Enhanced authoring

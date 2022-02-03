@@ -31,7 +31,7 @@ The Innovation Backlog solution contains assets that are relevant to all users i
 
 ## Option 1: Import the solution into a Production environment
 
-Before you begin, review the [prerequisites](setup.md#prerequisites) for using the starter kit solution.
+Before you begin, review the [prerequisites](setup.md) for using the starter kit solution.
 
 - If you aren't already using the CoE Starter Kit, we recommend [creating a new environment](../../admin/create-environment.md) for CoE solutions.
 - If you are already using other CoE Starter Kit components, use the environment that you created as part of setting up the [core components](setup-core-components.md) for this solution.
@@ -137,7 +137,7 @@ Before you begin:
 
      ![View apps, flows and tables part of the Innovation Backlog solution.](media/ibteams-5.png "View apps, flows and tables part of the Innovation Backlog solution")
 
-1. Now, we will populate some of the tables with default values by running instant cloud flows.
+1. Now, populate some of the tables with default values by running instant cloud flows.
     1. Open the **Add pain points** cloud flow and select **Run** > **Run Flow**.
         ![Run Add Pain points cloud flow.](media/ib-2.png "Run Add Pain points cloud flow")
     1. Open the **Update Software Tools** cloud flow and select **Run** > **Run Flow**.
@@ -166,5 +166,8 @@ Before you begin:
 
 You can now [use the Innovation Backlog app](innovationbacklog-components.md).
 
+## It looks like I found a bug with the CoE Starter Kit; where should I go?
+
+To file a bug against the solution, go to [aka.ms/coe-starter-kit-issues](https://aka.ms/coe-starter-kit-issues).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
