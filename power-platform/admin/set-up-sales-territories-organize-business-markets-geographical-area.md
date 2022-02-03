@@ -15,6 +15,13 @@ search.app:
   - PowerApps
   - Powerplatform
   - Flow
+searchScope: 
+  - D365-App-msdynce_saleshub
+  - D365-Entity-territory
+  - D365-UI-*
+  - Dynamics 365
+  - Sales
+  - Customer Engagement
 ---
 # Set up sales territories to organize business markets by geographical area
 
