@@ -140,7 +140,7 @@ Now when the bot user tells the bot how many people, and any requirements, an em
 
 
 
-See the [Power Virtual Agents app documentation on using Flows](../advanced-flow.md) for more detailed and complex scenarios using flows.
+See the [Power Virtual Agents app documentation on using Flows](../advanced-flow.md) for more detailed scenarios and troubleshooting best practices using flows.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

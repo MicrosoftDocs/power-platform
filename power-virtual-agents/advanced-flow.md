@@ -39,7 +39,7 @@ Flows typically use variables to input and output information. The variables can
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 
 
-## Create a new flow from the Power Virtual Agents authoring canvas 
+## Chose a flow from the Power Virtual Agents authoring canvas 
 
 
 
@@ -49,11 +49,15 @@ Flows typically use variables to input and output information. The variables can
 
 1. Select the plus (**+**) button below an existing node to add a new node. 
 
-1. In the node selection window, select **Call an action**, and then select **Create a flow**. 
+1. In the node selection window, select **Call an action**, and then pick an existing flow that you want to use, or optionally select **Create a flow**. 
+   
+![New flow shows up in Action picker.](media/FlowInActionPicker.png)
+
+Selecting an existing flow will automatically add the flow to the authoring canvas. 
 
 
-    ![Create a new Power Automate flow.](media/UseCreateFlowOption.jpg)
 
+![Create a new Power Automate flow.](media/UseCreateFlowOption.jpg)
 
 Using the **Create a flow** option opens a starter flow template in the [Power Automate portal](https://flow.microsoft.com/) in a separate tab.
 
@@ -138,15 +142,6 @@ Your flow is saved to the **Default Solution** under the **Solutions** tab on th
 
 
 
-## Flows created from the Power Virtual Agents authoring canvas are immediately available to the bot
-
-All flows created from the Power Virtual Agents authoring canvas are saved in a **Default Solution** in Power Automate. They can be used by your bots immediately.
-
-In Power Virtual Agents, you can now see this new flow on the list of available actions when you use the **Call an action node** in the authoring canvas.
-
-![New flow shows up in Action picker.](media/FlowInActionPicker.png)
-
-
 
 
 ## Optionally move a flow from Default Solution to another solution
@@ -180,6 +175,11 @@ To be available to your bots, flows must be stored in a solution in Power Automa
 
     ![Add flow from outside solutions.](media/AddExistingFlow_details.jpg)
     
+
+
+## Modify a flow on the Power Virtual Agents authoring canvas
+Using the node's context menu, you will see the following options to manage the flow in your dialog:
+
 
 ## Modify a flow on the Power Automate portal
 
@@ -306,6 +306,15 @@ Enter your city and zip code at the prompt to get today's weather forecast from 
 
 ## Troubleshoot your bot
 
+### Topic Checker and Canvas Validation
+
+
+1. Flow status has changed -
+2. Flow structure has changed -
+3. Flow permissions have changed -
+
+### Using the Test chat pane
+
 While testing your bot in the **Test chat** pane, you can use the **Save snapshot** command to get conversational diagnostics data. This data can help you troubleshoot issues, such as the bot not responding in the way you expect. 
 
 >[!WARNING]
@@ -329,7 +338,7 @@ While testing your bot in the **Test chat** pane, you can use the **Save snapsho
 
         ![Conversational diagnostics file.](media/conversation-file.png)
 
-    1. *botContent.json* contains the bot's topics and other content, including entities and variables used in the bot.
+    2. *botContent.json* contains the bot's topics and other content, including entities and variables used in the bot.
 
 
 You can help us improve Power Virtual Agents by flagging issues with the **Flag an issue** command on the test bot pane. This submits your conversation ID to Microsoft, which is a unique identifier that Microsoft uses to troubleshoot the issue of the conversation. Other information, such as that in the *DSAT.zip* file, is not sent when you flag an issue.
