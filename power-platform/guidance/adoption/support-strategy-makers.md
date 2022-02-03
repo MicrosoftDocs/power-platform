@@ -1,5 +1,5 @@
 ---
-title: "Maker education and development support strategy - Microsoft Power Platform | MicrosoftDocs"
+title: "Maker support strategy - Microsoft Power Platform | MicrosoftDocs"
 description: "Guidance on establishing maker education and development support for Microsoft Power Platform makers."
 author: manuelap-msft
 manager: devkeydet
@@ -17,9 +17,9 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Maker education and development support
+# Maker support
 
-The following section covers maker education and development support. Activities like building a community, training your makers and co-development assistance can significantly decrease the volume of formal support queries and increase user experience overall.
+The following section covers technical guidance and support for makers. Activities like building a community, training your makers and co-development assistance can significantly decrease the volume of formal support queries and increase user experience overall. Additional to the activities outlined in this article, it's important to establish ongoing [training and learning opportunities](training-strategy.md) for your makers.
 
 ![Types of maker education and development support.](media/support-maker.png "Types of maker education and development support")
 
@@ -61,7 +61,7 @@ Use of an internal community discussion channel allows the Center of Excellence 
 
 ## Help desk support
 
-The help desk is usually operated as a shared service, operated by the IT department. 
+The help desk is usually operated as a shared service, operated by the IT department.
 
 The help desk can:
 

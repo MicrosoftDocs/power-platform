@@ -1,5 +1,5 @@
 ---
-title: "Ongoing Power Platform solution support strategy - Microsoft Power Platform | MicrosoftDocs"
+title: "End-user support strategy - Microsoft Power Platform | MicrosoftDocs"
 description: "Guidance on establishing a support and graduation framework, decision matrix and user support process for ongoing solution support of Microsoft Power Platform solutions."
 author: manuelap-msft
 manager: devkeydet
@@ -17,9 +17,9 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Ongoing production solution support
+# End-user support: Ongoing production solution support
 
-The following section covers formal and informal ways of supporting solutions that have been built with Microsoft Power Platform, such as apps, flows and chatbots.
+The following section covers formal and informal ways of supporting end-users using solutions that have been built with Microsoft Power Platform, such as apps, flows and chatbots.
 
 This diagram shows a common support and graduation framework that organizations employ successfully:
 
