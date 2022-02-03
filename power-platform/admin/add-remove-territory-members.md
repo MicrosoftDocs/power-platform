@@ -17,6 +17,13 @@ search.app:
   - PowerApps
   - Powerplatform
   - Flow
+searchScope: 
+  - D365-App-msdynce_saleshub
+  - D365-Entity-territory
+  - D365-UI-*
+  - Dynamics 365
+  - Sales
+  - Customer Engagement
 ---
 # Add or remove sales territory members
 
