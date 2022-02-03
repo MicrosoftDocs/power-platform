@@ -4,7 +4,7 @@ description: About the impact of DLP policies on apps and flows.
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/03/2021
+ms.date: 02/03/2022
 ms.subservice: admin
 author: mikferland-msft
 ms.author: miferlan
