@@ -39,7 +39,7 @@ Each of the types of internal user support introduced above are described in fur
 
 ## Team-assisted support
 
-Team-assisted support refers to makers learning from each other as they build applications. Makers who emerge as [your champions](champions.md) tend to take on this type of informal support role voluntarily because they have an intrinsic desire to help
+Team-assisted support refers to makers learning from each other as they build applications. Makers who emerge as [your champions](champions.md) tend to take on this type of informal support role voluntarily because they have an intrinsic desire to help.
 
 ## Internal community support
 
