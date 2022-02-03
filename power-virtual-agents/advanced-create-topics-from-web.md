@@ -58,19 +58,19 @@ After the extraction is complete, you'll be shown the suggested topics for furth
 
 1. Select **Topics** on the side navigation pane.
 
-    :::image type="content" source="media/menu-topics.png" alt-text="The Topics menu item on the navigation pane." border="false":::
+    :::image type="content" source="media/advanced-create-topics-from-web/menu-topics.png" alt-text="The Topics menu item on the navigation pane." border="false":::
 
 2. Go to the **Suggested** tab. 
 
 3. If it's the first time you're getting suggestions, the list of suggested topics will be blank. A link to **Get started** or **Learn more** appears instead.
 
-    :::image type="content" source="media/suggested-web-get.png" alt-text="An empty Topics page, with a link to Get started or Learn more." border="false":::
+    :::image type="content" source="media/advanced-create-topics-from-web/suggested-web-get.png" alt-text="An empty Topics page, with a link to Get started or Learn more." border="false":::
 
 4. Select **Get started** or **Suggest topics**. 
 
-5. Enter links to each webpage or online file from which you want to extract content, and then select **Add**. If you add a link by mistake, you can remove it by selecting **Delete** :::image type="content" source="media/delete-suggested-topic.png" alt-text="Delete." border="false":::.
+5. Enter links to each webpage or online file from which you want to extract content, and then select **Add**. If you add a link by mistake, you can remove it by selecting **Delete** :::image type="content" source="media/advanced-create-topics-from-web/delete-suggested-topic.png" alt-text="Delete." border="false":::.
 
-    :::image type="content" source="media/suggested-web-wizard.png" alt-text="The Suggest topics page, where you enter URLs to extract suggested topics from." border="false":::
+    :::image type="content" source="media/advanced-create-topics-from-web/suggested-web-wizard.png" alt-text="The Suggest topics page, where you enter URLs to extract suggested topics from." border="false":::
 
     
 >[!IMPORTANT]
@@ -81,7 +81,7 @@ After the extraction is complete, you'll be shown the suggested topics for furth
 
 6. When you're done adding links to webpages and/or online files, select **Start**. The process can take several minutes, depending on the complexity and number of webpages or files you added. The message "Getting your suggestions. This may take several minutes" appears at the top of the screen while the extraction is in progress.
 
-    :::image type="content" source="media/suggested-web-wait.png" alt-text="An alert that says Getting your suggestions. This may take several minutes appears at the top of the page.":::
+    :::image type="content" source="media/advanced-create-topics-from-web/suggested-web-wait.png" alt-text="An alert that says Getting your suggestions. This may take several minutes appears at the top of the page.":::
 
 >[!TIP]
 >You can add multiple webpages and links to online files, but we recommend that you include only a few at a time to keep the list of suggestions manageable.
@@ -91,13 +91,13 @@ After the extraction is complete, you'll be shown the suggested topics for furth
 
 The tool provides explicit feedback about errors so that you can understand and address any issues. For example, you might be unable to extract content because the site you're referencing is down or it may be gated behind a user login, such as a SharePoint page.
 
-:::image type="content" source="media/suggested-web-error-bar.png" alt-text="A red banner alert that says We ran into problems getting suggestions appears at the top of the page with a link to more details." border="false":::
+:::image type="content" source="media/advanced-create-topics-from-web/suggested-web-error-bar.png" alt-text="A red banner alert that says We ran into problems getting suggestions appears at the top of the page with a link to more details." border="false":::
 
-:::image type="content" source="media/suggested-web-error-detail.png" alt-text="A pop-up window that describes the errors encountered when trying to get suggestions from a web page." border="false":::
+:::image type="content" source="media/advanced-create-topics-from-web/suggested-web-error-detail.png" alt-text="A pop-up window that describes the errors encountered when trying to get suggestions from a web page." border="false":::
 
 After you've successfully extracted content, a number of suggestions will appear. These may be either [single-turn or multi-turn topics](#single-turn-and-multi-turn-topic-suggestions). You can now review these suggestions to see which ones you want to add to your bot.
 
-:::image type="content" source="media/suggested-web-topics.png" alt-text="The Suggested tab on the Topics page lists each topic by name, trigger phrase, source, and date it was received." border="false":::
+:::image type="content" source="media/advanced-create-topics-from-web/suggested-web-topics.png" alt-text="The Suggested tab on the Topics page lists each topic by name, trigger phrase, source, and date it was received." border="false":::
 
 
 ## Single-turn and multi-turn topic suggestions
@@ -151,18 +151,18 @@ After the extraction process has been completed, the topic suggestions appear on
 
     c. To completely remove the suggestion, select **Delete suggestion**. The topic will be deleted from the list of suggested topics. You can run the **Suggest topics** command again if you want to restore it.  
 
-    :::image type="content" source="media/suggested-web-add-edit.png" alt-text="An editing window showing a snapshot of the topic's layout." border="false":::
+    :::image type="content" source="media/advanced-create-topics-from-web/suggested-web-add-edit.png" alt-text="An editing window showing a snapshot of the topic's layout." border="false":::
 
 1. In the suggested topics list, hover over the name of the suggested topic you want to add or delete. 
 
-    1. To add the topic to your bot, select **Add to topics** :::image type="content" source="media/add-to-topics.png" alt-text="Add to topics." border="false":::. You won't see a preview of the topic and the topic will be moved from the list of **Suggested** topics into **Existing** topics.
+    1. To add the topic to your bot, select **Add to topics** :::image type="content" source="media/advanced-create-topics-from-web/add-to-topics.png" alt-text="Add to topics." border="false":::. You won't see a preview of the topic and the topic will be moved from the list of **Suggested** topics into **Existing** topics.
 
 
-    :::image type="content" source="media/suggested-web-quick.png" alt-text="An up arrow icon next to the title of a topic." border="false":::
+    :::image type="content" source="media/advanced-create-topics-from-web/suggested-web-quick.png" alt-text="An up arrow icon next to the title of a topic." border="false":::
     
 2. You can also add or delete multiple topic suggestions at a time. If you select multiple rows, you'll see options to **Add to topic** or **Delete**.
 
-    :::image type="content" source="media/suggested-web-multi.png" alt-text="The list has three items selected." border="false":::
+    :::image type="content" source="media/advanced-create-topics-from-web/suggested-web-multi.png" alt-text="The list has three items selected." border="false":::
 
 
 ## Enable topics in your bot
@@ -177,7 +177,7 @@ Suggested topics are added to the **Existing** tab with their status set to **Of
 
 3. For each topic you want to enable, turn on the toggle under **Status**.
 
-    :::image type="content" source="media/suggested-enable.png" alt-text="A table that lists existing topics, where each topic has a toggle that switches between Off and On in the Status column." border="false":::
+    :::image type="content" source="media/advanced-create-topics-from-web/suggested-enable.png" alt-text="A table that lists existing topics, where each topic has a toggle that switches between Off and On in the Status column." border="false":::
 
 
 ### See also
