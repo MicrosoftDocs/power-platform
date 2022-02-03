@@ -49,17 +49,18 @@ Flows typically use variables to input and output information. The variables can
 
 1. Select the plus (**+**) button below an existing node to add a new node. 
 
-1. In the node selection window, select **Call an action**, and then pick an existing flow that you want to use, or optionally select **Create a flow**. 
+2. In the node selection window, select **Call an action**, and then pick an existing flow that you want to use, or if you want to create a new one to use, select **Create a flow**. 
    
 ![New flow shows up in Action picker.](media/FlowInActionPicker.png)
 
-Selecting an existing flow will automatically add the flow to the authoring canvas. 
+* Selecting an existing flow will automatically add the flow to the authoring canvas. 
+
 
 
 
 ![Create a new Power Automate flow.](media/UseCreateFlowOption.jpg)
 
-Using the **Create a flow** option opens a starter flow template in the [Power Automate portal](https://flow.microsoft.com/) in a separate tab.
+* Using the **Create a flow** option opens a starter flow template in the [Power Automate portal](https://flow.microsoft.com/) in a separate tab.
 
 ![Power Automate flow template.](media/PVAConnectorTemplate.JPG)
 
@@ -179,6 +180,15 @@ To be available to your bots, flows must be stored in a solution in Power Automa
 
 ## Modify a flow on the Power Virtual Agents authoring canvas
 Using the node's context menu, you will see the following options to manage the flow in your dialog:
+    ![Modify flow from the authoring canvas.](media/advanced-flow/advanced-flow-nodemanage.png)
+
+* **Refresh** - If changes have been made to a flow in the Power Automate portal, you can select this to reload the flow in the PVA authoring canvas. It will then be validated, and any problems detected will need to be fixed before you are allowed to save.
+* **Replace** - This will reload the flow picker, allowing you to select or create a different flow to use in your dialog.
+*  **Delete** - The last option will permanently delete the node containing the flow entirely, which could disrupt the functionality of the dialog.  
+
+
+
+
 
 
 ## Modify a flow on the Power Automate portal
