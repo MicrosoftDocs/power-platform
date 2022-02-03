@@ -4,7 +4,7 @@ description: Invite users with Azure Active Directory B2B collaboration
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/31/2022
+ms.date: 02/04/2022
 author: jimholtz
 ms.subservice: admin
 ms.author: jimholtz
@@ -140,7 +140,9 @@ B2B guest users can [run Power Apps](/powerapps/maker/canvas-apps/share-app-gues
 Follow these steps to allow B2B guest users to create custom SharePoint list forms using Power Apps.
 
 > [!NOTE]
-> Ensure that you perform below steps on the **resource tenant** where the SharePoint list exists (where the user is expected to create the custom SharePoint list form using Power Apps as a guest). And not on the **home tenant** of the user (where the user's account resides and authenticates against).
+> Ensure that you perform below steps on the **resource tenant**, and not on the **home tenant**.
+> - A **resource tenant** is where the SharePoint list exists, and where the user is expected to create the custom SharePoint list form using Power Apps as a guest.
+> - A **home tenant** is where the user's account resides and authenticates against.
 
 1. Use the following PowerShell cmdlet to enable guests to make Power Apps.
 
