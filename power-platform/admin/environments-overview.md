@@ -110,7 +110,7 @@ There are multiple types of environments. The type indicates the purpose of the 
 A single default environment is automatically created by Power Apps for each tenant and shared by all users in that tenant. Whenever a new user signs up for Power Apps, they're automatically added to the Maker role of the default environment. The default environment is created in the region closest to the default region of the Azure AD tenant.
 
 > [!NOTE]
-> - No users will be added to the Environment Admin role of the default environment automatically. More information: [Administer environments in Power Apps](environments-administration.md)
+> - No users will be added to the Environment Admin role of the default environment automatically. 
 > - You can't delete the default environment.
 > - You can't backup and restore the default environment.
 > - The default environment has the following free storage capacity: 3GB Dataverse Database Capacity, 3GB Dataverse File Capacity, and 1GB Dataverse Log Capacity. Note that we're in the process of rolling out this feature.

@@ -237,7 +237,6 @@ Yes, it will appear in both admin centers.
 Provisioning environments is based on database capacity. Previously, it was two environments per Power Apps Plan 2 license. Now all you need is 1GB of available capacity to provision. All environments with or without Dataverse will consume at least 1GB capacity.
 
 ### See also 
-[Manage environments in Power Apps](environments-administration.md) <br />
 [Dataverse storage capacity](capacity-storage.md) <br />
 [Control user access to environments: security groups and licenses](control-user-access.md)
 
