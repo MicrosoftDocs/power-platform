@@ -9,1202 +9,14 @@
   "schemes": [
     "https"
   ],
-  "securityDefinitions": {
-    "azure_auth": {
-      "type": "oauth2",
-      "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/authorize",
-      "flow": "implicit",
-      "description": "Azure Active Directory OAuth2 Flow",
-      "scopes": {}
-    }
-  },
-  "security": [
-    {
-      "azure_auth": []
-    }
-  ],
   "paths": {
-    "/appmanagement/tenants/{tenantId}/applicationPackages": {
+    "/licensing/billingPolicies": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "description": "Tenant ID",
-            "format": "uuid",
-            "in": "path",
-            "name": "tenantId",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success",
-            "schema": {
-              "$ref": "#/definitions/TenantApplicationPackageContinuationResponse"
-            }
-          },
-          "400": {
-            "description": "Bad Request"
-          },
-          "401": {
-            "description": "Unauthorized"
-          },
-          "403": {
-            "description": "Forbidden"
-          }
-        },
         "tags": [
-          "Applications"
+          "BillingPolicy"
         ],
-        "operationId": "ReadTenantApplicationPackages",
-        "description": "Get list of available application packages for a tenant",
-        "summary": "Get list of Application Packages that are available for a tenant"
-      }
-    },
-    "/appmanagement/tenants/{tenantId}/environments/{environmentId}/applicationPackages": {
-      "get": {
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "description": "Tenant ID",
-            "format": "uuid",
-            "in": "path",
-            "name": "tenantId",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "description": "Environment Id (not to be confused with Org id)",
-            "in": "path",
-            "name": "environmentId",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "description": "Application Package Install State",
-            "enum": [
-              "All",
-              "Installed",
-              "NotInstalled"
-            ],
-            "in": "query",
-            "name": "appInstallState",
-            "type": "string"
-          },
-          {
-            "description": "Application Package Supported Language Id",
-            "in": "query",
-            "name": "lcid",
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success",
-            "schema": {
-              "$ref": "#/definitions/ApplicationPackageContinuationResponse"
-            }
-          },
-          "400": {
-            "description": "Bad Request"
-          },
-          "401": {
-            "description": "Unauthorized"
-          },
-          "403": {
-            "description": "Forbidden"
-          }
-        },
-        "tags": [
-          "Applications"
-        ],
-        "operationId": "ReadEnvironmentApplicationPackages",
-        "description": "Get list of Application Packages that are relevant in the context of a target environment. Client can filter the Application Packages based on Install State (NotInstalled, Installed, All) and any other response parameters utilizing standard OData capabilities",
-        "summary": "Get list of Application Packages that are available for install in a target environment."
-      }
-    },
-    "/appmanagement/tenants/{tenantId}/environments/{environmentId}/applicationPackages/{uniqueName}/install": {
-      "post": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "description": "Tenant ID",
-            "format": "uuid",
-            "in": "path",
-            "name": "tenantId",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "description": "Environment Id (not to be confused with Org id)",
-            "in": "path",
-            "name": "environmentId",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "description": "Package Unique Name",
-            "in": "path",
-            "name": "uniqueName",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "description": "Payload to be sent during installation of the Package",
-            "in": "body",
-            "name": "body",
-            "schema": {
-              "$ref": "#/definitions/TpsInstallRequestPayload"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success",
-            "schema": {
-              "$ref": "#/definitions/InstancePackageDto"
-            }
-          },
-          "202": {
-            "description": "Success"
-          },
-          "400": {
-            "description": "Bad Request"
-          },
-          "401": {
-            "description": "Unauthorized"
-          },
-          "403": {
-            "description": "Forbidden"
-          }
-        },
-        "tags": [
-          "Applications"
-        ],
-        "operationId": "InstallApplicationPackage",
-        "summary": "Trigger installation of an application package based on the package unique name into a target environment."
-      }
-    },
-    "/appmanagement/tenants/{tenantId}/environments/{environmentId}/operations/{operationId}": {
-      "get": {
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "description": "Tenant ID",
-            "format": "uuid",
-            "in": "path",
-            "name": "tenantId",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "description": "Environment Id (not to be confused with Org id)",
-            "in": "path",
-            "name": "environmentId",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "description": "Operation ID",
-            "format": "uuid",
-            "in": "path",
-            "name": "operationId",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success",
-            "schema": {
-              "$ref": "#/definitions/InstancePackageOperationPollingResponse"
-            }
-          },
-          "400": {
-            "description": "Bad Request"
-          },
-          "401": {
-            "description": "Unauthorized"
-          },
-          "403": {
-            "description": "Forbidden"
-          }
-        },
-        "tags": [
-          "Applications"
-        ],
-        "operationId": "ReadApplicationPackageOperationStatus",
-        "summary": "Get the polling status for a previously triggered installation"
-      }
-    },
-    "/governance/tenants/{tenantId}/lockboxContainerPolicies": {
-      "get": {
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "description": "The tenant Id.",
-            "in": "path",
-            "name": "tenantId",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "description": "The Product type.",
-            "enum": [
-              "None",
-              "CDS",
-              "PowerBI"
-            ],
-            "in": "query",
-            "name": "productType",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "in": "query",
-            "name": "api-version",
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success",
-            "schema": {
-              "$ref": "#/definitions/LockboxPolicyDtoResponseWithOdataContinuation"
-            }
-          },
-          "400": {
-            "description": "Bad Request"
-          },
-          "401": {
-            "description": "Unauthorized"
-          },
-          "403": {
-            "description": "Forbidden"
-          }
-        },
-        "tags": [
-          "LockboxPolicies"
-        ],
-        "operationId": "ListLockboxContainerPolicies",
-        "summary": "Gets the defined container level Lockbox policies in a tenant.(No container policy returned if Lockbox policy at tenant applies for ALL)\r\nExample usage of top query parameter for policies list : ?$expand=value($top=3;$expand=*) ."
-      }
-    },
-    "/governance/tenants/{tenantId}/lockboxContainerPolicies/{containerId}": {
-      "get": {
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "description": "The tenant Id.",
-            "in": "path",
-            "name": "tenantId",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "description": "The Product type.",
-            "enum": [
-              "None",
-              "CDS",
-              "PowerBI"
-            ],
-            "in": "query",
-            "name": "productType",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "description": "The Container Id.",
-            "in": "path",
-            "name": "containerId",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "in": "query",
-            "name": "api-version",
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success",
-            "schema": {
-              "$ref": "#/definitions/LockboxPolicyDto"
-            }
-          },
-          "400": {
-            "description": "Bad Request"
-          },
-          "401": {
-            "description": "Unauthorized"
-          },
-          "403": {
-            "description": "Forbidden"
-          }
-        },
-        "tags": [
-          "LockboxPolicies"
-        ],
-        "operationId": "ReadLockboxContainerPolicy",
-        "summary": "Gets defined/derived container policy for specific container Id."
-      }
-    },
-    "/governance/tenants/{tenantId}/lockboxContainers/{containerId}/lockboxRequests": {
-      "get": {
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "description": "The tenant Id.",
-            "in": "path",
-            "name": "tenantId",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "description": "The Product type.",
-            "enum": [
-              "None",
-              "CDS",
-              "PowerBI"
-            ],
-            "in": "query",
-            "name": "productType",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "description": "The Container Id.",
-            "in": "path",
-            "name": "containerId",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "in": "query",
-            "name": "api-version",
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success",
-            "schema": {
-              "$ref": "#/definitions/LockboxRequestDtoResponseWithOdataContinuation"
-            }
-          },
-          "400": {
-            "description": "Bad Request"
-          },
-          "401": {
-            "description": "Unauthorized"
-          },
-          "403": {
-            "description": "Forbidden"
-          }
-        },
-        "tags": [
-          "LockboxRequests"
-        ],
-        "operationId": "ListLockboxContainerRequests",
-        "summary": "Lists the Power Platform Lockbox requests for a container (can be filtered on Status).\r\nExample usage of top and filter query parameter for requests list : ?$expand=value($top=3;$expand=*;$filter=Status eq 'DenialReceived') ."
-      }
-    },
-    "/governance/tenants/{tenantId}/lockboxOperations/validate": {
-      "post": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "description": "The tenant id.",
-            "in": "path",
-            "name": "tenantId",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "in": "query",
-            "name": "api-version",
-            "type": "string"
-          },
-          {
-            "description": "The lockbox operation request.",
-            "in": "body",
-            "name": "body",
-            "schema": {
-              "$ref": "#/definitions/LockboxOperationRequest"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success",
-            "schema": {
-              "$ref": "#/definitions/LockboxOperationValidationResult"
-            }
-          },
-          "400": {
-            "description": "Bad Request"
-          },
-          "401": {
-            "description": "Unauthorized"
-          },
-          "403": {
-            "description": "Forbidden"
-          }
-        },
-        "tags": [
-          "LockboxOperations"
-        ],
-        "operationId": "ValidateLockboxContainerRequest",
-        "summary": "Validate the Lockbox request ."
-      }
-    },
-    "/governance/tenants/{tenantId}/lockboxPolicies": {
-      "get": {
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "description": "The tenant Id.",
-            "in": "path",
-            "name": "tenantId",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "description": "The Product type.",
-            "enum": [
-              "None",
-              "CDS",
-              "PowerBI"
-            ],
-            "in": "query",
-            "name": "productType",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "in": "query",
-            "name": "api-version",
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success",
-            "schema": {
-              "$ref": "#/definitions/LockboxPolicyDtoResponseWithOdataContinuation"
-            }
-          },
-          "400": {
-            "description": "Bad Request"
-          },
-          "401": {
-            "description": "Unauthorized"
-          },
-          "403": {
-            "description": "Forbidden"
-          }
-        },
-        "tags": [
-          "LockboxPolicies"
-        ],
-        "operationId": "ListLockboxPolicies",
-        "summary": "Gets the Lockbox policy at tenant level. To get defined container policies\r\nplease refer to \"containerPolicies\" parameter in response body ."
-      },
-      "post": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "description": "The tenant Id.",
-            "in": "path",
-            "name": "tenantId",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "description": "The Product type.",
-            "enum": [
-              "None",
-              "CDS",
-              "PowerBI"
-            ],
-            "in": "query",
-            "name": "productType",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "in": "query",
-            "name": "api-version",
-            "type": "string"
-          },
-          {
-            "description": "The Lockbox Policy model.",
-            "in": "body",
-            "name": "body",
-            "schema": {
-              "$ref": "#/definitions/LockboxPolicyDto"
-            }
-          }
-        ],
-        "responses": {
-          "201": {
-            "description": "Success",
-            "schema": {
-              "$ref": "#/definitions/LockboxPolicyDto"
-            }
-          },
-          "400": {
-            "description": "Bad Request"
-          },
-          "401": {
-            "description": "Unauthorized"
-          },
-          "403": {
-            "description": "Forbidden"
-          }
-        },
-        "tags": [
-          "LockboxPolicies"
-        ],
-        "operationId": "CreateLockboxPolicy",
-        "summary": "Creates Lockbox policy at tenant level or at container level ."
-      }
-    },
-    "/governance/tenants/{tenantId}/lockboxPolicies/{policyId}": {
-      "patch": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "description": "The tenant Id.",
-            "in": "path",
-            "name": "tenantId",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "description": "The policy Id.",
-            "in": "path",
-            "name": "policyId",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "description": "The Product type.",
-            "enum": [
-              "None",
-              "CDS",
-              "PowerBI"
-            ],
-            "in": "query",
-            "name": "productType",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "in": "query",
-            "name": "api-version",
-            "type": "string"
-          },
-          {
-            "description": "The Lockbox Policy model.",
-            "in": "body",
-            "name": "body",
-            "schema": {
-              "$ref": "#/definitions/LockboxPolicyDto"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success",
-            "schema": {
-              "$ref": "#/definitions/LockboxPolicyDto"
-            }
-          },
-          "400": {
-            "description": "Bad Request"
-          },
-          "401": {
-            "description": "Unauthorized"
-          },
-          "403": {
-            "description": "Forbidden"
-          },
-          "409": {
-            "description": "Conflict"
-          }
-        },
-        "tags": [
-          "LockboxPolicies"
-        ],
-        "operationId": "UpdateLockboxPolicy",
-        "summary": "Updates Lockbox policy at tenant level or at container level ."
-      }
-    },
-    "/governance/tenants/{tenantId}/lockboxRequests": {
-      "get": {
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "description": "The tenant Id.",
-            "in": "path",
-            "name": "tenantId",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "description": "The Product type.",
-            "enum": [
-              "None",
-              "CDS",
-              "PowerBI"
-            ],
-            "in": "query",
-            "name": "productType",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "in": "query",
-            "name": "api-version",
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success",
-            "schema": {
-              "$ref": "#/definitions/LockboxRequestDtoResponseWithOdataContinuation"
-            }
-          },
-          "400": {
-            "description": "Bad Request"
-          },
-          "401": {
-            "description": "Unauthorized"
-          },
-          "403": {
-            "description": "Forbidden"
-          }
-        },
-        "tags": [
-          "LockboxRequests"
-        ],
-        "operationId": "ListLockboxRequests",
-        "summary": "Lists the Power Platform Lockbox requests for a tenant and Product Type (can be filtered on Status).\r\nExample usage of top and filter query parameter for requests list : ?$expand=value($top=3;$expand=*;$filter=Status eq 'DenialReceived') ."
-      },
-      "post": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "description": "The tenant Id.",
-            "in": "path",
-            "name": "tenantId",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "description": "The Product type.",
-            "enum": [
-              "None",
-              "CDS",
-              "PowerBI"
-            ],
-            "in": "query",
-            "name": "productType",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "in": "query",
-            "name": "api-version",
-            "type": "string"
-          },
-          {
-            "description": "The Lockbox Approval Request.",
-            "in": "body",
-            "name": "body",
-            "schema": {
-              "$ref": "#/definitions/LockboxRequestDto"
-            }
-          }
-        ],
-        "responses": {
-          "201": {
-            "description": "Success",
-            "schema": {
-              "$ref": "#/definitions/LockboxRequestDto"
-            }
-          },
-          "400": {
-            "description": "Bad Request"
-          },
-          "401": {
-            "description": "Unauthorized"
-          },
-          "403": {
-            "description": "Forbidden"
-          }
-        },
-        "tags": [
-          "LockboxRequests"
-        ],
-        "operationId": "CreateLockboxRequest",
-        "summary": "Creates a Power Platform Lockbox requests for a tenant and Product type."
-      }
-    },
-    "/governance/tenants/{tenantId}/lockboxRequests/{requestId}": {
-      "get": {
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "description": "The tenant Id.",
-            "in": "path",
-            "name": "tenantId",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "description": "The Product type.",
-            "enum": [
-              "None",
-              "CDS",
-              "PowerBI"
-            ],
-            "in": "query",
-            "name": "productType",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "description": "The request Id.",
-            "in": "path",
-            "name": "requestId",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "in": "query",
-            "name": "api-version",
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success",
-            "schema": {
-              "$ref": "#/definitions/LockboxRequestDto"
-            }
-          },
-          "400": {
-            "description": "Bad Request"
-          },
-          "401": {
-            "description": "Unauthorized"
-          },
-          "403": {
-            "description": "Forbidden"
-          },
-          "404": {
-            "description": "Not Found"
-          }
-        },
-        "tags": [
-          "LockboxRequests"
-        ],
-        "operationId": "ReadLockboxRequest",
-        "summary": "Gets the Power Platform Lockbox request."
-      }
-    },
-    "/governance/tenants/{tenantId}/lockboxRequests/{requestId}/{status}": {
-      "post": {
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "description": "The tenant Id.",
-            "in": "path",
-            "name": "tenantId",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "description": "The Product type.",
-            "enum": [
-              "None",
-              "CDS",
-              "PowerBI"
-            ],
-            "in": "query",
-            "name": "productType",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "description": "The Request Id.",
-            "in": "path",
-            "name": "requestId",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "description": "The lockbox request status.",
-            "enum": [
-              "none",
-              "approve",
-              "deny"
-            ],
-            "in": "path",
-            "name": "status",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "in": "query",
-            "name": "api-version",
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success",
-            "schema": {
-              "$ref": "#/definitions/LockboxRequestDto"
-            }
-          },
-          "400": {
-            "description": "Bad Request"
-          },
-          "401": {
-            "description": "Unauthorized"
-          },
-          "403": {
-            "description": "Forbidden"
-          },
-          "404": {
-            "description": "Not Found"
-          },
-          "409": {
-            "description": "Conflict"
-          }
-        },
-        "tags": [
-          "LockboxRequests"
-        ],
-        "operationId": "UpdateLockboxRequest",
-        "summary": "Approves/Denies the Lockbox request ."
-      }
-    },
-    "/governance/tenants/{tenantId}/teamsEnvironmentInactivityJobPolicies": {
-      "get": {
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "description": "The tenant id.",
-            "format": "uuid",
-            "in": "path",
-            "name": "tenantId",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "in": "query",
-            "name": "api-version",
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success",
-            "schema": {
-              "$ref": "#/definitions/TeamsEnvironmentInactivityJobPolicyResponseWithOdataContinuation"
-            }
-          },
-          "400": {
-            "description": "Bad Request"
-          },
-          "401": {
-            "description": "Unauthorized"
-          },
-          "403": {
-            "description": "Forbidden"
-          }
-        },
-        "tags": [
-          "TeamsEnvironmentInactivityJobsPolicies"
-        ],
-        "operationId": "ListTeamsEnvironmentInactivityJobPolicies",
-        "summary": "Get tenant policy by tenant."
-      }
-    },
-    "/governance/tenants/{tenantId}/teamsEnvironmentInactivityPolicies": {
-      "get": {
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "description": "The tenant id.",
-            "format": "uuid",
-            "in": "path",
-            "name": "tenantId",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "default": false,
-            "description": "The flag to indicate whether to return default policy or not.",
-            "in": "query",
-            "name": "getDefaultIfNotExist",
-            "type": "boolean"
-          },
-          {
-            "in": "query",
-            "name": "api-version",
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success",
-            "schema": {
-              "$ref": "#/definitions/TeamsEnvironmentInactivityPolicyWebResponseResponseWithOdataContinuation"
-            }
-          },
-          "400": {
-            "description": "Bad Request"
-          },
-          "401": {
-            "description": "Unauthorized"
-          },
-          "403": {
-            "description": "Forbidden"
-          }
-        },
-        "tags": [
-          "TeamsEnvironmentInactivityPolicies"
-        ],
-        "operationId": "ListTeamsEnvironmentInactivityPolicies",
-        "summary": "Gets Teams environment inactivity policies for a tenant."
-      },
-      "post": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "parameters": [
-          {
-            "description": "The tenant id.",
-            "format": "uuid",
-            "in": "path",
-            "name": "tenantId",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "in": "query",
-            "name": "api-version",
-            "type": "string"
-          },
-          {
-            "description": "The policy.",
-            "in": "body",
-            "name": "body",
-            "schema": {
-              "$ref": "#/definitions/TeamsEnvironmentInactivityPolicyWebResponse"
-            }
-          }
-        ],
-        "responses": {
-          "201": {
-            "description": "Success",
-            "schema": {
-              "$ref": "#/definitions/TeamsEnvironmentInactivityPolicyWebResponse"
-            }
-          },
-          "400": {
-            "description": "Bad Request"
-          },
-          "401": {
-            "description": "Unauthorized"
-          },
-          "403": {
-            "description": "Forbidden"
-          }
-        },
-        "tags": [
-          "TeamsEnvironmentInactivityPolicies"
-        ],
-        "operationId": "CreateTeamsEnvironmentInactivityPolicy",
-        "summary": "Creates the Teams environment inactivity policy."
-      }
-    },
-    "/governance/tenants/{tenantId}/teamsEnvironmentInactivityPolicies/{policyId}": {
-      "get": {
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "description": "The tenant id.",
-            "format": "uuid",
-            "in": "path",
-            "name": "tenantId",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "description": "The policy id.",
-            "in": "path",
-            "name": "policyId",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "in": "query",
-            "name": "api-version",
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success",
-            "schema": {
-              "$ref": "#/definitions/TeamsEnvironmentInactivityPolicyWebResponse"
-            }
-          },
-          "400": {
-            "description": "Bad Request"
-          },
-          "401": {
-            "description": "Unauthorized"
-          },
-          "403": {
-            "description": "Forbidden"
-          }
-        },
-        "tags": [
-          "TeamsEnvironmentInactivityPolicies"
-        ],
-        "operationId": "ReadTeamsEnvironmentInactivityPolicy",
-        "summary": "Gets the Teams environment inactivity policy."
-      },
-      "patch": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "parameters": [
-          {
-            "description": "The tenant id.",
-            "format": "uuid",
-            "in": "path",
-            "name": "tenantId",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "in": "path",
-            "name": "policyId",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "in": "query",
-            "name": "api-version",
-            "type": "string"
-          },
-          {
-            "description": "The policy.",
-            "in": "body",
-            "name": "body",
-            "schema": {
-              "$ref": "#/definitions/TeamsEnvironmentInactivityPolicyWebResponse"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success",
-            "schema": {
-              "$ref": "#/definitions/TeamsEnvironmentInactivityPolicyWebResponse"
-            }
-          },
-          "400": {
-            "description": "Bad Request"
-          },
-          "401": {
-            "description": "Unauthorized"
-          },
-          "403": {
-            "description": "Forbidden"
-          }
-        },
-        "tags": [
-          "TeamsEnvironmentInactivityPolicies"
-        ],
-        "operationId": "UpdateTeamsEnvironmentInactivityPolicy",
-        "summary": "Updates the Teams environment inactivity policy."
-      }
-    },
-    "/governance/tenants/{tenantId}/tenantPolicyConfigurations": {
-      "get": {
+        "operationId": "ListBillingPolicies",
+        "summary": "Get the list of billing policy for the tenant.",
         "produces": [
           "application/json"
         ],
@@ -1218,56 +30,14 @@
           {
             "in": "query",
             "name": "api-version",
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success",
-            "schema": {
-              "$ref": "#/definitions/TenantPolicyWebAPIConfigurationResponseWithOdataContinuation"
-            }
-          },
-          "400": {
-            "description": "Bad Request"
-          },
-          "401": {
-            "description": "Unauthorized"
-          },
-          "403": {
-            "description": "Forbidden"
-          }
-        },
-        "tags": [
-          "TenantPolicyConfigurations"
-        ],
-        "operationId": "ListTenantPolicyConfigurations",
-        "summary": "Gets tenant policy configurations."
-      }
-    },
-    "/licensing/tenants/{tenantId}/billingPolicies": {
-      "get": {
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "in": "path",
-            "name": "tenantId",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "default": "1.0",
             "description": "The requested API version",
-            "in": "query",
-            "name": "api-version",
-            "type": "string"
+            "type": "string",
+            "default": "1.0"
           },
           {
-            "description": "Top limit of results",
             "in": "query",
             "name": "$top",
+            "description": "Top limit of results",
             "type": "string"
           }
         ],
@@ -1287,14 +57,14 @@
           "403": {
             "description": "Forbidden"
           }
-        },
+        }
+      },
+      "post": {
         "tags": [
           "BillingPolicy"
         ],
-        "operationId": "ListTenantBillingPolicies",
-        "summary": "Get the list of billing policy for the tenant."
-      },
-      "post": {
+        "operationId": "CreateBillingPolicy",
+        "summary": "Create billing policy.",
         "consumes": [
           "application/json"
         ],
@@ -1314,9 +84,9 @@
             "type": "string"
           },
           {
-            "description": "The Billing Policy",
             "in": "body",
             "name": "body",
+            "description": "The Billing Policy",
             "schema": {
               "$ref": "#/definitions/BillingPolicyPostRequestModel"
             }
@@ -1338,21 +108,132 @@
           "403": {
             "description": "Forbidden"
           }
-        },
+        }
+      }
+    },
+    "/licensing/billingPolicies/{billingPolicyId}": {
+      "get": {
         "tags": [
           "BillingPolicy"
         ],
-        "operationId": "CreateTenantBillingPolicy",
-        "summary": "Create billing policy."
-      }
-    },
-    "/licensing/tenants/{tenantId}/billingPolicies/{billingPolicyId}": {
-      "delete": {
+        "operationId": "GetBillingPolicy",
+        "summary": "Get billing policy.",
+        "produces": [
+          "application/json"
+        ],
         "parameters": [
           {
-            "description": "The Billing Policy Id",
             "in": "path",
             "name": "billingPolicyId",
+            "description": "The Billing Policy Id",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "tenantId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/BillingPolicyResponseModel"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "BillingPolicy"
+        ],
+        "operationId": "UpdateBillingPolicy",
+        "summary": "Update billing policy.",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "billingPolicyId",
+            "description": "The Billing Policy Id",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "tenantId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "The Billing Policy",
+            "schema": {
+              "$ref": "#/definitions/BillingPolicyPutRequestModel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/BillingPolicyResponseModel"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "BillingPolicy"
+        ],
+        "operationId": "DeleteBillingPolicy",
+        "summary": "Delete billing policy.",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "billingPolicyId",
+            "description": "The Billing Policy Id",
             "required": true,
             "type": "string"
           },
@@ -1384,22 +265,24 @@
           "404": {
             "description": "Not Found"
           }
-        },
-        "tags": [
-          "BillingPolicy"
-        ],
-        "operationId": "DeleteTenantBillingPolicy",
-        "summary": "Delete billing policy."
-      },
+        }
+      }
+    },
+    "/licensing/billingPolicies/{billingPolicyId}/environments": {
       "get": {
+        "tags": [
+          "BillingPolicyEnvironment"
+        ],
+        "operationId": "ListBillingPolicyEnvironments",
+        "summary": "Get the list environments which are linked to billing policy.",
         "produces": [
           "application/json"
         ],
         "parameters": [
           {
-            "description": "The Billing Policy Id",
             "in": "path",
             "name": "billingPolicyId",
+            "description": "The billing policy Id",
             "required": true,
             "type": "string"
           },
@@ -1419,7 +302,7 @@
           "200": {
             "description": "Success",
             "schema": {
-              "$ref": "#/definitions/BillingPolicyResponseModel"
+              "$ref": "#/definitions/BillingPolicyEnvironmentResponseModelV1ResponseWithOdataContinuation"
             }
           },
           "400": {
@@ -1434,25 +317,83 @@
           "404": {
             "description": "Not Found"
           }
-        },
+        }
+      }
+    },
+    "/licensing/billingPolicies/{billingPolicyId}/environments/{environmentId}": {
+      "get": {
         "tags": [
-          "BillingPolicy"
+          "BillingPolicyEnvironment"
         ],
-        "operationId": "ReadTenantBillingPolicy",
-        "summary": "Get billing policy."
-      },
-      "put": {
+        "operationId": "GetBillingPolicyEnvironment",
+        "summary": "Get the environment which is linked to billing policy",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "billingPolicyId",
+            "description": "The billing policy Id",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment Id",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "tenantId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/BillingPolicyEnvironmentResponseModelV1"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/licensing/billingPolicies/{billingPolicyId}/environments/add": {
+      "post": {
+        "tags": [
+          "BillingPolicyEnvironment"
+        ],
+        "operationId": "AddBillingPolicyEnvironment",
+        "summary": "Link billing policy with environment ids.",
         "consumes": [
           "application/json"
         ],
-        "produces": [
-          "application/json"
-        ],
         "parameters": [
           {
-            "description": "The Billing Policy Id",
             "in": "path",
             "name": "billingPolicyId",
+            "description": "The billing policy Id",
             "required": true,
             "type": "string"
           },
@@ -1468,12 +409,118 @@
             "type": "string"
           },
           {
-            "description": "The Billing Policy",
             "in": "body",
             "name": "body",
+            "description": "Model to represents the list of environments to be linked",
             "schema": {
-              "$ref": "#/definitions/BillingPolicyPutRequestModel"
+              "$ref": "#/definitions/BillingPolicyEnvironmentAddRequestModel"
             }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/licensing/billingPolicies/{billingPolicyId}/environments/remove": {
+      "post": {
+        "tags": [
+          "BillingPolicyEnvironment"
+        ],
+        "operationId": "RemoveBillingPolicyEnvironment",
+        "summary": "Unlink billing policy with environment ids.",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "billingPolicyId",
+            "description": "The billing policy Id",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "tenantId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Model to represents the list of environments to be unlinked",
+            "schema": {
+              "$ref": "#/definitions/BillingPolicyEnvironmentRemoveRequestModel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/licensing/environments/{environmentId}/billingPolicy": {
+      "get": {
+        "tags": [
+          "EnvironmentBillingPolicy"
+        ],
+        "operationId": "GetEnvironmentBillingPolicy",
+        "summary": "Get the linked billing policy details for environment",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment Id",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "tenantId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "type": "string"
           }
         ],
         "responses": {
@@ -1491,152 +538,12 @@
           },
           "403": {
             "description": "Forbidden"
-          },
-          "404": {
-            "description": "Not Found"
           }
-        },
-        "tags": [
-          "BillingPolicy"
-        ],
-        "operationId": "UpdateBillingPolicy",
-        "summary": "Update billing policy."
+        }
       }
     }
   },
   "definitions": {
-    "ApplicationInstallState": {
-      "enum": [
-        "All",
-        "Installed",
-        "NotInstalled"
-      ],
-      "type": "string"
-    },
-    "ApplicationPackage": {
-      "additionalProperties": false,
-      "properties": {
-        "applicationDescription": {
-          "type": "string",
-          "x-nullable": true
-        },
-        "applicationId": {
-          "format": "uuid",
-          "type": "string"
-        },
-        "applicationName": {
-          "type": "string",
-          "x-nullable": true
-        },
-        "applicationVisibility": {
-          "$ref": "#/definitions/ApplicationVisibility"
-        },
-        "catalogVisibility": {
-          "$ref": "#/definitions/CatalogVisibility"
-        },
-        "customHandleUpgrade": {
-          "type": "boolean"
-        },
-        "endDateUtc": {
-          "format": "date-time",
-          "type": "string"
-        },
-        "id": {
-          "format": "uuid",
-          "type": "string"
-        },
-        "instancePackageId": {
-          "format": "uuid",
-          "type": "string",
-          "x-nullable": true
-        },
-        "lastError": {
-          "$ref": "#/definitions/ErrorDetails"
-        },
-        "learnMoreUrl": {
-          "type": "string",
-          "x-nullable": true
-        },
-        "localizedDescription": {
-          "type": "string",
-          "x-nullable": true
-        },
-        "localizedName": {
-          "type": "string",
-          "x-nullable": true
-        },
-        "platformMaxVersion": {
-          "type": "string",
-          "x-nullable": true
-        },
-        "platformMinVersion": {
-          "type": "string",
-          "x-nullable": true
-        },
-        "publisherId": {
-          "format": "uuid",
-          "type": "string"
-        },
-        "publisherName": {
-          "type": "string",
-          "x-nullable": true
-        },
-        "singlePageApplicationUrl": {
-          "type": "string",
-          "x-nullable": true
-        },
-        "startDateUtc": {
-          "format": "date-time",
-          "type": "string"
-        },
-        "state": {
-          "$ref": "#/definitions/InstancePackageState"
-        },
-        "supportedCountries": {
-          "items": {
-            "type": "string"
-          },
-          "type": "array",
-          "x-nullable": true
-        },
-        "uniqueName": {
-          "type": "string",
-          "x-nullable": true
-        },
-        "version": {
-          "type": "string",
-          "x-nullable": true
-        }
-      },
-      "type": "object"
-    },
-    "ApplicationPackageContinuationResponse": {
-      "additionalProperties": false,
-      "properties": {
-        "@odata.nextLink": {
-          "type": "string",
-          "x-nullable": true
-        },
-        "value": {
-          "items": {
-            "$ref": "#/definitions/ApplicationPackage"
-          },
-          "type": "array",
-          "x-nullable": true
-        }
-      },
-      "type": "object"
-    },
-    "ApplicationVisibility": {
-      "enum": [
-        "None",
-        "CrmAdminCenter",
-        "BapAdminCenter",
-        "OneAdminCenter",
-        "All"
-      ],
-      "type": "string"
-    },
     "BillingAssignmentMode": {
       "enum": [
         "Auto",
@@ -1646,160 +553,192 @@
       "type": "string"
     },
     "BillingInstrumentModel": {
-      "additionalProperties": false,
+      "type": "object",
       "properties": {
-        "id": {
-          "type": "string",
-          "x-nullable": true
-        },
-        "location": {
-          "type": "string",
-          "x-deprecated": true,
-          "x-nullable": true
+        "subscriptionId": {
+          "type": "string"
         },
         "resourceGroup": {
-          "type": "string",
-          "x-nullable": true
-        },
-        "subscriptionId": {
-          "type": "string",
-          "x-nullable": true
-        }
-      },
-      "type": "object"
-    },
-    "BillingPolicyPostRequestModel": {
-      "additionalProperties": false,
-      "properties": {
-        "billingInstrument": {
-          "$ref": "#/definitions/BillingInstrumentModel"
+          "type": "string"
         },
         "location": {
-          "type": "string",
-          "x-nullable": true
+          "type": "string"
         },
+        "id": {
+          "type": "string"
+        }
+      }
+    },
+    "BillingPolicyEnvironmentAddRequestModel": {
+      "type": "object",
+      "properties": {
+        "environmentIds": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "BillingPolicyEnvironmentRemoveRequestModel": {
+      "type": "object",
+      "properties": {
+        "environmentIds": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "BillingPolicyEnvironmentResponseModelV1": {
+      "type": "object",
+      "properties": {
+        "billingPolicyId": {
+          "type": "string"
+        },
+        "environmentId": {
+          "type": "string"
+        }
+      }
+    },
+    "BillingPolicyEnvironmentResponseModelV1ResponseWithOdataContinuation": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/BillingPolicyEnvironmentResponseModelV1"
+          }
+        },
+        "@odata.nextLink": {
+          "type": "string"
+        }
+      }
+    },
+    "BillingPolicyPostRequestModel": {
+      "type": "object",
+      "properties": {
         "name": {
           "type": "string"
         },
-        "powerAppsPolicy": {
-          "$ref": "#/definitions/PowerAppsPolicyModel"
-        },
-        "powerAutomatePolicy": {
-          "$ref": "#/definitions/PowerAutomatePolicyModel"
+        "location": {
+          "type": "string"
         },
         "provider": {
           "$ref": "#/definitions/ProviderIdentityModel"
         },
-        "status": {
-          "$ref": "#/definitions/BillingPolicyStatus"
-        },
-        "storagePolicy": {
-          "$ref": "#/definitions/StoragePolicyModel"
-        },
-        "type": {
-          "$ref": "#/definitions/BillingPolicyType"
-        }
-      },
-      "type": "object"
-    },
-    "BillingPolicyPutRequestModel": {
-      "additionalProperties": false,
-      "properties": {
-        "name": {
-          "type": "string"
-        },
-        "powerAppsPolicy": {
-          "$ref": "#/definitions/PowerAppsPolicyModel"
+        "billingInstrument": {
+          "$ref": "#/definitions/BillingInstrumentModel"
         },
         "powerAutomatePolicy": {
           "$ref": "#/definitions/PowerAutomatePolicyModel"
         },
+        "powerAppsPolicy": {
+          "$ref": "#/definitions/PowerAppsPolicyModel"
+        },
+        "storagePolicy": {
+          "$ref": "#/definitions/StoragePolicyModel"
+        },
         "status": {
           "$ref": "#/definitions/BillingPolicyStatus"
+        },
+        "type": {
+          "$ref": "#/definitions/BillingPolicyType"
+        }
+      }
+    },
+    "BillingPolicyPutRequestModel": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "status": {
+          "$ref": "#/definitions/BillingPolicyStatus"
+        },
+        "powerAutomatePolicy": {
+          "$ref": "#/definitions/PowerAutomatePolicyModel"
+        },
+        "powerAppsPolicy": {
+          "$ref": "#/definitions/PowerAppsPolicyModel"
         },
         "storagePolicy": {
           "$ref": "#/definitions/StoragePolicyModel"
         }
-      },
-      "type": "object"
+      }
     },
     "BillingPolicyResponseModel": {
-      "additionalProperties": false,
+      "type": "object",
       "properties": {
-        "activationCode": {
-          "type": "string",
-          "x-nullable": true
+        "id": {
+          "type": "string"
         },
-        "billingInstrument": {
-          "$ref": "#/definitions/BillingInstrumentModel"
+        "name": {
+          "type": "string"
         },
-        "createdBy": {
-          "$ref": "#/definitions/Principal"
+        "type": {
+          "$ref": "#/definitions/BillingPolicyType"
         },
-        "createdOn": {
-          "format": "date-time",
+        "status": {
+          "$ref": "#/definitions/BillingPolicyStatus"
+        },
+        "location": {
           "type": "string"
         },
         "environmentPolicy": {
           "$ref": "#/definitions/EnvironmentPolicyModel"
         },
-        "id": {
+        "licensePolicy": {
+          "$ref": "#/definitions/LicensePolicyModel"
+        },
+        "powerAutomatePolicy": {
+          "$ref": "#/definitions/PowerAutomatePolicyModel"
+        },
+        "powerAppsPolicy": {
+          "$ref": "#/definitions/PowerAppsPolicyModel"
+        },
+        "storagePolicy": {
+          "$ref": "#/definitions/StoragePolicyModel"
+        },
+        "provider": {
+          "$ref": "#/definitions/ProviderIdentityModel"
+        },
+        "billingInstrument": {
+          "$ref": "#/definitions/BillingInstrumentModel"
+        },
+        "activationCode": {
           "type": "string"
         },
-        "lastModifiedBy": {
+        "createdOn": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "createdBy": {
           "$ref": "#/definitions/Principal"
         },
         "lastModifiedOn": {
           "format": "date-time",
           "type": "string"
         },
-        "licensePolicy": {
-          "$ref": "#/definitions/LicensePolicyModel"
-        },
-        "location": {
-          "type": "string",
-          "x-nullable": true
-        },
-        "name": {
-          "type": "string"
-        },
-        "powerAppsPolicy": {
-          "$ref": "#/definitions/PowerAppsPolicyModel"
-        },
-        "powerAutomatePolicy": {
-          "$ref": "#/definitions/PowerAutomatePolicyModel"
-        },
-        "provider": {
-          "$ref": "#/definitions/ProviderIdentityModel"
-        },
-        "status": {
-          "$ref": "#/definitions/BillingPolicyStatus"
-        },
-        "storagePolicy": {
-          "$ref": "#/definitions/StoragePolicyModel"
-        },
-        "type": {
-          "$ref": "#/definitions/BillingPolicyType"
+        "lastModifiedBy": {
+          "$ref": "#/definitions/Principal"
         }
-      },
-      "type": "object"
+      }
     },
     "BillingPolicyResponseModelResponseWithOdataContinuation": {
-      "additionalProperties": false,
+      "type": "object",
       "properties": {
-        "@odata.nextLink": {
-          "type": "string",
-          "x-nullable": true
-        },
         "value": {
+          "type": "array",
           "items": {
             "$ref": "#/definitions/BillingPolicyResponseModel"
-          },
-          "type": "array",
-          "x-nullable": true
+          }
+        },
+        "@odata.nextLink": {
+          "type": "string"
         }
-      },
-      "type": "object"
+      }
     },
     "BillingPolicyStatus": {
       "enum": [
@@ -1817,31 +756,6 @@
       ],
       "type": "string"
     },
-    "CatalogVisibility": {
-      "enum": [
-        "None",
-        "AdminCenter",
-        "Teams",
-        "All"
-      ],
-      "type": "string"
-    },
-    "ContainerDto": {
-      "additionalProperties": false,
-      "properties": {
-        "displayName": {
-          "type": "string",
-          "x-nullable": true
-        },
-        "id": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "id"
-      ],
-      "type": "object"
-    },
     "EnvironmentCreationState": {
       "enum": [
         "Allow",
@@ -1850,7 +764,7 @@
       "type": "string"
     },
     "EnvironmentPolicyModel": {
-      "additionalProperties": false,
+      "type": "object",
       "properties": {
         "environmentCreation": {
           "$ref": "#/definitions/EnvironmentCreationState"
@@ -1859,614 +773,36 @@
           "format": "int32",
           "type": "integer"
         }
-      },
-      "type": "object"
-    },
-    "ErrorDetails": {
-      "additionalProperties": false,
-      "properties": {
-        "errorCode": {
-          "format": "int32",
-          "type": "integer"
-        },
-        "errorName": {
-          "type": "string",
-          "x-nullable": true
-        },
-        "message": {
-          "type": "string",
-          "x-nullable": true
-        },
-        "source": {
-          "type": "string",
-          "x-nullable": true
-        },
-        "statusCode": {
-          "format": "int32",
-          "type": "integer"
-        },
-        "type": {
-          "type": "string",
-          "x-nullable": true
-        }
-      },
-      "type": "object"
-    },
-    "ExemptedResource": {
-      "additionalProperties": false,
-      "properties": {
-        "environments": {
-          "items": {
-            "$ref": "#/definitions/ExemptedResourceInfo"
-          },
-          "type": "array",
-          "x-nullable": true
-        }
-      },
-      "type": "object"
-    },
-    "ExemptedResourceInfo": {
-      "additionalProperties": false,
-      "properties": {
-        "id": {
-          "type": "string",
-          "x-nullable": true
-        }
-      },
-      "type": "object"
-    },
-    "InstancePackageDto": {
-      "additionalProperties": false,
-      "properties": {
-        "applicationDescription": {
-          "type": "string",
-          "x-nullable": true
-        },
-        "applicationId": {
-          "format": "uuid",
-          "type": "string"
-        },
-        "applicationName": {
-          "type": "string",
-          "x-nullable": true
-        },
-        "applicationVisibility": {
-          "$ref": "#/definitions/ApplicationVisibility"
-        },
-        "customHandleUpgrade": {
-          "type": "boolean"
-        },
-        "id": {
-          "format": "uuid",
-          "type": "string"
-        },
-        "lastOperation": {
-          "$ref": "#/definitions/InstancePackageOperation"
-        },
-        "learnMoreUrl": {
-          "type": "string",
-          "x-nullable": true
-        },
-        "localizedDescription": {
-          "type": "string",
-          "x-nullable": true
-        },
-        "localizedName": {
-          "type": "string",
-          "x-nullable": true
-        },
-        "packageId": {
-          "format": "uuid",
-          "type": "string"
-        },
-        "packageUniqueName": {
-          "type": "string",
-          "x-nullable": true
-        },
-        "packageVersion": {
-          "type": "string",
-          "x-nullable": true
-        },
-        "publisherId": {
-          "format": "uuid",
-          "type": "string"
-        },
-        "publisherName": {
-          "type": "string",
-          "x-nullable": true
-        },
-        "singlePageApplicationUrl": {
-          "type": "string",
-          "x-nullable": true
-        },
-        "termsOfServiceBlobUris": {
-          "items": {
-            "type": "string"
-          },
-          "type": "array",
-          "x-nullable": true
-        }
-      },
-      "type": "object"
-    },
-    "InstancePackageOperation": {
-      "additionalProperties": false,
-      "properties": {
-        "createdOn": {
-          "format": "date-time",
-          "type": "string",
-          "x-nullable": true
-        },
-        "errorDetails": {
-          "$ref": "#/definitions/ErrorDetails"
-        },
-        "instancePackageId": {
-          "format": "uuid",
-          "type": "string"
-        },
-        "modifiedOn": {
-          "format": "date-time",
-          "type": "string",
-          "x-nullable": true
-        },
-        "operationId": {
-          "format": "uuid",
-          "type": "string"
-        },
-        "state": {
-          "$ref": "#/definitions/InstancePackageState"
-        },
-        "statusMessage": {
-          "type": "string",
-          "x-nullable": true
-        }
-      },
-      "type": "object"
-    },
-    "InstancePackageOperationPollingResponse": {
-      "additionalProperties": false,
-      "properties": {
-        "createdDateTime": {
-          "format": "date-time",
-          "type": "string",
-          "x-nullable": true
-        },
-        "error": {
-          "$ref": "#/definitions/ErrorDetails"
-        },
-        "lastActionDateTime": {
-          "format": "date-time",
-          "type": "string",
-          "x-nullable": true
-        },
-        "operationId": {
-          "format": "uuid",
-          "type": "string"
-        },
-        "status": {
-          "$ref": "#/definitions/InstancePackageOperationStatus"
-        },
-        "statusMessage": {
-          "type": "string",
-          "x-nullable": true
-        }
-      },
-      "type": "object"
-    },
-    "InstancePackageOperationStatus": {
-      "enum": [
-        0,
-        1,
-        2,
-        3,
-        4
-      ],
-      "format": "int32",
-      "type": "integer"
-    },
-    "InstancePackageState": {
-      "enum": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11
-      ],
-      "format": "int32",
-      "type": "integer"
+      }
     },
     "LicensePolicyModel": {
-      "additionalProperties": false,
+      "type": "object",
       "properties": {
-        "allocations": {
-          "items": {
-            "$ref": "#/definitions/LicenseSkuAllocationModel"
-          },
-          "type": "array",
-          "x-nullable": true
-        },
         "assignmentMode": {
           "$ref": "#/definitions/BillingAssignmentMode"
         },
         "overageState": {
           "$ref": "#/definitions/OverageState"
+        },
+        "allocations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/LicenseSkuAllocationModel"
+          }
         }
-      },
-      "type": "object"
+      }
     },
     "LicenseSkuAllocationModel": {
-      "additionalProperties": false,
+      "type": "object",
       "properties": {
+        "licenseSkuId": {
+          "type": "string"
+        },
         "allocated": {
           "format": "int32",
           "type": "integer"
-        },
-        "licenseSkuId": {
-          "type": "string",
-          "x-nullable": true
         }
-      },
-      "type": "object"
-    },
-    "LockboxAppliesForValue": {
-      "enum": [
-        "All",
-        "This"
-      ],
-      "type": "string"
-    },
-    "LockboxEnabledState": {
-      "additionalProperties": false,
-      "properties": {
-        "appliesFor": {
-          "$ref": "#/definitions/LockboxAppliesForValue"
-        },
-        "value": {
-          "$ref": "#/definitions/LockboxEnabledValue"
-        }
-      },
-      "required": [
-        "appliesFor",
-        "value"
-      ],
-      "type": "object"
-    },
-    "LockboxEnabledValue": {
-      "enum": [
-        "Enabled",
-        "Disabled"
-      ],
-      "type": "string"
-    },
-    "LockboxEnvironmentLinkedResource": {
-      "additionalProperties": false,
-      "properties": {
-        "id": {
-          "type": "string",
-          "x-nullable": true
-        },
-        "type": {
-          "$ref": "#/definitions/LockboxEnvironmentLinkedResourceType"
-        }
-      },
-      "type": "object"
-    },
-    "LockboxEnvironmentLinkedResourceType": {
-      "enum": [
-        "Organization",
-        "BCEnvironment",
-        "FnOEnvironment"
-      ],
-      "type": "string"
-    },
-    "LockboxOperationRequest": {
-      "additionalProperties": false,
-      "properties": {
-        "environmentId": {
-          "type": "string",
-          "x-nullable": true
-        },
-        "environmentLinkedResource": {
-          "$ref": "#/definitions/LockboxEnvironmentLinkedResource"
-        },
-        "isBreakGlass": {
-          "type": "boolean"
-        },
-        "operationName": {
-          "type": "string",
-          "x-nullable": true
-        },
-        "operationParameters": {
-          "additionalProperties": {
-            "type": "string"
-          },
-          "readOnly": true,
-          "type": "object",
-          "x-nullable": true
-        },
-        "operatorUserClaims": {
-          "items": {
-            "$ref": "#/definitions/LockboxOperatorUserClaim"
-          },
-          "type": "array",
-          "x-nullable": true
-        },
-        "serviceName": {
-          "type": "string",
-          "x-nullable": true
-        },
-        "serviceTreeId": {
-          "type": "string",
-          "x-nullable": true
-        }
-      },
-      "type": "object"
-    },
-    "LockboxOperationValidationDecision": {
-      "enum": [
-        "Allowed",
-        "NotAllowed"
-      ],
-      "type": "string"
-    },
-    "LockboxOperationValidationDecisionReasonCode": {
-      "enum": [
-        "NotSpecified",
-        "MissingEnvironmentId",
-        "EnvironmentNotFound",
-        "MissingOperatorUserClaims",
-        "MissingOperatorUserPrincipalName",
-        "LockboxRequestNotFound",
-        "LockboxRequestNotApproved"
-      ],
-      "type": "string"
-    },
-    "LockboxOperationValidationResult": {
-      "additionalProperties": false,
-      "properties": {
-        "decision": {
-          "$ref": "#/definitions/LockboxOperationValidationDecision"
-        },
-        "reason": {
-          "type": "string",
-          "x-nullable": true
-        },
-        "reasonCode": {
-          "$ref": "#/definitions/LockboxOperationValidationDecisionReasonCode"
-        }
-      },
-      "type": "object"
-    },
-    "LockboxOperatorUserClaim": {
-      "additionalProperties": false,
-      "properties": {
-        "type": {
-          "type": "string",
-          "x-nullable": true
-        },
-        "value": {
-          "type": "string",
-          "x-nullable": true
-        }
-      },
-      "type": "object"
-    },
-    "LockboxPolicyDto": {
-      "additionalProperties": false,
-      "properties": {
-        "container": {
-          "$ref": "#/definitions/ContainerDto"
-        },
-        "containerPolicies": {
-          "items": {
-            "type": "string"
-          },
-          "type": "array",
-          "x-nullable": true
-        },
-        "id": {
-          "type": "string",
-          "x-nullable": true
-        },
-        "lastUpdatedAt": {
-          "type": "string",
-          "x-nullable": true
-        },
-        "lockboxEnabledState": {
-          "$ref": "#/definitions/LockboxEnabledState"
-        },
-        "productType": {
-          "$ref": "#/definitions/LockboxProductType"
-        },
-        "tenantId": {
-          "type": "string"
-        },
-        "tenantPolicy": {
-          "$ref": "#/definitions/LockboxPolicyDto"
-        }
-      },
-      "required": [
-        "lockboxEnabledState",
-        "productType",
-        "tenantId"
-      ],
-      "type": "object"
-    },
-    "LockboxPolicyDtoResponseWithOdataContinuation": {
-      "additionalProperties": false,
-      "properties": {
-        "@odata.nextLink": {
-          "type": "string",
-          "x-nullable": true
-        },
-        "value": {
-          "items": {
-            "$ref": "#/definitions/LockboxPolicyDto"
-          },
-          "type": "array",
-          "x-nullable": true
-        }
-      },
-      "type": "object"
-    },
-    "LockboxProductType": {
-      "enum": [
-        "None",
-        "CDS",
-        "PowerBI"
-      ],
-      "type": "string"
-    },
-    "LockboxRequestAction": {
-      "enum": [
-        "none",
-        "approve",
-        "deny"
-      ],
-      "type": "string"
-    },
-    "LockboxRequestDto": {
-      "additionalProperties": false,
-      "properties": {
-        "accessExpirationTime": {
-          "type": "string",
-          "x-nullable": true
-        },
-        "accessLevel": {
-          "type": "string",
-          "x-nullable": true
-        },
-        "accessPeriod": {
-          "type": "string"
-        },
-        "actionBy": {
-          "type": "string",
-          "x-nullable": true
-        },
-        "container": {
-          "$ref": "#/definitions/ContainerDto"
-        },
-        "createdTime": {
-          "type": "string"
-        },
-        "expirationTime": {
-          "type": "string"
-        },
-        "id": {
-          "type": "string",
-          "x-nullable": true
-        },
-        "justification": {
-          "type": "string",
-          "x-nullable": true
-        },
-        "productType": {
-          "$ref": "#/definitions/LockboxProductType"
-        },
-        "source": {
-          "$ref": "#/definitions/LockboxRequestSource"
-        },
-        "status": {
-          "$ref": "#/definitions/LockboxRequestStatus"
-        },
-        "subscriptionId": {
-          "type": "string",
-          "x-nullable": true
-        },
-        "supportRequest": {
-          "$ref": "#/definitions/SupportRequestDto"
-        },
-        "tenantId": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "accessPeriod",
-        "createdTime",
-        "expirationTime",
-        "productType",
-        "status",
-        "tenantId"
-      ],
-      "type": "object"
-    },
-    "LockboxRequestDtoResponseWithOdataContinuation": {
-      "additionalProperties": false,
-      "properties": {
-        "@odata.nextLink": {
-          "type": "string",
-          "x-nullable": true
-        },
-        "value": {
-          "items": {
-            "$ref": "#/definitions/LockboxRequestDto"
-          },
-          "type": "array",
-          "x-nullable": true
-        }
-      },
-      "type": "object"
-    },
-    "LockboxRequestSource": {
-      "enum": [
-        "AzureLockbox",
-        "PowerPlatform"
-      ],
-      "type": "string"
-    },
-    "LockboxRequestStatus": {
-      "enum": [
-        "None",
-        "LockboxRequestReceived",
-        "FetchedLockboxRequestDetails",
-        "FetchedProductType",
-        "TenantIdNotFound",
-        "FetchedTenantContainerInformation",
-        "SentLockboxRequestForCustomerApproval",
-        "LockboxRequestReceivedForCustomerApproval",
-        "LockboxPolicyEnabled",
-        "LockboxPolicyDisabled",
-        "FetchedApproversInformation",
-        "AutoApprovedAsLockboxPolicyDisabled",
-        "ApprovalActionRequested",
-        "ApprovalReceived",
-        "DenialReceived",
-        "Approved",
-        "Denied",
-        "LockboxRequestExpired",
-        "LockboxAccessExpired",
-        "LockboxRequestInError",
-        "AutoDenied",
-        "AutoApprovedAsTenantIdNotFound",
-        "FailureInSendingCustomerApprovalOrDenial",
-        "CdsContainerIdNotFound",
-        "AutoApprovedAsCdsContainerIdNotFound",
-        "RequestProcessingFailed"
-      ],
-      "type": "string"
-    },
-    "NotificationInfo": {
-      "additionalProperties": false,
-      "properties": {
-        "additionalContacts": {
-          "type": "boolean"
-        },
-        "roles": {
-          "items": {
-            "type": "string"
-          },
-          "type": "array",
-          "x-nullable": true
-        }
-      },
-      "type": "object"
+      }
     },
     "OverageState": {
       "enum": [
@@ -2483,35 +819,31 @@
       "type": "string"
     },
     "PowerAppsPolicyModel": {
-      "additionalProperties": false,
+      "type": "object",
       "properties": {
         "payAsYouGoState": {
           "$ref": "#/definitions/PayAsYouGoState"
         }
-      },
-      "type": "object"
+      }
     },
     "PowerAutomatePolicyModel": {
-      "additionalProperties": false,
+      "type": "object",
       "properties": {
         "payAsYouGoState": {
           "$ref": "#/definitions/PayAsYouGoState"
         }
-      },
-      "type": "object"
+      }
     },
     "Principal": {
-      "additionalProperties": false,
+      "type": "object",
       "properties": {
         "id": {
-          "type": "string",
-          "x-nullable": true
+          "type": "string"
         },
         "type": {
           "$ref": "#/definitions/PrincipalType"
         }
-      },
-      "type": "object"
+      }
     },
     "PrincipalType": {
       "enum": [
@@ -2523,325 +855,33 @@
       "type": "string"
     },
     "ProviderIdentityModel": {
-      "additionalProperties": false,
+      "type": "object",
       "properties": {
         "tenantId": {
           "type": "string"
         }
-      },
-      "type": "object"
+      }
     },
     "StoragePolicyModel": {
-      "additionalProperties": false,
+      "type": "object",
       "properties": {
         "payAsYouGoState": {
           "$ref": "#/definitions/PayAsYouGoState"
         }
-      },
-      "type": "object"
-    },
-    "SupportRequestDto": {
-      "additionalProperties": false,
-      "properties": {
-        "id": {
-          "type": "string"
-        },
-        "source": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "id",
-        "source"
-      ],
-      "type": "object"
-    },
-    "TeamsEnvironmentInactivityJobPolicy": {
-      "additionalProperties": false,
-      "properties": {
-        "exemptedResources": {
-          "$ref": "#/definitions/ExemptedResource"
-        },
-        "isEnabled": {
-          "type": "boolean"
-        },
-        "jobSettings": {
-          "$ref": "#/definitions/TeamsEnvironmentInactivityPolicyJobSetting"
-        },
-        "policyId": {
-          "type": "string",
-          "x-nullable": true
-        },
-        "tenantId": {
-          "type": "string",
-          "x-nullable": true
-        }
-      },
-      "type": "object"
-    },
-    "TeamsEnvironmentInactivityJobPolicyResponseWithOdataContinuation": {
-      "additionalProperties": false,
-      "properties": {
-        "@odata.nextLink": {
-          "type": "string",
-          "x-nullable": true
-        },
-        "value": {
-          "items": {
-            "$ref": "#/definitions/TeamsEnvironmentInactivityJobPolicy"
-          },
-          "type": "array",
-          "x-nullable": true
-        }
-      },
-      "type": "object"
-    },
-    "TeamsEnvironmentInactivityPolicyConfiguration": {
-      "additionalProperties": false,
-      "properties": {
-        "durations": {
-          "additionalProperties": {
-            "$ref": "#/definitions/TeamsEnvironmentInactivityPolicyNotificationDurations"
-          },
-          "type": "object",
-          "x-nullable": true
-        },
-        "inactivityDaysBeforeDisablingDefault": {
-          "format": "int32",
-          "type": "integer"
-        }
-      },
-      "type": "object"
-    },
-    "TeamsEnvironmentInactivityPolicyJobSetting": {
-      "additionalProperties": false,
-      "properties": {
-        "allowedSku": {
-          "items": {
-            "type": "string"
-          },
-          "type": "array",
-          "x-nullable": true
-        },
-        "deleteNotificationDuration": {
-          "format": "date-span",
-          "type": "string"
-        },
-        "disableNotificationDuration": {
-          "format": "date-span",
-          "type": "string"
-        },
-        "firstDeleteNotificationDuration": {
-          "format": "date-span",
-          "type": "string"
-        },
-        "firstDisableNotificationDuration": {
-          "format": "date-span",
-          "type": "string"
-        },
-        "minEnforcementDate": {
-          "format": "date-time",
-          "type": "string"
-        },
-        "notificationInfo": {
-          "$ref": "#/definitions/NotificationInfo"
-        },
-        "secondDeleteNotificationDuration": {
-          "format": "date-span",
-          "type": "string"
-        },
-        "secondDisableNotificationDuration": {
-          "format": "date-span",
-          "type": "string"
-        }
-      },
-      "type": "object"
-    },
-    "TeamsEnvironmentInactivityPolicyNotificationDurations": {
-      "additionalProperties": false,
-      "properties": {
-        "deleteNotificationDuration": {
-          "format": "int32",
-          "type": "integer"
-        },
-        "disableNotificationDuration": {
-          "format": "int32",
-          "type": "integer"
-        },
-        "firstDeleteNotificationDuration": {
-          "format": "int32",
-          "type": "integer"
-        },
-        "firstDisableNotificationDuration": {
-          "format": "int32",
-          "type": "integer"
-        },
-        "secondDeleteNotificationDuration": {
-          "format": "int32",
-          "type": "integer"
-        },
-        "secondDisableNotificationDuration": {
-          "format": "int32",
-          "type": "integer"
-        }
-      },
-      "type": "object"
-    },
-    "TeamsEnvironmentInactivityPolicyWebResponse": {
-      "additionalProperties": false,
-      "properties": {
-        "disableDaysBeforeDeletion": {
-          "format": "int32",
-          "type": "integer"
-        },
-        "exemptedResources": {
-          "$ref": "#/definitions/ExemptedResource"
-        },
-        "inactivityDaysBeforeDisabling": {
-          "format": "int32",
-          "type": "integer"
-        },
-        "isDefault": {
-          "type": "boolean"
-        },
-        "isEnabled": {
-          "type": "boolean"
-        },
-        "notificationRecipientRoles": {
-          "items": {
-            "type": "string"
-          },
-          "type": "array",
-          "x-nullable": true
-        },
-        "policyId": {
-          "type": "string",
-          "x-nullable": true
-        }
-      },
-      "type": "object"
-    },
-    "TeamsEnvironmentInactivityPolicyWebResponseResponseWithOdataContinuation": {
-      "additionalProperties": false,
-      "properties": {
-        "@odata.nextLink": {
-          "type": "string",
-          "x-nullable": true
-        },
-        "value": {
-          "items": {
-            "$ref": "#/definitions/TeamsEnvironmentInactivityPolicyWebResponse"
-          },
-          "type": "array",
-          "x-nullable": true
-        }
-      },
-      "type": "object"
-    },
-    "TenantApplicationPackage": {
-      "additionalProperties": false,
-      "properties": {
-        "applicationDescription": {
-          "type": "string",
-          "x-nullable": true
-        },
-        "applicationId": {
-          "format": "uuid",
-          "type": "string"
-        },
-        "applicationName": {
-          "type": "string",
-          "x-nullable": true
-        },
-        "applicationVisibility": {
-          "$ref": "#/definitions/ApplicationVisibility"
-        },
-        "catalogVisibility": {
-          "$ref": "#/definitions/CatalogVisibility"
-        },
-        "lastError": {
-          "$ref": "#/definitions/ErrorDetails"
-        },
-        "learnMoreUrl": {
-          "type": "string",
-          "x-nullable": true
-        },
-        "localizedDescription": {
-          "type": "string",
-          "x-nullable": true
-        },
-        "localizedName": {
-          "type": "string",
-          "x-nullable": true
-        },
-        "publisherId": {
-          "format": "uuid",
-          "type": "string"
-        },
-        "publisherName": {
-          "type": "string",
-          "x-nullable": true
-        },
-        "uniqueName": {
-          "type": "string",
-          "x-nullable": true
-        }
-      },
-      "type": "object"
-    },
-    "TenantApplicationPackageContinuationResponse": {
-      "additionalProperties": false,
-      "properties": {
-        "@odata.nextLink": {
-          "type": "string",
-          "x-nullable": true
-        },
-        "value": {
-          "items": {
-            "$ref": "#/definitions/TenantApplicationPackage"
-          },
-          "type": "array",
-          "x-nullable": true
-        }
-      },
-      "type": "object"
-    },
-    "TenantPolicyWebAPIConfiguration": {
-      "additionalProperties": false,
-      "properties": {
-        "teamsEnvironmentInactivity": {
-          "$ref": "#/definitions/TeamsEnvironmentInactivityPolicyConfiguration"
-        }
-      },
-      "type": "object"
-    },
-    "TenantPolicyWebAPIConfigurationResponseWithOdataContinuation": {
-      "additionalProperties": false,
-      "properties": {
-        "@odata.nextLink": {
-          "type": "string",
-          "x-nullable": true
-        },
-        "value": {
-          "items": {
-            "$ref": "#/definitions/TenantPolicyWebAPIConfiguration"
-          },
-          "type": "array",
-          "x-nullable": true
-        }
-      },
-      "type": "object"
-    },
-    "TpsInstallRequestPayload": {
-      "additionalProperties": false,
-      "properties": {
-        "payloadValue": {
-          "type": "string",
-          "x-nullable": true
-        }
-      },
-      "type": "object"
+      }
     }
   },
-  "x-components": {}
+  "securityDefinitions": {
+    "oauth2": {
+      "type": "oauth2",
+      "flow": "implicit",
+      "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/authorize",
+      "description": "Azure Active Directory OAuth2"
+    }
+  },
+  "security": [
+    {
+      "oauth2": [ ]
+    }
+  ]
 }
