@@ -17,9 +17,9 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Ongoing production solution and maker education support strategy
+# End-user and maker support strategy
 
-There are two types of support considerations to keep in mind - ongoing production solution support, and maker education and development support.
+There are two types of support considerations to keep in mind - end-user support, to support users of production solutions, and maker support, to support makers developing solutions.
 
 The following articles will focus on providing:
 
