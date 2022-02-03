@@ -88,7 +88,17 @@
           - name: Internal training events
             href: adoption/in-a-day.md
           - name: Solution envisioning workshops
-            href: adoption/solution-envisioning.md  
+            href: adoption/solution-envisioning.md 
+    - name: Support
+      items:
+      - name: Support strategy - Overview
+        href: adoption/support-strategy.md
+      - name: End-user support
+        href: adoption/support-strategy-solutions.md
+      - name: Maker support
+        href: adoption/support-strategy-makers.md
+      - name: Support strategy - Maturity Levels
+        href: adoption/support-strategy-maturity.md
   - name: Power Platform Center of Excellence (CoE) Kit
     href: coe/starter-kit.md
     items: 
