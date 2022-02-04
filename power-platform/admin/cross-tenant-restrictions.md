@@ -32,7 +32,7 @@ Once tenant isolation is turned on, inbound (connections to the tenant from exte
 
 Admins can specify an explicit allow list of tenants that they want to enable **inbound**, **outbound**, or both **inbound** and **outbound** which will bypass tenant isolation controls when configured. Admins can use a special pattern “\*”  to allow *all* tenants in a specific direction when tenant isolation is turned on. All other cross-tenant connections except the ones in the allow list are rejected by Power Platform. 
 
-Tenant isolation can be configured in the Power Platform admin center. It affects Power Platform canvas apps and Power Automate flows. To set up Tenant Isolation, you need to be a tenant admin. 
+Tenant isolation can be configured in the Power Platform admin center. It affects Power Platform canvas apps and Power Automate flows. To set up tenant isolation, you need to be a tenant admin. 
 
 Power Platform tenant isolation ability is available with two options: one-way or two-way restriction.  
 
@@ -132,7 +132,9 @@ Similarly, Power Automate makers will see the following error when they try to s
 
 :::image type="content" source="media/cross-tenant-error-two.png" alt-text="Error: Could not retrieve values. The dynamic invocation request failed with error - error text":::
 
-As an admin, you can decide to modify the tenant isolation policies for your tenant at any point. If apps and flows were created and executed in compliance with earlier tenant isolation policies policy, some of them might be negatively affected by any policy changes you make. Apps or flows that are in violation of [need text].
+## Run time impact on apps and flows
+
+As an admin, you can decide to modify the tenant isolation policies for your tenant at any point. If apps and flows were created and executed in compliance with earlier tenant isolation policies policy, some of them might be negatively affected by any policy changes you make. Apps or flows that are in violation of the tenant isolation policy will not run successfully. For example, Run history within Power Automate indicates that the Flow run failed. Further, selecting the failed run will show details of the error.
 
 For existing flows that don’t run successfully because of the latest tenant isolation policy, Run history within Power Automate indicates that the Flow run failed. 
 
@@ -143,7 +145,7 @@ Selecting the failed run will show details of the failed flow run.
 :::image type="content" source="media/flow-run-failure-details.png" alt-text="Flow run failure details":::
 
 > [!NOTE]
-> It takes about an hour for the latest tenant isolation policy changes to be assessed against active apps and flows. 
+> It takes about an hour for the latest tenant isolation policy changes to be assessed against active apps and flows. This change isn't instantaneous. 
 
 ## Known issues
 
@@ -152,50 +154,6 @@ Selecting the failed run will show details of the failed flow run.
 - The feature is currently not available in Microsoft Dataverse services operated by 21Vianet.
 
 - This feature does not protect your tenant from inbound cross-cloud connections. If a tenant has tenant isolation turned on, all outgoing connections are restricted. However, incoming connections that are established from other tenants in other clouds are not restricted. This issue is currently being investigated.
-
-<!--
-With tenant restrictions, organizations can control access to SaaS cloud applications, based on the Azure AD tenant the applications use for single sign-on. With tenant restrictions, organizations can specify the list of tenants that their users are permitted to access. Azure AD then only grants access to these permitted tenants using Azure AD-based tenant restriction. 
-
-Additionally, if organizations want to enforce tenant isolation for Microsoft Power Platform connections, then they can use Power Platform’s tenant isolation capability. Note that the Power Platform tenant isolation feature does not impact Azure AD-based access outside of Power Apps and Power Automate. Power Platform tenant isolation only works for connectors using Azure AD-based authentication such as Office 365 Outlook or SharePoint. If you want to block connectors that use external identity providers such as Microsoft account, Google, etc., you can [create a data loss prevention policy](create-dlp-policy.md) and classify the connector under the **Blocked** group.  
-
-Power Platform tenant isolation ability is available with two options: one-way or two-way restriction.  
-
-> [!NOTE]
-> For now, this capability can be enabled for your tenant by opening a [support case](get-help-support.md) and providing the details of your tenant ID.  
-
-## One-way tenant isolation (inbound connection restriction) 
-
-One-way tenant isolation or inbound isolation will block connection establishment attempts to your tenant from other tenants. For example, as an admin of Contoso.com (tenant A), if you have enabled one-way tenant isolation then Azure AD-based Power Platform connection creation attempts from any other tenants like Fabrikam.com (tenant B) will fail.  
-
-One-way tenant isolation restricts incoming connection attempts into your tenant, hence the term inbound connection restriction.  
-
-|Connection creator tenant   |Connection sign-in tenant   |Access allowed?   |
-|---------|---------|---------|
-|A     | A        | Yes         |
-|A (one-way data loss prevention policy enforced)     | B        | Yes         |
-|B     | A (one-way data loss prevention policy enforced)         | No (inbound)        |
-|B     | B        | Yes        |
-
-![Restrict inbound cross-tenant access.](media/restrict-inbound-cross-tenant.png "Restrict inbound cross-tenant access")
-
-## Two-way tenant isolation (inbound and outbound connection restriction) 
-
-Like one-way tenant isolation, two-way tenant isolation will block connection establishment attempts to your tenant from other tenants. Additionally, two-way tenant isolation will also block connection establishment attempts from your tenant to other tenants. For example, as an admin of Contoso.com (tenant A), if you have enabled two-way tenant isolation then connection creation attempts from any other tenants like Fabrikam.com (tenant B) will fail. Additionally, Azure AD-based Power Platform connection creation attempts from Contoso.com (tenant A) to any other tenants like Fabrikam.com (tenant B) will fail.  
-
-Two-way tenant isolation restricts incoming connection attempts into your tenant, hence the term inbound connection restriction. Two-way tenant isolation also restricts outgoing connection attempts from your tenant, hence the term outbound connection restriction. 
-
-|Connection creator tenant   |Connection sign-in tenant   |Access allowed?   |
-|---------|---------|---------|
-|A     | A        | Yes         |
-|A (two-way data loss prevention policy enforced)     | B        | No (outbound)         |
-|B     | A (two-way data loss prevention policy enforced)         | No (inbound)        |
-|B     | B        | Yes        |
-
-![Restrict outbound and inbound cross-tenant access.](media/restrict-outbound-inbound-cross-tenant.png "Restrict outbound and inbound cross-tenant access")
-
-## Known issue
-This feature does not protect your tenant from inbound cross-cloud connections. If a tenant has tenant isolation turned on, all outgoing connections are restricted. However, incoming connections that are established from other tenants in other clouds are not restricted. This issue is currently being investigated.
--->
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
