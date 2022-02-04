@@ -156,7 +156,7 @@ You can [call Power Automate Flows](advanced-flow-teams.md) by selecting **Call 
 
 1. To specify a response from the bot, select **+** to add a node, and then **Show a message** to add a new **Message** node.
 
-1. Enter what you want the bot to say in the text box. You can apply some basic formatting, such as bold, italics, and numbering. 
+1. Enter what you want the bot to say in the text box. You can apply some basic formatting, such as bold, italics, and numbering.
 
    You can also [use variables that you have defined elsewhere](authoring-variables-teams.md) in your bot conversation.
 

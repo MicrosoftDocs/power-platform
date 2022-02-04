@@ -14,8 +14,6 @@ ms.collection: virtual-agent
 
 # Upgrade a Dataverse for Teams environment for Power Virtual Agents
 
-
-
 When a user creates a bot in Microsoft Teams using the [Power Virtual
 Agents for Teams app](fundamentals-what-is-power-virtual-agents-teams.md), a Dataverse for Teams environment gets created for the team the customer
 selected. [Learn more about Dataverse for Teams](/power-platform/admin/about-teams-environment).
@@ -26,7 +24,7 @@ Tenant admins can upgrade a Dataverse for Teams environment to reach full functi
 [comparison](/power-platform/admin/about-teams-environment#conceptual-model) between Dataverse for Teams and Dataverse environments). Upgrading an environment can be useful, for example, if you are running into Dataverse for Teams [capacity limits](/power-platform/admin/about-teams-environment#capacity-limits).
 
 Admins can start the upgrade process from the [Power Platform admin
-center](https://admin.powerplatform.microsoft.com/). 
+center](https://admin.powerplatform.microsoft.com/).
 For more information about upgrading Dataverse environments, see the [Dataverse for Teams environments - Upgrade process topic](/power-platform/admin/about-teams-environment\#upgrade-process).
 
 ## Impact of upgrading an environment on Power Virtual Agents
@@ -53,9 +51,7 @@ After the upgrade, the bot will continue to work as it did before the upgrade wi
 
 If bot authors want to share a bot with other authors after you've upgraded an environment, you'll have to add the authors as team owners in the team where the environment was created. You can't add authors as team owners if the **Teams Owner** security group has been removed from the environment in the Power Platform admin center. This bug will be resolved in an upcoming update, and you'll be able to [share bots with co-authors](admin-share-bots-teams.md) as you currently can in standard Dataverse environments.
 
-
 >[!IMPORTANT]
 >After upgrading, qualified sessions will be considered as billed even if they do not leverage premium functionality such as premium connectors, non-Microsoft Teams channels or Azure Framework extensibility. For more information, see the [Licensing guide](https://go.microsoft.com/fwlink/?linkid=2085130).
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

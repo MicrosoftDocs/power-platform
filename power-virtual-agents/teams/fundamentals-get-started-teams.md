@@ -195,7 +195,7 @@ Power Virtual Agents comes with a built-in test bot that lets you test the bot i
 
 Now that we have the basics out of the way, let's add a more complex option to the topic - extended leave.
 
-1. Go back into the topic you created and go to the authoring canvas. 
+1. Go back into the topic you created and go to the authoring canvas.
 1. In the **Ask a question node** add an option for the user named *Extended leave*.
 
     :::image type="content" source="media/get-started-add-option.png" alt-text="Add an option to the question node.":::
@@ -240,7 +240,7 @@ Now you can let the employee know the experts have been notified of their reques
 Now that Bob has the time-off topic created, he can save the topic and add other topics that match the need for his HR bot to answer questions that Contoso employees might have.
 
 >[!TIP]
-> Don't forget to test your bot and ensure it is working as expected for the best employee experience. 
+> Don't forget to test your bot and ensure it is working as expected for the best employee experience.
 >You will see the message posted to the Teams channel when the flow is executed in the test canvas.
 
 ### Publish the bot
@@ -306,9 +306,9 @@ This section of the guide looks at how the experience might be for a team member
 
 ### Finding the bot in the Teams app store
 
-Melissa can easily find the bot you built in the Teams app store to install and chat with it in Teams. 
+Melissa can easily find the bot you built in the Teams app store to install and chat with it in Teams.
 
-Depending on where the bot was shared, she can find the bot in the **Built by your colleagues** section or the **Built by your org** section. To find the bot in the **Built by your org** section, it's a pre-requisite that the bot has been approved by an admin. 
+Depending on where the bot was shared, she can find the bot in the **Built by your colleagues** section or the **Built by your org** section. To find the bot in the **Built by your org** section, it's a pre-requisite that the bot has been approved by an admin.
 
 Melissa selects the chatbot's app tile, and then selects **Add for me**, as in the following screenshot:
 
