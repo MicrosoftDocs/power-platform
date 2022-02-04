@@ -998,17 +998,6 @@
         href: for-partners-delegated-administrator.md
   - name: Administer Power Apps
     href: admin-guide.md
-    items:
-    # - name: Environments 
-    #   items:
-      # - name: Create an environment in Power Apps
-      #   href: create-environment-powerapps.md
-      # - name: Working with environments and Power Apps
-      #   href: working-with-environments.md
-      # - name: Manage environments in Power Apps
-      #   href: environments-administration.md
-    - name: Power Apps Preview Program
-      href: preview-environments.md
   - name: Administer Power Automate
     href: about-flow-guide.md
   - name: Administer Power BI
