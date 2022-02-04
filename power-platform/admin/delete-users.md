@@ -20,6 +20,8 @@ search.app:
 ---
 # Delete users
 
+## Delete users from Microsoft 365 admin center
+
 Users are deleted in the Microsoft 365 admin center as follows:
 
 1. In the [Microsoft 365 admin center](https://admin.microsoft.com/), go to the **Users** > [**Active users**](https://go.microsoft.com/fwlink/p/?linkid=834822) page.
@@ -44,7 +46,9 @@ It can take from 30 minutes to 6 hours for a user's status to be updated in an e
 > ![Run diagnostics results.](media/run-diagnostics.png "Run diagnostics results")
 
 > [!NOTE]
-> A user deleted from the Microsoft 365 admin center is put on the **Deleted user** list for 30 days and can be restored as directed in [Restore a user](/microsoft-365/admin/add-users/restore-user?view=o365-worldwide).
+> A user deleted from the Microsoft 365 admin center is put on the **Deleted user** list for 30 days and can be restored as directed in [Restore a user](/microsoft-365/admin/add-users/restore-user?view=o365-worldwide). 
+> 
+> After the 30-day window, the user account is permanently deleted by an automatic deletion process. If you want to delete the user permanently without waiting for 30 days, you can [permanently delete the user](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-restore#permanently-delete-a-user) using Azure Active Directory (Azure AD) in the Azure portal.
 
 ## View the list of disabled users
 
@@ -69,6 +73,84 @@ It can take from 30 minutes to 6 hours for a user's status to be updated in an e
 
 > [!NOTE]
 > You can restore deleted users up to 30 days after deletion. When a deleted user is restored and a license is reassigned, the user's status is set to **Enabled** in the respective environments in which the user was disabled.
+
+## Delete users from Dataverse
+
+Users deleted from [Microsoft 365 admin center](https://admin.microsoft.com/) can remain in the Dynamics 365 environment(s) with a **Disabled** status. These users can now be deleted permanently from the Dynamics 365 environment(s). Deleting users in the Dynamics 365 environment goes through the similar deletion stages as in Azure AD. When you first delete the user in Dynamics 365 environment, the disabled user is 'soft deleted' and then you can 'permanently delete' the user.
+
+> [!NOTE]
+> Not all users with a **Disabled** status can be deleted. A user can be in a **Disabled** status in Dynamics 365 environment and still be active in Azure AD. The user can be in this disabled state when the license was removed or the user was removed from the security group of the environment. The user can also be disabled by updating the Status field (customizing the User form by allowing the Status field to be updated is required).
+
+### Users flagged for soft delete in Dataverse
+When a user is deleted from [Microsoft 365 admin center](https://admin.microsoft.com/), Dataverse flags the user as ready for 'soft delete' state in the Dynamics 365 environment. The following fields are set:
+1. Status = **Disabled**.
+2. AzureState (internal) = **SoftDeleted**.
+3. DeletedState (internal) = **NotDeleted**.
+4. User Name = **user Azure AD objectID** + User Name.
+5. Internal email address = **user Azure AD objectID** + Internal email address.
+6. Windows LiveID = **user Azure AD objectID** + WindowsLiveId.
+7. Licensed = **false**.
+
+> [!NOTE]
+> The user cannot be deleted at this stage from Dataverse because the user can be restored from the [Microsoft 365 admin center](https://admin.microsoft.com/). When the user is restored, the user is automatically restored in the Dynamics 365 environment(s) with an **Enabled** status and the above fields are reset back to its original state.
+
+## Soft delete users in Dataverse
+To soft delete a user in a Dynamics 365 environment, the user must first be deleted permanently in Azure AD. This applies to regular users and not the [application users](https://docs.microsoft.com/power-platform/admin/manage-application-users#create-an-application-user) or [stub users](https://docs.microsoft.com/power-platform/admin/create-users#how-stub-users-are-created).  Users deleted from [Microsoft 365 admin center](https://admin.microsoft.com/) are deleted permanently after 30-days or they can be [permanently deleted](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-restore#permanently-delete-a-user) manually.
+
+### Prerequisite to soft delete user in Dataverse:
+- All records owned by the user must be re-assigned to another user.
+- The following user owned tables with only basic depth privilege must be re-assigned to another user:
+1. UserForm.
+2. UserQueryVisualization.
+3. UserEntityUISettings.
+4. UserEntityInstanceData.
+5. ExchangeSyncIdMapping.
+6. UserQuery.
+7. UserApplicationMetadata.
+8. ActionCardUserSettings.
+
+## How to Soft delete users in Dataverse
+
+1. In the Power Platform admin center, select an environment.
+
+2. Select **Settings** > **Users + permissions** > **Users**.
+
+3. In the top menu bar, select **Manage users in Dynamics 365**. 
+
+4. From the drop-down menu, select **Disabled users**. 
+
+5. Select a user from the list.
+
+6. On the User Form, click the **Delete** button.
+
+### The following happens when a user is soft deleted:
+1. User record still exists in the environment and continue to have a **Disabled** status.
+2. AzureState (internal) = **NotExistsOrHardDeleted.**
+3. DeletedState (internal) = **SoftDeleted.**
+4. User cannot be restored.
+5. User's security role is un-assigned.
+6. User is removed from all Teams.
+
+## Audit log after user is soft deleted
+The name of the deleted user continues to show in the audit log records where the user was the creator or modifier of the record.
+
+## How to permanently delete users in Dataverse
+### View the list of soft deleted users
+
+1. In the Power Platform admin center, select an environment.
+
+2. Select **Settings** > **Users + permissions** > **Users**.
+
+3. In the top menu bar, select **Manage users in Dynamics 365**. 
+
+4. From the drop-down menu, select **Soft Deleted users**. 
+
+5. Select a soft deleted user to delete the user permanently in the Dynamics 365 environment. Only users who were soft deleted can be deleted permanently.
+
+6. On the User Form, click the **Delete** button.
+
+## Audit log after user is permanently deleted
+The name of the deleted user no longer shows in the audit log records where the user was the creator or modifier the record. The name is replaced with a **(No Name)** in these audit records.
 
 
 ### See also
