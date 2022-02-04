@@ -1,7 +1,7 @@
 ---
 title: "Restrict cross-tenant inbound and outbound access"
 description: "Use tenant restrictions to control access to SaaS cloud applications based on the Azure AD tenant. You can also enforce tenant isolation for Power Platform connections."  
-ms.date: 05/04/2021
+ms.date: 02/04/2022
 ms.service: power-platform
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -9,7 +9,6 @@ ms.topic: "article"
 applies_to: 
   - "Dynamics 365 (online)"
 ms.assetid: 
-caps.latest.revision: 63
 author: jimholtz
 ms.subservice: admin
 ms.author: jimholtz
@@ -151,6 +150,8 @@ Selecting the failed run will show details of the failed flow run.
 - This feature does not protect your tenant from inbound cross-cloud connections. If a tenant has tenant isolation turned on, all outgoing connections are restricted. However, incoming connections that are established from other tenants in other clouds are not restricted. This issue is currently being investigated. 
 
 - The feature is currently not available in Microsoft Dataverse services operated by 21Vianet.
+
+- This feature does not protect your tenant from inbound cross-cloud connections. If a tenant has tenant isolation turned on, all outgoing connections are restricted. However, incoming connections that are established from other tenants in other clouds are not restricted. This issue is currently being investigated.
 
 <!--
 With tenant restrictions, organizations can control access to SaaS cloud applications, based on the Azure AD tenant the applications use for single sign-on. With tenant restrictions, organizations can specify the list of tenants that their users are permitted to access. Azure AD then only grants access to these permitted tenants using Azure AD-based tenant restriction. 
