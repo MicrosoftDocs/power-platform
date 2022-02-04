@@ -84,13 +84,14 @@ Users deleted from the [Microsoft 365 admin center](https://admin.microsoft.com/
 ### Users flagged for soft delete in Dataverse
 
 When a user is deleted from the [Microsoft 365 admin center](https://admin.microsoft.com/), Dataverse flags the user as ready for 'soft delete' state in the Dynamics 365 environment. The following fields are set:
-1. Status = **Disabled**.
-2. AzureState (internal) = **SoftDeleted**.
-3. DeletedState (internal) = **NotDeleted**.
-4. User Name = **user Azure AD objectID** + User Name.
-5. Internal email address = **user Azure AD objectID** + Internal email address.
-6. Windows LiveID = **user Azure AD objectID** + WindowsLiveId.
-7. Licensed = **false**.
+
+- Status = **Disabled**.
+- AzureState (internal) = **SoftDeleted**.
+- DeletedState (internal) = **NotDeleted**.
+- User Name = **user Azure AD objectID** + User Name.
+- Internal email address = **user Azure AD objectID** + Internal email address.
+- Windows LiveID = **user Azure AD objectID** + WindowsLiveId.
+- Licensed = **false**.
 
 > [!NOTE]
 > The user cannot be deleted at this stage from Dataverse because the user can be restored from the [Microsoft 365 admin center](https://admin.microsoft.com/). When the user is restored, the user is automatically restored in the Dynamics 365 environment(s) with an **Enabled** status and the above fields are reset back to its original state.
@@ -103,14 +104,14 @@ To soft delete a user in a Dynamics 365 environment, the user must first be dele
 
 - All records owned by the user must be re-assigned to another user.
 - The following user owned tables with only basic depth privilege must be re-assigned to another user:
-  1. UserForm
-  2. UserQueryVisualization
-  3. UserEntityUISettings
-  4. UserEntityInstanceData
-  5. ExchangeSyncIdMapping
-  6. UserQuery
-  7. UserApplicationMetadata
-  8. ActionCardUserSettings
+  - UserForm
+  - UserQueryVisualization
+  - UserEntityUISettings
+  - UserEntityInstanceData
+  - ExchangeSyncIdMapping
+  - UserQuery
+  - UserApplicationMetadata
+  - ActionCardUserSettings
 
 ## How to Soft delete users in Dataverse
 
@@ -128,12 +129,12 @@ To soft delete a user in a Dynamics 365 environment, the user must first be dele
 
 ### The following happens when a user is soft deleted:
 
-1. The User record still exists in the environment and continues to have a **Disabled** status.
-2. AzureState (internal) = **NotExistsOrHardDeleted.**
-3. DeletedState (internal) = **SoftDeleted.**
-4. The user cannot be restored.
-5. The user's security role is un-assigned.
-6. The user is removed from all Teams.
+- The User record still exists in the environment and continues to have a **Disabled** status.
+- AzureState (internal) = **NotExistsOrHardDeleted.**
+- DeletedState (internal) = **SoftDeleted.**
+- The user cannot be restored.
+- The user's security role is un-assigned.
+- The user is removed from all Teams.
 
 ## Audit log after user is soft deleted
 
