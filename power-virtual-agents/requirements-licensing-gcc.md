@@ -40,9 +40,9 @@ In addition to the features and capabilities of Power Virtual Agents, organizati
 
 ### GCC High environment
 
-Beginning December 2021, eligible customers can choose to deploy Power Virtual Agents US Government to the GCC High environment, which enables single sign-on and seamless integration with Office 365 GCC High deployments.  
+Beginning February 2022, eligible customers can choose to deploy Power Virtual Agents US Government to the GCC High environment.  
 
-Microsoft has designed the platform and our operational procedures to meet the requirements aligning with the DISA SRG IL4 compliance framework. We anticipate the US Department of Defense contractor customer base and other Federal agencies currently leveraging Office 365 GCC High to use the Power Virtual Agents US Government GCC High deployment option. 
+Microsoft has designed the platform and our operational procedures to meet the requirements aligning with the DISA SRG IL4 compliance framework.  
 
 This option enables and requires the customer to leverage Azure AD Government for customer identities, in contrast to GCC, which leverages the public Azure AD. 
 
@@ -119,7 +119,7 @@ Power Virtual Agents US Government services run within Microsoft datacenters in 
 
 Power Virtual Agents US Government plans use the Office 365 customer administrator UI for customer administration and billing.
 
-The Power Virtual Agents US Government service maintains the actual resources, information flow, and data management, while relying on Office 365 to provide the visual styles that are presented to the customer administrator through their management console. For purposes of FedRAMP ATO inheritance, Power Virtual Agents US Government plans use Azure (including Azure for Government) ATOs for infrastructure and platform services, respectively.
+The Power Virtual Agents US Government service maintains the actual resources, information flow, and data management. For purposes of FedRAMP ATO inheritance, Power Virtual Agents US Government plans use Azure (including Azure for Government) ATOs for infrastructure and platform services, respectively.
 
 If you adopt the use of Active Directory Federation Services (ADFS) 2.0 and set up policies to help ensure your users connect to the services through single sign-on, any customer content that is temporarily cached will be in the United States.
 
@@ -157,10 +157,10 @@ You use a different set of URLs to access Power Virtual Agents US Government env
 | Commercial version | US Government version |
 |-------------------------|-------------------------|
 | [https://web.powerva.microsoft.com](https://web.powerva.microsoft.com) | [https://gcc.powerva.microsoft.us](https://gcc.powerva.microsoft.us) (GCC) </br></br>[https://high.powerva.microsoft.us](https://high.powerva.microsoft.us) (GCC High)|
-| [https://flow.microsoft.com](https://flow.microsoft.com/) | [https://gov.flow.microsoft.us](https://gov.flow.microsoft.us/) (GCC)</br></br>[https://high.flow.microsoft.us](https://high.flow.microsoft.us/) (GCC High) </br></br>[https://flow.appsplatform.us](https://flow.appsplatform.us) (DoD) |
-| [https://make.powerapps.com](https://make.powerapps.com/) | [https://make.gov.powerapps.us](https://make.gov.powerapps.us/) (GCC)<br /></br>[https://make.high.powerapps.us](https://make.high.powerapps.us/) (GCC High)<br /></br>[https://make.apps.appsplatform.us](https://make.apps.appsplatform.us/) (DoD) |
-| [https://flow.microsoft.com/connectors](https://flow.microsoft.com/connectors) | [https://gov.flow.microsoft.us/connectors](https://gov.flow.microsoft.us/connectors)<br /></br>[https://high.flow.microsoft.us/connectors](https://high.flow.microsoft.us/connectors) (GCC High)<br /></br>[https://flow.appsplatform.us](https://flow.appsplatform.us/) (DoD) |
-| [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com/) | [https://gcc.admin.powerplatform.microsoft.us](https://gcc.admin.powerplatform.microsoft.us/)<br /></br>[https://high.admin.powerplatform.microsoft.us](https://high.admin.powerplatform.microsoft.us/) (GCC High)<br /></br>[https://admin.appsplatform.us](https://admin.appsplatform.us/) (DoD) |
+| [https://flow.microsoft.com](https://flow.microsoft.com/) | [https://gov.flow.microsoft.us](https://gov.flow.microsoft.us/) (GCC)</br></br>[https://high.flow.microsoft.us](https://high.flow.microsoft.us/) (GCC High)  |
+| [https://make.powerapps.com](https://make.powerapps.com/) | [https://make.gov.powerapps.us](https://make.gov.powerapps.us/) (GCC)<br /></br>[https://make.high.powerapps.us](https://make.high.powerapps.us/) (GCC High)|
+| [https://flow.microsoft.com/connectors](https://flow.microsoft.com/connectors) | [https://gov.flow.microsoft.us/connectors](https://gov.flow.microsoft.us/connectors)<br /></br>[https://high.flow.microsoft.us/connectors](https://high.flow.microsoft.us/connectors) (GCC High)|
+| [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com/) | [https://gcc.admin.powerplatform.microsoft.us](https://gcc.admin.powerplatform.microsoft.us/)<br /></br>[https://high.admin.powerplatform.microsoft.us](https://high.admin.powerplatform.microsoft.us/) (GCC High) |
 
 
 For those customers that implement network restrictions, ensure access to the following domains is made available to your end users' access points:
@@ -192,8 +192,6 @@ Refer to the [IP ranges](https://www.microsoft.com/download/confirmation.aspx?i
 -    *.azure.net*
 -    *.crm.microsoftdynamics.us(GCC High)*
 -    *\*.high.dynamics365portals.us (GCC High)*
--    *\*.crm.appsplatform.us (DoD)*
--    *\*.appsplatformportals.us (DoD)*  
 
 Also, refer to the [IP ranges](https://www.microsoft.com/download/confirmation.aspx?id=57063) to enable you to access other Dataverse environments that users and administrators may create within your tenant and other Azure services that the platform leverages, including:
 
@@ -222,7 +220,6 @@ Feature or capability | Available in GCC | Available in GCC High
 [Power Virtual Agents Analytics](analytics-overview.md)&nbsp;<a id="LimsRef1" href="#LimsFn1"><sup>1</sup></a>| &#X2716;</br>No | &#X2716;</br>No
 [Power Virtual Agents Microsoft Teams app experience](teams/fundamentals-what-is-power-virtual-agents-teams.md) | &#X2716;</br>No | &#X2716;</br>No
 [Teams channel in the Power Virtual Agents web app](publication-add-bot-to-microsoft-teams.md) | &#X2714;</br>Yes | &#X2716;</br>No
-[Skills](configuration-add-skills.md) | &#X2714;</br>Yes | &#X2716;</br>No
 [Transfer to agents](configuration-hand-off-omnichannel.md) | &#X2714;</br>Yes | &#X2716;</br>No
 
 
