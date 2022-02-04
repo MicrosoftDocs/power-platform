@@ -18,7 +18,7 @@ This topic includes details about Power Virtual Agents Licensing. You can also r
 
 If you already have licenses, see the [Assign licenses and manage access to Power Virtual Agents](requirements-licensing.md) topic.
 
-Power Virtual Agents is [available in the US Government Community Cloud (GCC) plan](requirements-licensing-gcc.md). Refer to the [US Government Feature Availability Document](https://aka.ms/BAPFunctionalParity) for information about other US Government environments. 
+Power Virtual Agents is [available in the US Government Community Cloud (GCC) plan](requirements-licensing-gcc.md).
 
 For more information and to request assistance, visit the [Power Virtual Agents Community](https://powerusers.microsoft.com/t5/Power-Virtual-Agents-Community/ct-p/PVACommunity). 
 
