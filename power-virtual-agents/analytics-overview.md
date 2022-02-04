@@ -51,12 +51,12 @@ The analytics section is divided into a number of pages to give you multiple way
 
 ### See also
 
-| Topic                                                     | Description                                                                                                |
-| --------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
-| [Analyze bot performance and usage](analytics-summary.md) | Review overall analytics for your bots.                                                                    |
-| [Analyze customer satisfaction](analytics-csat.md)        | Identify overall trends in customer satisfaction, and where satisfaction is falling behind.                |
-| [Analyze topic usage](analytics-topic-details.md)         | See how individual topics are doing and how well they're working at resolving issues.                      |
-| [Analyze session information](analytics-sessions.md)      | Review and monitor how sessions are doing, including analytics from the topics triggered during a session. |
-| [Analyze billed session information]                      | (analytics-billed-sessions.md)                                                                             | Understand how sessions are being billed, based on their usage. |
+| Topic                                                              | Description                                                                                                |
+| ------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------- |
+| [Analyze bot performance and usage](analytics-summary.md)          | Review overall analytics for your bots.                                                                    |
+| [Analyze customer satisfaction](analytics-csat.md)                 | Identify overall trends in customer satisfaction, and where satisfaction is falling behind.                |
+| [Analyze topic usage](analytics-topic-details.md)                  | See how individual topics are doing and how well they're working at resolving issues.                      |
+| [Analyze session information](analytics-sessions.md)               | Review and monitor how sessions are doing, including analytics from the topics triggered during a session. |
+| [Analyze billed session information](analytics-billed-sessions.md) | Understand how sessions are being billed, based on their usage.                                            |
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
