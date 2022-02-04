@@ -26,7 +26,7 @@ The Power Virtual Agents US Government Service Description serves as an overlay 
 
 Licensing for Power Virtual Agents US Government plans is the same as for public cloud. They are available through the Volume Licensing and Cloud Solution Provider purchasing channels. For more information, see the [Assign user licenses and manage access](requirements-licensing.md) topic.
 
-The Power Virtual Agents GCC environment is compliant with the Federal requirements for cloud services, including FedRAMP High.
+The Power Virtual Agents GCC environment is compliant with the Federal requirements for cloud services, including FedRAMP High.  
 
 In addition to the features and capabilities of Power Virtual Agents, organizations that use Power Virtual Agents US Government plans benefit from the following unique features:
 
