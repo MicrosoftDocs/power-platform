@@ -161,7 +161,6 @@ The name of the deleted user no longer shows in the audit log records where the 
 
 
 ### See also
-
 [Delete a user from your organization](/microsoft-365/admin/add-users/delete-a-user?view=o365-worldwide) <br />
 [Troubleshooting: Common user access issues](troubleshooting-user-needs-read-write-access-organization.md)
 
