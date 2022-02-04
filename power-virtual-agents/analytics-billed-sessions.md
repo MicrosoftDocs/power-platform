@@ -76,7 +76,7 @@ The following table helps illustrate which sessions are going to be billed and w
 
 ### What's the difference between total sessions, engaged sessions, and billed sessions?
 
-The number of **billed sessions** is used to measure capacity, and is allocated when you purchase a license. 
+The number of **billed sessions** is used to measure capacity, and is allocated when you purchase a license.
 
 **Total sessions** and **engaged sessions** are metrics used to determine how efficient a bot is in addressing a user's questions.
 

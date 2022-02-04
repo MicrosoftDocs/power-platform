@@ -18,18 +18,15 @@ ms.collection: virtual-agent
 Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
+>
 > - [Power Virtual Agents web app](authoring-language-support.md)
 > - [Power Virtual Agents app in Microsoft Teams](teams/authoring-language-support-teams.md)
 
-
 You can create chatbots in Power Virtual Agents in a number of languages. This means that your bots can reach a much broader audience and engage with more markets all around the world.
-
 
 ## Specify a language for your bot
 
 You specify the target language when you first [create a bot](authoring-first-bot.md).
-
-**To create a new bot in your target language**
 
 1. In the **Create a new bot** window, select **Language**.
 
@@ -78,6 +75,5 @@ Power Virtual Agents supports languages in three stages. The stage indicates how
 ### See also
 
 [Data locations for organizations using Power Virtual Agents](data-location.md)
-
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

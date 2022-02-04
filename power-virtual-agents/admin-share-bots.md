@@ -184,7 +184,7 @@ The **Environment security roles** section shows when you share a bot and only i
 You must be a **System administrator** of the environment where the bot is located to view and add security roles.
 
 >[!NOTE]
->You can only *assign* security roles when sharing a bot. You can't remove security roles when sharing. For full security role management, [use the Power Platform admin center](/power-platform/admin/create-users-assign-online-security-roles#assign-a-security-role-to-a-user).  
+>You can only _assign_ security roles when sharing a bot. You can't remove security roles when sharing. For full security role management, [use the Power Platform admin center](/power-platform/admin/create-users-assign-online-security-roles#assign-a-security-role-to-a-user).  
 > Learn more about [security roles](/power-platform/admin/security-roles-privileges) and [predefined security roles](/power-platform/admin/database-security#predefined-security-roles).
 
 ### Assign the Environment maker security role during bot sharing

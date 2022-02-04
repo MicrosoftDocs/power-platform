@@ -15,12 +15,11 @@ ms.collection: virtual-agent
 
 # Work with conversation transcripts
 
-When you [export Power Virtual Agents chatbot conversation transcripts from Microsoft Dataverse](analytics-sessions.md), you will be presented with many fields. 
+When you [export Power Virtual Agents chatbot conversation transcripts from Microsoft Dataverse](analytics-sessions.md), you will be presented with many fields.
 
-Each of these fields includes information relevant to the chatbot conversation. 
+Each of these fields includes information relevant to the chatbot conversation.
 
 This topic lists the most important fields found in Power Virtual Agents conversation transcripts, and also provides guidance on bringing analytics information into Power BI with dataflows.
-
 
 ## Conversation transcripts fields
 
@@ -40,9 +39,9 @@ The following are the most relevant to chatbots created with Power Virtual Agent
 
 The *Content* field is a raw log of all the activities users have with the bot. Common activity types include *message* and *event*:
 
--   *Message* activities represent content shown within a conversation. *Message* activities may contain text, speech, interactive cards, and binary or unknown attachments.
+- *Message* activities represent content shown within a conversation. *Message* activities may contain text, speech, interactive cards, and binary or unknown attachments.
 
--   *Event* activities communicate programmatic information from a client or channel to a bot.
+- *Event* activities communicate programmatic information from a client or channel to a bot.
 
 For more information on activity types, see the [Bot Framework Activity schema](https://github.com/Microsoft/botframework-sdk/blob/master/specs/botframework-activity/botframework-activity.md).
 
@@ -64,8 +63,7 @@ The following are some of the key fields you will find within the *Content* JSON
 | `channeldata` | <ul><li>Contains channel data:<ul><li>for messages:<ul><li>`DialogTraceDetail`</li><li>`DialogErrorDetail`</li><li>`VariableDetail`<ul><li>Contains the value assigned to a variable.</li></ul></li><li>`CurrentMessageDetail`</li></ul></li><li>for events:<ul><li>`cci_trace_id`</li><li>`traceHistory`</li><li>`enableDiagnostics`</li><li>`clientTimestamp`</li><li>`clientActivityId`</li></ul></li></ul> |
 | `name` | Name of the event activity (for example, `SetPVAContext`) |
 
-
-#### Common activity value types 
+#### Common activity value types
 
 | **Activity value type** | **Description**|
 |-|-|
@@ -96,7 +94,6 @@ There are a few approaches one can take to build custom reports form conversatio
 |-------------------------|-------------------------|
 | Easiest implementation. | Refresh time may increase as transcripts increase. </br>High cost for storage within Dataverse.|
 
-
 ### Standard Azure Data Lake Store approach
 
 Export Dataverse data to Azure Data Lake Store.
@@ -113,10 +110,9 @@ Power BI refreshes data from the Dataflow and all compute infrastructure is mana
 |-------------------------|-------------------------|
 | Low storage cost in Azure Data Lake Store. </br>Moderately simple implementation. </br>No Azure Compute required. | Refresh time may increase as transcripts each day increase. |
 
-
 ### Azure Data Lake Store (ADLS) + Synapse approach
 
-If data size in the Standard Azure Data Lake Store approach causes slow refreshes or other operational problems, you can use [Azure Synapse Analytics](https://azure.microsoft.com/services/synapse-analytics/) and integrate it [into Power BI](https://powerbi.microsoft.com/en-us/blog/announcing-azure-synapse-analytics-public-preview/).
+If data size in the Standard Azure Data Lake Store approach causes slow refreshes or other operational problems, you can use [Azure Synapse Analytics](https://azure.microsoft.com/services/synapse-analytics/) and integrate it [into Power BI](https://powerbi.microsoft.com/blog/announcing-azure-synapse-analytics-public-preview/).
 
 :::image type="content" source="media/analytics-sessions-transcripts/transcripts-asynapse.png" alt-text="Diagram of data flowing from Dataverse into Azure Data Lake and being processed by Azure Synapse and Power Platform.":::
 
@@ -124,13 +120,10 @@ If data size in the Standard Azure Data Lake Store approach causes slow refreshe
 |-------------------------|-------------------------|
 | Refresh time is constant. </br>Moderately simple implementation. </br>Low storage cost in Azure Data Lake Store. | Compute cost for Azure Synapse. |
 
-
 ## Tips for getting the most out of your conversation transcripts
 
 [Variables can be used to store data relevant to your bot content](authoring-variables.md) or bot user. Parsing out the variable and its value from the conversation transcript lets you filter or slice the data by the variable
 
 In many places the conversation transcripts refer to content by its ID. For example, the ID of the topic that is being redirected to by the current topic is only referenced by its ID. To get the name of the topic, look up the name of the topic [from the bot content](gdpr-export.md#bot-content-as-tenant-admin).
-
-
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -126,7 +126,7 @@ You can use the response from the recipient as dynamic content for later steps i
 
 ## Send proactive messages or cards to multiple recipients
 
-Depending on the scenario, you may want to send the same proactive message or card to multiple recipients at once. 
+Depending on the scenario, you may want to send the same proactive message or card to multiple recipients at once.
 
 This section contains examples for sending messages to multiple recipients.
 
@@ -198,7 +198,7 @@ Power Virtual Agents allows you to control detail behavior on your bot under **S
 
 ### Label sent message or card as a notification
 
-**Label as notification** controls whether the message or card will have the text **Notification via** in front of the bot's name. Labeling the bot's response allows the recipient to identify the bot's response to their inquiry. 
+**Label as notification** controls whether the message or card will have the text **Notification via** in front of the bot's name. Labeling the bot's response allows the recipient to identify the bot's response to their inquiry.
 
 :::image type="content" source="media/advanced-proactive-message/image11.png" alt-text="The setting shows Notification via bot name.":::
 

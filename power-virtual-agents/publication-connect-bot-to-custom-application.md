@@ -26,6 +26,9 @@ Connecting your bot to a web-based app is relatively straightforward as it invol
 
 ## Prerequisites
 
+- [.NET Core SDK](https://dotnet.microsoft.com/download) version 2.1
+- Nuget package [Microsoft.Bot.Connector.DirectLine](https://www.nuget.org/packages/Microsoft.Bot.Connector.DirectLine)
+- A bot created in Power Virtual Agents that you want to connect to your app
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 
 ## Connect your bot to a web-based app
@@ -47,12 +50,6 @@ If your goal is to connect to Azure Bot Service channels, besides following the 
 
 >[!IMPORTANT]
 >Instructions in this section require software development from you or your developers. It is intended for experienced IT professionals, such as IT admins or developers who have a solid understanding of developer tools, utilities, and IDEs.
-
-### Prerequisites
-
-- [.NET Core SDK](https://dotnet.microsoft.com/download) version 2.1
-- Nuget package [Microsoft.Bot.Connector.DirectLine](https://www.nuget.org/packages/Microsoft.Bot.Connector.DirectLine)
-- A bot created in Power Virtual Agents that you want to connect to your app
 
 ### Code samples
 
@@ -151,8 +148,6 @@ The response will be:
 
 After retrieving the *Direct Line* token, you are ready to have a conversation with your Power Virtual Agents bot with Direct Line. Follow the instructions at [Bot Framework Direct Line API](/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-concepts?view=azure-bot-service-4.0&preserve-view=true) to start a conversation and send and receive messages.
 
-#### Sample code example
-
 The following example uses samples from the [Connector sample code](https://github.com/microsoft/PowerVirtualAgentsSamples/tree/master/BotConnectorApp) to start a conversation and send and receive messages from a Power Virtual Agents bot.
 
 1. Initialize a DirectLineClient instance with the *Direct Line* token and start a conversation:
@@ -219,8 +214,6 @@ The following example uses samples from the [Connector sample code](https://gith
 ### Refresh Direct Line token
 
 You may need to add code to refresh the *Direct Line* token if your application has a lengthy conversation with the bot. The token expires but can be refreshed before it expires; learn more at [Direct Line Authentication](/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0#secrets-and-tokens&preserve-view=true).
-
-#### Sample code example
 
 The following example uses samples from the [Connector sample code](https://github.com/microsoft/PowerVirtualAgentsSamples/tree/master/BotConnectorApp) to refresh the token for an existing Power Virtual Agents conversation:
 

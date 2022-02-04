@@ -81,10 +81,10 @@ Sign in to the Power Virtual Agents bot you want to connect to your omnichannel 
 
     :::image type="content" source="media/transfer-no-oc.png" alt-text="Message that says you haven't set up omnichannel integration in this environment.":::
 
-1. Follow the steps to create or reuse an existing Azure application ID. Copy the *Application (client) ID* and paste it in the text box provided.
+1. Follow the steps to create or reuse an existing Azure application ID. Copy the _Application (client) ID_ and paste it in the text box provided.
 
     >[!IMPORTANT]
-    >Omnichannel models bots as "application users" in the system. Therefore, the *Application (client) ID* that you use must be unique to your organization (your Microsoft Dataverse organization or environment).
+    >Omnichannel models bots as "application users" in the system. Therefore, the _Application (client) ID_ that you use must be unique to your organization (your Microsoft Dataverse organization or environment).
 
 1. Power Virtual Agents uses a [Teams channel](./publication-fundamentals-publish-channels.md) to communicate with Omnichannel for Customer Service. If a Teams channel is not enabled, a Teams channel will be enabled when you select **Next**.
 
@@ -196,13 +196,13 @@ This action can be used to hang up the call. Once the conversation reaches this 
 
     :::image type="content" source="media/handoff-voice-config-hangup.png" alt-text="Handoff Voice Config Hangup.":::
 
-### *bot.CustomerPhoneNumber* variable
+### _bot.CustomerPhoneNumber_ variable
 
 This variable contains the phone number of the customer who called the bot. This is also known as CallerID.
 
-You can also use the "Is Empty" condition in the authoring experience to check if the conversation is from a caller on a phone (which will always return *False*), or from messaging  (will always return *True*).
+You can also use the "Is Empty" condition in the authoring experience to check if the conversation is from a caller on a phone (which will always return _False_), or from messaging  (will always return _True_).
 
-### *bot.OrganizationPhoneNumber* variable
+### _bot.OrganizationPhoneNumber_ variable
 
 This variable contains the phone number the customer dialed to reach the bot.
 

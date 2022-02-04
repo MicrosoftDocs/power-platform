@@ -14,7 +14,6 @@ ms.collection: virtual-agent
 
 # Responding to requests to delete data from Power Virtual Agents
 
-
 Power Virtual Agents offers the following experiences to delete personal data for a specific user:
 
 * [Bot chat logs](#delete-power-virtual-agents-bot-chat-logs)
@@ -25,8 +24,7 @@ Power Virtual Agents offers the following experiences to delete personal data fo
 
 ## Prerequisites
 
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
-
+* [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 
 ## Delete Power Virtual Agents bot chat logs
 
@@ -59,6 +57,5 @@ All bot system telemetry is automatically deleted within 29 days. No action from
 
 > [!NOTE]
 > Removing personal data includes removing all personal data and system-generated logs except audit log information.
-
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

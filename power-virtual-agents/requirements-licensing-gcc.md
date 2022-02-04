@@ -30,26 +30,25 @@ The Power Virtual Agents GCC environment is compliant with the Federal requireme
 
 In addition to the features and capabilities of Power Virtual Agents, organizations that use Power Virtual Agents US Government plans benefit from the following unique features:
 
--   Your organization's customer content is physically separated from customer content in non-US-Government plans for Power Virtual Agents.
+- Your organization's customer content is physically separated from customer content in non-US-Government plans for Power Virtual Agents.
 
--   Your organization's customer content is stored within the United States.
+- Your organization's customer content is stored within the United States.
 
--   Access to your organization's customer content is restricted to screened Microsoft personnel.
+- Access to your organization's customer content is restricted to screened Microsoft personnel.
 
--   Power Virtual Agents US Government complies with all certifications and accreditations that US Public Sector customers require.
+- Power Virtual Agents US Government complies with all certifications and accreditations that US Public Sector customers require.
 
 ## Customer eligibility
 
 Power Virtual Agents US Government plans are available to:
 
--   \(1\) US federal, state, local, tribal, and territorial government entities, and
+- \(1\) US federal, state, local, tribal, and territorial government entities, and
 
--   \(2\) other entities, which handle data that is subject to government regulations and requirements and where use of Power Virtual Agents US Government plans is appropriate to meet these requirements, subject to validation of eligibility. 
+- \(2\) other entities, which handle data that is subject to government regulations and requirements and where use of Power Virtual Agents US Government plans is appropriate to meet these requirements, subject to validation of eligibility.
 
 Microsoft's validation of eligibility includes confirmation of handling data subject to International Traffic in Arms Regulations (ITAR), law enforcement data subject to the FBI's Criminal Justice Information Services (CJIS) Policy, or other government-regulated or controlled data. Validation may require sponsorship by a government entity with specific requirements for the handling of data.
 
 Entities with questions about eligibility for Power Virtual Agents US Government should consult their account team. Microsoft revalidates eligibility when it renews customer contracts for Power Virtual Agents US Government plans.
-
 
 ## Differences between customer data and customer content
 
@@ -99,7 +98,7 @@ Power Virtual Agents US Government plans are designed to support the Federal Ris
 >Power Virtual Agents is authorized as a service within the Azure Government FedRAMP ATO.  
 >For more information, including how to access the FedRAMP documents, review the [FedRAMP Marketplace](https://marketplace.fedramp.gov/#!/product/azure-government-includes-dynamics-365?sort=productName&productNameSearch=azure%20government).
 
-Power Virtual Agents US Government plans have features designed to support customers' CJIS Policy requirements for law enforcement agencies. 
+Power Virtual Agents US Government plans have features designed to support customers' CJIS Policy requirements for law enforcement agencies.
 
 ## Power Virtual Agents US Government and other Microsoft services
 
@@ -152,46 +151,40 @@ You use a different set of URLs to access Power Virtual Agents US Government env
 | [https://flow.microsoft.com/connectors](https://flow.microsoft.com/connectors) | [https://gov.flow.microsoft.us/connectors](https://gov.flow.microsoft.us/connectors)<br /></br>[https://high.flow.microsoft.us/connectors](https://high.flow.microsoft.us/connectors) (GCC High)<br /></br>[https://flow.appsplatform.us](https://flow.appsplatform.us/) (DoD) |
 | [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com/) | [https://gcc.admin.powerplatform.microsoft.us](https://gcc.admin.powerplatform.microsoft.us/)<br /></br>[https://high.admin.powerplatform.microsoft.us](https://high.admin.powerplatform.microsoft.us/) (GCC High)<br /></br>[https://admin.appsplatform.us](https://admin.appsplatform.us/) (DoD) |
 
-
 For those customers that implement network restrictions, ensure access to the following domains is made available to your end users' access points:
 
-### GCC customers:
+### GCC customers
 
--   *.azure.net*
--   *.azure.us*
--   *.azure-apihub.us*
--   *.azureedge.net*
--   *.crm9.dynamics.com*
--   *.microsoft.com*
--   *.microsoft.us*
--   *.microsoftonline.com*
--   *.usgovcloudapi.net*
--   *.windows.net*
-
+- *.azure.net*
+- *.azure.us*
+- *.azure-apihub.us*
+- *.azureedge.net*
+- *.crm9.dynamics.com*
+- *.microsoft.com*
+- *.microsoft.us*
+- *.microsoftonline.com*
+- *.usgovcloudapi.net*
+- *.windows.net*
 
 Refer to the [IP ranges](https://www.microsoft.com/download/confirmation.aspx?id=57063) for *AzureCloud.usgovtexas* and*AzureCloud.usgovvirginia* to enable access to Dataverse instances that users and administrators may create within your tenant.
-
 
 ## Connectivity between Power Virtual Agents US Government and Public Azure Cloud services
 
 Azure is distributed among multiple clouds. By default, tenants are allowed to open firewall rules to a cloud-specific instance, but cross-cloud networking is different and requires opening specific firewall rules to communicate between services. If you are a Power Virtual Agents customer and you have existing SQL instances in Azure public cloud which you need to access, you must open specific firewall ports in SQL to the Azure Government Cloud IP space for the following datacenters:
 
--   USGov Virginia
+- USGov Virginia
 
--   USGov Texas
-
+- USGov Texas
 
 Refer to the [Azure IP Ranges and Service Tags  US Government Cloud](https://www.microsoft.com/download/confirmation.aspx?id=57063) document, focusing attention on *AzureCloud.usgovtexas*, and*AzureCloud.usgovvirginia*. Also note that these are the IP ranges required for your end users to have access to the service URLs.
-
-
 
 ## Power Virtual Agents US Government feature limitations
 
 Some of the features available in the commercial version of Power Virtual Agents are not available to Power Virtual Agents US Government customers. The Power Virtual Agents team is actively working on making these features available to US Government customers and will update this article when these features become available.
 
--   [Power Virtual Agents Analytics](analytics-overview.md). Alternatively, you can create [Custom Analytics (blog)](https://powervirtualagents.microsoft.com/blog/custom-analytics-solution-for-power-virtual-agents/) using Power BI dashboard.
+- [Power Virtual Agents Analytics](analytics-overview.md). Alternatively, you can create [Custom Analytics (blog)](https://powervirtualagents.microsoft.com/blog/custom-analytics-solution-for-power-virtual-agents/) using Power BI dashboard.
 
--   [Power Virtual Agents Microsoft Teams app experience](teams/fundamentals-what-is-power-virtual-agents-teams.md).
+- [Power Virtual Agents Microsoft Teams app experience](teams/fundamentals-what-is-power-virtual-agents-teams.md).
 
 ## Requesting support
 

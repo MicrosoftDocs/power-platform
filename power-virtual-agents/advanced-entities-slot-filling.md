@@ -151,7 +151,7 @@ Now that you've done the work of giving the bot the knowledge about outdoor gear
 
 ## Slot filling
 
-_Slot filling_ is a natural language understanding concept that means saving an extracted entity to an object. However, in Power Virtual Agents, slot filling means placing the extracted entity value into a variable.
+*Slot filling* is a natural language understanding concept that means saving an extracted entity to an object. However, in Power Virtual Agents, slot filling means placing the extracted entity value into a variable.
 
 We will continue to use the outdoor gear topic as an example, which is triggered by typing "I want to buy something" in the test chat.
 
@@ -175,7 +175,7 @@ In this example, the user wrote "I want to buy some trekking gears". This includ
 
 :::image type="content" source="media/entities-13(draft).png" alt-text="Multiple and proactive slot filling." border="false":::
 
-In tracking between topics, you can see the bot takes in this user input, and intelligently skips the question node asking for the product category. 
+In tracking between topics, you can see the bot takes in this user input, and intelligently skips the question node asking for the product category.
 
 The bot is always actively listening to the user input, remembering information upfront so it can skip unnecessary steps as appropriate.
 

@@ -13,31 +13,26 @@ ms.custom: "cex"
 ms.collection: virtualagent
 ---
 
-# Example 4 - Display a form with a Submit button in Power Virtual Agents 
+# Example 4 - Display a form with a Submit button in Power Virtual Agents
 
-You can enhance your bot by developing custom dialogs with [Bot Framework Composer](/composer/) and then adding them to your Power Virtual Agents bot. 
+You can enhance your bot by developing custom dialogs with [Bot Framework Composer](/composer/) and then adding them to your Power Virtual Agents bot.
 
 In this example, you'll learn how to display a form with a Submit button in Power Virtual Agents by using Composer.
 
 Before you begin, ensure you read [Extend your bot with Bot Framework Composer](advanced-bot-framework-composer.md) to understand how Composer integrates with Power Virtual Agents.
 
-
-
 >[!IMPORTANT]
 >Bot Framework Composer integration is not available to users who only have the [Teams Power Virtual Agents license](requirements-licensing-subscriptions.md). You must have a [trial](sign-up-individual.md) or full Power Virtual Agents license.
-
 
 ## Prerequisites
 
 - See how to [Extend your bot with Bot Framework Composer](advanced-bot-framework-composer.md)
-- Follow the instructions described in: 
+- Follow the instructions described in:
   - [Example 1 - Show an Adaptive Card in Power Virtual Agents](advanced-bot-framework-composer-example1.md)
   - [Example 2 - Display a multi-select options list in Power Virtual Agents](advanced-bot-framework-composer-example2.md)
   - [Example 3 - Use Bing Search as a fallback in Power Virtual Agents](advanced-bot-framework-composer-example3.md)
 - [Introduction to Bot Framework Composer](/composer/introduction)
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
-
-
 
 ## Display a form with a Submit button
 
@@ -45,9 +40,10 @@ Open the Power Virtual Agents bot used in the previous examples.
 
 On the left-hand menu, select **Topics**. Select the down-arrow symbol next to **+ New topic**, and then select **Open in Bot Framework Composer**.
 
-Select **+ Add new trigger** to add another Bot Framework trigger of type **Intent recognized** to the **Contoso Meal Delivery Service** dialog and call it **StartTrial**. 
+Select **+ Add new trigger** to add another Bot Framework trigger of type **Intent recognized** to the **Contoso Meal Delivery Service** dialog and call it **StartTrial**.
 
 Add the following trigger phrases and select **Submit**.
+
 - **start trial**
 - **sign up to try**
 - **register to try service**
@@ -55,7 +51,6 @@ Add the following trigger phrases and select **Submit**.
 :::image type="content" source="media/Composer_Example4/E4_createStartTrial_trigger.png" alt-text="Composer - create a new trigger.":::
 
 After the **StartTrial** trigger is added, go to the **Bot Responses** tab for this **Contoso Meal Delivery Service** dialog. Switch to **Show code** view, and insert the following Adaptive Card JSON:
-
 
 ````lg
 
@@ -109,13 +104,13 @@ Note that every data field in this Adaptive card was given an ID: **Name**, **Ad
 
 Next, add the following Activity below the Adaptive Card JSON:
 
-
 ````lg
 # AdaptiveCard_StartTrialForm()
 [Activity
     Attachments = ${json(adaptivecardjson_StartTrialForm())}
 ]
 ````
+
 :::image type="content" source="media/Composer_Example4/E4_createSubmitFormActivity.png" alt-text="Composer - create Activity.":::
 
 Go to the **Create** tab in Composer and select the **StartTrial** trigger. Add the **Ask a question** action and select type **Text**.
@@ -157,10 +152,10 @@ Once your new Composer content is successfully published, you can now see that *
 >[!NOTE]
 >You might need to refresh your **Topics** page to see the new bot content that has been added from Composer.
 
-
 :::image type="content" source="media/Composer_Example4/E4_StartTrial_inTopicsList.png" alt-text="Power Virtual Agents Topics page.":::
 
 Make sure **Track between topics** is turned on, and test your new bot content by entering the following text in the **Test bot** pane in Power Virtual Agents to start a bot conversation:
+
 - **How do I sign up for a trial?**
 
 :::image type="content" source="media/Composer_Example4/Example4_cropped.png" alt-text="Power Virtual Agents test.":::
@@ -168,6 +163,5 @@ Make sure **Track between topics** is turned on, and test your new bot content b
 >[!Note]
 >Selecting **Publish** in Composer makes the changes available for testing, but does not automatically Publish your Power Virtual Agents bot.  
 >Use the [Publish](publication-fundamentals-publish-channels.md) feature in Power Virtual Agents to publish your bot changes to channels.
-
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

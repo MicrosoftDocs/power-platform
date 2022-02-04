@@ -17,6 +17,7 @@ ms.collection: virtual-agent
 Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
+>
 > - [Power Virtual Agents web app](analytics-summary.md)
 > - [Power Virtual Agents app in Microsoft Teams](teams/analytics-summary-teams.md)
 
@@ -30,21 +31,20 @@ The Summary page gives you a broad overview of your bot's performance. It uses a
 
 The Summary page includes a variety of charts with graphical views of your bot's key performance indicators. For information about each chart, see:
 
-* [Summary charts](#summary-charts)
-* [Engagement over time chart](#engagement-over-time-chart)
-* [Session outcomes over time chart](#session-outcomes-over-time-chart)
-* [Resolution rate drivers chart](#resolution-rate-drivers-chart)
-* [Escalation rate drivers chart](#escalation-rate-drivers-chart)
-* [Abandon rate drivers chart](#abandon-rate-drivers-chart)
+- [Summary charts](#summary-charts)
+- [Engagement over time chart](#engagement-over-time-chart)
+- [Session outcomes over time chart](#session-outcomes-over-time-chart)
+- [Resolution rate drivers chart](#resolution-rate-drivers-chart)
+- [Escalation rate drivers chart](#escalation-rate-drivers-chart)
+- [Abandon rate drivers chart](#abandon-rate-drivers-chart)
 
 The Engagement Rate Drivers, Abandon Rate Drivers, and Resolution Rate Drivers charts use natural language understanding to group issues as topics. These charts show you the topics that are having the most impact on the performance of your bot.
- 
+
 By default, the page shows you key performance indicators for the last seven days. To change the time period to the last 30 days, select **Last 30 days** from the drop-down list at the top of the page.
 
 ## Prerequisites
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
-
 
 ## Summary charts
 
@@ -129,8 +129,5 @@ The chart displays the impact as a red or blue bar. A red bar indicates that the
 Improving the abandon rate for the top abandon-rate topics in red has the greatest impact on improving the overall abandon rate.
 
 To see additional information about each topic, select the **Detail** link to display the topic details page. For more information, see [Topic details page](analytics-topic-details.md).
-
-
-
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

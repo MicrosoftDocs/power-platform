@@ -59,7 +59,6 @@ You can also [export data from the ConversationTranscripts table](analytics-sess
 
 Microsoft provides the ability to access, delete, and export certain customer data through Azure Portal so that tenant admins can execute [Data Subject Requests](/compliance/regulatory/gdpr-dsr-azure#introduction-to-data-subject-requests-dsrs).
 
-
 1. Go to the [User Privacy Overview in Azure Portal](https://portal.azure.com/#blade/Microsoft_Azure_Policy/UserPrivacyMenuBlade/Overview).
 
 1. Select **Add export request**.
