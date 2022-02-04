@@ -19,7 +19,7 @@ search.app:
 ---
 # Monitor Microsoft Dataverse usage
 
-[!INCLUDE[cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
+
 
 The Dataverse analytics in the Power Platform admin center will provide details on Dataverse usage in the selected environment. You can change environments by selecting **Change filters** and then selecting your environment. You can also adjust the date range. Only the past 28 days of data are available.
 
