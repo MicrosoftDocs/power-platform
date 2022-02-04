@@ -25,9 +25,10 @@ You can create chatbots in the Power Virtual Agents app in Teams and then share 
 
 The very first step is to add the Power Virtual Agents app. Then you can create bots.
 
->[!NOTE]
->You can only see bots in the version of Power Virtual Agents where you created them.  
->This means if you create a bot with the Power Virtual Agents app in Microsoft Teams, you will not see the bot in the web app of Power Virtual Agents at [https://web.powerva.microsoft.com](https://web.powerva.microsoft.com).
+> [!NOTE]
+> You can only see bots in the version of Power Virtual Agents where you created them.  
+>
+> This means if you create a bot with the Power Virtual Agents app in Microsoft Teams, you will not see the bot in the web app of Power Virtual Agents at [https://web.powerva.microsoft.com](https://web.powerva.microsoft.com).
 
 ## Prerequisites
 
@@ -53,8 +54,8 @@ When you create a bot, it has to go into a team - everyone in that team will be 
 
 All bots have to belong to a team. You can [create a new team](/MicrosoftTeams/get-started-with-teams-create-your-first-teams-and-channels#create-a-team) if necessary, before you add a bot to it.
 
->[!IMPORTANT]
->You can't create a bot in a hidden membership team (a team where members can't see the details of other members). If you try to do so, you'll see an error message, and you'll need to create your bot in another team that doesn't have the [hiddenmembership](/graph/api/resources/group?view=graph-rest-1.0&preserve-view=true#group-visibility-options) setting.
+> [!IMPORTANT]
+> You can't create a bot in a hidden membership team (a team where members can't see the details of other members). If you try to do so, you'll see an error message, and you'll need to create your bot in another team that doesn't have the [hiddenmembership](/graph/api/resources/group?view=graph-rest-1.0&preserve-view=true#group-visibility-options) setting.
 
 The first time you create a bot in a team, it will take 1 to 10 minutes to build the necessary systems in the backend, but every bot after that will take much less time (around 1 or 2 minutes).
 
@@ -67,8 +68,8 @@ The first time you create a bot in a team, it will take 1 to 10 minutes to build
 
    :::image type="content" source="media/first-bot-delay.png" alt-text="A message says You're the first person to create a bot in this team. We'll need to do some setting up, so loading time will be a little longer than usual.":::
 
-   >[!NOTE]
-   >If you were just recently added to a team that already has a bot, you may still see this message as Microsoft Teams is still adding you to the team. You should wait 15 minutes and then create your bot. You should also wait for 15 minutes before finding the team in the **Chatbots** tab.
+   > [!NOTE]
+   > If you were just recently added to a team that already has a bot, you may still see this message as Microsoft Teams is still adding you to the team. You should wait 15 minutes and then create your bot. You should also wait for 15 minutes before finding the team in the **Chatbots** tab.
 
 1. Select **Create** to begin the initial bot-building process for your team, which can take a few minutes.
 

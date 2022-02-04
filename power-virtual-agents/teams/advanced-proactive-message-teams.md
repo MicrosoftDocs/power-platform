@@ -24,9 +24,10 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](../advanced-proactive-message.md)
 > - [Power Virtual Agents app in Microsoft Teams](advanced-proactive-message-teams.md)
 
->[!IMPORTANT]
->This is a preview feature.
->Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and [provide feedback](https://powerusers.microsoft.com/t5/Forums/ct-p/pva_forums).
+> [!IMPORTANT]
+> This is a preview feature.
+>
+> Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and [provide feedback](https://powerusers.microsoft.com/t5/Forums/ct-p/pva_forums).
 
 After you've [published your bot](publication-fundamentals-publish-channels-teams.md) and [made the bot available to end users in Microsoft Teams](publication-add-bot-to-microsoft-teams-teams.md), you can notify users ("recipients") in Microsoft Teams with proactive messages and [adaptive cards](https://adaptivecards.io). Proactive messages use Power Automate flows to deliver their content, and are useful in many scenarios, including:
 
@@ -45,9 +46,10 @@ After you've [published your bot](publication-fundamentals-publish-channels-team
 - [Power Automate](/power-automate/getting-started) flows used by the bot must be created in the same environment.
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations-teams.md)]
 
->[!IMPORTANT]
->You can only send proactive messages to recipients who have installed the bot in Microsoft Teams.  
->Learn more on how to [make the bot available for end users to install in Microsoft Teams](publication-add-bot-to-microsoft-teams-teams.md), or work with your admin to [pre-pin and install the bot](/microsoftteams/teams-app-setup-policies) for end users.
+> [!IMPORTANT]
+> You can only send proactive messages to recipients who have installed the bot in Microsoft Teams.  
+>
+> Learn more on how to [make the bot available for end users to install in Microsoft Teams](publication-add-bot-to-microsoft-teams-teams.md), or work with your admin to [pre-pin and install the bot](/microsoftteams/teams-app-setup-policies) for end users.
 
 ## Send proactive messages and adaptive cards in Teams
 
@@ -59,8 +61,8 @@ You will need to create a Power Automate flow to send proactive messages with yo
 
 Once you have a flow created, you can add a step to send proactive messages with the bot.
 
->[!NOTE]
->You can only send proactive messages with bots that are in the same environment as the Power Automate flow.
+> [!NOTE]
+> You can only send proactive messages with bots that are in the same environment as the Power Automate flow.
 
 ### Send a proactive message
 
@@ -130,9 +132,10 @@ Depending on the scenario, you may want to send the same proactive message or ca
 
 This section contains examples for sending messages to multiple recipients.
 
->[!IMPORTANT]
->The prerequisites detailed in this topic apply to each recipient.  
->For example, you can send the same message to 10 recipients in one action. If three of the 10 recipients do not have the bot installed, then those three recipients won't receive the message.
+> [!IMPORTANT]
+> The prerequisites detailed in this topic apply to each recipient.  
+>
+> For example, you can send the same message to 10 recipients in one action. If three of the 10 recipients do not have the bot installed, then those three recipients won't receive the message.
 
 ### Send to teammates
 

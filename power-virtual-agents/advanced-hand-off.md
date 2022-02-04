@@ -25,15 +25,15 @@ For more information about how to configure hand-off with [Omnichannel for Custo
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4n4G1]
 >
 
->[!NOTE]
->You can choose to escalate a bot conversation without linking to an engagement hub:
+> [!NOTE]
+> You can choose to escalate a bot conversation without linking to an engagement hub:
 >
->1. In the **Authoring canvas** for the topic you want to add an escalation option to, at the end of the topic, select the plus (+) icon to add a new node.
->2. Select **Go to another topic** and then **Escalate**.
+> 1. In the **Authoring canvas** for the topic you want to add an escalation option to, at the end of the topic, select the plus (+) icon to add a new node.
+> 1. Select **Go to another topic** and then **Escalate**.
 >
->**Escalate** is a [system topic](authoring-create-edit-topics.md#use-system-and-sample-topics) that, by default, provides a simple message to a user if they ask for a human agent.
+> **Escalate** is a [system topic](authoring-create-edit-topics.md#use-system-and-sample-topics) that, by default, provides a simple message to a user if they ask for a human agent.
 >
->You can edit the topic to include a simple URL to a support website or ticketing system, or to include instructions for emailing or contacting support.
+> You can edit the topic to include a simple URL to a support website or ticketing system, or to include instructions for emailing or contacting support.
 
 ## Prerequisites
 
@@ -63,8 +63,8 @@ In these instances, you must add a **Transfer to agent** node into the topic.
 
 This node lets you add a **Private message to agent**, which is sent to the connected engagement hub to help the live agent understand the history and context of the conversation.
 
->[!NOTE]
->Conversations that reach this node will be marked as **Escalated** sessions in [reporting analytics](./analytics-overview.md).
+> [!NOTE]
+> Conversations that reach this node will be marked as **Escalated** sessions in [reporting analytics](./analytics-overview.md).
 
 **Add a**Transfer to agent**node into a topic:**
 
@@ -84,8 +84,8 @@ This node lets you add a **Private message to agent**, which is sent to the conn
 
 The topic will start the transfer to a live agent when this node is reached. You can test the hand-off by triggering the topic in the test canvas.
 
->[!NOTE]
->Once you add a **Transfer to agent** node into a conversation, each time you trigger hand-off your users will see a "No renderer for this activity" message on the demo website. This message suggests the need to [customize your chat canvas](./customize-default-canvas.md) to implement custom client-side code that brings in a human agent from your engagement hub into the conversation.
+> [!NOTE]
+> Once you add a **Transfer to agent** node into a conversation, each time you trigger hand-off your users will see a "No renderer for this activity" message on the demo website. This message suggests the need to [customize your chat canvas](./customize-default-canvas.md) to implement custom client-side code that brings in a human agent from your engagement hub into the conversation.
 
 ## Contextual variables available upon hand-off
 

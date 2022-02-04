@@ -102,14 +102,14 @@ Different channels have different end-user experiences. The following table show
 | [Welcome message](authoring-create-edit-topics.md#insert-nodes)                   | Supported     | Supported                                                                                               | Not supported                                                                                              | Supported for [Microsoft Teams](/dynamics365/customer-service/configure-microsoft-teams) and [Chat](/dynamics365/customer-service/set-up-chat-widget). Not supported for other channels.                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | [Did-You-Mean](advanced-ai-features.md#automatic-triggering-improvements-preview) | Supported     | Supported                                                                                               | Supported                                                                                                  | Supported for [Microsoft Teams](/dynamics365/customer-service/configure-microsoft-teams), [Chat](/dynamics365/customer-service/set-up-chat-widget), Facebook, and text-only channels (SMS via [TeleSign](/dynamics/customer-service/configure-sms-channel) and [Twilio](/dynamics365/customer-service-configure-sms-channel-twilio), [WhatsApp](/dynamics365/customer-service/configure-whatsapp-channel), [WeChat](/dynamics365/customer-service/configure-wechat-channel), and [Twitter](/dynamics365/customer-service/configure-twitter-channel)).</br>Suggested actions will be presented as a text-only list; users will need to retype an option to respond |
 
->[!IMPORTANT]
->Users can't send attachments to Power Virtual Agents chatbots. If they try to upload a file (including media, such as images), the bot will say:
+> [!IMPORTANT]
+> Users can't send attachments to Power Virtual Agents chatbots. If they try to upload a file (including media, such as images), the bot will say:
 >
->*Looks like you tried to send an attachment. Currently, I can only process text. Please try sending your message again without the attachment.*
+> *Looks like you tried to send an attachment. Currently, I can only process text. Please try sending your message again without the attachment.*
 >
->This applies to all channels, even if the channel or end-user-facing experience supports attachments (for example, if you're using the Direct Line API or Microsoft Teams).
+> This applies to all channels, even if the channel or end-user-facing experience supports attachments (for example, if you're using the Direct Line API or Microsoft Teams).
 >
->Attachments can be supported if the message is sent to a skill, where the skill bot supports the processing of attachments. For more information, see the [Use Microsoft Bot Framework skills topic](advanced-use-skills.md) for more details on skills.
+> Attachments can be supported if the message is sent to a skill, where the skill bot supports the processing of attachments. For more information, see the [Use Microsoft Bot Framework skills topic](advanced-use-skills.md) for more details on skills.
 
 ## In this section
 

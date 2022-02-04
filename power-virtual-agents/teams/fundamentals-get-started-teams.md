@@ -78,10 +78,10 @@ Start by launching the Power Virtual Agents app in Microsoft Teams:
 
 The app is added and visible in the side pane in Teams, and the app opens to the Power Virtual Agents Home page. This is where Teams users can come and build bots without needing to leave the Microsoft Teams interface.
 
->[!TIP]
->To make it easier to get back to, select and hold (or right-click) the Power Virtual Agents icon and select **Pin**.
+> [!TIP]
+> To make it easier to get back to, select and hold (or right-click) the Power Virtual Agents icon and select **Pin**.
 >  
->:::image type="content" source="media/first-bot-pin.png" alt-text="A menu pops up with options to learn about the app, Pin it or uninstall it":::
+> :::image type="content" source="media/first-bot-pin.png" alt-text="A menu pops up with options to learn about the app, Pin it or uninstall it":::
 
 ### Create a new bot in a team
 
@@ -225,9 +225,10 @@ First, let's create the flow to send a message to a Teams channel and then call 
 
 1. Pass in the variable you created earlier called *TimeOffType* for the **Subject** and the **Description** gathered in the chat. This way, when the flow posts a message on the Expert channel, it will state **Extended leave** as the title and the message defined in the flow.
 
-    >[!TIP]
-    >Power Virtual Agents is now directly integrated with Microsoft Teams so the bot knows which user from Teams it is chatting with it. This allows bot makers to use the information to build personal and customized bot responses.
-    >To use the name of the person chatting with the bot, there is a pre-defined variable named *bot.UserDisplayName* that be used [like any other variable](authoring-variables-teams.md).
+    > [!TIP]
+    > Power Virtual Agents is now directly integrated with Microsoft Teams so the bot knows which user from Teams it is chatting with it. This allows bot makers to use the information to build personal and customized bot responses.
+    >
+    > To use the name of the person chatting with the bot, there is a pre-defined variable named *bot.UserDisplayName* that be used [like any other variable](authoring-variables-teams.md).
 
 Now you can let the employee know the experts have been notified of their request and will be reaching out to them.
 
@@ -239,9 +240,9 @@ Now you can let the employee know the experts have been notified of their reques
 
 Now that Bob has the time-off topic created, he can save the topic and add other topics that match the need for his HR bot to answer questions that Contoso employees might have.
 
->[!TIP]
+> [!TIP]
 > Don't forget to test your bot and ensure it is working as expected for the best employee experience.
->You will see the message posted to the Teams channel when the flow is executed in the test canvas.
+> You will see the message posted to the Teams channel when the flow is executed in the test canvas.
 
 ### Publish the bot
 
@@ -253,7 +254,7 @@ Once the topics are constructed and the bot is tested, you are ready to publish 
 
 You will need to follow a few additional actions to actually make the bot available to employees.
 
->[!TIP]
+> [!TIP]
 > If you are already in a conversation with the bot, you can type *start over* to the bot after publishing the latest bot content. This will restart the conversation with the bot, with the latest content published.
 
 ### Open the bot in Teams to chat with it like any employee would
@@ -318,8 +319,8 @@ This will add the bot in the Teams side bar and open it for her to chat.
 
 The **Greeting** topic which is available as a [default or "system" topic](authoring-create-edit-topics-teams.md) triggers automatically to welcome Melissa.
 
->[!TIP]
->You can [edit the **Greeting** topic](configure-bot-greeting-teams.md) to have an appropriate welcome message.
+> [!TIP]
+> You can [edit the **Greeting** topic](configure-bot-greeting-teams.md) to have an appropriate welcome message.
 
 ### Employee chats with the bot to ask about time off
 

@@ -23,8 +23,8 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](fundamentals-templates.md)
 > - [Power Virtual Agents app in Microsoft Teams](teams/fundamentals-templates-teams.md)
 
->[!IMPORTANT]
->This topic applies to chatbots created in the Power Virtual Agents app in Microsoft Teams. Templates are not currently supported for the Power Virtual Agents web app.
+> [!IMPORTANT]
+> This topic applies to chatbots created in the Power Virtual Agents app in Microsoft Teams. Templates are not currently supported for the Power Virtual Agents web app.
 
 [See the Microsoft Teams version of this page for details on chatbot templates](teams/fundamentals-templates-teams.md).
 

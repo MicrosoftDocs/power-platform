@@ -194,8 +194,8 @@ When redirecting to other topics, you might want to pass values into variables i
 
 For more information on using variables generally within Power Virtual Agents, see [Use variables](authoring-variables.md).
 
->[!NOTE]
->Variables of type `Custom Entity`, `Date Time`, and `Duration` can't be passed between topics.  
+> [!NOTE]
+> Variables of type `Custom Entity`, `Date Time`, and `Duration` can't be passed between topics.  
 
 ##### Receive values from other topics
 

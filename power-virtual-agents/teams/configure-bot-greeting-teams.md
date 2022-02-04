@@ -30,10 +30,12 @@ For example, you could have your bot say, "Hi, I'm Botty, a virtual agent" as so
 
 You can also combine the customized greeting with [customization to the look and feel of the bot](customize-default-canvas-teams.md).
 
->[!IMPORTANT]
->Having the bot start the conversation will show up in your [analytics](analytics-overview-teams.md) and will increase your session count.
->If the user of your bot doesn't engage with the bot (for example, they load the page but don't ask the bot anything), the session will be [marked as an unengaged session](analytics-summary-teams.md#engagement-over-time-chart).
->This might impact your analytics.
+> [!IMPORTANT]
+> Having the bot start the conversation will show up in your [analytics](analytics-overview-teams.md) and will increase your session count.
+>
+> If the user of your bot doesn't engage with the bot (for example, they load the page but don't ask the bot anything), the session will be [marked as an unengaged session](analytics-summary-teams.md#engagement-over-time-chart).
+>
+> This might impact your analytics.
 
 ## Prerequisites
 

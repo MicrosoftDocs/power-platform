@@ -94,9 +94,10 @@ Power Virtual Agents support and service engineering staff do not have standing 
 
 Power Virtual Agents US Government plans are designed to support the Federal Risk and Authorization Management Program (FedRAMP) accreditation at a High Impact level.  FedRAMP artifacts are available for review by federal customers who are required to comply with FedRAMP. Federal agencies can peruse these artifacts in support of their review to grant an Authority to Operate (ATO).
 
->[!NOTE]
->Power Virtual Agents is authorized as a service within the Azure Government FedRAMP ATO.  
->For more information, including how to access the FedRAMP documents, review the [FedRAMP Marketplace](https://marketplace.fedramp.gov/#!/product/azure-government-includes-dynamics-365?sort=productName&productNameSearch=azure%20government).
+> [!NOTE]
+> Power Virtual Agents is authorized as a service within the Azure Government FedRAMP ATO.  
+>
+> For more information, including how to access the FedRAMP documents, review the [FedRAMP Marketplace](https://marketplace.fedramp.gov/#!/product/azure-government-includes-dynamics-365?sort=productName&productNameSearch=azure%20government).
 
 Power Virtual Agents US Government plans have features designed to support customers' CJIS Policy requirements for law enforcement agencies.
 
@@ -116,8 +117,8 @@ If you adopt the use of Active Directory Federation Services (ADFS) 2.0 and set 
 
 Power Virtual Agents US Government plans provide the ability to integrate third-party applications into the service through Power Automate Cloud Flow which uses [Connectors](/connectors/index) and [Skills](advanced-use-skills.md). These third-party applications and services might involve storing, transmitting, and processing your organization's customer data on third-party systems that are outside of the Power Virtual Agents US Government infrastructure and therefore are not covered by the Power Virtual Agents US Government compliance and data protection commitments.
 
->[!IMPORTANT]
->Review the privacy and compliance statements provided by the third parties when assessing the appropriate use of these services for your organization.
+> [!IMPORTANT]
+> Review the privacy and compliance statements provided by the third parties when assessing the appropriate use of these services for your organization.
 
 [Governance Considerations](/power-platform/admin/governance-considerations) can help your organization bring awareness about the capabilities available across several related themes, such as architecture, security, alert and action, and monitoring.
 

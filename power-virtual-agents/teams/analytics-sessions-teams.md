@@ -23,8 +23,8 @@ Select the version of Power Virtual Agents you're using here:
 
 By default, you can download up to seven days of bot conversation transcript sessions from the past 30 days directly from the Power Virtual Agents app in Microsoft Teams.
 
->[!NOTE]
->If you no longer have access to your environment, you'll need to [create a support request](https://admin.powerplatform.microsoft.com/support) in the Power Platform admin center.
+> [!NOTE]
+> If you no longer have access to your environment, you'll need to [create a support request](https://admin.powerplatform.microsoft.com/support) in the Power Platform admin center.
 
 ## Prerequisites
 
@@ -40,8 +40,8 @@ By default, you can download up to seven days of bot conversation transcript ses
 
     :::image type="content" source="media/analytics/analyze-sessions-teams.png" alt-text="Screenshot of the sessions download page in the Power Virtual Agents app in Teams.":::
 
->[!NOTE]
->You need to have sufficient permissions to download sessions. If you're using the Power Virtual Agents app in Teams, you need to be the **Team Owner**.
+> [!NOTE]
+> You need to have sufficient permissions to download sessions. If you're using the Power Virtual Agents app in Teams, you need to be the **Team Owner**.
 
 The downloaded file contains the following information:
 

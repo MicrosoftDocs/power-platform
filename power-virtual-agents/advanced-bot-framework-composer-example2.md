@@ -21,8 +21,8 @@ In this example, you'll learn how to display a multi-select list in Power Virtua
 
 Before you begin, ensure you read [Extend your bot with Bot Framework Composer](advanced-bot-framework-composer.md) to understand how Composer integrates with Power Virtual Agents.
 
->[!IMPORTANT]
->Bot Framework Composer integration is not available to users who only have the [Teams Power Virtual Agents license](requirements-licensing-subscriptions.md). You must have a [trial](sign-up-individual.md) or full Power Virtual Agents license.
+> [!IMPORTANT]
+> Bot Framework Composer integration is not available to users who only have the [Teams Power Virtual Agents license](requirements-licensing-subscriptions.md). You must have a [trial](sign-up-individual.md) or full Power Virtual Agents license.
 
 ## Prerequisites
 
@@ -144,8 +144,8 @@ You are now ready to add your Composer content to your Power Virtual Agents bot.
 
 Once your new Composer content is successfully published, go to the Power Virtual Agents **Topics** page to verify that your new Composer content has been uploaded correctly. In your **Topics** list, you can see the new **Specials** and **DailySpecials** content that you have created in Bot Framework Composer.
 
->[!NOTE]
->You might need to refresh your **Topics** page in Power Virtual Agents to see the new content that has been uploaded from Composer.
+> [!NOTE]
+> You might need to refresh your **Topics** page in Power Virtual Agents to see the new content that has been uploaded from Composer.
 
 :::image type="content" source="media/Composer_Example2/E2_DailySpecials_inPVA.png" alt-text="Power Virtual Agents Topics page refresh.":::
 
@@ -155,8 +155,9 @@ Make sure **Track between topics** is turned on, and test your new bot content b
 
 :::image type="content" source="media/Composer_Example2/Example2._cropped.png" alt-text="Power Virtual Agents Test pane.":::
 
->[!NOTE]
->Selecting **Publish** in Composer makes the changes available for testing, but does not automatically Publish your Power Virtual Agents bot.  
->Use the [Publish](publication-fundamentals-publish-channels.md) feature in Power Virtual Agents to publish your bot changes to channels.
+> [!NOTE]
+> Selecting **Publish** in Composer makes the changes available for testing, but does not automatically Publish your Power Virtual Agents bot.  
+>
+> Use the [Publish](publication-fundamentals-publish-channels.md) feature in Power Virtual Agents to publish your bot changes to channels.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

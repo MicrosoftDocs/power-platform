@@ -55,8 +55,8 @@ When you use a condition node, a flow action node, or a skill node, you'll also 
 
 :::image type="content" source="media/bot-variable-set.png" alt-text="Screenshot showing the Variable Properties pane, with the Usage section highlighted":::
 
->[!NOTE]
->A bot variable's name must be unique across all topics. In the case of a conflict, you'll need to rename the variable before saving your change.
+> [!NOTE]
+> A bot variable's name must be unique across all topics. In the case of a conflict, you'll need to rename the variable before saving your change.
 
 ## Manage bot variables
 
@@ -120,8 +120,8 @@ For example, a customer brings up a bot chat from your web site, and the site al
 
 1. You can append the variables and their definitions if you're simply [embedding your bot in a simple webpage](publication-connect-bot-to-web-channels.md#custom-website), or you can use a `<script>` code block to call and use variables programatically.
 
-    >[!NOTE]
-    >The variable name in the query string must match that of the bot variable, without the `bot.` prefix. For example, a bot variable `bot.UserName` must be rendered as `UserName=`.
+    > [!NOTE]
+    > The variable name in the query string must match that of the bot variable, without the `bot.` prefix. For example, a bot variable `bot.UserName` must be rendered as `UserName=`.
 
 In the examples described here, a simple declaration is made for the variables. In a production scenario, you might pass in as the query parameter or variable definition another variable that has already stored the user's name (for example, if you have the user name from a sign-in script).
 

@@ -37,9 +37,10 @@ Lastly, you can [change the name and bot icon](#change-the-bot-name-and-icon) (w
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 
->[!IMPORTANT]
->You may install and use the sample code included in this documentation only for use with the Microsoft Power Virtual Agents product. The sample code is licensed "as is" and is excluded from any service level agreements or support services. You bear the risk of using it.  
->Microsoft gives no express warranties, guarantees, or conditions and excludes all implied warranties, including merchantability, fitness for a particular purpose, and non-infringement.
+> [!IMPORTANT]
+> You may install and use the sample code included in this documentation only for use with the Microsoft Power Virtual Agents product. The sample code is licensed "as is" and is excluded from any service level agreements or support services. You bear the risk of using it.  
+>
+> Microsoft gives no express warranties, guarantees, or conditions and excludes all implied warranties, including merchantability, fitness for a particular purpose, and non-infringement.
 
 ## Change the bot name and icon
 
@@ -226,7 +227,7 @@ See [Web Chat customization](/azure/bot-service/bot-builder-webchat-customizatio
 
 You can connect your Power Virtual Agents bot with a custom canvas that is hosted as a standalone web app. This option is best if you need to embed a customized iFrame across multiple web pages.
 
->[!NOTE]
+> [!NOTE]
 > Hosting a custom canvas requires software development. Our guidance here is intended for experienced IT professionals, such as IT admins or developers who have a good understanding of developer tools, utilities, and IDEs.
 
 ### Pick a sample to customize

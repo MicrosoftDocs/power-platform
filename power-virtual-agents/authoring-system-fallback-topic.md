@@ -57,8 +57,8 @@ When you open this topic in the authoring canvas, you'll see that the default fa
 
 You can customize this topic as with any other [system topic](authoring-create-edit-topics.md). You can also use the *UnrecognizedTriggerPhrase* variable that stores the user input the bot couldn't understand. For example, you can use the variable as an input and pass it to a [Power Automate flow](advanced-flow.md) or [Bot Framework skill](advanced-use-skills.md).
 
->[!NOTE]
->The system fallback topic doesn't have a trigger phrase.
+> [!NOTE]
+> The system fallback topic doesn't have a trigger phrase.
 
 ## Reset system fallback behavior by deleting the fallback topic
 
@@ -66,7 +66,7 @@ To reset the system fallback behavior and return it to its default behavior, go 
 
 :::image type="content" source="media/delete-system-fallback-topic.png" alt-text="Delete the fallback topic." border="false":::
 
->[!WARNING]
->This will remove the fallback topic and any changes you made to it.
+> [!WARNING]
+> This will remove the fallback topic and any changes you made to it.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

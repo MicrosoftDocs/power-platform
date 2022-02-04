@@ -19,8 +19,8 @@ searchScope:
 
 # Power Virtual Agents overview
 
->[!IMPORTANT]
->See the [Important information](#important-information) section for specific usage details.
+> [!IMPORTANT]
+> See the [Important information](#important-information) section for specific usage details.
 
 Power Virtual Agents lets you create powerful chatbots that can answer questions posed by your customers, other employees, or visitors to your website or service.
 

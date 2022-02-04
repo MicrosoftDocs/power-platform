@@ -40,8 +40,8 @@ You can create chatbots that handle protected health information when your organ
 - Ask individuals to provide their health information (blood pressure, weight, and so on).
 - Capture health information and personally identifying information, such as the customer's IP address or email address.
 
->[!NOTE]
->Although Power Virtual Agents is covered under HIPAA, it still isn't intended for use as a medical device. See the disclaimer on [the intended use of Power Virtual Agents and medical devices](fundamentals-what-is-power-virtual-agents.md#important-information).
+> [!NOTE]
+> Although Power Virtual Agents is covered under HIPAA, it still isn't intended for use as a medical device. See the disclaimer on [the intended use of Power Virtual Agents and medical devices](fundamentals-what-is-power-virtual-agents.md#important-information).
 
 [Learn more about HIPAA](/compliance/regulatory/offering-hipaa-hitech).
 

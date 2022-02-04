@@ -54,10 +54,10 @@ The Bot Framework and Power Virtual Agents bots must be deployed in the same ten
 
     :::image type="content" source="media/advanced-use-pva-as-a-skill/Skill_ManageAllowlistMenu.png" alt-text="Screenshot highlighting the Manage, Skills, and Manage allowlist elements in the web portal.":::
 
-    >[!TIP]  
-    >You can also get to your bot's allowlist by going to the **Security** tab under **Manage** on the side navigation pane.
+    > [!TIP]  
+    > You can also get to your bot's allowlist by going to the **Security** tab under **Manage** on the side navigation pane.
     >
-    >:::image type="content" source="media/advanced-use-pva-as-a-skill/Skill_ManageAllowlistSecurity.png" alt-text="Screenshot of the allowlist tile on the Security or Authentication page.":::
+    > :::image type="content" source="media/advanced-use-pva-as-a-skill/Skill_ManageAllowlistSecurity.png" alt-text="Screenshot of the allowlist tile on the Security or Authentication page.":::
 
 1. Select **+ Add allowed caller** on the **Manage allowlist for \<bot name\>** panel.
 
@@ -67,15 +67,15 @@ The Bot Framework and Power Virtual Agents bots must be deployed in the same ten
 
     :::image type="content" source="media/advanced-use-pva-as-a-skill/Skill_AddBotAppID.png" alt-text="Screenshot of the Add allowed caller dialog window.":::
 
-    >[!TIP]
-    >You can find your Bot Framework bot's app ID in Composer, in the **Development Resources** section under the **Configure** tab.  
+    > [!TIP]
+    > You can find your Bot Framework bot's app ID in Composer, in the **Development Resources** section under the **Configure** tab.  
     >  
-    >:::image type="content" source="media/advanced-use-pva-as-a-skill/Composer_BotAppID.png" alt-text="Composer - Bot App ID.":::
+    > :::image type="content" source="media/advanced-use-pva-as-a-skill/Composer_BotAppID.png" alt-text="Composer - Bot App ID.":::
 
-    >[!CAUTION]  
-    >Power Virtual Agents cannot act as a skill for other Power Virtual Agents bots.
+    > [!CAUTION]  
+    > Power Virtual Agents cannot act as a skill for other Power Virtual Agents bots.
     >
-    >Only Bot Framework bots can be added to the Power Virtual Agents allowlist. Trying to add a bot app ID that belongs to a Power Virtual Agent bot will result in an error.
+    > Only Bot Framework bots can be added to the Power Virtual Agents allowlist. Trying to add a bot app ID that belongs to a Power Virtual Agent bot will result in an error.
 
     Power Virtual Agents will validate the Bot Framework bot's app ID and confirm that it belongs to a bot deployed in the same tenant.
 
@@ -89,8 +89,8 @@ The Bot Framework bot will be displayed by the **Display name** (if you entered 
 
 :::image type="content" source="media/advanced-use-pva-as-a-skill/Skill_AllowedCallerAdded.png" alt-text="The manage allowlist panel showing a list of allowed bot.":::
 
->[!Note]
->The Bot Framework bots added to the allowlist will not be [exported as part of the bot content](authoring-export-import-bots.md).
+> [!NOTE]
+> The Bot Framework bots added to the allowlist will not be [exported as part of the bot content](authoring-export-import-bots.md).
 
 ## Download the bot skill manifest for your Power Virtual Agents bot
 
@@ -114,10 +114,10 @@ All Power Virtual Agents skill manifests are automatically generated and updated
   - The published manifest is only available for Power Virtual Agents bots that have been published at least once.  
   - It is automatically updated to reflect the changes every time you [**publish** your bot](publication-fundamentals-publish-channels.md#publish-the-latest-bot-content).
 
->[!NOTE]
+> [!NOTE]
 > The **Published manifest** is not available in Power Virtual Agents bots that have never been published.  
 >  
->To generate your bot's **Published manifest**, your need to [publish your Power Virtual Agents bot](publication-fundamentals-publish-channels.md).
+> To generate your bot's **Published manifest**, your need to [publish your Power Virtual Agents bot](publication-fundamentals-publish-channels.md).
 
 Both skill manifests can be found on **Manage allowlist** panel.
 
@@ -131,8 +131,8 @@ Selecting either manifest will download them as a .zip file labeled *\<bot name\
 
 :::image type="content" source="media/advanced-use-pva-as-a-skill/Manifests_Zip.png" alt-text="Power Virtual Agents - Downloaded Test and Published Manifests.":::
 
->[!NOTE]
-> System topics and Composer dialogs added to a Power Virtual Agents bot will not be included in the skill manifest. Only user-created topics and Composer intent triggers added to the bot will be added to the Power Virtual Agents bot skill manifest.
+> [!NOTE]
+>  System topics and Composer dialogs added to a Power Virtual Agents bot will not be included in the skill manifest. Only user-created topics and Composer intent triggers added to the bot will be added to the Power Virtual Agents bot skill manifest.
 
 ## Connect to a Power Virtual Agents skill in Composer
 
@@ -331,8 +331,8 @@ It is possible to receive outputs from a Power Virtual Agents skill topic in Com
 
 You can test that your Bot Framework bot is properly calling a Power Virtual Agents bot as a skill by using the [Bot Framework Emulator](/composer/how-to-connect-to-a-skill#test-in-the-emulator).
 
->[!IMPORTANT]
->Your Bot Framework bot must be added to the Power Virtual Agents bot's allowlist for the skill connection to work.
+> [!IMPORTANT]
+> Your Bot Framework bot must be added to the Power Virtual Agents bot's allowlist for the skill connection to work.
 
 ## Learn More
 

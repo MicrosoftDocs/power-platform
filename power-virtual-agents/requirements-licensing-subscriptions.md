@@ -40,9 +40,10 @@ Use a Power Virtual Agents bot as a Bot Framework skill | Not available | [Use a
 Integrate Microsoft Bot Framework dialogs | Not available | [Develop custom dialogs with Bot Framework Composer](advanced-bot-framework-composer.md)
 Hand off bot conversation to a live agent | Not available | [Trigger hand-off to a live agent](advanced-hand-off.md)
 
->[!NOTE]
->A paid, standalone Power Virtual Agents subscription is required to run flows with premium connectors in the context of Power Virtual Agents chatbots.  
-Similarly, use rights and functionality available as part of paid, standalone Power Automate subscriptions serve automation scenarios and cannot be applied to Power Virtual Agents scenarios.
+> [!NOTE]
+> A paid, standalone Power Virtual Agents subscription is required to run flows with premium connectors in the context of Power Virtual Agents chatbots.  
+>
+> Similarly, use rights and functionality available as part of paid, standalone Power Automate subscriptions serve automation scenarios and cannot be applied to Power Virtual Agents scenarios.
 
 ### Upgrading your license
 
@@ -58,8 +59,8 @@ You can also [start a 60 day free trial of Power Virtual Agents](https://aka.ms/
 
 :::image type="content" source="media/upgrade-create.png" alt-text="You are prompted to start a free trial or upgrade to a premium when creating a bot without a license.":::
 
->[!NOTE]
->The option to create a free trial may be disabled. For more information, see the [Self-service sign-up disabled section](sign-up-individual.md#self-service-sign-up-disabled).
+> [!NOTE]
+> The option to create a free trial may be disabled. For more information, see the [Self-service sign-up disabled section](sign-up-individual.md#self-service-sign-up-disabled).
 
 ## Standalone Power Virtual Agents subscription
 

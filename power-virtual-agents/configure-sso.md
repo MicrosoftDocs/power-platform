@@ -19,16 +19,18 @@ Power Virtual Agents supports single sign-on (SSO), which means chatbots can sig
 
 For example, the bot is hosted on the corporate intranet or in an app that the user is already signed in to.
 
->[!IMPORTANT]
->SSO is only supported for Azure Active Directory (Azure AD) V2. Other account types such as Microsoft Account or other OAuth accounts are not supported for SSO in Power Virtual Agents.  
->You can suggest support for additional account types [at the Power Virtual Agents ideas forum](https://powerusers.microsoft.com/t5/Power-Virtual-Agents-Ideas/idb-p/pva_ideas).
+> [!IMPORTANT]
+> SSO is only supported for Azure Active Directory (Azure AD) V2. Other account types such as Microsoft Account or other OAuth accounts are not supported for SSO in Power Virtual Agents.  
+>
+> You can suggest support for additional account types [at the Power Virtual Agents ideas forum](https://powerusers.microsoft.com/t5/Power-Virtual-Agents-Ideas/idb-p/pva_ideas).
 
->[!IMPORTANT]
->SSO is only supported on the [live website publication channel](publication-connect-bot-to-web-channels.md) and the Teams channel. Other channels are not supported. SSO on Sharepoint is not supported.
->You can suggest support for additional channels [at the Power Virtual Agents ideas forum](https://powerusers.microsoft.com/t5/Power-Virtual-Agents-Ideas/idb-p/pva_ideas).
+> [!IMPORTANT]
+> SSO is only supported on the [live website publication channel](publication-connect-bot-to-web-channels.md) and the Teams channel. Other channels are not supported. SSO on Sharepoint is not supported.
+>
+> You can suggest support for additional channels [at the Power Virtual Agents ideas forum](https://powerusers.microsoft.com/t5/Power-Virtual-Agents-Ideas/idb-p/pva_ideas).
 
->[!IMPORTANT]
->If you also have Teams channel enabled, you need to follow the configuration instructions on the [Configure single sign-on for Teams channel](configure-sso-teams.md) documentation. Failing to configure the Teams SSO settings as instructed on that page will lead your users to always fail authentication when using the Teams channel.
+> [!IMPORTANT]
+> If you also have Teams channel enabled, you need to follow the configuration instructions on the [Configure single sign-on for Teams channel](configure-sso-teams.md) documentation. Failing to configure the Teams SSO settings as instructed on that page will lead your users to always fail authentication when using the Teams channel.
 
 ## Prerequisites
 
@@ -112,8 +114,8 @@ You then need to redirect the app registration to point to your custom canvas.
 
 1. Go to **API Permissions**. Select **Grant admin consent for \<your tenant name\>** and then **Yes**.
   
-    >[!IMPORTANT]
-    >To avoid users from having to consent to each application, a Global Administrator, Application Administrator, or a Cloud Application Administrator must [grant tenant-wide consent](/azure/active-directory/manage-apps/grant-admin-consent) to your app registrations.
+    > [!IMPORTANT]
+    > To avoid users from having to consent to each application, a Global Administrator, Application Administrator, or a Cloud Application Administrator must [grant tenant-wide consent](/azure/active-directory/manage-apps/grant-admin-consent) to your app registrations.
 
     :::image type="content" source="media/sso-grant-consent.png" alt-text="Screenshot highlight the Grant admin consent for tenant-name button." border="false":::
 
@@ -127,8 +129,8 @@ This step creates a trust relationship between the authentication app registrati
 
 1. Go to **API Permissions** and ensure that the correct permissions are added for your bot. Select **Grant admin consent for \<your tenant name\>** and then **Yes**.
   
-    >[!IMPORTANT]
-    >To avoid users from having to consent to each application, a Global Administrator, Application Administrator, or a Cloud Application Administrator must [grant tenant-wide consent](/azure/active-directory/manage-apps/grant-admin-consent) to your app registrations.
+    > [!IMPORTANT]
+    > To avoid users from having to consent to each application, a Global Administrator, Application Administrator, or a Cloud Application Administrator must [grant tenant-wide consent](/azure/active-directory/manage-apps/grant-admin-consent) to your app registrations.
 
 1. Go to **Expose an API** and select **Add a scope**.
 

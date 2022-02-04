@@ -45,8 +45,8 @@ While the topics are functional, they are examples for the purposes of learning 
 
    :::image type="content" source="media/template-list-teams.png" alt-text="List of lesson topics." border="false":::
 
->[!IMPORTANT]
->You will see these lessons when you create a new bot. If you have previously created a bot and don't see them, try creating a new bot and then going to the **Topics** tab.
+> [!IMPORTANT]
+> You will see these lessons when you create a new bot. If you have previously created a bot and don't see them, try creating a new bot and then going to the **Topics** tab.
 
 ## Available lesson topics
 

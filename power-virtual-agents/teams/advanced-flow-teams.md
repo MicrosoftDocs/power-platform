@@ -51,8 +51,8 @@ Using the **Create a flow** option opens a template selection screen.
 
 :::image type="content" source="media/flow-template-tile.png" alt-text="Flow template selection screen.":::
 
->[!NOTE]
->Save your topic before creating a new flow, as you will be taken to Power Automate for this operation.
+> [!NOTE]
+> Save your topic before creating a new flow, as you will be taken to Power Automate for this operation.
 
 You will find a list of templates which helps you quickly get started creating Power Automate flows. For this example, we will pick the basic "Power Virtual Agents Flow Template".
 

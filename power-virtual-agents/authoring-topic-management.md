@@ -39,8 +39,8 @@ Errors will prevent the bot from working and must be fixed before you can publis
 
 You can see the error state of a topic on the Topics page.
 
->[!NOTE]
->The Topics page only shows errors as they will stop your bot from working, unlike warnings.
+> [!NOTE]
+> The Topics page only shows errors as they will stop your bot from working, unlike warnings.
 
 :::image type="content" source="media/topics-errors.png" alt-text="The topics page identifies the number of errors in your topic.":::
 
@@ -48,7 +48,7 @@ Select the error count to open the authoring canvas to where the first error is.
 
 :::image type="content" source="media/topics-checker.png" alt-text="The topic checker is on the top bar and shows all errors and warnings.":::
 
->[!NOTE]
+> [!NOTE]
 > You can save topics with errors. Topics with errors can't be published.
 
 ### Types of errors
@@ -70,9 +70,10 @@ When a topic is **Off**, it will not trigger at all. This means that if its trig
 
 When a bot is published, all topics (**On** or **Off**) will be published, but the **Off** topics will not trigger.
 
->[!TIP]
->Turning a topic to **Off** allows you to work on a particular topic and leave it in a draft state while publishing changes to other topics that are ready to go live.  
->Leave the topic that you are still working on as **Off** before publishing the bot.
+> [!TIP]
+> Turning a topic to **Off** allows you to work on a particular topic and leave it in a draft state while publishing changes to other topics that are ready to go live.  
+>
+> Leave the topic that you are still working on as **Off** before publishing the bot.
 
 You can change this with the toggle in the **Status** column on the Topics page.
 

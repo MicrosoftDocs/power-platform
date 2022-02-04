@@ -24,8 +24,8 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](../fundamentals-what-is-power-virtual-agents-portal.md)
 > - [Power Virtual Agents app in Microsoft Teams](fundamentals-what-is-power-virtual-agents-teams.md)
 
->[!IMPORTANT]
->See the [Important information](#important-information) section for specific usage details.
+> [!IMPORTANT]
+> See the [Important information](#important-information) section for specific usage details.
 
 Power Virtual Agents is available as an app within Microsoft Teams, which means you can easily create your own chatbots that answer questions posed by other employees or team members.
 
@@ -53,7 +53,7 @@ To see what Power Virtual Agents in Microsoft Teams can do, check out [our guide
 
 To get started creating bots in Teams with Power Virtual Agents straight away, see the [Create your first bot topic](authoring-first-bot-teams.md), or [download and use templates to help you create, develop, and publish chatbots](fundamentals-templates-teams.md) with Power Virtual Agents.
 
->[!NOTE]
+> [!NOTE]
 > Power Virtual Agents does not currently support US Government Cloud plans.
 
 ## Important information

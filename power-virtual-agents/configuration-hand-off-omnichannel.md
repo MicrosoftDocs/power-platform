@@ -23,12 +23,12 @@ To add hand off capabilities to your bot, you install the associated extension s
 
 For more information about hand off, and how to use hand-off within a bot conversation, see the [Using Transfer to agent node](./advanced-hand-off.md) topic.
 
->[!NOTE]
->If you'd previously configured a bot to hand off for omnichannel capabilities (before November 2021), the **Omnichannel** tile's settings will appear as if they have not been configured. This is a known issue, and has no effect on the bot or the existing omnichannel connection, which will continue to run normally.  
+> [!NOTE]
+> If you'd previously configured a bot to hand off for omnichannel capabilities (before November 2021), the **Omnichannel** tile's settings will appear as if they have not been configured. This is a known issue, and has no effect on the bot or the existing omnichannel connection, which will continue to run normally.  
 >  
->You can force the settings display to refresh and show the actual connection details by selecting **Enable**.
+> You can force the settings display to refresh and show the actual connection details by selecting **Enable**.
 >  
->If you want to add voice-based capabilities for hand off to your already-connected bot, you must disconnect and reconnect the bot from your omnichannel service.
+> If you want to add voice-based capabilities for hand off to your already-connected bot, you must disconnect and reconnect the bot from your omnichannel service.
 
 ## Prerequisites
 
@@ -83,8 +83,8 @@ Sign in to the Power Virtual Agents bot you want to connect to your omnichannel 
 
 1. Follow the steps to create or reuse an existing Azure application ID. Copy the _Application (client) ID_ and paste it in the text box provided.
 
-    >[!IMPORTANT]
-    >Omnichannel models bots as "application users" in the system. Therefore, the _Application (client) ID_ that you use must be unique to your organization (your Microsoft Dataverse organization or environment).
+    > [!IMPORTANT]
+    > Omnichannel models bots as "application users" in the system. Therefore, the _Application (client) ID_ that you use must be unique to your organization (your Microsoft Dataverse organization or environment).
 
 1. Power Virtual Agents uses a [Teams channel](./publication-fundamentals-publish-channels.md) to communicate with Omnichannel for Customer Service. If a Teams channel is not enabled, a Teams channel will be enabled when you select **Next**.
 
@@ -96,8 +96,8 @@ After you've configured the connection, you'll see your bot in the **Omnichannel
 
 You can also toggle voice capabilities on or off.
 
->[!IMPORTANT]
->If you want to test the bot on your custom website, you must use the embed code that is specified in the chat widget you set up in Omnichannel (see [Embed chat widget in your website or portal](/dynamics365/customer-service/embed-chat-widget-portal) for more information). If you use the embed code from the Power Virtual Agents site, hand-off will not occur correctly.
+> [!IMPORTANT]
+> If you want to test the bot on your custom website, you must use the embed code that is specified in the chat widget you set up in Omnichannel (see [Embed chat widget in your website or portal](/dynamics365/customer-service/embed-chat-widget-portal) for more information). If you use the embed code from the Power Virtual Agents site, hand-off will not occur correctly.
 
 <a id="managed-bot-oc"></a>
 
@@ -149,9 +149,9 @@ If you previously had connected a bot to your omnichannel instance (before Novem
 
 Authentication is not supported for voice-based hand off to omnichannel instances. If you've set up authentication for the bot, the [authentication variables](advanced-end-user-authentication.md) will not contain authentication information in them when sent to your omnichannel instance.
 
->[!WARNING]
->For voice-based hand off capabilities, both your bot and omnichannel environments must be hosted in a datacenter within the [United States, Europe, Asia, or Australia geographies](data-location.md#data-locations).
->If the environment (or environments) you use for your bot or omnichannel instance aren't in a supported region, voice capabilities will not work and there will be no error messages or warnings.
+> [!WARNING]
+> For voice-based hand off capabilities, both your bot and omnichannel environments must be hosted in a datacenter within the [United States, Europe, Asia, or Australia geographies](data-location.md#data-locations).
+> If the environment (or environments) you use for your bot or omnichannel instance aren't in a supported region, voice capabilities will not work and there will be no error messages or warnings.
 
 ## Voice-based capabilities
 
@@ -185,8 +185,8 @@ This action can be used to transfer the call to a different phone number altoget
   
 1. Select an existing variable that defines the number that should be called instead, or directly enter the number.
 
->[!NOTE]
->This action requires the "Make calls" privilege when purchasing the phone number. Without this privilege, the transfer will fail.
+> [!NOTE]
+> This action requires the "Make calls" privilege when purchasing the phone number. Without this privilege, the transfer will fail.
 
 ### Hang up
 

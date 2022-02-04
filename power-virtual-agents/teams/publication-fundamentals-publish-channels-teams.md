@@ -50,11 +50,10 @@ When publication is successful, you can [make the bot available to users in Micr
 
 You can also install the bot for your own use in Microsoft Teams by selecting **Open the bot**.
 
->[!TIP]
-> To prevent disrupting users who are having an existing conversation with the bot, they will not receive the latest published content until a new conversation has started. A new conversation starts after it has been idle for more than 30 minutes.  
-> You may want to try out the latest published content in Microsoft Teams right away.  
-> You can do so by typing *start over* in an existing conversation.  
-> This will restart the conversation with the latest content you have published.
+> [!TIP]
+> To prevent disrupting users who are having an existing conversation with the bot, they will not receive the latest published content until a new conversation has started. A new conversation starts after it has been idle for more than 30 minutes.
+>
+> You may want to try out the latest published content in Microsoft Teams right away. You can do so by typing *start over* in an existing conversation. This will restart the conversation with the latest content you have published.
 
 ## Known limitations
 

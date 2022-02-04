@@ -23,9 +23,10 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](authoring-variables.md)
 > - [Power Virtual Agents app in Microsoft Teams](teams/authoring-variables-teams.md)
 
->[!IMPORTANT]
->This is a preview feature.
->Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and [provide feedback](https://powerusers.microsoft.com/t5/Forums/ct-p/pva_forums).
+> [!IMPORTANT]
+> This is a preview feature.
+>
+> Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and [provide feedback](https://powerusers.microsoft.com/t5/Forums/ct-p/pva_forums).
 
 Variables let you save responses from your customers in a conversation with your bot so that you can reuse them later in the conversation.
 

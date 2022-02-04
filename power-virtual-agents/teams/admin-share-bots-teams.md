@@ -57,8 +57,8 @@ You can share your bot with security groups so their members can chat with the b
 
 1. If you want to let users know you've shared the bot with them, select the **Send an email invitation to new users** check box.
 
-    >[!NOTE]
-    >Only security groups with email enabled will receive an email invitation. You can directly **Copy link** and share it with users to install the bot in Microsoft Teams.
+    > [!NOTE]
+    > Only security groups with email enabled will receive an email invitation. You can directly **Copy link** and share it with users to install the bot in Microsoft Teams.
 
 1. Select **Share** to share the bot with the security group.
 
@@ -74,8 +74,8 @@ You can share your bot to allow everyone in the same organization as the bot to 
 
     :::image type="content" source="../media/sharing-security-groups/sharing-share-everyone-in-org-teams.PNG" alt-text="Set user permission for everyone in the organization in Sharing UI.":::
 
-    >[!NOTE]
-    >Power Virtual Agents will not send an email invitation to everyone in the organization. You can directly **Copy link** and share it with users to install the bot in Microsoft Teams.
+    > [!NOTE]
+    > Power Virtual Agents will not send an email invitation to everyone in the organization. You can directly **Copy link** and share it with users to install the bot in Microsoft Teams.
 
 1. Select **Share** to share the bot with everyone in the organization.
 
@@ -114,19 +114,20 @@ Your permissions are determined by your [Microsoft Teams roles](/microsoftteams/
 - Team Owners can create, view, edit, and configure all bots in the team where they are Team Owners.
 - Team Members can create, edit, and configure bots they have created. They can view other member's bots in the team.
 
->[!NOTE]
->If you are an owner of an Azure Active Directory group associated with a team, but you are not also a member of that group, you might not see the team in the Power Apps and Power Virtual Agents apps in Microsoft Teams.  
->You can add yourself as a member to the team and it will resolve the issue after a few minutes.
+> [!NOTE]
+> If you are an owner of an Azure Active Directory group associated with a team, but you are not also a member of that group, you might not see the team in the Power Apps and Power Virtual Agents apps in Microsoft Teams.
+>
+> You can add yourself as a member to the team and it will resolve the issue after a few minutes.
 
 To share your bot with other users for collaboration, you need to [add them to your team](https://support.microsoft.com/office/add-members-to-a-team-in-teams-aff2249d-b456-4bc3-81e7-52327b6b38e9).
 
->[!NOTE]
->It could take up to 15 minutes before the new team member sees the team in the Power Virtual Agents app.
+> [!NOTE]
+> It could take up to 15 minutes before the new team member sees the team in the Power Virtual Agents app.
 
 You can see a list of the teams you belong to, and each bot within that team by going to the **Chatbots** tab on the top bar. Teams are listed on the left, selecting a team shows the chatbots in that team. Where ever you are in the app, you can always get back to the list of chatbots by selecting **Chatbots** at the top.
 
->[!TIP]
->**My chatbots** shows all the bots you created and is an easy way for you to find your bot across multiple teams. You can find bots created by other team members by selecting the team.
+> [!TIP]
+> **My chatbots** shows all the bots you created and is an easy way for you to find your bot across multiple teams. You can find bots created by other team members by selecting the team.
 
 :::image type="content" source="media/admin-share-bots-list.png" alt-text="The teams and chatbots are listed in the Chatbots tab.":::
 
@@ -154,8 +155,8 @@ This can help prevent conflicts if multiple people are working on the same topic
 
 :::image type="content" source="media/sharing-multi-authors-teams.png" alt-text="Screenshot showing the Power Virtual Agents list of topics with the Currently editing column highlighted.":::
 
->[!NOTE]
->The list of authors in the **Currently editing** column is only refreshed when the page is loaded.
+> [!NOTE]
+> The list of authors in the **Currently editing** column is only refreshed when the page is loaded.
 
 A topic's **Details** page also shows all the people currently editing a topic, as well as the last time someone saved.
 

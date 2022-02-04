@@ -41,12 +41,13 @@ These tips for creating trigger phrases are described in the tooltip associated 
 
 :::image type="content" source="media/advanced-ai-features/trigger-phrase-tooltip.png" alt-text="Screenshot of the trigger phrase section in the topic details page.":::
 
->[!NOTE]
->The AI capabilities listed in this topic are in preview, available to bots created with English as the set language.
+> [!NOTE]
+> The AI capabilities listed in this topic are in preview, available to bots created with English as the set language.
 
->[!IMPORTANT]
->This is a preview feature.
->Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and [provide feedback](https://powerusers.microsoft.com/t5/Forums/ct-p/pva_forums).
+> [!IMPORTANT]
+> This is a preview feature.
+>
+> Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and [provide feedback](https://powerusers.microsoft.com/t5/Forums/ct-p/pva_forums).
 
 ## Advanced AI features overview
 

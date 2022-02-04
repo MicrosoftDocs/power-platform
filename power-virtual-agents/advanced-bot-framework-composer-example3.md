@@ -21,8 +21,8 @@ In this example, you'll learn how to set Bing search as a fallback answer in Pow
 
 Before you begin, ensure you read [Extend your bot with Bot Framework Composer](advanced-bot-framework-composer.md) to understand how Composer integrates with Power Virtual Agents.
 
->[!IMPORTANT]
->Bot Framework Composer integration is not available to users who only have the [Teams Power Virtual Agents license](requirements-licensing-subscriptions.md). You must have a [trial](sign-up-individual.md) or full Power Virtual Agents license.
+> [!IMPORTANT]
+> Bot Framework Composer integration is not available to users who only have the [Teams Power Virtual Agents license](requirements-licensing-subscriptions.md). You must have a [trial](sign-up-individual.md) or full Power Virtual Agents license.
 
 ## Prerequisites
 
@@ -106,8 +106,8 @@ You are now ready to add your Composer content to your Power Virtual Agents bot.
 
 Once your new Composer content is successfully published, you can now see that **OnUnknownIntent** was added to the **Topics** page in Power Virtual Agents.
 
->[!NOTE]
->You might need to refresh your **Topics** page to see the new bot content that has been added from Composer.
+> [!NOTE]
+> You might need to refresh your **Topics** page to see the new bot content that has been added from Composer.
 
 :::image type="content" source="media/Composer_Example3/E3_BingSearch_inTopicsList.png" alt-text="Power Virtual Agents Topics page for example 3.":::
 
@@ -117,8 +117,9 @@ Make sure **Track between topics** is turned on, and test your new bot content b
 
 :::image type="content" source="media/Composer_Example3/Example3_cropped.png" alt-text="Power Virtual Agents test for example 3.":::
 
->[!NOTE]
->Selecting **Publish** in Composer makes the changes available for testing, but does not automatically Publish your Power Virtual Agents bot.  
->Use the [Publish](publication-fundamentals-publish-channels.md) feature in Power Virtual Agents to publish your bot changes to channels.
+> [!NOTE]
+> Selecting **Publish** in Composer makes the changes available for testing, but does not automatically Publish your Power Virtual Agents bot.  
+>
+> Use the [Publish](publication-fundamentals-publish-channels.md) feature in Power Virtual Agents to publish your bot changes to channels.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

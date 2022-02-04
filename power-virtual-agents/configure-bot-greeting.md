@@ -32,18 +32,21 @@ First, you'll need to deploy a custom canvas that includes arguments that trigge
 
 You can also combine the customized greeting with [customization to the look and feel of the bot](customize-default-canvas.md).
 
->[!IMPORTANT]
->Having the bot start the conversation will show up in your [analytics](analytics-overview.md) and will increase your session count.
->If the user of your bot doesn't engage with the bot (for example, they load the page but don't ask the bot anything), the session will be [marked as an unengaged session](analytics-summary.md#engagement-over-time-chart).
->This might impact your analytics.
+> [!IMPORTANT]
+> Having the bot start the conversation will show up in your [analytics](analytics-overview.md) and will increase your session count.
+>
+> If the user of your bot doesn't engage with the bot (for example, they load the page but don't ask the bot anything), the session will be [marked as an unengaged session](analytics-summary.md#engagement-over-time-chart).
+>
+> This might impact your analytics.
 
 ## Prerequisites
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 
->[!IMPORTANT]
->You may install and use the sample code included in this documentation only for use with the Microsoft Power Virtual Agents product. The sample code is licensed "as is" and is excluded from any service level agreements or support services. You bear the risk of using it.  
->Microsoft gives no express warranties, guarantees, or conditions and excludes all implied warranties, including merchantability, fitness for a particular purpose, and non-infringement.
+> [!IMPORTANT]
+> You may install and use the sample code included in this documentation only for use with the Microsoft Power Virtual Agents product. The sample code is licensed "as is" and is excluded from any service level agreements or support services. You bear the risk of using it.  
+>
+> Microsoft gives no express warranties, guarantees, or conditions and excludes all implied warranties, including merchantability, fitness for a particular purpose, and non-infringement.
 
 ## Retrieve bot ID details
 
@@ -208,8 +211,8 @@ You can now test your bot by going to the webpage where you deployed your bot's 
 
 ### Create a new user topic
 
->[!WARNING]
->Using a user topic to start a conversation will increase your [billed sessions](analytics-billed-sessions.md#definition-of-a-billed-session). A billed session is an interaction between a customer and a bot and represents one unit of consumption. The billed session begins when a user topic is triggered. For more information, see the topic [Analyze billed session information](analytics-billed-sessions.md).
+> [!WARNING]
+> Using a user topic to start a conversation will increase your [billed sessions](analytics-billed-sessions.md#definition-of-a-billed-session). A billed session is an interaction between a customer and a bot and represents one unit of consumption. The billed session begins when a user topic is triggered. For more information, see the topic [Analyze billed session information](analytics-billed-sessions.md).
 
 1. Select **Topics** on the side pane.
 

@@ -34,10 +34,10 @@ Developer's name | *Powered by Power Virtual Agents* | You should include a name
 
 ## Empty privacy statement and terms of use
 
->[!IMPORTANT]
->This app is not developed by Microsoft. If you are a user of a bot and see this page, it means the bot developer did not provide a terms of use and privacy statement for the bot.  
+> [!IMPORTANT]
+> This app is not developed by Microsoft. If you are a user of a bot and see this page, it means the bot developer did not provide a terms of use and privacy statement for the bot.  
 >
->For privacy policy or terms of use, contact the developer of this app.
+> For privacy policy or terms of use, contact the developer of this app.
 
 If you do not enter links to a privacy statement or terms of use, then chatbot users are redirected here.  
 

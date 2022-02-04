@@ -33,9 +33,10 @@ You can use environments in a number of different ways, depending on your busine
 
 You can also build all your bots in a single environment if you don't need or want to use different ones.
 
->[!NOTE]
->We recommend using a non-default production environment for bots that you want to deploy to production.  
->[Learn more about types of environments](/power-platform/admin/environments-overview#types-of-environments).
+> [!NOTE]
+> We recommend using a non-default production environment for bots that you want to deploy to production.  
+>
+> [Learn more about types of environments](/power-platform/admin/environments-overview#types-of-environments).
 
 ## Create a new environment for your bots
 

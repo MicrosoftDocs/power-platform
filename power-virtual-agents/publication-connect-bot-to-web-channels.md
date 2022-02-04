@@ -76,9 +76,10 @@ You can add your bot to a Power Apps portal in a few quick steps without any cod
 
 See the [Add chatbot to a page](/powerapps/maker/portals/add-chatbot) topic in the Power Apps documentation library for details.
 
->[!IMPORTANT]
->This is a preview feature.
->Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+> [!IMPORTANT]
+> This is a preview feature.
+>
+> Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 
 ### Add bot to Power Apps with an IFrame
 

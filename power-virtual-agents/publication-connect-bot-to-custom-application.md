@@ -43,13 +43,13 @@ Connecting your bot to a web-based app is relatively straightforward as it invol
 
 ## Connect your bot to a native or custom app
 
->[!TIP]
->While this section describes how to connect to a mobile app, the same process could be applied for custom or native apps, such as IoT (Internet of things) apps.
+> [!TIP]
+> While this section describes how to connect to a mobile app, the same process could be applied for custom or native apps, such as IoT (Internet of things) apps.
 
 If your goal is to connect to Azure Bot Service channels, besides following the instructions here, your developers can learn more at [Connect your bot to Azure Bot Service channels](publication-connect-bot-to-azure-bot-service-channels.md).
 
->[!IMPORTANT]
->Instructions in this section require software development from you or your developers. It is intended for experienced IT professionals, such as IT admins or developers who have a solid understanding of developer tools, utilities, and IDEs.
+> [!IMPORTANT]
+> Instructions in this section require software development from you or your developers. It is intended for experienced IT professionals, such as IT admins or developers who have a solid understanding of developer tools, utilities, and IDEs.
 
 ### Code samples
 

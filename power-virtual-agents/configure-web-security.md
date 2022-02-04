@@ -32,7 +32,7 @@ With Direct Line-based security, you can enable access only to locations that yo
 
 You can also swap and regenerate secrets and refresh tokens, and you can easily disable secured access if you no longer want to use it.
 
->[!NOTE]
+> [!NOTE]
 > Power Virtual Agents uses the [Bot Framework Direct Line channel]( /azure/bot-service/bot-service-channel-directline?view=azure-bot-service-4.0&preserve-view=true) to connect your web page or app to the bot.
 
 ## Enable or disable web channel security
@@ -51,9 +51,10 @@ Any access to the bot that doesn't provide this security measure won't work.
 
     :::image type="content" source="media/configure-web-security/enable-web-security.png" alt-text="Screenshot showing the Web channel security page.":::
 
->[!WARNING]
+> [!WARNING]
 > Once "Require secured access" is enabled or disabled, the system can take up to two hours to propagate the settings and take effect. Until then, the previous setting will be in effect. You do not need to publish the bot for this change to take effect.
->You should plan ahead to avoid exposing your bot unintentionally.
+>
+> You should plan ahead to avoid exposing your bot unintentionally.
 
 If you need to disable the web channel security option, you can do so by switching **Require secured access** to **Disabled**. Disabling secured access can take up to two hours to propagate.
 
@@ -69,9 +70,10 @@ Tokens only work for a single conversation and will expire unless refreshed.
 
 Choose the security model that works best for your situation.
 
->[!WARNING]
->We strongly discourage exposing the secret in any code that runs in the browser, either hard-coded or transferred through a network call.  
->Acquiring the token using the secret in your service code is the most secured way to protect your PVA bot.
+> [!WARNING]
+> We strongly discourage exposing the secret in any code that runs in the browser, either hard-coded or transferred through a network call.  
+>
+> Acquiring the token using the secret in your service code is the most secured way to protect your PVA bot.
 
 ## Obtain the secrets
 
@@ -91,8 +93,8 @@ Power Virtual Agents provides you with two secrets, which work simultaneously. Y
 
 To regenerate the secret, select **Regenerate** next to the secret.
 
->[!WARNING]
->Any user that is connected using the original secret or a token obtained from that secret will be disconnected.
+> [!WARNING]
+> Any user that is connected using the original secret or a token obtained from that secret will be disconnected.
 
 ## Generate a token
 

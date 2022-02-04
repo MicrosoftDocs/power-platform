@@ -47,8 +47,8 @@ When you select the `{x}` button in a node when you're editing a topic, you'll s
 
     :::image type="content" source="media/bot-variable-set-teams.png" alt-text="Screenshot showing the Variable Properties pane, with the Usage section highlighted." border="false":::
 
->[!NOTE]
->A bot variable's name must be unique across all topics. In the case of a conflict, you'll need to rename the variable before saving your change.
+> [!NOTE]
+> A bot variable's name must be unique across all topics. In the case of a conflict, you'll need to rename the variable before saving your change.
 
 ## Manage bot variables
 

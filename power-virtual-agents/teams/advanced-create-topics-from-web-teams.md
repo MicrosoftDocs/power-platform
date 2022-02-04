@@ -39,8 +39,8 @@ First you'll need a secure URL (starting with HTTPS) to your content, which must
 
 After the extraction is complete, you'll be shown the suggested topics for further review. Suggested topics aren't automatically added to your bot, but you can [easily add them](#add-suggested-topics-to-an-existing-bot).
 
->[!IMPORTANT]
->The **Suggest topics** command is built to run on webpages that are in the form of FAQ pages or support sites. Other types of pages that don't have that structure might not work as expected.
+> [!IMPORTANT]
+> The **Suggest topics** command is built to run on webpages that are in the form of FAQ pages or support sites. Other types of pages that don't have that structure might not work as expected.
 
 ### Extract content from existing webpages
 
@@ -64,11 +64,11 @@ After the extraction is complete, you'll be shown the suggested topics for furth
 
     :::image type="content" source="media/suggested-web-wait-teams.png" alt-text="An alert that says Getting your suggestions. This may take several minutes appears at the top of the page.":::
 
->[!TIP]
->You can add multiple webpages, but we recommend that you include only a few at a time to keep the list of suggestions manageable.
+> [!TIP]
+> You can add multiple webpages, but we recommend that you include only a few at a time to keep the list of suggestions manageable.
 
->[!IMPORTANT]
->You won't be able to add more URLs while the **Suggest topics** feature is running.
+> [!IMPORTANT]
+> You won't be able to add more URLs while the **Suggest topics** feature is running.
 
 Now the suggested topics will appear. These are taken from the links you previously submitted.
 

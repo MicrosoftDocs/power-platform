@@ -92,8 +92,8 @@ Variable | Custom value command | Empty (blank) value command
 `UserDisplayName` | ```/debug set bot.UserDisplayName "Value"``` | ```/debug set bot.UserDisplayName ""```
 `UserID` | Not available | ```/debug set bot.UserID ""```
 
->[!IMPORTANT]
->You can't populate the `UserID` variable with a custom value (other than an empty or blank value) due to security reasons.
+> [!IMPORTANT]
+> You can't populate the `UserID` variable with a custom value (other than an empty or blank value) due to security reasons.
 
 ## Authentication when using "Only for Teams" configuration
 
@@ -122,8 +122,8 @@ If your authentication option is set to **Only for Teams**, you don't need to ex
 
     :::image type="content" source="media/auth-template.png" alt-text="New nodes." border="false":::
 
-    >[!NOTE]
-    >The **Authenticate** node is only available in the action picker at the end of a dialog tree (as a leaf node). It cannot be added in the middle of a dialog. Once added, other nodes can be added below it.
+    > [!NOTE]
+    > The **Authenticate** node is only available in the action picker at the end of a dialog tree (as a leaf node). It cannot be added in the middle of a dialog. Once added, other nodes can be added below it.
 
 ### Authenticate node
 

@@ -28,14 +28,14 @@ You can enable your bot to perform an action by calling a Microsoft Power Automa
 
 You call flows from within topics, as a discrete **Call an action** node. You can utilize flows that have already been created in your [Power Apps environment](environments-first-run-experience.md), or you can create a flow from within the Power Virtual Agents [authoring canvas](authoring-create-edit-topics.md).
 
->[!IMPORTANT]
->To use flows within Power Virtual Agents, they must meet the following requirements:
+> [!IMPORTANT]
+> To use flows within Power Virtual Agents, they must meet the following requirements:
 >
->- A flow can only be called from a topic located in the same [Microsoft Dataverse environment](/powerapps/maker/common-data-service/data-platform-intro) as your bot.
+> - A flow can only be called from a topic located in the same [Microsoft Dataverse environment](/powerapps/maker/common-data-service/data-platform-intro) as your bot.
 >
->- Flows must also be in a solution in Power Automate. You can [move flows into solutions](#optionally-move-a-flow-from-default-solution-to-another-solution) so they are listed in the authoring canvas.
+> - Flows must also be in a solution in Power Automate. You can [move flows into solutions](#optionally-move-a-flow-from-default-solution-to-another-solution) so they are listed in the authoring canvas.
 >
->- [Flow values must be returned synchronously to Power Virtual Agents](#disable-asynchronous-responses-from-flows).
+> - [Flow values must be returned synchronously to Power Virtual Agents](#disable-asynchronous-responses-from-flows).
 
 Flows typically use variables to input and output information. The variables can then be used in other nodes within the topic.
 
@@ -59,8 +59,8 @@ Using the **Create a flow** option opens a starter flow template in the [Power A
 
 :::image type="content" source="media/PVAConnectorTemplate.JPG" alt-text="Power Automate flow template." border="false":::
 
->[!NOTE]
->The Power Automate portal automatically opens in the same environment as the bot (using the same user credentials).
+> [!NOTE]
+> The Power Automate portal automatically opens in the same environment as the bot (using the same user credentials).
 
 This template is an example of a flow that can be used by bots. To be suitable for bots, a Power Automate flow requires a special **Power Virtual Agents** trigger and response action:
 
@@ -92,8 +92,8 @@ The following types are not supported:
 - List [Date]
 - List [Timestamp]
 
->[!NOTE]
->A bot is able to receive up to 1 MB of data from a Power Automate flow in a single action. There is no upper limit on the maximum size of data that a bot can pass to a Power Automate flow.
+> [!NOTE]
+> A bot is able to receive up to 1 MB of data from a Power Automate flow in a single action. There is no upper limit on the maximum size of data that a bot can pass to a Power Automate flow.
 
 ### Input parameters
 
@@ -304,8 +304,8 @@ If you've enabled [Asynchronous Response](/azure/connectors/connectors-native-ht
 
 While testing your bot in the **Test chat** pane, you can use the **Save snapshot** command to get conversational diagnostics data. This data can help you troubleshoot issues, such as the bot not responding in the way you expect.
 
->[!WARNING]
->The snapshot contains all of your bot content, which may include sensitive information.
+> [!WARNING]
+> The snapshot contains all of your bot content, which may include sensitive information.
 
 1. At the top of the **Test chat** pane, select the menu icon (three vertical periods) and then **Save snapshot**.
 

@@ -30,8 +30,8 @@ This can be useful if you use different environments for different purposes, or 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CsHl]
 >
 
->[!NOTE]
->You can't export [topic-level or node-level comments](authoring-comments.md) when you export a bot.
+> [!NOTE]
+> You can't export [topic-level or node-level comments](authoring-comments.md) when you export a bot.
 
 ## Prerequisites
 

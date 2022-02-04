@@ -49,9 +49,10 @@ Next, [register a skill in Power Virtual Agents](configuration-add-skills.md).
 
 1. If your skill has inputs, assign variables to those inputs. Also, if your skill emits outputs to variables, you can use those variables in any nodes that follow.
 
-    >[!NOTE]
-    >Skills can accept simple data types (integer, boolean, string) and complex data types (as JSON strings).
-    >If you need to extract variables from complex data types, you must [use Power Automate](advanced-flow.md) to further parse and break down complex JSON strings into key value pairs for use in your bot.
+    > [!NOTE]
+    > Skills can accept simple data types (integer, boolean, string) and complex data types (as JSON strings).
+    >
+    > If you need to extract variables from complex data types, you must [use Power Automate](advanced-flow.md) to further parse and break down complex JSON strings into key value pairs for use in your bot.
 
 1. Select **Save** to persist your changes to the topic.
 

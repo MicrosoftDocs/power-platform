@@ -26,8 +26,8 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](fundamentals-what-is-power-virtual-agents-portal.md)
 > - [Power Virtual Agents app in Microsoft Teams](teams/fundamentals-what-is-power-virtual-agents-teams.md)
 
->[!IMPORTANT]
->See the [Important information](#important-information) section for specific usage details.
+> [!IMPORTANT]
+> See the [Important information](#important-information) section for specific usage details.
 
 Power Virtual Agents lets you create powerful chatbots that can be created with a guided, no-code graphical interface - and without the need for data scientists or developers.
 

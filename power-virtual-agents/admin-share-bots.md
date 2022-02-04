@@ -42,8 +42,8 @@ You can share your bot with security groups so their members can chat with the b
 
 1. Specify the security group name that you would like to share the bot with.
 
-  >[!NOTE]
-  >You can only share a bot with security groups. You cannot share with Microsoft 365 groups or individual users directly. You can manage individual user access by adding or removing users from the security group.
+  > [!NOTE]
+  > You can only share a bot with security groups. You cannot share with Microsoft 365 groups or individual users directly. You can manage individual user access by adding or removing users from the security group.
 
   :::image type="content" source="media/sharing-security-groups/sharing-bot-specify-security-group.PNG" alt-text="Specify security group in Sharing UI":::
 
@@ -53,8 +53,8 @@ You can share your bot with security groups so their members can chat with the b
 
 1. If you want to let users know you've shared the bot with them, select the **Send an email invitation to new users** check box.
 
-  >[!NOTE]
-  >Only security groups with email enabled will receive an email invitation. You can [copy the link for the Demo website](publication-connect-bot-to-web-channels.md#demo-website) and share it with users directly so they can chat with the bot.
+  > [!NOTE]
+  > Only security groups with email enabled will receive an email invitation. You can [copy the link for the Demo website](publication-connect-bot-to-web-channels.md#demo-website) and share it with users directly so they can chat with the bot.
 
 1. Select **Share** to share the bot with the new security groups.
 
@@ -70,8 +70,8 @@ You can share your bot to allow everyone in the same organization the bot to cha
 
     :::image type="content" source="media/sharing-security-groups/sharing-share-everyone-in-org.PNG" alt-text="Set user permission for everyone in the organization in Sharing UI.":::
 
-    >[!NOTE]
-    >Power Virtual Agents will not send email invitations to everyone in the organization. You can [copy the link for the Demo website](publication-connect-bot-to-web-channels.md#demo-website) and share it with users directly so they can chat with the bot.
+    > [!NOTE]
+    > Power Virtual Agents will not send email invitations to everyone in the organization. You can [copy the link for the Demo website](publication-connect-bot-to-web-channels.md#demo-website) and share it with users directly so they can chat with the bot.
 
 1. Select **Share** to share the bot with everyone in the organization.
 
@@ -109,8 +109,8 @@ Everyone you share the bot with can view, edit, configure, share, and publish th
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4DdcM]
 >
 
->[!NOTE]
->You can only share the bot with users who have Microsoft Power Platform licenses. Users who don't have a license can [sign up for a free trial](sign-up-individual.md) so they can edit the bot.
+> [!NOTE]
+> You can only share the bot with users who have Microsoft Power Platform licenses. Users who don't have a license can [sign up for a free trial](sign-up-individual.md) so they can edit the bot.
 
 1. To share a bot, sign in to Power Virtual Agents and select **Share** at the top of the bot's home page.
 
@@ -118,9 +118,10 @@ Everyone you share the bot with can view, edit, configure, share, and publish th
 
 1. Specify the name or email address of each user that you would like to share the bot with.  
 
-    >[!NOTE]
-    >You can only share a bot with individual users, which means you can't share it with a security group or distribution group in your organization.  
-    >You also can't share with users or groups outside of your organization.  
+    > [!NOTE]
+    > You can only share a bot with individual users, which means you can't share it with a security group or distribution group in your organization.  
+    >
+    > You also can't share with users or groups outside of your organization.  
 
     :::image type="content" source="media/sharing-input-invitee.png" alt-text="Screenshot showing name input in the share window." border="false":::
 
@@ -132,8 +133,8 @@ Everyone you share the bot with can view, edit, configure, share, and publish th
 
 1. Select **Share** to share the bot with the new users.
 
->[!IMPORTANT]
->It can take up to 10 minutes for the bot to show up in the shared user's bot list if the user [was not previously part of the environment](#assign-environment-security-roles) of the shared bot.
+> [!IMPORTANT]
+> It can take up to 10 minutes for the bot to show up in the shared user's bot list if the user [was not previously part of the environment](#assign-environment-security-roles) of the shared bot.
 
 ### Insufficient environment permissions
 
@@ -183,8 +184,9 @@ The **Environment security roles** section shows when you share a bot and only i
 
 You must be a **System administrator** of the environment where the bot is located to view and add security roles.
 
->[!NOTE]
->You can only _assign_ security roles when sharing a bot. You can't remove security roles when sharing. For full security role management, [use the Power Platform admin center](/power-platform/admin/create-users-assign-online-security-roles#assign-a-security-role-to-a-user).  
+> [!NOTE]
+> You can only _assign_ security roles when sharing a bot. You can't remove security roles when sharing. For full security role management, [use the Power Platform admin center](/power-platform/admin/create-users-assign-online-security-roles#assign-a-security-role-to-a-user).  
+>
 > Learn more about [security roles](/power-platform/admin/security-roles-privileges) and [predefined security roles](/power-platform/admin/database-security#predefined-security-roles).
 
 ### Assign the Environment maker security role during bot sharing
@@ -201,9 +203,10 @@ You can assign the **Bot transcript viewer** security role to users who don't ha
 
 Based on the content and target audience of the bot, you may want to give transcript access only to users who have appropriate privacy training.
 
->[!IMPORTANT]
->Conversation transcript access is managed by environment security roles. After assigning the **Bot transcript viewer** security role to a user, that user can access conversation transcripts for all bots that they create or are shared with in the environment.  
->In the default environment, every user has the **Bot transcript viewer** role assigned by default. We recommend you create an environment for bots that controls which user can view conversation transcripts. Learn more about how to [Create a new environment for your bots](./environments-first-run-experience.md#create-a-new-environment-for-your-bots)
+> [!IMPORTANT]
+> Conversation transcript access is managed by environment security roles. After assigning the **Bot transcript viewer** security role to a user, that user can access conversation transcripts for all bots that they create or are shared with in the environment.  
+>
+> In the default environment, every user has the **Bot transcript viewer** role assigned by default. We recommend you create an environment for bots that controls which user can view conversation transcripts. Learn more about how to [Create a new environment for your bots](./environments-first-run-experience.md#create-a-new-environment-for-your-bots)
 
 When [sharing the bot](#share-a-bot), you can assign the **Bot transcript viewer** role by selecting the check box.
 
@@ -227,8 +230,8 @@ This can help prevent conflicts if multiple people are working on the same topic
 
 :::image type="content" source="media/sharing-multi-authors.png" alt-text="Screenshot showing the Power Virtual Agents list of topics with the Currently editing column highlighted.":::
 
->[!NOTE]
->The list of authors in the **Currently editing** column is only refreshed when the page is loaded.
+> [!NOTE]
+> The list of authors in the **Currently editing** column is only refreshed when the page is loaded.
 
 A topic's **Properties** page also shows all the people currently editing a topic, as well as the last time someone saved.
 

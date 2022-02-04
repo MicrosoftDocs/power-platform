@@ -24,8 +24,8 @@ Select the version of Power Virtual Agents you're using here:
 You can customize how the bot looks when added as an app in Microsoft Teams. You can change the icon
 and the bot name at any time, and add a long and short description when you publish the bot.
 
->[!IMPORTANT]
->Updates to the bot's icon and color may take up to 24 hours to show on bots that are already published and shared.
+> [!IMPORTANT]
+> Updates to the bot's icon and color may take up to 24 hours to show on bots that are already published and shared.
 
 ## Prerequisites
 
@@ -41,8 +41,8 @@ and the bot name at any time, and add a long and short description when you publ
     The avatar icon needs to be an image type and can be any size - it will be automatically resized and positioned so it is in the middle of the colored square.
     We recommend you use a 32x32 pixel or 64x64 pixel .png file with transparency, so that way the color will come through the icon.
 
-    >[!NOTE]
-    >Setting the bot avatar icon will not show up for bots that are approved by an admin. Bots approved by an admin will use the Teams app icon as the bot avatar. Learn more on [sharing the bot with organization](publication-add-bot-to-microsoft-teams-teams.md#show-the-bot-in-microsoft-teams-app-store).
+    > [!NOTE]
+    > Setting the bot avatar icon will not show up for bots that are approved by an admin. Bots approved by an admin will use the Teams app icon as the bot avatar. Learn more on [sharing the bot with organization](publication-add-bot-to-microsoft-teams-teams.md#show-the-bot-in-microsoft-teams-app-store).
 
 1. When you're finished, select **Save** on the top menu bar.
 
