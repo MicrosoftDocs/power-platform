@@ -48,7 +48,7 @@ There are no user interface changes or version changes as part of this move. You
 
 | Supported | Not fully supported<sup>*</sup> |
 |-------------------------|-------------------------|
-| <ul></br><li>Dataverse</li></br><li>Dynamics apps</li></br></ul> | <ul></br><li>Power Apps</li></br><li>Power Automate</li></br><li>Power Virtual Agent</li></br></ul> |
+| <ul></br><li>Dataverse</li></br><li>Dynamics apps</li></br></ul> | <ul></br><li>Power Apps</li></br><li>Power Automate</li></br><li>Power Virtual Agents</li></br></ul> |
 
 <sup>*</sup>There may be potential data loss during migration and additional steps required. [Confirm if any of the solutions below are installed in the environments to be migrated, as these may require additional steps either from you or Support.](#confirm-if-any-of-the-solutions-below-are-installed-in-the-environments-to-be-migrated-as-these-may-require-additional-steps-either-from-you-or-support)
 
@@ -85,7 +85,7 @@ Once a migration request is submitted, the support team is engaged to review the
 
 ### Prerequisites:
 
-If you don't have a paid subscription of Dynamics 365 or Power Apps in the destination tenant, you'll need to create one. You might need to purchase a new subscription, or convert a trial to paid, if not already done.
+If you don't have a paid subscription of Dynamics 365 or Power Apps or Power Virtual Agents in the destination tenant, you'll need to create one. You might need to purchase a new subscription, or convert a trial to paid, if not already done.
 
 Depending on how many source environments you're migrating, you'll need to create a temporary environment or environments in the destination tenant. The source environment type and destination environment type—production vs non-production (sandbox)—must match. The users to be migrated from one tenant to another need to be created on the target tenant as well.
 
@@ -120,6 +120,7 @@ You'll also need to provide the following information:
 ### Confirm if any of the solutions below are installed in the environments to be migrated, as these may require additional steps either from you or Support:
  
 - Power Apps or Power Automate
+- Power Virtual Agents
 - Dynamics 365 Customer Voice
 - Power Apps portals
 - Power Apps Checker App
@@ -162,7 +163,7 @@ For administrative access users:
       Note: If the destination user is not assigned any license, the migration will fail.
    3. Save the CSV file which has both full access users and administrative access users mapped.
 
-### Do the following steps for Power Apps, Power Automate, Power Apps portals, and Marketing before and after the migration: 
+### Do the following steps for Power Apps, Power Automate, Power Virtual Agents, Power Apps portals, and Marketing before and after the migration: 
 
 #### For Power Apps and Power Automate: 
 
@@ -195,6 +196,19 @@ After the migration:
 5. Upload the app package file.
 6. Complete all of the import option selections, and then select **Import**.
 7. Repeat these steps until all apps have been imported. 
+
+#### For Power Virtual Agents: 
+
+-	Any Power Virtual Agents chatbots must be manually exported. 
+-	Some chatbots' dependent components must be manually reconfigured during or after the migration. For example, connections, environment variables, custom connectors. 
+
+Before the migration: 
+1. Chatbots are solution aware, you can go to https://make.powerapps.com/, navigate to the Solutions page, and export all chatbots'solutions (either individually or group them together in a single solution. [Learn more](/power-virtual-agents/authoring-export-import-bots).
+
+After the migration: 
+1. Select the new environment from https://make.powerapps.com/ and navigate to the Solutions page.
+2. Select **Import** and use the file selector to pick the packages exported from the above steps.
+3. Confirm that the import was successfully completed by checking the solution contents in the target environment. 
 
 #### For Power Apps portals (must be done for each portal in the environment(s)): 
               
