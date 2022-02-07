@@ -4,7 +4,7 @@ description: "Troubleshoot error code responses from your bot."
 author: v-alarioza
 ms.author: v-alarioza
 ms.topic: troubleshooting
-ms.date: 01/28/2022
+ms.date: 02/07/2022
 ms.service: power-virtual-agents
 ms.reviewer: clmori
 manager: shellyha
