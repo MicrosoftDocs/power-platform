@@ -51,8 +51,8 @@ The following tenant-level reports are available for tenant and environment admi
 
 Power Automate reports provide insights into tenant and environment usage and inventory of all flows and connectors. The report answers questions such as: 
 
-- What is the total unique Cloud & Desktop Flow users across the tenant or environments? 
-- What is the count of Successful vs Failed runs across Cloud & Desktop flows? 
+- What is the total unique Cloud Flow users across the tenant or environments? 
+- What is the count of Successful vs Failed runs across Cloud flows? 
 - What is the total unique Cloud Flow users across the tenant or environments? 
 - What is the count of Successful vs Failed runs across Cloud flows? 
 - How many flows exist in my tenant or environment? 
@@ -69,7 +69,7 @@ Power Automate reports provide insights into tenant and environment usage and in
 The Power Automate report provide insights into the activities of citizen authors of Cloud flows across the tenant or environments. The report answers questions such as: 
 
 - What is the total number of flows created Makers across the tenant or environments? 
-- What is the count of first-time makers across Cloud & Desktop flows? 
+- What is the count of first-time makers across Desktop flows? 
 - Who are the top makers across the tenant or environments? 
 - How many of these flows are using premium or standard connectors? 
 - Allow me to filter the above list based on connector dependency. 
@@ -86,7 +86,7 @@ The Power Automate Inventory report offers a complete catalog of Cloud flows dis
 - What is the total number of Cloud flows across the tenant or environments? 
 - Which flows depend on specific connectors or connector types like Premium? 
 - Who are the owners of the flows hosted in one or more environments? 
-- What is the distribution of Cloud & Desktop flows apps across the organization? 
+- What is the distribution of Cloud flows apps across the organization? 
 
 :::image type="content" source="media/power-automate-inventory-report.png" alt-text="Power Automate Inventory report":::
 
