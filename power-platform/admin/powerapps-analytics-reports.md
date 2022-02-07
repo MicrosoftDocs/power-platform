@@ -4,7 +4,7 @@ description: View tenant-level analytics for Power Apps.
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/07/2021
+ms.date: 02/07/2022
 author: tjvass
 ms.subservice: admin
 ms.author: tjvass
