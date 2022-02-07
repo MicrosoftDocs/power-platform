@@ -90,7 +90,7 @@ In the bot authoring canvas, add a question node by choosing **Ask a question**.
 
 1. Click the plus (**+**) icon and select **Ask a question**. 
 
-   :::image type="content" source="media/handoff-add-node.png" alt-text="Screenshot of adding a node." border="false":::
+   :::image type="content" source="media/authoring-variables/handoff-add-node.png" alt-text="Screenshot of adding a node." border="false":::
 
 1. You'll notice a variable that contains the user's response is automatically created.
 
@@ -98,27 +98,27 @@ In the bot authoring canvas, add a question node by choosing **Ask a question**.
 
 
 
-   :::image type="content" source="media/Automatically_created_variable_(draft).PNG" alt-text="Create a variable." border="false":::
+   :::image type="content" source="media/authoring-variables/Automatically_created_variable_(draft).PNG" alt-text="Create a variable." border="false":::
 
 ## Pick an entity to use
 By default, the question node will be created using **Multiple choice options**, but you can also pick a different prebuilt or custom entity by choosing what to identify from the node. For example, you can choose **Person name** to use that entity. 
 
-:::image type="content" source="media/Pick_an_entity_(draft).PNG" alt-text="Select an entity." border="false":::
+:::image type="content" source="media/authoring-variables/Pick_an_entity_(draft).PNG" alt-text="Select an entity." border="false":::
 
 ## Rename a variable
 When a variable is automatically created, a default name will be given. You rename a variable by selecting the variable name, entering a new name, and selecting **Done** to save the new name.
 
-:::image type="content" source="media/Rename_a_variable_(draft).PNG" alt-text="Rename a variable." border="false":::
+:::image type="content" source="media/authoring-variables/Rename_a_variable_(draft).PNG" alt-text="Rename a variable." border="false":::
 
 ## Use variables in action nodes
 When using a variable in an action node, if a variable's base type matches with a parameter type specified for a flow or Bot Framework skill, it will show up as a candidate to be used to feed to this parameter. The output from the action nodes will generate new variables as well.  
 
-:::image type="content" source="media/User_a_variable_in_Skills(draft).PNG" alt-text="Use entity in an action node." border="false":::
+:::image type="content" source="media/authoring-variables/User_a_variable_in_Skills(draft).PNG" alt-text="Use entity in an action node." border="false":::
 
 ## Use literal values in action nodes
 Alternatively, you can type a literal value into an action node variable input field instead of selecting a variable from the menu. When passing a literal this way, you can type its value directly into the input field.
 
-:::image type="content" source="media/LiteralActionInput.png" alt-text="Screenshot showing the use of literal values for action inputs.":::
+:::image type="content" source="media/authoring-variables/LiteralActionInput.png" alt-text="Screenshot showing the use of literal values for action inputs.":::
 
 
 
