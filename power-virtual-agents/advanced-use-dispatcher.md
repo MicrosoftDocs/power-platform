@@ -368,6 +368,7 @@ The following steps require you to add code that registers your new dispatch end
 You're ready to test your dispatcher to ensure seamless interaction between DynamicsBot and your other bots.
 
 1. [Publish your bot to a demo website](./publication-connect-bot-to-web-channels.md).
+
     :::image type="content" source="media/open-deploy.png" alt-text="Deploy our bot." border="false":::
   
 1. Build (Ctrl + Shift + B) and run (F5) your dispatcher app.
