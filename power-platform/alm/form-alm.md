@@ -51,7 +51,7 @@ Follow these steps to implement healthy form ALM for this scenario.
 1. In your test environment, import the managed patch solution from step 4. As shown in the below diagram, the *Solution A* patch is adding a new *Field3* to FormA and removing *Field2*, which was added by *Solution A*.
 
    > [!NOTE]
-   > Patches are additive in nature and can't remove fields from the form, so *Field2* will not be removed from the form. The UI for the form in the test environment now shows *Field3*, *Field2*, and *Field1*.
+   > Patches containing [full formXml](#full-formxml) are always compared to the base layer that the patch was created from and ignore any intermediate patches between the base and the current patch. As a result, *Field2* is removed since it exists in the base layer *Solution A* and the removal is detected. On the other hand, *Field3* is added by this patch solution and can't be removed by subsequent patches. Thus, fields added through patch solutions are additive in nature.
 
 1. When you further customize the form you created in Step 1 using upgrades, use the same environment where *Solution A* is in an unmanaged state and clone *Solution A* to create the upgrade solution and customize the form. Then, export the *Solution A* upgrade as a managed solution. This step exports a full FormXml for the form.
 1. In your test environment, import the managed *Solution A* upgrade from step 6. As shown in the below diagram, the *Solution A* upgrade is adding a new *Field4* to *FormA* and removing *Field2*, which was added by *Solution A*. The UI for the form in the test environment now shows *Field1*, *Field3*, and *Field4* on the form, but *Field2* will be removed after the form is merged from the import.
