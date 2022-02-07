@@ -28,7 +28,7 @@ An *environment* is a space to store, manage, and share your organization's busi
 * You might also create separate environments for different global branches of your company.  
 
 > [!NOTE]
-> You can get early access to upcoming Power Apps functionality by joining the [Power Apps Preview program](preview-environments.md).
+> You can get early access to upcoming Power Apps functionality by joining the [Power Apps Preview program](/powerapps/maker/powerapps-preview-program).  
 
 ## Environment scope
 Each environment is created under an Azure Active Directory (Azure AD) tenant, and its resources can only be accessed by users within that tenant. An environment is also bound to a geographic location, like the United States. When you create an app in an environment, that app is routed only to datacenters in that geographic location. Any items that you create in that environment (including chatbots, connections, gateways, flows using Microsoft Power Automate, and more) are also bound to their environment's location.
