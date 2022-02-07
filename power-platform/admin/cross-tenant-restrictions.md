@@ -153,7 +153,6 @@ Selecting the failed run will show details of the failed flow run.
 
 - The feature is currently not available in Microsoft Dataverse services operated by 21Vianet.
 
-- This feature does not protect your tenant from inbound cross-cloud connections. If a tenant has tenant isolation turned on, all outgoing connections are restricted. However, incoming connections that are established from other tenants in other clouds are not restricted. This issue is currently being investigated.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
