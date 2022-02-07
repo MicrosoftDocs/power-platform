@@ -249,7 +249,7 @@ The following steps require you to add code that registers your new dispatch end
     }
     ```
 
-3. Add a reference to the Power Virtual Agents bot in the `IBotServices.cs` file.
+1. Add a reference to the Power Virtual Agents bot in the `IBotServices.cs` file.
   
     ```csharp
     public interface IBotService
@@ -260,7 +260,7 @@ The following steps require you to add code that registers your new dispatch end
     }
     ```
 
-4. Update the BotServices constructor to start `DynamicsBotService` in the `BotServices.cs` file.
+1. Update the BotServices constructor to start `DynamicsBotService` in the `BotServices.cs` file.
 
     ```csharp
     DynamicsBotService = new DynamicsBotService(new DynamicsBotEndpoint(
@@ -271,7 +271,7 @@ The following steps require you to add code that registers your new dispatch end
     );
     ```
   
-5. Update `DispatchBot.cs` to add a trigger for the Power Virtual Agents bot on intent match.
+1. Update `DispatchBot.cs` to add a trigger for the Power Virtual Agents bot on intent match.
   
     ```csharp
     private async Task ProcessDynamicsBotAsync(ITurnContext<Microsoft.Bot.Schema.IMessageActivity> turnContext, CancellationToken     cancellationToken)
@@ -353,7 +353,7 @@ The following steps require you to add code that registers your new dispatch end
     }
     ```
 
-6. If you want your Power Virtual Agents bot to handle unmatched intents for a single fallback, update the method `DispatchToTopIntentAsync`.
+1. If you want your Power Virtual Agents bot to handle unmatched intents for a single fallback, update the method `DispatchToTopIntentAsync`.
   
     ```csharp
     case "l_dynamicsbot":
