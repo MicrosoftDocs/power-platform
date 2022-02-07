@@ -38,23 +38,23 @@ You can share your bot with security groups so their members can chat with the b
 
 1. Select **Share** at the top of the bot's home page.
 
-  :::image type="content" source="media/sharing-security-groups/sharing-home.png" alt-text="Sharing UI entry point in bot homepage." border="false":::
+    :::image type="content" source="media/sharing-security-groups/sharing-home.png" alt-text="Sharing UI entry point in bot homepage." border="false":::
 
 1. Specify the security group name that you would like to share the bot with.
 
-  > [!NOTE]
-  > You can only share a bot with security groups. You cannot share with Microsoft 365 groups or individual users directly. You can manage individual user access by adding or removing users from the security group.
+    > [!NOTE]
+    > You can only share a bot with security groups. You cannot share with Microsoft 365 groups or individual users directly. You can manage individual user access by adding or removing users from the security group.
 
-  :::image type="content" source="media/sharing-security-groups/sharing-bot-specify-security-group.PNG" alt-text="Specify security group in Sharing UI":::
+    :::image type="content" source="media/sharing-security-groups/sharing-bot-specify-security-group.PNG" alt-text="Specify security group in Sharing   UI":::
 
 1. Review the security group's permission
 
-  :::image type="content" source="media/sharing-security-groups/sharing-review-sg-permission.PNG" alt-text="Review security group permission in Sharing UI.":::
+    :::image type="content" source="media/sharing-security-groups/sharing-review-sg-permission.PNG" alt-text="Review security group permission in Sharing UI.":::
 
 1. If you want to let users know you've shared the bot with them, select the **Send an email invitation to new users** check box.
 
-  > [!NOTE]
-  > Only security groups with email enabled will receive an email invitation. You can [copy the link for the Demo website](publication-connect-bot-to-web-channels.md#demo-website) and share it with users directly so they can chat with the bot.
+    > [!NOTE]
+    > Only security groups with email enabled will receive an email invitation. You can [copy the link for the Demo website](publication-connect-bot-to-web-channels.md#demo-website) and share it with users directly so they can chat with the bot.
 
 1. Select **Share** to share the bot with the new security groups.
 
