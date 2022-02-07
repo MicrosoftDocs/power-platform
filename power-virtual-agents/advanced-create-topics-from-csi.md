@@ -41,13 +41,13 @@ After reviewing topic details and identifying a candidate for automation, you ca
 
     :::image type="content" source="media/automate-topic-details.png" alt-text="Automate topics from topic details page." border="false":::
 
-2. Customer Service Insights opens a new browser tab and goes to the [Power Virtual Agents web app](https://web.powerva.microsoft.com), where it creates a new topic in the currently active bot.
+1. Customer Service Insights opens a new browser tab and goes to the [Power Virtual Agents web app](https://web.powerva.microsoft.com), where it creates a new topic in the currently active bot.
 
     The **Name** and **Trigger phrases** are prefilled from the topic you selected for automation.
 
     Customer Service Insights prefills **Trigger phrases** with non-duplicated case titles from the most relevant cases (up to three cases).
 
-3. Review the topic name and trigger phrases, and follow the other steps in the [Create custom topics for your bot](authoring-create-edit-topics.md) article to complete the creation of your bot topic.
+1. Review the topic name and trigger phrases, and follow the other steps in the [Create custom topics for your bot](authoring-create-edit-topics.md) article to complete the creation of your bot topic.
 
 ## Automate topics from the Topics page
 

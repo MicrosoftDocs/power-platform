@@ -135,7 +135,7 @@ In the examples described here, a simple declaration is made for the variables. 
 
     - To pass in the user name when starting a bot conversation on a website, you can attach the `UserName=` query string as: *https://web.powerva.microsoft.com/webchat/bots/12345?UserName=Renata*.
 
-2. The parameter name is case-insensitive. This means `username=Renata` will also work in this example.
+1. The parameter name is case-insensitive. This means `username=Renata` will also work in this example.
 
 **To add the variable to a [custom canvas](customize-default-canvas.md)**
 
@@ -159,7 +159,7 @@ In the examples described here, a simple declaration is made for the variables. 
         });
     ```
 
-2. Within your `<script>` section, call the `store` when you embed your bot, as in the following example where `store` is called just above where `styleOptions` is called (you'll need to replace the `BOT_ID` with your ID):
+1. Within your `<script>` section, call the `store` when you embed your bot, as in the following example where `store` is called just above where `styleOptions` is called (you'll need to replace the `BOT_ID` with your ID):
 
     ```html
     const BOT_ID = "12345-5678";

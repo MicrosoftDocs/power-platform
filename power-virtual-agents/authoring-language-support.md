@@ -30,7 +30,7 @@ You specify the target language when you first [create a bot](authoring-first-bo
 
 1. In the **Create a new bot** window, select **Language**.
 
-2. Choose the language you want to use. Some languages are listed under **Preview**, as described in the list of supported languages later in this article.
+1. Choose the language you want to use. Some languages are listed under **Preview**, as described in the list of supported languages later in this article.
 
     :::image type="content" source="teams/media/language-selection-teams.png" alt-text="Language selection option.":::
 

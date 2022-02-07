@@ -22,7 +22,7 @@ Follow the instructions below to sign up for a Power Virtual Agents trial. After
 
 1. Go to the [sign-up page](https://go.microsoft.com/fwlink/?LinkId=2107702).
 
-2. Enter your email address and then select **Sign up**.
+1. Enter your email address and then select **Sign up**.
 
 :::image type="content" source="media/sign-up-get-started.jpg" alt-text="sign up portal get started." border="false":::
 

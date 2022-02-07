@@ -69,11 +69,11 @@ You can delete bots to remove them from your environment.
 
 1. Select the bot icon on the top menu bar, and then select the bot you want to delete.
 
-2. Select the **Settings** icon on the top menu bar, then select **General settings**.
+1. Select the **Settings** icon on the top menu bar, then select **General settings**.
 
    :::image type="content" source="media/general-settings.png" alt-text="General settings." border="false":::
 
-3. Select **Delete bot**.
+1. Select **Delete bot**.
 
 You'll be asked to confirm the deletion of the bot, after which all bot content is immediately deleted.
 

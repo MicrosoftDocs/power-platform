@@ -23,11 +23,16 @@ The EU Data Protection Regulation (GDPR) gives rights to people (known in the re
 The guide discusses how to use Microsoft's products, services and administrative tools to help our controller customers find and act on personal data to respond to DSR requests. Specifically, this includes how to find, access, and act on personal data that reside in Microsoft's cloud. Here's a quick overview of the processes outlined in this guide:
 
 1. **Discover** — Use search and discovery tools to more easily find customer- data that may be the subject of a DSR request. Once potentially responsive documents are collected, you can perform one or more of the DSR actions described in the following steps to respond to the request. Alternatively, you may determine that the request doesn't meet your organizations guidelines for responding to DSR requests.
-2. **Access** — Retrieve personal data that resides in the Microsoft cloud and, if requested, make a copy of it that can be available to the data subject.
-3. **Rectify** — Make changes or implement other requested actions on the personal data, where applicable.
-4. **Restrict** — Restrict the processing of personal data, either by removing licenses for various online services or turning off the desired services where possible. You can also remove data from the Microsoft cloud and retain it on-premises or at another location.
-5. **Delete** — Permanently remove personal data that resided in Microsoft's cloud.
-6. **Export** — Provide an electronic copy (in a machine-readable format) of personal data to the data subject.
+
+1. **Access** — Retrieve personal data that resides in the Microsoft cloud and, if requested, make a copy of it that can be available to the data subject.
+
+1. **Rectify** — Make changes or implement other requested actions on the personal data, where applicable.
+
+1. **Restrict** — Restrict the processing of personal data, either by removing licenses for various online services or turning off the desired services where possible. You can also remove data from the Microsoft cloud and retain it on-premises or at another location.
+
+1. **Delete** — Permanently remove personal data that resided in Microsoft's cloud.
+
+1. **Export** — Provide an electronic copy (in a machine-readable format) of personal data to the data subject.
 Each section in this guide outlines the technical procedures that a data controller organization can take to respond to a DSR request for personal data in Microsoft's cloud
 
 ## Prerequisites

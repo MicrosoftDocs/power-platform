@@ -104,7 +104,7 @@ Train and recreate the dispatcher app and add your exported topics and utterance
     npm install -g botdispatch
     ```
 
-2. Add topics and utterances that you exported earlier using the Dispatch tool.
+1. Add topics and utterances that you exported earlier using the Dispatch tool.
 
     ```console
     CMD> dispatch add -type file -name l_dynamicsbot -f luis.json
@@ -119,7 +119,7 @@ Train and recreate the dispatcher app and add your exported topics and utterance
     File: Content.lu added to l_dynamicsbot.dispatch
     ```
 
-3. Generate a dispatch model that contains exported topics and utterances.
+1. Generate a dispatch model that contains exported topics and utterances.
     > [!NOTE]
     > You'll need to re-train your dispatch model when more topics are added.
 
@@ -177,7 +177,7 @@ The following steps require you to add code that registers your new dispatch end
     }
     ```
 
-2. Add a new `DynamicsBot` class to your project.
+1. Add a new `DynamicsBot` class to your project.
 
     ```csharp
     public class DynamicsBotService
@@ -370,9 +370,9 @@ You're ready to test your dispatcher to ensure seamless interaction between Dyna
 1. [Publish your bot to a demo website](./publication-connect-bot-to-web-channels.md).
     :::image type="content" source="media/open-deploy.png" alt-text="Deploy our bot." border="false":::
   
-2. Build (Ctrl + Shift + B) and run (F5) your dispatcher app.
+1. Build (Ctrl + Shift + B) and run (F5) your dispatcher app.
   
-3. Open the Bot Emulator where you add the name and endpoint to your bot.
+1. Open the Bot Emulator where you add the name and endpoint to your bot.
     :::image type="content" source="media/dispatch-bot-emulator.png" alt-text="Dialog to create new bot in the bot emulator." border="false":::
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

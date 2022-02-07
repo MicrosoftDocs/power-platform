@@ -44,7 +44,7 @@ Custom dialogs added with Bot Framework Composer are deployed, hosted, and execu
 
 1. Go to the **Topics** tab for the bot you want to edit and select the down-arrow symbol next to **+ New topic**.
 
-2. Select **Open in Bot Framework Composer** from the dropdown menu.
+1. Select **Open in Bot Framework Composer** from the dropdown menu.
 
     :::image type="content" source="media/Composer_OpeninBotFrameworkComposerButton_dropdown.png" alt-text="Open Composer from Topics page.":::
 

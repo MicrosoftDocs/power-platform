@@ -311,15 +311,15 @@ While testing your bot in the **Test chat** pane, you can use the **Save snapsho
 
     :::image type="content" source="media/save-snapshot.png" alt-text="Save snapshot.":::
 
-2. In the window that appears, select **Save**.
+1. In the window that appears, select **Save**.
 
     :::image type="content" source="media/save-snapshot-window.png" alt-text="Save snapshot message.":::
 
-3. The bot's content and conversational diagnostics will be saved in a .zip archive file called *DSAT.zip*.
+1. The bot's content and conversational diagnostics will be saved in a .zip archive file called *DSAT.zip*.
 
     :::image type="content" source="media/dsat.png" alt-text="Conversational diagnostics archive.":::
 
-4. The *DSAT.zip* file contains two files: *botContent.json* and *dialog.json*.
+1. The *DSAT.zip* file contains two files: *botContent.json* and *dialog.json*.
 
     1. *dialog.json* contains conversational diagnostics, including detailed descriptions of errors.
 
