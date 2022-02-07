@@ -16,10 +16,16 @@ ms.custom: advanced-authoring, ceX
 
 This article covers how to use the Microsoft Bot Framework dispatcher tool to integrate an existing bot with a Power Virtual Agents bot. It's intended for experienced IT professionals, such as IT admins or developers who have a solid understanding of developer tools, utilities, and integrated development environments (IDEs). 
 
-* [Retrieve topics, utterances and secrets from your Power Virtual Agents bot](#retrieve-topics-and-utterances-from-your-bot)
-* [Train the dispatcher custom model with your Power Virtual Agents topics](#train-the-dispatcher-custom-model-with-your-power-virtual-agents-topics)
-* [Register and trigger your new dispatch endpoint in code](#register-and-trigger-your-new-dispatch-endpoint-in-code)
-* [Deploy your bot and test the dispatcher](#deploy-your-bot-and-test-the-dispatcher)
+- [Use a Microsoft Bot Framework bot with Power Virtual Agents](#use-a-microsoft-bot-framework-bot-with-power-virtual-agents)
+  - [Prerequisites](#prerequisites)
+    - [Code samples and dependencies](#code-samples-and-dependencies)
+  - [Retrieve topics and utterances from your Power Virtual Agents environment](#retrieve-topics-and-utterances-from-your-power-virtual-agents-environment)
+    - [Retrieve bot ID and tenant ID from your bot](#retrieve-bot-id-and-tenant-id-from-your-bot)
+    - [Retrieve topics and utterances from your bot](#retrieve-topics-and-utterances-from-your-bot)
+    - [Convert the exported content to .LU format](#convert-the-exported-content-to-lu-format)
+  - [Train the dispatcher custom model with your Power Virtual Agents topics](#train-the-dispatcher-custom-model-with-your-power-virtual-agents-topics)
+  - [Register and trigger your new dispatch endpoint in code](#register-and-trigger-your-new-dispatch-endpoint-in-code)
+  - [Deploy your bot and test the dispatcher](#deploy-your-bot-and-test-the-dispatcher)
 
 ## Prerequisites
 
@@ -51,8 +57,7 @@ You'll need to retrieve your Power Virtual Agents bot's content (topics and utte
 2.	[Sign in to your Power Virtual Agents environment](https://web.powerva.microsoft.com) using your Azure Active Directory (Azure AD) credentials. 
 
 3.	Go to the **Network** tab.
-    >[!div class="mx-imgBorder"]
-    >![DevTools in Microsoft Edge browser showing the Network tab.](media/devtools-network-preview.png)
+    :::image type="content" source="media/devtools-network-preview.png" alt-text="DevTools in Microsoft Edge browser showing the Network tab." border="false":::
 
 4.	Filter and look for client requests.
 
@@ -363,14 +368,12 @@ The following steps require you to add code that registers your new dispatch end
 You're ready to test your dispatcher to ensure seamless interaction between DynamicsBot and your other bots.
 
 1.  [Publish your bot to a demo website](./publication-connect-bot-to-web-channels.md).    
-    >[!div class="mx-imgBorder"]
-    ![Deploy our bot.](media/open-deploy.png)
+    :::image type="content" source="media/open-deploy.png" alt-text="Deploy our bot." border="false":::
   
 2.  Build (Ctrl + Shift + B) and run (F5) your dispatcher app.
   
 3.  Open the Bot Emulator where you add the name and endpoint to your bot.
-    >[!div class="mx-imgBorder"]
-    ![Dialog to create new bot in the bot emulator.](media/dispatch-bot-emulator.png)
+    :::image type="content" source="media/dispatch-bot-emulator.png" alt-text="Dialog to create new bot in the bot emulator." border="false":::
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

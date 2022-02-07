@@ -2,7 +2,7 @@
 title: "Use managed properties (Microsoft Dataverse) | Microsoft Docs" # Intent and product brand in a unique string of 43-59 chars including spaces
 description: "Managed properties help you define which of the managed solution components can be customized" # 115-145 characters including spaces. This abstract displays in the search result.
 ms.custom: ""
-ms.date: 04/28/2021
+ms.date: 12/16/2021
 ms.reviewer: "pehecke"
 ms.service: power-platform
 ms.topic: "article"
@@ -32,6 +32,7 @@ You can control which of your managed solution components are customizable by us
 |Entity|New charts can be created|<xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.CanCreateCharts>.`Value`|  
 |Entity|New views can be created|<xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.CanCreateViews>.`Value`|  
 |Entity|Can change any other entity properties not represented by a managed property|<xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.CanModifyAdditionalSettings>.`Value`|  
+|Entity|Can create attributes|<xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.CanCreateAttributes>.`Value`|  
 |Field (Attribute)|Can be customized|<xref:Microsoft.Xrm.Sdk.Metadata.AttributeMetadata.IsCustomizable>.`Value`|  
 |Field (Attribute)|Display name can be modified|<xref:Microsoft.Xrm.Sdk.Metadata.AttributeMetadata.IsRenameable>.`Value`|  
 |Field (Attribute)|Can change requirement level|<xref:Microsoft.Xrm.Sdk.Metadata.AttributeMetadata.RequiredLevel>.`CanBeChanged`<br /><br /> Note:<br /><br /> `RequiredLevel`is the only managed property to use the `CanBeChanged`property.|  

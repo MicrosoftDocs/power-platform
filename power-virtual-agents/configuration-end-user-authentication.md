@@ -1,8 +1,8 @@
 ---
-title: "Configure user authentication"
+title: "Configure user authentication (contains video)"
 description: "Configure authentication with your identity provider to enable users to sign in when having a bot conversation."
 keywords: "Authentication, IdP, PVA, AAD"
-ms.date: 10/22/2021
+ms.date: 12/10/2021
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -63,6 +63,9 @@ This configuration option provides no authentication for the bot. This is the st
 
 ### Only for Teams
 
+> [!IMPORTANT] 
+> When choosing this option, only the Teams channel will be available. All other channels will be disabled and a warning will be displayed.
+
 This configuration option is optimized for Teams channel usage. It automatically sets up Azure Active Directory (Azure AD) authentication for Teams without the need for any manual configuration. 
 
 It uses the Teams authentication itself to identify the user, meaning the user will not be prompted to sign-in while in Teams, unless there is a need for expanded scope. Only the Teams channel is available once this configuration is selected. 
@@ -97,7 +100,7 @@ Once the configuration is saved, make sure to publish your bot so the changes ta
 
 ## Required user sign in and bot sharing
 
-**Require users to sign in** controls if a user needs to sign in before talking with the bot. If is only available to **Only for Teams** and **Manual** authentication options. It is highly recommended to turn on this setting when the bot contains sensitive information. 
+**Require users to sign in** controls if a user needs to sign in before talking with the bot. It is only available to **Only for Teams** and **Manual** authentication options. It is highly recommended to turn on this setting when the bot contains sensitive information. 
 
 :::image type="content" source="media/sharing-security-groups/auth-require-user-to-sign-in.PNG" alt-text="Screenshot of the Authentication pane showing require user to sign in.":::
 
@@ -119,10 +122,9 @@ Your bot's **authentication option** and **Require user to sign in** combination
   - If your authentication setting is configured to **Manual**, and the service provider is either **Azure Active Directory** or **Azure Active Directory V2**, you can enable the **Require users to sign in** option to control who can chat with the bot in your organization via bot sharing.
   - If your authentication provider is set as **Generic OAuth 2**, you can toggle the **Require users to sign in** option. When turned on, a user who signs in can chat with the bot, but you cannot control which specific users are allowed to chat with the bot in your organization with bot sharing. 
 
-**Share** at the top of the bot's homepage will show to everyone who can chat with the bot when the bot's authentication configuration can't control who can chat with the bot in the organization.
+When a bot's authentication option can't control who can chat with the bot, selecting **Share** on the bot's homepage will inform you that anyone can chat with the bot.
 
 :::image type="content" source="media/sharing-security-groups/auth-allow-everyone-chat-with-bot.PNG" alt-text="Everyone in the organization can chat with bot because of authentication setting.":::
-
 
 ## Register a new app with your identity provider when using Manual (for any channel including Teams)
 

@@ -80,7 +80,7 @@ The following are some of the key fields you will find within the *Content* JSON
 | `SessionInfo` | Contains the type (`unengaged` or `engaged`), outcome (`Escalated`, `Resolved`, `Abandon`), and the turn count of the session. |
 | `VariableAssignment`| A value has been assigned to a variable.|
 
-To convert the ID of the dialog being redirected to, a user can [use the bot's content](gdpr-export.md#export-the-bot-content).
+To convert the ID of the dialog being redirected to, a user can [use the bot's content](gdpr-export.md#bot-content-as-tenant-admin).
 
 ## Building custom reports from conversation transcripts
 
@@ -116,7 +116,7 @@ Power BI refreshes data from the Dataflow and all compute infrastructure is mana
 
 ### Azure Data Lake Store (ADLS) + Synapse approach
 
-If data size in the Standard Azure Data Lake Store approach causes slow refreshes or other operational problems, you can use [Azure Synapse Analytics](https://azure.microsoft.com/en-us/services/synapse-analytics/) and integrate it [into Power BI](https://powerbi.microsoft.com/en-us/blog/announcing-azure-synapse-analytics-public-preview/).
+If data size in the Standard Azure Data Lake Store approach causes slow refreshes or other operational problems, you can use [Azure Synapse Analytics](https://azure.microsoft.com/services/synapse-analytics/) and integrate it [into Power BI](https://powerbi.microsoft.com/en-us/blog/announcing-azure-synapse-analytics-public-preview/).
 
 :::image type="content" source="media/analytics-sessions-transcripts/transcripts-asynapse.png" alt-text="Diagram of data flowing from Dataverse into Azure Data Lake and being processed by Azure Synapse and Power Platform.":::
 
@@ -129,7 +129,7 @@ If data size in the Standard Azure Data Lake Store approach causes slow refreshe
 
 [Variables can be used to store data relevant to your bot content](authoring-variables.md) or bot user. Parsing out the variable and its value from the conversation transcript lets you filter or slice the data by the variable
 
-In many places the conversation transcripts refer to content by its ID. For example, the ID of the topic that is being redirected to by the current topic is only referenced by its ID. To get the name of the topic, look up the name of the topic [from the bot content](gdpr-export.md#export-the-bot-content).
+In many places the conversation transcripts refer to content by its ID. For example, the ID of the topic that is being redirected to by the current topic is only referenced by its ID. To get the name of the topic, look up the name of the topic [from the bot content](gdpr-export.md#bot-content-as-tenant-admin).
 
 
 

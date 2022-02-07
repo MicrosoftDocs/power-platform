@@ -4,8 +4,8 @@ description: "The Power Platform admin center is a unified portal for administra
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
-ms.topic: conceptual
-ms.custom: intro-internal
+ms.topic: overview
+
 ms.date: 09/04/2020
 ms.subservice: admin
 ms.author: jimholtz

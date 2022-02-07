@@ -1,10 +1,10 @@
 ---
-title: "Fundamentals - Analyze chatbot usage"
+title: "Fundamentals - Analyze chatbot usage (contains video)"
 description: "Analyze customer satisfaction, topic usage, and bot performance in Power Virtual Agents."
 keywords: "PVA"
 ms.date: 9/22/2020
 ms.service: power-virtual-agents
-ms.topic: article
+ms.topic: overview
 author: iaanw
 ms.author: iawilt
 manager: shellyha
@@ -47,7 +47,7 @@ The analytics section is divided into a number of pages to give you multiple way
 
 * In Power Virtual Agents, select **Analytics** on the side navigation pane.
 
-![Opening the Analytics dashboard.](media/analytics-open.png "Opening the Analytics dashboard")
+:::image type="content" source="media/analytics-open.png" alt-text="Opening the Analytics dashboard." border="false":::
 
 ### See also
 

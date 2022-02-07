@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/09/2021
+ms.date: 11/15/2021
 ms.subservice: admin
 ms.author: jimholtz 
 search.audienceType: 
@@ -26,7 +26,7 @@ If you're using a pay-as-you-go plan, usage of apps and any Dataverse or Microso
 
 | **Meter** | **What is counted?** | **What is billed?** |
 |------|--------|--------|
-| Power Apps per-app | The total number of unique monthly active users of each app and portal in a pay-as-you-go environment. </br>An active user is someone who opens an app/portal at least once in the given month. </br>Repeat access of an app/portal by a user is not counted. Users with Power Apps per-user licenses are not counted. | $10 per active user/app/month |
+| Power Apps per-app | The total number of unique monthly active users of each app and portal in a pay-as-you-go environment. </br>An active user is someone who opens an app/portal at least once in the given month. </br>Repeat access of an app/portal by a user is not counted. Users with Power Apps per-user licenses are not counted. Users with a Dynamics 365 license that provides access to per user license will not be counted.| $10 per active user/app/month |
 | Dataverse | For database storage, any usage above 1 GB per pay-as-you-go environment. </br>For file storage, any usage above 1 GB per pay-as-you-go environment. </br>If auditing is enabled, any resulting log storage usage will be counted. | For usage above 1 GB for database: $48 per GB/month</br>For usage above 1 GB for file: $2.40 per GB/month </br>For any log usage: $12 per GB/month |
 | Power Platform requests (coming soon) | Each user in a pay-as-you-go enabled environment will get a daily entitlement of Power Platform requests based on their license. With the Power Apps per-app meter, you get an entitlement of 6,000 API calls per user/app/day. This will be sufficient for most customers. For those with high-scale scenarios, any Power Platform requests above that entitlement will be counted. | 0.00004$ per request/day above the daily entitled limits |
 

@@ -4,7 +4,7 @@ description: "FAQs for licensing Power Apps, Power Automate, Dataverse, Datavers
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/02/2021
+ms.date: 02/01/2022
 author: chrisgarty
 ms.subservice: admin
 ms.author: cgarty
@@ -53,11 +53,13 @@ See [Preview: Pay-as-you-go plan](pay-as-you-go-overview.md).
 
 ### The Power Apps per app plan allows users to run specific apps. Can you explain what this means in terms of the number and types of apps I can use?
 
-The Power Apps per app plan is designed to help organizations solve for one business scenario at a time, which may involve a combination of individual apps. Each “per app” license provides an individual user with rights to two apps (canvas and/or model-driven) as well as one Power Apps Portal, all within a single environment. A single user might be covered by multiple “per app” licenses to allow the user to use multiple solutions targeted at various business scenarios, without requiring a per-user license. In other words, the “per app” license is stackable.
+The Power Apps per app plan is designed to help organizations solve for one business scenario at a time, which may involve a combination of individual apps. Each “per app” license provides an individual user with rights to one app (canvas and/or model-driven) or one Power Apps Portal, within a single environment. A single user might be covered by multiple “per app” licenses to allow the user to use multiple apps, without requiring a per-user license. In other words, the “per app” license is stackable.
 
-### Do embedded canvas apps in model-driven apps count toward the two-apps limits?
+An important part of this feature simplification is that we will no longer require any standalone plans for maker or admin capabilities. Previously admins required a PowerApps P2 license for certain management operations; this will no longer be the case.
 
-No. Embedded canvas components within the model-driven app will not count towards the two apps limit in the per app licensing model.
+### Do embedded canvas apps in model-driven apps count consume multiple per app plans?
+
+No. Embedded canvas components within the model-driven app are recognized as a single app.
 
 ### What are the self-service purchase options for the Microsoft Power Platform products?
 
@@ -250,7 +252,7 @@ Yes. With Dataverse for Teams, users now can build flows using Power Automate ma
 
 ### Which Microsoft 365 subscriptions include Dataverse for Teams and Power Virtual Agents capabilities with Teams?
 
-Dataverse for Teams and Power Virtual Agents for Teams capabilities will be available as part of select Microsoft 365 subscriptions with Microsoft Power Platform and Teams capabilities, excluding plans for US government environments (GCC High and DoD) and EDU A1 and SUB SKUs. For more information, see the [Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
+Dataverse for Teams and Power Virtual Agents for Teams capabilities will be available as part of select Microsoft 365 subscriptions with Microsoft Power Platform and Teams capabilities, excluding plans for EDU A1 and SUB SKUs. For more information, see the [Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
 
 ### How is Dataverse for Teams environment created? 
 

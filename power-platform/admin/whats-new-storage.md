@@ -4,8 +4,8 @@ description: "Learn about enhancements for storage that affect administrators, i
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
-ms.topic: conceptual
-ms.custom: intro-internal
+ms.topic: overview
+
 ms.date: 09/16/2021
 ms.subservice: admin
 ms.author: jimholtz

@@ -51,7 +51,7 @@ For example, you could record someone's answer to a question in one place in the
 1. In the node selection window, select **Call an action**, and then select **Create a flow**. 
 
 
-    ![Create a new Power Automate flow.](media/UseCreateFlowOption-teams.png)
+    :::image type="content" source="media/UseCreateFlowOption-teams.png" alt-text="Create a new Power Automate flow.":::
 
 
 Using the **Create a flow** option opens a template selection screen.

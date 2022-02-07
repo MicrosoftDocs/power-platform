@@ -1,4 +1,4 @@
-{:allowed-branchname-matches ["^master$", "demo-master-3"]
+{:allowed-branchname-matches ["^main$"]
  :allowed-filename-matches ["power-platform" "power-virtual-agents"]
  :use-skip-label true
  :targets

@@ -1,5 +1,5 @@
 ---
-title: "Automate topic creation"
+title: "Automate topic creation (contains video)"
 description: "Automate the creation of topics in Power Virtual Agents bots by using support topics discovered by Dynamics 365 Customer Service Insights."
 keywords: "Customer Service Insights, PVA, CSI"
 ms.date: 9/22/2020
@@ -45,7 +45,7 @@ After reviewing topic details and identifying a candidate for automation, you ca
 
 1. In the topic details page, select **Automate** at the top. 
 
-    ![Automate topics from topic details page.](media/automate-topic-details.png)
+    :::image type="content" source="media/automate-topic-details.png" alt-text="Automate topics from topic details page." border="false":::
 
 2. Customer Service Insights opens a new browser tab and goes to the [Power Virtual Agents web app](https://web.powerva.microsoft.com), where it creates a new topic in the currently active bot. 
 
@@ -58,7 +58,7 @@ After reviewing topic details and identifying a candidate for automation, you ca
 ## Automate topics from the Topics page
 You can also automate topics from the Topics page by hovering over the topic you want to automate in the topic list, then selecting the **Automate** icon. 
 
-![Automate topics from Topics page.](media/automate-topic-list.png)
+:::image type="content" source="media/automate-topic-list.png" alt-text="Automate topics from Topics page." border="false":::
 
 
 
