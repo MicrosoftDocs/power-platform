@@ -1,7 +1,7 @@
 ---
 title: "Security concepts in Microsoft Dataverse | MicrosoftDocs"
 description: Provides detailed information about the security model and concepts in Microsoft Dataverse.
-ms.date: 01/04/2022
+ms.date: 02/07/2022
 ms.service: power-platform
 ms.topic: "article"
 author: jimholtz
@@ -17,7 +17,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Security concepts in Microsoft Dataverse
+# Security concepts in Microsoft Dataverse 
 
 One of the key features of [Dataverse](/powerapps/maker/common-data-service/data-platform-intro) is its rich security model that can adapt to many business usage scenarios. This security model is only in play when there is a Dataverse database in the environment. As an administrator, you likely won't be building the entire security model yourself, but will often be involved in the process of managing users and making sure they have the proper configuration and troubleshooting security access related issues.
 
@@ -38,9 +38,7 @@ Business units work with security roles to determine the effective security that
 
 You can [create child business units](./create-edit-business-units.md) to help further segment your users and data. Every user assigned to a Dataverse environment will belong to a business unit. While business units could be used to model 1:1 a true organization hierarchy, more often they lean more towards just defined security boundaries to help achieve the security model needs.
 
-To better understand let’s look at the following example. We have three business units. Woodgrove is the root business unit and will always be at the top, that is unchangeable. We've created two other child business units A and B. Users in these business units have very different access needs. When we associate a user with this Dataverse environment, we can set the user to be in one of these three business units. Where the user is associated will determine which business unit owns the records that user is the owner of. By having that association allows us to tailor a security role to allow the user to see all records in that business unit.
-
-To better understand let’s look at two examples. The two examples have three business units. Woodgrove is the root business unit and will always be at the top; that is unchangeable. We've created two other child business units A and B. Users in these business units have very different access needs. 
+To better understand let’s look at the following example. We have three business units. Woodgrove is the root business unit and will always be at the top, that is unchangeable. We've created two other child business units A and B. Users in these business units have very different access needs. When we associate a user with this Dataverse environment, we can set the user to be in one of these three business units. Where the user is associated will determine which business unit owns the records that user is the owner of. Having that association allows us to tailor a security role to allow the user to see all records in that business unit.
 
 ### Hierarchical data access structure  
 
