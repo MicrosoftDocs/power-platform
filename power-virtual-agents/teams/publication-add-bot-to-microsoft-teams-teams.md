@@ -60,13 +60,14 @@ Providing the right description and appearance for the bot before making it avai
    >
    > Updates to the bot's details will not apply to bots that have been approved by an admin. You will need to resubmit the bot for approval to have the latest details updated for users.
 
-1. Select **More** to add additional information:  
-    - Developer name
-    - Website
-    - Privacy Statement
-    - Terms of use
+1. Select **More** to add additional information:
 
-       You should provide this information to keep your users informed about the bot. See the [Privacy statement and terms of use](publication-terms-of-use-teams.md) topic for more details and examples.
+   - Developer name
+   - Website
+   - Privacy Statement
+   - Terms of use
+
+   You should provide this information to keep your users informed about the bot. See the [Privacy statement and terms of use](publication-terms-of-use-teams.md) topic for more details and examples.
 
 1. Select **Save** to return to the screen where you can make your bot available in Teams. You'll see your updates to the color, icon, and description are shown.
 
@@ -221,9 +222,9 @@ Before submitting the bot to your organization, make sure:
 1. Review the requirements for submission, and select **Submit for admin approval**.
 
    > [!NOTE]
-   > Make sure you review the content and it's ready for an admin to review. You will need to submit new requests to the admin to [update the icon and descriptions](#customize-bots-appearance-in-microsoft-teams) for bots that were previously approved.
+   > Make sure you review the content when it's ready for an admin to review. You will need to submit new requests to the admin to [update the icon and descriptions](#customize-bots-appearance-in-microsoft-teams) for bots that were previously approved.  
    >
-   > Once approved, all new and existing users of the bot in Teams will receive the update.
+   > Once approved, all new and existing users of the bot in Teams will receive the update.  
    >
    > This only applies to the bot details. You can continue to make content updates to your bot by publishing the latest content without needing to re-submit to admin.
 
@@ -276,7 +277,7 @@ To add a bot to the team it was created in:
 
 1. Select **Add to {team name}**.
 
-    :::image type="content" source="../media/teams-add-to-a-team-teams.png" alt-text="The UI has a button to let maker add bot to the team the bot is created in":::
+   :::image type="content" source="../media/teams-add-to-a-team-teams.png" alt-text="The UI has a button to let maker add bot to the team the bot is created in":::
 
 1. Select **Add** to add the bot to the team.
 
@@ -329,7 +330,7 @@ To disallow users from adding a bot to a team:
 
 1. Clear the **Allow your users to add this bot to a team** checkbox.
 
-    :::image type="content" source="../media/teams-disallow-end-users-to-add-to-team.png" alt-text="Checkbox is unchecked to disallow user to add bot to teams that they are part of":::
+   :::image type="content" source="../media/teams-disallow-end-users-to-add-to-team.png" alt-text="Checkbox is unchecked to disallow user to add bot to teams that they are part of":::
 
 1. Select **Save**.
 

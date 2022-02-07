@@ -2,7 +2,7 @@
 title: "Understand the US Government plans available"
 description: "This document lists the capabilities, requirements, and features for US Government plans for Power Virtual Agents."
 keywords: "Administration, licensing, PVA, standalone, compare, comparison"
-ms.date: 5/27/2021
+ms.date: 12/02/2021
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -14,7 +14,7 @@ ms.collection: virtual-agent
 
 # Power Virtual Agents for US Government customers
 
-This article is for US government customers who are deploying Power Virtual Agents as a part of Power Virtual Agents Government Community Cloud (GCC) plan. It provides you with an overview of features that are specific to these plans.
+This article is for US government customers who are deploying Power Virtual Agents as a part of a Power Virtual Agents Government Community Cloud (GCC) plan. It provides you with an overview of features that are specific to these plans.
 
 Government plans are designed for the unique needs of organizations that must meet US compliance and security standards.
 
@@ -26,7 +26,7 @@ The Power Virtual Agents US Government Service Description serves as an overlay 
 
 Licensing for Power Virtual Agents US Government plans is the same as for public cloud. They are available through the Volume Licensing and Cloud Solution Provider purchasing channels. For more information, see the [Assign user licenses and manage access](requirements-licensing.md) topic.
 
-The Power Virtual Agents GCC environment is compliant with the Federal requirements for cloud services, including FedRAMP High.
+The Power Virtual Agents GCC environment is compliant with the Federal requirements for cloud services, including FedRAMP High.  
 
 In addition to the features and capabilities of Power Virtual Agents, organizations that use Power Virtual Agents US Government plans benefit from the following unique features:
 
@@ -37,6 +37,16 @@ In addition to the features and capabilities of Power Virtual Agents, organizati
 - Access to your organization's customer content is restricted to screened Microsoft personnel.
 
 - Power Virtual Agents US Government complies with all certifications and accreditations that US Public Sector customers require.
+
+### GCC High environment
+
+Beginning February 2022, eligible customers can choose to deploy Power Virtual Agents US Government to the GCC High environment.  
+
+Microsoft has designed the platform and our operational procedures to meet the requirements aligning with the DISA SRG IL4 compliance framework.  
+
+This option enables and requires the customer to leverage Azure AD Government for customer identities, in contrast to GCC, which leverages the public Azure AD. 
+
+For the US Department of Defense contractor customer base, Microsoft operates the service in a manner that enables these customers to meet ITAR commitment and DFARS acquisition regulations, as documented and required by their contracts with the US Department of Defense. A Provisional Authority to Operate has been granted by DISA.
 
 ## Customer eligibility
 
@@ -74,7 +84,7 @@ Access to Power Virtual Agents US Government customer content by Microsoft admin
 
 Power Virtual Agents support and service engineering staff do not have standing access to customer content hosted in the Power Virtual Agents US Government service. Any staff who requests temporary permission elevation which would grant access to customer content must first have passed the following background checks.
 
-| Microsoft Personnel Screening and Background Checks <sup>1</sup> | Description                                                                                                                                                                                                   |
+| Microsoft Personnel Screening and Background Checks&nbsp;<a href="#AccFn1" id="AccRef1"><sup>1</sup></a> | Description                                                                                                                                                                                                   |
 |------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | U.S. citizenship                                                 | Verification of U.S. citizenship                                                                                                                                                                              |
 | Employment history check                                         | Verification of seven (7) year employment history                                                                                                                                                             |
@@ -88,7 +98,7 @@ Power Virtual Agents support and service engineering staff do not have standing 
 | CJIS background screening                                        | State-adjudicated review of federal and state criminal history by state CSA appointed authority within each state that has signed up for the Microsoft CJIS IA program                                        |
 | Department of Defense IT-2                                       | Staff who request elevated permissions to customer data or privileged administrative access to DoD SRG L5 service capacities must pass DoD IT-2 adjudication, based on a successful OPM Tier 3 investigation. |
 
-<sup>1</sup> Applies only to personnel with temporary or standing access to customer content hosted in Power Virtual Agents US Governments (GCC).
+<a href="#AccRef1" id="AccFn1">1.</a> Applies only to personnel with temporary or standing access to customer content hosted in Power Virtual Agents US Government (GCC and GCC High)
 
 ## Certifications and accreditations
 
@@ -109,7 +119,7 @@ Power Virtual Agents US Government services run within Microsoft datacenters in 
 
 Power Virtual Agents US Government plans use the Office 365 customer administrator UI for customer administration and billing.
 
-The Power Virtual Agents US Government service maintains the actual resources, information flow, and data management, while relying on Office 365 to provide the visual styles that are presented to the customer administrator through their management console. For purposes of FedRAMP ATO inheritance, Power Virtual Agents US Government plans use Azure (including Azure for Government) ATOs for infrastructure and platform services, respectively.
+The Power Virtual Agents US Government service maintains the actual resources, information flow, and data management. For purposes of FedRAMP ATO inheritance, Power Virtual Agents US Government plans use Azure (including Azure for Government) ATOs for infrastructure and platform services, respectively.
 
 If you adopt the use of Active Directory Federation Services (ADFS) 2.0 and set up policies to help ensure your users connect to the services through single sign-on, any customer content that is temporarily cached will be in the United States.
 
@@ -146,11 +156,11 @@ You use a different set of URLs to access Power Virtual Agents US Government env
 
 | Commercial version | US Government version |
 |-------------------------|-------------------------|
-| [https://web.powerva.microsoft.com](https://web.powerva.microsoft.com) | [https://gcc.powerva.microsoft.us](https://gcc.powerva.microsoft.us) (GCC) |
-| [https://flow.microsoft.com](https://flow.microsoft.com/) | [https://gov.flow.microsoft.us](https://gov.flow.microsoft.us/) (GCC)</br>[https://high.flow.microsoft.us](https://high.flow.microsoft.us/) (GCC High) </br>[https://flow.appsplatform.us](https://flow.appsplatform.us) (DoD) |
-| [https://make.powerapps.com](https://make.powerapps.com/) | [https://make.gov.powerapps.us](https://make.gov.powerapps.us/) (GCC)<br /></br>[https://make.high.powerapps.us](https://make.high.powerapps.us/) (GCC High)<br /></br>[https://make.apps.appsplatform.us](https://make.apps.appsplatform.us/) (DoD) |
-| [https://flow.microsoft.com/connectors](https://flow.microsoft.com/connectors) | [https://gov.flow.microsoft.us/connectors](https://gov.flow.microsoft.us/connectors)<br /></br>[https://high.flow.microsoft.us/connectors](https://high.flow.microsoft.us/connectors) (GCC High)<br /></br>[https://flow.appsplatform.us](https://flow.appsplatform.us/) (DoD) |
-| [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com/) | [https://gcc.admin.powerplatform.microsoft.us](https://gcc.admin.powerplatform.microsoft.us/)<br /></br>[https://high.admin.powerplatform.microsoft.us](https://high.admin.powerplatform.microsoft.us/) (GCC High)<br /></br>[https://admin.appsplatform.us](https://admin.appsplatform.us/) (DoD) |
+| [https://web.powerva.microsoft.com](https://web.powerva.microsoft.com) | [https://gcc.powerva.microsoft.us](https://gcc.powerva.microsoft.us) (GCC) </br></br>[https://high.powerva.microsoft.us](https://high.powerva.microsoft.us) (GCC High)|
+| [https://flow.microsoft.com](https://flow.microsoft.com/) | [https://gov.flow.microsoft.us](https://gov.flow.microsoft.us/) (GCC)</br></br>[https://high.flow.microsoft.us](https://high.flow.microsoft.us/) (GCC High)  |
+| [https://make.powerapps.com](https://make.powerapps.com/) | [https://make.gov.powerapps.us](https://make.gov.powerapps.us/) (GCC)<br /></br>[https://make.high.powerapps.us](https://make.high.powerapps.us/) (GCC High)|
+| [https://flow.microsoft.com/connectors](https://flow.microsoft.com/connectors) | [https://gov.flow.microsoft.us/connectors](https://gov.flow.microsoft.us/connectors)<br /></br>[https://high.flow.microsoft.us/connectors](https://high.flow.microsoft.us/connectors) (GCC High)|
+| [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com/) | [https://gcc.admin.powerplatform.microsoft.us](https://gcc.admin.powerplatform.microsoft.us/)<br /></br>[https://high.admin.powerplatform.microsoft.us](https://high.admin.powerplatform.microsoft.us/) (GCC High) |
 
 For those customers that implement network restrictions, ensure access to the following domains is made available to your end users' access points:
 
@@ -177,15 +187,22 @@ Azure is distributed among multiple clouds. By default, tenants are allowed to 
 
 - USGov Texas
 
-Refer to the [Azure IP Ranges and Service Tags  US Government Cloud](https://www.microsoft.com/download/confirmation.aspx?id=57063) document, focusing attention on *AzureCloud.usgovtexas*, and*AzureCloud.usgovvirginia*. Also note that these are the IP ranges required for your end users to have access to the service URLs.
+Refer to the [Azure IP Ranges and Service Tags - US Government Cloud](https://www.microsoft.com/download/confirmation.aspx?id=57063) document, focusing attention on *AzureCloud.usgovtexas*, and*AzureCloud.usgovvirginia*. Also note that these are the IP ranges required for your end users to have access to the service URLs.
 
 ## Power Virtual Agents US Government feature limitations
 
 Some of the features available in the commercial version of Power Virtual Agents are not available to Power Virtual Agents US Government customers. The Power Virtual Agents team is actively working on making these features available to US Government customers and will update this article when these features become available.
 
-- [Power Virtual Agents Analytics](analytics-overview.md). Alternatively, you can create [Custom Analytics (blog)](https://powervirtualagents.microsoft.com/blog/custom-analytics-solution-for-power-virtual-agents/) using Power BI dashboard.
+Feature or capability | Available in GCC | Available in GCC High
+|-|-|-|
+[Power Virtual Agents Analytics](analytics-overview.md)&nbsp;<a id="LimsRef1" href="#LimsFn1"><sup>1</sup></a>| &#X2716;</br>No | &#X2716;</br>No
+[Power Virtual Agents Microsoft Teams app experience](teams/fundamentals-what-is-power-virtual-agents-teams.md) | &#X2716;</br>No | &#X2716;</br>No
+[Teams channel in the Power Virtual Agents web app](publication-add-bot-to-microsoft-teams.md) | &#X2714;</br>Yes | &#X2716;</br>No
+[Transfer to agents](configuration-hand-off-omnichannel.md) | &#X2714;</br>Yes | &#X2716;</br>No
 
-- [Power Virtual Agents Microsoft Teams app experience](teams/fundamentals-what-is-power-virtual-agents-teams.md).
+
+<a id="LimsFn1" href="#LimsRef1">1. </a>Alternatively, you can create [Custom Analytics using a Power BI dashboard (blog)](https://powervirtualagents.microsoft.com/blog/custom-analytics-solution-for-power-virtual-agents/).
+
 
 ## Requesting support
 
