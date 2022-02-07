@@ -9,9 +9,9 @@ ms.topic: "article"
 applies_to: 
   - "Dynamics 365 (online)"
 ms.assetid: 
-author: jimholtz
+author: mihaelablendea
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: mihaelab
 ms.reviewer: jimholtz
 ms.custom: "admin-security"
 search.audienceType: 
