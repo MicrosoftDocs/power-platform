@@ -19,8 +19,7 @@ search.app:
 ---
 # View analytics for flows
 
-Environment admins can access analytics for Power Automate in the Microsoft [Power Platform admin center](https://admin.powerplatform.microsoft.com/analytics/flow). The reports provide insights into runs, usage, errors, types of flows created, shared flows, and details on connectors associated with all the different flow types like automated flows, button flows, scheduled flows, approval flows, business process flows. These reports are not available for the UI flows type.
-
+Environment admins can access analytics for Power Automate in the Microsoft [Power Platform admin center](https://admin.powerplatform.microsoft.com/analytics/flow). The reports provide insights into runs, usage, errors, types of flows created, shared flows, and details on connectors associated with all the different flow types like automated flows, button flows, scheduled flows, approval flows, business process flows. These reports do not offer insights for Desktop Flows.
 To access these reports:
 
 1. Go to the navigation bar on the left side.
@@ -54,6 +53,8 @@ Power Automate reports provide insights into tenant and environment usage and in
 
 - What is the total unique Cloud & Desktop Flow users across the tenant or environments? 
 - What is the count of Successful vs Failed runs across Cloud & Desktop flows? 
+- What is the total unique Cloud Flow users across the tenant or environments? 
+- What is the count of Successful vs Failed runs across Cloud flows? 
 - How many flows exist in my tenant or environment? 
 - Which of my environments had the most unique users? 
 - What were the top flows across my tenant or environments by runs? 
@@ -65,7 +66,7 @@ Power Automate reports provide insights into tenant and environment usage and in
 
 ### Power Automate - Maker Activity report 
 
-The Power Automate report provide insights into the activities of citizen authors of Cloud & Desktop flows across the tenant or environments. The report answers questions such as: 
+The Power Automate report provide insights into the activities of citizen authors of Cloud flows across the tenant or environments. The report answers questions such as: 
 
 - What is the total number of flows created Makers across the tenant or environments? 
 - What is the count of first-time makers across Cloud & Desktop flows? 
@@ -80,9 +81,9 @@ The Power Automate report provide insights into the activities of citizen author
 
 ### Power Automate - Inventory report 
 
-The Power Automate Inventory report offers a complete catalog of Cloud & Desktop flows distributed across the tenant. This view includes filters that allow admins to search for flows based on various criteria. The report answers questions such as: 
+The Power Automate Inventory report offers a complete catalog of Cloud flows distributed across the tenant. This view includes filters that allow admins to search for flows based on various criteria. The report answers questions such as: 
 
-- What is the total number of Cloud & Desktop flows across the tenant or environments? 
+- What is the total number of Cloud flows across the tenant or environments? 
 - Which flows depend on specific connectors or connector types like Premium? 
 - Who are the owners of the flows hosted in one or more environments? 
 - What is the distribution of Cloud & Desktop flows apps across the organization? 
@@ -104,7 +105,7 @@ For more information on downloading data from the tenant level reports, see [E
 
 ## Other reports
 
-The preview contains other reports with multiple KPIs in each report.  The reports within the **Runs**, **Usage**, **Created**, and **Errors** tabs provide insights for both Cloud flows and Desktop flows.  By default, you see reports for the last viewed environment.
+The preview contains other reports with multiple KPIs in each report.  The reports within the **Runs**, **Usage**, **Created**, and **Errors** tabs provide insights for Cloud flows and Desktop flows.  By default, you see reports for the last viewed environment.
 
 
 ### Runs report
