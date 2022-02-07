@@ -47,7 +47,7 @@ Creating your first bot requires you to have a license (or trial) to Power Virtu
     
 1. In the **Create a new bot** dialog box, enter a name for your bot. This can be something generic to your company or specific to the scenario you are tailoring your bot to.
 
-   :::image type="content" source="media/create-new-bot-screen.png" alt-text="New bot dialog." border="false":::
+   :::image type="content" source="media/authoring-first-bot/create-new-bot-screen.png" alt-text="New bot dialog." border="false":::
 
 1. Your bot is created in the [default Power Apps environment for your organization or tenant](environments-first-run-experience.md). Usually this is sufficient, but if necessary you can choose a different environment by selecting **More options** to see a list of available environments.
   
@@ -62,7 +62,7 @@ You can navigate to some tabs during this period, after which the banner will ch
 
 If you have already created a bot, you can create a new bot by selecting the icon on the title bar to open the **Bots** pane and then selecting **New bot**.
 
-   :::image type="content" source="media/first-bot-new.png" alt-text="New bot icon in title bar." border="false":::
+   :::image type="content" source="media/authoring-first-bot/first-bot-new.png" alt-text="New bot icon in title bar." border="false":::
 
 ## Delete a bot
 
@@ -72,7 +72,7 @@ You can delete bots to remove them from your environment.
 
 2. Select the **Settings** icon on the top menu bar, then select **General settings**.
 
-   :::image type="content" source="media/general-settings.png" alt-text="General settings." border="false":::
+   :::image type="content" source="media/authoring-first-bot/general-settings.png" alt-text="General settings." border="false":::
 
 3. Select **Delete bot**.
 
