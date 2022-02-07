@@ -74,8 +74,6 @@ Dynamics 365 Plan is a user subscription that includes [!INCLUDE[pn_ms_dyn_365_f
   
 - [!INCLUDE[pn_ms_dyn_for_financials](../includes/pn-ms-dyn-for-financials.md)]  
   
-- [!INCLUDE[pn_flow](../includes/pn-flow.md)]  
-  
 - [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)]  
   
 **Add-ons and Integration**  
