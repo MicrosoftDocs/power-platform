@@ -2,7 +2,7 @@
 title: "Migrate an environment to a different tenant"
 description: "Learn about the impact of moving an environment from one tenant to another. Review the prerequisites and considerations before submitting a request." 
 ms.custom: ""
-ms.date: 12/10/2021
+ms.date: 02/07/2022
 ms.service: power-platform
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -85,7 +85,7 @@ Once a migration request is submitted, the support team is engaged to review the
 
 ### Prerequisites:
 
-If you don't have a paid subscription of Dynamics 365 or Power Apps or Power Virtual Agents in the destination tenant, you'll need to create one. You might need to purchase a new subscription, or convert a trial to paid, if not already done.
+If you don't have a paid subscription of Dynamics 365, Power Apps, or Power Virtual Agents in the destination tenant, you'll need to create one. You might need to purchase a new subscription, or convert a trial to paid, if not already done.
 
 Depending on how many source environments you're migrating, you'll need to create a temporary environment or environments in the destination tenant. The source environment type and destination environment type—production vs non-production (sandbox)—must match. The users to be migrated from one tenant to another need to be created on the target tenant as well.
 
@@ -200,10 +200,10 @@ After the migration:
 #### For Power Virtual Agents: 
 
 -	Any Power Virtual Agents chatbots must be manually exported. 
--	Some chatbots' dependent components must be manually reconfigured during or after the migration. For example, connections, environment variables, custom connectors. 
+-	Some chatbots' dependent components must be manually reconfigured during or after the migration - for example, connections, environment variables, custom connectors. 
 
 Before the migration: 
-1. Chatbots are solution aware, you can go to https://make.powerapps.com/, navigate to the Solutions page, and export all chatbots'solutions (either individually or group them together in a single solution. [Learn more](/power-virtual-agents/authoring-export-import-bots).
+1. Chatbots are solution aware. You can go to https://make.powerapps.com/, navigate to the Solutions page, and export all chatbots'solutions - either individually or group them together in a single solution. For more information, see [Export and import bots using solutions](/power-virtual-agents/authoring-export-import-bots).
 
 After the migration: 
 1. Select the new environment from https://make.powerapps.com/ and navigate to the Solutions page.
