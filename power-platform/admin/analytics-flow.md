@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/18/2021
+ms.date: 02/07/2022
 ms.subservice: admin
 ms.author: deonhe
 search.audienceType: 
