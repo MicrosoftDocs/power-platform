@@ -4,7 +4,7 @@ description: About the impact of DLP policies on apps and flows.
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/03/2021
+ms.date: 02/03/2022
 ms.subservice: admin
 author: mikferland-msft
 ms.author: miferlan
@@ -52,9 +52,6 @@ Users who use a resource that's in violation of the latest DLP policy will see a
 > [!div class="mx-imgBorder"] 
 > ![App opening error.](media/dlp-opening-error.png "App opening error")
 
-> [!NOTE]
-> Power Apps DLP runtime enforcement experiences include the admin contact and governance reference material, if set. To learn more about how to use this capability, go to [Governance error message content commands](powerapps-powershell.md#governance-error-message-content-commands). 
-
 Similarly, Power Automate makers and users won't be able to start a flow that uses connectors that don't belong together or have been blocked by DLP policies. A background system process marks the flow as **Suspended**, and the flow won't be executed until the maker resolves the DLP policy violation.
 
 > [!NOTE]
@@ -63,5 +60,8 @@ Similarly, Power Automate makers and users won't be able to start a flow that us
 > [!div class="mx-imgBorder"] 
 > ![Flow suspension.](media/dlp-flow-suspension.png "Flow suspension")
 
+## Providing an admin contact and reference link in DLP error messages
+
+Power Platform DLP runtime enforcement experiences can include an admin contact and a link to governance reference material. The admin contact and reference link can be set using the PowerShell for [Governance error message content commands](powerapps-powershell.md#governance-error-message-content-commands). 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

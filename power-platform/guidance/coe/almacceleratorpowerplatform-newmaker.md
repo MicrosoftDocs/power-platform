@@ -31,6 +31,9 @@ Watch how to use the ALM Accelerator for Power Platform solution.
 
 ## Walk-through: ALM Accelerator new maker experience
 
+> [!IMPORTANT]
+> The following user experience has been configured using the ALM Accelerator for Power Platform Administration app that is installed with the ALM accelerator solution. For more information on how to use the administration app and configure and share experiences, see [Creating user settings and profiles](setup-almacceleratorpowerplatform-deployment-profiles.md)
+
 1. Once you have installed and configured the app, launch it from your environment under **Apps** by selecting **ALM Accelerator for Power Platform**.
 
 1. When prompted to create connections and grant consent, create the necessary connections or accept the consent dialog.
@@ -43,7 +46,7 @@ Watch how to use the ALM Accelerator for Power Platform solution.
 
 1. Once the environment is selected, the main screen displays a list of all the **unmanaged solutions** in the environment. You can refresh the list by selecting **Refresh** if you don't see new solutions you've created:
 
-    - **Save Solution**: Saves the current state of the solution into version control so all changes done to the solution can be tracked.
+    - **Save Solution**: Saves the current state of the solution into version control so all changes done to the solution can be tracked. Additionally, the save will create your deployment pipelines in Azure DevOps as part of the save process.
     - **Publish Solution**: Allows you to request to move the solution across environments.
     - **Choose a Profile**: Allows you to select a **Solution profile** to associate a solution to a **Repository** in a given **Organization** and **Project**. If you're unsure what profile to select, ask your administrator to provide the name of the solution profile for your solution.
     - **Request History**: (right chevron icon): Provides a list of requests (saves and deployments) done for that solution.
