@@ -55,6 +55,10 @@ If a mailbox is on Exchange using Outlook on the Web or Outlook on the desktop i
 - The item is tracked to Dynamics 365 using App for Outlook.
 
 - The **Tracked to Dynamics 365** category has been applied from Outlook on the Web, Outlook desktop, or your email client.
+  > [!NOTE]
+  > Server Side Sync will only synchronize items tracked with category from Exchange to Dynamics if the item resides in the main calendar folder in Outlook or a subfolder of this. Items will not be synchronized from a *sibling* folder from the main calendar folder. 
+  > > [!div class="mx-imgBorder"]
+    > ![Showing calendar items that can be synced from the main calendar.](media/act-1.png)
 
 When these requirements are met, the item is selected by server-side sync for processing and server-side sync will attempt to create the item in Dynamics and then establish a link. Once a link is established, a bidirectional sync is always performed. Changes on any of the two systems will be propagated.
 
@@ -107,7 +111,7 @@ Appointment organizer is a key field for appointment synchronization, and it dri
 
 ### Sync from Exchange to Dynamics 365
 
-- Mapping: Meetings in Exchange will be synchronized to Dynamics 365 as Appointments.
+- Mapping: Meetings in Exchange will be synchronized to Dynamics 365 as Appointments. Appointment series in Exchange will be synchronized to Dynamics 365 as recurring appointment master and their instances. Individual instances modified within an appointment series will be synced to Dynamics 365 as exception appointment records. 
 - Appointment Free/Busy information: When an appointment Free/Busy information is set to Free on Exchange, and this is synced to Dynamics 365. If the appointment is in Completed or Cancelled state on Dynamics 365, the status will be set to Completed. When the state is Open in Dynamics 365 the status will be changed to Free. Working elsewhere Free/Busy status will sync to Dynamics 365 as state Open and status Free.
 - Appointment booking and conflict management: When an appointment is tracked to Dynamics 365, server-side sync will still leverage booking API to ensure the parties are available at the specified time. Such as if another appointment is already in the organizer's calendar in Dynamics 365 at the same time, the booking won't succeed. When the appointment booking doesn't succeed the appointment won't be synced, however the user can [address the scheduling conflict](https://support.microsoft.com/topic/a-scheduling-conflict-was-found-when-saving-appointment-appointment-subject-from-exchange-to-microsoft-dynamics-365-because-user-is-unavailable-at-this-time-fc18bc49-f77a-1ca3-c3c8-3b85d2776525) in their mailbox alert wall, select to ignore the specific conflict and let the appointment sync. Booking from Dynamics 365 mail app will automatically suppress the scheduling conflict. For more information, see [A scheduling conflict was found when saving appointment [appointment subject] from Exchange to Microsoft Dynamics 365](/dynamics-365/sales/scheduling-conflict-saving-appointment.md)
 - Appointment deletion: When deleting a tracked appointment in Exchange, during sync the appointment deletion won't propagate to Dynamics 365 if the state is Completed or Cancelled, or if **scheduledStart** time is in the past, or if the syncing user is not the appointment organizer. This applies to **exceptionAppointments** as well. An exception appointment represents an specific instance within a recurring appointment series which has been individually modified.
