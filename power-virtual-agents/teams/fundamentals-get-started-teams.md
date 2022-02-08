@@ -56,18 +56,26 @@ Once this bot is published, Contoso employees can access HR information in Micro
 
 ## Steps in bot building
 
--   [Bot Author experience](#detailed-steps-bot-author-experience)
-    -   [Install the Power Virtual Agents app in Microsoft Teams](#install-the-power-virtual-agents-app-in-microsoft-teams)
-    -   [Create a new bot in a team](#create-a-new-bot-in-a-team)
-    -   [Build an employee time-off topic for common time-off queries](#build-an-employee-time-off-topic-for-common-time-off-queries)
-    -   [Test bot for expected behavior](#test-bot-for-expected-behavior)
-    -   [Enhance topic to handle more complex queries by escalating to HR experts](#enhance-topic-to-handle-more-complex-queries-by-escalating-to-hr-experts)
-    -   [Publish the bot](#publish-the-bot)
-    -   [Open the bot in Teams to chat with it like any employee would](#open-the-bot-in-teams-to-chat-with-it-like-any-employee-would)
-    -   [Make the bot available to other employees](#make-the-bot-available-to-other-employees)
--   [End user experience](#detailed-steps-end-user-experience)
-    -   [Finding the bot in the Teams app store](#finding-the-bot-in-the-teams-app-store)
-    -   [Employee chats with the bot to ask about time off](#employee-chats-with-the-bot-to-ask-about-time-off)
+- [Quickstart: Create and deploy a human resources Power Virtual Agents bot in Teams](#quickstart-create-and-deploy-a-human-resources-power-virtual-agents-bot-in-teams)
+  - [Prerequisites](#prerequisites)
+  - [Scenario](#scenario)
+  - [Steps in bot building](#steps-in-bot-building)
+  - [Detailed steps: Bot author experience](#detailed-steps-bot-author-experience)
+    - [Install the Power Virtual Agents app in Microsoft Teams](#install-the-power-virtual-agents-app-in-microsoft-teams)
+    - [Create a new bot in a team](#create-a-new-bot-in-a-team)
+    - [Build an employee time-off topic for common time-off queries](#build-an-employee-time-off-topic-for-common-time-off-queries)
+    - [Test bot for expected behavior](#test-bot-for-expected-behavior)
+    - [Enhance topic to handle more complex queries by escalating to HR experts](#enhance-topic-to-handle-more-complex-queries-by-escalating-to-hr-experts)
+    - [Publish the bot](#publish-the-bot)
+    - [Open the bot in Teams to chat with it like any employee would](#open-the-bot-in-teams-to-chat-with-it-like-any-employee-would)
+    - [Make the bot available to other employees](#make-the-bot-available-to-other-employees)
+      - [Edit bot details](#edit-bot-details)
+      - [Share the bot with your team](#share-the-bot-with-your-team)
+      - [Share the bot with your organization](#share-the-bot-with-your-organization)
+  - [Detailed steps: End User Experience](#detailed-steps-end-user-experience)
+    - [Finding the bot in the Teams app store](#finding-the-bot-in-the-teams-app-store)
+    - [Employee chats with the bot to ask about time off](#employee-chats-with-the-bot-to-ask-about-time-off)
+  - [Conclusion](#conclusion)
 
 
 ## Detailed steps: Bot author experience
@@ -81,7 +89,7 @@ Start by launching the Power Virtual Agents app in Microsoft Teams:
 1. Go to the Microsoft Teams app store and search for *power virtual agents*. You'll see the Power Virtual Agents app from Microsoft Corporation in the search results. 
 2. Select the Power Virtual Agents app and then **Add for me**.
 
-:::image type="content" source="media/get-started-install-app.png" alt-text="Add the Power Virtual Agents app.":::
+:::image type="content" source="media/fundamentals-get-started-teams/get-started-install-app.png" alt-text="Add the Power Virtual Agents app.":::
 
 
 The app is added and visible in the side navigation bar in Teams, and the app opens to the Power Virtual Agents Home page. This is where Teams users can come and build bots without needing to leave the Microsoft Teams interface.
@@ -89,7 +97,7 @@ The app is added and visible in the side navigation bar in Teams, and the app op
 >[!TIP]
 >To make it easier to get back to, select and hold (or right-click) the Power Virtual Agents icon and select **Pin**.
 >  
->:::image type="content" source="media/first-bot-pin.png" alt-text="A menu pops up with options to learn about the app, Pin it or uninstall it":::
+>:::image type="content" source="media/fundamentals-get-started-teams/first-bot-pin.png" alt-text="A menu pops up with options to learn about the app, Pin it or uninstall it":::
 
 ### Create a new bot in a team 
 
@@ -101,7 +109,7 @@ The app is added and visible in the side navigation bar in Teams, and the app op
 
 4. Select **Create**.
 
-    :::image type="content" source="media/get-started-create.png" alt-text="Create a new bot.":::
+    :::image type="content" source="media/fundamentals-get-started-teams/get-started-create.png" alt-text="Create a new bot.":::
 
 Now that the bot is created, we can go ahead and start adding content to the bot.
 
@@ -147,7 +155,7 @@ As an HR employee, you know that the most common time-off questions that employe
 
 3. Add in two options for paid time-off and national holidays: under **Options for user**, add *Paid vacation* and *National Holidays*.
 
-    :::image type="content" source="media/get-started-save.png" alt-text="Add options for paid vacation and national holidays.":::
+    :::image type="content" source="media/fundamentals-get-started-teams/get-started-save.png" alt-text="Add options for paid vacation and national holidays.":::
 
 As you can see, user choices are stored in a variable and the topic will be branched off, based on the option the user chooses. Let's rename the variable to track it better in the topic.
 
@@ -155,7 +163,7 @@ As you can see, user choices are stored in a variable and the topic will be bran
 
 2. The **Variable properties** pane opens, where you can rename the variable to *TimeoffType*. Close the **Variable properties** pane and you'll see the changes reflected in the authoring canvas.
 
-    :::image type="content" source="media/get-started-options.png" alt-text="Multiple options are shown after a question node.":::
+    :::image type="content" source="media/fundamentals-get-started-teams/get-started-options.png" alt-text="Multiple options are shown after a question node.":::
 
 Now you can add different responses for each option. For *paid vacation*, we can have the bot point employees to an internal HR website to look up paid time-off policies.
 
@@ -179,7 +187,7 @@ Now you can add different responses for each option. For *paid vacation*, we can
 This is what your topic should look like now:
 
 
-:::image type="content" source="media/get-started-options-filled.png" alt-text="The topic has an introductory message, followed by a question node with two options. Each option ends with a message and then a survey.":::
+:::image type="content" source="media/fundamentals-get-started-teams/get-started-options-filled.png" alt-text="The topic has an introductory message, followed by a question node with two options. Each option ends with a message and then a survey.":::
 
 ### Test bot for expected behavior
 
@@ -203,7 +211,7 @@ Power Virtual Agents comes with a built-in test bot that lets you test the bot i
     As you can see, the bot is able to bypass the question on vacation type and directly provide information on national holidays. This is because Power Virtual Agents supports [entity extraction](advanced-entities-slot-filling-teams.md) and was able to determine the user is asking about national holidays.
 
 
-    :::image type="content" source="media/get-started-test-bot.png" alt-text="The test bot shows how the AI knew what the user was asking.":::
+    :::image type="content" source="media/fundamentals-get-started-teams/get-started-test-bot.png" alt-text="The test bot shows how the AI knew what the user was asking.":::
 
 ### Enhance topic to handle more complex queries by escalating to HR experts
 
@@ -212,7 +220,7 @@ Now that we have the basics out of the way, let's add a more complex option to t
 1. Go back into the topic you created and go to the authoring canvas. 
 2. In the **Ask a question node** add an option for the user named *Extended leave*.
 
-    :::image type="content" source="media/get-started-add-option.png" alt-text="Add an option to the question node.":::
+    :::image type="content" source="media/fundamentals-get-started-teams/get-started-add-option.png" alt-text="Add an option to the question node.":::
 
     Given that each employee's personal situation is different, questions about extended leave require a discussion with an HR expert. You'll need to build the bot so it can connect HR experts with the employees.
 
@@ -224,7 +232,7 @@ First, let's create the flow to send a message to a Teams channel and then call 
 
 1. Add a question node asking for a description for the issue with the text *How would you describe the issue?* Save the description in a variable named *Description*.
 
-    :::image type="content" source="media/get-started-variable-description.png" alt-text="Add a question node with the answer as a variable called Description.":::
+    :::image type="content" source="media/fundamentals-get-started-teams/get-started-variable-description.png" alt-text="Add a question node with the answer as a variable called Description.":::
 
 2. Add a node under the question and select **Call an action**.
 3. Select **Create a flow**. This launches Power Automate within the Power Virtual Agents app in Teams. We will use a built-in template to send a message to a channel, which makes it very easy to get started.
@@ -293,7 +301,7 @@ Now you're ready to make the bot discoverable for other employees in the Teams a
 
 In this pane, you can edit the bot icon that shows in Teams, and change the short and long descriptions for your bot. These are pre-populated with starter content, but it's easy to customize for your bot.
 
-:::image type="content" source="media/get-started-edit.png" alt-text="Edit the bot.":::
+:::image type="content" source="media/fundamentals-get-started-teams/get-started-edit.png" alt-text="Edit the bot.":::
 
 #### Share the bot with your team
 
@@ -304,7 +312,7 @@ Select **Add to Teams** and you will see a check mark indicating that the bot wa
 This is a workaround to see the bot in action since it does not require any admin involvement and avoids any spam to the admin. Once you are fully satisfied, you can follow the steps to share the bot with your organization which requires admin approval.
 
 
-:::image type="content" source="media/get-started-edited.png" alt-text="The bot's icon is now a briefcase with a pink background.":::
+:::image type="content" source="media/fundamentals-get-started-teams/get-started-edited.png" alt-text="The bot's icon is now a briefcase with a pink background.":::
 
 #### Share the bot with your organization 
 
@@ -331,7 +339,7 @@ Depending on where the bot was shared, she can find the bot in the **Built by yo
 
 Melissa selects the chatbot's app tile, and then selects **Add for me**, as in the following screenshot:
 
-:::image type="content" source="media/get-started-add-bot.png" alt-text="Teams opens the HR Support Bot with an option to Add for me so the user can start talking with it.":::
+:::image type="content" source="media/fundamentals-get-started-teams/get-started-add-bot.png" alt-text="Teams opens the HR Support Bot with an option to Add for me so the user can start talking with it.":::
 
 This will add the bot in the Teams side navigation bar and open it for her to chat.
 
@@ -352,7 +360,7 @@ She is presented the website to get more information on paid time-off.
 
 The bot then gathers customer satisfaction data and ends the conversation.
 
-:::image type="content" source="media/get-started-chat.png" alt-text="The user can talk with the bot just like a normal Teams chat.":::
+:::image type="content" source="media/fundamentals-get-started-teams/get-started-chat.png" alt-text="The user can talk with the bot just like a normal Teams chat.":::
 
 After reviewing the HR site for paid time-off, she understands that she needs extended leave since she will be gone for more than 3 months. She returns to the bot and types *I need extended leave*.
 
@@ -364,7 +372,7 @@ The bot then informs Melissa that an expert has been notified, who will be reach
 
 Here we see that the bot ran the flow you added earlier and posted Melissa's request to the channel. HR experts in the channel can now reach out to Melissa to understand more on her extended leave request.
 
-:::image type="content" source="media/get-started-channel.png" alt-text="The bot output a message into the Teams channel about Extended leave.":::
+:::image type="content" source="media/fundamentals-get-started-teams/get-started-channel.png" alt-text="The bot output a message into the Teams channel about Extended leave.":::
 
 ## Conclusion
 

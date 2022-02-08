@@ -49,14 +49,14 @@ You can also combine the customized greeting with [customization to the look and
 
 2. Under **System Topics**, select the **Go to authoring canvas** icon on the **Greeting** topic row.
 
-    :::image type="content" source="media/custom-greeting-topic-teams.png" alt-text="Screenshot of the Topics page, with the Greeting topic highlighted":::
+    :::image type="content" source="media/configure-bot-greeting-teams/custom-greeting-topic-teams.png" alt-text="Screenshot of the Topics page, with the Greeting topic highlighted":::
 
 3. Edit the text inside the **Message** nodes. You can also [add or delete additional nodes](authoring-create-edit-topics-teams.md#insert-nodes).
 
 4. Select **Save** when you're finished editing the message.
 
 
-    :::image type="content" source="media/custom-greeting-message-teams.png" alt-text="Screenshot of the system greeting topic showing the message nodes that can be edited.":::
+    :::image type="content" source="media/configure-bot-greeting-teams/custom-greeting-message-teams.png" alt-text="Screenshot of the system greeting topic showing the message nodes that can be edited.":::
 
 5. [**Publish** your bot](publication-add-bot-to-microsoft-teams-teams.md) and test it.
 

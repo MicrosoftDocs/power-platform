@@ -49,7 +49,7 @@ To use these advanced AI capabilities in Power Virtual Agents:
 
 4.  Select **Save** at the top of the tab.
 
-:::image type="content" source="media/advanced-ai-features/enable-features-teams.png" alt-text="Screenshot showing the AI capabilities section under the Manage tab in Teams.":::
+:::image type="content" source="media/advanced-ai-features-teams/enable-features-teams.png" alt-text="Screenshot showing the AI capabilities section under the Manage tab in Teams.":::
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

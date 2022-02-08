@@ -27,7 +27,7 @@ If you can access Teams, and if you can add the Power Virtual Agents app, then i
 
 However, you may find some instances where you can upgrade to a premium license, as in the following example when publishing to additional channels:
    
-:::image type="content" source="../media/upgrade-channels.png" alt-text="You need an upgraded license to publish to channels other than Teams.":::
+:::image type="content" source="media/requirements-licensing-teams/upgrade-channels.png" alt-text="You need an upgraded license to publish to channels other than Teams.":::
 
 See the [Licensing for Power Virtual Agents](../requirements-licensing-subscriptions.md) topic for a comparison and description of licenses.
 
