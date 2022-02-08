@@ -4,7 +4,7 @@ description: "Troubleshoot error code responses from your bot in Microsoft Teams
 author: v-alarioza
 ms.author: v-alarioza
 ms.topic: troubleshooting
-ms.date: 01/28/2022
+ms.date: 02/07/2022
 ms.service: power-virtual-agents
 ms.reviewer: clmori
 manager: shellyha
@@ -15,6 +15,7 @@ manager: shellyha
 Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
+>
 > - [Power Virtual Agents web app](../error-codes.md)
 > - [Power Virtual Agents app in Microsoft Teams](error-codes-teams.md)
 
@@ -36,8 +37,6 @@ Errors may also appear in the [Topic Checker](authoring-topic-management-teams.m
 ## Error List
 
 <!-- Best viewed and edited without word wrap -->
-| Error    | Bot response                                                                                                                                              | Resolution                                                                                                                                                                                                                                                                             |
-| -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **2100** | "The user is typing too fast."                                                                                                                            | Interactions with the bot are rate limited to mitigate spam. Try again while typing slower.                                                                                                                                                                                            |
-| **2101** | "The user’s conversation with the bot was too long or the user’s message was too long."                                                                   | Try restarting the conversation with the bot or using a shorter message.                                                                                                                                                                                                               |
-| **2102** | "The user sent a message which is too large to process."                                                                                                  | You sent a message that is too large to process. Shorten your message, then try again.                                                                                                                                                                                                  |
+| Error    | Bot response                   | Resolution                                                                                  |
+| -------- | ------------------------------ | ------------------------------------------------------------------------------------------- |
+| **2100** | "The user is typing too fast." | Interactions with the bot are rate limited to mitigate spam. Try again while typing slower. |

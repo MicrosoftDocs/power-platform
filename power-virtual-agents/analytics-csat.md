@@ -17,16 +17,13 @@ ms.collection: virtual-agent
 Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
+>
 > - [Power Virtual Agents web app](analytics-csat.md)
 > - [Power Virtual Agents app in Microsoft Teams](teams/analytics-csat-teams.md)
 
-
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-
 The Customer Satisfaction page provides a detailed view of customer satisfaction (CSAT) survey data, including the average CSAT score over time and the topics that are having the most impact on the CSAT score.
-
-
 
 The Customer Satisfaction page includes a variety of charts with graphical views of your bot's customer satisfaction indicators. For information about each chart, select the link for the chart in the following list, or scroll to find the section about the chart later in this topic:
 
@@ -42,7 +39,6 @@ By default, the page shows you key performance indicators for the last seven day
 ## Prerequisites
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
-
 
 ## Customer satisfaction drivers chart
 
@@ -68,16 +64,12 @@ To see additional information about each topic, select the **Detail** link to di
 
 The CSAT scores over Time chart provides a graphical view of the average CSAT score over the specified time period.
 
-
-
 ## Average CSAT score chart
 
 The Average CSAT score chart provides a graphical view of the average of CSAT scores for sessions in which customers respond to an end-of-session request to take the survey. The CSAT survey asks customers to rate their experience on a scale of "terrible" to "excellent," where "terrible" is given a value of 1 and "excellent" is given a value of 5.
 
-
 ## CSAT survey response rate chart
 
 The CSAT survey response rate chart shows the number of CSAT surveys that were presented and the percentage of surveys that were completed.
-
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

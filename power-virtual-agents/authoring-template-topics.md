@@ -19,6 +19,7 @@ ms.collection: virtual-agent
 Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
+>
 > - [Power Virtual Agents web app](authoring-template-topics.md)
 > - [Power Virtual Agents app in Microsoft Teams](teams/authoring-template-topics-teams.md)
 
@@ -28,11 +29,9 @@ Power Virtual Agents includes a set of four lessons from which you can see examp
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 
-
-
 ## Access and use lesson topics for new bots
 
-When a bot is created, a number of lessons are automatically created as topics. 
+When a bot is created, a number of lessons are automatically created as topics.
 
 While the topics are functional, they are examples for the purposes of learning how to create content for your bots and are not designed for production use.
 
@@ -46,8 +45,8 @@ While the topics are functional, they are examples for the purposes of learning 
 
    :::image type="content" source="media/template-list.png" alt-text="List of lesson topics." border="false":::
 
->[!IMPORTANT]
->You will see these lessons when you create a new bot. If you have previously created a bot and don't see them, try creating a new bot and then going to the **Topics** tab.
+> [!IMPORTANT]
+> You will see these lessons when you create a new bot. If you have previously created a bot and don't see them, try creating a new bot and then going to the **Topics** tab.
 
 ## Available lesson topics
 
@@ -69,22 +68,16 @@ A variable is a name for an item which will be used later in the topic flow. In 
 
 This lesson shows you how you can create a simple topic with one conditional branch, [a variable](authoring-variables.md), and [an entity](advanced-entities-slot-filling.md).
 
-When you use entities in your topic, the bot can identify key information from what the user types and automatically fill in that information into your variables. 
+When you use entities in your topic, the bot can identify key information from what the user types and automatically fill in that information into your variables.
 
 For example, if you type "I want to buy a red car," the bot doesn't need to ask which color car, because the bot recognizes the Color entity in what you typed. The bot will then skip the question where you asked for color.
- 
-In this lesson, the bot uses the State entity and will recognize any US state the user enters.
 
+In this lesson, the bot uses the State entity and will recognize any US state the user enters.
 
 ### Lesson 4 - A topic with conditions, variables and a custom entity
 
-This lesson shows a topic with a conditional branch, [a variable](authoring-variables.md), and [a custom entity](advanced-entities-slot-filling.md#custom-entities). 
+This lesson shows a topic with a conditional branch, [a variable](authoring-variables.md), and [a custom entity](advanced-entities-slot-filling.md#custom-entities).
 
 You can see the bot bypass a follow-up question. For example, try testing with "I want a business laptop."
-
-
-
-
-
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

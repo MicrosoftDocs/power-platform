@@ -2,7 +2,7 @@
 title: "Advanced AI features (contains video)"
 description: "Use advanced AI features in Power Virtual Agents to improve how your bots interact with your bot users."
 keywords: "PVA, AI, advanced, topic intent, intent triggering"
-ms.date: 11/01/2021
+ms.date: 01/25/2022
 ms.service: power-virtual-agents
 ms.topic: how-to
 author: iaanw
@@ -17,10 +17,10 @@ ms.collection: virtual-agent
 
 - [!INCLUDE [Preview documentation notice](includes/cc-beta-prerelease-disclaimer.md)]
 
-
 Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
+>
 > - [Power Virtual Agents web app](advanced-ai-features.md)
 > - [Power Virtual Agents app in Microsoft Teams](teams/advanced-ai-features-teams.md)
 
@@ -32,7 +32,7 @@ Power Virtual Agents hosts multiple AI models and AI capabilities on a single se
 
 Traditionally, intent triggering (how an AI model determines the intent of a question posed to it, by using NLU to understand what a user is asking) is formalized as a multi-class classification problem, in which the model is highly associated with known categories; any change to these categories will result in the need to build a new AI model.
 
-Power Virtual Agents, however, employs a language understanding model that uses an example-based approach, powered by a deep neural model. This type of large-scale model only needs to be trained once with large amounts of data using AI supercomputing, and can then be used for specific tasks with few examples without further training. The use of this model is part of the [AI at Scale](https://innovation.microsoft.com/en-us/ai-at-scale) initiative by Microsoft, and means the way AI is developed and used is changing. Specifically for Power Virtual Agents, the use of this model allows for an intuitive way for bot makers to work on their bot content confidently, without having to involve AI experts.
+Power Virtual Agents, however, employs a language understanding model that uses an example-based approach, powered by a deep neural model. This type of large-scale model only needs to be trained once with large amounts of data using AI supercomputing, and can then be used for specific tasks with few examples without further training. The use of this model is part of the [AI at Scale](https://innovation.microsoft.com/ai-at-scale) initiative by Microsoft, and means the way AI is developed and used is changing. Specifically for Power Virtual Agents, the use of this model allows for an intuitive way for bot makers to work on their bot content confidently, without having to involve AI experts.
 
 The use of this type of model means that in Power Virtual Agents, when you craft trigger phrases for a topic, you only need to provide a few examples, usually in the range of five to 10 phrases for a single topic.
 Shorter trigger phrases are better, and you should aim for two to 10 words. You just need to make sure trigger phrases are semantically different: changing a single verb or noun could be enough to expand a topic's coverage. Adding things like new articles (changing or adding 'the' or 'a' or 'an'), changing capitalization, adding contractions (you're or don't), or adding plurals won't improve the triggering because contractions are already accounted for in the AI model.
@@ -41,12 +41,13 @@ These tips for creating trigger phrases are described in the tooltip associated 
 
 :::image type="content" source="media/advanced-ai-features/trigger-phrase-tooltip.png" alt-text="Screenshot of the trigger phrase section in the topic details page.":::
 
->[!NOTE]
->The AI capabilities listed in this topic are in preview, available to bots created with English as the set language.
+> [!NOTE]
+> The AI capabilities listed in this topic are in preview, available to bots created with English as the set language.
 
->[!IMPORTANT]
->This is a preview feature.
->Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and [provide feedback](https://powerusers.microsoft.com/t5/Forums/ct-p/pva_forums).
+> [!IMPORTANT]
+> This is a preview feature.
+>
+> Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and [provide feedback](https://powerusers.microsoft.com/t5/Forums/ct-p/pva_forums).
 
 ## Advanced AI features overview
 
@@ -60,7 +61,7 @@ There are some specific features that further improve how the AI in Power Virtua
 
 Topic overlap detection helps improve topic triggering accuracy by finding overlaps between topics. Resolving topic overlaps can help reduce the need for the bot to ask clarifying questions before triggering a topic.
 
-[Once enabled](#enable-or-disable-ai-capabilities), go to **Analytics** on the side navigation pane, then go to the **Topic triggering (preview)** tab, where a list of overlapped topics will be displayed.
+[Once enabled](#enable-or-disable-ai-capabilities), go to **Analytics** > **Topic triggering (preview)**, where a list of overlapped topics will be displayed.
 
 :::image type="content" source="media/advanced-ai-features/overlapped-topics.png" alt-text="Screenshot showing the overlapping topics tile lists topics with their similarity score.":::
 
@@ -88,7 +89,7 @@ After you save the changes in the **Topic overlap details** pane, the overlappin
 
 This feature analyzes sessions between your bot and users and surfaces suggestions for you based on unmatched user input.
 
-[Once enabled](#enable-or-disable-ai-capabilities), go to **Analytics** on the side navigation pane, then go to the **Topic triggering (preview)**. A list of potential topics will be shown, with the number of times a query about this topic was made by users of the bot. The top 200 suggestions will be shown.
+[Once enabled](#enable-or-disable-ai-capabilities), go to **Analytics** > **Topic triggering (preview)**. A list of potential topics will be shown, with the number of times a query about this topic was made by users of the bot. The top 200 suggestions will be shown.
 
 :::image type="content" source="media/advanced-ai-features/topic-suggestions.png" alt-text="Screenshot of the Topic suggestions tile showing a list of suggestions.":::
 
@@ -155,7 +156,7 @@ Specifically, with this feature enabled, when the bot asks questions such as tho
 To use these advanced AI capabilities in Power Virtual Agents:
 
 1. Open a bot you want to enable or disable the features for.
-1. Expand **Manage** on the side navigation pane, then go to the **AI capabilities** tab.
+1. Expand the **Manage** tab, then select **AI capabilities**.
 1. For each feature, select the checkbox to turn the feature on or off.
 1. Select **Save** at the top of the tab.
 

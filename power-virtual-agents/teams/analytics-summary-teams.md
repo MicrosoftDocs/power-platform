@@ -17,26 +17,24 @@ ms.collection: virtual-agent
 Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
+>
 > - [Power Virtual Agents web app](../analytics-summary.md)
 > - [Power Virtual Agents app in Microsoft Teams](analytics-summary-teams.md)
 
-
-
 The Summary page gives you a broad overview of how well your bot is doing with these charts:
 
-* [Summary charts](#summary-charts)
-* [Engagement over time chart](#engagement-over-time-chart)
-* [Session outcomes over time chart](#session-outcomes-over-time-chart)
-* [Resolution rate drivers chart](#resolution-rate-drivers-chart)
-* [Escalation rate drivers chart](#escalation-rate-drivers-chart)
-* [Abandon rate drivers chart](#abandon-rate-drivers-chart)
+- [Summary charts](#summary-charts)
+- [Engagement over time chart](#engagement-over-time-chart)
+- [Session outcomes over time chart](#session-outcomes-over-time-chart)
+- [Resolution rate drivers chart](#resolution-rate-drivers-chart)
+- [Escalation rate drivers chart](#escalation-rate-drivers-chart)
+- [Abandon rate drivers chart](#abandon-rate-drivers-chart)
 
 To change the time period to the last 30 days, select **Last 30 days** from the drop-down list at the top of the page.
 
 ## Prerequisites
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations-teams.md)]
-
 
 ## Summary charts
 
@@ -121,8 +119,5 @@ The chart displays the impact as a red or blue bar. A red bar indicates that the
 Improving the abandon rate for the top abandon-rate topics in red has the greatest impact on improving the overall abandon rate.
 
 To see additional information about each topic, select the **Detail** link to display the topic details page. For more information, see [Topic details page](analytics-topic-details-teams.md).
-
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
