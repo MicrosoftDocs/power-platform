@@ -24,12 +24,14 @@ Select the version of Power Virtual Agents you're using here:
 
 The Summary page gives you a broad overview of how well your bot is doing with these charts:
 
-* [Summary charts](#summary-charts)
-* [Engagement over time chart](#engagement-over-time-chart)
-* [Session outcomes over time chart](#session-outcomes-over-time-chart)
-* [Resolution rate drivers chart](#resolution-rate-drivers-chart)
-* [Escalation rate drivers chart](#escalation-rate-drivers-chart)
-* [Abandon rate drivers chart](#abandon-rate-drivers-chart)
+- [Analyze bot performance and usage in Power Virtual Agents in Teams](#analyze-bot-performance-and-usage-in-power-virtual-agents-in-teams)
+  - [Prerequisites](#prerequisites)
+  - [Summary charts](#summary-charts)
+  - [Engagement over time chart](#engagement-over-time-chart)
+  - [Session outcomes over time chart](#session-outcomes-over-time-chart)
+  - [Resolution rate drivers chart](#resolution-rate-drivers-chart)
+  - [Escalation rate drivers chart](#escalation-rate-drivers-chart)
+  - [Abandon rate drivers chart](#abandon-rate-drivers-chart)
 
 To change the time period to the last 30 days, select **Last 30 days** from the drop-down list at the top of the page.
 
@@ -40,7 +42,7 @@ To change the time period to the last 30 days, select **Last 30 days** from the 
 
 ## Summary charts
 
-:::image type="content" source="media/summary-charts-teams.png" alt-text="Summary charts." border="false":::
+:::image type="content" source="media/analytics-summary-teams/summary-charts-teams.png" alt-text="Summary charts." border="false":::
 
 The Summary charts summarize the how well your bot is doing based on different measurements, described in this table:
 
