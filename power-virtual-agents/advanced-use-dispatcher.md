@@ -57,7 +57,7 @@ You'll need to retrieve your Power Virtual Agents bot's content (topics and utte
 2.	[Sign in to your Power Virtual Agents environment](https://web.powerva.microsoft.com) using your Azure Active Directory (Azure AD) credentials. 
 
 3.	Go to the **Network** tab.
-    :::image type="content" source="media/devtools-network-preview.png" alt-text="DevTools in Microsoft Edge browser showing the Network tab." border="false":::
+    :::image type="content" source="media/advanced-use-dispatcher/devtools-network-preview.png" alt-text="DevTools in Microsoft Edge browser showing the Network tab." border="false":::
 
 4.	Filter and look for client requests.
 
@@ -368,12 +368,12 @@ The following steps require you to add code that registers your new dispatch end
 You're ready to test your dispatcher to ensure seamless interaction between DynamicsBot and your other bots.
 
 1.  [Publish your bot to a demo website](./publication-connect-bot-to-web-channels.md).    
-    :::image type="content" source="media/open-deploy.png" alt-text="Deploy our bot." border="false":::
+    :::image type="content" source="media/advanced-use-dispatcher/open-deploy.png" alt-text="Deploy our bot." border="false":::
   
 2.  Build (Ctrl + Shift + B) and run (F5) your dispatcher app.
   
 3.  Open the Bot Emulator where you add the name and endpoint to your bot.
-    :::image type="content" source="media/dispatch-bot-emulator.png" alt-text="Dialog to create new bot in the bot emulator." border="false":::
+    :::image type="content" source="media/advanced-use-dispatcher/dispatch-bot-emulator.png" alt-text="Dialog to create new bot in the bot emulator." border="false":::
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

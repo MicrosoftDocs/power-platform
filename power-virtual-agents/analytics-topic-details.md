@@ -35,7 +35,7 @@ You can display the topic details page by selecting the **Detail** link in one o
 * [Resolution rate drivers (Summary page)](analytics-summary.md#resolution-rate-drivers-chart)
 * [Customer satisfaction drivers (Customer Satisfaction page)](analytics-CSAT.md#customer-satisfaction-drivers-chart)
 
-:::image type="content" source="media/topic-details-link.png" alt-text="Topic details link." border="false":::
+:::image type="content" source="media/analytics-topic-details/topic-details-link.png" alt-text="Topic details link." border="false":::
 
 >[!IMPORTANT]
 >You need a license for [Dynamics 365 Customer Service Insights](/dynamics365/ai/customer-service-insights/licensing-case-capacity) to access the topic details charts.
@@ -43,17 +43,19 @@ You can display the topic details page by selecting the **Detail** link in one o
 
 The topic details page can also be displayed by opening an individual topic from the Topics page and selecting **Analytics** at the top of the page.
 
-:::image type="content" source="media/analytics-topics-details.png" alt-text="From the Topic details page, select the Analytics tab." border="false":::
+:::image type="content" source="media/analytics-topic-details/analytics-topics-details.png" alt-text="From the Topic details page, select the Analytics tab." border="false":::
 
 You can also hover over each topic in the Topics page and select the **Go to analytics** icon. 
 
-:::image type="content" source="media/analytics-topics.png" alt-text="Hovering shows the Go to analytics icon." border="false":::
+:::image type="content" source="media/analytics-topic-details/analytics-topics.png" alt-text="Hovering shows the Go to analytics icon." border="false":::
 
 The topic details page includes a variety of charts with graphical views of a topic's key performance indicators. For information about each chart, see:
 
-* [Topic Summary charts](#topic-summary-charts)
-* [Impact Summary charts](#impact-summary-charts)
-* [Topic Volume by Day chart](#topic-volume-by-day-chart)
+- [Analyze topic usage in Power Virtual Agents](#analyze-topic-usage-in-power-virtual-agents)
+  - [Prerequisites](#prerequisites)
+  - [Topic summary charts](#topic-summary-charts)
+  - [Impact summary charts](#impact-summary-charts)
+  - [Topic Volume by Day chart](#topic-volume-by-day-chart)
 
 ## Prerequisites
 

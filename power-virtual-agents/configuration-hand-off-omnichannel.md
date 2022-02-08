@@ -67,20 +67,20 @@ Sign in to the Power Virtual Agents bot you want to connect to your omnichannel 
 
 1. On the side navigation pane, expand the **Manage** tab, go to **Agent transfers**, and then select the **Omnichannel** tile.
     
-    :::image type="content" source="media/handoff-settings.png" alt-text="IMAGE-SHOWING-SETTINGS-PANEL-OPENED.":::
+    :::image type="content" source="media/configuration-hand-off-omnichannel/handoff-settings.png" alt-text="IMAGE-SHOWING-SETTINGS-PANEL-OPENED.":::
 
 1. Select **Enable**. 
     * If you haven't installed any of the [extension solutions required for hand off](#install-extension-solutions), you'll see a notification that your bot doesn't have access to the variables or actions needed for hand off to omnichannel. You must [install at least the omnichannel extension solution](#install-extension-solutions) for hand off to Omnichannel to work.  
     
-        :::image type="content" source="media/handoff-no-extension.png" alt-text="Notification at the top of the omnichannel configuration panel that says your bot doesn't have access.":::
+        :::image type="content" source="media/configuration-hand-off-omnichannel/handoff-no-extension.png" alt-text="Notification at the top of the omnichannel configuration panel that says your bot doesn't have access.":::
 
     * You may see a message that says we can't determine if omnichannel integration is enabled for the environment with the managed bot if you have [ALM enabled in your bot](#power-virtual-agent-bots-with-alm).
 
-        :::image type="content" source="media/transfer-managed-bot.png" alt-text="Message that says we can't determine if this bot has omnichannel enabled or disabled.":::
+        :::image type="content" source="media/configuration-hand-off-omnichannel/transfer-managed-bot.png" alt-text="Message that says we can't determine if this bot has omnichannel enabled or disabled.":::
         
 1. Under **See the environment this bot is connected to**, select the environment where your omnichannel instance is provisioned. If you haven't set up omnichannel in the selected environment, you'll see a message inviting you to begin a trial.
 
-    :::image type="content" source="media/transfer-no-oc.png" alt-text="Message that says you haven't set up omnichannel integration in this environment.":::
+    :::image type="content" source="media/configuration-hand-off-omnichannel/transfer-no-oc.png" alt-text="Message that says you haven't set up omnichannel integration in this environment.":::
 
 
 1. Follow the steps to create or reuse an existing Azure application ID. Copy the *Application (client) ID* and paste it in the text box provided.
@@ -95,7 +95,7 @@ Sign in to the Power Virtual Agents bot you want to connect to your omnichannel 
 
 After you've configured the connection, you'll see your bot in the **Omnichannel** tile under **Agent transfers**. From here, you can disconnect the bot, refresh the connection, or view the connection details in your omnichannel interface.
 
-:::image type="content" source="media/handoff-bot-connected.png" alt-text="Connected bot details in Power Virtual Agents." border="false":::
+:::image type="content" source="media/configuration-hand-off-omnichannel/handoff-bot-connected.png" alt-text="Connected bot details in Power Virtual Agents." border="false":::
 
 You can also toggle voice capabilities on or off.
 
@@ -106,7 +106,7 @@ You can also toggle voice capabilities on or off.
 ### Power Virtual Agent bots with ALM
 If you've [set up ALM for your Power Virtual Agents bots](/power-platform/alm/basics-alm), and are exporting and importing bots between [development (unmanaged) and test or production (managed) environments](/power-platform/alm/basics-alm#types-of-environments-used-in-alm), you might see a message that says we can't determine if omnichannel integration is enabled for the environment with the managed bot.
 
-:::image type="content" source="media/transfer-managed-bot.png" alt-text="Message that says we can't determine if this bot has omnichannel enabled or disabled.":::
+:::image type="content" source="media/configuration-hand-off-omnichannel/transfer-managed-bot.png" alt-text="Message that says we can't determine if this bot has omnichannel enabled or disabled.":::
 
 If the bot you exported _does_ have omnichannel capabilities enabled, you can ignore this message as the bot will still work properly. 
   
@@ -120,11 +120,11 @@ If the message continues to show after exporting and importing the latest versio
 
 1. Select **See solution layers** from the contextual **...** menu next to the chatbot component in the solution.  
 
-    :::image type="content" source="media/handoff-see-layers.png" alt-text="Solution layer selection in Power Apps.":::      
+    :::image type="content" source="media/configuration-hand-off-omnichannel/handoff-see-layers.png" alt-text="Solution layer selection in Power Apps.":::      
     
 1. Select the unmanaged layer and then select **Remove unmanaged layer**.    
 
-    :::image type="content" source="media/handoff-remove-layer.png" alt-text="Remove unmanaged layer in Power Apps.":::
+    :::image type="content" source="media/configuration-hand-off-omnichannel/handoff-remove-layer.png" alt-text="Remove unmanaged layer in Power Apps.":::
     
 If the bot _doesn't_ have omnichannel capabilities enabled, the message will always show. 
 
@@ -159,7 +159,7 @@ Authentication is not supported for voice-based hand off to omnichannel instance
 
 The [Power Virtual Agents telephony extension](https://appsource.microsoft.com/product/dynamics-crm/mscrm.mspva_telephony_extension) adds a number of additional actions and variables to Power Virtual Agents that can be used by Power Virtual Agents chatbots.
 
-:::image type="content" source="media/handoff-oc-voice-vars.png" alt-text="List of voice-related actions that can be added to a node in Power Virtual Agents.":::
+:::image type="content" source="media/configuration-hand-off-omnichannel/handoff-oc-voice-vars.png" alt-text="List of voice-related actions that can be added to a node in Power Virtual Agents.":::
 
 ### Send uninterruptible voice message
 
@@ -169,11 +169,11 @@ This action can be used to send messages which can't be interrupted by the calle
 
 1. Select **Add input for destination topic** and then **UninterruptibleMessage (string)**.
 
-    :::image type="content" source="media/handoff-voice-config-interrupt-add.png" alt-text="Handoff Voice Config Interrupt Add":::
+    :::image type="content" source="media/configuration-hand-off-omnichannel/handoff-voice-config-interrupt-add.png" alt-text="Handoff Voice Config Interrupt Add":::
 
 3. Select an existing variable that defines the message content, or directly enter the message that should be used.
 
-    :::image type="content" source="media/handoff-voice-config-interrupt.png" alt-text="Handoff Voice Config Interrupt":::
+    :::image type="content" source="media/configuration-hand-off-omnichannel/handoff-voice-config-interrupt.png" alt-text="Handoff Voice Config Interrupt":::
 
 
 ### Transfer the call to a different phone number
@@ -183,7 +183,7 @@ This action can be used to transfer the call to a different phone number altoget
 
 3. Select **Add input for destination topic** and then **TargetPhoneNumber (string)**.
 
-    :::image type="content" source="media/handoff-voice-config-transfer-input.png" alt-text="Handoff Voice Config Transfer Input":::
+    :::image type="content" source="media/configuration-hand-off-omnichannel/handoff-voice-config-transfer-input.png" alt-text="Handoff Voice Config Transfer Input":::
   
 3. Select an existing variable that defines the number that should be called instead, or directly enter the number.
 
@@ -198,7 +198,7 @@ This action can be used to hang up the call. Once the conversation reaches this 
 
 1. Add this action as you would [any other action when adding nodes](authoring-create-edit-topics.md#insert-nodes). 
 
-    :::image type="content" source="media/handoff-voice-config-hangup.png" alt-text="Handoff Voice Config Hangup.":::
+    :::image type="content" source="media/configuration-hand-off-omnichannel/handoff-voice-config-hangup.png" alt-text="Handoff Voice Config Hangup.":::
 
 
 ### *bot.CustomerPhoneNumber* variable

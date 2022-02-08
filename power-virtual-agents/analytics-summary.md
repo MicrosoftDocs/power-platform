@@ -26,16 +26,18 @@ Select the version of Power Virtual Agents you're using here:
 
 The Summary page gives you a broad overview of your bot's performance. It uses artificial intelligence (AI) technology to show you which topics are having the greatest impact on escalation rate, abandon rate, and resolution rate (see the table under [Summary charts](#summary-charts) for more information on these metrics).
 
-:::image type="content" source="media/overview-analytics.png" alt-text="The Analytics summary page." border="false":::
+:::image type="content" source="media/analytics-summary/overview-analytics.png" alt-text="The Analytics summary page." border="false":::
 
 The Summary page includes a variety of charts with graphical views of your bot's key performance indicators. For information about each chart, see:
 
-* [Summary charts](#summary-charts)
-* [Engagement over time chart](#engagement-over-time-chart)
-* [Session outcomes over time chart](#session-outcomes-over-time-chart)
-* [Resolution rate drivers chart](#resolution-rate-drivers-chart)
-* [Escalation rate drivers chart](#escalation-rate-drivers-chart)
-* [Abandon rate drivers chart](#abandon-rate-drivers-chart)
+- [Analyze bot performance and usage in Power Virtual Agents](#analyze-bot-performance-and-usage-in-power-virtual-agents)
+  - [Prerequisites](#prerequisites)
+  - [Summary charts](#summary-charts)
+  - [Engagement over time chart](#engagement-over-time-chart)
+  - [Session outcomes over time chart](#session-outcomes-over-time-chart)
+  - [Resolution rate drivers chart](#resolution-rate-drivers-chart)
+  - [Escalation rate drivers chart](#escalation-rate-drivers-chart)
+  - [Abandon rate drivers chart](#abandon-rate-drivers-chart)
 
 The Engagement Rate Drivers, Abandon Rate Drivers, and Resolution Rate Drivers charts use natural language understanding to group issues as topics. These charts show you the topics that are having the most impact on the performance of your bot.
  
@@ -48,7 +50,7 @@ By default, the page shows you key performance indicators for the last seven day
 
 ## Summary charts
 
-:::image type="content" source="media/summary-charts.png" alt-text="Summary charts." border="false":::
+:::image type="content" source="media/analytics-summary/summary-charts.png" alt-text="Summary charts." border="false":::
 
 The Summary charts summarize the key performance indicators for the specified time period and the percent change over the period.
 
