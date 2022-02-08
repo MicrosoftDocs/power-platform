@@ -51,27 +51,27 @@ Flows typically use variables to input and output information. The variables can
 
 1. Select the plus (**+**) button below an existing node to add a new node.
 
-1. In the node selection window, select **Call an action**, and then pick an existing flow that you want to use, or if you want to create a new one to use, select **Create a flow**.
+1. In the node selection window, select **Call an action** > **Create a flow**.
 
     :::image type="content" source="media/UseCreateFlowOption.jpg" alt-text="Create a new Power Automate flow." border="false":::
 
-    Selecting an existing flow will automatically add the flow to the authoring canvas.
+    You can also select an existing flow from the list and it will automatically be added to the authoring canvas.
 
     :::image type="content" source="media/FlowInActionPicker.png" alt-text="New flow shows up in Action picker.":::
 
-    Using the **Create a flow** option opens a starter flow template in the [Power Automate portal](https://flow.microsoft.com/) in a separate tab. The portal automatically opens in the same environment as the bot and uses the same user credentials.
+Using the **Create a flow** option opens a starter flow template in the [Power Automate portal](https://flow.microsoft.com/) in a separate tab. The portal automatically opens in the same environment as the bot and uses the same user credentials.
 
-    :::image type="content" source="media/PVAConnectorTemplate.JPG" alt-text="Power Automate flow template." border="false":::
+:::image type="content" source="media/PVAConnectorTemplate.JPG" alt-text="Power Automate flow template." border="false":::
 
-    This template is an example of a flow that can be used by bots. To be suitable for bots, a Power Automate flow requires a special **Power Virtual Agents** trigger and response action:
+This template is an example of a flow that can be used by bots. To be suitable for bots, a Power Automate flow requires a special **Power Virtual Agents** trigger and response action:
 
-    - Flow trigger:  **Power Virtual Agents**  
+- Flow trigger:  **Power Virtual Agents**  
 
-        :::image type="content" source="media/PVAConnectorTrigger.JPG" alt-text="Power Virtual Agents trigger." border="false":::
+    :::image type="content" source="media/PVAConnectorTrigger.JPG" alt-text="Power Virtual Agents trigger." border="false":::
 
-    - Response action:  **Power Virtual Agents**  
+- Response action:  **Power Virtual Agents**  
 
-        :::image type="content" source="media/PVAConnectorResponse.JPG" alt-text="Power Virtual Agents response." border="false":::
+    :::image type="content" source="media/PVAConnectorResponse.JPG" alt-text="Power Virtual Agents response." border="false":::
 
 ## Input and output parameters
 
