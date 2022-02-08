@@ -46,7 +46,7 @@ You can edit the welcome message and suggested trigger phrases for the demo webs
 
 4. Enter a list of suggested trigger phrases in the **Conversation starters** text field. Trigger phrases are what initiate specific topics, so you could customize your trigger phrases to specific topics that you want your teammates to try out.
 
-    :::image type="content" source="media/channel-share-demo-website.png" alt-text="Share demo website.":::
+    :::image type="content" source="media/publication-connect-bot-to-web-channels/channel-share-demo-website.png" alt-text="Share demo website.":::
 
 To share the demo website link, copy the demo website URL and share it with your teammates directly. 
 
@@ -62,7 +62,7 @@ You can also add the bot to your Power Platform admin center.
 
 2. Select **Custom website** and then select **Copy** to copy it directly to the clipboard, or **Share to email** to open a new email message with the snippet included, in your default email app.
 
-    :::image type="content" source="media/channel-custom-website.png" alt-text="Add bot to custom website." border="false":::
+    :::image type="content" source="media/publication-connect-bot-to-web-channels/channel-custom-website.png" alt-text="Add bot to custom website." border="false":::
 
 3. Provide the snippet to your web developer to add the bot to your website.
 

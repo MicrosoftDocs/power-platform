@@ -71,11 +71,11 @@ Purchase licenses for your organization by going to the [Microsoft 365 admin cen
 
 2. On the navigation pane, expand the **Users** menu, and then select **Active users**.
 
-    :::image type="content" source="media/licensing-menu-users.png" alt-text="Expand Users, and then select Active users." border="false":::
+    :::image type="content" source="media/requirements-licensing/licensing-menu-users.png" alt-text="Expand Users, and then select Active users." border="false":::
 
 3. Select a name, and then select **Manage product licenses**.
 
-   :::image type="content" source="media/licensing-manage.png" alt-text="Select a user, and then manage product licenses." border="false":::
+   :::image type="content" source="media/requirements-licensing/licensing-manage.png" alt-text="Select a user, and then manage product licenses." border="false":::
 
 4. On the flyout panel, select the check box next to **Power Virtual Agent user license**, and then select **Save changes**. 
 
