@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 01/21/2022
+ms.date: 02/08/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -244,6 +244,3 @@ Provisioning environments is based on database capacity. Previously, it was two 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
 
-
-
-“After a URL name change is saved, all users who access that environment must be notified of the change. Users will be able to access the environment for up to 24 hours by using the previous URL. After the 24-hour period has passed, the previous URL will not work.”
