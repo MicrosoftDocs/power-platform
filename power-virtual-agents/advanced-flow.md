@@ -49,36 +49,29 @@ Flows typically use variables to input and output information. The variables can
 
 1. Open the authoring canvas for the topic from which you want to call a flow.
 
-1. Select the plus (**+**) button below an existing node to add a new node. 
+1. Select the plus (**+**) button below an existing node to add a new node.
 
-2. In the node selection window, select **Call an action**, and then pick an existing flow that you want to use, or if you want to create a new one to use, select **Create a flow**. 
-   
-![New flow shows up in Action picker.](media/FlowInActionPicker.png)
-
-* Selecting an existing flow will automatically add the flow to the authoring canvas. 
-
+1. In the node selection window, select **Call an action**, and then pick an existing flow that you want to use, or if you want to create a new one to use, select **Create a flow**.
 
     :::image type="content" source="media/UseCreateFlowOption.jpg" alt-text="Create a new Power Automate flow." border="false":::
 
+    Selecting an existing flow will automatically add the flow to the authoring canvas.
 
-![Create a new Power Automate flow.](media/UseCreateFlowOption.jpg)
+    :::image type="content" source="media/FlowInActionPicker.png" alt-text="New flow shows up in Action picker.":::
 
-* Using the **Create a flow** option opens a starter flow template in the [Power Automate portal](https://flow.microsoft.com/) in a separate tab.
+    Using the **Create a flow** option opens a starter flow template in the [Power Automate portal](https://flow.microsoft.com/) in a separate tab. The portal automatically opens in the same environment as the bot and uses the same user credentials.
 
-:::image type="content" source="media/PVAConnectorTemplate.JPG" alt-text="Power Automate flow template." border="false":::
+    :::image type="content" source="media/PVAConnectorTemplate.JPG" alt-text="Power Automate flow template." border="false":::
 
-> [!NOTE]
-> The Power Automate portal automatically opens in the same environment as the bot (using the same user credentials).
+    This template is an example of a flow that can be used by bots. To be suitable for bots, a Power Automate flow requires a special **Power Virtual Agents** trigger and response action:
 
-This template is an example of a flow that can be used by bots. To be suitable for bots, a Power Automate flow requires a special **Power Virtual Agents** trigger and response action:
+    - Flow trigger:  **Power Virtual Agents**  
 
-- Flow trigger:  **Power Virtual Agents**  
+        :::image type="content" source="media/PVAConnectorTrigger.JPG" alt-text="Power Virtual Agents trigger." border="false":::
 
-    :::image type="content" source="media/PVAConnectorTrigger.JPG" alt-text="Power Virtual Agents trigger." border="false":::
+    - Response action:  **Power Virtual Agents**  
 
-- Response action:  **Power Virtual Agents**  
-
-    :::image type="content" source="media/PVAConnectorResponse.JPG" alt-text="Power Virtual Agents response." border="false":::
+        :::image type="content" source="media/PVAConnectorResponse.JPG" alt-text="Power Virtual Agents response." border="false":::
 
 ## Input and output parameters
 
@@ -139,12 +132,9 @@ Your flow is saved to the **Default Solution** under the **Solutions** tab on th
 
 :::image type="content" source="media/default-solution.png" alt-text="Power Automate flow template - Default Solution." border="false":::
 
-
 ## Optionally move a flow from Default Solution to another solution
 
 To be available to your bots, flows must be stored in a solution in Power Automate. If you do not want to use the **Default Solution** for this purpose, you can move your flows to another solution.
-
-**Move flow to new or existing solution:**
 
 1. On the Power Automate portal, go to the **Solutions** tab where you can see the available solutions. Use any of the existing solutions or create a new solution for your flows.
 
@@ -164,23 +154,21 @@ To be available to your bots, flows must be stored in a solution in Power Automa
 
     :::image type="content" source="media/move-flow-from-solution.png" alt-text="Add flow to a solution." border="false":::
 
-   To move a flow from **My flows** tab to a solution, select the **Outside solutions** option. Select **Add** to add your flow to the solution.
+    To move a flow from **My flows** tab to a solution, select the **Outside solutions** option. Select **Add** to add your flow to the solution.
 
     :::image type="content" source="media/AddExistingFlow_details.jpg" alt-text="Add flow from outside solutions." border="false":::
 
-
 ## Modify a flow on the Power Virtual Agents authoring canvas
+
 Using the node's context menu, you will see the following options to manage the flow in your dialog:
-    ![Modify flow from the authoring canvas.](media/advanced-flow/advanced-flow-nodemanage.png)
 
-* **Refresh** - If changes have been made to a flow in the Power Automate portal, you can select this to reload the flow in the PVA authoring canvas. It will then be validated, and any problems detected will need to be fixed before you are allowed to save.
-* **Replace** - This will reload the flow picker, allowing you to select or create a different flow to use in your dialog.
-*  **Delete** - The last option will permanently delete the node containing the flow entirely, which could disrupt the functionality of the dialog.  
+:::image type="content" source="media/advanced-flow/advanced-flow-nodemanage.png" alt-text="Modify flow from the authoring canvas.":::
 
+- **Refresh** - If changes have been made to a flow in the Power Automate portal, you can select this to reload the flow in the PVA authoring canvas. It will then be validated, and any problems detected will need to be fixed before you are allowed to save.
 
+- **Replace** - This will reload the flow picker, allowing you to select or create a different flow to use in your dialog.
 
-
-
+- **Delete** - The last option will permanently delete the node containing the flow entirely, which could disrupt the functionality of the dialog.  
 
 ## Modify a flow on the Power Automate portal
 
@@ -319,14 +307,13 @@ If you've enabled [Asynchronous Response](/azure/connectors/connectors-native-ht
 
 ### Topic Checker and Canvas Validation
 
-
 1. Flow status has changed -
 2. Flow structure has changed -
 3. Flow permissions have changed -
 
 ### Using the Test chat pane
 
-While testing your bot in the **Test chat** pane, you can use the **Save snapshot** command to get conversational diagnostics data. This data can help you troubleshoot issues, such as the bot not responding in the way you expect. 
+While testing your bot in the **Test chat** pane, you can use the **Save snapshot** command to get conversational diagnostics data. This data can help you troubleshoot issues, such as the bot not responding in the way you expect.
 
 > [!WARNING]
 > The snapshot contains all of your bot content, which may include sensitive information.
