@@ -217,9 +217,9 @@ It is our goal to deliver a powerful bot experience that allows users to retriev
 Effective May 5, 2020 the [Dynamics 365 connector](/connectors/dynamicscrmonline/) used for Flows, Logic Apps, and Canvas Apps is officially deprecated. We recommend that you don't create new connections using this connector. 
 
 #### Impact
-Starting April 29, 2022, no new connections can be created for Flows, Logic Apps, and Canvas Apps using the Dynamics 365 connector. Existing connections will continue to work until they are edited, at which time an alternate connector as listed nelow is required.
+Starting April 29, 2022, no new connections can be created for Flows, Logic Apps, and Canvas Apps using the Dynamics 365 connector. Existing connections will continue to work until they are edited, at which time an alternate connector as listed below is required.
 
-On July 28th 2022, all existing uses of the Dynamics 365 connector for Flows, Logic Apps, and Canvas Apps will be disabled. AT that time you must migrate to using one of the options outlined below.
+On July 28th 2022, all existing uses of the Dynamics 365 connector for Flows, Logic Apps, and Canvas Apps will be disabled. At that time, you must migrate to using one of the options outlined below.
 
 #### Action required by you
 Rather than use the Dynamics 365 connector, the [Microsoft Dataverse connector](/connectors/commondataserviceforapps/) should be your first choice *if you can use it*. You may not be able to use the Microsoft Dataverse connector in every situation today because of the following limitations:
