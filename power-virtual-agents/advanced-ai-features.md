@@ -64,7 +64,7 @@ The list shows each overlapping topic along with a similarity score, which repre
 
 You can sort the list by its similarity score, topic name, or number of trigger phrase overlaps.
 
-If you click on an item in the list, the **Topic overlap details** pane will open.
+If you click an item in the list, the **Topic overlap details** pane will open.
 
 :::image type="content" source="media/advanced-ai-features/topic-overlap-details.png" alt-text="Screenshot of the Topic overlap details pane showing overlaps related to Microsoft 365 language topics.":::
 
@@ -106,19 +106,19 @@ Over time, as users interact and talk to the bot, it will get better and better.
 
 In the following screenshot, the first time the bot comes across a question it doesn't understand, it asks for clarification.
 
-Before auto-triggering improvements, a bot user asks a question with a spelling error "I'd like to purchase somethign," to which the bot says "Sorry, I didn't get that. Did you mean:" and then provides a few options such as "Buy items" and "Buy service". In this case, the bot user selected "Buy items".
+Before auto-triggering improvements, a bot user asks a question with a spelling error "I'd like to purchase somethign," to which the bot says "Sorry, I didn't get that. Did you mean:" and then provides a few options such as "Buy items" or "Buy service." In this case, the bot user selected "Buy items."
 
-The next time someone asks the same question, the bot doesn't ask for clarification – it knows from previous interactions what the bot user is likely asking to buy items, so it goes straight into the purchasing topic, replying to the question "I'd like to purchase somethign" with "I am happy to help you place your order. To what state will you be shipping?".
+The next time someone asks the same question, the bot doesn't ask for clarification – it knows from previous interactions what the bot user is likely asking to buy items, so it goes straight into the purchasing topic, replying to the question "I'd like to purchase somethign" with "I am happy to help you place your order. To what state will you be shipping?"
 
-In this example, it also understands the misspelling of "somethign" to mean "something", so it's able to carry over the improved intent triggering even though the bot user's question is spelled differently.
+In this example, it also understands the misspelling of "somethign" to mean "something," so it's able to carry over the improved intent triggering even though the bot user's question is spelled differently.
 
 :::image type="content" source="media/advanced-ai-features/triggering-improvements.png" alt-text="Screenshot of a bot conversation showing the improvements to auto triggering.":::
 
 ## Conversation personalization (preview)
 
-[When this feature is enabled](#enable-or-disable-ai-capabilities), the bot will reuse information from Microsoft Graph and Azure Active Directory (Azure AD) throughout the course of a conversation. This feature allows the bot to use already existing information to enhance and personalize future conversations. For example, if a user mentions a name, email, or zip code these properties are stored and used in later conversations without having to reprompt the user.
+[When this feature is enabled](#enable-or-disable-ai-capabilities), the bot reuses information from Microsoft Graph and Azure Active Directory (Azure AD) throughout the conversation. This feature allows the bot to use already existing information to enhance and personalize future conversations. For example, if a user mentions a name, email, or zip code these properties are stored and used in later conversations without having to reprompt the user.
 
-Specifically, with this feature enabled, when the bot asks questions such as those in the following table, the corresponding user information will be pulled from Microsoft Graph and Azure AD (for authenticated users) and provided as prompts for the user to choose as an option.
+Specifically, with this feature enabled, when the bot asks questions such as those in the following table, the corresponding user information is pulled from Microsoft Graph and Azure AD (for authenticated users) and provided as prompts for the user to choose as an option.
 
 :::image type="content" source="media/advanced-ai-features/improvements-authoring.png" alt-text="Screenshot of the triggering improvements highlighted as part of topic authoring.":::
 
