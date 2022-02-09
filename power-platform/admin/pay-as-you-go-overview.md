@@ -1,13 +1,14 @@
 ---
 title: "Pay-as-you-go plan overview | MicrosoftDocs"
 description: The pay-as-you-go plan is a new way to pay for Power Apps using an Azure subscription, which allows you to get started without any license commitment.
-author: jimholtz
+author: Kavishi_MSFT
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: overview
 ms.date: 11/09/2021
 ms.subservice: admin
-ms.author: jimholtz 
+ms.author: kaagar
+ms.reviewer: jimholtz 
 search.audienceType: 
   - admin
 search.app:
@@ -29,7 +30,7 @@ Pay-as-you-go allows you to share a Power Apps app with any user in your organiz
 This plan reduces the overhead of license procurement and lets you manage and split costs across business units by leveraging the cost management reporting capabilities of Azure subscriptions. Pricing information for this plan is available [here.](https://go.microsoft.com/fwlink/?linkid=2169167)
 
 > [!TIP]
-> Check out how T-Mobile is innovating with Power Apps pay-as-you-go: [T-Mobile adopts Microsoft Power Platform for fast and powerful low-code development](https://customers.microsoft.com/en-us/story/1435340411391867976-t-mobile-telecommunications-power-platform).
+> Check out how T-Mobile is innovating with Power Apps pay-as-you-go: [T-Mobile adopts Microsoft Power Platform for fast and powerful low-code development](https://customers.microsoft.com/story/1435340411391867976-t-mobile-telecommunications-power-platform).
 
 ## Common use cases
 
