@@ -114,14 +114,17 @@ In this flow, we're going to provide a special message and email when someone as
 
 1. Now insert a message node with those variables. You can now add another flow that emails the information.
 
- :::image type="content" source="media/flow-test-2.png" alt-text="Insert message node in canvas.":::
+    :::image type="content" source="media/flow-test-2.png" alt-text="Insert message node in canvas.":::
 
 1. Add a **Call an action** node, and select a new flow.
+
 1. Pick the first flow template (Power Virtual Agents Flow Template).
+
 1. In the flow template, enter a string input called **Input_Requirements** and a number input called **Number_Attendees**.
+
 1. Add an Outlook connector after the input to send an Outlook message, and enter the variables in the body. Save the flow and return to the Power Virtual Agents authoring canvas.
 
-:::image type="content" source="media/flow-test-3.png" alt-text="Send a message via Outlook connector.":::
+    :::image type="content" source="media/flow-test-3.png" alt-text="Send a message via Outlook connector.":::
 
 1. Add the flow you just created, and select the two variables as the inputs for the flow.
 
