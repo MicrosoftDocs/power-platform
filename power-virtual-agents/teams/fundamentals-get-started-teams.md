@@ -2,7 +2,7 @@
 title: "Quickstart: Create and deploy a bot in Microsoft Teams"
 description: "Create and publish a Power Virtual Agents bot in Teams with this quickstart guide."
 keywords: "PVA, teams, quickstart"
-ms.date: 9/22/2020
+ms.date: 01/06/2022
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -48,7 +48,7 @@ This is just one example of many use cases of Power Virtual Agents chatbots in T
 
 ## Scenario
 
-You are from Contoso HR and need to build a human resources (HR) support bot in Microsoft Teams. This bot will answer common HR questions, such as those related to time off, with relevant information from the company's internal knowledge base. The bot can also contact human HR experts and notify them that an employee needs help for uncommon scenarios.
+You work in human resources (HR) at Contoso and need to build a HR support bot in Microsoft Teams. This bot will answer common HR questions, like those related to time-off, with relevant information from the company's internal knowledge base. The bot can also contact human HR experts and notify them that an employee needs help for uncommon scenarios.
 
 Once this bot is published, Contoso employees can access HR information in Microsoft Teams without needing to search the company's intranet. 
 
@@ -67,7 +67,7 @@ Once this bot is published, Contoso employees can access HR information in Micro
     -   [Make the bot available to other employees](#make-the-bot-available-to-other-employees)
 -   [End user experience](#detailed-steps-end-user-experience)
     -   [Finding the bot in the Teams app store](#finding-the-bot-in-the-teams-app-store)
-    -   [Employee chats with the bot to ask about time off](#employee-chats-with-the-bot-to-ask-about-time-off)
+    -   [Employee chats with the bot to ask about time-off](#employee-chats-with-the-bot-to-ask-about-time-off)
 
 
 ## Detailed steps: Bot author experience
@@ -84,7 +84,7 @@ Start by launching the Power Virtual Agents app in Microsoft Teams:
 :::image type="content" source="media/get-started-install-app.png" alt-text="Add the Power Virtual Agents app.":::
 
 
-The app is added and visible in the side navigation bar in Teams, and the app opens to the Power Virtual Agents Home page. This is where Teams users can come and build bots without needing to leave the Microsoft Teams interface.
+The app is added and visible in the side navigation bar in Teams, and the app opens to the Power Virtual Agents home page. This app is where Teams users can come and build bots without leaving the Microsoft Teams interface.
 
 >[!TIP]
 >To make it easier to get back to, select and hold (or right-click) the Power Virtual Agents icon and select **Pin**.
@@ -97,7 +97,7 @@ The app is added and visible in the side navigation bar in Teams, and the app op
 
 2. Pick which team you want the bot to be managed by. Let's create the bot in the Contoso HR Team since you are part of Contoso HR. You can [create a new team](/MicrosoftTeams/get-started-with-teams-create-your-first-teams-and-channels#create-a-team) if necessary, before you add a bot to it. 
 
-3. Fill in the bot name and language in the bot creation window. Let's use **HR Support Bot** for the name. The [default language is based on the Teams client language which you can change if you want](authoring-language-support-teams.md). 
+3. Fill in the bot name and language in the bot creation window. Let's use **HR Support Bot** for the name. The [default language is based on the Teams client language, which you can change if you want](authoring-language-support-teams.md). 
 
 4. Select **Create**.
 
@@ -109,13 +109,13 @@ Now that the bot is created, we can go ahead and start adding content to the bot
 
 Go to the topic list by selecting **Topics** in the side navigation pane.
 
-A bot comes with a collection of topics that defines the bot's interaction with end users. The core of building a bot in Power Virtual Agents is to build topics that can respond to different user inquiries. Let's build a topic to answer employee questions about taking time off.
+A bot comes with a collection of topics that defines the bot's interaction with end users. The core of building a bot in Power Virtual Agents is to build topics that can respond to different user inquiries. Let's build a topic to answer employee questions about taking time-off.
 
 1. Select **+ New topic** on the top menu bar to create a new topic.
 
-2. Name the topic **Employee time off** and give it an appropriate description.
+2. Name the topic **Employee time-off** and give it an appropriate description.
 
-3. Create trigger phrases. Trigger phrases for each topic define the sorts of ways that users will ask questions about that topic. Let's go ahead and add a few common ways that we expect employees to ask about time off. Enter these trigger phrases:
+3. Now create the trigger phrases. We'll add a few common ways that we expect employees to ask about time-off. Enter the following phrases:
 
    - Need information on time off
   
@@ -127,17 +127,15 @@ A bot comes with a collection of topics that defines the bot's interaction with 
   
    - I need extended leave
 
-    Power Virtual Agents comes with built-in natural language capabilities. You only need to define a few trigger phrases about time off - phrases that you expect employees to use - and the bot can accurately trigger the topic based on the employee's input.
+    Power Virtual Agents comes with built-in natural language capabilities. You only need to define a few trigger phrases about time-off - phrases that you expect employees to use - and the bot can accurately trigger the topic based on the employee's input.
 
-4. Select **Save** topic.
-
-5. Select **Go to authoring canvas** to start building the conversation flow for this topic.
+4. Select **Save** to add it to the topic list.
 
 Now that the trigger phrases are defined, you can proceed to define the bot's interaction with the user when this topic is engaged. The graphical interface in Power Virtual Agents lets you build the topic without needing to write a single line of code.
 
 First, let's give the employee a message that the bot is here to help with time-off questions using a message node.
 
-Enter the text in the existing message node *I can help with questions related to time off*.
+Enter the text in the existing message node *I can help with questions related to time-off*.
 
 As an HR employee, you know that the most common time-off questions that employees have are around paid vacation time and national holidays. So add a question node for the bot to ask employees what type of time-off they are looking for, so you can provide better guidance. When a question node with user response options is added, the topic automatically gets a forked branch for each response.
 
@@ -159,7 +157,7 @@ As you can see, user choices are stored in a variable and the topic will be bran
 
 Now you can add different responses for each option. For *paid vacation*, we can have the bot point employees to an internal HR website to look up paid time-off policies.
 
-1. Add a message node specifically for the *Paid vacation* branch with this message to the user: *For paid vacation time off, go to www.contoso.com/HR/PaidTimeOff to learn more on how to submit time-off requests.*
+1. Add a message node specifically for the *Paid vacation* branch with this message to the user: *For paid vacation time-off, go to www.contoso.com/HR/PaidTimeOff to learn more on how to submit time-off requests.*
 
 2. Add a node by selecting the **+** to end the conversation with a survey. Select **End the conversation**, then **End with survey**. This is the [customer satisfaction survey](analytics-csat-teams.md) pre-built in the bot for everyone to use in their topics.
 
@@ -186,17 +184,17 @@ This is what your topic should look like now:
 Power Virtual Agents comes with a built-in test bot that lets you test the bot in real time. Let's test the bot by launching the test bot canvas and providing the employee's input. When you save the topic, the test bot will be refreshed with the latest content. You can now test the bot with the latest content changes.
 
 1. Select the purple bot icon at the bottom of the screen to launch the test bot canvas. 
-2. Type in *I need time off information*.
+2. Enter *I need time-off information*. 
 
-    Even though *I need time off information* does not match the trigger phrases directly, Power Virtual Agents is able to process the user's input and triggers the employee time off topic. 
+    Even though *I need time-off information* doesn't match the trigger phrases directly, Power Virtual Agents is able to process the user's input and triggers the employee time-off topic. 
 
     As you chat with the bot in the test bot canvas, you can see where the bot is in the conversation in real-time in the authoring canvas by following the green highlights.
 
 3. Select **Paid vacation**.
 
-    As you can see now, the topic branches off based on the user's response. You can also open the variable to show the *TimeoffType* variable is set to **Paid time off** by the user. However, what happens if the user has already made it clear that they are looking for national holidays in their inquiry? The user may feel annoyed if the bot asks them to repeat themselves. Let's give it a try.
+Now the topic branches off based on the user's response. You can also open the variable to show the *TimeoffType* variable is set to **Paid time-off** by the user. However, what happens if the user has already made it clear that they are looking for national holidays in their inquiry? The user may feel annoyed if the bot asks them to repeat themselves. Let's give it a try.
 
-4. Reset the test bot canvas by selecting **Reset** above the test bot pane.
+4. Above the test bot pane, select **Reset** .
 
 5. Type in *Need information on national holidays*
 
@@ -218,7 +216,7 @@ Now that we have the basics out of the way, let's add a more complex option to t
 
 3. Add a message node that says *Extended leave needs HR expert approval. Let me connect you with them.*.
 
-Power Virtual Agents bots can take actions by [adding Power Automate flows into a topic](advanced-flow-teams.md). In this instance, you could add a flow that you've previously created that notifies a HR expert. This flow sends an adaptive card to the HR expert channel in Teams to let experts know a user needs them to reach out. 
+Power Virtual Agents bots can take actions by [adding Power Automate flows into a topic](advanced-flow-teams.md). In this instance, you could add a flow that you've previously created that notifies an HR expert. This flow sends an adaptive card to the HR expert channel in Teams to let experts know a user needs them to reach out. 
 
 First, let's create the flow to send a message to a Teams channel and then call it with the appropriate input.
 
@@ -227,9 +225,9 @@ First, let's create the flow to send a message to a Teams channel and then call 
     :::image type="content" source="media/get-started-variable-description.png" alt-text="Add a question node with the answer as a variable called Description.":::
 
 2. Add a node under the question and select **Call an action**.
-3. Select **Create a flow**. This launches Power Automate within the Power Virtual Agents app in Teams. We will use a built-in template to send a message to a channel, which makes it very easy to get started.
+3. Select **Create a flow**. 
 
-4. Choose the template **Send a message to a Teams channel**, then select **Continue**.  
+4. Choose the template **Send a message to a Teams channel**, and then select **Continue**.  
     The flow template takes in two inputs from the bot, the **Subject** (title for the message) and **Message text** (actual message) to post to the channel. 
     1. Under the **Post a message (v3)** flow definition, select the **Team ID** and the **Team channel ID** where the message should be posted. 
     2. You can add some text to the message in addition to the description entered by the user, and complete the **Message** field as appropriate. 
@@ -268,7 +266,7 @@ Once the topics are constructed and the bot is tested, you are ready to publish 
 
 1. Select **Publish**.
 
-You will need to follow a few additional actions to actually make the bot available to employees.
+You'll need to follow a few more actions to actually make the bot available to employees.
 
 >[!TIP]
 > If you are already in a conversation with the bot, you can type *start over* to the bot after publishing the latest bot content. This will restart the conversation with the bot, with the latest content published.
@@ -291,7 +289,7 @@ Now you're ready to make the bot discoverable for other employees in the Teams a
 
 #### Edit bot details
 
-In this pane, you can edit the bot icon that shows in Teams, and change the short and long descriptions for your bot. These are pre-populated with starter content, but it's easy to customize for your bot.
+In this pane, you can edit the bot icon that shows in Teams, and change the short and long descriptions for your bot. These settings are pre-populated with starter content, but it's easy to customize for your bot.
 
 :::image type="content" source="media/get-started-edit.png" alt-text="Edit the bot.":::
 
@@ -340,11 +338,11 @@ The **Greeting** topic which is available as a [default or "system" topic](autho
 >[!TIP]
 >You can [edit the **Greeting** topic](configure-bot-greeting-teams.md) to have an appropriate welcome message.
 
-### Employee chats with the bot to ask about time off
+### Employee chats with the bot to ask about time-off
 
 Melissa needs time-off in the summer for personal reasons.
 
-She types in *Need time off information*.
+She enters *Need time-off information*.
 
 She sees an option for **Paid vacation** and begins there to get some initial information, so she selects **Paid vacation**.
 
@@ -354,7 +352,7 @@ The bot then gathers customer satisfaction data and ends the conversation.
 
 :::image type="content" source="media/get-started-chat.png" alt-text="The user can talk with the bot just like a normal Teams chat.":::
 
-After reviewing the HR site for paid time-off, she understands that she needs extended leave since she will be gone for more than 3 months. She returns to the bot and types *I need extended leave*.
+After reviewing the HR site for paid time-off, she understands that she needs extended leave since she will be gone for more than three months. She returns to the bot and types *I need extended leave*.
 
 The bot lets Melissa know that an HR expert is needed for the extended leave request and asks Melissa for a description of her issue.
 
@@ -382,7 +380,7 @@ As next steps, you can continue working on their bot, adding more topics and ref
 
 See the [Power Virtual Agents app in Microsoft Teams](fundamentals-what-is-power-virtual-agents-teams.md) overview topic for more ideas on what to do with Power Virtual Agents.
 
-For additional help, or to post and vote on ideas, check out the [Power Virtual Agents community forum](https://aka.ms/pva_forum) and [Community help and support](../fundamentals-support.md).
+For more help, or to post and vote on ideas, check out the [Power Virtual Agents community forum](https://aka.ms/pva_forum) and [Community help and support](../fundamentals-support.md).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

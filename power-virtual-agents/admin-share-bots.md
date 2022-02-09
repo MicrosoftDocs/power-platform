@@ -2,7 +2,7 @@
 title: "Share and collaborate on chatbots with other users (contains video)"
 description: "Share Power Virtual Agents chatbots with other users, assign security roles, and work together."
 keywords: "Administration, share, multi-author, PVA"
-ms.date: 12/10/2021
+ms.date: 01/06/2022
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -230,10 +230,6 @@ This can help prevent conflicts if multiple people are working on the same topic
 
 >[!NOTE]
 >The list of authors in the **Currently editing** column is only refreshed when the page is loaded.
-
-A topic's **Properties** page also shows all the people currently editing a topic, as well as the last time someone saved.
-
-:::image type="content" source="media/sharing-multi-details.png" alt-text="Screenshot of a topic's details page on the properties pane with the Modified by section on the right highlighted.":::
 
 A list of who's editing the page also appears as user icons on the top of the authoring canvas when you've opened a topic for editing.
 
