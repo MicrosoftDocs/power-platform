@@ -304,11 +304,9 @@ If you've enabled [Asynchronous Response](/azure/connectors/connectors-native-ht
 
 ## Troubleshoot your bot
 
-### Topic Checker and Canvas Validation
+### Find and fix issues
 
-1. Flow status has changed -
-2. Flow structure has changed -
-3. Flow permissions have changed -
+Most flow-related issues can be found in the [Flow Checker](/power-automate/error-checker), but any issues on the authoring canvas will appear in [topic checker](authoring-topic-management.md#topic-errors). Additionally when a bot encounters a problem during a conversation, it will respond with an [error message](error-codes.md).
 
 <!-- TODO: this probably should be moved to authoring-test-bot.md -->
 ### Use the Test bot pane
