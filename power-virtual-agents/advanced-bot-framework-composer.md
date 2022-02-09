@@ -235,7 +235,7 @@ If you encounter issues developing in Bot Framework Composer, you can:
 
 - See a list of known issues in Composer or [log a new Composer issue](https://github.com/microsoft/BotFramework-Composer/issues/new/choose).
 
-To troubleshoot your bot in Power Virtual Agents, go to [Troubleshoot your bot](advanced-flow.md#troubleshoot-your-bot).
+To troubleshoot your bot in Power Virtual Agents, use the [topic checker](authoring-topic-management.md#topic-errors).
 
 ## Learn More
 
