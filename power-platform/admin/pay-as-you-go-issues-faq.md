@@ -1,7 +1,7 @@
 ---
 title: "Issues and FAQs about pay-as-you-go plans | MicrosoftDocs"
 description: This topic addresses known issues about pay-as-you-go plans and provides answers to frequently asked questions.
-author: Kavishi_MSFT
+author: Kavishi
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
