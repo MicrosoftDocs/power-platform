@@ -273,7 +273,7 @@ Alternatively, if you'd rather type in a literal value for an action input inste
 
 ## Test your flow and topic
 
-In the **Test chat** pane, start a conversation with the bot by typing in a trigger phrase for the topic that contains the flow.
+In the **Test bot** pane, start a conversation with the bot by typing in a trigger phrase for the topic that contains the flow.
 
 Enter your city and zip code at the prompt to get today's weather forecast from the bot.
 
@@ -310,14 +310,15 @@ If you've enabled [Asynchronous Response](/azure/connectors/connectors-native-ht
 2. Flow structure has changed -
 3. Flow permissions have changed -
 
-### Using the Test chat pane
+<!-- TODO: this probably should be moved to authoring-test-bot.md -->
+### Use the Test bot pane
 
-While testing your bot in the **Test chat** pane, you can use the **Save snapshot** command to get conversational diagnostics data. This data can help you troubleshoot issues, such as the bot not responding in the way you expect.
+While testing your bot in the **Test bot** pane, you can use the **Save snapshot** command to get conversational diagnostics data. This data can help you troubleshoot issues, such as the bot not responding in the way you expect.
 
 > [!WARNING]
 > The snapshot contains all of your bot content, which may include sensitive information.
 
-1. At the top of the **Test chat** pane, select the menu icon (three vertical periods) and then **Save snapshot**.
+1. At the top of the **Test bot** pane, select the menu icon (three vertical periods) and then **Save snapshot**.
 
     :::image type="content" source="media/save-snapshot.png" alt-text="Save snapshot.":::
 
