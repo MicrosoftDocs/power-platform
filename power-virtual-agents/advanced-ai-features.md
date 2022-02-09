@@ -32,7 +32,7 @@ Power Virtual Agents hosts multiple AI models and AI capabilities on a single se
 
 Traditionally, intent triggering (how an AI model determines the intent of a question posed to it, by using NLU to understand what a user is asking) is formalized as a multi-class classification problem, in which the model is highly associated with known categories; any change to these categories will result in the need to build a new AI model.
 
-Power Virtual Agents, however, employs a language understanding model that uses an example-based approach, powered by a deep neural model. This type of large-scale model only needs to be trained once with large amounts of data using AI supercomputing, and can then be used for specific tasks with few examples without further training. The use of this model is part of the [AI at Scale](https://innovation.microsoft.com/en-us/ai-at-scale) initiative by Microsoft, and means the way AI is developed and used is changing. Specifically for Power Virtual Agents, the use of this model allows for an intuitive way for bot makers to work on their bot content confidently, without having to involve AI experts.
+However, Power Virtual Agents employs a language understanding model that uses an example-based approach, powered by a deep neural model. This type of large-scale model only needs to be trained once with large amounts of data using AI supercomputing, and can then be used for specific tasks with few examples without further training. The use of this model is part of the [AI at Scale](https://innovation.microsoft.com/en-us/ai-at-scale) initiative by Microsoft, and means the way AI is developed and used is changing. Specifically for Power Virtual Agents, the use of this model allows for an intuitive way for bot makers to work on their bot content confidently, without having to involve AI experts.
 
 With the Power Virtual Agents model, you only need to provide a few examples when you craft trigger phrases for a topic. The examples for a single topic usually consist of 5 to 10 phrases.
 Shorter trigger phrases are better, and you should aim for 2 to 10 words. You just need to make sure trigger phrases are semantically different: changing a single verb or noun could be enough to expand a topic's coverage. Adding things like new articles (changing or adding 'the' or 'a' or 'an'), changing capitalization, adding contractions (you're or don't), or adding plurals won't improve the triggering because contractions are already accounted for in the AI model.
@@ -106,7 +106,7 @@ Over time, as users interact and talk to the bot, it will get better and better.
 
 In the following screenshot, the first time the bot comes across a question it doesn't understand, it asks for clarification.
 
-Before auto-triggering improvements, a bot user asks a question with a spelling error "I'd like to purchase somethign," to which the bot says "Sorry, I didn't get that. Did you mean:" and then provides a few options such as "Buy items" or "Buy service." In this case, the bot user selected "Buy items."
+Before auto-triggering improvements, a bot user asks a question with a spelling error "I'd like to purchase somethign," to which the bot says "Sorry, I didn't get that. Did you mean:" and then provides a few options such as **Buy items** or **Buy service**. In this case, the bot user selected **Buy items**.
 
 The next time someone asks the same question, the bot doesn't ask for clarification – it knows from previous interactions what the bot user is likely asking to buy items, so it goes straight into the purchasing topic, replying to the question "I'd like to purchase somethign" with "I am happy to help you place your order. To what state will you be shipping?"
 
@@ -148,8 +148,6 @@ Specifically, with this feature enabled, when the bot asks questions such as tho
 | <ul></br><li>`Wondering if you would please provide your zip code?`</li></br><li>`I can help you out with that. What's your zip code so I can go ahead?`</li></br></ul> | Zip code |
 
 ## Enable or disable AI capabilities
-
-To use these advanced AI capabilities in Power Virtual Agents:
 
 1. Open a bot you want to enable or disable the features for.
 1. Expand **Manage** on the side navigation pane, then go to the **AI capabilities** tab.
