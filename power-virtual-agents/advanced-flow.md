@@ -105,7 +105,7 @@ To specify a flow to accept input parameters from a bot, select the **Add an inp
 For example, you can select **Text** and **Number** to add the following input parameters to the flow:
 
 - **String_Input** of type `string`
-- **Number_Input** ot type `number`
+- **Number_Input** of type `number`
 
 :::image type="content" source="media/PVAConnector_Inputs_2.JPG" alt-text="Power Virtual Agents trigger inputs." border="false":::
 
@@ -118,7 +118,7 @@ To return output parameters to the bot that can be a `string`, `number`, or a `b
 For example, you can select **Text** and **Number** to add the following output parameters to the flow and assign return values for them.
 
 - **String_Output** of type `string`
-- **Number_Output** ot type `number`
+- **Number_Output** of type `number`
 
 :::image type="content" source="media/PVAConnector_Output_2.JPG" alt-text="Power Virtual Agents response outputs." border="false":::
 

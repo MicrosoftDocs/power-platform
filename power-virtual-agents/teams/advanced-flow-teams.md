@@ -27,6 +27,15 @@ Select the version of Power Virtual Agents you're using here:
 
 You can enable your bot to perform an action by calling a Microsoft Power Automate flow. Flows can help you automate activities, or call backend systems. For example, you can use flows to send messages to a Teams channel, or access files in a SharePoint folder.
 
+> [!IMPORTANT]
+> To use flows within Power Virtual Agents, they must meet the following requirements:
+>
+> - A flow can only be called from a topic located in the same [Microsoft Dataverse environment](/powerapps/maker/common-data-service/data-platform-intro) as your bot.
+>
+> - Flows must also be in a solution in Power Automate. You can [move flows into solutions](../advanced-flow.md#optionally-move-a-flow-from-default-solution-to-another-solution) so they are listed in the authoring canvas.
+>
+> - [Flow values must be returned synchronously to Power Virtual Agents](../advanced-flow.md#disable-asynchronous-responses-from-flows).
+
 Flows typically use variables to input and output information. The variables can then be used in other nodes within the topic.
 
 For example, you could record someone's answer to a question in one place in the bot, then have a flow that "outputs" a special message based on the "input".
@@ -43,22 +52,17 @@ For example, you could record someone's answer to a question in one place in the
 
 1. Select the plus (**+**) button below an existing node to add a new node.
 
-1. In the node selection window, select **Call an action**, and then select **Create a flow**.
+1. In the node selection window, select **Call an action** > **Create a flow**.
 
     :::image type="content" source="media/UseCreateFlowOption-teams.png" alt-text="Create a new Power Automate flow.":::
 
-Using the **Create a flow** option opens a template selection screen.
+1. You'll find a list of templates to help you get started creating Power Automate flows. For this example, we'll pick the basic "Power Virtual Agents Flow Template".
 
-:::image type="content" source="media/flow-template-tile.png" alt-text="Flow template selection screen.":::
+    :::image type="content" source="media/flow-template-tile.png" alt-text="Flow template selection screen.":::
 
-> [!NOTE]
-> Save your topic before creating a new flow, as you will be taken to Power Automate for this operation.
+1. You should now see a blank flow template.
 
-You will find a list of templates which helps you quickly get started creating Power Automate flows. For this example, we will pick the basic "Power Virtual Agents Flow Template".
-
-After that, you'll see a blank flow template.
-
-:::image type="content" source="media/PVAConnectorTemplate-teams.png" alt-text="The flow action and response boxes of a flow for Power Virtual Agents.":::
+    :::image type="content" source="media/PVAConnectorTemplate-teams.png" alt-text="The flow action and response boxes of a flow for Power Virtual Agents.":::
 
 ## Input and output parameters
 
@@ -125,6 +129,6 @@ Now when the bot user tells the bot how many people, and any requirements, an em
 
 :::image type="content" source="media/flow-test-4.png" alt-text="Complete topic with a flow call that sends email via Outlook connector.":::
 
-See the [Power Virtual Agents app documentation on using Flows](../advanced-flow.md) for more detailed and complex scenarios using flows.
+See the [Power Virtual Agents webapp documentation on using Flows](../advanced-flow.md) for more detailed and complex scenarios.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
