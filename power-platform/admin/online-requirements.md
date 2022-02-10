@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/13/2021
+ms.date: 02/10/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -18,32 +18,8 @@ search.app:
 ---
 # Power Platform URLs and IP address ranges
 
-[Model-driven Power Apps](/powerapps/maker/model-driven-apps/model-driven-app-overview) and customer engagement apps (such as [Dynamics 365 Sales](/dynamics365/sales-professional/help-hub), [Dynamics 365 Customer Service](/dynamics365/customer-service/help-hub), and [Dynamics 365 Marketing](/dynamics365/marketing/help-hub) and [Dynamics 365 Project Operations](/dynamics365/project-operations)), give you the following options to access data:  
-  
-- Web browser. No need to install anything to run customer engagement apps from a computer running a supported web browser.  
 
-- [Dynamics 365 App for Outlook](/dynamics365/outlook-app/overview). An [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] app which, lets you manage your app data right within [!INCLUDE[pn_MS_Outlook_Full](../includes/pn-ms-outlook-full.md)].  
-
-- [Power Apps mobile](/powerapps/mobile/run-powerapps-on-mobile). Use the Power Apps mobile app to run model-driven apps on your mobile device. 
-  
-- [Dynamics 365 for phones and Dynamics 365 for tablets](/dynamics365/mobile-app/overview). Use the Dynamics 365 for phones or Dynamics 365 for tablets app mobile app to run customer engagement apps (such as Dynamics 365 Sales, Dynamics 365 Customer Service, and Dynamics 365 Marketing), built on Microsoft Dataverse on your mobile device.
-  
-## Web browser requirements  
- You use a common web browser, such as [!INCLUDE[pn_Internet_Explorer](../includes/pn-internet-explorer.md)], [!INCLUDE[tn_Mozilla_Firefox](../includes/tn-mozilla-firefox.md)], [!INCLUDE[tn_Google_Chrome](../includes/tn-google-chrome.md)] or [!INCLUDE[tn_Apple_Safari](../includes/tn-apple-safari.md)] to view, add, or edit information stored in your organization’s  database. For more information about the supported web browsers and hardware requirements, see [Web application requirements for Microsoft Dynamics 365 apps](web-application-requirements.md).  
-
-## Mobile device requirements  
- Work with model-driven Power Apps or customer engagement apps on your mobile device. For supported device and requirements, see:
- 
- - [Power Apps mobile](/powerapps/mobile/run-powerapps-on-mobile#supported-devices)
- - [Dynamics 365 for phones and Dynamics 365 for tablets](/dynamics365/mobile-app/support-phones-tablets)
-
-## Microsoft Office requirements  
- Customer engagement apps leverage the capabilities of on-premises versions of [!INCLUDE[pn_MS_Office](../includes/pn-ms-office.md)] or [!INCLUDE[pn_MS_Office_365](../includes/pn-ms-office-365.md)] and integrates with [!INCLUDE[pn_MS_Word_Full](../includes/pn-ms-word-full.md)] and [!INCLUDE[pn_MS_Excel_Full](../includes/pn-ms-excel-full.md)]. For more information about the supported versions of [!INCLUDE[pn_MS_Office](../includes/pn-ms-office.md)], see [Supported versions of Office](web-application-requirements.md#supported-versions-of-office).  
-  
- [!INCLUDE[cc_Office365PlanRequirement](../includes/cc-office365planrequirement.md)]  
-
-## IP addresses and URLs
-If certain IP address ranges or individual IP addresses are blocked in the environment, users may not be able to reach Microsoft Dynamics 365 environments. Blocked IPs can also impact connecting Dynamics 365 apps to [Microsoft Exchange Server (on-premises)](connect-exchange-server-on-premises.md). See the following:
+If certain IP addresses or URLs are blocked in your browsers or network security devices, users might not be able to reach Microsoft Dynamics 365 environments. Blocked IPs can also impact connecting Dynamics 365 apps to [Microsoft Exchange Server (on-premises)](connect-exchange-server-on-premises.md). See the following:
 
 - [Azure IP Ranges and Service Tags – Public Cloud](https://www.microsoft.com/download/details.aspx?id=56519)
 - [Azure IP Ranges and Service Tags – US Government Cloud](https://www.microsoft.com/download/details.aspx?id=57063)
@@ -60,7 +36,7 @@ Dynamics 365 apps use several Microsoft URLs to help provide security, services,
   
 ## Internet accessible URLs required
 
-If you cannot access Microsoft Dynamics 365 apps, or specific URLs fail to load when you use Microsoft Dynamics 365, a proxy or firewall may be configured to prevent  Dynamics 365 URLs from accessing server resources.
+If you cannot access Microsoft Dynamics 365 apps, or specific URLs fail to load when you use Microsoft Dynamics 365 apps, a proxy or firewall might be configured to prevent  Dynamics 365 URLs from accessing server resources.
 
 Add the following URLs to the approved list to allow traffic to proceed to these URLs.
 
@@ -81,6 +57,18 @@ Add the following URLs to the approved list to allow traffic to proceed to these
 | http://crl.microsoft.com/pki/crl/products/microsoftrootcert.crl  | Required for Certification Revocation List checks.    |
 | https://dynamics.microsoft.com |    |
 | https://*.api.powerplatform.com | Required for Power Platform API connectivity used internally by Microsoft products as well as admin automation scenarios as  [documented here](programmability-extensibility-overview.md).
+
+### URLs required for specific apps
+
+- **Power Apps**: [Required services](/powerapps/maker/canvas-apps/limits-and-config)
+- **Power Automate**: [Required services](/power-automate/ip-address-configuration)
+- **Power Virtual Agents**: [Required services](../../power-virtual-agents/requirements-quotas.md)
+- **Power BI**: [Add Power BI URLs to your allowlist](/power-bi/admin/power-bi-allow-list-urls)
+
+### URLs required for Power Apps US Government and Dynamics 365 US Government
+
+- [Power Apps US Government service URLs](powerapps-us-government.md#power-apps-us-government-service-urls)
+- [Dynamics 365 US Government URLs](microsoft-dynamics-365-government.md#dynamics-365-us-government-urls)
 
 ## Ports
 Dataverse exposes ports *18085* and *8085* to perform maintenance operations for customer databases.  The maintenance operations are executed to ensure that Microsoft Dynamics 365 environments are performing at optimal performance standards.  These maintenance operations include but are not limited to: 
