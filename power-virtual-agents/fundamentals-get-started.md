@@ -31,6 +31,9 @@ This quickstart guide takes you through the end-to-end experience of creating a 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mLcX]
 >
 
+> [!NOTE]
+> Parts of this video may show older versions of the app.
+
 In addition to this guide, you can also [download and use templates to help you create, develop, and publish chatbots with Power Virtual Agents](fundamentals-templates.md).
 
 ## Prerequisites
@@ -77,7 +80,7 @@ Now that you have full functionality within your bot, you can create your own to
 
     As an example, let's create a topic called 'Personal Hello World' and add 'hello world' as a trigger phrase.
 
-    :::image type="content" source="media/overview-trigger.png" alt-text="Create topic and trigger phrase." border="false":::
+    :::image type="content" source="media/fundamentals-get-started/hello-world-topic.png" alt-text="Name topic and add trigger phrase.":::
 
 1. Select **Save topic** to add the topic to the topics list.
 

@@ -191,15 +191,13 @@ We recommend you modify the system greeting topic so that you don't have to edit
 
 ### Modify the system greeting topic (recommended)
 
-1. Select **Topics** on the side pane.
+1. Select **Topics** on the side navigation pane, then select the **Greeting** topic row.
 
-1. Under **System Topics**, select the **Go to authoring canvas** icon on the **Greeting** topic row.
-
-    :::image type="content" source="media/custom-greeting-topic.png" alt-text="Screenshot of the Topics page, with the Greeting topic highlighted." border="false":::
+    :::image type="content" source="media/configure-bot-greeting/select-greeting-topic.png" alt-text="Screenshot of the Topics page, with the Greeting topic highlighted.":::
 
 1. Edit the text inside the **Message** nodes. You can also [add or delete additional nodes](authoring-create-edit-topics.md#insert-nodes).
 
-1. Select **Save** when you're finished editing the message.
+1. Select **Save**.
 
     :::image type="content" source="media/custom-greeting-message.png" alt-text="Screenshot of the system greeting topic showing the message nodes that can be edited." border="false":::
 
@@ -218,15 +216,11 @@ You can now test your bot by going to the webpage where you deployed your bot's 
 
 1. Select **New topic**, and give it a name.
 
-1. Select **Go to authoring canvas**.
-
 1. Add the text inside the **Message** node.
 
 1. Select **Save** when you've finished editing the message.
 
-1. Select **Topics** again on the side pane.
-
-1. Under **System Topics**, select the **Go to authoring canvas** icon on the **Greeting** topic row.
+1. Select **Topics** again on the side navigation pane, then select the **Greeting** topic row.
 
 1. [Delete the message nodes](authoring-create-edit-topics.md#insert-nodes) on the **Greeting** topic.
 

@@ -63,19 +63,39 @@ These topics fall into two categories:
 
    :::image type="content" source="media/topics-new.png" alt-text="Select New topic at the top of the Topics page." border="false":::
 
-1. Specify a name, description, and one or more trigger phrases for the topic.
+1. When you enter the authoring canvas, the **Trigger phrases** pane should open. If it doesn't open, select **Trigger phrases**.
+
+    :::image type="content" source="media/authoring-create-edit-topics/trigger-phrases-button.png" alt-text="Selecting Trigger phrases will open the topic details pane":::
+
+1. Specify one or more trigger phrases for the topic in the **Trigger phrases** pane.
 
    A trigger phrase is a phrase that a customer enters in the chat window to start a conversation with the bot. Once the conversation is started, the conversation follows the path you define. You can specify more than one trigger phrase for a topic. You can include punctuation in a trigger phrase, but it is best to use short phrases rather than long sentences.
 
-   :::image type="content" source="media/topics-details-triggers.png" alt-text="The Topic details page contains a name, description, and trigger phrases." border="false":::
+    :::image type="content" source="media/topics-details-triggers.png" alt-text="Edit trigger phrases in the trigger phrases pane":::
 
-1. Select **Save topic** to add the topic to the topics list.
+1. Select **Details**.
+
+    :::image type="content" source="media/authoring-create-edit-topics/open-details-pane.png" alt-text="Selecting Details will open the topic details pane":::
+
+1. For **Name**, enter a name for your topic. You can also add a **Display name** and **Description**.
+
+    The **Display name** is used by the bot when it needs to know which topic the person is asking about.
+
+    The **Description** is never shown to users. Use this to describe the purpose of the topic to yourself and other bot makers.
+
+    :::image type="content" source="media/authoring-create-edit-topics/details-pane.png" alt-text="The Topic details pane contains a name, display name, and description":::
+
+    You can also rename the topic by selecting its name and entering a new value.
+
+    :::image type="content" source="media/authoring-create-edit-topics/rename-topic-shortcut.png" alt-text="Quickly rename a topic by selecting its name":::
+
+1. Select **Save** to add the topic to the topics list.
 
 ## Design the topic's conversation path
 
-1. In the topic details for the topic you want to edit, select **Go to authoring canvas**.
+1. In the topic list, select the topic you want to edit.
 
-   :::image type="content" source="media/topics-details-canvas.png" alt-text="The Go to authoring canvas is to the side of the trigger phrases." border="false":::
+   :::image type="content" source="media/topics-details-canvas.png" alt-text="Selecting a topic will take you to the authoring canvas":::
 
 1. Power Virtual Agents opens the topic in the authoring canvas and displays the topic's trigger phrases. The authoring canvas is where you define the conversation path between a customer and the bot.
 
@@ -87,7 +107,7 @@ These topics fall into two categories:
 
    :::image type="content" source="media/handoff-add-node.png" alt-text="Screenshot of adding a node." border="false":::
 
-1. You can also move or change the paths between a node by clicking and dragging the node anchor, which looks like a small circle on top of the node. When dragging, you'll see a dotted line indicating the original path. You can also double-click the anchor and then select the new place for the anchor (you won't see a dotted line).
+1. To move or change the paths between a node, click and drag the node anchor, which looks like a small circle on top of the node. When you drag the node anchor, you'll see a dotted line indicating the original path.
 
     :::image type="content" source="media/move-anchor-node.png" alt-text="Screenshot of moving a node's anchor.":::
 

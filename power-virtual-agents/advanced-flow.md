@@ -2,7 +2,7 @@
 title: "Automate chatbot actions with flows"
 description: "Retrieve data and automate processes in your Power Virtual Agents bot with flows."
 keywords: "PVA, flow, automate"
-ms.date: 12/15/2021
+ms.date: 01/06/2022
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -232,9 +232,7 @@ These instructions use adding weather information to a flow as an example. If yo
     - get weather
     - what's the weather
 
-1. Go to the **Authoring canvas** for the new topic.
-
-    :::image type="content" source="media/CreateTopic.jpg" alt-text="Create a new Topic." border="false":::
+    :::image type="content" source="media/advanced-flow/create-get-weather-topic.png" alt-text="Create a new Topic." border="false":::
 
 1. By default, a message node is created. Enter **I can help you with that** into the node, and then select the plus (**+**) button under it to add a new node.
 
