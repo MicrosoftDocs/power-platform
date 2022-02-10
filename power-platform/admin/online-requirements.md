@@ -66,8 +66,8 @@ Add the following URLs to the approved list to allow traffic to proceed to these
 ### URLs required for specific apps
 
 - **Power Apps**: [Required services](/powerapps/maker/canvas-apps/limits-and-config)
-- **Power Automate**: [Required services](/power-automate/ip-address-configuration)
-- **Power Virtual Agents**: [Required services](../../power-virtual-agents/requirements-quotas.md)
+- **Power Automate**: [Required services](/power-automate/ip-address-configuration#required-services)
+- **Power Virtual Agents**: [Required services](/power-virtual-agents/requirements-quotas#required-services)
 - **Power BI**: [Add Power BI URLs to your allowlist](/power-bi/admin/power-bi-allow-list-urls)
 
 ### URLs required for Power Apps US Government and Dynamics 365 US Government
