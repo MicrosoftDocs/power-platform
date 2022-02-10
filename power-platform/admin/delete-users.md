@@ -158,7 +158,7 @@ The name of the deleted user continues to show in the audit log records where th
 
 ## Audit log after user is permanently deleted
 
-- The name of the deleted user no longer shows in the audit log records when the user was the owner, creator, or modifier of the record. For the record owner, the name is replaced with  **Record Unavailable** in these audit records. For the record creator or modifier, the name is replaced with  **No Name** in these audit records. 
+The name of the deleted user no longer shows in the audit log records when the user was the owner, creator, or modifier of the record. For the record owner, the name is replaced with  **Record Unavailable** in these audit records. For the record creator or modifier, the name is replaced with  **No Name** in these audit records. 
 
 
 ### See also
