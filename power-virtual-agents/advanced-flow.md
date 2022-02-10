@@ -165,11 +165,11 @@ Using the node's context menu, you will see the following options to manage the 
 
 :::image type="content" source="media/advanced-flow/advanced-flow-nodemanage.png" alt-text="Modify flow from the authoring canvas.":::
 
-- **Refresh** - If changes have been made to a flow in the Power Automate portal, select this to reload the flow in the Power Virtual Agents authoring canvas. The flow will then be validated, and any problems detected will need to be fixed before you can save.
-
-- **Replace** - This will show the flow picker, allowing you to select or create a different flow to use in your dialog.
-
 - **Delete** - This will permanently delete the node that runs the flow, which could disrupt the functionality of the dialog.  
+
+- **Refresh flow** - If changes have been made to a flow in the Power Automate portal, select this to reload the flow in the Power Virtual Agents authoring canvas. The flow will then be validated, and any problems detected will need to be fixed before you can save.
+
+- **Replace flow** - This will show the flow picker, allowing you to select or create a different flow to use in your dialog.
 
 ## Modify a flow on the Power Automate portal
 
