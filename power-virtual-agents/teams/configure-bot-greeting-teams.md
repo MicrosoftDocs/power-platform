@@ -43,13 +43,13 @@ You can also combine the customized greeting with [customization to the look and
 
 ## Change the bot's default greeting
 
-1. Select **Topics** on the side pane.
+1. Select **Topics** on the side navigation pane, then select the **Greeting** topic row.
 
-1. Under **System Topics**, select the **Go to authoring canvas** icon on the **Greeting** topic row.
-
-    :::image type="content" source="media/custom-greeting-topic-teams.png" alt-text="Screenshot of the Topics page, with the Greeting topic highlighted":::
+    :::image type="content" source="../media/configure-bot-greeting/select-greeting-topic.png" alt-text="Screenshot of the Topics page, with the Greeting topic highlighted.":::
 
 1. Edit the text inside the **Message** nodes. You can also [add or delete additional nodes](authoring-create-edit-topics-teams.md#insert-nodes).
+
+1. Select **Save**.
 
 1. Select **Save** when you're finished editing the message.
 

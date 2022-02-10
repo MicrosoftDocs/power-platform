@@ -2,7 +2,7 @@
 title: "Use Bot Framework Composer adaptive cards in chatbots"
 description: "Use Bot Framework Composer to add Adaptive Cards to your Power Virtual Agents chatbot."
 keywords: "composer, adaptive card"
-ms.date: 12/02/2021
+ms.date: 01/06/2022
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -38,8 +38,6 @@ Go to **Topics** in Power Virtual Agents and create a new topic called **Meal de
 - what meal options do you have
 - what dishes do you deliver
 - entrees available for delivery
-
-Select **Save topic**, and then select **Go to authoring canvas**.
 
 In the **Authoring canvas**, select the default **Message** node. Select the three vertical dots, then select **Delete**.
 
