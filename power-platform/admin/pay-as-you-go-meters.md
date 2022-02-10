@@ -1,13 +1,14 @@
 ---
 title: "Pay-as-you-go meters | MicrosoftDocs"
 description: If you're using a pay-as-you-go plan, three meters determine how much you'll pay based on usage of apps, Dataverse storage, and Power Platform requests.
-author: jimholtz
+author: Kavishi
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 11/15/2021
 ms.subservice: admin
-ms.author: jimholtz 
+ms.author: kaagar
+ms.reviewer: jimholtz 
 search.audienceType: 
   - admin
 search.app:
@@ -24,7 +25,7 @@ If you're using a pay-as-you-go plan, usage of apps and any Dataverse or Microso
 
 ## How do meters work?
 
-| **Meter** | **What is counted?** | **What is billed?** |
+| Meter | What is counted? | What is billed? |
 |------|--------|--------|
 | Power Apps per-app | The total number of unique monthly active users of each app and portal in a pay-as-you-go environment. </br>An active user is someone who opens an app/portal at least once in the given month. </br>Repeat access of an app/portal by a user is not counted. Users with Power Apps per-user licenses are not counted. Users with a Dynamics 365 license that provides access to per user license will not be counted.| $10 per active user/app/month |
 | Dataverse | For database storage, any usage above 1 GB per pay-as-you-go environment. </br>For file storage, any usage above 1 GB per pay-as-you-go environment. </br>If auditing is enabled, any resulting log storage usage will be counted. | For usage above 1 GB for database: $48 per GB/month</br>For usage above 1 GB for file: $2.40 per GB/month </br>For any log usage: $12 per GB/month |
@@ -76,9 +77,8 @@ Example pricing
 
 If a user has a Power Apps per-user license, the user is not counted in the meter. If a user has a [Microsoft 365 license](pricing-billing-skus.md#power-appspower-automate-for-microsoft-365), which provides access to Power Apps and is using an app with standard connectors, the user is also not counted in the meter. See below for more on how users are counted in the Power Apps per-app meter. 
 
-|    |    |     |
+|License type  |App with standard connectors|App with premium connectors|
 |----|------|-------|
-|  | **App with standard connectors**   | **App with premium connectors**    |
 | Unlicensed user   | Charged via Azure subscription.  | Charged via Azure subscription.  |
 | Unlicensed user but Power Apps per-app license is available in an environment   | Charged via Azure subscription. App passes are not consumed.    | Charged via Azure subscription. App passes are not consumed.  |
 | User with Power Apps for Microsoft 365 plan          | Not counted in the meter.    | Charged via Azure subscription.    |

@@ -155,15 +155,15 @@ After this policy is saved, any Power Apps or Power Automate maker who is part o
    > [!div class="mx-imgBorder"] 
    > ![Assign connectors actions.](media/dlp-assign-connectors-actions.png "Assign connectors actions") 
 
-   |         |   |Description  |
-   |---------|---------|---------|
-   |**1**  |   | Assign one or more connectors across connector classification groups        |
-   |**2**  |   | Connector classification group pivot tables    |
-   |**3**  |   | Search bar to find connectors across properties like **Name**, **Blockable**, **Type**, or **Publisher**       |
-   |**4**  |  |  Connector classification group that maps any new connectors added by Microsoft Power Platform *after* your DLP policy is created.         |
-   |**5**  |   |  Select, multi-select, or bulk-select connectors to move across groups        |
-   |**6**  |   |  Alphabetical sort capability across individual columns        |
-   |**7**  |   |  Action buttons to assign individual connectors across connector classification groups        |
+   |     |Description  |
+   |-----|-------------|
+   |**1**|Assign one or more connectors across connector classification groups|
+   |**2**|Connector classification group pivot tables|
+   |**3**|Search bar to find connectors across properties like **Name**, **Blockable**, **Type**, or **Publisher**|
+   |**4**|Connector classification group that maps any new connectors added by Microsoft Power Platform *after* your DLP policy is created.|
+   |**5**|Select, multi-select, or bulk-select connectors to move across groups|
+   |**6**|Alphabetical sort capability across individual columns|
+   |**7**|Action buttons to assign individual connectors across connector classification groups|
 
 
 4. Select one or more connectors. For this walkthrough, select the SalesForce and SharePoint connectors, and then select **Move to Business** from the top menu bar. You can also use the ellipsis (![ellipses.](./media/vertical-ellipses.png)) to the right of the connector name. 

@@ -2,7 +2,7 @@
 title: "Automatically start a chatbot conversation in Microsoft Teams"
 description: "Change the default greeting that a chatbot in the Power Virtual Agents app in Microsoft Teams uses."
 keywords: "PVA"
-ms.date: 9/22/2020
+ms.date: 01/06/2022
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -45,20 +45,18 @@ You can also combine the customized greeting with [customization to the look and
 
 ## Change the bot's default greeting
 
-1. Select **Topics** on the side navigation pane.
+1. Select **Topics** on the side navigation pane, then select the **Greeting** topic row.
 
-2. Under **System Topics**, select the **Go to authoring canvas** icon on the **Greeting** topic row.
+    :::image type="content" source="../media/configure-bot-greeting/select-greeting-topic.png" alt-text="Screenshot of the Topics page, with the Greeting topic highlighted.":::
 
-    :::image type="content" source="media/configure-bot-greeting-teams/custom-greeting-topic-teams.png" alt-text="Screenshot of the Topics page, with the Greeting topic highlighted":::
+1. Edit the text inside the **Message** nodes. You can also [add or delete additional nodes](authoring-create-edit-topics-teams.md#insert-nodes).
 
-3. Edit the text inside the **Message** nodes. You can also [add or delete additional nodes](authoring-create-edit-topics-teams.md#insert-nodes).
-
-4. Select **Save** when you're finished editing the message.
+1. Select **Save**.
 
 
     :::image type="content" source="media/configure-bot-greeting-teams/custom-greeting-message-teams.png" alt-text="Screenshot of the system greeting topic showing the message nodes that can be edited.":::
 
-5. [**Publish** your bot](publication-add-bot-to-microsoft-teams-teams.md) and test it.
+1. [**Publish** your bot](publication-add-bot-to-microsoft-teams-teams.md) and test it.
 
 
 
