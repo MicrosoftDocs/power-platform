@@ -56,28 +56,47 @@ You can edit both of these topic types in the same manner as for topics you crea
 
 1. Go to the **Topics** tab on the side pane to open the topics page.
 
-   :::image type="content" source="media/topics-menu-teams.png" alt-text="Select Topics on the side menu.":::
+   :::image type="content" source="../media/topics-menu.png" alt-text="Select Topics on the side navigation menu." border="false":::
 
-1. On the topics page, select **New topic**.
+1. On the topics page, select **New topic** to open the authoring canvas for an empty topic.
 
-   :::image type="content" source="media/topics-new-teams.png" alt-text="Select New topic at the top of the Topics page.":::
+   :::image type="content" source="../media/topics-new.png" alt-text="Select New topic at the top of the Topics page." border="false":::
+
+1. When you enter the authoring canvas, the **Trigger phrases** pane will automatically open for you. You can also open the pane by selecting **Trigger phrases**.
+
+   :::image type="content" source="../media/authoring-create-edit-topics/trigger-phrases-button.png" alt-text="Selecting Trigger phrases will open the topic details pane":::
+
+1. Specify one or more trigger phrases for the topic in the **Trigger phrases** pane.
+
+   A trigger phrase is a phrase that a customer enters in the chat window to start a conversation with the bot. Once the conversation is started, the conversation follows the path you define. You can specify more than one trigger phrase for a topic. You can include punctuation in a trigger phrase, but it's best to use short phrases rather than long sentences.
+
+   :::image type="content" source="../media/topics-details-triggers.png" alt-text="Edit trigger phrases in the trigger phrases pane":::
+
+1. Select **Details**.
 
 1. Specify a name, description, and one or more trigger phrases for the topic.
 
-   A trigger phrase is what someone might start a conversation with. It's best to use short phrases and keywords rather than long sentences.  
-   Remember, you don't need to enter in all the different ways someone might ask a question - the bot can determine what the user meant (their "intent") and match it to the right topic.
+   :::image type="content" source="../media/authoring-create-edit-topics/open-details-pane.png" alt-text="Selecting Details will open the topic details pane":::
 
-   :::image type="content" source="media/topics-details-triggers-teams.png" alt-text="The Topic details page contains a name, description, and trigger phrases":::
+1. For **Name**, enter a name for your topic. You can add a **Display name** and **Description**.
 
-1. Select **Save topic** to add the topic to the topics list.
+   The display name is used when the bot needs to ask the person chatting which topic they're asking about.
+
+   The description is never shown to users. Use the description to describe the purpose of the topic to yourself and other bot makers.
+
+   :::image type="content" source="../media/authoring-create-edit-topics/details-pane.png" alt-text="The Topic details pane contains a name, display name, and description":::
+
+   You can also rename the topic by selecting its name and entering a new value.
+
+   :::image type="content" source="../media/authoring-create-edit-topics/rename-topic-shortcut.png" alt-text="Quickly rename a topic by selecting its name":::
+
+1. Select **Save** to add the topic to the topics list.
 
 ## Design the topic's conversation path
 
-A topic's conversation path is how the bot will respond to a person's questions and responses. It consists of special "nodes" that prompt the person with questions or answers. When the bot receives responses to the questions, it determines whether to provide an answer or look for another topic.
+1. In the topic list, select the topic you want to edit.
 
-1. In the topic details for the topic you want to edit, select **Go to authoring canvas**.
-
-   :::image type="content" source="media/topics-details-canvas-teams.png" alt-text="The Go to authoring canvas is to the side of the trigger phrases.":::
+   :::image type="content" source="../media/topics-details-canvas.png" alt-text="Selecting a topic will take you to the authoring canvas":::
 
 1. Power Virtual Agents opens the topic in the authoring canvas and displays the topic's trigger phrases. The authoring canvas is where you define the conversation path between a customer and the bot.
 

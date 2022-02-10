@@ -2,7 +2,7 @@
 title: "Use lesson topics to understand capabilities"
 description: "Use specific template topics to understand the capabilities when authoring topics for use in Power Virtual Agents bots."
 keywords: "PVA"
-ms.date: 9/22/2020
+ms.date: 01/06/2022
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -23,7 +23,7 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](authoring-template-topics.md)
 > - [Power Virtual Agents app in Microsoft Teams](teams/authoring-template-topics-teams.md)
 
-Power Virtual Agents includes a set of four lessons from which you can see examples of topics. These range from simple to complex scenarios that leverage the use of [conditional branching](authoring-create-edit-topics.md) and [custom entities](advanced-entities-slot-filling.md).
+Power Virtual Agents includes a set of four lessons from which you can see examples of topics. These lessons range from simple to complex scenarios that use [conditional branching](authoring-create-edit-topics.md) and [custom entities](advanced-entities-slot-filling.md).
 
 ## Prerequisites
 
@@ -31,9 +31,9 @@ Power Virtual Agents includes a set of four lessons from which you can see examp
 
 ## Access and use lesson topics for new bots
 
-When a bot is created, a number of lessons are automatically created as topics.
+When a bot is created, several lessons are automatically created as topics.
 
-While the topics are functional, they are examples for the purposes of learning how to create content for your bots and are not designed for production use.
+While the topics are functional, they are examples for the purposes of learning how to create content for your bots. The topics aren't designed for production use.
 
 **Use lesson topics to understand how topics work:**
 
@@ -41,7 +41,7 @@ While the topics are functional, they are examples for the purposes of learning 
 
 1. Select **Lesson 1** and work through to **Lesson 4**. Review the title and description, and see what trigger phrases are being used.  
 
-1. Select **Go to authoring canvas** on each topic's details page to see the bot's flow; including the bot's comments, expected user responses, decision points, and entity references.
+1. To see the bot's flow, select each topic. The flow includes the bot's comments, expected user responses, decision points, and entity references.
 
    :::image type="content" source="media/template-list.png" alt-text="List of lesson topics." border="false":::
 
@@ -62,9 +62,9 @@ This lesson shows you how to create a simple topic with one conditional branch.
 
 This lesson shows you how you can create a simple topic with one conditional branch and [a variable](authoring-variables.md).
 
-A variable is a name for an item which will be used later in the topic flow. In this example, `pva_StoreLocation` is the variable to store the user's response when you ask for their preferred store location.
+A variable is a name for an item that will be used later in the topic flow. In this example, `pva_StoreLocation` is the variable to store the user's response when you ask for their preferred store location.
 
-### Lesson 3 - A topic with a conditions, variables and a pre-built entity
+### Lesson 3 - A topic with a conditions, variables, and a pre-built entity
 
 This lesson shows you how you can create a simple topic with one conditional branch, [a variable](authoring-variables.md), and [an entity](advanced-entities-slot-filling.md).
 
@@ -74,7 +74,7 @@ For example, if you type "I want to buy a red car," the bot doesn't need to ask 
 
 In this lesson, the bot uses the State entity and will recognize any US state the user enters.
 
-### Lesson 4 - A topic with conditions, variables and a custom entity
+### Lesson 4 - A topic with conditions, variables, and a custom entity
 
 This lesson shows a topic with a conditional branch, [a variable](authoring-variables.md), and [a custom entity](advanced-entities-slot-filling.md#custom-entities).
 
