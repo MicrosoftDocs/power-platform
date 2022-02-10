@@ -70,6 +70,7 @@ During solution import, you'll configure environment variable values. Make sure 
 |PowerApp Maker environment variable | The URL used byA the Power Apps maker portal for your cloud, including the trailing slash. <br> For an environment in the commercial cloud: <https://make.powerapps.com/> <br>For a GCC, GCC High, or DoD environment, check [Power Apps US Government service URLs](/power-platform/admin/powerapps-us-government#power-apps-us-government-service-urls). |
 |PowerApp Player environment variable | The URL used by the Power Apps player for your cloud, including the trailing slash.<br> For an environment in the commercial cloud: <https://apps.powerapps.com/> <br> For a GCC environment: <https://apps.gov.powerapps.us/> <br>For a GCC High environment: <https://apps.gov.powerapps.us/> <br>For a DoD environment: <https://play.apps.appsplatform.us> |
 | TenantID | Your Azure tenant ID.|
+| FullInventory | FullInventory is set to No by default which results in the sync flows only updating resources that have been modified in the past week. For the initial install of the Core components and running of the sync flows you should have FullInventory set to **Yes**. This will update all resources. |
 
 ## Import the core components solution
 
@@ -133,8 +134,6 @@ The Admin \| Sync Template flows part of this solution crawl through all the res
 >
 > Learn more: [Power Automate performance profiles](/power-automate/limits-and-config#performance-profiles) and [Concurrency looping and pagination limits](/power-automate/limits-and-config#concurrency-looping-and-debatching-limits)
 
-And hence our requirements for licenses as described in our  
-
 - Admin | Sync Template v3 (Apps)
 - Admin | Sync Template v3 (Custom Connectors)
 - Admin | Sync Template v3 (Desktop Flow - Runs)
@@ -151,6 +150,11 @@ And hence our requirements for licenses as described in our
 - CLEANUP - Admin | Sync Template v3 (Delete Bad Data)
 - CLEANUP - Admin | Sync Template v3 (Orphaned Makers)
 - CLEANUP - Admin | Sync Template v3 (Power Apps User Shared With)
+
+After the Admin | Sync flows have all completed, update the FullInventory envrionment variable to No:
+1. Set the Full inventory environment variable back to **No**.
+1. Turn all  Admin | Sync flows in the core solution off and back on.
+
 
 >[!NOTE]
 > To load-balance queries against Dataverse, the Admin | Sync Template v3 flow implements a delay between 0 and 12 hours before starting to collect the inventory. This flow therefore might appear to be running for a long time.
