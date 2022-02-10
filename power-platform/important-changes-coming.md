@@ -214,8 +214,14 @@ It is our goal to deliver a powerful bot experience that allows users to retriev
 
 ## Dynamics 365 Connector is deprecated
 
-Effective May 5, 2020 the [Dynamics 365 connector](/connectors/dynamicscrmonline/) used for Flows, Logic Apps, and Canvas Apps is officially deprecated. We recommend that you don't create new connections using this connector.
+Effective May 5, 2020 the [Dynamics 365 connector](/connectors/dynamicscrmonline/) used for Flows, Logic Apps, and Canvas Apps is officially deprecated. We recommend that you don't create new connections using this connector. 
 
+#### Impact
+Starting April 29, 2022, no new connections can be created for Flows, Logic Apps, and Canvas Apps using the Dynamics 365 connector. Existing connections will continue to work until they are edited, at which time an alternate connector as listed below is required.
+
+On July 28th 2022, all existing uses of the Dynamics 365 connector for Flows, Logic Apps, and Canvas Apps will be disabled. At that time, you must migrate to using one of the options outlined below.
+
+#### Action required by you
 Rather than use the Dynamics 365 connector, the [Microsoft Dataverse connector](/connectors/commondataserviceforapps/) should be your first choice *if you can use it*. You may not be able to use the Microsoft Dataverse connector in every situation today because of the following limitations:
 
 - It isn't available in Logic Apps.
@@ -226,7 +232,6 @@ If you cannot use the Microsoft Dataverse connector, you should use the [Microso
 
 The Microsoft Dataverse connector represents the future for connections using Dataverse. This includes Dynamics 365 apps using Dataverse. Work is underway to make this connector the only connector you will need. But at the current time, the previously mentioned limitations mean that you can't use it in all places where the Dynamics 365 connector or Microsoft Dataverse (legacy) connector can be used today.
 
-At this time, there's no requirement to convert canvas apps, flows, or logic apps to stop using the Dynamics 365 connector because of the known blocking limitations. But you should stop creating new connections with the Dynamics 365 connector and convert them if you can.
 
 |Type|Guidance|
 |---------|---------|
