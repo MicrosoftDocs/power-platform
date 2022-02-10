@@ -103,7 +103,7 @@ To specify a flow to accept input parameters from a bot, select the **Add an inp
 
 :::image type="content" source="media/PVAConnector_Inputs_1.JPG" alt-text="Power Virtual Agents trigger input types." border="false":::
 
-For example, you can select **Text** and **Number** to add the following input parameters to the flow:
+For example, select **Text** and **Number** to add the following input parameters to the flow:
 
 - **String_Input** of type `string`
 - **Number_Input** of type `number`
@@ -116,7 +116,7 @@ To return output parameters to the bot that can be a `string`, `number`, or a `b
 
 :::image type="content" source="media/PVAConnector_Output_1.JPG" alt-text="Power Virtual Agents response output types." border="false":::
 
-For example, you can select **Text** and **Number** to add the following output parameters to the flow and assign return values for them.
+For example, select **Text** and **Number** to add the following output parameters to the flow and assign return values for them.
 
 - **String_Output** of type `string`
 - **Number_Output** of type `number`
@@ -135,7 +135,7 @@ Your flow is saved to the **Default Solution** under the **Solutions** tab on th
 
 ## Optionally move a flow from Default Solution to another solution
 
-To be available to your bots, flows must be stored in a solution in Power Automate. If you do not want to use the **Default Solution** for this purpose, you can move your flows to another solution.
+To be available to your bots, flows must be stored in a solution in Power Automate. If you don't want to use the **Default Solution** for this purpose, you can move your flows to another solution.
 
 1. On the Power Automate portal, go to the **Solutions** tab where you can see the available solutions. Use any of the existing solutions or create a new solution for your flows.
 
@@ -161,7 +161,7 @@ To be available to your bots, flows must be stored in a solution in Power Automa
 
 ## Modify a flow on the Power Virtual Agents authoring canvas
 
-Using the node's context menu, you will see the following options to manage the flow in your dialog:
+Using the node's context menu, you'll see the following options to manage the flow in your dialog:
 
 :::image type="content" source="media/advanced-flow/advanced-flow-nodemanage.png" alt-text="Modify flow from the authoring canvas.":::
 
@@ -333,9 +333,9 @@ While testing your bot in the **Test bot** pane, you can use the **Save snapshot
 
         :::image type="content" source="media/conversation-file.png" alt-text="Conversational diagnostics file.":::
 
-    2. *botContent.json* contains the bot's topics and other content, including entities and variables used in the bot.
+    1. *botContent.json* contains the bot's topics and other content, including entities and variables used in the bot.
 
-You can help us improve Power Virtual Agents by flagging issues with the **Flag an issue** command on the test bot pane. This submits your conversation ID to Microsoft, which is a unique identifier that Microsoft uses to troubleshoot the issue of the conversation. Other information, such as that in the *DSAT.zip* file, is not sent when you flag an issue.
+Help us improve Power Virtual Agents by flagging issues with the **Flag an issue** command on the test bot pane. This submits your conversation ID to Microsoft, which is a unique identifier that Microsoft uses to troubleshoot the issue of the conversation. Other information, such as that in the *DSAT.zip* file, is not sent when you flag an issue.
 
 :::image type="content" source="media/flag-issue.png" alt-text="Flag an issue.":::
 
