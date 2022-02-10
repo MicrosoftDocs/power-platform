@@ -67,11 +67,11 @@ You can edit both of these topic types in the same manner as for topics you crea
 
 1. Go to the **Topics** tab on the side navigation pane to open the topics page.
 
-   :::image type="content" source="../media/topics-menu.png" alt-text="Select Topics on the side navigation menu." border="false":::
+   :::image type="content" source="../media/authoring-create-edit-topics/topics-menu.png" alt-text="Select Topics on the side navigation menu." border="false":::
 
 1. On the topics page, select **New topic** to open the authoring canvas for an empty topic.
 
-   :::image type="content" source="../media/topics-new.png" alt-text="Select New topic at the top of the Topics page." border="false":::
+   :::image type="content" source="../media/authoring-create-edit-topics/topics-new.png" alt-text="Select New topic at the top of the Topics page." border="false":::
 
 1. When you enter the authoring canvas, the **Trigger phrases** pane will automatically open for you. You can also open the pane by selecting **Trigger phrases**.
 
@@ -81,7 +81,7 @@ You can edit both of these topic types in the same manner as for topics you crea
 
    A trigger phrase is a phrase that a customer enters in the chat window to start a conversation with the bot. Once the conversation is started, the conversation follows the path you define. You can specify more than one trigger phrase for a topic. You can include punctuation in a trigger phrase, but it's best to use short phrases rather than long sentences.
 
-    :::image type="content" source="../media/topics-details-triggers.png" alt-text="Edit trigger phrases in the trigger phrases pane":::
+    :::image type="content" source="../media/authoring-create-edit-topics/topics-details-triggers.png" alt-text="Edit trigger phrases in the trigger phrases pane":::
 
 1. Select **Details**.
 

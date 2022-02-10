@@ -74,7 +74,7 @@ These topics fall into two categories:
 
    A trigger phrase is a phrase that a customer enters in the chat window to start a conversation with the bot. Once the conversation is started, the conversation follows the path you define. You can specify more than one trigger phrase for a topic. You can include punctuation in a trigger phrase, but it is best to use short phrases rather than long sentences.
 
-    :::image type="content" source="media/topics-details-triggers.png" alt-text="Edit trigger phrases in the trigger phrases pane":::
+    :::image type="content" source="media/authoring-create-edit-topics/topics-details-triggers.png" alt-text="Edit trigger phrases in the trigger phrases pane":::
 
 1. Select **Details**.
 
@@ -100,7 +100,7 @@ These topics fall into two categories:
 
 1. In the topic list, select the topic you want to edit.
 
-   :::image type="content" source="media/topics-details-canvas.png" alt-text="Selecting a topic will take you to the authoring canvas":::
+   :::image type="content" source="media/authoring-create-edit-topics/topics-details-canvas.png" alt-text="Selecting a topic will take you to the authoring canvas":::
 
 1. Power Virtual Agents opens the topic in the authoring canvas and displays the topic's trigger phrases. The authoring canvas is where you define the conversation path between a customer and the bot.
 

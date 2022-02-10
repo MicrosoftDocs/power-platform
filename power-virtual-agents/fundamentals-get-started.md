@@ -72,7 +72,7 @@ In addition to this guide, you can also [download and use templates to help you 
 
 2. Start by selecting **Topics** in the side navigation pane, and then select **New topic** at the top of the page.
 
-    :::image type="content" source="media/topics-new.png" alt-text="New topic." border="false":::
+    :::image type="content" source="media/fundamentals-get-started/topics-new.png" alt-text="New topic." border="false":::
 
 3.  You can now name your topic and include some trigger phrases for this topic. Trigger phrases are examples of the type of user questions or utterances that help teach the bot when to respond with this dialog. 
     
@@ -84,7 +84,7 @@ In addition to this guide, you can also [download and use templates to help you 
 
    Start by entering 'Hello! I'll create a personalized greeting for you.' into the first **Message** node. 
    
-    :::image type="content" source="media/quickstart-add-node.png" alt-text="Add node." border="false":::
+    :::image type="content" source="media/fundamentals-get-started/quickstart-add-node.png" alt-text="Add node." border="false":::
 
 5. Then, click on the **+** below the node, and add an **Ask a question** node by selecting it in the menu. Enter the question text, 'Where do you live?', in the **Ask a question** box. To give the customer a choice between different responses, select **Multiple choice options** under **Identify**.
     
