@@ -18,7 +18,11 @@ search.app:
 ---
 # Power Platform URLs and IP address ranges
 
-If certain IP addresses or URLs are blocked in your browsers or network security devices, users might not be able to reach Microsoft Dynamics 365 environments. Blocked IPs can also impact connecting Dynamics 365 apps to [Microsoft Exchange Server (on-premises)](connect-exchange-server-on-premises.md). See the following:
+If certain URLs or IP addresses are blocked in your browser or network security devices, users might not be able to reach Microsoft Dynamics 365 apps or environments.
+
+## IP addresses required
+
+See the following:
 
 - [Azure IP Ranges and Service Tags – Public Cloud](https://www.microsoft.com/download/details.aspx?id=56519)
 - [Azure IP Ranges and Service Tags – US Government Cloud](https://www.microsoft.com/download/details.aspx?id=57063)
@@ -30,10 +34,12 @@ If certain IP addresses or URLs are blocked in your browsers or network security
 >
 > [!div class="mx-imgBorder"] 
 > ![AzureCloud service tag for region IPs.](media/example-azurecloud-tag.png "AzureCloud service tag for region IPs")
+  
+Blocked IPs can also impact connecting Dynamics 365 apps to [Microsoft Exchange Server (on-premises)](connect-exchange-server-on-premises.md). 
+
+## Internet accessible URLs required
 
 Dynamics 365 apps use several Microsoft URLs to help provide security, services, and features. Blocking any of the required URLs will cause apps in Dynamics 365 to operate incorrectly or not at all. See: [Troubleshooting: Unblock required URLs](troubleshooting-unblock-urls-required.md).
-  
-## Internet accessible URLs required
 
 If you cannot access Microsoft Dynamics 365 apps, or specific URLs fail to load when you use Microsoft Dynamics 365 apps, a proxy or firewall might be configured to prevent  Dynamics 365 URLs from accessing server resources.
 
