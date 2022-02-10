@@ -14,9 +14,6 @@ searchScope:
   - "Power Virtual Agents"
 ---
 
-
-
-
 # Power Virtual Agents web app
 
 Select the version of Power Virtual Agents you're using here:
@@ -78,14 +75,10 @@ Microsoft Power Virtual Agents (1) is not intended or made available as a medica
 
 ## Helpful links
 
-[Create your first bot](authoring-first-bot.md)
-
-[Create and edit topics](authoring-create-edit-topics.md)
-
-[Enhance your bot](advanced-fundamentals.md)
-
-[Publish your bot](publication-fundamentals-publish-channels.md)
-
-[Using analytics to improve your bot](analytics-overview.md)
+- [Create your first bot](authoring-first-bot.md)
+- [Create and edit topics](authoring-create-edit-topics.md)
+- [Enhance your bot](advanced-fundamentals.md)
+- [Publish your bot](publication-fundamentals-publish-channels.md)
+- [Using analytics to improve your bot](analytics-overview.md)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

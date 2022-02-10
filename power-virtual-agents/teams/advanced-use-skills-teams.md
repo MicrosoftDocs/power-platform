@@ -12,7 +12,6 @@ ms.custom: "Azure, advanced-authoring, ceX, teams"
 ms.collection: virtual-agent
 ---
 
-
 # Use Microsoft Bot Framework skills in Power Virtual Agents in Teams
 
 Select the version of Power Virtual Agents you're using here:

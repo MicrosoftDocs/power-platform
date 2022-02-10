@@ -95,9 +95,9 @@ GET /api/botmanagement/v1/directline/directlinetoken
 ```
 
 | Query Parameter | Required |
-| --- | --- |
-| `botId` | yes
-| `tenantId` | yes |
+| --------------- | -------- |
+| `botId`         | yes      |
+| `tenantId`      | yes      |
 
 Example:
 

@@ -8,10 +8,9 @@ ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.cusom: analysis, ceX
+ms.custom: analysis, ceX
 ms.collection: virtual-agent
 ---
-
 
 # Analyze session information in Power Virtual Agents
 
@@ -48,13 +47,9 @@ Lastly, you can manage the retention period for transcripts. This can be useful 
 The downloaded file contains the following information:
 
 - SessionID: A unique identifier per session.
-
 - StartDateTime: Time at which the session started. Entries are sorted by this column in descending order.
-
 - InitialUserMessage: First message typed by the user.
-
 - TopicName: Name of the last authored topic that was triggered in this session.
-
 - ChatTranscript: Transcript of the session in the following format:
   - ***User says:**" "; **Bot says:**" ";* structure
   - Conversation turns are separated by semicolons
@@ -153,7 +148,6 @@ The following instructions describe how to set a job to delete transcripts that 
 
     - Set **ConversationStartTime** as **Older Than X Months** to **12**.  
     This will keep the transcripts for 12 months
-
     - Set **SchemaType** as **equals** to **powervirtualagents**.
 
         :::image type="content" source="media/sessions-schema.png" alt-text="A popup window showing options to configure the job.":::

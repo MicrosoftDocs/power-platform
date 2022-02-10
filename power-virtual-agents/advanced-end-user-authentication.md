@@ -39,12 +39,12 @@ If your bot is configured with either "Only for Teams" or "Manual" authenticatio
 
 The following table compares authentication variable availability by authentication configuration option:
 
-| Authentication Variable | No Authentication | Only for Teams | Manual |
-| --- | :---: | :---: | :---: |
-| ```UserDisplayName``` | :x: | :heavy_check_mark: | :heavy_check_mark: |
-| ```UserID```          | :x: | :heavy_check_mark: | :heavy_check_mark: |
-| ```IsLoggedIn```      | :x: | :x: | :heavy_check_mark: |
-| ```AuthToken```       | :x: | :x: | :heavy_check_mark: |
+| Authentication Variable | No Authentication |   Only for Teams   |       Manual       |
+| ----------------------- | :---------------: | :----------------: | :----------------: |
+| ```UserDisplayName```   |        :x:        | :heavy_check_mark: | :heavy_check_mark: |
+| ```UserID```            |        :x:        | :heavy_check_mark: | :heavy_check_mark: |
+| ```IsLoggedIn```        |        :x:        |        :x:         | :heavy_check_mark: |
+| ```AuthToken```         |        :x:        |        :x:         | :heavy_check_mark: |
 
 ### UserDisplayName variable
 
@@ -87,10 +87,10 @@ The following table lists the commands that will populate these variables. Enter
 
 If you reset the **Test bot** pane (or you make changes to a topic that cause the **Test bot** to reset automatically), you will need to send the commands again.
 
-Variable | Custom value command | Empty (blank) value command
--- | -- | --
-`UserDisplayName` | ```/debug set bot.UserDisplayName "Value"``` | ```/debug set bot.UserDisplayName ""```
-`UserID` | Not available | ```/debug set bot.UserID ""```
+| Variable          | Custom value command                         | Empty (blank) value command             |
+| ----------------- | -------------------------------------------- | --------------------------------------- |
+| `UserDisplayName` | ```/debug set bot.UserDisplayName "Value"``` | ```/debug set bot.UserDisplayName ""``` |
+| `UserID`          | Not available                                | ```/debug set bot.UserID ""```          |
 
 > [!IMPORTANT]
 > You can't populate the `UserID` variable with a custom value (other than an empty or blank value) due to security reasons.

@@ -45,17 +45,13 @@ More information: [Licensing guide](https://go.microsoft.com/fwlink/?linkid=2085
 Purchase licenses for your organization by going to the [Microsoft 365 admin center](https://admin.microsoft.com/admin/default.aspx). You'll need to sign in with an admin account to buy licenses.
 
 1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/admin/default.aspx) and sign in with your admin account.
-
 1. On the side pane, expand the **Billing** menu, and then select **Purchase services**.
-
 1. Search for **Power Virtual Agent**, and complete the checkout process.
 
 ## Acquire user licenses
 
 1. After you've purchased a Power Virtual Agents license from the Microsoft 365 admin center, you need to purchase user licenses to give users access to the product. In the Microsoft 365 admin center, go to **Billing**, and then select **Purchase services**.
-
 1. Scroll down to the **Add-ons** section.
-
 1. Look for **Power Virtual Agent User License**. Select the number of licenses you need, and complete the checkout process.
 
 > [!IMPORTANT]

@@ -168,7 +168,7 @@ The following steps require you to add code that registers your new dispatch end
 
 1. Update `appsettings.json` in your dispatcher app to include the new endpoint for your Power Virtual Agents bot.
   
-    ```csharp
+    ```json
     {
       "DynamicsBotId": "<Bot Id>",
       "DynamicsBotTenantId": "<Tenant Id>",

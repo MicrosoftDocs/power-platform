@@ -12,8 +12,6 @@ ms.custom: authoring, ceX, teams
 ms.collection: virtual-agent
 ---
 
-
-
 # Use lesson topics in Power Virtual Agents in Teams
 
 Select the version of Power Virtual Agents you're using here:

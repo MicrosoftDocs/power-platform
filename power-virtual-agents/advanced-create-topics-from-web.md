@@ -12,7 +12,6 @@ ms.custom: authoring, ceX
 ms.collection: virtual-agent
 ---
 
-
 # Create topics from existing online support content
 
 Select the version of Power Virtual Agents you're using here:
@@ -126,7 +125,6 @@ The Power Virtual Agents AI engine applies a number of steps to the content when
 
 After the extraction process has been completed, the topic suggestions appear on the **Suggested** tab. Review them individually to decide which ones you want to include in your bot. You can also add suggestions without reviewing them.
 
-
 1. Select the name of the suggested topic.  
 
 1. Review the trigger phrase and suggested **Message** node. (Each topic will end with a survey, so your customers can let you know whether they found it helpful.) You have the following three options for dealing with the topic:  
@@ -152,7 +150,6 @@ After the extraction process has been completed, the topic suggestions appear on
 ## Enable topics in your bot
 
 Suggested topics are added to the **Existing** tab with their status set to **Off**. This way, topics won't be prematurely added to your bot.
-
 
 1. Select **Topics** on the side pane.
 

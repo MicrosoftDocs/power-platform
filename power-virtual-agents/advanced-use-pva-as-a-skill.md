@@ -132,7 +132,7 @@ Selecting either manifest will download them as a .zip file labeled *\<bot name\
 :::image type="content" source="media/advanced-use-pva-as-a-skill/Manifests_Zip.png" alt-text="Power Virtual Agents - Downloaded Test and Published Manifests.":::
 
 > [!NOTE]
->  System topics and Composer dialogs added to a Power Virtual Agents bot will not be included in the skill manifest. Only user-created topics and Composer intent triggers added to the bot will be added to the Power Virtual Agents bot skill manifest.
+> System topics and Composer dialogs added to a Power Virtual Agents bot will not be included in the skill manifest. Only user-created topics and Composer intent triggers added to the bot will be added to the Power Virtual Agents bot skill manifest.
 
 ## Connect to a Power Virtual Agents skill in Composer
 

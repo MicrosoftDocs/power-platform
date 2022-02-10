@@ -48,37 +48,37 @@ The base type defines the operators that can be used for the corresponding varia
 
 For example, a **boolean** base type maps to an operator "is equal to" with possible values being true or false, while a **number** base type will give you a series of numeric operators such as "is equal to", "is greater than", or "is greater than or equal to", and so on.
 
- Entity | Variable Base Type
- ---|---
- Multiple choice options | String
- User's entire response | String
- Age | Number
- Boolean | Boolean
- City | String
- Color | String
- Continent | String
- Country or region | String
- Date and time | String
- Duration | String
- Email | String
- Event | String
- Language | String
- Money | String
- Number | String
- Ordinal | String
- Organization | String
- Percentage | Number
- Person name | String
- Phone number | String
- Point of interest | String
- Speed | Number
- State | String
- Street address | String
- Temperature | Number
- URL | String
- Weight | Number
- Zip code | String
- Custom entity | String
+ | Entity                  | Variable Base Type |
+ | ----------------------- | ------------------ |
+ | Multiple choice options | String             |
+ | User's entire response  | String             |
+ | Age                     | Number             |
+ | Boolean                 | Boolean            |
+ | City                    | String             |
+ | Color                   | String             |
+ | Continent               | String             |
+ | Country or region       | String             |
+ | Date and time           | String             |
+ | Duration                | String             |
+ | Email                   | String             |
+ | Event                   | String             |
+ | Language                | String             |
+ | Money                   | String             |
+ | Number                  | String             |
+ | Ordinal                 | String             |
+ | Organization            | String             |
+ | Percentage              | Number             |
+ | Person name             | String             |
+ | Phone number            | String             |
+ | Point of interest       | String             |
+ | Speed                   | Number             |
+ | State                   | String             |
+ | Street address          | String             |
+ | Temperature             | Number             |
+ | URL                     | String             |
+ | Weight                  | Number             |
+ | Zip code                | String             |
+ | Custom entity           | String             |
 
 ## Create a variable
 

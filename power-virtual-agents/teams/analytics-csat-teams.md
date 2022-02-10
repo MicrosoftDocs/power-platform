@@ -8,7 +8,7 @@ ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.cusom: analysis, ceX, teams
+ms.custom: analysis, ceX, teams
 ms.collection: virtual-agent
 ---
 
@@ -23,10 +23,12 @@ Select the version of Power Virtual Agents you're using here:
 
 You can see how well your topics are being received in the Customer satisfaction (CSAT) charts:
 
-- [Customer satisfaction drivers chart](#customer-satisfaction-drivers-chart)
-- [Scores over time chart](#scores-over-time-chart)
-- [Average CSAT score](#average-csat-score-chart)
-- [CSAT survey response rate](#csat-survey-response-rate-chart)
+- [Analyze customer satisfaction for Power Virtual Agents bots in Teams](#analyze-customer-satisfaction-for-power-virtual-agents-bots-in-teams)
+  - [Prerequisites](#prerequisites)
+  - [Customer satisfaction drivers chart](#customer-satisfaction-drivers-chart)
+  - [Scores over time chart](#scores-over-time-chart)
+  - [Average CSAT score chart](#average-csat-score-chart)
+  - [CSAT survey response rate chart](#csat-survey-response-rate-chart)
 
 To change the time period to the last 30 days, select **Last 30 days** from the drop-down list at the top of the page.
 
@@ -36,15 +38,15 @@ To change the time period to the last 30 days, select **Last 30 days** from the 
 
 ## Customer satisfaction drivers chart
 
-Description | Details
------------ | -------
-Topic | A Power Virtual Agents topic.
-Engaged sessions | The number of engaged sessions for the topic within the specified time period.
-Resolution rate | The percentage of engaged sessions for the topic that are resolved. A resolved session is an engaged session in which the user receives an end-of-conversation survey and either does not respond or responds **Yes**.
-Abandon rate | The percentage of engaged sessions for the topic that are abandoned. An abandoned session is an engaged session that is neither resolved nor escalated after one hour from the beginning of the session.
-Escalation rate | The percentage of engaged sessions for the topic that are escalated. An escalated session is an engaged session that is escalated to a human agent.
-Avg CSAT | The average CSAT survey score for the topic.
-Impact | The topic's customer-satisfaction impact score. The customer-satisfaction impact score is the overall average CSAT survey score including the topic minus the overall average CSAT survey score excluding the topic.
+| Description      | Details                                                                                                                                                                                                                |
+| ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Topic            | A Power Virtual Agents topic.                                                                                                                                                                                          |
+| Engaged sessions | The number of engaged sessions for the topic within the specified time period.                                                                                                                                         |
+| Resolution rate  | The percentage of engaged sessions for the topic that are resolved. A resolved session is an engaged session in which the user receives an end-of-conversation survey and either does not respond or responds **Yes**. |
+| Abandon rate     | The percentage of engaged sessions for the topic that are abandoned. An abandoned session is an engaged session that is neither resolved nor escalated after one hour from the beginning of the session.               |
+| Escalation rate  | The percentage of engaged sessions for the topic that are escalated. An escalated session is an engaged session that is escalated to a human agent.                                                                    |
+| Avg CSAT         | The average CSAT survey score for the topic.                                                                                                                                                                           |
+| Impact           | The topic's customer-satisfaction impact score. The customer-satisfaction impact score is the overall average CSAT survey score including the topic minus the overall average CSAT survey score excluding the topic.   |
 
 The chart displays the impact as a red or blue bar. A red bar indicates that the topic's average CSAT survey score is lower than the average CSAT survey score, resulting in a negative impact on the overall average CSAT survey score. A blue bar indicates that the average CSAT survey score is higher, resulting in a positive impact on the overall average CSAT survey score.
 

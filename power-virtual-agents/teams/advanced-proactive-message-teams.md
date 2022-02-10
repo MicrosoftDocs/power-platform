@@ -235,11 +235,11 @@ The **If bot not installed** field allows you to control the behavior:
 
 You can use the returned status code to define different follow-up behaviors in your flow. For example, you could specify that the flow should try again over a period of time or log a record about the failure.
 
-| Status code | Succeeded (boolean) | Description |
-| - | - | - |
-| 200 | True | Message or card is successfully delivered. |
-| 100 | False | Message or card couldn't be delivered because the recipient doesn't have the bot installed. |
-| 300 | False | Message or card couldn't be delivered because the recipient is in an active conversation with the bot. |
+| Status code | Succeeded (boolean) | Description                                                                                            |
+| ----------- | ------------------- | ------------------------------------------------------------------------------------------------------ |
+| 200         | True                | Message or card is successfully delivered.                                                             |
+| 100         | False               | Message or card couldn't be delivered because the recipient doesn't have the bot installed.            |
+| 300         | False               | Message or card couldn't be delivered because the recipient is in an active conversation with the bot. |
 
 ## Known limitations
 

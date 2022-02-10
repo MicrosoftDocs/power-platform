@@ -59,12 +59,12 @@ You use solutions to export bots from one environment and import them into anoth
 
     :::image type="content" source="media/export-new-solution.png" alt-text="New solution button highlighted." border="false":::
 
-    Field | Description
-    -- | --
-    Display name | The name that is shown in the list of solutions. You can change this later.
-    Name | The unique name of the solution. This is generated using the value you enter in the **Display name** field. You can edit this before you save the solution, but after you save the solution, you can’t change it.
-    Publisher | You can select the default publisher or create a new publisher. We recommend that you create a publisher that you can use consistently across the environments where you'll use the solution. For more information, go to [Solution publisher overview](/powerapps/maker/common-data-service/change-solution-publisher-prefix).
-    Version | Enter a number for the version of your solution. This is only important if you export your solution. The version number will be included in the file name when you export the solution.
+    | Field        | Description                                                                                                                                                                                                                                                                                                                     |
+    | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+    | Display name | The name that is shown in the list of solutions. You can change this later.                                                                                                                                                                                                                                                     |
+    | Name         | The unique name of the solution. This is generated using the value you enter in the **Display name** field. You can edit this before you save the solution, but after you save the solution, you can’t change it.                                                                                                               |
+    | Publisher    | You can select the default publisher or create a new publisher. We recommend that you create a publisher that you can use consistently across the environments where you'll use the solution. For more information, go to [Solution publisher overview](/powerapps/maker/common-data-service/change-solution-publisher-prefix). |
+    | Version      | Enter a number for the version of your solution. This is only important if you export your solution. The version number will be included in the file name when you export the solution.                                                                                                                                         |
 
 ### Add your bot to the solution
 
@@ -113,10 +113,10 @@ You export and import bots by exporting and importing their containing solutions
 
 1. The **Export this solution** pane appears. Enter or select from the following options, and then select **Export**:
 
-    Option | Description
-    - | -
-    Version number | Power Virtual Agents automatically increments your solution version while displaying the current version. You can accept the default version or enter your own.
-    Export as | Select the package type, either **Managed** or **Unmanaged**. Learn more about [managed and unmanaged solutions](/power-platform/alm/solution-concepts-alm#managed-and-unmanaged-solutions).
+    | Option         | Description                                                                                                                                                                                  |
+    | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+    | Version number | Power Virtual Agents automatically increments your solution version while displaying the current version. You can accept the default version or enter your own.                              |
+    | Export as      | Select the package type, either **Managed** or **Unmanaged**. Learn more about [managed and unmanaged solutions](/power-platform/alm/solution-concepts-alm#managed-and-unmanaged-solutions). |
 
 The export can take several minutes to complete. Once finished, a .zip file will be downloaded by your web browser. The file will be in the format `SolutionName_Version_ManagementType.zip`.
 

@@ -50,30 +50,30 @@ When you've created your own topic in the target language, you can test the bot 
 
 Power Virtual Agents supports languages in three stages. The stage indicates how well the bot can understand user input in that language, with general availability being the strongest, followed by preview, and then experimental.
 
-| Language | Support |
-| ---- | -----------|  
-|Chinese (Simplified)        | Preview |
-|Chinese (Traditional)       | Preview |
-|Danish                      | General availability |
-|Dutch                       | General availability |
-|English                     | General availability |
-|French                      | General availability |
-|German                      | General availability |
-|Hindi                       | Preview |
-|Indonesian                  | General availability |
-|Italian                     | General availability |
-|Japanese                    | General availability |
-|Korean                      | Preview |
-|Norwegian                   | General availability |
-|Polish                      | Preview |
-|Portuguese (Brazilian)      | General availability |
-|Russian                     | General availability |
-|Spanish                     | General availability |
-|Swedish                     | General availability |
-|Turkish                     | General availability |
+| Language               | Support              |
+| ---------------------- | -------------------- |
+| Chinese (Simplified)   | Preview              |
+| Chinese (Traditional)  | Preview              |
+| Danish                 | General availability |
+| Dutch                  | General availability |
+| English                | General availability |
+| French                 | General availability |
+| German                 | General availability |
+| Hindi                  | Preview              |
+| Indonesian             | General availability |
+| Italian                | General availability |
+| Japanese               | General availability |
+| Korean                 | Preview              |
+| Norwegian              | General availability |
+| Polish                 | Preview              |
+| Portuguese (Brazilian) | General availability |
+| Russian                | General availability |
+| Spanish                | General availability |
+| Swedish                | General availability |
+| Turkish                | General availability |
 
 ### See also
 
-[Data locations for organizations using Power Virtual Agents](data-location.md)
+- [Data locations for organizations using Power Virtual Agents](data-location.md)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -126,7 +126,6 @@ The following example uses samples from the [relay bot sample code](https://gith
 
     ```C#
     Dictionary<string, PowerVirtualAgentsConversation> ConversationRouter = new Dictionary<string, PowerVirtualAgentsConversation>();  
-    
     ```
 
     To manage the conversation lifecycle, refresh the Direct Line tokens or clean up idled conversations. Learn more about token refresh at [Refresh Direct Line token](publication-connect-bot-to-custom-application.md#refresh-direct-line-token). A Power Virtual Agents conversation to support those is defined as following:

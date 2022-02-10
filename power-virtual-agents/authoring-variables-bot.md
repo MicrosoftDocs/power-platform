@@ -130,9 +130,7 @@ In the examples described here, a simple declaration is made for the variables. 
 1. Append the variables and their definitions to the bot's URL as [query string parameters](https://en.wikipedia.org/wiki/Query_string) (in the format of `botURL?variableName1=variableDefinition1&variableName2=variableDefinition2`), for example:
 
     - You have a bot variable named `bot.UserName`.
-
     - Your bot's URL is *https://web.powerva.microsoft.com/webchat/bots/12345*.
-
     - To pass in the user name when starting a bot conversation on a website, you can attach the `UserName=` query string as: *https://web.powerva.microsoft.com/webchat/bots/12345?UserName=Renata*.
 
 1. The parameter name is case-insensitive. This means `username=Renata` will also work in this example.

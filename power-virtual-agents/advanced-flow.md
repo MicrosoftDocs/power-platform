@@ -12,9 +12,6 @@ ms.custom: flow, ceX, advanced-authoring
 ms.collection: virtual-agent
 ---
 
-
-
-
 # Add actions to a bot using Power Automate
 
 Select the version of Power Virtual Agents you're using here:

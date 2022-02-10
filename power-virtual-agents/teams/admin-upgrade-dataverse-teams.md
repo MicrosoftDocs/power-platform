@@ -15,8 +15,7 @@ ms.collection: virtual-agent
 # Upgrade a Dataverse for Teams environment for Power Virtual Agents
 
 When a user creates a bot in Microsoft Teams using the [Power Virtual
-Agents for Teams app](fundamentals-what-is-power-virtual-agents-teams.md), a Dataverse for Teams environment gets created for the team the customer
-selected. [Learn more about Dataverse for Teams](/power-platform/admin/about-teams-environment).
+Agents for Teams app](fundamentals-what-is-power-virtual-agents-teams.md), a Dataverse for Teams environment gets created for the team the customer selected. [Learn more about Dataverse for Teams](/power-platform/admin/about-teams-environment).
 
 ## Upgrading a Dataverse for Teams environment
 

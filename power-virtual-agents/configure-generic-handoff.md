@@ -22,9 +22,7 @@ With some custom development, you can configure your bot to hand off conversatio
 ## Prerequisites
 
 - You need to have [built a bot using Power Virtual Agents](authoring-first-bot.md)  
-
 - You need an engagement hub that can interacting programmatically using APIs or SDK  
-
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 
 > [!IMPORTANT]

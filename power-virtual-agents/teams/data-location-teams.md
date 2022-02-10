@@ -9,7 +9,7 @@ ms.author: iawilt
 manager: shellyha
 ms.reviewer: digantak
 ms.collection: virtual-agent
-ms.cusom: "multi-geo, gdpr, ce06102020, teams"
+ms.custom: "multi-geo, gdpr, ce06102020, teams"
 ---
 
 # Regional settings and data locations for organizations using Power Virtual Agents in Teams

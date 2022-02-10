@@ -12,7 +12,6 @@ ms.custom: "advanced-authoring, CSI, ceX"
 ms.collection: virtual-agent
 ---
 
-
 # Create bot topics from Customer Service Insights
 
 If you use [Dynamics 365 Customer Service Insights](/dynamics365/ai/customer-service-insights/overview), you can automatically create new [topics](authoring-create-edit-topics.md) in Power Virtual Agents based on your existing [Customer Service Insights support topics](/dynamics365/ai/customer-service-insights/topics-page).

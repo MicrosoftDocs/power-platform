@@ -118,9 +118,7 @@ This topic is automatically triggered for any user who talks to the bot without 
 Your bot's **authentication option** and **Require user to sign in** combination determines whether you can [share the bot](admin-share-bots.md) to control who in your organization can chat with your bot or not.  Sharing a bot for collaboration is not impacted by the end-user authentication setting.
 
 - **No authentication**. Any user who has a link to the bot (or can find it, for example, on your website) can chat with it. You cannot control which users can chat with the bot in your organization.
-
 - **Only for Teams**. The bot will only work on [the Teams channel](publication-add-bot-to-microsoft-teams.md). This means the user will always be signed in, and therefore the **Require users to sign in** option will be enabled and can't be changed. You can control who can chat with the bot in your organization with bot sharing.
-
 - **Manual (for any channel including Teams)**.
   - If your authentication setting is configured to **Manual**, and the service provider is either **Azure Active Directory** or **Azure Active Directory V2**, you can enable the **Require users to sign in** option to control who can chat with the bot in your organization via bot sharing.
   - If your authentication provider is set as **Generic OAuth 2**, you can toggle the **Require users to sign in** option. When turned on, a user who signs in can chat with the bot, but you cannot control which specific users are allowed to chat with the bot in your organization with bot sharing.
@@ -172,12 +170,11 @@ This section shows an example of Azure AD being configured as an OAuth provider.
     :::image type="content" source="media/auth-manage-sm.png" alt-text="Screenshot of the Authentication under Manage left bar menu.":::
 
 1. Enter the information as described for each of the fields in the following table. The information required depends on your setup and provider. If you have questions about the required information, contact your administrator or identity provider.
-
 1. Click **Save** to finish the configuration.
 
 > [!NOTE]
 > The examples provided below are for an Azure AD common endpoint. For more information, see [OAuth generic providers](/azure/bot-service/bot-builder-concept-identity-providers?view=azure-bot-service-4.0&tabs=adv1%2Cga2&preserve-view=true) documentation.  
->Only use Azure AD V2 token endpoints, as specified in the table.
+> Only use Azure AD V2 token endpoints, as specified in the table.
 
 | Field name                                       | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | Where to get this information for Azure AD                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | ------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -204,9 +201,7 @@ After the setup steps are complete, save your configuration and test it by [crea
 ## Remove the authentication configuration
 
 1. Select **Manage** on the side pane, and then go to the **Security** tab and select the **Authentication** card.
-
 1. Select **No authentication**.
-
 1. Publish the bot.
 
 If authentication variables are being used in a topic, they will become **Unknown** variables. Go to the Topics page to see which topics have errors and fix them before publishing.

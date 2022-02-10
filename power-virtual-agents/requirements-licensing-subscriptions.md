@@ -20,7 +20,7 @@ If you already have licenses, see the [Assign licenses and manage access to Powe
 
 Power Virtual Agents is [available in the US Government Community Cloud (GCC) plan](requirements-licensing-gcc.md).
 
-For more information and to request assistance, visit the [Power Virtual Agents Community](https://powerusers.microsoft.com/t5/Power-Virtual-Agents-Community/ct-p/PVACommunity). 
+For more information and to request assistance, visit the [Power Virtual Agents Community](https://powerusers.microsoft.com/t5/Power-Virtual-Agents-Community/ct-p/PVACommunity).
 
 ## Power Virtual Agents for Microsoft Teams plan
 
@@ -32,15 +32,15 @@ This table compares key capabilities in the Power Virtual Agents for Microsoft T
 
 Also see the [Quotas, limits, and configuration values](requirements-quotas.md) topic for other capacity considerations.
 
-Capability | Select Microsoft 365 subscriptions | Power Virtual Agents subscription
---|--|--
-Deploy bot to channels | [Microsoft Teams](teams/publication-add-bot-to-microsoft-teams-teams.md) | [Any channel supported by Power Virtual Agents](publication-fundamentals-publish-channels.md)
-Power Automate connectors | [Standard connectors available for flows triggered from Power Virtual Agents](teams/advanced-flow-teams.md) | [Premium connectors available for flows triggered from Power Virtual Agents](advanced-flow.md)
-Web security | [Secure access enabled by default, no ability to generate secrets to enable secure access](teams/configure-web-security-teams.md) | [Ability to generate secrets and turn on or off secure access as wanted by the bot author](configure-web-security.md)
-Use Microsoft Bot Framework skills | Not available | [Ability to extend Power Virtual Agents bots with Microsoft Bot Framework skills](advanced-use-skills.md)
-Use a Power Virtual Agents bot as a Bot Framework skill | Not available | [Use a Power Virtual Agents bot as a skill (Preview)](advanced-use-pva-as-a-skill.md)
-Integrate Microsoft Bot Framework dialogs | Not available | [Develop custom dialogs with Bot Framework Composer](advanced-bot-framework-composer.md)
-Hand off bot conversation to a live agent | Not available | [Trigger hand-off to a live agent](advanced-hand-off.md)
+| Capability                                              | Select Microsoft 365 subscriptions                                                                                                | Power Virtual Agents subscription                                                                                     |
+| ------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| Deploy bot to channels                                  | [Microsoft Teams](teams/publication-add-bot-to-microsoft-teams-teams.md)                                                          | [Any channel supported by Power Virtual Agents](publication-fundamentals-publish-channels.md)                         |
+| Power Automate connectors                               | [Standard connectors available for flows triggered from Power Virtual Agents](teams/advanced-flow-teams.md)                       | [Premium connectors available for flows triggered from Power Virtual Agents](advanced-flow.md)                        |
+| Web security                                            | [Secure access enabled by default, no ability to generate secrets to enable secure access](teams/configure-web-security-teams.md) | [Ability to generate secrets and turn on or off secure access as wanted by the bot author](configure-web-security.md) |
+| Use Microsoft Bot Framework skills                      | Not available                                                                                                                     | [Ability to extend Power Virtual Agents bots with Microsoft Bot Framework skills](advanced-use-skills.md)             |
+| Use a Power Virtual Agents bot as a Bot Framework skill | Not available                                                                                                                     | [Use a Power Virtual Agents bot as a skill (Preview)](advanced-use-pva-as-a-skill.md)                                 |
+| Integrate Microsoft Bot Framework dialogs               | Not available                                                                                                                     | [Develop custom dialogs with Bot Framework Composer](advanced-bot-framework-composer.md)                              |
+| Hand off bot conversation to a live agent               | Not available                                                                                                                     | [Trigger hand-off to a live agent](advanced-hand-off.md)                                                              |
 
 > [!NOTE]
 > A paid, standalone Power Virtual Agents subscription is required to run flows with premium connectors in the context of Power Virtual Agents chatbots.  

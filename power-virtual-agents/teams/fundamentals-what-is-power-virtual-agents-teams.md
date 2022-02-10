@@ -12,9 +12,6 @@ ms.custom: fundamentals, ceX, teams, intro-internal
 ms.collection: virtual-agent
 ---
 
-
-
-
 # Power Virtual Agents app in Microsoft Teams
 
 Select the version of Power Virtual Agents you're using here:
@@ -62,14 +59,10 @@ Microsoft Power Virtual Agents (1) is not intended or made available as a medica
 
 ## Helpful links
 
-[Create your first bot](authoring-first-bot-teams.md)
-
-[Create and edit topics](authoring-create-edit-topics-teams.md)
-
-[Enhance your bot](advanced-fundamentals-teams.md)
-
-[Publish your bot](publication-fundamentals-publish-channels-teams.md)
-
-[Using analytics to improve your bot](analytics-overview-teams.md)
+- [Create your first bot](authoring-first-bot-teams.md)
+- [Create and edit topics](authoring-create-edit-topics-teams.md)
+- [Enhance your bot](advanced-fundamentals-teams.md)
+- [Publish your bot](publication-fundamentals-publish-channels-teams.md)
+- [Using analytics to improve your bot](analytics-overview-teams.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

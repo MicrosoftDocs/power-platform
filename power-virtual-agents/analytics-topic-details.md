@@ -8,7 +8,7 @@ ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.cusom: analysis, ceX
+ms.custom: analysis, ceX
 ms.collection: virtual-agent
 ---
 

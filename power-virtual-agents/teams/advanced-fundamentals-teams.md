@@ -12,7 +12,6 @@ ms.custom: "authoring, fundamentals, advanced-authoring, ceX, teams"
 ms.collection: virtual-agent
 ---
 
-
 # Key concepts - Enhanced authoring in Power Virtual Agents in Teams
 
 Select the version of Power Virtual Agents you're using here:
