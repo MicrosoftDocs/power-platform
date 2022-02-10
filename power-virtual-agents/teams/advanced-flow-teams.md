@@ -108,7 +108,7 @@ In this flow, we're going to provide a special message and email when someone as
 
 1. Add a **Question** node that asks "**Do you have any requirements**". By default, it will be set to accept ("identify") multiple choice options - change that to **User's entire response**. At the bottom, click on the variable called "**Var**" and change it to "**Requirements**".
 
-:::image type="content" source="media/flow-test-1.png" alt-text="Add a question node to canvas.":::
+    :::image type="content" source="media/flow-test-1.png" alt-text="Add a question node to canvas.":::
 
 1. Insert a **Call to action** and choose the flow you created. Set the `String_Input` to **Requirements** and the `Number_Input` to **Numberguests**.
 
