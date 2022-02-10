@@ -169,11 +169,11 @@ There are advanced settings that allow you to manipulate the smart matching beha
 
 Basically it indicate that we internally (by default) will ignore any word at (multiples of it) at the start of the subject line that has a ":" at the end of it example:
 
-|     | **Subject**  | **Ignored words** |
+|     | Subject  | Ignored words |
 |-----|--------------|-------------------|
-| 1   | Test         | None              |
-| 2   | RE: Test     | RE:               |
-| 3   | FW: RE: Test | FW: RE:           |
+| **1**   | Test         | None              |
+| **2**   | RE: Test     | RE:               |
+| **3**  | FW: RE: Test | FW: RE:           |
 
 
 > [!NOTE]
