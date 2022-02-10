@@ -1,6 +1,6 @@
 ---
-title: "Requirements/supported configurations  | MicrosoftDocs"
-description: Requirements/supported configurations 
+title: "Power Platform URLs and IP address ranges  | MicrosoftDocs"
+description: Information on supported URLs and IP addresses.
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
@@ -16,7 +16,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Requirements/supported configurations  
+# Power Platform URLs and IP address ranges
 
 [Model-driven Power Apps](/powerapps/maker/model-driven-apps/model-driven-app-overview) and customer engagement apps (such as [Dynamics 365 Sales](/dynamics365/sales-professional/help-hub), [Dynamics 365 Customer Service](/dynamics365/customer-service/help-hub), and [Dynamics 365 Marketing](/dynamics365/marketing/help-hub) and [Dynamics 365 Project Operations](/dynamics365/project-operations)), give you the following options to access data:  
   
