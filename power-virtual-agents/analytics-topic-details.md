@@ -2,13 +2,13 @@
 title: "Analyze topic performance"
 description: "See how topics are performing, and determine what you can do to improve customer satisfaction."
 keywords: "PVA"
-ms.date: 9/22/2020
+ms.date: 01/06/2022
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.cusom: analysis, ceX
+ms.custom: analysis, ceX
 ms.collection: virtual-agent
 ---
 
@@ -17,48 +17,43 @@ ms.collection: virtual-agent
 Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
+>
 > - [Power Virtual Agents web app](analytics-topic-details.md)
 > - [Power Virtual Agents app in Microsoft Teams](teams/analytics-topic-details-teams.md)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-
 The topic details page provides a view into the performance of individual topics and how they can be improved.
-
-
 
 You can display the topic details page by selecting the **Detail** link in one of the following charts on the [Summary](analytics-summary.md) and [Customer Satisfaction](analytics-CSAT.md) pages:
 
-
-* [Escalation rate drivers (Summary page)](analytics-summary.md#escalation-rate-drivers-chart)
-* [Abandon rate drivers (Summary page)](analytics-summary.md#abandon-rate-drivers-chart)
-* [Resolution rate drivers (Summary page)](analytics-summary.md#resolution-rate-drivers-chart)
-* [Customer satisfaction drivers (Customer Satisfaction page)](analytics-CSAT.md#customer-satisfaction-drivers-chart)
+- [Escalation rate drivers (Summary page)](analytics-summary.md#escalation-rate-drivers-chart)
+- [Abandon rate drivers (Summary page)](analytics-summary.md#abandon-rate-drivers-chart)
+- [Resolution rate drivers (Summary page)](analytics-summary.md#resolution-rate-drivers-chart)
+- [Customer satisfaction drivers (Customer Satisfaction page)](analytics-CSAT.md#customer-satisfaction-drivers-chart)
 
 :::image type="content" source="media/topic-details-link.png" alt-text="Topic details link." border="false":::
 
->[!IMPORTANT]
->You need a license for [Dynamics 365 Customer Service Insights](/dynamics365/ai/customer-service-insights/licensing-case-capacity) to access the topic details charts.
+> [!IMPORTANT]
+> You need a license for [Dynamics 365 Customer Service Insights](/dynamics365/ai/customer-service-insights/licensing-case-capacity) to access the topic details charts.
 
+The topic details page can also be displayed by opening an individual topic from the [Topics page](authoring-create-edit-topics.md) and selecting **Analytics** at the top of the page.
 
-The topic details page can also be displayed by opening an individual topic from the Topics page and selecting **Analytics** at the top of the page.
+:::image type="content" source="media/analytics-topic-details/canvas-button.png" alt-text="From the Topic details page, select the Analytics tab.":::
 
-:::image type="content" source="media/analytics-topics-details.png" alt-text="From the Topic details page, select the Analytics tab." border="false":::
+You can also hover over each topic in the Topics page and select the **Go to analytics** icon.
 
-You can also hover over each topic in the Topics page and select the **Go to analytics** icon. 
-
-:::image type="content" source="media/analytics-topics.png" alt-text="Hovering shows the Go to analytics icon." border="false":::
+:::image type="content" source="media/analytics-topic-details/topic-button.png" alt-text="Hovering shows the Go to analytics icon." border="false":::
 
 The topic details page includes a variety of charts with graphical views of a topic's key performance indicators. For information about each chart, see:
 
-* [Topic Summary charts](#topic-summary-charts)
-* [Impact Summary charts](#impact-summary-charts)
-* [Topic Volume by Day chart](#topic-volume-by-day-chart)
+- [Topic Summary charts](#topic-summary-charts)
+- [Impact Summary charts](#impact-summary-charts)
+- [Topic Volume by Day chart](#topic-volume-by-day-chart)
 
 ## Prerequisites
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
-
 
 ## Topic summary charts
 
@@ -88,6 +83,5 @@ Abandon rate impact | The topic's abandon-rate impact score. The abandon-rate im
 ## Topic Volume by Day chart
 
 The Topic volume by day chart provides a graphical view of the number of sessions for the topic over the specified time period.
-
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

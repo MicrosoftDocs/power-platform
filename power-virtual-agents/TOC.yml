@@ -54,6 +54,8 @@
          href: authoring-test-bot.md
        - name: Supported languages
          href: authoring-language-support.md
+       - name: Troubleshoot error codes
+         href: error-codes.md
     - name: Enhance and improve
       items:
        - name: Key concepts - Enhanced authoring
@@ -102,7 +104,7 @@
             href: configuration-add-skills.md
           - name: Use Bot Framework Skills
             href: advanced-use-skills.md
-          - name: Use a Power Virtual Agents bot as a skill (Preview)
+          - name: Use a Power Virtual Agents bot as a skill
             href: advanced-use-pva-as-a-skill.md
           - name: Use Bot Framework Composer
             items:
@@ -202,6 +204,8 @@
          href: teams/authoring-test-bot-teams.md
        - name: Supported languages
          href: teams/authoring-language-support-teams.md
+       - name: Troubleshoot error codes
+         href: teams/error-codes-teams.md
     - name: Enhance and improve
       items:
        - name: Key concepts - Enhanced authoring

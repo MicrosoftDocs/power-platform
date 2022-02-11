@@ -3,7 +3,7 @@ title: "International availability of Microsoft Power Platform"
 description: "Learn about product availability, customer data locations, and languages for the Microsoft Power Platform family of applications by downloading the linked PDF."
 author: kvivek 
 manager: annbe
-ms.date: 01/31/2020
+ms.date: 02/10/2022
 ms.topic: article
 ms.service: power-platform
 ms.custom:
@@ -28,7 +28,9 @@ The information will be updated periodically. Microsoft provides no license, exp
 Review and respect the full disclaimer included in all printed and electronically distributed versions of this document.
 
 ### See also
-[International availability of Dynamics 365](/dynamics365/get-started/availability)
+[International availability of Dynamics 365](/dynamics365/get-started/availability) <br />
+[Dynamics 365 and Power Platform availability](https://dynamics.microsoft.com/availability-reports/)
+
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

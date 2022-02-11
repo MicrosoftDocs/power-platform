@@ -12,25 +12,19 @@ ms.custom: fundamentals, ceX, teams, intro-internal
 ms.collection: virtual-agent
 ---
 
-
-
-
 # Power Virtual Agents app in Microsoft Teams
-
-
 
 Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
+>
 > - [Power Virtual Agents web app](../fundamentals-what-is-power-virtual-agents-portal.md)
 > - [Power Virtual Agents app in Microsoft Teams](fundamentals-what-is-power-virtual-agents-teams.md)
 
+> [!IMPORTANT]
+> See the [Important information](#important-information) section for specific usage details.
 
-
->[!IMPORTANT]
->See the [Important information](#important-information) section for specific usage details.
-
-Power Virtual Agents is available as an app within Microsoft Teams, which means you can easily create your own chatbots that answer questions posed by other employees or team members. 
+Power Virtual Agents is available as an app within Microsoft Teams, which means you can easily create your own chatbots that answer questions posed by other employees or team members.
 
 You can add the Power Virtual Agents app from the Microsoft Teams app store and begin to create, author, test, and publish your bot directly into teams, all within the Microsoft Teams interface. You can also visit [https://aka.ms/PVAForTeams](https://aka.ms/PVAForTeams) to directly install or open the app.
 
@@ -56,28 +50,19 @@ To see what Power Virtual Agents in Microsoft Teams can do, check out [our guide
 
 To get started creating bots in Teams with Power Virtual Agents straight away, see the [Create your first bot topic](authoring-first-bot-teams.md), or [download and use templates to help you create, develop, and publish chatbots](fundamentals-templates-teams.md) with Power Virtual Agents.
 
-
->[!NOTE]
+> [!NOTE]
 > Power Virtual Agents does not currently support US Government Cloud plans.
-
 
 ## Important information
 <!-- CELA required disclosure, do not modify -->
 Microsoft Power Virtual Agents (1) is not intended or made available as a medical device for the diagnosis of disease or other conditions, or in the cure, mitigation, treatment or prevention of disease, or otherwise to be used as a component of any clinical offering or product, and no license or right is granted to use Microsoft Power Virtual Agents for such purposes, (2) is not designed or intended to be a substitute for professional medical advice, diagnosis, treatment, or judgment and should not be used as a substitute for, or to replace, professional medical advice, diagnosis, treatment, or judgment, and (3) should not be used for emergencies and does not support emergency calls. Any chatbot you create using Microsoft Power Virtual Agents is your own product or service, separate and apart from Microsoft Power Virtual Agents. You are solely responsible for the design, development, and implementation of your chatbot (including incorporation of it into any product or service intended for medical or clinical use) and for explicitly providing end users with appropriate warnings and disclaimers pertaining to use of your chatbot. You are solely responsible for any personal injury or death that may occur as a result of your chatbot or your use of Microsoft Power Virtual Agents in connection with your chatbot, including (without limitation) any such injuries to end users.
 
-
 ## Helpful links
 
-[Create your first bot](authoring-first-bot-teams.md)
-
-[Create and edit topics](authoring-create-edit-topics-teams.md)
-
-[Enhance your bot](advanced-fundamentals-teams.md)
-
-[Publish your bot](publication-fundamentals-publish-channels-teams.md)
-
-[Using analytics to improve your bot](analytics-overview-teams.md)
-
-
+- [Create your first bot](authoring-first-bot-teams.md)
+- [Create and edit topics](authoring-create-edit-topics-teams.md)
+- [Enhance your bot](advanced-fundamentals-teams.md)
+- [Publish your bot](publication-fundamentals-publish-channels-teams.md)
+- [Using analytics to improve your bot](analytics-overview-teams.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
