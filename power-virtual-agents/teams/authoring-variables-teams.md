@@ -17,16 +17,14 @@ ms.collection: virtual-agent
 Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
+>
 > - [Power Virtual Agents web app](../authoring-variables.md)
 > - [Power Virtual Agents app in Microsoft Teams](authoring-variables-teams.md)
 
-
-
-Variables let you save responses from your customers in a conversation with your bot so that you can reuse them later in the conversation. 
+Variables let you save responses from your customers in a conversation with your bot so that you can reuse them later in the conversation.
 
 For example, you can save a customer's name in a variable called `UserName`. The bot can then address the customer by name as the conversation continues.
 
 You can add and use variables in a bot's authoring canvas in Microsoft Teams, but you should review and refer to the web app version of this topic for more information: [Use variables](../authoring-variables.md)
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

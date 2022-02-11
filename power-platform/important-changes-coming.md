@@ -1,7 +1,7 @@
 ---
 title: "Important changes (deprecations) coming in Power Apps and Power Automate"
 description: Important changes (deprecations) coming in Power Apps and Power Automate 
-ms.date: 02/09/2022
+ms.date: 02/10/2022
 ms.topic: "article"
 ms.assetid: 994cc854-17f6-45d6-bc20-fcf1a3f2d6d6
 searchScope:
@@ -41,9 +41,6 @@ More information: [OData v2.0 Service removal date announcement](https://aka.ms/
 
 
 ## Internet Explorer 11 support for Dynamics 365 and Microsoft Power Platform is deprecated
-
-> [!IMPORTANT]
-> With 2022 release wave 2, Internet Explorer 11 will be blocked. Please switch to a modern browser.
 
 Effective December 2020, Microsoft Internet Explorer 11 support for Microsoft Dynamics 365 and Microsoft Power Platform is deprecated, and Internet Explorer 11 won’t be supported after August  2021. 
 

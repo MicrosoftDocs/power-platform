@@ -17,14 +17,15 @@ ms.collection: virtual-agent
 Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
+>
 > - [Power Virtual Agents web app](authoring-variables-bot.md)
 > - [Power Virtual Agents app in Microsoft Teams](teams/authoring-variables-bot-teams.md)
 
 [Variables](authoring-variables.md) let you save responses from your customers. For example, you can save a customer's name in a variable called `UserName`. The bot can then address the customer by name as the conversation continues.
 
-By default, a variable's value can only be used in the topic where this variable gets created. However, you might want the bot to use the same value across topics. This means the bot can remember the necessary context when a conversation spans multiple topics. 
+By default, a variable's value can only be used in the topic where this variable gets created. However, you might want the bot to use the same value across topics. This means the bot can remember the necessary context when a conversation spans multiple topics.
 
-For example, in a "Welcome" topic, the bot asks for the customer's name and email. Then when the conversation goes to another topic, such as an "Appointment booking" topic, you want the bot to remember this customer's name and email address. 
+For example, in a "Welcome" topic, the bot asks for the customer's name and email. Then when the conversation goes to another topic, such as an "Appointment booking" topic, you want the bot to remember this customer's name and email address.
 
 In some systems, these types of variables are known as **global variables**. In Power Virtual Agents, these variables are called **bot variables**, because they apply across the entire bot.
 
@@ -32,56 +33,53 @@ Bot variables apply during a single user session. You specify which variables sh
 
 ## Prerequisites
 
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)] 
+- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 
 ## Set bot variables
 
-After you set a bot variable, it will be available to all topics. 
+After you set a bot variable, it will be available to all topics.
 
 When you select the `{x}` button in a message node or question node when you're composing a bot message, you'll see that the bot variable is available. Variables are sorted in alphabetical order, so you'll find that all bot variables are grouped together in the variable menu because they all begin with `bot.`.
 
 :::image type="content" source="media/bot-variable-message.png" alt-text="Screenshot showing selection of the x variable icon to display a list of variables." border="false":::
 
-When you use a condition node, a flow action node, or a skill node, you'll also see bot variables available there. 
- 
-**Reuse a variable across topics by setting it as a bot variable:**
+When you use a condition node, a flow action node, or a skill node, you'll also see bot variables available there.
+
+### Reuse a variable across topics by setting it as a bot variable
 
 1. Select any variable in the authoring canvas.
 
 1. On the **Variable properties** pane, under **Usage**, select **Bot (any topic can access)**.
 
-1. The variable name will be given a prefix string `bot.`, to differentiate it from the topic-level variables. For example, the variable `UserName` is now shown as `bot.UserName`. 
+1. The variable name will be given a prefix string `bot.`, to differentiate it from the topic-level variables. For example, the variable `UserName` is now shown as `bot.UserName`.
 
 :::image type="content" source="media/bot-variable-set.png" alt-text="Screenshot showing the Variable Properties pane, with the Usage section highlighted":::
 
-
->[!NOTE]
->A bot variable's name must be unique across all topics. In the case of a conflict, you'll need to rename the variable before saving your change. 
+> [!NOTE]
+> A bot variable's name must be unique across all topics. In the case of a conflict, you'll need to rename the variable before saving your change.
 
 ## Manage bot variables
 
 After you've created a bot variable, you can see where it's first defined and what other topics are using it. This can be useful if you're working on a new bot, or if you have multiple variables and [complex topic branching](authoring-create-edit-topics.md#add-a-condition).
 
-**Go to the source of a bot variable's definition**
+### Go to the source of a bot variable's definition
 
 1. Select any variable in the authoring canvas.
 
-1. On the **Variable properties** pane, select **Go to source**. 
+1. On the **Variable properties** pane, select **Go to source**.
 
 :::image type="content" source="media/bot-variable-source.png" alt-text="Screenshot showing the Variable Properties pane, with the Go to Source button highlighted":::
 
+This will take you to the node in the topic where the bot variable was created.
 
-This will take you to the node in the topic where the bot variable was created. 
-
-**Find all topics using a bot variable**
+### Find all topics using a bot variable
 
 1. Select any bot variable in the authoring canvas.
 
-1. On the **Variable properties** pane, in the **Used by** section, select any of the topics where the variable is used to go straight to that topic and node. 
+1. On the **Variable properties** pane, in the **Used by** section, select any of the topics where the variable is used to go straight to that topic and node.
 
 :::image type="content" source="media/bot-variable-used-by.png" alt-text="Screenshot showing the list of topics used by a variable in the Variable Properties pane.":::
 
- 
 ## Bot variable initialization
 
 If a bot variable is triggered before it has been initialized (or "filled in"), the bot will automatically trigger the part of the topic where the bot variable is first defined&mdash;even when it's in a different topic&mdash;before returning to the original topic. This allows the bot to have all the variables filled in without interrupting the conversation.  
@@ -90,30 +88,29 @@ For example, the customer starts the conversation on the "Appointment booking" t
 
 When the conversation comes to the point in the "Appointment booking" topic where `bot.UserName` is referenced, the bot will seamlessly pivot to the question node where `bot.UserName` is first defined.
 
-After the customer answers the question, the bot will resume the "Appointment booking" topic. 
+After the customer answers the question, the bot will resume the "Appointment booking" topic.
 
 ## Bot variable behavior when implementing Actions via Power Automate flows or skills
 
 Sometimes, you might use a flow or skill to initialize or fill in a variable in a chatbot.
 
-When a user interacts with the chatbot, however, the variable might be filled in at an earlier point in the conversation, or you may have [already set the variables externally](authoring-variables-bot.md#set-a-bot-variables-value-from-external-sources). 
+When a user interacts with the chatbot, however, the variable might be filled in at an earlier point in the conversation, or you may have [already set the variables externally](authoring-variables-bot.md#set-a-bot-variables-value-from-external-sources).
 
 In this situation, the flow or skill will still run and fill in the variable, overwriting whatever was previously stored in the variable.
- 
+
 ## Bot variables lifecycle and resetting its value
 
-Bot variables are accessible from any topic, and the bot variable's assigned value persists throughout [the session](analytics-billed-sessions.md#definition-of-a-billed-session). 
+Bot variables are accessible from any topic, and the bot variable's assigned value persists throughout [the session](analytics-billed-sessions.md#definition-of-a-billed-session).
 
 The value is only cleared when the bot user is redirected to [the **Start over** system topic](authoring-create-edit-topics.md#use-system-and-sample-topics), or when the user triggers this topic directly (for example, by typing *Start over*). In this case, all bot variables will be reset and won't have any values.
 
-
 ## Set a bot variable's value from external sources
 
-You can set a bot variable to be initialized with an external source. This lets the bot start the conversation with some context. 
+You can set a bot variable to be initialized with an external source. This lets the bot start the conversation with some context.
 
 For example, a customer brings up a bot chat from your web site, and the site already knows the customer's name. You let the bot know the user's name before starting the conversation, and the bot can have a more intelligent conversation with the customer without having to ask for their name again.
 
-**Set bot variable from external source**
+### Set bot variable from external source
 
 1. Select any variable in the authoring canvas.
 
@@ -121,26 +118,22 @@ For example, a customer brings up a bot chat from your web site, and the site al
 
 :::image type="content" source="media/bot-variable-external.png" alt-text="Screenshot of the Usage section on the Variable Properties pane, with the Bot option and External sources can set values checkbox both selected":::
 
-
 1. You can append the variables and their definitions if you're simply [embedding your bot in a simple webpage](publication-connect-bot-to-web-channels.md#custom-website), or you can use a `<script>` code block to call and use variables programatically.
 
-    >[!NOTE]
-    >The variable name in the query string must match that of the bot variable, without the `bot.` prefix. For example, a bot variable `bot.UserName` must be rendered as `UserName=`.
+    > [!NOTE]
+    > The variable name in the query string must match that of the bot variable, without the `bot.` prefix. For example, a bot variable `bot.UserName` must be rendered as `UserName=`.
 
 In the examples described here, a simple declaration is made for the variables. In a production scenario, you might pass in as the query parameter or variable definition another variable that has already stored the user's name (for example, if you have the user name from a sign-in script).
 
-**To add the variable to an embedded bot**
+### To add the variable to an embedded bot
 
 1. Append the variables and their definitions to the bot's URL as [query string parameters](https://en.wikipedia.org/wiki/Query_string) (in the format of `botURL?variableName1=variableDefinition1&variableName2=variableDefinition2`), for example:
 
-
-    - You have a bot variable named `bot.UserName`. 
-
+    - You have a bot variable named `bot.UserName`.
     - Your bot's URL is *https://web.powerva.microsoft.com/webchat/bots/12345*.
+    - To pass in the user name when starting a bot conversation on a website, you can attach the `UserName=` query string as: *https://web.powerva.microsoft.com/webchat/bots/12345?UserName=Renata*.
 
-    - To pass in the user name when starting a bot conversation on a website, you can attach the `UserName=` query string as: _https://web.powerva.microsoft.com/webchat/bots/12345?UserName=Renata_.
-
-2. The parameter name is case-insensitive. This means `username=Renata` will also work in this example. 
+1. The parameter name is case-insensitive. This means `username=Renata` will also work in this example.
 
 **To add the variable to a [custom canvas](customize-default-canvas.md)**
 
@@ -164,7 +157,7 @@ In the examples described here, a simple declaration is made for the variables. 
         });
     ```
 
-2. Within your `<script>` section, call the `store` when you embed your bot, as in the following example where `store` is called just above where `styleOptions` is called (you'll need to replace the `BOT_ID` with your ID):
+1. Within your `<script>` section, call the `store` when you embed your bot, as in the following example where `store` is called just above where `styleOptions` is called (you'll need to replace the `BOT_ID` with your ID):
 
     ```html
     const BOT_ID = "12345-5678";
@@ -186,20 +179,18 @@ In the examples described here, a simple declaration is made for the variables. 
         })
         .catch(err => console.error("An error occurred: " + err));
     ```
- 
 
 ## Delete bot variables
 
-When removing a bot variable used in other topics, the references to that variable in the topics will be marked as `Unknown`. 
+When removing a bot variable used in other topics, the references to that variable in the topics will be marked as `Unknown`.
 
 You'll receive a warning about deleting the bot variable before you can confirm the operation.
 
 :::image type="content" source="media/bot-variable-delete.png" alt-text="The bot variable delete message indicates that references to that variable will be labeled as unknown." border="false":::
   
-Nodes that contain references to the deleted bot variable will tell you they contain an unknown variable. 
+Nodes that contain references to the deleted bot variable will tell you they contain an unknown variable.
 
 :::image type="content" source="media/bot-variable-unknown-node.png" alt-text="Screenshot of a node with references to an unknown variable, which are marked as red within the message node's text, and indicated with a warning that says Bot message contains unknown variable":::
-
 
 Topics with nodes that contain references to deleted bot variables might stop working. Ensure that you remove or correct all the topics that were using the deleted variable before publishing.
 
@@ -211,6 +202,5 @@ Depending on the bot's authentication setup, you will have a set of bot variable
 
 - [Use variables](authoring-variables.md)
 - [Customize the look and feel of the bot](customize-default-canvas.md)
-
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

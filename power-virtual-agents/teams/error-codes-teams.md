@@ -15,6 +15,7 @@ manager: shellyha
 Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
+>
 > - [Power Virtual Agents web app](../error-codes.md)
 > - [Power Virtual Agents app in Microsoft Teams](error-codes-teams.md)
 
