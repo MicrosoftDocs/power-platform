@@ -37,8 +37,7 @@ Dataverse databases are using SQL TDE (Transparent Data Encryption, compliant wi
 
 By default, Microsoft stores and manages the database encryption key for your Dynamics 365 environments. As of now, given the heterogenous storage, the customer managed key feature is available only for the Azure SQL database that stores transactional data. The File/Document (blob storage) and Azure Data Lake encryption by customer managed key is in the roadmap for future releases. The manage keys feature in the Power Platform admin center gives administrators the ability to self-manage the database encryption key that is associated with the tenant. Given the heterogenous type of storage, Customer Managed Keys are limited to encrypt the Azure SQL Database storing transactional data only. File, Log and Search encryption will remain managed by Microsoft.
 
-image
-
+:::image type="content" source="media/encryption-data-at-rest.png" alt-text="Encryption of data at rest":::
 
 Administrators can provide their own encryption key using their own key generator hardware (HSM) or use our administrator tool to generate an encryption key. The key management feature supports both PFX and BYOK encryption files.
 
@@ -56,7 +55,7 @@ Azure protects data in transit to or from outside components, as well as data in
 
 Microsoft uses multiple encryption methods, protocols, and algorithms across its products and services to help provide a secure path for data to travel through the infrastructure, and to help protect the confidentiality of data that is stored within the infrastructure. Microsoft uses some of the strongest, most secure encryption protocols in the industry to provide a barrier against unauthorized access to your data. Proper key management is an essential element in encryption best practices, and Microsoft helps ensure that encryption keys are properly secured.
 
-image
+:::image type="content" source="media/encryption-data-in-transit.png" alt-text="Encryption of data in transit":::
 
 Protocols and technologies examples include:
 
