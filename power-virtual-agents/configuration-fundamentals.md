@@ -17,21 +17,19 @@ ms.collection: virtual-agent
 Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
+>
 > - [Power Virtual Agents web app](configuration-fundamentals.md)
 > - [Power Virtual Agents app in Microsoft Teams](teams/configuration-fundamentals-teams.md)
 
 Power Virtual Agents has a number of advanced features that let you extend the capabilities of what bot conversations can do.
 
-These features go beyond basic topic authoring and bot conversations and allow you to create a personalized look and feel to your bot, as well as give you more flexibility in what you users can ask your bot to do. 
+These features go beyond basic topic authoring and bot conversations and allow you to create a personalized look and feel to your bot, as well as give you more flexibility in what you users can ask your bot to do.
 
 You can accept files for upload, sign-in to backend systems, and seamlessly integrate between virtual support conversations and support help from live agents.
-
 
 ## Prerequisites
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
-
-
 
 ## In this section
 
@@ -45,6 +43,5 @@ You can accept files for upload, sign-in to backend systems, and seamlessly inte
 | [Configure your bot to automatically start the conversation](configure-bot-greeting.md)         | Make your bot start the conversation automatically whenever the bot is loaded.                                                         |
 | [Customize the look and feel of your bot](customize-default-canvas.md)                          | Send and receive dynamic responses (such as adaptive cards and carousels) that you can custom render directly in the bot conversation. |
 | [Enable and configure Azure Bot Framework skills](configuration-add-skills.md)                  | Extend your bot with Bot Framework skills.                                                                                             |
-
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -19,23 +19,23 @@ searchScope:
 Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
+>
 > - [Power Virtual Agents web app](authoring-first-bot.md)
 > - [Power Virtual Agents app in Microsoft Teams](teams/authoring-first-bot-teams.md)
 
 To help get you started and tailor the bot to your specific needs, Power Virtual Agents lets you create a bot using built-in content building blocks containing topics, trigger phrases, and pre-authored bot conversations.
 
->[!WARNING]
->New bots are configured with "No authentication" and without [web channel security](configure-web-security.md), and can be accessed by anyone with a link to it. Ensure you have the right [authentication](configuration-end-user-authentication.md), [access](configuration-end-user-authentication.md), and [security](configure-web-security.md) configurations set for your particular usage.
+> [!WARNING]
+> New bots are configured with "No authentication" and without [web channel security](configure-web-security.md), and can be accessed by anyone with a link to it. Ensure you have the right [authentication](configuration-end-user-authentication.md), [access](configuration-end-user-authentication.md), and [security](configure-web-security.md) configurations set for your particular usage.
 
->[!NOTE]
->You can only see bots in the version of Power Virtual Agents where you created them.  
->This means if you create a bot with the Power Virtual Agents app in Microsoft Teams, you will not see the bot in the web app of Power Virtual Agents at https://web.powerva.microsoft.com.
-
+> [!NOTE]
+> You can only see bots in the version of Power Virtual Agents where you created them.  
+>
+> This means if you create a bot with the Power Virtual Agents app in Microsoft Teams, you will not see the bot in the web app of Power Virtual Agents at https://web.powerva.microsoft.com.
 
 ## Prerequisites
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
-
 
 ## Create your first bot
 
@@ -44,7 +44,7 @@ Creating your first bot requires you to have a license (or trial) to Power Virtu
 1. Go to [Power Virtual Agents marketing page](https://go.microsoft.com/fwlink/?linkid=2106332) and select **Start free**. Sign in using your work account.
 
    If you don't have a license, you can sign up for one by following the prompts.
-    
+
 1. In the **Create a new bot** dialog box, enter a name for your bot. This can be something generic to your company or specific to the scenario you are tailoring your bot to.
 
    :::image type="content" source="media/create-new-bot-screen.png" alt-text="New bot dialog." border="false":::
@@ -53,10 +53,9 @@ Creating your first bot requires you to have a license (or trial) to Power Virtu
   
 1. Select **Create** to begin the bot-building process, which can take up to 15 minutes for the first bot you create in an environment. Subsequent bots take less than a few minutes to create.
 
-
 During the building process, you'll see a notification at the top of the Power Virtual Agents portal indicating that the bot is still being built.
 
-You can navigate to some tabs during this period, after which the banner will change and you'll have full access to the Power Virtual Agents portal. 
+You can navigate to some tabs during this period, after which the banner will change and you'll have full access to the Power Virtual Agents portal.
 
 ## Create additional bots
 
@@ -66,15 +65,15 @@ If you have already created a bot, you can create a new bot by selecting the ico
 
 ## Delete a bot
 
-You can delete bots to remove them from your environment. 
+You can delete bots to remove them from your environment.
 
 1. Select the bot icon on the top menu bar, and then select the bot you want to delete.
 
-2. Select the **Settings** icon on the top menu bar, then select **General settings**.
+1. Select the **Settings** icon on the top menu bar, then select **General settings**.
 
    :::image type="content" source="media/general-settings.png" alt-text="General settings." border="false":::
 
-3. Select **Delete bot**.
+1. Select **Delete bot**.
 
 You'll be asked to confirm the deletion of the bot, after which all bot content is immediately deleted.
 
@@ -93,8 +92,8 @@ You will need to [create a new environment](environments-first-run-experience.md
 ### The environment I created does not show up in the drop-down menu of Power Virtual Agents
 
 Your environment might not show up in the drop-down menu due to one of the following:
- - The environment doesn't have a database created. To resolve this, go to [admin.powerplatform.com](https://admin.powerplatform.com) to [create a database in your environment](/power-platform/admin/create-database).
- - The environment is created in an unsupported region. Learn more about [supported data locations](data-location.md).
 
+- The environment doesn't have a database created. To resolve this, go to [admin.powerplatform.com](https://admin.powerplatform.com) to [create a database in your environment](/power-platform/admin/create-database).
+- The environment is created in an unsupported region. Learn more about [supported data locations](data-location.md).
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
