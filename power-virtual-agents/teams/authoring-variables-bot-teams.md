@@ -17,28 +17,25 @@ ms.collection: virtual-agent
 Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
+>
 > - [Power Virtual Agents web app](../authoring-variables-bot.md)
 > - [Power Virtual Agents app in Microsoft Teams](authoring-variables-bot-teams.md)
-
-
 
 [Variables](authoring-variables-teams.md) let you save responses from your customers. For example, you can save a customer's name in a variable called `UserName`. The bot can then address the customer by name as the conversation continues.
 
 However, you can also make variables into **bot variables**, so that they apply across the entire bot.
 
-
 ## Prerequisites
 
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations-teams.md)] 
+- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations-teams.md)]
 
 ## Set bot variables
 
-After you set a bot variable, it will be available to all topics. 
+After you set a bot variable, it will be available to all topics.
 
 When you select the `{x}` button in a node when you're editing a topic, you'll see the list of variables you can use, sorted in alphabetical order. Bot variables are at the top because they start with `bot.`.
 
 :::image type="content" source="media/authoring-variables-bot-teams/bot-variable-message-teams.png" alt-text="Screenshot showing selection of the x variable icon to display a list of variables." border="false":::
-
 
 **Reuse a variable across topics by setting it as a bot variable:**
 
@@ -46,47 +43,46 @@ When you select the `{x}` button in a node when you're editing a topic, you'll s
 
 1. On the **Variable properties** pane, under **Usage**, select **Bot (any topic can access)**.
 
-1. The variable name will be given a prefix string `bot.`, to differentiate it from the topic-level variables. For example, the variable `UserName` is now shown as `bot.UserName`. 
+1. The variable name will be given a prefix string `bot.`, to differentiate it from the topic-level variables. For example, the variable `UserName` is now shown as `bot.UserName`.
 
-    :::image type="content" source="media/authoring-variables-bot-teams/bot-variable-set-teams.png" alt-text="Screenshot showing the Variable Properties pane, with the Usage section highlighted." border="false":::
- 
->[!NOTE]
->A bot variable's name must be unique across all topics. In the case of a conflict, you'll need to rename the variable before saving your change. 
+    :::image type="content" source="media/bot-variable-set-teams.png" alt-text="Screenshot showing the Variable Properties pane, with the Usage section highlighted." border="false":::
+
+> [!NOTE]
+> A bot variable's name must be unique across all topics. In the case of a conflict, you'll need to rename the variable before saving your change.
 
 ## Manage bot variables
 
-After you've created a bot variable, you can see where it's first defined and what other topics are using it. 
+After you've created a bot variable, you can see where it's first defined and what other topics are using it.
 
 **Go to the source of a bot variable's definition:**
 
 1. Select any variable in the authoring canvas.
 
-1. On the **Variable properties** pane, select **Go to source**. 
+1. On the **Variable properties** pane, select **Go to source**.
 
-    :::image type="content" source="media/authoring-variables-bot-teams/bot-variable-source-teams.png" alt-text="Screenshot showing the Variable Properties pane, with the Go to Source button highlighted." border="false":::
- 
-This will take you to the node in the topic where the bot variable was created. 
+    :::image type="content" source="media/bot-variable-source-teams.png" alt-text="Screenshot showing the Variable Properties pane, with the Go to Source button highlighted." border="false":::
+
+This will take you to the node in the topic where the bot variable was created.
 
 **Find all topics using a bot variable:**
 
 1. Select any bot variable in the authoring canvas.
 
-1. On the **Variable properties** pane, in the **Used by** section, select any of the topics where the variable is used to go straight to that topic and node. 
+1. On the **Variable properties** pane, in the **Used by** section, select any of the topics where the variable is used to go straight to that topic and node.
 
-    :::image type="content" source="media/authoring-variables-bot-teams/bot-variable-used-by-teams.png" alt-text="Screenshot showing the list of topics used by a variable in the Variable Properties pane." border="false":::
- 
+    :::image type="content" source="media/bot-variable-used-by-teams.png" alt-text="Screenshot showing the list of topics used by a variable in the Variable Properties pane." border="false":::
+
 ## Delete bot variables
 
-When removing a bot variable used in other topics, the references to that variable in the topics will be marked as `Unknown`. 
+When removing a bot variable used in other topics, the references to that variable in the topics will be marked as `Unknown`.
 
 You'll receive a warning about deleting the bot variable before you can confirm the operation.
 
 :::image type="content" source="media/authoring-variables-bot-teams/bot-variable-delete-teams.png" alt-text="The bot variable delete message indicates that references to that variable will be labeled as unknown." border="false":::
   
-Nodes that contain references to the deleted bot variable will tell you they contain an unknown variable. 
+Nodes that contain references to the deleted bot variable will tell you they contain an unknown variable.
 
 :::image type="content" source="media/authoring-variables-bot-teams/bot-variable-unknown-node-teams.png" alt-text="Screenshot of a node with references to an unknown variable, which are marked as red within the message node's text, and indicated with a warning that says Bot message contains unknown variable." border="false":::
-
 
 Topics with nodes that contain references to deleted bot variables might stop working. Ensure that you remove or correct all the topics that were using the deleted variable before publishing.
 
@@ -97,7 +93,5 @@ For more details on complex and advanced scenarios using bot variables, includin
 ## Related links
 
 - [Use variables](authoring-variables-teams.md)
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

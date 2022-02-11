@@ -2,7 +2,7 @@
 title: "Use lesson topics to understand capabilities in Microsoft Teams"
 description: "Lesson topics are templates that help you understand how to create conversations in the Power Virtual Agents app in Teams."
 keywords: "PVA"
-ms.date: 01/06/2022
+ms.date: 01/22/2022
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -12,29 +12,24 @@ ms.custom: authoring, ceX, teams
 ms.collection: virtual-agent
 ---
 
-
-
 # Use lesson topics in Power Virtual Agents in Teams
 
 Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
+>
 > - [Power Virtual Agents web app](../authoring-template-topics.md)
 > - [Power Virtual Agents app in Microsoft Teams](authoring-template-topics-teams.md)
 
-
-
-Power Virtual Agents includes a set of four lessons from which you can see examples of topics. These lessons range from simple to complex scenarios that use [conditional branching](authoring-create-edit-topics-teams.md) and [custom entities](advanced-entities-slot-filling-teams.md).
+Power Virtual Agents includes a set of four lessons from which you can see examples of topics. These range from simple to complex scenarios that use [conditional branching](authoring-create-edit-topics-teams.md) and [custom entities](advanced-entities-slot-filling-teams.md).
 
 ## Prerequisites
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations-teams.md)]
 
-
-
 ## Access and use lesson topics for new bots
 
-When a bot is created, several lessons are automatically created as topics. 
+When a bot is created, several lessons are automatically created as topics.
 
 While the topics are functional, they are examples for the purposes of learning how to create content for your bots and are not designed for production use.
 
@@ -48,8 +43,8 @@ While the topics are functional, they are examples for the purposes of learning 
 
    :::image type="content" source="media/authoring-template-topics-teams/template-list-teams.png" alt-text="List of lesson topics." border="false":::
 
->[!IMPORTANT]
->You will see these lessons when you create a new bot. If you have previously created a bot and don't see them, try creating a new bot and then going to the **Topics** tab.
+> [!IMPORTANT]
+> You will see these lessons when you create a new bot. If you have previously created a bot and don't see them, try creating a new bot and then going to the **Topics** tab.
 
 ## Available lesson topics
 
@@ -71,22 +66,16 @@ A variable is a name for an item that will be used later in the topic flow. In t
 
 This lesson shows you how you can create a simple topic with one conditional branch, [a variable](authoring-variables-teams.md), and [an entity](advanced-entities-slot-filling-teams.md).
 
-When you use entities in your topic, the bot can identify key information from what the user types and automatically fill in that information into your variables. 
+When you use entities in your topic, the bot can identify key information from what the user types and automatically fill in that information into your variables.
 
 For example, if you type "I want to buy a red car," the bot doesn't need to ask which color car, because the bot recognizes the Color entity in what you typed. The bot will then skip the question where you asked for color.
- 
-In this lesson, the bot uses the State entity and will recognize any US state the user enters.
 
+In this lesson, the bot uses the State entity and will recognize any US state the user enters.
 
 ### Lesson 4 - A topic with conditions, variables, and a custom entity
 
-This lesson shows a topic with a conditional branch, [a variable](authoring-variables-teams.md), and [a custom entity](advanced-entities-slot-filling-teams.md). 
+This lesson shows a topic with a conditional branch, [a variable](authoring-variables-teams.md), and [a custom entity](advanced-entities-slot-filling-teams.md).
 
 You can see the bot bypass a follow-up question. For example, try testing with "I want a business laptop."
-
-
-
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

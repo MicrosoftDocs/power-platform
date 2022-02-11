@@ -14,7 +14,6 @@ ms.collection: virtual-agent
 
 # Responding to requests to delete data from Power Virtual Agents
 
-
 Power Virtual Agents offers the following experiences to delete personal data for a specific user:
 
 - [Responding to requests to delete data from Power Virtual Agents](#responding-to-requests-to-delete-data-from-power-virtual-agents)
@@ -27,8 +26,7 @@ Power Virtual Agents offers the following experiences to delete personal data fo
 
 ## Prerequisites
 
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
-
+* [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 
 ## Delete Power Virtual Agents bot chat logs
 
@@ -39,11 +37,11 @@ All bot chat logs are deleted when the bot is deleted. See [steps to delete bot]
 Follow these steps to delete a bot:
 
 1. Open Power Virtual Agents in your browser.
-2. On the **Settings** menu, select **General settings** to display the **General** tab of the **Settings** screen.
+1. On the **Settings** menu, select **General settings** to display the **General** tab of the **Settings** screen.
 
    :::image type="content" source="media/gdpr-delete/general-settings.png" alt-text="General settings." border="false":::
 
-3. In the **Delete bot** section, select **Delete bot**.
+1. In the **Delete bot** section, select **Delete bot**.
 
 All bot content is immediately deleted.
 
@@ -61,6 +59,5 @@ All bot system telemetry is automatically deleted within 29 days. No action from
 
 > [!NOTE]
 > Removing personal data includes removing all personal data and system-generated logs except audit log information.
-
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

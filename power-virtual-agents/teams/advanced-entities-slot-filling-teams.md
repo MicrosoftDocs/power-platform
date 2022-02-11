@@ -2,7 +2,7 @@
 title: "Create and use entities in Microsoft Teams"
 description: "Use entities in your chatbots to create sophisticated conversations."
 keywords: "PVA, teams"
-ms.date: 9/22/2020
+ms.date: 01/25/2022
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -14,37 +14,25 @@ ms.collection: virtual-agent
 
 # Use entities and slot filling in Power Virtual Agents bots in Teams
 
-
 Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
+>
 > - [Power Virtual Agents web app](../advanced-entities-slot-filling.md)
 > - [Power Virtual Agents app in Microsoft Teams](advanced-entities-slot-filling-teams.md)
 
+Entities in chatbots let you store information in similar groups.
 
-
-Entities in chatbots let you store information in similar groups. 
-
-One fundamental aspect of natural language understanding (which is the ability for chatbots to understand a person's natural way of talking) is to identify *entities* in a user dialog. 
+One fundamental aspect of natural language understanding (which is the ability for chatbots to understand a person's natural way of talking) is to identify *entities* in a user dialog.
 
 An entity can be thought of as a unit of information that represents a certain type of a real-world subject, like a phone number, zip code, city, or even a person's name. With the knowledge granted by entities, a bot can smartly recognize the relevant information from a user input and save it for later use.
 
 Using entities can help you expand what you can make chatbots do, and can increase how impactful your chatbot is for other people.
 
-If you're interested in using entities, you should read the [Power Virtual Agents web app documentation for entities](../advanced-entities-slot-filling.md).
+If you're interested in using entities, read the [Power Virtual Agents web app documentation for entities](../advanced-entities-slot-filling.md).
 
-
-Entities in the Power Virtual Agents app on Teams have the same functionality as entities in the web app, and are located in the side navigation menu:
-
-
+Entities in the Power Virtual Agents app on Teams have the same functionality as entities in the web app, and are located in the side menu:
 
 :::image type="content" source="media/advanced-entities-slot-filling-teams/entities-teams-menu.png" alt-text="The entities menu on Teams has a box icon and is labelled as Entities.":::
-
-
-
-
-
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

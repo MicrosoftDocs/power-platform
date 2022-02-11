@@ -2,7 +2,7 @@
 title: "Automatically start a chatbot conversation"
 description: "Configure your bot to start a conversation automatically, as soon as it's loaded"
 keywords: "PVA"
-ms.date: 01/06/2022
+ms.date: 01/25/2022
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -18,6 +18,7 @@ ms.collection: virtualagent
 Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
+>
 > - [Power Virtual Agents web app](configure-bot-greeting.md)
 > - [Power Virtual Agents app in Microsoft Teams](teams/configure-bot-greeting-teams.md)
 
@@ -31,26 +32,27 @@ First, you'll need to deploy a custom canvas that includes arguments that trigge
 
 You can also combine the customized greeting with [customization to the look and feel of the bot](customize-default-canvas.md).
 
->[!IMPORTANT]
->Having the bot start the conversation will show up in your [analytics](analytics-overview.md) and will increase your session count.
->If the user of your bot doesn't engage with the bot (for example, they load the page but don't ask the bot anything), the session will be [marked as an unengaged session](analytics-summary.md#engagement-over-time-chart). 
->This might impact your analytics.
+> [!IMPORTANT]
+> Having the bot start the conversation will show up in your [analytics](analytics-overview.md) and will increase your session count.
+>
+> If the user of your bot doesn't engage with the bot (for example, they load the page but don't ask the bot anything), the session will be [marked as an unengaged session](analytics-summary.md#engagement-over-time-chart).
+>
+> This might impact your analytics.
 
 ## Prerequisites
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 
->[!IMPORTANT]
->You may install and use the sample code included in this documentation only for use with the Microsoft Power Virtual Agents product. The sample code is licensed "as is" and is excluded from any service level agreements or support services. You bear the risk of using it. 
->Microsoft gives no express warranties, guarantees, or conditions and excludes all implied warranties, including merchantability, fitness for a particular purpose, and non-infringement.
-
+> [!IMPORTANT]
+> You may install and use the sample code included in this documentation only for use with the Microsoft Power Virtual Agents product. The sample code is licensed "as is" and is excluded from any service level agreements or support services. You bear the risk of using it.  
+>
+> Microsoft gives no express warranties, guarantees, or conditions and excludes all implied warranties, including merchantability, fitness for a particular purpose, and non-infringement.
 
 ## Retrieve bot ID details
 
-To customize the greeting, you need to know your Bot ID. 
+To customize the greeting, you need to know your Bot ID.
 
-You can get the Bot ID by [going to the Mobile app under Channels](publication-connect-bot-to-custom-application.md#retrieve-your-power-virtual-agents-bot-parameters). 
-
+You can get the Bot ID by [going to the Mobile app under Channels](publication-connect-bot-to-custom-application.md#retrieve-your-power-virtual-agents-bot-parameters).
 
 ## Deploy a custom canvas for your bot
 
@@ -58,7 +60,7 @@ You'll need to deploy a custom canvas that includes arguments that cause the [de
 
 1. [Create and publish a bot](fundamentals-get-started.md).
 
-2. Copy and paste the HTML code below and save it as *index.html*.  
+1. Copy and paste the HTML code below and save it as *index.html*.  
     You can also copy and paste the code below into the [w3schools.com HTML try it editor](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default). You will still need to add your Bot ID.  
 
     ```HTML
@@ -170,11 +172,11 @@ You'll need to deploy a custom canvas that includes arguments that cause the [de
         </html>
     ```
 
-4. In the *index.html* file you created, enter your Bot ID at the line `var BOT_ID = "<ENTER YOUR BOT ID>"`.
+1. In the *index.html* file you created, enter your Bot ID at the line `var BOT_ID = "<ENTER YOUR BOT ID>"`.
 
-5. Open *index.html* using a modern browser (for example, Microsoft Edge) to open the bot in the custom canvas.
+1. Open *index.html* using a modern browser (for example, Microsoft Edge) to open the bot in the custom canvas.
 
-6. Test the bot to ensure you are receiving responses from your bot and that it's working correctly.  
+1. Test the bot to ensure you are receiving responses from your bot and that it's working correctly.  
     If you encounter problems, make sure you've published your bot, and that your Bot ID has been inserted in the correct place. It should be after the equals sign (=) at the line `var BOT_ID`, and surrounded by double quotation marks (").
 
 ## Change the bot's default greeting
@@ -203,20 +205,18 @@ We recommend you modify the system greeting topic so that you don't have to edit
 
     :::image type="content" source="media/configure-bot-greeting/channel-publish-latest-content.png" alt-text="Publish latest bot content." border="false":::
 
-You can now test your bot by going to the webpage where you deployed your bot's custom canvas. You'll see the bot start the conversation by automatically showing the greeting topic.
-
+You can now test your bot by going to the webpage where you deployed your bot's custom canvas. You'll see the bot start the conversation by automatically showing the greeting topic.
 
 ### Create a new user topic
 
->[!WARNING]
->Using a user topic to start a conversation will increase your [billed sessions](analytics-billed-sessions.md#definition-of-a-billed-session). A billed session is an interaction between a customer and a bot and represents one unit of consumption. The billed session begins when a user topic is triggered. For more information, see the topic [Analyze billed session information](analytics-billed-sessions.md).
+> [!WARNING]
+> Using a user topic to start a conversation will increase your [billed sessions](analytics-billed-sessions.md#definition-of-a-billed-session). A billed session is an interaction between a customer and a bot and represents one unit of consumption. The billed session begins when a user topic is triggered. For more information, see the topic [Analyze billed session information](analytics-billed-sessions.md).
 
+1. Select **Topics** on the side pane.
 
-1. Select **Topics** on the side navigation pane.
+1. Select **New topic**, and give it a name.
 
-1. Select **New topic**, and give it a name. 
-
-1. Add the text inside the **Message** node. 
+1. Add the text inside the **Message** node.
 
 1. Select **Save** when you've finished editing the message.
 
@@ -232,10 +232,6 @@ You can now test your bot by going to the webpage where you deployed your bot's
 
 1. [**Publish** your bot](publication-fundamentals-publish-channels.md).
 
-You can now test your bot by going to the webpage where you deployed your bot's custom canvas. You'll see the bot start the conversation by automatically showing the new topic.
-
-
-
-
+You can now test your bot by going to the webpage where you deployed your bot's custom canvas. You'll see the bot start the conversation by automatically showing the new topic.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

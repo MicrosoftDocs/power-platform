@@ -14,29 +14,35 @@ ms.collection: virtual-agent
 # GDPR compliance for Power Virtual Agents
 
 > [!div class="op_single_selector"]
+>
 > - [Power Virtual Agents web app](gdpr-summary.md)
 > - [Power Virtual Agents app in Microsoft Teams](teams/gdpr-summary-teams.md)
-
 
 The EU Data Protection Regulation (GDPR) gives rights to people (known in the regulation as *data subjects*) to manage the personal data that has been collected by an employer or other type of agency or organization (known as the *data controller* or just *controller*). Personal data is defined broadly under the GDPR as any data that relates to an identified or identifiable natural person. The GDPR gives data subjects specific rights to their personal data; these rights include obtaining copies of it, requesting changes to it, restricting the processing of it, deleting it, or receiving it in an electronic format so it can be moved to another controller. A formal request by a data subject to a controller to take an action on their personal data is called in this document a *Data Subject Rights Request* or DSR request.
 
 The guide discusses how to use Microsoft's products, services and administrative tools to help our controller customers find and act on personal data to respond to DSR requests. Specifically, this includes how to find, access, and act on personal data that reside in Microsoft's cloud. Here's a quick overview of the processes outlined in this guide:
-1.	**Discover** — Use search and discovery tools to more easily find customer- data that may be the subject of a DSR request. Once potentially responsive documents are collected, you can perform one or more of the DSR actions described in the following steps to respond to the request. Alternatively, you may determine that the request doesn't meet your organizations guidelines for responding to DSR requests.
-2.	**Access** — Retrieve personal data that resides in the Microsoft cloud and, if requested, make a copy of it that can be available to the data subject.
-3.	**Rectify** — Make changes or implement other requested actions on the personal data, where applicable.
-4.	**Restrict** — Restrict the processing of personal data, either by removing licenses for various online services or turning off the desired services where possible. You can also remove data from the Microsoft cloud and retain it on-premises or at another location.
-5.	**Delete** — Permanently remove personal data that resided in Microsoft's cloud.
-6.	**Export** — Provide an electronic copy (in a machine-readable format) of personal data to the data subject.
+
+1. **Discover** — Use search and discovery tools to more easily find customer- data that may be the subject of a DSR request. Once potentially responsive documents are collected, you can perform one or more of the DSR actions described in the following steps to respond to the request. Alternatively, you may determine that the request doesn't meet your organizations guidelines for responding to DSR requests.
+
+1. **Access** — Retrieve personal data that resides in the Microsoft cloud and, if requested, make a copy of it that can be available to the data subject.
+
+1. **Rectify** — Make changes or implement other requested actions on the personal data, where applicable.
+
+1. **Restrict** — Restrict the processing of personal data, either by removing licenses for various online services or turning off the desired services where possible. You can also remove data from the Microsoft cloud and retain it on-premises or at another location.
+
+1. **Delete** — Permanently remove personal data that resided in Microsoft's cloud.
+
+1. **Export** — Provide an electronic copy (in a machine-readable format) of personal data to the data subject.
 Each section in this guide outlines the technical procedures that a data controller organization can take to respond to a DSR request for personal data in Microsoft's cloud
 
 ## Prerequisites
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 
-
 ## GDPR terminology
 
 The following provides definitions of terms that are relevant to this guide:
+
 - *Controller* — The natural or legal person, public authority, agency or other body which, alone or jointly with others, determines the purposes and means of the processing of personal data; where the purposes and means of such processing are determined by Union or Member State law, the controller or the specific criteria for its nomination may be provided for by Union or Member State law.
 - *Personal data and data subject* — Any information relating to an identified or identifiable natural person ('data subject'); an identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural or social identity of that natural person.
 - *Processor* — A natural or legal person, public authority, agency or other body which processes personal data on behalf of the controller.
@@ -68,6 +74,5 @@ When data subjects exercise their rights and make requests, consider the followi
 If a data subject asks you to rectify their personal data that resides in your organization, you and your organization must determine if it's appropriate to honor the request. Rectifying the data might include taking actions such as editing, redacting, or removing personal data.
 
 You can use Azure AD to manage Power Virtual Agents users' identities. Enterprise customers can manage DSR rectify requests, including limited editing features, per the nature of a given Microsoft service. As a data processor, Microsoft doesn't offer the ability to correct system-generated logs because these logs reflect factual activities and constitute a historical record of events within Microsoft services.
-
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
