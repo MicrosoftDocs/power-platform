@@ -2,12 +2,11 @@
 title: "System Settings Calendar tab   | MicrosoftDocs"
 description: System Settings Calendar tab 
 author: jimholtz
-manager: kvivek
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/31/2020
 ms.subservice: admin
+ms.date: 09/10/2020
 ms.author: jimholtz
 search.audienceType: 
   - admin
@@ -19,7 +18,7 @@ search.app:
 ---
 # System Settings Calendar tab
 
-Use the settings on this page to configure calendar settings for model-driven apps in Dynamics 365.  
+Use the settings on this page to configure calendar settings for customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation).  
   
 ## Open the Calendar System Settings dialog box 
   

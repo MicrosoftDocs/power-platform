@@ -82,6 +82,7 @@ Add the following URLs to the approved list to allow traffic to proceed to these
 | https://dynamics.microsoft.com |    |
 | https://*.api.powerplatform.com | Required for Power Platform API connectivity used internally by Microsoft products as well as admin automation scenarios as  [documented here](programmability-extensibility-overview.md).
 
+
 ## Ports
 Dataverse exposes ports *18085* and *8085* to perform maintenance operations for customer databases.  The maintenance operations are executed to ensure that Microsoft Dynamics 365 environments are performing at optimal performance standards.  These maintenance operations include but are not limited to: 
 

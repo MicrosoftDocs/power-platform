@@ -9,7 +9,7 @@ ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/18/2021
+ms.date: 01/04/2022
 search.audienceType: 
   - admin
 search.app:
@@ -141,21 +141,21 @@ You must be a member of an appropriate administrator role to do these tasks. [!I
 
 To enable a user in an environment that has a Dataverse database, you enable sign-in for the user, assign a license to the user, and then add the user to a security group.
 
-**To enable sign-in**
+#### To enable sign-in
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).
 2. Select **Users** > **Active users**, and then select the user. 
 3. Ensure that under the user's display name, you see **Sign in allowed**. If you don't, select **Block this user**, and then unblock sign in.
 
 
-**To assign a license**
+#### To assign a license
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).
 2. Select **Users** > **Active users**, and then select the user. 
 3. Select the **Licenses and Apps** tab, and then select the licenses you want to assign. 
 4. Select **Save changes**. 
 
-**To add a user to a security group**
+#### To add a user to a security group
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).
-2. Select **Groups** > **Groups**. 
+2. Select **Teams & groups** > **Active teams & groups**. 
 3. Select the security group that's associated with your environment. 
 4. Select the **Members** tab. 
 5. Under **Members**, select **View all and manage members** >**Add members**.
@@ -165,15 +165,15 @@ To enable a user in an environment that has a Dataverse database, you enable sig
 
 To disable a user account in an environment that has a Dataverse database, you can either remove the user from the security group or remove the license from the user.
 
-**To remove a user from a security group**
+#### To remove a user from a security group
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).
-2. Select **Groups** > **Groups**. 
+2. Select **Teams & groups** > **Active teams & groups**. 
 3. Select the security group that's associated with your environment. 
 4. Select the **Members** tab. 
 5. Under **Members**, select **View all and manage members**
 6. Select the users in the list to remove them, and then select **Save**.
 
-**To remove a license from a user**
+#### To remove a license from a user
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).
 2. Select **Users** > **Active users**, and then select the user. 
 3. Select the **Licenses and Apps** tab, and then select the licenses you want to remove. 
@@ -272,7 +272,7 @@ You need to have the System Administrator security role or equivalent permission
 
 1. Create a user account in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)].  
   
-    Be sure to assign a license to the account. You'll remove the license (in step 12) after you've assigned the **Administrative** access mode.
+   Be sure to assign a license to the account. You'll remove the license (in step 12) after you've assigned the **Administrative** access mode.
   
 2. In the **Optional settings** form, expand **Roles**.
 
