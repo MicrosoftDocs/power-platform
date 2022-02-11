@@ -33,11 +33,11 @@ You customize these fallback behaviors by adding the system **Fallback** topic. 
 
 ## Add a system fallback topic
 
-1. At the bottom of the side pane, select **Settings** :::image type="content" source="media/settings-icon-teams.png" alt-text="Settings icon." border="false":::, and then select **System fallback**.
+1. At the bottom of the side pane, select **Settings** :::image type="content" source="../media/authoring-system-fallback-topic/settings-icon-teams.png" alt-text="Settings icon." border="false":::, and then select **System fallback**.
 
 1. Select **"+Add"**.
 
-  :::image type="content" source="media/settings-system-fallback-pane-teams.png" alt-text="Open System fallback settings.":::
+  :::image type="content" source="../media/authoring-system-fallback-topic/settings-system-fallback-pane-teams.png" alt-text="Open System fallback settings.":::
 
 A system fallback topic is added. The bot will go to this topic when it can't find an appropriate topic or doesn't understand the user's input.
 
@@ -49,11 +49,11 @@ After you add the system fallback topic, you can open it by selecting **Go to fa
 
 You'll also see the **Fallback** topic listed under **System Topics** in the topic list.
 
-:::image type="content" source="media/authoring-system-fallback-topic-teams/system-fallback-topic-list-teams.png" alt-text="Fallback in the topic list." border="false":::
+:::image type="content" source="../media/authoring-system-fallback-topic/system-fallback-topic-list-teams.png" alt-text="Fallback in the topic list." border="false":::
 
 When you open this topic in the authoring canvas, you'll see that the default fallback topic contains two nodes: a **Message** node that rephrases the user input and an **Escalate** node that redirects to a live agent.
 
-:::image type="content" source="media/system-fallback-default-content-teams.png" alt-text="Fallback topic default content." border="false":::
+:::image type="content" source="../media/authoring-system-fallback-topic/system-fallback-default-content-teams.png" alt-text="Fallback topic default content." border="false":::
 
 You can customize this topic as with any other [system topic](authoring-create-edit-topics-teams.md). You can also use the *UnrecognizedTriggerPhrase* variable that stores the user input the bot couldn't understand. For example, you can use the variable as an input and pass it to a [Power Automate flow](advanced-flow-teams.md) or [Bot Framework skill](advanced-use-skills-teams.md).
 
@@ -64,7 +64,7 @@ You can customize this topic as with any other [system topic](authoring-create-e
 
 To reset the system fallback behavior and return it to its default behavior, go to **Settings** and then **System Fallback**. In the **System fallback** section, select **Delete** to remove the fallback topic.
 
-:::image type="content" source="media/delete-system-fallback-topic-teams.png" alt-text="Delete the fallback topic.":::
+:::image type="content" source="../media/authoring-system-fallback-topic/delete-system-fallback-topic-teams.png" alt-text="Delete the fallback topic.":::
 
 > [!WARNING]
 > This will remove the fallback topic and any changes you made to it.

@@ -43,7 +43,7 @@ For bot and topic limits, see the [Quotas, limits, and configuration values](../
 
 When you create a bot, a number of topics are automatically created.
 
-:::image type="content" source="media/authoring-create-edit-topics-teams/topics-system-teams.png" alt-text="Four lesson topics and a number of system topics are in the Topics list.":::
+:::image type="content" source="../media/authoring-create-edit-topics/topics-system-teams.png" alt-text="Four lesson topics and a number of system topics are in the Topics list.":::
   
 These topics fall into two categories:
   
@@ -70,7 +70,7 @@ You can edit both of these topic types in the same manner as for topics you crea
 
    A trigger phrase is a phrase that a customer enters in the chat window to start a conversation with the bot. Once the conversation is started, the conversation follows the path you define. You can specify more than one trigger phrase for a topic. You can include punctuation in a trigger phrase, but it's best to use short phrases rather than long sentences.
 
-   :::image type="content" source="../media/topics-details-triggers.png" alt-text="Edit trigger phrases in the trigger phrases pane":::
+   :::image type="content" source="../media/authoring-create-edit-topics/topics-details-triggers.png" alt-text="Edit trigger phrases in the trigger phrases pane":::
 
 1. Select **Details**.
 
@@ -96,7 +96,7 @@ You can edit both of these topic types in the same manner as for topics you crea
 
 1. In the topic list, select the topic you want to edit.
 
-   :::image type="content" source="../media/topics-details-canvas.png" alt-text="Selecting a topic will take you to the authoring canvas":::
+   :::image type="content" source="../media/authoring-create-edit-topics/topics-details-canvas.png" alt-text="Selecting a topic will take you to the authoring canvas":::
 
 1. Power Virtual Agents opens the topic in the authoring canvas and displays the topic's trigger phrases. The authoring canvas is where you define the conversation path between a customer and the bot.
 
@@ -106,7 +106,7 @@ You can edit both of these topic types in the same manner as for topics you crea
 
 1. You can add additional nodes by selecting the **Plus** (**+**) icon on the line or branch between or after a node.
 
-   :::image type="content" source="media/authoring-create-edit-topics-teams/handoff-add-node-teams.png" alt-text="Screenshot of adding a node." border="false":::
+   :::image type="content" source="../media/authoring-create-edit-topics/handoff-add-node-teams.png" alt-text="Screenshot of adding a node." border="false":::
 
 ### Insert nodes
 
@@ -120,42 +120,42 @@ You can:
 - **Show a message**
 - **End with survey**
 
-:::image type="content" source="media/topics-nodes-teams.png" alt-text="When adding a node, you can choose from five options":::
+:::image type="content" source="../media/authoring-create-edit-topics/topics-nodes-teams.png" alt-text="When adding a node, you can choose from five options":::
 
 If the node you are adding is the last in a topic, you can also add a **Go to another topic** node.
 
-:::image type="content" source="media/authoring-create-edit-topics-teams/topics-nodes-other-topic-teams.png" alt-text="Go to another topic.":::
+:::image type="content" source="../media/authoring-create-edit-topics/topics-nodes-other-topic-teams.png" alt-text="Go to another topic.":::
 
 #### Ask a question
 
 1. To have the bot ask a question and get a response from the user, select **+** to add a node, and then **Ask a question** to add a new **Question** node.
 
-    :::image type="content" source="media/authoring-create-edit-topics-teams/topics-question-teams.png" alt-text="Add a new question mode." border="false":::
+    :::image type="content" source="../media/authoring-create-edit-topics/topics-question-teams.png" alt-text="Add a new question mode." border="false":::
 
-1. Enter the question phrase in the first text box, **Ask a question**.
+2. Enter the question phrase in the first text box, **Ask a question**.
 
-1. Choose from several options for the user's response in the **Identify** field.
+3. Choose from several options for the user's response in the **Identify** field.
 
    These options determine what the bot should be listening for in the user's response. For example, they could be multiple choice options, a number, or a specific string. To understand more about the different options, see [Use entities in a conversation](advanced-entities-slot-filling-teams.md).
 
-1. Depending on what you choose in the **Identify** field, you can enter what options the user should have.
+4. Depending on what you choose in the **Identify** field, you can enter what options the user should have.
 
    For example, if you select **Multiple choice options**, you can then enter the options the user can specify in the **Options for user** field. Each option is presented as a multiple choice button to the user, but users can also type in their answer in the bot.
 
    The conversation editor creates separate paths in the conversation, depending on the customer's response. The conversation path leads the customer to the appropriate path for each user response. You can add additional nodes to create branching logic, and specify what the bot should respond with for each variable.
 
-1. You can [save the user response in a variable](authoring-variables-teams.md) to be used later.
+5. You can [save the user response in a variable](authoring-variables-teams.md) to be used later.
 
 > [!TIP]
 > You can define synonyms for each option. This can help the bot to determine the correct option in case it isn't clear what the user's response should be mapped to.
 >
 > 1. Select the menu icon on the top of the **Question** node, and then select **Options for user**.
 >
->    :::image type="content" source="media/authoring-create-edit-topics-teams/topics-question-options-teams.png" alt-text="Select options for users." border="false":::
+>    :::image type="content" source="../media/authoring-create-edit-topics/topics-question-options-teams.png" alt-text="Select options for users." border="false":::
 >
 > 1. Select the **Synonyms** icon for the option you want to add additional keywords to.
 >
->    :::image type="content" source="media/authoring-create-edit-topics-teams/topics-question-synonyms-teams.png" alt-text="Select the synonyms icon." border="false":::
+>    :::image type="content" source="../media/authoring-create-edit-topics/topics-question-synonyms-teams.png" alt-text="Select the synonyms icon." border="false":::
 >
 > 1. Add the keywords individually, and then once you're done, select **Done** to return to the **Authoring canvas**.
 
@@ -165,7 +165,7 @@ If the node you are adding is the last in a topic, you can also add a **Go to an
 
 1. Choose the variable you want to use to determine if the bot conversation should branch at this point.
 
-    :::image type="content" source="media/authoring-create-edit-topics-teams/topics-branch-teams.png" alt-text="Choose a variable." border="false":::
+    :::image type="content" source="../media/authoring-create-edit-topics/topics-branch-teams.png" alt-text="Choose a variable." border="false":::
 
 #### Call an action
 
@@ -185,7 +185,7 @@ When you end the conversation, you can have a survey appear that asks the user i
 
 1. At the end of a response that resolves the user's issue or answers the question, select **End with survey**.
 
-    :::image type="content" source="media/topics-nodes-survey-teams.png" alt-text="End with survey." border="false":::
+    :::image type="content" source="../media/authoring-create-edit-topics/topics-nodes-survey-teams.png" alt-text="End with survey." border="false":::
 
 #### Go to another topic
 
@@ -193,13 +193,13 @@ When you end the conversation, you can have a survey appear that asks the user i
 
 1. In the flyout menu, select the topic the bot should divert to. For example, you might want to send the user to a specific topic about the closure of a store if they ask about store hours for that store.
 
-    :::image type="content" source="media/authoring-create-edit-topics-teams/topics-nodes-other-topic-flyout-teams.png" alt-text="Go to another topic node with options for other topics.":::
+    :::image type="content" source="../media/authoring-create-edit-topics/topics-nodes-other-topic-flyout-teams.png" alt-text="Go to another topic node with options for other topics.":::
 
 When the bot goes to another topic, the bot will go through the conversation path for that topic and then return to the original topic, at the place where it left.
 
 You can consider the redirected topic as a "subtopic".
 
-:::image type="content" source="media/authoring-create-edit-topics-teams/authoring-subtopic-redirect-teams.png" alt-text="Screenshot of the authoring canvas showing nodes under a redirected topic node.":::
+:::image type="content" source="../media/authoring-create-edit-topics/authoring-subtopic-redirect-teams.png" alt-text="Screenshot of the authoring canvas showing nodes under a redirected topic node.":::
 
 If you redirect to any of the following [system topics](#use-system-and-sample-topics), however, the entire conversation will end:
 
@@ -220,7 +220,7 @@ You can also [use variables that you have defined elsewhere](authoring-variables
 
 1. Select **Delete**.
 
-    :::image type="content" source="media/authoring-create-edit-topics-teams/topics-delete-teams.png" alt-text="Select the menu icon and then the delete button." border="false":::
+    :::image type="content" source="../media/authoring-create-edit-topics/topics-delete-teams.png" alt-text="Select the menu icon and then the delete button." border="false":::
 
 ## Test and publish your bot
 

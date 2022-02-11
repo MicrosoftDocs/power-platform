@@ -33,6 +33,6 @@ If you're interested in using entities, read the [Power Virtual Agents web app d
 
 Entities in the Power Virtual Agents app on Teams have the same functionality as entities in the web app, and are located in the side menu:
 
-:::image type="content" source="media/advanced-entities-slot-filling-teams/entities-teams-menu.png" alt-text="The entities menu on Teams has a box icon and is labelled as Entities.":::
+:::image type="content" source="../media/advanced-entities-slot-filling/entities-teams-menu.png" alt-text="The entities menu on Teams has a box icon and is labelled as Entities.":::
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
