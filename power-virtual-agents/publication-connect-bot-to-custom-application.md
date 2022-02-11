@@ -39,7 +39,7 @@ Connecting your bot to a web-based app is relatively straightforward as it invol
 
 1. Copy the code under the **Web-based apps** section and provide it to your app developers to add to your web-based app.
 
-    :::image type="content" source="media/channel-web-based-application.png" alt-text="Add bot to web-based application." border="false":::
+    :::image type="content" source="media/publication-connect-bot-to-custom-app/channel-web-based-application.png" alt-text="Add bot to web-based application." border="false":::
 
 ## Connect your bot to a native or custom app
 

@@ -68,10 +68,10 @@ You can share your bot to allow everyone in the same organization the bot to cha
 
 1. Select **User - can use the bot** option.
 
-  :::image type="content" source="media/admin-share-bots/sharing-share-everyone-in-org.PNG" alt-text="Set user permission for everyone in the organization in Sharing UI.":::
+   :::image type="content" source="media/admin-share-bots/sharing-share-everyone-in-org.PNG" alt-text="Set user permission for everyone in the organization in Sharing UI.":::
 
-    > [!NOTE]
-    > Power Virtual Agents will not send email invitations to everyone in the organization. You can [copy the link for the Demo website](publication-connect-bot-to-web-channels.md#demo-website) and share it with users directly so they can chat with the bot.
+   > [!NOTE]
+   > Power Virtual Agents will not send email invitations to everyone in the organization. You can [copy the link for the Demo website](publication-connect-bot-to-web-channels.md#demo-website) and share it with users directly so they can chat with the bot.
 
 1. Select **Share** to share the bot with everyone in the organization.
 
@@ -99,7 +99,7 @@ You can stop sharing the bot with a security group or everyone in your organizat
 
   :::image type="content" source="media/admin-share-bots/sharing-unshare-everyone-in-org.PNG" alt-text="Unshare everyone in the organization in Sharing UI":::
 
-3. Select **Share** to stop sharing the bot with everyone in the organization.
+1. Select **Share** to stop sharing the bot with everyone in the organization.
 
 1. Select **Share** to stop sharing the bot with everyone in the organization.
 
