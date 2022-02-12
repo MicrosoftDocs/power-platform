@@ -668,7 +668,10 @@
             href: create-team-template-add-entity-form.md
         - name: Encryption
           items:
-          - name: Encryption
+          # comment out the next 2 lines until reviewed.
+          - name: About encryption
+            href: about-encryption.md
+          - name: Encrypt your data
             href: data-encryption.md
           - name: Manage encryption key
             href: manage-encryption-key.md      
