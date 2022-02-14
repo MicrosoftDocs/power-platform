@@ -35,8 +35,6 @@ You can search the Azure IP Ranges json file for the AzureCloud service tag for 
 
 :::image type="content" source="media/example-azure-cloud-powerplatforminfra.png" alt-text="AzureCloud service tag for Power Platform IPs":::
 
-Blocked IPs can also impact connecting Dynamics 365 apps to [Microsoft Exchange Server (on-premises)](connect-exchange-server-on-premises.md). 
-
 ### Dynamics 365 IP address ranges
 
 See the following:
@@ -56,7 +54,7 @@ Blocked IPs can also impact connecting Dynamics 365 apps to [Microsoft Exchange 
 
 ### Power Platform URLs
 
-### URLs required for specific apps
+**URLs required for specific apps**
 
 - **Power Apps**: [Required services](/powerapps/maker/canvas-apps/limits-and-config)
 - **Power Automate**: [Required services](/power-automate/ip-address-configuration#required-services)
