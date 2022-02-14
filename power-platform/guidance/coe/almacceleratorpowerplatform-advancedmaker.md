@@ -31,6 +31,9 @@ Watch how to use the ALM Accelerator for Power Platform solution.
 
 ## Walk-through: ALM Accelerator advanced maker experience
 
+> [!IMPORTANT]
+> The following user experience has been configured using the ALM Accelerator for Power Platform Administration app that is installed with the ALM accelerator solution. For more information on how to use the administration app and configure and share experiences, see [Creating user settings and profiles](setup-almacceleratorpowerplatform-deployment-profiles.md)
+
 1. Once you have installed and configured the app, start it from your environment under **Apps** by selecting **ALM Accelerator for Power Platform**.
 
 1. When you're prompted to create connections and grant consent, create the necessary connections or accept the consent dialog.
@@ -43,7 +46,7 @@ Watch how to use the ALM Accelerator for Power Platform solution.
 
 1. Once the environment is selected, the main screen displays a list of all the unmanaged solutions in the environment. Depending on the *user deployment settings* your user has assigned, you'll be able to see the following options for each solution:
 
-   - **Commit Solution**: Commits all the changes you have done within the solution in your version control system.
+   - **Commit Solution**: Commits all the changes you have done within the solution in your version control system. Additionally, the commit will create your deployment pipelines in Azure DevOps as part of the commit process.
    - **Deploy Solution**: Allows you to move the changes across environment.
    - **Choose a Profile**: Allows you to configure what organization, project, repository, target branch, and environments your solution can be deployed to.
    - **Delete Solution**: Deletes the solution allowing you to reimport if necessary from source control again with the latest changes.

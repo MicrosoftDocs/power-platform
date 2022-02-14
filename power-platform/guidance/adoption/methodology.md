@@ -33,11 +33,11 @@ Microsoft Power Platform adoption best practices are a collection of documentati
 This guidance aligns to the following buckets and responsibilities of your adoption.
 
 | | |
-|--|--|
+|:--:|--|
 | ![Strategy icon](media/i_digital-art.png "Strategy icon") | [Strategy and vision](strategy-best-practices.md): Define roles, responsibilities and expected outcomes of adoption. |
-![Admin and governance icon](media/i_config-tools.png "Admin and governance icon") | [Admin and governance](admin-best-practices.md): Implement digital guardrails for your makers to create with confidence. |
-![Nurture and educate icon](media/i_get-started.png "Nurture and educate icon")       |  [Nurture and educate](nurture-best-practices.md): Accelerate your adoption with a thriving internal community. |
-
+| ![Admin and governance icon](media/i_config-tools.png "Admin and governance icon") | [Admin and governance](admin-best-practices.md): Implement digital guardrails for your makers to create with confidence. |
+| ![Nurture and educate icon](media/i_get-started.png "Nurture and educate icon")       |  [Nurture and educate](nurture-best-practices.md): Accelerate your adoption with a thriving internal community. |
+| ![Support icon](media/i_support.png "Support icon")       |  [Support](support-strategy.md): Establish a strategy for ongoing production solution and maker education support. |
 
 ## Related resources
 

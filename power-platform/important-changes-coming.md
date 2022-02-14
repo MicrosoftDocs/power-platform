@@ -1,7 +1,7 @@
 ---
 title: "Important changes (deprecations) coming in Power Apps and Power Automate"
 description: Important changes (deprecations) coming in Power Apps and Power Automate 
-ms.date: 01/18/2022
+ms.date: 02/10/2022
 ms.topic: "article"
 ms.assetid: 994cc854-17f6-45d6-bc20-fcf1a3f2d6d6
 searchScope:
@@ -25,7 +25,7 @@ For deprecation information of other products, see [Other deprecation articles](
 
 ## Data Export Service deprecation
 
-Effective November 2021, Data Export Service was deprecated. Data Export Service will continue to work and will be fully supported until it reaches end-of-support and end-of-life in November 2022. This will impact Dynamics 365 and Power Platform customers who use Data Export Service add-on from Microsoft AppSource. We recommend that customers transition to [Azure Synapse Link for Dataverse](/powerapps/maker/data-platform/export-to-data-lake). For more information, see our [blog](https://powerapps.microsoft.com/blog/do-more-with-data-from-data-export-service-to-azure-synapse-link-for-dataverse/) or download [the deprecation playbook](https://aka.ms/DESDeprecationPlaybook).
+Effective November 2021, Data Export Service was deprecated. Data Export Service will continue to work and will be fully supported until it reaches end-of-support and end-of-life in November 2022. This will impact Dynamics 365 and Power Platform customers who use Data Export Service add-on from Microsoft AppSource. The Data Export Service add-on will not be available for download for new customers. Existing customers will be able to download and use this add-on from AppSource. We recommend that customers transition to [Azure Synapse Link for Dataverse](/powerapps/maker/data-platform/export-to-data-lake). For more information, see our [blog](https://powerapps.microsoft.com/blog/do-more-with-data-from-data-export-service-to-azure-synapse-link-for-dataverse/) or download [the deprecation playbook](https://aka.ms/DESDeprecationPlaybook).
 
 ## Dataverse OData v2.0 Service removal
 
@@ -41,9 +41,6 @@ More information: [OData v2.0 Service removal date announcement](https://aka.ms/
 
 
 ## Internet Explorer 11 support for Dynamics 365 and Microsoft Power Platform is deprecated
-
-> [!IMPORTANT]
-> With 2022 release wave 2, Internet Explorer 11 will be blocked. Please switch to a modern browser.
 
 Effective December 2020, Microsoft Internet Explorer 11 support for Microsoft Dynamics 365 and Microsoft Power Platform is deprecated, and Internet Explorer 11 won’t be supported after August  2021. 
 
@@ -214,8 +211,14 @@ It is our goal to deliver a powerful bot experience that allows users to retriev
 
 ## Dynamics 365 Connector is deprecated
 
-Effective May 5, 2020 the [Dynamics 365 connector](/connectors/dynamicscrmonline/) used for Flows, Logic Apps, and Canvas Apps is officially deprecated. We recommend that you don't create new connections using this connector.
+Effective May 5, 2020 the [Dynamics 365 connector](/connectors/dynamicscrmonline/) used for Flows, Logic Apps, and Canvas Apps is officially deprecated. We recommend that you don't create new connections using this connector. 
 
+#### Impact
+Starting April 29, 2022, no new connections can be created for Flows, Logic Apps, and Canvas Apps using the Dynamics 365 connector. Existing connections will continue to work until they are edited, at which time an alternate connector as listed below is required.
+
+On July 28th 2022, all existing uses of the Dynamics 365 connector for Flows, Logic Apps, and Canvas Apps will be disabled. At that time, you must migrate to using one of the options outlined below.
+
+#### Action required by you
 Rather than use the Dynamics 365 connector, the [Microsoft Dataverse connector](/connectors/commondataserviceforapps/) should be your first choice *if you can use it*. You may not be able to use the Microsoft Dataverse connector in every situation today because of the following limitations:
 
 - It isn't available in Logic Apps.
@@ -226,7 +229,6 @@ If you cannot use the Microsoft Dataverse connector, you should use the [Microso
 
 The Microsoft Dataverse connector represents the future for connections using Dataverse. This includes Dynamics 365 apps using Dataverse. Work is underway to make this connector the only connector you will need. But at the current time, the previously mentioned limitations mean that you can't use it in all places where the Dynamics 365 connector or Microsoft Dataverse (legacy) connector can be used today.
 
-At this time, there's no requirement to convert canvas apps, flows, or logic apps to stop using the Dynamics 365 connector because of the known blocking limitations. But you should stop creating new connections with the Dynamics 365 connector and convert them if you can.
 
 |Type|Guidance|
 |---------|---------|
@@ -423,7 +425,6 @@ and supported until they are officially removed from a future major release. *A 
 |                       [globalContext.userSettings.transactionCurrencyId](/powerapps/developer/model-driven-apps/clientapi/reference/xrm-utility/getglobalcontext/usersettings#transactioncurrencyid)                       |                                                                                                                  [globalContext.userSettings.transactionCurrency](/powerapps/developer/model-driven-apps/clientapi/reference/xrm-utility/getglobalcontext/usersettings#transactioncurrency)                                                                                                                   |                                                                                                                                                The replacement method lets you access the display name along with the ID of transaction currency.                                                                                                                                                 |
 |                       [getData](/powerapps/developer/model-driven-apps/clientapi/reference/controls/getdata) and [setData](/powerapps/developer/model-driven-apps/clientapi/reference/controls/setdata) for Silverlight web resources                       |                                                                                                                  None                                                                                                                  |                                                                                                                                                Silverlight is no longer supported. These methods won't be available after October 2020.                                                                                                                                                  |
 |                       [formContext.data.entity.save](/powerapps/developer/model-driven-apps/clientapi/reference/formcontext-data-entity/save)                       |                                                                                                                  [formContext.data.save](/powerapps/developer/model-driven-apps/clientapi/reference/formcontext-data/save)                                                                                                                  |                                                                                                                   |
-|                       [ClientGlobalContext.js.aspx](/powerapps/developer/model-driven-apps/clientapi/reference/getglobalcontext-clientglobalcontext.js.aspx#clientglobalcontextjsaspx)                       |                                                                                                                  None                                                                                                                  |  The ClientGlobalContext.js.aspx page is deprecated and scheduled to be unavailable after October 1, 2022. Use  [Power Apps component framework overview](/powerapps/developer/component-framework/overview) to build configurable and reusable components that enable external integrations in a supported way or use [custom pages](/powerapps/maker/model-driven-apps/model-app-page-overview) to add custom full page or dialog or pane experiences into model-driven apps, with the flexibility of the canvas designer.                                                                                                                 |
 |                       [getObject](/powerapps/developer/model-driven-apps/clientapi/reference/getglobalcontext-clientglobalcontext.js.aspx#clientglobalcontextjsaspx)                       |                                                                                                                  [getContentWindow](/powerapps/developer/model-driven-apps/clientapi/reference/controls/getcontentwindow)                                                                                                                  |                       |
 
 For information about the new client APIs, see [Apply business logic using client scripting in model-driven apps using JavaScript](/powerapps/developer/model-driven-apps/client-scripting)

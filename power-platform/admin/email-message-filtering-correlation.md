@@ -5,7 +5,7 @@ author: mduelae
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/5/2021
+ms.date: 2/4/2022
 ms.subservice: admin
 ms.author: mkaur
 search.audienceType: 
@@ -73,7 +73,7 @@ The email correlation logic goes through each of theses correlation options, in 
     > ![Use correlation to track eamil converstions.](media/email-filter-image2.png)
 
 
-2. **Tracking token correlation**: When an email message is analyzed for correlation, if the subject contains a tracking token, then the system searches for existing emails in Dynamics 365 looking the same tracking token. If there's a match, then the new email message is tracked and related to it the exiting email. This is option is set to **On** by default.
+2. **Tracking token correlation**: When an email message is analyzed for correlation, if the subject contains a tracking token, then the system searches for existing emails in Dynamics 365 looking the same tracking token. If there's a match, then the new email message is tracked and related to it the existing email. This option is set to **On** by default.
 
    > [!NOTE]
    > Tracking token information is visible to the user and it can be changed which can cause an email to correlate with the wrong email.
@@ -119,8 +119,8 @@ By default, customer engagement apps use the following token structure, that con
 |-----------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |                 Prefix                  |                                                                                               Configurable from 1-20 characters. The default value is *Dynamics 365 apps*: The prefix can be unique for each organization or environment. For example, in a multi-tenant deployment of customer engagement apps, we recommend that each organization configure and use a unique prefix.                                                                                               |
 |     Deployment base tracking number     |                                                                                                                                                                                 Configurable from 0-2,147,483,647. Default value is 0. Can be used as an identifier for a specific environment.                                                                                                                                                                                  |
-|         User number digit range         |                                                                                                                          Configurable from 1-9. The default range is three (3) digits. This value determines how many digits to use when customer engagement app generates the numeric identifier for the user who generated the email activity.                                                                                                                          |
-| Incremental message counter digit range | Configurable from 1-9. Default range is three (3) digits. This value determines how many digits to use when customer engagement apps generates the numeric identifier for the email activity (not the individual messages that the activity contains). <br> **Note**: If you use the default value to generate a token with a three-digit number, it will increment the number through 999, and then restart the number at 000. You can use a larger order of digits to reduce the possibility of assigning duplicate tokens to active email threads.|
+|         Number of digits for user numbers         |                                                                                                                          Configurable from 1-10. The default range is three (3) digits. This value determines how many digits to use when customer engagement app generates the numeric identifier for the user who generated the email activity.                                                                                                                          |
+| Number of digits for incremental message counter | Configurable from 1-9. Default range is three (3) digits. This value determines how many digits to use when customer engagement apps generates the numeric identifier for the email activity (not the individual messages that the activity contains). <br> **Note**: If you use the default value to generate a token with a three-digit number, it will increment the number through 999, and then restart the number at 000. You can use a larger order of digits to reduce the possibility of assigning duplicate tokens to active email threads.|
 
  To enable, disable, or configure tracking tokens, do the following::  
 
@@ -169,11 +169,11 @@ There are advanced settings that allow you to manipulate the smart matching beha
 
 Basically it indicate that we internally (by default) will ignore any word at (multiples of it) at the start of the subject line that has a ":" at the end of it example:
 
-|     | **Subject**  | **Ignored words** |
+|     | Subject  | Ignored words |
 |-----|--------------|-------------------|
-| 1   | Test         | None              |
-| 2   | RE: Test     | RE:               |
-| 3   | FW: RE: Test | FW: RE:           |
+| **1**   | Test         | None              |
+| **2**   | RE: Test     | RE:               |
+| **3**  | FW: RE: Test | FW: RE:           |
 
 
 > [!NOTE]

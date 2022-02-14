@@ -18,6 +18,7 @@ ms.collection: virtual-agent
 Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
+>
 > - [Power Virtual Agents web app](../admin-share-bots.md)
 > - [Power Virtual Agents app in Microsoft Teams](admin-share-bots-teams.md)
 
@@ -39,24 +40,27 @@ You can share your bot with security groups so their members can chat with the b
 
     :::image type="content" source="../media/sharing-security-groups/sharing-bot-homepage-teams.PNG" alt-text="Sharing UI entry point in bot homepage.":::
 
-2. Specify the security group name that you would like to share the bot with.
+1. Specify the security group name that you would like to share the bot with.
 
-    >[!NOTE]
-    >You can only share a bot with security groups. You cannot share with Microsoft 365 groups or individual users directly.  
-    >You can manage individual user access by adding or removing users from the security group.
+    > [!NOTE]
+    > You can only share a bot with security groups. You cannot share with individual users directly.  
+    >
+    > You can manage individual user access by adding or removing users from the security group.
+    >
+    > To make a security-enabled group, please refer to [Microsoft Graph documentation](/graph/api/resources/groups-overview#security-groups-and-mail-enabled-security-groups).
 
     :::image type="content" source="../media/sharing-security-groups/sharing-bot-specify-security-group-teams.PNG" alt-text="Specify security group in Sharing UI.":::
 
-3. Review the security group's permissions.
+1. Review the security group's permissions.
 
     :::image type="content" source="../media/sharing-security-groups/sharing-review-sg-permission-teams.PNG" alt-text="Review security group permission in Sharing UI.":::
 
-4. If you want to let users know you've shared the bot with them, select the **Send an email invitation to new users** check box.
+1. If you want to let users know you've shared the bot with them, select the **Send an email invitation to new users** check box.
 
-    >[!NOTE]
-    >Only security groups with email enabled will receive an email invitation. You can directly **Copy link** and share it with users to install the bot in Microsoft Teams.
+    > [!NOTE]
+    > Only security groups with email enabled will receive an email invitation. You can directly **Copy link** and share it with users to install the bot in Microsoft Teams.
 
-5. Select **Share** to share the bot with the security group.
+1. Select **Share** to share the bot with the security group.
 
 ### Share bot with everyone in the organization
 
@@ -64,42 +68,42 @@ You can share your bot to allow everyone in the same organization as the bot to 
 
 1. Select **Share** at the top of the bot's home page.
 
-2. Select **Everyone in _your organization's name_**.
+1. Select **Everyone in _your organization's name_**.
 
-3. Select **User - can use the bot** option.
+1. Select **User - can use the bot** option.
 
     :::image type="content" source="../media/sharing-security-groups/sharing-share-everyone-in-org-teams.PNG" alt-text="Set user permission for everyone in the organization in Sharing UI.":::
 
-    >[!NOTE]
-    >Power Virtual Agents will not send an email invitation to everyone in the organization. You can directly **Copy link** and share it with users to install the bot in Microsoft Teams.
+    > [!NOTE]
+    > Power Virtual Agents will not send an email invitation to everyone in the organization. You can directly **Copy link** and share it with users to install the bot in Microsoft Teams.
 
-4. Select **Share** to share the bot with everyone in the organization.
+1. Select **Share** to share the bot with everyone in the organization.
 
 ### Stop sharing the bot
 
 You can stop sharing the bot with a security group or everyone in your organization.
 
-**Stop sharing with a security group**
+### Stop sharing with a security group
 
 1. Select **Share** at the top of the bot's home page.
 
-2. Select **X** next to the security groups that you want to stop sharing the bot with.
+1. Select **X** next to the security groups that you want to stop sharing the bot with.
 
     :::image type="content" source="../media/sharing-security-groups/sharing-unshare-sg-teams.PNG" alt-text="Unshare security group in Sharing UI.":::
 
-3. Select **Share** to stop sharing the bot with the security groups.
+1. Select **Share** to stop sharing the bot with the security groups.
 
-**Stop sharing with everyone in the organization**
+### Stop sharing with everyone in the organization
 
 1. Select **Share** on the bot's homepage.
 
-2. Select **Everyone in _your organization's name_**.
+1. Select **Everyone in _your organization's name_**.
 
-3. Select **None** option.
+1. Select **None** option.
 
     :::image type="content" source="../media/sharing-security-groups/sharing-unshare-everyone-in-org-teams.PNG" alt-text="Unshare everyone in the organization in Sharing UI.":::
 
-4. Select **Share** to stop sharing the bot with everyone in the organization.
+1. Select **Share** to stop sharing the bot with everyone in the organization.
 
 ## Share bots to collaborate with others
 
@@ -110,19 +114,20 @@ Your permissions are determined by your [Microsoft Teams roles](/microsoftteams/
 - Team Owners can create, view, edit, and configure all bots in the team where they are Team Owners.
 - Team Members can create, edit, and configure bots they have created. They can view other member's bots in the team.
 
->[!NOTE]
->If you are an owner of an Azure Active Directory group associated with a team, but you are not also a member of that group, you might not see the team in the Power Apps and Power Virtual Agents apps in Microsoft Teams.  
->You can add yourself as a member to the team and it will resolve the issue after a few minutes.
+> [!NOTE]
+> If you are an owner of an Azure Active Directory group associated with a team, but you are not also a member of that group, you might not see the team in the Power Apps and Power Virtual Agents apps in Microsoft Teams.
+>
+> You can add yourself as a member to the team and it will resolve the issue after a few minutes.
 
 To share your bot with other users for collaboration, you need to [add them to your team](https://support.microsoft.com/office/add-members-to-a-team-in-teams-aff2249d-b456-4bc3-81e7-52327b6b38e9).
 
->[!NOTE]
->It could take up to 15 minutes before the new team member sees the team in the Power Virtual Agents app.
+> [!NOTE]
+> It could take up to 15 minutes before the new team member sees the team in the Power Virtual Agents app.
 
-You can see a list of the teams you belong to, and each bot within that team by going to the **Chatbots** tab on the top navigation bar. Teams are listed on the left, selecting a team shows the chatbots in that team. Where ever you are in the app, you can always get back to the list of chatbots by selecting **Chatbots** at the top.
+You can see a list of the teams you belong to, and each bot within that team by going to the **Chatbots** tab on the top bar. Teams are listed on the left, selecting a team shows the chatbots in that team. Where ever you are in the app, you can always get back to the list of chatbots by selecting **Chatbots** at the top.
 
->[!TIP]
->**My chatbots** shows all the bots you created and is an easy way for you to find your bot across multiple teams. You can find bots created by other team members by selecting the team.
+> [!TIP]
+> **My chatbots** shows all the bots you created and is an easy way for you to find your bot across multiple teams. You can find bots created by other team members by selecting the team.
 
 :::image type="content" source="media/admin-share-bots-list.png" alt-text="The teams and chatbots are listed in the Chatbots tab.":::
 
@@ -150,8 +155,8 @@ This can help prevent conflicts if multiple people are working on the same topic
 
 :::image type="content" source="media/sharing-multi-authors-teams.png" alt-text="Screenshot showing the Power Virtual Agents list of topics with the Editing column highlighted.":::
 
->[!NOTE]
->The list of authors in the **Editing** column is only refreshed when the page is loaded.
+> [!NOTE]
+> The list of authors in the **Currently editing** column is only refreshed when the page is loaded.
 
 A topic's **Details** page also shows all the people currently editing a topic, as well as the last time someone saved.
 

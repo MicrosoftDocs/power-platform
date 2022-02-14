@@ -2,7 +2,7 @@
 title: "Use a system fallback topic"
 description: "A system fallback topic can be triggered when the bot doesn't understand the user's questions."
 keywords: "PVA"
-ms.date: 9/22/2020
+ms.date: 01/25/2022
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -12,13 +12,12 @@ ms.custom: authoring, ceX
 ms.collection: virtual-agent
 ---
 
-
-
 # Configure the system fallback topic in Power Virtual Agents
 
 Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
+>
 > - [Power Virtual Agents web app](authoring-system-fallback-topic.md)
 > - [Power Virtual Agents app in Microsoft Teams](teams/authoring-system-fallback-topic-teams.md)
 
@@ -32,46 +31,42 @@ You customize these fallback behaviors by adding the system **Fallback** topic. 
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 
-
 ## Add a system fallback topic
 
-1. On the top navigation pane, select **Settings** :::image type="content" source="media/settings-icon.png" alt-text="Settings icon." border="false":::, and then go to the **System fallback** tab.
+1. On the top pane, select **Settings** :::image type="content" source="media/settings-icon.png" alt-text="Settings icon." border="false":::, and then go to the **System fallback** tab.
 
-2. Select **"+Add"**.
+1. Select **"+Add"**.
 
   :::image type="content" source="media/settings-system-fallback-pane.png" alt-text="Open System fallback settings.":::
- 
-A system fallback topic is added. The bot will go to this topic when it can't find an appropriate topic or doesn't understand the user's input. 
+
+A system fallback topic is added. The bot will go to this topic when it can't find an appropriate topic or doesn't understand the user's input.
 
 A new option will appear on the **Settings** pane under the **System fallback** section: **Go to fallback topic**, which lets you customize the topic.
- 
+
 ## Customize the system fallback topic
 
-After you add the system fallback topic, you can open it by selecting **Go to fallback topic** on the **Settings** pane. 
+After you add the system fallback topic, you can open it by selecting **Go to fallback topic** on the **Settings** pane.
 
-You'll also see the **Fallback** topic listed under **System Topics** in the topic list. 
+You'll also see the **Fallback** topic listed under **System Topics** in the topic list.
 
 :::image type="content" source="media/system-fallback-topic-list.png" alt-text="Fallback in the topic list." border="false":::
 
-When you open this topic in the authoring canvas, you'll see that the default fallback topic contains two nodes: a **Message** node that rephrases the user input and an **Escalate** node that redirects to a live agent. 
+When you open this topic in the authoring canvas, you'll see that the default fallback topic contains two nodes: a **Message** node that rephrases the user input and an **Escalate** node that redirects to a live agent.
 
 :::image type="content" source="media/system-fallback-default-content.png" alt-text="Fallback topic default content." border="false":::
- 
+
 You can customize this topic as with any other [system topic](authoring-create-edit-topics.md). You can also use the *UnrecognizedTriggerPhrase* variable that stores the user input the bot couldn't understand. For example, you can use the variable as an input and pass it to a [Power Automate flow](advanced-flow.md) or [Bot Framework skill](advanced-use-skills.md).
 
->[!Note]
->The system fallback topic doesn't have a trigger phrase.
+> [!NOTE]
+> The system fallback topic doesn't have a trigger phrase.
 
 ## Reset system fallback behavior by deleting the fallback topic
 
-To reset the system fallback behavior and return it to its default behavior, go to **Settings** and then **System Fallback**. In the **System fallback** section, select **Delete** to remove the fallback topic. 
+To reset the system fallback behavior and return it to its default behavior, go to **Settings** and then **System Fallback**. In the **System fallback** section, select **Delete** to remove the fallback topic.
 
 :::image type="content" source="media/delete-system-fallback-topic.png" alt-text="Delete the fallback topic." border="false":::
- 
->[!WARNING]
->This will remove the fallback topic and any changes you made to it. 
 
-
-
+> [!WARNING]
+> This will remove the fallback topic and any changes you made to it.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

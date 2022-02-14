@@ -9,7 +9,7 @@ ms.author: iawilt
 manager: shellyha
 ms.reviewer: digantak
 ms.collection: virtual-agent
-ms.cusom: "multi-geo, gdpr, ce06102020, teams"
+ms.custom: "multi-geo, gdpr, ce06102020, teams"
 ---
 
 # Regional settings and data locations for organizations using Power Virtual Agents in Teams
@@ -17,10 +17,9 @@ ms.cusom: "multi-geo, gdpr, ce06102020, teams"
 Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
+>
 > - [Power Virtual Agents web app](../data-location.md)
 > - [Power Virtual Agents app in Microsoft Teams](data-location-teams.md)
-
-
 
 Power Virtual Agents supports multiple globalization scenarios, and lets you choose where you want your data to live.
 
@@ -32,23 +31,24 @@ Power Virtual Agents supports multiple globalization scenarios, and lets you cho
 
 Chatbots built with Power Virtual Agents will understand and display content that's locally relevant to the user. Localized handling and formatting are based on the user's browser locale setting, and include the following elements within a chat conversation:
 
-* Date and time
-* Numbers
-* ZIP or postal code
-* Currency
-* Speed
+- Date and time
+- Numbers
+- ZIP or postal code
+- Currency
+- Speed
 
 Power Virtual Agents supports the following display formatting locales:
-* en-AU
-* en-CA
-* en-GB
-* en-IN
-* en-US
+
+- en-AU
+- en-CA
+- en-GB
+- en-IN
+- en-US
 
 For example, if the user's browser locale setting is *en-GB*, the bot knows that a date of **2/3** equates to **March 2**. If the browser locale setting is *en-US*, the same date equates to **February 3**.
 
->[!NOTE]
->Microsoft Teams supports a larger set of languages. If the selected language for Microsoft Teams is not supported by Power Virtual Agents, the displayed language will be en-US.
+> [!NOTE]
+> Microsoft Teams supports a larger set of languages. If the selected language for Microsoft Teams is not supported by Power Virtual Agents, the displayed language will be en-US.
 
 ## Data locations
 
@@ -59,6 +59,5 @@ If you create bots in Teams from an unsupported location (Germany, United Arab E
 ## See also
 
 - [Language support](authoring-language-support-teams.md)
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

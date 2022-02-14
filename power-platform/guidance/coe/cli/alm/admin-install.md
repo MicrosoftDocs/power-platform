@@ -35,7 +35,7 @@ The following roles are involved with Power Platform.
 
 It is assumed that this installation will be run by a single user that has the following rights:
 
-- Power Platform global administrator.
+- Power Platform [administration role](/microsoft-365/admin/add-users/about-admin-roles) of Global admin or Power Platform admin.
 
 - DevOps administrator rights.
 
@@ -56,7 +56,7 @@ Complete [Before You Start](./before-you-start.md) to ensure that:
 1. Create install configuration file and review the generated JSON file and confirm the settings before you start the install process.
 
    ```bash
-   coe alm generate install -o test.json
+   coe alm generate install -o quickstart.json
    ```
 
    This command generates a file similar to the one below.
@@ -98,10 +98,12 @@ More information: [COE ALM generate install](https://aka.ms/coe-cli/help/alm/ins
 1. Review the JSON and install using the following command.
 
    ```bash
-   coe alm install -f test.json
+   coe alm install -f quickstart.json
    ```
 
 More information: [CoE ALM generate install](https://aka.ms/coe-cli/help/alm/install)
+
+If you're prompted to create an HTTP with Azure Active Directory (AD) connection, enter 'https://graph.microsoft.com' for both the **Base Resource URL** and **Azure AD Resource URI**.
 
 1. [Update permissions for the project build service](/power-platform/guidance/coe/setup-almacceleratorpowerplatform#update-permissions-for-the-project-build-service) to enable build pipelines to interact with Git repositories.
 

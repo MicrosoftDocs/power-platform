@@ -90,16 +90,18 @@ For an administrator, the quick start guide should take about 30 minutes. By the
 
    Deploying to your enterprise? For more information, go to [Enterprise deployment](./scenarios/tenant-deployments.md#enterprise-deployment).
 
+   If you're prompted to create an HTTP with Azure Active Directory (AD) connection, enter 'https://graph.microsoft.com' for both the **Base Resource URL** and **Azure AD Resource URI**.
+
 1. [Update permissions for the project build service](/power-platform/guidance/coe/setup-almacceleratorpowerplatform#update-permissions-for-the-project-build-service) to enable build pipelines to interact with Git Repositories.
 
 1. When your makers create [development environments](./development-environments.md), run CoE ALM maker add to add the makers to Azure DevOps and share the ALM Accelerator canvas app.
 
    ```bash
-   coe alm maker add \
-      -o https://dev.azure.com/contoso \
-      -p alm-sandbox \
-      -e https://contoso-userdev.crm.dynamics.com \
-      -a ALMAcceleratorServicePrincipal \
+   coe alm maker add 
+      -o https://dev.azure.com/contoso 
+      -p alm-sandbox 
+      -e https://contoso-userdev.crm.dynamics.com 
+      -a ALMAcceleratorServicePrincipal 
       -g ALMAcceleratorForMakers -u user@contoso.com
    ```
 
@@ -109,8 +111,7 @@ For an administrator, the quick start guide should take about 30 minutes. By the
 
    ```bash
    coe alm generate maker add -o user.config
-   coe alm maker add \
-      -f user.config
+   coe alm maker add -f user.config
    ```
 
    More information: [CoE ALM generate maker add](https://github.com/microsoft/coe-starter-kit/tree/main/coe-cli/docs/help/alm/generate/maker/add.md)
@@ -148,8 +149,8 @@ The following recording shows a sample generating an install configuration file 
 ### Read more
 
 - [ALM Accelerator for Power Platform](/power-platform/guidance/coe/almacceleratorpowerplatform-components) - An overview of the ALM Accelerator.
-- [Deployment profile set up](/power-platform/power-platform/guidance/coe/setup-almacceleratorpowerplatform-deployment-profiles) - Configuring user settings and deployment profiles.
-- [Maker user configuration](/power-platform/power-platform/guidance/coe/setup-almacceleratorpowerplatform-users) - Configuring Microsoft Dataverse users to access the ALM Accelerator for Power Platform.
+- [Deployment experience and profile set up](/power-platform/power-platform/guidance/coe/setup-almacceleratorpowerplatform-deployment-profiles) - Configuring user settings and deployment profiles.
+- [User permissions set up](/power-platform/power-platform/guidance/coe/setup-almacceleratorpowerplatform-users) - Configuring Microsoft Dataverse users to access the ALM Accelerator for Power Platform.
 - Manual set up - Understand the key steps that the CLI is automating.
   - [Foundational set up](/power-platform/guidance/coe/setup-almacceleratorpowerplatform#foundational-setup) - Foundational set up for manual steps automated by the CLI install command.
   - [Development project set up](/power-platform/guidance/coe/setup-almacceleratorpowerplatform#development-project-setup) - Documents the manual steps that are automated by the CLI install command.
