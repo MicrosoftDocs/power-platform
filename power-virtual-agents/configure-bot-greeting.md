@@ -199,11 +199,11 @@ We recommend you modify the system greeting topic so that you don't have to edit
 
 1. Select **Save**.
 
-    :::image type="content" source="media/custom-greeting-message.png" alt-text="Screenshot of the system greeting topic showing the message nodes that can be edited." border="false":::
+    :::image type="content" source="media/configure-bot-greeting/custom-greeting-message.png" alt-text="Screenshot of the system greeting topic showing the message nodes that can be edited." border="false":::
 
 1. [**Publish** your bot](publication-fundamentals-publish-channels.md).
 
-    :::image type="content" source="media/channel-publish-latest-content.png" alt-text="Publish latest bot content." border="false":::
+    :::image type="content" source="media/configure-bot-greeting/channel-publish-latest-content.png" alt-text="Publish latest bot content." border="false":::
 
 You can now test your bot by going to the webpage where you deployed your bot's custom canvas. You'll see the bot start the conversation by automatically showing the greeting topic.
 

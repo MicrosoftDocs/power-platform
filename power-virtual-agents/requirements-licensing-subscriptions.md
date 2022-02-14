@@ -55,11 +55,11 @@ After you upgrade your license, you can continue using the same bot in the same 
 
 You can upgrade from within the Power Virtual Agents app for Microsoft Teams when prompted, as in the following example when publishing to other channels:
 
-:::image type="content" source="media/upgrade-channels.png" alt-text="You need an upgraded license to publish to channels other than Teams.":::
+:::image type="content" source="media/requirements-licensing-subscriptions/upgrade-channels.png" alt-text="You need an upgraded license to publish to channels other than Teams.":::
 
 You can also [start a 60 day free trial of Power Virtual Agents](https://aka.ms/trypva) to try out all the capabilities. You'll be prompted to sign up for a trial if you try to create a bot without a license.
 
-:::image type="content" source="media/upgrade-create.png" alt-text="You are prompted to start a free trial or upgrade to a premium when creating a bot without a license.":::
+:::image type="content" source="media/requirements-licensing-subscriptions/upgrade-create.png" alt-text="You are prompted to start a free trial or upgrade to a premium when creating a bot without a license.":::
 
 > [!NOTE]
 > The option to create a free trial may be disabled. For more information, see the [Self-service sign-up disabled section](sign-up-individual.md#self-service-sign-up-disabled).
