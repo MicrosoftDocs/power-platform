@@ -30,7 +30,7 @@ The following quotas, defined as requests per minute (RPM), apply to Power Virtu
 
 If the quota for **messages to a chatbot** is met, the user chatting with the chatbot will see a failure notice when they try to send a message. They'll be prompted to retry.
 
-:::image type="content" source="media/requirements-quota-error.png" alt-text="Error message in the chat bot window that says 'Send failed. Retry.'." border="false":::
+:::image type="content" source="media/requirements-quotas/requirements-quota-error.png" alt-text="Error message in the chat bot window that says 'Send failed. Retry.'." border="false":::
 
 ## Limits
 

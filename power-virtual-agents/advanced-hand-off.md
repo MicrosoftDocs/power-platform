@@ -74,11 +74,11 @@ This node lets you add a **Private message to agent**, which is sent to the conn
 
 1. Click the plus (+) icon to add a message node. Enter what the bot should say to indicate that transferal to a live agent is about to occur.
 
-    :::image type="content" source="media/handoff-add-node.png" alt-text="Screenshot of adding a node." border="false":::
+    :::image type="content" source="media/advanced-hand-off/handoff-add-node.png" alt-text="Screenshot of adding a node." border="false":::
 
 1. Underneath the message node, click the plus (+) icon, go to **End the conversation** and then select **Transfer to agent**
 
-    :::image type="content" source="media/handoff-add-transfer-node.png" alt-text="Screenshot of adding the node." border="false":::
+    :::image type="content" source="media/advanced-hand-off/handoff-add-transfer-node.png" alt-text="Screenshot of adding the node." border="false":::
 
 1. Enter an optional private message to the live agent in the **Transfer to agent** node. This optional message can be useful if you have multiple topics with **Transfer to agent** nodes as the information is stored in the `va_AgentMessage` [context variable](#contextual-variables-available-upon-hand-off).
 
