@@ -17,16 +17,16 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Support end for Internet Explorer 
-
-> [!IMPORTANT]
-> With 2022 release wave 1, Internet Explorer 11 will be blocked. Please switch to a modern browser.
-> 
-> Dynamics 365 App for Outlook users using Outlook desktop client on Windows 10 lower than 1903 or Office versions lower than 16.0.11629 can continue to use Internet Explorer 11. These users won't be blocked. For more information on Internet Explorer 11 support in Office products [See Microsoft Edge WebView for Office Add-ins](https://devblogs.microsoft.com/microsoft365dev/microsoft-edge-webview-for-office-add-ins/).   
+# Support end for Internet Explorer   
 
 Microsoft Internet Explorer and Microsoft Edge Legacy support has ended. This topic outlines the experience that administrators and end users will see related to the support end. 
 
 Users moving to Microsoft Edge (based on Chromium) or another supported modern browser will have a significantly improved experience.  Microsoft Edge (based on Chromium) and Chrome are twice as fast as Internet Explorer. 
+
+> [!NOTE]
+> With 2022 release wave 1, Internet Explorer 11 will be blocked. Please switch to a modern browser.
+> 
+> Dynamics 365 App for Outlook users using Outlook desktop client on Windows 10 lower than 1903 or Office versions lower than 16.0.11629 can continue to use Internet Explorer 11. These users won't be blocked. For more information on Internet Explorer 11 support in Office products [See Microsoft Edge WebView for Office Add-ins](https://devblogs.microsoft.com/microsoft365dev/microsoft-edge-webview-for-office-add-ins/). 
 
 The warning message will appear at the top of the Power Platform admin center page or the Dynamics 365 app page. 
 
