@@ -151,6 +151,7 @@ Authentication is not supported for voice-based hand off to omnichannel instance
 
 > [!WARNING]
 > For voice-based hand off capabilities, both your bot and omnichannel environments must be hosted in a datacenter within the [United States, Europe, Asia, or Australia geographies](data-location.md#data-locations).
+>
 > If the environment (or environments) you use for your bot or omnichannel instance aren't in a supported region, voice capabilities will not work and there will be no error messages or warnings.
 
 ## Voice-based capabilities
