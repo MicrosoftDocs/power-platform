@@ -65,4 +65,37 @@ As you fine-tune your bot, it can be useful to enable tracking between topics so
 
 If the conversation path in the **Test your bot** pane moves from one topic to another topic, the authoring canvas refreshes and moves between topics to the appropriate highlighted nodes.
 
+## Save conversation snapshots
+
+While testing your bot in the **Test bot** pane, you can use the **Save snapshot** command to get conversational diagnostics data. This data can help you troubleshoot issues, such as the bot not responding in the way you expect.
+
+> [!WARNING]
+> The snapshot contains all of your bot content, which may include sensitive information.
+
+1. At the top of the **Test bot** pane, select the menu icon (three vertical periods) and then **Save snapshot**.
+
+    :::image type="content" source="media/save-snapshot.png" alt-text="Save snapshot.":::
+
+1. In the window that appears, select **Save**.
+
+    :::image type="content" source="media/save-snapshot-window.png" alt-text="Save snapshot message.":::
+
+1. The bot's content and conversational diagnostics will be saved in a .zip archive file called *DSAT.zip*.
+
+    :::image type="content" source="media/dsat.png" alt-text="Conversational diagnostics archive.":::
+
+1. The *DSAT.zip* file contains two files: *botContent.json* and *dialog.json*.
+
+    1. *dialog.json* contains conversational diagnostics, including detailed descriptions of errors.
+
+        :::image type="content" source="media/conversation-file.png" alt-text="Conversational diagnostics file.":::
+
+    1. *botContent.json* contains the bot's topics and other content, including entities and variables used in the bot.
+
+Help us improve Power Virtual Agents by flagging issues with the **Flag an issue** command on the test bot pane. This submits your conversation ID to Microsoft, which is a unique identifier that Microsoft uses to troubleshoot the issue of the conversation. Other information, such as that in the *DSAT.zip* file, is not sent when you flag an issue.
+
+:::image type="content" source="media/flag-issue.png" alt-text="Flag an issue.":::
+
+All information collected is anonymous and will be used to help improve bot quality.
+
 [!INCLUDE[footer-include](includes/footer-banner.md)]
