@@ -221,7 +221,7 @@ You can directly call any Power Virtual Agents skill topic from a Bot Framework 
 
 ### Pass an input variable to a Power Virtual Agents skill topic
 
-It's possible to pass a variable to a Power Virtual Agents skill topic as an input from Bot Framework Composer. Refer to [Passing variables between topics](/authoring-create-edit-topics#passing-variables-between-topics) to learn how to create Power Virtual Agents topics that accept input variables.
+It's possible to pass a variable to a Power Virtual Agents skill topic as an input from Bot Framework Composer. Refer to [Passing variables between topics](/authoring-variables#passing-variables-between-topics) to learn how to create Power Virtual Agents topics that accept input variables.
 
 If you have a Power Virtual Agents topic that can receive an input variable listed in your skill manifest, you can pass a Composer variable to it.
 
@@ -271,7 +271,7 @@ If you have a Power Virtual Agents topic that can receive an input variable list
 
 ### Receive an output variable from a Power Virtual Agents skill topic
 
-It is possible to receive outputs from a Power Virtual Agents skill topic in Composer. You can refer to [Passing variables between topics](/authoring-create-edit-topics#passing-variables-between-topics) to learn how to create Power Virtual Agents topics that return outputs.
+It is possible to receive outputs from a Power Virtual Agents skill topic in Composer. You can refer to [Passing variables between topics](/authoring-variables#passing-variables-between-topics) to learn how to create Power Virtual Agents topics that return outputs.
 
 1. In the Composer authoring canvas, select **+ Add**. Select **Access external resources**, then **Connect to a skill**.
 
