@@ -11,7 +11,6 @@ ms.custom:
 ms.service: power-platform
 author: KumarVivek
 ms.author: kvivek
-manager: annbe
 ---
 
 # Important changes (deprecations) coming in Power Apps and Power Automate
