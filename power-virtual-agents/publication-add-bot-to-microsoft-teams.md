@@ -59,7 +59,7 @@ After publishing your bot at least once, you can connect your bot to the Microso
 
 1. Select **Turn on Teams**.
 
-    :::image type="content" source="media/publish-teams-enable.png" alt-text="In the Microsoft Teams flyout that appears, select Turn on Teams to enable sharing":::
+    :::image type="content" source="media/publication-add-bot-to-msft-teams/publish-teams-enable.png" alt-text="In the Microsoft Teams flyout that appears, select Turn on Teams to enable sharing":::
 
     > [!NOTE]
     > If you do not see this option, then the Microsoft Teams channel may already be enabled.
@@ -74,7 +74,7 @@ Providing the right description and appearance for the bot before making it avai
 
 1. Select **Edit details** to change the bot's icon, color, and descriptions. These will be shown in the Microsoft Teams app store and the app's About tab after the user installs the bot. [Review the recommendations on Microsoft Teams icon formats](/microsoftteams/platform/resources/schema/manifest-schema#icons).
 
-    :::image type="content" source="media/sharing-security-groups/add-bot-to-teams-edit-details.PNG" alt-text="You can make changes to the icon, background color, and descriptions":::
+    :::image type="content" source="media/publication-add-bot-to-msft-teams/add-bot-to-teams-edit-details.PNG" alt-text="You can make changes to the icon, background color, and descriptions":::
 
     > [!IMPORTANT]
     > Updates to the bot's detail will not apply to users who have already installed the bot from a shared link or the [**Built by your colleagues** section](#show-to-shared-users). They will need to reinstall the bot to receive the updates.  
@@ -94,7 +94,7 @@ Providing the right description and appearance for the bot before making it avai
 > [!NOTE]
 > Icon customization in this section only applies to the bot avatar for bots that are [approved by admin](#show-to-the-organization) and does not apply for users who install the bot with a direct [installation link](#share-a-link-so-others-can-install-the-bot) or from the Microsoft Teams app store [Built by your colleague section](#show-to-shared-users). You can customize the bot avatar at [Customize the look and feel of the bot](customize-default-canvas.md).
 >
-> :::image type="content" source="media/sharing-security-groups/bot-avatar-teams.PNG" alt-text="Bot avatar icon in Teams chat.":::
+> :::image type="content" source="media/publication-add-bot-to-msft-teams/bot-avatar-teams.PNG" alt-text="Bot avatar icon in Teams chat.":::
 
 ## Install a bot as an app in Microsoft Teams
 
@@ -113,7 +113,7 @@ You should add your bot to your own version of Teams before sharing it with othe
 
 1. Select **Open bot** to have the installation prompt launch in Microsoft Teams. Select **Add** to have it added as an app in Teams. This only installs the bot for you.
 
-   :::image type="content" source="media/sharing-security-groups/add-bot-to-teams-open-bot-teams-panel.PNG" alt-text="Install bot for yourself in Teams pane":::
+   :::image type="content" source="media/publication-add-bot-to-msft-teams/add-bot-to-teams-open-bot-teams-panel.PNG" alt-text="Install bot for yourself in Teams pane":::
 
 ## Share a link so others can install the bot
 
@@ -126,7 +126,7 @@ You should add your bot to your own version of Teams before sharing it with othe
    > [!IMPORTANT]
    > Only users who can access the bot can use the installation link to install the bot. You can [share the bot to give users access to chat](admin-share-bots.md) with the bot.
 
-   :::image type="content" source="media/sharing-security-groups/add-bot-to-teams-copy-link-teams.PNG" alt-text="Copy link from Teams availability options.":::
+   :::image type="content" source="media/publication-add-bot-to-msft-teams/add-bot-to-teams-copy-link-teams.PNG" alt-text="Copy link from Teams availability options.":::
 
 1. Share the copied link with users so they can install the bot in Microsoft Teams.
 
@@ -143,7 +143,7 @@ You can share your bot by adding it to the Microsoft Teams app store, **Built fo
 >
 > The bot can only be shown in the Microsoft Teams app store **Built by your colleagues** section when the total number of shared users does not exceed the tenant's [Teams app store discovery policy](/power-platform/admin/list-tenantsettings). To show the bot beyond your organization's policy limit, partner with your admin to [show the bot to the organization](#show-to-the-organization).
 
-:::image type="content" source="media/sharing-security-groups/add-bot-to-teams-bbyc-teams.PNG" alt-text="The Built by your colleagues section as at the bottom of the Built for your org section in the Teams app store.":::
+:::image type="content" source="media/publication-add-bot-to-msft-teams/add-bot-to-teams-bbyc-teams.PNG" alt-text="The Built by your colleagues section as at the bottom of the Built for your org section in the Teams app store.":::
 
 1. On the side pane, go to **Manage** > **Channels**.
 
@@ -153,15 +153,15 @@ You can share your bot by adding it to the Microsoft Teams app store, **Built fo
 
 1. Select **Show to my teammates and shared users** and review who has access to the bot.
 
-   :::image type="content" source="media/sharing-security-groups/add-bot-to-teams-show-bbyc.PNG" alt-text="Show bot in Teams app store Built by your colleague section.":::
+   :::image type="content" source="media/publication-add-bot-to-msft-teams/add-bot-to-teams-show-bbyc.PNG" alt-text="Show bot in Teams app store Built by your colleague section.":::
 
 1. Confirm the **Visible in Build by your colleagues** checkbox is selected and select **Share**.
 
-   :::image type="content" source="media/sharing-security-groups/add-bot-to-teams-visible-in-bbyc.PNG" alt-text="Select visible in Built by your colleagues checkbox in sharing UI.":::
+   :::image type="content" source="media/publication-add-bot-to-msft-teams/add-bot-to-teams-visible-in-bbyc.PNG" alt-text="Select visible in Built by your colleagues checkbox in sharing UI.":::
 
 1. This will automatically add the bot to the **Built by your colleagues** section, and will show a green label **Added to Teams** in the availability options page.
 
-   :::image type="content" source="media/sharing-security-groups/add-bot-to-teams-added-to-teams-teams.PNG" alt-text="The flyout shows the bot has been added to Teams.":::
+   :::image type="content" source="media/publication-add-bot-to-msft-teams/add-bot-to-teams-added-to-teams-teams.PNG" alt-text="The flyout shows the bot has been added to Teams.":::
 
 > [!NOTE]
 > If your app doesn't appear in the **Built by your colleagues** section, your Teams app might be caching information.
@@ -180,7 +180,7 @@ You can remove the bot from showing in the **Built by your colleagues** section.
 
 1. Select **Show to my teammates and shared users** and remove the **Visible in Built by your colleagues** checkbox selection.
 
-   :::image type="content" source="media/sharing-security-groups/add-bot-to-teams-remove-bbyc.PNG" alt-text="Uncheck visible in Built by your colleagues checkbox in sharing UI.":::
+   :::image type="content" source="media/publication-add-bot-to-msft-teams/add-bot-to-teams-remove-bbyc.PNG" alt-text="Uncheck visible in Built by your colleagues checkbox in sharing UI.":::
 
 1. Select **Share**. Now the bot will no longer show in the Microsoft Teams app store **Built by your colleagues** section.
 
@@ -188,7 +188,7 @@ You can remove the bot from showing in the **Built by your colleagues** section.
 
 You can share the bot with your organization by submitting your bot for admin approval to be featured in the **Built for your org** > **Built by your colleagues** section. This is a great way to broadly distribute your bot by partnering with your admin to roll out the bot to everyone in the organization or a subset of users.
 
-:::image type="content" source="media/sharing-security-groups/add-bot-to-teams-bbyo-teams.PNG" alt-text="The Built by your org section is at the top of the Built for Org section in the Teams app store.":::
+:::image type="content" source="media/publication-add-bot-to-msft-teams/add-bot-to-teams-bbyo-teams.PNG" alt-text="The Built by your org section is at the top of the Built for Org section in the Teams app store.":::
 
 Admins can also [preinstall and pin the bot](/microsoftteams/teams-app-setup-policies) for users in the organization so they can access it directly from their app bar in Microsoft Teams.  
 
@@ -213,7 +213,7 @@ Before submitting the bot to your organization, make sure:
 
 1. Select **Show to everyone in my org**.
 
-   :::image type="content" source="media/sharing-security-groups/add-bot-to-teams-show-bbyo.PNG" alt-text="Show bot to organization in Teams pane availability options.":::
+   :::image type="content" source="media/publication-add-bot-to-msft-teams/add-bot-to-teams-show-bbyo.PNG" alt-text="Show bot to organization in Teams pane availability options.":::
 
 1. Review the requirements for submission, and select **Submit for admin approval**.
 
@@ -226,7 +226,7 @@ Before submitting the bot to your organization, make sure:
 
 1. A final confirmation prompt will appear. Select **Yes** to continue. The bot will be sent to your admin [for them to approve it](/microsoftteams/submit-approve-custom-apps#validate), and you will see a note indicating the status of your submission.
 
-    :::image type="content" source="media/sharing-security-groups/publish-share-submit-status.png" alt-text="The status has an orange note with information about the status of the submission, including the name of the bot, the version number, and the current status Waiting for approval":::
+    :::image type="content" source="media/publication-add-bot-to-msft-teams/publish-share-submit-status.png" alt-text="The status has an orange note with information about the status of the submission, including the name of the bot, the version number, and the current status Waiting for approval":::
 
     > [!NOTE]
     > After submitting the bot for admin approval, you should not change the bot's access setting to be less than everyone in your organization.  
@@ -272,7 +272,7 @@ To allow users to add a bot to a team:
 
 1. Select **Allow your users to add this bot to a team**.
 
-   :::image type="content" source="media/teams-allow-end-users-to-add-to-team.png" alt-text="Checkbox is checked to allow user to add bot to teams that they are part of":::
+   :::image type="content" source="media/publication-add-bot-to-msft-teams/teams-allow-end-users-to-add-to-team.png" alt-text="Checkbox is checked to allow user to add bot to teams that they are part of":::
 
 1. Select **Save**.
 
@@ -294,7 +294,7 @@ To disallow users from adding a bot to a team:
 
 1. Clear the **Allow your users to add this bot to a team** checkbox.
 
-    :::image type="content" source="media/teams-disallow-end-users-to-add-to-team.png" alt-text="Checkbox is unchecked to disallow user to add bot to teams that they are part of":::
+    :::image type="content" source="media/publication-add-bot-to-msft-teams/teams-disallow-end-users-to-add-to-team.png" alt-text="Checkbox is unchecked to disallow user to add bot to teams that they are part of":::
 
 1. Select **Save**.
 
@@ -314,11 +314,11 @@ To configure when a bot sends a private greeting:
 
 1. Select **Settings**.
 
-    :::image type="content" source="media/teams-private-greeting-settings.png" alt-text="Settings entry point to configure bot's private greeting behavior":::
+    :::image type="content" source="media/publication-add-bot-to-msft-teams/teams-private-greeting-settings.png" alt-text="Settings entry point to configure bot's private greeting behavior":::
 
 1. Configure the private greeting options.
 
-   :::image type="content" source="media/teams-private-greeting-settings-detail.png" alt-text="Private greeting to user setting options":::
+   :::image type="content" source="media/publication-add-bot-to-msft-teams/teams-private-greeting-settings-detail.png" alt-text="Private greeting to user setting options":::
 
 1. Select **Save**.
 
@@ -334,7 +334,7 @@ You can download the bot's Teams app manifest to make detail changes to the mani
 
 1. Select **Download .zip**.
 
-   :::image type="content" source="media/sharing-security-groups/add-bot-to-teams-download-zip.png" alt-text="Download Teams app manifest zip file from Teams pane availability options.":::
+   :::image type="content" source="media/publication-add-bot-to-msft-teams/add-bot-to-teams-download-zip.png" alt-text="Download Teams app manifest zip file from Teams pane availability options.":::
 
 1. The manifest will be generated as a .zip file, and will be saved according to your browser's save settings.
 
@@ -352,7 +352,7 @@ For bots that are approved by an admin, the bots will continue to be shown in th
 
 1. Select **Disconnect from Teams**.
 
-   :::image type="content" source="media/sharing-security-groups/add-bot-to-teams-disconnect-teams.PNG" alt-text="Disconnect Teams channel in Teams channel pane.":::
+   :::image type="content" source="media/publication-add-bot-to-msft-teams/add-bot-to-teams-disconnect-teams.PNG" alt-text="Disconnect Teams channel in Teams channel pane.":::
 
 1. Review the information about disconnecting your bot, and select **Disconnect** to continue.
 
