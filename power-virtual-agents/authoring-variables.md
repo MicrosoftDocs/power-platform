@@ -141,7 +141,7 @@ To receive values from other topics, set the variable's property:
 
 1. In the **Variables properties** pane,  under **Topic (limited scope)** select **Receive values from other topics**.
 
-    :::image type="content" source="media/authoring-create-edit-topics/authoring-subtopic-pass-variable-properties-receive-input.png" alt-text="Screenshot of the authoring canvas showing variable properties pane with receive values selected.":::
+    :::image type="content" source="media/authoring-variables/authoring-subtopic-pass-variable-properties-receive-input.png" alt-text="Screenshot of the authoring canvas showing variable properties pane with receive values selected.":::
 
 1. Save the topic.
 
@@ -149,19 +149,19 @@ To receive values from other topics, set the variable's property:
 
 1. Select **+ Add input for destination topic**.
 
-    :::image type="content" source="media/authoring-create-edit-topics/authoring-subtopic-pass-variable-step1.png" alt-text="Screenshot of the authoring canvas showing adding input for destination topic.":::
+    :::image type="content" source="media/authoring-variables/authoring-subtopic-pass-variable-step1.png" alt-text="Screenshot of the authoring canvas showing adding input for destination topic.":::
 
 1. Select the desired variable from the redirected topic that you want to pass the variable to.
 
-    :::image type="content" source="media/authoring-create-edit-topics/authoring-subtopic-pass-variable-step2.png" alt-text="Screenshot of the authoring canvas showing selection of the variable from the redirected topic.":::
+    :::image type="content" source="media/authoring-variables/authoring-subtopic-pass-variable-step2.png" alt-text="Screenshot of the authoring canvas showing selection of the variable from the redirected topic.":::
 
 1. Under **Enter or select a value**, select the variable from the current topic that you want to pass into the redirected topic.
 
-    :::image type="content" source="media/authoring-create-edit-topics/authoring-subtopic-pass-variable-step3.png" alt-text="Screenshot of the authoring canvas showing selection of variable from the list of options.":::
+    :::image type="content" source="media/authoring-variables/authoring-subtopic-pass-variable-step3.png" alt-text="Screenshot of the authoring canvas showing selection of variable from the list of options.":::
 
 1. Once selected, the variable will be shown in the redirected node.
 
-    :::image type="content" source="media/authoring-create-edit-topics/authoring-subtopic-pass-variable-step4.png" alt-text="Screenshot of the authoring canvas showing the variable being passed into the redirect node.":::
+    :::image type="content" source="media/authoring-variables/authoring-subtopic-pass-variable-step4.png" alt-text="Screenshot of the authoring canvas showing the variable being passed into the redirect node.":::
 
 ### Return values to original topics
 
@@ -175,7 +175,7 @@ To return a variable to the original topic, set the variable's property:
 
 1. In the **Variables properties** pane, under **Topic (limited scope)** select **Return values to original topics**.
 
-    :::image type="content" source="media/authoring-create-edit-topics/authoring-subtopic-pass-variable-properties-return-value.png" alt-text="Screenshot of the authoring canvas showing variable properties pane with return values selected.":::
+    :::image type="content" source="media/authoring-variables/authoring-subtopic-pass-variable-properties-return-value.png" alt-text="Screenshot of the authoring canvas showing variable properties pane with return values selected.":::
 
 1. Save the topic.
 
@@ -185,7 +185,7 @@ To return a variable to the original topic, set the variable's property:
 
 1. Use the returned variable in your topic.
 
-    :::image type="content" source="media/authoring-create-edit-topics/authoring-subtopic-pass-variable-pass-receive.png" alt-text="Screenshot of the authoring canvas showing redirect topic with both values input and returned.":::
+    :::image type="content" source="media/authoring-variables/authoring-subtopic-pass-variable-pass-receive.png" alt-text="Screenshot of the authoring canvas showing redirect topic with both values input and returned.":::
 
 ### Using the variables pane
 
@@ -193,11 +193,11 @@ You can also use the **Variables** pane to select the receive or return status o
 
 1. On the topic's menu bar, select **Variables**.
 
-    :::image type="content" source="media/authoring-create-edit-topics/authoring-subtopic-pass-variable-variables-bar.png" alt-text="Screenshot of the authoring canvas showing the variables pane icon.":::
+    :::image type="content" source="media/authoring-variables/authoring-subtopic-pass-variable-variables-bar.png" alt-text="Screenshot of the authoring canvas showing the variables pane icon.":::
 
 1. Select whether you want the values to be passed in or out (or both) between topics for each of the variables in the topic.
 
-    :::image type="content" source="media/authoring-create-edit-topics/authoring-subtopic-pass-variable-variable-return-value.png" alt-text="Screenshot of the authoring canvas showing variable pane with two variables and a combination of input and output selected.":::
+    :::image type="content" source="media/authoring-variables/authoring-subtopic-pass-variable-variable-return-value.png" alt-text="Screenshot of the authoring canvas showing variable pane with two variables and a combination of input and output selected.":::
 
 ### Using literal values on variable inputs
 
@@ -205,7 +205,7 @@ When passing a variable into a topic, you can also pass in literal values instea
 
 To pass a literal value, type the value you want to use as the input instead of selecting a variable.
 
-:::image type="content" source="media/authoring-create-edit-topics/authoring-subtopic-pass-variable-literal-value.png" alt-text="Screenshot of the authoring canvas showing literal input on an input variable in a redirect note":::
+:::image type="content" source="media/authoring-variables/authoring-subtopic-pass-variable-literal-value.png" alt-text="Screenshot of the authoring canvas showing literal input on an input variable in a redirect note":::
 
 ## Related links
 
