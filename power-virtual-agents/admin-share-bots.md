@@ -45,7 +45,7 @@ You can share your bot with security groups so their members can chat with the b
     > [!NOTE]
     > You can only share a bot with security groups. You cannot share with Microsoft 365 groups or individual users directly. You can manage individual user access by adding or removing users from the security group.
 
-    :::image type="content" source="media/sharing-security-groups/sharing-bot-specify-security-group.PNG" alt-text="Specify security group in Sharing   UI":::
+    :::image type="content" source="media/sharing-security-groups/sharing-bot-specify-security-group.PNG" alt-text="Specify security group in Sharing UI":::
 
 1. Review the security group's permission
 
@@ -224,11 +224,11 @@ To make sure users who chat with your bot can run [Power Automate](advanced-flow
 
 After you've shared a bot, everyone can edit the bot's topics.
 
-In the **Topics** list, you can see who's working on a topic under the **Currently editing** column. You can hover or click on the person's icon to quickly chat with them in Teams or send them an email.
+In the **Topics** list, you can see who's working on a topic under the **Editing** column. You can hover or click on the person's icon to quickly chat with them in Teams or send them an email.
 
 This can help prevent conflicts if multiple people are working on the same topic.
 
-:::image type="content" source="media/sharing-multi-authors.png" alt-text="Screenshot showing the Power Virtual Agents list of topics with the Currently editing column highlighted.":::
+:::image type="content" source="media/sharing-multi-authors.png" alt-text="Screenshot showing the Power Virtual Agents list of topics with the Editing column highlighted.":::
 
 > [!NOTE]
 > The list of authors in the **Currently editing** column is only refreshed when the page is loaded.
