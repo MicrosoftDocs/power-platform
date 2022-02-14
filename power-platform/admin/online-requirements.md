@@ -54,8 +54,6 @@ Blocked IPs can also impact connecting Dynamics 365 apps to [Microsoft Exchange 
 
 ### Power Platform URLs
 
-**URLs required for specific apps**
-
 - **Power Apps**: [Required services](/powerapps/maker/canvas-apps/limits-and-config)
 - **Power Automate**: [Required services](/power-automate/ip-address-configuration#required-services)
 - **Power Virtual Agents**: [Required services](/power-virtual-agents/requirements-quotas#required-services)
