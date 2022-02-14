@@ -126,8 +126,6 @@ Alternatively, you can type a literal value into an action node variable input f
 
 When redirecting to other topics, you might want to pass values into variables in the destination topic or get variables back from it. This is especially useful when you already have information that the topic needs and don’t want to have the user answer the question again to obtain the information. This can also be helpful when refactoring and separating your topics into reusable components, and you want to pass variables across the topics.
 
-For more information on using variables generally within Power Virtual Agents, see [Use variables](authoring-variables.md).
-
 > [!NOTE]
 > Variables of type `Custom Entity`, `Date Time`, and `Duration` can't be passed between topics.  
 
