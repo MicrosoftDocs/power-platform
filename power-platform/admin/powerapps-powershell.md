@@ -6,7 +6,7 @@ ms.reviewer: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 08/23/2021
+ms.date: 02/14/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -508,11 +508,11 @@ To exempt flow with ID f239652e-dd38-4826-a1de-90a2aea584d9 and app with ID 0600
 
 #### DLP exemption experience in the following scenarios: 
 
-| **#** | **Scenario**                                                   | **Experience**                                                                                                                                                |
-|-------|----------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1     | User launches   an app that’s not DLP compliant but DLP exempt | App launch proceeds with without DLP enforcement.                                                                                                             |
-| 2     | Maker saves an   app that’s not DLP compliant but DLP exempt   | With or without DLP exemption, DLP compliance does not block the app save   operation. The DLP non-compliance warning is shown regardless of DLP   exemption. |
-| 3     | Maker saves a   Flow that’s not DLP compliant but DLP exempt   | With or without DLP exemption, DLP compliance does not block the flow save   operation. The DLP non-compliance warning will not appear.                        |
+| Number | Scenario              | Experience              |
+|-------|----------------------------------------|-----------------------------------|
+| 1     | User launches an app that’s not DLP compliant but DLP exempt. | App launch proceeds with or without DLP enforcement.                                                                                                             |
+| 2     | Maker saves an app that’s not DLP compliant but DLP exempt   | With or without DLP exemption, DLP compliance does not block the app save operation. The DLP non-compliance warning is shown regardless of DLP exemption. |
+| 3     | Maker saves a flow that’s not DLP compliant but DLP exempt   | With or without DLP exemption, DLP compliance does not block the flow save operation. The DLP non-compliance warning will not appear.                        |
 
 ### Governance error message content commands
 
@@ -543,7 +543,7 @@ The governance error message URL and email can be shown independently or togethe
 |     2    |     Maker shares a Power Apps canvas app but doesn’t have share privilege                                        |     Generally available    |
 |     3    |     Maker shares a Power Apps canvas app with ‘Everyone’ but doesn’t have privilege to share with ‘Everyone’    |     Generally available    |
 |     4    |     Maker saves a Power Apps app that’s not DLP compliant                                                          |     Generally available     |
-|     5    |     Maker saves a Flow that’s not DLP compliant                                                                    |     Not yet available     |
+|     5    |     Maker saves a flow that’s not DLP compliant                                                                    |     Not yet available     |
 
 #### Display governance error message content 
 
