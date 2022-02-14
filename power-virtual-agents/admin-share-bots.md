@@ -157,12 +157,12 @@ Users who don't have access to the shared flow can still run it by using the tes
 To let other users edit or add flows you'll need to share them in Power Automate. You can open flows directly from the topic where the flow is used.
 
 1. Select **View flow details** to go to the flow's details page in Power Automate.
- 
-    :::image type="content" source="media/admin-share-bots/sharing-view-flow-details.png" alt-text="Highlight of the view flow details on a flow in a topic." border="false":::
+
+  :::image type="content" source="media/admin-share-bots/sharing-view-flow-details.png" alt-text="Highlight of the view flow details on a flow in a topic." border="false":::
 
 1. Select **Edit** in the **Owners** section.
- 
-    :::image type="content" source="media/admin-share-bots/sharing-flow-owners.png" alt-text="Select the Edit link." border="false":::
+
+  :::image type="content" source="media/admin-share-bots/sharing-flow-owners.png" alt-text="Select the Edit link." border="false":::
 
 1. Enter the name or email address of the user you want to give editing permissions to.
 
@@ -226,7 +226,7 @@ To make sure users who chat with your bot can run [Power Automate](advanced-flow
 
 After you've shared a bot, everyone can edit the bot's topics.
 
-In the **Topics** list, you can see who's working on a topic under the **Currently editing** column. You can hover or click on the person's icon to quickly chat with them in Teams or send them an email.
+In the **Topics** list, you can see who's working on a topic under the **Editing** column. You can hover or click on the person's icon to quickly chat with them in Teams or send them an email.
 
 This can help prevent conflicts if multiple people are working on the same topic.
 

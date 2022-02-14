@@ -101,7 +101,7 @@ You can stop sharing the bot with a security group or everyone in your organizat
 
 1. Select **None** option.
 
-  :::image type="content" source="../media/admin-share-bots/sharing-unshare-everyone-in-org-teams.PNG" alt-text="Unshare everyone in the organization in Sharing UI.":::
+    :::image type="content" source="../media/admin-share-bots/sharing-unshare-everyone-in-org-teams.PNG" alt-text="Unshare everyone in the organization in Sharing UI.":::
 
 1. Select **Share** to stop sharing the bot with everyone in the organization.
 
@@ -149,7 +149,7 @@ To make sure users who chat with your bot can run the [Power Automate](advanced-
 
 ## Collaborate on bots
 
-In the **Topics** list, you can see who's working on a topic under the **Currently editing** column. You can hover or click on the person's icon to quickly chat with them in Teams or send them an email.
+In the **Topics** list, you can see who's working on a topic under the **Editing** column. You can hover or click on the person's icon to quickly chat with them in Teams or send them an email.
 
 This can help prevent conflicts if multiple people are working on the same topic.
 
