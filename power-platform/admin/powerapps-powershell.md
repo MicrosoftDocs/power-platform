@@ -508,7 +508,7 @@ To exempt flow with ID f239652e-dd38-4826-a1de-90a2aea584d9 and app with ID 0600
 
 #### DLP exemption experience in the following scenarios: 
 
-| Number | Scenario              | Experience              |
+| # | Scenario              | Experience              |
 |-------|----------------------------------------|-----------------------------------|
 | 1     | User launches an app that’s not DLP compliant but DLP exempt. | App launch proceeds with or without DLP enforcement.                                                                                                             |
 | 2     | Maker saves an app that’s not DLP compliant but DLP exempt   | With or without DLP exemption, DLP compliance does not block the app save operation. The DLP non-compliance warning is shown regardless of DLP exemption. |
