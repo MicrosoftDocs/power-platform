@@ -22,6 +22,24 @@ If certain URLs or IP addresses are blocked in your browser or network security 
 
 ## IP addresses required
 
+### Power Platform IP address ranges
+
+See the following:
+
+- [Azure IP Ranges and Service Tags – Public Cloud](https://www.microsoft.com/download/details.aspx?id=56519)
+- [Azure IP Ranges and Service Tags – US Government Cloud](https://www.microsoft.com/download/details.aspx?id=57063)
+- [Azure IP Ranges and Service Tags – China Cloud](https://www.microsoft.com/download/details.aspx?id=57062)
+- [Azure IP Ranges and Service Tags – Germany Cloud](https://www.microsoft.com/download/details.aspx?id=57064)
+
+You can search the Azure IP Ranges json file for the AzureCloud service tag for Power Platform IP address ranges. Search for "PowerPlatformInfra" to find the list of IP addresses to allow.
+
+[!div class="mx-imgBorder"] 
+![AzureCloud service tag for Power Platform IPs.](media/example-azure-cloud-powerplatforminfra.png "AzureCloud service tag for Power Platform IPs")
+
+Blocked IPs can also impact connecting Dynamics 365 apps to [Microsoft Exchange Server (on-premises)](connect-exchange-server-on-premises.md). 
+
+### Dynamics 365 IP address ranges
+
 See the following:
 
 - [Azure IP Ranges and Service Tags – Public Cloud](https://www.microsoft.com/download/details.aspx?id=56519)
@@ -38,6 +56,17 @@ See the following:
 Blocked IPs can also impact connecting Dynamics 365 apps to [Microsoft Exchange Server (on-premises)](connect-exchange-server-on-premises.md). 
 
 ## Internet accessible URLs required
+
+### Power Platform URLs
+
+### URLs required for specific apps
+
+- **Power Apps**: [Required services](/powerapps/maker/canvas-apps/limits-and-config)
+- **Power Automate**: [Required services](/power-automate/ip-address-configuration#required-services)
+- **Power Virtual Agents**: [Required services](/power-virtual-agents/requirements-quotas#required-services)
+- **Power BI**: [Add Power BI URLs to your allowlist](/power-bi/admin/power-bi-allow-list-urls)
+
+### Dynamics 365 URLs
 
 Dynamics 365 apps use several Microsoft URLs to help provide security, services, and features. Blocking any of the required URLs will cause apps in Dynamics 365 to operate incorrectly or not at all. See: [Troubleshooting: Unblock required URLs](troubleshooting-unblock-urls-required.md).
 
@@ -62,13 +91,6 @@ Add the following URLs to the approved list to allow traffic to proceed to these
 | http://crl.microsoft.com/pki/crl/products/microsoftrootcert.crl  | Required for Certification Revocation List checks.    |
 | https://dynamics.microsoft.com |    |
 | https://*.api.powerplatform.com | Required for Power Platform API connectivity used internally by Microsoft products as well as admin automation scenarios as  [documented here](programmability-extensibility-overview.md).
-
-### URLs required for specific apps
-
-- **Power Apps**: [Required services](/powerapps/maker/canvas-apps/limits-and-config)
-- **Power Automate**: [Required services](/power-automate/ip-address-configuration#required-services)
-- **Power Virtual Agents**: [Required services](/power-virtual-agents/requirements-quotas#required-services)
-- **Power BI**: [Add Power BI URLs to your allowlist](/power-bi/admin/power-bi-allow-list-urls)
 
 ### URLs required for Power Apps US Government and Dynamics 365 US Government
 
