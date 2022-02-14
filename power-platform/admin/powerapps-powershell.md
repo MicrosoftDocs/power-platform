@@ -506,6 +506,14 @@ To exempt flow with ID f239652e-dd38-4826-a1de-90a2aea584d9 and app with ID 0600
 18. {@{id=/providers/Microsoft.ProcessSimple/environments/Default-b1c07da8-2ae2-47e7-91b8-d3418892f507/flows/f239652e-dd38-4826-a1de-90a2aea584d9; type=Microsoft.ProcessSimple/environments/flows}, @{id=/providers/Microsoft.PowerApps/apps/06002625-7154-4417-996e-21d7a60ad.. 
 ```
 
+#### DLP exemption experience in the following scenarios: 
+
+| **#** | **Scenario**                                                   | **Experience**                                                                                                                                                |
+|-------|----------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1     | User launches   an app that’s not DLP compliant but DLP exempt | App launch proceeds with without DLP enforcement.                                                                                                             |
+| 2     | Maker saves an   app that’s not DLP compliant but DLP exempt   | With or without DLP exemption, DLP compliance does not block the app save   operation. The DLP non-compliance warning is shown regardless of DLP   exemption. |
+| 3     | Maker saves a   Flow that’s not DLP compliant but DLP exempt   | With or without DLP exemption, DLP compliance does not block the flow save   operation. The DLP non-compliance warning will not appear.                        |
+
 ### Governance error message content commands
 
 The following cmdlets can be used to lead your end users to your organization’s governance reference material, including a link to governance documentation and a governance contact, when they are prompted by governance controls. For instance, when governance error message content is set it will appear in Power Apps Data Loss Prevention policy runtime enforcement messages. 
