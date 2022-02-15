@@ -4,7 +4,7 @@ description: How to manage when you'll receive service updates.
 author: samathur
 ms.author: samathur
 ms.reviewer: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 10/28/2021

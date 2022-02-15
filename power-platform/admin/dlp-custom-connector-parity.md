@@ -1,7 +1,7 @@
 ---
 title: "Custom connector parity | MicrosoftDocs"
 description: About allowing makers to create and share custom connectors.
-ms.service: power-platform
+
 ms.topic: conceptual
 ms.date: 11/16/2021
 ms.subservice: admin

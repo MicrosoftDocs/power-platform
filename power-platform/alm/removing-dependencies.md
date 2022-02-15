@@ -4,7 +4,7 @@ description: "Dependencies sometimes can block operations. This article describe
 ms.custom: ""
 ms.date: 06/17/2020
 ms.reviewer: ""
-ms.service: power-platform
+
 ms.topic: "article"
 author: "ccdietrich" # GitHub ID
 ms.subservice: alm

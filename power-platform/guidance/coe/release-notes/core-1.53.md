@@ -3,7 +3,7 @@ title: "Release notes and latest version of the CoE starter kit Core components 
 description: "Release notes and latest version of the CoE Starter Kit 1.53."
 author: manuelap-msft
 manager: devkeydet
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 07/14/2020

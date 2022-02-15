@@ -3,7 +3,7 @@ title: Programmability and Extensibility - Versioning and support | Microsoft Do
 description: Overview of versioning and support for Microsoft Power Platform programmability tools.
 author: laneswenka
 ms.reviewer: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: reference
 ms.date: 03/19/2021

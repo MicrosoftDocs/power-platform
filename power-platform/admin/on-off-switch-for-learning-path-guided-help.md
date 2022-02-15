@@ -3,7 +3,7 @@ title: "On-off switch for Learning Path (guided help)  | MicrosoftDocs"
 description: On-off switch for Learning Path (guided help) 
 author: jimholtz
 manager: kvivek
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/18/2022

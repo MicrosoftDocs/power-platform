@@ -2,7 +2,7 @@
 title: "Licensing and license management  | MicrosoftDocs"
 description: About licensing and license management.
 author: dileepsinghmicrosoft
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.custom: intro-internal

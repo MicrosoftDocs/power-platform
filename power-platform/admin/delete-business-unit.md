@@ -3,7 +3,7 @@ title: "Delete a business unit from an environment"
 description: "Learn how to deactivate and delete a business unit from an environment. Learn about the considerations before taking this irreversible action."
 author: jimholtz
 manager: kvivek
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/10/2020

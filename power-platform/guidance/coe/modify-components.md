@@ -3,7 +3,7 @@ title: "Extend and customize CoE Starter Kit components"
 description: "Extend and modify the components of the Power Platform Center of Excellence (CoE) Starter Kit. Change to an Azure security group and set up a template catalog."
 author: manuelap-msft
 manager: devkeydet
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/10/2020

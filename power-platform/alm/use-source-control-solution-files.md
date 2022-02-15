@@ -4,7 +4,7 @@ description: "The SolutionPackager tool can be used with any source control syst
 ms.custom: ""
 ms.date: 06/15/2020
 ms.reviewer: "pehecke"
-ms.service: power-platform
+
 ms.topic: "article"
 author: "shmcarth" # GitHub ID
 ms.subservice: alm

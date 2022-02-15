@@ -4,7 +4,7 @@ description: "Patches help you manage entities and all of its related assets whe
 ms.custom: ""
 ms.date: 06/29/2020
 ms.reviewer: "pehecke"
-ms.service: power-platform
+
 ms.topic: "article"
 author: "shmcarth" # GitHub ID
 ms.subservice: alm

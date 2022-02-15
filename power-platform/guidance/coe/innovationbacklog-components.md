@@ -3,7 +3,7 @@ title: "Use the Innovation Backlog components | MicrosoftDocs"
 description: "The Innovation Backlog app contains assets log ideas and perform business value assessments."
 author: manuelap-msft
 manager: devkeydet
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 12/14/2020

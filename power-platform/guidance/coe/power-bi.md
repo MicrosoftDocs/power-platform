@@ -3,7 +3,7 @@ title: "CoE Power BI Dashboard | MicrosoftDocs"
 description: "Gain deep insights into your Microsoft Power Platform adoption with the CoE Power BI dashboard"
 author: manuelap-msft
 manager: devkeydet
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/10/2020

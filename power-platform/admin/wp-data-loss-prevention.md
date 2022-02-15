@@ -1,7 +1,7 @@
 ---
 title: "Data loss prevention policies  | MicrosoftDocs"
 description: About data loss prevention (DLP) policies.
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: overview
 ms.date: 07/19/2021
