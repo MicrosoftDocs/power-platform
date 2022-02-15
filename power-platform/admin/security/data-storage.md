@@ -75,7 +75,7 @@ Power Platform has an extensive set of [Data Loss Prevention (DLP) features](../
 [Security in Microsoft Power Platform](./overview.md)  
 [Authenticating to Power Platform services](./authenticate-services.md)  
 [Connecting and authenticating to data sources](./connect-data-sources.md)  
-[Security in Microsoft Dataverse](../wp-security.md)
+[Power Platform security FAQs](./faqs.md)  
 
 ### See also
 

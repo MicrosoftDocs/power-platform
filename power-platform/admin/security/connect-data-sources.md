@@ -84,7 +84,7 @@ Learn more about the [difference between explicit and implicit connections](/pow
 [Security in Microsoft Power Platform](./overview.md)  
 [Authenticating to Power Platform services](./authenticate-services.md)  
 [Data storage in Power Platform](./data-storage.md)  
-[Security in Microsoft Dataverse](../wp-security.md)
+[Power Platform security FAQs](./faqs.md)  
 
 ### See also
 
