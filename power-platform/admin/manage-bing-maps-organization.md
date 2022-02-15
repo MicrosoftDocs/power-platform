@@ -2,7 +2,7 @@
 title: "Manage Bing Maps for your organizations  | MicrosoftDocs"
 description: Manage Bing Maps for your organization
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date:  05/17/2021

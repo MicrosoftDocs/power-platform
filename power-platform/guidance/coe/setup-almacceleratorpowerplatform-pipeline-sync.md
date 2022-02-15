@@ -3,7 +3,7 @@ title: "ALM Accelerator for Power Platform pipeline sync set-up | MicrosoftDocs"
 description: "Creating a pipeline to sync the latest ALM Accelerator for Power Platform pipeline templates to your DevOps repository."
 author: mikefactorial
 manager: devkeydet
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 10/14/2021

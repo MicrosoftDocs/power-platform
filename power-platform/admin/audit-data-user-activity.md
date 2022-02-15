@@ -1,7 +1,7 @@
 ---
 title: "Audit data and user activity for security and compliance"
 description: "Learn how to use auditing to log changes to records and user access. System admins and customizers can use this feature to meet security and compliance policies."
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/17/2021

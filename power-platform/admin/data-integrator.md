@@ -1,7 +1,7 @@
 ---
 title: Integrate data into Microsoft Dataverse
 description: Integrate data from multiple sources into Microsoft Dataverse
-ms.service: power-platform
+
 ms.topic: how-to
 ms.component: cds
 ms.date: 02/01/2021

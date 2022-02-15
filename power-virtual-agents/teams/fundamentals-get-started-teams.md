@@ -3,7 +3,7 @@ title: "Quickstart: Create and deploy a bot in Microsoft Teams"
 description: "Create and publish a Power Virtual Agents bot in Teams with this quickstart guide."
 keywords: "PVA, teams, quickstart"
 ms.date: 01/25/2022
-ms.service: power-virtual-agents
+
 ms.topic: article
 author: iaanw
 ms.author: iawilt

@@ -2,7 +2,7 @@
 title: "Manage feature settings | MicrosoftDocs"
 description: View and manage feature settings for Microsoft Dataverse.
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/03/2022

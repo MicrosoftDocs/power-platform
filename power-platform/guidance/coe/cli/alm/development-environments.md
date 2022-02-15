@@ -7,7 +7,7 @@ ms.author: grarchib
 manager: pladhani
 ms.custom: ""
 ms.date: 11/30/2021
-ms.service: power-platform
+
 ms.topic: "article"
 ms.reviewer: jimholtz
 search.audienceType: 

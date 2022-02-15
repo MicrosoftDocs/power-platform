@@ -4,7 +4,7 @@ description: "Learn about support environments created in your tenant by Microso
 ms.custom: ""
 ms.date: 11/30/2021
 ms.reviewer: ""
-ms.service: power-platform
+
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"

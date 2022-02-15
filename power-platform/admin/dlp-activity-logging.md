@@ -1,7 +1,7 @@
 ---
 title: "Data loss prevention activity logging  | MicrosoftDocs"
 description: Data loss prevention activity logging
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 08/03/2021

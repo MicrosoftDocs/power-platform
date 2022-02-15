@@ -2,7 +2,7 @@
 title: "Configure Outlook or Exchange folder-level tracking  | MicrosoftDocs"
 description: Configure Outlook or Exchange folder-level tracking 
 author: mduelae
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/04/2020

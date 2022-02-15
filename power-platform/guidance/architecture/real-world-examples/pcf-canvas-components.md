@@ -2,7 +2,7 @@
 title: "Building reusable UI with Power Apps component framework and canvas apps components  | MicrosoftDocs"
 description: "Power Apps offers two options to create reusable components: low-code canvas components in Power Apps Studio and the Power Apps component framework."
 author: slaouist
-ms.service: power-platform
+
 ms.subservice: guidance
 ms.topic: conceptual
 ms.date: 08/10/2021

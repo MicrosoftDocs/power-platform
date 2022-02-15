@@ -3,7 +3,7 @@ title: "Upgrading and extending the CoE Starter Kit | MicrosoftDocs"
 description: "Instructions and information for upgrading and extending the CoE Starter Kit"
 author: manuelap-msft
 manager: devkeydet
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/10/2022

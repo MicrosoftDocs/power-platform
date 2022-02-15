@@ -1,7 +1,7 @@
 ---
 title: "Preview: Tenant-level analytics" 
 description: View tenant-level analytics in a variety of reports
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/21/2022

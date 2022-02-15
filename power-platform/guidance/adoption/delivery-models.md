@@ -3,7 +3,7 @@ title: "Delivery models - Microsoft Power Platform | MicrosoftDocs"
 description: "Depending on the size of your organization, you might want to formalize your Microsoft Power Platform adoption approach by implementing a structured organization model."
 author: manuelap-msft
 manager: devkeydet
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/09/2020

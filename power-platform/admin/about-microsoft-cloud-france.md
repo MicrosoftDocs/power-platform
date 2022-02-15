@@ -2,7 +2,7 @@
 title: "Microsoft Cloud France Dataverse services"
 description: "The Microsoft Cloud datacenter offers French organizations a complete cloud infrastructure, as well as productivity and business application tools."
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/03/2020

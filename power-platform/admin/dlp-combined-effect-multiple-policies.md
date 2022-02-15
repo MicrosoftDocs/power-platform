@@ -1,7 +1,7 @@
 ---
 title: "Combined effect of multiple DLP policies  | MicrosoftDocs"
 description: Examples of the combined effect of multiple DLP policies.
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 08/03/2021

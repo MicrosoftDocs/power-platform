@@ -2,7 +2,7 @@
 title: "Requirements/supported configurations  | MicrosoftDocs"
 description: Requirements/supported configurations 
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 12/13/2021

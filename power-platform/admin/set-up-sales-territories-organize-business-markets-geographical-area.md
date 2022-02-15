@@ -2,7 +2,7 @@
 title: "Set up sales territories to organize business markets by geographical area | MicrosoftDocs"
 description: Set up sales territories to organize business markets by geographical area
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/17/2021

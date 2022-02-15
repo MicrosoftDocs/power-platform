@@ -3,7 +3,7 @@ title: "Work with chatbot variables - Preview"
 description: "Use variables to use custom and prebuilt entities to allow for customized conversations in your bot."
 keywords: "PVA"
 ms.date: 11/02/2021
-ms.service: power-virtual-agents
+
 ms.topic: article
 author: iaanw
 ms.author: iawilt
