@@ -3,7 +3,7 @@ title: "End-user support strategy - Microsoft Power Platform | MicrosoftDocs"
 description: "Guidance on establishing a support and graduation framework, decision matrix and user support process for Microsoft Power Platform solutions."
 author: manuelap-msft
 manager: devkeydet
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/01/2022

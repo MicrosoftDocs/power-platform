@@ -4,7 +4,7 @@ description: "Managed properties help you define which of the managed solution c
 ms.custom: ""
 ms.date: 12/16/2021
 ms.reviewer: "pehecke"
-ms.service: power-platform
+
 ms.topic: "article"
 author: "shmcarth" # GitHub ID
 ms.subservice: alm

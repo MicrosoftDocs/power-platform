@@ -2,7 +2,7 @@
 title: "Rich text experience for appointment activities  | MicrosoftDocs"
 description: "Enable the rich text experience for appointment activities."
 author: Mattp123
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/04/2018

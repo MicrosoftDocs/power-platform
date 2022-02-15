@@ -3,7 +3,7 @@ title: "Microsoft Power Platform strategy and vision best practices | MicrosoftD
 description: "Microsoft Power Platform adoption practices provide admin and governance, nurture and strategy, and vision best practices."
 author: manuelap-msft
 manager: devkeydet
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/10/2020

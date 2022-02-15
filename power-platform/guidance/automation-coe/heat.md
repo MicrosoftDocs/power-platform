@@ -2,7 +2,7 @@
 title: Holistic enterprise automation techniques (HEAT) | Microsoft Docs
 description: HEAT is guidance to help you deploy the automation platform and manage the lifecycle of an automation project. Use these best practices and tools to achieve your automation goals. 
 author: kathyos
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 12/8/2021

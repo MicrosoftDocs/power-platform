@@ -2,7 +2,7 @@
 title: "Enable document suggestions for Dynamics 365 for Customer Engagement apps | MicrosoftDocs"
 description: Enable document suggestions for Dynamics 365 for Customer Engagement apps
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 10/27/2020

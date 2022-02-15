@@ -1,7 +1,7 @@
 ---
 title: "Set up security permissions for a field  | MicrosoftDocs"
 description: Set up security permissions for a field
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/17/2021

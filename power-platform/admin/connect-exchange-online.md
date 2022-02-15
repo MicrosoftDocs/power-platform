@@ -1,7 +1,7 @@
 ---
 title: "Connect to Exchange Online | MicrosoftDocs"
 description: Connect to Exchange Online
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 12/09/2021

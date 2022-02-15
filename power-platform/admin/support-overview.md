@@ -3,7 +3,7 @@ title: "Support for Microsoft Power Platform and customer engagement apps in Dyn
 description: Information on support for Microsoft Power Platform and customer engagement apps in Dynamics 365
 ms.date: 06/08/2021
 ms.reviewer: ""
-ms.service: power-platform
+
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: overview

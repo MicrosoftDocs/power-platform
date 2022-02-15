@@ -8,7 +8,7 @@ ms.reviewer: jimholtz
 ms.custom: 
   - "admin-security"
   - "intro-internal"
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: overview
 ms.date: 02/23/2021

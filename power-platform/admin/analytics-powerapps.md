@@ -2,7 +2,7 @@
 title: "Administrator analytics and reports for Microsoft Power Apps"
 description: "Admins can view Microsoft Power Apps analytics in the Power Platform admin center, including reports on environment-level usage, errors, and service performance."
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 08/04/2020

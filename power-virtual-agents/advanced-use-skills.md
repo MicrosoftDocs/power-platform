@@ -3,7 +3,7 @@ title: "Use Microsoft Bot Framework skills"
 description: "Extend your bot and author complex bot dialogs using pro-code tools to build Microsoft Bot Framework skills that enable the bot to book an appointment, send a confirmation email, manage tasks, and more."
 keywords: "authoring, extensibility, integration, extend bot, bot framework, skills, custom capabilities, PVA"
 ms.date: 9/22/2020
-ms.service: power-virtual-agents
+
 ms.topic: article
 author: iaanw
 ms.author: iawilt

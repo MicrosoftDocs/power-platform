@@ -3,7 +3,7 @@ title: "Add a chatbot to Microsoft Teams"
 description: "Connect your bot to a Microsoft Teams channel so people in your organization can interact with it."
 keywords: "Publish, channel, Microsoft Teams, Teams"
 ms.date: 01/25/2022
-ms.service: power-virtual-agents
+
 ms.topic: article
 author: iaanw
 ms.author: iawilt

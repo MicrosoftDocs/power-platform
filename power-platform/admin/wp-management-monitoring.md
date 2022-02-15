@@ -3,7 +3,7 @@ title: "Management and monitoring  | MicrosoftDocs"
 description: About management and monitoring.
 author: jimholtz
 manager: kvivek
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/09/2020

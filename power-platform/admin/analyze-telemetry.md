@@ -2,7 +2,7 @@
 title: "Preview: Analyze model-driven apps and Dataverse telemetry with Application Insights | Microsoft Docs"
 description: About analyzing model-driven apps and Microsoft Dataverse telemetry with Application Insights
 services: powerapps
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 07/27/2021

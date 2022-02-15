@@ -3,7 +3,7 @@ title: Asynchronous processing of cascading transactions | Microsoft Docs
 description: Learn how to configure cascading operations to process asynchronously.
 services: powerapps
 author: NHelgren
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/12/2021

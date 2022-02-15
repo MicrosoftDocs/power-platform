@@ -1,7 +1,7 @@
 ---
 title: "Teams in Dataverse   | MicrosoftDocs"
 description: Understand the different types of teams and how to view and manage settings.
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 10/26/2021
