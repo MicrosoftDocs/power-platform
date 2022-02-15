@@ -56,19 +56,19 @@ You can get your bot's ID from the **Add skill** window.
 
 1. In the [Power Virtual Agents portal](https://web.powerva.microsoft.com), expand the **Manage** tab on the side and select **Skills**.
 
-   :::image type="content" source="media/skills-menu.png" alt-text="Select Manage, then Skills.":::
+   :::image type="content" source="media/configuration-add-skills/skills-menu.png" alt-text="Select Manage, then Skills.":::
 
 1. At the top of the skills page, select **Add skill**.
 
-   :::image type="content" source="media/skills-add-skill.png" alt-text="Select Add skill button.":::
+   :::image type="content" source="media/configuration-add-skills/skills-add-skill.png" alt-text="Select Add skill button.":::
 
 1. Copy your bot's ID and provide that to your skills developer.
 
-   :::image type="content" source="media/skills-get-bot-id.png" alt-text="Screenshot highlighting the bot ID on the side of the Add a skill window.":::
+   :::image type="content" source="media/configuration-add-skills/skills-get-bot-id.png" alt-text="Screenshot highlighting the bot ID on the side of the Add a skill window.":::
 
 1. Enter the URL to the skill manifest. A skill's manifest contains the information that your bot will need to trigger actions within a skill.
 
-   :::image type="content" source="media/skills-add-url.png" alt-text="Add URL to the skill manifest.":::
+   :::image type="content" source="media/configuration-add-skills/skills-add-url.png" alt-text="Add URL to the skill manifest.":::
 
 1. Select **Next** to begin the [validation process](#troubleshooting-errors-during-skill-registration). When successful, your skill is added to your bot. You can now [use this skill in your topics](advanced-use-skills.md).
 

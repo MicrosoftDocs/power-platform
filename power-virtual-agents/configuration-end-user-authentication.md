@@ -49,7 +49,7 @@ Power Virtual Agents supports a set of different authentication options, each ta
 
 To change the authentication settings, go to **Manage** on the side pane, and then go to the **Security** tab and select the **Authentication** card.
 
-:::image type="content" source="media/security-authentication.png" alt-text="Screenshot of the Security page under Manage menu highlighting the Authentication card.":::
+:::image type="content" source="media/configuration-end-user-authentication/security-authentication.png" alt-text="Screenshot of the Security page under Manage menu highlighting the Authentication card.":::
 
 You will see the following three options to configure your authentication:
 
@@ -57,7 +57,7 @@ You will see the following three options to configure your authentication:
 - Only for Teams
 - Manual (for any channel including Teams)
 
-:::image type="content" source="media/security-authentication-pane.png" alt-text="Screenshot of the Authentication pane showing the three authentication options.":::
+:::image type="content" source="media/configuration-end-user-authentication/security-authentication-pane.png" alt-text="Screenshot of the Authentication pane showing the three authentication options.":::
 
 ### No Authentication
 
@@ -105,7 +105,7 @@ Once the configuration is saved, make sure to publish your bot so the changes ta
 
 **Require users to sign in** controls if a user needs to sign in before talking with the bot. If is only available to **Only for Teams** and **Manual** authentication options. It is highly recommended to turn on this setting when the bot contains sensitive information.
 
-:::image type="content" source="media/sharing-security-groups/auth-require-user-to-sign-in.PNG" alt-text="Screenshot of the Authentication pane showing require user to sign in.":::
+:::image type="content" source="media/configuration-end-user-authentication/auth-require-user-to-sign-in.PNG" alt-text="Screenshot of the Authentication pane showing require user to sign in.":::
 
 Bots with this configuration turned **Off** won't ask users to sign in until they encounter a topic which requires them to do so.
 
@@ -125,7 +125,7 @@ Your bot's **authentication option** and **Require user to sign in** combination
 
 When a bot's authentication option can't control who can chat with the bot, selecting **Share** on the bot's homepage will inform you that anyone can chat with the bot.
 
-:::image type="content" source="media/sharing-security-groups/auth-allow-everyone-chat-with-bot.PNG" alt-text="Everyone in the organization can chat with bot because of authentication setting.":::
+:::image type="content" source="media/configuration-end-user-authentication/auth-allow-everyone-chat-with-bot.PNG" alt-text="Everyone in the organization can chat with bot because of authentication setting.":::
 
 ## Register a new app with your identity provider when using Manual (for any channel including Teams)
 
@@ -167,7 +167,7 @@ This section shows an example of Azure AD being configured as an OAuth provider.
 1. Confirm you've selected the bot for which you want to enable authentication by selecting the bot icon on the top menu and choosing the bot.
 1. Select **Manage** on the side pane, and then go to the **Security** tab and select the **Authentication** card.
 
-    :::image type="content" source="media/auth-manage-sm.png" alt-text="Screenshot of the Authentication under Manage left bar menu.":::
+    :::image type="content" source="media/configuration-end-user-authentication/auth-manage-sm.png" alt-text="Screenshot of the Authentication under Manage left bar menu.":::
 
 1. Enter the information as described for each of the fields in the following table. The information required depends on your setup and provider. If you have questions about the required information, contact your administrator or identity provider.
 1. Click **Save** to finish the configuration.

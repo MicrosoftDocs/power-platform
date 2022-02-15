@@ -31,7 +31,7 @@ To create and manage Power Virtual Agents chatbots in Teams, you need:
 
 In some instances you may see a diamond icon or other indicator when a particular feature requires a different type of license. You'll be prompted about upgrading if you try to use that feature. For example, you'll see diamond icons when publishing to additional channels:
 
-:::image type="content" source="../media/upgrade-channels.png" alt-text="You need an upgraded license to publish to channels other than Teams.":::
+:::image type="content" source="../media/requirements-licensing/upgrade-channels.png" alt-text="You need an upgraded license to publish to channels other than Teams.":::
 
 For more information about licenses, see the following topics:
 
