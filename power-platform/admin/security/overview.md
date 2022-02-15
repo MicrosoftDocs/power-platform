@@ -148,3 +148,14 @@ Some token-based authentication data is available to other Microsoft apps, such 
 [Connecting and authenticating to data sources](./connect-data-sources.md)  
 [Data storage in Power Platform](./data-storage.md)  
 [Security in Microsoft Dataverse](../wp-security.md)
+
+### See also
+
+- [Microsoft Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
+- [Microsoft Enterprise Privacy Statement](https://www.microsoft.com/privacystatement/OnlineServices/Default.aspx)
+- [Data Protection Addendum](https://www.microsoft.com/download/details.aspx?id=101581)
+- [Microsoft Security Development Lifecycle Practices](https://www.microsoft.com/securityengineering/sdl/practices)
+- [Performance traffic-routing method for Azure Traffic Manager](/azure/traffic-manager/traffic-manager-routing-methods#performance-traffic-routing-method)
+- [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune)
+- [Windows Information Protection (WIP)](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip)
+

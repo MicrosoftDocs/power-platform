@@ -23,6 +23,8 @@ search.app:
 
 Power Platform authentication involves a sequence of requests, responses, and redirects between the user's browser and Power Platform or Azure services. The sequence follows the [Azure Active Directory (Azure AD) auth code grant flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow). For more information about user authentication models, see [Choosing a sign-in model for Microsoft 365](https://www.microsoft.com/microsoft-365/blog/2014/05/13/choosing-a-sign-in-model-for-office-365/).
 
+## Power Platform authentication sequence
+
 The authentication sequence is illustrated in the diagram that follows.
 
 1. The user initiates a connection to a Power Platform service from a browser. The user may enter the service address in the address bar or select **Sign in** on a Power Platform service page. The connection is established using TLS 1.2 and HTTPS. All subsequent communication between the browser and the Power Platform service uses HTTPS.
@@ -41,9 +43,14 @@ When a Power Platform service is embedded in SharePoint, Power BI, or Teams, the
 
 :::image type="content" source="./media/EndUserAuthSequence.png" alt-text="A diagram of the Power Platform user authentication sequence.":::
 
-## Related articles
+### Related articles
 
 [Security in Microsoft Power Platform](./overview.md)
 [Connecting and authenticating to data sources](./connect-data-sources.md)  
 [Data storage in Power Platform](./data-storage.md)  
 [Security in Microsoft Dataverse](../wp-security.md)
+
+### See also
+
+- [Azure Active Directory (Azure AD) auth code grant flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow)
+- [Choosing a sign-in model for Microsoft 365](https://www.microsoft.com/microsoft-365/blog/2014/05/13/choosing-a-sign-in-model-for-office-365/)
