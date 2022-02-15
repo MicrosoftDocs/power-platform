@@ -6,6 +6,11 @@
       "redirect_document_id": "false"
     },
     {
+      "source_path": "power-platform/power-virtual-agents/advanced-use-dispatcher.md",
+      "redirect_url": "index",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "power-platform/admin/working-with-environments.md",
       "redirect_url": "/powerapps/maker/canvas-apps/intro-maker-portal",
       "redirect_document_id": "false"
