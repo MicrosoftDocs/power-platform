@@ -3,7 +3,7 @@ title: "Report analytics, performance, and usage in Microsoft Teams"
 description: "The Summary analytics page in the Power Virtual Agents app in Microsoft Teams shows you the scope of analytics, clustered with AI technology, so you can instantly see what topics and bots need improving."
 keywords: "PVA"
 ms.date: 9/22/2020
-ms.service: power-virtual-agents
+
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -40,7 +40,7 @@ To change the time period to the last 30 days, select **Last 30 days** from the 
 
 ## Summary charts
 
-:::image type="content" source="media/summary-charts-teams.png" alt-text="Summary charts." border="false":::
+:::image type="content" source="../media/analytics-summary/summary-charts-teams.png" alt-text="Summary charts." border="false":::
 
 The Summary charts summarize the how well your bot is doing based on different measurements, described in this table:
 

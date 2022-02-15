@@ -3,7 +3,7 @@ title: "Create and use Power Apps environments"
 description: "Environments store all the data and resources associated with the bots you create in Power Virtual Agents."
 keywords: "onboarding, environments, PVA"
 ms.date: 01/25/2022
-ms.service: power-virtual-agents
+
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -48,7 +48,7 @@ You can, however, create additional environments by using the [Power Platform Ad
 
 1. Go to the **Environments** tab and select **+ New** to open the **New environment** pane.
 
-   :::image type="content" source="media/environments-create-1.png" alt-text="Create environment." border="false":::
+   :::image type="content" source="media/environments-first-run-experience/environments-create-1.png" alt-text="Create environment." border="false":::
   
    - For **Name**, specify a unique name for the environment.
    - For **Environment** select the environment type.
@@ -61,7 +61,7 @@ You can, however, create additional environments by using the [Power Platform Ad
    - Set **Create a database for this environment?** to **Yes**
    - Select **Next**.
 
-      :::image type="content" source="media/environments-create-2.png" alt-text="Enter the environment details." border="false":::
+      :::image type="content" source="media/environments-first-run-experience/environments-create-2.png" alt-text="Enter the environment details." border="false":::
 
       > [!NOTE]
       > The environment needs to be created in a supported region, otherwise you won't be able to use it when creating a bot.
@@ -77,7 +77,7 @@ You can, however, create additional environments by using the [Power Platform Ad
 
 To create a bot in an existing environment, select the environment in the [bot creation window](authoring-first-bot.md).
 
-:::image type="content" source="media/select_environment_onboarding.png" alt-text="Select environment." border="false":::
+:::image type="content" source="media/environments-first-run-experience/select_environment_onboarding.png" alt-text="Select environment." border="false":::
 
 ### Create a bot in an existing environment where you don't have access
 
@@ -100,7 +100,7 @@ When you trial Power Virtual Agents, you can create trial environments that expi
 
 If you have created your own environment and selected **Trial** as the environment type, you'll receive email messages shortly before it expires. In the Power Virtual Agents portal, you'll also see a notification if you have bots created in a trial environment that is going to expire in less than two weeks.
 
-:::image type="content" source="media/ennvironemnt_expiration_notification.png" alt-text="Environment expiration notification.":::
+:::image type="content" source="media/environments-first-run-experience/ennvironemnt_expiration_notification.png" alt-text="Environment expiration notification.":::
 
 > [!NOTE]
 > Note that there is a difference between an expiring environment and an expiring license. If your license is expiring, you will be able to extend it without losing any data. More information: [Sign up for a Power Virtual Agents trial](sign-up-individual.md#trial-expiration).

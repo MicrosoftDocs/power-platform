@@ -3,7 +3,7 @@ title: "Fundamentals - Publish a chatbot to various channels (contains video)"
 description: "Publish your bot to the web, Microsoft Teams, Facebook, or even use an existing Azure Bot Service framework."
 keywords: "Publish; demo; demo website; channels, PVA"
 ms.date: 01/25/2022
-ms.service: power-virtual-agents
+
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -43,15 +43,15 @@ You need to publish the bot at least once before your customers can interact wit
 
 1. Select **Publish** to make the latest bot content available to your customers.
 
-    :::image type="content" source="media/channel-publish-latest-content.png" alt-text="Publish latest bot content." border="false":::
+    :::image type="content" source="media/publication-fundamentals-publish-channels/channel-publish-latest-content.png" alt-text="Publish latest bot content." border="false":::
 
     The publishing process will take less than a few minutes as it checks for errors in the latest bot content.
 
-    :::image type="content" source="media/channel-publish-validation.png" alt-text="Validate latest bot content for publish." border="false":::
+    :::image type="content" source="media/publication-fundamentals-publish-channels/channel-publish-validation.png" alt-text="Validate latest bot content for publish." border="false":::
 
 1. After publishing completes, select the **demo website** link. The link will open a new tab and display a prebuilt demo website where you and your team can interact with the bot. The demo website is useful to gather feedback from stakeholders involved in the bot.
 
-:::image type="content" source="media/channel-go-to-demo-website.png" alt-text="Go to demo website." border="false":::
+:::image type="content" source="media/publication-fundamentals-publish-channels/channel-go-to-demo-website.png" alt-text="Go to demo website." border="false":::
 
 For details on updating the welcome message and help text on the demo website, go to [Configure the demo website and add the bot to your live website](publication-connect-bot-to-web-channels.md).
 
@@ -69,7 +69,7 @@ To configure channels:
 1. Select **Manage**.
 1. In the left side pane, select the **Channels** tab.
 
-:::image type="content" source="media/channel-channels-menu.png" alt-text="Channel settings." border="false":::
+:::image type="content" source="media/publication-fundamentals-publish-channels/channel-channels-menu.png" alt-text="Channel settings." border="false":::
 
 The connection steps are different for each channel. See the related article in the list below more information:
 

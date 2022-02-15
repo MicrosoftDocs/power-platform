@@ -3,7 +3,7 @@ title: "Check your chatbot with the Test bot in Microsoft Teams"
 description: "The Test bot lets you check how well your topics are working, and lets you navigate topic nodes in the Power Virtual Agents app in Microsoft Teams."
 keywords: "PVA"
 ms.date: 01/25/2022
-ms.service: power-virtual-agents
+
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -31,11 +31,11 @@ To help you find and fix unexpected behavior, you can enable tracking between to
 
 1. If the **Test bot** pane is hidden, open it by selecting the test bot icon at the bottom of the side pane.
 
-   :::image type="content" source="media/test-bot-menu-teams.png" alt-text="The Test your bot button is at the bottom of the side pane.":::
+   :::image type="content" source="../media/authoring-test-bot/test-bot-menu-teams.png" alt-text="The Test your bot button is at the bottom of the side pane.":::
 
 1. It's a good idea to select **Reset** at the top of the **Test bot** pane to clear previous conversations. Clearing previous conversations makes it easier to see the flow of the topic you want to see without getting confused by previous conversations.
 
-   :::image type="content" source="media/test-bot-reset-teams.png" alt-text="Click Reset at the top of the Test bot pane to clear conversation history." border="false":::
+   :::image type="content" source="../media/authoring-test-bot/test-bot-reset-teams.png" alt-text="Click Reset at the top of the Test bot pane to clear conversation history." border="false":::
 
 1. At the **Type your message** prompt at the bottom of the **Test bot** pane, enter a trigger phrase for the topic.
 
@@ -45,7 +45,7 @@ To help you find and fix unexpected behavior, you can enable tracking between to
 
 1. Select a response in the **Test bot** pane, which will take you to the response in the conversation editor for that topic. The authoring canvas displays highlighted nodes in green.
 
-    :::image type="content" source="media/test-bot-response-teams.png" alt-text="Select any response in the conversation to see the authoring canvas highlighted to that response.":::
+    :::image type="content" source="../media/authoring-test-bot/test-bot-response-teams.png" alt-text="Select any response in the conversation to see the authoring canvas highlighted to that response.":::
 
 You can return to the authoring canvas for the topic  at any time to revise it's conversation path. The **Test chat** pane will automatically refresh itself when you save changes to a topic.
 
@@ -55,11 +55,11 @@ As you fine-tune your bot, it can be useful to enable tracking between topics so
 
 1. If the **Test bot** pane is hidden, open it by selecting the test bot icon at the bottom of the side pane.
 
-   :::image type="content" source="media/test-bot-menu-teams.png" alt-text="The Test your bot button is at the bottom of the side pane.":::
+   :::image type="content" source="../media/authoring-test-bot/test-bot-menu-teams.png" alt-text="The Test your bot button is at the bottom of the side pane.":::
 
 1. At the top of the **Test bot** pane, set **Track between topics** to **On**.
 
-   :::image type="content" source="media/test-bot-track-teams.png" alt-text="Switch the track between topics toggle at the top of the test bot pan." border="false":::
+   :::image type="content" source="../media/authoring-test-bot/test-bot-track-teams.png" alt-text="Switch the track between topics toggle at the top of the test bot pan." border="false":::
 
 1. Enter a trigger phrase for the topic you want to check, and then continue testing the conversation.
 

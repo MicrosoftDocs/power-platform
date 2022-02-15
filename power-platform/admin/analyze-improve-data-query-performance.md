@@ -2,7 +2,7 @@
 title: "Use performance insights"
 description: "Learn how use performance insights to improve app performance"
 author: Mattp123
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 08/12/2021

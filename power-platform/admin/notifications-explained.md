@@ -1,7 +1,7 @@
 ---
 title: "Notifications for Business Application Group services  | MicrosoftDocs"
 description: Notifications for Business Application Group services
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/01/2021

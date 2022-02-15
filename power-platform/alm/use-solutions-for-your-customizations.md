@@ -4,7 +4,7 @@ description: "Using a custom solution in Power Apps is highly recommended. Disco
 ms.custom: ""
 ms.date: 11/11/2021
 ms.reviewer: ""
-ms.service: power-platform
+
 ms.topic: "article"
 author: "Mattp123"
 ms.subservice: alm

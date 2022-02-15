@@ -4,7 +4,7 @@ description: "Write code to check for solution component dependencies." # 115-14
 ms.custom: ""
 ms.date: 06/23/2020
 ms.reviewer: "pehecke"
-ms.service: power-platform
+
 ms.topic: "article"
 author: "shmcarth" # GitHub ID
 ms.subservice: alm

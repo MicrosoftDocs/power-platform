@@ -2,7 +2,7 @@
 title: "Use Power BI  | MicrosoftDocs"
 description: Use Power BI
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/15/2021

@@ -5,7 +5,7 @@ author: kvivek
 manager: annbe
 ms.date: 02/10/2022
 ms.topic: article
-ms.service: power-platform
+
 ms.custom:
 audience: Application User, IT Pro, Developer
 ms.search.region: Global

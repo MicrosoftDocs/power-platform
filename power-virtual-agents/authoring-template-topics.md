@@ -3,7 +3,7 @@ title: "Use lesson topics to understand capabilities"
 description: "Use specific template topics to understand the capabilities when authoring topics for use in Power Virtual Agents bots."
 keywords: "PVA"
 ms.date: 01/06/2022
-ms.service: power-virtual-agents
+
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -41,7 +41,7 @@ While the topics are functional, they are examples for the purposes of learning 
 
 1. To see the bot's flow, select each topic. The flow includes the bot's comments, expected user responses, decision points, and entity references.
 
-   :::image type="content" source="media/template-list.png" alt-text="List of lesson topics." border="false":::
+   :::image type="content" source="media/authoring-template-topics/template-list.png" alt-text="List of lesson topics." border="false":::
 
 > [!IMPORTANT]
 > You will see these lessons when you create a new bot. If you have previously created a bot and don't see them, try creating a new bot and then going to the **Topics** tab.

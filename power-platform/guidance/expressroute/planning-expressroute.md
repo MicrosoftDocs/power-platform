@@ -2,7 +2,7 @@
 title: "Plan to deploy ExpressRoute with Microsoft Power Platform | MicrosoftDocs"
 description: "Points to consider before setting up ExpressRoute`"
 author: taiki-yoshida
-ms.service: power-platform
+
 ms.topic: conceptual
 ms.date: 10/08/2021
 ms.subservice: guidance

@@ -6,7 +6,7 @@ ms.reviewer: jimholtz
 ms.subservice: admin
 ms.author: jimholtz
 ms.custom: "admin-security"
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 10/18/2021

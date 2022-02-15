@@ -3,7 +3,7 @@ title: "Customize the web chat canvas"
 description: "Change the name, icon, and color of your bot with CSS and JavaScript styling."
 keywords: "PVA"
 ms.date: 01/25/2022
-ms.service: power-virtual-agents
+
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -52,7 +52,7 @@ You can change the bot's name and icon. This will affect the icon in all channel
 
 1. Select **Save** to commit your changes.
 
-    :::image type="content" source="media/custom-canvas-name-icon.png" alt-text="The bot details pane lets you change the name and icon.":::
+    :::image type="content" source="media/customize-default-canvas/custom-canvas-name-icon.png" alt-text="The bot details pane lets you change the name and icon.":::
 
 ## Retrieve bot ID and tenant ID details
 
@@ -236,11 +236,11 @@ We recommend starting with one of these samples custom-built to work with Power 
 
 - [Full bundle](https://github.com/microsoft/PowerVirtualAgentsSamples/tree/master/BuildYourOwnCanvasSamples/1.starter-full-bundle) is a custom canvas capable of showing all rich content from Power Virtual Agents. For example:
 
-  :::image type="content" source="media/custom-canvas-full-bundle.png" alt-text="Full bundle custom canvas." border="false":::
+  :::image type="content" source="media/customize-default-canvas/custom-canvas-full-bundle.png" alt-text="Full bundle custom canvas." border="false":::
 
 - [Location and file uploading](https://github.com/microsoft/PowerVirtualAgentsSamples/tree/master/BuildYourOwnCanvasSamples/2.location-and-file-uploading) is a custom canvas capable of getting a user's location and sending it to a bot using Power Virtual Agents. For example:
 
-  :::image type="content" source="media/custom-canvas-location-file-upload.png" alt-text="Location and file uploading custom canvas." border="false":::
+  :::image type="content" source="media/customize-default-canvas/custom-canvas-location-file-upload.png" alt-text="Location and file uploading custom canvas." border="false":::
 
 Or you can pick from [other sample web chat canvases](https://github.com/microsoft/BotFramework-WebChat/#samples-list) provided by Bot Framework.
 

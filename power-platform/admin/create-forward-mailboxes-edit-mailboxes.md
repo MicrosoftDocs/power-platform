@@ -1,7 +1,7 @@
 ---
 title: "Create forward mailboxes or edit mailboxes | MicrosoftDocs"
 description: Create forward mailboxes or edit mailboxes 
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/29/2020

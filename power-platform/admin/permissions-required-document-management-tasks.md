@@ -2,7 +2,7 @@
 title: "Permissions and roles for SharePoint document management tasks"
 description: "Learn about the security roles and permissions required for document management tasks when using SharePoint."
 author: Mattp123
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/30/2017

@@ -1,7 +1,7 @@
 ---
 title: "Manage data loss prevention (DLP) policies"
 description: "Learn how to create, edit, and delete data loss prevention (DLP) policies, including the default data group for new connectors."
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/24/2020

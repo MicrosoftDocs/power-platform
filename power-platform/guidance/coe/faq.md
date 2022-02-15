@@ -3,7 +3,7 @@ title: "Frequently asked questions | MicrosoftDocs"
 description: "Frequently asked questions, tips, and how-to's about getting the CoE Starter Kit set up"
 author: manuelap-msft
 manager: devkeydet
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/24/2022

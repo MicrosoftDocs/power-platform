@@ -3,7 +3,7 @@ title: "Report analytics, performance, and usage (contains video)"
 description: "The Summary analytics page shows you the scope of analytics, clustered with AI technology, so you can instantly see what topics and bots need improving."
 keywords: "PVA"
 ms.date: 9/22/2020
-ms.service: power-virtual-agents
+
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -27,7 +27,7 @@ Select the version of Power Virtual Agents you're using here:
 
 The Summary page gives you a broad overview of your bot's performance. It uses artificial intelligence (AI) technology to show you which topics are having the greatest impact on escalation rate, abandon rate, and resolution rate (see the table under [Summary charts](#summary-charts) for more information on these metrics).
 
-:::image type="content" source="media/overview-analytics.png" alt-text="The Analytics summary page." border="false":::
+:::image type="content" source="media/analytics-summary/overview-analytics.png" alt-text="The Analytics summary page." border="false":::
 
 The Summary page includes a variety of charts with graphical views of your bot's key performance indicators. For information about each chart, see:
 
@@ -50,7 +50,7 @@ By default, the page shows you key performance indicators for the last seven day
 
 ## Summary charts
 
-:::image type="content" source="media/summary-charts.png" alt-text="Summary charts." border="false":::
+:::image type="content" source="media/analytics-summary/summary-charts.png" alt-text="Summary charts." border="false":::
 
 The Summary charts summarize the key performance indicators for the specified time period and the percent change over the period.
 

@@ -3,7 +3,7 @@ title: "Analyze topic performance in Microsoft Teams"
 description: "See how topics are performing, and determine what you can do to improve customer satisfaction in the Power Virtual Agents app in Microsoft Teams."
 keywords: "PVA"
 ms.date: 01/06/2022
-ms.service: power-virtual-agents
+
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -30,7 +30,7 @@ You can display the topic details page by selecting the **Detail** link in one o
 - [Resolution rate drivers (Summary page)](analytics-summary-teams.md#resolution-rate-drivers-chart)
 - [Customer satisfaction drivers (Customer Satisfaction page)](analytics-CSAT-teams.md#customer-satisfaction-drivers-chart)
 
-:::image type="content" source="media/topic-details-link-teams.png" alt-text="Topic details link." border="false":::
+:::image type="content" source="../media/analytics-topic-details/topic-details-link-teams.png" alt-text="Topic details link." border="false":::
 
 > [!IMPORTANT]
 > You need a license for [Dynamics 365 Customer Service Insights](/dynamics365/ai/customer-service-insights/licensing-case-capacity) to access the topic details charts.

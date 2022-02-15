@@ -2,7 +2,7 @@
 title: Create and manage environments in the Power Platform admin center | Microsoft Docs
 description: About creating and manage environments in the Power Platform admin center
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: quickstart
 ms.date: 02/08/2022
