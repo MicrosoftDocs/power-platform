@@ -3,7 +3,7 @@ title: "Understand conversation transcripts"
 description: "Review the fields associated with chat conversation transcripts, and see how to pull the data into Power BI."
 keywords: "PVA"
 ms.date: 4/23/2021
-ms.service: power-virtual-agents
+
 ms.topic: article
 author: iaanw
 ms.author: iawilt

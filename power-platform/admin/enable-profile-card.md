@@ -2,7 +2,7 @@
 title: "Enable viewing profile cards  | MicrosoftDocs"
 description: Enable viewing profile cards 
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/17/2021

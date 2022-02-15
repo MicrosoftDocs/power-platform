@@ -2,7 +2,7 @@
 title: "Digitizing app development at Microsoft  | MicrosoftDocs"
 description: A review of digitizing Business Applications Group
 author: kathyos
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/20/2021

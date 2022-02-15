@@ -3,7 +3,7 @@ title: "Configuration of advanced features"
 description: "Incorporate advanced features into your bot, such as sign-in, live agent transfer, custom appearances, dynamic cards, and file uploads."
 keywords: "PVA"
 ms.date: 9/22/2020
-ms.service: power-virtual-agents
+
 ms.topic: article
 author: iaanw
 ms.author: iawilt

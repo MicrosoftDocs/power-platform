@@ -2,7 +2,7 @@
 title: "Enable Power Automate integration to automate processes  | MicrosoftDocs"
 description: Enable Power Automate integration to automate processes
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 12/17/2021

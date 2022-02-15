@@ -1,7 +1,7 @@
 ---
 title: Security and governance considerations in Power Platform | Microsoft Docs
 description: Explains how Power Apps and Power Automate be made widely available to their business and be supported by IT.
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/07/2022

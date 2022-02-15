@@ -2,7 +2,7 @@
 title: "Power Platform adoption maturity model: Goals and Opportunities - Microsoft Power Platform | MicrosoftDocs"
 description: "This article describes goals and opportunities per maturity stage in the Power Platform adoption maturity model."
 author: manuelap-msft
-ms.service: power-platform
+
 ms.subservice: guidance
 ms.topic: conceptual
 ms.date: 10/31/2021

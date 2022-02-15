@@ -3,7 +3,7 @@ title: "ALM Accelerator for Power Platform user set-up | MicrosoftDocs"
 description: "Configuring user permissions to access the ALM Accelerator for Power Platform app and pipelines."
 author: mikefactorial
 manager: devkeydet
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 10/14/2021

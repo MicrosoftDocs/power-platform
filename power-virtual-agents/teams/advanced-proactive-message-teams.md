@@ -3,7 +3,7 @@ title: "Notify bot users in Power Virtual Agents for Teams with proactive messag
 description: "Use Power Automate flows to send proactive messages and adaptive cards from bots created in Teams to bot users, with updates to their conversations, requests for information, and more."
 keywords: "PVA"
 ms.date: 01/25/2022
-ms.service: power-virtual-agents
+
 ms.topic: article
 author: iaanw
 ms.author: iawilt

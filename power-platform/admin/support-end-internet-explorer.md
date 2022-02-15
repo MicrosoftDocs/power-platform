@@ -1,7 +1,7 @@
 ---
 title: "Support end for Internet Explorer | MicrosoftDocs"
 description: Information about support end for Internet Explorer.
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/14/2022

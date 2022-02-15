@@ -2,7 +2,7 @@
 title: "Use Microsoft Dataverse to detect duplicate records and merge  | MicrosoftDocs"
 description: About detecting and merging duplicate records.
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 11/09/2020

@@ -3,7 +3,7 @@ title: "ExpressRoute setup for Microsoft Power Platform | MicrosoftDocs"
 description: "Detailed explanation of the kinds of network setup required for enabling ExpressRoute with Microsoft Power Platform"
 author: taiki-yoshida
 manager: devkeydet
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 06/30/2021

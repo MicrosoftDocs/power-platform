@@ -1,7 +1,7 @@
 ---
 title: "Connect to Exchange Server (on-premises) | MicrosoftDocs"
 description: Connect to Exchange Server (on-premises)
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/24/2021

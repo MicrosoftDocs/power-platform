@@ -1,7 +1,7 @@
 ---
 title: "Connect to IMAP or POP servers  | MicrosoftDocs"
 description: Connect to IMAP, POP, or SMTP servers 
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/24/2021

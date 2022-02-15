@@ -3,7 +3,7 @@ title: "Release notes and latest version of the CoE starter kit Nurture Componen
 description: "Release notes and latest version of the CoE Starter Kit Nurture Components 1.51."
 author: manuelap-msft
 manager: devkeydet
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/05/2021
