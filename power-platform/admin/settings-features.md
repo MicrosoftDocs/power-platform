@@ -5,7 +5,7 @@ author: jimholtz
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/03/2022
+ms.date: 02/15/2022
 ms.subservice: admin
 ms.author: jimholtz 
 search.audienceType: 
@@ -52,6 +52,9 @@ Make sure you have the System Administrator or System Customizer security role o
 > |**Advanced find options**||  
 > |Modern advanced find in model-driven apps|Default: Off. If **On**, legacy advanced find will be replaced with a modern experience that has enhanced view management capabilities like searching on views and the ability to share, hide, and delete personal views. More information: [Advanced find in model-driven apps](/powerapps/user/advanced-find). This setting only appears if you have enabled 2022 Release Wave 1. |  
 > |Allow users to hide system views|Default: Off. If **On**, users can hide system views in the view selector to manage their view list in model-driven apps. More information: [Hide views on a grid page](/powerapps/user/grid-filters-advanced#hide-views). This setting only appears if you have enabled 2022 Release Wave 1.|
+> |**Collaboration (preview)**  ||
+> |Enable preview of the modern link sharing UI, co-presence, online status in model-driven apps  | Default: Off. Turn **On**, to allow users to share links and see each others presence status when they're working on a record. For more information see, [Collaborate with others in model-driven apps](/powerapps/user/collaboration).  |
+> |End users can add and join Teams meeting from appointments in model-driven apps.  | Default: Off. Turn **On**, to allow users create and join Teams meeting from an appointment. <!-- For more information, see [Create and join a Teams meeting from an appointment](/powerapps/user/join-teams-meeting-from-appointments).  -->|  
 > |**Search**||  
 > |Dataverse search|Default: Off. If **On**, you can use Dataverse search to find records across multiple tables, sorted by relevance.|  
 > | Share anonymized search analytics with Microsoft | Default: Off. To help Microsoft improve Dataverse search, you can share your environment's Dataverse search queries in Dynamics 365 and Power Platform applications with Microsoft. More information: [Help improve Dataverse search](configure-relevance-search-organization.md#help-improve-dataverse-search)      |
