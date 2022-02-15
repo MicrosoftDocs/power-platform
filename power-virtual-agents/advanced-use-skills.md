@@ -12,13 +12,12 @@ ms.custom: "Azure, advanced-authoring, ceX"
 ms.collection: virtual-agent
 ---
 
-
 # Use Microsoft Bot Framework skills in Power Virtual Agents
-
 
 Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
+>
 > - [Power Virtual Agents web app](advanced-use-skills.md)
 > - [Power Virtual Agents app in Microsoft Teams](teams/advanced-use-skills-teams.md)
 
@@ -29,8 +28,8 @@ Power Virtual Agents enables you to extend your bot using Microsoft Bot Framewor
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 - [Review restrictions and validation for skills used in Power Virtual Agents](/azure/bot-service/skill-pva)
 
-
 ## Add a skill to bot conversations
+
 First, [create a Power Virtual Agents bot](authoring-first-bot.md) and [create and deploy the skill using pro-code tools](https://go.microsoft.com/fwlink/?linkid=2110533) into your organization.
 
 Next, [register a skill in Power Virtual Agents](configuration-add-skills.md).
@@ -41,23 +40,21 @@ Next, [register a skill in Power Virtual Agents](configuration-add-skills.md).
 
 1. Open the authoring canvas for the topic you want to call a skill action from.
 
-1. Select the plus (**+**) icon underneath an existing node to add a new node. 
+1. Select the plus (**+**) icon underneath an existing node to add a new node.
 
-    :::image type="content" source="media/handoff-add-node.png" alt-text="Screenshot of adding a node." border="false":::
+    :::image type="content" source="media/advanced-use-skills/handoff-add-node.png" alt-text="Screenshot of adding a node." border="false":::
 
-1. In the node selection window, select **Call an action**, and then select the skill you want to add. 
+1. In the node selection window, select **Call an action**, and then select the skill you want to add.
 
-1. If your skill has inputs, assign variables to those inputs. Also, if your skill emits outputs to variables, you can use those variables in any nodes that follow. 
+1. If your skill has inputs, assign variables to those inputs. Also, if your skill emits outputs to variables, you can use those variables in any nodes that follow.
 
-    >[!NOTE]
-    >Skills can accept simple data types (integer, boolean, string) and complex data types (as JSON strings). 
-    >If you need to extract variables from complex data types, you must [use Power Automate](advanced-flow.md) to further parse and break down complex JSON strings into key value pairs for use in your bot.
+    > [!NOTE]
+    > Skills can accept simple data types (integer, boolean, string) and complex data types (as JSON strings).
+    >
+    > If you need to extract variables from complex data types, you must [use Power Automate](advanced-flow.md) to further parse and break down complex JSON strings into key value pairs for use in your bot.
 
 1. Select **Save** to persist your changes to the topic.
 
 1. You should [test your bot](authoring-test-bot.md) to make sure it's using the skill properly.
-
-
-
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

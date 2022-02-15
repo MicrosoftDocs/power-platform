@@ -1,6 +1,26 @@
 {
   "redirections": [
     {
+      "source_path": "power-platform/admin/create-environment-powerapps.md",
+      "redirect_url": "create-environment",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/working-with-environments.md",
+      "redirect_url": "/powerapps/maker/canvas-apps/intro-maker-portal",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/environments-administration.md",
+      "redirect_url": "environments-overview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/preview-environments.md",
+      "redirect_url": "/powerapps/maker/powerapps-preview-program",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "power-platform/admin/videos.md",
       "redirect_url": "https://www.youtube.com/c/MicrosoftDynamics365/videos",
       "redirect_document_id": "false"
