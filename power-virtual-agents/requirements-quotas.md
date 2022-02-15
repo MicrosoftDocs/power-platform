@@ -43,9 +43,11 @@ These limits apply to the Power Virtual Agents web app and the Power Virtual Age
 | Bots            | N/A                                    | 50 per team                                                                                                             |
 | Topics          | 1000 per bot in Dataverse environments | 250 per bot in Dataverse for Teams environments<sup>1</sup> <br/>1000 per bot in Dataverse environments (after upgrade) |
 | Trigger phrases | 200 per topic                          | 200 per topic                                                                                                           |
-| Skills          | 100 per bot                            | 100 per bot                                                                                                             |
+| Skills          | 100 per bot                            | 100 per bot<sup>2</sup>                                                                                                             |
 
 <sup>1</sup> If you're approaching limits in Dataverse for Teams environments, you can [upgrade Dataverse for Teams](teams/admin-upgrade-dataverse-teams.md) to continue adding topics.
+
+<sup>2</sup> You must have a [Power Virtual Agents standalone subscription](/requirements-licensing-subscriptions.md#standalone-power-virtual-agents-subscription) to use skills in a bot you've created in the Teams app. Skills are not available in the [Teams plan](requirements-licensing-subscriptions.md#power-virtual-agents-for-microsoft-teams-plan).
 
 ### Power Virtual Agents subscription limits
 
