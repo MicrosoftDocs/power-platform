@@ -160,6 +160,34 @@ The [Power Virtual Agents telephony extension](https://appsource.microsoft.com/p
 
 :::image type="content" source="media/configuration-hand-off-omnichannel/handoff-oc-voice-vars.png" alt-text="List of voice-related actions that can be added to a node in Power Virtual Agents.":::
 
+### Set survey content
+
+This action can be used to ask the caller if they are willing to take a survey at the end of their call.
+
+1. Add this action as you would [any other action when adding nodes](authoring-create-edit-topics.md#insert-nodes).
+
+1. Select **Add input for destination topic** and then **surveyConsent (boolean)**.
+
+    :::image type="content" source="media\configuration-hand-off-omnichannel\handoff-voice-config-survey-consent-add.png" alt-text="Add set survey content action.":::
+
+1. Select an **yes** or **no**. You can also directly enter the value that should be used.
+
+    :::image type="content" source="media\configuration-hand-off-omnichannel\handoff-voice-config-survey-consent.png" alt-text="Set input for set survey content action.":::
+
+### Set customer locale and handoff to Omnichannel
+
+This action can be used to ask the caller for their preferred language.
+
+1. Add this action as you would [any other action when adding nodes](authoring-create-edit-topics.md#insert-nodes).
+
+1. Select **Add input for destination topic** and then **customerLocale (string)**.
+
+    :::image type="content" source="media\configuration-hand-off-omnichannel\handoff-voice-config-set-locale-add.png" alt-text="Add Set customer locale and handoff to Omnichannel action.":::
+
+1. Select an existing variable that defines the language, or directly enter the language that should be used.
+
+   :::image type="content" source="media\configuration-hand-off-omnichannel\handoff-voice-config-set-locale.png" alt-text="Set input for Set customer locale and handoff to Omnichannel action.":::
+
 ### Send uninterruptible voice message
 
 This action can be used to send messages which can't be interrupted by the caller.
@@ -195,7 +223,7 @@ This action can be used to transfer the call to a different phone number altoget
 
 This action can be used to hang up the call. Once the conversation reaches this action, the call will be dropped.
 
-- Add this action as you would [any other action when adding nodes](authoring-create-edit-topics.md#insert-nodes).
+1. Add this action as you would [any other action when adding nodes](authoring-create-edit-topics.md#insert-nodes).
 
     :::image type="content" source="media/configuration-hand-off-omnichannel/handoff-voice-config-hangup.png" alt-text="Add hang up action.":::
 
