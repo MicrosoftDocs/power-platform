@@ -27,6 +27,7 @@ Power Virtual Agents enables you to extend your bot using Microsoft Bot Framewor
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 - [Review restrictions and validation for skills used in Power Virtual Agents](/azure/bot-service/skill-pva)
+- [A standalone Power Virtual Agents subscription](requirements-licensing-subscriptions.md#standalone-power-virtual-agents-subscription). If you have a [Teams plan](requirements-licensing-subscriptions.md#power-virtual-agents-for-microsoft-teams-plan), you can't use Bot Framework skills.
 
 ## Add a skill to bot conversations
 
