@@ -32,7 +32,7 @@ The core components solution is required for the nurture components solution to 
 1. Import the solution
     1. If [Installing to Production Environment](faq.md#installing-a-solution-in-a-production-environment) – use the solution file from the download called  CenterOfExcellenceNurtureComponents_x_x_x_xx_managed.zip.
     1. If [Installing to Dataverse for Teams Environment](faq.md#installing-a-solution-in-a-dataverse-for-teams-environment) – use the solution file from the download called  CenterOfExcellenceNurtureComponents_x_x_x_xx_managed.zip.
-1. Update the environment variable values. Note that if you choose, you can leave the values empty on import and [update them](#update-environment-variables) later after the import is completed.
+1. Update the environment variable values. Note that if you choose, you can leave the values empty on import and [update them](#all-environment-variables) later after the import is completed.
 
     | Name | Description |
     |------|---------------|
@@ -118,7 +118,7 @@ There are several flows which will need to be turned on for the Pulse feedback s
 
 1. Download and install [Microsoft Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=58494).
 1. Enable the [TDS endpoint](/admin/settings-features) on your environment.
-1. Get the [environment URL](setup-powerbi#get-the-environment-url).
+1. Get the [environment URL](setup-powerbi.md#get-the-environment-url).
 1. In Power BI Desktop, open the Pulse_CoEDashboard.pbit file, which can be found in the CoE Starter Kit you downloaded from [aka.ms/CoeStarterKitDownload](https://aka.ms/CoEStarterKitDownload).
 1. Enter the URL of your environment instance. Do not include the https:// prefix or / postfix for **OrgUrl**.
 1. Save the dashboard locally, or select **Publish** and choose the workspace you want to publish the report to.
@@ -171,24 +171,6 @@ Environment variables are used to store application and flow configuration data 
 | Maker Assessment Admin eMail | eMail of the admin or CoE team that will respond to queries from the Maker Assessment app |
 | Community URL | Link to your internal Microsoft Power Platform community (for example, Yammer or Teams) |
 | Pulse - How many makers to survey? | The Pulse survey is send to makers to provide feedback on their experience working with the CoE and Power Platform. Provide the number of makers you want to survey regularly here. If you set this number to 5, the survey will be sent to 5 random makers per week. A Default value of 1 is provided. |
-
-## It looks like I found a bug with the CoE Starter Kit; where should I go?
-
-To file a bug against the solution, go to [aka.ms/coe-starter-kit-issues](https://aka.ms/coe-starter-kit-issues).
-
-
-
-## Share apps with your organization
-
-The nurture components solution contains four apps. As soon as you're ready to adopt the CoE, share these apps as follows:
-
-- Maker Assessment: Share with your makers or your entire organization.
-
-- Template Catalog: Share with your makers or your entire organization.
-
-- Power Platform Training Management: Share with admins only.
-
-- Power Platform Training Registration: Share with your entire organization.
 
 ## It looks like I found a bug with the CoE Starter Kit; where should I go?
 
