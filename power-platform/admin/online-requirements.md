@@ -84,7 +84,7 @@ Use the following service tag values to find out IP address values required for 
 |Power Platform services|`PowerPlatformInfra`|This tag represents the IP addresses used by the infrastructure to host Power Platform services.|
 |Dynamics 365|`AzureCloud`|This tag represents all datacenter public IP addresses.|
 
-If you are using [Power Platform connectors](/connectors/connectors), see the complete list of IP addresses required in [Connectors docs](/connectors/common/outbound-ip-addresses#power-platform).
+If you are using *Power Platform connectors*, see the complete list of IP addresses required in [Connectors docs](/connectors/common/outbound-ip-addresses#power-platform).
 
 > [!NOTE]
 > Blocked IPs can also impact connecting Dynamics 365 apps to [Microsoft Exchange Server (on-premises)](connect-exchange-server-on-premises.md). 
