@@ -47,7 +47,7 @@ These limits apply to the Power Virtual Agents web app and the Power Virtual Age
 
 <sup>1</sup> If you're approaching limits in Dataverse for Teams environments, you can [upgrade Dataverse for Teams](teams/admin-upgrade-dataverse-teams.md) to continue adding topics.
 
-<sup>2</sup> You must have a [Power Virtual Agents standalone subscription](/requirements-licensing-subscriptions.md#standalone-power-virtual-agents-subscription) to use skills in a bot you've created in the Teams app. Skills are not available in the [Teams plan](requirements-licensing-subscriptions.md#power-virtual-agents-for-microsoft-teams-plan).
+<sup>2</sup> You must have a [Power Virtual Agents standalone subscription](../requirements-licensing-subscriptions.md#standalone-power-virtual-agents-subscription) to use skills in a bot you've created in the Teams app. Skills are not available in the [Teams plan](requirements-licensing-subscriptions.md#power-virtual-agents-for-microsoft-teams-plan).
 
 ### Power Virtual Agents subscription limits
 
