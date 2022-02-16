@@ -237,6 +237,10 @@ You can also use the "Is Empty" condition in the authoring experience to check i
 
 This variable contains the phone number the customer dialed to reach the bot.
 
+### Dynamics 365 variables
+
+Dynamics 365 Customer Service provides [additional context variables](/dynamics365/customer-service/context-variables-for-bot#context-variables-for-power-virtual-agents-bots) for Power Virtual Agents bots.
+
 ### Authoring considerations
 
 - When using adaptive cards, ensure you are using them through [Composer integration](advanced-bot-framework-composer.md) so their "speak" property is correctly read by the voice bot.
