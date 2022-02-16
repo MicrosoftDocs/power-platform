@@ -32,17 +32,18 @@ The core components solution is required for the nurture components solution to 
 1. Import the solution
     1. If [Installing to Production Environment](faq.md#installing-a-solution-in-a-production-environment) – use the solution file from the download called  CenterOfExcellenceNurtureComponents_x_x_x_xx_managed.zip.
     1. If [Installing to Dataverse for Teams Environment](faq.md#installing-a-solution-in-a-dataverse-for-teams-environment) – use the solution file from the download called  CenterOfExcellenceNurtureComponents_x_x_x_xx_managed.zip.
-1. Update the environment variable values. Note that if you choose, you can leave the values empty on import and [update them](#all-environment-variables) later after the import is completed.
-
-    | Name | Description |
-    |------|---------------|
-    | Training in a day - Feedback Form     | The Training in a Day package includes a flow that automatically sends a feedback request to attendees on the day of the event. Configure the form URL (<https://forms.office.com/>...) here.    |
-    | Power User Site URL (SharePoint Site) | The site that your Microsoft Power Platform power users can use to communicate and share files. You'll use it here to house the template library for them. |
-    | Innovation Backlog URL | (optional) URl to the [Innovation Backlog](use-innovationbacklog.md) canvas app, if you are using this app |
-    | Maker Assessment Admin eMail | eMail of the admin or CoE team that will respond to queries from the Maker Assessment app. |
-    | Community URL | Link to your internal Microsoft Power Platform community (for example, Yammer or Teams) |
+1. Leave all environment variables blank on import.
 
 ## Set up training in a day components
+
+### Update environment variables values
+
+[Update environment variables](faq.md#update-environment-variables) used by the environment request management components as described in the following table.
+
+| Name | Description |
+|------|---------------|
+| Training in a day - Feedback Form     | The Training in a Day package includes a flow that automatically sends a feedback request to attendees on the day of the event. Configure the form URL (<https://forms.office.com/> or https://forms.osi.apps.mil/ for a DoD tenant) here.    |
+| Community URL | Link to your internal Microsoft Power Platform community (for example, Yammer or Teams) |
 
 ### Set up a feedback form for your Training in a day
 
@@ -78,6 +79,14 @@ More information:
 - [Share a canvas app in Microsoft Teams](faq.md#share-an-app-from-a-dataverse-for-teams-environment)
 
 ## Set up maker assessment components
+
+### Update environment variables values
+
+[Update environment variables](faq.md#update-environment-variables) used by the environment request management components as described in the following table.
+
+| Name | Description |
+|------|---------------|
+| Maker Assessment Admin eMail | eMail of the admin or CoE team that will respond to queries from the Maker Assessment app |
 
 ### Import starter data set for the Maker Assessment app
 
@@ -166,7 +175,7 @@ Environment variables are used to store application and flow configuration data 
 | Name | Description |
 |------|---------------|
 | Training in a day - Feedback Form     | The Training in a Day package includes a flow that automatically sends a feedback request to attendees on the day of the event. Configure the form URL (<https://forms.office.com/> or https://forms.osi.apps.mil/ for a DoD tenant) here.    |
-| Power User Site URL (SharePoint Site) | The site that your Microsoft Power Platform power users can use to communicate and share files. You'll use it here to house the template library for them. |
+| Power User Site URL (SharePoint Site) | The site that your Microsoft Power Platform power users can use to communicate and share files. You'll use it here to house the template library for them. *Currently not used.* |
 | Innovation Backlog URL | (optional) URl to the [Innovation Backlog](use-innovationbacklog.md) canvas app, if you are using this app |
 | Maker Assessment Admin eMail | eMail of the admin or CoE team that will respond to queries from the Maker Assessment app |
 | Community URL | Link to your internal Microsoft Power Platform community (for example, Yammer or Teams) |
