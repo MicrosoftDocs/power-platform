@@ -565,6 +565,8 @@
               items:
               - name: "Preview: List environments"
                 href: list-environments.md
+              - name: "Preview: Create Dataverse application user"
+                href: create-dataverseapplicationuser.md
             - name: Tenant Settings
               items:
               - name: "Preview: List tenant settings"
