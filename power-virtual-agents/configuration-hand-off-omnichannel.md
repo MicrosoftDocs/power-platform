@@ -168,11 +168,11 @@ This action can be used to send messages which can't be interrupted by the calle
 
 1. Select **Add input for destination topic** and then **UninterruptibleMessage (string)**.
 
-    :::image type="content" source="media/configuration-hand-off-omnichannel/handoff-voice-config-interrupt-add.png" alt-text="Handoff Voice Config Interrupt Add":::
+    :::image type="content" source="media/configuration-hand-off-omnichannel/handoff-voice-config-interrupt-add.png" alt-text="Add send uninterruptible voice message action.":::
 
 1. Select an existing variable that defines the message content, or directly enter the message that should be used.
 
-    :::image type="content" source="media/configuration-hand-off-omnichannel/handoff-voice-config-interrupt.png" alt-text="Handoff Voice Config Interrupt":::
+    :::image type="content" source="media/configuration-hand-off-omnichannel/handoff-voice-config-interrupt.png" alt-text="Set input for send uninterruptible voice message action.":::
 
 ### Transfer the call to a different phone number
 
@@ -182,9 +182,11 @@ This action can be used to transfer the call to a different phone number altoget
 
 1. Select **Add input for destination topic** and then **TargetPhoneNumber (string)**.
 
-    :::image type="content" source="media/configuration-hand-off-omnichannel/handoff-voice-config-transfer-input.png" alt-text="Handoff Voice Config Transfer Input":::
+    :::image type="content" source="media/configuration-hand-off-omnichannel/handoff-voice-config-transfer-add.png" alt-text="Add transfer the call to a different phone number action.":::
   
-1. Select an existing variable that defines the number that should be called instead, or directly enter the number.
+1. Select an existing variable that defines the number that should be called, or directly enter the number.
+
+    :::image type="content" source="media/configuration-hand-off-omnichannel/handoff-voice-config-transfer.png" alt-text="Add transfer the call to a different phone number action.":::
 
 > [!NOTE]
 > This action requires the "Make calls" privilege when purchasing the phone number. Without this privilege, the transfer will fail.
@@ -195,7 +197,7 @@ This action can be used to hang up the call. Once the conversation reaches this 
 
 - Add this action as you would [any other action when adding nodes](authoring-create-edit-topics.md#insert-nodes).
 
-    :::image type="content" source="media/configuration-hand-off-omnichannel/handoff-voice-config-hangup.png" alt-text="Handoff Voice Config Hangup.":::
+    :::image type="content" source="media/configuration-hand-off-omnichannel/handoff-voice-config-hangup.png" alt-text="Add hang up action.":::
 
 ### _bot.CustomerPhoneNumber_ variable
 
