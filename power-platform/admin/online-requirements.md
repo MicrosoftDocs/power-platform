@@ -75,7 +75,7 @@ The IP address values in these JSON files are grouped by service tags that defin
 
 These service tags also have a regional scope to define the IP addresses required per Azure datacenter region. For example, to find out the required IP address values for accessing *Power Platform services* in the *Australia* region, use the [Azure IP Ranges and Service Tags – Public Cloud](https://www.microsoft.com/download/details.aspx?id=56519) file, and search for **PowerPlatformInfra.Australia**.
 
-:::image type="content" source="media/ip-example.png" alt-text="AzureCloud service tag for Power Platform IPs":::  
+:::image type="content" source="media/ip-example.png" alt-text="PowerPlatformInfra service tag for Power Platform IPs":::  
 
 Use the following service tag values to find out IP address values required for your service.
 
