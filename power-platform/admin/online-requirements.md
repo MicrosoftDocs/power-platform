@@ -26,10 +26,13 @@ Ensure that you have unblocked URLs for the respective service to use it.
 
 ### URLs for using Power Platform
 
-- **Power Apps**: [Required services](/powerapps/maker/canvas-apps/limits-and-config#required-services)
-- **Power Automate**: [Required services](/power-automate/ip-address-configuration#required-services)
-- **Power Virtual Agents**: [Required services](/power-virtual-agents/requirements-quotas#required-services)
-- **Power BI**: [Add Power BI URLs to your allowlist](/power-bi/admin/power-bi-allow-list-urls)
+|App/Service|URLs|
+|--|--|
+|Power Apps|- [Public cloud](/powerapps/maker/canvas-apps/limits-and-config#required-services)<br/>- [Government cloud](powerapps-us-government.md#power-apps-us-government-service-urls)|
+|Power Automate| - [Public cloud](/power-automate/ip-address-configuration#required-services)<br/>- [Government cloud](/power-automate/us-govt#power-automate-us-government-service-urls)|
+|Power BI|- [Public cloud](/power-bi/admin/power-bi-allow-list-urls)<br/>- [Government cloud](/power-bi/admin/service-govus-overview#allow-connections-to-power-bi)|
+|Power Virtual Agents|- [Public cloud](/power-virtual-agents/requirements-quotas#required-services)<br/>- [Government cloud](/power-virtual-agents/requirements-licensing-gcc#power-virtual-agents-us-government-service-urls)
+
 
 ### URLs for using Dynamics 365 apps
 
@@ -55,10 +58,6 @@ Add the following URLs to the approved list to allow traffic to proceed to these
 | https://dynamics.microsoft.com |    |
 | https://*.api.powerplatform.com | Required for Power Platform API connectivity used internally by Microsoft products as well as admin automation scenarios as [documented here](programmability-extensibility-overview.md).
 
-### URLs required for Power Apps US Government and Dynamics 365 US Government
-
-- [Power Apps US Government service URLs](powerapps-us-government.md#power-apps-us-government-service-urls)
-- [Dynamics 365 US Government URLs](microsoft-dynamics-365-government.md#dynamics-365-us-government-urls)
 
 ## IP addresses required
 
