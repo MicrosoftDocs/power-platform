@@ -214,7 +214,7 @@ This action can be used to transfer the call to a different phone number altoget
   
 1. Select an existing variable that defines the number that should be called, or directly enter the number.
 
-    :::image type="content" source="media/configuration-hand-off-omnichannel/handoff-voice-config-transfer.png" alt-text="Add transfer the call to a different phone number action.":::
+    :::image type="content" source="media/configuration-hand-off-omnichannel/handoff-voice-config-transfer.png" alt-text="Set input for transfer the call to a different phone number action.":::
 
 > [!NOTE]
 > This action requires the "Make calls" privilege when purchasing the phone number. Without this privilege, the transfer will fail.
