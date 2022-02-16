@@ -28,7 +28,7 @@ Commonly asked questions about Power Platform security fall into two categories:
 
 To make it easier for you to find the latest information, new questions are added at the end of this article.
 
-## How Power Platform mitigates the OWASP top 10 risks
+## OWASP top 10 risks: Mitigations in Power Platform
 
 The Open Web Application Security Project® ([OWASP](https://owasp.org/about/)) is a nonprofit foundation that works to improve software security. Through community-led open-source software projects, hundreds of chapters worldwide, tens of thousands of members, and leading educational and training conferences, the OWASP Foundation is the source for developers and technologists to secure the web.
 
@@ -93,8 +93,6 @@ Power Platform uses industry-standard best practices to prevent injection attack
 - Power Platform's Component Governance process enforces the secure configuration of package source files to maintain software integrity.
 - The process ensures that only internally sourced packages are served to address [substitution attack](https://azure.microsoft.com/resources/3-ways-to-mitigate-risk-using-private-package-feeds/). Substitution attack, also known as dependency confusion, is a technique that can be used to poison the app-building process inside secure enterprise environments.
 - All encrypted data has integrity protection applied before it's transmitted. All integrity protection metadata present for incoming encrypted data is validated.
-
-<!-- There are only eight risks mentioned. Where are the other two? -->
 
 ## Common security questions from customers
 
