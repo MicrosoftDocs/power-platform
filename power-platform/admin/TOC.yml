@@ -565,7 +565,7 @@
               items:
               - name: "Preview: List environments"
                 href: list-environments.md
-              - name: "Preview: Create Dataverse application user"
+              - name: "Preview: Create a Dataverse application user"
                 href: create-dataverseapplicationuser.md
             - name: Tenant Settings
               items:
@@ -670,7 +670,6 @@
             href: create-team-template-add-entity-form.md
         - name: Encryption
           items:
-          # comment out the next 2 lines until reviewed.
           - name: About encryption
             href: about-encryption.md
           - name: Encrypt your data
