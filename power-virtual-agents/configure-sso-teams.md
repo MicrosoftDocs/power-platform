@@ -3,7 +3,7 @@ title: "Configure single sign-on for the Power Virtual Agents app in Teams"
 description: "Enable your bot to authenticate an already-signed-in Teams user"
 keywords: "Single Sign-on, Teams SSO, User Authentication, Authentication, AAD, MSA, Identity Provider, PVA"
 ms.date: 01/25/2022
-ms.service: power-virtual-agents
+
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -73,12 +73,12 @@ You will need to get your Teams app ID:
 
 1. In the pane that appears to the side, select **Edit detail**, expand **More** and then copy the app ID by selecting **Copy**.
 
-    :::image type="content" source="media/sharing-security-groups/teams-sso-app-id.PNG" alt-text="Edit bot detail showing App ID.":::
+    :::image type="content" source="media/configure-sso-teams/teams-sso-app-id.PNG" alt-text="Edit bot detail showing App ID.":::
 
 > [!NOTE]
 > If you haven't already enabled the Teams channel, you will see instead see a notice that you need to enable Teams. Select **Turn on Teams** and then re-try Step 1 to get the app ID.  
 >
-> :::image type="content" source="media/TeamsSSO/image2.png" alt-text="Teams channel pane showing that the channel is turned off.":::
+> :::image type="content" source="media/configure-sso-teams/image2.png" alt-text="Teams channel pane showing that the channel is turned off.":::
 
 Now you can add the app ID URI to your Azure AD app registration:
 
@@ -88,7 +88,7 @@ Now you can add the app ID URI to your Azure AD app registration:
 
 1. Select **Save**.
 
-    :::image type="content" source="media/TeamsSSO/image3.png" alt-text="Setting the correct App ID in Azure portal.":::
+    :::image type="content" source="media/configure-sso-teams/image3.png" alt-text="Setting the correct App ID in Azure portal.":::
 
 ### Grant admin consent
 
@@ -98,7 +98,7 @@ To grant admin consent:
 
 1. Select **Grant admin consent for \<your tenant name\>** and then **Yes**.
 
-    :::image type="content" source="media/TeamsSSO/image4.png" alt-text="Screenshot showing granting admin consent to tenant.":::
+    :::image type="content" source="media/configure-sso-teams/image4.png" alt-text="Screenshot showing granting admin consent to tenant.":::
 
 > [!IMPORTANT]
 > To avoid users from having to consent to each application, a Global Administrator, Application Administrator, or a Cloud Application Administrator must [grant tenant-wide consent](/azure/active-directory/manage-apps/grant-admin-consent) to your app registrations.
@@ -111,7 +111,7 @@ To define a custom scope for your bot:
 
 1. Select **Add a scope**.
 
-    :::image type="content" source="media/TeamsSSO/image5.png" alt-text="Screenshot displaying adding scope to Expose an API section.":::
+    :::image type="content" source="media/configure-sso-teams/image5.png" alt-text="Screenshot displaying adding scope to Expose an API section.":::
 
 1. Enter a name for the scope, along with the display information that should be shown to users when they come to the SSO screen.
 
@@ -119,7 +119,7 @@ To define a custom scope for your bot:
 
 1. Enter a **Scope name**, **Admin consent display name**, **Admin consent description**.
 
-    :::image type="content" source="media/TeamsSSO/image6.png" alt-text="Screenshot displaying adding scope details name, consent display name, and consent description.":::
+    :::image type="content" source="media/configure-sso-teams/image6.png" alt-text="Screenshot displaying adding scope details name, consent display name, and consent description.":::
 
 ### Add authorized client app IDs
 
@@ -138,13 +138,13 @@ Now you'll need to add the Teams client app IDs, which are:
 
 1. Select **Add application**.
 
-    :::image type="content" source="media/TeamsSSO/image7.png" alt-text="Screenshot showing Add Client Application.":::
+    :::image type="content" source="media/configure-sso-teams/image7.png" alt-text="Screenshot showing Add Client Application.":::
 
 1. Repeat from Step 1, this time using `5e3ce6c0-2b1f-4285-8d4b-75ee78787346` as the second client app ID and make sure to select the scope checkbox.
 
 The **Expose an API** page should have these values:
 
-:::image type="content" source="media/TeamsSSO/image8.png" alt-text="Screenshot showing correctly filled values for Expose an API screen.":::
+:::image type="content" source="media/configure-sso-teams/image8.png" alt-text="Screenshot showing correctly filled values for Expose an API screen.":::
 
 ## Update the Azure AD authentication created in the Power Virtual Agents web app
 
@@ -158,7 +158,7 @@ To add the token exchange url:
 
 1. Add the Token Exchange URL as described in the [Configure SSO with Azure AD](configure-sso.md#configure-authentication-in-power-virtual-agents-to-enable-single-sign-on) topic, under the **Configure authentication in Power Virtual Agents to Enable SSO** heading.
 
-    :::image type="content" source="media/TeamsSSO/image9.png" alt-text="Screenshot displaying correct Token Exchange URL configuration.":::
+    :::image type="content" source="media/configure-sso-teams/image9.png" alt-text="Screenshot displaying correct Token Exchange URL configuration.":::
 
 To add Teams SSO configuration information in the Power Virtual Agents bot:
 
@@ -176,7 +176,7 @@ To add Teams SSO configuration information in the Power Virtual Agents bot:
 
 1. Save and close.
 
-    :::image type="content" source="media/TeamsSSO/image10.png" alt-text="Screenshot displaying correct Teams channel SSO configuration.":::
+    :::image type="content" source="media/configure-sso-teams/image10.png" alt-text="Screenshot displaying correct Teams channel SSO configuration.":::
 
 These steps update the manifest file for the bot. Now you can download the manifest file (as a .zip file) and upload to Teams for test or distribution, or submit for your admin approval. For more information, see the [Add bot to Microsoft Teams in Teams](publication-add-bot-to-microsoft-teams.md) topic.
 
@@ -184,7 +184,7 @@ These steps update the manifest file for the bot. Now you can download the manif
 
 1. Select **Download .zip** to get the new manifest.
 
-    :::image type="content" source="media/sharing-security-groups/add-bot-to-teams-download-zip.png" alt-text="Screenshot displaying Download .zip button highlighted.":::
+    :::image type="content" source="media/configure-sso-teams/add-bot-to-teams-download-zip.png" alt-text="Screenshot displaying Download .zip button highlighted.":::
 
 > [!IMPORTANT]
 > If your users have used the manifest to install the bot, they will need to get a new manifest after this configuration is complete and install the bot again for the Teams SSO to work. The Teams manifest does not refresh automatically. Alternatively, if you submit for Admin approval, the manifest is updated automatically.

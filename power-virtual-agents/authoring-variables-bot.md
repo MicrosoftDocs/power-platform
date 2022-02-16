@@ -3,7 +3,7 @@ title: "Use chatbot variables to carry content across topics"
 description: "Bot variables can be used to store and retrieve information across multiple topics within the same bot and user session"
 keywords: "PVA"
 ms.date: 3/19/2020
-ms.service: power-virtual-agents
+
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -41,7 +41,7 @@ After you set a bot variable, it will be available to all topics.
 
 When you select the `{x}` button in a message node or question node when you're composing a bot message, you'll see that the bot variable is available. Variables are sorted in alphabetical order, so you'll find that all bot variables are grouped together in the variable menu because they all begin with `bot.`.
 
-:::image type="content" source="media/bot-variable-message.png" alt-text="Screenshot showing selection of the x variable icon to display a list of variables." border="false":::
+:::image type="content" source="media/authoring-variables-bot/bot-variable-message.png" alt-text="Screenshot showing selection of the x variable icon to display a list of variables." border="false":::
 
 When you use a condition node, a flow action node, or a skill node, you'll also see bot variables available there.
 
@@ -53,7 +53,7 @@ When you use a condition node, a flow action node, or a skill node, you'll also 
 
 1. The variable name will be given a prefix string `bot.`, to differentiate it from the topic-level variables. For example, the variable `UserName` is now shown as `bot.UserName`.
 
-:::image type="content" source="media/bot-variable-set.png" alt-text="Screenshot showing the Variable Properties pane, with the Usage section highlighted":::
+:::image type="content" source="media/authoring-variables-bot/bot-variable-set.png" alt-text="Screenshot showing the Variable Properties pane, with the Usage section highlighted":::
 
 > [!NOTE]
 > A bot variable's name must be unique across all topics. In the case of a conflict, you'll need to rename the variable before saving your change.
@@ -68,7 +68,7 @@ After you've created a bot variable, you can see where it's first defined and wh
 
 1. On the **Variable properties** pane, select **Go to source**.
 
-:::image type="content" source="media/bot-variable-source.png" alt-text="Screenshot showing the Variable Properties pane, with the Go to Source button highlighted":::
+:::image type="content" source="media/authoring-variables-bot/bot-variable-source.png" alt-text="Screenshot showing the Variable Properties pane, with the Go to Source button highlighted":::
 
 This will take you to the node in the topic where the bot variable was created.
 
@@ -78,7 +78,7 @@ This will take you to the node in the topic where the bot variable was created.
 
 1. On the **Variable properties** pane, in the **Used by** section, select any of the topics where the variable is used to go straight to that topic and node.
 
-:::image type="content" source="media/bot-variable-used-by.png" alt-text="Screenshot showing the list of topics used by a variable in the Variable Properties pane.":::
+:::image type="content" source="media/authoring-variables-bot/bot-variable-used-by.png" alt-text="Screenshot showing the list of topics used by a variable in the Variable Properties pane.":::
 
 ## Bot variable initialization
 
@@ -116,7 +116,7 @@ For example, a customer brings up a bot chat from your web site, and the site al
 
 1. On the **Variable properties** pane, in the **Usage** section, select the checkbox **External sources can set values**.
 
-:::image type="content" source="media/bot-variable-external.png" alt-text="Screenshot of the Usage section on the Variable Properties pane, with the Bot option and External sources can set values checkbox both selected":::
+:::image type="content" source="media/authoring-variables-bot/bot-variable-external.png" alt-text="Screenshot of the Usage section on the Variable Properties pane, with the Bot option and External sources can set values checkbox both selected":::
 
 1. You can append the variables and their definitions if you're simply [embedding your bot in a simple webpage](publication-connect-bot-to-web-channels.md#custom-website), or you can use a `<script>` code block to call and use variables programatically.
 
@@ -186,11 +186,11 @@ When removing a bot variable used in other topics, the references to that variab
 
 You'll receive a warning about deleting the bot variable before you can confirm the operation.
 
-:::image type="content" source="media/bot-variable-delete.png" alt-text="The bot variable delete message indicates that references to that variable will be labeled as unknown." border="false":::
+:::image type="content" source="media/authoring-variables-bot/bot-variable-delete.png" alt-text="The bot variable delete message indicates that references to that variable will be labeled as unknown." border="false":::
   
 Nodes that contain references to the deleted bot variable will tell you they contain an unknown variable.
 
-:::image type="content" source="media/bot-variable-unknown-node.png" alt-text="Screenshot of a node with references to an unknown variable, which are marked as red within the message node's text, and indicated with a warning that says Bot message contains unknown variable":::
+:::image type="content" source="media/authoring-variables-bot/bot-variable-unknown-node.png" alt-text="Screenshot of a node with references to an unknown variable, which are marked as red within the message node's text, and indicated with a warning that says Bot message contains unknown variable":::
 
 Topics with nodes that contain references to deleted bot variables might stop working. Ensure that you remove or correct all the topics that were using the deleted variable before publishing.
 

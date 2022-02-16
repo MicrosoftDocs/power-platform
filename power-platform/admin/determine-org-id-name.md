@@ -2,7 +2,7 @@
 title: "Find your environment's organization ID and name"
 description: "If you need to find your Power Platform environment's organization ID and name for any reason, this page explains how to find this information in your settings."
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 11/11/2021

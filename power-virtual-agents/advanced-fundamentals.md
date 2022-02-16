@@ -3,7 +3,7 @@ title: "Advanced authoring of chatbots"
 description: "Go beyond basic authoring by using slot filling, entities, variables, sign-in, live hand-off, and Power Automate flows."
 keywords: "PVA"
 ms.date: 3/1/2021
-ms.service: power-virtual-agents
+
 ms.topic: article
 author: iaanw
 ms.author: iawilt

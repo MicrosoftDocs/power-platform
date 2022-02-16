@@ -3,7 +3,7 @@ title: "View billed sessions"
 description: "See Power Virtual Agents billed sessions for the last 30 or 7 days."
 keywords: "PVA"
 ms.date: 01/25/2022
-ms.service: power-virtual-agents
+
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -35,7 +35,7 @@ The consumption of the capacity isn't reported at the tenant level, but can be s
 
 1. Go to the **Billing** tab.
 
-    :::image type="content" source="media/analytics-billed-sessions.png" alt-text="Billed session view." border="false":::
+    :::image type="content" source="media/analytics-billed-sessions/analytics-billed-sessions.png" alt-text="Billed session view." border="false":::
 
 You can change the date range to filter the **Total billed sessions over time** chart. You can also see the total billed sessions and trend percentage next to the chart.
 

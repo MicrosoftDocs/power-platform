@@ -3,7 +3,7 @@ title: "Assign user licenses and manage access"
 description: "Assign licenses and manage access to Power Virtual Agents for your organization"
 keywords: "Administration, licensing, PVA"
 ms.date: 01/25/2022
-ms.service: power-virtual-agents
+
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -63,11 +63,11 @@ Purchase licenses for your organization by going to the [Microsoft 365 admin cen
 
 1. On the side pane, expand the **Users** menu, and then select **Active users**.
 
-    :::image type="content" source="media/licensing-menu-users.png" alt-text="Expand Users, and then select Active users." border="false":::
+    :::image type="content" source="media/requirements-licensing/licensing-menu-users.png" alt-text="Expand Users, and then select Active users." border="false":::
 
 1. Select a name, and then select **Manage product licenses**.
 
-   :::image type="content" source="media/licensing-manage.png" alt-text="Select a user, and then manage product licenses." border="false":::
+   :::image type="content" source="media/requirements-licensing/licensing-manage.png" alt-text="Select a user, and then manage product licenses." border="false":::
 
 1. On the flyout pane, select the check box next to **Power Virtual Agent user license**, and then select **Save changes**.
 

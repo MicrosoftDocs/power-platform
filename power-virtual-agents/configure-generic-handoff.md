@@ -3,7 +3,7 @@ title: "Hand off chatbot conversations to any generic engagement hub"
 description: "Guidance to hand off a bot conversation to any generic engagement hub"
 keywords: "human handoff, generic handoff, generic engagement hub support, PVA"
 ms.date: 9/22/2020
-ms.service: power-virtual-agents
+
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -30,7 +30,7 @@ With some custom development, you can configure your bot to hand off conversatio
 
 ## Overview
 
-  :::image type="content" source="media/generic-adapter-illustration.png" alt-text="ILLUSTRATION SHOWING GENERIC ADAPTER DATAFLOW.":::
+  :::image type="content" source="media/configure-generic-handoff/generic-adapter-illustration.png" alt-text="ILLUSTRATION SHOWING GENERIC ADAPTER DATAFLOW.":::
 
 A full hand-off to an engagement hub follows this pattern:
 

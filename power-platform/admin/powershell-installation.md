@@ -3,7 +3,7 @@ title: Programmability and Extensibility - PowerShell - Installation | Microsoft
 description: PowerShell for Power Platform Administrators installation
 author: laneswenka
 ms.reviewer: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: reference
 ms.date: 03/19/2021

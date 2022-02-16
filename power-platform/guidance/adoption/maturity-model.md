@@ -2,7 +2,7 @@
 title: "Power Platform adoption maturity model - Microsoft Power Platform | MicrosoftDocs"
 description: "Microsoft has identified consistent themes, patterns, practices, and behaviors that underpin the progress of successful organizations as they implement comprehensive digital transformation with Power Platform."
 author: manuelap-msft
-ms.service: power-platform
+
 ms.subservice: guidance
 ms.topic: conceptual
 ms.date: 10/31/2021

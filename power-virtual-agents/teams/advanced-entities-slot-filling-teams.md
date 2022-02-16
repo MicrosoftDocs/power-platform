@@ -3,7 +3,7 @@ title: "Create and use entities in Microsoft Teams"
 description: "Use entities in your chatbots to create sophisticated conversations."
 keywords: "PVA, teams"
 ms.date: 01/25/2022
-ms.service: power-virtual-agents
+
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -33,6 +33,6 @@ If you're interested in using entities, read the [Power Virtual Agents web app d
 
 Entities in the Power Virtual Agents app on Teams have the same functionality as entities in the web app, and are located in the side menu:
 
-:::image type="content" source="media/entities-teams-menu.png" alt-text="The entities menu on Teams has a box icon and is labelled as Entities.":::
+:::image type="content" source="../media/advanced-entities-slot-filling/entities-teams-menu.png" alt-text="The entities menu on Teams has a box icon and is labelled as Entities.":::
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -3,7 +3,7 @@ title: "Use lesson topics to understand capabilities in Microsoft Teams"
 description: "Lesson topics are templates that help you understand how to create conversations in the Power Virtual Agents app in Teams."
 keywords: "PVA"
 ms.date: 01/22/2022
-ms.service: power-virtual-agents
+
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -41,7 +41,7 @@ While the topics are functional, they are examples for the purposes of learning 
 
 1. Select each topic to see the bot's flow; including the bot's comments, expected user responses, decision points, and entity references.
 
-   :::image type="content" source="media/template-list-teams.png" alt-text="List of lesson topics." border="false":::
+   :::image type="content" source="../media/authoring-template-topics/template-list-teams.png" alt-text="List of lesson topics." border="false":::
 
 > [!IMPORTANT]
 > You will see these lessons when you create a new bot. If you have previously created a bot and don't see them, try creating a new bot and then going to the **Topics** tab.

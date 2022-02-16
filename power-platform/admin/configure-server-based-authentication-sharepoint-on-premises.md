@@ -2,7 +2,7 @@
 title: "Configure server-based authentication with SharePoint on-premises | MicrosoftDocs"
 description: Configure server-based authentication with SharePoint on-premises
 author: Mattp123
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/04/2020

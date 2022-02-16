@@ -4,7 +4,7 @@ description: Select a data map
 author: jimholtz
 ms.subservice: admin
 ms.author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 06/19/2020

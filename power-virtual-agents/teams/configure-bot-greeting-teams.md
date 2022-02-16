@@ -3,7 +3,7 @@ title: "Automatically start a chatbot conversation in Microsoft Teams"
 description: "Change the default greeting that a chatbot in the Power Virtual Agents app in Microsoft Teams uses."
 keywords: "PVA"
 ms.date: 01/25/2022
-ms.service: power-virtual-agents
+
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -53,7 +53,7 @@ You can also combine the customized greeting with [customization to the look and
 
 1. Select **Save** when you're finished editing the message.
 
-    :::image type="content" source="media/custom-greeting-message-teams.png" alt-text="Screenshot of the system greeting topic showing the message nodes that can be edited.":::
+    :::image type="content" source="../media/configure-bot-greeting/custom-greeting-message-teams.png" alt-text="Screenshot of the system greeting topic showing the message nodes that can be edited.":::
 
 1. [**Publish** your bot](publication-add-bot-to-microsoft-teams-teams.md) and test it.
 

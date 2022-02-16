@@ -9,7 +9,7 @@ manager: kvivek
 ms.custom: ""
 ms.date: 06/11/2020
 ms.reviewer: "matp"
-ms.service: power-platform
+
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"

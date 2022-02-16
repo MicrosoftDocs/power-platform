@@ -2,7 +2,7 @@
 title: "Remove user personal data  | MicrosoftDocs"
 description: Remove user personal data
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/30/2020
