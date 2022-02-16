@@ -3,7 +3,7 @@ title: "CoE Starter Kit explained: building blocks and add-ons"
 description: "The Power Platform CoE Starter Kit is shipped in multiple components. Learn about the building blocks and add-ons designed to help you innovate and improve."
 author: manuelap-msft
 manager: devkeydet
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 12/14/2020

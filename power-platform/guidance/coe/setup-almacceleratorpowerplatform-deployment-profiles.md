@@ -3,7 +3,7 @@ title: "Configuring the ALM Accelerator for Power Platform App | MicrosoftDocs"
 description: "Deployment User Settings and Profiles direct the ALM Accelerator for Power Platform on how to display UI Components and how to source control and deploy solutions."
 author: mikefactorial
 manager: devkeydet
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 10/14/2021

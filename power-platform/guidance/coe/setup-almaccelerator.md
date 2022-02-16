@@ -3,7 +3,7 @@ title: "Set-up ALM Accelerator for Makers components | MicrosoftDocs"
 description: "The ALM Accelerator for Makers components helps you follow ALM patterns and practices to source control and move your solution from your development environment to test and production environments using GitHub."
 author: manuelap-msft
 manager: devkeydet
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 11/20/2020

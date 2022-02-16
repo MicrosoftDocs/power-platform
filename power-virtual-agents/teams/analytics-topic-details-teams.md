@@ -3,7 +3,7 @@ title: "Analyze topic performance in Microsoft Teams"
 description: "See how topics are performing, and determine what you can do to improve customer satisfaction in the Power Virtual Agents app in Microsoft Teams."
 keywords: "PVA"
 ms.date: 01/06/2022
-ms.service: power-virtual-agents
+
 ms.topic: article
 author: iaanw
 ms.author: iawilt

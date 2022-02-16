@@ -3,7 +3,7 @@ title: "Analyze topic performance"
 description: "See how topics are performing, and determine what you can do to improve customer satisfaction."
 keywords: "PVA"
 ms.date: 01/06/2022
-ms.service: power-virtual-agents
+
 ms.topic: article
 author: iaanw
 ms.author: iawilt

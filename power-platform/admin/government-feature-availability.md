@@ -2,7 +2,7 @@
 title: "Dynamics 365 US Government - Feature availability  | MicrosoftDocs"
 description: Dynamics 365 US Government - Feature availability
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 08/19/2021

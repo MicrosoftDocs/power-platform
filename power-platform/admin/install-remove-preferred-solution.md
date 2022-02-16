@@ -2,7 +2,7 @@
 title: "Install, update, or remove a preferred solution  | MicrosoftDocs"
 description: Install, update, or remove a preferred solution
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 08/20/2020

@@ -2,7 +2,7 @@
 title: "Overview: Security in Microsoft Power Platform | MicrosoftDocs"
 description: Provides an overview about security concepts in Microsoft Power Platform.
 ms.date: 01/28/2022
-ms.service: power-platform
+
 ms.topic: "get-started-article"
 ms.custom: 
   - "admin-security"

@@ -3,7 +3,7 @@ title: "Preview: Programmability and extensibility - Power Platform API - Creati
 description: Power Platform API and service principal authentication
 author: laneswenka
 ms.reviewer: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: reference
 ms.date: 03/19/2021

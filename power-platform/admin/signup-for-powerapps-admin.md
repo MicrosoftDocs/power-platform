@@ -3,7 +3,7 @@ title: Purchase Power Apps for your organization | Microsoft Docs
 description: Provides information about how to purchase Power Apps plans.
 author: jimholtz
 ms.reviewer: manasma
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 11/02/2020

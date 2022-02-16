@@ -3,7 +3,7 @@ title: "Publish your chatbot with the Power Virtual Agents app in Microsoft Team
 description: "Publish and share your bot with teammates in your teams and across your organization."
 keywords: "Publish, channel, Microsoft Teams, Teams"
 ms.date: 01/25/2022
-ms.service: power-virtual-agents
+
 ms.topic: article
 author: iaanw
 ms.author: iawilt

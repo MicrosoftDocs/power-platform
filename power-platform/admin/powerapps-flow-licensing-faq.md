@@ -1,7 +1,7 @@
 ---
 title: Power Apps and Power Automate licensing FAQs| Microsoft Docs
 description: "FAQs for licensing Power Apps, Power Automate, Dataverse, Dataverse for Teams, and AI Builder"
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/01/2022

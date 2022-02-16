@@ -3,7 +3,7 @@ title: "Use topics to design a chatbot conversation in Microsoft Teams"
 description: "Use the authoring canvas in the Power Virtual Agents app in Microsoft Teams to create an end-to-end conversation."
 keywords: "PVA, authoring canvas, conversation"
 ms.date: 01/25/2022
-ms.service: power-virtual-agents
+
 ms.topic: article
 author: iaanw
 ms.author: iawilt

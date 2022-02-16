@@ -1,7 +1,7 @@
 ---
 title: "About on-premises gateways  | Microsoft Docs"
 description: About on-premises gateway
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 10/22/2020

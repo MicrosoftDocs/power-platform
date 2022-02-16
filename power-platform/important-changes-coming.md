@@ -8,7 +8,7 @@ searchScope:
   - "Power Platform"  
 ms.custom:
  - dyn365-hub
-ms.service: power-platform
+
 author: KumarVivek
 ms.author: kvivek
 ---

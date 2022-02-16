@@ -2,7 +2,7 @@
 title: "About the Microsoft Dataverse for Teams environment | MicrosoftDocs"
 description: Administer and manage Microsoft Dataverse for Teams environment
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/01/2022

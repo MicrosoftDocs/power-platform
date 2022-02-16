@@ -2,7 +2,7 @@
 title: "Merge data | MicrosoftDocs"
 description: Merge data
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 11/04/2019

@@ -2,7 +2,7 @@
 title: "Compliance and data privacy  | MicrosoftDocs"
 description: Compliance and data privacy
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 12/13/2021

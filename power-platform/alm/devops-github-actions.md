@@ -8,7 +8,7 @@ ms.author: kartikka
 ms.custom: ""
 ms.date: 08/30/2021
 ms.reviewer: "pehecke"
-ms.service: power-platform
+
 ms.topic: "article"
 search.audienceType: 
   - developer
