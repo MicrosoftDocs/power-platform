@@ -1,6 +1,6 @@
 ---
 title: "Power Platform URLs and IP address ranges  | MicrosoftDocs"
-description: Information on supported URLs and IP addresses for Power Platform.
+description: Information on URLs and IP addresses to be added to the allow list to use Power Platform.
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
@@ -38,7 +38,7 @@ Add the following URLs to the allow list.
 
 ### URLs for Dynamics 365 services
 
-Add the following URLs to the allow list to use Dynamics 365 apps such as Dynamics 365 Sales, Dynamics 365 Customer Service, and Dynamics 365 Marketing, and Dynamics 365 Field Service.
+Add the following URLs to the allow list to use Dynamics 365 apps such as Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, and Dynamics 365 Marketing.
 
 |  Endpoint URL | Justification  |
 |---|---|
