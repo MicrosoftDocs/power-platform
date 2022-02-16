@@ -1,10 +1,9 @@
 ---
 title: "Replicate data to Azure SQL Database using Data Export Service | MicrosoftDocs"
 description: Replicate data to Azure SQL Database using Data Export Service 
-
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/07/2022
+ms.date: 02/16/2022
 ms.subservice: admin
 ms.author: sabinn
 author: sabinn-msft
@@ -572,6 +571,7 @@ EXEC SP_EXECUTESQL @sql;
 3. Select the value in the **Tenant ID** field.
   
 ## Azure SQL database static IP addresses used by the Data Export Service  
+
  In [!INCLUDE[pn_Azure_SQL_Database_long](../includes/pn-azure-sql-database-long.md)], click **Set server firewall**, turn **Allow access to Azure services** to **OFF**, click **Add client IP**, and then add the IP addresses appropriate for the region of your Dynamics 365 environment. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Azure: Configure an Azure SQL Database server-level firewall rule using the Azure Porta](/azure/azure-sql/database/firewall-configure)l  
   
 |Region|IP address|  
@@ -579,14 +579,14 @@ EXEC SP_EXECUTESQL @sql;
 |West US|40.112.139.218|  
 |East US|23.96.92.86|  
 |West Europe|40.68.252.224|  
-|East Asia|52.175.24.148|  
+|East Asia|104.208.84.217|  
 |Southeast Asia|52.163.231.218|  
-|Central India|52.172.191.195|  
-|South India|52.172.51.15|  
+|Central India|20.198.113.107|  
+|South India|104.211.204.18|  
 |North Europe|52.169.117.212|  
-|Japan West|138.91.22.196|  
-|Japan East|13.73.7.177|  
-|Brazil South|191.235.81.249|  
+|Japan West|104.214.144.93|  
+|Japan East|20.89.138.246|  
+|Brazil South|20.197.186.17|  
 |Australia Southeast|40.115.78.163|  
 |Australia East|13.73.202.160|  
 |Canada Central|52.228.26.31|  
