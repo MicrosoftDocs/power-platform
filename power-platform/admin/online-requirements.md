@@ -20,7 +20,7 @@ search.app:
 
 Microsoft Power Platform requires connectivity to the internet. The endpoints listed in this article should be reachable for customers using the Power Platform services.
 
-## Internet accessible URLs required
+## Internet URLs to allow
 
 Ensure that you have unblocked URLs for the respective service to use it.
 
@@ -61,43 +61,29 @@ Add the following URLs to the approved list to allow traffic to proceed to these
 
 ## IP addresses required
 
-All the IP addresses that you need to configure for various services (public and government) are available in these downloadable JSON files:
+All IP addresses for various services for public and government clouds are available in these downloadable JSON files:
 
 - [Azure IP Ranges and Service Tags – Public Cloud](https://www.microsoft.com/download/details.aspx?id=56519)
 - [Azure IP Ranges and Service Tags – US Government Cloud](https://www.microsoft.com/download/details.aspx?id=57063)
 - [Azure IP Ranges and Service Tags – China Cloud](https://www.microsoft.com/download/details.aspx?id=57062)
 - [Azure IP Ranges and Service Tags – Germany Cloud](https://www.microsoft.com/download/details.aspx?id=57064)
 
-The required IP address values are grouped by service tags and geography that define the service and region they are applicable for. For example, to find out the required IP address values for the public version of Power Platform services for the Australia region, use the [Azure IP Ranges and Service Tags – Public Cloud](https://www.microsoft.com/download/details.aspx?id=56519) file, and search for **PowerPlatformInfra.Australia**.
+The IP address values in these JSON files are grouped by service tags that define the service they are applicable for. For a list of all the service tags, see [Available service tags](/azure/virtual-network/service-tags-overview#available-service-tags) in Azure docs.
 
-Similarly, for the government cloud version, use of the JSON files listed earlier.
+These service tags has also have a regional scope to define the IP addresses required for a particular region. For example, to find out the required IP address values for accessing Power Platform services in the Australia region, use the [Azure IP Ranges and Service Tags – Public Cloud](https://www.microsoft.com/download/details.aspx?id=56519) file, and search for **PowerPlatformInfra.Australia**.
 
 :::image type="content" source="media/ip-example.png" alt-text="AzureCloud service tag for Power Platform IPs":::  
 
-### Power Platform IP address ranges
+Use the following service tag values to find out IP values for the service you want to use
 
-See the following:
+| Service | Service Tag|Description  |
+|---|---|--|
+|Power Platform services|`PowerPlatformInfra`|This tag represents the IP addresses used by the infrastructure to host Power Platform services.|
+|Power Platform connectors|`AzureConnector`|This tag represents the IP addresses used for managed connectors that make inbound webhook callbacks to the Azure Logic Apps or Power Platform service and outbound calls to their respective services.|
+|Dynamics 365|`AzureCloud`|This tag represents all datacenter public IP addresses.|
 
-
-
-You can search the Azure IP Ranges json file for the AzureCloud service tag for Power Platform IP address ranges. Search for "PowerPlatformInfra" to find the list of IP addresses to allow.
-
-:::image type="content" source="media/example-azure-cloud-powerplatforminfra.png" alt-text="AzureCloud service tag for Power Platform IPs":::
-
-### Dynamics 365 IP address ranges
-
-See the following:
-
-- [Azure IP Ranges and Service Tags – Public Cloud](https://www.microsoft.com/download/details.aspx?id=56519)
-- [Azure IP Ranges and Service Tags – US Government Cloud](https://www.microsoft.com/download/details.aspx?id=57063)
-- [Azure IP Ranges and Service Tags – China Cloud](https://www.microsoft.com/download/details.aspx?id=57062)
-- [Azure IP Ranges and Service Tags – Germany Cloud](https://www.microsoft.com/download/details.aspx?id=57064)
-
-You can search the Azure IP Ranges json file for the AzureCloud service tag for your region. For example, for Japan you'd search for "azurecloud.japaneast" and "azurecloud.japanwest" to find the list of IP addresses to allow.
-
-:::image type="content" source="media/example-azurecloud-tag.png" alt-text="AzureCloud service tag for region IPs":::
-  
-Blocked IPs can also impact connecting Dynamics 365 apps to [Microsoft Exchange Server (on-premises)](connect-exchange-server-on-premises.md). 
+> [!NOTE]
+> Blocked IPs can also impact connecting Dynamics 365 apps to [Microsoft Exchange Server (on-premises)](connect-exchange-server-on-premises.md). 
 
 
 
