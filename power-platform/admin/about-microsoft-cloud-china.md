@@ -2,7 +2,7 @@
 title: "Customer engagement apps - operated by 21Vianet in China  | MicrosoftDocs"
 description: Customer engagement apps - operated by 21Vianet in China
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/04/2021

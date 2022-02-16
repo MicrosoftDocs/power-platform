@@ -2,7 +2,7 @@
 title: Manage Power Automate flows | Microsoft Docs
 description: How to manage Power Automate flows created in your organization
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/05/2020

@@ -2,7 +2,7 @@
 title: "Microsoft Power Platform icons | MicrosoftDocs"
 description: "Icons for use in building architecture diagrams and illustrations for Microsoft Power Platform."
 author: KumarVivek
-ms.service: power-platform
+
 ms.topic: conceptual
 ms.date: 06/03/2021
 ms.subservice: guidance

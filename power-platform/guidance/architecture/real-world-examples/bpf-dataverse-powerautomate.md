@@ -2,7 +2,7 @@
 title: "Business process flows, Dataverse, codeless custom connectors, and Power Automate with canvas apps  | Microsoft Docs"
 description: Read about how T-Mobile built an app with complex security requirements by using business process flows technology with the advanced security model of Dataverse.
 author: slaouist
-ms.service: power-platform
+
 ms.subservice: guidance
 ms.topic: conceptual
 ms.date: 08/10/2021

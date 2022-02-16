@@ -3,7 +3,7 @@ title: Programmability and Extensibility - Power Platform for Admins management 
 description: Power Platform API getting started
 author: laneswenka
 ms.reviewer: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: reference
 ms.date: 03/19/2021

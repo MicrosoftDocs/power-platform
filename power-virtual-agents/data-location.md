@@ -2,7 +2,7 @@
 title: "Regional settings and data locations (contains video)"
 description: "Identify the geographic location where your data will be stored, and plan for globalization features, including currency and date and time formats."
 ms.date: 5/19/2021
-ms.service: power-virtual-agents
+
 ms.topic: article
 author: iaanw
 ms.author: iawilt

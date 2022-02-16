@@ -2,7 +2,7 @@
 title: "System Settings Calendar tab   | MicrosoftDocs"
 description: System Settings Calendar tab 
 author: jimholtz
-ms.service: power-platform
+manager: kvivek
 ms.component: pa-admin
 ms.topic: conceptual
 ms.subservice: admin

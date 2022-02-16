@@ -2,7 +2,7 @@
 title: "Skype for Business and Skype integration  | MicrosoftDocs"
 description: Skype for Business and Skype integration
 author: jimholtz
-ms.service: power-platform
+manager: kvivek
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/14/2020

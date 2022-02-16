@@ -2,7 +2,7 @@
 title: "Manage transactions with multiple currencies  | MicrosoftDocs"
 description: Manage transactions with multiple currencies
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 07/16/2021

@@ -3,7 +3,7 @@ title: Responding to Data Subject Rights (DSR) requests to delete customer data 
 description: Walkthrough of how to respond to Data Subject Rights (DSR) requests to delete Power Apps customer data.
 author: jimholtz
 ms.reviewer: paulliew
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 06/16/2021

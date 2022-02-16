@@ -2,7 +2,7 @@
 title: "Manage privacy and security settings   | MicrosoftDocs"
 description: View and manage privacy and security settings for Microsoft Dataverse.
 author: jimholtz
-ms.service: power-platform
+manager: kvivek
 ms.component: pa-admin
 ms.topic: conceptual
 ms.subservice: admin

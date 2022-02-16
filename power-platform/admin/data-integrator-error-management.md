@@ -1,7 +1,7 @@
 ---
 title: "Error management and troubleshooting for data integration projects"
 description: "Troubleshoot issues and manage errors when executing data integration projects using the Data Integrator service."
-ms.service: power-platform
+
 ms.topic: how-to
 ms.component: cds
 ms.date: 11/19/2021

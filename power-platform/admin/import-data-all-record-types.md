@@ -2,7 +2,7 @@
 title: "Import data (all record types)  | MicrosoftDocs"
 description: Import data (all record types) 
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/08/2020

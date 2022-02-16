@@ -3,7 +3,7 @@ title: "Preview: Programmability and extensibility - Tutorial - Create a daily c
 description: This tutorial will demonstrate how to use the Power Platform API (preview) to create a daily capacity report.
 author: laneswenka
 ms.reviewer: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: reference
 ms.date: 10/22/2021

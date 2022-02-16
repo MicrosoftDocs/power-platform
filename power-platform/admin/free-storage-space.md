@@ -2,7 +2,7 @@
 title: "Free up storage space  | MicrosoftDocs"
 description: Methods for reducing storage space consumed.
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 11/10/2021

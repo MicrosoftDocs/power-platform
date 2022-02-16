@@ -2,7 +2,7 @@
 title: "Dynamics 365 datacenter regions"
 description: "Dynamics 365 customer engagement apps are hosted in datacenters across many regions. Find a list of regions and URLs, plus how to migrate to a new datacenter."
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.custom: intro-internal

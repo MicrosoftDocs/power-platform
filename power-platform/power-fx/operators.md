@@ -3,7 +3,7 @@ title: Operators and Identifiers in Microsoft Power Fx | Microsoft Docs
 description: Reference information, including syntax and examples, for the operators and identifiers in Microsoft Power Fx
 author: gregli-msft
 manager: kvivek
-ms.service: power-platform
+
 ms.topic: reference
 ms.reviewer: nabuthuk
 ms.date: 07/17/2020

@@ -2,7 +2,7 @@
 title: "Architecture of using Microsoft Power Platform with ExpressRoute | MicrosoftDocs"
 description: "Explanation of Microsoft Power Platform architecture to use with ExpressRoute"
 author: taiki-yoshida
-ms.service: power-platform
+
 ms.topic: conceptual
 ms.date: 10/08/2021
 ms.subservice: guidance

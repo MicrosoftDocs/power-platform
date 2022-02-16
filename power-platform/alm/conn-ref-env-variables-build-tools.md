@@ -6,7 +6,7 @@ ms.author: kartikka
 ms.custom: ""
 ms.date: 08/20/2021
 ms.reviewer: "pehecke"
-ms.service: power-platform
+
 ms.subservice: alm
 ms.topic: "article"
 search.audienceType: 

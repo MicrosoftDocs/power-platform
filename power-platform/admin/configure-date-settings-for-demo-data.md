@@ -2,7 +2,7 @@
 title: "Configure date settings for demo data  | MicrosoftDocs"
 description: Configure date settings for demo data 
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 11/20/2017

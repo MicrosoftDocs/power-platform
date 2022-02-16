@@ -3,7 +3,7 @@ title: Programmability and Extensibility - Authentication | Microsoft Docs
 description: Overview of authentication for Power Platform programmability tools
 author: laneswenka
 ms.reviewer: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: reference
 ms.date: 12/15/2021

@@ -3,7 +3,7 @@ title: "Configure web channel security"
 description: "Use Direct Line tokens or secrets to secure access to your bots."
 keywords: "direct line, token, secret, access, secure, security, channels, PVA"
 ms.date: 01/25/2022
-ms.service: power-virtual-agents
+
 ms.topic: article
 author: iaanw
 ms.author: iawilt

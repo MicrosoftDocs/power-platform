@@ -2,7 +2,7 @@
 title: "Switch from list component in SharePoint or change deployment type"
 description: "Learn how to switch from list component to server-based authentication for SharePoint and how to change the SharePoint deployment type."
 author: Mattp123
-ms.service: power-platform
+manager: kvivek
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 08/25/2021

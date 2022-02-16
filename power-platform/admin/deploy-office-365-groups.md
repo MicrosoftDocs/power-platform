@@ -2,7 +2,7 @@
 title: "Deploy Microsoft 365 groups  | MicrosoftDocs"
 description: Deploy Microsoft 365 groups
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 08/26/2021
