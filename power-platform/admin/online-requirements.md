@@ -22,11 +22,11 @@ Microsoft Power Platform requires connectivity to the internet. The endpoints li
 
 ## Internet URLs to allow
 
-Ensure that you have added the required URLs to the approved URL list.
+Ensure that you have added the required URLs to the allow list to ensure communication through firewalls and other security mechanisms.
 
-### URLs for using Power Platform services
+### URLs for Power Platform services
 
-Add the following URLs to the approved list.
+Add the following URLs to the allow list.
 
 |Service|URLs|
 |--|--|
@@ -36,9 +36,9 @@ Add the following URLs to the approved list.
 |Power Virtual Agents|- [Public cloud](/power-virtual-agents/requirements-quotas#required-services)<br/>- [Government cloud](/power-virtual-agents/requirements-licensing-gcc#power-virtual-agents-us-government-service-urls)
 
 
-### URLs for using Dynamics 365 services
+### URLs for Dynamics 365 services
 
-Add the following URLs to the approved list to use Dynamics 365 apps such as Dynamics 365 Sales, Dynamics 365 Customer Service, and Dynamics 365 Marketing, and Dynamics 365 Field Service.
+Add the following URLs to the allow list to use Dynamics 365 apps such as Dynamics 365 Sales, Dynamics 365 Customer Service, and Dynamics 365 Marketing, and Dynamics 365 Field Service.
 
 |  Endpoint URL | Justification  |
 |---|---|
