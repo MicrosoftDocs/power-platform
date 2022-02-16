@@ -92,12 +92,10 @@
         items:
         - name: URLs and IP address ranges
           href: online-requirements.md
-        - name: Troubleshooting Unblock required URLs
-          href: troubleshooting-unblock-urls-required.md
-        - name: Plan for deployment and administration
-          href: plan-for-deployment-and-administration.md                
         - name: End of support for Internet Explorer
           href: support-end-internet-explorer.md
+        - name: Plan for deployment and administration
+          href: plan-for-deployment-and-administration.md
         - name: Server cipher suites and TLS requirements
           href: server-cipher-tls-requirements.md
       - name: Unified Interface

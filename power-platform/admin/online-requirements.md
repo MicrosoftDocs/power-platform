@@ -22,11 +22,13 @@ Microsoft Power Platform requires connectivity to the internet. The endpoints li
 
 ## Internet URLs to allow
 
-Ensure that you have unblocked URLs for the respective service to use it.
+Ensure that you have added the required URLs to the approved URL list.
 
-### URLs for using Power Platform
+### URLs for using Power Platform services
 
-|App/Service|URLs|
+Add the following URLs to the approved list.
+
+|Service|URLs|
 |--|--|
 |Power Apps|- [Public cloud](/powerapps/maker/canvas-apps/limits-and-config#required-services)<br/>- [Government cloud](powerapps-us-government.md#power-apps-us-government-service-urls)|
 |Power Automate| - [Public cloud](/power-automate/ip-address-configuration#required-services)<br/>- [Government cloud](/power-automate/us-govt#power-automate-us-government-service-urls)|
@@ -34,11 +36,9 @@ Ensure that you have unblocked URLs for the respective service to use it.
 |Power Virtual Agents|- [Public cloud](/power-virtual-agents/requirements-quotas#required-services)<br/>- [Government cloud](/power-virtual-agents/requirements-licensing-gcc#power-virtual-agents-us-government-service-urls)
 
 
-### URLs for using Dynamics 365 apps
+### URLs for using Dynamics 365 services
 
-Dynamics 365 apps, such as Dynamics 365 Sales, Dynamics 365 Customer Service, and Dynamics 365 Marketing, and Dynamics 365 Field Service, use several Microsoft URLs to help provide security, services, and features. If you cannot access Microsoft Dynamics 365 apps, or specific URLs fail to load when you use Microsoft Dynamics 365 apps, a proxy or firewall might be configured to prevent  Dynamics 365 URLs from accessing server resources.
-
-Add the following URLs to the approved list to allow traffic to proceed to these URLs.
+Add the following URLs to the approved list to use Dynamics 365 apps such as Dynamics 365 Sales, Dynamics 365 Customer Service, and Dynamics 365 Marketing, and Dynamics 365 Field Service.
 
 |  Endpoint URL | Justification  |
 |---|---|
@@ -56,7 +56,10 @@ Add the following URLs to the approved list to allow traffic to proceed to these
 | https://urs.microsoft.com  |  Required for Microsoft defender SmartScreen filtering.    |
 | http://crl.microsoft.com/pki/crl/products/microsoftrootcert.crl  | Required for Certification Revocation List checks.    |
 | https://dynamics.microsoft.com |    |
-| https://*.api.powerplatform.com | Required for Power Platform API connectivity used internally by Microsoft products as well as admin automation scenarios as [documented here](programmability-extensibility-overview.md).
+| https://*.api.powerplatform.com | Required for Power Platform API connectivity used internally by Microsoft products and admin automation scenarios as [documented here](programmability-extensibility-overview.md).
+
+> [!IMPORTANT]
+> If you cannot access a service or specific URLs fail to load, a proxy or firewall might be configured to prevent you from accessing server resources. Review your proxy settings and ensure that you add all the relevant URLs to the allowed list as per your service.
 
 
 ## IP addresses required
@@ -68,19 +71,21 @@ All IP addresses for various services for public and government clouds are avail
 - [Azure IP Ranges and Service Tags – China Cloud](https://www.microsoft.com/download/details.aspx?id=57062)
 - [Azure IP Ranges and Service Tags – Germany Cloud](https://www.microsoft.com/download/details.aspx?id=57064)
 
-The IP address values in these JSON files are grouped by service tags that define the service they are applicable for. For a list of all the service tags, see [Available service tags](/azure/virtual-network/service-tags-overview#available-service-tags) in Azure docs.
+The IP address values in these JSON files are grouped by service tags that define the service they're applicable for. For a list of all the service tags and their definition, see [Available service tags](/azure/virtual-network/service-tags-overview#available-service-tags) in Azure docs.
 
-These service tags has also have a regional scope to define the IP addresses required for a particular region. For example, to find out the required IP address values for accessing Power Platform services in the Australia region, use the [Azure IP Ranges and Service Tags – Public Cloud](https://www.microsoft.com/download/details.aspx?id=56519) file, and search for **PowerPlatformInfra.Australia**.
+These service tags also have a regional scope to define the IP addresses required for a particular region. For example, to find out the required IP address values for accessing *Power Platform services* in the *Australia* region, use the [Azure IP Ranges and Service Tags – Public Cloud](https://www.microsoft.com/download/details.aspx?id=56519) file, and search for **PowerPlatformInfra.Australia**.
 
 :::image type="content" source="media/ip-example.png" alt-text="AzureCloud service tag for Power Platform IPs":::  
 
-Use the following service tag values to find out IP values for the service you want to use
+Use the following service tag values to find out IP address values required for your service.
 
-| Service | Service Tag|Description  |
+| Service | Service tag|Description  |
 |---|---|--|
 |Power Platform services|`PowerPlatformInfra`|This tag represents the IP addresses used by the infrastructure to host Power Platform services.|
-|Power Platform connectors|`AzureConnector`|This tag represents the IP addresses used for managed connectors that make inbound webhook callbacks to the Azure Logic Apps or Power Platform service and outbound calls to their respective services.|
+|Power Platform connectors|`AzureConnector`|This tag represents the IP addresses used for managed connectors that make inbound webhook callbacks to Power Platform services or Azure Logic Apps and outbound calls to their respective services.|
 |Dynamics 365|`AzureCloud`|This tag represents all datacenter public IP addresses.|
+
+For a list of all the service tags, see [Available service tags](/azure/virtual-network/service-tags-overview#available-service-tags) in Azure docs.
 
 > [!NOTE]
 > Blocked IPs can also impact connecting Dynamics 365 apps to [Microsoft Exchange Server (on-premises)](connect-exchange-server-on-premises.md). 
@@ -88,7 +93,7 @@ Use the following service tag values to find out IP values for the service you w
 
 
 ## Ports
-Dataverse exposes ports *18085* and *8085* to perform maintenance operations for customer databases.  The maintenance operations are executed to ensure that Microsoft Dynamics 365 environments are performing at optimal performance standards.  These maintenance operations include but are not limited to: 
+Dataverse exposes ports *18085* and *8085* to perform maintenance operations for customer databases.  The maintenance operations are executed to ensure that Microsoft Dynamics 365 environments are performing at optimal performance standards.  These maintenance operations include but aren't limited to: 
 
 - Database Update Operation
 - App Update Operation
