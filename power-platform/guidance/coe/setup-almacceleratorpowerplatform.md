@@ -47,7 +47,7 @@ This setup guide is structured into seven main sections:
 - [**Solution setup**](#solution-setup): These steps are specific to each solution you wish to support with the ALM accelerator. The section covers setting up the solution-specific pipelines, branch policies, deployment variables to support connections references, environment variables, and Azure AD group sharing.
 - [**Importing the solution and configuring the app**](#importing-the-solution-and-configuring-the-app): These are the steps required to import the actual ALM Accelerator for Power Platform canvas app and configure the included custom connector.
 - [**Set up makers to use the ALM Accelerator for Power Platform app**](#set-up-makers-to-use-the-alm-accelerator-for-power-platform-app): A short introduction to using the ALM Accelerator for Power Platform canvas app.
-- [**Troubleshooting**](#troubleshooting): A few pointers on some known issues and how to remediate them.<!--note from editor: Is there anywhere to link this to?-->
+- **Troubleshooting**: A few pointers on some known issues and how to remediate them.<!--note from editor: Is there anywhere we can point this to?-->
 
 ## Prerequisites
 
@@ -156,6 +156,7 @@ The ALM accelerator uses several Azure DevOps extensions, including some third-p
 
       ![Image of the SARIF SAST Scans tab in Azure DevOps.](media/almacceleratorpowerplatform-components/image-20210217102344719.png)
 
+<a name="clone-the-yaml-pipelines-from-github-to-your-devops-instance"></a>
 ### Clone the YAML pipelines from GitHub to your Azure DevOps instance
 
 1. Go to <https://dev.azure.com/> and sign in to **DevOps (AzDO)**.

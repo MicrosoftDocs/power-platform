@@ -133,7 +133,7 @@ The following recording shows a sample generating an installation configuration 
 
 ![Example](./install.svg)
 
-### Installation overview
+### Installation overview<a name="install-overview"></a>
 
 1. Review [Before you start](./before-you-start.md) to ensure that you've created the required Microsoft Power Platform environments and Azure DevOps organizations.
 
