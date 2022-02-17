@@ -3,7 +3,6 @@ title: "Retrieve the list of rules | Microsoft Docs"
 description: "Learn how to form a GET request using the Power Apps checker web API to retrieve the list of rules available."
 ms.custom: ""
 ms.date: 06/09/2020
-
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
@@ -13,7 +12,7 @@ ms.assetid: a8dc3019-c49e-48e4-a646-8a3a3fecd3a6
 caps.latest.revision: 21
 author: "mhuguet" # GitHub ID
 ms.subservice: alm
-ms.author: "mhuguet"
+ms.author: "michu"
 ms.reviewer: "pehecke"
 manager: "maustinjones"
 search.audienceType: 
