@@ -3,7 +3,7 @@ title: "Set up ALM Accelerator for Power Platform components manual | MicrosoftD
 description: "The ALM Accelerator for Power Platform helps you follow ALM patterns and practices to source control and move your solutions from your development environment to test and production environments using DevOps. This guide walks through the manual set-up steps of the accelerator."
 author: mikefactorial
 manager: devkeydet
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 10/14/2021
@@ -336,6 +336,8 @@ The sample pipelines provide flexibility for organizations to store their pipeli
 Solution pipelines are used to build and deploy your source-controlled solutions to environments in your tenant. You can create as many solution pipelines as needed based on your organization's environment strategy. The sample pipelines provided assume only three environments: validation, test, production. However, more or less can be created as needed with specific triggers in the pipelines or without triggers that can be run manually as well. The sample deployment pipelines trigger off of changes to a branch (that is, test and production) or as a part of a branch policy in DevOps (that is, validation). For more information about branch policies, go to [Setting branch policies for pull request validation](#setting-branch-policies-for-pull-request-validation).
 
 The following steps show how to create a pipeline from the sample pipeline YAML. Follow these steps to create all of your deployment pipelines. For reference, your pipelines will follow this configuration.
+> [!IMPORTANT]
+> The pipeline name below must be named exactly as shown below. You'll replace 'MyNewSolution' with the name of your solution.
 
 | Pipeline YAML File Name                   | Pipeline Name                   | Branch Policy Enabled | Required              |
 | ----------------------------------------- | ------------------------------- | --------------------- | --------------------- |
@@ -404,6 +406,9 @@ The following steps show how to create a pipeline from the sample pipeline YAML.
 ### Create the solution deployment pipeline (optional)
 
 As mentioned in the note above, the previous section allows you to create pipelines that build and deploy for each environment, such as validation, test, and production. However, if you want to only build and deploy for validation and test, and then deploy the artifacts from the test build to production, you can follow these instructions to create your production deployment pipeline after you've created your build and deploy pipeline for validation and test. For reference, your pipeline will be configured as follows.
+
+> [!IMPORTANT]
+> The pipeline name below must be named exactly as shown below. You'll replace 'MyNewSolution' with the name of your solution.
 
 | Pipeline YAML File Name       | Pipeline Name             | Branch Policy Enabled |
 | ----------------------------- | ------------------------- | --------------------- |
@@ -543,19 +548,12 @@ If your solution requires these other configuration settings and/or data, follow
 - See the [user set-up guide](setup-almacceleratorpowerplatform-users.md) for the recommended set-up of a maker's user account in Dataverse and DevOps.
 - See the [user deployment setting and profile guide](setup-almacceleratorpowerplatform-deployment-profiles.md) for how to configure user experience in the app and access to solutions and deployment profiles.
 
-## Using the ALM Accelerator app
+## Read more
 
-See the [user guide](almacceleratorpowerplatform-components.md) for help using the ALM Accelerator app.
-
-## Troubleshooting
-
-When you set-up your pipelines with the pipeline templates stored in a different repository than the solution pipeline, you may get the following message when trying to run your pipeline for the first time. To eliminate the error, select **Permit** to grant the repo running the pipeline access to the template repository.
-
-![Permit access to Pipelines](media/almacceleratorpowerplatform-components/image-20210311114131170.png)
-
-Alternatively, to disable this notification for all pipelines you can turn off **Limit Job authorization scope to referenced Azure DevOps repositories** in **Project Settings** > **Settings**. This setting is turned on by default when you create a new project.  ![Permit access to all repositories](media/almacceleratorpowerplatform-components/image-20210426143538533.png).
-
-> [!NOTE]
-> The project settings can be overridden at the DevOps organization level. So, if the option to change this is disabled in project settings, verify the setting in **Organization settings**.
+- [ALM Accelerator for Power Platform](/power-platform/guidance/coe/almacceleratorpowerplatform-components) - An overview of the ALM Accelerator.
+- [Deployment experience and profile set up](/power-platform/power-platform/guidance/coe/setup-almacceleratorpowerplatform-deployment-profiles) - Configuring user settings and deployment profiles.
+- [User permissions set up](/power-platform/power-platform/guidance/coe/setup-almacceleratorpowerplatform-users) - Configuring Microsoft Dataverse users to access the ALM Accelerator for Power Platform.
+- [Deployment configuration settings](/power-platform/power-platform/guidance/coe/setup-almacceleratorpowerplatform-deployment-config) - Configuring solution assets for the deployment. For example, connection references, environment variables, and sharing.
+- [Pipeline sync set up](/power-platform/power-platform/guidance/coe/setup-almacceleratorpowerplatform-pipeline-sync) - Creating a pipeline to sync the latest YAML from the CoE Starter Kit GitHub repo.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

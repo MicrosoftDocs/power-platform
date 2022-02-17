@@ -3,7 +3,7 @@ title: "CoE Starter Kit Release Notes | MicrosoftDocs"
 description: "Latest version and release notes for the CoE Starter Kit"
 author: manuelap-msft
 manager: devkeydet
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 07/06/2021

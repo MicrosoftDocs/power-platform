@@ -2,7 +2,7 @@
 title: "Set up sales territories to organize business markets by geographical area | MicrosoftDocs"
 description: Set up sales territories to organize business markets by geographical area
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/17/2021
@@ -15,6 +15,13 @@ search.app:
   - PowerApps
   - Powerplatform
   - Flow
+searchScope: 
+  - D365-App-msdynce_saleshub
+  - D365-Entity-territory
+  - D365-UI-*
+  - Dynamics 365
+  - Sales
+  - Customer Engagement
 ---
 # Set up sales territories to organize business markets by geographical area
 

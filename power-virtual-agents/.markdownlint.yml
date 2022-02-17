@@ -1,0 +1,10 @@
+{
+    # no bare urls: disabled because we have video links that require these to not have angle brackets
+    "MD034": false,
+    # line length: disabled because we're not writing code
+    "MD013": false,
+    # single h1: disabled because this incorrectly flags our first header
+    "MD025": false,
+    # no inline html: while generally not preferred, disabled because there's a few situations where we need to manually add anchor links
+    "MD033": false
+}

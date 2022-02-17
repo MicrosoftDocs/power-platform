@@ -92,6 +92,8 @@
         items:
         - name: Requirements/supported configurations
           href: online-requirements.md
+        - name: Troubleshooting Unblock required URLs
+          href: troubleshooting-unblock-urls-required.md
         - name: Plan for deployment and administration
           href: plan-for-deployment-and-administration.md
         - name: Supported web browsers and mobile devices
@@ -454,11 +456,11 @@
         items:
         - name: "Preview: Tenant-level analytics (default)" 
           href: tenant-level-analytics.md
-        # Comment out the next topics before publish 
-        # - name: "Preview: Power Apps analytics report"
-        #   href: powerapps-analytics-reports.md
-        # - name: "Preview: Tenant-level analytics for Power Automate"
-        #   href: power-automate-analytics-reports.md
+        - name: "Preview: Power Apps analytics"
+          href: powerapps-analytics-reports.md
+        - name: "Preview: Power Automate analytics"
+          href: power-automate-analytics-reports.md
+        # Comment out the next topics before publish      
         # - name: "Preview: Power Apps license utilization"
         #   href: powerapps-license-utilization.md
       - name: Data export
@@ -563,6 +565,8 @@
               items:
               - name: "Preview: List environments"
                 href: list-environments.md
+              - name: "Preview: Create a Dataverse application user"
+                href: create-dataverseapplicationuser.md
             - name: Tenant Settings
               items:
               - name: "Preview: List tenant settings"
@@ -666,7 +670,9 @@
             href: create-team-template-add-entity-form.md
         - name: Encryption
           items:
-          - name: Encryption
+          - name: About encryption
+            href: about-encryption.md
+          - name: Encrypt your data
             href: data-encryption.md
           - name: Manage encryption key
             href: manage-encryption-key.md      
@@ -996,19 +1002,6 @@
         href: for-partners-delegated-administrator.md
   - name: Administer Power Apps
     href: admin-guide.md
-    items:
-    - name: Environments 
-      items:
-      - name: Create an environment in Power Apps
-        href: create-environment-powerapps.md
-      - name: Working with environments and Power Apps
-        href: working-with-environments.md
-      - name: Manage environments in Power Apps
-        href: environments-administration.md
-      - name: Troubleshooting Unblock required URLs
-        href: troubleshooting-unblock-urls-required.md
-      - name: Power Apps Preview Program
-        href: preview-environments.md
   - name: Administer Power Automate
     href: about-flow-guide.md
   - name: Administer Power BI

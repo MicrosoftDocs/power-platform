@@ -2,7 +2,7 @@
 title: Manage Power Automate for desktop on Windows  | Microsoft Docs
 description: Introduction to the PDF playbook and YouTube video series for managing Power Automate for desktop on Windows at scale throughout your organization.
 author: kathyos
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 12/6/2021

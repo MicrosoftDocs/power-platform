@@ -3,7 +3,7 @@ title: "Set up inventory components | MicrosoftDocs"
 description: "Setup instructions for how to set up the inventory components solution of the CoE Starter Kit"
 author: manuelap-msft
 manager: devkeydet
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/24/2022
@@ -88,7 +88,7 @@ The import can take up to 15 minutes to be completed.
 
 ## Turn on child flows
 
-There are several child flows, which need to be turned on in this order:
+There are several child flows, check to make sure all of these flows are on:
 
 1. HELPER – Send Email
 1. HELPER – Maker Check
@@ -115,7 +115,10 @@ The following flows support the inventory setup and need to be turned on before 
 - Admin | Sync Template v3 Configure Emails
 - Command Center App >  Get M365 Service Messages
 - Command Center App > Initially Populate Bookmarks
+- Command Center App > Get CoE Flows
+- Command Center App > Set CoE Flows State
 - DLP Editor > Parse impacted resources into CSV
+- Admin | Sync Template v3 (Connectors)
 
 Before proceeding, ensure that the Admin | Sync Template v3 Configure Emails flow runs.
 
@@ -123,7 +126,15 @@ Before proceeding, ensure that the Admin | Sync Template v3 Configure Emails flo
 
 The Admin \| Sync Template flows part of this solution crawl through all the resources stored in your Microsoft Power Platform environments and make a copy of details in each resource (for example, apps and flows) to Microsoft Dataverse tables. Most apps and flows in the CoE Starter Kit rely on this, which means that the inventory flows must be configured for everything else to work. The sync flows run daily, and some of the clean-up flows run every two weeks.
 
-- Admin | Sync Template v3 (Connectors)
+>[!IMPORTANT]
+> If you see an *Invalid Pagination Policy* error when trying to turn on the flows, it indicates that you are using an insufficient or trial license. All our flows require a medium or high performance profile to run. License requirements are listed in our [prerequisites](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
+>
+> ![Error when turning on a flow with an insufficient license.](media/flowpaginationerror.png "Error when turning on a flow with an insufficient license.")
+>
+> Learn more: [Power Automate performance profiles](/power-automate/limits-and-config#performance-profiles) and [Concurrency looping and pagination limits](/power-automate/limits-and-config#concurrency-looping-and-debatching-limits)
+
+And hence our requirements for licenses as described in our  
+
 - Admin | Sync Template v3 (Apps)
 - Admin | Sync Template v3 (Custom Connectors)
 - Admin | Sync Template v3 (Desktop Flow - Runs)
@@ -191,28 +202,16 @@ Using these steps, you'll set up an Azure AD app registration that will be used 
 
 ### Update environment variables
 
->[!IMPORTANT]
->If you want to store the client ID and secret for [connecting to Microsoft Graph](#create-an-azure-ad-app-registration-to-connect-to-microsoft-graph) in Azure Key Vault, you can skip this step and go to [Modify the Command Center App > Get M365 Service Messages flow to use Azure Key Vault](#modify-the-command-center-app--get-m365-service-messages-flow-to-use-azure-key-vault).
+[Update the environment variables](faq.md#update-environment-variables) that hold the client ID and secret as shown in the following table. You can store the client secret either in plain text in the **Command Center - Client Secret** environment variable (not recommended) or create store the client secret in Azure Key Vault and reference it in the **Command Center - Client Azure Secret** environment variable (recommended). Learn more: [Use Azure Key Vault secrets in environment variables](/powerapps/maker/data-platform/environmentvariables#use-azure-key-vault-secrets)
 
-[Update the environment variables](faq.md#update-environment-variables) that hold the client ID and secret as shown in the following table.
+>![NOTE]
+> The flow using this environment variable is configured with a condition to expect either the Command Center - Client Secret or the Command Center - Client Azure Secret environment variable. You won't have to edit the flow or command center app to work with Azure Key Vault.
 
 | Name | Description |
 |------|---------------|
 | Command Center - Application Client ID | The application client ID from the [Create an Azure AD app registration to connect to Microsoft Graph](#create-an-azure-ad-app-registration-to-connect-to-microsoft-graph) step. Leave empty if you're using Azure Key Vault to store your client ID and secret. |
 | Command Center - Client Secret | The application client secret from the [Create an Azure AD app registration to connect to Microsoft Graph](#create-an-azure-ad-app-registration-to-connect-to-microsoft-graph) step. Leave empty if you're using Azure Key Vault to store your client ID and secret. |
-
-### Modify the Command Center App > Get M365 Service Messages flow to use Azure Key Vault
-
->[!IMPORTANT]
->If you store the client ID and secret for [connecting to Microsoft Graph](#create-an-azure-ad-app-registration-to-connect-to-microsoft-graph) in environment variables, you can skip this step.
-
-1. If you store your client ID and secret for [connecting to Microsoft Graph](#create-an-azure-ad-app-registration-to-connect-to-microsoft-graph)  in Azure Key Vault, you'll need to update the **Command Center App > Get M365 Service Messages** flow:
-    1. Go to [flow.microsoft.com](https://flow.microsoft.com), select **Solutions**, and then open the **Center of Excellence - Core Components** solution to view the flows.
-    1. Edit the **Command Center App >  Get M365 Service Messages** flow.
-    1. Use the [Azure Key Vault connector](/connectors/keyvault/) to retrieve the client ID and secret in Azure Key Vault.
-    1. Update the **List serviceAnnouncements from Graph** with your client ID and client secret.
-        ![Update HTTP action with client ID and secret.](media/commandcenter3.png "Update HTTP action with client ID and secret")
-    1. **Save** this flow.
+| Command Center - Client Azure Secret | The Azure Key Vault reference for the application client secret from the [Create an Azure AD app registration to connect to Microsoft Graph](#create-an-azure-ad-app-registration-to-connect-to-microsoft-graph) step. Leave empty if you're storing your client ID in plain text in the Command Center - Client Secret environment variable.  Learn more: [Use Azure Key Vault secrets in environment variables](/powerapps/maker/data-platform/environmentvariables#use-azure-key-vault-secrets)|
 
 ### Modify the Command Center App > Get M365 Service Messages flow for a GCC High or DoD tenant
 
@@ -287,6 +286,7 @@ Environment variables are used to store application and flow configuration data 
 |Also Delete from CoE | When running the "Admin \| Sync Template v2 (Check Deleted)" flow, delete the items from CoE (yes) or just mark deleted (no)  | Yes |
 | Command Center - Application Client ID | (optional) The application client ID from the [Create an Azure AD app registration to connect to Microsoft Graph](#create-an-azure-ad-app-registration-to-connect-to-microsoft-graph) step earlier in this article. Leave empty if you'd like to use Azure Key Vault to store your client ID and secret. | Not applicable |
 | Command Center - Client Secret | (optional) The application client secret from the [Create an Azure AD app registration to connect to Microsoft Graph](#create-an-azure-ad-app-registration-to-connect-to-microsoft-graph) step earlier in this article. Leave empty if you'd like to use Azure Key Vault to store your client ID and secret. | Not applicable |
+| Command Center - Client Azure Secret | The Azure Key Vault reference for the application client secret from the [Create an Azure AD app registration to connect to Microsoft Graph](#create-an-azure-ad-app-registration-to-connect-to-microsoft-graph) step. Leave empty if you're storing your client ID in plain text in the Command Center - Client Secret environment variable.  Learn more: [Use Azure Key Vault secrets in environment variables](/powerapps/maker/data-platform/environmentvariables#use-azure-key-vault-secrets)| Not applicable |
 | DelayInventory | If Yes, runs a delay step to assist with the Dataverse load balancing. Only set this to No for debugging. | Yes |
 | eMail Header Style | The CSS / Style to use for eMails | [Default CSS](/code-samples/css/default-value-email-header-style) |
 | eMail Body Start | Starting HTML format for eMails | Default style provided |

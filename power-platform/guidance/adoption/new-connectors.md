@@ -3,7 +3,7 @@ title: "Monitor new connectors - Microsoft Power Platform | MicrosoftDocs"
 description: "Evaluate the impact of a new connector and choose to allow business data to be shared with the new service by moving the connector to the business data group in your DLP policies."
 author: manuelap-msft
 manager: devkeydet
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/09/2020

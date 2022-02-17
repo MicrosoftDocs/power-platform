@@ -1,7 +1,7 @@
 ---
 title: "Power Apps activity logging| MicrosoftDocs"
 description: Activity logging for Power Apps 
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 10/20/2020

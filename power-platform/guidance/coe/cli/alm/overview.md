@@ -7,7 +7,7 @@ ms.author: grarchib
 manager: pladhani
 ms.custom: ""
 ms.date: 11/30/2021
-ms.service: power-platform
+
 ms.topic: "article"
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -149,8 +149,8 @@ The following recording shows a sample generating an install configuration file 
 ### Read more
 
 - [ALM Accelerator for Power Platform](/power-platform/guidance/coe/almacceleratorpowerplatform-components) - An overview of the ALM Accelerator.
-- [Deployment profile set up](/power-platform/power-platform/guidance/coe/setup-almacceleratorpowerplatform-deployment-profiles) - Configuring user settings and deployment profiles.
-- [Maker user configuration](/power-platform/power-platform/guidance/coe/setup-almacceleratorpowerplatform-users) - Configuring Microsoft Dataverse users to access the ALM Accelerator for Power Platform.
+- [Deployment experience and profile set up](/power-platform/power-platform/guidance/coe/setup-almacceleratorpowerplatform-deployment-profiles) - Configuring user settings and deployment profiles.
+- [User permissions set up](/power-platform/power-platform/guidance/coe/setup-almacceleratorpowerplatform-users) - Configuring Microsoft Dataverse users to access the ALM Accelerator for Power Platform.
 - Manual set up - Understand the key steps that the CLI is automating.
   - [Foundational set up](/power-platform/guidance/coe/setup-almacceleratorpowerplatform#foundational-setup) - Foundational set up for manual steps automated by the CLI install command.
   - [Development project set up](/power-platform/guidance/coe/setup-almacceleratorpowerplatform#development-project-setup) - Documents the manual steps that are automated by the CLI install command.

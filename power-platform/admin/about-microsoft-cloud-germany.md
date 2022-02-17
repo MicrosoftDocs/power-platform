@@ -2,10 +2,10 @@
 title: "About Microsoft Cloud Germany datacenter"
 description: "Learn about Microsoft Cloud Germany datacenter, including residency and trustee for customer data, service delivery, compliance, privacy, and mapping functions."
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/03/2020
+ms.date: 02/07/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -73,8 +73,6 @@ Dynamics 365 Plan is a user subscription that includes [!INCLUDE[pn_ms_dyn_365_f
 - [!INCLUDE[pn_ms_dyn_365_for_operations](../includes/pn-ms-dyn-365-for-operations.md)]  
   
 - [!INCLUDE[pn_ms_dyn_for_financials](../includes/pn-ms-dyn-for-financials.md)]  
-  
-- [!INCLUDE[pn_flow](../includes/pn-flow.md)]  
   
 - [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)]  
   

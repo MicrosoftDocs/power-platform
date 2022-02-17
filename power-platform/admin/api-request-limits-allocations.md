@@ -2,7 +2,7 @@
 title: Requests limits and allocations | Microsoft Docs
 description: Requests limits and allocations
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/21/2022

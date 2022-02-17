@@ -2,10 +2,9 @@
 title: Environments overview | Microsoft Docs
 description: Learn about environments in Power Apps and how to use them
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: overview
-
 ms.date: 10/08/2021
 ms.subservice: admin
 ms.author: jimholtz
@@ -28,7 +27,7 @@ An *environment* is a space to store, manage, and share your organization's busi
 * You might also create separate environments for different global branches of your company.  
 
 > [!NOTE]
-> You can get early access to upcoming Power Apps functionality by joining the [Power Apps Preview program](preview-environments.md).
+> You can get early access to upcoming Power Apps functionality by joining the [Power Apps Preview program](/powerapps/maker/powerapps-preview-program).  
 
 ## Environment scope
 Each environment is created under an Azure Active Directory (Azure AD) tenant, and its resources can only be accessed by users within that tenant. An environment is also bound to a geographic location, like the United States. When you create an app in an environment, that app is routed only to datacenters in that geographic location. Any items that you create in that environment (including chatbots, connections, gateways, flows using Microsoft Power Automate, and more) are also bound to their environment's location.
@@ -110,7 +109,7 @@ There are multiple types of environments. The type indicates the purpose of the 
 A single default environment is automatically created by Power Apps for each tenant and shared by all users in that tenant. Whenever a new user signs up for Power Apps, they're automatically added to the Maker role of the default environment. The default environment is created in the region closest to the default region of the Azure AD tenant.
 
 > [!NOTE]
-> - No users will be added to the Environment Admin role of the default environment automatically. More information: [Administer environments in Power Apps](environments-administration.md)
+> - No users will be added to the Environment Admin role of the default environment automatically. 
 > - You can't delete the default environment.
 > - You can't backup and restore the default environment.
 > - The default environment has the following free storage capacity: 3GB Dataverse Database Capacity, 3GB Dataverse File Capacity, and 1GB Dataverse Log Capacity. Note that we're in the process of rolling out this feature.

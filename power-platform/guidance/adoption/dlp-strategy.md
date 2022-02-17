@@ -3,7 +3,7 @@ title: "Establishing a DLP strategy - Microsoft Power Platform | MicrosoftDocs"
 description: "As an administrator taking over an environment or starting to support use of Power Apps and Power Automate, DLP policies should be one of the first things you set up."
 author: manuelap-msft
 manager: devkeydet
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/09/2020

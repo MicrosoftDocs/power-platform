@@ -3,7 +3,7 @@ title: "Feedback and support for Center of Excellence (CoE) Starter Kit"
 description: "Report issues and feedback for Center of Excellence (CoE) Starter Kit and get help on Microsoft Power Platform."
 author: manuelap-msft
 manager: devkeydet
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/10/2020

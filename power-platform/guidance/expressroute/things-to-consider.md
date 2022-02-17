@@ -2,7 +2,7 @@
 title: "Consider this before using ExpressRoute with Microsoft Power Platform | MicrosoftDocs"
 description: "Learn about things to consider before deciding to use ExpressRoute with Microsoft Power Platform"
 author: taiki-yoshida
-ms.service: power-platform
+
 ms.topic: conceptual
 ms.date: 06/30/2021
 ms.subservice: guidance

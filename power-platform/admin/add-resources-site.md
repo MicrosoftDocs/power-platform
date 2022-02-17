@@ -3,7 +3,7 @@ title: "Add resources to a site record for your business"
 description: "Learn how to add users, equipment, and facilities to a site record to show what is available at a location."
 author: jimholtz
 manager: kvivek
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/30/2017

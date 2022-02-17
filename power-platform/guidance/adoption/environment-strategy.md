@@ -3,7 +3,7 @@ title: "Establishing an Environment Strategy - Microsoft Power Platform | Micros
 description: "Environments are containers that administrators can use to manage apps, flows, connections, and other assets, along with permissions to allow organization users to use the resources. This article walks you through important details about environments in Microsoft Power Platform and discusses recommended ways to benefit from proactively managing them."
 author: manuelap-msft
 manager: devkeydet
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/09/2020

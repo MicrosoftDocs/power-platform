@@ -3,7 +3,7 @@ title: "Dataverse for Teams environment management| MicrosoftDocs"
 description: "This article describes a sample process for managing Microsoft Teams environments by using Microsoft Power Platform."
 author: manuelap-msft
 manager: devkeydet
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 11/18/2020

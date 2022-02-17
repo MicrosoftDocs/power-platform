@@ -3,7 +3,7 @@ title: "Set up Developer Compliance components | MicrosoftDocs"
 description: "Learn how to set up the governance components of the CoE Starter Kit"
 author: manuelap-msft
 manager: devkeydet
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/10/2022
@@ -66,17 +66,16 @@ If your solution is installed in a Production Environment, your app will be a mo
 
 ## Turn on flows
 
-**Turn on** these flows which are installed as part of the **Core components** solution:
+For Production environment turn on these flows which are installed as part of the Core components solution:
 
 - Admin | Compliance request complete apps v3
 - Admin | Compliance request complete bots v3
 - Admin | Compliance request complete custom connector v3
 - Admin | Compliance request complete flows v3
 - Admin | Compliance Teams Environment BPF kickoff v3
+- [**Admin | Compliance detail request v3**](governance-components.md#admin--compliance-detail-request-v3)
 
-If your solution is installed in a Production environment, additionally turn on the [**Admin | Compliance detail request v3**]((governance-components.md#admin--compliance-detail-request-v3) flow which is installed with the Core components solution.
-
-If your solution is installed in a Dataverse for Teams environment, additionally turn on the **Admin | Compliance detail request [Teams] v3** flow which is installed with the Core for Teams components solution.
+For solution installed in a Dataverse for Teams environment, turn on the Admin | Compliance detail request [Teams] v3 flow only which is installed with the Core for Teams components solution.
 
 ## Share apps with makers
 
