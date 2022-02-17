@@ -1,10 +1,13 @@
 ---
 title: "About data encryption"
 description: "Learn about data encryption in Microsoft Dataverse." 
-author: jimholtz
+author: paulliew
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: paulliew
 ms.reviewer: jimholtz
+contributors:
+  - paulliew
+  - denisem-msft
 ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
