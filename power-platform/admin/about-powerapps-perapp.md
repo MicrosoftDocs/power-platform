@@ -1,12 +1,13 @@
 ---
 title: "About Power Apps per app plans  | MicrosoftDocs"
 description: About Power Apps per app plans 
-author: jimholtz
+author: alaug
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 12/14/2021
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: alaug
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:
