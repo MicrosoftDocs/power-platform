@@ -3,7 +3,6 @@ title: "Invoke analysis | Microsoft Docs"
 description: "Learn how to form a POST request using the Power Apps checker web API to initiate the analysis request job."
 ms.custom: ""
 ms.date: 06/09/2020
-
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
@@ -13,7 +12,7 @@ ms.assetid: a2c771f4-7eb6-4445-af2d-f775619ac3e8
 caps.latest.revision: 21
 author: "mhuguet" # GitHub ID
 ms.subservice: alm
-ms.author: "mhuguet"
+ms.author: "michu"
 ms.reviewer: "pehecke"
 manager: "maustinjones"
 search.audienceType: 
