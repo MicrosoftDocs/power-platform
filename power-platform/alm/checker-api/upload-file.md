@@ -3,7 +3,6 @@ title: "Upload a file for analysis | Microsoft Docs"
 description: "Read how to form a POST request using the Power Apps checker web API to retrieve to upload a file to analyze."
 ms.custom: ""
 ms.date: 06/09/2020
-
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
@@ -13,7 +12,7 @@ ms.assetid: 08d7d73b-1377-4d3f-b8ef-5c89b19dd735
 caps.latest.revision: 21
 author: "mhuguet" # GitHub ID
 ms.subservice: alm
-ms.author: "mhuguet"
+ms.author: "michu"
 ms.reviewer: "pehecke"
 manager: "maustinjones"
 search.audienceType: 
