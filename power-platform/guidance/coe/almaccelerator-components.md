@@ -1,9 +1,9 @@
 ---
 title: "ALM Accelerator for Makers | MicrosoftDocs"
-description: "The ALM Accelerator for Makers will help you follow ALM patterns and practices to source control and move your solutions from your development environment to test and production environments using GitHub."
+description: "ALM Accelerator for Makers will help you follow ALM patterns and practices to implement source control and move your solutions from your development environment to test and production environments by using GitHub."
 author: manuelap-msft
 manager: devkeydet
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/18/2021
@@ -22,17 +22,17 @@ search.app:
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
 > [!IMPORTANT]
-> The ALM Accelerator for Makers components are for reference only. For more robust deployment configurations, including components that need to be configured as part of or after the solution deployment, we recommend you use the ALM Accelerator for Power Platform. More information: [Set up ALM Accelerator for Power Platform components](setup-almacceleratorpowerplatform-cli.md) and [Use ALM Accelerator for Power Platform components](almacceleratorpowerplatform-components.md)
+> The ALM Accelerator for Makers components are for reference only. For more robust deployment configurations, including components that need to be configured as part of—or after—solution deployment, we recommend that you use the ALM Accelerator for Power Platform app. More information: [Set up ALM Accelerator for Power Platform components](setup-almacceleratorpowerplatform-cli.md) and [Use ALM Accelerator for Power Platform components](almacceleratorpowerplatform-components.md)
 
-Use the ALM Accelerator for Makers app to follow ALM patterns and practices for source control, and move your solutions from development to test to production environments by using GitHub. More information: [Set up ALM Accelerator for Makers components](setup-almaccelerator.md)
+Use the ALM Accelerator for Makers app to follow application lifecycle management (ALM) patterns and practices for source control, and move your solutions from development to test to production environments by using GitHub. More information: [Set up ALM Accelerator for Makers components](setup-almaccelerator.md)
 
-ALM Accelerator for Makers enables makers to apply source control strategies by using GitHub, and use automated builds and deployment of solutions to their environments without the need for manual intervention by the maker, administrator, developer, or tester. In addition, ALM Accelerator for Makers helps makers work without the knowledge of downstream technologies. Makers can switch quickly from developing solutions to implementing source control for the solution&mdash;and, ultimately, push their apps to other environments with as few interruptions to their work as possible.
+ALM Accelerator for Makers enables makers to apply source control strategies by using GitHub, and use automated builds and deployment of solutions to their environments without the need for manual intervention by the maker, administrator, developer, or tester. In addition, ALM Accelerator for Makers helps makers work without needing to know about<!--note from editor: Suggested.--> downstream technologies. Makers can switch quickly from developing solutions to implementing source control for the solution&mdash;and, ultimately, push their apps to other environments with as few interruptions to their work as possible.
 
-Makers can use the ALM Accelerator for Makers app to view all their projects, and deploy their work-in-progress or completed solution to a test or production environment. After a new project has been created and approved, makers can go to [make.powerapps.com](https://make.powerapps.com) to build and create assets&mdash;such as apps, flows, and tables&mdash;in a solution that has been created for them.
+Makers can use the ALM Accelerator for Makers app to view all their projects, and deploy their work in progress or completed solution to a test or production environment. After a new project has been created and approved, makers can go to [make.powerapps.com](https://make.powerapps.com) to build and create assets&mdash;such as apps, flows, and tables&mdash;in a solution that has been created for them.
 
 ## Prerequisite
 
-This app uses Microsoft Dataverse and a premium license is required for every app user.
+This app uses Microsoft Dataverse, and a Premium license is required for every app user.
 
 1. Go to [make.powerapps.com](https://make.powerapps.com).
 1. On the left pane, select **Solutions**.
