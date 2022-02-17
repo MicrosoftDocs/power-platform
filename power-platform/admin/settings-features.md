@@ -2,7 +2,6 @@
 title: "Manage feature settings | MicrosoftDocs"
 description: View and manage feature settings for Microsoft Dataverse.
 author: jimholtz
-
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/15/2022
@@ -55,6 +54,7 @@ Make sure you have the System Administrator or System Customizer security role o
 > |**Collaboration (preview)**  ||
 > |Enable preview of the modern link sharing UI, co-presence, online status in model-driven apps  | Default: Off. Turn **On**, to allow users to share links and see each others presence status when they're working on a record. For more information see, [Collaborate with others in model-driven apps](/powerapps/user/collaboration).  |
 > |End users can add and join Teams meeting from appointments in model-driven apps.  | Default: Off. Turn **On**, to allow users create and join Teams meeting from an appointment. <!-- For more information, see [Create and join a Teams meeting from an appointment](/powerapps/user/join-teams-meeting-from-appointments).  -->|  
+> | **Activities**   | Default: Off. Select **On** to limit the number of activities showing up in the **New Activity** dropdown list to activities that are relevant to the model-driven app. | 
 > |**Search**||  
 > |Dataverse search|Default: Off. If **On**, you can use Dataverse search to find records across multiple tables, sorted by relevance.|  
 > | Share anonymized search analytics with Microsoft | Default: Off. To help Microsoft improve Dataverse search, you can share your environment's Dataverse search queries in Dynamics 365 and Power Platform applications with Microsoft. More information: [Help improve Dataverse search](configure-relevance-search-organization.md#help-improve-dataverse-search)      |
