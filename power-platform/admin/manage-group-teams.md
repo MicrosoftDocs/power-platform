@@ -141,9 +141,13 @@ After you create the team, you can add team members and select corresponding sec
 
 ## Manage the security roles of a team
 
-1. Select a team, and then select **Manage security roles**. 
+1. Select a team. 
 
-2. Select the role or roles you want, and then select **Save**.
+   :::image type="content" source="media/select-team.png" alt-text="Screenshot selecting a team.":::
+
+2. Select **Manage security roles**. 
+
+3. Select the role or roles you want, and then select **Save**.
 
    :::image type="content" source="media/dataverse-team-manage-security-roles.png" alt-text="Screenshot of managing security roles.":::
 
