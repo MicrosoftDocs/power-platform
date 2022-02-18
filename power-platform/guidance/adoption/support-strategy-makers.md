@@ -17,6 +17,15 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
+
+
+<! -- From the editor: 
+I don't see a section that describes "Power Platform Nurture team" in greater detail. 
+Type 7 is listed as "Worldwide community support," or just "community support," but the section is titled "Power Platform community support." We should use consistent labeling.
+Line 47 says "Each type of internal user support introduced above are described in further detail in this article," so I expected to only read about the first four types, but the article also includes the external types, so that line should be changed.
+Line 101 says to watch for how recent the information is. Is that because it might be old and out of date, or too new to be tested? Maybe make this clearer. -->
+
+
 # Maker support
 
 The following section covers technical guidance and support for makers. Activities like building a community, training your makers and co-development assistance can significantly decrease the volume of formal support queries and increase user experience overall. Next to the activities outlined in this article, it's important to establish ongoing [training and learning opportunities](training-strategy.md) for your makers.
@@ -35,7 +44,7 @@ The diagram shows some common types of maker support that organizations employ s
 | ![Type 6.](media/support-6.png  "Type 6") | **[Partner support (external)](https://powerapps.microsoft.com/partners/)** can complement your internal support offering, and provide training to your makers or handle complex queries from your makers. |
 | ![Type 7.](media/support-7.png  "Type 7") | **[Community support (external)](https://powerusers.microsoft.com/)** can help get answers directly from other users. |
 
-Each of the types of internal user support introduced above are described in further detail in this article.
+Each type of internal user support introduced above are described in further detail in this article.
 
 ## Team-assisted support
 
@@ -43,33 +52,33 @@ Team-assisted support refers to makers learning from each other as they build ap
 
 ## Internal community support
 
-At the heart of growth is a [community](wiki-community.md), a place for people to collaborate, share ideas, and discover new ways to apply technology to achieve more. A community is a place to ask questions, to share knowledge and expand skill sets.
+At the heart of growth is a [community](wiki-community.md), a place for people to collaborate, share ideas, and discover new ways to apply technology to achieve more. A community is a place to ask questions, share knowledge, and expand skill sets.
 
-Internal communities may start as an informal motion, driven by makers who want to share their success with their colleagues – other makers may learn about the community through word of mouth. Often, those communities are formalized as your Power Platform maturity grows – then, new makers are automatically invited to the community, success stories are shared during regular events and existing champions take on mentorship opportunities to develop their career.
+Internal communities may start as an informal motion, driven by makers who want to share their success with their colleagues; other makers may learn about the community through word of mouth. Often, those communities are formalized as your Power Platform maturity grows—then, new makers are automatically invited to the community, success stories are shared during regular events, and existing champions take on mentorship opportunities to develop their career.
 
 >[!TIP]
 >The goal of an internal community is to be self-sustaining, which can lead to reduced formal support demands and costs. However, there will always be a need to monitor, manage, and nurture the internal community. Here are specific tips:
 >
 > - Set the community up for success by cultivating multiple experts in different topics.
-> - Allow the community a chance to respond, but the CoE should also monitor activity and unanswered questions to help out.
-> - Document FAQ and make them easily accessible to your community.
+> - Allow the community a chance to respond, but the Center of Excellence (CoE) should also monitor activity and unanswered questions to help out.
+> - Document FAQs and make them easily accessible to your community.
 > - If makers reach out directly to the dedicated support team or CoE leads, ask them to raise questions in the community instead.
 
 An internal community discussion channel is commonly set up as a Teams channel or a Yammer group. The technology chosen should reflect where users already work, so that the activities occur within their natural workflow.
 
-Use of an internal community discussion channel allows the Center of Excellence (CoE) to monitor the kind of questions people are asking. It's one way the CoE can understand the issues users are experiencing and shape the future of the CoE based on this input. Monitoring the discussion channel can also reveal more experts and potential champions who were previously unknown to the CoE.
+Use of an internal community discussion channel allows the Center of Excellence to monitor the kind of questions people are asking. It's one way the CoE can understand the issues users are experiencing and shape the future of the CoE based on this input. Monitoring the discussion channel can also reveal more experts and potential champions who were previously unknown to the CoE.
 
 ## Help desk support
 
-The help desk is usually operated as a shared service, operated by the IT department.
+The help desk is usually run as a shared service, operated by the IT department.
 
 The help desk can:
 
-- Support technical issues that cannot be resolved without IT involvement, for example installation of software like Power Automate Desktop, firewall/network issues or Power Platform service issues that require an admin to [raise support tickets](/admin/support-overview) through [Power Platform admin center](https://aka.ms/ppac).
-- Answering governance related questions, such as how to create new environments, request connectors.
+- Support technical issues that can't be resolved without IT involvement—for example, installation of software like Power Automate Desktop, firewall/network issues or Power Platform service issues that require an admin to [raise support tickets](/admin/support-overview) through the [Power Platform admin center](https://aka.ms/ppac).
+- Answer governance-related questions, such as how to create new environments or request connectors.
 
 >[!IMPORTANT]
->Your Power Platform governance decisions will directly impact the volume of help desk requests. For example, if you choose to lock down creation of new environments by everyone, it will result in users submitting help desk tickets. While it is our recommendation to limit environment creation, you must be prepared to satisfy the request very quickly to ensure employee / user satisfaction. Automating processes with Power Apps and Power Automate can help make the process efficient. If you delay too long, users will use what they already have, and that may not be the ideal scenario. Promptness is critical for certain help desk requests. As an example, learn [how to use the environment request management components in the CoE Starter Kit](/guidance/coe/env-mgmt).
+>Your Power Platform governance decisions will directly impact the volume of help desk requests. For example, if you choose to lock down creation of new environments by everyone, it will result in users submitting help desk tickets. While we recommend limiting environment creation, you must be prepared to satisfy the request quickly to ensure employee and user satisfaction. Automating processes with Power Apps and Power Automate can help make the process efficient. If you delay too long, users will use what they already have, and that may not be the ideal scenario. Promptness is critical for certain help desk requests. As an example, learn [how to use the environment request management components in the CoE Starter Kit](/guidance/coe/env-mgmt).
 
 Over time, troubleshooting and problem resolution skills become more effective as help desk personnel expand their knowledge base and experience with Power Platform.
 
@@ -81,13 +90,13 @@ Refer to the comprehensive [Microsoft Power Platform documentation](/power-platf
 
 ## Partner support
 
-Many customers choose to work with partners on their Power Platform adoption, including support. This can include development assistance for makers, help in establishing a CoE and technical support procedures, as well as training for your help desk and makers.
+Many customers choose to work with partners on their Power Platform adoption, including support. This can include development assistance for makers, help in establishing a CoE, and technical support procedures, as well as training for your help desk and makers.
 
 ## Power Platform community support
 
-Connect with peers and Power Platform technical experts through our worldwide [Power Platform community](https://powerusers.microsoft.com/). The community features forums for you to ask questions, trainings, blogs and sample galleries to take inspiration from.  It can be powerful and exceedingly helpful. However, as is the case with any public forum, it's important to validate the advice and information posted on the forum.
+Connect with peers and Power Platform technical experts through our worldwide [Power Platform community](https://powerusers.microsoft.com/). The community features forums for you to ask questions, trainings, blogs, and sample galleries to take inspiration from.  It can be powerful and exceedingly helpful. However, as is the case with any public forum, it's important to validate the advice and information posted on the forum.
 
-The Power Platform community is vibrant. Every day, there are a great number of blog posts, articles, webinars, and videos published. When relying on community information for troubleshooting, watch out for:
+The Power Platform community is vibrant. Every day, a great number of blog posts, articles, webinars, and videos are published. When relying on community information for troubleshooting, watch out for:
 
 - How recent the information is.
 - Whether the situation and context of the solution found online truly fits your circumstance.
@@ -103,8 +112,8 @@ Considerations and key actions you can take to improve your team-assisted suppor
 Considerations and key actions you can take to improve your internal community support:
 
 - Encourage people to ask questions in the designated community discussion channel. As the habit builds over time, it will become normalized to use that as the first option and the community will evolve to become more self-supporting.
-- Ensure that your dedicated Power Platform support team actively monitor this discussion channel. They can step in if a question remains unanswered, improve upon answers, or make corrections when appropriate. They can also post links to additional information to raise awareness of existing resources. Although the goal of the community is to become self-supporting, it still requires dedicated resources to monitor and nurture it.
-- Make sure your user population knows the internal community support area exists. Highlight a link to it in regular internal communications, on your intranet pages and set up automated welcome emails for new makers with a link to the community.
+- Ensure that your dedicated Power Platform support team actively monitors this discussion channel. They can step in if a question remains unanswered, improve upon answers, or make corrections when appropriate. They can also post links to additional information to raise awareness of existing resources. Although the goal of the community is to become self-supporting, it still requires dedicated resources to monitor and nurture it.
+- Make sure your user population knows the internal community support area exists. Highlight a link to it in regular internal communications and on your intranet pages, and set up automated welcome emails for new makers with a link to the community.
 - Set up automation to ensure that all your Power Platform users automatically have access to the community discussion channel.
 
 Considerations and key actions you can take to improve your internal help desk support:
@@ -119,7 +128,7 @@ Considerations and key actions you can take to improve your internal help desk s
 Considerations and key actions you can take to improve your Power Platform Nurture team support:
 
 - Create a feedback loop from the help desk to the dedicated support team. When support personnel observe redundancies or inefficiencies, they can communicate that information to the Nurture team, who might choose to update existing internal documentation or provide more training paths for makers.
-- Consider offering drop-in sessions / office hours where makers can show up with their questions to get immediate help.
+- Consider offering drop-in sessions or office hours where makers can show up with their questions to get immediate help.
 - Consider hosting frequent webinars to share Power Platform maker and development knowledge, such as how to use specific actions in a cloud flow or how to make canvas apps responsive. Record those sessions and make them available on your Power Platform community space.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
