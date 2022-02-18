@@ -1,7 +1,7 @@
 ---
 title: "Exchange Online cross-tenant authentication | MicrosoftDocs"
 description: Exchange Online cross tenant authentication
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/13/2022

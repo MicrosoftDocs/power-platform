@@ -2,7 +2,7 @@
 title: "Add Microsoft 365 Online services  | MicrosoftDocs"
 description: Add Microsoft 365 Online services
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/04/2020

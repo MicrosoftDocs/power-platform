@@ -3,7 +3,7 @@ title: "Upgrade a Dataverse for Teams environment"
 description: "You can upgrade from a Dataverse for Teams environment in Power Virtual Agents, so you can avoid capacity limits."
 keywords: "Administration, dataverse, environment, PVA, teams"
 ms.date: 2/8/2021
-ms.service: power-virtual-agents
+
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -15,8 +15,7 @@ ms.collection: virtual-agent
 # Upgrade a Dataverse for Teams environment for Power Virtual Agents
 
 When a user creates a bot in Microsoft Teams using the [Power Virtual
-Agents for Teams app](fundamentals-what-is-power-virtual-agents-teams.md), a Dataverse for Teams environment gets created for the team the customer
-selected. [Learn more about Dataverse for Teams](/power-platform/admin/about-teams-environment).
+Agents for Teams app](fundamentals-what-is-power-virtual-agents-teams.md), a Dataverse for Teams environment gets created for the team the customer selected. [Learn more about Dataverse for Teams](/power-platform/admin/about-teams-environment).
 
 ## Upgrading a Dataverse for Teams environment
 
@@ -32,7 +31,7 @@ For more information about upgrading Dataverse environments, see the [Dataverse 
 When an environment is being upgraded, users can't edit or create bots in the environment. The users will be told about the upgrade in the Power Virtual Agents for Teams app, and they'll be blocked
 from making or editing bots in the environment.
 
-:::image type="content" source="media/admin-upgrade-dataverse-teams/dataverse-upgrade-in-progress-teams.png" alt-text="Screenshot of the Power Virtual Agent app in Teams  with the message try again later - this team is upgrading.":::
+:::image type="content" source="../media/admin-upgrade-dataverse-teams/dataverse-upgrade-in-progress-teams.png" alt-text="Screenshot of the Power Virtual Agent app in Teams  with the message try again later - this team is upgrading.":::
 
 During the upgrade, users will experience issues if they try to chat with your bot. You should plan for or notify your users of an expected downtime.
 
@@ -42,7 +41,7 @@ Users can also choose to edit the bot in the Power Virtual Agents web app at [ht
 
 Upgraded environments are shown with a diamond icon next to their name in the list of environments in the **Chatbots** tab.
 
-:::image type="content" source="media/admin-upgrade-dataverse-teams/upgraded-list-of-environments.png" alt-text="Screenshot of the Power Virtual Agents app in Teams with a list of bots in an upgrade environment, and showing a diamond icon next to the environment name.":::
+:::image type="content" source="../media/admin-upgrade-dataverse-teams/upgraded-list-of-environments.png" alt-text="Screenshot of the Power Virtual Agents app in Teams with a list of bots in an upgrade environment, and showing a diamond icon next to the environment name.":::
 
 > [!NOTE]
 > To access the Power Virtual Agents web app, users need a [standalone PVA license](../requirements-licensing-subscriptions.md) or an individual [trial](../sign-up-individual.md).

@@ -3,7 +3,7 @@ title: "Add a chatbot to Azure Bot Service channels"
 description: "Connect your bot to existing Azure Bot Service framework channels (with additional code dev work)."
 keywords: "Publish, channel, connector, sample code, developer, extensibility"
 ms.date: 01/25/2022
-ms.service: power-virtual-agents
+
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -54,7 +54,7 @@ The instructions in this document reference the following:
 
 You need an Azure Bot Service bot that can relay conversations between your Power Virtual Agents bot and Azure Bot Service channels.
 
-:::image type="content" source="media/channel-relay-bot-diagram.png" alt-text="Relay bot diagram.":::
+:::image type="content" source="media/publication-connect-bot-to-azure-bot/channel-relay-bot-diagram.png" alt-text="Relay bot diagram.":::
 
 The [relay bot sample code](https://github.com/microsoft/PowerVirtualAgentsSamples/tree/master/RelayBotSample) is a good starting point if you do not have an existing Azure Bot Service bot. It is built from Microsoft Bot Framework bot [sample code](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore) that can be compiled and deployed to the Azure Bot Service. The sample code is meant to be used as a starting point and not intended to be used in production directly. You will need to add code and optimization to match your business needs.  
 
@@ -66,17 +66,17 @@ To connect to the bot you have built with Power Virtual Agents, you will need to
 
 1. Copy your bot's name in Power Virtual Agents.
 
-   :::image type="content" source="media/channel-get-bot-name.png" alt-text="Get bot name." border="false":::
+   :::image type="content" source="media/publication-connect-bot-to-azure-bot/channel-get-bot-name.png" alt-text="Get bot name." border="false":::
 
 1. On the side pane, go to **Manage** > **Channels**.
 
 1. Select the channel you want to connect to. This topic uses Slack as an example.
 
-   :::image type="content" source="media/channel-slack.png" alt-text="Slack channel." border="false":::
+   :::image type="content" source="media/publication-connect-bot-to-azure-bot/channel-slack.png" alt-text="Slack channel." border="false":::
 
 1. Copy and save the *Bot ID* and *Tenant ID* value by selecting **Copy**. You will need these when connecting your bot to the Azure Bot Service channel.
 
-   :::image type="content" source="media/channel-get-bot-parameters-slack.png" alt-text="Get bot parameters." border="false":::
+   :::image type="content" source="media/publication-connect-bot-to-azure-bot/channel-get-bot-parameters-slack.png" alt-text="Get bot parameters." border="false":::
 
 ## Manage conversation sessions with your Power Virtual Agents bot
 
@@ -126,7 +126,6 @@ The following example uses samples from the [relay bot sample code](https://gith
 
     ```C#
     Dictionary<string, PowerVirtualAgentsConversation> ConversationRouter = new Dictionary<string, PowerVirtualAgentsConversation>();  
-    
     ```
 
     To manage the conversation lifecycle, refresh the Direct Line tokens or clean up idled conversations. Learn more about token refresh at [Refresh Direct Line token](publication-connect-bot-to-custom-application.md#refresh-direct-line-token). A Power Virtual Agents conversation to support those is defined as following:

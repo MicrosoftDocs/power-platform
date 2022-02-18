@@ -3,7 +3,7 @@ title: "View and manage settings for Microsoft Power Platform"
 description: "Configure settings for Microsoft Power Platform, including governance, themes, notifications, password, and contact preferences."
 author: jimholtz
 manager: kvivek
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/17/2020

@@ -3,7 +3,7 @@ title: "Default Value of eMail Header Style | MicrosoftDocs"
 description: "Allows the reader to easily view the default value that has been provided for the eMail Header Style Environmental Variable, of the Core solution of the CoE Starter Kit"
 author: manuelap-msft
 manager: devkeydet
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 06/01/2021

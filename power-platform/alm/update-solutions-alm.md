@@ -9,7 +9,7 @@ manager: kvivek
 ms.custom: ""
 ms.date: 08/04/2021
 ms.reviewer: ""
-ms.service: power-platform
+
 ms.topic: "article"
 search.audienceType: 
   - maker

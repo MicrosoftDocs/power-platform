@@ -3,7 +3,7 @@ title: "Create and reply to comments in bot topics"
 description: "Add new comments, reply to existing comments, and resolve or delete comments and comment threads for topics within a Power Virtual Agents chatbot."
 keywords: "PVA"
 ms.date: 11/02/2021
-ms.service: power-virtual-agents
+
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -77,9 +77,7 @@ Select the menu icon at the top of the comment thread to edit the initial commen
 :::image type="content" source="media/authoring-comments/authoring-comments-thread.png" alt-text="Screenshot of the menu that appears with the items Edit comment, Delete thread, and Resolve thread.":::
 
 - Editing the initial comment lets you change only that comment. Other comments in the thread won't be affected.
-
 - Deleting a thread removes it completely. You can't restore deleted comments or threads.
-
 - Resolving a thread causes it to appear faded, and places the label **Resolved** at the top of the thread. Select the arrow icon at the top of the thread to unresolve a thread. Unresolving a thread lets you add more comments.
 
 ### Edit and delete individual comments
@@ -89,15 +87,12 @@ Select the menu icon at the top of an individual comment, next to the your name,
 You can only edit or delete comments that you created.
 
 - Editing the comment lets you change that comment.
-
 - Deleting the comment removes it completely from that thread. You can't restore deleted comments.
 
 ## Additional notes
 
 - Comments won't be exported when you [export a bot with a solution](authoring-export-import-bots.md).
-
 - You can't @ mention other bot makers in a comment.
-
 - New comments will show for [other bot makers who are editing the same topic](admin-share-bots.md#collaborate-on-bots) when they refresh the page. The topic doesn't need to be saved for new comments to show.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

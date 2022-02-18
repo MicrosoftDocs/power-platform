@@ -3,7 +3,7 @@ title: "Overview of Power Virtual Agents in Microsoft Teams"
 description: "Use Power Virtual Agents in Teams to create chatbots for fellow employees or team members."
 keywords: "PVA, teams"
 ms.date: 9/22/2020
-ms.service: power-virtual-agents
+
 ms.topic: overview
 author: iaanw
 ms.author: iawilt
@@ -11,9 +11,6 @@ manager: shellyha
 ms.custom: fundamentals, ceX, teams, intro-internal
 ms.collection: virtual-agent
 ---
-
-
-
 
 # Power Virtual Agents app in Microsoft Teams
 
@@ -62,14 +59,10 @@ Microsoft Power Virtual Agents (1) is not intended or made available as a medica
 
 ## Helpful links
 
-[Create your first bot](authoring-first-bot-teams.md)
-
-[Create and edit topics](authoring-create-edit-topics-teams.md)
-
-[Enhance your bot](advanced-fundamentals-teams.md)
-
-[Publish your bot](publication-fundamentals-publish-channels-teams.md)
-
-[Using analytics to improve your bot](analytics-overview-teams.md)
+- [Create your first bot](authoring-first-bot-teams.md)
+- [Create and edit topics](authoring-create-edit-topics-teams.md)
+- [Enhance your bot](advanced-fundamentals-teams.md)
+- [Publish your bot](publication-fundamentals-publish-channels-teams.md)
+- [Using analytics to improve your bot](analytics-overview-teams.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -3,7 +3,7 @@ title: "Use a Power Virtual Agents bot as a skill in Bot Framework bots"
 description: "Call a Power Virtual Agents bot from within a Bot Framework bot's session when a user says something that matches the bot's trigger phrases."
 keywords: "composer, skills, bot framework"
 ms.date: 01/13/2022
-ms.service: power-virtual-agents
+
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -132,7 +132,7 @@ Selecting either manifest will download them as a .zip file labeled *\<bot name\
 :::image type="content" source="media/advanced-use-pva-as-a-skill/Manifests_Zip.png" alt-text="Power Virtual Agents - Downloaded Test and Published Manifests.":::
 
 > [!NOTE]
->  System topics and Composer dialogs added to a Power Virtual Agents bot will not be included in the skill manifest. Only user-created topics and Composer intent triggers added to the bot will be added to the Power Virtual Agents bot skill manifest.
+> System topics and Composer dialogs added to a Power Virtual Agents bot will not be included in the skill manifest. Only user-created topics and Composer intent triggers added to the bot will be added to the Power Virtual Agents bot skill manifest.
 
 ## Connect to a Power Virtual Agents skill in Composer
 

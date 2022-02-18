@@ -2,7 +2,7 @@
 title: "Try Power Apps and customer engagement apps | MicrosoftDocs"
 description: Try Power Apps and customer engagement apps for free before you buy  
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 06/15/2021

@@ -1,7 +1,7 @@
 ---
 title: "Automatically track sent folder items with server-side synchronization   | MicrosoftDocs"
 description: Automatically track sent folder items with server-side synchronization.  
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/15/2021

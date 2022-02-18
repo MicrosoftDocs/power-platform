@@ -3,7 +3,7 @@ title: "Preview: Overview of integration with Application Insights | Microsoft D
 description: About integration with Application Insights
 services: powerapps
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 07/16/2021

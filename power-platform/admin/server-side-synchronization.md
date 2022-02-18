@@ -1,7 +1,7 @@
 ---
 title: "Server-side synchronization between customer engagement apps and email servers  | MicrosoftDocs"
 description: Server-side synchronization provides direct apps-to-email server synchronization
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: overview
 ms.date: 05/25/2021

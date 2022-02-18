@@ -3,7 +3,7 @@ title: "Advanced AI features in Microsoft Teams (contains video)"
 description: "There are a number of advanced features for managing and utilizing AI within the Power Virtual Agents app in Microsoft Teams."
 keywords: "PVA, teams, AI, nlu"
 ms.date: 01/25/2022
-ms.service: power-virtual-agents
+
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -43,6 +43,6 @@ To use these advanced AI capabilities in Power Virtual Agents:
 
 1. Select **Save** at the top of the tab.
 
-:::image type="content" source="media/advanced-ai-features/enable-features-teams.png" alt-text="Screenshot showing the AI capabilities section under the Manage tab in Teams.":::
+:::image type="content" source="../media/advanced-ai-features/enable-features-teams.png" alt-text="Screenshot showing the AI capabilities section under the Manage tab in Teams.":::
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

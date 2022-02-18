@@ -2,7 +2,7 @@
 title: "Download a template for data import | MicrosoftDocs"
 description: Download a template for data import
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/04/2020

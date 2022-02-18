@@ -2,7 +2,7 @@
 title: "Add-ons for Power Automate licensing"
 description: "Add-ons for Power Automate licensing."
 author: msftman
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: overview
 ms.date: 10/30/2021

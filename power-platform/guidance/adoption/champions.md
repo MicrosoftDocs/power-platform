@@ -3,7 +3,7 @@ title: "Find and support champions in your organization - Microsoft Power Platfo
 description: "Find your Microsoft Power Platform champions with the right tools, and learn how they can support you."
 author: manuelap-msft
 manager: devkeydet
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 10/14/2021

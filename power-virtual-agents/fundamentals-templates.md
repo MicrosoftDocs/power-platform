@@ -3,7 +3,7 @@ title: "Chatbot templates for Teams"
 description: "Use templates to quickly get up and running with Power Virtual Agents chatbots in Microsoft Teams."
 keywords: "PVA, teams, templates"
 ms.date: 9/21/2021
-ms.service: power-virtual-agents
+
 ms.topic: article
 author: iaanw
 ms.author: iawilt

@@ -13,9 +13,6 @@ ms.custom: flow, ceX, advanced-authoring, teams
 ms.collection: virtual-agent
 ---
 
-
-
-
 # Add actions to a bot using Power Automate  in Teams
 
 Select the version of Power Virtual Agents you're using here:
@@ -54,7 +51,7 @@ For example, you could record someone's answer to a question in one place in the
 
 1. In the node selection window, select **Call an action** > **Create a flow**.
 
-    :::image type="content" source="media/UseCreateFlowOption-teams.png" alt-text="Create a new Power Automate flow.":::
+    :::image type="content" source="../media/advanced-flow/UseCreateFlowOption-teams.png" alt-text="Create a new Power Automate flow.":::
 
 1. You'll find a list of templates to help you get started creating Power Automate flows. For this example, we'll pick the basic "Power Virtual Agents Flow Template".
 
@@ -77,7 +74,7 @@ For example, you can select **Text** and **Number** to add the following input p
 - **String_Input** of type `string`
 - **Number_Input** of type `number`
 
-:::image type="content" source="media/PVATemplateInput.png" alt-text="Input and output parameters are defined in the flow.":::
+:::image type="content" source="../media/advanced-flow/PVATemplateInput.png" alt-text="Input and output parameters are defined in the flow.":::
 
 ### Output parameters
 
@@ -88,7 +85,7 @@ For example, you can select **Text** and **Number** to add the following output 
 - **String_Output** of type `string`
 - **Number_Output** of type `number`
 
-:::image type="content" source="media/PVAConnectorTemplate_SAVE-teams.png" alt-text="Input and output parameters that were added are now saved.":::
+:::image type="content" source="../media/advanced-flow/PVAConnectorTemplate_SAVE-teams.png" alt-text="Input and output parameters that were added are now saved.":::
 
 This example creates a fully functional flow that accepts two parameters, a `string` and a `number`, and returns them to a bot as outputs.
 
@@ -96,7 +93,7 @@ Select **Save** to save your new flow.
 
 Now when you go to call an action and choose **Flow**, you'll see the flow you created. You can select **View flow details** to edit the flow, save it, and make other changes.
 
-:::image type="content" source="media/flow-ready.png" alt-text="The flow is now added as a new node with the inputs and outputs that were defined in the flow.":::
+:::image type="content" source="../media/advanced-flow/flow-ready.png" alt-text="The flow is now added as a new node with the inputs and outputs that were defined in the flow.":::
 
 ## Create simple flow
 
@@ -130,7 +127,7 @@ In this flow, we're going to provide a special message and email when someone as
 
 Now when the bot user tells the bot how many people, and any requirements, an email will be sent with that information.
 
-:::image type="content" source="media/flow-test-4.png" alt-text="Complete topic with a flow call that sends email via Outlook connector.":::
+:::image type="content" source="../media/advanced-flow/flow-test-4.png" alt-text="Complete topic with a flow call that sends email via Outlook connector.":::
 
 See the [Power Virtual Agents webapp documentation on using Flows](../advanced-flow.md) for more detailed and complex scenarios.
 

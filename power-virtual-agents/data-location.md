@@ -2,13 +2,13 @@
 title: "Regional settings and data locations (contains video)"
 description: "Identify the geographic location where your data will be stored, and plan for globalization features, including currency and date and time formats."
 ms.date: 5/19/2021
-ms.service: power-virtual-agents
+
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
 ms.collection: virtual-agent
-ms.cusom: "multi-geo, gdpr, ce06102020"
+ms.custom: "multi-geo, gdpr, ce06102020"
 ---
 
 # Regional settings and data locations for organizations using Power Virtual Agents
@@ -60,19 +60,19 @@ Data will be stored in the United States if a bot author's tenant location isn't
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4mPmc ]
 >
 
-|Azure geographic locations (geos) | Azure datacenters (regions) |
-|---|--- |
-|Asia Pacific | Southeast Asia (Singapore), East Asia (Hong Kong) |
-|Australia | Australia East (New South Wales), Australia Southeast (Victoria) |
-|Canada | Canada Central (Toronto), Canada East (Quebec City) |
-|Europe | West Europe (Netherlands), North Europe (Ireland) |
-|France | France Central (Paris), France South (Marseille) |
-|India | Central India (Pune), South India (Chennai) |
-|Japan | Japan East (Tokyo, Saitama), Japan West (Osaka) |
-|South America | Brazil South (Sao Paulo State) &nbsp;(As there is only one region in Brazil, customer data in Brazil South may be replication to South Central US (Texas) for disaster recovery purposes)
-|Switzerland | Switzerland North (Zurich), Switzerland west (Geneva) |
-|United Kingdom | UK South (London), UK West (Cardiff, Durham) |
-|United States | East US (Blue Ridge, VA), South Central US (Des Moines, IA), West US (Quincy, WA) |
+| Azure geographic locations (geos) | Azure datacenters (regions)                                                                                                                                                               |
+| --------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Asia Pacific                      | Southeast Asia (Singapore), East Asia (Hong Kong)                                                                                                                                         |
+| Australia                         | Australia East (New South Wales), Australia Southeast (Victoria)                                                                                                                          |
+| Canada                            | Canada Central (Toronto), Canada East (Quebec City)                                                                                                                                       |
+| Europe                            | West Europe (Netherlands), North Europe (Ireland)                                                                                                                                         |
+| France                            | France Central (Paris), France South (Marseille)                                                                                                                                          |
+| India                             | Central India (Pune), South India (Chennai)                                                                                                                                               |
+| Japan                             | Japan East (Tokyo, Saitama), Japan West (Osaka)                                                                                                                                           |
+| South America                     | Brazil South (Sao Paulo State) &nbsp;(As there is only one region in Brazil, customer data in Brazil South may be replication to South Central US (Texas) for disaster recovery purposes) |
+| Switzerland                       | Switzerland North (Zurich), Switzerland west (Geneva)                                                                                                                                     |
+| United Kingdom                    | UK South (London), UK West (Cardiff, Durham)                                                                                                                                              |
+| United States                     | East US (Blue Ridge, VA), South Central US (Des Moines, IA), West US (Quincy, WA)                                                                                                         |
 
 ## Customer data  
 

@@ -2,7 +2,7 @@
 title: "Overview of Power Automate licensing"
 description: "Overview of Power Automate licensing."
 author: PriyaKodukula
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: overview
 ms.date: 10/31/2021

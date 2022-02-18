@@ -2,7 +2,7 @@
 title: "Turn duplicate detection rules on or off for the whole organization  | MicrosoftDocs"
 description: Turn duplicate detection rules on or off for the whole organization 
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/11/2020

@@ -3,7 +3,7 @@ title: "Maker support strategy - Microsoft Power Platform | MicrosoftDocs"
 description: "Guidance on establishing maker education and development support for Microsoft Power Platform makers."
 author: manuelap-msft
 manager: devkeydet
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/01/2022

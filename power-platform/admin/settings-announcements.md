@@ -2,7 +2,7 @@
 title: "Broadcast announcements to an entire organization  | MicrosoftDocs"
 description: About broadcast announcements to an entire organization 
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/09/2021

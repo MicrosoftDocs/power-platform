@@ -2,7 +2,7 @@
 title: "Create templates for email  | MicrosoftDocs"
 description: Create templates for email
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/04/2020

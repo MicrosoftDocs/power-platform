@@ -3,7 +3,7 @@ title: "Use hand-off to live agent (contains video)"
 description: "Learn how to hand off a bot conversation to a live human agent, complete with context and conversation history."
 keywords: "PVA"
 ms.date: 9/22/2020
-ms.service: power-virtual-agents
+
 ms.topic: article
 author: iaanw 
 ms.author: iawilt
@@ -74,11 +74,11 @@ This node lets you add a **Private message to agent**, which is sent to the conn
 
 1. Click the plus (+) icon to add a message node. Enter what the bot should say to indicate that transferal to a live agent is about to occur.
 
-    :::image type="content" source="media/handoff-add-node.png" alt-text="Screenshot of adding a node." border="false":::
+    :::image type="content" source="media/advanced-hand-off/handoff-add-node.png" alt-text="Screenshot of adding a node." border="false":::
 
 1. Underneath the message node, click the plus (+) icon, go to **End the conversation** and then select **Transfer to agent**
 
-    :::image type="content" source="media/handoff-add-transfer-node.png" alt-text="Screenshot of adding the node." border="false":::
+    :::image type="content" source="media/advanced-hand-off/handoff-add-transfer-node.png" alt-text="Screenshot of adding the node." border="false":::
 
 1. Enter an optional private message to the live agent in the **Transfer to agent** node. This optional message can be useful if you have multiple topics with **Transfer to agent** nodes as the information is stored in the `va_AgentMessage` [context variable](#contextual-variables-available-upon-hand-off).
 
@@ -95,18 +95,18 @@ You can use these variables to automatically determine where the conversation sh
 
 The following table lists the context variables available by default.
 
-| Context | Purpose | Example |
-| ------- | ------- | ------- |
-| `va_Scope` | Helps route escalations to a live agent. | `"bot"` |
-| `va_LastTopic` | Helps route escalations to a live agent and helps ramp-up a live agent. Includes the last topic that was triggered by an utterance from the user. | `"Return items"` |
-| `va_Topics` | Helps ramp-up a live agent. | `[ "Greetings", "Store Hours", "Return Item" ]` |
-| `va_LastPhrases` | Helps route escalation to a live agent and helps ramp-up a live agent. | `"Can I return my item"` |
-| `va_Phrases` | Helps ramp-up a live agent. | `["Hi", "When does store open", "Can I return my item" ]` |
-| `va_ConversationId` | Helps uniquely identify a bot conversation. | `GUID` |
-| `va_AgentMessage` | Helps ramp-up a live agent. | `"Got a gift from: HandoffTest"` |
-| `va_BotId` | Helps identify the bot that is handing off a conversation. | `GUID` |
-| `va_Language` | Helps route escalation to a live agent. | `"en-us"` |
-| All [user-defined topic variables](./authoring-variables.md) | Helps ramp-up a live agent. | `@StoreLocation = "Bellevue"` |
+| Context                                                      | Purpose                                                                                                                                           | Example                                                   |
+| ------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
+| `va_Scope`                                                   | Helps route escalations to a live agent.                                                                                                          | `"bot"`                                                   |
+| `va_LastTopic`                                               | Helps route escalations to a live agent and helps ramp-up a live agent. Includes the last topic that was triggered by an utterance from the user. | `"Return items"`                                          |
+| `va_Topics`                                                  | Helps ramp-up a live agent.                                                                                                                       | `[ "Greetings", "Store Hours", "Return Item" ]`           |
+| `va_LastPhrases`                                             | Helps route escalation to a live agent and helps ramp-up a live agent.                                                                            | `"Can I return my item"`                                  |
+| `va_Phrases`                                                 | Helps ramp-up a live agent.                                                                                                                       | `["Hi", "When does store open", "Can I return my item" ]` |
+| `va_ConversationId`                                          | Helps uniquely identify a bot conversation.                                                                                                       | `GUID`                                                    |
+| `va_AgentMessage`                                            | Helps ramp-up a live agent.                                                                                                                       | `"Got a gift from: HandoffTest"`                          |
+| `va_BotId`                                                   | Helps identify the bot that is handing off a conversation.                                                                                        | `GUID`                                                    |
+| `va_Language`                                                | Helps route escalation to a live agent.                                                                                                           | `"en-us"`                                                 |
+| All [user-defined topic variables](./authoring-variables.md) | Helps ramp-up a live agent.                                                                                                                       | `@StoreLocation = "Bellevue"`                             |
 
 A customer may go through several topics prior to escalating. Power Virtual Agents gathers all contextual variables across topics and merges them before sending to the engagement hub.
 

@@ -3,7 +3,7 @@ title: "Add a chatbot to a Power Apps Portal"
 description: "Add your bot to a Power Apps Portal so users can interact with it."
 keywords: "Publish, channel, connector, sample code, developer, extensibility, PVA"
 ms.date: 01/24/2022
-ms.service: power-virtual-agents
+
 ms.topic: article
 author: v-alarioza
 ms.author: v-alarioza
@@ -18,8 +18,8 @@ ms.collection: virtual-agent
 
 ## Prerequisites
 
-* [A Power Apps portal](/powerapps/maker/portals/create-portal)
-* [A Power Virtual Agents bot](/power-virtual-agents/authoring-first-bot)
+- [A Power Apps portal](/powerapps/maker/portals/create-portal)
+- [A Power Virtual Agents bot](/power-virtual-agents/authoring-first-bot)
 
 ## Add a bot to your Power Apps portal
 
