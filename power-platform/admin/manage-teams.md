@@ -1,13 +1,12 @@
 ---
 title: "Teams in Dataverse   | MicrosoftDocs"
 description: Understand the different types of teams and how to view and manage settings.
-
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/26/2021
-author: jimholtz
+ms.date: 02/18/2022
+author: paulliew
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: paulliew
 ms.reviewer: jimholtz
 ms.custom: "admin-security"
 search.audienceType: 
@@ -84,9 +83,13 @@ After you create the team, you can add team members and select corresponding sec
 
 2. Select an environment, and then select **Settings** > **Users + permissions** > **Teams**.
 
-3. Select a team, and then select **Edit team**. Only the **Team name**, **Description**, and **Administrator** are available for editing.
+3. Select a team.
 
-4. Update the fields as required, and then select **Update**.
+   :::image type="content" source="media/select-team.png" alt-text="Screenshot selecting a team.":::
+
+4. Select **Edit team**. Only the **Team name**, **Description**, and **Administrator** are available for editing.
+
+5. Update the fields as required, and then select **Update**.
 
    :::image type="content" source="media/dataverse-team-manage-edit.png" alt-text="Screenshot of editing a team.":::
 
