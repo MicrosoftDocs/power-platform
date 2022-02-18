@@ -1,14 +1,13 @@
 ---
 title: "Manage the encryption key | MicrosoftDocs"
 description: "Learn how you can manage database encryption key for your environment."
-
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 12/14/2021
-author: Mattp123
+author: mikferland-msft
 ms.subservice: admin
 ms.author: miferlan
-ms.reviewer: matp
+ms.reviewer: jimholtz
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
