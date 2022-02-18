@@ -110,11 +110,15 @@ Due to a product limitation, large Desktop Flows may not show up in the inventor
 
 We are able to collect only the intersect of all custom connectors outside of solutions, and all custom connectors to which you have access. As a result, custom connectors in a solution, to which the identity running the sync flows do not have access, will not show up in the inventory.
 
-## Inventory differences between PowerShell, Power Platform Admin Center, and CoE Starter Kit
+## Inventory and telemetry differences between PowerShell, Power Platform Admin Center, and CoE Starter Kit
 
 If you are using [PowerShell for Power Platform Administrators](/power-platform/admin/powershell-getting-started) and the [Power Platform Admin Center](/power-platform/admin/wp-work-with-admin-portals) together with the CoE Starter Kit, you may be noticing a discrepancy in inventory - for example, the number of apps returned by PowerShell looks different than the number of apps returned by the CoE Starter Kit.
 
 There are expected differences, and the below information should help you understand what to expect.
+
+### App usage
+
+The CoE Starter Kit will display usage (session and unique users) information as far back as to when the [audit log](setup-auditlog.md) was first set up, and gather data to show usage trends over time. The longer you have the CoE starter kit installed for, the more usage data will be gathered. The usage reports in the [Power Platform Admin Center](/admin/powerapps-analytics-reports#power-apps---usage-reports) show usage data for the past 28 days only.
 
 ### PowerShell
 
