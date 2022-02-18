@@ -63,8 +63,6 @@ There are several flows which will need to be turned on for the training in a da
 - Training in a day \| Feedback Reminder
 - Training in a day \| Registration Confirmation
 - Training in a day \| Reminder 3 days prior to event
-- Training in a day \| Create New Outlook Meeting
-- Training in a day \| Sync Outlook Event (Update & Delete)
 
 ### Share apps with admins and makers
 
@@ -120,8 +118,8 @@ More information:
 
 There are several flows which will need to be turned on for the Pulse feedback survey components to work:
 
-- Pulse [Child] - ost adaptive cards to maker
-- PUlse - Survey Makers for CoE feedback
+- Pulse [Child] - post adaptive cards to maker
+- Pulse - Survey Makers for CoE feedback
 
 ### Set up the Power BI dashboard to view feedback
 
