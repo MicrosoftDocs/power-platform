@@ -1,8 +1,7 @@
 ---
 title: "Restrict cross-tenant inbound and outbound access"
 description: "Use tenant restrictions to control access to SaaS cloud applications based on the Azure AD tenant. You can also enforce tenant isolation for Power Platform connections."  
-ms.date: 02/09/2022
-
+ms.date: 02/18/2022
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
@@ -116,7 +115,7 @@ You can also enter the value of the allowed tenant as either tenant domain or te
 
 Once the entry appears in the list, **Tenant ID** and **Azure AD tenant name** fields are displayed. Note that in Azure AD, tenant name is different from the tenant domain. The tenant name is unique for the tenant, but a tenant may have more than one domain name. 
 
-:::image type="content" source="media/new-tenant-rule-in-allow-list.png" alt-text="New tenant rule appears in allowlist.:::
+:::image type="content" source="media/new-tenant-rule-in-allow-list.png" alt-text="New tenant rule appears in allowlist.":::
 
 You can use "\*" as a special character to signify all tenants are allowed in the designated direction when tenant isolation is turned **On**. 
 
@@ -134,15 +133,15 @@ Users who create or edit a resource affected by the tenant isolation policy will
 
 :::image type="content" source="media/cross-tenant-error-one.png" alt-text="Error: The data didn't load correctly. Please try again.":::
 
-Similarly, Power Automate makers will see the following error when they try to save a flow that uses connections in a flow that is blocked by tenant isolation policies. The flow itself will be saved, but it will be marked as "Suspended" and won't be executed unless the maker resolves the DLP violation. 
+Similarly, Power Automate makers will see the following error when they try to save a flow that uses connections in a flow that is blocked by tenant isolation policies. The flow itself will be saved, but it will be marked as "Suspended" and won't be executed unless the maker resolves the data loss prevention policy (DLP) violation. 
 
 :::image type="content" source="media/cross-tenant-error-two.png" alt-text="Error: Couldn't retrieve values. The dynamic invocation request failed with error - error text.":::
 
 ## Runtime impact on apps and flows
 
-As an admin, you can decide to modify the tenant isolation policies for your tenant at any point. If apps and flows were created and executed in compliance with earlier tenant isolation policies, some of them might be negatively affected by any policy changes you make. Apps or flows that are in violation of the tenant isolation policy won't run successfully. For example, Run history within Power Automate indicates that the Flow run failed. Further, selecting the failed run will show details of the error.
+As an admin, you can decide to modify the tenant isolation policies for your tenant at any point. If apps and flows were created and executed in compliance with earlier tenant isolation policies, some of them might be negatively affected by any policy changes you make. Apps or flows that are in violation of the tenant isolation policy won't run successfully. For example, run history within Power Automate indicates that the flow run failed. Further, selecting the failed run will show details of the error.
 
-For existing flows that don’t run successfully because of the latest tenant isolation policy, Run history within Power Automate indicates that the Flow run failed. 
+For existing flows that don’t run successfully because of the latest tenant isolation policy, run history within Power Automate indicates that the flow run failed. 
 
 :::image type="content" source="media/flow-run-history.png" alt-text="Flow run history list.":::
 
