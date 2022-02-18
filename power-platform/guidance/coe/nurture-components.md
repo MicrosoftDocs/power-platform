@@ -27,24 +27,10 @@ The CoE nurture components solution contains assets relevant to everyone in the 
 
 ### Tables
 
-#### InADayAttendees
-
-Represents attendees that have registered for a Training in a Day course by using the Training in a Day Registration canvas app. The following information is available for each attendee:
-
-- Attendee email
-- Name
-- Registered event
-
-#### InADayEvent
-
-Represents available training events created through the Training in a Day Management canvas app. The following information is available for each event:
-
-- Name
-- Description
-- Start time
-- End time
-- Max attendees
-- Location
+| Name | Description |
+|------|---------------|
+| InADayAttendees | Represents attendees that have registered for a Training in a Day course by using the Training in a Day Registration canvas app. The following information is available for each attendee: attendee email, name and registered event |
+| InADayEvent | Represents available training events created through the Training in a Day Management canvas app. The following information is available for each event: name, description, start time, end time, max attendees and location |
 
 ### Flows
 
@@ -86,17 +72,11 @@ If you're planning to run a Training in a Day event, use this canvas app to enab
 
 ### Tables
 
-### Assessment Category
-
-Categories - such as Data, Audience, Support - used in the Maker Assessment app.
-
-### Assessment Questions
-
-Questions used in the Maker Assessment app.
-
-### Answer Options
-
-Potential answers to questions in the Maker Assessment app.
+| Name | Description |
+|------|---------------|
+| Assessment Category | Categories - such as Data, Audience, Support - used in the Maker Assessment app.|
+| Assessment Questions | Questions used in the Maker Assessment app. |
+| Answer Options | Potential answers to questions in the Maker Assessment app. |
 
 ### Apps
 
@@ -124,9 +104,9 @@ The Maker Assessment app can be used to ask users a series of questions regardin
 
 ### Tables
 
-#### Pulse Feedback
-
-Stores feedback received via Pulse feedback surveys.
+| Name | Description |
+|------|---------------|
+| Pulse Feedback | Stores feedback received via Pulse feedback surveys. |
 
 ### Flows
 
