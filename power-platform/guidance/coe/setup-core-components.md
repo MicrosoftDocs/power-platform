@@ -119,7 +119,7 @@ The following flows support the inventory setup and need to be turned on before 
 - DLP Editor > Parse impacted resources into CSV
 - Admin | Sync Template v3 (Connectors)
 
-Before proceeding, ensure that the Admin | Sync Template v3 Configure Emails flow runs.
+Before proceeding, ensure that the **Admin | Sync Template v3 Configure Emails** and **Admin | Sync Template v3 (Connectors)** flows runs and complete.
 
 ## Turn on inventory flows
 

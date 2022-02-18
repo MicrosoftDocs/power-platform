@@ -61,8 +61,6 @@ Using these steps, you'll set up an Azure AD app registration that will be used 
 
       ![Delegated permissions.](media/coe36.png "Delegated permissions")
 
-   1. Select **Application permissions**, and then select **ActivityFeed.Read**.
-
    1. Select **Add permissions**.
 
 1. Select **Grant Admin Consent for (your organization)**.
