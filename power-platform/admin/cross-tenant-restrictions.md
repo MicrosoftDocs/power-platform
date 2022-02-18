@@ -22,9 +22,6 @@ search.app:
   - Flow
 ---
 
-<!-- Please check the slight revisions in line 117 for accuracy. Also, will readers know what DLP is (line 137)? I question the capitalization of "Run history" and "Flow run" in lines 143 and 145; I find no style guidance on it - maybe you have a better source. Also, last I heard, our style is to use end punctuation on alt text, so I added it. -->
-
-
 # Cross-tenant inbound and outbound restrictions
 
 Microsoft Power Platform has a rich ecosystem of connectors based on Azure Active Directory (Azure AD) that allow authorized Azure AD users to build compelling apps and flows establishing connections to the business data available through these data stores. Tenant isolation makes it easy for administrators to ensure that these connectors can be harnessed in a safe and secure way within the tenant while minimizing the risk of data exfiltration outside the tenant. Tenant isolation allows admins to effectively govern the movement of tenant data from Azure AD authorized data sources to and from their tenant. 
