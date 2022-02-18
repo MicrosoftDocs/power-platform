@@ -99,9 +99,11 @@ After you create the team, you can add team members and select corresponding sec
 
 2. Select an environment, and then select **Settings** > **Users + permissions** > **Teams**.
 
-3. Select a team, and then select **Delete**. 
+3. Select a team.
 
-4. Select **Delete** to confirm. Note that this action can't be undone.
+   :::image type="content" source="media/select-team.png" alt-text="Screenshot selecting a team.":::
+
+4. Select **Delete** twice to confirm. Note that this action can't be undone.
 
 ### Manage team members
 
