@@ -139,6 +139,16 @@ After you create the team, you can add team members and select corresponding sec
 > - Team members are maintained in each group team at run-time and the operation is done at the database level; therefore, the update to group team event is not available for plugin.
 > - You do not need to assign team members with an individual security role if your group team's security role has a [member's privilege inheritance](security-roles-privileges.md#team-members-privilege-inheritance) and the security role contains at least one privilege that has User level permission.
 
+## Manage the security roles of a team
+
+1. Select a team, and then select **Manage security roles**. 
+
+2. Select the role or roles you want, and then select **Save**.
+
+   :::image type="content" source="media/dataverse-team-manage-security-roles.png" alt-text="Screenshot of managing security roles.":::
+
+
+
 ### See also
 [Manage teams](manage-teams.md) <br />
 [Video: Azure Active Directory group membership](https://youtu.be/GW2Rz53BX6o) 
