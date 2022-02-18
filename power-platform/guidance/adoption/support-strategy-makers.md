@@ -20,10 +20,10 @@ search.app:
 
 
 <! -- From the editor: 
-I don't see a section that describes "Power Platform Nurture team" in greater detail. 
-Type 7 is listed as "Worldwide community support," or just "community support," but the section is titled "Power Platform community support." We should use consistent labeling.
-Line 47 says "Each type of internal user support introduced above are described in further detail in this article," so I expected to only read about the first four types, but the article also includes the external types, so that line should be changed.
-Line 101 says to watch for how recent the information is. Is that because it might be old and out of date, or too new to be tested? Maybe make this clearer. -->
+<I don't see a section that describes "Power Platform Nurture team" in greater detail. 
+<Type 7 is listed as "Worldwide community support," or just "community support," but the section is titled "Power Platform community support." We should use consistent labeling.
+<Line 47 says "Each type of internal user support introduced above are described in further detail in this article," so I expected to only read about the first four types, but the article also includes the external types, so that line should be changed.
+<Line 101 says to watch for how recent the information is. Is that because it might be old and out of date, or too new to be tested? Maybe make this clearer. -->
 
 
 # Maker support
