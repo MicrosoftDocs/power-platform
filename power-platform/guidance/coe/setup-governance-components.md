@@ -108,6 +108,8 @@ Environment variables are used to store application and flow configuration data 
 | Compliance – Apps – Number Users Shared | If the app is shared with this many or more users, makers are asked for a business justification | 20 |
 | Compliance – Chatbots – Number Launches | If the chatbot is launched this many or more times, makers are asked for a business justification | 50 |
 | Exclude Default environment from Compliance Request flows | **(DEPRECATED)** Please use [exempt environments from the compliance process](#exempt-environments-from-the-compliance-process) instead. Set to Yes if you want to Exclude the Default environment from the Admin \| Compliance Details request flows | No |
+| Archival-PastTime-Interval | The interval for the past time for how far back to go to see if an app/flow is useful. | 6 |
+| Archival-PastTime-Unit | The units for the past time for how far back to go to see if an app/flow is useful. | Month |
 
 
 ## It looks like I found a bug with the CoE Starter Kit; where should I go?

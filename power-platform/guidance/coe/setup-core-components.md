@@ -39,7 +39,6 @@ We recommend that you create connections to all connectors used in the solution 
 1. Select your CoE environment, and go to **Data** > **Connections** > **+ New connection**.
 1. Create connections for the following:
     - [Approvals](/connectors/approvals/)
-    - [Azure AD](/connectors/azuread/)
     - [Microsoft Dataverse](/connectors/commondataserviceforapps/)
     - [Microsoft Dataverse (legacy)](/connectors/commondataservice/)
     - [Microsoft Teams](/connectors/teams/)
@@ -120,7 +119,8 @@ The following flows support the inventory setup and need to be turned on before 
 - DLP Editor > Parse impacted resources into CSV
 - Admin | Sync Template v3 (Connectors)
 
-Before proceeding, ensure that the Admin | Sync Template v3 Configure Emails flow runs.
+>[!IMPORTANT]
+> Before proceeding, ensure that the **Admin | Sync Template v3 Configure Emails** and **Admin | Sync Template v3 (Connectors)** flows runs and complete.
 
 ## Turn on inventory flows
 
