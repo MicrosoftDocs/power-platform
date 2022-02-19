@@ -44,7 +44,7 @@ Next, select either [local install](#local-install) or [Docker install](#docker-
 
 To run the CoE CLI application, you'll need to install the components below.
 
-1. An installation of Node 11+.
+1. An installation of Node 16+.
 
    a. [https://nodejs.org/en/download/](https://nodejs.org/en/download/)
 

@@ -42,7 +42,7 @@ The ALM Accelerator for Power Platform uses the created Azure Active Directory s
    coe alm user add -e https://contoso-dev-user1.crm.dynamics.com
    ```
 
-More information: [CoE ALM user add](https://github.com/microsoft/coe-starter-kit/blob/main/coe-cli/docs/help/aa4am/user/add.md)
+More information: [CoE ALM user add](https://aka.ms/coe-cli/help/alm/user/add)
 
 ## Maker create solution
 
@@ -84,9 +84,13 @@ NOTES:
 
 1. If the repository you want to create a branch for is empty, you'll need to commit an initial commit before a branch can be created.
 
-1. Open ALM Accelerator for Advanced Maker application.
+1. Open ALM Accelerator for Power Platform application.
 
-1. Select **Push change to Git**.
+1. Create a new profile for the solution by selecting the Organization, Project, Repo and Target Branch.
+
+1. Enter the target validation, test and production environment urls and save your profile.
+
+1. Select **COMMIT SOLUTION**.
 
    a. Create a new Branch, for example, *MySolution1-WIP*.
 
