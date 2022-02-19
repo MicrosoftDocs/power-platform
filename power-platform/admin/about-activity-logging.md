@@ -23,15 +23,16 @@ search.app:
 ---
 # About activity logging
 
-Activity Logging logs user and admin activities across Dynamics 365 and Power Platform:
-• Management in a central location on the portal: Administrators can now manage settings and activity reporting for all environments within the “Security & Compliance Center” Previously, Audit Logging was set up separately within each environment.
-• All data in the system is now logged: All data transactions
+You can use activity logging to record user and admin activities across Dynamics 365 and Power Platform. The benefits of activity logging include:
+
+- Management in a central location on the portal: Administrators can now manage settings and activity reporting for all environments within the [Microsoft 365 Security and Compliance Center](https://protection.office.com/homepage). Previously, audit logging was set up separately within each environment.
+- All data in the system is now logged: All data transactions
 including plugin operations, entity operations, bulk operations, user login/out sessions, and even Microsoft Support Personnel operations are logged by this new functionality.
-• Configurable Alert Policies: The system can now be set up to notify administrators or Compliance Officers of certain events, according to configurable settings.
-• Audit Log Search capability: Administrators can now easily query audit logs via predefined or custom filters.
-• Analyze suspicious behavior with Security Information and Event Management (SIEM): Functioning in near real-time, the SIEM will work to analyze and alert administrators of possible suspicious behavior within the system and provide actions to address these events.
-• SIEM Vendor Integration: Dynamics 365 now provides out-of-box integration with multiple SIEM vendors such as ArcLight, Microsoft OMS, Okta, SumoLogic, BetterCloud, and standard CEF format integration for many others.
-• Minimized impact to system performance: This new Activity Logging Management functionality has a smaller footprint on system resources compared to the previous Audit Log functionality.
+- Configurable Alert Policies: The system can now be set up to notify administrators or Compliance Officers of certain events, according to configurable settings.
+- Audit Log Search capability: Administrators can now easily query audit logs via predefined or custom filters.
+- Analyze suspicious behavior with Security Information and Event Management (SIEM): Functioning in near real-time, the SIEM will work to analyze and alert administrators of possible suspicious behavior within the system and provide actions to address these events.
+- SIEM Vendor Integration: Dynamics 365 now provides out-of-box integration with multiple SIEM vendors such as ArcLight, Microsoft OMS, Okta, SumoLogic, BetterCloud, and standard CEF format integration for many others.
+- Minimized impact to system performance: This new Activity Logging Management functionality has a smaller footprint on system resources compared to the previous Audit Log functionality.
 POWER PLATFORM AND DYNAMICS 365 APPS | A GUIDE TO SECURITY AND COMPLIANCE
 2021
 49

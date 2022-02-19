@@ -119,7 +119,7 @@ After you create the team, you can add team members and select corresponding sec
 
 3. Select an environment, and then select **Settings** > **Users + permissions** > **Teams**.
 
-4. Select a team.
+4. Select the checkbox for a team name.  
 
    :::image type="content" source="media/select-team.png" alt-text="Screenshot selecting a team.":::
 
@@ -130,6 +130,7 @@ After you create the team, you can add team members and select corresponding sec
    :::image type="content" source="media/dataverse-team-manage-edit.png" alt-text="Screenshot of editing a team.":::
 
 > [!NOTE]
+> - To edit the Business Unit, see [Change the business unit for a team](create-edit-business-units.md#change-the-business-unit-for-a-team).
 > - You can create Dataverse group teams - **Members**, **Owners**, **Guests**, and **Members and Guests** per environment based on the Azure AD group membership type for each Azure AD group. The Azure AD ObjectId of the group team cannot be edited once the group team is created.
 > - The Dataverse Membership Type cannot be changed after the group team is created.  If you need to update this field, you'll need to delete the group team and create a new one.
 > - All existing group teams created prior to the new **Membership Type** field being added are automatically updated as **Members and guests**. There is no loss in functionality with these group teams as the default group team is mapped to the Azure AD Group **Members and guests** membership type. 
@@ -141,7 +142,7 @@ After you create the team, you can add team members and select corresponding sec
 
 ## Manage the security roles of a team
 
-1. Select a team. 
+1. Select the checkbox for a team name.  
 
    :::image type="content" source="media/select-team.png" alt-text="Screenshot selecting a team.":::
 

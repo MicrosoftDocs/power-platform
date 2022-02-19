@@ -83,11 +83,11 @@ After you create the team, you can add team members and select corresponding sec
 
 2. Select an environment, and then select **Settings** > **Users + permissions** > **Teams**.
 
-3. Select a team.
+3. Select the checkbox for a team name.  
 
    :::image type="content" source="media/select-team.png" alt-text="Screenshot selecting a team.":::
 
-4. Select **Edit team**. Only the **Team name**, **Description**, and **Administrator** are available for editing.
+4. Select **Edit team**. **Team name**, **Description**, and **Administrator** are available for editing. To edit the Business Unit, see [Change the business unit for a team](create-edit-business-units.md#change-the-business-unit-for-a-team).
 
 5. Update the fields as required, and then select **Update**.
 
@@ -99,7 +99,7 @@ After you create the team, you can add team members and select corresponding sec
 
 2. Select an environment, and then select **Settings** > **Users + permissions** > **Teams**.
 
-3. Select a team.
+3. Select the checkbox for a team name.  
 
    :::image type="content" source="media/select-team.png" alt-text="Screenshot selecting a team.":::
 
@@ -116,9 +116,13 @@ You can add and delete members from a team.
 
 2. Select an environment, and then select **Settings** > **Users + permissions** > **Teams**.
 
-3. Select a team, and then select **Manage team members**. 
+3. Select the checkbox for a team name.  
 
-4. Do one of the following:
+   :::image type="content" source="media/select-team.png" alt-text="Screenshot selecting a team.":::
+
+4. Select **Manage team members**. 
+
+5. Do one of the following:
 
    - To add new team members, select **+ Add team members** and then specify users.
 
@@ -135,7 +139,7 @@ You can add and delete members from a team.
 
 ### Manage the security roles of a team
 
-1. Select a team. 
+1. Select the checkbox for a team name.  
 
    :::image type="content" source="media/select-team.png" alt-text="Screenshot selecting a team.":::
 
@@ -147,7 +151,7 @@ You can add and delete members from a team.
 
 
 ### See also
-
+ [Change the business unit for a team](create-edit-business-units.md#change-the-business-unit-for-a-team)
  [Create a team template and add to an entity form](create-team-template-add-entity-form.md)   
  [Manage group teams](manage-group-teams.md)   
  [About team templates](../admin/about-team-templates.md)   
