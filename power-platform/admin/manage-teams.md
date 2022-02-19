@@ -87,7 +87,7 @@ After you create the team, you can add team members and select corresponding sec
 
    :::image type="content" source="media/select-team.png" alt-text="Screenshot selecting a team.":::
 
-4. Select **Edit team**. **Team name**, **Description**, and **Administrator** are available for editing. To edit the Business Unit, see [Change the business unit for a team](create-edit-business-units.md#change-the-business-unit-for-a-team).
+4. Select **Edit team**. **Team name**, **Description**, and **Administrator** are available for editing. To edit **Business unit**, see [Change the business unit for a team](create-edit-business-units.md#change-the-business-unit-for-a-team).
 
 5. Update the fields as required, and then select **Update**.
 
