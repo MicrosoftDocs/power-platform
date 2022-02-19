@@ -137,6 +137,8 @@ Make sure you have the System Administrator permission to update the setting.
   
 2. Select the checkbox for a team name.  
   
+   :::image type="content" source="media/select-team.png" alt-text="Screenshot selecting a team.":::
+
 3. On the menu bar, select **Change Business Unit**.  
   
 4. In the **Change Business Unit** dialog box, select a business unit. Enable **Move records to new business unit** to move to a new business unit. Select **OK**. 
