@@ -422,7 +422,7 @@ This flow is triggered automatically if the app quarantine status field of the P
 
 This field
 
-- is et to **Yes** by the Admin \| Quarantine non-compliant apps.
+- is set to **Yes** by the Admin \| Quarantine non-compliant apps.
 - can be updated to either **Yes** or **No** manually by the admin from the [Power Platform Admin View](core-components.md#power-platform-admin-view)., to quarantine apps or release apps from quarantine.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
