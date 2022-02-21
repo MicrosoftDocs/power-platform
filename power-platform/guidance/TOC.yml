@@ -126,6 +126,8 @@
         href: coe/setup-teams-components.md  
       - name: Set up cleanup for orphaned resources
         href: coe/setup-orphan-components.md 
+      - name: Set up app quarantine components
+        href: coe/setup-quarantine-components.md 
       - name: Collect audit log data
         href: coe/setup-auditlog.md
       - name: Set-up Power BI reporting
