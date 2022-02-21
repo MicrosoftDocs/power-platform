@@ -74,8 +74,8 @@ If your solution is installed in a production environment, your app will be a mo
 
 Turn on the following flows, which are installed as part of the governance components solution:
 
-- [Admin | Quarantine non-compliant apps](governance-components.md#admin--setup---ignored-archival-requests)
-- [Admin | Set app quarantine status](governance-components.md#admin--archive-and-clean-up-v2-check-approval)
+- [Admin | Quarantine non-compliant apps](governance-components.md#admin--quarantine-non-compliant-apps)
+- [Admin | Set app quarantine status](governance-components.md#admin--set-app-quarantine-status)
 
 ## All environment variables
 

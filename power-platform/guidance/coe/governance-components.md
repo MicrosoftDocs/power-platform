@@ -402,8 +402,8 @@ It performs the action on the actual object in the tenant and also updates the i
 
 | Flow | Type | Schedule |
 | --- | --- | --- |
-|[Admin \| Quarantine non-compliant apps](#microsoft-teams-admin--ask-for-business-justification-when-microsoft-teams-environment-is-created) | Scheduled |  Daily |
-| [Admin \| Set app quarantine status](#microsoft-teams-admin--weekly-clean-up-of-microsoft-teams-environments) | Automated | when the Quarantine App field in the PowerApps App table is changed |
+|[Admin \| Quarantine non-compliant apps](#admin--quarantine-non-compliant-apps) | Scheduled |  Daily |
+| [Admin \| Set app quarantine status](#admin--set-app-quarantine-status) | Automated | when the Quarantine App field in the PowerApps App table is changed |
 
 #### Admin \| Quarantine non-compliant apps
 
