@@ -150,7 +150,7 @@ If you previously had connected a bot to your omnichannel instance (before Novem
 Authentication is not supported for voice-based hand off to omnichannel instances. If you've set up authentication for the bot, the [authentication variables](advanced-end-user-authentication.md) will not contain authentication information in them when sent to your omnichannel instance.
 
 > [!WARNING]
-> For voice-based hand off capabilities, both your bot and omnichannel environments must be hosted in a datacenter within the [United States, Europe, Asia, or Australia geographies](data-location.md#data-locations).
+> For voice-based handoff capabilities, both your bot and omnichannel environments must be hosted in a datacenter within the [United States, Europe, Asia, or Australia geographies](data-location.md#data-locations).
 >
 > If the environment (or environments) you use for your bot or omnichannel instance aren't in a supported region, voice capabilities will not work and there will be no error messages or warnings.
 
@@ -170,7 +170,7 @@ This action can be used to ask the caller if they are willing to take a survey a
 
     :::image type="content" source="media\configuration-hand-off-omnichannel\handoff-voice-config-survey-consent-add.png" alt-text="Add set survey content action.":::
 
-1. Select an **yes** or **no**. You can also directly enter the value that should be used.
+1. Select **yes** or **no**. You can also directly enter the value that should be used.
 
     :::image type="content" source="media\configuration-hand-off-omnichannel\handoff-voice-config-survey-consent.png" alt-text="Set input for set survey content action.":::
 
@@ -186,7 +186,7 @@ This action can be used to ask the caller for their preferred language.
 
 1. Select an existing variable that defines the locale code, or directly enter the locale code that should be used.
 
-    Refer to [Omnichannel's supported languages](/dynamics365/customer-service/voice-channel-multi-language-contact-center#supported-languages-and-locale-codes) for valid locale codes, but note that the full list is not supported in Power Virtual Agents. See [Supported languages](authoring-language-support.md#list-of-supported-languages) for more information.
+    Refer to [omnichannel's supported languages](/dynamics365/customer-service/voice-channel-multi-language-contact-center#supported-languages-and-locale-codes) for valid locale codes. Note that the full list is not supported in Power Virtual Agents. See [Supported languages](authoring-language-support.md#list-of-supported-languages) for more information.
 
     :::image type="content" source="media\configuration-hand-off-omnichannel\handoff-voice-config-set-locale.png" alt-text="Set input for Set customer locale and handoff to Omnichannel action.":::
 
