@@ -3,7 +3,7 @@ title: "Manage group teams  | MicrosoftDocs"
 description: About managing group teams 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/18/2022
+ms.date: 02/22/2022
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
@@ -151,6 +151,14 @@ After you create the team, you can add team members and select corresponding sec
 3. Select the role or roles you want, and then select **Save**.
 
    :::image type="content" source="media/dataverse-team-manage-security-roles.png" alt-text="Screenshot of managing security roles.":::
+
+## Other team actions  
+See:
+- [Manage team members](manage-teams.md#manage-team-members)
+- [Change the business unit for a team](create-edit-business-units.md#change-the-business-unit-for-a-team)
+- [Delete a team](manage-teams.md#delete-a-team)
+- [Change the business unit for a team](manage-teams.md#change-the-business-unit-for-a-team)
+
 
 
 
