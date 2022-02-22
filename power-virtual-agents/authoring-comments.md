@@ -17,8 +17,7 @@ searchScope:
 
 # Add comments to bots (Preview)
 
-- [!INCLUDE [Preview documentation notice](includes/cc-beta-prerelease-disclaimer.md)]
-
+[!INCLUDE [Preview documentation notice](includes/cc-beta-prerelease-disclaimer.md)]
 
 Comments are notes that are associated with items in your bot. Use comments to help your team collaborate on the bot and provide feedback, or provide additional information on implementation details in your bot.  
 
