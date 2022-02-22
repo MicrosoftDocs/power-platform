@@ -3,7 +3,7 @@ title: "Teams in Dataverse   | MicrosoftDocs"
 description: Understand the different types of teams and how to view and manage settings.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/18/2022
+ms.date: 02/22/2022
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
@@ -93,18 +93,6 @@ After you create the team, you can add team members and select corresponding sec
 
    :::image type="content" source="media/dataverse-team-manage-edit.png" alt-text="Screenshot of editing a team.":::
 
-### Delete a team
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
-
-2. Select an environment, and then select **Settings** > **Users + permissions** > **Teams**.
-
-3. Select the checkbox for a team name.  
-
-   :::image type="content" source="media/select-team.png" alt-text="Screenshot selecting a team.":::
-
-4. Select **Delete** twice to confirm. Note that this action can't be undone.
-
 ### Manage team members
 
 You can add and delete members from a team.
@@ -149,6 +137,20 @@ You can add and delete members from a team.
 
    :::image type="content" source="media/dataverse-team-manage-security-roles.png" alt-text="Screenshot of managing security roles.":::
 
+### Delete a team
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
+
+2. Select an environment, and then select **Settings** > **Users + permissions** > **Teams**.
+
+3. Select the checkbox for a team name.  
+
+   :::image type="content" source="media/select-team.png" alt-text="Screenshot selecting a team.":::
+
+4. Select **Delete** twice to confirm. Note that this action can't be undone.
+
+## Change the business unit for a team  
+See [Change the business unit for a team](create-edit-business-units.md#change-the-business-unit-for-a-team).
 
 ### See also
  [Change the business unit for a team](create-edit-business-units.md#change-the-business-unit-for-a-team)
