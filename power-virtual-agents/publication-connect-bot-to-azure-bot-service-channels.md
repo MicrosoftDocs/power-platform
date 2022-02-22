@@ -12,7 +12,7 @@ ms.custom: "publication, azure, ceX"
 ms.collection: virtual-agent
 ---
 
-# Add Power Virtual Agents bot to Azure Bot Service channels
+# Add Power Virtual Agents bot to Azure Bot Service channels (Preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 

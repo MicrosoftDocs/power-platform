@@ -13,7 +13,7 @@ ms.custom: "advanced-authoring, ceX"
 ms.collection: virtual-agent
 ---
 
-# Enable advanced AI features in Power Virtual Agents
+# Enable advanced AI features in Power Virtual Agents (Preview)
 
 [!INCLUDE [Preview documentation notice](includes/cc-beta-prerelease-disclaimer.md)]
 

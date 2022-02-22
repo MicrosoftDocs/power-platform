@@ -12,7 +12,7 @@ ms.custom: "publication, azure, ceX"
 ms.collection: virtual-agent
 ---
 
-# Add bot to mobile and custom apps
+# Add bot to mobile and custom apps (Preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
