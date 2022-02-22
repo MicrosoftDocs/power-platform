@@ -2,7 +2,7 @@
 title: Back up and restore environments | Microsoft Docs
 description: Covers how to back up and restore environments
 services: powerapps
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 12/13/2021

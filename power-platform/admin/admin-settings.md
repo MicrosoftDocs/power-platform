@@ -2,7 +2,7 @@
 title: "Manage Microsoft Dataverse settings  | MicrosoftDocs"
 description: View and manage Microsoft Dataverse settings.
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/11/2022

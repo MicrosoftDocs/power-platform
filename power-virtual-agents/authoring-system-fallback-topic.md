@@ -3,7 +3,7 @@ title: "Use a system fallback topic"
 description: "A system fallback topic can be triggered when the bot doesn't understand the user's questions."
 keywords: "PVA"
 ms.date: 01/25/2022
-ms.service: power-virtual-agents
+
 ms.topic: article
 author: iaanw
 ms.author: iawilt

@@ -2,7 +2,7 @@
 title: "Set up OneNote integration  | MicrosoftDocs"
 description: Learn how to integrate OneNote with customer engagement apps
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 11/10/2020

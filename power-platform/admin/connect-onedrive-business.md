@@ -2,7 +2,7 @@
 title: "Enable OneDrive for Business (on-premises)  | MicrosoftDocs"
 description: Enable OneDrive for Business (on-premises)
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/04/2020

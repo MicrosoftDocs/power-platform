@@ -5,7 +5,7 @@ author: meeramahabala
 ms.subservice: admin
 ms.author: meeram
 ms.reviewer: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 08/24/2021 

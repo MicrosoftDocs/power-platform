@@ -3,7 +3,7 @@ title: "Advanced authoring of chatbots"
 description: "Go beyond basic authoring by using slot filling, entities, variables, sign-in, live hand-off, and Power Automate flows."
 keywords: "PVA"
 ms.date: 3/1/2021
-ms.service: power-virtual-agents
+
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -33,7 +33,7 @@ You can go beyond basic authoring in Power Virtual Agents by taking advantage of
 
 ## Prerequisites
 
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)
+- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 
 ## In this section
 

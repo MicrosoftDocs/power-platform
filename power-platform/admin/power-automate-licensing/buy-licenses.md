@@ -2,7 +2,7 @@
 title: "Buy Power Automate licenses"
 description: "Buy Power Automate licenses."
 author: PriyaKodukula
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: overview
 ms.date: 10/06/2021

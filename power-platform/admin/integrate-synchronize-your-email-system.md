@@ -2,7 +2,7 @@
 title: "Integrate (synchronize) your email system  | MicrosoftDocs"
 description: Integrate (synchronize) your email system
 author: mduelae
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: overview
 

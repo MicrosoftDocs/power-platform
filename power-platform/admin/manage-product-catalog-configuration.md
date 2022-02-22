@@ -2,7 +2,7 @@
 title: "Manage product catalog configuration   | MicrosoftDocs"
 description: Manage product catalog configuration 
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/17/2021

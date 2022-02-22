@@ -3,7 +3,7 @@ title: "Nurture components | MicrosoftDocs"
 description: "The CoE nurture components solution contains assets to share best practices and templates, and onboard new makers"
 author: manuelap-msft
 manager: devkeydet
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/13/2021

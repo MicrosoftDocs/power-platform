@@ -3,7 +3,7 @@ title: PowerShell support | Microsoft Docs
 description: Description of the different PowerShell cmdlets and a walkthrough of how to install and run them.
 author: jimholtz
 ms.reviewer: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: reference
 ms.date: 02/14/2022

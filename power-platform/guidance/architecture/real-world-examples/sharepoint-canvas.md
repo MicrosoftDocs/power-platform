@@ -2,7 +2,7 @@
 title: "Using the SharePoint connector with canvas apps in Power Apps  | MicrosoftDocs"
 description: SharePoint is a great data source for organizations with a strong Microsoft 365 practice who are starting their journey with Power Apps. As an example, Standard Bank built a canvas app with SharePoint for inspecting ATMs.
 author: slaouist
-ms.service: power-platform
+
 ms.subservice: guidance
 ms.topic: conceptual
 ms.date: 08/10/2021

@@ -2,7 +2,7 @@
 title: "System Settings General tab  | MicrosoftDocs"
 description: System Settings General tab 
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/17/2021

@@ -3,7 +3,7 @@ title: "Use Bot Framework Composer to display an options list in chatbots"
 description: "Use Bot Framework Composer to add multi-select options to your Power Virtual Agents chatbot."
 keywords: "composer, adaptive card"
 ms.date: 01/25/2022
-ms.service: power-virtual-agents
+
 ms.topic: article
 author: iaanw
 ms.author: iawilt

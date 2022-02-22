@@ -3,7 +3,7 @@ title: Programmability and Extensibility - PowerShell - Creating a service princ
 description: PowerShell for Power Platform Administrators and service principal authentication
 author: laneswenka
 ms.reviewer: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: reference
 ms.date: 03/19/2021

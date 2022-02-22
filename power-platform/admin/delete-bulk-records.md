@@ -2,7 +2,7 @@
 title: "Delete bulk records  | MicrosoftDocs"
 description: Delete bulk records 
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/18/2022
