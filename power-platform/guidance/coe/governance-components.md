@@ -416,6 +416,8 @@ This flow runs on a schedule and checks if any apps need quarantining based on t
 
 For any apps matching the above criteria, the app quarantine status is set to **Yes**. Note that a maker submitting compliance details via the [Developer Compliance Center](#developer-compliance-center) does not automatically release their app from quarantine, an admin will have to perform a risk assessment and manually release the app from quarantine using the [Power Platform Admin View](core-components.md#power-platform-admin-view).
 
+To release an app from quarantine, use the [Power Platform Admin View](core-components.md#power-platform-admin-view) to set the **Quarantine App** field to **No** and mark the **Admin Requirement - Risk Assessment State** as **Complete**.
+
 #### Admin \| Set app quarantine status
 
 This flow is triggered automatically if the app quarantine status field of the PowerApps App table is updated.
