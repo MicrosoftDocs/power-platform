@@ -19,7 +19,7 @@ With Power Virtual Agents, you can hand off conversations to live agents seamles
 
 When you hand off a conversation, you share the full history of the conversation (the context) as well as all user-defined variables. Having access to this context means live agents that are using any connected engagement hub can be notified that a conversation requires a live agent, see the context of the prior conversation, and resume the conversation.
 
-For more information about how to configure hand-off with [Omnichannel for Customer Service](/dynamics365/customer-service/configure-bot-virtual-agent), see the [Configure hand-off to Omnichannel for Customer Service](configuration-hand-off-omnichannel.md) topic.
+For more information about how to configure hand-off with [omnichannel for Customer Service](/dynamics365/customer-service/configure-bot-virtual-agent), see the [Configure hand-off to omnichannel for Customer Service](configuration-hand-off-omnichannel.md) topic.
 
 >
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4n4G1]
@@ -38,7 +38,7 @@ For more information about how to configure hand-off with [Omnichannel for Custo
 ## Prerequisites
 
 - You need a bot built with [Power Virtual Agents](https://aka.ms/TryPVA)
-- You need to have an engagement hub that is being used by live agents, such as [Omnichannel for Customer Service](/dynamics365/omnichannel/try-channels), and you need to configure the connection, as described in [Configure hand-off to Omnichannel for Customer Service](configuration-hand-off-omnichannel.md).
+- You need to have an engagement hub that is being used by live agents, such as [omnichannel for Customer Service](/dynamics365/omnichannel/try-channels), and you need to configure the connection, as described in [Configure hand-off to omnichannel for Customer Service](configuration-hand-off-omnichannel.md).
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 
 ## Triggering hand-off to a live agent

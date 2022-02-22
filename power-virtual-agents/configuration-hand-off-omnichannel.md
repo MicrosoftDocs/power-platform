@@ -69,7 +69,7 @@ Sign in to the Power Virtual Agents bot you want to connect to your omnichannel 
     :::image type="content" source="media/configuration-hand-off-omnichannel/handoff-settings.png" alt-text="IMAGE-SHOWING-SETTINGS-PANE-OPENED.":::
 
 1. Select **Enable**.
-    - If you haven't installed any of the [extension solutions required for hand off](#install-extension-solutions), you'll see a notification that your bot doesn't have access to the variables or actions needed for hand off to omnichannel. You must [install at least the omnichannel extension solution](#install-extension-solutions) for hand off to Omnichannel to work.  
+    - If you haven't installed any of the [extension solutions required for hand off](#install-extension-solutions), you'll see a notification that your bot doesn't have access to the variables or actions needed for hand off to omnichannel. You must [install at least the omnichannel extension solution](#install-extension-solutions) for hand off to omnichannel to work.  
 
         :::image type="content" source="media/configuration-hand-off-omnichannel/handoff-no-extension.png" alt-text="Notification at the top of the omnichannel configuration pane that says your bot doesn't have access.":::
 
@@ -97,7 +97,7 @@ After you've configured the connection, you'll see your bot in the **Omnichannel
 You can also toggle voice capabilities on or off.
 
 > [!IMPORTANT]
-> If you want to test the bot on your custom website, you must use the embed code that is specified in the chat widget you set up in Omnichannel (see [Embed chat widget in your website or portal](/dynamics365/customer-service/embed-chat-widget-portal) for more information). If you use the embed code from the Power Virtual Agents site, hand-off will not occur correctly.
+> If you want to test the bot on your custom website, you must use the embed code that is specified in the chat widget you set up in omnichannel (see [Embed chat widget in your website or portal](/dynamics365/customer-service/embed-chat-widget-portal) for more information). If you use the embed code from the Power Virtual Agents site, hand-off will not occur correctly.
 
 <a id="managed-bot-oc"></a>
 
@@ -174,7 +174,7 @@ This action can be used to ask the caller if they are willing to take a survey a
 
     :::image type="content" source="media\configuration-hand-off-omnichannel\handoff-voice-config-survey-consent.png" alt-text="Set input for set survey content action.":::
 
-### Set customer locale and handoff to Omnichannel
+### Set customer locale and handoff to omnichannel
 
 This action can be used to ask the caller for their preferred language.
 
@@ -182,13 +182,13 @@ This action can be used to ask the caller for their preferred language.
 
 1. Select **Add input for destination topic** and then **customerLocale (string)**.
 
-    :::image type="content" source="media\configuration-hand-off-omnichannel\handoff-voice-config-set-locale-add.png" alt-text="Add Set customer locale and handoff to Omnichannel action.":::
+    :::image type="content" source="media\configuration-hand-off-omnichannel\handoff-voice-config-set-locale-add.png" alt-text="Add Set customer locale and handoff to omnichannel action.":::
 
 1. Select an existing variable that defines the locale code, or directly enter the locale code that should be used.
 
     Refer to [omnichannel's supported languages](/dynamics365/customer-service/voice-channel-multi-language-contact-center#supported-languages-and-locale-codes) for valid locale codes. Note that the full list is not supported in Power Virtual Agents. See [Supported languages](authoring-language-support.md#list-of-supported-languages) for more information.
 
-    :::image type="content" source="media\configuration-hand-off-omnichannel\handoff-voice-config-set-locale.png" alt-text="Set input for Set customer locale and handoff to Omnichannel action.":::
+    :::image type="content" source="media\configuration-hand-off-omnichannel\handoff-voice-config-set-locale.png" alt-text="Set input for Set customer locale and handoff to omnichannel action.":::
 
 ### Send uninterruptible voice message
 
