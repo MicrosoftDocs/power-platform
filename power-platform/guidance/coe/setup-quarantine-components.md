@@ -20,7 +20,7 @@ search.app:
 
 # Set up app quarantine components
 
-This article will help you to set up the app quarantine components of the governance solution. A quarantined app will present end users that launch the app a message indicating they’re unable to access the app. Learn more: [Manage app quarantine state](/admin/admin-manage-apps#manage-app-quarantine-state-preview)
+This article will help you to set up the app quarantine components of the governance solution. A quarantined app will present end users that launch the app a message indicating they’re unable to access the app. This feautre is currently only available for canvas apps. Learn more: [Manage app quarantine state](/admin/admin-manage-apps#manage-app-quarantine-state-preview)
 
 >[!IMPORTANT]
 >This article assumes you have [installed the governance components solution](before-setup-gov.md), and you have your [environment set up](setup.md#create-your-environment) and are signed in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
@@ -55,7 +55,7 @@ If your solution is installed in a production environment, your app will be a mo
     >Due to the impact of quarantining apps, all environments are initially exempt from the quarantine process and you will have to manually update environments to include them in the quarantine process.
 1. Select **Save**.
 
-   ![Exclude an environment from the archive process in a production environment.](media/coe-archive2.png "Exclude an environment from the compliance process in a production environment")
+   ![Exclude an environment from the app quarantine process in a production environment.](media/quarantine1.png "Exclude an environment from the app quarantine process in a production environment")
 
 ### Dataverse for Teams environment
 
@@ -68,7 +68,7 @@ If your solution is installed in a production environment, your app will be a mo
     >Due to the impact of quarantining apps, all environments are initially exempt from the quarantine process and you will have to manually update environments to include them in the quarantine process.
 1. Select **Save**.
 
-   ![Exclude an environment from the archive process in Dataverse for Teams.](media/coe-archive1.png "Exclude an environment from the archive process in Dataverse for Teams")
+   ![Exclude an environment from the app quarantine process in Dataverse for Teams.](media/quarantine2.png "Exclude an environment from the app quarantine process in Dataverse for Teams")
 
 ## Turn on flows
 

@@ -427,4 +427,18 @@ This field
 - is set to **Yes** by the Admin \| Quarantine non-compliant apps.
 - can be updated to either **Yes** or **No** manually by the admin from the [Power Platform Admin View](core-components.md#power-platform-admin-view)., to quarantine apps or release apps from quarantine.
 
+This flow sets to quarantine status of the app.
+
+If the app is quarantined, an email is sent to the maker to inform them their app can no longer be launched:
+
+![The app makers gets an email notification to inform them their app has been quarantined, and to ask them to submit compliance details in the Developer Compliance Center app.](media/quarantine4.png "The app makers gets an email notification to inform them their app has been quarantined, and to ask them to submit compliance details in the Developer Compliance Center app.")
+
+If the app is released from quarantine, an email is sent to the maker to inform them the app is available for use again:
+
+![The app makers gets an email notification to inform them their app has been released from quarantine.](media/quarantine3.png "The app makers gets an email notification to inform them their app has been released from quarantine.")
+
+Apps that are quarantined are also flagged in the [Developer Compliance Center](#developer-compliance-center):
+
+![Quarantined apps are highlighted as such in the Developer Compliance Center app.](media/quarantine5.png "Quarantined apps are highlighted as such in the Developer Compliance Center app.")
+
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
