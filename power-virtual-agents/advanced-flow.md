@@ -55,7 +55,7 @@ Flows typically use variables to input and output information. The variables can
 
     You can also select an existing flow from the list and it will automatically be added to the authoring canvas.
 
-    :::image type="content" source="media/FlowInActionPicker.png" alt-text="New flow shows up in Action picker.":::
+    :::image type="content" source="media/advanced-flow/FlowInActionPicker.png" alt-text="New flow shows up in Action picker.":::
 
 Using the **Create a flow** option opens a starter flow template in the [Power Automate portal](https://flow.microsoft.com/) in a separate tab. The portal automatically opens in the same environment as the bot and uses the same user credentials.
 
