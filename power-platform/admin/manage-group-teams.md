@@ -152,10 +152,12 @@ After you create the team, you can add team members and select corresponding sec
 
    :::image type="content" source="media/dataverse-team-manage-security-roles.png" alt-text="Screenshot of managing security roles.":::
 
+## Change the business unit for a team  
+See [Change the business unit for a team](create-edit-business-units.md#change-the-business-unit-for-a-team).
+
 ## Other team operations  
 See:
 - [Manage team members](manage-teams.md#manage-team-members)
-- [Change the business unit for a team](create-edit-business-units.md#change-the-business-unit-for-a-team)
 - [Delete a team](manage-teams.md#delete-a-team)
 - [Change the business unit for a team](manage-teams.md#change-the-business-unit-for-a-team)
 
