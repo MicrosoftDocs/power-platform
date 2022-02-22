@@ -96,7 +96,7 @@ Leave the Azure portal open, because you'll need to copy some information when y
 
 1. Go to [make.powerapps.com](https://make.powerapps.com).
 
-1. Go to your target environment. <!--note from editor: Removing "In the example in the following image, we're importing to the environment named **Contoso CoE**." because the image seems to be missing.-->
+1. Go to your target environment.
 
 1. Create connections to all connectors used as part of the solution.
     1. Go to **Data** > **Connections**.
@@ -133,7 +133,7 @@ Leave the Azure portal open, because you'll need to copy some information when y
 
 1. Go to [make.powerapps.com](<https://make.powerapps.com>).
 1. On the left pane, select **Solutions**.
-1. Select the **Power Platform GitHub ALM** solution, and then open the **ALM Accelerator Admin Configuration** app.<!--note from editor: I assume "ALM Accelerator Admin app" is the valid (legacy) name?-->
+1. Select the **Power Platform GitHub ALM** solution, and then open the **ALM Accelerator Admin Configuration** app.
 
 ![Configure environment settings and deployment stages after import by using the ALM Accelerator Admin app.](media/git-24.png "Configure environment settings and deployment stages after import by using the ALM Accelerator Admin app.")
 

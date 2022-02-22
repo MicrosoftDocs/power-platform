@@ -47,7 +47,7 @@ This setup guide is structured into seven main sections:
 - [**Solution setup**](#solution-setup): These steps are specific to each solution you wish to support with the ALM accelerator. The section covers setting up the solution-specific pipelines, branch policies, deployment variables to support connections references, environment variables, and Azure AD group sharing.
 - [**Importing the solution and configuring the app**](#importing-the-solution-and-configuring-the-app): These are the steps required to import the actual ALM Accelerator for Power Platform canvas app and configure the included custom connector.
 - [**Set up makers to use the ALM Accelerator for Power Platform app**](#set-up-makers-to-use-the-alm-accelerator-for-power-platform-app): A short introduction to using the ALM Accelerator for Power Platform canvas app.
-- **Troubleshooting**: A few pointers on some known issues and how to remediate them.<!--note from editor: Is there anywhere we can point this to?-->
+<!-- - **Troubleshooting**: A few pointers on some known issues and how to remediate them. -- Missing from this article-->
 
 ## Prerequisites
 
@@ -73,7 +73,7 @@ To complete the steps in this section, you'll need the following users and permi
 - A licensed Microsoft Power Platform user with permissions to create application users and grant administrative permissions to the application user.
 
 ### Connectors and data loss prevention policy
-<!--note from editor: Is this what "DLPs" means here?-->
+
 For the ALM Accelerator for Power Platform canvas app to work, the following connectors must be available to be used together in the environment into which the ALM accelerator is imported:
 
 - [Dataverse (legacy)](/connectors/commondataservice/)

@@ -32,7 +32,7 @@ The following documentation is intended to be a step-by-step process for setting
 
 ## Create a deployment settings JSON file
 
-When storing the customDeploymentSettings.json in the root of the config directory, the same configuration will apply to all environments. Assuming that you're using file transformation or token replacement pipeline tasks to store all of the environment-specific information, you can specify the environment-specific values in your pipeline variables. However, you can also create environment-specific customDeploymentSettings.json files by creating subdirectories in the config directory with the name of the environment, to allow for more flexibility. The directory name in this case must match the *EnvironmentName* pipeline variable you created when setting up your pipeline (validate, test, production). If no environment-specific deployment settings JSON and directory are found, the pipelines will revert to the configuration in the root of the config directory.<!--note from editor: Is this good enough alt text for a reader with low vision? If the only point of the image is to show the JohannaDev directory, this alt text is probably okay.-->
+When storing the customDeploymentSettings.json in the root of the config directory, the same configuration will apply to all environments. Assuming that you're using file transformation or token replacement pipeline tasks to store all of the environment-specific information, you can specify the environment-specific values in your pipeline variables. However, you can also create environment-specific customDeploymentSettings.json files by creating subdirectories in the config directory with the name of the environment, to allow for more flexibility. The directory name in this case must match the *EnvironmentName* pipeline variable you created when setting up your pipeline (validate, test, production). If no environment-specific deployment settings JSON and directory are found, the pipelines will revert to the configuration in the root of the config directory.
 
 ![Config folder sample.](media/setup-almacceleratorpowerplatform-deployment-config/image-20211203085159850.png)
 
@@ -459,7 +459,7 @@ The solution component ownership property in the customDeploymentConfiguration.j
    ```
 
    - The solution component type code is based on the component types specified in the [solutioncomponent EntityType](/dynamics365/customer-engagement/web-api/solutioncomponent) Web API reference. For example, a Power Automate flow is component type 29. The component type must be specified as an integer value (with no quotation marks).
-   - The unique name of the solution component, if it's a Power Automate flow, has to be taken from the unpacked solution. Retrieving the unique name from the solution is a limitation due to the fact that flows currently don't require unique names when they're created.<!--note from editor: Suggested.--> As such, the only true unique identifier for a flow is the internal ID the system uses to identify it in a solution.
+   - The unique name of the solution component, if it's a Power Automate flow, has to be taken from the unpacked solution. Retrieving the unique name from the solution is a limitation due to the fact that flows currently don't require unique names when they're created. As such, the only true unique identifier for a flow is the internal ID the system uses to identify it in a solution.
      ![Unpacked solution workflow XML file.](media/setup-almacceleratorpowerplatform-deployment-config/flowuniquename.png)
       ![Unpacked solution workflow XML showing WorkflowId.](media/setup-almacceleratorpowerplatform-deployment-config/flowuniquename2.png)
    - The owner email address can be gathered from the user's record in Dataverse or Microsoft 365.
@@ -516,7 +516,7 @@ In many cases, you'll want to import configuration or seed data into your Datave
 1. Select **Save and Export** and save the data to the directory path **config\ConfigurationMigrationData** in your local Azure DevOps repo under the solution folder for which this configuration data is to be imported.
 
    > [!NOTE]
-   > The pipeline will look for this specific folder to run the import after your solution is imported. Ensure that the name of the folder and the location are the same as the following screenshot.<!--note from editor: The alt text for the screenshot should describe this specifically.-->
+   > The pipeline will look for this specific folder to run the import after your solution is imported. Ensure that the name of the folder and the location are the same as the following screenshot.
 
     Similar to the note earlier in this article regarding specific configuration files for each environment, the preceding steps create configuration data that will be deployed to all environments. However, if you have specific configuration data for each environment, you can create subdirectories in the config directory with the name of the environment to allow for more flexibility. The directory name in this case must match the `EnvironmentName` pipeline variable you created when setting up your pipeline (validate, test, production). If no environment-specific configuration data and directory are found, the pipelines will revert to the configuration data in the root of the config directory.
 

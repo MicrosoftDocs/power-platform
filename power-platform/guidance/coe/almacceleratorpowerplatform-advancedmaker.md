@@ -135,7 +135,7 @@ Watch how to use the ALM Accelerator for Power Platform.
    > [!NOTE]
    > Using the progress icons links to visualize what's happening in the pipelines in Azure DevOps can be disabled for makers.
 
-1. After you've finished the changes in your solution and you're ready to deploy them across other environments, select the **Deploy Solution** button.<!--note from editor: Edit okay?-->
+1. After you've finished the changes in your solution and you're ready to deploy them across other environments, select the **Deploy Solution** button.
 
     > [!NOTE]
     > Be sure to publish any app changes before initiating the push.
@@ -148,7 +148,7 @@ Watch how to use the ALM Accelerator for Power Platform.
 
 1. After you deploy the solution, the next steps depend on the approval type of the deployment step.
 
-     - **Pull Request**: A pull request is created for your changes. The remaining steps to merge and release to the test environment<!--note from editor: Is this what you mean by "release to test"?--> occur in Azure DevOps. Depending on the branch policies and triggers configured for your target branch, an Azure DevOps user can approve or reject your pull request based on their findings in the submitted changes. The status of the pull request appears in the app.
+     - **Pull Request**: A pull request is created for your changes. The remaining steps to merge and release to the test environment occur in Azure DevOps. Depending on the branch policies and triggers configured for your target branch, an Azure DevOps user can approve or reject your pull request based on their findings in the submitted changes. The status of the pull request appears in the app.
 
      - **Environment**: The pipeline to deploy the solution to the target environment will be triggered. The remaining approval steps will occur in Azure DevOps.
 

@@ -7,7 +7,6 @@ ms.author: grarchib
 manager: pladhani
 ms.custom: ""
 ms.date: 11/30/2021
-
 ms.topic: "article"
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -42,7 +41,7 @@ For an administrator, the quick start guide should take about 30 minutes. By the
    coe alm generate install -o quickstart.json
    ```
 
-   This command generates a JSON configuration file similar to the following. Replace **contoso** with your tenant name.<!--note from editor: Edit okay? It seems like this would be necessary, not just a good idea.If you don't like it, it should be "you can" because style guide says "Don't substitute could for can unless you're referring to the past."-->
+   This command generates a JSON configuration file similar to the following. Replace **contoso** with your tenant name.
 
    ```json
    {
@@ -129,7 +128,7 @@ Not sure what ALM is and how it can help? [Use the ALM accelerator for Microsoft
 
 ### Sample installation
 
-The following recording shows a sample generating an installation configuration file and installing ALM by using the configuration file in a [demo deployment](./scenarios/tenant-deployments.md#demonstration-deployment).<!--note from editor: This alt text isn't adequate for readers with low vision. How can this image be described so those readers can understand what's going on here? If this is sample code that's available somewhere, maybe the alt text could point to that location. When I follow the "demo deployment" link, I don't see this script anywhere, but perhaps it's available elsewhere?-->
+The following recording shows a sample generating an installation configuration file and installing ALM by using the configuration file in a [demo deployment](./scenarios/tenant-deployments.md#demonstration-deployment).
 
 ![Example](./install.svg)
 
