@@ -2,7 +2,7 @@
 title: "Edit existing SharePoint site records   | MicrosoftDocs"
 description: Edit existing SharePoint site records
 author: Mattp123
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/17/2021

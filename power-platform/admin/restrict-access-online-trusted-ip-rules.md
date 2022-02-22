@@ -1,7 +1,7 @@
 ---
 title: "Block access by location with Azure AD Conditional Access  | MicrosoftDocs"
 description: Block access by location with Azure AD Conditional Access
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/29/2021

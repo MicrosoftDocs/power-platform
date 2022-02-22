@@ -2,7 +2,7 @@
 title: "Performance tuning and optimization for customer engagement apps"
 description: "Plan and optimize application performance with Dynamics 365 customer engagement apps."
 author: Mattp123
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: overview
 ms.date: 09/08/2020

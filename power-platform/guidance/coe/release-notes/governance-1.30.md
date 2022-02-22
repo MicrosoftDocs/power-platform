@@ -3,7 +3,7 @@ title: "Release notes and latest version of the CoE starter kit Governance compo
 description: "Release notes and latest version of the CoE starter kit 1.30."
 author: manuelap-msft
 manager: devkeydet
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/01/2021

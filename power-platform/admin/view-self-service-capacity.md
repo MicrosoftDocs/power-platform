@@ -3,7 +3,7 @@ title: "View self-service storage capacity  | MicrosoftDocs"
 description: View self-service storage capacity
 author: jimholtz
 manager: kvivek
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/29/2020

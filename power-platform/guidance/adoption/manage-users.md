@@ -3,7 +3,7 @@ title: "Manage users | MicrosoftDocs"
 description: "Provides information aboout the multiple layers of security make up the security model of Microsoft Power Platform"
 author: manuelap-msft
 manager: devkeydet
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/09/2020

@@ -3,7 +3,7 @@ title: "Release notes and latest version of the CoE starter kit Core components 
 description: "Release notes and latest version of the CoE Starter Kit for Teams 1.998."
 author: manuelap-msft
 manager: devkeydet
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/08/2021

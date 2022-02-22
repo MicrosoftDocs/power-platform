@@ -2,10 +2,10 @@
 title: "Set up duplicate detection rules to keep your data clean  | MicrosoftDocs"
 description: Set up duplicate detection rules to keep your data clean
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/09/2020
+ms.date: 02/14/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -69,7 +69,7 @@ To maintain the integrity of your data, it's a good idea to have rules in place 
    7.  If you don't want the rule to consider blank fields (null values) as equal while identifying duplicates, select the **Ignore Blank Values** check box.  
   
    > [!IMPORTANT]
-   >  If the duplicate detection rule contains only one condition, blank values are ignored during duplicate detection job.  
+   >  If the duplicate detection rule contains only one condition, blank values are ignored during duplicate detection job and they do not work when the user is offline.
   
     The number of criteria that you can select is limited by the number of characters that can be stored in the matchcode for the record. As you add criteria, watch the **Current matchcode length** value shown at the bottom of the criteria list.  
   

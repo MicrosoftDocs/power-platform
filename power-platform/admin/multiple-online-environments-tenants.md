@@ -4,7 +4,7 @@ description: "Learn about options and use cases for choosing multiple environmen
 ms.custom: ""
 ms.date: 09/08/2020
 ms.reviewer: ""
-ms.service: power-platform
+
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"

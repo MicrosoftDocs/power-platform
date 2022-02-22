@@ -1,7 +1,7 @@
 ---
 title: "Connector classification  | MicrosoftDocs"
 description: About ways to categorize connectors within a DLP policy.
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/05/2022

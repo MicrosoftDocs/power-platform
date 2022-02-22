@@ -2,7 +2,7 @@
 title: "Enhanced service level agreements  | MicrosoftDocs"
 description: Enhanced service level agreements
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/17/2021

@@ -1,7 +1,7 @@
 ---
 title: "Known limitations for data loss prevention (DLP) policies | MicrosoftDocs"
 description:  DLP policies known limitations.
-ms.service: power-platform
+
 ms.topic: conceptual
 ms.date: 12/03/2021
 ms.subservice: admin

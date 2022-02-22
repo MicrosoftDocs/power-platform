@@ -3,7 +3,7 @@ title: "Get started setting up the governance components | MicrosoftDocs"
 description: "Prerequisites and instructions for setting up the governance components of the CoE Starter Kit."
 author: manuelap-msft
 manager: devkeydet
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/24/2022

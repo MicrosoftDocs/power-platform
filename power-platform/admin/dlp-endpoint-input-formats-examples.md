@@ -1,7 +1,7 @@
 ---
 title: "Endpoint input formats and examples   | MicrosoftDocs"
 description: Endpoints have to be entered in all possible formats in order to block makers from using them while creating apps and flows.
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 08/03/2021

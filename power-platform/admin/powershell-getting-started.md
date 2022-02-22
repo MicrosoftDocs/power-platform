@@ -3,7 +3,7 @@ title: Programmability and Extensibility - PowerShell - Getting started | Micros
 description: PowerShell getting started with Microsoft Power Platform programmability tools.
 author: laneswenka
 ms.reviewer: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: reference
 ms.date: 08/05/2021

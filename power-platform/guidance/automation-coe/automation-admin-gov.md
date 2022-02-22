@@ -2,7 +2,7 @@
 title: "Administering a Low-Code Intelligent Automation Platform | Microsoft Docs"
 description: Key considerations for planning, deploying, and managing an Automation Center of Excellence (CoE) for hyperautomation scenarios with Power Automate.
 author: kathyos
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 12/9/2021

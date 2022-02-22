@@ -3,7 +3,7 @@ title: "Organize hackathons - Microsoft Power Platform | MicrosoftDocs"
 description: "A hackathon is a fun way to engage lots of people within your organization around a digital culture of change."
 author: manuelap-msft
 manager: devkeydet
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/09/2020

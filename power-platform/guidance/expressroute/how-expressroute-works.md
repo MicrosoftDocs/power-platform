@@ -2,7 +2,7 @@
 title: "How does ExpressRoute work with Microsoft Power Platform? | MicrosoftDocs"
 description: "ExpressRoute and Microsoft Power Platform - how do they work together?"
 author: taiki-yoshida
-ms.service: power-platform
+
 ms.topic: conceptual
 ms.date: 06/30/2021
 ms.subservice: guidance

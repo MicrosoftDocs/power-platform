@@ -2,7 +2,7 @@
 title: "Monitor email processing errors  | MicrosoftDocs"
 description: Monitor email processing errors
 author: mduelae
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/17/2021

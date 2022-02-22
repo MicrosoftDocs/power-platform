@@ -3,7 +3,7 @@ title: "Preview: Programmability and Extensibility - Power Platform API - 2020-1
 description: Power Platform API Reference - List tenant settings
 author: laneswenka
 ms.reviewer: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: reference
 ms.date: 10/22/2021
