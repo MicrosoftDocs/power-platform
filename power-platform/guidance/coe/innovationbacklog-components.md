@@ -73,7 +73,7 @@ A canvas app that the Innovation Backlog admin uses to update icons for non-soft
 
 **Permission**: Share this app with the Innovation Backlog admin - this can be your CoE or Power Platform adoption lead.
 
-**Prerequisite**: This app uses Dataverse; a Premium license is therefore required for every app user.
+**Prerequisite**: This app uses Microsoft Dataverse. If you have installed this solution in a Production environment, end users need to have a Per User license, or the app needs to be assigned a Per App license, or the environment needs to be covered by pay-as-you-go. If you have installed this solution in a Dataverse for Teams environment, a Microsoft 365 license is required for every user.
 
 ![Innovation Backlog Admin app.](media/ib-11.png "Innovation Backlog Admin app")
 
@@ -83,7 +83,7 @@ A canvas app that is used to share and vote on ideas, describe pain points and a
 
 **Permission**: The Innovation Backlog app can be shared with the entire organization.
 
-**Prerequisite**: This app uses Dataverse; a Premium license is therefore required for every app user.
+**Prerequisite**: This app uses Microsoft Dataverse. If you have installed this solution in a Production environment, end users need to have a Per User license, or the app needs to be assigned a Per App license, or the environment needs to be covered by pay-as-you-go. If you have installed this solution in a Dataverse for Teams environment, a Microsoft 365 license is required for every user.
 
 ![Innovation Backlog app.](media/ib-12.png "Innovation Backlog app")
 
