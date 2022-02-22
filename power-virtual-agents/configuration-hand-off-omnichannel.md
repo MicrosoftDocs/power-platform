@@ -184,9 +184,11 @@ This action can be used to ask the caller for their preferred language.
 
     :::image type="content" source="media\configuration-hand-off-omnichannel\handoff-voice-config-set-locale-add.png" alt-text="Add Set customer locale and handoff to Omnichannel action.":::
 
-1. Select an existing variable that defines the language, or directly enter the language that should be used.
+1. Select an existing variable that defines the locale code, or directly enter the locale code that should be used.
 
-   :::image type="content" source="media\configuration-hand-off-omnichannel\handoff-voice-config-set-locale.png" alt-text="Set input for Set customer locale and handoff to Omnichannel action.":::
+    Refer to [Omnichannel's supported languages](/dynamics365/customer-service/voice-channel-multi-language-contact-center#supported-languages-and-locale-codes) for valid locale codes, but note that the full list is not supported in Power Virtual Agents. See [Supported languages](authoring-language-support.md#list-of-supported-languages) for more information.
+
+    :::image type="content" source="media\configuration-hand-off-omnichannel\handoff-voice-config-set-locale.png" alt-text="Set input for Set customer locale and handoff to Omnichannel action.":::
 
 ### Send uninterruptible voice message
 
