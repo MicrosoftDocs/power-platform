@@ -66,43 +66,4 @@ You can also add the bot to your Power Platform admin center.
 
 1. Provide the snippet to your web developer to add the bot to your website.
 
-## Power Apps portals
-
-You can add your bot to a Power Apps portal either directly with the chatbot component, or with a URL snippet in an IFrame.
-
-### Add bot to a Power Apps portal (preview)
-
-You can add your bot to a Power Apps portal in a few quick steps without any code. Power Apps portals allow you to add a Power Virtual Agents chatbot on your portal page by adding a chatbot component with limited customization.
-
-See the [Add chatbot to a page](/powerapps/maker/portals/add-chatbot) topic in the Power Apps documentation library for details.
-
-> [!IMPORTANT]
-> This is a preview feature.
->
-> Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
-
-### Add bot to Power Apps with an IFrame
-
-You can also add your bot to Power Apps as an IFrame. Your live website can be a customer-facing external website or an internal site, like a SharePoint or Yammer site.
-
-You can also add the bot to your Power Platform admin center.
-
-1. In the Power Virtual Agents Portal side pane, go to **Manage** > **Channels**.
-
-1. Select **Custom website** and then copy only the URL of the IFrame snippet: this URL is defined by `src="<URL>"`.
-
-    :::image type="content" source="media/publication-connect-bot-to-web-channels/channel-custom-website-url.png" alt-text="Select only the src URL." border="false":::
-
-1. Go to Power Apps Studio and add an [IFrame component](/powerapps/maker/portals/compose-page#add-iframe) into your app by selecting **Components** > **IFrame**.
-
-    :::image type="content" source="media/publication-connect-bot-to-web-channels/channel-custom-website-portal-iframe.png" alt-text="Add IFrame to Power Apps." border="false":::
-
-1. Paste in the URL you copied from the IFrame snippet into the **Link** field of the IFrame component. You can adjust the size of the chat window by adjusting the **Width** and **Height** field.
-
-    :::image type="content" source="media/publication-connect-bot-to-web-channels/channel-custom-website-portal-pva-iframe.png" alt-text="Add bot IFrame to Power Apps." border="false":::
-
-1. Interact with your bot by clicking on **Browse website**.
-
-    :::image type="content" source="media/publication-connect-bot-to-web-channels/channel-custom-website-portal-browse-website.png" alt-text="Browse website with IFrame added." border="false":::
-
 [!INCLUDE[footer-include](includes/footer-banner.md)]
