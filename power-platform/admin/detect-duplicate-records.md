@@ -24,7 +24,7 @@ Duplicate records can creep into your data when you or others enter data manuall
 After you know there are duplicate records, you can merge the duplicates and retain the record you want. When you merge a record, any related or child records are also merged. Your administrator might also set up duplicate detection rules so duplicates are detected at the time of entering or updating records or importing records.
 
 > [!NOTE]
-> The new experience of detecting duplicates and merging them is supported when duplicates are detected while manually entering data in the app and not during import.
+> The new experience of detecting duplicates and merging them is supported when duplicates are detected while manually entering data in the app and not during import.  Duplicate detection does not work when in offline or offline mode.
 
 ## Resolve duplicates when creating or updating records
 
