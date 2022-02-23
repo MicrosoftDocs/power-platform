@@ -15,30 +15,25 @@
         "tags": [
           "BillingPolicy"
         ],
-        "operationId": "ListBillingPolicies",
         "summary": "Get the list of billing policy for the tenant.",
+        "operationId": "ListBillingPolicies",
         "produces": [
           "application/json"
         ],
         "parameters": [
           {
-            "in": "path",
-            "name": "tenantId",
-            "required": true,
+            "in": "query",
+            "name": "$top",
+            "description": "Top limit of results",
             "type": "string"
           },
           {
             "in": "query",
             "name": "api-version",
-            "description": "The requested API version",
+            "description": "The API version",
+            "required": true,
             "type": "string",
-            "default": "1.0"
-          },
-          {
-            "in": "query",
-            "name": "$top",
-            "description": "Top limit of results",
-            "type": "string"
+            "default": "2021-10-01-preview"
           }
         ],
         "responses": {
@@ -63,8 +58,8 @@
         "tags": [
           "BillingPolicy"
         ],
+        "summary": "Creates the billing policy at tenant level.",
         "operationId": "CreateBillingPolicy",
-        "summary": "Create billing policy.",
         "consumes": [
           "application/json"
         ],
@@ -73,20 +68,17 @@
         ],
         "parameters": [
           {
-            "in": "path",
-            "name": "tenantId",
-            "required": true,
-            "type": "string"
-          },
-          {
             "in": "query",
             "name": "api-version",
-            "type": "string"
+            "description": "The API version",
+            "required": true,
+            "type": "string",
+            "default": "2021-10-01-preview"
           },
           {
             "in": "body",
             "name": "body",
-            "description": "The Billing Policy",
+            "description": "The billing policy",
             "schema": {
               "$ref": "#/definitions/BillingPolicyPostRequestModel"
             }
@@ -116,8 +108,8 @@
         "tags": [
           "BillingPolicy"
         ],
+        "summary": "Get the billing policy at tenant level by policy Id.",
         "operationId": "GetBillingPolicy",
-        "summary": "Get billing policy.",
         "produces": [
           "application/json"
         ],
@@ -125,20 +117,17 @@
           {
             "in": "path",
             "name": "billingPolicyId",
-            "description": "The Billing Policy Id",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "in": "path",
-            "name": "tenantId",
+            "description": "The billing policy Id",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
             "name": "api-version",
-            "type": "string"
+            "description": "The API version",
+            "required": true,
+            "type": "string",
+            "default": "2021-10-01-preview"
           }
         ],
         "responses": {
@@ -166,8 +155,8 @@
         "tags": [
           "BillingPolicy"
         ],
+        "summary": "Updates the billing policy at tenant level.",
         "operationId": "UpdateBillingPolicy",
-        "summary": "Update billing policy.",
         "consumes": [
           "application/json"
         ],
@@ -178,25 +167,22 @@
           {
             "in": "path",
             "name": "billingPolicyId",
-            "description": "The Billing Policy Id",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "in": "path",
-            "name": "tenantId",
+            "description": "The billing policy Id",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
             "name": "api-version",
-            "type": "string"
+            "description": "The API version",
+            "required": true,
+            "type": "string",
+            "default": "2021-10-01-preview"
           },
           {
             "in": "body",
             "name": "body",
-            "description": "The Billing Policy",
+            "description": "The billing policy",
             "schema": {
               "$ref": "#/definitions/BillingPolicyPutRequestModel"
             }
@@ -227,26 +213,23 @@
         "tags": [
           "BillingPolicy"
         ],
-        "operationId": "DeleteBillingPolicy",
         "summary": "Delete billing policy.",
+        "operationId": "DeleteBillingPolicy",
         "parameters": [
           {
             "in": "path",
             "name": "billingPolicyId",
-            "description": "The Billing Policy Id",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "in": "path",
-            "name": "tenantId",
+            "description": "The billing policy Id",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
             "name": "api-version",
-            "type": "string"
+            "description": "The API version",
+            "required": true,
+            "type": "string",
+            "default": "2021-10-01-preview"
           }
         ],
         "responses": {
@@ -273,8 +256,8 @@
         "tags": [
           "BillingPolicyEnvironment"
         ],
-        "operationId": "ListBillingPolicyEnvironments",
         "summary": "Get the list environments which are linked to billing policy.",
+        "operationId": "ListBillingPolicyEnvironments",
         "produces": [
           "application/json"
         ],
@@ -287,15 +270,12 @@
             "type": "string"
           },
           {
-            "in": "path",
-            "name": "tenantId",
-            "required": true,
-            "type": "string"
-          },
-          {
             "in": "query",
             "name": "api-version",
-            "type": "string"
+            "description": "The API version",
+            "required": true,
+            "type": "string",
+            "default": "2021-10-01-preview"
           }
         ],
         "responses": {
@@ -325,8 +305,8 @@
         "tags": [
           "BillingPolicyEnvironment"
         ],
-        "operationId": "GetBillingPolicyEnvironment",
         "summary": "Get the environment which is linked to billing policy",
+        "operationId": "GetBillingPolicyEnvironment",
         "produces": [
           "application/json"
         ],
@@ -346,15 +326,12 @@
             "type": "string"
           },
           {
-            "in": "path",
-            "name": "tenantId",
-            "required": true,
-            "type": "string"
-          },
-          {
             "in": "query",
             "name": "api-version",
-            "type": "string"
+            "description": "The API version",
+            "required": true,
+            "type": "string",
+            "default": "2021-10-01-preview"
           }
         ],
         "responses": {
@@ -379,13 +356,62 @@
         }
       }
     },
+    "/licensing/billingPolicies/{billingPolicyId}/refreshProvisioningStatus": {
+      "post": {
+        "tags": [
+          "BillingPolicy"
+        ],
+        "summary": "Refresh the billing policy provisioning status.",
+        "operationId": "RefreshProvisioningStatus",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "billingPolicyId",
+            "description": "The billing policy Id",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version",
+            "required": true,
+            "type": "string",
+            "default": "2021-10-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/BillingPolicyResponseModel"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
     "/licensing/billingPolicies/{billingPolicyId}/environments/add": {
       "post": {
         "tags": [
           "BillingPolicyEnvironment"
         ],
-        "operationId": "AddBillingPolicyEnvironment",
         "summary": "Link billing policy with environment ids.",
+        "operationId": "AddBillingPolicyEnvironment",
         "consumes": [
           "application/json"
         ],
@@ -398,15 +424,12 @@
             "type": "string"
           },
           {
-            "in": "path",
-            "name": "tenantId",
-            "required": true,
-            "type": "string"
-          },
-          {
             "in": "query",
             "name": "api-version",
-            "type": "string"
+            "description": "The API version",
+            "required": true,
+            "type": "string",
+            "default": "2021-10-01-preview"
           },
           {
             "in": "body",
@@ -441,8 +464,8 @@
         "tags": [
           "BillingPolicyEnvironment"
         ],
-        "operationId": "RemoveBillingPolicyEnvironment",
         "summary": "Unlink billing policy with environment ids.",
+        "operationId": "RemoveBillingPolicyEnvironment",
         "consumes": [
           "application/json"
         ],
@@ -455,15 +478,12 @@
             "type": "string"
           },
           {
-            "in": "path",
-            "name": "tenantId",
-            "required": true,
-            "type": "string"
-          },
-          {
             "in": "query",
             "name": "api-version",
-            "type": "string"
+            "description": "The API version",
+            "required": true,
+            "type": "string",
+            "default": "2021-10-01-preview"
           },
           {
             "in": "body",
@@ -498,8 +518,8 @@
         "tags": [
           "EnvironmentBillingPolicy"
         ],
-        "operationId": "GetEnvironmentBillingPolicy",
         "summary": "Get the linked billing policy details for environment",
+        "operationId": "GetEnvironmentBillingPolicy",
         "produces": [
           "application/json"
         ],
@@ -512,15 +532,12 @@
             "type": "string"
           },
           {
-            "in": "path",
-            "name": "tenantId",
-            "required": true,
-            "type": "string"
-          },
-          {
             "in": "query",
             "name": "api-version",
-            "type": "string"
+            "description": "The API version",
+            "required": true,
+            "type": "string",
+            "default": "2021-10-01-preview"
           }
         ],
         "responses": {
@@ -631,15 +648,6 @@
         "billingInstrument": {
           "$ref": "#/definitions/BillingInstrumentModel"
         },
-        "powerAutomatePolicy": {
-          "$ref": "#/definitions/PowerAutomatePolicyModel"
-        },
-        "powerAppsPolicy": {
-          "$ref": "#/definitions/PowerAppsPolicyModel"
-        },
-        "storagePolicy": {
-          "$ref": "#/definitions/StoragePolicyModel"
-        },
         "status": {
           "$ref": "#/definitions/BillingPolicyStatus"
         },
@@ -656,15 +664,6 @@
         },
         "status": {
           "$ref": "#/definitions/BillingPolicyStatus"
-        },
-        "powerAutomatePolicy": {
-          "$ref": "#/definitions/PowerAutomatePolicyModel"
-        },
-        "powerAppsPolicy": {
-          "$ref": "#/definitions/PowerAppsPolicyModel"
-        },
-        "storagePolicy": {
-          "$ref": "#/definitions/StoragePolicyModel"
         }
       }
     },
@@ -691,15 +690,6 @@
         },
         "licensePolicy": {
           "$ref": "#/definitions/LicensePolicyModel"
-        },
-        "powerAutomatePolicy": {
-          "$ref": "#/definitions/PowerAutomatePolicyModel"
-        },
-        "powerAppsPolicy": {
-          "$ref": "#/definitions/PowerAppsPolicyModel"
-        },
-        "storagePolicy": {
-          "$ref": "#/definitions/StoragePolicyModel"
         },
         "provider": {
           "$ref": "#/definitions/ProviderIdentityModel"
@@ -818,22 +808,6 @@
       ],
       "type": "string"
     },
-    "PowerAppsPolicyModel": {
-      "type": "object",
-      "properties": {
-        "payAsYouGoState": {
-          "$ref": "#/definitions/PayAsYouGoState"
-        }
-      }
-    },
-    "PowerAutomatePolicyModel": {
-      "type": "object",
-      "properties": {
-        "payAsYouGoState": {
-          "$ref": "#/definitions/PayAsYouGoState"
-        }
-      }
-    },
     "Principal": {
       "type": "object",
       "properties": {
@@ -861,21 +835,14 @@
           "type": "string"
         }
       }
-    },
-    "StoragePolicyModel": {
-      "type": "object",
-      "properties": {
-        "payAsYouGoState": {
-          "$ref": "#/definitions/PayAsYouGoState"
-        }
-      }
     }
   },
   "securityDefinitions": {
     "oauth2": {
       "type": "oauth2",
       "flow": "implicit",
-      "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/authorize",
+      "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/authorize?resource=https://api.powerplatform.com",
+      "tokenUrl": "https://login.microsoftonline.com/common/oauth2/token",
       "description": "Azure Active Directory OAuth2"
     }
   },

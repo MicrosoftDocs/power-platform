@@ -15,20 +15,20 @@
         "tags": [
           "Applications"
         ],
-        "operationId": "ListTenantApplicationPackages",
         "summary": "Get list of Application Packages that are available for a tenant",
         "description": "Get list of available application packages for a tenant",
+        "operationId": "GetTenantApplicationPackage",
         "produces": [
           "application/json"
         ],
         "parameters": [
           {
-            "in": "path",
-            "name": "tenantId",
-            "description": "Tenant ID",
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version",
             "required": true,
             "type": "string",
-            "format": "uuid"
+            "default": "2021-10-01-preview"
           }
         ],
         "responses": {
@@ -55,21 +55,13 @@
         "tags": [
           "Applications"
         ],
-        "operationId": "ListEnvironmentApplicationPackages",
         "summary": "Get list of Application Packages that are available for install in a target environment.",
         "description": "Get list of Application Packages that are relevant in the context of a target environment. Client can filter the Application Packages based on Install State (NotInstalled, Installed, All) and any other response parameters utilizing standard OData capabilities",
+        "operationId": "GetEnvironmentApplicationPackage",
         "produces": [
           "application/json"
         ],
         "parameters": [
-          {
-            "in": "path",
-            "name": "tenantId",
-            "description": "Tenant ID",
-            "required": true,
-            "type": "string",
-            "format": "uuid"
-          },
           {
             "in": "path",
             "name": "environmentId",
@@ -93,6 +85,14 @@
             "name": "lcid",
             "description": "Application Package Supported Language Id",
             "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version",
+            "required": true,
+            "type": "string",
+            "default": "2021-10-01-preview"
           }
         ],
         "responses": {
@@ -119,8 +119,9 @@
         "tags": [
           "Applications"
         ],
-        "operationId": "InstallApplicationPackage",
         "summary": "Trigger installation of an application package based on the package unique name into a target environment.",
+        "description": "Trigger installation of an application package based on the package unique name to be installed in a target environment. Client can also include custom payload when requesting installation of an application package.",
+        "operationId": "InstallApplicationPackage",
         "consumes": [
           "application/json"
         ],
@@ -128,14 +129,6 @@
           "application/json"
         ],
         "parameters": [
-          {
-            "in": "path",
-            "name": "tenantId",
-            "description": "Tenant ID",
-            "required": true,
-            "type": "string",
-            "format": "uuid"
-          },
           {
             "in": "path",
             "name": "environmentId",
@@ -149,6 +142,14 @@
             "description": "Package Unique Name",
             "required": true,
             "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version",
+            "required": true,
+            "type": "string",
+            "default": "2021-10-01-preview"
           },
           {
             "in": "body",
@@ -175,7 +176,7 @@
           "200": {
             "description": "Success",
             "schema": {
-              "$ref": "#/definitions/InstancePackageDto"
+              "$ref": "#/definitions/InstancePackage"
             }
           }
         }
@@ -186,20 +187,13 @@
         "tags": [
           "Applications"
         ],
-        "operationId": "GetApplicationPackageOperationStatus",
         "summary": "Get the polling status for a previously triggered installation",
+        "description": "Get the polling status to check on the progress of a previously triggered installation based on the operation ID",
+        "operationId": "GetApplicationPackageInstallStatus",
         "produces": [
           "application/json"
         ],
         "parameters": [
-          {
-            "in": "path",
-            "name": "tenantId",
-            "description": "Tenant ID",
-            "required": true,
-            "type": "string",
-            "format": "uuid"
-          },
           {
             "in": "path",
             "name": "environmentId",
@@ -214,6 +208,14 @@
             "required": true,
             "type": "string",
             "format": "uuid"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version",
+            "required": true,
+            "type": "string",
+            "default": "2021-10-01-preview"
           }
         ],
         "responses": {
@@ -246,6 +248,10 @@
       "type": "string"
     },
     "ApplicationPackage": {
+      "required": [
+        "id",
+        "uniqueName"
+      ],
       "type": "object",
       "properties": {
         "id": {
@@ -259,6 +265,7 @@
           "type": "string"
         },
         "localizedDescription": {
+          "maxLength": 1000,
           "type": "string"
         },
         "localizedName": {
@@ -386,7 +393,7 @@
         }
       }
     },
-    "InstancePackageDto": {
+    "InstancePackage": {
       "type": "object",
       "properties": {
         "id": {
@@ -506,33 +513,31 @@
       }
     },
     "InstancePackageOperationStatus": {
-      "format": "int32",
       "enum": [
-        0,
-        1,
-        2,
-        3,
-        4
+        "NotStarted",
+        "Running",
+        "Succeeded",
+        "Failed",
+        "Canceled"
       ],
-      "type": "integer"
+      "type": "string"
     },
     "InstancePackageState": {
-      "format": "int32",
       "enum": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11
+        "None",
+        "Installed",
+        "Uninstalled",
+        "InstallRequested",
+        "UninstallRequested",
+        "InstallFailed",
+        "UninstallFailed",
+        "Installing",
+        "Uninstalling",
+        "InstallScheduled",
+        "InstallRetrying",
+        "TemplateInstalled"
       ],
-      "type": "integer"
+      "type": "string"
     },
     "TenantApplicationPackage": {
       "type": "object",
@@ -604,7 +609,8 @@
     "oauth2": {
       "type": "oauth2",
       "flow": "implicit",
-      "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/authorize",
+      "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/authorize?resource=https://api.powerplatform.com",
+      "tokenUrl": "https://login.microsoftonline.com/common/oauth2/token",
       "description": "Azure Active Directory OAuth2"
     }
   },
