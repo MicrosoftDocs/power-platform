@@ -35,7 +35,7 @@ To access these reports, sign in to the Power Platform admin center and select *
 
 ## Who can view these reports?
 
-Admins with the following roles and a [license](pricing-billing-skus.md) can view the reports in Power Apps analytics:
+Admins with the following roles can view the reports in Power Apps analytics:
 - Tenant-level administrator - has access to all environments
 - Environment-level admin - environment list is filtered to include only environments where the admin has Contributor or Environment Admin role
 
