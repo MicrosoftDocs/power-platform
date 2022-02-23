@@ -1,6 +1,6 @@
 ---
-title: "Configuring the ALM Accelerator for Power Platform App | MicrosoftDocs"
-description: "Deployment User Settings and Profiles direct the ALM Accelerator for Power Platform on how to display UI Components and how to source control and deploy solutions."
+title: "Configuring the ALM Accelerator for Power Platform deployment user settings and profiles | MicrosoftDocs"
+description: "Deployment user settings and profiles direct the ALM Accelerator for Power Platform app on how to display UI components and how to source-control and deploy solutions."
 author: mikefactorial
 manager: devkeydet
 
@@ -17,100 +17,111 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Configuring the ALM Accelerator for Power Platform app (preview)
+# Configuring deployment user settings and profiles for the ALM Accelerator for Power Platform app (preview)
 
->[!NOTE]
->The ALM Accelerator for Power Platform (AA4PP) is currently in public preview. Go to [Issues currently tagged as vnext](https://github.com/microsoft/coe-starter-kit/issues?q=is%3Aopen+is%3Aissue+label%3Aalm-accelerator+label%3Avnext) for the roadmap to be completed prior to general availability. While the tool is in public preview, there will be breaking changes and frequent updates to address feedback from preview members. Additionally, the public preview is reliant on the experimental [Power Apps Source File Pack and Unpack Utility](https://github.com/microsoft/PowerApps-Language-Tooling) that is being developed separately from AA4PP.
+> [!NOTE]
+> The ALM accelerator for Microsoft Power Platform is currently in public preview. Go to [Issues currently tagged as vnext](https://github.com/microsoft/coe-starter-kit/issues?q=is%3Aopen+is%3Aissue+label%3Aalm-accelerator+label%3Avnext) for the roadmap to be completed prior to general availability. While the tool is in public preview, there will be breaking changes and frequent updates to address feedback from preview members. Additionally, the public preview is reliant on the experimental [Power Apps Source File Pack and Unpack Utility](https://github.com/microsoft/PowerApps-Language-Tooling) that's being developed separately from the ALM accelerator for Microsoft Power Platform.
 
-The ALM Accelerator is configurable based on user preferences to turn on and off certain features in the user interface depending on a user's role. A common scenario is to create an advanced maker and a maker experience to help both users familiar and unfamiliar with application lifecycle management to use the app effectively. Linked to the user settings are deployment profiles. Deployment profiles are used by the app to make decisions for the user on where and how to create branches and approvals for deployment.
+Depending on a user's role, you can configure the application lifecycle management (ALM) accelerator by turning on and off certain features in the UI, based on user preference and experience. To help all users use the app effectively, a common scenario is to create both a maker experience (for users who are unfamiliar with ALM) and an advanced maker experience (for users who are very familiar with ALM concepts). Deployment profiles are linked to user settings. The app uses deployment profiles to make decisions for the user on where and how to create branches and approvals for deployment.
 
-In this section, we'll describe how to use the ALM Accelerator for Power Platform Administration app to configure these settings for use by the ALM Accelerator.
+In this section, we'll describe how to use the Power Platform ALM Accelerator Administration app to configure these settings for use by the ALM accelerator.
 
-## Creating user settings and profiles using AA4PP administration app
+## Creating user settings and profiles with the Power Platform ALM Accelerator Administration app
 
-To create user settings for AA4PP, follow these steps:
+To create user settings for the ALM accelerator for Microsoft Power Platform, follow these steps:
 
 1. Open the **Power Platform ALM Accelerator Administration App**, and then select **Deployment User Settings**.
 
-   ![ALM Accelerator for Power Platform Administration App](media/setup-almacceleratorpowerplatform-deployment-profiles/image-20211126094411050.png)
+   ![The Power Platform ALM Accelerator Administration app.](media/setup-almacceleratorpowerplatform-deployment-profiles/image-20211126094411050.png)
 
-1. Select **New** and **Provide a Name** of the user setting. This name will only be displayed to users with access to more than one user setting option.
+1. Select **New**, and then **Provide a Name** for the user setting. This name will only be displayed to users who have access to more than one user setting option.
 
-1. Select **User Functions to Allow or Disallow**. Below are the specific areas that are configurable in the app.
+1. Select **User Functions to Allow or Disallow**. The following areas are configurable in the app:
+
     - **Import Solutions** - Allowing this function shows the **Import Solution** command in the app.
     - **Delete Solutions** - This function shows the **Delete Solution** command in the app.
     - **Manage Solutions** - This function shows the **Manage Solutions** command in the app.
-    - **Drillthrough Status** - This function allows users to drill into the DevOps pipeline runs for the promote and deploy functionality.
+    - **Drillthrough Status** - This function allows users to drill into the Azure DevOps pipeline runs for the promote and deploy functionality.
     - **Profile Creation** - This function provides users with the ability to create new deployment profiles in the app.
-    - **Advanced Promote** - This function provides users with the ability to change between using the advanced promote functionality. This lets you specify a source and target branch or create a new branch.
-    - **Advanced Deploy** - This function provides users with the ability to toggle between using the advanced deploy functionality. This lets you specify a source and target branch for a pull request.
-    - **Bypass Prepare** - This function provides the user with the ability to skip the preparation step during promotion of a solution. This lets you bypass configuring deployment settings before committing to source control.
+    - **Advanced Promote** - This function provides users with the ability to change between using the advanced promote functionality. They can specify a source and target branch, or create a new branch.
+    - **Advanced Deploy** - This function provides users with the ability to switch between using the advanced deploy functionality. They can specify a source and target branch for a pull request.
+    - **Bypass Prepare** - This function provides the user with the ability to skip the preparation step during the promotion of a solution. They can bypass needing to configure deployment settings before committing to source control.
 
-1. Update **User Labels**. Below are the specific areas that are configurable in the app related to user labels for functions. These values also show in the **Deployment History** view under the action that was executed.
+1. Update **User Labels**. The following areas are configurable in the app related to user labels for functions. These values also appear in the **Deployment History** view under the action that was executed:
 
-    - **Deploy Solution** - Updating this label changes the text of the button for the **deployment action** in the app. The default value is **"DEPLOY SOLUTION"**.
-    - **Commit Solution** - Updating this label changes the text of the button for the **promote action** in the app. The default value is **"COMMIT SOLUTION"**.
-    - **Import Solution** - Updating this label changes the text of the button for the **import solution action** in the app. The default value is **"IMPORT SOLUTION"**.
-    - **Delete Solution** - Updating this label changes the text of the button for the **delete solution action** in the app. The default value is **"DELETE SOLUTION"**.
+    - **Deploy Solution** - Updating this label changes the text of the button for the deployment action in the app. The default value is **"DEPLOY SOLUTION"**.
+    - **Commit Solution** - Updating this label changes the text of the button for the promote action in the app. The default value is **"COMMIT SOLUTION"**.
+    - **Import Solution** - Updating this label changes the text of the button for the import solution action in the app. The default value is **"IMPORT SOLUTION"**.
+    - **Delete Solution** - Updating this label changes the text of the button for the delete solution action in the app. The default value is **"DELETE SOLUTION"**.
 
 1. Select **Save** to save your user settings.
 
-1. Add **New Deployment Profiles** to your user settings. Deployment profiles are used by the AA4PP app to determine where and how to create branches during the commit stage and how to create pull requests when deploying. Below are the steps to create a deployment profile using the AA4PP Administration app to associate with one or many deployment user settings.
+Next, you'll add new deployment profiles to your user settings. Deployment profiles are used by the ALM Accelerator for Power Platform app to determine where and how to create branches during the commit stage, and how to create pull requests when deploying. The following section describes the steps to create a deployment profile with the Power Platform ALM Accelerator Administration app to associate with one or many deployment user settings.
 
-    > [!NOTE]
-    > In addition to creating deployment profiles using the AA4PP Administration app, users who have access to user settings with **Create Profile** privileges in the AA4PP app can create profiles in the app. The AA4PP app makes some assumptions about the set-up of your pipelines based on the documentation for setting up your pipelines and doesn't provide the flexibility that the AA4PP Administration app does. It does, however, allow you to jump start this process.
+   > [!NOTE]
+   > In addition to your creating deployment profiles by using the Power Platform ALM Accelerator Administration app, users who have **Create Profile** privileges in the ALM Accelerator for Power Platform app can create deployment profiles in the app. The ALM Accelerator for Power Platform app makes some assumptions about the setup of your pipelines based on the documentation for setting up your pipelines, and doesn't provide the flexibility that the Power Platform ALM Accelerator Administration app does. It does, however, allow you to jump-start this process.
 
-## Creating ALM Accelerator profiles using the AA4PP app
+## Creating ALM accelerator profiles by using the ALM Accelerator for Power Platform app
 
-If a user logs in to the AA4PP app and doesn't have a deployment user setting assigned to them, the app automatically creates a deployment user setting for them. This user setting is created with all of the functionality enabled, such as import, delete, and all advanced features.
+If a user signs in to the ALM Accelerator for Power Platform app and doesn't have a deployment user setting assigned to them, the app automatically creates a deployment user setting for that user. This user setting is created with all functionality enabled, including import, delete, and all advanced features.
 
-   1. Open the ALM Accelerator for Power Platform app.
+1. Open the ALM Accelerator for Power Platform app.
 
-      - If the user has more than one deployment user setting shared with them, the app displays a drop-down list for the user to choose their experience.
+   - If the user has more than one deployment user setting shared with them, the app displays a dropdown list for the user to choose their experience.
 
-      - If a user only has one deployment user setting shared with them, the drop-down list to choose their experience isn't displayed. Instead, their default user setting is used by the app.
-      - If no user setting is shared with them, the app creates a new user deployment setting for the user and uses the default interface for the app.
+   - If a user only has one deployment user setting shared with them, the dropdown list to choose their experience isn't displayed. Instead, their default user setting is used by the app.
 
-   2. Create a new profile for your solution. In order to begin source controlling and deploying a solution, you must have a profile associated with that solution.
-      > [!NOTE]
-      > Users who have a user setting shared with them can only perform functions on solutions to which they have been assigned a profile already. If a user has a user setting shared with them that doesn't have a profile that is already assigned to a solution, they won't be able to perform actions on that profile.
+   - If no user setting is shared with the user, the app creates a new user deployment setting for the user and uses the default interface for the app.
 
-      - Select **Choose a Profile** for a solution that doesn't have a profile assigned.
-      - Choose an existing profile from the drop-down list or select **+** to create a new profile.
-      - Enter a name for the profile, and select the **Organization**, **Project**, **Repo**, and **Target Branch**.
-      - Select **Create**. Creating a new profile automatically populates the deployment environments with the default configuration for validation, test, and production. These environments' URLs will contain a placeholder for your environments actual URL.
-      - Enter the URLs for your validation, test, and production environments.
-      - Select **Save** to save your changes to the profile and save the profile as the default for the solution.
-      - After the profile is saved, you'll be able to commit and deploy your solution. More information: ![AA4PP app with solution actions enabled after creating a new profile](media/setup-almacceleratorpowerplatform-deployment-profiles/image-20211126135223693.png)
+2. Create a new profile for your solution. To begin source-controlling and deploying a solution, you must have a profile associated with that solution.
 
-## Sharing ALM Accelerator user settings and profiles using AA4PP administration app
+   > [!NOTE]
+   > Users who have a user setting shared with them can only perform functions on solutions to which they've been assigned a profile already. If a user has a user setting shared with them that doesn't have a profile that's already assigned to a solution, they won't be able to perform actions on that solution.<!--note from editor: Edit okay? I'm confused by the switch between "perform functions on solutions" and "perform actions on that profile."-->
 
-In order to share user settings created for a particular user profile it is recommended that you share the user setting row with an Azure AD Group team. Sharing with an Azure AD Group team allows you to manage access to user settings and deployment profiles from Azure AD by adding the user to the group in Azure AD. Below are steps describing how to share and provide the appropriate roles to an Azure AD Group team after installing the AA4PP Solution.
+   1. For a solution that doesn't have a profile assigned, select **Choose a Profile**.
 
-1. If you haven't already created an Azure AD Group team in Microsoft Dataverse to share your user settings, follow the steps below otherwise skip to step 2.
+   1. Choose an existing profile from the dropdown list, or select **+** to create a new profile.
 
-   - Go to [https://admin.powerplatform.com](https://admin.powerplatform.com) and select the environment in which you've installed AA4PP.
+   1. Enter a name for the profile, and select the **Organization**, **Project**, **Repo**, and **Target Branch**.
 
-   - Select **See all** under **Access - Teams**, and then select **Create Team**.
+   1. Select **Create**. Creating a new profile automatically populates the deployment environments with the default configuration for validation, test, and production. These environments' URLs will contain a placeholder for your environment's actual URL.
 
-   - Enter the required fields and select **AAD Group Team** as the **Team Type**.
+   1. Enter the URLs for your validation, test, and production environments.
 
-   - Select the **AAD Group** to use for this team, and then select **Next**.
+   1. Select **Save** to save your changes to the profile and save the profile as the default for the solution.
 
-   - Select **ALM Power App Access** and **Basic User** as the roles for the team, and then select **Save**.
+After the profile is saved, you'll be able to commit and deploy your solution.<!--note from editor: Is it okay that this screenshot shows a different name for the app rather than "ALM Accelerator for Power Platform"?-->
 
-1. Open the Power **Platform ALM Accelerator Administration App** and navigate to **Deployment User Settings**.
+![Solution actions in the ALM Accelerator for Power Platform app are enabled after creating a new profile.](media/setup-almacceleratorpowerplatform-deployment-profiles/image-20211126135223693.png)
+
+## Sharing ALM accelerator user settings and profiles by using the Power Platform ALM Accelerator Administration app
+
+To share user settings created for a particular user profile, we recommend that you share the user setting row with an Azure Active Directory (Azure AD) Group team. Sharing with an Azure AD Group team allows you to manage access to user settings and deployment profiles from Azure AD by adding the user to the group in Azure AD. The following steps describe how to share and provide the appropriate roles to an Azure AD Group team after installing the ALM Accelerator for Power Platform app.
+
+1. If you haven't already created an Azure AD Group team in Microsoft Dataverse to share your user settings, perform the following steps; otherwise, skip to step 2.
+
+   1. Go to [https://admin.powerplatform.com](https://admin.powerplatform.com) and select the environment in which you've installed the ALM Accelerator for Power Platform app.
+
+   1. Under **Access -Teams**, select **See all**, and then select **Create Team**.
+
+   1. Enter the required fields, and select **AAD Group Team** as the **Team Type**.
+
+   1. Select the **AAD Group** to use for this team, and then select **Next**.
+
+   1. Select **ALM Power App Access** and **Basic User** as the roles for the team, and then select **Save**.
+
+1. Open the Power Platform ALM Accelerator Administration app, and go to **Deployment User Settings**.
 
 1. Open the **Deployment User Setting** that you want to share with your team, and then select **Share**.
 
-1. Open your Azure AD Group team using **Advanced lookup** in the **Sharing** dialog.
+1. Open your Azure AD Group team by using **Advanced lookup** in the **Sharing** dialog.
 
-   - In **Advanced lookup**, select **Teams**.
+   1. In **Advanced lookup**, select **Teams**.
 
-   - Select **All AAD Security Group Teams** from the **View** dropdown list.
+   1. From the **View** dropdown list, select **All AAD Security Group Teams**.
 
-   - Select the team you created previously, and then select **Done**.
+   1. Select the team you created previously, and then select **Done**.
 
-1. Under **Manage Share Access** select the team, and then select **Read** and **Append** as the privileges.
+1. Under **Manage Share Access**, select the team, and then select **Read** and **Append** as the privileges.
 
 1. Select **Share**.
