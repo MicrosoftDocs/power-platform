@@ -1,11 +1,11 @@
 ---
-title: "Support for customer engagement apps - operated by 21Vianet in China  | MicrosoftDocs"
-description: Support for customer engagement apps - operated by 21Vianet in China 
+title: "Support for Power Platform and Dynamics 365 apps - operated by 21Vianet in China  | MicrosoftDocs"
+description: Provides information about the support for Power Platform and Dynamics 365 apps ((Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, and Dynamics 365 Project Service Automation) that are operated by 21Vianet in China 
 author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/01/2021
+ms.date: 02/23/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -16,12 +16,13 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Support for customer engagement apps - operated by 21Vianet in China
+# Support for Power Platform and Dynamics 365 apps - operated by 21Vianet in China
 
-Most customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, and Dynamics 365 Project Service Automation), provide self-service support options and support through 21Vianet in China.
+Microsoft Power Platform and Dynamics 365 apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, and Dynamics 365 Project Service Automation), provide self-service support options and support through 21Vianet in China.
 
 ## Self-help resources
 
+- [Power Platform documentation](/power-platform/)
 - [Dynamics 365 documentation](/dynamics365/)
 - [Dynamics 365 apps operated by 21Vianet in China](about-microsoft-cloud-china.md)
 
@@ -29,7 +30,7 @@ Most customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service
 
 Presales support telephone number: +86 400-886-6134
 
-Pre-sales support for model-driven apps provides assistance on subscription features and benefits, plan comparisons, pricing and licensing, and helps to identify the right solution to meet your business needs. In addition, pre-sales support can help you find a Partner, and purchase and sign up for a trial. You can call during local business hours, Monday through Friday. Pre-sales support can be accessed using the same phone number for technical support. 
+Pre-sales support provides assistance on subscription features and benefits, plan comparisons, pricing and licensing, and helps to identify the right solution to meet your business needs. In addition, pre-sales support can help you find a partner, and purchase and sign up for a trial. You can call during local business hours, Monday through Friday. Pre-sales support can be accessed using the same phone number for technical support. 
 
 ## Billing and subscription management support through 21Vianet
 
@@ -64,9 +65,9 @@ If you run mission-critical solutions, Premier support offers additional value:
 For details about purchasing Premier support, contact your Microsoft Account team. If you have a Premier support plan you can contact support via [My Premier Online](https://support.microsoft.com/premier).
 
 ## Additional resources
-- [Model-driven apps operated by 21Vianet in China](about-microsoft-cloud-china.md)
-- [Dynamics 365 Finance and Operations operated by 21Vianet](/dynamics365/unified-operations/dev-itpro/deployment/china-local-deployment)
+- [Power Platform support site for 21Vianet (in Chinese)](https://www.21vbluecloud.com/powerplatform/)
 - [Dynamics 365 support site for 21Vianet (in Chinese)](https://www.21vbluecloud.com/Dynamics365/)
+- [Dynamics 365 Finance and Operations operated by 21Vianet](/dynamics365/unified-operations/dev-itpro/deployment/china-local-deployment)
 - [Dynamics 365 Privacy statement (Dynamics 365 隐私声明)](https://www.21vbluecloud.com/Dynamics365/d365-privacy/)
 - [Dynamics 365 Service Level agreement (世纪互联在线服务的服务级别协议)](https://www.21vbluecloud.com/Dynamics365/d365-sla/)
 - [Dynamics 365  Legal information	(Dynamics 365 法律信息)](https://www.21vbluecloud.com/Dynamics365/dynamics365-legal/)
