@@ -160,7 +160,7 @@ The [Power Virtual Agents telephony extension](https://appsource.microsoft.com/p
 
 :::image type="content" source="media/configuration-hand-off-omnichannel/handoff-oc-voice-vars.png" alt-text="List of voice-related actions that can be added to a node in Power Virtual Agents.":::
 
-### Set survey content
+### _Set survey content_ action
 
 This action can be used to ask the caller if they are willing to take a survey at the end of their call.
 
@@ -174,7 +174,7 @@ This action can be used to ask the caller if they are willing to take a survey a
 
     :::image type="content" source="media\configuration-hand-off-omnichannel\handoff-voice-config-survey-consent.png" alt-text="Set input for set survey content action.":::
 
-### Set customer locale and handoff to omnichannel
+### _Set customer locale and handoff to omnichannel_ action
 
 This action can be used to ask the caller for their preferred language.
 
@@ -190,7 +190,7 @@ This action can be used to ask the caller for their preferred language.
 
     :::image type="content" source="media\configuration-hand-off-omnichannel\handoff-voice-config-set-locale.png" alt-text="Set input for Set customer locale and handoff to omnichannel action.":::
 
-### Send uninterruptible voice message
+### _Send uninterruptible voice message_ action
 
 This action can be used to send messages which can't be interrupted by the caller.
 
@@ -204,7 +204,7 @@ This action can be used to send messages which can't be interrupted by the calle
 
     :::image type="content" source="media/configuration-hand-off-omnichannel/handoff-voice-config-interrupt.png" alt-text="Set input for send uninterruptible voice message action.":::
 
-### Transfer the call to a different phone number
+### _Transfer the call to a different phone number_ action
 
 This action can be used to transfer the call to a different phone number altogether.
 
@@ -221,7 +221,7 @@ This action can be used to transfer the call to a different phone number altoget
 > [!NOTE]
 > This action requires the "Make calls" privilege when purchasing the phone number. Without this privilege, the transfer will fail.
 
-### Hang up
+### _Hang up_ action
 
 This action can be used to hang up the call. Once the conversation reaches this action, the call will be dropped.
 
