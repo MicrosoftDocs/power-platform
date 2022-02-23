@@ -1,7 +1,7 @@
 ---
 title: "Administration mode  | MicrosoftDocs"
 description: Administration mode
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/18/2022

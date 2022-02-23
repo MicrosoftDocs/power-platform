@@ -4,7 +4,7 @@ description: Administer Power BI.
 ms.custom: ""
 ms.date: 04/15/2021
 ms.reviewer: ""
-ms.service: power-platform
+
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "get-started-article"

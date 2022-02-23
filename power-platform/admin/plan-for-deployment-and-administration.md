@@ -2,7 +2,7 @@
 title: "Plan for deployment and administration"
 description: "As an administrator, learn about the considerations when planning for deployment." 
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/08/2020

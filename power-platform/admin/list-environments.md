@@ -3,7 +3,7 @@ title: "Preview: Programmability and Extensibility - Power Platform API - 2021-0
 description: Power Platform API Reference - List environments
 author: laneswenka
 ms.reviewer: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: reference
 ms.date: 03/19/2021

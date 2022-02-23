@@ -3,7 +3,7 @@ title: "Administer Microsoft Dataverse environments | MicrosoftDocs"
 description: Administer Microsoft Dataverse environments
 author: jimholtz
 manager: kvivek
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 08/08/2018

@@ -1,7 +1,7 @@
 ---
 title: "About Unified Interface  | MicrosoftDocs"
 description: About Unified Interface
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 10/20/2021

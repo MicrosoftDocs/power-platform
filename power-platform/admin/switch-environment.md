@@ -3,7 +3,7 @@ title: "Change environment type | MicrosoftDocs"
 description: Change the environment type
 author: jimholtz
 manager: kvivek
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 06/04/2020

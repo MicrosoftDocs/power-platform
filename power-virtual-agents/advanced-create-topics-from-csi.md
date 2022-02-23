@@ -3,7 +3,7 @@ title: "Automate topic creation (contains video)"
 description: "Automate the creation of topics in Power Virtual Agents bots by using support topics discovered by Dynamics 365 Customer Service Insights."
 keywords: "Customer Service Insights, PVA, CSI"
 ms.date: 9/22/2020
-ms.service: power-virtual-agents
+
 ms.topic: article
 author: iaanw
 ms.author: iawilt

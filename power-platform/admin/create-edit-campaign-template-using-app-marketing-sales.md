@@ -2,7 +2,7 @@
 title: "Create or edit a campaign template using in-app marketing (Sales)  | MicrosoftDocs"
 description: Create or edit a campaign template using in-app marketing (Sales)
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/04/2020

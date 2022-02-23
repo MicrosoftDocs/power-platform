@@ -2,7 +2,7 @@
 title: "Administer Power Platform"
 description: "The Power Platform admin center is a unified portal for administrators to manage environments and settings for Power Apps, Power Automate, and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation)."
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: overview
 

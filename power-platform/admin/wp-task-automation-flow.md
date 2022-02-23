@@ -2,7 +2,7 @@
 title: "Automation of tasks with Power Automate  | MicrosoftDocs"
 description: Automation of tasks with Power Automate 
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/12/2020

@@ -3,7 +3,7 @@ title: "Upgrade a Dataverse for Teams environment"
 description: "You can upgrade from a Dataverse for Teams environment in Power Virtual Agents, so you can avoid capacity limits."
 keywords: "Administration, dataverse, environment, PVA, teams"
 ms.date: 2/8/2021
-ms.service: power-virtual-agents
+
 ms.topic: article
 author: iaanw
 ms.author: iawilt

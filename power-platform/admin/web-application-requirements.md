@@ -2,7 +2,7 @@
 title: "Web application requirements  | MicrosoftDocs"
 description: Web application requirements
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 11/08/2021

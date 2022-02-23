@@ -3,7 +3,7 @@ title: "Download chatbot sessions"
 description: "Download sessions from the last 30 days for your bot conversations."
 keywords: "PVA"
 ms.date: 01/25/2022
-ms.service: power-virtual-agents
+
 ms.topic: article
 author: iaanw
 ms.author: iawilt

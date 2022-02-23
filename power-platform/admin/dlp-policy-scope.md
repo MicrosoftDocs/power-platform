@@ -1,7 +1,7 @@
 ---
 title: "View policies and scope  | MicrosoftDocs"
 description: View policies and policy scope.
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 08/03/2021

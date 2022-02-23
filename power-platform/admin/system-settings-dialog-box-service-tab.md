@@ -2,7 +2,7 @@
 title: "System Settings Service tab | MicrosoftDocs"
 description: System Settings Service tab 
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/10/2022

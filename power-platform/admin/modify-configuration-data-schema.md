@@ -3,7 +3,7 @@ title: "Modify a configuration data schema  | MicrosoftDocs"
 description: Modify a configuration data schema
 author: jimholtz
 manager: kvivek
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/26/2020

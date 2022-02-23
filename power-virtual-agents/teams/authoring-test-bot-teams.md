@@ -3,7 +3,7 @@ title: "Check your chatbot with the Test bot in Microsoft Teams"
 description: "The Test bot lets you check how well your topics are working, and lets you navigate topic nodes in the Power Virtual Agents app in Microsoft Teams."
 keywords: "PVA"
 ms.date: 01/25/2022
-ms.service: power-virtual-agents
+
 ms.topic: article
 author: iaanw
 ms.author: iawilt

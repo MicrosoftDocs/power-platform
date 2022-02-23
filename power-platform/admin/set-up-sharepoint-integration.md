@@ -2,7 +2,7 @@
 title: "Benefits of document management with SharePoint integration"
 description: "Learn about the benefits of using the document management capabilities of SharePoint."
 author: Mattp123
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/28/2020
