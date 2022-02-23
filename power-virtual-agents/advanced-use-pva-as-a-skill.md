@@ -15,7 +15,7 @@ ms.collection: virtualagent
 
 # Use a Power Virtual Agents bot as a skill
 
-You can use your Power Virtual Agents bot as a [skill](/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0&preserve-view=true) with Bot Framework bots by using [Orchestrator in Composer](/composer/concept-orchestrator). 
+You can use your Power Virtual Agents bot as a [skill](/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0&preserve-view=true) with Bot Framework bots by using [Orchestrator in Composer](/composer/concept-orchestrator).
 
 Orchestrator is a component in the Composer UI that you can use to get your Power Virtual Agents bot ready for Bot Framework. Previously, you had to use the [now-deprecated Bot Framework Dispatch tool](/azure/bot-service/bot-builder-tutorial-dispatch?view=azure-bot-service-4.0&tabs=cs&preserve-view=true) to train and configure your bot with code.
 
