@@ -181,7 +181,11 @@ Make sure to configure the redirect URL to `https://token.botframework.com/.auth
 
     :::image type="content" source="media/configuration-end-user-authentication/auth-manage-sm.png" alt-text="Screenshot of the Authentication under Manage left bar menu.":::
 
-1. Enter the information as described for each of the fields as [detailed below](#manual-authentication-fields). The information required depends on your setup and provider. If you have questions about the required information, contact your administrator or identity provider.
+1. Select **Manual (for any channel including Teams)**.
+
+    :::image type="content" source="media/configuration-end-user-authentication/auth-select-manual.png" alt-text="Select the Manual authentication option.":::
+
+1. [Enter the information as described for each of the fields](#manual-authentication-fields). The information required depends on your setup and provider. If you have questions about the required information, contact your administrator or identity provider.
 
 1. Click **Save** to finish the configuration.
 
