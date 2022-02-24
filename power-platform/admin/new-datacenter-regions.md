@@ -1,12 +1,12 @@
 ---
-title: "Dynamics 365 datacenter regions"
-description: "Dynamics 365 customer engagement apps are hosted in datacenters across many regions. Find a list of regions and URLs, plus how to migrate to a new datacenter."
+title: "Power Platform and Dynamics 365 datacenter regions"
+description: "Provides information about Power Platform and Dynamics 365 apps hosted in datacenters across many regions. Find a list of regions and URLs, plus how to migrate to a new datacenter."
 author: jimholtz
 
 ms.component: pa-admin
 ms.topic: conceptual
 ms.custom: intro-internal
-ms.date: 03/09/2021
+ms.date: 02/23/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -19,7 +19,7 @@ search.app:
 ---
 # Datacenter regions
 
-The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), are being hosted in datacenters in more and more regions. After customer engagement apps become available in a new region, the following apply:  
+Microsoft Power Platform and Dynamics 365 apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), are being hosted in datacenters in more and more regions. After customer engagement apps become available in a new region, the following apply:  
   
 - For new organizations, the datacenter will be aligned with the country/region you selected during sign-up.  
   

@@ -5,7 +5,7 @@ author: jimholtz
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/12/2021
+ms.date: 02/23/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -79,7 +79,7 @@ In addition to the logical separation of customer content at the application lay
 
 ### Customer content located within the United States
 
-Dynamics 365 US Government services are provided from datacenters physically located in the United States. Customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service,  Dynamics 365 Project Service Automation, Dynamics 365 Finance, and Dynamics 365 Supply Chain Management) customer content is stored at rest in datacenters physically located only in the US.
+Dynamics 365 US Government services are provided from datacenters physically located in the United States. Microsoft Power Platform and Dynamics 365 apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service,  Dynamics 365 Project Service Automation, Dynamics 365 Finance, and Dynamics 365 Supply Chain Management) customer content is stored at rest in datacenters physically located only in the US.
 
 ### Restricted data access by administrators
 
@@ -163,7 +163,7 @@ Dynamics 365 US Government leverages the Microsoft 365 customer administrator UI
 
 ### Dynamics 365 US Government and third-party services
 
-Customer engagement apps provide the ability to integrate third-party applications into the service. These third-party applications and services might involve storing, transmitting, and processing your organization’s customer data on third-party systems that are outside of the customer engagement apps Engagement infrastructure and therefore are not covered by the customer engagement apps compliance and data protection commitments. We recommend that you review the privacy and compliance statements provided by the third parties when assessing the appropriate use of these services for your organization.
+Power Platform and Dynamics 365 apps provide the ability to integrate third-party applications into the service. These third-party applications and services might involve storing, transmitting, and processing your organization’s customer data on third-party systems that are outside of the Power Platform and Dynamics 365 apps Engagement infrastructure and therefore are not covered by the Power Platform and Dynamics 365 apps compliance and data protection commitments. We recommend that you review the privacy and compliance statements provided by the third parties when assessing the appropriate use of these services for your organization.
 
 ### Dynamics 365 US Government and Azure Services
 
