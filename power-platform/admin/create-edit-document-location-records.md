@@ -2,7 +2,7 @@
 title: "Create or edit records for document locations to use SharePoint"
 description: "Learn how to create document location records that will let customer engagement apps use SharePoint document libraries and folders."
 author: Mattp123
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/04/2020

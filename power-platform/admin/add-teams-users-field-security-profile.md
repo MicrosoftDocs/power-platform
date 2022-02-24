@@ -1,7 +1,7 @@
 ---
 title: "Add teams or users to a field security profile to control access"
 description: "Learn how to control team and user access to fields by using field security profiles. Manage permission to read, create, or write in secured fields."
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/30/2017

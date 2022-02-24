@@ -2,7 +2,7 @@
 title: "Preview: Microsoft Power Platform self-service analytics export Power Apps inventory and usage data"
 description: Export Power Apps canvas apps inventory and usage data to use with your organization's line-of-business scenarios.
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/14/2021

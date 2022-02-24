@@ -2,7 +2,7 @@
 title: "Troubleshoot SharePoint integration   | MicrosoftDocs"
 description: Troubleshoot SharePoint integration
 author: Mattp123
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 06/10/2021

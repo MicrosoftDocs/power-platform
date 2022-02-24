@@ -2,7 +2,7 @@
 title: "Regional and language options for your environment | MicrosoftDocs"
 description: Set regional and language options for your environment 
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 11/29/2021

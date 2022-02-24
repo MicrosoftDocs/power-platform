@@ -1,7 +1,7 @@
 ---
 title: "Microsoft Power Platform data loss prevention (DLP) SDK"
 description: "Learn about the capabilities of the Microsoft Power Platform data loss prevention (DLP) software development kit (SDK) and run a sample in PowerShell."
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/08/2021

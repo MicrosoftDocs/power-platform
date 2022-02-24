@@ -1,7 +1,7 @@
 ---
 title: "Email exfiltration controls for connectors | MicrosoftDocs"
 description: Block forwarded emails sent from Microsoft Power Automate.
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 12/14/2020

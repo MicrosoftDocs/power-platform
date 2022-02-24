@@ -2,7 +2,7 @@
 title: "System Settings Goals tab   | MicrosoftDocs"
 description: System Settings Goals tab 
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.subservice: admin

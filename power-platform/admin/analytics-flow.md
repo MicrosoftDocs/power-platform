@@ -3,7 +3,7 @@ title: "Administrator analytics and reports for Microsoft Power Automate"
 description: "Admins can view Microsoft Power Automate analytics in the Power Platform admin center, including reports on run data of flows, flows created, usage, and errors."
 author: "MSFTMan"
 manager: kvivek
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/07/2022

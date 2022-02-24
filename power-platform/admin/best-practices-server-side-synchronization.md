@@ -1,7 +1,7 @@
 ---
 title: "Best practices for server-side synchronization  | MicrosoftDocs"
 description: Consider the best practices outlined in this topic when you plan and deploy server-side synchronization.
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 08/12/2021

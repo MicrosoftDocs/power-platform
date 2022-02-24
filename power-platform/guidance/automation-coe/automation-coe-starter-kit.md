@@ -2,7 +2,7 @@
 title: Microsoft Power Platform Automation CoE starter kit (preview) | Microsoft Docs
 description: Microsoft Power Platform Automation CoE starter kit is designed to help organizations manage, govern, and scale automation platform adoption based on industry best practices.
 author: kathyos
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 12/8/2021

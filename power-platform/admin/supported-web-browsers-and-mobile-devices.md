@@ -2,7 +2,7 @@
 title: "Supported web browsers and mobile devices  | MicrosoftDocs"
 description: Supported web browsers and mobile devices 
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 08/23/2021

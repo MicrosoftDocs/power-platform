@@ -2,7 +2,7 @@
 title: "System Settings Marketing tab  | MicrosoftDocs"
 description: System Settings Marketing tab 
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/17/2021

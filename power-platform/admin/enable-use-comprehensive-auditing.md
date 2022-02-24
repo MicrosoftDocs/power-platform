@@ -1,7 +1,7 @@
 ---
 title: "Microsoft Dataverse and model-driven apps activity logging  | MicrosoftDocs"
 description: Learn how to enable auditing to be used for reports in the Microsoft 365 Security Compliance Center.
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 12/10/2020

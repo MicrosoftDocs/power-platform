@@ -3,7 +3,7 @@ title: "Roles and responsibilities - Microsoft Power Platform | MicrosoftDocs"
 description: "We recommend the following roles and responsibilities to be involved in establishing a Center of Excellence."
 author: manuelap-msft
 manager: devkeydet
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/10/2020

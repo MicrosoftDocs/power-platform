@@ -1,7 +1,7 @@
 ---
 title: "Impact of DLP policies on apps and flows  | MicrosoftDocs"
 description: About the impact of DLP policies on apps and flows.
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/03/2022
