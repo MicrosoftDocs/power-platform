@@ -191,7 +191,7 @@ Make sure to configure the redirect URL to `https://token.botframework.com/.auth
 
 ### Manual authentication fields
 
-The following are all fields you might see when configuring manual authentication. However depending on your selection for Service provider, not all fields will be present.
+The following are all possible fields you'll see when configuring manual authentication. However depending on your choice for [service provider](#service-provider), some fields won't be present.
 
 #### Service provider
 
@@ -205,13 +205,13 @@ For more information, see [OAuth generic providers](/azure/bot-service/bot-build
 
 Your client ID obtained from the identity provider.
 
-When using Azure AD, you can find this information in the app registration's **Overview** page as **Application (client) ID**.
+To find this information when using Azure AD, go to the app registration's **Overview** page as **Application (client) ID**.
 
 ### Client secret
 
 Your client secret obtained from the identity provider registration.
 
-When using Azure AD, you can find this information when generating a new client secret. If you navigate away from the **Certificates & secrets** page, the secret's **Value** will be obfuscated and you'll need to create a new one
+To find this information when using Azure AD, generate a new client secret. If you navigate away from the **Certificates & secrets** page, the secret's **Value** will be obfuscated and you'll need to create a new one
 
 #### Token exchange URL (required for SSO)
 
@@ -231,7 +231,7 @@ When using Azure AD, use `refresh_token={RefreshToken}&redirect_uri={RedirectUrl
 
 List of [scopes](/azure/active-directory/develop/developer-glossary#scopes) you want authenticated users to have once signed in. Use spaces to separate multiple scopes. Make sure you're only setting the necessary scopes, and follow the [Least privilege access control principle](/windows-server/identity/ad-ds/plan/security-best-practices/implementing-least-privilege-administrative-models). If you're using a custom scope, use the full URI including the exposed Application ID URI.
 
-When using Azure AD, you can find this information on the **API permissions** page under the **API / Permissions** name section.
+To find this information when using Azure AD, go to the **API permissions** page under the **API / Permissions** name section.
 
 For custom scopes defined by an exposed API, you'll need to include the API ID. On the **Expose an API** page, prepend the **Application ID URI** and ending slash `/` to the scope name. For example, if your custom scope name is `app.scope.sso`, and the **Application ID URI** is `api://1234-4567`, then you would enter `api://1234-4567/app.scope.sso` as the scope.
 
@@ -239,7 +239,7 @@ For custom scopes defined by an exposed API, you'll need to include the API ID. 
 
 URL Template for tokens, provided by your identity provider. For example, `https://login.microsoftonline.com/common/oauth2/v2.0/token`. For Azure Apps, you need to replace the base URL with your Azure App URL.
 
-When using Azure AD, you can find this information by navigating to the app registration's **Overview** page and then selecting **Endpoints**. This is listed as the **OAuth 2.0 token endpoint (v2)**.
+To find this information when using Azure AD, go to the app registration's **Overview** page and then selecting **Endpoints**. This is listed as the **OAuth 2.0 token endpoint (v2)**.
 
 #### Token URL query string template
 
@@ -257,7 +257,7 @@ When using Azure AD, use `code={Code}&grant_type=authorization_code&redirect_uri
 
 URL template for refresh. For example, `https://login.microsoftonline.com/common/oauth2/v2.0/token`. For Azure Apps, you want to replace the base URL with your Azure App URL.
 
-When using Azure AD, you can find this information by navigating to the app registration's **Overview** page and then selecting **Endpoints**. This is listed as the **OAuth 2.0 token endpoint (v2)**.
+To find this information when using Azure AD, go to the app registration's **Overview** page and then selecting **Endpoints**. This is listed as the **OAuth 2.0 token endpoint (v2)**.
 
 #### Scope list delimiter
 
@@ -269,7 +269,7 @@ When using Azure AD, use a comma (`,`).
 
 URL template for authorization, defined by your identity provider. For example, `https://login.microsoftonline.com/common/oauth2/v2.0/authorize`
 
-When using Azure AD, you can find this information by navigating to the app registration's **Overview** page and then selecting **Endpoints**. This is listed as the **OAuth 2.0 token endpoint (v2)**.
+To find this information when using Azure AD, go to the app registration's **Overview** page and then selecting **Endpoints**. This is listed as the **OAuth 2.0 token endpoint (v2)**.
 
 #### Authorization URL query string template
 
