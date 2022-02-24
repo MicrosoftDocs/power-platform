@@ -211,7 +211,7 @@ Your client ID obtained from the identity provider.
 
 To find this information when using Azure AD, go to the app registration's **Overview** page as **Application (client) ID**.
 
-### Client secret
+#### Client secret
 
 Your client secret obtained from the identity provider registration.
 
