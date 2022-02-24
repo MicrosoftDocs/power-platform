@@ -118,9 +118,13 @@ This topic is automatically triggered for any user who talks to the bot without 
 Your bot's **authentication option** and **Require user to sign in** combination determines whether you can [share the bot](admin-share-bots.md) to control who in your organization can chat with your bot or not.  Sharing a bot for collaboration is not impacted by the end-user authentication setting.
 
 - **No authentication**. Any user who has a link to the bot (or can find it, for example, on your website) can chat with it. You cannot control which users can chat with the bot in your organization.
+
 - **Only for Teams**. The bot will only work on [the Teams channel](publication-add-bot-to-microsoft-teams.md). This means the user will always be signed in, and therefore the **Require users to sign in** option will be enabled and can't be changed. You can control who can chat with the bot in your organization with bot sharing.
+
 - **Manual (for any channel including Teams)**.
+  
   - If your authentication setting is configured to **Manual**, and the service provider is either **Azure Active Directory** or **Azure Active Directory V2**, you can enable the **Require users to sign in** option to control who can chat with the bot in your organization via bot sharing.
+  
   - If your authentication provider is set as **Generic OAuth 2**, you can toggle the **Require users to sign in** option. When turned on, a user who signs in can chat with the bot, but you cannot control which specific users are allowed to chat with the bot in your organization with bot sharing.
 
 When a bot's authentication option can't control who can chat with the bot, selecting **Share** on the bot's homepage will inform you that anyone can chat with the bot.
@@ -142,21 +146,29 @@ Make sure to configure the redirect URL to `https://token.botframework.com/.auth
 #### Create an app registration
 
 1. Sign in to the [Azure portal](https://portal.azure.com), using an admin account on the same tenant as your Power Virtual Agents chatbot.
+
 1. Go to [App registrations](https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade), either by selecting the icon or searching in the top search bar. Create a new **Application Registration**.
+
 1. Select **New registration** and enter a name for the registration. It can be helpful to use the name of the bot you're enabling authentication for. For example, if your bot is called "Contoso sales help", you might name the app registration as "ContosoSalesReg" or something similar.
+
 1. Select **Accounts in any organizational directory (Any Azure AD directory - Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox)**
+
 1. Leave the **Redirect URI** section blank for now, as you'll enter that information in the next steps. Select **Register**.
 
 #### Add the redirect URL
 
 1. Once the registration is completed, it will open to the **Overview** page. Go to **Authentication** and then select **Add a platform**.
+
 1. On the **configure platforms** blade select **Web**. Under **Redirect URIs** add `https://token.botframework.com/.auth/web/redirect`. Under the **Implicit grant** section, select the **Id Tokens** and **Access Tokens** checkboxes.
+
 1. Select **Configure** to confirm your changes.
 
 #### Generate a client secret
 
 1. Go to **Certificates & Secrets**.
+
 1. Under the **Client secrets** section, select **New client secret**. Enter a description (one will be provided if you leave this blank), and select the expiry period. Select the shortest period that will be relevant for the life of your bot.
+
 1. Select **Add** to create the secret. Take note of the secret's **Value** and store this in a temporary place (such as an open Notepad document), as you'll enter it in your bot's authentication settings.
 
 ## Configure authentication with Manual Azure AD
@@ -164,16 +176,20 @@ Make sure to configure the redirect URL to `https://token.botframework.com/.auth
 This section shows an example of Azure AD being configured as an OAuth provider. If you select another service provider, you might have fewer fields to configure. If you're using Azure AD as a provider, we recommend using the "Azure Active Directory" or "Azure Active Directory V2" for easier configuration.
 
 1. Sign in to Power Virtual Agents. If you're using Azure AD as your identity provider, ensure you log in on the same tenant where you created the app registration.
+
 1. Confirm you've selected the bot for which you want to enable authentication by selecting the bot icon on the top menu and choosing the bot.
+
 1. Select **Manage** on the side pane, and then go to the **Security** tab and select the **Authentication** card.
 
     :::image type="content" source="media/configuration-end-user-authentication/auth-manage-sm.png" alt-text="Screenshot of the Authentication under Manage left bar menu.":::
 
 1. Enter the information as described for each of the fields in the following table. The information required depends on your setup and provider. If you have questions about the required information, contact your administrator or identity provider.
+
 1. Click **Save** to finish the configuration.
 
 > [!NOTE]
 > The examples provided below are for an Azure AD common endpoint. For more information, see [OAuth generic providers](/azure/bot-service/bot-builder-concept-identity-providers?view=azure-bot-service-4.0&tabs=adv1%2Cga2&preserve-view=true) documentation.  
+>
 > Only use Azure AD V2 token endpoints, as specified in the table.
 
 ### Client ID
@@ -194,7 +210,7 @@ This is an optional field used when [configuring single sign-on](configure-sso.m
 
 ### Refresh URL query string template
 
-Refresh URL query string separator for the token URL. Usually a question mark '?'.
+Refresh URL query string separator for the token URL. Usually a question mark `?`.
 
 ### Refresh body template
 
