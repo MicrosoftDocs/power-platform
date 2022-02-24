@@ -148,7 +148,7 @@ support. Branching means you diverge from the main line of development and
 continue to do work without changing the main line. The process of merging
 consists of combining one branch into another, such as from a development branch
 into a main line branch. Some common branching strategies are trunk-based
-branching, release branching, and feature branching. More information: [Adopt a Git branching strategy](/azure/devops/repos/git/git-branching-guidance?view=azure-devops)
+branching, release branching, and feature branching. More information: [Adopt a Git branching strategy](/azure/devops/repos/git/git-branching-guidance)
 
 ### Source control process using a solution
 
@@ -200,7 +200,7 @@ To get started, you need the following:
 -   An Azure DevOps organization. If you don't have one, you can [create one for
     free](https://dev.azure.com/).
 
-More information: [Create your first pipeline](/azure/devops/pipelines/create-first-pipeline?view=azure-devops)
+More information: [Create your first pipeline](/azure/devops/pipelines/create-first-pipeline)
 
 ## Licensing
 To create or edit apps and flows by using Power Apps and Power Automate,
