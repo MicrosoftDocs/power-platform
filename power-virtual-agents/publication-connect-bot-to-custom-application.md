@@ -12,9 +12,7 @@ ms.custom: "publication, azure, ceX"
 ms.collection: virtual-agent
 ---
 
-# Add bot to mobile and custom apps (Preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+# Add bot to mobile and custom apps
 
 You can connect your bot to a custom app so that the app's users can interact with the bot directly from within your app.
 
