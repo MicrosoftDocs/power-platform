@@ -182,21 +182,21 @@ Your client ID obtained from the identity provider.
 
 When using Azure AD, you can find this information in the app registration's **Overview** page as **Application (client) ID**.
 
-### Client Secret
+### Client secret
 
 Your client secret obtained from the identity provider registration.
 
 When using Azure AD, you can find this information when generating a new client secret. If you navigate away from the **Certificates & secrets** page, the secret's **Value** will be obfuscated and you'll need to create a new one
 
-### Token exchange URL (required for single sign-on)
+### Token exchange URL (required for SSO)
 
 This is an optional field used when [configuring single sign-on](configure-sso.md).
 
-### Refresh URL Query String Template
+### Refresh URL query string template
 
 Refresh URL query string separator for the token URL. Usually a question mark '?'.
 
-### Refresh Body Template
+### Refresh body template
 
 Template for the refresh body.
 
@@ -210,43 +210,43 @@ When using Azure AD, you can find this information on the **API permissions** pa
 
 For custom scopes defined by an exposed API, you'll need to include the API ID. On the **Expose an API** page, prepend the **Application ID URI** and ending slash `/` to the scope name. For example, if your custom scope name is `app.scope.sso`, and the **Application ID URI** is `api://1234-4567`, then you would enter `api://1234-4567/app.scope.sso` as the scope.
 
-### Token URL Template
+### Token URL template
 
 URL Template for tokens, provided by your identity provider. For example, `https://login.microsoftonline.com/common/oauth2/v2.0/token`. For Azure Apps, you need to replace the base URL with your Azure App URL.
 
 When using Azure AD, you can find this information by navigating to the app registration's **Overview** page and then selecting **Endpoints**. This is listed as the **OAuth 2.0 token endpoint (v2)**.
 
-### Token URL Query String Template
+### Token URL query string template
 
 Query string separator for the token URL. Usually a question mark `?`.
 
 When using Azure AD, use a question mark `?`.
 
-### Token Body Template
+### Token body template
 
 Template for the token body.
 
 When using Azure AD, use `code={Code}&grant_type=authorization_code&redirect_uri={RedirectUrl}&client_id={ClientId}&client_secret={ClientSecret}`.
 
-### Refresh URL Template
+### Refresh URL template
 
 URL template for refresh. For example, `https://login.microsoftonline.com/common/oauth2/v2.0/token`. For Azure Apps, you want to replace the base URL with your Azure App URL.
 
 When using Azure AD, you can find this information by navigating to the app registration's **Overview** page and then selecting **Endpoints**. This is listed as the **OAuth 2.0 token endpoint (v2)**.
 
-### Scope List delimiter
+### Scope list delimiter
 
 The separator character for the scope list. Empty spaces (` `) are not supported in this field, but can be used in the **Scopes** field if required by the identity provider. In that case, use a comma (`,`) for this field, and spaces (` `) in the **Scopes** field.
 
 When using Azure AD, use a comma (`,`).
 
-### Authorization URL Template
+### Authorization URL template
 
 URL template for authorization, defined by your identity provider. For example, `https://login.microsoftonline.com/common/oauth2/v2.0/authorize`
 
 When using Azure AD, you can find this information by navigating to the app registration's **Overview** page and then selecting **Endpoints**. This is listed as the **OAuth 2.0 token endpoint (v2)**.
 
-### Authorization URL Query String Template
+### Authorization URL query string template
 
 Query template for authorization, provided by your identity provider. Keys in the query string template will vary depending on the identity provider.
 
