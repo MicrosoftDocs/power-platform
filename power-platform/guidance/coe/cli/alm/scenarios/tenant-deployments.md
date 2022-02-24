@@ -229,7 +229,7 @@ coe alm install -c devops \
    }
    ```
 
-Manual installation using the [Create an app registration in your Azure Active Directory environment](../../../setup-almacceleratorpowerplatform.md#create-an-app-registration-in-your-aad-environment).
+Manual installation using the [Create an app registration in your Azure Active Directory environment](../../../setup-almacceleratorpowerplatform.md#create-an-app-registration-in-your-azure-ad-environment).
 
 ## Multi-tenant deployment
 
