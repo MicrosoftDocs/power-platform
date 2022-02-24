@@ -5,7 +5,7 @@ author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/10/2022
+ms.date: 02/23/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -54,7 +54,7 @@ Access to Power Apps US Government plans is restricted to the following offering
 
 - Power Apps per app plan for Government
 - Power Apps per user plan for Government
-- In addition to the standalone plans, Power Apps and Power Automate capabilities are also included in certain Microsoft 365 US Government and Dynamics 365 US Government plans, allowing customers to extend and customize Microsoft 365 and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, and Dynamics 365 Project Service Automation). 
+- In addition to the standalone plans, Power Apps and Power Automate capabilities are also included in certain Microsoft 365 US Government and Dynamics 365 US Government plans, allowing customers to extend and customize Microsoft 365, Power Platform, and Dynamics 365 apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, and Dynamics 365 Project Service Automation). 
 
 Additional information about the differences in functionality between these groups of licenses is described in more detail on the [Power Apps licensing information](https://powerapps.microsoft.com/pricing/) page. Power Apps US Government is available through the Volume Licensing and Cloud Solution Provider purchasing channels. The Cloud Solution Provider program is not currently available for GCC High customers.
 
