@@ -40,11 +40,6 @@ Shorter trigger phrases are better, and you should aim for 2 to 10 words. You ju
 > [!NOTE]
 > The AI capabilities listed in this topic are in preview, available to bots created with English as the set language.
 
-> [!IMPORTANT]
-> This is a preview feature.
->
-> Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and [provide feedback](https://powerusers.microsoft.com/t5/Forums/ct-p/pva_forums).
-
 ## Advanced AI features overview
 
 There are some specific features that further improve how the AI in Power Virtual Agents understands what your bot users are asking, and how the AI provides answers. The following video provides an overview of these features, each of which is described in further detail on this page.  
