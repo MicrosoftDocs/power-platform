@@ -2,7 +2,7 @@
 title: "Configure a chatbot for a live or demo website (contains video)"
 description: "You can use a prebuilt demo website to try out your bot, or you can publish it directly to your own webpage using an IFrame code snippet."
 keywords: "Publish, channel, connector, sample code, developer, extensibility, PVA"
-ms.date: 01/25/2022
+ms.date: 02/22/2022
 
 ms.topic: article
 author: iaanw
@@ -38,7 +38,7 @@ You can edit the welcome message and suggested trigger phrases for the demo webs
 
 ### Update the demo website
 
-1. On the side pane, go to **Manage** > **Channels**.
+1. On the side pane, select **Manage** then **Channels**.
 
 1. Select the **Demo website** tile.
 
@@ -58,7 +58,7 @@ You can also add the bot to your Power Platform admin center.
 
 ### Add bot to your website
 
-1. On the side pane, go to **Manage** > **Channels**.
+1. On the side pane, select **Manage** then **Channels**.
 
 1. Select **Custom website** and then select **Copy** to copy it directly to the clipboard, or **Share to email** to open a new email message with the snippet included, in your default email app.
 
