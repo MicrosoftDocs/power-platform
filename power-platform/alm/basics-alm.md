@@ -82,7 +82,7 @@ Dataverse.
 More information: 
 - [Environments overview](../admin/environments-overview.md)
 - [Control user access to environments: security groups and licenses](../admin/control-user-access.md)
-- [Create users and assign security roles](../admin/create-users-assign-online-security-roles.md) 
+- [Create users and assign security roles](/power-platform/alm/create-users) 
 - [Create environments](../admin/create-environment.md)
 
 ## Solutions
