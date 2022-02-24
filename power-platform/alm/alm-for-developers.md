@@ -9,7 +9,7 @@ manager: kvivek
 ms.custom: ""
 ms.date: 05/05/2020
 ms.reviewer: "pehecke"
-ms.service: power-platform
+
 ms.topic: "article"
 ms.assetid: 
 search.audienceType: 

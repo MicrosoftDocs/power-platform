@@ -4,7 +4,7 @@ description: "This document lists down some strategies to organize your solution
 ms.custom: ""
 ms.date: 07/09/2021
 ms.reviewer: "pehecke"
-ms.service: power-platform
+
 ms.topic: "article"
 author: mikkelsen2000
 ms.subservice: alm

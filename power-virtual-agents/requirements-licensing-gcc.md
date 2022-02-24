@@ -3,7 +3,7 @@ title: "Understand the US Government plans available"
 description: "This document lists the capabilities, requirements, and features for US Government plans for Power Virtual Agents."
 keywords: "Administration, licensing, PVA, standalone, compare, comparison"
 ms.date: 12/02/2021
-ms.service: power-virtual-agents
+
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -31,11 +31,8 @@ The Power Virtual Agents GCC environment is compliant with the Federal requireme
 In addition to the features and capabilities of Power Virtual Agents, organizations that use Power Virtual Agents US Government plans benefit from the following unique features:
 
 - Your organization's customer content is physically separated from customer content in non-US-Government plans for Power Virtual Agents.
-
 - Your organization's customer content is stored within the United States.
-
 - Access to your organization's customer content is restricted to screened Microsoft personnel.
-
 - Power Virtual Agents US Government complies with all certifications and accreditations that US Public Sector customers require.
 
 ### GCC High environment
@@ -53,7 +50,6 @@ For the US Department of Defense contractor customer base, Microsoft operates th
 Power Virtual Agents US Government plans are available to:
 
 - \(1\) US federal, state, local, tribal, and territorial government entities, and
-
 - \(2\) other entities, which handle data that is subject to government regulations and requirements and where use of Power Virtual Agents US Government plans is appropriate to meet these requirements, subject to validation of eligibility.
 
 Microsoft's validation of eligibility includes confirmation of handling data subject to International Traffic in Arms Regulations (ITAR), law enforcement data subject to the FBI's Criminal Justice Information Services (CJIS) Policy, or other government-regulated or controlled data. Validation may require sponsorship by a government entity with specific requirements for the handling of data.
@@ -85,18 +81,18 @@ Access to Power Virtual Agents US Government customer content by Microsoft admin
 Power Virtual Agents support and service engineering staff do not have standing access to customer content hosted in the Power Virtual Agents US Government service. Any staff who requests temporary permission elevation which would grant access to customer content must first have passed the following background checks.
 
 | Microsoft Personnel Screening and Background Checks&nbsp;<a href="#AccFn1" id="AccRef1"><sup>1</sup></a> | Description                                                                                                                                                                                                   |
-|------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| U.S. citizenship                                                 | Verification of U.S. citizenship                                                                                                                                                                              |
-| Employment history check                                         | Verification of seven (7) year employment history                                                                                                                                                             |
-| Education verification                                           | Verification of highest degree attained                                                                                                                                                                       |
-| Social Security number (SSN) search                              | Verification that the SSN the employees provides is valid                                                                                                                                                     |
-| Criminal history check                                           | A seven (7) year criminal record check for felony and misdemeanor offenses at the state, county, and local level and at the federal level                                                                     |
-| Office of Foreign Assets Control list (OFAC)                     | Validation against the Department of Treasury list of groups with whom U.S. persons are not allowed to engage in trade or financial transactions                                                              |
-| Bureau of Industry and Security list (BIS)                       | Validation against the Department of Commerce list of individuals and entities barred from engaging in export activities                                                                                      |
-| Office of Defense Trade Controls Debarred Persons list (DDTC)    | Validation against the Department of State list of individuals and entities barred from engaging in export activities related to the defense industry                                                         |
-| Fingerprinting check                                             | Fingerprint background check against FBI databases                                                                                                                                                            |
-| CJIS background screening                                        | State-adjudicated review of federal and state criminal history by state CSA appointed authority within each state that has signed up for the Microsoft CJIS IA program                                        |
-| Department of Defense IT-2                                       | Staff who request elevated permissions to customer data or privileged administrative access to DoD SRG L5 service capacities must pass DoD IT-2 adjudication, based on a successful OPM Tier 3 investigation. |
+| -------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| U.S. citizenship                                                                                         | Verification of U.S. citizenship                                                                                                                                                                              |
+| Employment history check                                                                                 | Verification of seven (7) year employment history                                                                                                                                                             |
+| Education verification                                                                                   | Verification of highest degree attained                                                                                                                                                                       |
+| Social Security number (SSN) search                                                                      | Verification that the SSN the employees provides is valid                                                                                                                                                     |
+| Criminal history check                                                                                   | A seven (7) year criminal record check for felony and misdemeanor offenses at the state, county, and local level and at the federal level                                                                     |
+| Office of Foreign Assets Control list (OFAC)                                                             | Validation against the Department of Treasury list of groups with whom U.S. persons are not allowed to engage in trade or financial transactions                                                              |
+| Bureau of Industry and Security list (BIS)                                                               | Validation against the Department of Commerce list of individuals and entities barred from engaging in export activities                                                                                      |
+| Office of Defense Trade Controls Debarred Persons list (DDTC)                                            | Validation against the Department of State list of individuals and entities barred from engaging in export activities related to the defense industry                                                         |
+| Fingerprinting check                                                                                     | Fingerprint background check against FBI databases                                                                                                                                                            |
+| CJIS background screening                                                                                | State-adjudicated review of federal and state criminal history by state CSA appointed authority within each state that has signed up for the Microsoft CJIS IA program                                        |
+| Department of Defense IT-2                                                                               | Staff who request elevated permissions to customer data or privileged administrative access to DoD SRG L5 service capacities must pass DoD IT-2 adjudication, based on a successful OPM Tier 3 investigation. |
 
 <a href="#AccRef1" id="AccFn1">1.</a> Applies only to personnel with temporary or standing access to customer content hosted in Power Virtual Agents US Government (GCC and GCC High)
 
@@ -154,13 +150,13 @@ The Azure AD account management services are hosted on physical servers managed 
 
 You use a different set of URLs to access Power Virtual Agents US Government environments, as shown in the following table. The table also includes the commercial URLs for contextual reference.
 
-| Commercial version | US Government version |
-|-------------------------|-------------------------|
-| [https://web.powerva.microsoft.com](https://web.powerva.microsoft.com) | [https://gcc.powerva.microsoft.us](https://gcc.powerva.microsoft.us) (GCC) </br></br>[https://high.powerva.microsoft.us](https://high.powerva.microsoft.us) (GCC High)|
-| [https://flow.microsoft.com](https://flow.microsoft.com/) | [https://gov.flow.microsoft.us](https://gov.flow.microsoft.us/) (GCC)</br></br>[https://high.flow.microsoft.us](https://high.flow.microsoft.us/) (GCC High)  |
-| [https://make.powerapps.com](https://make.powerapps.com/) | [https://make.gov.powerapps.us](https://make.gov.powerapps.us/) (GCC)<br /></br>[https://make.high.powerapps.us](https://make.high.powerapps.us/) (GCC High)|
-| [https://flow.microsoft.com/connectors](https://flow.microsoft.com/connectors) | [https://gov.flow.microsoft.us/connectors](https://gov.flow.microsoft.us/connectors)<br /></br>[https://high.flow.microsoft.us/connectors](https://high.flow.microsoft.us/connectors) (GCC High)|
-| [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com/) | [https://gcc.admin.powerplatform.microsoft.us](https://gcc.admin.powerplatform.microsoft.us/)<br /></br>[https://high.admin.powerplatform.microsoft.us](https://high.admin.powerplatform.microsoft.us/) (GCC High) |
+| Commercial version                                                                      | US Government version                                                                                                                                                                                             |
+| --------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [https://web.powerva.microsoft.com](https://web.powerva.microsoft.com)                  | [https://gcc.powerva.microsoft.us](https://gcc.powerva.microsoft.us) (GCC) </br></br>[https://high.powerva.microsoft.us](https://high.powerva.microsoft.us) (GCC High)                                            |
+| [https://flow.microsoft.com](https://flow.microsoft.com/)                               | [https://gov.flow.microsoft.us](https://gov.flow.microsoft.us/) (GCC)</br></br>[https://high.flow.microsoft.us](https://high.flow.microsoft.us/) (GCC High)                                                       |
+| [https://make.powerapps.com](https://make.powerapps.com/)                               | [https://make.gov.powerapps.us](https://make.gov.powerapps.us/) (GCC)</br></br>[https://make.high.powerapps.us](https://make.high.powerapps.us/) (GCC High)                                                       |
+| [https://flow.microsoft.com/connectors](https://flow.microsoft.com/connectors)          | [https://gov.flow.microsoft.us/connectors](https://gov.flow.microsoft.us/connectors)</br></br>[https://high.flow.microsoft.us/connectors](https://high.flow.microsoft.us/connectors) (GCC High)                   |
+| [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com/) | [https://gcc.admin.powerplatform.microsoft.us](https://gcc.admin.powerplatform.microsoft.us/)</br></br>[https://high.admin.powerplatform.microsoft.us](https://high.admin.powerplatform.microsoft.us/) (GCC High) |
 
 For those customers that implement network restrictions, ensure access to the following domains is made available to your end users' access points:
 
@@ -193,16 +189,14 @@ Refer to the [Azure IP Ranges and Service Tags - US Government Cloud](https://w
 
 Some of the features available in the commercial version of Power Virtual Agents are not available to Power Virtual Agents US Government customers. The Power Virtual Agents team is actively working on making these features available to US Government customers and will update this article when these features become available.
 
-Feature or capability | Available in GCC | Available in GCC High
-|-|-|-|
-[Power Virtual Agents Analytics](analytics-overview.md)&nbsp;<a id="LimsRef1" href="#LimsFn1"><sup>1</sup></a>| &#X2716;</br>No | &#X2716;</br>No
-[Power Virtual Agents Microsoft Teams app experience](teams/fundamentals-what-is-power-virtual-agents-teams.md) | &#X2716;</br>No | &#X2716;</br>No
-[Teams channel in the Power Virtual Agents web app](publication-add-bot-to-microsoft-teams.md) | &#X2714;</br>Yes | &#X2716;</br>No
-[Transfer to agents](configuration-hand-off-omnichannel.md) | &#X2714;</br>Yes | &#X2716;</br>No
-
+| Feature or capability                                                                                           | Available in GCC | Available in GCC High |
+| --------------------------------------------------------------------------------------------------------------- | ---------------- | --------------------- |
+| [Power Virtual Agents Analytics](analytics-overview.md)&nbsp;<a id="LimsRef1" href="#LimsFn1"><sup>1</sup></a>  | &#X2716;</br>No  | &#X2716;</br>No       |
+| [Power Virtual Agents Microsoft Teams app experience](teams/fundamentals-what-is-power-virtual-agents-teams.md) | &#X2716;</br>No  | &#X2716;</br>No       |
+| [Teams channel in the Power Virtual Agents web app](publication-add-bot-to-microsoft-teams.md)                  | &#X2714;</br>Yes | &#X2716;</br>No       |
+| [Transfer to agents](configuration-hand-off-omnichannel.md)                                                     | &#X2714;</br>Yes | &#X2716;</br>No       |
 
 <a id="LimsFn1" href="#LimsRef1">1. </a>Alternatively, you can create [Custom Analytics using a Power BI dashboard (blog)](https://powervirtualagents.microsoft.com/blog/custom-analytics-solution-for-power-virtual-agents/).
-
 
 ## Requesting support
 

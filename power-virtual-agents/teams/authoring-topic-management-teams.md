@@ -3,7 +3,7 @@ title: "Fix errors, set status, and copy topics in Microsoft Teams"
 description: "Resolve errors, set the status of individual topics, and copy topics when creating new topics to save time, all in the Power Virtual Agents app in Microsoft Teams."
 keywords: "PVA"
 ms.date: 01/25/2022
-ms.service: power-virtual-agents
+
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -23,9 +23,12 @@ Select the version of Power Virtual Agents you're using here:
 
 There are a number of ways you can manage your topics. Power Virtual Agents includes a topic checker that lets you know if there are errors in your topics, you can turn topics on or off so they don't appear to people chatting with your bot, and you can copy or duplicate topics to make it easier to create new ones.
 
-- [Topic errors](#topic-errors)
-- [Topic status](#topic-status)
-- [Copying a topic](#copying-a-topic)
+- [Manage topics in Power Virtual Agents in Teams](#manage-topics-in-power-virtual-agents-in-teams)
+  - [Prerequisites](#prerequisites)
+  - [Topic errors](#topic-errors)
+    - [Types of errors](#types-of-errors)
+  - [Topic status](#topic-status)
+  - [Copying a topic](#copying-a-topic)
 
 ## Prerequisites
 
@@ -37,18 +40,18 @@ When you save a topic, you'll be notified if there are errors or warnings. Warni
 
 Errors will prevent the bot from working and must be fixed before you can publish your bot.
 
-:::image type="content" source="media/topics-errors-save-teams.png" alt-text="The message indicates you have errors you should fix.":::
+:::image type="content" source="../media/authoring-topic-management/topics-errors-save-teams.png" alt-text="The message indicates you have errors you should fix.":::
 
 You can see the error state of a topic on the Topics page.
 
 > [!NOTE]
 > The Topics page only shows errors as they will stop your bot from working, unlike warnings.
 
-:::image type="content" source="media/topics-errors-teams.png" alt-text="The topics page identifies the number of errors in your topic.":::
+:::image type="content" source="../media/authoring-topic-management/topics-errors-teams.png" alt-text="The topics page identifies the number of errors in your topic.":::
 
 Select the error count to open the authoring canvas to where the first error is. Select **Topic checker** to see a list of the errors. Selecting an error in the topic checker takes you directly to the source of the error in the topic.  
 
-:::image type="content" source="media/topics-checker-teams.png" alt-text="The topic checker is on the top pane and shows all errors and warnings.":::
+:::image type="content" source="../media/authoring-topic-management/topics-checker-teams.png" alt-text="The topic checker is on the top pane and shows all errors and warnings.":::
 
 > [!NOTE]
 > You can save topics with errors. Topics with errors can't be published.
@@ -79,7 +82,7 @@ When a bot is published, all topics (**On** or **Off**) will be published, but t
 
 You can change this with the toggle in the **Status** column on the Topics page.
 
-:::image type="content" source="media/topics-status-teams.png" alt-text="The Status column shows each topic with an On or Off toggle switch.":::
+:::image type="content" source="../media/authoring-topic-management/topics-status-teams.png" alt-text="The Status column shows each topic with an On or Off toggle switch.":::
 
 By default new topics will be created with their status set to **On**.
 
@@ -92,7 +95,7 @@ Once you have created a few topics, you may want to use a previous topic as a ba
 
 On the Topics page, select the menu icon on a topic's name and then **Make a copy**.
 
-:::image type="content" source="media/topics-menu-icon-teams.png" alt-text="Make a copy from the menu icon." border="false":::
+:::image type="content" source="../media/authoring-topic-management/topics-menu-icon-teams.png" alt-text="Make a copy from the menu icon." border="false":::
 
 This option creates a duplicate of the selected topic with *(Copy)* added to the name. All of the topic content - such as the description, trigger phrases, and the entire conversation - is copied over to the new topic.
 

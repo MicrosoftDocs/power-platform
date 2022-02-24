@@ -2,7 +2,7 @@
 title: "Administer Power Automate  | MicrosoftDocs"
 description: Administer Power Automate
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 08/13/2020

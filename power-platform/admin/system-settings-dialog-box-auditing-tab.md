@@ -2,7 +2,7 @@
 title: "System Settings Auditing tab  | MicrosoftDocs"
 description: System Settings Auditing tab 
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/17/2021

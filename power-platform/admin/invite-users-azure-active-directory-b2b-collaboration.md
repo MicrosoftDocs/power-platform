@@ -1,7 +1,7 @@
 ---
 title: "Invite users with Azure Active Directory B2B collaboration  | MicrosoftDocs"
 description: Invite users with Azure Active Directory B2B collaboration
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/04/2022

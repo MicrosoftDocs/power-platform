@@ -2,7 +2,7 @@
 title: "Create or edit business units  | MicrosoftDocs"
 description: Learn how to create or edit business units 
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/18/2022

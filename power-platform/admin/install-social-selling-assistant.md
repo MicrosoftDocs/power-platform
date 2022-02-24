@@ -3,7 +3,7 @@ title: "Install the Social Selling Assistant  | MicrosoftDocs"
 description: Install the Social Selling Assistant
 author: m-hartmann
 manager: kvivek
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/20/2020

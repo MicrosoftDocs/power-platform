@@ -2,7 +2,7 @@
 title: "Choose the records to synchronize between customer engagement apps and Exchange   | MicrosoftDocs"
 description: Choose the records to synchronize between customer engagement apps and Exchange 
 author: mduelae
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/09/2022

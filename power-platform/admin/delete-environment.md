@@ -2,7 +2,7 @@
 title: "Delete an environment in Power Platform admin center"
 description: "Learn how to delete or remove an environment to recover storage space."
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/26/2021

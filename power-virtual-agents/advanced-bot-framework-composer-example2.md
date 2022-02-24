@@ -3,7 +3,7 @@ title: "Use Bot Framework Composer to display an options list in chatbots"
 description: "Use Bot Framework Composer to add multi-select options to your Power Virtual Agents chatbot."
 keywords: "composer, adaptive card"
 ms.date: 01/25/2022
-ms.service: power-virtual-agents
+
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -87,7 +87,7 @@ Next, go to the **Bot Responses** tab in Composer and select **DailySpecials**. 
 
 :::image type="content" source="media/Composer_Example2/E2_DailySpecials_BotResponse.png" alt-text="Composer Bot Responses tab - bot responses code.":::
 
-Go back to the **Create** tab in Composer and select **BeginDialog** under **DailySecials**.
+Go back to the **Create** tab in Composer and select **BeginDialog** under **DailySpecials**.
 
 Add a new prompt for user input to this dialog by selecting **Multi-choice** under the **Ask a question** menu option.
 

@@ -1,7 +1,7 @@
 ---
 title: "Manage user account synchronization  | MicrosoftDocs"
 description: Manage user account synchronization
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/21/2021

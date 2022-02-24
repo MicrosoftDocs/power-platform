@@ -2,7 +2,7 @@
 title: "Use Outlook category to track appointments and emails  | MicrosoftDocs"
 description: Use Outlook category to track appointments and emails 
 author: mduelae
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 06/08/2021

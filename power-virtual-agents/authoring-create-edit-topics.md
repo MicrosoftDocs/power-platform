@@ -3,7 +3,7 @@ title: "Use topics to design a chatbot conversation"
 description: "The authoring canvas provides an intuitive, no-code way of creating a bot that can help answer user questions, perform actions, and solve issues."
 keywords: "PVA"
 ms.date: 01/25/2022
-ms.service: power-virtual-agents
+
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -46,7 +46,7 @@ For bot and topic limits, see the [Quotas, limits, and configuration values](req
 
 When you create a bot, a number of topics will be automatically created for you.
 
-:::image type="content" source="media/topics-system.png" alt-text="Four lesson topics and a number of system topics are in the Topics list.":::
+:::image type="content" source="media/authoring-create-edit-topics/topics-system.png" alt-text="Four lesson topics and a number of system topics are in the Topics list.":::
 
 These topics fall into two categories:
   
@@ -57,11 +57,11 @@ These topics fall into two categories:
 
 1. Go to the **Topics** tab on the side pane to open the topics page.
 
-   :::image type="content" source="media/topics-menu.png" alt-text="Select Topics on the side menu." border="false":::
+   :::image type="content" source="media/authoring-create-edit-topics/topics-menu.png" alt-text="Select Topics on the side navigation menu." border="false":::
 
 1. On the topics page, select **New topic**.
 
-   :::image type="content" source="media/topics-new.png" alt-text="Select New topic at the top of the Topics page." border="false":::
+   :::image type="content" source="media/authoring-create-edit-topics/topics-new.png" alt-text="Select New topic at the top of the Topics page." border="false":::
 
 1. When you enter the authoring canvas, the **Trigger phrases** pane should open. If it doesn't open, select **Trigger phrases**.
 
@@ -71,7 +71,7 @@ These topics fall into two categories:
 
    A trigger phrase is a phrase that a customer enters in the chat window to start a conversation with the bot. Once the conversation is started, the conversation follows the path you define. You can specify more than one trigger phrase for a topic. You can include punctuation in a trigger phrase, but it is best to use short phrases rather than long sentences.
 
-    :::image type="content" source="media/topics-details-triggers.png" alt-text="Edit trigger phrases in the trigger phrases pane":::
+    :::image type="content" source="media/authoring-create-edit-topics/topics-details-triggers.png" alt-text="Edit trigger phrases in the trigger phrases pane":::
 
 1. Select **Details**.
 
@@ -95,7 +95,7 @@ These topics fall into two categories:
 
 1. In the topic list, select the topic you want to edit.
 
-   :::image type="content" source="media/topics-details-canvas.png" alt-text="Selecting a topic will take you to the authoring canvas":::
+   :::image type="content" source="media/authoring-create-edit-topics/topics-details-canvas.png" alt-text="Selecting a topic will take you to the authoring canvas":::
 
 1. Power Virtual Agents opens the topic in the authoring canvas and displays the topic's trigger phrases. The authoring canvas is where you define the conversation path between a customer and the bot.
 
@@ -105,11 +105,11 @@ These topics fall into two categories:
 
 1. You can add additional nodes by selecting the **Plus** (**+**) icon on the line or branch between or after a node.
 
-   :::image type="content" source="media/handoff-add-node.png" alt-text="Screenshot of adding a node." border="false":::
+   :::image type="content" source="media/authoring-create-edit-topics/handoff-add-node.png" alt-text="Screenshot of adding a node." border="false":::
 
 1. To move or change the paths between a node, click and drag the node anchor, which looks like a small circle on top of the node. When you drag the node anchor, you'll see a dotted line indicating the original path.
 
-    :::image type="content" source="media/move-anchor-node.png" alt-text="Screenshot of moving a node's anchor.":::
+    :::image type="content" source="media/authoring-create-edit-topics/move-anchor-node.png" alt-text="Screenshot of moving a node's anchor.":::
 
 ### Insert nodes
 
@@ -122,7 +122,7 @@ When adding a node after the **Trigger Phrases** node, or between **Message node
 - **Show a message**
 - **Go to another topic**
 
-:::image type="content" source="media/topics-node-after-triggers.png" alt-text="Add nodes between existing nodes from the options.":::
+:::image type="content" source="media/authoring-create-edit-topics/topics-node-after-triggers.png" alt-text="Add nodes between existing nodes from the options.":::
 
 After the last node, you can also:
 
@@ -134,7 +134,7 @@ Additionally, you can **Add a condition** when inserting a node after a **Questi
 
 1. To have the bot ask a question and get a response from the user, select **+** to add a node, and then **Ask a question** to add a new **Question** node.
 
-   :::image type="content" source="media/topics-question.png" alt-text="Add a new question mode." border="false":::
+   :::image type="content" source="media/authoring-create-edit-topics/topics-question.png" alt-text="Add a new question mode." border="false":::
 
 1. Enter the question phrase in the first text box, **Ask a question**.
 
@@ -159,11 +159,11 @@ Additionally, you can **Add a condition** when inserting a node after a **Questi
 >
 > 1. Select the menu icon on the top of the **Question** node, and then select **Options for user**.
 >
->    :::image type="content" source="media/topics-question-options.png" alt-text="Select options for users." border="false":::
+>    :::image type="content" source="media/authoring-create-edit-topics/topics-question-options.png" alt-text="Select options for users." border="false":::
 >
 > 1. Select the **Synonyms** icon for the option you want to add additional keywords to.
 >
->    :::image type="content" source="media/topics-question-synonyms.png" alt-text="Select the synonyms icon." border="false":::
+>    :::image type="content" source="media/authoring-create-edit-topics/topics-question-synonyms.png" alt-text="Select the synonyms icon." border="false":::
 >
 > 1. Add the keywords individually, and then once you're done, select **Done** to return to the **Authoring canvas**.
 
@@ -187,7 +187,9 @@ If you have configured hand off to Omnichannel with voice-based capabilities, yo
 
 1. In the flyout menu, select the topic the bot should divert to. For example, you might want to send the user to a specific topic about the closure of a store if they ask about store hours for that store.
 
-    :::image type="content" source="teams/media/topics-nodes-other-topic-flyout-teams.png" alt-text="Redirect to another topic node with options for other topics.":::
+    :::image type="content" source="media/authoring-create-edit-topics/topics-nodes-other-topic-flyout.png" alt-text="Redirect to another topic node with options for other topics.":::
+
+When you insert a link to redirect to another topic, the bot will go through the conversation path for that topic.
 
 When you insert a link to redirect to another topic, the bot will go through the conversation path for that topic.
 
@@ -301,15 +303,15 @@ You can also have the conversation [handed over to a live agent](advanced-hand-o
 
 1. At the end of a response that resolves the user's issue or answers the question, select **End the conversation**.
 
-    :::image type="content" source="media/topics-nodes-end.png" alt-text="End the conversation." border="false":::
+    :::image type="content" source="media/authoring-create-edit-topics/topics-nodes-end.png" alt-text="End the conversation." border="false":::
 
 1. To end with a customer satisfaction survey, select **End with survey**.
 
-    :::image type="content" source="media/topics-nodes-survey.png" alt-text="End with survey." border="false":::
+    :::image type="content" source="media/authoring-create-edit-topics/topics-nodes-survey.png" alt-text="End with survey." border="false":::
 
 1. Select **Transfer To Agent** to insert a hand-off node that will link with your [configured hand-off product](configuration-hand-off-omnichannel.md). You can also enter a private message to the agent.
 
-    :::image type="content" source="media/topics-nodes-handoff.png" alt-text="Transfer To Agent." border="false":::
+    :::image type="content" source="media/authoring-create-edit-topics/topics-nodes-handoff.png" alt-text="Transfer To Agent." border="false":::
 
 #### Add a condition
 
@@ -317,7 +319,7 @@ You can also have the conversation [handed over to a live agent](advanced-hand-o
 
 1. Choose the variable you want to use to determine if the bot conversation should branch at this point. For example, if you have set up [end-user authentication](advanced-end-user-authentication.md), then you might want to specify a different message if the user is signed on (which may have happened earlier in the conversation).
 
-    :::image type="content" source="media/topics-branch.png" alt-text="Choose a variable." border="false":::
+    :::image type="content" source="media/authoring-create-edit-topics/topics-branch.png" alt-text="Choose a variable." border="false":::
 
 ### Delete nodes
 
@@ -325,7 +327,7 @@ You can also have the conversation [handed over to a live agent](advanced-hand-o
 
 1. Select **Delete**.
 
-    :::image type="content" source="media/topics-delete.png" alt-text="Select the menu icon and then the delete button." border="false":::
+    :::image type="content" source="media/authoring-create-edit-topics/topics-delete.png" alt-text="Select the menu icon and then the delete button." border="false":::
 
 ## Test and publish your bot
 

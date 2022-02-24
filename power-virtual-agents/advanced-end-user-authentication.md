@@ -3,7 +3,7 @@ title: "Add user authentication to chatbot topics"
 description: "Insert user authentication into a topic to allow your users to sign in directly within a conversation."
 keywords: "User Authentication, Authentication, AAD, MSA, Identity Provider, PVA"
 ms.date: 2/11/2020
-ms.service: power-virtual-agents
+
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -39,12 +39,12 @@ If your bot is configured with either "Only for Teams" or "Manual" authenticatio
 
 The following table compares authentication variable availability by authentication configuration option:
 
-| Authentication Variable | No Authentication | Only for Teams | Manual |
-| --- | :---: | :---: | :---: |
-| ```UserDisplayName``` | :x: | :heavy_check_mark: | :heavy_check_mark: |
-| ```UserID```          | :x: | :heavy_check_mark: | :heavy_check_mark: |
-| ```IsLoggedIn```      | :x: | :x: | :heavy_check_mark: |
-| ```AuthToken```       | :x: | :x: | :heavy_check_mark: |
+| Authentication Variable | No Authentication |   Only for Teams   |       Manual       |
+| ----------------------- | :---------------: | :----------------: | :----------------: |
+| ```UserDisplayName```   |        :x:        | :heavy_check_mark: | :heavy_check_mark: |
+| ```UserID```            |        :x:        | :heavy_check_mark: | :heavy_check_mark: |
+| ```IsLoggedIn```        |        :x:        |        :x:         | :heavy_check_mark: |
+| ```AuthToken```         |        :x:        |        :x:         | :heavy_check_mark: |
 
 ### UserDisplayName variable
 
@@ -87,10 +87,10 @@ The following table lists the commands that will populate these variables. Enter
 
 If you reset the **Test bot** pane (or you make changes to a topic that cause the **Test bot** to reset automatically), you will need to send the commands again.
 
-Variable | Custom value command | Empty (blank) value command
--- | -- | --
-`UserDisplayName` | ```/debug set bot.UserDisplayName "Value"``` | ```/debug set bot.UserDisplayName ""```
-`UserID` | Not available | ```/debug set bot.UserID ""```
+| Variable          | Custom value command                         | Empty (blank) value command             |
+| ----------------- | -------------------------------------------- | --------------------------------------- |
+| `UserDisplayName` | ```/debug set bot.UserDisplayName "Value"``` | ```/debug set bot.UserDisplayName ""``` |
+| `UserID`          | Not available                                | ```/debug set bot.UserID ""```          |
 
 > [!IMPORTANT]
 > You can't populate the `UserID` variable with a custom value (other than an empty or blank value) due to security reasons.
@@ -112,15 +112,15 @@ If your authentication option is set to **Only for Teams**, you don't need to ex
 
 1. Select the plus (**+**) icon to add a message node. Enter what the bot should say to indicate that a sign-on experience is about to occur.
 
-    :::image type="content" source="media/handoff-add-node.png" alt-text="Screenshot of adding a node." border="false":::
+    :::image type="content" source="media/advanced-end-user-authentication/handoff-add-node.png" alt-text="Screenshot of adding a node." border="false":::
 
 1. Underneath the message node, select the plus (**+**) icon, select **Call an action**, and then select **Authenticate**.
 
-    :::image type="content" source="media/auth-call-action-2.png" alt-text="Select Authenticate." border="false":::
+    :::image type="content" source="media/advanced-end-user-authentication/auth-call-action-2.png" alt-text="Select Authenticate." border="false":::
 
 1. Once selected, a number of new nodes will be added automatically. These nodes include a parent **Authenticate** node, followed by nodes for both a success and a failure path.
 
-    :::image type="content" source="media/auth-template.png" alt-text="New nodes." border="false":::
+    :::image type="content" source="media/advanced-end-user-authentication/auth-template.png" alt-text="New nodes." border="false":::
 
     > [!NOTE]
     > The **Authenticate** node is only available in the action picker at the end of a dialog tree (as a leaf node). It cannot be added in the middle of a dialog. Once added, other nodes can be added below it.
@@ -129,7 +129,7 @@ If your authentication option is set to **Only for Teams**, you don't need to ex
 
 The **Authenticate** node is where the user, if not already signed in, will be prompted with a sign-in card.
 
-:::image type="content" source="media/auth-sign-in-user.png" alt-text="Request to sign in." border="false":::
+:::image type="content" source="media/advanced-end-user-authentication/auth-sign-in-user.png" alt-text="Request to sign in." border="false":::
 
 Once the user enters their username and password in the prompt (hosted by the identity provider), they might be prompted to enter a validation code, depending on the [channel](publication-fundamentals-publish-channels.md). Some channels, such as Microsoft Teams, do not require the user to enter a validation code.
 

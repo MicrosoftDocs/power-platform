@@ -3,7 +3,7 @@ title: "Responding to GDPR Data Subject Discovery Requests"
 description: "Learn how to respond​ to GDPR Data Subject Requests for Power Virtual Agents."
 keywords: "PVA"
 ms.date: 9/22/2020
-ms.service: power-virtual-agents
+
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -18,13 +18,13 @@ The first step in responding to a data subject rights request is to search for a
 
 The following table summarizes the types of Power Virtual Agents resources that contain personal data for a specific user.
 
-Resources containing personal data | Purpose
----------------------------------- | -------
-Telemetry logs | Logging that captures historical events within the service.
-Bot content and settings | Information such as content topics and bot settings.
-User settings | Settings specific to the user of the bot.
-Conversation logs | Used to calculate bot metrics and analytics.
-Aggregated metrics | Used to determine bot behavior.
+| Resources containing personal data | Purpose                                                     |
+| ---------------------------------- | ----------------------------------------------------------- |
+| Telemetry logs                     | Logging that captures historical events within the service. |
+| Bot content and settings           | Information such as content topics and bot settings.        |
+| User settings                      | Settings specific to the user of the bot.                   |
+| Conversation logs                  | Used to calculate bot metrics and analytics.                |
+| Aggregated metrics                 | Used to determine bot behavior.                             |
 
 ## Prerequisites
 

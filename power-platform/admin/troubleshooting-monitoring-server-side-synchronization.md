@@ -1,7 +1,7 @@
 ---
 title: "Troubleshooting and monitoring server-side synchronization  | MicrosoftDocs"
 description: Troubleshooting and monitoring server-side synchronization
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/17/2021

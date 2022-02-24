@@ -4,7 +4,7 @@ description: Learn about deploying packages using Package Deployer and Windows P
 ms.custom: 
 ms.date: 08/12/2021
 ms.reviewer: 
-ms.service: power-platform
+
 ms.topic: article
 ms.assetid: 27676d3a-d35c-4452-9ff3-bcdadd943bef
 caps.latest.revision: 36

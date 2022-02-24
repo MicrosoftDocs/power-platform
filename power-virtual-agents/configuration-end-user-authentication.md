@@ -3,7 +3,7 @@ title: "Configure user authentication (contains video)"
 description: "Configure authentication with your identity provider to enable users to sign in when having a bot conversation."
 keywords: "Authentication, IdP, PVA, AAD"
 ms.date: 01/25/2022
-ms.service: power-virtual-agents
+
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -49,7 +49,7 @@ Power Virtual Agents supports a set of different authentication options, each ta
 
 To change the authentication settings, go to **Manage** on the side pane, and then go to the **Security** tab and select the **Authentication** card.
 
-:::image type="content" source="media/security-authentication.png" alt-text="Screenshot of the Security page under Manage menu highlighting the Authentication card.":::
+:::image type="content" source="media/configuration-end-user-authentication/security-authentication.png" alt-text="Screenshot of the Security page under Manage menu highlighting the Authentication card.":::
 
 You will see the following three options to configure your authentication:
 
@@ -57,7 +57,7 @@ You will see the following three options to configure your authentication:
 - Only for Teams
 - Manual (for any channel including Teams)
 
-:::image type="content" source="media/security-authentication-pane.png" alt-text="Screenshot of the Authentication pane showing the three authentication options.":::
+:::image type="content" source="media/configuration-end-user-authentication/security-authentication-pane.png" alt-text="Screenshot of the Authentication pane showing the three authentication options.":::
 
 ### No Authentication
 
@@ -105,7 +105,7 @@ Once the configuration is saved, make sure to publish your bot so the changes ta
 
 **Require users to sign in** controls if a user needs to sign in before talking with the bot. If is only available to **Only for Teams** and **Manual** authentication options. It is highly recommended to turn on this setting when the bot contains sensitive information.
 
-:::image type="content" source="media/sharing-security-groups/auth-require-user-to-sign-in.PNG" alt-text="Screenshot of the Authentication pane showing require user to sign in.":::
+:::image type="content" source="media/configuration-end-user-authentication/auth-require-user-to-sign-in.PNG" alt-text="Screenshot of the Authentication pane showing require user to sign in.":::
 
 Bots with this configuration turned **Off** won't ask users to sign in until they encounter a topic which requires them to do so.
 
@@ -118,16 +118,14 @@ This topic is automatically triggered for any user who talks to the bot without 
 Your bot's **authentication option** and **Require user to sign in** combination determines whether you can [share the bot](admin-share-bots.md) to control who in your organization can chat with your bot or not.  Sharing a bot for collaboration is not impacted by the end-user authentication setting.
 
 - **No authentication**. Any user who has a link to the bot (or can find it, for example, on your website) can chat with it. You cannot control which users can chat with the bot in your organization.
-
 - **Only for Teams**. The bot will only work on [the Teams channel](publication-add-bot-to-microsoft-teams.md). This means the user will always be signed in, and therefore the **Require users to sign in** option will be enabled and can't be changed. You can control who can chat with the bot in your organization with bot sharing.
-
 - **Manual (for any channel including Teams)**.
   - If your authentication setting is configured to **Manual**, and the service provider is either **Azure Active Directory** or **Azure Active Directory V2**, you can enable the **Require users to sign in** option to control who can chat with the bot in your organization via bot sharing.
   - If your authentication provider is set as **Generic OAuth 2**, you can toggle the **Require users to sign in** option. When turned on, a user who signs in can chat with the bot, but you cannot control which specific users are allowed to chat with the bot in your organization with bot sharing.
 
 When a bot's authentication option can't control who can chat with the bot, selecting **Share** on the bot's homepage will inform you that anyone can chat with the bot.
 
-:::image type="content" source="media/sharing-security-groups/auth-allow-everyone-chat-with-bot.PNG" alt-text="Everyone in the organization can chat with bot because of authentication setting.":::
+:::image type="content" source="media/configuration-end-user-authentication/auth-allow-everyone-chat-with-bot.PNG" alt-text="Everyone in the organization can chat with bot because of authentication setting.":::
 
 ## Register a new app with your identity provider when using Manual (for any channel including Teams)
 
@@ -169,15 +167,14 @@ This section shows an example of Azure AD being configured as an OAuth provider.
 1. Confirm you've selected the bot for which you want to enable authentication by selecting the bot icon on the top menu and choosing the bot.
 1. Select **Manage** on the side pane, and then go to the **Security** tab and select the **Authentication** card.
 
-    :::image type="content" source="media/auth-manage-sm.png" alt-text="Screenshot of the Authentication under Manage left bar menu.":::
+    :::image type="content" source="media/configuration-end-user-authentication/auth-manage-sm.png" alt-text="Screenshot of the Authentication under Manage left bar menu.":::
 
 1. Enter the information as described for each of the fields in the following table. The information required depends on your setup and provider. If you have questions about the required information, contact your administrator or identity provider.
-
 1. Click **Save** to finish the configuration.
 
 > [!NOTE]
 > The examples provided below are for an Azure AD common endpoint. For more information, see [OAuth generic providers](/azure/bot-service/bot-builder-concept-identity-providers?view=azure-bot-service-4.0&tabs=adv1%2Cga2&preserve-view=true) documentation.  
->Only use Azure AD V2 token endpoints, as specified in the table.
+> Only use Azure AD V2 token endpoints, as specified in the table.
 
 | Field name                                       | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | Where to get this information for Azure AD                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | ------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -204,9 +201,7 @@ After the setup steps are complete, save your configuration and test it by [crea
 ## Remove the authentication configuration
 
 1. Select **Manage** on the side pane, and then go to the **Security** tab and select the **Authentication** card.
-
 1. Select **No authentication**.
-
 1. Publish the bot.
 
 If authentication variables are being used in a topic, they will become **Unknown** variables. Go to the Topics page to see which topics have errors and fix them before publishing.

@@ -2,7 +2,7 @@
 title: "Verify network capacity and throughput for clients  | MicrosoftDocs"
 description: Verify network capacity and throughput for clients
 author: Mattp123
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/11/2020

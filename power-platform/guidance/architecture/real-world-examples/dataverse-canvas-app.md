@@ -2,7 +2,7 @@
 title: "Using Microsoft Dataverse with a canvas app in Power Apps  | Microsoft Docs"
 description: Information about using Dataverse with a canvas app in Power Apps
 author: slaouist
-ms.service: power-platform
+
 ms.subservice: guidance
 ms.topic: conceptual
 ms.date: 08/10/2021

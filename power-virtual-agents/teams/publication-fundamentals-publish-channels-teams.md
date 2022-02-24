@@ -3,7 +3,7 @@ title: "Fundamentals - Publish a chatbot to various channels in Microsoft Teams"
 description: "Publish your bot to Microsoft Teams."
 keywords: "Publish; demo; demo website; channels, PVA"
 ms.date: 01/25/2022
-ms.service: power-virtual-agents
+
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -42,7 +42,7 @@ After the first publish, you can do subsequent publishes whenever you would like
 
 1. Select **Publish** to make the latest bot content available to your customers.
 
-    :::image type="content" source="media/channel-publish-latest-content-teams.png" alt-text="Publish latest bot content.":::
+    :::image type="content" source="../media/publication-fundamentals-publish-channels/channel-publish-latest-content-teams.png" alt-text="Publish latest bot content.":::
 
 The publishing process will check for errors in the latest bot content.
 

@@ -3,7 +3,7 @@ title: "Quickstart: Create and deploy a bot on the portal (contains video)"
 description: "Create and publish a Power Virtual Agents bot on the online portal in minutes with this quickstart guide."
 keywords: "PVA, online, web, portal, quickstart"
 ms.date: 01/25/2022
-ms.service: power-virtual-agents
+
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -54,7 +54,7 @@ In addition to this guide, you can also [download and use templates to help you 
    > Power Virtual Agents is supported only in the locations listed in the [supported data locations](data-location.md) topic, with data stored in respective data centers. If your company is located outside of the supported data locations, you'll need to create a custom environment with **Region** set to a supported data location before you create your bot.  
    > For more information on how to create a custom Power Apps environment, see [Working with environments](environments-first-run-experience.md).
 
-   :::image type="content" source="media/create-new-bot-screen.png" alt-text="Name the new bot." border="false":::
+   :::image type="content" source="media/fundamentals-get-started/create-new-bot-screen.png" alt-text="Name the new bot." border="false":::
 
 1. Select **Create**. The process of creating your first bot in a new environment can take up to 15 minutes; subsequent bots will be created much faster.
 
@@ -74,7 +74,7 @@ Now that you have full functionality within your bot, you can create your own to
 
 1. Select **Topics** on the side pane, then select **New topic** at the top of the page.
 
-    :::image type="content" source="media/topics-new.png" alt-text="New topic." border="false":::
+    :::image type="content" source="media/fundamentals-get-started/topics-new.png" alt-text="New topic." border="false":::
 
 1. Name your topic and include some trigger phrases for this topic. Trigger phrases are examples of the type of user questions or utterances that help teach the bot when to respond with this dialog.
 
@@ -88,13 +88,13 @@ Now that you have full functionality within your bot, you can create your own to
 
     Enter 'Hello! I'll create a personalized greeting for you.' into the first **Message** node.
 
-    :::image type="content" source="media/quickstart-add-node.png" alt-text="Add node." border="false":::
+    :::image type="content" source="media/fundamentals-get-started/quickstart-add-node.png" alt-text="Add node." border="false":::
 
 1. Select the **+** below the node, and add an **Ask a question** node.
 
     Enter the question text, 'Where do you live?', in the **Ask a question** box. To give the customer a choice between different responses, select **Multiple choice options** under **Identify**.
 
-    :::image type="content" source="media/quickstart-create-topic-02.png" alt-text="Bot answer." border="false":::
+    :::image type="content" source="media/fundamentals-get-started/quickstart-create-topic-02.png" alt-text="Bot answer." border="false":::
 
 1. Add two options for the user, by selecting **+ New option**.
 
@@ -102,7 +102,7 @@ Now that you have full functionality within your bot, you can create your own to
 
     The authoring canvas creates separate paths in the conversation, depending on the customer's response. The conversation path leads the customer to the appropriate resolution for each user response.
 
-    :::image type="content" source="media/quickstart-options.png" alt-text="Branching options are created automatically." border="false":::
+    :::image type="content" source="media/fundamentals-get-started/quickstart-options.png" alt-text="Branching options are created automatically." border="false":::
 
 1. In the forked conversation path, each node automatically checks for 'Seattle' in one path, and 'Bellevue' in the other to take the appropriate next step.
 
@@ -110,7 +110,7 @@ Now that you have full functionality within your bot, you can create your own to
 
     Add a simple message like 'Hello Seattle!' in the Seattle branch, and 'Hello Bellevue!' in the Bellevue branch.
 
-    :::image type="content" source="media/quickstart-create-topic-03.png" alt-text="Complete conversation." border="false":::
+    :::image type="content" source="media/fundamentals-get-started/quickstart-create-topic-03.png" alt-text="Complete conversation." border="false":::
 
 1. Select **Save** at the top.
 
@@ -120,17 +120,17 @@ You now have a very simple branching dialog tree, congratulations! You can begin
 
 Now that you have some content authored into a dialog tree, it's time to test this out in real time to see if it's working as you expected. For this, you'll use the test bot pane.
 
-:::image type="content" source="media/test-bot-panel.png" alt-text="Start bot with latest content." border="false":::
+:::image type="content" source="media/fundamentals-get-started/test-bot-panel.png" alt-text="Start bot with latest content." border="false":::
 
 1. If the test bot is not showing on your screen, select **Test your bot** on the side pane.
 
-    :::image type="content" source="media/test-bot-menu.png" alt-text="Test bot control." border="false":::
+    :::image type="content" source="media/fundamentals-get-started/test-bot-menu.png" alt-text="Test bot control." border="false":::
 
 1. Try out your newly authored dialog tree by typing into the test bot window.
 
 1. Turn on **Track between topics** at the top, which enables you to follow along with the bot as it executes your dialog. You'll start to see parts of your dialog tree highlighted as the bot gets to that portion of the dialog.
 
-    :::image type="content" source="media/test-bot-track.png" alt-text="Start conversation." border="false":::
+    :::image type="content" source="media/fundamentals-get-started/test-bot-track.png" alt-text="Start conversation." border="false":::
 
 1. Type "hello world" in the chat window, and send the message to the bot. You'll see the top portion of your dialog tree highlighted in green, and you'll see **Seattle** and **Bellevue** presented as user options in the test bot window.
 
@@ -138,7 +138,7 @@ Now that you have some content authored into a dialog tree, it's time to test th
 
     In the test bot, you can either select these suggestion buttons to continue, or you can enter your response into the chat window.
 
-    :::image type="content" source="media/quickstart-test-bot-03.png" alt-text="Tracing conversation." border="false":::
+    :::image type="content" source="media/fundamentals-get-started/quickstart-test-bot-03.png" alt-text="Tracing conversation." border="false":::
 
 1. Continue the dialog by selecting the Seattle branch.
 
@@ -152,7 +152,7 @@ Once you're fine with the content authored in your bot, you can publish your bot
 
 1. Select the **Publish** tab on the side pane.
 
-    :::image type="content" source="media/channel-publish-latest-content.png" alt-text="Deploy bot to demo website." border="false":::
+    :::image type="content" source="media/fundamentals-get-started/channel-publish-latest-content.png" alt-text="Deploy bot to demo website." border="false":::
 
 1. Select **Publish** to activate your bot with a single click. If the publish is successful, you'll see a green banner on the top of the page.
 
@@ -162,7 +162,7 @@ Once you're fine with the content authored in your bot, you can publish your bot
 
     The webpage demonstrates what your bot looks like to an end-user who comes to your webpage. The bot canvas is at the bottom. You can interact with it by typing into the window or by selecting a starter phrase from the provided options.
 
-    :::image type="content" source="media/channel-go-to-demo-website.png" alt-text="Share your bot." border="false":::
+    :::image type="content" source="media/fundamentals-get-started/channel-go-to-demo-website.png" alt-text="Share your bot." border="false":::
 
 For more information on publishing your bot to other channels, see the documentation under [Publication key concepts](publication-fundamentals-publish-channels.md).
 
@@ -182,7 +182,7 @@ You'll also find customer satisfaction information at the KPI level as well as i
 
 You can also view detailed session history and transcripts by selecting **Analytics** > **Sessions**. Here, you can download a CSV file with the full session transcript. This can be a helpful way for you to tune the performance of your bot and change the content in your topics to improve your bot's efficiency.
 
-:::image type="content" source="media/analytics-sessions.png" alt-text="Download sessions." border="false":::
+:::image type="content" source="media/fundamentals-get-started/analytics-sessions.png" alt-text="Download sessions." border="false":::
 
 For more information, see [Analytics key concepts](analytics-overview.md).
 

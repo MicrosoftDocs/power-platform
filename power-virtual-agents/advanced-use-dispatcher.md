@@ -3,7 +3,7 @@ title: "Use a Microsoft Bot Framework bot"
 description: "Use and extend an existing Microsoft Bot Framework bot to work with Power Virtual Agents."
 keywords: "extensibility, integration, extend bot, bot framework, PVA"
 ms.date: 9/22/2020
-ms.service: power-virtual-agents
+
 ms.topic: article
 author: pawant-ms
 ms.author: iawilt
@@ -55,7 +55,7 @@ You'll need to retrieve your Power Virtual Agents bot's content (topics and utte
 1. [Sign in to your Power Virtual Agents environment](https://web.powerva.microsoft.com) using your Azure Active Directory (Azure AD) credentials.
 
 1. Go to the **Network** tab.
-    :::image type="content" source="media/devtools-network-preview.png" alt-text="DevTools in Microsoft Edge browser showing the Network tab." border="false":::
+    :::image type="content" source="media/advanced-use-dispatcher/devtools-network-preview.png" alt-text="DevTools in Microsoft Edge browser showing the Network tab." border="false":::
 
 1. Filter and look for client requests.
 
@@ -168,7 +168,7 @@ The following steps require you to add code that registers your new dispatch end
 
 1. Update `appsettings.json` in your dispatcher app to include the new endpoint for your Power Virtual Agents bot.
   
-    ```csharp
+    ```json
     {
       "DynamicsBotId": "<Bot Id>",
       "DynamicsBotTenantId": "<Tenant Id>",
@@ -369,11 +369,11 @@ You're ready to test your dispatcher to ensure seamless interaction between Dyna
 
 1. [Publish your bot to a demo website](./publication-connect-bot-to-web-channels.md).
 
-    :::image type="content" source="media/open-deploy.png" alt-text="Deploy our bot." border="false":::
+    :::image type="content" source="media/advanced-use-dispatcher/open-deploy.png" alt-text="Deploy our bot." border="false":::
   
 1. Build (Ctrl + Shift + B) and run (F5) your dispatcher app.
   
 1. Open the Bot Emulator where you add the name and endpoint to your bot.
-    :::image type="content" source="media/dispatch-bot-emulator.png" alt-text="Dialog to create new bot in the bot emulator." border="false":::
+    :::image type="content" source="media/advanced-use-dispatcher/dispatch-bot-emulator.png" alt-text="Dialog to create new bot in the bot emulator." border="false":::
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
