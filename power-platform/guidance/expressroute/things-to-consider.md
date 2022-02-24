@@ -148,7 +148,7 @@ by using appropriate BGP community values for geographical locations and service
 types. These can then be configured in the customer's routers to route traffic
 for those services through the ExpressRoute circuit.
 
-You can use different [tags for Microsoft 365 services](/microsoft-365/enterprise/bgp-communities-in-expressroute?view=o365-worldwide) to route traffic
+You can use different [tags for Microsoft 365 services](/microsoft-365/enterprise/bgp-communities-in-expressroute) to route traffic
 only for those services through the ExpressRoute circuit, and route the rest either across
 a different ExpressRoute circuit or the public internet.
 
@@ -187,7 +187,7 @@ to match with the region where the [Microsoft Power Platform environment](../../
 was created.
 
 For more information about routing Microsoft 365, go to the documentation on
-[selective routing with Microsoft 365](/microsoft-365/enterprise/azure-expressroute?view=o365-worldwide).
+[selective routing with Microsoft 365](/microsoft-365/enterprise/azure-expressroute).
 
 Because Microsoft Power Platform services work partially as part of the Microsoft 365 service,
 many crossover services such as the admin portal and authentication are also
