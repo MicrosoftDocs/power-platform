@@ -8,6 +8,7 @@ ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
+ms.reviewer: jameslew
 ms.custom: "publication, azure, ceX"
 ms.collection: virtual-agent
 ---
