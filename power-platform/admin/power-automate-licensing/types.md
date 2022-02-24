@@ -237,7 +237,7 @@ Yes, and if your flow runs under a service account, it is really a team/organiza
 
 #### Can I use service principal in flows, and does it count against my request limits?
 
-Service principal isn't supported yet but it's a top item on the backlog. When we support it, service principal flows will consume a separate quota called [non-interactive limits](../api-request-limits-allocations.md#requests-limits-not-based-on-licensed-users-or-flows).
+Service principal isn't supported yet but it's a top item on the backlog. When we support it, service principal flows will consume a separate quota called [non-interactive limits](../api-request-limits-allocations.md).
 
 #### Will desktop flows usage count consume my Power Platform request limits?
 
