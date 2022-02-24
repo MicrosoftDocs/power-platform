@@ -201,6 +201,10 @@ If you're using Azure AD as a provider, we recommend using the "Azure Active Dir
 
 For more information, see [OAuth generic providers](/azure/bot-service/bot-builder-concept-identity-providers?view=azure-bot-service-4.0&tabs=adv1%2Cga2&preserve-view=true) documentation.  
 
+#### Tenant ID
+
+Your Azure AD tenant ID. Refer to [Use an existing Azure AD tenant](/azure/active-directory/develop/quickstart-create-new-tenant#use-an-existing-azure-ad-tenant) to learn how to find your tenant ID.
+
 #### Client ID
 
 Your client ID obtained from the identity provider.
