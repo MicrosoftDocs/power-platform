@@ -29,7 +29,7 @@ The ALM accelerator doesn't have a dependency on other components of the CoE Sta
 
 Two setup options are available for the ALM accelerator for Microsoft Power Platform:
 
-- Set up by using the [Center of Excellence command-line interface (CoE CLI)](./cli/overview.md).
+- Set up by using the [Center of Excellence command-line interface (CoE CLI)](cli/overview.md).
 
 - Set up manually by using the step-by-step walk-through described in this article.
 
@@ -568,10 +568,10 @@ If your solution requires these other configuration settings or data, follow the
 
 ## Read more
 
-- [Use the ALM Accelerator for Power Platform app](./almacceleratorpowerplatform-components.md): An overview of the ALM accelerator
-- [Configuring deployment user settings and profiles](./setup-almacceleratorpowerplatform-deployment-profiles.md): The deployment experience and profile setup
-- [Configuring user permissions](./setup-almacceleratorpowerplatform-users.md): Configuring Microsoft Dataverse users to access the ALM Accelerator for Power Platform app
-- [Configuration and data deployment in pipelines](./setup-almacceleratorpowerplatform-deployment-config.md): Configuring solution assets for the deployment, for example connection references, environment variables, and sharing
-- [Configuring pipeline sync](./setup-almacceleratorpowerplatform-pipeline-sync.md): Creating a pipeline to sync the latest YAML from the CoE Starter Kit GitHub repo
+- [Use the ALM Accelerator for Power Platform app](almacceleratorpowerplatform-components.md): An overview of the ALM accelerator
+- [Configuring deployment user settings and profiles](setup-almacceleratorpowerplatform-deployment-profiles.md): The deployment experience and profile setup
+- [Configuring user permissions](setup-almacceleratorpowerplatform-users.md): Configuring Microsoft Dataverse users to access the ALM Accelerator for Power Platform app
+- [Configuration and data deployment in pipelines](setup-almacceleratorpowerplatform-deployment-config.md): Configuring solution assets for the deployment, for example connection references, environment variables, and sharing
+- [Configuring pipeline sync](setup-almacceleratorpowerplatform-pipeline-sync.md): Creating a pipeline to sync the latest YAML from the CoE Starter Kit GitHub repo
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
