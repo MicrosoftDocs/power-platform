@@ -92,12 +92,6 @@ If you are using *Power Platform connectors*, see the complete list of IP addres
 
 
 ## Ports
-Dataverse exposes ports *18085* and *8085* to perform maintenance operations for customer databases.  The maintenance operations are executed to ensure that Microsoft Dynamics 365 environments are performing at optimal performance standards.  These maintenance operations include but aren't limited to: 
-
-- Database Update Operation
-- App Update Operation
-
-These maintenance operations are executed by the [Asynchronous Service](/powerapps/developer/data-platform/asynchronous-service).
 
 Dataverse exposes ports *1433* and *5558* to expose the [Dataverse Tabular Data Stream](/openspecs/windows_protocols/ms-tds/893fcc7e-8a39-4b3c-815a-773b7b982c50). 
 
