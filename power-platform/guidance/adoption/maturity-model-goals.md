@@ -30,15 +30,15 @@ Let’s now look in detail at the five stages of the model and the opportunities
 :::row:::
    :::column span="":::
       ![Organize training events](media/adoption-1.png "Organize training events")
-      Organize [training events](https://aka.ms/powerappsdemos), [hackathons](./hackathons.md), and [lunch and learn sessions](./in-a-day.md#lunch-and-learn).
+      Organize [training events](https://aka.ms/powerappsdemos), [hackathons](hackathons.md), and [lunch and learn sessions](in-a-day.md#lunch-and-learn).
    :::column-end:::
    :::column span="":::
    ![Find and nurture champions](media/adoption-2.png "Find and nurture champions")
-      Find and [nurture champions](./champions.md), recognize early success.
+      Find and [nurture champions](champions.md), recognize early success.
    :::column-end:::
 :::column span="":::
 ![Get key sponsors on board](media/adoption-3.png "Get key sponsors on board")
-      Get key sponsors and teams on board as you review the [roles and responsibilities](./roles.md) needed to execute your Power Platform adoption.
+      Get key sponsors and teams on board as you review the [roles and responsibilities](roles.md) needed to execute your Power Platform adoption.
    :::column-end:::
 :::row-end:::
 
@@ -57,11 +57,11 @@ The [Center of Excellence (CoE) Starter Kit](../coe/starter-kit.md) is deployed 
    :::column-end:::
    :::column span="":::
       ![Establish DLP policies](media/adoption-5.png "Establish DLP policies")
-      [Establish DLP policies](./dlp-strategy.md) in the default environment and mitigate the risk of apps and flows breaking by performing a [DLP Impact Analysis](../coe/core-components.md#dlp-editor-v2) first.
+      [Establish DLP policies](dlp-strategy.md) in the default environment and mitigate the risk of apps and flows breaking by performing a [DLP Impact Analysis](../coe/core-components.md#dlp-editor-v2) first.
    :::column-end:::
 :::column span="":::
    ![Send a welcome email to new makers](media/adoption-6.png "Send a welcome email to new makers")
-      Embrace new makers with a [welcome email](./onboard-makers.md), informing them of internal training resources and policies.
+      Embrace new makers with a [welcome email](onboard-makers.md), informing them of internal training resources and policies.
    :::column-end:::
 :::row-end:::
 
@@ -74,15 +74,15 @@ The [Center of Excellence (CoE) Starter Kit](../coe/starter-kit.md) is deployed 
 :::row:::
    :::column span="":::
       ![Develop an environment strategy](media/adoption-7.png "Develop an environment strategy")
-      Develop an [environment strategy](./environment-strategy.md) and configure layers of security in a way that supports productive development in your organization, while securing and organizing resources.
+      Develop an [environment strategy](environment-strategy.md) and configure layers of security in a way that supports productive development in your organization, while securing and organizing resources.
    :::column-end:::
    :::column span="":::
       ![Establish tiers of application support](media/adoption-8.png "Establish tiers of application support")
-     Define [tiers of application support](./environment-strategy.md#factors-that-influence-provisioning) – taking into account the level of complexity, how critical the app is, and users impacted by the application.
+     Define [tiers of application support](environment-strategy.md#factors-that-influence-provisioning) – taking into account the level of complexity, how critical the app is, and users impacted by the application.
    :::column-end:::
 :::column span="":::
    ![Share your success stories](media/adoption-9.png "Share your success stories")
-      Celebrate your makers and champions by [sharing their success stories](./show-and-tell.md), and focus on the business value and impact they have on the organization.
+      Celebrate your makers and champions by [sharing their success stories](show-and-tell.md), and focus on the business value and impact they have on the organization.
    :::column-end:::
 :::row-end:::
 
@@ -96,7 +96,7 @@ The [Center of Excellence (CoE) Starter Kit](../coe/starter-kit.md) is deployed 
    :::column span="":::
       ![Create an app catalog](media/adoption-10.png "Create an app catalog")
       Create an [app catalog](../coe/core-components.md#app-catalog) to make apps more discoverable and avoid duplication.
-Create [shared component libraries](./reusable.md) with common design patterns, such as headers and navigation to ensure consistency across apps.
+Create [shared component libraries](reusable.md) with common design patterns, such as headers and navigation to ensure consistency across apps.
    :::column-end:::
    :::column span="":::
       ![Use approvals and Teams to automate communication](media/adoption-11.png "Use approvals and Teams to automate communication")
@@ -104,7 +104,7 @@ Create [shared component libraries](./reusable.md) with common design patterns, 
    :::column-end:::
 :::column span="":::
    ![Define key responsibilities for your CoE](media/adoption-12.png "Define key responsibilities for your CoE")
-      Define [key responsibilities for your CoE](./coe.md), admins, and makers and ensure they are understood and agreed to by everyone.
+      Define [key responsibilities for your CoE](coe.md), admins, and makers and ensure they are understood and agreed to by everyone.
    :::column-end:::
 :::row-end:::
 
