@@ -17,9 +17,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Preview: View usage and billing information
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# View usage and billing information
 
 Aggregated billing information is available in the Azure portal, and detailed usage drill-downs are available in the Power Platform admin center. Reporting is available for Power Apps per-app meter and Dataverse capacity add-on meters. Overages for the Power Platform request meter are not reported or charged at this point.
 
@@ -36,9 +34,6 @@ Within Azure Cost Management, you can filter and view billing details by meter a
 While Azure Cost Management can show the amount that was billed for each meter and each billing policy, it won't provide a breakdown of which environments, apps, and users drove usage of the meters. For this level of information, a downloadable report is available on the **Billing policies** page in the Power Platform admin center.
 
 :::image type="content" source="media/pay-as-you-go-powerapps-download-reports.png" alt-text="Select Download reports":::
-
->[!NOTE]
->During the preview, detailed usage reporting is only available for the past 30 days.  In the future, more billing periods will be available in the usage report download experience.
 
 The downloadable report contains the following fields:
 
@@ -68,7 +63,6 @@ Here is a sample of a detailed usage report:
 
 :::image type="content" source="media/paygo_detailedusage.png" alt-text="Sample detailed usage report" lightbox="media/paygo_detailedusage.png":::
 
-
 ### Determining billed quantity
 
 The units of measure and the reporting frequency impact the granular billed quantity amount in both the usage report and the quantities sent to Azure.  Today, usage is reported to Azure three times per 24-hour period. 
@@ -87,7 +81,7 @@ Azure Cost Management provides options to set budgets for Azure resources and sp
 
 ## Next step
 
-[Preview: Known issues and frequently asked questions](pay-as-you-go-issues-faq.md)
+[Known issues and frequently asked questions](pay-as-you-go-issues-faq.md)
 
 
 
