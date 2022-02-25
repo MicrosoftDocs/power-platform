@@ -1,5 +1,6 @@
 {
     # defined as per style guide https://github.com/MicrosoftDocs/power-platform-pr/wiki
+    # to learn how to config this file, refer to https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md
 
     # heading style: atx (e.g. "# Heading") preferred
     "MD003": { "style": "atx" },
