@@ -34,7 +34,7 @@ Two setup options are available for the ALM accelerator for Microsoft Power Plat
 - Set up manually by using the step-by-step walk-through described in this article.
 
 > [!IMPORTANT]
-> We recommend that you use the [CoE CLI](./cli/overview.md) to assist in automating these steps. This article provides details and context for the actions that are performed by the CoE CLI, and acts as a reference for anyone who wants to know the specifics of each step in the process.
+> We recommend that you use the [CoE CLI](cli/overview.md) to assist in automating these steps. This article provides details and context for the actions that are performed by the CoE CLI, and acts as a reference for anyone who wants to know the specifics of each step in the process.
 
 ## Document structure
 
