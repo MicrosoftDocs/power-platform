@@ -20,6 +20,6 @@
     "MD048": { "style": "backtick" },
     # emphasis style: prefer underscore
     "MD049": { "style": "underscore" },
-    # string emphasis style: prefer asterisk
+    # strong emphasis style: prefer asterisk
     "MD050": { "style": "asterisk" }
 }
