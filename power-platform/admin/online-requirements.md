@@ -21,7 +21,7 @@ Microsoft Power Platform requires connectivity to the internet. The endpoints li
 
 ## Internet URLs to allow
 
-Ensure that you have added the required URLs to the allow list to ensure communication through firewalls and other security mechanisms.
+Ensure that you have added the required URLs to the allow list to ensure communication through firewalls and other security mechanisms. If you cannot access a service or specific URLs fail to load, a proxy or firewall might be configured to prevent you from accessing server resources. Review your proxy settings and ensure that you add all the relevant URLs to the allowed list as per your service.
 
 ### URLs for Power Platform services
 
@@ -35,7 +35,7 @@ Add the following URLs to the allow list.
 |Power Virtual Agents|- [Public cloud](/power-virtual-agents/requirements-quotas#required-services)<br/>- [Government cloud](/power-virtual-agents/requirements-licensing-gcc#power-virtual-agents-us-government-service-urls)
 
 > [!IMPORTANT]
-> If you are a customer in China and want to access Power Platform services operated by a local company that stores your data within China, see this topic for information about 21Vianet services: [Power Platform and Dynamics 365 apps - operated by 21Vianet in China](about-microsoft-cloud-china.md) 
+> If you are a customer in China and want to access Power Platform services operated by a local company that stores your data within China, go to [Power Platform and Dynamics 365 apps - operated by 21Vianet in China](about-microsoft-cloud-china.md) 
 
 ### URLs for Dynamics 365 services
 
@@ -60,8 +60,8 @@ Add the following URLs to the allow list to use Dynamics 365 apps such as Dynami
 | https://*.api.powerplatform.com | Required for Power Platform API connectivity used internally by Microsoft products and admin automation scenarios as [documented here](programmability-extensibility-overview.md).
 
 > [!IMPORTANT]
-> - If you cannot access a service or specific URLs fail to load, a proxy or firewall might be configured to prevent you from accessing server resources. Review your proxy settings and ensure that you add all the relevant URLs to the allowed list as per your service.
-> - If you are a customer in China and want to access Dynamics 365 services operated by a local company that stores your data within China, see this topic for information about 21Vianet services: [Power Platform and Dynamics 365 apps - operated by 21Vianet in China](about-microsoft-cloud-china.md)
+> - If you are Government cloud customer, go to [Dynamics 365 US Government URLs](microsoft-dynamics-365-government.md#dynamics-365-us-government-urls) 
+> - If you are a customer in China and want to access Dynamics 365 services operated by a local company that stores your data within China, go to [Power Platform and Dynamics 365 apps - operated by 21Vianet in China](about-microsoft-cloud-china.md)
 
 
 ## IP addresses required
