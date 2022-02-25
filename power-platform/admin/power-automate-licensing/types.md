@@ -67,7 +67,7 @@ Here's a chart that lays out the limits that are associated with the different l
 
 1. Dynamics 365 Sales Professional and Dynamics 365 Customer Service Professional.
 1. Dynamics 365 Sales Enterprise, Dynamics 365 Customer Service Enterprise, Dynamics 365 Field Service, Dynamics 365 Project Service Automation, Dynamics 365 Retail, Dynamics 365 Talent, and Dynamics 365 Customer Engagement plan.
-1. In Dataverse for Teams environments (included in [select Office licenses)](powerapps-flow-licensing-faq.md#which-microsoft-365-subscriptions-include-dataverse-for-teams-and-power-virtual-agents-capabilities-with-teams) customers can use custom connectors built on Azure and Dataverse capabilities.
+1. In Dataverse for Teams environments (included in [select Office licenses)](../powerapps-flow-licensing-faq.md#which-microsoft-365-subscriptions-include-dataverse-for-teams-and-power-virtual-agents-capabilities-with-teams) customers can use custom connectors built on Azure and Dataverse capabilities.
 
 ## Transition period
 
@@ -77,7 +77,7 @@ Here are a few things to be aware of during the transition period.
 
 1. The transition period doesn't mean that there are no daily limits. It means that the currently enforced limits are more generous than the stated limits to prevent potential unintended impact on your apps or flows. See [Power Platform requests](#transition-period) to understand both plan limits and transition period limits. 
 1. These transition period limits are applied at the flow level during transition period. Once the transition period ends, the limits will be applied at user level for per user plans and flow level for per flow plan.
-1. Since limits are more generous during the transition period, [stacking of user licenses isn't supported](api-request-limits-allocations.md). If a user has multiple plans, such as a Microsoft 365 plan and a Dynamics 365 plan, the flow will use the higher plan (Dynamics 365 plan).
+1. Since limits are more generous during the transition period, [stacking of user licenses isn't supported](../api-request-limits-allocations.md). If a user has multiple plans, such as a Microsoft 365 plan and a Dynamics 365 plan, the flow will use the higher plan (Dynamics 365 plan).
 1. Power Platform requests capacity add-on packs are not assignable to the users or flows during the transition period. However, Microsoft recommends that you purchase these add-ons to remain within your license terms and to be prepared for when the transition period ends. If your flows are currently being throttled, purchase add-ons and create a support ticket with the flow details and add-on details so that the support team can provide exceptions for your throttled flows.
 1. Seeded license users can only use flows within the context of the app. See [the seeded plans](#seeded-plans) section to learn more. The enforcement on license limits is less strict during transition period and Microsoft recommends that you remain within your license terms to avoid any disruptions when the transition period ends.
 
@@ -127,7 +127,7 @@ Different scenarios (for example, forms processing, prediction, etc.) consume se
 
 ### Dataverse database and file capacity
 
-Data volume continues to grow exponentially as businesses advance their digital transformation journey and bring data together across their organizations. Modern business applications need to support new business scenarios, manage new data types, and help organizations with the increasing complexity of compliance mandates. To support the growing needs of today's organizations, data storage solutions need to evolve continuously and provide the right solution to support expanding business needs. Microsoft Dataverse capacity storage is optimized for relational data (database), attachments (file), and audit logs (log). Power Automate standalone license customers receive a tenant-wide default entitlement for each of these three storage types. You can buy more storage in 1-GB increments. Learn more about [Dataverse capacity storage](capacity-storage.md).
+Data volume continues to grow exponentially as businesses advance their digital transformation journey and bring data together across their organizations. Modern business applications need to support new business scenarios, manage new data types, and help organizations with the increasing complexity of compliance mandates. To support the growing needs of today's organizations, data storage solutions need to evolve continuously and provide the right solution to support expanding business needs. Microsoft Dataverse capacity storage is optimized for relational data (database), attachments (file), and audit logs (log). Power Automate standalone license customers receive a tenant-wide default entitlement for each of these three storage types. You can buy more storage in 1-GB increments. Learn more about [Dataverse capacity storage](../capacity-storage.md).
 
 ## Power Platform requests
 
@@ -237,7 +237,7 @@ Yes, and if your flow runs under a service account, it is really a team/organiza
 
 #### Can I use service principal in flows, and does it count against my request limits?
 
-Service principal isn't supported yet but it's a top item on the backlog. When we support it, service principal flows will consume a separate quota called [non-interactive limits](api-request-limits-allocations.md).
+Service principal isn't supported yet but it's a top item on the backlog. When we support it, service principal flows will consume a separate quota called [non-interactive limits](../api-request-limits-allocations.md).
 
 #### Will desktop flows usage count consume my Power Platform request limits?
 
@@ -245,7 +245,7 @@ Only the desktop flow actions that are invoked from cloud flows count against th
 
 #### What happens to my Power Platform requests if I have multiple plans?
 
-Since limits aren't strictly enforced during the transition period, [stacking of user licenses isn't supported](api-request-limits-allocations.md). If a user has multiple plans, such as a Microsoft 365 plan and a Dynamics 365 plan, the flow uses the higher plan (Dynamics 365 plan, in this example).
+Since limits aren't strictly enforced during the transition period, [stacking of user licenses isn't supported](../api-request-limits-allocations.md). If a user has multiple plans, such as a Microsoft 365 plan and a Dynamics 365 plan, the flow uses the higher plan (Dynamics 365 plan, in this example).
 
 After the transition period ends, if a user has multiple plans assigned from different product lines, the total number of requests allowed would be the sum of the requests allocated to each license type. For example, if a user has both a Dynamics 365 Customer Service Enterprise license and a Power Apps per user license, then that user has a total of 40000 + 40000 = 80000 requests available per 24 hour period.
 
