@@ -2,7 +2,6 @@
 title: "Power Platform URLs and IP address ranges  | MicrosoftDocs"
 description: Information on URLs and IP addresses to be added to the allow list to use Power Platform.
 author: jimholtz
-
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/14/2022
@@ -35,6 +34,8 @@ Add the following URLs to the allow list.
 |Power BI|- [Public cloud](/power-bi/admin/power-bi-allow-list-urls)<br/>- [Government cloud](/power-bi/admin/service-govus-overview#allow-connections-to-power-bi)|
 |Power Virtual Agents|- [Public cloud](/power-virtual-agents/requirements-quotas#required-services)<br/>- [Government cloud](/power-virtual-agents/requirements-licensing-gcc#power-virtual-agents-us-government-service-urls)
 
+> [!IMPORTANT]
+> If you are a customer in China and want to access Power Platform services operated by a local company that stores your data within China, see this topic for information about 21Vianet services: [Power Platform and Dynamics 365 apps - operated by 21Vianet in China](about-microsoft-cloud-china.md) 
 
 ### URLs for Dynamics 365 services
 
@@ -59,7 +60,8 @@ Add the following URLs to the allow list to use Dynamics 365 apps such as Dynami
 | https://*.api.powerplatform.com | Required for Power Platform API connectivity used internally by Microsoft products and admin automation scenarios as [documented here](programmability-extensibility-overview.md).
 
 > [!IMPORTANT]
-> If you cannot access a service or specific URLs fail to load, a proxy or firewall might be configured to prevent you from accessing server resources. Review your proxy settings and ensure that you add all the relevant URLs to the allowed list as per your service.
+> - If you cannot access a service or specific URLs fail to load, a proxy or firewall might be configured to prevent you from accessing server resources. Review your proxy settings and ensure that you add all the relevant URLs to the allowed list as per your service.
+> - If you are a customer in China and want to access Dynamics 365 services operated by a local company that stores your data within China, see this topic for information about 21Vianet services: [Power Platform and Dynamics 365 apps - operated by 21Vianet in China](about-microsoft-cloud-china.md)
 
 
 ## IP addresses required
