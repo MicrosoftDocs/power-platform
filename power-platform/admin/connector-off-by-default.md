@@ -4,7 +4,7 @@ description: Describes how new connectors are now disabled by default in GCC Hig
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/31/2022
+ms.date: 02/25/2022
 ms.subservice: admin
 author: mikferland-msft
 ms.author: miferlan
@@ -22,7 +22,7 @@ search.app:
 ---
 # Disable new connectors by default in GCC High and DoD
 
-Effective February 9, 2022, all new connectors that are introduced by Microsoft and partners to the Power Platform will be disabled by default for customers operating in the following US government clouds: GCC High and DoD. Administrators will be able to review these new connectors before  authorizing their use across the organization in the **Data policy** page of the Power Platform admin center. Connectors already published in GCC High and DoD will remain enabled.
+All new connectors that are introduced by Microsoft and partners to the Power Platform will be disabled by default for customers operating in the following US government clouds: GCC High and DoD. Administrators will be able to review these new connectors before  authorizing their use across the organization in the **Data policy** page of the Power Platform admin center. Connectors already published in GCC High and DoD will remain enabled.
 
 Power Platform and third parties continuously release new connectors and administrators can set a [default classification](dlp-connector-classification.md#default-data-group-for-new-connectors) for those connectors via its DLP policies. Depending on how these DLP policies are configured within the customer's tenant, new connectors can unintentionally become available to makers in certain environments without administrators approving their use. Such occurrences must be avoided in US government clouds where strict compliance is mandated. Administrators can now rely on this safeguard mechanism in GCC High and DoD to better control the use of connectors.
 
@@ -32,7 +32,7 @@ Power Platform and third parties continuously release new connectors and adminis
 
 ## Availability
 
-This feature is exclusively available for all customers operating in GCC High and DoD. Sign-up isn’t required.
+This feature is being progressively released, and all customers operating in GCC High and DoD will have access to it by the end of March 2022. Sign-up is not required.
 
 ## Workflow
 
