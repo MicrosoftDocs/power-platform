@@ -91,7 +91,7 @@ For an administrator, the quick start guide should take about 30 minutes. By the
 
    If you're prompted to create an HTTP with Azure Active Directory (AD) connection, enter **https&semi;\/\/graph&period;microsoft&period;com** for both the **Base Resource URL** and **Azure AD Resource URI**.
 
-1. [Update permissions for the project build service](/power-platform/guidance/coe/setup-almacceleratorpowerplatform#update-permissions-for-the-project-build-service) to enable build pipelines to interact with Git repositories.
+1. [Update permissions for the project build service](../../setup-almacceleratorpowerplatform.md#update-permissions-for-the-project-build-service) to enable build pipelines to interact with Git repositories.
 
 1. When your makers create [development environments](./development-environments.md), run `CoE ALM maker add` to add the makers to Azure DevOps and share the ALM Accelerator for Power Platform canvas app.
 
@@ -117,7 +117,7 @@ For an administrator, the quick start guide should take about 30 minutes. By the
 
 ## Understand the concepts
 
-Not sure what ALM is and how it can help? [Use the ALM accelerator for Microsoft Power Platform](/power-platform/guidance/coe/almacceleratorpowerplatform-components) provides further context and examples of usage.
+Not sure what ALM is and how it can help? [Use the ALM accelerator for Microsoft Power Platform](../../almacceleratorpowerplatform-components.md) provides further context and examples of usage.
 
 ### Getting started
 
@@ -147,15 +147,15 @@ The following recording shows a sample generating an installation configuration 
 
 ### Read more
 
-- [Use the ALM Accelerator for Power Platform app](/power-platform/guidance/coe/almacceleratorpowerplatform-components): An overview of the ALM accelerator
-- [Configuring deployment user settings and profiles](/power-platform/guidance/coe/setup-almacceleratorpowerplatform-deployment-profiles): The deployment experience and profile setup
-- [Configuring user permissions](/power-platform/guidance/coe/setup-almacceleratorpowerplatform-users): Configuring Microsoft Dataverse users to access the ALM Accelerator for Power Platform app
+- [Use the ALM Accelerator for Power Platform app](../../almacceleratorpowerplatform-components.md): An overview of the ALM accelerator
+- [Configuring deployment user settings and profiles](../../setup-almacceleratorpowerplatform-deployment-profiles.md): The deployment experience and profile setup
+- [Configuring user permissions](../../setup-almacceleratorpowerplatform-users.md): Configuring Microsoft Dataverse users to access the ALM Accelerator for Power Platform app
 - Manual setup—understand the key steps that the CLI is automating:
-  - [Foundational setup](/power-platform/guidance/coe/setup-almacceleratorpowerplatform#foundational-setup): The foundational steps automated by the CLI install command.
-  - [Development project setup](/power-platform/guidance/coe/setup-almacceleratorpowerplatform#development-project-setup): The manual steps that are automated by the CLI install command
-  - [Solution setup](/power-platform/guidance/coe/setup-almacceleratorpowerplatform#solution-setup): The manual steps to set up Azure DevOps that are performed by the CLI install command
-  - [Importing the solution](/power-platform/guidance/coe/setup-almacceleratorpowerplatform#importing-the-solution-and-configuring-the-app): The manual steps to import the managed solution that are performed by the CLI install command
-- [Configuration and data deployment in pipelines](/power-platform/guidance/coe/setup-almacceleratorpowerplatform-deployment-config): Configuring solution assets for the deployment, for example connection references, environment variables, and sharing
-- [Configuring pipeline sync](/power-platform/guidance/coe/setup-almacceleratorpowerplatform-pipeline-sync): Creating a pipeline to sync the latest YAML from the CoE Starter Kit GitHub repo
+  - [Foundational setup](../../setup-almacceleratorpowerplatform.md#foundational-setup): The foundational steps automated by the CLI install command.
+  - [Development project setup](../../setup-almacceleratorpowerplatform.md#development-project-setup): The manual steps that are automated by the CLI install command
+  - [Solution setup](../../setup-almacceleratorpowerplatform.md#solution-setup): The manual steps to set up Azure DevOps that are performed by the CLI install command
+  - [Importing the solution](../../setup-almacceleratorpowerplatform.md#importing-the-solution-and-configuring-the-app): The manual steps to import the managed solution that are performed by the CLI install command
+- [Configuration and data deployment in pipelines](../../setup-almacceleratorpowerplatform-deployment-config.md): Configuring solution assets for the deployment, for example connection references, environment variables, and sharing
+- [Configuring pipeline sync](../../setup-almacceleratorpowerplatform-pipeline-sync.md): Creating a pipeline to sync the latest YAML from the CoE Starter Kit GitHub repo
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

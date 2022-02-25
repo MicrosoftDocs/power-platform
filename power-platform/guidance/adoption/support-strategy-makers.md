@@ -75,9 +75,9 @@ Over time, troubleshooting and problem resolution skills become more effective a
 
 ## Microsoft support
 
-Based on your support plan, you may be eligible for advisory support services provided through Premier/Unified support. Learn more about support available to you: [Get Help + Support](/power-platform/admin/get-help-support)
+Based on your support plan, you may be eligible for advisory support services provided through Premier/Unified support. Learn more about support available to you: [Get Help + Support](../../admin/get-help-support.md)
 
-Refer to the comprehensive [Microsoft Power Platform documentation](/power-platform/). It's an authoritative resource that can aid you with troubleshooting and searching for information.
+Refer to the comprehensive [Microsoft Power Platform documentation](../../index.yml). It's an authoritative resource that can aid you with troubleshooting and searching for information.
 
 ## Partner support
 

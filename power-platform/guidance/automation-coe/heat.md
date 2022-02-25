@@ -67,9 +67,9 @@ Resources for determining ROI, process discovery, and setting up Power Automate 
 - Use the [Automation Project app](automation-coe-starter-kit.md) for curating and managing ideas
 - [Power Automate for desktop](/power-automate/desktop-flows/introduction)
 - [Power Automate IP address configuration](/power-automate/limits-and-config)
-- [Service administrator roles (Microsoft 365 Global / Power Platform/ Dynamics 365/ Azure/ Power BI admin)](/power-platform/admin/use-service-admin-role-manage-tenant)
+- [Service administrator roles (Microsoft 365 Global / Power Platform/ Dynamics 365/ Azure/ Power BI admin)](../../admin/use-service-admin-role-manage-tenant.md)
 - [Assign Power Automate RPA attended user plan through Microsoft 365 admin center](/power-automate/organization-q-and-a#power-automate-rpa-license)
-- [Manage unattended RPA add-on capacity](/power-platform/admin/capacity-add-on) in [Power Platform admin center](https://aka.ms/ppac)
+- [Manage unattended RPA add-on capacity](../../admin/capacity-add-on.md) in [Power Platform admin center](https://aka.ms/ppac)
 
 ## Design
 
@@ -121,7 +121,7 @@ Watch the video: [Deploy & manage](https://youtu.be/VukO0gHj7YU)
 
 Some resources for deploying, monitoring, and managing automations:
 
-- [ALM with Microsoft Power Platform using Azure DevOps or GitHub](/power-platform/alm/)
+- [ALM with Microsoft Power Platform using Azure DevOps or GitHub](../../alm/index.yml)
 - [Run desktop flows as attended/unattended](/power-automate/desktop-flows/run-desktop-flow)
 - [Monitor desktop flow runs](/power-automate/desktop-flows/monitor-desktop-flow-runs)
 - [Prioritize desktop flow using queues](/power-automate/desktop-flows/monitor-desktop-flow-queues)
@@ -141,9 +141,9 @@ The platform provides a rich set of auditing logs that help admins keep track of
 
 Some helpful resources for security, governance, and adoption nurturing:
 
-- [Power Platform compliance and data privacy](/power-platform/admin/wp-compliance-data-privacy)
+- [Power Platform compliance and data privacy](../../admin/wp-compliance-data-privacy.md)
 - [Microsoft Trust Center](https://www.microsoft.com/trustcenter)
-- [Establishing a data loss prevention (DLP) strategy](/power-platform/guidance/adoption/dlp-strategy)
+- [Establishing a data loss prevention (DLP) strategy](../adoption/dlp-strategy.md)
 - [Audit Power Automate flow events through Microsoft 365 Security & Compliance Center](https://flow.microsoft.com/blog/security-and-compliance-center/)
 
 ## Nurture

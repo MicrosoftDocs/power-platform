@@ -29,12 +29,12 @@ The ALM accelerator doesn't have a dependency on other components of the CoE Sta
 
 Two setup options are available for the ALM accelerator for Microsoft Power Platform:
 
-- Set up by using the [Center of Excellence command-line interface (CoE CLI)](/power-platform/guidance/coe/cli/overview).
+- Set up by using the [Center of Excellence command-line interface (CoE CLI)](cli/overview.md).
 
 - Set up manually by using the step-by-step walk-through described in this article.
 
 > [!IMPORTANT]
-> We recommend that you use the [CoE CLI](/power-platform/guidance/coe/cli/overview) to assist in automating these steps. This article provides details and context for the actions that are performed by the CoE CLI, and acts as a reference for anyone who wants to know the specifics of each step in the process.
+> We recommend that you use the [CoE CLI](cli/overview.md) to assist in automating these steps. This article provides details and context for the actions that are performed by the CoE CLI, and acts as a reference for anyone who wants to know the specifics of each step in the process.
 
 ## Document structure
 
@@ -57,7 +57,7 @@ The ALM accelerator for Microsoft Power Platform must be installed into a Power 
 > [!NOTE]
 > Currently, the ALM accelerator isn't compatible with Dataverse for Teams. Both the ALM Accelerator for Power Platform app and the associated Azure DevOps pipelines assume that the full version of Dataverse is being used in all environments.
 
-You'll need to create an environment in which to set up the ALM accelerator for Microsoft Power Platform. We recommend that you install the accelerator in the same environment as other CoE Starter Kit solutions. For more information about how to decide on the best strategy for your organization, go to [Establishing an environment strategy for Microsoft Power Platform](/power-platform/guidance/adoption/environment-strategy) and [Environment strategy for ALM](/power-platform/alm/environment-strategy-alm).
+You'll need to create an environment in which to set up the ALM accelerator for Microsoft Power Platform. We recommend that you install the accelerator in the same environment as other CoE Starter Kit solutions. For more information about how to decide on the best strategy for your organization, go to [Establishing an environment strategy for Microsoft Power Platform](../adoption/environment-strategy.md) and [Environment strategy for ALM](../../alm/environment-strategy-alm.md).
 
 ### Azure DevOps organization
 
@@ -104,7 +104,7 @@ Creating an app registration for the ALM accelerator is a one-time setup step to
 1. Select **Add permissions**.
 
 1. Repeat the preceding steps for the following permissions:
-    - **PowerApps-Advisor (Analysis All)**. This is required for running static analysis via the [app checker](/power-platform/alm/checker-api/overview). This permission can be found under **APIs my organization uses**.
+    - **PowerApps-Advisor (Analysis All)**. This is required for running static analysis via the [app checker](../../alm/checker-api/overview.md). This permission can be found under **APIs my organization uses**.
 
     - **DevOps**. This is required for connecting to Azure DevOps via the custom connector in the ALM accelerator app. This permission can be found under **APIs my organization uses**.
 
@@ -568,10 +568,10 @@ If your solution requires these other configuration settings or data, follow the
 
 ## Read more
 
-- [Use the ALM Accelerator for Power Platform app](/power-platform/guidance/coe/almacceleratorpowerplatform-components): An overview of the ALM accelerator
-- [Configuring deployment user settings and profiles](/power-platform/guidance/coe/setup-almacceleratorpowerplatform-deployment-profiles): The deployment experience and profile setup
-- [Configuring user permissions](/power-platform/guidance/coe/setup-almacceleratorpowerplatform-users): Configuring Microsoft Dataverse users to access the ALM Accelerator for Power Platform app
-- [Configuration and data deployment in pipelines](/power-platform/guidance/coe/setup-almacceleratorpowerplatform-deployment-config): Configuring solution assets for the deployment, for example connection references, environment variables, and sharing
-- [Configuring pipeline sync](/power-platform/guidance/coe/setup-almacceleratorpowerplatform-pipeline-sync): Creating a pipeline to sync the latest YAML from the CoE Starter Kit GitHub repo
+- [Use the ALM Accelerator for Power Platform app](almacceleratorpowerplatform-components.md): An overview of the ALM accelerator
+- [Configuring deployment user settings and profiles](setup-almacceleratorpowerplatform-deployment-profiles.md): The deployment experience and profile setup
+- [Configuring user permissions](setup-almacceleratorpowerplatform-users.md): Configuring Microsoft Dataverse users to access the ALM Accelerator for Power Platform app
+- [Configuration and data deployment in pipelines](setup-almacceleratorpowerplatform-deployment-config.md): Configuring solution assets for the deployment, for example connection references, environment variables, and sharing
+- [Configuring pipeline sync](setup-almacceleratorpowerplatform-pipeline-sync.md): Creating a pipeline to sync the latest YAML from the CoE Starter Kit GitHub repo
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
