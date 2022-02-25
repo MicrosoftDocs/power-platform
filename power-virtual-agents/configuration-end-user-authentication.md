@@ -119,7 +119,7 @@ Your bot's **authentication option** and **Require user to sign in** combination
 
 - **No authentication**: Any user who has a link to the bot (or can find it, for example, on your website) can chat with it. You cannot control which users can chat with the bot in your organization.
 
-- **Only for Teams**. The bot will only work on [the Teams channel](publication-add-bot-to-microsoft-teams.md). This means the user will always be signed in, and therefore the **Require users to sign in** option will be enabled and can't be changed. You can control who can chat with the bot in your organization with bot sharing.
+- **Only for Teams**: The bot will only work on [the Teams channel](publication-add-bot-to-microsoft-teams.md). This means the user will always be signed in, and therefore the **Require users to sign in** option will be enabled and can't be changed. Use bot sharing to control who can chat with the bot in your organization.
 
 - **Manual (for any channel including Teams)**:
   
