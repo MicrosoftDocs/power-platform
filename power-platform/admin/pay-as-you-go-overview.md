@@ -16,9 +16,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Preview: Pay-as-you-go plan
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Pay-as-you-go plan
 
 <!-- https://go.microsoft.com/fwlink/?linkid=2173947 -->
 
@@ -68,7 +66,7 @@ Billing policies provide flexible options for organizations that are looking to 
 
 ## Next step
 
-[Preview: Pay-as-you-go meters](pay-as-you-go-meters.md)
+[Pay-as-you-go meters](pay-as-you-go-meters.md)
 
 
 

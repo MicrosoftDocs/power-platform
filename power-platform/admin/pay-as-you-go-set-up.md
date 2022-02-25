@@ -16,9 +16,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Preview: Set up pay-as-you-go
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Set up pay-as-you-go
 
 In order to set up pay-as-you-go billing for an environment, you first need an active Azure subscription that you can link to that environment. You can do so in the Power Platform admin center or within Power Apps.
 
@@ -35,47 +33,10 @@ The following table describes the permissions of who can create a [billing polic
 
 ## Get started
 
-1. Procure or create an Azure subscription you can use. 
+## First, you need to procure or create an Azure subscription you can use. 
 
    If you don't already have an Azure subscription in your tenant, work through the standard process in your organization to obtain one or create a new one [here.](https://azure.microsoft.com/free/) You'll need to have permissions to create new resources and register resource providers in the subscription (or have the ability to work with an Azure subscription owner or contributor who can register resource providers). For more information, go to [Azure subscriptions.](https://go.microsoft.com/fwlink/?linkid=2174703)
-
-2. Enable the Power Platform account feature in the Azure portal. (Note that this is temporary and will be automated in the future.)
-
-   1. Sign in to the Azure portal and start the Cloud Shell.
-
-      :::image type="content" source="media/pay-as-you-go-azure-start-cloud-shell.png" alt-text="Start the Cloud Shell in Azure Portal":::
-
-      Azure Cloud Shell
-      :::image type="content" source="media/pay-as-you-go-azure-cloud-shell.png" alt-text="Azure Cloud Shell in Azure Portal":::
-
-   2. Enter the following command in the Azure Cloud Shell to register the Power Platform resource provider. (Remove the { } in the subscriptionId parameter):
-
-      ```azurecli
-      az provider register -n Microsoft.PowerPlatform --subscription {subscriptionId}
-      ```
-
-       The above command will run asynchronously and may take a few minutes to complete. You can check whether the command has completed by running:
-
-      ```azurecli
-      az provider show -n Microsoft.PowerPlatform --subscription {subscriptionId}
-      ```
-  
-      Alternatively, in PowerShell you can use the following commands to register the resource provider:
-
-      ```powershell
-      Select-AzSubscription <Subscription ID>
-      Register-AzResourceProvider -ProviderNamespace Microsoft.PowerPlatform
-
-      ```
-
-       The above command will run asynchronously and may take a few minutes to complete. You can check whether the command has completed by running:
-
-      ```powershell
-      Get-AzResourceProvider -ProviderNamespace Microsoft.PowerPlatform
-      ```
-    
-Your Azure subscription is now set up to use Power Platform pay-as-you-go.
-
+   
 ## Link an Azure subscription to an environment 
 
 Pay-as-you-go can be set up via the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) or within [Power Apps](https://make.powerapps.com/). Pay-as-you-go is available for **production** and **sandbox** environments.
@@ -203,7 +164,7 @@ You can turn off pay-as-you-go for an environment at any time by doing either of
 
 ## Next step
 
-[Preview: View usage and billing information](pay-as-you-go-usage-costs.md)
+[View usage and billing information](pay-as-you-go-usage-costs.md)
 
 
 
