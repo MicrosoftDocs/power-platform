@@ -32,7 +32,7 @@ The following sections present detailed characteristics and capabilities of an o
 | 100: Initial | <ul><li>Innovation driven by business areas (bottom up)</li><li>Low-complexity scenarios</li><li>Limited reuse</li><li>Undefined strategy</li></ul> |
 | 200: Repeatable | <ul><li>Common vision between IT and business</li><li>Demand-management process</li></ul> |
 | 300: Defined | <ul><li>Dedicated Power Platform product owner</li><li>Bottom-up and top-down innovation</li><li>Defined understanding of Power Platform’s role in your organization’s IT portfolio</li></ul> |
-| 400: Capable | <ul><li>Established [Center of Excellence](./coe.md) team</a></li><li>Increased delivery efficiency supports rapidly changing business needs</li><li>Business plans shared across departments</li></ul> |
+| 400: Capable | <ul><li>Established [Center of Excellence](coe.md) team</a></li><li>Increased delivery efficiency supports rapidly changing business needs</li><li>Business plans shared across departments</li></ul> |
 | 500: Efficient | <ul><li>Power Platform is key part of the digital transformation strategy</li><li>Vision and strategy understood by all</li><li>Organization-wide initiatives deliver larger-scale apps</li><li>Enterprise architecture decisions include Power Platform capabilities</li></ul> |
 
 ## Business Value
