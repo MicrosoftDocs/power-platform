@@ -31,7 +31,7 @@ Before appointments, contacts, and tasks can be synced, the corresponding mailbo
 - The user's email address is approved.
 - The mailbox is tested and enabled.
 - Appointments, contacts, and tasks are set to use server-side synchronization.
-    :::image type="content" source="./media/sync-logic-email-settings.png" alt-text="A screenshot of the Power Platform admin center Email settings page.":::
+
 
 For more information, see [Connect to Exchange Online](./connect-exchange-online.md) and [Server-side synchronization](./server-side-synchronization.md).
 
