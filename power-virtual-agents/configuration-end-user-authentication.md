@@ -117,15 +117,15 @@ This topic is automatically triggered for any user who talks to the bot without 
 
 Your bot's **authentication option** and **Require user to sign in** combination determines whether you can [share the bot](admin-share-bots.md) to control who in your organization can chat with your bot or not.  Sharing a bot for collaboration is not impacted by the end-user authentication setting.
 
-- **No authentication**. Any user who has a link to the bot (or can find it, for example, on your website) can chat with it. You cannot control which users can chat with the bot in your organization.
+- **No authentication**: Any user who has a link to the bot (or can find it, for example, on your website) can chat with it. You cannot control which users can chat with the bot in your organization.
 
 - **Only for Teams**. The bot will only work on [the Teams channel](publication-add-bot-to-microsoft-teams.md). This means the user will always be signed in, and therefore the **Require users to sign in** option will be enabled and can't be changed. You can control who can chat with the bot in your organization with bot sharing.
 
-- **Manual (for any channel including Teams)**.
+- **Manual (for any channel including Teams)**:
   
   - If your authentication setting is configured to **Manual**, and the service provider is either **Azure Active Directory** or **Azure Active Directory V2**, you can enable the **Require users to sign in** option to control who can chat with the bot in your organization via bot sharing.
   
-  - If your authentication provider is set as **Generic OAuth 2**, you can toggle the **Require users to sign in** option. When turned on, a user who signs in can chat with the bot, but you cannot control which specific users are allowed to chat with the bot in your organization with bot sharing.
+  - If your authentication provider is set as **Generic OAuth 2**, you can toggle the **Require users to sign in** option. When turned on, a user who signs in can chat with the bot, but you cannot control which specific users are allowed to chat with the bot in your organization using bot sharing.
 
 When a bot's authentication option can't control who can chat with the bot, selecting **Share** on the bot's homepage will inform you that anyone can chat with the bot.
 
@@ -159,7 +159,11 @@ Make sure to configure the redirect URL to `https://token.botframework.com/.auth
 
 1. Once the registration is completed, it will open to the **Overview** page. Go to **Authentication** and then select **Add a platform**.
 
-1. On the **configure platforms** blade select **Web**. Under **Redirect URIs** add `https://token.botframework.com/.auth/web/redirect`. Under the **Implicit grant** section, select the **Id Tokens** and **Access Tokens** checkboxes.
+1. On the **configure platforms** blade, select **Web**.
+
+1. Under **Redirect URIs**, add `https://token.botframework.com/.auth/web/redirect`.
+
+1. Under the **Implicit grant** section, select the **Id Tokens** and **Access Tokens** checkboxes.
 
 1. Select **Configure** to confirm your changes.
 
@@ -191,13 +195,13 @@ Make sure to configure the redirect URL to `https://token.botframework.com/.auth
 
 ### Manual authentication fields
 
-The following are all possible fields you'll see when configuring manual authentication. However depending on your choice for [service provider](#service-provider), some fields won't be present.
+The following are all possible fields you'll see when configuring manual authentication. However, depending on your choice for [service provider](#service-provider), some fields won't be present.
 
 #### Service provider
 
 The service provider you want to use for authentication.
 
-If you're using Azure AD as a provider, we recommend using the "Azure Active Directory" or "Azure Active Directory V2" for easier configuration.
+If you're using Azure AD as a provider, we recommend using "Azure Active Directory" or "Azure Active Directory V2" for easier configuration.
 
 For more information, see [OAuth generic providers](/azure/bot-service/bot-builder-concept-identity-providers?view=azure-bot-service-4.0&tabs=adv1%2Cga2&preserve-view=true) documentation.  
 
@@ -215,7 +219,7 @@ To find this information when using Azure AD, go to the app registration's **Ove
 
 Your client secret obtained from the identity provider registration.
 
-To find this information when using Azure AD, generate a new client secret. If you navigate away from the **Certificates & secrets** page, the secret's **Value** will be obfuscated and you'll need to create a new one
+To find this information when using Azure AD, generate a new client secret. If you navigate away from the **Certificates & secrets** page, the secret's **Value** will be obfuscated and you'll need to create a new one.
 
 #### Token exchange URL (required for SSO)
 
@@ -223,7 +227,7 @@ This is an optional field used when [configuring single sign-on](configure-sso.m
 
 #### Refresh URL query string template
 
-Refresh URL query string separator for the token URL. Usually a question mark `?`.
+Refresh URL query string separator for the token URL. Usually a question mark (`?`).
 
 #### Refresh body template
 
@@ -233,11 +237,13 @@ When using Azure AD, use `refresh_token={RefreshToken}&redirect_uri={RedirectUrl
 
 #### Scopes
 
-List of [scopes](/azure/active-directory/develop/developer-glossary#scopes) you want authenticated users to have once signed in. Use spaces to separate multiple scopes. Make sure you're only setting the necessary scopes, and follow the [Least privilege access control principle](/windows-server/identity/ad-ds/plan/security-best-practices/implementing-least-privilege-administrative-models). If you're using a custom scope, use the full URI including the exposed Application ID URI.
+List of [scopes](/azure/active-directory/develop/developer-glossary#scopes) you want authenticated users to have once signed in. 
+
+Use spaces to separate multiple scopes, only set necessary scopes, and follow the [Least privilege access control principle](/windows-server/identity/ad-ds/plan/security-best-practices/implementing-least-privilege-administrative-models).
 
 To find this information when using Azure AD, go to the **API permissions** page under the **API / Permissions** name section.
 
-For custom scopes defined by an exposed API, you'll need to include the API ID. On the **Expose an API** page, prepend the **Application ID URI** and ending slash `/` to the scope name. For example, if your custom scope name is `app.scope.sso`, and the **Application ID URI** is `api://1234-4567`, then you would enter `api://1234-4567/app.scope.sso` as the scope.
+For custom scopes defined by an exposed API, you'll need to use the full URI, including the exposed Application ID URI. On the **Expose an API** page, prepend the **Application ID URI** and ending slash (`/`) to the scope name. For example, if your custom scope name is `app.scope.sso`, and the **Application ID URI** is `api://1234-4567`, then you would enter `api://1234-4567/app.scope.sso` as the scope.
 
 #### Token URL template
 
@@ -247,9 +253,9 @@ To find this information when using Azure AD, go to the app registration's **Ove
 
 #### Token URL query string template
 
-Query string separator for the token URL. Usually a question mark `?`.
+Query string separator for the token URL. Usually a question mark (`?`).
 
-When using Azure AD, use a question mark `?`.
+When using Azure AD, use a question mark (`?`).
 
 #### Token body template
 
@@ -261,11 +267,13 @@ When using Azure AD, use `code={Code}&grant_type=authorization_code&redirect_uri
 
 URL template for refresh. For example, `https://login.microsoftonline.com/common/oauth2/v2.0/token`. For Azure Apps, you want to replace the base URL with your Azure App URL.
 
-To find this information when using Azure AD, go to the app registration's **Overview** page and then selecting **Endpoints**. This is listed as the **OAuth 2.0 token endpoint (v2)**.
+To find this information when using Azure AD, go to the app registration's **Overview** page and then select **Endpoints**. This is listed as the **OAuth 2.0 token endpoint (v2)**.
 
 #### Scope list delimiter
 
-The separator character for the scope list. Empty spaces (` `) are not supported in this field, but can be used in the **Scopes** field if required by the identity provider. In that case, use a comma (`,`) for this field, and spaces (` `) in the **Scopes** field.
+The separator character for the scope list. 
+
+Empty spaces (` `) are not supported in this field, but can be used in the **Scopes** field if required by the identity provider. In that case, use a comma (`,`) for this field, and spaces (` `) in the **Scopes** field.
 
 When using Azure AD, use a comma (`,`).
 
@@ -277,7 +285,9 @@ To find this information when using Azure AD, go to the app registration's **Ove
 
 #### Authorization URL query string template
 
-Query template for authorization, provided by your identity provider. Keys in the query string template will vary depending on the identity provider.
+Query template for authorization, provided by your identity provider. 
+
+Keys in the query string template will vary depending on the identity provider.
 
 When using Azure AD, use `?client_id={ClientId}&response_type=code&redirect_uri={RedirectUrl}&scope={Scopes}&state={State}`.
 
