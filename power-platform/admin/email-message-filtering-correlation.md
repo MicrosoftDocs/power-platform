@@ -161,6 +161,9 @@ Next when an incoming email is tracked (arrived) in Dynamics 365, the same metho
 To find the correlation between the incoming email and the outgoing email the stored subject and recipient hashes are searched for matching values. Two emails are correlated if they have the same count of subject hashes and at least two matching recipient hashes.
 
 
+> [!NOTE]
+> As an organization sends and receives many emails over a long period of time, correlation data that is stored in the **EmailHash** table may increase significantly. This, when combined with less restrictive smart matching settings or common subject or recipient patterns, may cause smart matching performance to decrease. As a performance optimization, if high system resource utilization is detected when performing smart matching operations due to a combination of these factors, the system will correlate emails from the last 90 days.
+
 ### How can smart matching be configured?
 
 There are advanced settings that allow you to manipulate the smart matching behavior.
