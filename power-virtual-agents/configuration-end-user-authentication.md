@@ -179,7 +179,7 @@ Make sure to configure the redirect URL to `https://token.botframework.com/.auth
 
 1. Sign in to Power Virtual Agents. If you're using Azure AD as your identity provider, ensure you log in on the same tenant where you created the app registration.
 
-1. Confirm you've selected the bot for which you want to enable authentication by selecting the bot icon on the top menu and choosing the bot.
+1. Open the bot for which you want to enable authentication.
 
 1. Select **Manage** on the side pane, and then go to the **Security** tab and select the **Authentication** card.
 
