@@ -4,7 +4,7 @@ description: Describes how new connectors are now disabled by default in GCC Hig
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/31/2022
+ms.date: 02/25/2022
 ms.subservice: admin
 author: mikferland-msft
 ms.author: miferlan
