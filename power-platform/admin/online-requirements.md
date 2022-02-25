@@ -73,20 +73,13 @@ All IP addresses for various services for public and government clouds are avail
 - [Azure IP Ranges and Service Tags – China Cloud](https://www.microsoft.com/download/details.aspx?id=57062)
 - [Azure IP Ranges and Service Tags – Germany Cloud](https://www.microsoft.com/download/details.aspx?id=57064)
 
-The IP address values in these JSON files are grouped by service tags that define the service they're applicable for. For a list of all the service tags and their definition, see [Available service tags](/azure/virtual-network/service-tags-overview#available-service-tags) in Azure docs.
+The IP address values in these JSON files are grouped by service tags that define the service they're applicable for. 
 
-These service tags also have a regional scope to define the IP addresses required per Azure datacenter region. For example, to find out the required IP address values for accessing *Power Platform services* in the *Australia* region, use the [Azure IP Ranges and Service Tags – Public Cloud](https://www.microsoft.com/download/details.aspx?id=56519) file, and search for **PowerPlatformInfra.Australia**.
+For Power Platform and Dynamics 365 services, you must add the IP address values specified under the `AzureCloud` service tag. The service tags also have a regional scope to define the IP addresses required per Azure datacenter region. For example, to find out the required IP address values for accessing services in the *Australia* region, use the [Azure IP Ranges and Service Tags – Public Cloud](https://www.microsoft.com/download/details.aspx?id=56519) file, and search for `AzureCloud.Australia`.
 
 :::image type="content" source="media/ip-example.png" alt-text="PowerPlatformInfra service tag for Power Platform IPs":::  
 
-Use the following service tag values to find out IP address values required for your service.
-
-| Service | Service tag|Description  |
-|---|---|--|
-|Power Platform services|`PowerPlatformInfra`|This tag represents the IP addresses used by the infrastructure to host Power Platform services.|
-|Dynamics 365|`AzureCloud`|This tag represents all datacenter public IP addresses.|
-
-If you are using *Power Platform connectors*, see the complete list of IP addresses required in [Connectors docs](/connectors/common/outbound-ip-addresses#power-platform).
+If you are using *Power Platform connectors*, see the complete list of required IP addresses in [Connectors docs](/connectors/common/outbound-ip-addresses#power-platform).
 
 > [!NOTE]
 > Blocked IPs can also impact connecting Dynamics 365 apps to [Microsoft Exchange Server (on-premises)](connect-exchange-server-on-premises.md). 
