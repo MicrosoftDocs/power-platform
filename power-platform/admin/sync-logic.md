@@ -180,7 +180,10 @@ How tasks sync between Dynamics 365 and Exchange depends on the sync direction a
 
 - **Deleted tasks:** Faxes, letters, phone calls, and tasks that are deleted in Exchange are deleted in Dynamics 365.
 
-## Ignore logically deleted items during sync
+
+## Advanced synchronization settings
+
+### Ignore logically deleted items during sync
 
 When any item doesn't match the [sync filters](./choose-records-synchronize-dynamics-365-outlook-exchange.md) anymore, it's usually for one of two reasons:
 
@@ -194,30 +197,30 @@ For more information on sync filters, see:
 - [Choose the records to synchronize between customer engagement apps and Exchange](choose-records-synchronize-dynamics-365-outlook-exchange.md)
 - [Set up default sync filters for multiple users for appointments, contacts, or tasks](configure-default-sync-filters.md)
 
-## Allow copied items
+### Allow copied items
 
 When any linked item is copied in Exchange, server-side sync ignores the copy action by default. This behavior avoids creating duplicate information in Dynamics 365. To change this behavior and bring in duplicate items from Exchange, turn off *IgnoreCopiedItemsInSSSForMailbox* in [OrgDbOrgSettings](OrgDbOrgSettings.md) setting.
 
-## Syncing appointment attachments, contact addresses, and tasks in Outlook
+### Syncing appointment attachments, contact addresses, and tasks in Outlook
 
 The following sections apply to sync that's done through Dynamics 365 for Outlook or server-side synchronization. For more information, see [Integrate your email system](/integrate-synchronize-your-email-system.md).
 
 :::image type="content" source="./media/crm-itpro-systemsynctab.png" alt-text="A screenshot of the System Settings Synchronization tab in Dynamics 365 for Outlook.":::
 
-### Syncing appointment attachments
+#### Syncing appointment attachments
 
 Users can attach documents, pictures, recordings, and other files to appointments that they create in Dynamics 365 or in the Dynamics 365 for Outlook app. By default, attachments aren't included when appointments are synced. To include them:
   
 1. In Dynamics 365 for Outlook, go to **Settings** > **Administration** > **System Settings**.
 1. On the **Synchronization** tab, select **Synchronize appointment attachments with Outlook or Exchange**.
   
-#### Considerations when syncing attachments
+##### Considerations when syncing attachments
 
 - If you turn off attachment synchronization, attachments don't appear in appointments in Dynamics 365. They still appear in appointments in Dynamics 365 for Outlook.
 - Attachments in recurring appointments or in service appointments can't be synced.
 - Attachments can increase sync times. You may want to use attachments sparingly if you're using a low-bandwidth network.  
 
-### Syncing contact addresses  
+#### Syncing contact addresses  
   
 On the **Synchronization** tab in Dynamics 365 for Outlook, select one of the following options to choose how contact addresses are synced:
 
@@ -230,11 +233,11 @@ On the **Synchronization** tab in Dynamics 365 for Outlook, select one of the fo
 >
 >For more information, see [Which fields can be synchronized between Dynamics 365 apps and Outlook?](/dynamics365/outlook-addin/admin-guide/which-fields-synchronized.md)
   
-### Syncing tasks that are assigned in Outlook
+#### Syncing tasks that are assigned in Outlook
   
 By default, tasks that are created in Dynamics 365 for Outlook don't sync with Dynamics 365. To sync them, on the **Synchronization** tab in Dynamics 365 for Outlook, select **Synchronize tasks that are assigned in Outlook**.
 
-#### Considerations when syncing tasks
+##### Considerations when syncing tasks
 
 - Recurring tasks can't be synced.
 - The person assigning the task and the person the task is assigned to must be in the same organization.
