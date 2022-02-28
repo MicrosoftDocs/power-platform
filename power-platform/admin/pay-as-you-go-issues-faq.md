@@ -2,10 +2,9 @@
 title: "Issues and FAQs about pay-as-you-go plans | MicrosoftDocs"
 description: This topic addresses known issues about pay-as-you-go plans and provides answers to frequently asked questions.
 author: Kavishi
-
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/03/2021
+ms.date: 03/01/2022
 ms.subservice: admin
 ms.author: kaagar 
 ms.reviewer: jimholtz
@@ -18,11 +17,9 @@ search.app:
   - Flow
 ---
 
-# Preview: Known issues and frequently asked questions 
+# Known issues and frequently asked questions 
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
-
-## Known issues for public preview
+## Known issues 
 - Pay-as-you-go billing and reporting is not available in Norway and Korea (South).
 - Azure tagging for Power Platform account resources may not work due to a bug that will be resolved by mid-November 2021. 
 - Deleting a billing policy in the Power Platform admin center will not automatically delete corresponding Power Platform account resource in the Azure portal. This resource can be deleted manually in the Azure portal, if needed.
