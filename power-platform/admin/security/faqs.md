@@ -106,7 +106,7 @@ In addition, organizations can use [Content Security Policy](https://owasp.org/w
 
 ### Does Power Platform support Content Security Policy?
 
-Power Platform [supports CSP](content-security-policy.md) for model-driven apps.
+Power Platform [Content security policy](../content-security-policy.md) for model-driven apps. 
 
 ### How can we connect to SQL Server securely?
 
@@ -114,9 +114,9 @@ See [Use Microsoft SQL Server securely with Power Apps](/powerapps/maker/canvas-
 
 ### What ciphers are supported by Power Platform? What's the roadmap of continuously moving towards stronger ciphers?
 
-All Microsoft services and products are configured to use the approved cipher suites, in the exact order directed by the Microsoft Crypto Board. For the full list and exact order, see the [Power Platform documentation](server-cipher-tls-requirements.md).
+All Microsoft services and products are configured to use the approved cipher suites, in the exact order directed by the Microsoft Crypto Board. For the full list and exact order, see the [Power Platform documentation](../server-cipher-tls-requirements.md). 
 
-Information about deprecations of cipher suites is communicated through Power Platform's [Important Changes](../important-changes-coming.md#tls-rsa-cipher-suites-are-deprecated) documentation.
+Information about deprecations of cipher suites is communicated through Power Platform's [Important Changes](../../important-changes-coming.md#tls-rsa-cipher-suites-are-deprecated) documentation. 
 
 ### Why does Power Platform still support RSA-CBC ciphers (TLS_ECDHE_RSA_with AES_128_CBC_SHA256 (0xC027) and TLS_ECDHE_RSA_with_AES_256_CBC_SHA384 (0xC028)), which are considered weaker?
 
@@ -171,6 +171,6 @@ The Power Apps security model doesn't include the concept of disabled controls. 
 - [Security Development Lifecycle](https://www.microsoft.com/securityengineering/sdl/practices)  
 - [Threat Modeling](https://www.microsoft.com/securityengineering/sdl/threatmodeling)  
 - [Azure AD Continuous Access Evaluation](/azure/active-directory/conditional-access/concept-continuous-access-evaluation)  
-- [Content Security Policy](content-security-policy.md)  
+- [Content Security Policy](../content-security-policy.md) 
 - [Azure DDoS Protection](/azure/ddos-protection/ddos-protection-standard-features)  
 - [Intune's compliance policy settings](/mem/intune/protect/device-compliance-get-started#compliance-policy-settings)
