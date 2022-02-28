@@ -12,7 +12,7 @@ ms.custom: "admin-security"
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/24/2022
+ms.date: 02/28/2022
 search.audienceType: 
   - admin
 search.app:
@@ -96,6 +96,11 @@ The GDPR sets requirements regarding the flows of personal data into and out of 
 Microsoft offers contractual commitments for all its enterprise cloud services, including Dynamics 365. The commitments include detailed data protection terms, the EU Model Clauses, and compliance with the EU-US Privacy Shield Framework regarding the collection, use, and retention of personal information transferred from the European Union to the United States. Microsoft also maintains an inventory of third-party service providers who may have access to customer data, and limits access to customer data by third parties. 
 
 Organizations that process personal data may be required to conduct Data Protection Impact Assessments (DPIAs). To help customers who are seeking information that may help them perform a DPIA addressing their use of Dynamics 365, Microsoft provides detailed information about its processing of customer data and the security measures used to protect that data. 
+
+## Resources to manage GDPR compliance
+
+For information on tools and resources available for the Microsoft Power Platform to assist administrators in their efforts to comply with GDPR, see [Resources to manage GDPR Compliance](wp-compliance-data-privacy.md#resources-to-manage-gdpr-compliance).
+
 
 ### See also
 [Microsoft privacy and GDPR resources](https://www.microsoft.com/trust-center/privacy/resources) <br />
