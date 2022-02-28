@@ -33,11 +33,11 @@ The following table describes the permissions of who can create a [billing polic
 
 ## Get started
 
-### First, you need to procure or create an Azure subscription you can use. 
+### First, procure or create an Azure subscription you can use 
 
    If you don't already have an Azure subscription in your tenant, work through the standard process in your organization to obtain one or create a new one [here.](https://azure.microsoft.com/free/) You'll need to have permissions to create new resources and register resource providers in the subscription (or have the ability to work with an Azure subscription owner or contributor who can register resource providers). For more information, go to [Azure subscriptions.](https://go.microsoft.com/fwlink/?linkid=2174703)
    
-### Link an Azure subscription to an environment 
+### Second, link an Azure subscription to an environment 
 
 Pay-as-you-go can be set up via the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) or within [Power Apps](https://make.powerapps.com/). Pay-as-you-go is available for **production** and **sandbox** environments.
 
