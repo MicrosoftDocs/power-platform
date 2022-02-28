@@ -1,7 +1,6 @@
 ---
 title: "Assign a business unit a different parent business"
 description: "Learn how to change the parent business for a business unit and its child business units."
-author: jimholtz
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/14/2021
