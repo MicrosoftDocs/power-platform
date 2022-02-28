@@ -50,7 +50,7 @@ that teams commonly put in place include Initiate, Export from Dev, Build, and R
 Microsoft Power Platform Build Tools are a collection of Power Platform&ndash;specific Azure DevOps
 build tasks that eliminate the need to manually download custom tooling and
 scripts to manage the application lifecycle of apps built on Microsoft Power Platform. The tasks can be used
-individually to perform a simple task, such as importing a solution into a
+individually to perform a task, such as importing a solution into a
 downstream environment, or used together in a pipeline to orchestrate a
 scenario such as "generate a build artifact", "deploy to test", or "harvest maker
 changes." The build tasks can largely be categorized into four types:
@@ -63,7 +63,7 @@ changes." The build tasks can largely be categorized into four types:
 
 - Environment management
 
-For more information about the available tasks see [Microsoft Power Platform Build Tools tasks](devops-build-tool-tasks.md). 
+For more information about the available tasks, see [Microsoft Power Platform Build Tools tasks](devops-build-tool-tasks.md). 
 
 ## Get Microsoft Power Platform Build Tools
 
@@ -80,16 +80,16 @@ searching for "Power Platform".
 
 To interact with the Microsoft Power Platform environment, a connection must be established that enables the various build tool tasks to perform the required actions. Two types of connections are available:
 
-- Username/password: Configured as a generic service connection with username and password. Note that username/password does not support multi-factor authentication.
+- Username/password: Configured as a generic service connection with username and password. Username/password doesn't support multi-factor authentication.
 - Service principal and client secret: (recommended) This connection type uses service principal based authentication and supports multi-factor authentication.
 
 ## Configure service connections using a service principal
 
-To configure a connection using service principal, you must first create an application registration in Azure Active Directory (AAD) with the required permissions and then create the associated Application User in the Microsoft Power Platform environment you want to connect to. We have offered a script to facilitate some of the steps required in the section below, while detailed information with manual step-by-step instructions are available in this article [Azure application registration](/powerapps/developer/common-data-service/use-single-tenant-server-server-authentication#azure-application-registration).
+To configure a connection using service principal, you must first create an application registration in Azure Active Directory (AAD) with the required permissions and then create the associated Application User in the Microsoft Power Platform environment you want to connect to. We've offered a script to facilitate some of the steps required in the section below, while detailed information with manual step-by-step instructions are available in this article [Azure application registration](/powerapps/developer/common-data-service/use-single-tenant-server-server-authentication#azure-application-registration).
 
 ### Create service principal and client secret using PowerShell
 
-This PowerShell script assists in creating and configuring the service principal to be used with the Microsoft Power Platform Build Tools tasks. It first registers an Application object and corresponding Service Principal Name (SPN) in AAD.
+This PowerShell script helps creating and configuring the service principal to be used with the Microsoft Power Platform Build Tools tasks. It first registers an Application object and corresponding Service Principal Name (SPN) in AAD.
 
 This application is then added as an administrator user to the Microsoft Power Platform tenant itself.
 
@@ -106,13 +106,13 @@ Download the following PowerShell cmdlet: https://pabuildtools.blob.core.windows
 The script will prompt two times with AAD login dialogs:
 
 
-<ul><li>1st prompt: to login as administrator to the AAD instance associated with the Microsoft Power Platform tenant
+<ul><li>First prompt: to log in as administrator to the AAD instance associated with the Microsoft Power Platform tenant
 </li></ul> 
-<ul><li>2nd prompt: to login as tenant administrator to the Microsoft Power Platform tenant itself
+<ul><li>Second prompt: to log in as tenant administrator to the Microsoft Power Platform tenant itself
 </li></ul>
 
 
-Once successful, 3 columns are displayed:
+Once successful, three columns are displayed:
 
 <ul><li>Power Platform TenantId</li></ul>
 <ul><li>Application ID</li></ul>
@@ -133,15 +133,15 @@ Ensure that the added Application User has the system administrator role assigne
 
 **Do the Microsoft Power Platform Build Tools only work for Power Apps?**  
 
-*The build tools work for both canvas and model-driven apps, Power Virtual Agents, UI Flows and traditional flows, AI Builder, custom connectors and dataflows, all of which can now be added to a solution. This also includes customer engagement apps (Dynamics 365 Sales, Customer Service, Field Service, Marketing, and Project Service Automation). Separate build tasks are available for Finance and Operations applications.*
+*The build tools work for both canvas and model-driven apps, Power Virtual Agents, UI Flows and traditional flows, AI Builder, custom connectors and dataflows, all of which can now be added to a solution. This list also includes customer engagement apps (Dynamics 365 Sales, Customer Service, Field Service, Marketing, and Project Service Automation). Separate build tasks are available for Finance and Operations applications.*
 
 **I had previously installed the preview of the Build Tools - can I upgrade from the preview of Power Apps Build Tools to Power Platform Build Tools?**
 
-*You cannot upgrade from the preview version as we had to introduce some breaking changes in the Generally Available release. To move from the preview version, you have to install the Microsoft Power Platform Build Tools and either re-build your pipelines, or re-configure your existing pipelines to use the new Build Tools tasks. This includes creating new Service connections as well.*
+*You cannot upgrade from the preview version as we had to introduce some breaking changes in the Generally Available release. To move from the preview version, you have to install the Microsoft Power Platform Build Tools and either rebuild your pipelines, or reconfigure your existing pipelines to use the new Build Tools tasks. You must also create new Service connections as well.*
 
 **Can I include flow and canvas apps?**
 
-*Yes, flows and canvas apps are solution aware so if these are added to your solution, they can participate in the lifecycle of your app.  However, some steps still require manual configurations. This will be addressed later this year when we introduce environment variables and connectors A list of current limitations are available here: [Known limitations](/powerapps/maker/common-data-service/use-solution-explorer#known-limitations).*
+*Yes, flows and canvas apps are solution aware so if these components are added to your solution, they can participate in the lifecycle of your app.  However, some steps still require manual configurations. The need for manual configuration will be addressed later this year when we introduce environment variables and connectors. A list of current limitations are available here: [Known limitations](/powerapps/maker/common-data-service/use-solution-explorer#known-limitations).*
 
 **How much do the Microsoft Power Platform Build Tools cost?**
 
@@ -149,7 +149,7 @@ Ensure that the added Application User has the system administrator role assigne
 
 **I can see the extension, but why don’t I have an option to install it?**
 
-*If you do not see the **install** option then you most likely lack the necessary install privileges in your Azure DevOps organization. More info available [Manage extension permissions](/azure/devops/marketplace/how-to/grant-permissions?view=azure-devops).*
+*If you do not see the **install** option, then you most likely lack the necessary install privileges in your Azure DevOps organization. More info available [Manage extension permissions](/azure/devops/marketplace/how-to/grant-permissions?view=azure-devops).*
 
 **How can developers use the results of the Checker task?**
 
