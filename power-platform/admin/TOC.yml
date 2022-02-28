@@ -946,6 +946,8 @@
       href: wp-compliance-data-privacy.md
     - name: GDPR - Responding to DSR requests
       items:
+      - name: About GDPR
+        href: about-gdpr.md
       - name: System-generated logs 
         href: powerapps-gdpr-dsr-guide-systemlogs.md
       - name: Data integrations for Dataverse 
@@ -959,7 +961,6 @@
         - name: Delete data 
           href: powerapps-gdpr-delete-dsr.md
         - name: Dataverse customer data 
-      # line 938 to 970 - is being reorged but keep until hear from Marty
           href: common-data-service-gdpr-dsr-guide.md
     - name: Datacenter regions
       href: new-datacenter-regions.md
