@@ -2,10 +2,9 @@
 title: Manage Power Automate flows | Microsoft Docs
 description: How to manage Power Automate flows created in your organization
 author: jimholtz
-
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/05/2020
+ms.date: 02/28/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -31,8 +30,7 @@ Admins can do the following from the Power Platform admin center:
 ## Prerequisites
 
 - Either a Power Apps plan or Power Automate plan. Alternatively, you can sign up for a [free Power Apps trial](/powerapps/maker/signup-for-powerapps).
-
-- Power Apps Environment Admin, Global admin, or Power Platform admin permissions. 
+- Power Apps Environment Admin, Global admin, or Power Platform admin permissions. For more information, see [Environments administration in Power Apps](environments-overview.md).
 
 ## Manage Power Automate flows
 

@@ -493,7 +493,7 @@ The solution component ownership property in the customDeploymentConfiguration.j
 
 ### Importing data from your pipeline
 
-In many cases, you'll want to import configuration or seed data into your Dataverse environment initially after deploying your solution to the target environment. The pipelines are configured to import data by using the Configuration Migration tool, available via [NuGet](https://www.nuget.org/packages/Microsoft.CrmSdk.XrmTooling.ConfigurationMigration.Wpf). To add configuration data for your pipeline, use the following steps. For more information about the Configuration Migration tool, go to [Manage configuration data](/power-platform/admin/manage-configuration-data).
+In many cases, you'll want to import configuration or seed data into your Dataverse environment initially after deploying your solution to the target environment. The pipelines are configured to import data by using the Configuration Migration tool, available via [NuGet](https://www.nuget.org/packages/Microsoft.CrmSdk.XrmTooling.ConfigurationMigration.Wpf). To add configuration data for your pipeline, use the following steps. For more information about the Configuration Migration tool, go to [Manage configuration data](../../admin/manage-configuration-data.md).
 
 1. Clone the Azure DevOps repo where your solution is to be source-controlled and where you created your solution pipeline YAML to your local machine.
 
