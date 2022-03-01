@@ -118,7 +118,7 @@ There are expected differences, and the below information should help you unders
 
 ### App usage
 
-The CoE Starter Kit will display usage (session and unique users) information as far back as to when the [audit log](setup-auditlog.md) was first set up, and gather data to show usage trends over time. The longer you have the CoE starter kit installed for, the more usage data will be gathered. The usage reports in the [Power Platform Admin Center](/admin/powerapps-analytics-reports#power-apps---usage-reports) show usage data for the past 28 days only.
+The CoE Starter Kit will display usage (session and unique users) information as far back as to when the [audit log](setup-auditlog.md) was first set up, and gather data to show usage trends over time. The longer you have the CoE starter kit installed for, the more usage data will be gathered. The usage reports in the [Power Platform Admin Center](/admin/powerapps-analytics-reports#power-apps---usage-reports) show usage data for the past 30 days only.
 
 ### PowerShell
 

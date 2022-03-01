@@ -133,8 +133,6 @@ The Admin \| Sync Template flows part of this solution crawl through all the res
 >
 > Learn more: [Power Automate performance profiles](/power-automate/limits-and-config#performance-profiles) and [Concurrency looping and pagination limits](/power-automate/limits-and-config#concurrency-looping-and-debatching-limits)
 
-And hence our requirements for licenses as described in our  
-
 - Admin | Sync Template v3 (Apps)
 - Admin | Sync Template v3 (Custom Connectors)
 - Admin | Sync Template v3 (Desktop Flow - Runs)
