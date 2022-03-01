@@ -2,7 +2,6 @@
 title: "Compliance and data privacy  | MicrosoftDocs"
 description: Compliance and data privacy
 author: jimholtz
-
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 12/13/2021
@@ -45,7 +44,7 @@ All environments of the Dataverse database use SQL Server Transparent Data Encry
 
 By default, Microsoft stores and manages the database encryption keys for your environments so you don’t have to. The manage keys feature in the Power Platform admin center gives administrators the ability to self-manage the database encryption keys that are associated with environments of Dynamics 365 (online). You can read more about managing your own keys [here](manage-encryption-key.md) but generally it is recommended have Microsoft manage the keys unless you have a specific business need to maintain your own.
 
-## Resources to manage GDPR Compliance
+## Resources to manage GDPR compliance
 
 The European Union General Data Protection Regulation (GDPR) is one of the newest privacy regulations enacted that gives rights to people to manage their personal data. In this section, we will look at some of the tools and resources available for the Microsoft Power Platform to assist administrators in their efforts to comply with GDPR. Some of these resources and tools may also be helpful to assist you in other data privacy-related tasks not directly related to GDPR. A complete discussion of GDPR is beyond the scope of this content, however in this section we will focus on the tools and resources to support your efforts. Additionally, Microsoft has a section on the trust center dedicated to GDPR resources and information that can be helpful. You can find that here https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx
 
