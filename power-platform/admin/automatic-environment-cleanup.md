@@ -18,6 +18,8 @@ search.app:
 ---
 # Automatic environment cleanup
 
+<!-- this paragraph and tip have not been reviewed -->
+
 Operational processes for datacenters periodically identify environments for tenants that do not have an active subscription. The automatic environment cleanup process starts after all commerce-based licenses acquired for a tenant reach a deprovisioned state. Environments within such a tenant are marked for deactivation and eventual deletion. You can renew or purchase a subscription for the tenant to return environments to **active** status.
 
 > [!TIP]
