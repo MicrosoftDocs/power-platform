@@ -137,7 +137,7 @@ With the upcoming 2021 release wave 1 (public preview in February 2021 and GA in
 #### Impact
 
 - Starting April 2021, these controls can no longer be added to forms. 
-- For instances of Flip Label control, the control will be transitioned to a drop-down.
+- For instances of Flip Label control, the control will be replaced with a dropdown control.
 - For all other controls, they'll continue to work within existing forms until April 2022.
 
 #### Action required by you
