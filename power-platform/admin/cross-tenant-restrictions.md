@@ -1,7 +1,7 @@
 ---
-title: "Restrict cross-tenant inbound and outbound access"
+title: "Preview: Restrict cross-tenant inbound and outbound access"
 description: "Use tenant restrictions to control access to SaaS cloud applications based on the Azure AD tenant. You can also enforce tenant isolation for Power Platform connections."  
-ms.date: 02/18/2022
+ms.date: 03/02/2022
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
@@ -22,7 +22,9 @@ search.app:
   - Flow
 ---
 
-# Cross-tenant inbound and outbound restrictions
+# Preview: Cross-tenant inbound and outbound restrictions
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 Microsoft Power Platform has a rich ecosystem of connectors based on Azure Active Directory (Azure AD) that allow authorized Azure AD users to build compelling apps and flows establishing connections to the business data available through these data stores. Tenant isolation makes it easy for administrators to ensure that these connectors can be harnessed in a safe and secure way within the tenant while minimizing the risk of data exfiltration outside the tenant. Tenant isolation allows admins to effectively govern the movement of tenant data from Azure AD authorized data sources to and from their tenant. 
 
