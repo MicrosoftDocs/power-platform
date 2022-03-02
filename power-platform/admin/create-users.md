@@ -6,10 +6,9 @@ ms.reviewer: jimholtz
 ms.subservice: admin
 ms.author: jimholtz
 ms.custom: "admin-security"
-
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/04/2022
+ms.date: 03/02/2022
 search.audienceType: 
   - admin
 search.app:
@@ -111,6 +110,15 @@ The following table shows the fields that are managed in the **Users** section o
 The following image shows Microsoft 365 user contact fields.
 
 ![Job title, Department, Office, Office phone, Mobile phone, Fax number, Street address, City, State or province, ZIP or postal code, Country or region.](media/office-365-contact-info.png "Job title, Department, Office, Office phone, Mobile phone, Fax number, Street address, City, State or province, ZIP or postal code, Country or region")
+
+## View and edit a user profile
+To view and edit a user's profile in the Power Platform admin center:
+1. Select an environment and go to **Settings** > **Users + permissions** > **Users**.
+2. Select a user in the list.
+
+On the user profile page you can view and make changes to important user profile information such as Security Roles, Team membership, Business Unit, Manager, Position, and more. You can also **Run diagnostics** to troubleshoot access issues or **Refresh User** to re-sync from Azure Active Directory. 
+
+:::image type="content" source="media/edit-user-profile.png" alt-text="Edit a user's profile.":::
 
 ## Add a license to a user account  
 You can license the user when you create the user account, or you can license the user later. You must assign a license to every user account that you want to access the online service. See [Assign licenses](assign-licenses.md).
@@ -429,7 +437,7 @@ The following table shows the fields that are populated on the user form (user r
 </table>
 
 
-## FAQ
+## FAQ 
 
 ### If a user that is added to Dataverse SystemUser table becomes disabled or unlicensed in Azure AD, how is that reflected in Dataverse?  
 User record is not deleted, but its state in Dataverse will be updated to “disabled”.  
