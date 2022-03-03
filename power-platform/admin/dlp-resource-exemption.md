@@ -1,7 +1,7 @@
 ---
 title: "Resource exemption  | MicrosoftDocs"
 description: Exempt apps and flows that you trust from DLP policies
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 08/03/2021

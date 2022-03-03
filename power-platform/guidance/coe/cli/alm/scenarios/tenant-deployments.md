@@ -7,7 +7,7 @@ ms.author: grarchib
 manager: pladhani
 ms.custom: ""
 ms.date: 11/30/2021
-ms.service: power-platform
+
 ms.topic: "article"
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -229,7 +229,7 @@ coe alm install -c devops \
    }
    ```
 
-Manual installation using the [Create an app registration in your Azure Active Directory environment](/power-platform/guidance/coe/setup-almacceleratorpowerplatform#create-an-app-registration-in-your-aad-environment).
+Manual installation using the [Create an app registration in your Azure Active Directory environment](../../../setup-almacceleratorpowerplatform.md#create-an-app-registration-in-your-azure-ad-environment).
 
 ## Multi-tenant deployment
 

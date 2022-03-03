@@ -3,7 +3,7 @@ title: "Designate Admin Role - Microsoft Power Platform | MicrosoftDocs"
 description: "To help you administer environments and settings, you can assign users the Microsoft Power Platform admin role to manage Microsoft Power Platform at tenant level."
 author: denisem-msft
 manager: pratapladhani
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/10/2020

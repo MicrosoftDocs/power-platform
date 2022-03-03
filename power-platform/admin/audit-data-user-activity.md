@@ -1,10 +1,9 @@
 ---
 title: "Audit data and user activity for security and compliance"
 description: "Learn how to use auditing to log changes to records and user access. System admins and customizers can use this feature to meet security and compliance policies."
-ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/17/2021
+ms.date: 02/16/2021
 author: tjvass
 ms.subservice: admin
 ms.author: tjvass
@@ -69,7 +68,7 @@ This task requires the system administrator or customizer security role or equiv
    |      Setting |     Description    |
    |--------------------|---------------------|
    | Set the retention policy for these logs   | Default: 30 days.   |
-   | Set a custom retention policy | Maximum: 100,000 days  |  
+   | Set a custom retention policy | Maximum: 365,000 days  |  
 
    When new features are deployed, the audit retention period is set to **Forever** for all Dataverse environments with existing audit data. The default audit retention period is 30 days for new environments and existing environments without any audit data. You can also change the audit retention value using the [Dataverse Web API](/powerapps/developer/common-data-service/webapi/overview). 
 

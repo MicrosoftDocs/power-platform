@@ -3,7 +3,7 @@ title: "Hand off chatbot conversations to any generic engagement hub"
 description: "Guidance to hand off a bot conversation to any generic engagement hub"
 keywords: "human handoff, generic handoff, generic engagement hub support, PVA"
 ms.date: 9/22/2020
-ms.service: power-virtual-agents
+
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -15,23 +15,22 @@ ms.collection: virtual-agent
 
 # Configure hand off to any generic engagement hub
 
-Power Virtual Agents lets you hand over bot conversations seamlessly and contextually to a human agent through an engagement hub. 
+Power Virtual Agents lets you hand over bot conversations seamlessly and contextually to a human agent through an engagement hub.
 
 With some custom development, you can configure your bot to hand off conversations to any engagement hub. This guide describes how you can do this.
 
 ## Prerequisites
+
 - You need to have [built a bot using Power Virtual Agents](authoring-first-bot.md)  
-
 - You need an engagement hub that can interacting programmatically using APIs or SDK  
-
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 
->[!IMPORTANT]
->Instructions in this section require software development from you or your developers. It is intended for experienced IT professionals, such as IT admins or developers who have a solid understanding of developer tools, utilities, and IDEs who are looking to integrate third-party engagement hubs with Power Virtual Agents. 
+> [!IMPORTANT]
+> Instructions in this section require software development from you or your developers. It is intended for experienced IT professionals, such as IT admins or developers who have a solid understanding of developer tools, utilities, and IDEs who are looking to integrate third-party engagement hubs with Power Virtual Agents.
 
 ## Overview
 
-  :::image type="content" source="media/generic-adapter-illustration.png" alt-text="ILLUSTRATION SHOWING GENERIC ADAPTER DATAFLOW.":::
+  :::image type="content" source="media/configure-generic-handoff/generic-adapter-illustration.png" alt-text="ILLUSTRATION SHOWING GENERIC ADAPTER DATAFLOW.":::
 
 A full hand-off to an engagement hub follows this pattern:
 
@@ -50,21 +49,24 @@ A full hand-off to an engagement hub follows this pattern:
 To hand off the conversation to a human agent, you need to build a custom hand-off adapter.
 
 ## Build a custom hand-off adapter
+
 An adapter bridges conversations to and from your agent engagement hub by relaying and transforming messages between end users, bots, and human agents.  
 
-Most popular agent engagement hubs provide SDKs or document their APIs publicly, enabling you to build such adapters. 
+Most popular agent engagement hubs provide SDKs or document their APIs publicly, enabling you to build such adapters.
 
-While it is outside the scope of this document to cover what a custom adapter could contain, the following sample hand-off message, based on what Power Virtual Agents generates as part of our [standard hand-off to a live agent experience](advanced-hand-off.md), can help get you started. 
+While it is outside the scope of this document to cover what a custom adapter could contain, the following sample hand-off message, based on what Power Virtual Agents generates as part of our [standard hand-off to a live agent experience](advanced-hand-off.md), can help get you started.
 
 These code snippets and samples allow you to extract context from the bot conversation to seamlessly and contextually hand off bot conversations to any generic engagement hub.
 
 ### Sample hand-off message payload
-Hand-off is currently only supported over DirectLine - [learn more about interacting with the bot over DirectLine](publication-connect-bot-to-azure-bot-service-channels.md#sample-code-example). Upon hand-off, an event activity called `handoff.initiate` is raised and sent to the adapter. 
+
+Hand-off is currently only supported over DirectLine - [learn more about interacting with the bot over DirectLine](publication-connect-bot-to-azure-bot-service-channels.md#sample-code-example). Upon hand-off, an event activity called `handoff.initiate` is raised and sent to the adapter.
 
 You can see a [full sample hand-off message activity on our GitHub site](https://github.com/microsoft/PowerVirtualAgentsSamples/blob/master/ConnectToEngagementHub/activities.json).
 
 ### Extract context from hand-off message
-To use [conversational context](advanced-hand-off.md#contextual-variables-available-upon-hand-off), you must parse the `handoff.initiate` event activity. 
+
+To use [conversational context](advanced-hand-off.md#contextual-variables-available-upon-hand-off), you must parse the `handoff.initiate` event activity.
 The following snippet of code parses the `handoff.initiate` event activity and extracts the conversational context. See the [full code sample on GitHub](https://github.com/microsoft/PowerVirtualAgentsSamples/tree/master/ConnectToEngagementHub).
 
 ```C#
@@ -97,6 +99,5 @@ The following snippet of code parses the `handoff.initiate` event activity and e
             }
         }
 ```
-
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

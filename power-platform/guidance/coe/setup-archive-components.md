@@ -3,7 +3,7 @@ title: "Set up archive components | MicrosoftDocs"
 description: "Learn how to set up the archive components of the CoE Starter Kit"
 author: manuelap-msft
 manager: devkeydet
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/24/2022

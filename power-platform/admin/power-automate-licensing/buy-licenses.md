@@ -2,7 +2,7 @@
 title: "Buy Power Automate licenses"
 description: "Buy Power Automate licenses."
 author: PriyaKodukula
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: overview
 ms.date: 10/06/2021
@@ -124,7 +124,7 @@ Users can now run unattended desktop flows within the environment that has the u
 
 ### Assign capacity add-on to an environment
 
-Consult this article to learn more about [capacity add-ons for Power Apps and Power Automate](/power-platform/admin/capacity-add-on)
+Consult this article to learn more about [capacity add-ons for Power Apps and Power Automate](../capacity-add-on.md)
 
 ### Monitor license usage
 

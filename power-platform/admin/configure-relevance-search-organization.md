@@ -2,7 +2,6 @@
 title: "Configure Dataverse search to improve search results and performance   | MicrosoftDocs"
 description: Configure Dataverse search to improve search results and performance 
 author: jimholtz
-ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 11/09/2021
@@ -26,7 +25,7 @@ With Dataverse search enabled, a search box is always available at the top of ev
 
 Dataverse search helps you quickly find what you're looking for. It delivers fast and comprehensive results across multiple tables in a single list, sorted by relevance. In addition, Dataverse search has the following benefits:
 
-- **Fast and accurate search**: Provides a precise and quick search experience for model-driven apps, and performance that's superior to [quick find search, formerly known as categorized search](/powerapps/user/quick-find#multiple-table-quick-find-categorized-search).  [Check the App passes capacity for your environment.](about-powerapps-perapp.md#check-capacity)
+- **Fast and accurate search**: Provides a precise and quick search experience for model-driven apps, and performance that's superior to [quick find search, formerly known as categorized search](/powerapps/user/quick-find#multiple-table-quick-find-categorized-search).  
 
 - **Suggested results as you type**: Finds what you're looking for and shows you the top results, as you type.
 
@@ -61,7 +60,7 @@ For more information about Dataverse search, see [Search for tables and rows by
 Dataverse search is an opt-out feature, set to **On** by default with [2021 release wave 2](/power-platform-release-plan/2021wave2/power-apps/modern-search-all-end-users-model-driven-power-apps), on all production environments, except those using their own encryption key. We recommend enabling Dataverse search so users have a superior search experience in model-driven apps with the benefits listed above. All model-driven Power Apps will have the global search experience with the search bar in the header in the environment. Individual users won't be able to switch to [quick find search, formerly known as categorized search](/powerapps/user/quick-find).
 
 > [!IMPORTANT]
-> If you opt in to [early access of 2021 release wave 2](/power-platform/admin/opt-in-early-access-updates) on a production environment, Dataverse search is enabled automatically. If you are using your own encryption key, you can disable Dataverse search after enabling early access of 2021 release wave 2 in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). 
+> If you opt in to [early access of 2021 release wave 2](opt-in-early-access-updates.md) on a production environment, Dataverse search is enabled automatically. If you are using your own encryption key, you can disable Dataverse search after enabling early access of 2021 release wave 2 in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). 
 
 :::image type="content" source="media/model-app1.png" alt-text="First sample model-driven app.":::
 

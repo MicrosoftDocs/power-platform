@@ -3,7 +3,7 @@ title: "Find and support champions in your organization - Microsoft Power Platfo
 description: "Find your Microsoft Power Platform champions with the right tools, and learn how they can support you."
 author: manuelap-msft
 manager: devkeydet
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 10/14/2021
@@ -54,7 +54,7 @@ They will:
 
 If you have Microsoft 365 in your organization, it’s likely some individuals already have discovered Power Apps through exploration and Power Apps popping up in Microsoft Teams, SharePoint, and OneDrive.  
 
-Check the [tenant-level analytics](/power-platform/admin/tenant-level-analytics) in the [Power Platform admin center](https://aka.ms/ppac) or make use of the [Center of Excellence Starter Kit](../coe/starter-kit.md) dashboard to find your makers and learn about your app usage.
+Check the [tenant-level analytics](../../admin/tenant-level-analytics.md) in the [Power Platform admin center](https://aka.ms/ppac) or make use of the [Center of Excellence Starter Kit](../coe/starter-kit.md) dashboard to find your makers and learn about your app usage.
 
 The dashboard part of the [CoE Starter Kit](../coe/starter-kit.md) can give you a tenant-wide overview of makers in your environment, and what connectors they're using to create apps and flows. You can see your top app and flow makers, what departments they are from, and identify trends over time.
 
@@ -101,7 +101,7 @@ Find enthusiastic champions who can commit time and effort. How can you help the
 - Ensure champions have the resources they need, including:
   - Direct access to CoE members.
   - Influence on environment and connector strategies being implemented (for example, requirements for a dataset certification policy).
-  - Influence on the creation of best practices and guidance (for example, providing recommendations for which connectors should be available via [Data Loss Prevention (DLP)](/power-platform/admin/wp-data-loss-prevention) policies).
+  - Influence on the creation of best practices and guidance (for example, providing recommendations for which connectors should be available via [Data Loss Prevention (DLP)](../../admin/wp-data-loss-prevention.md) policies).
 - Actively involve certain champions as satellite members of the CoE. They can provide valuable input in what works and doesn't work when it comes to admin and governance policies, communication and training.
 - Create a feedback loop so champions can easily provide information or submit suggestions to the CoE.
 

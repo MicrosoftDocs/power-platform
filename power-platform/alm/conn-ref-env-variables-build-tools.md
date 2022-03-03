@@ -6,7 +6,7 @@ ms.author: kartikka
 ms.custom: ""
 ms.date: 08/20/2021
 ms.reviewer: "pehecke"
-ms.service: power-platform
+
 ms.subservice: alm
 ms.topic: "article"
 search.audienceType: 
@@ -192,7 +192,7 @@ Manually edit the deployment settings file (JSON) to add the connection and envi
 Pass the deployment settings file as parameter when importing the
 solution into the target environment. This will create the required connection reference and environments with appropriate values upon import without having the user to interactively specify the value.
 
-When using the [Import Solution task](/power-platform/alm/devops-build-tool-tasks#power-platform-import-solution) in Power Platform Build Tools, select **Use deployment settings file** and provide the path to the deployment settings file. Next, initiate the pipeline.
+When using the [Import Solution task](devops-build-tool-tasks.md#power-platform-import-solution) in Power Platform Build Tools, select **Use deployment settings file** and provide the path to the deployment settings file. Next, initiate the pipeline.
 
 :::image type="content" source="media/cref-evar-figure13.png" alt-text="Using the deployment settings file" lightbox="media/cref-evar-figure13.png":::
 
@@ -200,4 +200,3 @@ When using the [Import Solution task](/power-platform/alm/devops-build-tool-task
 
 [What is Microsoft Power Platform CLI?](/powerapps/developer/data-platform/powerapps-cli)  
 [Microsoft Power Platform Build Tools tasks](devops-build-tool-tasks.md)
-

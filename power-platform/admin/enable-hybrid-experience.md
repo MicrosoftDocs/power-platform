@@ -2,7 +2,7 @@
 title: "Enable the hybrid experience  | MicrosoftDocs"
 description: Some features are not yet present in Unified Interface but can be enabled for display as legacy dialogs in Unified Interface through the hybrid experience.
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/20/2021

@@ -3,7 +3,7 @@ title: "Ongoing production solution and maker education support - Microsoft Powe
 description: "Guidance on establishing ongoing production solution and maker education support for Microsoft Power Platform."
 author: manuelap-msft
 manager: devkeydet
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/01/2022

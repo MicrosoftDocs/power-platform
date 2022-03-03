@@ -2,7 +2,7 @@
 title: Manage Power Apps | Microsoft Docs
 description: How to manage Power Apps apps created in your organization.
 author: alaug
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/15/2021
@@ -30,7 +30,7 @@ Admins can do the following from the Power Platform admin center:
 
 - Either a Power Apps plan or Power Automate plan. Alternatively, you can sign up for a [free Power Apps trial](/powerapps/maker/signup-for-powerapps).
 
-- Power Apps Environment Admin, Global admin, or Power Platform admin permissions. For more information, see [Environments administration in Power Apps](environments-administration.md).
+- Power Apps Environment Admin, Global admin, or Power Platform admin permissions. For more information, see [Environments administration in Power Apps](environments-overview.md).
 
 ## Manage Power Apps
 

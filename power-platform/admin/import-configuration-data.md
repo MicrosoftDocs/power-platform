@@ -3,7 +3,7 @@ title: "Import configuration data  | MicrosoftDocs"
 description: Import configuration data
 author: jimholtz
 manager: kvivek
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/26/2020

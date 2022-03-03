@@ -3,7 +3,7 @@ title: "Example App auditing process | MicrosoftDocs"
 description: "The App auditing sample process showcases how your CoE department or IT administrators can automate an auditing process on an app-level basis to gather additional information about an app, like business justification and impact of an outage, from the maker."
 author: manuelap-msft
 manager: devkeydet
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/10/2020

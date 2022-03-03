@@ -3,7 +3,7 @@ title: "Core components | MicrosoftDocs"
 description: "The CoE Starter Kit core components provide the core to get started with setting up a Center of Excellence (CoE). They sync all your resources into tables and build admin apps on top of that to help you get more visibility of the apps, flows, and makers in your environment."
 author: manuelap-msft
 manager: devkeydet
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/13/2021
@@ -289,7 +289,7 @@ Use this app to:
 - See what impact each change will have.
 - Mitigate the risk by contacting makers.
 
-More information: [Data Loss Prevention policies](/power-platform/admin/wp-data-loss-prevention)
+More information: [Data Loss Prevention policies](../../admin/wp-data-loss-prevention.md)
 
 **Permission**: Intended to be used only by admins. Power Platform Service Admin or Global Admin permission is required. Share this app with your CoE admins.
 

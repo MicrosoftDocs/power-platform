@@ -9,7 +9,7 @@ manager: kvivek
 ms.custom: ""
 ms.date: 01/04/2022
 ms.reviewer: "pehecke"
-ms.service: power-platform
+
 ms.topic: "article"
 search.audienceType: 
   - developer

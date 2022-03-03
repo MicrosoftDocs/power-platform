@@ -2,7 +2,7 @@
 title: "Overview of using Azure ExpressRoute with Microsoft Power Platform | MicrosoftDocs"
 description: "Introduction to using Azure ExpressRoute with Microsoft Power Platform"
 author: taiki-yoshida
-ms.service: power-platform
+
 ms.topic: conceptual
 ms.date: 06/30/2021
 ms.subservice: guidance
