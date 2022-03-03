@@ -8,6 +8,8 @@ ms.date: 03/03/2022
 ms.subservice: admin
 ms.author: kaagar 
 ms.reviewer: jimholtz
+contributors:
+  - ShawnNandiMSFT
 search.audienceType: 
   - admin
 search.app:
@@ -16,7 +18,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Set up pay-as-you-go
+# Set up pay-as-you-go 
 
 In order to set up pay-as-you-go billing for an environment, you first need an active Azure subscription that you can link to that environment. You can do so in the Power Platform admin center or within Power Apps.
 

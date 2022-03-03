@@ -8,6 +8,8 @@ ms.date: 03/01/2022
 ms.subservice: admin
 ms.author: kaagar
 ms.reviewer: jimholtz 
+contributors:
+  - ShawnNandiMSFT
 search.audienceType: 
   - admin
 search.app:
