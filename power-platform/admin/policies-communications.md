@@ -3,10 +3,9 @@ title: "Policies and Communications for Power Platform and Dynamics 365 Services
 description: "Policies and Communications for incidents provided for Microsoft 365 services."
 author: astockli
 ms.reviewer: jimholtz
-
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/12/2022
+ms.date: 03/03/2022
 ms.subservice: admin
 ms.author: astockli
 search.audienceType: 
@@ -21,7 +20,9 @@ search.app:
 
 ## Introduction
 
-Microsoft regularly communicates work done to maintain and update Microsoft Power Platform (Power Apps, Power Automate, Power Virtual Agents, and other services), Microsoft Dynamics 365 apps (Sales, Customer Service, Supply Chain Management, and others) to ensure security, performance, availability, and to provide new features and functionality. Microsoft also communicates details of service incidents including the potential user experience, the start and end times of the incident, and any workaround that may be available. For each of these scenarios, communication is provided through the Microsoft 365 admin center in the [Message Center](/microsoft-365/admin/manage/message-center), and the [Service health dashboard](/microsoft-365/enterprise/view-service-health).
+Microsoft regularly communicates work done to maintain and update Microsoft Power Platform (Power Apps, Power Automate, Power Virtual Agents, and other services), and Microsoft Dynamics 365 apps (Sales, Customer Service, Supply Chain Management, and others) to ensure security, performance, availability, and to provide new features and functionality. Microsoft also communicates details of service incidents including the potential user experience, the start and end times of the incident, and any workaround that may be available.
+
+For each of these scenarios, communication is provided through the Microsoft 365 admin center in the [Message Center](/microsoft-365/admin/manage/message-center), and the [Service health dashboard](/microsoft-365/enterprise/view-service-health). For each of these scenarios, communication is provided through the Microsoft 365 admin center in the Message Center, and the Service health dashboard. The Microsoft 365 admin center also has the ability to send email for a weekly digest of all messages, emails for major updates only, and emails for data privacy messages. You can opt in to this communication stream by following the instructions [here](/microsoft-365/admin/manage/message-center#preferences).
 
 **Please note**: From time-to-time, Microsoft may also send direct email to users with the System Administrator role in a specifically impacted Microsoft Dataverse environment, or Microsoft Lifecycle Services project or environment.  
   
