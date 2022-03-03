@@ -3,7 +3,7 @@ title: "Release notes and latest version of the CoE starter kit Core components 
 description: "Release notes and latest version of the CoE Starter Kit 1.99."
 author: manuelap-msft
 manager: devkeydet
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/08/2021
@@ -28,7 +28,7 @@ Environment capacity and add-ons are now stored and can be reported on. New tabl
 
 ## Power BI - Direct Query
 
-The Power BI dashboard has been updated to use Direct Query to connect to Microsoft Dataverse, therefore TDS Endpoint has to be enabled for the environment: [Manage feature settings](/power-platform/admin/settings-features).
+The Power BI dashboard has been updated to use Direct Query to connect to Microsoft Dataverse, therefore TDS Endpoint has to be enabled for the environment: [Manage feature settings](../../../admin/settings-features.md).
 
 Viewers of the Power BI Dashboard will need read access to the Dataverse tables to view data.
 

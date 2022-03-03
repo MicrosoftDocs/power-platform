@@ -3,7 +3,7 @@ title: "Update your apps to Unified Interface  | MicrosoftDocs"
 description: Update your apps to Unified Interface
 author: jimholtz
 manager: kvivek
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 10/09/2019

@@ -4,7 +4,7 @@ description: Administer Power Apps.
 ms.custom: ""
 ms.date: 02/03/2022
 ms.reviewer: ""
-ms.service: power-platform
+
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"

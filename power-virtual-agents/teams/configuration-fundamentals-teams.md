@@ -3,7 +3,7 @@ title: "Configuration of advanced features in Microsoft Teams"
 description: "Use advanced features, like security and access controls, customization, and bot framework skills in the Power Virtual Agents app in Microsoft Teams."
 keywords: "PVA"
 ms.date: 9/22/2020
-ms.service: power-virtual-agents
+
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -17,21 +17,15 @@ ms.collection: virtual-agent
 Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
+>
 > - [Power Virtual Agents web app](../configuration-fundamentals.md)
 > - [Power Virtual Agents app in Microsoft Teams](configuration-fundamentals-teams.md)
 
-
-
-Power Virtual Agents has advanced features that let you create a personalized look and feel to your bot, and give you more flexibility in what your users can ask your bot to do. 
-
-
-
+Power Virtual Agents has advanced features that let you create a personalized look and feel to your bot, and give you more flexibility in what your users can ask your bot to do.
 
 ## Prerequisites
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations-teams.md)]
-
-
 
 ## In this section
 
@@ -42,6 +36,5 @@ Power Virtual Agents has advanced features that let you create a personalized lo
 | [Configure how the bot starts the conversation](configure-bot-greeting-teams.md)            | Change what the bot says when it starts a conversation.                                           |
 | [Customize the look and feel of your bot](customize-default-canvas-teams.md)                | Change the bot's icon, name, and description so it looks unique in the Microsoft Teams app store. |
 | [Enable and configure Azure Bot Framework skills](configuration-add-skills-teams.md)        | Extend your bot with Bot Framework skills.                                                        |
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

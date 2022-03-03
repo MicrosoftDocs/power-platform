@@ -1,7 +1,7 @@
 ---
 title: "Preview: Tenant-level analytics for Power Automate" 
 description: View Tenant-level analytics for Power Automate.
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/07/2022

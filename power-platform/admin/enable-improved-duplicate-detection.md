@@ -2,7 +2,7 @@
 title: "Enable improved duplicate detection  | MicrosoftDocs"
 description: About how to enable improved duplicate detection.
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/13/2021

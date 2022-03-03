@@ -3,7 +3,7 @@ title: "Set up the CoE Starter Kit | MicrosoftDocs"
 description: "Prerequisites and instructions for setting up the Center of Excellence (CoE) Starter Kit for adopting and supporting Microsoft Power Platform, with a focus on Power Apps and Power Automate"
 author: manuelap-msft
 manager: devkeydet
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/24/2022
@@ -33,7 +33,7 @@ It will also help you understand how to extend the CoE Starter Kit, how to apply
 
 The CoE Starter Kit requires access to your tenant's Power Platform environments. Therefore, the identity you set up for the CoE Starter Kit needs the following:
 
-- [Microsoft Power Platform service admin](/power-platform/admin/use-service-admin-role-manage-tenant#power-platform-administrator), global tenant admin, or Dynamics 365 service admin.
+- [Microsoft Power Platform service admin](../../admin/use-service-admin-role-manage-tenant.md#power-platform-administrator), global tenant admin, or Dynamics 365 service admin.
 - Power Apps Per User license (non-trial) and Microsoft 365 license.
 - Power Automate Per User or Per Flow license (non-trial).
 - The identity must be email-enabled.
@@ -129,7 +129,7 @@ The [DLP policy](/admin/wp-data-loss-prevention) applied to your CoE Starter Kit
 
 - The HTTP and HTTP with Azure AD connectors connect to [https://graph.microsoft.com](https://developer.microsoft.com/graph). You can set up [DLP endpoint filtering](/admin/dlp-granular-controls#endpoint-filtering) for these connectors to only allow the [https://graph.microsoft.com](https://developer.microsoft.com/graph) endpoint. If your tenant is in GCC, GCC High or DoD, check your [service root endpoint for Microsoft Graph](/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints).
 
-- If you're using the [audit log](setup-auditlog.md) solution, the custom connector used to connect to the Microsoft 365 audit log also must be allowed in your business group. Configure the [https://manage.office.com/](/office/office-365-management-api/office-365-management-apis-overview) endpoint in the business group of your tenant-level policy. Learn more: [Configure custom connector endpoints in tenant-level policies](/power-platform/admin/dlp-connector-classification#tenant-level-dlp-policies).
+- If you're using the [audit log](setup-auditlog.md) solution, the custom connector used to connect to the Microsoft 365 audit log also must be allowed in your business group. Configure the [https://manage.office.com/](/office/office-365-management-api/office-365-management-apis-overview) endpoint in the business group of your tenant-level policy. Learn more: [Configure custom connector endpoints in tenant-level policies](../../admin/dlp-connector-classification.md#tenant-level-dlp-policies).
 
 - Check that no other DLP policies apply to this environment. Learn more: [Combined effect of multiple DLP policies](../../admin/dlp-combined-effect-multiple-policies.md)
 

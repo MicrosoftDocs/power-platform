@@ -3,7 +3,7 @@ title: "How to use the Environment Management components | MicrosoftDocs"
 description: "The Environment Management components in the Core solution will help automate and manage requests for development resources."
 author: denisem-msft
 manager: devkeydet
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 08/04/2021

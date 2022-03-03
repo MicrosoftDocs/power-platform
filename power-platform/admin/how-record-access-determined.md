@@ -1,7 +1,7 @@
 ---
 title: How access to a record is determined | Microsoft Docs
 description: How access to a record is determined 
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: quickstart
 ms.date: 11/30/2021

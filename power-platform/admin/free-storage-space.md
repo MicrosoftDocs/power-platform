@@ -1,13 +1,13 @@
 ---
 title: "Free up storage space  | MicrosoftDocs"
 description: Methods for reducing storage space consumed.
-author: jimholtz
-ms.service: power-platform
+author: Bluebear73
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/10/2021
+ms.date: 02/24/2022
 ms.subservice: admin
-ms.author: jimholtz 
+ms.author: munzinge 
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:
@@ -246,11 +246,11 @@ When you enable auditing, customer engagement apps create audit logs to store th
  
    :::image type="content" source="media/audit-log-delete-select.png" alt-text="Select audit logs to delete.":::
 
-   |Setting  |Description  |
+   |Setting  |Description  | System job name |
    |---------|---------|
-   |**Delete logs by table**     |Select one or more tables for which you want to delete audit logs. By default all tables in the environment will be shown, whether they contain audit data or not.         |
-   |**Delete access logs by people and systems**     | Delete all access logs. This will delete all logs for all users and systems.        |
-   |**Delete all logs up to and including the selected date**     | Delete logs including the date selected.         |
+   |**Delete logs by table**     |Select one or more tables for which you want to delete audit logs. By default all tables in the environment will be shown, whether they contain audit data or not.         | Delete logs for [number of] tables.    |
+   |**Delete access logs by people and systems**     | Delete all access logs. This will delete all logs for all users and systems.        | Delete access logs. |
+   |**Delete all logs up to and including the selected date**     | Delete logs including the date selected.         | Delete all logs before and including [timestamp].    |
 
 4. Select **Delete**, and then confirm the deletions.
 

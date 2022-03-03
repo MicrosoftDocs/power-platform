@@ -1,7 +1,7 @@
 ---
 title: "Granular DLP controls  | MicrosoftDocs"
 description: About fine-grained controls such as the ability to block specific connector actions or connection endpoints.
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/03/2022

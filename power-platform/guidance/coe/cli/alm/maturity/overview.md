@@ -7,7 +7,7 @@ ms.author: grarchib
 manager: pladhani
 ms.custom: ""
 ms.date: 11/30/2021
-ms.service: power-platform
+
 ms.topic: "article"
 ms.reviewer: jimholtz
 search.audienceType: 
@@ -19,7 +19,7 @@ search.app:
 
 # CoE ALM Maturity model
 
-The [Power CAT adoption maturity model](https://aka.ms/powercatadoptionmaturity) provides a set of levels and capabilities that can be used to evaluate usage of the application lifecycle management (ALM) and how the ALM Accelerator for Power Platform (AA4PP) can assist.
+The [Power CAT adoption maturity model](../../../../adoption/maturity-model.md) provides a set of levels and capabilities that can be used to evaluate usage of the application lifecycle management (ALM) and how the ALM Accelerator for Power Platform (AA4PP) can assist.
 
 ## Quick start
 
@@ -89,7 +89,7 @@ The following questions may help with qualifying alignment:
 
 1. Is there a dedicated Power Platform product owner?
 
-1. Is there an established [Center of Excellence team](/power-platform/guidance/adoption/coe)?
+1. Is there an established [Center of Excellence team](../../../../adoption/coe.md)?
 
 1. Is Power Platform a key part of the digital transformation strategy?
 
@@ -201,16 +201,16 @@ Leading questions to consider:
 
 1. Who can create environments?
 
-1. What [data loss prevention (DLP)](/power-platform/admin/wp-data-loss-prevention) policies are in place?
+1. What [data loss prevention (DLP)](../../../../../admin/wp-data-loss-prevention.md) policies are in place?
 
-1. [Power Platform Service Admin](/power-platform/admin/overview-role-powerapps-admin) roles exist to administer Power Platform tenants and environments?
+1. [Power Platform Service Admin](../../../../../admin/overview-role-powerapps-admin.md) roles exist to administer Power Platform tenants and environments?
 
 1. Are tenants/environments isolated from each other?
 
 1. Is there monitoring in place?
-   - Has the [CoE Starter Kit – Core](/power-platform/guidance/coe/core-components) been installed?
-   - Does [license, capacity, and consumption monitoring](/power-platform/guidance/adoption/capacity-and-licenses) inform decision making?
-   - Has the [CoE Starter Kit – Governance Module](/power-platform/guidance/coe/governance-components) been adopted to gain compliance insights and archive resources?
+   - Has the [CoE Starter Kit – Core](../../../core-components.md) been installed?
+   - Does [license, capacity, and consumption monitoring](../../../../adoption/capacity-and-licenses.md) inform decision making?
+   - Has the [CoE Starter Kit – Governance Module](../../../governance-components.md) been adopted to gain compliance insights and archive resources?
    - Does telemetry help identify business-critical apps and makers?
 
 1. Are custom environments used for specific use cases and ALM scenarios?
@@ -233,11 +233,11 @@ Leading questions to consider:
 
 Leading questions to consider:
 
-1. Do you have a [training and upskilling](/power-platform/guidance/adoption/training-strategy) program for your makers to help them learn key concepts to grow your pool of makers?
+1. Do you have a [training and upskilling](../../../../adoption/training-strategy.md) program for your makers to help them learn key concepts to grow your pool of makers?
 
-1. Do you have an internal [champions](/power-platform/guidance/adoption/champions) community established?
+1. Do you have an internal [champions](../../../../adoption/champions.md) community established?
 
-1. Do you have the [CoE Starter Kit – Nurture](/power-platform/guidance/coe/nurture-components) module adopted?
+1. Do you have the [CoE Starter Kit – Nurture](../../../nurture-components.md) module adopted?
 
 1. Do you have show and tell sessions to demonstrate advanced maker concepts?
 
@@ -257,7 +257,7 @@ Leading questions to consider:
 
 ### Fusion teams
 
-1. Do you have [standard libraries, custom connectors, and components](/power-platform/guidance/adoption/reusable) to be consumed by makers?
+1. Do you have [standard libraries, custom connectors, and components](../../../../adoption/reusable.md) to be consumed by makers?
 
 1. Do you have the need for fusion teams to manage source control and app lifecycle? For example, build, verification, test, and production.
 

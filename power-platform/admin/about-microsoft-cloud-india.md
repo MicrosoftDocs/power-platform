@@ -2,7 +2,7 @@
 title: "About Microsoft Cloud India  | MicrosoftDocs"
 description: About Microsoft Cloud India
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/03/2020

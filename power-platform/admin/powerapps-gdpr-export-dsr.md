@@ -3,7 +3,7 @@ title: Responding to Data Subject Rights (DSR) requests to export Power Apps cus
 description: Walkthrough of how to respond to Data Subject Rights (DSR) requests to export Power Apps customer data.
 author: jimholtz
 ms.reviewer: paulliew
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 06/16/2021
@@ -56,7 +56,7 @@ To perform the administration operations outlined in this document using the Pow
 
 * A paid Power Apps plan or a Power Apps trial. You can sign-up for a 30-day trial at [https://make.powerapps.com/trial](https://make.powerapps.com/trial). Trial licenses can be renewed if they've expired.
 
-* [Microsoft 365 Global admin](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide) or [Azure Active Directory Global Administrator](/azure/active-directory/active-directory-assign-admin-roles-azure-portal) permissions if you need to search through another user's resources. (Note that Environment Admins only have access to those environments and environment resources for which they have permissions.)
+* [Microsoft 365 Global admin](/microsoft-365/admin/add-users/about-admin-roles) or [Azure Active Directory Global Administrator](/azure/active-directory/active-directory-assign-admin-roles-azure-portal) permissions if you need to search through another user's resources. (Note that Environment Admins only have access to those environments and environment resources for which they have permissions.)
 
 ## Step 1: Export personal data contained within environments created by the user
 
@@ -88,14 +88,14 @@ Get-AdminEnvironment -CreatedBy $userId | ConvertTo-Json | Out-File -FilePath "U
 ```
  
 ## Step 2: Export the user's environment permissions
-Users can be assigned permissions (such as Environment Admin, Environment Maker, etc.) in an environment, which are stored in Power Apps as a *role assignment*. With the introduction of Dataverse, if a database is created within the environment, the role assignments are stored as records within the Dataverse database environment. For more information, see [Administer environments within Power Apps](environments-administration.md).
+Users can be assigned permissions (such as Environment Admin, Environment Maker, etc.) in an environment, which are stored in Power Apps as a *role assignment*. With the introduction of Dataverse, if a database is created within the environment, the role assignments are stored as records within the Dataverse database environment. For more information, see [Administer environments within Power Apps](environments-overview.md).
 
 ### For environments without a Dataverse database
 
 #### Power platform admin center
 Administrators can export a user's environment permissions from the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) by following these steps:
 
-1. From the Power Platform admin center, select each environment in your organization. You must be an [Microsoft 365 Global admin](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide) or an [Azure Active Directory Global Administrator](/azure/active-directory/active-directory-assign-admin-roles-azure-portal) to be able to review all environments created within your organization.
+1. From the Power Platform admin center, select each environment in your organization. You must be an [Microsoft 365 Global admin](/microsoft-365/admin/add-users/about-admin-roles) or an [Azure Active Directory Global Administrator](/azure/active-directory/active-directory-assign-admin-roles-azure-portal) to be able to review all environments created within your organization.
 
 2. Select both **Environment Admin** and **Environment Maker** separately, and then using the search bar, search for the user's name.
 
@@ -130,7 +130,7 @@ A user can export an app from the [Power Apps portal](https://make.powerapps.com
 ### Power Platform admin center
 An administrator can export apps created by a user starting from the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) by following these steps:
 
-1. From the Power Platform admin center, select each environment in your organization. You must be an [Microsoft 365 Global admin](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide) or an [Azure Active Directory Global Administrator](/azure/active-directory/active-directory-assign-admin-roles-azure-portal) to be able to review all environments created within your organization.
+1. From the Power Platform admin center, select each environment in your organization. You must be an [Microsoft 365 Global admin](/microsoft-365/admin/add-users/about-admin-roles) or an [Azure Active Directory Global Administrator](/azure/active-directory/active-directory-assign-admin-roles-azure-portal) to be able to review all environments created within your organization.
 
 2. Select **Resources**, and then select **Power Apps**.
 
@@ -172,7 +172,7 @@ Get-AppRoleAssignment | ConvertTo-Json | Out-File -FilePath "UserDetails.json"
 ### Power Platform admin center 
 Administrators can export app roles assignments for a user from the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) by following these steps:
 
-1. From the Power Platform admin center, select each environment in your organization. You must be an [Microsoft 365 Global admin](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide) or an [Azure Active Directory Global Administrator](/azure/active-directory/active-directory-assign-admin-roles-azure-portal) to be able to review all environments created within your organization.
+1. From the Power Platform admin center, select each environment in your organization. You must be an [Microsoft 365 Global admin](/microsoft-365/admin/add-users/about-admin-roles) or an [Azure Active Directory Global Administrator](/azure/active-directory/active-directory-assign-admin-roles-azure-portal) to be able to review all environments created within your organization.
 
 2. For each environment, select **Resources**, and then select **Power Apps**.
 

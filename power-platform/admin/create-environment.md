@@ -2,7 +2,6 @@
 title: Create and manage environments in the Power Platform admin center | Microsoft Docs
 description: About creating and manage environments in the Power Platform admin center
 author: jimholtz
-ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
 ms.date: 02/08/2022
@@ -19,9 +18,6 @@ search.app:
 # Create and manage environments in the Power Platform admin center
 
 An environment is a space to store, manage, and share your organization's business data, apps, and flows. It also serves as a container to separate apps that may have different roles, security requirements, or target audiences. Power Apps automatically creates a single default environment for each tenant, which is shared by all users in that tenant.
-
-> [!TIP]
-> For the blog announcing the latest changes to environment creation, see [Provisioning and administration updates are now live in the Power Platform admin center](https://powerapps.microsoft.com/blog/provisioning-and-administration-updates-are-now-live-in-the-power-platform-admin-center/). 
 
 ## Provisioning a new environment
 You can provision a new environment based on [available capacity](capacity-storage.md). See the section [Create an environment in the Power Platform admin center](#create-an-environment-in-the-power-platform-admin-center).

@@ -2,7 +2,7 @@
 title: Manage users overview | Microsoft Docs
 description: Overview
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: quickstart
 ms.date: 04/27/2020

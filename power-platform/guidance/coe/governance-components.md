@@ -3,7 +3,7 @@ title: "Governance components  | MicrosoftDocs"
 description: "The governance components solution provides assets to automate common auditing and compliance scenarios."
 author: manuelap-msft
 manager: devkeydet
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/13/2021

@@ -1,7 +1,7 @@
 ---
 title: "When would I want to use this check box?  | MicrosoftDocs"
 description: When would I want to use this check box?
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/11/2020

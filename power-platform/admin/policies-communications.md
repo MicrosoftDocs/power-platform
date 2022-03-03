@@ -3,7 +3,7 @@ title: "Policies and Communications for Power Platform and Dynamics 365 Services
 description: "Policies and Communications for incidents provided for Microsoft 365 services."
 author: astockli
 ms.reviewer: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/12/2022
@@ -51,7 +51,7 @@ You can verify that the update was completed successfully by checking the versio
 
 ### Major release events
 
-We deliver two major release events per year with one in April (Wave 1) and the second in October (Wave 2), offering new capabilities and functionality. These updates are backward compatible, so your apps and customizations will continue to work post update. New features with major, disruptive changes to the user experience are off by default which means administrators will be able to first test then enable these features for their organization. Additionally, administrators will have the opportunity to enable the new features using an [“Opt-in” feature](/power-platform/admin/opt-in-early-access-updates) to get early access to the changes. 
+We deliver two major release events per year with one in April (Wave 1) and the second in October (Wave 2), offering new capabilities and functionality. These updates are backward compatible, so your apps and customizations will continue to work post update. New features with major, disruptive changes to the user experience are off by default which means administrators will be able to first test then enable these features for their organization. Additionally, administrators will have the opportunity to enable the new features using an [“Opt-in” feature](opt-in-early-access-updates.md) to get early access to the changes. 
 
 Notifications about when the major release events are scheduled and links to the [Dynamics 365 and Microsoft Power Platform](/dynamics365/release-plans/) release plans are published in the Microsoft 365 admin portal’s Message Center. 
 
