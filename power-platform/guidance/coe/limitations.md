@@ -44,9 +44,9 @@ Model Driven Apps, Business Process Flows, and Custom Connectors are not availab
 
 The Admin | Sync Template v3 (Flows) and CLEANUP - Admin | Sync Template v3 (Connection Status) will fail to collect inventory information for flows that use the [Microsoft Dataverse](/connectors/commondataserviceforapps/) connector. The [Get Flow as Admin](/connectors/flowmanagement/) currently has a limitation, where flows using that connector cannot be retrieved.
 
-## Flows that are imported or owned by a service principle
+## Flows that are imported or owned by a service principal
 
-The Admin | Sync Template v3 (Flows) flow will fail to collect inventory information for flows that were imported or are owned by a service principle.
+The Admin | Sync Template v3 (Flows) flow will fail to collect inventory information for flows that were imported or are owned by a service principal.
 
 ## Co-authoring and Connections
 
