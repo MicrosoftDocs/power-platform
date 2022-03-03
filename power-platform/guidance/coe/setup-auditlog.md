@@ -61,8 +61,6 @@ Using these steps, you'll set up an Azure AD app registration that will be used 
 
       ![Delegated permissions.](media/coe36.png "Delegated permissions")
 
-   1. Select **Application permissions**, and then select **ActivityFeed.Read**.
-
    1. Select **Add permissions**.
 
 1. Select **Grant Admin Consent for (your organization)**.
@@ -92,7 +90,7 @@ Now you'll configure and set up a custom connector that uses the [Office 365 Man
 
   ![Custom connector setup.](media/coe-custom1.png "Custom connector setup")
 
-1. Leave the **1. General** page as-is, and then select **2. Security**.
+1. If your tenant is a commercial tenant, leave the **General** page as is.
 
    >[!IMPORTANT]
    >
@@ -143,7 +141,7 @@ Go back to the custom connector to set up a connection to the custom connector a
 > [!IMPORTANT]
 > You must complete these steps for subsequent steps to work. If you don't create a new connection and test the connector here, setting up the flow and child flow in later steps will fail.
 
-1. On the **Custom Connector** page, select **4. Test**.
+1. On the **Custom Connector** page, select **Test**.
 
 1. Select **+ New connection**, and then sign in with your account.
 
@@ -151,7 +149,8 @@ Go back to the custom connector to set up a connection to the custom connector a
 
    ![Custom connector Start Subscription.](media/coe43.png "Custom connector Start Subscription")
 
-1. Paste the **directory (tenant) ID**&mdash;copied earlier from the **App Registration** overview page in Azure AD&mdash;into the **Tenant** field, and then paste the **Tenant ID** into **PublisherIdentifier**.
+1. Paste the **directory (tenant) ID** - copied earlier from the **App Registration** overview page in Azure AD - into the **Tenant** field.
+1. Paste the **application (client) ID** into **PublisherIdentifier**.
 
 1. Select **Test Operation**.
 

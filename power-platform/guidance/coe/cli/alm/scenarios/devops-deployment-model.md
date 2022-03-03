@@ -48,7 +48,7 @@ As you plan your DevOps deployment model, the following factors may help you dec
 
 In this scenario, the following configuration is assumed:
 
-- Single Power Platform Advanced Maker Deployment with Shared Power Platform Environments for the Advanced Maker Canvas Application, Validation, Test, and Production Environments.
+- Single Power Platform Maker Deployment with Shared Power Platform Environments for the Accelerator Canvas Application, Validation, Test, and Production Environments.
 
 - Single Shared Azure DevOps where all Makers collaborate on Solutions.
 
@@ -56,7 +56,7 @@ In this scenario, the following configuration is assumed:
 
 In this scenario, the following configuration is assumed:
 
-- Single Power Platform advanced maker deployment with shared Power Platform environments for the Advanced Maker Canvas application, validation, test, and production environments.
+- Single Power Platform maker deployment with shared Power Platform environments for the Maker Canvas application, validation, test, and production environments.
 
 - Multiple Azure DevOps for different teams or Business Units.
 
@@ -70,7 +70,7 @@ This scenario is not a recommended deployment model as it requires the deploymen
 
 In this scenario, the following configuration is assumed:
 
-- Multiple Power Platform advanced maker deployments with shared Power Platform Environments for the Advanced Maker Canvas application, validation, test, and production environments.
+- Multiple Power Platform maker deployments with shared Power Platform Environments for the Maker Canvas application, validation, test, and production environments.
 
 - Multiple Azure DevOps for different teams or business units.
 

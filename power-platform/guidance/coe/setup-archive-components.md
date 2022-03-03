@@ -92,7 +92,7 @@ Turn on the following flows, which are installed as part of the governance compo
 
 ## Share apps with makers
 
-The governance components solution contains the [Archival – Cleanup Unused Objects](governance-components.md#cleanup-old-objects-app) app for makers and admins to manage archive approvals. Share this app with your makers and admins, assigning them the Power Platform Maker SR security role.
+The governance components solution contains the [Cleanup Old Objects App](governance-components.md#cleanup-old-objects-app) app for makers and admins to manage archive approvals. Share this app with your makers and admins, assigning them the Power Platform Maker SR security role.
 
 More information:
 

@@ -108,7 +108,6 @@ If you decide to use a Dataverse for Teams environment:
 The [DLP policy](/admin/wp-data-loss-prevention) applied to your CoE Starter Kit environment needs to allow the following connectors to be used together in the business group:
 
 - [Approvals](/connectors/approvals/)
-- [Azure AD](/connectors/azuread/)
 - HTTP
 - [HTTP with Azure AD](/connectors/webcontents/)
 - [Microsoft Dataverse](/connectors/commondataserviceforapps/)
