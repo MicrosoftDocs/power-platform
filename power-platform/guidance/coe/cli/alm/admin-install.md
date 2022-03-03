@@ -19,7 +19,7 @@ search.app:
 
 # Set up ALM Accelerator for Power Platform
 
-As a first step you'll need to complete the initial steps of an ALM deployment as an administrator. The commands below allow you to quickly automate the install. When you've completed these steps, you can add advanced makers and set up connections to their Power Platform development environments.
+As a first step you'll need to complete the initial steps of an ALM deployment as an administrator. The commands below allow you to quickly automate the install. When you've completed these steps, you can add makers and set up connections to their Power Platform development environments.
 
 ## Overview
 
