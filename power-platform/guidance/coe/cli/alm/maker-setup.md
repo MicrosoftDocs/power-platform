@@ -86,7 +86,9 @@ NOTES:
 
 1. Open ALM Accelerator for Power Platform application.
 
-1. Create a new profile for the solution by selecting the Organization, Project, Repo and Target Branch.
+1. Create a new profile for the solution by selecting the organization, project, repo and target branch. 
+   > [!NOTE]
+   > Unless you plan to override the default pipelines the suggested value for target branch is '[Use Solution Branches]'.
 
 1. Enter the target validation, test and production environment urls and save your profile.
 
@@ -98,9 +100,12 @@ NOTES:
 
    c. Add a comment, for example *Initial version*.
 
-1. Select **Latest Push Status**.
+1. Select **Bypass Prepare**
+1. Select **COMMIT SOLUTION**.
+1. Select the icon to the right of **COMMIT SOLUTION** when it changes to the waiting icon.
 
    a. Permit permissions for pipeline to run (variable group, service connection, pipeline).
+   b. Then re-run the pipeline job.
 
 ## Post set up checks
 
