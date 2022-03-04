@@ -1,13 +1,13 @@
 ---
 title: Power Apps service description | Microsoft Docs
 description: Provides information about Power Apps US Government service description, plans, and limitations.
-author: jimholtz
-
+author: carrema
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/23/2022
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: macarrer
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:

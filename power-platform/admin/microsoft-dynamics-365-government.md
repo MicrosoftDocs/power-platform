@@ -1,13 +1,13 @@
 ---
 title: "Dynamics 365 US Government overview"
 description: "Learn about features that are specific to Microsoft Dynamics 365 US Government as public sector customers deploy into government community cloud (GCC)." 
-author: jimholtz
-
+author: carrema
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/23/2022
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: macarrer
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:
