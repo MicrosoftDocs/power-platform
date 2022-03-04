@@ -25,7 +25,7 @@ There are exceptions to the principle of maintaining Product functional parity w
 ### See also  
  [Microsoft Dynamics 365 US Government](microsoft-dynamics-365-government.md)<br/>
  [Important changes coming](../important-changes-coming.md)<br/>
- [IP addresses and URLs](online-requirements.md#ip-addresses-and-urls)<br />
+ [Power Platform URLs and IP address ranges](online-requirements.md)<br />
  [Power BI for US Government Customers](/power-bi/service-govus-overview)<br/>
  [Compliance Offerings](https://www.microsoft.com/trustcenter/compliance/complianceofferings?product=Dynamics365)
 
