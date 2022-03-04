@@ -51,11 +51,11 @@ Three items are tracked in the system, and the user might have to do all three:
 
 ![Maker point of view in the audit process.](media/coe55.png "Maker point of view in the audit process")
 
-**Admin:** After an app meets all three of these requirements, it appears in the **Admin Review** filter view on the **Power Platform Admin View** model driven app.
+**Admin:** After an app meets all three of these requirements, it appears in the **Compliance - Submitted** filter view on the **Power Platform Admin View** model driven app.
 
 ![Admin point of view in the audit process.](media/coe71.png "Admin point of view in the audit process")
 
-An admin opens **Power Platform Admin View** > **Admin Review** and assesses all the apps due for review by looking at the **Audit** tab within the app, investigating the work done by the maker, and then marking their assessment in the **Admin Review** section.
+An admin opens **Power Platform Admin View** > **Compliance - Submitted** and assesses all the apps due for review by looking at the **Audit** tab within the app, investigating the work done by the maker, and then marking their assessment in the **Compliance - Submitted** section.
 
 The admin can decide to put an app in the app catalog and mark it as featured or not, depending on whether the app should be highlighted for users.
 

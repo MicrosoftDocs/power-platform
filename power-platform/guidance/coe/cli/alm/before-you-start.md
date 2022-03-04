@@ -29,7 +29,7 @@ Install the CoE CLI [locally](../install.md#local-install) or via a [docker imag
 
 Environment | Description
 ----------- | -------------
-Developer | Development environments that each advanced maker will use to create and manage source-controlled solutions.
+Developer | Development environments that each maker will use to create and manage source-controlled solutions.
 ALM environment | Environment with Microsoft Dataverse enabled. Will be used to deploy managed solution.
 ALM environment - Dataverse connection | See [Maker environment Dataverse](#maker-environment-dataverse-connection) below to create the Dataverse connection.
 Validation | Environment used to validate builds before merging into a solution branch.              |
