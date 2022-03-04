@@ -226,7 +226,7 @@ Effective March 2, 2020, the regional Discovery Service will be deprecated. More
 
 ### See also  
 [Dynamics 365 US Government - Feature availability](government-feature-availability.md)<br/>
-[IP addresses and URLs](online-requirements.md#ip-addresses-and-urls)<br />
+[Power Platform URLs and IP address ranges](online-requirements.md)<br />
 [Power Apps US Government](./powerapps-us-government.md)<br />
 [Power Automate US Government](/power-automate/us-govt)
 
