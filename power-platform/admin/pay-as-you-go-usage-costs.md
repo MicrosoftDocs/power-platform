@@ -22,7 +22,7 @@ search.app:
 
 Aggregated billing information is available in the Azure portal, and detailed usage drill-downs are available in the Power Platform admin center. Reporting is available for Power Apps per-app meter and Dataverse capacity add-on meters.
 
-In March 2022 we will release a preview of the Power Platform requests meter. During this preview we will report on usage of Power Platform requests in the Power Platform Admin Center downloadable report, however we will not bill for this usage until we reach GA for this meter and usage will not appear in the Azure portal until then. 
+In March 2022, we will release a preview of the Power Platform requests meter. During this preview we will report on usage of Power Platform requests in the Power Platform admin center downloadable report. However, we will not bill for this usage until we reach general availability (GA) for this meter; usage will not appear in the Azure portal until then. 
 
 ### View billing information in the Azure portal
 
@@ -49,10 +49,10 @@ The downloadable report contains the following fields:
 | Environment Name | The display name of environment |
 | Environment Region | Not available during preview |
 | Caller ID | The unique identifier of the calling identity. This can be null or empty. |
-| Caller Type | The type of caller identity. Applicable values are User, ,Non Licensed User, Application, or Microsoft when the caller is Microsoft. |
+| Caller Type | The type of caller identity. Applicable values are User, Non Licensed User, Application, or Microsoft when the caller is Microsoft. |
 | Resource Type | The type of resource. Applicable values are Dataverse, Power Apps, and Power Automate. |
 | Resource ID | The unique resource identifier. Based on the Resource Type, this could be a Power App ID, Dataverse Organization ID, or Power Automate Flow ID. This can be null or empty.|
-| Meter Category | The top-level classification of the meter. This will be either Power Apps, Dataverse or Power Platform request. See [meter details](pay-as-you-go-meters.md). |
+| Meter Category | The top-level classification of the meter. This will be either Power Apps, Dataverse, or Power Platform request. See [meter details](pay-as-you-go-meters.md). |
 | Meter Subcategory | The detailed classification of the meter. For Power Apps, subcategory field is Launch. For Dataverse, subcategory fields are Database, File, and Log, based on the consumption type.
 | Usage Datetime | The date and time of when the usage was captured |
 | Entitled Quantity | The value of any free entitlement for the submeter |
