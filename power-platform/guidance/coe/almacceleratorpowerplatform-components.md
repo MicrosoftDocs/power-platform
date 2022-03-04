@@ -23,7 +23,20 @@ search.app:
 > [!NOTE]
 > The ALM accelerator for Microsoft Power Platform is currently in public preview. Go to [Issues currently tagged as vnext](https://github.com/microsoft/coe-starter-kit/issues?q=is%3Aopen+is%3Aissue+label%3Aalm-accelerator+label%3Avnext) for the roadmap to be completed prior to general availability. While the tool is in public preview, there will be breaking changes and frequent updates to address feedback from preview members. Additionally, the public preview is reliant on the experimental [Power Apps Source File Pack and Unpack Utility](https://github.com/microsoft/PowerApps-Language-Tooling) that's being developed separately from the ALM accelerator for Microsoft Power Platform.
 
-## Demo: ALM accelerator for Microsoft Power Platform
+## License requirements for users of ALM Accelerator for Power Platform
+
+ALM Accelerator for Power Platform uses the following premium Power Platform features
+
+- Dataverse
+- Custom Connector
+- HTTP with Azure AD connector
+
+For Makers to use the features of the ALM Accelerator they need the following licenses
+
+- Power Apps Per User or Per App license
+- Azure DevOps Basic Plan
+
+## Demo: ALM Accelerator for Power Platform
 
 Watch how to use the ALM accelerator for Microsoft Power Platform.
 [Demo Videos](https://github.com/microsoft/coe-starter-kit/blob/main/CenterofExcellenceALMAccelerator/WALKTHROUGHS.md)

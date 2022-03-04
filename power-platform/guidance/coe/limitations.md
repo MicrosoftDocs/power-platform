@@ -44,9 +44,9 @@ Model Driven Apps, Business Process Flows, and Custom Connectors are not availab
 
 The Admin | Sync Template v3 (Flows) and CLEANUP - Admin | Sync Template v3 (Connection Status) will fail to collect inventory information for flows that use the [Microsoft Dataverse](/connectors/commondataserviceforapps/) connector. The [Get Flow as Admin](/connectors/flowmanagement/) currently has a limitation, where flows using that connector cannot be retrieved.
 
-## Flows that are imported or owned by a service principle
+## Flows that are imported or owned by a service principal
 
-The Admin | Sync Template v3 (Flows) flow will fail to collect inventory information for flows that were imported or are owned by a service principle.
+The Admin | Sync Template v3 (Flows) flow will fail to collect inventory information for flows that were imported or are owned by a service principal.
 
 ## Co-authoring and Connections
 
@@ -110,11 +110,15 @@ Due to a product limitation, large Desktop Flows may not show up in the inventor
 
 We are able to collect only the intersect of all custom connectors outside of solutions, and all custom connectors to which you have access. As a result, custom connectors in a solution, to which the identity running the sync flows do not have access, will not show up in the inventory.
 
-## Inventory differences between PowerShell, Power Platform Admin Center, and CoE Starter Kit
+## Inventory and telemetry differences between PowerShell, Power Platform Admin Center, and CoE Starter Kit
 
 If you are using [PowerShell for Power Platform Administrators](../../admin/powershell-getting-started.md) and the [Power Platform Admin Center](../../admin/wp-work-with-admin-portals.md) together with the CoE Starter Kit, you may be noticing a discrepancy in inventory - for example, the number of apps returned by PowerShell looks different than the number of apps returned by the CoE Starter Kit.
 
 There are expected differences, and the below information should help you understand what to expect.
+
+### App usage
+
+The CoE Starter Kit will display usage (session and unique users) information as far back as to when the [audit log](setup-auditlog.md) was first set up, and gather data to show usage trends over time. The longer you have the CoE starter kit installed for, the more usage data will be gathered. The usage reports in the [Power Platform Admin Center](/admin/powerapps-analytics-reports#power-apps---usage-reports) show usage data for the past 30 days only.
 
 ### PowerShell
 

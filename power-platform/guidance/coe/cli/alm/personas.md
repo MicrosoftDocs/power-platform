@@ -140,7 +140,7 @@ This section provides a brief overview of each CoE command.
 |-------|---------|-------|----------|
 |Add application user to the development environment|Run once per environment|Makers, professional developers|Dataverse|
 
-[Read ALM user add help](https://github.com/microsoft/coe-starter-kit/blob/main/coe-cli/docs/help/aa4am/user/add.md)
+[Read ALM user add help](https://aka.ms/coe-cli/help/alm/user/add)
 
 ### alm maker add
 
