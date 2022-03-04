@@ -1,14 +1,13 @@
 ---
 title: "Use Microsoft Dataverse to detect duplicate records and merge  | MicrosoftDocs"
 description: About detecting and merging duplicate records.
-author: HemantGaur
+author: jimholtz
+
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/03/2022
+ms.date: 02/23/2022
 ms.subservice: admin
-ms.author: hemantg
-contributors:
-  - fafuxa
+ms.author: jimholtz
 search.audienceType: 
   - admin
 search.app:
@@ -47,15 +46,7 @@ The dialog box shows the following details:
 
 - The **Matched records** section shows the possible duplicate records.
 
-The columns in the grids are shown dynamically based on the duplicate detection rule, so that you see relevant information to identify why a record was considered as a duplicate. 
-
-Top “Current record” grid has columnset which is primaryname, duplicate detection columns from duplicaterulecondition and the advanced find view or default view for that entity. 
-
-“Matched records” grid shows primaryname and the columns that triggered duplicate detection with modified on timestamp. Referential fields like lookups are excluded from the view. 
-
-For example, based on the rule, if two accounts are found to be duplicate because of same account name and email address, the **Account Name** and **Email** columns are shown in the grid.
-
-
+The columns in the grids are shown dynamically based on the duplicate detection rule, so that you see relevant information to identify why a record was considered as a duplicate. For example, based on the rule, if two accounts are found to be duplicate because of same account name and email address, the **Account Name** and **Email** columns are shown in the grid.
 
 > [!NOTE]
 > If the duplicate detection rule is not set to exclude inactive records, both active and inactive records are considered while detecting duplicates. More information: [Set up duplicate detection rules to keep your data clean](set-up-duplicate-detection-rules-keep-data-clean.md)
