@@ -48,13 +48,13 @@ Admins can filter for specific activities via the **Activities** list. You'll fi
 
 ## See audited events
 
-All logging is done at the SDK layer, so a single action can trigger multiple logged events. Here's a sample of the user events that you can audit.
+All logging is done at the SDK layer, so a single action can trigger multiple logged events. Here's a list of the user events that you can audit.
 
 Category | Event | Description
 -|-|-
-|Flow | Created flow | The time a flow is created|
-|Flow | Edited flow | Any updates made to the flow|
-|Flow | Deleted flow | When the flow is deleted|
+|Flows | Created flow | The time a flow is created|
+|Flows | Edited flow | Any updates made to the flow|
+|Flows | Deleted flow | When the flow is deleted|
 |Flow permissions | Edited permissions | Every time a user's permissions to the flow changes|
 |Flow permissions | Deleted permissions | Every time a user's permissions to the flow is removed|
 |Trials | Started a paid trial | When a user starts a paid trial|
