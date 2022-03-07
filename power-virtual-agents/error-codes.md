@@ -1,10 +1,10 @@
 ---
 title: "Error Codes"
 description: "Troubleshoot error code responses from your bot."
-author: v-alarioza
-ms.author: v-alarioza
+author: peterswimm
+ms.author: peterswimm
 ms.topic: troubleshooting
-ms.date: 02/07/2022
+ms.date: 03/07/2022
 
 ms.reviewer: clmori
 manager: shellyha
@@ -70,5 +70,5 @@ Errors may also appear in the [Topic Checker](authoring-topic-management.md#topi
 | **2102** | "The user sent a message which is too large to process."                                                                                                  | You sent a message that is too large to process. Shorten your message, then try again.                                                                                                                                                                                                 |
 | **3000** | "Unexpected error"                                                                                                                                        | A system error occurred. [Contact the support](fundamentals-support.md) for more details.                                                                                                                                                                                              |
 | **3001** | "Power Automate isn’t available for your flow `{Flow Name}` now. Try again later."                                                                        | Power Automate isn't responding. Restart the conversation with your bot and try again. If the issue persists, [contact the support](fundamentals-support.md).                                                                                                                          |
-| **3002** | "Something happened in Power Automate, and your request to your flow `{Flow Name}` wasn’t accepted. Try again later."                                     | An error occurred in Power Automate and the request to your flow wasn’t accepted. Try responding again with a shorter, text-only message.                                                                                                                                              |
+| **3002** | "Something happened in Power Automate, and your request to your flow `{Flow Name}` wasn’t accepted. Try again later."                                     | An error occurred in Power Automate and the request to your flow wasn’t accepted. This is often caused when your flow invocation takes longer than 120 seconds to respond.                                                                                                                                              |
 | **3003** | "There's a network problem connecting to your flow `{Flow Name}`. Please try again later."                                                                | Try again later. If the issue persists, [contact the support](fundamentals-support.md).                                                                                                                                                                                                |
