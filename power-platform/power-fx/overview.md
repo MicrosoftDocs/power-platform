@@ -3,10 +3,9 @@ title: Microsoft Power Fx overview | Microsoft Docs
 description: Overview of the Power Fx language
 author: gregli-msft
 manager: kvivek
-
 ms.topic: conceptual
-ms.reviewer: nabuthuk
-ms.date: 02/26/2021
+ms.reviewer: jdaly
+ms.date: 03/06/2022
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType: 
