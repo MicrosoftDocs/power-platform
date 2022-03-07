@@ -33,7 +33,7 @@ License utilization reports provide insights into tenant and environment utiliza
 - What is the ratio of Per User licenses actively used in past 28 days compared to the total number of licenses assigned?
 - Which active users are assigned to one or more Dynamics 365 Per User license?
 - How many applications are being used by licensed users across the tenant or environments?
-- When was the last session for an active user that's been assigned a D365 Per User license?
+- When was the last session for an active user that's been assigned a Dynamics 365 Per User license?
 - Which applications are being used by licensed users across the tenant or environments?
 
 :::image type="content" source="media/power-apps-license-utilization.png" alt-text="View Power Apps license utilization.":::

@@ -31,7 +31,7 @@ The following table describes the permissions of who can create a [billing polic
 | Environment admin    | Yes  | Yes, for billing policies the admin created | Yes, for billing policies the admin created and for environments in which they are admins |
 | Power Platform admin | Yes  | Yes, for all billing policies in the tenant | Yes, for all environments in the tenant  |
 | Global admin         | Yes  | Yes, for all billing policies in the tenant | Yes, for all environments in the tenant   |
-| D365 Admin           | Yes  | Yes, for all billing policies in the tenant | Yes, for all environments in the tenant    |
+| Dynamics Admin           | Yes  | Yes, for all billing policies in the tenant | Yes, for all environments in the tenant    |
 
 ## Get started
 

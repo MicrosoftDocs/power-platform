@@ -241,12 +241,12 @@ Below criteria must be met for successfully adding the user in the Dataverse tab
    2. Individual users do not need to have a license when the environment has app pass capacity. This only applies to adding users on demand (either at first attempt to access the environment or through API/Power Platform admin center). 
    3. Individual users do not need to have a license when the tenant they are part of has a tenant level Marketing license. This only applies to adding users on demand (either at first attempt to access the environment or through API/Power Platform admin center). 
    4. Non-interactive users do not need a license 
-   5. Free Dataverse plans from M365 license are honored when users added on-demand (either at first attempt to access the environment or through API/Power Platform admin center)  
+   5. Free Dataverse plans from Microsoft 365 license are honored when users added on-demand (either at first attempt to access the environment or through API/Power Platform admin center)  
 
 > [!NOTE]
 > Guest users should also have a license from the environment’s tenant. License from Guest user's tenant is NOT considered as valid license.
 
-3. If the environment has a security group defined, user must be part of the respective security group, unless the user is a Tenant or Power Platform Administrator. Non-admin users or D365 service admin must be in the security group to access the system. When the owner of the security group is added to Dataverse through an on-demand action, the user will be considered a valid member of the security group and will be added to Dataverse successfully.  
+3. If the environment has a security group defined, user must be part of the respective security group, unless the user is a Tenant or Power Platform Administrator. Non-admin users or Dynamics 365 service admin must be in the security group to access the system. When the owner of the security group is added to Dataverse through an on-demand action, the user will be considered a valid member of the security group and will be added to Dataverse successfully.  
 
 Adding users to Dataverse has different implications depending on the environment type: 
 
