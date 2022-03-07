@@ -1,9 +1,9 @@
 ---
 title: "Server-side synchronization between customer engagement apps and email servers  | MicrosoftDocs"
 description: Server-side synchronization provides direct apps-to-email server synchronization
-ms.service: power-platform
+
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: overview
 ms.date: 05/25/2021
 author: revachauhan
 ms.subservice: admin
@@ -86,7 +86,7 @@ If the mailbox is enabled for appointments, contacts, and tasks and incoming ema
   
 - **Service isolation**: Server-side synchronization has separate queue-management and configuration settings for asynchronous operations, outgoing activities, and mailboxes. It's based off of asynchronous service architecture and might share the same process. In all cases, it manages server resources while maintaining isolation with the asynchronous service.  
   
-- **Error reporting for users and administrators**: Server-side synchronization supports logging and reporting of errors specific to an email or one or more mailboxes. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Error logging for server-side synchronization](../admin/error-logging-server-side-synchronization.md)  
+- **Error reporting for users and administrators**: Server-side synchronization supports logging and reporting of errors specific to an email or one or more mailboxes. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Error logging for server-side synchronization](troubleshooting-monitoring-server-side-synchronization.md)  
   
 > [!NOTE]
 > In customer engagement apps, you can synchronize emails by using [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)] or server-side synchronization. If server-side synchronization is selected, the synchronization doesn't require that you run [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)]. However, you'll still need [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)] to promote an item from [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)].  

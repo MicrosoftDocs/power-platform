@@ -2,10 +2,9 @@
 title: Create and manage environments in the Power Platform admin center | Microsoft Docs
 description: About creating and manage environments in the Power Platform admin center
 author: jimholtz
-ms.service: power-platform
 ms.component: pa-admin
 ms.topic: quickstart
-ms.date: 06/16/2021
+ms.date: 02/08/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -19,9 +18,6 @@ search.app:
 # Create and manage environments in the Power Platform admin center
 
 An environment is a space to store, manage, and share your organization's business data, apps, and flows. It also serves as a container to separate apps that may have different roles, security requirements, or target audiences. Power Apps automatically creates a single default environment for each tenant, which is shared by all users in that tenant.
-
-> [!TIP]
-> For the blog announcing the latest changes to environment creation, see [Provisioning and administration updates are now live in the Power Platform admin center](https://powerapps.microsoft.com/blog/provisioning-and-administration-updates-are-now-live-in-the-power-platform-admin-center/). 
 
 ## Provisioning a new environment
 You can provision a new environment based on [available capacity](capacity-storage.md). See the section [Create an environment in the Power Platform admin center](#create-an-environment-in-the-power-platform-admin-center).
@@ -213,6 +209,17 @@ The refresh cadence does not change when you will receive updates for:
 
 ## FAQ
 
+### Who can access environments?
+Users are able to access resources in an environment when they have:
+- a license granting use rights for the resource being accessed in an environment. For example, a user with a Power Apps per user plan can access premium apps shared with them in any environment. 
+  - [This documentation](pricing-billing-skus.md) highlights use rights included with different licenses. 
+
+AND
+
+- permissions to access a resource. For example, a user can only access Power Apps that are shared with them. The following documentation outlines how to share some Power Platform resources:
+  - [This documentation](/powerapps/maker/canvas-apps/share-app) highlights how to share an app with users. 
+  - [This documentation](/power-automate/create-team-flows) highlights how to share a cloud flow. 
+
 ### What are the new trial limits for Power Apps customers?
 The new trial limits are one per user. 
 
@@ -226,7 +233,6 @@ Yes, it will appear in both admin centers.
 Provisioning environments is based on database capacity. Previously, it was two environments per Power Apps Plan 2 license. Now all you need is 1GB of available capacity to provision. All environments with or without Dataverse will consume at least 1GB capacity.
 
 ### See also 
-[Manage environments in Power Apps](environments-administration.md) <br />
 [Dataverse storage capacity](capacity-storage.md) <br />
 [Control user access to environments: security groups and licenses](control-user-access.md)
 
@@ -234,6 +240,3 @@ Provisioning environments is based on database capacity. Previously, it was two 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
 
-
-
-“After a URL name change is saved, all users who access that environment must be notified of the change. Users will be able to access the environment for up to 24 hours by using the previous URL. After the 24-hour period has passed, the previous URL will not work.”

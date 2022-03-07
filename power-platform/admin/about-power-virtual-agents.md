@@ -4,7 +4,7 @@ description: Administer Power Virtual Agents.
 ms.custom: ""
 ms.date: 06/17/2021
 ms.reviewer: ""
-ms.service: power-platform
+
 ms.topic: article
 keywords: "PVA"
 ms.suite: ""

@@ -2,10 +2,10 @@
 title: "Manage Microsoft Dataverse settings  | MicrosoftDocs"
 description: View and manage Microsoft Dataverse settings.
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/29/2021
+ms.date: 01/11/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -46,9 +46,9 @@ The following web client admin settings have moved.
 
 These security settings are now managed in the Power Platform admin center.
 
-- [Manage application users in the Power Platform admin center](manage-application-users.md)
 - [Dataverse teams management](manage-teams.md)
 - [Assign security roles to users in an environment that has a Dataverse database](database-security.md#assign-security-roles-to-users-in-an-environment-that-has-a-dataverse-database)
+- [Manage application users](manage-application-users.md)
 
 ## App settings
 
@@ -105,7 +105,7 @@ When the **[Display behavior -> Use updated experience for classic settings wher
 
 ### Settings in Unified Interface apps
 
-To open settings for apps that use [Unified Interface](about-unified-interface.md), look in the upper-right corner and select the **Gear** icon (![Gear icon.](media/selection-rule-gear-button.png)). Then select **Advanced settings**. 
+To open legacy settings for apps that use [Unified Interface](about-unified-interface.md), look in the upper-right corner and select the **Gear** icon (![Gear icon.](media/selection-rule-gear-button.png)). Then select **Advanced settings**. 
 
 > [!div class="mx-imgBorder"] 
 > ![Advanced settings.](media/advanced-settings.png "Advanced settings")

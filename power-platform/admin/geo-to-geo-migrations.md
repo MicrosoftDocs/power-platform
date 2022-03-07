@@ -2,10 +2,10 @@
 title: "Geo to geo migrations  | MicrosoftDocs"
 description: Geo to geo migrations
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/09/2021
+ms.date: 01/05/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -26,12 +26,15 @@ We continue to open new datacenter regions for business services, and to add dat
 > - Support for geo migration is limited and generally not available.
 > - To request a regional migration, please contact your account manager or see [Technical Support](get-help-support.md).
 > - After making a request, expect at least 10 days for the migration to be completed.  
-> - Geo migrations are not supported into or out of US GCC, US GCC High, or China.
+> - Geo migrations are not supported into or out of US GCC, US GCC High, OCE, IND, or China.
 > - The Dynamics 365 Marketing app does not support geo migration, due to component dependencies. For more information, see [Manage your Dynamics 365 Marketing instances](/dynamics365/marketing/manage-marketing-instances).
 > - Geo migration is not supported for Microsoft Dataverse for Teams environments.
 
 ## Impact of migrating  
  Moving an environment to a different region changes your tenant to be multiregional - enabling regional features in the [!INCLUDE[pn_dyn_365_admin_center](../includes/pn-dyn-365-admin-center.md)].  
+
+> [!IMPORTANT]
+> Once an environment is moved to the new region, prior backups of that environment are no longer available.
 
  The other significant change is to your organization URL. Each of the regional datacenters has a unique identifier in the URL. When your organization is moved from one regional datacenter to another this identifier will change. For example:  
 

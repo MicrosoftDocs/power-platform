@@ -8,7 +8,7 @@ ms.author: kartikka
 ms.custom: ""
 ms.date: 08/30/2021
 ms.reviewer: "pehecke"
-ms.service: power-platform
+
 ms.topic: "article"
 search.audienceType: 
   - developer
@@ -35,7 +35,7 @@ You can use GitHub Actions for Microsoft Power Platform along with any other ava
 GitHub Actions for Microsoft Power Platform are available at <https://github.com/marketplace/actions/powerplatform-actions>.
 
 > [!IMPORTANT]
-> GitHub Actions for Microsoft Power Platform are supported only for a Microsoft Dataverse environment with a database. More information: [Create an environment with a database](/power-platform/admin/create-environment#create-an-environment-with-a-database)
+> GitHub Actions for Microsoft Power Platform are supported only for a Microsoft Dataverse environment with a database. More information: [Create an environment with a database](../admin/create-environment.md#create-an-environment-with-a-database)
 
 ## Key concepts
 

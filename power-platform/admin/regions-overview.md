@@ -2,10 +2,10 @@
 title: "Choose the region when setting up an environment"
 description: "Learn about the factors in selecting a region when creating a new environment in Microsoft Power Platform admin center."
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/26/2021
+ms.date: 02/01/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -66,10 +66,6 @@ For optimal performance, if your users are in Europe, create and use the environ
 
 > [!NOTE]
 > On-premises data gateways aren't available in the India region.
-> 
-> Microsoft Dataverse for Teams is not available in the following regions:
-> - GCC
-> - GCC High
 
 ## Can I create an environment outside of my tenant region?
 

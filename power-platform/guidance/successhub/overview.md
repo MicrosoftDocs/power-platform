@@ -2,7 +2,7 @@
 title: "Success Hub overview  | MicrosoftDocs"
 description: An overview of Success Hub
 author: kathyos
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/20/2021

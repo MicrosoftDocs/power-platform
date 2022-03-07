@@ -3,7 +3,7 @@ title: "Find and support champions in your organization - Microsoft Power Platfo
 description: "Find your Microsoft Power Platform champions with the right tools, and learn how they can support you."
 author: manuelap-msft
 manager: devkeydet
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 10/14/2021
@@ -54,7 +54,7 @@ They will:
 
 If you have Microsoft 365 in your organization, it’s likely some individuals already have discovered Power Apps through exploration and Power Apps popping up in Microsoft Teams, SharePoint, and OneDrive.  
 
-Check the [tenant-level analytics](/power-platform/admin/tenant-level-analytics) in the [Power Platform admin center](https://aka.ms/ppac) or make use of the [Center of Excellence Starter Kit](../coe/starter-kit.md) dashboard to find your makers and learn about your app usage.
+Check the [tenant-level analytics](../../admin/tenant-level-analytics.md) in the [Power Platform admin center](https://aka.ms/ppac) or make use of the [Center of Excellence Starter Kit](../coe/starter-kit.md) dashboard to find your makers and learn about your app usage.
 
 The dashboard part of the [CoE Starter Kit](../coe/starter-kit.md) can give you a tenant-wide overview of makers in your environment, and what connectors they're using to create apps and flows. You can see your top app and flow makers, what departments they are from, and identify trends over time.
 
@@ -101,7 +101,7 @@ Find enthusiastic champions who can commit time and effort. How can you help the
 - Ensure champions have the resources they need, including:
   - Direct access to CoE members.
   - Influence on environment and connector strategies being implemented (for example, requirements for a dataset certification policy).
-  - Influence on the creation of best practices and guidance (for example, providing recommendations for which connectors should be available via [Data Loss Prevention (DLP)](/power-platform/admin/wp-data-loss-prevention) policies).
+  - Influence on the creation of best practices and guidance (for example, providing recommendations for which connectors should be available via [Data Loss Prevention (DLP)](../../admin/wp-data-loss-prevention.md) policies).
 - Actively involve certain champions as satellite members of the CoE. They can provide valuable input in what works and doesn't work when it comes to admin and governance policies, communication and training.
 - Create a feedback loop so champions can easily provide information or submit suggestions to the CoE.
 
@@ -116,5 +116,17 @@ Incentives that champions find particularly rewarding can include:
 - **A private experts discussion area:** A private area for the champions to share ideas and learn from each other is usually highly valued.
 - **Specialized or deep dive information and training:** Access to additional information to help champions grow their skillsets (as well as help their colleagues) will be appreciated. It could include attending advanced training classes, privileged access to relevant events, or speaking engagements.
 - Is there a company reward or benefit program that their work could tie into? Are there vouchers or other goodies they could receive? Could the benefit even be a premium license or their own environment to play in?
+
+## Maturity levels
+
+The following maturity levels will help you assess the current state of your community of practice:
+
+| **Level** | **State of Power Platform community** |
+| --- | --- |
+| 100: Initial | Some content creators do great work, but their efforts are unrecognized.</br></br>Efforts to share knowledge are rare and unstructured.</br></br>Some staff may have attended App in a Day events (Partner or Microsoft delivered).</br></br>Team-based initiatives for nurturing makers.|
+| 200: Repeatable | [On-boarding strategy](onboard-makers.md) for new makers.</br></br>Makers become ambassadors across their departments and evangelize the capabilities.</br></br>Some staff have participated in a [hackathon](hackathons.md).</br></br>Makers become ambassadors across their departments and evangelize the capabilities.|
+| 300: Defined | Makers provide insights into business pain points.</br></br>Knowledge sharing in multiple forms is a normal and regularly scheduled occurrence.</br></br>[Training and upskilling](training-strategy.md) strategy for makers.</br></br>Internal Champions community.</br></br>[CoE Starter Kit – Nurture Module](../coe/nurture-components.md) adopted.|
+| 400: Capable | Regular events for Champions.</br></br>Regular hackathons.</br></br>Maker assessments and certificates.</br></br>Sharing and celebrating [success stories](show-and-tell.md).</br></br>Show & Tell sessions.</br></br>Adoption campaign. |
+| 500: Efficient | Large internal community with proven value.</br></br>Career path for makers.</br></br>Community of mentors.</br></br>Common development strategy and goals for Citizen and Pro developers. |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

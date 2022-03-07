@@ -1,7 +1,7 @@
 ---
 title: "Manage a sales territory by adding or removing members"
 description: "Learn how to manage your Power Platform users by adding or removing members assigned to a sales territory."
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/30/2017
@@ -17,6 +17,13 @@ search.app:
   - PowerApps
   - Powerplatform
   - Flow
+searchScope: 
+  - D365-App-msdynce_saleshub
+  - D365-Entity-territory
+  - D365-UI-*
+  - Dynamics 365
+  - Sales
+  - Customer Engagement
 ---
 # Add or remove sales territory members
 

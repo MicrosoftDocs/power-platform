@@ -3,10 +3,10 @@ title: "Preview: Programmability and extensibility | Microsoft Docs"
 description: Overview of available programmable tools for Microsoft Power Platform administrators
 author: laneswenka
 ms.reviewer: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
-ms.topic: reference
-ms.custom: intro-internal
+ms.topic: overview
+
 ms.date: 03/19/2021
 ms.subservice: admin
 ms.author: laswenka

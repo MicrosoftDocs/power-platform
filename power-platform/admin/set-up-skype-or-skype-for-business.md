@@ -2,7 +2,7 @@
 title: "Set up Skype or Skype for Business  | MicrosoftDocs"
 description: Set up Skype or Skype for Business 
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/09/2020

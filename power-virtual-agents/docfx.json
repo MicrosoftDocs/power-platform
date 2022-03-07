@@ -65,6 +65,9 @@
     "fileMetadata": {
       "searchScope": {
 	        "**.*": [ "Power Virtual Agents" ]
+      },
+      "ms.service":{
+        "**.*": "power-virtual-agents"
       }
     },
     "template": [],

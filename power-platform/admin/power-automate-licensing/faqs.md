@@ -2,10 +2,10 @@
 title: "Frequently asked questions about Power Automate licensing"
 description: "Frequently asked questions about Power Automate licensing."
 author: PriyaKodukula
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 10/06/2021
+ms.date: 01/06/2022
 ms.author: prkoduku
 manager: kvivek
 search.audienceType: 
@@ -84,9 +84,16 @@ If the flow is a solution flow, you can change the owner using [Power Automate W
 
 The flow will be downgraded to lower performance and all flow owners will be notified and the flow will be turned off in 30 days if no action is taken.
 
-### Can I assign licenses to guest users?
+### Do guest users (not from your tenant) need a license to use Power Automate?
+Yes. The guest user must have a Power Automate license assigned through one of the following tenants:
+- The tenant hosting the flow. You can assign them admin trials for temporary access or standalone licenses.
+- The home tenant of the guest user.
 
-Yes. If you want to give access to external users (not from your tenant), you can assign them admin trials for temporary access or standalone licenses.
+For example, if a guest user has a Power Automate per user license assigned in the home tenant, they can use premium features in the guest tenant that is hosting the flow. 
+Power Automate, included with Office, Power Automate per user, per user with attended Robotic Process Automation (RPA), Power Apps per user, and Dynamics user plans, will have the following characteristics:
+- In the Azure public cloud, the above plans are recognized across tenants in guest scenarios because they aren't bound to a specific environment.
+- In Azure national or sovereign clouds, the above plans are recognized across tenants in guest scenarios. More information: [National clouds](/azure/active-directory/develop/authentication-national-cloud), [Azure geographies](https://azure.microsoft.com/global-infrastructure/geographies/#geographies)
+ - Licenses are not recognized across tenants in difference Azure clouds.
 
 ### What Power Automate capabilities are included in Windows licenses?
 
@@ -114,7 +121,7 @@ Office 365 licenses include the following Power Automate capabilities.
   
 The following Power Automate capabilities are not included.
   
-- Access to [premium connectors](./types.md#premium-connectors) is not included except in Dataverse for Teams environments. Learn more about [Dataverse for Teams capabilities](/power-platform/admin/pricing-billing-skus#dataverse-capabilities-with-microsoft-365-licenses)
+- Access to [premium connectors](./types.md#premium-connectors) is not included except in Dataverse for Teams environments. Learn more about [Dataverse for Teams capabilities](../pricing-billing-skus.md#dataverse-capabilities-with-microsoft-365-licenses)
 - [Business process flows](./types.md#business-process-flows)
 - [Custom connectors](./types.md#custom-connectors)
 - [On premises gateways](./types.md#on-premises-gateway)

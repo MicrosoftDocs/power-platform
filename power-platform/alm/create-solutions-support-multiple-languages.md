@@ -4,7 +4,7 @@ description: "<Description>" # 115-145 characters including spaces. This abstrac
 ms.custom: ""
 ms.date: 06/23/2020
 ms.reviewer: "pehecke"
-ms.service: power-platform
+
 ms.topic: "article"
 author: "shmcarth" # GitHub ID
 ms.subservice: alm

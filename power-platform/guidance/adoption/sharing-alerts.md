@@ -3,7 +3,7 @@ title: "Set up sharing alerts and mitigation - Microsoft Power Platform | Micros
 description: "Alerting can be used to inform admins and stakeholders about specific events, or provide a summary of activity."
 author: manuelap-msft
 manager: devkeydet
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/10/2020

@@ -1,12 +1,12 @@
 ---
-title: "Set up governance components | MicrosoftDocs"
+title: "Set up Developer Compliance components | MicrosoftDocs"
 description: "Learn how to set up the governance components of the CoE Starter Kit"
 author: manuelap-msft
 manager: devkeydet
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/06/2021
+ms.date: 01/10/2022
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
@@ -18,163 +18,102 @@ search.app:
   - Powerplatform
 ---
 
-# Set up governance components
+# Set up Developer Compliance components
 
-Multiple governance components are provided in the Center of Excellence (CoE) Starter Kit; each will require some configuration to install. The installation instructions in this article have been segmented based on the set of components that should be grouped and installed together, and dependencies on other segments are outlined in each section.
+This article will help you to setup the [Developer Compliance Center](example-processes.md) components of the Core and Governance solutions of the CoE Starter Kit.  
 
-> [!IMPORTANT]
-> You cannot use the archival solution if you have secured the environment with security groups. Please see  [Security groups and approvals](limitations.md#security-groups-and-approvals)
+This set of functionality allows you to detect frequently used apps and chatbots in your tenant and request their makers provide additional information about them, such as a business justification, data classification and support plan. The goal is for admins to have better visibility into the solutions built by their makers, and make decisions such as when to provide additional support to a solution or when to move a solution to a dedicated environment.
 
-## Initialize flow approval tables in your environment
+>[!IMPORTANT]
+>This article assumes you have [installed the governance components solution](before-setup-gov.md) and you have your [environment setup](setup.md#create-your-environment), and are logged in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
 
-These flows in the solution use the built-in Approval actions of Power Automate and therefore require it having been installed on the environment.
+## Configure mandatory environment variables
 
-- *Admin \| Archive and Clean Up v2 (Start Approval for Apps)*
-- *Admin \| Archive and Clean Up v2 (Start Approval for Flows)*
-- *Admin \| Archive and Clean Up v2 (Check Approval)*
-- *Admin \| Archive and Clean Up v2 (Clean Up and Delete)*
-
-  If you are installing the solution in a new environment, or one in which Approvals have not been used in the past, then the Approval tables must be initialized before you can install the solution. The easiest way to do this is to create a "dummy" approval flow.
-
-1. Go to [flow.microsoft.com](https://flow.microsoft.com) and select your CoE environment.
-
-1. Select **+ New** > **Instant (From Blank)**.
-
-1. Pick **manually trigger a flow** as the trigger, and enter *Admin \| Dummy Approval Flow* as the name.
-
-   ![Build an instant flow.](media/coe14.png "Build an instant flow")
-
-1. Select **+ New Step** to add an approval action to the flow, and then search for and select **Create an approval**.
-
-1. Select a dummy title, and enter your email address under **Assigned To**.
-
-   ![Approval flow.](media/coe16.png "Approval flow")
-
-1. In the upper-right corner, select **Test**, and then select **I'll perform the trigger action**.
-
-1. Select **Save & Test**  
-
-1. Select **Run Flow**  
-
-    > [!NOTE]
-    > This flow can take up to ten minutes to run initially. After it runs, you can delete the flow because it won't be needed anymore.
-
-1. Select **Solutions** on the left side panel, and you should now see two new Flow Approvals solutions. Note that the presence of these solutions was the point of this step, and the way you know it succeeded.
-
-   ![Flow Approval solutions.](media/coe17.png "Flow Approval solutions")
-
-## Import the solution
-
-The Core Components solution is required for the Governance Components solution, or any other component in the starter kit, to work.
-
-1. Follow the instructions detailed under [Set up core components](setup-core-components.md) to import the solution either into your Production or your Dataverse for Teams environment.
-
-1. Import the *CenterOfExcellenceAuditComponents_x_x_x_xx_managed.zip* file.
-1. Select a connection for all connectors.
-    ![Import the Center of Excellence - Governance components solution.](media/msig-import.png "Import the Center of Excellence - Governance components solution")
-
-1. Select **Import** without adding values to the Environment Variables, these will be updated later - see [update environment variables](#update-environment-variables)
-
-## Update environment variables
-
-This step should be completed after you import the solution. Environment variables are used to store application and flow configuration data. This means that you only have to set the value once per environment and it will be used in all necessary flows and apps in that environment..
-
-All flows in this solution depend on all environment variables' being configured.
+This step will be completed after you import the solution. Environment variables are used to store application and flow configuration data. This means that you only have to set the value once per environment and it will be used in all necessary flows and apps in that environment..
 
 >[!TIP]
->Learn how to update environment variables for Production and Dataverse for Teams environments: [Update Environment Variables](setup-core-components.md#update-environment-variables).
+>Learn how to update environment variables for Production and Dataverse for Teams environments: [Update Environment Variables](faq.md#update-environment-variables).
 
-1. Select **See Environment Variables** to set the values as described in the following table.
+| Name | Description |
+|------|---------------|
+| Developer Compliance Center URL  | Set this environment variable to the URL for the **Developer Compliance Center** canvas app. See: [Get App URL – Production Environment](faq.md#get-a-power-apps-url-from-a-production-environment) or [Get App URL – Teams Environment](faq.md#add-apps-to-microsoft-teams). If you have installed the CoE Starter Kit components in a Dataverse for Teams environment, this app is called: Developer Compliance Center (Teams version) and is part of the Core for Teams solution. If you have installed the CoE starter Kit ina  Production environment, this app is called Developer Compliance Center and is part of the Governance components solution.
 
-   | Name | Description |
-   |------|---------------|
-   | Auto Delete On Archive | Determines whether apps andd flows are deleted when they're approved for deletion in the following flow: Admin \| App Archive and Clean Up - Check Approvals and Archive. <br> Value must be Yes or No. A default value of Yes is provided. |
-   | Exclude Default environment from Compliance Requests | Determines if the default environment is excluded in the Compliance Details request flow. <br> Value must be Yes or No. A default value of No is provided.  |
-   | ProductionEnvironment | Determines if the environment is Production or Dev/Test. True (the default) will mean that the approvals are sent to app/flow owners. False will send those approvals to the admin email. |
-   | Cleanup Old Objects App URL | (Optional) Link to the Cleanup Old Objects canvas app included in this solution. <br> If included, communication about old objects which are considered no longer useful will include the link to make cleanup easier |
-   | Flow Approvals URL | (Optional) Link to Power Automate's Approval page for your CoE Environment <br> If included, communication about old objects which are considered no longer useful will include the link to make cleanup easier. <br> To get the URL Browse to flows.microsoft.com for your CoE Environment > Action Items > Approvals. <br> URL should end in **approvals/received** |
+## Exempt environments from the compliance process
 
-## Activate the flows
+There are some environments that you may want to exempt from the compliance process - this could be dedicated environments that are already well managed. Learn more: [Establishing an environment strategy](/adoption/environment-strategy)
 
-This Governance Components solution contains flows that you'll need to manually turn on as soon as you're ready to use them.
+You can exempt environments from the compliance process using the Power Platform Admin View app.  
 
-## Update Run only users
+### Production environment
 
-There are three child flows which will need their **Run only users** properties updated.
+If your solution is installed in a Production Environment, your app will be a model driven app.  
 
-- HELPER - CanvasAppOperations Gov
-- HELPER - CloudFlowOperations Gov
-- HELPER - ObjectOperations Gov
-- Request Orphaned Objects Reassigned (Child)
+1. Go to [make.powerapps.com](<https://make.powerapps.com>).
+1. Go to your CoE environment.
+1. Open the **Power Platform Admin View** app.
+1. Select Environments > Chose the environment you want to exempt > Set the **Excuse From Compliance Flows** field to Yes > **Save**
 
-For all three of these flows, go to the details page and click the **Run only users** edit button.
+    ![Exclude an environment from the compliance process in a Production environment](media/coe-compliance1.png "Exclude an environment from the compliance process in a Production environment")
 
-You will see all the connections in the child flow. For each one, change the value to **Use this connection (userPrincipalName\@company.com)**. If there is no connection for any of the connectors, go to **Data** > **Connections**, and create one for the connector.
+### Dataverse for Teams environment
 
-   ![Find setting for run only users.](media/runonlyusersgov1.png "Find setting for run only users")
-   ![Configure run only users.](media/runonlyusersgov2.png "Configure run only users")
+1. Open to the Power Apps app in Teams, select **Build**, and select the Team you have installed the CoE Starter Kit solutions in.
+1. Select **Center of Excellence - Core for Teams > See All**.
+1. Open the **Power Platform Admin View** app.
+1. Select Environments > Chose the environment you want to exempt > Set the **Excuse From Compliance Flows** field to Yes > **Save**.
 
-## Update the variables and flows back in Core
+   ![Exclude an environment from the compliance process in Dataverse for Teams](media/coe-compliance2.png "Exclude an environment from the compliance process in Dataverse for Teams")
 
-1) Get the URL for the Developer Compliance Center <br>
-   Browse to Details page of the Developer Compliance Center and grab the Web link
-    ![Setup Compliance Components1.](media/setupCompliance1.png "Setup Compliance Components1")
+## Turn on flows
 
-1) Browse to Default Solution, filter to Environment Variables, edit the **Developer Compliance Center URL** variable and add the URL from step 1 as a current value
-![Setup Compliance Components2.](media/setupCompliance2.png "Setup Compliance Components2")
+For Production environment turn on these flows which are installed as part of the Core components solution:
 
-1) Return to the Core Solution and turn on **Admin \| Compliance detail request v3**
-![Setup Compliance Components3.](media/setupCompliance3.png "Setup Compliance Components3")
+- Admin | Compliance request complete apps v3
+- Admin | Compliance request complete bots v3
+- Admin | Compliance request complete custom connector v3
+- Admin | Compliance request complete flows v3
+- Admin | Compliance Teams Environment BPF kickoff v3
+- [**Admin | Compliance detail request v3**](governance-components.md#admin--compliance-detail-request-v3)
+
+For solution installed in a Dataverse for Teams environment, turn on the Admin | Compliance detail request [Teams] v3 flow only which is installed with the Core for Teams components solution.
 
 ## Share apps with makers
 
-The Governance Components solution contains one app, which is used by makers to update the compliance details of their applications.
+The Governance Components solution contains the [**Developer Compliance Center**](governance-components.md#developer-compliance-center) canvas app, which is used by makers to update the compliance details of their applications. Share this apps with your Power Platform makers and assign them the **Power Platform Maker SR** security role.
 
-### Developer Compliance Center
+More information:
 
-Your app, flow, and bot makers will use the Developer Compliance Center app to provide further information about the resources they're building. Get familiar with the [audit process](example-processes.md) and share the app with your makers. Your makers must have a Power Apps Premium license to use this app.
+- [Share a canvas app in Power Apps](faq.md#share-an-app-from-a-production-environment)
+- [Share a canvas app in Microsoft Teams](faq.md#share-an-app-from-a-dataverse-for-teams-environment)
 
-In addition to sharing the app, you'll also need to share the data by providing data permissions to the user.
+Your app, flow, and bot makers will use the Developer Compliance Center app to provide further information about the resources they're building. Get familiar with the [audit process](example-processes.md) and share the app with your makers.
 
-#### Share the app from a Production environment
+Consider adding this app to the **Maker - Command Center** for makers to easily find and access it.
 
-1. Go to make.powerapps.com and select the app.
+## All environment variables
 
-1. Select **...** > **Share**.
+Here is the full list of environment variables that impact the compliance process, including environment variables with Default values. You may have to [update environment variables](faq.md#update-environment-variables) after import.
 
-1. Select the Dataverse data permissions.
+>[!IMPORTANT]
+> You don't have to change the values during setup, just when you need to change the value of an environment variable that you configured during import or when you want to change a default value. Re-start all flows after you change environment variables, to make sure the latest value is picked up.
 
-    ![Sharing Data 1.](media/SharingData1.png "Sharing Data 1")
+Environment variables are used to store application and flow configuration data with data specific to your organization or environment.
 
-1. Select the Power Platform Maker Security Role.
+| Name | Description | Default Value |
+|------|---------------|------|
+| Developer Compliance Center URL  | Set this environment variable to the URL for the **Developer Compliance Center** canvas app. See: [Get App URL – Production Environment](faq.md#get-a-power-apps-url-from-a-production-environment) or [Get App URL – Teams Environment](faq.md#add-apps-to-microsoft-teams). If you have installed the CoE Starter Kit components in a Dataverse for Teams environment, this app is called: Developer Compliance Center (Teams version) and is part of the Core for Teams solution. If you have installed the CoE starter Kit ina  Production environment, this app is called Developer Compliance Center and is part of the Governance components solution. | n/a |
+| Compliance – Apps – Number Days Since Published | If an app is broadly shared and was last published this many days ago or older, makers are asked to re-publish the app to stay compliant | 60 |
+| Compliance – Apps – Number Groups Shared | If the app is shared with this many or more groups, makers are asked for a business justification | 1 |
+| Compliance – Apps – Number Launches Last 30 Days | If the app was launched at least this many times in the last 30 days, makers are asked for a business justification | 30 |
+| Compliance – Apps – Number Users Shared | If the app is shared with this many or more users, makers are asked for a business justification | 20 |
+| Compliance – Chatbots – Number Launches | If the chatbot is launched this many or more times, makers are asked for a business justification | 50 |
+| Exclude Default environment from Compliance Request flows | **(DEPRECATED)** Please use [exempt environments from the compliance process](#exempt-environments-from-the-compliance-process) instead. Set to Yes if you want to Exclude the Default environment from the Admin \| Compliance Details request flows | No |
+| Archival-PastTime-Interval | The interval for the past time for how far back to go to see if an app/flow is useful. | 6 |
+| Archival-PastTime-Unit | The units for the past time for how far back to go to see if an app/flow is useful. | Month |
 
-    ![Sharing Data 2.](media/SharingData2.png "Sharing Data 2")
 
-1. Select **Share**.
+## It looks like I found a bug with the CoE Starter Kit; where should I go?
 
-#### Share the app from a Dataverse for Teams environment
-
-You will share the app with your colleagues that don't belong to your CoE team.
-
-More information: [Sharing for broad distribution apps](/powerapps/teams/set-perms-and-share#assign-the-colleagues-with-access-role-to-a-security-group-and-share-the-app)
-
-1. Open to the Power Apps app in Teams, select **Build**, and select the Team you have added the solution to.
-1. Select **Installed apps**.
-1. [Assign table persmissions](/powerapps/teams/set-perms-and-share#assign-table-permissions) to share the data with your colleagues.
-    1. Select **See all** for Center of Excellence - Core Components.
-    1. Select Tables from the left pane.
-    1. Select **PowerApps App** > **Manage Permissions**.
-    1. Select **Colleagues with access**.
-    1. Set the permission to **Full Access**.
-        ![Sharing data with colleagues.](media/govteams-3.png "Sharing data with colleagues")
-    1. Repeat these steps for the Environment, Flow, PVA, Desktop flow tables.
-    1. Repeat these steps for the COE Settings table, but grant **Reference** permission only.
-1. Select **Build** and select **Share with colleagues** to share the app with your colleagues. You must be a Team Owner to see this option.
-
-   ![Sharing with colleagues.](media/govteams-1.png "Sharing with colleagues")
-1. Search for, and select the security group you want to share the apps and tables with. Select the **Developer Compliance Center** app.
-
-   ![Search for a security group.](media/govteams-2.png "Search for a security group")
-1. Select **Save**.
+To file a bug against the solution, go to [aka.ms/coe-starter-kit-issues](https://aka.ms/coe-starter-kit-issues).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

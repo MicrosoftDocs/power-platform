@@ -2,7 +2,7 @@
 title: "Sandbox environments  | MicrosoftDocs"
 description: Manage sandbox environments.
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 08/24/2020
@@ -100,6 +100,9 @@ The reset process starts.
  When you place a sandbox environment in administration mode, only users with System Administrator or System Customizer security roles are able to sign in to that environment.
  
  Administration mode is useful when you want to make operational changes and not have regular users affect your work, and not have your work affect regular users.  
+
+> [!NOTE]
+> System Customizers will need to sign in to the environment directly through the URL as the environment in administration mode will not appear to System Customizers in the Environments page of the Power Platform admin center.
 
 See [Administration mode](admin-mode.md).
 

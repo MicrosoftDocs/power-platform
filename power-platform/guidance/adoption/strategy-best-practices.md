@@ -3,7 +3,7 @@ title: "Microsoft Power Platform strategy and vision best practices | MicrosoftD
 description: "Microsoft Power Platform adoption practices provide admin and governance, nurture and strategy, and vision best practices."
 author: manuelap-msft
 manager: devkeydet
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/10/2020
@@ -33,5 +33,7 @@ The following articles can help you understand how to get started with your ente
    :::column-end:::
 :::row-end:::
 
+> [!TIP]
+> In addition to the material found in the section of the documentation, a great resource for your adoption journey is [Microsoft Power Platform Adoption](https://adoption.microsoft.com/powerplatform) website, with links to resources and workbooks that guide you step by step through your Power Platform adoption.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

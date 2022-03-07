@@ -3,7 +3,7 @@ title: "Organize hackathons - Microsoft Power Platform | MicrosoftDocs"
 description: "A hackathon is a fun way to engage lots of people within your organization around a digital culture of change."
 author: manuelap-msft
 manager: devkeydet
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/09/2020
@@ -24,6 +24,9 @@ A hackathon is a fun way to engage lots of people within your organization aroun
 The more variety of skills and roles represented, the better. One or more facilitators should be involved in organizing the hackathon and defining the teams and the rules. Also, it might be worth starting the day with a review and demo of Power Apps, Power Automate, Power BI, Power Virtual Agents, AI Builder, Microsoft Power Platform, and Microsoft Dataverse.
 
 A successful hackathon usually includes team colors, prizes, food, music, laughter, and competition.
+
+> [!TIP]
+> In addition to the guidance on this page, the [Microsoft Power Platform Hackathon Workbook](https://aka.ms/powerplatformhackathonworkbook) contains practical step-by-step guidance and templates for running a hackathon. You'll find this workbook and other resources on [the Microsoft Power Platform Adoption website](https://adoption.microsoft.com/powerplatform).
 
 ## Planning and logistics
 

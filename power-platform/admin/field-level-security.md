@@ -1,9 +1,9 @@
 ---
 title: "Field-level security  | MicrosoftDocs"
 description: Field-level security 
-ms.service: power-platform
+
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: overview
 ms.date: 10/21/2021
 author: jimholtz
 ms.subservice: admin
