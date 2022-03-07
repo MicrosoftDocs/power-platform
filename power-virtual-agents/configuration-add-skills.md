@@ -2,7 +2,7 @@
 title: "Configure Bot Framework skills"
 description: "Skills extend your bot's conversational capabilities by automating a series of actions within a topic. Skills enable the bot to book an appointment, send a confirmation email, manage tasks, and more."
 keywords: "extensibility, integration, extend bot, bot framework, skills, custom capabilities, PVA"
-ms.date: 01/25/2022
+ms.date: 03/07/2022
 
 ms.topic: article
 author: iaanw
