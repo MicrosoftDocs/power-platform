@@ -3,10 +3,9 @@ title: Understand imperative logic in a Microsoft Power Fx | Microsoft Docs
 description: Reference information about working with imperative logic, which can change state in Microsoft Power Fx
 author: gregli-msft
 manager: kvivek
-
 ms.topic: conceptual
-ms.reviewer: nabuthuk
-ms.date: 02/26/2021
+ms.reviewer: jdaly
+ms.date: 03/06/2022
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType: 
@@ -16,8 +15,8 @@ search.app:
 ---
 # Imperative logic
 
-> [NOTE]
-> Microsoft Power Fx is the new name for the canvas apps formula language. These articles are work in progress as we extract the language from canvas apps, integrate it with other Microsoft Power Platform products, and make it available as open source.  Start with the [Microsoft Power Fx Overview](overview.md) for an introduction to the language.   
+> [!NOTE]
+> Microsoft Power Fx is the new name for the canvas apps formula language.  These articles are work in progress as we extract the language from canvas apps, integrate it with other Microsoft Power Platform products, and make it available as open source.  Start with the [Microsoft Power Fx Overview](overview.md) for an introduction to the language.
 
 Most formulas in Microsoft Power Fx calculate a value.  Like an Excel spreadsheet, recalculation happens automatically as values change.  For example, you might want to show the value in a **Label** control in red if the value is less than zero or in black otherwise. So you can set the **Color** property of that control to this formula:
 

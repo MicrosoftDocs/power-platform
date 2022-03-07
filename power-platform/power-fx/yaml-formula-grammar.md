@@ -3,11 +3,10 @@ title: Microsoft Power Fx YAML Formula Grammar | Microsoft Docs
 description: Microsoft Power Fx YAML formula syntax
 author: gregli-msft
 manager: kvivek
-ms.reviewer: nabuthuk
-
+ms.reviewer: jdaly
+ms.date: 03/06/2022
 ms.topic: reference
 ms.custom: canvas
-ms.date: 02/24/2021
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType: 
