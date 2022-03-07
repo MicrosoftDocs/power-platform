@@ -66,11 +66,7 @@ SUBSTITUTE(A1," ","|",
 LEN(A1)-LEN(SUBSTITUTE(A1," ",""))))
 Cell A1 contains the text "Hello, World! It is great to meet you!" Cell A2 contains the text "you!"
 
-
 :::image type="content" source="media/overview/reverse-search-excel.png" alt-text="Screenshot of a formula bar in Excel with the formula: =RIGHT(A1,LEN(A1)-FIND(\"|\",SUBSTITUTE(A1,\" \",\"|\",LEN(A1)-LEN(SUBSTITUTE(A1,\" \",\"\"))))Cell A1 contains the text \"Hello, World! It is great to meet you!\" Cell A2 contains the text \"you!\"":::
-
-
-
 
 Power Fx works with this same formula, with the cell references replaced with control property references:
 
