@@ -56,8 +56,7 @@ Power Fx takes this a step further. An expression by itself says nothing about w
 
 For example, this [formula from Stack Overflow](https://stackoverflow.com/questions/350264/how-can-i-perform-a-reverse-string-search-in-excel-without-using-vba) searches a string in reverse order. In Excel, it looks like the following image.
 
-> [!div class="mx-imgBorder"]
-> ![Reverse search.](media/overview/reverse-search-excel.png "Reverse search")
+:::image type="content" source="media/overview/reverse-search-excel.png" alt-text="Reverse search":::
 
 Screenshot of a formula bar in Excel with the formula:
 =RIGHT(A1,LEN(A1)-
@@ -65,8 +64,6 @@ FIND("|",
 SUBSTITUTE(A1," ","|",
 LEN(A1)-LEN(SUBSTITUTE(A1," ",""))))
 Cell A1 contains the text "Hello, World! It is great to meet you!" Cell A2 contains the text "you!"
-
-:::image type="content" source="media/overview/reverse-search-excel.png" alt-text="Screenshot of a formula bar in Excel with the formula: =RIGHT(A1,LEN(A1)-FIND(\"|\",SUBSTITUTE(A1,\" \",\"|\",LEN(A1)-LEN(SUBSTITUTE(A1,\" \",\"\"))))Cell A1 contains the text \"Hello, World! It is great to meet you!\" Cell A2 contains the text \"you!\"":::
 
 Power Fx works with this same formula, with the cell references replaced with control property references:
 
