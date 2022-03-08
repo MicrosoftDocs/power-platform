@@ -24,11 +24,9 @@ search.app:
 ## Known issues 
 - Pay-as-you-go billing and reporting is not available in Norway and Korea (South).
 - Deleting a billing policy in the Power Platform admin center will not automatically delete corresponding Power Platform account resource in the Azure portal. This resource can be deleted manually in the Azure portal, if needed.
-- The Power Platform requests meter will be in preview by the end of March 2022. During this preview we will report on usage of Power Platform requests, however, we will not bill for this usage until we reach general availability (GA) for this meter. If you link an environment to an Azure subscription, users and flows in the environment can consume more than their entitled usage without being throttled or paying for overages.
+- The Power Platform requests meter is planned to be in preview by the end of March 2022. During this preview we will report on usage of Power Platform requests, however, we will not bill for this usage until we reach general availability (GA) for this meter. If you link an environment to an Azure subscription, users and flows in the environment can consume more than their entitled usage without being throttled or paying for overages.
 - The report for the Power Platform request meter does not currently show correct entitlements for users licensed via the Power Apps Per App license or Power Apps Per App pay-as-you-go meter. Entitlements for such users will shown as 0 when in fact they should be shown as 6000 (requests per 24h period) as outlined in http://aka.ms/platformlimits.
-- Multi factor authentication: if you have a multi factor authentication enabled for the Azure portal, you may see an error when you try to link an Azure subscription from the Power Platform admin center. This issue will be resolved by the end for March 2022. 
-
-
+- Multi-factor authentication: if you have multi-factor authentication enabled for the Azure portal, you may see an error when you try to link an Azure subscription from the Power Platform admin center. This issue is planned for resolution by the end for March 2022. 
 
 ## Frequently asked questions 
 
