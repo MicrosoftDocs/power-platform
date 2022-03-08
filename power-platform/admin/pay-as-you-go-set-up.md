@@ -4,7 +4,7 @@ description: Follow these steps to set up pay-as-you-go billing with an Azure su
 author: Kavishi
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/03/2022
+ms.date: 03/08/2022
 ms.subservice: admin
 ms.author: kaagar 
 ms.reviewer: jimholtz

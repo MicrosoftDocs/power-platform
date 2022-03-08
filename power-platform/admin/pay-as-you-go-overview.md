@@ -4,7 +4,7 @@ description: The pay-as-you-go plan is a new way to pay for Power Apps using an 
 author: Kavishi
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 03/01/2022
+ms.date: 03/08/2022
 ms.subservice: admin
 ms.author: kaagar
 ms.reviewer: jimholtz 

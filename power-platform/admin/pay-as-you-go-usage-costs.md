@@ -4,7 +4,7 @@ description: Aggregated billing information is available in the Azure portal, an
 author: Kavishi
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/01/2022
+ms.date: 03/08/2022
 ms.subservice: admin
 ms.author: kaagar
 ms.reviewer: jimholtz 
