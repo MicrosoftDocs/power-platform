@@ -6,7 +6,6 @@ author: paulliew
 ms.author: paulliew
 ms.reviewer: jimholtz
 ms.custom: "admin-security"
-
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/04/2022
@@ -20,7 +19,7 @@ search.app:
 ---
 # Delete users
 
-## Delete users from Microsoft 365 admin center
+## Delete users from the Microsoft 365 admin center
 
 Users are deleted in the Microsoft 365 admin center as follows:
 
