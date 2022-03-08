@@ -2,7 +2,6 @@
 title: Requests limits and allocations | Microsoft Docs
 description: Requests limits and allocations
 author: jimholtz
-
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/21/2022
@@ -43,7 +42,7 @@ All the users of Microsoft Power Platform have limits on the number of requests 
 
 | Products | Requests per paid license per 24 hours |
 |--------------|-------------------|
-| Paid licensed users for Power Platform (excludes Power Apps per App, Power Automate per flow, and Power Virtual Agents) and Dynamics 365 excluding D365 Team Member<sup>1</sup>    | 40,000     |
+| Paid licensed users for Power Platform (excludes Power Apps per App, Power Automate per flow, and Power Virtual Agents) and Dynamics 365 excluding Dynamics 365 Team Member<sup>1</sup>    | 40,000     |
 | [Power Apps pay-as-you-go plan](https://go.microsoft.com/fwlink/?linkid=2173947), and paid licensed users for Power Apps per app, Microsoft 365 apps with Power Platform access, and Dynamics 365 Team Member<sup>2</sup> | 6,000        |
 | Power Automate per flow plan<sup>3</sup>, Power Virtual Agents base offer, and Power Virtual Agents add-on pack<sup>4</sup>   | 250,000    |
 | Paid Power Apps Portals login | 200 |
