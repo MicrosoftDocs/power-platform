@@ -1,7 +1,7 @@
 ---
 title: "Preview: Restrict cross-tenant inbound and outbound access"
 description: "Use tenant restrictions to control access to SaaS cloud applications based on the Azure AD tenant. You can also enforce tenant isolation for Power Platform connections."  
-ms.date: 03/02/2022
+ms.date: 03/07/2022
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
@@ -150,11 +150,6 @@ Selecting the failed run will show details of the failed flow run.
 
 > [!NOTE]
 > It takes about an hour for the latest tenant isolation policy changes to be assessed against active apps and flows. This change isn't instantaneous. 
-
-## Known issues
-
-- This feature doesn't protect your tenant from inbound cross-cloud connections. If a tenant has tenant isolation turned on, all outgoing connections are restricted. However, incoming connections that are established from other tenants in other clouds aren't restricted. This issue is currently being investigated. 
-
 
 
 
