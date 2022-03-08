@@ -2,13 +2,14 @@
 title: "Pay-as-you-go meters | MicrosoftDocs"
 description: If you're using a pay-as-you-go plan, three meters determine how much you'll pay based on usage of apps, Dataverse storage, and Power Platform requests.
 author: Kavishi
-
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/15/2021
+ms.date: 03/08/2022
 ms.subservice: admin
 ms.author: kaagar
 ms.reviewer: jimholtz 
+contributors:
+  - ShawnNandiMSFT
 search.audienceType: 
   - admin
 search.app:
@@ -17,9 +18,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Preview: Pay-as-you-go meters
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Pay-as-you-go meters
 
 If you're using a pay-as-you-go plan, usage of apps and any Dataverse or Microsoft Power Platform request usage that goes above the included amounts are billed against your Azure subscription using Azure meters. The Power Apps per-app meter measures the usage by app. The Microsoft Dataverse capacity add-on meter measures Dataverse usage across database, files, and logs. The Power Platform requests capacity add-on meter measures the number of API calls. As soon as you link your environment to an Azure subscription, all three meters are automatically enabled.
 
@@ -34,7 +33,7 @@ If you're using a pay-as-you-go plan, usage of apps and any Dataverse or Microso
 For detailed pricing information, see [Power Apps pricing.](https://powerapps.microsoft.com/pricing/)
 
 > [!NOTE]
-> As of public preview (November 1, 2021), if you link an environment to an Azure subscription, the Power Platform requests meter will not be reported or billed. Users and flows in the environment can consume more than their entitled usage without being throttled or paying for overages. Reporting and billing will be turned on in the weeks following the public preview announcement.
+> In March 2022, we will release a preview of the Power Platform requests meter. During this preview we will report on usage of Power Platform requests, however, we will not bill for this usage until we reach general availability (GA) for this meter. If you link an environment to an Azure subscription, users and flows in the environment can consume more than their entitled usage without being throttled or paying for overages.
 
 ### Power Apps per-app meter 
 
@@ -127,7 +126,7 @@ Example pricing
 ### Power Platform request meter (coming soon)
 
 > [!NOTE]
-> > As of public preview (November 1, 2021), if you link an environment to an Azure subscription, the Power Platform requests meter will not be reported or billed. Users and flows in the environment can consume more than their entitled usage without being throttled or paying for overages. Reporting and billing will be turned on in the weeks following the public preview announcement.
+> In March 2022, we will release a preview of the Power Platform requests meter. During this preview we will report on usage of Power Platform requests, however, we will not bill for this usage until we reach general availability (GA) for this meter. If you link an environment to an Azure subscription, users and flows in the environment can consume more than their entitled usage without being throttled or paying for overages.
 
 Each Power Platform license includes a large entitlement of Power Platform requests, designed to be sufficient for most customers and scenarios. For customers with extremely high-scale scenarios, the Power Platform requests meter enables them to scale without getting throttled and only pay for the Power Platform requests used above those entitlements.
 
@@ -165,7 +164,7 @@ Example pricing
 
 ## Next step
 
-[Preview: Set up pay-as-you-go](pay-as-you-go-set-up.md)
+[Set up pay-as-you-go](pay-as-you-go-set-up.md)
 
 
 
