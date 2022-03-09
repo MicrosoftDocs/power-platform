@@ -129,6 +129,6 @@ Now when the bot user tells the bot how many people, and any requirements, an em
 
 :::image type="content" source="../media/advanced-flow/flow-test-4.png" alt-text="Complete topic with a flow call that sends email via Outlook connector.":::
 
-See the [Power Virtual Agents webapp documentation on using Flows](../advanced-flow.md) for more detailed and complex scenarios.
+See the [Power Virtual Agents web app documentation on using Flows](../advanced-flow.md) for more detailed and complex scenarios.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
