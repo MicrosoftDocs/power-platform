@@ -4,7 +4,7 @@ description: "Learn about features that are specific to Microsoft Dynamics 365 U
 author: carrema
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/23/2022
+ms.date: 03/09/2022
 ms.subservice: admin
 ms.author: macarrer
 ms.reviewer: jimholtz
@@ -17,7 +17,7 @@ search.app:
   - Flow
 ---
 
-# Dynamics 365 US Government 
+# Dynamics 365 US Government  
 
 In response to the unique and evolving requirements of the United States public sector, Microsoft has created Microsoft Dynamics 365 US Government that is available to qualified government tables in the United States. On October 11, 2016, Microsoft announced the next generation of intelligent business applications in the cloud under the brand Microsoft Dynamics 365. To this end, Microsoft Dynamics 365 US Government entails a continuity of the protected environment that was originally branded Microsoft CRM Online Government where the protections afforded to the government community cloud under the new brand are now represented by eight discrete functions: 
 
@@ -224,11 +224,17 @@ You use a different set of URLs to access Dynamics 365 US Government environment
 
 Effective March 2, 2020, the regional Discovery Service will be deprecated. More information: Regional Discovery Service is deprecated.
 
+## Dynamics 365 US Government feature limitations
+Microsoft strives to maintain functional parity between our commercially available service and those enabled though our U.S. Government clouds. These services are referred to as Dynamics 365 Government Community Cloud (GCC) and GCC High. Refer to the [Global Geographic Availability](https://dynamics.microsoft.com/geographic-availability/) tool to see where the Dynamics 365 Apps and Offers are available throughout the world, including approximate availability timelines. 
+
+There are exceptions to the principle of maintaining Product functional parity within the U.S. Government clouds. For more information, see the following download: [Business Applications US Government](https://aka.ms/BAPFunctionalParity).
+
 ### See also  
-[Dynamics 365 US Government - Feature availability](government-feature-availability.md)<br/>
 [Power Platform URLs and IP address ranges](online-requirements.md)<br />
 [Power Apps US Government](./powerapps-us-government.md)<br />
 [Power Automate US Government](/power-automate/us-govt)
+
+
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

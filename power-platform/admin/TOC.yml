@@ -982,8 +982,6 @@
           href: microsoft-dynamics-365-government.md
         - name: Power Apps service description
           href: powerapps-us-government.md
-        - name: Dynamics 365 US Government feature availability 
-          href: government-feature-availability.md
       - name: Geo to geo migrations
         href: geo-to-geo-migrations.md    
     - name: Partners
