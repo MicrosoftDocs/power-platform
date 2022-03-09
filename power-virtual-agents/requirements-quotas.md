@@ -2,7 +2,7 @@
 title: "Rate limits for chatbots"
 description: "Rate limits determine how often messages can be sent to a chatbot"
 keywords: "PVA, quotas, rate limits, requests, restrictions"
-ms.date: 5/19/2021
+ms.date: 03/09/2022
 
 ms.topic: article
 author: iaanw
