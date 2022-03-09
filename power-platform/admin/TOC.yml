@@ -54,7 +54,7 @@
           href: power-automate-licensing/add-ons.md
       - name: Power Platform licensing FAQs
         href: powerapps-flow-licensing-faq.md
-      - name: "Preview: Pay-as-you-go plan"
+      - name: Pay-as-you-go plan
         items:
         - name: Overview
           href: pay-as-you-go-overview.md
@@ -612,7 +612,7 @@
           items: 
           - name: Control user access to environments
             href: control-user-access.md  
-          - name: Restrict cross-tenant access 
+          - name: "Preview: Restrict cross-tenant access" 
             href: cross-tenant-restrictions.md
           - name: Content security policy
             href: content-security-policy.md
@@ -853,6 +853,8 @@
             items: 
             - name: Configure appointment, contact, and task synchronization
               href: choose-records-synchronize-dynamics-365-outlook-exchange.md
+            - name: Synchronization logic for appointments, contacts, and tasks
+              href: sync-logic.md
             - name: Set up default sync filters for multiple users
               href: configure-default-sync-filters.md
             - name: Synchronized fields per entity
@@ -944,6 +946,8 @@
       href: wp-compliance-data-privacy.md
     - name: GDPR - Responding to DSR requests
       items:
+      - name: About GDPR
+        href: about-gdpr.md
       - name: System-generated logs 
         href: powerapps-gdpr-dsr-guide-systemlogs.md
       - name: Data integrations for Dataverse 
@@ -957,7 +961,6 @@
         - name: Delete data 
           href: powerapps-gdpr-delete-dsr.md
         - name: Dataverse customer data 
-      # line 938 to 970 - is being reorged but keep until hear from Marty
           href: common-data-service-gdpr-dsr-guide.md
     - name: Datacenter regions
       href: new-datacenter-regions.md

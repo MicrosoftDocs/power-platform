@@ -1,10 +1,9 @@
 ---
 title: "Manage group teams  | MicrosoftDocs"
 description: About managing group teams 
-
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/11/2021
+ms.date: 02/22/2022
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
@@ -19,7 +18,7 @@ search.app:
 ---
 # Manage group teams
 
-<!-- legacy procedure -->
+<!-- legacy procedure --> 
 
 ## About group teams
 
@@ -84,60 +83,54 @@ For more information, see [Assign a record to a user or team](/powerapps/user/as
    2. Obtain the Azure AD Group's **ObjectID** from your https://portal.azure.com site.
    3. Create a custom security role that contains privileges per your team's collaboration requirement. See the discussion of [member's inherited privileges](security-roles-privileges.md#team-members-privilege-inheritance) if you need to extend the team member's privileges directly to a user.
 
-2. In the web app, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
+2. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
 
-3. Select **Settings** > **Security**. In Microsoft Dynamics 365 for Outlook, go to **Settings** > **System** > **Security**.
+3. Select an environment, and then select **Settings** > **Users + permissions** > **Teams**.
 
-4. Select **Teams**.
+4. Select **+ Create team**.
 
-5. On the Actions toolbar, select **New** button.
+5. Specify the following fields:   
 
-6. Enter a team name.
+   - **Team name:** Be sure this name is unique within a business unit.
+   - **Description:** Enter a description of the team.
+   - **Business unit:** Select the business unit from the dropdown list.
+   - **Administrator:** Search for users in the organization. Start entering characters.
+   - **Team type:** Select the team type from the dropdown list.
 
-7. Select a business unit.
+   :::image type="content" source="media/dataverse-team-manage-new-team.png" alt-text="Screenshot of settings for a new Dataverse team.":::
+   
+   > [!NOTE]
+   > A team can be one of the following types: Owner, Access, Azure AD Security group, or Azure AD Office group. 
 
-8. Enter an administrator.
+6. If the team type is Azure AD Security group or Azure AD Office group, you must also enter these fields:
 
-9. Select **Team Type** (a drop-down list is displayed).
+   - **Group name:** Start entering text to select an existing Azure AD group names.These groups are pre-created in Azure AD.
+   - **Membership type:** Select the membership type from the dropdown list.
 
-10. Select **AAD Security** or **Office group** (this must match the Azure AD Group type).
+   :::image type="content" source="media/dataverse-team-manage-new-team-azuread.png" alt-text="Screenshot of settings for a new Azure AD team.":::
 
-11. Enter the respective Azure AD **ObjectID** of the Azure AD Security or Office group.
-
-12. Open the **Membership Type** dropdown, and then select one of the following:
-  
-    - **Members and guests**
-    - **Members**
-    - **Owners**
-    - **Guests**
-
-    The Azure AD group **Members**, **Owners**, **Guests**, or **Members and guests** from the selected Dataverse membership type will be mapped to the group team when the member accesses the system.   
-
-13. Select **Save**. 
-    
-    If you don't select the business unit to which the team will belong, by default, the root business unit is selected. The root business unit is the first business unit created for an organization.
+After you create the team, you can add team members and select corresponding security roles. This step is optional, but recommended.
 
 ## Edit a group team
 
 1. Make sure that you have the System Administrator, Sales Manager, Vice President of Sales, Vice President of Marketing, or CEO-Business Manager security role or equivalent permissions.
    
-   Check your security role:
-   - Follow the steps in [View your user profile](/powerapps/user/view-your-user-profile).
-   - Don't have the correct permissions? Contact your system administrator.
+2. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
 
-2. In the web app, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
+3. Select an environment, and then select **Settings** > **Users + permissions** > **Teams**.
 
-3. Select **Settings** > **Security**. In Dynamics 365 for Outlook, go to **Settings** > **System** > **Security**.
+4. Select the checkbox for a team name.  
 
-4. Select **Teams**.
+   :::image type="content" source="media/select-team.png" alt-text="Screenshot selecting a team.":::
 
-5. In the **Teams** drop-down list, select **All AAD Office or Security Teams**.
+5. Select **Edit team**. Only the **Team name**, **Description**, and **Administrator** are available for editing.
 
-6. In the grid, select the team you want to edit.
+6. Update the fields as required, and then select **Update**.
 
-7. On the Actions toolbar, select **Edit**, change the desired fields (Membership Type cannot be updated), and then select **Save**.
+   :::image type="content" source="media/dataverse-team-manage-edit.png" alt-text="Screenshot of editing a team.":::
 
 > [!NOTE]
+> - To edit the Business Unit, see [Change the business unit for a team](create-edit-business-units.md#change-the-business-unit-for-a-team).
 > - You can create Dataverse group teams - **Members**, **Owners**, **Guests**, and **Members and Guests** per environment based on the Azure AD group membership type for each Azure AD group. The Azure AD ObjectId of the group team cannot be edited once the group team is created.
 > - The Dataverse Membership Type cannot be changed after the group team is created.  If you need to update this field, you'll need to delete the group team and create a new one.
 > - All existing group teams created prior to the new **Membership Type** field being added are automatically updated as **Members and guests**. There is no loss in functionality with these group teams as the default group team is mapped to the Azure AD Group **Members and guests** membership type. 
@@ -146,6 +139,30 @@ For more information, see [Assign a record to a user or team](/powerapps/user/as
 > - **Azure AD group members are also added to the group team with [impersonation calls](/powerapps/developer/common-data-service/impersonate-another-user)**. You can use create group members in the group team on behalf of another user using impersonation. 
 > - Team members are maintained in each group team at run-time and the operation is done at the database level; therefore, the update to group team event is not available for plugin.
 > - You do not need to assign team members with an individual security role if your group team's security role has a [member's privilege inheritance](security-roles-privileges.md#team-members-privilege-inheritance) and the security role contains at least one privilege that has User level permission.
+
+## Manage the security roles of a team
+
+1. Select the checkbox for a team name.  
+
+   :::image type="content" source="media/select-team.png" alt-text="Screenshot selecting a team.":::
+
+2. Select **Manage security roles**. 
+
+3. Select the role or roles you want, and then select **Save**.
+
+   :::image type="content" source="media/dataverse-team-manage-security-roles.png" alt-text="Screenshot of managing security roles.":::
+
+## Change the business unit for a team  
+See [Change the business unit for a team](create-edit-business-units.md#change-the-business-unit-for-a-team).
+
+## Other team operations  
+See:
+- [Manage team members](manage-teams.md#manage-team-members)
+- [Delete a team](manage-teams.md#delete-a-team)
+- [Change the business unit for a team](manage-teams.md#change-the-business-unit-for-a-team)
+
+
+
 
 ### See also
 [Manage teams](manage-teams.md) <br />

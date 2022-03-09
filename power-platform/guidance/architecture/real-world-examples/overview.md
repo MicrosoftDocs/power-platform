@@ -21,5 +21,5 @@ Microsoft Power Platform offers a wide range of capabilities that can help you a
 
 [What are canvas apps in Power Apps?](/powerapps/maker/canvas-apps/getting-started)<br/>
 [Overview of Power Apps component framework](/powerapps/developer/component-framework/overview)<br/>
-[Application lifecycle management with Microsoft Power Platform](/power-platform/alm/)<br/>
+[Application lifecycle management with Microsoft Power Platform](../../../alm/index.yml)<br/>
 [Planning a Power Apps project](/powerapps/guidance/planning/introduction)

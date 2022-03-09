@@ -121,7 +121,7 @@ Office 365 licenses include the following Power Automate capabilities.
   
 The following Power Automate capabilities are not included.
   
-- Access to [premium connectors](./types.md#premium-connectors) is not included except in Dataverse for Teams environments. Learn more about [Dataverse for Teams capabilities](/power-platform/admin/pricing-billing-skus#dataverse-capabilities-with-microsoft-365-licenses)
+- Access to [premium connectors](./types.md#premium-connectors) is not included except in Dataverse for Teams environments. Learn more about [Dataverse for Teams capabilities](../pricing-billing-skus.md#dataverse-capabilities-with-microsoft-365-licenses)
 - [Business process flows](./types.md#business-process-flows)
 - [Custom connectors](./types.md#custom-connectors)
 - [On premises gateways](./types.md#on-premises-gateway)

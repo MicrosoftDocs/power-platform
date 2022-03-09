@@ -33,7 +33,7 @@ You can go beyond basic authoring in Power Virtual Agents by taking advantage of
 
 ## Prerequisites
 
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)
+- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 
 ## In this section
 

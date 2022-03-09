@@ -29,8 +29,8 @@ In this section, we'll explore some best practices to follow when establishing a
 
 > [!div class="checklist"]
 > * [Designate the Microsoft Power Platform admin role](pp-admin.md)
-> * [Manage users](../../admin/create-users-assign-online-security-roles.md)
-> * [Plan and manage license and capacity](capacity-and-licenses.md)
+> * [Manage users](../../admin/create-users.md)  
+> * [Plan and manage license and capacity](../../admin/capacity-add-on.md)
 > * [Establish an environment strategy](environment-strategy.md)
 > * [Manage Microsoft Dataverse for Teams environments](teams-environment-strategy.md)
    :::column-end:::
