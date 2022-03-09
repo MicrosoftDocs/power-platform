@@ -1,5 +1,5 @@
 ---
-title: "End-user support strategy - Microsoft Power Platform | MicrosoftDocs"
+title: "User support strategy - Microsoft Power Platform | MicrosoftDocs"
 description: "Guidance on establishing a support and graduation framework, decision matrix, and user support process for Microsoft Power Platform solutions."
 author: manuelap-msft
 manager: devkeydet
@@ -18,12 +18,7 @@ search.app:
   - Powerplatform
 ---
 
-
-<!-- From editor: On the live version of this topic, the link in line 155 opens a 404 page. And the blog links in line 143 don't open to a blog, so please check to see if that's what is intended. Also, see my note in line 70. -->
-
-
-
-# End-user support: Ongoing production solution support
+# User support: Ongoing production solution support
 
 The following section covers formal and informal ways of supporting users of Microsoft Power Platform solutions, such as apps, flows, and chatbots.
 
@@ -33,8 +28,8 @@ This diagram shows a common support and graduation framework that organizations 
 
 | **Type** | **Description** |
 | --- | --- |
-| ![Type 1.](media/support-1.png "Type 1") | **Self-support (internal)** occurs when a maker supports their own solution. End users of the solution know to reach out to the maker for support, and there's often no visibility to IT or the team on the level or type of support the maker provides. |
-| ![Type 2.](media/support-2.png "Type 2") | **Team-assisted support (internal)** occurs when team members learn from each other as they develop Power Platform solutions. Team members become co-owners of their team's apps, flows, and chatbots. Co-owners are able to support end user queries and can make small bug fixes and changes. While team-assisted support sometimes happens informally, it’s a good idea to formalize this process as your adoption and growth matures.  |
+| ![Type 1.](media/support-1.png "Type 1") | **Self-support (internal)** occurs when a maker supports their own solution. Users of the solution know to reach out to the maker for support, and there's often no visibility to IT or the team on the level or type of support the maker provides. |
+| ![Type 2.](media/support-2.png "Type 2") | **Team-assisted support (internal)** occurs when team members learn from each other as they develop Power Platform solutions. Team members become co-owners of their team's apps, flows, and chatbots. Co-owners are able to support user queries and can make small bug fixes and changes. While team-assisted support sometimes happens informally, it’s a good idea to formalize this process as your adoption and growth matures.  |
 | ![Type 3.](media/support-3.png  "Type 3") | **Help desk support (internal)** handles formal support issues and requests. The help desk may help with questions such as how to access an app on a mobile device or how to request access to a back-end datasource. They'll redirect solution-related questions to the channel supporting the solution. |
 | ![Type 4.](media/support-4.png  "Type 4") | **Dedicated Power Platform support (internal)** involves handling complex issues escalated by the help desk. Critical applications are handed over to this team, and they're able to deploy bug fixes.  |
 | ![Type 5.](media/support-5.png "Type 5") | **Partner support (external)** can complement your internal support offering, and either support critical applications or work with specific departments on supporting their apps. Learn more: [Get expert help from Power Apps partners](https://powerapps.microsoft.com/partners/) |
@@ -60,18 +55,13 @@ As you define your support process and escalation path, it's important to catego
 | **Impact** | Low business impact. | Important but not business critical (medium impact). | High business impact. |
 | **ALM** |  No ALM required. | ALM required – and may be achieved via manual solution import/export. | Robust ALM process required – ALM is achieved using Azure DevOps or GitHub pipelines. |
 | **Environment strategy** | Solution is built in the default or a shared productivity environment. | Dedicated development environment, and shared test and prod environments (shared with other solutions – for example, business unit specific). Environments are managed by the business unit (decentralized) or by Central IT (centralized). | Dedicated dev/test/prod environments. Environments are managed by central IT. |
-| **Maker permissions** | Maker has the Environment Maker security role in the environments. | Maker has the Environment Maker or System customizer security role in the development environment, but only the end user security role in test and production environments. Solutions may be owned by a service account or Environment Admin in test and production. | Maker has the Environment Maker or System customizer security role in the development environment, but only the end user security role in test and production environments. Solution deployment happens automatically and solutions are owned by a service principal in test and production. |
+| **Maker permissions** | Maker has the Environment Maker security role in the environments. | Maker has the Environment Maker or System customizer security role in the development environment, but only the end user security role in test and production environments. Solutions may be owned by a service account or Environment Admin in test and production. | Maker has the Environment Maker or System customizer security role in the development environment, but only the user security role in test and production environments. Solution deployment happens automatically and solutions are owned by a service principal in test and production. |
 | **IT involvement** | Reactive governance – IT has visibility of solutions being built and monitors usage. | IT blessing at solution or user level. Maker provides solution details, such as potential workarounds and data sources used. | Production environment is managed by IT. |
 | **Support model** | Self-supported. | Team-assisted supported. | Formal support. |
 
 As you define your support models, also think about a graduation path—a solution may start off only requiring productivity-level support but grow in functionality or user base to require important-level support. Define how makers can request more formal support and transition a solution to supported environments.
 
-
-<!-- From editor: External user support also is described in further detail. The following sentence says only internal support is described. -->
-
-
-
-Each of the types of internal user support introduced above are described in further detail in this article.
+Each of the types of user support introduced above are described in further detail in this article.
 
 ## Maker support (self-support)
 
@@ -140,7 +130,7 @@ Considerations and key actions you can take to improve your internal help desk s
 - Assess the readiness level of your help desk to handle support.
 - Arrange for more training for help desk staff, based on readiness gaps.
 - Determine what the escalation path will be for requests the help desk can’t directly handle.
-- Update the help desk knowledge base for known Power Platform topics. Ensure someone is responsible for regular updates to the knowledge base to reflect new and enhanced features over time. Keep up to date by subscribing to the [Power Apps blog](https://powerapps.microsoft.com/blog/feed/), [Power Automate blog](https://flow.microsoft.com/blog/feed/), and [Power Virtual Agents blog](https://powervirtualagents.microsoft.com/blog/feed/) RSS feeds.
+- Update the help desk knowledge base for known Power Platform topics. Ensure someone is responsible for regular updates to the knowledge base to reflect new and enhanced features over time. Keep up to date by subscribing to the [Power Apps blog](https://powerapps.microsoft.com/blog/), [Power Automate blog](https://powerautomate.microsoft.com/blog/), and [Power Virtual Agents blog](https://powervirtualagents.microsoft.com/) RSS feeds.
 - Ensure a good issue-tracking system is in place. It's often a ticketing system that can manage priority levels.
 - Decide if anyone will be on-call for any issues related to Power Platform. If appropriate, ensure the expectations for 24/7 support are clear.
 - Determine what SLAs will exist, and that expectations for response and resolution are clearly communicated.
@@ -152,7 +142,7 @@ Considerations and key actions you can take to improve your internal Power Platf
 - Clearly define where help desk responsibilities end, and where dedicated support responsibilities begin.
 - Ensure that the Power Platform dedicated support team has a direct escalation path to reach global administrators for Microsoft 365 and Azure. It's critical when a widespread issue arises that's beyond the scope of Power Platform. Such issues could be related to user accounts and permissions, network configuration or data sources used in Power Platform solutions.
 - Create a feedback loop from the dedicated support team back to the help desk so that the IT knowledge base can be updated. The goal is for the primary help desk to continually become better equipped at handling more issues in the future.
-- Create a feedback loop from the help desk to the dedicated support team. When support personnel observe redundancies or inefficiencies, they can communicate that information to the dedicated support team, which might choose to change and improve internal processes. Example: If the help desk is inundated with creating and configuring new Power Platform environments for makers, the dedicated team may look at automating this process using the [environment request management components in the CoE Starter Kit](/guidance/coe/env-mgmt).
+- Create a feedback loop from the help desk to the dedicated support team. When support personnel observe redundancies or inefficiencies, they can communicate that information to the dedicated support team, which might choose to change and improve internal processes. Example: If the help desk is inundated with creating and configuring new Power Platform environments for makers, the dedicated team may look at automating this process using the [environment request management components in the CoE Starter Kit](/power-platform/guidance/coe/env-mgmt).
 - Create an escalation path from individuals and teams supporting their solutions to the dedicated support team, so they can get unblocked if they face issues they cannot solve themselves.
 - Create a handover path from individuals and teams supporting their solutions to the dedicated support team, so that critical applications can transition.
 - Decide on your overall strategy for transitioning solutions to the dedicated team—as your number of important and critical solutions increase, will you increase staffing on the dedicated support team, or will you rely on business units to staff support teams for their areas?

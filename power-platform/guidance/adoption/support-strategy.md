@@ -1,5 +1,5 @@
 ---
-title: "Ongoing production solution and maker education support - Microsoft Power Platform | MicrosoftDocs"
+title: "User and maker support strategies - Microsoft Power Platform | MicrosoftDocs"
 description: "Guidance on establishing ongoing production solution and maker education support for Microsoft Power Platform."
 author: manuelap-msft
 manager: devkeydet
@@ -18,10 +18,7 @@ search.app:
   - Powerplatform
 ---
 
-<!-- From editor: I recommend changing "end user" to "user" in the title based on this entry in the style guide: https://styleguides.azurewebsites.net/Styleguide/Read?id=2700&topicid=35393 -->
-
-
-# End-user and maker support strategy
+# User and maker support strategy
 
 There are two types of support considerations to keep in mind—user support, to support users of production solutions, and maker support, to support makers developing solutions.
 
@@ -36,7 +33,7 @@ As you define your support process, it’s important to both review how makers a
 
 The following articles can help you understand how to get started with establishing a support strategy:
 
-- [End-user support](support-strategy-solutions.md)
+- [User support](support-strategy-solutions.md)
 - [Maker support](support-strategy-makers.md)
 - [Maturity levels](support-strategy-maturity.md)
 

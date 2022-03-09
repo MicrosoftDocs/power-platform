@@ -18,14 +18,6 @@ search.app:
   - Powerplatform
 ---
 
-
-<! -- From the editor: 
-- I don't see a section that describes "Power Platform Nurture team" in greater detail. 
-- Type 7 is listed as "Worldwide community support," or just "community support," but the section is titled "Power Platform community support." We should use consistent labeling.
-- Line 47 says "Each type of internal user support introduced above are described in further detail in this article," so I expected to only read about the first four types, but the article also includes the external types, so that line should be changed.
-- Line 101 says to watch for how recent the information is. Is that because it might be old and out of date, or too new to be tested? Maybe make this clearer. -->
-
-
 # Maker support
 
 The following section covers technical guidance and support for makers. Activities like building a community, training your makers and co-development assistance can significantly decrease the volume of formal support queries and increase user experience overall. Next to the activities outlined in this article, it's important to establish ongoing [training and learning opportunities](training-strategy.md) for your makers.
@@ -38,13 +30,13 @@ The diagram shows some common types of maker support that organizations employ s
 | --- | --- |
 | ![Type 1.](media/support-1.png "Type 1") | **Team-assisted support (internal)** is informal. Support occurs when team members learn from each other as they develop Power Platform solutions.  |
 | ![Type 2.](media/support-2.png "Type 2") | **Internal community support (internal)** can be organized informally and formally. It occurs when colleagues interact with each other via internal community channels. It’s often focused on makers solving specific issues as they develop an app or flow.   |
-| ![Type 3.](media/support-3.png  "Type 3") | **Power Platform Nurture team (internal)** is responsible for enabling Power Platform at the organization. This team may provide mentorship to makers and help them build apps/flows. It will also lead community programs and events, such as hackathons.   |
+| ![Type 3.](media/support-3.png  "Type 3") | **[Power Platform Nurture team (internal)](roles.md#microsoft-power-platform-nurture-team)** is responsible for enabling Power Platform at the organization. This team may provide mentorship to makers and help them build apps/flows. It will also lead community programs and events, such as hackathons.   |
 | ![Type 4.](media/support-4.png  "Type 4") | **Help desk support (internal)** handles formal support issues and requests.  |
-| ![Type 5.](media/support-5.png  "Type 5") | **Microsoft support (external)** includes support for users and admins. Makers and end users can raise questions through the [Power Apps](https://powerapps.microsoft.com/support/) or [Power Automate](https://flow.microsoft.com/support/) support page. Power Platform and Environment admins can [raise support tickets](/admin/support-overview) through [Power Platform admin center](https://aka.ms/ppac). Based on your [support plan](/admin/support-overview), different technical support and advisory services are available to you. |
+| ![Type 5.](media/support-5.png  "Type 5") | **Microsoft support (external)** includes support for users and admins. Makers and users can raise questions through the [Power Apps](https://powerapps.microsoft.com/support/) or [Power Automate](https://flow.microsoft.com/support/) support page. Power Platform and Environment admins can [raise support tickets](/admin/support-overview) through [Power Platform admin center](https://aka.ms/ppac). Based on your [support plan](/admin/support-overview), different technical support and advisory services are available to you. |
 | ![Type 6.](media/support-6.png  "Type 6") | **[Partner support (external)](https://powerapps.microsoft.com/partners/)** can complement your internal support offering, and provide training to your makers or handle complex queries from your makers. |
 | ![Type 7.](media/support-7.png  "Type 7") | **[Community support (external)](https://powerusers.microsoft.com/)** can help get answers directly from other users. |
 
-Each type of internal user support introduced above are described in further detail in this article.
+Each type of user support introduced above are described in further detail in this article.
 
 ## Team-assisted support
 
@@ -92,13 +84,13 @@ Refer to the comprehensive [Microsoft Power Platform documentation](/power-platf
 
 Many customers choose to work with partners on their Power Platform adoption, including support. This can include development assistance for makers, help in establishing a CoE, and technical support procedures, as well as training for your help desk and makers.
 
-## Power Platform community support
+## Community support
 
-Connect with peers and Power Platform technical experts through our worldwide [Power Platform community](https://powerusers.microsoft.com/). The community features forums for you to ask questions, trainings, blogs, and sample galleries to take inspiration from.  It can be powerful and exceedingly helpful. However, as is the case with any public forum, it's important to validate the advice and information posted on the forum.
+Connect with peers and Power Platform technical experts through our [Power Platform community](https://powerusers.microsoft.com/). The community features forums for you to ask questions, trainings, blogs, and sample galleries to take inspiration from.  It can be powerful and exceedingly helpful. However, as is the case with any public forum, it's important to validate the advice and information posted on the forum.
 
 The Power Platform community is vibrant. Every day, a great number of blog posts, articles, webinars, and videos are published. When relying on community information for troubleshooting, watch out for:
 
-- How recent the information is.
+- How recent the information is, it may be old and out of date.
 - Whether the situation and context of the solution found online truly fits your circumstance.
 - The credibility of the information being presented.
 
