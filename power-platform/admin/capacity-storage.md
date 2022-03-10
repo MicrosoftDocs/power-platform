@@ -4,9 +4,10 @@ description: Introducing a new storage model for Microsoft Dataverse.
 ms.date: 03/09/2022
 ms.reviewer: ""
 ms.topic: "quickstart"
-author: "jimholtz"
+author: cpdSeattle
 ms.subservice: admin
-ms.author: "jimholtz"
+ms.author: camdebay
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:
