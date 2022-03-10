@@ -3,10 +3,9 @@ title: Responding to DSR requests for Microsoft Dataverse customer data | Micros
 description: Walkthrough of how to respond to DSR requests for Microsoft Dataverse customer data
 author: jimholtz
 ms.reviewer: paulliew
-
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/11/2021
+ms.date: 02/24/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -19,7 +18,7 @@ search.app:
 ---
 
 # Responding to Data Subject Rights (DSR) requests for Microsoft Dataverse customer data
-
+<!-- 
 ## Introduction to DSR requests
 The European Union (EU) General Data Protection Regulation (GDPR) gives rights to people (known in the regulation as *data subjects*) to manage the personal data that's been collected by an employer or other type of agency or organization (known as the *data controller* or just *controller*). Personal data is defined very broadly under the GDPR as any data that relates to an identified or identifiable natural person. The GDPR gives data subjects the right to do the following, as it pertains to their personal data:
 
@@ -48,7 +47,7 @@ The following actions are covered in this article:
 * **Export** — Provide an electronic copy (in a machine-readable format) of personal data to the data subject.
 
 ## Dataverse customer data
-
+-->
 > [!IMPORTANT]
 > Applies to both Dataverse and the previous version of Dataverse.
 
