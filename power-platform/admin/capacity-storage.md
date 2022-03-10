@@ -1,9 +1,8 @@
 ---
 title: "New Microsoft Dataverse storage capacity  | MicrosoftDocs"
 description: Introducing a new storage model for Microsoft Dataverse.
-ms.date: 10/14/2021
+ms.date: 03/09/2022
 ms.reviewer: ""
-
 ms.topic: "quickstart"
 author: "jimholtz"
 ms.subservice: admin
@@ -94,6 +93,7 @@ Note the following features:
 |Download     | Select **Download** above the list of environments to download an Excel .CSV file with high-level storage information for each environment that the signed-in admin has permission to see in the Power Platform admin center.        |
 |Search     | Use **Search** to search by the environment name and the environment type.         |
 |Details  | See the next section for using the **Details** button (![Storage data details button.](media/storage-data-details-button.png "Storage data details button")) to see environment capacity analytics.   |
+| Default environment tip | The calculated storage usage in this view only displays what is **above** the default environment’s included capacity. Tool tips indicate how to view actual usage in the **Details** section. |
 
 > [!div class="mx-imgBorder"] 
 > ![Storage data per environment details button.](media/storage-data-per-environment2.png "Storage data per environment details button")
@@ -105,8 +105,10 @@ Note the following features:
 >   - Preview
 >   - Support
 >   - Developer
+> - The default environment has the following included storage capacity: 3GB Dataverse database capacity, 3GB Dataverse file capacity, and 1GB Dataverse log capacity.
 > - You can select an environment that's showing 0 GB, and then go to its environment capacity analytics page to see the actual consumption.
-> - For the default environment, the list view will only show the amount of capacity consumed beyond the free quota. Select the **Details** button (![Storage data details button.](media/storage-data-details-button.png "Storage data details button")) to see usage.
+> - For the default environment, the list view will only show the amount of capacity consumed beyond the included quota. Select the **Details** button (![Storage data details button.](media/storage-data-details-button.png "Storage data details button")) to see usage.
+> - The capacity check conducted prior to creating new environments will exclude the default environment's included storage capacity when calculating whether you have sufficient capacity to create a new environment.
 
 
 #### Environment storage capacity details
