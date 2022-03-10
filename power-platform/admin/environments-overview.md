@@ -2,10 +2,9 @@
 title: Environments overview | Microsoft Docs
 description: Learn about environments in Power Apps and how to use them
 author: jimholtz
-
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 10/08/2021
+ms.date: 03/09/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
