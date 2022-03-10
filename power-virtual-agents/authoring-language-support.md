@@ -38,7 +38,7 @@ You specify the target language when you first [create a bot](authoring-first-bo
 
 After your new bot has been created, you'll notice that it already has content in the target language, including system topics and template user topics.
 
-:::image type="content" source="media/authoring-language-support/language-topics-teams.png" alt-text="Topics in the target language.":::
+:::image type="content" source="media/authoring-language-support/language-topics.png" alt-text="Topics in the target language.":::
 
 You can now move on to creating new topics for your bot, authoring bot trigger phrases, and creating bot messages in your target language.
 

@@ -49,7 +49,7 @@ After you add the system fallback topic, you can open it by selecting **Go to fa
 
 You'll also see the **Fallback** topic listed in the topic list.
 
-:::image type="content" source="../media/authoring-system-fallback-topic/system-fallback-topic-list-teams.png" alt-text="Fallback in the topic list." border="false":::
+:::image type="content" source="../media/authoring-system-fallback-topic/system-fallback-topic-list.png" alt-text="Fallback in the topic list." border="false":::
 
 When you open this topic in the authoring canvas, you'll see that the default fallback topic contains two nodes: a **Message** node that rephrases the user input and an **Escalate** node that redirects to a live agent.
 
