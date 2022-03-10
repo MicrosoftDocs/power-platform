@@ -47,7 +47,7 @@ A new option will appear on the **Settings** pane under the **System fallback** 
 
 After you add the system fallback topic, you can open it by selecting **Go to fallback topic** on the **Settings** pane.
 
-You'll also see the **Fallback** topic listed under **System Topics** in the topic list.
+You'll also see the **Fallback** topic listed in the topic list.
 
 :::image type="content" source="../media/authoring-system-fallback-topic/system-fallback-topic-list-teams.png" alt-text="Fallback in the topic list." border="false":::
 
