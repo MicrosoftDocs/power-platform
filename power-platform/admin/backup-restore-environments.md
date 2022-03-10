@@ -4,7 +4,7 @@ description: Covers how to back up and restore environments
 services: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/02/2022
+ms.date: 03/10/2022
 ms.subservice: admin
 author: ChrisGarty
 ms.author: cgarty
@@ -83,6 +83,7 @@ About **manual backups**:
   > [!div class="mx-imgBorder"] 
   > ![Backup expiration date.](media/restore-backup-manual-expiration.png "Backup expiration date")
   
+- The label of the created backup will reflect the restore point timestamp. The restore point timestamp will be the closest available time to the time when the manual backup is created. The timestamp label can't be edited.
 - You are not limited in the number of manual backups you can make.
 - Manual backups do not count against your storage limits.  
 - You must restore an environment to the same region in which it was backed up.
