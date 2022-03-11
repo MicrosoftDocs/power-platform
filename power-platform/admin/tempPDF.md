@@ -1,3 +1,3 @@
 [!include[](./self-service-analytics.md)]
-[!include[](./data-integrator.md)]
+[!include[](./build-custom-reports.md)]
 
