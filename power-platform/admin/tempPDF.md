@@ -1,3 +1,3 @@
-[!include[](./data-integration-gdpr-dsr-guide.md)]
+[!include[](./self-service-analytics.md)]
 [!include[](./data-integrator.md)]
-[!include[](./data-integrator-error-management.md)]
+
