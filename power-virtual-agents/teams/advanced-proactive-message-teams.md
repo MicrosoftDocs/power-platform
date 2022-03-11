@@ -24,11 +24,6 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](../advanced-proactive-message.md)
 > - [Power Virtual Agents app in Microsoft Teams](advanced-proactive-message-teams.md)
 
-> [!IMPORTANT]
-> This is a preview feature.
->
-> Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and [provide feedback](https://powerusers.microsoft.com/t5/Forums/ct-p/pva_forums).
-
 After you've [published your bot](publication-fundamentals-publish-channels-teams.md) and [made the bot available to end users in Microsoft Teams](publication-add-bot-to-microsoft-teams-teams.md), you can notify users ("recipients") in Microsoft Teams with proactive messages and [adaptive cards](https://adaptivecards.io). Proactive messages use Power Automate flows to deliver their content, and are useful in many scenarios, including:
 
 - Letting a recipient know that their earlier request has been completed. For example, the user's time-off request has been approved.

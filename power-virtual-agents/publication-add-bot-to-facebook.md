@@ -7,14 +7,13 @@ ms.date: 01/25/2022
 ms.topic: article
 author: iaanw
 ms.author: iawilt
+ms.reviewer: micchow
 manager: shellyha
 ms.custom: "publication, authoring, ceX"
 ms.collection: virtual-agent
 ---
 
 # Add bot to Facebook
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 You can add your bot to Facebook Messenger to use the Facebook experience to engage with your end users.
 
