@@ -38,8 +38,6 @@ The Data Integrator (for Admins) also supports process-based integration scenari
 
 The Prospect to Cash integration enables sellers to handle and monitor their sales processes with the strengths from Dynamics 365 Sales, while all aspects of fulfillment and invoicing happen using the rich functionality in Finance and Operations. With Microsoft Dynamics 365 Prospect to Cash integration, you get the combined power from both systems. 
 
-See the video: [Prospect to cash integration](https://www.youtube.com/watch?v=AVV9x5x-XCg)
-
 For more information about the Prospect to Cash integration, see the documentation on the [Prospect to Cash solution](/dynamics365/unified-operations/supply-chain/sales-marketing/prospect-to-cash).
 
 We also support [Field Service integration](/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order)
