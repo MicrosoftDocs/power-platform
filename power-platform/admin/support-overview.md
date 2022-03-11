@@ -338,6 +338,6 @@ Yes, if you are eligible for these benefits and have activated your support acce
 
 
 ### See also
-[Video: How to get the best support for Power Apps, Power Automate, and Dynamics 365](https://youtu.be/An3IfFdZlT8)
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
