@@ -43,12 +43,12 @@ For bot and topic limits, see the [Quotas, limits, and configuration values](../
 
 When you create a bot, a number of topics are automatically created.
 
-:::image type="content" source="../media/authoring-create-edit-topics/topics-system-teams.png" alt-text="Four lesson topics and a number of system topics are in the Topics list.":::
+:::image type="content" source="../media/authoring-create-edit-topics/topics-system.png" alt-text="Four lesson topics and a number of system topics are in the Topics list.":::
   
 These topics fall into two categories:
   
-- Four pre-populated **User Topics**, titled as lessons. These [lesson topics](authoring-template-topics-teams.md) can be used to help understand simple to complex ways of using nodes to create bot conversations. You can edit these topics in the same manner as for topics you create. You can also choose to delete them entirely.
-- A number of **System Topics**. These are pre-populated topics that you are likely to need during a bot conversation. You can't delete, disable, or edit the trigger phrases of these topics, but you can customize the nodes on the authoring canvas. We recommend not customizing these topics until you are comfortable with creating an end-to-end bot conversation.
+- Four pre-populated user topics, titled as lessons. These [lesson topics](authoring-template-topics-teams.md) can be used to help understand simple to complex ways of using nodes to create bot conversations. You can edit these topics in the same manner as for topics you create. You can also choose to delete them entirely.
+- A number of system topics. These are pre-populated topics that you are likely to need during a bot conversation. You can't delete, disable, or edit the trigger phrases of these topics, but you can customize the nodes on the authoring canvas. We recommend not customizing these topics until you are comfortable with creating an end-to-end bot conversation.
 
 You can edit both of these topic types in the same manner as for topics you create but you can't delete them.
 
@@ -60,7 +60,7 @@ You can edit both of these topic types in the same manner as for topics you crea
 
 1. On the topics page, select **New topic** to open the authoring canvas for an empty topic.
 
-   :::image type="content" source="../media/authoring-create-edit-topics/topics-new.png" alt-text="Select New topic at the top of the Topics page." border="false":::
+   :::image type="content" source="../media/authoring-create-edit-topics/topics-new-teams.png" alt-text="Select New topic at the top of the Topics page." border="false":::
 
 1. When you enter the authoring canvas, the **Trigger phrases** pane will automatically open for you. You can also open the pane by selecting **Trigger phrases**.
 
@@ -132,19 +132,19 @@ If the node you are adding is the last in a topic, you can also add a **Go to an
 
     :::image type="content" source="../media/authoring-create-edit-topics/topics-question-teams.png" alt-text="Add a new question mode." border="false":::
 
-2. Enter the question phrase in the first text box, **Ask a question**.
+1. Enter the question phrase in the first text box, **Ask a question**.
 
-3. Choose from several options for the user's response in the **Identify** field.
+1. Choose from several options for the user's response in the **Identify** field.
 
    These options determine what the bot should be listening for in the user's response. For example, they could be multiple choice options, a number, or a specific string. To understand more about the different options, see [Use entities in a conversation](advanced-entities-slot-filling-teams.md).
 
-4. Depending on what you choose in the **Identify** field, you can enter what options the user should have.
+1. Depending on what you choose in the **Identify** field, you can enter what options the user should have.
 
    For example, if you select **Multiple choice options**, you can then enter the options the user can specify in the **Options for user** field. Each option is presented as a multiple choice button to the user, but users can also type in their answer in the bot.
 
    The conversation editor creates separate paths in the conversation, depending on the customer's response. The conversation path leads the customer to the appropriate path for each user response. You can add additional nodes to create branching logic, and specify what the bot should respond with for each variable.
 
-5. You can [save the user response in a variable](authoring-variables-teams.md) to be used later.
+1. You can [save the user response in a variable](authoring-variables-teams.md) to be used later.
 
 > [!TIP]
 > You can define synonyms for each option. This can help the bot to determine the correct option in case it isn't clear what the user's response should be mapped to.

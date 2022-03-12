@@ -61,7 +61,7 @@ In addition to this guide, you can also [download and use templates to help you 
 1. After a few minutes, you'll land on the home page and be able to interact with the bot in read-only mode. You can't save any edits during this time, but you can:
     - explore the overall user interface
     - look at topics
-    - experiment with the preloaded User Topics and System Topics
+    - experiment with the preloaded user topics and system topics
     - interact with your bot using the Test Canvas
 
     During this time, you can also review additional documentation on authoring topics in your bot. See [Authoring key concepts](authoring-fundamentals.md) for more information.
