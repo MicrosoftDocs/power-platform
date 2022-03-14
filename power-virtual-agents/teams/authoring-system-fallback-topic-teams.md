@@ -47,15 +47,15 @@ A new option will appear on the **Settings** pane under the **System fallback** 
 
 After you add the system fallback topic, you can open it by selecting **Go to fallback topic** on the **Settings** pane.
 
-You'll also see the **Fallback** topic listed under **System Topics** in the topic list.
+You'll also see the **Fallback** topic listed in the topic list.
 
-:::image type="content" source="../media/authoring-system-fallback-topic/system-fallback-topic-list-teams.png" alt-text="Fallback in the topic list." border="false":::
+:::image type="content" source="../media/authoring-system-fallback-topic/system-fallback-topic-list.png" alt-text="Fallback in the topic list." border="false":::
 
 When you open this topic in the authoring canvas, you'll see that the default fallback topic contains two nodes: a **Message** node that rephrases the user input and an **Escalate** node that redirects to a live agent.
 
 :::image type="content" source="../media/authoring-system-fallback-topic/system-fallback-default-content-teams.png" alt-text="Fallback topic default content." border="false":::
 
-You can customize this topic as with any other [system topic](authoring-create-edit-topics-teams.md). You can also use the *UnrecognizedTriggerPhrase* variable that stores the user input the bot couldn't understand. For example, you can use the variable as an input and pass it to a [Power Automate flow](advanced-flow-teams.md) or [Bot Framework skill](advanced-use-skills-teams.md).
+You can customize this topic as with any other [system topic](authoring-create-edit-topics-teams.md). You can also use the _UnrecognizedTriggerPhrase_ variable that stores the user input the bot couldn't understand. For example, you can use the variable as an input and pass it to a [Power Automate flow](advanced-flow-teams.md) or [Bot Framework skill](advanced-use-skills-teams.md).
 
 > [!NOTE]
 > The system fallback topic doesn't have a trigger phrase.

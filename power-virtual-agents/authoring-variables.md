@@ -1,20 +1,19 @@
 ---
-title: "Work with chatbot variables - Preview"
+title: "Work with chatbot variables"
 description: "Use variables to use custom and prebuilt entities to allow for customized conversations in your bot."
 keywords: "PVA"
-ms.date: 11/02/2021
-
+ms.date: 02/01/2022
+ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
 ms.author: iawilt
+ms.reviewer: clmori
 manager: shellyha
 ms.custom: authoring, ceX
 ms.collection: virtual-agent
 ---
 
-# Use variables (Preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+# Use variables
 
 Select the version of Power Virtual Agents you're using here:
 
@@ -22,11 +21,6 @@ Select the version of Power Virtual Agents you're using here:
 >
 > - [Power Virtual Agents web app](authoring-variables.md)
 > - [Power Virtual Agents app in Microsoft Teams](teams/authoring-variables-teams.md)
-
-> [!IMPORTANT]
-> This is a preview feature.
->
-> Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and [provide feedback](https://powerusers.microsoft.com/t5/Forums/ct-p/pva_forums).
 
 Variables let you save responses from your customers in a conversation with your bot so that you can reuse them later in the conversation.
 
