@@ -47,4 +47,4 @@ Get-AdminPowerAppEnvironment
 ```
 
 ## Limitations of service principals
-Currently, service principal authentication works for environment management, tenant settings, and Power Apps management.  Any cmdlets related to Flow are not supported for this kind of authentication.  This support will be added in the future.
+Currently, service principal authentication works for environment management, tenant settings, and Power Apps management.  Cmdlets related to Flow are supported for service principal authentication in situations where a license is not required, as it is not possible to assign licenses to service principal identities in Azure Active Directory.

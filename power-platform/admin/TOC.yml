@@ -529,8 +529,10 @@
         href: programmability-extensibility-overview.md
       - name: Versioning and support
         href: programmability-versioning-support.md
-      - name: Authentication
+      - name: Authentication - legacy
         href: programmability-authentication.md
+      - name: Authentication (preview)
+        href: programmability-authentication-v2.md
       - name: Tutorials
         items:
         - name: "Preview: Create a daily capacity report"

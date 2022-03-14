@@ -59,7 +59,7 @@ Next, we'll need to initialize five variables as detailed below:
 > [!div class="mx-imgBorder"] 
 > ![Create five variables.](media/capacity3.png "Create five variables")
 
-Next we will authenticate with Microsoft Azure Active Directory (Azure AD) and retrieve a token for calling the Power Platform API.  If you haven’t completed your Azure AD setup, see [Authentication](programmability-authentication.md).
+Next we will authenticate with Microsoft Azure Active Directory (Azure AD) and retrieve a token for calling the Power Platform API.  If you haven’t completed your Azure AD setup, see [Authentication - legacy](programmability-authentication.md).
 
 In this tutorial, we are using a key vault to store our service principal secret value.  In this way, an IT administrator can make this value securely available for your workflow.  This is then populated in the POST call to Azure AD to retrieve the token as shown:
 

@@ -6,7 +6,7 @@ ms.reviewer: jimholtz
 
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 03/19/2021
+ms.date: 03/09/2022
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -19,13 +19,11 @@ search.app:
 This article provides an overview of the versioning and breaking change policies for the various programmability tools.
 
 ## Support and deprecation information
-The Power Platform API is the first tool to receive new versions.  As new versions of the REST APIs are released, earlier versions will be retired. Microsoft will declare a version deprecated at least six months before it retires an API endpoint.
+The Power Platform API is the first programmability tool to receive new versions and features.  As a new version of the REST APIs is released, earlier versions will be retired. Microsoft will declare a version deprecated at least 12 months before it retires an API endpoint.  When a version is deprecated, it is still supported as-is.  If you face an issue with that version, we will request that you move to the currently generally available version.  When a version is retired, it is not supported and will soon be shut off.
 
-By incrementing the version number of the API (for example, from 2020-10-01 to 2021-04-01), Microsoft announces that the lowest version (in this example, 2020-10-01) is immediately deprecated and will no longer be supported 12 months after the announcement. However, Microsoft might make exceptions to this policy for service health and security issues.
+By incrementing the version number of the API (for example, from 2021-10-01 to 2022-04-01), Microsoft announces that the prior version (in this example, 2021-10-01) is immediately deprecated and will be retired 12 months after the announcement. However, Microsoft might make exceptions to this policy for service health and security issues.
 
-In the future, a new header will be introduced on all API responses that indicate a version is unrecognized (decomissioned) or deprecated.  
-
-For PowerShell cmdlets, incremental versions will be made available to resolve minor bug fixes.  Major versions will be incremented to match the new API versions that occur twice per calendar year.
+For PowerShell cmdlets, incremental versions will be made available to resolve minor bug fixes.  Major versions will be incremented to match the new API versions that occur.
 
 ## Compatible and breaking changes
 Microsoft will provide details of programmability changes in the [release plans](/dynamics365/release-plans/#microsoft-power-platform). If the changes are non-breaking in nature, the API version will remain the same, and the PowerShell version will receive a minor version increment. If the changes are breaking in nature, Microsoft will increment the API version and PowerShell major version. 
@@ -45,7 +43,13 @@ Here are examples of non-breaking changes:
 - Error codes are changed.
 - The order of properties in requests or responses is changed.
 
-## Next steps
-Now that you understand the versioning and support strategy, let's walk through how to authenticate with Microsoft Power Platform.
+## Available versions
 
-- [Authentication](programmability-authentication.md)
+| Version | Reference | Deprecation date | Decommission date
+| --- | --- | --- | --- |
+| 2020-10-01 | [2020-10-01 Ref](list-environments.md) | N/A | N/A |
+
+## Next steps
+Now that you understand the versioning and support strategy, let's walk through how to authenticate with Microsoft Power Platform API.
+
+- [Authentication (preview)](programmability-authentication-v2.md)

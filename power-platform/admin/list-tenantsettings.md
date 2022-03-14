@@ -23,7 +23,7 @@ You can list settings applicable to your tenant.
 
 ## Authentication
 
-For more information about permissions and how to select them, see [Authentication](programmability-authentication.md).
+For more information about permissions and how to select them, see [Authentication - legacy](programmability-authentication.md).
 
 ## HTTP request
 
