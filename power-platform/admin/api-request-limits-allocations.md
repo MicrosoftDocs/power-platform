@@ -4,7 +4,7 @@ description: Requests limits and allocations
 author: jimholtz
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/21/2022
+ms.date: 03/14/2022
 ms.subservice: admin
 ms.author: jimholtz
 ms.reviewer: jimholtz
