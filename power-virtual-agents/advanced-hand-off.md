@@ -89,7 +89,7 @@ The topic will start the transfer to a live agent when this node is reached. You
 
 ## Contextual variables available upon hand-off
 
-Beyond providing an automated way for a conversation to be ported into an engagement hub, it's important to ensure that the best agent for a specific problem is engaged. To help route conversations to the most appropriate live agen there are context variables that are also passed to the engagement hub.
+Beyond providing an automated way for a conversation to be ported into an engagement hub, it's important to ensure that the best agent for a specific problem is engaged. To help route conversations to the most appropriate live agent there are context variables that are also passed to the engagement hub.
 
 You can use these variables to automatically determine where the conversation should be routed. For example, you may have added **Transfer to agent** nodes to several different topics, and you want to route conversations related to certain topics to specific agents.
 
