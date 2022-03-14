@@ -53,7 +53,7 @@ These limits apply to the Power Virtual Agents web app and the Power Virtual Age
 
 | Feature                             | Standard subscription              | Teams (select Microsoft 365 subscriptions)                                                                                                                   |
 | ----------------------------------- | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Sessions                            | N/A                                | Chat sessions are unlimited per tenant/month, but a service limit of 10 sessions per user/24 hours across all bots in a tenant will be enforced.<sup>1</sup> |
+| Sessions                            | N/A                                | Chat sessions are unlimited per tenant every month, but a service limit of 10 sessions per user every 24 hours across all bots in a tenant will be enforced.<sup>1</sup> |
 | Power Platform requests<sup>2</sup> | 250,000 every 24 hours<sup>3</sup> | 2,000 every 24 hours                                                                                                                                         |
 
 <sup>1</sup> Power Virtual Agents [sessions](analytics-sessions.md) that are included with [Microsoft 365 subscriptions](requirements-licensing-subscriptions.md#power-virtual-agents-for-microsoft-teams-plan) aren't pooled.  
