@@ -4,7 +4,7 @@ description: Requests limits and allocations
 author: jimholtz
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/21/2022
+ms.date: 03/14/2022
 ms.subservice: admin
 ms.author: jimholtz
 ms.reviewer: jimholtz
@@ -100,9 +100,9 @@ Any possible high usage enforcement will not happen until six months after Power
 
 Microsoft reserves the right to enforce  limits for overages. If a customer encounters high usage enforcement, they can expect some form of throttling. Customers can purchase additional capacity to avoid high usage enforcement or move their environment to [pay-as-you-go](pay-as-you-go-overview.md) and pay for actual usage above daily limits.  
 
-## Power Apps and Power Automate capacity add-on
+## Power Platform Request capacity add-on
 
-Customers that observe in reporting that they are frequently using more requests than limits can avoid high usage enforcement by purchasing the Power Apps and Power Automate capacity add-on. This add-on allows customers to increase the limits for specific high usage licensed users or high usage non-licensed users. Each capacity add-on raises the request  by another 50,000 per 24 hours. Multiple capacity add-ons can be assigned to increase limits.
+Customers that observe in reporting that they are frequently using more requests than limits can avoid high usage enforcement by purchasing the Power Platform Request capacity add-on. This add-on allows customers to increase the limits for specific high usage licensed users or high usage non-licensed users. Each capacity add-on raises the request limit by another 50,000 per 24 hours. Multiple capacity add-ons can be assigned to increase limits.
 
 > [!NOTE]
 > Currently, capacity add-ons cannot be assigned to users (including application, administrative, and non-interactive users). The functionality for assignment of capacity add-ons will be aligned to the timing of high usage enforcement.
