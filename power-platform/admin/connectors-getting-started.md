@@ -1,6 +1,6 @@
 ---
 title: Programmability and Extensibility - Power Platform for Admins management connectors - Getting started | Microsoft Docs
-description: Power Platform API getting started
+description: Get started with Power Platform for Admins management connectors
 author: laneswenka
 ms.reviewer: jimholtz
 

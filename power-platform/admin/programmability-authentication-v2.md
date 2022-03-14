@@ -1,6 +1,6 @@
 ---
 title: Programmability and Extensibility - Authentication (preview) | Microsoft Docs
-description: Overview of authentication for Power Platform programmability tools
+description: Overview of Azure Active Directory (Azure AD) setup for calling Power Platform API and other platform programmability tools
 author: laneswenka
 ms.reviewer: jimholtz
 
@@ -39,7 +39,7 @@ From here, you must select the permissions you require. These are grouped by [**
 >
 >For service principal identities, application permissions are not used.  Instead service principals are treated as Power Platform Administrators today and must be registered by following [Powershell - Create service principal](powershell-create-service-principal.md).  
 
-After the required permissions are added to the application, select **Grant admin consent** to complete the setup.  This is necessary for instances where you want to allow users to access your app right away, instead of requiring an interactive consent experience.  If you can support interactive consent, we recommend following the [Microsoft identity platform and OAuth 2.0 authorization code flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-auth-code-flow).
+After the required permissions are added to the application, select **Grant admin consent** to complete the setup.  This is necessary for instances where you want to allow users to access your app right away, instead of requiring an interactive consent experience.  If you can support interactive consent, we recommend following the [Microsoft identity platform and OAuth 2.0 authorization code flow](https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-auth-code-flow).
 
 ### Configure Public Client (optional)
 If your app will require reading and writing resources on behalf of a user, you will need to enable the Public Client setting.  This is the only way that Azure AD will accept username and password properties in the body of your token request.  Also note, that if you plan to use this feature it will not work for accounts that have multi-factor authentication enabled.  
