@@ -13,6 +13,10 @@ ms.custom: "cex"
 ms.collection: virtualagent
 ---
 
+
+<!-- See edit question in line 93. -->
+
+
 # Extend your bot with Bot Framework Composer
 
 You can enhance your bot by developing custom dialogs with [Bot Framework Composer](/composer/) and then adding them to your Power Virtual Agents bot.
@@ -30,10 +34,10 @@ For example, you could create event-driven dynamic dialogs to handle interruptio
 
 Composer lets you use a variety of prebuilt functions and expressions and define multiple variations of a phrase for the bot to select at random at runtime.
 
-Custom dialogs added with Bot Framework Composer are deployed, hosted, and executed together with the rest of Power Virtual Agents bot content, and do not require any additional Azure hosting.
+Custom dialogs added with Bot Framework Composer are deployed, hosted, and executed together with the rest of Power Virtual Agents bot content, and don't require any additional Azure hosting.
 
 > [!IMPORTANT]
-> Bot Framework Composer integration is not available to users who only have the [Teams Power Virtual Agents license](requirements-licensing-subscriptions.md). You must have a [trial](sign-up-individual.md) or full Power Virtual Agents license.
+> Bot Framework Composer integration isn't available to users who only have the [Teams Power Virtual Agents license](requirements-licensing-subscriptions.md). You must have a [trial](sign-up-individual.md) or full Power Virtual Agents license.
 
 ## Prerequisites
 
@@ -51,13 +55,13 @@ Custom dialogs added with Bot Framework Composer are deployed, hosted, and execu
 If you already have Composer installed, Power Virtual Agents will try to open your bot in Composer.
 
 > [!IMPORTANT]
-> You should always open Bot Framework Composer from within Power Virtual Agents if you plan to create content for Power Virtual Agents bots. This will ensure that Composer has all the necessary plugins needed for integration with Power Virtual Agents.
+> You should always open Bot Framework Composer from within Power Virtual Agents if you plan to create content for Power Virtual Agents bots. This will ensure that Composer has all the necessary plug-ins needed for integration with Power Virtual Agents.
 
 If you don't have Composer installed, you can download it from the **download Composer** link. This link takes you to a **Download confirmation** window where you can also learn more about Composer.
 
 :::image type="content" source="media/advanced-bot-framework-composer/composer-not-present.png" alt-text="Screenshot of the Power Virtual Agents Composer window indicating that Composer is not installed.":::
 
-During installation, make sure to unselect the **Run Bot Framework Composer** checkbox, since you will need to open Composer application from within Power Virtual Agents to use it with your bot.
+During installation, make sure to clear the **Run Bot Framework Composer** checkbox, since you'll need to open Composer from within Power Virtual Agents to use it with your bot.
 
 :::image type="content" source="media/advanced-bot-framework-composer/Composer_InstallWizardFinish.png" alt-text="Bot Framework Composer Install Complete.":::
 
@@ -75,7 +79,7 @@ Your Power Virtual Agents bot is now open in Composer and you are ready to start
 :::image type="content" source="media/advanced-bot-framework-composer/ComposerUI_Open_initialView.png" alt-text="Bot Framework Composer Project Initial View.":::
 
 > [!NOTE]
-> In some cases, Power Virtual Agents might be unable to launch Composer automatically. However, you can launch it manually from your browser by selecting **Copy Link** to copy and paste the link to the Composer in your web browser.
+> In some cases, Power Virtual Agents might be unable to launch Composer automatically. However, you can launch it manually from your browser by selecting **Copy Link** to copy and paste the link to Composer in your web browser.
 
 ## Guidelines for creating bot content for Power Virtual Agents in Composer
 
@@ -85,15 +89,18 @@ The **main (root) dialog** in your **Composer project** is the same as the proje
 
 :::image type="content" source="media/advanced-bot-framework-composer/Gd_mainDialog_initial.png" alt-text="Bot Framework Composer main (root) dialog":::
 
+
+<!-- editor asks: in the sentence below, is "there are few" correct, as in not many, or should it be "there are a few," meaning some? -->
+
 There are few key guidelines to follow when using Composer to create your bot content for Power Virtual Agents.
 
 - The Power Virtual Agents topics from your bot will be displayed in Composer. You can't edit these Power Virtual Agents topics in Composer; selecting them will open these topics in Power Virtual Agents for editing.
 
-:::image type="content" source="media/advanced-bot-framework-composer/Gd_PVA_Topics.png" alt-text="Bot Framework Composer - Power Virtual Agents topics.":::
+  :::image type="content" source="media/advanced-bot-framework-composer/Gd_PVA_Topics.png" alt-text="Bot Framework Composer - Power Virtual Agents topics.":::
 
-- Use the **Begin a Power Virtual Agents Topic** to call Power Virtual Agents topics in Composer.
+- Use **Begin a Power Virtual Agents Topic** to call Power Virtual Agents topics in Composer.
 
-:::image type="content" source="media/advanced-bot-framework-composer/Gd_call_PVA_Topic.png" alt-text="Bot Framework Composer - call Power Virtual Agents topics.":::
+  :::image type="content" source="media/advanced-bot-framework-composer/Gd_call_PVA_Topic.png" alt-text="Bot Framework Composer - call Power Virtual Agents topics.":::
 
 - You can add new **Bot Framework triggers** of any kind to your **main (root) dialog**. You can use **Send a response** and **Ask a question** in the new **triggers** added to **main (root) dialog**.
 
@@ -109,7 +116,7 @@ There are few key guidelines to follow when using Composer to create your bot co
 
 - You can capture telemetry in Composer dialogs and triggers and use [Application Insights](/azure/azure-monitor/app/app-insights-overview) to analyze it with [Kusto queries for Adaptive dialogs](/azure/bot-service/bot-builder-telemetry-analytics-queries?view=azure-bot-service-4.0&preserve-view=true#adaptive-dialogs-started-and-completed). Refer to the [Capture telemetry with Application Insights](#capture-telemetry-with-application-insights) section for more information.
 
-For a deep-dive on Bot Framework Composer **dialogs**, **events**, **triggers** and how to create advanced bot content with Bot Framework, refer to the following resources:
+For a deep-dive on Bot Framework Composer **dialogs**, **events**, **triggers**, and how to create advanced bot content with Bot Framework, refer to the following resources:
 
 - [Bot Framework Composer dialogs](/composer/concept-dialog)
 - [Bot Framework Composer events and triggers](/composer/concept-events-and-trigger)
@@ -117,7 +124,7 @@ For a deep-dive on Bot Framework Composer **dialogs**, **events**, **triggers** 
 - [Conversation flow and memory](/composer/concept-memory)
 
 > [!NOTE]
-> Selecting **Publish** in Composer makes the changes available for testing, but does not automatically Publish your Power Virtual Agents bot.  
+> Selecting **Publish** in Composer makes the changes available for testing, but does not automatically publish your Power Virtual Agents bot.  
 >
 > Use the [Publish](publication-fundamentals-publish-channels.md) feature in Power Virtual Agents to publish your bot changes to channels.
 
@@ -126,31 +133,31 @@ For a deep-dive on Bot Framework Composer **dialogs**, **events**, **triggers** 
 The following Bot Framework Composer features are not supported with Power Virtual Agents:
 
 - LUIS Recognizer  
-Default Recognizer in Composer is set to Power Virtual Agents NLU
+Default Recognizer in Composer is set to Power Virtual Agents NLU.
 
 - Bot Framework Orchestrator  
-Bot Framework Orchestrator is not supported in Composer for Power Virtual Agents
+Bot Framework Orchestrator is not supported in Composer for Power Virtual Agents.
 
 - Custom recognizer  
-Custom recognizer is not supported in Composer for Power Virtual Agents
+Custom recognizer is not supported in Composer for Power Virtual Agents.
 
 - Bot skills  
-Cannot invoke Bot skills in Composer content meant for Power Virtual Agents
+Cannot invoke Bot skills in Composer content meant for Power Virtual Agents.
 
 - QnA Maker  
-This feature is not available in Composer for Power Virtual Agents
+This feature is not available in Composer for Power Virtual Agents.
 
 - OAuth Login and User Sign Out  
-These types of actions are not supported in Composer for Power Virtual Agents
+These types of actions are not supported in Composer for Power Virtual Agents.
 
 - Dialog Inputs and Outputs  
-Dialog Inputs and Outputs are not supported in Composer for Power Virtual Agents
+Dialog Inputs and Outputs are not supported in Composer for Power Virtual Agents.
 
 - Entity detection in trigger phrases in Composer  
-Cannot use `# getUserName  - my name is {username=userName}` in Composer
+Cannot use `# getUserName  - my name is {username=userName}` in Composer.
 
 - Testing in Bot Framework Emulator  
-All Composer content should be published and then tested in Power Virtual Agents  
+All Composer content should be published and then tested in Power Virtual Agents.  
 
 ## Use and update Power Virtual Agents variables in Bot Framework Composer
 
@@ -202,7 +209,7 @@ To learn more on how to set up and use Application Insights and create queries f
 ## Testing Bot Framework content with Power Virtual Agents
 
 > [!NOTE]
-> Selecting **Publish** in Composer makes the changes available for testing, but does not automatically Publish your Power Virtual Agents bot.  
+> Selecting **Publish** in Composer makes the changes available for testing, but does not automatically publish your Power Virtual Agents bot.  
 >
 > Use the [Publish](publication-fundamentals-publish-channels.md) feature in Power Virtual Agents to publish your bot changes to channels.
 
@@ -237,7 +244,7 @@ If you encounter issues developing in Bot Framework Composer, you can:
 
 To troubleshoot your bot in Power Virtual Agents, use the [topic checker](authoring-topic-management.md#topic-errors).
 
-## Learn More
+## Learn more
 
 To learn more about developing in Bot Framework Composer, see these resources:
 
