@@ -17,7 +17,7 @@ search.app:
   - Flow
 ---
 
-# Preview: Set up Microsoft Power Platform self-service analytics to export Power Platform inventory and usage data 
+# Preview: Microsoft Power Platform self-service analytics schema definition
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
