@@ -14,7 +14,7 @@ ms.collection: virtualagent
 ---
 
 
-<!-- See edit question in line 93. -->
+<!-- See edit question in line 93. Also, a couple of links go to 404 pages and might need updating: the ones in lines 122 and 252. -->
 
 
 # Extend your bot with Bot Framework Composer
