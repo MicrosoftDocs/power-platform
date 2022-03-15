@@ -3,7 +3,7 @@
   "info": {
     "title": "Microsoft Power Platform REST API",
     "description": "Unified API for all administrative capabilities in Microsoft Power Platform",
-    "version": "2021-10-01-preview"
+    "version": "2022-03-01-preview"
   },
   "host": "api.powerplatform.com",
   "schemes": [
@@ -28,7 +28,7 @@
             "description": "The API version",
             "required": true,
             "type": "string",
-            "default": "2021-10-01-preview"
+            "default": "2022-03-01-preview"
           }
         ],
         "responses": {
@@ -92,7 +92,7 @@
             "description": "The API version",
             "required": true,
             "type": "string",
-            "default": "2021-10-01-preview"
+            "default": "2022-03-01-preview"
           }
         ],
         "responses": {
@@ -149,7 +149,7 @@
             "description": "The API version",
             "required": true,
             "type": "string",
-            "default": "2021-10-01-preview"
+            "default": "2022-03-01-preview"
           },
           {
             "in": "body",
@@ -215,7 +215,7 @@
             "description": "The API version",
             "required": true,
             "type": "string",
-            "default": "2021-10-01-preview"
+            "default": "2022-03-01-preview"
           }
         ],
         "responses": {
