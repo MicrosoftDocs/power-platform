@@ -259,7 +259,7 @@ Update the custom canvas page where the bot is located to intercept the login ca
             const directLine = window.WebChat.createDirectLine({
                 token
             });
-            var userID = clientApplication.account ? .accountIdentifier != null ?
+            var userID = clientApplication.account?.accountIdentifier != null ?
                 ("Your-customized-prefix-max-20-characters" + clientApplication.account.accountIdentifier).substr(0, 64) :
                 (Math.random().toString() + Date.now().toString()).substr(0, 64); // Make sure this will not exceed 64 characters 
             const store = WebChat.createStore({}, ({
