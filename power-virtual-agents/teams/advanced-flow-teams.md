@@ -22,7 +22,7 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](../advanced-flow.md)
 > - [Power Virtual Agents app in Microsoft Teams](advanced-flow-teams.md)
 
-Enable your bot to perform an action by calling a Microsoft Power Automate flow. Flows can help you automate activities, or call backend systems. For example, you can use flows to send messages to a Teams channel, or access files in a SharePoint folder.
+Enable your bot to perform an action by calling a Microsoft Power Automate flow. Flows can help you automate activities, or call back-end systems. For example, you can use flows to send messages to a Teams channel, or access files in a SharePoint folder.
 
 > [!IMPORTANT]
 > To use flows within Power Virtual Agents, they must meet the following requirements:
@@ -78,7 +78,7 @@ For example, you can select **Text** and **Number** to add the following input p
 
 ### Output parameters
 
-To return output parameters to the bot that can be a `string`, `number`, or a `boolean`, select **Add an output** option in **Power Virtual Agents response** user interface, and then select the type for the output.
+To return output parameters to the bot that can be a `string`, `number`, or a `boolean`, select the **Add an output** option in the **Power Virtual Agents response** user interface, and then select the type for the output.
 
 For example, you can select **Text** and **Number** to add the following output parameters to the flow and assign return values for them.
 
@@ -101,9 +101,9 @@ In this flow, we're going to provide a special message and email when someone as
 
 1. Create a new topic with the trigger phrase "**Is there a conference room available?**".
 
-1. Add a **Question** node that asks "**How many people are in the meeting?**". By default, it will be set to accept ("identify") multiple choice options - change that to **Number**. At the bottom, click on the variable called "**Var**" and change it to "**Numberguests**".
+1. Add a **Question** node that asks "**How many people are in the meeting?**". By default, it will be set to accept ("identify") multiple choice options—change that to **Number**. At the bottom, select the variable called "**Var**" and change it to "**Numberguests**".
 
-1. Add a **Question** node that asks "**Do you have any requirements**". By default, it will be set to accept ("identify") multiple choice options - change that to **User's entire response**. At the bottom, click on the variable called "**Var**" and change it to "**Requirements**".
+1. Add a **Question** node that asks "**Do you have any requirements**". By default, it will be set to accept ("identify") multiple choice options—change that to **User's entire response**. At the bottom, select the variable called "**Var**" and change it to "**Requirements**".
 
     :::image type="content" source="../media/advanced-flow/flow-test-1.png" alt-text="Add a question node to canvas.":::
 
