@@ -240,6 +240,7 @@
   },
   "definitions": {
     "ApplicationInstallState": {
+      "description": "Application Install State for ApplicationPackages",
       "enum": [
         "All",
         "Installed",
@@ -256,55 +257,71 @@
       "properties": {
         "id": {
           "format": "uuid",
+          "description": "AvailablePackage Id or InstancePackage PackageId, both maps to ApplicationPackageId",
           "type": "string"
         },
         "uniqueName": {
+          "description": "AvailablePackage UniqueName or InstancePackage PackageUniqueName",
           "type": "string"
         },
         "version": {
+          "description": "AvailablePackage Version or InstancePackage PackageVersion",
           "type": "string"
         },
         "localizedDescription": {
+          "description": "LocalizedDescription for the application package",
           "maxLength": 1000,
           "type": "string"
         },
         "localizedName": {
+          "description": "Localized name of application package",
           "type": "string"
         },
         "applicationId": {
           "format": "uuid",
+          "description": "Application ID",
           "type": "string"
         },
         "applicationName": {
+          "description": "Application Name",
           "type": "string"
         },
         "applicationDescription": {
+          "description": "Application Description",
           "type": "string"
         },
         "singlePageApplicationUrl": {
+          "description": "Single Page Application URL associated with the application",
           "type": "string"
         },
         "publisherName": {
+          "description": "Publisher name",
           "type": "string"
         },
         "publisherId": {
           "format": "uuid",
+          "description": "Publisher ID",
           "type": "string"
         },
         "learnMoreUrl": {
+          "description": "Learn more URL for the application",
           "type": "string"
         },
         "platformMinVersion": {
+          "description": "AvailablePackage CrmMinVersion",
           "type": "string"
         },
         "platformMaxVersion": {
+          "description": "AvailablePackage CrmMaxVersion",
           "type": "string"
         },
         "customHandleUpgrade": {
+          "description": "AvailablePackage CustomUpgrade",
           "type": "boolean"
         },
         "instancePackageId": {
           "format": "uuid",
+          "description": "InstancePackage Id, used only for retry of package installation ie, Reinstall.",
           "type": "string"
         },
         "state": {
@@ -321,13 +338,16 @@
         },
         "startDateUtc": {
           "format": "date-time",
+          "description": "Start date for applicationPackage",
           "type": "string"
         },
         "endDateUtc": {
           "format": "date-time",
+          "description": "End date for applicationPackage",
           "type": "string"
         },
         "supportedCountries": {
+          "description": "List of supported countries for the application",
           "type": "array",
           "items": {
             "type": "string"
@@ -350,6 +370,7 @@
       }
     },
     "ApplicationVisibility": {
+      "description": "Application Visibility",
       "enum": [
         "None",
         "CrmAdminCenter",
@@ -360,6 +381,7 @@
       "type": "string"
     },
     "CatalogVisibility": {
+      "description": "CatalogVisibility for application",
       "enum": [
         "None",
         "AdminCenter",
@@ -372,23 +394,29 @@
       "type": "object",
       "properties": {
         "errorName": {
+          "description": "Error Name",
           "type": "string"
         },
         "errorCode": {
           "format": "int32",
+          "description": "ErrorCode from CDS",
           "type": "integer"
         },
         "message": {
+          "description": "Error message",
           "type": "string"
         },
         "type": {
+          "description": "Error Type",
           "type": "string"
         },
         "statusCode": {
           "format": "int32",
+          "description": "Status code for error",
           "type": "integer"
         },
         "source": {
+          "description": "Source of the error",
           "type": "string"
         }
       }
@@ -398,48 +426,62 @@
       "properties": {
         "id": {
           "format": "uuid",
+          "description": "InstancePackage ID",
           "type": "string"
         },
         "packageId": {
           "format": "uuid",
+          "description": "Package ID",
           "type": "string"
         },
         "applicationId": {
           "format": "uuid",
+          "description": "ApplicationID associated with the instance package",
           "type": "string"
         },
         "applicationName": {
+          "description": "Application name associated with the instance package",
           "type": "string"
         },
         "applicationDescription": {
+          "description": "Application description associated with the instance package",
           "type": "string"
         },
         "singlePageApplicationUrl": {
+          "description": "Single Page Application URL",
           "type": "string"
         },
         "publisherName": {
+          "description": "Publisher name for the application",
           "type": "string"
         },
         "publisherId": {
           "format": "uuid",
+          "description": "Publisher ID",
           "type": "string"
         },
         "packageUniqueName": {
+          "description": "Package Unique Name",
           "type": "string"
         },
         "packageVersion": {
+          "description": "Package Version",
           "type": "string"
         },
         "localizedDescription": {
+          "description": "Localized description of application",
           "type": "string"
         },
         "localizedName": {
+          "description": "Localized name of application",
           "type": "string"
         },
         "learnMoreUrl": {
+          "description": "Learn more url for the application",
           "type": "string"
         },
         "termsOfServiceBlobUris": {
+          "description": "TOS for the application",
           "type": "array",
           "items": {
             "type": "string"
@@ -452,6 +494,7 @@
           "$ref": "#/definitions/InstancePackageOperation"
         },
         "customHandleUpgrade": {
+          "description": "Custom handle upgrade flag for the application",
           "type": "boolean"
         }
       }
@@ -464,24 +507,29 @@
         },
         "createdOn": {
           "format": "date-time",
+          "description": "DateTime for creation of the instance package operation",
           "type": "string"
         },
         "modifiedOn": {
           "format": "date-time",
+          "description": "DateTime for modification of the instance package operation",
           "type": "string"
         },
         "errorDetails": {
           "$ref": "#/definitions/ErrorDetails"
         },
         "statusMessage": {
+          "description": "Status Message",
           "type": "string"
         },
         "instancePackageId": {
           "format": "uuid",
+          "description": "InstancePackage ID",
           "type": "string"
         },
         "operationId": {
           "format": "uuid",
+          "description": "OperationID for the operation triggered on the instance package",
           "type": "string"
         }
       }
@@ -523,6 +571,7 @@
       "type": "string"
     },
     "InstancePackageState": {
+      "description": "State of instance package",
       "enum": [
         "None",
         "Installed",
@@ -543,32 +592,41 @@
       "type": "object",
       "properties": {
         "uniqueName": {
+          "description": "Uniquename of TenantApplicationPackage",
           "type": "string"
         },
         "localizedDescription": {
+          "description": "Localized description of tenant application Package",
           "type": "string"
         },
         "localizedName": {
+          "description": "Localized Name",
           "type": "string"
         },
         "applicationId": {
           "format": "uuid",
+          "description": "Application ID",
           "type": "string"
         },
         "applicationName": {
+          "description": "Application Name",
           "type": "string"
         },
         "applicationDescription": {
+          "description": "Application Description",
           "type": "string"
         },
         "publisherName": {
+          "description": "Publisher Name",
           "type": "string"
         },
         "publisherId": {
           "format": "uuid",
+          "description": "Publisher ID",
           "type": "string"
         },
         "learnMoreUrl": {
+          "description": "Learn more URL",
           "type": "string"
         },
         "catalogVisibility": {
@@ -597,6 +655,7 @@
       }
     },
     "TpsInstallRequestPayload": {
+      "description": "Payload to be sent during installation of the Package",
       "type": "object",
       "properties": {
         "payloadValue": {
