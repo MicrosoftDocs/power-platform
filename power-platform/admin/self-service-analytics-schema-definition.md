@@ -91,6 +91,13 @@ When configuring your firewall, we recommend that you select the **Isolate this
 > Microsoft plans to make this data export service part of Microsoft Trusted principals list over the course of maturing the data export process. With Dynamic IP allocation model, IP range restrictions are not an option for firewall setups.
 -->
 
+## What is the structure of the containers and folders inside the data lake?
+
+- The main root folder is in the yyyy-mm-dd date format&mdash;for example, 2020-02-28.
+- The root folder contains two folders, Metadata and KPI: 
+  - The Metadata folder contains inventory data in a list of files, one for each region.
+  - The KPI folder contains usage data.
+
 ## Schema definition tables
 
 The following tables detail the schema definitions of the data. Metadata are considered as inventory data.

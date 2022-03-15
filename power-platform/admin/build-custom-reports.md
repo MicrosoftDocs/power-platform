@@ -106,13 +106,6 @@ The recommendation for this preview is to use the **Isolate this storage** optio
 
 The data mode uses the extensible Common Data Model schema to describe the tables in the data lake. This will allow easier consumption by different products across Microsoft Power Platform, including Power BI and other systems like SAP or Adobe.
 
-## What is the structure of the containers and folders inside the data lake?
-
-- The main root folder is in the yyyy-mm-dd date format&mdash;for example, 2020-02-28.
-- The root folder contains two folders, Metadata and KPI: 
-  - The Metadata folder contains inventory data in a list of files, one for each region.
-  - The KPI folder contains usage data.
-
 ### See also
 
 [Create a storage account](/azure/storage/common/storage-account-create) <br />
