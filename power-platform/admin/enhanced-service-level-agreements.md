@@ -54,7 +54,6 @@ The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service,
 >  To monitor enhanced SLA details, consider creating custom dashboards based on the SLA KPI environment table or custom views using the Regarding (Case) relationship.  
   
 ### See also  
- [Video: SLA Enhancements in Microsoft Dynamics CRM 2015](https://youtu.be/rgmPqLsG8WI)   
  [Enable languages](../admin/enable-languages.md)
 
 

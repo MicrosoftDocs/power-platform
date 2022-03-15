@@ -8,14 +8,14 @@ ms.topic: how-to
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.reviewer: micchow
+ms.reviewer: eaglez
 ms.custom: "advanced-authoring, ceX"
 ms.collection: virtual-agent
 ---
 
-# Enable advanced AI features in Power Virtual Agents
+# Enable advanced AI features in Power Virtual Agents (Preview)
 
-- [!INCLUDE [Preview documentation notice](includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [Preview documentation notice](includes/cc-beta-prerelease-disclaimer.md)]
 
 Select the version of Power Virtual Agents you're using here:
 
@@ -39,11 +39,6 @@ Shorter trigger phrases are better, and you should aim for 2 to 10 words. You ju
 
 > [!NOTE]
 > The AI capabilities listed in this topic are in preview, available to bots created with English as the set language.
-
-> [!IMPORTANT]
-> This is a preview feature.
->
-> Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and [provide feedback](https://powerusers.microsoft.com/t5/Forums/ct-p/pva_forums).
 
 ## Advanced AI features overview
 

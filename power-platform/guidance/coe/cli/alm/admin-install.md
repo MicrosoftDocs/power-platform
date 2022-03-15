@@ -19,7 +19,7 @@ search.app:
 
 # Set up ALM Accelerator for Power Platform
 
-As a first step you'll need to complete the initial steps of an ALM deployment as an administrator. The commands below allow you to quickly automate the install. When you've completed these steps, you can add advanced makers and set up connections to their Power Platform development environments.
+As a first step you'll need to complete the initial steps of an ALM deployment as an administrator. The commands below allow you to quickly automate the install. When you've completed these steps, you can add makers and set up connections to their Power Platform development environments.
 
 ## Overview
 
@@ -105,7 +105,7 @@ More information: [CoE ALM generate install](https://aka.ms/coe-cli/help/alm/ins
 
 If you're prompted to create an HTTP with Azure Active Directory (AD) connection, enter 'https://graph.microsoft.com' for both the **Base Resource URL** and **Azure AD Resource URI**.
 
-1. [Update permissions for the project build service](/power-platform/guidance/coe/setup-almacceleratorpowerplatform#update-permissions-for-the-project-build-service) to enable build pipelines to interact with Git repositories.
+1. [Update permissions for the project build service](../../setup-almacceleratorpowerplatform.md#update-permissions-for-the-project-build-service) to enable build pipelines to interact with Git repositories.
 
 ## Read next
 

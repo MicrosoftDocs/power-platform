@@ -2,7 +2,7 @@
 title: "Configure Bot Framework skills"
 description: "Skills extend your bot's conversational capabilities by automating a series of actions within a topic. Skills enable the bot to book an appointment, send a confirmation email, manage tasks, and more."
 keywords: "extensibility, integration, extend bot, bot framework, skills, custom capabilities, PVA"
-ms.date: 01/25/2022
+ms.date: 03/07/2022
 
 ms.topic: article
 author: iaanw
@@ -30,6 +30,11 @@ This article is intended for system administrators or IT professionals who are f
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 - [Review restrictions and validation for skills used in Power Virtual Agents](/azure/bot-service/skill-pva)
 
+> [!IMPORTANT]
+> Power Virtual Agents only supports skills built using [Bot Framework SDK version 4.7+](/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0&preserve-view=true).
+>
+> If you're using [Bot Framework Composer](/composer/) it's strongly recommended that you use Composer 2.x. If you want to use an existing Composer 1.x bot, [first migrate it to Composer 2.x](/composer/how-to-migrate-bot-to-2-0) before using it as a skill.
+
 ## Compare use of Flows and skills actions
 
 The following table will help determine when to use skills for a conversation.
@@ -44,9 +49,6 @@ The following table will help determine when to use skills for a conversation.
 ## Configure a skill
 
 First, [create a Power Virtual Agents bot](authoring-first-bot.md) and [create and deploy skill using pro-code tools](https://go.microsoft.com/fwlink/?linkid=2110533) into your organization.
-
-> [!NOTE]
-> Power Virtual Agents only supports skills built using [Bot Framework SDK version 4.7](/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0&preserve-view=true) or above.
 
 Before registering the skill, provide the bot's ID to your skills developer to authorize the bot to call actions in the skill. [Learn more about skill allowlist](/azure/bot-service/skill-implement-skill).
 

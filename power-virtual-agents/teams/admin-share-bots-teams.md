@@ -158,13 +158,9 @@ This can help prevent conflicts if multiple people are working on the same topic
 > [!NOTE]
 > The list of authors in the **Currently editing** column is only refreshed when the page is loaded.
 
-A topic's **Details** page also shows all the people currently editing a topic, as well as the last time someone saved.
+A list of who's editing the page appears as user icons on the top of the authoring canvas when you've opened a topic for editing.
 
-:::image type="content" source="../media/admin-share-bots/sharing-multi-details-teams.png" alt-text="Screenshot of a topic's details page on the properties pane with the Modified by section on the right highlighted.":::
-
-A list of who's editing the page also appears as user icons on the top of the authoring canvas when you've opened a topic for editing.
-
-:::image type="content" source="../media/admin-share-bots/sharing-multi-editing-teams.png" alt-text="Screenshot of a topic being edited with user profile pictures appearing on the top menu bar.":::
+:::image type="content" source="../media/admin-share-bots/sharing-multi-editing.png" alt-text="Screenshot of a topic being edited with user profile pictures appearing on the top menu bar.":::
 
 After 30 minutes of inactivity you will not be identified as editing the topic.
 

@@ -28,7 +28,7 @@ The Power BI dashboard provides a holistic view with visualizations and insights
 You can get the CoE Power BI dashboard by downloading the CoE Starter Kit compressed file ([aka.ms/CoeStarterKitDownload](https://aka.ms/CoeStarterKitDownload)). **Extract the zip file** after downloading - it contains two Power BI template files:
 
 - Use the **Production_CoEDashboard_MMMYY.pbit** file if you have installed the CoE Starter Kit in a Production environment.
-- Use the **Teams_CoEDashboard_MMMYY.pbit** if you have installed the CoE Starter Kit in a Dataverse for Teams environment. This version connects to Microsoft Dataverse using the TDS endpoint, therefore the TDS Endpoint has to be enabled for the environment: [Manage feature settings](/power-platform/admin/settings-features).
+- Use the **Teams_CoEDashboard_MMMYY.pbit** if you have installed the CoE Starter Kit in a Dataverse for Teams environment. This version connects to Microsoft Dataverse using the TDS endpoint, therefore the TDS Endpoint has to be enabled for the environment: [Manage feature settings](../../admin/settings-features.md).
 
 > [!NOTE]
 >
