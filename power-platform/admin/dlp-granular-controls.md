@@ -1,5 +1,5 @@
 ---
-title: "Granular DLP controls  | MicrosoftDocs"
+title: "Granular controls | MicrosoftDocs"
 description: About fine-grained controls such as the ability to block specific connector actions or connection endpoints.
 
 ms.component: pa-admin
@@ -22,14 +22,14 @@ search.app:
   - Flow
 ---
 
-# Granular DLP controls
+# Granular connector controls
 
 Although the connector classification capability is very helpful in governing Microsoft Power Platform connectors, fine-grained controls&mdash;such as the ability to block specific connector actions or connection endpoints&mdash;help you strike a balance between productivity and protection.
 
-> [!NOTE]
-> Both connector action control and connector endpoint filtering are currently in Public Preview.
+## Connector action control
 
-## Connector action control 
+> [!NOTE]
+> **Connector action control** is generally available.
 
 You can use connector action control to allow or block individual actions within a given connector. On the **Connectors** page, right-click the connector, and then select **Configure connector** > **Connector actions**.
 
@@ -40,7 +40,7 @@ This opens a side panel where you can allow or deny specific actions. You can al
 :::image type="content" source="media/dlp-allow-deny-connector-actions.png" alt-text="Set Allow or Deny for connector actions.":::
 
 ### Availability
-Configuring a connector's actions is available for all *blockable* connectors, but not for [unblockable connectors](dlp-connector-classification.md#list-of-connectors-that-cant-be-blocked). 
+Configuring a connector's actions is available for all *blockable* connectors, but not for [unblockable connectors](dlp-connector-classification.md#list-of-connectors-that-cant-be-blocked) and [custom connectors](dlp-custom-connector-parity.md).
 
 ### PowerShell support for Connector action control
 
@@ -139,7 +139,10 @@ $ConnectorConfigurations = @{
 New-PowerAppDlpPolicyConnectorConfigurations -TenantId $TenantId -PolicyName $PolicyName -NewDlpPolicyConnectorConfigurations $ConnectorConfigurations
 ``` 
 
-## Endpoint filtering 
+## Connector endpoint filtering
+
+> [!NOTE]
+> **Connector endpoint filtering** is in public preview.
 
 Endpoint filtering allows admins to govern at a fine grain which specific endpoints will be allowed versus blocked at a tenant or environment level. This facility is available for HTTP, HTTP with Azure AD, HTTP Webhook, SQL Server, Azure Blob Storage, and SMTP connection endpoints. The feature will soon be available for Dataverse (legacy). For more information, see [Endpoint input formats and examples](dlp-endpoint-input-formats-examples.md).
 
