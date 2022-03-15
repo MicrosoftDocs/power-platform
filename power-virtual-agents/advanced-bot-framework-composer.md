@@ -14,7 +14,7 @@ ms.collection: virtualagent
 ---
 
 
-<!-- See edit question in line 93. Also, a couple of links go to 404 pages and might need updating: the ones in lines 122 and 252. -->
+<!-- a couple of links go to 404 pages and might need updating: the ones in lines 122 and 252. -->
 
 
 # Extend your bot with Bot Framework Composer
@@ -89,10 +89,7 @@ The **main (root) dialog** in your **Composer project** is the same as the proje
 
 :::image type="content" source="media/advanced-bot-framework-composer/Gd_mainDialog_initial.png" alt-text="Bot Framework Composer main (root) dialog":::
 
-
-<!-- editor asks: in the sentence below, is "there are few" correct, as in not many, or should it be "there are a few," meaning some? -->
-
-There are few key guidelines to follow when using Composer to create your bot content for Power Virtual Agents.
+There are a few key guidelines to follow when using Composer to create your bot content for Power Virtual Agents.
 
 - The Power Virtual Agents topics from your bot will be displayed in Composer. You can't edit these Power Virtual Agents topics in Composer; selecting them will open these topics in Power Virtual Agents for editing.
 
