@@ -468,8 +468,8 @@
         - name: "Preview: Export Power Apps inventory and usage data"
           href: self-service-analytics.md
         # Comment out the next topic before publish    
-        # - name: "Preview: Self-service analytics schema definition"
-        #   href: self-service-analytics-schema-definition.md
+        - name: "Preview: Self-service analytics schema definition"
+          href: self-service-analytics-schema-definition.md
         - name: "Preview: Create custom dashboards using Power Apps inventory and usage data"
           href: build-custom-reports.md
       - name: "Preview: Analyze telemetry with Application Insights"
