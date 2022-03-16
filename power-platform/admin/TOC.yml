@@ -467,6 +467,9 @@
         items:
         - name: "Preview: Export Power Apps inventory and usage data"
           href: self-service-analytics.md
+        # Comment out the next topic before publish    
+        # - name: "Preview: Self-service analytics schema definition"
+        #   href: self-service-analytics-schema-definition.md
         - name: "Preview: Create custom dashboards using Power Apps inventory and usage data"
           href: build-custom-reports.md
       - name: "Preview: Analyze telemetry with Application Insights"
@@ -618,36 +621,36 @@
             href: content-security-policy.md
         - name: Data loss prevention policies 
           items: 
-          - name: DLP policies
-            items: 
-            - name: Overview
-              href: wp-data-loss-prevention.md
-            - name: Connector classification
-              href: dlp-connector-classification.md
-            - name: Disable new connectors by default 
-              href: connector-off-by-default.md
-            - name: Custom connector parity  
-              href: dlp-custom-connector-parity.md 
-            - name: Granular controls
-              href: dlp-granular-controls.md
-            - name: Endpoint input
-              href: dlp-endpoint-input-formats-examples.md
-            - name: View policies and policy scope
-              href: dlp-policy-scope.md
-            - name: Effect of multiple policies
-              href: dlp-combined-effect-multiple-policies.md
-            - name: Resource exemption
-              href: dlp-resource-exemption.md
-            - name: Impact on apps and flows
-              href: dlp-impact-policies-apps-flows.md
-            - name: Known issues
-              href: dlp-known-issues.md
+          - name: Overview
+            href: wp-data-loss-prevention.md
           - name: Create a DLP policy
             href: create-dlp-policy.md
           - name: Manage DLP policies
             href: prevent-data-loss.md
           - name: Data loss prevention SDK 
             href: data-loss-prevention-sdk.md
+          - name: Connector classification
+            href: dlp-connector-classification.md
+          - name: Granular controls
+            href: dlp-granular-controls.md    
+          - name: Endpoint input
+            href: dlp-endpoint-input-formats-examples.md
+          - name: Custom connector parity  
+            href: dlp-custom-connector-parity.md 
+          - name: DLP for desktop flows
+            href: /power-automate/prevent-data-loss#data-loss-prevention-dlp-for-desktop-flows-preview 
+          - name: Disable new connectors by default 
+            href: connector-off-by-default.md
+          - name: View policies and policy scope
+            href: dlp-policy-scope.md          
+          - name: Effect of multiple policies
+            href: dlp-combined-effect-multiple-policies.md           
+          - name: Impact on apps and flows
+            href: dlp-impact-policies-apps-flows.md          
+          - name: Resource exemption
+            href: dlp-resource-exemption.md
+          - name: Known issues
+            href: dlp-known-issues.md          
         - name: Configure field-level security
           items:
           - name: Overview
