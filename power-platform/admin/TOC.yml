@@ -639,6 +639,8 @@
             href: dlp-custom-connector-parity.md 
           - name: DLP for desktop flows
             href: /power-automate/prevent-data-loss#data-loss-prevention-dlp-for-desktop-flows-preview 
+          - name: Disable new connectors by default 
+            href: connector-off-by-default.md
           - name: View policies and policy scope
             href: dlp-policy-scope.md          
           - name: Effect of multiple policies
