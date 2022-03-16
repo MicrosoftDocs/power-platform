@@ -170,7 +170,7 @@ In this section, we will create an additional workflow that:
 
 ## Call the reusable workflow on the release event
 
-In this section, we will call the resuble workflow on the release event.
+In this section, we will call the resuble workflow on the [release event](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#release).
 
 1. Navigate to **Actions** and select **New workflow**.
 
@@ -182,17 +182,11 @@ In this section, we will call the resuble workflow on the release event.
 
 3. Rename the title of the workflow to ‘release-action-call’ and copy the content from the [release-action-call.yml](https://github.com/microsoft/powerplatform-actions-lab/blob/main/sample-workflows/release-action-call.yml) file and paste it into the **Edit new file** screen.
 
-    ![Rename and paste code.](../media/github-actions-tutorial/gh-lab-2.250.png "Rename and paste code")
+    ![Rename and paste code.](../media/github-actions-tutorial/gh-lab-2.251.png "Rename and paste code")
 
 4. Update the following variables in the new workflow file:
-    - Update `<BUILDENVIRONMENTURL>` with the URL for the build environment you are using to generate the managed solution. For example: https://poweractionsbuild.crm.dynamics.com.
-    - Update `<PRODUCTIONENVIRONMENTURL>` with the URL for the production environment you are deploying to. For example: https://poweractionsbuild.crm.dynamics.com.
-    - Update `<USERNAME>` with the username you are using to connect to the environments.
-
-    ![Rename and paste code](../media/github-actions-tutorial/gh-lab-2.250a.png "Rename and paste code")
-4a. If you are using SPN authentication then in the workflow you need to update the following variables:
-    - Update `<BUILDENVIRONMENTURL>` with the URL for the build environment you are using to generate the managed solution. For example: https://poweractionsbuild.crm.dynamics.com.
-    - Update `<PRODUCTIONENVIRONMENTURL>` with the URL for the production environment you are deploying to. For example: https://poweractionsbuild.crm.dynamics.com.
+    - Update `<BUILD_ENVIRONMENT>` with the URL for the build environment you are using to generate the managed solution. For example: https://poweractionsbuild.crm.dynamics.com.
+    - Update `<PROD_ENVIRONMENT>` with the URL for the production environment you are deploying to. For example: https://poweractionsbuild.crm.dynamics.com.
     - Update `<APPID>` with the Application name you are using to connect to the environments.
     - Updte `<TENANT ID>` with the tenant id for your environments. 
 
