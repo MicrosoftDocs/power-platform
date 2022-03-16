@@ -631,7 +631,7 @@
             href: data-loss-prevention-sdk.md
           - name: Basic connector classification
             href: dlp-connector-classification.md
-          - name: Advanced ranular controls
+          - name: Advanced granular controls
             href: dlp-granular-controls.md    
           - name: Endpoint input examples
             href: dlp-endpoint-input-formats-examples.md
