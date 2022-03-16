@@ -15,7 +15,7 @@
         "tags": [
           "BillingPolicy"
         ],
-        "summary": "Get the list of billing policy for the tenant.",
+        "summary": "Get the list of billing policies for the tenant.",
         "operationId": "ListBillingPolicies",
         "produces": [
           "application/json"
@@ -108,7 +108,7 @@
         "tags": [
           "BillingPolicy"
         ],
-        "summary": "Get the billing policy at tenant level by policy Id.",
+        "summary": "Get the billing policy at tenant level by policy ID.",
         "operationId": "GetBillingPolicy",
         "produces": [
           "application/json"
@@ -117,7 +117,7 @@
           {
             "in": "path",
             "name": "billingPolicyId",
-            "description": "The billing policy Id",
+            "description": "The billing policy ID",
             "required": true,
             "type": "string"
           },
@@ -167,7 +167,7 @@
           {
             "in": "path",
             "name": "billingPolicyId",
-            "description": "The billing policy Id",
+            "description": "The billing policy ID",
             "required": true,
             "type": "string"
           },
@@ -256,7 +256,7 @@
         "tags": [
           "BillingPolicyEnvironment"
         ],
-        "summary": "Get the list environments which are linked to billing policy.",
+        "summary": "Get the list of environments linked to the billing policy.",
         "operationId": "ListBillingPolicyEnvironments",
         "produces": [
           "application/json"
@@ -265,7 +265,7 @@
           {
             "in": "path",
             "name": "billingPolicyId",
-            "description": "The billing policy Id",
+            "description": "The billing policy ID",
             "required": true,
             "type": "string"
           },
@@ -305,7 +305,7 @@
         "tags": [
           "BillingPolicyEnvironment"
         ],
-        "summary": "Get the environment which is linked to billing policy",
+        "summary": "Get the environment linked to the billing policy.",
         "operationId": "GetBillingPolicyEnvironment",
         "produces": [
           "application/json"
@@ -314,14 +314,14 @@
           {
             "in": "path",
             "name": "billingPolicyId",
-            "description": "The billing policy Id",
+            "description": "The billing policy ID",
             "required": true,
             "type": "string"
           },
           {
             "in": "path",
             "name": "environmentId",
-            "description": "The environment Id",
+            "description": "The environment ID",
             "required": true,
             "type": "string"
           },
@@ -370,7 +370,7 @@
           {
             "in": "path",
             "name": "billingPolicyId",
-            "description": "The billing policy Id",
+            "description": "The billing policy ID",
             "required": true,
             "type": "string"
           },
@@ -410,7 +410,7 @@
         "tags": [
           "BillingPolicyEnvironment"
         ],
-        "summary": "Link billing policy with environment ids.",
+        "summary": "Link billing policy ID with environments.",
         "operationId": "AddBillingPolicyEnvironment",
         "consumes": [
           "application/json"
@@ -419,7 +419,7 @@
           {
             "in": "path",
             "name": "billingPolicyId",
-            "description": "The billing policy Id",
+            "description": "The billing policy ID",
             "required": true,
             "type": "string"
           },
@@ -464,7 +464,7 @@
         "tags": [
           "BillingPolicyEnvironment"
         ],
-        "summary": "Unlink billing policy with environment ids.",
+        "summary": "Unlink billing policy ID from environments.",
         "operationId": "RemoveBillingPolicyEnvironment",
         "consumes": [
           "application/json"
@@ -518,7 +518,7 @@
         "tags": [
           "EnvironmentBillingPolicy"
         ],
-        "summary": "Get the linked billing policy details for environment",
+        "summary": "Get the linked billing policy details for an environment.",
         "operationId": "GetEnvironmentBillingPolicy",
         "produces": [
           "application/json"
@@ -527,7 +527,7 @@
           {
             "in": "path",
             "name": "environmentId",
-            "description": "The environment Id",
+            "description": "The environment ID",
             "required": true,
             "type": "string"
           },
