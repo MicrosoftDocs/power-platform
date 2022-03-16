@@ -29,15 +29,15 @@ You specify the target language when you first [create a bot](authoring-first-bo
 
 1. In the **Create a new bot** window, select **Language**.
 
-2. Choose the language you want to use. Some languages are listed under **Preview**, as described in the list of supported languages later in this article.
+1. Choose the language you want to use. Some languages are listed under **Preview**, as described in the list of supported languages later in this article.
 
     :::image type="content" source="../media/authoring-language-support/language-selection-teams.png" alt-text="Language selection option.":::
 
 ## Default content in the target language
 
-After your new bot has been created, you'll notice that it already has content in the target language, including the **System Topics** and the template **User Topics**.
+After your new bot has been created, you'll notice that it already has content in the target language, including system topics and template user topics.
 
-:::image type="content" source="../media/authoring-language-support/language-topics-teams.png" alt-text="Topics in the target language.":::
+:::image type="content" source="../media/authoring-language-support/language-topics.png" alt-text="Topics in the target language.":::
 
 You can now move on to creating new topics for your bot, authoring bot trigger phrases, and creating bot messages in your target language.
 

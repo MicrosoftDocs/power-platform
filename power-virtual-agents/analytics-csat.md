@@ -8,6 +8,7 @@ ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
+ms.reviewer: mboninco
 ms.custom: analysis, ceX
 ms.collection: virtual-agent
 ---
@@ -20,8 +21,6 @@ Select the version of Power Virtual Agents you're using here:
 >
 > - [Power Virtual Agents web app](analytics-csat.md)
 > - [Power Virtual Agents app in Microsoft Teams](teams/analytics-csat-teams.md)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 The Customer Satisfaction page provides a detailed view of customer satisfaction (CSAT) survey data, including the average CSAT score over time and the topics that are having the most impact on the CSAT score.
 

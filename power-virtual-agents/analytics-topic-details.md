@@ -8,6 +8,7 @@ ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
+ms.reviewer: mboninco
 ms.custom: analysis, ceX
 ms.collection: virtual-agent
 ---
@@ -20,8 +21,6 @@ Select the version of Power Virtual Agents you're using here:
 >
 > - [Power Virtual Agents web app](analytics-topic-details.md)
 > - [Power Virtual Agents app in Microsoft Teams](teams/analytics-topic-details-teams.md)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 The topic details page provides a view into the performance of individual topics and how they can be improved.
 

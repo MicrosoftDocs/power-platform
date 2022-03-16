@@ -4,7 +4,7 @@ description: Covers how to back up and restore environments
 services: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/02/2022
+ms.date: 03/10/2022
 ms.subservice: admin
 author: ChrisGarty
 ms.author: cgarty
@@ -83,6 +83,7 @@ About **manual backups**:
   > [!div class="mx-imgBorder"] 
   > ![Backup expiration date.](media/restore-backup-manual-expiration.png "Backup expiration date")
   
+- The label of the created backup reflects the restore point timestamp. The restore point timestamp is the closest available time to the time when the manual backup was created. The timestamp label can't be edited.
 - You are not limited in the number of manual backups you can make.
 - Manual backups do not count against your storage limits.  
 - You must restore an environment to the same region in which it was backed up.
@@ -158,7 +159,7 @@ In the current version of the product, system backups occur continuously; this i
 ### How are manual/on-demand backups taken?
 In the current version of the product, system backups occur continuously; this is different from previous versions where backups were once a day. Because the underlying technology used is Azure SQL Database, see [Automated backups](/azure/sql-database/sql-database-automated-backups) for details.
 
-Because Azure SQL Database takes backups continuously, there is no need to take additional backups or specify Azure SQL Database to take additional backups or an on-demand full backup. That means our on-demand backup is just a label and a time stamp that we store in our system and use during restore requests. This is different from previous versions that took a full backup during an on-demand backup. 
+Because Azure SQL Database takes backups continuously, there is no need to take additional backups or specify Azure SQL Database to take additional backups or an on-demand full backup. That means your on-demand backup is just a timestamp and a label that reflects the timestamp that we store in our system and use during restore requests. This is different from previous versions that took a full backup during an on-demand backup. 
 
 ### Why can't I see a status of the manual backup?
 There is no status as the backup is processing. When the backup is completed, you'll see the following message: "*The [backup name] backup was successfully created.*" 
@@ -166,7 +167,7 @@ There is no status as the backup is processing. When the backup is completed, yo
 ### Should I open a support ticket for taking a full backup?
 No. In the current version of the product, system backups occur continuously; this is different from previous versions where backups were once a day. Because the underlying technology used is Azure SQL Database, see [Automated backups](/azure/sql-database/sql-database-automated-backups) for details.
 
-Because Azure SQL Database takes backups continuously and there is no specific way to take additional on-demand backups, we recommend you use our on-demand backup feature to label your backups. 
+Because Azure SQL Database takes backups continuously and there is no specific way to take additional on-demand backups, we recommend that you use the Power Platform admin center on-demand backup capabilities for labeled backups. 
 
 ### How long are my manual/on-demand backups and system backups retained?
 System and manual backups for certain production-type environments are retained up to 28 days. Other environment type backups are retained up to 7 days only. Please see the following FAQ, [How do I determine if backups of a production environment are retained for 28 days?](#how-do-i-determine-if-backups-of-a-production-environment-are-retained-for-28-days)

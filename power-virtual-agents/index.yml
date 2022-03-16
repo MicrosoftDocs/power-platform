@@ -50,7 +50,7 @@ highlightedContent:
     # Card
     - title: Register for a free virtual Power Virtual Agents in a Day workshop
       itemType: learn
-      url: https://powerplatform.microsoft.com/en-us/training-workshops/#section_power_virtual_agents_in_a_day
+      url: https://powerplatform.microsoft.com/en-us/training-workshops/?accordion=1&tab=6
 
 # conceptualContent section
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
