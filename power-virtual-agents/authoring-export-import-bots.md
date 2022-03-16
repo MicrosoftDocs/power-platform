@@ -158,13 +158,18 @@ The export can take several minutes to complete. Once finished, a .zip file will
 > [!IMPORTANT]
 > You must [publish your newly imported bot](publication-fundamentals-publish-channels.md) before it can be shared.
 
-## Upgrade or update a solution with a chatbot
+## Add new components to a chatbot custom solution
 
-If you add new bot components (such as new topics or flows) to your bot in the PVA portal, you will also need to update those changes to the bot in your target environment. You do this by adding the components to the unmanaged solution by selecting **Add required components** under the **...** menu next to the name of the bot.
+If you add new bot components (such as new topics or flows) to your bot in the Power Virtual Agents portal, you will also need to add those changes to the bot in your target environment. You do this by adding the components to the unmanaged solution by selecting **Add required components** under the **...** menu next to the name of the bot.
 
 :::image type="content" source="media/authoring-export-import-bots/export-add-required-components.png" alt-text="Screenshot highlighting the Add required components option under the More menu." border="false":::
 
+## Upgrade or update a solution with a chatbot
+
 There are times when you need to update an existing managed solution. To learn more, go to [Upgrade or update a solution](/powerapps/maker/common-data-service/update-solutions).
+
+> [!IMPORTANT]
+> Update option replaces your solution with the uploaded solution version. Components that are not in the newer solution won't be deleted and will remain in the system. This option is not recommended as your destination environment will differ in configuration from your source environment and could cause issues that are difficult to reproduce and diagnose.
 
 ## Remove an unmanaged layer from a managed chatbot
 
