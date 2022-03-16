@@ -629,17 +629,17 @@
             href: prevent-data-loss.md
           - name: Data loss prevention SDK 
             href: data-loss-prevention-sdk.md
-          - name: Connector classification
+          - name: Basic connector classification
             href: dlp-connector-classification.md
-          - name: Granular controls
+          - name: Advanced ranular controls
             href: dlp-granular-controls.md    
-          - name: Endpoint input
+          - name: Endpoint input examples
             href: dlp-endpoint-input-formats-examples.md
-          - name: Custom connector parity  
+          - name: DLP for custom connectors
             href: dlp-custom-connector-parity.md 
           - name: DLP for desktop flows
             href: /power-automate/prevent-data-loss#data-loss-prevention-dlp-for-desktop-flows-preview 
-          - name: Disable new connectors by default 
+          - name: Disable new connectors
             href: connector-off-by-default.md
           - name: View policies and policy scope
             href: dlp-policy-scope.md          
@@ -647,9 +647,9 @@
             href: dlp-combined-effect-multiple-policies.md           
           - name: Impact on apps and flows
             href: dlp-impact-policies-apps-flows.md          
-          - name: Resource exemption
+          - name: Exempt apps and flows
             href: dlp-resource-exemption.md
-          - name: Known issues
+          - name: Known limitations
             href: dlp-known-issues.md          
         - name: Configure field-level security
           items:
