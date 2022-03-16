@@ -186,7 +186,7 @@ In this section, we will call the resuble workflow on the [release event](https:
 
 4. Update the following variables in the new workflow file:
     - Update `<BUILD_ENVIRONMENT>` with the URL for the build environment you are using to generate the managed solution. For example: https://poweractionsbuild.crm.dynamics.com.
-    - Update `<PROD_ENVIRONMENT>` with the URL for the production environment you are deploying to. For example: https://poweractionsbuild.crm.dynamics.com.
+    - Update `<PROD_ENVIRONMENT>` with the URL for the production environment you are deploying to. For example: https://poweractionsprod.crm.dynamics.com.
     - Update `<APPID>` with the Application name you are using to connect to the environments.
     - Updte `<TENANT ID>` with the tenant id for your environments. 
 
