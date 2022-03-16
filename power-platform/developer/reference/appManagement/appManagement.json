@@ -15,8 +15,8 @@
         "tags": [
           "Applications"
         ],
-        "summary": "Get list of Application Packages that are available for a tenant",
-        "description": "Get list of available application packages for a tenant",
+        "summary": "Get list of application packages available for a tenant.",
+        "description": "Get list of available application packages for a tenant.",
         "operationId": "GetTenantApplicationPackage",
         "produces": [
           "application/json"
@@ -55,8 +55,8 @@
         "tags": [
           "Applications"
         ],
-        "summary": "Get list of Application Packages that are available for install in a target environment.",
-        "description": "Get list of Application Packages that are relevant in the context of a target environment. Client can filter the Application Packages based on Install State (NotInstalled, Installed, All) and any other response parameters utilizing standard OData capabilities",
+        "summary": "Get list of application packages that are available for installation in a target environment.",
+        "description": "Get list of application packages that aavailable for installation in a target environment. Client can filter the application packages based on the installation state (NotInstalled, Installed, All) and any other response parameters utilizing standard OData capabilities.",
         "operationId": "GetEnvironmentApplicationPackage",
         "produces": [
           "application/json"
@@ -65,7 +65,7 @@
           {
             "in": "path",
             "name": "environmentId",
-            "description": "Environment Id (not to be confused with Org id)",
+            "description": "Environment ID (not to be confused with Org ID)",
             "required": true,
             "type": "string"
           },
@@ -83,7 +83,7 @@
           {
             "in": "query",
             "name": "lcid",
-            "description": "Application Package Supported Language Id",
+            "description": "Application Package Supported Language ID",
             "type": "string"
           },
           {
@@ -120,7 +120,7 @@
           "Applications"
         ],
         "summary": "Trigger installation of an application package based on the package unique name into a target environment.",
-        "description": "Trigger installation of an application package based on the package unique name to be installed in a target environment. Client can also include custom payload when requesting installation of an application package.",
+        "description": "Trigger installation of an application package based on the package unique name into a target environment. Client can also include custom payload when requesting installation of an application package.",
         "operationId": "InstallApplicationPackage",
         "consumes": [
           "application/json"
@@ -132,14 +132,14 @@
           {
             "in": "path",
             "name": "environmentId",
-            "description": "Environment Id (not to be confused with Org id)",
+            "description": "Environment ID (not to be confused with Org ID)",
             "required": true,
             "type": "string"
           },
           {
             "in": "path",
             "name": "uniqueName",
-            "description": "Package Unique Name",
+            "description": "Package unique name",
             "required": true,
             "type": "string"
           },
@@ -154,7 +154,7 @@
           {
             "in": "body",
             "name": "body",
-            "description": "Payload to be sent during installation of the Package",
+            "description": "Payload to be sent during installation of the package",
             "schema": {
               "$ref": "#/definitions/TpsInstallRequestPayload"
             }
@@ -187,8 +187,8 @@
         "tags": [
           "Applications"
         ],
-        "summary": "Get the polling status for a previously triggered installation",
-        "description": "Get the polling status to check on the progress of a previously triggered installation based on the operation ID",
+        "summary": "Get the polling status for a previously triggered installation.",
+        "description": "Get the polling status to check the progress of a previously triggered installation based on the operation ID.",
         "operationId": "GetApplicationPackageInstallStatus",
         "produces": [
           "application/json"
@@ -197,7 +197,7 @@
           {
             "in": "path",
             "name": "environmentId",
-            "description": "Environment Id (not to be confused with Org id)",
+            "description": "Environment ID (not to be confused with Org ID)",
             "required": true,
             "type": "string"
           },
@@ -240,7 +240,7 @@
   },
   "definitions": {
     "ApplicationInstallState": {
-      "description": "Application Install State for ApplicationPackages",
+      "description": "Application installation state for the packages",
       "enum": [
         "All",
         "Installed",
@@ -283,11 +283,11 @@
           "type": "string"
         },
         "applicationName": {
-          "description": "Application Name",
+          "description": "Application name",
           "type": "string"
         },
         "applicationDescription": {
-          "description": "Application Description",
+          "description": "Application description",
           "type": "string"
         },
         "singlePageApplicationUrl": {
@@ -436,7 +436,7 @@
         },
         "applicationId": {
           "format": "uuid",
-          "description": "ApplicationID associated with the instance package",
+          "description": "Application ID associated with the instance package",
           "type": "string"
         },
         "applicationName": {
@@ -529,7 +529,7 @@
         },
         "operationId": {
           "format": "uuid",
-          "description": "OperationID for the operation triggered on the instance package",
+          "description": "Operation ID for the operation triggered on the instance package",
           "type": "string"
         }
       }
@@ -596,7 +596,7 @@
           "type": "string"
         },
         "localizedDescription": {
-          "description": "Localized description of tenant application Package",
+          "description": "Localized description of tenant application package",
           "type": "string"
         },
         "localizedName": {
@@ -609,15 +609,15 @@
           "type": "string"
         },
         "applicationName": {
-          "description": "Application Name",
+          "description": "Application name",
           "type": "string"
         },
         "applicationDescription": {
-          "description": "Application Description",
+          "description": "Application description",
           "type": "string"
         },
         "publisherName": {
-          "description": "Publisher Name",
+          "description": "Publisher name",
           "type": "string"
         },
         "publisherId": {
@@ -655,7 +655,7 @@
       }
     },
     "TpsInstallRequestPayload": {
-      "description": "Payload to be sent during installation of the Package",
+      "description": "Payload to be sent during installation of the package",
       "type": "object",
       "properties": {
         "payloadValue": {
