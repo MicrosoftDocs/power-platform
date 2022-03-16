@@ -170,7 +170,7 @@ In this section, we will create an additional workflow that:
 
 ## Call the reusable workflow on the release event
 
-In this section, we will call the resuble workflow on the [release event](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#release).
+In this section, we will call the reusable workflow on the [release event](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#release).
 
 1. Navigate to **Actions** and select **New workflow**.
 
