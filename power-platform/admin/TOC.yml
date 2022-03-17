@@ -561,6 +561,8 @@
           href: powerplatform-api-create-service-principal.md
         - name: Reference
           items:
+          - name: "2022-03-01-preview"
+            href: https://aka.ms/PowerPlatformAPI-Technical
           - name: "2020-10-01"
             items:
             - name: Environments

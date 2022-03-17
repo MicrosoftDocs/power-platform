@@ -6,7 +6,7 @@ ms.reviewer: jimholtz
 
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 03/09/2022
+ms.date: 03/17/2022
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -31,6 +31,16 @@ Navigate to the [Azure AD app registration](https://go.microsoft.com/fwlink/?lin
 
 ### Configure API permissions
 Within your new app registration, navigate to the **Manage - API Permissions** tab.  Under the **Configure permissions** section, select **Add a Permission**.  On the dialog window that opens, select the **APIs my organization uses** tab, and then search for **Power Platform API**.  You might see several entries with a name similar to this, so ensure you use the one with the GUID **8578e004-a5c6-46e7-913e-12f58912df43**.  
+
+> [!Note]
+> If you do not see Power Platform API showing up in the list when searching by GUID, it is possible that you still have access to it but the visibility is not refreshed. To force a refresh run the below PowerShell script:
+```powershell
+#Install the Azure AD the module
+Install-Module AzureAD
+
+Connect-AzureAD
+New-AzureADServicePrincipal -AppId 8578e004-a5c6-46e7-913e-12f58912df43 - DisplayName "Power Platform API"
+```
 
 From here, you must select the permissions you require. These are grouped by [**Namespaces** ](https://aka.ms/PowerPlatformAPI-Technical).  Within a namespace, you will see resource types and actions for example *AppManagement.ApplicationPackages.Read* which will give read permissions for application packages.  For more details, see our [Permission reference](programmability-permission-reference.md) article.
 
@@ -68,14 +78,14 @@ The above example contains placeholders that you can retrieve from your client a
 ```JSON
 {
   "token_type": "Bearer",
-  "scope": "https://service.powerapps.com//User https://service.powerapps.com//.default",
-  "expires_in": 3599,
-  "ext_expires_in": 3599,
-  "access_token": "eyJ0eXAiOi...UBkeW5hbWljc2F4ZGVtby5vbm1pY3Jvc29mdC5jb20iLCJ1dGkiOiI1Q1Fnb25PR0dreWlTc1I2SzR4TEFBIiwidmVyIjoiMS4wIn0.N_oCJiEz2tRU9Ls9nTmbZF914MyU_u7q6bIUJdhXd9AQM2ZK-OijiKtMGfvvVmTYZp4C6sgkxSt0mOGcpmvTSagSRDY92M2__p-pEuKqva5zxXXXmpC-t9lKYDlXRcKq1m5xv-q6buntnLrvZIdd6ReD3n3_pnGAa6OxU0s82f7DqAjSQgXR3hwq_NZOa0quCUN9X-TvpIYrJfVgQfVu0R189hWmUzbYpuoPrUMj2vQI_19gEHz_FryXolM4RMStugYrC0Z72ND5vFlGgvYhZfbWJRC6hGvQQin_eAASmmjLwhRBGMJd6IdbgEXAkFF2rFITFFtFY_4hrN3bvHsveg"
+  "scope": "https://api.powerplatform.com/AppManagement.ApplicationPackages.Install https://api.powerplatform.com/AppManagement.ApplicationPackages.Read https://api.powerplatform.com/.default",
+  "expires_in": 4747,
+  "ext_expires_in": 4747,
+  "access_token": "eyJ0eXAiOiJKV1QiLCJu..."
 }
 ```
 
-Use the **access_token** value in subsequent calls to the Power Platform API using the **Authorization** HTTP header.
+Use the **access_token** value in subsequent calls to the Power Platform API with the **Authorization** HTTP header.
 
 #### Service Principal flow
 Be sure to read the Certificates and Secrets section above.  Then, send a POST request via HTTP to Azure AD with a client secret payload.  This is often referred to as service principal authentication.  This can only be used after you have registered this client application ID with Microsoft Power Platform.  
@@ -93,14 +103,13 @@ The above example contains placeholders that you can retrieve from your client a
 ```JSON
 {
   "token_type": "Bearer",
-  "scope": "https://service.powerapps.com//User https://service.powerapps.com//.default",
   "expires_in": 3599,
   "ext_expires_in": 3599,
-  "access_token": "eyJ0eXAiOi...UBkeW5hbWljc2F4ZGVtby5vbm1pY3Jvc29mdC5jb20iLCJ1dGkiOiI1Q1Fnb25PR0dreWlTc1I2SzR4TEFBIiwidmVyIjoiMS4wIn0.N_oCJiEz2tRU9Ls9nTmbZF914MyU_u7q6bIUJdhXd9AQM2ZK-OijiKtMGfvvVmTYZp4C6sgkxSt0mOGcpmvTSagSRDY92M2__p-pEuKqva5zxXXXmpC-t9lKYDlXRcKq1m5xv-q6buntnLrvZIdd6ReD3n3_pnGAa6OxU0s82f7DqAjSQgXR3hwq_NZOa0quCUN9X-TvpIYrJfVgQfVu0R189hWmUzbYpuoPrUMj2vQI_19gEHz_FryXolM4RMStugYrC0Z72ND5vFlGgvYhZfbWJRC6hGvQQin_eAASmmjLwhRBGMJd6IdbgEXAkFF2rFITFFtFY_4hrN3bvHsveg"
+  "access_token": "eyJ0eXAiOiJKV1..."
 }
 ```
 
-Use the **access_token** value in subsequent calls to the Power Platform API using the **Authorization** HTTP header.
+Use the **access_token** value in subsequent calls to the Power Platform API with the **Authorization** HTTP header.  As noted above, the Service Principal flow does not use application permissions and is instead, for now, treated as a Power Platform Administrator for all calls that they make.
 
 ### See also
 [Preview: Creating a service principal application via API](powerplatform-api-create-service-principal.md)

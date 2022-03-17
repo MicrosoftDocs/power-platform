@@ -23,10 +23,22 @@ search.app:
 Microsoft Power Platform administrators often have the need to orchestrate and automate routine activities for their tenant.  This can be accomplished in a variety of ways using the tools outlined below.  
 
 > [!NOTE]
-> Programmability tools are currently developed API-first, meaning new properties and functionality will first be exposed in the latest API versions made available.  They will later be uptaken into updates to our PowerShell cmdlets and connectors.  In the future, this will become synchronized across all available tools.  
+> Programmability tools are currently developed API-first, meaning new properties and functionality will first be exposed in the latest API versions made available.  They will later be uptaken into updates to our Power Platform CLI, PowerShell cmdlets and connectors.  In the future, this will become synchronized across all available tools automatically.  
+
+## Customer management plane vs customer data plane
+Historically, Power Platform administrators have had disparate APIs from which to manage their tenant and its resources within the platform.  With Power Platform API, Microsoft is collecting, harmonizing, and ultimately providing a single API surface from which customers can manage the Power Platform.
+
+The customer management plane is where tenant level resources and environments are surfaced.  This includes operations like creating environments (with or without Dataverse), managing Billing policies for [Pay-as-you-go](https://docs.microsoft.com/power-platform/admin/pay-as-you-go-overview), querying and reporting on capacity consumption, and so on.  These capabilities will all be surfaced under Power Platform API and more will be added regularly.  
+
+The customer data plane is for interacting with data and records stored inside of an environment.  This most commonly is referred to as Dataverse of which includes its own [rich OData-based API](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview).
+
+Ultimately, customers will have two management APIs and related tooling for each: one for the management plane and one for the data plane.  This documentation is strictly for the management plane available as Power Platform API.
 
 ## Available tools
 Today, three programmability tools are available for administrators.  These increase in complexity and flexibility.  Over time, more first-party libraries will become available in various programming languages.  To keep up with the latest updates, review the [release plans](/dynamics365/release-plans/#microsoft-power-platform).
+
+### Power Platform CLI
+Microsoft Power Platform CLI is a simple, one-stop developer CLI that empowers developers and ISVs to perform various operations in Microsoft Power Platform related to environment lifecycle, authentication, and work with Microsoft Dataverse environments, solution packages, portals, code components, and so on.
 
 ### Power Platform for admins management connectors
 Connectors are the easiest to get started if you are new to automation.  With a graphical workflow editor based on Power Automate, these allow admins to quickly get a routine task implemented.  For more information, see [Get started with Power Platform for admins management connectors](connectors-getting-started.md).
