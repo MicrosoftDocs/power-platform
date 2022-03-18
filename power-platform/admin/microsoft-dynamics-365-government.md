@@ -225,7 +225,7 @@ You use a different set of URLs to access Dynamics 365 US Government environment
 Effective March 2, 2020, the regional Discovery Service will be deprecated. More information: Regional Discovery Service is deprecated.
 
 ## Dynamics 365 US Government feature limitations
-Microsoft strives to maintain functional parity between our commercially available service and those enabled though our U.S. Government clouds. These services are referred to as Dynamics 365 Government Community Cloud (GCC) and GCC High. Refer to the [Global Geographic Availability](https://dynamics.microsoft.com/geographic-availability/) tool to see where the Dynamics 365 Apps and Offers are available throughout the world, including approximate availability timelines. 
+Microsoft strives to maintain functional parity between our commercially available service and those enabled through our US Government clouds. These services are referred to as Dynamics 365 Government Community Cloud (GCC) and GCC High. Refer to the [Global Geographic Availability](https://dynamics.microsoft.com/geographic-availability/) tool to see where the Dynamics 365 Apps and Offers are available throughout the world, including approximate availability timelines. 
 
 There are exceptions to the principle of maintaining product functional parity within the US Government clouds. For more information about feature availability, download this file: [Business Applications US Government - Availability Summary](https://aka.ms/BAPFunctionalParity).
 
