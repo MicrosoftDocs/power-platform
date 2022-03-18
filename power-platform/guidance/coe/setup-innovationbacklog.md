@@ -68,7 +68,13 @@ Before you begin, review the [prerequisites](setup.md) for using the starter kit
 
 1. When the import succeeds, refresh the page and open the Center of Excellence - Innovation Backlog solution.
 
-1. Now, run some instant flows to populate some of the tables with default values.
+### Turn on the flows
+
+In order to populate some of the tables with default values, turn on the following flows:
+- Add pain points
+- Update Software Tools
+
+1. Now, run the flows to populate some of the tables with default values.
     1. Open the **Add pain points** cloud flow and select **Run** > **Run Flow**.
         ![Run Add Pain points cloud flow.](media/ib-2.png "Run Add Pain points cloud flow")
     1. Open the **Update Software Tools** cloud flow and select **Run** > **Run Flow**.
@@ -160,7 +166,7 @@ Before you begin:
 1. Go to the Teams channel, open the Innovation Backlog tab, select the **Web Link**, and copy the app link from the new browser window.
           ![Copy the Innovation Backlog web link.](media/ibteams-8.png "Copy the Innovation Backlog web link")
 1. Go to [flow.microsoft.com](<https://flow.microsoft.com>) > **Solutions** > **Default Solution** and filter by **Environment Variables**
-    ![Open the Default Solution and filter to only show Environment Variables.](media/ib-7.png "Open the Default Solution and filter to only show Environment Variables")
+    ![Open the Default Solution and filter to only show Environment Variables.](https://github.com/MichaelRoth42/media/blob/main/DefaultSolutionEnvironmentVariables.png "Open the Default Solution and filter to only show Environment Variables")
 1. Select the **InnovationBacklogAppURL** variable and paste in the URL for the Innovation Backlog app.
     ![Update the InnovationBacklogAppURL environment variable.](media/ib-8.png "Update the InnovationBacklogAppURL environment variable")
 
