@@ -32,16 +32,16 @@ The customer management plane is where tenant level resources and environments a
 
 The customer data plane is for interacting with data and records stored inside of an environment database.  This database is most commonly referred to as Microsoft Dataverse of which includes its own [rich OData-based API](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview).  Operations using Dataverse APIs include retrieving data from a table, using functions and actions, and executing batch operations.
 
-Ultimately, customers will have two management APIs: one for the management plane and one for the data plane.  This documentation is strictly for the management plane available as Power Platform API and tools that make use of it.
+Ultimately, customers will have two primary APIs: one for the management plane and one for the data plane.  This documentation is strictly for the management plane available as Power Platform API and tools that make use of it.
 
 ## Available tools
-Today, several programmability tools are available for administrators.  These gradually increase in complexity and also capability.  Over time, more libraries will become available in various programming languages.  To keep up with the latest updates, review the [release plans](/dynamics365/release-plans/#microsoft-power-platform).
+Several programmability tools are available for administrators.  These gradually increase in complexity and also capability.  Over time, more libraries will become available in various programming languages.  To keep up with the latest updates, review the [release plans](/dynamics365/release-plans/#microsoft-power-platform).
 
 ### Power Platform for admins management connectors
 Connectors are the easiest to get started if you are new to automation.  With a graphical workflow editor based on Power Automate, these allow admins to quickly get a routine task implemented.  For more information, see [Get started with Power Platform for admins management connectors](connectors-getting-started.md).
 
 ### Power Platform CLI
-Microsoft Power Platform CLI is a simple, one-stop developer CLI that empowers developers and ISVs to perform various operations in Microsoft Power Platform related to environment lifecycle, authentication, and work with Microsoft Dataverse environments, solution packages, portals, code components, and so on.
+[Microsoft Power Platform CLI](https://docs.microsoft.com/powerapps/developer/data-platform/powerapps-cli) is a simple, one-stop developer CLI that empowers developers and ISVs to perform various operations in Microsoft Power Platform related to environment lifecycle, authentication, and work with Microsoft Dataverse environments, solution packages, portals, code components, and so on.
 
 ### PowerShell cmdlets
 PowerShell is a common automation tool at organizations worldwide.  For more information, see [Get started with PowerShell for Power Platform administrators](powershell-getting-started.md).
