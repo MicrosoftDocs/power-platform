@@ -16,7 +16,7 @@
           "Applications"
         ],
         "summary": "Get list of application packages available for a tenant.",
-        "description": "Get list of available application packages for a tenant.",
+        "description": "",
         "operationId": "GetTenantApplicationPackage",
         "produces": [
           "application/json"
@@ -56,7 +56,7 @@
           "Applications"
         ],
         "summary": "Get list of application packages that are available for installation in a target environment.",
-        "description": "Get list of application packages that aavailable for installation in a target environment. Client can filter the application packages based on the installation state (NotInstalled, Installed, All) and any other response parameters utilizing standard OData capabilities.",
+        "description": "",
         "operationId": "GetEnvironmentApplicationPackage",
         "produces": [
           "application/json"
@@ -120,7 +120,7 @@
           "Applications"
         ],
         "summary": "Trigger installation of an application package based on the package unique name into a target environment.",
-        "description": "Trigger installation of an application package based on the package unique name into a target environment. Client can also include custom payload when requesting installation of an application package.",
+        "description": "",
         "operationId": "InstallApplicationPackage",
         "consumes": [
           "application/json"
@@ -187,8 +187,8 @@
         "tags": [
           "Applications"
         ],
-        "summary": "Get the polling status for a previously triggered installation.",
-        "description": "Get the polling status to check the progress of a previously triggered installation based on the operation ID.",
+        "summary": "Get the polling status for a previously triggered installation based on the operation ID.",
+        "description": "",
         "operationId": "GetApplicationPackageInstallStatus",
         "produces": [
           "application/json"
