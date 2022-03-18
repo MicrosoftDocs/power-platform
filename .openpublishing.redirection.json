@@ -354,6 +354,11 @@
       "source_path": "power-platform/admin/supported-web-browsers-and-mobile-devices.md",
       "redirect_url": "/powerapps/limits-and-config",
       "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/troubleshooting-unblock-urls-required.md",
+      "redirect_url": "online-requirements",
+      "redirect_document_id": "false"
     }
   ]
 }

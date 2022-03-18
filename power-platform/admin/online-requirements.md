@@ -1,10 +1,10 @@
 ---
 title: "Power Platform URLs and IP address ranges  | MicrosoftDocs"
-description: Information on URLs and IP addresses to be added to the allow list to use Power Platform.
+description: Provides information about URLs and IP addresses to be added to the allow list to use Power Platform services.
 author: jimholtz
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/14/2022
+ms.date: 03/17/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
