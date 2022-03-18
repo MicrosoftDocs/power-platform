@@ -8,7 +8,7 @@ ms.reviewer: jimholtz
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/30/2021
+ms.date: 03/18/2022
 search.audienceType: 
   - admin
 search.app:
@@ -62,6 +62,9 @@ In an environment, you can only have one application user for each Azure AD&ndas
 6. Select **+ Add an app** to choose the registered Azure AD application that was created for the selected user, and then select **Add**. **Note**: You can also choose an Azure Managed Identity via this experience.
 
    :::image type="content" source="media/add-app-from-azure-ad.png" alt-text="Add an application from Azure AD.":::
+
+   > [!NOTE]
+   > In addition to entering the Application Name or Application ID, you can also enter an Azure Managed Identity Application ID. For Managed Identity, do not enter the Managed Identity Application Name, use the Application ID instead.
 
 7. The selected Azure AD app is displayed under **App**. You can select **Edit** (![Edit.](media/edit-button.png)) to choose another Azure AD application. Under **Business Unit**, select a business unit from the dropdown list.  
 
