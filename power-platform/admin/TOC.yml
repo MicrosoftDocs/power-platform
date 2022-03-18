@@ -556,7 +556,7 @@
       - name: Power Platform API
         items:
         - name: Getting started
-          href: powerplatform-api-getting-started.md
+          href: https://aka.ms/PowerPlatformAPI-Technical
         - name: "Preview: Creating a service principal"
           href: powerplatform-api-create-service-principal.md
         - name: Reference
