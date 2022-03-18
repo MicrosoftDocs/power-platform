@@ -90,6 +90,11 @@ More information:
 
 Import an initial set of assessment questions to get started using the [Maker Assessment](nurture-components.md#maker-assessment) app. You can add your own questions or customize the existing ones using the admin app for this solution.
 
+### Turn on flow
+
+Turn on the flow:
+- Add Maker Assessment Starter Data
+
 Run the **Add Maker Assessment Starter Data** once to add starter data for the Maker Assessment apps: categories, questions, and answers.
 
 ### Share apps with admins and makers
