@@ -1,7 +1,6 @@
 ---
-title: "Preview: Tenant-level analytics" 
+title: "Tenant-level analytics (preview)" 
 description: View tenant-level analytics in a variety of reports
-
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/21/2022
@@ -18,11 +17,16 @@ search.app:
   - Flow
 ---
 
-# Preview: Tenant-level analytics 
+# Tenant-level analytics (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 Tenant admins can view reports that apply to all environments in a tenant. 
+
+> [!IMPORTANT]
+> - This is a preview feature.
+> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+> - This feature is being gradually rolled out across regions and might not be available yet in your region.
 
 To access these reports, sign in to the Power Platform admin center and select **Analytics** > **Power Apps**. In the upper-right corner, select **Tenant level analytics** from the dropdown list. 
 
