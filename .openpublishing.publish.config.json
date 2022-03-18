@@ -71,6 +71,10 @@
     "JimHoltzWorkBranch": [
       "Publish",
       "Pdf"
+    ],
+    "build-2022": [
+      "Publish",
+      "Pdf"
     ]
   },
   "need_generate_pdf_url_template": true,
