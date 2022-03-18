@@ -32,7 +32,9 @@ If you're installing the solution in a new environment or one in which approvals
 
 1. Go to [flow.microsoft.com](https://flow.microsoft.com) and select your CoE environment.
 
-1. Select **+ New** > **Instant (From Blank)**.
+1. Select **+ Create**. 
+2. 
+3. Select **Instant cloud flow**.
 
 1. Pick **manually trigger a flow** as the trigger, and enter **Admin \| Dummy Approval Flow** as the name.
 
