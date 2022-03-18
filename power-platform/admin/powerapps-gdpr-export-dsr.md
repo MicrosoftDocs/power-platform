@@ -3,10 +3,9 @@ title: Responding to Data Subject Rights (DSR) requests to export Power Apps cus
 description: Walkthrough of how to respond to Data Subject Rights (DSR) requests to export Power Apps customer data.
 author: jimholtz
 ms.reviewer: paulliew
-
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/16/2021
+ms.date: 02/28/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -89,6 +88,7 @@ Get-AdminEnvironment -CreatedBy $userId | ConvertTo-Json | Out-File -FilePath "U
  
 ## Step 2: Export the user's environment permissions
 Users can be assigned permissions (such as Environment Admin, Environment Maker, etc.) in an environment, which are stored in Power Apps as a *role assignment*. With the introduction of Dataverse, if a database is created within the environment, the role assignments are stored as records within the Dataverse database environment. For more information, see [Administer environments within Power Apps](environments-overview.md).
+
 
 ### For environments without a Dataverse database
 

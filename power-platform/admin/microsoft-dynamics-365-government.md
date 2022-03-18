@@ -1,5 +1,5 @@
 ---
-title: "Dynamics 365 US Government overview"
+title: "Dynamics 365 service description"
 description: "Learn about features that are specific to Microsoft Dynamics 365 US Government as public sector customers deploy into government community cloud (GCC)." 
 author: carrema
 ms.component: pa-admin
@@ -29,6 +29,16 @@ In response to the unique and evolving requirements of the United States public 
 - Supply Chain Management
 - Customer Voice
 - Omnichannel Engagement Hub
+
+## Dynamics 365 US Government feature limitations
+
+Microsoft strives to maintain functional parity between our commercially available services and those enabled though our U.S. Government clouds, specifically:
+
+- US Government Community Cloud (GCC)
+- US GC High
+- US Department of Defense (US DoD)
+
+There are exceptions to the principle of maintaining product functional parity within the U.S. Government clouds. These exceptions are highlighted through the [Product and Feature Availability](https://aka.ms/bapfunctionalparity) document, and intended to help customers understand and plan for successful implementations of their business application solutions. Microsoft continues to evaluate these services and capabilities for inclusion and updates in future releases.  Check back on a monthly basis for important updates and revisions.
 
 ## About Dynamics 365 US Government environments and products
 
