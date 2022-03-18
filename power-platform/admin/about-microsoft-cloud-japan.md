@@ -5,7 +5,7 @@ author: jimholtz
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/03/2020
+ms.date: 02/23/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -24,16 +24,16 @@ search.app:
 ## Japan GEO expansion announcement  
   
 ### What is Microsoft announcing?  
-The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), are now available as a service within the Japan datacenters.  
+Microsoft Power Platform and Dynamics 365 apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), are now available as a service within the Japan datacenters.  
   
- In addition, customer engagement apps are currently available in 130 markets and 44 languages enabling us to sell side-by-side with [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] in the majority of the markets worldwide. With the inclusion of Japan, our global customers will now be served from datacenters in 5 global regions around the world.  
+ In addition, Power Platform and Dynamics 365 apps are currently available in 130 markets and 44 languages enabling us to sell side-by-side with [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] in the majority of the markets worldwide. With the inclusion of Japan, our global customers will now be served from datacenters in 5 global regions around the world.  
   
- This marks an important step for on our cloud journey to serve our customers and partners in Japan (Japan GEO). By bringing customer engagement apps to the local region we will be able to serve our customers more effectively and with better performance while also ensuring compliance with local requirements.  
+ This marks an important step for on our cloud journey to serve our customers and partners in Japan (Japan GEO). By bringing Power Platform and Dynamics 365 apps to the local region we will be able to serve our customers more effectively and with better performance while also ensuring compliance with local requirements.  
   
 ### What prompted Microsoft to undertake this geographic expansion?  
- In order to better serve customer needs for data residency and reduced latency, we continually evaluate where we should expand availability around the world. We are committed to long-term investment in customer engagement apps and expansion over time.  
+ In order to better serve customer needs for data residency and reduced latency, we continually evaluate where we should expand availability around the world. We are committed to long-term investment in Power Platform and Dynamics 365 apps and expansion over time.  
   
-Customer engagement apps (such as Dynamics 365 Sales and Customer Service), are currently available in 130 markets and 44 languages enabling us to sell side-by-side with Office365 in the majority of the markets around the globe.  
+Power Platform and Dynamics 365 apps (such as Dynamics 365 Sales and Customer Service), are currently available in 130 markets and 44 languages enabling us to sell side-by-side with Office365 in the majority of the markets around the globe.  
   
  This global expansion will enable us to deliver on the promise of increasing sales productivity while allowing our customers to sell effectively, market smarter, and provide care everywhere to offer amazing experiences to their customers.  
   
@@ -50,7 +50,7 @@ Customer engagement apps (such as Dynamics 365 Sales and Customer Service), are 
  Yes, on the date of general availability, the standard 99.9% financially backed SLA will apply, just as it does in our other regions around the world. Note: the SLA does not cover [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)].  
   
 ### Do existing customers have the choice to keep their service from being moved to the Japan Datacenters?  
- Existing customers will remain in the datacenters where they are currently deployed unless they request to be moved. [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] reserves the right to make a unilateral decision to migrate accounts based on multiple conditions. All new customers purchasing customer engagement apps (such as Dynamics 365 Sales and Customer Service), in Japan will be provisioned within the Japan datacenter.  
+ Existing customers will remain in the datacenters where they are currently deployed unless they request to be moved. [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] reserves the right to make a unilateral decision to migrate accounts based on multiple conditions. All new customers purchasing Power Platform and Dynamics 365 apps (such as Dynamics 365 Sales and Customer Service), in Japan will be provisioned within the Japan datacenter.  
   
 <a name="BKMK_RequestMove"></a>   
 ### How do I request my environment to be moved to the Japan datacenter?  
@@ -74,10 +74,10 @@ A support engineer will assist you in verifying required prerequisites and provi
 ### If I am scheduled for an update to [!INCLUDE[pn_crm_online_2015_update](../includes/pn-crm-online-2015-update.md)] or [!INCLUDE[pn_crm_online_2015_update_1_shortest](../includes/pn-crm-online-2015-update-1-shortest.md)], will Microsoft apply the update at the same time as their migration to the Japan datacenter?  
  You must be updated to [!INCLUDE[pn_crm_online_2015_update](../includes/pn-crm-online-2015-update.md)] or later before migrating to the Japan datacenter.  Customers can schedule their update.  
   
-### If I have both Microsoft 365 services and customer engagement apps, how will migration be handled?  
+### If I have both Microsoft 365 services and Power Platform and Dynamics 365 apps, how will migration be handled?  
  The move of each service will be handled separately and customers will be fully supported even if one service has been moved and the other has not. Customers will be able to choose their move date and time. [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] will work with the customer to schedule the move. For [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)], customers will be notified through the message center about the move timeline, but the large number of existing customers means that individual scheduling is not possible. For [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] scheduling and migration, see [Moving core data to new Microsoft 365 datacenter geos](/microsoft-365/enterprise/moving-data-to-new-datacenter-geos).  
   
-### Can I move Microsoft 365 and customer engagement apps at the same time?  
+### Can I move Microsoft 365 and Power Platform and Dynamics 365 apps at the same time?  
  The move process for each service is handled separately, but the  move can be scheduled to coincide with the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] move if requested.  
   
 ### Will multi-geo environments be available to customers in Japan?  
@@ -86,16 +86,16 @@ A support engineer will assist you in verifying required prerequisites and provi
  For additional guidance regarding multiple tenants and multiple environments, see [Multiple online environments or tenants](/dynamics365/admin/multiple-online-instances-tenants). This link will be updated with the [!INCLUDE[pn_crm_online_2015_update](../includes/pn-crm-online-2015-update.md)] launch.  
   
 ### How will this affect users or partners?  
- Regardless of where customer engagement apps are provisioned, you’ll have the ability to determine which of your users will have access to those services based on how you configure customer engagement apps.  
+ Regardless of where Power Platform and Dynamics 365 apps are provisioned, you’ll have the ability to determine which of your users will have access to those services based on how you configure Power Platform and Dynamics 365 apps.  
   
-### Will customer engagement apps be available on Azure Infrastructure as a Service (IaaS) in Japan?  
- At this time customer engagement apps are only available for dev/test scenarios and isn’t supported for production use cases.  Developers can leverage their MSDN subscription and [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] credits for dev/test scenarios. Note: we recently announced intent to support customer engagement apps on [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] IaaS but we are dependent on [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] Premium Storage availability being available in each geographic region. Azure’s Limited Public Preview will only be available in the U.S. and part of Europe. We do not have any additional information regarding other geos or general availability at this time.  
+### Will Power Platform and Dynamics 365 apps be available on Azure Infrastructure as a Service (IaaS) in Japan?  
+ At this time Power Platform and Dynamics 365 apps are only available for dev/test scenarios and isn’t supported for production use cases.  Developers can leverage their MSDN subscription and [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] credits for dev/test scenarios. Note: we recently announced intent to support Power Platform and Dynamics 365 apps on [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] IaaS but we are dependent on [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] Premium Storage availability being available in each geographic region. Azure’s Limited Public Preview will only be available in the U.S. and part of Europe. We do not have any additional information regarding other geos or general availability at this time.  
   
 ### Where can I find more about security, data privacy, and compliance?  
  The Trust Center will be updated as needed when the Japan datacenters launch into general availability. To see the current version of the Trust Center, see: [Microsoft Trust Center](https://go.microsoft.com/fwlink/p/?LinkID=393409).  
 
 ### Will Microsoft Dynamics Marketing, Social Engagement, and Parature, from Microsoft be available in the Japan datacenters?  
- These services will be available for purchase in the local market but will be delivered outside of the Japan datacenters at this time. Note: customer engagement apps leverages [!INCLUDE[pn_microsoft_azure_active_directory](../includes/pn-microsoft-azure-active-directory.md)] and Multi-Factor Authentication, which don’t offer a region choice to customers.  
+ These services will be available for purchase in the local market but will be delivered outside of the Japan datacenters at this time. Note: Power Platform and Dynamics 365 apps leverages [!INCLUDE[pn_microsoft_azure_active_directory](../includes/pn-microsoft-azure-active-directory.md)] and Multi-Factor Authentication, which don’t offer a region choice to customers.  
   
 <a name="BKMK_Pricing"></a>   
 ## Pricing  

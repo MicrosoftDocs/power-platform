@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "power-platform/admin/government-feature-availability.md",
+      "redirect_url": "microsoft-dynamics-365-government#dynamics-365-us-government-feature-limitations",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "power-platform/admin/create-environment-powerapps.md",
       "redirect_url": "create-environment",
       "redirect_document_id": "false"
@@ -343,6 +348,16 @@
     {
       "source_path": "power-platform/flow/index.md",
       "redirect_url": "/power-platform/flow/stub",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/supported-web-browsers-and-mobile-devices.md",
+      "redirect_url": "/powerapps/limits-and-config",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/troubleshooting-unblock-urls-required.md",
+      "redirect_url": "online-requirements",
       "redirect_document_id": "false"
     }
   ]
