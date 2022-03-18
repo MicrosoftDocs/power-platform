@@ -18,6 +18,8 @@ search.app:
 
 # Hybrid Modern Authentication (HMA) for Exchange on-premises (preview) 
 
+<!-- I think this topic has been deleted -->
+
 Dynamics 365 can now connect to mailboxes hosted on Exchange on-premises using Hybrid Modern Authentication (HMA). Server-side synchronization will authenticate against Azure Active Directory (Azure AD) using a certificate you provide and stored securely in Azure Key Vault. You will need to establish an application registration secured by a client secret to enable Dynamics 365 to access to the certificate in Key Vault. Once Dynamics 365 is able to retrieve the certificate, the certificate will be then used to authenticate as a specific app and access the Exchange on-premises resource. 
 
 > [!IMPORTANT]
