@@ -1,5 +1,5 @@
 ---
-title: "Preview: Gateway cluster management | MicrosoftDocs"
+title: "Gateway cluster management (preview) | MicrosoftDocs"
 description: View and manage on-premises gateway clusters.
 ms.service: power-platform
 ms.component: pa-admin
@@ -16,9 +16,14 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Preview: Gateway cluster management
+# Gateway cluster management (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+
+> [!IMPORTANT]
+> - This is a preview feature.
+> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+> - This feature is being gradually rolled out across regions and might not be available yet in your region.
 
 In the **Data** page of the Power Platform admin center (https://admin.powerplatform.microsoft.com), you can view and manage gateway clusters.
 

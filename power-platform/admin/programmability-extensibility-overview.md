@@ -1,12 +1,10 @@
 ---
-title: "Preview: Programmability and extensibility | Microsoft Docs"
+title: "Programmability and extensibility (preview) | Microsoft Docs"
 description: Overview of available programmable tools for Microsoft Power Platform administrators
 author: laneswenka
 ms.reviewer: jimholtz
-
 ms.component: pa-admin
 ms.topic: overview
-
 ms.date: 03/19/2021
 ms.subservice: admin
 ms.author: laswenka
@@ -16,11 +14,16 @@ search.app:
   - Powerplatform
 ---
 
-# Preview: Programmability and extensibility overview
+# Programmability and extensibility overview (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 Microsoft Power Platform administrators often have the need to orchestrate and automate routine activities for their tenant.  This can be accomplished in a variety of ways using the tools outlined below.  
+
+> [!IMPORTANT]
+> - This is a preview feature.
+> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+> - This feature is being gradually rolled out across regions and might not be available yet in your region.
 
 > [!NOTE]
 > Programmability tools are currently developed API-first, meaning new properties and functionality will first be exposed in the latest API versions made available.  They will later be uptaken into updates to our PowerShell cmdlets and connectors.  In the future, this will become synchronized across all available tools.  

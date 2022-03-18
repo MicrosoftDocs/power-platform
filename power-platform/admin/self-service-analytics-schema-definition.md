@@ -1,5 +1,5 @@
 ---
-title: "Preview: Microsoft Power Platform self-service analytics schema definition"
+title: "Microsoft Power Platform self-service analytics schema definition (preview)"
 description: This topic discusses the contents of the data exported from Power Platform to Azure Data Lake Gen2 storage locations. 
 ms.component: pa-admin
 ms.topic: conceptual
@@ -17,11 +17,16 @@ search.app:
   - Flow
 ---
 
-# Preview: Microsoft Power Platform self-service analytics schema definition
+# Microsoft Power Platform self-service analytics schema definition (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 This topic discusses the contents of the data exported from Power Platform to Azure Data Lake Gen2 storage locations.  
+
+> [!IMPORTANT]
+> - This is a preview feature.
+> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+> - This feature is being gradually rolled out across regions and might not be available yet in your region.
 
 ## Structure of the data output
 

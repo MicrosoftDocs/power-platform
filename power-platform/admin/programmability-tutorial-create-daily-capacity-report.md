@@ -1,9 +1,8 @@
 ---
-title: "Preview: Programmability and extensibility - Tutorial - Create a daily capacity report | Microsoft Docs"
+title: "Programmability and extensibility - Tutorial - Create a daily capacity report (preview) | Microsoft Docs"
 description: This tutorial will demonstrate how to use the Power Platform API (preview) to create a daily capacity report.
 author: laneswenka
 ms.reviewer: jimholtz
-
 ms.component: pa-admin
 ms.topic: reference
 ms.date: 10/22/2021
@@ -15,9 +14,14 @@ search.app:
   - Powerplatform
 ---
 
-# Preview: Create a daily capacity report
+# Create a daily capacity report (preview)
 
 The Power Platform API can be used to extract the various details and metadata from your Microsoft Power Platform environments, both those that use Microsoft Dataverse and those that don't.  The API is used internally by various clients available today such as PowerShell.
+
+> [!IMPORTANT]
+> - This is a preview feature.
+> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+> - This feature is being gradually rolled out across regions and might not be available yet in your region.
 
 In this tutorial, you will learn how to:
 

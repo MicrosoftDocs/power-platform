@@ -1,7 +1,6 @@
 ---
-title: "Preview: Tenant-level Analytics for Power Apps" 
+title: Tenant-level Analytics for Power Apps (preview)
 description: View tenant-level analytics for Power Apps.
-
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/07/2022
@@ -18,11 +17,16 @@ search.app:
   - Flow
 ---
 
-# Preview: Tenant-level Analytics for Power Apps
+# Tenant-level Analytics for Power Apps (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 The following tenant-level reports are available for Power Apps. 
+
+> [!IMPORTANT]
+> - This is a preview feature.
+> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+> - This feature is being gradually rolled out across regions and might not be available yet in your region.
 
 ## Power Apps - Usage reports
 

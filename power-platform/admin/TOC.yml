@@ -158,7 +158,7 @@
           href: opt-in-early-access-updates.md
         - name: General availability deployment
           href: general-availability-deployment.md
-        - name: "Preview: Manage maintenance window"
+        - name: "Manage maintenance window (preview)"
           href: manage-maintenance-window.md
       - name: Manage settings 
         items:
@@ -446,37 +446,37 @@
           href: analytics-flow.md
         - name: Analytics for UI flows
           href: analytics-ui-flow.md 
-      - name: Reports
+      - name: Reports (preview)
         items:
-        - name: "Preview: Tenant-level analytics (default)" 
+        - name: "Tenant-level analytics (default)" 
           href: tenant-level-analytics.md
-        - name: "Preview: Power Apps analytics"
+        - name: "Power Apps analytics"
           href: powerapps-analytics-reports.md
-        - name: "Preview: Power Automate analytics"
+        - name: "Power Automate analytics"
           href: power-automate-analytics-reports.md
         # Comment out the next topics before publish      
-        # - name: "Preview: Power Apps license utilization"
+        # - name: "Power Apps license utilization"
         #   href: powerapps-license-utilization.md
-      - name: Data export
+      - name: Data export (preview)
         items:
-        - name: "Preview: Export Power Apps inventory and usage data"
+        - name: "Export Power Apps inventory and usage data"
           href: self-service-analytics.md
         # Comment out the next topic before publish    
-        # - name: "Preview: Self-service analytics schema definition"
+        # - name: "Self-service analytics schema definition"
         #   href: self-service-analytics-schema-definition.md
-        - name: "Preview: Create custom dashboards using Power Apps inventory and usage data"
+        - name: "Create custom dashboards using Power Apps inventory and usage data"
           href: build-custom-reports.md
-      - name: "Preview: Analyze telemetry with Application Insights"
+      - name: "Analyze telemetry with Application Insights (preview)"
         items:
-        - name: "Preview: Model-driven apps and Microsoft Dataverse telemetry"
+        - name: "Model-driven apps and Microsoft Dataverse telemetry"
           href: analyze-telemetry.md
-        - name: "Preview: Overview of integration with Application Insights"
+        - name: "Overview of integration with Application Insights"
           href: overview-integration-application-insights.md
-        - name: "Preview: Telemetry events for model-driven apps" 
+        - name: "Telemetry events for model-driven apps" 
           href: telemetry-events-model-driven-apps.md
-        - name: "Preview: Telemetry events for Dataverse"
+        - name: "Telemetry events for Dataverse"
           href: telemetry-events-dataverse.md   
-        - name: "Preview: Set up export to Application Insights"
+        - name: "Set up export to Application Insights"
           href: set-up-export-application-insights.md
     - name: Storage
       items: 
@@ -530,7 +530,7 @@
         href: programmability-authentication.md
       - name: Tutorials
         items:
-        - name: "Preview: Create a daily capacity report"
+        - name: "Create a daily capacity report (preview)"
           href: programmability-tutorial-create-daily-capacity-report.md
       - name: PowerShell
         items:
@@ -552,21 +552,21 @@
         items:
         - name: Getting started
           href: powerplatform-api-getting-started.md
-        - name: "Preview: Creating a service principal"
+        - name: "Creating a service principal (preview)"
           href: powerplatform-api-create-service-principal.md
         - name: Reference
           items:
           - name: "2020-10-01"
             items:
-            - name: Environments
+            - name: Environments (preview)
               items:
-              - name: "Preview: List environments"
+              - name: "List environments"
                 href: list-environments.md
-              - name: "Preview: Create a Dataverse application user"
+              - name: "Create a Dataverse application user"
                 href: create-dataverseapplicationuser.md
             - name: Tenant Settings
               items:
-              - name: "Preview: List tenant settings"
+              - name: "List tenant settings (preview)"
                 href: list-tenantsettings.md
     - name: PowerShell support for Power Apps 
       items:
@@ -609,7 +609,7 @@
           items: 
           - name: Control user access to environments
             href: control-user-access.md  
-          - name: "Preview: Restrict cross-tenant access" 
+          - name: "Restrict cross-tenant access (preview)" 
             href: cross-tenant-restrictions.md
           - name: Content security policy
             href: content-security-policy.md
@@ -722,9 +722,9 @@
       items: 
       - name: "About on-premises gateway"
         href: wp-onpremises-gateway.md
-      - name: "Preview: On-premises data gateway management"
+      - name: "On-premises data gateway management (preview)"
         href: onpremises-data-gateway-management.md
-      - name: "Preview: Data source management"
+      - name: "Data source management (preview)"
         href: onpremises-data-gateway-source-management.md
     - name: Manage data
       items: 
@@ -899,7 +899,7 @@
         href: manage-bing-maps-organization.md 
       - name: Enable Power Automate integration
         href: enable-embedded-flow-in-your-organization.md 
-      - name: "Preview feature: Live Assist powered by Café X"
+      - name: "Live Assist powered by Café X (preview)"
         href: /dynamics365/customer-engagement/live-assist/live-assist-microsoft-dynamics-365-powered-by-cafe-x
       - name: Use Power BI
         href: use-power-bi.md 

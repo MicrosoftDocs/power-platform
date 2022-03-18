@@ -1,5 +1,5 @@
 ---
-title: "Preview: Microsoft Power Platform self-service analytics export Power Platform inventory and usage data"
+title: "Microsoft Power Platform self-service analytics export Power Platform inventory and usage data (preview)"
 description: Export Power Apps canvas apps inventory and usage data to use with your organization's line-of-business scenarios.
 ms.component: pa-admin
 ms.topic: conceptual
@@ -17,11 +17,16 @@ search.app:
   - Flow
 ---
 
-# Preview: Set up Microsoft Power Platform self-service analytics to export Power Platform inventory and usage data 
+# Set up Microsoft Power Platform self-service analytics to export Power Platform inventory and usage data (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 With the Power Platform admin center, you can export Power Platform inventory and usage data directly into [Azure Data Lake Storage](https://azure.microsoft.com/solutions/data-lake/) to use with your organization's line-of-business scenarios. By using your own Data Lake Storage, you can "slice and dice" the data based on your unique requirements. You can build custom reports with Power BI, including views at the individual business unit level and detailed app-level reports at the tenant and environment level. Having the data in your own data lake also means that you can store data for the durations specified in your organization's data retention policies.
+
+> [!IMPORTANT]
+> - This is a preview feature.
+> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+> - This feature is being gradually rolled out across regions and might not be available yet in your region.
 
 Data Lake Storage is a key part of Cortana Intelligence, meaning that it works with Azure Synapse Analytics, Power BI, and Azure Data Factory for a complete cloud big-data and advanced analytics platform that helps you with everything from data preparation to doing interactive analytics on large-scale datasets. Architected from the ground up for cloud scale and performance, Data Lake Storage is a cost-effective solution to run big data workloads. With Data Lake Storage, your organization can analyze all its data in a single place with no artificial constraints. 
 

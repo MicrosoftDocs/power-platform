@@ -1,7 +1,6 @@
 ---
-title: "Preview: Tenant-level analytics for Power Automate" 
+title: Tenant-level analytics for Power Automate (preview) 
 description: View Tenant-level analytics for Power Automate.
-
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/07/2022
@@ -18,11 +17,16 @@ search.app:
   - Flow
 ---
 
-# Preview: Tenant-level analytics for Power Automate
+# Tenant-level analytics for Power Automate (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 The following tenant-level reports are available for Power Automate. 
+
+> [!IMPORTANT]
+> - This is a preview feature.
+> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+> - This feature is being gradually rolled out across regions and might not be available yet in your region.
 
 ## Power Automate - Usage reports
 

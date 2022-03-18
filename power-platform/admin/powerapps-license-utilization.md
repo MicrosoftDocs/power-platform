@@ -1,5 +1,5 @@
 ---
-title: "Preview: Power Apps license utilization" 
+title: "Power Apps license utilization (preview)" 
 description: View Power Apps license utilization.
 ms.service: power-platform
 ms.component: pa-admin
@@ -18,11 +18,16 @@ search.app:
   - Flow
 ---
 
-# Preview: Power Apps license utilization
+# Power Apps license utilization (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 The following tenant-level reports are available for Power Apps. 
+
+> [!IMPORTANT]
+> - This is a preview feature.
+> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+> - This feature is being gradually rolled out across regions and might not be available yet in your region.
 
 ## Power Apps - license utilization
 
