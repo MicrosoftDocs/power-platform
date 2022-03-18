@@ -1,13 +1,13 @@
 ---
 title: "Dynamics 365 US Government overview"
 description: "Learn about features that are specific to Microsoft Dynamics 365 US Government as public sector customers deploy into government community cloud (GCC)." 
-author: jimholtz
-
+author: carrema
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/12/2021
+ms.date: 03/09/2022
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: macarrer
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:
@@ -17,7 +17,7 @@ search.app:
   - Flow
 ---
 
-# Dynamics 365 US Government 
+# Dynamics 365 US Government  
 
 In response to the unique and evolving requirements of the United States public sector, Microsoft has created Microsoft Dynamics 365 US Government that is available to qualified government tables in the United States. On October 11, 2016, Microsoft announced the next generation of intelligent business applications in the cloud under the brand Microsoft Dynamics 365. To this end, Microsoft Dynamics 365 US Government entails a continuity of the protected environment that was originally branded Microsoft CRM Online Government where the protections afforded to the government community cloud under the new brand are now represented by eight discrete functions: 
 
@@ -79,7 +79,7 @@ In addition to the logical separation of customer content at the application lay
 
 ### Customer content located within the United States
 
-Dynamics 365 US Government services are provided from datacenters physically located in the United States. Customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service,  Dynamics 365 Project Service Automation, Dynamics 365 Finance, and Dynamics 365 Supply Chain Management) customer content is stored at rest in datacenters physically located only in the US.
+Dynamics 365 US Government services are provided from datacenters physically located in the United States. Microsoft Power Platform and Dynamics 365 apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service,  Dynamics 365 Project Service Automation, Dynamics 365 Finance, and Dynamics 365 Supply Chain Management) customer content is stored at rest in datacenters physically located only in the US.
 
 ### Restricted data access by administrators
 
@@ -163,7 +163,7 @@ Dynamics 365 US Government leverages the Microsoft 365 customer administrator UI
 
 ### Dynamics 365 US Government and third-party services
 
-Customer engagement apps provide the ability to integrate third-party applications into the service. These third-party applications and services might involve storing, transmitting, and processing your organization’s customer data on third-party systems that are outside of the customer engagement apps Engagement infrastructure and therefore are not covered by the customer engagement apps compliance and data protection commitments. We recommend that you review the privacy and compliance statements provided by the third parties when assessing the appropriate use of these services for your organization.
+Power Platform and Dynamics 365 apps provide the ability to integrate third-party applications into the service. These third-party applications and services might involve storing, transmitting, and processing your organization’s customer data on third-party systems that are outside of the Power Platform and Dynamics 365 apps Engagement infrastructure and therefore are not covered by the Power Platform and Dynamics 365 apps compliance and data protection commitments. We recommend that you review the privacy and compliance statements provided by the third parties when assessing the appropriate use of these services for your organization.
 
 ### Dynamics 365 US Government and Azure Services
 
@@ -224,11 +224,17 @@ You use a different set of URLs to access Dynamics 365 US Government environment
 
 Effective March 2, 2020, the regional Discovery Service will be deprecated. More information: Regional Discovery Service is deprecated.
 
+## Dynamics 365 US Government feature limitations
+Microsoft strives to maintain functional parity between our commercially available service and those enabled through our US Government clouds. These services are referred to as Dynamics 365 Government Community Cloud (GCC) and GCC High. Refer to the [Global Geographic Availability](https://dynamics.microsoft.com/geographic-availability/) tool to see where the Dynamics 365 Apps and Offers are available throughout the world, including approximate availability timelines. 
+
+There are exceptions to the principle of maintaining product functional parity within the US Government clouds. For more information about feature availability, download this file: [Business Applications US Government - Availability Summary](https://aka.ms/BAPFunctionalParity).
+
 ### See also  
-[Dynamics 365 US Government - Feature availability](government-feature-availability.md)<br/>
-[IP addresses and URLs](online-requirements.md#ip-addresses-and-urls)<br />
+[Power Platform URLs and IP address ranges](online-requirements.md)<br />
 [Power Apps US Government](./powerapps-us-government.md)<br />
 [Power Automate US Government](/power-automate/us-govt)
+
+
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

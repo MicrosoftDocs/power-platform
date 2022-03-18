@@ -2,7 +2,7 @@
 title: "Rate limits for chatbots"
 description: "Rate limits determine how often messages can be sent to a chatbot"
 keywords: "PVA, quotas, rate limits, requests, restrictions"
-ms.date: 5/19/2021
+ms.date: 03/09/2022
 
 ms.topic: article
 author: iaanw
@@ -51,10 +51,10 @@ These limits apply to the Power Virtual Agents web app and the Power Virtual Age
 
 ### Power Virtual Agents subscription limits
 
-| Feature                             | Standard subscription              | Teams (select Microsoft 365 subscriptions)                         |
-| ----------------------------------- | ---------------------------------- | ------------------------------------------------------------------ |
-| Sessions                            | N/A                                | 10 per user every 24 hours across all bots in a tenant<sup>1</sup> |
-| Power Platform requests<sup>2</sup> | 250,000 every 24 hours<sup>3</sup> | 2,000 every 24 hours                                               |
+| Feature                             | Standard subscription              | Teams (select Microsoft 365 subscriptions)                                                                                                                   |
+| ----------------------------------- | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Sessions                            | N/A                                | Chat sessions are unlimited per tenant every month, but a service limit of 10 sessions per user every 24 hours across all bots in a tenant will be enforced.<sup>1</sup> |
+| Power Platform requests<sup>2</sup> | 250,000 every 24 hours<sup>3</sup> | 2,000 every 24 hours                                                                                                                                         |
 
 <sup>1</sup> Power Virtual Agents [sessions](analytics-sessions.md) that are included with [Microsoft 365 subscriptions](requirements-licensing-subscriptions.md#power-virtual-agents-for-microsoft-teams-plan) aren't pooled.  
 <sup>2</sup> These requests are consumed by Power Automate flows that are triggering by Power Virtual Agents chatbots. Learn more about [Power Automate limits](/power-platform/admin/api-request-limits-allocations).  
