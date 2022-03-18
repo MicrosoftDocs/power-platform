@@ -235,7 +235,7 @@ Previously, US Government customers needed to contact support before configuring
 
 ## Power Apps US Government feature limitations
 
-Microsoft strives to maintain functional parity between our commercially available service and those enabled though our US Government clouds. These services are referred to as Power Apps Government Community Cloud (GCC) and GCC High. Refer to the [Global Geographic Availability](https://dynamics.microsoft.com/geographic-availability/) tool to see where the Power Apps is available throughout the world, including approximate availability timelines. 
+Microsoft strives to maintain functional parity between our commercially available service and those enabled through our US Government clouds. These services are referred to as Power Apps Government Community Cloud (GCC) and GCC High. Refer to the [Global Geographic Availability](https://dynamics.microsoft.com/geographic-availability/) tool to see where the Power Apps is available throughout the world, including approximate availability timelines. 
 
 There are exceptions to the principle of maintaining product functional parity within the US Government clouds. For more information about feature availability, download this file: [Business Applications US Government - Availability Summary](https://aka.ms/BAPFunctionalParity).
 
