@@ -1,8 +1,7 @@
 ---
-title: "Preview: Analyze model-driven apps and Dataverse telemetry with Application Insights | Microsoft Docs"
+title: "Analyze model-driven apps and Dataverse telemetry with Application Insights (preview) | Microsoft Docs"
 description: About analyzing model-driven apps and Microsoft Dataverse telemetry with Application Insights
 services: powerapps
-
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 07/27/2021
@@ -18,12 +17,17 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Preview: Analyze model-driven apps and Microsoft Dataverse telemetry with Application Insights
+# Analyze model-driven apps and Microsoft Dataverse telemetry with Application Insights (preview)
 <!-- fwlink: 2147020 2151390 -->
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 You can set up an Application Insights environment to receive telemetry on diagnostics and performance captured by the Dataverse platform.
+
+> [!IMPORTANT]
+> - This is a preview feature.
+> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+> - This feature is being gradually rolled out across regions and might not be available yet in your region.
 
 You can subscribe to receive telemetry about operations that applications perform on your Dataverse database and within model-driven apps. This telemetry provides information that you can use to diagnose and troubleshoot issues related to errors and performance.
 
@@ -34,7 +38,6 @@ You don't need to write any code to enable this telemetry. You can enable or dis
 > [!NOTE]
 > Enablement of Application Insights is limited to customers with a paid/premium Dataverse licenses available for the tenant. Details of additional licensing requirements will be provided in admin documentation and in general availability [release plans](/dynamics365/release-plans/). Additional details on minimum Dataverse capacity requirements to access the Data Export features will be announced in advance of general availability.
         
-
 ## Why do I need telemetry?
 
 Telemetry provides data about what's going on within a model-driven app or on the server. Without this data, the app or service is a "black box"; the only way to get insight if you have an issue is to contact technical support. Telemetry enables you to detect and measure specific operations to better understand whether things are working normally or something is negatively affecting the system.
