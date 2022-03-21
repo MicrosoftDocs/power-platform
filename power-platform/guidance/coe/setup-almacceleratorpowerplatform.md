@@ -117,7 +117,7 @@ Creating an app registration for the ALM accelerator is a one-time setup step to
 
       If you cannot find the Azure DevOps permissions in the **APIs my organization uses** you can get the **DevOps Application (client) ID** by following these steps:
 
-      1. Open a private browser session and go to **https://dev.azure.com/[your devops organization]/_apis
+      1. Open a private browser session and go to `https://dev.azure.com/[your devops organization]/_apis` 
       1. After being redirected to the login page, copy the value of the **client_id** parameter in the url on the login page
 
       ![Copy the value of the client id parameter.](media/almacceleratorpowerplatform-components/aa4pp-devops-clientid.png)
