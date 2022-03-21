@@ -106,14 +106,21 @@ Creating an app registration for the ALM accelerator is a one-time setup step to
 1. Repeat the preceding steps for the following permissions:
     - **PowerApps-Advisor (Analysis All)**. This is required for running static analysis via the [app checker](../../alm/checker-api/overview.md). This permission can be found under **APIs my organization uses**.
 
-    - **DevOps**. This is required for connecting to Azure DevOps via the custom connector in the ALM accelerator app. This permission can be found under **APIs my organization uses**.
+    - **DevOps**. This is required for connecting to Azure DevOps via the custom connector in the ALM accelerator app. This permission can either be found under Microsoft APIs or under **APIs my organization uses**.
 
-      When adding the Azure DevOps permission, select **APIs my organization uses**, and then search for **DevOps** and copy the **Application (client) ID**.
+      If adding the Azure DevOps permissions from the **APIs my organization uses** list you should copy the **Application (client) ID** for later use.
 
         > [!IMPORTANT]
         > You'll use this value later and specifically call it out as the **DevOps Application (client) ID**, which is different from the **Application (client) ID** you'll copy in step 12 of this procedure.
 
       ![Copy the Application client ID.](media/almacceleratorpowerplatform-components/image-4c6d6244-004e-4ac9-9034-79274f9be4c8.png)
+
+      If you cannot find the Azure DevOps permissions in the **APIs my organization uses** you can get the **DevOps Application (client) ID** by following these steps:
+
+      1. Open a private browser session and go to **https://dev.azure.com/[your devops organization]/_apis
+      1. After being redirected to the login page, copy the value of the **client_id** parameter in the url on the login page
+
+      ![Copy the value of the client id parameter.](media/almacceleratorpowerplatform-components/aa4pp-devops-clientid.png)
 
 1. After adding permissions in your app registration, select **Grant Admin consent for (your tenant)**.
 
