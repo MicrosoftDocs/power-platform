@@ -236,6 +236,16 @@ The **VerifyDefaultEnvironmentVariableValues** can be used to ensure that specif
     | ClientId  | [The Application (client) ID you copied when creating the app registration] |
     | ClientSecret | [The Application (client) secret you copied when creating the app registration] <br>**Note:** We recommend that you secure this value by selecting the lock next to the value so others can't see your secret. |
     | TenantID  | [The Directory (tenant) ID you copied when creating the app registration] |
+    | AADHost | The Azure Active Directory authorization endpoint, for public cloud use: **login.microsoftonline.com**, for government clouds use the appropriate authorization url.
+
+1. When using Canvas studio Test Automation in your pipelines, the following variables are also required in the variable group.
+
+    |Name| Value |
+    |--|--|
+    | TestAutomationLoginMethod | **`CloudIdentity`** |
+    | TestAutomationMakerPortalUrl | The URL from the Power Apps maker portal, typically **`https://make.powerapps.com`** |
+    | TestAutomationUsername | The user account used to execute the automated tests. |
+    | TestAutomationPassword | The password for the user account to execute the automated tests. |
 
 ### Update permissions for the project build service
 
