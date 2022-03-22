@@ -166,6 +166,8 @@ If you aren't using the [Admin - Command Center](core-components.md#admin---comm
 ## Get a Power Apps URL from a production environment
 
 1. Go to [make.powerapps.com](https://make.powerapps.com), and then select your CoE environment.
+1. Select **Apps**.#
+1. Select the app you need the URL for.
 1. Select **...** > **Details**.
 1. Select the **Web link**.
 

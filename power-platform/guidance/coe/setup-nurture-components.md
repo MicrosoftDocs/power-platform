@@ -90,7 +90,13 @@ More information:
 
 Import an initial set of assessment questions to get started using the [Maker Assessment](nurture-components.md#maker-assessment) app. You can add your own questions or customize the existing ones using the admin app for this solution.
 
-Run the **Add Maker Assessment Starter Data** once to add starter data for the Maker Assessment apps: categories, questions, and answers.
+### Turn on flow
+
+Turn on the flow:
+
+- Add Maker Assessment Starter Data
+
+Run the **Add Maker Assessment Starter Data** flow once to add starter data for the Maker Assessment apps: categories, questions, and answers.
 
 ### Share apps with admins and makers
 
@@ -105,6 +111,9 @@ More information:
 - [Share a canvas app in Microsoft Teams](faq.md#share-an-app-from-a-dataverse-for-teams-environment)
 
 ## Set up Pulse feedback survey
+
+>[!NOTE]
+>The flows supporting this processes use the [Microsoft Teams](/connectors/teams/) connector. Due to limitations of this connector, this process is currently not available in US Government (GCC High) and US Department of Defense (DoD).
 
 ### Update environment variables values
 
