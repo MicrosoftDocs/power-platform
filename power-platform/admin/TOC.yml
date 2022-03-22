@@ -560,13 +560,13 @@
       - name: Power Platform API
         items:
         - name: Getting started
-          href: rest/api/power-platform
+          href: /rest/api/power-platform
         - name: "Preview: Creating a service principal"
           href: powerplatform-api-create-service-principal.md
         - name: Reference
           items:
           - name: "2022-03-01-preview"
-            href: rest/api/power-platform
+            href: /rest/api/power-platform
           - name: "2020-10-01"
             items:
             - name: Environments

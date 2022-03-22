@@ -47,7 +47,7 @@ Here are examples of non-breaking changes:
 
 | Version | Type | Reference | Deprecation date | Decommission date
 | --- | --- | --- | --- |
-| 2022-03-01-preview | Public preview | [2022-03-01-preview Ref](https://aka.ms/PowerPlatformAPI-Technical) | N/A | N/A |
+| 2022-03-01-preview | Public preview | [2022-03-01-preview Ref](/rest/api/power-platform) | N/A | N/A |
 | 2020-10-01 | Generally available | [2020-10-01 Ref](list-environments.md) | N/A | N/A |
 
 > [!Note]

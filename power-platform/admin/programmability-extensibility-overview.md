@@ -28,9 +28,9 @@ Microsoft Power Platform administrators often have the need to orchestrate and a
 ## Customer management plane vs customer data plane
 Historically, Power Platform administrators have had disparate APIs from which to manage their tenant and its resources within the platform.  This included an API for managing environments, another API for managing Power Apps, and yet another for managing Power Automate flows.  With Power Platform API, Microsoft is collecting, harmonizing, and ultimately providing a single API surface from which customers can manage these resources.
 
-The customer management plane is where tenant level resources and environments are surfaced.  This includes operations like creating environments (with or without Dataverse), managing Billing policies for [Pay-as-you-go](https://docs.microsoft.com/power-platform/admin/pay-as-you-go-overview), querying and reporting on capacity consumption, and so on.  These capabilities will all be surfaced under Power Platform API and more features will be added regularly.  
+The customer management plane is where tenant level resources and environments are surfaced.  This includes operations like creating environments (with or without Dataverse), managing Billing policies for [Pay-as-you-go](/power-platform/admin/pay-as-you-go-overview), querying and reporting on capacity consumption, and so on.  These capabilities will all be surfaced under Power Platform API and more features will be added regularly.  
 
-The customer data plane is for interacting with data and records stored inside of an environment database.  This database is most commonly referred to as Microsoft Dataverse of which includes its own [rich OData-based API](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview).  Operations using Dataverse APIs include retrieving data from a table, using functions and actions, and executing batch operations.
+The customer data plane is for interacting with data and records stored inside of an environment database.  This database is most commonly referred to as Microsoft Dataverse of which includes its own [rich OData-based API](/powerapps/developer/data-platform/webapi/overview).  Operations using Dataverse APIs include retrieving data from a table, using functions and actions, and executing batch operations.
 
 Ultimately, customers will have two primary APIs: one for the management plane and one for the data plane.  This documentation is strictly for the management plane available as Power Platform API and tools that make use of it.
 
@@ -41,13 +41,13 @@ Several programmability tools are available for administrators.  These gradually
 Connectors are the easiest to get started if you are new to automation.  With a graphical workflow editor based on Power Automate, these allow admins to quickly get a routine task implemented.  For more information, see [Get started with Power Platform for admins management connectors](connectors-getting-started.md).
 
 ### Power Platform CLI
-[Microsoft Power Platform CLI](https://docs.microsoft.com/powerapps/developer/data-platform/powerapps-cli) is a simple, one-stop developer CLI that empowers developers and ISVs to perform various operations in Microsoft Power Platform related to environment lifecycle, authentication, and work with Microsoft Dataverse environments, solution packages, portals, code components, and so on.
+[Microsoft Power Platform CLI](/powerapps/developer/data-platform/powerapps-cli) is a simple, one-stop developer CLI that empowers developers and ISVs to perform various operations in Microsoft Power Platform related to environment lifecycle, authentication, and work with Microsoft Dataverse environments, solution packages, portals, code components, and so on.
 
 ### PowerShell cmdlets
 PowerShell is a common automation tool at organizations worldwide.  For more information, see [Get started with PowerShell for Power Platform administrators](powershell-getting-started.md).
 
 ### Power Platform API
-The most advanced tool available, it has full parity with what is possible in the Power Platform admin center.  For more information, see [Get started with Power Platform API](https://aka.ms/PowerPlatformAPI-Technical).
+The most advanced tool available, it has full parity with what is possible in the Power Platform admin center.  For more information, see [Get started with Power Platform API](/rest/api/power-platform).
 
 ## Next steps
 Regardless of which tool you choose, you'll want to review the following articles to get started:
