@@ -58,7 +58,7 @@ Next we will authenticate with Microsoft Azure Active Directory (Azure AD) and r
 In this tutorial, we are using a user credential with password to obtain a token.  An example call to Azure AD is below:
 
 > [!div class="mx-imgBorder"] 
-> ![Authenticate with Azure AD and retrieve a token for calling the Power Platform API.](media/media/appmgmt-tutorial-2.png "Authenticate with Azure AD and retrieve a token for calling the Power Platform API")
+> ![Authenticate with Azure AD and retrieve a token for calling the Power Platform API.](media/appmgmt-tutorial-2.png "Authenticate with Azure AD and retrieve a token for calling the Power Platform API")
 
 We then parse the Azure AD token response into a typed object using this JSON schema in the 'Parse JSON' action:
 
