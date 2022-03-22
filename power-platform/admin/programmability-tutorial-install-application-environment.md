@@ -17,7 +17,7 @@ search.app:
 
 # Preview: Install an application to a target environment
 
-This tutorial is aimed at enabling Power Platform Admins so they can take advantage of the Power Platform API to install Applications their tenant already has entitlements to. These applications should be visible in the Power Platform Admin Center under Resources > D365 Applications. 
+This tutorial is aimed at enabling Power Platform Admins so they can take advantage of the Power Platform API to install Applications of which their tenant already has entitlement. These applications should be visible in the Power Platform Admin Center under Resources > D365 Applications. 
 
 In this tutorial, you will learn how to:
 
