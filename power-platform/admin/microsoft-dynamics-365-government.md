@@ -25,8 +25,10 @@ In response to the unique and evolving requirements of the United States public 
 - Customer Voice
 - Field Service 
 - Finance
+- Guides
 - Omnichannel Engagement Hub
 - Project Service Automation
+- Remote Assist on HoloLens or HoloLens 2
 - Sales
 - Supply Chain Management
 
@@ -59,7 +61,7 @@ Select Dynamics 365 US Government products are available to qualified government
 |Dynamics 365 Guides |   |   |
 |Dynamics 365 Omnichannel for Customer Service     |     |         |
 |Dynamics 365 Project Service Automation     | Dynamics 365 Project Service Automation         | Dynamics 365 Project Service Automation        |
-|Dynamics 365 Remote Assist | Dynamics 365 Remote Assist  |   |
+|Dynamics 365 Remote Assist on HoloLens or HoloLens 2 | Dynamics 365 Remote Assist on HoloLens or HoloLens 2 |   |
 |Dynamics 365 Sales Enterprise and Professional     |Dynamics 365 Sales Enterprise and Professional         |Dynamics 365 Sales Enterprise and Professional         |
 |Dynamics 365 Supply Chain Management |    |    |
 
