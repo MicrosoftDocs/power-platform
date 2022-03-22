@@ -537,6 +537,8 @@
         items:
         - name: "Preview: Create a daily capacity report"
           href: programmability-tutorial-create-daily-capacity-report.md
+        - name: "Preview: Install an application to a target environment"
+          href: programmability-tutorial-install-application-environment.md
       - name: PowerShell
         items:
         - name: Getting started
@@ -556,13 +558,13 @@
       - name: Power Platform API
         items:
         - name: Getting started
-          href: https://aka.ms/PowerPlatformAPI-Technical
+          href: rest/api/power-platform
         - name: "Preview: Creating a service principal"
           href: powerplatform-api-create-service-principal.md
         - name: Reference
           items:
           - name: "2022-03-01-preview"
-            href: https://aka.ms/PowerPlatformAPI-Technical
+            href: rest/api/power-platform
           - name: "2020-10-01"
             items:
             - name: Environments
