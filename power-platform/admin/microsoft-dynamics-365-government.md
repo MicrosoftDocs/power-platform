@@ -4,7 +4,7 @@ description: "Learn about features that are specific to Microsoft Dynamics 365 U
 author: carrema
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/09/2022
+ms.date: 03/22/2022
 ms.subservice: admin
 ms.author: macarrer
 ms.reviewer: jimholtz
@@ -52,13 +52,15 @@ Select Dynamics 365 US Government products are available to qualified government
 
 |GCC  |GCC High  |DoD  |
 |---------|---------|---------|
-|Dynamics 365 Sales Enterprise and Professional     |Dynamics 365 Sales Enterprise and Professional         |Dynamics 365 Sales Enterprise and Professional         |
-|Dynamics 365 Customer Service Enterprise and Professional     | Dynamics 365 Customer Service Enterprise and Professional        |Dynamics 365 Customer Service Enterprise and Professional         |
-|Dynamics 365 Field Service      | Dynamics 365 Field Service         |Dynamics 365 Field Service          |
-|Dynamics 365 Project Service Automation     |Dynamics 365 Project Service Automation         | Dynamics 365 Project Service Automation        |
-|Dynamics 365 Finance     |      |         |
-|Dynamics 365 Omnichannel for Customer Service     |     |         |
+|Dynamics 365 Customer Service Enterprise and Professional     | Dynamics 365 Customer Service Enterprise and Professional        | Dynamics 365 Customer Service Enterprise and Professional         |
 |Dynamics 365 Customer Voice   |     |         |
+|Dynamics 365 Field Service      | Dynamics 365 Field Service         | Dynamics 365 Field Service          |
+|Dynamics 365 Finance     |      |         |
+|Dynamics 365 Guides |   |   |
+|Dynamics 365 Omnichannel for Customer Service     |     |         |
+|Dynamics 365 Project Service Automation     | Dynamics 365 Project Service Automation         | Dynamics 365 Project Service Automation        |
+|Dynamics 365 Remote Assist | Dynamics 365 Remote Assist  |   |
+|Dynamics 365 Sales Enterprise and Professional     |Dynamics 365 Sales Enterprise and Professional         |Dynamics 365 Sales Enterprise and Professional         |
 |Dynamics 365 Supply Chain Management |    |    |
 
 ### Subscription Availability
