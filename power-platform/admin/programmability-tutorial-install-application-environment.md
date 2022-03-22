@@ -85,10 +85,10 @@ We then parse the Azure AD token response into a typed object using this JSON sc
 > [!div class="mx-imgBorder"] 
 > ![Parse the Azure AD token response into a strongly typed object.](media/capacity5.png "Parse the Azure AD token response into a strongly typed object")
 
+---
+
 ## Retrieve available packages to install
 In this section we will retrieve the list of Applications you can install to a specific environment.  Be sure to have your **environment Id** available, and that this environment has a Dataverse database created.
-
----
 
 # [Azure](#tab/Azure)
 
@@ -144,6 +144,7 @@ We then parse the response into a strongly typed object using this JSON schema w
     }
 }
 ```
+---
 
 ## Install the application
 Now we can take one of the applications from the prior step and install it.  Let's say you would like to install the "“"Office 365 Groups" application. Select the value in the PackageUniqueName field, in this case, it is Office365Groups to utilize in the next step.
@@ -165,6 +166,8 @@ Then we will use the Parse JSON action to get the operationID
     NEED SCHEMA
 }
 ```
+
+---
 
 ## Poll for operation status
 Now we will monitor progress of the application install by polling every so often using the operationID from the prior step.
