@@ -42,7 +42,7 @@ To start off, in this tutorial we will use a Logic Apps workflow.  A Power Autom
 Visit the Azure portal, and then create a new logic app and give it a name:
 
 > [!div class="mx-imgBorder"] 
-> ![Create a logic app.](media/capacity1.png "Create a logic app")
+> ![Create a logic app.](media/appmgmt-tutorial-1.png "Create a logic app")
 
 After that finishes provisioning, edit the workflow using the Designer and set up a Recurrence trigger to run on schedule of your choosing:
 
@@ -58,7 +58,7 @@ Next we will authenticate with Microsoft Azure Active Directory (Azure AD) and r
 In this tutorial, we are using a key vault to store our service principal secret value.  In this way, an IT administrator can make this value securely available for your workflow.  This is then populated in the POST call to Azure AD to retrieve the token as shown:
 
 > [!div class="mx-imgBorder"] 
-> ![Authenticate with Azure AD and retrieve a token for calling the Power Platform API.](media/capacity4.png "Authenticate with Azure AD and retrieve a token for calling the Power Platform API")
+> ![Authenticate with Azure AD and retrieve a token for calling the Power Platform API.](media/media/appmgmt-tutorial-2.png "Authenticate with Azure AD and retrieve a token for calling the Power Platform API")
 
 We then parse the Azure AD token response into a typed object using this JSON schema in the 'Parse JSON' action:
 
@@ -479,7 +479,7 @@ Now we will monitor progress of the application install by polling every so ofte
 By evaluating the response from polling the OperationID for anything terminal status such as *Canceled*, *Failed*, or *Succeeded* we will effectively monitor for the process to complete.  This is done easilyw ith the Until control which will loop continuously until this condition is met.
 
 > [!div class="mx-imgBorder"] 
-> ![Create a logic app.](media/capacity1.png "Create a logic app")
+> ![Create a logic app.](media/appmgmt-tutorial-3.png "Until control")
 
 We'll make use of the [Application Install Status](rest/api/power-platform/appmanagement/applications/get-application-package-install-status) endpoint to monitor the installation. Be sure to set the **operationId** property to from the prior step. 
 
