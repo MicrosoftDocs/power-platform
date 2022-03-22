@@ -134,7 +134,7 @@ If you select **Refresh**, the connection between your bot and the omnichannel i
 
 It's a good idea to refresh the connection after you add your bot to an omnichannel workstream to make sure that the connection was successful.
 
-## Using voice-based capabilities
+## Voice-based capabilities
 
 The [Power Virtual Agents telephony extension](https://appsource.microsoft.com/product/dynamics-crm/mscrm.mspva_telephony_extension) adds several actions and variables to Power Virtual Agents.
 
