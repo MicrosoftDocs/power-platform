@@ -16,7 +16,10 @@ search.app:
 ---
 
 # Permission reference (preview)
-This article provides an overview of the Power Platform API (preview) granular permissions.  These permissions will be initially available for registering client applications in Azure Active Directory (Azure AD) and may become available in security role form.  
+This article provides an overview of the Power Platform API (preview) granular permissions.  These permissions will be initially available for registering client applications in Azure Active Directory (Azure AD) and may become available in security role form in the future.
+
+> [!IMPORTANT]
+> The Power Platform API is in preview. The permission names are subject to change by the time the endpoints become generally available.  At that time, this article will be updated with the final permission details.
 
 ## Naming convention
 

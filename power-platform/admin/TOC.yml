@@ -533,6 +533,8 @@
         href: programmability-authentication.md
       - name: Authentication (preview)
         href: programmability-authentication-v2.md
+      - name: Permission reference (preview)
+        href: programmability-permission-reference.md
       - name: Tutorials
         items:
         - name: "Preview: Create a daily capacity report"
