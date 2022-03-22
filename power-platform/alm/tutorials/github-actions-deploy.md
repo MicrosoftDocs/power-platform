@@ -166,7 +166,7 @@ In this section, we will create an additional workflow that:
 
     ![Commit changes.](../media/github-actions-tutorial/gh-lab-2.270.png "Commit changes")
     
-5. Navigate to Actions and select New Workflow
+5. Navigate to **Actions** and select **New Workflow**
 
 ## Call the reusable workflow on the release event
 
@@ -176,7 +176,7 @@ In this section, we will call the reusable workflow on the [release event](https
 
     ![Create new workflow.](../media/github-actions-tutorial/gh-lab-2.230.png "Create new workflow")
 
-2. Chose **setup a workflow yourself**.
+2. Choose **setup a workflow yourself**.
 
     ![Set up a workflow.](../media/github-actions-tutorial/gh-lab-2.240.png "Set up a workflow")
 
@@ -187,8 +187,8 @@ In this section, we will call the reusable workflow on the [release event](https
 4. Update the following variables in the new workflow file:
     - Update `<BUILD_ENVIRONMENT>` with the URL for the build environment you are using to generate the managed solution. For example: https://poweractionsbuild.crm.dynamics.com.
     - Update `<PROD_ENVIRONMENT>` with the URL for the production environment you are deploying to. For example: https://poweractionsprod.crm.dynamics.com.
-    - Update `<APPID>` with the Application name you are using to connect to the environments.
-    - Updte `<TENANT ID>` with the tenant id for your environments. 
+    - Update `<APPID>` with the application name you are using to connect to the environments.
+    - Update `<TENANT ID>` with the tenant ID for your environments. 
 
 5. Commit the changes. Choose **Start commit** and then add a title and description (optional). Next, select **Commit new file**.
 
