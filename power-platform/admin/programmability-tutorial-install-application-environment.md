@@ -51,11 +51,11 @@ After that finishes provisioning, edit the workflow using the Designer and set u
 
 For the remainder of this tutorial, you will need an environment ID and an application name to complete the subsequent steps:
 - **Environment Id**: The id of the environment to which you would install the package.  Please note this is not the organization id.
-- **Application name**: The name of the application you are tring to install.
+- **Application name**: The name of the application you are trying to install.
 
 Next we will authenticate with Microsoft Azure Active Directory (Azure AD) and retrieve a token for calling the Power Platform API.  If you haven’t completed your Azure AD setup, see [Authentication (preview)](programmability-authentication-v2.md).
 
-In this tutorial, we are using a key vault to store our service principal secret value.  In this way, an IT administrator can make this value securely available for your workflow.  This is then populated in the POST call to Azure AD to retrieve the token as shown:
+In this tutorial, we are using a user credential with password to obtain a token.  An example call to Azure AD is below:
 
 > [!div class="mx-imgBorder"] 
 > ![Authenticate with Azure AD and retrieve a token for calling the Power Platform API.](media/media/appmgmt-tutorial-2.png "Authenticate with Azure AD and retrieve a token for calling the Power Platform API")
@@ -505,4 +505,4 @@ From here, we can evaluate the status and if it is one of the terminal values we
 Now that the monitoring has concluded, we can share the result over email as an example activity.
 
 > [!div class="mx-imgBorder"] 
-> ![Create a logic app.](media/capacity1.png "Create a logic app")
+> ![Create a logic app.](media/appmgmt-tutorial-4.png "Send an email (v2) on the status of the activity")
