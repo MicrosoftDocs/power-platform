@@ -88,6 +88,8 @@ We then parse the Azure AD token response into a typed object using this JSON sc
 ## Retrieve available packages to install
 In this section we will retrieve the list of Applications you can install to a specific environment.  Be sure to have your **environment Id** available, and that this environment has a Dataverse database created.
 
+---
+
 # [Azure](#tab/Azure)
 
 ### Environment Application Package endpoint
