@@ -88,7 +88,7 @@ Install the extensions that are required for Customer Service omnichannel capabi
 > [!NOTE]
 > If you connected your bot to omnichannel engagement before November 2021, the settings on the **Omnichannel** tile will look as if they haven't been configured. This is a known issue. It doesn't affect the bot or the omnichannel connection, which will continue to run normally. Select **Enable** to refresh the settings and show the actual connection details.
 
-To add [voice capabilities](#using-voice-based-capabilities) after you've connected your bot to Omnichannel, you must disconnect the bot from your omnichannel service and reconnect it.
+To add [voice capabilities](#voice-based-capabilities) after you've connected your bot to Omnichannel, you must disconnect the bot from your omnichannel service and reconnect it.
 
 <a id="managed-bot-oc"></a>
 
