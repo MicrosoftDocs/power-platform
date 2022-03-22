@@ -93,7 +93,7 @@ In this section we will retrieve the list of Applications you can install to a s
 # [Azure](#tab/Azure)
 
 ### Environment Application Package endpoint
-Now we will make our first call to the Power Platform API.  We’ll use the [Get Environment Application Package API](rest/api/power-platform/appmanagement/applications/get-environment-application-package) to to retrieve all of the available packages we can install for the given Dataverse organization. Be sure that the identity you're using be it a Service Principal or a username/password has access to Dataverse and the appropriate security role.
+Now we will make our first call to the Power Platform API.  We’ll use the [Get Environment Application Package API](/rest/api/power-platform/appmanagement/applications/get-environment-application-package) to to retrieve all of the available packages we can install for the given Dataverse organization. Be sure that the identity you're using be it a Service Principal or a username/password has access to Dataverse and the appropriate security role.
 
 ```http
 GET https://api.powerplatform.com/appmanagement/environments/{environmentId}/applicationPackages?api-version=2022-03-01-preview
