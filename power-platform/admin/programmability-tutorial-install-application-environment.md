@@ -153,7 +153,7 @@ Now we can take one of the applications from the prior step and install it.  Let
 
 ### Install application API
 
-We'll make use of the [Install application API]([Get Environment Application Package API](rest/api/power-platform/appmanagement/applications/get-environment-application-package) endpoint to trigger the installation. Be sure to set the **uniqueName** property to Office365Groups in this example. 
+We'll make use of the [Install application API](rest/api/power-platform/appmanagement/applications/install-application-package) endpoint to trigger the installation. Be sure to set the **uniqueName** property to Office365Groups in this example. 
 
 ```http
 POST https://api.powerplatform.com/appmanagement/environments/{environmentId}/applicationPackages/{uniqueName}/install?api-version=2022-03-01-preview
