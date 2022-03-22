@@ -104,50 +104,169 @@ We then parse the response into a strongly typed object using this JSON schema w
 {
     "properties": {
         "value": {
-            "applicationDescription": {
-                "type": "string"
+            "items": {
+                "properties": {
+                    "applicationDescription": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "applicationId": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "applicationName": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "applicationVisibility": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "catalogVisibility": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "crmMaxVersion": {},
+                    "crmMinversion": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "customHandleUpgrade": {
+                        "type": "boolean"
+                    },
+                    "endDateUtc": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "errorDetails": {},
+                    "id": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "instancePackageId": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "learnMoreUrl": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "localizedDescription": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "localizedName": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "publisherId": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "publisherName": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "singlePageApplicationUrl": {},
+                    "startDateUtc": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "state": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "supportedCountries": {
+                        "items": {
+                            "type": [
+                                "string",
+                                "null"
+                            ]
+                        },
+                        "type": "array"
+                    },
+                    "uniqueName": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "version": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    }
+                },
+                "required": [
+                    "id",
+                    "uniqueName",
+                    "version",
+                    "localizedDescription",
+                    "localizedName",
+                    "applicationId",
+                    "applicationName",
+                    "applicationDescription",
+                    "singlePageApplicationUrl",
+                    "publisherName",
+                    "publisherId",
+                    "learnMoreUrl",
+                    "crmMinversion",
+                    "crmMaxVersion",
+                    "customHandleUpgrade",
+                    "instancePackageId",
+                    "state",
+                    "catalogVisibility",
+                    "applicationVisibility",
+                    "errorDetails",
+                    "startDateUtc",
+                    "endDateUtc",
+                    "supportedCountries"
+                ],
+                "type": "object"
             },
-            "applicationId": {
-                "type": "string"
-            },
-            "applicationName": {
-                "type": "string"
-            },
-            "applicationVisibility": {
-                "type": "string"
-            },
-            "catalogVisibility": {
-                "type": "string"
-            },
-            "errorDetails": {
-                "type": "string"
-            },
-            "learnMoreUrl": {
-                "type": "string"
-            },
-            "localizedDescription": {
-                "type": "string"
-            },
-            "localizedName": {
-                "type": "string"
-            },
-            "publisherId": {
-                "type": "string"
-            },
-            "publisherName": {
-                "type": "string"
-            },
-            "uniqueName": {
-                "type": "string"
-            }
+            "type": "array"
         }
-    }
+    },
+    "type": "object"
 }
 ```
 ---
 
 ## Install the application
-Now we can take one of the applications from the prior step and install it.  Let's say you would like to install the "“"Office 365 Groups" application. Select the value in the PackageUniqueName field, in this case, it is Office365Groups to utilize in the next step.
+Now we can take one of the applications from the prior step and install it.  Let's say you would like to install the "Office 365 Groups" application. Select the value in the PackageUniqueName field, in this case, it is Office365Groups to utilize in the next step.
 
 # [Azure](#tab/Azure)
 
@@ -159,13 +278,195 @@ We'll make use of the [Install application API](rest/api/power-platform/appmanag
 POST https://api.powerplatform.com/appmanagement/environments/{environmentId}/applicationPackages/{uniqueName}/install?api-version=2022-03-01-preview
 ```
 
-Then we will use the Parse JSON action to get the operationID
-
+And the request body will have the application entry from the earlier step:
 ```json
 {
-    NEED SCHEMA
-}
+                "id": "ce3bab3c-ada1-40cf-b84b-49b26603a281",
+                "uniqueName": "Office365Groups",
+                "version": "2.9.0.3",
+                "localizedDescription": "With Office 365 groups, you can collaborate with people across your company even if they aren’t Dynamics 365 users. Groups provide a single location to share conversations, meetings, documents, and more.",
+                "localizedName": "Office 365 Groups",
+                "applicationId": "2f17f077-4175-4d82-b82b-17cd8950b74f",
+                "applicationName": "Office365Groups",
+                "applicationDescription": "",
+                "singlePageApplicationUrl": "",
+                "publisherName": "Microsoft CRM Package",
+                "publisherId": "255953fd-9ab8-4146-bfa1-859aae326ae9",
+                "learnMoreUrl": "http://go.microsoft.com/fwlink/?LinkID=525719",
+                "crmMinversion": "8.0",
+                "crmMaxVersion": null,
+                "customHandleUpgrade": false,
+                "instancePackageId": null,
+                "state": "None",
+                "catalogVisibility": "None",
+                "applicationVisibility": "All",
+                "errorDetails": null,
+                "startDateUtc": "2016-01-01T00:00:00Z",
+                "endDateUtc": "2050-01-01T00:00:00Z",
+                "supportedCountries": [
+                    "AE",
+                    "AL",
+                    "AM",
+                    "AO",
+                    "AR",
+                    "AT",
+                    "AU",
+                    "AZ",
+                    "BA",
+                    "BB",
+                    "BD",
+                    "BE",
+                    "BG",
+                    "BH",
+                    "BM",
+                    "BN",
+                    "BO",
+                    "BR",
+                    "BY",
+                    "CA",
+                    "CH",
+                    "CI",
+                    "CL",
+                    "CM",
+                    "CO",
+                    "CR",
+                    "CV",
+                    "CW",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "DO",
+                    "DZ",
+                    "EC",
+                    "EE",
+                    "EG",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GE",
+                    "GH",
+                    "GR",
+                    "GT",
+                    "HK",
+                    "HN",
+                    "HR",
+                    "HU",
+                    "ID",
+                    "IE",
+                    "IL",
+                    "IN",
+                    "IQ",
+                    "IS",
+                    "IT",
+                    "JM",
+                    "JO",
+                    "JP",
+                    "KE",
+                    "KG",
+                    "KN",
+                    "KR",
+                    "KW",
+                    "KY",
+                    "KZ",
+                    "LB",
+                    "LK",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "LY",
+                    "MA",
+                    "MC",
+                    "MD",
+                    "ME",
+                    "MK",
+                    "MN",
+                    "MO",
+                    "MT",
+                    "MU",
+                    "MX",
+                    "MY",
+                    "NG",
+                    "NI",
+                    "NL",
+                    "NO",
+                    "NZ",
+                    "OM",
+                    "PA",
+                    "PE",
+                    "PH",
+                    "PK",
+                    "PL",
+                    "PR",
+                    "PS",
+                    "PT",
+                    "PY",
+                    "QA",
+                    "RO",
+                    "RS",
+                    "RU",
+                    "RW",
+                    "SA",
+                    "SE",
+                    "SG",
+                    "SI",
+                    "SK",
+                    "SN",
+                    "SV",
+                    "TH",
+                    "TM",
+                    "TN",
+                    "TR",
+                    "TT",
+                    "TW",
+                    "UA",
+                    "US",
+                    "UY",
+                    "UZ",
+                    "VE",
+                    "VI",
+                    "VN",
+                    "ZA",
+                    "ZW"
+                ]
+            }
 ```
+
+The following is an example response:
+```json
+{
+        "id": "9a44d33b-6055-4c9b-aa4a-4c410a22e9ad",
+        "packageId": "ce3bab3c-ada1-40cf-b84b-49b26603a281",
+        "applicationId": "2f17f077-4175-4d82-b82b-17cd8950b74f",
+        "applicationName": "Office365Groups",
+        "applicationDescription": "",
+        "singlePageApplicationUrl": "",
+        "publisherName": "Microsoft CRM Package",
+        "publisherId": "255953fd-9ab8-4146-bfa1-859aae326ae9",
+        "packageUniqueName": "Office365Groups",
+        "packageVersion": "2.9.0.3",
+        "localizedDescription": "With Office 365 groups, you can collaborate with people across your company even if they aren’t Dynamics 365 users. Groups provide a single location to share conversations, meetings, documents, and more.",
+        "localizedName": "Office 365 Groups",
+        "learnMoreUrl": "http://go.microsoft.com/fwlink/?LinkID=525719",
+        "termsOfServiceBlobUris": [
+            "https://crmprodnam.blob.core.windows.net/preferredsolution/microsoft_tos_dbd53f75-b571-46ad-b9ce-21b5656b85dd_1?sv=2018-03-28&sr=c&sig=v5iBtDum0N6A0sqyyhIkPECibmpGOKGiSmmm3ALGIR0%3D&se=2022-03-23T19%3A35%3A59Z&sp=r"
+        ],
+        "applicationVisibility": "All",
+        "lastOperation": {
+            "state": "InstallRequested",
+            "createdOn": "2022-03-22T19:35:59.7425066Z",
+            "modifiedOn": null,
+            "errorDetails": null,
+            "statusMessage": null,
+            "instancePackageId": "9a44d33b-6055-4c9b-aa4a-4c410a22e9ad",
+            "operationId": "4fde996a-bf68-413c-b2bf-33f21a7e9afb"
+        },
+        "customHandleUpgrade": false
+    }
+```
+
+Then we will use the Parse JSON action to get the operationID for our subsequent steps.
 
 ---
 
@@ -174,5 +475,34 @@ Now we will monitor progress of the application install by polling every so ofte
 
 # [Azure](#tab/Azure)
 
-### Use the Do Until control
-By evaluating the **InstancePackageOperationStatus** for anything other than *Running* we will effectively monitor for the process to complete.  This could result in a Succeeded or a Failed outcome of which we will email a summary to ourselves as a final step.
+### Use the Until control
+By evaluating the response from polling the OperationID for anything terminal status such as *Canceled*, *Failed*, or *Succeeded* we will effectively monitor for the process to complete.  This is done easilyw ith the Until control which will loop continuously until this condition is met.
+
+> [!div class="mx-imgBorder"] 
+> ![Create a logic app.](media/capacity1.png "Create a logic app")
+
+We'll make use of the [Application Install Status](rest/api/power-platform/appmanagement/applications/get-application-package-install-status) endpoint to monitor the installation. Be sure to set the **operationId** property to from the prior step. 
+
+```http
+GET https://api.powerplatform.com/appmanagement/environments/{environmentId}/operations/{operationId}?api-version=2022-03-01-preview
+```
+
+An example output is shown below:
+```json
+{
+  "status": "NotStarted",
+  "createdDateTime": "2022-03-22T20:05:58.9414573Z",
+  "lastActionDateTime": null,
+  "error": null,
+  "statusMessage": null,
+  "operationId": "523b51a8-6af4-40cd-aa7d-86bddfa6697b"
+}
+```
+
+From here, we can evaluate the status and if it is one of the terminal values we can break the loop.
+
+### Send an email
+Now that the monitoring has concluded, we can share the result over email as an example activity.
+
+> [!div class="mx-imgBorder"] 
+> ![Create a logic app.](media/capacity1.png "Create a logic app")
