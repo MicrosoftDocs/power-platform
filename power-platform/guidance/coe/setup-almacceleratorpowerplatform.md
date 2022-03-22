@@ -293,10 +293,6 @@ The **VerifyDefaultEnvironmentVariableValues** can be used to ensure that specif
    | View build pipeline                   | Allow |
    | View builds                           | Allow |
 
-1. Select **Service connections**, select **...** in the upper-right corner, and then select **Security**. Select **Add**.
-
-1. Find and select the username **[Your Project Name] Build Service ([Your Organization Name])**, and then set the **Role** to Administrator. Select **Add**.
-
 1. Select **Agent pools** and select **Security**, and then select **Add**.
 
 1. Find and select the username **[Your Project Name] Build Service ([Your Organization Name])**, and then set the **Role** to Reader. Select **Add**.
@@ -342,6 +338,14 @@ Each Dataverse environment—development, validation, test, or production—must
     1. Select the **User**, select a **Role**, and then select **Add**.
 
 Repeat these steps for each of your environments—development, validation, test, and production.
+
+### Update permissions for the project build service to use the Service Connections
+
+1. In Azure DevOps on the left pane, select **Project settings**.
+
+1. Select **Service connections**, select **...** in the upper-right corner, and then select **Security**. Select **Add**.
+
+1. Find and select the username **[Your Project Name] Build Service ([Your Organization Name])**, and then set the **Role** to Administrator. Select **Add**.
 
 ### Create an app user in your Dataverse environments
 
