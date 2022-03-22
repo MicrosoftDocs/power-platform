@@ -245,7 +245,7 @@ The **VerifyDefaultEnvironmentVariableValues** can be used to ensure that specif
     | TenantID  | [The Directory (tenant) ID you copied when creating the app registration] |
     | AADHost | The Azure Active Directory authorization endpoint, for public cloud use: **login.microsoftonline.com**, for government clouds use the appropriate authorization url.
 
-1. When using Canvas studio Test Automation in your pipelines, the following variables are also required in the variable group.
+1. **Optional**. When using Canvas studio Test Automation in your pipelines, the following variables are also required in the variable group.
 
     |Name| Value |
     |--|--|
