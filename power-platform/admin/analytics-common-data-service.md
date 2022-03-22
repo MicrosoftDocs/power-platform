@@ -4,7 +4,7 @@ description: "Access Dataverse analytics from the Power Platform admin center to
 author: tjvass
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/21/2022
+ms.date: 03/22/2022
 ms.subservice: admin
 ms.author: tjvass
 ms.reviewer: jimholtz
@@ -17,8 +17,6 @@ search.app:
   - Flow
 ---
 # Microsoft Dataverse analytics
-
-
 
 We've improved how you view metrics for your organization. You no longer need to install or update a solution. Instead, you can view Dataverse analytics right from the Microsoft Power Platform admin center to quickly view adoption and user metrics for your organization. 
 
@@ -86,6 +84,9 @@ For more information on the different roles for managing your tenant across the 
 
 ### What's included in this dashboard  
 
+> [!NOTE]
+> Exports are limited to a maximum of 3000 records.
+
 > [!div class="mx-tableFixed"]
 > |Chart element|Description|  
 > |--------------|-----------------|  
@@ -102,7 +103,7 @@ For more information on the different roles for managing your tenant across the 
 > |         Active Users by Device Type         |                                                                                             The number of active users by device type.                                                                                              | 
 > |           Active Users by Browser           |                                                                                               The number of active users by browser.                                                                                                | 
 > |       Active Users by Security Roles        |                                                                                            The number of active users by security roles.                                                                                            | 
-> |           Users by Business Unit            | The number of active users by business unit. **Note**: Exports are limited to a maximum of 3000 active users.   | 
+> |           Users by Business Unit            | The number of active users by business unit.    | 
 > |         Number of Creates by Entity         |   How many create operations are performed by the selected user in the Dataverse environment for the selected time period.                                    | 
 > |         Number of Updates by Entity         |                         How many update operations are performed on different entities by the selected user in the Dataverse environment for the selected time period.                         | 
 > |          Number of Reads by Entity          |                          How many read operations are performed on different entities by the selected user in the Dataverse environment for the selected time period.                          | 
@@ -292,7 +293,7 @@ The "Active Dynamics 365 Customer Engagement Plan Users by Application" report a
 > |Chart element|Description|  
 > |--------------|-----------------|  
 > | Active users by device type  | List of active users by device type used to access [!INCLUDE [pn-dyn-365](../includes/pn-dyn-365.md)].  |
-> | Active users by business unit  | List of active users by their business unit. **Note**: Exports are limited to a maximum of 3000 active users.  |
+> | Active users by business unit  | List of active users by their business unit.   |
 > | Active users by security role  | List of active users by their security roles.  |
 > | Active users by client  | List of active users, by client type used to access [!INCLUDE [pn-dyn-365](../includes/pn-dyn-365.md)].  |
 > | Active users by entities | List of active users distributed by entity.   |
