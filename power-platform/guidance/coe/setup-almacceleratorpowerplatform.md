@@ -293,10 +293,6 @@ The **VerifyDefaultEnvironmentVariableValues** can be used to ensure that specif
    | View build pipeline                   | Allow |
    | View builds                           | Allow |
 
-1. Select **Service connections**, select **...** in the upper-right corner, and then select **Security**. Select **Add**.
-
-1. Find and select the username **[Your Project Name] Build Service ([Your Organization Name])**, and then set the **Role** to Administrator. Select **Add**.
-
 1. Select **Agent pools** and select **Security**, and then select **Add**.
 
 1. Find and select the username **[Your Project Name] Build Service ([Your Organization Name])**, and then set the **Role** to Reader. Select **Add**.
@@ -342,6 +338,14 @@ Each Dataverse environment—development, validation, test, or production—must
     1. Select the **User**, select a **Role**, and then select **Add**.
 
 Repeat these steps for each of your environments—development, validation, test, and production.
+
+### Update permissions for the project build service to use the Service Connections
+
+1. In Azure DevOps on the left pane, select **Project settings**.
+
+1. Select **Service connections**, select **...** in the upper-right corner, and then select **Security**. Select **Add**.
+
+1. Find and select the username **[Your Project Name] Build Service ([Your Organization Name])**, and then set the **Role** to Administrator. Select **Add**.
 
 ### Create an app user in your Dataverse environments
 
@@ -497,6 +501,10 @@ The **EnvironmentName** variable is used to specify the Azure DevOps environment
 
 The **ServiceConnection** variable is used to specify how the deployment pipeline connects to Microsoft Power Platform. The values used for the service connection variable are the names of the service connections you created earlier in [Create service connections for Azure DevOps to access Microsoft Power Platform](#create-service-connections-for-azure-devops-to-access-power-platform).
 
+- Select **Edit** on each of the deployment pipelines.
+- Select the **Variables** button on the deployment pipeline definition, this action will open the Variables Editor.
+- To add the above variables select the **(+)** button and give the name of the variable and the appropriate value for the variable.
+
 #### Create the EnableFlows variable (optional)
 
 You can optionally set a pipeline variable on your deployment pipelines to turn off the automatic enabling of flows after your solution is imported. This variable is **EnableFlows**. Setting **EnableFlows** to false results in the pipeline skipping the steps to enable Power Automate flows as part of your deployment. The default value of the **EnableFlows** variable is true.
@@ -542,7 +550,7 @@ If your solution requires these other configuration settings or data, follow the
 
 ### Install the ALM accelerator in Dataverse
 
-1. Download the latest managed solutions from [GitHub](https://github.com/microsoft/coe-starter-kit/releases).
+1. Download the latest managed solution file from [GitHub](https://github.com/microsoft/coe-starter-kit/releases): ALMAcceleratorForMakers_`[latest version]`_managed.zip .
 
 1. Go to [Power Apps](https://make.powerapps.com) and select the environment you want to use to host the ALM Accelerator for Power Platform app.
 
@@ -555,7 +563,7 @@ If your solution requires these other configuration settings or data, follow the
 1. On the **Connections** page, select or create a new connection to use to connect to Dataverse for the **CDS DevOps connection**.
 
     > [!NOTE]
-    > When creating a connection for **HTTP with Azure AD**, use **https&semi;\/\/graph&period;microsoft&period;com** for both parameters.
+    > When creating a connection for **HTTP with Azure AD**, use **[Microsoft Graph](https://graph.microsoft.com)** for both parameters.
 
 1. Select **Import**, and wait for the solution to complete the import process.
 
