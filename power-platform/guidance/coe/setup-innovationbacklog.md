@@ -166,7 +166,7 @@ Before you begin:
 1. Go to the Teams channel, open the Innovation Backlog tab, select the **Web Link**, and copy the app link from the new browser window.
           ![Copy the Innovation Backlog web link.](media/ibteams-8.png "Copy the Innovation Backlog web link")
 1. Go to [flow.microsoft.com](<https://flow.microsoft.com>) > **Solutions** > **Default Solution** and filter by **Environment Variables**
-    ![Open the Default Solution and filter to only show Environment Variables.](https://github.com/MichaelRoth42/media/blob/main/DefaultSolutionEnvironmentVariables.png "Open the Default Solution and filter to only show Environment Variables")
+    ![Open the Default Solution and filter to only show Environment Variables.](media/ib-7.png "Open the Default Solution and filter to only show Environment Variables")
 1. Select the **InnovationBacklogAppURL** variable and paste in the URL for the Innovation Backlog app.
     ![Update the InnovationBacklogAppURL environment variable.](media/ib-8.png "Update the InnovationBacklogAppURL environment variable")
 
