@@ -1,13 +1,13 @@
 ---
 title: "View and download Dataverse analytics"
 description: "Access Dataverse analytics from the Power Platform admin center to view and download metrics such as active users, API calls, executions, and more."
-author: jimholtz
-
+author: tjvass
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/08/2021
+ms.date: 03/22/2022
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: tjvass
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:
@@ -84,24 +84,27 @@ For more information on the different roles for managing your tenant across the 
 
 ### What's included in this dashboard  
 
+> [!NOTE]
+> Exports are limited to a maximum of 3000 records.
+
 > [!div class="mx-tableFixed"]
 > |Chart element|Description|  
 > |--------------|-----------------|  
-> |             Total Active Users              |                            Total number of active users (unique users) who performed an operation that caused one of these SDK calls:<br /> `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and `Update`.                            | 
-> |             Most Used  Entities             |                                                            Ten Entities which had the most<br /> `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and <br />`Update SDK Calls`.                                                             | 
+> |             Total Active Users              |   Total number of active users (unique users) who performed an operation that caused one of these SDK calls:<br /> `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and `Update`.   | 
+> |             Most Used  Entities             |  Ten Entities which had the most<br /> `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and <br />`Update SDK Calls`.  | 
 > |             Total Page Requests             | The number of page load requests for forms, dashboards, and reports. This is the count of requests received by the [!INCLUDE[pn_dyn_365](../includes/pn-dyn-365.md)] server. Pages that are cached while browsing won't be counted. | 
-> |              Total Operations               |                         This chart shows how many operations (create, update, deletes, reads) have occurred in the Dataverse environment for the selected time period.                         | 
-> | Active Users Performing Specific Operations |                       Total number of active users (unique users) over time who performed an operation that caused one of these SDK calls:<br /> `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and `Update`.                       | 
-> |                Active Users                 |                 Number of active users (unique users) in your environment who performed an operation that caused one of these SDK calls:<br /> `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and `Update` over time.                  | 
+> |              Total Operations               |  This chart shows how many operations (create, update, deletes, reads) have occurred in the Dataverse environment for the selected time period. | 
+> | Active Users Performing Specific Operations |  Total number of active users (unique users) over time who performed an operation that caused one of these SDK calls:<br /> `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and `Update`.                       | 
+> |                Active Users                 |Number of active users (unique users) in your environment who performed an operation that caused one of these SDK calls:<br /> `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and `Update` over time.                  | 
 > |   Most Active Users Performing Operations   |                        List of  most active users (unique users) over time who performed an operation that caused one of these SDK calls:<br /> `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and `Update`.                        | 
 > |          Most Used Custom Entities          |   List of custom entities which had the most<br /> `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and <br />`Update SDK Calls`.                                                       | 
 > |           Most Used OOB Entities            |  List of out-of-box entities which had the most<br /> `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and <br />`Update SDK Calls`.                                                     | 
-> |          Usage Active Users by OS           |                                                                                           The number of active users by operating system.                                                                                           | 
+> |          Usage Active Users by OS           |   The number of active users by operating system.      | 
 > |         Active Users by Device Type         |                                                                                             The number of active users by device type.                                                                                              | 
 > |           Active Users by Browser           |                                                                                               The number of active users by browser.                                                                                                | 
 > |       Active Users by Security Roles        |                                                                                            The number of active users by security roles.                                                                                            | 
-> |           Users by Business Unit            |                                                                                            The number of active users by business unit.                                                                                             | 
-> |         Number of Creates by Entity         |                                    How many create operations are performed by the selected user in the Dataverse environment for the selected time period.                                    | 
+> |           Users by Business Unit            | The number of active users by business unit.    | 
+> |         Number of Creates by Entity         |   How many create operations are performed by the selected user in the Dataverse environment for the selected time period.                                    | 
 > |         Number of Updates by Entity         |                         How many update operations are performed on different entities by the selected user in the Dataverse environment for the selected time period.                         | 
 > |          Number of Reads by Entity          |                          How many read operations are performed on different entities by the selected user in the Dataverse environment for the selected time period.                          | 
 > |         Number of Deletes by Entity         |                         How many delete operations are performed on different entities by the selected user in the Dataverse environment for the selected time period.                         | 
@@ -289,11 +292,11 @@ The "Active Dynamics 365 Customer Engagement Plan Users by Application" report a
 > [!div class="mx-tableFixed"]
 > |Chart element|Description|  
 > |--------------|-----------------|  
-> | Active users by device type  | List of active users by device type used to access [!INCLUDE [pn-dyn-365](../includes/pn-dyn-365.md)]  |
-> | Active users by business unit  | List of active users by their business unit  |
-> | Active users by security role  | List of active users by their security roles  |
-> | Active users by client  | List of active users, by client type used to access [!INCLUDE [pn-dyn-365](../includes/pn-dyn-365.md)]  |
-> | Active users by entities | List of active users distributed by entity   |
+> | Active users by device type  | List of active users by device type used to access [!INCLUDE [pn-dyn-365](../includes/pn-dyn-365.md)].  |
+> | Active users by business unit  | List of active users by their business unit.   |
+> | Active users by security role  | List of active users by their security roles.  |
+> | Active users by client  | List of active users, by client type used to access [!INCLUDE [pn-dyn-365](../includes/pn-dyn-365.md)].  |
+> | Active users by entities | List of active users distributed by entity.   |
 > | Most active users performing operations | List of  most active users (unique users) over time who performed an operation that caused one of these SDK calls:<br /> `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and `Update`. |
 > | Most used custom entities |  List of custom entities which had the most<br /> `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and <br />`Update SDK Calls`. |
 > | Most used OOB entities  |  List of out-of-box entities which had the most<br /> `Retrieve`, `Retrieve Multiple`, `Delete`, `Create`, and <br />`Update SDK Calls`. |
