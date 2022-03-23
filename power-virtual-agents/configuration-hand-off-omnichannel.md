@@ -46,6 +46,9 @@ Install the extensions that are required for Customer Service omnichannel capabi
 
 ## Connect your bot to Omnichannel for Customer Service
 
+> [!NOTE]
+> If you connected your bot to omnichannel engagement before November 2021, the settings on the **Omnichannel** tile will look as if they haven't been configured. This is a known issue. It doesn't affect the bot or the omnichannel connection, which will continue to run normally. Select **Enable** to refresh the settings and show the actual connection details.
+
 1. In Power Virtual Agents, edit your bot. In the left panel, select **Manage**, **Agent transfers**, and then select the **Omnichannel** tile.
 
     :::image type="content" source="./media/configuration-hand-off-omnichannel/handoff-settings.png" alt-text="The bot management Agent transfers page.":::
@@ -81,7 +84,6 @@ Install the extensions that are required for Customer Service omnichannel capabi
 
 > [!IMPORTANT]
 > To test the bot on your custom website, you must use the embed code that's specified in the chat widget you set up in Omnichannel for Customer Service. If you use the embed code from Power Virtual Agents, hand-off won't work. For more information, see [Embed chat widget in your website or portal](/dynamics365/customer-service/embed-chat-widget-portal).
-
 
 To add [voice capabilities](#voice-based-capabilities) after you've connected your bot to Omnichannel, you must disconnect the bot from your omnichannel service and reconnect it.
 
