@@ -22,9 +22,9 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](advanced-flow.md)
 > - [Power Virtual Agents app in Microsoft Teams](teams/advanced-flow-teams.md)
 
-You can enable your bot to perform an action by calling a Microsoft Power Automate flow. Flows can help you automate activities, or call back-end systems. For example, you can use flows with [end-user authentication](advanced-end-user-authentication.md) to retrieve information about a user after they've signed in.
+Enable your bot to perform an action by calling a Microsoft Power Automate flow. Flows can help you automate activities or call back-end systems. For example, you can use flows with [end-user authentication](advanced-end-user-authentication.md) to retrieve information about a user after they've signed in.
 
-You call flows from within topics, as a discrete **Call an action** node. You can use flows that have already been created in your [Power Apps environment](environments-first-run-experience.md), or you can create a flow from within the Power Virtual Agents [authoring canvas](authoring-create-edit-topics.md).
+Flows are called from within topics, as a discrete **Call an action** node. You can use flows that have already been created in your [Power Apps environment](environments-first-run-experience.md), or you can create a flow from within the Power Virtual Agents [authoring canvas](authoring-create-edit-topics.md).
 
 > [!IMPORTANT]
 > To use flows within Power Virtual Agents, they must meet the following requirements:
@@ -134,7 +134,7 @@ Your flow is saved to the **Default Solution** under the **Solutions** tab on th
 
 To be available to your bots, flows must be stored in a solution in Power Automate. If you don't want to use the **Default Solution** for this purpose, you can move your flows to another solution.
 
-1. On the Power Automate portal, go to the **Solutions** tab where you can see the available solutions. Use any of the existing solutions or create a new solution for your flows.
+1. On the Power Automate portal, go to the **Solutions** tab to see the available solutions. Use any of the existing solutions or create a new solution for your flows.
 
 1. To create a new solution, select **New solution**.
 

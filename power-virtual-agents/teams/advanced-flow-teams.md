@@ -22,7 +22,7 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](../advanced-flow.md)
 > - [Power Virtual Agents app in Microsoft Teams](advanced-flow-teams.md)
 
-Enable your bot to perform an action by calling a Microsoft Power Automate flow. Flows can help you automate activities, or call back-end systems. For example, you can use flows to send messages to a Teams channel, or access files in a SharePoint folder.
+Enable your bot to perform an action by calling a Microsoft Power Automate flow. Flows can help you automate activities or call back-end systems. For example, you can use flows to send messages to a Teams channel, or access files in a SharePoint folder.
 
 > [!IMPORTANT]
 > To use flows within Power Virtual Agents, they must meet the following requirements:
@@ -125,7 +125,7 @@ In this flow, we're going to provide a special message and email when someone as
 
 1. Add the flow you just created, and select the two variables as the inputs for the flow.
 
-Now when the bot user tells the bot how many people, and any requirements, an email will be sent with that information.
+Now when the bot user tells the bot how many people will be attending the meeting and provides any special requirements, an email will be sent with that information.
 
 :::image type="content" source="../media/advanced-flow/flow-test-4.png" alt-text="Complete topic with a flow call that sends email via Outlook connector.":::
 

@@ -18,7 +18,7 @@ ms.collection: virtualagent
 
 # Extend your bot with Bot Framework Composer
 
-You can enhance your bot by developing custom dialogs with [Bot Framework Composer](/composer/) and then adding them to your Power Virtual Agents bot.
+Enhance your bot by developing custom dialogs with [Bot Framework Composer](/composer/) and then adding them to your Power Virtual Agents bot.
 
 Composer is integrated into Power Virtual Agents to allow developers and business users to build bots together. Composer lets you extend your bot with Bot Framework functionality, including:
 
@@ -31,7 +31,7 @@ Composer with Power Virtual Agents lets you access conversational memory and con
 
 For example, you could create event-driven dynamic dialogs to handle interruptions, cancellations and context switching. You could also add Adaptive Cards to display interactive elements like images and videos, forms, and more in the bot.
 
-Composer lets you use a variety of prebuilt functions and expressions and define multiple variations of a phrase for the bot to select at random at runtime.
+There are a variety of prebuilt functions and expressions in Composer for you to use, as well as the ability to define multiple variations of a phrase for the bot to randomly select at runtime.
 
 Custom dialogs added with Bot Framework Composer are deployed, hosted, and executed together with the rest of Power Virtual Agents bot content, and don't require any additional Azure hosting.
 
@@ -88,7 +88,7 @@ The **main (root) dialog** in your **Composer project** is the same as the proje
 
 :::image type="content" source="media/advanced-bot-framework-composer/Gd_mainDialog_initial.png" alt-text="Bot Framework Composer main (root) dialog":::
 
-There are a few key guidelines to follow when using Composer to create your bot content for Power Virtual Agents.
+There are a few key guidelines to follow when using Composer to create your bot content for Power Virtual Agents:
 
 - The Power Virtual Agents topics from your bot will be displayed in Composer. You can't edit these Power Virtual Agents topics in Composer; selecting them will open these topics in Power Virtual Agents for editing.
 
@@ -98,7 +98,8 @@ There are a few key guidelines to follow when using Composer to create your bot 
 
   :::image type="content" source="media/advanced-bot-framework-composer/Gd_call_PVA_Topic.png" alt-text="Bot Framework Composer - call Power Virtual Agents topics.":::
 
-- You can add new **Bot Framework triggers** of any kind to your **main (root) dialog**. You can use **Send a response** and **Ask a question** in the new **triggers** added to **main (root) dialog**.
+- You can add new **Bot Framework triggers** of any kind to your **main (root) dialog**.
+- You can use **Send a response** and **Ask a question** in the new **triggers** added to **main (root) dialog**.
 
 - You can't use the Regular expression recognizer (RegEx) in the **main (root) dialog**. Using the Regular expression recognizer in the **main (root) dialog** will prevent you from publishing your Composer content to Power Virtual Agents. However, you can use the Regular expression recognizer in any other Composer dialogs.
 
@@ -236,7 +237,7 @@ If you encounter issues developing in Bot Framework Composer, you can:
 
 - Go to [Bot Framework Composer issues on GitHub](https://github.com/microsoft/BotFramework-Composer/issues).
 
-- See a list of known issues in Composer or [log a new Composer issue](https://github.com/microsoft/BotFramework-Composer/issues/new/choose).
+- See the list of known issues in Composer or [log a new Composer issue](https://github.com/microsoft/BotFramework-Composer/issues/new/choose).
 
 To troubleshoot your bot in Power Virtual Agents, use the [topic checker](authoring-topic-management.md#topic-errors).
 
