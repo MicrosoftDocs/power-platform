@@ -133,7 +133,7 @@ There are several flows which will need to be turned on for the Pulse feedback s
 ### Set up the Power BI dashboard to view feedback
 
 1. Download and install [Microsoft Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=58494).
-1. Enable the [TDS endpoint](/admin/settings-features) on your environment.
+1. Enable the [TDS endpoint](../../admin/settings-features) on your environment.
 1. Get the [environment URL](setup-powerbi.md#get-the-environment-url).
 1. In Power BI Desktop, open the Pulse_CoEDashboard.pbit file, which can be found in the CoE Starter Kit you downloaded from [aka.ms/CoeStarterKitDownload](https://aka.ms/CoEStarterKitDownload).
 1. Enter the URL of your environment instance. Do not include the https:// prefix or / postfix for **OrgUrl**.

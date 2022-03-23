@@ -20,7 +20,7 @@ search.app:
 
 # Set up app quarantine components
 
-This article will help you to set up the app quarantine components of the governance solution. A quarantined app will present end users that launch the app a message indicating they’re unable to access the app. This feautre is currently only available for canvas apps. Learn more: [Manage app quarantine state](/admin/admin-manage-apps#manage-app-quarantine-state-preview)
+This article will help you to set up the app quarantine components of the governance solution. A quarantined app will present end users that launch the app a message indicating they’re unable to access the app. This feautre is currently only available for canvas apps. Learn more: [Manage app quarantine state](../../admin/admin-manage-apps#manage-app-quarantine-state-preview)
 
 >[!IMPORTANT]
 >This article assumes you have [installed the governance components solution](before-setup-gov.md), and you have your [environment set up](setup.md#create-your-environment) and are signed in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).

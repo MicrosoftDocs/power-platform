@@ -169,7 +169,7 @@ Makers can use the DLP Policy Change Request system to modify the DLP Policy app
 
 ### Configure Shared Policies
 
-Configure [data policies](/admin/wp-data-loss-prevention) in the Power Platform Admin Center.
+Configure [data policies](../../admin/wp-data-loss-prevention) in the Power Platform Admin Center.
 
 > [!NOTE]
 > Follow our best practices to create a [DLP strategy](/guidance/adoption/dlp-strategy ).
