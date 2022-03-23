@@ -29,7 +29,7 @@ Composer is integrated into Power Virtual Agents to allow developers and busines
 
 Composer with Power Virtual Agents lets you access conversational memory and context, including the variables defined in Power Virtual Agents.
 
-For example, you could create event-driven dynamic dialogs to handle interruptions, cancellations and context switching. You could also add Adaptive Cards to display interactive elements like images and videos, forms, and more in the bot.
+For example, you could create event-driven dynamic dialogs to handle interruptions, cancellations, and context switching. You could also add Adaptive Cards to display interactive elements like images and videos, forms, and more in the bot.
 
 There are a variety of prebuilt functions and expressions in Composer for you to use, as well as the ability to define multiple variations of a phrase for the bot to randomly select at runtime.
 
@@ -82,9 +82,9 @@ Your Power Virtual Agents bot is now open in Composer and you are ready to start
 
 ## Guidelines for creating bot content for Power Virtual Agents in Composer
 
-When opened from a Power Virtual Agents bot, Composer launches a **Composer project** and loads your bot content into it.
+When opened from a Power Virtual Agents bot, Composer launches a **Composer project** and loads in your bot content.
 
-The **main (root) dialog** in your **Composer project** is the same as the project name you gave it. It corresponds to your Power Virtual Agents bot content. In this example, your **main (root) dialog** is **Contoso-Meal-Delivery-Service**:
+The **main (root) dialog** in your **Composer project** is named after the project name you provided and corresponds to your Power Virtual Agents bot content. In this example, your **main (root) dialog** is **Contoso-Meal-Delivery-Service**:
 
 :::image type="content" source="media/advanced-bot-framework-composer/Gd_mainDialog_initial.png" alt-text="Bot Framework Composer main (root) dialog":::
 
@@ -101,7 +101,7 @@ There are a few key guidelines to follow when using Composer to create your bot 
 - You can add new **Bot Framework triggers** of any kind to your **main (root) dialog**.
 - You can use **Send a response** and **Ask a question** in the new **triggers** added to **main (root) dialog**.
 
-- You can't use the Regular expression recognizer (RegEx) in the **main (root) dialog**. Using the Regular expression recognizer in the **main (root) dialog** will prevent you from publishing your Composer content to Power Virtual Agents. However, you can use the Regular expression recognizer in any other Composer dialogs.
+- You can't use the Regular expression recognizer in the **main (root) dialog**. Using the Regular expression recognizer in the **main (root) dialog** will prevent you from publishing your Composer content to Power Virtual Agents. However, you can use the Regular expression recognizer in any other Composer dialogs.
 
 - You can create new **Bot Framework dialogs** and add **events** and **triggers** of any kind to them. **Send a response** and **Ask a question** can be used in **triggers** that belong to the new **dialogs**.
 
@@ -188,13 +188,15 @@ You can use Bot Framework Composer with Power Virtual Agents to send event data 
 > [!IMPORTANT]
 > Application Insights is a feature of [Azure Monitor](/azure/azure-monitor/overview), an extensible Application Performance Management (APM) tool that allows you to monitor your live applications. It requires a subscription to [Microsoft Azure](https://azure.microsoft.com/).
 
-To connect to your Application Insights service in Composer, you need to add your instrumentation key to the project. Go to the **Configure** tab in Composer and switch to **Advanced Settings View (json)**.
+To connect to your Application Insights service in Composer, you need to add your instrumentation key to the project.
 
-:::image type="content" source="media/advanced-bot-framework-composer/Configure_AdvancedView.png" alt-text="Composer Configure tab - Advanced Settings View.":::
+1. Go to the **Configure** tab in Composer and switch to **Advanced Settings View (json)**.
 
-Find the **applicationInsights** section, then add your Application Insights instrumentation key to the **instrumentationKey** setting.
+    :::image type="content" source="media/advanced-bot-framework-composer/Configure_AdvancedView.png" alt-text="Composer Configure tab - Advanced Settings View.":::
 
-:::image type="content" source="media/advanced-bot-framework-composer/Configure_AppInsights_Key.png" alt-text="Composer Configure tab - Application Insights Instrumentation key.":::
+1. Find the **applicationInsights** section, then add your Application Insights instrumentation key to the **instrumentationKey** setting.
+
+    :::image type="content" source="media/advanced-bot-framework-composer/Configure_AppInsights_Key.png" alt-text="Composer Configure tab - Application Insights Instrumentation key.":::
 
 To learn more on how to set up and use Application Insights and create queries for Composer's Adaptive dialogs, see these resources:
 
@@ -210,22 +212,22 @@ To learn more on how to set up and use Application Insights and create queries f
 >
 > Use the [Publish](publication-fundamentals-publish-channels.md) feature in Power Virtual Agents to publish your bot changes to channels.
 
-You can test the content you have created in Bot Framework Composer by publishing it to Power Virtual Agents and using the **Test bot** pane in Power Virtual Agents.
+Test the content you've created in Bot Framework Composer by publishing it to Power Virtual Agents and using the **Test bot** pane in Power Virtual Agents.
 
-Publish your Bot Framework content to Power Virtual Agents from the **Publish** tab in Composer.
+1. Publish your Bot Framework content to Power Virtual Agents from the **Publish** tab in Composer.
 
-:::image type="content" source="media/advanced-bot-framework-composer/Test_Publish_Success.png" alt-text="Composer Publish tab.":::
+    :::image type="content" source="media/advanced-bot-framework-composer/Test_Publish_Success.png" alt-text="Composer Publish tab.":::
 
-After you successfully publish your Bot Framework content, you can use the Power Virtual Agents **Test bot** pane to test it. Start a conversation with the bot by typing in a trigger phrase in the Power Virtual Agents **Test bot** pane:
+1. After you successfully publish your Bot Framework content, go to the Power Virtual Agents **Test bot** pane to test your bot. Start a conversation by typing in a trigger phrase in the Power Virtual Agents **Test bot** pane:
 
-:::image type="content" source="media/advanced-bot-framework-composer/Test_image.png" alt-text="Power Virtual Agents test bot.":::
+    :::image type="content" source="media/advanced-bot-framework-composer/Test_image.png" alt-text="Power Virtual Agents test bot.":::
 
 > [!NOTE]
 > The Bot Framework Emulator cannot be used to test Composer content created for Power Virtual Agents bots.
 
 ## Troubleshooting
 
-If you're having trouble publishing your Bot Framework Composer content to Power Virtual Agents, you can use the **See Log** feature in the **Publish** tab in Composer. The log will provide a detailed description of the errors encountered during validation. Select your bot and then select the caret icon to see the publish history.
+If you're having trouble publishing your Bot Framework Composer content to Power Virtual Agents, use the **See Log** feature in the **Publish** tab in Composer. The log will provide a detailed description of the errors encountered during validation. Select your bot and then select the caret icon to see the publish history.
 
 :::image type="content" source="media/advanced-bot-framework-composer/TL_PublishHistory.png" alt-text="Composer Publish - See Log.":::
 
