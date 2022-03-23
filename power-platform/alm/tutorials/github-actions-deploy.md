@@ -160,7 +160,7 @@ In this section, we will create an additional workflow that:
 
 3. Rename the title of the workflow to ‘release-solution-to-prod-with-inputs’ and copy the content from the [release-solution-to-prod-with-inputs.yml](https://github.com/microsoft/powerplatform-actions-lab/blob/main/sample-workflows/release-solution-to-prod-with-inputs.yml) file and paste it into the **Edit new file** screen.
 
-    ![Rename and paste code.](../media/github-actions-tutorial/gh-lab-2.250b.png "Rename and paste code")
+    ![Rename and paste code.](../media/github-actions-tutorial/gh-lab-2.250b.png "Rename, and paste code")
 
 4. Commit the changes. Choose **Start commit** and then add a title and description (optional). Next, select **Commit new file**.
 
