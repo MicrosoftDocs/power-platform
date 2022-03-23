@@ -39,7 +39,7 @@ For more information on the different roles for managing your tenant across the 
 
 When a user first creates an environment from a region, the environment is always hosted in that region. The data is stored only in the region that an environment is hosted in. Data is stored for a maximum of 28 days. The data refresh cycle is about 3 hours and the last refresh time in UTC time standard is displayed on the upper-right corner of the page. 
 
-## What are the available reports? 
+<!-- ## What are the available reports? 
 
 The following tenant-level reports are available for tenant admins. 
 
@@ -98,7 +98,7 @@ Power Platform admin center reports can be downloaded directly from the report v
 
 For more information on downloading data from the tenant level reports, see [Exporting data from Power BI visuals](/power-bi/consumer/end-user-export). 
 
-<!-- current content
+-->
 
 There are six reports available for Power Apps admins. The last viewed environment is selected by default.  
 
@@ -141,7 +141,6 @@ Note that the current iteration of this specific report does not have a download
 
 > [!div class="mx-imgBorder"] 
 > ![Power Apps analytics connector report.](media/powerapps-analytics-connector.png "Power Apps analytics connector report")
--->
 
 ## How can I download the reports? 
 
