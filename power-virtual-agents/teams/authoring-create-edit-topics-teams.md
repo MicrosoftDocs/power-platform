@@ -108,6 +108,10 @@ You can edit both of these topic types in the same manner as for topics you crea
 
    :::image type="content" source="../media/authoring-create-edit-topics/handoff-add-node-teams.png" alt-text="Screenshot of adding a node." border="false":::
 
+1. To move or change the paths between a node, click and drag the node anchor, which looks like a small circle on top of the node. When you drag the node anchor, you'll see a dotted line indicating the original path. You can also double-click the anchor and then select the new place for the anchor (you won't see a dotted line).
+
+   :::image type="content" source="media/authoring-create-edit-topics/move-anchor-node.png" alt-text="Screenshot of moving a node's anchor.":::
+
 ### Insert nodes
 
 When adding a node, you can choose from five options. Each option has a specific node or nodes that will be inserted into the conversation path.
