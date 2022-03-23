@@ -142,7 +142,6 @@ You can view the entity metadata for your organization including which fields ca
  Some data, such as addresses, are made up of multiple fields. Therefore, to completely secure data that includes multiple fields, such as addresses, you must secure and configure the appropriate field security profiles on multiple fields for the entity. For example, to completely secure addresses for an entity, secure all relevant address fields, such as address_line1, address_line2, address_line3, address1_city, address1_composite, and so on.  
   
 ### See also  
- [Video: Field Level Security in Microsoft Dynamics CRM 2015](https://www.youtube.com/watch?v=Czc9sKvWd9k&list=UUem1HuioGqKEn8Li3l4DIYQ)   
  [Create a field security profile](set-up-security-permissions-field.md)   
  [Add or remove security from a field](enable-disable-security-field.md)   
  [Hierarchy security](../admin/hierarchy-security.md)

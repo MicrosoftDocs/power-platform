@@ -8,13 +8,12 @@ ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
+ms.reviewer: jameslew
 ms.custom: "publication, azure, ceX"
 ms.collection: virtual-agent
 ---
 
 # Add Power Virtual Agents bot to Azure Bot Service channels
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 You can connect your bot to existing [Azure Bot Service channels](/azure/bot-service/bot-service-manage-channels?view=azure-bot-service-4.0&preserve-view=true). This can be helpful if you want to connect your bot to end users on Azure Bot Service channels.
 

@@ -87,15 +87,15 @@ Related tutorials: [Get started](github-actions-start.md), and [Build a model-dr
 
     ![Sample YML file](../media/github-actions-tutorial/gh-lab-2.90.png "Sample YML file")
 
-2. Delete the pre-created content, paste the content from the [export-and-branch-solution.yml](https://github.com/microsoft/powerplatform-actions-lab/blob/main/sample-workflows/export-and-branch-solution.yml) file, and then rename the file to ‘export-and-branch-solution’.yml.
+2. Delete the pre-created content, paste the content from the [export-and-branch-solution-with-spn-auth.yml](https://github.com/microsoft/powerplatform-actions-lab/blob/main/sample-workflows/export-and-branch-solution-with-spn-auth.yml) file, and then rename the file to ‘export-and-branch-solution’.yml.
 
     ![Rename and replace content.](../media/github-actions-tutorial/gh-lab-2.100.png "Rename and replace content")
 
 3. Update `<ENVIRONMENTURL>` with the URL for the development environment you want to export from (for example: https://poweractionsdev.crm.dynamics.com).
 
-4. Update `<USERNAME>` with the username you are using to connect to the environment.
+4. Update `<APPID>` and `<TENANT ID>` with your values. 
 
-    * If you are using SPN authentication then along with the `<ENVIRONMENTURL>`, Please update the `<APPID>` and `<TENANT ID>`  
+    * If you are using credentials, update `<USERNAME>` with the username you are using to connect to the environment.  
 
         ![Rename and replace content](../media/github-actions-tutorial/gh-lab-2.100a.png "Rename and replace content")
 
@@ -144,7 +144,7 @@ Congratulations, you have just created your first GitHub workflow using the foll
 
 8. Navigate back to the main branch and validate the solution is now available there as well.
 
-## Create a workflow to generate a build artifact and import to production
+## Create a reusable workflow to generate a build artifact and import to production
 
 In this section, we will create an additional workflow that:
 - Creates a managed solution and publishes it as a GitHub artifact
@@ -158,26 +158,42 @@ In this section, we will create an additional workflow that:
 
     ![Set up a workflow.](../media/github-actions-tutorial/gh-lab-2.240.png "Set up a workflow")
 
-3. Rename the title of the workflow to ‘release-solution-to-prod’ and copy the content from the [release-solution-to-prod.yml](https://github.com/microsoft/powerplatform-actions-lab/blob/main/sample-workflows/release-solution-to-prod.yml) file and paste it into the **Edit new file** screen.
+3. Rename the title of the workflow to ‘release-solution-to-prod-with-inputs’ and copy the content from the [release-solution-to-prod-with-inputs.yml](https://github.com/microsoft/powerplatform-actions-lab/blob/main/sample-workflows/release-solution-to-prod-with-inputs.yml) file and paste it into the **Edit new file** screen.
 
-    ![Rename and paste code.](../media/github-actions-tutorial/gh-lab-2.250.png "Rename and paste code")
+    ![Rename and paste code.](../media/github-actions-tutorial/gh-lab-2.250b.png "Rename, and paste code")
+
+4. Commit the changes. Choose **Start commit** and then add a title and description (optional). Next, select **Commit new file**.
+
+    ![Commit changes.](../media/github-actions-tutorial/gh-lab-2.270.png "Commit changes")
+    
+5. Navigate to **Actions** and select **New Workflow**
+
+## Call the reusable workflow on the release event
+
+In this section, we will call the reusable workflow on the [release event](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#release).
+
+1. Navigate to **Actions** and select **New workflow**.
+
+    ![Create new workflow.](../media/github-actions-tutorial/gh-lab-2.230.png "Create new workflow")
+
+2. Choose **setup a workflow yourself**.
+
+    ![Set up a workflow.](../media/github-actions-tutorial/gh-lab-2.240.png "Set up a workflow")
+
+3. Rename the title of the workflow to ‘release-action-call’ and copy the content from the [release-action-call.yml](https://github.com/microsoft/powerplatform-actions-lab/blob/main/sample-workflows/release-action-call.yml) file and paste it into the **Edit new file** screen.
+
+    ![Rename and paste code.](../media/github-actions-tutorial/gh-lab-2.251.png "Rename and paste code")
 
 4. Update the following variables in the new workflow file:
-    - Update `<BUILDENVIRONMENTURL>` with the URL for the build environment you are using to generate the managed solution. For example: https://poweractionsbuild.crm.dynamics.com.
-    - Update `<PRODUCTIONENVIRONMENTURL>` with the URL for the production environment you are deploying to. For example: https://poweractionsbuild.crm.dynamics.com.
-    - Update `<USERNAME>` with the username you are using to connect to the environments.
-
-    ![Rename and paste code](../media/github-actions-tutorial/gh-lab-2.250a.png "Rename and paste code")
-4a. If you are using SPN authentication then in the workflow you need to update the following variables:
-    - Update `<BUILDENVIRONMENTURL>` with the URL for the build environment you are using to generate the managed solution. For example: https://poweractionsbuild.crm.dynamics.com.
-    - Update `<PRODUCTIONENVIRONMENTURL>` with the URL for the production environment you are deploying to. For example: https://poweractionsbuild.crm.dynamics.com.
-    - Update `<APPID>` with the Application name you are using to connect to the environments.
-    - Updte `<TENANT ID>` with the tenant id for your environments. 
-
+    - Update `<BUILD_ENVIRONMENT>` with the URL for the build environment you are using to generate the managed solution. For example: https://poweractionsbuild.crm.dynamics.com.
+    - Update `<PROD_ENVIRONMENT>` with the URL for the production environment you are deploying to. For example: https://poweractionsprod.crm.dynamics.com.
+    - Update `<APPID>` with the application name you are using to connect to the environments.
+    - Update `<TENANT ID>` with the tenant ID for your environments. 
 
 5. Commit the changes. Choose **Start commit** and then add a title and description (optional). Next, select **Commit new file**.
 
     ![Commit changes.](../media/github-actions-tutorial/gh-lab-2.270.png "Commit changes")
+
 
 ## Test the release to production workflow
 

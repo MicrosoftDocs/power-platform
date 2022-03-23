@@ -1,5 +1,5 @@
 ---
-title: "Preview: Create a Dataverse application user | Microsoft Docs"
+title: "Create a Dataverse application user (preview) | Microsoft Docs"
 description: Power Platform API Reference - Create a Dataverse application user
 author: laneswenka
 ms.reviewer: jimholtz
@@ -15,11 +15,16 @@ search.app:
   - Powerplatform
 ---
 
-# Preview: Create a Dataverse application user
+# Create a Dataverse application user (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 Use this endpoint to create an application user in a target Dataverse environment.  Callers of this endpoint must either be Power Platform administrators, Global administrators, or a Power Platform Service Principal application.
+
+> [!IMPORTANT]
+> - This is a preview feature.
+> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+> - This feature is being gradually rolled out across regions and might not be available yet in your region.
 
 ## Authentication
 
