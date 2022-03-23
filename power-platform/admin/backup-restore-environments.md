@@ -51,12 +51,10 @@ About **system backups**:
 3. Select the **System** tab.  
   
 4. Under **Select a backup to restore**, choose a date and time to select a system backup to restore, and then select **Continue**. 
-<!-- 
-5. You'll be provided with a list of available backups at or close to the date and time you chose if the selected time is not available. Pick the desired backup, and then select **Continue**.
 
    > [!div class="mx-imgBorder"] 
    > ![Select available backup.](media/select-available-backup.png "Select available backup")
--->
+
 5. Select an environment to restore to (overwrite), enter other settings as desired, and then select **Restore**.
 
    > [!div class="mx-imgBorder"] 
