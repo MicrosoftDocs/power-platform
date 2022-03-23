@@ -54,7 +54,7 @@ All logging is done at the SDK layer, so a single action can trigger multiple lo
 |Flows | Created flow | The time a flow is created|
 |Flows | Edited flow | Any updates made to the flow|
 |Flows | Deleted flow | When the flow is deleted|
-|Flow permissions | Edited permissions | Every time a user's permissions to the flow changes|
+|Flow permissions | Edited permissions | Every time a user's permissions to the flow changes e.g. user added as shared co-owner|
 |Flow permissions | Deleted permissions | Every time a user's permissions to the flow is removed|
 |Trials | Started a paid trial | When a user starts a paid trial|
 |Trials | Renewed a paid trial | When a user renews a paid trial|
@@ -80,6 +80,14 @@ Schemas define the Power Automate fields that are sent to the Microsoft 365 comp
 |Recipient UPN | RecipientUPN | Edm.String | No | If permission was updated, shows the UPN of the permission recipient |
 |Additional info | More information, for example, the environment name)|
 
-## Limitations
+## Retention
+The retention period for audit data is 90 days. CSV exports of this data are also available which allow customers to further explore this data using Microsoft Excel or Power BI. 
 
-Only activity from cloud flows is recorded in the Microsoft Compliance Center. Recorded activity for desktop flows is in the Microsoft Dataverse audit logs.
+## Timing 
+Customers can expect events to be available in the within 90 minutes of them occurring.
+
+## Limitations
+Only activity from cloud flows is recorded in the [Microsoft 365 compliance center](https://compliance.microsoft.com/). Recorded activity for desktop flows is in the Microsoft Dataverse audit logs.
+
+## See also
+[Blog post: Microsoft Flow audit events now available (2017)](https://powerautomate.microsoft.com/en-us/blog/security-and-compliance-center/)
