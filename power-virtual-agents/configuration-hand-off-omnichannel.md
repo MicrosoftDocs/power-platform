@@ -121,7 +121,7 @@ Select **Manage**, **Agent transfers**, and then select the **Omnichannel** tile
 
 If you select **Disconnect bot**, the application user that represents the bot in your omnichannel instance is disabled. This effectively disconnects the bot from the omnichannel environment.
 
-To add your bot back, you'll need to [connect it again](#connect-your-bot-to-omnichannel), starting at Step 3.
+To add your bot back, you'll need to [connect it again](#connect-your-bot-to-omnichannel-for-customer-service), starting at Step 3.
 
 If you select **Disable**, the connection between your omnichannel instance and Power Virtual Agents is disabled. Your bot will stop receiving any traffic from your omnichannel instance.
 
