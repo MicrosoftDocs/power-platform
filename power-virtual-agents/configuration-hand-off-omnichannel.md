@@ -16,7 +16,7 @@ ms.custom: handoff, ceX
 
 When your customers need to speak with a human agent, your bot can seamlessly hand off the conversation. With the omnichannel capabilities of the [Chat Add-in for Dynamics 365 Customer Service](/dynamics365/omnichannel/omnichannel-customer-service-guide), you can connect both voice and text conversations.
 
-When your bot hands off a conversation, it shares the full history of the chat session and all variables collected in the interaction. Your omnichannel service routes incoming escalations to the right queue, and a live agent can seamlessly resume the conversation. For more information about how to use hand-off in bot conversations, see [Hand off to a live agent](./advanced-hand-off.md).
+When your bot hands off a conversation, it shares the full history of the conversation and all variables collected in the interaction. Your omnichannel service routes incoming escalations to the right queue, and a live agent can seamlessly resume the conversation. For more information about how to use hand-off in bot conversations, see [Hand off to a live agent](./advanced-hand-off.md).
 
 ## Prerequisites
 
@@ -24,7 +24,7 @@ When your bot hands off a conversation, it shares the full history of the chat s
 - Have a [product license for Power Virtual Agents](https://go.microsoft.com/fwlink/?LinkId=2092080&clcid=0x409) and a [product license for the Chat Add-in for Dynamics 365 Customer service](/dynamics365/customer-engagement/omnichannel/try-chat-for-dynamics365).
 - Environments:
   - Install the [required extensions](#install-extensions) in the same environment as your bot.
-  - Your bot and extension environment and omnichannel environment must be in the same [geographical region](./data-location.md#data-locations).
+  - Your bot environment, extension solutions, and omnichannel environment must be in the same [geographical region](./data-location.md#data-locations).
   - To use [voice capabilities](#voice-based-capabilities), your tenant and environment must be in the [United States, Europe, Asia, or Australia geographies](./data-location.md#data-locations).
 - [Register an application with Azure AD](/azure/active-directory/develop/howto-create-service-principal-portal#create-an-azure-active-directory-application).
 - For end-to-end capabilities to work as expected, your bot must be [published](./publication-fundamentals-publish-channels.md).
@@ -44,10 +44,9 @@ Install the extensions that are required for Customer Service omnichannel capabi
     > [!IMPORTANT]
     > You must install the [Omnichannel Power Virtual Agent extension](https://appsource.microsoft.com/product/dynamics-365/mscrm.omnichannelpvaextension) for all omnichannel hand-off scenarios.
 
-## Connect your bot to Omnichannel
-<!-- The UI refers several times to "Omnichannel" as a stand-alone app, service, etc. The Microsoft Cloud+AI Style Guide forbids this. https://styleguides.azurewebsites.net/StyleGuide/Read?id=2696&topicid=48167 Can you please submit a bug to have this looked into? Thanks! I'll leave the references here to "Omnichannel" so the text matches the UI for now. It's not clear to me from the Style Guide what all the instances of "omnichannel" in this topic should be changed to. :( -->
+## Connect your bot to Omnichannel for Customer Service
 
-1. In Power Virtual Agents, edit your bot. In the left panel, select **Manage** > **Agent transfers**, and then select the **Omnichannel** tile.
+1. In Power Virtual Agents, edit your bot. In the left panel, select **Manage**, **Agent transfers**, and then select the **Omnichannel** tile.
 
     :::image type="content" source="./media/configuration-hand-off-omnichannel/handoff-settings.png" alt-text="The bot management Agent transfers page.":::
 
@@ -59,7 +58,7 @@ Install the extensions that are required for Customer Service omnichannel capabi
 
     - If you're using Application Lifecycle Management (ALM), you may see a message that we can't determine if omnichannel integration is enabled for the environment. For more information, see [Bots with ALM](#bots-with-alm).
 
-1. Under **See the environment this bot is connected to**, select the environment where your Omnichannel instance is provisioned. If you haven't set up Omnichannel in that environment, you'll see a message inviting you to begin a trial.
+1. Under **See the environment this bot is connected to**, select the environment where you have omnichannel integration turned on. If you haven't set up Omnichannel for Customer Service in that environment, you'll see a message inviting you to begin a trial.
 
     :::image type="content" source="./media/configuration-hand-off-omnichannel/transfer-no-oc.png" alt-text="Message that says you haven't set up Omnichannel integration in this environment.":::
 
@@ -67,7 +66,7 @@ Install the extensions that are required for Customer Service omnichannel capabi
 
     :::image type="content" source="./media/configuration-hand-off-omnichannel/handoff-bot-appid.png" alt-text="The Omnichannel configuration pane, with the Application ID section highlighted.":::
 
-1. Copy the **Application (client) ID** on the Azure portal > **App registrations** > **Overview** page.
+1. On the Azure portal go to **App registrations**, then select **Overview**. Copy the **Application (client) ID** .
 
 1. Return to the **Omnichannel** pane in Power Virtual Agents and paste the Application ID in the **Application ID** box.
 
@@ -76,17 +75,13 @@ Install the extensions that are required for Customer Service omnichannel capabi
 
 1. Select **Add your bot**.
 
-1. Power Virtual Agents uses a [Teams channel](./publication-fundamentals-publish-channels.md) to communicate with Omnichannel for Customer Service. If a Teams channel isn't enabled, a Teams channel will be enabled when you select **Next**.
-<!-- I didn't see this step or the one below when I followed these instructions in my demo tenant. I can publish my bot and connect it to Teams, but that seems to be a separate process from what's described here. Can you please clarify or elaborate on these two steps? Thanks! -->
+   Power Virtual Agents uses a [Teams channel](./publication-fundamentals-publish-channels.md) to communicate with Omnichannel for Customer Service. If one isn't turned on, a Teams channel will be enabled when you select **Add your bot**.
 
-1. Select the **Go to Omnichannel** link to [continue configuring the bot connection in your omnichannel interface](/dynamics365/omnichannel/administrator/configure-bot-virtual-agent).
+1. Select the **View details in Omnichannel** link to [continue configuring the bot connection in your omnichannel interface](/dynamics365/omnichannel/administrator/configure-bot-virtual-agent).
 
 > [!IMPORTANT]
-> To test the bot on your custom website, you must use the embed code that's specified in the chat widget you set up in Omnichannel. If you use the embed code from Power Virtual Agents, hand-off won't work. For more information, see [Embed chat widget in your website or portal](/dynamics365/customer-service/embed-chat-widget-portal).
-<!-- Can you please clarify the difference between "the embed code in the chat widget in Omnichannel" and "the embed code from Power Virtual Agents"? Thanks!-->
+> To test the bot on your custom website, you must use the embed code that's specified in the chat widget you set up in Omnichannel for Customer Service. If you use the embed code from Power Virtual Agents, hand-off won't work. For more information, see [Embed chat widget in your website or portal](/dynamics365/customer-service/embed-chat-widget-portal).
 
-> [!NOTE]
-> If you connected your bot to omnichannel engagement before November 2021, the settings on the **Omnichannel** tile will look as if they haven't been configured. This is a known issue. It doesn't affect the bot or the omnichannel connection, which will continue to run normally. Select **Enable** to refresh the settings and show the actual connection details.
 
 To add [voice capabilities](#voice-based-capabilities) after you've connected your bot to Omnichannel, you must disconnect the bot from your omnichannel service and reconnect it.
 
@@ -118,7 +113,7 @@ If your bot doesn't have omnichannel capabilities enabled, the message will alwa
 
 ## Manage your bot's omnichannel capabilities
 
-Select **Manage** > **Agent transfers**, and then select the **Omnichannel** tile. Here you can disconnect or disable your bot, refresh the connection, or open the Omnichannel admin center to view the connection details.
+Select **Manage**, **Agent transfers**, and then select the **Omnichannel** tile. Here you can disconnect or disable your bot, refresh the connection, or open the Omnichannel admin center to view the connection details.
 
 ### Disconnect your bot from omnichannel or disable the omnichannel connection
 
@@ -157,7 +152,6 @@ Use this action to ask callers if they're willing to take a survey at the end of
     :::image type="content" source="./media/configuration-hand-off-omnichannel/handoff-voice-config-survey-consent.png" alt-text="Set the response choice for the Set survey consent action.":::
 
 ### Set customer locale and handoff to omnichannel
-<!-- Please submit a bug to change "handoff" to "hand-off" in the UI here. -->
 
 Use this action to ask callers for their preferred language.
 
@@ -216,7 +210,7 @@ Use this action to end the call.
 
 This variable contains the customer's phone number. It's also known as CallerID.
 
-You can use the "Is Empty" condition with bot.CustomerPhoneNumber to find out the customer's communication channel. If the conversation is from a call, "Is Empty" always returns *False*. If it's from messaging, "Is Empty" always returns *True*.
+You can use the "Is Empty" condition with `bot.CustomerPhoneNumber` to find out the customer's communication channel. If the conversation is from a call, "Is Empty" always returns _False_. If it's from messaging, "Is Empty" always returns _True_.
 
 ### bot.OrganizationPhoneNumber
 
