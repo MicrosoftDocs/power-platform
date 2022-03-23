@@ -70,7 +70,7 @@ Before you begin, review the [prerequisites](setup.md) for using the starter kit
 
 ### Turn on the flows
 
-In order to populate some of the tables with default values, turn on the following flows:
+To populate some of the tables with default values, turn on the following flows:
 - Add pain points
 - Update Software Tools
 
