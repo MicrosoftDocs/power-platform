@@ -89,5 +89,3 @@ Events become available in the logs within 90 minutes of their occurance.
 ## Limitations
 Only activity from cloud flows is available in the [Microsoft 365 compliance center](https://compliance.microsoft.com/). Activity for desktop flows is in the Microsoft Dataverse audit logs.
 
-## See also
-[Blog post: Microsoft Flow audit events now available (2017)](https://powerautomate.microsoft.com/en-us/blog/security-and-compliance-center/)
