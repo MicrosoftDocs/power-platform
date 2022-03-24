@@ -138,7 +138,6 @@ In addition to administrator permissions, you must have Read and Write privilege
 
 Choose *one* of the following methods: set mailboxes to the default profile, or edit mailboxes to set profile and delivery methods.
 
-<!--markdownlint-disable MD036--> 
 **To set mailboxes to the default profile**
 
 1. In the Power Platform admin center, select an environment. 

@@ -293,8 +293,6 @@ Everyone who invokes the flow need a premium license because it is an instant fl
 
 You can either license the parent flow or license the child flow with a per flow license. However, if the parent flow also has a premium connector, the parent flow owner must have a premium license.
 
-<!-- ### **Automated flow with Dataverse trigger** – Dataverse triggers allow flows to use the invoker's connection. Since it is an automated flow, flow only looks for creator/owner's license -->
-
 ## Shared flows
 
 ### **My flow is shared with multiple users who view and edit the flow**. Do co-owners need premium license to edit the flows?

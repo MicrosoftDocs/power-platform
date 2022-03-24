@@ -53,7 +53,7 @@ Make sure you have the System Administrator or System Customizer security role o
 > |Allow users to hide system views|Default: Off. If **On**, users can hide system views in the view selector to manage their view list in model-driven apps. More information: [Hide views on a grid page](/powerapps/user/grid-filters-advanced#hide-views). This setting only appears if you have enabled 2022 Release Wave 1.|
 > |**Collaboration (preview)**  ||
 > |Enable preview of the modern link sharing UI, co-presence, online status in model-driven apps  | Default: Off. Turn **On**, to allow users to share links and see each others presence status when they're working on a record. For more information see, [Collaborate with others in model-driven apps](/powerapps/user/collaboration).  |
-> |End users can add and join Teams meeting from appointments in model-driven apps.  | Default: Off. Turn **On**, to allow users create and join Teams meeting from an appointment. <!-- For more information, see [Create and join a Teams meeting from an appointment](/powerapps/user/join-teams-meeting-from-appointments).  -->|  
+> |End users can add and join Teams meeting from appointments in model-driven apps.  | Default: Off. Turn **On**, to allow users create and join Teams meeting from an appointment. |  
 > | **Activities**   | Default: Off. Select **On** to limit the number of activities showing up in the **New Activity** dropdown list to activities that are relevant to the model-driven app. | 
 > |**Search**||  
 > |Dataverse search|Default: Off. If **On**, you can use Dataverse search to find records across multiple tables, sorted by relevance.|  
