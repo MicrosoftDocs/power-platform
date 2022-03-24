@@ -16,7 +16,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# SharePoint Document Management software requirements
+# SharePoint Document Management software requirements 
 
 If you want to use [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint-long.md)] document management functionality with customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), you must meet the requirements listed in this topic.  
 
