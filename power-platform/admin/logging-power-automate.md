@@ -84,10 +84,10 @@ Schemas define the Power Automate fields that are sent to the Microsoft 365 comp
 Microsoft retains the audit data for 90 days. You can export the audit data in .csv format and then further explore the data with Microsoft Excel or Power BI. 
 
 ## Timing 
-Customers can expect events to be available in the within 90 minutes of them occurring.
+Events become available in the logs within 90 minutes of their occurance.
 
 ## Limitations
-Only activity from cloud flows is recorded in the [Microsoft 365 compliance center](https://compliance.microsoft.com/). Recorded activity for desktop flows is in the Microsoft Dataverse audit logs.
+Only activity from cloud flows is available in the [Microsoft 365 compliance center](https://compliance.microsoft.com/). Activity for desktop flows is in the Microsoft Dataverse audit logs.
 
 ## See also
 [Blog post: Microsoft Flow audit events now available (2017)](https://powerautomate.microsoft.com/en-us/blog/security-and-compliance-center/)
