@@ -49,7 +49,7 @@ This card shows whether your Microsoft services are healthy, or if they're exper
 
 ### Message center
 
-This card helps you manage upcoming changes to hour Microsoft services. Select a post to open it in the details panel. To view the full list of messages across all Microsoft services, select **Show all**. [More info about the message center](/office365/admin/manage/message-center)
+This card helps you manage upcoming changes to hour Microsoft services. Select a post to open it in the details panel. To view the full list of messages across all Microsoft services, select **Show all**. [More info about the message center](/office365/admin/manage/message-center).
 
 ### Documentation and training
 
