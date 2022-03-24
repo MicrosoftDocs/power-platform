@@ -114,7 +114,7 @@ When an application user is first created, the username is the same as the name 
 
 ## Manage roles for an application user 
 
-In addition to using the entry point on the **Details** page<!--note from editor: To match the reference in line 102 and in most places in the repo.--> to manage roles, you can select **Edit security Roles** on the menu bar on the **Application users** page. If the application user has roles assigned already, those roles will appear as selected on the page.
+In addition to using the entry point on the **Details** page to manage roles, you can select **Edit security Roles** on the menu bar on the **Application users** page. If the application user has roles assigned already, those roles will appear as selected on the page.
 
 You can select or deselect roles, and then select **Save**.  All selected roles will become the current assigned roles for the application user. Any unselected roles won't be assigned.
 

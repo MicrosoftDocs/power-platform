@@ -58,44 +58,6 @@ The main root folder for Power Automate has the following folder structure:
 > [!NOTE] 
 > Data listed in these folders can be viewed through your Azure portal. For information, go to [https://portal.azure.com](https://portal.azure.com/) and navigate to your storage account (**Home** > **Subscriptions** > *your subscription name* > **Resource Groups** > *your resource group* > *your storage accounts* > **Storage Account**).
 
-<!--
-**Data export options**
-
-This section discusses options for establishing your organization's custom export requirements at the tenant and individual business unit level. After you set up the initial data export, data will continue to be exported to your tenant's data lake every 24 hours.
-
-**Create a Power BI dashboard with data in your Azure Data Lake Gen2 storage**
-
-Some organizations need to configure longer durations for data exports. For example, some customers may want to ensure a charge back model across different departments, divisions, and so on. Other customers are looking to layer their export data with other LOB scenarios and build custom reports as part of their existing enterprise dashboards.
-
-Follow these steps to build a Power BI dashboard:
-
-1. Create a [Power BI data flow](/power-bi/transform-model/service-dataflows-create-usee).  
-
-2. Connect to [Azure Data Lake Gen2 for dataflows](/power-bi/transform-model/service-dataflows-connect-azure-data-lake-storage-gen2).
-
-3. Create a new [dashboard](/power-bi/transform-model/desktop-connect-dataflows).
-
-## Configuration options
-
-If you decide to add a new data lake destination, the Power Platform service admin needs access to the PPAC. In addition, they must have *owner* or *contributor* access to the Azure Data Lake Gen 2 storage account, as well as owner or contributor access to the Azure subscription.
-
-After the admin has been granted these permissions, they should be able to set up a new data export connection. For the first time, granting permissions for Microsoft to export data to customers data lake requires the Azure AD global admin to do the setup process.
-
-### Delete the data connection set up for data export
-
-To delete an existing connection that has been set up for data export to your data lake, use the [Power Platform Admin Center](https://aka.ms/ppac). Once you delete a connection, you can configure a new one using the Power Platform admin center.
-
-> [!NOTE]
-> You can't edit an existing connection. Instead, you must delete it first and then set up a new connection.
-
-### Configure a firewall
-
-When configuring your firewall, we recommend that you select the **Isolate this storage** option.
-
-> [!NOTE]
-> Microsoft plans to make this data export service part of Microsoft Trusted principals list over the course of maturing the data export process. With Dynamic IP allocation model, IP range restrictions are not an option for firewall setups.
--->
-
 ## The structure of the containers and folders inside the data lake
 
 - The main root folder is in the yyyy-mm-dd date format&mdash;for example, 2020-02-28.

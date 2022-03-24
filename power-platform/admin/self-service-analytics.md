@@ -62,13 +62,7 @@ The amount of data that you can export depends on your app and flow usage. The i
 
 For example, an enterprise customer with two years' worth of inventory data might have 300 MB of data to export. After the initial export, approximately 5 to 10 MB of that data would be pushed daily.
 
-<!--
-## Simplify data with Azure Data Lake Store
 
-[Azure Data Lake Store](/azure/architecture/data-guide/scenarios/data-lake) enables you to store captured data of any size, type, and ingestion speed in one single secure location for operational and exploratory analytics. You can use Power Platform self-service analytics to export Power Apps inventory and usage data directly to your [Azure Data Lake Gen2](/power-bi/transform-model/dataflows/dataflows-azure-data-lake-storage-integration) storage locations.
-
-You can store exported data for extended durations, as well as move data to data warehouses. To learn more about building custom reports at tenant and environment levels across business units, see [Prepare Power Apps inventory and usage data for consumption and displaying data insights](build-custom-reports.md).
--->
 ## Set up the data export process for your tenant
 
 Admins should use the Power Platform admin center to set up the data export. Before you begin exporting data, ensure that your Data Lake Storage Gen2 account has been set up as described in this section. Be certain that the admin who sets up the data export already has access to your storage account.
@@ -100,32 +94,7 @@ Microsoft requires that the first time you set up a data export to your organiza
 
 > [!IMPORTANT]
 > A connection with Microsoft's tenant service is required because your tenant must enable principal access to your organization's property; in this case, a [Data Lake Storage Gen2 account](/power-bi/transform-model/dataflows/dataflows-azure-data-lake-storage-integration). This is a one-time setup, which must be performed by your Azure AD admin. When your Azure AD admin grants access permissions to your Azure AD tenant, the process temporarily allows the Microsoft service principal account to export and write data to your Data Lake Storage Gen2 specified storage account only. The Microsoft service principal account used for this will not be granted any permissions for other operations in your Data Lake Storage account.
-<!-- 
-**Set up using the Power Platform admin center portal**
 
-Follow the steps below for setting up your data lake using the [Power Platform Admin Center](https://aka.ms/ppac) portal, and for setting up an Azure Data Lake Gen 2 connection for the first time:
-
-1. Have your Azure AD global admin log into the PPAC portal at [https://aka.ms/ppac](https://aka.ms/ppac).
-
-2. Select the **Export to Azure Data Lake** option.
-
-3. Select **Power Apps**.
-
-4. Choose a subscription from the list that the admin has access to.
-
-5. Choose a resource group from the list in the **Subscription** group.
-
-6. Choose a storage account from the list of accounts in the **Resource** group.
-
-7. Select **Create** to provide consent for the Power Platform admin center to set up the connection to your Azure Data Lake Gen2 account.
-
-> [!NOTE]
-> This option also provides *write* permissions for export of the data to the specified storage account only. No other permissions are being consented to by the customer's global tenant admin.
-
-8. You will now be taken to a dashboard that displays the connection name.
-
-The setup process is now complete, and your data will be exported within 48 hours. The data will then be exported to your tenant's data lake every 24 hours.
--->
 
 
 ### See also

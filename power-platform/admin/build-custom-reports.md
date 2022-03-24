@@ -42,24 +42,7 @@ A diagram of limitless extensibility options through using cloud analytics and A
 Exported data intended for use with Power BI is stored internally by default. When using Power BI to view exported data, make sure you select the same location for the data lake [storage account](/power-bi/transform-model/dataflows/dataflows-azure-data-lake-storage-integration) as your Power BI tenant. If you need to find the location of your Power BI tenant, see [Where is my Power BI tenant located](/power-bi/admin/service-admin-where-is-my-tenant-located)?
 
 As soon as data is available in your data lake, you can choose to move data to any reporting store; for example, a SQL data warehouse. For this you'll need to build custom Power BI reports. You can also choose to build [Power BI reports off Data Lake Storage](/power-bi/transform-model/service-dataflows-azure-data-lake-integration).
-<!-- 
-### View data using Azure Data Lake Gen 2  
 
-You can store your dataflows in your organization's Azure Data Lake Storage Gen2 account. Before you can export data to a data lake service, you need to create an Azure storage account. Learn more: [Create a storage](/azure/storage/common/storage-account-create?tabs=azure-portal) account.
-
-1. Use the ARM Template located at this [GitHub location](https://gist.github.com/dazfuller/0740f1640225dc8ea0eb29a8e6f88a6a) in your automation script.
-
-2. Set your storage as Storagev2 (general purpose v2).
-
-3. The storage account must have the **Hierarchical Name Space** feature enabled.
-
-4. The admin setting up the data export option in the [Power Platform Admin Center](https://aka.ms/ppac) (PPAC) must be granted an *Owner role* for the resources and have a subscription in a storage account.
-
-For more information, see [Configuring dataflow storage to use Azure Data Lake Gen 2](/power-bi/transform-model/dataflows/dataflows-azure-data-lake-storage-integration).
-
-> [!NOTE]
-> To view data in your own storage data lake, you first need to download the [Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer).
--->
 ### View data in the Azure portal  
 
 You can also view data by using the Azure portal.
@@ -67,23 +50,6 @@ You can also view data by using the Azure portal.
 1. Go to [https://portal.azure.com](https://portal.azure.com/).
 
 2. Navigate to your storage account by going to **Home** > **Subscriptions** > *your subscription name* > **Resource Groups** > *your resource group* > *your storage accounts* > **Storage Account**.
-
-<!--
-### Provision using Azure Data Lake Gen2
-
-To provision using a Azure Data Lake Gen2 storage location:
-
-1. In the [Azure portal(https://portal.azure.com), select Storage accounts &gt; Access Control (IAM).
-
-2. Select the **Role Assignments** tab.
-
-3. Search for "Power Platform Data Analytics".
-
-4. Then you should see:
-
-   - A new **Power Platform Data Analytics** service principal (app) that is created in Azure AD.
-   - The principal assigned as the **Storage Blob Data Contributor**, who now should have access to your Azure Data Lake Gen 2 storage account.
--->
 
 > [!NOTE]
 > To view data in your own storage data lake, you first need to download the [Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer).

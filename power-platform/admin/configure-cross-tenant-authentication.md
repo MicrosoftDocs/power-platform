@@ -53,10 +53,6 @@ Sign in to https://admin.powerplatform.microsoft.com and do the following steps.
 
 
 
-<!-- https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id -->
-
-
-
 ### Step one: Create a new email server profile
 
 
