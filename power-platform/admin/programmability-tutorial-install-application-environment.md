@@ -32,8 +32,8 @@ In this example scenario, a Customer is looking to install Office Groups to a sp
 > [!IMPORTANT]
 > The Power Platform API is in preview. The host name and data contracts are subject to change by the time the endpoints become generally available.  At that time, this article will be updated with the final endpoint details.
 
-## Create a workflow that authenticates with Power Platform API
-Below are details on getting connected to the Power Platform programmatically.  For now, only an Azure example is present but more will be added for other tools like Power Platform CLI.
+## Choose a tool that can authenticate with Power Platform API
+Below are details on getting connected to the Power Platform programmatically.  This tutorial includes using Azure Logic Apps as a common client for admins working in the Azure space, as well as a native Power Platform CLI example.
 
 # [Azure](#tab/Azure)
 ### Create the workflow and set up the variables
@@ -84,6 +84,17 @@ We then parse the Azure AD token response into a typed object using this JSON sc
 
 > [!div class="mx-imgBorder"] 
 > ![Parse the Azure AD token response into a strongly typed object.](media/capacity5.png "Parse the Azure AD token response into a strongly typed object")
+
+# [Power Platform CLI](#tab/pacCLI)
+### Get authenticated
+Using Power Platform CLI, you can easily get authenticated with a particular Dataverse organization.  To do this, simply select an existing auth profile:
+```cmd
+pac auth select --name "NameOfProfile"
+```
+> [!div class="mx-imgBorder"] 
+> ![Select an auth profile.](media/appmgmt-tutorial-cli-1.png "Select an auth profile")
+
+For more information, see the [Auth](/powerapps/developer/data-platform/cli/reference/auth-command) article for more in depth examples.
 
 ---
 
@@ -263,6 +274,20 @@ We then parse the response into a strongly typed object using this JSON schema w
     "type": "object"
 }
 ```
+
+# [Power Platform CLI](#tab/pacCLI)
+### List the applications for the environment
+Now we can make use of the application verb and list out the available applications that this environment has entitlement to install.
+
+```cmd
+pac application list --environment-id "YOUR_ENVIRONMENT_ID_HERE"
+```
+
+> [!div class="mx-imgBorder"] 
+> ![List the apps for an environment.](media/appmgmt-tutorial-cli-2.png "List the apps for an environment")
+
+For more information, see the [Auth](/powerapps/developer/data-platform/cli/reference/application-command) article for more in depth examples.
+
 ---
 
 ## Install the application
@@ -350,6 +375,19 @@ The following is an example response:
 
 Then we will use the Parse JSON action to get the operationID for our subsequent steps.
 
+# [Power Platform CLI](#tab/pacCLI)
+### Trigger installation
+Now we can make use of the application verb and install an app from the output of the prior step.
+
+```cmd
+pac application install --environment-id "YOUR_ENVIRONMENT_ID_HERE" --application-name "APP_UNIQUE_NAME_HERE"
+```
+
+> [!div class="mx-imgBorder"] 
+> ![Trigger install.](media/appmgmt-tutorial-cli-3.png "Trigger install")
+
+For more information, see the [Auth](/powerapps/developer/data-platform/cli/reference/application-command) article for more in depth examples.
+
 ---
 
 ## Poll for operation status
@@ -388,3 +426,7 @@ Now that the monitoring has concluded, we can share the result over email as an 
 
 > [!div class="mx-imgBorder"] 
 > ![Create a logic app.](media/appmgmt-tutorial-4.png "Send an email (v2) on the status of the activity")
+
+# [Power Platform CLI](#tab/pacCLI)
+### Monitor progress
+Congratulations! You've reached the easy part, now just sit back and watch as your application completes installation.  In the case of a failure, you can always review the detailed logs from the Dynamics 365 apps list in your environment in the Power Platform admin center.
