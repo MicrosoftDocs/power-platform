@@ -98,7 +98,6 @@ Microsoft requires that the first time you set up a data export to your organiza
 
 
 ### See also
-
 [Create custom dashboards by using Power Platform inventory and usage data](build-custom-reports.md) <br />
 
 
