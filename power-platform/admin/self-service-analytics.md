@@ -100,7 +100,7 @@ Microsoft requires that the first time you set up a data export to your organiza
 ### See also
 
 [Create custom dashboards by using Power Platform inventory and usage data](build-custom-reports.md) <br />
-[Preview: Set up Microsoft Power Platform self-service analytics to export Power Platform inventory and usage data](self-service-analytics-schema-definition.md)
+
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
