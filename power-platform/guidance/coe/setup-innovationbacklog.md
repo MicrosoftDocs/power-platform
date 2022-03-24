@@ -68,7 +68,13 @@ Before you begin, review the [prerequisites](setup.md) for using the starter kit
 
 1. When the import succeeds, refresh the page and open the Center of Excellence - Innovation Backlog solution.
 
-1. Now, run some instant flows to populate some of the tables with default values.
+### Turn on the flows
+
+To populate some of the tables with default values, turn on the following flows:
+- Add pain points
+- Update Software Tools
+
+1. Now, run the flows to populate some of the tables with default values.
     1. Open the **Add pain points** cloud flow and select **Run** > **Run Flow**.
         ![Run Add Pain points cloud flow.](media/ib-2.png "Run Add Pain points cloud flow")
     1. Open the **Update Software Tools** cloud flow and select **Run** > **Run Flow**.
