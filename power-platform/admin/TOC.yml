@@ -655,7 +655,7 @@
         items:
         - name: Getting started
           href: powerplatform-api-getting-started.md
-        - name: Preview: Creating a service principal
+        - name: Creating a service principal (preview)
           href: powerplatform-api-create-service-principal.md
         - name: Reference
           items:
