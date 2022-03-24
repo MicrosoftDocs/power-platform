@@ -57,7 +57,7 @@ No matter where customer data is stored, Microsoft doesn't control or limit the 
 Data will be stored in the United States if a bot author's tenant location isn't listed under the **Data locations** table below.
 
 >
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4mPmc ]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mPmc ]
 >
 
 | Azure geographic locations (geos) | Azure datacenters (regions)                                                                                                                                                               |
