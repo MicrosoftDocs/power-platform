@@ -12,7 +12,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/03/2021
+ms.date: 03/23/2021
 ms.subservice: admin
 ms.author: deonhe
 search.app: 
@@ -54,7 +54,7 @@ All logging is done at the SDK layer, so a single action can trigger multiple lo
 |Flows | Created flow | The time a flow is created|
 |Flows | Edited flow | Any updates made to the flow|
 |Flows | Deleted flow | When the flow is deleted|
-|Flow permissions | Edited permissions | Every time a user's permissions to the flow changes e.g. user added as shared co-owner|
+|Flow permissions | Edited permissions | Every time a user's permissions to a flow changes, for example, when a user is added as co-owner.|
 |Flow permissions | Deleted permissions | Every time a user's permissions to the flow is removed|
 |Trials | Started a paid trial | When a user starts a paid trial|
 |Trials | Renewed a paid trial | When a user renews a paid trial|
@@ -81,7 +81,7 @@ Schemas define the Power Automate fields that are sent to the Microsoft 365 comp
 |Additional info | More information, for example, the environment name)|
 
 ## Retention
-The retention period for audit data is 90 days. CSV exports of this data are also available which allow customers to further explore this data using Microsoft Excel or Power BI. 
+Microsoft retains the audit data for 90 days. You can export the audit data in .csv format and then further explore the data with Microsoft Excel or Power BI. 
 
 ## Timing 
 Customers can expect events to be available in the within 90 minutes of them occurring.
