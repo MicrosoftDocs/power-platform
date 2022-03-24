@@ -119,20 +119,6 @@ You can only restore to sandbox environments. To restore to a production environ
 
 6. Confirm overwrite of the environment. 
 
-<!--
-### Edit a manual backup  
-Edit a backup to change its label and your notes about the backup.  
-  
-1. Browse to the Power Platform admin center and sign in using administrator credentials.
-  
-2. Go to **Environments** > [select an environment] > **Backups** > **Restore or manage**.
-
-3. Select the **Manual** tab.
-
-4. Select **Edit**.
-  
-5. Fill in the information, and then select **Save**.
--->
 
 ### Delete a manual backup  
  You can  delete manual backups. You can't delete system backups.  
