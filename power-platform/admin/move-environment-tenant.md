@@ -33,7 +33,7 @@ You can use the tenant-to-tenant migration feature to request an environment in 
 - Consolidate multiple tenants under one tenant
 - Support acquisition from Company A to Company B
 
-<sup>*</sup>The environment is not actually moved but associated with another tenant. The environment still exists in the source tenant but is available and managed in the migrated tenant.
+<sup>*</sup>The environment is not actually physically moved but instead is associated with another tenant. The environment still exists but is no longer under the source tenant. It is available and managed under the destination tenant.
 
 You need to [submit a support request](get-help-support.md) to initiate tenant-to-tenant migration. 
 
