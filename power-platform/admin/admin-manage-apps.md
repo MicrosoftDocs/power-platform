@@ -4,7 +4,7 @@ description: How to manage Power Apps apps created in your organization.
 author: alaug
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/28/2022
+ms.date: 03/25/2022
 ms.subservice: admin
 ms.author: alaug
 ms.reviewer: jimholtz
@@ -84,7 +84,7 @@ Do the following to limit maker privileges to only be able to create and edit Sh
 
 #### Can I edit privileges in the SharePoint custom form maker security role? 
 
-No, the SharePoint custom form maker security role is added to an environment by importing a non-customizable solution. Note, SharePoint custom form creation requires a user to have permissions in SharePoint and Power Platform. The platform verifies a user has write permissions for the targeted SharePoint list and the user has permission in Power Platform to create or update the SharePoint custom form. For a SharePoint custom form maker to satisfy the Power Platform check, the user must have the SharePoint custom form security role or the Environment Maker security role.
+No, the SharePoint custom form maker security role is added to an environment by importing a non-customizable solution. Note, SharePoint custom form creation requires a user to have permissions in SharePoint and Power Platform. The platform verifies a user has write permissions for the targeted list created using Microsoft Lists and the user has permission in Power Platform to create or update the SharePoint custom form. For a SharePoint custom form maker to satisfy the Power Platform check, the user must have the SharePoint custom form security role or the Environment Maker security role.
 
 #### Will a user with only the SharePoint custom form maker role see an environment in the make.powerapps.com environment picker? 
 
