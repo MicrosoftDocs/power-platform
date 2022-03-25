@@ -130,8 +130,6 @@
           href: reset-environment.md
         - name: Copy environment
           href: copy-environment.md
-        - name: Move environment
-          href: move-environment-tenant.md
         - name: Back up and restore environment
           href: backup-restore-environments.md
         - name: Business continuity and disaster recovery
@@ -362,6 +360,10 @@
         items:
         - name: Environment cleanup process
           href: automatic-environment-cleanup.md
+        - name: Migrate environment
+          href: move-environment-tenant.md          
+        - name: Geo to geo migrations
+          href: geo-to-geo-migrations.md  
         - name: Power Platform Geos
           href: regions-overview.md
         - name: Multiple online environments or tenants
