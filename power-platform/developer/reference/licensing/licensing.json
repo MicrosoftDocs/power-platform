@@ -561,14 +561,6 @@
     }
   },
   "definitions": {
-    "BillingAssignmentMode": {
-      "enum": [
-        "Auto",
-        "AdminAssigned",
-        "IsvAssigned"
-      ],
-      "type": "string"
-    },
     "BillingInstrumentModel": {
       "type": "object",
       "properties": {
@@ -576,9 +568,6 @@
           "type": "string"
         },
         "resourceGroup": {
-          "type": "string"
-        },
-        "location": {
           "type": "string"
         },
         "id": {
@@ -642,17 +631,11 @@
         "location": {
           "type": "string"
         },
-        "provider": {
-          "$ref": "#/definitions/ProviderIdentityModel"
-        },
         "billingInstrument": {
           "$ref": "#/definitions/BillingInstrumentModel"
         },
         "status": {
           "$ref": "#/definitions/BillingPolicyStatus"
-        },
-        "type": {
-          "$ref": "#/definitions/BillingPolicyType"
         }
       }
     },
@@ -676,29 +659,14 @@
         "name": {
           "type": "string"
         },
-        "type": {
-          "$ref": "#/definitions/BillingPolicyType"
-        },
         "status": {
           "$ref": "#/definitions/BillingPolicyStatus"
         },
         "location": {
           "type": "string"
         },
-        "environmentPolicy": {
-          "$ref": "#/definitions/EnvironmentPolicyModel"
-        },
-        "licensePolicy": {
-          "$ref": "#/definitions/LicensePolicyModel"
-        },
-        "provider": {
-          "$ref": "#/definitions/ProviderIdentityModel"
-        },
         "billingInstrument": {
           "$ref": "#/definitions/BillingInstrumentModel"
-        },
-        "activationCode": {
-          "type": "string"
         },
         "createdOn": {
           "format": "date-time",
@@ -739,68 +707,6 @@
       ],
       "type": "string"
     },
-    "BillingPolicyType": {
-      "enum": [
-        "TenantOwned",
-        "IsvOwned"
-      ],
-      "type": "string"
-    },
-    "EnvironmentCreationState": {
-      "enum": [
-        "Allow",
-        "Disallow"
-      ],
-      "type": "string"
-    },
-    "EnvironmentPolicyModel": {
-      "type": "object",
-      "properties": {
-        "environmentCreation": {
-          "$ref": "#/definitions/EnvironmentCreationState"
-        },
-        "maxAllowedEnvironmentCount": {
-          "format": "int32",
-          "type": "integer"
-        }
-      }
-    },
-    "LicensePolicyModel": {
-      "type": "object",
-      "properties": {
-        "assignmentMode": {
-          "$ref": "#/definitions/BillingAssignmentMode"
-        },
-        "overageState": {
-          "$ref": "#/definitions/OverageState"
-        },
-        "allocations": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/LicenseSkuAllocationModel"
-          }
-        }
-      }
-    },
-    "LicenseSkuAllocationModel": {
-      "type": "object",
-      "properties": {
-        "licenseSkuId": {
-          "type": "string"
-        },
-        "allocated": {
-          "format": "int32",
-          "type": "integer"
-        }
-      }
-    },
-    "OverageState": {
-      "enum": [
-        "Allow",
-        "Disallow"
-      ],
-      "type": "string"
-    },
     "PayAsYouGoState": {
       "enum": [
         "Enabled",
@@ -827,14 +733,6 @@
         "DelegatedAdmin"
       ],
       "type": "string"
-    },
-    "ProviderIdentityModel": {
-      "type": "object",
-      "properties": {
-        "tenantId": {
-          "type": "string"
-        }
-      }
     }
   },
   "securityDefinitions": {
