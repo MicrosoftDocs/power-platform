@@ -1,7 +1,7 @@
 ---
 title: Power Platform security FAQs
 description: Get answers to common questions about Power Platform security.
-ms.date: 02/15/2022
+ms.date: 03/24/2022
 ms.service: power-platform
 ms.topic: ""
 ms.custom: 
@@ -102,11 +102,11 @@ Following are some of the security questions our customers ask.
 
 [Clickjacking](https://owasp.org/www-community/attacks/Clickjacking) uses embedded iframes, among other components, to hijack a user's interactions with a web page. It's a significant threat to sign-in pages in particular. Power Platform prevents the use of iframes on sign-in pages, significantly reducing the risk of clickjacking.
 
-In addition, organizations can use [Content Security Policy](https://owasp.org/www-community/controls/Content_Security_Policy) (CSP) to restrict embedding to trusted domains.
+In addition, organizations can use [Content Security Policy](../content-security-policy.md) (CSP) to restrict embedding to trusted domains.
 
 ### Does Power Platform support Content Security Policy?
 
-Power Platform [Content security policy](../content-security-policy.md) for model-driven apps. 
+Power Platform supports [Content security policy](../content-security-policy.md) for model-driven apps. 
 
 ### How can we connect to SQL Server securely?
 
