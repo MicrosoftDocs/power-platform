@@ -2,7 +2,7 @@
 title: "Migrate an environment to a different tenant"
 description: "Learn about the impact of moving an environment from one tenant to another. Review the prerequisites and considerations before submitting a request." 
 ms.custom: ""
-ms.date: 02/07/2022
+ms.date: 03/25/2022
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
@@ -25,10 +25,12 @@ search.app:
 
 ## Move an environment to a different tenant
 
-You can use the tenant-to-tenant migration feature to request an environment in one tenant be moved to another tenant. This feature enables customers to support the following cases:
+You can use the tenant-to-tenant migration feature to request an environment in one tenant be moved<sup>*</sup> to another tenant. This feature enables customers to support the following cases:
 
 - Consolidate multiple tenants under one tenant
 - Support acquisition from Company A to Company B
+
+<sup>*</sup>The environment is not actually moved but associated with another tenant. The environment still exists in the source tenant but is available and managed in the migrated tenant.
 
 You need to [submit a support request](get-help-support.md) to initiate tenant-to-tenant migration. 
 
