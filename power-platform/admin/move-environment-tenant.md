@@ -9,6 +9,9 @@ ms.topic: "article"
 applies_to: 
   - "Dynamics 365 (online)"
 author: matapg007
+contributors:
+  - ImadYanni
+  - bevans 
 ms.subservice: admin
 ms.author: matgupta
 ms.reviewer: jimholtz
@@ -23,7 +26,7 @@ search.app:
 ---
 # Tenant-to-tenant migration
 
-## Move an environment to a different tenant
+## Migrate an environment to a different tenant
 
 You can use the tenant-to-tenant migration feature to request an environment in one tenant be moved<sup>*</sup> to another tenant. This feature enables customers to support the following cases:
 
