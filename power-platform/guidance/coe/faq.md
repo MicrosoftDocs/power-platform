@@ -166,8 +166,10 @@ If you aren't using the [Admin - Command Center](core-components.md#admin---comm
 ## Get a Power Apps URL from a production environment
 
 1. Go to [make.powerapps.com](https://make.powerapps.com), and then select your CoE environment.
-1. Select **...** > **Details**.
-1. Select the **Web link**.
+1. Select **Apps**.
+2. Select the app of which you need the URL from.
+3. Select **...** > **Details**.
+4. Select the **Web link**.
 
       ![Get the web link for a canvas app.](media/tips-link1.png "Get the web link for a canvas app")
 
