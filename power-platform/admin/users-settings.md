@@ -15,7 +15,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# User settings 
+# User settings
 
 Managing user settings can now be done in the Power Platform admin center. Use the following steps to change user settings.
 
@@ -25,9 +25,9 @@ Managing user settings can now be done in the Power Platform admin center. Use t
 
 3. Select the check mark to the left of a user name. 
 
-:::image type="content" source="media/user-settings-menu-bar.png" alt-text="User settings menu bar":::
+4. Select a user setting from the top menu bar.
 
-The following settings can be selected in the top menu bar.
+:::image type="content" source="media/user-settings-menu-bar.png" alt-text="User settings menu bar":::
 
 |Setting  |Description  |
 |---------|---------|
