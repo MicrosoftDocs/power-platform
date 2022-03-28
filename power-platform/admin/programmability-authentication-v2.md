@@ -3,9 +3,8 @@ title: Programmability and Extensibility - Authentication (preview) | Microsoft 
 description: Overview of Azure Active Directory (Azure AD) setup for calling Power Platform API and other platform programmability tools
 author: laneswenka
 ms.reviewer: jimholtz
-ms.component: pa-admin
 ms.topic: reference
-ms.date: 03/24/2022
+ms.date: 03/29/2022
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -17,18 +16,17 @@ search.app:
 # Authentication (preview)
 This article provides an overview of the Azure Active Directory (Azure AD) setup for calling Power Platform API (preview).  To access resources available via Power Platform API, you must get a bearer token from Azure AD and send it as a header along with each request.  Depending on the identity type you're supporting (user vs service principal) there are different flows to obtain this bearer token.  These are outlined below.
 
-## Basic authentication and authorization steps
-The following are the steps required to obtain a bearer token with the correct permissions:
+The following steps are required to obtain a bearer token with the correct permissions:
 1. Create an application registration in your Azure AD tenant
 2. Configure API permissions
 3. Configure Public Client (optional)
 4. Configure Certificates and Secrets (optional)
 5. Request an access token 
 
-### 1. Create an application registration
+## Step 1. Create an application registration
 Navigate to the [Azure AD app registration](https://go.microsoft.com/fwlink/?linkid=2083908) page and create a new registration.  Give the application a name, and ensure the **Single tenant** option is selected.  You can skip the redirect URI setup.
 
-### 2. Configure API permissions
+## Step 2. Configure API permissions
 Within your new app registration, navigate to the **Manage - API Permissions** tab.  Under the **Configure permissions** section, select **Add a Permission**.  On the dialog window that opens, select the **APIs my organization uses** tab, and then search for **Power Platform API**.  You might see several entries with a name similar to this, so ensure you use the one with the GUID **8578e004-a5c6-46e7-913e-12f58912df43**.  
 
 If you don't see Power Platform API showing up in the list when searching by GUID, it's possible that you still have access to it but the visibility is not refreshed. To force a refresh run the below PowerShell script:
@@ -49,15 +47,15 @@ From here, you must select the permissions you require. These are grouped by [**
 
 After the required permissions are added to the application, select **Grant admin consent** to complete the setup.  This is necessary for instances where you want to allow users to access your app right away, instead of requiring an interactive consent experience.  If you can support interactive consent, we recommend following the [Microsoft identity platform and OAuth 2.0 authorization code flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow).
 
-### 3. Configure Public Client (optional)
+## Step 3. Configure Public Client (optional)
 If your app will require reading and writing resources on behalf of a user, you will need to enable the Public Client setting.  This is the only way that Azure AD will accept username and password properties in the body of your token request.  Also note, that if you plan to use this feature it will not work for accounts that have multi-factor authentication enabled.  
 
 To enable, visit the **Manage - Authentication** tab.  Under the **Advanced Settings** section, set the **Public Client** switch to **Yes**. 
 
-### 4. Configure Certificates and Secrets (optional)
+## Step 4. Configure Certificates and Secrets (optional)
 If your app will require reading and writing resources as itself - also known as a Service Principal, there are two ways to authenticate.   To use certificates, navigate to the **Manage - Certificates and secrets** tab.  Under the **Certificates** section, upload an x509 certificate that you can use to authenticate.  The other way is to use the **Secrets** section to generate a client secret.  Save the secret in a safe location for use with your automation needs.  The certificate or secret options will allow you to authenticate with Azure AD and receive a token for this client, of which you will pass along to either the REST APIs or PowerShell cmdlets.  
 
-### 5. Request an access token
+## Step 5. Request an access token
 There are two ways to obtain an access bearer token.  One is for username and password and the other is for Service Principals.  
 
 #### Username and password flow
