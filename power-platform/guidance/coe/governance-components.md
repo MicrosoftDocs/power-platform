@@ -336,12 +336,12 @@ This flow runs weekly and deletes environments that:
 - Have been created more than **7 days** ago and have no business justification, or the business justification has been rejected by the admin.
 - Have been created more than **90 days** ago and have no apps or flows in the environment.
 
->[!NOTE]
+> [!NOTE]
 > Currently, bots created via Power Virtual Agents in Microsoft Teams environments aren't discoverable in the CoE Starter Kit.
 
 Environments are deleted from the tenant and marked as deleted in the Environment table of the CoE Starter Kit. You can view deleted environments in the [Power Platform Admin View](core-components.md).
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > You can recover a recently deleted environment (within seven days of deletion) by using the Power Platform admin center or the Power Apps cmdlet Recover-AdminPowerAppEnvironment. More information: [Recover environment](../../admin/recover-environment.md#power-platform-admin-center)
 
 Save a copy of this flow in case you want to make any changes to the criteria for when environments are deleted.
@@ -350,7 +350,7 @@ Learn more about the Microsoft Teams governance process in the CoE Starter Kit: 
 
 #### Microsoft Teams Admin \| Send Reminder Mail
 
-This flow sends a daily reminder email to environment owners who have been asked for a business justification for their Dataverse for Teams environment but have not yet provided one. The email additionally provides information on how to turn on flow integration in Microsoft Teams.
+This flow sends a daily reminder email to environment owners who have been asked for a business justification for their Dataverse for Teams environment but haven't yet provided one. The email additionally provides information on how to turn on flow integration in Microsoft Teams.
 
 ## Cleanup for orphaned resources
 
@@ -359,44 +359,45 @@ This flow sends a daily reminder email to environment owners who have been asked
 | Flow | Type | Schedule |
 | --- | --- | --- |
 | [Request Orphaned Objects Reassigned (Child)](#request-orphaned-objects-reassigned-child) | Instant | child |
-| [Request Orphaned Objects Reassigned (Parent)](#request-orphaned-objects-reassigned-parent) | Schedule | Daily |
+| [Request Orphaned Objects Reassigned (Parent)](#request-orphaned-objects-reassigned-parent) | Schedule | daily |
 | [HELPER - CanvasAppOperations Gov](#helper---canvasappoperations-gov) | Instant | helper |
 | [HELPER - CloudFlowOperations Gov](#helper---cloudflowoperations-gov) | Instant | helper |
 
 #### Request Orphaned Objects Reassigned (Parent)
 
-On a daily basis, this collects all the orphaned objects in the tenant and attempts to associate them with the manager of the former owner. It then sends a teams bot note to each impacted manager and lets them know that there are objects to clean, and then concurrently calls the child flow for each manager. <br>
-For those orphaned objects which cannot resolve to a previous manager, it sends the list to the admin email so that admins know which orphaned objects will need cleaned manually.
+On a daily basis, this collects all the orphaned objects in the tenant and attempts to associate them with the manager of the former owner. It then sends a Teams bot note to each impacted manager and lets them know there are objects to clean, and then concurrently calls the child flow for each manager. 
 
-![Orphaned object count](media/orphanedobjects1.png "Orphaned object count")
+A list of orphaned objects that can't resolve to a previous manager is sent to the admin email so that admins know which orphaned objects need to be cleaned manually.
+
+![Orphaned object count.](media/orphanedobjects1.png "Orphaned object count")
 
 #### Request Orphaned Objects Reassigned (Child)
 
-This flow is triggered daily for every manager that has objects owned by former employees that have left the company. It shows all the cloud flows and canvas apps owned by the employees that left the company and lets the manager decide what they want to do:
+This flow is triggered daily for every manager who has objects owned by former employees who have left the company. It shows all the cloud flows and canvas apps owned by the former employees and lets the manager decide what to do:
 
-1) Email themselves the list
-1) Take ownership of them all
-1) Delete them all
-1) Assign them all to someone else
-1) See each one individually 
+1) Email themselves the list.
+1) Take ownership of them all.
+1) Delete them all.
+1) Assign them all to someone else.
+1) See each one individually. 
 
-![Orphaned object list](media/orphanedobjects2.png "Orphaned object list")
+![Orphaned object list.](media/orphanedobjects2.png "Orphaned object list")
 
 If they choose to see the items individually, then they can make these decisions granularly. 
 
-![Orphaned object item](media/orphanedobjects3.png "Orphaned object item")
+![Orphaned object item.](media/orphanedobjects3.png "Orphaned object item")
 
 #### HELPER - CanvasAppOperations Gov
 
-This flow takes in the environment, app, and operation to perform as well as the GUID for the new maker if the operation is to reassign ownership. <br>
-The operations supported are Delete and Assign (which reassigns owner) <br>
-It performs the action on the actual object in the tenant and also updates the inventory.
+This flow takes in the environment, app, and operation to perform as well as the GUID for the new maker if the operation is to reassign ownership. 
+
+The operations supported are Delete and Assign (which reassigns owner). It performs the action on the actual object in the tenant and also updates the inventory.
 
 #### HELPER - CloudFlowOperations Gov
 
-This flow takes in the environment, flow, and operation to perform as well as the GUID for the new maker if the operation is to reassign ownership. <br>
-The operations supported are Delete and Assign (which reassigns owner) <br>
-It performs the action on the actual object in the tenant and also updates the inventory.
+This flow takes in the environment, flow, and operation to perform as well as the GUID for the new maker if the operation is to reassign ownership. 
+
+The operations supported are Delete and Assign (which reassigns owner). It performs the action on the actual object in the tenant and also updates the inventory.
 
 ## App Quarantine process
 
@@ -411,7 +412,7 @@ It performs the action on the actual object in the tenant and also updates the i
 | Flow | Type | Schedule |
 | --- | --- | --- |
 |[Admin \| Quarantine non-compliant apps](#admin--quarantine-non-compliant-apps) | Scheduled |  Daily |
-| [Admin \| Set app quarantine status](#admin--set-app-quarantine-status) | Automated | when the Quarantine App field in the PowerApps App table is changed |
+| [Admin \| Set app quarantine status](#admin--set-app-quarantine-status) | Automated | When the Quarantine App field in the PowerApps App table is changed |
 
 #### Admin \| Quarantine non-compliant apps
 
@@ -430,22 +431,22 @@ To release an app from quarantine, use the [Power Platform Admin View](core-comp
 
 This flow is triggered automatically if the app quarantine status field of the PowerApps App table is updated.
 
-This field
+This field:
 
-- is set to **Yes** by the Admin \| Quarantine non-compliant apps.
-- can be updated to either **Yes** or **No** manually by the admin from the [Power Platform Admin View](core-components.md#power-platform-admin-view)., to quarantine apps or release apps from quarantine.
+- Is set to **Yes** by the Admin \| Quarantine non-compliant apps.
+- Can be updated to either **Yes** or **No** manually by the admin from the [Power Platform Admin View](core-components.md#power-platform-admin-view) to quarantine apps or release apps from quarantine.
 
-This flow sets to quarantine status of the app.
+This flow sets the quarantine status of the app.
 
-If the app is quarantined, an email is sent to the maker to inform them their app can no longer be launched:
+If the app is quarantined, an email is sent to the maker to inform them their app can no longer be launched.
 
-![The app makers gets an email notification to inform them their app has been quarantined, and to ask them to submit compliance details in the Developer Compliance Center app.](media/quarantine4.png "The app makers gets an email notification to inform them their app has been quarantined, and to ask them to submit compliance details in the Developer Compliance Center app.")
+![The app maker gets an email notification to inform them their app has been quarantined, and to ask them to submit compliance details in the Developer Compliance Center app.](media/quarantine4.png "The app maker gets an email notification to inform them their app has been quarantined, and to ask them to submit compliance details in the Developer Compliance Center app.")
 
-If the app is released from quarantine, an email is sent to the maker to inform them the app is available for use again:
+If the app is released from quarantine, an email is sent to the maker to inform them the app is available for use again.
 
-![The app makers gets an email notification to inform them their app has been released from quarantine.](media/quarantine3.png "The app makers gets an email notification to inform them their app has been released from quarantine.")
+![The app maker gets an email notification to inform them their app has been released from quarantine.](media/quarantine3.png "The app maker gets an email notification to inform them their app has been released from quarantine.")
 
-Apps that are quarantined are also flagged in the [Developer Compliance Center](#developer-compliance-center):
+Apps that are quarantined are also flagged in the [Developer Compliance Center](#developer-compliance-center).
 
 ![Quarantined apps are highlighted as such in the Developer Compliance Center app.](media/quarantine5.png "Quarantined apps are highlighted as such in the Developer Compliance Center app.")
 
