@@ -136,6 +136,8 @@ TODO: Add screenshot
 
 7.	Once the report is ready, select **Download** to download the report as an Excel CSV file.
 
+These reports are currently in preview. During the preview the Licensed User report will show correct entitlements for users licensed via the Power Apps Per App license or Power Apps Per App pay-as-you-go meter. Entitlements for such users will shown as 0 when in fact they should be shown as 6000 (requests per 24h period) as outlined above. 
+
 The [Licensed User](/power-platform/admin/api-request-limits-allocations#licensed-user-request-limits) report shows the Power Platform request usage per user per day and the users entitled quantity. The downloadable report contains the following fields: 
 
 
@@ -161,17 +163,17 @@ The [Non-licensed User](/power-platform/admin/api-request-limits-allocations#non
 
 | Field	| Description | 
 |-----------------------------------------------------------------|-----------------------------------------------------------------------------------------|
-| Power platform request entitlement for this tenant	| The total entitlement for non-licensed power platform requests for this tenant |
-| Environment ID	| The unique Power Platform environment identifier |
-| Environment Name	| The display name of environment |
+| Power platform request entitlement for this tenant	| The total entitlement for non-licensed power platform requests for this tenant. |
+| Environment ID	| The unique Power Platform environment identifier. |
+| Environment Name	| The display name of environment. |
 | Caller ID	| The unique identifier of the calling identity. This can be null or empty. |
-| Caller Type	| The type of caller identity. Applicable values are System, Non-Interactive/Application   |
+| Caller Type	| The type of caller identity. Applicable values are System, Non-Interactive/Application.   |
 | Resource Type	| The type of resource. Applicable values are Dataverse, Power Apps, and Power Automate. |
 | Resource ID	| The unique resource identifier. Based on the Resource Type, this could be a Power App ID, Dataverse Organization ID, or Power Automate Flow ID. This can be null or empty. |
 | Meter Category	| The top level meter in this case Power Platform request.    |
-| Meter Subcategory  | 	The detailed classification of what generated the request. This can be Dataverse, Power Apps or Power Automate |
-| Usage Datetime | 	The date and time of when the usage was captured |
-| Consumed Quantity | 	Usage of Power Platform requests  |
+| Meter Subcategory  | 	The detailed classification of what generated the request. This can be Dataverse, Power Apps or Power Automate. |
+| Usage Datetime | 	The date and time of when the usage was captured. |
+| Consumed Quantity | 	Usage of Power Platform requests.  |
 
 
 Here is a sample of a detailed usage report:
@@ -194,6 +196,7 @@ The Per Flow Licensed Flows report  downloadable report contains the following f
 Here is a sample of a detailed usage report:
 
 TODO: Add screenshot
+
 
 
 ## Frequently asked questions
