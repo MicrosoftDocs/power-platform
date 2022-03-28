@@ -125,14 +125,17 @@ To view the consumption of Power Platform requests for Licensed Users, Non-Licen
 2.	Select **Capacity** in the left-side navigation pane.
 3.	On the **Summary** tab, select **Download reports** in the **Add-ons** section.
 
-TODO: Add screenshot
+![Image showing the Capacity page in the Power Platform admin center and highlighting the link to download reports](/media/ppac-downloadreports.png)
 
 4.	Select **New** from the menu.
 
-TODO: Add screenshot
+![Image showing the Download Reports page in the Power Platform admin center and highlighting the button to create a new download report](/media/download-report-new.png)
 
 5.	Select **Microsoft Power Platform requests** in the **Choose a report** box.
-6.	Select the required type of report and then select **Submit**.
+
+![Image showing the drop down menu for the Power Platform requests reports](/media/request-download-report.png)
+
+7.	Select the required type of report and then select **Submit**.
 
 7.	Once the report is ready, select **Download** to download the report as an Excel CSV file.
 
@@ -157,7 +160,8 @@ The [Licensed User](/power-platform/admin/api-request-limits-allocations#license
 
 Here is a sample of a detailed usage report:
 
-TODO: add screenshot 
+![Image showing an example of the licensed user report](/media/ppr-licensed-user-report.png)
+
 
 The [Non-licensed User](/power-platform/admin/api-request-limits-allocations#non-licensed-user-request-limits) report shows the Power Platform request usage per day for non-licensed users and the total entitlement for non-licensed users for that tenant. The downloadable report contains the following fields:
 
@@ -178,7 +182,8 @@ The [Non-licensed User](/power-platform/admin/api-request-limits-allocations#non
 
 Here is a sample of a detailed usage report:
 
-TODO: Add screenshot
+![Image showing an example of the non-licensed user report](/media/non-licensed-user-report.png)
+
 
 The Per Flow Licensed Flows report  downloadable report contains the following fields:
 
@@ -195,8 +200,7 @@ The Per Flow Licensed Flows report  downloadable report contains the following f
 
 Here is a sample of a detailed usage report:
 
-TODO: Add screenshot
-
+![Image showing an example of the per flow-licensed report](/media/ppr-per-flow-licensed-flows.png)
 
 
 ## Frequently asked questions
