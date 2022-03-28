@@ -20,11 +20,6 @@ search.app:
 
 You can list settings applicable to your tenant.
 
-> [!IMPORTANT]
-> - This is a preview feature.
-> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
-> - This feature is being gradually rolled out across regions and might not be available yet in your region.
-
 ## Authentication
 
 For more information about permissions and how to select them, see [Authentication](programmability-authentication.md).
