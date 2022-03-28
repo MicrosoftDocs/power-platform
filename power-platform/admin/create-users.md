@@ -451,6 +451,7 @@ Assigning an Azure AD security group to the environment is a best practice in ge
 
 
 ### See also
+[User settings](users-settings.md) <br />
 [Get started with security roles in Dataverse](/learn/modules/get-started-security-roles/) <br />
 [Assign a security role to a user](assign-security-roles.md) <br />
 [Opt-out of automatic license-based user roles management](opt-out-automatic-license.md)
