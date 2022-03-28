@@ -20,11 +20,6 @@ search.app:
 
 Authenticating via username and password is often not ideal, especially with the rise of multifactor authentication.  In such cases, service principal (or client credentials flow) authentication is preferred.
 
-> [!IMPORTANT]
-> - This is a preview feature.
-> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
-> - This feature is being gradually rolled out across regions and might not be available yet in your region.
-
 ## Registering an admin management application
 First, the client application needs to be registered in your Azure Active Directory (Azure AD) tenant.  To set this up, review the [Authentication](programmability-authentication.md) article for Power Platform APIs.  
 
