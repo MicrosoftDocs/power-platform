@@ -1,5 +1,5 @@
 ---
-title: "Programmability and extensibility - Install an application to a target environment (preview) | Microsoft Docs"
+title: "Tutorial: Install an application to a target environment (preview) | Microsoft Docs"
 description: This tutorial will demonstrate how to use the Power Platform API (preview) to install an application in an environment context.
 author: laneswenka
 ms.reviewer: jimholtz
@@ -18,7 +18,7 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-This tutorial is aimed at enabling Power Platform admins so they can take advantage of the Power Platform API to install Applications of which their tenant already has entitlement. These applications should be visible in the Power Platform Admin Center under Resources > D365 Applications. 
+This tutorial is aimed at enabling Power Platform admins so they can take advantage of the Power Platform API to install Applications of which their tenant already has entitlement. These applications should be visible in the Power Platform admin center under **Environments** > ***[environment-name]*** > **Resources** > **Dynamics 365 apps**. 
 
 In this tutorial, you'll learn how to:
 
