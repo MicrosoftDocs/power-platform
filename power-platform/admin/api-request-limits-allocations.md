@@ -31,8 +31,6 @@ Requests in Microsoft Power Platform consist of various actions that a user make
 - **Power Virtual Agents** - API requests (or calls) to Power Automate flows from within a chatbot conversation. 
 - **Dataverse** – all create, read, update, and delete (CRUD), assign, and share operations including user-driven and internal system requests required to complete CRUD transactions, and special operations like share or assign. These can be from any client or application (including Dynamics 365) and using any endpoint (SOAP or REST). These include, but are not limited to, plug-ins, classic workflows, and custom controls making the earlier-mentioned operations.
 
-
-
 > [!NOTE]
 > For Dataverse, there is a small set of system internal operations that are excluded from limits, such as login, logout, and system metadata operations.
 
@@ -130,28 +128,29 @@ Review the following resources for information about *current* service protect
 
 To view the consumption of Power Platform requests for Licensed Users, Non-Licensed Users and Per Flow Licensed Flow runs.
 
-1.	Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-2.	Select **Capacity** in the left-side navigation pane.
-3.	On the **Summary** tab, select **Download reports** in the **Add-ons** section.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
-![Image showing the Capacity page in the Power Platform admin center and highlighting the link to download reports](/media/ppac-downloadreports.png)
+2. Select **Capacity** in the left-side navigation pane.
 
-4.	Select **New** from the menu.
+3. On the **Summary** tab, select **Download reports** in the **Add-ons** section.
 
-![Image showing the Download Reports page in the Power Platform admin center and highlighting the button to create a new download report](/media/download-report-new.png)
+   :::image type="content" source="media/ppac-downloadreports.png" alt-text="Image showing the Capacity page in the Power Platform admin center and highlighting the link to download reports.":::
 
-5.	Select **Microsoft Power Platform requests** in the **Choose a report** box.
+4. Select **New** from the menu.
 
-![Image showing the drop down menu for the Power Platform requests reports](/media/request-download-report.png)
+   :::image type="content" source="media/download-report-new.png" alt-text="Image showing the Download Reports page in the Power Platform admin center and highlighting the button to create a new download report.":::
 
-7.	Select the required type of report and then select **Submit**.
+5. Select **Microsoft Power Platform requests** in the **Choose a report** box.
 
-7.	Once the report is ready, select **Download** to download the report as an Excel CSV file.
+   :::image type="content" source="media/request-download-report.png" alt-text="Image showing the drop down menu for the Power Platform requests reports.":::
+
+6. Select the required type of report and then select **Submit**.
+
+7. Once the report is ready, select **Download** to download the report as an Excel CSV file.
 
 These reports are currently in preview. During the preview the Licensed User report will show correct entitlements for users licensed via the Power Apps Per App license or Power Apps Per App pay-as-you-go meter. Entitlements for such users will shown as 0 when in fact they should be shown as 6000 (requests per 24h period) as outlined above. 
 
-The [Licensed User](/power-platform/admin/api-request-limits-allocations#licensed-user-request-limits) report shows the Power Platform request usage per user per day and the users entitled quantity. The downloadable report contains the following fields: 
-
+The [Licensed User](api-request-limits-allocations.md#licensed-user-request-limits) report shows the Power Platform request usage per user per day and the users entitled quantity. The downloadable report contains the following fields: 
 
 | Field                                                    | Description                              |
 |-----------------------------------------------------------------|-----------------------------------------------------------------------------------------|
@@ -166,12 +165,11 @@ The [Licensed User](/power-platform/admin/api-request-limits-allocations#license
 | Power Automate Requests | Number of Power Platform requests originating from Power Automate. | 
 | Power Apps Requests | Number of Power Platform requests originating from Power App. | 
 
-
 Here is a sample of a detailed usage report:
 
-![Image showing an example of the licensed user report](/media/ppr-licensed-user-report.png)
+:::image type="content" source="media/ppr-licensed-user-report.png" alt-text="Image showing an example of the licensed user report.":::
 
-The [Non-licensed User](/power-platform/admin/api-request-limits-allocations#non-licensed-user-request-limits) report shows the Power Platform request usage per day for non-licensed users and the total entitlement for non-licensed users for that tenant. The downloadable report contains the following fields:
+The [Non-licensed User](api-request-limits-allocations.md#non-licensed-user-request-limits) report shows the Power Platform request usage per day for non-licensed users and the total entitlement for non-licensed users for that tenant. The downloadable report contains the following fields:
 
 | Field	| Description | 
 |-----------------------------------------------------------------|-----------------------------------------------------------------------------------------|
@@ -189,8 +187,7 @@ The [Non-licensed User](/power-platform/admin/api-request-limits-allocations#non
 
 Here is a sample of a detailed usage report:
 
-![Image showing an example of the non-licensed user report](/media/non-licensed-user-report.png)
-
+:::image type="content" source="media/non-licensed-user-report.png" alt-text="Image showing an example of the non-licensed user report.":::
 
 The Per Flow Licensed Flows report  downloadable report contains the following fields:
 
@@ -207,7 +204,7 @@ The Per Flow Licensed Flows report  downloadable report contains the following f
 
 Here is a sample of a detailed usage report:
 
-![Image showing an example of the per flow-licensed report](/media/ppr-per-flow-licensed-flows.png)
+:::image type="content" source="media/ppr-per-flow-licensed-flows.png" alt-text="Image showing an example of the per flow-licensed report.":::
 
 ## Frequently asked questions
 
