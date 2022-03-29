@@ -1,9 +1,8 @@
 ---
-title: "Preview: Programmability and extensibility - Tutorial - Install an application to a target environment | Microsoft Docs"
+title: "Programmability and extensibility - Install an application to a target environment (preview) | Microsoft Docs"
 description: This tutorial will demonstrate how to use the Power Platform API (preview) to install an application in an environment context.
 author: laneswenka
 ms.reviewer: jimholtz
-
 ms.component: pa-admin
 ms.topic: reference
 ms.date: 03/21/2022
@@ -15,11 +14,13 @@ search.app:
   - Powerplatform
 ---
 
-# Preview: Install an application to a target environment
+# Tutorial: Install an application to a target environment (preview)
 
-This tutorial is aimed at enabling Power Platform Admins so they can take advantage of the Power Platform API to install Applications of which their tenant already has entitlement. These applications should be visible in the Power Platform Admin Center under Resources > D365 Applications. 
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-In this tutorial, you will learn how to:
+This tutorial is aimed at enabling Power Platform admins so they can take advantage of the Power Platform API to install Applications of which their tenant already has entitlement. These applications should be visible in the Power Platform Admin Center under Resources > D365 Applications. 
+
+In this tutorial, you'll learn how to:
 
 1.	Create a Power Automate or Logic Apps workflow (Azure) that authenticates with Power Platform API. 
 2.	Call the Get Environment Application Package API to retrieve the list of Applications you can install to a specific environment 
@@ -33,11 +34,11 @@ In this example scenario, a Customer is looking to install Office Groups to a sp
 > The Power Platform API is in preview. The host name and data contracts are subject to change by the time the endpoints become generally available.  At that time, this article will be updated with the final endpoint details.
 
 ## Choose a tool that can authenticate with Power Platform API
-Below are details on getting connected to the Power Platform programmatically.  This tutorial includes using Azure Logic Apps as a common client for admins working in the Azure space, as well as a native Power Platform CLI example.
+Below are details on getting connected to the Power Platform programmatically.  This tutorial includes using Azure Logic Apps as a common client for admins working in the Azure space, and a native Power Platform CLI example.
 
 # [Azure](#tab/Azure)
 ### Create the workflow and set up the variables
-To start off, in this tutorial we will use a Logic Apps workflow.  A Power Automate flow is also acceptable, as well as any other orchestration engine that your company prefers to use for automation.  All of the calls to retrieve the data will be using RESTful APIs so any tooling that supports REST will work with this tutorial.
+To start off, in this tutorial we'll use a Logic Apps workflow.  A Power Automate flow is also acceptable, and any other orchestration engine that your company prefers to use for automation.  All of the calls to retrieve the data will be using RESTful APIs so any tooling that supports REST will work with this tutorial.
 
 Visit the Azure portal, and then create a new logic app and give it a name:
 
@@ -49,13 +50,13 @@ After that finishes provisioning, edit the workflow using the Designer and set u
 > [!div class="mx-imgBorder"] 
 > ![Set up a Recurrence trigger.](media/capacity2.png "Set up a Recurrence trigger")
 
-For the remainder of this tutorial, you will need an environment ID and an application name to complete the subsequent steps:
-- **Environment Id**: The id of the environment to which you would install the package.  Please note this is not the organization id.
-- **Application name**: The name of the application you are trying to install.
+For the remainder of this tutorial, you'll need an environment ID and an application name to complete the subsequent steps:
+- **Environment Id**: The ID of the environment to which you would install the package. This isn't the organization ID.
+- **Application name**: The name of the application you're trying to install.
 
-Next we will authenticate with Microsoft Azure Active Directory (Azure AD) and retrieve a token for calling the Power Platform API.  If you haven’t completed your Azure AD setup, see [Authentication (preview)](programmability-authentication-v2.md).
+Next we'll authenticate with Microsoft Azure Active Directory (Azure AD) and retrieve a token for calling the Power Platform API.  If you haven’t completed your Azure AD setup, see [Authentication (preview)](programmability-authentication-v2.md).
 
-In this tutorial, we are using a user credential with password to obtain a token.  An example call to Azure AD is below:
+In this tutorial, we're using a user credential with password to obtain a token.  An example call to Azure AD is below:
 
 > [!div class="mx-imgBorder"] 
 > ![Authenticate with Azure AD and retrieve a token for calling the Power Platform API.](media/appmgmt-tutorial-2.png "Authenticate with Azure AD and retrieve a token for calling the Power Platform API")
@@ -87,7 +88,7 @@ We then parse the Azure AD token response into a typed object using this JSON sc
 
 # [Power Platform CLI](#tab/pacCLI)
 ### Get authenticated
-Using Power Platform CLI, you can easily get authenticated with a particular Dataverse organization.  To do this, simply select an existing auth profile:
+Using Power Platform CLI, you can easily get authenticated with a particular Dataverse organization.  To do this, select an existing auth profile:
 ```cmd
 pac auth select --name "NameOfProfile"
 ```
@@ -99,12 +100,12 @@ For more information, see the [Auth](/powerapps/developer/data-platform/cli/refe
 ---
 
 ## Retrieve available packages to install
-In this section we will retrieve the list of Applications you can install to a specific environment.  Be sure to have your **environment Id** available, and that this environment has a Dataverse database created.
+In this section, we'll retrieve the list of Applications you can install to a specific environment.  Be sure to have your **environment Id** available, and that this environment has a Dataverse database created.
 
 # [Azure](#tab/Azure)
 
 ### Environment Application Package endpoint
-Now we will make our first call to the Power Platform API.  We’ll use the [Get Environment Application Package API](/rest/api/power-platform/appmanagement/applications/get-environment-application-package) to to retrieve all of the available packages we can install for the given Dataverse organization. Be sure that the identity you're using be it a Service Principal or a username/password has access to Dataverse and the appropriate security role.
+Now we'll make our first call to the Power Platform API.  We’ll use the [Get Environment Application Package API](/rest/api/power-platform/appmanagement/applications/get-environment-application-package) to retrieve all of the available packages we can install for the given Dataverse organization. Be sure that the identity you're using, be it a Service Principal or a username/password, has access to Dataverse and the appropriate security role.
 
 ```http
 GET https://api.powerplatform.com/appmanagement/environments/{environmentId}/applicationPackages?api-version=2022-03-01-preview
@@ -291,7 +292,7 @@ For more information, see the [Auth](/powerapps/developer/data-platform/cli/refe
 ---
 
 ## Install the application
-Now we can take one of the applications from the prior step and install it.  Let's say you would like to install the "Office 365 Groups" application. Select the value in the PackageUniqueName field, in this case, it is Office365Groups to utilize in the next step.
+Now we can take one of the applications from the prior step and install it.  Let's say you would like to install the "Office 365 Groups" application. Select the value in the PackageUniqueName field, in this case, it's Office365Groups to utilize in the next step.
 
 # [Azure](#tab/Azure)
 
@@ -373,7 +374,7 @@ The following is an example response:
     }
 ```
 
-Then we will use the Parse JSON action to get the operationID for our subsequent steps.
+Then we'll use the Parse JSON action to get the operationID for our subsequent steps.
 
 # [Power Platform CLI](#tab/pacCLI)
 ### Trigger installation
@@ -391,12 +392,12 @@ For more information, see the [Auth](/powerapps/developer/data-platform/cli/refe
 ---
 
 ## Poll for operation status
-Now we will monitor progress of the application install by polling every so often using the operationID from the prior step.
+Now we'll monitor progress of the application install by polling every so often using the operationID from the prior step.
 
 # [Azure](#tab/Azure)
 
 ### Use the Until control
-By evaluating the response from polling the OperationID for anything terminal status such as *Canceled*, *Failed*, or *Succeeded* we will effectively monitor for the process to complete.  This is done easilyw ith the Until control which will loop continuously until this condition is met.
+By evaluating the response from polling the OperationID for anything terminal status such as *Canceled*, *Failed*, or *Succeeded* we'll effectively monitor for the process to complete.  This is done easily with the Until control, which will loop continuously until this condition is met.
 
 > [!div class="mx-imgBorder"] 
 > ![Create a logic app.](media/appmgmt-tutorial-3.png "Until control")
@@ -419,7 +420,7 @@ An example output is shown below:
 }
 ```
 
-From here, we can evaluate the status and if it is one of the terminal values we can break the loop.
+From here, we can evaluate the status and if it's one of the terminal values we can break the loop.
 
 ### Send an email
 Now that the monitoring has concluded, we can share the result over email as an example activity.
