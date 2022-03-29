@@ -3,7 +3,6 @@ title: Programmability and Extensibility - Versioning and support | Microsoft Do
 description: Overview of versioning and support for Microsoft Power Platform programmability tools.
 author: laneswenka
 ms.reviewer: jimholtz
-
 ms.component: pa-admin
 ms.topic: reference
 ms.date: 03/09/2022
@@ -19,9 +18,9 @@ search.app:
 This article provides an overview of the versioning and breaking change policies for the various programmability tools.
 
 ## Support and deprecation information
-The Power Platform API is the first programmability tool to receive new versions and features before other SDKs like PowerShell, Management Connectors, and Power Platform CLI.  As a new version of the REST API is released, earlier versions will be retired. Microsoft will declare a version deprecated at least 12 months before it retires an API endpoint.  When a version is deprecated, it is still supported as-is.  If you face an issue with that version, we will request that you move to the currently generally available version.  When a version is retired, it is not supported and will soon be shut off.
+The Power Platform API is the first programmability tool to receive new versions and features before other SDKs like PowerShell, Management Connectors, and Power Platform CLI. As a new version of the REST API is released, earlier versions will be retired. Microsoft will declare a version deprecated at least 12 months before it retires an API endpoint. When a version is deprecated, it is still supported as-is.  If you face an issue with that version, we will request that you move to the currently generally available version.  When a version is retired, it is not supported and will soon be shut off.
 
-By incrementing the version number of the API (for example, from 2021-10-01 to 2022-04-01), Microsoft announces that the prior Generally available version (in this example, 2021-10-01) is immediately deprecated and will be retired 12 months after the announcement. The same treatment is had for public preview versions.  Microsoft might make exceptions to this policy for service health and security issues.  
+By incrementing the version number of the API (for example, from 2021-10-01 to 2022-04-01), Microsoft announces that the prior generally available version (in this example, 2021-10-01) is immediately deprecated and will be retired 12 months after the announcement. The same treatment is had for public preview versions.  Microsoft might make exceptions to this policy for service health and security issues.  
 
 For PowerShell cmdlets, incremental versions will be made available to resolve minor bug fixes.  Major versions will be incremented to match the new API versions that occur.
 
