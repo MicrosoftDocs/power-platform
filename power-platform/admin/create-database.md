@@ -24,7 +24,7 @@ You can create a database and build apps by using Dataverse as a data store. You
 There are various ways to add or create a database:
 
 - In the Microsoft Power Platform admin center
-- In the **Tables** pane of powerapps.com
+- In the **Tables** pane of Power Apps (make.powerapps.com)
 
 > [!NOTE]
 > For security reasons, we do not support creating a copy of the database for local use.
@@ -49,7 +49,9 @@ There are various ways to add or create a database:
    |Security group | Select a security group to restrict access to this environment. |
 
 ## Create a database in the Tables pane of Power Apps
-1. On [make.powerapps.com](https://make.powerapps.com), expand the **Data** section and click or tap **Tables** in the left navigation pane.
+1. Sign in to [Power Apps](https://make.powerapps.com).
+
+1. In the left pane, expand the **Data** section, select **Tables** in the left navigation pane.
 
 2. Select **Create a database** to create the database.
 
