@@ -1,5 +1,5 @@
 ---
-title: "Programmability and extensibility - Create a daily capacity report (preview) | Microsoft Docs"
+title: "Tutorial: Create a daily capacity report (preview) | Microsoft Docs"
 description: This tutorial will demonstrate how to use the Power Platform API (preview) to create a daily capacity report.
 author: laneswenka
 ms.reviewer: jimholtz
@@ -14,7 +14,7 @@ search.app:
   - Powerplatform
 ---
 
-# Create a daily capacity report (preview)
+# Tutorial: Create a daily capacity report (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
