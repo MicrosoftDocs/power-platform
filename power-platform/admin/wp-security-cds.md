@@ -77,6 +77,20 @@ Once this feature switch is turned on, you can select Business unit when you [as
 > This feature switch is stored in the **EnableOwnershipAcrossBusinessUnits** [environment database settings](environment-database-settings.md) and can also be set using the [OrgDBOrgSettings tool for Microsoft Dynamics CRM](
 https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm).
 
+### Associate a business unit with Azure AD security group
+
+You can use Azure AD security group to map your business unit for streamlining your user administration and role assignment.  
+
+Create an AAD security group for each Business unit and assign the respective business unit security role to each group team.
+
+:::image type="content" source="media/business-unit-with-aad-sec-group2.png" alt-text="Create an Azure AD security group for each business unit.":::
+
+For each business unit, create an Azure AD security group. Create a [Dataverse group team](manage-group-teams) for each Azure AD security group. Assign the respective security role from the business unit to each Dataverse group team. 
+
+Add users into the respective Azure AD security group to grant them access to the business unit. The users can immediately run the app and access its resources/data. 
+
+In the [matrix data access](wp-security-cds.md#matrix-data-access-structure-modernize-business-units---preview) where users can work and access data from multiple business units, add the users to the Azure AD security groups that mapped to those business units.  
+
 ### Owning Business Unit
 
 Each record has an Owning Business Unit field which determines which business unit owns the record. This field defaults to the user’s business unit when the record is created and cannot be changed except when the feature switch is turned ON. 
