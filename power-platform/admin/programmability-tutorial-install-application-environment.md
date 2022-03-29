@@ -43,7 +43,7 @@ To start off, in this tutorial we'll use a Logic Apps workflow.  A Power Automat
 Visit the Azure portal, and then create a new logic app and give it a name:
 
 > [!div class="mx-imgBorder"] 
-> ![Create a logic app.](media/appmgmt-tutorial-1.png "Create a logic app")
+> ![Create a logic app.](media/appmgmt-tutorial-1.png "Create a logic app (Azure)")
 
 After that finishes provisioning, edit the workflow using the Designer and set up a Recurrence trigger to run on schedule of your choosing:
 
@@ -400,7 +400,7 @@ Now we'll monitor progress of the application install by polling every so often 
 By evaluating the response from polling the OperationID for anything terminal status such as *Canceled*, *Failed*, or *Succeeded* we'll effectively monitor for the process to complete.  This is done easily with the Until control, which will loop continuously until this condition is met.
 
 > [!div class="mx-imgBorder"] 
-> ![Create a logic app.](media/appmgmt-tutorial-3.png "Until control")
+> ![Until control.](media/appmgmt-tutorial-3.png "Until control")
 
 We'll make use of the [Application Install Status](/rest/api/power-platform/appmanagement/applications/get-application-package-install-status) endpoint to monitor the installation. Be sure to set the **operationId** property to from the prior step. 
 
@@ -426,7 +426,7 @@ From here, we can evaluate the status and if it's one of the terminal values we 
 Now that the monitoring has concluded, we can share the result over email as an example activity.
 
 > [!div class="mx-imgBorder"] 
-> ![Create a logic app.](media/appmgmt-tutorial-4.png "Send an email (v2) on the status of the activity")
+> ![Send an email (v2) on the status of the activity.](media/appmgmt-tutorial-4.png "Send an email (v2) on the status of the activity")
 
 # [Power Platform CLI](#tab/pacCLI)
 ### Monitor progress
