@@ -29,7 +29,7 @@ Make sure you have the System Administrator or System Customizer security role o
 - Don’t have the correct permissions? Contact your system administrator.
 
 > [!NOTE]
-> These settings may not yet be available in your environment. The settings availability depends on the region's release plan.
+> These settings might not yet be available in your environment. The settings availability depends on the region's release plan.
 
 ## Settings 
 
