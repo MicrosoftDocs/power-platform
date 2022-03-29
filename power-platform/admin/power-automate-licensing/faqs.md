@@ -78,7 +78,7 @@ Connections are independent from license checks. You can have multiple user conn
 
 ### The owner of a flow left the company, and the flow doesn't have co-owners. How can we ensure it works without interruptions?
 
-If the flow is a solution flow, you can change the owner using [Power Automate Web API](/power-automate/web-api#update-a-cloud-flow) to ensure the flow works without interruptions. If the flow is a non-solution flow, you cannot change the owner, but any co-owners of the flow can export and import by a different owner. Check out this [video tutorial](https://www.youtube.com/watch?v=K7_xWJvEPUc).
+If the flow is a solution flow, you can change the owner in Power Automate portal, instructions [here](https://docs.microsoft.com/en-us/power-automate/change-cloud-flow-owner) or by using [Power Automate Web API](/power-automate/web-api#update-a-cloud-flow) to ensure the flow works without interruptions. If the flow is a non-solution flow, you cannot change the owner, but any co-owners of the flow can export and import by a different owner. Check out this [video tutorial](https://www.youtube.com/watch?v=K7_xWJvEPUc).
 
 ### The owner of the flow no longer has a premium license, but the flow is a premium flow. What happens?
 
@@ -265,11 +265,30 @@ You can either license all users with premium licenses or license the flow with 
 
 Multiplexing refers to the use of hardware or software that a customer uses to pool connections, reroute information, or reduce the number of users that directly access or use the Power Apps, Power Automate, and the Power Virtual Agents service. Using multiplexing as a mechanism to reduce the number of licenses to be purchased is a license violation. For more details, refer to the multiplexing guidance from [Client Access License (CAL) Requirements](https://download.microsoft.com/download/8/7/3/8733d036-92b0-4cb8-8912-3b6ab966b8b2/multiplexing.pdf).
 
-## Per user plan
+### I have multiple flows running under a shared service account. What licenses do i need?
+Definitions: 
+ - Service account – Azure Active Directory user account used as a service account. Service accounts are a special type of account that is intended to represent a non-human entity such as an application, API, or other service. User accounts used as a service account are difficult to track and managing their passwords is a challenge. In some scenarios, service accounts are used to remove the dependency from the flow to the original owner. When creating service accounts, provide only the permissions that are required for the task. Evaluate existing service accounts to see if you can reduce privileges. It is recommended to limit the number of people who have access to the service account to minimize security risks. You can also create different accounts for different scenarios to minimize the exposure. 
+ - Service Principal – Azure Active Directory service principal functions as the identity of the application instance. Service principals define who can access the application, and what resources the application can access. A service principal is created in each tenant where the application is used and references the globally unique application object. Power Automate doesn't support a flow to run under Service Principal yet and the [feature](https://docs.microsoft.com/en-us/power-platform-release-plan/2022wave1/power-automate/ownership-supported-service-principals) is coming soon. 
+ - Non interactive users – Dataverse supports non interactive users for activities like background process that migrates data between databases. These do not require a user to interact with the service. There is a maximum limit of 7 non-interactive users per tenant. Non-interactive users are not yet supported by Power Automate. 
+ - Normal users: These are the regular synchronized users from Azure Active Directory (Azure AD).
 
-### I have a flow that my team uses but it runs on a per user license. Is that okay?
+Guidance: This guidance is specific to flows that run under a service account as the owner of the flow. If you want to run your flow under a service account, here are the best practices:
+ - If the flow only uses standard connectors and no premium features, all the users who have access to the service account can have Office 365 license, Power Automate Free, or any Power Automate premium license. 
+   - If the flow uses premium features (premium connectors, Robotic process Automation, custom connectors, on prem gateway, Business process flows): 
+   - The service account is used by a limited set of users. In this case, licensing all the users and the service account is enough. 
+   - The service account has access to many users. In this case, it is recommended to assign a per flow license to the flow to ensure any new users adding to the account are automatically compliant. 
+ - If the flow is a manual/Power App triggered flow/Dataverse ‘Run as user’ flow, all users who run the flow will need a premium license or the flow needs a per flow license. Check out this FAQ on [who needs to purchase a premium license](https://docs.microsoft.com/en-us/power-platform/admin/power-automate-licensing/faqs#who-needs-to-purchase-a-premium-license) 
+ - Premium flow is in context (the flow shares the data sources of the app) of a Power App/ Dynamics App: 
+   - 	All the users who have access to the service account and the service account need Power App/ Dynamics license. 
+   - If they don’t have a Power App/ Dynamics license, all the users and the service account need Power Automate user licenses.
+   - Alternatively, the flow can be licensed with a per flow license and none of the users/service account needs a license. 
+ - Multiple users accessing a premium flow with one premium per user license assigned to the service account is considered multiplexing and the flow is not compliant. 
 
-It is okay, since you have a per user license, all your flows use capacity from your Power Platform limits. If more and more users start using the flow and you reach limits, all your flows will slow down. If a flow is throttled for 14 consecutive days, it will be turned off.
+
+Note: Flows using service accounts as connections or co-owners are not impacted by this guidance. 
+
+This is guidance only and not hard enforcement. Admins are responsible for licensing all the flows correctly to stay compliant. 
+
 
 ## Approvals
 
