@@ -1,5 +1,5 @@
 ---
-title: "Programmability and extensibility - Power Platform API - Creating a service principal (preview) | Microsoft Docs"
+title: "Creating a service principal application using API (preview) | Microsoft Docs"
 description: Power Platform API and service principal authentication
 author: laneswenka
 ms.reviewer: jimholtz
@@ -14,7 +14,7 @@ search.app:
   - Powerplatform
 ---
 
-# Creating a service principal application via API (preview) 
+# Creating a service principal application using API (preview) 
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
