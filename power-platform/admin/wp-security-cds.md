@@ -85,7 +85,7 @@ You can use an Azure AD security group to map your business unit for streamlinin
 
 :::image type="content" source="media/business-unit-with-aad-sec-group2.png" alt-text="Create an Azure AD security group for each business unit.":::
 
-For each business unit, create an Azure AD security group. Create a [Dataverse group team](manage-group-teams.md) for each Azure AD security group. Assign the respective security role from the business unit to each Dataverse group team. The user in the above diagram will be created in the root business unit when the user accesses the environment. It is fine to have the user and the Dataverse group teams to be in the root business unit. They only have access to data in the business unit where the security role is assigned.  
+For each business unit, create an Azure AD security group. Create a [Dataverse group team](manage-group-teams.md) for each Azure AD security group. Assign the respective security role from the business unit to each Dataverse group team. The user in the above diagram will be created in the root business unit when the user accesses the environment. It's fine to have the user and the Dataverse group teams to be in the root business unit. They only have access to data in the business unit where the security role is assigned.  
 
 Add users into the respective Azure AD security group to grant them access to the business unit. The users can immediately run the app and access its resources/data. 
 
