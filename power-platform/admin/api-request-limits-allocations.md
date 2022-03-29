@@ -117,6 +117,96 @@ Review the following resources for information about *current* service protect
 - [Power Automate limits](/power-automate/limits-and-config): applicable for automated, scheduled, and instant flows
 - [Limits in connectors](/connectors/): applicable for Power Automate and Power Apps
 
+
+
+
+
+
+
+
+## View detailed Power Platform request usage information in the Power Platform admin center (preview) 
+
+To view the consumption of Power Platform requests for Licensed Users, Non-Licensed Users and Per Flow Licensed Flow runs.
+
+1.	Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+2.	Select **Capacity** in the left-side navigation pane.
+3.	On the **Summary** tab, select **Download reports** in the **Add-ons** section.
+
+![Image showing the Capacity page in the Power Platform admin center and highlighting the link to download reports](/media/ppac-downloadreports.png)
+
+4.	Select **New** from the menu.
+
+![Image showing the Download Reports page in the Power Platform admin center and highlighting the button to create a new download report](/media/download-report-new.png)
+
+5.	Select **Microsoft Power Platform requests** in the **Choose a report** box.
+
+![Image showing the drop down menu for the Power Platform requests reports](/media/request-download-report.png)
+
+7.	Select the required type of report and then select **Submit**.
+
+7.	Once the report is ready, select **Download** to download the report as an Excel CSV file.
+
+These reports are currently in preview. During the preview the Licensed User report will show correct entitlements for users licensed via the Power Apps Per App license or Power Apps Per App pay-as-you-go meter. Entitlements for such users will shown as 0 when in fact they should be shown as 6000 (requests per 24h period) as outlined above. 
+
+The [Licensed User](/power-platform/admin/api-request-limits-allocations#licensed-user-request-limits) report shows the Power Platform request usage per user per day and the users entitled quantity. The downloadable report contains the following fields: 
+
+
+| Field                                                    | Description                              |
+|-----------------------------------------------------------------|-----------------------------------------------------------------------------------------|
+| Environment ID | The unique Power Platform environment identifier. |
+| Environment Name | The display name of environment.                         |
+| Caller ID                              | The unique identifier of the calling identity which maps to Active Directory ID. This can be null or empty.    |
+| Caller Type | The type of caller identity. Applicable values for Licensed User report is User. |
+| Usage Datetime | The date and time  of when the usage was captured. | 
+| Entitled quantity | The value of any Power Platform request limits for the user. | 
+| Total consumed quantity | The total usage across all the types of Requests (Dataverse, Power Apps and Power Automate). |
+| Dataverse Requests | Number of Power Platform requests originating from Dataverse. | 
+| Power Automate Requests | Number of Power Platform requests originating from Power Automate. | 
+| Power Apps Requests | Number of Power Platform requests originating from Power App. | 
+
+
+Here is a sample of a detailed usage report:
+
+![Image showing an example of the licensed user report](/media/ppr-licensed-user-report.png)
+
+The [Non-licensed User](/power-platform/admin/api-request-limits-allocations#non-licensed-user-request-limits) report shows the Power Platform request usage per day for non-licensed users and the total entitlement for non-licensed users for that tenant. The downloadable report contains the following fields:
+
+| Field	| Description | 
+|-----------------------------------------------------------------|-----------------------------------------------------------------------------------------|
+| Power platform request entitlement for this tenant	| The total entitlement for non-licensed power platform requests for this tenant. |
+| Environment ID	| The unique Power Platform environment identifier. |
+| Environment Name	| The display name of environment. |
+| Caller ID	| The unique identifier of the calling identity. This can be null or empty. |
+| Caller Type	| The type of caller identity. Applicable values are System, Non-Interactive/Application.   |
+| Resource Type	| The type of resource. Applicable values are Dataverse, Power Apps, and Power Automate. |
+| Resource ID	| The unique resource identifier. Based on the Resource Type, this could be a Power App ID, Dataverse Organization ID, or Power Automate Flow ID. This can be null or empty. |
+| Meter Category	| The top level meter in this case Power Platform request.    |
+| Meter Subcategory  | 	The detailed classification of what generated the request. This can be Dataverse, Power Apps or Power Automate. |
+| Usage Datetime | 	The date and time of when the usage was captured. |
+| Consumed Quantity | 	Usage of Power Platform requests.  |
+
+Here is a sample of a detailed usage report:
+
+![Image showing an example of the non-licensed user report](/media/non-licensed-user-report.png)
+
+
+The Per Flow Licensed Flows report  downloadable report contains the following fields:
+
+| Field	| Description |
+|-----------------------------------------------------------------|-----------------------------------------------------------------------------------------|
+| Environment ID	| The unique Power Platform environment identifier. |
+| Environment Name	| The display name of environment. |
+| Environment Region	| Not available during preview. |
+| Caller ID	| The unique identifier of the Flow. This can be null or empty.  |
+| Caller Type	| The type of caller identity. Applicable values are Flow. |
+| Usage Datetime	| The date and time of when the usage was captured. |
+| Entitled Quantity	| The value of any free entitlement for the flow.  |
+| Consumed Quantity	| Usage of Power Platform requests.  |
+
+Here is a sample of a detailed usage report:
+
+![Image showing an example of the per flow-licensed report](/media/ppr-per-flow-licensed-flows.png)
+
 ## Frequently asked questions
 
 ### What tools can I use to monitor and analyze Power Platform requests across the platform?
