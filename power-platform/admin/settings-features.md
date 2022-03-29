@@ -4,7 +4,7 @@ description: View and manage feature settings for Microsoft Dataverse.
 author: jimholtz
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/15/2022
+ms.date: 03/29/2022
 ms.subservice: admin
 ms.author: jimholtz 
 search.audienceType: 
@@ -17,7 +17,7 @@ search.app:
 ---
 # Manage feature settings
 
-Use feature settings to adjust how features appear and function in Dynamics 365 model-driven apps such as Dynamics 365 Sales and Dynamics 365 Customer Service.
+Use feature settings to adjust how features appear and function in Power Apps [model-driven apps](/powerapps/maker/model-driven-apps/model-driven-app-overview) and in Dynamics 365 model-driven apps such as Dynamics 365 Sales and Dynamics 365 Customer Service.
 
 These settings can be found in the Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Product** > **Features**.
 
@@ -27,6 +27,9 @@ Make sure you have the System Administrator or System Customizer security role o
 
 - Follow the steps in [View your user profile](/powerapps/user/view-your-user-profile).
 - Don’t have the correct permissions? Contact your system administrator.
+
+> [!NOTE]
+> These settings might not yet be available in your environment. The settings availability depends on the region's release plan.
 
 ## Settings 
 
@@ -59,7 +62,7 @@ Make sure you have the System Administrator or System Customizer security role o
 > |Dataverse search|Default: Off. If **On**, you can use Dataverse search to find records across multiple tables, sorted by relevance.|  
 > | Share anonymized search analytics with Microsoft | Default: Off. To help Microsoft improve Dataverse search, you can share your environment's Dataverse search queries in Dynamics 365 and Power Platform applications with Microsoft. More information: [Help improve Dataverse search](configure-relevance-search-organization.md#help-improve-dataverse-search)      |
 > |Quick Find record limits|Default: On. If **On**, if more than 10,000 records are found, a message will be displayed that suggests a more selective search. More information: [Configure Dataverse search for the organization](configure-relevance-search-organization.md)| 
-> | Use quick find view of an entity for searching on grids and sub-grids| Default Off. Select **Yes** to show the traditional Quick Find search in an entity grid.      |
+> | Use Quick Find View of an entity for searching on grids and sub-grids| Default Off. Select **Yes** to show the traditional Quick Find search in an entity grid. The traditional Quick Find search applies the [Quick Find View](/powerapps/maker/model-driven-apps/create-edit-views#system-views) filters and displays the Quick Find columns after searching.      |
 > | **Geospatial Services**   |    |
 > | Geospatial Features   | Default: Off. Select **On** to enable geospatial features in your apps to support scenarios that involve mapping locations and addresses.  |
 > |**Help features**|  |  
