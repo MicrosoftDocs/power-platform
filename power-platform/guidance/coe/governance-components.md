@@ -228,7 +228,7 @@ This flow starts the approval process and writes the approval task to the Archiv
 
 ![Archive and Clean Up v2 (Start Approval for Apps) flow.](media/coe58.png "Archive and Clean Up v2 (Start Approval for Apps) flow")
 
-**Customize**: By default, this flow will assign approvals to the app owner. In order to test in a debug environment, in which you do not want to involve users, you can update the [*ProductionEnvironment* environment variable](setup-governance-components.md#all-environment-variables) to **No**, and the approvals will be sent to the admin account instead.
+**Customize**: By default, this flow will assign approvals to the app owner. In order to test in a debug environment, in which you don't want to involve users, you can update the [*ProductionEnvironment* environment variable](setup-governance-components.md#all-environment-variables) to **No**, and the approvals will be sent to the admin account instead.
 
 ![Archive and Clean Up v2 - workflow for Apps.](media/archivalFlow-Apps.png "Archive and Clean Up v2 - workflow for Apps")
 
@@ -240,7 +240,7 @@ It recommends that the flow owner take a backup of the app in the event that the
 
 This flow starts the approval process and writes the approval task to the Archive Approval Dataverse table.
 
-**Customize**: By default, this flow will assign approvals to the flow owner. In order to test in a debug environment, in which you do not want to involve users, you can update the [*ProductionEnvironment* environment variable](setup-governance-components.md#all-environment-variables) to **No**, and the approvals will be sent to the admin account instead.
+**Customize**: By default, this flow will assign approvals to the flow owner. In order to test in a debug environment, in which you don't want to involve users, you can update the [*ProductionEnvironment* environment variable](setup-governance-components.md#all-environment-variables) to **No**, and the approvals will be sent to the admin account instead.
 
 ![Archive and Clean Up v2 - workflow for Flows.](media/archivalFlow-Flows.png "Archive and Clean Up v2 - workflow for Flows")
 
@@ -258,7 +258,7 @@ Runs daily and does two cleanup tasks for the workflow.
 
 1. Deletes the flows and apps that were approved for deletion more than three weeks ago (configurable).
 
-**Customize**: By default, this flow will not delete the apps and flows. This is to ensure you explicitly are ready for that to occur. To begin deletion of flows and apps, update the [*Auto Delete On Archive* environment variable](setup-governance-components.md#all-environment-variables) to **Yes**.
+**Customize**: By default, this flow won't delete the apps and flows. This is to ensure you explicitly are ready for that to occur. To begin deletion of flows and apps, update the [*Auto Delete On Archive* environment variable](setup-governance-components.md#all-environment-variables) to **Yes**.
 
 #### Admin \| Setup - Ignored Archival Requests
 
@@ -429,7 +429,7 @@ To release an app from quarantine, use the [Power Platform Admin View](core-comp
 
 #### Admin \| Set app quarantine status
 
-This flow is triggered automatically if the app quarantine status field of the PowerApps App table is updated.
+This flow is triggered automatically if the app quarantine status field of the Power Apps App table is updated.
 
 This field:
 
