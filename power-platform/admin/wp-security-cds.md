@@ -1,7 +1,7 @@
 ---
 title: "Security concepts in Microsoft Dataverse | MicrosoftDocs"
 description: Provides detailed information about the security model and concepts in Microsoft Dataverse.
-ms.date: 03/24/2022
+ms.date: 03/28/2022
 ms.topic: "article"
 author: paulliew
 ms.subservice: admin
@@ -77,11 +77,11 @@ Once this feature switch is turned on, you can select Business unit when you [as
 > This feature switch is stored in the **EnableOwnershipAcrossBusinessUnits** [environment database settings](environment-database-settings.md) and can also be set using the [OrgDBOrgSettings tool for Microsoft Dynamics CRM](
 https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm).
 
-### Associate a business unit with Azure AD security group
+### Associate a business unit with an Azure AD security group
 
-You can use Azure AD security group to map your business unit for streamlining your user administration and role assignment.  
+You can use an Azure AD security group to map your business unit for streamlining your user administration and role assignment.  
 
-Create an AAD security group for each Business unit and assign the respective business unit security role to each group team.
+**Create an AAD security group for each Business unit and assign the respective business unit security role to each group team.**
 
 :::image type="content" source="media/business-unit-with-aad-sec-group2.png" alt-text="Create an Azure AD security group for each business unit.":::
 
@@ -89,7 +89,7 @@ For each business unit, create an Azure AD security group. Create a [Dataverse g
 
 Add users into the respective Azure AD security group to grant them access to the business unit. The users can immediately run the app and access its resources/data. 
 
-In the [matrix data access](wp-security-cds.md#matrix-data-access-structure-modernize-business-units---preview) where users can work and access data from multiple business units, add the users to the Azure AD security groups that mapped to those business units.  
+In the [matrix data access](wp-security-cds.md#matrix-data-access-structure-modernize-business-units---preview), where users can work and access data from multiple business units, add the users to the Azure AD security groups that mapped to those business units.  
 
 ### Owning Business Unit
 
