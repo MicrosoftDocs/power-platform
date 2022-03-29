@@ -625,17 +625,19 @@
         href: programmability-extensibility-overview.md
       - name: Versioning and support
         href: programmability-versioning-support.md
-      - name: Authentication - legacy
-        href: programmability-authentication.md
-      - name: Authentication (preview)
-        href: programmability-authentication-v2.md
+      - name: Authentication
+        items:
+        - name: Authentication - legacy
+          href: programmability-authentication.md
+        - name: Authentication (preview)
+          href: programmability-authentication-v2.md
       - name: Permission reference (preview)
         href: programmability-permission-reference.md
       - name: Tutorials
         items:
         - name: "Create a daily capacity report (preview)"
           href: programmability-tutorial-create-daily-capacity-report.md
-        - name: "Preview: Install an application to a target environment"
+        - name: "Install an application to a target environment (preview)"
           href: programmability-tutorial-install-application-environment.md
       - name: PowerShell
         items:
@@ -645,8 +647,8 @@
           href: powershell-installation.md
         - name: Creating a service principal
           href: powershell-create-service-principal.md
-        - name: Cmdlet Reference
-          href: /powershell/module/microsoft.powerapps.administration.powershell/?view=pa-ps-latest
+        - name: Cmdlet reference
+          href: /powershell/module/microsoft.powerapps.administration.powershell
       - name: Connectors
         items:
         - name: Getting started
