@@ -227,20 +227,16 @@ The connectors have separate limits as a service protection mechanism. For examp
 
 When a flow was throttled because it exceeded the connector limits, you might see a HTTP 429 (too many requests) error in your flow with error text like "Rate limit is exceeded. Try again in 27 seconds."
 
-#### I am using COE toolkit, will the usage count towards my request limits?
+#### I am using COE Starter Kit , will the usage count towards my request limits?
 
-Yes. Flows included in the COE toolkit also use limits from the owner. Microsoft recommends that you turn on Pay-as-you go for the environment or buy additional capacity and contact support to get temporary relief from throttling.
+Yes. Flows included in the [COE Starter Kit](https://docs.microsoft.com/en-us/power-platform/guidance/coe/starter-kit) also use limits from the owner. Microsoft recommends that you turn on Pay-as-you go for the environment or buy additional capacity and contact support to get temporary relief from throttling.
 
-#### Can I use a service account and run multiple flows under it?
-
-Yes, and if your flow runs under a service account, it is really a team/organization flow and it needs a per flow plan for every flow.
 
 #### Can I use service principal in flows, and does it count against my request limits?
 
 Service principal isn't supported yet but it's a top item on the backlog. When we support it, service principal flows will consume a separate quota called [non-interactive limits](../api-request-limits-allocations.md).
 
 #### Will desktop flows usage count consume my Power Platform request limits?
-
 Only the desktop flow actions that are invoked from cloud flows count against the limit. Actions in the desktop flow are not counted towards request limits.
 
 #### What happens to my Power Platform requests if I have multiple plans?
