@@ -2,12 +2,10 @@
 title: "Types of Power Automate licenses"
 description: "Types of Power Automate licenses."
 author: PriyaKodukula
-
 ms.subservice: admin
 ms.topic: overview
-ms.date: 10/31/2021
+ms.date: 03/30/2022
 ms.author: prkoduku
-manager: kvivek
 search.audienceType: 
   - admin
 search.app:
@@ -229,7 +227,7 @@ When a flow was throttled because it exceeded the connector limits, you might se
 
 #### I am using COE Starter Kit , will the usage count towards my request limits?
 
-Yes. Flows included in the [COE Starter Kit](https://docs.microsoft.com/en-us/power-platform/guidance/coe/starter-kit) also use limits from the owner. Microsoft recommends that you turn on Pay-as-you go for the environment or buy additional capacity and contact support to get temporary relief from throttling.
+Yes. Flows included in the [COE Starter Kit](../../guidance/coe/starter-kit.md) also use limits from the owner. Microsoft recommends that you turn on Pay-as-you go for the environment or buy additional capacity and contact support to get temporary relief from throttling.
 
 
 #### Can I use service principal in flows, and does it count against my request limits?
@@ -237,6 +235,7 @@ Yes. Flows included in the [COE Starter Kit](https://docs.microsoft.com/en-us/po
 Service principal isn't supported yet but it's a top item on the backlog. When we support it, service principal flows will consume a separate quota called [non-interactive limits](../api-request-limits-allocations.md).
 
 #### Will desktop flows usage count consume my Power Platform request limits?
+
 Only the desktop flow actions that are invoked from cloud flows count against the limit. Actions in the desktop flow are not counted towards request limits.
 
 #### What happens to my Power Platform requests if I have multiple plans?
