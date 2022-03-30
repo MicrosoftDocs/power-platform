@@ -1,10 +1,9 @@
 ---
 title: "Copy an environment"
 description: "Learn how to copy apps and data from an environment. Review next steps for administrators in the target environment." 
-ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/14/2021 
+ms.date: 03/02/2022
 ms.subservice: admin
 author: ChrisGarty
 ms.author: cgarty
@@ -30,7 +29,7 @@ You can use Copy environment in the Microsoft Power Platform admin center to cop
 > - You can only copy to an environment in the same tenant and region.
 > - Components that have not been added to a solution (including canvas apps, flows, custom connectors, and connections) might not be part of the copy. You should validate your apps post copy.
 > - You cannot copy from or to a default type environment.
-> - Depending on the amount of copied and restored audit data, copy and restore operations can take up to 8 hours.
+> - Copy and restore operations can take up to 8 hours unless a lot of data, including audit data, needs to be copied or restored, in which case they could take up to 24 hours.
   
 ## Copy over everything
  An **Everything** copy includes all application data, users, and customizations, and schemas from the source environment and is suitable for:  
@@ -175,7 +174,7 @@ Once the copy process is complete, the target environment is placed in [Administ
 ### Next steps after copying an environment  
  To ensure the newly created copy (target) environment does not impact your production environment, once the copy operation is complete, two things happen:  
   
-1. The newly created copy environment is placed in administration mode. Only those with System Administrator or System Customizer security roles can sign in and manage the copy environment. Regular users cannot sign in and use the copy environment.  
+1. The newly created copy environment is placed in administration mode. Only those with System Administrator security roles can sign in and manage the copy environment. Regular users cannot sign in and use the copy environment.  
   
 2. Background operations are disabled in the copy environment. Disabled operations include workflows and synchronization with Microsoft Exchange.  
   

@@ -2,10 +2,10 @@
 title: "Integrate (synchronize) your email system  | MicrosoftDocs"
 description: Integrate (synchronize) your email system
 author: mduelae
-ms.service: power-platform
+
 ms.component: pa-admin
-ms.topic: conceptual
-ms.custom: intro-internal
+ms.topic: overview
+
 ms.date: 09/08/2020
 ms.subservice: admin
 ms.author: mkaur

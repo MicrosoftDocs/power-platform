@@ -7,9 +7,9 @@ ms.subservice: alm
 ms.author: pemikkel
 manager: kvivek
 ms.custom: ""
-ms.date: 10/08/2021
+ms.date: 01/04/2022
 ms.reviewer: "pehecke"
-ms.service: power-platform
+
 ms.topic: "article"
 search.audienceType: 
   - developer
@@ -357,8 +357,8 @@ steps:
 | Parameters       | Description     |
 |------------------|-----------------|
 | `SolutionOutputFile`<br/>Solution output file | (Required) The path and file name of the solution.zip file to pack the solution into. |
-| `SolutionSourceFolder`<br/>sSource folder of solution to pack | (Required) The path and source folder of the solution to pack. |
-| `SolutionType`<br/>Type of solution | (Required) The type of solution you want to pack. Options include: **Unmanaged** (recommended), **Managed**, and **Both**. |
+| `SolutionSourceFolder`<br/>Source folder of solution to pack | (Required) The path and source folder of the solution to pack. |
+| `SolutionType`<br/>Type of solution | (Required) The type of solution you want to pack. Options include: **Managed** (recommended), **Unmanaged**, and **Both**. |
 
 ### Power Platform Delete Solution
 

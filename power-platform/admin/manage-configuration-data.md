@@ -2,7 +2,7 @@
 title: "Move configuration data across organizations  | MicrosoftDocs"
 description: Move configuration data across organizations
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 08/23/2021

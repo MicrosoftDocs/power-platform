@@ -3,7 +3,7 @@ title: "Set up Business Management options | MicrosoftDocs"
 ms.custom: 
 author: jimholtz
 manager: kvivek
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/30/2017

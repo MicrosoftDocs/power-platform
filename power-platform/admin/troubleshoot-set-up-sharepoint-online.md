@@ -2,7 +2,7 @@
 title: "Troubleshoot SharePoint integration   | MicrosoftDocs"
 description: Troubleshoot SharePoint integration
 author: Mattp123
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 06/10/2021
@@ -72,12 +72,6 @@ If FetchXML or LayoutXML are malformed, use the following to restore.
 7. Select the created (SharePointDocumentSolution) solution.
 8. Export the solution and choose the Package type as "Unmanaged". SharePointDocumentSolution.zip will be downloaded. 
 9. Delete the solution that was created during step 3 from the organization.
-<!-- 10. Browse the folder, locate and open customization.xml.
-11. Search LayoutXml of Document associated grid (search for *Document Associated*).
-    
-    > [!div class="mx-imgBorder"] 
-    > ![Search for Document Associated.](media/sharepoint-document-associated-grid.png "Search for Document Associated")  -->
-
 10. Extract the exported solution zip file (downloaded file from Step 8).  
 11. In the solution contents folder, locate and then open **Solution.xml**.
 12. Change the following value in **Solution.xml**, and then save it. <br />

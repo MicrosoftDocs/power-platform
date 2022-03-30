@@ -3,7 +3,7 @@ title: "Release notes and latest version of the CoE starter kit Innovation Backl
 description: "Release notes and latest version of the Innovation Backlog 1.2"
 author: manuelap-msft
 manager: devkeydet
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/01/2021

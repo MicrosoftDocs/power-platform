@@ -2,7 +2,7 @@
 title: "Get Help + Support   | MicrosoftDocs"
 description: Use the Help + support experience to contact a Microsoft support representative to get resolution for your issue.
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/27/2021
@@ -141,7 +141,7 @@ For some support requests, you’ll be asked to request a support environment. C
 ### See also
 [Support overview](support-overview.md)<br />
 [How do I check my online service health?](check-online-service-health.md) <br />
-[Video: How to get the best support for Power Apps, Power Automate, and Dynamics 365](https://youtu.be/An3IfFdZlT8)
+
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

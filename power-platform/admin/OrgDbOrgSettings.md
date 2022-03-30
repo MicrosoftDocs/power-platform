@@ -2,10 +2,10 @@
 title: "Default OrgDBOrgSettings for server-side synchronization  | MicrosoftDocs"
 description: This topic covers the default options available in OrgDBOrgSettings related to server-side synchronization.
 author: mduelae
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/18/2021
+ms.date: 02/16/2022
 ms.subservice: admin
 ms.author: mkaur
 search.audienceType: 
@@ -36,7 +36,7 @@ This topic covers the default values of OrgDBOrgSettings that are specific to se
 | DoNotAutoTrackEmail | true | When enabled, allows the **No Email Messages** option to appear in the user's or queue's incoming email filtering method options. |
 | HideEmailAutoTrackOptions | false | When enabled, removes the **All email messages**, **Email messages from Dynamics 365 Leads, Contacts and Accounts** and **Email messages from Dynamics 365 records that are email enabled** incoming email filtering method options from user's personal options. <br> **Note**: Enabling this setting does not change the values currently set for individual users. We recommend setting this to enabled to prevent accidental email promotion into Dynamics 365. |
 | HideTrackAllOption | false |  When enabled, removes the **All email messages** incoming email filtering method option from user's personal options. <br> **Note**: Enabling this setting does not change the values currently set for individual users. We recommend setting this to enabled to prevent accidental email promotion into Dynamics 365. |
-| SSSForceFilteringMethodForUserMailboxes | -1 | Overrides the incoming email filtering method for all user mailboxes by the following values: -1 (Disabled), 0 (All Email Messages), 1 (Email messages in response to Dynamics 365 email), 2 (Email messages from Dynamics 365 Leads, Contacts and Accounts), and 3 (Email messages from Dynamics 365 records that are email enabled). |
+| SSSForceFilteringMethodForUserMailboxes | -1 | Overrides the incoming email filtering method for all user mailboxes by the following values: -1 (Disabled), 0 (All Email Messages), 1 (Email messages in response to Dynamics 365 email), 2 (Email messages from Dynamics 365 Leads, Contacts and Accounts), 3 (Email messages from Dynamics 365 records that are email enabled), and 4 (No email messages). |
 | TrackCategorizedItems | true | Allows users to manually track items by using categories. Linked items will also appear with the category applied as a visual indicator of the item's track status.</br> **Note**: Disabling this feature will remove the category from Outlook and related functionality. |
 | IgnoreConversationIndexAndInReplyToForCorrelation | false | Ignore Email ConversationIndex and InReplyTo fields when performing email correlation. <br> **Note**: this setting is most commonly used to prevent other correlation methods from interfering with tracking tokens. |
 | UseXAnchorMailboxInExchangeRequestHeader | true | Allows server-side sync to specify the XAnchorMailbox Header when connecting to Exchange. We recommend that you not disable this setting. |
@@ -54,4 +54,5 @@ This topic covers the default values of OrgDBOrgSettings that are specific to se
 | CreateQueueItemsForAcceptingQueueRecipients | true | When enabled, the system will create a queue item for each resolved queue recipient during incoming email processing. If AutoRouteToOwnerQueue is enabled for the email table, the system additionally creates a queue item in the email owner's default queue. The default value is true. |
 | SSSCreateAdditionalQueueItemsForAlreadyTrackedEmail | false | When enabled, server-side synchronization will create a queue item for the synchronizing queue if an email has already been created by server-side synchronization and the queue item doesn't exist in the synchronizing queue. The default value is false. |
 | SSSSaveOutgoingEmailToExchangeSentFolder | true | When enabled, emails sent from Dynamics 365 will be saved to the sent items folder in Exchange for the mailbox they're sent from. <br> **Note**: this will cause the Sent Items folder to increase in size over time, and can result in Exchange throttling if quota limitations are surpassed. |
+| DoNotCorrelateForwardedEmailsAsReplies | false | If this setting is enabled, Server-Side Sync will not consider forwarded emails as replies. If this setting is disabled, Server-Side Sync will consider forwarded emails as replies. <br> Example scenario: A Dynamics user received an email A with message ID &lt;msg-A&gt;. The user decides to forward this email to another, thus generating a new email B with message ID &lt;msg-B&gt;. This new email message will have an In-Reply-To header pointing back to email message A. Based solely on this information, Server-Side Sync would consider email message B as a reply to email message A, even though it's a forwarded email. To tell replies apart from forwarded messages, we can look at the recipients of email B. If the sender of email A is a recipient of email B, then we can say it's a reply; otherwise, it's a forwarded email. This OrgDbOrgSetting enables this additional comparison for the In-Reply-To correlation criteria. |
 

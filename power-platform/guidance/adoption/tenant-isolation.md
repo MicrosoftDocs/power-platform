@@ -3,7 +3,7 @@ title: "Enable cross-tenant isolation - Microsoft Power Platform| MicrosoftDocs"
 description: "Cross-tenant isolation lets you restrict other tenants your makers can connect to."
 author: manuelap-msft
 manager: devkeydet
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/10/2020

@@ -3,10 +3,10 @@ title: Data types | Microsoft Docs
 description: Data types in Microsoft Power Fx
 author: gregli-msft
 manager: kvivek
-ms.service: power-platform
+
 ms.topic: reference
-ms.reviewer: nabuthuk
-ms.date: 02/26/2021
+ms.reviewer: jdaly
+ms.date: 03/06/2022
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType: 
@@ -17,7 +17,7 @@ search.app:
 # Data types
 
 > [!NOTE]
-> Microsoft Power Fx is the new name for the canvas apps formula language.  These articles are work in progress as we extract the language from canvas apps, integrate it with other Microsoft Power Platform products, and make it available as open source.  Start with the [Microsoft Power Fx Overview](overview.md) for an introduction to the language.   
+> Microsoft Power Fx is the new name for the canvas apps formula language.  These articles are work in progress as we extract the language from canvas apps, integrate it with other Microsoft Power Platform products, and make it available as open source.  Start with the [Microsoft Power Fx Overview](overview.md) for an introduction to the language.
 
 Information flows through Microsoft Power Fx in small, discrete values, very much like the cells of a spreadsheet. For example, data in a **Birthday** field and an **Anniversary** field would both flow through as a **Date** value that includes the year, the month, and the day. The app knows how to format these values, constrain input to what is appropriate for each, and share the values with a database. Birthdays differ from anniversaries to people, but the system handles them in exactly the same manner. In this case, **Date** is an example of a [data type](https://en.wikipedia.org/wiki/Data_type).
 

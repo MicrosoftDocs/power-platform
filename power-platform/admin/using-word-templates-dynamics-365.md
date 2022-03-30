@@ -1,7 +1,7 @@
 ---
 title: "Use Word templates to create standardized documents  | MicrosoftDocs"
 description: Use Word templates to create standardized documents
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 07/26/2021

@@ -2,10 +2,10 @@
 title: "Frequently asked questions about Power Automate licensing"
 description: "Frequently asked questions about Power Automate licensing."
 author: PriyaKodukula
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 10/06/2021
+ms.date: 01/06/2022
 ms.author: prkoduku
 manager: kvivek
 search.audienceType: 
@@ -48,7 +48,7 @@ Here's the decision tree.
 - If an instant flow has premium connectors, every user who runs the flow needs either a Power Automate premium license, a Power Apps premium license, or a Dynamics license. In such cases, instead of licensing every user, it is simpler to license the flow with a per flow license. One exception for this rule is the http trigger which runs in the context of the owner, even if it's being used in an instant flow.
 - If a parent flow calls a child flow, child flow leverages the context from parent flow. For example, if the parent flow is an automated flow, and the child flow uses premium connectors and the child flow doesn't have per flow license, it will use the parent flow owner's license. If the child flow has a per flow license, it uses the per flow license and not the parent flow's license. During the [transition period](./types.md#transition-period), there is a slight difference in this behavior. The child flow owner's license will be used unless the child flow has a per flow license but after the transition period ends, the child flow owner's license will be ignored and only the parent flow owner's license is used unless the child flow has a per flow license.
 
-A common question is, "If a flow is triggered when a SharePoint list item is updated, and many users interact with that list, will there be a cost for each user?" The answer is if the flow does not use a premium connector such as calling Dataverse in the full production environment (not the Microsoft Teams environment), having an Office 365 license is enough. If the flow uses premium connectors, since the trigger is an automated trigger, only the owner needs a premium license.
+A common question is, "If a flow is triggered when a list created using Microsoft Lists item is updated, and many users interact with that list, will there be a cost for each user?" The answer is if the flow does not use a premium connector such as calling Dataverse in the full production environment (not the Microsoft Teams environment), having an Office 365 license is enough. If the flow uses premium connectors, since the trigger is an automated trigger, only the owner needs a premium license.
 
 You can find out what type (automated/manual/scheduled) of you have have, select a flow to see its 'type' in the details.
 
@@ -84,9 +84,16 @@ If the flow is a solution flow, you can change the owner using [Power Automate W
 
 The flow will be downgraded to lower performance and all flow owners will be notified and the flow will be turned off in 30 days if no action is taken.
 
-### Can I assign licenses to guest users?
+### Do guest users (not from your tenant) need a license to use Power Automate?
+Yes. The guest user must have a Power Automate license assigned through one of the following tenants:
+- The tenant hosting the flow. You can assign them admin trials for temporary access or standalone licenses.
+- The home tenant of the guest user.
 
-Yes. If you want to give access to external users (not from your tenant), you can assign them admin trials for temporary access or standalone licenses.
+For example, if a guest user has a Power Automate per user license assigned in the home tenant, they can use premium features in the guest tenant that is hosting the flow. 
+Power Automate, included with Office, Power Automate per user, per user with attended Robotic Process Automation (RPA), Power Apps per user, and Dynamics user plans, will have the following characteristics:
+- In the Azure public cloud, the above plans are recognized across tenants in guest scenarios because they aren't bound to a specific environment.
+- In Azure national or sovereign clouds, the above plans are recognized across tenants in guest scenarios. More information: [National clouds](/azure/active-directory/develop/authentication-national-cloud), [Azure geographies](https://azure.microsoft.com/global-infrastructure/geographies/#geographies)
+ - Licenses are not recognized across tenants in difference Azure clouds.
 
 ### What Power Automate capabilities are included in Windows licenses?
 
@@ -114,7 +121,7 @@ Office 365 licenses include the following Power Automate capabilities.
   
 The following Power Automate capabilities are not included.
   
-- Access to [premium connectors](./types.md#premium-connectors) is not included except in Dataverse for Teams environments. Learn more about [Dataverse for Teams capabilities](/power-platform/admin/pricing-billing-skus#dataverse-capabilities-with-microsoft-365-licenses)
+- Access to [premium connectors](./types.md#premium-connectors) is not included except in Dataverse for Teams environments. Learn more about [Dataverse for Teams capabilities](../pricing-billing-skus.md#dataverse-capabilities-with-microsoft-365-licenses)
 - [Business process flows](./types.md#business-process-flows)
 - [Custom connectors](./types.md#custom-connectors)
 - [On premises gateways](./types.md#on-premises-gateway)
@@ -270,9 +277,9 @@ It is okay, since you have a per user license, all your flows use capacity from 
 
 The approvals connector is a standard connector. Users who respond to approval requests aren't considered to be the invoking users. Their Office 365 license is enough and they don't need a premium license.
 
-### **Automated flow** - User builds a flow that triggers when an item is added to a SharePoint list and updates a SQL db (Premium). Multiple people can add items to the SharePoint list.
+### **Automated flow** - User builds a flow that triggers when an item is added to a list created using Microsoft Lists and updates a SQL db (Premium). Multiple people can add items to the list created using Microsoft Lists.
 
-Flow runs in the context of owner's license for Automated/Scheduled flows and invoking user's license for Instant/Power Apps/Dataverse triggered flows. So, the person who added the item to SharePoint list do not need a premium license.
+Flow runs in the context of owner's license for Automated/Scheduled flows and invoking user's license for Instant/Power Apps/Dataverse triggered flows. So, the person who added the item to list created using Microsoft Lists do not need a premium license.
 
 ## Instant flows
 
@@ -285,8 +292,6 @@ Everyone who invokes the flow need a premium license because it is an instant fl
 ### I have a child flow that has premium connectors and is invoked by multiple parent flows that don't have premium connectors. Do all parent flows need to be licensed, or is licensing the child flow enough?
 
 You can either license the parent flow or license the child flow with a per flow license. However, if the parent flow also has a premium connector, the parent flow owner must have a premium license.
-
-<!-- ### **Automated flow with Dataverse trigger** – Dataverse triggers allow flows to use the invoker's connection. Since it is an automated flow, flow only looks for creator/owner's license -->
 
 ## Shared flows
 

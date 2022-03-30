@@ -2,7 +2,7 @@
 title: "Associate an email address with a row   | MicrosoftDocs"
 description: Associate an email address with a row. 
 author: mduelae
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 11/5/2021
@@ -21,7 +21,8 @@ search.app:
 
 When customer engagement apps track an email, it associates the email address to a row within customer engagement apps. The contents of the email **From** field can only be associated with one row. If there are duplicate rows within customer engagement apps with the same email address, the contents of the email **From** field will resolve to the first active row in the following order:
 
-1. SystemUser (*This will be first unless the tracking user is also the owner of the duplicated row, such as Contact, Account and others listed below. If the tracking user does NOT own the duplicated row, such as Contact, the sender email will resolve to the SystemUser*).
+
+1. SystemUser
 2. Contact
 3. Account
 4. Lead
@@ -29,6 +30,9 @@ When customer engagement apps track an email, it associates the email address to
 6. Team
 7. Business unit
 8. Email-enabled tables (such as Queues, custom, etc.)
+
+> [!NOTE]
+> The only exception is when the owner of the mailbox or queue tracking the email is the owner of the duplicated row. A row that's owned by you takes precedence over any rows that you don't own. For example, if the email address exists in a contact and account table and the mailbox owner also owns the account but not the contact, the **From** field will resolve to the account.
 
 In the email **To** field,  all of the rows of email-enabled tables with the email address will be listed.
 

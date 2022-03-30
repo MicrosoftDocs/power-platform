@@ -1,7 +1,7 @@
 ---
 title: "Connect Gmail accounts, POP3 email server, or SMTP email server by using credentials specified by a user or queue | MicrosoftDocs"
 description: Connect Gmail accounts, POP3 email server, or SMTP email server using credentials specified by a user or queue 
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 08/11/2021
@@ -138,7 +138,6 @@ In addition to administrator permissions, you must have Read and Write privilege
 
 Choose *one* of the following methods: set mailboxes to the default profile, or edit mailboxes to set profile and delivery methods.
 
-<!--markdownlint-disable MD036--> 
 **To set mailboxes to the default profile**
 
 1. In the Power Platform admin center, select an environment. 

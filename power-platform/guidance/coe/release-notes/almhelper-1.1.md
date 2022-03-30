@@ -3,7 +3,7 @@ title: "Release notes and latest version of the CoE starter kit ALM Accelerator 
 description: "Release notes and latest version of the CoE Starter Kit ALM Accelerator for Makers 1.11."
 author: manuelap-msft
 manager: devkeydet
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/18/2021

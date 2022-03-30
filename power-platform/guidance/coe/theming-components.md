@@ -3,7 +3,7 @@ title: "Theming components | MicrosoftDocs"
 description: "The Power Apps theming solution contains a set apps, tables, custom controls and a component library.  The Theme editor app allows designers to create and manage themes."
 author: manuelap-msft
 manager: devkeydet
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/10/2020

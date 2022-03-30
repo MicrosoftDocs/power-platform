@@ -3,10 +3,9 @@ title: Operators and Identifiers in Microsoft Power Fx | Microsoft Docs
 description: Reference information, including syntax and examples, for the operators and identifiers in Microsoft Power Fx
 author: gregli-msft
 manager: kvivek
-ms.service: power-platform
 ms.topic: reference
-ms.reviewer: nabuthuk
-ms.date: 07/17/2020
+ms.reviewer: jdaly
+ms.date: 03/06/2022
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType: 
@@ -19,7 +18,7 @@ search.app:
 > [!NOTE]
 > Microsoft Power Fx is the new name for the canvas apps formula language.  These articles are work in progress as we extract the language from canvas apps, integrate it with other Microsoft Power Platform products, and make it available as open source.  Start with the [Microsoft Power Fx Overview](overview.md) for an introduction to the language.    
 
-The operators in Microsoft Power Fx are described bdlow.  Some of these operators are dependent on the language of the author.  See [Global apps](global.md) for more information.
+The operators in Microsoft Power Fx are described below.  Some of these operators are dependent on the language of the author.  See [Global apps](global.md) for more information.
 
 
 |  Symbol   |      Type      |    Syntax      |        Description       |

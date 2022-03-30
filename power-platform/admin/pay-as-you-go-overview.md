@@ -1,13 +1,15 @@
-﻿---
+---
 title: "Pay-as-you-go plan overview | MicrosoftDocs"
 description: The pay-as-you-go plan is a new way to pay for Power Apps using an Azure subscription, which allows you to get started without any license commitment.
-author: jimholtz
-ms.service: power-platform
+author: Kavishi
 ms.component: pa-admin
-ms.topic: conceptual
-ms.date: 11/09/2021
+ms.topic: overview
+ms.date: 03/08/2022
 ms.subservice: admin
-ms.author: jimholtz 
+ms.author: kaagar
+ms.reviewer: jimholtz 
+contributors:
+  - ShawnNandiMSFT
 search.audienceType: 
   - admin
 search.app:
@@ -16,9 +18,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Preview: Pay-as-you-go plan
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Pay-as-you-go plan
 
 <!-- https://go.microsoft.com/fwlink/?linkid=2173947 -->
 
@@ -29,7 +29,7 @@ Pay-as-you-go allows you to share a Power Apps app with any user in your organiz
 This plan reduces the overhead of license procurement and lets you manage and split costs across business units by leveraging the cost management reporting capabilities of Azure subscriptions. Pricing information for this plan is available [here.](https://go.microsoft.com/fwlink/?linkid=2169167)
 
 > [!TIP]
-> Check out how T-Mobile is innovating with Power Apps pay-as-you-go: [T-Mobile adopts Microsoft Power Platform for fast and powerful low-code development](https://customers.microsoft.com/en-us/story/1435340411391867976-t-mobile-telecommunications-power-platform).
+> Check out how T-Mobile is innovating with Power Apps pay-as-you-go: [T-Mobile adopts Microsoft Power Platform for fast and powerful low-code development](https://customers.microsoft.com/story/1435340411391867976-t-mobile-telecommunications-power-platform).
 
 ## Common use cases
 
@@ -68,7 +68,7 @@ Billing policies provide flexible options for organizations that are looking to 
 
 ## Next step
 
-[Preview: Pay-as-you-go meters](pay-as-you-go-meters.md)
+[Pay-as-you-go meters](pay-as-you-go-meters.md)
 
 
 

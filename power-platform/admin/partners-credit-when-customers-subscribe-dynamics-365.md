@@ -2,7 +2,7 @@
 title: "Partners: Get credit when your customers subscribe to Dynamics 365"
 description: "As a Microsoft Dynamics 365 partner, learn how to help your customers sign up for a trial subscription, customize it, and set yourself as the partner of record."
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/30/2017
@@ -40,7 +40,7 @@ Soon after you complete the sign up, you’ll be notified by email that the tria
   
 <a name="BKMK_TwoDesignateyourself"></a>   
 ## Designate yourself as the partner of record  
- After completing the trial sign up, designate your company as the partner of record who is responsible for the customer. As the partner of record, you can help [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] provide our partners and customers with the best service and support. After the trial subscription becomes a paid subscription, your partner company can also claim the Software Advisor (CSA) fee for the subscription. For information about the CSA fee program, visit the [Microsoft Partner Network](https://go.microsoft.com/fwlink/p/?LinkId=532917) site. <!--, where you can download the [Dynamics 365 apps Software Advisor Operations Guide and FAQ](https://go.microsoft.com/fwlink/p/?LinkId=204192), which provides detailed instructions for the fee claim process.  -->
+ After completing the trial sign up, designate your company as the partner of record who is responsible for the customer. As the partner of record, you can help [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] provide our partners and customers with the best service and support. After the trial subscription becomes a paid subscription, your partner company can also claim the Software Advisor (CSA) fee for the subscription. For information about the CSA fee program, visit the [Microsoft Partner Network](https://go.microsoft.com/fwlink/p/?LinkId=532917) site. 
   
  If your customer has already signed up for a [!INCLUDE[pn_Online_Subscription](../includes/pn-online-subscription.md)], or prefers to sign up for the trial subscription themselves, they can still designate your company as the partner of record.  
   

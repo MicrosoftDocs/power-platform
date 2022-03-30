@@ -1,14 +1,14 @@
 ---
 title: "Email service configurations supported by server-side synchronization"
 description: "Learn about the email service configurations supported by server-side synchronization when using customer engagement apps and Microsoft Power Platform."
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/17/2021
-author: revachauhan
+ms.date: 01/13/2022
+author: mduelae
 ms.subservice: admin
-ms.author: rechauha
-ms.reviewer: mkaur
+ms.author: magatti
+ms.reviewer: magatti
 search.audienceType: 
   - admin
 search.app:
@@ -46,16 +46,13 @@ Depending on your customer engagement apps (Dynamics 365 Sales, Dynamics 365 Cus
 - Using an email server profile other than Exchange Online  
 
 ## Connecting customer engagement apps with Exchange Online in a different tenant (limited support)
-Customers can use an Exchange Server (Hybrid) profile configured with the Exchange Web Services (EWS) endpoint of the Office 365 service (https://outlook.office365.com/EWS/Exchange.asmx). This configuration requires the use of an account in Exchange setup with [ApplicationImpersonation](/exchange/client-developer/exchange-web-services/impersonation-and-ews-in-exchange). More information how to configure Dynamics 365 (Online) with this hybrid connection configuration can be found at:
 
-- [Connect to Exchange Server (on-premises)](connect-exchange-server-on-premises.md)
-- [Best practices for server-side synchronization](best-practices-server-side-synchronization.md)
+Customers can connect to a Microsoft Exchange online deployment hosted in a different tenant. For more information, see [Exchange Online cross-tenant authentication](connect-exchange-online-server-profile-oauth.md).
 
 > [!NOTE]
 > The following limitations apply to connecting cross-tenant:
 > - Dynamics 365 App for Outlook is currently not supported.
 > - Approval of Dynamics 365 mailbox records must be performed by a Global tenant admin or an Exchange admin of the primary tenant. 
-> - We are aware of the Exchange Basic authentication deprecation schedule and are working on an alternate implementation.
 
 ## Unsupported email service configurations  
  Server-side synchronization doesn't support the following scenarios:  

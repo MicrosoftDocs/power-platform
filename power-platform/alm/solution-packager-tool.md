@@ -4,7 +4,7 @@ description: "SolutionPackager is a tool that can reversibly decompose a Microso
 ms.custom: ""
 ms.date: 06/15/2020
 ms.reviewer: "pehecke"
-ms.service: power-platform
+
 ms.topic: "article"
 author: "shmcarth" # GitHub ID
 ms.subservice: alm

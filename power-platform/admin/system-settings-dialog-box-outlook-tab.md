@@ -2,7 +2,7 @@
 title: "System Settings Outlook tab | MicrosoftDocs"
 description: System Settings Outlook tab 
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/11/2020

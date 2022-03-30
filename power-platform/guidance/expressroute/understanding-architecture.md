@@ -2,7 +2,7 @@
 title: "Architecture of using Microsoft Power Platform with ExpressRoute | MicrosoftDocs"
 description: "Explanation of Microsoft Power Platform architecture to use with ExpressRoute"
 author: taiki-yoshida
-ms.service: power-platform
+
 ms.topic: conceptual
 ms.date: 10/08/2021
 ms.subservice: guidance
@@ -26,7 +26,7 @@ underlying architecture to understand what can be configured.
 
 Microsoft Power Platform is built on top of Microsoft Azure infrastructure,
 deployed across various regions around the world. Each deployment is called an
-[*environment*](/power-platform/admin/environments-overview), and these environments are associated with a particular region.
+[*environment*](../../admin/environments-overview.md), and these environments are associated with a particular region.
 
 :::image type="complex" source="media/region-and-data-centers.png" alt-text="Diagram illustrating each Microsoft Power Platform region with its corresponding datacenters.":::
    Each Microsoft Power Platform region has a pair of datacenters. The diagram shows four different regions: Oceania, Great Britain, North America, and Europe. Each of these regions has a pair. For example, the North America region has West US and East US datacenters in this example. Scale groups exist within each datacenter. There are several scale groups including canary group, sandbox group, and production scale groups.
@@ -124,7 +124,7 @@ ExpressRoute.
 > For canvas apps specifically, CDN can be turned off using a setting **Load default static content from Content Delivery Network** by system administrators 
 in case of firewall restrictions and IP approved list related issues.
 This setting does not apply to model-driven apps as they do not use CDN currently. 
-More information: [Manage behavior settings](/power-platform/admin/settings-behavior)
+More information: [Manage behavior settings](../../admin/settings-behavior.md)
 
 ## Azure Relay
 

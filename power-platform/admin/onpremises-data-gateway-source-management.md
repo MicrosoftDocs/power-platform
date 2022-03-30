@@ -1,7 +1,6 @@
 ---
-title: "Preview: Manage data sources | MicrosoftDocs"
+title: "Manage data sources (preview) | MicrosoftDocs"
 description: View and manage on-premises data sources.
-ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/11/2021
@@ -17,11 +16,16 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Preview: Data source management
+# Data source management (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 On the **Data** page of the Power Platform admin center (https://admin.powerplatform.microsoft.com), you can view and manage Power BI cloud and on-premises data sources and gateway clusters. The on-premises data sources on this page include all on-premises data source definitions for gateways you administer. The cloud data sources on this page are cloud connections in your published Power BI reports.
+
+> [!IMPORTANT]
+> - This is a preview feature.
+> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+> - This feature is being gradually rolled out across regions and might not be available yet in your region.
 
 This article describes managing data sources. For information on managing gateway clusters, see [Preview: On-premises data gateway management](onpremises-data-gateway-management.md).
 

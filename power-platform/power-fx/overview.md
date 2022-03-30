@@ -3,10 +3,9 @@ title: Microsoft Power Fx overview | Microsoft Docs
 description: Overview of the Power Fx language
 author: gregli-msft
 manager: kvivek
-ms.service: power-platform
 ms.topic: conceptual
-ms.reviewer: nabuthuk
-ms.date: 02/26/2021
+ms.reviewer: jdaly
+ms.date: 03/06/2022
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType: 
@@ -57,8 +56,7 @@ Power Fx takes this a step further. An expression by itself says nothing about w
 
 For example, this [formula from Stack Overflow](https://stackoverflow.com/questions/350264/how-can-i-perform-a-reverse-string-search-in-excel-without-using-vba) searches a string in reverse order. In Excel, it looks like the following image.
 
-> [!div class="mx-imgBorder"]
-> ![Reverse search.](media/overview/reverse-search-excel.png "Reverse search")
+:::image type="content" source="media/overview/reverse-search-excel.png" alt-text="Reverse search":::
 
 Screenshot of a formula bar in Excel with the formula:
 =RIGHT(A1,LEN(A1)-

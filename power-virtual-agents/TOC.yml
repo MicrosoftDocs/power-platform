@@ -48,12 +48,14 @@
          href: authoring-system-fallback-topic.md
        - name: Manage topics
          href: authoring-topic-management.md
-       - name: Add comments to bots (Preview)
+       - name: Add comments to bots
          href: authoring-comments.md
        - name: Test your bot
          href: authoring-test-bot.md
        - name: Supported languages
          href: authoring-language-support.md
+       - name: Troubleshoot error codes
+         href: error-codes.md
     - name: Enhance and improve
       items:
        - name: Key concepts - Enhanced authoring
@@ -62,7 +64,7 @@
          href: advanced-ai-features.md
        - name: Use entities and slot filling
          href: advanced-entities-slot-filling.md
-       - name: Use variables (Preview)
+       - name: Use variables
          href: authoring-variables.md
        - name: Reuse variables across topics
          href: authoring-variables-bot.md
@@ -74,7 +76,7 @@
          href: advanced-end-user-authentication.md
        - name: Add actions using Power Automate
          href: advanced-flow.md
-       - name: Send proactive messages and cards in Microsoft Teams (Preview) 
+       - name: Send proactive messages and cards in Microsoft Teams
          href: advanced-proactive-message.md
        - name: Trigger hand-off to a live agent
          href: advanced-hand-off.md
@@ -82,8 +84,10 @@
       items:
        - name: Key concepts - Publish your bot
          href: publication-fundamentals-publish-channels.md
-       - name: Add bot to your live website or Power Apps portal
+       - name: Add bot to your live website
          href: publication-connect-bot-to-web-channels.md
+       - name: Add bot to Power Apps portal
+         href: publication-add-bot-to-power-apps-portal.md
        - name: Add bot to Microsoft Teams
          href: publication-add-bot-to-microsoft-teams.md
        - name: Add bot to Facebook
@@ -92,15 +96,13 @@
          href: publication-connect-bot-to-custom-application.md
        - name: Add bot to Azure Bot Service channels
          href: publication-connect-bot-to-azure-bot-service-channels.md
-       - name: Use a Bot Framework bot with Power Virtual Agents
-         href: advanced-use-dispatcher.md
        - name: Integrate with Bot Framework
          items:
           - name: Configure a skill for use in Power Virtual Agents
             href: configuration-add-skills.md
           - name: Use Bot Framework Skills
             href: advanced-use-skills.md
-          - name: Use a Power Virtual Agents bot as a skill (Preview)
+          - name: Use a Power Virtual Agents bot as a skill
             href: advanced-use-pva-as-a-skill.md
           - name: Use Bot Framework Composer
             items:
@@ -174,7 +176,7 @@
       items:
        - name: Licensing for Virtual Power Agents in Teams
          href: teams/requirements-licensing-teams.md
-       - name: Collaborate with others
+       - name: Share bot with users in your organization
          href: teams/admin-share-bots-teams.md
        - name: Upgrade a Dataverse for Teams environment
          href: teams/admin-upgrade-dataverse-teams.md
@@ -200,6 +202,8 @@
          href: teams/authoring-test-bot-teams.md
        - name: Supported languages
          href: teams/authoring-language-support-teams.md
+       - name: Troubleshoot error codes
+         href: teams/error-codes-teams.md
     - name: Enhance and improve
       items:
        - name: Key concepts - Enhanced authoring
@@ -218,7 +222,7 @@
          href: teams/advanced-end-user-authentication-teams.md
        - name: Add actions using Power Automate
          href: teams/advanced-flow-teams.md
-       - name: Send proactive messages and cards (Preview) 
+       - name: Send proactive messages and cards
          href: teams/advanced-proactive-message-teams.md
        - name: Use Bot Framework Skills
          href: teams/advanced-use-skills-teams.md

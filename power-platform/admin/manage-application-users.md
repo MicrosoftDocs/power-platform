@@ -5,10 +5,9 @@ author: paulliew
 ms.subservice: admin
 ms.author: paulliew
 ms.reviewer: jimholtz
-ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/30/2021
+ms.date: 03/18/2022
 search.audienceType: 
   - admin
 search.app:
@@ -59,9 +58,12 @@ In an environment, you can only have one application user for each Azure AD&ndas
 
    :::image type="content" source="media/create-new-app-user.png" alt-text="Create a new application user.":::
 
-6. Select **+ Add an app** to choose the registered Azure AD application that was created for the selected user, and then select **Add**. **Note**: You can also choose an Azure Managed Identity via this experience.
+6. Select **+ Add an app** to choose the registered Azure AD application that was created for the selected user, and then select **Add**. 
 
    :::image type="content" source="media/add-app-from-azure-ad.png" alt-text="Add an application from Azure AD.":::
+
+   > [!NOTE]
+   > In addition to entering the Application Name or Application ID, you can also enter an Azure Managed Identity Application ID. For Managed Identity, do not enter the Managed Identity Application Name, use the Managed Identity Application ID instead.
 
 7. The selected Azure AD app is displayed under **App**. You can select **Edit** (![Edit.](media/edit-button.png)) to choose another Azure AD application. Under **Business Unit**, select a business unit from the dropdown list.  
 
@@ -112,7 +114,7 @@ When an application user is first created, the username is the same as the name 
 
 ## Manage roles for an application user 
 
-In addition to using the entry point on the **Details** page<!--note from editor: To match the reference in line 102 and in most places in the repo.--> to manage roles, you can select **Edit security Roles** on the menu bar on the **Application users** page. If the application user has roles assigned already, those roles will appear as selected on the page.
+In addition to using the entry point on the **Details** page to manage roles, you can select **Edit security Roles** on the menu bar on the **Application users** page. If the application user has roles assigned already, those roles will appear as selected on the page.
 
 You can select or deselect roles, and then select **Save**.  All selected roles will become the current assigned roles for the application user. Any unselected roles won't be assigned.
 

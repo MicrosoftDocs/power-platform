@@ -2,7 +2,7 @@
 title: "System SettingsSynchronization tab  | MicrosoftDocs"
 description: System Settings Synchronization tab 
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/11/2020

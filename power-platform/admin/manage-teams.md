@@ -1,13 +1,12 @@
 ---
 title: "Teams in Dataverse   | MicrosoftDocs"
 description: Understand the different types of teams and how to view and manage settings.
-ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/26/2021
-author: jimholtz
+ms.date: 02/22/2022
+author: paulliew
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: paulliew
 ms.reviewer: jimholtz
 ms.custom: "admin-security"
 search.audienceType: 
@@ -84,21 +83,15 @@ After you create the team, you can add team members and select corresponding sec
 
 2. Select an environment, and then select **Settings** > **Users + permissions** > **Teams**.
 
-3. Select a team, and then select **Edit team**. Only the **Team name**, **Description**, and **Administrator** are available for editing.
+3. Select the checkbox for a team name.  
 
-4. Update the fields as required, and then select **Update**.
+   :::image type="content" source="media/select-team.png" alt-text="Screenshot selecting a team.":::
+
+4. Select **Edit team**. **Team name**, **Description**, and **Administrator** are available for editing. To edit **Business unit**, see [Change the business unit for a team](create-edit-business-units.md#change-the-business-unit-for-a-team).
+
+5. Update the fields as required, and then select **Update**.
 
    :::image type="content" source="media/dataverse-team-manage-edit.png" alt-text="Screenshot of editing a team.":::
-
-### Delete a team
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
-
-2. Select an environment, and then select **Settings** > **Users + permissions** > **Teams**.
-
-3. Select a team, and then select **Delete team**. 
-
-4. Select **Delete** to confirm. Note that this action can't be undone.
 
 ### Manage team members
 
@@ -111,9 +104,13 @@ You can add and delete members from a team.
 
 2. Select an environment, and then select **Settings** > **Users + permissions** > **Teams**.
 
-3. Select a team, and then select **Manage team members**. 
+3. Select the checkbox for a team name.  
 
-4. Do one of the following:
+   :::image type="content" source="media/select-team.png" alt-text="Screenshot selecting a team.":::
+
+4. Select **Manage team members**. 
+
+5. Do one of the following:
 
    - To add new team members, select **+ Add team members** and then specify users.
 
@@ -130,15 +127,33 @@ You can add and delete members from a team.
 
 ### Manage the security roles of a team
 
-1. Select a team, and then select **Manage security roles**. 
+1. Select the checkbox for a team name.  
 
-2. Select the role or roles you want, and then select **Save**.
+   :::image type="content" source="media/select-team.png" alt-text="Screenshot selecting a team.":::
+
+2. Select **Manage security roles**. 
+
+3. Select the role or roles you want, and then select **Save**.
 
    :::image type="content" source="media/dataverse-team-manage-security-roles.png" alt-text="Screenshot of managing security roles.":::
 
+### Delete a team
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
+
+2. Select an environment, and then select **Settings** > **Users + permissions** > **Teams**.
+
+3. Select the checkbox for a team name.  
+
+   :::image type="content" source="media/select-team.png" alt-text="Screenshot selecting a team.":::
+
+4. Select **Delete** twice to confirm. Note that this action can't be undone.
+
+## Change the business unit for a team  
+See [Change the business unit for a team](create-edit-business-units.md#change-the-business-unit-for-a-team).
 
 ### See also
-
+ [Change the business unit for a team](create-edit-business-units.md#change-the-business-unit-for-a-team)
  [Create a team template and add to an entity form](create-team-template-add-entity-form.md)   
  [Manage group teams](manage-group-teams.md)   
  [About team templates](../admin/about-team-templates.md)   

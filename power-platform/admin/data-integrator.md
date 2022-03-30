@@ -1,7 +1,7 @@
 ---
 title: Integrate data into Microsoft Dataverse
 description: Integrate data from multiple sources into Microsoft Dataverse
-ms.service: power-platform
+
 ms.topic: how-to
 ms.component: cds
 ms.date: 02/01/2021
@@ -19,6 +19,8 @@ search.app:
 ---
 # Integrate data into Microsoft Dataverse
 
+<!-- Don't upgrade this content. See email. -->
+
 The Data Integrator (for Admins) is a point-to-point integration service used to integrate data into Dataverse. It supports integrating data between Finance and Operations apps and Dataverse. It also supports integrating data into Finance and Operations apps and Dynamics 365 Sales. This service has been generally available since July 2017.   
 
 > [!NOTE]
@@ -35,8 +37,6 @@ The Data Integrator (for Admins) also supports process-based integration scenari
 > ![Prospect to Cash.](media/data-integrator/ProspectToCash631.png "Prospect to Cash")
 
 The Prospect to Cash integration enables sellers to handle and monitor their sales processes with the strengths from Dynamics 365 Sales, while all aspects of fulfillment and invoicing happen using the rich functionality in Finance and Operations. With Microsoft Dynamics 365 Prospect to Cash integration, you get the combined power from both systems. 
-
-See the video: [Prospect to cash integration](https://www.youtube.com/watch?v=AVV9x5x-XCg)
 
 For more information about the Prospect to Cash integration, see the documentation on the [Prospect to Cash solution](/dynamics365/unified-operations/supply-chain/sales-marketing/prospect-to-cash).
 

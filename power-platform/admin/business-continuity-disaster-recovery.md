@@ -4,7 +4,7 @@ description: Microsoft provides business continuity and disaster recovery for pr
 author: MicroSri
 ms.date: 07/19/2021
 ms.reviewer: sericks
-ms.service: "power-platform"
+
 ms.topic: conceptual
 ms.subservice: admin
 ms.author: sriknair

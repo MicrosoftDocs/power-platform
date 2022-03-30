@@ -3,10 +3,9 @@ title: Microsoft Power Fx expression grammar | Microsoft Docs
 description: Annotated grammar for the Microsoft Power Fx language
 author: gregli-msft
 manager: kvivek
-ms.reviewer: nabuthuk
-ms.service: power-platform
+ms.reviewer: jdaly
+ms.date: 03/06/2022
 ms.topic: reference
-ms.date: 02/24/2021
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType: 

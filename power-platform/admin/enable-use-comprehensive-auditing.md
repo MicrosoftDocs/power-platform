@@ -1,10 +1,9 @@
 ---
 title: "Microsoft Dataverse and model-driven apps activity logging  | MicrosoftDocs"
 description: Learn how to enable auditing to be used for reports in the Microsoft 365 Security Compliance Center.
-ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/10/2020
+ms.date: 03/29/2020
 author: tjvass
 ms.subservice: admin
 ms.author: tjvass
@@ -24,7 +23,7 @@ Protecting data, preserving privacy, and complying with regulations such as the 
 This topic covers how you can set customer engagement apps to audit a broad range of data processing activities and use the [Microsoft 365 Security and Compliance Center](https://support.office.com/article/go-to-the-office-365-security-compliance-center-7e696a40-b86b-4a20-afcc-559218b7b1b8?ui=en-US&rs=en-US&ad=US) to review the data in activity reports.
 
 ## Requirements
-- A Microsoft 365 Enterprise [E3](https://products.office.com/business/office-365-enterprise-e3-business-software) or [E5](https://products.office.com/business/office-365-enterprise-e5-business-software) subscription is required to do Activity Logging.
+- At least one user assigned a Microsoft/Office 365 [E1](https://www.microsoft.com/microsoft-365/enterprise/office-365-e1) or greater license.
 - Available for production and not sandbox environments.
 
 ## What events are audited
@@ -127,7 +126,7 @@ The customer engagement apps schema contains fields specific to customer engagem
 
 ## Review your audit data using reports in Microsoft 365 Security and Compliance Center
 
-You can review your audit data in the Microsoft 365 Security and Compliance Center. See [Search the audit log in the compliance Center](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-worldwide).
+When [audit log search](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) is turned on in the Microsoft 365 Security and Compliance Center, user and admin activity from your organization is recorded in the audit log and retained for 90 days. However, your organization might not want to record and retain audit log data. Or you might be using a third-party security information and event management (SIEM) application to access your auditing data. In those cases, a global admin can turn off audit log search in Microsoft 365. For more information, see [Auditing solutions in Microsoft 365](/microsoft-365/compliance/auditing-solutions-overview).
 
 To use the preconfigured reports, go to https://protection.office.com > **Search & investigation** > **Audit log search** and select the **Dynamics 365 activities** tab.
 

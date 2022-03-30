@@ -2,7 +2,7 @@
 title: "Work with fiscal year settings  | MicrosoftDocs"
 description: Work with fiscal year settings
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/17/2021

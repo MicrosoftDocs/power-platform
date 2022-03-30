@@ -1,10 +1,9 @@
 ---
 title: "Audit data and user activity for security and compliance"
 description: "Learn how to use auditing to log changes to records and user access. System admins and customizers can use this feature to meet security and compliance policies."
-ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/17/2021
+ms.date: 02/16/2021
 author: tjvass
 ms.subservice: admin
 ms.author: tjvass
@@ -20,10 +19,7 @@ search.app:
 # Audit data and user activity for security and compliance
 
 The auditing feature logs changes that are made to customer records and user access so you can review the activity later. The auditing feature is designed to meet the auditing, compliance, security, and governance policies of many regulated enterprises.  
-<!-- 
-> [!NOTE]
-> This topic describes the process for enabling and viewing activities for a specific set of entities and attributes. For a auditing at a broader entity level with multiple records, consider using Activity Logging. See [Enable and use Activity Logging](enable-use-comprehensive-auditing.md).
--->
+
  The audit logs help the administrator answer questions such as:  
   
 - Which user was accessing the system and when?  
@@ -69,7 +65,7 @@ This task requires the system administrator or customizer security role or equiv
    |      Setting |     Description    |
    |--------------------|---------------------|
    | Set the retention policy for these logs   | Default: 30 days.   |
-   | Set a custom retention policy | Maximum: 100,000 days  |  
+   | Set a custom retention policy | Maximum: 365,000 days  |  
 
    When new features are deployed, the audit retention period is set to **Forever** for all Dataverse environments with existing audit data. The default audit retention period is 30 days for new environments and existing environments without any audit data. You can also change the audit retention value using the [Dataverse Web API](/powerapps/developer/common-data-service/webapi/overview). 
 
@@ -87,7 +83,6 @@ This task requires the system administrator or customizer security role or equiv
 
 4. Select the entities you want to track. To start or stop auditing on specific entities, select or clear the following check boxes:  
   
-  <!--  **Audit user access**. Tracks when a user accesses customer engagement apps (such as Dynamics 365 Sales and Customer Service), including the user name and time.  -->
    - **Common Entities**. Tracks common entities like Account, Contact, Goal, Product, and User.  
    - **Sales Entities**. Tracks sales-related entities like Competitor, Opportunity, Invoice, Order, and Quote.  
    - **Marketing Entities**. Tracks Campaign entity activity.  

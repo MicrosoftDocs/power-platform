@@ -2,7 +2,7 @@
 title: "Resource overview | MicrosoftDocs"
 description: About resources
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/05/2020

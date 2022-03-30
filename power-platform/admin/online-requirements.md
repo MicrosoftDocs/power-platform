@@ -1,11 +1,10 @@
 ---
-title: "Requirements/supported configurations  | MicrosoftDocs"
-description: Requirements/supported configurations 
+title: "Power Platform URLs and IP address ranges  | MicrosoftDocs"
+description: Provides information about URLs and IP addresses to be added to the allow list to use Power Platform services.
 author: jimholtz
-ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/16/2021
+ms.date: 03/17/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -16,124 +15,78 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Requirements/supported configurations  
+# Power Platform URLs and IP address ranges
 
-[Model-driven Power Apps](/powerapps/maker/model-driven-apps/model-driven-app-overview) and customer engagement apps (such as [Dynamics 365 Sales](/dynamics365/sales-professional/help-hub), [Dynamics 365 Customer Service](/dynamics365/customer-service/help-hub), and [Dynamics 365 Marketing](/dynamics365/marketing/help-hub) and [Dynamics 365 Project Operations](/dynamics365/project-operations)), give you the following options to access data:  
-  
-- Web browser. No need to install anything to run customer engagement apps from a computer running a supported web browser.  
+Microsoft Power Platform requires connectivity to the internet. The endpoints listed in this article should be reachable for customers using the Power Platform services.
 
-- [Dynamics 365 App for Outlook](/dynamics365/outlook-app/overview). An [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] app which, lets you manage your app data right within [!INCLUDE[pn_MS_Outlook_Full](../includes/pn-ms-outlook-full.md)].  
+## Internet URLs to allow
 
-- [Power Apps mobile](/powerapps/mobile/run-powerapps-on-mobile). Use the Power Apps mobile app to run model-driven apps on your mobile device. 
-  
-- [Dynamics 365 for phones and Dynamics 365 for tablets](/dynamics365/mobile-app/overview). Use the Dynamics 365 for phones or Dynamics 365 for tablets app mobile app to run customer engagement apps (such as Dynamics 365 Sales, Dynamics 365 Customer Service, and Dynamics 365 Marketing), built on Microsoft Dataverse on your mobile device.
-  
-## Web browser requirements  
- You use a common web browser, such as [!INCLUDE[pn_Internet_Explorer](../includes/pn-internet-explorer.md)], [!INCLUDE[tn_Mozilla_Firefox](../includes/tn-mozilla-firefox.md)], [!INCLUDE[tn_Google_Chrome](../includes/tn-google-chrome.md)] or [!INCLUDE[tn_Apple_Safari](../includes/tn-apple-safari.md)] to view, add, or edit information stored in your organization’s  database. For more information about the supported web browsers and hardware requirements, see [Web application requirements for Microsoft Dynamics 365 apps](web-application-requirements.md).  
+Ensure that you have added the required URLs to the allow list to ensure communication through firewalls and other security mechanisms. If you cannot access a service or specific URLs fail to load, a proxy or firewall might be configured to prevent you from accessing server resources. Review your proxy settings and ensure that you add all the relevant URLs to the allowed list as per your service.
 
-## Mobile device requirements  
- Work with model-driven Power Apps or customer engagement apps on your mobile device. For supported device and requirements, see:
- 
- - [Power Apps mobile](/powerapps/mobile/run-powerapps-on-mobile#supported-devices)
- - [Dynamics 365 for phones and Dynamics 365 for tablets](/dynamics365/mobile-app/support-phones-tablets)
+### URLs for Power Platform services
 
-## Microsoft Office requirements  
- Customer engagement apps leverage the capabilities of on-premises versions of [!INCLUDE[pn_MS_Office](../includes/pn-ms-office.md)] or [!INCLUDE[pn_MS_Office_365](../includes/pn-ms-office-365.md)] and integrates with [!INCLUDE[pn_MS_Word_Full](../includes/pn-ms-word-full.md)] and [!INCLUDE[pn_MS_Excel_Full](../includes/pn-ms-excel-full.md)]. For more information about the supported versions of [!INCLUDE[pn_MS_Office](../includes/pn-ms-office.md)], see [Supported versions of Office](web-application-requirements.md#supported-versions-of-office).  
-  
- [!INCLUDE[cc_Office365PlanRequirement](../includes/cc-office365planrequirement.md)]  
+Add the following URLs to the allow list.
 
-## IP addresses and URLs
-If certain IP address ranges or individual IP addresses are blocked in the environment, users may not be able to reach Microsoft Dynamics 365 environments. Blocked IPs can also impact connecting Dynamics 365 apps to [Microsoft Exchange Server (on-premises)](connect-exchange-server-on-premises.md). See the following:
+|Service|URLs|
+|--|--|
+|Power Apps|- [Public cloud](/powerapps/maker/canvas-apps/limits-and-config#required-services)<br/>- [Government cloud](powerapps-us-government.md#power-apps-us-government-service-urls)|
+|Power Automate| - [Public cloud](/power-automate/ip-address-configuration#required-services)<br/>- [Government cloud](/power-automate/us-govt#power-automate-us-government-service-urls)|
+|Power BI|- [Public cloud](/power-bi/admin/power-bi-allow-list-urls)<br/>- [Government cloud](/power-bi/admin/service-govus-overview#allow-connections-to-power-bi)|
+|Power Virtual Agents|- [Public cloud](/power-virtual-agents/requirements-quotas#required-services)<br/>- [Government cloud](/power-virtual-agents/requirements-licensing-gcc#power-virtual-agents-us-government-service-urls)
+
+> [!IMPORTANT]
+> If you are a customer in China and want to access Power Platform services operated by a local company that stores your data within China, go to [Power Platform and Dynamics 365 apps - operated by 21Vianet in China](about-microsoft-cloud-china.md) 
+
+### URLs for Dynamics 365 services
+
+Add the following URLs to the allow list to use Dynamics 365 apps such as Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, and Dynamics 365 Marketing.
+
+|  Endpoint URL | Justification  |
+|---|---|
+| http://login.microsoftonline-p.com  | Required for Microsoft Cloud Authentication. Includes business-to-consumer (B2C) and guest scenarios.   |
+| https://login.live.com  |  |
+| https://secure.aadcdn.microsoftonline-p.com  |   |
+| https://auth.gfx.ms  |   |
+| https://*.windows.net  |    |
+| http://*.passport.net  |    |
+| https://*.crm#.dynamics.com and http://*.crm#.dynamics.com | Required for Dynamics 365 and Dataverse environments access. Includes integration and static Content Delivery Network (CDN) content endpoints. <br /><br />Replace # in http://*.crm#.dynamics.com and https://*.crm#.dynamics.com with your region's number: <ul><li>Asia/Pacific: 5</li><li>Canada: 3 </li><li>Europe, Africa, and Middle East: 15 and 4</li><li>France: 12</li><li>Germany: 16</li><li>India: 8</li><li>Japan: 7</li><li>North America: no number</li><li>Oceania: 6</li><li>South Africa: 14</li><li>South America: 2</li><li>Switzerland: 17</li><li>UAE: 15</li><li>United Kingdom: 11</li><li>Dynamics 365 US Government: 9</li>   |
+| https://www.crmdynint.com  |    |
+| https://*.azureedge.net  |    |
+| https://*.microsoftonline.com  | Required for authentication and Microsoft 365 services such as the Microsoft 365 admin center.   |
+| https://go.microsoft.com  | Required for product documentation and context-sensitive help pages.    |
+| https://urs.microsoft.com  |  Required for Microsoft defender SmartScreen filtering.    |
+| http://crl.microsoft.com/pki/crl/products/microsoftrootcert.crl  | Required for Certification Revocation List checks.    |
+| https://dynamics.microsoft.com |    |
+| https://*.api.powerplatform.com | Required for Power Platform API connectivity used internally by Microsoft products and admin automation scenarios as [documented here](programmability-extensibility-overview.md).
+
+> [!IMPORTANT]
+> - If you are Government cloud customer, go to [Dynamics 365 US Government URLs](microsoft-dynamics-365-government.md#dynamics-365-us-government-urls) 
+> - If you are a customer in China and want to access Dynamics 365 services operated by a local company that stores your data within China, go to [Power Platform and Dynamics 365 apps - operated by 21Vianet in China](about-microsoft-cloud-china.md)
+
+
+## IP addresses required
+
+All IP addresses for various services for public and government clouds are available in these downloadable JSON files:
 
 - [Azure IP Ranges and Service Tags – Public Cloud](https://www.microsoft.com/download/details.aspx?id=56519)
 - [Azure IP Ranges and Service Tags – US Government Cloud](https://www.microsoft.com/download/details.aspx?id=57063)
 - [Azure IP Ranges and Service Tags – China Cloud](https://www.microsoft.com/download/details.aspx?id=57062)
 - [Azure IP Ranges and Service Tags – Germany Cloud](https://www.microsoft.com/download/details.aspx?id=57064)
 
+The IP address values in these JSON files are grouped by service tags that define the service they're applicable for. 
+
+For Power Platform and Dynamics 365 services, you must add the IP address values specified under the `AzureCloud` service tag. The service tags also have a regional scope to define the IP addresses required per Azure datacenter region. For example, to find out the required IP address values for accessing services in the *Australia* region, use the [Azure IP Ranges and Service Tags – Public Cloud](https://www.microsoft.com/download/details.aspx?id=56519) file, and search for `AzureCloud.Australia`.
+
+:::image type="content" source="media/ip-example.png" alt-text="PowerPlatformInfra service tag for Power Platform IPs":::  
+
+If you are using *Power Platform connectors*, see the complete list of required IP addresses in [Connectors docs](/connectors/common/outbound-ip-addresses#power-platform).
+
 > [!NOTE]
-> You can search the Azure IP Ranges json file for the AzureCloud service tag for your region. For example, for Japan you'd search for "azurecloud.japaneast" and "azurecloud.japanwest" to find the list of IP addresses to allow.
->
-> [!div class="mx-imgBorder"] 
-> ![AzureCloud service tag for region IPs.](media/example-azurecloud-tag.png "AzureCloud service tag for region IPs")
+> Blocked IPs can also impact connecting Dynamics 365 apps to [Microsoft Exchange Server (on-premises)](connect-exchange-server-on-premises.md). 
 
-Dynamics 365 apps use several Microsoft URLs to help provide security, services, and features. Blocking any of the required URLs will cause apps in Dynamics 365 to operate incorrectly or not at all. See: [Troubleshooting: Unblock required URLs](troubleshooting-unblock-urls-required.md).
-  
-## Internet accessible URLs required
 
-If you cannot access Microsoft Dynamics 365 apps, or specific URLs fail to load when you use Microsoft Dynamics 365, a proxy or firewall may be configured to prevent  Dynamics 365 URLs from accessing server resources.
-
-Add the following URLs to the approved list to allow traffic to proceed to these URLs.
-
-<table>
-<thead>
-  <tr>
-    <th>URL</th>
-    <th>Justification</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td>http://login.microsoftonline-p.com </td>
-    <td rowspan="6">Required for Microsoft Cloud Authentication. Includes business-to-consumer (B2C) and guest scenarios. </td>
-  </tr>
-  <tr>
-    <td>https://login.live.com </td>
-  </tr>
-  <tr>
-    <td>https://secure.aadcdn.microsoftonline-p.com    </td>
-  </tr>
-  <tr>
-    <td>https://auth.gfx.ms  </td>
-  </tr>
-  <tr>
-    <td>https://*.windows.net  </td>
-  </tr>
-  <tr>
-    <td>http://*.passport.net </td>
-  </tr>
-  <tr>
-    <td>http://*.crm#.dynamics.com </td>
-    <td rowspan="5">Required for Dynamics 365 and Dataverse environments access. Includes integration and static Content Delivery Network (CDN) content endpoints. <br /><br />Replace # in http://*.crm#.dynamics.com and https://*.crm#.dynamics.com with your region's number: <ul><li>Asia/Pacific: 5</li><li>Canada: 3 </li><li>Europe, Africa, and Middle East: 15 and 4</li><li>France: 12</li><li>Germany: 16</li><li>India: 8</li><li>Japan: 7</li><li>North America: no number</li><li>Oceania: 6</li><li>South Africa: 14</li><li>South America: 2</li><li>Switzerland: 17</li><li>UAE: 15</li><li>United Kingdom: 11</li><li>Dynamics 365 US Government: 9</li></ul></td>
-  </tr>
-  <tr>
-    <td>https://*.crm#.dynamics.com </td>
-  </tr>
-  <tr>
-    <td>https://www.crmdynint.com  </td>
-  </tr>
-  <tr>
-    <td>https://*.azureedge.net  </td>
-  </tr>
-  <tr>
-    <td>https://*.microsoftonline.com  </td>
-    <td>Required for authentication and Microsoft 365 services such as the Microsoft 365 admin center.</td>
-  </tr>
-  <tr>
-    <td>https://go.microsoft.com  </td>
-    <td>Required for product documentation and context-sensitive help pages.   </td>
-  </tr>
-  <tr>
-    <td>https://urs.microsoft.com   </td>
-    <td>Required for Microsoft defender SmartScreen filtering.   </td>
-  </tr>
-  <tr>
-    <td>http://crl.microsoft.com/pki/crl/products/microsoftrootcert.crl  </td>
-    <td>Required for Certification Revocation List checks.    </td>
-  </tr>
-  <tr>
-    <td>https://dynamics.microsoft.com  </td>
-    <td>  </td>
-  </tr>
-</tbody>
-</table>
 
 ## Ports
-Dataverse exposes ports *18085* and *8085* to perform maintenance operations for customer databases.  The maintenance operations are executed to ensure that Microsoft Dynamics 365 environments are performing at optimal performance standards.  These maintenance operations include but are not limited to: 
-
-- Database Update Operation
-- App Update Operation
-
-These maintenance operations are executed by the [Asynchronous Service](/powerapps/developer/data-platform/asynchronous-service).
 
 Dataverse exposes ports *1433* and *5558* to expose the [Dataverse Tabular Data Stream](/openspecs/windows_protocols/ms-tds/893fcc7e-8a39-4b3c-815a-773b7b982c50). 
 

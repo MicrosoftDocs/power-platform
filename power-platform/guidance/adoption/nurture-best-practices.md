@@ -3,7 +3,7 @@ title: "Microsoft Power Platform nurture best practices | MicrosoftDocs"
 description: "Microsoft Power Platform adoption practices provide admin and governance, nurture and strategy and vision best practices."
 author: manuelap-msft
 manager: devkeydet
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/10/2020
@@ -60,5 +60,7 @@ In the end, nurture means connecting the dots and creating a whole that is bette
    :::column-end:::
 :::row-end:::
 
+> [!TIP]
+> In addition to the material found in the section of the documentation, the [Microsoft Power Platform Adoption Workbook](https://aka.ms/powerplatformadoptionworkbook) contains practical step-by-step guidance for nurturing your Power Platform community. You'll find this workbook and other resources on [the Microsoft Power Platform Adoption website](https://adoption.microsoft.com/powerplatform).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

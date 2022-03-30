@@ -1,13 +1,13 @@
 ---
 title: "Connect to Exchange Online | MicrosoftDocs"
 description: Connect to Exchange Online
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/11/2021
-author: revachauhan
+ms.date: 12/09/2021
+author: mduelae
 ms.subservice: admin
-ms.author: rechauha
+ms.author: mkaur
 ms.reviewer: mkaur
 search.audienceType: 
   - admin
@@ -119,7 +119,6 @@ In addition to administrator permissions, you must have Read and Write privilege
   
 Choose *one* of the following methods: set mailboxes to the default profile, or edit mailboxes to set profile and delivery methods.
 
-<!--markdownlint-disable MD036--> 
 **To set mailboxes to the default profile**
 
 1. Do one of the following: 
@@ -165,15 +164,25 @@ To approve emails for customer engagement apps, a user requires:
 - The **Approve Email Addresses for Users or Queues** privilege. 
 - The permissions as described in the **Permissions model** table later in this topic.
 
+### Approve your own user mailbox
+
+A Dynamics 365 user can approve their own user mailbox if all of these conditions are met: 
+
+- Their UPN matches the email address on the mailbox.
+
+- The user has **Approve Email Addresses for Users or Queues** privilege.
+
+- The mailbox is not a queue mailbox.
+
+
 ### Require admin approval?
 
-Decide which approach you want your organization to follow for mailbox approval.<!--note from editor: Please verify the long alt text.-->
+Decide which approach you want your organization to follow for mailbox approval.
 
 :::image type="complex" source="media/approval-flow-chart.png" alt-text="Flowchart for deciding on your mailbox approval approach.":::
    Flowchart with the starting condition "You must be an Office 365 Global admin + Dynamics 365 System admin OR an Exchange admin + Dynamics 365 System admin." The first decision point is "Do you want to require mailbox approval?" The "No" path leads to "See 'Remove requirement to approve mailboxes'". The "Yes" path leads to "See Permissions model."
 :::image-end:::
 
-<!--![Decide on mailbox approval approach.](media/approval-flow-chart.png "Decide on mailbox approval approach")-->
 
 > [!NOTE]
 > We're planning to revise the mailbox approval process with scenarios that don't require global admin approval. We'll update this documentation when that becomes available.
@@ -324,9 +333,9 @@ To see alerts for an individual mailbox, open the mailbox, and then under **Comm
   
 The result of the email configuration test is displayed in the **Incoming Email Status**, **Outgoing Email Status**, and **Appointments, Contacts, and Tasks Status** columns of a mailbox record. An alert is also generated when the configuration is successfully completed for a mailbox. This alert is shown to the mailbox owner.  
   
-You can find information about recurring issues and other troubleshooting information in [Blog: Test and Enable Mailboxes in Microsoft Dynamics CRM 2015](https://cloudblogs.microsoft.com/dynamics365/no-audience/2015/08/31/test-and-enable-mailboxes-in-microsoft-dynamics-crm-2015/)<!--note from editor: Edit okay? The other link just went to the Dev Blogs home page.--> and [Troubleshooting and monitoring server-side synchronization](../admin/troubleshooting-monitoring-server-side-synchronization.md).  
+You can find information about recurring issues and other troubleshooting information in [Blog: Test and Enable Mailboxes in Microsoft Dynamics CRM 2015](https://cloudblogs.microsoft.com/dynamics365/no-audience/2015/08/31/test-and-enable-mailboxes-in-microsoft-dynamics-crm-2015/) and [Troubleshooting and monitoring server-side synchronization](../admin/troubleshooting-monitoring-server-side-synchronization.md).  
   
-Make sure you've got a good connection to [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] by running the [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/). For information about what tests to run, see [Test mail flow with the Remote Connectivity Analyzer](https://technet.microsoft.com/library/dn305950\(v=exchg.150\).aspx).<!--note from editor: This is repeated from earlier in the topic, is that okay? -->
+Make sure you've got a good connection to [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)] by running the [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/). For information about what tests to run, see [Test mail flow with the Remote Connectivity Analyzer](https://technet.microsoft.com/library/dn305950\(v=exchg.150\).aspx).
   
 > [!TIP]
 >  If you're unable to synchronize contacts, appointments, and tasks for a mailbox, you might want to select the **Sync items with Exchange from this org only, even if Exchange was set to sync with a different org** checkbox. More information: [When would I want to use this check box?](when-would-want-use-check-box.md)
