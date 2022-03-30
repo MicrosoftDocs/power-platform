@@ -1,10 +1,9 @@
 ---
-title: "Preview: Manage your maintenance window  | MicrosoftDocs"
+title: "Manage your maintenance window  | MicrosoftDocs"
 description: How to manage when you'll receive service updates.
 author: samathur
 ms.author: samathur
 ms.reviewer: jimholtz
-
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 10/28/2021

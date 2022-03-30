@@ -48,7 +48,7 @@ Here's the decision tree.
 - If an instant flow has premium connectors, every user who runs the flow needs either a Power Automate premium license, a Power Apps premium license, or a Dynamics license. In such cases, instead of licensing every user, it is simpler to license the flow with a per flow license. One exception for this rule is the http trigger which runs in the context of the owner, even if it's being used in an instant flow.
 - If a parent flow calls a child flow, child flow leverages the context from parent flow. For example, if the parent flow is an automated flow, and the child flow uses premium connectors and the child flow doesn't have per flow license, it will use the parent flow owner's license. If the child flow has a per flow license, it uses the per flow license and not the parent flow's license. During the [transition period](./types.md#transition-period), there is a slight difference in this behavior. The child flow owner's license will be used unless the child flow has a per flow license but after the transition period ends, the child flow owner's license will be ignored and only the parent flow owner's license is used unless the child flow has a per flow license.
 
-A common question is, "If a flow is triggered when a SharePoint list item is updated, and many users interact with that list, will there be a cost for each user?" The answer is if the flow does not use a premium connector such as calling Dataverse in the full production environment (not the Microsoft Teams environment), having an Office 365 license is enough. If the flow uses premium connectors, since the trigger is an automated trigger, only the owner needs a premium license.
+A common question is, "If a flow is triggered when a list created using Microsoft Lists item is updated, and many users interact with that list, will there be a cost for each user?" The answer is if the flow does not use a premium connector such as calling Dataverse in the full production environment (not the Microsoft Teams environment), having an Office 365 license is enough. If the flow uses premium connectors, since the trigger is an automated trigger, only the owner needs a premium license.
 
 You can find out what type (automated/manual/scheduled) of you have have, select a flow to see its 'type' in the details.
 
@@ -277,9 +277,9 @@ It is okay, since you have a per user license, all your flows use capacity from 
 
 The approvals connector is a standard connector. Users who respond to approval requests aren't considered to be the invoking users. Their Office 365 license is enough and they don't need a premium license.
 
-### **Automated flow** - User builds a flow that triggers when an item is added to a SharePoint list and updates a SQL db (Premium). Multiple people can add items to the SharePoint list.
+### **Automated flow** - User builds a flow that triggers when an item is added to a list created using Microsoft Lists and updates a SQL db (Premium). Multiple people can add items to the list created using Microsoft Lists.
 
-Flow runs in the context of owner's license for Automated/Scheduled flows and invoking user's license for Instant/Power Apps/Dataverse triggered flows. So, the person who added the item to SharePoint list do not need a premium license.
+Flow runs in the context of owner's license for Automated/Scheduled flows and invoking user's license for Instant/Power Apps/Dataverse triggered flows. So, the person who added the item to list created using Microsoft Lists do not need a premium license.
 
 ## Instant flows
 
@@ -292,8 +292,6 @@ Everyone who invokes the flow need a premium license because it is an instant fl
 ### I have a child flow that has premium connectors and is invoked by multiple parent flows that don't have premium connectors. Do all parent flows need to be licensed, or is licensing the child flow enough?
 
 You can either license the parent flow or license the child flow with a per flow license. However, if the parent flow also has a premium connector, the parent flow owner must have a premium license.
-
-<!-- ### **Automated flow with Dataverse trigger** – Dataverse triggers allow flows to use the invoker's connection. Since it is an automated flow, flow only looks for creator/owner's license -->
 
 ## Shared flows
 

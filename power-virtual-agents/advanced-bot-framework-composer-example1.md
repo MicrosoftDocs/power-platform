@@ -73,7 +73,7 @@ In Composer, go to the **Bot Responses** tab and, in the **Meals** section, sele
 
 :::image type="content" source="media\Composer_Example1\E1_Meals_showCode.png" alt-text="Composer show code button.":::
 
-In the code window, copy and paste the following bot responses that you'll use in your Adaptive Card:
+In the code window, copy and paste the following bot response. Then replace the three example image URLs with your own.
 
 ```lg
 # Chicken()
@@ -86,11 +86,13 @@ In the code window, copy and paste the following bot responses that you'll use i
 -Tofu
 
 # SteakImageURL()
--https://contososcubademo.azurewebsites.net/assets/steak.jpg
+-https://www.example.com/steak.jpg
+
 # ChickenImageURL()
--https://contososcubademo.azurewebsites.net/assets/chicken.jpg
+-https://www.example.com/chicken.jpg
+
 # TofuImageURL()
--https://contososcubademo.azurewebsites.net/assets/tofu.jpg
+-https://www.example.com/tofu.jpg
 
 ```
 
