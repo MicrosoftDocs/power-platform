@@ -1,13 +1,16 @@
 ---
 title: Requests limits and allocations | Microsoft Docs
 description: Requests limits and allocations
-author: jimholtz
+author: cpdSeattle
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/14/2022
+ms.date: 03/30/2022
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: camdebay 
 ms.reviewer: jimholtz
+contributors: 
+  - viveke 
+  - snandi 
 search.audienceType: 
   - admin
 search.app:
@@ -144,7 +147,7 @@ To view the consumption of Power Platform requests for licensed users, non-licen
 
 These reports are currently in preview. During the preview the licensed user report will show correct entitlements for users licensed via the Power Apps Per App license or Power Apps Per App pay-as-you-go meter. Entitlements for such users will shown as 0 when in fact they should be shown as 6000 (requests per 24h period) as outlined above. 
 
-###Licensed User report
+### Licensed User report
 
 The [Licensed User](api-request-limits-allocations.md#licensed-user-request-limits) report shows the Power Platform request usage per user per day and the users entitled quantity. The downloadable report contains the following fields: 
 
@@ -163,9 +166,9 @@ The [Licensed User](api-request-limits-allocations.md#licensed-user-request-limi
 
 Here is a sample of a detailed usage report:
 
-:::image type="content" source="media/ppr-licensed-user-report.png" alt-text="Image showing an example of the licensed user report.":::
+:::image type="content" source="media/ppr-licensed-user-report.png" alt-text="Image showing an example of the licensed user report." lightbox="media/ppr-licensed-user-report.png":::
 
-###Non-licensed User report
+### Non-licensed User report
 
 The [Non-licensed User](api-request-limits-allocations.md#non-licensed-user-request-limits) report shows the Power Platform request usage per day for non-licensed users and the total entitlement for non-licensed users for that tenant. The downloadable report contains the following fields:
 
@@ -185,9 +188,9 @@ The [Non-licensed User](api-request-limits-allocations.md#non-licensed-user-requ
 
 Here is a sample of a detailed usage report:
 
-:::image type="content" source="media/non-licensed-user-report.png" alt-text="Image showing an example of the non-licensed user report.":::
+:::image type="content" source="media/non-licensed-user-report.png" alt-text="Image showing an example of the non-licensed user report." lightbox="media/non-licensed-user-report.png":::
 
-###Per Flow report
+### Per Flow report
 
 The Per Flow Licensed Flows report  downloadable report contains the following fields:
 
