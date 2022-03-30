@@ -144,6 +144,8 @@ To view the consumption of Power Platform requests for licensed users, non-licen
 
 These reports are currently in preview. During the preview the licensed user report will show correct entitlements for users licensed via the Power Apps Per App license or Power Apps Per App pay-as-you-go meter. Entitlements for such users will shown as 0 when in fact they should be shown as 6000 (requests per 24h period) as outlined above. 
 
+###Licensed User report
+
 The [Licensed User](api-request-limits-allocations.md#licensed-user-request-limits) report shows the Power Platform request usage per user per day and the users entitled quantity. The downloadable report contains the following fields: 
 
 | Field                                                    | Description                              |
@@ -152,8 +154,8 @@ The [Licensed User](api-request-limits-allocations.md#licensed-user-request-limi
 | Environment Name | The display name of environment.                         |
 | Caller ID                              | The unique identifier of the calling identity which maps to Active Directory ID. This can be null or empty.    |
 | Caller Type | The type of caller identity. Applicable values for licensed user report is User. |
-| Usage Datetime | The date and time  of when the usage was captured. | 
-| Entitled quantity | The value of any Power Platform request limits for the user. | 
+| Usage Datetime | The date and time of when the usage was captured (UTC). | 
+| Entitled quantity | The total of any Power Platform request limits for the user. | 
 | Total consumed quantity | The total usage across all the types of Requests (Dataverse, Power Apps, and Power Automate). |
 | Dataverse Requests | Number of Power Platform requests originating from Dataverse. | 
 | Power Automate Requests | Number of Power Platform requests originating from Power Automate. | 
@@ -163,11 +165,13 @@ Here is a sample of a detailed usage report:
 
 :::image type="content" source="media/ppr-licensed-user-report.png" alt-text="Image showing an example of the licensed user report.":::
 
+###Non-licensed User report
+
 The [Non-licensed User](api-request-limits-allocations.md#non-licensed-user-request-limits) report shows the Power Platform request usage per day for non-licensed users and the total entitlement for non-licensed users for that tenant. The downloadable report contains the following fields:
 
 | Field	| Description | 
 |-----------------------------------------------------------------|-----------------------------------------------------------------------------------------|
-| Power platform request entitlement for this tenant	| The total entitlement for non-licensed power platform requests for this tenant. |
+| Power platform request entitlement for this tenant	| The total daily entitlement for non-licensed power platform requests for this tenant. |
 | Environment ID	| The unique Power Platform environment identifier. |
 | Environment Name	| The display name of environment. |
 | Caller ID	| The unique identifier of the calling identity. This can be null or empty. |
@@ -176,12 +180,14 @@ The [Non-licensed User](api-request-limits-allocations.md#non-licensed-user-requ
 | Resource ID	| The unique resource identifier. Based on the Resource Type, this could be a Power App ID, Dataverse Organization ID, or Power Automate Flow ID. This can be null or empty. |
 | Meter Category	| The top level meter in this case Power Platform request.    |
 | Meter Subcategory  | 	The detailed classification of what generated the request. This can be Dataverse, Power Apps, or Power Automate. |
-| Usage Datetime | 	The date and time of when the usage was captured. |
+| Usage Datetime | 	The date and time of when the usage was captured (UTC). |
 | Consumed Quantity | 	Usage of Power Platform requests.  |
 
 Here is a sample of a detailed usage report:
 
 :::image type="content" source="media/non-licensed-user-report.png" alt-text="Image showing an example of the non-licensed user report.":::
+
+###Per Flow report
 
 The Per Flow Licensed Flows report  downloadable report contains the following fields:
 
@@ -192,8 +198,8 @@ The Per Flow Licensed Flows report  downloadable report contains the following f
 | Environment Region	| Not available during preview. |
 | Caller ID	| The unique identifier of the Flow. This can be null or empty.  |
 | Caller Type	| The type of caller identity. Applicable values are Flow. |
-| Usage Datetime	| The date and time of when the usage was captured. |
-| Entitled Quantity	| The value of any free entitlement for the flow.  |
+| Usage Datetime	| The date and time of when the usage was captured (UTC). |
+| Entitled Quantity	| The value of any included entitlement for the flow.  |
 | Consumed Quantity	| Usage of Power Platform requests.  |
 
 Here is a sample of a detailed usage report:
@@ -204,15 +210,11 @@ Here is a sample of a detailed usage report:
 
 ### What tools can I use to monitor and analyze Power Platform requests across the platform?
 
-Reporting for Power Platform Request usage will be in the Power Platform admin center when generally available, expected in the first quarter of calendar 2022. This reporting will initially be a downloadable Excel format with daily reporting of request usage versus limits.
-
-Until those reports are available, the Power Platform admin center contains [reports on Dataverse API requests](analytics-common-data-service.md). This reporting accounts for interactive and non-interactive traffic. This helps you to quickly view adoption and user metrics for your organization. If your apps or flows primarily use Dataverse, then these reports can serve as good approximations of the total usage of your solutions.
-
-Additionally, for Power Automate usage specifically, you can see the action usage for a given flow by selecting the **Analytics** action from the flow properties page, and this works across all types of actions.
+Reporting for Power Platform Request usage in preview is available now in the Power Platform admin center.
 
 ### What are the timelines for Power Platform Request limits?
 
-The concept of limits was first introduced in late 2019 and documented limits were substantially increased in late 2021. Generally available reporting for Power Platform Requests is expected in the first quarter of calendar 2022. Any potential high usage enforcement wouldn't start until six months after reports have been made available. Assignment of add-on capacity packs should be aligned to high usage enforcement.
+The concept of limits was first introduced in late 2019 and documented limits were substantially increased in late 2021. Preview reporting for Power Platform Requests became available in April 2022. Any potential high usage enforcement wouldn't start until six months after reports have been made generally available.
 
 ### What account's limits are used for classic workflows or Power Automate flows?
 
