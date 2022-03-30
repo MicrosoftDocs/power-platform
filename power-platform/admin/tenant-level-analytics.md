@@ -1,5 +1,5 @@
 ---
-title: "Tenant-level analytics (preview)" 
+title: "Tenant-level analytics (default)" 
 description: View tenant-level analytics in a variety of reports
 ms.component: pa-admin
 ms.topic: conceptual
@@ -17,7 +17,7 @@ search.app:
   - Flow
 ---
 
-# Tenant-level analytics (preview)
+# Tenant-level analytics (default)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
