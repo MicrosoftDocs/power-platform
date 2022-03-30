@@ -2,7 +2,6 @@
 title: "About Microsoft Cloud Canada  | MicrosoftDocs"
 description: About Microsoft Cloud Canada
 author: jimholtz
-
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/23/2022
@@ -22,7 +21,7 @@ search.app:
 ## New Microsoft Cloud Services in Canada  
   
 ### What is Microsoft announcing?  
- We’re announcing the general availability of Microsoft Power Platform and Dynamics 365apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), served from new datacenter regions in Toronto and Quebec City, joining [!INCLUDE[pn_Windows_Azure](../includes/pn-windows-azure.md)] and [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] in providing the trusted [!INCLUDE[pn_microsoft_cloud](../includes/pn-microsoft-cloud.md)] in Canada.  
+ We’re announcing the general availability of Microsoft Power Platform and Dynamics 365 apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), served from new datacenter regions in Toronto and Quebec City, joining [!INCLUDE[pn_Windows_Azure](../includes/pn-windows-azure.md)] and [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] in providing the trusted [!INCLUDE[pn_microsoft_cloud](../includes/pn-microsoft-cloud.md)] in Canada.  
   
  Built on foundational principles of security, privacy and control, compliance, and transparency, the [!INCLUDE[pn_microsoft_cloud](../includes/pn-microsoft-cloud.md)] delivers trusted cloud services to enable people and organizations to achieve more. Providing flexible platform and productivity solutions - [!INCLUDE[pn_Windows_Azure](../includes/pn-windows-azure.md)], [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)], and now Power Platform and Dynamics 365 apps - the local [!INCLUDE[pn_microsoft_cloud](../includes/pn-microsoft-cloud.md)] is designed to fuel innovation and accelerate Canada’s digital transformation.  
   
