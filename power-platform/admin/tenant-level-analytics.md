@@ -32,11 +32,6 @@ To access these reports, sign in to the Power Platform admin center and select *
 
 :::image type="content" source="media/select-tenant-level-analytics.png" alt-text="Select tenant level analytics.":::
 
-> [!IMPORTANT]
-> - This is a preview feature.
-> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
-> - Expect significant changes to preview features and documentation.
-
 ## Who can view these reports?
 
 Admins with the following roles can view the reports in Power Apps analytics:
