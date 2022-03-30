@@ -1,5 +1,5 @@
 ---
-title: "Create custom dashboards with Power Platform inventory and usage data"
+title: "Create custom dashboards with Power Platform inventory and usage data (preview)"
 description: Use Power Apps exported data with other line-of-business scenarios and display data insights at tenant and environment levels across business units.
 ms.component: pa-admin
 ms.topic: conceptual
@@ -16,7 +16,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Preview: Create custom dashboards by using Power Platform inventory and usage data 
+# Preview: Create custom dashboards by using Power Platform inventory and usage data (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
