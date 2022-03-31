@@ -35,7 +35,7 @@ If you don't see Power Platform API showing up in the list when searching by GUI
 Install-Module AzureAD
 
 Connect-AzureAD
-New-AzureADServicePrincipal -AppId 8578e004-a5c6-46e7-913e-12f58912df43 - DisplayName "Power Platform API"
+New-AzureADServicePrincipal -AppId 8578e004-a5c6-46e7-913e-12f58912df43 -DisplayName "Power Platform API"
 ```
 
 From here, you must select the permissions you require. These are grouped by [**Namespaces** ](/rest/api/power-platform).  Within a namespace, you will see resource types and actions for example *AppManagement.ApplicationPackages.Read* which will give read permissions for application packages.  For more details, see our [Permission reference](programmability-permission-reference.md) article.
