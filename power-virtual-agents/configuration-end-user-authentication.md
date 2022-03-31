@@ -1,9 +1,8 @@
 ---
-title: "Configure user authentication (contains video)"
-description: "Configure authentication with your identity provider to enable users to sign in when having a bot conversation."
+title: Configure user authentication
+description: Configure authentication with your identity provider to enable users to sign in when having a bot conversation.
 keywords: "Authentication, IdP, PVA, AAD"
-ms.date: 01/25/2022
-
+ms.date: 04/01/2022
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -14,26 +13,27 @@ ms.collection: virtual-agent
 ---
 
 # Configure end-user authentication in Power Virtual Agents
+<!-- Please change all references to "end-user" to "user" (or when appropriate, "customer") IAW Microsoft Style Guide. -->
 
-Select the version of Power Virtual Agents you're using here:
+Select the version of Power Virtual Agents you're using:
 
 > [!div class="op_single_selector"]
 >
 > - [Power Virtual Agents web app](configuration-end-user-authentication.md)
 > - [Power Virtual Agents app in Microsoft Teams](teams/configuration-end-user-authentication-teams.md)
 
-You can configure a Power Virtual Agents bot to provide authentication capabilities, so users can sign in with an Azure Active Directory (AAD), or any [OAuth2 identity provider](/azure/active-directory/develop/v2-oauth2-auth-code-flow), such as a Microsoft account, or Facebook.
+Authentication allows users to sign in, giving your bot access to a restricted resource or information. Users can sign in with an Azure Active Directory (Azure AD) account, or with any [OAuth2 identity provider](/azure/active-directory/develop/v2-oauth2-auth-code-flow) such as Google or Facebook.
 
-You can [add user authentication to a Power Virtual Agents bot](advanced-end-user-authentication.md) when editing a topic.
+You can [add user authentication to your bot](advanced-end-user-authentication.md) when you edit a topic.
 
 Power Virtual Agents supports the following authentication providers:
 
 - Azure Active Directory v1
 - Azure Active Directory v2
-- Any identity provider that is compliant with the [OAuth2 standard](/azure/active-directory/develop/v2-oauth2-auth-code-flow).
+- Any identity provider that complies with the [OAuth2 standard](/azure/active-directory/develop/v2-oauth2-auth-code-flow).
 
 > [!IMPORTANT]
-> Changes to the authentication configuration will only take effect after you publish your bot. Make sure to plan ahead before making authentication changes to your bot.
+> Changes to the authentication configuration will only take effect after you publish your bot. Make sure to plan ahead before you make authentication changes to your bot.
 
 >
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4n4G2]
@@ -42,16 +42,18 @@ Power Virtual Agents supports the following authentication providers:
 ## Prerequisites
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+<!-- This isn't a great include file. The link text is "Learn more about what you can do with Power Virtual Agents," nothing to do with medical and emergency use. Is there an include file that provides that information directly? -->
 
 ## Choose the best authentication option
+<!-- "Best" is a judgment. Maybe "right" is more appropriate? -->
 
-Power Virtual Agents supports a set of different authentication options, each targeted to a different usage scenario.
+Power Virtual Agents supports several authentication options. Choose the one that meets your needs.
 
-To change the authentication settings, go to **Manage** on the side pane, and then go to the **Security** tab and select the **Authentication** card.
+To change your bot's authentication settings, go to **Manage** on the side pane, and then go to the **Security** tab and select the **Authentication** card.
 
-:::image type="content" source="media/configuration-end-user-authentication/security-authentication.png" alt-text="Screenshot of the Security page under Manage menu highlighting the Authentication card.":::
+:::image type="content" source="media/configuration-end-user-authentication/security-authentication.png" alt-text="Screenshot of the Security page under the Manage menu, highlighting the Authentication card.":::
 
-You will see the following three options to configure your authentication:
+You will see the following authentication options:
 
 - No authentication
 - Only for Teams
@@ -61,33 +63,31 @@ You will see the following three options to configure your authentication:
 
 ### No Authentication
 
-This configuration option provides no authentication for the bot. This is the standard configuration for bots that are not created from Teams.
+No authentication is the standard configuration for bots that aren't created from Teams. Users can't sign in, and your bot can access only public information and resources.
 
 ### Only for Teams
 
 > [!IMPORTANT]
-> When choosing this option, only the Teams channel will be available. All other channels will be disabled and a warning will be displayed.
+> Only the Teams channel is available with this option. All other channels are disabled, and you'll receive a warning if you try to add any.
 
-This configuration option is optimized for Teams channel usage. It automatically sets up Azure Active Directory (Azure AD) authentication for Teams without the need for any manual configuration.
+Teams authentication is the standard configuration for bots that are created from Teams. It's optimized for Teams channel usage, and automatically sets up Azure AD authentication for Teams without the need for any manual configuration. Since Teams authentication itself identifies the user, users aren't prompted to sign in while they're in Teams, unless your bot needs expanded scope.
 
-It uses the Teams authentication itself to identify the user, meaning the user will not be prompted to sign-in while in Teams, unless there is a need for expanded scope. Only the Teams channel is available once this configuration is selected.
+Only the Teams channel is available if you select this option. If you need other channels but still want authentication for your bot, you need to choose **Manual** authentication.
 
-If you need other channels but still want authentication for your bot, you need to choose the **Manual** authentication option. This is the standard configuration for bots that are created from Teams.
-
-The following variables will be available in the authoring canvas after the **Only for Teams** option is selected:
+If you select the **Only for Teams** option, the following variables are available in the authoring canvas:
 
 - `UserID`
 - `UserDisplayName`
 
 For more information about these variables and how to use them, see [Add end-user authentication to a Power Virtual Agents bot](advanced-end-user-authentication.md#authentication-variables).
 
-`AuthToken` and `IsLoggedIn` variables are not available for this configuration option. If you need an authentication token, use the **Manual** option.
+`AuthToken` and `IsLoggedIn` variables aren't available with this option. If you need an authentication token, use the **Manual** option.
 
-If you changed from **Manual** to **Only for Teams**, and your topics contained one of the variables `AuthToken` or `IsLoggedIn`, they will be displayed as **Unknown** variables after the change. Make sure to correct any topics with errors before publishing your bot.
+If you change from **Manual** to **Only for Teams** authentication, and your topics contain the variables `AuthToken` or `IsLoggedIn`, they're displayed as **Unknown** variables after the change. Make sure to correct any topics with errors before you publish your bot.
 
 ### Manual (for any channel including Teams)
 
-You can configure any Azure AD, Azure AD V2, or OAuth compatible identity provider with this option. The following variables will be available in the authoring canvas after manual authentication is configured:
+You can configure any Azure AD, Azure AD V2, or OAuth2-compatible identity provider with this option. The following variables are available in the authoring canvas after you configure manual authentication:
 
 - `UserID`
 - `UserDisplayName`
@@ -103,37 +103,40 @@ Once the configuration is saved, make sure to publish your bot so the changes ta
 
 ## Required user sign in and bot sharing
 
-**Require users to sign in** controls if a user needs to sign in before talking with the bot. This is only available to **Only for Teams** and **Manual** authentication options. It's highly recommended to turn this setting on when the bot contains sensitive information.
+**Require users to sign in** determines whether a user needs to sign in before talking with the bot. It's available only with **Only for Teams** and **Manual** authentication. We highly recommended that you turn on this setting when your bot needs to access sensitive or restricted information.
 
-:::image type="content" source="media/configuration-end-user-authentication/auth-require-user-to-sign-in.PNG" alt-text="Screenshot of the Authentication pane showing require user to sign in.":::
+:::image type="content" source="media/configuration-end-user-authentication/auth-require-user-to-sign-in.png" alt-text="Screenshot of the Authentication pane showing the Require user to sign in option.":::
 
-Bots with this configuration turned **Off** won't ask users to sign in until they encounter a topic which requires them to do so.
+If you turn off this option, your bot won't ask users to sign in until it encounters a topic that requires them to.
 
-When the **Require users to sign in** option is turned **On**, a new system topic called **Require users to sign in** is created. This topic is only relevant for the "Manual" authentication setting, as users are always authenticated on Teams.
+When you turn on this option, it creates a system topic called **Require users to sign in**. This topic is only relevant for the **Manual** authentication setting. Users are always authenticated on Teams.
 
-This topic is automatically triggered for any user who talks to the bot without being authenticated. This topic is read-only and cannot be customized. If the user fails to sign in, this topic redirects the user to the **Escalate** system topic. You can see the topic by selecting **Go to the authoring canvas**.
+The **Require users to sign in** topic is automatically triggered for any user who talks to the bot without being authenticated. If the user fails to sign in, the topic redirects to the **Escalate** system topic.
+
+The topic is read-only and can't be customized. To see it, select **Go to the authoring canvas**.
 
 ### Control who can chat with bot in the organization
+<!-- Please add "the" above ("...who can chat with the bot...") -->
 
-Your bot's **authentication option** and **Require user to sign in** combination determines whether you can [share the bot](admin-share-bots.md) to control who in your organization can chat with your bot or not.  Sharing a bot for collaboration is not impacted by the end-user authentication setting.
+Your bot's authentication and **Require user to sign in** setting in combination determines whether you can [share the bot](admin-share-bots.md) to control who in your organization can chat with it. The authentication setting doesn't affect sharing a bot for collaboration.
 
-- **No authentication**: Any user who has a link to the bot (or can find it, for example, on your website) can chat with it. You cannot control which users can chat with the bot in your organization.
+- **No authentication**: Any user who has a link to the bot (or can find it; for example, on your website) can chat with it. You can't control which users in your organization can chat with the bot.
 
-- **Only for Teams**: The bot will only work on [the Teams channel](publication-add-bot-to-microsoft-teams.md). This means the user will always be signed in, and therefore the **Require users to sign in** option will be enabled and can't be changed. Use bot sharing to control who can chat with the bot in your organization.
+- **Only for Teams**: The bot works only on [the Teams channel](publication-add-bot-to-microsoft-teams.md). Since the user will always be signed in, the **Require users to sign in** setting is turned on and can't be turned off. You can use bot sharing to control who in your organization can chat with the bot.
 
 - **Manual (for any channel including Teams)**:
   
-  - If your authentication setting is configured to **Manual**, and the service provider is either **Azure Active Directory** or **Azure Active Directory V2**, you can enable the **Require users to sign in** option to control who can chat with the bot in your organization via bot sharing.
+  - If the identity provider is either **Azure Active Directory** or **Azure Active Directory V2**, you can turn on **Require users to sign in** to control who in your organization can chat with the bot using bot sharing.
   
-  - If your authentication provider is set as **Generic OAuth 2**, you can toggle the **Require users to sign in** option. When turned on, a user who signs in can chat with the bot, but you cannot control which specific users are allowed to chat with the bot in your organization using bot sharing.
+  - If the identity provider is **Generic OAuth2**, you can turn **Require users to sign in** on or off. When it's turned on, a user who signs in can chat with the bot, but you can't control which specific users in your organization may chat with the bot using bot sharing.
 
-When a bot's authentication option can't control who can chat with the bot, selecting **Share** on the bot's homepage will inform you that anyone can chat with the bot.
+When a bot's authentication setting can't control who can chat with it, if you select **Share** on the bot's homepage a message informs you that anyone can chat with your bot.
 
-:::image type="content" source="media/configuration-end-user-authentication/auth-allow-everyone-chat-with-bot.PNG" alt-text="Everyone in the organization can chat with bot because of authentication setting.":::
+:::image type="content" source="media/configuration-end-user-authentication/auth-allow-everyone-chat-with-bot.PNG" alt-text="Screenshot of a message stating everyone in the organization can chat with the bot because of its authentication setting.":::
 
 ## Register a new app with your identity provider when using Manual (for any channel including Teams)
 
-You need to register a new app with your identity provider and get a Client ID and Client Secret before you can configure a manual authentication in Power Virtual Agents. This section describes how to do that with the [Azure portal](https://portal.azure.com) for Azure AD. If you have a different identity provider, you should consult its setup instructions.
+Before you can configure manual authentication in Power Virtual Agents, you need to register a new app with your identity provider and get a Client ID and client secret. This section describes how to do that with the [Azure portal](https://portal.azure.com) for Azure AD. If you have a different identity provider, you should consult its setup instructions.
 
 Make sure to configure the redirect URL to `https://token.botframework.com/.auth/web/redirect`, and that the assigned API permissions and scopes for the app are the same permissions you need the bot to access.
 
@@ -145,25 +148,28 @@ Make sure to configure the redirect URL to `https://token.botframework.com/.auth
 
 #### Create an app registration
 
-1. Sign in to the [Azure portal](https://portal.azure.com), using an admin account on the same tenant as your Power Virtual Agents chatbot.
+1. Sign in to the [Azure portal](https://portal.azure.com), using an admin account on the same tenant as your bot.
 
 1. Go to [App registrations](https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade), either by selecting the icon or searching in the top search bar. Create a new **Application Registration**.
 
-1. Select **New registration** and enter a name for the registration. It can be helpful to use the name of the bot you're enabling authentication for. For example, if your bot is called "Contoso sales help", you might name the app registration as "ContosoSalesReg" or something similar.
+1. Select **New registration** and enter a name for the registration.
+    It can be helpful to use the name of your bot. For example, if your bot is called "Contoso sales help", you might name the app registration "ContosoSalesReg" or something similar.
 
-1. Select **Accounts in any organizational directory (Any Azure AD directory - Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox)**
+1. Select **Accounts in any organizational directory (Any Azure AD directory - Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox)**.
 
-1. Leave the **Redirect URI** section blank for now, as you'll enter that information in the next steps. Select **Register**.
+1. Leave the **Redirect URI** section blank for now. You'll enter that information in the next steps.
+
+1. Select **Register**.
 
 #### Add the redirect URL
 
-1. Once the registration is completed, it will open to the **Overview** page. Go to **Authentication** and then select **Add a platform**.
+1. Once the registration is complete, the **Overview** page opens. Go to **Authentication** and then select **Add a platform**.
 
 1. On the **configure platforms** blade, select **Web**.
 
-1. Under **Redirect URIs**, add `https://token.botframework.com/.auth/web/redirect`.
+1. Under **Redirect URIs**, enter `https://token.botframework.com/.auth/web/redirect`.
 
-1. Under the **Implicit grant** section, select the **Id Tokens** and **Access Tokens** checkboxes.
+1. Under the **Implicit grant** section, select **Id Tokens** and **Access Tokens**. <!-- Please confirm capitalization -->
 
 1. Select **Configure** to confirm your changes.
 
@@ -171,79 +177,82 @@ Make sure to configure the redirect URL to `https://token.botframework.com/.auth
 
 1. Go to **Certificates & Secrets**.
 
-1. Under the **Client secrets** section, select **New client secret**. Enter a description (one will be provided if you leave this blank), and select the expiry period. Select the shortest period that will be relevant for the life of your bot.
+1. Under the **Client secrets** section, select **New client secret**.
 
-1. Select **Add** to create the secret. Take note of the secret's **Value** and store this in a temporary place (such as an open Notepad document), as you'll enter it in your bot's authentication settings.
+1. (Optional) Enter a description. One will be provided if you leave it blank.
 
-## Configure Manual authentication
+1. Select the expiry period. Select the shortest period that's relevant for the life of your bot.
 
-1. Sign in to Power Virtual Agents. If you're using Azure AD as your identity provider, ensure you log in on the same tenant where you created the app registration.
+1. Select **Add** to create the secret.
 
-1. Open the bot for which you want to enable authentication.
+1. Take note of the secret's **Value** and store it in a temporary place (such as an open Notepad document). You'll need it when you configure your bot's authentication.
+
+## Configure manual authentication
+
+1. Sign in to Power Virtual Agents. If you're using Azure AD as your identity provider, make sure to sign in on the same tenant where you created the app registration.
+
+1. Open your bot.
 
 1. Select **Manage** on the side pane, and then go to the **Security** tab and select the **Authentication** card.
 
-    :::image type="content" source="media/configuration-end-user-authentication/auth-manage-sm.png" alt-text="Screenshot of the Authentication under Manage left bar menu.":::
+    :::image type="content" source="media/configuration-end-user-authentication/auth-manage-sm.png" alt-text="Screenshot of selecting the Authentication card.":::
 
 1. Select **Manual (for any channel including Teams)**.
 
-    :::image type="content" source="media/configuration-end-user-authentication/auth-select-manual.png" alt-text="Select the Manual authentication option.":::
+    :::image type="content" source="media/configuration-end-user-authentication/auth-select-manual.png" alt-text="Screenshot of selecting the manual authentication option.":::
 
-1. [Enter the information as described for each of the fields](#manual-authentication-fields). The information required depends on your setup and provider. If you have questions about the required information, contact your administrator or identity provider.
+1. [Enter the required information](#manual-authentication-fields).
+    The information you need to enter depends on your setup and provider. If you have questions about what to enter, contact your administrator or identity provider.
 
-1. Click **Save** to finish the configuration.
+1. Select **Save** to finish the configuration.
 
 ### Manual authentication fields
 
-The following are all possible fields you'll see when configuring manual authentication. However, depending on your choice for [service provider](#service-provider), some fields won't be present.
+The following are all the fields you may see when you're configuring manual authentication. Which fields you'll see depends on your choice for [service provider](#service-provider).
 
 #### Authorization URL template
 
-URL template for authorization, defined by your identity provider. For example, `https://login.microsoftonline.com/common/oauth2/v2.0/authorize`
+The URL template for authorization, as defined by your identity provider; for example, `https://login.microsoftonline.com/common/oauth2/v2.0/authorize`
 
-To find this information when using Azure AD, go to the app registration's **Overview** page and then selecting **Endpoints**. This is listed as the **OAuth 2.0 token endpoint (v2)**.
+To find this information when you're using Azure AD as your identity provider: Go to the app registration's **Overview** page and select **Endpoints**. The URL template for authorization is shown as **OAuth 2.0 token endpoint (v2)**.
 
 #### Authorization URL query string template
 
-Query template for authorization, provided by your identity provider.
+The query template for authorization, as provided by your identity provider. Keys in the query string template will vary depending on the identity provider.
 
-Keys in the query string template will vary depending on the identity provider.
-
-When using Azure AD, use `?client_id={ClientId}&response_type=code&redirect_uri={RedirectUrl}&scope={Scopes}&state={State}`.
+When you're using Azure AD, enter `?client_id={ClientId}&response_type=code&redirect_uri={RedirectUrl}&scope={Scopes}&state={State}`.
 
 #### Client ID
 
-Your client ID obtained from the identity provider.
+Your client ID, obtained from the identity provider.
 
-To find this information when using Azure AD, go to the app registration's **Overview** page as **Application (client) ID**.
+To find this information when you're using Azure AD as your identity provider: Go to the app registration's **Overview** page. The Client ID is shown as **Application (client) ID**.
 
 #### Client secret
 
-Your client secret obtained from the identity provider registration.
+Your client secret, obtained when you created the identity provider app registration. This is the value you stored temporarily in, for example, a Notepad file. If you navigate away from the **Certificates & secrets** page before you record the client secret, its **Value** is obfuscated and you'll need to create a new one.
 
-To find this information when using Azure AD, generate a new client secret. If you navigate away from the **Certificates & secrets** page, the secret's **Value** will be obfuscated and you'll need to create a new one.
+To find this information when you're using Azure AD as your identity provider: Generate a new client secret.
 
 #### Refresh body template
 
-Template for the refresh body.
+The template for the refresh body.
 
-When using Azure AD, use `refresh_token={RefreshToken}&redirect_uri={RedirectUrl}&grant_type=refresh_token&client_id={ClientId}&client_secret={ClientSecret}`.
+When you're using Azure AD as your identity provider, enter `refresh_token={RefreshToken}&redirect_uri={RedirectUrl}&grant_type=refresh_token&client_id={ClientId}&client_secret={ClientSecret}`.
 
 #### Refresh URL query string template
 
-Refresh URL query string separator for the token URL. Usually a question mark (`?`).
+The refresh URL query string separator for the token URL, usually a question mark (`?`).
 
 #### Refresh URL template
 
-URL template for refresh. For example, `https://login.microsoftonline.com/common/oauth2/v2.0/token`. For Azure Apps, you want to replace the base URL with your Azure App URL.
+The URL template for refresh; for example, `https://login.microsoftonline.com/common/oauth2/v2.0/token`. For Azure apps, replace the base URL with your Azure app URL.
 
-To find this information when using Azure AD, go to the app registration's **Overview** page and then select **Endpoints**. This is listed as the **OAuth 2.0 token endpoint (v2)**.
+To find this information when you're using Azure AD as your identity provider: Go to the app registration's **Overview** page and select **Endpoints**. The refresh URL template is shown as **OAuth 2.0 token endpoint (v2)**.
 
 #### Scope list delimiter
 
-The separator character for the scope list.
-
-Empty spaces (` `) are not supported in this field, but can be used in the **Scopes** field if required by the identity provider. In that case, use a comma (`,`) for this field, and spaces (` `) in the **Scopes** field.
+The separator character for the scope list. Empty spaces (` `) aren't supported in this field. but can be used in the **Scopes** field if required by the identity provider. In that case, use a comma (`,`) for this field, and spaces (` `) in the **Scopes** field.
 
 When using Azure AD, use a comma (`,`).
 
