@@ -127,8 +127,10 @@ You'll also need to provide the following information:
 - Café X
 - Forms Pro
 - SharePoint
-- Mailboxes (If the mapped user has a mailbox in the destination environment, then the mailbox is automatically provisioned during the migration. For all other users, you will need to reconfigure the mailbox.)
 - Dynamics 365 Marketing 
+- Mailboxes (If the mapped user has a mailbox in the destination environment, then the mailbox is automatically configured during the migration. For all other users, you will need to reconfigure the mailbox.)
+    1. If the same mailbox is used in the target tenant (test@microsoft.com) then the mailbox will be enabled by default.Before the T2T process, customers need to migrate/configure their mailboxes on the target tenant.
+    2. If you are using the onmicrosoft domain (test@sourcecompanyname.onmicrosoft.com) that is default domain,and post migration domain name is changed (test@targetcompanyname.onmicrosoft.com). Customers need to reconfigure the mailbox. Please see more details to configure the mailbox. https://docs.microsoft.com/en-us/power-platform/admin/connect-exchange-online
 
 ### Steps to create the mapping file
  
