@@ -4,7 +4,7 @@ description: "Frequently asked questions about Power Automate licensing."
 author: PriyaKodukula
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 03/29/2022
+ms.date: 03/31/2022
 ms.author: prkoduku
 ms.reviewer: MSFTMan
 search.audienceType: 
@@ -77,7 +77,7 @@ Connections are independent from license checks. You can have multiple user conn
 
 ### The owner of a flow left the company. How can we ensure it works without interruptions?
 
-If the flow is a solution flow, you can [change the owner](/power-automate/change-cloud-flow-owner) in Power Automate portal, or use [Power Automate Web API](/power-automate/web-api#update-a-cloud-flow) to ensure the flow works without interruptions. If the flow is a non-solution flow, you cannot change the owner, assign a per flow license to the flow to ensure it continues to run. Alternatively any co-owners of the flow can export and import the flow. When imported, the flow will be a new flow and the co-owner will now become the owner of the flow. And the flow will use the license of the new owner. 
+If the flow is a solution flow, you can [change the owner](/power-automate/change-cloud-flow-owner) in Power Automate portal, or use [Power Automate Web API](/power-automate/web-api#update-a-cloud-flow) to ensure the flow works without interruptions. If the flow is a non-solution flow, you cannot change the owner, assign a per flow license to the flow to ensure it continues to run. Alternatively, any co-owners of the flow can export and import the flow. When imported, the flow will be a new flow and the co-owner will now become the owner of the flow. And the flow will use the license of the new owner. 
 
 ### The owner of the flow no longer has a premium license, but the flow is a premium flow. What happens?
 
@@ -311,7 +311,7 @@ Co-owners don't need a premium license as the flow only runs in the context of c
 
 ### My flow uses connections of multiple users. Do i need to license all of them?
 
-Who needs a license is independent from whose connections are used in the flow. Automated/scheduled flows always run under owner's license and manual/power apps flows always run under the users who ran the flow. 
+Who needs a license is independent from whose connections are used in the flow. Automated/scheduled flows always run under the owner's license and manual/power apps flows always run under the users who ran the flow. 
 
 ### A premium flow consolidates Azure Dev Ops items, generates a report, and then sends an email to the entire organization. The users in the organization get value from the flow but do not interact with the flow directly.
 
