@@ -75,9 +75,9 @@ The first subscription of Power Apps or Power Automate or Power Virtual Agents o
 
 Connections are independent from license checks. You can have multiple user connections in a flow, but the flow always checks licenses of primary owner/run-only user. The co-owner's license isn't considered.
 
-### The owner of a flow left the company, and the flow doesn't have co-owners. How can we ensure it works without interruptions?
+### The owner of a flow left the company. How can we ensure it works without interruptions?
 
-If the flow is a solution flow, you can [change the owner](/power-automate/change-cloud-flow-owner) in Power Automate portal, or use [Power Automate Web API](/power-automate/web-api#update-a-cloud-flow) to ensure the flow works without interruptions. If the flow is a non-solution flow, you cannot change the owner, but any co-owners of the flow can export and import by a different owner. 
+If the flow is a solution flow, you can [change the owner](/power-automate/change-cloud-flow-owner) in Power Automate portal, or use [Power Automate Web API](/power-automate/web-api#update-a-cloud-flow) to ensure the flow works without interruptions. If the flow is a non-solution flow, you cannot change the owner, assign a per flow license to the flow to ensure it continues to run. Alternatively any co-owners of the flow can export and import the flow. When imported, the flow will be a new flow and the co-owner will now become the owner of the flow. And the flow will use the license of the new owner. 
 
 ### The owner of the flow no longer has a premium license, but the flow is a premium flow. What happens?
 
@@ -266,7 +266,7 @@ Multiplexing refers to the use of hardware or software that a customer uses to p
 
 ### I have multiple flows running under a shared service account. What licenses do I need?
 Definitions: 
- - **Service account**: Azure Active Directory (Azure AD) user account used as a service account. Service accounts are a special type of account that are intended to represent a non-human entity such as an application, API, or other service. User accounts, used as a service account, are difficult to track and managing their passwords is a challenge. In some scenarios, service accounts are used to remove the dependency from the flow to the original owner. When creating service accounts, provide only the permissions that are required for the task. Evaluate existing service accounts to see if you can reduce privileges. It is recommended to limit the number of people who have access to the service account to minimize security risks. You can also create different accounts for different scenarios to minimize the exposure. 
+ - **Service account**: Azure Active Directory (Azure AD) user account used as a service account. Service accounts are a special type of account that are intended to represent a non-human entity such as an application, API, or other service. User accounts, used as a service account by sharing credentials with other users, are difficult to track and managing their passwords is a challenge. In some scenarios, service accounts are used to remove the dependency from the flow to the original owner. When creating service accounts, provide only the permissions that are required for the task. Evaluate existing service accounts to see if you can reduce privileges. It is recommended to limit the number of people who have access to the service account to minimize security risks. You can also create different accounts for different scenarios to minimize the exposure. 
  - **Service Principal**: Azure AD service principal functions as the identity of the application instance. Service principals define who can access the application and what resources the application can access. A service principal is created in each tenant where the application is used and references the globally unique application object. Power Automate doesn't yet support a flow to run under Service Principal; the [feature](/power-platform-release-plan/2022wave1/power-automate/ownership-supported-service-principals) is coming soon. 
  - **Non-interactive users**: Dataverse supports non-interactive users for activities like background processes that migrate data between databases. These do not require a user to interact with the service. There is a maximum limit of 7 non-interactive users per tenant. Non-interactive users are not yet supported by Power Automate. 
  - **Normal users**: These are the regular synchronized users from Azure AD.
@@ -288,9 +288,8 @@ Guidance: This guidance is specific to flows that run under a service account as
 > 
 > This is guidance only and not hard enforcement. Admins are responsible for licensing all the flows correctly to stay compliant. 
 
-## Approvals
 
-### There's a premium flow that sends approval requests to a set of users and then waits for the users to approve or reject the request before it continues running. Today, Power Automate only looks for owner's license and doesn't look for approver's license. Do the approvers need a premium license?
+### There's a premium flow that sends approval requests to a set of users and then waits for the users to approve or reject the request before it continues running.  Do the approvers need a premium license?
 
 The approvals connector is a standard connector. Users who respond to approval requests aren't considered to be the invoking users. Their Office 365 license is enough and they don't need a premium license.
 
@@ -298,23 +297,21 @@ The approvals connector is a standard connector. Users who respond to approval r
 
 Flow runs in the context of owner's license for Automated/Scheduled flows and invoking user's license for Instant/Power Apps/Dataverse triggered flows. So, the person who added the item to list created using Microsoft Lists do not need a premium license.
 
-## Instant flows
-
 ### We have an instant flow with run-only users and it uses premium connectors. The maker shares that flow with their team and allows them to run that flow.
 
 Everyone who invokes the flow need a premium license because it is an instant flow.
-
-## Child flows
 
 ### I have a child flow that has premium connectors and is invoked by multiple parent flows that don't have premium connectors. Do all parent flows need to be licensed, or is licensing the child flow enough?
 
 You can either license the parent flow or license the child flow with a per flow license. However, if the parent flow also has a premium connector, the parent flow owner must have a premium license.
 
-## Shared flows
-
 ### **My flow is shared with multiple users who view and edit the flow**. Do co-owners need premium license to edit the flows?
 
 Co-owners don't need a premium license as the flow only runs in the context of creator or owner/run-only user.
+
+### My flow uses connections of multiple users. Do i need to license all of them?
+
+Who needs a license is independent from whose connections are used in the flow. Automated/scheduled flows always run under owner's license and manual/power apps flows always run under the users who ran the flow. 
 
 ### A premium flow consolidates Azure Dev Ops items, generates a report, and then sends an email to the entire organization. The users in the organization get value from the flow but do not interact with the flow directly.
 
