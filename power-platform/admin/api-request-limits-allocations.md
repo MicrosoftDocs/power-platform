@@ -192,7 +192,7 @@ Here is a sample of a detailed usage report:
 
 ### Per Flow report
 
-The Per Flow Licensed Flows report  downloadable report contains the following fields:
+The Per Flow Licensed Flows downloadable report contains the following fields:
 
 | Field	| Description |
 |-----------------------------------------------------------------|-----------------------------------------------------------------------------------------|
@@ -217,11 +217,11 @@ Reporting for Power Platform Request usage in preview is available now in the Po
 
 ### What are the timelines for Power Platform Request limits?
 
-The concept of limits was first introduced in late 2019 and documented limits were substantially increased in late 2021. Preview reporting for Power Platform Requests became available in April 2022. Any potential high usage enforcement wouldn't start until six months after reports have been made generally available.
+The concept of limits was first introduced in late 2019 and documented limits were substantially increased in late 2021. Preview reporting for Power Platform Requests became available in April 2022. See [FAQs](power-automate-licensing/types.md#faqs).
 
 ### What account's limits are used for classic workflows or Power Automate flows?
 
-It depends if the process is run on-demand or in the background. Instant flows, which are run on-demand, will use the limits of the account who started the process. On the other hand, workflows or automated/scheduled flows that run in the background will always use the limits of the owner of the process irrespective of why the process started or what accounts are used for connections inside of the process.
+It depends if the process is run on-demand or in the background. Instant flows, which are run on-demand, will use the limits of the account who started the process. On the other hand, workflows or automated/scheduled flows that run in the background will always use the limits of the owner of the process irrespective of why the process started or what accounts are used for connections inside of the process. See [Whose Power Platform request limits are used by the flow?](power-automate-licensing/types.md#whose-power-platform-request-limits-are-used-by-the-flow).
 
 ### Do the Microsoft Power Platform request limits roll over from day to day or month to month?
 
