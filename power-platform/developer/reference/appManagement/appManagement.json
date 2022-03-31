@@ -1,0 +1,681 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Microsoft Power Platform REST API",
+    "description": "Unified API for all administrative capabilities in Microsoft Power Platform",
+    "version": "2022-03-01-preview"
+  },
+  "host": "api.powerplatform.com",
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/appmanagement/applicationPackages": {
+      "get": {
+        "tags": [
+          "Applications"
+        ],
+        "summary": "Get list of application packages available for a tenant.",
+        "description": "",
+        "operationId": "GetTenantApplicationPackage",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/TenantApplicationPackageContinuationResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      }
+    },
+    "/appmanagement/environments/{environmentId}/applicationPackages": {
+      "get": {
+        "tags": [
+          "Applications"
+        ],
+        "summary": "Get list of application packages that are available for installation in a target environment.",
+        "description": "",
+        "operationId": "GetEnvironmentApplicationPackage",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "Environment ID (not to be confused with Org ID)",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "appInstallState",
+            "description": "Application Package Install State",
+            "type": "string",
+            "enum": [
+              "All",
+              "Installed",
+              "NotInstalled"
+            ]
+          },
+          {
+            "in": "query",
+            "name": "lcid",
+            "description": "Application Package Supported Language ID",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/ApplicationPackageContinuationResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      }
+    },
+    "/appmanagement/environments/{environmentId}/applicationPackages/{uniqueName}/install": {
+      "post": {
+        "tags": [
+          "Applications"
+        ],
+        "summary": "Trigger installation of an application package based on the package unique name into a target environment.",
+        "description": "",
+        "operationId": "InstallApplicationPackage",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "Environment ID (not to be confused with Org ID)",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "uniqueName",
+            "description": "Package unique name",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Payload to be sent during installation of the package",
+            "schema": {
+              "$ref": "#/definitions/TpsInstallRequestPayload"
+            }
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "Success"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/InstancePackage"
+            }
+          }
+        }
+      }
+    },
+    "/appmanagement/environments/{environmentId}/operations/{operationId}": {
+      "get": {
+        "tags": [
+          "Applications"
+        ],
+        "summary": "Get the polling status for a previously triggered installation based on the operation ID.",
+        "description": "",
+        "operationId": "GetApplicationPackageInstallStatus",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "Environment ID (not to be confused with Org ID)",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "operationId",
+            "description": "Operation ID",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/InstancePackageOperationPollingResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "ApplicationInstallState": {
+      "description": "Application installation state for the packages",
+      "enum": [
+        "All",
+        "Installed",
+        "NotInstalled"
+      ],
+      "type": "string"
+    },
+    "ApplicationPackage": {
+      "required": [
+        "id",
+        "uniqueName"
+      ],
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "uuid",
+          "description": "AvailablePackage Id or InstancePackage PackageId, both maps to ApplicationPackageId",
+          "type": "string"
+        },
+        "uniqueName": {
+          "description": "AvailablePackage UniqueName or InstancePackage PackageUniqueName",
+          "type": "string"
+        },
+        "version": {
+          "description": "AvailablePackage Version or InstancePackage PackageVersion",
+          "type": "string"
+        },
+        "localizedDescription": {
+          "description": "LocalizedDescription for the application package",
+          "maxLength": 1000,
+          "type": "string"
+        },
+        "localizedName": {
+          "description": "Localized name of application package",
+          "type": "string"
+        },
+        "applicationId": {
+          "format": "uuid",
+          "description": "Application ID",
+          "type": "string"
+        },
+        "applicationName": {
+          "description": "Application name",
+          "type": "string"
+        },
+        "applicationDescription": {
+          "description": "Application description",
+          "type": "string"
+        },
+        "singlePageApplicationUrl": {
+          "description": "Single Page Application URL associated with the application",
+          "type": "string"
+        },
+        "publisherName": {
+          "description": "Publisher name",
+          "type": "string"
+        },
+        "publisherId": {
+          "format": "uuid",
+          "description": "Publisher ID",
+          "type": "string"
+        },
+        "learnMoreUrl": {
+          "description": "Learn more URL for the application",
+          "type": "string"
+        },
+        "platformMinVersion": {
+          "description": "AvailablePackage CrmMinVersion",
+          "type": "string"
+        },
+        "platformMaxVersion": {
+          "description": "AvailablePackage CrmMaxVersion",
+          "type": "string"
+        },
+        "customHandleUpgrade": {
+          "description": "AvailablePackage CustomUpgrade",
+          "type": "boolean"
+        },
+        "instancePackageId": {
+          "format": "uuid",
+          "description": "InstancePackage Id, used only for retry of package installation ie, Reinstall.",
+          "type": "string"
+        },
+        "state": {
+          "$ref": "#/definitions/InstancePackageState"
+        },
+        "catalogVisibility": {
+          "$ref": "#/definitions/CatalogVisibility"
+        },
+        "applicationVisibility": {
+          "$ref": "#/definitions/ApplicationVisibility"
+        },
+        "lastError": {
+          "$ref": "#/definitions/ErrorDetails"
+        },
+        "startDateUtc": {
+          "format": "date-time",
+          "description": "Start date for applicationPackage",
+          "type": "string"
+        },
+        "endDateUtc": {
+          "format": "date-time",
+          "description": "End date for applicationPackage",
+          "type": "string"
+        },
+        "supportedCountries": {
+          "description": "List of supported countries for the application",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "ApplicationPackageContinuationResponse": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ApplicationPackage"
+          }
+        },
+        "@odata.nextLink": {
+          "type": "string"
+        }
+      }
+    },
+    "ApplicationVisibility": {
+      "description": "Application Visibility",
+      "enum": [
+        "None",
+        "CrmAdminCenter",
+        "BapAdminCenter",
+        "OneAdminCenter",
+        "All"
+      ],
+      "type": "string"
+    },
+    "CatalogVisibility": {
+      "description": "CatalogVisibility for application",
+      "enum": [
+        "None",
+        "AdminCenter",
+        "Teams",
+        "All"
+      ],
+      "type": "string"
+    },
+    "ErrorDetails": {
+      "type": "object",
+      "properties": {
+        "errorName": {
+          "description": "Error Name",
+          "type": "string"
+        },
+        "errorCode": {
+          "format": "int32",
+          "description": "ErrorCode from CDS",
+          "type": "integer"
+        },
+        "message": {
+          "description": "Error message",
+          "type": "string"
+        },
+        "type": {
+          "description": "Error Type",
+          "type": "string"
+        },
+        "statusCode": {
+          "format": "int32",
+          "description": "Status code for error",
+          "type": "integer"
+        },
+        "source": {
+          "description": "Source of the error",
+          "type": "string"
+        }
+      }
+    },
+    "InstancePackage": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "uuid",
+          "description": "InstancePackage ID",
+          "type": "string"
+        },
+        "packageId": {
+          "format": "uuid",
+          "description": "Package ID",
+          "type": "string"
+        },
+        "applicationId": {
+          "format": "uuid",
+          "description": "Application ID associated with the instance package",
+          "type": "string"
+        },
+        "applicationName": {
+          "description": "Application name associated with the instance package",
+          "type": "string"
+        },
+        "applicationDescription": {
+          "description": "Application description associated with the instance package",
+          "type": "string"
+        },
+        "singlePageApplicationUrl": {
+          "description": "Single Page Application URL",
+          "type": "string"
+        },
+        "publisherName": {
+          "description": "Publisher name for the application",
+          "type": "string"
+        },
+        "publisherId": {
+          "format": "uuid",
+          "description": "Publisher ID",
+          "type": "string"
+        },
+        "packageUniqueName": {
+          "description": "Package Unique Name",
+          "type": "string"
+        },
+        "packageVersion": {
+          "description": "Package Version",
+          "type": "string"
+        },
+        "localizedDescription": {
+          "description": "Localized description of application",
+          "type": "string"
+        },
+        "localizedName": {
+          "description": "Localized name of application",
+          "type": "string"
+        },
+        "learnMoreUrl": {
+          "description": "Learn more url for the application",
+          "type": "string"
+        },
+        "termsOfServiceBlobUris": {
+          "description": "TOS for the application",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "applicationVisibility": {
+          "$ref": "#/definitions/ApplicationVisibility"
+        },
+        "lastOperation": {
+          "$ref": "#/definitions/InstancePackageOperation"
+        },
+        "customHandleUpgrade": {
+          "description": "Custom handle upgrade flag for the application",
+          "type": "boolean"
+        }
+      }
+    },
+    "InstancePackageOperation": {
+      "type": "object",
+      "properties": {
+        "state": {
+          "$ref": "#/definitions/InstancePackageState"
+        },
+        "createdOn": {
+          "format": "date-time",
+          "description": "DateTime for creation of the instance package operation",
+          "type": "string"
+        },
+        "modifiedOn": {
+          "format": "date-time",
+          "description": "DateTime for modification of the instance package operation",
+          "type": "string"
+        },
+        "errorDetails": {
+          "$ref": "#/definitions/ErrorDetails"
+        },
+        "statusMessage": {
+          "description": "Status Message",
+          "type": "string"
+        },
+        "instancePackageId": {
+          "format": "uuid",
+          "description": "InstancePackage ID",
+          "type": "string"
+        },
+        "operationId": {
+          "format": "uuid",
+          "description": "Operation ID for the operation triggered on the instance package",
+          "type": "string"
+        }
+      }
+    },
+    "InstancePackageOperationPollingResponse": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "$ref": "#/definitions/InstancePackageOperationStatus"
+        },
+        "createdDateTime": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "lastActionDateTime": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "error": {
+          "$ref": "#/definitions/ErrorDetails"
+        },
+        "statusMessage": {
+          "type": "string"
+        },
+        "operationId": {
+          "format": "uuid",
+          "type": "string"
+        }
+      }
+    },
+    "InstancePackageOperationStatus": {
+      "enum": [
+        "NotStarted",
+        "Running",
+        "Succeeded",
+        "Failed",
+        "Canceled"
+      ],
+      "type": "string"
+    },
+    "InstancePackageState": {
+      "description": "State of instance package",
+      "enum": [
+        "None",
+        "Installed",
+        "Uninstalled",
+        "InstallRequested",
+        "UninstallRequested",
+        "InstallFailed",
+        "UninstallFailed",
+        "Installing",
+        "Uninstalling",
+        "InstallScheduled",
+        "InstallRetrying",
+        "TemplateInstalled"
+      ],
+      "type": "string"
+    },
+    "TenantApplicationPackage": {
+      "type": "object",
+      "properties": {
+        "uniqueName": {
+          "description": "Uniquename of TenantApplicationPackage",
+          "type": "string"
+        },
+        "localizedDescription": {
+          "description": "Localized description of tenant application package",
+          "type": "string"
+        },
+        "localizedName": {
+          "description": "Localized Name",
+          "type": "string"
+        },
+        "applicationId": {
+          "format": "uuid",
+          "description": "Application ID",
+          "type": "string"
+        },
+        "applicationName": {
+          "description": "Application name",
+          "type": "string"
+        },
+        "applicationDescription": {
+          "description": "Application description",
+          "type": "string"
+        },
+        "publisherName": {
+          "description": "Publisher name",
+          "type": "string"
+        },
+        "publisherId": {
+          "format": "uuid",
+          "description": "Publisher ID",
+          "type": "string"
+        },
+        "learnMoreUrl": {
+          "description": "Learn more URL",
+          "type": "string"
+        },
+        "catalogVisibility": {
+          "$ref": "#/definitions/CatalogVisibility"
+        },
+        "applicationVisibility": {
+          "$ref": "#/definitions/ApplicationVisibility"
+        },
+        "lastError": {
+          "$ref": "#/definitions/ErrorDetails"
+        }
+      }
+    },
+    "TenantApplicationPackageContinuationResponse": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/TenantApplicationPackage"
+          }
+        },
+        "@odata.nextLink": {
+          "type": "string"
+        }
+      }
+    },
+    "TpsInstallRequestPayload": {
+      "description": "Payload to be sent during installation of the package",
+      "type": "object",
+      "properties": {
+        "payloadValue": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "securityDefinitions": {
+    "oauth2": {
+      "type": "oauth2",
+      "flow": "implicit",
+      "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/authorize?resource=https://api.powerplatform.com",
+      "tokenUrl": "https://login.microsoftonline.com/common/oauth2/token",
+      "description": "Azure Active Directory OAuth2"
+    }
+  },
+  "security": [
+    {
+      "oauth2": [ ]
+    }
+  ]
+}
