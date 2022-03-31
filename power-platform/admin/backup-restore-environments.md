@@ -185,7 +185,7 @@ The newly restored environment is placed in administration mode. To disable admi
 
 ### What steps are needed after a restore to ensure flows are working as expected?
 
-- **Flows** - Review the flows in the environment. Edit flows that need triggers and actions adjusted. Enable and disable flows as needed.
+- **Flows** - In the target environment, existing solution flows will be deleted but existing non-solution flows will remain. Review the flows in the target environment to ensure that triggers and actions are pointing at the correct locations. Solution flows will be disabled so enable flows as needed.
 - **Connection References** - Connection References will require new connections. Create and set connections on Connection References.
 - **Custom Connectors** - Custom connectors should be reviewed and, if needed, deleted and reinstalled.
 

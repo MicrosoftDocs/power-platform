@@ -1,7 +1,7 @@
 ---
 title: "Migrate an environment to a different tenant"
 description: "Learn about the impact of migrating an environment from one tenant to another. Review the prerequisites and considerations before submitting a request." 
-ms.date: 03/25/2022
+ms.date: 03/31/2022
 ms.topic: conceptual
 applies_to: 
   - "Dynamics 365 (online)"
@@ -127,8 +127,10 @@ You'll also need to provide the following information:
 - Café X
 - Forms Pro
 - SharePoint
-- Mailboxes (If the mapped user has a mailbox in the destination environment, then the mailbox is automatically provisioned during the migration. For all other users, you will need to reconfigure the mailbox.)
 - Dynamics 365 Marketing 
+- Mailboxes. If the mapped user has a mailbox in the destination environment, then the mailbox is automatically configured during the migration. For all other users, you will need to reconfigure the mailbox:
+  1. If the same mailbox is used in the target tenant (test@microsoft.com) then the mailbox will be enabled by default. Before the tenant-to-tenant process, customers need to migrate/configure their mailboxes on the target tenant.
+  2. If you are using the default onmicrosoft domain (test@sourcecompanyname.onmicrosoft.com), the post migration domain name is changed (test@targetcompanyname.onmicrosoft.com). Customers need to reconfigure the mailbox. To configure the mailbox, see [Connect to Exchange Online](connect-exchange-online.md).
 
 ### Steps to create the mapping file
  

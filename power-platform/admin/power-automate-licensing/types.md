@@ -2,12 +2,10 @@
 title: "Types of Power Automate licenses"
 description: "Types of Power Automate licenses."
 author: PriyaKodukula
-
 ms.subservice: admin
 ms.topic: overview
-ms.date: 10/31/2021
+ms.date: 03/30/2022
 ms.author: prkoduku
-manager: kvivek
 search.audienceType: 
   - admin
 search.app:
@@ -216,13 +214,10 @@ The connectors have separate limits as a service protection mechanism. For examp
 
 When a flow was throttled because it exceeded the connector limits, you might see a HTTP 429 (too many requests) error in your flow with error text like "Rate limit is exceeded. Try again in 27 seconds."
 
-#### I am using COE toolkit, will the usage count towards my request limits?
+#### I am using COE Starter Kit , will the usage count towards my request limits?
 
-Yes. Flows included in the COE toolkit also use limits from the owner. Microsoft recommends that you turn on Pay-as-you go for the environment or buy additional capacity and contact support to get temporary relief from throttling.
+Yes. Flows included in the [COE Starter Kit](../../guidance/coe/starter-kit.md) also use limits from the owner. Microsoft recommends that you turn on Pay-as-you go for the environment or buy additional capacity and contact support to get temporary relief from throttling.
 
-#### Can I use a service account and run multiple flows under it?
-
-Yes, and if your flow runs under a service account, it is really a team/organization flow and it needs a per flow plan for every flow.
 
 #### Can I use service principal in flows, and does it count against my request limits?
 

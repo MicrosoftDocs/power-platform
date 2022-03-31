@@ -1,0 +1,752 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Microsoft Power Platform REST API",
+    "description": "Unified API for all administrative capabilities in Microsoft Power Platform",
+    "version": "2022-03-01-preview"
+  },
+  "host": "api.powerplatform.com",
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/licensing/billingPolicies": {
+      "get": {
+        "tags": [
+          "BillingPolicy"
+        ],
+        "summary": "Get the list of billing policies for the tenant.",
+        "operationId": "ListBillingPolicies",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "$top",
+            "description": "Top limit of results",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/BillingPolicyResponseModelResponseWithOdataContinuation"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "BillingPolicy"
+        ],
+        "summary": "Creates the billing policy at tenant level.",
+        "operationId": "CreateBillingPolicy",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "The billing policy",
+            "schema": {
+              "$ref": "#/definitions/BillingPolicyPostRequestModel"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Successfully created",
+            "schema": {
+              "$ref": "#/definitions/BillingPolicyResponseModel"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      }
+    },
+    "/licensing/billingPolicies/{billingPolicyId}": {
+      "get": {
+        "tags": [
+          "BillingPolicy"
+        ],
+        "summary": "Get the billing policy at tenant level by policy ID.",
+        "operationId": "GetBillingPolicy",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "billingPolicyId",
+            "description": "The billing policy ID",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/BillingPolicyResponseModel"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "BillingPolicy"
+        ],
+        "summary": "Updates the billing policy at tenant level.",
+        "operationId": "UpdateBillingPolicy",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "billingPolicyId",
+            "description": "The billing policy ID",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "The billing policy",
+            "schema": {
+              "$ref": "#/definitions/BillingPolicyPutRequestModel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/BillingPolicyResponseModel"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "BillingPolicy"
+        ],
+        "summary": "Delete billing policy.",
+        "operationId": "DeleteBillingPolicy",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "billingPolicyId",
+            "description": "The billing policy Id",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Success"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/licensing/billingPolicies/{billingPolicyId}/environments": {
+      "get": {
+        "tags": [
+          "BillingPolicyEnvironment"
+        ],
+        "summary": "Get the list of environments linked to the billing policy.",
+        "operationId": "ListBillingPolicyEnvironments",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "billingPolicyId",
+            "description": "The billing policy ID",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/BillingPolicyEnvironmentResponseModelV1ResponseWithOdataContinuation"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/licensing/billingPolicies/{billingPolicyId}/environments/{environmentId}": {
+      "get": {
+        "tags": [
+          "BillingPolicyEnvironment"
+        ],
+        "summary": "Get the environment linked to the billing policy.",
+        "operationId": "GetBillingPolicyEnvironment",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "billingPolicyId",
+            "description": "The billing policy ID",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/BillingPolicyEnvironmentResponseModelV1"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/licensing/billingPolicies/{billingPolicyId}/refreshProvisioningStatus": {
+      "post": {
+        "tags": [
+          "BillingPolicy"
+        ],
+        "summary": "Refresh the billing policy provisioning status.",
+        "operationId": "RefreshProvisioningStatus",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "billingPolicyId",
+            "description": "The billing policy ID",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/BillingPolicyResponseModel"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/licensing/billingPolicies/{billingPolicyId}/environments/add": {
+      "post": {
+        "tags": [
+          "BillingPolicyEnvironment"
+        ],
+        "summary": "Link billing policy ID with environments.",
+        "operationId": "AddBillingPolicyEnvironment",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "billingPolicyId",
+            "description": "The billing policy ID",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Model to represents the list of environments to be linked",
+            "schema": {
+              "$ref": "#/definitions/BillingPolicyEnvironmentAddRequestModel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/licensing/billingPolicies/{billingPolicyId}/environments/remove": {
+      "post": {
+        "tags": [
+          "BillingPolicyEnvironment"
+        ],
+        "summary": "Unlink billing policy ID from environments.",
+        "operationId": "RemoveBillingPolicyEnvironment",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "billingPolicyId",
+            "description": "The billing policy Id",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Model to represents the list of environments to be unlinked",
+            "schema": {
+              "$ref": "#/definitions/BillingPolicyEnvironmentRemoveRequestModel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/licensing/environments/{environmentId}/billingPolicy": {
+      "get": {
+        "tags": [
+          "EnvironmentBillingPolicy"
+        ],
+        "summary": "Get the linked billing policy details for an environment.",
+        "operationId": "GetEnvironmentBillingPolicy",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/BillingPolicyResponseModel"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "BillingInstrumentModel": {
+      "type": "object",
+      "properties": {
+        "subscriptionId": {
+          "type": "string"
+        },
+        "resourceGroup": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        }
+      }
+    },
+    "BillingPolicyEnvironmentAddRequestModel": {
+      "type": "object",
+      "properties": {
+        "environmentIds": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "BillingPolicyEnvironmentRemoveRequestModel": {
+      "type": "object",
+      "properties": {
+        "environmentIds": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "BillingPolicyEnvironmentResponseModelV1": {
+      "type": "object",
+      "properties": {
+        "billingPolicyId": {
+          "type": "string"
+        },
+        "environmentId": {
+          "type": "string"
+        }
+      }
+    },
+    "BillingPolicyEnvironmentResponseModelV1ResponseWithOdataContinuation": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/BillingPolicyEnvironmentResponseModelV1"
+          }
+        },
+        "@odata.nextLink": {
+          "type": "string"
+        }
+      }
+    },
+    "BillingPolicyPostRequestModel": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "location": {
+          "type": "string"
+        },
+        "billingInstrument": {
+          "$ref": "#/definitions/BillingInstrumentModel"
+        },
+        "status": {
+          "$ref": "#/definitions/BillingPolicyStatus"
+        }
+      }
+    },
+    "BillingPolicyPutRequestModel": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "status": {
+          "$ref": "#/definitions/BillingPolicyStatus"
+        }
+      }
+    },
+    "BillingPolicyResponseModel": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "status": {
+          "$ref": "#/definitions/BillingPolicyStatus"
+        },
+        "location": {
+          "type": "string"
+        },
+        "billingInstrument": {
+          "$ref": "#/definitions/BillingInstrumentModel"
+        },
+        "createdOn": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "createdBy": {
+          "$ref": "#/definitions/Principal"
+        },
+        "lastModifiedOn": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "lastModifiedBy": {
+          "$ref": "#/definitions/Principal"
+        }
+      }
+    },
+    "BillingPolicyResponseModelResponseWithOdataContinuation": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/BillingPolicyResponseModel"
+          }
+        },
+        "@odata.nextLink": {
+          "type": "string"
+        }
+      }
+    },
+    "BillingPolicyStatus": {
+      "enum": [
+        "Enabled",
+        "Disabled",
+        "DisabledBySubscription",
+        "Deleted"
+      ],
+      "type": "string"
+    },
+    "PayAsYouGoState": {
+      "enum": [
+        "Enabled",
+        "Disabled"
+      ],
+      "type": "string"
+    },
+    "Principal": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "type": {
+          "$ref": "#/definitions/PrincipalType"
+        }
+      }
+    },
+    "PrincipalType": {
+      "enum": [
+        "None",
+        "Application",
+        "User",
+        "DelegatedAdmin"
+      ],
+      "type": "string"
+    }
+  },
+  "securityDefinitions": {
+    "oauth2": {
+      "type": "oauth2",
+      "flow": "implicit",
+      "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/authorize?resource=https://api.powerplatform.com",
+      "tokenUrl": "https://login.microsoftonline.com/common/oauth2/token",
+      "description": "Azure Active Directory OAuth2"
+    }
+  },
+  "security": [
+    {
+      "oauth2": [ ]
+    }
+  ]
+}
