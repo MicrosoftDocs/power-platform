@@ -281,7 +281,7 @@ Guidance: This guidance is specific to flows that run under a service account as
    - All the users who has credentials of the service account and the service account need a Power App/Dynamics 365 license. 
    - If they don’t have a Power App/Dynamics 365 license, all the users and the service account need Power Automate user licenses.
    - Alternatively, the flow can be licensed with a per flow license and none of the users/service account needs a license. 
- - Multiple users sharing credentials of a service account and using premium flows with one premium per user license assigned to the service account is considered multiplexing and the flow is not compliant. 
+  - Multiple users sharing credentials of a service account and using premium flows with one premium per user license assigned to the service account is considered multiplexing and the flow is not compliant. 
 
 > [!NOTE]
 > The guidance is specific to service accounts used as flow owners or run only users. Flows using service accounts as connections or co-owners are not impacted by this guidance. 
