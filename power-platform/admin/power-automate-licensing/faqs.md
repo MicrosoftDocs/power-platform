@@ -272,19 +272,19 @@ Definitions:
  - **Normal users**: These are the regular synchronized users from Azure AD.
 
 Guidance: This guidance is specific to flows that run under a service account as the owner of the flow. If you want to run your flow under a service account, here are the best practices:
- - If the flow only uses standard connectors and no premium features, all the users who have access to the service account can have Microsoft/Office 365 license, Power Automate Free, or any Power Automate premium license. 
+ - If the flow only uses standard connectors and no premium features, all the users who have the credentials of the service account can have Microsoft/Office 365 license, Power Automate Free, or any Power Automate premium license. 
    - If the flow uses premium features (premium connectors, Robotic process Automation, custom connectors, on prem gateway, Business process flows): 
    - The service account is used by a limited set of users. In this case, licensing all the users and the service account is enough. 
-   - The service account has access to many users. In this case, it is recommended to assign a per flow license to the flow to ensure any new users adding to the account are automatically compliant. 
+   - The service account is used by many users. In this case, it is recommended to assign a per flow license to the flow to ensure any new users adding to the account are automatically compliant. 
  - If the flow is a manual/Power App triggered flow/Dataverse ‘Run as user’ flow, all users who run the flow will need a premium license or the flow needs a per flow license. Check out this FAQ on [who needs to purchase a premium license](faqs.md#who-needs-to-purchase-a-premium-license).   
  - Premium flow is in context (the flow shares the data sources of the app) of a Power App/Dynamics App: 
-   - All the users who have access to the service account and the service account need a Power App/Dynamics 365 license. 
+   - All the users who has credentials of the service account and the service account need a Power App/Dynamics 365 license. 
    - If they don’t have a Power App/Dynamics 365 license, all the users and the service account need Power Automate user licenses.
    - Alternatively, the flow can be licensed with a per flow license and none of the users/service account needs a license. 
- - Multiple users accessing a premium flow with one premium per user license assigned to the service account are considered multiplexing and the flow is not compliant. 
+ - Multiple users sharing credentials of a service account and using premium flows with one premium per user license assigned to the service account is considered multiplexing and the flow is not compliant. 
 
 > [!NOTE]
-> Flows using service accounts as connections or co-owners are not impacted by this guidance. 
+> The guidance is specific to service accounts used as flow owners or run only users. Flows using service accounts as connections or co-owners are not impacted by this guidance. 
 > 
 > This is guidance only and not hard enforcement. Admins are responsible for licensing all the flows correctly to stay compliant. 
 
