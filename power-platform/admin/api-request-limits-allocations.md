@@ -145,7 +145,7 @@ To view the consumption of Power Platform requests for licensed users, non-licen
 
 7. Once the report is ready, select **Download** to download the report as an Excel CSV file.
 
-These reports are currently in preview. During the preview the licensed user report will show correct entitlements for users licensed via the Power Apps Per App license or Power Apps Per App pay-as-you-go meter. Entitlements for such users will shown as 0 when in fact they should be shown as 6000 (requests per 24h period) as outlined above. 
+These reports are currently in preview. During the preview the licensed user report will not show correct entitlements for users licensed via the Power Apps Per App license or Power Apps Per App pay-as-you-go meter. Entitlements for such users will shown as 0 when in fact they should be shown as 6000 (requests per 24h period) as outlined above. 
 
 ### Licensed User report
 
@@ -217,7 +217,7 @@ Reporting for Power Platform Request usage in preview is available now in the Po
 
 ### What are the timelines for Power Platform Request limits?
 
-The concept of limits was first introduced in late 2019 and documented limits were substantially increased in late 2021. Preview reporting for Power Platform Requests became available in April 2022. See [FAQs](power-automate-licensing/types.md#faqs).
+The concept of limits was first introduced in late 2019 and documented limits were substantially increased in late 2021. Preview reporting for Power Platform Requests became available in April 2022. Any potential high usage enforcement will not start until at least six months after reports have been made generally available. However, please note, Power Automate will continue to throttle at transition limits until enforcement. See [FAQs](power-automate-licensing/types#faqs).
 
 ### What account's limits are used for classic workflows or Power Automate flows?
 
