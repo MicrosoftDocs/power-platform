@@ -131,10 +131,7 @@ $UrlPatterns = @{
 New-PowerAppPolicyUrlPatterns -TenantId $TenantId -PolicyName $PolicyId -NewUrlPatterns $UrlPatterns
 ```
 
-## Known limitation
-
-When an environment admin creates or updates an environment-level DLP policy, they can only view custom connectors for which they are an owner or that have been shared with them.
-
-
-
-
+## Known limitations
+- The use of custom connectors is not enforced by DLP in apps that were last published before October 2020.
+- When an environment admin creates or updates an environment-level DLP policy, they can only view custom connectors for which they are an owner or that have been shared with them.
+- If a custom connector has been added by name to a tenant-level policy (by using PowerShell cmdlets), the custom connector URL pattern rules will be superseded by the existing classification for the connector by name. Use the Remove-DlpPolicy cmdlet to remove the custom connectors from the policy for these rules to take effect. We recommend that tenant-level policies only use custom connector host URL patterns. Don't manage custom connectors by name in tenant-level policies because individual custom connector scope is limited to the environment boundary and a custom connector's name has no significance at the tenant level.
