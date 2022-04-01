@@ -98,7 +98,7 @@ If a tenant has multiple types of subscriptions, their non-licensed user request
 
 Power Platform Request limits have been updated and substantially increased in late 2021 to be at levels that are significantly higher than typical usage for most customers. With the updated limits, expectations are that very few users would exceed the documented limits. If you anticipate exceeding the non-licensed user limits, reach out to your reseller or Microsoft Account team to discuss a custom solution.
 
-Any possible high usage enforcement won't happen until six months after Power Platform Request usage reporting has been generally available in the Power Platform Admin Center. Admin reports are expected to be available in the first quarter of calendar 2022.
+Any possible high usage enforcement won't happen until six months after Power Platform Request usage reporting has been generally available in the Power Platform Admin Center.
 
 Microsoft reserves the right to enforce  limits for overages. If a customer encounters high usage enforcement, they can expect some form of throttling. Customers can purchase additional capacity to avoid high usage enforcement or move their environment to [pay-as-you-go](pay-as-you-go-overview.md) and pay for actual usage above daily limits.  
 
@@ -144,7 +144,11 @@ To view the consumption of Power Platform requests for licensed users, non-licen
 
 7. Once the report is ready, select **Download** to download the report as an Excel CSV file.
 
-These reports are currently in preview. During the preview, the licensed user report won't show correct entitlements for users licensed via the Power Apps Per App license or Power Apps Per App pay-as-you-go meter. Entitlements for such users will show as 0 when in fact they should be shown as 6000 (requests per 24 h period) as outlined above. 
+> [!NOTE]
+> These reports are currently in preview. There are two limitations with the Licensed User preview report. 
+> 
+> - The entitlements for Licensed Users are showing up in the reporting per user per day per environment. The limits should apply at the per user per day level. When looking at reporting, understand that the limits are per user per day, using the entitlement quantity only one time per day, not summing entitlements for the same user potentially multiple times. 
+> - The Licensed User report will not show correct entitlements for users licensed via the Power Apps per app license or Power Apps per app pay-as-you-go meter. Entitlements for such users will be shown as 0 when in fact they should be shown as 6000 (request per 24-hour period as outlined above).
 
 ### Licensed User report
 

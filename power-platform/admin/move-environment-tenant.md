@@ -122,7 +122,7 @@ You'll also need to provide the following information:
 - Power Apps or Power Automate
 - Power Virtual Agents
 - Dynamics 365 Customer Voice
-- Power Apps portals
+- Power Apps Portals
 - Power Apps Checker App
 - Café X
 - Forms Pro
@@ -165,7 +165,7 @@ For administrative access users:
       Note: If the destination user is not assigned any license, the migration will fail.
    3. Save the CSV file which has both full access users and administrative access users mapped.
 
-### Do the following steps for Power Apps, Power Automate, Power Virtual Agents, Power Apps portals, and Marketing before and after the migration: 
+### Do the following steps for Power Apps, Power Automate, Power Virtual Agents, Power Apps Portals, and Marketing before and after the migration: 
 
 #### For Power Apps and Power Automate: 
 
@@ -212,16 +212,16 @@ After the migration:
 2. Select **Import** and use the file selector to pick the packages exported from the above steps.
 3. Confirm that the import was successfully completed by checking the solution contents in the target environment. 
 
-#### For Power Apps portals (must be done for each portal in the environment(s)): 
+#### For Power Apps Portals (must be done for each portal in the environment(s)): 
               
 Before the migration: 
 1. Sign in to the environment.
-2. Open the [Power Apps portals admin center](/powerapps/maker/portals/admin/admin-overview#open-power-apps-portals-admin-center).
+2. Open the [Power Apps Portals admin center](/powerapps/maker/portals/admin/admin-overview#open-power-apps-portals-admin-center).
 3. [Reset](/powerapps/maker/portals/admin/reset-portal) the portal.
 
 After the migration: 
 1. Sign in to the environment.
-2. Open the [Power Apps portals admin center](/powerapps/maker/portals/admin/admin-overview#open-power-apps-portals-admin-center).
+2. Open the [Power Apps Portals admin center](/powerapps/maker/portals/admin/admin-overview#open-power-apps-portals-admin-center).
 3. Provision the portal with the same portal type and language.
 
 > [!NOTE]

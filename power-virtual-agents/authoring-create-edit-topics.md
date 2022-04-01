@@ -171,7 +171,7 @@ Additionally, you can **Add a condition** when inserting a node after a **Questi
 
 You can [call Power Automate Flows](advanced-flow.md) and [insert authentication nodes](advanced-end-user-authentication.md) by selecting **Call an action**.
 
-If you have configured hand off to Omnichannel with voice-based capabilities, you'll also see [additional actions](configuration-hand-off-omnichannel.md#voice-based-capabilities).
+If you have configured hand off to omnichannel with voice-based capabilities, you'll also see [additional actions](configuration-hand-off-omnichannel.md#voice-based-capabilities).
 
 #### Show a message
 
@@ -299,7 +299,7 @@ To pass a literal value, type the value you want to use as the input instead of 
 
 When you end the conversation, you can have a survey appear that asks the user if their question or issue was answered or resolved correctly. This information is collected under the [customer satisfaction analytics page](analytics-csat.md).
 
-You can also have the conversation [handed over to a live agent](advanced-hand-off.md) if you're using a suitable customer service portal, such as Omnichannel for Customer Service.
+You can also have the conversation [handed over to a live agent](advanced-hand-off.md) if you're using a suitable customer service portal, such as omnichannel for Customer Service.
 
 1. At the end of a response that resolves the user's issue or answers the question, select **End the conversation**.
 
