@@ -22,8 +22,6 @@ search.app:
 ---
 # Requests limits and allocations
 
-<!-- do not publish, working with PM -->
-
 Originally announced in October 2019, Power Platform Request limits exist to help ensure service levels, availability, and quality of the platform. There are limits to the number of requests users can make each day across Power Apps, Power Automate, Power Virtual Agents, and Dynamics 365 applications.
 
 ## What is a Microsoft Power Platform request?
@@ -33,7 +31,7 @@ Requests in Microsoft Power Platform consist of various actions that a user make
 - **Power Apps** – all API requests to connectors and Microsoft Dataverse.
 - **Power Automate** – all API requests to connectors, process advisor analysis, HTTP actions, and built-in actions from initializing variables to a simple compose action. Both succeeded and failed actions count towards these limits. Additionally, retries and other requests from pagination count as action executions as well. For more information, see [What counts as Power Platform request?](power-automate-licensing/types.md#what-counts-as-power-platform-request)
 - **Power Virtual Agents** - API requests (or calls) to Power Automate flows from within a chatbot conversation. 
-- **Dataverse** – all create, read, update, and delete (CRUD), assign, and share operations including user-driven and internal system requests required to complete CRUD transactions, and special operations like share or assign. These can be from any client or application (including Dynamics 365) and using any endpoint (SOAP or REST). These include, but are not limited to, plug-ins, classic workflows, and custom controls making the earlier-mentioned operations.
+- **Dataverse** – all create, read, update, and delete (CRUD), assign, and share operations including user-driven and internal system requests required to complete CRUD transactions, and special operations like share or assign. These can be from any client or application (including Dynamics 365) and using any endpoint (SOAP or REST). These include, but aren't limited to, plug-ins, classic workflows, and custom controls making the earlier-mentioned operations.
 
 > [!NOTE]
 > For Dataverse, there is a small set of system internal operations that are excluded from limits, such as login, logout, and system metadata operations.
@@ -42,7 +40,7 @@ The sections below describe the request types and the limits established for eac
 
 ## Licensed user request limits
 
-All the users of Microsoft Power Platform have limits on the number of requests based on the license they are assigned. The following table defines the number of requests a user can make in a 24-hour period:
+All the users of Microsoft Power Platform have limits on the number of requests based on the license they're assigned. The following table defines the number of requests a user can make in a 24-hour period:
 
 | Products | Requests per paid license per 24 hours |
 |--------------|-------------------|
@@ -55,13 +53,13 @@ All the users of Microsoft Power Platform have limits on the number of requests 
 
 <sup>2</sup> This category includes the Power Apps pay-as-you-go plan, and paid licenses Power Apps per app plan, Dynamics 365 Team Member, Dynamics CRM Online Basic, Dynamics CRM Online Essential, Dynamics AX Self-Serve, Microsoft 365 licenses, and Microsoft Project Online (Plan 1, Plan 3, and Plan 5). See **Appendix B** in the [Licensing Guide](https://go.microsoft.com/fwlink/p/?linkid=2085130) for Microsoft 365 licenses that include Power Apps and Power Automate capabilities. 
 
-<sup>3</sup> The Power Automate per flow plan allows capacity to be specifically reserved for a single flow, irrespective of the owner of the flow. This does not use the non-licensed user request limits at the tenant level.
+<sup>3</sup> The Power Automate per flow plan allows capacity to be specifically reserved for a single flow, irrespective of the owner of the flow. This doesn't use the non-licensed user request limits at the tenant level.
 
 <sup>4</sup> Power Virtual Agents requests are counted from Power Automate flows triggered from a Power Virtual Agents chatbot.  Power Virtual Agents initial sessions pack and additional sessions pack both receive the same daily Power Platform Request limits.
 
 ### Other details
 
-Power Platform Request limits are only included with paid base licenses in the Dynamics 365 'base + attach' licensing model. Attach licenses do not include seperate limits. For example, if a user has a Dynamics 365 Customer Service Enterprise as the base license and Dynamics 365 Sales Enterprise as an attach license, the total request limit would be what is provided by the base license - Dynamics 365 Customer Service Enterprise.
+Power Platform Request limits are only included with paid base licenses in the Dynamics 365 'base + attach' licensing model. Attach licenses don't include separate limits. For example, if a user has a Dynamics 365 Customer Service Enterprise as the base license and Dynamics 365 Sales Enterprise as an attach license, the total request limit would be what is provided by the base license - Dynamics 365 Customer Service Enterprise.
 
 If a user has multiple paid licenses assigned to them, the total number of requests allowed would be the sum of requests allowed for each license. For example, if a user has both a Dynamics 365 Customer Service Enterprise base license and a Power Apps per user license then that user will have a total of 40,000 + 40,000 = 80,000 requests available per 24 hours.
 
@@ -69,7 +67,7 @@ Power Virtual Agents requests are counted from Power Automate flows triggered fr
 
 ## Non-licensed user request limits
 
-A separate limit is established for certain activities(eg: A background process that migrates data between databases) that do not require a user to interact with the service. These limits are defined and pooled at the tenant level. Dataverse enables you to have identities that do not require any user to interact with the service. These include:
+A separate limit is established for certain activities(for example: A background process that migrates data between databases) that don't require a user to interact with the service. These limits are defined and pooled at the tenant level. Dataverse enables you to have identities that don't require any user to interact with the service. These include:
 
 - [Application users](create-users.md#create-an-application-user)
 - [Non-interactive users](create-users.md#create-a-non-interactive-user-account)
@@ -100,13 +98,13 @@ If a tenant has multiple types of subscriptions, their non-licensed user request
 
 Power Platform Request limits have been updated and substantially increased in late 2021 to be at levels that are significantly higher than typical usage for most customers. With the updated limits, expectations are that very few users would exceed the documented limits. If you anticipate exceeding the non-licensed user limits, reach out to your reseller or Microsoft Account team to discuss a custom solution.
 
-Any possible high usage enforcement will not happen until six months after Power Platform Request usage reporting has been generally available in the Power Platform Admin Center. Admin reports are expected to be available in the first quarter of calendar 2022.
+Any possible high usage enforcement won't happen until six months after Power Platform Request usage reporting has been generally available in the Power Platform Admin Center. Admin reports are expected to be available in the first quarter of calendar 2022.
 
 Microsoft reserves the right to enforce  limits for overages. If a customer encounters high usage enforcement, they can expect some form of throttling. Customers can purchase additional capacity to avoid high usage enforcement or move their environment to [pay-as-you-go](pay-as-you-go-overview.md) and pay for actual usage above daily limits.  
 
 ## Power Platform Request capacity add-on
 
-Customers that observe in reporting that they are frequently using more requests than limits can avoid high usage enforcement by purchasing the Power Platform Request capacity add-on. This add-on allows customers to increase the limits for specific high usage licensed users or high usage non-licensed users. Each capacity add-on raises the request limit by another 50,000 per 24 hours. Multiple capacity add-ons can be assigned to increase limits.
+Customers that observe in reporting that they're frequently using more requests than limits can avoid high usage enforcement by purchasing the Power Platform Request capacity add-on. This add-on allows customers to increase the limits for specific high usage licensed users or high usage non-licensed users. Each capacity add-on raises the request limit by another 50,000 per 24 hours. Multiple capacity add-ons can be assigned to increase limits.
 
 > [!NOTE]
 > Currently, capacity add-ons cannot be assigned to users (including application, administrative, and non-interactive users). The functionality for assignment of capacity add-ons will be aligned to the timing of high usage enforcement.
@@ -140,13 +138,13 @@ To view the consumption of Power Platform requests for licensed users, non-licen
 
 5. Select **Microsoft Power Platform requests** in the **Choose a report** box.
 
-   :::image type="content" source="media/request-download-report.png" alt-text="Image showing the drop down menu for the Power Platform requests reports.":::
+   :::image type="content" source="media/request-download-report.png" alt-text="Image showing the drop-down menu for the Power Platform requests reports.":::
 
 6. Select the required type of report and then select **Submit**.
 
 7. Once the report is ready, select **Download** to download the report as an Excel CSV file.
 
-These reports are currently in preview. During the preview the licensed user report will not show correct entitlements for users licensed via the Power Apps Per App license or Power Apps Per App pay-as-you-go meter. Entitlements for such users will shown as 0 when in fact they should be shown as 6000 (requests per 24h period) as outlined above. 
+These reports are currently in preview. During the preview, the licensed user report won't show correct entitlements for users licensed via the Power Apps Per App license or Power Apps Per App pay-as-you-go meter. Entitlements for such users will show as 0 when in fact they should be shown as 6000 (requests per 24 h period) as outlined above. 
 
 ### Licensed User report
 
@@ -157,7 +155,7 @@ The [Licensed User](api-request-limits-allocations.md#licensed-user-request-limi
 | Environment ID | The unique Power Platform environment identifier. |
 | Environment Name | The display name of environment.                         |
 | Caller ID                              | The unique identifier of the calling identity which maps to Active Directory ID. This can be null or empty.    |
-| Caller Type | The type of caller identity. Applicable values for licensed user report is User. |
+| Caller Type | The type of caller identity. Applicable value for licensed user report is User. |
 | Usage Datetime | The date and time of when the usage was captured (UTC). | 
 | Entitled quantity | The total of any Power Platform request limits for the user. | 
 | Total consumed quantity | The total usage across all the types of Requests (Dataverse, Power Apps, and Power Automate). |
@@ -165,7 +163,7 @@ The [Licensed User](api-request-limits-allocations.md#licensed-user-request-limi
 | Power Automate Requests | Number of Power Platform requests originating from Power Automate. | 
 | Power Apps Requests | Number of Power Platform requests originating from Power App. | 
 
-Here is a sample of a detailed usage report:
+Here's a sample of a detailed usage report:
 
 :::image type="content" source="media/ppr-licensed-user-report.png" alt-text="Image showing an example of the licensed user report." lightbox="media/ppr-licensed-user-report.png":::
 
@@ -187,7 +185,7 @@ The [Non-licensed User](api-request-limits-allocations.md#non-licensed-user-requ
 | Usage Datetime | 	The date and time of when the usage was captured (UTC). |
 | Consumed Quantity | 	Usage of Power Platform requests.  |
 
-Here is a sample of a detailed usage report:
+Here's a sample of a detailed usage report:
 
 :::image type="content" source="media/non-licensed-user-report.png" alt-text="Image showing an example of the non-licensed user report." lightbox="media/non-licensed-user-report.png":::
 
@@ -206,7 +204,7 @@ The Per Flow Licensed Flows downloadable report contains the following fields:
 | Entitled Quantity	| The value of any included entitlement for the flow.  |
 | Consumed Quantity	| Usage of Power Platform requests.  |
 
-Here is a sample of a detailed usage report:
+Here's a sample of a detailed usage report:
 
 :::image type="content" source="media/ppr-per-flow-licensed-flows.png" alt-text="Image showing an example of the per flow-licensed report.":::
 
@@ -218,7 +216,7 @@ Reporting for Power Platform Request usage in preview is available now in the Po
 
 ### What are the timelines for Power Platform Request limits?
 
-The concept of limits was first introduced in late 2019 and documented limits were substantially increased in late 2021. Preview reporting for Power Platform Requests became available in April 2022. Any potential high usage enforcement will not start until at least six months after reports have been made generally available. However, please note, Power Automate will continue to throttle at transition limits until enforcement. See [FAQs](power-automate-licensing/types.md#faqs).
+The concept of limits was first introduced in late 2019 and documented limits were substantially increased in late 2021. Preview reporting for Power Platform Requests became available in April 2022. Any potential high usage enforcement won't start until at least six months after reports have been made generally available. However, note that Power Automate will continue to throttle at transition limits until enforcement. See [FAQs](power-automate-licensing/types.md#faqs).
 
 ### What account's limits are used for classic workflows or Power Automate flows?
 
@@ -226,7 +224,7 @@ It depends if the process is run on-demand or in the background. Instant flows, 
 
 ### Do the Microsoft Power Platform request limits roll over from day to day or month to month?
 
-No. All the Microsoft Power Platform Request exist for a 24-hour period. If they aren't consumed, they do not roll over to the next day nor do they accumulate within a month.
+No. All the Microsoft Power Platform requests exist for a 24-hour period. If they aren't consumed, they don't roll over to the next day nor do they accumulate within a month.
 
 ### Does each application user, non-interactive user, administrative user, or SYSTEM user get their own tenant-level limit?
 
@@ -234,11 +232,11 @@ No. Tenant level limits are shared across all application users, non-interactive
 
 ### Do the requests generated from classic Dataverse workflows and plug-ins in Dataverse count against the request limits?
 
-Yes, if these requests are making CRUD, assign, or share–type requests, they will count. In the case of classic workflows, this includes actions such as checking conditions, starting child workflows, or stopping workflows. However, requests generated internally from the platform aren't counted, such as: sdkmessagerequest, solutioncomponentdefinition, and ribbonclientmetadatareporting.
+Yes, if these requests are making CRUD, assign, or share–type requests, they'll count. In the case of classic workflows, this includes actions such as checking conditions, starting child workflows, or stopping workflows. However, requests generated internally from the platform aren't counted, such as: sdkmessagerequest, solutioncomponentdefinition, and ribbonclientmetadatareporting.
 
 ### Should I use a third-party data integration tool instead of Power Automate to avoid hitting my limits?
 
-No, third-party data integration tools are subject to the exact same limits as scheduled, instant, or automated flows. Thus, there is no difference whether you choose to use Power Automate or a third-party tool. Moreover, requests from Power Automate to the Dataverse are not double-counted, a flow that calls one action will only count as one request against their limit, not two.
+No, third-party data integration tools are subject to the exact same limits as scheduled, instant, or automated flows. Thus, there's no difference whether you choose to use Power Automate or a third-party tool. Moreover, requests from Power Automate to the Dataverse aren't double-counted, a flow that calls one action will only count as one request against their limit, not two.
 
 
 ### See also
