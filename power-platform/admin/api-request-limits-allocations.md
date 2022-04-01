@@ -4,13 +4,14 @@ description: Requests limits and allocations
 author: cpdSeattle
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/30/2022
+ms.date: 04/01/2022
 ms.subservice: admin
 ms.author: camdebay 
 ms.reviewer: jimholtz
 contributors: 
   - viveke 
   - snandi 
+  - PriyaKodukula 
 search.audienceType: 
   - admin
 search.app:
