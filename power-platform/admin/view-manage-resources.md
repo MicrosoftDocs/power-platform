@@ -2,9 +2,8 @@
 title: "Resource overview | MicrosoftDocs"
 description: About resources
 author: jimholtz
-
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: overview
 ms.date: 05/05/2020
 ms.subservice: admin
 ms.author: jimholtz 
