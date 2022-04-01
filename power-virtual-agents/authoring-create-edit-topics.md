@@ -1,8 +1,8 @@
 ---
-title: "Use topics to design a chatbot conversation"
-description: "The authoring canvas provides an intuitive, no-code way of creating a bot that can help answer user questions, perform actions, and solve issues."
+title: Use topics to design a chatbot conversation
+description: Use conversation topics in the Power Virtual Agents authoring canvas for an intuitive, no-code way to create a bot that can help answer user questions, perform actions, and solve issues.
 keywords: "PVA"
-ms.date: 02/23/2022
+ms.date: 04/01/2022
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -17,7 +17,7 @@ searchScope:
 
 # Create and edit topics in your Power Virtual Agents bot
 
-Select the version of Power Virtual Agents you're using here:
+Select the version of Power Virtual Agents you're using:
 
 > [!div class="op_single_selector"]
 >
@@ -26,17 +26,17 @@ Select the version of Power Virtual Agents you're using here:
 
 In Power Virtual Agents, a topic defines a how a bot conversation plays out.
 
-You can author topics by [customizing provided templates](authoring-template-topics.md), create new topics from scratch, or [get suggestions from existing help sites](advanced-create-topics-from-web.md).
+To author topics, [customize provided templates](authoring-template-topics.md), create topics from scratch, or [get suggestions from existing help sites](advanced-create-topics-from-web.md).
 
-A topic has trigger phrases — phrases, keywords, or questions that a user is likely to type that is related to a specific issue  — and conversation nodes — what you use to define how a bot should respond and what it should do.
+A topic has *trigger phrases* and *conversation nodes*. Trigger phrases are phrases, keywords, and questions that a user is likely to type that are related to a specific issue. Conversation nodes define how a bot should respond to a trigger phrase and what it should do.
 
-The AI uses natural language understanding to parse what a customer actually types and find the most appropriate trigger phrase or node.
+The AI uses natural language understanding (NLU) to parse what a customer types and find the most appropriate trigger phrase or node.
 
-For example, a user might type "Open hours" into your bot—the AI will be able to match that to the **Store hours** topic and begin a conversation that asks which store the customer is interested in, and then display the hours the store is open.
+For example, a user might type "Open hours" into your bot. The AI matches that to the **Store hours** topic, begins a conversation that asks which store the customer is interested in, and then displays the hours the store is open.
 
-You can see how the bot conversation works in practice by testing it in the **Test bot** pane. This lets you fine-tune the topic until you are ready to deploy it without having to exit the Power Virtual Agents portal.
+The **Test bot** pane shows how the bot conversation plays out at every step. You can use the **Test bot** pane to fine-tune a topic without having to exit the Power Virtual Agents portal.
 
-For bot and topic limits, see the [Quotas, limits, and configuration values](requirements-quotas.md) topic.
+For bot and topic limits, see [Quotas, limits, and configuration values](requirements-quotas.md).
 
 ## Prerequisites
 
@@ -44,24 +44,23 @@ For bot and topic limits, see the [Quotas, limits, and configuration values](req
 
 ## Use system and sample topics
 
-When you create a bot, a number of topics will be automatically created for you.
-
-:::image type="content" source="media/authoring-create-edit-topics/topics-system.png" alt-text="Four lesson topics and a number of system topics are in the Topics list.":::
-
-These topics fall into two categories:
+When you create a bot, several topics are created for you. These automatically created topics fall into two categories:
   
-- Four prepopulated user topics that are titled as lessons. These [lesson topics](authoring-template-topics.md) can be used to help understand simple to complex ways of using nodes to create bot conversations. You can edit these topics in the same manner as for topics you create. You can also choose to delete them entirely.
-- A number of system topics. These are prepopulated topics that you are likely to need during a bot conversation. You can't delete, disable, or edit the trigger phrases of these topics, but you can customize the nodes on the authoring canvas. We recommend not customizing these topics until you are comfortable with creating an end-to-end bot conversation.
+- Lesson topics: Four [lesson topics](authoring-template-topics.md) help you understand simple to complex ways to use nodes to create bot conversations. You can edit these topics just like topics you create, or delete them entirely.
+- System topics: Several topics you're likely to need during a bot conversation. You can't delete or disable the topics or edit their trigger phrases, but you can customize the nodes on the authoring canvas. We recommend that you don't customize these topics until you're comfortable creating an end-to-end bot conversation.
+
+:::image type="content" source="media/authoring-create-edit-topics/topics-system.png" alt-text="Screenshot of the Topics list showing lesson topics and system topics.":::
 
 ## Create a topic
 
-1. Go to the **Topics** tab on the side pane to open the topics page.
+1. In the left pane, select **Topics**.
 
-   :::image type="content" source="media/authoring-create-edit-topics/topics-menu.png" alt-text="Select Topics on the side navigation menu." border="false":::
+   :::image type="content" source="media/authoring-create-edit-topics/topics-menu.png" alt-text="Screenshot of the Power Virtual Agents navigation pane, highlighting Topics.":::
 
-1. On the topics page, select **New topic**.
+1. Select **New topic**.
+<!-- I stopped here -->
 
-   :::image type="content" source="media/authoring-create-edit-topics/topics-new.png" alt-text="Select New topic at the top of the Topics page." border="false":::
+   :::image type="content" source="media/authoring-create-edit-topics/topics-new.png" alt-text="Screenshot elect New topic at the top of the Topics page." border="false":::
 
 1. When you enter the authoring canvas, the **Trigger phrases** pane should open. If it doesn't open, select **Trigger phrases**.
 
