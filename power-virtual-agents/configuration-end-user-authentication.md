@@ -16,7 +16,7 @@ ms.collection: virtual-agent
 <!-- Please change all references to "end-user" to "user" (or when appropriate, "customer") IAW Microsoft Style Guide. -->
 <!-- IAW Microsoft C+AI Style Guide, "Azure AD" and "Azure Active Directory" shouldn't be versioned. Also, I think I read that v1 is EOL this summer. Maybe remove "v1" and "v2" references? If you keep them, please standardize on either uc V or lc v. I can't find any guidance on which is preferred. -->
 
-Select the version of Power Virtual Agents you're using:
+Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
 >
@@ -43,10 +43,8 @@ Power Virtual Agents supports the following authentication providers:
 ## Prerequisites
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
-<!-- This isn't a great include file. The link text is "Learn more about what you can do with Power Virtual Agents," nothing to do with medical and emergency use. Is there an include file that provides that information directly? -->
 
-## Choose the best authentication option
-<!-- "Best" is a judgment. Maybe "right" is more appropriate? -->
+## Choose an authentication option
 
 Power Virtual Agents supports several authentication options. Choose the one that meets your needs.
 
@@ -102,8 +100,7 @@ Once the configuration is saved, make sure to publish your bot so the changes ta
 > [!NOTE]
 > Authentication changes only take effect after the bot is published.
 
-## Required user sign-in and bot sharing
-<!-- Note the additional hyphen in "sign-in"; this may mean updating bookmarks elsewhere, sorry. I've been trying to avoid changing headings, but this one needs it. -->
+## Required user sign in and bot sharing
 
 **Require users to sign in** determines whether a user needs to sign in before talking with the bot. It's available only with **Only for Teams** and **Manual** authentication. We highly recommended that you turn on this setting when your bot needs to access sensitive or restricted information.
 
@@ -117,8 +114,7 @@ The **Require users to sign in** topic is automatically triggered for any user w
 
 The topic is read-only and can't be customized. To see it, select **Go to the authoring canvas**.
 
-### Control who can chat with bot in the organization
-<!-- Please add "the" above ("...who can chat with the bot...") -->
+### Control who can chat with the bot in the organization
 
 Your bot's authentication and **Require user to sign in** setting in combination determines whether you can [share the bot](admin-share-bots.md) to control who in your organization can chat with it. The authentication setting doesn't affect sharing a bot for collaboration.
 
@@ -128,16 +124,15 @@ Your bot's authentication and **Require user to sign in** setting in combination
 
 - **Manual (for any channel including Teams)**:
   
-  - If the identity provider is either **Azure Active Directory** or **Azure Active Directory V2**, you can turn on **Require users to sign in** to control who in your organization can chat with the bot using bot sharing.
+  - If the service provider is either **Azure Active Directory** or **Azure Active Directory V2**, you can turn on **Require users to sign in** to control who in your organization can chat with the bot using bot sharing.
   
-  - If the identity provider is **Generic OAuth2**, you can turn **Require users to sign in** on or off. When it's turned on, a user who signs in can chat with the bot. You can't control which specific users in your organization may chat with the bot using bot sharing.
+  - If the service provider is **Generic OAuth2**, you can turn **Require users to sign in** on or off. When it's turned on, a user who signs in can chat with the bot. You can't control which specific users in your organization may chat with the bot using bot sharing.
 
 When a bot's authentication setting can't control who can chat with it, if you select **Share** on the bot's homepage a message informs you that anyone can chat with your bot.
 
 :::image type="content" source="media/configuration-end-user-authentication/auth-allow-everyone-chat-with-bot.PNG" alt-text="Screenshot of a message stating everyone in the organization can chat with the bot because of its authentication setting.":::
 
-## Register a new app with your identity provider when using Manual (for any channel including Teams)
-<!-- This heading is too long. Can you just say "...using manual authentication" instead? -->
+## Register a new app with your identity provider
 
 Before you can configure manual authentication in Power Virtual Agents, you need to register a new app with your identity provider and get a Client ID and client secret. This section describes how to do that with the [Azure portal](https://portal.azure.com) for Azure AD. If you have a different identity provider, you should consult its setup instructions.
 
@@ -170,12 +165,11 @@ Make sure to configure the redirect URL to `https://token.botframework.com/.auth
 
 1. Once the registration is complete, the **Overview** page opens. Go to **Authentication** and then select **Add a platform**.
 
-1. On the **configure platforms** blade, select **Web**.
-<!-- IAW Microsoft Style Guide, please rewrite to remove references to blades. -->
+1. Under **Platform configurations** select **Add a platform**, then select **Web**.
 
 1. Under **Redirect URIs**, enter `https://token.botframework.com/.auth/web/redirect`.
 
-1. Under the **Implicit grant** section, select both **Id Tokens** and **Access Tokens**. <!-- Please confirm capitalization -->
+1. Under the **Implicit grant and hybrid flows** section, turn on both **ID tokens (used for implicit and hybrid flows)** and **Access tokens (used for implicit flows)**.
 
 1. Select **Configure** to confirm your changes.
 
@@ -191,7 +185,7 @@ Make sure to configure the redirect URL to `https://token.botframework.com/.auth
 
 1. Select **Add** to create the secret.
 
-1. Store the secret's **Value** in a temporary place, such as an open Notepad document. You'll need it when you configure your bot's authentication.
+1. Store the secret's **Value** in a temporary place. You'll need it when you configure your bot's authentication.
 
 > [!IMPORTANT]
 > If you navigate away from the page, the secret's **Value** is obfuscated and you'll need to generate a new client secret.
@@ -239,7 +233,7 @@ To find this information when you're using Azure AD as your identity provider: G
 
 #### Client secret
 
-Your client secret, obtained when you created the identity provider app registration. This is the value you stored temporarily in, for example, a Notepad document. If you navigate away from the **Certificates & secrets** page before you record the client secret, its **Value** is obfuscated and you'll need to create a new one.
+Your client secret, obtained when you created the identity provider app registration. If you navigate away from the **Certificates & secrets** page before you record the client secret, its **Value** is obfuscated and you'll need to create a new one.
 
 To find this information when you're using Azure AD as your identity provider: Generate a new client secret.
 
