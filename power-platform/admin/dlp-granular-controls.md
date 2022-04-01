@@ -22,7 +22,7 @@ search.app:
   - Flow
 ---
 
-# Granular connector controls
+# Advanced DLP granular connector controls
 
 Although the connector classification capability is very helpful in governing Microsoft Power Platform connectors, fine-grained controls&mdash;such as the ability to block specific connector actions or connection endpoints&mdash;help you strike a balance between productivity and protection.
 
