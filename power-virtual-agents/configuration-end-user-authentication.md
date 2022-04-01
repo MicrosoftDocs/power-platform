@@ -12,8 +12,7 @@ ms.custom: authentication, ceX
 ms.collection: virtual-agent
 ---
 
-# Configure end-user authentication in Power Virtual Agents
-<!-- Please change all references to "end-user" to "user" (or when appropriate, "customer") IAW Microsoft Style Guide. -->
+# Configure user authentication in Power Virtual Agents
 <!-- IAW Microsoft C+AI Style Guide, "Azure AD" and "Azure Active Directory" shouldn't be versioned. Also, I think I read that v1 is EOL this summer. Maybe remove "v1" and "v2" references? If you keep them, please standardize on either uc V or lc v. I can't find any guidance on which is preferred. -->
 
 Select the version of Power Virtual Agents you're using here:
@@ -78,7 +77,7 @@ If you select the **Only for Teams** option, the following variables are availab
 - `UserID`
 - `UserDisplayName`
 
-For more information about these variables and how to use them, see [Add end-user authentication to a Power Virtual Agents bot](advanced-end-user-authentication.md#authentication-variables).
+For more information about these variables and how to use them, see [Add user authentication to a Power Virtual Agents bot](advanced-end-user-authentication.md#authentication-variables).
 
 `AuthToken` and `IsLoggedIn` variables aren't available with this option. If you need an authentication token, use the **Manual** option.
 
@@ -93,7 +92,7 @@ You can configure any Azure AD, Azure AD V2, or OAuth2-compatible identity provi
 - `AuthToken`
 - `IsLoggedIn`
 
-For more information about these variables and how to use them, see [Add end-user authentication to a Power Virtual Agents bot](advanced-end-user-authentication.md#authentication-variables).
+For more information about these variables and how to use them, see [Add user authentication to a Power Virtual Agents bot](advanced-end-user-authentication.md#authentication-variables).
 
 Once the configuration is saved, make sure to publish your bot so the changes take effect.
 
