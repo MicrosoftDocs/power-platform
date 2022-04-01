@@ -1,10 +1,9 @@
 ---
 title: "Copy an environment"
 description: "Learn how to copy apps and data from an environment. Review next steps for administrators in the target environment." 
-
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/18/2022
+ms.date: 03/02/2022
 ms.subservice: admin
 author: ChrisGarty
 ms.author: cgarty
@@ -30,7 +29,7 @@ You can use Copy environment in the Microsoft Power Platform admin center to cop
 > - You can only copy to an environment in the same tenant and region.
 > - Components that have not been added to a solution (including canvas apps, flows, custom connectors, and connections) might not be part of the copy. You should validate your apps post copy.
 > - You cannot copy from or to a default type environment.
-> - Depending on the amount of copied and restored audit data, copy and restore operations can take up to 8 hours.
+> - Copy and restore operations can take up to 8 hours unless a lot of data, including audit data, needs to be copied or restored, in which case they could take up to 24 hours.
   
 ## Copy over everything
  An **Everything** copy includes all application data, users, and customizations, and schemas from the source environment and is suitable for:  
@@ -215,7 +214,7 @@ Once the copy process is complete, the target environment is placed in [Administ
 
 -	**Dataverse search** - Confirm that search returns expected results. If results are not accurate, you can turn off Dataverse search for a period of 12 hours and then turn Dataverse search back on again to refresh the index. You may contact [Microsoft support](get-help-support.md) if you're still experiencing issues.
 
-- **Flows** - Review the flows in the freshly copied environment. Edit flows that need triggers and actions adjusted. Enable and disable flows as needed.
+- **Flows** - In the target environment, existing solution flows will be deleted but existing non-solution flows will remain. Review the flows in the target environment to ensure that triggers and actions are pointing at the correct locations. Solution flows will be disabled so enable flows as needed.
 
 - **Connection References** - Connection References will require new connections. Create and set connections on Connection References.
 

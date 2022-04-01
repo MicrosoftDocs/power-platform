@@ -39,7 +39,6 @@ We recommend that you create connections to all connectors used in the solution 
 1. Select your CoE environment, and go to **Data** > **Connections** > **+ New connection**.
 1. Create connections for the following:
     - [Approvals](/connectors/approvals/)
-    - [Azure AD](/connectors/azuread/)
     - [Microsoft Dataverse](/connectors/commondataserviceforapps/)
     - [Microsoft Dataverse (legacy)](/connectors/commondataservice/)
     - [Microsoft Teams](/connectors/teams/)
@@ -67,7 +66,7 @@ During solution import, you'll configure environment variable values. Make sure 
 |Admin eMail |This is the email address to which most admin communications in the starter kit will be sent. More information: [How will you communicate with your admins, makers, and users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-end-users)  |
 | Power Platform Maker Microsoft 365 Group | Get the ID of the Microsoft 365 group which will contain all your Power Platform makers. [Create a new group](/microsoft-365/admin/create-groups/create-groups#create-a-microsoft-365-group) if needed. You'll use this to communicate and share apps with them. Makers are automatically added to this group with the **Admin \| Add Maker to Group** flow. More information: [How will you communicate with your admins, makers and end users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-end-users) |
 |Power Automate environment variable | The URL used by Power Automate for your cloud.<br> For an environment in the commercial cloud: <https://flow.microsoft.com/manage/environments/> <br>For GCC, GCC High, or DoD environment, check [Power Automate US government service URLs](/power-automate/us-govt#power-automate-us-government-service-urls). |
-|PowerApp Maker environment variable | The URL used byA the Power Apps maker portal for your cloud, including the trailing slash. <br> For an environment in the commercial cloud: <https://make.powerapps.com/> <br>For a GCC, GCC High, or DoD environment, check [Power Apps US Government service URLs](/power-platform/admin/powerapps-us-government#power-apps-us-government-service-urls). |
+|PowerApp Maker environment variable | The URL used byA the Power Apps maker portal for your cloud, including the trailing slash. <br> For an environment in the commercial cloud: <https://make.powerapps.com/> <br>For a GCC, GCC High, or DoD environment, check [Power Apps US Government service URLs](../../admin/powerapps-us-government.md#power-apps-us-government-service-urls). |
 |PowerApp Player environment variable | The URL used by the Power Apps player for your cloud, including the trailing slash.<br> For an environment in the commercial cloud: <https://apps.powerapps.com/> <br> For a GCC environment: <https://apps.gov.powerapps.us/> <br>For a GCC High environment: <https://apps.gov.powerapps.us/> <br>For a DoD environment: <https://play.apps.appsplatform.us> |
 | TenantID | Your Azure tenant ID.|
 
@@ -120,7 +119,8 @@ The following flows support the inventory setup and need to be turned on before 
 - DLP Editor > Parse impacted resources into CSV
 - Admin | Sync Template v3 (Connectors)
 
-Before proceeding, ensure that the Admin | Sync Template v3 Configure Emails flow runs.
+>[!IMPORTANT]
+> Before proceeding, ensure that the **Admin | Sync Template v3 Configure Emails** and **Admin | Sync Template v3 (Connectors)** flows runs and complete.
 
 ## Turn on inventory flows
 
@@ -132,8 +132,6 @@ The Admin \| Sync Template flows part of this solution crawl through all the res
 > ![Error when turning on a flow with an insufficient license.](media/flowpaginationerror.png "Error when turning on a flow with an insufficient license.")
 >
 > Learn more: [Power Automate performance profiles](/power-automate/limits-and-config#performance-profiles) and [Concurrency looping and pagination limits](/power-automate/limits-and-config#concurrency-looping-and-debatching-limits)
-
-And hence our requirements for licenses as described in our  
 
 - Admin | Sync Template v3 (Apps)
 - Admin | Sync Template v3 (Custom Connectors)
@@ -204,8 +202,8 @@ Using these steps, you'll set up an Azure AD app registration that will be used 
 
 [Update the environment variables](faq.md#update-environment-variables) that hold the client ID and secret as shown in the following table. You can store the client secret either in plain text in the **Command Center - Client Secret** environment variable (not recommended) or create store the client secret in Azure Key Vault and reference it in the **Command Center - Client Azure Secret** environment variable (recommended). Learn more: [Use Azure Key Vault secrets in environment variables](/powerapps/maker/data-platform/environmentvariables#use-azure-key-vault-secrets)
 
->![NOTE]
-> The flow using this environment variable is configured with a condition to expect either the Command Center - Client Secret or the Command Center - Client Azure Secret environment variable. You won't have to edit the flow or command center app to work with Azure Key Vault.
+>[!NOTE]
+> The flow using this environment variable is configured with a condition to expect either the Command Center - Client Secret or the Command Center - Client Azure Secret environment variable. It is not necessary to edit the flow or command center application to work with Azure Key Vault.
 
 | Name | Description |
 |------|---------------|
@@ -295,7 +293,7 @@ Environment variables are used to store application and flow configuration data 
 | Is Teams Install | DO NOT EDIT. This is used to determine whether this installation is in a production environment or Dataverse for Teams environment, and is set for you when you first install the components. | No: Core solution<br>Yes: Core for Teams solution |
 | Power Platform Maker Microsoft 365 Group | Get the ID of the Microsoft 365 group which will contain all your Power Platform makers. You'll use this to communicate and share apps with them. This is needed for the inventory setup in the Admin \| Add Maker to Group flow. More information: [How will you communicate with your admins, makers, and users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-end-users) | Not applicable |
 |Power Automate environment variable | The URL used by Power Automate for your cloud.<br> For an environment in the commercial cloud: <https://flow.microsoft.com/manage/environments/> <br>For a GCC, GCC High, or DoD environment, check [Power Automate US government service URLs](/power-automate/us-govt#power-automate-us-government-service-urls). | Not applicable |
-|PowerApp Maker environment variable | The URL used by the Power Apps maker portal for your cloud, including trailing slash. <br> For an environment in the commercial cloud: <https://make.powerapps.com/> <br>For a GCC, GCC High, or DoD environment, check [Power Apps US Government service URLs](/power-platform/admin/powerapps-us-government#power-apps-us-government-service-urls). | Not applicable|
+|PowerApp Maker environment variable | The URL used by the Power Apps maker portal for your cloud, including trailing slash. <br> For an environment in the commercial cloud: <https://make.powerapps.com/> <br>For a GCC, GCC High, or DoD environment, check [Power Apps US Government service URLs](../../admin/powerapps-us-government.md#power-apps-us-government-service-urls). | Not applicable|
 |PowerApp Player environment variable | The URL used by the Power Apps player for your cloud, including trailing slash.<br> For an environment in the commercial cloud: <https://apps.powerapps.com/> <br> For a GCC environment: <https://apps.gov.powerapps.us/> <br>For a GCC High environment: <https://apps.gov.powerapps.us/> <br>For a DoD environment: <https://play.apps.appsplatform.us> | Not applicable |
 | ProductionEnvironment | Set to No if you're creating a development/test environment. This will allow some flows to set target users to the admin instead of resource owners.| Yes |
 | TenantID | Your Azure Tenant ID.| Not applicable|

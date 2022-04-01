@@ -137,7 +137,7 @@ With the upcoming 2021 release wave 1 (public preview in February 2021 and GA in
 #### Impact
 
 - Starting April 2021, these controls can no longer be added to forms. 
-- For instances of Flip Label control, the control will be transitioned to a drop-down.
+- For instances of Flip Label control, the control will be replaced with a dropdown control.
 - For all other controls, they'll continue to work within existing forms until April 2022.
 
 #### Action required by you
@@ -173,7 +173,7 @@ Effective October 30, 2020, the following cipher suites are being deprecated fro
 
 Cipher suites are used to encrypt messages to secure a network connection between clients/servers and other servers. We're removing the above list of cipher suites to comply with our current security protocols.
 
-Beginning March 1, 2021, customers can only use our [standard cipher suites](/power-platform/admin/server-cipher-tls-requirements). This change impacts your clients and servers that communicate with our servers, for example, syncing emails from your Microsoft Exchange server, running outbound plug-ins, using native (local) clients to access our servers.
+Beginning March 1, 2021, customers can only use our [standard cipher suites](admin/server-cipher-tls-requirements.md). This change impacts your clients and servers that communicate with our servers, for example, syncing emails from your Microsoft Exchange server, running outbound plug-ins, using native (local) clients to access our servers.
 
 Customers must upgrade their servers before March 1, 2021.  For more information about configuring TLS Cipher Suite order, see [Manage Transport Layer Security (TLS)](/windows-server/security/tls/manage-tls).
 

@@ -2,13 +2,14 @@
 title: "Pay-as-you-go plan overview | MicrosoftDocs"
 description: The pay-as-you-go plan is a new way to pay for Power Apps using an Azure subscription, which allows you to get started without any license commitment.
 author: Kavishi
-
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 11/09/2021
+ms.date: 03/08/2022
 ms.subservice: admin
 ms.author: kaagar
 ms.reviewer: jimholtz 
+contributors:
+  - ShawnNandiMSFT
 search.audienceType: 
   - admin
 search.app:
@@ -17,9 +18,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Preview: Pay-as-you-go plan
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Pay-as-you-go plan
 
 <!-- https://go.microsoft.com/fwlink/?linkid=2173947 -->
 
@@ -69,7 +68,7 @@ Billing policies provide flexible options for organizations that are looking to 
 
 ## Next step
 
-[Preview: Pay-as-you-go meters](pay-as-you-go-meters.md)
+[Pay-as-you-go meters](pay-as-you-go-meters.md)
 
 
 

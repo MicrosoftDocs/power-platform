@@ -54,7 +54,7 @@
           href: power-automate-licensing/add-ons.md
       - name: Power Platform licensing FAQs
         href: powerapps-flow-licensing-faq.md
-      - name: "Preview: Pay-as-you-go plan"
+      - name: Pay-as-you-go plan
         items:
         - name: Overview
           href: pay-as-you-go-overview.md
@@ -90,18 +90,12 @@
         href: what-are-preview-features-how-do-i-enable-them.md
       - name: Requirements
         items:
-        - name: Requirements/supported configurations
+        - name: URLs and IP address ranges
           href: online-requirements.md
-        - name: Troubleshooting Unblock required URLs
-          href: troubleshooting-unblock-urls-required.md
+        - name: End of support for Internet Explorer
+          href: support-end-internet-explorer.md
         - name: Plan for deployment and administration
           href: plan-for-deployment-and-administration.md
-        - name: Supported web browsers and mobile devices
-          href: supported-web-browsers-and-mobile-devices.md
-        - name: Web application requirements
-          href: web-application-requirements.md
-        - name: Support end for Internet Explorer
-          href: support-end-internet-explorer.md
         - name: Server cipher suites and TLS requirements
           href: server-cipher-tls-requirements.md
       - name: Unified Interface
@@ -136,8 +130,6 @@
           href: reset-environment.md
         - name: Copy environment
           href: copy-environment.md
-        - name: Move environment
-          href: move-environment-tenant.md
         - name: Back up and restore environment
           href: backup-restore-environments.md
         - name: Business continuity and disaster recovery
@@ -164,7 +156,7 @@
           href: opt-in-early-access-updates.md
         - name: General availability deployment
           href: general-availability-deployment.md
-        - name: "Preview: Manage maintenance window"
+        - name: "Manage maintenance window (preview)"
           href: manage-maintenance-window.md
       - name: Manage settings 
         items:
@@ -368,6 +360,10 @@
         items:
         - name: Environment cleanup process
           href: automatic-environment-cleanup.md
+        - name: Migrate environment
+          href: move-environment-tenant.md          
+        - name: Geo to geo migrations
+          href: geo-to-geo-migrations.md  
         - name: Power Platform Geos
           href: regions-overview.md
         - name: Multiple online environments or tenants
@@ -380,6 +376,105 @@
           href: wp-task-automation-powershell.md
         - name: Automation of tasks with Power Automate
           href: wp-task-automation-flow.md    
+    - name: Security and governance
+      items:      
+      - name: Security and governance
+        href: security.yml
+      - name: Overview of Power Platform security
+        href: security/overview.md
+      - name: Authenticating to Power Platform services
+        href: security/authenticate-services.md
+      - name: Data storage in Power Platform
+        href: security/data-storage.md
+      - name: Connecting and authenticating to data sources
+        href: security/connect-data-sources.md
+      - name: Security and governance considerations
+        href: governance-considerations.md 
+      - name: Configure security for Dataverse
+        expanded: true
+        items:
+        - name: Dataverse security
+          href: wp-security.md
+        - name: Security concepts in Dataverse
+          href: wp-security-cds.md
+        - name: System and application users
+          href: system-application-users.md
+        - name: Configure user security
+          href: database-security.md
+        - name: How access to records is determined
+          href: how-record-access-determined.md
+        - name: Email exfiltration controls for connectors
+          href: block-forwarded-email-from-power-automate.md
+        - name: Configure environment security 
+          items: 
+          - name: Control user access to environments
+            href: control-user-access.md  
+          - name: "Restrict cross-tenant access (preview)" 
+            href: cross-tenant-restrictions.md
+          - name: Content security policy
+            href: content-security-policy.md
+        - name: Data loss prevention policies 
+          items: 
+          - name: Overview
+            href: wp-data-loss-prevention.md
+          - name: Create a DLP policy
+            href: create-dlp-policy.md
+          - name: Manage DLP policies
+            href: prevent-data-loss.md
+          - name: Data loss prevention SDK 
+            href: data-loss-prevention-sdk.md
+          - name: Basic connector classification
+            href: dlp-connector-classification.md
+          - name: Advanced granular controls
+            href: dlp-granular-controls.md    
+          - name: Endpoint input examples
+            href: dlp-endpoint-input-formats-examples.md
+          - name: DLP for custom connectors
+            href: dlp-custom-connector-parity.md 
+          - name: DLP for desktop flows
+            href: /power-automate/prevent-data-loss#data-loss-prevention-dlp-for-desktop-flows-preview 
+          - name: Disable new connectors
+            href: connector-off-by-default.md
+          - name: View policies and policy scope
+            href: dlp-policy-scope.md          
+          - name: Effect of multiple policies
+            href: dlp-combined-effect-multiple-policies.md           
+          - name: Impact on apps and flows
+            href: dlp-impact-policies-apps-flows.md          
+          - name: Exempt apps and flows
+            href: dlp-resource-exemption.md
+          - name: Known limitations
+            href: dlp-known-issues.md          
+        - name: Configure field-level security
+          items:
+          - name: Overview
+            href: field-level-security.md
+          - name: Set permissions for a field
+            href: set-up-security-permissions-field.md
+          - name: Enable or disable field security
+            href: enable-disable-security-field.md
+          - name: Add teams or users to field security profile
+            href: add-teams-users-field-security-profile.md
+        - name: Configure teams and team templates
+          items:
+          - name: Manage teams
+            href: manage-teams.md
+          - name: Manage group teams
+            href: manage-group-teams.md
+          - name: Team templates
+            href: about-team-templates.md
+          - name: Team templates for access rights 
+            href: create-team-template-add-entity-form.md
+        - name: Encryption
+          items:
+          - name: About encryption
+            href: about-encryption.md
+          - name: Encrypt your data
+            href: data-encryption.md
+          - name: Manage encryption key
+            href: manage-encryption-key.md      
+      - name: Security FAQs
+        href: security/faqs.md
     - name: Manage users 
       items:     
       - name: Overview of user security
@@ -390,7 +485,6 @@
         href: create-users.md
       - name: Assign licenses
         href: assign-licenses.md
-
       - name: Assign security roles
         items:  
         - name: About security roles and privileges
@@ -407,7 +501,6 @@
           href: create-edit-security-role.md
         - name: Copy a security role
           href: copy-security-role.md
-
       - name: Manage application users
         href: manage-application-users.md
       - name: Delete users
@@ -452,34 +545,36 @@
           href: analytics-flow.md
         - name: Analytics for UI flows
           href: analytics-ui-flow.md 
-      - name: Reports
+      - name: Reports (preview)
         items:
-        - name: "Preview: Tenant-level analytics (default)" 
+        - name: "Tenant-level analytics (default)" 
           href: tenant-level-analytics.md
-        - name: "Preview: Power Apps analytics"
+        - name: "Power Apps analytics"
           href: powerapps-analytics-reports.md
-        - name: "Preview: Power Automate analytics"
+        - name: "Power Automate analytics"
           href: power-automate-analytics-reports.md
         # Comment out the next topics before publish      
-        # - name: "Preview: Power Apps license utilization"
+        # - name: "Power Apps license utilization"
         #   href: powerapps-license-utilization.md
-      - name: Data export
+      - name: Data export (preview)
         items:
-        - name: "Preview: Export Power Apps inventory and usage data"
+        - name: "Export Power Apps inventory and usage data"
           href: self-service-analytics.md
-        - name: "Preview: Create custom dashboards using Power Apps inventory and usage data"
+        - name: "Self-service analytics schema definition"
+          href: self-service-analytics-schema-definition.md
+        - name: "Create custom dashboards using Power Apps inventory and usage data"
           href: build-custom-reports.md
-      - name: "Preview: Analyze telemetry with Application Insights"
+      - name: "Analyze telemetry with Application Insights (preview)"
         items:
-        - name: "Preview: Model-driven apps and Microsoft Dataverse telemetry"
+        - name: "Model-driven apps and Microsoft Dataverse telemetry"
           href: analyze-telemetry.md
-        - name: "Preview: Overview of integration with Application Insights"
+        - name: "Overview of integration with Application Insights"
           href: overview-integration-application-insights.md
-        - name: "Preview: Telemetry events for model-driven apps" 
+        - name: "Telemetry events for model-driven apps" 
           href: telemetry-events-model-driven-apps.md
-        - name: "Preview: Telemetry events for Dataverse"
+        - name: "Telemetry events for Dataverse"
           href: telemetry-events-dataverse.md   
-        - name: "Preview: Set up export to Application Insights"
+        - name: "Set up export to Application Insights"
           href: set-up-export-application-insights.md
     - name: Storage
       items: 
@@ -530,11 +625,19 @@
       - name: Versioning and support
         href: programmability-versioning-support.md
       - name: Authentication
-        href: programmability-authentication.md
+        items:
+        - name: Authentication - legacy
+          href: programmability-authentication.md
+        - name: Authentication (preview)
+          href: programmability-authentication-v2.md
+      - name: Permission reference (preview)
+        href: programmability-permission-reference.md
       - name: Tutorials
         items:
-        - name: "Preview: Create a daily capacity report"
+        - name: "Create a daily capacity report (preview)"
           href: programmability-tutorial-create-daily-capacity-report.md
+        - name: "Install an application to a target environment (preview)"
+          href: programmability-tutorial-install-application-environment.md
       - name: PowerShell
         items:
         - name: Getting started
@@ -543,33 +646,35 @@
           href: powershell-installation.md
         - name: Creating a service principal
           href: powershell-create-service-principal.md
-        - name: Cmdlet Reference
-          href: /powershell/module/microsoft.powerapps.administration.powershell/?view=pa-ps-latest
+        - name: Cmdlet reference
+          href: /powershell/module/microsoft.powerapps.administration.powershell
       - name: Connectors
         items:
         - name: Getting started
           href: connectors-getting-started.md
         - name: Connector reference
           href: /connectors/powerplatformforadmins/
-      - name: Power Platform API
+      - name: Power Platform API (preview)
         items:
         - name: Getting started
           href: powerplatform-api-getting-started.md
-        - name: "Preview: Creating a service principal"
+        - name: Creating a service principal
           href: powerplatform-api-create-service-principal.md
         - name: Reference
           items:
+          - name: "2022-03-01-preview"
+            href: /rest/api/power-platform
           - name: "2020-10-01"
             items:
             - name: Environments
               items:
-              - name: "Preview: List environments"
+              - name: "List environments"
                 href: list-environments.md
-              - name: "Preview: Create a Dataverse application user"
+              - name: "Create a Dataverse application user"
                 href: create-dataverseapplicationuser.md
             - name: Tenant Settings
               items:
-              - name: "Preview: List tenant settings"
+              - name: "List tenant settings"
                 href: list-tenantsettings.md
     - name: PowerShell support for Power Apps 
       items:
@@ -579,105 +684,6 @@
         href: wp-task-automation-powershell.md
       - name: Data loss prevention SDK 
         href: data-loss-prevention-sdk.md
-    - name: Security and governance
-      items:      
-      - name: Security and governance
-        href: security.yml
-      - name: Overview of Power Platform security
-        href: security/overview.md
-      - name: Authenticating to Power Platform services
-        href: security/authenticate-services.md
-      - name: Data storage in Power Platform
-        href: security/data-storage.md
-      - name: Connecting and authenticating to data sources
-        href: security/connect-data-sources.md
-      - name: Security and governance considerations
-        href: governance-considerations.md 
-      - name: Configure security for Dataverse
-        expanded: true
-        items:
-        - name: Dataverse security
-          href: wp-security.md
-        - name: Security concepts in Dataverse
-          href: wp-security-cds.md
-        - name: System and application users
-          href: system-application-users.md
-        - name: Configure user security
-          href: database-security.md
-        - name: How access to records is determined
-          href: how-record-access-determined.md
-        - name: Email exfiltration controls for connectors
-          href: block-forwarded-email-from-power-automate.md
-        - name: Configure environment security 
-          items: 
-          - name: Control user access to environments
-            href: control-user-access.md  
-          - name: Restrict cross-tenant access 
-            href: cross-tenant-restrictions.md
-          - name: Content security policy
-            href: content-security-policy.md
-        - name: Data loss prevention policies 
-          items: 
-          - name: DLP policies
-            items: 
-            - name: Overview
-              href: wp-data-loss-prevention.md
-            - name: Connector classification
-              href: dlp-connector-classification.md
-            - name: Disable new connectors by default 
-              href: connector-off-by-default.md
-            - name: Custom connector parity  
-              href: dlp-custom-connector-parity.md 
-            - name: Granular controls
-              href: dlp-granular-controls.md
-            - name: Endpoint input
-              href: dlp-endpoint-input-formats-examples.md
-            - name: View policies and policy scope
-              href: dlp-policy-scope.md
-            - name: Effect of multiple policies
-              href: dlp-combined-effect-multiple-policies.md
-            - name: Resource exemption
-              href: dlp-resource-exemption.md
-            - name: Impact on apps and flows
-              href: dlp-impact-policies-apps-flows.md
-            - name: Known issues
-              href: dlp-known-issues.md
-          - name: Create a DLP policy
-            href: create-dlp-policy.md
-          - name: Manage DLP policies
-            href: prevent-data-loss.md
-          - name: Data loss prevention SDK 
-            href: data-loss-prevention-sdk.md
-        - name: Configure field-level security
-          items:
-          - name: Overview
-            href: field-level-security.md
-          - name: Set permissions for a field
-            href: set-up-security-permissions-field.md
-          - name: Enable or disable field security
-            href: enable-disable-security-field.md
-          - name: Add teams or users to field security profile
-            href: add-teams-users-field-security-profile.md
-        - name: Configure teams and team templates
-          items:
-          - name: Manage teams
-            href: manage-teams.md
-          - name: Manage group teams
-            href: manage-group-teams.md
-          - name: Team templates
-            href: about-team-templates.md
-          - name: Team templates for access rights 
-            href: create-team-template-add-entity-form.md
-        - name: Encryption
-          items:
-          - name: About encryption
-            href: about-encryption.md
-          - name: Encrypt your data
-            href: data-encryption.md
-          - name: Manage encryption key
-            href: manage-encryption-key.md      
-      - name: Security FAQs
-        href: security/faqs.md
     - name: SharePoint and Power Apps
       items:
       - name: Manage your documents using SharePoint
@@ -725,9 +731,9 @@
       items: 
       - name: "About on-premises gateway"
         href: wp-onpremises-gateway.md
-      - name: "Preview: On-premises data gateway management"
+      - name: "On-premises data gateway management (preview)"
         href: onpremises-data-gateway-management.md
-      - name: "Preview: Data source management"
+      - name: "Data source management (preview)"
         href: onpremises-data-gateway-source-management.md
     - name: Manage data
       items: 
@@ -853,6 +859,8 @@
             items: 
             - name: Configure appointment, contact, and task synchronization
               href: choose-records-synchronize-dynamics-365-outlook-exchange.md
+            - name: Synchronization logic for appointments, contacts, and tasks
+              href: sync-logic.md
             - name: Set up default sync filters for multiple users
               href: configure-default-sync-filters.md
             - name: Synchronized fields per entity
@@ -900,7 +908,7 @@
         href: manage-bing-maps-organization.md 
       - name: Enable Power Automate integration
         href: enable-embedded-flow-in-your-organization.md 
-      - name: "Preview feature: Live Assist powered by Café X"
+      - name: "Live Assist powered by Café X (preview)"
         href: /dynamics365/customer-engagement/live-assist/live-assist-microsoft-dynamics-365-powered-by-cafe-x
       - name: Use Power BI
         href: use-power-bi.md 
@@ -944,6 +952,8 @@
       href: wp-compliance-data-privacy.md
     - name: GDPR - Responding to DSR requests
       items:
+      - name: About GDPR
+        href: about-gdpr.md
       - name: System-generated logs 
         href: powerapps-gdpr-dsr-guide-systemlogs.md
       - name: Data integrations for Dataverse 
@@ -957,7 +967,6 @@
         - name: Delete data 
           href: powerapps-gdpr-delete-dsr.md
         - name: Dataverse customer data 
-      # line 938 to 970 - is being reorged but keep until hear from Marty
           href: common-data-service-gdpr-dsr-guide.md
     - name: Datacenter regions
       href: new-datacenter-regions.md
@@ -988,8 +997,6 @@
           href: microsoft-dynamics-365-government.md
         - name: Power Apps service description
           href: powerapps-us-government.md
-        - name: Dynamics 365 US Government feature availability 
-          href: government-feature-availability.md
       - name: Geo to geo migrations
         href: geo-to-geo-migrations.md    
     - name: Partners

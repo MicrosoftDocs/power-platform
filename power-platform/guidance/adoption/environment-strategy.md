@@ -1,4 +1,4 @@
----
+﻿---
 title: "Establishing an Environment Strategy - Microsoft Power Platform | MicrosoftDocs"
 description: "Environments are containers that administrators can use to manage apps, flows, connections, and other assets, along with permissions to allow organization users to use the resources. This article walks you through important details about environments in Microsoft Power Platform and discusses recommended ways to benefit from proactively managing them."
 author: manuelap-msft
@@ -114,9 +114,9 @@ In addition to the above recommendations, establishing your environment strategy
 | **Dedicated** environments for critical projects and workloads. Developers have environment maker access in the development environment, but only user access in the test and production environments. End users only have end user access to the production solution so no one can modify the production applications. | ![Critical Project Development, Test and Production environments.](media/env-critical.png "Critical Project Development, Test and Production environments") |
 | **Shared** test and production environments for important but medium complex apps. Individual projects and business units have their own development environment to protect data, but solutions are deployed to shared test and production environments. Developers are end users in the test environment, and end users only have basic user access to solutions and data in the production environment. | ![Business Unit and Project Development environments, with shared test and production environments.](media/env-important.png "Business Unit and Project Development environments, with shared test and production environments") |
 
-<font color="#ffc000">&#9679;</font> Critical Project<br>
-<font color="#92D050">&#9679;</font> Important Project<br>
-<font color="#31859B">&#9679;</font> User and team productivity<br>
+&#9679; Critical Project<br>
+&#9679; Important Project<br>
+&#9679; User and team productivity<br>
 
 ### Additional recommendations to manage environments
 

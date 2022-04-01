@@ -1,7 +1,7 @@
 ---
 title: "Support for Microsoft Power Platform and customer engagement apps in Dynamics 365 | MicrosoftDocs"
 description: Information on support for Microsoft Power Platform and customer engagement apps in Dynamics 365
-ms.date: 06/08/2021
+ms.date: 03/23/2022
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -47,6 +47,7 @@ Microsoft provides support in English globally and provides additional languages
 
 - Microsoft provides all day, every day support for all Severity A issues and might provide all day, every day assistance for issues of other severity based on your support offering. 
 - For those issues that do not qualify for all day, every day support, Microsoft provides assistance during local business hours only.
+- For Finance and Operations, support times for some features can vary by region and can differ from the following hours listed.
 
 ### What hours are considered local business hours for support? 
 
@@ -338,6 +339,6 @@ Yes, if you are eligible for these benefits and have activated your support acce
 
 
 ### See also
-[Video: How to get the best support for Power Apps, Power Automate, and Dynamics 365](https://youtu.be/An3IfFdZlT8)
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

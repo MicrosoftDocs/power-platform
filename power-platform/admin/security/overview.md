@@ -3,7 +3,7 @@ title: Security in Microsoft Power Platform
 description: Learn how Microsoft Power Platform keeps your data secure.
 ms.date: 02/14/2022
 ms.service: power-platform
-ms.topic: "get-started-article"
+ms.topic: overview
 ms.custom: 
   - "admin-security"
   - "intro-internal"

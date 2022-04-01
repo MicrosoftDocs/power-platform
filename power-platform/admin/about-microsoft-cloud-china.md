@@ -1,11 +1,10 @@
 ---
-title: "Customer engagement apps - operated by 21Vianet in China  | MicrosoftDocs"
-description: Customer engagement apps - operated by 21Vianet in China
+title: "Power Platform and Dynamics 365 apps operated by 21Vianet in China  | MicrosoftDocs"
+description: Provides information about Power Platform and Dynamics 365 apps ((Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, and Dynamics 365 Project Service Automation) that are operated by 21Vianet in China
 author: jimholtz
-
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/04/2021
+ms.date: 02/23/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -16,19 +15,19 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Customer engagement apps - operated by 21Vianet in China
+# Power Platform and Dynamics 365 apps - operated by 21Vianet in China
 
-Microsoft Dataverse services operated by 21Vianet is designed to comply with regulatory requirements in China. The services are a physically separated environment of cloud services operated and transacted currently by a local operator, Shanghai Blue Cloud Technology Co., Ltd (“21Vianet”). This is a wholly owned subsidiary of Beijing 21Vianet Broadband Data Center Co., Ltd. located in mainland China.
+Microsoft Power Platform and Dynamics 365 apps services operated by 21Vianet is designed to comply with regulatory requirements in China. The services are a physically separated environment of cloud services operated and transacted currently by a local operator, Shanghai Blue Cloud Technology Co., Ltd (“21Vianet”). This is a wholly owned subsidiary of Beijing 21Vianet Broadband Data Center Co., Ltd. located in mainland China.
 
-Microsoft strives to maintain functional parity between our commercially available service and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), - operated by 21Vianet in China. However, there are notable exceptions to this affected by dependent service or partner-solution availability, market priorities, or compliance regulations.
+Microsoft strives to maintain functional parity between our commercially available service and Power Platform and Dynamics 365 apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), - operated by 21Vianet in China. However, there are notable exceptions to this affected by dependent service or partner-solution availability, market priorities, or compliance regulations.
 
 ## Provisioning
 
-Customers in China have two options from which to select how they want to access customer engagement apps.
+Customers in China have two options from which to select how they want to access Power Platform and Dynamics 365 apps.
 
-- Services operated by 21Vianet in China - 21Vianet operates and offers Dataverse services in China. This option provides a consistent customer engagement apps experience that is the same as global offerings. This option also meets the demands of customers who prefer to use online services provided by a local company that stores their data within China. These services are subject to Chinese laws.
+- Services operated by 21Vianet in China - 21Vianet operates and offers Dataverse services in China. This option provides a consistent Power Platform and Dynamics 365 apps experience that is the same as global offerings. This option also meets the demands of customers who prefer to use online services provided by a local company that stores their data within China. These services are subject to Chinese laws.
 
-- Services operated by Microsoft – This option is for customers that prefer to use services managed and delivered by Microsoft. For all new customers and existing customers, if the customer purchases Microsoft Azure, customer engagement apps, and Office using an Enterprise Agreement, Microsoft 365 and/or customer engagement apps can co-exist on the tenant. 
+- Services operated by Microsoft – This option is for customers that prefer to use services managed and delivered by Microsoft. For all new customers and existing customers, if the customer purchases Microsoft Azure, Power Platform and Dynamics 365 apps, and Office using an Enterprise Agreement, Microsoft 365 and/or Power Platform and Dynamics 365 apps can co-exist on the tenant. 
 
 For information on provisioning environments, see [Create and manage environments in the Power Platform admin center](./create-environment.md).
 

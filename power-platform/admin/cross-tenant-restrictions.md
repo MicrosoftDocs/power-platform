@@ -1,7 +1,7 @@
 ---
-title: "Restrict cross-tenant inbound and outbound access"
+title: Restrict cross-tenant inbound and outbound access (preview) 
 description: "Use tenant restrictions to control access to SaaS cloud applications based on the Azure AD tenant. You can also enforce tenant isolation for Power Platform connections."  
-ms.date: 02/18/2022
+ms.date: 03/07/2022
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
@@ -22,9 +22,16 @@ search.app:
   - Flow
 ---
 
-# Cross-tenant inbound and outbound restrictions
+# Cross-tenant inbound and outbound restrictions (preview) 
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 Microsoft Power Platform has a rich ecosystem of connectors based on Azure Active Directory (Azure AD) that allow authorized Azure AD users to build compelling apps and flows establishing connections to the business data available through these data stores. Tenant isolation makes it easy for administrators to ensure that these connectors can be harnessed in a safe and secure way within the tenant while minimizing the risk of data exfiltration outside the tenant. Tenant isolation allows admins to effectively govern the movement of tenant data from Azure AD authorized data sources to and from their tenant. 
+
+> [!IMPORTANT]
+> - This is a preview feature.
+> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+> - This feature is being gradually rolled out across regions and might not be available yet in your region.
 
 Note that Power Platform tenant isolation is different from Azure AD-wide tenant restriction. It *doesn't* impact Azure AD-based access outside of Power Platform. Power Platform tenant isolation only works for connectors using Azure AD-based authentication such as Office 365 Outlook or Sharepoint. 
 
@@ -148,11 +155,6 @@ Selecting the failed run will show details of the failed flow run.
 
 > [!NOTE]
 > It takes about an hour for the latest tenant isolation policy changes to be assessed against active apps and flows. This change isn't instantaneous. 
-
-## Known issues
-
-- This feature doesn't protect your tenant from inbound cross-cloud connections. If a tenant has tenant isolation turned on, all outgoing connections are restricted. However, incoming connections that are established from other tenants in other clouds aren't restricted. This issue is currently being investigated. 
-
 
 
 

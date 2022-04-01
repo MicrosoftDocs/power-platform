@@ -17,12 +17,7 @@ searchScope:
 
 # Add comments to bots (Preview)
 
-- [!INCLUDE [Preview documentation notice](includes/cc-beta-prerelease-disclaimer.md)]
-
-> [!IMPORTANT]
-> This is a preview feature.
->
-> Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and [provide feedback](https://powerusers.microsoft.com/t5/Forums/ct-p/pva_forums).
+[!INCLUDE [Preview documentation notice](includes/cc-beta-prerelease-disclaimer.md)]
 
 Comments are notes that are associated with items in your bot. Use comments to help your team collaborate on the bot and provide feedback, or provide additional information on implementation details in your bot.  
 

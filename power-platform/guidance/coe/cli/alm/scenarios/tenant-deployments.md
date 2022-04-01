@@ -91,7 +91,7 @@ To setup a demonstration deployment, you're looking to quickly install AA4PP and
 
 ## Post install
 
-Once you have the [Admin install](../admin-install.md) completed, advanced makers can create [development environments](../development-environments.md) and have administrators add them to Azure DevOps and the required Azure Active Directory security group.
+Once you have the [Admin install](../admin-install.md) completed, makers can create [development environments](../development-environments.md) and have administrators add them to Azure DevOps and the required Azure Active Directory security group.
 
 You'll typically use the following commands as the single administrator.
 
@@ -229,7 +229,7 @@ coe alm install -c devops \
    }
    ```
 
-Manual installation using the [Create an app registration in your Azure Active Directory environment](/power-platform/guidance/coe/setup-almacceleratorpowerplatform#create-an-app-registration-in-your-aad-environment).
+Manual installation using the [Create an app registration in your Azure Active Directory environment](../../../setup-almacceleratorpowerplatform.md#create-an-app-registration-in-your-azure-ad-environment).
 
 ## Multi-tenant deployment
 

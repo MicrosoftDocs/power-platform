@@ -56,10 +56,6 @@ Note the following about security groups:
 - **New**: Security groups cannot be assigned to default and developer environment types. If you've already assigned a security group to your default or developer environment, we recommend removing it since the default environment is intended to be shared with all users in the tenant and the developer environment is intended for use by only the owner of the environment.
 - Dataverse environments support associating the following group types: Security and Microsoft 365. Associating [other group types](/microsoft-365/admin/create-groups/compare-groups?view=o365-worldwide&WT.mc_id=365AdminCSH) is not supported.
 - When you select a security group, be sure to select an Azure AD security group and not one created in on-prem Windows Active Directory. On-prem Windows AD security groups aren't supported.
-<!-- 
-- When you remove a security group that is associated with a Dataverse environment, either by editing the environment and removing the security group or by deleting the security group, Dataverse licensed users who were members of the security group will have the same access to Dynamics 365 apps. 
-- You cannot yet make security groups members of other security groups. Check back for availability of support for nested security groups.
--->
 
 > [!NOTE]
 > All licensed users, whether or not they are members of the security groups, must be assigned security roles to access data in the environments. You assign the security roles in the web application.  If users don’t have a security role, they will get a data access denied error when trying to run an app. Users can't access environments until they are assigned at least one security role for that environment. For more information, see [Configure environment security](database-security.md).

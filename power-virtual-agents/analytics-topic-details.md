@@ -8,6 +8,7 @@ ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
+ms.reviewer: mboninco
 ms.custom: analysis, ceX
 ms.collection: virtual-agent
 ---
@@ -21,8 +22,6 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](analytics-topic-details.md)
 > - [Power Virtual Agents app in Microsoft Teams](teams/analytics-topic-details-teams.md)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
-
 The topic details page provides a view into the performance of individual topics and how they can be improved.
 
 You can display the topic details page by selecting the **Detail** link in one of the following charts on the [Summary](analytics-summary.md) and [Customer Satisfaction](analytics-CSAT.md) pages:
@@ -33,9 +32,6 @@ You can display the topic details page by selecting the **Detail** link in one o
 - [Customer satisfaction drivers (Customer Satisfaction page)](analytics-CSAT.md#customer-satisfaction-drivers-chart)
 
 :::image type="content" source="media/analytics-topic-details/topic-details-link.png" alt-text="Topic details link." border="false":::
-
-> [!IMPORTANT]
-> You need a license for [Dynamics 365 Customer Service Insights](/dynamics365/ai/customer-service-insights/licensing-case-capacity) to access the topic details charts.
 
 The topic details page can also be displayed by opening an individual topic from the [Topics page](authoring-create-edit-topics.md) and selecting **Analytics** at the top of the page.
 

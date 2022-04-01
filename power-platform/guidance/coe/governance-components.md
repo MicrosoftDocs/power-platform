@@ -23,7 +23,6 @@ After you've become familiar with your environments and resources, you might sta
 
 [Watch an overview](https://www.youtube.com/embed/6bfaFsFtLow) of how to use the governance components solution.
 
-
 The governance components solution contains assets relevant to admins and makers. More information: [Set up governance components](setup-governance-components.md)
 
 ## Compliance processes
@@ -74,7 +73,7 @@ This app is used in the [auditing process](example-processes.md) as a tool for u
 
 **Permission**: As soon as you're using the app auditing process, this app needs to be shared with your app makers. If you intend to use this process, modify the [Welcome email](setup-nurture-components.md) flow to add users to a security group, and then share this app with the security group.
 
-**Prerequisite**: This app uses Microsoft Dataverse. If you have installed this solution in a Production environment, a Premium license is required for every app user. If you have installed this solution in a Dataverse for Teams environment, a Microsoft 365 license is required for every user.
+**Prerequisite**: This app uses Microsoft Dataverse. If you have installed this solution in a Production environment, end users need to have a Per User license, or the app needs to be assigned a Per App license, or the environment needs to be covered by pay-as-you-go. If you have installed this solution in a Dataverse for Teams environment, a Microsoft 365 license is required for every user.
 
 #### Compliance Status
 
@@ -390,5 +389,56 @@ It performs the action on the actual object in the tenant and also updates the i
 This flow takes in the environment, flow, and operation to perform as well as the GUID for the new maker if the operation is to reassign ownership. <br>
 The operations supported are Delete and Assign (which reassigns owner) <br>
 It performs the action on the actual object in the tenant and also updates the inventory.
+
+## App Quarantine process
+
+### Environment variables
+
+| Name | Description | Default value |
+|------|---------------|------|
+| Quarantine Apps after x days of non-compliance | If using the Compliance flow for apps to gather compliance details from makers, specify if you want to quarantine apps if they're not compliant. Specified in days. | 7 days |
+
+### Flows
+
+| Flow | Type | Schedule |
+| --- | --- | --- |
+|[Admin \| Quarantine non-compliant apps](#admin--quarantine-non-compliant-apps) | Scheduled |  Daily |
+| [Admin \| Set app quarantine status](#admin--set-app-quarantine-status) | Automated | when the Quarantine App field in the PowerApps App table is changed |
+
+#### Admin \| Quarantine non-compliant apps
+
+This flow runs on a schedule and checks if any apps need quarantining based on the following criteria:
+
+- Environment is included in the quarantine process.
+- Compliance details have been requested and are pending longer than specified in the "Quarantine Apps after x days of non-compliance" environment variable.
+- App is not already quarantined.
+- Admin Risk Assessment status is not complete.
+
+For any apps matching the above criteria, the app quarantine status is set to **Yes**. Note that a maker submitting compliance details via the [Developer Compliance Center](#developer-compliance-center) does not automatically release their app from quarantine, an admin will have to perform a risk assessment and manually release the app from quarantine using the [Power Platform Admin View](core-components.md#power-platform-admin-view).
+
+To release an app from quarantine, use the [Power Platform Admin View](core-components.md#power-platform-admin-view) to set the **Quarantine App** field to **No** and mark the **Admin Requirement - Risk Assessment State** as **Complete**.
+
+#### Admin \| Set app quarantine status
+
+This flow is triggered automatically if the app quarantine status field of the PowerApps App table is updated.
+
+This field
+
+- is set to **Yes** by the Admin \| Quarantine non-compliant apps.
+- can be updated to either **Yes** or **No** manually by the admin from the [Power Platform Admin View](core-components.md#power-platform-admin-view)., to quarantine apps or release apps from quarantine.
+
+This flow sets to quarantine status of the app.
+
+If the app is quarantined, an email is sent to the maker to inform them their app can no longer be launched:
+
+![The app makers gets an email notification to inform them their app has been quarantined, and to ask them to submit compliance details in the Developer Compliance Center app.](media/quarantine4.png "The app makers gets an email notification to inform them their app has been quarantined, and to ask them to submit compliance details in the Developer Compliance Center app.")
+
+If the app is released from quarantine, an email is sent to the maker to inform them the app is available for use again:
+
+![The app makers gets an email notification to inform them their app has been released from quarantine.](media/quarantine3.png "The app makers gets an email notification to inform them their app has been released from quarantine.")
+
+Apps that are quarantined are also flagged in the [Developer Compliance Center](#developer-compliance-center):
+
+![Quarantined apps are highlighted as such in the Developer Compliance Center app.](media/quarantine5.png "Quarantined apps are highlighted as such in the Developer Compliance Center app.")
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
