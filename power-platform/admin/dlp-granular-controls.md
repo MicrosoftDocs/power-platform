@@ -29,7 +29,8 @@ Although the connector classification capability is very helpful in governing Mi
 ## Connector action control
 
 > [!NOTE]
-> **Connector action control** is generally available.
+> - **Connector action control** is generally available.
+> - Configuring a connector's actions is available for all *blockable* connectors, but not for [unblockable connectors](dlp-connector-classification.md#list-of-connectors-that-cant-be-blocked) and [custom connectors](dlp-custom-connector-parity.md).
 
 You can use connector action control to allow or block individual actions within a given connector. On the **Connectors** page, right-click the connector, and then select **Configure connector** > **Connector actions**.
 
@@ -38,9 +39,6 @@ You can use connector action control to allow or block individual actions within
 This opens a side panel where you can allow or deny specific actions. You can also set the default value (Allow or Deny) for any new connector actions that will be added to the connector in the future.
 
 :::image type="content" source="media/dlp-allow-deny-connector-actions.png" alt-text="Set Allow or Deny for connector actions.":::
-
-### Availability
-Configuring a connector's actions is available for all *blockable* connectors, but not for [unblockable connectors](dlp-connector-classification.md#list-of-connectors-that-cant-be-blocked) and [custom connectors](dlp-custom-connector-parity.md).
 
 ### PowerShell support for Connector action control
 
@@ -292,5 +290,8 @@ $ConnectorConfigurations = @{
 }
 New-PowerAppDlpPolicyConnectorConfigurations -TenantId $TenantId -PolicyName $PolicyName -NewDlpPolicyConnectorConfigurations $ConnectorConfigurations
 ``` 
+### Known limitations
+- Endpoint filtering rules are not enforced on **environment variables**, **custom inputs** and **dynamically bound endpoints** during runtime. Only static endpoints known and selected when building an app, flow, or chatbot during design time are enforced.
+- Endpoint filtering rules for SQL Server and Azure Blob Storage are not enforced if the connections are authenticated with Azure Active Directory.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
