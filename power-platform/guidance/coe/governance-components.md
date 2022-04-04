@@ -17,10 +17,6 @@ search.app:
   - Powerplatform
 ---
 
-<!-- editor's questions: In the table beginning in line 39, the Schedule entries contain straight brackets. Are they supposed to link to something? Also, the images entered in lines 319 and 323 mention "Project Oakdale," which is out of date and shouldn't be used. Can the text be updated or images removed? -->
-
-
-
 # Use governance components
 
 After you've become familiar with your environments and resources, you might start thinking about governance processes for your apps. You might want to gather additional information about your apps from your makers, or audit specific connectors or app usage.
@@ -38,10 +34,10 @@ The Governance components solution contains assets relevant to admins and makers
 
 | Flow | Type | Schedule |
 | --- | --- | --- |
-| Admin \| Compliance request complete apps v3 | Automated |  Triggered if the [Power Apps Approval BPF] is marked complete. |
-| Admin \| Compliance request complete bots v3 | Automated |  Triggered if the [Chatbot Approval BPF] is marked complete. |
-| Admin \| Compliance request complete custom connector v3 | Automated |  Triggered if the [Custom Connector Approval BPF] is marked complete. |
-| Admin \| Compliance request complete flow v3 | Automated |  Triggered if the [Flow Approval BPF] is marked complete. |
+| Admin \| Compliance request complete apps v3 | Automated |  Triggered if the [Power Apps Approval BPF](#power-apps-app-approval-bpf) is marked complete. |
+| Admin \| Compliance request complete bots v3 | Automated |  Triggered if the [Chatbot Approval BPF](#chatbot-approval-bpf) is marked complete. |
+| Admin \| Compliance request complete custom connector v3 | Automated |  Triggered if the [Custom Connector Approval BPF](#custom-connector-approval-bpf) is marked complete. |
+| Admin \| Compliance request complete flow v3 | Automated |  Triggered if the [Flow Approval BPF](#flow-approval-bpf) is marked complete. |
 | Admin \| Compliance Teams Environment BPF kickoff v3 | Automated |  Triggered if a business justification is submitted for a Microsoft Teams environment. |
 | [Admin \| Compliance Detail request v3](#admin--compliance-detail-request-v3) | Scheduled | Facilitate the process described in [App auditing process](example-processes.md). |
 
@@ -110,7 +106,7 @@ Makers can achieve compliance by providing additional information through the **
    :::column-end:::
 :::row-end:::
 
-### Business process flows 
+### Business process flows
 
 > [!NOTE]
 > Business process flows (BPFs) are not available if you have installed the Core Components in Dataverse for Teams.
@@ -316,11 +312,7 @@ And if the reason is sound, they can choose to exempt the object from future run
 
 This flow runs daily and checks whether new environments of type [Microsoft Teams](../../admin/about-teams-environment.md) have been created. Team owners who have created Microsoft Teams environments receive an adaptive card via Teams that prompts them to provide a business justification.
 
-![Ask for Business Justification when Microsoft Teams environment is created.](media/teams-1.png "Ask for Business Justification when Microsoft Teams environment is created")
-
 Additionally, this flow also sends a welcome email to new team owners to provide them with further information about their environment. A link to the policy documentation you have set up as part of [configuring the CoE Settings](setup-core-components.md) is included in this email.
-
-![Welcome email.](media/teams-3.png "Welcome email")
 
 Save a copy of this flow if you want to change the wording in the emails or adaptive cards.
 
@@ -365,7 +357,7 @@ This flow sends a daily reminder email to environment owners who have been asked
 
 #### Request Orphaned Objects Reassigned (Parent)
 
-On a daily basis, this collects all the orphaned objects in the tenant and attempts to associate them with the manager of the former owner. It then sends a Teams bot note to each impacted manager and lets them know there are objects to clean, and then concurrently calls the child flow for each manager. 
+On a daily basis, this collects all the orphaned objects in the tenant and attempts to associate them with the manager of the former owner. It then sends a Teams bot note to each impacted manager and lets them know there are objects to clean, and then concurrently calls the child flow for each manager.
 
 A list of orphaned objects that can't resolve to a previous manager is sent to the admin email so that admins know which orphaned objects need to be cleaned manually.
 

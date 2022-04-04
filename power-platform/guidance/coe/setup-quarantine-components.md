@@ -18,14 +18,9 @@ search.app:
   - Powerplatform
 ---
 
-
-<!-- Note from editor: The link in line 28 looks straightforward, yet it's asking me to sign in to open it, which doesn't seem right. Can you test it on the review page (which I can't access)? Also, check the link in line 46, which doesn't open for me. Should the table in line 40 be set up with a default column like the one in line 94? -->
-
-
-
 # Set up app quarantine components
 
-This article will help you to set up the app quarantine components of the governance solution. A quarantined app will present end users who launch the app a message indicating they’re unable to access the app. This feature is currently only available for canvas apps. Learn more: [Manage app quarantine state](/admin/admin-manage-apps#manage-app-quarantine-state-preview)
+This article will help you to set up the app quarantine components of the governance solution. A quarantined app will present end users who launch the app a message indicating they’re unable to access the app. This feature is currently only available for canvas apps. Learn more: [Manage app quarantine state](/power-platform/admin/admin-manage-apps#manage-app-quarantine-state-preview)
 
 >[!IMPORTANT]
 >This article assumes you have [installed the governance components solution](before-setup-gov.md), and you have your [environment set up](setup.md#create-your-environment) and are signed in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
@@ -37,13 +32,13 @@ You'll [update these environment variables](faq.md#update-environment-variables)
 >[!TIP]
 >Learn how to update environment variables for production and Dataverse for Teams environments: [Update environment variables](faq.md#update-environment-variables).
 
-| Name | Description |
-|------|---------------|
-| Quarantine Apps after x days of non-compliance | If using the Compliance flow for apps to gather compliance details from makers, specify whether you want to quarantine apps if they're not compliant and for how many days. The default value is 7 days. |  
+| Name | Description | Default value |
+|------|---------------|------|
+| Quarantine Apps after x days of non-compliance | If using the Compliance flow for apps to gather compliance details from makers, specify whether you want to quarantine apps if they're not compliant and for how many days.  | 7 days |
 
 ## Add or exempt environments from the app quarantine process
 
-You might want to exempt some environments from the app quarantine process—for example, dedicated environments that are already well-managed. More information: [Establishing an environment strategy](/adoption/environment-strategy)
+You might want to exempt some environments from the app quarantine process—for example, dedicated environments that are already well-managed. More information: [Establishing an environment strategy](/power-platform/guidance/adoption/environment-strategy)
 
 You can exempt environments from the app quarantine process by using the Power Platform Admin View app.  
 
