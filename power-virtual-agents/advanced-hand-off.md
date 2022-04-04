@@ -22,7 +22,7 @@ When you hand off a conversation, you share the full history of the conversation
 For more information about how to configure hand-off with [omnichannel for Customer Service](/dynamics365/customer-service/configure-bot-virtual-agent), see the [Configure hand-off to omnichannel for Customer Service](configuration-hand-off-omnichannel.md) topic.
 
 >
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4n4G1]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4n4G1]
 >
 
 > [!NOTE]
