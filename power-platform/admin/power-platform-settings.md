@@ -28,7 +28,10 @@ Configuring the settings for Power Platform admin center, such as the view theme
 > [!div class="mx-imgBorder"] 
 > ![Power Platform settings.](media/power-platform-settings.png "Microsoft Power Platform settings")
 
-Review and modify the following settings:
+## Prerequisites
+User requires [Power Platform administrator role](/power-platform/admin/use-service-admin-role-manage-tenant#power-platform-administrator) to view these settings and [Global admin role](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide) to update these settings.
+
+## Settings
 
 |Setting |Description |
 |---------|---------|
