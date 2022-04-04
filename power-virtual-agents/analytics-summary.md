@@ -22,7 +22,7 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents app in Microsoft Teams](teams/analytics-summary-teams.md)
 
 >
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4mQpm]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mQpm]
 >
 
 The Summary page gives you a broad overview of your bot's performance. It uses artificial intelligence (AI) technology to show you which topics are having the greatest impact on escalation rate, abandon rate, and resolution rate (see the table under [Summary charts](#summary-charts) for more information on these metrics).

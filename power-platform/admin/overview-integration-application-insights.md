@@ -4,7 +4,7 @@ description: About integration with Application Insights
 services: powerapps
 author: jimholtz
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: overview
 ms.date: 07/16/2021
 ms.subservice: admin
 ms.author: jimholtz

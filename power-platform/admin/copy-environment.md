@@ -214,7 +214,7 @@ Once the copy process is complete, the target environment is placed in [Administ
 
 -	**Dataverse search** - Confirm that search returns expected results. If results are not accurate, you can turn off Dataverse search for a period of 12 hours and then turn Dataverse search back on again to refresh the index. You may contact [Microsoft support](get-help-support.md) if you're still experiencing issues.
 
-- **Flows** - Review the flows in the freshly copied environment. Edit flows that need triggers and actions adjusted. Enable and disable flows as needed.
+- **Flows** - In the target environment, existing solution flows will be deleted but existing non-solution flows will remain. Review the flows in the target environment to ensure that triggers and actions are pointing at the correct locations. Solution flows will be disabled so enable flows as needed.
 
 - **Connection References** - Connection References will require new connections. Create and set connections on Connection References.
 
