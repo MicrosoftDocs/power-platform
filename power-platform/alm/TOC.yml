@@ -126,14 +126,14 @@
           href: checker-api/retrieve-rulesets.md
         - name: Upload a file for analysis
           href: checker-api/upload-file.md
-    - name: Manage solutions using custom code
+    - name: Manage solutions using code
       href: 
       items:
         - name: Use PowerShell
           href: powershell-api.md
-        - name: Work with solutions (SDK API/C#) 
+        - name: Work with solutions 
           href: solution-api.md
-        - name: Stage, import, and export (SDK API/C#)
+        - name: Stage, import, and export
           href: solution-async.md
         - name: Create patches 
           href: create-patches-simplify-solution-updates.md
