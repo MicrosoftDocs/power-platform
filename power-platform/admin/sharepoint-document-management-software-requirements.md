@@ -30,7 +30,7 @@ Server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)]
 
 ## Document management requirements
 
-**SharePoint**. You can use any of the following SharePoint versions.
+**SharePoint**. You can use any of the following SharePoint versions:
 - SharePoint in Microsoft 365
 - SharePoint 2016 on-premises
 - [!INCLUDE[pn_microsoft_sharepoint_2013](../includes/pn-microsoft-sharepoint-2013.md)] SP1 on-premises (or a later version)  
