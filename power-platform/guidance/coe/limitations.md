@@ -29,12 +29,10 @@ There are some flows, which crawl the tenant in order to do their work. Specific
 
 To help ensure service levels, availability, and quality, there are entitlement limits to the number of requests users can make each day across Power Apps, Power Automate. Learn more: [Requests limits and allocations](../../admin/api-request-limits-allocations.md)
 
-Larger tenants might require a per flow license in order for these flows to complete in a timely manner. More information: [Power Automate License Pricing](https://flow.microsoft.com/pricing/)
+Larger tenants might require a [Power Automate Per Flow](https://flow.microsoft.com/pricing/) license or may need to set up [pay-as-you go for Power Platform requests](/power-platform/admin/pay-as-you-go-overview) in order for these flows to complete in a timely manner.
 
-Whilst we work on a long term solution, you can also request for your [limits to be raised](https://github.com/microsoft/coe-starter-kit/issues/917). 
-
->[!TIP]
->The first run of the Sync flows in the Core Solution will run long as it will do an update for every flow/app/etc in the tenant. Subsequent runs  will only update apps/flows/etc that have changed since the last run and so these will not require a per flow license for most tenants.
+>[!NOTE]
+>The first run of the sync flows will perform a full inventory and will run long as it will do an update for every flow/app/etc in the tenant. Subsequent runs  will only update apps/flows/etc that have changed since the last run and so these will not go over Power Platform request entitlements for most tenants.
 
 ## Dataverse for Teams
 
