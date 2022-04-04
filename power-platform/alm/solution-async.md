@@ -21,7 +21,7 @@ search.app:
 
 <!-- [!INCLUDE[applies-to-all](../includes/applies-to-all.md)] -->
 
-Have you ever run into the situation during the import or export of a large solution where the operation times out? If so, you may be a candidate for performing the solution import/export asynchronously. This topic describes how to initiate the asynchronous import or export using the Dataverse SDK for .NET and Web APIs.
+Have you ever run into the situation during the import or export of a large solution where the operation times out? If so, you may be a candidate for performing the solution import/export asynchronously. This topic describes how to initiate the asynchronous import or export using the [Dataverse SDK for .NET](https://www.nuget.org/packages/Microsoft.CrmSdk.CoreAssemblies/) and Web APIs.
 
 ## Staging a solution
 
