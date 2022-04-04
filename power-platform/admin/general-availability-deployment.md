@@ -39,7 +39,7 @@ The general availability deployment is based on the regions where environments a
 |Regions  |Schedule for 2022 wave 1 general availability deployment|
 |---------|---------|
 | Canada<br />France<br />Germany<br />India<br />Norway <br />South Africa<br />South America<br />South Korea<br />Switzerland  | Friday, April 1st to Sunday, April 3rd    |
-|Australia <br /> Asia Pacific<br />Great Britain<br />Japan<br />United Arab Emirates     | Friday, April 8th to Sunday, April 10th       |
+|Asia Pacific<br /> Australia <br /> Great Britain<br />Japan<br />United Arab Emirates     | Friday, April 8th to Sunday, April 10th       |
 |Europe    | Friday, April 15th to Sunday, April 17th      |
 |North America     |  Friday, April 22nd to Sunday, April 24th           |
 |China | Friday, April 29th to Sunday, April 31st      |
