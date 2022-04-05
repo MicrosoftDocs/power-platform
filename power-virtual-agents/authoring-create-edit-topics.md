@@ -181,6 +181,19 @@ If you have configured hand off to omnichannel with voice-based capabilities, yo
 
    You can also [use variables that you have defined elsewhere](authoring-variables.md) in your bot conversation.
 
+You can also add additional message variations. When you do this, the bot will respond randomly with one of the variations.
+
+<!-- FIXME: verify steps -->
+1. Select **Add** and then **Message variation**. This will add an additional text box for a message variation.
+
+    <!-- FIXME: replace placeholder with real screenshot -->
+    :::image type="content" source="media/authoring-create-edit-topics/message-node-variation.png" alt-text="Select the synonyms icon." border="false":::
+
+    <!-- FIXME: do variations also allow basic formatting -->
+1. Enter what you want the bot to say. You can apply some basic formatting, such as bold, italics, and numbering.
+
+1. Repeat to add as many variations as you like.
+
 #### Redirect to another topic
 
 1. To automatically have the bot move to a separate topic, select **+** to add a node, and then **Redirect to another topic**.
