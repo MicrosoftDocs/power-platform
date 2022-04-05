@@ -80,6 +80,8 @@
          href: advanced-proactive-message.md
        - name: Trigger hand-off to a live agent
          href: advanced-hand-off.md
+       - name: Add multimedia cards to messages
+         href: advanced-cards.md
     - name: Publish and integrate
       items:
        - name: Key concepts - Publish your bot
