@@ -6,7 +6,7 @@ author: mikkelsen2000
 ms.author: pemikkel
 manager: kvivek
 ms.custom: ""
-ms.date: 04/04/2022
+ms.date: 04/05/2022
 ms.reviewer: "pehecke"
 ms.service: powerapps
 ms.topic: "article"
@@ -34,8 +34,6 @@ In comparison to importing a solution where the solution is imported and availab
 
 The result of staging the solution will be a collection of validation results indicating success or failure and (if successful) a `StageSolutionUploadId` to be used in the `ImportSolutionAsync` call. See the import solution Web API sample code above for an example of how this is done.
 
-### [Dataverse SDK for .NET](#tab/sdk-csharp)
-
 <!-- code language="csharp" source="~/powerapps-samples/cds/orgsvc/c#/SolutionStageAndImport/Program.cs" id="snippet_stage-solution" -->
 
 ```csharp
@@ -54,14 +52,6 @@ public static StageSolutionResults StageSolution(
 }
 ```
 
-<!--### [Web API (C#)](#tab/webapi-csharp)
-
-```csharp
-// No sample code is available at this time
-```-->
-
----
-
 ## Solution import
 
 `ImportSolution` is the action (or message) that performs the synchronous import operation. To execute the import operation asynchronously use `ImportSolutionAsync`.
@@ -71,8 +61,6 @@ public static StageSolutionResults StageSolution(
 | Import a solution | [ImportSolutionAsync](/dynamics365/customer-engagement/web-api/importsolutionasync) | [ImportSolutionAsyncRequest](/dotnet/api/microsoft.crm.sdk.messages.importsolutionasyncrequest) |
 
 Now let's take a look at some example code that demonstrates `ImportSolutionAsync`.
-
-### [Dataverse SDK for .NET](#tab/sdk-csharp)
 
 <!-- code language="csharp" source="~/powerapps-samples/cds/orgsvc/c#/SolutionStageAndImport/Program.cs" id="snippet_import-solution-async" -->
 
@@ -133,9 +121,7 @@ public static ImportSolutionAsyncResponse ImportSolution(
 }
 ```
 
-<!--### [Web API (C#)](#tab/webapi-csharp)
-
-```csharp
+<!-- ```csharp
 private void ImportSolutionUsingJob(HttpClient httpClient, string filepath) 
 { 
   HttpRequestMessage request = null; 
@@ -189,15 +175,11 @@ private void ImportSolutionUsingJob(HttpClient httpClient, string filepath)
     throw new Exception(err.Message); 
   }
 }
-```-->
-
----
+``` -->
 
 `ImportSolutionAsync` shares many input parameters with `ImportSolution` but adds `ComponentParameters` and `SolutionParameters`. `ComponentParameters` can be used to overwrite the component data in the solution's customization XML file. `SolutionParameters` can be used to pass the `StageSolutionUploadId` of a staged solution as was shown in the example Web API code. More information: [Staging a solution](#staging-a-solution)
 
 The response returned from `ImportSolutionAsync` contains `ImportJobKey` and `AsyncOperationId`. The `ImportJobKey` value can be used to obtain the import result and the `AsyncOperationId` value can be used to track the import job status.
-
-### [Dataverse SDK for .NET](#tab/sdk-csharp)
 
 <!-- code language="csharp" source="~/powerapps-samples/cds/orgsvc/c#/SolutionStageAndImport/Program.cs" id="snippet_check-import-status" -->
 
@@ -240,14 +222,6 @@ public static void CheckImportStatus(
 }
 ```
 
-<!--### [Web API (C#)](#tab/webapi-csharp)
-
-```csharp
-// No sample code is available at this time
-```-->
-
----
-
 ## Solution export
 
 `ExportSolution` is the action (or message) that performs the synchronous export operation. To execute the export operation asynchronously use `ExportSolutionAsync`.
@@ -259,8 +233,6 @@ public static void CheckImportStatus(
 
 Now let's take a look at some example code that demonstrates `ExportSolutionAsync`.
 
-### [Dataverse SDK for .NET](#tab/sdk-csharp)
-
 ```csharp
 // Where 'service' is a pre-configured Organization service instance.
 var service = (OrganizationServiceProxy)xsc.CreateOrganizationService();
@@ -271,17 +243,7 @@ req.Parameters.Add("Managed", false);
 var response = service.Execute(req);
 ```
 
-<!--### [Web API (C#)](#tab/webapi-csharp)
-
-```csharp
-// No sample code is available at this time
-```-->
-
----
-
 In the response are the `AsyncOperationId` and `ExportJobId` parameter values. Use the `AsyncOperationId` in the response to verify the success (`statecode` == 3; `statuscode` == 30) of the asynchronous job. Next, use the `DownloadSolutionExportData` action (or message) with the `ExportJobId` value from the export response to download the exported solution file, which is returned in the `ExportSolutionFile` parameter.
-
-### [Dataverse SDK for .NET](#tab/sdk-csharp)
 
 ```csharp
 // Where 'service' is a pre-configured Organization service instance.
@@ -292,10 +254,4 @@ req.Parameters.Add("ExportJobId", Guid.Parse("a9089b53-a1c7-ea11-a813-000d3a1442
 var response = service.Execute(req);
 ```
 
-<!--### [Web API (C#)](#tab/webapi-csharp)
-
-```csharp
-// No sample code is available at this time
-```-->
-
----
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
