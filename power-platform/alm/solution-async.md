@@ -36,7 +36,7 @@ The result of staging the solution will be a collection of validation results in
 
 ### [Dataverse SDK for .NET](#tab/sdk-csharp)
 
-<!-->:::code language="csharp" source="~/powerapps-samples/cds/orgsvc/c#/SolutionStageAndImport/Program.cs" id="snippet_stage-solution":::-->
+<!-- code language="csharp" source="~/powerapps-samples/cds/orgsvc/c#/SolutionStageAndImport/Program.cs" id="snippet_stage-solution" -->
 
 ```csharp
 public static StageSolutionResults StageSolution(
@@ -74,7 +74,7 @@ Now let's take a look at some example code that demonstrates `ImportSolutionAsyn
 
 ### [Dataverse SDK for .NET](#tab/sdk-csharp)
 
-<!-->:::code language="csharp" source="~/powerapps-samples/cds/orgsvc/c#/SolutionStageAndImport/Program.cs" id="snippet_import-solution-async":::-->
+<!-- code language="csharp" source="~/powerapps-samples/cds/orgsvc/c#/SolutionStageAndImport/Program.cs" id="snippet_import-solution-async" -->
 
 ```csharp
 public static ImportSolutionAsyncResponse ImportSolution(
@@ -199,7 +199,7 @@ The response returned from `ImportSolutionAsync` contains `ImportJobKey` and `As
 
 ### [Dataverse SDK for .NET](#tab/sdk-csharp)
 
-<!-->:::code language="csharp" source="~/powerapps-samples/cds/orgsvc/c#/SolutionStageAndImport/Program.cs" id="snippet_check-import-status":::-->
+<!-- code language="csharp" source="~/powerapps-samples/cds/orgsvc/c#/SolutionStageAndImport/Program.cs" id="snippet_check-import-status" -->
 
 ```csharp
 public static void CheckImportStatus(
