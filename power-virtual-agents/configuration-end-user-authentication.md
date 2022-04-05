@@ -13,7 +13,6 @@ ms.collection: virtual-agent
 ---
 
 # Configure user authentication in Power Virtual Agents
-<!-- IAW Microsoft C+AI Style Guide, "Azure AD" and "Azure Active Directory" shouldn't be versioned. Also, I think I read that v1 is EOL this summer. Maybe remove "v1" and "v2" references? If you keep them, please standardize on either uc V or lc v. I can't find any guidance on which is preferred. -->
 
 Select the version of Power Virtual Agents you're using here:
 
