@@ -67,57 +67,59 @@ Now let's take a look at some example code that demonstrates `ImportSolutionAsyn
 ```csharp
 public static ImportSolutionAsyncResponse ImportSolution(
     IOrganizationService service,
-    StageSolutionResults stagingResults)
+    StageSolutionResults stagingResults,
+    Dictionary<string,Guid> connectionIds,
+    Dictionary<string,string> envarValues )
 {
-  // Import the staged solution
-  var componentDetails = stagingResults.SolutionComponentsDetails;
+    // Import the staged solution
+    var componentDetails = stagingResults.SolutionComponentsDetails;
 
-  // TODO These are not referenced in the code but are usefull to explore
-  var missingDependencies = stagingResults.MissingDependencies;   // Contains missing dependencies
-  var solutionDetails = stagingResults.SolutionDetails;           // Contains solution details
+    // TODO These are not referenced in the code but are usefull to explore
+    var missingDependencies = stagingResults.MissingDependencies;   // Contains missing dependencies
+    var solutionDetails = stagingResults.SolutionDetails;           // Contains solution details
 
-  var connectionReferences = componentDetails.Where(x => string.Equals(x.ComponentTypeName,"connectionreference"));
-  var envVarDef = componentDetails.Where(x => string.Equals(x.ComponentTypeName,"environmentvariabledefinition"));
-  var envVarValue = componentDetails.Where(x => string.Equals(x.ComponentTypeName,"environmentvariablevalue"));
+    var connectionReferences = componentDetails.Where(x => string.Equals(x.ComponentTypeName, "connectionreference"));
+    var envVarDef = componentDetails.Where(x => string.Equals(x.ComponentTypeName, "environmentvariabledefinition"));
+    var envVarValue = componentDetails.Where(x => string.Equals(x.ComponentTypeName, "environmentvariablevalue"));
 
-  var componentParams = new EntityCollection();
+    var componentParams = new EntityCollection();
 
-  // Add each connection reference to the component parmameters entity collection.
-  foreach (var conn in connectionReferences)
-  {
-      var e = new Entity("connectionreference")
-      {
-          ["connectionreferencelogicalname"] = conn.Attributes["connectionreferencelogicalname"].ToString(),
-          ["connectionreferencedisplayname"] = conn.Attributes["connectionreferencedisplayname"].ToString(),
-          ["connectorid"] = conn.Attributes["connectorid"].ToString(),
-          ["connectionid"] = "custom input"
-      };
-      componentParams.Entities.Add(e);
-  }
-  
-  // Add each environment variable to the component parmameters entity collection.
-  foreach (var value in envVarValue)
-  {
-      var e = new Entity("environmentvariablevalue")
-      {
-          ["schemaname"] = value.Attributes["schemaname"].ToString(),
-          ["value"] = "custom input"
-      };
+    // Add each connection reference to the component parmameters entity collection.
+    foreach (var conn in connectionReferences)
+    {
+        var e = new Entity("connectionreference")
+        {
+            ["connectionreferencelogicalname"] = conn.Attributes["connectionreferencelogicalname"].ToString(),
+            ["connectionreferencedisplayname"] = conn.Attributes["connectionreferencedisplayname"].ToString(),
+            ["connectorid"] = conn.Attributes["connectorid"].ToString(),
+            ["connectionid"] = connectionIds[conn.ComponentName]
+        };
+        componentParams.Entities.Add(e);
+    }
+            
+    // Add each environment variable to the component parmameters entity collection.
+    foreach (var value in envVarValue)
+    {
+        var e = new Entity("environmentvariablevalue")
+        {
+            ["schemaname"] = value.Attributes["schemaname"].ToString(),
+            ["value"] = envarValues[value.ComponentName]
+        };
 
-      if (value.Attributes.ContainsKey("environmentvariablevalueid"))
-      {
-          e["environmentvariablevalueid"] = value.Attributes["environmentvariablevalueid"].ToString();
-      }
-      componentParams.Entities.Add(e);
-  }
+        if (value.Attributes.ContainsKey("environmentvariablevalueid"))
+        {
+            e["environmentvariablevalueid"] = value.Attributes["environmentvariablevalueid"].ToString();
+        }
+        componentParams.Entities.Add(e);
+    }
 
-  // Import the solution
-  var importSolutionReq = new ImportSolutionAsyncRequest();
-  importSolutionReq.ComponentParameters = componentParams;
-  importSolutionReq.SolutionParameters = new SolutionParameters { StageSolutionUploadId =stagingResults.StageSolutionUploadId };
-  var response = service.Execute(importSolutionReq) as ImportSolutionAsyncResponse;
+    // Import the solution
+    var importSolutionReq = new ImportSolutionAsyncRequest();
+    importSolutionReq.ComponentParameters = componentParams;
+    importSolutionReq.SolutionParameters = new SolutionParameters { StageSolutionUploadId = stagingResults.StageSolutionUploadId };
+    var response = service.Execute(importSolutionReq) as ImportSolutionAsyncResponse;
 
-  return (response);
+    return (response);
 }
 ```
 
