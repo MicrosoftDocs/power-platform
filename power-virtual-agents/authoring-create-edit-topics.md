@@ -181,6 +181,8 @@ If you have configured hand off to omnichannel with voice-based capabilities, yo
 
    You can also [use variables that you have defined elsewhere](authoring-variables.md) in your bot conversation.
 
+To enhance messages with rich multimedia cards, see [Add multimedia cards to messages](/advanced-cards.md).
+
 #### Redirect to another topic
 
 1. To automatically have the bot move to a separate topic, select **+** to add a node, and then **Redirect to another topic**.
