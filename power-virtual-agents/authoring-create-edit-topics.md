@@ -103,7 +103,7 @@ These topics fall into two categories:
 
 1. When you create a new topic, a **Trigger phrases** node and a blank **Message** node are inserted for you.
 
-1. You can add additional nodes by selecting the **Plus** (**+**) icon on the line or branch between or after a node.
+1. You can add additional nodes by selecting the plus (**+**) icon on the line or branch between or after a node.
 
    :::image type="content" source="media/authoring-create-edit-topics/handoff-add-node.png" alt-text="Screenshot of adding a node." border="false":::
 
@@ -132,7 +132,7 @@ Additionally, you can **Add a condition** when inserting a node after a **Questi
 
 #### Ask a question
 
-1. To have the bot ask a question and get a response from the user, select **+** to add a node, and then **Ask a question** to add a new **Question** node.
+1. To have the bot ask a question and get a response from the user, select the plus (**+**) icon to add a node, and then **Ask a question** to add a new **Question** node.
 
    :::image type="content" source="media/authoring-create-edit-topics/topics-question.png" alt-text="Add a new question mode." border="false":::
 
@@ -175,7 +175,7 @@ If you have configured hand off to omnichannel with voice-based capabilities, yo
 
 #### Show a message
 
-1. To specify a response from the bot, select **+** to add a node, and then **Show a message** to add a new **Message** node.
+1. To specify a response from the bot, select the plus (**+**) icon and then select **Show a message**.
 
 1. Enter what you want the bot to say in the text box. You can apply some basic formatting, such as bold, italics, and numbering.
 
@@ -196,7 +196,7 @@ You can also add additional message variations. When you do this, the bot will r
 
 #### Redirect to another topic
 
-1. To automatically have the bot move to a separate topic, select **+** to add a node, and then **Redirect to another topic**.
+1. To automatically have the bot move to a separate topic, select the plus (**+**) icon to add a node, and then **Redirect to another topic**.
 
 1. In the flyout menu, select the topic the bot should divert to. For example, you might want to send the user to a specific topic about the closure of a store if they ask about store hours for that store.
 
@@ -328,7 +328,7 @@ You can also have the conversation [handed over to a live agent](advanced-hand-o
 
 #### Add a condition
 
-1. To add branching logic based on [variables](authoring-variables.md), select **+** to add a node, and then **Add a condition** and **Branch based on a condition**.
+1. To add branching logic based on [variables](authoring-variables.md), select the plus (**+**) icon to add a node, and then **Add a condition** and **Branch based on a condition**.
 
 1. Choose the variable you want to use to determine if the bot conversation should branch at this point. For example, if you have set up [end-user authentication](advanced-end-user-authentication.md), then you might want to specify a different message if the user is signed on (which may have happened earlier in the conversation).
 
