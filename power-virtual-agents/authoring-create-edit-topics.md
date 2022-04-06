@@ -17,7 +17,7 @@ searchScope:
 
 # Create and edit topics in your Power Virtual Agents bot
 
-Select the version of Power Virtual Agents you're using:
+Select the version of Power Virtual Agents you're using here:
 
 > [!div class="op_single_selector"]
 >
@@ -91,7 +91,7 @@ These automatically created topics fall into two categories:
 
     :::image type="content" source="media/authoring-create-edit-topics/details-pane.png" alt-text="Screenshot of the topic details pane showing Name, Display name, and Description.":::
 
-    To rename a topic, select the name in the topic authoring canvas and enter a new value.
+    You can also rename the topic by selecting its name and entering a new value.
 
     :::image type="content" source="media/authoring-create-edit-topics/rename-topic-shortcut.png" alt-text="Screenshot of the topic authoring canvas, highlighting the topic name.":::
 
@@ -107,7 +107,7 @@ These automatically created topics fall into two categories:
 
     When you create a new topic, a **Trigger phrases** node and a blank **Message** node are inserted for you.
 
-1. To add a node, select the (**+**) icon on the line or branch between or after nodes.
+1. To add a node, select the plus (**+**) icon on the line or branch between or after nodes.
 
    :::image type="content" source="media/authoring-create-edit-topics/handoff-add-node.png" alt-text="Screenshot of adding a node.":::
 
