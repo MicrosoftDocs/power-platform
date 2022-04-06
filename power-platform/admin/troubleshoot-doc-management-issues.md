@@ -4,7 +4,7 @@ description: "Learn how to troubleshoot document management issues based on erro
 keywords: encrypt
 ms.date: 06/15/2020
 ms.custom: 
-ms.topic: article
+ms.topic: conceptual
 applies_to: 
   - PowerApps
 ms.assetid: 
