@@ -65,7 +65,6 @@ These automatically created topics fall into two categories:
    :::image type="content" source="media/authoring-create-edit-topics/topics-menu.png" alt-text="Screenshot of the Power Virtual Agents navigation pane, highlighting Topics.":::
 
 1. Select **New topic**.
-<!-- The screenshot doesn't add significantly so let's save some screen real estate. -->
 
 1. The **Trigger phrases** pane should open. If it doesn't open, select **Trigger phrases**.
 
