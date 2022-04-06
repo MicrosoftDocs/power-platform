@@ -24,7 +24,7 @@ The  system checks each recipient and verifies that the mailbox and the owner of
 2. If the email is associated with an existing email, the system checks if the best match owner can be found. Using the recipient list, the system checks if any of the recipients are the owner of the associated email. If an eligible owner is found then the user is selected as the email owner.
  
 3. If the best match owner isn’t found, then the system tries to find a second-best owner. 
-If the related owner can't be found in the recipient list, the system attempts to resolve the sender of the email to a known contact, account, or lead. If the resolution is successful and the owner of the resolved record needs to be an eligible owner who is also on the recipient list; only then the user is set as owner of the email. 
+If the related owner can't be found in the recipient list, the system attempts to resolve the sender of the email to a known contact, account, or lead. If the resolution is successful and the owner of the resolved record needs to be an eligible owner who is also on the recipient list; only then is the user set as owner of the email. 
 
 4. If the second-best owner isn’t found, then the system uses the first eligible owner. If the system can't find an eligible owner based on the associated email owner or the owner of the sender record, the system will pick the first eligible owner in the current recipient list.
 
