@@ -4,7 +4,7 @@ description: "Use tenant restrictions to control access to SaaS cloud applicatio
 ms.date: 03/07/2022
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: conceptual
 applies_to: 
   - "Dynamics 365 (online)"
 ms.assetid: 
