@@ -191,8 +191,6 @@ If you have configured hand off to omnichannel with voice-based capabilities, yo
 
 When you insert a link to redirect to another topic, the bot will go through the conversation path for that topic.
 
-When you insert a link to redirect to another topic, the bot will go through the conversation path for that topic.
-
 You can consider the redirected topic as a "subtopic".
 
 In the authoring canvas for the original topic, you can insert additional nodes under the subtopic's node.
