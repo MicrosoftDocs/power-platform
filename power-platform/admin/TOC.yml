@@ -853,6 +853,8 @@
               href: email-message-filtering-correlation.md 
             - name: Associate an email address with a row
               href: associate-email-address.md
+            - name: How is an email record owner determined?
+              href: email-record-owner.md
             - name: Create queue items from incoming email
               href: create-queue-items-from-synchronized-email-messages.md
           - name: Configure appointment, contact, and task synchronization
