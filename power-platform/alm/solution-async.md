@@ -258,6 +258,6 @@ var response = service.Execute(req);
 
 ### See Also
 
-[Sample: Solution staging with asynchronous import](/power-apps-docs/developer/data-platform/org-service/samples/solution-stage-and-import)
+[Sample: Solution staging with asynchronous import](/power-apps/developer/data-platform/org-service/samples/solution-stage-and-import)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
