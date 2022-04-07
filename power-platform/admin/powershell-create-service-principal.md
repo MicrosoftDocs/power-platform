@@ -1,9 +1,8 @@
 ---
-title: Programmability and Extensibility - PowerShell - Creating a service principal | Microsoft Docs
+title: Creating a service principal application using PowerShell | Microsoft Docs
 description: PowerShell for Power Platform Administrators and service principal authentication
 author: laneswenka
 ms.reviewer: jimholtz
-
 ms.component: pa-admin
 ms.topic: reference
 ms.date: 03/19/2021
@@ -15,13 +14,13 @@ search.app:
   - Powerplatform
 ---
 
-# Creating a service principal application via PowerShell
-Authenticating via username and password is often not ideal, especially with the rise of multifactor authentication.  In such cases, service principal (or client credentials flow) authentication is preferred.
+# Creating a service principal application using PowerShell
+Authenticating via username and password is often not ideal, especially with the rise of multi-factor authentication.  In such cases, service principal (or client credentials flow) authentication is preferred.
 
 ## Registering an admin management application
-First, the client application needs to be registered in your Azure Active Directory (Azure AD) tenant.  To set this up, review the [Authentication](programmability-authentication.md) article for Power Platform APIs because the same application setup is required for PowerShell.
+First, the client application needs to be registered in your Azure Active Directory (Azure AD) tenant.  To set this, review the [Authentication](programmability-authentication.md) article for Power Platform APIs because the same application setup is required for PowerShell.
 
-After your client application is registered in Azure AD, it also needs to be registered with Microsoft Power Platform.  Today, there's no way to do this via the Power Platform admin center; it must be done programmatically via Power Platform API or PowerShell for Power Platform administrators.  A service principal cannot register itself—by design, the application must be registered by an **administrator username and password context**.  This ensures that the application is created knowingly by someone who is an administrator for the tenant.
+After your client application is registered in Azure AD, it also needs to be registered with Microsoft Power Platform.  Today, there's no way to do this via the Power Platform admin center; it must be done programmatically via Power Platform API or PowerShell for Power Platform administrators.  A service principal can't register itself—by design, the application must be registered by an **administrator username and password context**.  This ensures that the application is created knowingly by someone who is an administrator for the tenant.
 
 To register a new management application, use the following script:
 
@@ -47,4 +46,4 @@ Get-AdminPowerAppEnvironment
 ```
 
 ## Limitations of service principals
-Currently, service principal authentication works for environment management, tenant settings, and Power Apps management.  Any cmdlets related to Flow are not supported for this kind of authentication.  This support will be added in the future.
+Currently, service principal authentication works for environment management, tenant settings, and Power Apps management.  Cmdlets related to Flow are supported for service principal authentication in situations where a license isn't required, as it isn't possible to assign licenses to service principal identities in Azure Active Directory.

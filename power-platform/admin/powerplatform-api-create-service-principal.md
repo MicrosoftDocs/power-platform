@@ -1,9 +1,8 @@
 ---
-title: "Preview: Programmability and extensibility - Power Platform API - Creating a service principal | Microsoft Docs"
+title: "Creating a service principal application using API (preview) | Microsoft Docs"
 description: Power Platform API and service principal authentication
 author: laneswenka
 ms.reviewer: jimholtz
-
 ms.component: pa-admin
 ms.topic: reference
 ms.date: 03/19/2021
@@ -15,7 +14,7 @@ search.app:
   - Powerplatform
 ---
 
-# Preview: Creating a service principal application via API
+# Creating a service principal application using API (preview) 
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -46,4 +45,4 @@ GET https://api.bap.microsoft.com/providers/Microsoft.BusinessAppPlatform/adminA
 ```
 
 ## Limitations of service principals
-Currently, service principal authentication works for environment management, tenant settings, and Power Apps management.  Any APIs related to Flow are not supported for this kind of authentication.  This support will be added in the future.
+Currently, service principal authentication works for environment management, tenant settings, and Power Apps management.  APIs related to Flow are supported for service principal authentication in situations where a license is not required, as it is not possible to assign licenses to service principal identities in Azure Active Directory.

@@ -5,7 +5,7 @@ author: jimholtz
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/07/2022
+ms.date: 02/23/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -21,7 +21,7 @@ search.app:
 [!INCLUDE[pn_dyn_365_germany](../includes/pn-dyn-365-germany.md)] address the needs of the most regulated customers in Germany, the European Union (EU), and the European Free Trade Association (EFTA). The German datacenter delivers services that bring together the best of Microsoft in productivity, collaboration, intelligence and platform to grow, evolve and transform your business.  
   
 > [!NOTE]
-> Due to the unique nature of [!INCLUDE[pn_dyn_365_germany](../includes/pn-dyn-365-germany.md)], there are some features that have not yet been enabled. The key sales, marketing, and service features for customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), will be the same as in other regions. However, there may be external factors that are made available in other clouds, but will not be available to German cloud customers at this time.  
+> Due to the unique nature of [!INCLUDE[pn_dyn_365_germany](../includes/pn-dyn-365-germany.md)], there are some features that have not yet been enabled. The key sales, marketing, and service features for Microsoft Power Platform and Dynamics 365 apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), will be the same as in other regions. However, there may be external factors that are made available in other clouds, but will not be available to German cloud customers at this time.  
 > 
 >  Please check back for the latest information.  
   
@@ -37,7 +37,7 @@ search.app:
   
 - Access control is through  a German Data Trustee.  
   
-- All security and compliance capabilities of customer engagement apps (such as Dynamics 365 Sales and Customer Service), are included.  
+- All security and compliance capabilities of Power Platform and Dynamics 365 apps (such as Dynamics 365 Sales and Customer Service), are included.  
   
   ![Germany data residence.](media/germany-data-residence.png "Germany data residence")  
   <a name="BKMK_DataTrustee"></a>   
@@ -94,7 +94,7 @@ Dynamics 365 Plan is a user subscription that includes [!INCLUDE[pn_ms_dyn_365_f
   
 <a name="BKMK_CompliancyCerts"></a>   
 ## Compliancy and certifications  
- [!INCLUDE[pn_dyn_365_germany](../includes/pn-dyn-365-germany.md)] is built in adherence to the cloud security and compliance standards and commitments of customer engagement apps (such as Dynamics 365 Sales and Customer Service).  
+ [!INCLUDE[pn_dyn_365_germany](../includes/pn-dyn-365-germany.md)] is built in adherence to the cloud security and compliance standards and commitments of Power Platform and Dynamics 365 apps (such as Dynamics 365 Sales and Customer Service).  
   
  [!INCLUDE[pn_dyn_365_germany](../includes/pn-dyn-365-germany.md)] is planned to be covered under existing audits.  
   

@@ -4,10 +4,9 @@ description: Administer Power Apps.
 ms.custom: ""
 ms.date: 02/03/2022
 ms.reviewer: ""
-
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: conceptual
 ms.assetid: 83200632-a36b-4401-ba41-952e5b43f939
 author: "jimholtz"
 ms.subservice: admin

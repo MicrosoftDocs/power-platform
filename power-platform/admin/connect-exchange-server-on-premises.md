@@ -27,7 +27,7 @@ With version 9.0, you can connect your customer engagement apps (such as [Dynami
 
 1. **Exchange Server**. The following versions are supported: [!INCLUDE[pn_Exchange_Server_2013_short](../includes/pn-exchange-server-2013-short.md)] SP1, [!INCLUDE[pn_exchange_server_2016_short](../includes/pn-exchange-server-2016-short.md)], and Exchange Server 2019.  
 
-2. **Authentication**. During installation, [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)]<!--note from editor: Should this be "Exchange Server"?--> configures [!INCLUDE[pn_Internet_Information_Services](../includes/pn-internet-information-services.md)]. To connect customer engagement apps with [!INCLUDE[pn_Exchange_Server_short](../includes/pn-exchange-server-short.md)], you must enable Windows NT LAN Manager (NTLM) or Basic authentication in [!INCLUDE[pn_Exchange_Server_short](../includes/pn-exchange-server-short.md)]. If you configure NTLM authentication, make sure Basic authentication is disabled on Exchange Server.  
+2. **Authentication**. During installation, [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] configures [!INCLUDE[pn_Internet_Information_Services](../includes/pn-internet-information-services.md)]. To connect customer engagement apps with [!INCLUDE[pn_Exchange_Server_short](../includes/pn-exchange-server-short.md)], you must enable Windows NT LAN Manager (NTLM) or Basic authentication in [!INCLUDE[pn_Exchange_Server_short](../includes/pn-exchange-server-short.md)]. If you configure NTLM authentication, make sure Basic authentication is disabled on Exchange Server.  
 
 For more information about authentication, go to:  
 
@@ -36,14 +36,14 @@ For more information about authentication, go to:
    - Exchange Server 2016: [Default settings for Exchange virtual directories](/Exchange/clients/default-virtual-directory-settings?view=exchserver-2019)
    - Exchange Server 2019: [Default settings for Exchange virtual directories](/Exchange/clients/default-virtual-directory-settings?view=exchserver-2019)
 
-3. **ApplicationImpersonation role**. You need to create and configure a service account with the **ApplicationImpersonation** role in [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)].<!--note from editor: Should this be "Exchange Server"?--> [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Impersonation and EWS in Exchange](https://msdn.microsoft.com/library/office/dn722377\(v=exchg.150\).aspx) 
+3. **ApplicationImpersonation role**. You need to create and configure a service account with the **ApplicationImpersonation** role in [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)]. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Impersonation and EWS in Exchange](https://msdn.microsoft.com/library/office/dn722377\(v=exchg.150\).aspx) 
 
-4. **Secured connection**. The connection between customer engagement apps and Exchange<!--note from editor: Should this be "Exchange Server"?--> must be encrypted via [TLS/SSL](/windows/win32/secauthn/cipher-suites-in-schannel) and current [cipher suites](server-cipher-tls-requirements.md). 
+4. **Secured connection**. The connection between customer engagement apps and Exchange must be encrypted via [TLS/SSL](/windows/win32/secauthn/cipher-suites-in-schannel) and current [cipher suites](server-cipher-tls-requirements.md). 
 
 5. **Exchange Web Services (EWS)**. Connections to EWS must be allowed through the firewall. Often a reverse proxy is used for the exterior-facing connection.  
 
 > [!TIP]
-> To make sure you've got a good connection to [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)]<!--note from editor: Should this be "Exchange Server"?--> (on-premises), run the [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/). For information about which tests to run, see [Test mail flow with the Remote Connectivity Analyzer](https://technet.microsoft.com/library/dn305950\(v=exchg.150\).aspx). 
+> To make sure you've got a good connection to [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] (on-premises), run the [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/). For information about which tests to run, see [Test mail flow with the Remote Connectivity Analyzer](https://technet.microsoft.com/library/dn305950\(v=exchg.150\).aspx). 
 > 
 > To learn more about the protocols and ciphers used to secure the connection between Dynamics 365 and external email services, see [Server cipher suites and TLS requirements](server-cipher-tls-requirements.md).
 
@@ -74,7 +74,7 @@ For more information about authentication, go to:
 
     - **Credential specified in email server profile**: The credentials specified in the email server profile are used for sending or receiving email for the mailboxes of all users and queues associated with this profile. The credentials must have impersonation or delegation permissions on the mailboxes associated with the profile. This option requires some configuration on the email server, for example configuring impersonation rights on Exchange for the mailboxes associated with the profile.
       > [!NOTE]
-      > To ensure the credentials are secured, SQL encryption is used to encrypt the credentials stored in the email server profile.<!--note from editor: I removed "...if you're processing email by using server-side synchronization" because this same note occurs in other topics without this extra wording. If using server-side synchronization is something the reader can choose not to do, and in such a case SQL encryption won't be used, this note should say something like "If you're processing email by using server-side synchronization, SQL encryption is used to encrypt the credentials stored in the email server profile to ensure that they're secured."-->
+      > To ensure the credentials are secured, SQL encryption is used to encrypt the credentials stored in the email server profile.
     
       > [!div class="mx-imgBorder"] 
       > ![Screenshot of credentials specified in the email server profile.](media/server-profile-onprem-cred-server.png "Credential specified in email server profile")
@@ -144,7 +144,7 @@ For more information about authentication, go to:
 
  In this example, there was a problem with the auto-discover server location feature. Review the username and password used for **Authentication Using Impersonation** for the Exchange Server (Hybrid) profile.  
 
- You can find information about recurring issues and other troubleshooting information in [Blog: Test and Enable Mailboxes in Microsoft Dynamics CRM 2015](https://cloudblogs.microsoft.com/dynamics365/no-audience/2015/08/31/test-and-enable-mailboxes-in-microsoft-dynamics-crm-2015/)<!--note from editor: The other link resolved to the Dev Blogs home page.--> and [Troubleshooting and monitoring server-side synchronization](troubleshooting-monitoring-server-side-synchronization.md).  
+ You can find information about recurring issues and other troubleshooting information in [Blog: Test and Enable Mailboxes in Microsoft Dynamics CRM 2015](https://cloudblogs.microsoft.com/dynamics365/no-audience/2015/08/31/test-and-enable-mailboxes-in-microsoft-dynamics-crm-2015/) and [Troubleshooting and monitoring server-side synchronization](troubleshooting-monitoring-server-side-synchronization.md).  
 
 ## Configure default email processing and synchronization
 
@@ -164,7 +164,7 @@ Set server-side synchronization to be the default configuration method.
 
    - **Appointments, Contacts, and Tasks**: Server-Side Synchronization or Email Router  
 
-     If you leave **Email processing for unapproved user and queues**<!--note from editor: Edit okay?--> at the default values (selected), you'll need to approve emails and queues for user mailboxes as directed in [**Approve email**](#approve-email), later in this topic.  
+     If you leave **Email processing for unapproved user and queues** at the default values (selected), you'll need to approve emails and queues for user mailboxes as directed in [**Approve email**](#approve-email), later in this topic.  
 
 4. Select **Save**.  
 
@@ -175,8 +175,7 @@ To set mailboxes to use the default profile, you must first set the server profi
 In addition to administrator permissions, you must have Read and Write privileges on the Mailbox table to set the delivery method for the mailbox.  
 
 Choose *one* of the following methods: set mailboxes to the default profile, or edit mailboxes to set profile and delivery methods.
-
-<!--markdownlint-disable MD036--> 
+ 
 **To set mailboxes to the default profile**  
 
 1. In the Power Platform admin center, select an environment. 

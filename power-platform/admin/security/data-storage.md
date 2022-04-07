@@ -3,7 +3,7 @@ title: Data storage in Power Platform
 description: Learn how data is stored in Power Platform.
 ms.date: 02/15/2022
 ms.service: power-platform
-ms.topic: "get-started-article"
+ms.topic: conceptual
 ms.custom: 
   - "admin-security"
 author: lancedMicrosoft
