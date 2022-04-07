@@ -93,7 +93,7 @@ The CoE Starter Kit can be used in both production environments and Dataverse fo
 
 If you decide to use a production environment:
 
-- [Create an environment with a database](../../admin/create-environment#create-an-environment-with-a-database).
+- [Create an environment with a database](/power-platform/admin/create-environment#create-an-environment-with-a-database).
 - Don't add sample apps and datasets.
 - Don't restrict environment access with a security group, because some parts of the CoE Starter Kit use [approval actions](/power-automate/get-started-approvals) and require makers to be able to interact with the environment.
 
@@ -105,7 +105,7 @@ If you decide to use a Dataverse for Teams environment:
 
 ### Validate data loss prevention (DLP) policies
 
-The [DLP policy](../../admin/wp-data-loss-prevention) applied to your CoE Starter Kit environment needs to allow the following connectors to be used together in the business group:
+The [DLP policy](/power-platform/admin/wp-data-loss-prevention) applied to your CoE Starter Kit environment needs to allow the following connectors to be used together in the business group:
 
 - [Approvals](/connectors/approvals/)
 - HTTP
