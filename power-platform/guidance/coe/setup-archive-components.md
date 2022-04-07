@@ -117,6 +117,8 @@ Environment variables are used to store application and flow configuration data 
 | Cleanup Old Objects App URL | (Optional) A link to the Cleanup Old Objects canvas app included in this solution. To make cleanup easier, any communication about old objects that are no longer considered to be useful will include this link. More information: [Get an app URL from a production environment](faq.md#get-a-power-apps-url-from-a-production-environment) or [Get an app URL from a Teams environment](faq.md#add-apps-to-microsoft-teams) | None |
 | Flow Approvals URL | (Optional) A link to the Power Automate approval page for your CoE environment. To make cleanup easier, any communication about old objects that are no longer considered to be useful will include this link. To get the URL, go to flows.microsoft.com for your CoE environment > **Action Items** > **Approvals**. The URL will end in **approvals/received**.|  None |
 | ProductionEnvironment | Set to **No** if you've installed the solution for development or test purposes. This will send approvals to the admin email instead of the maker. | Yes |
+| Archival-PastTime-Interval | The interval for the past time for how far back to go to see if an app/flow is useful. | 6 (months) |
+| Archival-PastTime-Unit | The units for the past time for how far back to go to see if an app/flow is useful. | Month. |
 
 ## It looks like I found a bug with the CoE Starter Kit; where should I go?
 

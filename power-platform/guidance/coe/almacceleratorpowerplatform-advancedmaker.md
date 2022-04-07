@@ -29,6 +29,30 @@ search.app:
 Watch how to use the ALM Accelerator for Power Platform.
 [Demo Videos](https://github.com/microsoft/coe-starter-kit/blob/main/CenterofExcellenceALMAccelerator/WALKTHROUGHS.md)
 
+## Configuration of the ALM accelerator advanced maker user settings
+
+In the following table you can see how the **User Functions** are configured for the **advanced maker** user settings.
+
+| Field        | Value     | Description |
+|--------------|-----------|------------|
+| Import Solutions | Allowed  | Allowing this function shows the **Import Solution** command in the app.|
+| Delete Solutions | Allowed  | This function shows the **Delete Solution** command in the app.|
+| Manage Solutions | Allowed  | This function shows the **Manage Solutions** command in the app.|
+| Drillthrough Status | Allowed  | This function allows users to drill into the Azure DevOps pipeline runs for the promote and deploy functionality.|
+| Profile Creation | Allowed  | This function provides users with the ability to create new deployment profiles in the app.|
+| Advanced Promote | Allowed  | This function provides users with the ability to change between using the advanced promote functionality. They can specify a source and target branch, or create a new branch.|
+| Advanced Deploy | Allowed  | This function provides users with the ability to switch between using the advanced deploy functionality. They can specify a source and target branch for a pull request.|
+| Bypass Prepare | Allowed  | This function provides the user with the ability to skip the preparation step during the promotion of a solution. They can bypass needing to configure deployment settings before committing to source control.|
+
+The below table shows how the **User Labels** are configured for the **advanced maker** user settings
+
+| Field        | Value     | Description |
+|--------------|-----------|------------|
+| Deploy Solution |  | Setting the value to blank will use the default label. Default label is **DEPLOY SOLUTION**.|
+| Commit Solution |  | Setting the value to blank will use the default label. Default label is **COMMIT SOLUTION**.|
+| Import Solution |  | Setting the value to blank will use the default label. Default label is **IMPORT SOLUTION**.|
+| Delete Solution |  | Setting the value to blank will use the default label. Default label is **DELETE SOLUTION**.|
+
 ## Walk-through: ALM accelerator advanced maker experience
 
 > [!IMPORTANT]
