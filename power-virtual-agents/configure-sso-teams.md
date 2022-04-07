@@ -154,7 +154,7 @@ You'll need to add the token exchange URL to allow Teams and Power Virtual Agent
 
 To add the token exchange url:
 
-1. Go to the Azure AD authentication you configured when following the steps to [create the new Azure AD authentication in the Power Virtual Agents web app](configuration-end-user-authentication.md#configure-authentication-with-manual-azure-ad).
+1. Go to the Azure AD authentication you configured when following the steps to [create the new Azure AD authentication in the Power Virtual Agents web app](configuration-end-user-authentication.md#configure-manual-authentication).
 
 1. Add the Token Exchange URL as described in the [Configure SSO with Azure AD](configure-sso.md#configure-authentication-in-power-virtual-agents-to-enable-single-sign-on) topic, under the **Configure authentication in Power Virtual Agents to Enable SSO** heading.
 
