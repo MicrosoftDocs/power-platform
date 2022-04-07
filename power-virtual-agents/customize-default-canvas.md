@@ -54,6 +54,9 @@ You can change the bot's name and icon. This will affect the icon in all channel
 
     :::image type="content" source="media/customize-default-canvas/custom-canvas-name-icon.png" alt-text="The bot details pane lets you change the name and icon.":::
 
+> [!IMPORTANT]
+> After updating your bot's icon, it may take up to 24 hours for the new icon to appear everywhere.
+
 ## Retrieve bot ID and tenant ID details
 
 To customize your canvas, whether it's the default canvas or a custom one you connect to, you need to retrieve your bot details.
