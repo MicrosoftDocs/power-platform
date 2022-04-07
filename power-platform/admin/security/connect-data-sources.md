@@ -3,7 +3,7 @@ title: Connecting and authenticating to data sources
 description: Learn how Power Platform connects and authenticates to external data sources.
 ms.date: 02/14/2022
 ms.service: power-platform
-ms.topic: "get-started-article"
+ms.topic: conceptual
 ms.custom: 
   - "admin-security"
   - "intro-internal"

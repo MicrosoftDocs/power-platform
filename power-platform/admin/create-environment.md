@@ -83,11 +83,6 @@ To create an environment, all the following must be true:
 
 3.	Tenant policy must allow environment creation. See [Control who can create and manage environments in the Power Platform admin center](control-environment-creation.md)
 
-<!-- 
-> [!NOTE]
-> Global admins and Power Platform admins can create environments without a license provided the environment has available database storage capacity. See [Administer without a license](global-service-administrators-can-administer-without-license.md). 
--->
-
 ## Create an environment in the Power Platform admin center
 An environment provides storage for apps, flows, data, and various other resources. When users create an app in an environment, that app can connect to any data source, including connections, gateways, and flows. How you choose to leverage environments depends on your organization and the apps you're trying to build. For more information, see [Environments overview](environments-overview.md).
 

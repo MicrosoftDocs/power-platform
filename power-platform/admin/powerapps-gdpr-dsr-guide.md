@@ -3,9 +3,8 @@ title: "Responding to Data Subject Rights (DSR) requests for Power Apps customer
 description: "Walkthough of how to respond to Data Subject Rights (DSR) requests for Power Apps customer data to support GDPR compliance."
 author: jimholtz
 ms.reviewer: paulliew
-
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: overview
 ms.date: 06/16/2021
 ms.subservice: admin
 ms.author: jimholtz

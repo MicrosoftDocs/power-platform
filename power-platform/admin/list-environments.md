@@ -1,9 +1,8 @@
 ---
-title: "Preview: Programmability and Extensibility - Power Platform API - 2021-02-01 - List environments | Microsoft Docs"
+title: "Programmability and Extensibility - Power Platform API - 2021-02-01 - List environments (preview) | Microsoft Docs"
 description: Power Platform API Reference - List environments
 author: laneswenka
 ms.reviewer: jimholtz
-
 ms.component: pa-admin
 ms.topic: reference
 ms.date: 03/19/2021
@@ -15,7 +14,7 @@ search.app:
   - Powerplatform
 ---
 
-# Preview: List environments
+# List environments (preview) 
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -23,7 +22,7 @@ You can list environments for your tenant.
 
 ## Authentication
 
-For more information about permissions and how to select them, see [Authentication](programmability-authentication.md).
+For more information about permissions and how to select them, see [Authentication - legacy](programmability-authentication.md).
 
 ## HTTP request
 
