@@ -27,6 +27,9 @@ You use this functionality to identify objects where the maker has left the orga
 >[!IMPORTANT]
 >This article assumes you have [installed the governance components solution](before-setup-gov.md), and you have your [environment set up](setup.md#create-your-environment) and are signed in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
 
+>[!NOTE]
+>The flows supporting this processes use the [Microsoft Teams](/connectors/teams/) connector. Due to limitations of this connector, this process is currently not available in US Government (GCC High) and US Department of Defense (DoD).
+
 ## Turn on flows
 
 Turn on the following flows, which are installed as part of the governance components solution:
