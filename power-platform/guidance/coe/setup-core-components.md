@@ -64,7 +64,7 @@ During solution import, you'll configure environment variable values. Make sure 
 | Name | Description |
 |------|---------------|
 |Admin eMail |This is the email address to which most admin communications in the starter kit will be sent. More information: [How will you communicate with your admins, makers, and users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-end-users)  |
-| Power Platform Maker Microsoft 365 Group | Get the ID of the Microsoft 365 group which will contain all your Power Platform makers. [Create a new group](/microsoft-365/admin/create-groups/create-groups#create-a-microsoft-365-group) if needed. You'll use this to communicate and share apps with them. Makers are automatically added to this group with the **Admin \| Add Maker to Group** flow. More information: [How will you communicate with your admins, makers and end users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-end-users) |
+| Power Platform Maker Microsoft 365 Group | Get the ID of the Microsoft 365 group which will contain all your Power Platform makers. [Create a new group](/microsoft-365/admin/create-groups/create-groups#create-a-microsoft-365-group) if needed. You'll use this to communicate and share apps with them. Makers are automatically added to this group with the **Admin \| Add Maker to Group** flow and as part of the [Admin | Welcome Email v3](core-components.md#flows-2). More information: [How will you communicate with your admins, makers and end users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-end-users) |
 |Power Automate environment variable | The URL used by Power Automate for your cloud.<br> For an environment in the commercial cloud: <https://flow.microsoft.com/manage/environments/> <br>For GCC, GCC High, or DoD environment, check [Power Automate US government service URLs](/power-automate/us-govt#power-automate-us-government-service-urls). |
 |PowerApp Maker environment variable | The URL used byA the Power Apps maker portal for your cloud, including the trailing slash. <br> For an environment in the commercial cloud: <https://make.powerapps.com/> <br>For a GCC, GCC High, or DoD environment, check [Power Apps US Government service URLs](../../admin/powerapps-us-government.md#power-apps-us-government-service-urls). |
 |PowerApp Player environment variable | The URL used by the Power Apps player for your cloud, including the trailing slash.<br> For an environment in the commercial cloud: <https://apps.powerapps.com/> <br> For a GCC environment: <https://apps.gov.powerapps.us/> <br>For a GCC High environment: <https://apps.gov.powerapps.us/> <br>For a DoD environment: <https://play.apps.appsplatform.us> |
@@ -94,6 +94,7 @@ There are several child flows, check to make sure all of these flows are on:
 1. HELPER – CloudFlowOperations
 1. HELPER – CanvasAppOperations
 1. HELPER – ObjectOperations
+1. HELPER - Get Groups
 1. CLEANUP HELPER – Check Deleted (Canvas Apps)
 1. CLEANUP HELPER – Check Deleted (Cloud Flows)
 1. CLEANUP HELPER – Check Deleted (Custom Connectors)
@@ -152,6 +153,8 @@ The Admin \| Sync Template flows part of this solution crawl through all the res
 
 >[!NOTE]
 > To load-balance queries against Dataverse, the Admin | Sync Template v3 flow implements a delay between 0 and 12 hours before starting to collect the inventory. This flow therefore might appear to be running for a long time.
+
+The first run of these flows will perform a full inventory of every Power Platform resource (app, flow, bot, environment,...) in your tenant and depending on the size of your tenant, these flows may take a long time to run. Consider setting up [pay-as-you go for Power Platform requests](/power-platform/admin/pay-as-you-go-overview) to avoid these flows getting throttled. More: [Long running flows](limitations.md#long-running-flows).
 
 ## Set up the Admin - Command Center App
 

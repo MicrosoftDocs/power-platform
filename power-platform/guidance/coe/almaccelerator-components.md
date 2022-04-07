@@ -30,6 +30,15 @@ ALM Accelerator for Makers enables makers to apply source control strategies by 
 
 Makers can use the ALM Accelerator for Makers app to view all their projects, and deploy their work in progress or completed solution to a test or production environment. After a new project has been created and approved, makers can go to [make.powerapps.com](https://make.powerapps.com) to build and create assets&mdash;such as apps, flows, and tables&mdash;in a solution that has been created for them.
 
+## License requirements for users of ALM Accelerator for Makers
+
+ALM Accelerator for Makers uses the following premium Power Platform features
+
+- Dataverse
+- Custom Connector
+
+For Makers to use the features of the ALM Accelerator they to have a GitHub account. GitHub free plan is supported. Please note the benefits of using a GitHub paid plan here [configure github organizational secrets](setup-almaccelerator.md#configure-github-org-secrets)
+
 ## Prerequisite
 
 This app uses Microsoft Dataverse, and a Premium license is required for every app user.
@@ -90,6 +99,5 @@ Before a maker can deploy their project to production, the project must have bee
 Makers can check the deployment history for their project by opening the detail pages for their project and selecting **>**.
 
 :::image type="content" source="media/git-35.png" alt-text="View deployment history":::
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
