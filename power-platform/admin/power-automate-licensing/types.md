@@ -103,7 +103,7 @@ Here's the full list of [premium connectors](/connectors/connector-reference/con
 
 ### Business process flows
 
-You can create [business process flows](/business-process-flows-overview) for a workflow to ensure that users enter data consistently and follow the same steps every time. Business process flows provide a streamlined user experience that leads people through the processes their organization has defined for interactions that need to be advanced to reach a conclusion.
+You can create [business process flows](/power-automate/business-process-flows-overview) for a workflow to ensure that users enter data consistently and follow the same steps every time. Business process flows provide a streamlined user experience that leads people through the processes their organization has defined for interactions that need to be advanced to reach a conclusion.
 
 ### Custom connectors
 
