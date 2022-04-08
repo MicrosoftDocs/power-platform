@@ -3,7 +3,7 @@ title: "Manage group teams  | MicrosoftDocs"
 description: About managing group teams 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/22/2022
+ms.date: 04/08/2022
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
@@ -111,6 +111,17 @@ For more information, see [Assign a record to a user or team](/powerapps/user/as
 
 After you create the team, you can add team members and select corresponding security roles. This step is optional, but recommended.
 
+### How Azure AD members matches to Dataverse group team members
+
+:::image type="content" source="media/match-azure-ad-to-dataverse.png" alt-text="How does Azure AD members match to Dataverse group team members":::
+
+Review the following table for how members in Azure AD groups match to Dataverse group team members.
+
+|Azure AD <br />Group category (1) |User type (2)  |Dataverse group team <br /> membership type (3)  |
+|---------|---------|---------|
+|Members     | Member <br />  &nbsp; <br /> Guest    | Members - select this type to include only user type Members from the Azure AD group. <br /> &nbsp; <br /> Guests - select this type to include only user type Guests from the Azure AD group. <br /> &nbsp; Members and guests - select this type to include both Members and Guests user types from the Azure AD group.  |
+|Owners     |  (blank)       |  Owners - those listed in the Owners Azure AD Group category (1).      |
+
 ## Edit a group team
 
 1. Make sure that you have the System Administrator, Sales Manager, Vice President of Sales, Vice President of Marketing, or CEO-Business Manager security role or equivalent permissions.
@@ -166,8 +177,9 @@ See:
 
 ### See also
 [Manage teams](manage-teams.md) <br />
-[Video: Azure Active Directory group membership](https://youtu.be/GW2Rz53BX6o) 
-
+[Video: Azure Active Directory group membership](https://youtu.be/GW2Rz53BX6o) <br />
+[Create a basic group and add members using Azure Active Directory](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) <br />
+[Quickstart: View your organization's groups and members in Azure Active Directory](/azure/active-directory/fundamentals/active-directory-groups-view-azure-portal)
 
 
 
