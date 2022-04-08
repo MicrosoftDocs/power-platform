@@ -60,7 +60,7 @@ To create the Dataverse connection, use the following steps:
 
 1. Select the maker environment that you'll deploy the ALM Accelerator for Power Platform into.
 
-1. Go to to **Data** > **Connections**.
+1. Go to to **Dataverse** > **Connections**.
 
 1. Select **New Connection**.
 
