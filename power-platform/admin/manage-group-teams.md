@@ -105,13 +105,13 @@ For more information, see [Assign a record to a user or team](/powerapps/user/as
 6. If the team type is Azure AD Security group or Azure AD Office group, you must also enter these fields:
 
    - **Group name:** Start entering text to select an existing Azure AD group names.These groups are pre-created in Azure AD.
-   - **Membership type:** Select the membership type from the dropdown list. See [How Azure AD members match to Dataverse group team members](#how-azure-ad-members-matches-to-dataverse-group-team-members).
+   - **Membership type:** Select the membership type from the dropdown list. See [How Azure AD members match to Dataverse group team members](#how-azure-ad-security-group-members-matches-to-dataverse-group-team-members).
 
    :::image type="content" source="media/dataverse-team-manage-new-team-azuread.png" alt-text="Screenshot of settings for a new Azure AD team.":::
 
 After you create the team, you can add team members and select corresponding security roles. This step is optional, but recommended.
 
-### How Azure AD members match to Dataverse group team members
+### How Azure AD security group members match to Dataverse group team members
 
 :::image type="content" source="media/match-azure-ad-to-dataverse.png" alt-text="How does Azure AD members match to Dataverse group team members":::
 
