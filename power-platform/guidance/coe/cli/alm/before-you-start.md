@@ -32,6 +32,7 @@ Environment | Description
 Developer | Development environments that each maker will use to create and manage source-controlled solutions.
 ALM environment | Environment with Microsoft Dataverse enabled. Will be used to deploy managed solution.
 ALM environment - Dataverse connection | See [Maker environment Dataverse](#maker-environment-dataverse-connection) below to create the Dataverse connection.
+ALM environment - HTTP with Azure AD | See [Maker environment HTTP with Azure AD connection](#maker-environment-http-with-azure-ad-connection) below to create the HTTP with Azure AD connection.
 Validation | Environment used to validate builds before merging into a solution branch.              |
 Test | Pre-production environment used to test solutions before moving to production.          |
 Production | Production environment for managed solutions.                                         |
@@ -65,6 +66,26 @@ To create the Dataverse connection, use the following steps:
 1. Select **New Connection**.
 
 1. Select **Microsoft Dataverse (legacy)**.
+
+1. Select Create.
+
+## Maker environment HTTP with Azure AD connection
+
+In the maker environment, you'll need a Dataverse connection created by the install user.
+
+To create the Dataverse connection, use the following steps:
+
+1. Go to [https://make.powerapps.com/](https://make.powerapps.com/).
+
+1. Select the maker environment that you'll deploy the ALM Accelerator for Power Platform into.
+
+1. Go to to **Data** > **Connections**.
+
+1. Select **New Connection**.
+
+1. Select **HTTP with Azure AD**.
+
+1. Put **https://graph.microsoft.com** for both Base Resource URL and Azure AD Resource URI (Application ID URI)
 
 1. Select Create.
 
