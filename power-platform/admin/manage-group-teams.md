@@ -119,7 +119,7 @@ Review the following table for how members in Azure AD groups match to Dataverse
 
 |Azure AD <br />Group category (1) |User type (2)  |Dataverse group team <br /> membership type (3)  |
 |---------|---------|---------|
-|Members     | Member <br />  &nbsp; <br /> Guest    | Members - select this type to include only user type Members from the Azure AD group. <br /> &nbsp; <br /> Guests - select this type to include only user type Guests from the Azure AD group. <br /> &nbsp; Members and guests - select this type to include both Members and Guests user types from the Azure AD group.  |
+|Members     | Member <br />  &nbsp; <br /> Guest    | Members - select this type to include only user type Members from the Azure AD group. <br /> &nbsp; <br /> Guests - select this type to include only user type Guests from the Azure AD group. <br /> &nbsp; <br /> Members and guests - select this type to include both Members and Guests user types from the Azure AD group.  |
 |Owners     |  (blank)       |  Owners - those listed in the Owners Azure AD Group category (1).      |
 
 ## Edit a group team
