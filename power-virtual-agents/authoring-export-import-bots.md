@@ -160,9 +160,15 @@ The export can take several minutes to complete. Once finished, a .zip file will
 
 ## Add new components to a chatbot custom solution
 
-If you add new bot components (such as new topics or flows) to your bot in the Power Virtual Agents portal, you will also need to add those changes to the bot in your target environment. You do this by adding the components to the unmanaged solution by selecting **Add required components** under the **...** menu next to the name of the bot.
+If you add new bot components (such as new topics or flows) to your bot in Power Virtual Agents, you will also need to add those components to the bot in your unmanaged solution.
 
-:::image type="content" source="media/authoring-export-import-bots/export-add-required-components.png" alt-text="Screenshot highlighting the Add required components option under the More menu." border="false":::
+1. Go to your unmanaged solution in the Power Apps portal.
+
+1. Select **Chatbots** and find your bot in the list.
+
+1. Select the vertical three dots, then select **Add required objects**.
+
+    :::image type="content" source="media/authoring-export-import-bots/export-add-required-components.png" alt-text="Screenshot highlighting the Add required components option under the More menu." border="false":::
 
 ## Upgrade or update a solution with a chatbot
 
