@@ -277,11 +277,15 @@ The **VerifyDefaultEnvironmentVariableValues** can be used to ensure that specif
    | Create branch | Allow |
    | Edit policies | Allow |
 
+![image](https://user-images.githubusercontent.com/30095306/162396974-f4ed9094-e0e8-46a9-8d17-163078fb4700.png)
+
 1. Find and select the username **[Your Project Name] Build Service ([Your Organization Name])** under **Users**, and then set the same values as in the previous step.
 
 1. Select **Pipelines**, select the three dots (**...**) in the upper-right corner, and then select **Manage Security**.
 
-1. Set the following permissions for the build service user.
+![image](https://user-images.githubusercontent.com/30095306/162397329-1a561997-0a17-436d-a605-c0ca3935f1d5.png)
+
+1. Set the following permissions for **[Your Project Name] Build Service ([Your Organization Name])** user.
 
    | Permission                            | Value |
    | ------------------------------------- | ----- |
@@ -293,9 +297,15 @@ The **VerifyDefaultEnvironmentVariableValues** can be used to ensure that specif
    | View build pipeline                   | Allow |
    | View builds                           | Allow |
 
-1. Select **Agent pools** and select **Security**, and then select **Add**.
+![image](https://user-images.githubusercontent.com/30095306/162397729-1998be4c-82da-4649-8282-7a7f2a697341.png)
+
+1. Select **Project settings** - **Agent pools** and select **Security**, and then select **Add**.
+
+![image](https://user-images.githubusercontent.com/30095306/162397951-ce93a1e7-d73f-4b92-ae73-d8aeb083b7d3.png)
 
 1. Find and select the username **[Your Project Name] Build Service ([Your Organization Name])**, and then set the **Role** to Reader. Select **Add**.
+
+![image](https://user-images.githubusercontent.com/30095306/162398122-a454d98c-0b12-4451-ac31-2556a3638895.png)
 
 ## Development project setup
 
