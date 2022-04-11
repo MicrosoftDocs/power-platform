@@ -3,7 +3,7 @@ title: "Manage group teams  | MicrosoftDocs"
 description: About managing group teams 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/08/2022
+ms.date: 04/11/2022
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
@@ -119,10 +119,10 @@ Review the following table for how members in Azure AD groups match to Dataverse
 
 |Select Dataverse group team membership type (4)  | Resulting membership |
 |---------|---------|
-| Members and guests | Select this type to include both Members and Guests user types (3) from the Azure AD group category Members (1). |
-| Members    | Select this type to include only user type Members (3) from the Azure AD group category Members (1).     |
-| Owners     | Select this type to include only user type Owners (3 - blank) from the Azure AD group category Owners (2).     |
-| Guests     | Select this type to include only user type Guests (3) from the Azure AD group category Members (1).    |
+| Members and guests | Select this type to include both Member and Guest user types (3) from the Azure AD group category Members (1). |
+| Members    | Select this type to include only user type Member (3) from the Azure AD group category Members (1).     |
+| Owners     | Select this type to include only user type Member (3) from the Azure AD group category Owners (2).     |
+| Guests     | Select this type to include only user type Guest (3) from the Azure AD group category Members (1).    |
 
 ## Edit a group team
 
