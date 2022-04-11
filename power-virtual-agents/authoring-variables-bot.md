@@ -27,6 +27,7 @@ By default, a variable's value can only be used in the topic where this variable
 
 For example, in a "Welcome" topic, the bot asks for the customer's name and email. Then when the conversation goes to another topic, such as an "Appointment booking" topic, you want the bot to remember this customer's name and email address.
 
+<!-- FIXME: does the product now use "global variables" instead of "bot variables"? -->
 In some systems, these types of variables are known as **global variables**. In Power Virtual Agents, these variables are called **bot variables**, because they apply across the entire bot.
 
 Bot variables apply during a single user session. You specify which variables should be treated as bot variables to distinguish them from topic-level variables.
