@@ -26,6 +26,9 @@ search.app:
 
 Although the connector classification capability is very helpful in governing Microsoft Power Platform connectors, fine-grained controls&mdash;such as the ability to block specific connector actions or connection endpoints&mdash;help you strike a balance between productivity and protection.
 
+> [!NOTE]
+> - Some apps need to be re-published for your connector action rules and connector endpoint filtering rules to be enforced. Please consult [Known limitations](dlp-granular-controls.md#known-limitations) below to learn more.
+
 ## Connector action control
 
 > [!NOTE]
@@ -290,8 +293,32 @@ $ConnectorConfigurations = @{
 }
 New-PowerAppDlpPolicyConnectorConfigurations -TenantId $TenantId -PolicyName $PolicyName -NewDlpPolicyConnectorConfigurations $ConnectorConfigurations
 ``` 
-### Known limitations
+
+## Known limitations
 - Endpoint filtering rules are not enforced on **environment variables**, **custom inputs** and **dynamically bound endpoints** during runtime. Only static endpoints known and selected when building an app, flow, or chatbot during design time are enforced.
 - Endpoint filtering rules for SQL Server and Azure Blob Storage are not enforced if the connections are authenticated with Azure Active Directory.
+- Some Power Apps last published before October 1st 2020 need to be re-published for DLP connector action rules and DLP connector endpoint rules to be enforced. The following script enables Admins and Makers to identify apps that must be re-published to respect these new DLP granular control rules:
+
+```powershell
+Add-PowerAppsAccount
+
+$GranularDLPDate = Get-Date -Date "2020-10-01 00:00:00Z"
+
+ForEach ($app in Get-AdminPowerApp){
+
+    $versionAsDate = [datetime]::Parse($app.LastModifiedTime)
+    
+    $olderApp = $versionAsDate -lt $GranularDLPDate
+
+    $wasBackfilled = $app.Internal.properties.executionRestrictions -ne $null -and $app.Internal.properties.executionRestrictions.dataLossPreventionEvaluationResult -ne $null -and ![string]::IsNullOrEmpty($app.Internal.properties.executionRestrictions.dataLossPreventionEvaluationResult.lastAdvancedBackfillDate) 
+
+    If($($olderApp -and !$wasBackfilled)){
+        Write-Host "App must be republished to be Granular DLP compliant: " $app.AppName " "  $app.Internal.properties.displayName " " $app.Internal.properties.owner.email
+    } 
+    Else{ 
+        Write-Host "App is already Granular DLP compliant: " $app.AppName 
+    }
+}
+``` 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
