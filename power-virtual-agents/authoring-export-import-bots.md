@@ -174,9 +174,6 @@ If you add new bot components (such as new topics or flows) to your bot in Power
 
 To update or upgrade an existing managed solution, go to [Upgrade or update a solution](/powerapps/maker/common-data-service/update-solutions).
 
-> [!IMPORTANT]
-> Update option replaces your solution with the uploaded solution version. Components that are not in the newer solution won't be deleted and will remain in the system. This option is not recommended as your destination environment will differ in configuration from your source environment and could cause issues that are difficult to reproduce and diagnose.
-
 ## Remove an unmanaged layer from a managed chatbot
 
 Managed and unmanaged solutions exist at different levels within a Microsoft Dataverse environment. To learn more, go to [Solution layers](/powerapps/maker/common-data-service/solution-layers).
