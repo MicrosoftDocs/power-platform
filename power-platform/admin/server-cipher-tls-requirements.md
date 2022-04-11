@@ -53,7 +53,7 @@ To comply with our security policy for a secure connection, your server must hav
    1. Test your hostname using [SSLLABS](https://www.ssllabs.com/ssltest/analyze.html), or
    2. Scan your server using [NMAP](https://nmap.org/)
 
-3. The following Root CA Certificates installed
+3. The following Root CA Certificates installed:
 
    |Common name of the CA  |Thumbprint (SHA1)  |
    |---------|---------|
