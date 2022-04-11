@@ -117,12 +117,12 @@ After you create the team, you can add team members and select corresponding sec
 
 Review the following table for how members in Azure AD groups match to Dataverse group team members.
 
-|Select Dataverse group team membership type (3)  | Resulting membership |
+|Select Dataverse group team membership type (4)  | Resulting membership |
 |---------|---------|
-| Members and guests | Select this type to include both Members and Guests user types (2) from the Azure AD group category (1). |
-| Members    | Select this type to include only user type Members (2) from the Azure AD group category (1).     |
-| Owners     | Select this type to include only user type Owners (2 - blank) from the Azure AD group category (1).     |
-| Guests     | Select this type to include only user type Guests (2) from the Azure AD group category (1).    |
+| Members and guests | Select this type to include both Members and Guests user types (3) from the Azure AD group category Members (1). |
+| Members    | Select this type to include only user type Members (3) from the Azure AD group category Members (1).     |
+| Owners     | Select this type to include only user type Owners (3 - blank) from the Azure AD group category Owners (2).     |
+| Guests     | Select this type to include only user type Guests (3) from the Azure AD group category Members (1).    |
 
 ## Edit a group team
 
