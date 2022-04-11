@@ -52,7 +52,7 @@ To share the demo website link, copy the demo website URL and share it with your
 
 ## Custom website
 
-You can add your bot to a live website as an IFrame. Your live website can be a customer-facing external website or an internal site, like a SharePoint or Yammer site.
+You can add your bot to a live website as an IFrame. Your live website can be a customer-facing external website or an internal site, like a SharePoint site.
 
 You can also add the bot to your Power Platform admin center.
 

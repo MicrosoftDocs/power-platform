@@ -4,7 +4,7 @@ description: "Use content security policy to control which assets can be downloa
 ms.date: 04/04/2022
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: conceptual
 applies_to: 
   - "Dynamics 365 (online)"
 ms.assetid: 
