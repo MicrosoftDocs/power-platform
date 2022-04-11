@@ -110,9 +110,9 @@ These automatically created topics fall into two categories:
 
    :::image type="content" source="media/authoring-create-edit-topics/handoff-add-node.png" alt-text="Screenshot of adding a node.":::
 
-1. To move or change the paths between a node, drag the node anchor. It looks like a small circle on top of the node. When you drag the node anchor, you'll see a dotted line indicating the original path.
+1. To move or change the paths between a node, drag the node anchor. It looks like a small circle on top of the node. When you drag the node anchor, you'll see a dotted line indicating the original path. You can also double-click the anchor and then select the new place for the anchor (you won't see a dotted line).
 
-    :::image type="content" source="media/authoring-create-edit-topics/move-anchor-node.png" alt-text="Screenshot of moving a node's anchor.":::
+   :::image type="content" source="media/authoring-create-edit-topics/move-anchor-node.png" alt-text="Screenshot of moving a node's anchor.":::
 
 ### Insert nodes
 
@@ -170,7 +170,7 @@ Additionally, you can **Add a condition** when you insert a node after a **Quest
 
 To [call Power Automate Flows](advanced-flow.md) and [insert authentication nodes](advanced-end-user-authentication.md), select **Call an action**.
 
-If you've configured hand-off to Omnichannel with voice-based capabilities, you'll see [more actions](configuration-hand-off-omnichannel.md#voice-based-capabilities).
+If you've configured hand-off to omnichannel with voice-based capabilities, you'll see [more actions](configuration-hand-off-omnichannel.md#voice-based-capabilities).
 
 #### Show a message
 
@@ -188,9 +188,11 @@ If you've configured hand-off to Omnichannel with voice-based capabilities, you'
 
     :::image type="content" source="media/authoring-create-edit-topics/topics-nodes-other-topic-flyout.png" alt-text="Screenshot showing redirection to another topic node with options for other topics.":::
 
-When you insert a link to redirect to another topic, the bot will go through the conversation path for that topic. You can consider the redirected topic as a "subtopic."
+You can consider the redirected topic as a "subtopic".
 
-In the authoring canvas for the original topic, you can insert nodes under the subtopic node. When the subtopic path is finished, the bot returns to the original topic and resumes with the nodes that follow the subtopic node.
+In the authoring canvas for the original topic, you can insert additional nodes under the subtopic's node.
+
+When the path for the subtopic is finished, the bot will return to the original topic. The bot will then follow the nodes that are under the subtopic's node.
 
 :::image type="content" source="media/authoring-create-edit-topics/authoring-subtopic-redirect.png" alt-text="Screenshot of the authoring canvas showing nodes under a redirected topic node.":::
 
@@ -207,7 +209,7 @@ If you redirect to any of the following [system topics](#use-system-and-sample-t
 
 When the conversation ends, you can have a survey ask users if their question or issue was answered or resolved. The response is collected on the [customer satisfaction analytics page](analytics-csat.md).
 
-You can also [hand the conversation over to a live agent](advanced-hand-off.md) if you're using a suitable customer service portal, such as Omnichannel for Customer Service.
+You can also have the conversation [handed over to a live agent](advanced-hand-off.md) if you're using a suitable customer service portal, such as Omnichannel for Customer Service.
 
 1. At the end of a response that resolves the user's issue or answers the question, select **End the conversation**.
 

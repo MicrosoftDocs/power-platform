@@ -20,7 +20,7 @@ search.app:
 
 # Set up app quarantine components
 
-This article will help you to set up the app quarantine components of the governance solution. A quarantined app will present end users that launch the app a message indicating they’re unable to access the app. This feautre is currently only available for canvas apps. Learn more: [Manage app quarantine state](/admin/admin-manage-apps#manage-app-quarantine-state-preview)
+This article will help you to set up the app quarantine components of the governance solution. A quarantined app will present end users who launch the app a message indicating they’re unable to access the app. This feature is currently only available for canvas apps. Learn more: [Manage app quarantine state](/power-platform/admin/admin-manage-apps#manage-app-quarantine-state-preview)
 
 >[!IMPORTANT]
 >This article assumes you have [installed the governance components solution](before-setup-gov.md), and you have your [environment set up](setup.md#create-your-environment) and are signed in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
@@ -32,13 +32,13 @@ You'll [update these environment variables](faq.md#update-environment-variables)
 >[!TIP]
 >Learn how to update environment variables for production and Dataverse for Teams environments: [Update environment variables](faq.md#update-environment-variables).
 
-| Name | Description |
-|------|---------------|
-| Quarantine Apps after x days of non-compliance | If using the Compliance flow for apps to gather compliance details from makers, specify if you want to quarantine apps if they're not compliant. Specified in days. A default value of 7 days is provided. |  
+| Name | Description | Default value |
+|------|---------------|------|
+| Quarantine Apps after x days of non-compliance | If using the Compliance flow for apps to gather compliance details from makers, specify whether you want to quarantine apps if they're not compliant and for how many days.  | 7 days |
 
 ## Add or exempt environments from the app quarantine process
 
-You might want to exempt some environments from the app quarantine process — for example, dedicated environments that are already well-managed. More information: [Establishing an environment strategy](/adoption/environment-strategy)
+You might want to exempt some environments from the app quarantine process—for example, dedicated environments that are already well-managed. More information: [Establishing an environment strategy](/power-platform/guidance/adoption/environment-strategy)
 
 You can exempt environments from the app quarantine process by using the Power Platform Admin View app.  
 
@@ -47,7 +47,7 @@ You can exempt environments from the app quarantine process by using the Power P
 If your solution is installed in a production environment, your app will be a model-driven app. Follow these steps:
 
 1. Go to [make.powerapps.com](<https://make.powerapps.com>).
-1. Go to your CoE environment.
+1. Go to your Center of Excellence (CoE) environment.
 1. Open the **Power Platform Admin View** app.
 1. Select **Environments**, and then select the environment you want to exempt.
 1. Set the **Excuse From App Quarantine Flow** field to **Yes** to exempt the environment from the app quarantine flow. Set the **Excuse From App Quarantine Flow** field to **No** to include the environment in the app quarantine flow.
@@ -88,7 +88,7 @@ Environment variables are used to store application and flow configuration data 
 
 | Name | Description | Default value |
 |------|---------------|------|
-| Quarantine Apps after x days of non-compliance | If using the Compliance flow for apps to gather compliance details from makers, specify if you want to quarantine apps if they're not compliant. Specified in days. | 7 days |
+| Quarantine Apps after x days of non-compliance | If using the Compliance flow for apps to gather compliance details from makers, specify whether you want to quarantine apps if they're not compliant and for how many days.  | 7 days |
 
 ## It looks like I found a bug with the CoE Starter Kit; where should I go?
 
