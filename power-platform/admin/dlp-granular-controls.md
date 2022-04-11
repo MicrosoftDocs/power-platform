@@ -26,7 +26,7 @@ search.app:
 Although the connector classification capability is very helpful in governing Microsoft Power Platform connectors, fine-grained controls&mdash;such as the ability to block specific connector actions or connection endpoints&mdash;help you strike a balance between productivity and protection.
 
 > [!NOTE]
-> - Some apps need to be re-published for your connector action rules and connector endpoint filtering rules to be enforced. See [Known limitations](dlp-granular-controls.md#known-limitations) below.
+> Some apps need to be re-published for your connector action rules and connector endpoint filtering rules to be enforced. See [Known limitations](dlp-granular-controls.md#known-limitations) below.
 
 ## Connector action control
 
