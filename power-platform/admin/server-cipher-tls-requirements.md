@@ -61,6 +61,10 @@ To comply with our security policy for a secure connection, your server must hav
    |[DigiCert Global Root CA](https://cacerts.digicert.com/DigiCertGlobalRootCA.crt)     | a8985d3a65e5e5c4b2d7d66d40c6dd2fb19c5436        |
    |[Baltimore CyberTrust Root](https://cacerts.digicert.com/BaltimoreCyberTrustRoot.crt)     | d4de20d05e66fc53fe1a50882c78db2852cae474        |
 
+   **Why is this need?**
+
+   See [TLS 1.2 Standards Documentation - Section 7.4.2](https://datatracker.ietf.org/doc/html/rfc5246#section-7.4.2) - certificate-list.
+
 
 
 ### See also
