@@ -93,7 +93,7 @@ No, a maker that doesn’t have a security role called out in the [Choose enviro
    > [!div class="mx-imgBorder"] 
    > ![Power Apps missing permission dialog.](media/admin-manage-apps/power_apps_missing_permission_to_create.png "Power Apps missing permission dialog")
 
-## Manage app quarantine state (preview)
+## Manage app quarantine state
 
 As a complement to [Power Platform’s data loss prevention policies](wp-data-loss-prevention.md), Power platform enables admins to 'quarantine' a resource, setting guardrails for low-code development. A resource’s quarantine state is managed by admins and controls whether a resource is accessible to end users. In Power Apps, this capability allows admins to directly limit availability of apps that may need attention to meet an organization’s compliance requirements. 
 
