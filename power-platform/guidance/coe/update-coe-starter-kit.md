@@ -24,6 +24,10 @@ This document provides you with a set of best practices and recommendations for 
 
 The CoE Starter Kit provides inspiration and a starting point for Power Platform governance. If you're new to the CoE Starter Kit, below are some useful links to help you get started:
 
+- [The CoE Starter Kit](https://docs.microsoft.com/en-us/power-platform/guidance/coe/starter-kit)
+- [Setting up the CoE Starter Kit](https://docs.microsoft.com/en-us/power-platform/guidance/coe/setup)
+- Extending CoE components
+
 <!--- Add in links to CoE documentation --->
 
 ## Update and release cadence
@@ -33,9 +37,22 @@ The team behind the CoE Starter Kit releases a new version during the first week
 The team announces updates (bug fixes, enhancements, new features, deprecations and removals) over different channels, listed below:
 
 - GitHub
-- Office Hours
+- Office hours community call
 
 The following sections provide useful guidance and best practices for tracking release information for each channel.
+
+### How often should you update the CoE Starter Kit
+
+Here are a few things to consider when deciding on your update frequency:
+
+- Does the new release fix an issue that you currently have?
+- Does the new release contain a new feature that you would like to try out?
+- By **not** updating to the new release mean your current version is older than three months?
+
+Before a release, the CoE Starter Kit team evaluates any bug fixes or new features against the previous three released versions to ensure that updates don't affect earlier versions of the Starter Kit.  Unfortunately, it means that leaving updates longer than three months could result in unexpected issues when updating.
+
+>[!NOTE]
+>Try to evaluate releases monthly. Maintain (if possible) parity between your testing/ production versions of the CoE Starter Kit and the current release, or within the past three versions.
 
 ## Review release notes in GitHub
 
@@ -51,7 +68,7 @@ You can view the details of each release by following the steps described below:
 
 The change log lists all bugs, features and updates in the release. Selecting an issue takes you to the item where you're able to review all related comments and progress updates.
 
-#### Notifications
+### Notifications
 
 You can use GitHub notifications to be proactively notified when updates and changes occur. The steps below describe how to create custom notification for new/ updates to issues and releases.
 
@@ -63,19 +80,8 @@ You can use GitHub notifications to be proactively notified when updates and cha
 
 ## Office hours
 
-The CoE Starter Kit team runs a monthly 'Office hours' call where they dive a little deeper into new features and bug fixes.  This call is useful to attend; you can [register for the Office hours call here](https://aka.ms/coeofficehours).
+The CoE Starter Kit team runs a monthly 'Office hours' call that dives a little deeper into new features and bug fixes.  This call is useful to attend; you can [register for the Office hours call here](https://aka.ms/coeofficehours).
 
-## Deciding how often to update the CoE Starter Kit
+## Customizing the CoE Starter Kit
 
-Here are a few things to consider when deciding on your update frequency:
-
-- Does the new release fix an issue that you currently have?
-- Does the new release contain a new feature that you would like to try out?
-
-An **equally important** factor here is supportability.  Before each release, the CoE Starter Kit team evaluate any bug fixes or new features against the previous three released versions to ensure that updates don't affect earlier versions of the Starter Kit.  Unfortunately, it means that leaving updates longer than three months could result in unexpected issues when updating.
-
-The recommendation is to evaluate releases monthly. 
-
-Your Power Platform administrators should review release notes. Set up notifications and/ or attend the Office hours call every month. 
-
-After evaluating, proceed to update your CoE Starter Kit implementations.
+The CoE Starter Kit is a great starting point for many customers.  However, it's likely that you'll need to make customizations. The following article provides you with a set of best practices for extending/ creating customizations.
