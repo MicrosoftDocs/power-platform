@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
 title: Application lifecycle management (ALM) with Microsoft Power Platform
-summary: Learn how to implement application lifecycle management (ALM) using Microsoft Power Platform (Power Apps. Power Automate, Dataverse).
+summary: Learn how to implement application lifecycle management (ALM) using Microsoft Power Platform (Power Apps, Power Automate, Dataverse, Power Virtual Agents).
 
 metadata:
   title: Application lifecycle management (ALM) with Microsoft Power Platform
@@ -114,3 +114,8 @@ landingContent:
             url: ../admin/admin-documentation.md
           - text: "Power Platform Center of Excellence (CoE) Kit"
             url: ../guidance/coe/starter-kit-explained.md
+          - text: "Best practices and guidance when using Microsoft Dataverse"
+            url: /powerapps/developer/data-platform/best-practices
+          - text: "Canvas apps coding standards and guidelines"
+            url: https://aka.ms/powerappscanvasguidelines
+
