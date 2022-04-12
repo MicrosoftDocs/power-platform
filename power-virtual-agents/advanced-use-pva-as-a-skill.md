@@ -94,7 +94,6 @@ A Bot Framework bot can use a skill manifest to know when to trigger the Power V
 Power Virtual Agents skill manifests follow [version 2.2 of the Bot Framework skill manifest schema](/azure/bot-service/skills-write-manifest#the-skill-manifest) and consist of *intents.lu* and *manifest.json* files.
 
 A Bot Framework bot may decide a Power Virtual Agents bot should handle the user's request, based on the manifest data. It passes to the bot everything the user said. Then, the Power Virtual Agents bot matches what the user said [to a Power Virtual Agents topic](authoring-create-edit-topics.md), extracts any [entities that are needed for slot-filling](advanced-entities-slot-filling.md), and triggers the Power Virtual Agents topic.
-<!-- "NLU" - Natural Language Unit? I'm going to delete it because I think mentioning it raises more questions than it answers. But if you do include it, please spell it out. Thanks! -->
 
 Power Virtual Agents skill manifests are automatically generated and updated. A Power Virtual Agents bot has two skill manifests:
 
