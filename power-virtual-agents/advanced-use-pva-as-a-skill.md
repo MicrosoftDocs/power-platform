@@ -64,7 +64,7 @@ Add the Bot Framework bot's app ID to the allowlist for the Power Virtual Agents
 1. Paste your Bot Framework bot's [app ID](/azure/bot-service/bot-service-manage-overview#get-azure-bot-resource-app-id) and select **Next**.
 
     :::image type="content" source="media/advanced-use-pva-as-a-skill/Skill_AddBotAppID.png" alt-text="Screenshot highlighting where to enter the Bot Framework bot's app ID.":::
- 
+
     > [!CAUTION]  
     > A Power Virtual Agents bot can't act as a skill for other Power Virtual Agents bots. If you try to add an app ID that belongs to a Power Virtual Agent bot to the allowlist, you'll get an error. You can only add an app ID for a Bot Framework bot.
 
