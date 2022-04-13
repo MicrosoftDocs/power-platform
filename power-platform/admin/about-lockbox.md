@@ -1,12 +1,12 @@
 ---
-title: "Customer lockbox for Microsoft Power Platform (preview) | MicrosoftDocs"
+title: "Customer Lockbox for Microsoft Power Platform (preview) | MicrosoftDocs"
 description: This topic covers lockbox for Power Platform.
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/24/2022
-author: jimholtz
-ms.author: miferlan
+ms.date: 04/14/2022
+author: mihaelablendea
+ms.author: mihaelab
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
@@ -16,54 +16,59 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Customer lockbox for Microsoft Power Platform (preview)
+# Customer Lockbox for Microsoft Power Platform (preview)
 
 <!-- This topic should not go live until told to by PM --> 
 
-This article covers how to enable customer lockbox and how lockbox requests are initiated, tracked, and stored for later reviews and audits. 
+Most operations, support, and troubleshooting performed by Microsoft personnel (including sub-processors) do not require access to customer data. With Power Platform Customer Lockbox, we provide an interface for the customers to review and approve (or reject) data access requests in the rare occasion when data access to customer data is needed It is used in cases where a Microsoft engineer needs to access customer data, whether in response to a customer-initiated support ticket or a problem identified by Microsoft.
+
+This article covers how to enable Customer Lockbox and how lockbox requests are initiated, tracked, and stored for later reviews and audits. 
 
 ## Summary
 
-You can configure lockbox for your data sources within your tenant. For the duration of the preview, enabling customer lockbox will apply to all environments in the respective tenant. Global administrators and Power Platform administrators can configure the lockbox policy. 
+You can configure Customer Lockbox for your data sources within your tenant. For the duration of the preview, enabling Customer Lockbox will apply to all environments in the respective tenant. Global administrators and Power Platform administrators can configure the lockbox policy. 
 
-More information: [Configure the lockbox policy](#configure-the-lockbox-policy).     [organization unique name or ID](determine-org-id-name.md)
+More information: [Configure the lockbox policy](#configure-the-lockbox-policy).
 
 > [!NOTE]
-> For now, this capability can be enabled for your tenant by opening a [support case](get-help-support.md) and providing the details of your [organization ID](determine-org-id-name.md). On the rare occasion when Microsoft attempts to access customer data that's stored within Power Platform, a lockbox request is sent to the Global administrators and Power Platform administrators for approval. More information: [Review a lockbox request](#review-a-lockbox-request). All updates to a customer lockbox request are recorded and made available to your organization as audit logs. More information: [Audit lockbox requests](#audit-lockbox-requests). 
+> For now, this capability can be enabled for your tenant by opening a [support case](get-help-support.md) and providing the details of your [organization ID](determine-org-id-name.md). 
 > 
-> Power Platform applications and services store customer data in several Azure storage technologies. When you turn on lockbox for an environment, customer data associated with the respective environment is protected by the lockbox policy, irrespective of the storage type.  
+> In the rare occasion when Microsoft attempts to access customer data that's stored within Power Platform (Dataverse), a lockbox request is sent to the Global administrators and Power Platform administrators for approval. More information: [Review a lockbox request](#review-a-lockbox-request). 
 > 
-> At this time, the lockbox compliant applications and services are Power Apps, Power Automate, AI Builder and Microsoft Dataverse (all storage types). 
+> All updates to a lockbox request are recorded and made available to your organization as audit logs. More information: [Audit lockbox requests](#audit-lockbox-requests). 
+> 
+> Power Platform applications and services store customer data in several Azure storage technologies. When you turn on Customer Lockbox for an environment, customer data associated with the respective environment is protected by the lockbox policy, irrespective of the storage type.  
+> 
+> Currently, the applications and services where Customer Lockbox is available are Power Apps, Power Automate, AI Builder, and Power Platform and Dynamics 365 offers  that use Dataverse for storing customer data such as Sales, Service, Marketing, Finance and Project Management.
 
 ## Workflow 
 
-1. Your organization has an issue with Microsoft Power Platform, and opens a support request with Microsoft Support. Alternatively, a proactive notification is triggered and an internal incident is opened to investigate and mitigate or fix the root cause. 
+1. Your organization has an issue with Microsoft Power Platform, and opens a support request with Microsoft Support. Alternatively, Microsoft proactively identifies a problem (for example, a proactive notification is triggered) and a Microsoft-initiated event is opened to investigate and mitigate or fix the root cause. 
 
-2. A Microsoft operator reviews the support request/incident and attempts to troubleshoot the issue by using standard tools and telemetry. If access to customer data is needed for further troubleshooting, a Microsoft engineer triggers an internal approval process for access to customer data, whether or not a customer lockbox policy is configured. 
+2. A Microsoft operator reviews the support request/event and attempts to troubleshoot the issue by using standard tools and telemetry. If access to customer data is needed for further troubleshooting, a Microsoft engineer triggers an internal approval process for access to customer data, irrespective of lockbox policy being configured or not.
 
-3. In addition, a customer lockbox request is generated if the respective data store is associated with an environment protected according to the lockbox policy configuration. An email notification is sent to the designated approvers (Global Admin and Power Platform Admin) about the pending data access request from Microsoft.  
+3. In addition, a lockbox request is generated if the respective data store is associated with an environment protected according to the lockbox policy configuration. An email notification is sent to the designated approvers (Global administrators and Power Platform administrators) about the pending data access request from Microsoft.  
 
    > [!IMPORTANT]
-   > The Microsoft engineer won’t be able to proceed with their investigation until the lockbox request is approved by the customer. This might cause delays in addressing the support ticket or prolonged outages. Make sure you monitor email notifications and/or lockbox requests in the Power Platform admin center and respond in a timely manner to avoid service interruptions.   
+   > The Microsoft engineer won’t be able to proceed with their investigation until the lockbox request is approved by the customer. This could cause delays in addressing the support ticket or prolonged outages. Make sure you monitor email notifications and/or lockbox requests in the Power Platform admin center and respond in a timely manner to avoid service interruptions.   
 
    :::image type="content" source="media/lockbox-request.png" alt-text="A sample lockbox request.":::
 
-4. The approver signs in to the Power Platform admin center and approves the request. If the request is rejected or not approved within 12 hours, it expires and no access is granted to the Microsoft engineer. 
+4. The approver signs in to the Power Platform admin center and approves the request. If the request is rejected or not approved within 4 days, it expires and no access is granted to the Microsoft engineer. 
 
-5. After the approver from your organization approves the request, the Microsoft engineer obtains the elevated permissions that were initially requested and fixes your issue. Microsoft engineers have a set amount of time -  8 hours - to fix the issue, after which access is automatically revoked. 
+5. After the approver from your organization approves the request, the Microsoft engineer obtains the elevated permissions that were initially requested and fixes your issue. Microsoft engineers have a set amount of time - 8 hours - to fix the issue, after which access is automatically revoked. 
 
 ## Configure the lockbox policy
 
-Global administrators or Power Platform administrators can create or update the lockbox policy in the Power Platform admin center. For the duration of the preview, the tenant level policy configuration will apply to all environments in the tenant. It may take up to 24h for all data sources and all environments to be fully protected with customer lockbox. 
-
-> [!NOTE]
-> If your organization has a lockbox policy in place, every data access by Microsoft will be regulated and will require an explicit approval from the designated approvers in your organization.
+Global administrators or Power Platform administrators can create or update the lockbox policy in the Power Platform admin center. For the duration of the preview, the tenant level policy configuration will apply to all environments in the tenant. It may take up to 24 hours for all data sources and all environments to be fully protected with Customer Lockbox. 
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
 
-2. Select **Governance** > **Lockbox policy**.
+2. Select **Governance** > **Customer Lockbox (preview)**.
 
-3. Configure the lockbox policy.
+3. Select **Configure Customer Lockbox**.
+
+4. Configure the lockbox policy.
 
    :::image type="content" source="media/lockbox-turn-on.png" alt-text="Turn on the lockbox policy.":::
 
@@ -71,19 +76,19 @@ Global administrators or Power Platform administrators can create or update the 
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
 
-2. Select **Governance** > **Lockbox requests**.
+2. Select **Governance** > **Customer Lockbox (preview)**.
 
 3. Review the request details.
 
    |Field  |Description  |
    |---------|---------|
-   |Support request ID     | The ID of the support ticket associated with the lockbox request. If the incident is generated by an internal alert, the value will be “Microsoft internal”.        |
+   |Support request ID     | The ID of the support ticket associated with the lockbox request. If the request is a result of Microsoft-initiated internal alert, the value will be “Microsoft initiated”.|
    |Environment     | The display name of the environment in which data access is being requested.         |
    |Status     | The status of the lockbox request. <br /> <ul><li>**Action needed**: Pending approval from the customer</li><li>**Expired**: No approval received from the customer </li><li>**Approved**: Approved by the customer </li><li>**Denied**: Denied by the customer</li></ul>        |
-   |Requested     | The time at which the Microsoft engineer requested access to customer's organization's data.         |
+   |Requested     | The time at which the Microsoft engineer requested access to customer data in customer’s environment.      |
    |Request expiration     | The time by which the customer needs to approve the lockbox request. The status of the request will change to **Expired** if no approval is given by this time.         |
-   |Access period     | The approximate length of time the requestor wants to access customer data. This is an estimate and might change slightly.         |
-   |Access expiration     | If access is granted, this is the time until which the Microsoft engineer has access to customer data. It's an estimate and might change slightly.         |
+   |Access period     | The length of time the requestor wants to access customer data. This value is by default 8 hours and can't be changed.         |
+   |Access expiration     | If access is granted, this is the time until which the Microsoft engineer has access to customer data.   |
 
 4. Select a lockbox request, and then select **Approve** or **Deny**.
 
@@ -97,7 +102,7 @@ Global administrators or Power Platform administrators can create or update the 
 
 ## Audit lockbox requests
 
-Actions related to acceptance, denial, or expiration of a lockbox request are recorded automatically in [Microsoft 365 Defender](https://security.microsoft.com/homepage).  
+Actions related to accepting, denying, or expiration of a lockbox request are recorded automatically in [Microsoft 365 Defender](https://security.microsoft.com/homepage).  
 
 :::image type="content" source="media/lockbox-defender.png" alt-text="Microsoft 365 Defender page.":::
 
@@ -130,13 +135,13 @@ Lockbox requests aren't triggered in the following engineering support scenarios
 
 - A Microsoft engineer accesses the underlying platform as part of troubleshooting and is inadvertently exposed to customer data. It is rare that such scenarios would result in access to meaningful quantities of customer data.  
 
-Customer lockbox requests are also not triggered by external legal demands for data. For details, see the discussion of [government requests for data](https://www.microsoft.com/trust-center/) in the Microsoft Trust Center. 
+Customer Lockbox requests are also not triggered by external legal demands for data. For details, see the discussion of government requests for data in the [Microsoft Trust Center](https://www.microsoft.com/trust-center/). 
 
 ## Known issues
 
-- The consent process for creating a support instance is not integrated with lockbox. Once the support instance is created after initial customer consent, support engineer will have access to the data stored in the support instance for troubleshooting purposes. 
+- The consent process for creating a support instance is not integrated with Customer Lockbox. Once the support instance is created after initial customer consent, a support engineer will have access to the data stored in the support instance for troubleshooting purposes. 
 
-- Customer lockbox Preview is not available in sovereign clouds at this time. 
+- Customer Lockbox Preview is not available in sovereign clouds at this time. 
 
 
 
