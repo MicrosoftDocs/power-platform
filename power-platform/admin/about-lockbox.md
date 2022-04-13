@@ -60,7 +60,7 @@ More information: [Configure the lockbox policy](#configure-the-lockbox-policy).
 
 ## Configure the lockbox policy
 
-Global administrators or Power Platform administrators can create or update the lockbox policy in the Power Platform admin center. For the duration of the preview, the tenant level policy configuration will apply to all environments in the tenant. It may take up to 24 hours for all data sources and all environments to be fully protected with Customer Lockbox. 
+Global administrators or Power Platform administrators can create or update the lockbox policy in the Power Platform admin center. For the duration of the preview, the tenant level policy configuration will apply to all environments in the tenant. It may take up to 24 hours for all data sources and all environments to be implemented with Customer Lockbox. 
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
 
@@ -116,7 +116,7 @@ Audit traces include these and other fields for each lockbox request:
 - Associated support ticket ID 
 - Request expiration time 
 - Data access expiration time 
-- Environment ID and name 
+- Environment ID 
 - Request justification 
 
 The Microsoft 365 **Audit** tab allows admins to search for events associated with lockbox sessions. View the **Power Platform Lockbox** category for Power Platform related lockbox events. 
