@@ -1,6 +1,20 @@
-﻿# Microsoft Power Fx in Power Virtual Agent 
+﻿---
+# FIXME: fill out metadata
+title: ""
+description: ""
+keywords: "PVA"
+ms.date: 04/13/2022
 
-We are excited to announce the availability of Microsoft Power Fx in Power Virtual Agent (PVA) Technology Preview release.
+ms.topic: article
+author: v-alarioza
+ms.author: v-alarioza
+ms.reviewer: kamrani
+manager: iawilt
+ms.collection: virtual-agent
+ms.custom: ceX, advanced-authoring
+---
+
+# Microsoft Power Fx in Power Virtual Agent
 
 Power Fx is a low-code language that makers can work with directly in an Excel-like formula bar. For example, you can use Power Fx to create complex bot logic using formulas to manipulate data, such as setting the value of variables, parsing the string, or using expressions in conditionals.
 
