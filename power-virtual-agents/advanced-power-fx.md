@@ -20,69 +20,45 @@ Power Fx is a low-code language that makers can work with directly in an Excel-l
 
 For more information, see [Power Fx overview](/power-platform/power-fx/overview) and [formula reference](https://aka.ms/pfx-reference) documentation.
 
+## Prerequisites
+
+- [Create and edit topics](authoring-create-edit-topics.md)
+- [Use variables](authoring-variables.md)
+
 ## Use Power Fx expression in a topic
 
-In this exercise, we will prompt the user for their name and then use Power Fx to convert the name to uppercase.
+1. Create a new topic and in your bot.
 
-Create a new topic and in your bot as shown below:
+1. Select the **+** icon and then choose **Ask a question**.
 
-A new topic is created with a single **Trigger Phrases** node as shown below:
+1. For **Enter a response**, enter `What is your name?`.
 
-:::image type="content" source="media/advanced-power-fx/image2.png" alt-text="Chart Description automatically generated with medium confidence":::
+    <!-- FIXME:  do users need to select the icon, or can the select the whole box? -->
+1. In the **Identify** box, select the **>** arrow and choose **Person name**.
 
-Click on the ellipses and choose **Edit trigger** **phrases** as shown below:
+    <!-- FIXME: can users choose a var name at this point? -->
+1. In the **Save response as** box, select the **>** arrow and **Create a new variable** named `Var1`.
 
-In the **Trigger phrases** (0) pane, type _What's up?_ in the**Add phrases** textbox and press enter.
+    :::image type="content" source="media/advanced-power-fx/uppercase-question-node.png" alt-text="Screenshot of the Question node with the user's response set to a variable named Var1.":::
 
-Your **Trigger Phrases** node should look like the following:
+1. Under the **Question** node, select **+** and choose **Set a property**.
 
-:::image type="content" source="media/advanced-power-fx/image5.png" alt-text="Chart Description automatically generated":::
+1. In the **Set variable** box, select the **>** arrow and **Create a new variable** named `Var2`.
 
-Next, create **Ask a question** node by clicking on the (**+**) sign as shown below:
+1. In the **To value** box, select the **>** arrow.
 
-Next select **Ask a question** as shown below**:**
+1. Select the **Formula** tab. In the **fx** box enter `Upper(Text(Topic.Var1))` and select **Insert**.
 
-A new question node is created as shown below:
+    :::image type="content" source="media/advanced-power-fx/uppercase-pfx-formula.png" alt-text="Screenshot of the Set a Variable node with a Power Fx formula.":::
 
-:::image type="content" source="media/advanced-power-fx/image8.png" alt-text="Graphical user interface  text  application  email Description automatically generated":::
+1. Under the **Question** node, select **+** and choose **Send a message**.
 
-In this node for **Enter a response***,* type _What is your name?_
+1. Enter the `User Name:` and then add `Var2`.
 
-To select a data type, click (**>**) in the **Identify** box. Select **Person name** for the data type.
+    <!-- FIXME: this screenshot doesn't seem to have the correct UI -->
+    :::image type="content" source="media/advanced-power-fx/uppercase-send-message.png" alt-text="Screenshot of the Send a Message node with a message defined.":::
 
-Then, create a variable to store the user's response. Click on (**>**) in **Save response as** box and click on **Create a new variable**.
-
-After you are done, the **Question** node should look like the following:
-
-Add a new node under the **Question** node you just worked on by clicking on (**+**) icon as shown below:
-
-From the given choices select **Set a property** as shown below:
-
-You should end up with a node that looks like this:
-
-:::image type="content" source="media/advanced-power-fx/image14.png" alt-text="Graphical user interface  text  application Description automatically generated":::
-
-The above node is used to convert the user's name to uppercase. Here we'll use Power Fx's _Upper_ and_Text_ functions to convert the value stored in Var1 and store the new value in Var2.
-
-Click on (**>**) arrow in the **Set variable** box, then choose **Create a new variable** as shown below:
-
-Your node should look like the following:
-
-:::image type="content" source="media/advanced-power-fx/image16.png" alt-text="Graphical user interface  text  application  email Description automatically generated":::
-
-Next, enter the formula in the **To value** text box by clicking on the arrow on the right side. Convert the username to uppercase by using **Upper** and **Text** functions as shown below.
-
-Click **Insert**.
-
-Next, add a new **Send a message** node after the **Set Variable Value** node. Enter the text and variable shown below.
-
-Your **Send a message** node should look like the following:
-
-Save your topic.
-
-When you test your bot using the trigger phrase, it should prompt you to enter a name and then display that name using all caps.
-
-## **Using Power Fx expressions in Conditions**
+## Using Power Fx expressions in Conditions
 
 Create a new topic and in your bot as shown below:
 
