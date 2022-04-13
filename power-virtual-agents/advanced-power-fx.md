@@ -27,7 +27,9 @@ For more information, see [Power Fx overview](/power-platform/power-fx/overview)
 
 ## Use Power Fx expression in a topic
 
-1. Create a new topic and in your bot.
+In this example, a Power Fx expression is used to convert the user's name to uppercase.
+
+1. Create a new topic.
 
 1. Select the **+** icon and then choose **Ask a question**.
 
@@ -60,58 +62,32 @@ For more information, see [Power Fx overview](/power-platform/power-fx/overview)
 
 ## Using Power Fx expressions in Conditions
 
-Create a new topic and in your bot as shown below:
+In this example, the bot will determine if a booking date qualifies for discount. To do this, it checks if the booking date provided by the user is 14 days or more from the current date.
 
-A new topic is created with a single **Trigger Phrases** node as shown below:
+1. Create a new topic.
 
-:::image type="content" source="media/advanced-power-fx/image2.png" alt-text="Chart Description automatically generated with medium confidence":::
+1. Select the **+** icon and then choose **Ask a question**.
 
-Click on the ellipses and choose **Edit trigger** **phrases** as shown below:
+1. For **Enter a response**, enter `Booking date?`.
 
-In the **Trigger phrases** (0) pane, type _Reservation_ in the**Add phrases** textbox and press enter.
+1. In the **Identify** box, select the **>** arrow and choose **Date and time**.
 
-Your **Trigger Phrases** node should look like the following:
+1. In the **Save response as** box, select the **>** arrow and **Create a new variable** named `Var1`.
 
-Next, create **Ask a question** node by clicking on the (**+**) sign as shown below:
+    :::image type="content" source="media/advanced-power-fx/condition-question-node.png" alt-text="Graphical user interface  text  application  email Description automatically generated":::
 
-Next select **Ask a question** as shown below**:**
+1. Select the **+** icon and then choose **Add a condition**.
 
-You'll end up with a Question node as shown below:
+1. In the **ConditionItem** node, select the vertical three dots, then **Change to formula**.
 
-:::image type="content" source="media/advanced-power-fx/image24.png" alt-text="Graphical user interface  text  application  email Description automatically generated":::
+1. In the **Enter or select a value** box, select the **>**.
 
-In the **Question** node, type a prompt for user in the **Enter a response** textbox as shown below:
+1. Select the **Formula** tab. In the **fx** box enter `Topic.Var1 > (DateAdd (Now(), 14))` and select **Insert**.
 
-Next, click the arrow in the **Identify** box, select **Date and time** as shown below:
+    :::image type="content" source="media/advanced-power-fx/condition-formula.png" alt-text="Graphical user interface  text  application  email Description automatically generated":::
 
-Next, click on the arrow (>) in **Select a variable** box and then click on **Create a new variable** as shown below:
+1. Under the **ConditionItem** node, add a **Send a message** node to let the user know they qualify for a discount. Enter the message `You qualify for a discount`.
 
-The completed **Question** node looks like the following:
+1. Under the **All Other Conditions** node, add a **Send a message** node. Enter the message `Sorry, you don't qualify for a discount`.
 
-:::image type="content" source="media/advanced-power-fx/image28.png" alt-text="Graphical user interface  text  application  email Description automatically generated":::
-
-Next create **Add a condition** node using the (**+**) icon.
-
-Two condition nodes are created. The **ConditionItem** node is for when a specific condition is met and the other (**All Other Conditions)** for all other cases.
-
-:::image type="content" source="media/advanced-power-fx/image30.png" alt-text="Graphical user interface Description automatically generated with low confidence":::
-
-In the **ConditionItem** node, click on the three dots, select **Change to formula** as shown below:
-
-The ConditionItem node should look like the following:
-
-:::image type="content" source="media/advanced-power-fx/image32.png" alt-text="Graphical user interface  application Description automatically generated":::
-
-Next, to calculate whether a booking qualifies for discount, the booking date must be 14 days in advance. To open formula editor, click on the (**>**) in the **Enter or select a value** box. And in the **Enter formula** pane, type:
-
-Topic.Var1 > (DateAdd (Now(), 14))
-
-Next, click **Insert**.
-
-Save the topic.
-
-Next add two **Send a message** nodes to inform the user about discount as shown below.
-
-Save the topic.
-
-To test the bot, enter _What's up_, answer the question_Are you a member or not?_ using**Yes** or **No**. The bot should display appropriate response.
+    :::image type="content" source="media/advanced-power-fx/condition-messages.png" alt-text="Graphical user interface  text  application  email Description     automatically generated":::
