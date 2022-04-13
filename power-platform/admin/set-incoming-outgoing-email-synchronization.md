@@ -48,7 +48,7 @@ The available incoming email configurations that you can use when a user or a qu
   
 - **None**. Use this option for users or queues who don't use customer engagement apps to track received email messages. 
   
-- **Dynamics 365 for Outlook**. This option is deprecated for Microsoft Power Platform and Microsoft Dataverse. This option is only available for on-premises deployments. More information: [Dynamics 365 for Outlook is deprecated](/important-changes-coming#dynamic-365-for-outlook-is-deprecated)
+- **Dynamics 365 for Outlook**. This option is deprecated for Microsoft Power Platform and Microsoft Dataverse. This option is only available for on-premises deployments. More information: [Dynamics 365 for Outlook is deprecated](/power-platform/important-changes-coming#dynamic-365-for-outlook-is-deprecated)
   
 - **Server-Side Synchronization or Email Router**. When you select this option, the server-side synchronization or email router will process email messages directly from the user's or queue's inbox, without using a forward or a sink mailbox. 
   
@@ -60,7 +60,7 @@ The available outgoing email configurations that you can use when users or queue
   
 - **None**. Use this option for users or queues who don't use customer engagement apps to send email messages. 
   
-- **Dynamics 365 for Outlook**. This option is deprecated for Microsoft Power Platform and Dataverse. This option is only available for on-premises deployments. More information: [Dynamics 365 for Outlook is deprecated](/important-changes-coming#dynamic-365-for-outlook-is-deprecated)
+- **Dynamics 365 for Outlook**. This option is deprecated for Microsoft Power Platform and Dataverse. This option is only available for on-premises deployments. More information: [Dynamics 365 for Outlook is deprecated](/power-platform/important-changes-coming#dynamic-365-for-outlook-is-deprecated)
   
 - **Server-Side Synchronization or Email Router**. This option delivers email messages by using the server-side synchronization or email router component. The email system must be SMTP-compliant. The server-side synchronization or email router can be installed on the SMTP server or on a different computer that has a connection to the SMTP server.
 
