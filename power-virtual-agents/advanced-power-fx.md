@@ -48,9 +48,9 @@ A new question node is created as shown below:
 
 In this node for **Enter a response***,* type _What is your name?_
 
-To select a data type, click (**&gt;**) in the **Identify** box. Select **Person name** for the data type.
+To select a data type, click (**>**) in the **Identify** box. Select **Person name** for the data type.
 
-Then, create a variable to store the user's response. Click on (**&gt;**) in **Save response as** box and click on **Create a new variable**.
+Then, create a variable to store the user's response. Click on (**>**) in **Save response as** box and click on **Create a new variable**.
 
 After you are done, the **Question** node should look like the following:
 
@@ -64,7 +64,7 @@ You should end up with a node that looks like this:
 
 The above node is used to convert the user's name to uppercase. Here we'll use Power Fx's _Upper_ and_Text_ functions to convert the value stored in Var1 and store the new value in Var2.
 
-Click on (**&gt;**) arrow in the **Set variable** box, then choose **Create a new variable** as shown below:
+Click on (**>**) arrow in the **Set variable** box, then choose **Create a new variable** as shown below:
 
 Your node should look like the following:
 
@@ -108,7 +108,7 @@ In the **Question** node, type a prompt for user in the **Enter a response** tex
 
 Next, click the arrow in the **Identify** box, select **Date and time** as shown below:
 
-Next, click on the arrow (&gt;) in **Select a variable** box and then click on **Create a new variable** as shown below:
+Next, click on the arrow (>) in **Select a variable** box and then click on **Create a new variable** as shown below:
 
 The completed **Question** node looks like the following:
 
@@ -126,9 +126,9 @@ The ConditionItem node should look like the following:
 
 :::image type="content" source="media/advanced-power-fx/image32.png" alt-text="Graphical user interface  application Description automatically generated":::
 
-Next, to calculate whether a booking qualifies for discount, the booking date must be 14 days in advance. To open formula editor, click on the (**&gt;**) in the **Enter or select a value** box. And in the **Enter formula** pane, type:
+Next, to calculate whether a booking qualifies for discount, the booking date must be 14 days in advance. To open formula editor, click on the (**>**) in the **Enter or select a value** box. And in the **Enter formula** pane, type:
 
-Topic.Var1 &gt; (DateAdd (Now(), 14))
+Topic.Var1 > (DateAdd (Now(), 14))
 
 Next, click **Insert**.
 
@@ -176,9 +176,9 @@ When you test your bot by typing _Pinging bot_, the bot will randomly select one
 
 With Language Generation, you can also reference variables in a message. The following steps will show you how to do that.
 
-Click on (**+**) on the **Send a Message** node to create a **Question** node. In the **Question** node type a message, _Hi, what's your name?_ Next, in the **Identify** box, click **(&gt;)** arrow, and select **Person name**.
+Click on (**+**) on the **Send a Message** node to create a **Question** node. In the **Question** node type a message, _Hi, what's your name?_ Next, in the **Identify** box, click **(>)** arrow, and select **Person name**.
 
-Next, in the **Select a variable** box, click on **(&gt;)** to **Create a new variable** as shown below:
+Next, in the **Select a variable** box, click on **(>)** to **Create a new variable** as shown below:
 
 The completed node will look like the following:
 
