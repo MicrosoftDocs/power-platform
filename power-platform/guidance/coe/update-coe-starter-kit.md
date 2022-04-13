@@ -49,15 +49,14 @@ With each release of the CoE Starter Kit, is an accompanying set of release note
 You can view the details of each release by following the steps described below:
 
 1. Navigate to the [CoE Starter Kit repository](https://github.com/microsoft/coe-starter-kit) in GitHub.
-1. On the right side of the screen, in the section labeled 'Releases' is a link to the latest release notes.
-![Release note link](/media/github-releases-link.png)
+1. On the right side of the screen, is [a link to the latest release](https://github.com/microsoft/coe-starter-kit/releases) notes.
 1. The release notes screen provides links to issues and new features along with links to set up instructions and the change log.
 
-The change log lists all bugs, features and updates in the release. Selecting an issue takes you to the item where you're able to review all related comments and progress updates.
+The change log lists all bugs, features and updates in the release. Selecting an issue takes you to the item to review comments and progress updates relating to the item.
 
 #### Notifications
 
-You can use GitHub notifications to be proactively notified when updates and changes occur. The steps below describe how to create custom notification for new/ updates to issues and releases.
+You can create GitHub notifications to be proactively notified when updates and changes occur. The steps below describe how to create custom notification for new/ updates to issues and releases.
 
 1. Sign-in to your GitHub account, or sign up.
 1. Navigate to the [CoE Starter Kit repository](https://github.com/microsoft/coe-starter-kit)
@@ -66,6 +65,8 @@ You can use GitHub notifications to be proactively notified when updates and cha
 
 1. Either select an existing notification option, or select the option labeled 'Custom'.
 1. In the example below, a custom notification has been created to send alerts for new/ updated issues, releases and security alerts.
+
+![Screenshot of GitHub notification creation](media/coe-starter-kit-notifications.png)
 
 ### Office hours community call
 
@@ -86,7 +87,19 @@ Before a release, the CoE Starter Kit team evaluates any bug fixes or new featur
 
 ## Testing updates
 
-As with any update; we would recommend testing a new version.  To test, you need a test version of the kit.
+As with any update: testing increases the likelihood of success when installing an update to your production version of the CoE.
+Ideally, you have a test version of the CoE Starter Kit to deploy to.
+
+### If you have made customizations
+
+If you're installing an update and you have made customizations to the CoE Starter Kit; refer to the following articles for best practices and advice:
+
+- [Extending CoE components](power-platform/guidance/coe/extending-components)
+- [Installing CoE upgrades](power-platform/guidance/coe/after-setup)
+
+### If you have not made customizations
+
+If you have not made customizations to the CoE Starter
 
 ### If you have an issue
 
