@@ -108,4 +108,11 @@ Select the environment and time period from the drop-down lists, and then select
 Currently, Power Apps analytics reports do not display model-driven apps data. Only canvas apps related data is displayed.
 
 
+### See also
+[Tenant-level analytics (default)](tenant-level-analytics.md) <br />
+[Tenant-level Analytics for Power Apps (preview)](powerapps-analytics-reports.md)
+
+
+
+
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
