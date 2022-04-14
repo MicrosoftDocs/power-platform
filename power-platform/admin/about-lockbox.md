@@ -26,9 +26,9 @@ This article covers how to enable Customer Lockbox and how lockbox requests are 
 
 ## Summary
 
-You can configure Customer Lockbox for your data sources within your tenant. For the duration of the preview, enabling Customer Lockbox will apply to all environments in the respective tenant. Global administrators and Power Platform administrators can configure the lockbox policy. 
+You can enable Customer Lockbox for your data sources within your tenant. For the duration of the preview, enabling Customer Lockbox will apply to all environments in the respective tenant. Global administrators and Power Platform administrators can enable the lockbox policy. 
 
-More information: [Configure the lockbox policy](#configure-the-lockbox-policy).
+More information: [Enable the lockbox policy](#enable-the-lockbox-policy).
 
 In the rare occasion when Microsoft attempts to access customer data that's stored within Power Platform (Dataverse), a lockbox request is sent to the Global administrators and Power Platform administrators for approval. More information: [Review a lockbox request](#review-a-lockbox-request). 
  
@@ -37,15 +37,15 @@ All updates to a lockbox request are recorded and made available to your organiz
 Power Platform applications and services store customer data in several Azure storage technologies. When you turn on Customer Lockbox for an environment, customer data associated with the respective environment is protected by the lockbox policy, irrespective of the storage type.  
  
 > [!NOTE]
-> Currently, the applications and services where lockbox policy is going to be enforced once configured  are Power Apps, Power Automate, AI Builder and Dataverse.
+> Currently, the applications and services where lockbox policy is going to be enforced once enabled are Power Apps, Power Automate, AI Builder and Dataverse.
 
 ## Workflow 
 
 1. Your organization has an issue with Microsoft Power Platform, and opens a support request with Microsoft Support. Alternatively, Microsoft proactively identifies a problem (for example, a proactive notification is triggered) and a Microsoft-initiated event is opened to investigate and mitigate or fix the root cause. 
 
-2. A Microsoft operator reviews the support request/event and attempts to troubleshoot the issue by using standard tools and telemetry. If access to customer data is needed for further troubleshooting, a Microsoft engineer triggers an internal approval process for access to customer data, irrespective of lockbox policy being configured or not.
+2. A Microsoft operator reviews the support request/event and attempts to troubleshoot the issue by using standard tools and telemetry. If access to customer data is needed for further troubleshooting, a Microsoft engineer triggers an internal approval process for access to customer data, irrespective of lockbox policy being enabled or not.
 
-3. In addition, a lockbox request is generated if the respective data store is associated with an environment protected according to the lockbox policy configuration. An email notification is sent to the designated approvers (Global administrators and Power Platform administrators) about the pending data access request from Microsoft.  
+3. In addition, a lockbox request is generated if the respective data store is associated with an environment protected according to the lockbox policy enablement. An email notification is sent to the designated approvers (Global administrators and Power Platform administrators) about the pending data access request from Microsoft.  
 
    > [!IMPORTANT]
    > The Microsoft engineer won’t be able to proceed with their investigation until the lockbox request is approved by the customer. This could cause delays in addressing the support ticket or prolonged outages. Make sure you monitor email notifications and/or lockbox requests in the Power Platform admin center and respond in a timely manner to avoid service interruptions.   
@@ -58,7 +58,7 @@ Power Platform applications and services store customer data in several Azure st
 
 ## Enable the lockbox policy
 
-Global administrators or Power Platform administrators can create or update the lockbox policy in the Power Platform admin center. For the duration of the preview, the tenant level policy configuration will apply to all environments in the tenant. It may take up to 24 hours for all data sources and all environments to be implemented with Customer Lockbox. 
+Global administrators or Power Platform administrators can create or update the lockbox policy in the Power Platform admin center. For the duration of the preview, enabling the tenant level policy will apply to all environments in the tenant. It may take up to 24 hours for all data sources and all environments to be implemented with Customer Lockbox. 
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
 
