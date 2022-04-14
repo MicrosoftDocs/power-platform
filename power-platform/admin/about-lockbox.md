@@ -72,7 +72,7 @@ Global administrators or Power Platform administrators can create or update the 
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
 
-2. Select **Governance** > **Customer Lockbox (preview)**.
+2. Select **Policies** > **Customer Lockbox (preview)**.
 
 3. Review the request details.
 
