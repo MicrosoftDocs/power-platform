@@ -30,14 +30,14 @@ You can enable Customer Lockbox for your data sources within your tenant. For th
 
 More information: [Enable the lockbox policy](#enable-the-lockbox-policy).
 
-In the rare occasion when Microsoft attempts to access customer data that's stored within Power Platform (Dataverse), a lockbox request is sent to the Global administrators and Power Platform administrators for approval. More information: [Review a lockbox request](#review-a-lockbox-request). 
+In the rare occasion when Microsoft attempts to access customer data that's stored within Power Platform (i.e., Dataverse), a lockbox request is sent to the Global administrators and Power Platform administrators for approval. More information: [Review a lockbox request](#review-a-lockbox-request). 
  
 All updates to a lockbox request are recorded and made available to your organization as audit logs. More information: [Audit lockbox requests](#audit-lockbox-requests). 
  
 Power Platform applications and services store customer data in several Azure storage technologies. When you turn on Customer Lockbox for an environment, customer data associated with the respective environment is protected by the lockbox policy, irrespective of the storage type.  
  
 > [!NOTE]
-> Currently, the applications and services where lockbox policy is going to be enforced once enabled are Power Apps, Power Automate, AI Builder and Dataverse.
+> Currently, the applications and services where lockbox policy is going to be enforced once enabled are Power Apps (including AI Builder, Power Apps portals), Power Automate, and Dataverse.
 
 ## Workflow 
 
