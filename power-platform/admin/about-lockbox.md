@@ -56,17 +56,15 @@ Power Platform applications and services store customer data in several Azure st
 
 5. After the approver from your organization approves the request, the Microsoft engineer obtains the elevated permissions that were initially requested and fixes your issue. Microsoft engineers have a set amount of time - 8 hours - to fix the issue, after which access is automatically revoked. 
 
-## Configure the lockbox policy
+## Enable the lockbox policy
 
 Global administrators or Power Platform administrators can create or update the lockbox policy in the Power Platform admin center. For the duration of the preview, the tenant level policy configuration will apply to all environments in the tenant. It may take up to 24 hours for all data sources and all environments to be implemented with Customer Lockbox. 
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
 
-2. Select **Governance** > **Customer Lockbox (preview)**.
+2. Select **Policies** > **Lockbox policy (preview)**.
 
-3. Select **Configure Customer Lockbox**.
-
-4. Configure the lockbox policy.
+3. Set **Lockbox policy (preview)** to **On**.
 
    :::image type="content" source="media/lockbox-turn-on.png" alt-text="Turn on the lockbox policy.":::
 
