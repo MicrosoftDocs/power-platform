@@ -13,11 +13,31 @@ searchScope:
   - "Power Virtual Agents"
 ---
 
-# New features in Power Virtual Agents
+# Build 2022
 
-<!-- TODO: blurb about Build -->
+<!-- FIXME: blurb about PVA at Build -->
 
-<!-- TODO: link to docs that discuss new features -->
+## New features
 
-- Some feature
-- Another feature
+<!-- FIXME: merge PRs and link relevant docs -->
+- Redesigned authoring canvas
+- Enhanced variable management
+- Power FX support
+- Rich Response Authoring​
+- Speech authoring
+- Telephony channel
+- Bot response variations
+
+## Limitations of technology preview
+
+The following features are not supported in the technology preview:
+
+- Authoring bots in the Power Virtual Agents app in Microsoft Teams
+- Creating bots in other languages other than English
+- Customization of system fallback topic
+- Analytics
+- Entities
+- Skills
+- Agent transfers
+- Publishing bots on Teams channel
+- Bots setup with application lifecycle management (ALM)
