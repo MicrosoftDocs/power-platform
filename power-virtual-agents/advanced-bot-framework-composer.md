@@ -112,7 +112,7 @@ There are few key guidelines to follow when using Composer to create your bot co
 For a deep-dive on Bot Framework Composer **dialogs**, **events**, **triggers** and how to create advanced bot content with Bot Framework, refer to the following resources:
 
 - [Bot Framework Composer dialogs](/composer/concept-dialog)
-- [Bot Framework Composer events and triggers](/composer/concept-events-and-trigger)
+- [Bot Framework Composer events and triggers](/composer/how-to-define-triggers)
 - [Language Generation](/composer/concept-language-generation)
 - [Conversation flow and memory](/composer/concept-memory)
 
