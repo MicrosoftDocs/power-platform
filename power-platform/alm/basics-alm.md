@@ -9,7 +9,6 @@ manager: kvivek
 ms.custom: ""
 ms.date: 06/11/2020
 ms.reviewer: "matp"
-
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
@@ -51,7 +50,7 @@ Using the Power Platform admin center, you can create these types of Dataverse e
 -   **Production**  The environment where apps and other software are put into
     operation for their intended use.
 
--   **Developer** (formally called Community)  The Power Apps Developer Plan gives you access to Power Apps
+-   **Developer** (formally called Community). The Power Apps Developer Plan gives you access to Power Apps
     premium functionality, Dataverse, and Power Automate for
     individual use. This plan is primarily meant to build and test with Power Apps, Power Automate, and Microsoft Dataverse or for learning purposes. A developer environment is a single-user environment, and can't be used to run or share production apps.
     
