@@ -9,7 +9,6 @@ manager: kvivek
 ms.custom: ""
 ms.date: 05/05/2020
 ms.reviewer: "matp"
-
 ms.topic: "article"
 search.audienceType: 
   - maker
@@ -47,11 +46,11 @@ The *application lifecycle* is the cyclical software development process that in
 
 ## ALM for Power Apps, Power Automate, Power Virtual Agents, and Dataverse
 
-[Dataverse](powerapps/maker/data-platform/data-platform-intro) in Microsoft Power Platform lets you securely store and manage data and processes that's used by business applications. To use the Power Platform features and tools available to manage ALM, all environments that participate in ALM must include a Dataverse instance to enable some of these features and tools.
+[Dataverse](powerapps/maker/data-platform/data-platform-intro) in Microsoft Power Platform lets you securely store and manage data and processes that's used by business applications. To use the Power Platform features and tools available to manage ALM, all environments that participate in ALM must include a Dataverse database.
 
 The following concepts are important for understanding ALM using the Microsoft Power Platform.
 
--   *Solutions* are the mechanism for implementing ALM; you use them to distribute components across environments through export and import. A component represents an artifact used in your application and something that you can potentially customize. Anything that can be included in a solution is a component, such as tables, columns, canvas and model-driven apps, Power Automate flows, chatbots, charts, plug-ins, etc.
+-   *Solutions* are the mechanism for implementing ALM; you use them to distribute components across environments through export and import. A component represents an artifact used in your application and something that you can potentially customize. Anything that can be included in a solution is a component, such as tables, columns, canvas and model-driven apps, Power Automate flows, chatbots, charts, and plug-ins.
 
 -   *Dataverse* stores all the artifacts, including solutions.
 
