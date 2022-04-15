@@ -1,10 +1,9 @@
 ---
-title: "Granular DLP controls  | MicrosoftDocs"
+title: "Granular controls | MicrosoftDocs"
 description: About fine-grained controls such as the ability to block specific connector actions or connection endpoints.
-
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/03/2022
+ms.date: 04/11/2022
 ms.subservice: admin
 author: mikferland-msft
 ms.author: miferlan
@@ -22,14 +21,18 @@ search.app:
   - Flow
 ---
 
-# Granular DLP controls
+# Advanced DLP granular connector controls
 
 Although the connector classification capability is very helpful in governing Microsoft Power Platform connectors, fine-grained controls&mdash;such as the ability to block specific connector actions or connection endpoints&mdash;help you strike a balance between productivity and protection.
 
 > [!NOTE]
-> Both connector action control and connector endpoint filtering are currently in Public Preview.
+> Some apps need to be re-published for your connector action rules and connector endpoint filtering rules to be enforced. See [Known limitations](dlp-granular-controls.md#known-limitations) below.
 
-## Connector action control 
+## Connector action control
+
+> [!NOTE]
+> - **Connector action control** is generally available.
+> - Configuring a connector's actions is available for all *blockable* connectors, but not for [unblockable connectors](dlp-connector-classification.md#list-of-connectors-that-cant-be-blocked) and [custom connectors](dlp-custom-connector-parity.md).
 
 You can use connector action control to allow or block individual actions within a given connector. On the **Connectors** page, right-click the connector, and then select **Configure connector** > **Connector actions**.
 
@@ -38,9 +41,6 @@ You can use connector action control to allow or block individual actions within
 This opens a side panel where you can allow or deny specific actions. You can also set the default value (Allow or Deny) for any new connector actions that will be added to the connector in the future.
 
 :::image type="content" source="media/dlp-allow-deny-connector-actions.png" alt-text="Set Allow or Deny for connector actions.":::
-
-### Availability
-Configuring a connector's actions is available for all *blockable* connectors, but not for [unblockable connectors](dlp-connector-classification.md#list-of-connectors-that-cant-be-blocked). 
 
 ### PowerShell support for Connector action control
 
@@ -139,9 +139,12 @@ $ConnectorConfigurations = @{
 New-PowerAppDlpPolicyConnectorConfigurations -TenantId $TenantId -PolicyName $PolicyName -NewDlpPolicyConnectorConfigurations $ConnectorConfigurations
 ``` 
 
-## Endpoint filtering 
+## Connector endpoint filtering
 
-Endpoint filtering allows admins to govern at a fine grain which specific endpoints will be allowed versus blocked at a tenant or environment level. This facility is available for HTTP, HTTP with Azure AD, HTTP Webhook, SQL Server, Azure Blob Storage, and SMTP connection endpoints. The feature will soon be available for Dataverse (legacy). For more information, see [Endpoint input formats and examples](dlp-endpoint-input-formats-examples.md).
+> [!NOTE]
+> **Connector endpoint filtering** is in public preview.
+
+Endpoint filtering allows admins to govern at a fine grain which specific endpoints will be allowed versus blocked at a tenant or environment level. This facility is available for HTTP, HTTP with Azure AD, HTTP Webhook, SQL Server, Azure Blob Storage, and SMTP connection endpoints. For more information, see [Endpoint input formats and examples](dlp-endpoint-input-formats-examples.md).
 
 The **Endpoint configurable** column on the **Prebuilt Connectors** page in **Data Policies** indicates whether the endpoint filtering capability is supported for the connector
 
@@ -151,7 +154,7 @@ If the value of the **Endpoint configurable** column is **Yes**, you can use thi
 
 :::image type="content" source="media/dlp-configure-connector-connector-endpoints.png" alt-text="Configure connector > Connector endpoints.":::
 
-This opens a side panel where you can specify an ordered list of Allow or Deny URL patterns for custom connectors. The last row in the list will always be a rule for the wildcard character `*`, which applies to all endpoints in that connector. By default, the `*` pattern is set up as Allow for new DLP policies, but you can tag this as Allow or Deny.
+This opens a side panel where you can specify an ordered list of Allow or Deny URL patterns. The last row in the list will always be a rule for the wildcard character `*`, which applies to all endpoints in that connector. By default, the `*` pattern is set up as Allow for new DLP policies, but you can tag this as Allow or Deny.
 
 :::image type="content" source="media/dlp-specify-ordered-list-allow-deny-url-patterns.png" alt-text="Specify an ordered list of Allow and Deny URL patterns for custom connectors.":::
 
@@ -288,6 +291,33 @@ $ConnectorConfigurations = @{
   ) 
 }
 New-PowerAppDlpPolicyConnectorConfigurations -TenantId $TenantId -PolicyName $PolicyName -NewDlpPolicyConnectorConfigurations $ConnectorConfigurations
+``` 
+
+## Known limitations
+- Endpoint filtering rules are not enforced on **environment variables**, **custom inputs** and **dynamically bound endpoints** during runtime. Only static endpoints known and selected when building an app, flow, or chatbot during design time are enforced.
+- Endpoint filtering rules for SQL Server and Azure Blob Storage are not enforced if the connections are authenticated with Azure Active Directory.
+- Some Power Apps last published before October 1st 2020 need to be re-published for DLP connector action rules and DLP connector endpoint rules to be enforced. The following script enables admins and makers to identify apps that must be re-published to respect these new DLP granular control rules:
+
+```powershell
+Add-PowerAppsAccount
+
+$GranularDLPDate = Get-Date -Date "2020-10-01 00:00:00Z"
+
+ForEach ($app in Get-AdminPowerApp){
+
+    $versionAsDate = [datetime]::Parse($app.LastModifiedTime)
+    
+    $olderApp = $versionAsDate -lt $GranularDLPDate
+
+    $wasBackfilled = $app.Internal.properties.executionRestrictions -ne $null -and $app.Internal.properties.executionRestrictions.dataLossPreventionEvaluationResult -ne $null -and ![string]::IsNullOrEmpty($app.Internal.properties.executionRestrictions.dataLossPreventionEvaluationResult.lastAdvancedBackfillDate) 
+
+    If($($olderApp -and !$wasBackfilled)){
+        Write-Host "App must be republished to be Granular DLP compliant: " $app.AppName " "  $app.Internal.properties.displayName " " $app.Internal.properties.owner.email
+    } 
+    Else{ 
+        Write-Host "App is already Granular DLP compliant: " $app.AppName 
+    }
+}
 ``` 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
