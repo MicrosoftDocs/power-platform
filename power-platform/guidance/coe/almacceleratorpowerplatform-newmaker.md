@@ -29,6 +29,30 @@ search.app:
 Watch how to use the ALM Accelerator for Power Platform app.
 [Demo Videos](https://github.com/microsoft/coe-starter-kit/blob/main/CenterofExcellenceALMAccelerator/WALKTHROUGHS.md)
 
+## Configuration of the ALM accelerator new maker user settings
+
+In the following table you can see how the **User Functions** are configured for the **maker** user settings.
+
+| Field        | Value     | Description |
+|--------------|-----------|------------|
+| Import Solutions | Not Allowed  | Settings this to Not Allowed hides the **Import Solution** command in the app.|
+| Delete Solutions | Not Allowed  | Settings this to Not Allowed hides the **Delete Solution** command in the app.|
+| Manage Solutions | Allowed  | This function shows the **Manage Solutions** command in the app.|
+| Drillthrough Status | Not Allowed  | Settings this to Not Allowed disables the click through capability to drill into the Azure DevOps pipeline runs for the promote and deploy functionality.|
+| Profile Creation | Not Allowed  | Settings this to Not Allowed disables the capability to create new deployment profiles in the app.|
+| Advanced Promote | Not Allowed  | Settings this to Not Allowed disables the capability to use the advanced promote functionality. Changes will be committed to the default branch for the user|
+| Advanced Deploy | Not Allowed  | Settings this to Not Allowed disables the capability use the advanced deploy functionality. Use can select between target environments that are enabled for deployment|
+| Bypass Prepare | Not Allowed  | Settings this to Not Allowed will force the user to go through the prepare step during the promotion of a solution.|
+
+The below table shows how the **User Labels** are configured for the **maker** user settings
+
+| Field        | Value     | Description |
+|--------------|-----------|------------|
+| Deploy Solution |  | Setting the value to blank will use the default label. Default label is **DEPLOY SOLUTION**.|
+| Commit Solution | Save Solution  | The commit solution button will be labeled **SAVE SOLUTION**.|
+| Import Solution |  | Setting the value to blank will use the default label. Default label is **IMPORT SOLUTION**. This button is hidden due to the configuration above|
+| Delete Solution |  | Setting the value to blank will use the default label. Default label is **DELETE SOLUTION**. This button is hidden due to the configuration above|
+
 ## Walk-through: The ALM Accelerator for Power Platform app new maker experience
 
 > [!IMPORTANT]
