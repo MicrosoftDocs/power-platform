@@ -3,7 +3,7 @@ title: "Manage group teams  | MicrosoftDocs"
 description: About managing group teams 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/22/2022
+ms.date: 04/11/2022
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
@@ -105,11 +105,24 @@ For more information, see [Assign a record to a user or team](/powerapps/user/as
 6. If the team type is Azure AD Security group or Azure AD Office group, you must also enter these fields:
 
    - **Group name:** Start entering text to select an existing Azure AD group names.These groups are pre-created in Azure AD.
-   - **Membership type:** Select the membership type from the dropdown list.
-
+   - **Membership type:** Select the membership type from the dropdown list. See [How Azure AD security group members match to Dataverse group team members](#how-azure-ad-security-group-members-match-to-dataverse-group-team-members).
+   
    :::image type="content" source="media/dataverse-team-manage-new-team-azuread.png" alt-text="Screenshot of settings for a new Azure AD team.":::
 
 After you create the team, you can add team members and select corresponding security roles. This step is optional, but recommended.
+
+### How Azure AD security group members match to Dataverse group team members
+
+:::image type="content" source="media/match-azure-ad-to-dataverse.png" alt-text="How does Azure AD members match to Dataverse group team members":::
+
+Review the following table for how members in Azure AD groups match to Dataverse group team members.
+
+|Select Dataverse group team membership type (4)  | Resulting membership |
+|---------|---------|
+| Members and guests | Select this type to include both Member and Guest user types (3) from the Azure AD group category Members (1). |
+| Members    | Select this type to include only user type Member (3) from the Azure AD group category Members (1).     |
+| Owners     | Select this type to include only user type Member (3) from the Azure AD group category Owners (2).     |
+| Guests     | Select this type to include only user type Guest (3) from the Azure AD group category Members (1).    |
 
 ## Edit a group team
 
@@ -166,8 +179,9 @@ See:
 
 ### See also
 [Manage teams](manage-teams.md) <br />
-[Video: Azure Active Directory group membership](https://youtu.be/GW2Rz53BX6o) 
-
+[Video: Azure Active Directory group membership](https://youtu.be/GW2Rz53BX6o) <br />
+[Create a basic group and add members using Azure Active Directory](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) <br />
+[Quickstart: View your organization's groups and members in Azure Active Directory](/azure/active-directory/fundamentals/active-directory-groups-view-azure-portal)
 
 
 
