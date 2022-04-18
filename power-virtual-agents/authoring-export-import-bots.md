@@ -2,7 +2,7 @@
 title: "Export and import bots using solutions (contains video)"
 description: "Transfer bots between environments by adding them to Power Apps solutions."
 keywords: "export, import, transfer, environment, PVA"
-ms.date: 01/25/2022
+ms.date: 04/08/2022
 
 ms.topic: article
 author: iaanw
@@ -158,13 +158,21 @@ The export can take several minutes to complete. Once finished, a .zip file will
 > [!IMPORTANT]
 > You must [publish your newly imported bot](publication-fundamentals-publish-channels.md) before it can be shared.
 
+## Add new components to a chatbot custom solution
+
+If you add new bot components (such as new topics or flows) to your bot in Power Virtual Agents, you will also need to add those components to the bot in your unmanaged solution.
+
+1. Go to your unmanaged solution in the Power Apps portal.
+
+1. Select **Chatbots** and find your bot in the list.
+
+1. Select the vertical three dots, then select **Add required objects**.
+
+    :::image type="content" source="media/authoring-export-import-bots/export-add-required-components.png" alt-text="Screenshot highlighting the Add required components option under the More menu." border="false":::
+
 ## Upgrade or update a solution with a chatbot
 
-If you add new bot components (such as new topics or flows) to your bot in the PVA portal, you will also need to update those changes to the bot in your target environment. You do this by adding the components to the unmanaged solution by selecting **Add required components** under the **...** menu next to the name of the bot.
-
-:::image type="content" source="media/authoring-export-import-bots/export-add-required-components.png" alt-text="Screenshot highlighting the Add required components option under the More menu." border="false":::
-
-There are times when you need to update an existing managed solution. To learn more, go to [Upgrade or update a solution](/powerapps/maker/common-data-service/update-solutions).
+To update or upgrade an existing managed solution, go to [Upgrade or update a solution](/powerapps/maker/common-data-service/update-solutions).
 
 ## Remove an unmanaged layer from a managed chatbot
 
