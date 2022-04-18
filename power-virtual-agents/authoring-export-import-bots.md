@@ -156,7 +156,9 @@ The export can take several minutes to complete. Once finished, a .zip file will
     :::image type="content" source="media/authoring-export-import-bots/BotPickerSolutionName.png" alt-text="List of bots and environments in Power Virtual Agents.":::
 
 > [!IMPORTANT]
-> You must [publish your newly imported bot](publication-fundamentals-publish-channels.md) before it can be shared.
+>
+> - You must [publish your newly imported bot](publication-fundamentals-publish-channels.md) before it can be shared.
+> - It may take up to 24 hours for your bot's icon to appear everywhere.
 
 ## Upgrade or update a solution with a chatbot
 
