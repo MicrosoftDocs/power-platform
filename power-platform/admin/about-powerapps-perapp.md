@@ -80,6 +80,9 @@ Follow these steps to turn off assigning per app plans for users when an app is 
 
 > [!IMPORTANT]
 > If per app plans are not allocated to the environment the app is installed in, the toggle is disabled. 
+> 
+> If per app plans are allocated to the environment, the toggle is enabled and defaults to on for apps created after October 1st 2020. 
+
 
 ### Check capacity
 Check the **App passes** capacity for the environment with the app you're sharing. Make sure you have sufficient app passes assigned for the number of users using the app.
