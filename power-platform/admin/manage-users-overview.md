@@ -2,9 +2,8 @@
 title: Manage users overview | Microsoft Docs
 description: Overview
 author: jimholtz
-
 ms.component: pa-admin
-ms.topic: quickstart
+ms.topic: conceptual
 ms.date: 04/27/2020
 ms.subservice: admin
 ms.author: jimholtz

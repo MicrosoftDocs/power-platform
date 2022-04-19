@@ -89,7 +89,7 @@ To create and import a solution file:
 
 6.  You can use the [Microsoft Power Platform Build Tools](https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.PowerApps-BuildTools)
     to automate importing the solution into a Dataverse environment;
-    otherwise, you can manually [import the solution into Dataverse](/powerapps/maker/common-data-service/import-update-export-solutions.md) by using
+    otherwise, you can manually [import the solution into Dataverse](/powerapps/maker/common-data-service/import-update-export-solutions) by using
     the web portal.
 
 ## Additional tasks that you can do with the framework and solutions
