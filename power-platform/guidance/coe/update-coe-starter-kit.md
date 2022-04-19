@@ -85,29 +85,46 @@ Here are a few things to consider when deciding on your own update frequency:
 Before a release, the CoE Starter Kit team tests any bug fixes or new features against the previous three released versions to ensure that updates don't affect earlier versions of the Starter Kit.  Unfortunately, it means that leaving updates longer than three months could result in unexpected issues when updating.  Useful guidance for installing updates to the CoE Starter Kit [can be found here](power-platform/guidance/coe/after-setup).
 
 >[!NOTE]
->Review releases monthly by attending the office hours calls and reading release notes. Create notifications to alert you when updates that interest you are made. Try to maintain parity between your testing/ production versions of the CoE Starter Kit and the current release, or within the past three versions.
+>Review releases monthly by attending the office hours calls and reading release notes. Create notifications to alert you when updates of interest are made. Try to maintain parity between your testing/ production versions of the CoE Starter Kit and the current release, or within the past three versions.
 
 ## Installing updates
 
-As with any update, testing increases the likelihood of success when installing an update to your production version of the CoE.
-Ideally, create a non-production version of the CoE Starter Kit for testing.  The sections below advise how to install and test updates for two possible scenarios:
+As with any update, testing increases the likelihood of success when installing in your production environment.
 
-- If you've made customizations to the CoE Starter Kit
+>[!NOTE]
+>Ideally, and as a minimum, create a non-production version of the CoE Starter Kit for testing.  
+
+The sections below contain step-by-step instructions to install and test updates for two possible scenarios:
+
 - If you haven't made customizations to the CoE Starter Kit
+- If you've made customizations to the CoE Starter Kit
 
 ### Step-by-step instructions for installing updates
 
 The steps below describe how to install updates to the CoE Starter Kit.
+Before starting, download the latest solution file.
 
-### If you've made customizations
+#### Download the latest solution file
 
-The CoE Starter Kit is a set of useful apps and other features that are available for you to utilize. Often, you'll need to make changes to an app or flow.  Making changes can introduce complexity to the upgrade process by introducing unmanaged layers.  If you're installing an update and you've customized the CoE Starter Kit; refer to the following documents for best practices and advice:
+Prior to doing this, review the release notes.  Ensure you're aware of any new components that may require enabling, or variables that need to be created.  [Download the solution file](https://github.com/microsoft/coe-starter-kit/releases).
 
-- [Installing CoE upgrades](power-platform/guidance/coe/after-setup)
+#### If you haven't made customizations
 
-To learn more about extending the kit in the best way, refer to the following document:
+If you haven't made customizations to the CoE Starter Kit, follow the steps described below:
 
-- [Extending CoE components](power-platform/guidance/coe/extending-components)
+1. Import the solution
+    
+ a. If installing to a Production Environment - use the solution file from the download called CenterOfExcellenceCoreComponents_x_x_x_xx_managed.zip
+   
+   b. If installing to a Dataverse for Teams Environment - use the solution file from the download called CenterOfExcellenceCoreComponentsTeams_x_x_x_xx_managed.zip
+
+2. Select Upgrade (default). Solution upgrades delete removed components.
+
+#### If you've made customizations
+
+>[!IMPORTANT]
+>By changing any flow, app or table you have introduced an unmanaged layer. Solution layering is explained in [this document](power-platform/alm/solution-layers-alm?msclkid=159120adc01c11ec8e46abcd830893b0). Components that have been changed will not receive any updates until the unmanaged layer has been removed.
+
 
 #### Making customizations and unmanaged solutions
 
@@ -115,10 +132,6 @@ When you need to make changes to any component of the CoE Starter Kit, you shoul
 
 - [Introducing solutions](powerapps/developer/common-data-service/introduction-solutions)
 - [Solution layering](power-platform/alm/solution-layers-alm)
-
-### If you haven't made customizations
-
-If you haven't made customizations to the CoE Starter Kit, follow the steps in [this document](power-platform/guidance/coe/after-setup).
 
 ### If you have an issue
 
