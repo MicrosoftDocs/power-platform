@@ -4,7 +4,7 @@ description: About Power Apps per app plans
 author: alaug
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/14/2021
+ms.date: 04/19/2022
 ms.subservice: admin
 ms.author: alaug
 ms.reviewer: jimholtz
@@ -81,7 +81,7 @@ Follow these steps to turn off assigning per app plans for users when an app is 
 > [!IMPORTANT]
 > If per app plans are not allocated to the environment the app is installed in, the toggle is disabled. 
 > 
-> If per app plans are allocated to the environment, the toggle is enabled and defaults to on for apps created after October 1st 2020. 
+> If per app plans are allocated to the environment, the toggle is enabled and defaults to on for apps created after October 1, 2020. 
 
 
 ### Check capacity
