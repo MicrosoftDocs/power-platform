@@ -212,34 +212,54 @@ It is our goal to deliver a powerful bot experience that allows users to retriev
 
 Effective May 5, 2020 the [Dynamics 365 connector](/connectors/dynamicscrmonline/) used for Data Integrations, Flows, Logic Apps, and Canvas Apps is officially deprecated. We recommend that you don't create new connections using this connector. 
 
-#### Impact
-Starting April 29, 2022, no new connections can be created for Data Integrations, Flows, Logic Apps, and Canvas Apps using the Dynamics 365 connector. Existing connections will continue to work until they are edited, at which time an alternate connector as listed below is required.
+### Impact
+Starting April 29, 2022, no new connections can be created for Data Integrations, Flows, Logic Apps, and Canvas Apps using the Dynamics 365 connector. It is recommended that any Dynamics 365 connector be replaced with an option below. 
 
-On July 28th 2022, all existing uses of the Dynamics 365 connector for Data Integrations, Flows, Logic Apps, and Canvas Apps will be disabled. At that time, you must migrate to using one of the options outlined below.
+### The Following Behaviors Will Be Observed
+#### Data Integrator
+- Dynamics 365 connector cannot be selected for creating a new integration
+- Existing connections will continue to run as long as they remain unchanged
+- Editing an existing integration will not be allowed, if you attempt to edit you will be required to choose a different connector
 
-#### Action required by you
-Rather than use the Dynamics 365 connector, the [Microsoft Dataverse connector](/connectors/commondataserviceforapps/) should be your first choice *if you can use it*. You may not be able to use the Microsoft Dataverse connector in every situation today because of the following limitations:
+#### Automate
+- Dynamics 365 connector cannot be selected for creating a new flow
+- Existing flows will continue to run
+- You will be able to edit an existing flow but you cannot add additional Dynamics 365 connector actions to the flow
 
-- It isn't available in Logic Apps.
-- It doesn't enable cross-tenant or cross environment connections. 
-- It cannot be used for canvas apps that use the [Power Apps for Windows client](https://www.microsoft.com/p/power-apps/9nblggh5z8f3).
+#### Logic Apps
+- Dynamics 365 connector cannot be selected for creating a new Logic App
+- Existing Logic Apps will continue to run
+- You will be able to edit an existing Logic App  
 
-If you cannot use the Microsoft Dataverse connector, you should use the [Microsoft Dataverse (legacy)](/connectors/commondataservice/). This connector has all the capabilities of the Dynamics 365 connector, and includes several improvements that increase reliability.
+#### Canvas Apps
+- The Windows Player for Canvas Apps will no longer be able to be used.
 
-The Microsoft Dataverse connector represents the future for connections using Dataverse. This includes Dynamics 365 apps using Dataverse. Work is underway to make this connector the only connector you will need. But at the current time, the previously mentioned limitations mean that you can't use it in all places where the Dynamics 365 connector or Microsoft Dataverse (legacy) connector can be used today.
+In October 2022, all existing uses of the Dynamics 365 connector for Data Integrations, Flows, Logic Apps, and Canvas Apps will be disabled. At that time, you must migrate to using one of the available connectors (see below)
 
+### Action required by you
+Dynamics 365 connectors must be replaced with a Microsoft Dataverse connector. 
+- Microsoft Dataverse – This is the newest connector and will, in time, become the only connector available for Dataverse usage. All new features, performance work, and enhancements will be available on this connector.
+- Microsoft Dataverse (Legacy) – This is the last generation connector for Microsoft Dataverse. It will continue to operate until it is fully deprecated. It will not receive feature or enhancement updates.
 
-|Type|Guidance|
-|---------|---------|
-|Flows|If you can convert existing flows to use the Microsoft Dataverse connector, we recommend you do so.|
-|Logic Apps|We recommend you stop creating new connections using the Dynamics 365 connector and use the Microsoft Dataverse (legacy) instead.|
-|Canvas Apps|Canvas apps created after November 2019 should not have used the connector infrastructure by default. These apps should automatically connect to the Dataverse instance within the same environment. <br /><br />If you have a canvas app that used the  Dynamics 365 connector, find information about how to convert them here: [Converting canvas apps with the Dynamics 365 connector](/powerapps/maker/canvas-apps/use-native-cds-connector#converting-canvas-apps-with-the-dynamics-365-connector).|
+### Recommended Action by Usage
+#### Data Integrator
+- All new integrations should be created with the Microsoft Dataverse (Legacy) connector.
+- Dynamics 365 connectors should be replaced with the Microsoft Dataverse (Legacy) connector. The Microsoft Dataverse connector is not yet available.
+- Data Integrations will need to be recreated in the Data Integrator using the Dataverse (Legacy) connector and then completing setup.
 
-### Forward looking guidance
+#### Automate
+- All new flows must be created with the Microsoft Dataverse connector.
+- Flows that use the Dynamics 365 connector should be recreated to use the Microsoft Dataverse connector. 
+- Once the Microsoft Dataverse connector is available in summer of 2022, users will have the option to use an automated tool to migrate from the Microsoft Dataverse (Legacy) connector to the Microsoft Dataverse connector.
 
-When the Microsoft Dataverse connector represents a viable replacement for all situations where the Dynamics 365 and Microsoft Dataverse (legacy) connectors are used today, we intend to remove both the current Dynamics 365 and Microsoft Dataverse (legacy) connectors so that a single connector based on the Microsoft Dataverse connector will remain. At that time it will be required to convert any Flows, Logic Apps, and Canvas Apps still using the Dynamics 365 and Microsoft Dataverse (legacy) connectors.
+#### Logic Apps
+- All new Logic Apps should be created with the Microsoft Dataverse (Legacy) connector.
+- Logic Apps using the Dynamics 365 connector are recommended to move to the Microsoft Dataverse (Legacy) connector. 
+- Logic Apps will need to be recreated in the using the Dataverse (Legacy) connector and then completing setup.
+- Once the Microsoft Dataverse connector is available in summer of 2022, no action is needed. The Microsoft Dataverse (Legacy) connector will merge with the Microsoft Dataverse connector. At this time additional actions and triggers will become available. 
 
-We will announce timelines as they are determined.
+#### Canvas Apps
+- If you are using the Power Apps Player to launch Power Apps in windows, you will need to switch over to Power Apps for Windows
 
 
 ## AI Builder text classification models are deprecated
