@@ -27,8 +27,6 @@ You can't delete or disable system topics, or edit their trigger phrases. Howeve
 
 When you first create a bot, all system topics will be configured to trigger at the appropriate times. However you can manually trigger system topics by [redirecting](/authoring-create-edit-topics.md#redirect-to-another-topic) to them.
 
-:::image type="content" source="media/authoring-system-topics/system-topics.png" alt-text="Flow chart of system topics in a conversation.":::
-
 > [!IMPORTANT]
 > If any of the following system topics are triggered, the entire conversation will end:
 >
@@ -40,6 +38,8 @@ When you first create a bot, all system topics will be configured to trigger at 
 > - Start over
 
 ## System topics
+
+:::image type="content" source="media/authoring-system-topics/system-topics.png" alt-text="Flow chart of system topics in a conversation.":::
 
 <!-- best viewed without wordwrap -->
 | Topic               | Example trigger phrases                              | Purpose                                                                                                                                                                         |
