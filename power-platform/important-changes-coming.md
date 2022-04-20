@@ -231,7 +231,7 @@ Starting April 29, 2022, no new connections can be created for data integrations
 - Existing Logic Apps will continue to run.
 - You will be able to edit an existing Logic App.
 
-#### Canvas Apps
+#### Canvas apps
 - The Windows Player for canvas apps will no longer be able to be used.
 
 In October 2022, all existing uses of the Dynamics 365 connector for data integrations, flows, Logic Apps, and canvas apps will be disabled. At that time, you must migrate to using one of the available connectors (see below).
@@ -242,14 +242,14 @@ Dynamics 365 connectors must be replaced with a Microsoft Dataverse connector.
 - Microsoft Dataverse (Legacy) – This is the last generation connector for Microsoft Dataverse. It will continue to operate until it is fully deprecated. It will not receive feature or enhancement updates.
 
 ### Recommended action by usage
-#### Data Integrator
+#### Data integrator
 - All new integrations should be created with the Microsoft Dataverse (Legacy) connector.
 - Dynamics 365 connectors should be replaced with the Microsoft Dataverse (Legacy) connector. The Microsoft Dataverse connector is not yet available.
 - Data Integrations will need to be recreated in the Data Integrator using the Dataverse (Legacy) connector and then completing setup.
 
 #### Automate
 - All new flows must be created with the Microsoft Dataverse connector.
-- Flows that use the Dynamics 365 connector should be recreated to use the Microsoft Dataverse connector. 
+- Flows that use the Dynamics 365 connector should be re-created to use the Microsoft Dataverse connector. 
 - Once the Microsoft Dataverse connector is available in summer of 2022, users will have the option to use an automated tool to migrate from the Microsoft Dataverse (Legacy) connector to the Microsoft Dataverse connector.
 
 #### Logic Apps
@@ -258,8 +258,8 @@ Dynamics 365 connectors must be replaced with a Microsoft Dataverse connector.
 - Logic Apps will need to be recreated in the using the Dataverse (Legacy) connector and then completing setup.
 - Once the Microsoft Dataverse connector is available in summer of 2022, no action is needed. The Microsoft Dataverse (Legacy) connector will merge with the Microsoft Dataverse connector. At this time additional actions and triggers will become available. 
 
-#### Canvas Apps
-- If you are using the Power Apps Player to launch Power Apps in windows, you will need to switch over to Power Apps for Windows
+#### Canvas apps
+- If you are using the Power Apps Player to launch Power Apps in Windows, you will need to switch over to Power Apps for Windows.
 
 
 ## AI Builder text classification models are deprecated
