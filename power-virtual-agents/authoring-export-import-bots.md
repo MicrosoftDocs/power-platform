@@ -2,7 +2,7 @@
 title: "Export and import bots using solutions (contains video)"
 description: "Transfer bots between environments by adding them to Power Apps solutions."
 keywords: "export, import, transfer, environment, PVA"
-ms.date: 04/08/2022
+ms.date: 04/19/2022
 
 ms.topic: article
 author: iaanw
@@ -156,7 +156,9 @@ The export can take several minutes to complete. Once finished, a .zip file will
     :::image type="content" source="media/authoring-export-import-bots/BotPickerSolutionName.png" alt-text="List of bots and environments in Power Virtual Agents.":::
 
 > [!IMPORTANT]
-> You must [publish your newly imported bot](publication-fundamentals-publish-channels.md) before it can be shared.
+>
+> - You must [publish your newly imported bot](publication-fundamentals-publish-channels.md) before it can be shared.
+> - It may take up to 24 hours for your bot's icon to appear everywhere.
 
 ## Add new components to a chatbot custom solution
 
