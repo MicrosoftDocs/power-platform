@@ -210,38 +210,38 @@ It is our goal to deliver a powerful bot experience that allows users to retriev
 
 ## Dynamics 365 Connector is deprecated
 
-Effective May 5, 2020 the [Dynamics 365 connector](/connectors/dynamicscrmonline/) used for Data Integrations, Flows, Logic Apps, and Canvas Apps is officially deprecated. We recommend that you don't create new connections using this connector. 
+Effective May 5, 2020 the [Dynamics 365 connector](/connectors/dynamicscrmonline/) used for data integrations, flows, Azure Logic Apps, and canvas apps is officially deprecated. We recommend that you don't create new connections using this connector. 
 
 ### Impact
-Starting April 29, 2022, no new connections can be created for Data Integrations, Flows, Logic Apps, and Canvas Apps using the Dynamics 365 connector. It is recommended that any Dynamics 365 connector be replaced with an option below. 
+Starting April 29, 2022, no new connections can be created for data integrations, flows, Logic Apps, and canvas apps using the Dynamics 365 connector. We recommend that any Dynamics 365 connector be replaced with an option below. 
 
-### The Following Behaviors Will Be Observed
-#### Data Integrator
-- Dynamics 365 connector cannot be selected for creating a new integration
-- Existing connections will continue to run as long as they remain unchanged
-- Editing an existing integration will not be allowed, if you attempt to edit you will be required to choose a different connector
+### The following behaviors will be observed
+#### Data integrator
+- Dynamics 365 connector can't be selected for creating a new integration.
+- Existing connections will continue to run as long as they remain unchanged.
+- Editing an existing integration will not be allowed, if you attempt to edit you will be required to choose a different connector.
 
 #### Automate
-- Dynamics 365 connector cannot be selected for creating a new flow
-- Existing flows will continue to run
+- Dynamics 365 connector can't be selected for creating a new flow.
+- Existing flows will continue to run.
 - You will be able to edit an existing flow but you cannot add additional Dynamics 365 connector actions to the flow
 
 #### Logic Apps
-- Dynamics 365 connector cannot be selected for creating a new Logic App
-- Existing Logic Apps will continue to run
-- You will be able to edit an existing Logic App  
+- Dynamics 365 connector can't be selected for creating a new Logic App.
+- Existing Logic Apps will continue to run.
+- You will be able to edit an existing Logic App.
 
 #### Canvas Apps
-- The Windows Player for Canvas Apps will no longer be able to be used.
+- The Windows Player for canvas apps will no longer be able to be used.
 
-In October 2022, all existing uses of the Dynamics 365 connector for Data Integrations, Flows, Logic Apps, and Canvas Apps will be disabled. At that time, you must migrate to using one of the available connectors (see below)
+In October 2022, all existing uses of the Dynamics 365 connector for data integrations, flows, Logic Apps, and canvas apps will be disabled. At that time, you must migrate to using one of the available connectors (see below).
 
 ### Action required by you
 Dynamics 365 connectors must be replaced with a Microsoft Dataverse connector. 
 - Microsoft Dataverse – This is the newest connector and will, in time, become the only connector available for Dataverse usage. All new features, performance work, and enhancements will be available on this connector.
 - Microsoft Dataverse (Legacy) – This is the last generation connector for Microsoft Dataverse. It will continue to operate until it is fully deprecated. It will not receive feature or enhancement updates.
 
-### Recommended Action by Usage
+### Recommended action by usage
 #### Data Integrator
 - All new integrations should be created with the Microsoft Dataverse (Legacy) connector.
 - Dynamics 365 connectors should be replaced with the Microsoft Dataverse (Legacy) connector. The Microsoft Dataverse connector is not yet available.
