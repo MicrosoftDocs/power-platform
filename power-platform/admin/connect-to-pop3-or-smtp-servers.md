@@ -27,7 +27,7 @@ IMPORTANT: As documented [here](https://support.google.com/accounts/answer/60102
 Follow the steps in this article to set up server-side synchronization to send and receive email in customer engagement apps (such as [Dynamics 365 Sales](/dynamics365/sales-professional/help-hub), [Dynamics 365 Customer Service](/dynamics365/customer-service/help-hub), [Dynamics 365 Marketing](/dynamics365/marketing/help-hub), [Dynamics 365 Field Service](/dynamics365/field-service/overview), and [Dynamics 365 Project Service Automation](/dynamics365/project-operations/psa/overview)) from Gmail accounts, POP3 email server, or SMTP email server by using credentials specified by a user or queue as the authorization mechanism.
 
 
-## Create an email server profile for Gmail accounts 
+## Create an email server profile for Gmail accounts
 
 1. In the Power Platform admin center, select an environment. 
 
