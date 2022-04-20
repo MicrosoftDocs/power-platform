@@ -48,7 +48,7 @@ When you create a bot, a number of topics are automatically created.
 These topics fall into two categories:
   
 - Four pre-populated user topics, titled as lessons. These [lesson topics](authoring-template-topics-teams.md) can be used to help understand simple to complex ways of using nodes to create bot conversations. You can edit these topics in the same manner as for topics you create. You can also choose to delete them entirely.
-- A number of system topics. These are pre-populated topics that you are likely to need during a bot conversation. You can't delete, disable, or edit the trigger phrases of these topics, but you can customize the nodes on the authoring canvas. We recommend not customizing these topics until you are comfortable with creating an end-to-end bot conversation.
+- A number of [system topics](/authoring-system-topics.md). These are pre-populated topics that you are likely to need during a bot conversation. You can't delete, disable, or edit the trigger phrases of these topics, but you can customize the nodes on the authoring canvas. We recommend not customizing these topics until you are comfortable with creating an end-to-end bot conversation.
 
 You can edit both of these topic types in the same manner as for topics you create but you can't delete them.
 
@@ -205,7 +205,7 @@ You can consider the redirected topic as a "subtopic".
 
 :::image type="content" source="../media/authoring-create-edit-topics/authoring-subtopic-redirect-teams.png" alt-text="Screenshot of the authoring canvas showing nodes under a redirected topic node.":::
 
-If you redirect to any of the following [system topics](#use-system-and-sample-topics), however, the entire conversation will end:
+If you redirect to any of the following [system topics](/authoring-system-topics.md), however, the entire conversation will end:
 
 - End of Conversation
 - Confirmed Success
