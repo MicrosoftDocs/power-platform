@@ -4,7 +4,7 @@ description: Connect Gmail accounts, POP3 email server, or SMTP email server usi
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/11/2021
+ms.date: 04/20/2022
 author: revachauhan
 ms.subservice: admin
 ms.author: rechauha
@@ -21,10 +21,12 @@ search.app:
 
  [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
+IMPORTANT: As documented [here](https://support.google.com/accounts/answer/6010255), starting May 30th of 2022, Gmail is ending support for apps that are configured to only use your username and password. To use server-side synchronization with Gmail, follow the steps in [Connect Gmail accounts by using OAuth 2.0](connect-gmail-oauth2.md). 
+
 Follow the steps in this article to set up server-side synchronization to send and receive email in customer engagement apps (such as [Dynamics 365 Sales](/dynamics365/sales-professional/help-hub), [Dynamics 365 Customer Service](/dynamics365/customer-service/help-hub), [Dynamics 365 Marketing](/dynamics365/marketing/help-hub), [Dynamics 365 Field Service](/dynamics365/field-service/overview), and [Dynamics 365 Project Service Automation](/dynamics365/project-operations/psa/overview)) from Gmail accounts, POP3 email server, or SMTP email server by using credentials specified by a user or queue as the authorization mechanism.
 
 
-## Preview: Create an email server profile for Gmail accounts 
+## Create an email server profile for Gmail accounts 
 
 1. In the Power Platform admin center, select an environment. 
 
