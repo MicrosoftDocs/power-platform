@@ -41,7 +41,7 @@ When you first create a bot, all system topics will be configured to trigger at 
 
 The following diagram provides a visualization of how conversations flow through system topics.
 
-:::image type="content" source="media/authoring-system-topics/system-topics.png" alt-text="Diagram of system topics in a conversation.":::
+:::image type="content" source="../media/authoring-system-topics/system-topics.png" alt-text="Diagram of system topics in a conversation.":::
 
 The table below lists all available system topics and their intended purpose. It also provides a small sample of the built-in trigger phrases.
 
