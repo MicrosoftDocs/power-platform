@@ -27,16 +27,6 @@ You can't delete or disable system topics, or edit their trigger phrases. Howeve
 
 When you first create a bot, all system topics are configured to trigger at the appropriate times. However, you can manually trigger system topics by [redirecting](/authoring-create-edit-topics.md#redirect-to-another-topic) to them.
 
-> [!IMPORTANT]
-> If any of the following system topics are triggered, the entire conversation will end:
->
-> - End of Conversation
-> - Confirmed Success
-> - Confirmed Failure
-> - Goodbye
-> - Escalate
-> - Start over
-
 ## System topics
 
 The following diagram provides a visualization of how conversations flow through system topics.
@@ -59,5 +49,15 @@ To see all trigger phrases for a system topic, [open the topic to view them in t
 | Confirmed Success   | None                                                 | When the user responds "yes" to the end-of-conversation [satisfaction survey](/analytics-csat.md).                                                                              |
 | Confirmed Failure   | None                                                 | When the user responds "no" to the end-of-conversation [satisfaction survey](/analytics-csat.md).                                                                               |
 | Fallback            | None                                                 | When the bot can't determine the user's intent. To learn more, see [Fallback topic](authoring-system-fallback-topic.md).                                                        |
+
+> [!IMPORTANT]
+> If any of the following system topics are triggered, the entire conversation will end:
+>
+> - End of Conversation
+> - Confirmed Success
+> - Confirmed Failure
+> - Goodbye
+> - Escalate
+> - Start over
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
