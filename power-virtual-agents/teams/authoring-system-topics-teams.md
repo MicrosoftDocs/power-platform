@@ -1,6 +1,6 @@
 ---
 title: "Use system topics in Microsoft Teams"
-description: "System topics are common topics used in conversations with a bot."
+description: "Learn how system topics are used in conversations in Microsoft Teams."
 keywords: "PVA"
 ms.date: 04/20/2022
 

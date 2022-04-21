@@ -1,6 +1,6 @@
 ---
 title: "Use system topics in Power Virtual Agents"
-description: "System topics are common topics used in conversations with a bot."
+description: "Learn how system topics are used in conversations."
 keywords: "PVA"
 ms.date: 04/20/2022
 
