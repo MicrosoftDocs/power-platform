@@ -10,6 +10,7 @@ ms.author: v-alarioza
 manager: shellyha
 ms.custom: authoring, ceX
 ms.collection: virtual-agent
+ms.reviewer: ggupta
 ---
 
 # Use system topics in Microsoft Teams
