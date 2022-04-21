@@ -34,7 +34,7 @@ Customer engagement apps adhere to the Microsoft business continuity and disaste
 
 If the outage is due to issues with underlying services, due to faulty hardware or network outage, etc., and Microsoft has determined that the region won't become available within a reasonable amount of time, Microsoft will notify the customers and switch over the traffic to route to the secondary region environments. Recovery Point Objective (RPO) is small and could take up to a few seconds or a couple of minutes.   
 
-In the event of an unanticipated region-wide outage, such as a natural disaster that affects the entire Azure region, and Microsoft has determined that the region won't become available within a reasonable amount of time, Microsoft will notify customers and switch over the traffic to route to the secondary environments. In this case, it's possible that customers might experience a data loss of up to 15 minutes, depending on the nature and timing of the outage. Recovery Point Objective (RBO) is small and could take up to a few seconds or couple of minutes.  
+In the event of an unanticipated region-wide outage, such as a natural disaster that affects the entire Azure region, and Microsoft has determined that the region won't become available within a reasonable amount of time, Microsoft will notify customers and switch over the traffic to route to the secondary environments. In this case, it's possible that customers might experience a data loss of up to 15 minutes, depending on the nature and timing of the outage. Recovery Point Objective (RPO) is small and could take up to a few seconds or couple of minutes.  
 
 Recovery Time Objective (RTO) varies depending on the nature of the impact and could take up to 4 to 10 hours.  
 
