@@ -194,6 +194,8 @@
          href: teams/authoring-first-bot-teams.md
        - name: Use lesson topics
          href: teams/authoring-template-topics-teams.md
+       - name: Use system topics
+         href: teams/authoring-system-topics-teams.md
        - name: Create and edit topics
          href: teams/authoring-create-edit-topics-teams.md
        - name: Use system fallback topic
