@@ -1,6 +1,6 @@
 ---
 title: "Use system topics in Power Virtual Agents"
-description: ""
+description: "System topics are common topics used in conversations with a bot."
 keywords: "PVA"
 ms.date: 04/20/2022
 
@@ -39,14 +39,20 @@ When you first create a bot, all system topics will be configured to trigger at 
 
 ## System topics
 
-:::image type="content" source="media/authoring-system-topics/system-topics.png" alt-text="Flow chart of system topics in a conversation.":::
+The following diagram provides a visualization of how conversations flow through system topics.
+
+:::image type="content" source="media/authoring-system-topics/system-topics.png" alt-text="Diagram of system topics in a conversation.":::
+
+The table below lists all available system topics and their intended purpose. It also provides a small sample of the built-in trigger phrases.
+
+To see all trigger phrases for a system topic, [open the topic to view them in the trigger phrases pane](/authoring-create-edit-topics.md#create-a-topic).
 
 <!-- best viewed without wordwrap -->
-| Topic               | Example trigger phrases                              | Purpose                                                                                                                                                                         |
+| Topic               | Trigger phrases                                      | Purpose                                                                                                                                                                         |
 | ------------------- | ---------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Greeting            | "hey", "hello", "good morning"                       | Greet the user when a chat begins.                                                                                                                                              |
 | Thank you           | "thank you", "thanks", "ty"                          | Acknowledge when the user thanks the bot.                                                                                                                                       |
-| Goodbye             | "goodbye","bye","have a great day"                   | End the conversation when the user bids the bot farewell.                                                                                                                       |
+| Goodbye             | "goodbye", "bye", "have a great day"                 | End the conversation when the user bids the bot farewell.                                                                                                                       |
 | Start over          | "start over", "restart", "let's begin again"         | Start the conversation over and reset all [global variables](authoring-variables-bot.md).                                                                                       |
 | Escalate            | "talk to agent", "escalate", "can I talk to a human" | Escalates to a live agent. To learn more, see [Hand off to a live agent](/advanced-hand-off.md).                                                                                |
 | End of Conversation | None                                                 | [Redirect](/authoring-create-edit-topics.md#redirect-to-another-topic) to this topic at the end of a conversation to give the user a [satisfaction survey](/analytics-csat.md). |
