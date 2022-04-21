@@ -191,9 +191,9 @@ When you end the conversation, you can have a survey appear that asks the user i
 
     :::image type="content" source="../media/authoring-create-edit-topics/topics-nodes-survey-teams.png" alt-text="End with survey." border="false":::
 
-#### Go to another topic
+#### Redirect to another topic
 
-1. To automatically have the bot move to a separate topic, select **+** to add a node, and then **Go to another topic**.
+1. To automatically have the bot move to a separate topic, select **+** to add a node, and then **Redirect to another topic**.
 
 1. In the flyout menu, select the topic the bot should divert to. For example, you might want to send the user to a specific topic about the closure of a store if they ask about store hours for that store.
 
