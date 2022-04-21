@@ -25,7 +25,7 @@ System topics are common topics used in conversations with a bot.
 
 You can't delete or disable system topics, or edit their trigger phrases. However, you can customize the nodes on the authoring canvas. We recommend that you don't customize these topics until you're comfortable creating an end-to-end bot conversation.
 
-When you first create a bot, all system topics will be configured to trigger at the appropriate times. However you can manually trigger system topics by [redirecting](/authoring-create-edit-topics.md#redirect-to-another-topic) to them.
+When you first create a bot, all system topics are configured to trigger at the appropriate times. However, you can manually trigger system topics by [redirecting](/authoring-create-edit-topics.md#redirect-to-another-topic) to them.
 
 > [!IMPORTANT]
 > If any of the following system topics are triggered, the entire conversation will end:
@@ -43,12 +43,12 @@ The following diagram provides a visualization of how conversations flow through
 
 :::image type="content" source="media/authoring-system-topics/system-topics.png" alt-text="Diagram of system topics in a conversation.":::
 
-The table below lists all available system topics and their intended purpose. It also provides a small sample of the built-in trigger phrases.
+The table below lists all available system topics, their intended purpose, and a small sample of the built-in trigger phrases.
 
 To see all trigger phrases for a system topic, [open the topic to view them in the trigger phrases pane](/authoring-create-edit-topics.md#create-a-topic).
 
 <!-- best viewed without wordwrap -->
-| Topic               | Trigger phrases                                      | Purpose                                                                                                                                                                         |
+| System topic        | Trigger phrases                                      | Purpose                                                                                                                                                                         |
 | ------------------- | ---------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Greeting            | "hey", "hello", "good morning"                       | Greet the user when a chat begins.                                                                                                                                              |
 | Thank you           | "thank you", "thanks", "ty"                          | Acknowledge when the user thanks the bot.                                                                                                                                       |
