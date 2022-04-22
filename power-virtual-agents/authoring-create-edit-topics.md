@@ -2,7 +2,7 @@
 title: Use topics to design a chatbot conversation
 description: Use conversation topics in the Power Virtual Agents authoring canvas for an intuitive, no-code way to create a bot that can help answer user questions, perform actions, and solve issues.
 keywords: "PVA"
-ms.date: 04/01/2022
+ms.date: 05/09/2022
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -149,16 +149,12 @@ Additionally, you can **Add a condition** when you insert a node after a **Quest
 
    For example, if you selected **Multiple choice options**, enter the choices the user can specify in **Options for user**. Each choice is presented to the user as a multiple choice button, but users can also type their answer.
 
-   The conversation editor creates separate paths in the conversation depending on the customer's response. The conversation path leads the customer to the appropriate resolution for each response. You can add nodes to create branching logic, and specify what the bot should respond with for each variable.
+1. Select a variable in which to save the user response.
 
-1. (Optional) [Save the user response in a variable](authoring-variables.md) to be used later.
+Later, you can add a condition to create branching logic or add nodes to control how the bot responds based on each variable.
 
 > [!TIP]
 > Define synonyms for each option to help the bot determine the correct one if it isn't clear what the user's response should map to.
->
-> 1. Select the menu icon at the top of the **Question** node, and then select **Options for user**.
->
->    :::image type="content" source="media/authoring-create-edit-topics/topics-question-options.png" alt-text="Screenshot of selecting options for users.":::
 >
 > 1. Select the **Synonyms** icon for the option you want to add additional keywords to.
 >
