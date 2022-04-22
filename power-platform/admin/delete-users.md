@@ -49,6 +49,18 @@ It can take from 30 minutes to 6 hours for a user's status to be updated in an e
 > 
 > After the 30-day window, the user account is permanently deleted by an automatic deletion process. If you want to delete the user permanently without waiting for 30 days, you can [permanently delete the user](/azure/active-directory/fundamentals/active-directory-users-restore) using Azure Active Directory (Azure AD) in the Azure portal. 
 
+## Disabled Azure AD user stages
+
+
+|Stage  |Action  |State  |User state  |Azure state​  | Deleted state​  | Action  |User delete in Dataverse  | Content  |
+|---------|---------|---------|---------|---------|---------|---------|---------|---------|
+|1a     | Admin deletes user​        | Soft Deleted​        | Disabled​        | 1 - Soft deleted​ | 0 - Not deleted​  | Kepler disables the user and updates the UPN, email, etc.​  | Not allowed - Delete button is hidden​  | User is soft deleted in Azure AD and can be restored. Once restored the user is automatically re-activated in Dataverse.​  |
+|1b     | Admin restores user        |         |         |  |   |   |   |   |
+|2     | Admin permanently deletes user​        |         |         |  |   |   |   |   |
+|3     |         |         |         |  |   |   |   |   |
+|4     |         |         |         |  |   |   |   |   |
+
+
 ## View the list of disabled users
 
 1. In the Power Platform admin center, select an environment.
