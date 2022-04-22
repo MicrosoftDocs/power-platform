@@ -51,14 +51,13 @@ It can take from 30 minutes to 6 hours for a user's status to be updated in an e
 
 ## Disabled Azure AD user stages
 
-
 |Stage  |Action  |State  |User state  |Azure state​  | Deleted state​  | Action  |User delete in Dataverse  | Content  |
 |---------|---------|---------|---------|---------|---------|---------|---------|---------|
-|1a     | Admin deletes user​        | Soft Deleted​        | Disabled​        | 1 - Soft deleted​ | 0 - Not deleted​  | Kepler disables the user and updates the UPN, email, etc.​  | Not allowed - Delete button is hidden​  | User is soft deleted in Azure AD and can be restored. Once restored the user is automatically re-activated in Dataverse.​  |
-|1b     | Admin restores user        |         |         |  |   |   |   |   |
-|2     | Admin permanently deletes user​        |         |         |  |   |   |   |   |
-|3     |         |         |         |  |   |   |   |   |
-|4     |         |         |         |  |   |   |   |   |
+|1a     | Admin deletes user​        | Soft deleted​        | Disabled​        | 1 - Soft deleted​ | 0 - Not deleted​  | Kepler disables the user and updates the UPN, email, etc.​  | Not allowed - Delete button is hidden​  | User is soft deleted in Azure AD and can be restored. Once restored the user is automatically re-activated in Dataverse.​  |
+|1b     | Admin restores user        | Active​        | Active​        | 1 - Soft deleted​ | 0 - Not deleted​  |Kepler activates user and restores UPN​   | Not allowed - Delete button is hidden​  | N/A​  |
+|2     | Admin permanently deletes user​        | Hard deleted – user no longer exists in Azure AD        | Disabled​        | 0 – Exists​ | 0 - Not deleted ​  | User Details should check if user exists in Azure AD, and if user doesn’t exist, delete is allowed​  | Allowed – Delete button is visible​  | User is hard deleted in Azure AD and cannot be restored. User can now be soft deleted in Dataverse. ​  |
+|3     |         |         | Disabled​        | 0 – Exists​ | 0 - Not deleted ​  | DV admin deletes the user in the Power Platform admin center  | Allowed – Delete button is visible​  | User is soft deleted in Dataverse. User can now be permanently deleted in Dataverse. ​  |
+|4     |         |         | Disabled​        | 2 – NotExists or HardDeleted​ | 1- Soft deleted ​  | Dataverse admin permanently deletes the user in the Power Platform admin center​  | Allowed – Permanently Delete button is visible (by checking Azure State = 2 and Deleted State = 1)​  | User is deleted in Dataverse. User no longer exists in Dataverse, all references to the user in Dataverse in the Audit logs show ‘Not available’. ​  |
 
 
 ## View the list of disabled users
