@@ -114,7 +114,7 @@ The following table reflects quarantine support:
 
 | Power Apps type  | Quarantine support   |
 |------------------|----------------------|
-| Canvas app       | Preview availability |
+| Canvas app       | Generally Available  |
 | Model-driven app | Not supported yet    |
 
 ### Quarantine an app
