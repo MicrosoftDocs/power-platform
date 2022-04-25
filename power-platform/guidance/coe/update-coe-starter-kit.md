@@ -24,10 +24,10 @@ This document is a set of best practices and recommendations for updating the Co
 
 The CoE Starter Kit provides inspiration and a starting point for Power Platform governance. If you're new to the CoE Starter Kit, below are some useful links to help you get started:
 
-- [The CoE Starter Kit](power-platform/guidance/coe/starter-kit)
+- [The CoE Starter Kit](/power-platform/guidance/coe/starter-kit)
 - [Setting up the CoE Starter Kit](/power-platform/guidance/coe/setup)
-- [Installing CoE upgrades](power-platform/guidance/coe/after-setup)
-- [Extending CoE components](power-platform/guidance/coe/extending-components)
+- [Installing CoE upgrades](/power-platform/guidance/coe/after-setup)
+- [Extending CoE components](/power-platform/guidance/coe/extending-components)
 
 ## How is the CoE Starter Kit updated?
 
