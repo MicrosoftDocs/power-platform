@@ -23,7 +23,6 @@ search.app:
 Microsoft provides disaster recovery for production environments of Dynamics 365 software as a service (SaaS) applications for business continuity if there's an Azure region-wide outage. Tenant admins can [deploy a production environment](create-environment.md) of a customer engagement app or Dataverse with appropriate licenses.
 
 ## Geo-secondary replicas back up production environments
-<!-- I don't think this is a great H2 heading, but a heading should go here. Open to suggestions! -->
 
 Microsoft creates a replica of Azure SQL storage and file storage in the secondary region for each [production environment](environments-overview.md) at deployment. These replicas are referred to as [geo-secondary replicas](/azure/best-practices-availability-paired-regions).
 
@@ -37,14 +36,9 @@ To learn more about data protection in non-production environments, see [Back up
 
 Customer engagement apps adhere to the Microsoft business continuity and disaster recovery (BCDR) standard. The standard requires each online service to have a BCDR plan reviewed, updated, and tested at least annually. The Microsoft Cloud Business Continuity and Disaster Recovery Plan Validation Report is available to customers on [Service Trust Portal](https://aka.ms/stp).
 
-As seen in the preceding diagram, Microsoft provisions compute infrastructure so that it can handle the traffic volume if there's an environment or region-level failover, similar to data storage. The following sections describe the types of failovers that are possible and how Microsoft manages service continuity in these situations.
-<!-- Based on the previous sentence, it should be clear in the following sections what the failover types are. It's not really clear at all. The following two paragraphs seem to be saying the same thing. I think it's a little clearer after my edits, but I may have made things worse. Can you please clarify the types of failover and add an H3 heading for each to make scanning easier? -->
-
-### A heading should be here
+As seen in the preceding diagram, Microsoft provisions compute infrastructure so that it can handle the traffic volume if there's an environment or region-level failover, similar to data storage. 
 
 If an outage is caused by faulty hardware or a network interruption, we route the traffic to the secondary region environments. Recovery Point Objective (RPO) is small and could take up to a few seconds or a couple of minutes.
-
-### A heading should be here, too
 
 In the event of an unanticipated region-wide outage, such as a natural disaster that affects the entire Azure region, and Microsoft has determined that the region won't become available within a reasonable amount of time, Microsoft will notify customers and switch over the traffic to route to the secondary environments. In this case, it's possible that customers might experience a data loss of up to 15 minutes, depending on the nature and timing of the outage. Recovery Point Objective (RPO) is small and could take up to a few seconds or couple of minutes.  
 
