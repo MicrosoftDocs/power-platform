@@ -2,7 +2,7 @@
 title: "Customize the web chat canvas"
 description: "Change the name, icon, and color of your bot with CSS and JavaScript styling."
 keywords: "PVA"
-ms.date: 01/25/2022
+ms.date: 04/19/2022
 
 ms.topic: article
 author: iaanw
@@ -53,6 +53,9 @@ You can change the bot's name and icon. This will affect the icon in all channel
 1. Select **Save** to commit your changes.
 
     :::image type="content" source="media/customize-default-canvas/custom-canvas-name-icon.png" alt-text="The bot details pane lets you change the name and icon.":::
+
+> [!IMPORTANT]
+> After updating your bot's icon, it may take up to 24 hours for the new icon to appear everywhere.
 
 ## Retrieve bot ID and tenant ID details
 

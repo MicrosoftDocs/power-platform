@@ -46,6 +46,9 @@ If an outage is caused by faulty hardware or a network interruption, we route th
 
 ### A heading should be here, too
 
+In the event of an unanticipated region-wide outage, such as a natural disaster that affects the entire Azure region, and Microsoft has determined that the region won't become available within a reasonable amount of time, Microsoft will notify customers and switch over the traffic to route to the secondary environments. In this case, it's possible that customers might experience a data loss of up to 15 minutes, depending on the nature and timing of the outage. Recovery Point Objective (RPO) is small and could take up to a few seconds or couple of minutes.  
+
+
 If the outage is region-wide, such as during a natural disaster, we route the traffic to the secondary environments. In this case, it's possible that customers might experience a data loss of up to 15 minutes, depending on the nature and timing of the outage. Recovery Point Objective (RBO) is small and could take up to a few seconds or couple of minutes.
 <!--Again, it's not clear how "this case" is different from the case described in the previous paragraph.-->
 

@@ -1,9 +1,8 @@
 ---
 title: Integrate data into Microsoft Dataverse
 description: Integrate data from multiple sources into Microsoft Dataverse
-
-ms.topic: how-to
-ms.component: cds
+ms.topic: conceptual
+ms.component: pa-admin
 ms.date: 02/01/2021
 ms.subservice: admin
 ms.author: sabinn
