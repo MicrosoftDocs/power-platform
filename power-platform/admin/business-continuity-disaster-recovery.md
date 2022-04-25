@@ -26,7 +26,7 @@ Microsoft provides disaster recovery for production environments of Dynamics 365
 
 Microsoft creates a replica of Azure SQL storage and file storage in the secondary region for each [production environment](environments-overview.md) at deployment. These replicas are referred to as [geo-secondary replicas](/azure/best-practices-availability-paired-regions).
 
-Geo-secondary replicas are kept synchronized with the primary environment through continuous data replication. There's a small lag between the primary data sources and their geo-secondary replicas. Typically, the latency is less than a few minutes.
+Geo-secondary replicas are kept synchronized with the primary environment through continuous data replication. There's a small lag between the primary data sources and their geo-secondary replicas. Typically, the latency is less than a few minutes. More information: [Ensure business continuity and disaster recovery (BCDR): Azure Paired Regions](/azure/best-practices-availability-paired-regions).
 
 :::image type="content" source="media/dataverse-customer-engagement-apps.png" alt-text="Diagram illustrating a geo-secondary replica of data storage and compute infrastructure.":::
 
@@ -42,15 +42,9 @@ If an outage is caused by faulty hardware or a network interruption, we route th
 
 In the event of an unanticipated region-wide outage, such as a natural disaster that affects the entire Azure region, and Microsoft has determined that the region won't become available within a reasonable amount of time, Microsoft will notify customers and switch over the traffic to route to the secondary environments. In this case, it's possible that customers might experience a data loss of up to 15 minutes, depending on the nature and timing of the outage. Recovery Point Objective (RPO) is small and could take up to a few seconds or couple of minutes.  
 
-
-If the outage is region-wide, such as during a natural disaster, we route the traffic to the secondary environments. In this case, it's possible that customers might experience a data loss of up to 15 minutes, depending on the nature and timing of the outage. Recovery Point Objective (RBO) is small and could take up to a few seconds or couple of minutes.
-<!--Again, it's not clear how "this case" is different from the case described in the previous paragraph.-->
-
 Recovery Time Objective (RTO) varies depending on the nature of the outage, and could take up to 4 to 10 hours.
-<!-- Are RBO and RTO well-known industry terms that don't need explaining? If not, a link to an explanatory article would be very helpful here. -->
 
 When Microsoft determines that the primary region is back online and is fully operational, we switch the environments back. Users who are connected to affected systems could experience a brief interruption of up to one minute. The service, including all non-production environments, is fully restored. There's no data loss during the planned failback process.
-<!-- Is "failback" the same as "failover"? If so, it's better to use the same term consistently. -->
 
 ## Exception for Dataverse for Teams
 
@@ -68,5 +62,7 @@ When Microsoft determines that the primary region is back online and is fully op
 ### See also
 
 [Finance and Operations business continuity and disaster recovery](/dynamics365/fin-ops-core/dev-itpro/sysadmin/business-continuity-disaster-recovery)
+
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
