@@ -68,7 +68,7 @@ How to create custom notification for new/ updates to issues and releases:
 1. Either select an existing notification option, or select the option labeled 'Custom'.
 1. In the example below, a custom notification has been created to send alerts for new/ updated issues, releases and security alerts.
 
-![Screenshot of GitHub notification creation](media/coe-starter-kit-notifications.png)
+![Screenshot of GitHub notification creation](/media/coe-starter-kit-notifications.png)
 
 ### Office hours community call
 
@@ -82,7 +82,7 @@ Here are a few things to consider when deciding your update frequency:
 - Does the new release **contain a new feature** that you would like to try out?
 - By **not** updating to the new release mean your current version is three months older than the new version?
 
-Before a release, the CoE Starter Kit team tests any bug fixes or new features against the previous three released versions.  Unfortunately, it means that leaving updates longer than three months could result in unexpected issues when updating.  Useful guidance for installing updates to the CoE Starter Kit [can be found here](power-platform/guidance/coe/after-setup).
+Before a release, the CoE Starter Kit team tests any bug fixes or new features against the previous three released versions.  Unfortunately, it means that leaving updates longer than three months could result in unexpected issues when updating.  Useful guidance for installing updates to the CoE Starter Kit [can be found here](/power-platform/guidance/coe/after-setup).
 
 >[!TIP]
 >Review releases monthly by attending the office hours calls and reading release notes. Create notifications to alert you when interesting updates are made. Try to maintain parity between your testing/ production versions of the CoE Starter Kit and the current release, or within the past three releases.
@@ -124,16 +124,16 @@ If you can see any unmanaged layers, you'll need to remove them prior to updatin
 If you haven't made customizations to the CoE Starter Kit, follow the steps described below:
 
 1. Import the solution to a testing environment
-    1. If [importing to a Production Environment](power-platform/guidance/coe/faq#installing-a-solution-in-a-production-environment) - use the solution file from the download called CenterOfExcellenceCoreComponents_x_x_x_xx_managed.zip
-    1. If [importing to a Dataverse for Teams Environment](power-platform/guidance/coe/faq#installing-a-solution-in-a-dataverse-for-teams-environment) - use the solution file from the download called CenterOfExcellenceCoreComponentsTeams_x_x_x_xx_managed.zip
+    1. If [importing to a Production Environment](/power-platform/guidance/coe/faq#installing-a-solution-in-a-production-environment) - use the solution file from the download called CenterOfExcellenceCoreComponents_x_x_x_xx_managed.zip
+    1. If [importing to a Dataverse for Teams Environment](/power-platform/guidance/coe/faq#installing-a-solution-in-a-dataverse-for-teams-environment) - use the solution file from the download called CenterOfExcellenceCoreComponentsTeams_x_x_x_xx_managed.zip
 
-2. Select **Upgrade** (default). [Solution upgrades](power-platform/alm/solution-concepts-alm#solution-lifecycle) delete components that existed in the solution but have been removed.
+2. Select **Upgrade** (default). [Solution upgrades](/power-platform/alm/solution-concepts-alm#solution-lifecycle) delete components that existed in the solution but have been removed.
 
     ![Screenshot of upgrade dialogue in import solution wizard](media/coe-upgrade1.png)
 
 3. If the upgrade adds new environment variables, or connection references, establish connections and update environment variables.  The expected values will be in our setup instructions.
 
-4. The upgrade can take **up to 15 minutes**. During the upgrade, the new version is installed first and then the old version is deleted.  Whilst the upgrade is processing, you may see two solutions with the same name in your solution explorer.  Check the [solution history](powerapps/maker/data-platform/solution-history#view-solution-history) to view the progress of the upgrade.
+4. The upgrade can take **up to 15 minutes**. During the upgrade, the new version is installed first and then the old version is deleted.  Whilst the upgrade is processing, you may see two solutions with the same name in your solution explorer.  Check the [solution history](/powerapps/maker/data-platform/solution-history#view-solution-history) to view the progress of the upgrade.
 
 5. Checking the solution history will also show you if the upgrade has failed and why.
 
@@ -141,9 +141,9 @@ If you haven't made customizations to the CoE Starter Kit, follow the steps desc
 
 ### If you've made customizations
 
-Any cloud flow, app or table that you've changed in the solution won't receive updates until you remove the unmanaged layer.
+Any cloud flow, app or table that you've changed in the solution won't receive updates until you remove the unmanaged layer. Read our recommendations for [extending the CoE Starter Kit](/power-platform/guidance/coe/extending-components) to avoid creating unmanaged layers.
 
-Removing unmanaged layers:
+**Removing unmanaged layers:**
 
 >[!IMPORTANT]
 >Changing any flow, app or table in the solution introduces an unmanaged layer. Components that have been changed won't receive any updates until the unmanaged layer has been removed.
@@ -156,15 +156,13 @@ Removing unmanaged layers:
 
 ![Remove unmanaged layer link](media/upgrade2.png)
 
-Read our recommendations for [extending the CoE Starter Kit](power-platform/guidance/coe/extending-components) to avoid creating unmanaged layers.
-
 3. Import the solution to a testing environment
-    1. If [importing to a Production Environment](power-platform/guidance/coe/faq#installing-a-solution-in-a-production-environment) - use the solution file from the download called CenterOfExcellenceCoreComponents_x_x_x_xx_managed.zip
-    1. If [importing to a Dataverse for Teams Environment](power-platform/guidance/coe/faq#installing-a-solution-in-a-dataverse-for-teams-environment) - use the solution file from the download called CenterOfExcellenceCoreComponentsTeams_x_x_x_xx_managed.zip
+    1. If [importing to a Production Environment](/power-platform/guidance/coe/faq#installing-a-solution-in-a-production-environment) - use the solution file from the download called CenterOfExcellenceCoreComponents_x_x_x_xx_managed.zip
+    1. If [importing to a Dataverse for Teams Environment](/power-platform/guidance/coe/faq#installing-a-solution-in-a-dataverse-for-teams-environment) - use the solution file from the download called CenterOfExcellenceCoreComponentsTeams_x_x_x_xx_managed.zip
 
 If the upgrade adds new environment variables, or connection references, establish connections and update environment variables.  The expected values will be in our setup instructions.
 
-4. The upgrade can take **up to 15 minutes**. During the upgrade, the new version is installed first and then the old version is deleted.  Whilst the upgrade is processing, you may see two solutions with the same name in your solution explorer.  Check the [solution history](powerapps/maker/data-platform/solution-history#view-solution-history) to view the progress of the upgrade.
+4. The upgrade can take **up to 15 minutes**. During the upgrade, the new version is installed first and then the old version is deleted.  Whilst the upgrade is processing, you may see two solutions with the same name in your solution explorer.  Check the [solution history](/powerapps/maker/data-platform/solution-history#view-solution-history) to view the progress of the upgrade.
 
 5. Checking the solution history will also show you if the upgrade has failed and why.
 
@@ -198,23 +196,23 @@ When you've completed your functional tests, you should run final tests with use
 
 ### If you have an issue
 
-If you find a bug or an issue when testing you can [raise a bug here](https://github.com/microsoft/coe-starter-kit/issues/new?assignees=Jenefer-Monroe&labels=coe-starter-kit%2Cbug&template=1-coe-starter-kit-bug.yml&title=%5BCoE+Starter+Kit+-+BUG%5D+ISSUE+TITLE) ensuring to provide the [solution operation error](powerapps/maker/data-platform/solution-history#view-solution-operation-error-details) details.
+If you find a bug or an issue when testing you can [raise a bug here](https://github.com/microsoft/coe-starter-kit/issues/new?assignees=Jenefer-Monroe&labels=coe-starter-kit%2Cbug&template=1-coe-starter-kit-bug.yml&title=%5BCoE+Starter+Kit+-+BUG%5D+ISSUE+TITLE) ensuring to provide the [solution operation error](/powerapps/maker/data-platform/solution-history#view-solution-operation-error-details) details.
 
 ## Application Lifecycle Management
 
-We don't go deep into application lifecycle management here. If you're interested in recommendations and scenarios, review the [overview of application lifecycle management with Microsoft Power Platform](power-platform/alm/overview-alm).  ALM covers many disciplines. Here we touch lightly on the discipline of deploying solutions.
+We don't go deep into application lifecycle management here. If you're interested in recommendations and scenarios, review the [overview of application lifecycle management with Microsoft Power Platform](/power-platform/alm/overview-alm).  ALM covers many disciplines. Here we touch lightly on the discipline of deploying solutions.
 
 ### ALM Accelerator
 
-The [ALM Accelerator](blog/introducing-the-alm-accelerator-for-power-platform/#:~:text=What%20is%20the%20ALM%20Accelerator%3F%20The%20ALM%20Accelerator,of%20Azure%20DevOps%20Pipelines%20and%20Git%20source%20control.?msclkid=36a6686fc15511ec9c253d308c10c711) is a reference implementation that sits on top of Azure Pipelines and Git source control.  
+The [ALM Accelerator](/blog/introducing-the-alm-accelerator-for-power-platform/#:~:text=What%20is%20the%20ALM%20Accelerator%3F%20The%20ALM%20Accelerator,of%20Azure%20DevOps%20Pipelines%20and%20Git%20source%20control.?msclkid=36a6686fc15511ec9c253d308c10c711) is a reference implementation that sits on top of Azure Pipelines and Git source control.  
 
 The accelerator includes a canvas app that provides a simplified interface for makers to regularly export components in solutions to source control, and create deployment requests.
 
 ### Microsoft Power Platform Build Tools
 
-The [Microsoft Power Platform Build Tools for Azure DevOps Services](power-platform/alm/devops-build-tools?msclkid=147921b0c15611ecbb1fdca93966d349) automate common build and deployment tasks. They can be used with any other Azure DevOps tasks to compose build and release pipelines
+The [Microsoft Power Platform Build Tools for Azure DevOps Services](/power-platform/alm/devops-build-tools?msclkid=147921b0c15611ecbb1fdca93966d349) automate common build and deployment tasks. They can be used with any other Azure DevOps tasks to compose build and release pipelines
 
-[Download](https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.PowerPlatform-BuildTools&msclkid=d4b015ebc16e11ecb673fbfc869800f3) the tools, and refer to the [tasks documentation](power-platform/alm/devops-build-tool-tasks) to get started.
+[Download](https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.PowerPlatform-BuildTools&msclkid=d4b015ebc16e11ecb673fbfc869800f3) the tools, and refer to the [tasks documentation](/power-platform/alm/devops-build-tool-tasks) to get started.
 
 ## Summary
 
@@ -234,6 +232,6 @@ At least every three months to avoid unplanned/ unexpected issues. Or, if a rele
 
 ### I want to customize the CoE Starter Kit, what are the best practices?
 
-Updates to the CoE Starter Kit should be completed following the best practices outlined in [this document](power-platform/guidance/coe/extending-components).
+Updates to the CoE Starter Kit should be completed following the best practices outlined in [this document](/power-platform/guidance/coe/extending-components).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
