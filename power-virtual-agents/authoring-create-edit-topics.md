@@ -141,6 +141,8 @@ Additionally, you can **Add a condition** when you insert a node after a **Quest
 
 1. Enter the question phrase in **Ask a question**.
 
+1. Optionally, you can add [variations of the question](#message-variations).
+
 1. In the **Identify** list, select an option for the user's response.
 
    The options determine what the bot should listen for when the user responds. For more information, see [Use entities in a conversation](advanced-entities-slot-filling.md#use-entities-in-a-conversation).
@@ -180,15 +182,7 @@ If you've configured hand-off to omnichannel with voice-based capabilities, you'
 
     You can apply some basic formatting, such as bold, italics, and numbering. You can also [use variables](authoring-variables.md) that you defined elsewhere in your bot conversation.
 
-You can also add additional message variations. When you do this, the bot will respond randomly with one of the variations.
-
-1. Select **Add** and then **Message variation**. This will add an additional text box for a message variation.
-
-    :::image type="content" source="media/authoring-create-edit-topics/message-node-variation.png" alt-text="Select the synonyms icon." border="false":::
-
-1. Enter what you want the bot to say. You can apply some basic formatting, such as bold, italics, and numbering.
-
-1. Repeat to add as many variations as you like.
+1. Optionally, you can add [message variations](#message-variations).
 
 #### Redirect to another topic
 
@@ -240,6 +234,18 @@ You can also have the conversation [handed over to a live agent](advanced-hand-o
 1. Select the variable that will determine whether the bot conversation should branch at this point.
 
     For example, if you've set up [user authentication](advanced-end-user-authentication.md), you might specify a different message if the user is signed in (which may have happened earlier in the conversation).
+
+### Message variations
+
+Some nodes allow you to add message variations. When you do this, the bot will respond randomly with one of the variations.
+
+1. Select **Add** and then **Message variation**. This will add an additional text box for a message variation.
+
+    :::image type="content" source="media/authoring-create-edit-topics/message-node-variation.png" alt-text="Select the synonyms icon." border="false":::
+
+1. Enter what you want the bot to say. You can apply some basic formatting, such as bold, italics, and numbering.
+
+1. Repeat to add as many variations as you like.
 
 ### Delete nodes
 
