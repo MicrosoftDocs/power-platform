@@ -2,7 +2,7 @@
 title: "Use chatbot variables to carry content across topics"
 description: "Global variables can be used to store and retrieve information across multiple topics within the same bot and user session"
 keywords: "PVA"
-ms.date: 3/19/2020
+ms.date: 5/10/2022
 
 ms.topic: article
 author: iaanw

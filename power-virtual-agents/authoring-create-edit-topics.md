@@ -2,7 +2,7 @@
 title: Use topics to design a chatbot conversation
 description: Use conversation topics in the Power Virtual Agents authoring canvas for an intuitive, no-code way to create a bot that can help answer user questions, perform actions, and solve issues.
 keywords: "PVA"
-ms.date: 04/01/2022
+ms.date: 05/10/2022
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
