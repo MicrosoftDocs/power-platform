@@ -217,11 +217,13 @@ You can also have the conversation [handed over to a live agent](advanced-hand-o
 
 #### Add a condition
 
-1. To add branching logic based on [variables](authoring-variables.md), select **+** to add a node, select **Add a condition**, and then select **Branch based on a condition**.
+1. To add branching logic based on [variables](authoring-variables.md), select **+** to add a node, select **Add a condition**.
 
-1. Select the variable that will determine whether the bot conversation should branch at this point.
+1. In the first condition node, select the variable and condition that will determine how the bot conversation should branch at this point.
 
     For example, if you've set up [user authentication](advanced-end-user-authentication.md), you might specify a different message if the user is signed in (which may have happened earlier in the conversation).
+
+1. Use the **+** that precedes the condition, then **Add a condition** to add more branches.
 
 ### Delete nodes
 
