@@ -117,7 +117,7 @@ The Power Automate Inventory report offers a complete catalog of Cloud flows dis
 |Level  |Filter  |Description  |
 |---------|---------|---------|
 |App     | Last opened         | Used to filter results based on ‘Last run’ date         |
-|Environment     | Name        | Friendly name used to identify a given Environment        |
+|Environment     | Name        | Friendly name used to identify a given environment        |
 |     | Type        | Type of environments to include in the current view         |
 |     | Region         | Global regions hosting environments          |
 
