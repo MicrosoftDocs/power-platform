@@ -12,8 +12,7 @@ manager: shellyha
 ms.custom: authoring, ceX
 ms.collection: virtual-agent
 ---
-<!-- FIXME: global search for "bot variables" -->
-<!-- FIXME: delete unused images -->
+
 # Use variables
 
 Select the version of Power Virtual Agents you're using here:
@@ -33,47 +32,59 @@ You can also pass variables to [Power Automate](advanced-flow.md) and [Bot Frame
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 
-## Entity and variable type
+## Variable types
 
-Power Virtual Agents uses [entities](advanced-entities-slot-filling.md) to identify a specific type of information from a user's responses. A variable type is associated with the identified information when it's saved. The variable type is analogous with the entity.
+A variable is associated with a **type**. The type determines what values the variable can contain and the operators that you can use when you construct a logical expression with the corresponding variable.
 
-<!-- FIXME: variable types are now separate from entities as you can set array and object types, which do not have an entity equivalents -->
+<!-- best viewed without wordwrap -->
+| Type    | Description                                                                          | Examples                                                                                                                        |
+| ------- | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------- |
+| String  | A sequence of characters used to represent text.                                     | `hi` `hello world!` `chatbot`                                                                                                   |
+| Boolean | A logical value that can only be `true` or `false`.                                  | Only `true` or `false`                                                                                                          |
+| Number  | Any real number.                                                                     | `1` `532` `5.258` `-9201`                                                                                                       |
+| Table   | A list of any number of values, but all values must the same type.                   | `[1]` `[45, 8, 2]`<br>`["cats", "dogs"]`<br>`[{ id: 1 }, { id: 4 }]`                                                            |
+| Record  | A collection of name-value pairs that allow values of any type, even nested records. | `{ id: 1 }` `{ message: "hello" }`<br>`{ color: "red", data: [1, 0, 0] }`<br>`{ name: "John", info: { age: 25, weight: 175 } }` |
 
-Each entity or variable type maps to a base type, as listed in the following table. The base type determines the operators that you can use when you construct a logical expression with the corresponding variable. It also determines whether you can feed a variable to a [flow](advanced-flow.md) or [Bot Framework skill](/azure/bot-service/bot-builder-skills-overview?view=azure-bot-service-4.0&preserve-view=true) as an input parameter.
+A variable's type is set when its created, based on the value it is first assigned.
 
-For example, a **boolean** base type maps to an operator "is equal to" with possible values being True or False. A **number** base type gives you numeric operators such as "is equal to," "is greater than," or "is greater than or equal to," and so on.
+Variables can't be assigned values from other types. For example, a number variable cannot be assigned the string value `apples`.
 
- | Entity                  | Variable Base Type |
- | ----------------------- | ------------------ |
- | Multiple choice options | String             |
- | User's entire response  | String             |
- | Age                     | Number             |
- | Boolean                 | Boolean            |
- | City                    | String             |
- | Color                   | String             |
- | Continent               | String             |
- | Country or region       | String             |
- | Date and time           | String             |
- | Duration                | String             |
- | Email                   | String             |
- | Event                   | String             |
- | Language                | String             |
- | Money                   | String             |
- | Number                  | String             |
- | Ordinal                 | String             |
- | Organization            | String             |
- | Percentage              | Number             |
- | Person name             | String             |
- | Phone number            | String             |
- | Point of interest       | String             |
- | Speed                   | Number             |
- | State                   | String             |
- | Street address          | String             |
- | Temperature             | Number             |
- | URL                     | String             |
- | Weight                  | Number             |
- | Zip code                | String             |
- | Custom entity           | String             |
+## Entities
+
+Power Virtual Agents uses [entities](advanced-entities-slot-filling.md) to identify a specific type of information from a user's responses. Each entity maps to a **base type**, as listed in the following table.
+
+| Entity                  | Variable Base Type |
+| ----------------------- | ------------------ |
+| Multiple choice options | String             |
+| User's entire response  | String             |
+| Age                     | Number             |
+| Boolean                 | Boolean            |
+| City                    | String             |
+| Color                   | String             |
+| Continent               | String             |
+| Country or region       | String             |
+| Date and time           | String             |
+| Duration                | String             |
+| Email                   | String             |
+| Event                   | String             |
+| Integer                 | Integer            |
+| Language                | String             |
+| Money                   | Number             |
+| Number                  | Number             |
+| Ordinal                 | Number             |
+| Organization            | String             |
+| Percentage              | Number             |
+| Person name             | String             |
+| Phone number            | String             |
+| Point of interest       | String             |
+| Speed                   | Number             |
+| State                   | String             |
+| Street address          | String             |
+| Temperature             | Number             |
+| URL                     | String             |
+| Weight                  | Number             |
+| Zip code                | String             |
+| Custom entity           | String             |
 
 ## Create a variable
 
@@ -99,8 +110,12 @@ Usually you'll use a [question node](authoring-create-edit-topics.md#ask-a-quest
 
 1. For **Set variable**, choose or create a [new variable](#create-a-variable).
 
-    <!-- FIXME: link to powerfx -->
-1. For **To value**, directly enter a value, select another variable, or use a [PowerFX equation]().
+    <!-- FIXME: link to powerfx doc -->
+1. For **To value**, directly enter a value, select another variable, or use a [PowerFX formula]().
+
+<!-- FIXME: link to power fx section on variable types -->
+> [!IMPORTANT]
+> Values entered directly into the **To value** box will always be treated as a string. To set a specific type, use a [PowerFX formula]().
 
 ## Use literal values
 
