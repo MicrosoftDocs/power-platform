@@ -40,6 +40,7 @@ Power Apps reports provide insights into tenant and environment usage and invent
 > The service only starts collecting the data visualized in the Usage report when the feature is enabled. It can take 24 to 36 hours to reflect service activities from the previous day.
 
 **Report metrics**
+
 |Calculation  |Description  |
 |---------|---------|
 |Unique users     | Unique users included in the current view        |
@@ -49,6 +50,7 @@ Power Apps reports provide insights into tenant and environment usage and invent
 |Environments     | Environments included in the current view        |
 
 **Report filters**
+
 |Scope  |Filter  |Description  |
 |---------|---------|---------|
 |Environment     | Name        | Friendly name used to identify a given environment        |
@@ -72,6 +74,7 @@ The Power Apps Maker Activity report provide insights into tenant and environmen
 > The service only starts collecting the data visualized in the Maker Activity report when the feature is enabled. It can take up to 12 hours to reflect service activities from the previous day.
 
 **Report metrics**
+
 |Calculation  |Description  |
 |---------|---------|
 |Active apps    | Count of Power Apps with activity logged in the last 30 days       |
@@ -81,6 +84,7 @@ The Power Apps Maker Activity report provide insights into tenant and environmen
 |Environments     | Environments included in the current view       |
 
 **Report filters**
+
 |Scope  |Filter  |Description  |
 |---------|---------|---------|
 |Environment     | Name        | Friendly name used to identify a given environment        |
@@ -104,6 +108,7 @@ The Power Apps Inventory report offers a complete catalog of Power Apps distribu
 > Depending on the size of the organization, it can take up to 2 hours to initially populate the data sets backing the Inventory report. 
 
 **Report metrics**
+
 |Calculation  |Description  |
 |---------|---------|
 |Apps    | Count of Power Apps included in the current view      |
@@ -113,6 +118,7 @@ The Power Apps Inventory report offers a complete catalog of Power Apps distribu
 |Connections      | Count of unique connections referenced within the current view      |
 
 **Report filters**
+
 |Level  |Filter  |Description  |
 |---------|---------|---------|
 |App     | Last opened        | Used to filter results based on ‘Last Opened’ date         |

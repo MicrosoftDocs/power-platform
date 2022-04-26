@@ -41,6 +41,7 @@ Power Automate reports provide insights into tenant and environment usage and in
 **Report metrics**
 
 |Calculation  |Description  |
+|---------|---------|
 |Total flows      | Count of Cloud flows with usage events in the past 30 days        |
 |Total runs      | Total number of Cloud flow runs initiated in the past 30 days         |
 |Successful runs      | Count of successful Cloud flow runs completed in the past 30 days        |
@@ -70,6 +71,7 @@ The Power Automate report provides insights into the activities of citizen autho
 > The service only starts collecting the data visualized in the Maker Activity report when the feature is enabled. It can take up to 12 hours to reflect service activities from the previous day.
 
 **Report metrics**
+
 |Calculation  |Description  |
 |---------|---------|
 |Active flows      | Count of Cloud flows with activity logged in the last 30 days        |
@@ -79,6 +81,7 @@ The Power Automate report provides insights into the activities of citizen autho
 |Environments     | Environments included in the current view        |
 
 **Report filters**
+
 |Scope  |Filter  |Description  |
 |---------|---------|---------|
 |Environment     | Name        | Friendly name used to identify a given environment        |
@@ -100,6 +103,7 @@ The Power Automate Inventory report offers a complete catalog of Cloud flows dis
 > Depending on the size of the organization, it can take up to 2 hours to initially populate the data sets backing the Inventory report.
 
 **Report metrics**
+
 |Calculation  |Description  |
 |---------|---------|
 |Flows     | Count of Cloud flows included in the current view       |
@@ -109,6 +113,7 @@ The Power Automate Inventory report offers a complete catalog of Cloud flows dis
 |Connections      | Count of unique connections referenced within the current view         |
 
 **Report filters**
+
 |Level  |Filter  |Description  |
 |---------|---------|---------|
 |App     | Last opened         | Used to filter results based on ‘Last run’ date         |
