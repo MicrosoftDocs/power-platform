@@ -146,7 +146,6 @@ To receive values from other topics, set the variable's property:
 1. Select **+ Add input for destination topic**.
 
     :::image type="content" source="media/authoring-variables/authoring-subtopic-pass-variable-step1.png" alt-text="Screenshot of the authoring canvas showing adding input for the destination topic.":::
-<!-- Please correct the misspelled "Restautant" in this screenshot and any others that show the same topic. :) -->
 
 1. Select a variable in the redirected topic that you want to pass the variable to.
 
