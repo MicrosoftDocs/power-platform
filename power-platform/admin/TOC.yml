@@ -545,7 +545,7 @@
           href: analytics-flow.md
         - name: Analytics for UI flows
           href: analytics-ui-flow.md 
-      - name: Reports (preview)
+      - name: Reports
         items:
         - name: "Tenant-level analytics (default)" 
           href: tenant-level-analytics.md
@@ -564,7 +564,7 @@
           href: self-service-analytics-schema-definition.md
         - name: "Create custom dashboards using Power Apps inventory and usage data"
           href: build-custom-reports.md
-      - name: "Analyze telemetry with Application Insights (preview)"
+      - name: "Analyze telemetry with Application Insights"
         items:
         - name: "Model-driven apps and Microsoft Dataverse telemetry"
           href: analyze-telemetry.md
