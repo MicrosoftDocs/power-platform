@@ -129,12 +129,6 @@ When you add a node after the **Trigger Phrases** node or between **Message node
 
 :::image type="content" source="media/authoring-create-edit-topics/topics-node-after-triggers.png" alt-text="Screenshot of adding a node between existing nodes from the options.":::
 
-After the last node, you can also:
-
-- End the conversation
-
-Additionally, you can **Add a condition** when you insert a node after a **Question** node.
-
 #### Ask a question
 
 1. To have the bot ask a question and get a response from the user, select **+** to add a node, and then select **Ask a question** to add a new **Question** node.
