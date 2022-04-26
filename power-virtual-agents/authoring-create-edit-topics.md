@@ -231,8 +231,7 @@ You can also have the conversation [handed over to a live agent](advanced-hand-o
 
     For example, if you've set up [user authentication](advanced-end-user-authentication.md), you might specify a different message if the user is signed in (which may have happened earlier in the conversation).
 
-<!-- FIXME: is this the name they ended up with? -->
-#### Set a variable
+#### Set a variable value
 
 <!-- FIXME: short summary of node -->
 See [Set variable value](authoring-variables.md#set-a-variable).

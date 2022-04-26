@@ -12,7 +12,8 @@ manager: shellyha
 ms.custom: authoring, ceX
 ms.collection: virtual-agent
 ---
-
+<!-- FIXME: global search for "bot variables" -->
+<!-- FIXME: delete unused images -->
 # Use variables
 
 Select the version of Power Virtual Agents you're using here:
@@ -22,9 +23,11 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](authoring-variables.md)
 > - [Power Virtual Agents app in Microsoft Teams](teams/authoring-variables-teams.md)
 
-Save customers' responses in a bot conversation to variables and reuse them later in the conversation.
+Save customers' responses in a bot conversation to variables and reuse them later in the conversation. Or, use variables to create logical expressions that dynamically route the customer down different conversation paths.
 
-For example, save a customer's name in a variable called `UserName` and the bot can address the customer by name as the conversation continues. Or, use variables to create logical expressions that dynamically route the customer down different conversation paths. You can also feed variables to [Power Automate](advanced-flow.md) and [Bot Framework skills](/azure/bot-service/bot-builder-skills-overview?view=azure-bot-service-4.0&preserve-view=true) as input parameters, and save the output results from those actions.  
+For example, save a customer's name in a variable called `UserName` and the bot can address the customer by name as the conversation continues.
+
+You can also pass variables to [Power Automate](advanced-flow.md) and [Bot Framework skills](/azure/bot-service/bot-builder-skills-overview?view=azure-bot-service-4.0&preserve-view=true) as input parameters, and save the output results from those actions.  
 
 ## Prerequisites
 
@@ -74,51 +77,68 @@ For example, a **boolean** base type maps to an operator "is equal to" with poss
 
 ## Create a variable
 
-<!-- FIXME: can users create variables without adding a question node now? -->
-In the bot authoring canvas, add a question node. A variable is created automatically in the node.
+Variables can be created in any node that prompts you to select a variable, such as the **Set Variable Value** node.
 
-1. Go to your bot's [**Topics page**](./authoring-create-edit-topics.md) and open the topic you want to add a variable to.
+1. Select **+** to add a node, select **Set a variable value**.
 
-1. Select the plus (**+**) icon, and then select **Ask a question**.
+1. In the **Set variable** box, select the **>** arrow.
 
-   :::image type="content" source="media/authoring-variables/handoff-add-node.png" alt-text="Screenshot of adding a node.":::
+    :::image type="content" source="media/authoring-variables/create-new-variable-button.png" alt-text="Create a variable.":::
 
-    A variable that contains the user's response is automatically created.
+1. In the flyout menu that appears, select **Create a new variable**.
 
-    :::image type="content" source="media/authoring-variables/Automatically_created_variable_(draft).PNG" alt-text="Create a variable.":::
+    :::image type="content" source="media/authoring-variables/create-variable.png" alt-text="Create a variable.":::
 
-### Pick an entity to use
-
-By default, a question node is created with multiple-choice options. To use a different prebuilt or custom entity, choose what to identify from the node.
-
-:::image type="content" source="media/authoring-variables/Pick_an_entity_(draft).PNG" alt-text="Screenshot of selecting an entity.":::
+A new variable will be created with a type that's appropriate for its usage. Use the [variable properties pane](#variable-properties-pane) to rename it.
 
 ## Set a variable
-<!-- FIXME: confirm steps in UI -->
-1. To assign an arbitrary value to a [variable](authoring-variables.md), select **+** to add a node, select **Set a variable**.
 
-    <!-- FIXME: link to creation steps in authoring-variables.md -->
-1. For **Set variable**, choose or create a [new variable]().
+Usually you'll use a [question node](authoring-create-edit-topics.md#ask-a-question) to save user input to a variable, but there may be situations where you want to set the value manually.
 
-1. For **To value**, directly enter a value, select another variable, or use a PowerFX equation.
+1. To assign a value to a [variable](authoring-variables.md), select **+** to add a node, select **Set a variable value**.
 
-## Rename a variable
+1. For **Set variable**, choose or create a [new variable](#create-a-variable).
 
-Automatically created variables come with a default name. To rename a variable, select the variable name, enter a new name, and select **Done**.
+    <!-- FIXME: link to powerfx -->
+1. For **To value**, directly enter a value, select another variable, or use a [PowerFX equation]().
 
-:::image type="content" source="media/authoring-variables/Rename_a_variable_(draft).PNG" alt-text="Screenshot of renaming a variable.":::
+## Use literal values
+
+You can type a literal value into any variable input field instead of selecting a variable from the menu.
+
+:::image type="content" source="media/authoring-variables/set-variable-to-literal.png" alt-text="Screenshot showing the use of literal values for action inputs.":::
+
+:::image type="content" source="media/authoring-variables/set-redirect-variable-to-literal.png" alt-text="Screenshot of the authoring canvas showing literal input on an input variable in a redirect node.":::
+
+## Variables pane
+
+To open the variables pane, in the topic's menu bar, select **Variables**.
+
+:::image type="content" source="media/authoring-variables/open-variable-button.png" alt-text="Screenshot of the variables button.":::
+
+For each of the variables in the topic, select whether you want the values to be passed, received, or both between topics.
+
+:::image type="content" source="media/authoring-variables/variables-pane.png" alt-text="Screenshot of the variables pane.":::
+
+## Variable properties pane
+
+To open the variable properties pane, select a variable in the [variables pane](#variables-pane).
+
+You can also open the variable properties pane by selecting a variable in any node.
+
+:::image type="content" source="media/authoring-variables/select-a-variable.png" alt-text="Screenshot of selecting a variable to open the variable properties pane.":::
+
+In the variable properties pane you can rename a variable, see where a variable is used, or convert a variable to a [global variable](authoring-variables-bot.md).
+
+:::image type="content" source="media/authoring-variables/variable-properties.png" alt-text="Screenshot of the properties pane.":::
 
 ## Use variables in action nodes
 
-When you use a variable in an action node, if its base type matches a parameter type that's specified for a flow or Bot Framework skill, you can feed it to that parameter. The output from action nodes generates new variables.  
+<!-- FIXME: does this still work this way?  -->
+
+When you use a variable in an action node, if its base type matches a parameter type that's specified for a flow or Bot Framework skill, you can pass it to that parameter. The output from action nodes generates new variables.  
 
 :::image type="content" source="media/authoring-variables/User_a_variable_in_Skills(draft).PNG" alt-text="Screenshot of using an entity in an action node.":::
-
-## Use literal values in action nodes
-
-You can type a literal value into the variable input field in an action node instead of selecting a variable from the menu.
-
-:::image type="content" source="media/authoring-variables/LiteralActionInput.png" alt-text="Screenshot showing the use of literal values for action inputs.":::
 
 ## Passing variables between topics
 
@@ -129,7 +149,7 @@ When you redirect to other topics, you can pass values into variables in the des
 
 ### Receive values from other topics
 
-When a topic defines a variable (for example, by a question node), the bot asks the user the question to fill in the variable’s value. If the bot has already acquired the value, there's no reason to ask the question again. In these cases, you can define the variable as **Receive values from other topics**. When another topic redirects to this one, it can pass a variable (or [literal values](#using-literal-values-on-variable-inputs)) into this variable and skip the question. The experience for the user talking to the bot is seamless.
+When a topic defines a variable (for example, by a question node), the bot asks the user the question to fill in the variable’s value. If the bot has already acquired the value, there's no reason to ask the question again. In these cases, you can define the variable as **Receive values from other topics**. When another topic redirects to this one, it can pass a variable (or [literal values](#use-literal-values)) into this variable and skip the question. The experience for the user talking to the bot is seamless.
 
 To receive values from other topics, set the variable's property:
 
@@ -180,24 +200,6 @@ To return a variable to the original topic, set the variable's property:
     The variable that's being returned to the topic is shown in the redirected topic. Use the returned variable in your topic.
 
     :::image type="content" source="media/authoring-variables/authoring-subtopic-pass-variable-pass-receive.png" alt-text="Screenshot of the authoring canvas showing a redirected topic with both values input and returned.":::
-
-### Using the Variables pane
-
-Use the **Variables** pane to select the receive or return status of multiple variables at once.
-
-1. On the topic's menu bar, select **Variables**.
-
-    :::image type="content" source="media/authoring-variables/authoring-subtopic-pass-variable-variables-bar.png" alt-text="Screenshot of the authoring canvas showing the Variables pane icon.":::
-
-1. For each of the variables in the topic, select whether you want the values to be passed, received, or both between topics.
-
-    :::image type="content" source="media/authoring-variables/authoring-subtopic-pass-variable-variable-return-value.png" alt-text="Screenshot of the authoring canvas showing the Variable pane with two variables and a combination of input and output selected.":::
-
-### Using literal values on variable inputs
-
-You can pass literal values as well as variables to a topic. To pass a literal value, type the value you want to use as the input instead of selecting a variable.
-
-:::image type="content" source="media/authoring-variables/authoring-subtopic-pass-variable-literal-value.png" alt-text="Screenshot of the authoring canvas showing literal input on an input variable in a redirect node.":::
 
 ## Related links
 
