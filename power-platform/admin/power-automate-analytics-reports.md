@@ -53,8 +53,8 @@ Power Automate reports provide insights into tenant and environment usage and in
 |Scope  |Filter  |Description  |
 |---------|---------|---------|
 |Environment     | Name        | Friendly name used to identify a given environment        |
-| &nbsp;    | Type        | Type of environments to include in the current view        |
-| &nbsp;     | Region        | Global regions hosting environments        |
+|     | Type        | Type of environments to include in the current view        |
+|     | Region        | Global regions hosting environments        |
 
 ## Power Automate - Maker Activity report
 
