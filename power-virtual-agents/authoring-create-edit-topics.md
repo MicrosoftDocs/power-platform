@@ -120,10 +120,12 @@ You have several options when you add a node. Each option has a specific node or
 
 When you add a node after the **Trigger Phrases** node or between **Message nodes**, you can:
 
+- Send a message
 - Ask a question
+- Add a condition
+- Set a variable value
+- Manage topics
 - Call an action
-- Show a message
-- Go to another topic
 
 :::image type="content" source="media/authoring-create-edit-topics/topics-node-after-triggers.png" alt-text="Screenshot of adding a node between existing nodes from the options.":::
 
@@ -156,7 +158,7 @@ Later, you can add a condition to create branching logic or add nodes to control
 > [!TIP]
 > Define synonyms for each option to help the bot determine the correct one if it isn't clear what the user's response should map to.
 >
-> 1. Select the **Synonyms** icon for the option you want to add additional keywords to.
+> 1. Select the **Edit synonyms** icon for the option you want to add additional keywords to.
 >
 >    :::image type="content" source="media/authoring-create-edit-topics/topics-question-synonyms.png" alt-text="Screenshot highlighting the synonyms icon.":::
 >
