@@ -122,7 +122,7 @@ When you add a node after the **Trigger Phrases** node or between **Message node
 
 - Ask a question
 - Call an action
-- Show a message
+- Send a message
 - Go to another topic
 
 :::image type="content" source="media/authoring-create-edit-topics/topics-node-after-triggers.png" alt-text="Screenshot of adding a node between existing nodes from the options.":::
@@ -172,9 +172,9 @@ To [call Power Automate Flows](advanced-flow.md) and [insert authentication node
 
 If you've configured hand-off to omnichannel with voice-based capabilities, you'll see [more actions](configuration-hand-off-omnichannel.md#voice-based-capabilities).
 
-#### Show a message
+#### Send a message
 
-1. To specify a response from the bot, select **+** to add a node, and then select **Show a message** to add a new **Message** node.
+1. To specify a response from the bot, select **+** to add a node, and then select **Send a message** to add a new **Message** node.
 
 1. Enter what you want the bot to say in the text box.
 
@@ -182,13 +182,10 @@ If you've configured hand-off to omnichannel with voice-based capabilities, you'
 
 You can also add additional message variations. When you do this, the bot will respond randomly with one of the variations.
 
-<!-- FIXME: verify steps -->
 1. Select **Add** and then **Message variation**. This will add an additional text box for a message variation.
 
-    <!-- FIXME: replace placeholder with real screenshot -->
     :::image type="content" source="media/authoring-create-edit-topics/message-node-variation.png" alt-text="Select the synonyms icon." border="false":::
 
-    <!-- FIXME: do variations also allow basic formatting -->
 1. Enter what you want the bot to say. You can apply some basic formatting, such as bold, italics, and numbering.
 
 1. Repeat to add as many variations as you like.
