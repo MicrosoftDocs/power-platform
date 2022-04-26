@@ -39,6 +39,7 @@ Power Automate reports provide insights into tenant and environment usage and in
 > The service only starts collecting the data visualized in the Usage report when the feature is enabled. It can take up to 12 hours to reflect service activities from the previous day.
 
 **Report metrics**
+
 |Calculation  |Description  |
 |Total flows      | Count of Cloud flows with usage events in the past 30 days        |
 |Total runs      | Total number of Cloud flow runs initiated in the past 30 days         |
@@ -47,6 +48,7 @@ Power Automate reports provide insights into tenant and environment usage and in
 |Environments     | Environments included in the current view        |
 
 **Report filters**
+
 |Scope  |Filter  |Description  |
 |---------|---------|---------|
 |Environment     | Name        | Friendly name used to identify a given environment        |
