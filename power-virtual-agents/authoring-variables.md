@@ -117,6 +117,38 @@ Usually you'll use a [question node](authoring-create-edit-topics.md#ask-a-quest
 > [!IMPORTANT]
 > Values entered directly into the **To value** box will always be treated as a string. To set a specific type, use a [PowerFX formula]().
 
+## System variables
+
+There are a number of built-in system variables that provide additional information about a conversation.
+
+<!-- FIXME: telephony link -->
+<!-- FIXME: what are "onerror triggers"? -->
+<!-- best viewed without wordwrap -->
+| Name                                 | Type    | Definition                                                                                                                                      |
+| ------------------------------------ | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| Conversation.Id                      | string  | Unique ID for the current conversation.                                                                                                         |
+| Conversation.TopicInitialUserMessage | string  | User message which triggered the current topic.                                                                                                 |
+| LastActivity.Id                      | string  | ID of the previously sent [activity](/azure/bot-service/bot-activity-handler-concept?view=azure-bot-service-4.0&tabs=csharp#activity-handling). |
+| User.IsLoggedIn                      | boolean | Only `true` when the user is currently signed in.                                                                                               |
+| User.Id                              | string  | Unique ID of the user.                                                                                                                          |
+| User.DisplayName                     | string  | Display name of the user.                                                                                                                       |
+| User.AccessToken                     | string  | Access token for the user.                                                                                                                      |
+| User.Language                        | string  | Language of the user.                                                                                                                           |
+| Error.Code                           | string  | The error code for the current error. Only visible in OnError trigger.                                                                          |
+| Error.Message                        | string  | Message for the current error. Only visible in OnError trigger.                                                                                 |
+| Activity.Channel                     | choice  | Channel ID of the current conversation.                                                                                                         |
+| Activity.ChannelId                   | string  | Channel ID of the current conversation, as a string.                                                                                            |
+| Channel.Specifier                    | string  | Raw value of `ChannelSpecifier` string that was passed by the client.                                                                           |
+| Channel.DisplayName                  | string  | Display name of the channel.                                                                                                                    |
+| Activity.Text                        | string  | Last message sent by the user.                                                                                                                  |
+| Activity.ChannelData                 | any     | An object that contains channel-specific content.                                                                                               |
+| Activity.Value                       | any     | Open-ended value.                                                                                                                               |
+| Activity.Type                        | choice  | Type of [activity](/azure/bot-service/bot-activity-handler-concept?view=azure-bot-service-4.0&tabs=csharp#activity-handling).                   |
+| Activity.TypeId                      | string  | Type of [activity](/azure/bot-service/bot-activity-handler-concept?view=azure-bot-service-4.0&tabs=csharp#activity-handling), as a string.      |
+| Activity.Name                        | string  | Name of the event.                                                                                                                              |
+| Activity.From.Id                     | string  | Channel-specific unique ID for the sender.                                                                                                      |
+| Activity.From.Name                   | string  | Channel-specific user-friendly name of the sender. For the [Telephony channel](), this will include the phone number of the caller.             |
+
 ## Use literal values
 
 You can type a literal value into any variable input field instead of selecting a variable from the menu.
