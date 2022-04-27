@@ -118,16 +118,16 @@ Typically you'll use a [question node](authoring-create-edit-topics.md#ask-a-que
 
 Values entered directly into the **To value** box will always be treated as a string. To set a specific type, use the appropriate PowerFX formula as per the following table:
 
-| Type     | Example formulas                                                                      |
-| -------- | ------------------------------------------------------------------------------------- |
-| String   | `hi` `hello world!` `chatbot`                                                         |
-| Boolean  | Only `true` or `false`                                                                |
-| Number   | `1` `532` `5.258` `-9201`                                                             |
-| Table    | `[1]` `[45, 8, 2]` `["cats", "dogs"]` `[{ id: 1 }, { id: 4 }]`                        |
-| Record   | `{ id: 1 }` `{ message: "hello" }` `{ name: "John", info: { age: 25, weight: 175 } }` |
-| DateTime | `Time(5,0,23)` `Date(2022,5,24)` `DateTimeValue("May 10, 2022 5:00:00 PM")`           |
-| Choice   | Not supported                                                                         |
-| Blank    | Only `Blank()`                                                                        |
+| Type     | Example formulas                                                                        |
+| -------- | --------------------------------------------------------------------------------------- |
+| String   | `hi`, `hello world!`, `chatbot`                                                         |
+| Boolean  | Only `true` or `false`                                                                  |
+| Number   | `1`, `532`, `5.258`, `-9201`                                                            |
+| Table    | `[1]`, `[45, 8, 2]`, `["cats", "dogs"]`                                                 |
+| Record   | `{ id: 1 }`, `{ message: "hello" }`, `{ name: "John", info: { age: 25, weight: 175 } }` |
+| DateTime | `Time(5,0,23)`, `Date(2022,5,24)`, `DateTimeValue("May 10, 2022 5:00:00 PM")`           |
+| Choice   | Not supported                                                                           |
+| Blank    | Only `Blank()`                                                                          |
 
 ## System variables
 
