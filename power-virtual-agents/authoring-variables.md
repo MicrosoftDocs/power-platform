@@ -36,16 +36,17 @@ You can also pass variables to [Power Automate](advanced-flow.md) and [Bot Frame
 
 A variable is associated with a **type**. The type determines what values the variable can contain and the operators that you can use when you construct a logical expression with the corresponding variable.
 
-| Type     | Description                                                                                        |
-| -------- | -------------------------------------------------------------------------------------------------- |
-| String   | A sequence of characters used to represent text.                                                   |
-| Boolean  | A logical value that can only be `true` or `false`.                                                |
-| Number   | Any real number.                                                                                   |
-| Table    | A list of any number of values, but all values must the same type.                                 |
-| Record   | A collection of name-value pairs where values can be any type.                                     |
-| DateTime | A date, time, day of the week, or month relative to a point in time.                               |
-| Choice   | A list of string values that have associated synonyms.                                             |
-| Blank    | A variable that has no value. See [Blanks in Power Fx](/power-platform/power-fx/data-types#blank). |
+<!-- best viewed without wordwrap -->
+| Type     | Description                                                                                                           |
+| -------- | --------------------------------------------------------------------------------------------------------------------- |
+| String   | A sequence of characters used to represent text.                                                                      |
+| Boolean  | A logical value that can only be `true` or `false`.                                                                   |
+| Number   | Any real number.                                                                                                      |
+| Table    | A list of any number of values, but all values must the same type.                                                    |
+| Record   | A collection of name-value pairs where values can be any type.                                                        |
+| DateTime | A date, time, day of the week, or month relative to a point in time.                                                  |
+| Choice   | A list of string values that have associated synonyms.                                                                |
+| Blank    | A placeholder for "no value" or "unknown value". See [Blanks in Power Fx](/power-platform/power-fx/data-types#blank). |
 
 A variable's type is set based on the value it is first assigned.
 
@@ -113,21 +114,7 @@ Typically you'll use a [question node](authoring-create-edit-topics.md#ask-a-que
 
 1. For **Set variable**, choose or create a [new variable](#create-a-variable).
 
-    <!-- FIXME: link to powerfx doc -->
-1. For **To value**, directly enter a value, select another variable, or use a [PowerFX formula]().
-
-Values entered directly into the **To value** box will always be treated as a string. To set a specific type, use the appropriate PowerFX formula as per the following table:
-
-| Type     | Example formulas                                                                        |
-| -------- | --------------------------------------------------------------------------------------- |
-| String   | `hi`, `hello world!`, `chatbot`                                                         |
-| Boolean  | Only `true` or `false`                                                                  |
-| Number   | `1`, `532`, `5.258`, `-9201`                                                            |
-| Table    | `[1]`, `[45, 8, 2]`, `["cats", "dogs"]`                                                 |
-| Record   | `{ id: 1 }`, `{ message: "hello" }`, `{ name: "John", info: { age: 25, weight: 175 } }` |
-| DateTime | `Time(5,0,23)`, `Date(2022,5,24)`, `DateTimeValue("May 10, 2022 5:00:00 PM")`           |
-| Choice   | Not supported                                                                           |
-| Blank    | Only `Blank()`                                                                          |
+1. For **To value**, [directly enter a value](#use-literal-values) or select another variable.
 
 ## System variables
 
@@ -168,6 +155,20 @@ You can type a literal value into any variable input field instead of selecting 
 :::image type="content" source="media/authoring-variables/set-variable-to-literal.png" alt-text="Screenshot showing the use of literal values for action inputs.":::
 
 :::image type="content" source="media/authoring-variables/set-redirect-variable-to-literal.png" alt-text="Screenshot of the authoring canvas showing literal input on an input variable in a redirect node.":::
+
+<!-- FIXME: link to powerfx doc -->
+Values entered directly will always be treated as a string. To set a specific type, use the appropriate [Power Fx formula]() as per the following table:
+
+| Type     | Example formulas                                                                        |
+| -------- | --------------------------------------------------------------------------------------- |
+| String   | `hi`, `hello world!`, `chatbot`                                                         |
+| Boolean  | Only `true` or `false`                                                                  |
+| Number   | `1`, `532`, `5.258`, `-9201`                                                            |
+| Table    | `[1]`, `[45, 8, 2]`, `["cats", "dogs"]`                                                 |
+| Record   | `{ id: 1 }`, `{ message: "hello" }`, `{ name: "John", info: { age: 25, weight: 175 } }` |
+| DateTime | `Time(5,0,23)`, `Date(2022,5,24)`, `DateTimeValue("May 10, 2022 5:00:00 PM")`           |
+| Choice   | Not supported                                                                           |
+| Blank    | Only `Blank()`  
 
 ## Variables pane
 
