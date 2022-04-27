@@ -127,11 +127,10 @@ Values entered directly into the **To value** box will always be treated as a st
 | Number   | `1` `532` `5.258` `-9201`                                                             |
 | Table    | `[1]` `[45, 8, 2]` `["cats", "dogs"]` `[{ id: 1 }, { id: 4 }]`                        |
 | Record   | `{ id: 1 }` `{ message: "hello" }` `{ name: "John", info: { age: 25, weight: 175 } }` |
+| TimeSpan | Not supported                                                                         |
 | DateTime | `Time(5,0,23)` `Date(2022,5,24)` `DateTimeValue("May 10, 2022 5:00:00 PM")`           |
+| Choice   | Not supported                                                                         |
 | Blank    | Only `Blank()`                                                                        |
-
-> [!NOTE]
-> The variable types **TimeSpan** and **Choice** can't be created manually with a PowerFX formula.
 
 ## System variables
 
