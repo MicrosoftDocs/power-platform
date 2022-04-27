@@ -47,7 +47,7 @@ Power Apps reports provide insights into tenant and environment usage and invent
 |Total sessions     | Power Apps sessions performed within the report window        |
 |Apps used     | Count of Power Apps included in the current view        |
 |New users     | New users registering activity         |
-|Environments     | Environments included in the current view        |
+|Environments     | Count of Environments included in the current view        |
 
 **Report filters**
 
@@ -81,7 +81,7 @@ The Power Apps Maker Activity report provide insights into tenant and environmen
 |Created     | Number of Power Apps created within the current view        |
 |Makers     | Total makers with activity registered in the last 30 days       |
 |Connections    | Count of unique connections referenced within the current view         |
-|Environments     | Environments included in the current view       |
+|Environments     | Count of Environments included in the current view       |
 
 **Report filters**
 
@@ -112,9 +112,9 @@ The Power Apps Inventory report offers a complete catalog of Power Apps distribu
 |Calculation  |Description  |
 |---------|---------|
 |Apps    | Count of Power Apps included in the current view      |
-|Makers     | Count of makers with activity registered in the last 30 days       |
-|Shared users     | Count of users that have been granted access to Power Apps       |
-|Environments    | Environments included in the current view          |
+|Makers     | Count of Makers with activity registered in the last 30 days       |
+|Shared users     | Total count of users that have been granted access to Power Apps       |
+|Environments    | Count of Environments included in the current view          |
 |Connections      | Count of unique connections referenced within the current view      |
 
 **Report filters**
