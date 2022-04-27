@@ -37,7 +37,7 @@ Global variables apply during a single user session. You specify which variables
 
 ### Create a global variable
 
-1. Create a [new variable](authoring-variables.md#create-a-variable) or [use the variables pane](authoring-variables.md#using-the-variables-pane) to open an existing variable.
+1. Create a [new variable](authoring-variables.md#create-a-variable) or [use the variables pane](authoring-variables.md#variables-pane) to open an existing variable.
 
 1. On the **Variable properties** pane, under **Usage**, select **Bot (any topic can access)**.
 
@@ -47,7 +47,6 @@ Global variables apply during a single user session. You specify which variables
 
 > [!NOTE]
 > A global variable's name must be unique across all topics. In the case of a conflict, you'll need to rename the variable before saving your change.
-
 
 ## Use global variables
 
@@ -95,7 +94,7 @@ After the customer answers the question, the bot will resume the "Appointment bo
 
 Sometimes, you might use a flow or skill to initialize or fill in a variable in a chatbot.
 
-When a user interacts with the chatbot, however, the variable might be filled in at an earlier point in the conversation, or you may have [already set the variables externally](authoring-variables-bot.md#set-a-bot-variables-value-from-external-sources).
+When a user interacts with the chatbot, however, the variable might be filled in at an earlier point in the conversation, or you may have [already set the variables externally](#set-a-global-variables-value-from-external-sources).
 
 In this situation, the flow or skill will still run and fill in the variable, overwriting whatever was previously stored in the variable.
 
@@ -131,8 +130,8 @@ In the examples described here, a simple declaration is made for the variables. 
 1. Append the variables and their definitions to the bot's URL as [query string parameters](https://en.wikipedia.org/wiki/Query_string) (in the format of `botURL?variableName1=variableDefinition1&variableName2=variableDefinition2`), for example:
 
     - You have a global variable named `bot.UserName`.
-    - Your bot's URL is *https://web.powerva.microsoft.com/webchat/bots/12345*.
-    - To pass in the user name when starting a bot conversation on a website, you can attach the `UserName=` query string as: *https://web.powerva.microsoft.com/webchat/bots/12345?UserName=Renata*.
+    - Your bot's URL is _https://web.powerva.microsoft.com/webchat/bots/12345_.
+    - To pass in the user name when starting a bot conversation on a website, you can attach the `UserName=` query string as: _https://web.powerva.microsoft.com/webchat/bots/12345?UserName=Renata_.
 
 1. The parameter name is case-insensitive. This means `username=Renata` will also work in this example.
 
