@@ -36,18 +36,23 @@ You can also pass variables to [Power Automate](advanced-flow.md) and [Bot Frame
 
 A variable is associated with a **type**. The type determines what values the variable can contain and the operators that you can use when you construct a logical expression with the corresponding variable.
 
-<!-- best viewed without wordwrap -->
-| Type    | Description                                                                          | Examples                                                                                                                        |
-| ------- | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------- |
-| String  | A sequence of characters used to represent text.                                     | `hi` `hello world!` `chatbot`                                                                                                   |
-| Boolean | A logical value that can only be `true` or `false`.                                  | Only `true` or `false`                                                                                                          |
-| Number  | Any real number.                                                                     | `1` `532` `5.258` `-9201`                                                                                                       |
-| Table   | A list of any number of values, but all values must the same type.                   | `[1]` `[45, 8, 2]`<br>`["cats", "dogs"]`<br>`[{ id: 1 }, { id: 4 }]`                                                            |
-| Record  | A collection of name-value pairs that allow values of any type, even nested records. | `{ id: 1 }` `{ message: "hello" }`<br>`{ color: "red", data: [1, 0, 0] }`<br>`{ name: "John", info: { age: 25, weight: 175 } }` |
+| Type     | Description                                                                                        |
+| -------- | -------------------------------------------------------------------------------------------------- |
+| String   | A sequence of characters used to represent text.                                                   |
+| Boolean  | A logical value that can only be `true` or `false`.                                                |
+| Number   | Any real number.                                                                                   |
+| Table    | A list of any number of values, but all values must the same type.                                 |
+| Record   | A collection of name-value pairs where values can be any type.                                     |
+| TimeSpan | A time interval that is measured in days, hours, minutes, seconds, and fractions of a second.      |
+| DateTime | A date, time, day of the week, or month relative to a point in time.                               |
+| Choice   | A list of string values that have associated synonyms.                                             |
+| Blank    | A variable that has no value. See [Blanks in Power Fx](/power-platform/power-fx/data-types#blank). |
 
-A variable's type is set when its created, based on the value it is first assigned.
+A variable's type is set based on the value it is first assigned.
 
-Variables can't be assigned values from other types. For example, a number variable cannot be assigned the string value `apples`.
+Variables can't be assigned values from other types. For example, a variable given the starting value of `1` is assigned the type "number", so you can't assign the string value `apples`.
+
+When you're testing a bot, a variable may appear temporarily as the type **Unspecified**. An **Unspecified** variable is one that hasn't been initialized yet.
 
 ## Entities
 
@@ -55,7 +60,7 @@ Power Virtual Agents uses [entities](advanced-entities-slot-filling.md) to ident
 
 | Entity                  | Variable Base Type |
 | ----------------------- | ------------------ |
-| Multiple choice options | String             |
+| Multiple choice options | Choice             |
 | User's entire response  | String             |
 | Age                     | Number             |
 | Boolean                 | Boolean            |
@@ -63,8 +68,8 @@ Power Virtual Agents uses [entities](advanced-entities-slot-filling.md) to ident
 | Color                   | String             |
 | Continent               | String             |
 | Country or region       | String             |
-| Date and time           | String             |
-| Duration                | String             |
+| Date and time           | DateTime           |
+| Duration                | TimeSpan           |
 | Email                   | String             |
 | Event                   | String             |
 | Integer                 | Integer            |
@@ -84,7 +89,7 @@ Power Virtual Agents uses [entities](advanced-entities-slot-filling.md) to ident
 | URL                     | String             |
 | Weight                  | Number             |
 | Zip code                | String             |
-| Custom entity           | String             |
+| Custom entity           | Choice             |
 
 ## Create a variable
 
@@ -104,7 +109,7 @@ A new variable will be created with a type that's appropriate for its usage. Use
 
 ## Set a variable
 
-Usually you'll use a [question node](authoring-create-edit-topics.md#ask-a-question) to save user input to a variable, but there may be situations where you want to set the value manually.
+Typically you'll use a [question node](authoring-create-edit-topics.md#ask-a-question) to save user input to a variable, but there may be situations where you want to set the value manually.
 
 1. To assign a value to a [variable](authoring-variables.md), select **+** to add a node, select **Set a variable value**.
 
@@ -113,16 +118,27 @@ Usually you'll use a [question node](authoring-create-edit-topics.md#ask-a-quest
     <!-- FIXME: link to powerfx doc -->
 1. For **To value**, directly enter a value, select another variable, or use a [PowerFX formula]().
 
-<!-- FIXME: link to power fx section on variable types -->
-> [!IMPORTANT]
-> Values entered directly into the **To value** box will always be treated as a string. To set a specific type, use a [PowerFX formula]().
+Values entered directly into the **To value** box will always be treated as a string. To set a specific type, use the appropriate PowerFX formula as per the following table:
+
+| Type     | Example formulas                                                                      |
+| -------- | ------------------------------------------------------------------------------------- |
+| String   | `hi` `hello world!` `chatbot`                                                         |
+| Boolean  | Only `true` or `false`                                                                |
+| Number   | `1` `532` `5.258` `-9201`                                                             |
+| Table    | `[1]` `[45, 8, 2]` `["cats", "dogs"]` `[{ id: 1 }, { id: 4 }]`                        |
+| Record   | `{ id: 1 }` `{ message: "hello" }` `{ name: "John", info: { age: 25, weight: 175 } }` |
+| DateTime | `Time(5,0,23)` `Date(2022,5,24)` `DateTimeValue("May 10, 2022 5:00:00 PM")`           |
+| Blank    | Only `Blank()`                                                                        |
+
+> [!NOTE]
+> The variable types **TimeSpan** and **Choice** can't be created manually with a PowerFX formula.
 
 ## System variables
 
 There are a number of built-in system variables that provide additional information about a conversation.
 
-<!-- FIXME: telephony link -->
-<!-- FIXME: what are "onerror triggers"? -->
+<!-- FIXME: link to telephony doc -->
+<!-- FIXME: what are "onError triggers"? -->
 <!-- best viewed without wordwrap -->
 | Name                                 | Type    | Definition                                                                                                                                      |
 | ------------------------------------ | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -181,7 +197,7 @@ In the variable properties pane you can rename a variable, see where a variable 
 
 ## Use variables in action nodes
 
-<!-- FIXME: does this still work this way?  -->
+<!-- FIXME: does this still work this way? flows currently 404  -->
 
 When you use a variable in an action node, if its base type matches a parameter type that's specified for a flow or Bot Framework skill, you can pass it to that parameter. The output from action nodes generates new variables.  
 
