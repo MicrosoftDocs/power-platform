@@ -1,10 +1,10 @@
 ---
-title: "Analyze model-driven apps and Dataverse telemetry with Application Insights (preview) | Microsoft Docs"
+title: "Analyze model-driven apps and Dataverse telemetry with Application Insights  | Microsoft Docs"
 description: About analyzing model-driven apps and Microsoft Dataverse telemetry with Application Insights
 services: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/27/2021
+ms.date: 04/27/2022
 author: tjvass
 ms.subservice: admin
 ms.author: tjvass
@@ -17,17 +17,10 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Analyze model-driven apps and Microsoft Dataverse telemetry with Application Insights (preview)
+# Analyze model-driven apps and Microsoft Dataverse telemetry with Application Insights
 <!-- fwlink: 2147020 2151390 -->
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
-
 You can set up an Application Insights environment to receive telemetry on diagnostics and performance captured by the Dataverse platform.
-
-> [!IMPORTANT]
-> - This is a preview feature.
-> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
-> - This feature is being gradually rolled out across regions and might not be available yet in your region.
 
 You can subscribe to receive telemetry about operations that applications perform on your Dataverse database and within model-driven apps. This telemetry provides information that you can use to diagnose and troubleshoot issues related to errors and performance.
 
@@ -82,5 +75,8 @@ For canvas apps, an [existing capability](https://powerapps.microsoft.com/blog/l
 
 Dataverse includes all the requests made on the server. You'll be able to see how the requests are processed within the web server. You won't get detailed information from the database itself, except for the duration of time spent processing the operation. You also won't have telemetry related to the physical resources of the server, such as memory consumption. More information: [Telemetry events for Dataverse](telemetry-events-dataverse.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
 
 
