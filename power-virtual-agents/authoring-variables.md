@@ -43,7 +43,6 @@ A variable is associated with a **type**. The type determines what values the va
 | Number   | Any real number.                                                                                   |
 | Table    | A list of any number of values, but all values must the same type.                                 |
 | Record   | A collection of name-value pairs where values can be any type.                                     |
-| TimeSpan | A time interval that is measured in days, hours, minutes, seconds, and fractions of a second.      |
 | DateTime | A date, time, day of the week, or month relative to a point in time.                               |
 | Choice   | A list of string values that have associated synonyms.                                             |
 | Blank    | A variable that has no value. See [Blanks in Power Fx](/power-platform/power-fx/data-types#blank). |
@@ -69,7 +68,6 @@ Power Virtual Agents uses [entities](advanced-entities-slot-filling.md) to ident
 | Continent               | String             |
 | Country or region       | String             |
 | Date and time           | DateTime           |
-| Duration                | TimeSpan           |
 | Email                   | String             |
 | Event                   | String             |
 | Integer                 | Integer            |
@@ -127,7 +125,6 @@ Values entered directly into the **To value** box will always be treated as a st
 | Number   | `1` `532` `5.258` `-9201`                                                             |
 | Table    | `[1]` `[45, 8, 2]` `["cats", "dogs"]` `[{ id: 1 }, { id: 4 }]`                        |
 | Record   | `{ id: 1 }` `{ message: "hello" }` `{ name: "John", info: { age: 25, weight: 175 } }` |
-| TimeSpan | Not supported                                                                         |
 | DateTime | `Time(5,0,23)` `Date(2022,5,24)` `DateTimeValue("May 10, 2022 5:00:00 PM")`           |
 | Choice   | Not supported                                                                         |
 | Blank    | Only `Blank()`                                                                        |
