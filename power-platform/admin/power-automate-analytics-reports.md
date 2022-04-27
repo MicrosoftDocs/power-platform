@@ -45,8 +45,8 @@ Power Automate reports provide insights into tenant and environment usage and in
 |Total flows      | Count of Cloud flows with usage events in the past 30 days        |
 |Total runs      | Total number of Cloud flow runs initiated in the past 30 days         |
 |Successful runs      | Count of successful Cloud flow runs completed in the past 30 days        |
-|Failed runs     | Count of failed Cloud flow runs attempted in the past 30 days        |
-|Environments     | Environments included in the current view        |
+|Failed runs     | Total number of failed Cloud flow runs attempted in the past 30 days        |
+|Environments     | Count of Environments included in the current view        |
 
 **Report filters**
 
@@ -78,7 +78,7 @@ The Power Automate report provides insights into the activities of citizen autho
 |Created      | Number of Power Apps created within the current view        |
 |Makers      |Total makers with activity registered in the last 30 days          |
 |Connections     | Count of unique connections referenced within the current view         |
-|Environments     | Environments included in the current view        |
+|Environments     | Count of Environments included in the current view        |
 
 **Report filters**
 
@@ -107,9 +107,9 @@ The Power Automate Inventory report offers a complete catalog of Cloud flows dis
 |Calculation  |Description  |
 |---------|---------|
 |Flows     | Count of Cloud flows included in the current view       |
-|Makers      | Count of makers with activity registered in the last 30 days        |
-|Successful runs       | Count of successful Cloud flow runs completed in the past 30 days          |
-|Environments     | Environments included in the current view         |
+|Makers      | Count of Makers with activity registered in the last 30 days        |
+|Successful runs       | Total number of successful Cloud flow runs completed in the past 30 days          |
+|Environments     | Count of Environments included in the current view         |
 |Connections      | Count of unique connections referenced within the current view         |
 
 **Report filters**
