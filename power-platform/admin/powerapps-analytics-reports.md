@@ -105,7 +105,7 @@ The Power Apps Inventory report offers a complete catalog of Power Apps distribu
 :::image type="content" source="media/power-apps-inventory-report.png" alt-text="Power Apps Inventory report.":::
 
 > [!NOTE]
-> Depending on the size of the organization, it can take up to 2 hours to initially populate the data sets backing the Inventory report. 
+> Depending on the size of the organization, it can take up to 24 hours to initially populate the data sets backing the Inventory report. 
 
 **Report metrics**
 
