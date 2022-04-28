@@ -1,11 +1,11 @@
 ---
-title: "Set up exporting to Application Insights | Microsoft Docs"
+title: "Set up exporting to Application Insights (preview) | Microsoft Docs"
 description: About setting up exporting to Application Insights from the Power Platform admin center
 services: powerapps
 author: jimholtz
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/27/2022
+ms.date: 08/04/2021
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -16,7 +16,14 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Set up exporting to Application Insights 
+# Set up exporting to Application Insights (preview)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+
+> [!IMPORTANT]
+> - This is a preview feature.
+> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+> - This feature is being gradually rolled out across regions and might not be available yet in your region.
 
 ## Prerequisites
 
@@ -87,4 +94,3 @@ search.app:
 
 
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
