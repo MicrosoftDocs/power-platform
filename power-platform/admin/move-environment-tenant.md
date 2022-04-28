@@ -1,7 +1,7 @@
 ---
 title: "Migrate an environment to a different tenant"
 description: "Learn about the impact of migrating an environment from one tenant to another. Review the prerequisites and considerations before submitting a request." 
-ms.date: 03/31/2022
+ms.date: 04/28/2022
 ms.topic: conceptual
 applies_to: 
   - "Dynamics 365 (online)"
@@ -223,9 +223,6 @@ After the migration:
 1. Sign in to the environment.
 2. Open the [Power Apps Portals admin center](/powerapps/maker/portals/admin/admin-overview#open-power-apps-portals-admin-center).
 3. Provision the portal with the same portal type and language.
-
-> [!NOTE]
-> The following configurations are not preserved by the portal reset and must be configured again in the new portal. 
 
 #### For Dynamics 365 Marketing:
 
