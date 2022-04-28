@@ -116,3 +116,29 @@ This quick start walks you through making a bot that uses new features and impro
 
 1. Test your bot using the [**Test bot** pane](authoring-test-bot.md), or by calling the phone number configured in Telephony.
 
+<a id="where-to-find"></a>
+
+## If you've been using Composer
+
+There are a number of differences and similarities in how bots are designed in Bot Framework Composer and in the Power Virtual Agents technology preview. The following table describes some of the differences and where to find more information in this doc set.
+
+| Composer concept | Feature in the technology preview |
+|:-|:-|
+| Dialogs and triggers | Use [topics][] to organize conversation flow or paths. A topic has a set of _trigger phrases_ that indicate when the bot should start the topic and a set of _nodes_ that describe the conversation path for the topic. |
+| Intents | Use [trigger phrases][] to interpret the user's intent. |
+| Actions and prompts | Use [nodes][] on the authoring canvas to create the conversation path for each topic, such as messages, questions, and conditional branches. |
+| Bot response variation | Use [response variations][] and [question variations][] to add variety to your bot's messages and questions. |
+| Suggested actions | Use [quick replies][] to provide default reply options to the user. |
+| Entities | Define and use [entities][] to extract semantic information from a user's utterance. |
+| State, storage, and properties | Use [variables][] to track state. |
+| Formulas and expressions | Use [Power FX][] to create expressions. |
+
+[entities]: #where-to-find
+[nodes]: #where-to-find
+[Power FX]: #where-to-find
+[question variations]: #where-to-find
+[quick replies]: #where-to-find
+[response variations]: #where-to-find
+[topics]: #where-to-find
+[trigger phrases]: #where-to-find
+[variables]: #where-to-find
