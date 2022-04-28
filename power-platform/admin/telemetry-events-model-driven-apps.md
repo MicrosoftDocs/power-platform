@@ -18,13 +18,6 @@ search.app:
 ---
 # Telemetry events for model-driven apps 
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
-
-> [!IMPORTANT]
-> - This is a preview feature.
-> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
-> - This feature is being gradually rolled out across regions and might not be available yet in your region.
-
 ## What data is available for model-driven apps?
 
 Performance data related to page loads and Unified Interface (UCI) outbound network requests is available for model-driven apps.  
