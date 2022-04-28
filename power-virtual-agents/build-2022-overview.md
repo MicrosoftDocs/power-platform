@@ -21,12 +21,12 @@ searchScope:
 
 <!-- FIXME: merge PRs and link relevant docs -->
 - Redesigned authoring canvas
-- Enhanced variable management
-- Power FX support
-- Rich Response Authoring​
-- Speech authoring
-- Telephony channel
-- Bot response variations
+- [Enhanced variable management]()
+- [Power FX support]()
+- [Rich Response Authoring​]()
+- [Speech authoring]()
+- [Telephony channel]()
+- [Bot response variations](authoring-create-edit-topics.md#message-variations)
 
 ## Limitations of technology preview
 
@@ -46,6 +46,8 @@ The following features are not supported in the technology preview:
 
 ## Quick start
 
+<!-- FIXME: add screenshots once scenario is approved -->
+
 <!-- FIXME: intro + summary of capabilities -->
 
 We'll create a bot to handle reservations for a restaurant.
@@ -59,12 +61,11 @@ We'll create a bot to handle reservations for a restaurant.
 
 1. Name the bot `Reservation Bot` and select **Create**.
 
-1. On the Topics list, select the **Greeting** topic.
+1. In the side navigation, select **Topics**. Then select the **Greeting** topic.
 
 1. Delete all existing **Message** nodes.
 
-    <!-- FIXME: link doc once written -->
-1. Add a **Message** node. Then add the following greetings as [message variations]():
+1. Add a **Message** node. Then add the following greetings as [message variations](authoring-create-edit-topics.md#message-variations):
     - `Good day!`
     - `Hi there!`
     - `Hi!`
@@ -72,11 +73,11 @@ We'll create a bot to handle reservations for a restaurant.
 1. Add a second **Message** node and add the message `We're open 9am to 5pm Monday through Friday. If you'd like, I can help you make a reservation.`
 
     <!-- FIXME: link doc once written -->
-1. Add a third **Message** node. Then add the following message which uses an [emphasis SSML tag](): `<emphasis level="strong">However please note,</emphasis><break strength="medium" /> we will be closed on May 27th.`
+1. Add a third **Message** node. Then add the following message which uses [SSML tags](): `<emphasis level="strong">Please note</emphasis><break strength="medium" /> we will be closed on May 27th.`
 
 1. Select **Save**.
 
-1. Go back to the Topics list and select **New topic**.
+1. Go back to the topics list and select **New topic**.
 
 1. Add the following trigger phrases:
     - `make a reservation`
@@ -89,7 +90,8 @@ We'll create a bot to handle reservations for a restaurant.
     <!-- FIXME: link doc once written -->
 1. For **Save response as** [create a new variable]() named `reservationDateTime`.
 
-1. Add a **Set a Variable Value** node.
+    <!-- FIXME: link doc once written -->
+1. [Add a **Set a Variable Value** node]().
 
     <!-- FIXME: link doc once written -->
 1. For **Set variable** [create a new variable]() named `dateDiff`.
@@ -97,10 +99,11 @@ We'll create a bot to handle reservations for a restaurant.
     <!-- FIXME: link doc once written -->
 1. For **To value** enter the [Power Fx formula]() `DateDiff(Topic.reservationDateTime, Date(2022,5,27))`.
 
-1. Add a **ConditionItem** node and select the **dateDiff** variable.
-
     <!-- FIXME: link doc once written -->
-1. In the second box, choose **is equal to**. In the third box, use a [Power Fx formula]() to enter a [number value]() of `0`.
+1. [Add a **ConditionItem** node](), then...
+    - For the first box, select the **dateDiff** variable.
+    - For the second box, choose **is equal to**.
+    - For the third box, use a [Power Fx formula]() to enter a [number value]() of `0`.
 
 1. Under the **ConditionItem** node add a **Message** node. Then enter the message `Sorry, but we're closed on May 27th. Please make a reservation on another day.`
 
@@ -118,4 +121,5 @@ We'll create a bot to handle reservations for a restaurant.
 
 1. [Publish your bot](publication-fundamentals-publish-channels.md).
 
-1. Test your bot by calling the number or in web chat.
+1. Test your bot using the [**Test bot** pane](authoring-test-bot.md), or by calling the phone number configured in Telephony.
+
