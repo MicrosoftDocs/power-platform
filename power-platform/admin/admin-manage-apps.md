@@ -4,7 +4,7 @@ description: How to manage Power Apps apps created in your organization.
 author: alaug
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/11/2022
+ms.date: 04/25/2022
 ms.subservice: admin
 ms.author: alaug
 ms.reviewer: jimholtz
@@ -114,7 +114,7 @@ The following table reflects quarantine support:
 
 | Power Apps type  | Quarantine support   |
 |------------------|----------------------|
-| Canvas app       | Preview availability |
+| Canvas app       | Generally Available  |
 | Model-driven app | Not supported yet    |
 
 ### Quarantine an app
