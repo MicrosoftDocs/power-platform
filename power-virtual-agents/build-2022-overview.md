@@ -48,14 +48,7 @@ The following features are not supported in the technology preview:
 
 <!-- FIXME: add screenshots once scenario is approved -->
 
-<!-- FIXME: intro + summary of capabilities -->
-
-We'll create a bot to handle reservations for a restaurant.
-
-- Customer can call (telephony) or use live chat
-- Bot response variations for greetings
-- Use emphasis on announcement that restaurant will not be open on 5/25 for a private event
-- Use Power Fx and variables to compare dates for making a reservation
+This quick start walks you through making a bot that uses new features and improvements introduced in the Technology Preview.
 
 1. Navigate to the Power Virtual Agents home page and select **Create a bot**.
 
