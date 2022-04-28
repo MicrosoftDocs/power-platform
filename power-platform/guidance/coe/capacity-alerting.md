@@ -1,9 +1,8 @@
 ---
-title: "Dataverse for Teams environment management| MicrosoftDocs"
-description: "This article describes a sample process for managing Microsoft Teams environments by using Microsoft Power Platform."
+title: "Environment capacity management & alerting | MicrosoftDocs"
+description: "This article describes a sample process for managing environment capacity and receiving alerts for overages."
 author: manuelap-msft
 manager: devkeydet
-
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 11/18/2020
@@ -17,13 +16,13 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Microsoft Dataverse for Teams environment management
+# Environment capacity management & alerting
 
 You can take advantage of our philosophy of using Microsoft Power Platform to manage Microsoft Power Platform by building automation to send welcome emails to owners of new [Dataverse for Teams environments](../../admin/about-teams-environment.md) and requesting business justifications for newly created environments. This ensures that central IT teams can effectively engage with the new makers onboarding the platform, and ensure that Dataverse for Teams capacity is used effectively in your tenant and distributed to the most important business use cases. Similar workflows can be used to apply specific data loss prevention (DLP) policies to Dataverse for Teams environments as needed, and to invoke cleanup of unused assets to free up capacity for more compelling scenarios in the tenant.
 
 ## Process description
 
-**Problem statement:** Central IT wants to ensure that Dataverse for Teams environments are used effectively in their tenant. Central IT wants to understand the business justification for a Dataverse for Teams environment to be able to distribute capacity to the most effective business use cases.
+**Problem statement:** Central IT wants to ensure that capacity is used are used effectively in their tenant. Central IT wants to understand the business justification for a Dataverse for Teams environment to be able to distribute capacity to the most effective business use cases.
 
 **Solution:** Reactive governance and monitoring abilities are configured to provide team owners the ability to provide a business justification, and to provide central IT with the ability to approve or reject the business justification and run regular, automated cleanup flows.
 

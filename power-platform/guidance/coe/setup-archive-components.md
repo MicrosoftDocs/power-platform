@@ -1,6 +1,6 @@
 ---
-title: "Set up archive components | MicrosoftDocs"
-description: "Learn how to set up the archive components of the CoE Starter Kit"
+title: "Set up inactivity notifications components | MicrosoftDocs"
+description: "Learn how to set up the inactivity notifications components of the CoE Starter Kit"
 author: manuelap-msft
 manager: devkeydet
 
@@ -18,12 +18,12 @@ search.app:
   - Powerplatform
 ---
 
-# Set up archive components
+# Set up inactivity notifications components
 
-This article will help you to set up the archive components of the governance solution.
+This article will help you to set up the inactivity notifications components of the governance solution.
 
 >[!NOTE]
->Although the flows are called "archive" flows, they don't automatically archive apps and flows. Instead, they ask makers to back up and archive their apps and flows.
+>These flows used to be called called "archive" flows, however they did not automatically archive apps and flows. The name has recently changed to "inactivity notifications", however if you are on an older version of the Governance components solution they may still be called "archive" flows.
 
 You use this functionality to detect unused objects, and ask makers to either archive or unshare them to keep your tenant tidy.
 
@@ -49,11 +49,11 @@ You'll [update these environment variables](faq.md#update-environment-variables)
 | Cleanup Old Objects App URL | (Optional) A link to the Cleanup Old Objects canvas app included in this solution. To make cleanup easier, any communication about old objects that are no longer considered to be useful will include this link. More information: [Get an app URL from a production environment](faq.md#get-a-power-apps-url-from-a-production-environment) or [Get an app URL from a Teams environment](faq.md#add-apps-to-microsoft-teams) |
 | Flow Approvals URL | (Optional) A link to the Power Automate approval page for your CoE environment. To make cleanup easier, any communication about old objects that are no longer considered to be useful will include this link. To get the URL, go to flows.microsoft.com for your CoE environment > **Action Items** > **Approvals**. The URL will end in **approvals/received**. |  
 
-## Exempt environments from the archive process
+## Exempt environments from the inactivity notifications process
 
-You might want to exempt some environments from the archive process—for example, dedicated environments that are already well-managed. More information: [Establishing an environment strategy](/adoption/environment-strategy)
+You might want to exempt some environments from the inactivity notification process—for example, dedicated environments that are already well-managed. More information: [Establishing an environment strategy](/adoption/environment-strategy)
 
-You can exempt environments from the archive process by using the Power Platform Admin View app.  
+You can exempt environments from the inactivity notification process by using the Power Platform Admin View app.  
 
 ### Production environment
 
@@ -66,7 +66,7 @@ If your solution is installed in a production environment, your app will be a mo
 1. Set the **Excuse From Archival Flows** field to **Yes**.
 1. Select **Save**.
 
-   ![Exclude an environment from the archive process in a production environment.](media/coe-archive2.png "Exclude an environment from the compliance process in a production environment")
+   ![Exclude an environment from the inactivity notification process in a production environment.](media/coe-archive2.png "Exclude an environment from the inactivity notification in a production environment")
 
 ### Dataverse for Teams environment
 
@@ -77,17 +77,17 @@ If your solution is installed in a production environment, your app will be a mo
 1. Set the **Excuse From Archival Flows** field to **Yes**.
 1. Select **Save**.
 
-   ![Exclude an environment from the archive process in Dataverse for Teams.](media/coe-archive1.png "Exclude an environment from the archive process in Dataverse for Teams")
+   ![Exclude an environment from the inactivity notification process in Dataverse for Teams.](media/coe-archive1.png "Exclude an environment from the inactivity notification process in Dataverse for Teams")
 
 ## Turn on flows
 
 Turn on the following flows, which are installed as part of the governance components solution:
 
 - [Admin | Setup | Ignored Archival Requests](governance-components.md#admin--setup---ignored-archival-requests)
-- [Admin | Archive and Clean Up v2 (Check Approval)](governance-components.md#admin--archive-and-clean-up-v2-check-approval)
-- [Admin | Archive and Clean Up v2 (Clean Up and Delete)](governance-components.md#admin--archive-and-clean-up-v2-clean-up-and-delete)
-- [Admin | Archive and Clean Up v2 (Start Approval for Apps)](governance-components.md#admin--archive-and-clean-up-v2-start-approval-for-apps)
-- [Admin | Archive and Clean Up v2 (Start Approval for Flows)](governance-components.md#admin--archive-and-clean-up-v2-start-approval-for-flows)
+- [Admin | Inactivity notifications v2 (Check Approval)](governance-components.md#admin--inactivity-notifications-v2-check-approval)
+- [Admin | Inactivity notifications v2 (Clean Up and Delete)](governance-components.md#admin--inactivity-notifications-v2-clean-up-and-delete)
+- [Admin | Inactivity notifications v2 (Start Approval for Apps)](governance-components.md#admin--inactivity-notifications-v2-start-approval-for-apps)
+- [Admin | Inactivity notifications v2 (Start Approval for Flows)](governance-components.md#admin--inactivity-notifications-start-approval-for-flows)
 - [Admin | Email Managers Ignored Approvals](governance-components.md#admin--setup---ignored-archival-requests)
 
 ## Share apps with makers
@@ -113,7 +113,7 @@ Environment variables are used to store application and flow configuration data 
 | Name | Description | Default value |
 |------|---------------|------|
 | Approval Admin | This is separate from the Admin Email environment variable because you can't use a distribution list for approvals. This environment variable holds the individual or shared account who will be charged with approving the removal of unused orphaned objects. | None |
-| Auto Delete on Archive | Determines whether apps andd flows are deleted when they're approved for deletion in the following flow: Admin \| App Archive and Clean Up - Check Approvals and Archive. The value must be Yes or No.  | Yes |
+| Auto Delete on Archive | Determines whether apps andd flows are deleted when they're approved for deletion in the following flow: Admin \|Inactivity notifications v2 (Check Approval) and Admin \|Inactivity notifications v2 (Clean Up and Delete). The value must be Yes or No.  | Yes |
 | Cleanup Old Objects App URL | (Optional) A link to the Cleanup Old Objects canvas app included in this solution. To make cleanup easier, any communication about old objects that are no longer considered to be useful will include this link. More information: [Get an app URL from a production environment](faq.md#get-a-power-apps-url-from-a-production-environment) or [Get an app URL from a Teams environment](faq.md#add-apps-to-microsoft-teams) | None |
 | Flow Approvals URL | (Optional) A link to the Power Automate approval page for your CoE environment. To make cleanup easier, any communication about old objects that are no longer considered to be useful will include this link. To get the URL, go to flows.microsoft.com for your CoE environment > **Action Items** > **Approvals**. The URL will end in **approvals/received**.|  None |
 | ProductionEnvironment | Set to **No** if you've installed the solution for development or test purposes. This will send approvals to the admin email instead of the maker. | Yes |
