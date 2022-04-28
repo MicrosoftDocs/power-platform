@@ -80,10 +80,10 @@ search.app:
 |South Africa (ZAF)     |  Yes | Jan 2021       |
 |UAE     | Yes | March 2021        |
 |Switzerland (CHE)     | Yes | Jan 2021       |
-|GCC     | No |  Summer 2022 |
-|GCC-Mod     | No |  Summer 2022 |
+|Mooncake     | No |  Fall 2021 |
+|GCC     | No |  Fall 2021 |
+|GCC-Mod     | No |  Fall 2021 |
 |GCC-DOD     | No |  TBD |
-|Mooncake     | No |  Fall 2022 |
 
 
 
