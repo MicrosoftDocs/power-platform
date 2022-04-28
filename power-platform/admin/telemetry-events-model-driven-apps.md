@@ -16,7 +16,6 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Telemetry events for model-driven apps 
 
 ## What data is available for model-driven apps?
 
