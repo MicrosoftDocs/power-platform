@@ -36,7 +36,7 @@ Most of these users are hidden from user views but they can be found by using th
 | | Dynamics 365 Athena-CDStoAzuredatalake | Dynamics365Athena-<br />CDStoAzuredatalake@onmicrosoft.com |Service application to perform data integration between Microsoft Dataverse to Azure Data Lake. |DataLakeWorkspaceAppAccess |
 | | Dynamics 365 Athena2-CDStoAzuredatalake | Dynamics365Athena2-<br />CDStoAzuredatalake@onmicrosoft.com |Service application to perform data integration between Dataverse to Azure Data Lake. |DataLakeWorkspaceAppAccess |
 | | EnterpriseSales | EnterpriseSales@onmicrosoft.com |Service application to perform data integration between Dataverse (Sales) to Azure Data Lake. |N/A |
-| | Finance and Operations Runtime Integration User | FinanceandOperationsRuntimeIntegrationUser<br />@onmicrosoft.com |Service application to perform dual-write data integration between Dataverse and Finance and Operations. |Finance and Operations Integration User |
+| | Finance and Operations Runtime Integration User | FinanceandOperationsRuntime<br />IntegrationUser@onmicrosoft.com |Service application to perform dual-write data integration between Dataverse and Finance and Operations. |Finance and Operations Integration User |
 | | # SIAutoCapture | SIAutoCapture@onmicrosoft.com | To be used for Auto Capture solution business requirements to perform data query and execute plugins from backend services. | SalesInsights AutoCapture Admin |
 | | # Dynamics 365 Sales | Dynamics365Sales@onmicrosoft.com | To allow Dynamics 365 Sales to communicate with Dataverse and Azure Data Lake for analysis and data updates. | Sales system data sync and EAC App Access |
 | | Microsoft Project | Project@microsoft.com |Allow Project for the Web and Roadmap Service to communicate with Dataverse. |Project System and Portfolio User |
@@ -60,10 +60,10 @@ Most of these users are hidden from user views but they can be found by using th
 | | PowerVIrtualAgents  | PowerVirtualAgents@onmicrosoft.com | To manage the PVA capabilities within Dataverse environments | CCI Admin, System Customizer, and Environment Maker    |
 | | BizQA | BizQA@onmicrosoft.com | To access search telemetry to improve search experience | BizQAApp   |
 | | ProductInsights | ProductInsights@onmicrosoft.com | To export data from Customer Insights to Engagement Insights | DataLakeWorkspaceAppAccess    |
-| | Dynamics365 SalesForecasting | Dynamics365SalesForecasting@onmicrosoft.com | To fetch table data and metadata for forecasting feature | ForecastAppUser    |
+| | Dynamics365 SalesForecasting | Dynamics365SalesForecasting<br />@onmicrosoft.com | To fetch table data and metadata for forecasting feature | ForecastAppUser    |
 | | # Omnichannel | Ominichannel@onmicrosoft.com | To perform data integration between Omnichannel for Customer Service and Dataverse | System admin    |
 | | # Flow-RP | Flow-RP@onmicrosoft.com | To allow Power Automate to integrate with Dataverse | Flow-RP Role, Service Reader |
-| | # DataSyncService-\<REGION\> | DataSyncService-\<REGION\>@onmicrosoft.com | To read data for Azure Data Lake sync | Data Sync Service  |
+| | # DataSyncService-\<REGION\> | DataSyncService-\<REGION\><br />@onmicrosoft.com | To read data for Azure Data Lake sync | Data Sync Service  |
 | | # DataSyncFramework-\<REGION\> | DataSyncFramework-\<REGION\>@onmicrosoft.com | To read data for Azure Data Lake sync | Data Sync Framework  |
 
 **The purpose of the system account?** 
