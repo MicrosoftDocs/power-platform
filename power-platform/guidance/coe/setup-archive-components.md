@@ -83,12 +83,11 @@ If your solution is installed in a production environment, your app will be a mo
 
 Turn on the following flows, which are installed as part of the governance components solution:
 
-- [Admin | Setup | Ignored Archival Requests](governance-components.md#admin--setup---ignored-archival-requests)
-- [Admin | Inactivity notifications v2 (Check Approval)](governance-components.md#admin--inactivity-notifications-v2-check-approval)
-- [Admin | Inactivity notifications v2 (Clean Up and Delete)](governance-components.md#admin--inactivity-notifications-v2-clean-up-and-delete)
+- [Admin | Inactivity notifications v2 (Check Approval)](governance-components.md#admin--inactivity-notifications-check-approval)
+- [Admin | Inactivity notifications v2 (Clean Up and Delete)](governance-components.md#admin--inactivity-notifications-clean-up-and-delete)
 - [Admin | Inactivity notifications v2 (Start Approval for Apps)](governance-components.md#admin--inactivity-notifications-v2-start-approval-for-apps)
-- [Admin | Inactivity notifications v2 (Start Approval for Flows)](governance-components.md#admin--inactivity-notifications-start-approval-for-flows)
-- [Admin | Email Managers Ignored Approvals](governance-components.md#admin--setup---ignored-archival-requests)
+- [Admin | Inactivity notifications v2 (Start Approval for Flows)](governance-components.md#admin--inactivity-notifications-v2-start-approval-for-flows)
+- [Admin | Email Managers Ignored Approvals](governance-components.md#admin--email-managers-ignored-inactivity-notifications-approvals)
 
 ## Share apps with makers
 
