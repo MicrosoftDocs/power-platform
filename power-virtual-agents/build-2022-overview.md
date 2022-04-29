@@ -84,19 +84,10 @@ This quick start walks you through making a bot that uses new features and impro
 1. For **Save response as** [create a new variable]() named `reservationDateTime`.
 
     <!-- FIXME: link doc once written -->
-1. [Add a **Set a Variable Value** node]().
+1. [Add a **ConditionItem** node]() and [change it to a formula]().
 
     <!-- FIXME: link doc once written -->
-1. For **Set variable** [create a new variable]() named `dateDiff`.
-
-    <!-- FIXME: link doc once written -->
-1. For **To value** enter the [Power Fx formula]() `DateDiff(Topic.reservationDateTime, Date(2022,5,27))`.
-
-    <!-- FIXME: link doc once written -->
-1. [Add a **ConditionItem** node](), then...
-    - For the first box, select the **dateDiff** variable.
-    - For the second box, choose **is equal to**.
-    - For the third box, use a [Power Fx formula]() to enter a [number value]() of `0`.
+1. Enter the [Power Fx formula]() `DateDiff(Topic.reservationDateTime, Date(2022,5,27)) == 0`.
 
 1. Under the **ConditionItem** node add a **Message** node. Then enter the message `Sorry, but we're closed on May 27th. Please make a reservation on another day.`
 
