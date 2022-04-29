@@ -207,9 +207,9 @@ Represents inactivity notifications approval tasks started during the Admin | In
 | --- | --- | --- |
 |[Microsoft Teams Admin \|  Ask for Business Justification when Microsoft Teams environment is created](#microsoft-teams-admin--ask-for-business-justification-when-microsoft-teams-environment-is-created) | Automated |  Triggered by admin \| Sync Template v3 |
 | [Microsoft Teams Admin \|  Weekly Clean Up of Microsoft Teams environments](#microsoft-teams-admin--weekly-clean-up-of-microsoft-teams-environments) | Schedule | Weekly |
-| [Admin \| Inactivity notifications v2 (Check Approval)](#admin--inactivity-notifications-v2-check-approval) | Schedule | Daily |
-| [Admin \| Inactivity notifications v2 (Clean Up and Delete)](#admin--inactivity-notifications-v2-clean-up-and-delete) | Schedule | Daily |
-| [Admin \| Inactivity notifications (Start Approval for Apps)](#admin--inactivity-notifications-start-approval-for-apps) | Schedule | Weekly |
+| [Admin \| Inactivity notifications v2 (Check Approval)](#admin--inactivity-notifications-check-approval) | Schedule | Daily |
+| [Admin \| Inactivity notifications v2 (Clean Up and Delete)]#admin--inactivity-notifications-clean-up-and-delete) | Schedule | Daily |
+| [Admin \| Inactivity notifications (Start Approval for Apps)](#admin--inactivity-notifications-v2-start-approval-for-apps) | Schedule | Weekly |
 | [Admin \| Inactivity notifications (Start Approval for Flows)](#admin--inactivity-notifications-v2-start-approval-for-flows) | Schedule | Weekly |
 | [Admin \| Email Managers Ignored Approvals](#admin--email-managers-ignored-approvals) | Instant | Weekly |
 
