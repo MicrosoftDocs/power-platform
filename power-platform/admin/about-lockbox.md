@@ -135,7 +135,7 @@ Customer Lockbox requests are also not triggered by external legal demands for d
 
 ## Known issues
 
-- The consent process for creating a support instance is not integrated with Customer Lockbox. Once the support instance is created after initial customer consent, a support engineer will have access to the data stored in the support instance for troubleshooting purposes. 
+- The consent process for creating a support instance and support user access are not integrated with Customer Lockbox. Once the support instance is created after initial customer consent, a support engineer with support user permissions will have access to the data stored in the support instance for troubleshooting purposes. 
 
 - Customer Lockbox Preview is not available in sovereign clouds at this time. 
 
