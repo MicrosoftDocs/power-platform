@@ -13,7 +13,7 @@ ms.collection: virtual-agent
 ms.custom: ceX, advanced-authoring
 ---
 
-# Microsoft Power Fx in Power Virtual Agent
+# Microsoft Power Fx in Power Virtual Agents
 
 Power Fx is a low-code language that makers can work with directly in an Excel-like formula bar. For example, you can use Power Fx to create complex bot logic using formulas to manipulate data, such as setting the value of variables, parsing the string, or using expressions in conditionals.
 
@@ -24,7 +24,7 @@ For more information, see [Power Fx overview](/power-platform/power-fx/overview)
 - [Create and edit topics](authoring-create-edit-topics.md)
 - [Use variables](authoring-variables.md)
 
-## Use Power Fx expression in a topic
+## Use Power Fx to set a variable
 
 In this example, a Power Fx expression is used to convert the user's name to uppercase.
 
@@ -56,7 +56,7 @@ In this example, a Power Fx expression is used to convert the user's name to upp
 
     :::image type="content" source="media/advanced-power-fx/uppercase-send-message.png" alt-text="Screenshot of the Send a Message node with a message defined.":::
 
-## Using Power Fx expressions in Conditions
+## Use Power Fx as a condition
 
 Condition nodes can be configured to evaluate a Power Fx formula instead of testing the value of a variable.
 
