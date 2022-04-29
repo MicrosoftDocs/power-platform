@@ -26,7 +26,7 @@ Save customers' responses in a bot conversation to variables and reuse them late
 
 For example, save a customer's name in a variable called `UserName` and the bot can address the customer by name as the conversation continues.
 
-You can also pass variables to [Power Automate](advanced-flow.md) and [Bot Framework skills](/azure/bot-service/bot-builder-skills-overview?view=azure-bot-service-4.0&preserve-view=true) as input parameters, and save the output results from those actions.  
+You can also pass variables to [Power Automate](advanced-flow.md) and [Bot Framework skills](/azure/bot-service/bot-builder-skills-overview) as input parameters, and save the output results from those actions.  
 
 ## Prerequisites
 
@@ -98,11 +98,11 @@ Variables can be created in any node that prompts you to select a variable, such
 
 1. In the **Set variable** box, select the **>** arrow.
 
-    :::image type="content" source="media/authoring-variables/create-new-variable-button.png" alt-text="Create a variable.":::
+    :::image type="content" source="media/authoring-variables/create-new-variable-button.png" alt-text="Screenshot of selecting a variable in the Set Variable Value node.":::
 
 1. In the flyout menu that appears, select **Create a new variable**.
 
-    :::image type="content" source="media/authoring-variables/create-variable.png" alt-text="Create a variable.":::
+    :::image type="content" source="media/authoring-variables/create-variable.png" alt-text="Screenshot of Create a new variable button.":::
 
 A new variable will be created with a type that's appropriate for its usage. Use the [variable properties pane](#variable-properties-pane) to rename it.
 
@@ -123,30 +123,30 @@ There are a number of built-in system variables that provide additional informat
 <!-- FIXME: link to telephony doc -->
 <!-- FIXME: what are "onError triggers"? -->
 <!-- best viewed without wordwrap -->
-| Name                                 | Type    | Definition                                                                                                                                      |
-| ------------------------------------ | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| Conversation.Id                      | string  | Unique ID for the current conversation.                                                                                                         |
-| Conversation.TopicInitialUserMessage | string  | User message which triggered the current topic.                                                                                                 |
-| LastActivity.Id                      | string  | ID of the previously sent [activity](/azure/bot-service/bot-activity-handler-concept?view=azure-bot-service-4.0&tabs=csharp#activity-handling). |
-| User.IsLoggedIn                      | boolean | Only `true` when the user is currently signed in.                                                                                               |
-| User.Id                              | string  | Unique ID of the user.                                                                                                                          |
-| User.DisplayName                     | string  | Display name of the user.                                                                                                                       |
-| User.AccessToken                     | string  | Access token for the user.                                                                                                                      |
-| User.Language                        | string  | Language of the user.                                                                                                                           |
-| Error.Code                           | string  | The error code for the current error. Only visible in OnError trigger.                                                                          |
-| Error.Message                        | string  | Message for the current error. Only visible in OnError trigger.                                                                                 |
-| Activity.Channel                     | choice  | Channel ID of the current conversation.                                                                                                         |
-| Activity.ChannelId                   | string  | Channel ID of the current conversation, as a string.                                                                                            |
-| Channel.Specifier                    | string  | Raw value of `ChannelSpecifier` string that was passed by the client.                                                                           |
-| Channel.DisplayName                  | string  | Display name of the channel.                                                                                                                    |
-| Activity.Text                        | string  | Last message sent by the user.                                                                                                                  |
-| Activity.ChannelData                 | any     | An object that contains channel-specific content.                                                                                               |
-| Activity.Value                       | any     | Open-ended value.                                                                                                                               |
-| Activity.Type                        | choice  | Type of [activity](/azure/bot-service/bot-activity-handler-concept?view=azure-bot-service-4.0&tabs=csharp#activity-handling).                   |
-| Activity.TypeId                      | string  | Type of [activity](/azure/bot-service/bot-activity-handler-concept?view=azure-bot-service-4.0&tabs=csharp#activity-handling), as a string.      |
-| Activity.Name                        | string  | Name of the event.                                                                                                                              |
-| Activity.From.Id                     | string  | Channel-specific unique ID for the sender.                                                                                                      |
-| Activity.From.Name                   | string  | Channel-specific user-friendly name of the sender. For the [Telephony channel](), this will include the phone number of the caller.             |
+| Name                                 | Type    | Definition                                                                                                                          |
+| ------------------------------------ | ------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| Conversation.Id                      | string  | Unique ID for the current conversation.                                                                                             |
+| Conversation.TopicInitialUserMessage | string  | User message which triggered the current topic.                                                                                     |
+| LastActivity.Id                      | string  | ID of the previously sent [activity](/azure/bot-service/bot-activity-handler-concept).                                              |
+| User.IsLoggedIn                      | boolean | Only `true` when the user is currently signed in.                                                                                   |
+| User.Id                              | string  | Unique ID of the user.                                                                                                              |
+| User.DisplayName                     | string  | Display name of the user.                                                                                                           |
+| User.AccessToken                     | string  | Access token for the user.                                                                                                          |
+| User.Language                        | string  | Language of the user.                                                                                                               |
+| Error.Code                           | string  | The error code for the current error. Only visible in OnError trigger.                                                              |
+| Error.Message                        | string  | Message for the current error. Only visible in OnError trigger.                                                                     |
+| Activity.Channel                     | choice  | Channel ID of the current conversation.                                                                                             |
+| Activity.ChannelId                   | string  | Channel ID of the current conversation, as a string.                                                                                |
+| Channel.Specifier                    | string  | Raw value of `ChannelSpecifier` string that was passed by the client.                                                               |
+| Channel.DisplayName                  | string  | Display name of the channel.                                                                                                        |
+| Activity.Text                        | string  | Last message sent by the user.                                                                                                      |
+| Activity.ChannelData                 | any     | An object that contains channel-specific content.                                                                                   |
+| Activity.Value                       | any     | Open-ended value.                                                                                                                   |
+| Activity.Type                        | choice  | Type of [activity](/azure/bot-service/bot-activity-handler-concept).                                                                |
+| Activity.TypeId                      | string  | Type of [activity](/azure/bot-service/bot-activity-handler-concept), as a string.                                                   |
+| Activity.Name                        | string  | Name of the event.                                                                                                                  |
+| Activity.From.Id                     | string  | Channel-specific unique ID for the sender.                                                                                          |
+| Activity.From.Name                   | string  | Channel-specific user-friendly name of the sender. For the [Telephony channel](), this will include the phone number of the caller. |
 
 ## Use literal values
 
@@ -168,7 +168,7 @@ Values entered directly will always be treated as a string. To set a specific ty
 | Record   | `{ id: 1 }`, `{ message: "hello" }`, `{ name: "John", info: { age: 25, weight: 175 } }` |
 | DateTime | `Time(5,0,23)`, `Date(2022,5,24)`, `DateTimeValue("May 10, 2022 5:00:00 PM")`           |
 | Choice   | Not supported                                                                           |
-| Blank    | Only `Blank()`  
+| Blank    | Only `Blank()`                                                                          |
 
 ## Variables pane
 
