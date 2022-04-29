@@ -72,7 +72,7 @@ View any of your submitted requests in the canvas app.
 
 As the admin, you can view and triage requests for new environments.
 
-1. Open the canvas app called **Admin - Power Platform Resource RMS**.
+1. Open the canvas app called **Admin - Environment Request**.
 1. View the pending environment creation requests in the home screen.
 
 > [!NOTE]

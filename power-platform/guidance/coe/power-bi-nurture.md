@@ -53,5 +53,16 @@ The **App Usage** page shows your top apps by number of app launches and your us
 
 ![App Usage.](media/pb-19.png "App Usage")
 
+## YoY Adoption
+
+The **YoY Shares** page shows your year-on-year adoption of Power Platform, this page highlights growth in number of apps, cloud flows, desktop flows, chatbots, environments and makers and shows you the percentage increase or decrease year-on-year.
+
+![App Shares.](media/pb-20.png "App Shares")
+
+## Power Apps Adoption
+
+The **Power Apps Adoption** page shows you further insights into how Power Apps is getting adopted in your organization. This page highlights total and monthly new users, and month-on-month growth of users. This page additionally shows Power Apps MAU and Premium MAU (Monthly Active Users) over time, Power Apps user and maker base and high level stats of number of apps using Azure, SharePoint, Dataverse as data sources.
+
+![App Usage.](media/pb-19.png "App Usage")
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
