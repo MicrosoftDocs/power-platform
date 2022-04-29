@@ -1,9 +1,8 @@
 ---
-title: "Dataverse for Teams environment management| MicrosoftDocs"
-description: "This article describes a sample process for managing Microsoft Teams environments by using Microsoft Power Platform."
+title: "Environment capacity management & alerting | MicrosoftDocs"
+description: "This article describes a sample process for managing environment capacity and receiving alerts for overages."
 author: manuelap-msft
 manager: devkeydet
-
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 11/18/2020
@@ -17,78 +16,51 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-# Microsoft Dataverse for Teams environment management
+# Environment capacity management & alerting
 
-You can take advantage of our philosophy of using Microsoft Power Platform to manage Microsoft Power Platform by building automation to send welcome emails to owners of new [Dataverse for Teams environments](../../admin/about-teams-environment.md) and requesting business justifications for newly created environments. This ensures that central IT teams can effectively engage with the new makers onboarding the platform, and ensure that Dataverse for Teams capacity is used effectively in your tenant and distributed to the most important business use cases. Similar workflows can be used to apply specific data loss prevention (DLP) policies to Dataverse for Teams environments as needed, and to invoke cleanup of unused assets to free up capacity for more compelling scenarios in the tenant.
+Power Platform capacity is measured at the tenant level and is made up of three types: database, log, and file capacity. When you are over your tenant's allocated capacity, certain environment operations are impacted and you will no longer be able to create new environments within the tenant. It's therefore important to monitor your capacity and ensure enough capacity is available in the tenant. In addition to monitoring capacity, you may also have a need to cross-charge usage to other departments internally.
 
 ## Process description
 
-**Problem statement:** Central IT wants to ensure that Dataverse for Teams environments are used effectively in their tenant. Central IT wants to understand the business justification for a Dataverse for Teams environment to be able to distribute capacity to the most effective business use cases.
+**Problem statement:** Central IT wants to monitor capacity consumption in the tenant to see which environments consume the most capacity. Central IT wants to cross-charge capacity consumption to business units.
 
-**Solution:** Reactive governance and monitoring abilities are configured to provide team owners the ability to provide a business justification, and to provide central IT with the ability to approve or reject the business justification and run regular, automated cleanup flows.
+**Solution:** Central IT configures approved capacity per environment and adds additional meta-data to store business unit and cost code for cross-charging purposes. Central IT receives notifications when environments are close to or over their approved capacity.
 
-## Business justification process
+## Add approved capacity and business unit information to an environment
 
-The following process is described from the point of view of the people involved and the components they interact with.
+First, an admin will have to configure the approved capacity at the granular environment level:
 
-**Team owner:** The team owner gets a notification in Microsoft Teams to provide a business justification for the environment they've just created. Team owners have seven days to submit a business justification.
+1. Open the [Power Platform Admin View](core-components.md#power-platform-admin-view) app and select **Environments**
+1. Select the environment you want to configure approved capacity for.
+    ![Select environment.](media\capacity-1.png "Select environment.")
+1. Configure approved capacity and view current consumption in the **Capacity and Add-On** section. Configure approved capacity inline by selecting a row and adding the **Approved Capacity** inline. You can configure approved capacity for one or all types of capacity (database, file, log). Capacity is configured in MB.
+    ![Configure capacity](media\capacity-2.png "Configure capacity.")
+1. Configure the business area that owns this environment and their cost code in the **Additional Details** section. Either select an existing business area from the drop-down, or select **+ New Environment Business Area** to add a new business area.
+    ![Configure an environment business area](media\capacity-3.png "Configure an environment business area.")
+1. Add a new environment business area by adding the name, business area lead (owner) and cost code. This can be used for reporting purposes.
+    ![Add a new environment business area](media\capacity-4.png "Add a new environment business area.")
 
-![Team owner receives a prompt to provide a business justification.](media/teams-1.png "Team owner receives a prompt to provide a business justification")
+## Receive capacity alerts
 
-Team owners also receive a Welcome note via email to provide them with further information about their environment and the conditions for using it.
+Power Platform Admins will receive notifications if environments are over or 80% close to their approved capacity.
 
-![Team owner receives welcome email.](media/teams-3.png "Team owner receives welcome email")
+![eMail notification for environments close to their approved capacity](media\capacity-5.png "eMail notification for environments close to their approved capacity.")
 
-**Admin:** Microsoft Teams environments can be reviewed by using the **Microsoft Teams environment review** filter view in the **Power Platform Admin View** model-driven app.
+## Monitor capacity
 
-![Admin point of view in the audit process.](media/teams-4.png "Admin point of view in the audit process")
+Power Platform Admins can also use the Environment Capacity tab of the [Power BI dashboard](power-bi.md) to view how capacity is used across their tenant.
 
-An admin opens **Power Platform Admin View** > **Environments** > **Microsoft Teams environment review** and assesses all the environments due for review by looking at the **Audit** tab within the environment, investigating the justification submitted by the team owner, and then approving or rejecting the justification in the **Admin Review** section.
+![View how capacity is used across the tenant ](media\capacity-6.png "View how capacity is used across the tenant")
 
-![An admin reviews the business justification and approves or rejects it.](media/teams-5.png "An admin reviews the business justification and approves or rejects it")
+## Frequently Asked Questions
 
-The admin can further decide to approve a business justification, but highlight it for later review by providing a review date.
+**Does this process stop an environment from consuming any more capacity once they reach the approved amount?**
+No, the approved capacity is a soft limit for reporting and alerting only. The environment can still consume more capacity. The goal of this process is to allow you to have a better insight into which environments are consuming the tenant’s capacity and place a soft limit on the environment.
 
-![The admin can highlight the business justification for later review.](media/teams-6.png "The admin can highlight the business justification for later review")
+**How is the capacity for Dataverse for Teams environments managed?**
+Dataverse for Teams environments capacity is capped at two (2) GB of combined database and file storage and is separate from this process.
 
-## Monitoring and weekly cleanup process
-
-Admins can also monitor inactive Microsoft Teams environments in their tenant and invoke cleanup as appropriate, in addition to having automated cleanup of unused environments in place to free up capacity for more compelling scenarios.
-
-A weekly cleanup deletes environments that:
-
-- Have been created more than seven days ago and have no business justification, or the business justification has been rejected by the admin.
-- Have been created more than 90 days ago and have no apps or flows in the environment.
-
-> [!NOTE]
-> Currently, bots created by using Power Virtual Agents in Microsoft Teams environments aren't discoverable in the CoE Starter Kit.
-
-An admin can customize the conditions for deletion by creating a copy of the flow and modifying it:
-
-1. Go to [flow.microsoft.com](https://flow.microsoft.com) > **Solutions** > **Center of Excellence - Governance Components**.
-1. Open the *Admin | Weekly Clean Up of Microsoft Teams environments* flow, and save a copy.
-1. Modify the conditions used for marking environments for deletion, based on your business needs.
-
-Team owners will receive a notification that their environment has been deleted.
-
-![Team owner receives notification.](media/teams-2.png "Team owner receives notification")
-
-In addition to the automatic cleanup, admins can also monitor how Microsoft Teams environments are used through a [Microsoft Teams environments](power-bi-monitor.md) report in the CoE Starter Kit dashboard.
-
-The **Microsoft Teams environments** page shows you how many environments, environment makers, and apps and flows in Microsoft Teams environments you have. You can filter on the created date or creator name to drill down on trends and analyze them.
-
-The page visualizes:
-
-- The Microsoft Teams environment creation trend.
-- The number of resources per environment.
-- The list of environments, including the last launched date for an app in the environment.
-- The list of apps in Microsoft Teams environments, including their last launched date.
-
-![Microsoft Teams environment dashboard.](media/pb-6.png "Microsoft Teams environment dashboard")
-
-### See also
-
-[What is Dataverse for Teams?](/powerapps/teams/overview-data-platform)
-
+**I’ve received an email saying an environment is at 80% of the capacity, what actions do I take?**
+Once you are alerted of an environment approaching or exceeding their approved capacity amount, you should reach out to the environment admin to discuss a strategy for capacity management. This could be increasing the approved capacity, [freeing up space](/power-platform/admin/free-storage-space) to reducing the storage needed, or [purchasing additional Microsoft Dataverse storage](/power-platform/admin/add-storage).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

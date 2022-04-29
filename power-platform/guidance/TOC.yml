@@ -205,6 +205,8 @@
 
         - name: Environment management
           href: coe/env-mgmt.md
+        - name: Capacity alerting and reporting
+          href: coe/capacity-alerting.md
     - name: CoE command line interface
       href: coe/cli/overview.md
       items:

@@ -97,7 +97,6 @@ There are several child flows, check to make sure all of these flows are on:
 1. HELPER – CloudFlowOperations
 1. HELPER – CanvasAppOperations
 1. HELPER – ObjectOperations
-1. HELPER - Get Groups
 1. CLEANUP HELPER – Check Deleted (Canvas Apps)
 1. CLEANUP HELPER – Check Deleted (Cloud Flows)
 1. CLEANUP HELPER – Check Deleted (Custom Connectors)

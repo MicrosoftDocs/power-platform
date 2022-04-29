@@ -113,11 +113,21 @@ The Maker Assessment app can be used to ask users a series of questions regardin
 | Flow | Type | Schedule | Description |
 | --- | --- | --- | --- |
 | Pulse - Survey Makers for CoE feedback | Schedule | Weekly on Thursdays | Posts an adaptive card to randomly identified makers to ask them for feedback on how they feel about the Power Platform support and adoption strategy.. |
-| Pulse [Child] - post adaptive cards to maker | Manual | child flow | Uses AI Builder to translate and analyse the feedback response and stores the response in the Pulse Feedback table.|
+| Pulse [Child] - post adaptive cards to maker | Manual | child flow | Uses AI Builder to translate and analyze the feedback response and stores the response in the Pulse Feedback table.|
+
+Makers receive adaptive cards sent by the **Pulse [Child] - post adaptive cards to maker** flow to provide feedback:
+
+![Makers receive adaptive cards to provide feedback.](media/pulse-1.png "Makers receive adaptive cards to provide feedback.")
 
 ### Power BI
 
 Pulse feedback Power BI Dashboard to display feedback and sentiment over time.
+
+![Pulse overview.](media/pulse-2.png "Pulse overview.")
+
+The dashboard also provides the ability to view detailed feedback with and filter by department that provided it.
+
+![Pulse details.](media/pulse-3.png "Pulse details.")
 
 ## Other nurture components
 

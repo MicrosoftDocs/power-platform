@@ -193,13 +193,13 @@ All business process flows are disabled by default. To enable them, do the follo
 
 1. Repeat the previous step for **Flow Approval BPF**, **Custom Connector Approval BPF**, and **Chatbot Approval BPF**.
 
-## Archive processes
+## Inactivity notifications processes
 
 ### Tables
 
-#### Archive approval
+#### Inactivity notifications approval
 
-Represents archival approval tasks started during the App Archive and Clean Up flow.
+Represents inactivity notifications approval tasks started during the Admin | Inactivity notifications v2 flows.
 
 ### Flows
 
@@ -207,14 +207,13 @@ Represents archival approval tasks started during the App Archive and Clean Up f
 | --- | --- | --- |
 |[Microsoft Teams Admin \|  Ask for Business Justification when Microsoft Teams environment is created](#microsoft-teams-admin--ask-for-business-justification-when-microsoft-teams-environment-is-created) | Automated |  Triggered by admin \| Sync Template v3 |
 | [Microsoft Teams Admin \|  Weekly Clean Up of Microsoft Teams environments](#microsoft-teams-admin--weekly-clean-up-of-microsoft-teams-environments) | Schedule | Weekly |
-| [Admin \| Archive and Clean Up v2 (Check Approval)](#admin--archive-and-clean-up-v2-check-approval) | Schedule | Daily |
-| [Admin \| Archive and Clean Up v2 (Clean Up and Delete)](#admin--archive-and-clean-up-v2-clean-up-and-delete) | Schedule | Daily |
-| [Admin \| Archive and Clean Up v2 (Start Approval for Apps)](#admin--archive-and-clean-up-v2-start-approval-for-apps) | Schedule | Weekly |
-| [Admin \| Archive and Clean Up v2 (Start Approval for Flows)](#admin--archive-and-clean-up-v2-start-approval-for-flows) | Schedule | Weekly |
+| [Admin \| Inactivity notifications v2 (Check Approval)](#admin--inactivity-notifications-v2-check-approval) | Schedule | Daily |
+| [Admin \| Inactivity notifications v2 (Clean Up and Delete)](#admin--inactivity-notifications-v2-clean-up-and-delete) | Schedule | Daily |
+| [Admin \| Inactivity notifications (Start Approval for Apps)](#admin--inactivity-notifications-start-approval-for-apps) | Schedule | Weekly |
+| [Admin \| Inactivity notifications (Start Approval for Flows)](#admin--inactivity-notifications-v2-start-approval-for-flows) | Schedule | Weekly |
 | [Admin \| Email Managers Ignored Approvals](#admin--email-managers-ignored-approvals) | Instant | Weekly |
-| [Admin \| Setup - Ignored Archival Requests](#admin--setup---ignored-archival-requests) | Instant | Run Once |
 
-#### Admin \| Archive and Clean Up v2 (Start Approval for Apps)
+#### Admin \| Inactivity notifications v2 (Start Approval for Apps)
 
 Checks for apps that haven't been modified or launched in the last six months (this time span is configurable) and asks the app owner (via flow approvals) whether the app can be deleted.
 
@@ -222,13 +221,13 @@ It recommends that the app owner take a backup of the app in the event that they
 
 This flow starts the approval process and writes the approval task to the Archive Approval Dataverse table.
 
-![Archive and Clean Up v2 (Start Approval for Apps) flow.](media/coe58.png "Archive and Clean Up v2 (Start Approval for Apps) flow")
+![Inactivity notifications v2 (Start Approval for Apps) flow.](media/coe58.png "Inactivity notifications v2 (Start Approval for Apps) flow")
 
 **Customize**: By default, this flow will assign approvals to the app owner. In order to test in a debug environment, in which you don't want to involve users, you can update the [*ProductionEnvironment* environment variable](setup-governance-components.md#all-environment-variables) to **No**, and the approvals will be sent to the admin account instead.
 
-![Archive and Clean Up v2 - workflow for Apps.](media/archivalFlow-Apps.png "Archive and Clean Up v2 - workflow for Apps")
+![Inactivity notifications v2 - workflow for Apps.](media/archivalFlow-Apps.png "Inactivity notifications v2 - workflow for Apps")
 
-#### Admin \| Archive and Clean Up v2 (Start Approval for Flows)
+#### Admin \| Inactivity notifications v2 (Start Approval for Flows)
 
 Similar to the previous flow, but for flows rather than apps. This flow checks for flows that haven't been modified in the last six months (this time span is configurable) and asks the flow owner (via flow approvals) whether the flow can be deleted.
 
@@ -238,15 +237,15 @@ This flow starts the approval process and writes the approval task to the Archiv
 
 **Customize**: By default, this flow will assign approvals to the flow owner. In order to test in a debug environment, in which you don't want to involve users, you can update the [*ProductionEnvironment* environment variable](setup-governance-components.md#all-environment-variables) to **No**, and the approvals will be sent to the admin account instead.
 
-![Archive and Clean Up v2 - workflow for Flows.](media/archivalFlow-Flows.png "Archive and Clean Up v2 - workflow for Flows")
+![Inactivity notifications - workflow for Flows.](media/archivalFlow-Flows.png "Inactivity notifications v2 - workflow for Flows")
 
-#### Admin \| Archive and Clean Up v2 (Check Approval)
+#### Admin \| Inactivity notifications (Check Approval)
 
-On a scheduled interval, checks for approval responses created by the Start Approval flows described above and, if newly approved, marks the approved date so that the Archive and Clean Up v2 (Clean Up and Delete) flow (described below) can delete it after the user has time to archive.
+On a scheduled interval, checks for approval responses created by the Start Approval flows described above and, if newly approved, marks the approved date so that the Inactivity notifications v2 (Clean Up and Delete) flow (described below) can delete it after the user has time to archive.
 
 If approved in the past, but before deletion, it sends a reminder to archive the app or flow before deletion.
 
-#### Admin \| Archive and Clean Up v2 (Clean Up and Delete)
+#### Admin \| Inactivity notifications (Clean Up and Delete)
 
 Runs daily and does two cleanup tasks for the workflow.
 
@@ -256,13 +255,9 @@ Runs daily and does two cleanup tasks for the workflow.
 
 **Customize**: By default, this flow won't delete the apps and flows. This is to ensure you explicitly are ready for that to occur. To begin deletion of flows and apps, update the [*Auto Delete On Archive* environment variable](setup-governance-components.md#all-environment-variables) to **Yes**.
 
-#### Admin \| Setup - Ignored Archival Requests
+#### Admin \| Email Managers Ignored Inactivity notifications Approvals
 
-This flow is run once in order to prepopulate the values for how long people have ignored requests for archival for apps and flows. This flow is optional—values will eventually populate as part of the archive process. It is a long-running flow updating all apps and flows in your inventory.
-
-#### Admin \| Email Managers Ignored Approvals
-
-This flow works with the other Archive and Clean Up flows in that it looks for approvals from this system that have been ignored by makers for one month or more and sends their manager a list of these, asking they help by encouraging their employees to approve or reject the request.
+This flow works with the other Inactivity notifications flows in that it looks for approvals from this system that have been ignored by makers for one month or more and sends their manager a list of these, asking they help by encouraging their employees to approve or reject the request.
 
 ![Mail sent to managers.](media/ArchiveApps1.png "Mail sent to managers")
 
@@ -288,7 +283,7 @@ They can send the person to the app to do the cleanup as well. There, they'll be
 
 ![Send reminder mail screen.](media/ArchiveApps4.png "Send reminder mail screen")
 
-#### App and Flow Archive and Clean Up View
+#### App and Flow Inactivity Notifications Clean Up View
 
 This app gives the admin a view of all objects currently being considered for archival and deletion. An admin can filter to the apps that have been rejected with a note to review:
 
@@ -367,15 +362,15 @@ A list of orphaned objects that can't resolve to a previous manager is sent to t
 
 This flow is triggered daily for every manager who has objects owned by former employees who have left the company. It shows all the cloud flows and canvas apps owned by the former employees and lets the manager decide what to do:
 
-1) Email themselves the list.
-1) Take ownership of them all.
-1) Delete them all.
-1) Assign them all to someone else.
-1) See each one individually. 
+1. Email themselves the list.
+1. Take ownership of them all.
+1. Delete them all.
+1. Assign them all to someone else.
+1. See each one individually.
 
 ![Orphaned object list.](media/orphanedobjects2.png "Orphaned object list")
 
-If they choose to see the items individually, then they can make these decisions granularly. 
+If they choose to see the items individually, then they can make these decisions granularly.
 
 ![Orphaned object item.](media/orphanedobjects3.png "Orphaned object item")
 

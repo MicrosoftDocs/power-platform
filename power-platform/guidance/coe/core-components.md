@@ -420,7 +420,7 @@ Use this app to:
 
 **Prerequisite**: This app uses Microsoft Dataverse. If you have installed this solution in a Production environment, end users need to have a Per User license, or the app needs to be assigned a Per App license, or the environment needs to be covered by pay-as-you-go.  If you have installed this solution in a Dataverse for Teams environment, a Microsoft 365 license is required for every user.
 
-![Power Platform Resource RMS canvas app.](media\dev-resources-admin-details.png "Power Platform Resource RMS canvas app")
+![Admin - Environment Request canvas app.](media\dev-resources-admin-details.png "Admin - Environment Request canvas app")
 
 #### Environment Requests
 
@@ -435,7 +435,7 @@ Use this app to:
 
 **Prerequisite**: This app uses Microsoft Dataverse. If you have installed this solution in a Production environment, end users need to have a Per User license, or the app needs to be assigned a Per App license, or the environment needs to be covered by pay-as-you-go. If you have installed this solution in a Dataverse for Teams environment, a Microsoft 365 license is required for every user.
 
-![Power Platform Developer Resources canvas app.](media\dev-resources-maker-env.png "Power Platform Resource RMS canvas app")
+![Maker - Environment Request canvas app.](media\dev-resources-maker-env.png "Maker - Environment Request canvas app")
 
 ## Other core components
 
