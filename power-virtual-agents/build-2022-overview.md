@@ -118,14 +118,15 @@ This quick start walks you through making a bot that uses new features and impro
 
 <a id="where-to-find"></a>
 
-## If you've been using Composer
+## For desktop Composer users
 
-There are a number of differences and similarities in how bots are designed in Bot Framework Composer and in the Power Virtual Agents technology preview. The following table describes some of the differences and where to find more information in this doc set.
+There are a number of differences and similarities in how bots are designed in Bot Framework Composer and in the Power Virtual Agents technology preview.
+The following table list some key concepts in Composer and describes where to find information about similar concepts in Power Virtual Agents.
 
 | Composer concept | Feature in the technology preview |
 |:-|:-|
 | Dialogs and triggers | Use [topics][] to organize conversation flow or paths. A topic has a set of _trigger phrases_ that indicate when the bot should start the topic and a set of _nodes_ that describe the conversation path for the topic. |
-| Intents | Use [trigger phrases][] to interpret the user's intent. |
+| Intents | Add [trigger phrases][] to a topic for phrases, keywords, and questions that a user is likely to type that are related to a specific issue. Natural language understanding is used to parse what a customer types and find the most appropriate topic. |
 | Actions and prompts | Use [nodes][] on the authoring canvas to create the conversation path for each topic, such as messages, questions, and conditional branches. |
 | Bot response variation | Use [response variations][] and [question variations][] to add variety to your bot's messages and questions. |
 | Suggested actions | Use [quick replies][] to provide default reply options to the user. |
