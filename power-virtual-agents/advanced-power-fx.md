@@ -72,7 +72,7 @@ In this example, the bot will determine if a booking date qualifies for discount
 
 1. In the **Save response as** box, select the **>** arrow and **Create a new variable** named `Var1`.
 
-    :::image type="content" source="media/advanced-power-fx/condition-question-node.png" alt-text="Graphical user interface  text  application  email Description automatically generated":::
+    :::image type="content" source="media/advanced-power-fx/condition-question-node.png" alt-text="Screenshot of question node with date and time entity chosen and variable set.":::
 
 1. Select the **+** icon and then choose **Add a condition**.
 
@@ -82,10 +82,10 @@ In this example, the bot will determine if a booking date qualifies for discount
 
 1. Select the **Formula** tab. In the **fx** box enter `Topic.Var1 > (DateAdd (Now(), 14))` and select **Insert**.
 
-    :::image type="content" source="media/advanced-power-fx/condition-formula.png" alt-text="Graphical user interface  text  application  email Description automatically generated":::
+    :::image type="content" source="media/advanced-power-fx/condition-formula.png" alt-text="Screenshot of Power Fx formula entered into condition node.":::
 
 1. Under the **ConditionItem** node, add a **Send a message** node to let the user know they qualify for a discount. Enter the message `You qualify for a discount`.
 
 1. Under the **All Other Conditions** node, add a **Send a message** node. Enter the message `Sorry, you don't qualify for a discount`.
 
-    :::image type="content" source="media/advanced-power-fx/condition-messages.png" alt-text="Graphical user interface  text  application  email Description     automatically generated":::
+    :::image type="content" source="media/advanced-power-fx/condition-messages.png" alt-text="Screenshot of message nodes in condition branches.":::
