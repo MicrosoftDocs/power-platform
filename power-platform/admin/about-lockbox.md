@@ -18,14 +18,16 @@ search.app:
 ---
 # Customer Lockbox for Microsoft Power Platform (preview)
 
-<!-- This topic should not go live until told to by PM --> 
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 Most operations, support, and troubleshooting performed by Microsoft personnel (including sub-processors) do not require access to customer data. With Power Platform Customer Lockbox, we provide an interface for the customers to review and approve (or reject) data access requests in the rare occasion when data access to customer data is needed It is used in cases where a Microsoft engineer needs to access customer data, whether in response to a customer-initiated support ticket or a problem identified by Microsoft.
 
 This article covers how to enable Customer Lockbox and how lockbox requests are initiated, tracked, and stored for later reviews and audits. 
 
 > [!IMPORTANT]
-> Customer Lockbox for Power Platform is available in preview at no cost. When this feature becomes generally available, there will be a cost associated with environments protected with Customer Lockbox.
+> - Customer Lockbox for Power Platform is available in preview at no cost. When this feature becomes generally available, there will be a cost associated with environments protected with Customer Lockbox.
+> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+> - This feature is being gradually rolled out across regions and might not be available yet in your region.
 
 ## Summary
 
