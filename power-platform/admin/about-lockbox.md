@@ -24,6 +24,9 @@ Most operations, support, and troubleshooting performed by Microsoft personnel (
 
 This article covers how to enable Customer Lockbox and how lockbox requests are initiated, tracked, and stored for later reviews and audits. 
 
+> [!IMPORTANT]
+> Customer Lockbox for Power Platform is available in preview at no cost. When this feature becomes generally available, there will be a cost associated with environments protected with Customer Lockbox.
+
 ## Summary
 
 You can enable Customer Lockbox for your data sources within your tenant. For the duration of the preview, enabling Customer Lockbox will apply to all environments in the respective tenant. Global administrators and Power Platform administrators can enable the lockbox policy. 
