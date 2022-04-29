@@ -24,6 +24,9 @@ search.app:
 
 Depending on a user's role, you can configure the application lifecycle management (ALM) accelerator by turning on and off certain features in the UI, based on user preference and experience. To help all users use the app effectively, a common scenario is to create both a maker experience (for users who are unfamiliar with ALM) and an advanced maker experience (for users who are very familiar with ALM concepts). Deployment profiles are linked to user settings. The app uses deployment profiles to make decisions for the user on where and how to create branches and approvals for deployment.
 
+> [!NOTE]
+> For more information on different experience see [Advanced Maker experience](https://docs.microsoft.com/en-us/power-platform/guidance/coe/almacceleratorpowerplatform-advancedmaker) and  [Maker experience](https://docs.microsoft.com/en-us/power-platform/guidance/coe/almacceleratorpowerplatform-newmaker).
+
 In this section, we'll describe how to use the ALM Accelerator for Power Platform Administration app to configure these settings for use by the ALM accelerator.
 
 ## Creating user settings and profiles with the ALM Accelerator for Power Platform Administration app
@@ -43,9 +46,11 @@ To create user settings for the ALM accelerator for Microsoft Power Platform, fo
     - **Manage Solutions** - This function shows the **Manage Solutions** command in the app.
     - **Drillthrough Status** - This function allows users to drill into the Azure DevOps pipeline runs for the promote and deploy functionality.
     - **Profile Creation** - This function provides users with the ability to create new deployment profiles in the app.
+    - **Profile Updates** - This function provides users with the ability to update deployment profiles settings in the app.
     - **Advanced Promote** - This function provides users with the ability to change between using the advanced promote functionality. They can specify a source and target branch, or create a new branch.
     - **Advanced Deploy** - This function provides users with the ability to switch between using the advanced deploy functionality. They can specify a source and target branch for a pull request.
     - **Bypass Prepare** - This function provides the user with the ability to skip the preparation step during the promotion of a solution. They can bypass needing to configure deployment settings before committing to source control.
+    - **Show All Solutions** - This function provides users with the ability to see all solutions in the selected environment.
 
 1. Update **User Labels**. The following areas are configurable in the app related to user labels for functions. These values also appear in the **Deployment History** view under the action that was executed:
 

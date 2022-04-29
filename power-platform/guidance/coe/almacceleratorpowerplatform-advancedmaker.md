@@ -31,7 +31,7 @@ Watch how to use the ALM Accelerator for Power Platform.
 
 ## Configuration of the ALM accelerator advanced maker user settings
 
-In the following table you can see how the **User Functions** are configured for the **advanced maker** user settings.
+In the following table, you can see how the **User Functions** are configured for the **advanced maker** user settings.
 
 | Field        | Value     | Description |
 |--------------|-----------|------------|
@@ -40,9 +40,11 @@ In the following table you can see how the **User Functions** are configured for
 | Manage Solutions | Allowed  | This function shows the **Manage Solutions** command in the app.|
 | Drillthrough Status | Allowed  | This function allows users to drill into the Azure DevOps pipeline runs for the promote and deploy functionality.|
 | Profile Creation | Allowed  | This function provides users with the ability to create new deployment profiles in the app.|
+| Profile Updates | Allowed  | This function provides users with the ability to updates deployment profiles in the app.|
 | Advanced Promote | Allowed  | This function provides users with the ability to change between using the advanced promote functionality. They can specify a source and target branch, or create a new branch.|
 | Advanced Deploy | Allowed  | This function provides users with the ability to switch between using the advanced deploy functionality. They can specify a source and target branch for a pull request.|
 | Bypass Prepare | Allowed  | This function provides the user with the ability to skip the preparation step during the promotion of a solution. They can bypass needing to configure deployment settings before committing to source control.|
+| Show All Solutions | Allowed  | This function provides the user with the ability to see all solutions in the selected environment.|
 
 The below table shows how the **User Labels** are configured for the **advanced maker** user settings
 
