@@ -50,6 +50,8 @@ The following features are not supported in the technology preview:
 
 This quick start walks you through making a bot that uses new features and improvements introduced in the Technology Preview.
 
+<!-- FIXME: work in cards into this scenario -->
+
 1. Navigate to the Power Virtual Agents home page and select **Create a bot**.
 
 1. Name the bot `Reservation Bot` and select **Create**.
