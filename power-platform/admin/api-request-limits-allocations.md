@@ -220,7 +220,7 @@ Reporting for Power Platform Request usage in preview is available now in the Po
 
 ### What are the timelines for Power Platform Request limits?
 
-The concept of limits was first introduced in late 2019 and documented limits were substantially increased in late 2021. Public preview reporting for Power Platform Requests started rolling out in April 2022. It might take a few weeks to reach all customers. Any potential high usage enforcement won't start until at least six months after reports have been made generally available. However, note that Power Automate will continue to throttle at transition limits until enforcement. See [FAQs](power-automate-licensing/types.md#faqs).
+The concept of limits was first introduced in late 2019 and documented limits were substantially increased in late 2021. Public preview reporting for Power Platform Requests started rolling out in May 2022. It might take a few weeks to reach all customers. Any potential high usage enforcement won't start until at least six months after reports have been made generally available. However, note that Power Automate will continue to throttle at transition limits until enforcement. See [FAQs](power-automate-licensing/types.md#faqs).
 
 ### What account's limits are used for classic workflows or Power Automate flows?
 
