@@ -1,9 +1,8 @@
 ﻿---
-# FIXME: fill out metadata
-title: ""
-description: ""
+title: "Use Power Fx formulas"
+description: "Use Power Fx to create complex bot logic using formulas to manipulate data."
 keywords: "PVA"
-ms.date: 04/13/2022
+ms.date: 05/10/2022
 
 ms.topic: article
 author: v-alarioza
@@ -35,10 +34,8 @@ In this example, a Power Fx expression is used to convert the user's name to upp
 
 1. For **Enter a response**, enter `What is your name?`.
 
-    <!-- FIXME:  do users need to select the icon, or can the select the whole box? -->
-1. In the **Identify** box, select the **>** arrow and choose **Person name**.
+1. Select the **Identify** box, and in the flyout menu, choose **Person name**.
 
-    <!-- FIXME: can users choose a var name at this point? -->
 1. In the **Save response as** box, select the **>** arrow and **Create a new variable** named `Var1`.
 
     :::image type="content" source="media/advanced-power-fx/uppercase-question-node.png" alt-text="Screenshot of the Question node with the user's response set to a variable named Var1.":::
@@ -57,10 +54,11 @@ In this example, a Power Fx expression is used to convert the user's name to upp
 
 1. Enter the `User Name:` and then add `Var2`.
 
-    <!-- FIXME: this screenshot doesn't seem to have the correct UI -->
     :::image type="content" source="media/advanced-power-fx/uppercase-send-message.png" alt-text="Screenshot of the Send a Message node with a message defined.":::
 
 ## Using Power Fx expressions in Conditions
+
+Condition nodes can be configured to evaluate a Power Fx formula instead of testing the value of a variable.
 
 In this example, the bot will determine if a booking date qualifies for discount. To do this, it checks if the booking date provided by the user is 14 days or more from the current date.
 
@@ -78,7 +76,7 @@ In this example, the bot will determine if a booking date qualifies for discount
 
 1. Select the **+** icon and then choose **Add a condition**.
 
-1. In the **ConditionItem** node, select the vertical three dots, then **Change to formula**.
+1. In the **ConditionItem** node, select **Node menu** (vertical three dots), then **Change to formula**.
 
 1. In the **Enter or select a value** box, select the **>**.
 
