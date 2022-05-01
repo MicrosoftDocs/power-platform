@@ -6,7 +6,7 @@ manager: phtopnes
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/05/2022
+ms.date: 04/28/2022
 ms.subservice: guidance
 ms.author: stjeffer
 ms.reviewer: jimholtz
@@ -121,23 +121,8 @@ If you can see any unmanaged layers, you'll need to remove them prior to updatin
 
 ### If you haven't made customizations
 
-If you haven't made customizations to the CoE Starter Kit, follow the steps described below:
-
-1. Import the solution to a testing environment
-    1. If [importing to a Production Environment](/power-platform/guidance/coe/faq#installing-a-solution-in-a-production-environment) - use the solution file from the download called CenterOfExcellenceCoreComponents_x_x_x_xx_managed.zip
-    1. If [importing to a Dataverse for Teams Environment](/power-platform/guidance/coe/faq#installing-a-solution-in-a-dataverse-for-teams-environment) - use the solution file from the download called CenterOfExcellenceCoreComponentsTeams_x_x_x_xx_managed.zip
-
-2. Select **Upgrade** (default). [Solution upgrades](/power-platform/alm/solution-concepts-alm#solution-lifecycle) delete components that existed in the solution but have been removed.
-
-    ![Screenshot of upgrade dialogue in import solution wizard](media/coe-upgrade1.png)
-
-3. If the upgrade adds new environment variables, or connection references, establish connections and update environment variables.  The expected values will be in our setup instructions.
-
-4. The upgrade can take **up to 15 minutes**. During the upgrade, the new version is installed first and then the old version is deleted.  Whilst the upgrade is processing, you may see two solutions with the same name in your solution explorer.  Check the [solution history](/powerapps/maker/data-platform/solution-history#view-solution-history) to view the progress of the upgrade.
-
-5. Checking the solution history will also show you if the upgrade has failed and why.
-
-6. When the upgrade has completed processing, move onto testing (below).
+If you haven't made customizations to the CoE Starter Kit, follow the steps described in [this document](/power-platform/guidance/coe/faq#installing-a-solution-in-a-production-environment).
+When the upgrade has completed processing, move onto testing (below).
 
 ### If you've made customizations
 
