@@ -123,23 +123,23 @@ This quick start walks you through making a bot that uses new features and impro
 There are a number of differences and similarities in how bots are designed in Bot Framework Composer and in the Power Virtual Agents technology preview.
 The following table list some key concepts in Composer and describes where to find information about similar concepts in Power Virtual Agents.
 
-| Composer concept | Feature in the technology preview |
-|:-|:-|
-| Dialogs and triggers | Use [topics][] to organize conversation flow or paths. A topic has a set of _trigger phrases_ that indicate when the bot should start the topic and a set of _nodes_ that describe the conversation path for the topic. |
-| Intents | Add [trigger phrases][] to a topic for phrases, keywords, and questions that a user is likely to type that are related to a specific issue. Natural language understanding is used to parse what a customer types and find the most appropriate topic. |
-| Actions and prompts | Use [nodes][] on the authoring canvas to create the conversation path for each topic, such as messages, questions, and conditional branches. |
-| Bot response variation | Use [response variations][] and [question variations][] to add variety to your bot's messages and questions. |
-| Suggested actions | Use [quick replies][] to provide default reply options to the user. |
-| Entities | Define and use [entities][] to extract semantic information from a user's utterance. |
-| State, storage, and properties | Use [variables][] to track state. |
-| Formulas and expressions | Use [Power FX][] to create expressions. |
+| Composer concept | Power Virtual Agents concept | Description |
+|:-|:-|:-|
+| Dialogs and triggers | [Topics][] | Use topics to organize conversation flow or paths. A topic has a set of _trigger phrases_ that indicate when the bot should start the topic and a set of _nodes_ that describe the conversation path for the topic. |
+| Intents | [Trigger phrases][] | Add trigger phrases to a topic for phrases, keywords, and questions that a user is likely to type that are related to a specific issue. Natural language understanding is used to parse what a customer types and find the most appropriate topic. |
+| Actions and prompts | [Nodes][] | Use nodes on the authoring canvas to create the conversation path for each topic, such as messages, questions, and conditional branches. |
+| Bot response variation | [Response variations][] and [question variations][] | Use response and question variations to add variety to your bot's messages and questions. |
+| Suggested actions | [Quick replies][] | Use quick replies to provide default reply options to the user. |
+| Entities | [Entities][] | Define and use entities to extract semantic information from a user's utterance. |
+| State, storage, and properties | [Variables][] | Use variables to track state. |
+| Formulas and expressions | [Power FX][] | Use Power FX to create expressions. |
 
-[entities]: #where-to-find
-[nodes]: #where-to-find
+[Entities]: #where-to-find
+[Nodes]: #where-to-find
 [Power FX]: #where-to-find
 [question variations]: #where-to-find
-[quick replies]: #where-to-find
-[response variations]: #where-to-find
-[topics]: #where-to-find
-[trigger phrases]: #where-to-find
-[variables]: #where-to-find
+[Quick replies]: #where-to-find
+[Response variations]: #where-to-find
+[Topics]: #where-to-find
+[Trigger phrases]: #where-to-find
+[Variables]: #where-to-find
