@@ -1,7 +1,7 @@
 ---
 title: "Content security policy"
 description: "Use content security policy to control which assets can be downloaded by model-driven app customizations."  
-ms.date: 04/04/2022
+ms.date: 05/02/2022
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: conceptual
@@ -22,7 +22,7 @@ search.app:
 ---
 # Content security policy
 
-[Content Security Policy](https://developer.mozilla.org/docs/Web/HTTP/CSP) (CSP) is currently supported in model-driven Power Apps via two organization entity attributes which control whether the CSP header is sent and, to an extent, what it contains. This setting is at the organization level, which means it would be applied to all apps in the organization once turned on.
+[Content Security Policy](https://developer.mozilla.org/docs/Web/HTTP/CSP) (CSP) is currently supported in model-driven Power Apps via two organization entity attributes which control whether the CSP header is sent and, to an extent, what it contains. This setting is at the tenant level, which means it would be applied to all apps in the tenant once turned on. 
 
 > [!NOTE]
 > CSP is currently only supported in model-driven apps.  Canvas app support is on the roadmap, and will be enabled by June 2022.
@@ -107,7 +107,7 @@ async function enableFrameAncestors(sources) {
 Steps:
 - Open browser dev tools while using the model-driven app as a user with organization entity update privileges (System Administrator is a good option).
 - Paste and execute the below script into the console.
-- To disable CSP, paste into console - `disableCSP()`
+- To disable CSP, paste into the console: `disableCSP()`
 
 ```js
 async function disableCSP() {
