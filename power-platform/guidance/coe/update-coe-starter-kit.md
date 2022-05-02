@@ -26,7 +26,6 @@ The CoE Starter Kit provides inspiration and a starting point for Power Platform
 
 - [The CoE Starter Kit](/power-platform/guidance/coe/starter-kit)
 - [Setting up the CoE Starter Kit](/power-platform/guidance/coe/setup)
-- [Installing CoE upgrades](/power-platform/guidance/coe/after-setup)
 - [Extending CoE components](/power-platform/guidance/coe/extending-components)
 
 ## How is the CoE Starter Kit updated?
@@ -121,37 +120,58 @@ If you can see any unmanaged layers, you'll need to remove them prior to updatin
 
 ### If you haven't made customizations
 
-If you haven't made customizations to the CoE Starter Kit, follow the steps described in [this document](/power-platform/guidance/coe/faq#installing-a-solution-in-a-production-environment).
+If you haven't made customizations to the CoE Starter Kit, follow the steps described in [this document](/power-platform/guidance/coe/faq#installing-a-solution-in-a-production-environment) to import the update.
+
 When the upgrade has completed processing, move onto testing (below).
 
 ### If you've made customizations
 
 Any cloud flow, app or table that you've changed in the solution won't receive updates until you remove the unmanaged layer. Read our recommendations for [extending the CoE Starter Kit](/power-platform/guidance/coe/extending-components) to avoid creating unmanaged layers.
 
-**Removing unmanaged layers:**
+**Remove unmanaged layers prior to update:**
 
 >[!IMPORTANT]
->Changing any flow, app or table in the solution introduces an unmanaged layer. Components that have been changed won't receive any updates until the unmanaged layer has been removed.
+>Editing components in the solution introduces an unmanaged layer. Components that have been changed won't receive any updates until the unmanaged layer has been removed.
 
-1. Select ... > **See solution layers**
+If you have made any changes to the flows or apps in the solution, they will not receive updates until you remove that unmanaged layer. For every flow/app that you changed but would like to receive the latest update, go to the solution layers and remove the unmanaged layer. A good indication that a component has been changed is if the modified date is more recent than the latest install. Read our recommendations for extending the CoE Starter Kit to avoid creating unmanaged layers.
 
-![Screenshot showing where solution layer option is](media/upgrade1.png)
+1. Select ... > See solution layers.
 
-2. **Select Remove  unmanaged layer**
+![See solution layers](/power-platform/guidance/coe/media/upgrade1.png)
 
-![Remove unmanaged layer link](media/upgrade2.png)
+2. Select Remove unmanaged layer
+
+![Remove unmanaged solution layer](/power-platform/guidance/coe/media/upgrade2.png)
 
 3. Import the solution to a testing environment
     1. If [importing to a Production Environment](/power-platform/guidance/coe/faq#installing-a-solution-in-a-production-environment) - use the solution file from the download called CenterOfExcellenceCoreComponents_x_x_x_xx_managed.zip
     1. If [importing to a Dataverse for Teams Environment](/power-platform/guidance/coe/faq#installing-a-solution-in-a-dataverse-for-teams-environment) - use the solution file from the download called CenterOfExcellenceCoreComponentsTeams_x_x_x_xx_managed.zip
 
-If the upgrade adds new environment variables, or connection references, establish connections and update environment variables.  The expected values will be in our setup instructions.
+4. Select Upgrade (default setting). Solution upgrades will delete components that existed but are no longer included in the upgraded version.
 
-4. The upgrade can take **up to 15 minutes**. During the upgrade, the new version is installed first and then the old version is deleted.  Whilst the upgrade is processing, you may see two solutions with the same name in your solution explorer.  Check the [solution history](/powerapps/maker/data-platform/solution-history#view-solution-history) to view the progress of the upgrade.
+![Select upgrade to install the new solution version](/power-platform/guidance/coe/media/coe-upgrade1.png)
 
-5. Checking the solution history will also show you if the upgrade has failed and why.
+5. If the upgrade adds new environment variables or connection references, establish connections and update environment variable values. You will find the expected values in our setup instructions.
 
-6. When the upgrade has completed processing, move onto testing (below).
+6. Wait for the Upgrade to finish. This can take up to 15 mins. During the upgrade, the new version is installed first and then the old version is deleted. Whilst the upgrade is processing, you may see two solutions with the same name in your solution explorer. [Check the solution history](/powerapps/maker/data-platform/solution-history#view-solution-history) to view the progress of the upgrade.
+
+![Check the solution history](/power-platform/guidance/coe/media/coe-upgrade3.png)
+
+The upgrade will be complete when the end time is no longer empty.
+
+![Check the end time for the solution import is not empty.](/power-platform/guidance/coe/media/coe-upgrade2.png)
+
+7. The [solution history](/powerapps/maker/data-platform/solution-history#view-solution-history) will also show you if the upgrade has failed and why. [Raise an issue](https://aka.ms/coe-starter-kit-issues) and [provide the solution operation error details](/en-us/powerapps/maker/data-platform/solution-history#view-solution-operation-error-details).
+
+![View solution operation error details](/en-us/power-platform/guidance/coe/media/coe-upgrade4.png)
+
+8. Make sure to check the setup instructions of the solution you're upgrading to see if any new steps are necessary to use the solution and it's new features.
+
+a. [Setup core components](/en-us/power-platform/guidance/coe/setup-core-components)
+b. [Setup governance components](/en-us/power-platform/guidance/coe/before-setup-gov)
+c: [Setup nurture components](/en-us/power-platform/guidance/coe/setup-nurture-components)
+
+When the upgrade has completed processing, move onto testing (below).
 
 ## Testing strategy
 
