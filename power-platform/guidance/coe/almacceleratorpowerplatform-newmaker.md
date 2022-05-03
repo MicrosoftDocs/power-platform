@@ -137,7 +137,7 @@ The below table shows how the **User Labels** are configured for the **maker** u
 
    - **Flows**
 
-      :::image type="content" source="media/almacceleratorpowerplatform-components/aa4pp-deployment-settings-flows.png" alt-text="Component Ownership configuration.":::
+      :::image type="content" source="media/almacceleratorpowerplatform-components/aa4pp-deployment-settings-flows.png" alt-text="Deployment settings flows.":::
 
       - This screen lists all of the flows in your solution. Users can configure the owner of the flow, Dataverse Team sharing of the flow, the user with which to activate the flow, whether a flow should be activated or not, and, the sequence of flow activation in the downstream environment.
       - To view the flow, select the name of the flow to open a new tab with the flow definition.
@@ -148,7 +148,7 @@ The below table shows how the **User Labels** are configured for the **maker** u
 
    - **Custom Connectors**
 
-      :::image type="content" source="media/almacceleratorpowerplatform-components/aa4pp-deployment-settings-custom-connectors.png" alt-text="Component Ownership configuration.":::
+      :::image type="content" source="media/almacceleratorpowerplatform-components/aa4pp-deployment-settings-custom-connectors.png" alt-text="Deployment settings custom connectors.":::
 
       - This screen lists all the custom connectors in the solution. Users can configure sharing of customer connectors to Dataverse Teams in the downstream environment
       - Use the **Sharing** dropdown list to select the Dataverse Team to share the custom connector to. Note, this dropdown will list Dataverse Teams in the downstream environment and Dataverse teams configured in the Group Teams configuration.
