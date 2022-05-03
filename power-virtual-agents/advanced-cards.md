@@ -27,7 +27,7 @@ There are several types of cards that provide different experiences to users. Al
 
 ## Basic Card
 
-:::image type="content" source="media/advanced-cards/add-basic-card.png" alt-text="Four lesson topics and a number of system topics are in the Topics list.":::
+:::image type="content" source="media/advanced-cards/add-basic-card.png" alt-text="Screenshot of a message node with a basic card.":::
 
 A **basic card** is a general purpose card that can be used in a variety of situations to add text, images, and interactive elements to bot responses.
 
@@ -39,7 +39,7 @@ A **basic card** is a general purpose card that can be used in a variety of situ
 
 ## Image Card
 
-:::image type="content" source="media/advanced-cards/add-image-card.png" alt-text="Four lesson topics and a number of system topics are in the Topics list.":::
+:::image type="content" source="media/advanced-cards/add-image-card.png" alt-text="Screenshot of a message node with an image card.":::
 
 An **image card** is a specialized card used to show an image to a user.
 
@@ -53,7 +53,7 @@ An **image card** is a specialized card used to show an image to a user.
 
 ## Video Card
 
-:::image type="content" source="media/advanced-cards/add-video-card.png" alt-text="Four lesson topics and a number of system topics are in the Topics list.":::
+:::image type="content" source="media/advanced-cards/add-video-card.png" alt-text="Screenshot of a message node with a video card.":::
 
 A **video card** is a specialized card used to show a video to a user.
 
@@ -67,7 +67,7 @@ A **video card** is a specialized card used to show a video to a user.
 
 ## Adaptive Card
 
-:::image type="content" source="media/advanced-cards/add-adaptive-card.png" alt-text="Four lesson topics and a number of system topics are in the Topics list.":::
+:::image type="content" source="media/advanced-cards/add-adaptive-card.png" alt-text="Screenshot of a message node with an adaptive card.":::
 
 An **adaptive card** is fully customizable card that you can tailor to your needs. You can author adaptive cards by hand in JSON, or use the [Adaptive Cards Designer](https://adaptivecards.io/designer/) to create a card in a drag-and-drop interface.
 
@@ -87,8 +87,8 @@ If you add more than one card to a node, two display options will appear in the 
 - **Carousel** displays one card at a time.
 - **List** displays all cards in a vertical list.
 
-:::image type="content" source="media/advanced-cards/card-display.png" alt-text="Four lesson topics and a number of system topics are in the Topics list.":::
+:::image type="content" source="media/advanced-cards/card-display.png" alt-text="Screenshot of image cards in carousel mode and list mode.":::
 
 You can remove cards from a node by selecting the **Delete** button in the corner of the card.
 
-:::image type="content" source="media/advanced-cards/delete-card.png" alt-text="Four lesson topics and a number of system topics are in the Topics list.":::
+:::image type="content" source="media/advanced-cards/delete-card.png" alt-text="Screenshot of delete button on an image card.":::
