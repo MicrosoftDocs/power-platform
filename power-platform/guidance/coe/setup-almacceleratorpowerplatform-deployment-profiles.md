@@ -25,7 +25,7 @@ search.app:
 Depending on a user's role, you can configure the application lifecycle management (ALM) accelerator by turning on and off certain features in the UI, based on user preference and experience. To help all users use the app effectively, a common scenario is to create both a maker experience (for users who are unfamiliar with ALM) and an advanced maker experience (for users who are very familiar with ALM concepts). Deployment profiles are linked to user settings. The app uses deployment profiles to make decisions for the user on where and how to create branches and approvals for deployment.
 
 > [!NOTE]
-> For more information on different experience see [Advanced Maker experience](https://docs.microsoft.com/en-us/power-platform/guidance/coe/almacceleratorpowerplatform-advancedmaker) and  [Maker experience](https://docs.microsoft.com/en-us/power-platform/guidance/coe/almacceleratorpowerplatform-newmaker).
+> For more information on different experience see [Advanced Maker experience](/power-platform/guidance/coe/almacceleratorpowerplatform-advancedmaker) and  [Maker experience](/power-platform/guidance/coe/almacceleratorpowerplatform-newmaker).
 
 In this section, we'll describe how to use the ALM Accelerator for Power Platform Administration app to configure these settings for use by the ALM accelerator.
 

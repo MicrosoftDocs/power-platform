@@ -127,6 +127,11 @@ After setting up an advanced maker, you might need to verify the following set-u
 
    ![Azure DevOps Permit](../media/devops-pipeline-permit.jpg)
 
+1. **Optional**. By default, the global variables, service connections and repositories are restricted and access for each pipeline must be configured. To grant access to all pipelines follow the instructions:
+     1. **Service Connections** - Go to Project Settings -> Service Connections -> Edit Service Connection -> Grant access permissions to all pipelines. This has to be done for each Service Connection.
+     1. **Variable Group** - Go to Pipelines -> Library -> Edit alm-accelerator-variable-group -> Pipeline Permissions -> Select ... -> Open Access
+     1. **Repository** - Go to Project Settings -> Repositories -> select each pipeline -> Security -> Pipeline permissions -> Select ... -> Open Access
+
 NOTES:
 
 If you're using a free Azure subscription, you may receive the error message "No hosted parallelism has been purchased or granted". To resolve this issue, go to [https://aka.ms/azpipelines-parallelism-request](https://aka.ms/azpipelines-parallelism-request) and request an Azure Pipeline build compute.
