@@ -1,9 +1,8 @@
 ---
-# FIXME: set metadata
 title: "Add multimedia cards to messages"
-description: ""
+description: "Add rich multimedia responses to **Question** and **Message** nodes."
 keywords: "PVA"
-ms.date: 04/05/2022
+ms.date: 05/10/2022
 
 ms.topic: article
 author: v-alarioza
@@ -12,8 +11,6 @@ ms.reviewer: gapretty
 manager: shellyha
 ms.custom: authoring, topics, variables, ceX
 ms.collection: virtual-agent
-searchScope:
-  - "Power Virtual Agents"
 ---
 
 # Add cards to bot responses
