@@ -70,7 +70,7 @@ This quickstart walks you through making a bot that uses new features and improv
 
 1. Select **Save**.
 
-## Final steps
+## Next steps
 
 <!-- FIXME: link doc once written -->
 1. [Enable and configure the Telephony channel]().
