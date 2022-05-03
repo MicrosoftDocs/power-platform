@@ -190,11 +190,9 @@ In the variable properties pane you can rename a variable, see where a variable 
 
 ## Use variables in action nodes
 
-<!-- FIXME: does this still work this way? flows currently 404  -->
-
 When you use a variable in an action node, if its base type matches a parameter type that's specified for a flow or Bot Framework skill, you can pass it to that parameter. The output from action nodes generates new variables.  
 
-:::image type="content" source="media/authoring-variables/User_a_variable_in_Skills(draft).PNG" alt-text="Screenshot of using an entity in an action node.":::
+:::image type="content" source="media/authoring-variables/variable-in-flow.PNG" alt-text="Screenshot of using an entity in an action node.":::
 
 ## Passing variables between topics
 
