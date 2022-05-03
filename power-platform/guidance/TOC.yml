@@ -48,7 +48,7 @@
           - name: Set up Azure AD Conditional Access
             href: adoption/conditional-access.md
           - name: Enable cross-tenant isolation
-            href: adoption/tenant-isolation.md
+            href: /power-platform/admin/cross-tenant-restrictions
       - name: Monitor and alert
         items: 
           - name: Report on resource usage
