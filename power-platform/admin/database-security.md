@@ -2,14 +2,15 @@
 title: Configure user security in an environment | Microsoft Docs
 description: Configure user security in environment
 ms.subservice: admin
-ms.author: jimholtz
-author: jimholtz
+ms.author: paulliew
+author: paulliew
 ms.reviewer: jimholtz
+contributors:
+  - hamenon-ms 
 ms.custom: "admin-security"
-
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/10/2022
+ms.date: 05/03/2022
 search.audienceType: 
   - admin
 search.app:
@@ -99,10 +100,10 @@ The following table describes which resources can be authored by each security r
 |Dataverse tables     |-         |-         |X         |X         |
 |Model-driven app     |X        |-         |X         |X         |
 |Solution framework     |-         |-         |X         |X         |
-|Desktop flow     |-         |-         |X         |X         |
+|<sup>*</sup>Desktop flow     |-         |-         |X         |X         |
 |AI Builder     |-         |-         |X         |X         |
 
-
+<sup>*</sup>Dataverse for Teams users don’t get access to desktop flows by default. You need to upgrade your environment to full Dataverse capabilities and acquire [Desktop flow license plans](https://powerautomate.microsoft.com/pricing/) in order to use desktop flows.
 
 
 ## Assign security roles to users in an environment that has no Dataverse database 
