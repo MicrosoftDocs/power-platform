@@ -584,6 +584,8 @@
         href: capacity-storage.md
       - name: Legacy capacity storage model
         href: legacy-capacity-storage.md
+      - name: Finance and Operations storage capacity 
+        href: finance-operations-storage-capacity.md
       - name: View self-service capacity
         href: view-self-service-capacity.md
       - name: Free up storage space
@@ -592,8 +594,6 @@
         href: add-storage.md      
       - name: Access storage with SAS token
         href: storage-sas-token.md 
-      - name: Finance and Operations storage capacity 
-        href: finance-operations-storage-capacity.md
     - name: Resources
       items:
       - name: Overview 
