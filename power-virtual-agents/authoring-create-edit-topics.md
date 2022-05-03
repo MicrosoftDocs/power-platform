@@ -233,7 +233,6 @@ You can also have the conversation [handed over to a live agent](advanced-hand-o
 
 #### Set a variable value
 
-<!-- FIXME: short summary of node -->
 See [Set variable value](authoring-variables.md#set-a-variable).
 
 ### Delete nodes

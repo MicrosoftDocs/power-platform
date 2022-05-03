@@ -29,7 +29,7 @@ For example, in a "Welcome" topic, the bot asks for the customer's name and emai
 
 These variables are called **global variables**, because they apply across the entire bot.
 
-Global variables apply during a single user session. You specify which variables should be treated as global variables to distinguish them from topic-level variables.
+Global variables apply during a single user session. Specify the global variables to distinguish them from topic-level variables.
 
 ## Prerequisites
 
@@ -52,7 +52,7 @@ Global variables apply during a single user session. You specify which variables
 
 After you set a global variable, it will be available to all topics.
 
-When you select the `{x}` button in a message node or question node when you're composing a bot message, you'll see that the global variable is available. Variables are sorted in alphabetical order, so you'll find that all global variables are grouped together in the variable menu because they all begin with `bot.`.
+When you're composing a bot message in a message node or question node, select the `{x}` button to see the global variable. Variables are sorted in alphabetical order, so you'll find that all global variables are grouped together in the variable menu because they all begin with `bot.`.
 
 :::image type="content" source="media/authoring-variables-bot/bot-variable-message.png" alt-text="Screenshot showing selection of the x variable icon to display a list of variables." border="false":::
 
@@ -102,13 +102,13 @@ In this situation, the flow or skill will still run and fill in the variable, ov
 
 Global variables are accessible from any topic, and the global variable's assigned value persists throughout [the session](analytics-billed-sessions.md#definition-of-a-billed-session).
 
-The value is only cleared when the bot user is redirected to [the **Start over** system topic](authoring-create-edit-topics.md#use-system-and-sample-topics), or when the user triggers this topic directly (for example, by typing *Start over*). In this case, all global variables will be reset and won't have any values.
+The value is only cleared when the bot user ends up at [the **Start over** system topic](authoring-create-edit-topics.md#use-system-and-sample-topics), either via redirection from the bot or when the user triggers it directly (for example, by typing *Start over*). In this case, all global variables are reset.
 
 ## Set a global variable's value from external sources
 
-You can set a global variable to be initialized with an external source. This lets the bot start the conversation with some context.
+If you want to make sure the bot starts a conversation with some context, you can set a global variable to be initialized with an external source.
 
-For example, a customer brings up a bot chat from your web site, and the site already knows the customer's name. You let the bot know the user's name before starting the conversation, and the bot can have a more intelligent conversation with the customer without having to ask for their name again.
+For example, if your site already knows a user's name, then when they bring up a bot chat, you can let the bot know the customer's name before they start typing their first question. This lets the bot have a more intelligent conversation with the customer without having to ask for their name again.
 
 ### Set global variable from external source
 
@@ -118,7 +118,7 @@ For example, a customer brings up a bot chat from your web site, and the site al
 
 :::image type="content" source="media/authoring-variables-bot/bot-variable-external.png" alt-text="Screenshot of the Usage section on the Variable Properties pane, with the Bot option and External sources can set values checkbox both selected":::
 
-1. You can append the variables and their definitions if you're simply [embedding your bot in a simple webpage](publication-connect-bot-to-web-channels.md#custom-website), or you can use a `<script>` code block to call and use variables programatically.
+1. If you're [embedding your bot in a simple webpage](publication-connect-bot-to-web-channels.md#custom-website), you can append the variables and their definitions. Or, if you'd like a little more control, you can use a `<script>` code block to call and use variables programatically.
 
     > [!NOTE]
     > The variable name in the query string must match that of the global variable, without the `bot.` prefix. For example, a global variable `bot.UserName` must be rendered as `UserName=`.
@@ -127,7 +127,7 @@ In the examples described here, a simple declaration is made for the variables. 
 
 ### To add the variable to an embedded bot
 
-1. Append the variables and their definitions to the bot's URL as [query string parameters](https://en.wikipedia.org/wiki/Query_string) (in the format of `botURL?variableName1=variableDefinition1&variableName2=variableDefinition2`), for example:
+1. Append the variables and their definitions to the bot's URL as [query string parameters](https://en.wikipedia.org/wiki/Query_string) (in the format of `botURL?variableName1=variableDefinition1&variableName2=variableDefinition2`). For example:
 
     - You have a global variable named `bot.UserName`.
     - Your bot's URL is _https://web.powerva.microsoft.com/webchat/bots/12345_.
@@ -196,7 +196,7 @@ Topics with nodes that contain references to deleted global variables might stop
 
 ## Authentication-related global variables
 
-Depending on the bot's authentication setup, you will have a set of global variables associated with the authentication provider available to you. For details about which set of variables are available and how to use them, see the [Add end-user authentication to a Power Virtual Agents bot](advanced-end-user-authentication.md) documentation topic.
+Depending on the bot's authentication setup, you'll have a set of global variables associated with the authentication provider available to you. For details about which set of variables are available and how to use them, see the [Add end-user authentication to a Power Virtual Agents bot](advanced-end-user-authentication.md) documentation topic.
 
 ## Related links
 
