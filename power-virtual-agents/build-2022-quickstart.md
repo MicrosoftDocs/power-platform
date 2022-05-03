@@ -13,31 +13,16 @@ ms.collection: virtual-agent
 
 <!-- FIXME: add screenshots once scenario is approved -->
 
-This quickstart walks you through making a bot that uses new features and improvements introduced in the technology preview at Build.
+This quickstart walks you through making a bot that uses new features and improvements introduced in the technology preview at Build. In this example, we'll be creating a simple bot that helps users make a reservation at a fictional restaurant.
 
-<!-- FIXME: work in cards into this scenario -->
-
-1. Navigate to the Power Virtual Agents home page and select **Create a bot**.
+<!-- FIXME: link doc once written -->
+1. Navigate to the [Power Virtual Agents home page]() and select **Create a bot**.
 
 1. Name the bot `Reservation Bot` and select **Create**.
 
-1. In the side navigation, select **Topics**. Then select the **Greeting** topic.
+## Add a reservation topic
 
-1. Delete all existing **Message** nodes.
-
-1. Add a **Message** node. Then add the following greetings as [message variations](authoring-create-edit-topics.md#message-variations):
-    - `Good day!`
-    - `Hi there!`
-    - `Hi!`
-
-1. Add a second **Message** node and add the message `We're open 9am to 5pm Monday through Friday. If you'd like, I can help you make a reservation.`
-
-    <!-- FIXME: link doc once written -->
-1. Add a third **Message** node. Then add the following message which uses [SSML tags](): `<emphasis level="strong">Please note</emphasis><break strength="medium" /> we will be closed on May 27th.`
-
-1. Select **Save**.
-
-1. Go back to the topics list and select **New topic**.
+1. In the side navigation, select **Topics** and then  **New topic**.
 
 1. Add the following trigger phrases:
     - `make a reservation`
@@ -58,13 +43,36 @@ This quickstart walks you through making a bot that uses new features and improv
 
 1. Under the **ConditionItem** node add a **Message** node. Then enter the message `Sorry, but we're closed on May 27th. Please make a reservation on another day.`
 
-1. Under the **All Other Conditions** node, add a **Message** node and enter the message `Your reservation has been made for `. Then add the variable **reservationDateTime**.
+1. Under the **All Other Conditions** node, add a **Message** node and enter the message `Your reservation has been made for`. Then add the variable **reservationDateTime**.
 
 1. Add an **Redirect** node where the two condition branches meet and choose the **End of conversation** topic.
 
 1. Name the topic `Make a reservation` and select **Save**.
 
+## Customize greeting topic
+
+1. In the side navigation, select **Topics**. Then select the **Greeting** topic.
+
+1. Delete all existing **Message** nodes.
+
+1. Add a **Message** node. Then add the following greetings as [message variations](authoring-create-edit-topics.md#message-variations):
+    - `Good day!`
+    - `Hi there!`
+    - `Hi!`
+
     <!-- FIXME: link doc once written -->
+1. Add a second **Message** node. Then add the following message which uses [SSML tags](): `We're open 9am to 5pm Monday through Friday. <emphasis level="strong">Please note</emphasis><break strength="medium" /> we will be closed on May 27th.`
+
+1. Add a third **Message** node and add the message `If you'd like, I can help you make a reservation.`
+
+    <!-- FIXME: link doc once written, add additional steps -->
+1. Add a [quick reply]() with the message `make a reservation`.
+
+1. Select **Save**.
+
+## Final steps
+
+<!-- FIXME: link doc once written -->
 1. [Enable and configure the Telephony channel]().
 
     <!-- FIXME: link doc once written -->
