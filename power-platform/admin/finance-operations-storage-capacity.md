@@ -20,8 +20,6 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Most operations, support, and troubleshooting performed by Microsoft personnel (including sub-processors) do not require access to customer data. With Power Platform Customer Lockbox, we provide an interface for the customers to review and approve (or reject) data access requests in the rare occasion when data access to customer data is needed It is used in cases where a Microsoft engineer needs to access customer data, whether in response to a customer-initiated support ticket or a problem identified by Microsoft.
-
 The Finance and Operations storage capacity reporting provides administrators a way to visualize and understand storage usage vs. entitlement at both the tenant and environment level. This feature is in preview stage. Current scope covers Finance and Operations database storage capacity only. Finance and Operations file storage capacity will be available at a later date. 
 
 > [!IMPORTANT]
@@ -34,7 +32,7 @@ The Finance and Operations storage capacity reporting provides administrators a 
 
 The following licenses / product categories are entitled to Finance and Operations storage capacity: 
 
-- Dynamics 365 Commerce / Finance / Human resource / Project operations / Supply chain management 
+- Dynamics 365 Commerce / Finance / Human Resource / Project Operations / Supply Chain Management 
 - Dynamics 365 Unified Operations plan 
 - Dynamics 365 Operations – Activity / Device 
 - Dynamics 365 Operations - Database capacity / File add-on storage capacity 
@@ -43,7 +41,10 @@ The following licenses / product categories are entitled to Finance and Operatio
 To see whether you have any of these licenses, sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/), and then go to **Billing** > **Licenses**.  
 
 > [!NOTE]
-> Due to technical limitations, certain licenses are eligible for entitlements but are not represented in the current reporting, including Dynamics AX Online and Dynamics 365 Finance and Operations China specific licenses, as well as Sandbox Tier 4 and 5 accrued. If you have these licenses, reach out to your account team to get a full view of your entitlement.
+> Due to technical limitations, certain licenses are eligible for entitlements but are not represented in the current reporting. These limitations include:
+> - Dynamics AX Online licenses 
+> - D365 Finance and Operations China specific licenses 
+> - Operations Sandbox Tier 4 and 5 per USL incremental capacity  
 
 ## Capacity page details 
 
@@ -55,7 +56,7 @@ To view the **Summary** page, sign in to the [Power Platform admin center](https
 
 image
 
-If you are on the legacy Dataverse storage capacity model, your **Summary** tab will look like this:  
+If you are on the [legacy Dataverse storage capacity model](legacy-capacity-storage.md), your **Summary** tab will look like this:  
 
 image
 

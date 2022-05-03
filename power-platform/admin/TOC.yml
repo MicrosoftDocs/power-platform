@@ -592,6 +592,8 @@
         href: add-storage.md      
       - name: Access storage with SAS token
         href: storage-sas-token.md 
+      - name: Finance and Operations storage capacity 
+        href: finance-operations-storage-capacity.md
     - name: Resources
       items:
       - name: Overview 
