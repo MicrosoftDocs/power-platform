@@ -137,6 +137,8 @@ When you add a node after the **Trigger Phrases** node or between **Message node
 
 1. Enter the question phrase in **Ask a question**.
 
+1. Optionally, you can add [variations of the question](#message-variations).
+
 1. In the **Identify** list, select an option for the user's response.
 
    The options determine what the bot should listen for when the user responds. For more information, see [Use entities in a conversation](advanced-entities-slot-filling.md#use-entities-in-a-conversation).
@@ -164,13 +166,15 @@ To [call Power Automate Flows](advanced-flow.md) and [insert authentication node
 
 If you've configured hand-off to omnichannel with voice-based capabilities, you'll see [more actions](configuration-hand-off-omnichannel.md#voice-based-capabilities).
 
-#### Show a message
+#### Send a message
 
-1. To specify a response from the bot, select **+** to add a node, and then select **Show a message** to add a new **Message** node.
+1. To specify a response from the bot, select **+** to add a node, and then select **Send a message** to add a new **Message** node.
 
 1. Enter what you want the bot to say in the text box.
 
     You can apply some basic formatting, such as bold, italics, and numbering. You can also [use variables](authoring-variables.md) that you defined elsewhere in your bot conversation.
+
+1. Optionally, you can add [message variations](#message-variations).
 
 #### Redirect to another topic
 
@@ -238,6 +242,18 @@ To add a quick replies select **Add**, then **Quick reply**, and then provide in
 
 Some user clients do not support quick replies, in which case the client may not render them.
 Some user clients have an upper limit on the number of quick replies that they allow.
+
+### Message variations
+
+Some nodes allow you to add message variations. When you do this, the bot will respond randomly with one of the variations.
+
+1. Select **Add** and then **Message variation**. This will add an additional text box for a message variation.
+
+    :::image type="content" source="media/authoring-create-edit-topics/message-node-variation.png" alt-text="Select the synonyms icon." border="false":::
+
+1. Enter what you want the bot to say. You can apply some basic formatting, such as bold, italics, and numbering.
+
+1. Repeat to add as many variations as you like.
 
 ### Delete nodes
 
