@@ -110,7 +110,7 @@ You can edit both of these topic types in the same manner as for topics you crea
 
 1. To move or change the paths between a node, click and drag the node anchor, which looks like a small circle on top of the node. When you drag the node anchor, you'll see a dotted line indicating the original path. You can also double-click the anchor and then select the new place for the anchor (you won't see a dotted line).
 
-   :::image type="content" source="media/authoring-create-edit-topics/move-anchor-node.png" alt-text="Screenshot of moving a node's anchor.":::
+   :::image type="content" source="../media/authoring-create-edit-topics/move-anchor-node.png" alt-text="Screenshot of moving a node's anchor.":::
 
 ### Insert nodes
 
@@ -121,7 +121,7 @@ You can:
 - **Ask a question**
 - **Add a condition**
 - **Call an action**
-- **Show a message**
+- **Send a message**
 - **End with survey**
 
 :::image type="content" source="../media/authoring-create-edit-topics/topics-nodes-teams.png" alt-text="When adding a node, you can choose from five options":::
@@ -175,9 +175,9 @@ If the node you are adding is the last in a topic, you can also add a **Go to an
 
 You can [call Power Automate Flows](advanced-flow-teams.md) by selecting **Call an action**.
 
-#### Show a message
+#### Send a message
 
-1. To specify a response from the bot, select **+** to add a node, and then **Show a message** to add a new **Message** node.
+1. To specify a response from the bot, select **+** to add a node, and then **Send a message** to add a new **Message** node.
 
 1. Enter what you want the bot to say in the text box. You can apply some basic formatting, such as bold, italics, and numbering.
 
