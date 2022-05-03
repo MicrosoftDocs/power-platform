@@ -117,7 +117,7 @@ The below table shows how the **User Labels** are configured for the **maker** u
       - For standard environment variables, such as string, number, or JSON, enter the value in the text box to the right of the environment variable name.
       - For data source environment variables, select the appropriate data source from the dropdown lists to use in the downstream environment.
 
-   - **App Sharing**
+   - **Canvas Apps**
 
       :::image type="content" source="media/almacceleratorpowerplatform-components/aa4pp-deployment-settings-app-sharing.png" alt-text="App Sharing configuration.":::
 
@@ -126,13 +126,33 @@ The below table shows how the **User Labels** are configured for the **maker** u
       - To view the group details, select **Details**. This button opens a new browser tab with a link to the Azure AD group in the Azure portal.
       - To set the permissions, select the permissions dropdown list and set the permissions to either **Can View**, **Can Edit**, or **Can View and Share**.
 
-   - **Component Ownership**
+   - **Group Teams**
 
-       :::image type="content" source="media/almacceleratorpowerplatform-components/aa4pp-deployment-settings-comp-ownership.png" alt-text="Component Ownership configuration":::
+      :::image type="content" source="media/almacceleratorpowerplatform-components/aa4pp-deployment-settings-group-teams.png" alt-text="Group Teams configuration":::
 
-      This screen lists all of the flows in your solution. Users can configure the owner of the flow in the downstream environment by selecting a Dataverse user.
-      - Use the dropdown list to select a Dataverse user to own the flow in the downstream environment.
+      - This screen allows the user to configure new Dataverse Teams of type AAD Security Group that can be used for sharing Flows and Custom Connectors
+      - Click the **'+'** icon to add a new Group Team configuration
+      - Enter a **Team Name**, select an **AAD Group** that the team should be linked to and select **Security Roles** as required. The list of security roles is based on those available in the currently selected development environment. Make sure to add any custom security roles to the solution to ensure the security roles are available in the target environment.
+      - Users can add multiple Group Team configurations by clicking the **'+'** to add additional rows
+
+   - **Flows**
+
+      :::image type="content" source="media/almacceleratorpowerplatform-components/aa4pp-deployment-settings-flows.png" alt-text="Component Ownership configuration.":::
+
+      - This screen lists all of the flows in your solution. Users can configure the owner of the flow, Dataverse Team sharing of the flow, the user with which to activate the flow, whether a flow should be activated or not, and, the sequence of flow activation in the downstream environment.
       - To view the flow, select the name of the flow to open a new tab with the flow definition.
+      - Use the **Owner** dropdown list to select a Dataverse user to own the flow in the downstream environment.
+      - Use the **Team Sharing** dropdown list to select the Dataverse Team to share the flow to. Note, this dropdown will list Dataverse Teams in the downstream environment and Dataverse teams configured in the Group Teams configuration.
+      - Use the **Activation User** dropdown list to select the user that will be used to activate the flow
+      - In the **Flows to Activate and Order** column, the checkbox can be used to configure whether a specific flow should b eactivated or not. The up and down arrows can be used to organize the rows into the desired sequence in which the flows will be activated. The sequencing of activation is particularly useful if the solution include parent and child flows where child flows must be activated before parent flows. 
+
+   - **Custom Connectors**
+
+      :::image type="content" source="media/almacceleratorpowerplatform-components/aa4pp-deployment-settings-custom-connectors.png" alt-text="Component Ownership configuration.":::
+
+      - This screen lists all the custom connectors in the solution. Users can configure sharing of customer connectors to Dataverse Teams in the downstream environment
+      - Use the **Sharing** dropdown list to select the Dataverse Team to share the custom connector to. Note, this dropdown will list Dataverse Teams in the downstream environment and Dataverse teams configured in the Group Teams configuration.
+
 
 1. After you select the **Solution Profile** and configure the **Deployment Settings**, push your changes to Git by selecting **Save Solution**. In the background, the app pushes your change to version control, automatically creating a branch. Repeat the pushes as you make changes to your solution so your change history is kept.
 
