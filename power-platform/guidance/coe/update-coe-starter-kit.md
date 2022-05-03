@@ -61,10 +61,11 @@ Create GitHub notifications for updates.
 
 How to create custom notification for new/ updates to issues and releases:
 
-1. Sign-in to your GitHub account, or sign up.
-1. Navigate to the [CoE Starter Kit repository](https://github.com/microsoft/coe-starter-kit)
-1. Select the button labeled 'Watch' (or possibly labeled 'Unwatch' if you've already set up notifications)
-1. Either select an existing notification option, or select the option labeled 'Custom'.
+1. **Sign-in** to your GitHub account, or sign up.
+1. Navigate to the [CoE Starter Kit repository](https://github.com/microsoft/coe-starter-kit).
+1. Select **'Watch'** (or possibly labeled 'Unwatch' if you've already set up notifications).
+1. Either select an existing notification option, or select **'Custom'**.
+1. Check the notification types that you want to receive updates about.
 1. In the example below, a custom notification has been created to send alerts for new/ updated issues, releases and security alerts.
 
 ![Screenshot of GitHub notification creation](/media/coe-starter-kit-notifications.png)
@@ -79,9 +80,9 @@ Here are a few things to consider when deciding your update frequency:
 
 - Does the new release **resolve an issue** that you currently have?
 - Does the new release **contain a new feature** that you would like to try out?
-- By **not** updating to the new release mean your current version is three months older than the new version?
+- By **not** updating to the new release mean your current version is three months older than the newly released version?
 
-Before a release, the CoE Starter Kit team tests any bug fixes or new features against the previous three released versions.  Unfortunately, it means that leaving updates longer than three months could result in unexpected issues when updating.  Useful guidance for installing updates to the CoE Starter Kit [can be found here](/power-platform/guidance/coe/after-setup).
+Before a release, the CoE Starter Kit team tests any bug fixes or new features against the previous three released versions.  Unfortunately, it means that leaving updates longer than three months could result in unexpected issues when updating.
 
 >[!TIP]
 >Review releases monthly by attending the office hours calls and reading release notes. Create notifications to alert you when interesting updates are made. Try to maintain parity between your testing/ production versions of the CoE Starter Kit and the current release, or within the past three releases.
@@ -99,7 +100,7 @@ Before downloading, read the release notes.  Ensure you're aware of any new comp
 
 ### Checking for unmanaged layers
 
-Before installing the update, you should check for unmanaged layers.
+Before installing the update, check for unmanaged layers.
 
 >[!NOTE]
 >The [feature described below](https://github.com/microsoft/coe-starter-kit/issues/2108) requires the [April 2022 release](https://github.com/microsoft/coe-starter-kit/releases/tag/CoEStarterKit-April2022)
@@ -110,7 +111,7 @@ Check for unmanaged layers in your environment using the Admin Control Center ap
 
 If you can see any unmanaged layers, you'll need to remove them prior to updating:
 
-1. Select ... > **See solution layers**
+1. Select **...** > **See solution layers**
 
 ![Screenshot showing 'see solution layers' option in web interface](media/upgrade1.png)
 
@@ -135,11 +136,11 @@ Any cloud flow, app or table that you've changed in the solution won't receive u
 
 If you have made any changes to the flows or apps in the solution, they will not receive updates until you remove that unmanaged layer. For every flow/app that you changed but would like to receive the latest update, go to the solution layers and remove the unmanaged layer. A good indication that a component has been changed is if the modified date is more recent than the latest install. Read our recommendations for extending the CoE Starter Kit to avoid creating unmanaged layers.
 
-1. Select ... > See solution layers.
+1. Select **...** > **See solution layers**.
 
 ![See solution layers](/power-platform/guidance/coe/media/upgrade1.png)
 
-2. Select Remove unmanaged layer
+2. Select **Remove unmanaged layer**
 
 ![Remove unmanaged solution layer](/power-platform/guidance/coe/media/upgrade2.png)
 
@@ -147,13 +148,13 @@ If you have made any changes to the flows or apps in the solution, they will not
     1. If [importing to a Production Environment](/power-platform/guidance/coe/faq#installing-a-solution-in-a-production-environment) - use the solution file from the download called CenterOfExcellenceCoreComponents_x_x_x_xx_managed.zip
     1. If [importing to a Dataverse for Teams Environment](/power-platform/guidance/coe/faq#installing-a-solution-in-a-dataverse-for-teams-environment) - use the solution file from the download called CenterOfExcellenceCoreComponentsTeams_x_x_x_xx_managed.zip
 
-4. Select Upgrade (default setting). Solution upgrades will delete components that existed but are no longer included in the upgraded version.
+4. Select **Upgrade** (default setting). Solution upgrades will delete components that existed but are no longer included in the upgraded version.
 
 ![Select upgrade to install the new solution version](/power-platform/guidance/coe/media/coe-upgrade1.png)
 
 5. If the upgrade adds new environment variables or connection references, establish connections and update environment variable values. You will find the expected values in our setup instructions.
 
-6. Wait for the Upgrade to finish. This can take up to 15 mins. During the upgrade, the new version is installed first and then the old version is deleted. Whilst the upgrade is processing, you may see two solutions with the same name in your solution explorer. [Check the solution history](/powerapps/maker/data-platform/solution-history#view-solution-history) to view the progress of the upgrade.
+6. Wait for the Upgrade to finish. **This can take up to 15 mins**. During the upgrade, the new version is installed first and then the old version is deleted. Whilst the upgrade is processing, you may see two solutions with the same name in your solution explorer. [Check the solution history](/powerapps/maker/data-platform/solution-history#view-solution-history) to view the progress of the upgrade.
 
 ![Check the solution history](/power-platform/guidance/coe/media/coe-upgrade3.png)
 
@@ -205,7 +206,7 @@ If you find a bug or an issue when testing you can [raise a bug here](https://gi
 
 ## Application Lifecycle Management
 
-We don't go deep into application lifecycle management here. If you're interested in recommendations and scenarios, review the [overview of application lifecycle management with Microsoft Power Platform](/power-platform/alm/overview-alm).  ALM covers many disciplines. Here we touch lightly on the discipline of deploying solutions.
+This document doesn't go deep into application lifecycle management. If you're interested in recommendations and scenarios, review the [overview of application lifecycle management with Microsoft Power Platform](/power-platform/alm/overview-alm).  ALM covers many disciplines. This document touches lightly on the discipline of deploying solutions.
 
 ### ALM Accelerator
 
@@ -218,25 +219,5 @@ The accelerator includes a canvas app that provides a simplified interface for m
 The [Microsoft Power Platform Build Tools for Azure DevOps Services](/power-platform/alm/devops-build-tools?msclkid=147921b0c15611ecbb1fdca93966d349) automate common build and deployment tasks. They can be used with any other Azure DevOps tasks to compose build and release pipelines
 
 [Download](https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.PowerPlatform-BuildTools&msclkid=d4b015ebc16e11ecb673fbfc869800f3) the tools, and refer to the [tasks documentation](/power-platform/alm/devops-build-tool-tasks) to get started.
-
-## Summary
-
-Here's a summary of the information provided, and links in this document.
-
-### How often and when is an update released?
-
-The team behind the CoE Starter Kit aim to release updates during the first full week of every month.
-
-### Where can I review the changes?
-
-The [release notes](https://github.com/microsoft/coe-starter-kit/releases) are available in the GitHub repository. Alternatively, [you can register](https://aka.ms/coeofficehours) for the monthly office hours call.
-
-### How often should I update the CoE Starter Kit?
-
-At least every three months to avoid unplanned/ unexpected issues. Or, if a release contains a bug fix or new feature that you would like to review. The team behind the CoE Starter Kit test the previous three releases, so leaving updates for longer than this period increases the risks of unplanned/ unexpected issues.
-
-### I want to customize the CoE Starter Kit, what are the best practices?
-
-Updates to the CoE Starter Kit should be completed following the best practices outlined in [this document](/power-platform/guidance/coe/extending-components).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
