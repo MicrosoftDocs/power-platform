@@ -19,7 +19,7 @@ search.app:
 ---
 # Nurture in the CoE Power BI dashboard
 
-As you establish your Center of Excellence (CoE), a significant part of your activity will be nurturing your maker community, enabling them to follow best practices and working together with them to identify whether they or their resources need additional support.
+As you establish your Center of Excellence (CoE), a significant part of your activity will be nurturing your maker community, enabling them to follow best practices and working together with them to identify whether they need more support.
 
 The **Nurture** section helps you find your "star" app and flow makers and see what connectors they're using, where they're based (department/city/country), and how they're adopting Microsoft Power Platform.
 
@@ -31,7 +31,7 @@ The **Maker** page, at one glance, helps you see your top makers, how many apps 
 
 ## App Gurus
 
-The **App Gurus** page gives you an overview of which makers are using which connectors. Makers with a high usage of different connectors are likely more advanced and might turn into your champions; makers who use only Office connectors are likely at the beginning of their journey and might need a helping hand.
+The **App Gurus** page gives you an overview of which makers are using which connectors. Makers with a high usage of different connectors are likely more advanced and might turn into your champions. Makers who use only Office connectors are likely at the beginning of their journey and might need a helping hand.
 
 ![App Gurus.](media/pb-21.png "App Gurus")
 
@@ -57,12 +57,12 @@ The **App Usage** page shows your top apps by number of app launches and your us
 
 The **YoY Shares** page shows your year-on-year adoption of Power Platform, this page highlights growth in number of apps, cloud flows, desktop flows, chatbots, environments and makers and shows you the percentage increase or decrease year-on-year.
 
-![App Shares.](media/pb-20.png "App Shares")
+![YoY Adoption.](media/pbi-yoy.png "YoY Adoption")
 
 ## Power Apps Adoption
 
-The **Power Apps Adoption** page shows you further insights into how Power Apps is getting adopted in your organization. This page highlights total and monthly new users, and month-on-month growth of users. This page additionally shows Power Apps MAU and Premium MAU (Monthly Active Users) over time, Power Apps user and maker base and high level stats of number of apps using Azure, SharePoint, Dataverse as data sources.
+The **Power Apps Adoption** page shows you further insights into how Power Apps is getting adopted in your organization. This page highlights total and monthly new users, and month-on-month growth of users. This page additionally shows Power Apps MAU and Premium MAU (Monthly Active Users) over time, and the number of apps using Azure, SharePoint, Dataverse as data sources.
 
-![App Usage.](media/pb-19.png "App Usage")
+![Power Apps Adoption.](media/pbi-adoption.png "Power Apps Adoption")
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
