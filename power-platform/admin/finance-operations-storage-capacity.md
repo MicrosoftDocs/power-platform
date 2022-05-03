@@ -98,7 +98,7 @@ Although there is no impact to runtime experience, we strongly recommend custome
 
 ### How is Microsoft helping customers to stay within their storage entitlement limits? 
 
-For now, your account team will work with you to stay within entitlement limit.  
+For now, your account team will work with you to stay within your entitlement limit.  
 
 ### Our storage usage is over, do we owe a true-up for past months we have been over? 
 
