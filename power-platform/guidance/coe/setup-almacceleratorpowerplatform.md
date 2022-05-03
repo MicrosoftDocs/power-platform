@@ -254,6 +254,8 @@ The **VerifyDefaultEnvironmentVariableValues** can be used to ensure that specif
     | TestAutomationUsername | The user account used to execute the automated tests. |
     | TestAutomationPassword | The password for the user account to execute the automated tests. |
 
+1. **Optional**. By default, the global variables are restricted and access for each pipeline must be configured. Is possible to simplify, and allow access to any pipeline. To configure "Open access", under the "Variable group" (Pipelines->Library->alm-accelerator-variable-group) select "Pipeline permissions" in the top menu. Select ... and select "Open access".
+
 ### Update permissions for the project build service
 
 > [!IMPORTANT]
