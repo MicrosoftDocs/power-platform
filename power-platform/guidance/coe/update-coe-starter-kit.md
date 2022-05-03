@@ -134,7 +134,7 @@ Any cloud flow, app or table that you've changed in the solution won't receive u
 >[!IMPORTANT]
 >Editing components in the solution introduces an unmanaged layer. Components that have been changed won't receive any updates until the unmanaged layer has been removed.
 
-If you have made any changes to the flows or apps in the solution, they will not receive updates until you remove that unmanaged layer. For every flow/app that you changed but would like to receive the latest update, go to the solution layers and remove the unmanaged layer. A good indication that a component has been changed is if the modified date is more recent than the latest install. Read our recommendations for extending the CoE Starter Kit to avoid creating unmanaged layers.
+If you have made any changes to the flows or apps in the solution, they won't receive updates until you remove that unmanaged layer. For every flow/app that you changed but would like to receive the latest update, go to the solution layers and remove the unmanaged layer. A good indication that a component has been changed is if the modified date is more recent than the latest install. Read our recommendations for extending the CoE Starter Kit to avoid creating unmanaged layers.
 
 1. Select **...** > **See solution layers**.
 
@@ -152,7 +152,7 @@ If you have made any changes to the flows or apps in the solution, they will not
 
 ![Select upgrade to install the new solution version](/power-platform/guidance/coe/media/coe-upgrade1.png)
 
-5. If the upgrade adds new environment variables or connection references, establish connections and update environment variable values. You will find the expected values in our setup instructions.
+5. If the upgrade adds new environment variables or connection references, establish connections and update environment variable values. You'll find the expected values in our setup instructions.
 
 6. Wait for the Upgrade to finish. **This can take up to 15 mins**. During the upgrade, the new version is installed first and then the old version is deleted. Whilst the upgrade is processing, you may see two solutions with the same name in your solution explorer. [Check the solution history](/powerapps/maker/data-platform/solution-history#view-solution-history) to view the progress of the upgrade.
 
