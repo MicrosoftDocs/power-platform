@@ -144,7 +144,7 @@ The below table shows how the **User Labels** are configured for the **maker** u
       - Use the **Owner** dropdown list to select a Dataverse user to own the flow in the downstream environment.
       - Use the **Team Sharing** dropdown list to select the Dataverse Team to share the flow to. Note, this dropdown will list Dataverse Teams in the downstream environment and Dataverse teams configured in the Group Teams configuration.
       - Use the **Activation User** dropdown list to select the user that will be used to activate the flow
-      - In the **Flows to Activate and Order** column, the checkbox can be used to configure whether a specific flow should b eactivated or not. The up and down arrows can be used to organize the rows into the desired sequence in which the flows will be activated. The sequencing of activation is particularly useful if the solution include parent and child flows where child flows must be activated before parent flows. 
+      - In the **Flows to Activate and Order** column, the checkbox can be used to configure whether a specific flow should be activated or not. The up and down arrows can be used to organize the rows into the desired sequence in which the flows will be activated. The sequencing of activation is particularly useful if the solution include parent and child flows where child flows must be activated before parent flows. 
 
    - **Custom Connectors**
 
