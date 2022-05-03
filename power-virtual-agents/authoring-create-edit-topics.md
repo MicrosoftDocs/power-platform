@@ -172,6 +172,18 @@ If you've configured hand-off to omnichannel with voice-based capabilities, you'
 
     You can apply some basic formatting, such as bold, italics, and numbering. You can also [use variables](authoring-variables.md) that you defined elsewhere in your bot conversation.
 
+#### Quick replies
+
+The **Message** and **Question** nodes allow you to add _quick replies_.
+To add a quick replies select **Add**, then **Quick reply**, and then provide information for each _quick reply_.
+
+- A quick reply generates a button the user can select.
+- You can select what type of action the button initiates, such as sending a message from the user's client, opening a URL, or calling a phone number.
+- The quick reply buttons are removed from the chat history when the bot or user sends another activity.
+
+Some user clients do not support quick replies, in which case the client may not render them.
+Some user clients have an upper limit on the number of quick replies that they allow.
+
 #### Redirect to another topic
 
 1. To have the bot move to a different topic, select **+** to add a node, and then select **Redirect to another topic**.
