@@ -247,4 +247,4 @@ The **Browser** view of the **Failures** panel contains Unified Interface outgoi
 
 ### Can I set an alert on the performance threshold for certain form actions? When the alert is received, will it allow a maker to diagnose and troubleshoot the issue?
 
-Yes. You can set up [alerts](/azure/azure-monitor/learn/tutorial-alert) in Application Insights to monitor the health of your application.
+Yes. You can set up [alerts](/azure/azure-monitor/alerts/tutorial-metric-alert) in Application Insights to monitor the health of your application.

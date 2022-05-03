@@ -40,7 +40,7 @@ This step will be completed after you import the solution. Environment variables
 
 ## Exempt environments from the compliance process
 
-There are some environments that you may want to exempt from the compliance process - this could be dedicated environments that are already well managed. Learn more: [Establishing an environment strategy](/adoption/environment-strategy)
+There are some environments that you may want to exempt from the compliance process - this could be dedicated environments that are already well managed. Learn more: [Establishing an environment strategy](/power-platform/guidance/adoption/environment-strategy)
 
 You can exempt environments from the compliance process using the Power Platform Admin View app.  
 

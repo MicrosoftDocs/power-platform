@@ -95,4 +95,10 @@ Environment admins are not able to do these steps. The admin doesn't need to be 
 
 The Power Platform admin center tenant-level views are available in all supported regions in the public cloud. This feature is not yet available in other sovereign clouds. 
 
+### See also
+[Admin Analytics for Power Apps](analytics-powerapps.md) <br />
+[Preview: Tenant-level analytics](tenant-level-analytics.md) 
+
+
+
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

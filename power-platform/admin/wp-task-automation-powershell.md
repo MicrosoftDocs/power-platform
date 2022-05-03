@@ -1,13 +1,13 @@
 ---
 title: "Automation of tasks with PowerShell  | MicrosoftDocs"
 description: Automate tasks with PowerShell
-author: jimholtz
-
+author: laneswenka
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 08/26/2020
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: laswenka
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:
@@ -16,6 +16,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
+
 # Automation of tasks with PowerShell 
 
 The PowerShell cmdlets enable admins to complete admin portal task using script commands. With PowerShell you can sequentially execute multiple commands at once or pipe output commands to automate common tasks. 
