@@ -184,7 +184,7 @@ The ALM accelerator uses several Azure DevOps extensions, including some third-p
 
 1. Go to **Repos**, and then select **Import repository** from the repository dropdown list.
 
-1. Get the URL of the tag for the latest release, heading to [https://aka.ms/coe-alm-accelerator-templates-latest-release](http://aka.ms/coe-alm-accelerator-templates-latest-release) and copying the address you are redirected to, and use as the **Clone URL**—and then select **Import**.
+1. Get the URL of the tag for the latest release, heading to [https://aka.ms/coe-alm-accelerator-templates-latest-release](https://aka.ms/coe-alm-accelerator-templates-latest-release) and copying the address you are redirected to, and use as the **Clone URL**—and then select **Import**.
 
 1. Check that the default branch for this repo is `main`. Choose **Repos** and **Branches** and ensure that the `main` branch is tagged as the default.
    If it isn't, select the three vertical dots (**&vellip;**) corresponding to the `main` branch, and from the **More options** menu, select **Set as default branch**.
