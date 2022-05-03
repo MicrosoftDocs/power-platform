@@ -86,9 +86,9 @@ Power Platform admin center reports can be downloaded directly from the report v
 For more information on downloading data from the tenant level reports, see [Exporting data from Power BI visuals](/power-bi/consumer/end-user-export).
 
 ### See also
-[Preview: Tenant-level analytics](tenant-level-analytics.md)
-
-
+[Preview: Tenant-level analytics](tenant-level-analytics.md) <br />
+[Admin Analytics for Power Apps](analytics-powerapps.md)
 
  
+
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
