@@ -56,12 +56,11 @@ This page provides a tenant-level view of where your organization is using Finan
 
 To view the **Summary** page, sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com), and then select **Resources** > **Capacity** > **Summary** tab. 
 
-image
-finance-operations-storage-summary-tab.png
+:::image type="content" source="media/finance-operations-storage-summary-tab.png" alt-text="Storage Summary page with Finance and Operations.":::
 
 If you are on the [legacy Dataverse storage capacity model](legacy-capacity-storage.md), your **Summary** page will look like this:  
 
-image
+:::image type="content" source="media/finance-operations-storage-summary-tab-legacy.png" alt-text="Legacy Summary page with Finance and Operations.":::
 
 ### Finance and Operations page 
 
@@ -69,8 +68,7 @@ The Finance and Operations page provides similar information to the **Summary** 
 
 To view this page, select **Resources** > **Capacity** > **Finance and Operations** tab.
 
-image
-finance-operations-storage-finops-tab.png
+:::image type="content" source="media/finance-operations-storage-finops-tab.png" alt-text="Finance and Operations page with capacity data.":::
 
 ## Actions to take for a Finance and Operations capacity deficit 
 
