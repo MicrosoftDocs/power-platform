@@ -19,6 +19,9 @@ search.app:
 
 # CoE ALM Accelerator for Power Platform maker set-up
 
+> [!NOTE]
+> The ALM accelerator for Microsoft Power Platform is currently in public preview. While in preview we will be prioritizing feedback and bugs via GitHub [New issue](https://github.com/microsoft/coe-starter-kit/labels/alm-accelerator). If the issue is something in the platform all we can do is funnel feedback to the responsible product teams. For more information on the current preview status of the ALM Accelerator for Power Platform see [follow this link](https://github.com/microsoft/coe-starter-kit/blob/main/CenterofExcellenceALMAccelerator/PREVIEW.md).
+
 The first step is to ensure there's an environment to build and manage solutions. Normally each maker has a unique [development environment](./development-environments.md) created. Having successfully gained access to a development environment, the commands below allow either a Power Platform administrator or a maker to perform the following tasks:
 
 1. [Set up service principal](#set-up-service-principal) - Provide access to the service principal used by the Azure DevOps Pipeline.
