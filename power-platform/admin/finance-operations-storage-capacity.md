@@ -106,6 +106,6 @@ For now, your account team will work with you to stay within your entitlement li
 
 ### Our storage usage is over, do we owe a true-up for past months we've been over? 
 
-No, there won't be billing in arrears for past overage because usage vs. entitlements reporting wasn't available in the past. 
+No, there won't be billing in arrears for past overage because usage versus entitlements reporting wasn't available in the past. 
 
 
