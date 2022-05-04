@@ -20,12 +20,12 @@ search.app:
 
 # How the inventory Cloud Flows work
 
-The CoE Starter Kit is broken down into components.  The 'Core Component' contains many cloud flows. This document provides detailed guidance for:
+The CoE Starter Kit is broken down into components.  The 'Core Component' contains many cloud flows that this document provides detailed guidance for:
 
-- Dependencies: which cloud flows rely on others.
-- Long running operation: which cloud flows take a long time to complete.
-- Communications: which cloud flows send communications to users/ admins (either through email or teams chat).
-- Triggers: which cloud flows are scheduled, triggered via an event or from Power Apps.
+- Dependencies.
+- Long running operation.
+- Communications.
+- Triggers.
 
 ## Cloud flow dependencies
 
@@ -42,7 +42,7 @@ The following table details Cloud flow dependencies:
 
 ## Long running Cloud flows
 
-There are some Cloud flows which need to access everything in your tenant, or :
+The following table shows the cloud flows which need to access everything in your tenant.  The time these operations take depends on the number of apps, flows and other components:
 
 | Cloud flow title | Long running detail |
 |------------------|---------------------|
@@ -55,7 +55,16 @@ There are some Cloud flows which need to access everything in your tenant, or :
 Some flows in the core components solution send communications, either:
 
 - Email
-- Chat 
+- Chat
+
+>[!NOTE]Flow communications can be disabled by setting the ProductionEnvironment environment variable to false
 
 The table below identifies the Cloud flows that send notifications to users:
 
+| Cloud flow title | Notification type | Audience | Additional comment
+|-----------------------|------------|----------|---|
+| Admin - Welcome Email v3 | Email | The user who created the app |  |
+| Admin - Sync Template v3 (Sync Flow Errors) | Email | Admin email address |  |
+| Env Request - Cleanup Environments | Email | TBD |  Only sends warning mails on Mondays |
+| Env Request - Notify admin when new request submitted | Email | TBD | |
+| Env Request - Notify requestor when rejected | Email | TBD | |
