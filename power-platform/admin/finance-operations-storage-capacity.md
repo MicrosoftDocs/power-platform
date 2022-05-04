@@ -74,7 +74,7 @@ finance-operations-storage-finops-tab.png
 
 ## Actions to take for a Finance and Operations capacity deficit 
 
-This feature is currently in preview and for information only. It will not impact the service and performance you will receive from Microsoft Dynamics cloud services in the short term. Customers will be notified in advance before Microsoft starts enforcement. 
+This feature is currently in preview and for information only. It will not impact the service and performance you'll receive from Microsoft Dynamics cloud services in the short term. Customers will be notified in advance before Microsoft starts enforcement. 
 
 You can always free up storage, delete unwanted environments/data, or buy more capacity to be compliant with Finance and Operations storage usage. To learn more about Finance and Operations capacity add-ons, see the [Dynamics 365 Licensing Guide](https://www.microsoft.com/licensing/product-licensing/dynamics365). You can work through your organization’s standard procurement process to purchase Finance and Operations capacity add-ons. 
 
@@ -86,26 +86,26 @@ Microsoft Business Application products work across multiple underlying platform
 
 ### How is my usage and entitlement calculated? 
 
-Reach out to your account team who'll be able to help you understand how your entitlement is calculated. 
+Reach out to your account team who will be able to help you understand how your entitlement is calculated. 
 
 ### Why don’t I see which tables are causing the overage?  
 
-In the initial launch of reporting, details for specific usage at the table level will not be available.  It will be available in a future release.  
+In the initial launch of reporting, details for specific usage at the table level won't be available.  It will be available in a future release.  
 
 ### Is there any reporting for Finance and Operations File capacity? 
 
-In the initial launch of reporting, there will not be any file capacity reporting. It will be available in a future release. 
+In the initial launch of reporting, there won't be any file capacity reporting. It will be available in a future release. 
 
 ### What happens if my consumption is over the entitled limit? 
 
-Although there is no impact to runtime experience, we strongly recommend customers to review their data consumption and delete old data that is not required to be maintained in the platform. Please reach out to your account team to purchase additional capacity entitlement to match your needs. 
+Although there's no impact to runtime experience, we strongly recommend customers to review their data consumption and delete old data that isn't required to be maintained in the platform. Reach out to your account team to purchase additional capacity entitlement to match your needs. 
 
 ### How is Microsoft helping customers to stay within their storage entitlement limits? 
 
 For now, your account team will work with you to stay within your entitlement limit.  
 
-### Our storage usage is over, do we owe a true-up for past months we have been over? 
+### Our storage usage is over, do we owe a true-up for past months we've been over? 
 
-No, there will not be billing in arrears for past overage due to the fact that usage vs. entitlements reporting was not available in the past. 
+No, there won't be billing in arrears for past overage because usage vs. entitlements reporting wasn't available in the past. 
 
 
