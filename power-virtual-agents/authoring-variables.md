@@ -129,7 +129,7 @@ To receive values from other topics, set the variable's property:
 
 1. Save the topic.
 
-1. Go to a topic that you want to redirect to. Follow the steps in [Redirect to another topic](authoring-create-edit-topics.md#redirect-to-another-topic) to redirect to the correct topic.
+1. Go to a topic that you want to redirect to. Follow the steps in [Redirect to another topic](authoring-create-edit-topics.md#go-to-another-topic) to redirect to the correct topic.
 
 1. Select **+ Add input for destination topic**.
 
@@ -164,7 +164,7 @@ To return a variable to the original topic, set the variable's property:
 
 1. Save the topic.
 
-1. Go to a topic that you want to redirect to. Follow the steps in [Redirect to another topic](authoring-create-edit-topics.md#redirect-to-another-topic) to redirect to the correct topic.
+1. Go to a topic that you want to redirect to. Follow the steps in [Redirect to another topic](authoring-create-edit-topics.md#go-to-another-topic) to redirect to the correct topic.
 
     The variable that's being returned to the topic is shown in the redirected topic. Use the returned variable in your topic.
 
