@@ -48,7 +48,7 @@
           - name: Set up Azure AD Conditional Access
             href: adoption/conditional-access.md
           - name: Enable cross-tenant isolation
-            href: adoption/tenant-isolation.md
+            href: /power-platform/admin/cross-tenant-restrictions
       - name: Monitor and alert
         items: 
           - name: Report on resource usage
@@ -205,6 +205,8 @@
 
         - name: Environment management
           href: coe/env-mgmt.md
+        - name: Capacity alerting and reporting
+          href: coe/capacity-alerting.md
     - name: CoE command line interface
       href: coe/cli/overview.md
       items:
