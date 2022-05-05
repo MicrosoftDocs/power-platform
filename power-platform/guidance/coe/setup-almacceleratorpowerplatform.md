@@ -569,7 +569,7 @@ If your solution requires these other configuration settings or data, follow the
 
 ### Configure the DevOps custom connector
 
-1. In [Power Apps](https://make.powerapps.com), select your environment, and then select **Data** > **Custom Connectors** > **CustomAzureDevOps**.
+1. In [Power Apps](https://make.powerapps.com), select your environment, and then select **Dataverse** > **Custom Connectors** > **CustomAzureDevOps**.
 
 1. Select **Edit**, go to the **Security** section, select **Edit**, and then set the following fields.
 
@@ -590,7 +590,7 @@ If your solution requires these other configuration settings or data, follow the
 
     1. Select **New Connection**, and then follow the prompts to create a new connection.
 
-    1. In [Power Apps](https://make.powerapps.com), select your environment, and then select **Data** > **Custom Connectors** > **CustomAzureDevOps**.
+    1. In [Power Apps](https://make.powerapps.com), select your environment, and then select **Dataverse** > **Custom Connectors** > **CustomAzureDevOps**.
 
     1. Select **Edit**, go to the **Test** section, and then find the **GetOrganizations** operation.
 
