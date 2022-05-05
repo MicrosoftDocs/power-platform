@@ -547,7 +547,7 @@
           href: analytics-flow.md
         - name: Analytics for UI flows
           href: analytics-ui-flow.md 
-      - name: Reports
+      - name: Reports (preview)
         items:
         - name: "Tenant-level analytics (default)" 
           href: tenant-level-analytics.md
@@ -555,9 +555,6 @@
           href: powerapps-analytics-reports.md
         - name: "Power Automate analytics"
           href: power-automate-analytics-reports.md
-        # Comment out the next topics before publish      
-        # - name: "Power Apps license utilization"
-        #   href: powerapps-license-utilization.md
       - name: Data export (preview)
         items:
         - name: "Export Power Apps inventory and usage data"
@@ -566,7 +563,7 @@
           href: self-service-analytics-schema-definition.md
         - name: "Create custom dashboards using Power Apps inventory and usage data"
           href: build-custom-reports.md
-      - name: "Analyze telemetry with Application Insights"
+      - name: "Analyze telemetry with Application Insights (preview)"
         items:
         - name: "Model-driven apps and Microsoft Dataverse telemetry"
           href: analyze-telemetry.md
