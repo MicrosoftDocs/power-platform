@@ -147,7 +147,14 @@ When you add a node after the **Trigger Phrases** node or between **Message node
 
    For example, if you selected **Multiple choice options**, enter the choices the user can specify in **Options for user**. Each choice is presented to the user as a multiple choice button, but users can also type their answer.
 
-1. Select a variable in which to save the user response.
+1. In **Save response as**, select an existing variable or create a new one in which to save the user response.
+
+   - For **Save response as**, you can use an existing variable or create a new one.
+   - If you create a new variable, select the variable name to display the variable properties, where you can modify the variable's settings, including its name.
+
+     :::image type="content" source="media/authoring-create-edit-topics/question-variable-button.png" alt-text="Select variable name to display variable properties":::
+
+1. Optionally, open the properties pane for the question node to modify addition settings, such as maximum retry count and what to do if the user exceeds that count.
 
 Later, you can add a condition to create branching logic or add nodes to control how the bot responds based on each variable.
 
@@ -225,7 +232,14 @@ You can also have the conversation [handed over to a live agent](advanced-hand-o
 
 1. In the first condition node, select the variable and condition that will determine how the bot conversation should branch at this point.
 
-    For example, if you've set up [user authentication](advanced-end-user-authentication.md), you might specify a different message if the user is signed in (which may have happened earlier in the conversation).
+    - For example, if you've set up [user authentication](advanced-end-user-authentication.md), you might specify a different message if the user is signed in (which may have happened earlier in the conversation).
+    - You can create a condition using the basic editor or you can switch to a the Power Fx formula editor and manually enter an expression.
+    - To switch from the formula editor back to the basic editor, reset the node; however, you will need to enter your condition again.
+    - Use the _node menu_ (&vellip;) to switch editing modes or reset the node.
+
+    :::image type="content" source="media/authoring-create-edit-topics/condition-switch-to-formula.png" alt-text="Switch to the Power Fx expression editor":::
+
+1. When working with a string variable in the basic condition editor, you can enter a string literal in the value field, such as `Contoso`. For other variable types, such as Boolean, use the Power Fx editor to compare the variable to a literal value, such as `true`.
 
 1. Use the **+** that precedes the condition, then **Add a condition** to add more branches.
 
@@ -240,12 +254,14 @@ To add a quick replies select **Add**, then **Quick reply**, and then provide in
 
 :::image type="content" source="media/authoring-create-edit-topics/add-quick-reply.png" alt-text="Add quick replies to a question node" border="false":::
 
-Some user clients do not support quick replies, in which case the client may not render them.
-Some user clients have an upper limit on the number of quick replies that they allow.
+A quick reply works like a suggestion that the user can user or ignore. To enforce a choice from a finite list, use a multiple choice question node.
+
+> [TIP]
+> Some user clients do not support quick replies, in which case the client may not render them. Some user clients have an upper limit on the number of quick replies that they allow.
 
 ### Message variations
 
-Some nodes allow you to add message variations. When you do this, the bot will respond randomly with one of the variations.
+The **Message** and **Question** nodes allow you to add message variations. When you do this, the bot will respond randomly with one of the variations.
 
 1. Select **Add** and then **Message variation**. This will add an additional text box for a message variation.
 
