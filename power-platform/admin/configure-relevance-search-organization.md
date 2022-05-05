@@ -172,6 +172,8 @@ By default, the following system tables are indexed for Dataverse search. Howeve
 The searchable fields and filters for a table enabled for Dataverse search are driven by the table's Quick Find View. The complete set of **View columns**, **Find columns**, and **Filter columns** in a table's Quick Find View become part of the Dataverse search index when that table is enabled for Dataverse search. There is no limit on how many searchable fields you can add for each table. However, there is a limit on the total number of indexed fields, as explained in the previous section. 
 
 - The **Find Columns** on a **Quick Find View** define the searchable fields in the Dataverse search index. Text fields such as Single Line of Text and Multiple Lines of Text, Lookups, and Option Sets are searchable. **Find Columns** of all other data types are ignored.
+  > [!NOTE]
+  > Currency fields must be added to the **Find Columns** so the currency symbol that is visible on the record will be returned in the search results. If the currency field isn’t added to the search index, users will see the currency symbol localized according to their language settings.
 
 - The **View Columns** on a **Quick Find View** define the fields that are displayed in model-driven apps' search results page when the matched results are returned.
 
