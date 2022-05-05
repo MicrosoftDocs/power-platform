@@ -15,35 +15,35 @@ searchScope:
 
 # Technology preview for Build 2022
 
-<!-- FIXME: blurb about PVA at Build -->
-<!-- FIXME: link to quickstart article -->
+This year at Microsoft Build 2022, we are excited to announce the evolution of Power Virtual Agents.
 
-## New features
+Power Virtual Agent's new intelligent bot authoring experience unifies the sophistication of Azure Bot Framework Composer's pro-code capabilities with the simplicity of Power Virtual Agent's low-code platform, making it even easier for professional developers and subject matter experts to build collaboratively in one Microsoft bot building studio.
 
+This evolution brings new features including:
 <!-- FIXME: merge PRs and link relevant docs -->
-- Redesigned authoring canvas
 - [Enhanced variable management]()
 - [Power FX support]()
 - [Rich Response Authoring​]()
 - [Speech authoring]()
+- [Voice font selection]()
 - [Telephony channel]()
 - [Bot response variations](authoring-create-edit-topics.md#message-variations)
 - [Quick responses]()
 
+For a guided tutorial on how to use these new features, please refer to the [Build 2022 quickstart]().
+
 ## Limitations of technology preview
 
-The following features are not supported in the technology preview:
+The following features are not yet available in this technology preview:
 
 - Authoring bots in the Power Virtual Agents app in Microsoft Teams
 - Creating bots in other languages other than English
 - Customization of system fallback topic
-- Analytics
-- Entities
+- Custom entities
 - Skills
 - Agent transfers
 - Publishing bots on Teams channel
 - Bots setup with application lifecycle management (ALM)
-    <!-- FIXME: button missing, confirm it wasn't moved -->
 - Extending bots in Composer
 
 ## For desktop Composer users
