@@ -11,14 +11,19 @@ ms.collection: virtual-agent
 
 # Quick start
 
-<!-- FIXME: add screenshots once scenario is approved -->
-
 This quickstart walks you through making a bot that uses new features and improvements introduced in the technology preview at Build. In this example, we'll be creating a simple bot that helps users make a reservation at a fictional restaurant.
 
 <!-- FIXME: link doc once written -->
 1. Navigate to the [Power Virtual Agents home page]() and select **Create a bot**.
 
+:::image type="content" source="media/build-2022-quickstart/new-bot1.png" alt-text="Name the new bot.":::
+
 1. Name the bot `Reservation Bot` and select **Create**.
+
+:::image type="content" source="media/build-2022-quickstart/new-bot2.png" alt-text="Name the new bot.":::
+
+> [!IMPORTANT]
+> Bots can only be created in English in the technology preview.
 
 ## Add a reservation topic
 
@@ -59,6 +64,9 @@ This quickstart walks you through making a bot that uses new features and improv
     - `Good day!`
     - `Hi there!`
     - `Hi!`
+
+    <!-- FIXME: can we host an image somewhere for users? -->
+1. [Add an image card]() and provide an image of the restaurant.
 
     <!-- FIXME: link doc once written -->
 1. Add a second **Message** node. Then add the following message which uses [SSML tags](): `We're open 9am to 5pm Monday through Friday. <emphasis level="strong">Please note</emphasis><break strength="medium" /> we will be closed on May 27th.`
