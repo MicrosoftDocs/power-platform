@@ -550,7 +550,7 @@ If your solution requires these other configuration settings or data, follow the
 
 ### Install the ALM accelerator in Dataverse
 
-1. Download the latest managed solution file from [GitHub](https://github.com/microsoft/coe-starter-kit/releases): ALMAcceleratorForMakers_`[latest version]`_managed.zip .
+1. Download the latest managed solution file from [GitHub](https://github.com/microsoft/coe-starter-kit/releases): CenterofExcellenceALMAccelerator_`[latest version]`_managed.zip .
 
 1. Go to [Power Apps](https://make.powerapps.com) and select the environment you want to use to host the ALM Accelerator for Power Platform app.
 
@@ -590,7 +590,7 @@ If your solution requires these other configuration settings or data, follow the
 
     1. Select **New Connection**, and then follow the prompts to create a new connection.
 
-    1. In [Power Apps](https://make.powerapps.com), select your environment, and then select **Data** > **Custom Connectors** > **CustomAzureDevOps**.
+    1. In [Power Apps](https://make.powerapps.com), select your environment, and then select **Dataverse** > **Custom Connectors** > **CustomAzureDevOps**.
 
     1. Select **Edit**, go to the **Test** section, and then find the **GetOrganizations** operation.
 
