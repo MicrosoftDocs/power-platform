@@ -555,9 +555,6 @@
           href: powerapps-analytics-reports.md
         - name: "Power Automate analytics"
           href: power-automate-analytics-reports.md
-        # Comment out the next topics before publish      
-        # - name: "Power Apps license utilization"
-        #   href: powerapps-license-utilization.md
       - name: Data export (preview)
         items:
         - name: "Export Power Apps inventory and usage data"
