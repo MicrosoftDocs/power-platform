@@ -184,15 +184,33 @@ If you've configured hand-off to omnichannel with voice-based capabilities, you'
 
 1. Optionally, you can add [message variations](#message-variations).
 
-#### Redirect to another topic
+#### Go to another topic
 
-1. To have the bot move to a different topic, select **+** to add a node, and then select **Redirect to another topic**.
+To redirect to another topic, you'll first need to set up the topic you want to redirect to, also known as a subtopic.
 
-1. Select the topic that the bot should divert to. For example, you might send the user to a topic about the closure of a store if they ask about the store's hours.
+1. Create or go to the subtopic your bot will redirect people to and add one or more input/output variables.
 
-    :::image type="content" source="media/authoring-create-edit-topics/topics-nodes-other-topic-flyout.png" alt-text="Screenshot showing redirection to another topic node with options for other topics.":::
+   1. To create a variable, add either a Question node or a Set Variable node to the topic.
 
-You can consider the redirected topic as a "subtopic".
+   1. Go to the Variables pane and mark each node as an input or output, as needed.
+
+       :::image type="content" source="media/authoring-create-edit-topics/topics-redirect-add-variables.png" alt-text="Screenshot showing how to add a node as either an input or an output by selecting a checkbox.":::
+
+1. Save the topic with the input/output variable set.
+
+Now, you'll set up the initial topic a user will interact with and create the redirect to the subtopic you just edited.
+
+1. Go to or create the initial topic, then add a Redirect Node to the canvas by going to **Topic Management**, then **Go to another topic**.
+
+    :::image type="content" source="media/authoring-create-edit-topics/topics-redirect-add-subtopic.png" alt-text="Screenshot showing redirection to another topic node with options for other topics.":::
+
+1. If there are one or more input variables in the subtopic, add them to the Redirect node now using the **Add input** button.
+
+    :::image type="content" source="media/authoring-create-edit-topics/topics-redirect-set-variables.png" alt-text="Screenshot showing how to set the variables within a redirect.":::
+
+1. Fill in the appropriate input slots with variables to pass into the topic, and complete the outputs by either referencing existing variables or creating new ones.
+
+1. Save your topic, then use the test canvas to confirm that your bot successfully calls the subtopic and passes the variables as you defined.
 
 In the authoring canvas for the original topic, you can insert additional nodes under the subtopic's node.
 
