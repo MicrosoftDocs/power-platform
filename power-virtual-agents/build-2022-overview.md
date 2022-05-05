@@ -16,6 +16,7 @@ searchScope:
 # Technology preview for Build 2022
 
 <!-- FIXME: blurb about PVA at Build -->
+<!-- FIXME: link to quickstart article -->
 
 ## New features
 
@@ -27,6 +28,7 @@ searchScope:
 - [Speech authoring]()
 - [Telephony channel]()
 - [Bot response variations](authoring-create-edit-topics.md#message-variations)
+- [Quick responses]()
 
 ## Limitations of technology preview
 
@@ -43,80 +45,6 @@ The following features are not supported in the technology preview:
 - Bots setup with application lifecycle management (ALM)
     <!-- FIXME: button missing, confirm it wasn't moved -->
 - Extending bots in Composer
-
-## Quick start
-
-<!-- FIXME: add screenshots once scenario is approved -->
-
-This quick start walks you through making a bot that uses new features and improvements introduced in the Technology Preview.
-
-1. Navigate to the Power Virtual Agents home page and select **Create a bot**.
-
-1. Name the bot `Reservation Bot` and select **Create**.
-
-1. In the side navigation, select **Topics**. Then select the **Greeting** topic.
-
-1. Delete all existing **Message** nodes.
-
-1. Add a **Message** node. Then add the following greetings as [message variations](authoring-create-edit-topics.md#message-variations):
-    - `Good day!`
-    - `Hi there!`
-    - `Hi!`
-
-1. Add a second **Message** node and add the message `We're open 9am to 5pm Monday through Friday. If you'd like, I can help you make a reservation.`
-
-    <!-- FIXME: link doc once written -->
-1. Add a third **Message** node. Then add the following message which uses [SSML tags](): `<emphasis level="strong">Please note</emphasis><break strength="medium" /> we will be closed on May 27th.`
-
-1. Select **Save**.
-
-1. Go back to the topics list and select **New topic**.
-
-1. Add the following trigger phrases:
-    - `make a reservation`
-    - `reserve a time`
-
-1. Add a **Question** node and enter the message `What is the desired time and date of your reservation?`
-
-1. For **Identify** choose **Date and time**.
-
-    <!-- FIXME: link doc once written -->
-1. For **Save response as** [create a new variable]() named `reservationDateTime`.
-
-    <!-- FIXME: link doc once written -->
-1. [Add a **Set a Variable Value** node]().
-
-    <!-- FIXME: link doc once written -->
-1. For **Set variable** [create a new variable]() named `dateDiff`.
-
-    <!-- FIXME: link doc once written -->
-1. For **To value** enter the [Power Fx formula]() `DateDiff(Topic.reservationDateTime, Date(2022,5,27))`.
-
-    <!-- FIXME: link doc once written -->
-1. [Add a **ConditionItem** node](), then...
-    - For the first box, select the **dateDiff** variable.
-    - For the second box, choose **is equal to**.
-    - For the third box, use a [Power Fx formula]() to enter a [number value]() of `0`.
-
-1. Under the **ConditionItem** node add a **Message** node. Then enter the message `Sorry, but we're closed on May 27th. Please make a reservation on another day.`
-
-1. Under the **All Other Conditions** node, add a **Message** node and enter the message `Your reservation has been made for `. Then add the variable **reservationDateTime**.
-
-1. Add an **Redirect** node where the two condition branches meet and choose the **End of conversation** topic.
-
-1. Name the topic `Make a reservation` and select **Save**.
-
-    <!-- FIXME: link doc once written -->
-1. [Enable and configure the Telephony channel]().
-
-    <!-- FIXME: link doc once written -->
-1. [Customize your bot's voice font]().
-
-1. [Publish your bot](publication-fundamentals-publish-channels.md).
-
-1. Test your bot using the [**Test bot** pane](authoring-test-bot.md), or by calling the phone number configured in Telephony.
-
-<a id="where-to-find"></a>
 
 ## For desktop Composer users
 
