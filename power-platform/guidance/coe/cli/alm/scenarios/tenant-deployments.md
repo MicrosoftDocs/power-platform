@@ -19,6 +19,9 @@ search.app:
 
 # CoE ALM Accelerator for Power Platform tenant deployments
 
+> [!NOTE]
+> The ALM accelerator for Microsoft Power Platform is currently in public preview. While in preview we will be prioritizing feedback and bugs via GitHub [New issue](https://github.com/microsoft/coe-starter-kit/labels/alm-accelerator). If the issue is something in the platform all we can do is funnel feedback to the responsible product teams. For more information on the current preview status of the ALM Accelerator for Power Platform see [follow this link](https://github.com/microsoft/coe-starter-kit/blob/main/CenterofExcellenceALMAccelerator/PREVIEW.md).
+
 AA4PP can be deployed in the following scenarios single demo tenant or single enterprise tenant.
 
 Currently AA4PP doesn't automatically support a multi-tenant enterprise deployment model and more manual configuration will be required to configure that scenario.
