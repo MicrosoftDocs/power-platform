@@ -27,7 +27,7 @@ This quickstart walks you through making a bot that uses new features and improv
 
 ## Add a reservation topic
 
-1. In the side navigation, select **Topics** and then  **New topic**.
+1. In the side navigation, select **Topics** and then **New topic**.
 
 1. Add the following trigger phrases:
     - `make a reservation`
@@ -35,20 +35,27 @@ This quickstart walks you through making a bot that uses new features and improv
 
 1. Add a **Question** node and enter the message `What is the desired time and date of your reservation?`
 
-1. For **Identify** choose **Date and time**.
+1. For **Identify** choose **Date and time**. This [entity](advanced-entities-slot-filling.md) enables your bot to extract a date and time from the user's response.
 
     <!-- FIXME: link doc once written -->
 1. For **Save response as** [create a new variable]() named `reservationDateTime`.
 
     <!-- FIXME: link doc once written -->
-1. [Add a **ConditionItem** node]() and [change it to a formula]().
+1. [Add a **ConditionItem** node]() and [change it to a formula](advanced-power-fx.md#use-power-fx-as-a-condition).
 
-    <!-- FIXME: link doc once written -->
-1. Enter the [Power Fx formula]() `DateDiff(Topic.reservationDateTime, Date(2022,5,27)) == 0`.
+1. Enter the [Power Fx formula](advanced-power-fx.md) `DateDiff(Topic.reservationDateTime, Date(2022,5,27)) = 0`. This formula will evaluate to true if the date the user provided is May 5th 2022.
 
-1. Under the **ConditionItem** node add a **Message** node. Then enter the message `Sorry, but we're closed on May 27th. Please make a reservation on another day.`
+    :::image type="content" source="media/build-2022-quickstart/condition-formula.png" alt-text="Screenshot of variable in message node.":::
 
-1. Under the **All Other Conditions** node, add a **Message** node and enter the message `Your reservation has been made for`. Then add the variable **reservationDateTime**.
+1. Under the **ConditionItem** node add a **Message** node. This node to remind the user that the restaurant is closed on May 5th. Enter the message `Sorry, but we're closed on May 27th. Please make a reservation on another day.`
+
+1. Under the **All Other Conditions** node, add a **Message** node. This node will provide a confirmation of the user's reservation. Enter the message `Your reservation has been made for {Topic.reservationDateTime}. We look forward to seeing you!`.
+
+    :::image type="content" source="media/build-2022-quickstart/variable-reference.png" alt-text="Screenshot of variable in message node.":::
+
+   When the bot responds with this message, the variable reference `{Topic.reservationDateTime}` will be replaced with with the value of the variable.
+
+    :::image type="content" source="media/build-2022-quickstart/variable-replaced.png" alt-text="Screenshot of variable reference replaced with value.":::
 
 1. Add an **Redirect** node where the two condition branches meet and choose the **End of conversation** topic.
 
@@ -66,26 +73,36 @@ This quickstart walks you through making a bot that uses new features and improv
     - `Hi!`
 
     <!-- FIXME: can we host an image somewhere for users? -->
-1. [Add an image card]() and provide an image of the restaurant.
+1. [Add an image card]() and provide an image of the restaurant. Providing an image helps the user visually confirm that they're booking at the correct location.
 
     <!-- FIXME: link doc once written -->
-1. Add a second **Message** node. Then add the following message which uses [SSML tags](): `We're open 9am to 5pm Monday through Friday. <emphasis level="strong">Please note</emphasis><break strength="medium" /> we will be closed on May 27th.`
+1. Add a second **Message** node and change the mode to **Speech** to enable the use of [SSML tags]().
 
-1. Add a third **Message** node and add the message `If you'd like, I can help you make a reservation.`
+    :::image type="content" source="media/build-2022-quickstart/message-speech-mode.png" alt-text="Screenshot of speech mode toggle.":::
 
-    <!-- FIXME: link doc once written, add additional steps -->
+1. Add the message `We're open 9am to 5pm Monday through Friday. <emphasis level="strong">Please note</emphasis><break strength="medium" /> we will be closed on May 27th.`
+
+   When the message is spoken by the bot over a phone call, it will put emphasis on "Please note" and pause for a moment before continuing.
+
+1. Add a third **Message** node and add the message `If you'd like, I can help you make a reservation.` to provide a call to action for the user.
+
+    <!-- FIXME: link doc once written -->
 1. Add a [quick reply]() with the message `make a reservation`.
+
+   Adding a quick reply gives the user the option to select "make a reservation" instead of having to type it out.
+
+   :::image type="content" source="media/build-2022-quickstart/quick-reply.png" alt-text="Screenshot of speech mode toggle.":::
 
 1. Select **Save**.
 
 ## Next steps
 
 <!-- FIXME: link doc once written -->
-1. [Enable and configure the Telephony channel]().
+1. To allows users to call your bot, you need to [enable and configure the Telephony channel]().
 
     <!-- FIXME: link doc once written -->
-1. [Customize your bot's voice font]().
+1. Optionally, [customize your bot's voice font]().
 
 1. [Publish your bot](publication-fundamentals-publish-channels.md).
 
-1. Test your bot using the [**Test bot** pane](authoring-test-bot.md), or by calling the phone number configured in Telephony.
+1. Test your bot using the [demo website](publication-connect-bot-to-web-channels.md), or by calling the phone number configured in Telephony.

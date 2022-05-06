@@ -21,7 +21,7 @@ Power Virtual Agent's new intelligent bot authoring experience unifies the sophi
 This evolution brings new features including:
 <!-- FIXME: merge PRs and link relevant docs -->
 - [Enhanced variable management]()
-- [Power FX support]()
+- [Power FX support](advanced-power-fx.md)
 - [Rich Response Authoring​]()
 - [Speech authoring]()
 - [Voice font selection]()
@@ -48,15 +48,15 @@ The following table list some key concepts in Composer and describes where to fi
 | Suggested actions              | [Quick replies][]                                   | Use quick replies to provide default reply options to the user.                                                                                                                                                                                    |
 | Entities                       | [Entities][]                                        | Define and use entities to extract semantic information from a user's utterance.                                                                                                                                                                   |
 | State, storage, and properties | [Variables][]                                       | Use variables to track state.                                                                                                                                                                                                                      |
-| Formulas and expressions       | [Power FX][]                                        | Use Power FX to create expressions.                                                                                                                                                                                                                |
+| Formulas and expressions       | [Power Fx][]                                        | Use Power Fx to create expressions.                                                                                                                                                                                                                |
 
 <!-- FIXME: update links -->
-[Entities]: #where-to-find
-[Nodes]: #where-to-find
-[Power FX]: #where-to-find
-[question variations]: #where-to-find
+[Entities]: advanced-entities-slot-filling.md
+[Nodes]: authoring-create-edit-topics.md
+[Power Fx]: advanced-power-fx.md
+[question variations]: authoring-create-edit-topics.md#message-variations
 [Quick replies]: #where-to-find
-[Response variations]: #where-to-find
-[Topics]: #where-to-find
-[Trigger phrases]: #where-to-find
-[Variables]: #where-to-find
+[Response variations]: authoring-create-edit-topics.md#message-variations
+[Topics]: authoring-create-edit-topics.md
+[Trigger phrases]: authoring-create-edit-topics.md
+[Variables]: authoring-variables.md
