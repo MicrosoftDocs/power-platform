@@ -42,17 +42,17 @@ Lastly, you can [change the name and bot icon](#change-the-bot-name-and-icon) (w
 >
 > Microsoft gives no express warranties, guarantees, or conditions and excludes all implied warranties, including merchantability, fitness for a particular purpose, and non-infringement.
 
-## Change the bot name and icon
+## Change the bot name
 
-You can change the bot's name and icon. This will affect the icon in all channels where you publish your bot.
+You can change the bot's name.
 
 1. Select **Manage** on the side pane, and then go to the **Details** tab.
 
-1. Change the bot's name and icon. [Review the recommendations on Microsoft Teams icon formats](/microsoftteams/platform/resources/schema/manifest-schema#icons)
+1. Change the bot's name.
 
 1. Select **Save** to commit your changes.
 
-    :::image type="content" source="media/customize-default-canvas/custom-canvas-name-icon.png" alt-text="The bot details pane lets you change the name and icon.":::
+    :::image type="content" source="media/customize-default-canvas/custom-canvas-name-icon.png" alt-text="The bot details pane lets you change the name.":::
 
 > [!IMPORTANT]
 > After updating your bot's icon, it may take up to 24 hours for the new icon to appear everywhere.
