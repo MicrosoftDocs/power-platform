@@ -2,12 +2,10 @@
 title: "Types of Power Automate licenses"
 description: "Types of Power Automate licenses."
 author: PriyaKodukula
-
 ms.subservice: admin
 ms.topic: overview
-ms.date: 10/31/2021
+ms.date: 03/30/2022
 ms.author: prkoduku
-manager: kvivek
 search.audienceType: 
   - admin
 search.app:
@@ -105,7 +103,7 @@ Here's the full list of [premium connectors](/connectors/connector-reference/con
 
 ### Business process flows
 
-You can create [business process flows](/business-process-flows-overview) for a workflow to ensure that users enter data consistently and follow the same steps every time. Business process flows provide a streamlined user experience that leads people through the processes their organization has defined for interactions that need to be advanced to reach a conclusion.
+You can create [business process flows](/power-automate/business-process-flows-overview) for a workflow to ensure that users enter data consistently and follow the same steps every time. Business process flows provide a streamlined user experience that leads people through the processes their organization has defined for interactions that need to be advanced to reach a conclusion.
 
 ### Custom connectors
 
@@ -121,9 +119,9 @@ The [on-premises data gateway](/power-automate/gateway-reference) acts as a brid
 
 ### AI Builder credits
 
-With [AI builder](/use-ai-builder), you to add intelligence to your automated processes, predict outcomes, and help improve business performance. AI Builder capacity is expressed in the form of "service credits". Service credits serve as the single (common) currency across all the scenarios that AI Builder supports. Available service credits are deducted when AI Builder services are used. For instance, you could use these credits to extract data from a few documents with _form processing_ or perform hundreds of basic OCR extractions with _text recognition_.
+With [AI builder](/power-automate/use-ai-builder), you to add intelligence to your automated processes, predict outcomes, and help improve business performance. AI Builder capacity is expressed in the form of "service credits". Service credits serve as the single (common) currency across all the scenarios that AI Builder supports. Available service credits are deducted when AI Builder services are used. For instance, you could use these credits to extract data from a few documents with _form processing_ or perform hundreds of basic OCR extractions with _text recognition_.
 
-Different scenarios (for example, forms processing, prediction, etc.) consume service credits at different rates. Each per user with attended RPA license grants you 5000 credits, allowing you to assess the capabilities in AI Builder. Learn more about [AI builder licensing](/power-platform/admin/powerapps-flow-licensing-faq%23ai-builder).
+Different scenarios (for example, forms processing, prediction, etc.) consume service credits at different rates. Each per user with attended RPA license grants you 5000 credits, allowing you to assess the capabilities in AI Builder. Learn more about [AI builder licensing](/power-platform/admin/powerapps-flow-licensing-faq).
 
 ### Dataverse database and file capacity
 
@@ -227,13 +225,10 @@ The connectors have separate limits as a service protection mechanism. For examp
 
 When a flow was throttled because it exceeded the connector limits, you might see a HTTP 429 (too many requests) error in your flow with error text like "Rate limit is exceeded. Try again in 27 seconds."
 
-#### I am using COE toolkit, will the usage count towards my request limits?
+#### I am using COE Starter Kit , will the usage count towards my request limits?
 
-Yes. Flows included in the COE toolkit also use limits from the owner. Microsoft recommends that you turn on Pay-as-you go for the environment or buy additional capacity and contact support to get temporary relief from throttling.
+Yes. Flows included in the [COE Starter Kit](../../guidance/coe/starter-kit.md) also use limits from the owner. Microsoft recommends that you turn on Pay-as-you go for the environment or buy additional capacity and contact support to get temporary relief from throttling.
 
-#### Can I use a service account and run multiple flows under it?
-
-Yes, and if your flow runs under a service account, it is really a team/organization flow and it needs a per flow plan for every flow.
 
 #### Can I use service principal in flows, and does it count against my request limits?
 

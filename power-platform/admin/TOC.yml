@@ -130,8 +130,6 @@
           href: reset-environment.md
         - name: Copy environment
           href: copy-environment.md
-        - name: Move environment
-          href: move-environment-tenant.md
         - name: Back up and restore environment
           href: backup-restore-environments.md
         - name: Business continuity and disaster recovery
@@ -158,7 +156,7 @@
           href: opt-in-early-access-updates.md
         - name: General availability deployment
           href: general-availability-deployment.md
-        - name: "Preview: Manage maintenance window"
+        - name: "Manage maintenance window (preview)"
           href: manage-maintenance-window.md
       - name: Manage settings 
         items:
@@ -362,6 +360,10 @@
         items:
         - name: Environment cleanup process
           href: automatic-environment-cleanup.md
+        - name: Migrate environment
+          href: move-environment-tenant.md          
+        - name: Geo to geo migrations
+          href: geo-to-geo-migrations.md  
         - name: Power Platform Geos
           href: regions-overview.md
         - name: Multiple online environments or tenants
@@ -374,208 +376,6 @@
           href: wp-task-automation-powershell.md
         - name: Automation of tasks with Power Automate
           href: wp-task-automation-flow.md    
-    - name: Manage users 
-      items:     
-      - name: Overview of user security
-        href: grant-users-access.md
-      - name: View active users  
-        href: admin-view-user-licenses.md
-      - name: Create users
-        href: create-users.md
-      - name: Assign licenses
-        href: assign-licenses.md
-
-      - name: Assign security roles
-        items:  
-        - name: About security roles and privileges
-          href: security-roles-privileges.md
-        - name: Assign security roles
-          href: assign-security-roles.md
-        - name: Opt-out of automatic license-based user roles management
-          href: opt-out-automatic-license.md
-        - name: Use service admin roles to manage your tenant
-          href: use-service-admin-role-manage-tenant.md
-        - name: Miscellaneous privileges
-          href: miscellaneous-privileges.md
-        - name: Create or edit a security role
-          href: create-edit-security-role.md
-        - name: Copy a security role
-          href: copy-security-role.md
-
-      - name: Manage application users
-        href: manage-application-users.md
-      - name: Delete users
-        href: delete-users.md
-      - name: Reset a user's password
-        href: reset-users-password.md          
-      - name: Assign service admin role to users
-        href: use-service-admin-role-manage-tenant.md#assign-a-service-admin-role-to-a-user
-      - name: Add users to an environment
-        href: add-users-to-environment.md
-      - name: Configure user security to resources
-        href: database-security.md
-      - name: Configure user access to an environment
-        href: control-user-access.md  
-      - name: View user profile
-        href: /powerapps/user/view-your-user-profile
-      - name: Create an administrative user
-        href: prevent-elevation-security-role-privilege.md
-      - name: Troubleshoot common user access issues 
-        href: troubleshooting-user-needs-read-write-access-organization.md     
-      - name: Manage user account synchronization 
-        href: manage-user-account-synchronization.md       
-      - name: Hierarchy security to control access
-        href: hierarchy-security.md
-      - name: Add or remove sales territory members
-        href: add-remove-territory-members.md
-      - name: User session management
-        href: user-session-management.md
-      - name: Conditional access with Azure AD 
-        href: restrict-access-online-trusted-ip-rules.md
-      - name: B2B collaboration with Azure AD
-        href: invite-users-azure-active-directory-b2b-collaboration.md    
-    - name: Analytics
-      items: 
-      - name: Dataverse analytics 
-        href: analytics-common-data-service.md
-      - name: Power Apps analytics
-        href: analytics-powerapps.md
-      - name: Power Automate
-        items:
-        - name: Analytics for flows
-          href: analytics-flow.md
-        - name: Analytics for UI flows
-          href: analytics-ui-flow.md 
-      - name: Reports
-        items:
-        - name: "Preview: Tenant-level analytics (default)" 
-          href: tenant-level-analytics.md
-        - name: "Preview: Power Apps analytics"
-          href: powerapps-analytics-reports.md
-        - name: "Preview: Power Automate analytics"
-          href: power-automate-analytics-reports.md
-        # Comment out the next topics before publish      
-        # - name: "Preview: Power Apps license utilization"
-        #   href: powerapps-license-utilization.md
-      - name: Data export
-        items:
-        - name: "Preview: Export Power Apps inventory and usage data"
-          href: self-service-analytics.md
-        # Comment out the next topic before publish    
-        # - name: "Preview: Self-service analytics schema definition"
-        #   href: self-service-analytics-schema-definition.md
-        - name: "Preview: Create custom dashboards using Power Apps inventory and usage data"
-          href: build-custom-reports.md
-      - name: "Preview: Analyze telemetry with Application Insights"
-        items:
-        - name: "Preview: Model-driven apps and Microsoft Dataverse telemetry"
-          href: analyze-telemetry.md
-        - name: "Preview: Overview of integration with Application Insights"
-          href: overview-integration-application-insights.md
-        - name: "Preview: Telemetry events for model-driven apps" 
-          href: telemetry-events-model-driven-apps.md
-        - name: "Preview: Telemetry events for Dataverse"
-          href: telemetry-events-dataverse.md   
-        - name: "Preview: Set up export to Application Insights"
-          href: set-up-export-application-insights.md
-    - name: Storage
-      items: 
-      - name: What's new for storage
-        href: whats-new-storage.md
-      - name: New capacity storage model
-        href: capacity-storage.md
-      - name: Legacy capacity storage model
-        href: legacy-capacity-storage.md
-      - name: View self-service capacity
-        href: view-self-service-capacity.md
-      - name: Free up storage space
-        href: free-storage-space.md        
-      - name: Add storage capacity
-        href: add-storage.md      
-      - name: Access storage with SAS token
-        href: storage-sas-token.md 
-    - name: Resources
-      items:
-      - name: Overview 
-        href: view-manage-resources.md
-      - name: Manage Dynamics 365 apps
-        href: manage-apps.md
-      - name: Manage Power Apps 
-        href: admin-manage-apps.md
-      - name: Manage Power Automate flows
-        href: manage-power-automate.md
-      - name: Add-on capacity management
-        href: capacity-add-on.md
-      - name: Portal administration
-        href: /powerapps/maker/portals/admin/power-platform-admin-center
-    - name: Activity logging
-      items: 
-      - name: Power Apps activity logging
-        href: logging-powerapps.md
-      - name: Power Automate activity logging
-        href: logging-power-automate.md 
-      - name: Data loss prevention activity logging
-        href: dlp-activity-logging.md
-      - name: Audit data and user activity for Dynamics 365 entities
-        href: audit-data-user-activity.md
-      - name: Dataverse and model-driven apps
-        href: enable-use-comprehensive-auditing.md   
-    - name: Programmability and extensibility
-      items:
-      - name: Overview
-        href: programmability-extensibility-overview.md
-      - name: Versioning and support
-        href: programmability-versioning-support.md
-      - name: Authentication
-        href: programmability-authentication.md
-      - name: Tutorials
-        items:
-        - name: "Preview: Create a daily capacity report"
-          href: programmability-tutorial-create-daily-capacity-report.md
-      - name: PowerShell
-        items:
-        - name: Getting started
-          href: powershell-getting-started.md
-        - name: Installation
-          href: powershell-installation.md
-        - name: Creating a service principal
-          href: powershell-create-service-principal.md
-        - name: Cmdlet Reference
-          href: /powershell/module/microsoft.powerapps.administration.powershell/?view=pa-ps-latest
-      - name: Connectors
-        items:
-        - name: Getting started
-          href: connectors-getting-started.md
-        - name: Connector reference
-          href: /connectors/powerplatformforadmins/
-      - name: Power Platform API
-        items:
-        - name: Getting started
-          href: powerplatform-api-getting-started.md
-        - name: "Preview: Creating a service principal"
-          href: powerplatform-api-create-service-principal.md
-        - name: Reference
-          items:
-          - name: "2020-10-01"
-            items:
-            - name: Environments
-              items:
-              - name: "Preview: List environments"
-                href: list-environments.md
-              - name: "Preview: Create a Dataverse application user"
-                href: create-dataverseapplicationuser.md
-            - name: Tenant Settings
-              items:
-              - name: "Preview: List tenant settings"
-                href: list-tenantsettings.md
-    - name: PowerShell support for Power Apps 
-      items:
-      - name: About PowerShell support
-        href: powerapps-powershell.md           
-      - name: Automation of tasks with PowerShell 
-        href: wp-task-automation-powershell.md
-      - name: Data loss prevention SDK 
-        href: data-loss-prevention-sdk.md
     - name: Security and governance
       items:      
       - name: Security and governance
@@ -584,8 +384,10 @@
         href: security/overview.md
       - name: Authenticating to Power Platform services
         href: security/authenticate-services.md
-      - name: Data storage in Power Platform
+      - name: Dataverse data governance in Power Platform
         href: security/data-storage.md
+      - name: Customer Lockbox
+        href: about-lockbox.md
       - name: Connecting and authenticating to data sources
         href: security/connect-data-sources.md
       - name: Security and governance considerations
@@ -609,7 +411,7 @@
           items: 
           - name: Control user access to environments
             href: control-user-access.md  
-          - name: "Preview: Restrict cross-tenant access" 
+          - name: "Restrict cross-tenant access (preview)" 
             href: cross-tenant-restrictions.md
           - name: Content security policy
             href: content-security-policy.md
@@ -675,6 +477,212 @@
             href: manage-encryption-key.md      
       - name: Security FAQs
         href: security/faqs.md
+    - name: Manage users 
+      items:     
+      - name: Overview of user security
+        href: grant-users-access.md
+      - name: View active users  
+        href: admin-view-user-licenses.md
+      - name: Create users
+        href: create-users.md
+      - name: Assign licenses
+        href: assign-licenses.md
+      - name: Assign security roles
+        items:  
+        - name: About security roles and privileges
+          href: security-roles-privileges.md
+        - name: Assign security roles
+          href: assign-security-roles.md
+        - name: Opt-out of automatic license-based user roles management
+          href: opt-out-automatic-license.md
+        - name: Use service admin roles to manage your tenant
+          href: use-service-admin-role-manage-tenant.md
+        - name: Miscellaneous privileges
+          href: miscellaneous-privileges.md
+        - name: Create or edit a security role
+          href: create-edit-security-role.md
+        - name: Copy a security role
+          href: copy-security-role.md
+      - name: Manage application users
+        href: manage-application-users.md
+      - name: Delete users
+        href: delete-users.md
+      - name: Reset a user's password
+        href: reset-users-password.md          
+      - name: Assign service admin role to users
+        href: use-service-admin-role-manage-tenant.md#assign-a-service-admin-role-to-a-user
+      - name: Add users to an environment
+        href: add-users-to-environment.md
+      - name: Configure user security to resources
+        href: database-security.md
+      - name: Configure user access to an environment
+        href: control-user-access.md  
+      - name: View user profile
+        href: /powerapps/user/view-your-user-profile
+      - name: Create an administrative user
+        href: prevent-elevation-security-role-privilege.md
+      - name: Troubleshoot common user access issues 
+        href: troubleshooting-user-needs-read-write-access-organization.md     
+      - name: Manage user account synchronization 
+        href: manage-user-account-synchronization.md       
+      - name: Hierarchy security to control access
+        href: hierarchy-security.md
+      - name: Add or remove sales territory members
+        href: add-remove-territory-members.md
+      - name: User session management
+        href: user-session-management.md
+      - name: Conditional access with Azure AD 
+        href: restrict-access-online-trusted-ip-rules.md
+      - name: B2B collaboration with Azure AD
+        href: invite-users-azure-active-directory-b2b-collaboration.md    
+    - name: Analytics
+      items: 
+      - name: Dataverse analytics 
+        href: analytics-common-data-service.md
+      - name: Power Apps analytics
+        href: analytics-powerapps.md
+      - name: Power Automate
+        items:
+        - name: Analytics for flows
+          href: analytics-flow.md
+        - name: Analytics for UI flows
+          href: analytics-ui-flow.md 
+      - name: Reports (preview)
+        items:
+        - name: "Tenant-level analytics (default)" 
+          href: tenant-level-analytics.md
+        - name: "Power Apps analytics"
+          href: powerapps-analytics-reports.md
+        - name: "Power Automate analytics"
+          href: power-automate-analytics-reports.md
+      - name: Data export (preview)
+        items:
+        - name: "Export Power Apps inventory and usage data"
+          href: self-service-analytics.md
+        - name: "Self-service analytics schema definition"
+          href: self-service-analytics-schema-definition.md
+        - name: "Create custom dashboards using Power Apps inventory and usage data"
+          href: build-custom-reports.md
+      - name: "Analyze telemetry with Application Insights (preview)"
+        items:
+        - name: "Model-driven apps and Microsoft Dataverse telemetry"
+          href: analyze-telemetry.md
+        - name: "Overview of integration with Application Insights"
+          href: overview-integration-application-insights.md
+        - name: "Telemetry events for model-driven apps" 
+          href: telemetry-events-model-driven-apps.md
+        - name: "Telemetry events for Dataverse"
+          href: telemetry-events-dataverse.md   
+        - name: "Set up export to Application Insights"
+          href: set-up-export-application-insights.md
+    - name: Storage
+      items: 
+      - name: What's new for storage
+        href: whats-new-storage.md
+      - name: New capacity storage model
+        href: capacity-storage.md
+      - name: Legacy capacity storage model
+        href: legacy-capacity-storage.md
+      - name: View self-service capacity
+        href: view-self-service-capacity.md
+      - name: Free up storage space
+        href: free-storage-space.md        
+      - name: Add storage capacity
+        href: add-storage.md      
+      - name: Access storage with SAS token
+        href: storage-sas-token.md 
+    - name: Resources
+      items:
+      - name: Overview 
+        href: view-manage-resources.md
+      - name: Manage Dynamics 365 apps
+        href: manage-apps.md
+      - name: Manage Power Apps 
+        href: admin-manage-apps.md
+      - name: Manage Power Automate flows
+        href: manage-power-automate.md
+      - name: Add-on capacity management
+        href: capacity-add-on.md
+      - name: Portal administration
+        href: /powerapps/maker/portals/admin/power-platform-admin-center
+    - name: Activity logging
+      items: 
+      - name: Power Apps activity logging
+        href: logging-powerapps.md
+      - name: Power Automate activity logging
+        href: logging-power-automate.md 
+      - name: Data loss prevention activity logging
+        href: dlp-activity-logging.md
+      - name: Audit data and user activity for Dynamics 365 entities
+        href: audit-data-user-activity.md
+      - name: Dataverse and model-driven apps
+        href: enable-use-comprehensive-auditing.md   
+    - name: Programmability and extensibility
+      items:
+      - name: Overview
+        href: programmability-extensibility-overview.md
+      - name: Versioning and support
+        href: programmability-versioning-support.md
+      - name: Authentication
+        items:
+        - name: Authentication - legacy
+          href: programmability-authentication.md
+        - name: Authentication (preview)
+          href: programmability-authentication-v2.md
+      - name: Permission reference (preview)
+        href: programmability-permission-reference.md
+      - name: Tutorials
+        items:
+        - name: "Create a daily capacity report (preview)"
+          href: programmability-tutorial-create-daily-capacity-report.md
+        - name: "Install an application to a target environment (preview)"
+          href: programmability-tutorial-install-application-environment.md
+      - name: PowerShell
+        items:
+        - name: Getting started
+          href: powershell-getting-started.md
+        - name: Installation
+          href: powershell-installation.md
+        - name: Creating a service principal
+          href: powershell-create-service-principal.md
+        - name: Cmdlet reference
+          href: /powershell/module/microsoft.powerapps.administration.powershell
+      - name: Connectors
+        items:
+        - name: Getting started
+          href: connectors-getting-started.md
+        - name: Connector reference
+          href: /connectors/powerplatformforadmins/
+      - name: Power Platform API (preview)
+        items:
+        - name: Getting started
+          href: powerplatform-api-getting-started.md
+        - name: Creating a service principal
+          href: powerplatform-api-create-service-principal.md
+        - name: Reference
+          items:
+          - name: "2022-03-01-preview"
+            href: /rest/api/power-platform
+          - name: "2020-10-01"
+            items:
+            - name: Environments
+              items:
+              - name: "List environments"
+                href: list-environments.md
+              - name: "Create a Dataverse application user"
+                href: create-dataverseapplicationuser.md
+            - name: Tenant Settings
+              items:
+              - name: "List tenant settings"
+                href: list-tenantsettings.md
+    - name: PowerShell support for Power Apps 
+      items:
+      - name: About PowerShell support
+        href: powerapps-powershell.md           
+      - name: Automation of tasks with PowerShell 
+        href: wp-task-automation-powershell.md
+      - name: Data loss prevention SDK 
+        href: data-loss-prevention-sdk.md
     - name: SharePoint and Power Apps
       items:
       - name: Manage your documents using SharePoint
@@ -722,9 +730,9 @@
       items: 
       - name: "About on-premises gateway"
         href: wp-onpremises-gateway.md
-      - name: "Preview: On-premises data gateway management"
+      - name: "On-premises data gateway management (preview)"
         href: onpremises-data-gateway-management.md
-      - name: "Preview: Data source management"
+      - name: "Data source management (preview)"
         href: onpremises-data-gateway-source-management.md
     - name: Manage data
       items: 
@@ -844,6 +852,8 @@
               href: email-message-filtering-correlation.md 
             - name: Associate an email address with a row
               href: associate-email-address.md
+            - name: How is an email record owner determined
+              href: email-record-owner.md
             - name: Create queue items from incoming email
               href: create-queue-items-from-synchronized-email-messages.md
           - name: Configure appointment, contact, and task synchronization
@@ -899,7 +909,7 @@
         href: manage-bing-maps-organization.md 
       - name: Enable Power Automate integration
         href: enable-embedded-flow-in-your-organization.md 
-      - name: "Preview feature: Live Assist powered by Café X"
+      - name: "Live Assist powered by Café X (preview)"
         href: /dynamics365/customer-engagement/live-assist/live-assist-microsoft-dynamics-365-powered-by-cafe-x
       - name: Use Power BI
         href: use-power-bi.md 

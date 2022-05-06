@@ -4,7 +4,7 @@ description: Covers how to back up and restore environments
 services: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/10/2022
+ms.date: 03/22/2022
 ms.subservice: admin
 author: ChrisGarty
 ms.author: cgarty
@@ -52,12 +52,10 @@ About **system backups**:
   
 4. Under **Select a backup to restore**, choose a date and time to select a system backup to restore, and then select **Continue**. 
 
-5. You'll be provided with a list of available backups at or close to the date and time you chose if the selected time is not available. Pick the desired backup, and then select **Confirm**.
-
    > [!div class="mx-imgBorder"] 
    > ![Select available backup.](media/select-available-backup.png "Select available backup")
 
-6. Select an environment to restore to (overwrite), enter other settings as desired, and then select **Restore**.
+5. Select an environment to restore to (overwrite), enter other settings as desired, and then select **Restore**.
 
    > [!div class="mx-imgBorder"] 
    > ![Enter backup details.](media/restore-backup.png "Enter backup details")
@@ -66,7 +64,7 @@ About **system backups**:
    > - Only sandbox environments can be restored to.
    > - Under **Edit details**, you can change the environment name.
 
-7. Confirm overwrite of the environment. 
+6. Confirm overwrite of the environment. 
 
 ## Manual backups
 Automated system backups are great, but you'll want to make your own backups before making some significant customization change or applying a version update. You can do this with manual backups.  
@@ -94,8 +92,7 @@ About **manual backups**:
   
 2. Go to **Environments** > [select an environment] > **Backups** > **Create**.
   
-   > [!div class="mx-imgBorder"] 
-   > ![Select Create.](media/create-backup.png "Select Create")
+   :::image type="content" source="media/create-backup.png" alt-text="Select Create.":::
 
 3. Fill in the information, and then select **Create**.
 
@@ -122,20 +119,6 @@ You can only restore to sandbox environments. To restore to a production environ
 
 6. Confirm overwrite of the environment. 
 
-<!--
-### Edit a manual backup  
-Edit a backup to change its label and your notes about the backup.  
-  
-1. Browse to the Power Platform admin center and sign in using administrator credentials.
-  
-2. Go to **Environments** > [select an environment] > **Backups** > **Restore or manage**.
-
-3. Select the **Manual** tab.
-
-4. Select **Edit**.
-  
-5. Fill in the information, and then select **Save**.
--->
 
 ### Delete a manual backup  
  You can  delete manual backups. You can't delete system backups.  
@@ -202,7 +185,7 @@ The newly restored environment is placed in administration mode. To disable admi
 
 ### What steps are needed after a restore to ensure flows are working as expected?
 
-- **Flows** - Review the flows in the environment. Edit flows that need triggers and actions adjusted. Enable and disable flows as needed.
+- **Flows** - In the target environment, existing solution flows will be deleted but existing non-solution flows will remain. Review the flows in the target environment to ensure that triggers and actions are pointing at the correct locations. Solution flows will be disabled so enable flows as needed.
 - **Connection References** - Connection References will require new connections. Create and set connections on Connection References.
 - **Custom Connectors** - Custom connectors should be reviewed and, if needed, deleted and reinstalled.
 

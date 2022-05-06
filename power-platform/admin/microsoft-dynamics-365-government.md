@@ -1,10 +1,10 @@
 ---
-title: "Dynamics 365 US Government overview"
+title: "Dynamics 365 service description"
 description: "Learn about features that are specific to Microsoft Dynamics 365 US Government as public sector customers deploy into government community cloud (GCC)." 
 author: carrema
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/09/2022
+ms.date: 04/14/2022
 ms.subservice: admin
 ms.author: macarrer
 ms.reviewer: jimholtz
@@ -21,14 +21,26 @@ search.app:
 
 In response to the unique and evolving requirements of the United States public sector, Microsoft has created Microsoft Dynamics 365 US Government that is available to qualified government tables in the United States. On October 11, 2016, Microsoft announced the next generation of intelligent business applications in the cloud under the brand Microsoft Dynamics 365. To this end, Microsoft Dynamics 365 US Government entails a continuity of the protected environment that was originally branded Microsoft CRM Online Government where the protections afforded to the government community cloud under the new brand are now represented by eight discrete functions: 
 
-- Sales
 - Customer Service
-- Field Service 
-- Project Service Automation
-- Finance
-- Supply Chain Management
 - Customer Voice
+- Field Service 
+- Finance
+- Guides
 - Omnichannel Engagement Hub
+- Project Service Automation
+- Remote Assist on HoloLens or HoloLens 2
+- Sales
+- Supply Chain Management
+
+## Dynamics 365 US Government feature limitations
+
+Microsoft strives to maintain functional parity between our commercially available services and those enabled though our U.S. Government clouds, specifically:
+
+- US Government Community Cloud (GCC)
+- US GC High
+- US Department of Defense (US DoD)
+
+There are exceptions to the principle of maintaining product functional parity within the U.S. Government clouds. These exceptions are highlighted through the [Product and Feature Availability](https://aka.ms/bapfunctionalparity) document, and intended to help customers understand and plan for successful implementations of their business application solutions. Microsoft continues to evaluate these services and capabilities for inclusion and updates in future releases.  Check back on a monthly basis for important updates and revisions. Refer to the [Global Geographic Availability](https://dynamics.microsoft.com/geographic-availability/) tool to see where the Dynamics 365 Apps and Offers are available throughout the world, including approximate availability timelines. 
 
 ## About Dynamics 365 US Government environments and products
 
@@ -42,13 +54,15 @@ Select Dynamics 365 US Government products are available to qualified government
 
 |GCC  |GCC High  |DoD  |
 |---------|---------|---------|
-|Dynamics 365 Sales Enterprise and Professional     |Dynamics 365 Sales Enterprise and Professional         |Dynamics 365 Sales Enterprise and Professional         |
-|Dynamics 365 Customer Service Enterprise and Professional     | Dynamics 365 Customer Service Enterprise and Professional        |Dynamics 365 Customer Service Enterprise and Professional         |
-|Dynamics 365 Field Service      | Dynamics 365 Field Service         |Dynamics 365 Field Service          |
-|Dynamics 365 Project Service Automation     |Dynamics 365 Project Service Automation         | Dynamics 365 Project Service Automation        |
-|Dynamics 365 Finance     |      |         |
-|Dynamics 365 Omnichannel for Customer Service     |     |         |
+|Dynamics 365 Customer Service Enterprise and Professional     | Dynamics 365 Customer Service Enterprise and Professional        | Dynamics 365 Customer Service Enterprise and Professional         |
 |Dynamics 365 Customer Voice   |     |         |
+|Dynamics 365 Field Service      | Dynamics 365 Field Service         | Dynamics 365 Field Service          |
+|Dynamics 365 Finance     |      |         |
+|Dynamics 365 Guides |   |   |
+|Dynamics 365 Omnichannel for Customer Service     |     |         |
+|Dynamics 365 Project Service Automation     | Dynamics 365 Project Service Automation         | Dynamics 365 Project Service Automation        |
+|Dynamics 365 Remote Assist on HoloLens or HoloLens 2 | Dynamics 365 Remote Assist on HoloLens or HoloLens 2 |   |
+|Dynamics 365 Sales Enterprise and Professional     |Dynamics 365 Sales Enterprise and Professional         |Dynamics 365 Sales Enterprise and Professional         |
 |Dynamics 365 Supply Chain Management |    |    |
 
 ### Subscription Availability
@@ -224,10 +238,6 @@ You use a different set of URLs to access Dynamics 365 US Government environment
 
 Effective March 2, 2020, the regional Discovery Service will be deprecated. More information: Regional Discovery Service is deprecated.
 
-## Dynamics 365 US Government feature limitations
-Microsoft strives to maintain functional parity between our commercially available service and those enabled through our US Government clouds. These services are referred to as Dynamics 365 Government Community Cloud (GCC) and GCC High. Refer to the [Global Geographic Availability](https://dynamics.microsoft.com/geographic-availability/) tool to see where the Dynamics 365 Apps and Offers are available throughout the world, including approximate availability timelines. 
-
-There are exceptions to the principle of maintaining product functional parity within the US Government clouds. For more information about feature availability, download this file: [Business Applications US Government - Availability Summary](https://aka.ms/BAPFunctionalParity).
 
 ### See also  
 [Power Platform URLs and IP address ranges](online-requirements.md)<br />

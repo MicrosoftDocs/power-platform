@@ -19,6 +19,9 @@ search.app:
 
 # CoE ALM Accelerator for Power Platform maker set-up
 
+> [!NOTE]
+> The ALM accelerator for Microsoft Power Platform is currently in public preview. While in preview we will be prioritizing feedback and bugs via GitHub [New issue](https://github.com/microsoft/coe-starter-kit/labels/alm-accelerator). If the issue is something in the platform all we can do is funnel feedback to the responsible product teams. For more information on the current preview status of the ALM Accelerator for Power Platform see [follow this link](https://github.com/microsoft/coe-starter-kit/blob/main/CenterofExcellenceALMAccelerator/PREVIEW.md).
+
 The first step is to ensure there's an environment to build and manage solutions. Normally each maker has a unique [development environment](./development-environments.md) created. Having successfully gained access to a development environment, the commands below allow either a Power Platform administrator or a maker to perform the following tasks:
 
 1. [Set up service principal](#set-up-service-principal) - Provide access to the service principal used by the Azure DevOps Pipeline.
@@ -126,6 +129,11 @@ After setting up an advanced maker, you might need to verify the following set-u
 1. If necessary, select **View** and permit the build pipeline to access the required resources, such as the variable group, repository, and service connection.
 
    ![Azure DevOps Permit](../media/devops-pipeline-permit.jpg)
+
+1. **Optional**. By default, the global variables, service connections and repositories are restricted and access for each pipeline must be configured. To grant access to all pipelines follow the instructions:
+     1. **Service Connections** - Go to Project Settings -> Service Connections -> Edit Service Connection -> Grant access permissions to all pipelines. This has to be done for each Service Connection.
+     1. **Variable Group** - Go to Pipelines -> Library -> Edit alm-accelerator-variable-group -> Pipeline Permissions -> Select ... -> Open Access
+     1. **Repository** - Go to Project Settings -> Repositories -> select each pipeline -> Security -> Pipeline permissions -> Select ... -> Open Access
 
 NOTES:
 

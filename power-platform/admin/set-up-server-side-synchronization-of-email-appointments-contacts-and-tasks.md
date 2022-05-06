@@ -1,9 +1,8 @@
 ---
 title: "Set up server-side synchronization of email, appointments, contacts, and tasks  | MicrosoftDocs"
 description: Set up server-side synchronization of email, appointments, contacts, and tasks
-
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: overview
 ms.date: 01/21/2022
 author: revachauhan
 ms.subservice: admin

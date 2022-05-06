@@ -6,10 +6,9 @@ ms.reviewer: jimholtz
 ms.subservice: admin
 ms.author: jimholtz
 ms.custom: "admin-security"
-
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/18/2021
+ms.date: 03/02/2022
 search.audienceType: 
   - admin
 search.app:
@@ -112,6 +111,15 @@ The following image shows Microsoft 365 user contact fields.
 
 ![Job title, Department, Office, Office phone, Mobile phone, Fax number, Street address, City, State or province, ZIP or postal code, Country or region.](media/office-365-contact-info.png "Job title, Department, Office, Office phone, Mobile phone, Fax number, Street address, City, State or province, ZIP or postal code, Country or region")
 
+## View and edit a user profile
+To view and edit a user's profile in the Power Platform admin center:
+1. Select an environment and go to **Settings** > **Users + permissions** > **Users**.
+2. Select a user in the list.
+
+On the user profile page you can view and make changes to important user profile information such as Security Roles, Team membership, Business Unit, Manager, Position, and more. You can also **Run diagnostics** to troubleshoot access issues or **Refresh User** to re-sync from Azure Active Directory. 
+
+:::image type="content" source="media/edit-user-profile.png" alt-text="Edit a user's profile.":::
+
 ## Add a license to a user account  
 You can license the user when you create the user account, or you can license the user later. You must assign a license to every user account that you want to access the online service. See [Assign licenses](assign-licenses.md).
 
@@ -141,21 +149,21 @@ You must be a member of an appropriate administrator role to do these tasks. [!I
 
 To enable a user in an environment that has a Dataverse database, you enable sign-in for the user, assign a license to the user, and then add the user to a security group.
 
-**To enable sign-in**
+#### To enable sign-in
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).
 2. Select **Users** > **Active users**, and then select the user. 
 3. Ensure that under the user's display name, you see **Sign in allowed**. If you don't, select **Block this user**, and then unblock sign in.
 
 
-**To assign a license**
+#### To assign a license
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).
 2. Select **Users** > **Active users**, and then select the user. 
 3. Select the **Licenses and Apps** tab, and then select the licenses you want to assign. 
 4. Select **Save changes**. 
 
-**To add a user to a security group**
+#### To add a user to a security group
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).
-2. Select **Groups** > **Groups**. 
+2. Select **Teams & groups** > **Active teams & groups**. 
 3. Select the security group that's associated with your environment. 
 4. Select the **Members** tab. 
 5. Under **Members**, select **View all and manage members** >**Add members**.
@@ -165,15 +173,15 @@ To enable a user in an environment that has a Dataverse database, you enable sig
 
 To disable a user account in an environment that has a Dataverse database, you can either remove the user from the security group or remove the license from the user.
 
-**To remove a user from a security group**
+#### To remove a user from a security group
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).
-2. Select **Groups** > **Groups**. 
+2. Select **Teams & groups** > **Active teams & groups**. 
 3. Select the security group that's associated with your environment. 
 4. Select the **Members** tab. 
 5. Under **Members**, select **View all and manage members**
 6. Select the users in the list to remove them, and then select **Save**.
 
-**To remove a license from a user**
+#### To remove a license from a user
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).
 2. Select **Users** > **Active users**, and then select the user. 
 3. Select the **Licenses and Apps** tab, and then select the licenses you want to remove. 
@@ -233,12 +241,12 @@ Below criteria must be met for successfully adding the user in the Dataverse tab
    2. Individual users do not need to have a license when the environment has app pass capacity. This only applies to adding users on demand (either at first attempt to access the environment or through API/Power Platform admin center). 
    3. Individual users do not need to have a license when the tenant they are part of has a tenant level Marketing license. This only applies to adding users on demand (either at first attempt to access the environment or through API/Power Platform admin center). 
    4. Non-interactive users do not need a license 
-   5. Free Dataverse plans from M365 license are honored when users added on-demand (either at first attempt to access the environment or through API/Power Platform admin center)  
+   5. Free Dataverse plans from Microsoft 365 license are honored when users added on-demand (either at first attempt to access the environment or through API/Power Platform admin center)  
 
 > [!NOTE]
 > Guest users should also have a license from the environment’s tenant. License from Guest user's tenant is NOT considered as valid license.
 
-3. If the environment has a security group defined, user must be part of the respective security group, unless the user is a Tenant or Power Platform Administrator. Non-admin users or D365 service admin must be in the security group to access the system. When the owner of the security group is added to Dataverse through an on-demand action, the user will be considered a valid member of the security group and will be added to Dataverse successfully.  
+3. If the environment has a security group defined, user must be part of the respective security group, unless the user is a Tenant or Power Platform Administrator. Non-admin users or Dynamics 365 service admin must be in the security group to access the system. When the owner of the security group is added to Dataverse through an on-demand action, the user will be considered a valid member of the security group and will be added to Dataverse successfully.  
 
 Adding users to Dataverse has different implications depending on the environment type: 
 
@@ -272,7 +280,7 @@ You need to have the System Administrator security role or equivalent permission
 
 1. Create a user account in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)].  
   
-    Be sure to assign a license to the account. You'll remove the license (in step 12) after you've assigned the **Administrative** access mode.
+   Be sure to assign a license to the account. You'll remove the license (in step 12) after you've assigned the **Administrative** access mode.
   
 2. In the **Optional settings** form, expand **Roles**.
 
@@ -429,7 +437,7 @@ The following table shows the fields that are populated on the user form (user r
 </table>
 
 
-## FAQ
+## FAQ 
 
 ### If a user that is added to Dataverse SystemUser table becomes disabled or unlicensed in Azure AD, how is that reflected in Dataverse?  
 User record is not deleted, but its state in Dataverse will be updated to “disabled”.  
@@ -443,6 +451,7 @@ Assigning an Azure AD security group to the environment is a best practice in ge
 
 
 ### See also
+[User settings](users-settings.md) <br />
 [Get started with security roles in Dataverse](/learn/modules/get-started-security-roles/) <br />
 [Assign a security role to a user](assign-security-roles.md) <br />
 [Opt-out of automatic license-based user roles management](opt-out-automatic-license.md)

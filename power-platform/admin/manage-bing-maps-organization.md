@@ -39,7 +39,7 @@ Learn how you can manage [!INCLUDE[pn_bing_maps](../includes/pn-bing-maps.md)] f
 
 You can configure the language in [Languages tab options](/powerapps/user/set-personal-options#languages-tab-options) and region in [Formats tab options](/powerapps/user/set-personal-options#formats-tab-options).
 
-The following table contains a list of all languages supported for viewing [!INCLUDE[pn_bing](../includes/pn-bing.md)] maps. For a list of supported countries and regions, see [Bing Maps documentation](/bingmaps/).
+The following table contains a list of all languages supported for viewing [!INCLUDE[pn_bing](../includes/pn-bing.md)] maps.
 
 |Language|Culture code|  
 |--------------|------------------|  
@@ -66,7 +66,9 @@ The following table contains a list of all languages supported for viewing [!INC
 |Spanish (Mexico)|es-MX|  
 |Swedish (Sweden)|sv-SE|  
 
-## Privacy notice  
+Even if a language is supported, you may not be able to view maps for certain regions. For a list of supported countries and regions, see [Bing Maps documentation](/bingmaps/). Microsoft Dynamics 365 looks at the user's [regional format setting](./customize-regional-options-admins.md). 
+
+## Privacy notice
 [!INCLUDE[cc_privacy_crm_bing_maps](../includes/cc-privacy-crm-bing-maps.md)]
   
 ### See also  

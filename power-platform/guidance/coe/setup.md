@@ -80,12 +80,13 @@ The CoE Starter Kit can be used in both production environments and Dataverse fo
 | Canvas apps part of core components (DLP Editor, Set App Permissions and Set Flow Permissions apps) | Yes | Yes |
 | Apps and flows part of governance components | Yes | Yes |
 | Apps and flows part of nurture components | Yes | Yes |
-| Sharing the Developer Compliance Center with makers | Share with colleagues who have a Microsoft 365 license in Teams | Sharing requires users to have a Power Apps Per User or Per App license |
-| Sharing the App Catalog app | Share with colleagues who have a Microsoft 365 license in Teams | Sharing requires users to have a Power Apps Per User or Per App license |
-| Sharing the Training in a day app | Share with colleagues who have a Microsoft 365 license in Teams | Sharing requires users to have a Power Apps Per User or Per App license |
+| Sharing the Developer Compliance Center with makers | Share with colleagues who have a Microsoft 365 license in Teams | Sharing requires users to have a Power Apps Per User or Per App license or for the environment to be covered with pay-as-you-go.|
+| Sharing the App Catalog app | Share with colleagues who have a Microsoft 365 license in Teams | Sharing requires users to have a Power Apps Per User or Per App license or for the environment to be covered with pay-as-you-go. |
+| Sharing the Training in a day app | Share with colleagues who have a Microsoft 365 license in Teams | Sharing requires users to have a Power Apps Per User or Per App license or for the environment to be covered with pay-as-you-go.|
+| Sharing the Admin - Command Center app | Sharing requires users to have a Power Apps Per User or Per App license  | Sharing requires users to have a Power Apps Per User or Per App license or for the environment to be covered with pay-as-you-go. |
 | Power BI Dashboard | Yes | Yes, using the [Dataverse](/powerapps/maker/data-platform/data-platform-powerbi-connector#connect-to-dataverse-using-the-connector) connector only |
 | Data Permissions | Team members have full access, and [pre-built table permissions](/powerapps/teams/set-perms-and-share#assign-table-permissions) can be applied to colleagues with access | Granular permissions through [Dataverse security roles](/security-roles-privileges) that can be tailored to your requirements |
-| Sharing apps | Share with colleagues who have a Microsoft 365 license in Teams | Sharing requires users to have a Power Apps Per User or Per App license |
+| Sharing apps | Share with colleagues who have a Microsoft 365 license in Teams | Sharing requires users to have a Power Apps Per User or Per App license or for the environment to be covered with pay-as-you-go.|
 | Accessing apps | Apps can only be accessed within Microsoft Teams | Apps can be viewed in the browser or mobile app |
 | Application Lifecycle Management | No | Yes |
 
@@ -93,7 +94,7 @@ The CoE Starter Kit can be used in both production environments and Dataverse fo
 
 If you decide to use a production environment:
 
-- [Create an environment with a database](/admin/create-environment#create-an-environment-with-a-database).
+- [Create an environment with a database](/power-platform/admin/create-environment#create-an-environment-with-a-database).
 - Don't add sample apps and datasets.
 - Don't restrict environment access with a security group, because some parts of the CoE Starter Kit use [approval actions](/power-automate/get-started-approvals) and require makers to be able to interact with the environment.
 
@@ -105,7 +106,7 @@ If you decide to use a Dataverse for Teams environment:
 
 ### Validate data loss prevention (DLP) policies
 
-The [DLP policy](/admin/wp-data-loss-prevention) applied to your CoE Starter Kit environment needs to allow the following connectors to be used together in the business group:
+The [DLP policy](/power-platform/admin/wp-data-loss-prevention) applied to your CoE Starter Kit environment needs to allow the following connectors to be used together in the business group:
 
 - [Approvals](/connectors/approvals/)
 - HTTP
@@ -127,7 +128,7 @@ The [DLP policy](/admin/wp-data-loss-prevention) applied to your CoE Starter Kit
 > [!NOTE]
 > The CoE Starter Kit collects information about who owns a resource, such as an app or a flow. If the resource is owned by an interactive user, the [Office 365 Users](/connectors/office365users/) connector is used to get those details. If the resource is owned by a service principal (application user), the [HTTP with Azure AD](/connectors/webcontents/) connector is used to make a call to [Microsoft Graph](https://developer.microsoft.com/graph) to get the name of the application user to correctly mark ownership of resources and avoid resources being marked as orphaned (without an owner).
 
-- The HTTP and HTTP with Azure AD connectors connect to [https://graph.microsoft.com](https://developer.microsoft.com/graph). You can set up [DLP endpoint filtering](/admin/dlp-granular-controls#endpoint-filtering) for these connectors to only allow the [https://graph.microsoft.com](https://developer.microsoft.com/graph) endpoint. If your tenant is in GCC, GCC High or DoD, check your [service root endpoint for Microsoft Graph](/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints).
+- The HTTP and HTTP with Azure AD connectors connect to [https://graph.microsoft.com](https://developer.microsoft.com/graph). You can set up [DLP endpoint filtering](/power-platform/admin/dlp-granular-controls#endpoint-filtering) for these connectors to only allow the [https://graph.microsoft.com](https://developer.microsoft.com/graph) endpoint. If your tenant is in GCC, GCC High or DoD, check your [service root endpoint for Microsoft Graph](/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints).
 
 - If you're using the [audit log](setup-auditlog.md) solution, the custom connector used to connect to the Microsoft 365 audit log also must be allowed in your business group. Configure the [https://manage.office.com/](/office/office-365-management-api/office-365-management-apis-overview) endpoint in the business group of your tenant-level policy. Learn more: [Configure custom connector endpoints in tenant-level policies](../../admin/dlp-connector-classification.md#tenant-level-dlp-policies).
 
@@ -137,9 +138,26 @@ The [DLP policy](/admin/wp-data-loss-prevention) applied to your CoE Starter Kit
 
 ## Download the solution
 
-- Download the CoE Starter Kit solution and Power BI dashboard files to your device. The entire content package can be downloaded directly at [aka.ms/CoEStarterKitDownload](https://aka.ms/CoEStarterKitDownload).
+Download the CoE Starter Kit solution and Power BI dashboard files to your device. The entire content package can be downloaded directly at [aka.ms/CoEStarterKitDownload](https://aka.ms/CoEStarterKitDownload).
 
-- Both the governance components and nurture components solutions require the core solution before they can be installed.
+The content package contains various files that support different features of the CoE Starter Kit. The setup instructions will walk you through when to use each file, and below table will give you an overview of the purpose of each file:
+
+| File Name | Description |
+| --- | --- |
+| ALMAcceleratorForMakers_x.x.yyyymmdd.x_managed.zip | [ALM Accelerator for Makers](almaccelerator-components.md) solution file. Required during [setup of the ALM Accelerator for Makers](setup-almaccelerator.md) components. |
+| CenterofExcellenceALMAccelerator_x.x.yyyymmdd.x_managed.zip  | [ALM Accelerator for Power Platform](almacceleratorpowerplatform-components.md) solution file. Required during [setup of the ALM Accelerator for Power Platform](setup-almacceleratorpowerplatform-cli.md) components. |
+| CenterofExcellenceAuditComponents_x.xx_managed.zip  | [Governance components](governance-components.md) solution file. Required during [setup of the Governance](before-setup-gov.md) components. Has a dependency on [Core components](core-components.md) being installed first. |
+| CenterofExcellenceAuditLogs_x.xx_managed.zip  |  Audit Log components solution file. Required during [setup of the Audit Log](setup-auditlog.md) components. Has a dependency on [Core components](core-components.md) being installed first.|
+| CenterofExcellenceCoreComponents_x.xx_managed.zip  | [Core components](core-components.md) solution file. Required during [setup of the Core](setup-core-components.md) components in a Production environment. |
+| CenterofExcellenceCoreComponentsTeams_x.xx_managed.zip  | [Core components](core-components.md) solution file. Required during [setup of the Core](setup-core-components.md) components in a Dataverse for Teams environment. |
+| CenterofExcellenceInnovationBacklog_x.xx_managed.zip  | [Innovation Backlog components](innovationbacklog-components.md) solution file. Required during [setup of the Innovation Backlog](setup-innovationbacklog.md) components. |
+| CenterofExcellenceNurtureComponents_x.xx_managed.zip  |  [Nurture components](nurture-components.md) solution file. Required during [setup of the Nurture](setup-nurture-components.md) components. Has a dependency on [Core components](core-components.md) being installed first. |
+| MakerAssessmentStarterData.xlsx | Provides a set of starter questions and answers for the [Maker assessment](nurture-components.md#maker-assessment-components) app. Required during [configuration of the Maker Assessment](setup-nurture-components.md#set-up-maker-assessment-components) app. |
+| Production_CoEDashboard_MMM2022.pbit  | [CoE Dashboard Power BI template file](power-bi.md) used when the CoE solutions are installed in a Production environment. Required during [configuration of the Power BI dashboard](setup-powerbi.md) |
+| Pulse_CoEDashboard.pbit | [Pulse survey Power BI template file](nurture-components.md#pulse-survey-components). Required during [configuration of Pulse survey](setup-nurture-components.md#set-up-pulse-feedback-survey) components. |
+| Teams_CoEDashboard_MMM2022.pbit | [CoE Dashboard Power BI template file](power-bi.md) used when the CoE solutions are installed in a Dataverse for Teams environment. Required during [configuration of the Power BI dashboard](setup-powerbi.md) |
+| Theming_x.xx_managed.zip | [Theming components](theming-components.md) solution file. Required during [setup of the Theming](setup-theming.md) components. | 
+| ToolIcons.zip | Provides a set of starter icons for the [Innovation Backlog](innovationbacklog-components.md). Required during [configuration of the Innovation Backlog](setup-innovationbacklog.md#turn-on-the-flows) |
 
 > [!div class="nextstepaction"]
 > [Next step: Set up inventory components](setup-core-components.md)

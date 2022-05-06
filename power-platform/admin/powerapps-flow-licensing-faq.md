@@ -1,10 +1,9 @@
 ---
 title: Power Apps and Power Automate licensing FAQs| Microsoft Docs
 description: "FAQs for licensing Power Apps, Power Automate, Dataverse, Dataverse for Teams, and AI Builder"
-
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/01/2022
+ms.date: 03/30/2022
 author: chrisgarty
 ms.subservice: admin
 ms.author: cgarty
@@ -38,12 +37,7 @@ See [Power Apps pricing](https://powerapps.microsoft.com/pricing/).
 
 Power Automate Plans:
 
-- **Power Automate per user plan** which equips a user to run unlimited flows (within service limits) with the full capabilities of Power Automate based on their unique needs for $15/user/month.
-
-- **Power Automate per flow plan** which enables organizations to implement flows with reserved capacity that serve teams, department, or the entire organization without having to license each end user. This plan starts at $500/month for 5 flows.
-
-
-More details can be found in [Types of Power Automate licenses](power-automate-licensing/types.md) and in [Microsoft Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
+See [Types of Power Automate licenses](power-automate-licensing/types.md), [Frequently asked questions about Power Automate licenses](power-automate-licensing/faqs.md) and  [Microsoft Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130) for details.
 
 ### How do I use Power Apps per app plans? 
 See [About Power Apps per app plans](about-powerapps-perapp.md).
@@ -159,7 +153,7 @@ Premium connectors list at October 2019 (will expand over time):
 - Azure Queues  
 - Azure Resource Manager  
 - Azure SQL  
-- Azure SQL Data Warehouse  
+- Azure Synapse Analytics 
 - Azure Table Storage  
 - Dynamics 365  
 - Dynamics 365 Customer Insights  
@@ -361,10 +355,10 @@ Power Apps Portals can be provisioned without requiring a specific license. User
 
 | **User type**                 | **Model**     | **SKU names**                                                       | **Unit capacity**  | **Price/month** | **Channel** | **Comments**                                                                              |
 |-------------------------------|---------------|---------------------------------------------------------------------|--------------------|-----------------|-------------|-------------------------------------------------------------------------------------------|
-| External user (authenticated) | Per login     | Power Apps portals login capacity add-on                             | 100 logins         | $200           | All         | A login provides the authenticated user with access to a single portal for up to 24 hours |
-|                               |               | Power Apps portals login capacity add-on Tier 2                      | 1000 logins        | $1000          | All         |                                                                                           |
-|                               |               | Power Apps portals login capacity add-on Tier 3                      | 5000 logins        | $3500          | CSP only    |                                                                                           |
-| External user (anonymous) | Per page view | Power Apps portals page view capacity add-on                         | 100,000 page views | $100           | All         |                                                                                           |
+| External user (authenticated) | Per login     | Power Apps Portals login capacity add-on                             | 100 logins         | $200           | All         | A login provides the authenticated user with access to a single portal for up to 24 hours |
+|                               |               | Power Apps Portals login capacity add-on Tier 2                      | 1000 logins        | $1000          | All         |                                                                                           |
+|                               |               | Power Apps Portals login capacity add-on Tier 3                      | 5000 logins        | $3500          | CSP only    |                                                                                           |
+| External user (anonymous) | Per page view | Power Apps Portals page view capacity add-on                         | 100,000 page views | $100           | All         |                                                                                           |
 | Internal user                 | Via license   | Dynamics 365 (various)                                              | n/a                | n/a             | n/a         | Custom portal use rights are aligned with custom app use rights                           |
 |                               |               | Power Apps per app plan                                              |                    |                 |             |                                                                                           |
 |                               |               | Power Apps per user plan                                             |                    |                 |             |                                                                                           |

@@ -63,9 +63,9 @@ Using these steps, you'll set up an Azure AD app registration that will be used 
 
    1. Select **Add permissions**.
 
-1. Select **Grant Admin Consent for (your organization)**.
+1. Select **Grant Admin Consent for (your organization)**. Prerequisites: [Grant tenant-wide admin consent to an application](/azure/active-directory/manage-apps/grant-admin-consent#prerequisites)
 
-   The API permissions now reflect delegated **ActivityFeed.Read**, and application **ActivityFeed.Read** permissions, with a status of **Granted for _(your organization)_**.
+   The API permissions now reflect delegated **ActivityFeed.Read** with a status of **Granted for _(your organization)_**.
 
 1. Select **Certificates and secrets**.
 

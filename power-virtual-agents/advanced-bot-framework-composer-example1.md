@@ -73,7 +73,7 @@ In Composer, go to the **Bot Responses** tab and, in the **Meals** section, sele
 
 :::image type="content" source="media\Composer_Example1\E1_Meals_showCode.png" alt-text="Composer show code button.":::
 
-In the code window, copy and paste the following bot responses that you'll use in your Adaptive Card:
+In the code window, copy and paste the following bot response. Then replace the three example image URLs with your own.
 
 ```lg
 # Chicken()
@@ -86,11 +86,13 @@ In the code window, copy and paste the following bot responses that you'll use i
 -Tofu
 
 # SteakImageURL()
--https://contososcubademo.azurewebsites.net/assets/steak.jpg
+-https://www.example.com/steak.jpg
+
 # ChickenImageURL()
--https://contososcubademo.azurewebsites.net/assets/chicken.jpg
+-https://www.example.com/chicken.jpg
+
 # TofuImageURL()
--https://contososcubademo.azurewebsites.net/assets/tofu.jpg
+-https://www.example.com/tofu.jpg
 
 ```
 
@@ -231,10 +233,7 @@ You're now ready to upload the **Meals** dialog to your Power Virtual Agents bot
 
 The Composer content will be validated by Power Virtual Agents and a successful publish will be reported in Composer.
 
-> [!NOTE]
-> Selecting **Publish** in Composer does not automatically publish your Power Virtual Agents bot to channels.  
->
-> Use the [Publish](publication-fundamentals-publish-channels.md) feature in Power Virtual Agents to publish your bot changes to channels.
+[!INCLUDE [Publish Composer](includes/composer-publish-note.md)]
 
 Go to the Power Virtual Agents **Topics** page to see your new Bot Framework content. Your new **Meals** Bot Framework dialog is now shown on the **Topics** page as part of your Power Virtual Agents bot.
 
@@ -255,9 +254,6 @@ To test your changes in Power Virtual Agents, open the **Test pane** and make su
 
 :::image type="content" source="media/Composer_Example1/Example1_cropped.png" alt-text="Power Virtual Agents Example 1 test.":::
 
-> [!NOTE]
-> Selecting **Publish** in Composer makes the changes available for testing, but does not automatically Publish your Power Virtual Agents bot.  
->
-> Use the [Publish](publication-fundamentals-publish-channels.md) feature in Power Virtual Agents to publish your bot changes to channels.
+[!INCLUDE [Publish Composer](includes/composer-publish-note.md)]
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

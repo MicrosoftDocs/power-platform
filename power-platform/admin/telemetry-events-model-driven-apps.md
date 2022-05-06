@@ -1,9 +1,8 @@
 ---
-title: "Preview: Telemetry events for model-driven apps | Microsoft Docs"
+title: "Telemetry events for model-driven apps (preview) | Microsoft Docs"
 description: About telemetry events for model-driven apps.
 services: powerapps
 author: jimholtz
-
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 08/04/2021
@@ -17,9 +16,14 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Preview: Telemetry events for model-driven apps 
+# Telemetry events for model-driven apps (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+
+> [!IMPORTANT]
+> - This is a preview feature.
+> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+> - This feature is being gradually rolled out across regions and might not be available yet in your region.
 
 ## What data is available for model-driven apps?
 
@@ -243,4 +247,4 @@ The **Browser** view of the **Failures** panel contains Unified Interface outgoi
 
 ### Can I set an alert on the performance threshold for certain form actions? When the alert is received, will it allow a maker to diagnose and troubleshoot the issue?
 
-Yes. You can set up [alerts](/azure/azure-monitor/learn/tutorial-alert) in Application Insights to monitor the health of your application.
+Yes. You can set up [alerts](/azure/azure-monitor/alerts/tutorial-metric-alert) in Application Insights to monitor the health of your application.

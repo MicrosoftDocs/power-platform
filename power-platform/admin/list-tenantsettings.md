@@ -1,9 +1,8 @@
 ---
-title: "Preview: Programmability and Extensibility - Power Platform API - 2020-10-01 - List tenant settings | Microsoft Docs"
+title: "Programmability and Extensibility - Power Platform API - 2020-10-01 - List tenant settings (preview) | Microsoft Docs"
 description: Power Platform API Reference - List tenant settings
 author: laneswenka
 ms.reviewer: jimholtz
-
 ms.component: pa-admin
 ms.topic: reference
 ms.date: 10/22/2021
@@ -15,7 +14,7 @@ search.app:
   - Powerplatform
 ---
 
-# Preview: List tenant settings
+# List tenant settings (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -23,7 +22,7 @@ You can list settings applicable to your tenant.
 
 ## Authentication
 
-For more information about permissions and how to select them, see [Authentication](programmability-authentication.md).
+For more information about permissions and how to select them, see [Authentication - legacy](programmability-authentication.md).
 
 ## HTTP request
 
