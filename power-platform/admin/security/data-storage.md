@@ -1,5 +1,5 @@
 ---
-title: Dataverse Data Governance in Power Platform
+title: Dataverse data governance in Power Platform
 description: Learn how data is governed in Power Platform.
 ms.date: 02/15/2022
 ms.service: power-platform
