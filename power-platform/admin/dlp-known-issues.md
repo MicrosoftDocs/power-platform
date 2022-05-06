@@ -2,7 +2,7 @@
 title: "Known limitations for data loss prevention (DLP) policies | MicrosoftDocs"
 description:  DLP policies known limitations.
 ms.topic: conceptual
-ms.date: 04/12/2022
+ms.date: 05/06/2022
 ms.subservice: admin
 author: mikferland-msft
 ms.author: miferlan
@@ -10,6 +10,7 @@ ms.reviewer: jimholtz
 contributors:
   - mikferland-msft
   - mihaelablendea
+  - ChrisGarty
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
@@ -34,6 +35,6 @@ Below are known limitations to know about when leveraging our suite of data loss
 ### Desktop flows
 - There's no support for cross checking the categories between a cloud flow and the desktop flows it calls. That function is planned to be available during the first quarter of 2022.
 - There's no support for cross checking the modules that are used between a desktop flow and all its child desktop flows. This feature is planned for general availability.
-- There's no support for "Set default group" from admin center for future added new destkop flow modules that allows admin to specify a different default group for any future added new connectors. This support is planned for general availability.  
+- There's no support for "Set default group" from the Power Platform admin center for future added new destkop flow modules that allow admins to specify a different default group for any future added new connectors. This support is planned for general availability.  
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
