@@ -5,7 +5,7 @@ services: powerapps
 author: jimholtz
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/27/2022
+ms.date: 05/06/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -196,7 +196,7 @@ pageViews
 | summarize count() by tostring(customDimensions.hostType)
 ```
 
-### How do I use Application Insights in conjunction with Monitor?
+### How do I use Application Insights with Monitor?
 [Azure Monitor](https://powerapps.microsoft.com/blog/monitor-now-supports-model-driven-apps/) helps with real-time troubleshooting on a session from the Unified Interface side. The end-to-end transaction requests will probably be available in Application Insights. To look at the logs for a given action, note the activity ID from a row in the event details page in Monitor. You can find the logs by using the following query:
 
 ```kusto

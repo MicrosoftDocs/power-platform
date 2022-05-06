@@ -549,11 +549,11 @@
           href: analytics-ui-flow.md 
       - name: Reports (preview)
         items:
-        - name: "Tenant-level analytics (default)" 
+        - name: Tenant-level analytics (default)
           href: tenant-level-analytics.md
-        - name: "Power Apps analytics"
+        - name: Power Apps analytics
           href: powerapps-analytics-reports.md
-        - name: "Power Automate analytics"
+        - name: Power Automate analytics
           href: power-automate-analytics-reports.md
       - name: Data export (preview)
         items:
@@ -563,17 +563,17 @@
           href: self-service-analytics-schema-definition.md
         - name: "Create custom dashboards using Power Apps inventory and usage data"
           href: build-custom-reports.md
-      - name: "Analyze telemetry with Application Insights (preview)"
+      - name: Analyze telemetry with Application Insights
         items:
-        - name: "Model-driven apps and Microsoft Dataverse telemetry"
+        - name: Model-driven apps and Microsoft Dataverse telemetry
           href: analyze-telemetry.md
-        - name: "Overview of integration with Application Insights"
+        - name: Overview of integration with Application Insights
           href: overview-integration-application-insights.md
-        - name: "Telemetry events for model-driven apps" 
+        - name: Telemetry events for model-driven apps
           href: telemetry-events-model-driven-apps.md
-        - name: "Telemetry events for Dataverse"
+        - name: Telemetry events for Dataverse
           href: telemetry-events-dataverse.md   
-        - name: "Set up export to Application Insights"
+        - name: Set up export to Application Insights
           href: set-up-export-application-insights.md
     - name: Storage
       items: 

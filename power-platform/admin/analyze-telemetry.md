@@ -4,7 +4,7 @@ description: About analyzing model-driven apps and Microsoft Dataverse telemetry
 services: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/27/2022
+ms.date: 05/06/2022
 author: tjvass
 ms.subservice: admin
 ms.author: tjvass
