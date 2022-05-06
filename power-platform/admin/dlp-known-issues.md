@@ -33,8 +33,8 @@ Below are known limitations to know about when leveraging our suite of data loss
 - If a child flow violates a DLP policy, it will not result in the parent flow becoming non-compliant.
 
 ### Desktop flows
-- There's no support for cross checking the categories between a cloud flow and the desktop flows it calls. That function is planned to be available during the first quarter of 2022.
-- There's no support for cross checking the modules that are used between a desktop flow and all its child desktop flows. This feature is planned for general availability.
-- There's no support for "Set default group" from the Power Platform admin center for future added new destkop flow modules that allow admins to specify a different default group for any future added new connectors. This support is planned for general availability.  
+- There's no support for cross checking the categories between a cloud flow and the desktop flows it calls. This will be supported when *DLP for Desktop Flows* is Generally Available.
+- There's no support for cross checking the modules that are used between a desktop flow and all its child desktop flows. This will be supported when *DLP for Desktop Flows* is Generally Available.
+- There's no support for the "Set default group" for newly added desktop flow modules. This will be supported when *DLP for Desktop Flows* is Generally Available.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
