@@ -13,10 +13,17 @@ searchScope:
 
 # Limitations of technology preview
 
+This technology preview doesn't yet support some of the existing features you're used to in Power Virtual Agents and available features have some limitations.
+
+> [!IMPORTANT]
+> These are the current limitations as of 5/10/2022.
+
+## Limitations of current features
+
 - Analytics take 8 hours to update.
 - Bots can't be deleted.
 - When sharing a bot, any Power Automate flows used in the conversation logic will not be shared. You'll have to manually share those flows if desired.  
-- [Message variations]() do not vary in a single conversation. You'll only see differences between different conversations.
+- [Message variations](authoring-create-edit-topics.md#message-variations) do not vary in a single conversation. You'll only see differences between different conversations.
 - The **Track between topics** toggle in the [test bot pane](authoring-test-bot.md) doesn't work.
 
 ## Coming in future releases
