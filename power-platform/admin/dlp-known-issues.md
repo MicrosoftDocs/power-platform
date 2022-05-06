@@ -33,8 +33,8 @@ Below are known limitations to know about when leveraging our suite of data loss
 - If a child flow violates a DLP policy, it will not result in the parent flow becoming non-compliant.
 
 ### Desktop flows
-- There's no support for cross checking the categories between a cloud flow and the desktop flows it calls. This will be supported when *DLP for Desktop Flows* is Generally Available.
-- There's no support for cross checking the modules that are used between a desktop flow and all its child desktop flows. This will be supported when *DLP for Desktop Flows* is Generally Available.
-- There's no support for the "Set default group" for newly added desktop flow modules. This will be supported when *DLP for Desktop Flows* is Generally Available.
+- There's no support for cross checking the categories between a cloud flow and the desktop flows it calls. This will be supported when DLP for desktop flows is generally available.
+- There's no support for cross checking the modules that are used between a desktop flow and all its child desktop flows. This will be supported when DLP for desktop flows is generally available.
+- There's no support for the "Set default group" for newly added desktop flow modules. This will be supported when DLP for desktop flows is generally available.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
