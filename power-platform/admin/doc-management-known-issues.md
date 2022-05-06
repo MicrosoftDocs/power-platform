@@ -2,8 +2,7 @@
 title: "Known issues with document management | MicrosoftDocs"
 description: "Learn about known issues with document management"
 keywords: encrypt
-ms.date: 10/22/2021
-
+ms.date: 05/06/2022
 ms.custom: 
 ms.topic: article
 applies_to: 
@@ -24,7 +23,6 @@ search.app:
   - Powerplatform
   - Flow
 ---
-
 # Known issues with document management
 
 The customizations and configurations described here can cause issues with the document management feature. 
@@ -107,6 +105,20 @@ When you create a flow trigger in Power Automate that acts on the Dataverse Shar
 This behavior occurs because the SharePoint Documents table is a virtual table and the SharePoint and OneDrive document table data is not stored in Dataverse. Below is an example of a flow trigger using the SharePoint Documents table.
 
 :::image type="content" source="media/flow-trigger-documents-table.png" alt-text="Low trigger using the SharePoint documents table from Dataverse":::
+
+## "Record is unavailable" message when you attempt to open a file from the SharePoint documents grid
+
+This message might appear when a certain customization is made to the ribbon bar. Ribbon customizations can be implemented by using a third-party tool called Ribbon Workbench. When hiding a button on the ribbon bar, the `Mscrm.OpenRecordItem` command might have also been hidden by using the tool, which can cause the error message.
+
+To resolve this issue, follow these steps.
+
+1. Go to [Power Apps](https://make.powerapps.com/) > **Advanced settings** > **Settings** > **Customizations**.
+1. Select the third-party tool **Ribbon Workbench**, then select the solution that contains the SharePoint Document table.
+1. In the **Entity** dropdown list, select **sharepointdocument**.
+1. Under the **Hide Actions** dropdown, right-click the **Mscrm.OpenRecordItem.Hide** action, and then select **Un-Hide**. 
+
+   :::image type="content" source="media/unhide-openrecorditem.png" alt-text="Select un-hide for the openrecirditem.hide action.":::
+1. Publish the solution.
 
 ## Known issues
 
