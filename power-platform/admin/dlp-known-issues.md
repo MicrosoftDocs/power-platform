@@ -32,9 +32,5 @@ Below are known limitations to know about when leveraging our suite of data loss
 - Blocking the [HTTP with Azure AD](/connectors/webcontents/) connector will also block child flows because those child flows are called using the same HTTP connector technology.
 - If a child flow violates a DLP policy, it will not result in the parent flow becoming non-compliant.
 
-### Desktop flows
-- There's no support for cross checking the categories between a cloud flow and the desktop flows it calls. That function is planned to be available during the first quarter of 2022.
-- There's no support for cross checking the modules that are used between a desktop flow and all its child desktop flows. This feature is planned for general availability.
-- There's no support for "Set default group" from the Power Platform admin center for future added new destkop flow modules that allow admins to specify a different default group for any future added new connectors. This support is planned for general availability.  
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
