@@ -1,8 +1,7 @@
 ---
 title: "Technology preview for Build 2022"
 description: ""
-keywords: ""
-ms.date: 04/04/2022
+ms.date: 05/10/2022
 ms.topic: overview
 author: v-alarioza
 ms.author: v-alarioza
@@ -30,38 +29,28 @@ This evolution brings new features including:
 - [Bot response variations](authoring-create-edit-topics.md#message-variations)
 - [Quick responses]()
 
-For a guided tutorial on how to use these new features, please refer to the [Build 2022 quickstart]().
+For a guided tutorial on how to use these new features, please refer to the [Build 2022 quickstart](build-2022-quickstart.md).
 
-## Limitations of technology preview
-
-The following features are not yet available in this technology preview:
-
-- Authoring bots in the Power Virtual Agents app in Microsoft Teams
-- Creating bots in other languages other than English
-- Customization of system fallback topic
-- Custom entities
-- Skills
-- Agent transfers
-- Publishing bots on Teams channel
-- Bots setup with application lifecycle management (ALM)
-- Extending bots in Composer
+This technology preview doesn't yet support some of the existing features you're used to in Power Virtual Agents, such as, custom entities, agent transfers, and bot authoring in Teams. For the full list, see [Limitations of technology preview](build-2022-limitations.md).
 
 ## For desktop Composer users
 
 There are a number of differences and similarities in how bots are designed in Bot Framework Composer and in the Power Virtual Agents technology preview.
 The following table list some key concepts in Composer and describes where to find information about similar concepts in Power Virtual Agents.
 
-| Composer concept | Power Virtual Agents concept | Description |
-|:-|:-|:-|
-| Dialogs and triggers | [Topics][] | Use topics to organize conversation flow or paths. A topic has a set of _trigger phrases_ that indicate when the bot should start the topic and a set of _nodes_ that describe the conversation path for the topic. |
-| Intents | [Trigger phrases][] | Add trigger phrases to a topic for phrases, keywords, and questions that a user is likely to type that are related to a specific issue. Natural language understanding is used to parse what a customer types and find the most appropriate topic. |
-| Actions and prompts | [Nodes][] | Use nodes on the authoring canvas to create the conversation path for each topic, such as messages, questions, and conditional branches. |
-| Bot response variation | [Response variations][] and [question variations][] | Use response and question variations to add variety to your bot's messages and questions. |
-| Suggested actions | [Quick replies][] | Use quick replies to provide default reply options to the user. |
-| Entities | [Entities][] | Define and use entities to extract semantic information from a user's utterance. |
-| State, storage, and properties | [Variables][] | Use variables to track state. |
-| Formulas and expressions | [Power FX][] | Use Power FX to create expressions. |
+<!-- best viewed without wordwrap -->
+| Composer concept               | Power Virtual Agents concept                        | Description                                                                                                                                                                                                                                        |
+| :----------------------------- | :-------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Dialogs and triggers           | [Topics][]                                          | Use topics to organize conversation flow or paths. A topic has a set of _trigger phrases_ that indicate when the bot should start the topic and a set of _nodes_ that describe the conversation path for the topic.                                |
+| Intents                        | [Trigger phrases][]                                 | Add trigger phrases to a topic for phrases, keywords, and questions that a user is likely to type that are related to a specific issue. Natural language understanding is used to parse what a customer types and find the most appropriate topic. |
+| Actions and prompts            | [Nodes][]                                           | Use nodes on the authoring canvas to create the conversation path for each topic, such as messages, questions, and conditional branches.                                                                                                           |
+| Bot response variation         | [Response variations][] and [question variations][] | Use response and question variations to add variety to your bot's messages and questions.                                                                                                                                                          |
+| Suggested actions              | [Quick replies][]                                   | Use quick replies to provide default reply options to the user.                                                                                                                                                                                    |
+| Entities                       | [Entities][]                                        | Define and use entities to extract semantic information from a user's utterance.                                                                                                                                                                   |
+| State, storage, and properties | [Variables][]                                       | Use variables to track state.                                                                                                                                                                                                                      |
+| Formulas and expressions       | [Power FX][]                                        | Use Power FX to create expressions.                                                                                                                                                                                                                |
 
+<!-- FIXME: update links -->
 [Entities]: #where-to-find
 [Nodes]: #where-to-find
 [Power FX]: #where-to-find

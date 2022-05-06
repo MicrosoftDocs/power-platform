@@ -1,9 +1,11 @@
 - name: Build overview
   href: build-2022-overview.md
-- name: Power Virtual Agents introduction
-  href: fundamentals-what-is-power-virtual-agents.md
 - name: Technology preview quickstart
   href: build-2022-quickstart.md
+- name: Limitations of technology preview
+  href: build-2022-limitations.md
+- name: Power Virtual Agents introduction
+  href: fundamentals-what-is-power-virtual-agents.md
 - name: Licensing for Power Virtual Agents
   href: requirements-licensing-subscriptions.md
 - name: Power Virtual Agents compliance offerings
