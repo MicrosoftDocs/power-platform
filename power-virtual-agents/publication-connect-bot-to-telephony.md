@@ -36,6 +36,9 @@ Connect your [Azure Communication Service (ACS)](/azure/communication-services/)
 
 1. For **Phone number type** choose **PTSN**.
 
+    > [!IMPORTANT]
+    > The **Direct routing** option is not supported in the technology preview.
+
 1. Under **PTSN phone numbers** select the first number in the list, then select **Connect**.
 
     > [!IMPORTANT]
