@@ -433,6 +433,8 @@
             href: dlp-endpoint-input-formats-examples.md
           - name: DLP for custom connectors
             href: dlp-custom-connector-parity.md 
+          - name: DLP for Power Automate
+            href: /power-automate/prevent-data-loss
           - name: DLP for desktop flows
             href: /power-automate/prevent-data-loss#data-loss-prevention-dlp-for-desktop-flows-preview 
           - name: Disable new connectors
