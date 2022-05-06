@@ -113,9 +113,9 @@ This message might appear when a certain customization is made to the ribbon bar
 To resolve this issue, follow these steps.
 
 1. Go to [Power Apps](https://make.powerapps.com/) > **Advanced settings** > **Settings** > **Customizations**.
-1. Select the third-party tool **Ribbon Workbench**, then select the solution that contains the SharePoint Document table.
+1. Select the third-party tool **Ribbon Workbench**, then select the solution that contains the SharePoint document table.
 1. In the **Entity** dropdown list, select **sharepointdocument**.
-1. Under the **Hide Actions** dropdown, right-click the **Mscrm.OpenRecordItem.Hide** action, and then select **Un-Hide**. 
+1. Under the **Hide Actions** dropdown list, right-click the **Mscrm.OpenRecordItem.Hide** action, and then select **Un-Hide**. 
 
    :::image type="content" source="media/unhide-openrecorditem.png" alt-text="Select un-hide for the openrecirditem.hide action.":::
 1. Publish the solution.
