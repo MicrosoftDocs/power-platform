@@ -26,13 +26,13 @@ Connect your [Azure Communication Service (ACS)](/azure/communication-services/)
 
 1. Select the **Telephony (Preview)** tile.
 
-    :::image type="content" source="media/publication-connect-bot-to-telephony/telephony-tile.png" alt-text="Share demo website.":::
+    :::image type="content" source="media/publication-connect-bot-to-telephony/telephony-tile.png" alt-text="Screenshot of Telephony tile.":::
 
 1. Select **Connect existing phone number**.
 
 1. Choose an **Azure Subscription** and **Azure Communication Services resource**, then select **Select**.
 
-    :::image type="content" source="media/publication-connect-bot-to-telephony/choose-resources.png" alt-text="Share demo website.":::
+    :::image type="content" source="media/publication-connect-bot-to-telephony/choose-resources.png" alt-text="Screenshot of selected Azure resources.":::
 
 1. For **Phone number type** choose **PTSN**.
 
@@ -41,7 +41,7 @@ Connect your [Azure Communication Service (ACS)](/azure/communication-services/)
     > [!IMPORTANT]
     > Phone numbers have been been provisioned for the technology preview, but normally you'll need to do this yourself in ACS.
 
-    :::image type="content" source="media/publication-connect-bot-to-telephony/connect-number.png" alt-text="Share demo website.":::
+    :::image type="content" source="media/publication-connect-bot-to-telephony/connect-number.png" alt-text="Screenshot of selected phone number.":::
 
 1. Once your the connection is ready, [publish your bot](publication-fundamentals-publish-channels.md#publish-the-latest-bot-content) and test it by calling the number you selected.
 
