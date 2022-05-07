@@ -267,10 +267,10 @@
     - name: Install the kit
       href: creator-kit/setup.md
     - name: Components
-      href: creator-kit/components.md
+      href: href: creator-kit/components.md
       items:
-        - name: Autowidth Label
-          href: creator-kit/autowidthlabel.md
+      - name: Autowidth Label
+        href: creator-kit/autowidthlabel.md
   - name: Automation adoption best practices
     items:
     - name: Overview
