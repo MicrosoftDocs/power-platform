@@ -32,6 +32,6 @@ This PCF component can only be used in Canvas apps and Custom Pages.
 
 | Property | Description |
 | -------- | ----------- |
-
+| Text | Data displayed in the label |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
