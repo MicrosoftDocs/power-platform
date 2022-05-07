@@ -1,18 +1,21 @@
 ---
 title: Auto width control in the Creator Kit
-description: Learn about the details, properties and examples of the gallery control in the Creator Kit.
+description: Learn about the details and properties of Autowidth control in the Creator Kit.
 author: demora
+manager: marcsc
 
-ms.topic: reference
-ms.custom: canvas
-ms.reviewer: tapanm
+ms.component: pa-maker
+ms.topic: conceptual
 ms.date: 05/06/2022
-ms.subservice: canvas-maker
-ms.author: demora
-search.audienceType:
+ms.subservice: guidance
+ms.author: denisem-msft
+ms.reviewer: tapanm
+search.audienceType: 
   - maker
-search.app:
+search.app: 
+  - D365CE
   - PowerApps
+  - Powerplatform
 contributors:
   - tapanm-msft
   - demora-msft
