@@ -35,10 +35,10 @@ This PCF component can only be used in Canvas apps and Custom Pages.
 
 ## Key properties
 
-| Property | Type | Description |
-| -------- | ---- | ----------- |
-| Text | Text | (Input) Data displayed in the label |
-| AutoWidth | Number | (Output) The new width of the label based on the text |
+| Property | Description |
+| -------- | ----------- |
+| Text | Data displayed in the label |
+| AutoWidth | The new width of the label based on the text |
 
 ## Best Practices
 Refer to [Fluent UI Label control best practices](https://developer.microsoft.com/en-us/fluentui#/controls/web/label)

@@ -273,6 +273,8 @@
       items:
       - name: Auto width label
         href: creator-kit/autowidthlabel.md
+      - name: Breadcrumb
+        href: creator-kit/breadcrumb.md
   - name: Automation adoption best practices
     items:
     - name: Overview
