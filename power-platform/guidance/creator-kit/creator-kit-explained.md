@@ -50,4 +50,8 @@ Implemented with [Power Apps component framework (PCF)](https://docs.microsoft.c
 ### Reference App
 Use the reference app to interactively learn how each component is implemented. Edit the app, use the components in play mode, and observe how the property values are reflected in the real-time experience.
 
+
+> [!div class="nextstepaction"]
+> [Next step: View the components reference](components.md)
+
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
