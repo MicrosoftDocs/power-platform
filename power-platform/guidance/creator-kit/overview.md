@@ -2,13 +2,13 @@
 title: "Creator Kit - Overview | MicrosoftDocs"
 description: Overview of the Creator Kit
 author: mehdis-msft
-manager: spant
+manager: devkeydet
 
 ms.component: pa-maker
 ms.topic: conceptual
 ms.date: 05/06/2022
 ms.subservice: guidance
-ms.author: denisem-msft
+ms.author: demora
 ms.reviewer: tapanm
 search.audienceType: 
   - maker
@@ -32,26 +32,16 @@ You can view the code in the latest version of the Creator Kit in the [GitHub re
 
    ![The Creator Kit](media/creatorkit.png "The Creator Kit")
 
-## How to get started
+## Disclaimer
 
-After you've [installed the Creator Kit solution](setup.md), get familiar with the resources in the solution.
+Although the underlying features and components used to build the kit (such as Canvas Components and Power Apps Component Framework) are fully supported, the kit itself represents sample implementations of these features. Our customers and community can use and customize these features to create Power Apps in their organizations.
 
-> [!NOTE]
-> The following are just examples of what you can do with the components in the Creator Kit. Explore the rest of the guidance here to see what's available and how to make the most of the kit.
+If you face issues with:
 
-1. Open the code components guidance app and familiarize yourself with the components available in the Creator Kit and their usage.
+- **Using the kit**: Report your issue at [aka.ms/Creator-Kit-Issues](https://aka.ms/Creator-Kit-Issues). (Microsoft Support won't help you with issues related to this kit, but they will help with related, underlying platform and feature issues.)
+- **The core features in Microsoft Power Platform**: Use your standard channel to contact Support.
 
-    ![components guidance app.](media/appguidance.gif "Components guidance app")
-
-1. Use the Canvas template app as a starting point for your new apps. The template has a responsive layout and sample controls for easy use within your app
-
-    ![Canvas template app.](media/canvastemplate.png "Canvas template app")
-
-1. Explore the Reference app to see how the components work  
-
-
-
-## Further resources
+## More resources
 
 - Explore the [Fluent UI documentation](https://developer.microsoft.com/en-us/fluentui#/).
 
@@ -61,14 +51,8 @@ After you've [installed the Creator Kit solution](setup.md), get familiar with t
 
 - Get started with the Microsoft Power Platform path on Microsoft Learn, a free online and interactive training platform [aka.ms/PowerUp](/learn/paths/create-powerapps/?WT.mc_id=twitter-social-donasa).
 
+> [!div class="nextstepaction"]
+> [Next step: Install the kit](setup.md)
 
-## Disclaimer
-
-Although the underlying features and components used to build the kit (such as Canvas Components and Power Apps Component Framework) are fully supported, the kit itself represents sample implementations of these features. Our customers and community can use and customize these features to create Power Apps in their organizations.
-
-If you face issues with:
-
-- **Using the kit**: Report your issue at [aka.ms/powercat-creator-kit-issues](https://aka.ms/coe-starter-kit-issues). (Microsoft Support won't help you with issues related to this kit, but they will help with related, underlying platform and feature issues.)
-- **The core features in Microsoft Power Platform**: Use your standard channel to contact Support.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

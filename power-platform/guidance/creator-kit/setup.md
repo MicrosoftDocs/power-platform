@@ -1,8 +1,8 @@
 ---
 title: "Set up the Creator Kit | MicrosoftDocs"
 description: "Prerequisites and instructions for installing the Creator Kit."
-author: mehdis
-manager: spant
+author: denisem-msft
+manager: devkeydet
 
 ms.component: pa-maker
 ms.topic: conceptual
@@ -21,10 +21,10 @@ contributors:
   - demora-msft
   - mehdis-msft
 ---
-
+# Install the Creator Kit
 Before installing the Creator Kit, it is helpful to learn about [Power Apps component framework (PCF)](https://docs.microsoft.com/en-us/power-apps/developer/component-framework/custom-controls-overview) components and [Canvas app custom components](https://docs.microsoft.com/en-us/power-apps/maker/canvas-apps/create-component).
 
-# Prerequisites
+## Prerequisites
  
 * An [Environment with a Dataverse database](https://docs.microsoft.com/en-us/power-platform/admin/create-environment#create-an-environment-with-a-database) and the [Power Apps compenent framework feature enabled](https://docs.microsoft.com/en-us/power-apps/developer/component-framework/component-framework-for-canvas-apps#enable-the-power-apps-component-framework-feature) (System Adminstrator security role is needed to enable the feature).
 * System Customizer security role is needed to use the Creator Kit components
@@ -38,6 +38,6 @@ Before installing the Creator Kit, it is helpful to learn about [Power Apps comp
 
 
 > [!div class="nextstepaction"]
-> [Next step: View the components](components.md)
+> [Next step: Learn how to use the kit](creator-kit-explained.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

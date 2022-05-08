@@ -1,8 +1,8 @@
 ---
 title: "Components | MicrosoftDocs"
 description: "Manifest of the Creator Kit components and assets."
-author: mehdis-msft
-manager: spant
+author: denisem-msft
+manager: devkeydet
 
 ms.component: pa-maker
 ms.topic: conceptual
@@ -23,10 +23,12 @@ contributors:
 ---
 
 # Components
+Overview of all the components available in the kit.
 
+## Code components
 | Code component | Type | Overview | Fluent UI | Canvas apps | Custom pages | Model-driven apps | Power Apps Portal |
 | ---------------------------------------- | -------------- | ------------------------------------------------------------ | --------- | ----------- | ------------ | ----------------- | ----------------- |
-| [Auto width label](creator-kit\autowidthlabel.md) | User interface | This code component acts similar to the standard canvas app label, but will expand dynamically in width to accommodate the text. This functionality is currently not supported in canvas apps today. | ⬜ | ✅ | ✅| ⬜ | ⬜ |
+| [Auto width label](creator-kit/autowidthlabel.md) | User interface | This code component acts similar to the standard canvas app label, but will expand dynamically in width to accommodate the text. This functionality is currently not supported in canvas apps today. | ⬜ | ✅ | ✅| ⬜ | ⬜ |
 | [Breadcrumb](Breadcrumb) | User Interface | This code component provides a wrapper around the [Fluent UI Breadcrumb](https://developer.microsoft.com/en-us/fluentui#/controls/web/breadcrumb) control for use in canvas & custom pages. | ✅ | ✅ | ✅ | ⬜ | ⬜ |
 | [Context Menu](ContextMenu) | User Interface | This code component provides a wrapper around the [Fluent UI Context Menu](https://developer.microsoft.com/en-us/fluentui#/controls/web/contextualmenu) control bound to a button for use in canvas & custom pages. | ✅ | ✅ | ✅ | ⬜ | ⬜ |
 | [Command Bar](CommandBar) | User Interface | This code component provides a wrapper around the [Fluent UI Command Bar](https://developer.microsoft.com/en-us/fluentui#/controls/web/commandbar) control for use in canvas & custom pages. | ✅ | ✅ | ✅ | ⬜ | ⬜ |

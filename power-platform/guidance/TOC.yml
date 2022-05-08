@@ -264,12 +264,14 @@
     items:
     - name: Overview
       href: creator-kit/overview.md
-    - name: Install the kit
+    - name: Install
       href: creator-kit/setup.md
+    - name: Use the kit
+      href: creator-kit/creator-kit-explained.md
     - name: Components
       href: creator-kit/components.md
       items:
-      - name: Autowidth Label
+      - name: Auto width label
         href: creator-kit/autowidthlabel.md
   - name: Automation adoption best practices
     items:
