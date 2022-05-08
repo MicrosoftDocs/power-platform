@@ -21,7 +21,7 @@ contributors:
   - demora-msft
   - mehdis-msft
 ---
-# Auto width label control
+# Breadcrumb control
 
 A control used to provide navigation.
 
@@ -35,6 +35,7 @@ Breadcrumbs should be used as a navigational aid in your app or site. They indic
 ## Limitations
 This PCF component can only be used in Canvas apps and Custom Pages.
 
+
 ## Key properties
 
 | Property | Description |
@@ -45,14 +46,15 @@ This PCF component can only be used in Canvas apps and Custom Pages.
 | Overflow index | The index where overflow items are visualized (when all items cannot fit in the control width) |
 
 ## Items structure
-
-The following table schema is needed to properly visualize data in the component. 
+Each item uses the below schema to visualize data in the component. 
 
 | Name | Description |
 | ------ | ----------- |
 | ItemKey | Arbitrary unique string associated with the breadcrumb item. |
 | ItemDisplayName | Text to display in the breadcrumb item. |
 | ItemClickable | If set to true, enables the item to be clickable. |
+
+Example:
 
   ```powerapps-dot
   Table(
@@ -70,6 +72,27 @@ The following table schema is needed to properly visualize data in the component
   ```
 
 ## Best Practices
-Refer to [Fluent UI Breadcrumb control best practices](https://developer.microsoft.com/en-us/fluentui#/controls/web/breadcrumb)
+
+### Configure 'On Select' events
+Use the [**Switch()**](https://docs.microsoft.com/en-us/power-apps/maker/canvas-apps/functions/function-if) formula in the component's `OnSelect` property to configure specific actions for each item by referring to the control's selected `ItemKey` as the switch value.
+
+Replace the `false` values with appropriate expressions in the Power Fx language. 
+
+As this control is used for navigation, a logical action is to use [navigation functions](https://docs.microsoft.com/en-us/power-apps/maker/canvas-apps/functions/function-navigate) (ideally to a relevent screen with the related data loaded).
+
+  ```powerapps-dot
+    Switch( Self.Selected.ItemKey,
+      /* Action for ItemKey 1 */
+      "1", false,
+      
+      /* Action for ItemKey 2 */
+      "2", false,
+    
+      /* Default action */
+          false
+    )
+  ```
+
+Refer to [Fluent UI Breadcrumb control best practices](https://developer.microsoft.com/en-us/fluentui#/controls/web/breadcrumb) for additional help.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
