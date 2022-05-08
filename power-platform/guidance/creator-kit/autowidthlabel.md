@@ -25,19 +25,20 @@ contributors:
 
 A control that displays data.
 
-   ![Auto width label](media/autowidthlabel.png "Auto width label")
+![Auto width label](media/autowidthlabel.png "Auto width label")
 
 ## Description
-This code component acts similar to the standard canvas app label, but will expand dynamically in width to accommodate the text. This functionality is currently not supported in canvas apps today.
+This code component acts similar to the standard canvas app label, but will expand dynamically in width to accommodate the text. It will automatically expand width wise and return the new width. This functionality is currently not supported in canvas apps today.
 
 ## Limitations
 This PCF component can only be used in Canvas apps and Custom Pages.
 
 ## Key properties
 
-| Property | Description |
-| -------- | ----------- |
-| Text | Data displayed in the label |
+| Property | Type | Description |
+| -------- | ---- | ----------- |
+| Text | Text | (Input) Data displayed in the label |
+| AutoWidth | Number | (Output) The new width of the label based on the text |
 
 ## Best Practices
 Refer to [Fluent UI Label control best practices](https://developer.microsoft.com/en-us/fluentui#/controls/web/label)
