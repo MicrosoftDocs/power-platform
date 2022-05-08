@@ -25,7 +25,7 @@ contributors:
 
 A control used to provide navigation.
 
-![Breadcrumb](media/breadcrumb.png "Breadcrumb")
+![Breadcrumb](media/context-menu.png "Breadcrumb")
 
 ## Description
 This code component provides a wrapper around the [Fluent UI Context Menu](https://developer.microsoft.com/en-us/fluentui#/controls/web/contextualmenu) control bound to a button for use in canvas & custom pages.
