@@ -48,40 +48,40 @@ For an administrator, the quick start guide should take about 30 minutes. By the
 
    ```json
    {
-    "log": [
-       "info"
-    ],
-    "components": [
-       "all"
-    ],
-    "aad": "ALMAcceleratorServicePrincipal",
-    "group": "ALMAcceleratorForMakers",
-    "devOpsOrganization": "https://dev.azure.com/contoso",
-    "project": "alm-sandbox",
-    "repository": "alm-sandbox",
-    "pipelineRepository": "pipelines",
-    "environments": "https://contoso-prod.crm.dynamics.com/",
-    "settings": {
-       "installEnvironments": [
-          "validation",
-          "test",
-          "prod"
+   "log": [
+      "info"
+   ],
+   "components": [
+      "all"
+   ],
+   "aad": "ALMAcceleratorServicePrincipal",
+   "group": "ALMAcceleratorForMakers",
+   "devOpsOrganization": "https://dev.azure.com/contoso",
+   "project": "alm-sandbox",
+   "repository": "alm-sandbox",
+   "pipelineRepository": "pipelines",
+   "environments": "https://contoso-prod.crm.dynamics.com/",
+   "settings": {
+      "installEnvironments": [
+         "validation",
+         "test",
+         "prod"
+      ],
+      "validation": "https://contoso-validation.crm.dynamics.com/",
+      "test": "https://contoso-test.crm.dynamics.com/",
+      "prod": "https://contoso-prod.crm.dynamics.com/",
+      "createSecret": "true",
+      "installSource": "coe",
+      "region": [
+         "NAM"
        ],
-       "validation": "https://contoso-validation.crm.dynamics.com/",
-       "test": "https://contoso-test.crm.dynamics.com/",
-       "prod": "https://contoso-prod.crm.dynamics.com/",
-       "createSecret": "true",
-       "installSource": "coe",
-       "region": [
-          "NAM"
-        ],
-        "cloud": [
-          "Public"
-       ]
-    },
-    "importMethod": "api",
-    "endpoint": "prod"
-    }
+       "cloud": [
+         "Public"
+      ]
+   },
+   "importMethod": "api",
+   "endpoint": "prod"
+   }
    ```
 
    More information: [CoE ALM generate install](https://aka.ms/coe-cli/help/alm/generate/install) command
