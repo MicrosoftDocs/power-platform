@@ -49,16 +49,16 @@ This PCF component can only be used in Canvas apps and Custom Pages.
 | Property | Description |
 | -------- | ----------- |
 | Views | View if supported by the data source (e.g., Dataverse). |
-| Selection type |  |
-| Select rows on focus |  |
-| Page size |  |
-| Sort column |  |
-| Sort direction |  |
-| Compact | |
-| Header visible | |
-| Alternate row color | |
-| Selection radio button | |
-| Raise OnRowSelection |  |
+| Selection type | Controls how/if the details list manages selection. Options include none, single, multiple |
+| Select rows on focus | Whether rows will be selected when the control is focused. |
+| Page size | Number of items displayed in the page. |
+| Sort column | ColName value to sort by default. |
+| Sort direction | Default sorting direction. |
+| Compact | Whether to render in compact mode. |
+| Header visible | Controls the visibility of the header. |
+| Alternate row color | Color of every other row. Accepts CSS color values (e.g.,  hexadecimal, RGB, predefined) |
+| Selection radio button | Whether to render the 'select all' radio button. |
+| Raise OnRowSelection | Enable to allow OnRowSelection events. |
 
 ## Mapping data to columns
 To determine which columns are displayed in the Details List, configure the following properties of the Detail List:
