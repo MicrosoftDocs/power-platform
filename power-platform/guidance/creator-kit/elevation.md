@@ -52,6 +52,6 @@ This PCF component can only be used in Canvas apps and Custom Pages.
 | Dark overlay padding | Enable for a dark overlay effect in the padded area. |
 
 ## Best Practices
-Refer to [Fluent UI Elevation control best practices](https://developer.microsoft.com/en-us/fluentui#/controls/web/contextmenu)
+Refer to [Fluent UI Elevation control best practices](https://developer.microsoft.com/en-us/fluentui#/styles/web/elevation)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

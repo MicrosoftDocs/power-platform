@@ -289,6 +289,8 @@
         href: creator-kit/icon.md
       - name: Nav
         href: creator-kit/nav.md
+      - name: Picker
+        href: creator-kit/picker.md
   - name: Automation adoption best practices
     items:
     - name: Overview
