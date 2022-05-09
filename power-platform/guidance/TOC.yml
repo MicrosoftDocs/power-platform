@@ -281,6 +281,8 @@
         href: creator-kit/commandbar.md
       - name: Details list
         href: creator-kit/detailslist.md
+      - name: Elevation
+        href: creator-kit/elevation.md
   - name: Automation adoption best practices
     items:
     - name: Overview

@@ -25,7 +25,7 @@ contributors:
 
 A control used to input commands.
 
-![Breadcrumb](media/context-menu.png "Breadcrumb")
+![Context Menu](media/context-menu.png "Context Menu")
 
 ## Description
 This code component provides a wrapper around the [Fluent UI Context Menu](https://developer.microsoft.com/en-us/fluentui#/controls/web/contextualmenu) control bound to a button for use in canvas & custom pages.
