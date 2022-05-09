@@ -254,7 +254,7 @@ To add a quick replies select **Add**, then **Quick reply**, and then provide in
 
 :::image type="content" source="media/authoring-create-edit-topics/add-quick-reply.png" alt-text="Add quick replies to a question node" border="false":::
 
-A quick reply works like a suggestion that the user can user or ignore. To enforce a choice from a finite list, use a multiple choice question node.
+A quick reply works like a suggestion that the user can use or ignore. To enforce a choice from a finite list, use a multiple choice question node.
 
 > [TIP]
 > Some user clients do not support quick replies, in which case the client may not render them. Some user clients have an upper limit on the number of quick replies that they allow.
