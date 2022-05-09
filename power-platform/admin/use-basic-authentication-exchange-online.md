@@ -38,10 +38,10 @@ Once Exchange Online disables support for basic authentication, any connection f
 If your company is using server-side synchronization or the Email Router to connect to Exchange Online using a username/password, action is required.  
 
 ### Are you using server-side synchronization or the Email Router? 
-If you already know the answer, you can continue to step 2. If you are not sure, complete step 1: 
+If you already know the answer, you can continue to step 2. If you are not sure, complete step 1. 
 
-#### Step 1
-Verify if your environment is configured to use server-side synchronization or Email Router.  
+#### Step 1: Verify if your environment is configured to use server-side synchronization or Email Router
+  
 1. Access the Dynamics 365 web application as a user with the System Administrator security role.  
 2. The next step is slightly different if you are using Dynamics 365 online or on-premises:
 
@@ -57,8 +57,7 @@ Verify if your environment is configured to use server-side synchronization or E
 
       :::image type="content" source="media/email-settings-process-email-using.png" alt-text="Email settings, Process Email Using option":::
 
-#### Step 2
-Based on the configured email option, refer to the corresponding section:  
+#### Step 2: Based on the configured email option, refer to the corresponding section  
 
 **Server-side synchronization**
 
