@@ -293,6 +293,8 @@
         href: creator-kit/picker.md
       - name: Pivot
         href: creator-kit/pivot.md
+      - name: Resizable text area
+        href: creator-kit/resizabletextarea.md
   - name: Automation adoption best practices
     items:
     - name: Overview
