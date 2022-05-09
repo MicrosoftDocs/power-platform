@@ -1,5 +1,5 @@
 ---
-title: Command bar control in the Creator Kit
+title: Command bar control reference | Creator Kit
 description: Learn about the details and properties of Command bar control in the Creator Kit.
 author: denisem-msft
 manager: devkeydet

@@ -1,5 +1,5 @@
 ---
-title: Details List control - Creator Kit
+title: Details List control reference | Creator Kit
 description: Learn about the details and properties of Details List control in the Creator Kit.
 author: denisem-msft
 manager: devkeydet

@@ -1,5 +1,5 @@
 ---
-title: Breadcrumb control in the Creator Kit
+title: Breadcrumb control reference | Creator Kit
 description: Learn about the details and properties of Breadcrumb control in the Creator Kit.
 author: denisem-msft
 manager: devkeydet
