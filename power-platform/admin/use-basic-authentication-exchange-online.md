@@ -43,15 +43,20 @@ If you already know the answer, you can continue to step 2. If you are not sure,
 #### Step 1: Verify if your environment is configured to use server-side synchronization or Email Router
   
 1. Access the Dynamics 365 web application as a user with the System Administrator security role.  
-2. The next step is slightly different if you are using Dynamics 365 online or on-premises:
+2. The next step is slightly different if you are using Dynamics 365 Online or on-premises:
 
-    **Dynamics 365 Online** and **Dynamics 365 on-premises**
+    **Dynamics 365 Online** 
     - In the upper-right corner, select **Settings** ![Gear icon.](media/selection-rule-gear-button.png), and then select **Advanced settings**. 
         
       > [!div class="mx-imgBorder"] 
       > ![Screenshot showing advanced settings.](media/advanced-settings.png "Advanced settings")
 
     - Select **Settings** > **Email Configuration** > **Email Configuration Settings**.  
+
+    **Dynamics 365 on-premises**
+    In the navigation bar, select **Settings** > **Email Configuration**.
+
+    :::image type="content" source="media/email-settings-email-configuration" alt-text="In on-premises version, select Settings > Email configuration.":::
 
 3. Check which value is selected for the **Process Email Using** option. If **Server-Side Synchronization** is selected, the environment is using server-side synchronization and not the Email Router.
 
