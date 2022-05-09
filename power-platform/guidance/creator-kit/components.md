@@ -36,7 +36,7 @@ Overview of all the components available in the kit.
 | [Elevation](elevation.md) | User Interface | Fluent UI elevation support with mouse hover events. | ✅ | ✅ | ✅ | ⬜ | ⬜ |
 | [Theme Provider](themeprovider.md) | Utility | This code component provides a wrapper around the [Fluent UI ThemeProvider](https://developer.microsoft.com/en-us/fluentui#/controls/web/themeprovider) control. | ✅ | ✅ | ✅ | ⬜ | ⬜ |
 | [Icon](icon.md) | User Interface | Fluent UI [Font Icon](https://developer.microsoft.com/en-us/fluentui#/controls/web/icon)/ Icon Button & Action Button with custom styling. | ✅ | ✅ | ✅ | ⬜ | ⬜ |
-| [Keyboard shortcuts](KeyboardShortcuts) | Utility | Registers key press event handlers to allow keyboard short cuts to be used inside canvas apps. | ⬜ | ✅ | ⬜ | ⬜ | ⬜ |
+| [Keyboard shortcuts](keyboardshortcuts.md) | Utility | Registers key press event handlers to allow keyboard short cuts to be used inside canvas apps. | ⬜ | ✅ | ⬜ | ⬜ | ⬜ |
 | [Nav](nav.md) | User Interface | This code component provides a wrapper around the [Fluent UI Nav Menu](https://developer.microsoft.com/en-us/fluentui#/controls/web/nav) control bound to a button for use in canvas & custom pages. | ✅ | ✅ | ✅ | ⬜ | ⬜ |
 | [Picker](picker.md) | User Interface | Fluent UI Tag Picker support with custom item styling to allow for color/icons tags. | ✅ | ✅ | ✅ | ⬜ | ⬜ |
 | [Pivot](Pivot) | User Interface | This code component wraps the [Fluent Pivot control](https://developer.microsoft.com/en-us/fluentui#/controls/web/pivot) for use in canvas & custom pages. | ✅ | ✅ | ✅ | ⬜ | ⬜ |
