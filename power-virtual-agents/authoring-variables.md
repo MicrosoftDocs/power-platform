@@ -120,7 +120,6 @@ Typically you'll use a [question node](authoring-create-edit-topics.md#ask-a-que
 
 There are a number of built-in system variables that provide additional information about a conversation.
 
-<!-- FIXME: link to telephony doc -->
 <!-- best viewed without wordwrap -->
 | Name                                 | Type    | Definition                                                                                                                          |
 | ------------------------------------ | ------- | ----------------------------------------------------------------------------------------------------------------------------------- |
@@ -142,7 +141,7 @@ There are a number of built-in system variables that provide additional informat
 | Activity.TypeId                      | string  | Type of [activity](/azure/bot-service/bot-activity-handler-concept), as a string.                                                   |
 | Activity.Name                        | string  | Name of the event.                                                                                                                  |
 | Activity.From.Id                     | string  | Channel-specific unique ID for the sender.                                                                                          |
-| Activity.From.Name                   | string  | Channel-specific user-friendly name of the sender. For the [Telephony channel](), this will include the phone number of the caller. |
+| Activity.From.Name                   | string  | Channel-specific user-friendly name of the sender. For the [Telephony channel](publication-connect-bot-to-telephony.md), this will include the phone number of the caller. |
 
 ## Use literal values
 
@@ -152,8 +151,7 @@ You can type a literal value into any variable input field instead of selecting 
 
 :::image type="content" source="media/authoring-variables/set-redirect-variable-to-literal.png" alt-text="Screenshot of the authoring canvas showing literal input on an input variable in a redirect node.":::
 
-<!-- FIXME: link to powerfx doc -->
-Values entered directly will always be treated as a string. To set a specific type, use the appropriate [Power Fx formula]() as per the following table:
+Values entered directly will always be treated as a string. To set a specific type, use the appropriate [Power Fx formula](advanced-power-fx.md) as per the following table:
 
 | Type     | Example formulas                                                                        |
 | -------- | --------------------------------------------------------------------------------------- |
