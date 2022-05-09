@@ -47,11 +47,7 @@ You need to publish the bot at least once before your customers can interact wit
 
     The publishing process will take less than a few minutes as it checks for errors in the latest bot content.
 
-    :::image type="content" source="media/publication-fundamentals-publish-channels/channel-publish-validation.png" alt-text="Validate latest bot content for publish." border="false":::
-
 1. After publishing completes, select the **demo website** link. The link will open a new tab and display a prebuilt demo website where you and your team can interact with the bot. The demo website is useful to gather feedback from stakeholders involved in the bot.
-
-:::image type="content" source="media/publication-fundamentals-publish-channels/channel-go-to-demo-website.png" alt-text="Go to demo website." border="false":::
 
 For details on updating the welcome message and help text on the demo website, go to [Configure the demo website and add the bot to your live website](publication-connect-bot-to-web-channels.md).
 
