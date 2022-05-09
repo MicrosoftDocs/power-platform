@@ -2,7 +2,7 @@
 title: Use topics to design a chatbot conversation
 description: Use conversation topics in the Power Virtual Agents authoring canvas for an intuitive, no-code way to create a bot that can help answer user questions, perform actions, and solve issues.
 keywords: "PVA"
-ms.date: 04/01/2022
+ms.date: 05/09/2022
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -120,18 +120,14 @@ You have several options when you add a node. Each option has a specific node or
 
 When you add a node after the **Trigger Phrases** node or between **Message nodes**, you can:
 
-- Ask a question
-- Call an action
 - Send a message
-- Go to another topic
+- Ask a question
+- Add a condition
+- Set a variable value
+- Manage topics
+- Call an action
 
 :::image type="content" source="media/authoring-create-edit-topics/topics-node-after-triggers.png" alt-text="Screenshot of adding a node between existing nodes from the options.":::
-
-After the last node, you can also:
-
-- End the conversation
-
-Additionally, you can **Add a condition** when you insert a node after a **Question** node.
 
 #### Ask a question
 
@@ -151,18 +147,21 @@ Additionally, you can **Add a condition** when you insert a node after a **Quest
 
    For example, if you selected **Multiple choice options**, enter the choices the user can specify in **Options for user**. Each choice is presented to the user as a multiple choice button, but users can also type their answer.
 
-   The conversation editor creates separate paths in the conversation depending on the customer's response. The conversation path leads the customer to the appropriate resolution for each response. You can add nodes to create branching logic, and specify what the bot should respond with for each variable.
+1. In **Save response as**, select an existing variable or create a new one in which to save the user response.
 
-1. (Optional) [Save the user response in a variable](authoring-variables.md) to be used later.
+   - For **Save response as**, you can use an existing variable or create a new one.
+   - If you create a new variable, select the variable name to display the variable properties, where you can modify the variable's settings, including its name.
+
+     :::image type="content" source="media/authoring-create-edit-topics/question-variable-button.png" alt-text="Select variable name to display variable properties":::
+
+1. Optionally, open the properties pane for the question node to modify addition settings, such as maximum retry count and what to do if the user exceeds that count.
+
+Later, you can add a condition to create branching logic or add nodes to control how the bot responds based on each variable.
 
 > [!TIP]
 > Define synonyms for each option to help the bot determine the correct one if it isn't clear what the user's response should map to.
 >
-> 1. Select the menu icon at the top of the **Question** node, and then select **Options for user**.
->
->    :::image type="content" source="media/authoring-create-edit-topics/topics-question-options.png" alt-text="Screenshot of selecting options for users.":::
->
-> 1. Select the **Synonyms** icon for the option you want to add additional keywords to.
+> 1. Select the **Edit synonyms** icon for the option you want to add additional keywords to.
 >
 >    :::image type="content" source="media/authoring-create-edit-topics/topics-question-synonyms.png" alt-text="Screenshot highlighting the synonyms icon.":::
 >
@@ -229,15 +228,40 @@ You can also have the conversation [handed over to a live agent](advanced-hand-o
 
 #### Add a condition
 
-1. To add branching logic based on [variables](authoring-variables.md), select **+** to add a node, select **Add a condition**, and then select **Branch based on a condition**.
+1. To add branching logic based on [variables](authoring-variables.md), select **+** to add a node, then select **Add a condition**.
 
-1. Select the variable that will determine whether the bot conversation should branch at this point.
+1. In the first condition node, select the variable and condition that will determine how the bot conversation should branch at this point.
 
-    For example, if you've set up [user authentication](advanced-end-user-authentication.md), you might specify a different message if the user is signed in (which may have happened earlier in the conversation).
+    - For example, if you've set up [user authentication](advanced-end-user-authentication.md), you might specify a different message if the user is signed in (which may have happened earlier in the conversation).
+    - You can create a condition using the basic editor or you can switch to a the Power Fx formula editor and manually enter an expression.
+    - To switch from the formula editor back to the basic editor, reset the node; however, you will need to enter your condition again.
+    - Use the _node menu_ (&vellip;) to switch editing modes or reset the node.
+
+    :::image type="content" source="media/authoring-create-edit-topics/condition-switch-to-formula.png" alt-text="Switch to the Power Fx expression editor":::
+
+1. When working with a string variable in the basic condition editor, you can enter a string literal in the value field, such as `Contoso`. For other variable types, such as Boolean, use the Power Fx editor to compare the variable to a literal value, such as `true`.
+
+1. Use the **+** that precedes the condition, then **Add a condition** to add more branches.
+
+### Quick replies
+
+The **Message** and **Question** nodes allow you to add _quick replies_.
+To add a quick replies select **Add**, then **Quick reply**, and then provide information for each _quick reply_.
+
+- A quick reply generates a button the user can select.
+- You can select what type of action the button initiates, such as sending a message from the user's client, opening a URL, or calling a phone number.
+- The quick reply buttons are removed from the chat history when the bot or user sends another activity.
+
+:::image type="content" source="media/authoring-create-edit-topics/add-quick-reply.png" alt-text="Add quick replies to a question node" border="false":::
+
+A quick reply works like a suggestion that the user can use or ignore. To enforce a choice from a finite list, use a multiple choice question node.
+
+> [TIP]
+> Some user clients do not support quick replies, in which case the client may not render them. Some user clients have an upper limit on the number of quick replies that they allow.
 
 ### Message variations
 
-Some nodes allow you to add message variations. When you do this, the bot will respond randomly with one of the variations.
+The **Message** and **Question** nodes allow you to add message variations. When you do this, the bot will respond randomly with one of the variations.
 
 1. Select **Add** and then **Message variation**. This will add an additional text box for a message variation.
 
