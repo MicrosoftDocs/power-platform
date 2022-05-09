@@ -283,6 +283,8 @@
         href: creator-kit/detailslist.md
       - name: Elevation
         href: creator-kit/elevation.md
+      - name: Theme designer
+        href: creator-kit/themedesigner.md
   - name: Automation adoption best practices
     items:
     - name: Overview
