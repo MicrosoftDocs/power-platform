@@ -1,6 +1,6 @@
 ---
-title: Context menu control in the Creator Kit
-description: Learn about the details and properties of Context menu control in the Creator Kit.
+title: Command bar control in the Creator Kit
+description: Learn about the details and properties of Command bar control in the Creator Kit.
 author: denisem-msft
 manager: devkeydet
 
@@ -25,12 +25,12 @@ contributors:
 
 A control used to input commands.
 
-![Breadcrumb](media/context-menu.png "Breadcrumb")
+![Command bar](media/command-bar.png "Command bar")
 
 ## Description
-This code component provides a wrapper around the [Fluent UI Context Menu](https://developer.microsoft.com/en-us/fluentui#/controls/web/contextualmenu) control bound to a button for use in canvas & custom pages.
+This code component provides a wrapper around the [Fluent UI Command Bar](https://developer.microsoft.com/en-us/fluentui#/controls/web/commandbar) control for use in canvas & custom pages.
 
-ContextualMenus are lists of commands that are based on the context of selection, mouse hover or keyboard focus. They are one of the most effective and highly used command surfaces, and can be used in a variety of places.
+CommandBar is a surface that houses commands that operate on the content of the window, panel, or parent region it resides above.
 
 ## Limitations
 This PCF component can only be used in Canvas apps and Custom Pages.
@@ -41,7 +41,6 @@ This PCF component can only be used in Canvas apps and Custom Pages.
 | Property | Description |
 | -------- | ----------- |
 | Items | Table with the component items |
-| Chevron | Set to true to display the chevron icon, indicating more options |
 | Input event | Action that is triggered upon click |
 
 ## Items structure
@@ -50,27 +49,37 @@ Each item uses the below schema to visualize data in the component.
 | Name | Description |
 | ------ | ----------- |
 | ItemKey | Arbitrary unique string associated with the item. |
-| ItemDisplayName | Text to display in the context menu item. |
+| ItemDisplayName | Text to display in the command bar item. |
 | ItemIconName | [Fluent UI Icon](https://uifabricicons.azurewebsites.net/) by name |
 | ItemOverflow | Set to true for overflow behavior |
 
 Example:
 
   ```powerapps-dot
-    Table(
-        {
-            ItemKey: "File",
-            ItemIconName: "save",
-            ItemDisplayName: "Save",
-            ItemOverflow:true
-        },
-         {
-            ItemKey: "Delete",
-            ItemIconName: "Delete",
-            ItemDisplayName: "Delete",
-            ItemOverflow:true
-        }
-    )
+  Table(
+      {
+          ItemKey: "new",
+          ItemDisplayName: "New",
+          ItemIconName: "Add"
+      },
+      {
+          ItemKey: "edit",
+          ItemDisplayName: "Edit",
+          ItemIconName: "Edit"
+      },{
+          ItemKey: "delete",
+          ItemDisplayName: "Delete",
+          ItemIconName: "Delete"
+      },{
+          ItemKey: "refresh",
+          ItemDisplayName: "Refresh",
+          ItemIconName: "refresh"
+      },{
+          ItemKey: "help",
+          ItemDisplayName: "Help",
+          ItemIconName: "help"
+      }
+  )
     
   ```
 
@@ -83,11 +92,20 @@ Replace the `false` values with appropriate expressions in the Power Fx language
 
   ```powerapps-dot
     Switch( Self.Selected.ItemKey,
-      /* Action for ItemKey 1 */
-      "File", false,
+      /* Action for ItemKey 'new' (e.g., Patch function) */
+      "new", false,
       
-      /* Action for ItemKey 2 */
-      "Delete", false,
+      /* Action for 'edit' (e.g., Patch function) */
+      "edit", false,
+      
+      /* Action for 'delete' (e.g., Remove function ) */
+      "delete", false,
+      
+      /* Action for 'refresh' (e.g., Refresh function) */
+      "refresh", false,
+      
+      /* Action for 'help' (e.g., email support with the Office 365 connector ) */
+      "help", false,
     
       /* Default action */
           false

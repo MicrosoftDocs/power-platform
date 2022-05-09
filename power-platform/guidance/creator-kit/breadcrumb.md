@@ -41,7 +41,6 @@ This PCF component can only be used in Canvas apps and Custom Pages.
 | Property | Description |
 | -------- | ----------- |
 | Items | Table with the items |
-| Theme |  |
 | Max displayed items | Maximum number of items that can be displayed |
 | Overflow index | The index where overflow items are visualized (when all items cannot fit in the control width) |
 

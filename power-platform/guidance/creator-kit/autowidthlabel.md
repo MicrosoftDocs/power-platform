@@ -23,7 +23,7 @@ contributors:
 ---
 # Auto width label control
 
-A control that displays data.
+A control used to display data.
 
 ![Auto width label](media/autowidthlabel.png "Auto width label")
 
