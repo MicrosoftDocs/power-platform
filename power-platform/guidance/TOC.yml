@@ -275,6 +275,8 @@
         href: creator-kit/autowidthlabel.md
       - name: Breadcrumb
         href: creator-kit/breadcrumb.md
+      - name: Context menu
+        href: creator-kit/contextmenu.md
   - name: Automation adoption best practices
     items:
     - name: Overview
