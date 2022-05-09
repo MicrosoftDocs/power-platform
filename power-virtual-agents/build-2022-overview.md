@@ -20,15 +20,15 @@ Power Virtual Agent's new intelligent bot authoring experience unifies the sophi
 
 This evolution brings new features including:
 <!-- FIXME: merge PRs and link relevant docs -->
-- [Enhanced variable management]()
+- [Enhanced variable management](authoring-variables.md)
 - [Power FX support](advanced-power-fx.md)
-- [Multimedia cards​]()
+- [Multimedia cards​](advanced-cards.md)
 - [Speech authoring]()
 - [Voice font selection]()
-- [Telephony channel]()
+- [Telephony channel](publication-fundamentals-publish-channels.md)
 - [Bot response variations](authoring-create-edit-topics.md#message-variations)
-- [Quick responses]()
-- [YAML code editor]()
+- [Quick replies](authoring-create-edit-topics.md#quick-replies)
+- [YAML code editor](authoring-create-edit-topics.md#edit-topics-with-the-code-editor)
 
 For a guided tutorial on how to use these new features, please refer to the [Build 2022 quickstart](build-2022-quickstart.md).
 
@@ -51,12 +51,11 @@ The following table list some key concepts in Composer and describes where to fi
 | State, storage, and properties | [Variables][]                                       | Use variables to track state.                                                                                                                                                                                                                      |
 | Formulas and expressions       | [Power Fx][]                                        | Use Power Fx to create expressions.                                                                                                                                                                                                                |
 
-<!-- FIXME: update links -->
 [Entities]: advanced-entities-slot-filling.md
 [Nodes]: authoring-create-edit-topics.md
 [Power Fx]: advanced-power-fx.md
 [question variations]: authoring-create-edit-topics.md#message-variations
-[Quick replies]: #where-to-find
+[Quick replies]: authoring-create-edit-topics.md#quick-replies
 [Response variations]: authoring-create-edit-topics.md#message-variations
 [Topics]: authoring-create-edit-topics.md
 [Trigger phrases]: authoring-create-edit-topics.md

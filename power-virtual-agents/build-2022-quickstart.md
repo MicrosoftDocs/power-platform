@@ -45,11 +45,9 @@ Power Virtual Agents now has an app-level home page that is not specific to any 
 
 1. For **Identify** choose **Date and time**. This [entity](advanced-entities-slot-filling.md) enables your bot to extract a date and time from the user's response.
 
-    <!-- FIXME: link doc once written -->
-1. For **Save response as** [create a new variable]() named `reservationDateTime`.
+1. For **Save response as** [create a new variable](authoring-variables.md) named `reservationDateTime`.
 
-    <!-- FIXME: link doc once written -->
-1. [Add a **ConditionItem** node]() and [change it to a formula](advanced-power-fx.md#use-power-fx-as-a-condition).
+1. [Add a **ConditionItem** node](authoring-create-edit-topics.md#add-a-condition) and [change it to a formula](advanced-power-fx.md#use-power-fx-as-a-condition).
 
 1. Enter the [Power Fx formula](advanced-power-fx.md) `DateDiff(Topic.reservationDateTime, Date(2022,5,27)) = 0`. This formula will evaluate to true if the date the user provided is May 5th 2022.
 
@@ -80,8 +78,7 @@ Power Virtual Agents now has an app-level home page that is not specific to any 
     - `Hi there!`
     - `Hi!`
 
-    <!-- FIXME: can we host an image somewhere for users? -->
-1. [Add an image card]() and provide an image of the restaurant. Providing an image helps the user visually confirm that they're booking at the correct location.
+1. [Add an image card](advanced-cards.md#image-card) and provide an image of the restaurant. Providing an image helps the user visually confirm that they're booking at the correct location.
 
     <!-- FIXME: link doc once written -->
 1. Add a second **Message** node and change the mode to **Speech** to enable the use of [SSML tags]().
@@ -94,8 +91,7 @@ Power Virtual Agents now has an app-level home page that is not specific to any 
 
 1. Add a third **Message** node and add the message `If you'd like, I can help you make a reservation.` to provide a call to action for the user.
 
-    <!-- FIXME: link doc once written -->
-1. Add a [quick reply]() with the message `make a reservation`.
+1. Add a [quick reply](authoring-create-edit-topics.md#quick-replies) with the message `make a reservation`.
 
    Adding a quick reply gives the user the option to select "make a reservation" instead of having to type it out.
 
@@ -105,8 +101,7 @@ Power Virtual Agents now has an app-level home page that is not specific to any 
 
 ## Next steps
 
-<!-- FIXME: link doc once written -->
-1. To allows users to call your bot, you need to [enable and configure the Telephony channel]().
+1. To allows users to call your bot, you need to [enable and configure the Telephony channel](publication-connect-bot-to-telephony.md).
 
     <!-- FIXME: link doc once written -->
 1. Optionally, [customize your bot's voice font]().
