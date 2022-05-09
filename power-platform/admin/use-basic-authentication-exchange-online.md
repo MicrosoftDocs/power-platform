@@ -65,6 +65,7 @@ If you already know the answer, you can continue to step 2. If you are not sure,
 2. Based on the configured email option, refer to the corresponding section:  
 
    **Server-side synchronization**
+
    Identify which type of Email Server Profile is being used: 
    1. While still within the Email Configuration section, click Email Server Profiles. 
    2. View the list of Email Server Profile records that appear and follow the corresponding steps below based on whether you are using an online or on-premises deployment of Dynamics 365.
