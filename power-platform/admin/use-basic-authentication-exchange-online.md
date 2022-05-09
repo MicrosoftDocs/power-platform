@@ -56,7 +56,7 @@ If you already know the answer, you can continue to step 2. If you are not sure,
     **Dynamics 365 on-premises**
     In the navigation bar, select **Settings** > **Email Configuration**.
 
-    :::image type="content" source="media/settings-email-configuration" alt-text="In on-premises version, select Settings > Email configuration.":::
+    :::image type="content" source="media/settings-email-configuration.png" alt-text="In on-premises version, select Settings > Email configuration.":::
 
 3. Check which value is selected for the **Process Email Using** option. If **Server-Side Synchronization** is selected, the environment is using server-side synchronization and not the Email Router.
 
