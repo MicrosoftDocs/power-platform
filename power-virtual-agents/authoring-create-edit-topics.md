@@ -192,7 +192,7 @@ If you've configured hand-off to omnichannel with voice-based capabilities, you'
 
 1. Select an existing topic from the list, or **Create a topic**.
 
-    :::image type="content" source="media/authoring-create-edit-topics/topics-redirect-select-topic.png" alt-text="Screenshot showing redirection to another topic node with options for other topics.":::
+    :::image type="content" source="media/authoring-create-edit-topics/topics-redirect-select-topic.png" alt-text="Screenshot of redirect topic list.":::
 
 1. If there are any [input](/authoring-variables.md#receive-values-from-other-topics) or [output](/authoring-variables.md#return-values-to-original-topics) variables in the next topic, enter or select a value for each one.
 
