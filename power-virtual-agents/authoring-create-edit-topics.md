@@ -255,7 +255,7 @@ Select the menu icon at the top of the node's title, and then select **Delete**.
 
 ## Edit topics with the code editor
 
-The code editor shows the topic in [YAML](https://yaml.org/), a markup language which is easy to read and understand. Use the code editor to copy and paste individual nodes, or export the entire topic.
+The code editor shows the topic in [YAML](https://yaml.org/), a markup language which is easy to read and understand. Use the code editor to copy and paste topics from other bots, even ones created by other authors.
 
 > [!IMPORTANT]
 > Designing a topic entirely in the code editor is currently not fully supported.
@@ -341,7 +341,7 @@ In this example you'll copy and paste YAML into the code editor to quickly add a
     disabled: false
     ```
 
-1. Select the three dots icon then select **Close code editor**. On the authoring canvas you'll now see the new conversation path generated from the YAML.
+1. Select the three dots icon then select **Close code editor**. On the authoring canvas you'll see the new conversation path generated from the YAML.
 
     :::image type="content" source="media/authoring-create-edit-topics/code-editor-conversation.png" alt-text="Screenshot conversation created from YAML.":::
 
