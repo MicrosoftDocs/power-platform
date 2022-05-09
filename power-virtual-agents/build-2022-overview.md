@@ -22,7 +22,7 @@ This evolution brings new features including:
 <!-- FIXME: merge PRs and link relevant docs -->
 - [Enhanced variable management]()
 - [Power FX support](advanced-power-fx.md)
-- [Rich Response Authoring​]()
+- [Multimedia cards​]()
 - [Speech authoring]()
 - [Voice font selection]()
 - [Telephony channel]()
