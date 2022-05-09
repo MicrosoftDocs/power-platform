@@ -207,34 +207,29 @@ When the path for the topic chosen in the **Redirect** node is finished, the bot
 
 :::image type="content" source="media/authoring-create-edit-topics/authoring-subtopic-redirect.png" alt-text="Screenshot of the authoring canvas showing nodes under a redirected topic node.":::
 
-If you redirect to any of the following [system topics](#use-system-and-sample-topics), however, the current conversation flow will end. Unless modified, these topics have the following behavior.
+#### End the conversation or topic
+
+If you redirect to any of the following [system topics](#use-system-and-sample-topics), the current conversation flow will end. Unless modified, these topics have the following behavior. To provide a consistent user experience at the end of a conversation, you can redirect to these topics or implement your own.
 
 | Topic | Behavior |
 |:-|:-|
 | Confirmed Failure| The user can ask another question or request to talk to an agent, which redirects to the Escalate topic.|
-| Confirmed Success| The user is presented with a satisfaction survey, and then can ask another question or leave the conversation, which redirects to the Goodbye topic. |
+| Confirmed Success| The user is presented with a satisfaction survey, and then can ask another question or leave the conversation, which redirects to the Goodbye topic. The survey response is collected on the [customer satisfaction analytics page](analytics-csat.md). |
 | End of Conversation | The user is asked if their question was answered. Based on their response, the bot redirects to the Confirmed Success or the Confirmed Failure topic. |
-| Escalate | This topic is incomplete. Before enabling this, add your business logic and any additional logic the user's client requires. |
+| Escalate | This topic is incomplete. You can [hand the conversation over to a live agent](advanced-hand-off.md) if you're using a suitable customer service portal, such as Omnichannel for Customer Service. |
 | Goodbye | Thanks the user and indicates to the user's client that the session is over. The behavior varies based on the client. On the telephony channel, for example, the client will hang up. |
 | Start over | Resets the conversation and resets [global variables](authoring-variables-bot.md) for the current session. |
 
-#### End the conversation
+Use the following nodes to design conversation flow in your bots.
 
-When the conversation ends, you can have a survey ask users if their question or issue was answered or resolved. The response is collected on the [customer satisfaction analytics page](analytics-csat.md).
-
-You can also have the conversation [handed over to a live agent](advanced-hand-off.md) if you're using a suitable customer service portal, such as Omnichannel for Customer Service.
-
-1. At the end of a response that resolves the user's issue or answers the question, select **End the conversation**.
+1. Select **+** to add a node, and then select **Topic Management**, then one of the following:
 
     :::image type="content" source="media/authoring-create-edit-topics/topics-nodes-end.png" alt-text="Screenshot showing options for ending a conversation.":::
 
-    - To end with a customer satisfaction survey, select **End with survey**.
-
-    - To insert a hand-off node that will link with your [configured hand-off product](configuration-hand-off-omnichannel.md), select **Transfer To Agent**.
-
-        (Optional) Enter a private message to the agent.
-
-        :::image type="content" source="media/authoring-create-edit-topics/topics-nodes-handoff.png" alt-text="Transfer To Agent." border="false":::
+   - Select **End conversation** to notify the user's client that the session is over. The behavior varies based on the client. On the telephony channel, for example, the client ends the call.
+   - Select **End all topics** to clear all active topics and start the conversation from the beginning. However, this does not clear or reset any global variables. To clear global variables, redirect to the Start over system topic.
+   - Select **End current topic** to end the current topic and return to the calling topic, if any. You can use this node to create a one conversation branch that exits the topic while another branch continues.
+   - Select **Go to another topic** to _call_ or redirect to another topic. When that topic ends, control returns to calling topic.
 
 #### Add a condition
 
