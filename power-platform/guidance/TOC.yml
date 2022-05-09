@@ -291,6 +291,8 @@
         href: creator-kit/nav.md
       - name: Picker
         href: creator-kit/picker.md
+      - name: Pivot
+        href: creator-kit/pivot.md
   - name: Automation adoption best practices
     items:
     - name: Overview
