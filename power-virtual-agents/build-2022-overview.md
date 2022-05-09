@@ -28,6 +28,7 @@ This evolution brings new features including:
 - [Telephony channel]()
 - [Bot response variations](authoring-create-edit-topics.md#message-variations)
 - [Quick responses]()
+- [YAML code editor]()
 
 For a guided tutorial on how to use these new features, please refer to the [Build 2022 quickstart](build-2022-quickstart.md).
 

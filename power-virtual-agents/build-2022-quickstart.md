@@ -11,12 +11,20 @@ ms.collection: virtual-agent
 
 # Quick start
 
-This quickstart walks you through making a bot that uses new features and improvements introduced in the technology preview at Build. In this example, we'll be creating a simple bot that helps users make a reservation at a fictional restaurant.
+This quickstart walks you through making a bot that uses new features and improvements introduced in the technology preview at Build. We'll be creating a simple bot that helps users make a reservation at a fictional restaurant.
 
-<!-- FIXME: link doc once written -->
-1. Navigate to the [Power Virtual Agents home page]() and select **Create a bot**.
+## Create a bot
+
+Power Virtual Agents now has an app-level home page that is not specific to any bot. On this page you can create a new bot and view a list of bots that you've previously created.
 
 :::image type="content" source="media/build-2022-quickstart/new-bot1.png" alt-text="Name the new bot.":::
+
+> [!TIP]
+> To navigate back to the home page from a bot, select **Power Virtual Agents** in the top menu bar.
+>
+> :::image type="content" source="media/build-2022-quickstart/go-home.png" alt-text="Name the new bot.":::
+
+1. In the side navigation select **Create**, or select **Home** and select **Create a bot**.
 
 1. Name the bot `Reservation Bot` and select **Create**.
 
