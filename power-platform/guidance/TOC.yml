@@ -279,6 +279,8 @@
         href: creator-kit/contextmenu.md
       - name: Command bar
         href: creator-kit/commandbar.md
+      - name: Details list
+        href: creator-kit/detailslist.md
   - name: Automation adoption best practices
     items:
     - name: Overview

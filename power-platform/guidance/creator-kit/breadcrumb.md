@@ -70,9 +70,8 @@ Example:
   )
   ```
 
-## Best Practices
 
-### Configure 'On Select' events
+## Configure 'On Select' behavior
 Use the [**Switch()**](https://docs.microsoft.com/en-us/power-apps/maker/canvas-apps/functions/function-if) formula in the component's `OnSelect` property to configure specific actions for each item by referring to the control's selected `ItemKey` as the switch value.
 
 Replace the `false` values with appropriate expressions in the Power Fx language. 
@@ -92,6 +91,7 @@ As this control is used for navigation, a logical action is to use [navigation f
     )
   ```
 
+## Best Practices
 Refer to [Fluent UI Breadcrumb control best practices](https://developer.microsoft.com/en-us/fluentui#/controls/web/breadcrumb) for additional help.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
