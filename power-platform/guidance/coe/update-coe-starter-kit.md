@@ -3,10 +3,9 @@ title: "Updating the Center of Excellence (CoE) Starter Kit"
 description: "The CoE Starter Kit is updated each month. Learn best practices for managing the update process in your organization"
 author: stjeffer
 manager: phtopnes
-
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/28/2022
+ms.date: 05/10/2022
 ms.subservice: guidance
 ms.author: stjeffer
 ms.reviewer: jimholtz
@@ -20,59 +19,49 @@ search.app:
 
 # Updating the Center of Excellence (CoE) Starter Kit
 
-This document is a set of best practices and recommendations for updating the CoE Starter Kit.
+This article will prepare you to upgrade the CoE Starter Kit and provides guidance on:
 
-The CoE Starter Kit provides inspiration and a starting point for Power Platform governance. If you're new to the CoE Starter Kit, below are some useful links to help you get started:
+- How to stay up to date with the latest release.
+- How often and why to apply upgrades.
+- How to install the latest version.
+- How to test the latest release.
 
-- [The CoE Starter Kit](/power-platform/guidance/coe/starter-kit)
-- [Setting up the CoE Starter Kit](/power-platform/guidance/coe/setup)
-- [Extending CoE components](/power-platform/guidance/coe/extending-components)
+> [!NOTE]
+> If you are setting up the CoE Starter Kit for the first time, check out our [setup instructions](setup.md). If you are looking to extend the CoE Starter Kit with your own customizations, refer to our guidance for [extending the CoE Starter Kit](modify-components.md)
 
-## How is the CoE Starter Kit updated?
+## How is a new version of the CoE Starter Kit released?
 
-The team behind the CoE Starter Kit releases a new version during the first full week of each month.  This release cadence is important to know for you to review, organize, plan and test the latest version.
+A new version of the CoE Starter Kit is released monthly, usually in the first full week of each month. This release cadence is important to know for you to review, organize, plan and test the latest version.
 
-The team announces updates (bug fixes, enhancements, new features and deprecations) through:
-
-- GitHub release notes
-- Office hours community call
-
-The following sections provide useful guidance and best practices for tracking release information for each channel.
+Updates (bug fixes, enhancements, new features and deprecations) are announced through [GitHub release notes](https://github.com/microsoft/coe-starter-kit/releases).
 
 ### GitHub release notes
 
-With each release of the CoE Starter Kit, is an accompanying set of release notes. Release notes should be reviewed prior to installing the updated version in your organization.
+Each release of the CoE Starter Kit is accompanied with a release notes.  A release note details bug fixes and enhancements addressed with this release. Release notes should be reviewed prior to installing the updated version in your organization.
 
 #### Viewing release notes
 
-View the details of each release by following the steps described below:
+To view the details of a release:
 
 1. Navigate to the [CoE Starter Kit repository](https://github.com/microsoft/coe-starter-kit) in GitHub.
-1. On the right side of the screen, is [a link to the latest release](https://github.com/microsoft/coe-starter-kit/releases) notes.
+1. Select the [latest release](https://github.com/microsoft/coe-starter-kit/releases) notes.
+    ![View new releases on GitHub](media/coe-upgrade5.png "View new releases on GitHub")
 
-Release notes contain links to bug fixes, new features, upgrade instructions and the change log.
+Release notes contain a change log of issues (bug fixes and enhancements) addressed with the new version and may also include specific upgrade instructions that are new for the release. This could be turning on a new flow or notes on deprecated features.
 
-Upgrade instructions will notify you of any changes that you need to make (turning on flows, setting variables, etc.) for the release.
-The change log lists all bugs, features and updates in the release. Selecting an issue takes you to the item to review comments and all related progress updates.
+#### Subscribe to CoE starter Kit releases
 
-#### Notifications
+Watch releases on our [GitHub repository](https://github.com/microsoft/coe-starter-kit) to receive notifications about the latest release.
 
-Create GitHub notifications for updates.
+1. **Sign-in** to your GitHub account.
+1. Go to our [GitHub repository](https://github.com/microsoft/coe-starter-kit)
+1. Select **Watch > Custom**.
 
-How to create custom notification for new/ updates to issues and releases:
+    ![Select to watch the repository to receive notifications about new releases](media/github-watch1.png "Select to watch the repository to receive notifications about new releases")
+1. Select **Releases**.
 
-1. **Sign-in** to your GitHub account, or sign up.
-1. Navigate to the [CoE Starter Kit repository](https://github.com/microsoft/coe-starter-kit).
-1. Select **'Watch'** (or possibly labeled 'Unwatch' if you've already set up notifications).
-1. Either select an existing notification option, or select **'Custom'**.
-1. Check the notification types that you want to receive updates about.
-1. In the example below, a custom notification has been created to send alerts for new/ updated issues, releases and security alerts.
-
-![Screenshot of GitHub notification creation](/media/coe-starter-kit-notifications.png)
-
-### Office hours community call
-
-The CoE Starter Kit team runs a monthly community call that dives deeper into new features and bug fixes. You can [register for the Office hours call here](https://aka.ms/coeofficehours). This is highly recommended.
+     ![Check to only watch new releases](media/github-watch2.png "Check to only watch new releases")
+1. Select **Apply**.
 
 ### How often should you update the CoE Starter Kit?
 
@@ -80,34 +69,55 @@ Here are a few things to consider when deciding your update frequency:
 
 - Does the new release **resolve an issue** that you currently have?
 - Does the new release **contain a new feature** that you would like to try out?
-- By **not** updating to the new release mean your current version is three months older than the newly released version?
+- Has your current version been installed more than three months ago?
 
-Before a release, the CoE Starter Kit team tests any bug fixes or new features against the previous three released versions.  Unfortunately, it means that leaving updates longer than three months could result in unexpected issues when updating.
+With the fast pace Power Platform is changing, leaving updates longer than three months could result in unexpected issues when updating.
 
 >[!TIP]
->Review releases monthly by attending the office hours calls and reading release notes. Create notifications to alert you when interesting updates are made. Try to maintain parity between your testing/ production versions of the CoE Starter Kit and the current release, or within the past three releases.
+>Review releases monthly by subscribing to release notes.
 
 ## Installing updates
 
-Below are step-by-step instructions to install and test updates for two possible scenarios:
+Below are step-by-step instructions to install and test updates for two scenarios:
 
 - If you haven't made customizations to the CoE Starter Kit
 - If you've made customizations to the CoE Starter Kit
 
 ### Download the latest solution file
 
-Before downloading, read the release notes.  Ensure you're aware of any new components that may require enabling, or variables that need to be created.  [Download the solution file](https://github.com/microsoft/coe-starter-kit/releases).
+First, read the [latest release notes](https://github.com/microsoft/coe-starter-kit/releases). Check the [setup instructions](setup.md) where any new components will be mentioned.
 
-### Checking for unmanaged layers
+Download the latest version CoE Starter Kit compressed file ([aka.ms/CoeStarterKitDownload](https://aka.ms/CoeStarterKitDownload)).
 
-Before installing the update, check for unmanaged layers.
+>[!IMPORTANT]
+> **Extract the zip file** after downloading and before moving on to the next step. The CoE Starter Kit compressed file contains all solution components as well as non-solution aware components that make up the CoE Starter Kit.
+
+### Get your environment ready for the upgrade
+
+Before installing the upgrade, check the solution is in a healthy state to receive the new updates.
+
+Making any changes to flows or apps in the solution creates an unmanaged layer. Components with unmanaged layers will not receive updates until you remove that unmanaged layer. Learn more: [Understanding solution layers](/power-platform/alm/solution-layers-alm)
+
+#### Remove unmanaged layers from inventory flows
+
+All flows with *Admin \| Sync Template v* in the name are responsible for collecting your tenants inventory and building the foundation the CoE Starter Kit relies on. These flows are changed frequently to fix bugs, address edge cases or collect additional information and should not be customized. If you have additional requirements on what inventory to collect, raise a [feature ask](https://github.com/microsoft/coe-starter-kit/issues/new?assignees=&labels=coe-starter-kit%2Cenhancement&template=3-coe-starter-kit-feature.yml&title=%5BCoE+Starter+Kit+-+Feature%5D%3A+FEATURE+TITLE) or create your own flow.
+
+Your first check before installing the upgrade is removing unmanaged layers from the inventory flows.
 
 >[!NOTE]
->The [feature described below](https://github.com/microsoft/coe-starter-kit/issues/2108) requires the [April 2022 release](https://github.com/microsoft/coe-starter-kit/releases/tag/CoEStarterKit-April2022)
+>You may have unknowingly created an unmanaged layer by selecting "Edit" to look at flow actions or by modifying the run-only properties of the flow.
 
-Check for unmanaged layers in your environment using the Admin Control Center app. The Admin Control Center app identifies flows that have unmanaged layers.  These flows won't receive updates until unmanaged layers are removed:
+You can check for unmanaged layers on the inventory flows using the [Admin - Command Center](core-components.md#admin---command-center) app.
 
-![Screenshot showing the unmanaged layer detection feature](media/admin-command-center.png)
+>[!NOTE]
+>The [feature described below](https://github.com/microsoft/coe-starter-kit/issues/2108) was made available with the April 2022 release of the CoE Starter Kit, and requires the April or [later release]((https://github.com/microsoft/coe-starter-kit/releases)) to be installed.
+
+1. Open the **Admin - Command Center** app from your CoE environment.
+1. Select **Sync flows** from the navigation.
+1. Check if any of the flows show the layer icon, indicating they have unmanaged layers
+    ![Detect unmanaged layers on flows in the Admin Command Center app](media/coe-upgrade6.png "Detect unmanaged layers on flows in the Admin Command Center app")
+1. Click on the layer icon to go to the solution layer page of the flow and remove the unmanaged layer.
+    ![Remove unmanaged layers](media/upgrade2.png "Remove unmanaged layers")
 
 If you can see any unmanaged layers, you'll need to remove them prior to updating:
 
@@ -115,7 +125,7 @@ If you can see any unmanaged layers, you'll need to remove them prior to updatin
 
 ![Screenshot showing 'see solution layers' option in web interface](media/upgrade1.png)
 
-2. Select **Remove unmanaged layer**
+1. Select **Remove unmanaged layer**
 
 ![Screenshot showing 'remove unmanaged layer' option in the web interface](media/upgrade2.png)
 
