@@ -68,6 +68,8 @@
          href: authoring-variables.md
        - name: Reuse variables across topics
          href: authoring-variables-bot.md
+       - name: Use Power Fx formulas
+         href: advanced-power-fx.md
        - name: Create topics from existing support content
          href: advanced-create-topics-from-web.md
        - name: Create topics from Customer Service Insights

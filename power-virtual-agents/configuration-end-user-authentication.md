@@ -46,9 +46,7 @@ Power Virtual Agents supports the following authentication providers:
 
 Power Virtual Agents supports several authentication options. Choose the one that meets your needs.
 
-To change your bot's authentication settings, go to **Manage** on the side pane, and then go to the **Security** tab and select the **Authentication** card.
-
-:::image type="content" source="media/configuration-end-user-authentication/security-authentication.png" alt-text="Screenshot of the Security page under the Manage menu, highlighting the Authentication card.":::
+To change your bot's authentication settings, go to **Settings** then **Security** on the side pane, and then select the **Authentication** card.
 
 The following authentication options are available:
 
