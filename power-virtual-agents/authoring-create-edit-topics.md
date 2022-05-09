@@ -188,15 +188,13 @@ If you've configured hand-off to omnichannel with voice-based capabilities, you'
 
 To redirect to another topic, you'll first need to set up the topic you want to redirect to, also known as a subtopic.
 
-1. Create or go to the subtopic your bot will redirect people to and add one or more input/output variables.
+1. Create or go to the subtopic your bot will redirect to. 
 
-   1. To create a variable, add either a Question node or a Set Variable node to the topic.
+1. Optionally add one or more [input/output variables](authoring-variables.md#passing-variables-between-topics).
 
-   1. Go to the Variables pane and mark each node as an input or output, as needed.
 
-       :::image type="content" source="media/authoring-create-edit-topics/topics-redirect-add-variables.png" alt-text="Screenshot showing how to add a node as either an input or an output by selecting a checkbox.":::
 
-1. Save the topic with the input/output variable set.
+1. Save the topic.
 
 Now, you'll set up the initial topic a user will interact with and create the redirect to the subtopic you just edited.
 
@@ -210,7 +208,7 @@ Now, you'll set up the initial topic a user will interact with and create the re
 
 1. Fill in the appropriate input slots with variables to pass into the topic, and complete the outputs by either referencing existing variables or creating new ones.
 
-1. Save your topic, then use the test canvas to confirm that your bot successfully calls the subtopic and passes the variables as you defined.
+1. Save your topic, then use the test bot pane to confirm that your bot successfully calls the subtopic and passes any variables as you defined.
 
 In the authoring canvas for the original topic, you can insert additional nodes under the subtopic's node.
 
