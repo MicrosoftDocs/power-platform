@@ -186,33 +186,21 @@ If you've configured hand-off to omnichannel with voice-based capabilities, you'
 
 #### Go to another topic
 
-To redirect to another topic, you'll first need to set up the topic you want to redirect to, also known as a subtopic.
-
-1. Create or go to the subtopic your bot will redirect to. 
-
-1. Optionally add one or more [input/output variables](authoring-variables.md#passing-variables-between-topics).
-
-
-
-1. Save the topic.
-
-Now, you'll set up the initial topic a user will interact with and create the redirect to the subtopic you just edited.
-
-1. Go to or create the initial topic, then add a Redirect Node to the canvas by going to **Topic Management**, then **Go to another topic**.
+1. To have the bot move to a different topic, select **+** to add a node, and then select **Topic Management**, then **Go to another topic**.
 
     :::image type="content" source="media/authoring-create-edit-topics/topics-redirect-add-subtopic.png" alt-text="Screenshot showing redirection to another topic node with options for other topics.":::
 
-1. If there are one or more input variables in the subtopic, add them to the Redirect node now using the **Add input** button.
+1. Select an existing topic from the list, or **Create a topic**.
 
-    :::image type="content" source="media/authoring-create-edit-topics/topics-redirect-set-variables.png" alt-text="Screenshot showing how to set the variables within a redirect.":::
+    :::image type="content" source="media/authoring-create-edit-topics/topics-redirect-select-topic.png" alt-text="Screenshot showing redirection to another topic node with options for other topics.":::
 
-1. Fill in the appropriate input slots with variables to pass into the topic, and complete the outputs by either referencing existing variables or creating new ones.
+1. If there are any [input](/authoring-variables.md#receive-values-from-other-topics) or [output](/authoring-variables.md#return-values-to-original-topics) variables in the next topic, enter or select a value for each one.
 
-1. Save your topic, then use the test bot pane to confirm that your bot successfully calls the subtopic and passes any variables as you defined.
+1. Save your topic, then use the test bot pane to confirm that your bot successfully calls the next topic.
 
-In the authoring canvas for the original topic, you can insert additional nodes under the subtopic's node.
+In the authoring canvas for the original topic, you can insert additional nodes under the Redirect node.
 
-When the path for the subtopic is finished, the bot will return to the original topic. The bot will then follow the nodes that are under the subtopic's node.
+When the path for the topic chosen in the Redirect node is finished, the bot will return to the original topic. The bot will then follow the nodes that are under the Redirect node.
 
 :::image type="content" source="media/authoring-create-edit-topics/authoring-subtopic-redirect.png" alt-text="Screenshot of the authoring canvas showing nodes under a redirected topic node.":::
 
