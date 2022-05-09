@@ -1,0 +1,68 @@
+---
+title: Icon control reference | Creator Kit
+description: Learn about the details and properties of Icon control in the Creator Kit.
+author: denisem-msft
+manager: devkeydet
+
+ms.component: pa-maker
+ms.topic: conceptual
+ms.date: 05/06/2022
+ms.subservice: guidance
+ms.author: demora
+ms.reviewer: tapanm
+search.audienceType: 
+  - maker
+search.app: 
+  - D365CE
+  - PowerApps
+  - Powerplatform
+contributors:
+  - tapanm-msft
+  - demora-msft
+  - mehdis-msft
+---
+# Icon control
+
+A control used to display Fluent UI icons.
+
+![Icon](media/icon.png "Icon")
+
+## Description
+
+This control renders Fluent UI icons based on the name. Provides ability to easily create an Icon Button & Action Button with custom styling.
+
+For a list of icons, visit our [icon documentation](https://developer.microsoft.com/en-us/fluentui#/styles/web/icons).
+
+## Limitations
+This PCF component can only be used in Canvas apps and Custom Pages.
+
+
+## Key properties
+
+| Property | Description |
+| -------- | ----------- |
+| Icon name | Name of the Fluent UI icon |
+| Icon type | Renders the icon as an action button, icon button, or icon only. |
+| Text | Text displayed (action button type only) |
+| Text alignment | Position of the text (action button type only) |
+| Icon color | Color of the icon |
+| Icon size | Size of the icon |
+| Font size | Size of the font (action button type only) |
+| Font color | Color of the font |
+| Fill color | Background fill color of the icon |
+| Border color | Border color of the icon |
+| Border radius | Roundness of the corners |
+
+## Additional properties
+
+| Property | Description |
+| -------- | ----------- |
+| Hover icon color | Color of the icon while hovering |
+| Hover font color | Color of the font while hovering |
+| Hover fill color | Color of the fill while hovering |
+| Hover border color | Color of the border while hovering |
+
+## Best Practices
+Refer to [Fluent UI Icon control best practices](https://developer.microsoft.com/en-us/fluentui#/controls/web/contextmenu)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

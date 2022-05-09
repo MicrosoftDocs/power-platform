@@ -34,8 +34,8 @@ Overview of all the components available in the kit.
 | [Command Bar](commandbar.md) | User Interface | This code component provides a wrapper around the [Fluent UI Command Bar](https://developer.microsoft.com/en-us/fluentui#/controls/web/commandbar) control for use in canvas & custom pages. | ✅ | ✅ | ✅ | ⬜ | ⬜ |
 | [Details List](detailslist.md) | User Interface | The DetailsList code component allows using of the [Fluent UI DetailsList component](https://developer.microsoft.com/en-us/fluentui#/controls/web/detailslist) from inside canvas apps and custom pages. | ✅ | ✅ | ✅ | ⬜ | ⬜ |
 | [Elevation](elevation.md) | User Interface | Fluent UI elevation support with mouse hover events. | ✅ | ✅ | ✅ | ⬜ | ⬜ |
-| [Theme Provider](themeprovider.md) | Utility | This code component provides a wrapper around the [Fluent UI ThemeProvider](https://developer.microsoft.com/en-us/fluentui#/controls/web/themeprovider) control. ⚠️ | ✅ | ✅ | ✅ | ⬜ | ⬜ |
-| [Icon](Icon) | User Interface | Fluent UI [Font Icon](https://developer.microsoft.com/en-us/fluentui#/controls/web/icon)/ Icon Button & Action Button with custom styling. | ✅ | ✅ | ✅ | ⬜ | ⬜ |
+| [Theme Provider](themeprovider.md) | Utility | This code component provides a wrapper around the [Fluent UI ThemeProvider](https://developer.microsoft.com/en-us/fluentui#/controls/web/themeprovider) control. | ✅ | ✅ | ✅ | ⬜ | ⬜ |
+| [Icon](icon.md) | User Interface | Fluent UI [Font Icon](https://developer.microsoft.com/en-us/fluentui#/controls/web/icon)/ Icon Button & Action Button with custom styling. | ✅ | ✅ | ✅ | ⬜ | ⬜ |
 | [Keyboard shortcuts](KeyboardShortcuts) | Utility | Registers key press event handlers to allow keyboard short cuts to be used inside canvas apps. | ⬜ | ✅ | ⬜ | ⬜ | ⬜ |
 | [Nav](Nav) | User Interface | This code component provides a wrapper around the [Fluent UI Nav Menu](https://developer.microsoft.com/en-us/fluentui#/controls/web/nav) control bound to a button for use in canvas & custom pages. | ✅ | ✅ | ✅ | ⬜ | ⬜ |
 | [Picker](Picker) | User Interface | Fluent UI Tag Picker support with custom item styling to allow for color/icons tags. | ✅ | ✅ | ✅ | ⬜ | ⬜ |

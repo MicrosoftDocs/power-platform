@@ -284,7 +284,9 @@
       - name: Elevation
         href: creator-kit/elevation.md
       - name: Theme provider
-        href: creator-kit\themeprovider.md
+        href: creator-kit/themeprovider.md
+      - name: Icon
+        href: creator-kit/icon.md
   - name: Automation adoption best practices
     items:
     - name: Overview
