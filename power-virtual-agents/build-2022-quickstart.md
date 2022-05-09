@@ -17,18 +17,18 @@ This quickstart walks you through making a bot that uses new features and improv
 
 Power Virtual Agents now has an app-level home page that is not specific to any bot. On this page you can create a new bot and view a list of bots that you've previously created.
 
-:::image type="content" source="media/build-2022-quickstart/new-bot1.png" alt-text="Name the new bot.":::
+:::image type="content" source="media/build-2022-quickstart/new-bot1.png" alt-text="Screenshot of the app-level home page.":::
 
 > [!TIP]
 > To navigate back to the home page from a bot, select **Power Virtual Agents** in the top menu bar.
 >
-> :::image type="content" source="media/build-2022-quickstart/go-home.png" alt-text="Name the new bot.":::
+> :::image type="content" source="media/build-2022-quickstart/go-home.png" alt-text="Screenshot of Power Virtual Agents top menu bar.":::
 
 1. In the side navigation select **Create**, or select **Home** and select **Create a bot**.
 
 1. Name the bot `Reservation Bot` and select **Create**.
 
-:::image type="content" source="media/build-2022-quickstart/new-bot2.png" alt-text="Name the new bot.":::
+:::image type="content" source="media/build-2022-quickstart/new-bot2.png" alt-text="Screenshot of the create a chatbot dialog.":::
 
 > [!IMPORTANT]
 > Bots can only be created in English in the technology preview.
@@ -51,7 +51,7 @@ Power Virtual Agents now has an app-level home page that is not specific to any 
 
 1. Enter the [Power Fx formula](advanced-power-fx.md) `DateDiff(Topic.reservationDateTime, Date(2022,5,27)) = 0`. This formula will evaluate to true if the date the user provided is May 5th 2022.
 
-    :::image type="content" source="media/build-2022-quickstart/condition-formula.png" alt-text="Screenshot of variable in message node.":::
+    :::image type="content" source="media/build-2022-quickstart/condition-formula.png" alt-text="Screenshot of Power Fx formula in a condition node.":::
 
 1. Under the **ConditionItem** node add a **Message** node. This node to remind the user that the restaurant is closed on May 5th. Enter the message `Sorry, but we're closed on May 27th. Please make a reservation on another day.`
 
@@ -61,7 +61,7 @@ Power Virtual Agents now has an app-level home page that is not specific to any 
 
    When the bot responds with this message, the variable reference `{Topic.reservationDateTime}` will be replaced with with the value of the variable.
 
-    :::image type="content" source="media/build-2022-quickstart/variable-replaced.png" alt-text="Screenshot of variable reference replaced with value.":::
+    :::image type="content" source="media/build-2022-quickstart/variable-replaced.png" alt-text="Screenshot of the variable's value shown in a message.":::
 
 1. Add an **Redirect** node where the two condition branches meet and choose the **End of conversation** topic.
 
@@ -95,7 +95,7 @@ Power Virtual Agents now has an app-level home page that is not specific to any 
 
    Adding a quick reply gives the user the option to select "make a reservation" instead of having to type it out.
 
-   :::image type="content" source="media/build-2022-quickstart/quick-reply.png" alt-text="Screenshot of speech mode toggle.":::
+   :::image type="content" source="media/build-2022-quickstart/quick-reply.png" alt-text="Screenshot of the reservation quick reply.":::
 
 1. Select **Save**.
 
