@@ -1,6 +1,6 @@
 ---
-title: Theme designer control reference | Creator Kit
-description: Learn about the details and properties of Theme designer control in the Creator Kit.
+title: Theme provider control reference | Creator Kit
+description: Learn about the details and properties of Theme provider control in the Creator Kit.
 author: denisem-msft
 manager: devkeydet
 
@@ -21,15 +21,15 @@ contributors:
   - demora-msft
   - mehdis-msft
 ---
-# Theme designer control
+# Theme provider control
 
-A theme designer component to generate Theme JSON.
+A Theme provider component to generate Theme JSON.
 
-![Theme designer](media/themedesigner.png "Theme designer")
+![Theme provider](media/themedesigner.png "Theme provider")
 
 ## Description
 
-Fluent UI Theme designer creates the Theme JSON value used in components based on the selected color values. The output JSON is generated to be used in the Theme property of the other components in the application. Controls on the left side of the screen provide an interface to modify the primary color, text color, and background.
+ThemeProvider is a utility that applies contextual theming to its child components. Themes can be applied to your entire app, to specific subtrees, or to individual components. You can also infinitely nest and override themes. By default, Fluent UI React components use a Fluent theme.
 
 ## Limitations
 This PCF component can only be used in Canvas apps and Custom Pages.
@@ -45,6 +45,6 @@ This PCF component can only be used in Canvas apps and Custom Pages.
 | Dark overlay padding | Enable for a dark overlay effect in the padded area. |
 
 ## Best Practices
-Refer to [Fluent UI Theme designer control best practices](https://developer.microsoft.com/en-us/fluentui#/controls/web/contextmenu)
+Refer to [Fluent UI Theme provider control best practices](https://developer.microsoft.com/en-us/fluentui#/controls/web/themeprovider)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
