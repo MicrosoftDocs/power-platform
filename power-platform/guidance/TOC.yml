@@ -295,6 +295,8 @@
         href: creator-kit/pivot.md
       - name: Resizable text area
         href: creator-kit/resizabletextarea.md
+      - name: Tag list
+        href: creator-kit/taglist.md
   - name: Automation adoption best practices
     items:
     - name: Overview
