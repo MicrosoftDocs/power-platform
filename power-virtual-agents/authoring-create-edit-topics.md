@@ -191,26 +191,32 @@ If you've configured hand-off to omnichannel with voice-based capabilities, you'
 
 1. Select an existing topic from the list, or **Create a topic**.
 
+    > [!TIP]
+    > Before creating a new topic, save your current topic first.
+    > Creating a new topic will open the new topic in the authoring canvas, and any unsaved edits you have in the current topic will be lost.
+
     :::image type="content" source="media/authoring-create-edit-topics/topics-redirect-select-topic.png" alt-text="Screenshot of redirect topic list.":::
 
 1. If there are any [input](/authoring-variables.md#receive-values-from-other-topics) or [output](/authoring-variables.md#return-values-to-original-topics) variables in the next topic, enter or select a value for each one.
 
 1. Save your topic, then use the test bot pane to confirm that your bot successfully calls the next topic.
 
-In the authoring canvas for the original topic, you can insert additional nodes under the Redirect node.
+In the authoring canvas for the original topic, you can insert additional nodes under the **Redirect** node.
 
-When the path for the topic chosen in the Redirect node is finished, the bot will return to the original topic. The bot will then follow the nodes that are under the Redirect node.
+When the path for the topic chosen in the **Redirect** node is finished, the bot will return to the original topic. The bot will then follow the nodes that are under the **Redirect** node.
 
 :::image type="content" source="media/authoring-create-edit-topics/authoring-subtopic-redirect.png" alt-text="Screenshot of the authoring canvas showing nodes under a redirected topic node.":::
 
-If you redirect to any of the following [system topics](#use-system-and-sample-topics), however, the entire conversation will end:
+If you redirect to any of the following [system topics](#use-system-and-sample-topics), however, the current conversation flow will end. Unless modified, these topics have the following behavior.
 
-- End of Conversation
-- Confirmed Success
-- Confirmed Failure
-- Goodbye
-- Escalate
-- Start over (also resets any [global variables](authoring-variables-bot.md))
+| Topic | Behavior |
+|:-|:-|
+| Confirmed Failure| The user can ask another question or request to talk to an agent, which redirects to the Escalate topic.|
+| Confirmed Success| The user is presented with a satisfaction survey, and then can ask another question or leave the conversation, which redirects to the Goodbye topic. |
+| End of Conversation | The user is asked if their question was answered. Based on their response, the bot redirects to the Confirmed Success or the Confirmed Failure topic. |
+| Escalate | This topic is incomplete. Before enabling this, add your business logic and any additional logic the user's client requires. |
+| Goodbye | Thanks the user and indicates to the user's client that the session is over. The behavior varies based on the client. On the telephony channel, for example, the client will hang up. |
+| Start over | Resets the conversation and resets [global variables](authoring-variables-bot.md) for the current session. |
 
 #### End the conversation
 
