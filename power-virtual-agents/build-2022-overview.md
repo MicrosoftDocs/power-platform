@@ -1,6 +1,6 @@
 ---
 title: "Technology preview for Build 2022"
-description: ""
+description: "Overview of new features and improvements in the technology preview."
 ms.date: 05/10/2022
 ms.topic: overview
 author: v-alarioza
