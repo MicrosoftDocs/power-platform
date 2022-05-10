@@ -92,7 +92,7 @@ For an administrator, the quick start guide should take about 30 minutes. By the
 
    Deploying to your enterprise? For more information, go to [Enterprise deployment](./scenarios/tenant-deployments.md#enterprise-deployment).
 
-   If you're prompted to create an HTTP with Azure Active Directory (AD) connection, enter **https&semi;\/\/graph&period;microsoft&period;com** for both the **Base Resource URL** and **Azure AD Resource URI**.
+   If you're prompted to create an HTTP with Azure Active Directory (AD) connection, enter **https&colon;\/\/graph&period;microsoft&period;com** for both the **Base Resource URL** and **Azure AD Resource URI**.
 
 1. [Update permissions for the project build service](../../setup-almacceleratorpowerplatform.md#update-permissions-for-the-project-build-service) to enable build pipelines to interact with Git repositories.
 
