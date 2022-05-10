@@ -13,6 +13,10 @@ ms.collection: virtual-agent
 
 This quickstart walks you through making a bot that uses new features and improvements introduced in the technology preview at Build. We'll be creating a simple bot that helps users make a reservation at a fictional restaurant.
 
+## Prerequisites
+
+- [Create and edit topics](authoring-create-edit-topics.md)
+
 ## Create a bot
 
 Power Virtual Agents now has an app-level home page that is not specific to any bot. On this page you can create a new bot and view a list of bots that you've previously created.
@@ -32,40 +36,6 @@ Power Virtual Agents now has an app-level home page that is not specific to any 
 
 > [!IMPORTANT]
 > Bots can only be created in English in the technology preview.
-
-## Add a reservation topic
-
-1. In the side navigation, select **Topics** and then **New topic**.
-
-1. Add the following trigger phrases:
-    - `make a reservation`
-    - `reserve a time`
-
-1. Add a **Question** node and enter the message `What is the desired time and date of your reservation?`
-
-1. For **Identify** choose **Date and time**. This [entity](advanced-entities-slot-filling.md) enables your bot to extract a date and time from the user's response.
-
-1. For **Save response as** [create a new variable](authoring-variables.md) named `reservationDateTime`.
-
-1. [Add a **ConditionItem** node](authoring-create-edit-topics.md#add-a-condition) and [change it to a formula](advanced-power-fx.md#use-power-fx-as-a-condition).
-
-1. Enter the [Power Fx formula](advanced-power-fx.md) `DateDiff(Topic.reservationDateTime, Date(2022,5,27)) = 0`. This formula will evaluate to true if the date the user provided is May 5th 2022.
-
-    :::image type="content" source="media/build-2022-quickstart/condition-formula.png" alt-text="Screenshot of Power Fx formula in a condition node.":::
-
-1. Under the **ConditionItem** node add a **Message** node. This node to remind the user that the restaurant is closed on May 5th. Enter the message `Sorry, but we're closed on May 27th. Please make a reservation on another day.`
-
-1. Under the **All Other Conditions** node, add a **Message** node. This node will provide a confirmation of the user's reservation. Enter the message `Your reservation has been made for {Topic.reservationDateTime}. We look forward to seeing you!`.
-
-    :::image type="content" source="media/build-2022-quickstart/variable-reference.png" alt-text="Screenshot of variable in message node.":::
-
-   When the bot responds with this message, the variable reference `{Topic.reservationDateTime}` will be replaced with with the value of the variable.
-
-    :::image type="content" source="media/build-2022-quickstart/variable-replaced.png" alt-text="Screenshot of the variable's value shown in a message.":::
-
-1. Add an **Redirect** node where the two condition branches meet and choose the **End of conversation** topic.
-
-1. Name the topic `Make a reservation` and select **Save**.
 
 ## Customize greeting topic
 
@@ -98,6 +68,40 @@ Power Virtual Agents now has an app-level home page that is not specific to any 
    :::image type="content" source="media/build-2022-quickstart/quick-reply.png" alt-text="Screenshot of the reservation quick reply.":::
 
 1. Select **Save**.
+
+## Add a reservation topic
+
+1. In the side navigation, select **Topics** and then **New topic**.
+
+1. Add the following trigger phrases:
+    - `make a reservation`
+    - `reserve a time`
+
+1. Add a **Question** node and enter the message `What is the desired time and date of your reservation?`
+
+1. For **Identify** choose **Date and time**. This [entity](advanced-entities-slot-filling.md) enables your bot to extract a date and time from the user's response.
+
+1. For **Save response as** [create a new variable](authoring-variables.md) named `reservationDateTime`.
+
+1. [Add a **ConditionItem** node](authoring-create-edit-topics.md#add-a-condition) and [change it to a formula](advanced-power-fx.md#use-power-fx-as-a-condition).
+
+1. Enter the [Power Fx formula](advanced-power-fx.md) `DateDiff(Topic.reservationDateTime, Date(2022,5,27)) = 0`. This formula will evaluate to true if the date the user provided is May 5th 2022.
+
+    :::image type="content" source="media/build-2022-quickstart/condition-formula.png" alt-text="Screenshot of Power Fx formula in a condition node.":::
+
+1. Under the **ConditionItem** node add a **Message** node. This node will remind the user that the restaurant is closed on May 5th. Enter the message `Sorry, but we're closed on May 27th. Please make a reservation on another day.`
+
+1. Under the **All Other Conditions** node, add a **Message** node. This node will provide a confirmation of the user's reservation. Enter the message `Your reservation has been made for {Topic.reservationDateTime}. We look forward to seeing you!`.
+
+    :::image type="content" source="media/build-2022-quickstart/variable-reference.png" alt-text="Screenshot of variable in message node.":::
+
+   When the bot responds with this message, the variable reference `{Topic.reservationDateTime}` will be replaced with with the value of the variable.
+
+    :::image type="content" source="media/build-2022-quickstart/variable-replaced.png" alt-text="Screenshot of the variable's value shown in a message.":::
+
+1. Add an **Redirect** node where the two condition branches meet and choose the **End of conversation** topic.
+
+1. Name the topic `Make a reservation` and select **Save**.
 
 ## Next steps
 
