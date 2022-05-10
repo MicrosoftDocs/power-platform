@@ -78,7 +78,11 @@ An **adaptive card** is fully customizable card that you can tailor to your need
 
 1. Select the **Message** node. Then select **Add** and choose **Adaptive Card**.
 
-1. For **Edit JSON**, enter the JSON for your Adaptive Card. You can open an expanded view of the JSON editor by clicking the **Expand** button.
+1. For **Edit JSON**, enter the JSON for your Adaptive Card.
+
+    To open an expanded view of the JSON editor select **Expand**.
+
+    :::image type="content" source="media/advanced-cards/adaptive-card-expand.png" alt-text="Screenshot of a message node with an adaptive card.":::
 
 ## Manage multiple cards in the same node
 
