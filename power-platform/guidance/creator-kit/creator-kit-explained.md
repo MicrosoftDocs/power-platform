@@ -1,5 +1,5 @@
 ---
-title: "Creator Kit explained: building blocks"
+title: "How to use the Creator Kit | Creator Kit"
 description: "The Power Platform CoE Starter Kit is shipped as a single self-contained solution. Learn about the building blocks  designed to help you create fluent UI based apps"
 author: denisem-msft
 manager: devkeydet
@@ -22,21 +22,36 @@ contributors:
   - mehdis-msft
 ---
 # Use the Creator Kit
+The Creator Kit is shipped with the following assets:
+- **PCF** and **Canvas** [components](creator-kit/components.md)
+- A **Reference app** to interactively learn
+- **Templates** to quickly start building apps
+- A **Theme Editor** generates Theme JSON, used to easily style consistent components
 
-Once the kit has been [installed](setup.md), understand how to use the components to quickly start building apps.
+## How to add components to an app
+Once the kit has been [installed](setup.md), understand how to add the components into your app.
+- How to [add PCF code components to a Canvas apps](https://docs.microsoft.com/en-us/power-apps/developer/component-framework/component-framework-for-canvas-apps#add-components-to-a-canvas-app)
+- How to [add Canvas components to a Canvas app](https://docs.microsoft.com/en-us/power-apps/maker/canvas-apps/component-library#import-from-a-component-library)
 
-The Creator Kit is shipped with:
-- Multiple [components](creator-kit/components.md)
-- Reference app to interactively learn
-- Templates to quickly start building apps
+You can add the components to a Model Driven App in an [embedded Canvas app](https://docs.microsoft.com/en-us/power-apps/maker/model-driven-apps/embedded-canvas-app-add-classic-designer) that contains the components.
 
 ## Building blocks
 
+### Reference App
+Use the reference app to learn how to use each component.
+- Observe how the component behaves and renders data.
+- Select the {Code} tab to see the Power Fx formulas used.
+- Learn best practices from the inline guidance related to the control.
+
+   ![The Creator Kit](media/ReferenceApp.png "The Creator Kit")
+
 ### Templates
-These app templates provide what you need to get started creating a responsive Fluent UI based app. They come with the custom components pre-loaded and 
+The templates provide an option to quickly start creating a responsive Fluent UI based app. They come with the custom components pre-loaded to reduce the time it takes to develop.
 
 #### Canvas Template
 Make a copy of this app when creating a new [canvas app](https://docs.microsoft.com/en-us/power-apps/maker/canvas-apps/getting-started) for a project or proof-of-concept that require the components in the kit.
+
+   ![Canvas Template App](media/canvas-template-app.png "Canvas Template App")
 
 #### Custom Page Template
 Make a copy of this page when creating a new custom page for a [converged app](https://docs.microsoft.com/en-us/power-apps/maker/model-driven-apps/model-app-page-overview).
@@ -47,9 +62,14 @@ These components are defined in the component library called "Power CAT Componen
 ### Code Components
 Implemented with [Power Apps component framework (PCF)](https://docs.microsoft.com/en-us/power-apps/developer/component-framework/custom-controls-overview), which are defined as individual custom controls in the solution.
 
-### Reference App
-Use the reference app to interactively learn how each component is implemented. Edit the app, use the components in play mode, and observe how the property values are reflected in the real-time experience.
+View the code components in the [components refernce page](components.md).
 
+## Solution dependencies
+Follow these best practices to help ensure you do not run into solution dependency issues during deployment:
+- Always build apps that use Creator Kit components within a solution
+- When deploying apps to another Environment that use the components, make sure either:
+    - The target Environment already contains the managed Creator Kit solution, or
+    - The app solution contains the components used in the app
 
 > [!div class="nextstepaction"]
 > [Next step: View the components reference](components.md)

@@ -30,12 +30,12 @@ Before installing the Creator Kit, it is helpful to learn about [Power Apps comp
 * System Customizer security role is needed to use the Creator Kit components
 * A Premium Power Apps license is required to develop and use apps with custom components.
 
+
 ## Install the Creator Kit
 
 1. Download the solution file ([Click to Download](https://github.com/microsoft/powercat-creator-kit/releases/download/CreatorKit-May2022/PowerCATCreatorStarterKit_1_0_20220506_1_managed.zip))
 1. Navigate to the desired Environment in the Power Apps Maker Portal (https://make.powerapps.com)
 1. Import the solution file
-
 
 > [!div class="nextstepaction"]
 > [Next step: Learn how to use the kit](creator-kit-explained.md)

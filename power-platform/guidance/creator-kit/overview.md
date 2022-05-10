@@ -30,7 +30,15 @@ This toolkit helps create well-designed Power App experiences on the web & mobil
 
 You can view the code in the latest version of the Creator Kit in the [GitHub repository](https://aka.ms/CreatorKitRepo).
 
-   ![The Creator Kit](media/creatorkit.png "The Creator Kit")
+   ![The Creator Kit](media/creatorkitview.png "The Creator Kit")
+
+## What's in the kit
+The Creator Kit is a Power Platform managed solution file that contains the following components:
+- Reference Canvas App
+- Template Starter Apps (Canvas & Model Driven App Custom Page)
+- Canvas Component Library
+- PCF Components
+- Fluent Design Theme Editor
 
 ## Disclaimer
 
