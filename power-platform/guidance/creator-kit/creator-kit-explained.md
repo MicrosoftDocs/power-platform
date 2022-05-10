@@ -83,10 +83,14 @@ Use this app to generate the desired color palette used by the components.
 ### Canvas Components
 These components are defined in the component library called "Power CAT Component Library", and are implemented with [Canvas app custom components](https://docs.microsoft.com/en-us/power-apps/maker/canvas-apps/create-component).
 
+   ![Canvas Components](media/canvascomponents.png "Canvas Components")
+
 ### Code Components
 Implemented with [Power Apps component framework (PCF)](https://docs.microsoft.com/en-us/power-apps/developer/component-framework/custom-controls-overview), which are defined as individual custom controls in the solution.
 
 View the code components in the [components refernce page](components.md).
+
+   ![Code Components](media/pcfcomponents.png "Code Components")
 
 ## Deploying apps with Creator Kit components
 Avoid solution dependency issues when deploying an app by:
