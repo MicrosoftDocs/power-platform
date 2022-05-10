@@ -62,7 +62,8 @@ Use this app to generate the desired color palette used by the components.
 1. Play the Theme Editor App
 1. Modify the Primary color, Text color, and Background color values
    ![Theme Editor App](media/theme-editor.png "Theme Editor App")
-1. Select the **Export theme** button in the top right corner of the app to generate the Power Fx expression version of the Theme JSON.
+1. Select the **Export theme** button in the top right corner of the app to generate the Power Fx expression version of the Theme JSON, then copy the value from the panel.
+    ![Theme Editor App](media/theme-editor-json.png "Theme Editor App")
 1. Save the Theme JSON as a variable in your app (or replace the existing Theme definition if starting from a template app), and make sure the Creator Kit controls are referencing the variable. 
 
 ### Canvas Components
