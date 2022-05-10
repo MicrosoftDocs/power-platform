@@ -29,32 +29,41 @@ The Creator Kit is shipped with the following assets:
 - A **Theme Editor** generates Theme JSON, used to easily style consistent components
 
 ## How to add components to an app
-Once the kit has been [installed](setup.md), understand how to add the components into your app.
+Once the kit has been [installed](setup.md), learn how to add the components into your app.
 - How to [add PCF code components to a Canvas apps](https://docs.microsoft.com/en-us/power-apps/developer/component-framework/component-framework-for-canvas-apps#add-components-to-a-canvas-app)
 - How to [add Canvas components to a Canvas app](https://docs.microsoft.com/en-us/power-apps/maker/canvas-apps/component-library#import-from-a-component-library)
-
-You can add the components to a Model Driven App in an [embedded Canvas app](https://docs.microsoft.com/en-us/power-apps/maker/model-driven-apps/embedded-canvas-app-add-classic-designer) that contains the components.
 
 ## Building blocks
 
 ### Reference App
 Use the reference app to learn how to use each component.
+
 - Observe how the component behaves and renders data.
 - Select the {Code} tab to see the Power Fx formulas used.
 - Learn best practices from the inline guidance related to the control.
 
-   ![The Creator Kit](media/ReferenceApp.png "The Creator Kit")
+
+ ![The Creator Kit](media/ReferenceApp.png "The Creator Kit")
 
 ### Templates
-The templates provide an option to quickly start creating a responsive Fluent UI based app. They come with the custom components pre-loaded to reduce the time it takes to develop.
+The kit templates provide an option to quickly start creating a responsive Fluent UI based app. They come with the custom components pre-loaded to and attached to a Theme JSON variable to reduce the time it takes to start developing.
 
 #### Canvas Template
 Make a copy of this app when creating a new [canvas app](https://docs.microsoft.com/en-us/power-apps/maker/canvas-apps/getting-started) for a project or proof-of-concept that require the components in the kit.
 
-   ![Canvas Template App](media/canvas-template-app.png "Canvas Template App")
+   ![Canvas Template App](media/template-app.png "Canvas Template App")
 
 #### Custom Page Template
 Make a copy of this page when creating a new custom page for a [converged app](https://docs.microsoft.com/en-us/power-apps/maker/model-driven-apps/model-app-page-overview).
+
+### Theme Editor App
+Use this app to generate the desired color palette used by the components.
+
+1. Play the Theme Editor App
+1. Modify the Primary color, Text color, and Background color values
+   ![Theme Editor App](media/theme-editor.png "Theme Editor App")
+1. Select the **Export theme** button in the top right corner of the app to generate the Power Fx expression version of the Theme JSON.
+1. Save the Theme JSON as a variable in your app (or replace the existing Theme definition if starting from a template app), and make sure the Creator Kit controls are referencing the variable. 
 
 ### Canvas Components
 These components are defined in the component library called "Power CAT Component Library", and are implemented with [Canvas app custom components](https://docs.microsoft.com/en-us/power-apps/maker/canvas-apps/create-component).
