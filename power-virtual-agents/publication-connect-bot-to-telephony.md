@@ -46,7 +46,7 @@ Connect your [Azure Communication Service (ACS)](/azure/communication-services/)
 
     :::image type="content" source="media/publication-connect-bot-to-telephony/connect-number.png" alt-text="Screenshot of selected phone number.":::
 
-1. Once your the connection is ready, [publish your bot](publication-fundamentals-publish-channels.md#publish-the-latest-bot-content) and test it by calling the number you selected.
+1. Once the connection is ready, [publish your bot](publication-fundamentals-publish-channels.md#publish-the-latest-bot-content) and test it by calling the number you selected.
 
 <!-- FIXME: links -->
 To further customize how your bot speaks, learn [how to use Speech Synthesis Markup Language]() and [change your bot's voice font]().
