@@ -90,10 +90,10 @@ Follow these steps to allocate add-ons to an environment.
 1. Select an environment.
 1. Enter the amount of each add-on you would like to allocate to each environment.
 
-   >[!TIP]
-   >Flow per business process is same as per flow license.
-   >[!NOTE]
->The per flow plan is environment specific. So, if you have multiple environments that need to run a flow, you need to assign per flow license to the flow in each environment.
+   > [!TIP]
+   > Flow per business process is same as per flow license.
+   > [!NOTE]
+   > The per flow plan is environment specific. So, if you have multiple environments that need to run a flow, you need to assign per flow license to the flow in each environment.
 1. Select **Save**.
 
    ![An image that displays the steps needed to assign a license to an environment.](../media/power-automate-licensing/assign-license-environment.png)
