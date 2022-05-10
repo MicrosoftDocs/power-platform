@@ -4,9 +4,9 @@ description: Article discusses the impact of the deprecation of Basic authentica
 ms.component: pa-admin
 ms.topic: overview
 ms.date: 05/09/2022
-author: revachauhan
+author: DanaMartens 
 ms.subservice: admin
-ms.author: rechauha
+ms.author: dmartens 
 ms.reviewer: mkaur
 search.audienceType: 
   - admin
@@ -54,7 +54,7 @@ If you already know the answer, you can continue to step 2. If you are not sure,
     - Select **Settings** > **Email Configuration** > **Email Configuration Settings**.  
 
     **Dynamics 365 on-premises**
-    In the navigation bar, select **Settings** > **Email Configuration**.
+    - In the navigation bar, select **Settings** > **Email Configuration**.
 
     :::image type="content" source="media/settings-email-configuration.png" alt-text="In on-premises version, select Settings > Email configuration.":::
 
