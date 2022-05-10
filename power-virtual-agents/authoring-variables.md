@@ -50,9 +50,9 @@ A variable is associated with a **type**. The type determines what values the va
 
 A variable's type is set based on the value it is first assigned.
 
-Variables can't be assigned values from other types. For example, a variable given the starting value of `1` is assigned the type "number", so you can't assign the string value `apples`.
+Once a variable has been assigned a type, it can't be assigned values from other types. For example, a variable given the starting value of `1` is assigned the type **Number**. Attempting to assign it to a **String** value of `"apples"` will result in an error.
 
-When you're testing a bot, a variable may appear temporarily as the type **Unspecified**. An **Unspecified** variable is one that hasn't been initialized yet.
+When you're testing a bot, a variable may appear temporarily as the type **Unspecified**. An **Unspecified** variable is one that hasn't been assigned a value yet.
 
 ## Entities
 
