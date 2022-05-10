@@ -30,7 +30,32 @@ A control used to provide a search experience.
 ## Description
 Pickers are used to select one or more items, such as tags or files, from a large list.
 
-The Picker code component allows using of the [Fluent UI Picker menu component](https://developer.microsoft.com/en-us/fluentui#/controls/web/Picker) from inside canvas apps and custom pages.
+The Picker code component allows using of the [Fluent UI Picker menu component](https://developer.microsoft.com/en-us/fluentui#/controls/web/Pickers) from inside canvas apps and custom pages.
+
+The Tag Picker code component provides the following features:
+
+1. Binds to an input collection for the chosen tags
+1. Binds to an input collection for suggested tags
+1. Allows users to select from suggestions or enter a free text tag
+1. Raises **On Change** event when a user adds or removes a tag
+1. Allows programmatic **Set Focus**
+1. Styled to closely match the PILL Spec.
+
+## Datasets
+
+The Tag Picker has the following input datasets:
+
+- `Tags` - A collection/table of tags. The app is responsible for adding/removing tags in responsive to the component raising Add/Remove events (see below).
+  - `TagDisplayName` - set to the name of the column that holds the tag display name
+- `Suggestions` - A collection/table of suggestions.
+  - `SuggestionDisplayName` - set to the name of the column that holds the suggestion display name.
+  - `SuggestionSubDisplayName` (Optional) - set to the name of the column that holds the secondary line of text.
+
+The suggestions dataset should be filtered using the `SearchTerm` output property - e.g.
+
+```powerapps-dot
+Search(colSuggestions,TagPicker.SearchTerm,"name")
+```
 
 ## Limitations
 This PCF component can only be used in Canvas apps and Custom Pages.
@@ -39,141 +64,30 @@ This PCF component can only be used in Canvas apps and Custom Pages.
 
 | Property | Description |
 | -------- | ----------- |
-| Items | Required. The data source items table to render. |
-| Fields | Required. The fields needed are indicated. |
-| Columns | Required. Table mapping definition between the component column and the data source. Use this to map field names and define specific column behavior. |
+| Tags | A collection/table of tags. The app is responsible for adding/removing tags in responsive to the component raising Add/Remove events (see below). |
+| TagDisplayName | Set to the name of the column that holds the tag display name. | 
+| Suggestions | A collection/table of suggestions. |
+| SuggestionDisplayName | set to the name of the column that holds the suggestion display name. |
+| SuggestionSubDisplayName | Optional. Set to the name of the column that holds the secondary line of text.
 
-## Additional properties
+## On Change event
 
-| Property | Description |
-| -------- | ----------- |
-| Selected key | The key that is selected by default |
+The `TagPicker` component raises an `OnChange` event when tags are added or removed. The properties used are:
 
-## Items structure
-Each item uses the below schema to visualize data in the component. 
+- **TagEvent** - the name of the event raised
+- **TagKey** - the key of the item that has raised the event (if the event is related to a tag)
 
-| Name | Description |
-| ------ | ----------- |
-| ItemKey | Arbitrary unique string associated with the breadcrumb item. |
-| ItemDisplayName | Text to display in the breadcrumb item. |
-| ItemIconName | Name of the [Fluent UI icon](https://developer.microsoft.com/en-us/fluentui#/styles/web/icons) for the item |
-| ItemIconColor | Color of the item icon |
-| ItemExpanded | Whether the item is expanded by default, if there are children items |
-| ItemVisible | Whether the item is rendered |
-| ItemParentKey | ItemKey of the parent the item is nested under |
+The event should contain an expression similar to:
 
-Example:
+```vb
+If(TagPicker.TagEvent="Add" && CountRows(Filter(colTags,name=TagPicker.TagDisplayName))=0,
+    Collect(colTags,{name:TagPicker.TagDisplayName})
+);
 
-  ```powerapps-dot
-Table(
-    {
-        ItemKey: "1",
-        ItemDisplayName: "Home with Icon & Custom color",
-        ItemIconName: "Home",
-        ItemIconColor: "Green"
-    },
-    {
-        ItemKey: "2",
-        ItemDisplayName: "Documents",
-        ItemExpanded: true
-    },
-    {
-        ItemKey: "3",
-        ItemDisplayName: "Contents"
-    },
-    {
-        ItemKey: "4",
-        ItemDisplayName: "Item Invisible",
-        ItemVisible: false
-    },
-    {
-        ItemKey: "5",
-        ItemDisplayName: "Quick Reference Guide",
-        ItemParentKey: "3",
-        ItemIconName: "Document"
-    },
-    {
-        ItemKey: "6",
-        ItemDisplayName: "Folder 1",
-        ItemParentKey: "2",
-        isExpanded: false
-    },
-    {
-        ItemKey: "7",
-        ItemDisplayName: "Folder 2",
-        ItemParentKey: "6"
-    },
-    {
-        ItemKey: "8",
-        ItemDisplayName: "Folder 3",
-        ItemParentKey: "7"
-    },
-    {
-        ItemKey: "9",
-        ItemDisplayName: "Folder 4",
-        ItemParentKey: "8"
-    },
-    {
-        ItemKey: "10",
-        ItemDisplayName: "File 6",
-        ItemParentKey: "9",
-        ItemIconName: "DocumentSet",
-        ItemIconColor: "Purple"
-    },
-    {
-        ItemKey: "11",
-        ItemDisplayName: "Schedule Appointment",
-        ItemIconName: "Calendar",
-        ItemIconColor: "Blue"
-    },
-    {
-        ItemKey: "12",
-        ItemDisplayName: "Quick Action"
-    },
-    {
-        ItemKey: "13",
-        ItemDisplayName: "Set Reminder",
-        ItemParentKey: "12",
-        ItemIconName: "Clock",
-        ItemIconColor: "Brown"
-    },
-    {
-        ItemKey: "14",
-        ItemDisplayName: "To do list",
-        ItemParentKey: "12",
-        ItemIconName: "List",
-        ItemIconColor: "Orange"
-    }
-)
-  ```
-
-## Configure 'On Select' behavior
-Use the [**Switch()**](https://docs.microsoft.com/en-us/power-apps/maker/canvas-apps/functions/function-if) formula in the component's `OnSelect` property to configure specific actions for each item by referring to the control's selected `ItemKey` as the switch value.
-
-Replace the `false` values with appropriate expressions in the Power Fx language.
-
-  ```powerapps-dot
-    Switch( Self.Selected.ItemKey,
-
-      /* Action for ItemKey 1 */
-      "1", false,
-
-      /* Action for ItemKey 2 */
-      "2", false,
-
-      /* Action for ItemKey 3 */
-      "3", false,
-
-      /* Action for ItemKey 4 */
-      "4", false,
-
-      /* Action for ItemKey 5 */
-      "5", false,
-
-      /* Default action */
-          false
-    )
-  ```
+If(TagPicker.TagEvent="Remove",
+ RemoveIf(colTags,name=Text(TagPicker.TagDisplayName))
+);
+```
 
 ## Best Practices
 Refer to [Fluent UI Picker control best practices](https://developer.microsoft.com/en-us/fluentui#/controls/web/Picker)
