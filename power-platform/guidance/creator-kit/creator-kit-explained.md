@@ -28,6 +28,12 @@ The Creator Kit is shipped with the following assets:
 - **Templates** to quickly start building apps
 - A **Theme Editor** generates Theme JSON, used to easily style consistent components
 
+## Get started
+Complete the following tasks before using the components to make getting started easier:
+1. Learn [how to add components to an app](#How-to-add-components-to-an-app)
+1. Use the [Reference App](#Reference-App) to learn component behavior and implementation patterns
+
+
 ## How to add components to an app
 Once the kit has been [installed](setup.md), learn how to add the components into your app.
 - How to [add PCF code components to a Canvas apps](https://docs.microsoft.com/en-us/power-apps/developer/component-framework/component-framework-for-canvas-apps#add-components-to-a-canvas-app)
@@ -36,7 +42,7 @@ Once the kit has been [installed](setup.md), learn how to add the components int
 ## Building blocks
 
 ### Reference App
-Use the reference app to learn how to use each component.
+This app allows you to interact with each component, see the implementation code behind the properties that enables the behavior, and also provides best practices. We recommend exploring the components of interest in the Reference App before trying to use the components in an actual app.
 
 - Observe how the component behaves and renders data.
 - Select the {Code} tab to see the Power Fx formulas used.
@@ -52,6 +58,14 @@ The kit templates provide an option to quickly start creating a responsive Fluen
 Make a copy of this app when creating a new [canvas app](https://docs.microsoft.com/en-us/power-apps/maker/canvas-apps/getting-started) for a project or proof-of-concept that require the components in the kit.
 
    ![Canvas Template App](media/template-app.png "Canvas Template App")
+
+How to make a copy of the Canvas Template:
+1. Navigate to the **Apps** screen in the [Maker Portal](https://make.powerapps.com) (in the same Environment where the Creator Kit is installed).
+1. Edit the Canvas Template
+1. Create a copy with **File** > **Save As** in the studio. Rename the copy to something memorable.
+1. Close the studio.
+1. In another unmanaged solution, select the **Add existing** > **Apps** > **Canvas** action in the command bar
+1. At this point the 
 
 #### Custom Page Template
 Make a copy of this page when creating a new custom page for a [converged app](https://docs.microsoft.com/en-us/power-apps/maker/model-driven-apps/model-app-page-overview).
@@ -74,12 +88,12 @@ Implemented with [Power Apps component framework (PCF)](https://docs.microsoft.c
 
 View the code components in the [components refernce page](components.md).
 
-## Solution dependencies
-Follow these best practices to help ensure you do not run into solution dependency issues during deployment:
-- Always build apps that use Creator Kit components within a solution
-- When deploying apps to another Environment that use the components, make sure either:
-    - The target Environment already contains the managed Creator Kit solution, or
-    - The app solution contains the components used in the app
+## Deploying apps with Creator Kit components
+Avoid solution dependency issues when deploying an app by:
+- Building apps that use Creator Kit components in a seperate, unmanaged solution.
+- Ensuring target Environment already contain the Creator Kit managed solution, or include the specific components used in the app, in the solution
+
+See [solution import troubleshooting tips](https://docs.microsoft.com/en-us/troubleshoot/dynamics-365/sales/troubleshoot-solution-import-errors-in-dynamics-365) for more general guidance.
 
 > [!div class="nextstepaction"]
 > [Next step: View the components reference](components.md)
