@@ -269,36 +269,43 @@
     - name: Use the kit
       href: creator-kit/creator-kit-explained.md
     - name: Components
-      href: creator-kit/components.md
       items:
-      - name: Auto width label
-        href: creator-kit/autowidthlabel.md
-      - name: Breadcrumb
-        href: creator-kit/breadcrumb.md
-      - name: Context menu
-        href: creator-kit/contextmenu.md
-      - name: Command bar
-        href: creator-kit/commandbar.md
+      - name: Overview
+        href: creator-kit/components.md
+      - name: Basic Inputs
+        items:
+        - name: Auto width label
+          href: creator-kit/autowidthlabel.md
+        - name: Icon
+          href: creator-kit/icon.md
+        - name: Resizable text area
+          href: creator-kit/resizabletextarea.md
+      - name: Commands, Menus & Navs
+        items:
+        - name: Breadcrumb
+          href: creator-kit/breadcrumb.md
+        - name: Context menu
+          href: creator-kit/contextmenu.md
+        - name: Command bar
+          href: creator-kit/commandbar.md
+        - name: Nav
+          href: creator-kit/nav.md
+        - name: Pivot
+          href: creator-kit/pivot.md
       - name: Details list
         href: creator-kit/detailslist.md
-      - name: Elevation
-        href: creator-kit/elevation.md
-      - name: Theme provider
-        href: creator-kit/themeprovider.md
-      - name: Icon
-        href: creator-kit/icon.md
-      - name: Keyboard shortcuts
-        href: creator-kit/keyboardshortcuts.md
-      - name: Nav
-        href: creator-kit/nav.md
-      - name: Picker
-        href: creator-kit/picker.md
-      - name: Pivot
-        href: creator-kit/pivot.md
-      - name: Resizable text area
-        href: creator-kit/resizabletextarea.md
-      - name: Tag list
-        href: creator-kit/taglist.md
+      - name: Pickers
+        items:
+        - name: Tags Picker
+          href: creator-kit/picker.md
+        - name: Tag list
+          href: creator-kit/taglist.md
+      - name: Utilities
+        items:
+        - name: Elevation
+          href: creator-kit/elevation.md
+        - name: Keyboard shortcuts
+          href: creator-kit/keyboardshortcuts.md      
   - name: Automation adoption best practices
     items:
     - name: Overview
