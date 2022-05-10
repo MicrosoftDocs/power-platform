@@ -2,12 +2,10 @@
 title: "Buy Power Automate licenses"
 description: "Buy Power Automate licenses."
 author: PriyaKodukula
-
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 10/06/2021
+ms.date: 05/09/2022
 ms.author: prkoduku
-manager: kvivek
 search.audienceType: 
   - admin
 search.app:
@@ -82,6 +80,9 @@ Here are the two steps you must take if you want to assign a per flow license to
 
 It's easy and scalable to allocate the per flow add-ons you've purchased to the environments that need add-ons. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) under capacity, you'll see a new section appears if your organization has purchased add-ons.
 
+[!TIP]
+To learn more about how to allocate the per flow license to an environment in the Power Platform admin center, see [capacity add-ons for Power Apps and Power Automate](../capacity-add-on.md) section.
+
 Follow these steps to allocate add-ons to an environment.
 
 1. Select **Resources** > **Capacity** on the left side of the screen.
@@ -89,10 +90,10 @@ Follow these steps to allocate add-ons to an environment.
 1. Select an environment.
 1. Enter the amount of each add-on you would like to allocate to each environment.
 
-   >[!TIP]
-   >Flow per business process is same as per flow license.
-   >[!NOTE]
->The per flow plan is environment specific. So, if you have multiple environments that need to run a flow, you need to assign per flow license to the flow in each environment.
+   > [!TIP]
+   > Flow per business process is same as per flow license.
+   > [!NOTE]
+   > The per flow plan is environment specific. So, if you have multiple environments that need to run a flow, you need to assign per flow license to the flow in each environment.
 1. Select **Save**.
 
    ![An image that displays the steps needed to assign a license to an environment.](../media/power-automate-licensing/assign-license-environment.png)

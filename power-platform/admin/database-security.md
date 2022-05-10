@@ -99,7 +99,7 @@ The following table describes which resources can be authored by each security r
 |Dataflow     |X         |X         |-         |X         |
 |Dataverse tables     |-         |-         |X         |X         |
 |Model-driven app     |X        |-         |X         |X         |
-|Solution framework     |-         |-         |X         |X         |
+|Solution framework     |X         |-         |X         |X         |
 |<sup>*</sup>Desktop flow     |-         |-         |X         |X         |
 |AI Builder     |-         |-         |X         |X         |
 
