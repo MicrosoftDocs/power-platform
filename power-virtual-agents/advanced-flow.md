@@ -69,6 +69,12 @@ This template is an example of a flow that can be used by bots. To be suitable f
 
     :::image type="content" source="media/advanced-flow/PVAConnectorResponse.JPG" alt-text="Power Virtual Agents response." border="false":::
 
+If you make changes to a flow in the Power Automate portal after adding the flow to Power Virtual Agents, you can reload the flow by selecting **Node menu** (vertical three dots), then **Refresh**.
+
+:::image type="content" source="media/advanced-flow/refresh-flow-node.png" alt-text="Power Virtual Agents response." border="false":::
+
+The flow will then be re-validated, and any problems detected will need to be fixed before you can save.
+
 ## Input and output parameters
 
 There is no upper limit on how many input or output parameters Power Automate flow for a bot can have. Bots can use the following types of inputs and outputs with Power Automate flows:
