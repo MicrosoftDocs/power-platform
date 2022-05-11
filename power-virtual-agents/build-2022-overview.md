@@ -20,15 +20,20 @@ Power Virtual Agent's new intelligent bot authoring experience unifies the sophi
 
 This evolution brings new features including:
 
-- [Enhanced variable management](authoring-variables.md)
-- [Power FX support](advanced-power-fx.md)
-- [Multimedia cards​](advanced-cards.md)
-- [Speech authoring](advanced-custom-speech-ssml.md)
-- [Voice font selection](advanced-speech-settings.md)
-- [Telephony channel](publication-connect-bot-to-telephony.md)
-- [Bot response variations](authoring-create-edit-topics.md#message-variations)
-- [Quick replies](authoring-create-edit-topics.md#quick-replies)
-- [YAML code editor](authoring-create-edit-topics.md#edit-topics-with-the-code-editor)
+- Updates to authoring experience
+  - [Multimedia cards​](advanced-cards.md)
+  - [YAML code editor](authoring-create-edit-topics.md#edit-topics-with-the-code-editor)
+  - [Bot response variations](authoring-create-edit-topics.md#message-variations)
+  - [Quick replies](authoring-create-edit-topics.md#quick-replies)
+
+- Unlock the power of voice
+    - [Speech authoring](advanced-custom-speech-ssml.md)
+    - [Voice font selection](advanced-speech-settings.md)
+    - [Telephony channel](publication-connect-bot-to-telephony.md)
+
+- Power FX and variable management
+    - [Enhanced variable management](authoring-variables.md)
+    - [Power FX support](advanced-power-fx.md)
 
 For a guided tutorial on how to use these new features, please refer to the [Build 2022 quickstart](build-2022-quickstart.md).
 
