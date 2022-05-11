@@ -21,7 +21,7 @@ contributors:
   - demora-msft
   - mehdis-msft
 ---
-# Icon control
+# Keyboard shortcuts control
 
 A control used to capture and act on keyboard events.
 

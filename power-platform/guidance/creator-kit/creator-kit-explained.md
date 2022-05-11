@@ -29,7 +29,7 @@ We recommend following these steps before using the components to make getting s
 1. Learn how to add components to an app
 
 The Creator Kit is shipped with the following assets:
-- **PCF** and **Canvas** [components](creator-kit/components.md)
+- **PCF** and **Canvas** [components](components.md)
 - A **Reference App** to interactively learn
 - **Templates** to quickly start building apps
 - A **Theme Editor** generates Theme JSON, used to easily style consistent components
@@ -54,7 +54,7 @@ This app allows you to learn about each component, best practices recommended fo
 ### Templates
 The templates are designed to help quickly start creating a responsive Fluent UI based apps. They come with the custom components preloaded and attached to a Theme JSON variable, which reduces time to start developing.
 
-   ![Canvas Template App](media/template-app.png "Canvas Template App")
+   ![Canvas app and Custom Page Templates](media/template-app.png "Canvas Template App")
 
 #### Canvas Template app
 Make a copy of this app when creating a new [canvas app](https://docs.microsoft.com/power-apps/maker/canvas-apps/getting-started) that require the components in the kit.
@@ -80,15 +80,15 @@ Follow the same steps of how to make a copy of the Canvas Template app, except t
 
 1. In the top right corner, expand the menu next to the save icon, and select **Save as**
 
-   ![Canvas Template App](media/custom-page-save.png "Canvas Template App")
+   ![Custom Page studio](media/custom-page-save.png "Custom Page studio save as menu")
 
 1. Provide a new name, then click **Save**
 
-   ![Canvas Template App](media/custom-page-saveas.png "Canvas Template App")
+   ![Canvas Template App](media/custom-page-saveas.png "Custom Page studio rename dialog")
 
 1. Close the studio by selecting the back button in the top left corner. Notice the copy was created in the same solution.
  
-   ![Canvas Template App](media/custom-page-added.png "Canvas Template App")
+   ![Canvas Template App](media/custom-page-added.png "Custom Page in solution")
 
 1. Remove the original Custom Page Template from the solution.
 
@@ -102,7 +102,7 @@ Use this app to generate a Theme JSON object for styling components consistently
 1. Modify the Primary color, Text color, and Background color values
    ![Theme Editor App](media/theme-editor.png "Theme Editor App")
 1. Select the **Export theme** button in the top right corner of the app to generate the Power Fx expression version of the Theme JSON, then copy the value from the panel.
-    ![Theme Editor App](media/theme-editor-json.png "Theme Editor App")
+    ![Theme Editor App generated Theme JSON](media/theme-editor-json.png "Theme Editor App generated Theme JSON")
 1. Save the Theme JSON as a global variable in the OnStart property of your app, with the palette code block as a property of the `AppTheme` object variable.
     ```powerapps-dot
     Set( AppTheme, {

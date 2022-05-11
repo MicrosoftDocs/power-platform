@@ -1,7 +1,7 @@
 ---
 title: "Creator Kit - Overview | MicrosoftDocs"
 description: Overview of the Creator Kit
-author: mehdis-msft
+author: mehdis
 manager: devkeydet
 
 ms.component: pa-maker

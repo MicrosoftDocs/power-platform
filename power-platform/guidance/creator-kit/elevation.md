@@ -25,7 +25,7 @@ contributors:
 
 A control used to construct cards and flyouts.
 
-![Elevation](media/elevation.png "Elevation control")
+![Elevation control](media/elevation.png "Elevation control")
 
 ## Description
 
