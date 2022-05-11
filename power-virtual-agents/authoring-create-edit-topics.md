@@ -97,10 +97,6 @@ These automatically created topics fall into two categories:
 
    :::image type="content" source="media/authoring-create-edit-topics/handoff-add-node.png" alt-text="Screenshot of adding a node.":::
 
-1. To move or change the paths between a node, drag the node anchor. It looks like a small circle on top of the node. When you drag the node anchor, you'll see a dotted line indicating the original path. You can also double-click the anchor and then select the new place for the anchor (you won't see a dotted line).
-
-   :::image type="content" source="media/authoring-create-edit-topics/move-anchor-node.png" alt-text="Screenshot of moving a node's anchor.":::
-
 ### Insert nodes
 
 You have several options when you add a node. Each option has a specific node or nodes that will be inserted in the conversation path.
