@@ -47,5 +47,4 @@ Connect your [Azure Communication Service (ACS)](/azure/communication-services/)
 
 1. Once the connection is ready, [publish your bot](publication-fundamentals-publish-channels.md#publish-the-latest-bot-content) and test it by calling the number you selected.
 
-<!-- FIXME: links -->
-To further customize how your bot speaks, learn [how to use Speech Synthesis Markup Language]() and [change your bot's voice font](advanced-speech-settings.md).
+To further customize how your bot speaks, learn [how to use Speech Synthesis Markup Language](advanced-custom-speech-ssml.md) and [change your bot's voice font](advanced-speech-settings.md).

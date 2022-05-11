@@ -50,8 +50,7 @@ Power Virtual Agents now has an app-level home page that is not specific to any 
 
 1. [Add an image card](advanced-cards.md#image-card) and provide an image of the restaurant. Providing an image helps the user visually confirm that they're booking at the correct location.
 
-    <!-- FIXME: link doc once written -->
-1. Add a second **Message** node and change the mode to **Speech** to enable the use of [SSML tags]().
+1. Add a second **Message** node and change the mode to **Speech** to enable the use of [SSML tags](advanced-custom-speech-ssml.md).
 
     :::image type="content" source="media/build-2022-quickstart/message-speech-mode.png" alt-text="Screenshot of speech mode toggle.":::
 

@@ -19,11 +19,11 @@ This year at Microsoft Build 2022, we are excited to announce the evolution of P
 Power Virtual Agent's new intelligent bot authoring experience unifies the sophistication of Azure Bot Framework Composer's pro-code capabilities with the simplicity of Power Virtual Agent's low-code platform, making it even easier for professional developers and subject matter experts to build collaboratively in one Microsoft bot building studio.
 
 This evolution brings new features including:
-<!-- FIXME: merge PRs and link relevant docs -->
+
 - [Enhanced variable management](authoring-variables.md)
 - [Power FX support](advanced-power-fx.md)
 - [Multimedia cards​](advanced-cards.md)
-- [Speech authoring]()
+- [Speech authoring](advanced-custom-speech-ssml.md)
 - [Voice font selection](advanced-speech-settings.md)
 - [Telephony channel](publication-connect-bot-to-telephony.md)
 - [Bot response variations](authoring-create-edit-topics.md#message-variations)
