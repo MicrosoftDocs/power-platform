@@ -38,8 +38,6 @@
       href: advanced-flow.md
     - name: Add multimedia cards to messages
       href: advanced-cards.md
-    - name: Select voice font settings for speech
-      href: advanced-speech-settings.md
     - name: Customize speech responses with SSML
       href: advanced-custom-speech-ssml.md
 - name: Publish and integrate
