@@ -5,9 +5,9 @@ description: Server-side synchronization provides direct apps-to-email server sy
 ms.component: pa-admin
 ms.topic: overview
 ms.date: 05/25/2021
-author: revachauhan
+author: mduelae
 ms.subservice: admin
-ms.author: rechauha
+ms.author: mkaur
 ms.reviewer: mkaur
 search.audienceType: 
   - admin

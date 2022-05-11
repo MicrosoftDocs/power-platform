@@ -6,9 +6,9 @@ ms.service: power-platform
 ms.topic: conceptual
 ms.custom: 
   - "admin-security"
-author: RajSesMicrosoft
+author: lancedMicrosoft
 ms.subservice: admin
-ms.author: rajses
+ms.author: lanced
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
