@@ -52,7 +52,7 @@ This app allows you to learn about each component, best practices recommended fo
  ![The Creator Kit](media/ReferenceApp.png "The Creator Kit")
 
 ### Templates
-The templates are designed to help quickly start creating a responsive Fluent UI based apps. They come with the custom components preloaded and attached to a Theme JSON variable, which reduces time to start developing.
+The templates are designed to help quickly start creating responsive Fluent UI based apps. They come with the custom components preloaded and attached to a Theme JSON variable, which reduces time to start developing.
 
    ![Canvas app and Custom Page Templates](media/template-app.png "Canvas Template App")
 
@@ -150,14 +150,14 @@ These components are defined in the component library called "Power CAT Componen
 ### Code Components
 Implemented with [Power Apps component framework (PCF)](https://docs.microsoft.com/power-apps/developer/component-framework/custom-controls-overview), which are defined as individual custom controls in the solution.
 
-View the code components in the [components refernce page](components.md).
+View the code components in the [components reference page](components.md).
 
    ![Code Components](media/pcfcomponents.png "Code Components")
 
 ## Deploying apps with Creator Kit components
-Avoid solution dependency issues when deploying an app by:
-- Building apps that use Creator Kit components in a seperate, unmanaged solution.
-- Ensuring target Environment already contain the Creator Kit managed solution, or include the specific components used in the app, in the solution
+Avoid solution dependency issues when deploying an app by configuring solutions properly. Apps that use kit components cannot be built outside of a solution and require solutions for importing and exporting.
+- Build apps that use Creator Kit components in their own separate, unmanaged solution during development.
+- When deploying an app with the components, make sure the Creator Kit (managed solution) is already installed in the target Environment, or explicitly include the components used in the app in the solution.
 
 See [solution import troubleshooting tips](https://docs.microsoft.com/troubleshoot/dynamics-365/sales/troubleshoot-solution-import-errors-in-dynamics-365) for more general guidance.
 
