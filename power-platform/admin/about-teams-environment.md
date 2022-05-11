@@ -2,10 +2,9 @@
 title: "About the Microsoft Dataverse for Teams environment | MicrosoftDocs"
 description: Administer and manage Microsoft Dataverse for Teams environment
 author: jimholtz
-
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/01/2022
+ms.date: 05/11/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -62,7 +61,7 @@ This section provides a summary of key lifecycle operations that will be allowed
 |Create     | Only through Microsoft Teams. Note: these Dataverse for Teams environments will be limited to a 1:1 mapping to the Microsoft Teams team it was created in and bound to the Microsoft 365 group associated with the team.        | No        |
 |Delete     | The environment can be deleted by the team owner. Note: the environment will be deleted automatically if the team it was created in is also deleted.| Yes  |
 |Reset     | Not available by default for Dataverse for Teams environments.        | No        |
-|Upgrade     | Unlocks all the functionality of Dataverse services for the environment.         | No        | 
+|Upgrade     | Unlocks all the functionality of Dataverse services for the environment.         | Yes        | 
 
 The lifetime of the environment will be tied to the team it was created in. If you upgrade an environment to Dataverse, the 1:1 mapping isn't guaranteed because the environment can now be used by applications outside of Microsoft Teams. The upgraded environment is bound by the lifecycle rules associated with the Power Apps license and the configuration of the environment.
 
