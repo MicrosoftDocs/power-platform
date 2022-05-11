@@ -48,3 +48,17 @@ Connect your [Azure Communication Service (ACS)](/azure/communication-services/)
 1. Once the connection is ready, [publish your bot](publication-fundamentals-publish-channels.md#publish-the-latest-bot-content) and test it by calling the number you selected.
 
 To further customize how your bot speaks, learn [how to use Speech Synthesis Markup Language](advanced-custom-speech-ssml.md) and [change your bot's voice font](advanced-speech-settings.md).
+
+## Disconnect your bot from Telephony
+
+Only one bot can be connected to a phone number. If you want to connect a different bot, you'll first need to disconnect the old bot.
+
+1. In the side navigation under **Settings**, select **Channels**.
+
+1. Select the **Telephony (Preview)** tile.
+
+    :::image type="content" source="media/publication-connect-bot-to-telephony/telephony-tile.png" alt-text="Screenshot of Telephony tile in channel list.":::
+
+1. Select **Disconnect**.
+
+    :::image type="content" source="media/publication-connect-bot-to-telephony/disconnect-bot.png" alt-text="Screenshot of disconnect button.":::
