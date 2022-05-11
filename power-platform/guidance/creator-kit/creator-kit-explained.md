@@ -60,18 +60,36 @@ Make a copy of this app when creating a new [canvas app](https://docs.microsoft.
    ![Canvas Template App](media/template-app.png "Canvas Template App")
 
 How to make a copy of the Canvas Template:
-1. Navigate to the **Apps** screen in the [Maker Portal](https://make.powerapps.com) (in the same Environment where the Creator Kit is installed).
-1. Edit the Canvas Template
-1. Create a copy with **File** > **Save As** in the studio. Rename the copy to something memorable.
-1. Close the studio.
-1. In another unmanaged solution, select the **Add existing** > **Apps** > **Canvas** action in the command bar
-1. At this point the 
+1. Create a new unmanaged solution
+1. Select **Add existing** > **Apps** > **Canvas** action in the ribbon
+1. Select the **Canvas Template** app and then press **Add**. The 
+1. Edit the **Canvas Template**
+1. In the studio top ribbon, select **File** > **Save As** and provide a new name for the copy
+1. The copy will appear in the same solution
+1. Remove the original Canvas Template app from the solution
+
+Only edit the copy going forward so others can utilize the template app from the same starting point.
 
 #### Custom Page Template
 Make a copy of this page when creating a new custom page for a [converged app](https://docs.microsoft.com/en-us/power-apps/maker/model-driven-apps/model-app-page-overview).
 
+Follow the same steps of how to make a copy of the Canvas Template app, except the Save As action is in the top right corner of the canvas page studio:
+
+1. In the top right corner, expand the menu next to the save icon.
+
+   ![Canvas Template App](media/custom-page-save.png "Canvas Template App")
+
+1. Rename the page and save
+
+   ![Canvas Template App](media/custom-page-saveas.png "Canvas Template App")
+
+1. 
+ 
+   ![Canvas Template App](media/custom-page-added.png "Canvas Template App")
+
+
 ### Theme Editor App
-Use this app to generate the desired color palette used by the components.
+Use this app to generate a Theme JSON object that is referenced by the components for styling.
 
 1. Play the Theme Editor App
 1. Modify the Primary color, Text color, and Background color values

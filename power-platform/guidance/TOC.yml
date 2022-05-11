@@ -264,7 +264,7 @@
     items:
     - name: Overview
       href: creator-kit/overview.md
-    - name: Setup the Creator Kit
+    - name: Install the Creator Kit
       href: creator-kit/setup.md
     - name: How to use the Creator Kit
       href: creator-kit/creator-kit-explained.md
