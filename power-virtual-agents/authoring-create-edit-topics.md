@@ -2,7 +2,7 @@
 title: Use topics to design a chatbot conversation
 description: Use conversation topics in the Power Virtual Agents authoring canvas for an intuitive, no-code way to create a bot that can help answer user questions, perform actions, and solve issues.
 keywords: "PVA"
-ms.date: 04/01/2022
+ms.date: 05/09/2022
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -120,18 +120,14 @@ You have several options when you add a node. Each option has a specific node or
 
 When you add a node after the **Trigger Phrases** node or between **Message nodes**, you can:
 
-- Ask a question
-- Call an action
 - Send a message
-- Go to another topic
+- Ask a question
+- Add a condition
+- Set a variable value
+- Manage topics
+- Call an action
 
 :::image type="content" source="media/authoring-create-edit-topics/topics-node-after-triggers.png" alt-text="Screenshot of adding a node between existing nodes from the options.":::
-
-After the last node, you can also:
-
-- End the conversation
-
-Additionally, you can **Add a condition** when you insert a node after a **Question** node.
 
 #### Ask a question
 
@@ -151,18 +147,21 @@ Additionally, you can **Add a condition** when you insert a node after a **Quest
 
    For example, if you selected **Multiple choice options**, enter the choices the user can specify in **Options for user**. Each choice is presented to the user as a multiple choice button, but users can also type their answer.
 
-   The conversation editor creates separate paths in the conversation depending on the customer's response. The conversation path leads the customer to the appropriate resolution for each response. You can add nodes to create branching logic, and specify what the bot should respond with for each variable.
+1. In **Save response as**, select an existing variable or create a new one in which to save the user response.
 
-1. (Optional) [Save the user response in a variable](authoring-variables.md) to be used later.
+   - For **Save response as**, you can use an existing variable or create a new one.
+   - If you create a new variable, select the variable name to display the variable properties, where you can modify the variable's settings, including its name.
+
+     :::image type="content" source="media/authoring-create-edit-topics/question-variable-button.png" alt-text="Select variable name to display variable properties":::
+
+1. Optionally, open the properties pane for the question node to modify addition settings, such as maximum retry count and what to do if the user exceeds that count.
+
+Later, you can add a condition to create branching logic or add nodes to control how the bot responds based on each variable.
 
 > [!TIP]
 > Define synonyms for each option to help the bot determine the correct one if it isn't clear what the user's response should map to.
 >
-> 1. Select the menu icon at the top of the **Question** node, and then select **Options for user**.
->
->    :::image type="content" source="media/authoring-create-edit-topics/topics-question-options.png" alt-text="Screenshot of selecting options for users.":::
->
-> 1. Select the **Synonyms** icon for the option you want to add additional keywords to.
+> 1. Select the **Edit synonyms** icon for the option you want to add additional keywords to.
 >
 >    :::image type="content" source="media/authoring-create-edit-topics/topics-question-synonyms.png" alt-text="Screenshot highlighting the synonyms icon.":::
 >
@@ -186,60 +185,90 @@ If you've configured hand-off to omnichannel with voice-based capabilities, you'
 
 To enhance messages with rich multimedia cards, see [Add multimedia cards to messages](/advanced-cards.md).
 
-#### Redirect to another topic
+#### Go to another topic
 
-1. To have the bot move to a different topic, select **+** to add a node, and then select **Redirect to another topic**.
+1. To have the bot move to a different topic, select **+** to add a node, and then select **Topic Management**, then **Go to another topic**.
 
-1. Select the topic that the bot should divert to. For example, you might send the user to a topic about the closure of a store if they ask about the store's hours.
+    :::image type="content" source="media/authoring-create-edit-topics/topics-redirect-add-subtopic.png" alt-text="Screenshot showing redirection to another topic node with options for other topics.":::
 
-    :::image type="content" source="media/authoring-create-edit-topics/topics-nodes-other-topic-flyout.png" alt-text="Screenshot showing redirection to another topic node with options for other topics.":::
+1. Select an existing topic from the list, or **Create a topic**.
 
-You can consider the redirected topic as a "subtopic".
+    > [!TIP]
+    > Before creating a new topic, save your current topic first.
+    > Creating a new topic will open the new topic in the authoring canvas, and any unsaved edits you have in the current topic will be lost.
 
-In the authoring canvas for the original topic, you can insert additional nodes under the subtopic's node.
+    :::image type="content" source="media/authoring-create-edit-topics/topics-redirect-select-topic.png" alt-text="Screenshot of redirect topic list.":::
 
-When the path for the subtopic is finished, the bot will return to the original topic. The bot will then follow the nodes that are under the subtopic's node.
+1. If there are any [input](/authoring-variables.md#receive-values-from-other-topics) or [output](/authoring-variables.md#return-values-to-original-topics) variables in the next topic, enter or select a value for each one.
+
+1. Save your topic, then use the test bot pane to confirm that your bot successfully calls the next topic.
+
+In the authoring canvas for the original topic, you can insert additional nodes under the **Redirect** node.
+
+When the path for the topic chosen in the **Redirect** node is finished, the bot will return to the original topic. The bot will then follow the nodes that are under the **Redirect** node.
 
 :::image type="content" source="media/authoring-create-edit-topics/authoring-subtopic-redirect.png" alt-text="Screenshot of the authoring canvas showing nodes under a redirected topic node.":::
 
-If you redirect to any of the following [system topics](#use-system-and-sample-topics), however, the entire conversation will end:
+#### End the conversation or topic
 
-- End of Conversation
-- Confirmed Success
-- Confirmed Failure
-- Goodbye
-- Escalate
-- Start over (also resets any [global variables](authoring-variables-bot.md))
+If you redirect to any of the following [system topics](#use-system-and-sample-topics), the current conversation flow will end. Unless modified, these topics have the following behavior. To provide a consistent user experience at the end of a conversation, you can redirect to these topics or implement your own.
 
-#### End the conversation
+| Topic | Behavior |
+|:-|:-|
+| Confirmed Failure| The user can ask another question or request to talk to an agent, which redirects to the Escalate topic.|
+| Confirmed Success| The user is presented with a satisfaction survey, and then can ask another question or leave the conversation, which redirects to the Goodbye topic. The survey response is collected on the [customer satisfaction analytics page](analytics-csat.md). |
+| End of Conversation | The user is asked if their question was answered. Based on their response, the bot redirects to the Confirmed Success or the Confirmed Failure topic. |
+| Escalate | This topic is incomplete. You can [hand the conversation over to a live agent](advanced-hand-off.md) if you're using a suitable customer service portal, such as Omnichannel for Customer Service. |
+| Goodbye | Thanks the user and indicates to the user's client that the session is over. The behavior varies based on the client. On the telephony channel, for example, the client will hang up. |
+| Start over | Resets the conversation and resets [global variables](authoring-variables-bot.md) for the current session. |
 
-When the conversation ends, you can have a survey ask users if their question or issue was answered or resolved. The response is collected on the [customer satisfaction analytics page](analytics-csat.md).
+Use the following nodes to design conversation flow in your bots.
 
-You can also have the conversation [handed over to a live agent](advanced-hand-off.md) if you're using a suitable customer service portal, such as Omnichannel for Customer Service.
-
-1. At the end of a response that resolves the user's issue or answers the question, select **End the conversation**.
+1. Select **+** to add a node, and then select **Topic Management**, then one of the following:
 
     :::image type="content" source="media/authoring-create-edit-topics/topics-nodes-end.png" alt-text="Screenshot showing options for ending a conversation.":::
 
-    - To end with a customer satisfaction survey, select **End with survey**.
-
-    - To insert a hand-off node that will link with your [configured hand-off product](configuration-hand-off-omnichannel.md), select **Transfer To Agent**.
-
-        (Optional) Enter a private message to the agent.
-
-        :::image type="content" source="media/authoring-create-edit-topics/topics-nodes-handoff.png" alt-text="Transfer To Agent." border="false":::
+   - Select **End conversation** to notify the user's client that the session is over. The behavior varies based on the client. On the telephony channel, for example, the client ends the call.
+   - Select **End all topics** to clear all active topics and start the conversation from the beginning. However, this does not clear or reset any global variables. To clear global variables, redirect to the Start over system topic.
+   - Select **End current topic** to end the current topic and return to the calling topic, if any. You can use this node to create a one conversation branch that exits the topic while another branch continues.
+   - Select **Go to another topic** to _call_ or redirect to another topic. When that topic ends, control returns to calling topic.
 
 #### Add a condition
 
-1. To add branching logic based on [variables](authoring-variables.md), select **+** to add a node, select **Add a condition**, and then select **Branch based on a condition**.
+1. To add branching logic based on [variables](authoring-variables.md), select **+** to add a node, then select **Add a condition**.
 
-1. Select the variable that will determine whether the bot conversation should branch at this point.
+1. In the first condition node, select the variable and condition that will determine how the bot conversation should branch at this point.
 
-    For example, if you've set up [user authentication](advanced-end-user-authentication.md), you might specify a different message if the user is signed in (which may have happened earlier in the conversation).
+    - For example, if you've set up [user authentication](advanced-end-user-authentication.md), you might specify a different message if the user is signed in (which may have happened earlier in the conversation).
+    - You can create a condition using the basic editor or you can switch to a the Power Fx formula editor and manually enter an expression.
+    - To switch from the formula editor back to the basic editor, reset the node; however, you will need to enter your condition again.
+    - Use the _node menu_ (&vellip;) to switch editing modes or reset the node.
+
+    :::image type="content" source="media/authoring-create-edit-topics/condition-switch-to-formula.png" alt-text="Switch to the Power Fx expression editor":::
+
+1. When working with a string variable in the basic condition editor, you can enter a string literal in the value field, such as `Contoso`. For other variable types, such as Boolean, use the Power Fx editor to compare the variable to a literal value, such as `true`.
+
+1. Use the **+** that precedes the condition, then **Add a condition** to add more branches.
+
+### Quick replies
+
+The **Message** and **Question** nodes allow you to add _quick replies_.
+To add a quick replies select **Add**, then **Quick reply**, and then provide information for each _quick reply_.
+
+- A quick reply generates a button the user can select.
+- You can select what type of action the button initiates, such as sending a message from the user's client, opening a URL, or calling a phone number.
+- The quick reply buttons are removed from the chat history when the bot or user sends another activity.
+
+:::image type="content" source="media/authoring-create-edit-topics/add-quick-reply.png" alt-text="Add quick replies to a question node" border="false":::
+
+A quick reply works like a suggestion that the user can use or ignore. To enforce a choice from a finite list, use a multiple choice question node.
+
+> [TIP]
+> Some user clients do not support quick replies, in which case the client may not render them. Some user clients have an upper limit on the number of quick replies that they allow.
 
 ### Message variations
 
-Some nodes allow you to add message variations. When you do this, the bot will respond randomly with one of the variations.
+The **Message** and **Question** nodes allow you to add message variations. When you do this, the bot will respond randomly with one of the variations.
 
 1. Select **Add** and then **Message variation**. This will add an additional text box for a message variation.
 
