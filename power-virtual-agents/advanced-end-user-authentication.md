@@ -22,7 +22,11 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](advanced-end-user-authentication.md)
 > - [Power Virtual Agents app in Microsoft Teams](teams/advanced-end-user-authentication-teams.md)
 
-You can enable user authentication directly within a Power Virtual Agents bot conversation. User authentication means you can get a user's basic properties such as name and ID in bot variables, but also prompt a user to sign in using an authentication node, retrieve a user token for that user, and then use that token to retrieve the user's information from a back-end system.
+You can enable user authentication directly within a Power Virtual Agents bot conversation. This lets you:
+- get a user's basic properties such as name and ID as variables
+- prompt a user to sign in using an authentication node
+- retrieve a user token for the user
+- use that token to retrieve the user's information from a back-end system
 
 You can also configure single sign-on (SSO) so your users don't need to sign in manually.
 

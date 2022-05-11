@@ -2,7 +2,7 @@
 title: Use topics to design a chatbot conversation
 description: Use conversation topics in the Power Virtual Agents authoring canvas for an intuitive, no-code way to create a bot that can help answer user questions, perform actions, and solve issues.
 keywords: "PVA"
-ms.date: 05/09/2022
+ms.date: 05/10/2022
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -265,6 +265,10 @@ A quick reply works like a suggestion that the user can use or ignore. To enforc
 
 > [TIP]
 > Some user clients do not support quick replies, in which case the client may not render them. Some user clients have an upper limit on the number of quick replies that they allow.
+
+#### Set a variable value
+
+See [Set variable value](authoring-variables.md#set-a-variable).
 
 ### Message variations
 
