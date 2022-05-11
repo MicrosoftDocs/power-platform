@@ -25,8 +25,8 @@ contributors:
 
 ## Get started
 Complete the following tasks before using the components to make getting started easier:
-1. Use the [Reference App](#Reference-App) to learn component behavior and implementation patterns
-1. Learn [how to add components to an app](#How-to-add-components-to-an-app)
+1. Use the Reference App to learn component behavior and implementation patterns
+1. Learn how to add components to an app
 
 The Creator Kit is shipped with the following assets:
 - **PCF** and **Canvas** [components](creator-kit/components.md)
@@ -54,10 +54,11 @@ This app allows you to learn about each component, best practices recommended fo
 ### Templates
 The templates are designed to help quickly start creating a responsive Fluent UI based apps. They come with the custom components preloaded and attached to a Theme JSON variable to reduce the time it takes to start developing.
 
+   ![Canvas Template App](media/template-app.png "Canvas Template App")
+
 #### Canvas Template app
 Make a copy of this app when creating a new [canvas app](https://docs.microsoft.com/en-us/power-apps/maker/canvas-apps/getting-started) for a project or proof-of-concept that require the components in the kit.
 
-   ![Canvas Template App](media/template-app.png "Canvas Template App")
 
 How to make a copy of the Canvas Template:
 1. Create a new unmanaged solution
@@ -75,21 +76,21 @@ Make a copy of this page when creating a new custom page for a [converged app](h
 
    ![Custom Page Template](media/custom-page-studio.png "Custom Page Template")
 
-Follow the same steps of how to make a copy of the Canvas Template app, except the Save As action is in the top right corner of the canvas page studio:
+Follow the same steps of how to make a copy of the Canvas Template app, except the Save As action is in the top right corner of the studio for pages:
 
 1. In the top right corner, expand the menu next to the save icon.
 
    ![Canvas Template App](media/custom-page-save.png "Canvas Template App")
 
-1. Rename the page and save
+1. Rename the page and select Save
 
    ![Canvas Template App](media/custom-page-saveas.png "Canvas Template App")
 
-1. Close the studio by pressing the back button, and notice the copy was created in the same solution.
+1. Close the studio by selecting the back button. Notice the copy was created in the same solution.
  
    ![Canvas Template App](media/custom-page-added.png "Canvas Template App")
 
-1. Remove the original Custom Page Template from the solution and keep the copy to avoid accidentially modification for others to use.
+1. Remove the original Custom Page Template from the solution.
 
 ### Theme Editor App
 Use this app to generate a Theme JSON object for styling components consistently.
