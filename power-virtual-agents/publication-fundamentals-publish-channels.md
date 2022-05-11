@@ -24,10 +24,6 @@ Each time you want to update your bot, you publish it again from within the Powe
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mGa9]
 >
 
-## Prerequisites
-
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
-
 ## Publish the latest bot content
 
 You need to publish the bot at least once before your customers can interact with it or before you can share it with your teammates. After the first publish, you can publish the bot again whenever you'd like your customers to engage with the latest bot content.

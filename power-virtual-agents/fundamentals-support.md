@@ -28,10 +28,6 @@ Check community forums to see if other users have posted a solution that might h
 
     Do you have a great idea that will make Power Virtual Agents even better? We'd love to hear from you!
 
-## Prerequisites
-
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
-
 ## Microsoft support
 
 If you're an administrator of your Power Virtual Agents tenant, you can use the Microsoft Power Platform admin center to request support from Microsoft.

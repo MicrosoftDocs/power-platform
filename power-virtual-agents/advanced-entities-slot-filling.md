@@ -22,10 +22,6 @@ One fundamental aspect of natural language understanding is to identify *entitie
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mTUN]
 >
 
-## Prerequisites
-
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
-
 ## Prebuilt entities
 
 Out of the box, Power Virtual Agents comes with a set of prebuilt entities, which represent the most commonly used stereotype information in real-world dialogs, such as age, colors, numbers, and names.

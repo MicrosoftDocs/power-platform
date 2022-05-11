@@ -28,10 +28,6 @@ You can also combine the customized canvas with configuring your bot to automati
 
 Lastly, you can [change the name and bot icon](#change-the-bot-name-and-icon) (when the bot is shared in Microsoft Teams) directly from the portal.
 
-## Prerequisites
-
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
-
 > [!IMPORTANT]
 > You may install and use the sample code included in this documentation only for use with the Microsoft Power Virtual Agents product. The sample code is licensed "as is" and is excluded from any service level agreements or support services. You bear the risk of using it.  
 >

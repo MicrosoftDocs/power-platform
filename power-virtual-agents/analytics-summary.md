@@ -37,10 +37,6 @@ The Engagement Rate Drivers, Abandon Rate Drivers, and Resolution Rate Drivers c
 
 By default, the page shows you key performance indicators for the last seven days. To change the time period to the last 30 days, select **Last 30 days** from the drop-down list at the top of the page.
 
-## Prerequisites
-
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
-
 ## Summary charts
 
 :::image type="content" source="media/analytics-summary/summary-charts.png" alt-text="Summary charts." border="false":::

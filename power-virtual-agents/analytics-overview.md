@@ -25,10 +25,6 @@ Multiple charts show you trends and usage for your bot's topics. These charts us
 > [!NOTE]
 > Bot analytics in Power Virtual Agents US Government Cloud plans will be released at a later date. You can use a [custom analytics solution to create a custom Power BI dashboard](https://powervirtualagents.microsoft.com/blog/custom-analytics-solution-for-power-virtual-agents/) to get bot analytics for these plans.
 
-## Prerequisites
-
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
-
 ## Analytics in Power Virtual Agents
 
 The analytics section is divided into a number of pages to give you multiple ways to understand bot performance.

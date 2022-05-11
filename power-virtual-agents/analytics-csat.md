@@ -30,10 +30,6 @@ The Customer satisfaction drivers chart shows you the topics that are having the
 
 By default, the page shows you key performance indicators for the last seven days. To change the time period to the last 30 days, select **Last 30 days** from the drop-down list at the top of the page.
 
-## Prerequisites
-
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
-
 ## Customer satisfaction drivers chart
 
 The Customer satisfaction drivers chart uses AI to group related support cases as topics. This chart then displays topics in order of their impact on customer satisfaction over the specified time period.

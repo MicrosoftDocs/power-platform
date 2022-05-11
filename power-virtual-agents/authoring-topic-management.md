@@ -23,10 +23,6 @@ There are a number of ways you can manage your topics. Power Virtual Agents incl
   - [Topic status](#topic-status)
   - [Copying a topic](#copying-a-topic)
 
-## Prerequisites
-
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
-
 ## Topic errors
 
 When you save a topic, you'll be notified if there are errors or warnings. Warnings won't stop the bot from working, but they may cause individual topics to not work as expected, so you should fix them when you see them.

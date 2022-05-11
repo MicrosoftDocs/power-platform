@@ -21,7 +21,6 @@ There are several types of cards that provide different experiences to users. Al
 
 ## Prerequisites
 
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 - [Create and edit topics](authoring-create-edit-topics.md)
 - [Use variables](authoring-variables.md)
 

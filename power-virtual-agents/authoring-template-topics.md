@@ -16,10 +16,6 @@ ms.collection: virtual-agent
 
 Power Virtual Agents includes a set of three samples from which you can see examples of topics. These samples range from simple to complex scenarios that use [conditional branching](authoring-create-edit-topics.md) and [custom entities](advanced-entities-slot-filling.md).
 
-## Prerequisites
-
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
-
 ## Access and use sample topics for new bots
 
 When a bot is created, several samples are automatically created as topics.

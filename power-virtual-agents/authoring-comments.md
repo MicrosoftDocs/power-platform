@@ -31,10 +31,6 @@ Comment threads are created when someone replies to an existing comment. Using t
 
 :::image type="content" source="media/authoring-comments/authoring-comments-window.png" alt-text="Screenshot of the Comments pane.":::
 
-## Prerequisites
-
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
-
 ## Manage comments
 
 The **Comments** pane lets you create new comment threads, resolve or delete comment threads, and add or delete individual comments.
