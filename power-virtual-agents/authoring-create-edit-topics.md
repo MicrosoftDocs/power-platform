@@ -282,6 +282,98 @@ Select the menu icon at the top of the node's title, and then select **Delete**.
 
 :::image type="content" source="media/authoring-create-edit-topics/topics-delete.png" alt-text="Screenshot highlighting the node menu button and the Delete button.":::
 
+## Edit topics with the code editor
+
+The code editor shows the topic in [YAML](https://yaml.org/), a markup language which is easy to read and understand. Use the code editor to copy and paste topics from other bots, even ones created by other authors.
+
+> [!IMPORTANT]
+> Designing a topic entirely in the code editor is currently not fully supported.
+
+In this example you'll copy and paste YAML into the code editor to quickly add a topic that asks the user if they prefer cats or dogs.
+
+1. On the topic list, create a **New topic**.
+
+1. Select the three dots icon then select **Open code editor**
+
+    :::image type="content" source="media/authoring-create-edit-topics/code-editor-open.png" alt-text="Screenshot of how to open the code editor.":::
+
+1. Remove all of the existing YAML. Then copy and paste the following:
+
+    ```yaml
+    kind: AdaptiveDialog
+    id: FL9xjs
+    autoEndDialog: true
+    beginDialog:
+    kind: OnRecognizedIntent
+    actions:
+        - kind: Question
+        id: question_Pf6ZSq
+        disabled: false
+        allowInterruptions: true
+        property: Topic.chosenAnimal
+        prompt:
+            kind: Message
+            text:
+            - Do you like cats or dogs?
+
+        maxTurnCount: 3
+        entity:
+            kind: EmbeddedEntity
+            definition:
+            kind: ClosedListEntity
+            items:
+                - id: pD60EN
+                displayName: Cats
+
+                - id: aZdKO5
+                displayName: Dogs
+
+        - kind: Condition
+        id: condition_65zClW
+        conditions:
+            - id: conditionItem_7mbFIC
+            condition: =Topic.chosenAnimal = 'cr08a_codeEditor050922.topic.Untitled.main.question_Pf6ZSq'.pD60EN
+            actions:
+                - kind: SendMessage
+                id: sendMessage_3IR6t8
+                disabled: false
+                message:
+                    text:
+                    - Meow!
+
+            - id: conditionItem_XN7izI
+            condition: =Topic.chosenAnimal = 'cr08a_codeEditor050922.topic.Untitled.main.question_Pf6ZSq'.aZdKO5
+            actions:
+                - kind: SendMessage
+                id: sendMessage_uVbAox
+                disabled: false
+                message:
+                    text:
+                    - Woof!
+
+    id: main
+    intent:
+        displayName: Animal
+
+    inputType: {}
+    outputType: {}
+    variables:
+    - name: chosenAnimal
+        scope: Dialog
+        isExternalInitializationAllowed: false
+        initializer:
+        kind: ActionInitializer
+        action:
+            triggerId: main
+            actionId: question_Pf6ZSq
+
+    disabled: false
+    ```
+
+1. Select the three dots icon then select **Close code editor**. On the authoring canvas you'll see the new conversation path generated from the YAML.
+
+    :::image type="content" source="media/authoring-create-edit-topics/code-editor-conversation.png" alt-text="Screenshot conversation created from YAML.":::
+
 ## Test and publish your bot
 
 [Test your bot](authoring-test-bot.md) when you make changes to your topics, to make sure that everything is working as expected.
