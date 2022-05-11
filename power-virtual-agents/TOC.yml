@@ -1,11 +1,9 @@
-- name: Build overview
+- name: Overview of technology preview
   href: build-2022-overview.md
 - name: Technology preview quickstart
   href: build-2022-quickstart.md
 - name: Limitations of technology preview
   href: build-2022-limitations.md
-- name: Community help and support
-  href: fundamentals-support.md
 - name: Author and edit
   items:
     - name: Key concepts - Authoring
@@ -72,3 +70,5 @@
   items:
     - name: Customize the look and feel of the bot
       href: customize-default-canvas.md
+    - name: Select voice font settings for speech
+      href: advanced-speech-settings.md

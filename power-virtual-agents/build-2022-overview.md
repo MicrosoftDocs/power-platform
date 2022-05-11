@@ -1,5 +1,5 @@
 ---
-title: "Technology preview for Build 2022"
+title: "Overview of technology preview"
 description: "Overview of new features and improvements in the technology preview."
 ms.date: 05/10/2022
 ms.topic: overview
@@ -24,8 +24,8 @@ This evolution brings new features including:
 - [Power FX support](advanced-power-fx.md)
 - [Multimedia cards​](advanced-cards.md)
 - [Speech authoring]()
-- [Voice font selection]()
-- [Telephony channel](publication-fundamentals-publish-channels.md)
+- [Voice font selection](advanced-speech-settings.md)
+- [Telephony channel](publication-connect-bot-to-telephony.md)
 - [Bot response variations](authoring-create-edit-topics.md#message-variations)
 - [Quick replies](authoring-create-edit-topics.md#quick-replies)
 - [YAML code editor](authoring-create-edit-topics.md#edit-topics-with-the-code-editor)
