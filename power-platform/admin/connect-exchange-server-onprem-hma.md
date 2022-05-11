@@ -5,8 +5,8 @@ description: Learn about connecting mailboxes hosted on Exchange on-premises Hyb
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/30/2021
-author: revachauhan
-ms.author: rechauha
+author: mduelae
+ms.author: mkaur
 ms.reviewer: mkaur
 search.audienceType: 
   - admin
