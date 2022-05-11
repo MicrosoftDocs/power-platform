@@ -32,6 +32,8 @@ Pickers are used to select one or more items, such as tags or files, from a 
 
 The Picker code component allows using of the [Fluent UI Picker menu component](https://developer.microsoft.com/fluentui#/controls/web/Pickers) from inside canvas apps and custom pages.
 
+[View component in the Creator Kit GitHub repository](https://github.com/microsoft/powercat-creator-kit/tree/main/CreatorKitCore/SolutionPackage/Controls/cat_PowerCAT.Picker)
+
 The Tag Picker code component provides the following features:
 
 1. Binds to an input collection for the chosen tags

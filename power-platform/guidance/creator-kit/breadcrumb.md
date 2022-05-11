@@ -28,9 +28,11 @@ A control used to provide navigation.
 ![Breadcrumb](media/breadcrumb.png "Breadcrumb control")
 
 ## Description
-This code component provides a wrapper around the [Fluent UI Breadcrumb](https://developer.microsoft.com/fluentui#/controls/web/breadcrumb) control for use in canvas & custom pages.
-
 Breadcrumbs should be used as a navigational aid in your app or site. They indicate the current page's location within a hierarchy and help the user understand where they are in relation to the rest of that hierarchy. They also afford one-click access to higher levels of that hierarchy.
+
+This code component provides a wrapper around the [Fluent UI Breadcrumb](https://developer.microsoft.com/fluentui#/controls/web/breadcrumb) control for use in canvas & custom pages. 
+
+[View component in the GitHub repository](https://github.com/microsoft/powercat-creator-kit/tree/main/CreatorKitCore/SolutionPackage/Controls/cat_PowerCAT.Breadcrumb)
 
 ## Limitations
 This PCF component can only be used in Canvas apps and Custom Pages.

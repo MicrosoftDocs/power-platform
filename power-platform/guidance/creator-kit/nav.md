@@ -32,6 +32,8 @@ A navigation pane (Nav) provides links to the main areas of an app or site.
 
 The Nav code component allows using of the [Fluent UI Nav menu component](https://developer.microsoft.com/fluentui#/controls/web/nav) from inside canvas apps and custom pages.
 
+[View component in the Creator Kit GitHub repository](https://github.com/microsoft/powercat-creator-kit/tree/main/CreatorKitCore/SolutionPackage/Controls/cat_PowerCAT.Nav)
+
 ## Limitations
 This PCF component can only be used in Canvas apps and Custom Pages.
 
@@ -91,58 +93,6 @@ Table(
         ItemDisplayName: "Quick Reference Guide",
         ItemParentKey: "3",
         ItemIconName: "Document"
-    },
-    {
-        ItemKey: "6",
-        ItemDisplayName: "Folder 1",
-        ItemParentKey: "2",
-        isExpanded: false
-    },
-    {
-        ItemKey: "7",
-        ItemDisplayName: "Folder 2",
-        ItemParentKey: "6"
-    },
-    {
-        ItemKey: "8",
-        ItemDisplayName: "Folder 3",
-        ItemParentKey: "7"
-    },
-    {
-        ItemKey: "9",
-        ItemDisplayName: "Folder 4",
-        ItemParentKey: "8"
-    },
-    {
-        ItemKey: "10",
-        ItemDisplayName: "File 6",
-        ItemParentKey: "9",
-        ItemIconName: "DocumentSet",
-        ItemIconColor: "Purple"
-    },
-    {
-        ItemKey: "11",
-        ItemDisplayName: "Schedule Appointment",
-        ItemIconName: "Calendar",
-        ItemIconColor: "Blue"
-    },
-    {
-        ItemKey: "12",
-        ItemDisplayName: "Quick Action"
-    },
-    {
-        ItemKey: "13",
-        ItemDisplayName: "Set Reminder",
-        ItemParentKey: "12",
-        ItemIconName: "Clock",
-        ItemIconColor: "Brown"
-    },
-    {
-        ItemKey: "14",
-        ItemDisplayName: "To do list",
-        ItemParentKey: "12",
-        ItemIconName: "List",
-        ItemIconColor: "Orange"
     }
 )
   ```

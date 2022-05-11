@@ -32,6 +32,8 @@ A details list is a robust way to display an information-rich collection of item
 
 The DetailsList code component allows using of the [Fluent UI DetailsList component](https://developer.microsoft.com/fluentui#/controls/web/detailslist) from inside canvas apps and custom pages.
 
+[View component in the Creator Kit GitHub repository](https://github.com/microsoft/powercat-creator-kit/tree/main/CreatorKitCore/SolutionPackage/Controls/cat_PowerCAT.FluentDetailsList)
+
 ## Limitations
 This PCF component can only be used in Canvas apps and Custom Pages.
 

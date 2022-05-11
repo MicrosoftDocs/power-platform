@@ -28,13 +28,14 @@ A control used to display data.
 ![Auto width label](media/autowidthlabel.png "Auto width label control")
 
 ## Description
-This code component acts similar to the standard canvas app label, but will expand dynamically in width to accommodate the text. It will automatically expand width wise and return the new width. This functionality is currently not supported in canvas apps today.
+This code component acts similar to the standard canvas app label, but will expand dynamically in width to accommodate the text and return the new width. This functionality is currently not supported in canvas apps today.
+
+[View component in the GitHub repository](https://github.com/microsoft/powercat-creator-kit/tree/main/CreatorKitCore/SolutionPackage/Controls/cat_PowerCAT.AutoWidthLabel)
 
 ## Limitations
 This PCF component can only be used in Canvas apps and Custom Pages.
 
 ## Key properties
-
 | Property | Description |
 | -------- | ----------- |
 | Text | Data displayed in the label |

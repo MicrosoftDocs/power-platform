@@ -28,9 +28,12 @@ A control used to input commands.
 ![Context Menu](media/context-menu.png "Context Menu control")
 
 ## Description
-This code component provides a wrapper around the [Fluent UI Context Menu](https://developer.microsoft.com/fluentui#/controls/web/contextualmenu) control bound to a button for use in canvas & custom pages.
 
 ContextualMenus are lists of commands that are based on the context of selection, mouse hover or keyboard focus. They are one of the most effective and highly used command surfaces, and can be used in a variety of places.
+
+This code component provides a wrapper around the [Fluent UI Context Menu](https://developer.microsoft.com/fluentui#/controls/web/contextualmenu) control bound to a button for use in canvas & custom pages.
+
+[View component in the Creator Kit GitHub repository](https://github.com/microsoft/powercat-creator-kit/tree/main/CreatorKitCore/SolutionPackage/Controls/cat_PowerCAT.ContextMenu)
 
 ## Limitations
 This PCF component can only be used in Canvas apps and Custom Pages.

@@ -28,9 +28,11 @@ A control used to input commands.
 ![Command bar](media/command-bar.png "Command bar control")
 
 ## Description
+CommandBar is a surface that houses commands that operate on the content of the window, panel, or parent region it resides above.
+
 This code component provides a wrapper around the [Fluent UI Command Bar](https://developer.microsoft.com/fluentui#/controls/web/commandbar) control for use in canvas & custom pages.
 
-CommandBar is a surface that houses commands that operate on the content of the window, panel, or parent region it resides above.
+[View component in the Creator Kit GitHub repository](https://github.com/microsoft/powercat-creator-kit/tree/main/CreatorKitCore/SolutionPackage/Controls/cat_PowerCAT.CommandBar)
 
 ## Limitations
 This PCF component can only be used in Canvas apps and Custom Pages.

@@ -31,6 +31,8 @@ A control used to construct cards and flyouts.
 
 Fluent UI elevation support with mouse hover events.
 
+[View component in the Creator Kit GitHub repository](https://github.com/microsoft/powercat-creator-kit/tree/main/CreatorKitCore/SolutionPackage/Controls/cat_PowerCAT.Elevation)
+
 ## Limitations
 This PCF component can only be used in Canvas apps and Custom Pages.
 

@@ -28,6 +28,8 @@ A control used to capture and act on keyboard events.
 ## Description
 This code component registers Key Press event handlers to allow keyboard short cuts to be used inside canvas apps or custom pages. It is not intended for use in model-driven or portal apps.
 
+[View component in the Creator Kit GitHub repository](https://github.com/microsoft/powercat-creator-kit/tree/main/CreatorKitCore/SolutionPackage/Controls/cat_PowerCAT.KeyboardShortcuts)
+
 ## Limitations
 Some keyboard shortcuts are used by Power Apps when using maker studio, and some are used by the browser. For this reason, this component will not work for all keyboard shortcuts until the user places focus inside the app.
 
