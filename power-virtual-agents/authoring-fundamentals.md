@@ -14,13 +14,6 @@ ms.collection: virtual-agent
 
 # Key concepts - Authoring Power Virtual Agents bots
 
-Select the version of Power Virtual Agents you're using here:
-
-> [!div class="op_single_selector"]
->
-> - [Power Virtual Agents web app](authoring-fundamentals.md)
-> - [Power Virtual Agents app in Microsoft Teams](teams/authoring-fundamentals-teams.md)
-
 When you create bots with Power Virtual Agents, you author and edit topics.
 
 Topics are discrete conversation paths that, when used together within a single bot, allow for users to have a conversation with a bot that feels natural and flows appropriately.
@@ -29,9 +22,9 @@ Creating a bot with Power Virtual Agents is easy to do with the [no-code authori
 
 It's also easy to [test the bot](authoring-test-bot.md) without having to fully deploy the bot whenever you make a small change.
 
-There are also [lesson topics](authoring-template-topics.md) that guide you through topic authoring - from simple to complex scenarios, as well as default [system topics](authoring-create-edit-topics.md#use-system-and-sample-topics).
+There are also [sample topics](authoring-template-topics.md) that guide you through topic authoring - from simple to complex scenarios, as well as default [system topics](authoring-create-edit-topics.md#use-system-and-sample-topics).
 
-You can also [choose what language you want your bot to use](authoring-language-support.md).
+You can also choose what language you want your bot to use.
 
 ## Prerequisites
 
@@ -63,11 +56,11 @@ At any time, pressing these hotkeys on a route anchor will read out the properti
 | Topic                                                           | Description                                                                                                               |
 | --------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
 | [Create your first bot](authoring-first-bot.md)                 | Create your first bot in less than 30 minutes.                                                                            |
-| [Use lesson topics](authoring-template-topics.md)               | Use a series of prebuilt topics that guide you through authoring topics - from simple to advanced.                        |
+| [Use sample topics](authoring-template-topics.md)               | Use a series of prebuilt topics that guide you through authoring topics - from simple to advanced.                        |
 | [Create and edit topics](authoring-create-edit-topics.md)       | Create and edit topics using the no-code authoring canvas.                                                                |
 | [Use system fallback topic](authoring-system-fallback-topic.md) | Use a system fallback topic for when your bot can't find an answer.                                                       |
 | [Manage topics](authoring-topic-management.md)                  | Copy, edit, and manage which topics should be available in your bot.                                                      |
 | [Test your bot](authoring-test-bot.md)                          | Test your bot directly within the Power Virtual Agents portal without needing to deploy or publish it.                    |
-| [Supported languages](authoring-language-support.md)            | Choose from a number of languages when you create your bot, with user interface, system, and template topic localization. |
+| Supported languages            | Choose from a number of languages when you create your bot, with user interface, system, and template topic localization. |
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

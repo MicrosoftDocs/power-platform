@@ -2,7 +2,7 @@
 title: Use topics to design a chatbot conversation
 description: Use conversation topics in the Power Virtual Agents authoring canvas for an intuitive, no-code way to create a bot that can help answer user questions, perform actions, and solve issues.
 keywords: "PVA"
-ms.date: 05/09/2022
+ms.date: 05/10/2022
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -17,16 +17,9 @@ searchScope:
 
 # Create and edit topics in your Power Virtual Agents bot
 
-Select the version of Power Virtual Agents you're using here:
-
-> [!div class="op_single_selector"]
->
-> - [Power Virtual Agents web app](authoring-create-edit-topics.md)
-> - [Power Virtual Agents app in Microsoft Teams](teams/authoring-create-edit-topics-teams.md)
-
 In Power Virtual Agents, a topic defines a how a bot conversation plays out.
 
-To author topics, you can [customize provided templates](authoring-template-topics.md), create topics from scratch, or [get suggestions from existing help sites](advanced-create-topics-from-web.md).
+To author topics, you can [customize provided templates](authoring-template-topics.md), create topics from scratch, or get suggestions from existing help sites.
 
 A topic has _trigger phrases_ and _conversation nodes_. Trigger phrases are phrases, keywords, and questions that a user is likely to type that are related to a specific issue. Conversation nodes define how a bot should respond to a trigger phrase and what it should do.
 
@@ -46,13 +39,13 @@ For bot and topic limits, see [Quotas, limits, and configuration values](require
 
 When you create a bot, several topics are created for you.
 
-:::image type="content" source="media/authoring-create-edit-topics/topics-system.png" alt-text="Screenshot of the Topics list showing lesson topics and system topics.":::
+:::image type="content" source="media/authoring-template-topics/template-list.png" alt-text="Screenshot of the Topics list showing sample topics and system topics.":::
 
 These automatically created topics fall into two categories:
   
-- [Lesson topics](authoring-template-topics.md) help you understand simple to complex ways to use nodes to create bot conversations.
+- [Sample topics](authoring-template-topics.md) help you understand simple to complex ways to use nodes to create bot conversations.
 
-    You can edit lesson topics or delete them entirely.
+    You can edit sample topics or delete them entirely.
 
 - System topics are topics you're likely to need during a bot conversation.
 
@@ -169,9 +162,9 @@ Later, you can add a condition to create branching logic or add nodes to control
 
 #### Call an action
 
-To [call Power Automate Flows](advanced-flow.md) and [insert authentication nodes](advanced-end-user-authentication.md), select **Call an action**.
+To [call Power Automate Flows](advanced-flow.md) and insert authentication nodes, select **Call an action**.
 
-If you've configured hand-off to omnichannel with voice-based capabilities, you'll see [more actions](configuration-hand-off-omnichannel.md#voice-based-capabilities).
+If you've configured hand-off to omnichannel with voice-based capabilities, you'll see more actions.
 
 #### Send a message
 
@@ -182,6 +175,8 @@ If you've configured hand-off to omnichannel with voice-based capabilities, you'
     You can apply some basic formatting, such as bold, italics, and numbering. You can also [use variables](authoring-variables.md) that you defined elsewhere in your bot conversation.
 
 1. Optionally, you can add [message variations](#message-variations).
+
+To enhance messages with rich multimedia cards, see [Add multimedia cards to messages](/advanced-cards.md).
 
 #### Go to another topic
 
@@ -216,7 +211,7 @@ If you redirect to any of the following [system topics](#use-system-and-sample-t
 | Confirmed Failure| The user can ask another question or request to talk to an agent, which redirects to the Escalate topic.|
 | Confirmed Success| The user is presented with a satisfaction survey, and then can ask another question or leave the conversation, which redirects to the Goodbye topic. The survey response is collected on the [customer satisfaction analytics page](analytics-csat.md). |
 | End of Conversation | The user is asked if their question was answered. Based on their response, the bot redirects to the Confirmed Success or the Confirmed Failure topic. |
-| Escalate | This topic is incomplete. You can [hand the conversation over to a live agent](advanced-hand-off.md) if you're using a suitable customer service portal, such as Omnichannel for Customer Service. |
+| Escalate | This topic is incomplete. You can hand the conversation over to a live agent if you're using a suitable customer service portal, such as Omnichannel for Customer Service. |
 | Goodbye | Thanks the user and indicates to the user's client that the session is over. The behavior varies based on the client. On the telephony channel, for example, the client will hang up. |
 | Start over | Resets the conversation and resets [global variables](authoring-variables-bot.md) for the current session. |
 
@@ -237,7 +232,7 @@ Use the following nodes to design conversation flow in your bots.
 
 1. In the first condition node, select the variable and condition that will determine how the bot conversation should branch at this point.
 
-    - For example, if you've set up [user authentication](advanced-end-user-authentication.md), you might specify a different message if the user is signed in (which may have happened earlier in the conversation).
+    - For example, if you've set up user authentication, you might specify a different message if the user is signed in (which may have happened earlier in the conversation).
     - You can create a condition using the basic editor or you can switch to a the Power Fx formula editor and manually enter an expression.
     - To switch from the formula editor back to the basic editor, reset the node; however, you will need to enter your condition again.
     - Use the _node menu_ (&vellip;) to switch editing modes or reset the node.
@@ -264,6 +259,10 @@ A quick reply works like a suggestion that the user can use or ignore. To enforc
 > [TIP]
 > Some user clients do not support quick replies, in which case the client may not render them. Some user clients have an upper limit on the number of quick replies that they allow.
 
+#### Set a variable value
+
+See [Set variable value](authoring-variables.md#set-a-variable).
+
 ### Message variations
 
 The **Message** and **Question** nodes allow you to add message variations. When you do this, the bot will respond randomly with one of the variations.
@@ -281,6 +280,98 @@ The **Message** and **Question** nodes allow you to add message variations. When
 Select the menu icon at the top of the node's title, and then select **Delete**.
 
 :::image type="content" source="media/authoring-create-edit-topics/topics-delete.png" alt-text="Screenshot highlighting the node menu button and the Delete button.":::
+
+## Edit topics with the code editor
+
+The code editor shows the topic in [YAML](https://yaml.org/), a markup language which is easy to read and understand. Use the code editor to copy and paste topics from other bots, even ones created by other authors.
+
+> [!IMPORTANT]
+> Designing a topic entirely in the code editor is currently not fully supported.
+
+In this example you'll copy and paste YAML into the code editor to quickly add a topic that asks the user if they prefer cats or dogs.
+
+1. On the topic list, create a **New topic**.
+
+1. Select the three dots icon then select **Open code editor**
+
+    :::image type="content" source="media/authoring-create-edit-topics/code-editor-open.png" alt-text="Screenshot of how to open the code editor.":::
+
+1. Remove all of the existing YAML. Then copy and paste the following:
+
+    ```yaml
+    kind: AdaptiveDialog
+    id: FL9xjs
+    autoEndDialog: true
+    beginDialog:
+    kind: OnRecognizedIntent
+    actions:
+        - kind: Question
+        id: question_Pf6ZSq
+        disabled: false
+        allowInterruptions: true
+        property: Topic.chosenAnimal
+        prompt:
+            kind: Message
+            text:
+            - Do you like cats or dogs?
+
+        maxTurnCount: 3
+        entity:
+            kind: EmbeddedEntity
+            definition:
+            kind: ClosedListEntity
+            items:
+                - id: pD60EN
+                displayName: Cats
+
+                - id: aZdKO5
+                displayName: Dogs
+
+        - kind: Condition
+        id: condition_65zClW
+        conditions:
+            - id: conditionItem_7mbFIC
+            condition: =Topic.chosenAnimal = 'cr08a_codeEditor050922.topic.Untitled.main.question_Pf6ZSq'.pD60EN
+            actions:
+                - kind: SendMessage
+                id: sendMessage_3IR6t8
+                disabled: false
+                message:
+                    text:
+                    - Meow!
+
+            - id: conditionItem_XN7izI
+            condition: =Topic.chosenAnimal = 'cr08a_codeEditor050922.topic.Untitled.main.question_Pf6ZSq'.aZdKO5
+            actions:
+                - kind: SendMessage
+                id: sendMessage_uVbAox
+                disabled: false
+                message:
+                    text:
+                    - Woof!
+
+    id: main
+    intent:
+        displayName: Animal
+
+    inputType: {}
+    outputType: {}
+    variables:
+    - name: chosenAnimal
+        scope: Dialog
+        isExternalInitializationAllowed: false
+        initializer:
+        kind: ActionInitializer
+        action:
+            triggerId: main
+            actionId: question_Pf6ZSq
+
+    disabled: false
+    ```
+
+1. Select the three dots icon then select **Close code editor**. On the authoring canvas you'll see the new conversation path generated from the YAML.
+
+    :::image type="content" source="media/authoring-create-edit-topics/code-editor-conversation.png" alt-text="Screenshot conversation created from YAML.":::
 
 ## Test and publish your bot
 

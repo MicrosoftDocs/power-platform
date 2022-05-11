@@ -14,13 +14,6 @@ ms.collection: virtual-agent
 
 # Analysis in Power Virtual Agents
 
-Select the version of Power Virtual Agents you're using here:
-
-> [!div class="op_single_selector"]
->
-> - [Power Virtual Agents web app](analytics-overview.md)
-> - [Power Virtual Agents app in Microsoft Teams](teams/analytics-overview-teams.md)
-
 Power Virtual Agents has a comprehensive set of analytics that show you the key performance indicators for your bot.
 
 Multiple charts show you trends and usage for your bot's topics. These charts use AI to highlight the topics that have the greatest impact on your bot's performance.

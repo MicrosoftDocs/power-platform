@@ -1,271 +1,70 @@
-- name: Power Virtual Agents introduction
-  href: fundamentals-what-is-power-virtual-agents.md
-- name: Licensing for Power Virtual Agents
-  href: requirements-licensing-subscriptions.md
-- name: Power Virtual Agents compliance offerings
-  href: admin-certification.md
-- name: Quotas, limits, and configuration values
-  href: requirements-quotas.md
+- name: Build overview
+  href: build-2022-overview.md
+- name: Technology preview quickstart
+  href: build-2022-quickstart.md
+- name: Limitations of technology preview
+  href: build-2022-limitations.md
 - name: Community help and support
   href: fundamentals-support.md
-- name: Power Virtual Agents web app
+- name: Author and edit
   items:
-    - name: Overview
-      items:
-       - name: Power Virtual Agents online overview
-         href: fundamentals-what-is-power-virtual-agents-portal.md
-       - name: Use pre-built chatbot templates
-         href: fundamentals-templates.md
-       - name: Quickstart - Create and deploy a chatbot
-         href: fundamentals-get-started.md
-    - name: Administer and manage
-      items:
-       - name: Assign licenses
-         href: requirements-licensing.md
-       - name: Power Virtual Agents for US Government customers
-         href: requirements-licensing-gcc.md
-       - name: Sign up for a trial account
-         href: sign-up-individual.md
-       - name: Working with environments
-         href: environments-first-run-experience.md
-       - name: Share bots with users in your organization
-         href: admin-share-bots.md
-       - name: Export and import bots using solutions
-         href: authoring-export-import-bots.md
-       - name: Regional settings and data locations for organizations
-         href: data-location.md
-    - name: Author and edit
-      items:
-       - name: Key concepts - Authoring
-         href: authoring-fundamentals.md
-       - name: Create and delete bots
-         href: authoring-first-bot.md
-       - name: Use lesson topics
-         href: authoring-template-topics.md
-       - name: Create and edit topics
-         href: authoring-create-edit-topics.md
-       - name: Use system fallback topic
-         href: authoring-system-fallback-topic.md
-       - name: Manage topics
-         href: authoring-topic-management.md
-       - name: Add comments to bots
-         href: authoring-comments.md
-       - name: Test your bot
-         href: authoring-test-bot.md
-       - name: Supported languages
-         href: authoring-language-support.md
-       - name: Troubleshoot error codes
-         href: error-codes.md
-    - name: Enhance and improve
-      items:
-       - name: Key concepts - Enhanced authoring
-         href: advanced-fundamentals.md
-       - name: Enable advanced AI features
-         href: advanced-ai-features.md
-       - name: Use entities and slot filling
-         href: advanced-entities-slot-filling.md
-       - name: Use variables
-         href: authoring-variables.md
-       - name: Reuse variables across topics
-         href: authoring-variables-bot.md
-       - name: Use Power Fx formulas
-         href: advanced-power-fx.md
-       - name: Create topics from existing support content
-         href: advanced-create-topics-from-web.md
-       - name: Create topics from Customer Service Insights
-         href: advanced-create-topics-from-csi.md
-       - name: Add end-user authentication
-         href: advanced-end-user-authentication.md
-       - name: Add actions using Power Automate
-         href: advanced-flow.md
-       - name: Send proactive messages and cards in Microsoft Teams
-         href: advanced-proactive-message.md
-       - name: Trigger hand-off to a live agent
-         href: advanced-hand-off.md
-    - name: Publish and integrate
-      items:
-       - name: Key concepts - Publish your bot
-         href: publication-fundamentals-publish-channels.md
-       - name: Add bot to your live website
-         href: publication-connect-bot-to-web-channels.md
-       - name: Add bot to Power Apps portal
-         href: publication-add-bot-to-power-apps-portal.md
-       - name: Add bot to Microsoft Teams
-         href: publication-add-bot-to-microsoft-teams.md
-       - name: Add bot to Facebook
-         href: publication-add-bot-to-facebook.md
-       - name: Add bot to mobile or custom apps
-         href: publication-connect-bot-to-custom-application.md
-       - name: Add bot to Azure Bot Service channels
-         href: publication-connect-bot-to-azure-bot-service-channels.md
-       - name: Integrate with Bot Framework
-         items:
-          - name: Configure a skill for use in Power Virtual Agents
-            href: configuration-add-skills.md
-          - name: Use Bot Framework Skills
-            href: advanced-use-skills.md
-          - name: Use a Power Virtual Agents bot as a skill
-            href: advanced-use-pva-as-a-skill.md
-          - name: Use Bot Framework Composer
-            items:
-             - name: Extend your bot with Bot Framework Composer
-               href: advanced-bot-framework-composer.md
-             - name: Example 1 - Show an Adaptive Card in Power Virtual Agents
-               href: advanced-bot-framework-composer-example1.md
-             - name: Example 2 - Display a multi-select options list in Power Virtual Agents
-               href: advanced-bot-framework-composer-example2.md
-             - name: Example 3 - Use Bing Search as a fallback in Power Virtual Agents
-               href: advanced-bot-framework-composer-example3.md
-             - name: Example 4 - Display a form with a Submit button in Power Virtual Agents
-               href: advanced-bot-framework-composer-example4.md
-    - name: Monitor and diagnose
-      items:
-       - name: Key concepts - Analytics
-         href: analytics-overview.md
-       - name: Analyze bot performance and usage
-         href: analytics-summary.md
-       - name: Analyze customer satisfaction
-         href: analytics-csat.md
-       - name: Analyze session information
-         href: analytics-sessions.md
-       - name: Work with conversation transcripts
-         href: analytics-sessions-transcripts.md
-       - name: Analyze topic usage
-         href: analytics-topic-details.md
-       - name: Analyze billed session information
-         href: analytics-billed-sessions.md
-    - name: Configure and customize
-      items:
-       - name: Key concepts - Configuration
-         href: configuration-fundamentals.md
-       - name: Configure end-user authentication
-         href: configuration-end-user-authentication.md
-       - name: Configure web and Direct Line channel security
-         href: configure-web-security.md
-       - name: Configure single sign-on for Web
-         href: configure-sso.md
-       - name: Configure single sign-on for Teams
-         href: configure-sso-teams.md
-       - name: Configure hand-off to a generic engagement hub
-         href: configure-generic-handoff.md
-       - name: Configure voice and text hand off to Dynamics 365 Customer Service
-         href: configuration-hand-off-omnichannel.md
-       - name: Configure the bot to automatically start the conversation
-         href: configure-bot-greeting.md
-       - name: Customize the look and feel of the bot
-         href: customize-default-canvas.md
-    - name: Respond to GDPR Data Subject Rights (DSR) requests
-      items:
-       - name: Key concepts - GDPR compliance
-         href: gdpr-summary.md
-       - name: Requests to export and download data
-         href: gdpr-export.md
-       - name: Requests to delete data
-         href: gdpr-delete.md
-       - name: Requests to discover data
-         href: gdpr-discovery.md
-- name: Power Virtual Agents in Teams
+    - name: Key concepts - Authoring
+      href: authoring-fundamentals.md
+    - name: Create and delete bots
+      href: authoring-first-bot.md
+    - name: Use sample topics
+      href: authoring-template-topics.md
+    - name: Create and edit topics
+      href: authoring-create-edit-topics.md
+    - name: Use system fallback topic
+      href: authoring-system-fallback-topic.md
+    - name: Manage topics
+      href: authoring-topic-management.md
+    - name: Add comments to bots
+      href: authoring-comments.md
+    - name: Test your bot
+      href: authoring-test-bot.md
+    - name: Troubleshoot error codes
+      href: error-codes.md
+- name: Enhance and improve
   items:
-    - name: Overview
-      items:
-       - name: Power Virtual Agents in Teams overview
-         href: teams/fundamentals-what-is-power-virtual-agents-teams.md
-       - name: Use pre-built chatbot templates
-         href: teams/fundamentals-templates-teams.md
-       - name: Quickstart - Create and deploy a chatbot
-         href: teams/fundamentals-get-started-teams.md
-    - name: Administer and manage
-      items:
-       - name: Licensing for Virtual Power Agents in Teams
-         href: teams/requirements-licensing-teams.md
-       - name: Share bot with users in your organization
-         href: teams/admin-share-bots-teams.md
-       - name: Upgrade a Dataverse for Teams environment
-         href: teams/admin-upgrade-dataverse-teams.md
-       - name: Export and import chatbots made in Teams
-         href: teams/authoring-export-import-bots-teams.md
-       - name: Regional settings and data locations for organizations
-         href: teams/data-location-teams.md
-    - name: Author and edit
-      items:
-       - name: Key concepts - Authoring
-         href: teams/authoring-fundamentals-teams.md
-       - name: Create and delete bots
-         href: teams/authoring-first-bot-teams.md
-       - name: Use lesson topics
-         href: teams/authoring-template-topics-teams.md
-       - name: Create and edit topics
-         href: teams/authoring-create-edit-topics-teams.md
-       - name: Use system fallback topic
-         href: teams/authoring-system-fallback-topic-teams.md
-       - name: Manage topics
-         href: teams/authoring-topic-management-teams.md
-       - name: Test your bot
-         href: teams/authoring-test-bot-teams.md
-       - name: Supported languages
-         href: teams/authoring-language-support-teams.md
-       - name: Troubleshoot error codes
-         href: teams/error-codes-teams.md
-    - name: Enhance and improve
-      items:
-       - name: Key concepts - Enhanced authoring
-         href: teams/advanced-fundamentals-teams.md
-       - name: Enable advanced AI features
-         href: teams/advanced-ai-features-teams.md
-       - name: Use entities and slot filling
-         href: teams/advanced-entities-slot-filling-teams.md
-       - name: Use variables
-         href: teams/authoring-variables-teams.md
-       - name: Reuse variables across topics
-         href: teams/authoring-variables-bot-teams.md
-       - name: Create topics from existing support content
-         href: teams/advanced-create-topics-from-web-teams.md
-       - name: Add end-user authentication
-         href: teams/advanced-end-user-authentication-teams.md
-       - name: Add actions using Power Automate
-         href: teams/advanced-flow-teams.md
-       - name: Send proactive messages and cards
-         href: teams/advanced-proactive-message-teams.md
-       - name: Use Bot Framework Skills
-         href: teams/advanced-use-skills-teams.md
-    - name: Publish and integrate
-      items:
-       - name: Key concepts - Publish your bot
-         href: teams/publication-fundamentals-publish-channels-teams.md
-       - name: Add bot to Microsoft Teams
-         href: teams/publication-add-bot-to-microsoft-teams-teams.md
-       - name: Create a privacy statement and terms of use
-         href: teams/publication-terms-of-use-teams.md
-    - name: Monitor and diagnose
-      items:
-       - name: Key concepts - Analytics
-         href: teams/analytics-overview-teams.md
-       - name: Analyze bot performance and usage
-         href: teams/analytics-summary-teams.md
-       - name: Analyze customer satisfaction
-         href: teams/analytics-csat-teams.md
-       - name: Analyze session information
-         href: teams/analytics-sessions-teams.md
-       - name: Analyze topic usage
-         href: teams/analytics-topic-details-teams.md
-       - name: Analyze billed session information
-         href: teams/analytics-billed-sessions-teams.md
-    - name: Configure and customize
-      items:
-       - name: Key concepts - Configuration
-         href: teams/configuration-fundamentals-teams.md
-       - name: Configure web and Direct Line channel security
-         href: teams/configure-web-security-teams.md
-       - name: Configure end-user authentication
-         href: teams/configuration-end-user-authentication-teams.md
-       - name: Configure how the bot starts the conversation
-         href: teams/configure-bot-greeting-teams.md
-       - name: Customize the look and feel of the bot
-         href: teams/customize-default-canvas-teams.md
-       - name: Enable and configure Bot Framework Skills
-         href: teams/configuration-add-skills-teams.md
-    - name: GDPR compliance
-      href: teams/gdpr-summary-teams.md
-
-
-
+    - name: Use entities and slot filling
+      href: advanced-entities-slot-filling.md
+    - name: Use variables
+      href: authoring-variables.md
+    - name: Reuse variables across topics
+      href: authoring-variables-bot.md
+    - name: Use Power Fx formulas
+      href: advanced-power-fx.md
+    - name: Add actions using Power Automate
+      href: advanced-flow.md
+    - name: Add multimedia cards to messages
+      href: advanced-cards.md
+- name: Publish and integrate
+  items:
+    - name: Key concepts - Publish your bot
+      href: publication-fundamentals-publish-channels.md
+    - name: Add bot to Telephony
+      href: publication-connect-bot-to-telephony.md
+    - name: Add bot to your live website
+      href: publication-connect-bot-to-web-channels.md
+- name: Monitor and diagnose
+  items:
+    - name: Key concepts - Analytics
+      href: analytics-overview.md
+    - name: Analyze bot performance and usage
+      href: analytics-summary.md
+    - name: Analyze customer satisfaction
+      href: analytics-csat.md
+    - name: Analyze session information
+      href: analytics-sessions.md
+    - name: Work with conversation transcripts
+      href: analytics-sessions-transcripts.md
+    - name: Analyze topic usage
+      href: analytics-topic-details.md
+    - name: Analyze billed session information
+      href: analytics-billed-sessions.md
+- name: Configure and customize
+  items:
+    - name: Customize the look and feel of the bot
+      href: customize-default-canvas.md

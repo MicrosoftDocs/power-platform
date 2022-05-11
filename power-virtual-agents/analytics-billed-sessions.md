@@ -14,13 +14,6 @@ ms.collection: virtual-agent
 
 # View billed sessions for Power Virtual Agents in Teams
 
-Select the version of Power Virtual Agents you're using here:
-
-> [!div class="op_single_selector"]
->
-> - [Power Virtual Agents web app](analytics-billed-sessions.md)
-> - [Power Virtual Agents app in Microsoft Teams](teams/analytics-billed-sessions-teams.md)
-
 When you purchase a Power Virtual Agents license, you gain capacity for the specified number of billed sessions. Power Virtual Agents pools this capacity across the entire tenant.
 
 The consumption of the capacity isn't reported at the tenant level, but can be seen for each individual bot.
@@ -86,6 +79,6 @@ Currently, you can only see billed sessions for a single bot.
 
 ### If I'm on a trial subscription but have some billed sessions, do I have to pay?
 
-If you see billed sessions, it doesn't mean you'll be charged. For example, the [trial offer](sign-up-individual.md) provides you with some billed sessions.
+If you see billed sessions, it doesn't mean you'll be charged. For example, the trial offer provides you with some billed sessions.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

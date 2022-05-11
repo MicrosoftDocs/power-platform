@@ -14,13 +14,6 @@ ms.collection: virtual-agent
 
 # Key concepts - Publish your bot
 
-Select the version of Power Virtual Agents you're using here:
-
-> [!div class="op_single_selector"]
->
-> - [Power Virtual Agents web app](publication-fundamentals-publish-channels.md)
-> - [Power Virtual Agents app in Microsoft Teams](teams/publication-fundamentals-publish-channels-teams.md)
-
 With Power Virtual Agents, you can publish bots to engage with your customers on multiple platforms or channels. These include live websites, mobile apps, and messaging platforms like Microsoft Teams and Facebook.
 
 After you've published at least once, you can connect your bot to more channels.
@@ -69,12 +62,12 @@ To configure channels:
 
 The connection steps are different for each channel. See the related article in the list below more information:
 
-- [Microsoft Teams](publication-add-bot-to-microsoft-teams.md)
+- Microsoft Teams
 - [Demo Website](publication-connect-bot-to-web-channels.md#demo-website)
 - [Custom Website](publication-connect-bot-to-web-channels.md#custom-website)
-- [Mobile App](publication-connect-bot-to-custom-application.md)
-- [Facebook](publication-add-bot-to-facebook.md)
-- [Azure Bot Service channels](publication-connect-bot-to-azure-bot-service-channels.md), including:
+- Mobile App
+- Facebook
+- Azure Bot Service channels, including:
   - Skype
   - Cortana
   - Slack
@@ -96,7 +89,7 @@ Different channels have different end-user experiences. The following table show
 | [Multiple-choice options](authoring-create-edit-topics.md#insert-nodes)           | Supported     | [Supported up to six (as hero card)](/microsoftteams/platform/concepts/cards/cards-reference#hero-card) | [Supported up to 13](https://developers.facebook.com/docs/messenger-platform/send-messages/quick-replies/) | [Partially Supported](/dynamics365/customer-service/asynchronous-channels#suggested-actions-support)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | [Markdown](https://daringfireball.net/projects/markdown/)                         | Supported     | [Partially Supported](/microsoftteams/platform/bots/how-to/format-your-bot-messages#text-only-messages) | [Partially supported](https://www.facebook.com/help/147348452522644?helpref=related)                       | [Partially Supported](/dynamics365/customer-service/asynchronous-channels#preview-support-for-formatted-messages)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | [Welcome message](authoring-create-edit-topics.md#insert-nodes)                   | Supported     | Supported                                                                                               | Not supported                                                                                              | Supported for [Microsoft Teams](/dynamics365/customer-service/configure-microsoft-teams) and [Chat](/dynamics365/customer-service/set-up-chat-widget). Not supported for other channels.                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| [Did-You-Mean](advanced-ai-features.md#automatic-triggering-improvements-preview) | Supported     | Supported                                                                                               | Supported                                                                                                  | Supported for [Microsoft Teams](/dynamics365/customer-service/configure-microsoft-teams), [Chat](/dynamics365/customer-service/set-up-chat-widget), Facebook, and text-only channels (SMS via [TeleSign](/dynamics/customer-service/configure-sms-channel) and [Twilio](/dynamics365/customer-service-configure-sms-channel-twilio), [WhatsApp](/dynamics365/customer-service/configure-whatsapp-channel), [WeChat](/dynamics365/customer-service/configure-wechat-channel), and [Twitter](/dynamics365/customer-service/configure-twitter-channel)).</br>Suggested actions will be presented as a text-only list; users will need to retype an option to respond |
+| Did-You-Mean.</br>Suggested actions will be presented as a text-only list; users will need to retype an option to respond |
 
 > [!IMPORTANT]
 > Users can't send attachments to Power Virtual Agents chatbots. If they try to upload a file (including media, such as images), the bot will say:
@@ -105,16 +98,16 @@ Different channels have different end-user experiences. The following table show
 >
 > This applies to all channels, even if the channel or end-user-facing experience supports attachments (for example, if you're using the Direct Line API or Microsoft Teams).
 >
-> Attachments can be supported if the message is sent to a skill, where the skill bot supports the processing of attachments. For more information, see the [Use Microsoft Bot Framework skills topic](advanced-use-skills.md) for more details on skills.
+> Attachments can be supported if the message is sent to a skill, where the skill bot supports the processing of attachments. For more information, see the Use Microsoft Bot Framework skills topic for more details on skills.
 
 ## In this section
 
 | Topic                                                                                                         | Description                                                                       |
 | ------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
 | [Configure the demo website and add the bot to your live website](publication-connect-bot-to-web-channels.md) | Publish your bot on your live website, or use a demo website to share internally. |
-| [Add bot to Microsoft Teams](publication-add-bot-to-microsoft-teams.md)                                       | Use Teams to distribute your bot.                                                 |
-| [Add bot to Facebook](publication-add-bot-to-facebook.md)                                                     | Add your bot to Facebook Messenger.                                               |
+| Add bot to Microsoft Teams                                       | Use Teams to distribute your bot.                                                 |
+| Add bot to Facebook                                                     | Add your bot to Facebook Messenger.                                               |
 | [Add bot to mobile and custom apps (web-based or native)](publication-connect-bot-to-custom-application.md)   | Add your bot to mobile or custom native apps (developer coding required).         |
-| [Add bot to Azure Bot Service channels](publication-connect-bot-to-azure-bot-service-channels.md)             | Add your bot to Azure Bot Service channels (developer coding required).           |
+| Add bot to Azure Bot Service channels             | Add your bot to Azure Bot Service channels (developer coding required).           |
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
