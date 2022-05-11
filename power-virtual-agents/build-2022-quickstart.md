@@ -50,6 +50,8 @@ Power Virtual Agents now has an app-level home page that is not specific to any 
 
 1. [Add an image card](advanced-cards.md#image-card) and provide an image of the restaurant. Providing an image helps the user visually confirm that they're booking at the correct location.
 
+    :::image type="content" source="media/build-2022-quickstart/image-card.png" alt-text="Screenshot of speech mode toggle.":::
+
 1. Add a second **Message** node and add the message `We're open 9am to 5pm Monday through Friday. Please note we will be closed on May 27th.`
 
 1. Change the edit mode to **Speech**.
