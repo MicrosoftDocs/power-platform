@@ -24,7 +24,7 @@ This evolution brings new features including:
 - [Power FX support](advanced-power-fx.md)
 - [Multimedia cards​](advanced-cards.md)
 - [Speech authoring]()
-- [Voice font selection]()
+- [Voice font selection](advanced-speech-settings.md)
 - [Telephony channel](publication-fundamentals-publish-channels.md)
 - [Bot response variations](authoring-create-edit-topics.md#message-variations)
 - [Quick replies](authoring-create-edit-topics.md#quick-replies)
