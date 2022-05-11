@@ -80,7 +80,7 @@ Identify which type of Email Server Profile is being used:
      - outlook.office365.com 
      - smtp.office365.com
 
-    Use the steps provided [here](connect-exchange-online-server-profile-oauth.md) to create a new Exchange Online profile and update the mailboxes to use the new profile. Begin by testing one mailbox with the new profile before attempting to switch all mailboxes.  
+    Use the steps provided [here](connect-exchange-online.md) to create a new Exchange Online profile and update the mailboxes to use the new profile. Begin by testing one mailbox with the new profile before attempting to switch all mailboxes.  
 
    **Dynamics 365 on-premises**
    - If you only see a row with the **Email Server Type Name** value of **Exchange Online (Hybrid)**, you are using the correct profile type which uses Server to Server (S2S) Authentication instead of username/password.
