@@ -38,7 +38,7 @@ Overview of all the components available in the kit.
 | [Keyboard shortcuts](keyboardshortcuts.md) | Utility | Registers key press event handlers to allow keyboard short cuts to be used inside canvas apps. | ⬜ | ✅ | ⬜ | ⬜ |
 | [Nav](nav.md) | User Interface | This code component provides a wrapper around the [Fluent UI Nav Menu](https://developer.microsoft.com/fluentui#/controls/web/nav) control bound to a button for use in canvas & custom pages. | ✅ | ✅ | ✅| ⬜ |
 | [Picker](picker.md) | User Interface | Fluent UI Tag Picker support with custom item styling to allow for color/icons tags. | ✅ | ✅ | ✅| ⬜ |
-| [Pivot](Pivot) | User Interface | This code component wraps the [Fluent Pivot control](https://developer.microsoft.com/fluentui#/controls/web/pivot) for use in canvas & custom pages. | ✅ | ✅ | ✅| ⬜ |
+| [Pivot](pivot.md) | User Interface | This code component wraps the [Fluent Pivot control](https://developer.microsoft.com/fluentui#/controls/web/pivot) for use in canvas & custom pages. | ✅ | ✅ | ✅| ⬜ |
 | [Resizable text area](resizabletextarea.md) | User interface | A text area control that can be resized by the user using handle on the bottom right corner. Can be styled to look like either the classic, fluent or model-driven text field controls. | ⬜ | ✅ | ✅ | ✅ |
 | [TagList](taglist.md) | User Interface | This code component provides a Tag List that provides flexible width rendering bound to a collection. | ✅ | ✅ | ✅| ⬜ |
 

@@ -25,7 +25,7 @@ contributors:
 
 A control used to display Fluent UI icons.
 
-![Icon](media/icon.png "Icon control")
+![Icon control](media/icon.png "Icon control")
 
 ## Description
 

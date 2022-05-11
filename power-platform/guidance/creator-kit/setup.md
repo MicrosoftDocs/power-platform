@@ -34,7 +34,7 @@ Before installing the Creator Kit, it is helpful to learn about [Power Apps comp
 ## Install the solution
 
 1. Download the solution file ([Click to Download](https://github.com/microsoft/powercat-creator-kit/releases/download/CreatorKit-May2022/CreatorKitCore_1.0.20220510.1_managed.zip))
-1. Navigate to the desired Environment in the Power Apps [Maker Portal](httpsmake.powerapps.com)
+1. Navigate to the desired Environment in the Power Apps [Maker Portal](https://make.powerapps.com)
 1. Import the solution file
 
 > [!div class="nextstepaction"]

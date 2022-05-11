@@ -84,11 +84,11 @@ Follow the same steps of how to make a copy of the Canvas Template app, except t
 
 1. Provide a new name, then click **Save**
 
-   ![Canvas Template App](media/custom-page-saveas.png "Custom Page studio rename dialog")
+   ![Custom Page studio rename dialog](media/custom-page-saveas.png "Custom Page studio rename dialog")
 
 1. Close the studio by selecting the back button in the top left corner. Notice the copy was created in the same solution.
  
-   ![Canvas Template App](media/custom-page-added.png "Custom Page in solution")
+   ![Custom Page copy added to solution](media/custom-page-added.png "Custom Page copy added to solution")
 
 1. Remove the original Custom Page Template from the solution.
 
