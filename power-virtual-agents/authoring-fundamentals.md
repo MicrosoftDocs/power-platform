@@ -26,10 +26,6 @@ There are also [sample topics](authoring-template-topics.md) that guide you thro
 
 You can also choose what language you want your bot to use.
 
-## Prerequisites
-
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
-
 ## Accessibility
 
 The bot authoring canvas is built for accessibility in accordance with [Microsoft Accessibility Guidelines](https://www.microsoft.com/accessibility/), and supports standard navigational patterns. For complex scenarios, users who author content with keyboard navigation can use the following routing anchors.

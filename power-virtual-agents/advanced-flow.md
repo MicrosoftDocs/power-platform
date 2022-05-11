@@ -29,10 +29,6 @@ You call flows from within topics, as a discrete **Call an action** node. You ca
 
 Flows typically use variables to input and output information. The variables can then be used in other nodes within the topic.
 
-## Prerequisites
-
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
-
 ## Create a new flow from the Power Virtual Agents authoring canvas
 
 1. Go to the [**Topics page**](authoring-create-edit-topics.md) for the bot you want to edit.

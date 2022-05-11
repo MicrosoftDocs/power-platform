@@ -18,10 +18,6 @@ When you purchase a Power Virtual Agents license, you gain capacity for the spec
 
 The consumption of the capacity isn't reported at the tenant level, but can be seen for each individual bot.
 
-## Prerequisites
-
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
-
 ## Find the number of billed sessions for your bot
 
 1. In Power Virtual Agents, select **Analytics** from the side pane.

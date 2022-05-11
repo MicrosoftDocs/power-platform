@@ -18,10 +18,6 @@ As you design your bot in Power Virtual Agents, you can use the **Test bot** pan
 
 To help you find and fix unexpected behavior, you can enable tracking between topics to take you through the bot conversation step-by-step, and go to the corresponding node in the authoring canvas.
 
-## Prerequisites
-
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
-
 ## Test a topic in the Test bot pane
 
 1. If the **Test bot** pane is hidden, open it by selecting **Test your bot**.

@@ -26,10 +26,6 @@ To help get you started and tailor the bot to your specific needs, Power Virtual
 >
 > This means if you create a bot with the Power Virtual Agents app in Microsoft Teams, you will not see the bot in the web app of Power Virtual Agents at https://web.powerva.microsoft.com.
 
-## Prerequisites
-
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
-
 ## Create your first bot
 
 Creating your first bot requires you to have a license (or trial) to Power Virtual Agents.

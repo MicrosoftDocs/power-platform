@@ -24,11 +24,7 @@ These variables are called **global variables**, because they apply across the e
 
 Global variables apply during a single user session. Specify the global variables to distinguish them from topic-level variables.
 
-## Prerequisites
-
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
-
-### Create a global variable
+## Create a global variable
 
 1. Create a [new variable](authoring-variables.md#create-a-variable) or [use the variables pane](authoring-variables.md#variables-pane) to open an existing variable.
 

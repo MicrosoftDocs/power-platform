@@ -17,7 +17,6 @@ Connect your [Azure Communication Service (ACS)](/azure/communication-services/)
 
 ## Prerequisites
 
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 - [Publishing fundamentals](publication-fundamentals-publish-channels.md)
 
 ## Connect your bot to Telephony

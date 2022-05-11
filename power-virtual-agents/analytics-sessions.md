@@ -25,10 +25,6 @@ Lastly, you can manage the retention period for transcripts. This can be useful 
 > [!NOTE]
 > If you no longer have access to your environment, you'll need to [create a support request](https://admin.powerplatform.microsoft.com/support) in the Microsoft Power Platform admin center.
 
-## Prerequisites
-
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
-
 ## Download session transcript information from the Power Virtual Agents portal
 
 1. Select **Analytics** on the side pane. Go to the **Sessions** tab.
