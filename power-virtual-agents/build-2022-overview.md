@@ -25,7 +25,7 @@ This evolution brings new features including:
 - [Multimedia cards​](advanced-cards.md)
 - [Speech authoring]()
 - [Voice font selection](advanced-speech-settings.md)
-- [Telephony channel](publication-fundamentals-publish-channels.md)
+- [Telephony channel](publication-connect-bot-to-telephony.md)
 - [Bot response variations](authoring-create-edit-topics.md#message-variations)
 - [Quick replies](authoring-create-edit-topics.md#quick-replies)
 - [YAML code editor](authoring-create-edit-topics.md#edit-topics-with-the-code-editor)
