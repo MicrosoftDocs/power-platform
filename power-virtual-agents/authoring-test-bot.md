@@ -40,22 +40,6 @@ To help you find and fix unexpected behavior, you can enable tracking between to
 
 You can return to the authoring canvas for the topic  at any time to revise it's conversation path. The **Test chat** pane will automatically refresh itself when you save changes to a topic.
 
-## Track through the topic's conversation path
-
-As you fine-tune your bot, it can be useful to enable tracking between topics so you can follow through the conversation path step by step.
-
-1. At the top of the **Test bot** pane, set **Track between topics** to **On**.
-
-   :::image type="content" source="media/authoring-test-bot/test-bot-track.png" alt-text="Switch the track between topics toggle at the top of th test bot pan." border="false":::
-
-1. Enter a trigger phrase for the topic you want to check, and then continue testing the conversation.
-
-1. As you move through the conversation in the **Test bot** pane, the authoring canvas highlights the current place in the conversation path. The authoring canvas displays highlighted nodes in green.
-
-1. To navigate to an earlier place in the conversation path in the authoring canvas, select it in the **Test bot** pane.
-
-If the conversation path in the **Test your bot** pane moves from one topic to another topic, the authoring canvas refreshes and moves between topics to the appropriate highlighted nodes.
-
 ## Save conversation snapshots
 
 While testing your bot in the **Test bot** pane, you can use the **Save snapshot** command to get conversational diagnostics data. This data can help you troubleshoot issues, such as the bot not responding in the way you expect.
