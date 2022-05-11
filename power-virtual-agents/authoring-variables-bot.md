@@ -14,13 +14,6 @@ ms.collection: virtual-agent
 
 # Reuse variables across topics
 
-Select the version of Power Virtual Agents you're using here:
-
-> [!div class="op_single_selector"]
->
-> - [Power Virtual Agents web app](authoring-variables-bot.md)
-> - [Power Virtual Agents app in Microsoft Teams](teams/authoring-variables-bot-teams.md)
-
 [Variables](authoring-variables.md) let you save responses from your customers. For example, you can save a customer's name in a variable called `UserName`. The bot can then address the customer by name as the conversation continues.
 
 By default, a variable's value can only be used in the topic where this variable gets created. However, you might want the bot to use the same value across topics. This means the bot can remember the necessary context when a conversation spans multiple topics.

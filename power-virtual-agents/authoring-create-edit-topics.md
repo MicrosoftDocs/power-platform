@@ -17,13 +17,6 @@ searchScope:
 
 # Create and edit topics in your Power Virtual Agents bot
 
-Select the version of Power Virtual Agents you're using here:
-
-> [!div class="op_single_selector"]
->
-> - [Power Virtual Agents web app](authoring-create-edit-topics.md)
-> - [Power Virtual Agents app in Microsoft Teams](teams/authoring-create-edit-topics-teams.md)
-
 In Power Virtual Agents, a topic defines a how a bot conversation plays out.
 
 To author topics, you can [customize provided templates](authoring-template-topics.md), create topics from scratch, or get suggestions from existing help sites.

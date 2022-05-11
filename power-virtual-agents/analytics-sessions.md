@@ -14,11 +14,6 @@ ms.collection: virtual-agent
 
 # Analyze session information in Power Virtual Agents
 
-> [!div class="op_single_selector"]
->
-> - [Power Virtual Agents web app](analytics-sessions.md)
-> - [Power Virtual Agents app in Microsoft Teams](teams/analytics-sessions-teams.md)
-
 By default, you can download up to seven days of bot conversation transcript sessions from the past 30 days directly from the Power Virtual Agents portal.
 
 You can also download and view chat transcripts in the Power Apps portal.

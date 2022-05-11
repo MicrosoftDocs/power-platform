@@ -14,13 +14,6 @@ ms.collection: virtual-agent
 
 # Use sample topics in Power Virtual Agents
 
-Select the version of Power Virtual Agents you're using here:
-
-> [!div class="op_single_selector"]
->
-> - [Power Virtual Agents web app](authoring-template-topics.md)
-> - [Power Virtual Agents app in Microsoft Teams](teams/authoring-template-topics-teams.md)
-
 Power Virtual Agents includes a set of three samples from which you can see examples of topics. These samples range from simple to complex scenarios that use [conditional branching](authoring-create-edit-topics.md) and [custom entities](advanced-entities-slot-filling.md).
 
 ## Prerequisites

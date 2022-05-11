@@ -14,13 +14,6 @@ ms.collection: virtual-agent
 
 # Key concepts - Publish your bot
 
-Select the version of Power Virtual Agents you're using here:
-
-> [!div class="op_single_selector"]
->
-> - [Power Virtual Agents web app](publication-fundamentals-publish-channels.md)
-> - [Power Virtual Agents app in Microsoft Teams](teams/publication-fundamentals-publish-channels-teams.md)
-
 With Power Virtual Agents, you can publish bots to engage with your customers on multiple platforms or channels. These include live websites, mobile apps, and messaging platforms like Microsoft Teams and Facebook.
 
 After you've published at least once, you can connect your bot to more channels.

@@ -14,13 +14,6 @@ ms.collection: virtual-agent
 
 # Analyze bot performance and usage in Power Virtual Agents
 
-Select the version of Power Virtual Agents you're using here:
-
-> [!div class="op_single_selector"]
->
-> - [Power Virtual Agents web app](analytics-summary.md)
-> - [Power Virtual Agents app in Microsoft Teams](teams/analytics-summary-teams.md)
-
 >
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mQpm]
 >

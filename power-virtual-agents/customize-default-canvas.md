@@ -14,11 +14,6 @@ ms.collection: virtual-agent
 
 # Customize the look and feel of the bot's default canvas
 
-> [!div class="op_single_selector"]
->
-> - [Power Virtual Agents web app](customize-default-canvas.md)
-> - [Power Virtual Agents app in Microsoft Teams](teams/customize-default-canvas-teams.md)
-
 After you create and [publish a bot](publication-fundamentals-publish-channels.md), your customers can [use the bot's Web Chat canvas to interact with it](publication-connect-bot-to-web-channels.md).
 
 The default look and feel of the bot is defined by the bot's canvas. You can customize the canvas in two ways, depending on the complexity of the customizations:
