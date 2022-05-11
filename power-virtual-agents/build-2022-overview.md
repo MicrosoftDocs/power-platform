@@ -39,7 +39,7 @@ This technology preview doesn't yet support some of the existing features you're
 ## For desktop Composer users
 
 There are a number of differences and similarities in how bots are designed in Bot Framework Composer and in the Power Virtual Agents technology preview.
-The following table list some key concepts in Composer and describes where to find information about similar concepts in Power Virtual Agents.
+The following table lists some key concepts in Composer and describes where to find information about similar concepts in Power Virtual Agents.
 
 <!-- best viewed without wordwrap -->
 | Composer concept               | Power Virtual Agents concept                        | Description                                                                                                                                                                                                                                        |
