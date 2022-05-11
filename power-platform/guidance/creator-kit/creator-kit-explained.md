@@ -52,12 +52,12 @@ This app allows you to learn about each component, best practices recommended fo
  ![The Creator Kit](media/ReferenceApp.png "The Creator Kit")
 
 ### Templates
-The templates are designed to help quickly start creating a responsive Fluent UI based apps. They come with the custom components preloaded and attached to a Theme JSON variable to reduce the time it takes to start developing.
+The templates are designed to help quickly start creating a responsive Fluent UI based apps. They come with the custom components preloaded and attached to a Theme JSON variable, which reduces time to start developing.
 
    ![Canvas Template App](media/template-app.png "Canvas Template App")
 
 #### Canvas Template app
-Make a copy of this app when creating a new [canvas app](https://docs.microsoft.com/power-apps/maker/canvas-apps/getting-started) for a project or proof-of-concept that require the components in the kit.
+Make a copy of this app when creating a new [canvas app](https://docs.microsoft.com/power-apps/maker/canvas-apps/getting-started) that require the components in the kit.
 
 
 How to make a copy of the Canvas Template:
