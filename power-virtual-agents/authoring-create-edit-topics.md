@@ -183,6 +183,8 @@ If you've configured hand-off to omnichannel with voice-based capabilities, you'
 
 1. Optionally, you can add [message variations](#message-variations).
 
+To enhance messages with rich multimedia cards, see [Add multimedia cards to messages](/advanced-cards.md).
+
 #### Go to another topic
 
 1. To have the bot move to a different topic, select **+** to add a node, and then select **Topic Management**, then **Go to another topic**.
