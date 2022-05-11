@@ -28,95 +28,7 @@ Out of the box, Power Virtual Agents comes with a set of prebuilt entities, whic
 
 With the knowledge granted by entities, a bot can smartly recognize the relevant information from a user input and save it for later use.
 
-To help understand that notion, the **Money** entity can be used as an example.
-
-1. In Power Virtual Agents, go to the **Entities** tab on the side pane.
-
-   :::image type="content" source="media/advanced-entities-slot-filling/entities-menu.png" alt-text="Go to the Entities tab.":::
-
-   You'll see a list of the prebuilt entities available.
-
-   :::image type="content" source="media/advanced-entities-slot-filling/entities-1(draft).png" alt-text="Entities pane." border="false":::
-
-1. Select the **Money** entity, which will open the details pane for the entity.
-
-   :::image type="content" source="media/advanced-entities-slot-filling/entities-2(draft).png" alt-text="Money entity description." border="false":::
-
-Here you can see an explanation of this entity and the ways it can be used to look for information related to money or currency from a user's input.
-
-For example, when a user inputs "It costs 1000 dollars", using this money entity the bot knows the "1000 dollars" represents the **money type** of information. When the bot extracts this entity and saves it to a variable, it will save "1000" as a number even though the surrounding information was text.
-
-## Custom entities
-
-The prebuilt entities cover commonly used information types, but on some occasions, such as when building a bot that serves a specific purpose, you'll need to teach the bot's language understanding model some domain-specific knowledge.
-
-For instance, let's say you want to build a bot for an outdoor store. In this case, you'll need to teach the bot to acknowledge the "outdoor gears product" category in a dialog.
-
-To do this, you need to create a custom entity. In this case, you can create an entity that gives the bot the knowledge of all outdoor product categories.
-
-1. In Power Virtual Agents, go to the **Entities** tab on the side pane.
-
-   :::image type="content" source="media/advanced-entities-slot-filling/entities-menu.png" alt-text="Go to the Entities tab to create a new entity.":::
-
-1. Select **New entity** on the main menu.
-
-   :::image type="content" source="media/advanced-entities-slot-filling/entities-new.png" alt-text="Select New entity.":::
-
-1. This opens a pane where you can choose the type of entity: either a [**Closed list** entity](#closed-list-entities) or a [**Regular expression (regex)** entity](#regular-expression-regex-entities).
-
-### Closed list entities
-
-Closed list entities let you define a list of items. This is best used for small lists that are easy to manage and that have simple item labels.
-
-:::image type="content" source="media/advanced-entities-slot-filling/create-entities-closed.png" alt-text="Screenshot of the entity creation window, with the Closed list option highlighted.":::
-
-Selecting this option when creating an entity will show a pane where you can specify the name of the entity, an optional description, and enter the items you want included in the entity.
-
-:::image type="content" source="media/advanced-entities-slot-filling/edit-closed-list.png" alt-text="Screenshot of the entities list pane.":::
-
-When you enter items you can:
-
-- Select each item to change its name.
-- Select the trash can icon to delete the item from the list.
-- Select **+ Synonyms** (or select the listed synonyms if they've already been added) to open the **Edit synonyms** pane.
-
-You can add synonyms to manually expand the matching logic for each item in the entity's list. For example, in the "hiking" item, you can add "trekking" and "mountaineering" as synonyms.
-
-:::image type="content" source="media/advanced-entities-slot-filling/edit-synonyms.png" alt-text="Screenshot of the Edit synonyms pane.":::
-
-For each entity you can also enable **Smart matching**.
-
-Smart matching is part of the intelligence supported by the bot's language understanding model. With this option enabled, the bot will interpret the user's input using fuzzy logic, based on the listed items in the entity.
-
-In particular, the bot will autocorrect misspellings and expand its matching logic semantically. For example, the bot can automatically match "softball" to "baseball".
-
-:::image type="content" source="media/advanced-entities-slot-filling/entities-smart-match.png" alt-text="Screenshot of the smart matching option toggle.":::
-
-When you're finished creating or editing your entity, select **Save** to save and return to the list of entities. Select **Close** to discard your changes (you will be given an option to go back to editing the entity in case you accidentally selected the wrong option).
-
-### Regular expression (regex) entities
-
-Regular expression (regex) entities let you define logical patterns that you can use to match and extract information from an input. Regex entities are great for complex pattern matching against a user's input, or if you need to allow for specific variations in how a user might format or enter their input in a conversation.
-
-For example, you could use a regex entity to identify items such as a tracking ID, a license number, a credit card number, or an IP address from a string the user enters into the bot.
-
-:::image type="content" source="media/advanced-entities-slot-filling/create-entities-regex.png" alt-text="Screenshot of the entity creation window, with the Regex option highlighted.":::
-
-Selecting this option when creating an entity will show a pane where you can specify the name of the entity, an optional description, and enter the regex pattern that should be used to match and extract entity items from the input.
-
-:::image type="content" source="media/advanced-entities-slot-filling/edit-regex-list.png" alt-text="Screenshot of the regex entity pane.":::
-
-A Power Virtual Agents regex entity uses the [.NET regular expressions syntax](/dotnet/standard/base-types/regular-expressions).
-
-By default, pattern matching is case sensitive, to make it case insensitive use the `(?i)` regular expression option in your pattern string. Some basic examples are included in the regex entity pane, and additional information on the syntax and more examples can be found in the [Regular Expression Language - Quick Reference](/dotnet/standard/base-types/regular-expression-language-quick-reference) topic.
-
-If you need to make the regular expression accommodate multiple patterns you can use the alternation operator `|` to concatenate regular expressions. For example, you could combine two regex patterns to look for both the old and new formats of a product ID code.
-
-When you're finished creating or editing your entity, select **Save** to save and return to the list of entities. Select **Close** to discard your changes (you will be given an option to go back to editing the entity in case you accidentally selected the wrong option).
-
 ## Use entities in a conversation
-
-Now that you've done the work of giving the bot the knowledge about outdoor gear by creating that product category entity and a few other custom entities, you can start to use them when constructing a bot conversation.
 
 1. Go to the [**Topics page**](./authoring-create-edit-topics.md) for the bot you want to edit.
 
@@ -126,7 +38,7 @@ Now that you've done the work of giving the bot the knowledge about outdoor gear
 
    :::image type="content" source="media/advanced-entities-slot-filling/handoff-add-node.png" alt-text="Screenshot of adding a node." border="false":::
 
-1. Under **Identify**, select the entity you created in [Custom entities](#custom-entities).
+1. Under **Identify**, select an entity.
 
    :::image type="content" source="media/advanced-entities-slot-filling/entities-6(draft).png" alt-text="Question node with entity selection." border="false":::
 
