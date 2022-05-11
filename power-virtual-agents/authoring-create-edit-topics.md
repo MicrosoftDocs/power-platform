@@ -29,12 +29,6 @@ For example, a user might type "Open hours" into your bot. The AI matches that t
 
 The **Test bot** pane shows how the bot conversation plays out at every step. You can use the **Test bot** pane to fine-tune a topic without having to exit the Power Virtual Agents portal.
 
-For bot and topic limits, see [Quotas, limits, and configuration values](requirements-quotas.md).
-
-## Prerequisites
-
-[!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
-
 ## Use system and sample topics
 
 When you create a bot, several topics are created for you.
