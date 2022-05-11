@@ -107,8 +107,7 @@ Power Virtual Agents now has an app-level home page that is not specific to any 
 
 1. To allows users to call your bot, you need to [enable and configure the Telephony channel](publication-connect-bot-to-telephony.md).
 
-    <!-- FIXME: link doc once written -->
-1. Optionally, [customize your bot's voice font]().
+1. Optionally, [customize your bot's voice font](advanced-speech-settings.md).
 
 1. [Publish your bot](publication-fundamentals-publish-channels.md).
 
