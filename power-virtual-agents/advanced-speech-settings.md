@@ -25,7 +25,7 @@ You can configure voice font settings in **Speech**.
 
 1. Select **Speech**. Here you can update the **Voice font** and **Speaking style** of your bot. By default bots are set to the **Default font**.
 
-    :::image type="content" source="media/advanced-speech-settings/speech-page-settings.PNG" alt-text=Speech setting page.":::
+    :::image type="content" source="media/advanced-speech-settings/speech-page-settings.PNG" alt-text="Speech setting page.":::
 
 ## Speech settings
 
