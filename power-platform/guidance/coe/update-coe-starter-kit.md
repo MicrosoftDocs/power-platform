@@ -78,29 +78,24 @@ With the fast pace Power Platform is changing, leaving updates longer than three
 
 ## Installing updates
 
-Below are step-by-step instructions to install and test updates for two scenarios:
-
-- If you haven't made customizations to the CoE Starter Kit
-- If you've made customizations to the CoE Starter Kit
+Below are step-by-step instructions to install the latest version of the CoE Starter Kit:
 
 ### Download the latest solution file
 
-First, read the [latest release notes](https://github.com/microsoft/coe-starter-kit/releases). Check the [setup instructions](setup.md) where any new components will be mentioned.
+First, read the [latest release notes](https://github.com/microsoft/coe-starter-kit/releases).
 
 Download the latest version CoE Starter Kit compressed file ([aka.ms/CoeStarterKitDownload](https://aka.ms/CoeStarterKitDownload)).
 
 >[!IMPORTANT]
 > **Extract the zip file** after downloading and before moving on to the next step. The CoE Starter Kit compressed file contains all solution components as well as non-solution aware components that make up the CoE Starter Kit.
 
-### Get your environment ready for the upgrade
+### Remove unmanaged layers from inventory flows
 
 Before installing the upgrade, check the solution is in a healthy state to receive the new updates.
 
 Making any changes to flows or apps in the solution creates an unmanaged layer. Components with unmanaged layers will not receive updates until you remove that unmanaged layer. Learn more: [Understanding solution layers](/power-platform/alm/solution-layers-alm)
 
-#### Remove unmanaged layers from inventory flows
-
-All flows with *Admin \| Sync Template v* in the name are responsible for collecting your tenants inventory and building the foundation the CoE Starter Kit relies on. These flows are changed frequently to fix bugs, address edge cases or collect additional information and should not be customized. If you have additional requirements on what inventory to collect, raise a [feature ask](https://github.com/microsoft/coe-starter-kit/issues/new?assignees=&labels=coe-starter-kit%2Cenhancement&template=3-coe-starter-kit-feature.yml&title=%5BCoE+Starter+Kit+-+Feature%5D%3A+FEATURE+TITLE) or create your own flow.
+All flows with *Admin \| Sync Template v* in the name are responsible for collecting your tenants inventory and building the foundation the CoE Starter Kit relies on. These flows should not be customized. If you have additional requirements on what inventory to collect, raise a [feature ask](https://github.com/microsoft/coe-starter-kit/issues/new?assignees=&labels=coe-starter-kit%2Cenhancement&template=3-coe-starter-kit-feature.yml&title=%5BCoE+Starter+Kit+-+Feature%5D%3A+FEATURE+TITLE) or create your own flow. Learn more: [Extending the CoE Starter Kit](modify-components.md)
 
 Your first check before installing the upgrade is removing unmanaged layers from the inventory flows.
 
@@ -116,87 +111,53 @@ You can check for unmanaged layers on the inventory flows using the [Admin - Com
 1. Select **Sync flows** from the navigation.
 1. Check if any of the flows show the layer icon, indicating they have unmanaged layers
     ![Detect unmanaged layers on flows in the Admin Command Center app](media/coe-upgrade6.png "Detect unmanaged layers on flows in the Admin Command Center app")
-1. Click on the layer icon to go to the solution layer page of the flow and remove the unmanaged layer.
+1. Select the layer icon to go to the solution layer page of the flow and remove the unmanaged layer.
     ![Remove unmanaged layers](media/upgrade2.png "Remove unmanaged layers")
 
-If you can see any unmanaged layers, you'll need to remove them prior to updating:
+### Removing other customizations
 
-1. Select **...** > **See solution layers**
+Any cloud flow or canvas app that you've changed won't receive updates until you remove the unmanaged layer.
 
-![Screenshot showing 'see solution layers' option in web interface](media/upgrade1.png)
+1. If you want to keep your changes, learn more about how to [extend the CoE Starter Kit](modify-components.md)
+1. If you don't want to keep your changes, remove all unmanaged layers prior to update. A good indication that a component has been changed is if the modified date is more recent than the latest install. Read our recommendations for [extending the CoE Starter Kit](modify-components.md) to avoid creating unmanaged layers.
+    1. Select **...** > **See solution layers**.
+        ![See solution layers](/power-platform/guidance/coe/media/upgrade1.png)
+    1. Select **Remove unmanaged layer**
+        ![Remove unmanaged solution layer](/power-platform/guidance/coe/media/upgrade2.png)
 
-1. Select **Remove unmanaged layer**
+## Importing the new solution version
 
-![Screenshot showing 'remove unmanaged layer' option in the web interface](media/upgrade2.png)
+Once you have removed unmanaged layers, you can import the new solution version:
 
-### If you haven't made customizations
-
-If you haven't made customizations to the CoE Starter Kit, follow the steps described in [this document](/power-platform/guidance/coe/faq#installing-a-solution-in-a-production-environment) to import the update.
-
-When the upgrade has completed processing, move onto testing (below).
-
-### If you've made customizations
-
-Any cloud flow, app or table that you've changed in the solution won't receive updates until you remove the unmanaged layer. Read our recommendations for [extending the CoE Starter Kit](/power-platform/guidance/coe/extending-components) to avoid creating unmanaged layers.
-
-**Remove unmanaged layers prior to update:**
-
->[!IMPORTANT]
->Editing components in the solution introduces an unmanaged layer. Components that have been changed won't receive any updates until the unmanaged layer has been removed.
-
-If you have made any changes to the flows or apps in the solution, they won't receive updates until you remove that unmanaged layer. For every flow/app that you changed but would like to receive the latest update, go to the solution layers and remove the unmanaged layer. A good indication that a component has been changed is if the modified date is more recent than the latest install. Read our recommendations for extending the CoE Starter Kit to avoid creating unmanaged layers.
-
-1. Select **...** > **See solution layers**.
-
-![See solution layers](/power-platform/guidance/coe/media/upgrade1.png)
-
-2. Select **Remove unmanaged layer**
-
-![Remove unmanaged solution layer](/power-platform/guidance/coe/media/upgrade2.png)
-
-3. Import the solution to a testing environment
-    1. If [importing to a Production Environment](/power-platform/guidance/coe/faq#installing-a-solution-in-a-production-environment) - use the solution file from the download called CenterOfExcellenceCoreComponents_x_x_x_xx_managed.zip
-    1. If [importing to a Dataverse for Teams Environment](/power-platform/guidance/coe/faq#installing-a-solution-in-a-dataverse-for-teams-environment) - use the solution file from the download called CenterOfExcellenceCoreComponentsTeams_x_x_x_xx_managed.zip
-
-4. Select **Upgrade** (default setting). Solution upgrades will delete components that existed but are no longer included in the upgraded version.
-
-![Select upgrade to install the new solution version](/power-platform/guidance/coe/media/coe-upgrade1.png)
-
-5. If the upgrade adds new environment variables or connection references, establish connections and update environment variable values. You'll find the expected values in our setup instructions.
-
-6. Wait for the Upgrade to finish. **This can take up to 15 mins**. During the upgrade, the new version is installed first and then the old version is deleted. Whilst the upgrade is processing, you may see two solutions with the same name in your solution explorer. [Check the solution history](/powerapps/maker/data-platform/solution-history#view-solution-history) to view the progress of the upgrade.
-
-![Check the solution history](/power-platform/guidance/coe/media/coe-upgrade3.png)
-
-The upgrade will be complete when the end time is no longer empty.
-
-![Check the end time for the solution import is not empty.](/power-platform/guidance/coe/media/coe-upgrade2.png)
-
-7. The [solution history](/powerapps/maker/data-platform/solution-history#view-solution-history) will also show you if the upgrade has failed and why. [Raise an issue](https://aka.ms/coe-starter-kit-issues) and [provide the solution operation error details](/en-us/powerapps/maker/data-platform/solution-history#view-solution-operation-error-details).
-
-![View solution operation error details](/en-us/power-platform/guidance/coe/media/coe-upgrade4.png)
-
-8. Make sure to check the setup instructions of the solution you're upgrading to see if any new steps are necessary to use the solution and it's new features.
-
-a. [Setup core components](/en-us/power-platform/guidance/coe/setup-core-components)
-b. [Setup governance components](/en-us/power-platform/guidance/coe/before-setup-gov)
-c: [Setup nurture components](/en-us/power-platform/guidance/coe/setup-nurture-components)
-
-When the upgrade has completed processing, move onto testing (below).
+1. [Import the solution](faq.md#installing-a-solution-in-a-production-environment).
+1. Select **Upgrade** (default setting). [Solution upgrades](/alm/solution-concepts-alm#solution-lifecycle) will delete components that existed but are no longer included in the upgraded version.
+    ![Select upgrade to install the new solution version](media/coe-upgrade1.png "Select upgrade to install the new solution version")
+1. If the upgrade adds new environment variables or connection references, establish connections and update environment variable values. You will find the expected values in our [setup instructions](setup-core-components.md).
+1. Wait for the Upgrade to finish. This can take up to 15 mins. During the upgrade, the new version is installed first and then the old version is deleted. Whilst the upgrade is processing, you may see two solutions with the same name in your solution explorer. Check the [solution history](/powerapps/maker/data-platform/solution-history#view-solution-history) to view the progress of the upgrade.
+    ![Check the solution history](/power-platform/guidance/coe/media/coe-upgrade3.png "Check the solution history")
+1. The upgrade will be complete when the end time is no longer empty.
+    ![Check the end time for the solution import is not empty.](/power-platform/guidance/coe/media/coe-upgrade2.png "Check the end time for the solution import is not empty.")
+1. The [solution history](/powerapps/maker/data-platform/solution-history#view-solution-history) will also show you if the upgrade has failed and why. [Raise an issue](https://aka.ms/coe-starter-kit-issues) and [provide the solution operation error details](/powerapps/maker/data-platform/solution-history#view-solution-operation-error-details).
+    ![View solution operation error details](/en-us/power-platform/guidance/coe/media/coe-upgrade4.png)
+1. Make sure to check the setup instructions of the solution you're upgrading to see if any new steps are necessary to use the solution and it's new features.
+    1. [Setup core components](/en-us/power-platform/guidance/coe/setup-core-components)
+    1. [Setup governance components](/en-us/power-platform/guidance/coe/before-setup-gov)
+    1. [Setup nurture components](/en-us/power-platform/guidance/coe/setup-nurture-components)
+1. When the upgrade has completed processing, move onto [testing](#testing-strategy).
 
 ## Testing strategy
 
-As with installing any update, testing prior to installation in a live system increases the likelihood of success.
+As with installing any update, testing prior to installation in a production environment increases the likelihood of success.
 
 >[!IMPORTANT]
-> Testing is important as it provides feedback. Doing this in an isolated environment protects production versions.
+> Testing is important as it provides you with an opportunity to try out new features and confirm bug fixes work as expected. Doing this in an isolated environment protects production versions.
 > Create a dedicated testing environment for CoE Starter Kit updates.
 
 Below are some recommendations:
 
 - Create a dedicated testing environment.
-- Testing and live environments should have the same versions of the CoE Starter Kit installed.
-- Testing and live environments should have the same customizations installed.
+- Test and Production environments should have the same versions of the CoE Starter Kit installed.
+- Test and Production environments should have the same customizations installed.
 - Document test patterns and expected outcomes. Make sure you've covered all possible combinations that might fail.
 
 Example test pattern:
@@ -218,11 +179,11 @@ If you find a bug or an issue when testing you can [raise a bug here](https://gi
 
 This document doesn't go deep into application lifecycle management. If you're interested in recommendations and scenarios, review the [overview of application lifecycle management with Microsoft Power Platform](/power-platform/alm/overview-alm).  ALM covers many disciplines. This document touches lightly on the discipline of deploying solutions.
 
-### ALM Accelerator
+### ALM Accelerator for Power Platform
 
-The [ALM Accelerator](/blog/introducing-the-alm-accelerator-for-power-platform/#:~:text=What%20is%20the%20ALM%20Accelerator%3F%20The%20ALM%20Accelerator,of%20Azure%20DevOps%20Pipelines%20and%20Git%20source%20control.?msclkid=36a6686fc15511ec9c253d308c10c711) is a reference implementation that sits on top of Azure Pipelines and Git source control.  
+The [ALM Accelerator for Power Platform](almacceleratorpowerplatform-components.md) is a reference implementation that sits on top of Azure Pipelines and Git source control.  
 
-The accelerator includes a canvas app that provides a simplified interface for makers to regularly export components in solutions to source control, and create deployment requests.
+The ALM Accelerator for Power Platform includes a canvas app that provides a simplified interface for makers to regularly export components in solutions to source control, and create deployment requests.
 
 ### Microsoft Power Platform Build Tools
 
