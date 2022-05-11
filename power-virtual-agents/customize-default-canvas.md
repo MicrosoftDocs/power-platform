@@ -29,9 +29,9 @@ The default look and feel of the bot is defined by the bot's canvas. You can cus
 1. You can use a [custom canvas](#customize-and-host-your-chat-canvas-advanced), based on the [Bot Framework Web Chat canvas](https://github.com/microsoft/BotFramework-WebChat).  
     Connecting to a custom canvas requires extensive developer knowledge and is useful for organizations that want to customize the experience completely.
 
-You can also combine the customized canvas with [configuring your bot to automatically start the conversation](configure-bot-greeting.md).
+You can also combine the customized canvas with configuring your bot to automatically start the conversation.
 
-Lastly, you can [change the name and bot icon](#change-the-bot-name-and-icon) (when the bot is [shared in Microsoft Teams](publication-add-bot-to-microsoft-teams.md)) directly from the portal.
+Lastly, you can [change the name and bot icon](#change-the-bot-name-and-icon) (when the bot is shared in Microsoft Teams) directly from the portal.
 
 ## Prerequisites
 
@@ -61,7 +61,7 @@ You can change the bot's name.
 
 To customize your canvas, whether it's the default canvas or a custom one you connect to, you need to retrieve your bot details.
 
-You can get the Bot ID and Tenant ID by [going to the Mobile app under Channels](publication-connect-bot-to-custom-application.md#retrieve-your-power-virtual-agents-bot-parameters).
+You can get the Bot ID and Tenant ID by going to the Mobile app under Channels.
 
 ## Customize the default canvas (simple)
 
@@ -69,7 +69,7 @@ You can configure how the chat canvas looks with some simple CSS and JavaScript 
 
 First, you need to configure where you're deploying your bot canvas.
 
-1. [Create and publish a bot](fundamentals-get-started.md).
+1. Create and publish a bot.
 
 1. Copy and paste the HTML code below and save it as *index.html*.  
     You can also copy and paste the code below into the [w3schools.com HTML try it editor](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default). You will still need to add your Bot ID.  

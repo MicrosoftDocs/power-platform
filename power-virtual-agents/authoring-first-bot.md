@@ -26,7 +26,7 @@ Select the version of Power Virtual Agents you're using here:
 To help get you started and tailor the bot to your specific needs, Power Virtual Agents lets you create a bot using built-in content building blocks containing topics, trigger phrases, and pre-authored bot conversations.
 
 > [!WARNING]
-> New bots are configured with "No authentication" and without [web channel security](configure-web-security.md), and can be accessed by anyone with a link to it. Ensure you have the right [authentication](configuration-end-user-authentication.md), [access](configuration-end-user-authentication.md), and [security](configure-web-security.md) configurations set for your particular usage.
+> New bots are configured with "No authentication" and without web channel security, and can be accessed by anyone with a link to it. Ensure you have the right authentication, access, and security configurations set for your particular usage.
 
 > [!NOTE]
 > You can only see bots in the version of Power Virtual Agents where you created them.  
@@ -49,7 +49,7 @@ Creating your first bot requires you to have a license (or trial) to Power Virtu
 
    :::image type="content" source="media/authoring-first-bot/create-new-bot-screen.png" alt-text="New bot dialog." border="false":::
 
-1. Your bot is created in the [default Power Apps environment for your organization or tenant](environments-first-run-experience.md). Usually this is sufficient, but if necessary you can choose a different environment by selecting **More options** to see a list of available environments.
+1. Your bot is created in the default Power Apps environment for your organization or tenant. Usually this is sufficient, but if necessary you can choose a different environment by selecting **More options** to see a list of available environments.
   
 1. Select **Create** to begin the bot-building process, which can take up to 15 minutes for the first bot you create in an environment. Subsequent bots take less than a few minutes to create.
 
@@ -87,13 +87,13 @@ When you are creating your bot, you might encounter the following issues.
 
 In this case, you see this error: "You do not have permissions to any environments. Please get access from an administrator."
 
-You will need to [create a new environment](environments-first-run-experience.md). Use that environment to create your bot.
+You will need to create a new environment. Use that environment to create your bot.
 
 ### The environment I created does not show up in the drop-down menu of Power Virtual Agents
 
 Your environment might not show up in the drop-down menu due to one of the following:
 
 - The environment doesn't have a database created. To resolve this, go to [admin.powerplatform.com](https://admin.powerplatform.com) to [create a database in your environment](/power-platform/admin/create-database).
-- The environment is created in an unsupported region. Learn more about [supported data locations](data-location.md).
+- The environment is created in an unsupported region. Learn more about supported data locations.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

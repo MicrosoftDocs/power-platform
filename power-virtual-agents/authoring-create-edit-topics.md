@@ -26,7 +26,7 @@ Select the version of Power Virtual Agents you're using here:
 
 In Power Virtual Agents, a topic defines a how a bot conversation plays out.
 
-To author topics, you can [customize provided templates](authoring-template-topics.md), create topics from scratch, or [get suggestions from existing help sites](advanced-create-topics-from-web.md).
+To author topics, you can [customize provided templates](authoring-template-topics.md), create topics from scratch, or get suggestions from existing help sites.
 
 A topic has _trigger phrases_ and _conversation nodes_. Trigger phrases are phrases, keywords, and questions that a user is likely to type that are related to a specific issue. Conversation nodes define how a bot should respond to a trigger phrase and what it should do.
 
@@ -169,9 +169,9 @@ Later, you can add a condition to create branching logic or add nodes to control
 
 #### Call an action
 
-To [call Power Automate Flows](advanced-flow.md) and [insert authentication nodes](advanced-end-user-authentication.md), select **Call an action**.
+To [call Power Automate Flows](advanced-flow.md) and insert authentication nodes, select **Call an action**.
 
-If you've configured hand-off to omnichannel with voice-based capabilities, you'll see [more actions](configuration-hand-off-omnichannel.md#voice-based-capabilities).
+If you've configured hand-off to omnichannel with voice-based capabilities, you'll see more actions.
 
 #### Send a message
 
@@ -218,7 +218,7 @@ If you redirect to any of the following [system topics](#use-system-and-sample-t
 | Confirmed Failure| The user can ask another question or request to talk to an agent, which redirects to the Escalate topic.|
 | Confirmed Success| The user is presented with a satisfaction survey, and then can ask another question or leave the conversation, which redirects to the Goodbye topic. The survey response is collected on the [customer satisfaction analytics page](analytics-csat.md). |
 | End of Conversation | The user is asked if their question was answered. Based on their response, the bot redirects to the Confirmed Success or the Confirmed Failure topic. |
-| Escalate | This topic is incomplete. You can [hand the conversation over to a live agent](advanced-hand-off.md) if you're using a suitable customer service portal, such as Omnichannel for Customer Service. |
+| Escalate | This topic is incomplete. You can hand the conversation over to a live agent if you're using a suitable customer service portal, such as Omnichannel for Customer Service. |
 | Goodbye | Thanks the user and indicates to the user's client that the session is over. The behavior varies based on the client. On the telephony channel, for example, the client will hang up. |
 | Start over | Resets the conversation and resets [global variables](authoring-variables-bot.md) for the current session. |
 
@@ -239,7 +239,7 @@ Use the following nodes to design conversation flow in your bots.
 
 1. In the first condition node, select the variable and condition that will determine how the bot conversation should branch at this point.
 
-    - For example, if you've set up [user authentication](advanced-end-user-authentication.md), you might specify a different message if the user is signed in (which may have happened earlier in the conversation).
+    - For example, if you've set up user authentication, you might specify a different message if the user is signed in (which may have happened earlier in the conversation).
     - You can create a condition using the basic editor or you can switch to a the Power Fx formula editor and manually enter an expression.
     - To switch from the formula editor back to the basic editor, reset the node; however, you will need to enter your condition again.
     - Use the _node menu_ (&vellip;) to switch editing modes or reset the node.
