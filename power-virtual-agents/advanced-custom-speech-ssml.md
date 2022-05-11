@@ -16,7 +16,6 @@ SSML (Speech Synthesis Markup Language) lets you customize your bot's speech res
 
 ## Prerequisites
 
-- [Create a new Power Virtual Agent bot](authoring-first-bot.md#create-your-first-bot)
 - [Create and edit topics](authoring-create-edit-topics.md)
 - [Telephony](publication-connect-bot-to-telephony.md)
 

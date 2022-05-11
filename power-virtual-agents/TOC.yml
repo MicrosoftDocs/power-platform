@@ -6,24 +6,16 @@
   href: build-2022-limitations.md
 - name: Author and edit
   items:
-    - name: Key concepts - Authoring
-      href: authoring-fundamentals.md
-    - name: Create and delete bots
-      href: authoring-first-bot.md
     - name: Use sample topics
       href: authoring-template-topics.md
     - name: Create and edit topics
       href: authoring-create-edit-topics.md
-    - name: Use system fallback topic
-      href: authoring-system-fallback-topic.md
     - name: Manage topics
       href: authoring-topic-management.md
     - name: Add comments to bots
       href: authoring-comments.md
     - name: Test your bot
       href: authoring-test-bot.md
-    - name: Troubleshoot error codes
-      href: error-codes.md
 - name: Enhance and improve
   items:
     - name: Use entities and slot filling
