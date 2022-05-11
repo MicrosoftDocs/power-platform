@@ -25,7 +25,7 @@ contributors:
 
 A component for user input.
 
-![Resizable text area](media/resizable-textarea.png "Resizable text area")
+![Resizable text area](media/resizable-textarea.png "Resizable text area control")
 
 ## Description
 

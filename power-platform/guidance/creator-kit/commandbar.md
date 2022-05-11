@@ -25,7 +25,7 @@ contributors:
 
 A control used to input commands.
 
-![Command bar](media/command-bar.png "Command bar")
+![Command bar](media/command-bar.png "Command bar control")
 
 ## Description
 This code component provides a wrapper around the [Fluent UI Command Bar](https://developer.microsoft.com/fluentui#/controls/web/commandbar) control for use in canvas & custom pages.

@@ -25,7 +25,7 @@ contributors:
 
 A control used to display a set of data.
 
-![Details List](media/details-list.png "Details List")
+![Details List](media/details-list.png "Details List control")
 
 ## Description
 A details list is a robust way to display an information-rich collection of items, and allow people to sort, group, and filter the content. Use a details list when information density is critical.
