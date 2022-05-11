@@ -82,7 +82,7 @@ An **adaptive card** is fully customizable card that you can tailor to your need
 
     To open an expanded view of the JSON editor select **Expand**.
 
-    :::image type="content" source="media/advanced-cards/adaptive-card-expand.png" alt-text="Screenshot of a message node with an adaptive card.":::
+    :::image type="content" source="media/advanced-cards/adaptive-card-expand.png" alt-text="Screenshot of the expand button.":::
 
 ## Manage multiple cards in the same node
 
