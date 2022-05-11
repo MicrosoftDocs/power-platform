@@ -88,6 +88,8 @@
       items:
        - name: Key concepts - Publish your bot
          href: publication-fundamentals-publish-channels.md
+       - name: Add bot to Telephony
+         href: publication-connect-bot-to-telephony.md
        - name: Add bot to your live website
          href: publication-connect-bot-to-web-channels.md
        - name: Add bot to Power Apps portal
