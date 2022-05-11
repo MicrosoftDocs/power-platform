@@ -38,6 +38,6 @@ This technology preview doesn't yet support some of the existing features you're
 - Authoring in Teams app
 - Bots setup with application lifecycle management (ALM)
 - Importing and exporting bots
-- Non-English bots
+- Bot authoring and bot conversations only support English
 - Extending bots in Composer
 - Customization of system fallback topic
