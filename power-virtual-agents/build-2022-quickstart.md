@@ -88,7 +88,7 @@ Power Virtual Agents now has an app-level home page that is not specific to any 
 
 1. [Add a **ConditionItem** node](authoring-create-edit-topics.md#add-a-condition) and [change it to a formula](advanced-power-fx.md#use-power-fx-as-a-condition).
 
-1. Enter the [Power Fx formula](advanced-power-fx.md) `DateDiff(Topic.reservationDateTime, Date(2022,5,27)) = 0`. This formula will evaluate to true if the date the user provided is May 5th 2022.
+1. Enter the [Power Fx formula](advanced-power-fx.md) `DateDiff(Topic.reservationDateTime, Date(2022,5,27)) = 0`. This formula will evaluate to true if the date the user provided is May 27th 2022.
 
     :::image type="content" source="media/build-2022-quickstart/condition-formula.png" alt-text="Screenshot of Power Fx formula in a condition node.":::
 
