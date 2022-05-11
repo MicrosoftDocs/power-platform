@@ -4,7 +4,7 @@ description: "Frequently asked questions about Power Automate licensing."
 author: PriyaKodukula
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 03/31/2022
+ms.date: 05/11/2022
 ms.author: prkoduku
 ms.reviewer: MSFTMan
 search.audienceType: 
@@ -301,7 +301,7 @@ Guidance: This guidance is specific to flows that run under a service account as
 
 ### There's a premium flow that sends approval requests to a set of users and then waits for the users to approve or reject the request before it continues running.  Do the approvers need a premium license?
 
-Every user benefiting from the flow needs a license. But, if the flow is a personal automation where only the owner is benefiting from the flow, users who respond to approval requests donot need a premium license. 
+Every user benefiting from the flow needs a license. But, if the flow is a personal automation where only the owner is benefiting from the flow, users who respond to approval requests don't need a premium license. 
 
 ### **Automated flow** - User builds a flow that triggers when an item is added to a list created using Microsoft Lists and updates a SQL db (Premium). Multiple people can add items to the list created using Microsoft Lists.
 
