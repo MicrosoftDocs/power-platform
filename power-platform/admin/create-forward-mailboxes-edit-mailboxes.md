@@ -5,9 +5,9 @@ description: Create forward mailboxes or edit mailboxes
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/29/2020
-author: revachauhan
+author: mduelae
 ms.subservice: admin
-ms.author: rechauha
+ms.author: mkaur
 ms.reviewer: mkaur
 search.audienceType: 
   - admin
