@@ -31,11 +31,7 @@ You can configure voice font settings in **Speech**.
 
 ### Voice fonts
 
-Aside from the default, there are currently four voice font options:
-- en-US-JennyNeural
-- en-US-JennyMultilingualNeural
-- en-US-GuyNeural
-- en-US-AmberNeural
+Aside from the default, there are other font options available. Select the voice font from the drop-down list that works best for your bot.
 
 ### Speaking styles
 
