@@ -46,13 +46,13 @@ For bot and topic limits, see [Quotas, limits, and configuration values](require
 
 When you create a bot, several topics are created for you.
 
-:::image type="content" source="media/authoring-create-edit-topics/topics-system.png" alt-text="Screenshot of the Topics list showing lesson topics and system topics.":::
+:::image type="content" source="media/authoring-template-topics/template-list.png" alt-text="Screenshot of the Topics list showing sample topics and system topics.":::
 
 These automatically created topics fall into two categories:
   
-- [Lesson topics](authoring-template-topics.md) help you understand simple to complex ways to use nodes to create bot conversations.
+- [Sample topics](authoring-template-topics.md) help you understand simple to complex ways to use nodes to create bot conversations.
 
-    You can edit lesson topics or delete them entirely.
+    You can edit sample topics or delete them entirely.
 
 - System topics are topics you're likely to need during a bot conversation.
 
