@@ -25,10 +25,10 @@ contributors:
 
 A control used to provide navigation.
 
-![Breadcrumb](media/breadcrumb.png "Breadcrumb")
+![Breadcrumb](media/breadcrumb.png "Breadcrumb control")
 
 ## Description
-This code component provides a wrapper around the [Fluent UI Breadcrumb](https://developer.microsoft.com/en-us/fluentui#/controls/web/breadcrumb) control for use in canvas & custom pages.
+This code component provides a wrapper around the [Fluent UI Breadcrumb](https://developer.microsoft.com/fluentui#/controls/web/breadcrumb) control for use in canvas & custom pages.
 
 Breadcrumbs should be used as a navigational aid in your app or site. They indicate the current page's location within a hierarchy and help the user understand where they are in relation to the rest of that hierarchy. They also afford one-click access to higher levels of that hierarchy.
 
@@ -72,11 +72,11 @@ Example:
 
 
 ## Configure 'On Select' behavior
-Use the [**Switch()**](https://docs.microsoft.com/en-us/power-apps/maker/canvas-apps/functions/function-if) formula in the component's `OnSelect` property to configure specific actions for each item by referring to the control's selected `ItemKey` as the switch value.
+Use the [**Switch()**](https://docs.microsoft.com/power-apps/maker/canvas-apps/functions/function-if) formula in the component's `OnSelect` property to configure specific actions for each item by referring to the control's selected `ItemKey` as the switch value.
 
 Replace the `false` values with appropriate expressions in the Power Fx language. 
 
-As this control is used for navigation, a logical action is to use [navigation functions](https://docs.microsoft.com/en-us/power-apps/maker/canvas-apps/functions/function-navigate) (ideally to a relevent screen with the related data loaded).
+As this control is used for navigation, a logical action is to use [navigation functions](https://docs.microsoft.com/power-apps/maker/canvas-apps/functions/function-navigate) (ideally to a relevent screen with the related data loaded).
 
   ```powerapps-dot
     Switch( Self.Selected.ItemKey,
@@ -92,6 +92,6 @@ As this control is used for navigation, a logical action is to use [navigation f
   ```
 
 ## Best Practices
-Refer to [Fluent UI Breadcrumb control best practices](https://developer.microsoft.com/en-us/fluentui#/controls/web/breadcrumb) for additional help.
+Refer to [Fluent UI Breadcrumb control best practices](https://developer.microsoft.com/fluentui#/controls/web/breadcrumb) for additional help.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

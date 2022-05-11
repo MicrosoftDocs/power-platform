@@ -31,7 +31,7 @@ A control used to display Fluent UI icons.
 
 This control renders Fluent UI icons based on the name. Provides ability to easily create an Icon Button & Action Button with custom styling.
 
-For a list of icons, visit our [icon documentation](https://developer.microsoft.com/en-us/fluentui#/styles/web/icons).
+For a list of icons, visit our [icon documentation](https://developer.microsoft.com/fluentui#/styles/web/icons).
 
 ## Limitations
 This PCF component can only be used in Canvas apps and Custom Pages.
@@ -63,6 +63,6 @@ This PCF component can only be used in Canvas apps and Custom Pages.
 | Hover border color | Color of the border while hovering |
 
 ## Best Practices
-Refer to [Fluent UI Icon control best practices](https://developer.microsoft.com/en-us/fluentui#/controls/web/contextmenu)
+Refer to [Fluent UI Icon control best practices](https://developer.microsoft.com/fluentui#/controls/web/contextmenu)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

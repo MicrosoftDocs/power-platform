@@ -30,7 +30,7 @@ A control used to display a set of data.
 ## Description
 A details list is a robust way to display an information-rich collection of items, and allow people to sort, group, and filter the content. Use a details list when information density is critical.
 
-The DetailsList code component allows using of the [Fluent UI DetailsList component](https://developer.microsoft.com/en-us/fluentui#/controls/web/detailslist) from inside canvas apps and custom pages.
+The DetailsList code component allows using of the [Fluent UI DetailsList component](https://developer.microsoft.com/fluentui#/controls/web/detailslist) from inside canvas apps and custom pages.
 
 ## Limitations
 This PCF component can only be used in Canvas apps and Custom Pages.
@@ -63,7 +63,7 @@ This PCF component can only be used in Canvas apps and Custom Pages.
 ## Mapping data to columns
 To determine which columns are displayed in the Details List, configure the following properties of the Detail List:
 
-1. **Fields**. Add the desired fields by selecting the Edit option in the controls flyout on the right (uses the same interface for modifying [predefined data cards](https://docs.microsoft.com/en-us/power-apps/maker/canvas-apps/working-with-cards)).
+1. **Fields**. Add the desired fields by selecting the Edit option in the controls flyout on the right (uses the same interface for modifying [predefined data cards](https://docs.microsoft.com/power-apps/maker/canvas-apps/working-with-cards)).
 
 1. **Columns**. Provide specific mapping between columns and fields in the `Columns` property.  
 
@@ -81,7 +81,7 @@ The below table schema must be used in the `Columns` (`column_Items`) property t
 | ColShowAsSubTextOf | The ColName value of the parent column this text. Leave blank to display in a seperate column. |
 | ColCellType | Provide 'link' as the value to make the column clickable. Leave blank for regular text without style. |
 
-Example (mapping to the Dataverse [Accounts](https://docs.microsoft.com/en-us/power-apps/developer/data-platform/reference/entities/account) system table):
+Example (mapping to the Dataverse [Accounts](https://docs.microsoft.com/power-apps/developer/data-platform/reference/entities/account) system table):
 
   ```powerapps-dot
 Table(
@@ -138,6 +138,6 @@ If( Self.EventName = "CellAction",
 ```
 
 ## Best Practices
-Refer to [Fluent UI Details List control best practices](https://developer.microsoft.com/en-us/fluentui#/controls/web/detailslist)
+Refer to [Fluent UI Details List control best practices](https://developer.microsoft.com/fluentui#/controls/web/detailslist)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

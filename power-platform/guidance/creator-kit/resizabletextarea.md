@@ -58,9 +58,9 @@ This PCF component can only be used in Canvas apps, Custom Pages and Model drive
 | Max width | Max width the user is allowed to resize |
 | Left padding adjustment | Compensates for padding on the right |
 
-Other properties are the same as the standard [text input control](https://docs.microsoft.com/en-us/power-apps/maker/canvas-apps/controls/control-text-input).
+Other properties are the same as the standard [text input control](https://docs.microsoft.com/power-apps/maker/canvas-apps/controls/control-text-input).
 
 ## Best Practices
-Refer to [Fluent UI text field control best practices](https://developer.microsoft.com/en-us/fluentui#/controls/web/textfield) for more guidance.
+Refer to [Fluent UI text field control best practices](https://developer.microsoft.com/fluentui#/controls/web/textfield) for more guidance.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

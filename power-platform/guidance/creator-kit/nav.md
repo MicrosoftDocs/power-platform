@@ -30,7 +30,7 @@ A control used to provide navigation.
 ## Description
 A navigation pane (Nav) provides links to the main areas of an app or site.
 
-The Nav code component allows using of the [Fluent UI Nav menu component](https://developer.microsoft.com/en-us/fluentui#/controls/web/nav) from inside canvas apps and custom pages.
+The Nav code component allows using of the [Fluent UI Nav menu component](https://developer.microsoft.com/fluentui#/controls/web/nav) from inside canvas apps and custom pages.
 
 ## Limitations
 This PCF component can only be used in Canvas apps and Custom Pages.
@@ -56,7 +56,7 @@ Each item uses the below schema to visualize data in the component.
 | ------ | ----------- |
 | ItemKey | Arbitrary unique string associated with the breadcrumb item. |
 | ItemDisplayName | Text to display in the breadcrumb item. |
-| ItemIconName | Name of the [Fluent UI icon](https://developer.microsoft.com/en-us/fluentui#/styles/web/icons) for the item |
+| ItemIconName | Name of the [Fluent UI icon](https://developer.microsoft.com/fluentui#/styles/web/icons) for the item |
 | ItemIconColor | Color of the item icon |
 | ItemExpanded | Whether the item is expanded by default, if there are children items |
 | ItemVisible | Whether the item is rendered |
@@ -148,7 +148,7 @@ Table(
   ```
 
 ## Configure 'On Select' behavior
-Use the [**Switch()**](https://docs.microsoft.com/en-us/power-apps/maker/canvas-apps/functions/function-if) formula in the component's `OnSelect` property to configure specific actions for each item by referring to the control's selected `ItemKey` as the switch value.
+Use the [**Switch()**](https://docs.microsoft.com/power-apps/maker/canvas-apps/functions/function-if) formula in the component's `OnSelect` property to configure specific actions for each item by referring to the control's selected `ItemKey` as the switch value.
 
 Replace the `false` values with appropriate expressions in the Power Fx language.
 
@@ -176,6 +176,6 @@ Replace the `false` values with appropriate expressions in the Power Fx language
   ```
 
 ## Best Practices
-Refer to [Fluent UI Nav control best practices](https://developer.microsoft.com/en-us/fluentui#/controls/web/nav)
+Refer to [Fluent UI Nav control best practices](https://developer.microsoft.com/fluentui#/controls/web/nav)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

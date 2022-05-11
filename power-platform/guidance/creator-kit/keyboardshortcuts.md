@@ -68,7 +68,4 @@ If(Self.OnKey="alt + t",UpdateContext({ctxTableEvent:"SetFocusOnRow" & Text(Rand
 
 This event handler sets focus on various controls given the key combination used.
 
-## Best Practices
-Refer to [Fluent UI Icon control best practices](https://developer.microsoft.com/en-us/fluentui#/controls/web/contextmenu)
-
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

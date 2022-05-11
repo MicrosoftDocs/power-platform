@@ -30,7 +30,7 @@ A control used to provide a search experience.
 ## Description
 Pickers are used to select one or more items, such as tags or files, from a large list.
 
-The Picker code component allows using of the [Fluent UI Picker menu component](https://developer.microsoft.com/en-us/fluentui#/controls/web/Pickers) from inside canvas apps and custom pages.
+The Picker code component allows using of the [Fluent UI Picker menu component](https://developer.microsoft.com/fluentui#/controls/web/Pickers) from inside canvas apps and custom pages.
 
 The Tag Picker code component provides the following features:
 
@@ -90,6 +90,6 @@ If(TagPicker.TagEvent="Remove",
 ```
 
 ## Best Practices
-Refer to [Fluent UI Picker control best practices](https://developer.microsoft.com/en-us/fluentui#/controls/web/Picker)
+Refer to [Fluent UI Picker control best practices](https://developer.microsoft.com/fluentui#/controls/web/Picker)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

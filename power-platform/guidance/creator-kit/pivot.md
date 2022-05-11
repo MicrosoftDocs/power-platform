@@ -30,7 +30,7 @@ A control used to provide navigation.
 ## Description
 The Pivot control and related tabs pattern are used for navigating frequently accessed, distinct content categories. Pivots allow for navigation between two or more content views and relies on text headers to articulate the different sections of content.
 
-This code component provides a wrapper around the [Fluent UI Pivot](https://developer.microsoft.com/en-us/fluentui#/controls/web/pivot) control for use in canvas & custom pages.
+This code component provides a wrapper around the [Fluent UI Pivot](https://developer.microsoft.com/fluentui#/controls/web/pivot) control for use in canvas & custom pages.
 
 ## Limitations
 This PCF component can only be used in Canvas apps and Custom Pages.
@@ -86,6 +86,6 @@ Pivot1.Selected.ItemKey = "tabFile"
 
 
 ## Best Practices
-Refer to [Fluent UI Pivot control best practices](https://developer.microsoft.com/en-us/fluentui#/controls/web/pivot) for additional guidance.
+Refer to [Fluent UI Pivot control best practices](https://developer.microsoft.com/fluentui#/controls/web/pivot) for additional guidance.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

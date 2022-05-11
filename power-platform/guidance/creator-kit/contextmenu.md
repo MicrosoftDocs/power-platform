@@ -28,7 +28,7 @@ A control used to input commands.
 ![Context Menu](media/context-menu.png "Context Menu")
 
 ## Description
-This code component provides a wrapper around the [Fluent UI Context Menu](https://developer.microsoft.com/en-us/fluentui#/controls/web/contextualmenu) control bound to a button for use in canvas & custom pages.
+This code component provides a wrapper around the [Fluent UI Context Menu](https://developer.microsoft.com/fluentui#/controls/web/contextualmenu) control bound to a button for use in canvas & custom pages.
 
 ContextualMenus are lists of commands that are based on the context of selection, mouse hover or keyboard focus. They are one of the most effective and highly used command surfaces, and can be used in a variety of places.
 
@@ -75,7 +75,7 @@ Example:
   ```
 
 ## Configure 'On Select' behavior
-Use the [**Switch()**](https://docs.microsoft.com/en-us/power-apps/maker/canvas-apps/functions/function-if) formula in the component's `OnSelect` property to configure specific actions for each item by referring to the control's selected `ItemKey` as the switch value.
+Use the [**Switch()**](https://docs.microsoft.com/power-apps/maker/canvas-apps/functions/function-if) formula in the component's `OnSelect` property to configure specific actions for each item by referring to the control's selected `ItemKey` as the switch value.
 
 Replace the `false` values with appropriate expressions in the Power Fx language.
 
@@ -93,6 +93,6 @@ Replace the `false` values with appropriate expressions in the Power Fx language
   ```
 
 ## Best Practices
-Refer to [Fluent UI Context Menu control best practices](https://developer.microsoft.com/en-us/fluentui#/controls/web/contextmenu)
+Refer to [Fluent UI Context Menu control best practices](https://developer.microsoft.com/fluentui#/controls/web/contextmenu)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

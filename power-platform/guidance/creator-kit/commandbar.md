@@ -28,7 +28,7 @@ A control used to input commands.
 ![Command bar](media/command-bar.png "Command bar")
 
 ## Description
-This code component provides a wrapper around the [Fluent UI Command Bar](https://developer.microsoft.com/en-us/fluentui#/controls/web/commandbar) control for use in canvas & custom pages.
+This code component provides a wrapper around the [Fluent UI Command Bar](https://developer.microsoft.com/fluentui#/controls/web/commandbar) control for use in canvas & custom pages.
 
 CommandBar is a surface that houses commands that operate on the content of the window, panel, or parent region it resides above.
 
@@ -84,7 +84,7 @@ Example:
   ```
 
 ## Configure 'On Select' behavior
-Use the [**Switch()**](https://docs.microsoft.com/en-us/power-apps/maker/canvas-apps/functions/function-if) formula in the component's `OnSelect` property to configure specific actions for each item by referring to the control's selected `ItemKey` as the switch value.
+Use the [**Switch()**](https://docs.microsoft.com/power-apps/maker/canvas-apps/functions/function-if) formula in the component's `OnSelect` property to configure specific actions for each item by referring to the control's selected `ItemKey` as the switch value.
 
 Replace the `false` values with appropriate expressions in the Power Fx language.
 
@@ -111,6 +111,6 @@ Replace the `false` values with appropriate expressions in the Power Fx language
   ```
 
 ## Best Practices
-Refer to [Fluent UI Command bar control best practices](https://developer.microsoft.com/en-us/fluentui#/controls/web/commandbar) for general best practices related to this control.
+Refer to [Fluent UI Command bar control best practices](https://developer.microsoft.com/fluentui#/controls/web/commandbar) for general best practices related to this control.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
