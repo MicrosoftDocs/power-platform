@@ -15,10 +15,6 @@ ms.collection: virtual-agent
 
 You can create telephony bots with a variety of voices (called voice fonts) in Power Virtual Agents. Voice fonts give your bots personality with a variety of voices and speaking styles that you can select based on the bot's domain and context.
 
-## Prerequisites
-
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
-
 ## Configure Speech settings
 
 You can configure voice font settings in **Speech**.
