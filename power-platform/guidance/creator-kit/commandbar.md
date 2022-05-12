@@ -25,7 +25,7 @@ contributors:
 
 A control used to input commands.
 
-![Command bar](media/command-bar.png "Command bar control")
+:::image type="content" source="media/command-bar.png" alt-text="Command bar control.":::
 
 ## Description
 CommandBar is a surface that houses commands that operate on the content of the window, panel, or parent region it resides above.

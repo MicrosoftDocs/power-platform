@@ -25,7 +25,7 @@ contributors:
 
 A control used to display data.
 
-![Tag list](media/taglist.png "Tag list control")
+:::image type="content" source="media/taglist.png" alt-text="Tag list control.":::
 
 ## Description
 This code component provides a Tag List that provides flexible width rendering bound to a collection.

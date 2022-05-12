@@ -25,7 +25,7 @@ contributors:
 
 A control used to display Fluent UI icons.
 
-![Icon control](media/icon.png "Icon control")
+:::image type="content" source="media/icon.png" alt-text="Icon control.":::
 
 ## Description
 

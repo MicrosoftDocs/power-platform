@@ -25,7 +25,7 @@ contributors:
 
 A control used to display data.
 
-![Auto width label](media/autowidthlabel.png "Auto width label control")
+:::image type="content" source="media/autowidthlabel.png" alt-text="Auto width label.":::
 
 ## Description
 This code component acts similar to the standard canvas app label, but will expand dynamically in width to accommodate the text and return the new width. This functionality is currently not supported in canvas apps today.

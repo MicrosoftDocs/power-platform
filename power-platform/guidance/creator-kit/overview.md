@@ -30,7 +30,7 @@ This toolkit helps create Power App experiences on the web & mobile. It contains
 
 You can view the code in the latest version of the Creator Kit in the [GitHub repository](https://github.com/microsoft/powercat-creator-kit).
 
-![Examples of the Fluent UI components in the starter kit](media/creatorkitview.png "Examples of the Fluent UI components in the starter kit")
+:::image type="content" source="media/creatorkitview.png" alt-text="Examples of the Fluent UI components in the starter kit.":::
 *Figure 1: Examples of Fluent UI components available in the Creator Kit*
 
 ## What's in the kit
@@ -52,7 +52,7 @@ If you face issues with:
 
 ## More resources
 
-- Learn how to use [Power Apps](/power-apps), specifically [Canvas apps](/canvas-apps/dev-enterprise-intro) and [Custom Pages](/power-apps/maker/model-driven-apps/model-app-page-overview).
+- Learn how to use [Power Apps](/power-apps), specifically [Canvas apps](/power-apps/maker/canvas-apps/dev-enterprise-intro) and [Custom Pages](/power-apps/maker/model-driven-apps/model-app-page-overview).
 
 - Understand what [Power Apps component framework (PCF)](/power-apps/developer/component-framework/custom-controls-overview) components and [Canvas app custom components](/power-apps/maker/canvas-apps/create-component) are and how to use them.
 

@@ -25,7 +25,7 @@ contributors:
 
 A control used to input commands.
 
-![Context Menu](media/context-menu.png "Context Menu control")
+:::image type="content" source="media/context-menu.png" alt-text="Context Menu control.":::
 
 ## Description
 

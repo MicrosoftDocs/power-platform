@@ -25,7 +25,7 @@ contributors:
 
 A component for user input.
 
-![Resizable text area](media/resizable-textarea.png "Resizable text area control")
+:::image type="content" source="media/resizable-textarea.png" alt-text="Resizable text area control.":::
 
 ## Description
 

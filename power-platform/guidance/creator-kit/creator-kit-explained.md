@@ -54,7 +54,7 @@ This app allows you to learn about each component, best practices recommended fo
 ### Templates
 The templates are designed to help quickly start creating responsive Fluent UI based apps. They come with the custom components preloaded and attached to a Theme JSON variable, which reduces time to start developing.
 
-   ![Canvas app and Custom Page Templates](media/template-app.png "Canvas Template App")
+:::image type="content" source="media/template-app.png" alt-text="Canvas app and Custom Page Templates.":::
 
 #### Canvas Template app
 Make a copy of this app when creating a new [canvas app](/power-apps/maker/canvas-apps/getting-started) that require the components in the kit.
@@ -74,21 +74,21 @@ Only edit the copy going forward so others can utilize the template app from the
 #### Custom Page Template
 Make a copy of this page when creating a new custom page for a [converged app](/power-apps/maker/model-driven-apps/model-app-page-overview).
 
-   ![Custom Page Template](media/custom-page-studio.png "Custom Page Template")
+:::image type="content" source="media/custom-page-studio.png" alt-text="Custom Page Template.":::
 
 Follow the same steps of how to make a copy of the Canvas Template app, except the Save As action is in the top right corner of the studio for pages:
 
 1. In the top right corner, expand the menu next to the save icon, and select **Save as**
 
-   ![Custom Page studio](media/custom-page-save.png "Custom Page studio save as menu")
+    :::image type="content" source="media/custom-page-save.png" alt-text="Custom Page studio save as menu.":::
 
 1. Provide a new name, then click **Save**
 
-   ![Custom Page studio rename dialog](media/custom-page-saveas.png "Custom Page studio rename dialog")
+    :::image type="content" source="media/custom-page-saveas.png" alt-text="Custom Page studio rename dialog.":::
 
 1. Close the studio by selecting the back button in the top left corner. Notice the copy was created in the same solution.
- 
-   ![Custom Page copy added to solution](media/custom-page-added.png "Custom Page copy added to solution")
+
+    :::image type="content" source="media/custom-page-added.png" alt-text="Custom Page copy added to solution.":::
 
 1. Remove the original Custom Page Template from the solution.
 
@@ -100,9 +100,13 @@ Use this app to generate a Theme JSON object for styling components consistently
 
 1. Play the Theme Editor App
 1. Modify the Primary color, Text color, and Background color values
-   ![Theme Editor App](media/theme-editor.png "Theme Editor App")
+
+    :::image type="content" source="media/theme-editor.png" alt-text="Theme Editor App.":::
+
 1. Select the **Export theme** button in the top right corner of the app to generate the Power Fx expression version of the Theme JSON, then copy the value from the panel.
-    ![Theme Editor App generated Theme JSON](media/theme-editor-json.png "Theme Editor App generated Theme JSON")
+
+    :::image type="content" source="media/theme-editor-json.png" alt-text="Theme Editor App generated Theme JSON.":::
+
 1. Save the Theme JSON as a global variable in the OnStart property of your app, with the palette code block as a property of the `AppTheme` object variable.
     ```powerapps-dot
     Set( AppTheme, {
@@ -145,14 +149,14 @@ ColorValue( AppTheme.palette.white )
 ### Canvas Components
 These components are defined in the component library called "Power CAT Component Library", and are implemented with [Canvas app custom components](/power-apps/maker/canvas-apps/create-component).
 
-   ![Canvas Components](media/canvascomponents.png "Canvas Components")
+:::image type="content" source="media/canvascomponents.png" alt-text="Canvas Components.":::
 
 ### Code Components
 Implemented with [Power Apps component framework (PCF)](/power-apps/developer/component-framework/custom-controls-overview), which are defined as individual custom controls in the solution.
 
 View the code components in the [components reference page](components.md).
 
-   ![Code Components](media/pcfcomponents.png "Code Components")
+:::image type="content" source="media/pcfcomponents.png" alt-text="Code Components.":::
 
 ## Deploying apps with Creator Kit components
 Avoid solution dependency issues when deploying an app by configuring solutions properly. Apps that use kit components cannot be built outside of a solution and require solutions for importing and exporting.

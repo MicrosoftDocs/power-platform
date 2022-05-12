@@ -25,7 +25,7 @@ contributors:
 
 A control used to provide a search experience.
 
-![Picker control](media/Picker.png "Picker control")
+:::image type="content" source="media/Picker.png" alt-text="Picker control.":::
 
 ## Description
 Pickers are used to select one or more items, such as tags or files, from a large list.

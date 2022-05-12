@@ -25,7 +25,7 @@ contributors:
 
 A control used to provide navigation.
 
-![Pivot control](media/pivot.png "Pivot control")
+:::image type="content" source="media/pivot.png" alt-text="Pivot control.":::
 
 ## Description
 The Pivot control and related tabs pattern are used for navigating frequently accessed, distinct content categories. Pivots allow for navigation between two or more content views and relies on text headers to articulate the different sections of content.

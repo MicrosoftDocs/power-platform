@@ -25,7 +25,7 @@ contributors:
 
 A control used to provide navigation.
 
-![Nav control](media/nav.png "Nav control")
+:::image type="content" source="media/nav.png" alt-text="Nav control.":::
 
 ## Description
 A navigation pane (Nav) provides links to the main areas of an app or site.
