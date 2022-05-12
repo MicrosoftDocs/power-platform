@@ -184,10 +184,6 @@ Nodes that contain references to the deleted global variable will tell you they 
 
 Topics with nodes that contain references to deleted global variables might stop working. Ensure that you remove or correct all the topics that were using the deleted variable before publishing.
 
-## Authentication-related global variables
-
-Depending on the bot's authentication setup, you'll have a set of global variables associated with the authentication provider available to you. For details about which set of variables are available and how to use them, see the [Add end-user authentication to a Power Virtual Agents bot](advanced-end-user-authentication.md) documentation topic.
-
 ## Related links
 
 - [Use variables](authoring-variables.md)
