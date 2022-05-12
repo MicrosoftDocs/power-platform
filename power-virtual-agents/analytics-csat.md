@@ -15,6 +15,13 @@ ms.collection: virtual-agent
 
 # Analyze customer satisfaction for Power Virtual Agents bots
 
+Select the version of Power Virtual Agents you're using here:
+
+> [!div class="op_single_selector"]
+>
+> - [Power Virtual Agents web app](analytics-csat.md)
+> - [Power Virtual Agents app in Microsoft Teams](teams/analytics-csat-teams.md)
+
 The Customer Satisfaction page provides a detailed view of customer satisfaction (CSAT) survey data, including the average CSAT score over time and the topics that are having the most impact on the CSAT score.
 
 The Customer Satisfaction page includes a variety of charts with graphical views of your bot's customer satisfaction indicators. For information about each chart, select the link for the chart in the following list, or scroll to find the section about the chart later in this topic:
@@ -29,6 +36,10 @@ The Customer Satisfaction page includes a variety of charts with graphical views
 The Customer satisfaction drivers chart shows you the topics that are having the most impact on customer satisfaction.
 
 By default, the page shows you key performance indicators for the last seven days. To change the time period to the last 30 days, select **Last 30 days** from the drop-down list at the top of the page.
+
+## Prerequisites
+
+- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 
 ## Customer satisfaction drivers chart
 

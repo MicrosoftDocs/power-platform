@@ -14,6 +14,11 @@ ms.collection: virtual-agent
 
 # Manage topics in Power Virtual Agents
 
+> [!div class="op_single_selector"]
+>
+> - [Power Virtual Agents web app](authoring-topic-management.md)
+> - [Power Virtual Agents app in Microsoft Teams](teams/authoring-topic-management-teams.md)
+
 There are a number of ways you can manage your topics. Power Virtual Agents includes a topic checker that lets you know if there are errors in your topics, you can turn topics on or off so they don't appear to people chatting with your bot, and you can copy or duplicate topics to make it easier to create new ones.
 
 - [Manage topics in Power Virtual Agents](#manage-topics-in-power-virtual-agents)
@@ -22,6 +27,10 @@ There are a number of ways you can manage your topics. Power Virtual Agents incl
     - [Types of errors](#types-of-errors)
   - [Topic status](#topic-status)
   - [Copying a topic](#copying-a-topic)
+
+## Prerequisites
+
+- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 
 ## Topic errors
 

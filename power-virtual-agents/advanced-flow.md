@@ -14,9 +14,16 @@ ms.collection: virtual-agent
 
 # Add actions to a bot using Power Automate
 
-You can enable your bot to perform an action by calling a Microsoft Power Automate flow. Flows can help you automate activities, or call backend systems. For example, you can use flows with end-user authentication to retrieve information about a user after they've signed in.
+Select the version of Power Virtual Agents you're using here:
 
-You call flows from within topics, as a discrete **Call an action** node. You can utilize flows that have already been created in your Power Apps environment, or you can create a flow from within the Power Virtual Agents [authoring canvas](authoring-create-edit-topics.md).
+> [!div class="op_single_selector"]
+>
+> - [Power Virtual Agents web app](advanced-flow.md)
+> - [Power Virtual Agents app in Microsoft Teams](teams/advanced-flow-teams.md)
+
+You can enable your bot to perform an action by calling a Microsoft Power Automate flow. Flows can help you automate activities, or call backend systems. For example, you can use flows with [end-user authentication](advanced-end-user-authentication.md) to retrieve information about a user after they've signed in.
+
+You call flows from within topics, as a discrete **Call an action** node. You can utilize flows that have already been created in your [Power Apps environment](environments-first-run-experience.md), or you can create a flow from within the Power Virtual Agents [authoring canvas](authoring-create-edit-topics.md).
 
 > [!IMPORTANT]
 > To use flows within Power Virtual Agents, they must meet the following requirements:
@@ -28,6 +35,10 @@ You call flows from within topics, as a discrete **Call an action** node. You ca
 > - [Flow values must be returned synchronously to Power Virtual Agents](#disable-asynchronous-responses-from-flows).
 
 Flows typically use variables to input and output information. The variables can then be used in other nodes within the topic.
+
+## Prerequisites
+
+- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 
 ## Create a new flow from the Power Virtual Agents authoring canvas
 
@@ -57,12 +68,6 @@ This template is an example of a flow that can be used by bots. To be suitable f
 - Response action:  **Power Virtual Agents**  
 
     :::image type="content" source="media/advanced-flow/PVAConnectorResponse.JPG" alt-text="Power Virtual Agents response." border="false":::
-
-If you make changes to a flow in the Power Automate portal after adding the flow to Power Virtual Agents, you can reload the flow by selecting **Node menu** (vertical three dots), then **Refresh**.
-
-:::image type="content" source="media/advanced-flow/refresh-flow-node.png" alt-text="Screenshot of flow refresh button." border="false":::
-
-The flow will then be re-validated, and any problems detected will need to be fixed before you can save.
 
 ## Input and output parameters
 
@@ -290,7 +295,7 @@ If you've enabled [Asynchronous Response](/azure/connectors/connectors-native-ht
 
 ## Troubleshoot your bot
 
-[Test your bot](authoring-test-bot.md) when you make changes to your topics and flows, to ensure everything is working as expected. When a bot encounters a problem during a conversation, it will respond with an error message.
+[Test your bot](authoring-test-bot.md) when you make changes to your topics and flows, to ensure everything is working as expected. When a bot encounters a problem during a conversation, it will respond with an [error message](error-codes.md).
 
 Most flow-related issues can be found in the [Flow Checker](/power-automate/error-checker), but any issues on the authoring canvas will appear in [topic checker](authoring-topic-management.md#topic-errors).
 

@@ -14,6 +14,13 @@ ms.collection: virtual-agent
 
 # Analyze bot performance and usage in Power Virtual Agents
 
+Select the version of Power Virtual Agents you're using here:
+
+> [!div class="op_single_selector"]
+>
+> - [Power Virtual Agents web app](analytics-summary.md)
+> - [Power Virtual Agents app in Microsoft Teams](teams/analytics-summary-teams.md)
+
 >
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mQpm]
 >
@@ -36,6 +43,10 @@ The Summary page includes a variety of charts with graphical views of your bot's
 The Engagement Rate Drivers, Abandon Rate Drivers, and Resolution Rate Drivers charts use natural language understanding to group issues as topics. These charts show you the topics that are having the most impact on the performance of your bot.
 
 By default, the page shows you key performance indicators for the last seven days. To change the time period to the last 30 days, select **Last 30 days** from the drop-down list at the top of the page.
+
+## Prerequisites
+
+- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 
 ## Summary charts
 

@@ -14,9 +14,18 @@ ms.collection: virtual-agent
 
 # Test your Power Virtual Agents bot
 
+> [!div class="op_single_selector"]
+>
+> - [Power Virtual Agents web app](authoring-test-bot.md)
+> - [Power Virtual Agents app in Microsoft Teams](teams/authoring-test-bot-teams.md)
+
 As you design your bot in Power Virtual Agents, you can use the **Test bot** pane to see how the bot leads a customer through the bot conversation.
 
 To help you find and fix unexpected behavior, you can enable tracking between topics to take you through the bot conversation step-by-step, and go to the corresponding node in the authoring canvas.
+
+## Prerequisites
+
+- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 
 ## Test a topic in the Test bot pane
 
@@ -39,6 +48,22 @@ To help you find and fix unexpected behavior, you can enable tracking between to
   :::image type="content" source="media/authoring-test-bot/test-bot-response.png" alt-text="Select any response in the conversation to see the authoring canvas highlighted to that response." border="false":::
 
 You can return to the authoring canvas for the topic  at any time to revise it's conversation path. The **Test chat** pane will automatically refresh itself when you save changes to a topic.
+
+## Track through the topic's conversation path
+
+As you fine-tune your bot, it can be useful to enable tracking between topics so you can follow through the conversation path step by step.
+
+1. At the top of the **Test bot** pane, set **Track between topics** to **On**.
+
+   :::image type="content" source="media/authoring-test-bot/test-bot-track.png" alt-text="Switch the track between topics toggle at the top of th test bot pan." border="false":::
+
+1. Enter a trigger phrase for the topic you want to check, and then continue testing the conversation.
+
+1. As you move through the conversation in the **Test bot** pane, the authoring canvas highlights the current place in the conversation path. The authoring canvas displays highlighted nodes in green.
+
+1. To navigate to an earlier place in the conversation path in the authoring canvas, select it in the **Test bot** pane.
+
+If the conversation path in the **Test your bot** pane moves from one topic to another topic, the authoring canvas refreshes and moves between topics to the appropriate highlighted nodes.
 
 ## Save conversation snapshots
 

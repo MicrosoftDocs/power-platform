@@ -14,6 +14,11 @@ ms.collection: virtual-agent
 
 # Customize the look and feel of the bot's default canvas
 
+> [!div class="op_single_selector"]
+>
+> - [Power Virtual Agents web app](customize-default-canvas.md)
+> - [Power Virtual Agents app in Microsoft Teams](teams/customize-default-canvas-teams.md)
+
 After you create and [publish a bot](publication-fundamentals-publish-channels.md), your customers can [use the bot's Web Chat canvas to interact with it](publication-connect-bot-to-web-channels.md).
 
 The default look and feel of the bot is defined by the bot's canvas. You can customize the canvas in two ways, depending on the complexity of the customizations:
@@ -24,26 +29,30 @@ The default look and feel of the bot is defined by the bot's canvas. You can cus
 1. You can use a [custom canvas](#customize-and-host-your-chat-canvas-advanced), based on the [Bot Framework Web Chat canvas](https://github.com/microsoft/BotFramework-WebChat).  
     Connecting to a custom canvas requires extensive developer knowledge and is useful for organizations that want to customize the experience completely.
 
-You can also combine the customized canvas with configuring your bot to automatically start the conversation.
+You can also combine the customized canvas with [configuring your bot to automatically start the conversation](configure-bot-greeting.md).
 
-Lastly, you can [change the name and bot icon](#change-the-bot-name-and-icon) (when the bot is shared in Microsoft Teams) directly from the portal.
+Lastly, you can [change the name and bot icon](#change-the-bot-name-and-icon) (when the bot is [shared in Microsoft Teams](publication-add-bot-to-microsoft-teams.md)) directly from the portal.
+
+## Prerequisites
+
+- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 
 > [!IMPORTANT]
 > You may install and use the sample code included in this documentation only for use with the Microsoft Power Virtual Agents product. The sample code is licensed "as is" and is excluded from any service level agreements or support services. You bear the risk of using it.  
 >
 > Microsoft gives no express warranties, guarantees, or conditions and excludes all implied warranties, including merchantability, fitness for a particular purpose, and non-infringement.
 
-## Change the bot name
+## Change the bot name and icon
 
-You can change the bot's name.
+You can change the bot's name and icon. This will affect the icon in all channels where you publish your bot.
 
 1. Select **Manage** on the side pane, and then go to the **Details** tab.
 
-1. Change the bot's name.
+1. Change the bot's name and icon. [Review the recommendations on Microsoft Teams icon formats](/microsoftteams/platform/resources/schema/manifest-schema#icons)
 
 1. Select **Save** to commit your changes.
 
-    :::image type="content" source="media/customize-default-canvas/custom-canvas-name-icon.png" alt-text="The bot details pane lets you change the name.":::
+    :::image type="content" source="media/customize-default-canvas/custom-canvas-name-icon.png" alt-text="The bot details pane lets you change the name and icon.":::
 
 > [!IMPORTANT]
 > After updating your bot's icon, it may take up to 24 hours for the new icon to appear everywhere.
@@ -52,7 +61,7 @@ You can change the bot's name.
 
 To customize your canvas, whether it's the default canvas or a custom one you connect to, you need to retrieve your bot details.
 
-You can get the Bot ID and Tenant ID by going to the Mobile app under Channels.
+You can get the Bot ID and Tenant ID by [going to the Mobile app under Channels](publication-connect-bot-to-custom-application.md#retrieve-your-power-virtual-agents-bot-parameters).
 
 ## Customize the default canvas (simple)
 
@@ -60,7 +69,7 @@ You can configure how the chat canvas looks with some simple CSS and JavaScript 
 
 First, you need to configure where you're deploying your bot canvas.
 
-1. Create and publish a bot.
+1. [Create and publish a bot](fundamentals-get-started.md).
 
 1. Copy and paste the HTML code below and save it as *index.html*.  
     You can also copy and paste the code below into the [w3schools.com HTML try it editor](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default). You will still need to add your Bot ID.  

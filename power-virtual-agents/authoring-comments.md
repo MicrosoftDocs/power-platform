@@ -31,6 +31,10 @@ Comment threads are created when someone replies to an existing comment. Using t
 
 :::image type="content" source="media/authoring-comments/authoring-comments-window.png" alt-text="Screenshot of the Comments pane.":::
 
+## Prerequisites
+
+- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+
 ## Manage comments
 
 The **Comments** pane lets you create new comment threads, resolve or delete comment threads, and add or delete individual comments.
@@ -82,8 +86,8 @@ You can only edit or delete comments that you created.
 
 ## Additional notes
 
-- Comments won't be exported when you export a bot with a solution.
+- Comments won't be exported when you [export a bot with a solution](authoring-export-import-bots.md).
 - You can't @ mention other bot makers in a comment.
-- New comments will show for other bot makers who are editing the same topic when they refresh the page. The topic doesn't need to be saved for new comments to show.
+- New comments will show for [other bot makers who are editing the same topic](admin-share-bots.md#collaborate-on-bots) when they refresh the page. The topic doesn't need to be saved for new comments to show.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

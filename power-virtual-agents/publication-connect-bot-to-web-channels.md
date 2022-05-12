@@ -25,6 +25,10 @@ When publishing the bot to the web, you can publish to a prebuilt demo website (
 > You should use the demo website only to try out the bot and share it with your teammates or other stakeholders who want to try out the bot. It's not intended for production uses, for example, you shouldn't use it directly with customers.  
 > You should publish and use the bot on your live website for production scenarios, such as a help bot on your help webpage for customers to interact with.
 
+## Prerequisites
+
+- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+
 ## Demo website
 
 You can edit the welcome message and suggested trigger phrases for the demo website. A welcome message helps prompt your teammates for what they should ask the bot about.
