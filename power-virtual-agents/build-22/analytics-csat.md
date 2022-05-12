@@ -21,7 +21,6 @@ The Customer Satisfaction page provides a detailed view of customer satisfaction
 The Customer Satisfaction page includes a variety of charts with graphical views of your bot's customer satisfaction indicators. For information about each chart, select the link for the chart in the following list, or scroll to find the section about the chart later in this topic:
 
 - [Analyze customer satisfaction for Power Virtual Agents bots](#analyze-customer-satisfaction-for-power-virtual-agents-bots)
-  - [Prerequisites](#prerequisites)
   - [Customer satisfaction drivers chart](#customer-satisfaction-drivers-chart)
   - [Scores over time chart](#scores-over-time-chart)
   - [Average CSAT score chart](#average-csat-score-chart)

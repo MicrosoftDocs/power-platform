@@ -26,7 +26,6 @@ The Summary page gives you a broad overview of your bot's performance. It uses a
 The Summary page includes a variety of charts with graphical views of your bot's key performance indicators. For information about each chart, see:
 
 - [Analyze bot performance and usage in Power Virtual Agents](#analyze-bot-performance-and-usage-in-power-virtual-agents)
-  - [Prerequisites](#prerequisites)
   - [Summary charts](#summary-charts)
   - [Engagement over time chart](#engagement-over-time-chart)
   - [Session outcomes over time chart](#session-outcomes-over-time-chart)
