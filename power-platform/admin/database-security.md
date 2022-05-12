@@ -74,9 +74,11 @@ Other security roles you have that are not in the above table might be provided 
 |---------|---------|
 |Customer Insights     | [User permissions ](/dynamics365/customer-insights/permissions)       |
 |Power Automate     |  [Security and privacy ](/power-automate/process-advisor-security)      |
-|Power Virtual Agents     |  [Assign environment security roles](../../power-virtual-agents/admin-share-bots#assign-environment-security-roles)       |
+|Power Virtual Agents     |  [Assign environment security roles](/power-virtual-agents/admin-share-bots#assign-environment-security-roles)       |
 
 ### Dataverse for Teams environments
+
+[Automatic role assignment](assign-security-roles.md#automatic-role-assignment)
 
 For information on Dataverse for Teams environment security roles, see [User access to Dataverse for Teams environments](about-teams-environment.md#user-access-to-dataverse-for-teams-environments).
 
