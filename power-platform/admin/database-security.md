@@ -78,7 +78,7 @@ Other security roles you have that are not in the above table might be provided 
 
 ### Dataverse for Teams environments
 
-For information on Dataverse for Teams environment security roles, see [User access to Dataverse for Teams environments](about-teams-environment.md#user-access-to-dataverse-for-teams-environments).
+For information on Dataverse for Teams environment security roles, see [User access to Dataverse for Teams environments](about-teams-environment#user-access-to-dataverse-for-teams-environments).
 
 ## App-specific security roles 
 
