@@ -206,6 +206,11 @@
       "redirect_document_id": "false"
     },
     {
+      "source_path": "power-virtual-agents/build-22/index",
+      "redirect_url": "power-virtual-agents/build-22/build-2022-overview.md",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "power-virtual-agents/extend-custom-canvas-upload.md",
       "redirect_url": "customize-default-canvas",
       "redirect_document_id": "false"
