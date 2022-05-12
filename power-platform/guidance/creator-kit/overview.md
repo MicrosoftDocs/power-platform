@@ -2,11 +2,10 @@
 title: "Creator Kit - Overview | MicrosoftDocs"
 description: Overview of the Creator Kit
 author: mehdis
-manager: devkeydet
-
+manager: mehdis
 ms.component: pa-maker
 ms.topic: conceptual
-ms.date: 05/06/2022
+ms.date: 05/16/2022
 ms.subservice: guidance
 ms.author: demora
 ms.reviewer: tapanm
