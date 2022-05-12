@@ -25,7 +25,7 @@ contributors:
 
 ## Prerequisites
  
-* An [Environment with a Dataverse database](power-platform/admin/create-environment#create-an-environment-with-a-database) and the [Power Apps component framework feature enabled](power-apps/developer/component-framework/component-framework-for-canvas-apps#enable-the-power-apps-component-framework-feature) (System Adminstrator security role is needed to enable the feature).
+* An [Environment with a Dataverse database](/power-platform/admin/create-environment#create-an-environment-with-a-database) and the [Power Apps component framework feature enabled](/power-apps/developer/component-framework/component-framework-for-canvas-apps#enable-the-power-apps-component-framework-feature) (System Adminstrator security role is needed to enable the feature).
 * System Customizer security role is needed to use the Creator Kit components
 * A Premium Power Apps license is required to develop and use apps with custom components.
 
