@@ -68,13 +68,13 @@ For users who make apps that connect to the database and need to create or updat
 
 *The scope of these privileges is global, unless specified otherwise.
 
-Other security roles you have that are not in the above table might be provided when you license and install Dynamics 365 apps and Power Apps. For more information, see the following:
+In addition to the predefined security roles listed above for Dataverse, there might be other security roles available in your environment depending on the Power Platform components (Power Apps, Power Automate, Power Virtual Agents) you have:
 
-|Application  | Information  |
+|Power Platform component  | Information  |
 |---------|---------|
-|Customer Insights     | [User permissions ](https://docs.microsoft.com/en-us/dynamics365/customer-insights/permissions)       |
-|Power Automate     |  [Security and privacy ](https://docs.microsoft.com/en-us/power-automate/process-advisor-security)      |
-|Power Virtual Agents     |  [Assign environment security roles](/power-virtual-agents/admin-share-bots#assign-environment-security-roles)       |
+|Power Apps     | [TO DO: Add information]      |
+|Power Automate     |  [TO DO: Add information]      |
+|Power Virtual Agents     |  [TO DO: Add information]       |
 
 ### Dataverse for Teams environments
 
