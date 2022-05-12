@@ -23,7 +23,9 @@ contributors:
 ---
 # Creator Kit overview
 
-This toolkit helps create Power App experiences on the web & mobile. It contains a component library; [PCF controls](/power-apps/developer/component-framework/overview) that are commonly used, and other utilities that increase developer productivity. All components utilize the [Fluent UI](https://developer.microsoft.com/fluentui#/) framework to help easily create consistent, beautiful, and effective user experiences for custom business applications.
+The Creator Kit toolkit helps you create Power Apps experiences on the web & mobile platforms by making several easy to use sample controls and components available. The toolkit contains a component library, several commonly used [Power Apps component framework (PCF) controls](/power-apps/developer/component-framework/overview), and other utilities that increase developer productivity. 
+
+All included controls and components utilize the [Fluent UI](https://developer.microsoft.com/fluentui#/) framework to help you easily create consistent, beautiful, and effective user experiences for custom business applications.
 
 > [!div class="nextstepaction"]
 > [Download the Creator Kit](https://github.com/microsoft/powercat-creator-kit/releases/download/CreatorKit-May2022/CreatorKitCore_1.0.20220510.1_managed.zip)
@@ -31,41 +33,41 @@ This toolkit helps create Power App experiences on the web & mobile. It contains
 You can view the code in the latest version of the Creator Kit in the [GitHub repository](https://github.com/microsoft/powercat-creator-kit).
 
 :::image type="content" source="media/creatorkitview.png" alt-text="Examples of the Fluent UI components in the starter kit.":::
-*Figure 1: Examples of Fluent UI components available in the Creator Kit*
 
-## What's in the kit
-The Creator Kit is a Power Platform managed solution file that contains the following components:
-- Reference Canvas App
-- Template Starter Apps (Canvas & Model Driven App Custom Page)
-- Canvas Component Library
-- PCF Components
-- Fluent Design Theme Editor
+## What's included
+
+The Creator Kit is a [Power Platform managed solution](/power-platform/alm/solution-concepts-alm#managed-and-unmanaged-solutions) that contains the following components:
+
+- Reference canvas app
+- Template starter apps (canvas & model-driven app custom page)
+- Component library
+- PCF components
+- Fluent design theme editor
 
 ## Disclaimer
 
-Although the underlying features and components used to build the kit (such as Canvas Components and Power Apps Component Framework) are fully supported, the kit itself represents sample implementations of these features. Our customers and community can use and customize these features to create Power Apps in their organizations.
+Although the underlying features and components used to build the kit (such as canvas components and Power Apps Component Framework) are fully supported, the kit itself represents sample implementations of these features. Our customers and community can use and customize these features to create Power Apps in their organizations.
 
 If you face issues with:
 
-- **Using the kit**: Report your issue at [aka.ms/Creator-Kit-Issues](https://aka.ms/Creator-Kit-Issues). (Microsoft Support won't help you with issues related to this kit, but they will help with related, underlying platform and feature issues.)
-- **The core features in Microsoft Power Platform**: Use your standard channel to contact Support.
+- **Using the kit**: Report your issue at [https://aka.ms/Creator-Kit-Issues](https://aka.ms/Creator-Kit-Issues). Though this kit isn't supported by Microsoft Support, you can reach out with support requests for any related, underlying platform and feature problems.)
+- **The core features in Microsoft Power Platform**: Use your standard channel to contact Microsoft Support.
 
 ## More resources
 
-- Learn how to use [Power Apps](/power-apps), specifically [Canvas apps](/power-apps/maker/canvas-apps/dev-enterprise-intro) and [Custom Pages](/power-apps/maker/model-driven-apps/model-app-page-overview).
+- Learn how to use [Power Apps](/power-apps), [canvas apps](/power-apps/maker/canvas-apps/dev-enterprise-intro) and [custom pages](/power-apps/maker/model-driven-apps/model-app-page-overview).
 
-- Understand what [Power Apps component framework (PCF)](/power-apps/developer/component-framework/custom-controls-overview) components and [Canvas app custom components](/power-apps/maker/canvas-apps/create-component) are and how to use them.
+- Understand what [Power Apps component framework (PCF)](/power-apps/developer/component-framework/custom-controls-overview) components and [canvas components](/power-apps/maker/canvas-apps/create-component) are and how to use them.
 
 - Explore the [Fluent UI documentation](https://developer.microsoft.com/fluentui#/).
 
-- Find training resources, including guided learning and step-by-step guides, at [aka.ms/PowerPlatformLabs](https://aka.ms/powerplatformlabs).
+- Find training resources, including guided learning and step-by-step guides, at [https://aka.ms/PowerPlatformLabs](https://aka.ms/powerplatformlabs).
 
-- Read up on customer success stories and find resources relevant to your experience, technical background, and skill level at [aka.ms/PowerPlatformResources](https://aka.ms/powerplatformresources).
+- Read up on customer success stories and find resources relevant to your experience, technical background, and skill level at [https://aka.ms/PowerPlatformResources](https://aka.ms/powerplatformresources).
 
-- Get started with the Microsoft Power Platform path on Microsoft Learn, a free online and interactive training platform [aka.ms/PowerUp](/learn/paths/create-powerapps/?WT.mc_id=twitter-social-donasa).
+- Get started with the Microsoft Power Platform path on Microsoft Learn, a free online and interactive training platform [https://aka.ms/PowerUp](/learn/paths/create-powerapps/?WT.mc_id=twitter-social-donasa).
 
 > [!div class="nextstepaction"]
 > [Next step: Install the kit](setup.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -146,10 +146,10 @@ Example formula referencing the `AppTheme` color values in a standard button's `
 ColorValue( AppTheme.palette.white )
 ```
 
-### Canvas Components
+### Canvas components
 These components are defined in the component library called "Power CAT Component Library", and are implemented with [Canvas app custom components](/power-apps/maker/canvas-apps/create-component).
 
-:::image type="content" source="media/canvascomponents.png" alt-text="Canvas Components.":::
+:::image type="content" source="media/canvascomponents.png" alt-text="Canvas components.":::
 
 ### Code Components
 Implemented with [Power Apps component framework (PCF)](/power-apps/developer/component-framework/custom-controls-overview), which are defined as individual custom controls in the solution.
