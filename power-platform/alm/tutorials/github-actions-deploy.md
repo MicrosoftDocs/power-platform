@@ -51,15 +51,20 @@ Related tutorials: [Get started](github-actions-start.md), and [Build a model-dr
 
 ### Create a new secret to be used by GitHub Actions
 
-1. Navigate to the repo from the link in the import wizard and select **Settings**, navigate to **Secrets**, and then click **New secret**.
+1. From the newly created repo click **Settings**, then click **Secret**, from the expanded list click **Actions**. Next, click **Create new repository secret**
 
-    ![New secret](../media/github-actions-tutorial/gh-lab-2.50.png "New secret")
+    ![New secret](../media/github-actions-tutorial/gh-lab-2.50.gif"New secret")
 
-2. On the secrets page, name the secret ‘password’. Type the password for the username you are using to connect to Microsoft Power Platform into the **Value** field and select **Add secret**. The password will be referenced in the YML files used to define the GitHub workflows later in this lab.
+2. On the Action secrets page, name the secret ‘password’, type the password for the username you are using to connect to the Power Platform in the ‘Value’ and click ‘Add secret’. The password will be referenced in the YAML files used to define the GitHub workflows later in this lab.
+
+    **Note:** You may alternately setup secrets per environment for additional control.
+    Reference: [Using environments for deployment in GitHub Docs](https://docs.github.com/en/actions/deployment/targeting-different-environments/using-environments-for-deployment)
+
+    
 
     ![Create secret](../media/github-actions-tutorial/gh-lab-2.60.png "Create secret")
 
-    The password is now securely stored as a GitHub secret.
+    3. The password is now securely stored as a GitHub secret.
 
     ![Stored secret](../media/github-actions-tutorial/gh-lab-2.70.png "Stored secret")
 
@@ -79,29 +84,29 @@ Related tutorials: [Get started](github-actions-start.md), and [Build a model-dr
 
 ## Create a workflow to export and unpack the solution file to a new branch
 
-1. Select **Actions** and then **set up a workflow yourself**.
+1. click on **Actions** and click **set up a workflow yourself** or click Configure in the *Simple workflow* box under the *suggested for this repository* section.
 
-    ![Setup workflow.](../media/github-actions-tutorial/gh-lab-2.80.png "Setup workflow")
+    ![Setup workflow.](../media/github-actions-tutorial/gh-lab-2.80.gif "Setup workflow")
 
-    This will start a new YML file with a basic workflow to help you get started with GitHub Actions.
+2. This will start a new YAML file with a basic workflow to help you get started with GitHub actions.
 
     ![Sample YML file](../media/github-actions-tutorial/gh-lab-2.90.png "Sample YML file")
 
-2. Delete the pre-created content, paste the content from the [export-and-branch-solution-with-spn-auth.yml](https://github.com/microsoft/powerplatform-actions-lab/blob/main/sample-workflows/export-and-branch-solution-with-spn-auth.yml) file, and then rename the file to ‘export-and-branch-solution’.yml.
+3. Delete the pre-created content, paste the content from the [export-and-branch-solution-with-spn-auth.yml](https://github.com/microsoft/powerplatform-actions-lab/blob/main/sample-workflows/export-and-branch-solution-with-spn-auth.yml) file, and then rename the file to ‘export-and-branch-solution’.yml.
 
     ![Rename and replace content.](../media/github-actions-tutorial/gh-lab-2.100.png "Rename and replace content")
 
-3. Update `<ENVIRONMENTURL>` with the URL for the development environment you want to export from (for example: https://poweractionsdev.crm.dynamics.com).
+4. Update `<ENVIRONMENTURL>` with the URL for the development environment you want to export from (for example: https://poweractionsdev.crm.dynamics.com).
 
-4. Update `<APPID>` and `<TENANT ID>` with your values. 
+5. Update `<APPID>` and `<TENANT ID>` with your values. 
 
     * If you are using credentials, update `<USERNAME>` with the username you are using to connect to the environment.  
 
         ![Rename and replace content](../media/github-actions-tutorial/gh-lab-2.100a.png "Rename and replace content")
 
-5. You are now ready to commit your changes. Select **Start commit**, type **Create export yml** in the title field, and then add a description (optional). Next, click **Commit new file**.
+6. You are now ready to commit your changes. Select **Start commit**, type **Create export yml** in the title field, and then add a description (optional). Next, click **Commit new file**.
 
-    ![Start commit.](../media/github-actions-tutorial/gh-lab-2.130.png "Start commit")
+    ![Start commit.](../media/github-actions-tutorial/gh-lab-2.130.gif "Start commit")
 
 Congratulations, you have just created your first GitHub workflow using the following actions:
 
@@ -122,27 +127,25 @@ Congratulations, you have just created your first GitHub workflow using the foll
 
     ![Select adn view workflow.](../media/github-actions-tutorial/gh-lab-2.165.png "Select and view workflow")
 
-3. After the workflow has completed, validate that a new branch has been created with the solution unpacked to the solutions/ALMLab folder. Select **Code** and then **Branches**.
-
-    ![View branches](../media/github-actions-tutorial/gh-lab-2.170.png "View branches")
+3. After the workflow has completed, validate that a new branch has been created with the solution unpacked to the solutions/ALMLab folder. **Navigate to the *Code* tab** and **expand the *branches* drop-down**.
 
 4. Select the branch that was created by the action.
 
-    ![Select branch.](../media/github-actions-tutorial/gh-lab-2.180.png "Select branch")
+5. Validate that the solutions/ALMLab folder has been created in the new branch and then create a Pull request to merge the changes into the main branch. **Click *Contribute*** and in the flyout **click *Open Pull request***.
 
-5. Validate that the solutions/ALMLab folder has been created in the new branch and then create a pull request to merge the changes into the main branch. Click **Pull request**.
+6. On the *Open a Pull request* screen, add a title and description, as desired, then **click *Create pull request.***
 
-    ![Create PR from branch.](../media/github-actions-tutorial/gh-lab-2.190.png "Create PR from branch")
+7. The screen will update showing the newly create pull request. As the pull request is created confirmation will be provided showing that our branch has no conflict with the main branch. This confirmation means that the changes can be merged into the main branch automatically. **Click *Merge pull request***  and then **click *Confirm merge***. Optionally, click delete branch to clean up the now defunct branch.
 
-6. In the **Open a pull request** form, add a title and description (optional), and then choose **Create pull request**.
+    ![View branches](../media/github-actions-tutorial/gh-lab-2.170.gif "Open pull request for new branch and merge to default branch")
 
-    ![Open a pull request.](../media/github-actions-tutorial/gh-lab-2.200.png "Open a pull request")
+8. Navigate back to the default (main) branch and validate the solution is now available there as well.
 
-7. You are then presented with the pull request summary. Confirm that the branch has no conflicts with the main branch and that the changes can be merged into the main branch automatically. Select **Squash and merge** and then **Confirm squash and merge**.
+9. You are then presented with the pull request summary. Confirm that the branch has no conflicts with the main branch and that the changes can be merged into the main branch automatically. Select **Squash and merge** and then **Confirm squash and merge**.
 
     ![Squash and merge](../media/github-actions-tutorial/gh-lab-2.210.png "Squash and merge")
 
-8. Navigate back to the main branch and validate the solution is now available there as well.
+10. Navigate back to the main branch and validate the solution is now available there as well.
 
 ## Create a reusable workflow to generate a build artifact and import to production
 
@@ -210,7 +213,7 @@ You are now ready to test the last workflow. This workflow is triggered when a n
 3. Add a release tag, a title, and choose **Publish release**.
 
     ![Create release.](../media/github-actions-tutorial/gh-lab-2.300.png "Create release")
- 
+
 4. Select **Actions** to view the running workflow.
 
     ![Select to view workflow.](../media/github-actions-tutorial/gh-lab-2.310.png "Select to view workflow")
@@ -232,7 +235,7 @@ We will now test the end-to-end process and then see how we can view and validat
 1. Navigate to the ALMLab solution in your development environment and choose **Edit**.
 
     ![Edit solution.](../media/github-actions-tutorial/gh-lab-2.350.png "Edit solution")
- 
+
 2. Select and view the **Time off Request** entity.
 
     ![View the entity.](../media/github-actions-tutorial/gh-lab-2.360.png "View the entity")
