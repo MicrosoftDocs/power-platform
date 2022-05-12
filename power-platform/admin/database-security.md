@@ -10,7 +10,7 @@ contributors:
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/04/2022
+ms.date: 05/12/2022
 search.audienceType: 
   - admin
 search.app:
@@ -68,7 +68,13 @@ For users who make apps that connect to the database and need to create or updat
 
 *The scope of these privileges is global, unless specified otherwise.
 
-Other security roles you have that are not in the above table might have been provided when you installed Dynamics 365 apps.
+Other security roles you have that are not in the above table might be provided when you license and install Dynamics 365 apps and Power Apps. For more information, see the following:
+
+|Application  | Information  |
+|---------|---------|
+|Customer Insights     | [User permissions ](/dynamics365/customer-insights/permissions)       |
+|Power Automate     |  [Security and privacy ](/power-automate/process-advisor-security)      |
+|Power Virtual Agents     |  [Assign environment security roles](../../power-virtual-agents/admin-share-bots.md#assign-environment-security-roles)       |
 
 ### Dataverse for Teams environments
 
