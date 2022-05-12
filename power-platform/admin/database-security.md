@@ -2,14 +2,15 @@
 title: Configure user security in an environment | Microsoft Docs
 description: Configure user security in environment
 ms.subservice: admin
-ms.author: jimholtz
-author: jimholtz
+ms.author: paulliew
+author: paulliew
 ms.reviewer: jimholtz
+contributors:
+  - hamenon-ms 
 ms.custom: "admin-security"
-
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/10/2022
+ms.date: 05/04/2022
 search.audienceType: 
   - admin
 search.app:
@@ -98,11 +99,11 @@ The following table describes which resources can be authored by each security r
 |Dataflow     |X         |X         |-         |X         |
 |Dataverse tables     |-         |-         |X         |X         |
 |Model-driven app     |X        |-         |X         |X         |
-|Solution framework     |-         |-         |X         |X         |
-|Desktop flow     |-         |-         |X         |X         |
+|Solution framework     |X         |-         |X         |X         |
+|<sup>*</sup>Desktop flow     |-         |-         |X         |X         |
 |AI Builder     |-         |-         |X         |X         |
 
-
+<sup>*</sup>Dataverse for Teams users don’t get access to desktop flows by default. You need to upgrade your environment to full Dataverse capabilities and acquire [Desktop flow license plans](https://powerautomate.microsoft.com/pricing/) in order to use desktop flows.
 
 
 ## Assign security roles to users in an environment that has no Dataverse database 
@@ -196,7 +197,7 @@ For more information about access and scope privileges, see [Security roles an
 ## Minimum privileges to run an app
 When you create a custom security role, you need to include a set of minimum privileges into the security role in order for a user to run an app. We've created a solution you can import that provides a security role that includes the required minimum privileges.  
 
-Start by downloading the solution from the Download Center: [Dataverse minimum privilege security role](https://download.microsoft.com/download/6/5/5/6552A30E-05F4-45F0-AEE3-9BB01E13118A/MinprivilegeSecRole_1_0_0_0.zip). 
+Start by downloading the solution from the Download Center: [Dataverse minimum privilege security role](https://download.microsoft.com/download/6/5/5/6552A30E-05F4-45F0-AEE3-9BB01E13118A/MinprivilegeSecRole_1_0_0_2.zip). 
 
 Then, follow these directions to import the solution: [Import solutions](/powerapps/maker/common-data-service/import-update-export-solutions).
 

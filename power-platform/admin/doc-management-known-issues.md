@@ -2,8 +2,7 @@
 title: "Known issues with document management | MicrosoftDocs"
 description: "Learn about known issues with document management"
 keywords: encrypt
-ms.date: 10/22/2021
-
+ms.date: 05/06/2022
 ms.custom: 
 ms.topic: article
 applies_to: 
@@ -24,7 +23,6 @@ search.app:
   - Powerplatform
   - Flow
 ---
-
 # Known issues with document management
 
 The customizations and configurations described here can cause issues with the document management feature. 
@@ -108,6 +106,20 @@ This behavior occurs because the SharePoint Documents table is a virtual table a
 
 :::image type="content" source="media/flow-trigger-documents-table.png" alt-text="Low trigger using the SharePoint documents table from Dataverse":::
 
+## "Record is unavailable" message when you attempt to open a file from the SharePoint documents grid
+
+This message might appear when a certain customization is made to the ribbon bar. Ribbon customizations can be implemented by using a third-party tool called Ribbon Workbench. When hiding a button on the ribbon bar, the `Mscrm.OpenRecordItem` command might have also been hidden by using the tool, which can cause the error message.
+
+To resolve this issue, follow these steps.
+
+1. Go to [Power Apps](https://make.powerapps.com/) > **Advanced settings** > **Settings** > **Customizations**.
+1. Select the third-party tool **Ribbon Workbench**, then select the solution that contains the SharePoint document table.
+1. In the **Entity** dropdown list, select **sharepointdocument**.
+1. Under the **Hide Actions** dropdown list, right-click the **Mscrm.OpenRecordItem.Hide** action, and then select **Un-Hide**. 
+
+   :::image type="content" source="media/unhide-openrecorditem.png" alt-text="Select un-hide for the openrecirditem.hide action.":::
+1. Publish the solution.
+
 ## Known issues
 
 ### Document Associated Grid in child entity quick view form
@@ -136,7 +148,7 @@ In 2015, [we announced the deprecation of the list component]( https://cloudblog
 If you are using the list component, you must move your document management to use server-based authentication.
 
 -	For Power Apps and Dynamics 365 apps, see [Switch from the list component or change the SharePoint deployment](switching-list-component-changing-deployment.md).
--	For Dynamics 365 Customer Engagement (on-premises), see [Switching from the list component or changing the deployment](/dynamics365/customerengagement/on-premises/admin/switching-list-component-changing-deployment?view=op-9-0).
+-	For Dynamics 365 Customer Engagement (on-premises), see [Switching from the list component or changing the deployment](/dynamics365/customerengagement/on-premises/admin/switching-list-component-changing-deployment?view=op-9-0&preserve-view=true).
 
 ### See also
 

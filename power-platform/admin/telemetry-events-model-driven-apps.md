@@ -1,11 +1,11 @@
 ---
-title: "Telemetry events for model-driven apps (preview) | Microsoft Docs"
+title: "Telemetry events for model-driven apps | Microsoft Docs"
 description: About telemetry events for model-driven apps.
 services: powerapps
 author: jimholtz
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/04/2021
+ms.date: 05/06/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -16,16 +16,8 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Telemetry events for model-driven apps (preview)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
-
-> [!IMPORTANT]
-> - This is a preview feature.
-> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
-> - This feature is being gradually rolled out across regions and might not be available yet in your region.
-
-## What data is available for model-driven apps?
+# What data is available for model-driven apps?
 
 Performance data related to page loads and Unified Interface (UCI) outbound network requests is available for model-driven apps.  
 
@@ -204,7 +196,7 @@ pageViews
 | summarize count() by tostring(customDimensions.hostType)
 ```
 
-### How do I use Application Insights in conjunction with Monitor?
+### How do I use Application Insights with Monitor?
 [Azure Monitor](https://powerapps.microsoft.com/blog/monitor-now-supports-model-driven-apps/) helps with real-time troubleshooting on a session from the Unified Interface side. The end-to-end transaction requests will probably be available in Application Insights. To look at the logs for a given action, note the activity ID from a row in the event details page in Monitor. You can find the logs by using the following query:
 
 ```kusto
@@ -248,3 +240,10 @@ The **Browser** view of the **Failures** panel contains Unified Interface outgoi
 ### Can I set an alert on the performance threshold for certain form actions? When the alert is received, will it allow a maker to diagnose and troubleshoot the issue?
 
 Yes. You can set up [alerts](/azure/azure-monitor/alerts/tutorial-metric-alert) in Application Insights to monitor the health of your application.
+
+
+
+
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
