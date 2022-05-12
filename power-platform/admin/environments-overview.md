@@ -4,7 +4,7 @@ description: Learn about environments in Power Apps and how to use them
 author: jimholtz
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 03/09/2022
+ms.date: 05/12/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -139,6 +139,37 @@ Select **Edit** to review and edit environment details.
 
 > [!div class="mx-imgBorder"] 
 > ![More environment details.](media/environment-details-more.png "More environment details")
+
+### Environment history
+
+To see when an environment was created, who created it, and the current status, do one of the following.
+
+#### Use All environment actions
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin, Microsoft 365 Global admin, or Microsoft Power Platform admin).
+
+2. Select **Environments** to open the **Environments**.
+
+3. Next to the environment name, select **All environment actions** (...).
+
+4. Select **History**.
+
+   :::image type="content" source="media/environment-history-ellipse.png" alt-text="Select All environment actions to see history.":::
+
+#### Use Recent operation 
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin, Microsoft 365 Global admin, or Microsoft Power Platform admin).
+
+2. Go to **Environments** > [select an environment] > scroll down to the **Recent operation** section.
+
+3. Select **Full history**.
+
+   :::image type="content" source="media/environment-history-recent-operation.png" alt-text="Full history to see history.":::
+
+The history data appears on a new page.
+
+:::image type="content" source="media/environment-history-data.png" alt-text="Environment history data":::
+
 
 ### See also
 [Microsoft Learn: Create and manage environments in Dataverse](/learn/modules/create-manage-environments/)<br />
