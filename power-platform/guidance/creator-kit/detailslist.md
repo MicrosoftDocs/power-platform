@@ -61,7 +61,7 @@ This PCF component can only be used in canvas apps and custom pages.
 | Header visible | Controls the visibility of the header. |
 | Alternate row color | Color of every other row. Accepts CSS color values (for example,  hexadecimal, RGB, predefined) |
 | Selection radio button | Whether to render the **Select all** radio button. |
-| Raise OnRowSelection | Enable to allow **OnRowSelection** events. |
+| Raise OnRowSelection | Enable this property to allow **OnRowSelection** events. |
 
 ## Mapping data to columns
 
@@ -80,8 +80,8 @@ The below table schema must be used in the `Columns` (`column_Items`) property t
 | ColName | A unique key for identifying the column. |
 | ColDisplayName | Name to render on the column header. |
 | ColWidth | Minimum width for the column. |
-| ColSortable | Whether the column has sorting behavior. |
-| ColIsBold | Whether the text is bold. |
+| ColSortable | Determines if the column has sorting behavior. |
+| ColIsBold | Determines if the text is bold or not. |
 | ColResizable | Determines if the column can be resized. |
 | ColShowAsSubTextOf | The ColName value of the parent column this text. Leave blank to display in a separate column. |
 | ColCellType | Provide "link" as the value to make the column selectable. Leave blank for regular text without style. |
