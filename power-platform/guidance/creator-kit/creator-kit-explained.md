@@ -43,6 +43,14 @@ Once the kit has been [installed](setup.md), learn how to add the components int
 
 In this section, you'll learn the details about different apps, templates, and components included with the Creator Kit.
 
+- [Reference App](#reference-app) - an app for you to learn each component
+- [Templates](#templates) - quickly start creating responsive Fluent UI-based apps
+- [Canvas App Template](#canvas-app-template) - a template of canvas app for reuse
+- [Custom Page Template](#custom-page-template) - a template of custom page for reuse
+- [Theme Editor App](#theme-editor-app) - Theme JSON object for styling components consistently
+- [Canvas components](#canvas-components) - sample canvas components
+- [Code components](#code-components) - sample code components
+
 ### Reference App
 
 This app allows you to learn about each component, recommended best practices for optimal user experience, interact with each component, and see the implementation code behind the properties that enables the behavior. We recommend exploring the components of interest in the Reference App before trying to use the components in an actual app.
@@ -112,7 +120,7 @@ Use this app to generate a **Theme JSON** object for styling components consiste
 
     :::image type="content" source="media/theme-editor-json.png" alt-text="Theme Editor App generated Theme JSON.":::
 
-1. Save the Theme JSON as a global variable in the OnStart property of your app, with the palette code block as a property of the `AppTheme` object variable.
+1. Save the Theme JSON as a global variable in the `OnStart` property of your app, with the palette code block as a property of the `AppTheme` object variable.
 
     ```powerapps-dot
     Set( AppTheme, {

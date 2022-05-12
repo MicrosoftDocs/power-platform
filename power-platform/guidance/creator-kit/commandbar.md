@@ -43,8 +43,8 @@ This code component can only be used in canvas apps and custom pages.
 
 | Property | Description |
 | -------- | ----------- |
-| Items | Table with the component items. |
-| Input event | Action that is triggered upon a mouse-click. |
+| `Items` | Table with the component items. |
+| `Input event` | Action that is triggered upon a mouse-click. |
 
 ## Items structure
 
@@ -52,10 +52,10 @@ Each item uses the below schema to visualize data in the component.
 
 | Name | Description |
 | ------ | ----------- |
-| ItemKey | Arbitrary unique string associated with the item. |
-| ItemDisplayName | Text to display in the command bar item. |
-| ItemIconName | [Fluent UI Icon](https://uifabricicons.azurewebsites.net/) by name |
-| ItemOverflow | Set to true for overflow behavior |
+| `ItemKey` | Arbitrary unique string associated with the item. |
+| `ItemDisplayName` | Text to display in the command bar item. |
+| `ItemIconName` | [Fluent UI Icon](https://uifabricicons.azurewebsites.net/) by name |
+| `ItemOverflow` | Set to true for overflow behavior |
 
 Example:
 

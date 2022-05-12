@@ -68,13 +68,13 @@ This code component can only be used in canvas apps and custom pages.
 
 | Property | Description |
 | -------- | ----------- |
-| Tags | A collection/table of tags. The app is responsible for adding/removing tags in responsive to the component raising Add/Remove events (see below). |
-| TagDisplayName | Set to the name of the column that holds the tag display name. |
-| Suggestions | A collection/table of suggestions. |
-| SuggestionDisplayName | set to the name of the column that holds the suggestion display name. |
-| SuggestionSubDisplayName | Optional. Set to the name of the column that holds the secondary line of text.
+| `Tags` | A collection/table of tags. The app is responsible for adding/removing tags in responsive to the component raising Add/Remove events (see below). |
+| `TagDisplayName` | Set to the name of the column that holds the tag display name. |
+| `Suggestions` | A collection/table of suggestions. |
+| `SuggestionDisplayName` | set to the name of the column that holds the suggestion display name. |
+| `SuggestionSubDisplayName`| Optional. Set to the name of the column that holds the secondary line of text.
 
-## On Change event
+## OnChange event
 
 The `TagPicker` component raises an `OnChange` event when tags are added or removed. The properties used are:
 
@@ -83,7 +83,7 @@ The `TagPicker` component raises an `OnChange` event when tags are added or remo
 
 The event should contain an expression similar to:
 
-```vb
+```powerapps-dot
 If(TagPicker.TagEvent="Add" && CountRows(Filter(colTags,name=TagPicker.TagDisplayName))=0,
     Collect(colTags,{name:TagPicker.TagDisplayName})
 );
@@ -95,6 +95,6 @@ If(TagPicker.TagEvent="Remove",
 
 ## Best practices
 
-Refer to [Fluent UI Picker control best practices](https://developer.microsoft.com/fluentui#/controls/web/Picker)
+For more information, see [Fluent UI Picker control best practices](https://developer.microsoft.com/fluentui#/controls/web/Picker)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

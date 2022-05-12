@@ -43,9 +43,9 @@ This code component can only be used in canvas apps and custom pages.
 
 | Property | Description |
 | -------- | ----------- |
-| Items | Table with the items |
-| Max displayed items | Maximum number of items that can be displayed |
-| Overflow index | The index where overflow items are visualized (when all items can't fit in the control width) |
+| `Items` | Table with the items |
+| `Max displayed items` | Maximum number of items that can be displayed |
+| `Overflow index` | The index where overflow items are visualized (when all items can't fit in the control width) |
 
 ## Items structure
 
@@ -53,9 +53,9 @@ Each item uses the below schema to visualize data in the component.
 
 | Name | Description |
 | ------ | ----------- |
-| ItemKey | Arbitrary unique string associated with the breadcrumb item. |
-| ItemDisplayName | Text to display in the breadcrumb item. |
-| ItemClickable | If set to true, enables the item to be clickable. |
+| `ItemKey` | Arbitrary unique string associated with the breadcrumb item. |
+| `ItemDisplayName` | Text to display in the breadcrumb item. |
+| `ItemClickable` | If set to true, enables the item to be clickable. |
 
 Example:
 

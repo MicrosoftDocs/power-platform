@@ -42,26 +42,26 @@ This code component can only be used in canvas apps and custom pages.
 
 | Property | Description |
 | -------- | ----------- |
-| Icon name | Name of the Fluent UI icon |
-| Icon type | Renders the icon as an action button, icon button, or icon only. |
-| Text | Text displayed (action button type only) |
-| Text alignment | Position of the text (action button type only) |
-| Icon color | Color of the icon |
-| Icon size | Size of the icon |
-| Font size | Size of the font (action button type only) |
-| Font color | Color of the font |
-| Fill color | Background fill color of the icon |
-| Border color | Border color of the icon |
-| Border radius | Roundness of the corners |
+| `Icon name` | Name of the Fluent UI icon |
+| `Icon type` | Renders the icon as an action button, icon button, or icon only. |
+| `Text` | Text displayed (action button type only) |
+| `Text alignment` | Position of the text (action button type only) |
+| `Icon color` | Color of the icon |
+| `Icon size` | Size of the icon |
+| `Font size` | Size of the font (action button type only) |
+| `Font color` | Color of the font |
+| `Fill color` | Background fill color of the icon |
+| `Border color` | Border color of the icon |
+| `Border radius` | Roundness of the corners |
 
 ## Additional properties
 
 | Property | Description |
 | -------- | ----------- |
-| Hover icon color | Color of the icon while hovering |
-| Hover font color | Color of the font while hovering |
-| Hover fill color | Color of the fill while hovering |
-| Hover border color | Color of the border while hovering |
+| `Hover icon color` | Color of the icon while hovering |
+| `Hover font color` | Color of the font while hovering |
+| `Hover fill color` | Color of the fill while hovering |
+| `Hover border color` | Color of the border while hovering |
 
 ## Best practices
 

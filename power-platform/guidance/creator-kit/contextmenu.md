@@ -43,9 +43,9 @@ This code component can only be used in canvas apps and custom pages.
 
 | Property | Description |
 | -------- | ----------- |
-| Items | Table with the component items. |
-| Chevron | Set to true to display the chevron icon, indicating more options. |
-| Input event | Action that is triggered upon button-click. |
+| `Items` | Table with the component items. |
+| `Chevron` | Set to true to display the chevron icon, indicating more options. |
+| `Input event` | Action that is triggered upon button-click. |
 
 ## Items structure
 
@@ -53,10 +53,10 @@ Each item uses the below schema to visualize data in the component.
 
 | Name | Description |
 | ------ | ----------- |
-| ItemKey | Arbitrary unique string associated with the item. |
-| ItemDisplayName | Text to display in the context menu item. |
-| ItemIconName | [Fluent UI Icon](https://uifabricicons.azurewebsites.net/) by name |
-| ItemOverflow | Set to true for overflow behavior |
+| `ItemKey` | Arbitrary unique string associated with the item. |
+| `ItemDisplayName` | Text to display in the context menu item. |
+| `ItemIconName` | [Fluent UI Icon](https://uifabricicons.azurewebsites.net/) by name |
+| `ItemOverflow` | Set to true for overflow behavior |
 
 Example:
 

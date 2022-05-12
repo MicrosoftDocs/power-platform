@@ -42,23 +42,23 @@ This code component can only be used in canvas apps, custom pages and model-driv
 
 | Property | Description |
 | -------- | ----------- |
-| Text | Text value currently populating the control |
-| Default | Initial text value of the control |
-| Default height | Initial height of the control |
-| Default width | Initial width of the control |
-| Allow resize | Determines if resize is available and has options for direction (horizontal, vertical) |
+| `Text` | Text value currently populating the control |
+| `Default` | Initial text value of the control |
+| `Default height` | Initial height of the control |
+| `Default width` | Initial width of the control |
+| `Allow resize` | Determines if resize is available and has options for direction (horizontal, vertical) |
 
 ## Additional properties
 
 | Property | Description |
 | -------- | ----------- |
-| Resized height | The current value of the control |
-| Resized width | The current width of the control |
-| Min height | Min height the user is allowed to resize |
-| Max height | Max height the user is allowed to resize |
-| Min width | Min width the user is allowed to resize |
-| Max width | Max width the user is allowed to resize |
-| Left padding adjustment | Compensates for padding on the right |
+| `Resized height` | The current value of the control |
+| `Resized width` | The current width of the control |
+| `Min height` | Min height the user is allowed to resize |
+| `Max height` | Max height the user is allowed to resize |
+| `Min width` | Min width the user is allowed to resize |
+| `Max width` | Max width the user is allowed to resize |
+| `Left padding adjustment` | Compensates for padding on the right |
 
 Other properties are the same as the standard [text input control](/power-apps/maker/canvas-apps/controls/control-text-input).
 

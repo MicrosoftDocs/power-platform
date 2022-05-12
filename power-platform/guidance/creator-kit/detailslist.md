@@ -43,25 +43,25 @@ This code component can only be used in canvas apps and custom pages.
 
 | Property | Description |
 | -------- | ----------- |
-| Items | Required. The data source items table to render. Items can be from any data source because values are mapped in the Columns property (which acts as a schema definition). |
-| Fields | Required. The fields needed are indicated. |
-| Columns | Required. Table mapping definition between the component column and the data source. Use this property to map field names and define specific column behavior. |
+| `Items` | Required. The data source items table to render. Items can be from any data source because values are mapped in the Columns property (which acts as a schema definition). |
+| `Fields` | Required. The fields needed are indicated. |
+| `Columns` | Required. Table mapping definition between the component column and the data source. Use this property to map field names and define specific column behavior. |
 
 ## Additional properties
 
 | Property | Description |
 | -------- | ----------- |
-| Views | View if supported by the data source (for example, Dataverse). |
-| Selection type | Controls how/if the details list manages selection. Options include none, single, multiple |
-| Select rows on focus | Whether rows will be selected when the control is focused. |
-| Page size | Number of items displayed in the page. |
-| Sort column | ColName value to sort by default. |
-| Sort direction | Default sorting direction. |
-| Compact | Whether to render in compact mode. |
-| Header visible | Controls the visibility of the header. |
-| Alternate row color | Color of every other row. Accepts CSS color values (for example,  hexadecimal, RGB, predefined) |
-| Selection radio button | Whether to render the **Select all** radio button. |
-| Raise OnRowSelection | Enable this property to allow **OnRowSelection** events. |
+| `Views` | View if supported by the data source (for example, Dataverse). |
+| `Selection type` | Controls how/if the details list manages selection. Options include none, single, multiple |
+| `Select rows on focus` | Whether rows will be selected when the control is focused. |
+| `Page size` | Number of items displayed in the page. |
+| `Sort column` | ColName value to sort by default. |
+| `Sort direction` | Default sorting direction. |
+| `Compact` | Whether to render in compact mode. |
+| `Header visible` | Controls the visibility of the header. |
+| `Alternate row color` | Color of every other row. Accepts CSS color values (for example,  hexadecimal, RGB, predefined) |
+| `Selection radio button` | Whether to render the **Select all** radio button. |
+| `Raise OnRowSelection` | Enable this property to allow **OnRowSelection** events. |
 
 ## Mapping data to columns
 
@@ -77,14 +77,14 @@ The below table schema must be used in the `Columns` (`column_Items`) property t
 
 | Name | Description |
 | ------ | ----------- |
-| ColName | A unique key for identifying the column. |
-| ColDisplayName | Name to render on the column header. |
-| ColWidth | Minimum width for the column. |
-| ColSortable | Determines if the column has sorting behavior. |
-| ColIsBold | Determines if the text is bold or not. |
-| ColResizable | Determines if the column can be resized. |
-| ColShowAsSubTextOf | The ColName value of the parent column this text. Leave blank to display in a separate column. |
-| ColCellType | Provide "link" as the value to make the column selectable. Leave blank for regular text without style. |
+| `ColName` | A unique key for identifying the column. |
+| `ColDisplayName` | Name to render on the column header. |
+| `ColWidth` | Minimum width for the column. |
+| `ColSortable` | Determines if the column has sorting behavior. |
+| `ColIsBold` | Determines if the text is bold or not. |
+| `ColResizable` | Determines if the column can be resized. |
+| `ColShowAsSubTextOf` | The ColName value of the parent column this text. Leave blank to display in a separate column. |
+| `ColCellType` | Provide "link" as the value to make the column selectable. Leave blank for regular text without style. |
 
 Example:
 

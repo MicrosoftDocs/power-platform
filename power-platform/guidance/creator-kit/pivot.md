@@ -43,7 +43,7 @@ This code component can only be used in canvas apps and custom pages.
 
 | Property | Description |
 | -------- | ----------- |
-| Items | Table with the items |
+| `Items` | Table with the items |
 
 ## Items structure
 
@@ -51,8 +51,8 @@ Each item uses the below schema to visualize data in the component.
 
 | Name | Description |
 | ------ | ----------- |
-| ItemKey | Arbitrary unique string associated with the Pivot item. |
-| ItemDisplayName | Text to display in the Pivot item. |
+| `ItemKey` | Arbitrary unique string associated with the Pivot item. |
+| `ItemDisplayName` | Text to display in the Pivot item. |
 
 Example:
 

@@ -43,15 +43,15 @@ This code component can only be used in canvas apps and custom pages.
 
 | Property | Description |
 | -------- | ----------- |
-| Items | Required. The data source items table to render. |
-| Fields | Required. The fields needed are indicated. |
-| Columns | Required. Table mapping definition between the component column and the data source. Use this property to map field names and define specific column behavior. |
+| `Items` | Required. The data source items table to render. |
+| `Fields` | Required. The fields needed are indicated. |
+| `Columns` | Required. Table mapping definition between the component column and the data source. Use this property to map field names and define specific column behavior. |
 
 ## Additional properties
 
 | Property | Description |
 | -------- | ----------- |
-| Selected key | The key that is selected by default |
+| `Selected key` | The key that is selected by default |
 
 ## Items structure
 
@@ -59,13 +59,13 @@ Each item uses the below schema to visualize data in the component.
 
 | Name | Description |
 | ------ | ----------- |
-| ItemKey | Arbitrary unique string associated with the breadcrumb item. |
-| ItemDisplayName | Text to display in the breadcrumb item. |
-| ItemIconName | Name of the [Fluent UI icon](https://developer.microsoft.com/fluentui#/styles/web/icons) for the item |
-| ItemIconColor | Color of the item icon |
-| ItemExpanded | Whether the item is expanded by default, if there are children items |
-| ItemVisible | Whether the item is rendered |
-| ItemParentKey | ItemKey of the parent the item is nested under |
+| `ItemKey` | Arbitrary unique string associated with the breadcrumb item. |
+| `ItemDisplayName` | Text to display in the breadcrumb item. |
+| `ItemIconName` | Name of the [Fluent UI icon](https://developer.microsoft.com/fluentui#/styles/web/icons) for the item |
+| `ItemIconColor` | Color of the item icon |
+| `ItemExpanded` | Whether the item is expanded by default, if there are children items |
+| `ItemVisible` | Whether the item is rendered |
+| `ItemParentKey` | ItemKey of the parent the item is nested under |
 
 Example:
 

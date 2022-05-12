@@ -41,17 +41,17 @@ This code component can only be used in canvas apps and custom pages.
 
 | Property | Description |
 | -------- | ----------- |
-| Fill color | Background color of the elevation control. |
-| Depth | Depth of the shadow. |
+| `Fill color` | Background color of the elevation control. |
+| `Depth` | Depth of the shadow. |
 
 ## Additional properties
 
 | Property | Description |
 | -------- | ----------- |
-| Hover fill color | Background color of the elevation control while hovering. |
-| Hover depth | Depth of the shadow while hovering. |
-| Padding | Distance between the elevation card and the edge of the control (in each direction: left, right, top, and bottom). |
-| Dark overlay padding | Enable for a dark overlay effect in the padded area. |
+| `Hover fill color` | Background color of the elevation control while hovering. |
+| `Hover depth` | Depth of the shadow while hovering. |
+| `Padding` | Distance between the elevation card and the edge of the control (in each direction: left, right, top, and bottom). |
+| `Dark overlay padding` | Enable for a dark overlay effect in the padded area. |
 
 ## Best practices
 

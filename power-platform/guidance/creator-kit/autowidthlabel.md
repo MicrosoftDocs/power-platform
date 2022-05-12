@@ -41,8 +41,8 @@ This code component can only be used in canvas apps and custom pages.
 
 | Property | Description |
 | -------- | ----------- |
-| Text | Data displayed in the label |
-| AutoWidth | The new width of the label based on the text |
+| `Text` | Data displayed in the label |
+| `AutoWidth` | The new width of the label based on the text |
 
 ## Best practices
 

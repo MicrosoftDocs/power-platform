@@ -41,8 +41,8 @@ This code component can only be used in canvas apps and custom pages.
 
 | Property | Description |
 | -------- | ----------- |
-| KeyConfig | An array of strings indicating which keyboard short cuts to listen for. The string must be serialized using JSON (see below). |
-| OnKey | The keyboard key code that was detected. |
+| `KeyConfig` | An array of strings indicating which keyboard short cuts to listen for. The string must be serialized using JSON (see below). |
+| `OnKey` | The keyboard key code that was detected. |
 
 After adding the Keyboard Shortcuts code component to the form, configure the `KeyConfig` property with an  array of key combinations.
 
