@@ -114,27 +114,22 @@ If you want to use system variables in a Power Fx formula, you must add `System.
 Some system variables are hidden from the variable context menu, and must be accessed with a [Power Fx formula](advanced-power-fx.md).
 
 <!-- best viewed without wordwrap -->
-| Name                                 | Type    | Hidden | Definition                                                      |
-| ------------------------------------ | ------- | ------ | --------------------------------------------------------------- |
-| Conversation.Id                      | string  |        | Unique ID for the current conversation.                         |
-| Conversation.TopicInitialUserMessage | string  |        | User message which triggered the current topic.                 |
-| LastActivity.Id                      | string  |        | ID of the previously sent [activity][].                         |
-| User.IsLoggedIn                      | boolean | ✔      | Only `true` when the user is currently signed in.               |
-| User.Id                              | string  | ✔      | Unique ID of the user.                                          |
-| User.DisplayName                     | string  | ✔      | Display name of the user.                                       |
-| User.AccessToken                     | string  | ✔      | Access token for the user.                                      |
-| User.Language                        | string  | ✔      | Language of the user.                                           |
-| Activity.Channel                     | choice  |        | Channel ID of the current conversation.                         |
-| Activity.ChannelId                   | string  | ✔      | Channel ID of the current conversation, as a string.            |
-| Channel.DisplayName                  | string  | ✔      | Display name of the channel.                                    |
-| Activity.Text                        | string  |        | Last message sent by the user.                                  |
-| Activity.ChannelData                 | any     | ✔      | An object that contains channel-specific content.               |
-| Activity.Value                       | any     | ✔      | Open-ended value.                                               |
-| Activity.Type                        | choice  |        | Type of [activity][].                                           |
-| Activity.TypeId                      | string  | ✔      | Type of [activity][], as a string.                              |
-| Activity.Name                        | string  |        | Name of the event.                                              |
-| Activity.From.Id                     | string  | ✔      | Channel-specific unique ID for the sender.                      |
-| Activity.From.Name                   | string  | ✔      | Channel-specific user-friendly name of the sender. <sup>1</sup> |
+| Name                                 | Type   | Hidden | Definition                                                      |
+| ------------------------------------ | ------ | ------ | --------------------------------------------------------------- |
+| Conversation.Id                      | string |        | Unique ID for the current conversation.                         |
+| Conversation.TopicInitialUserMessage | string |        | User message which triggered the current topic.                 |
+| LastActivity.Id                      | string |        | ID of the previously sent [activity][].                         |
+| Activity.Channel                     | choice |        | Channel ID of the current conversation.                         |
+| Activity.ChannelId                   | string | ✔      | Channel ID of the current conversation, as a string.            |
+| Channel.DisplayName                  | string | ✔      | Display name of the channel.                                    |
+| Activity.Text                        | string |        | Last message sent by the user.                                  |
+| Activity.ChannelData                 | any    | ✔      | An object that contains channel-specific content.               |
+| Activity.Value                       | any    | ✔      | Open-ended value.                                               |
+| Activity.Type                        | choice |        | Type of [activity][].                                           |
+| Activity.TypeId                      | string | ✔      | Type of [activity][], as a string.                              |
+| Activity.Name                        | string |        | Name of the event.                                              |
+| Activity.From.Id                     | string | ✔      | Channel-specific unique ID for the sender.                      |
+| Activity.From.Name                   | string | ✔      | Channel-specific user-friendly name of the sender. <sup>1</sup> |
 
 [activity]: /azure/bot-service/bot-activity-handler-concept
 
