@@ -23,8 +23,6 @@ contributors:
 
 # Use the Creator Kit
 
-## Get started
-
 Before you use the components included with the Creator Kit, use the **Reference App** to learn component behavior and implementation patterns. And learn about how to add components to an app.
 
 The Creator Kit is shipped with the following assets:
@@ -34,14 +32,16 @@ The Creator Kit is shipped with the following assets:
 - **Templates** to quickly start building apps
 - A **Theme Editor** that generates Theme JSON, used to easily style consistent components
 
-## How to add components to an app
+## Learn about adding components to an app
 
 Once the kit has been [installed](setup.md), learn how to add the components into your app:
 
 - How to [add PCF code components to a canvas app](/power-apps/developer/component-framework/component-framework-for-canvas-apps#add-components-to-a-canvas-app)
 - How to [add canvas components to a canvas app](/power-apps/maker/canvas-apps/component-library#import-from-a-component-library)
 
-## Building blocks
+## Create the building blocks
+
+In this section, you'll learn the details about different apps, templates, and components included with the Creator Kit.
 
 ### Reference App
 
