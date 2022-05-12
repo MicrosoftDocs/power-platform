@@ -23,7 +23,7 @@ contributors:
 ---
 # Creator Kit overview
 
-This toolkit helps create Power App experiences on the web & mobile. It contains a component library; [PCF controls](https://docs.microsoft.com/power-apps/developer/component-framework/overview) that are commonly used, and other utilities that increase developer productivity. All components utilize the [Fluent UI](https://developer.microsoft.com/fluentui#/) framework to help easily create consistent, beautiful, and effective user experiences for custom business applications.
+This toolkit helps create Power App experiences on the web & mobile. It contains a component library; [PCF controls](/power-apps/developer/component-framework/overview) that are commonly used, and other utilities that increase developer productivity. All components utilize the [Fluent UI](https://developer.microsoft.com/fluentui#/) framework to help easily create consistent, beautiful, and effective user experiences for custom business applications.
 
 > [!div class="nextstepaction"]
 > [Download the Creator Kit](https://github.com/microsoft/powercat-creator-kit/releases/download/CreatorKit-May2022/CreatorKitCore_1.0.20220510.1_managed.zip)
@@ -52,9 +52,9 @@ If you face issues with:
 
 ## More resources
 
-- Learn how to use [Power Apps](https://docs.microsoft.com/en-us/power-apps/), specifically [Canvas apps](https://docs.microsoft.com/en-us/power-apps/maker/canvas-apps/dev-enterprise-intro) and [Custom Pages](https://docs.microsoft.com/en-us/power-apps/maker/model-driven-apps/model-app-page-overview).
+- Learn how to use [Power Apps](/power-apps), specifically [Canvas apps](canvas-apps/dev-enterprise-intro) and [Custom Pages](/power-apps/maker/model-driven-apps/model-app-page-overview).
 
-- Understand what [Power Apps component framework (PCF)](https://docs.microsoft.com/power-apps/developer/component-framework/custom-controls-overview) components and [Canvas app custom components](https://docs.microsoft.com/power-apps/maker/canvas-apps/create-component) are and how to use them.
+- Understand what [Power Apps component framework (PCF)](/power-apps/developer/component-framework/custom-controls-overview) components and [Canvas app custom components](/power-apps/maker/canvas-apps/create-component) are and how to use them.
 
 - Explore the [Fluent UI documentation](https://developer.microsoft.com/fluentui#/).
 

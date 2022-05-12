@@ -65,7 +65,7 @@ This PCF component can only be used in Canvas apps and Custom Pages.
 ## Mapping data to columns
 To determine which columns are displayed in the Details List, configure the following properties of the Detail List:
 
-1. **Fields**. Add the desired fields by selecting the Edit option in the controls flyout on the right (uses the same interface for modifying [predefined data cards](https://docs.microsoft.com/power-apps/maker/canvas-apps/working-with-cards)).
+1. **Fields**. Add the desired fields by selecting the Edit option in the controls flyout on the right (uses the same interface for modifying [predefined data cards](/power-apps/maker/canvas-apps/working-with-cards)).
 
 1. **Columns**. Provide specific mapping between columns and fields in the `Columns` property.  
 
@@ -83,7 +83,7 @@ The below table schema must be used in the `Columns` (`column_Items`) property t
 | ColShowAsSubTextOf | The ColName value of the parent column this text. Leave blank to display in a seperate column. |
 | ColCellType | Provide 'link' as the value to make the column clickable. Leave blank for regular text without style. |
 
-Example (mapping to the Dataverse [Accounts](https://docs.microsoft.com/power-apps/developer/data-platform/reference/entities/account) system table):
+Example (mapping to the Dataverse [Accounts](/power-apps/developer/data-platform/reference/entities/account) system table):
 
   ```powerapps-dot
 Table(

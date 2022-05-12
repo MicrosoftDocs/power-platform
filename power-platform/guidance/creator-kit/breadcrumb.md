@@ -74,11 +74,11 @@ Example:
 
 
 ## Configure 'On Select' behavior
-Use the [**Switch()**](https://docs.microsoft.com/power-apps/maker/canvas-apps/functions/function-if) formula in the component's `OnSelect` property to configure specific actions for each item by referring to the control's selected `ItemKey` as the switch value.
+Use the [**Switch()**](/power-apps/maker/canvas-apps/functions/function-if) formula in the component's `OnSelect` property to configure specific actions for each item by referring to the control's selected `ItemKey` as the switch value.
 
 Replace the `false` values with appropriate expressions in the Power Fx language. 
 
-As this control is used for navigation, a logical action is to use [navigation functions](https://docs.microsoft.com/power-apps/maker/canvas-apps/functions/function-navigate) (ideally to a relevent screen with the related data loaded).
+As this control is used for navigation, a logical action is to use [navigation functions](/power-apps/maker/canvas-apps/functions/function-navigate) (ideally to a relevent screen with the related data loaded).
 
   ```powerapps-dot
     Switch( Self.Selected.ItemKey,
