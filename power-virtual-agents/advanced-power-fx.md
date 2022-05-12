@@ -24,6 +24,18 @@ For more information, see [Power Fx overview](/power-platform/power-fx/overview)
 - [Create and edit topics](authoring-create-edit-topics.md)
 - [Use variables](authoring-variables.md)
 
+## Use variables in a formula
+
+To use a variable in a Power Fx formula, you must add a prefix depending on the variable's scope:
+
+- For [system variables](authoring-variables.md#system-variables), use `System.`
+- For [global variables](authoring-variables-bot.md), use `Global.`
+- For [topic variables](authoring-variables.md), use `Topic.`
+
+For example, you'd need to use `System.Conversation.Id` to access the respective [system variable](authoring-variables.md#system-variables).
+
+:::image type="content" source="media/advanced-power-fx/variable-prefix.png" alt-text="Screenshot of the Question node with the user's response set to a variable named Var1.":::
+
 ## Use Power Fx to set a variable
 
 In this example, a Power Fx expression is used to convert the user's name to uppercase.
