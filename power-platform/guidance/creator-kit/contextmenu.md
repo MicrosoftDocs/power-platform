@@ -3,10 +3,9 @@ title: Context menu control reference | Creator Kit
 description: Learn about the details and properties of Context menu control in the Creator Kit.
 author: denisem-msft
 manager: devkeydet
-
 ms.component: pa-maker
 ms.topic: conceptual
-ms.date: 05/06/2022
+ms.date: 05/16/2022
 ms.subservice: guidance
 ms.author: demora
 ms.reviewer: tapanm
@@ -21,6 +20,7 @@ contributors:
   - demora-msft
   - mehdis-msft
 ---
+
 # Context menu control
 
 A control used to input commands.
@@ -29,15 +29,15 @@ A control used to input commands.
 
 ## Description
 
-ContextualMenus are lists of commands that are based on the context of selection, mouse hover or keyboard focus. They are one of the most effective and highly used command surfaces, and can be used in a variety of places.
+Contextual menus are lists of commands that are based on the context of selection, mouse hover or keyboard focus. They are one of the most effective and highly used command surfaces, and can be used in a variety of places.
 
-This code component provides a wrapper around the [Fluent UI Context Menu](https://developer.microsoft.com/fluentui#/controls/web/contextualmenu) control bound to a button for use in canvas & custom pages.
+This code component provides a wrapper around the [Fluent UI Context Menu](https://developer.microsoft.com/fluentui#/controls/web/contextualmenu) control bound to a button for use in canvas apps and custom pages.
 
 [View component in the Creator Kit GitHub repository](https://github.com/microsoft/powercat-creator-kit/tree/main/CreatorKitCore/SolutionPackage/Controls/cat_PowerCAT.ContextMenu)
 
 ## Limitations
-This PCF component can only be used in Canvas apps and Custom Pages.
 
+This PCF component can only be used in canvas apps and custom pages.
 
 ## Key properties
 
@@ -48,6 +48,7 @@ This PCF component can only be used in Canvas apps and Custom Pages.
 | Input event | Action that is triggered upon click |
 
 ## Items structure
+
 Each item uses the below schema to visualize data in the component. 
 
 | Name | Description |
@@ -78,6 +79,7 @@ Example:
   ```
 
 ## Configure 'On Select' behavior
+
 Use the [**Switch()**](/power-apps/maker/canvas-apps/functions/function-if) formula in the component's `OnSelect` property to configure specific actions for each item by referring to the control's selected `ItemKey` as the switch value.
 
 Replace the `false` values with appropriate expressions in the Power Fx language.
@@ -95,7 +97,8 @@ Replace the `false` values with appropriate expressions in the Power Fx language
     )
   ```
 
-## Best Practices
+## Best practices
+
 Refer to [Fluent UI Context Menu control best practices](https://developer.microsoft.com/fluentui#/controls/web/contextmenu)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,8 +1,8 @@
 ---
 title: "Creator Kit - Overview | MicrosoftDocs"
 description: Overview of the Creator Kit
-author: mehdis
-manager: mehdis
+author: demora-msft
+manager: devkeydet
 ms.component: pa-maker
 ms.topic: conceptual
 ms.date: 05/16/2022
@@ -18,7 +18,7 @@ search.app:
 contributors:
   - tapanm-msft
   - demora-msft
-  - mehdis-msft
+  - slaouist
 ---
 # Creator Kit overview
 

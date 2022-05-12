@@ -2,7 +2,7 @@
 title: "Use the Creator Kit | Creator Kit"
 description: "The Power Platform CoE Starter Kit is shipped as a single self-contained solution. Learn about the building blocks  designed to help you create Fluent UI based apps."
 author: denisem-msft
-manager: mehdis
+manager: devkeydet
 ms.component: pa-maker
 ms.topic: conceptual
 ms.date: 05/16/2022

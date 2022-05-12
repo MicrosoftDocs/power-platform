@@ -3,10 +3,9 @@ title: Breadcrumb control reference | Creator Kit
 description: Learn about the details and properties of Breadcrumb control in the Creator Kit.
 author: denisem-msft
 manager: devkeydet
-
 ms.component: pa-maker
 ms.topic: conceptual
-ms.date: 05/06/2022
+ms.date: 05/16/2022
 ms.subservice: guidance
 ms.author: demora
 ms.reviewer: tapanm
@@ -21,6 +20,7 @@ contributors:
   - demora-msft
   - mehdis-msft
 ---
+
 # Breadcrumb control
 
 A control used to provide navigation.
@@ -28,6 +28,7 @@ A control used to provide navigation.
 :::image type="content" source="media/breadcrumb.png" alt-text="Breadcrumb control.":::
 
 ## Description
+
 Breadcrumbs should be used as a navigational aid in your app or site. They indicate the current page's location within a hierarchy and help the user understand where they are in relation to the rest of that hierarchy. They also afford one-click access to higher levels of that hierarchy.
 
 This code component provides a wrapper around the [Fluent UI Breadcrumb](https://developer.microsoft.com/fluentui#/controls/web/breadcrumb) control for use in canvas & custom pages. 
@@ -35,8 +36,8 @@ This code component provides a wrapper around the [Fluent UI Breadcrumb](https:/
 [View component in the GitHub repository](https://github.com/microsoft/powercat-creator-kit/tree/main/CreatorKitCore/SolutionPackage/Controls/cat_PowerCAT.Breadcrumb)
 
 ## Limitations
-This PCF component can only be used in Canvas apps and Custom Pages.
 
+This PCF component can only be used in canvas apps and custom pages.
 
 ## Key properties
 
@@ -47,6 +48,7 @@ This PCF component can only be used in Canvas apps and Custom Pages.
 | Overflow index | The index where overflow items are visualized (when all items cannot fit in the control width) |
 
 ## Items structure
+
 Each item uses the below schema to visualize data in the component. 
 
 | Name | Description |
@@ -73,7 +75,8 @@ Example:
   ```
 
 
-## Configure 'On Select' behavior
+## Configure "On Select" behavior
+
 Use the [**Switch()**](/power-apps/maker/canvas-apps/functions/function-if) formula in the component's `OnSelect` property to configure specific actions for each item by referring to the control's selected `ItemKey` as the switch value.
 
 Replace the `false` values with appropriate expressions in the Power Fx language. 
@@ -93,7 +96,8 @@ As this control is used for navigation, a logical action is to use [navigation f
     )
   ```
 
-## Best Practices
+## Best practices
+
 Refer to [Fluent UI Breadcrumb control best practices](https://developer.microsoft.com/fluentui#/controls/web/breadcrumb) for additional help.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

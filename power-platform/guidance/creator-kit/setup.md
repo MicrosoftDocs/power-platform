@@ -2,7 +2,7 @@
 title: "Set up the Creator Kit | MicrosoftDocs"
 description: "Prerequisites and instructions for installing the Creator Kit."
 author: denisem-msft
-manager: mehdis
+manager: devkeydet
 ms.component: pa-maker
 ms.topic: conceptual
 ms.date: 05/16/2022
@@ -18,7 +18,7 @@ search.app:
 contributors:
   - tapanm-msft
   - demora-msft
-  - mehdis-msft
+  - slaouist
 ---
 # Install the Creator Kit
 

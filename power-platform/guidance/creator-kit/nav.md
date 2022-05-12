@@ -3,10 +3,9 @@ title: Nav control reference | Creator Kit
 description: Learn about the details and properties of Nav control in the Creator Kit.
 author: denisem-msft
 manager: devkeydet
-
 ms.component: pa-maker
 ms.topic: conceptual
-ms.date: 05/06/2022
+ms.date: 05/16/2022
 ms.subservice: guidance
 ms.author: demora
 ms.reviewer: tapanm
@@ -19,8 +18,9 @@ search.app:
 contributors:
   - tapanm-msft
   - demora-msft
-  - mehdis-msft
+  - slaouist
 ---
+
 # Nav control
 
 A control used to provide navigation.
@@ -28,6 +28,7 @@ A control used to provide navigation.
 :::image type="content" source="media/nav.png" alt-text="Nav control.":::
 
 ## Description
+
 A navigation pane (Nav) provides links to the main areas of an app or site.
 
 The Nav code component allows using of the [Fluent UI Nav menu component](https://developer.microsoft.com/fluentui#/controls/web/nav) from inside canvas apps and custom pages.
@@ -35,7 +36,8 @@ The Nav code component allows using of the [Fluent UI Nav menu component](https:
 [View component in the Creator Kit GitHub repository](https://github.com/microsoft/powercat-creator-kit/tree/main/CreatorKitCore/SolutionPackage/Controls/cat_PowerCAT.Nav)
 
 ## Limitations
-This PCF component can only be used in Canvas apps and Custom Pages.
+
+This PCF component can only be used in canvas apps and custom pages.
 
 ## Key properties
 
@@ -52,6 +54,7 @@ This PCF component can only be used in Canvas apps and Custom Pages.
 | Selected key | The key that is selected by default |
 
 ## Items structure
+
 Each item uses the below schema to visualize data in the component. 
 
 | Name | Description |
@@ -97,7 +100,8 @@ Table(
 )
   ```
 
-## Configure 'On Select' behavior
+## Configure "On Select" behavior
+
 Use the [**Switch()**](/power-apps/maker/canvas-apps/functions/function-if) formula in the component's `OnSelect` property to configure specific actions for each item by referring to the control's selected `ItemKey` as the switch value.
 
 Replace the `false` values with appropriate expressions in the Power Fx language.
@@ -126,6 +130,7 @@ Replace the `false` values with appropriate expressions in the Power Fx language
   ```
 
 ## Best Practices
+
 Refer to [Fluent UI Nav control best practices](https://developer.microsoft.com/fluentui#/controls/web/nav)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

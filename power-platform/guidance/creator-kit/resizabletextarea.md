@@ -3,7 +3,6 @@ title: Resizable text area control reference | Creator Kit
 description: Learn about the details and properties of Resizable text area control in the Creator Kit.
 author: denisem-msft
 manager: devkeydet
-
 ms.component: pa-maker
 ms.topic: conceptual
 ms.date: 05/06/2022
@@ -19,7 +18,7 @@ search.app:
 contributors:
   - tapanm-msft
   - demora-msft
-  - mehdis-msft
+  - slaouist
 ---
 # Resizable text area control
 
@@ -31,12 +30,13 @@ A component for user input.
 
 Text areas give people a way to enter and edit text. They're used in forms, modal dialogs, tables, and other surfaces where text input is required. 
 
-This component allows the user to resize the text area for convenienience.
+This component allows the user to resize the text area for convenience.
 
 [View component in the Creator Kit GitHub repository](https://github.com/microsoft/powercat-creator-kit/tree/main/CreatorKitCore/SolutionPackage/Controls/cat_PowerCAT.ResizableTextarea)
 
 ## Limitations
-This PCF component can only be used in Canvas apps, Custom Pages and Model driven apps.
+
+This PCF component can only be used in canvas apps, custom pages and model-driven apps.
 
 ## Key properties
 
@@ -62,7 +62,8 @@ This PCF component can only be used in Canvas apps, Custom Pages and Model drive
 
 Other properties are the same as the standard [text input control](/power-apps/maker/canvas-apps/controls/control-text-input).
 
-## Best Practices
+## Best practices
+
 Refer to [Fluent UI text field control best practices](https://developer.microsoft.com/fluentui#/controls/web/textfield) for more guidance.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

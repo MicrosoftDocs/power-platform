@@ -3,10 +3,9 @@ title: Keyboard shortcut control reference | Creator Kit
 description: Learn about the details and properties of Keyboard shortcut control in the Creator Kit.
 author: denisem-msft
 manager: devkeydet
-
 ms.component: pa-maker
 ms.topic: conceptual
-ms.date: 05/06/2022
+ms.date: 05/16/2022
 ms.subservice: guidance
 ms.author: demora
 ms.reviewer: tapanm
@@ -19,21 +18,24 @@ search.app:
 contributors:
   - tapanm-msft
   - demora-msft
-  - mehdis-msft
+  - slaouist
 ---
+
 # Keyboard shortcuts control
 
 A control used to capture and act on keyboard events.
 
 ## Description
+
 This code component registers Key Press event handlers to allow keyboard short cuts to be used inside canvas apps or custom pages. It is not intended for use in model-driven or portal apps.
 
 [View component in the Creator Kit GitHub repository](https://github.com/microsoft/powercat-creator-kit/tree/main/CreatorKitCore/SolutionPackage/Controls/cat_PowerCAT.KeyboardShortcuts)
 
 ## Limitations
+
 Some keyboard shortcuts are used by Power Apps when using maker studio, and some are used by the browser. For this reason, this component will not work for all keyboard shortcuts until the user places focus inside the app.
 
-This PCF component can only be used in Canvas apps and Custom Pages.
+This PCF component can only be used in canvas apps and custom pages.
 
 ## Key properties
 
@@ -44,7 +46,7 @@ This PCF component can only be used in Canvas apps and Custom Pages.
 
 After adding the Keyboard Shortcuts code component to the form, configure the `KeyConfig` property with an  array of key combinations.
 
-E.g.
+For example:
 
 ```json
 ["alt + r","alt + a","alt + d","alt + b","alt + p","alt + l","alt + t","alt + k"]

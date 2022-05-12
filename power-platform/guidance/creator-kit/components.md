@@ -2,7 +2,7 @@
 title: "Overview of Creator Kit components | MicrosoftDocs"
 description: "Learn about the manifest of the Creator Kit components and assets."
 author: denisem-msft
-manager: mehdis
+manager: devkeydet
 ms.component: pa-maker
 ms.topic: conceptual
 ms.date: 05/16/2022
@@ -23,7 +23,7 @@ contributors:
 
 # Overview of Creator Kit components
 
-In this article, we'll see an overview of all the components available in the kit.
+The Creator Kit consists of the following components.
 
 | Code component | Type | Overview | Fluent UI | Canvas apps | Custom pages | Model-driven apps |
 | ---------------------------------------- | -------------- | ------------------------------------------------------------ | --------- | ----------- | ------------ | ----------------- |

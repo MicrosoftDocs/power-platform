@@ -3,10 +3,9 @@ title: Picker control reference | Creator Kit
 description: Learn about the details and properties of Picker control in the Creator Kit.
 author: denisem-msft
 manager: devkeydet
-
 ms.component: pa-maker
 ms.topic: conceptual
-ms.date: 05/06/2022
+ms.date: 05/16/2022
 ms.subservice: guidance
 ms.author: demora
 ms.reviewer: tapanm
@@ -19,8 +18,9 @@ search.app:
 contributors:
   - tapanm-msft
   - demora-msft
-  - mehdis-msft
+  - slaouist
 ---
+
 # Picker control
 
 A control used to provide a search experience.
@@ -28,6 +28,7 @@ A control used to provide a search experience.
 :::image type="content" source="media/Picker.png" alt-text="Picker control.":::
 
 ## Description
+
 Pickers are used to select one or more items, such as tags or files, from a large list.
 
 The Picker code component allows using of the [Fluent UI Picker menu component](https://developer.microsoft.com/fluentui#/controls/web/Pickers) from inside canvas apps and custom pages.
@@ -36,11 +37,11 @@ The Picker code component allows using of the [Fluent UI Picker menu component](
 
 The Tag Picker code component provides the following features:
 
-1. Binds to an input collection for the chosen tags
-1. Binds to an input collection for suggested tags
-1. Allows users to select from suggestions or enter a free text tag
-1. Raises **On Change** event when a user adds or removes a tag
-1. Allows programmatic **Set Focus**
+1. Binds to an input collection for the chosen tags.
+1. Binds to an input collection for suggested tags.
+1. Allows users to select from suggestions or enter a free text tag.
+1. Raises **On Change** event when a user adds or removes a tag.
+1. Allows programmatic **Set Focus**.
 1. Styled to closely match the PILL Spec.
 
 ## Datasets
@@ -48,26 +49,27 @@ The Tag Picker code component provides the following features:
 The Tag Picker has the following input datasets:
 
 - `Tags` - A collection/table of tags. The app is responsible for adding/removing tags in responsive to the component raising Add/Remove events (see below).
-  - `TagDisplayName` - set to the name of the column that holds the tag display name
+  - `TagDisplayName` - set to the name of the column that holds the tag display name.
 - `Suggestions` - A collection/table of suggestions.
   - `SuggestionDisplayName` - set to the name of the column that holds the suggestion display name.
   - `SuggestionSubDisplayName` (Optional) - set to the name of the column that holds the secondary line of text.
 
-The suggestions dataset should be filtered using the `SearchTerm` output property - e.g.
+The suggestions dataset should be filtered using the `SearchTerm` output property. For example:
 
 ```powerapps-dot
 Search(colSuggestions,TagPicker.SearchTerm,"name")
 ```
 
 ## Limitations
-This PCF component can only be used in Canvas apps and Custom Pages.
+
+This PCF component can only be used in canvas apps and custom pages.
 
 ## Key properties
 
 | Property | Description |
 | -------- | ----------- |
 | Tags | A collection/table of tags. The app is responsible for adding/removing tags in responsive to the component raising Add/Remove events (see below). |
-| TagDisplayName | Set to the name of the column that holds the tag display name. | 
+| TagDisplayName | Set to the name of the column that holds the tag display name. |
 | Suggestions | A collection/table of suggestions. |
 | SuggestionDisplayName | set to the name of the column that holds the suggestion display name. |
 | SuggestionSubDisplayName | Optional. Set to the name of the column that holds the secondary line of text.
@@ -91,7 +93,8 @@ If(TagPicker.TagEvent="Remove",
 );
 ```
 
-## Best Practices
+## Best practices
+
 Refer to [Fluent UI Picker control best practices](https://developer.microsoft.com/fluentui#/controls/web/Picker)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

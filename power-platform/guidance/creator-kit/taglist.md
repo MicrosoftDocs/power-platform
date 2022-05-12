@@ -3,10 +3,9 @@ title: Tag list control reference | Creator Kit
 description: Learn about the details and properties of Tag list control in the Creator Kit.
 author: denisem-msft
 manager: devkeydet
-
 ms.component: pa-maker
 ms.topic: conceptual
-ms.date: 05/06/2022
+ms.date: 05/16/2022
 ms.subservice: guidance
 ms.author: demora
 ms.reviewer: tapanm
@@ -21,6 +20,7 @@ contributors:
   - demora-msft
   - mehdis-msft
 ---
+
 # Tag list control
 
 A control used to display data.
@@ -28,13 +28,14 @@ A control used to display data.
 :::image type="content" source="media/taglist.png" alt-text="Tag list control.":::
 
 ## Description
+
 This code component provides a Tag List that provides flexible width rendering bound to a collection.
 
 [View component in the Creator Kit GitHub repository](https://github.com/microsoft/powercat-creator-kit/tree/main/CreatorKitCore/SolutionPackage/Controls/cat_PowerCAT.TagList)
 
 ## Limitations
-This PCF component can only be used in Canvas apps and Custom Pages.
 
+This PCF component can only be used in canvas apps and custom pages.
 
 ## Key properties
 
@@ -43,7 +44,8 @@ This PCF component can only be used in Canvas apps and Custom Pages.
 | Items | Table with the items |
 
 ## Items structure
-Each item uses the below schema to visualize data in the component. 
+
+Each item uses the below schema to visualize data in the component.
 
 | Name | Description |
 | ------ | ----------- |
@@ -93,6 +95,5 @@ Table(
 }
 )
   ```
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

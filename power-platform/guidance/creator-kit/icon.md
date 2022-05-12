@@ -3,10 +3,9 @@ title: Icon control reference | Creator Kit
 description: Learn about the details and properties of Icon control in the Creator Kit.
 author: denisem-msft
 manager: devkeydet
-
 ms.component: pa-maker
 ms.topic: conceptual
-ms.date: 05/06/2022
+ms.date: 05/16/2022
 ms.subservice: guidance
 ms.author: demora
 ms.reviewer: tapanm
@@ -19,7 +18,7 @@ search.app:
 contributors:
   - tapanm-msft
   - demora-msft
-  - mehdis-msft
+  - slaouist
 ---
 # Icon control
 
@@ -31,13 +30,13 @@ A control used to display Fluent UI icons.
 
 This control renders Fluent UI icons based on the name. Provides ability to easily create an Icon Button & Action Button with custom styling.
 
-For a list of icons, visit our [icon documentation](https://developer.microsoft.com/fluentui#/styles/web/icons).
+For a list of icons, go to [Fluent UI icons](https://developer.microsoft.com/fluentui#/styles/web/icons).
 
 [View component in the Creator Kit GitHub repository](https://github.com/microsoft/powercat-creator-kit/tree/main/CreatorKitCore/SolutionPackage/Controls/cat_PowerCAT.Icon)
 
 ## Limitations
-This PCF component can only be used in Canvas apps and Custom Pages.
 
+This PCF component can only be used in canvas apps and custom pages.
 
 ## Key properties
 
@@ -64,7 +63,8 @@ This PCF component can only be used in Canvas apps and Custom Pages.
 | Hover fill color | Color of the fill while hovering |
 | Hover border color | Color of the border while hovering |
 
-## Best Practices
+## Best practices
+
 Refer to [Fluent UI Icon control best practices](https://developer.microsoft.com/fluentui#/controls/web/contextmenu)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
