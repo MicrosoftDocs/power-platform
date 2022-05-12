@@ -16,7 +16,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Use Customer Lockbox for secure access to customer data in Microsoft Power Platform (preview)
+# Use Customer Lockbox for secure access to customer data in Power Platform (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
