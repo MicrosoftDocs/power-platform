@@ -49,15 +49,15 @@ Each item uses the below schema to visualize data in the component.
 
 | Name | Description |
 | ------ | ----------- |
-| ItemDisplayName | The Display Name of the command/tab/menu item
-| ItemKey | The key to use to indicate which item is selected, and when adding sub items. The keys must be unique.
-| ItemEnabled | Set to false if the option is disabled
-| ItemVisible | Set to false if the option is not visible
-| ItemChecked | Set to true if the option is checked (e.g. split buttons in a command bar)
-| ItemIconName | The Fluent UI icon to use (see Fluent UI icons)
-| ItemIconColor | The color to render the icon as (e.g. named, rgb or hex value)
-| ItemTextColor | The color of the text inside the tag
-| ItemBackgroundColor | The color of the tag background
+| ItemDisplayName | The Display Name of the command/tab/menu item. |
+| ItemKey | The key to use to indicate which item is selected, and when adding sub items. The keys must be unique. |
+| ItemEnabled | Set to false if the option is disabled. |
+| ItemVisible | Set to false if the option isn't visible. |
+| ItemChecked | Set to true if the option is checked (for example, split buttons in a command bar). |
+| ItemIconName | The Fluent UI icon to use (see [Fluent UI icons](icon.md)). |
+| ItemIconColor | The color to render the icon as (for example, named, RGB or hex value). |
+| ItemTextColor | The color of the text inside the tag. |
+| ItemBackgroundColor | The color of the tag background. |
 
 Example:
 

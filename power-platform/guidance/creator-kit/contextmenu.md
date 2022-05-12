@@ -29,7 +29,7 @@ A control used to input commands.
 
 ## Description
 
-Contextual menus are lists of commands that are based on the context of selection, mouse hover or keyboard focus. They are one of the most effective and highly used command surfaces, and can be used in a variety of places.
+Contextual menus are lists of commands that are based on the context of selection, mouse hover or keyboard focus. They're one of the most effective and highly used command surfaces, and can be used in various places.
 
 This code component provides a wrapper around the [Fluent UI Context Menu](https://developer.microsoft.com/fluentui#/controls/web/contextualmenu) control bound to a button for use in canvas apps and custom pages.
 
@@ -43,13 +43,13 @@ This PCF component can only be used in canvas apps and custom pages.
 
 | Property | Description |
 | -------- | ----------- |
-| Items | Table with the component items |
-| Chevron | Set to true to display the chevron icon, indicating more options |
-| Input event | Action that is triggered upon click |
+| Items | Table with the component items. |
+| Chevron | Set to true to display the chevron icon, indicating more options. |
+| Input event | Action that is triggered upon button-click. |
 
 ## Items structure
 
-Each item uses the below schema to visualize data in the component. 
+Each item uses the below schema to visualize data in the component.
 
 | Name | Description |
 | ------ | ----------- |
@@ -99,6 +99,6 @@ Replace the `false` values with appropriate expressions in the Power Fx language
 
 ## Best practices
 
-Refer to [Fluent UI Context Menu control best practices](https://developer.microsoft.com/fluentui#/controls/web/contextmenu)
+For more information, see [Fluent UI Context Menu control best practices](https://developer.microsoft.com/fluentui#/controls/web/contextmenu).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

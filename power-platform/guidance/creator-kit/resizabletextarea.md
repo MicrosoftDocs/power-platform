@@ -5,7 +5,7 @@ author: denisem-msft
 manager: devkeydet
 ms.component: pa-maker
 ms.topic: conceptual
-ms.date: 05/06/2022
+ms.date: 05/16/2022
 ms.subservice: guidance
 ms.author: demora
 ms.reviewer: tapanm
@@ -28,7 +28,7 @@ A component for user input.
 
 ## Description
 
-Text areas give people a way to enter and edit text. They're used in forms, modal dialogs, tables, and other surfaces where text input is required. 
+Text areas give people a way to enter and edit text. They're used in forms, modal dialogs, tables, and other surfaces where text input is required.
 
 This component allows the user to resize the text area for convenience.
 
@@ -64,6 +64,6 @@ Other properties are the same as the standard [text input control](/power-apps/m
 
 ## Best practices
 
-Refer to [Fluent UI text field control best practices](https://developer.microsoft.com/fluentui#/controls/web/textfield) for more guidance.
+For more information, see [Fluent UI text field control best practices](https://developer.microsoft.com/fluentui#/controls/web/textfield).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

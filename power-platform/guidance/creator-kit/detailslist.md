@@ -43,9 +43,9 @@ This PCF component can only be used in canvas apps and custom pages.
 
 | Property | Description |
 | -------- | ----------- |
-| Items | Required. The data source items table to render. This can be any data source because values are mapped in the Columns property (which acts as a schema definition). |
+| Items | Required. The data source items table to render. Items can be from any data source because values are mapped in the Columns property (which acts as a schema definition). |
 | Fields | Required. The fields needed are indicated. |
-| Columns | Required. Table mapping definition between the component column and the data source. Use this to map field names and define specific column behavior. |
+| Columns | Required. Table mapping definition between the component column and the data source. Use this property to map field names and define specific column behavior. |
 
 ## Additional properties
 
@@ -61,7 +61,7 @@ This PCF component can only be used in canvas apps and custom pages.
 | Header visible | Controls the visibility of the header. |
 | Alternate row color | Color of every other row. Accepts CSS color values (for example,  hexadecimal, RGB, predefined) |
 | Selection radio button | Whether to render the **Select all** radio button. |
-| Raise OnRowSelection | Enable to allow OnRowSelection events. |
+| Raise OnRowSelection | Enable to allow **OnRowSelection** events. |
 
 ## Mapping data to columns
 
@@ -84,7 +84,7 @@ The below table schema must be used in the `Columns` (`column_Items`) property t
 | ColIsBold | Whether the text is bold. |
 | ColResizable | Determines if the column can be resized. |
 | ColShowAsSubTextOf | The ColName value of the parent column this text. Leave blank to display in a separate column. |
-| ColCellType | Provide 'link' as the value to make the column clickable. Leave blank for regular text without style. |
+| ColCellType | Provide "link" as the value to make the column selectable. Leave blank for regular text without style. |
 
 Example:
 
@@ -145,6 +145,6 @@ If( Self.EventName = "CellAction",
 
 ## Best practices
 
-Refer to [Fluent UI Details List control best practices](https://developer.microsoft.com/fluentui#/controls/web/detailslist)
+For more information, see [Fluent UI Details List control best practices](https://developer.microsoft.com/fluentui#/controls/web/detailslist).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

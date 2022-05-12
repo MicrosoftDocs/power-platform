@@ -46,6 +46,6 @@ This PCF component can only be used in canvas apps and custom pages.
 
 ## Best practices
 
-Refer to [Fluent UI Label control best practices](https://developer.microsoft.com/en-us/fluentui#/controls/web/label)
+For more information, see [Fluent UI Label control best practices](https://developer.microsoft.com/en-us/fluentui#/controls/web/label).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

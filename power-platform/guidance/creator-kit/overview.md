@@ -22,7 +22,7 @@ contributors:
 ---
 # Creator Kit overview
 
-The Creator Kit toolkit helps you create Power Apps experiences on the web & mobile platforms by making several easy to use sample controls and components available. The toolkit contains a component library, several commonly used [Power Apps component framework (PCF) controls](/power-apps/developer/component-framework/overview), and other utilities that increase developer productivity. 
+The Creator Kit helps you create Power Apps experiences on the web & mobile platforms by making several easy to use sample controls and components available. The toolkit contains a component library, several commonly used [Power Apps component framework (PCF) controls](/power-apps/developer/component-framework/overview), and other utilities that increase developer productivity. 
 
 All included controls and components utilize the [Fluent UI](https://developer.microsoft.com/fluentui#/) framework to help you easily create consistent, beautiful, and effective user experiences for custom business applications.
 

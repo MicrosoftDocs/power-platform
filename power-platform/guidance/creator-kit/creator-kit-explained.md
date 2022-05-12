@@ -171,7 +171,8 @@ View the code components in the [components reference page](components.md).
 ## Deploying apps with Creator Kit components
 
 Avoid solution dependency issues when deploying an app by configuring solutions properly. Apps that use kit components can't be built outside of a solution and require solutions for importing and exporting.
-- Build apps that use Creator Kit components in their own separate, unmanaged solution during development.
+
+- Build apps that use Creator Kit components in their own separate and unmanaged solution during development.
 - When deploying an app with the components, make sure the Creator Kit (managed solution) is already installed in the target environment, or explicitly include the components used in the app in the solution.
 
 For more information about general guidance, see [solution import troubleshooting tips](/troubleshoot/dynamics-365/sales/troubleshoot-solution-import-errors-in-dynamics-365).

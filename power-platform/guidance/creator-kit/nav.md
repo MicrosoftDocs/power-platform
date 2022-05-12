@@ -45,7 +45,7 @@ This PCF component can only be used in canvas apps and custom pages.
 | -------- | ----------- |
 | Items | Required. The data source items table to render. |
 | Fields | Required. The fields needed are indicated. |
-| Columns | Required. Table mapping definition between the component column and the data source. Use this to map field names and define specific column behavior. |
+| Columns | Required. Table mapping definition between the component column and the data source. Use this property to map field names and define specific column behavior. |
 
 ## Additional properties
 
@@ -129,7 +129,7 @@ Replace the `false` values with appropriate expressions in the Power Fx language
     )
   ```
 
-## Best Practices
+## Best practices
 
 Refer to [Fluent UI Nav control best practices](https://developer.microsoft.com/fluentui#/controls/web/nav)
 

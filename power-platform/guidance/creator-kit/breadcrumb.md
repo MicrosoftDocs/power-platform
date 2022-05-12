@@ -29,7 +29,7 @@ A control used to provide navigation.
 
 ## Description
 
-Breadcrumbs should be used as a navigational aid in your app or site. They indicate the current page's location within a hierarchy and help the user understand where they are in relation to the rest of that hierarchy. They also afford one-click access to higher levels of that hierarchy.
+Breadcrumbs should be used as a navigational aid in your app or site. They indicate the current page's location within a hierarchy and help the user understand where they are in relation to the rest of that hierarchy. Breadcrumb also provides one-click access to higher levels of that hierarchy.
 
 This code component provides a wrapper around the [Fluent UI Breadcrumb](https://developer.microsoft.com/fluentui#/controls/web/breadcrumb) control for use in canvas & custom pages. 
 
@@ -45,7 +45,7 @@ This PCF component can only be used in canvas apps and custom pages.
 | -------- | ----------- |
 | Items | Table with the items |
 | Max displayed items | Maximum number of items that can be displayed |
-| Overflow index | The index where overflow items are visualized (when all items cannot fit in the control width) |
+| Overflow index | The index where overflow items are visualized (when all items can't fit in the control width) |
 
 ## Items structure
 
@@ -81,7 +81,7 @@ Use the [**Switch()**](/power-apps/maker/canvas-apps/functions/function-if) form
 
 Replace the `false` values with appropriate expressions in the Power Fx language. 
 
-As this control is used for navigation, a logical action is to use [navigation functions](/power-apps/maker/canvas-apps/functions/function-navigate) (ideally to a relevent screen with the related data loaded).
+As this control is used for navigation, a logical action is to use [navigation functions](/power-apps/maker/canvas-apps/functions/function-navigate) (ideally to a relevant screen with the related data loaded).
 
   ```powerapps-dot
     Switch( Self.Selected.ItemKey,
@@ -98,6 +98,6 @@ As this control is used for navigation, a logical action is to use [navigation f
 
 ## Best practices
 
-Refer to [Fluent UI Breadcrumb control best practices](https://developer.microsoft.com/fluentui#/controls/web/breadcrumb) for additional help.
+For more information, see [Fluent UI Breadcrumb control best practices](https://developer.microsoft.com/fluentui#/controls/web/breadcrumb).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

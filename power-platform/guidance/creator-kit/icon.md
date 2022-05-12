@@ -28,7 +28,7 @@ A control used to display Fluent UI icons.
 
 ## Description
 
-This control renders Fluent UI icons based on the name. Provides ability to easily create an Icon Button & Action Button with custom styling.
+This control renders Fluent UI icons based on the name. Allows you to easily create an Icon Button & Action Button with custom styling.
 
 For a list of icons, go to [Fluent UI icons](https://developer.microsoft.com/fluentui#/styles/web/icons).
 

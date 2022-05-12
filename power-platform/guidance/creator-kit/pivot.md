@@ -29,7 +29,7 @@ A control used to provide navigation.
 
 ## Description
 
-The Pivot control and related tabs pattern are used for navigating frequently accessed, distinct content categories. Pivots allow for navigation between two or more content views and relies on text headers to articulate the different sections of content.
+The Pivot control and related tabs pattern are used for navigating frequently accessed, distinct content categories. Pivots allow for navigation between two or more content views and rely on text headers to articulate the different sections of content.
 
 This code component provides a wrapper around the [Fluent UI Pivot](https://developer.microsoft.com/fluentui#/controls/web/pivot) control for use in canvas and custom pages.
 
@@ -77,7 +77,6 @@ Table(
 )
   ```
 
-
 ## Configure tab behavior
 
 Coordinate tab pages by associating the `Visible` property of dependent components in your app (for example, a container that represents a page) with the value of `Pivot1.Selected.ItemKey`.
@@ -88,8 +87,8 @@ Coordinate tab pages by associating the `Visible` property of dependent componen
 Pivot1.Selected.ItemKey = "tabFile"
   ```
 
-## Best Practices
+## Best practices
 
-Refer to [Fluent UI Pivot control best practices](https://developer.microsoft.com/fluentui#/controls/web/pivot) for additional guidance.
+For more information, see [Fluent UI Pivot control best practices](https://developer.microsoft.com/fluentui#/controls/web/pivot).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

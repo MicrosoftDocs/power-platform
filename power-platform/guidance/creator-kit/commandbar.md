@@ -43,11 +43,12 @@ This PCF component can only be used in canvas apps and custom pages.
 
 | Property | Description |
 | -------- | ----------- |
-| Items | Table with the component items |
-| Input event | Action that is triggered upon click |
+| Items | Table with the component items. |
+| Input event | Action that is triggered upon a mouse-click. |
 
 ## Items structure
-Each item uses the below schema to visualize data in the component. 
+
+Each item uses the below schema to visualize data in the component.
 
 | Name | Description |
 | ------ | ----------- |
@@ -116,6 +117,6 @@ Replace the `false` values with appropriate expressions in the Power Fx language
 
 ## Best Practices
 
-Refer to [Fluent UI Command bar control best practices](https://developer.microsoft.com/fluentui#/controls/web/commandbar) for general best practices related to this control.
+For more information about general best practices about this control, see [Fluent UI Command bar control best practices](https://developer.microsoft.com/fluentui#/controls/web/commandbar).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

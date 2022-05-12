@@ -53,7 +53,8 @@ This PCF component can only be used in canvas apps and custom pages.
 | Padding | Distance between the elevation card and the edge of the control (in each direction: left, right, top, and bottom). |
 | Dark overlay padding | Enable for a dark overlay effect in the padded area. |
 
-## Best Practices
-Refer to [Fluent UI Elevation control best practices](https://developer.microsoft.com/fluentui#/styles/web/elevation)
+## Best practices
+
+For more information, see [Fluent UI Elevation control best practices](https://developer.microsoft.com/fluentui#/styles/web/elevation).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
