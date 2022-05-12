@@ -13,9 +13,9 @@ ms.custom: authoring, ceX
 ms.collection: virtual-agent
 ---
 
-[!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
-
 # Use entities and slot filling in Power Virtual Agents bots
+
+[!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
 
 A big part of bot conversations in Power Virtual Agents is natural language understanding, which is the ability for the AI to understand a user's intent. For example, natural language understanding is involved when a user might say "I tried to use my gift card but it doesn't work" and the bot is able to route the user to the topic related to gift cards not working—even if that exact phrase isn't listed as a trigger phrase.
 

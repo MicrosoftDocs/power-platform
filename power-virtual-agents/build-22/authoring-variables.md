@@ -14,9 +14,9 @@ ms.custom: authoring, ceX
 ms.collection: virtual-agent
 ---
 
-[!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
-
 # Use variables
+
+[!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
 
 Save customers' responses in a bot conversation to variables and reuse them later in the conversation. Or, use variables to create logical expressions that dynamically route the customer down different conversation paths.
 

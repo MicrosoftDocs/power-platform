@@ -14,9 +14,9 @@ ms.custom: analysis, ceX
 ms.collection: virtual-agent
 ---
 
-[!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
-
 # Analyze customer satisfaction for Power Virtual Agents bots
+
+[!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
 
 The Customer Satisfaction page provides a detailed view of customer satisfaction (CSAT) survey data, including the average CSAT score over time and the topics that are having the most impact on the CSAT score.
 

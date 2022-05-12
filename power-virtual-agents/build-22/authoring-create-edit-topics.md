@@ -16,9 +16,9 @@ searchScope:
   - "Power Virtual Agents"
 ---
 
-[!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
-
 # Create and edit topics in your Power Virtual Agents bot
+
+[!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
 
 In Power Virtual Agents, a topic defines a how a bot conversation plays out.
 

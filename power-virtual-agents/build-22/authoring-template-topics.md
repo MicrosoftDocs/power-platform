@@ -13,9 +13,9 @@ ms.custom: authoring, ceX
 ms.collection: virtual-agent
 ---
 
-[!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
-
 # Use sample topics in Power Virtual Agents
+
+[!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
 
 Power Virtual Agents includes a set of three samples from which you can see examples of topics. These samples range from simple to complex scenarios that use [conditional branching](authoring-create-edit-topics.md) and [custom entities](advanced-entities-slot-filling.md).
 

@@ -13,9 +13,9 @@ ms.custom: authoring, ceX
 ms.collection: virtual-agent
 ---
 
-[!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
-
 # Test your Power Virtual Agents bot
+
+[!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
 
 As you design your bot in Power Virtual Agents, you can use the **Test bot** pane to see how the bot leads a customer through the bot conversation.
 

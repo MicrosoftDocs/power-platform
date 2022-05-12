@@ -13,9 +13,9 @@ ms.custom: "customization, ce06102020"
 ms.collection: virtual-agent
 ---
 
-[!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
-
 # Customize the look and feel of the bot's default canvas
+
+[!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
 
 After you create and [publish a bot](publication-fundamentals-publish-channels.md), your customers can [use the bot's Web Chat canvas to interact with it](publication-connect-bot-to-web-channels.md).
 

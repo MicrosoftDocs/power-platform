@@ -14,9 +14,9 @@ ms.custom: authoring, topics, variables, ceX
 ms.collection: virtual-agent
 ---
 
-[!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
-
 # Add cards to bot responses
+
+[!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
 
 Cards add rich multimedia responses to **Question** and **Message** nodes. With cards, you can go beyond basic text replies by adding images, videos, and interactive elements.
 

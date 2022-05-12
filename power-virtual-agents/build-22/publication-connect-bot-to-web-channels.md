@@ -13,9 +13,9 @@ ms.custom: "publication, authoring, ceX"
 ms.collection: virtual-agent
 ---
 
-[!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
-
 # Configure the demo website and add the bot to your live website
+
+[!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
 
 When publishing the bot to the web, you can publish to a prebuilt demo website (which you can use to share the bot with your teammates and stakeholders) and to your own live website.
   

@@ -13,9 +13,9 @@ ms.custom: analysis, ceX
 ms.collection: virtual-agent
 ---
 
-[!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
-
 # Analyze session information in Power Virtual Agents
+
+[!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
 
 By default, you can download up to seven days of bot conversation transcript sessions from the past 30 days directly from the Power Virtual Agents portal.
 

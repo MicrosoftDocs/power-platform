@@ -13,9 +13,9 @@ ms.custom: analysis, ceX
 ms.collection: virtual-agent
 ---
 
-[!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
-
 # Work with conversation transcripts
+
+[!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
 
 When you [export Power Virtual Agents chatbot conversation transcripts from Microsoft Dataverse](analytics-sessions.md), you will be presented with many fields.
 
