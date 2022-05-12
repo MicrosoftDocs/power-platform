@@ -16,7 +16,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Preview: Create custom dashboards by using Power Platform inventory and usage data (preview)
+# Create custom dashboards by using Power Platform inventory and usage data (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 

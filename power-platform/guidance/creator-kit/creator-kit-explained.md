@@ -22,7 +22,6 @@ contributors:
   - mehdis-msft
 ---
 # Use the Creator Kit
-This article provide guidance on how to use each of the components in the Creator Kit.
 
 ## Get started
 We recommend following these steps before using the components to make getting started easier:
@@ -37,8 +36,8 @@ The Creator Kit is shipped with the following assets:
 
 ## How to add components to an app
 Once the kit has been [installed](setup.md), learn how to add the components into your app.
-- How to [add PCF code components to a Canvas apps](https://docs.microsoft.com/power-apps/developer/component-framework/component-framework-for-canvas-apps#add-components-to-a-canvas-app)
-- How to [add Canvas components to a Canvas app](https://docs.microsoft.com/power-apps/maker/canvas-apps/component-library#import-from-a-component-library)
+- How to [add PCF code components to a Canvas apps](/power-apps/developer/component-framework/component-framework-for-canvas-apps#add-components-to-a-canvas-app)
+- How to [add Canvas components to a Canvas app](/power-apps/maker/canvas-apps/component-library#import-from-a-component-library)
 
 ## Building blocks
 
@@ -58,7 +57,7 @@ The templates are designed to help quickly start creating responsive Fluent UI b
    ![Canvas app and Custom Page Templates](media/template-app.png "Canvas Template App")
 
 #### Canvas Template app
-Make a copy of this app when creating a new [canvas app](https://docs.microsoft.com/power-apps/maker/canvas-apps/getting-started) that require the components in the kit.
+Make a copy of this app when creating a new [canvas app](/power-apps/maker/canvas-apps/getting-started) that require the components in the kit.
 
 
 How to make a copy of the Canvas Template:
@@ -73,7 +72,7 @@ How to make a copy of the Canvas Template:
 Only edit the copy going forward so others can utilize the template app from the same starting point.
 
 #### Custom Page Template
-Make a copy of this page when creating a new custom page for a [converged app](https://docs.microsoft.com/power-apps/maker/model-driven-apps/model-app-page-overview).
+Make a copy of this page when creating a new custom page for a [converged app](/power-apps/maker/model-driven-apps/model-app-page-overview).
 
    ![Custom Page Template](media/custom-page-studio.png "Custom Page Template")
 
@@ -144,26 +143,23 @@ ColorValue( AppTheme.palette.white )
 ```
 
 ### Canvas Components
-These components are defined in the component library called "Power CAT Component Library", and are implemented with [Canvas app custom components](https://docs.microsoft.com/power-apps/maker/canvas-apps/create-component).
+These components are defined in the component library called "Power CAT Component Library", and are implemented with [Canvas app custom components](/power-apps/maker/canvas-apps/create-component).
 
-- Use the Reference App to learn how each of the Canvas components are properly configured.
-- When ready to use a component, [add the Canvas components to your Canvas app](https://docs.microsoft.com/power-apps/maker/canvas-apps/component-library#import-from-a-component-library).
-
-![Canvas Components](media/canvascomponents.png "Canvas Components")
+   ![Canvas Components](media/canvascomponents.png "Canvas Components")
 
 ### Code Components
-Implemented with [Power Apps component framework (PCF)](https://docs.microsoft.com/power-apps/developer/component-framework/custom-controls-overview), which are defined as individual custom controls in the solution. 
+Implemented with [Power Apps component framework (PCF)](/power-apps/developer/component-framework/custom-controls-overview), which are defined as individual custom controls in the solution.
 
 View the code components in the [components reference page](components.md).
 
    ![Code Components](media/pcfcomponents.png "Code Components")
 
 ## Deploying apps with Creator Kit components
-When deploying an app to other Environments (for testing and production releases), make sure to configure the solution and target Environment properly.
-- Build apps that use Creator Kit components in a separate, unmanaged solution during development.
-- Install the Creator Kit managed solution in the target Environment before importing your custom solution that depends on the components. Alternatively, you could explicitly include the components used in your custom solution.
+Avoid solution dependency issues when deploying an app by configuring solutions properly. Apps that use kit components cannot be built outside of a solution and require solutions for importing and exporting.
+- Build apps that use Creator Kit components in their own separate, unmanaged solution during development.
+- When deploying an app with the components, make sure the Creator Kit (managed solution) is already installed in the target Environment, or explicitly include the components used in the app in the solution.
 
-See [solution import troubleshooting tips](https://docs.microsoft.com/troubleshoot/dynamics-365/sales/troubleshoot-solution-import-errors-in-dynamics-365) for more general guidance.
+See [solution import troubleshooting tips](/troubleshoot/dynamics-365/sales/troubleshoot-solution-import-errors-in-dynamics-365) for more general guidance.
 
 > [!div class="nextstepaction"]
 > [Next step: View the components reference](components.md)

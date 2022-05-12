@@ -153,7 +153,7 @@ Premium connectors list at October 2019 (will expand over time):
 - Azure Queues  
 - Azure Resource Manager  
 - Azure SQL  
-- Azure SQL Data Warehouse  
+- Azure Synapse Analytics 
 - Azure Table Storage  
 - Dynamics 365  
 - Dynamics 365 Customer Insights  

@@ -98,7 +98,7 @@ Table(
   ```
 
 ## Configure 'On Select' behavior
-Use the [**Switch()**](https://docs.microsoft.com/power-apps/maker/canvas-apps/functions/function-if) formula in the component's `OnSelect` property to configure specific actions for each item by referring to the control's selected `ItemKey` as the switch value.
+Use the [**Switch()**](/power-apps/maker/canvas-apps/functions/function-if) formula in the component's `OnSelect` property to configure specific actions for each item by referring to the control's selected `ItemKey` as the switch value.
 
 Replace the `false` values with appropriate expressions in the Power Fx language.
 

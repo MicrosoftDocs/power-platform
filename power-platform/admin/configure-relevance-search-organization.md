@@ -4,7 +4,7 @@ description: Configure Dataverse search to improve search results and performanc
 author: jimholtz
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/09/2021
+ms.date: 05/05/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -47,7 +47,7 @@ For more information about Dataverse search, see [Search for tables and rows by
 
 - Dataverse search is available in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation).
 
-- Dataverse search is not available for Customer Engagement (on-premises) organizations. Quick Find is the only search option for customer engagement apps organizations and Customer Engagement (on-premises) organizations.
+- Dataverse search isn't available for Customer Engagement (on-premises) organizations. Quick Find is the only search option for customer engagement apps organizations and Customer Engagement (on-premises) organizations.
 
 - Full-text Quick Find is available for Customer Engagement (on-premises) organizations, starting with Dynamics CRM 2015 Update Rollup 1.
 
@@ -81,7 +81,7 @@ To enable Dataverse search, do the following:
 
    :::image type="content" source="media/ppac-dataverse-search1.png" alt-text="Set Dataverse search to On.":::
 
-If the Dataverse search index needs to be provisioned, you will see an indication that provisioning is in progress. Once the index is provisioned, it may take anywhere between an hour or more to complete a full sync for average size organizations, to a couple of days for very large size organizations.
+If the Dataverse search index needs to be provisioned, you'll see an indication that provisioning is in progress. Once the index is provisioned, it may take anywhere between an hour or more to complete a full sync for average size organizations, to a couple of days for very large size organizations.
 
 > [!IMPORTANT]
 > Disabling Dataverse search will deprovision and remove the index within a period of 12 hours. If you enable Dataverse search after about 12 hours of disabling it, a fresh index is provisioned, followed by a full sync that may take up to an hour or more for average size organizations, and a couple of days for very large size organizations. Consider this when you're disabling Dataverse search temporarily.
@@ -135,7 +135,7 @@ Setting up search starts with reviewing the tables that are enabled for Datavers
 
    :::image type="content" source="media/maker-portal2.gif" alt-text="Select Manage search index.":::
 
-Although there is no limit on how many tables you can index for Dataverse search, there is a limit on the total number of **fields** that can be enabled for Dataverse search. The maximum is 1,000 searchable fields for an organization. Out of these 1,000 fields, up to 50 fields are required by the Dataverse search system, so you can configure up to **950 searchable fields**.
+Although there's no limit on how many tables you can index for Dataverse search, there's a limit on the total number of **fields** that can be enabled for Dataverse search. The maximum is 1,000 searchable fields for an organization. Out of these 1,000 fields, up to 50 fields are required by the Dataverse search system, so you can configure up to **950 searchable fields**.
 
 > [!IMPORTANT]
 > Some columns are common to all tables, like **Primary Name** and **ID**, which are part of the 50 fields indexed by default for all tables, and are not counted for every table.
@@ -156,7 +156,7 @@ The progress bar at the bottom shows the percentage of indexed fields as a fract
 
 :::image type="content" source="media/maker-portal4.png" alt-text="Search pane with progress bar highlighted.":::
 
-When you have reached the indexed field limit, you'll see a warning message. If you want to add more fields to the index, you'll have to free up space, either by removing some of the fields that are already in the index or removing entire tables from Dataverse search scope.
+When you've reached the indexed field limit, you'll see a warning message. If you want to add more fields to the index, you'll have to free up space, either by removing some of the fields that are already in the index or removing entire tables from Dataverse search scope.
 
 By default, the following system tables are indexed for Dataverse search. However, custom tables aren't included. You must add them to Dataverse search for them to be searchable.
 
@@ -169,9 +169,11 @@ By default, the following system tables are indexed for Dataverse search. Howeve
 
 ### Select searchable fields and filters for each table
 
-The searchable fields and filters for a table enabled for Dataverse search are driven by the table's Quick Find View. The complete set of **View columns**, **Find columns**, and **Filter columns** in a table's Quick Find View become part of the Dataverse search index when that table is enabled for Dataverse search. There is no limit on how many searchable fields you can add for each table. However, there is a limit on the total number of indexed fields, as explained in the previous section. 
+The searchable fields and filters for a table enabled for Dataverse search are driven by the table's Quick Find View. The complete set of **View columns**, **Find columns**, and **Filter columns** in a table's Quick Find View become part of the Dataverse search index when that table is enabled for Dataverse search. There's no limit on how many searchable fields you can add for each table. However, there's a limit on the total number of indexed fields, as explained in the previous section. 
 
 - The **Find Columns** on a **Quick Find View** define the searchable fields in the Dataverse search index. Text fields such as Single Line of Text and Multiple Lines of Text, Lookups, and Option Sets are searchable. **Find Columns** of all other data types are ignored.
+  > [!NOTE]
+  > Currency fields must be added to the **Find Columns** so the currency symbol that is visible on the record will be returned in the search results. If the currency field isn’t added to the search index, users will see the currency symbol localized according to their language settings.
 
 - The **View Columns** on a **Quick Find View** define the fields that are displayed in model-driven apps' search results page when the matched results are returned.
 
@@ -239,7 +241,7 @@ To edit the searchable fields of a table:
 
 ### Configure quick actions that appear with Dataverse search in model-driven apps
 
-Dataverse search experience brings some of the most frequently used actions closer to search results, to help users complete their tasks without having to navigate to the record page in model-driven apps. Quick actions are a small set of commands specific to a table. Users can see quick actions when they are interacting with search in model-driven apps running on a web browser. Some of the commonly used tables are configured to show a set of commands to help them complete their task without losing context.
+Dataverse search experience brings some of the most frequently used actions closer to search results, to help users complete their tasks without having to navigate to the record page in model-driven apps. Quick actions are a small set of commands specific to a table. Users can see quick actions when they're interacting with search in model-driven apps running on a web browser. Some of the commonly used tables are configured to show a set of commands to help them complete their task without losing context.
 
 | Table            | Quick actions      |
 |-------------|------------------------------------------------------------|

@@ -4,9 +4,9 @@ description: "Connect Gmail accounts using OAuth 2.0 "
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/04/2022
-author: revachauhan
+author: mduelae
 ms.subservice: admin
-ms.author: rechauha
+ms.author: mkaur
 ms.reviewer: mkaur
 search.audienceType: 
   - admin
