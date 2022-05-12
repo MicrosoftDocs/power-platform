@@ -1,4 +1,5 @@
 ---
+ROBOTS: NOINDEX,NOFOLLOW
 title: "Work with chatbot variables"
 description: "Use variables with custom and prebuilt entities to created customized bot conversations."
 keywords: "PVA"

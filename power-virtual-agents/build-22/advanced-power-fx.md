@@ -1,4 +1,5 @@
 ﻿---
+ROBOTS: NOINDEX,NOFOLLOW
 title: "Use Power Fx formulas"
 description: "Use Power Fx to create complex bot logic using formulas to manipulate data."
 keywords: "PVA"

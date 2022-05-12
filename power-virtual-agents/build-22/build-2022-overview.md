@@ -1,4 +1,5 @@
 ---
+ROBOTS: NOINDEX,NOFOLLOW
 title: "Overview of technology preview"
 description: "Overview of new features and improvements in the technology preview."
 ms.date: 05/10/2022

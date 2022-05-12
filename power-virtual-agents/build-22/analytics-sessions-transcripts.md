@@ -1,4 +1,5 @@
 ---
+ROBOTS: NOINDEX,NOFOLLOW
 title: "Understand conversation transcripts"
 description: "Review the fields associated with chat conversation transcripts, and see how to pull the data into Power BI."
 keywords: "PVA"

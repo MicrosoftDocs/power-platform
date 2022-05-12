@@ -1,4 +1,5 @@
 ---
+ROBOTS: NOINDEX,NOFOLLOW
 title: "Limitations of technology preview"
 description: "Existing features that aren't supported in the technology preview."
 ms.date: 05/10/2022

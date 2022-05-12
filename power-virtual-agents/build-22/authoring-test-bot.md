@@ -1,4 +1,5 @@
 ---
+ROBOTS: NOINDEX,NOFOLLOW
 title: "Check your chatbot with the Test bot"
 description: "The Test bot lets you check how well your topics are working, and lets you navigate topic nodes."
 keywords: "PVA"

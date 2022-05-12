@@ -1,4 +1,5 @@
 ---
+ROBOTS: NOINDEX,NOFOLLOW
 title: "Add bot to Telephony"
 description: "Enable your bot to interact with users directly over the phone."
 ms.date: 05/10/2022

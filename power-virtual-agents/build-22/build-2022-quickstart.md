@@ -1,4 +1,5 @@
 ---
+ROBOTS: NOINDEX,NOFOLLOW
 title: "Technology preview quickstart"
 description: "Discover the new features introduced in the technology preview at Build."
 ms.date: 05/10/2022

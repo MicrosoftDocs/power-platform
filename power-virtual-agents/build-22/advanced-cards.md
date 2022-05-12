@@ -1,4 +1,5 @@
 ---
+ROBOTS: NOINDEX,NOFOLLOW
 title: "Add multimedia cards to messages"
 description: "Add rich multimedia responses to **Question** and **Message** nodes."
 keywords: "PVA"

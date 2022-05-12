@@ -1,4 +1,5 @@
 ---
+ROBOTS: NOINDEX,NOFOLLOW
 title: "Use chatbot variables to carry content across topics"
 description: "Global variables can be used to store and retrieve information across multiple topics within the same bot and user session"
 keywords: "PVA"
