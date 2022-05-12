@@ -1,12 +1,11 @@
 ---
-title: "Components | MicrosoftDocs"
-description: "Manifest of the Creator Kit components and assets."
+title: "Overview of Creator Kit components | MicrosoftDocs"
+description: "Learn about the manifest of the Creator Kit components and assets."
 author: denisem-msft
-manager: devkeydet
-
+manager: mehdis
 ms.component: pa-maker
 ms.topic: conceptual
-ms.date: 05/06/2022
+ms.date: 05/16/2022
 ms.subservice: guidance
 ms.author: demora
 ms.reviewer: tapanm
@@ -22,23 +21,23 @@ contributors:
   - mehdis-msft
 ---
 
-# Components
-Overview of all the components available in the kit.
+# Overview of Creator Kit components
 
-## Code components
+In this article, we'll see an overview of all the components available in the kit.
+
 | Code component | Type | Overview | Fluent UI | Canvas apps | Custom pages | Model-driven apps |
 | ---------------------------------------- | -------------- | ------------------------------------------------------------ | --------- | ----------- | ------------ | ----------------- |
 | [Auto width label](autowidthlabel.md) | User interface | This code component acts similar to the standard canvas app label, but will expand dynamically in width to accommodate the text. This functionality is currently not supported in canvas apps today. | ⬜ | ✅ | ✅| ⬜ |
-| [Breadcrumb](breadcrumb.md) | User Interface | This code component provides a wrapper around the [Fluent UI Breadcrumb](https://developer.microsoft.com/fluentui#/controls/web/breadcrumb) control for use in canvas & custom pages. | ✅ | ✅ | ✅| ⬜ |
-| [Context Menu](contextmenu.md) | User Interface | This code component provides a wrapper around the [Fluent UI Context Menu](https://developer.microsoft.com/fluentui#/controls/web/contextualmenu) control bound to a button for use in canvas & custom pages. | ✅ | ✅ | ✅| ⬜ |
-| [Command Bar](commandbar.md) | User Interface | This code component provides a wrapper around the [Fluent UI Command Bar](https://developer.microsoft.com/fluentui#/controls/web/commandbar) control for use in canvas & custom pages. | ✅ | ✅ | ✅| ⬜ |
+| [Breadcrumb](breadcrumb.md) | User Interface | This code component provides a wrapper around the [Fluent UI Breadcrumb](https://developer.microsoft.com/fluentui#/controls/web/breadcrumb) control for use in canvas and custom pages. | ✅ | ✅ | ✅| ⬜ |
+| [Context Menu](contextmenu.md) | User Interface | This code component provides a wrapper around the [Fluent UI Context Menu](https://developer.microsoft.com/fluentui#/controls/web/contextualmenu) control bound to a button for use in canvas and custom pages. | ✅ | ✅ | ✅| ⬜ |
+| [Command Bar](commandbar.md) | User Interface | This code component provides a wrapper around the [Fluent UI Command Bar](https://developer.microsoft.com/fluentui#/controls/web/commandbar) control for use in canvas and custom pages. | ✅ | ✅ | ✅| ⬜ |
 | [Details List](detailslist.md) | User Interface | The DetailsList code component allows using of the [Fluent UI DetailsList component](https://developer.microsoft.com/fluentui#/controls/web/detailslist) from inside canvas apps and custom pages. | ✅ | ✅ | ✅| ⬜ |
 | [Elevation](elevation.md) | User Interface | Fluent UI elevation support with mouse hover events. | ✅ | ✅ | ✅ | ⬜ |
-| [Icon](icon.md) | User Interface | Fluent UI [Font Icon](https://developer.microsoft.com/fluentui#/controls/web/icon)/ Icon Button & Action Button with custom styling. | ✅ | ✅ | ✅| ⬜ |
+| [Icon](icon.md) | User Interface | Fluent UI [Font Icon](https://developer.microsoft.com/fluentui#/controls/web/icon)/ Icon Button and Action Button with custom styling. | ✅ | ✅ | ✅| ⬜ |
 | [Keyboard shortcuts](keyboardshortcuts.md) | Utility | Registers key press event handlers to allow keyboard short cuts to be used inside canvas apps. | ⬜ | ✅ | ⬜ | ⬜ |
-| [Nav](nav.md) | User Interface | This code component provides a wrapper around the [Fluent UI Nav Menu](https://developer.microsoft.com/fluentui#/controls/web/nav) control bound to a button for use in canvas & custom pages. | ✅ | ✅ | ✅| ⬜ |
+| [Nav](nav.md) | User Interface | This code component provides a wrapper around the [Fluent UI Nav Menu](https://developer.microsoft.com/fluentui#/controls/web/nav) control bound to a button for use in canvas and custom pages. | ✅ | ✅ | ✅| ⬜ |
 | [Picker](picker.md) | User Interface | Fluent UI Tag Picker support with custom item styling to allow for color/icons tags. | ✅ | ✅ | ✅| ⬜ |
-| [Pivot](pivot.md) | User Interface | This code component wraps the [Fluent Pivot control](https://developer.microsoft.com/fluentui#/controls/web/pivot) for use in canvas & custom pages. | ✅ | ✅ | ✅| ⬜ |
+| [Pivot](pivot.md) | User Interface | This code component wraps the [Fluent Pivot control](https://developer.microsoft.com/fluentui#/controls/web/pivot) for use in canvas and custom pages. | ✅ | ✅ | ✅| ⬜ |
 | [Resizable text area](resizabletextarea.md) | User interface | A text area control that can be resized by the user using handle on the bottom right corner. Can be styled to look like either the classic, fluent or model-driven text field controls. | ⬜ | ✅ | ✅ | ✅ |
 | [TagList](taglist.md) | User Interface | This code component provides a Tag List that provides flexible width rendering bound to a collection. | ✅ | ✅ | ✅| ⬜ |
 
