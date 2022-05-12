@@ -115,7 +115,7 @@ Replace the `false` values with appropriate expressions in the Power Fx language
     )
   ```
 
-## Best Practices
+## Best practices
 
 For more information about general best practices about this control, see [Fluent UI Command bar control best practices](https://developer.microsoft.com/fluentui#/controls/web/commandbar).
 
