@@ -10,6 +10,8 @@ manager: shellyha
 ms.collection: virtual-agent
 ---
 
+[!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
+
 # Quick start
 
 This quickstart walks you through making a bot that uses new features and improvements introduced in the technology preview at Build. We'll be creating a simple bot that helps users make a reservation at a fictional restaurant.

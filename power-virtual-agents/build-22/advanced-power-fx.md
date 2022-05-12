@@ -14,6 +14,8 @@ ms.collection: virtual-agent
 ms.custom: ceX, advanced-authoring
 ---
 
+[!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
+
 # Microsoft Power Fx in Power Virtual Agents
 
 Power Fx is a low-code language that makers can work with directly in an Excel-like formula bar. Use Power Fx to create complex bot logic via formulas to manipulate data, such as setting the value of variables, parsing a string, or using expressions in conditionals.

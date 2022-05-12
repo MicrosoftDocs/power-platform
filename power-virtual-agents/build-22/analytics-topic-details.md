@@ -14,6 +14,8 @@ ms.custom: analysis, ceX
 ms.collection: virtual-agent
 ---
 
+[!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
+
 # Analyze topic usage in Power Virtual Agents
 
 The topic details page provides a view into the performance of individual topics and how they can be improved.

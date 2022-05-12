@@ -13,6 +13,8 @@ ms.custom: analysis, ceX
 ms.collection: virtual-agent
 ---
 
+[!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
+
 # Analysis in Power Virtual Agents
 
 Power Virtual Agents has a comprehensive set of analytics that show you the key performance indicators for your bot.

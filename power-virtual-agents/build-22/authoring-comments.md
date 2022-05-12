@@ -16,6 +16,8 @@ searchScope:
   - "Power Virtual Agents"
 ---
 
+[!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
+
 # Add comments to bots (Preview)
 
 [!INCLUDE [Preview documentation notice](includes/cc-beta-prerelease-disclaimer.md)]

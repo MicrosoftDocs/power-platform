@@ -13,6 +13,8 @@ ms.custom: analysis, ceX
 ms.collection: virtual-agent
 ---
 
+[!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
+
 # Analyze bot performance and usage in Power Virtual Agents
 
 >
