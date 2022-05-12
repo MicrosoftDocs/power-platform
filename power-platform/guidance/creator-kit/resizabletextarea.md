@@ -36,7 +36,7 @@ This component allows the user to resize the text area for convenience.
 
 ## Limitations
 
-This PCF component can only be used in canvas apps, custom pages and model-driven apps.
+This code component can only be used in canvas apps, custom pages and model-driven apps.
 
 ## Key properties
 

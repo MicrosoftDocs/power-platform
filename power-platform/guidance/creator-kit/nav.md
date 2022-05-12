@@ -37,7 +37,7 @@ The Nav code component allows using of the [Fluent UI Nav menu component](https:
 
 ## Limitations
 
-This PCF component can only be used in canvas apps and custom pages.
+This code component can only be used in canvas apps and custom pages.
 
 ## Key properties
 

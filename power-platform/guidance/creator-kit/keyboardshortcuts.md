@@ -35,7 +35,7 @@ This code component registers Key Press event handlers to allow keyboard short c
 
 Some keyboard shortcuts are used by Power Apps when using maker studio, and some are used by the browser. For this reason, this component won't work for all keyboard shortcuts until the user places focus inside the app.
 
-This PCF component can only be used in canvas apps and custom pages.
+This code component can only be used in canvas apps and custom pages.
 
 ## Key properties
 

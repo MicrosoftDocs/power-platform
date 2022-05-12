@@ -27,7 +27,7 @@ Before you use the components included with the Creator Kit, use the **Reference
 
 The Creator Kit is shipped with the following assets:
 
-- **PCF** and **Canvas** [components](components.md)
+- **Power Apps component framework** and **Canvas** [components](components.md)
 - A **Reference App** to interactively learn
 - **Templates** to quickly start building apps
 - A **Theme Editor** that generates Theme JSON, used to easily style consistent components
@@ -36,7 +36,7 @@ The Creator Kit is shipped with the following assets:
 
 Once the kit has been [installed](setup.md), learn how to add the components into your app:
 
-- How to [add PCF code components to a canvas app](/power-apps/developer/component-framework/component-framework-for-canvas-apps#add-components-to-a-canvas-app)
+- How to [add code components to a canvas app](/power-apps/developer/component-framework/component-framework-for-canvas-apps#add-components-to-a-canvas-app)
 - How to [add canvas components to a canvas app](/power-apps/maker/canvas-apps/component-library#import-from-a-component-library)
 
 ## Create the building blocks
@@ -162,7 +162,7 @@ These components are defined in the component library called **Power CAT Compone
 
 ### Code Components
 
-Implemented with [Power Apps component framework (PCF)](/power-apps/developer/component-framework/custom-controls-overview), that are defined as individual custom controls in the solution.
+Implemented with [Power Apps component framework](/power-apps/developer/component-framework/custom-controls-overview), that are defined as individual custom controls in the solution.
 
 View the code components in the [components reference page](components.md).
 

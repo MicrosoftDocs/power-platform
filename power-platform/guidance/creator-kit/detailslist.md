@@ -37,7 +37,7 @@ The Details List code component allows using of the [Fluent UI Details List comp
 
 ## Limitations
 
-This PCF component can only be used in canvas apps and custom pages.
+This code component can only be used in canvas apps and custom pages.
 
 ## Key properties
 

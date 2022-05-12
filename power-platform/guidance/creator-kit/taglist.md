@@ -35,7 +35,7 @@ This code component provides a Tag List that provides flexible width rendering b
 
 ## Limitations
 
-This PCF component can only be used in canvas apps and custom pages.
+This code component can only be used in canvas apps and custom pages.
 
 ## Key properties
 

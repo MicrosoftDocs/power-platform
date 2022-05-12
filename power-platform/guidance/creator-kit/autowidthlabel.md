@@ -35,7 +35,7 @@ This code component acts similar to the standard canvas app label, but will expa
 
 ## Limitations
 
-This PCF component can only be used in canvas apps and custom pages.
+This code component can only be used in canvas apps and custom pages.
 
 ## Key properties
 
