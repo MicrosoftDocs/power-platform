@@ -62,7 +62,7 @@ landingContent:
          links:
           - text: Install the Creator Kit
             url: ./creator-kit/setup.md
-          - text: Use the CoE Starter Kit?
+          - text: Use the CoE Starter Kit
             url: ./creator-kit/creator-kit-explained.md
 
   # Card
