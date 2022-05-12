@@ -1,6 +1,6 @@
 ---
-title: Auto width control reference | Creator Kit
-description: Learn about the details and properties of Autowidth control in the Creator Kit.
+title: AutoWidthLabel control reference | Creator Kit
+description: Learn about the details and properties of AutoWidthLabel control in the Creator Kit.
 author: denisem-msft
 manager: devkeydet
 ms.component: pa-maker
@@ -21,7 +21,7 @@ contributors:
   - mehdis-msft
 ---
 
-# Auto width label control
+# :::no-loc text="AutoWidthLabel"::: control
 
 A control used to display data.
 
