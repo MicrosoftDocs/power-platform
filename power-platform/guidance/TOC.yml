@@ -282,6 +282,8 @@
           href: creator-kit/icon.md
         - name: ResizableTextArea
           href: creator-kit/resizabletextarea.md
+        - name: SearchBox
+          href: creator-kit/searchbox.md
       - name: Commands, Menus & Navs
         items:
         - name: Breadcrumb
@@ -290,6 +292,8 @@
           href: creator-kit/contextmenu.md
         - name: CommandBar
           href: creator-kit/commandbar.md
+        - name: ExpandMenu
+          href: creator-kit/expandmenu.md
         - name: Nav
           href: creator-kit/nav.md
         - name: Pivot
@@ -302,6 +306,18 @@
           href: creator-kit/picker.md
         - name: TagList
           href: creator-kit/taglist.md
+      - name: Progress
+        items:
+        - name: Spinner
+          href: spinner.md
+        - name: ProgressIndicator
+          href: creator-kit/progressindicator.md
+      - name: Surfaces
+        items:
+        - name: Dialog
+          href: creator-kit/dialog.md
+        - name: Panel
+          href: creator-kit/panel.md
       - name: Utilities
         items:
         - name: Elevation
