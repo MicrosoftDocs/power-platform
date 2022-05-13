@@ -59,13 +59,13 @@ This app allows you to learn about each component, recommended best practices fo
 - Select the **Code** tab to see the Power Fx formulas used.
 - Learn best practices from the inline guidance related to the control.
 
-:::image type="content" source="media/ReferenceApp.png" alt-text="The Creator Kit.":::
+:::image type="content" source="media/ReferenceApp.png" alt-text="The Creator Kit." border="false":::
 
 ### Templates
 
 The templates are designed to help quickly start creating responsive Fluent UI based apps. They come with the custom components preloaded and attached to a Theme JSON variable, which reduces time to start developing.
 
-:::image type="content" source="media/template-app.png" alt-text="Canvas app and Custom Page Templates.":::
+:::image type="content" source="media/template-app.png" alt-text="Canvas app and Custom Page Templates." border="false":::
 
 #### Canvas App Template
 
@@ -114,11 +114,11 @@ Use this app to generate a **Theme JSON** object for styling components consiste
 1. Play the Theme Editor App.
 1. Modify the Primary color, Text color, and Background color values.
 
-    :::image type="content" source="media/theme-editor.png" alt-text="Theme Editor App.":::
+    :::image type="content" source="media/theme-editor.png" alt-text="Theme Editor App." border="false":::
 
 1. Select **Export theme** from the top-right corner of the app to generate the Power Fx expression version of the Theme JSON, then copy the value from the panel.
 
-    :::image type="content" source="media/theme-editor-json.png" alt-text="Theme Editor App generated Theme JSON.":::
+    :::image type="content" source="media/theme-editor-json.png" alt-text="Theme Editor App generated Theme JSON." border="false":::
 
 1. Save the Theme JSON as a global variable in the `OnStart` property of your app, with the palette code block as a property of the `AppTheme` object variable.
 
@@ -166,7 +166,7 @@ ColorValue( AppTheme.palette.white )
 
 These components are defined in the component library called **Power CAT Component Library**, and are implemented with [canvas components](/power-apps/maker/canvas-apps/create-component).
 
-:::image type="content" source="media/canvascomponents.png" alt-text="Canvas components.":::
+:::image type="content" source="media/canvascomponents.png" alt-text="Canvas components." border="false":::
 
 ### Code Components
 
@@ -174,7 +174,7 @@ Implemented with [Power Apps component framework](/power-apps/developer/componen
 
 View the code components in the [components reference page](components.md).
 
-:::image type="content" source="media/pcfcomponents.png" alt-text="Code Components.":::
+:::image type="content" source="media/pcfcomponents.png" alt-text="Code Components." border="false":::
 
 ## Deploying apps with Creator Kit components
 
