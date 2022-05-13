@@ -276,37 +276,37 @@
         href: creator-kit/components.md
       - name: Basic Inputs
         items:
-        - name: Auto width label
+        - name: AutoWidthLabel
           href: creator-kit/autowidthlabel.md
         - name: Icon
           href: creator-kit/icon.md
-        - name: Resizable text area
+        - name: ResizableTextArea
           href: creator-kit/resizabletextarea.md
       - name: Commands, Menus & Navs
         items:
         - name: Breadcrumb
           href: creator-kit/breadcrumb.md
-        - name: Context menu
+        - name: ContextMenu
           href: creator-kit/contextmenu.md
-        - name: Command bar
+        - name: CommandBar
           href: creator-kit/commandbar.md
         - name: Nav
           href: creator-kit/nav.md
         - name: Pivot
           href: creator-kit/pivot.md
-      - name: Details list
+      - name: DetailsList
         href: creator-kit/detailslist.md
       - name: Pickers
         items:
-        - name: Tags Picker
+        - name: TagsPicker
           href: creator-kit/picker.md
-        - name: Tag list
+        - name: TagList
           href: creator-kit/taglist.md
       - name: Utilities
         items:
         - name: Elevation
           href: creator-kit/elevation.md
-        - name: Keyboard shortcuts
+        - name: KeyboardShortcuts
           href: creator-kit/keyboardshortcuts.md      
   - name: Automation adoption best practices
     items:
