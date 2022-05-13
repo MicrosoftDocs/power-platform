@@ -309,7 +309,7 @@
       - name: Progress
         items:
         - name: Spinner
-          href: spinner.md
+          href: creator-kit/spinner.md
         - name: ProgressIndicator
           href: creator-kit/progressindicator.md
       - name: Surfaces
