@@ -27,7 +27,7 @@ The Creator Kit helps you create Power Apps experiences on the web and mobile pl
 All included controls and components utilize the [Fluent UI](https://developer.microsoft.com/fluentui#/) framework to help you easily create consistent, beautiful, and effective user experiences for custom business applications.
 
 > [!div class="nextstepaction"]
-> [Download the Creator Kit](https://github.com/microsoft/powercat-creator-kit/releases/download/CreatorKit-May2022/CreatorKitCore_1.0.20220510.1_managed.zip)
+> [Download the Creator Kit](https://aka.ms/creatorkitdownload)
 
 You can view the code in the latest version of the Creator Kit in the [GitHub repository](https://github.com/microsoft/powercat-creator-kit).
 
