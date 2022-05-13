@@ -142,33 +142,27 @@ Select **Edit** to review and edit environment details.
 
 ### Environment history
 
-To see when an environment was created, who created it, and the current status, do one of the following.
+Environment history gives admins a timeline of the full environment lifecycle from the moment it's created until it's completely deleted with all the actions performed on the environment in between, such as edit, copy, reset, etc. Actions on the timeline format are:
 
-#### Use All environment actions
+-	Action name: for example, create
+-	Start time
+-	End time: if applicable
+-	Initiated by: the user
+-	Status: for example, succeeded or failed
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin, Microsoft 365 Global admin, or Microsoft Power Platform admin).
+To see the environment history:
 
-2. Select **Environments** to open the **Environments**.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin.
 
-3. Next to the environment name, select **All environment actions** (...).
+2. Select **Environments**, and then select an environment from the list.
 
-4. Select **History**.
-
-   :::image type="content" source="media/environment-history-ellipse.png" alt-text="Select All environment actions to see history.":::
-
-#### Use Recent operation 
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin, Microsoft 365 Global admin, or Microsoft Power Platform admin).
-
-2. Go to **Environments** > [select an environment] > scroll down to the **Recent operation** section.
-
-3. Select **Full history**.
-
-   :::image type="content" source="media/environment-history-recent-operation.png" alt-text="Full history to see history.":::
-
-The history data appears on a new page.
+3. On the command bar, select **History**.
 
 :::image type="content" source="media/environment-history-data.png" alt-text="Environment history data":::
+
+> [!NOTE]
+> -	Some actions such as Edit will show the edit as an action but not details of the action.
+> -	Once an environment is completely deleted, environment history is also deleted. So, it might not be possible to know who deleted an environment after it has been hard deleted.
 
 
 ### See also
