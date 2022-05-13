@@ -1,7 +1,7 @@
 ---
 title: "Creator Kit - Overview | MicrosoftDocs"
 description: Overview of the Creator Kit
-author: demora-msft
+author: denisem-msft
 manager: devkeydet
 ms.component: pa-maker
 ms.topic: conceptual
@@ -17,7 +17,6 @@ search.app:
   - Powerplatform
 contributors:
   - tapanm-msft
-  - demora-msft
   - slaouist
 ---
 # Creator Kit overview

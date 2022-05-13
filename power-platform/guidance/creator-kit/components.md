@@ -17,8 +17,7 @@ search.app:
   - Powerplatform
 contributors:
   - tapanm-msft
-  - demora-msft
-  - mehdis-msft
+  - slaouist
 ---
 
 # Overview of the Creator Kit components

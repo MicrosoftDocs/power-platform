@@ -17,8 +17,7 @@ search.app:
   - Powerplatform
 contributors:
   - tapanm-msft
-  - demora-msft
-  - mehdis-msft
+  - slaouist
 ---
 
 # Use the Creator Kit

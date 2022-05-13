@@ -17,7 +17,6 @@ search.app:
   - Powerplatform
 contributors:
   - tapanm-msft
-  - demora-msft
   - slaouist
 ---
 # :::no-loc text="Icon"::: control
