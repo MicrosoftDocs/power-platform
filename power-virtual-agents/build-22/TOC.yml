@@ -16,6 +16,8 @@
       href: authoring-comments.md
     - name: Test your bot
       href: authoring-test-bot.md
+    - name: Troubleshoot error codes
+      href: error-codes.md
 - name: Enhance and improve
   items:
     - name: Use entities and slot filling
