@@ -1,6 +1,6 @@
 ---
-title: Dataverse data governance in Power Platform
-description: Learn how data is governed in Power Platform.
+title: Data storage and governance in Power Platform
+description: Learn how data is stored and governed in Power Platform.
 ms.date: 02/15/2022
 ms.service: power-platform
 ms.topic: conceptual
@@ -18,7 +18,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Dataverse data governance in Power Platform
+# Data storage and governance in Power Platform
 
 First, it’s important to distinguish between *personal data* and *customer data*.
 
