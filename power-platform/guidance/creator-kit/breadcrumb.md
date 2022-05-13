@@ -21,7 +21,7 @@ contributors:
   - mehdis-msft
 ---
 
-# Breadcrumb control
+# `Breadcrumb` control
 
 A control used to provide navigation.
 
@@ -29,9 +29,9 @@ A control used to provide navigation.
 
 ## Description
 
-Breadcrumbs should be used as a navigational aid in your app or site. They indicate the current page's location within a hierarchy and help the user understand where they are in relation to the rest of that hierarchy. Breadcrumb also provides one-click access to higher levels of that hierarchy.
+`Breadcrumb` controls should be used as a navigational aid in your app or site. They indicate the current page's location within a hierarchy and help the user understand where they are in relation to the rest of that hierarchy. Breadcrumb also provides one-click access to higher levels of that hierarchy.
 
-This code component provides a wrapper around the [Fluent UI Breadcrumb](https://developer.microsoft.com/fluentui#/controls/web/breadcrumb) control for use in canvas and custom pages. 
+This code component provides a wrapper around the [Fluent UI `Breadcrumb`](https://developer.microsoft.com/fluentui#/controls/web/breadcrumb) control for use in canvas and custom pages. 
 
 [View component in the GitHub repository](https://github.com/microsoft/powercat-creator-kit/tree/main/CreatorKitCore/SolutionPackage/Controls/cat_PowerCAT.Breadcrumb)
 
@@ -98,6 +98,6 @@ As this control is used for navigation, a logical action is to use [navigation f
 
 ## Best practices
 
-For more information, see [Fluent UI Breadcrumb control best practices](https://developer.microsoft.com/fluentui#/controls/web/breadcrumb).
+For more information, see [Fluent UI `Breadcrumb` control best practices](https://developer.microsoft.com/fluentui#/controls/web/breadcrumb).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

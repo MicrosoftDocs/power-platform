@@ -42,7 +42,7 @@ This code component can only be used in canvas apps and custom pages.
 
 | Property | Description |
 | -------- | ----------- |
-| `Icon name` | Name of the Fluent UI icon |
+| `Icon name` | [Fluent UI Icon](https://uifabricicons.azurewebsites.net/) by name |
 | `Icon type` | Renders the icon as an action button, icon button, or icon only. |
 | `Text` | Text displayed (action button type only) |
 | `Text alignment` | Position of the text (action button type only) |
@@ -65,6 +65,6 @@ This code component can only be used in canvas apps and custom pages.
 
 ## Best practices
 
-Refer to [Fluent UI Icon control best practices](https://developer.microsoft.com/fluentui#/controls/web/contextmenu)
+Refer to [Fluent UI `Icon` control best practices](https://developer.microsoft.com/fluentui#/controls/web/contextmenu)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
-title: Details List control reference | Creator Kit
-description: Learn about the details and properties of Details List control in the Creator Kit.
+title: DetailsList control reference | Creator Kit
+description: Learn about the details and properties of DetailsList control in the Creator Kit.
 author: denisem-msft
 manager: devkeydet
 ms.component: pa-maker
@@ -21,17 +21,17 @@ contributors:
   - slaouist
 ---
 
-# Details List control
+# `DetailsList` control
 
 A control used to display a set of data.
 
-:::image type="content" source="media/details-list.png" alt-text="Details List control.":::
+:::image type="content" source="media/details-list.png" alt-text="DetailsList control.":::
 
 ## Description
 
-A details list is a robust way to display an information-rich collection of items, and allow people to sort, group, and filter the content. Use a details list when information density is critical.
+A details list (`DetailsList`) is a robust way to display an information-rich collection of items, and allow people to sort, group, and filter the content. Use a `DetailsList` when information density is critical.
 
-The Details List code component allows using of the [Fluent UI Details List component](https://developer.microsoft.com/fluentui#/controls/web/detailslist) from inside canvas apps and custom pages.
+The `DetailsList` code component allows using of the [Fluent UI `DetailsList` component](https://developer.microsoft.com/fluentui#/controls/web/detailslist) from inside canvas apps and custom pages.
 
 [View component in the Creator Kit GitHub repository](https://github.com/microsoft/powercat-creator-kit/tree/main/CreatorKitCore/SolutionPackage/Controls/cat_PowerCAT.FluentDetailsList)
 
@@ -52,7 +52,7 @@ This code component can only be used in canvas apps and custom pages.
 | Property | Description |
 | -------- | ----------- |
 | `Views` | View if supported by the data source (for example, Dataverse). |
-| `Selection type` | Controls how/if the details list manages selection. Options include none, single, multiple |
+| `Selection type` | Controls how/if the `DetailsList` manages selection. Options include none, single, multiple |
 | `Select rows on focus` | Whether rows will be selected when the control is focused. |
 | `Page size` | Number of items displayed in the page. |
 | `Sort column` | ColName value to sort by default. |
@@ -65,7 +65,7 @@ This code component can only be used in canvas apps and custom pages.
 
 ## Mapping data to columns
 
-To determine which columns are displayed in the Details List, configure the following properties of the Details List:
+To determine which columns are displayed in the `DetailsList`, configure the following properties of the `DetailsList`:
 
 1. **Fields**. Add the desired fields by selecting the Edit option in the controls flyout on the right (uses the same interface for modifying [predefined data cards](/power-apps/maker/canvas-apps/working-with-cards)).
 
@@ -91,37 +91,38 @@ Example:
 Mapping to the Dataverse [Accounts](/power-apps/developer/data-platform/reference/entities/account) system table, with the below formula:
 
 ```powerapps-dot
-    Table(
-        {
-            ColName: "name",
-            ColDisplayName: "Name",
-            ColWidth: 200,
-            ColSortable: true,
-            ColIsBold: true,
-            ColResizable: true
-        },{
-            ColName: "address1_city",
-            ColDisplayName: "City:",
-            ColShowAsSubTextOf: "name"
-        },{
-            ColName: "address1_country",
-            ColDisplayName: "Country:",
-            ColShowAsSubTextOf: "name"
-        },{
-            ColName: "telephone1",
-            ColDisplayName: "Telephone",
-            ColWidth: 100,
-            ColSortable: true,
-            ColResizable: true
-        },{
-            ColName: "primarycontactid",
-            ColDisplayName: "Primary Contact",
-            ColWidth: 200,
-            ColSortable: true,
-            ColSortBy: "_primarycontactid_value",
-            ColResizable: true,
-            ColCellType: "link"
-        })
+Table(
+    {
+        ColName: "name",
+        ColDisplayName: "Name",
+        ColWidth: 200,
+        ColSortable: true,
+        ColIsBold: true,
+        ColResizable: true
+    },{
+        ColName: "address1_city",
+        ColDisplayName: "City:",
+        ColShowAsSubTextOf: "name"
+    },{
+        ColName: "address1_country",
+        ColDisplayName: "Country:",
+        ColShowAsSubTextOf: "name"
+    },{
+        ColName: "telephone1",
+        ColDisplayName: "Telephone",
+        ColWidth: 100,
+        ColSortable: true,
+        ColResizable: true
+    },{
+        ColName: "primarycontactid",
+        ColDisplayName: "Primary Contact",
+        ColWidth: 200,
+        ColSortable: true,
+        ColSortBy: "_primarycontactid_value",
+        ColResizable: true,
+        ColCellType: "link"
+    }
+)
 ```
 
 ## Configure "On Change" behavior
@@ -145,6 +146,6 @@ If( Self.EventName = "CellAction",
 
 ## Best practices
 
-For more information, see [Fluent UI Details List control best practices](https://developer.microsoft.com/fluentui#/controls/web/detailslist).
+For more information, see [Fluent UI `DetailsList` control best practices](https://developer.microsoft.com/fluentui#/controls/web/detailslist).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

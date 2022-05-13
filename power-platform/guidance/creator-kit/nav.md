@@ -21,7 +21,7 @@ contributors:
   - slaouist
 ---
 
-# Nav control
+# `Nav` control
 
 A control used to provide navigation.
 
@@ -29,9 +29,9 @@ A control used to provide navigation.
 
 ## Description
 
-A navigation pane (Nav) provides links to the main areas of an app or site.
+A navigation pane (`Nav`) provides links to the main areas of an app or site.
 
-The Nav code component allows using of the [Fluent UI Nav menu component](https://developer.microsoft.com/fluentui#/controls/web/nav) from inside canvas apps and custom pages.
+The `Nav` code component allows using of the [Fluent UI `Nav` menu component](https://developer.microsoft.com/fluentui#/controls/web/nav) from inside canvas apps and custom pages.
 
 [View component in the Creator Kit GitHub repository](https://github.com/microsoft/powercat-creator-kit/tree/main/CreatorKitCore/SolutionPackage/Controls/cat_PowerCAT.Nav)
 
@@ -131,6 +131,6 @@ Replace the `false` values with appropriate expressions in the Power Fx language
 
 ## Best practices
 
-Refer to [Fluent UI Nav control best practices](https://developer.microsoft.com/fluentui#/controls/web/nav)
+Refer to [Fluent UI `Nav` control best practices](https://developer.microsoft.com/fluentui#/controls/web/nav)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

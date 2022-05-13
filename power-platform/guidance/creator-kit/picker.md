@@ -21,7 +21,7 @@ contributors:
   - slaouist
 ---
 
-# Picker control
+# `Picker` control
 
 A control used to provide a search experience.
 
@@ -31,7 +31,7 @@ A control used to provide a search experience.
 
 Pickers are used to select one or more items, such as tags or files, from a large list.
 
-The Picker code component allows using of the [Fluent UI Picker menu component](https://developer.microsoft.com/fluentui#/controls/web/Pickers) from inside canvas apps and custom pages.
+The `Picker` code component allows using of the [Fluent UI `Picker` menu component](https://developer.microsoft.com/fluentui#/controls/web/Pickers) from inside canvas apps and custom pages.
 
 [View component in the Creator Kit GitHub repository](https://github.com/microsoft/powercat-creator-kit/tree/main/CreatorKitCore/SolutionPackage/Controls/cat_PowerCAT.Picker)
 

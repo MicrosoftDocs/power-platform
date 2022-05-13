@@ -1,6 +1,6 @@
 ---
-title: Resizable text area control reference | Creator Kit
-description: Learn about the details and properties of Resizable text area control in the Creator Kit.
+title: ResizableTextArea control reference | Creator Kit
+description: Learn about the details and properties of ResizableTextArea control in the Creator Kit.
 author: denisem-msft
 manager: devkeydet
 ms.component: pa-maker
@@ -20,7 +20,7 @@ contributors:
   - demora-msft
   - slaouist
 ---
-# Resizable text area control
+# `ResizableTextArea` control
 
 A component for user input.
 
@@ -64,6 +64,6 @@ Other properties are the same as the standard [text input control](/power-apps/m
 
 ## Best practices
 
-For more information, see [Fluent UI text field control best practices](https://developer.microsoft.com/fluentui#/controls/web/textfield).
+For more information, review the component in the Reference App or see [Fluent UI text field control best practices](https://developer.microsoft.com/fluentui#/controls/web/textfield).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

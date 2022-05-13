@@ -1,6 +1,6 @@
 ---
-title: Context menu control reference | Creator Kit
-description: Learn about the details and properties of Context menu control in the Creator Kit.
+title: ContextMenu control reference | Creator Kit
+description: Learn about the details and properties of ContextMenu control in the Creator Kit.
 author: denisem-msft
 manager: devkeydet
 ms.component: pa-maker
@@ -21,17 +21,17 @@ contributors:
   - mehdis-msft
 ---
 
-# Context menu control
+# `ContextMenu` control
 
 A control used to input commands.
 
-:::image type="content" source="media/context-menu.png" alt-text="Context Menu control.":::
+:::image type="content" source="media/context-menu.png" alt-text="ContextMenu control.":::
 
 ## Description
 
-Contextual menus are lists of commands that are based on the context of selection, mouse hover or keyboard focus. They're one of the most effective and highly used command surfaces, and can be used in various places.
+A contextual menu (`ContextMenu`) is a list of commands that are based on the context of selection, mouse hover or keyboard focus. They're one of the most effective and highly used command surfaces, and can be used in various places.
 
-This code component provides a wrapper around the [Fluent UI Context Menu](https://developer.microsoft.com/fluentui#/controls/web/contextualmenu) control bound to a button for use in canvas apps and custom pages.
+This code component provides a wrapper around the [Fluent UI `ContextMenu`](https://developer.microsoft.com/fluentui#/controls/web/contextualmenu) control bound to a button for use in canvas apps and custom pages.
 
 [View component in the Creator Kit GitHub repository](https://github.com/microsoft/powercat-creator-kit/tree/main/CreatorKitCore/SolutionPackage/Controls/cat_PowerCAT.ContextMenu)
 
@@ -54,7 +54,7 @@ Each item uses the below schema to visualize data in the component.
 | Name | Description |
 | ------ | ----------- |
 | `ItemKey` | Arbitrary unique string associated with the item. |
-| `ItemDisplayName` | Text to display in the context menu item. |
+| `ItemDisplayName` | Text to display in the `ContextMenu` item. |
 | `ItemIconName` | [Fluent UI Icon](https://uifabricicons.azurewebsites.net/) by name |
 | `ItemOverflow` | Set to true for overflow behavior |
 
@@ -99,6 +99,6 @@ Replace the `false` values with appropriate expressions in the Power Fx language
 
 ## Best practices
 
-For more information, see [Fluent UI Context Menu control best practices](https://developer.microsoft.com/fluentui#/controls/web/contextmenu).
+For more information, see [Fluent UI `ContextMenu` control best practices](https://developer.microsoft.com/fluentui#/controls/web/contextmenu).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

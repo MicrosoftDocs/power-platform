@@ -1,6 +1,6 @@
 ---
-title: Keyboard shortcut control reference | Creator Kit
-description: Learn about the details and properties of Keyboard shortcut control in the Creator Kit.
+title: KeyboardShortcuts control reference | Creator Kit
+description: Learn about the details and properties of KeyboardShortcuts control in the Creator Kit.
 author: denisem-msft
 manager: devkeydet
 ms.component: pa-maker
@@ -21,7 +21,7 @@ contributors:
   - slaouist
 ---
 
-# Keyboard shortcuts control
+# `KeyboardShortcuts` control
 
 A control used to capture and act on keyboard events.
 
@@ -44,7 +44,7 @@ This code component can only be used in canvas apps and custom pages.
 | `KeyConfig` | An array of strings indicating which keyboard short cuts to listen for. The string must be serialized using JSON (see below). |
 | `OnKey` | The keyboard key code that was detected. |
 
-After adding the Keyboard Shortcuts code component to the form, configure the `KeyConfig` property with an  array of key combinations.
+After adding the `KeyboardShortcuts` code component to the form, configure the `KeyConfig` property with an  array of key combinations.
 
 For example:
 
@@ -60,14 +60,28 @@ When a key combination is used, the `OnChange` event is raised. The `OnKey` prop
 
 You could have an `OnChange` event similar to:
 
-```vb
-If(Self.OnKey="alt + a",SetFocus(txtTextbox1));
-If(Self.OnKey="alt + r",UpdateContext({ctxResizableTextareaEvent:"SetFocus" & Text(Rand())}));
-If(Self.OnKey="alt + b",SetFocus(txtTextbox2));
-If(Self.OnKey="alt + k",UpdateContext({ctxPickerEvent:"SetFocus" & Text(Rand())}));
-If(Self.OnKey="alt + d",UpdateContext({ctxDropdownEvent:"SetFocus" & Text(Rand())}));
-If(Self.OnKey="alt + l",UpdateContext({ctxTagListEvent:"SetFocus" & Text(Rand())}));
-If(Self.OnKey="alt + t",UpdateContext({ctxTableEvent:"SetFocusOnRow" & Text(Rand())}));
+```powerapps-dot
+If( Self.OnKey = "alt + a",
+    SetFocus(txtTextbox1)
+);
+If( Self.OnKey = "alt + r",
+    UpdateContext({ ctxResizableTextareaEvent:"SetFocus" & Text(Rand()) })
+);
+If( Self.OnKey = "alt + b",
+    SetFocus(txtTextbox2)
+);
+If( Self.OnKey = "alt + k",
+    UpdateContext({ ctxPickerEvent:"SetFocus" & Text(Rand()) })
+);
+If( Self.OnKey = "alt + d",
+    UpdateContext({ ctxDropdownEvent:"SetFocus" & Text(Rand()) })
+);
+If( Self.OnKey = "alt + l",
+    UpdateContext({ ctxTagListEvent:"SetFocus" & Text(Rand()) })
+);
+If( Self.OnKey = "alt + t", 
+    UpdateContext({ ctxTableEvent:"SetFocusOnRow" & Text(Rand()) })
+);
 ```
 
 This event handler sets focus on various controls given the key combination used.

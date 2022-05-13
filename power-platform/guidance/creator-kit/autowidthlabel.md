@@ -1,6 +1,6 @@
 ---
-title: Auto width control reference | Creator Kit
-description: Learn about the details and properties of Autowidth control in the Creator Kit.
+title: AutoWidthLabel control reference | Creator Kit
+description: Learn about the details and properties of AutoWidthLabel control in the Creator Kit.
 author: denisem-msft
 manager: devkeydet
 ms.component: pa-maker
@@ -21,11 +21,11 @@ contributors:
   - mehdis-msft
 ---
 
-# Auto width label control
+# `AutoWidthLabel` control
 
 A control used to display data.
 
-:::image type="content" source="media/autowidthlabel.png" alt-text="Auto width label.":::
+:::image type="content" source="media/autowidthlabel.png" alt-text="AutoWidthLabel.":::
 
 ## Description
 
@@ -46,6 +46,6 @@ This code component can only be used in canvas apps and custom pages.
 
 ## Best practices
 
-For more information, see [Fluent UI Label control best practices](https://developer.microsoft.com/en-us/fluentui#/controls/web/label).
+For more information, see [Fluent UI `Label` control best practices](https://developer.microsoft.com/en-us/fluentui#/controls/web/label).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

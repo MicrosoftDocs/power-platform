@@ -21,7 +21,7 @@ contributors:
   - slaouist
 ---
 
-# Elevation control
+# `Elevation` control
 
 A control used to construct cards and flyouts.
 
@@ -29,7 +29,7 @@ A control used to construct cards and flyouts.
 
 ## Description
 
-Fluent UI elevation support with mouse hover events.
+Fluent UI `Elevation` support with mouse hover events.
 
 [View component in the Creator Kit GitHub repository](https://github.com/microsoft/powercat-creator-kit/tree/main/CreatorKitCore/SolutionPackage/Controls/cat_PowerCAT.Elevation)
 
@@ -41,20 +41,20 @@ This code component can only be used in canvas apps and custom pages.
 
 | Property | Description |
 | -------- | ----------- |
-| `Fill color` | Background color of the elevation control. |
+| `Fill color` | Background color of the `Elevation` control. |
 | `Depth` | Depth of the shadow. |
 
 ## Additional properties
 
 | Property | Description |
 | -------- | ----------- |
-| `Hover fill color` | Background color of the elevation control while hovering. |
+| `Hover fill color` | Background color of the `Elevation` control while hovering. |
 | `Hover depth` | Depth of the shadow while hovering. |
-| `Padding` | Distance between the elevation card and the edge of the control (in each direction: left, right, top, and bottom). |
+| `Padding` | Distance between the `Elevation` card and the edge of the control (in each direction: left, right, top, and bottom). |
 | `Dark overlay padding` | Enable for a dark overlay effect in the padded area. |
 
 ## Best practices
 
-For more information, see [Fluent UI Elevation control best practices](https://developer.microsoft.com/fluentui#/styles/web/elevation).
+For more information, see [Fluent UI `Elevation` control best practices](https://developer.microsoft.com/fluentui#/styles/web/elevation).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

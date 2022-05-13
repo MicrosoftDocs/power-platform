@@ -1,6 +1,6 @@
 ---
-title: Tag list control reference | Creator Kit
-description: Learn about the details and properties of Tag list control in the Creator Kit.
+title: TagList control reference | Creator Kit
+description: Learn about the details and properties of TagList control in the Creator Kit.
 author: denisem-msft
 manager: devkeydet
 ms.component: pa-maker
@@ -21,11 +21,11 @@ contributors:
   - mehdis-msft
 ---
 
-# Tag list control
+# `TagList` control
 
 A control used to display data.
 
-:::image type="content" source="media/taglist.png" alt-text="Tag list control.":::
+:::image type="content" source="media/taglist.png" alt-text="TagList control.":::
 
 ## Description
 
@@ -63,36 +63,36 @@ Example:
 
   ```powerapps-dot
 Table(
-{
-	ItemDisplayName: "Power Apps",
-	ItemKey: "1",
-	ItemEnabled: true,
-    ItemChecked: true,
-	ItemIconName: "Powerapps",
-	ItemIconColor: "purple",
-	ItemTextColor: "purple",
-	ItemBackgroundColor: "lightpurple"
-},
-
-{
-	ItemDisplayName: "Power Automate",
-	ItemKey: "2",
-	ItemEnabled: false,
-	ItemIconName: "MicrosoftFlowLogo",
-	ItemIconColor: "Blue",
-	ItemTextColor: "blue",
-	ItemBackgroundColor: "lightBlue"
-},
-
-{
-	ItemDisplayName: "Power BI",
-	ItemKey: "3",
-	ItemEnabled: false,
-	ItemIconName: "Powerbilogo",
-	ItemIconColor: "black",
-	ItemTextColor: "black",
-	ItemBackgroundColor: "#fce100"
-}
+    {
+    	ItemDisplayName: "Power Apps",
+    	ItemKey: "1",
+    	ItemEnabled: true,
+        ItemChecked: true,
+    	ItemIconName: "Powerapps",
+    	ItemIconColor: "purple",
+    	ItemTextColor: "purple",
+    	ItemBackgroundColor: "lightpurple"
+    },
+    
+    {
+    	ItemDisplayName: "Power Automate",
+    	ItemKey: "2",
+    	ItemEnabled: false,
+    	ItemIconName: "MicrosoftFlowLogo",
+    	ItemIconColor: "Blue",
+    	ItemTextColor: "blue",
+    	ItemBackgroundColor: "lightBlue"
+    },
+    
+    {
+    	ItemDisplayName: "Power BI",
+    	ItemKey: "3",
+    	ItemEnabled: false,
+    	ItemIconName: "Powerbilogo",
+    	ItemIconColor: "black",
+    	ItemTextColor: "black",
+    	ItemBackgroundColor: "#fce100"
+    }
 )
   ```
 

@@ -1,6 +1,6 @@
 ---
-title: Command bar control reference | Creator Kit
-description: Learn about the details and properties of Command bar control in the Creator Kit.
+title: CommandBar control reference | Creator Kit
+description: Learn about the details and properties of CommandBar control in the Creator Kit.
 author: denisem-msft
 manager: devkeydet
 ms.component: pa-maker
@@ -21,17 +21,17 @@ contributors:
   - mehdis-msft
 ---
 
-# Command bar control
+# `CommandBar` control
 
 A control used to input commands.
 
-:::image type="content" source="media/command-bar.png" alt-text="Command bar control.":::
+:::image type="content" source="media/command-bar.png" alt-text="CommandBar control.":::
 
 ## Description
 
-Command bar is a surface that houses commands that operate on the content of the window, panel, or parent region it resides above.
+`CommandBar` is a surface that houses commands that operate on the content of the window, panel, or parent region it resides above.
 
-This code component provides a wrapper around the [Fluent UI Command Bar](https://developer.microsoft.com/fluentui#/controls/web/commandbar) control for use in canvas & custom pages.
+This code component provides a wrapper around the [Fluent UI `CommandBar`](https://developer.microsoft.com/fluentui#/controls/web/commandbar) control for use in canvas & custom pages.
 
 [View component in the Creator Kit GitHub repository](https://github.com/microsoft/powercat-creator-kit/tree/main/CreatorKitCore/SolutionPackage/Controls/cat_PowerCAT.CommandBar)
 
@@ -53,7 +53,7 @@ Each item uses the below schema to visualize data in the component.
 | Name | Description |
 | ------ | ----------- |
 | `ItemKey` | Arbitrary unique string associated with the item. |
-| `ItemDisplayName` | Text to display in the command bar item. |
+| `ItemDisplayName` | Text to display in the `CommandBar` item. |
 | `ItemIconName` | [Fluent UI Icon](https://uifabricicons.azurewebsites.net/) by name |
 | `ItemOverflow` | Set to true for overflow behavior |
 
@@ -117,6 +117,6 @@ Replace the `false` values with appropriate expressions in the Power Fx language
 
 ## Best practices
 
-For more information about general best practices about this control, see [Fluent UI Command bar control best practices](https://developer.microsoft.com/fluentui#/controls/web/commandbar).
+For more information about general best practices about this control, see [Fluent UI `CommandBar` control best practices](https://developer.microsoft.com/fluentui#/controls/web/commandbar).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
