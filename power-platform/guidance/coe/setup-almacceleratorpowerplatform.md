@@ -1,13 +1,13 @@
 ---
 title: "Set up ALM accelerator for Microsoft Power Platform components manually | MicrosoftDocs"
 description: "The ALM accelerator for Microsoft Power Platform helps you follow ALM patterns and practices to source-control and move your solutions from your development environment to test and production environments by using Azure DevOps. This guide walks through the manual setup steps of the accelerator."
-author: mikefactorial
+author: jenschristianschroder
 manager: devkeydet
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/14/2021
+ms.date: 05/13/2022
 ms.subservice: guidance
-ms.author: v-mikeochs
+ms.author: jeschro
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
@@ -283,7 +283,7 @@ The **VerifyDefaultEnvironmentVariableValues** can be used to ensure that specif
 
 1. Select **Pipelines**, select the three dots (**...**) in the upper-right corner, and then select **Manage Security**.
 
-1. Set the following permissions for the build service user.
+1. Set the following permissions for **[Your Project Name] Build Service ([Your Organization Name])** user.
 
    | Permission                            | Value |
    | ------------------------------------- | ----- |
@@ -295,7 +295,7 @@ The **VerifyDefaultEnvironmentVariableValues** can be used to ensure that specif
    | View build pipeline                   | Allow |
    | View builds                           | Allow |
 
-1. Select **Agent pools** and select **Security**, and then select **Add**.
+1. Select **Project settings** - **Agent pools** and select **Security**, and then select **Add**.
 
 1. Find and select the username **[Your Project Name] Build Service ([Your Organization Name])**, and then set the **Role** to Reader. Select **Add**.
 
