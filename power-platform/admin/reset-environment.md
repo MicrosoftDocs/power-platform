@@ -27,7 +27,7 @@ Reset a sandbox environment to delete and reprovision it. Consider a reset when 
   
 > [!IMPORTANT]
 > - You can only reset sandbox environments. 
-> - A reset will permanently delete environment components such as canvas apps, flows, custom connectors, and connections.
+> - A reset will permanently delete environment components such as canvas apps, flows, custom connectors, connections and back ups
 
  **An example scenario**  
   
