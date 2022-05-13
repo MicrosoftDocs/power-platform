@@ -71,7 +71,7 @@ Identify which type of Email Server Profile is being used:
 2. View the list of Email Server Profile records that appear and follow the corresponding steps below based on whether you're using an online or on-premises deployment of Dynamics 365.
 
    **Dynamics 365 Online**
-   - If you only see the default profile with a **Name** value of **Microsoft Exchange Online** and **Email Server Type Name** value of **Exchange Online**, you're using the server-side synchronization feature with the default Microsoft Exchange Online profile. As long as this profile wasn't [modified in an unsupported way](#we-are-using-the-default-exchange-online-profile-with-dynamics-365-online-but-we-received-a-notification-that-we-are-impacted-why), you aren't affected because this profile uses server-to-server (S2S) authentication.
+   - If you only see the default profile with a **Name** value of **Microsoft Exchange Online** and **Email Server Type Name** value of **Exchange Online**, you're using the server-side synchronization feature with the default Microsoft Exchange Online profile. As long as this profile wasn't [modified in an unsupported way](#were-using-the-default-exchange-online-profile-with-dynamics-365-online-but-we-received-a-notification-that-we-are-impacted-why), you aren't affected because this profile uses server-to-server (S2S) authentication.
     
       :::image type="content" source="media/email-configuration-active-profile-exchange-online.png" alt-text="Email settings, Active email server profile - Exchange Online":::
 
