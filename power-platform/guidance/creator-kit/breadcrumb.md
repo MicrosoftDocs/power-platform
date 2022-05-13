@@ -32,7 +32,7 @@ A control used to provide navigation.
 
 This code component provides a wrapper around the [Fluent UI `Breadcrumb`](https://developer.microsoft.com/fluentui#/controls/web/breadcrumb) control for use in canvas and custom pages. 
 
-[View component in the GitHub repository](https://github.com/microsoft/powercat-creator-kit/tree/main/CreatorKitCore/SolutionPackage/Controls/cat_PowerCAT.Breadcrumb)
+View component source code and additional documentation in the [GitHub repository](https://github.com/microsoft/powercat-creator-kit)
 
 ## Limitations
 

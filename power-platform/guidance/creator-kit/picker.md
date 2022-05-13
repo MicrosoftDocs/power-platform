@@ -32,9 +32,7 @@ Pickers are used to select one or more items, such as tags or files, from a 
 
 The `Picker` code component allows using of the [Fluent UI `Picker` menu component](https://developer.microsoft.com/fluentui#/controls/web/Pickers) from inside canvas apps and custom pages.
 
-[View component in the Creator Kit GitHub repository](https://github.com/microsoft/powercat-creator-kit/tree/main/CreatorKitCore/SolutionPackage/Controls/cat_PowerCAT.Picker)
-
-The Tag Picker code component provides the following features:
+The `Picker` code component provides the following features:
 
 1. Binds to an input collection for the chosen tags.
 1. Binds to an input collection for suggested tags.
@@ -42,6 +40,9 @@ The Tag Picker code component provides the following features:
 1. Raises **On Change** event when a user adds or removes a tag.
 1. Allows programmatic **Set Focus**.
 1. Styled to closely match the PILL Spec.
+
+
+View component source code and additional documentation in the [GitHub repository](https://github.com/microsoft/powercat-creator-kit)
 
 ## Datasets
 
