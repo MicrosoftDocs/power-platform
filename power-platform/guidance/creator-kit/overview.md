@@ -31,7 +31,7 @@ All included controls and components utilize the [Fluent UI](https://developer.m
 
 You can view the code in the latest version of the Creator Kit in the [GitHub repository](https://github.com/microsoft/powercat-creator-kit).
 
-:::image type="content" source="media/creatorkitview.png" alt-text="Examples of the Fluent UI components in the starter kit.":::
+:::image type="content" source="media/creatorkitview.png" alt-text="Examples of the Fluent UI components in the starter kit." border="false":::
 
 ## What's included
 
