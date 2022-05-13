@@ -32,7 +32,7 @@ Expand menus are like `Nav` components used to provide navigation, which provide
 
 This Canvas component mimics the style and *limited* behavior of the [Fluent UI Nav control](https://developer.microsoft.com/fluentui#/controls/web/Nav).
 
-[View component in the Creator Kit GitHub repository](https://github.com/microsoft/powercat-creator-kit/tree/main/CreatorKitCore/SolutionPackage/CanvasApps/cat_powercatcomponentlibrary_0be3a_DocumentUri_msapp_src)
+[View component source code and additional documentation in the GitHub repository](https://github.com/microsoft/powercat-creator-kit)
 
 ## Limitations
 This Canvas component can only be used in Canvas apps and Custom Pages.
@@ -50,20 +50,36 @@ This Canvas component can only be used in Canvas apps and Custom Pages.
 | Property | Description |
 | -------- | ----------- |
 | `Label` | The text to display in the menu item. | 
-| `Icon` | Image displayed next to the item label. |
+| `Icon` | [Fluent UI Icon](https://uifabricicons.azurewebsites.net/) by name |
+| `Screen` | App screen that the item will navigate to when pressed. |
 
-Images can either be links to publicly hosted 
+
+Example `Items` property:
+```powerapps-dot
+Table(
+    {
+        Label: "Home",
+        Icon: "Home",  
+        Screen: App.ActiveScreen
+    },{
+        Label: "Learn", 
+        Icon: "Reading", 
+        Screen: App.ActiveScreen
+    },{
+        Label: "Apps", 
+        Icon: "App", 
+        Screen: App.ActiveScreen
+    }
+)
+``` 
+> ![IMPORTANT]
+> Replace the Screen values `App.ActiveScreen` with the actual names of the screen in the app.
 
 ## Configure expand and collapse behavior
-Add the `ExpandMenu` control to the desired location, usually on the left-hand side of the screen. Control the width of the menu with a variable, and set the width based on the value of that variable. A default width to show all the icons is 34.
+Set the `Width` property to the following expression. The width values can be adjusted based on the resolution of the app.
 
-In the `OnExpandSelect` property:
 ```powerapps-dot
-UpdateContext({ expandCollapseMenu: !expandCollapseMenu })
-```
-In the `Width` property:
-```powerapps-dot
-If( expandCollapseMenu, 400, 34 )
+If( Self.IsExpanded, 200, 46 )
 ```
 
 ## Best Practices
