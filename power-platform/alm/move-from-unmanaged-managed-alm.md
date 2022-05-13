@@ -38,7 +38,7 @@ With the exception of your development environment, the end result is to only ha
       - For *unmanaged* components, such as custom unmanaged tables, you won't use segmentation but will select **Include all components** when adding those components to the solution.
       - If there are *managed* components that you've customized, use segmentation when adding those components to the solution. For example, if you've added a custom column or changed the display name for an existing column to a Power Apps standard table, such as **Account** and **Contact**, use segmentation so you only export the customized components your project needs and not additional components that you don't intend to service. To do this, choose **Select components**, and then add only your customized components to the solution.
         > [!TIP]
-        > To see if a managed component has been customized, look for an unmanaged layer that will be above the the base managed layer of the component. More information: [View solution layers for a component](/powerapps/maker/data-platform/solution-layers#view-the-solution-layers-for-a-component)
+        > To see if a managed component has been customized, look for an unmanaged layer that will be above the base managed layer of the component. More information: [View solution layers for a component](/powerapps/maker/data-platform/solution-layers#view-the-solution-layers-for-a-component)
    - If you have canvas apps, flows, portals apps, or plug-ins to convert, you can add them to a separate unmanaged solution now, or at a later time.
    - Remember to use a single publisher for all your solutions. More information: [Solution publisher](solution-concepts-alm.md#solution-publisher)
 3. Deploy the managed solution.
