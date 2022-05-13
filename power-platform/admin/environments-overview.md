@@ -162,8 +162,7 @@ To see the environment history:
 
 > [!NOTE]
 > -	Some actions such as Edit will show the edit as an action but not details of the action.
-> -	Once an environment is completely deleted, environment history is also deleted. So, it might not be possible to know who deleted an environment after it has been hard deleted.
-
+> -	Once an environment is completely deleted, environment history is also deleted. So, it might not be possible to know who deleted an environment after it's been hard deleted.
 
 ### See also
 [Microsoft Learn: Create and manage environments in Dataverse](/learn/modules/create-manage-environments/)<br />
