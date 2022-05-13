@@ -27,6 +27,8 @@ landingContent:
             url: ./security/overview.md
           - text: Authenticating to Power Platform services
             url: ./security/authenticate-services.md
+          - text: Securely access customer data
+            url: about-lockbox.md
           - text: Connecting and authenticating to data sources
             url: ./security/connect-data-sources.md 
           - text: Security and governance considerations
