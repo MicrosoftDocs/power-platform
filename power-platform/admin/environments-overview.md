@@ -142,7 +142,7 @@ Select **Edit** to review and edit environment details.
 
 ### Environment history
 
-Environment history gives admins a timeline of the full environment lifecycle from the moment it's created until it's completely deleted with all the actions performed on the environment in between, such as edit, copy, reset, etc. Actions on the timeline format are:
+Environment history gives admins a timeline of the full environment lifecycle from the moment it's created until it's completely deleted with all the actions performed on the environment in between, such as Edit, Copy, Reset, etc. Actions on the timeline format are:
 
 -	Action name: for example, create
 -	Start time
