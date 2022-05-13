@@ -21,11 +21,11 @@ contributors:
   - mehdis-msft
 ---
 
-# `AutoWidthLabel` control
+# :::no-loc text="AutoWidthLabel"::: control
 
 A control used to display data.
 
-:::image type="content" source="media/autowidthlabel.png" alt-text="AutoWidthLabel.":::
+:::image type="content" source="media/autowidthlabel.png" alt-text="Auto width label.":::
 
 ## Description
 
@@ -46,6 +46,6 @@ This code component can only be used in canvas apps and custom pages.
 
 ## Best practices
 
-For more information, see [Fluent UI `Label` control best practices](https://developer.microsoft.com/en-us/fluentui#/controls/web/label).
+For more information, see [Fluent UI Label control best practices](https://developer.microsoft.com/en-us/fluentui#/controls/web/label).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
