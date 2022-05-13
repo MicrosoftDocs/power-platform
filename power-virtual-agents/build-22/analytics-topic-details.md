@@ -40,7 +40,6 @@ You can also hover over each topic in the Topics page and select the **Go to ana
 The topic details page includes a variety of charts with graphical views of a topic's key performance indicators. For information about each chart, see:
 
 - [Analyze topic usage in Power Virtual Agents](#analyze-topic-usage-in-power-virtual-agents)
-  - [Prerequisites](#prerequisites)
   - [Topic summary charts](#topic-summary-charts)
   - [Impact summary charts](#impact-summary-charts)
   - [Topic Volume by Day chart](#topic-volume-by-day-chart)
