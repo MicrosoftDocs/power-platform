@@ -71,7 +71,7 @@ Identify which type of Email Server Profile is being used:
 2. View the list of Email Server Profile records that appear and follow the corresponding steps below based on whether you are using an online or on-premises deployment of Dynamics 365.
 
    **Dynamics 365 Online**
-   - If you only see the default profile with a **Name** value of **Microsoft Exchange Online** and **Email Server Type Name** value of **Exchange Online**, you are using the server-side synchronization feature with the default Microsoft Exchange Online profile. As long as this profile was not [modified in an unsupported way](#we-are-using-the-default-exchange-online-profile-with-dynamics-365-online-but-we-received-a-notification-that-we-are-impacted-why), you are not affected because this profile uses Server to Server (S2S) Authentication.
+   - If you only see the default profile with a **Name** value of **Microsoft Exchange Online** and **Email Server Type Name** value of **Exchange Online**, you are using the server-side synchronization feature with the default Microsoft Exchange Online profile. As long as this profile was not [modified in an unsupported way](#we-are-using-the-default-exchange-online-profile-with-dynamics-365-online-but-we-received-a-notification-that-we-are-impacted-why), you are not affected because this profile uses server-to-server (S2S) authentication.
     
    :::image type="content" source="media/email-configuration-active-profile-exchange-online.png" alt-text="Email settings, Active email server profile - Exchange Online":::
 
@@ -83,7 +83,7 @@ Identify which type of Email Server Profile is being used:
     Use the steps provided [here](connect-exchange-online.md) to create a new Exchange Online profile and update the mailboxes to use the new profile. Begin by testing one mailbox with the new profile before attempting to switch all mailboxes.  
 
    **Dynamics 365 on-premises**
-   - If you only see a row with the **Email Server Type Name** value of **Exchange Online (Hybrid)**, you are using the correct profile type which uses Server to Server (S2S) Authentication instead of username/password.
+   - If you only see a row with the **Email Server Type Name** value of **Exchange Online (Hybrid)**, you are using the correct profile type which uses server-to-server (S2S) authentication instead of username/password.
    
    :::image type="content" source="media/email-configuration-active-profile-exchange-online-hybrid.png" alt-text="Email settings, Active email server profile - Exchange Online Hybrid)":::
 
@@ -113,7 +113,7 @@ Your on-premises deployment of Dynamics 365 needs to be version 8.1 (2016 SP1) o
 
 The default Exchange Online profile included with Dynamics 365 Online uses server-to-server (S2S) authentication. However, this profile might have been modified in an unsupported way and is now using Basic authentication. Follow these steps to verify if Basic authentication is used by the profile: 
 
-1. Go through [Step 2](#step-2-based-on-the-configured-email-option-refer-to-the-corresponding-section) above to view the list of Email Server profiles. 
+1. Go through [step 2](#step-2-based-on-the-configured-email-option-refer-to-the-corresponding-section) above to view the list of Email Server profiles. 
 
 2. Select Advanced Find (![Screen shot of Advanced Find button.](../admin/media/advanced-find-button2.png "Screen shot of Advanced Find button")).
 
