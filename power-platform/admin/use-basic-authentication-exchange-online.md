@@ -23,7 +23,7 @@ search.app:
 
 ## Overview
 
-The [server-side synchronization](server-side-synchronization.md) feature and Dynamics 365 Email Router (deprecated) include configuration options that allowed customers to connect to Exchange Online using Basic authentication (username and password). Server-side synchronization replaces the Email Router option which had been deprecated in July of 2018. If you are using our online service or on-premises (Dynamics CRM on-premises 2016 SP1 or later), server-side synchronization provides options to connect to Exchange Online using modern authentication options that do not depend on Basic authentication. For how to use the required modern authentication options to connect Dynamics 365 Online to Exchange Online, see [Connect to Exchange Online](connect-exchange-online.md). For how to connect Dynamics 365 on-premises to Exchange Online, see [Connect Customer Engagement (on-premises) to Exchange Online](/dynamics365/customerengagement/on-premises/admin/connect-dynamics-365-on-premises-exchange-online?view=op-9-1). 
+The [server-side synchronization](server-side-synchronization.md) feature and Dynamics 365 Email Router (deprecated) include configuration options that allowed customers to connect to Exchange Online using Basic authentication (username and password). Server-side synchronization replaces the Email Router option which had been deprecated in July of 2018. If you're using our online service or on-premises (Dynamics CRM on-premises 2016 SP1 or later), server-side synchronization provides options to connect to Exchange Online using modern authentication options that don't depend on Basic authentication. For how to use the required modern authentication options to connect Dynamics 365 Online to Exchange Online, see [Connect to Exchange Online](connect-exchange-online.md). For how to connect Dynamics 365 on-premises to Exchange Online, see [Connect Customer Engagement (on-premises) to Exchange Online](/dynamics365/customerengagement/on-premises/admin/connect-dynamics-365-on-premises-exchange-online?view=op-9-1). 
 
 ## Impact
 
@@ -38,12 +38,12 @@ Once Exchange Online disables support for Basic authentication, any connection f
 If your company is using server-side synchronization or the Email Router to connect to Exchange Online using a username/password, action is required.  
 
 ### Are you using server-side synchronization or the Email Router? 
-If you already know the answer, you can continue to step 2. If you are not sure, complete step 1. 
+If you already know the answer, you can continue to step 2. If you aren't sure, complete step 1. 
 
 #### Step 1: Verify if your environment is configured to use server-side synchronization or Email Router
   
 1. Access the Dynamics 365 web application as a user with the System Administrator security role.  
-2. The next step is slightly different if you are using Dynamics 365 Online or on-premises:
+2. The next step is slightly different if you're using Dynamics 365 Online or on-premises:
 
     **Dynamics 365 Online** 
     - In the upper-right corner, select **Settings** ![Gear icon.](media/selection-rule-gear-button.png), and then select **Advanced settings**. 
@@ -68,10 +68,10 @@ If you already know the answer, you can continue to step 2. If you are not sure,
 
 Identify which type of Email Server Profile is being used: 
 1. On the **Email Configuration** page, select **Email Server Profiles**. 
-2. View the list of Email Server Profile records that appear and follow the corresponding steps below based on whether you are using an online or on-premises deployment of Dynamics 365.
+2. View the list of Email Server Profile records that appear and follow the corresponding steps below based on whether you're using an online or on-premises deployment of Dynamics 365.
 
    **Dynamics 365 Online**
-   - If you only see the default profile with a **Name** value of **Microsoft Exchange Online** and **Email Server Type Name** value of **Exchange Online**, you are using the server-side synchronization feature with the default Microsoft Exchange Online profile. As long as this profile was not [modified in an unsupported way](#we-are-using-the-default-exchange-online-profile-with-dynamics-365-online-but-we-received-a-notification-that-we-are-impacted-why), you are not affected because this profile uses server-to-server (S2S) authentication.
+   - If you only see the default profile with a **Name** value of **Microsoft Exchange Online** and **Email Server Type Name** value of **Exchange Online**, you're using the server-side synchronization feature with the default Microsoft Exchange Online profile. As long as this profile wasn't [modified in an unsupported way](#we-are-using-the-default-exchange-online-profile-with-dynamics-365-online-but-we-received-a-notification-that-we-are-impacted-why), you aren't affected because this profile uses server-to-server (S2S) authentication.
     
       :::image type="content" source="media/email-configuration-active-profile-exchange-online.png" alt-text="Email settings, Active email server profile - Exchange Online":::
 
@@ -83,7 +83,7 @@ Identify which type of Email Server Profile is being used:
     Use the steps provided [here](connect-exchange-online.md) to create a new Exchange Online profile and update the mailboxes to use the new profile. Begin by testing one mailbox with the new profile before attempting to switch all mailboxes.  
 
    **Dynamics 365 on-premises**
-   - If you only see a row with the **Email Server Type Name** value of **Exchange Online (Hybrid)**, you are using the correct profile type which uses server-to-server (S2S) authentication instead of username/password.
+   - If you only see a row with the **Email Server Type Name** value of **Exchange Online (Hybrid)**, you're using the correct profile type which uses server-to-server (S2S) authentication instead of username/password.
    
       :::image type="content" source="media/email-configuration-active-profile-exchange-online-hybrid.png" alt-text="Email settings, Active email server profile - Exchange Online Hybrid)":::
 
@@ -93,23 +93,23 @@ Identify which type of Email Server Profile is being used:
      - outlook.office365.com 
      - smtp.office365.com
 
-   Use the steps provided [here](/dynamics365/customerengagement/on-premises/admin/connect-dynamics-365-on-premises-exchange-online?view=op-9-1) to create a new **Exchange Online (Hybrid)** profile and update the mailboxes to use the new profile. Begin by testing one mailbox with the new profile before attempting to switch all mailboxes. If you do not see the option for this type of profile, refer to the FAQ section which discusses the version requirement. 
+   Use the steps provided [here](/dynamics365/customerengagement/on-premises/admin/connect-dynamics-365-on-premises-exchange-online?view=op-9-1) to create a new **Exchange Online (Hybrid)** profile and update the mailboxes to use the new profile. Begin by testing one mailbox with the new profile before attempting to switch all mailboxes. If you don't see the option for this type of profile, refer to the FAQ section which discusses the version requirement. 
 
    **Dynamics 365 Email Router**
-   - If your company is using the Dynamics 365 Email Router to connect to Exchange Online, you are required to transition to using the server-side synchronization feature and use the steps provided [here](/dynamics365/customerengagement/on-premises/admin/connect-dynamics-365-on-premises-exchange-online?view=op-9-1). The Email Router was deprecated on July 17, 2018. It was previously communicated and [documented](../important-changes-coming.md?msclkid=254384a1c69a11ec9804139c37c818f7#microsoft-dynamics-365-email-router-is-deprecated) that the Email Router would no longer function starting April 12, 2021. Although the Email Router may still have worked with Dynamics 365 on-premises, this configuration is no longer supported. 
+   - If your company is using the Dynamics 365 Email Router to connect to Exchange Online, you're required to transition to using the server-side synchronization feature and use the steps provided [here](/dynamics365/customerengagement/on-premises/admin/connect-dynamics-365-on-premises-exchange-online?view=op-9-1). The Email Router was deprecated on July 17, 2018. It was previously communicated and [documented](../important-changes-coming.md?msclkid=254384a1c69a11ec9804139c37c818f7#microsoft-dynamics-365-email-router-is-deprecated) that the Email Router would no longer function starting April 12, 2021. Although the Email Router may still have worked with Dynamics 365 on-premises, this configuration is no longer supported. 
 
 ## FAQ
 
 ### What will happen when Basic authentication is disabled in Exchange Online? 
 Any apps configured to use Basic authentication (username and password) to retrieve data from Exchange Online will quit working. For more information on the potential impact to Dynamics 365, refer to the [Impact](#impact) section of this document. 
 
-### What if we are connecting to Exchange Online in another tenant? 
+### What if we're connecting to Exchange Online in another tenant? 
 To connect Dynamics 365 Online to Exchange Online in a different tenant, see [Exchange Online cross-tenant authentication](connect-exchange-online-server-profile-oauth.md).  
 
 ### Why doesn’t our Dynamics 365 on-premises deployment include an option to create an Exchange Online (Hybrid) profile? 
-Your on-premises deployment of Dynamics 365 needs to be version 8.1 (2016 SP1) or higher. If you are using an older version, you will need to upgrade to 8.1 or higher before you can create the required **Exchange Online (Hybrid)** profile. 
+Your on-premises deployment of Dynamics 365 needs to be version 8.1 (2016 SP1) or higher. If you're using an older version, you'll need to upgrade to 8.1 or higher before you can create the required **Exchange Online (Hybrid)** profile. 
 
-### We are using the default Exchange Online profile with Dynamics 365 Online but we received a notification that we are impacted. Why? 
+### We're using the default Exchange Online profile with Dynamics 365 Online but we received a notification that we are impacted. Why? 
 
 The default Exchange Online profile included with Dynamics 365 Online uses server-to-server (S2S) authentication. However, this profile might have been modified in an unsupported way and is now using Basic authentication. Follow these steps to verify if Basic authentication is used by the profile: 
 
