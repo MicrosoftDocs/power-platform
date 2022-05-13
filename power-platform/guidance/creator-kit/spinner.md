@@ -54,6 +54,6 @@ This Canvas component can only be used in Canvas apps and Custom Pages.
 ## Configuring the spinner visibility
 
 ## Best Practices
-Refer to [Fluent UI Spinner control best practices](https://developer.microsoft.com/en-us/fluentui#/controls/web/spinner)
+Refer to [Fluent UI Spinner control best practices](https://developer.microsoft.com/fluentui#/controls/web/spinner)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
