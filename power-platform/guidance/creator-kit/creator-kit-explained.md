@@ -22,7 +22,7 @@ contributors:
 
 # Use the Creator Kit
 
-Before you use the components included with the Creator Kit, use the **Reference App** to learn component behavior and implementation patterns. And learn about how to add components to an app.
+Before you use the components included with the Creator Kit, use the **Reference App** to learn component behavior and implementation patterns. Also learn about how to add components to an app.
 
 The Creator Kit is shipped with the following assets:
 
@@ -47,8 +47,8 @@ In this section, you'll learn the details about different apps, templates, and c
 - [Canvas App Template](#canvas-app-template) - a template of canvas app for reuse
 - [Custom Page Template](#custom-page-template) - a template of custom page for reuse
 - [Theme Editor App](#theme-editor-app) - Theme JSON object for styling components consistently
-- [Canvas components](#canvas-components) - sample canvas components
-- [Code components](#code-components) - sample code components
+- [Canvas components](#canvas-components) - Fluent UI canvas components
+- [Code components](#code-components) - Fluent UI code components
 
 ### Reference App
 
@@ -155,10 +155,10 @@ Use this app to generate a **Theme JSON** object for styling components consiste
 > [!NOTE]
 > Any control (including those outside of the Creator Kit) can reference the Theme JSON colors, but the specific property of palette needs to be indicated.
 
-Example formula referencing the `AppTheme` color values in a standard button's `TextColor`:
+Example formula referencing the `AppTheme` primary color value in a standard button's `Fill` property:
 
 ```powerapps-dot
-ColorValue( AppTheme.palette.white )
+ColorValue( AppTheme.palette.themePrimary )
 ```
 
 ### Canvas components
