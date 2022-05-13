@@ -51,7 +51,19 @@ This Canvas component can only be used in Canvas apps and Custom Pages.
 | -------- | ----------- |
 | `Theme` | The Theme JSON object |
 
-## Configuring the spinner visibility
+## Configuring spinner loading behavior
+Make the spinner control visible when a process begins, then hide it when the process is complete. Use a variable to control the visibility of the spinner and update the values before and after the process' code block.
+
+```powerapps-dot
+UpdateContext({ var_showLoader: true });
+
+/* Some code ... */
+
+UpdateContext({ var_showLoader: false });
+
+```
+
+Then, provide the `var_showLoader` variable as the value for the `IsLoading` property of the spinner.
 
 ## Best Practices
 Refer to [Fluent UI Spinner control best practices](https://developer.microsoft.com/fluentui#/controls/web/spinner)
