@@ -21,7 +21,7 @@ contributors:
   - slaouist
 ---
 
-# `DetailsList` control
+# :::no-loc text="DetailsList"::: control
 
 A control used to display a set of data.
 

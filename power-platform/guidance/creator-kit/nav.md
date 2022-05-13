@@ -21,7 +21,7 @@ contributors:
   - slaouist
 ---
 
-# `Nav` control
+# :::no-loc text="Nav"::: control
 
 A control used to provide navigation.
 

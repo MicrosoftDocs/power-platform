@@ -21,7 +21,7 @@ contributors:
   - mehdis-msft
 ---
 
-# `CommandBar` control
+# :::no-loc text="CommandBar"::: control
 
 A control used to input commands.
 

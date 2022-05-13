@@ -20,7 +20,7 @@ contributors:
   - demora-msft
   - slaouist
 ---
-# `ResizableTextArea` control
+# :::no-loc text="ResizableTextArea"::: control
 
 A component for user input.
 

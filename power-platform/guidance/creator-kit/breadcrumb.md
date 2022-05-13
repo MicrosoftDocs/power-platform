@@ -21,7 +21,7 @@ contributors:
   - mehdis-msft
 ---
 
-# `Breadcrumb` control
+# :::no-loc text="Breadcrumb"::: control
 
 A control used to provide navigation.
 

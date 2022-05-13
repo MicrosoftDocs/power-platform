@@ -21,7 +21,7 @@ contributors:
   - mehdis-msft
 ---
 
-# `TagList` control
+# :::no-loc text="TagList"::: control
 
 A control used to display data.
 
@@ -73,7 +73,6 @@ Table(
     	ItemTextColor: "purple",
     	ItemBackgroundColor: "lightpurple"
     },
-    
     {
     	ItemDisplayName: "Power Automate",
     	ItemKey: "2",
@@ -83,7 +82,6 @@ Table(
     	ItemTextColor: "blue",
     	ItemBackgroundColor: "lightBlue"
     },
-    
     {
     	ItemDisplayName: "Power BI",
     	ItemKey: "3",

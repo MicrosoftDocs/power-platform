@@ -21,7 +21,7 @@ contributors:
   - slaouist
 ---
 
-# `Pivot` control
+# :::no-loc text="Pivot"::: control
 
 A control used to provide navigation.
 

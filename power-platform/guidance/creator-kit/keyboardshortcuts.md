@@ -21,7 +21,7 @@ contributors:
   - slaouist
 ---
 
-# `KeyboardShortcuts` control
+# :::no-loc text="KeyboardShortcut"::: control
 
 A control used to capture and act on keyboard events.
 

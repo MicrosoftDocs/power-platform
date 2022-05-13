@@ -20,7 +20,7 @@ contributors:
   - demora-msft
   - slaouist
 ---
-# Icon control
+# :::no-loc text="Icon"::: control
 
 A control used to display Fluent UI icons.
 

@@ -21,7 +21,7 @@ contributors:
   - slaouist
 ---
 
-# `Picker` control
+# :::no-loc text="Picker"::: control
 
 A control used to provide a search experience.
 

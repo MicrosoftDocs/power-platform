@@ -21,7 +21,7 @@ contributors:
   - mehdis-msft
 ---
 
-# `ContextMenu` control
+# :::no-loc text="ContextMenu"::: control
 
 A control used to input commands.
 

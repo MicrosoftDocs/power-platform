@@ -21,7 +21,7 @@ contributors:
   - slaouist
 ---
 
-# `Elevation` control
+# :::no-loc text="Elevation"::: control
 
 A control used to construct cards and flyouts.
 
