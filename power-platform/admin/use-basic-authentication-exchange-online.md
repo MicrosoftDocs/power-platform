@@ -73,7 +73,7 @@ Identify which type of Email Server Profile is being used:
    **Dynamics 365 Online**
    - If you only see the default profile with a **Name** value of **Microsoft Exchange Online** and **Email Server Type Name** value of **Exchange Online**, you are using the server-side synchronization feature with the default Microsoft Exchange Online profile. As long as this profile was not [modified in an unsupported way](#we-are-using-the-default-exchange-online-profile-with-dynamics-365-online-but-we-received-a-notification-that-we-are-impacted-why), you are not affected because this profile uses server-to-server (S2S) authentication.
     
-   :::image type="content" source="media/email-configuration-active-profile-exchange-online.png" alt-text="Email settings, Active email server profile - Exchange Online":::
+      :::image type="content" source="media/email-configuration-active-profile-exchange-online.png" alt-text="Email settings, Active email server profile - Exchange Online":::
 
    - If you see other Email Server Profile records that **do not** have the **Email Server Type Name** value of **Exchange Online**, open each of the profiles to view the properties. If any of the profiles have an **Incoming Server Location** or **Outgoing Server Location** value matching one of the following values, this profile is impacted: 
      - https://outlook.office365.com/EWS/Exchange.asmx 
@@ -85,7 +85,7 @@ Identify which type of Email Server Profile is being used:
    **Dynamics 365 on-premises**
    - If you only see a row with the **Email Server Type Name** value of **Exchange Online (Hybrid)**, you are using the correct profile type which uses server-to-server (S2S) authentication instead of username/password.
    
-   :::image type="content" source="media/email-configuration-active-profile-exchange-online-hybrid.png" alt-text="Email settings, Active email server profile - Exchange Online Hybrid)":::
+      :::image type="content" source="media/email-configuration-active-profile-exchange-online-hybrid.png" alt-text="Email settings, Active email server profile - Exchange Online Hybrid)":::
 
    - If you see other Email Server Profile records that **do not** have the **Email Server Type Name** value of **Exchange Online (Hybrid)**, open each of the profiles to view the properties. If any of the profiles have an **Incoming Server Location** or **Outgoing Server Location** value matching one of the following values, this profile is impacted: 
 
@@ -115,7 +115,7 @@ The default Exchange Online profile included with Dynamics 365 Online uses serve
 
 1. Go through [step 2](#step-2-based-on-the-configured-email-option-refer-to-the-corresponding-section) above to view the list of Email Server profiles. 
 
-2. Select Advanced Find (![Screen shot of Advanced Find button.](../admin/media/advanced-find-button2.png "Screen shot of Advanced Find button")).
+2. Select Advanced Find (![Screen shot of Advanced Find button.](media/advanced-find-button2.png "Screen shot of Advanced Find button")).
 
 3. Select **Edit Columns**.
 
