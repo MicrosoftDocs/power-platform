@@ -1,12 +1,13 @@
 ---
 title: "Geo to geo migrations  | MicrosoftDocs"
 description: Geo to geo migrations
-author: jimholtz
+author: matapg007
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/13/2022
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: matgupta 
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:
