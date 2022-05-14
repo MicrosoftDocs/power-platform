@@ -63,23 +63,27 @@ Example `Items` property:
 ```powerapps-dot
 Table(
     {
-        Label: "Home",
-        Icon: "Home",  
-        Screen: App.ActiveScreen
+        Icon: "PowerApps", 
+        Label: "Power Apps", 
+        Screen:PowerAppsScreen
     },{
-        Label: "Learn", 
-        Icon: "Reading", 
-        Screen: App.ActiveScreen
+        Icon: "PowerBILogo", 
+        Label: "Power BI", 
+        Screen:PowerBIScreen
     },{
-        Label: "Apps", 
-        Icon: "App", 
-        Screen: App.ActiveScreen
+        Icon: "PowerAutomateLogo", 
+        Label: "Power Automate", 
+        Screen:PowerAutomateScreen
+    },{
+        Icon: "Dataverse", 
+        Label: "Dataverse", 
+        Screen:DataverseScreen
     }
 )
 ```
 
-> ![IMPORTANT]
-> Replace the Screen values `App.ActiveScreen` with the actual names of the screen in the app.
+> [!WARNING]
+> The screen values in the above example code are from a sample and might not exist in your app. Replace the screen values with actual screen names in your app to render properly.
 
 ## Configure expand and collapse behavior
 
