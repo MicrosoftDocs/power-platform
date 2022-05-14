@@ -31,7 +31,8 @@ This control renders Fluent UI icons based on the name. Allows you to easily cre
 
 For a list of icons, go to [Fluent UI icons](https://developer.microsoft.com/fluentui#/styles/web/icons).
 
-View component source code and additional documentation in the [GitHub repository](https://github.com/microsoft/powercat-creator-kit)
+> [!NOTE]
+> Component source code and more information available at the [Creator kit GitHub repository](https://github.com/microsoft/powercat-creator-kit).
 
 ## Limitations
 
@@ -64,6 +65,6 @@ This code component can only be used in canvas apps and custom pages.
 
 ## Best practices
 
-Refer to [Fluent UI `Icon` control best practices](https://developer.microsoft.com/fluentui#/controls/web/contextmenu)
+See [Fluent UI `Icon` control best practices](https://developer.microsoft.com/fluentui#/controls/web/contextmenu)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

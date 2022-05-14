@@ -32,7 +32,8 @@ A navigation pane (`Nav`) provides links to the main areas of an app or site.
 
 The `Nav` code component allows using of the [Fluent UI `Nav` menu component](https://developer.microsoft.com/fluentui#/controls/web/nav) from inside canvas apps and custom pages.
 
-View component source code and additional documentation in the [GitHub repository](https://github.com/microsoft/powercat-creator-kit)
+> [!NOTE]
+> Component source code and more information available at the [Creator kit GitHub repository](https://github.com/microsoft/powercat-creator-kit).
 
 ## Limitations
 
@@ -130,6 +131,6 @@ Replace the `false` values with appropriate expressions in the Power Fx language
 
 ## Best practices
 
-Refer to [Fluent UI `Nav` control best practices](https://developer.microsoft.com/fluentui#/controls/web/nav)
+See [Fluent UI `Nav` control best practices](https://developer.microsoft.com/fluentui#/controls/web/nav)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -32,7 +32,8 @@ A contextual menu (`ContextMenu`) is a list of commands that are based on the co
 
 This code component provides a wrapper around the [Fluent UI `ContextMenu`](https://developer.microsoft.com/fluentui#/controls/web/contextualmenu) control bound to a button for use in canvas apps and custom pages.
 
-View component source code and additional documentation in the [GitHub repository](https://github.com/microsoft/powercat-creator-kit)
+> [!NOTE]
+> Component source code and more information available at the [Creator kit GitHub repository](https://github.com/microsoft/powercat-creator-kit).
 
 ## Limitations
 
@@ -98,6 +99,6 @@ Replace the `false` values with appropriate expressions in the Power Fx language
 
 ## Best practices
 
-For more information, see [Fluent UI `ContextMenu` control best practices](https://developer.microsoft.com/fluentui#/controls/web/contextmenu).
+See [Fluent UI `ContextMenu` control best practices](https://developer.microsoft.com/fluentui#/controls/web/contextmenu).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

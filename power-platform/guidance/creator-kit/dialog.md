@@ -3,10 +3,9 @@ title: Dialog control reference | Creator Kit
 description: Learn about the details and properties of Dialog control in the Creator Kit.
 author: denisem-msft
 manager: devkeydet
-
 ms.component: pa-maker
 ms.topic: conceptual
-ms.date: 05/06/2022
+ms.date: 05/16/2022
 ms.subservice: guidance
 ms.author: demora
 ms.reviewer: tapanm
@@ -30,12 +29,13 @@ A control used to group content.
 
 A dialog box (Dialog) is a temporary pop-up that takes focus from the page or app and requires people to interact with it. It’s primarily used for confirming actions, such as deleting a file, or asking people to make a choice.
 
-This Canvas component mimics the style and behavior of the [Fluent UI Dialog control](https://developer.microsoft.com/fluentui#/controls/web/Dialog).
+This canvas component mimics the style and behavior of the [Fluent UI Dialog control](https://developer.microsoft.com/fluentui#/controls/web/Dialog).
 
 [View component in the Creator Kit GitHub repository](https://github.com/microsoft/powercat-creator-kit/tree/main/CreatorKitCore/SolutionPackage/CanvasApps/cat_powercatcomponentlibrary_0be3a_DocumentUri_msapp_src)
 
 ## Limitations
-This Canvas component can only be used in Canvas apps and Custom Pages.
+
+This canvas component can only be used in canvas apps and custom pages.
 
 ## Key properties
 
@@ -51,25 +51,30 @@ This Canvas component can only be used in Canvas apps and Custom Pages.
 | `OnButtonSelect` | Action expression that executes when one of the action buttons are selected. |
 
 ## Configure Dialog visibility
-Make the `Dialog` control itself (or the surface it's located within) visible when a boolean (true/false) type variable changes to true, and assign that variable to the Dialog's visibility property. Once the Dialog is displayed, you can hide the Dialog by updating the variable on the reset property, which is triggered when the close icon is clicked.
 
-Power Fx formula to open the dialog, in an action formula on another component somewhere in the app (e.g., the `OnSelect` property of a button):
+Make the `Dialog` control itself (or the surface it's located within) visible when a boolean (true/false) type variable changes to true, and assign that variable to the dialog's visibility property. Once the dialog is displayed, you can hide the dialog by updating the variable on the reset property, which is triggered when the close icon is clicked.
+
+Power Fx formula to open the dialog, in an action formula on another component somewhere in the app (for example, the `OnSelect` property of a button):
+
 ```powerapps-dot
 UpdateContext({ showHideDialog: true })
 ```
 
 Power Fx formula to close the dialog, in the `OnCloseSelect` property of the Dialog:
+
 ```powerapps-dot
 UpdateContext({ showHideDialog: true })
 ```
 
 Assign the variable to the `Visible` property of the dialog:
+
 ```powerapps-dot
 showHideDialog
 ```
 
 ## Configure button actions
-In the `OnButtonSelect` property of the Dialog, provide actions in an If() or Switch() condition based on the `Self.SelectedButton.Label` text value to define the action. Depending on the action, it might make sense to also close the Dialog after the action is completed.
+
+In the `OnButtonSelect` property of the dialog, provide actions in an `If()` or `Switch()` condition based on the `Self.SelectedButton.Label` text value to define the action. Depending on the action, it might make sense to also close the dialog after the action is completed.
 
 ```powerapps-dot
     If( Self.SelectedButton.Label = "Send", 
@@ -78,11 +83,12 @@ In the `OnButtonSelect` property of the Dialog, provide actions in an If() or Sw
     UpdateContext({ showHideDialog: false })
 ```
 
-## Buttons Dataset
+## Buttons dataset
+
 | Property | Description |
 | -------- | ----------- |
-| `Label` | The label displayed on the button |
-| `ButtonType` | Enumeration that determines the styling of the button. Choose between Standard and Primary |
+| `Label` | The label displayed on the button. |
+| `ButtonType` | Enumeration that determines the styling of the button. Choose between Standard and Primary.|
 
 ```powerapps-dot
 Table(
@@ -96,7 +102,8 @@ Table(
 )
 ```
 
-## Best Practices
-Refer to [Fluent UI Dialog control best practices](https://developer.microsoft.com/fluentui#/controls/web/Dialog)
+## Best practices
+
+See [Fluent UI `Elevation` control best practices](https://developer.microsoft.com/fluentui#/styles/web/elevation).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

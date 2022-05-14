@@ -41,8 +41,8 @@ The `Picker` code component provides the following features:
 1. Allows programmatic **Set Focus**.
 1. Styled to closely match the PILL Spec.
 
-
-View component source code and additional documentation in the [GitHub repository](https://github.com/microsoft/powercat-creator-kit)
+> [!NOTE]
+> Component source code and more information available at the [Creator kit GitHub repository](https://github.com/microsoft/powercat-creator-kit).
 
 ## Datasets
 
@@ -95,6 +95,6 @@ If(TagPicker.TagEvent="Remove",
 
 ## Best practices
 
-For more information, see [Fluent UI Picker control best practices](https://developer.microsoft.com/fluentui#/controls/web/Picker)
+See [Fluent UI Picker control best practices](https://developer.microsoft.com/fluentui#/controls/web/Picker)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

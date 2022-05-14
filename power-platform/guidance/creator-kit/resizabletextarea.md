@@ -31,7 +31,8 @@ Text areas give people a way to enter and edit text. They're used in forms, moda
 
 This component allows the user to resize the text area for convenience.
 
-View component source code and additional documentation in the [GitHub repository](https://github.com/microsoft/powercat-creator-kit)
+> [!NOTE]
+> Component source code and more information available at the [Creator kit GitHub repository](https://github.com/microsoft/powercat-creator-kit).
 
 ## Limitations
 
@@ -63,6 +64,6 @@ Other properties are the same as the standard [text input control](/power-apps/m
 
 ## Best practices
 
-For more information, review the component in the Reference App or see [Fluent UI text field control best practices](https://developer.microsoft.com/fluentui#/controls/web/textfield).
+See [Fluent UI text field control best practices](https://developer.microsoft.com/fluentui#/controls/web/textfield).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

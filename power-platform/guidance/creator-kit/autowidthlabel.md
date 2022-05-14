@@ -30,7 +30,8 @@ A control used to display data.
 
 This code component acts similar to the standard canvas app label, but will expand dynamically in width to accommodate the text and return the new width. This functionality is currently not supported in canvas apps today.
 
-View component source code and additional documentation in the [GitHub repository](https://github.com/microsoft/powercat-creator-kit)
+> [!NOTE]
+> Component source code and more information available at the [Creator kit GitHub repository](https://github.com/microsoft/powercat-creator-kit).
 
 ## Limitations
 
@@ -45,6 +46,6 @@ This code component can only be used in canvas apps and custom pages.
 
 ## Best practices
 
-For more information, see [Fluent UI Label control best practices](https://developer.microsoft.com/en-us/fluentui#/controls/web/label).
+See [Fluent UI Label control best practices](https://developer.microsoft.com/en-us/fluentui#/controls/web/label).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

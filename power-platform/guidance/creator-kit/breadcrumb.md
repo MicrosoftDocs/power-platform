@@ -32,7 +32,8 @@ A control used to provide navigation.
 
 This code component provides a wrapper around the [Fluent UI `Breadcrumb`](https://developer.microsoft.com/fluentui#/controls/web/breadcrumb) control for use in canvas and custom pages. 
 
-View component source code and additional documentation in the [GitHub repository](https://github.com/microsoft/powercat-creator-kit)
+> [!NOTE]
+> Component source code and more information available at the [Creator kit GitHub repository](https://github.com/microsoft/powercat-creator-kit).
 
 ## Limitations
 
@@ -97,6 +98,6 @@ As this control is used for navigation, a logical action is to use [navigation f
 
 ## Best practices
 
-For more information, see [Fluent UI `Breadcrumb` control best practices](https://developer.microsoft.com/fluentui#/controls/web/breadcrumb).
+See [Fluent UI `Breadcrumb` control best practices](https://developer.microsoft.com/fluentui#/controls/web/breadcrumb).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

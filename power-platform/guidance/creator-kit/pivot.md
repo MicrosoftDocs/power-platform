@@ -32,7 +32,8 @@ The `Pivot` control and related tabs pattern are used for navigating frequently 
 
 This code component provides a wrapper around the [Fluent UI `Pivot`](https://developer.microsoft.com/fluentui#/controls/web/pivot) control for use in canvas and custom pages.
 
-View component source code and additional documentation in the [GitHub repository](https://github.com/microsoft/powercat-creator-kit)
+> [!NOTE]
+> Component source code and more information available at the [Creator kit GitHub repository](https://github.com/microsoft/powercat-creator-kit).
 
 ## Limitations
 
@@ -88,6 +89,6 @@ Pivot1.Selected.ItemKey = "tabFile"
 
 ## Best practices
 
-For more information, see [Fluent UI `Pivot` control best practices](https://developer.microsoft.com/fluentui#/controls/web/pivot).
+See [Fluent UI `Pivot` control best practices](https://developer.microsoft.com/fluentui#/controls/web/pivot).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

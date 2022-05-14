@@ -30,7 +30,8 @@ A control used to construct cards and flyouts.
 
 Fluent UI `Elevation` support with mouse hover events.
 
-View component source code and additional documentation in the [GitHub repository](https://github.com/microsoft/powercat-creator-kit)
+> [!NOTE]
+> Component source code and more information available at the [Creator kit GitHub repository](https://github.com/microsoft/powercat-creator-kit).
 
 ## Limitations
 
@@ -54,6 +55,6 @@ This code component can only be used in canvas apps and custom pages.
 
 ## Best practices
 
-For more information, see [Fluent UI `Elevation` control best practices](https://developer.microsoft.com/fluentui#/styles/web/elevation).
+See [Fluent UI `Elevation` control best practices](https://developer.microsoft.com/fluentui#/styles/web/elevation).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

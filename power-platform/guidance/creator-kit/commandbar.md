@@ -32,7 +32,8 @@ A control used to input commands.
 
 This code component provides a wrapper around the [Fluent UI `CommandBar`](https://developer.microsoft.com/fluentui#/controls/web/commandbar) control for use in canvas & custom pages.
 
-View component source code and additional documentation in the [GitHub repository](https://github.com/microsoft/powercat-creator-kit)
+> [!NOTE]
+> Component source code and more information available at the [Creator kit GitHub repository](https://github.com/microsoft/powercat-creator-kit).
 
 ## Limitations
 
@@ -116,6 +117,6 @@ Replace the `false` values with appropriate expressions in the Power Fx language
 
 ## Best practices
 
-For more information about general best practices about this control, see [Fluent UI `CommandBar` control best practices](https://developer.microsoft.com/fluentui#/controls/web/commandbar).
+See [Fluent UI `CommandBar` control best practices](https://developer.microsoft.com/fluentui#/controls/web/commandbar).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

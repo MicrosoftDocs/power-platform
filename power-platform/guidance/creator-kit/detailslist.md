@@ -32,7 +32,8 @@ A details list (`DetailsList`) is a robust way to display an information-rich co
 
 The `DetailsList` code component allows using of the [Fluent UI `DetailsList` component](https://developer.microsoft.com/fluentui#/controls/web/detailslist) from inside canvas apps and custom pages.
 
-View component source code and additional documentation in the [GitHub repository](https://github.com/microsoft/powercat-creator-kit)
+> [!NOTE]
+> Component source code and more information available at the [Creator kit GitHub repository](https://github.com/microsoft/powercat-creator-kit).
 
 ## Limitations
 
@@ -145,6 +146,6 @@ If( Self.EventName = "CellAction",
 
 ## Best practices
 
-For more information, see [Fluent UI `DetailsList` control best practices](https://developer.microsoft.com/fluentui#/controls/web/detailslist).
+See [Fluent UI `DetailsList` control best practices](https://developer.microsoft.com/fluentui#/controls/web/detailslist).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
