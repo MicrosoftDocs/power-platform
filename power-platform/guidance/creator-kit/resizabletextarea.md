@@ -21,6 +21,8 @@ contributors:
 ---
 # :::no-loc text="ResizableTextArea"::: control
 
+[This article is pre-release documentation and is subject to change.]
+
 A component for user input.
 
 :::image type="content" source="media/resizable-textarea.png" alt-text="Resizable text area control.":::

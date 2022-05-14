@@ -22,6 +22,8 @@ contributors:
 
 # :::no-loc text="TagList"::: control
 
+[This article is pre-release documentation and is subject to change.]
+
 A control used to display data.
 
 :::image type="content" source="media/taglist.png" alt-text="TagList control.":::

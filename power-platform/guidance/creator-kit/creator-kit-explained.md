@@ -22,6 +22,8 @@ contributors:
 
 # Use the Creator Kit
 
+[This article is pre-release documentation and is subject to change.]
+
 Before you use the components included with the Creator Kit, use the **Reference App** to learn component behavior and implementation patterns. Also learn about how to add components to an app.
 
 The Creator Kit is shipped with the following assets:

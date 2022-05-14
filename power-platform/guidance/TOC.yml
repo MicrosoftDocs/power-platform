@@ -262,7 +262,7 @@
       href: coe/release-notes.md
     - name: Feedback and support
       href: coe/feedback-support.md
-  - name: Power Platform Creator Kit
+  - name: Power Platform Creator Kit (preview)
     items:
     - name: Overview
       href: creator-kit/overview.md

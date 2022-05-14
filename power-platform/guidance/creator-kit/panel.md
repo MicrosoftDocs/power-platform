@@ -21,6 +21,8 @@ contributors:
 ---
 # :::no-loc text="Panel"::: control
 
+[This article is pre-release documentation and is subject to change.]
+
 A control used to group content.
 
 :::image type="content" source="media/Panel.png" alt-text="Panel control.":::

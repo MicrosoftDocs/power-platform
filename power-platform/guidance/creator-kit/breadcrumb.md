@@ -22,6 +22,8 @@ contributors:
 
 # :::no-loc text="Breadcrumb"::: control
 
+[This article is pre-release documentation and is subject to change.]
+
 A control used to provide navigation.
 
 :::image type="content" source="media/breadcrumb.png" alt-text="Breadcrumb control.":::

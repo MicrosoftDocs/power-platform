@@ -21,6 +21,8 @@ contributors:
 ---
 # Install the Creator Kit
 
+[This article is pre-release documentation and is subject to change.]
+
 ## Prerequisites
 
 - A [Power Platform environment with Dataverse database](/power-platform/admin/create-environment#create-an-environment-with-a-database) having the [Power Apps component framework feature enabled](/power-apps/developer/component-framework/component-framework-for-canvas-apps#enable-the-power-apps-component-framework-feature) (System Administrator security role is needed to enable the feature).

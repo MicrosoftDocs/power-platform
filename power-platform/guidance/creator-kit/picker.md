@@ -22,6 +22,8 @@ contributors:
 
 # :::no-loc text="Picker"::: control
 
+[This article is pre-release documentation and is subject to change.]
+
 A control used to provide a search experience.
 
 :::image type="content" source="media/Picker.png" alt-text="Picker control.":::

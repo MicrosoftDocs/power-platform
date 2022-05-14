@@ -22,6 +22,8 @@ contributors:
 
 # Overview of the Creator Kit components
 
+[This article is pre-release documentation and is subject to change.]
+
 The following table describes the components included with the Creator Kit.
 
 The table also describes whether the component has Fluent UI, and the supported app type such as canvas apps, custom pages, or model-driven apps.

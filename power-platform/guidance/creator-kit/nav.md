@@ -22,6 +22,8 @@ contributors:
 
 # :::no-loc text="Nav"::: control
 
+[This article is pre-release documentation and is subject to change.]
+
 A control used to provide navigation.
 
 :::image type="content" source="media/nav.png" alt-text="Nav control.":::
