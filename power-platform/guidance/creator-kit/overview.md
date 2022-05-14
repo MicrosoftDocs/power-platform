@@ -26,7 +26,7 @@ contributors:
 
 > [!IMPORTANT]
 > - This is a preview feature.
-> - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
+> - [!INCLUDE[cc_preview_features_definition](../../includes/cc-preview-features-definition.md)]
 
 The Creator Kit helps you create Power Apps experiences on the web and mobile platforms by making several easy to use sample controls and components available. The toolkit contains a component library, several commonly used [Power Apps component framework controls](/power-apps/developer/component-framework/overview), and other utilities that increase developer productivity. 
 
