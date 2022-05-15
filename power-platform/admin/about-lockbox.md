@@ -46,7 +46,7 @@ Power Platform applications and services store customer data in several Azure st
 
 ## Workflow 
 
-1. Your organization has an issue with Microsoft Power Platform, and opens a support request with Microsoft Support. Alternatively, Microsoft proactively identifies a problem (for example, a proactive notification is triggered) and a Microsoft-initiated event is opened to investigate and mitigate or fix the root cause. 
+1. Your organization has an issue with Microsoft Power Platform and opens a support request with Microsoft Support. Alternatively, Microsoft proactively identifies a problem (for example, a proactive notification is triggered) and a Microsoft-initiated event is opened to investigate and mitigate or fix the root cause. 
 
 2. A Microsoft operator reviews the support request/event and attempts to troubleshoot the issue by using standard tools and telemetry. If access to customer data is needed for further troubleshooting, a Microsoft engineer triggers an internal approval process for access to customer data, irrespective of lockbox policy being enabled or not.
 
@@ -57,7 +57,7 @@ Power Platform applications and services store customer data in several Azure st
 
    :::image type="content" source="media/lockbox-request.png" alt-text="A sample lockbox request.":::
 
-4. The approver signs in to the Power Platform admin center and approves the request. If the request is rejected or not approved within 4 days, it expires and no access is granted to the Microsoft engineer. 
+4. The approver signs into the Power Platform admin center and approves the request. If the request is rejected or not approved within 4 days, it expires, and no access is granted to the Microsoft engineer. 
 
 5. After the approver from your organization approves the request, the Microsoft engineer obtains the elevated permissions that were initially requested and fixes your issue. Microsoft engineers have a set amount of time - 8 hours - to fix the issue, after which access is automatically revoked. 
 
@@ -140,7 +140,7 @@ Customer Lockbox requests are also not triggered by external legal demands for d
 
 ## Known issues
 
-- The consent process for creating a support instance and support user access are not integrated with Customer Lockbox. Once the support instance is created after initial customer consent, a support engineer with support user permissions will have access to the data stored in the support instance for troubleshooting purposes. 
+- The consent process for creating a support instance and support user access isn't integrated with Customer Lockbox. Once the support instance is created after initial customer consent, a support engineer with support user permissions will have access to the data stored in the support instance for troubleshooting purposes. 
 
 - Customer Lockbox Preview is not available in sovereign clouds at this time. 
 
