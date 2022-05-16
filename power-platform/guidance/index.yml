@@ -56,13 +56,13 @@ landingContent:
          links:
           - text: Overview
             url: ./creator-kit/overview.md
-          - text: What's in the CoE Starter Kit?
+          - text: What's in the Creator Kit?
             url: ./creator-kit/components.md
        - linkListType: how-to-guide
          links:
           - text: Install the Creator Kit
             url: ./creator-kit/setup.md
-          - text: Use the CoE Starter Kit
+          - text: Use the Creator Kit
             url: ./creator-kit/creator-kit-explained.md
 
   # Card
