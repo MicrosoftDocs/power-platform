@@ -82,8 +82,8 @@ Table(
 )
 ```
 
-> [!WARNING]
-> The screen values in the above example code are from a sample and might not exist in your app. Replace the screen values with actual screen names in your app to render properly.
+> [!IMPORTANT]
+> The screen values in the above example code are from a sample and might not exist in your app. Ensure that you replace the screen values with screen names in your app as appropriate.
 
 ## Configure expand and collapse behavior
 
