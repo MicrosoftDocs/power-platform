@@ -31,7 +31,7 @@ contributors:
 
 ## Install the solution
 
-1. [Download](https://github.com/microsoft/powercat-creator-kit/releases/download/CreatorKit-May2022/CreatorKitCore_1.0.20220510.1_managed.zip) the solution.
+1. [Download](https://github.com/microsoft/powercat-creator-kit/releases/download/CreatorKit-May2022/CreatorKitCore_1.0.20220514.1_managed.zip) the solution.
 1. Go to the Power Platform environment in [Power Apps](https://make.powerapps.com).
 1. Import the solution.
 
