@@ -90,11 +90,11 @@ Variables can be created in any node that prompts you to select a variable, such
 
 1. In the **Set variable** box, select the **>** arrow.
 
-    ![Screenshot of selecting a variable in the Set Variable Value node.](media/authoring-variables/create-new-variable-button.png)
+    :::image type="content" source="media/authoring-variables/create-new-variable-button.png" alt-text="Screenshot of selecting a variable in the Set Variable Value node.":::
 
 1. In the flyout menu that appears, select **Create a new variable**.
 
-    ![Screenshot of Create a new variable button.](media/authoring-variables/create-variable.png)
+    :::image type="content" source="media/authoring-variables/create-variable.png" alt-text="Screenshot of Create a new variable button.":::
 
 A new variable will be created with a type that's appropriate for its usage. Use the [variable properties pane](#variable-properties-pane) to rename it.
 
@@ -142,9 +142,9 @@ Some system variables are hidden from the variable context menu, and must be acc
 
 You can type a literal value into any variable input field instead of selecting a variable from the menu.
 
-![Screenshot showing the use of literal values for action inputs.](media/authoring-variables/set-variable-to-literal.png)
+:::image type="content" source="media/authoring-variables/set-variable-to-literal.png" alt-text="Screenshot showing the use of literal values for action inputs.":::
 
-![Screenshot of the authoring canvas showing literal input on an input variable in a redirect node.](media/authoring-variables/set-redirect-variable-to-literal.png)
+:::image type="content" source="media/authoring-variables/set-redirect-variable-to-literal.png" alt-text="Screenshot of the authoring canvas showing literal input on an input variable in a redirect node.":::
 
 Values entered directly will always be treated as a string. To set a specific type, use the appropriate [Power Fx formula](advanced-power-fx.md) as per the following table:
 
@@ -163,11 +163,11 @@ Values entered directly will always be treated as a string. To set a specific ty
 
 To open the variables pane, in the topic's menu bar, select **Variables**.
 
-![Screenshot of the variables button.](media/authoring-variables/open-variable-button.png)
+:::image type="content" source="media/authoring-variables/open-variable-button.png" alt-text="Screenshot of the variables button.":::
 
 For each of the variables in the topic, select whether you want the values to be passed, received, or both between topics.
 
-![Screenshot of the variables pane.](media/authoring-variables/variables-pane.png)
+:::image type="content" source="media/authoring-variables/variables-pane.png" alt-text="Screenshot of the variables pane.":::
 
 ## Variable properties pane
 
@@ -175,23 +175,23 @@ To open the variable properties pane, select a variable in the [variables pane](
 
 You can also open the variable properties pane by selecting a variable in any node.
 
-![Screenshot of selecting a variable to open the variable properties pane.](media/authoring-variables/select-a-variable.png)
+:::image type="content" source="media/authoring-variables/select-a-variable.png" alt-text="Screenshot of selecting a variable to open the variable properties pane.":::
 
 In the variable properties pane you can rename a variable, see where a variable is used, or convert a variable to a [global variable](authoring-variables-bot.md).
 
-![Screenshot of the properties pane.](media/authoring-variables/variable-properties.png)
+:::image type="content" source="media/authoring-variables/variable-properties.png" alt-text="Screenshot of the properties pane.":::
 
 ## Use variables in action nodes
 
 When you use a variable in an action node, if its base type matches a parameter type that's specified for a flow or Bot Framework skill, you can pass it to that parameter. The output from action nodes generates new variables.  
 
-![Screenshot of using an entity in an action node.](media/authoring-variables/variable-in-flow.PNG)
+:::image type="content" source="media/authoring-variables/variable-in-flow.PNG" alt-text="Screenshot of using an entity in an action node.":::
 
 ## Passing variables between topics
 
 When you redirect to other topics, you can pass values into variables in the destination topic or get variables back from it. Passing variables between topics is especially useful when you already have information that the topic needs. Your users will appreciate not having to answer the question again. It's also helpful when you refactor and separate your topics into reusable components and you want to pass variables across the topics.
 
-> **NOTE**
+> [!NOTE]
 > Variables of type `Custom Entity`, `Date Time`, and `Duration` can't be passed between topics.  
 
 ### Receive values from other topics
@@ -204,7 +204,7 @@ To receive values from other topics, set the variable's property:
 
 1. In the **Variables properties** pane,  under **Topic (limited scope)** select **Receive values from other topics**.
 
-    ![Screenshot of the authoring canvas showing the Variable properties pane with Receive values from other topics selected.](media/authoring-variables/authoring-subtopic-pass-variable-properties-receive-input.png)
+    :::image type="content" source="media/authoring-variables/authoring-subtopic-pass-variable-properties-receive-input.png" alt-text="Screenshot of the authoring canvas showing the Variable properties pane with Receive values from other topics selected.":::
 
 1. Save the topic.
 
@@ -212,19 +212,19 @@ To receive values from other topics, set the variable's property:
 
 1. Select **+ Add input for destination topic**.
 
-    ![Screenshot of the authoring canvas showing adding input for the destination topic.](media/authoring-variables/authoring-subtopic-pass-variable-step1.png)
+    :::image type="content" source="media/authoring-variables/authoring-subtopic-pass-variable-step1.png" alt-text="Screenshot of the authoring canvas showing adding input for the destination topic.":::
 
 1. Select a variable in the redirected topic that you want to pass the variable to.
 
-    ![Screenshot of the authoring canvas showing selecting the variable in the redirected topic.](media/authoring-variables/authoring-subtopic-pass-variable-step2.png)
+    :::image type="content" source="media/authoring-variables/authoring-subtopic-pass-variable-step2.png" alt-text="Screenshot of the authoring canvas showing selecting the variable in the redirected topic.":::
 
 1. Under **Enter or select a value**, select the variable in the current topic that you want to pass to the redirected topic.
 
-    ![Screenshot of the authoring canvas showing selecting the variable from the list of options.](media/authoring-variables/authoring-subtopic-pass-variable-step3.png)
+    :::image type="content" source="media/authoring-variables/authoring-subtopic-pass-variable-step3.png" alt-text="Screenshot of the authoring canvas showing selecting the variable from the list of options.":::
 
     The variable is shown in the redirected node.
 
-    ![Screenshot of the authoring canvas showing the variable being passed into the redirected node.](media/authoring-variables/authoring-subtopic-pass-variable-step4.png)
+    :::image type="content" source="media/authoring-variables/authoring-subtopic-pass-variable-step4.png" alt-text="Screenshot of the authoring canvas showing the variable being passed into the redirected node.":::
 
 ### Return values to original topics
 
@@ -238,7 +238,7 @@ To return a variable to the original topic, set the variable's property:
 
 1. In the **Variables properties** pane, under **Topic (limited scope)** select **Return values to original topics**.
 
-    ![Screenshot of the authoring canvas showing the Variable properties pane with Return values to original topic selected.](media/authoring-variables/authoring-subtopic-pass-variable-properties-return-value.png)
+    :::image type="content" source="media/authoring-variables/authoring-subtopic-pass-variable-properties-return-value.png" alt-text="Screenshot of the authoring canvas showing the Variable properties pane with Return values to original topic selected.":::
 
 1. Save the topic.
 
@@ -246,11 +246,11 @@ To return a variable to the original topic, set the variable's property:
 
     The variable that's being returned to the topic is shown in the redirected topic. Use the returned variable in your topic.
 
-    ![Screenshot of the authoring canvas showing a redirected topic with both values input and returned.](media/authoring-variables/authoring-subtopic-pass-variable-pass-receive.png)
+    :::image type="content" source="media/authoring-variables/authoring-subtopic-pass-variable-pass-receive.png" alt-text="Screenshot of the authoring canvas showing a redirected topic with both values input and returned.":::
 
 ## Related links
 
 - [Reuse variables across topics](authoring-variables-bot.md)
 - [Customize the look and feel of the bot](customize-default-canvas.md)
 
-
+[!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -25,7 +25,7 @@ See [Work with conversation transcripts](analytics-sessions-transcripts.md) for 
 
 Lastly, you can manage the retention period for transcripts. This can be useful if you want to increase the date range from 30 days to something else.
 
-> **NOTE**
+> [!NOTE]
 > If you no longer have access to your environment, you'll need to [create a support request](https://admin.powerplatform.microsoft.com/support) in the Microsoft Power Platform admin center.
 
 ## Download session transcript information from the Power Virtual Agents portal
@@ -36,7 +36,7 @@ Lastly, you can manage the retention period for transcripts. This can be useful 
 
 1. Click on each row to download the session transcripts for the specified time frame.
 
-    ![Sessions page." border="false](media/analytics-sessions/analytics-sessions-billing.png)
+    :::image type="content" source="media/analytics-sessions/analytics-sessions-billing.png" alt-text="Sessions page." border="false":::
 
 The downloaded file contains the following information:
 
@@ -59,7 +59,7 @@ The downloaded file contains the following information:
 
 - TopicId: A unique identifier of the last authored topic triggered in this session.
 
-> **NOTE**
+> [!NOTE]
 > The download will start when you select the time period. It will be downloaded into your default browser download's location.
 
 ## View and export bot conversation transcripts from the Power Apps portal
@@ -72,33 +72,33 @@ First, you'll need to sign in to [https://www.powerapps.com](https://www.powerap
 
 1. In the side pane, expand the **Data** node. Select **Entities**. On the top right, expand **Default** and select **All**.
 
-    ![Screenshot of the Power Apps window with Data and Entities selected.](media/analytics-sessions/powerapps-data-entities-view.png)
+    :::image type="content" source="media/analytics-sessions/powerapps-data-entities-view.png" alt-text="Screenshot of the Power Apps window with Data and Entities selected.":::
 
 1. Type **Conversation** in the **Search** textbox on the top right. Select **ConversationTranscript** under **Entities**.
 
-    ![Screenshot showing Conversation Transcript selected.](media/analytics-sessions/export-view-transcript.png)
+    :::image type="content" source="media/analytics-sessions/export-view-transcript.png" alt-text="Screenshot showing Conversation Transcript selected.":::
 
 1. Select **Data** tab. Expand **Active conversationtranscripts** and then select **All fields**.
 
-    ![Screenshot showing Active conversation transcripts expanded.](media/analytics-sessions/export-view-all-fields.png)
+    :::image type="content" source="media/analytics-sessions/export-view-all-fields.png" alt-text="Screenshot showing Active conversation transcripts expanded.":::
 
 1. View the bot's conversation transcripts.
 
-    ![Screenshot showing sample bot transcript entries.](media/analytics-sessions/export-view-sessions.png)
+    :::image type="content" source="media/analytics-sessions/export-view-sessions.png" alt-text="Screenshot showing sample bot transcript entries.":::
 
 ### Export conversation transcripts
 
 1. In the side pane, expand the **Data** node. Select **Entities** and then **Export data**.
 
-    ![Click path to export data.](media/analytics-sessions/export-3.png)
+    :::image type="content" source="media/analytics-sessions/export-3.png" alt-text="Click path to export data.":::
 
 1. On the Export data screen, select **ConversationTranscript** from the entity list. Select **Export data** at the top. Your data will take a couple of minutes to be compiled for export.
 
-    ![Select entities for export.](media/analytics-sessions/export-select-transcript.png)
+    :::image type="content" source="media/analytics-sessions/export-select-transcript.png" alt-text="Select entities for export.":::
 
 1. Select **Download exported data** to download the content.
 
-    ![Download exported data.](media/analytics-sessions/powerapps-download-1.png)
+    :::image type="content" source="media/analytics-sessions/powerapps-download-1.png" alt-text="Download exported data.":::
 
 ## Change the default period of session transcript retention
 
@@ -112,31 +112,31 @@ The following instructions describe how to set a job to delete transcripts that 
 
 1. At the top right, open the **Settings** menu cog icon and select **Advanced settings**.
 
-    ![Select the cog icon to open the settings menu.](media/analytics-sessions/sessions-advanced.png)
+    :::image type="content" source="media/analytics-sessions/sessions-advanced.png" alt-text="Select the cog icon to open the settings menu.":::
 
     This will take you to the Dynamics 365 portal.
 
-    ![The Dynamics 365 portal.](media/analytics-sessions/sessions-d365.png)
+    :::image type="content" source="media/analytics-sessions/sessions-d365.png" alt-text="The Dynamics 365 portal.":::
 
 1. Open the **Settings** menu and select **Data Management**.
 
-    ![The settings link at the top shows a number of objects, including Data Management.](media/analytics-sessions/sessions-d365-settings.png)
+    :::image type="content" source="media/analytics-sessions/sessions-d365-settings.png" alt-text="The settings link at the top shows a number of objects, including Data Management.":::
 
 1. Select **Bulk Record Deletion**.
 
-    ![An icon showing a table with a red x, indicating the deletion of a bulk record.](media/analytics-sessions/sessions-bulk-delete.png)
+    :::image type="content" source="media/analytics-sessions/sessions-bulk-delete.png" alt-text="An icon showing a table with a red x, indicating the deletion of a bulk record.":::
 
 1. On the **Bulk Record Deletion** screen, expand the **View** dropdown and select **Recurring Bulk Deletion System Jobs**.
 
-    ![The dropdown opens to show options.](media/analytics-sessions/sessions-recurring.png)
+    :::image type="content" source="media/analytics-sessions/sessions-recurring.png" alt-text="The dropdown opens to show options.":::
 
 1. Select the pre-configured bulk delete job called **Bulk Delete Conversation Transcript Records Older Than 1 Month**.
 
-    ![A list of bulk delete jobs, with the first one highlighted.](media/analytics-sessions/sessions-pre-configured.png)
+    :::image type="content" source="media/analytics-sessions/sessions-pre-configured.png" alt-text="A list of bulk delete jobs, with the first one highlighted.":::
 
 1. In the **More Actions** dropdown, select **Cancel** to disable future bulk deletion using this job.
 
-    ![The more actions dropdown opens to show a menu list, including Cancel.](media/analytics-sessions/sessions-actions-cancel.png)
+    :::image type="content" source="media/analytics-sessions/sessions-actions-cancel.png" alt-text="The more actions dropdown opens to show a menu list, including Cancel.":::
 
 1. Create a new bulk record delete job by selecting **New** and set the following:
 
@@ -144,14 +144,14 @@ The following instructions describe how to set a job to delete transcripts that 
     This will keep the transcripts for 12 months
     - Set **SchemaType** as **equals** to **powervirtualagents**.
 
-        ![A popup window showing options to configure the job.](media/analytics-sessions/sessions-schema.png)
+        :::image type="content" source="media/analytics-sessions/sessions-schema.png" alt-text="A popup window showing options to configure the job.":::
 
 1. Enter a name and change **Run this job after every** to **1**.
 
-    ![A popup window showing options to name and run the job.](media/analytics-sessions/sessions-run-job.png)
+    :::image type="content" source="media/analytics-sessions/sessions-run-job.png" alt-text="A popup window showing options to name and run the job.":::
 
     The bulk delete job is created and will delete bot conversation transcripts that are older than 12 months.
 
-    ![The list of bulk delete jobs, now showing the new job just created.](media/analytics-sessions/sessions-job-ready.png)
+    :::image type="content" source="media/analytics-sessions/sessions-job-ready.png" alt-text="The list of bulk delete jobs, now showing the new job just created.":::
 
-
+[!INCLUDE[footer-include](includes/footer-banner.md)]

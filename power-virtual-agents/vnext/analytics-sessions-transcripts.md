@@ -89,7 +89,7 @@ There are a few approaches one can take to build custom reports form conversatio
 
 [Connect Power BI to Dataverse with a Power BI dataflow](https://github.com/microsoft/PowerVirtualAgentsSamples/tree/master/CustomAnalytics). Other infrastructure isn't required and, with every refresh, all records will be retrieved from Dataverse.
 
-![Diagram showing flow of data from Dataverse to the Power BI model.](media/analytics-sessions-transcripts/transcripts-simple.png)
+:::image type="content" source="media/analytics-sessions-transcripts/transcripts-simple.png" alt-text="Diagram showing flow of data from Dataverse to the Power BI model.":::
 
 | Pros                    | Cons                                                                                            |
 | ----------------------- | ----------------------------------------------------------------------------------------------- |
@@ -105,7 +105,7 @@ Use a Power Platform dataflow for data preparation on the transcripts and extrac
 
 Power BI refreshes data from the Dataflow and all compute infrastructure is managed by Power Platform and Power BI. During every refresh, records for a certain day will be retrieved from Dataverse.
 
-![Diagram showing the data flowing from Dataverse into Azure Data Lake and then being processed by Power Platform and Power BI.](media/analytics-sessions-transcripts/transcripts-adl.png)
+:::image type="content" source="media/analytics-sessions-transcripts/transcripts-adl.png" alt-text="Diagram showing the data flowing from Dataverse into Azure Data Lake and then being processed by Power Platform and Power BI.":::
 
 | Pros                                                                                                              | Cons                                                        |
 | ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
@@ -115,7 +115,7 @@ Power BI refreshes data from the Dataflow and all compute infrastructure is mana
 
 If data size in the Standard Azure Data Lake Store approach causes slow refreshes or other operational problems, you can use [Azure Synapse Analytics](https://azure.microsoft.com/services/synapse-analytics/) and integrate it [into Power BI](https://powerbi.microsoft.com/blog/announcing-azure-synapse-analytics-public-preview/).
 
-![Diagram of data flowing from Dataverse into Azure Data Lake and being processed by Azure Synapse and Power Platform.](media/analytics-sessions-transcripts/transcripts-asynapse.png)
+:::image type="content" source="media/analytics-sessions-transcripts/transcripts-asynapse.png" alt-text="Diagram of data flowing from Dataverse into Azure Data Lake and being processed by Azure Synapse and Power Platform.":::
 
 | Pros                                                                                                             | Cons                            |
 | ---------------------------------------------------------------------------------------------------------------- | ------------------------------- |
@@ -127,4 +127,4 @@ If data size in the Standard Azure Data Lake Store approach causes slow refreshe
 
 In many places the conversation transcripts refer to content by its ID. For example, the ID of the topic that is being redirected to by the current topic is only referenced by its ID. To get the name of the topic, look up the name of the topic from the bot content.
 
-
+[!INCLUDE[footer-include](includes/footer-banner.md)]

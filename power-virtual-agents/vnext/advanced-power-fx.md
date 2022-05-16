@@ -37,7 +37,7 @@ To use a variable in a Power Fx formula, you must add a prefix depending on the 
 
 For example, you'd need to use `System.Conversation.Id` to access the respective [system variable](authoring-variables.md#system-variables).
 
-![Screenshot of the Question node with the user's response set to a variable named Var1.](media/advanced-power-fx/variable-prefix.png)
+:::image type="content" source="media/advanced-power-fx/variable-prefix.png" alt-text="Screenshot of the Question node with the user's response set to a variable named Var1.":::
 
 ## Use Power Fx to set a variable
 
@@ -53,7 +53,7 @@ In this example, a Power Fx expression is used to convert the user's name to upp
 
 1. In the **Save response as** box, select the **>** arrow and **Create a new variable** named `Var1`.
 
-    ![Screenshot of the Question node with the user's response set to a variable named Var1.](media/advanced-power-fx/uppercase-question-node.png)
+    :::image type="content" source="media/advanced-power-fx/uppercase-question-node.png" alt-text="Screenshot of the Question node with the user's response set to a variable named Var1.":::
 
 1. Under the **Question** node, select **+** and choose **Set a property**.
 
@@ -63,13 +63,13 @@ In this example, a Power Fx expression is used to convert the user's name to upp
 
 1. Select the **Formula** tab. In the **fx** box, enter `Upper(Text(Topic.Var1))` and select **Insert**.
 
-    ![Screenshot of the Set a Variable node with a Power Fx formula.](media/advanced-power-fx/uppercase-pfx-formula.png)
+    :::image type="content" source="media/advanced-power-fx/uppercase-pfx-formula.png" alt-text="Screenshot of the Set a Variable node with a Power Fx formula.":::
 
 1. Under the **Question** node, select **+** and choose **Send a message**.
 
 1. Enter the `User Name:` and then add `Var2`.
 
-    ![Screenshot of the Send a Message node with a message defined.](media/advanced-power-fx/uppercase-send-message.png)
+    :::image type="content" source="media/advanced-power-fx/uppercase-send-message.png" alt-text="Screenshot of the Send a Message node with a message defined.":::
 
 ## Use Power Fx as a condition
 
@@ -87,7 +87,7 @@ In this example, the bot will determine if a booking date qualifies for discount
 
 1. In the **Save response as** box, select the **>** arrow and **Create a new variable** named `Var1`.
 
-    ![Screenshot of question node with date and time entity chosen and variable set.](media/advanced-power-fx/condition-question-node.png)
+    :::image type="content" source="media/advanced-power-fx/condition-question-node.png" alt-text="Screenshot of question node with date and time entity chosen and variable set.":::
 
 1. Select the **+** icon and then choose **Add a condition**.
 
@@ -97,10 +97,10 @@ In this example, the bot will determine if a booking date qualifies for discount
 
 1. Select the **Formula** tab. In the **fx** box enter `Topic.Var1 > (DateAdd (Now(), 14))` and select **Insert**.
 
-    ![Screenshot of Power Fx formula entered into condition node.](media/advanced-power-fx/condition-formula.png)
+    :::image type="content" source="media/advanced-power-fx/condition-formula.png" alt-text="Screenshot of Power Fx formula entered into condition node.":::
 
 1. Under the **ConditionItem** node, add a **Send a message** node to let the user know they qualify for a discount. Enter the message `You qualify for a discount`.
 
 1. Under the **All Other Conditions** node, add a **Send a message** node. Enter the message `Sorry, you don't qualify for a discount`.
 
-    ![Screenshot of message nodes in condition branches.](media/advanced-power-fx/condition-messages.png)
+    :::image type="content" source="media/advanced-power-fx/condition-messages.png" alt-text="Screenshot of message nodes in condition branches.":::

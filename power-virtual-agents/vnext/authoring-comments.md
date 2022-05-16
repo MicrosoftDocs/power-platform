@@ -30,7 +30,7 @@ You can create comment threads to track a single or multiple issues, and you can
 
 Comment threads are created when someone replies to an existing comment. Using threads means you can discuss a single issue without getting confused with lots of replies about different things.
 
-![Screenshot of the Comments pane.](media/authoring-comments/authoring-comments-window.png)
+:::image type="content" source="media/authoring-comments/authoring-comments-window.png" alt-text="Screenshot of the Comments pane.":::
 
 ## Manage comments
 
@@ -38,7 +38,7 @@ The **Comments** pane lets you create new comment threads, resolve or delete com
 
 You open the pane by selecting the **Comments** icon at the top of the authoring canvas for a topic.
 
-![Screenshot with the Open comments menu icon selected, the menu icon looks like a chat box.](media/authoring-comments/authoring-comments-open.png)
+:::image type="content" source="media/authoring-comments/authoring-comments-open.png" alt-text="Screenshot with the Open comments menu icon selected, the menu icon looks like a chat box.":::
 
 Comment threads can be created at both the topic level and for individual nodes within the topic.
 
@@ -66,7 +66,7 @@ A comment icon will appear next to a node that has comments. You can select the 
 
 Select the menu icon at the top of the comment thread to edit the initial comment, delete the entire thread, or resolve the entire thread.
 
-![Screenshot of the menu that appears with the items Edit comment, Delete thread, and Resolve thread.](media/authoring-comments/authoring-comments-thread.png)
+:::image type="content" source="media/authoring-comments/authoring-comments-thread.png" alt-text="Screenshot of the menu that appears with the items Edit comment, Delete thread, and Resolve thread.":::
 
 - Editing the initial comment lets you change only that comment. Other comments in the thread won't be affected.
 - Deleting a thread removes it completely. You can't restore deleted comments or threads.
@@ -87,4 +87,4 @@ You can only edit or delete comments that you created.
 - You can't @ mention other bot makers in a comment.
 - New comments will show for other bot makers who are editing the same topic when they refresh the page. The topic doesn't need to be saved for new comments to show.
 
-
+[!INCLUDE[footer-include](includes/footer-banner.md)]

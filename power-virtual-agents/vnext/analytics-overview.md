@@ -22,24 +22,24 @@ Power Virtual Agents has a comprehensive set of analytics that show you the key 
 Multiple charts show you trends and usage for your bot's topics. These charts use AI to highlight the topics that have the greatest impact on your bot's performance.
 
 >
-> 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mNOu]
 >
 
-> **NOTE**
+> [!NOTE]
 > Bot analytics in Power Virtual Agents US Government Cloud plans will be released at a later date. You can use a [custom analytics solution to create a custom Power BI dashboard](https://powervirtualagents.microsoft.com/blog/custom-analytics-solution-for-power-virtual-agents/) to get bot analytics for these plans.
 
 ## Analytics in Power Virtual Agents
 
 The analytics section is divided into a number of pages to give you multiple ways to understand bot performance.
 
-> **NOTE**
+> [!NOTE]
 > Although transcripts are available immediately, the analytics dashboards are updated every hour, so there will be some delay before you see all data.
 
 ### View analytics
 
 - In Power Virtual Agents, select **Analytics** on the side pane.
 
-    ![Opening the Analytics dashboard." border="false](media/analytics-overview/analytics-open.png)
+    :::image type="content" source="media/analytics-overview/analytics-open.png" alt-text="Opening the Analytics dashboard." border="false":::
 
 ### See also
 
@@ -51,4 +51,4 @@ The analytics section is divided into a number of pages to give you multiple way
 | [Analyze session information](analytics-sessions.md)               | Review and monitor how sessions are doing, including analytics from the topics triggered during a session. |
 | [Analyze billed session information](analytics-billed-sessions.md) | Understand how sessions are being billed, based on their usage.                                            |
 
-
+[!INCLUDE[footer-include](includes/footer-banner.md)]

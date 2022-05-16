@@ -24,7 +24,7 @@ After you've published at least once, you can connect your bot to more channels.
 Each time you want to update your bot, you publish it again from within the Power Virtual Agents app itself. Publishing your bot will update the bot across all the channels where you've inserted or connected your bot.
 
 >
-> 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mGa9]
 >
 
 ## Publish the latest bot content
@@ -35,7 +35,7 @@ You need to publish the bot at least once before your customers can interact wit
 
 1. Select **Publish** to make the latest bot content available to your customers.
 
-    ![Publish latest bot content." border="false](media/publication-fundamentals-publish-channels/channel-publish-latest-content.png)
+    :::image type="content" source="media/publication-fundamentals-publish-channels/channel-publish-latest-content.png" alt-text="Publish latest bot content." border="false":::
 
     The publishing process will take less than a few minutes as it checks for errors in the latest bot content.
 
@@ -43,9 +43,9 @@ You need to publish the bot at least once before your customers can interact wit
 
 For details on updating the welcome message and help text on the demo website, go to [Configure the demo website and add the bot to your live website](publication-connect-bot-to-web-channels.md).
 
-> **TIP**
+> [!TIP]
 > **What's the difference between the test chat and the demo website?**  
 > On the demo website, you can share a URL with members of your team, or other stakeholders who want to try out the bot.  However, the website isn't intended for production use, and you shouldn't use it directly with customers.  
 > You can use the test chat to see whether conversation flows as expected, and to spot any errors during the bot creation process.
 
-
+[!INCLUDE[footer-include](includes/footer-banner.md)]

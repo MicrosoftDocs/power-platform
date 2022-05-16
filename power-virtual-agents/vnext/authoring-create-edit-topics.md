@@ -36,7 +36,7 @@ The **Test bot** pane shows how the bot conversation plays out at every step. Yo
 
 When you create a bot, several topics are created for you.
 
-![Screenshot of the Topics list showing sample topics and system topics.](media/authoring-template-topics/template-list.png)
+:::image type="content" source="media/authoring-template-topics/template-list.png" alt-text="Screenshot of the Topics list showing sample topics and system topics.":::
 
 These automatically created topics fall into two categories:
   
@@ -52,17 +52,17 @@ These automatically created topics fall into two categories:
 
 1. In the left pane, select **Topics**.
 
-   ![Screenshot of the Power Virtual Agents navigation pane, highlighting Topics.](media/authoring-create-edit-topics/topics-menu.png)
+   :::image type="content" source="media/authoring-create-edit-topics/topics-menu.png" alt-text="Screenshot of the Power Virtual Agents navigation pane, highlighting Topics.":::
 
 1. Select **New topic**.
 
 1. The **Trigger phrases** pane should open. If it doesn't open, select **Trigger phrases**.
 
-    ![Screenshot of the topic authoring canvas, highlighting Trigger phrases.](media/authoring-create-edit-topics/trigger-phrases-button.png)
+    :::image type="content" source="media/authoring-create-edit-topics/trigger-phrases-button.png" alt-text="Screenshot of the topic authoring canvas, highlighting Trigger phrases.":::
 
 1. Specify one or more trigger phrases for the topic in the **Trigger phrases** pane.
 
-    ![Screenshot of the topic authoring canvas, highlighting adding trigger phrases.](media/authoring-create-edit-topics/topics-details-triggers.png)
+    :::image type="content" source="media/authoring-create-edit-topics/topics-details-triggers.png" alt-text="Screenshot of the topic authoring canvas, highlighting adding trigger phrases.":::
 
     A trigger phrase is a phrase that a customer enters in the chat window to start a conversation with the bot. Once the conversation is started, the conversation follows the path you define.
 
@@ -70,7 +70,7 @@ These automatically created topics fall into two categories:
 
 1. Select **Details** to open the topic details pane.
 
-    ![Screenshot of the topic authoring canvas, highlighting Details.](media/authoring-create-edit-topics/open-details-pane.png)
+    :::image type="content" source="media/authoring-create-edit-topics/open-details-pane.png" alt-text="Screenshot of the topic authoring canvas, highlighting Details.":::
 
 1. Enter a **Name** for your topic and, optionally, a **Display name** and **Description**.
 
@@ -78,11 +78,11 @@ These automatically created topics fall into two categories:
 
     The **Description** is never shown to users. Use it to describe the purpose of the topic to yourself and other bot makers.
 
-    ![Screenshot of the topic details pane showing Name, Display name, and Description.](media/authoring-create-edit-topics/details-pane.png)
+    :::image type="content" source="media/authoring-create-edit-topics/details-pane.png" alt-text="Screenshot of the topic details pane showing Name, Display name, and Description.":::
 
     You can also rename the topic by selecting its name and entering a new value.
 
-    ![Screenshot of the topic authoring canvas, highlighting the topic name.](media/authoring-create-edit-topics/rename-topic-shortcut.png)
+    :::image type="content" source="media/authoring-create-edit-topics/rename-topic-shortcut.png" alt-text="Screenshot of the topic authoring canvas, highlighting the topic name.":::
 
 1. Select **Save** to add the topic to the topics list.
 
@@ -98,7 +98,7 @@ These automatically created topics fall into two categories:
 
 1. To add a node, select the plus (**+**) icon on the line or branch between or after nodes.
 
-   ![Screenshot of adding a node.](media/authoring-create-edit-topics/handoff-add-node.png)
+   :::image type="content" source="media/authoring-create-edit-topics/handoff-add-node.png" alt-text="Screenshot of adding a node.":::
 
 ### Insert nodes
 
@@ -113,13 +113,13 @@ When you add a node after the **Trigger Phrases** node or between **Message node
 - Manage topics
 - Call an action
 
-![Screenshot of adding a node between existing nodes from the options.](media/authoring-create-edit-topics/topics-node-after-triggers.png)
+:::image type="content" source="media/authoring-create-edit-topics/topics-node-after-triggers.png" alt-text="Screenshot of adding a node between existing nodes from the options.":::
 
 #### Ask a question
 
 1. To have the bot ask a question and get a response from the user, select **+** to add a node, and then select **Ask a question** to add a new **Question** node.
 
-   ![Screenshot of adding a new question mode.](media/authoring-create-edit-topics/topics-question.png)
+   :::image type="content" source="media/authoring-create-edit-topics/topics-question.png" alt-text="Screenshot of adding a new question mode.":::
 
 1. Enter the question phrase in **Ask a question**.
 
@@ -138,18 +138,18 @@ When you add a node after the **Trigger Phrases** node or between **Message node
    - For **Save response as**, you can use an existing variable or create a new one.
    - If you create a new variable, select the variable name to display the variable properties, where you can modify the variable's settings, including its name.
 
-     ![Select variable name to display variable properties](media/authoring-create-edit-topics/question-variable-button.png)
+     :::image type="content" source="media/authoring-create-edit-topics/question-variable-button.png" alt-text="Select variable name to display variable properties":::
 
 1. Optionally, open the properties pane for the question node to modify addition settings, such as maximum retry count and what to do if the user exceeds that count.
 
 Later, you can add a condition to create branching logic or add nodes to control how the bot responds based on each variable.
 
-> **TIP**
+> [!TIP]
 > Define synonyms for each option to help the bot determine the correct one if it isn't clear what the user's response should map to.
 >
 > 1. Select the **Edit synonyms** icon for the option you want to add additional keywords to.
 >
->    ![Screenshot highlighting the synonyms icon.](media/authoring-create-edit-topics/topics-question-synonyms.png)
+>    :::image type="content" source="media/authoring-create-edit-topics/topics-question-synonyms.png" alt-text="Screenshot highlighting the synonyms icon.":::
 >
 > 1. Add the keywords individually. When you've entered all the synonyms you want, select **Done**.
 
@@ -175,15 +175,15 @@ To enhance messages with rich multimedia cards, see [Add multimedia cards to mes
 
 1. To have the bot move to a different topic, select **+** to add a node, and then select **Topic Management**, then **Go to another topic**.
 
-    ![Screenshot showing redirection to another topic node with options for other topics.](media/authoring-create-edit-topics/topics-redirect-add-subtopic.png)
+    :::image type="content" source="media/authoring-create-edit-topics/topics-redirect-add-subtopic.png" alt-text="Screenshot showing redirection to another topic node with options for other topics.":::
 
 1. Select an existing topic from the list, or **Create a topic**.
 
-    > **TIP**
+    > [!TIP]
     > Before creating a new topic, save your current topic first.
     > Creating a new topic will open the new topic in the authoring canvas, and any unsaved edits you have in the current topic will be lost.
 
-    ![Screenshot of redirect topic list.](media/authoring-create-edit-topics/topics-redirect-select-topic.png)
+    :::image type="content" source="media/authoring-create-edit-topics/topics-redirect-select-topic.png" alt-text="Screenshot of redirect topic list.":::
 
 1. If there are any [input](/authoring-variables.md#receive-values-from-other-topics) or [output](/authoring-variables.md#return-values-to-original-topics) variables in the next topic, enter or select a value for each one.
 
@@ -193,7 +193,7 @@ In the authoring canvas for the original topic, you can insert additional nodes 
 
 When the path for the topic chosen in the **Redirect** node is finished, the bot will return to the original topic. The bot will then follow the nodes that are under the **Redirect** node.
 
-![Screenshot of the authoring canvas showing nodes under a redirected topic node.](media/authoring-create-edit-topics/authoring-subtopic-redirect.png)
+:::image type="content" source="media/authoring-create-edit-topics/authoring-subtopic-redirect.png" alt-text="Screenshot of the authoring canvas showing nodes under a redirected topic node.":::
 
 #### End the conversation or topic
 
@@ -212,7 +212,7 @@ Use the following nodes to design conversation flow in your bots.
 
 1. Select **+** to add a node, and then select **Topic Management**, then one of the following:
 
-    ![Screenshot showing options for ending a conversation.](media/authoring-create-edit-topics/topics-nodes-end.png)
+    :::image type="content" source="media/authoring-create-edit-topics/topics-nodes-end.png" alt-text="Screenshot showing options for ending a conversation.":::
 
    - Select **End conversation** to notify the user's client that the session is over. The behavior varies based on the client. On the telephony channel, for example, the client ends the call.
    - Select **End all topics** to clear all active topics and start the conversation from the beginning. However, this does not clear or reset any global variables. To clear global variables, redirect to the Start over system topic.
@@ -230,7 +230,7 @@ Use the following nodes to design conversation flow in your bots.
     - To switch from the formula editor back to the basic editor, reset the node; however, you will need to enter your condition again.
     - Use the _node menu_ (&vellip;) to switch editing modes or reset the node.
 
-    ![Switch to the Power Fx expression editor](media/authoring-create-edit-topics/condition-switch-to-formula.png)
+    :::image type="content" source="media/authoring-create-edit-topics/condition-switch-to-formula.png" alt-text="Switch to the Power Fx expression editor":::
 
 1. When working with a string variable in the basic condition editor, you can enter a string literal in the value field, such as `Contoso`. For other variable types, such as Boolean, use the Power Fx editor to compare the variable to a literal value, such as `true`.
 
@@ -245,7 +245,7 @@ To add a quick replies select **Add**, then **Quick reply**, and then provide in
 - You can select what type of action the button initiates, such as sending a message from the user's client, opening a URL, or calling a phone number.
 - The quick reply buttons are removed from the chat history when the bot or user sends another activity.
 
-![Add quick replies to a question node" border="false](media/authoring-create-edit-topics/add-quick-reply.png)
+:::image type="content" source="media/authoring-create-edit-topics/add-quick-reply.png" alt-text="Add quick replies to a question node" border="false":::
 
 A quick reply works like a suggestion that the user can use or ignore. To enforce a choice from a finite list, use a multiple choice question node.
 
@@ -262,7 +262,7 @@ The **Message** and **Question** nodes allow you to add message variations. When
 
 1. Select **Add** and then **Message variation**. This will add an additional text box for a message variation.
 
-    ![Select the synonyms icon." border="false](media/authoring-create-edit-topics/message-node-variation.png)
+    :::image type="content" source="media/authoring-create-edit-topics/message-node-variation.png" alt-text="Select the synonyms icon." border="false":::
 
 1. Enter what you want the bot to say. You can apply some basic formatting, such as bold, italics, and numbering.
 
@@ -272,13 +272,13 @@ The **Message** and **Question** nodes allow you to add message variations. When
 
 Select the menu icon at the top of the node's title, and then select **Delete**.
 
-![Screenshot highlighting the node menu button and the Delete button.](media/authoring-create-edit-topics/topics-delete.png)
+:::image type="content" source="media/authoring-create-edit-topics/topics-delete.png" alt-text="Screenshot highlighting the node menu button and the Delete button.":::
 
 ## Edit topics with the code editor
 
 The code editor shows the topic in [YAML](https://yaml.org/), a markup language which is easy to read and understand. Use the code editor to copy and paste topics from other bots, even ones created by other authors.
 
-> **IMPORTANT**
+> [!IMPORTANT]
 > Designing a topic entirely in the code editor is currently not fully supported.
 
 In this example you'll copy and paste YAML into the code editor to quickly add a topic that asks the user if they prefer cats or dogs.
@@ -287,7 +287,7 @@ In this example you'll copy and paste YAML into the code editor to quickly add a
 
 1. Select the three dots icon then select **Open code editor**
 
-    ![Screenshot of how to open the code editor.](media/authoring-create-edit-topics/code-editor-open.png)
+    :::image type="content" source="media/authoring-create-edit-topics/code-editor-open.png" alt-text="Screenshot of how to open the code editor.":::
 
 1. Remove all of the existing YAML. Then copy and paste the following:
 
@@ -364,7 +364,7 @@ In this example you'll copy and paste YAML into the code editor to quickly add a
 
 1. Select the three dots icon then select **Close code editor**. On the authoring canvas you'll see the new conversation path generated from the YAML.
 
-    ![Screenshot conversation created from YAML.](media/authoring-create-edit-topics/code-editor-conversation.png)
+    :::image type="content" source="media/authoring-create-edit-topics/code-editor-conversation.png" alt-text="Screenshot conversation created from YAML.":::
 
 ## Test and publish your bot
 
@@ -372,4 +372,4 @@ In this example you'll copy and paste YAML into the code editor to quickly add a
 
 After you've designed and tested your bot, [publish it to the web, mobile or native apps, or Microsoft Bot Framework channels](publication-fundamentals-publish-channels.md).
 
-
+[!INCLUDE[footer-include](includes/footer-banner.md)]

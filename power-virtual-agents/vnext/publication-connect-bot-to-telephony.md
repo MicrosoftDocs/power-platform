@@ -28,25 +28,25 @@ Connect your [Azure Communication Service (ACS)](/azure/communication-services/)
 
 1. Select the **Telephony (Preview)** tile.
 
-    ![Screenshot of Telephony tile.](media/publication-connect-bot-to-telephony/telephony-tile.png)
+    :::image type="content" source="media/publication-connect-bot-to-telephony/telephony-tile.png" alt-text="Screenshot of Telephony tile.":::
 
 1. Select **Connect existing phone number**.
 
 1. Choose an **Azure Subscription** and **Azure Communication Services resource**, then select **Select**.
 
-    ![Screenshot of selected Azure resources.](media/publication-connect-bot-to-telephony/choose-resources.png)
+    :::image type="content" source="media/publication-connect-bot-to-telephony/choose-resources.png" alt-text="Screenshot of selected Azure resources.":::
 
 1. For **Phone number type** choose **PTSN**.
 
-    > **IMPORTANT**
+    > [!IMPORTANT]
     > The **Direct routing** option is not supported in the technology preview.
 
 1. Under **PTSN phone numbers** select the first number in the list, then select **Connect**.
 
-    > **IMPORTANT**
+    > [!IMPORTANT]
     > Phone numbers have been been provisioned for the technology preview, but normally you'll need to do this yourself in ACS.
 
-    ![Screenshot of selected phone number.](media/publication-connect-bot-to-telephony/connect-number.png)
+    :::image type="content" source="media/publication-connect-bot-to-telephony/connect-number.png" alt-text="Screenshot of selected phone number.":::
 
 1. Once the connection is ready, [publish your bot](publication-fundamentals-publish-channels.md#publish-the-latest-bot-content) and test it by calling the number you selected.
 
@@ -60,8 +60,8 @@ Only one bot can be connected to a phone number. If you want to connect a differ
 
 1. Select the **Telephony (Preview)** tile.
 
-    ![Screenshot of Telephony tile in channel list.](media/publication-connect-bot-to-telephony/telephony-tile.png)
+    :::image type="content" source="media/publication-connect-bot-to-telephony/telephony-tile.png" alt-text="Screenshot of Telephony tile in channel list.":::
 
 1. Select **Disconnect**.
 
-    ![Screenshot of disconnect button.](media/publication-connect-bot-to-telephony/disconnect-bot.png)
+    :::image type="content" source="media/publication-connect-bot-to-telephony/disconnect-bot.png" alt-text="Screenshot of disconnect button.":::

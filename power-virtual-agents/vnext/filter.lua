@@ -1,5 +1,0 @@
--- function Link (link)
---     print(link.tag)
--- link.target = "www.google.com"
--- return link
--- end

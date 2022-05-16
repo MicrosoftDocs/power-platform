@@ -27,15 +27,15 @@ You can display the topic details page by selecting the **Detail** link in one o
 - [Resolution rate drivers (Summary page)](analytics-summary.md#resolution-rate-drivers-chart)
 - [Customer satisfaction drivers (Customer Satisfaction page)](analytics-CSAT.md#customer-satisfaction-drivers-chart)
 
-![Topic details link." border="false](media/analytics-topic-details/topic-details-link.png)
+:::image type="content" source="media/analytics-topic-details/topic-details-link.png" alt-text="Topic details link." border="false":::
 
 The topic details page can also be displayed by opening an individual topic from the [Topics page](authoring-create-edit-topics.md) and selecting **Analytics** at the top of the page.
 
-![From the Topic details page, select the Analytics tab.](media/analytics-topic-details/canvas-button.png)
+:::image type="content" source="media/analytics-topic-details/canvas-button.png" alt-text="From the Topic details page, select the Analytics tab.":::
 
 You can also hover over each topic in the Topics page and select the **Go to analytics** icon.
 
-![Hovering shows the Go to analytics icon." border="false](media/analytics-topic-details/topic-button.png)
+:::image type="content" source="media/analytics-topic-details/topic-button.png" alt-text="Hovering shows the Go to analytics icon." border="false":::
 
 The topic details page includes a variety of charts with graphical views of a topic's key performance indicators. For information about each chart, see:
 
@@ -73,4 +73,4 @@ The Impact summary charts summarize the impact of the topic on key performance i
 
 The Topic volume by day chart provides a graphical view of the number of sessions for the topic over the specified time period.
 
-
+[!INCLUDE[footer-include](includes/footer-banner.md)]

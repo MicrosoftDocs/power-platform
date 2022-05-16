@@ -33,9 +33,9 @@ While the topics are functional, they are examples for the purposes of learning 
 
 1. To see the bot's flow, select each topic. The flow includes the bot's comments, expected user responses, decision points, and entity references.
 
-   ![List of sample topics." border="false](media/authoring-template-topics/template-list.png)
+   :::image type="content" source="media/authoring-template-topics/template-list.png" alt-text="List of sample topics." border="false":::
 
-> **IMPORTANT**
+> [!IMPORTANT]
 > You will see these samples when you create a new bot. If you have previously created a bot and don't see them, try creating a new bot and then going to the **Topics** tab.
 
 ## Available sample topics
@@ -60,4 +60,4 @@ In this sample, the bot uses the State entity to recognize any US state the user
 
 This sample shows you how you to create a topic with [a variable](authoring-variables.md) and set it to the value of a function. This variable is used in the a message about shipping time, and finishes by redirecting to the End of Conversation topic.
 
-
+[!INCLUDE[footer-include](includes/footer-banner.md)]

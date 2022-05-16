@@ -29,7 +29,7 @@ The default look and feel of the bot is defined by the bot's canvas. You can cus
 
 You can also combine the customized canvas with configuring your bot to automatically start the conversation.
 
-> **IMPORTANT**
+> [!IMPORTANT]
 > You may install and use the sample code included in this documentation only for use with the Microsoft Power Virtual Agents product. The sample code is licensed "as is" and is excluded from any service level agreements or support services. You bear the risk of using it.  
 >
 > Microsoft gives no express warranties, guarantees, or conditions and excludes all implied warranties, including merchantability, fitness for a particular purpose, and non-infringement.
@@ -44,9 +44,9 @@ You can change the bot's name.
 
 1. Select **Save** to commit your changes.
 
-    ![The bot details pane lets you change the name.](media/customize-default-canvas/custom-canvas-name-icon.png)
+    :::image type="content" source="media/customize-default-canvas/custom-canvas-name-icon.png" alt-text="The bot details pane lets you change the name.":::
 
-> **IMPORTANT**
+> [!IMPORTANT]
 > After updating your bot's icon, it may take up to 24 hours for the new icon to appear everywhere.
 
 ## Retrieve bot ID and tenant ID details
@@ -222,7 +222,7 @@ See [Web Chat customization](/azure/bot-service/bot-builder-webchat-customizatio
 
 You can connect your Power Virtual Agents bot with a custom canvas that is hosted as a standalone web app. This option is best if you need to embed a customized iFrame across multiple web pages.
 
-> **NOTE**
+> [!NOTE]
 > Hosting a custom canvas requires software development. Our guidance here is intended for experienced IT professionals, such as IT admins or developers who have a good understanding of developer tools, utilities, and IDEs.
 
 ### Pick a sample to customize
@@ -231,11 +231,11 @@ We recommend starting with one of these samples custom-built to work with Power 
 
 - [Full bundle](https://github.com/microsoft/PowerVirtualAgentsSamples/tree/master/BuildYourOwnCanvasSamples/1.starter-full-bundle) is a custom canvas capable of showing all rich content from Power Virtual Agents. For example:
 
-  ![Full bundle custom canvas." border="false](media/customize-default-canvas/custom-canvas-full-bundle.png)
+  :::image type="content" source="media/customize-default-canvas/custom-canvas-full-bundle.png" alt-text="Full bundle custom canvas." border="false":::
 
 - [Location and file uploading](https://github.com/microsoft/PowerVirtualAgentsSamples/tree/master/BuildYourOwnCanvasSamples/2.location-and-file-uploading) is a custom canvas capable of getting a user's location and sending it to a bot using Power Virtual Agents. For example:
 
-  ![Location and file uploading custom canvas." border="false](media/customize-default-canvas/custom-canvas-location-file-upload.png)
+  :::image type="content" source="media/customize-default-canvas/custom-canvas-location-file-upload.png" alt-text="Location and file uploading custom canvas." border="false":::
 
 Or you can pick from [other sample web chat canvases](https://github.com/microsoft/BotFramework-WebChat/#samples-list) provided by Bot Framework.
 
@@ -252,4 +252,4 @@ In order to host your custom canvas, deploy all files to a web app.
 - [Bot Framework web chat](https://github.com/microsoft/BotFramework-WebChat)
 - [Generating a direct line token](/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?preserve-view=true&view=azure-bot-service-4.0#generate-token)
 
-
+[!INCLUDE[footer-include](includes/footer-banner.md)]

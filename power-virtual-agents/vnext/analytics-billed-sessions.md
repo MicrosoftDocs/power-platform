@@ -58,7 +58,7 @@ The following table helps illustrate which sessions are going to be billed and w
 | Greeting topic pulls information about the user using Power Automate flow to present a customized experience. | Billed session                                   | Any topic type | Any channel | Yes (any connector)            | Either used or not used     | Any environment type |
 | User interacts with the bot on your website to ask about store hours, check order status and so on.           | Billed session                                   | Non-system     | Any channel | Either used or not used        | Either used or not used     | Dataverse            |
 
-> **NOTE**
+> [!NOTE]
 > Sessions that use the [embedded test chat](authoring-test-bot.md) don't count toward the billed sessions.
 > The Billed Session report doesn't distinguish between the sessions included in the Power Virtual Agents for Microsoft Teams plan and those that aren't included. You might see an inflated number of billed sessions in the report.
 
@@ -80,4 +80,4 @@ Currently, you can only see billed sessions for a single bot.
 
 If you see billed sessions, it doesn't mean you'll be charged. For example, the trial offer provides you with some billed sessions.
 
-
+[!INCLUDE[footer-include](includes/footer-banner.md)]

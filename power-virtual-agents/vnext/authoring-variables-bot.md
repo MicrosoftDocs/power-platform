@@ -35,9 +35,9 @@ Global variables apply during a single user session. Specify the global variable
 
 1. The variable name will be given a prefix string `global.`, to differentiate it from the topic-level variables. For example, the variable `UserName` is now shown as `global.UserName`.
 
-![Screenshot showing the Variable Properties pane, with the Usage section highlighted](media/authoring-variables-bot/bot-variable-set.png)
+:::image type="content" source="media/authoring-variables-bot/bot-variable-set.png" alt-text="Screenshot showing the Variable Properties pane, with the Usage section highlighted":::
 
-> **NOTE**
+> [!NOTE]
 > A global variable's name must be unique across all topics. In the case of a conflict, you'll need to rename the variable before saving your change.
 
 ## Use global variables
@@ -46,7 +46,7 @@ After you set a global variable, it will be available to all topics.
 
 When you're composing a bot message in a message node or question node, select the `{x}` button to see the global variable. Variables are sorted in alphabetical order, so you'll find that all global variables are grouped together in the variable menu because they all begin with `Global.`.
 
-![Screenshot showing selection of the x variable icon to display a list of variables." border="false](media/authoring-variables-bot/bot-variable-message.png)
+:::image type="content" source="media/authoring-variables-bot/bot-variable-message.png" alt-text="Screenshot showing selection of the x variable icon to display a list of variables." border="false":::
 
 When you use a condition node, a flow action node, or a skill node, you'll also see global variables available there.
 
@@ -60,7 +60,7 @@ After you've created a global variable, you can see where it's first defined and
 
 1. On the **Variable properties** pane, select **Go to source**.
 
-![Screenshot showing the Variable Properties pane, with the Go to Source button highlighted](media/authoring-variables-bot/bot-variable-source.png)
+:::image type="content" source="media/authoring-variables-bot/bot-variable-source.png" alt-text="Screenshot showing the Variable Properties pane, with the Go to Source button highlighted":::
 
 This will take you to the node in the topic where the global variable was created.
 
@@ -70,7 +70,7 @@ This will take you to the node in the topic where the global variable was create
 
 1. On the **Variable properties** pane, in the **Used by** section, select any of the topics where the variable is used to go straight to that topic and node.
 
-![Screenshot showing the list of topics used by a variable in the Variable Properties pane.](media/authoring-variables-bot/bot-variable-used-by.png)
+:::image type="content" source="media/authoring-variables-bot/bot-variable-used-by.png" alt-text="Screenshot showing the list of topics used by a variable in the Variable Properties pane.":::
 
 ## Global variable initialization
 
@@ -108,11 +108,11 @@ For example, if your site already knows a user's name, then when they bring up a
 
 1. On the **Variable properties** pane, in the **Usage** section, select the checkbox **External sources can set values**.
 
-![Screenshot of the Usage section on the Variable Properties pane, with the Bot option and External sources can set values checkbox both selected](media/authoring-variables-bot/bot-variable-external.png)
+:::image type="content" source="media/authoring-variables-bot/bot-variable-external.png" alt-text="Screenshot of the Usage section on the Variable Properties pane, with the Bot option and External sources can set values checkbox both selected":::
 
 1. If you're [embedding your bot in a simple webpage](publication-connect-bot-to-web-channels.md#custom-website), you can append the variables and their definitions. Or, if you'd like a little more control, you can use a `<script>` code block to call and use variables programatically.
 
-    > **NOTE**
+    > [!NOTE]
     > The variable name in the query string must match that of the global variable, without the `global.` prefix. For example, a global variable `global.UserName` must be rendered as `UserName=`.
 
 In the examples described here, a simple declaration is made for the variables. In a production scenario, you might pass in as the query parameter or variable definition another variable that has already stored the user's name (for example, if you have the user name from a sign-in script).
@@ -178,11 +178,11 @@ When removing a global variable used in other topics, the references to that var
 
 You'll receive a warning about deleting the global variable before you can confirm the operation.
 
-![The global variable delete message indicates that references to that variable will be labeled as unknown." border="false](media/authoring-variables-bot/bot-variable-delete.png)
+:::image type="content" source="media/authoring-variables-bot/bot-variable-delete.png" alt-text="The global variable delete message indicates that references to that variable will be labeled as unknown." border="false":::
   
 Nodes that contain references to the deleted global variable will tell you they contain an unknown variable.
 
-![Screenshot of a node with references to an unknown variable, which are marked as red within the message node's text, and indicated with a warning that says Bot message contains unknown variable](media/authoring-variables-bot/bot-variable-unknown-node.png)
+:::image type="content" source="media/authoring-variables-bot/bot-variable-unknown-node.png" alt-text="Screenshot of a node with references to an unknown variable, which are marked as red within the message node's text, and indicated with a warning that says Bot message contains unknown variable":::
 
 Topics with nodes that contain references to deleted global variables might stop working. Ensure that you remove or correct all the topics that were using the deleted variable before publishing.
 
@@ -191,4 +191,4 @@ Topics with nodes that contain references to deleted global variables might stop
 - [Use variables](authoring-variables.md)
 - [Customize the look and feel of the bot](customize-default-canvas.md)
 
-
+[!INCLUDE[footer-include](includes/footer-banner.md)]

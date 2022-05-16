@@ -18,7 +18,7 @@ searchScope:
 
 This technology preview doesn't yet support some of the existing features you're used to in Power Virtual Agents and available features have some limitations.
 
-> **IMPORTANT**
+> [!IMPORTANT]
 > These are the current limitations as of 5/12/2022.
 
 ## Limitations of current features

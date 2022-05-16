@@ -22,7 +22,7 @@ A big part of bot conversations in Power Virtual Agents is natural language unde
 One fundamental aspect of natural language understanding is to identify *entities* in a user dialog. An entity can be viewed as an information unit that represents a certain type of a real-world subject, like a phone number, zip code, city, or even a person's name.
 
 >
-> 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mTUN]
 >
 
 ## Prebuilt entities
@@ -39,12 +39,12 @@ With the knowledge granted by entities, a bot can smartly recognize the relevant
 
 1. Select the plus (**+**) icon and then select **Ask a question**.
 
-   ![Screenshot of adding a node." border="false](media/advanced-entities-slot-filling/handoff-add-node.png)
+   :::image type="content" source="media/advanced-entities-slot-filling/handoff-add-node.png" alt-text="Screenshot of adding a node." border="false":::
 
 1. Under **Identify**, select an entity.
 
-   ![Question node with entity selection." border="false](media/advanced-entities-slot-filling/entities-6(draft).png)
+   :::image type="content" source="media/advanced-entities-slot-filling/entities-6(draft).png" alt-text="Question node with entity selection." border="false":::
 
 1. Name the variable for the output of the user's response, if necessary.
 
-
+[!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -31,20 +31,20 @@ When you save a topic, you'll be notified if there are errors or warnings. Warni
 
 Errors will prevent the bot from working and must be fixed before you can publish your bot.
 
-![The message indicates you have errors you should fix.](media/authoring-topic-management/topics-errors-save.png)
+:::image type="content" source="media/authoring-topic-management/topics-errors-save.png" alt-text="The message indicates you have errors you should fix.":::
 
 You can see the error state of a topic on the Topics page.
 
-> **NOTE**
+> [!NOTE]
 > The Topics page only shows errors as they will stop your bot from working, unlike warnings.
 
-![The topics page identifies the number of errors in your topic.](media/authoring-topic-management/topics-errors.png)
+:::image type="content" source="media/authoring-topic-management/topics-errors.png" alt-text="The topics page identifies the number of errors in your topic.":::
 
 Select the error count to open the authoring canvas to where the first error is. Select **Topic checker** to see a list of the errors. Selecting each error goes directly to the error.  
 
-![The topic checker is on the top bar and shows all errors and warnings.](media/authoring-topic-management/topics-checker.png)
+:::image type="content" source="media/authoring-topic-management/topics-checker.png" alt-text="The topic checker is on the top bar and shows all errors and warnings.":::
 
-> **NOTE**
+> [!NOTE]
 > You can save topics with errors. Topics with errors can't be published.
 
 ### Types of errors
@@ -66,18 +66,18 @@ When a topic is **Off**, it will not trigger at all. This means that if its trig
 
 When a bot is published, all topics (**On** or **Off**) will be published, but the **Off** topics will not trigger.
 
-> **TIP**
+> [!TIP]
 > Turning a topic to **Off** allows you to work on a particular topic and leave it in a draft state while publishing changes to other topics that are ready to go live.  
 >
 > Leave the topic that you are still working on as **Off** before publishing the bot.
 
 You can change this with the toggle in the **Status** column on the Topics page.
 
-![The Status column shows each topic with an On or Off toggle switch.](media/authoring-topic-management/topics-status.png)
+:::image type="content" source="media/authoring-topic-management/topics-status.png" alt-text="The Status column shows each topic with an On or Off toggle switch.":::
 
 By default new topics will be created with their status set to **On**.
 
-> **NOTE**
+> [!NOTE]
 > The Topic Checker will identify an error if a topic redirects to an 'off' topic.
 
 ## Copying a topic
@@ -86,7 +86,7 @@ Once you have created a few topics, you may want to use a previous topic as a ba
 
 On the Topics page, select the menu icon on a topic's name and then **Make a copy**.
 
-![Make a copy from the menu icon." border="false](media/authoring-topic-management/topics-menu-icon.png)
+:::image type="content" source="media/authoring-topic-management/topics-menu-icon.png" alt-text="Make a copy from the menu icon." border="false":::
 
 This option creates a duplicate of the selected topic with *(Copy)* added to the name. All of the topic content - such as the description, trigger phrases, and the entire conversation - is copied over to the new topic.
 
@@ -96,4 +96,4 @@ Once you are done editing the new topic, you can turn it **On** to [test it in t
 
 There is no limit to the number of times a topic can be copied. A number will be added to the name and each topic will have its own internal ID.
 
-
+[!INCLUDE[footer-include](includes/footer-banner.md)]

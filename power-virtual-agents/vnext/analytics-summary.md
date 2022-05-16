@@ -18,12 +18,12 @@ ms.collection: virtual-agent
 [!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
 
 >
-> 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mQpm]
 >
 
 The Summary page gives you a broad overview of your bot's performance. It uses artificial intelligence (AI) technology to show you which topics are having the greatest impact on escalation rate, abandon rate, and resolution rate (see the table under [Summary charts](#summary-charts) for more information on these metrics).
 
-![The Analytics summary page." border="false](media/analytics-summary/overview-analytics.png)
+:::image type="content" source="media/analytics-summary/overview-analytics.png" alt-text="The Analytics summary page." border="false":::
 
 The Summary page includes a variety of charts with graphical views of your bot's key performance indicators. For information about each chart, see:
 
@@ -41,7 +41,7 @@ By default, the page shows you key performance indicators for the last seven day
 
 ## Summary charts
 
-![Summary charts." border="false](media/analytics-summary/summary-charts.png)
+:::image type="content" source="media/analytics-summary/summary-charts.png" alt-text="Summary charts." border="false":::
 
 The Summary charts summarize the key performance indicators for the specified time period and the percent change over the period.
 
@@ -123,4 +123,4 @@ Improving the abandon rate for the top abandon-rate topics in red has the greate
 
 To see additional information about each topic, select the **Detail** link to display the topic details page. For more information, see [Topic details page](analytics-topic-details.md).
 
-
+[!INCLUDE[footer-include](includes/footer-banner.md)]

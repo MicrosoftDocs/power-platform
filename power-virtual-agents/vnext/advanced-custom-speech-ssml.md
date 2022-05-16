@@ -30,15 +30,15 @@ Before customizing speech responses with SSML, you need to create a speech messa
 
 1. Add a node by selecting plus (**+**) icon on the line or branch between or after nodes. Then select **Send a message**.
 
-    ![Send a message on the authoring canvas.](media/advanced-custom-speech-ssml/node-send-message.png)
+    :::image type="content" source="media/advanced-custom-speech-ssml/node-send-message.png" alt-text="Send a message on the authoring canvas.":::
 
 1. Select the **Speech** mode in the **Message** to change the response from text to speech.
 
-    ![Select Speech mode for the message.](media/advanced-custom-speech-ssml/select-speech-mode-message.png)
+    :::image type="content" source="media/advanced-custom-speech-ssml/select-speech-mode-message.png" alt-text="Select Speech mode for the message.":::
 
     The following message will show after you switch from text to speech.
 
-    ![Add speech response variation.](media/advanced-custom-speech-ssml/variation-message.png)
+    :::image type="content" source="media/advanced-custom-speech-ssml/variation-message.png" alt-text="Add speech response variation.":::
 
 1. Select **+ Add** then **Message variation** to add speech response variations. Enter what you want the bot to say and add as many [message variations](authoring-create-edit-topics.md#message-variations) as needed.
 
@@ -50,7 +50,7 @@ You can use SSML tags to customize your speech responses.
 
 Select **SSML tags** from the Message. Then select the tags you want to add.
 
-![SSML helper options.](media/advanced-custom-speech-ssml/ssml-tag-options.png)
+:::image type="content" source="media/advanced-custom-speech-ssml/ssml-tag-options.png" alt-text="SSML helper options.":::
 
 The table below describes what each tag does:
 
