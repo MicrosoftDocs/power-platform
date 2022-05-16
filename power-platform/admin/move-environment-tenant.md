@@ -43,6 +43,8 @@ There are no user interface changes or version changes as part of this move. You
 > Geographical region changes aren't supported into or out of US GCC, US GCC High, US DoD, OCE, IND, or China.
 > 
 > Existing source database backups won't be migrated to destination tenant.
+> 
+> Dataverse organization linked to a Finance and Operations organization is not supported.
 
 ### Supported applications and platforms
 
