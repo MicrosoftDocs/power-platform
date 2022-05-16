@@ -13,7 +13,7 @@ metadata:
   ms.collection: collection
   author: jimholtz
   ms.author: jimholtz
-  ms.date: 08/10/2021
+  ms.date: 05/16/2022
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -48,6 +48,22 @@ landingContent:
             url: ./coe/setup.md
           - text: How to use the CoE Starter Kit?
             url: ./coe/power-bi.md
+
+  # Card
+  - title: Power Platform Creator Kit
+    linkLists:
+       - linkListType: overview
+         links:
+          - text: Overview
+            url: ./creator-kit/overview.md
+          - text: What's in the CoE Starter Kit?
+            url: ./creator-kit/components.md
+       - linkListType: how-to-guide
+         links:
+          - text: Install the Creator Kit
+            url: ./creator-kit/setup.md
+          - text: Use the CoE Starter Kit
+            url: ./creator-kit/creator-kit-explained.md
 
   # Card
   - title: Automation adoption best practices
