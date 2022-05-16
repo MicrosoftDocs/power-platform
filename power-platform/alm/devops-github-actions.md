@@ -23,7 +23,7 @@ search.app:
 
 GitHub Actions for Microsoft Power Platform include the following capabilities:
 
-- Importing and exporting application metadata (also known as solutions) that contain various platform components such as canvas apps, model-driven apps, UI flows, Power Virtual Agents chatbots, AI Builder models, customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), and connectors between development environments and source control.
+- Importing and exporting application metadata (also known as solutions) that contain various platform components such as canvas apps, model-driven apps, desktop flows, Power Virtual Agents chatbots, AI Builder models, customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), and connectors between development environments and source control.
 
 - Deploying to downstream environments.
 

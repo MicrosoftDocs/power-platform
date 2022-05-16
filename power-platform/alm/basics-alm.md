@@ -58,7 +58,7 @@ Using the Power Platform admin center, you can create these types of Dataverse e
 by all users in that tenant. The tenant identifies the customer, which can have one or more Microsoft subscriptions and services associated with it. Whenever a new user signs up for Power Apps, they're automatically added to the Maker role of the default environment. The default environment is created in the closest region to the default region of
 the Azure Active Directory (Azure AD) tenant and is named: "{Azure AD tenant name} (default)"
 
-Create and use an environment for specific a purpose, such as development, test, or production.
+Create and use the correct environment for a specific purpose, such as development, test, or production.
 
 For more information on environments, see [Environments overview](/power-platform/admin/environments-overview#types-of-environments).
 
