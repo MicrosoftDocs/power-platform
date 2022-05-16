@@ -15,6 +15,8 @@ ms.collection: virtual-agent
 
 # Work with conversation transcripts
 
+[!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
+
 When you [export Power Virtual Agents chatbot conversation transcripts from Microsoft Dataverse](analytics-sessions.md), you will be presented with many fields.
 
 Each of these fields includes information relevant to the chatbot conversation.

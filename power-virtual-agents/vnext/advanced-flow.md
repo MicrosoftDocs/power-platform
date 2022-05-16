@@ -15,6 +15,8 @@ ms.collection: virtual-agent
 
 # Add actions to a bot using Power Automate
 
+[!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
+
 You can enable your bot to perform an action by calling a Microsoft Power Automate flow. Flows can help you automate activities, or call backend systems. For example, you can use flows with end-user authentication to retrieve information about a user after they've signed in.
 
 You call flows from within topics, as a discrete **Call an action** node. You can utilize flows that have already been created in your Power Apps environment, or you can create a flow from within the Power Virtual Agents [authoring canvas](authoring-create-edit-topics.md).

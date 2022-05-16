@@ -15,6 +15,8 @@ ms.collection: virtual-agent
 
 # Customize the look and feel of the bot's default canvas
 
+[!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
+
 After you create and [publish a bot](publication-fundamentals-publish-channels.md), your customers can [use the bot's Web Chat canvas to interact with it](publication-connect-bot-to-web-channels.md).
 
 The default look and feel of the bot is defined by the bot's canvas. You can customize the canvas in two ways, depending on the complexity of the customizations:

@@ -14,6 +14,8 @@ ms.collection: virtual-agent
 
 # Add bot to Telephony
 
+[!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
+
 Connect your [Azure Communication Service (ACS)](/azure/communication-services/) phone number to enable your bot to interact with users directly over the phone.
 
 ## Prerequisites

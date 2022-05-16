@@ -15,6 +15,8 @@ searchScope:
 
 # Technology preview for Build 2022
 
+[!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
+
 This year at Microsoft Build 2022, we are excited to announce the evolution of Power Virtual Agents.
 
 The new intelligent bot authoring experience unifies the sophistication of Azure Bot Framework Composer pro-code capabilities with the simplicity of the Power Virtual Agents low-code platform, making it even easier for professional developers and subject matter experts to build collaboratively in one Microsoft bot building studio.

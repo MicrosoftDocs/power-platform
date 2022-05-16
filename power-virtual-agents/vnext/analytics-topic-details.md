@@ -16,6 +16,8 @@ ms.collection: virtual-agent
 
 # Analyze topic usage in Power Virtual Agents
 
+[!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
+
 The topic details page provides a view into the performance of individual topics and how they can be improved.
 
 You can display the topic details page by selecting the **Detail** link in one of the following charts on the [Summary](analytics-summary.md) and [Customer Satisfaction](analytics-CSAT.md) pages:

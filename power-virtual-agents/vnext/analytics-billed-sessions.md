@@ -15,6 +15,8 @@ ms.collection: virtual-agent
 
 # View billed sessions for Power Virtual Agents in Teams
 
+[!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
+
 When you purchase a Power Virtual Agents license, you gain capacity for the specified number of billed sessions. Power Virtual Agents pools this capacity across the entire tenant.
 
 The consumption of the capacity isn't reported at the tenant level, but can be seen for each individual bot.

@@ -16,6 +16,8 @@ ms.collection: virtual-agent
 
 # Add cards to bot responses
 
+[!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
+
 Cards add rich multimedia responses to **Question** and **Message** nodes. With cards, you can go beyond basic text replies by adding images, videos, and interactive elements.
 
 There are several types of cards that provide different experiences to users. All types allow you to preview them on the authoring canvas in real-time.
