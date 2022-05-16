@@ -55,7 +55,7 @@ Although the underlying features and components used to build the kit (such as c
 
 If you face issues with:
 
-- **Using the kit**: Report your issue at [https://aka.ms/Creator-Kit-Issues](https://aka.ms/Creator-Kit-Issues). Though this kit isn't supported by Microsoft Support, you can reach out with support requests for any related, underlying platform and feature problems.)
+- **Using the kit**: Report your issue at [https://aka.ms/Creator-Kit-Issues](https://aka.ms/Creator-Kit-Issues). Though this kit isn't supported by Microsoft Support, you can reach out with support requests for any related, underlying platform and feature problems.
 - **The core features in Microsoft Power Platform**: Use your standard channel to contact Microsoft Support.
 
 ## More resources

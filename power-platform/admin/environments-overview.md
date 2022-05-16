@@ -1,10 +1,10 @@
 ---
 title: Environments overview | Microsoft Docs
-description: Learn about environments in Power Apps and how to use them
+description: Learn about environments in Power Apps and how to use them.
 author: jimholtz
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 03/09/2022
+ms.date: 05/16/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -139,6 +139,30 @@ Select **Edit** to review and edit environment details.
 
 > [!div class="mx-imgBorder"] 
 > ![More environment details.](media/environment-details-more.png "More environment details")
+
+### Environment history
+
+Environment history gives admins a timeline of the full environment lifecycle from the moment it's created until it's completely deleted with all the actions performed on the environment in between, such as Edit, Copy, Reset, etc. Actions on the timeline format are:
+
+-	Action name: for example, create
+-	Start time
+-	End time: if applicable
+-	Initiated by: the user
+-	Status: for example, succeeded or failed
+
+To see the environment history:
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin.
+
+2. Select **Environments**, and then select an environment from the list.
+
+3. On the command bar, select **History**.
+
+:::image type="content" source="media/environment-history-data.png" alt-text="Environment history data":::
+
+> [!NOTE]
+> -	Some actions such as Edit will show the edit as an action but not details of the action.
+> -	Once an environment is completely deleted, environment history is also deleted. So, it might not be possible to know who deleted an environment after it's been hard deleted.
 
 ### See also
 [Microsoft Learn: Create and manage environments in Dataverse](/learn/modules/create-manage-environments/)<br />
