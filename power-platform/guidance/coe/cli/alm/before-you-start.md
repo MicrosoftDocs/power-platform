@@ -101,7 +101,7 @@ Notes:
 
    - [https://azure.microsoft.com/services/devops/](https://azure.microsoft.com/services/devops/)
 
-   - Select **Create Organization**.
+   - Select **Start free**.
 
    - Create an initial project, for example, *alm-sandbox*.
 
