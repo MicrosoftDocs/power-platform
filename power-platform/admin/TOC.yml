@@ -549,7 +549,7 @@
           href: analytics-flow.md
         - name: Analytics for UI flows
           href: analytics-ui-flow.md 
-      - name: Reports (preview)
+      - name: Reports
         items:
         - name: Tenant-level analytics (default)
           href: tenant-level-analytics.md

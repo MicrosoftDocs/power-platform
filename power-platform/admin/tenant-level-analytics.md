@@ -3,7 +3,7 @@ title: "Tenant-level analytics (default)"
 description: View tenant-level analytics in a variety of reports
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/26/2022
+ms.date: 05/16/2022
 author: tjvass
 ms.subservice: admin
 ms.author: tjvass
