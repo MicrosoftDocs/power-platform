@@ -2,7 +2,7 @@
 title: "Extend and customize CoE Starter Kit components"
 description: "Extend and modify the components of the Power Platform Center of Excellence (CoE) Starter Kit. "
 author: conorto
-manager: phtopnes
+manager: topness-msft
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/28/2022
