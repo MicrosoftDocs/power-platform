@@ -100,7 +100,7 @@ After the **StartTrial** trigger is added, go to the **Bot Responses** tab for t
 
 Note that every data field in this Adaptive card was given an ID: **Name**, **Address**, and **Weeks**.
 
-:::image type="content" source="media/Composer_Example4/E4_createSubmitForm.png" alt-text="Composer - create StartTrialForm.":::
+:::image type="content" source="media/Composer_Example4/e4_createsubmitform.png" alt-text="Composer - create StartTrialForm.":::
 
 Next, add the following Activity below the Adaptive Card JSON:
 
@@ -143,7 +143,7 @@ ${user.name} - thanks for starting a ${user.weeks} week trial with us! Your meal
 
 Use the **Begin a Power Virtual Agents Topic** action to call the Power Virtual Agents bot's **End of Conversation** topic:
 
-:::image type="content" source="media/Composer_Example4/E4_call_PVA_End_of_Conversation.png" alt-text="Composer - call Power Virtual Agents topic.":::
+:::image type="content" source="media/Composer_Example4/e4_call_pva_end_of_conversation.png" alt-text="Composer - call Power Virtual Agents topic.":::
 
 You are now ready to add your Composer content to your Power Virtual Agents bot. Go to the **Publish** tab in Composer and publish it to your Power Virtual Agents bot.
 
