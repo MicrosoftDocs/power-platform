@@ -382,10 +382,6 @@ Several features use system jobs to perform tasks automatically, including workf
 > You cannot make changes to the status of a system job that has been completed or canceled.
 
 
-
-
-
-
 ## Monitor the status of audit delete jobs
 
 1. In the Power Platform admin center, select an environment. 
@@ -399,7 +395,7 @@ Select the system job name to open details about your delete job.
 
 
 ### See also
-[Auditing overview](/power-apps/developer/data-platform/auditing-overview)
+[Auditing overview](/power-apps/developer/data-platform/auditing-overview) <br />
 [Audit user access](/power-apps/developer/data-platform/audit-user-access)
 
 
