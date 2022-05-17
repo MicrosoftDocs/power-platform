@@ -615,6 +615,8 @@
         href: logging-power-automate.md 
       - name: Data loss prevention activity logging
         href: dlp-activity-logging.md
+      - name: Manage Dataverse Auditing
+        href: manage-dataverse-auditing.md
       - name: Audit data and user activity for Dynamics 365 entities
         href: audit-data-user-activity.md
       - name: Dataverse and model-driven apps
