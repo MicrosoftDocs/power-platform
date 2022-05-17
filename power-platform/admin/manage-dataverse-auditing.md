@@ -297,7 +297,7 @@ The deletion of a record’s audit history can be done in a model-driven applica
 
 5. Select **Delete** to confirm.
 
-## Reduce log storage – Method 10: Delete audit logs – legacy process 
+## Reduce log storage: Delete audit logs – legacy process 
 
 When you enable Dataverse auditing, your apps create audit logs to store changes to the records and user access. You can delete audit logs when they are no longer needed to free up log capacity space. 
 
@@ -315,7 +315,7 @@ When you enable Dataverse auditing, your apps create audit logs to store changes
 > [!NOTE]
 > You can only delete the oldest audit log in the system. To delete more than one audit log repeat deleting the oldest available audit log until you have deleted enough logs.
 
-## Reduce log storage – Method 10: Delete audit logs – new process 
+## Reduce log storage: Delete audit logs – new process 
 
 When you enable Dataverse auditing, your apps create audit logs to store changes to the records and user access. You can delete audit logs when they are no longer needed to free up log capacity space. 
 
