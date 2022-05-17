@@ -1,7 +1,7 @@
 ---
 title: "Migrate an environment to a different tenant"
 description: "Learn about the impact of migrating an environment from one tenant to another. Review the prerequisites and considerations before submitting a request." 
-ms.date: 04/28/2022
+ms.date: 05/17/2022
 ms.topic: conceptual
 applies_to: 
   - "Dynamics 365 (online)"
@@ -43,6 +43,8 @@ There are no user interface changes or version changes as part of this move. You
 > Geographical region changes aren't supported into or out of US GCC, US GCC High, US DoD, OCE, IND, or China.
 > 
 > Existing source database backups won't be migrated to destination tenant.
+> 
+> Linking a Dataverse organization to a Finance and Operations organization is not supported.
 
 ### Supported applications and platforms
 
