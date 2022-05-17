@@ -3,7 +3,7 @@ title: "View and manage on-premises data gateways (preview) | MicrosoftDocs"
 description: View and manage on-premises gateways. 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/28/2022
+ms.date: 05/02/2022
 author: arthiriyer
 ms.subservice: admin
 ms.author: arthii
@@ -113,6 +113,7 @@ For on-premises data gateways in standard mode, users can be added in any of the
 > - **Can Use** and **Can use + share** apply only to Power Apps and Power Automate. 
 > - While sharing gateways for **Can use** and **Can use + share** permission levels, you can restrict the data source type that the user can connect over the gateway. At least one data source type should be selected for the user to be successfully added.
 > - **Can Use** and **Can use + share** do not apply to custom connectors in Power Apps and Power Automate.
+> - The gateway must be shared with the **Admin** permission level to be used by custom connectors.
 
 > [!div class="mx-imgBorder"] 
 > ![Manage users.](media/manage-gateway-users.png "Manage users")

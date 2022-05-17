@@ -4,7 +4,7 @@ description: "Frequently asked questions about Power Automate licensing."
 author: PriyaKodukula
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 03/31/2022
+ms.date: 05/11/2022
 ms.author: prkoduku
 ms.reviewer: MSFTMan
 search.audienceType: 
@@ -28,26 +28,33 @@ Each user and flow has a license plan. If a flow is set to the per-flow plan, th
 
 If the flow is set to the per user plan, then it gets the plan of its primary owner. If a user has multiple plans, such as a Office 365 plan and a Dynamics 365 plan, the flow will use the request limits from both the plans.
 
-The standard user license plan for Power Automate is the Power Automate per user plan, but there is a range of other license plans a user could use. Users with the free or one of the Office 365 license plans will only be able to access standard connectors, but most of the other license plans provide access to premium connectors. For details about license plans that include Power Automate capabilities, see the Power Platform [Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130). For details about the limits and performance profile of license plans, see the [Power Automate Limits](/power-automate/limits-and-config).
+The standard user license plan for Power Automate is the Power Automate per user plan, but there is a range of other license plans a user could use. Users with the free or one of the Office 365 license plans will only be able to access standard connectors, but most of the other license plans provide access to premium connectors. For details about license plans that include Power Automate capabilities, see the [Types of Power Automate licenses](/power-platform/admin/power-automate-licensing/types)Power Platform [Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130). For details about the limits and performance profile of license plans, see the [Power Automate Limits](/power-automate/limits-and-config).
 
 ### When should I choose Power Automate "per flow" versus "per user"?
 
-The per user plan is intended to support the broad adoption of an automation culture in an organization.
+The per user plan is intended for personal automation to support the broad adoption of an automation culture in an organization.
 
-The per flow plan provides an organization with the flexibility to pay for licenses based on the number of flows it uses, instead of licensing each user accessing the flows individually with the per user plan. Larger organizations or solutions that affect many will benefit from the fixed monthly cost versus a comparable per use cost in a pure Azure function. For example, if your flow uses premium connectors and your organization has many guest users who you want them to use the flow, but you don't know if the guest users home tenant provides them with premium licenses. In this case, it is best to get a per flow license for the flow. If a flow has per flow license, it doesn't use nor require any other license when it's run.
+The per flow plan is intended for enterprise process automation. If a flow is providing value to a team, either every one in the team needs a per user license or the flow needs a per flow license. If a flow has per flow license, it doesn't use nor require any other license when it's run. It provides an organization with the flexibility to pay for licenses based on the number of flows it uses, instead of licensing each user accessing the flows individually with the per user plan. Larger organizations or solutions that affect many will benefit from the fixed monthly cost versus a comparable per use cost in a pure Azure function. For example, if you have a flow with premium connectors that is sending a summary report in email to the entire organization,it is best to get a per flow license for the flow. Similarly, if your flow uses premium connectors and your organization has many guest users using the flow, but you don't know if the guest users home tenant provides them with premium licenses. In this case, it is best to use per flow license . 
 
 ### Who needs to purchase a premium license?
 
-The per flow plan has the highest priority among all licenses, meaning, if a per flow license is assigned to a flow, the flow always uses this license. If the flow doesn't have a per flow license, the decision about which license is used is based on how the flow gets triggered.
+The per flow plan has the highest priority among all licenses, meaning, if a per flow license is assigned to a flow, the flow always uses this license.
 
-Here's the decision tree.
+If the flow is used for an enterprise scenario where multiple people are getting value from the flow, everyone who is benefitting from the flow needs a per user license or the flow  needs a per flow license.
+
+If the flow doesn't have a per flow license and is a personal automation flow, the decision about which license is used is based on how the flow gets triggered.
+
+Here's the decision tree for personal automations.
 
 - Automated and scheduled flows always run in the context of the flow owner regardless of who started the flow or what accounts are used for connections inside of the flow. Instant flows (button, power apps, hybrid triggers) run in the context of invoking user regardless of connections the flow uses.
-- If an automated/scheduled flow uses a premium connector, only the owner needs to have a premium license. If the owner shared their flow with another user and that user triggers the same flow, it would still run in the context of original owner so other users do not need a premium license. But, if the user then uses it to make their own new flow (a second flow), then that new user becomes the owner of the second flow and would require a license to run it.
+- If an automated/scheduled flow uses a premium connector, only the owner needs to have a premium license.
 - If an instant flow has premium connectors, every user who runs the flow needs either a Power Automate premium license, a Power Apps premium license, or a Dynamics license. In such cases, instead of licensing every user, it is simpler to license the flow with a per flow license. One exception for this rule is the http trigger which runs in the context of the owner, even if it's being used in an instant flow.
 - If a parent flow calls a child flow, child flow leverages the context from parent flow. For example, if the parent flow is an automated flow, and the child flow uses premium connectors and the child flow doesn't have per flow license, it will use the parent flow owner's license. If the child flow has a per flow license, it uses the per flow license and not the parent flow's license. During the [transition period](./types.md#transition-period), there is a slight difference in this behavior. The child flow owner's license will be used unless the child flow has a per flow license but after the transition period ends, the child flow owner's license will be ignored and only the parent flow owner's license is used unless the child flow has a per flow license.
 
-A common question is, "If a flow is triggered when a list created using Microsoft Lists item is updated, and many users interact with that list, will there be a cost for each user?" The answer is if the flow does not use a premium connector such as calling Dataverse in the full production environment (not the Microsoft Teams environment), having an Office 365 license is enough. If the flow uses premium connectors, since the trigger is an automated trigger, only the owner needs a premium license.
+A common question is, "If a flow is triggered when a list created using Microsoft Lists item is updated, and many users interact with that list, will there be a cost for each user?" The answer depends on who is getting value from the flow. 
+-  If the flow uses premium connectors and the end users are getting value from the flow directly or indirecty, then every user needs a license. 
+-  If the flow uses premium connectors and only the owner is getting the value from the flow, since the trigger is an automated trigger, only the owner needs a premium license.
+-  If the flow does not use a premium connector such as calling Dataverse in the full production environment (not the Microsoft Teams environment), having an Office 365 license is enough.
 
 You can find out what type (automated/manual/scheduled) of you have have, select a flow to see its 'type' in the details.
 
@@ -73,7 +80,7 @@ The first subscription of Power Apps or Power Automate or Power Virtual Agents o
 
 ### I use multiple user connections in my premium flow. Which user needs a premium license to run the flow?
 
-Connections are independent from license checks. You can have multiple user connections in a flow, but the flow always checks licenses of primary owner/run-only user. The co-owner's license isn't considered.
+Connections are independent from license checks. You can have multiple user connections in a flow, but the flow always runs in the context of primary owner/run-only user. 
 
 ### The owner of a flow left the company. How can we ensure it works without interruptions?
 
@@ -254,15 +261,18 @@ The same user ([in the example above](#example-of-power-automate-use-within-a-po
 
 In this example, the Power Apps app is being used outside the context of Power Apps so the user needs a standalone Power Automate license.
 
-#### I have a Power App app that's invoked by multiple users and the app in turn calls a flow with premium features. Can I buy a per flow plan for the flow and enable all users to get premium value?
-
-You can either license all users with premium licenses or license the flow with a per flow license.
 
 ## Multiplexing
 
 ### What is multiplexing, and is it recommended to use multiplexing to reduce the number of licenses?
 
-Multiplexing refers to the use of hardware or software that a customer uses to pool connections, reroute information, or reduce the number of users that directly access or use the Power Apps, Power Automate, and the Power Virtual Agents service. Using multiplexing as a mechanism to reduce the number of licenses to be purchased is a license violation. For more details, refer to the multiplexing guidance from [Client Access License (CAL) Requirements](https://download.microsoft.com/download/8/7/3/8733d036-92b0-4cb8-8912-3b6ab966b8b2/multiplexing.pdf).
+Multiplexing refers to the use of hardware or software that a customer uses to pool connections, reroute information, or reduce the number of users that directly access or use the Power Apps, Power Automate, and the Power Virtual Agents service. Using multiplexing as a mechanism to reduce the number of licenses to be purchased is a license violation. For more details, refer to the multiplexing guidance from [Client Access License (CAL) Requirements](https://download.microsoft.com/download/3/D/4/3D42BDC2-6725-4B29-B75A-A5B04179958B/Licensing_Brief_PLT_Multiplexing.pdf).
+
+Examples of multiplexing:
+1. User creates a flow to export data from Dataverse into an external storage and sends the data over to collegues in an email. The collegues consume/edit the data.Flow imports the data back into Dataverse. In this case, the user and all the collegues need a license as Power Automate is performing all the steps in the data distribution. 
+2. If the flow is only moving data into shared location and the user is manually sending an email to the collegues, it doesnt fall under multiplexing. 
+3. If a premium flow triggers when a new item is added to a sharepoint list and saves the details in Dataverse and sends an email to the owner of the flow. Multiple people can upload items into the list but the email is only sent to the owner. In this case, only owner needs a license as he/she is the only person getting value from the flow. 
+4. If the above flow sends an email to the owner and the user who uploaded the item, both the owner and user needs a premium license. Failure to license all the users fall under multiplexing.  
 
 ### I have multiple flows running under a shared service account. What licenses do I need?
 Definitions: 
@@ -291,11 +301,11 @@ Guidance: This guidance is specific to flows that run under a service account as
 
 ### There's a premium flow that sends approval requests to a set of users and then waits for the users to approve or reject the request before it continues running.  Do the approvers need a premium license?
 
-The approvals connector is a standard connector. Users who respond to approval requests aren't considered to be the invoking users. Their Office 365 license is enough and they don't need a premium license.
+Every user benefiting from the flow needs a license. But, if the flow is a personal automation where only the owner is benefiting from the flow, users who respond to approval requests don't need a premium license. 
 
 ### **Automated flow** - User builds a flow that triggers when an item is added to a list created using Microsoft Lists and updates a SQL db (Premium). Multiple people can add items to the list created using Microsoft Lists.
 
-Flow runs in the context of owner's license for Automated/Scheduled flows and invoking user's license for Instant/Power Apps/Dataverse triggered flows. So, the person who added the item to list created using Microsoft Lists do not need a premium license.
+It depends on who is getting the value from the flow. If the users are getting value from the flow directly or indirectly, they need a premium license. If the flow is for personal automation, the flow runs in the context of owner's license for Automated/Scheduled flows and invoking user's license for Instant/Power Apps/Dataverse triggered flows. So, the person who added the item to list created using Microsoft Lists do not need a premium license.
 
 ### We have an instant flow with run-only users and it uses premium connectors. The maker shares that flow with their team and allows them to run that flow.
 
@@ -303,11 +313,8 @@ Everyone who invokes the flow need a premium license because it is an instant fl
 
 ### I have a child flow that has premium connectors and is invoked by multiple parent flows that don't have premium connectors. Do all parent flows need to be licensed, or is licensing the child flow enough?
 
-You can either license the parent flow or license the child flow with a per flow license. However, if the parent flow also has a premium connector, the parent flow owner must have a premium license.
+You can either license the parent flow or license the child flow with a per flow license. However, if the parent flow also has a premium connector, the parent flow owner must have a premium license or the parent flow must have the per flow license.
 
-### **My flow is shared with multiple users who view and edit the flow**. Do co-owners need premium license to edit the flows?
-
-Co-owners don't need a premium license as the flow only runs in the context of creator or owner/run-only user.
 
 ### My flow uses connections of multiple users. Do i need to license all of them?
 
@@ -315,6 +322,6 @@ Who needs a license is independent from whose connections are used in the flow. 
 
 ### A premium flow consolidates Azure Dev Ops items, generates a report, and then sends an email to the entire organization. The users in the organization get value from the flow but do not interact with the flow directly.
 
-As the users are not invoking the flow, they do not need any license (neither premium nor seeded).
+Yes they are getting indirect value from the flow and every user needs a license.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

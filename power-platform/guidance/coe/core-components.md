@@ -272,7 +272,7 @@ Use this app to:
 
 **Permission**: Intended to be used only by admins. Power Platform Service Admin or Global Admin permission is required. Share this app with your CoE Admins.
 
-**Prerequisite**: This app uses Microsoft Dataverse. If you have installed this solution in a Production environment, a Premium license is required for every app user. If you have installed this solution in a Dataverse for Teams environment, a Microsoft 365 license is required for every user.
+**Prerequisite**: This app uses Microsoft Dataverse and other premium connectors. A premium license is required for every app user in both Production and Dataverse for Teams environments.
 
 >[!NOTE]
 > When you first launch the app, bookmarks to all apps included in the CoE Starter Kit get created. Additionally add other relevant bookmarks such as links to the Power BI dashboard and your Power Platform wiki and community by selecting **Edit bookmarks**.
@@ -344,6 +344,7 @@ Use this app to:
 - Add additional information, such as notes and risk assessments, to your resources.
 - Set approved capacity for environments, and see capacity and add-on information per environment.
 - Complete [app audits](example-processes.md).
+- Manage capacity alerts.
 
 **Permission**: This app is intended to be used only by admins. Power Platform Service Admin or Global Admin permission is required. Share this app with your CoE admins.
 
@@ -352,8 +353,6 @@ Use this app to:
 You can use this app to see who an app is shared with, what roles (editor or viewer) the users have, and&mdash;for groups&mdash;what the size of the group is, all in a quick glance.
 
 ![Use Power Platform Admin View to see who an app is shared with.](media/coe-mda2.png "Use Power Platform Admin View to see who an app is shared with")
-
-You can use this app to see Microsoft Teams environments.
 
 ### Power BI report
 
@@ -421,7 +420,7 @@ Use this app to:
 
 **Prerequisite**: This app uses Microsoft Dataverse. If you have installed this solution in a Production environment, end users need to have a Per User license, or the app needs to be assigned a Per App license, or the environment needs to be covered by pay-as-you-go.  If you have installed this solution in a Dataverse for Teams environment, a Microsoft 365 license is required for every user.
 
-![Power Platform Resource RMS canvas app.](media\dev-resources-admin-details.png "Power Platform Resource RMS canvas app")
+![Admin - Environment Request canvas app.](media\dev-resources-admin-details.png "Admin - Environment Request canvas app")
 
 #### Environment Requests
 
@@ -436,7 +435,7 @@ Use this app to:
 
 **Prerequisite**: This app uses Microsoft Dataverse. If you have installed this solution in a Production environment, end users need to have a Per User license, or the app needs to be assigned a Per App license, or the environment needs to be covered by pay-as-you-go. If you have installed this solution in a Dataverse for Teams environment, a Microsoft 365 license is required for every user.
 
-![Power Platform Developer Resources canvas app.](media\dev-resources-maker-env.png "Power Platform Resource RMS canvas app")
+![Maker - Environment Request canvas app.](media\dev-resources-maker-env.png "Maker - Environment Request canvas app")
 
 ## Other core components
 

@@ -5,9 +5,9 @@ description: Set up users to send an outgoing email by updating the From field t
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/27/2021
-author: revachauhan
+author: mduelae
 ms.subservice: admin
-ms.author: rechauha
+ms.author: mkaur
 ms.reviewer: mkaur
 search.audienceType: 
   - admin
