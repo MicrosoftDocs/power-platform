@@ -21,9 +21,8 @@ This technology preview doesn't yet support some of the existing features you're
 ## Limitations of current features
 
 > [!IMPORTANT]
-> These are the current limitations as of 5/12/2022.
+> These are the current limitations as of 5/17/2022.
 
-- Analytics may take several hours to update.
 - Bots can't be deleted.
 - When sharing a bot, any Power Automate flows used in the conversation logic will not be shared. You'll have to manually share those flows if desired.  
 - [Message variations](authoring-create-edit-topics.md#message-variations) do not vary in a single conversation. You'll only see differences between different conversations.
