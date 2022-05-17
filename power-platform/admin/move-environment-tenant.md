@@ -1,7 +1,7 @@
 ---
 title: "Migrate an environment to a different tenant"
 description: "Learn about the impact of migrating an environment from one tenant to another. Review the prerequisites and considerations before submitting a request." 
-ms.date: 04/28/2022
+ms.date: 05/17/2022
 ms.topic: conceptual
 applies_to: 
   - "Dynamics 365 (online)"
