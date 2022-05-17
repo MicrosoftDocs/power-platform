@@ -1,13 +1,13 @@
 ---
 title: "Set up ALM accelerator for Microsoft Power Platform components manually | MicrosoftDocs"
 description: "The ALM accelerator for Microsoft Power Platform helps you follow ALM patterns and practices to source-control and move your solutions from your development environment to test and production environments by using Azure DevOps. This guide walks through the manual setup steps of the accelerator."
-author: mikefactorial
+author: jenschristianschroder
 manager: devkeydet
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/14/2021
+ms.date: 05/13/2022
 ms.subservice: guidance
-ms.author: v-mikeochs
+ms.author: jeschro
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
@@ -21,7 +21,7 @@ search.app:
 The ALM accelerator for Microsoft Power Platform components enable makers to apply source-control strategies with Azure DevOps, and use automated builds and deployment of solutions to their environments without the need for manual intervention by the maker, administrator, developer, or tester. In addition, the ALM accelerator helps makers work without intimate knowledge of the downstream technologies and be able to switch quickly from developing solutions to source-controlling the solution and, ultimately, pushing their apps to other environments with as few interruptions to their work as possible.
 
 > [!NOTE]
-> The ALM accelerator for Microsoft Power Platform is currently in public preview. Go to [Issues currently tagged as vnext](https://github.com/microsoft/coe-starter-kit/issues?q=is%3Aopen+is%3Aissue+label%3Aalm-accelerator+label%3Avnext) for the roadmap to be completed prior to general availability. While the tool is in public preview, there will be breaking changes and frequent updates to address feedback from preview members. Additionally, the public preview is reliant on the experimental [Power Apps Source File Pack and Unpack Utility](https://github.com/microsoft/PowerApps-Language-Tooling) that's being developed separately from the ALM accelerator for Microsoft Power Platform.
+> The ALM accelerator for Microsoft Power Platform is currently in public preview. While in preview we will be prioritizing feedback and bugs via GitHub [New issue](https://github.com/microsoft/coe-starter-kit/labels/alm-accelerator). If the issue is something in the platform all we can do is funnel feedback to the responsible product teams. For more information on the current preview status of the ALM Accelerator for Power Platform see [follow this link](https://github.com/microsoft/coe-starter-kit/blob/main/CenterofExcellenceALMAccelerator/PREVIEW.md).
 
 The ALM accelerator doesn't have a dependency on other components of the CoE Starter Kit. It can be used independently.
 
@@ -146,7 +146,7 @@ Creating an app registration for the ALM accelerator is a one-time setup step to
 
 ### Give Power App Management Permission to your App
 
-In order for the pipelines to perform certain actions against the environments (for example, Sharing Apps and setting component ownership) in your Power Platform tenant you will need to grant Power App Management permissions to your App registration. To do so you will need to run the following PowerShell cmdlet as an interactive user that has Power Apps administrative privileges. You will need to run this command once, using an interactive user, in PowerShell after your app registration has been created. The command gives permissions to the Service Principal to be able to execute environment related functions including querying for environments and connections via [Microsoft.PowerApps.Administration.PowerShell](/powershell/module/microsoft.powerapps.administration.powershell/new-powerappmanagementapp?view=pa-ps-latest). Learn more: [**New-PowerAppManagementApp** cmdlet](/powershell/module/microsoft.powerapps.administration.powershell/new-powerappmanagementapp?view=pa-ps-latest]
+In order for the pipelines to perform certain actions against the environments (for example, Sharing Apps and setting component ownership) in your Power Platform tenant you will need to grant Power App Management permissions to your App registration. To do so you will need to run the following PowerShell cmdlet as an interactive user that has Power Apps administrative privileges. You will need to run this command once, using an interactive user, in PowerShell after your app registration has been created. The command gives permissions to the Service Principal to be able to execute environment related functions including querying for environments and connections via [Microsoft.PowerApps.Administration.PowerShell](/powershell/module/microsoft.powerapps.administration.powershell/new-powerappmanagementapp). Learn more: [**New-PowerAppManagementApp** cmdlet](/powershell/module/microsoft.powerapps.administration.powershell/new-powerappmanagementapp)
 
 > [!IMPORTANT] 
 > Currently this cmdlet gives elevated permissions (for example, Power Platform Admin) to the app registration. Your organization's security policies may not allow for these types of permissions. Ensure that these permissions are allowed before continuing. In the case that these elevated permissions are not allowed certain capabilities won't work in the AA4PP pipelines.
@@ -184,7 +184,7 @@ The ALM accelerator uses several Azure DevOps extensions, including some third-p
 
 1. Go to **Repos**, and then select **Import repository** from the repository dropdown list.
 
-1. Enter the URL of the tag for the latest release—for example, [https://github.com/microsoft/coe-alm-accelerator-templates/tree/ALMAcceleratorForAdvancedMakers-September2021a](https://github.com/microsoft/coe-alm-accelerator-templates/tree/ALMAcceleratorForAdvancedMakers-September2021a) as the **Clone URL**—and then select **Import**.
+1. Get the URL of the tag for the latest release, heading to [https://aka.ms/coe-alm-accelerator-templates-latest-release](https://aka.ms/coe-alm-accelerator-templates-latest-release) and copying the address you are redirected to, and use as the **Clone URL**—and then select **Import**.
 
 1. Check that the default branch for this repo is `main`. Choose **Repos** and **Branches** and ensure that the `main` branch is tagged as the default.
    If it isn't, select the three vertical dots (**&vellip;**) corresponding to the `main` branch, and from the **More options** menu, select **Set as default branch**.
@@ -254,6 +254,8 @@ The **VerifyDefaultEnvironmentVariableValues** can be used to ensure that specif
     | TestAutomationUsername | The user account used to execute the automated tests. |
     | TestAutomationPassword | The password for the user account to execute the automated tests. |
 
+1. **Optional**. By default, the global variables are restricted and access for each pipeline must be configured. Is possible to simplify, and allow access to any pipeline. To configure **Open access**, under the **Variable group** (Pipelines->Library->alm-accelerator-variable-group) select **Pipeline permissions** in the top menu. Select ... and select **Open access**.
+
 ### Update permissions for the project build service
 
 > [!IMPORTANT]
@@ -281,7 +283,7 @@ The **VerifyDefaultEnvironmentVariableValues** can be used to ensure that specif
 
 1. Select **Pipelines**, select the three dots (**...**) in the upper-right corner, and then select **Manage Security**.
 
-1. Set the following permissions for the build service user.
+1. Set the following permissions for **[Your Project Name] Build Service ([Your Organization Name])** user.
 
    | Permission                            | Value |
    | ------------------------------------- | ----- |
@@ -293,9 +295,11 @@ The **VerifyDefaultEnvironmentVariableValues** can be used to ensure that specif
    | View build pipeline                   | Allow |
    | View builds                           | Allow |
 
-1. Select **Agent pools** and select **Security**, and then select **Add**.
+1. Select **Project settings** - **Agent pools** and select **Security**, and then select **Add**.
 
 1. Find and select the username **[Your Project Name] Build Service ([Your Organization Name])**, and then set the **Role** to Reader. Select **Add**.
+
+1. **Optional**. By default, the pipeline permissions for each repository is restricted and needs to be configured individually. To give access to  any pipeline open the repository (Project Settings -> Repositories ), select each repository and select **Security** from the top menu. Find the **Pipeline permissions** block and select ... and select **Open access**.
 
 ## Development project setup
 
@@ -550,7 +554,7 @@ If your solution requires these other configuration settings or data, follow the
 
 ### Install the ALM accelerator in Dataverse
 
-1. Download the latest managed solution file from [GitHub](https://github.com/microsoft/coe-starter-kit/releases): ALMAcceleratorForMakers_`[latest version]`_managed.zip .
+1. Download the latest managed solution file from [GitHub](https://github.com/microsoft/coe-starter-kit/releases): CenterofExcellenceALMAccelerator_`[latest version]`_managed.zip.
 
 1. Go to [Power Apps](https://make.powerapps.com) and select the environment you want to use to host the ALM Accelerator for Power Platform app.
 
@@ -590,7 +594,7 @@ If your solution requires these other configuration settings or data, follow the
 
     1. Select **New Connection**, and then follow the prompts to create a new connection.
 
-    1. In [Power Apps](https://make.powerapps.com), select your environment, and then select **Data** > **Custom Connectors** > **CustomAzureDevOps**.
+    1. In [Power Apps](https://make.powerapps.com), select your environment, and then select **Dataverse** > **Custom Connectors** > **CustomAzureDevOps**.
 
     1. Select **Edit**, go to the **Test** section, and then find the **GetOrganizations** operation.
 
