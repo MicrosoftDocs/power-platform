@@ -19,7 +19,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-
+<!-- Don't publish TODO content, see 73-77 lines -->
 # Configure user security to resources in an environment
 
 Microsoft Dataverse uses a role-based security model to help secure access to the database. This article explains how to create the security artifacts that you must have to help secure resources in an environment. Security roles can be used to configure environment-wide access to all resources in the environment, or to configure access to specific apps and data in the environment. Security roles control a user's access to an environment's resources through a set of access levels and permissions. The combination of access levels and permissions that are included in a specific security role governs the limitations on the user's view of apps and data, and on the user's interactions with that data. 
@@ -68,14 +68,14 @@ For users who make apps that connect to the database and need to create or updat
 
 *The scope of these privileges is global, unless specified otherwise.
 
-In addition to the predefined security roles listed above for Dataverse, there might be other security roles available in your environment depending on the Power Platform components (Power Apps, Power Automate, Power Virtual Agents) you have:
-
+In addition to the predefined security roles listed above for Dataverse, there might be other security roles available in your environment depending on the Power Platform components (Power Apps, Power Automate, Power Virtual Agents) you have. 
+<!-- 
 |Power Platform component  | Information  |
 |---------|---------|
 |Power Apps     | [TO DO: Add information]      |
 |Power Automate     |  [TO DO: Add information]      |
 |Power Virtual Agents     |  [TO DO: Add information]       |
-
+-->
 ### Dataverse for Teams environments
 
 For information on Dataverse for Teams environment security roles, see [User access to Dataverse for Teams environments](about-teams-environment.md#user-access-to-dataverse-for-teams-environments).
