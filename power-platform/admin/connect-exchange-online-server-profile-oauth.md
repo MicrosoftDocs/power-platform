@@ -1,7 +1,6 @@
 ---
 title: "Exchange Online cross-tenant authentication | MicrosoftDocs"
 description: Exchange Online cross tenant authentication
-
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/13/2022
@@ -19,7 +18,7 @@ search.app:
 
 # Exchange Online cross-tenant authentication
 
-Use server-side synchronization to synchronize Exchange Online mailboxes that reside on different Exchange Online tenants. Follow the steps in this topic to complete the prerequisites before you set up an Exchange Online server profile that uses Oauth cross-tenant authentication. More information: [Create an email server profile for Exchange Online](connect-exchange-online.md#preview-create-an-email-server-profile-for-exchange-online)
+Use server-side synchronization to synchronize Exchange Online mailboxes that reside on different Exchange Online tenants. Follow the steps in this topic to complete the prerequisites before you set up an Exchange Online server profile that uses Oauth cross-tenant authentication. More information: [Create an email server profile for Exchange Online](connect-exchange-online.md#create-an-email-server-profile-for-exchange-online)
 
 > [!NOTE]
 > The following limitations apply to connecting cross-tenant: 
@@ -84,7 +83,7 @@ To allow your app to have access to Exchange Online, you need to grant **Office 
 
 ## Email server profile for Exchange Online with authentication type Oauth (Cross Tenant)
 
-To [create an email server profile for Exchange Online that uses Oauth (Cross Tenant) authentication](connect-exchange-online.md#preview-create-an-email-server-profile-for-exchange-online), you need to collect the following information from the Azure portal:
+To [create an email server profile for Exchange Online that uses Oauth (Cross Tenant) authentication](connect-exchange-online.md#create-an-email-server-profile-for-exchange-online), you need to collect the following information from the Azure portal:
 
 - TenantId: The tenant ID of the tenant where Exchange Online is configured
 - Application ID: The app ID used by Dynamics 365 to connect to Exchange Online
