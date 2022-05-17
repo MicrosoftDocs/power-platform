@@ -142,7 +142,7 @@ The [DLP policy](/admin/wp-data-loss-prevention) applied to your CoE Starter Kit
 > [!div class="nextstepaction"]
 > [Next step: Set up inventory components](setup-core-components.md)
 
-## What's next: After installing the CoE Starter kit
+## What's next: After installing the CoE Starter Kit
 
 If you have already installed the CoE Starter Kit, please check our instructions for
 

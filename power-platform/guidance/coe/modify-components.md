@@ -19,11 +19,48 @@ search.app:
 
 # Extending and customizing CoE Starter Kit components
 
+There is no "one size fits all" solution for a Center of Excellence (CoE). Some companies will want a more restrictive set of rules on their organization, while others will want to let users personally explore with less limitations.
+
+That's why the CoE Starter Kit intends to provide a starting point for administration, governance and nurture tooling approaches - however, you may find that you will need to extend the kit to fit your needs in addition to using the tools from the CoE Starter Kit as they are.
+
+There's many reasons for why you may want to extend the CoE Starter Kit:
+
+- Capturing additional meta-data for apps and flows, for example as part of the [Compliance process](sample-process.md).
+- Modifying the apps and flows to fit existing process you may have in place, for example asking makers to provide additional information in the [Developer Compliance Center](governance-components.md#developer-compliance-center).
+- Customizing the apps to fit with your organizations brand and theme, especially for broadly used apps like the [App Catalog](core-components.md#app-catalog)
+- Building additional apps and flows on top of the inventory gathered by the CoE Starter Kit.
+
+This article will prepare you to extend the CoE Starter Kit and provides guidance on:
+
+- How to customize CoE Starter Kit components.
+- How to add your own CoE Starter Kit components.
+- How to deploy and publish your customizations.
+
+Not following best practices when extending the CoE Starter Kit can lead to unintended consequences, like no longer receiving updates from us during an upgrade.
+
+## What components can I customize?
+
+Before explaining how to extend the CoE Starter Kit, here's some guidance on what components we recommend and don't recommend extending:
+
+- Tables and model-driven apps support merging, these resources can easily be extending by creating your own unmanaged solution and making changes (for example, adding new fields) there. During an upgrade, you will receive both our changes and keep your changes.
+- Canvas apps and cloud flows do not support merging, these resources can only be extended and customized by creating a copy in your own unmanaged solution. During an upgrade, you will no longer receive our changes - which should be a deliberate choice in order to customize a process and make it fit to your organization.
+- Cloud flows that are responsible for [gathering inventory](core-components.md#flows) should not be customized. These flows are frequently updated to fix bugs, gather additional data or improve performance. If you have additional requirements for what to inventory to gather, raise a [feature ask](https://github.com/microsoft/coe-starter-kit/issues) or create separate flows for your requirements.
+
+## What's the mechanism to extend the CoE Starter Kit?
+
 The CoE Starter Kit is composed of components made by using the capabilities of the Power Platform, therefore it can be extended by using the Power Platform itself. The following article gives guidelines on how to properly customize and deploy your customizations.
 
-Any new components must be included within one or multiple unmanaged solutions to be able to identify them easily and be capable of deploying them to other environments. Read about solutions in our documentation, which will introduce you to the concepts in addition to notions like how to create your publisher. For more information related to solutions, visit [Introduction to solutions](https://docs.microsoft.com/powerapps/developer/common-data-service/introduction-solutions) and for training content, take a look at [Manage solutions in Power Apps and Power Automate](https://docs.microsoft.com/learn/modules/manage-solutions-power-automate).
+The CoE Starter Kit is made available as [managed solutions](/power-platform/alm/solution-concepts-alm#managed-and-unmanaged-solutions). Any new components or customizations must be included in an unmanaged solutions so you can keep track of your changes and deploy them to other environments.
 
-If you plan on making a sizeable number of extensions, it's recommended to use multiple solutions to organize your extensions better and reduce the size of each solution. Lighter solutions reduce deployment time. More information at [Organize solutions](https://docs.microsoft.com/power-platform/alm/organize-solutions).
+Learn more about solutions:
+
+- [Introduction to solutions](/powerapps/developer/common-data-service/introduction-solutions)
+- [Solution concepts](/power-platform/alm/solution-concepts-alm)
+- [How managed solutions are merged](/power-platform/alm/how-managed-solutions-merged)
+- [Use a solution to customize](/power-platform/alm/use-solutions-for-your-customizations)
+- [Manage solutions in Power Apps and Power Automate](https://docs.microsoft.com/learn/modules/manage-solutions-power-automate)
+
+If you plan on making customizations to a large number of CoE Starter Kit components, use multiple unmanaged solutions to organize your extensions better and reduce the size of each solution. Lighter solutions reduce deployment time. Learn more: [Organize solutions](/power-platform/alm/organize-solutions).
 
  >[!IMPORTANT]
  >Any extensions or customizations to the CoE Starter Kit components should be made in a **non production environment** before being deployed to your production environment as managed.
@@ -31,231 +68,231 @@ If you plan on making a sizeable number of extensions, it's recommended to use m
 ## Creating a new solution
 
 1. To create a new unmanaged solution:
-
-    1. Login and go to the [PowerApps Maker Portal](https://make.powerapps.com/)
-    2. Switch environment to open the development environment on which the CoE Starter Kit is deployed:
-
-        ![Select the development environment](media/coe-extension-1.png "Select the development environment")
-    3. Go to **Solutions** in the left navigation bar
-    4. Select **New solution** in the menu at the top
+    1. Go to [make.powerapps.com](<https://make.powerapps.com>).
+    1. Go to your CoE development environment. This environment should have the managed solutions of the CoE Starter Kit components you are using installed, e.g. Center of Excellence - Core components and Center of Excellence - Innovation Backlog.
+    1. Select **Solutions**.
+    1. Select **+ New solution**.
 
         ![Select New Solution](media/coe-extension-2.png "Select New Solution")
-    5. Fill in the **Display Name** (name of your solution displayed in the portal), **Name** (technical name of your solution), **Publisher** (author of your solution) and **Version** (leave 1.0.0.0 if it is your first solution).
+    1. Enter the **Display Name** (e.g. *Contoso CoE Extension*), [**Publisher**](power-platform/alm/solution-concepts-alm#solution-publisher) (author of your solution) and **Version** (leave 1.0.0.0 if it is your first solution).
 
-        ![Fill the creation form](media/coe-extension-3.png "Fill the creation form")
-    6. Select **Create** once your done.
+        ![Enter the name, publisher and version to create the solution](media/coe-extension-3.png "Enter the name, publisher and version to create the solution")
+    1. Select **Create** to create your solution.
 
 ## Creating components in a solution
 
 1. To add a new component to your new solution
 
-    1. Login and go to the [PowerApps Maker Portal](https://make.powerapps.com/)
-    2. Go to **Solutions** in the left navigation bar
-    3. Select your new solution
-    4. Select **New** in the top menu
-
-        ![Select new in the top menu](media/coe-extension-4.png "Select new in the top menu")
-    5. Choose the component type and proceed with the creation
+    1. Go to [make.powerapps.com](<https://make.powerapps.com>).
+    1. Go to your CoE development environment.
+    1. Select **Solutions**.
+    1. Select your new solution
+    1. Select **+ New** in the top menu
+        ![Select + New to add a new component](media/coe-extension-4.png "Select + New to add a new component")
+    1. Choose the component type to add this component to your solution.
 
  >[!IMPORTANT]
- > It is important to create additional components within your own solution because it applies the publisher's prefix to the technical name of any new component which enables you to identify them better from the components belonging to the CoE or the system. Also it helps you keep track of new components and already packages them for deployment to production.
+ > Create additional components within your own solution rather than the existing CoE Starter Kit solutions so that  your publisher's (author) prefix is applied to the name of the component. Your publisher's prefix enables you to differentiate your components from the components belonging to the CoE Starter Kit.
 
 ## Customizing CoE Starter Kit components
 
 > [!CAUTION]
-> Every components part of the CoE Starter Kit are distributed as managed and should not be customized directly.
+> The CoE Starter Kit is distributed as a managed solution and should not be customized directly.
 
-If you wish to customize an existing component, this component should be duplicated and only its copy should be customized.
-The only exception is related to creating new fields in an existing table, which is described below.
+Most components can be customized by duplicating the component and customizing the copy. The only exception is [adding new fields in an existing table](#adding-a-new-column-within-an-existing-table).
 
-Here are some common examples of how to customize and extend some of the main components of the CoE Starter Kit. For more information, refer to [Power Platform Documentation](https://docs.microsoft.com/power-platform/).
+Below are some common examples of how to customize and extend some of the main components of the CoE Starter Kit.
 
-### Duplicating a canvas application
+### Creating  copy of a canvas application
 
 1. Add the canvas app to your unmanaged solution
 
-    1. Login and go to the [PowerApps Maker Portal](https://make.powerapps.com/)
-    2. Go to **Solutions** in the left navigation bar
-    3. Select your solution
-    4. Select **Add existing**
+    1. Go to [make.powerapps.com](<https://make.powerapps.com>).
+    1. Go to your CoE development environment.
+    1. Go to **Solutions**.
+    1. Select your solution.
+    1. Select **+ Add existing**.
+    1. Select **App > Canvas app**.
 
-        ![Select add existing in the top menu](media/coe-extension-5.png "Select add existing in the top menu")
-    5. Choose **App** then the related application type (canvas app)  
-
-        ![Select app then the app type](media/coe-extension-6.png "Select app then the app type")
-    6. Add the target application or use the search bar to find the target application, select it and click on **Add**
+        ![Select to add a canvas app to your solution](media/coe-extension-6.png "Select to add a canvas app to your solution")
+    1. Search for the canvas app you want to customize and select **Add** to add it to your solution.
 
         ![Select or search for the app](media/coe-extension-7.png "Select or search for the app")
-2. Duplicate the canvas app
-    1. Select the canvas app in your solution and select **Edit** in the top menu
+1. Create a copy of the canvas app
+    1. Select the canvas app in your solution and select **Edit**.
 
         ![Select your app and edit](media/coe-extension-8.png "Select your app and edit")
-    2. The app is opened in the Power Apps Studio
-    3. Navigate to **File** in the top left menu
+    1. The app is opened in the Power Apps Studio.
+    1. Select **File**.
 
-        ![Navigate to file](media/coe-extension-9.png "Navigate to file")
-    4. Go to **Save as**, change the name of the app (for instance add a prefix) and select **Save** on the bottom right
-    5. Go back to your solution, your copy of the app is displayed in the list (with your publisher prefix)
-    6. Remove the original app from your solution by selecting it and in the menu selecting **Remove** then **Remove from solution**
+        ![Select the File menu](media/coe-extension-9.png "Select the File menu")
+    1. Go to **Save as**, change the name of the app (for instance add a prefix) and select **Save**.
+    1. Go back to your solution, your copy of the app is displayed in the list (with your publisher prefix)
+    1. Remove the original app from your solution by selecting it and in the menu selecting **Remove** then **Remove from solution**
 
         ![Remove from solution](media/coe-extension-10.png "Remove from solution")
-    7. You can now safely edit your own copy
+
+      Remove [unmanaged layers](after-setup.md#removing-other-customizations) to continue receiving updates to the original app. You may want to compare them to your changes.
+    1. You can now safely edit your own copy.
+
+> [!NOTE]
+> Creating a copy of a canvas application to extend and customize the app means you will no longer receive updates for this app during an upgrade.
 
 ### Working with cloud flows
 
 > [!CAUTION]
-> System Cloud flows cannot be duplicated, if you use the **Save as** on System Cloud Flows, the copy is a personal cloud flow.
+> Due to a product limitation, you can't create a copy of a cloud flows triggering child flows. Most CoE Starter Kit flows use child flows.
 > Customizations to cloud flows can be made on the existing flows as unmanaged.
 > Unmanaged changes will take precedence over the managed ones, therefore any customized flows will not be updated as part of a CoE upgrade.
-> For more information on solution layers visit [Solution Layers](https://docs.microsoft.com/power-platform/alm/solution-layers-alm/)
+> Learn more: [Solution Layers](/power-platform/alm/solution-layers-alm/)
 
 1. Customizing an existing flow
-    1. Login and go to the [PowerApps Maker Portal](https://make.powerapps.com/)
-    2. Go to **Solutions** in the left navigation bar
-    3. Select your solution
-    4. Select **Add existing**
+    1. Go to [make.powerapps.com](<https://make.powerapps.com>).
+    1. Go to your CoE development environment.
+    1. Go to **Solutions**.
+    1. Select your solution.
+    1. Select **Add existing**.
 
         ![Select add existing in the top menu](media/coe-extension-5.png "Select add existing in the top menu")
-    5. Choose **Automation** then **Cloud flow**
-    6. Then select the flow you want to customize
-    7. From your solution select the flow and use the **Edit** button in the top menu 
+    1. Select **Automation > Cloud flow**.
+    1. Select or search for the flow you want to customize.
+    1. Select the flow in your solution and use the **Edit** button to start customizing the flow.
 
-### Working with Model-driven applications and extending Dataverse Tables
+> [!NOTE]
+> Creating a copy of a canvas application to extend and customize the app means you will no longer receive updates for this app during an upgrade.
 
-> [!CAUTION]
-> Existing components part of the tables should not be removed or modified.
+### Working with model-driven applications and extending Dataverse tables
 
-Model-driven applications cannot be duplicated but can be created easily by configuration.
-If you need to extend existing model-driven applications, it is better to configure your own from existing CoE components otherwise your changes may be affected by the upgrade process.
-For more information on building model-driven apps, take a look at [Overview of building a model-driven app with Power Apps](https://docs.microsoft.com/power-apps/maker/model-driven-apps/model-driven-app-overview)
+Create your own model-driven app instead of extending the existing one, to avoid your changes being impacted by the upgrade. Learn more: [Overview of building a model-driven app with Power Apps](/power-apps/maker/model-driven-apps/model-driven-app-overview)
 
-#### Configuring a new Model-Driven application
+#### Configuring a new model-driven application
 
-1. Initiating your model-driven application
-    1. Login and go to the [PowerApps Maker Portal](https://make.powerapps.com/)
-    2. Go to **Solutions** in the left navigation bar
-    3. Select your solution
-    4. Select **New** in the top menu
-    5. Then select **App** and **Model-driven app**
-    6. Select **Create**
-    7. Fill in a **Name** (used in the menus) and a **Unique Name** (technical name for the application)
-    8. Select **Done** at the top right corner
+1. Create a new model-driven application
+    1. Go to [make.powerapps.com](<https://make.powerapps.com>).
+    1. Go to your CoE development environment.
+    1. Go to **Solutions**.
+    1. Select your solution.
+    1. Select **+ New**.
+    1. Select **App > Model-driven app**.
+    1. Select **Create**.
+    1. Enter a **Name** and a **Unique Name** (technical name for the application).
+    1. Select **Done**.
 
         ![Fill in the name of the application](media/coe-extension-16.png "Fill in the name of the application")
 2. Configuring your model-driven application
-    1. In the **App Designer** use the right side menu to select the components to be added
-    2. Configure the **Site Map** to show the elements in your app's left side menu
-    3. Once done select **Save** then **Validate**
-    4. Correct the issues if there are any
-    5. Finish by **Publish**
+    1. In the **App Designer** use menu to select the components for your app.
+    1. Configure the **Site Map** to show the elements in your app's menu.
 
         ![Configure the application](media/coe-extension-17.png "Configure the application")
+    1. Select **Save**.
+    1. Select **Validate**, and correct any issues.
+    1. Select **Publish**.
 
-#### Adding a new column within an existing table
-
-> [!IMPORTANT]
-> When you add the table, do not include **Metadata** or any **Objects** in order to keep the components within your solution to only the ones you have modified/created.
-> This will make sure that the upgrade process of the CoE Starter Kit is not impacted.
+#### Adding a new column to an existing table
 
 1. Start by adding the table you want to add the field to, if it's not already in your solution
-    1. Login and go to the [PowerApps Maker Portal](https://make.powerapps.com/)
-    2. Go to **Solutions** in the left navigation bar
-    3. Select your solution
-    4. Select **Add existing**
+    1. Go to [make.powerapps.com](<https://make.powerapps.com>).
+    1. Go to your CoE development environment.
+    1. Go to **Solutions**.
+    1. Select your solution.
+    1. Select **Add existing**.
 
         ![Select add existing in the top menu](media/coe-extension-5.png "Select add existing in the top menu")
-    5. Choose **Table**
-    6. Search for the table you want to add and select **Next**
-    7. Select **Add** at the bottom
-2. Adding a new field
-    1. Select the table just added to the solution
-    2. In the **Columns** tab, select the button at the top **Add Column**
-    3. Fill in the form with the details of your new field and select **Done**
-    4. Select **Save Table** at the bottom right of the screen
+    1. Choose **Table**.
+    1. Search for the table you want to add and select **Next**.
+        > [!IMPORTANT]
+        > If you only want to add new fields and not modify the views and forms of the table, do not check the options to include **metadata** or **objects** so that the components in your solution to only the ones you have modified/created.
+        > ![Do not include all objects and table metadata](media/coe-extension-5a.png "Do not include all objects and table metadata")
+    1. Select **Add**.
+1. Adding a new field.
+    1. Select the table just added to the solution.
+    1. In the **Columns** tab, select **Add Column**
+    1. Fill in the form with the details of your new field, such as name and data type, and select **Done**.
+    1. Select **Save Table** at the bottom right of the screen.
 
 #### Customizing an existing form
 
-Forms are used within model-driven application and Power Portals to render table data.
-For more information related to forms, visit [Create and Design model-driven app forms](https://docs.microsoft.com/power-apps/maker/model-driven-apps/create-design-forms).
+Forms are used within model-driven application and portals to render table data. Forms support merge behavior.
 
-> [!IMPORTANT]
-> When customizing the form, it's important to duplicate the form so that your changes are not overridden post upgrade.
+Form merge occurs on a section-by-section basis. When you add new elements to an existing tab or section, your changes can affect or conceal the elements from the managed layers, including when the managed element is updated. This behavior occurs because the managed layers are underneath the unmanaged layer you're introducing with your customization. If you don't want to affect or conceal managed elements on the form, we recommend that you include your new elements within new container elements, such as a section or tab.
 
-1. Start by adding the table you want to duplicate the form to, if it's not already in your solution
-    1. Login and go to the [PowerApps Maker Portal](https://make.powerapps.com/)
-    2. Go to **Solutions** in the left navigation bar
-    3. Select your solution
-    4. Select **Add existing**
+Learn more: [Merge form customizations](/power-platform/alm/how-managed-solutions-merged#merge-form-customizations)
 
-        ![Select add existing in the top menu](media/coe-extension-5.png "Select add existing in the top menu")
-    5. Choose **Table**
-    6. Search for the table you want to add and select **Next**
-    7. Select **Add** at the bottom
-2. Add the form you want to duplicate
-    1. Open the table by selecting it
-    2. Select **Add subcomponents** in the top menu
-    3. Navigate to **Forms** and select the form you want to duplicate
-    4. Select **Add** in the bottom left
-3. Duplicate the form
-    1. Navigate to the tab **Forms**
-    2. Open the form to duplicate
-    3. Select the drop down menu next to **Save** in the top right corner
-    4. Select **Save As**
-
-        ![Select Save As](media/coe-extension-18.png "Select Save As")
-    5. Change the **Name** and select **Save**
-    6. You can now safely edit the form  
-4. Setting up the new form in a model-driven application
-    1. Once you've created your copy, start by disabling the old one so that it is not shown
-    2. Remove it from your solution
-    3. Make sure that the new form's settings are configured correctly including **Ordering** and **Security roles**
+1. Add the table linked to the form to your solution.
+    1. Go to [make.powerapps.com](<https://make.powerapps.com>).
+    1. Go to your CoE development environment.
+    1. Go to **Solutions**.
+    1. Select your solution.
+    1. Select **Add existing**.
+    1. Choose **Table**
+    1. Search for the table you want to add and select **Next**.
+    1. Select **Add**.
+1. Add the form you want to customize.
+    1. Select **... > + Add subcomponents**.
+                ![Select to add a subcomponent](media/coe-extension-5b.png "Select to add a subcomponent")
+    1. Select **Forms** and select the form you want to customize.
+    1. Select **Add**.
+1. Customize the form.
+    1. Select the table and then select **Forms**.
+    1. Select **... > Edit form** to edit the form.
+    > [!NOTE]
+    > Depending on the goal of your customization, you can also create a new form or duplicate the existing form.
+1. Add the new form to your model-driven application
+    1. If you have created a new form or duplicated the existing form, start by disabling the old one so that it is not shown.
+    1. On the original form, select **... > Remove form from this solution**.
+    1. Select **Form settings**.
+    1. Make sure that the new form's settings are configured correctly including **Ordering** and **Security roles**
 
         ![Configure the form settings](media/coe-extension-19.png "Configure the form settings")
-    4. Be sure to have your new form part of the model-driven application you want in the **App Designer**
+    1. Add your new form to your model-driven application in the **App Designer**
 
 #### Customizing a view
 
 Views are used in model-driven applications to display table data as lists.
-For more information on views, visit [PowerApps Maker Portal](https://docs.microsoft.com/power-apps/maker/model-driven-apps/create-edit-views-app-designer).
 
-1. Start by adding the table you want to duplicate the view to, if it's not already in your solution
-    1. Login and go to the [PowerApps Maker Portal](https://make.powerapps.com/)
-    2. Go to **Solutions** in the left navigation bar
-    3. Select your solution
-    4. Select **Add existing**
+Learn more: [Create and edit views](/power-apps/maker/model-driven-apps/create-edit-views-app-designer).
 
-        ![Select add existing in the top menu](media/coe-extension-5.png "Select add existing in the top menu")
-    5. Choose **Table**
-    6. Search for the table you want to add and select **Next**
-    7. Select **Add** at the bottom
-2. Add the view you want to duplicate
-    1. Open the table by selecting it
-    2. Select **Add subcomponents** in the top menu
-    3. Navigate to **Views** and select the view you want to duplicate
-    4. Select **Add** in the bottom left
-3. Duplicate the form
-    1. Navigate to the tab **Views**
-    2. Open the view to duplicate
-    3. Select the drop down menu next to **Save** in the top right corner
-    4. Select **Save As**
+1. Add the table linked to the form to your solution.
+    1. Go to [make.powerapps.com](<https://make.powerapps.com>).
+    1. Go to your CoE development environment.
+    1. Go to **Solutions**.
+    1. Select your solution.
+    1. Select **Add existing**.
+    1. Choose **Table**
+    1. Search for the table you want to add and select **Next**.
+    1. Select **Add**.
+1. Add the view you want to customize.
+    1. Select **... > + Add subcomponents**.
+        ![Select to add a subcomponent](media/coe-extension-5b.png "Select to add a subcomponent")
+    1. Select **Views** and select the view you want to customize.
+    1. Select **Add**.
+1. Customize the view.
+    1. Select the table and then select **Views**.
+    1. Select **... > Edit view** to edit the view.
+    > [!NOTE]
+    > Depending on the goal of your customization, you can also create a new view or duplicate the existing view.
+1. Add the new view to your model-driven application
+    1. If you have created a new view or duplicated the existing view, start by disabling the old one so that it is not shown.
+    1. On the original view, select **... > Remove view from this solution**.
+    1. Add your new view to your model-driven application in the **App Designer**
 
-        ![Select Save As](media/coe-extension-20.png "Select Save As")
-    5. Change the **Name** and select **Save**
-    6. You can now safely edit the view
-4. Setting up the new view in a model-driven application
-    1. Once you've created your copy, start by disabling the old one so that it is not shown
-    2. Remove it from your solution
-    3. Be sure to have your new view part of the model-driven application you want in the **App Designer**
-
-#### Customizing a model-driven app system dashboard
+#### Customize a model-driven app system dashboard
 
 Dashboards are used in model-driven applications to display table data as graphical components.
-For more information on dashboards, visit [Create or edit model-driven app dashboards](https://docs.microsoft.com/power-apps/maker/model-driven-apps/create-edit-dashboards).
+Learn more: [Create or edit model-driven app dashboards](/power-apps/maker/model-driven-apps/create-edit-dashboards).
 
 System dashboards cannot be duplicated as system dashboards.
-Two options are available to customize them:
+Two options are available to customize these dashboards:
 
-1. (Preferred option) In your development environment, create a **new system dashboard** and reuse the components from the CoE Starter Kit dashboards.
-2. Directly in your production environment, you can create a **personal dashboard** from the system dashboard and then share it with the team
+1. (Recommended option) In your development environment, create a **new system dashboard** and reuse the components from the CoE Starter Kit dashboards.
+2. Directly in your production environment, you can create a **personal dashboard** from the system dashboard and then share it with the team.
 
     ![Select Save As](media/coe-extension-21.png "Select Save As")
+
+## Deploy and publish your customizations
+
+Deploy the solution with your customizations as a managed solution to test and  production environments.
+
+Learn more: [Implementing healthy project and solution ALM](/power-platform/alm/implement-healthy-alm)
+
+Consider using the [ALM Accelerator for Power Platform](almacceleratorpowerplatform-components.md) to manage your deployments.
