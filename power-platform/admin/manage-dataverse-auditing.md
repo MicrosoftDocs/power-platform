@@ -399,9 +399,8 @@ Select the system job name to open details about your delete job.
 
 
 ### See also
-[Manage Dataverse auditing using code](dataverse-auditing-using-code.md)
-
-
+[Auditing overview](/power-apps/developer/data-platform/auditing-overview)
+[Audit user access](/power-apps/developer/data-platform/audit-user-access)
 
 
 
