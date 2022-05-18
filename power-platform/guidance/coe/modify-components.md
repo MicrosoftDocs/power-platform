@@ -1,6 +1,6 @@
 ---
 title: "Extend and customize CoE Starter Kit components"
-description: "Extend and modify the components of the Power Platform Center of Excellence (CoE) Starter Kit. "
+description: "Extend and modify the components of the Power Platform Center of Excellence (CoE) Starter Kit."
 author: conorto
 manager: phtopnes
 ms.component: pa-admin
@@ -17,26 +17,26 @@ search.app:
   - Powerplatform
 ---
 
-# Extending and customizing CoE Starter Kit components
+# Extend and customize CoE Starter Kit components
 
-There is no "one size fits all" solution for a Center of Excellence (CoE). Some companies will want a more restrictive set of rules on their organization, while others will want to let users personally explore with less limitations.
+There's no "one size fits all" solution for a Center of Excellence (CoE). Some companies will want a more restrictive set of rules for their organization, while others will want to let users personally explore with less limitation.
 
-That's why the CoE Starter Kit intends to provide a starting point for administration, governance and nurture tooling approaches - however, you may find that you will need to extend the kit to fit your needs in addition to using the tools from the CoE Starter Kit as they are.
+That's why the CoE Starter Kit intends to provide a starting point for administration, governance, and nurture tooling approaches. However, you may find that you'll need to extend the kit to fit your needs in addition to using the tools from the CoE Starter Kit as they are.
 
-There's many reasons for why you may want to extend the CoE Starter Kit:
+There are many reasons for why you may want to extend the CoE Starter Kit:
 
-- Capturing additional meta-data for apps and flows, for example as part of the [Compliance process](sample-process.md).
-- Modifying the apps and flows to fit existing process you may have in place, for example asking makers to provide additional information in the [Developer Compliance Center](governance-components.md#developer-compliance-center).
-- Customizing the apps to fit with your organizations brand and theme, especially for broadly used apps like the [App Catalog](core-components.md#app-catalog)
+- Capturing additional metadata for apps and flows—for example, as part of the [Compliance process](sample-process.md).
+- Modifying the apps and flows to fit existing processes you may have in place—for example, asking makers to provide additional information in the [Developer Compliance Center](governance-components.md#developer-compliance-center).
+- Customizing the apps to fit with your organization's brand and theme, especially for broadly used apps like the [App Catalog](core-components.md#app-catalog).
 - Building additional apps and flows on top of the inventory gathered by the CoE Starter Kit.
 
-This article will prepare you to extend the CoE Starter Kit and provides guidance on:
+This article prepares you to extend the CoE Starter Kit. It provides guidance on:
 
 - How to customize CoE Starter Kit components.
 - How to add your own CoE Starter Kit components.
 - How to deploy and publish your customizations.
 
-Not following best practices when extending the CoE Starter Kit can lead to unintended consequences, like no longer receiving updates from us during an upgrade.
+Not following best practices when extending the CoE Starter Kit can lead to unintended consequences, like no longer receiving updates from Microsoft during an upgrade.
 
 ## What components can I customize?
 
