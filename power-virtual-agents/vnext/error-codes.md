@@ -33,7 +33,6 @@ Errors may also appear in the [Topic Checker](authoring-topic-management.md#topi
 <!-- table best viewed and edited without wordwrap -->
 | Error                                                                     | Bot Message                                                                                                                                                                      |
 | ------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [ActionNotFound](#actionnotfound)                                         | Target DialogAction with Action Id {0} not found for the GotoAction of Action Id {1}.                                                                                            |
 | [ContentError](#contenterror)                                             |                                                                                                                                                                                  |
 | [DialogNotFound](#dialognotfound)                                         | The Dialog with Id `{0} was not found in the definition. Please check that the Dialog is present and that the Id is correct.                                                     |
 | [FlowActionException](#flowactionexception)                               |                                                                                                                                                                                  |
@@ -49,9 +48,6 @@ Errors may also appear in the [Topic Checker](authoring-topic-management.md#topi
 | [TelephonyHandoffInvalidPhoneNumber](#telephonyhandoffinvalidphonenumber) | The phone number '{0}' used in the transfer to agent activity is not a valid phone number format. Phone number should be in international format without dashes ex: +14251231234 |
 | [TelephonyHandoffMissingPhoneNumber](#telephonyhandoffmissingphonenumber) | The transfer to agent activity failed as the 'TargetPhoneNumber' property is missing from the context.                                                                           |
 
-### ActionNotFound
-
-The topic you're trying to [redirect](authoring-create-edit-topics.md#go-to-another-topic) to no longer exists. [Create a new topic](authoring-create-edit-topics.md#create-a-topic) to redirect to or [remove the redirect node](authoring-create-edit-topics.md#delete-nodes).
 
 ### ContentError
 
