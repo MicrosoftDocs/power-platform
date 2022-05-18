@@ -30,6 +30,7 @@ Errors may also appear in the [Topic Checker](authoring-topic-management.md#topi
 > The term _dialog_ is used in some error messages when it is referring to a _topic_.
 
 <!-- FIXME: add other messages when found -->
+<!-- table best viewed and edited without wordwrap -->
 | Error                                                                     | Bot Message                                                                                                                                                                      |
 | ------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [ActionNotFound](#actionnotfound)                                         | Target DialogAction with Action Id {0} not found for the GotoAction of Action Id {1}.                                                                                            |
@@ -62,11 +63,11 @@ FIXME: resolution steps here
 
 ### FlowActionException
 
-[Check the flow for errors](/power-automate/error-checker)  
+[Check the flow for errors](/power-automate/error-checker).
 
 ### FlowActionBadRequest
 
-Check the variables you are passing to your flow
+Check that the [base type](authoring-variables.md#variable-types) of any variables you are passing to the flow [match the parameter type](authoring-variables.md#use-variables-in-action-nodes).
 
 ### FlowActionServiceUnavailable
 
@@ -103,7 +104,7 @@ A system error occurred. Contact support for more details.
 ### TelephonyHandoffInvalidPhoneNumber
 
 <!-- FIXME: are telephony errors regarding the hand-off number, or the number provided by the user? -->
-The phone number provided to telephony is not valid. Check your [telephony configuration](publication-connect-bot-to-telephony.md].
+The phone number provided to telephony is not valid. Check your [telephony configuration](publication-connect-bot-to-telephony.md).
 
 ### TelephonyHandoffMissingPhoneNumber
 
