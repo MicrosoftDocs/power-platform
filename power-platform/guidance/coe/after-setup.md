@@ -176,15 +176,16 @@ Once you've removed unmanaged layers, you can import the new solution version:
 
 As with installing any update, testing prior to installation in a production environment increases the likelihood of success.
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > Testing is important as it provides you with an opportunity to try out new features and confirm bug fixes work as expected. Doing this in an isolated environment protects production versions.
+> 
 > Create a dedicated testing environment for CoE Starter Kit updates.
 
 Below are some recommendations:
 
 - Create a dedicated testing environment.
-- Test and Production environments should have the same versions of the CoE Starter Kit installed.
-- Test and Production environments should have the same customizations installed.
+- Test and production environments should have the same versions of the CoE Starter Kit installed.
+- Test and production environments should have the same customizations installed.
 - Document test patterns and expected outcomes. Make sure you've covered all possible combinations that might fail.
 
 Example test pattern:
@@ -196,15 +197,15 @@ Example test pattern:
 
 ### Testing with users
 
-When you've completed your functional tests, you should run final tests with users of the CoE Starter Kit.  This helps ensure that your update doesn't introduce unexpected results.
+When you've completed your functional tests, you should run final tests with users of the CoE Starter Kit. This helps ensure that your update doesn't introduce unexpected results.
 
 ### If you have an issue
 
-If you find a bug or an issue when testing you can [raise a bug here](https://github.com/microsoft/coe-starter-kit/issues/new?assignees=Jenefer-Monroe&labels=coe-starter-kit%2Cbug&template=1-coe-starter-kit-bug.yml&title=%5BCoE+Starter+Kit+-+BUG%5D+ISSUE+TITLE) ensuring to provide the [solution operation error](/powerapps/maker/data-platform/solution-history#view-solution-operation-error-details) details.
+If you find a bug or an issue when testing, you can [raise a bug here](https://github.com/microsoft/coe-starter-kit/issues/new?assignees=Jenefer-Monroe&labels=coe-starter-kit%2Cbug&template=1-coe-starter-kit-bug.yml&title=%5BCoE+Starter+Kit+-+BUG%5D+ISSUE+TITLE), ensuring to provide the [solution operation error](/powerapps/maker/data-platform/solution-history#view-solution-operation-error-details) details.
 
-## Application Lifecycle Management
+## Application lifecycle management
 
-This document doesn't go deep into application lifecycle management. If you're interested in recommendations and scenarios, review the [overview of application lifecycle management with Microsoft Power Platform](/power-platform/alm/overview-alm).  ALM covers many disciplines. This document touches lightly on the discipline of deploying solutions.
+This document doesn't go deep into application lifecycle management (ALM). If you're interested in recommendations and scenarios, review the [overview of application lifecycle management with Microsoft Power Platform](/power-platform/alm/overview-alm). ALM covers many disciplines. This document touches lightly on the discipline of deploying solutions.
 
 ### ALM Accelerator for Power Platform
 
@@ -214,6 +215,6 @@ The ALM Accelerator for Power Platform includes a canvas app that provides a sim
 
 ### Microsoft Power Platform Build Tools
 
-The [Microsoft Power Platform Build Tools for Azure DevOps Services](/power-platform/alm/devops-build-tools?msclkid=147921b0c15611ecbb1fdca93966d349) automate common build and deployment tasks. They can be used with any other Azure DevOps tasks to compose build and release pipelines
+The [Microsoft Power Platform Build Tools for Azure DevOps Services](/power-platform/alm/devops-build-tools?msclkid=147921b0c15611ecbb1fdca93966d349) automate common build and deployment tasks. They can be used with any other Azure DevOps tasks to compose build and release pipelines.
 
 [Download](https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.PowerPlatform-BuildTools&msclkid=d4b015ebc16e11ecb673fbfc869800f3) the tools, and refer to the [tasks documentation](/power-platform/alm/devops-build-tool-tasks) to get started.
