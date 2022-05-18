@@ -17,7 +17,7 @@ search.app:
   - Powerplatform
 ---
 
-<!-- questions from editor: Is it one release note per release, or more than one per release? (Sentence in line 44 said "a release notes".) Are "release" and "version" the same thing? If so, change line 30 to "release" so it's consistent with the rest of that list. -->
+<!-- questions from editor: Is it one release note per release, or more than one per release? (Sentence in line 44 said "a release notes".) Are "release" and "version" the same thing? If so, change line 30 to "release" so it's consistent with the rest of that list. I couldn't get to pages using links in the following lines: 149, 155, 163, 204. Please check to make sure the URLs are correct. -->
 
 
 
@@ -207,9 +207,9 @@ If you find a bug or an issue when testing, you can [raise a bug here](https://g
 
 This document doesn't go deep into application lifecycle management (ALM). If you're interested in recommendations and scenarios, review the [overview of application lifecycle management with Microsoft Power Platform](/power-platform/alm/overview-alm). ALM covers many disciplines. This document touches lightly on the discipline of deploying solutions.
 
-### ALM Accelerator for Power Platform
+### ALM accelerator for Power Platform
 
-The [ALM Accelerator for Power Platform](almacceleratorpowerplatform-components.md) is a reference implementation that sits on top of Azure Pipelines and Git source control.  
+The [ALM accelerator for Power Platform](almacceleratorpowerplatform-components.md) is a reference implementation that sits on top of Azure Pipelines and Git source control.  
 
 The ALM Accelerator for Power Platform includes a canvas app that provides a simplified interface for makers to regularly export components in solutions to source control, and create deployment requests.
 
