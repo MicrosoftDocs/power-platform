@@ -48,14 +48,13 @@ Errors may also appear in the [Topic Checker](authoring-topic-management.md#topi
 | [TelephonyHandoffInvalidPhoneNumber](#telephonyhandoffinvalidphonenumber) | The phone number '{0}' used in the transfer to agent activity is not a valid phone number format. Phone number should be in international format without dashes ex: +14251231234 |
 | [TelephonyHandoffMissingPhoneNumber](#telephonyhandoffmissingphonenumber) | The transfer to agent activity failed as the 'TargetPhoneNumber' property is missing from the context.                                                                           |
 
-
 ### ContentError
 
-[Check the topic for errors](authoring-topic-management.md#topic-errors).  
+There is an error in the topic content. Check that your [Power Fx formulas](advanced-power-fx.md) evaluate to a valid result.
 
 ### DialogNotFound
 
-FIXME: resolution steps here
+The topic you're trying to [redirect](authoring-create-edit-topics.md#go-to-another-topic) to no longer exists. [Create a new topic](authoring-create-edit-topics.md#create-a-topic) to redirect to or [remove the redirect node](authoring-create-edit-topics.md#delete-nodes).
 
 ### FlowActionException
 
@@ -67,7 +66,7 @@ Check that the [base type](authoring-variables.md#variable-types) of any variabl
 
 ### FlowActionServiceUnavailable
 
-FIXME: resolution steps here
+Power Automate is not responding, try again later. If the issue persists, contact customer support.
 
 ### InvalidDialogInterruption
 
@@ -79,7 +78,7 @@ Make sure the topic ends properly, or links to other topics that end properly, s
 
 ### InvalidContent
 
-[Check the topic for errors](authoring-topic-management.md#topic-errors).  
+Invalid YAML has been added with the code editor. [Open the code editor](authoring-create-edit-topics.md#edit-topics-with-the-code-editor) to review issues with the content.
 
 ### LatestPublishedVersionNotFound
 
@@ -95,7 +94,7 @@ The topic you're trying to [redirect](authoring-create-edit-topics.md#go-to-anot
 
 ### SystemError
 
-A system error occurred. Contact support for more details.  
+A system error occurred. Contact customer support for more details.  
 
 ### TelephonyHandoffInvalidPhoneNumber
 
