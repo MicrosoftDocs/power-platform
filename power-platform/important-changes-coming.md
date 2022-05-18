@@ -23,7 +23,7 @@ For deprecation information of other products, see [Other deprecation articles](
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability will continue to work and is fully supported until it is officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
 
 
-## Power Apps for Windows 8 will be deprecated and will be replaced with a new app for Windows
+## Power Apps for Windows 8 will be deprecated and replaced with a new app
 
 Effective September 2022, [Power Apps](https://apps.microsoft.com/store/detail/power-apps/9NBLGGH5Z8F3?hl) for Windows will be deprecated. Microsoft will continue to provide security and other critical updates for the app until Sept 20, 2022. We won't release any other features or functionalities for the app.
 
