@@ -76,7 +76,7 @@ Here are questions to consider when deciding your update frequency:
 
 - Does the new release **resolve an issue** that you currently have?
 - Does the new release **contain a new feature** that you would like to try out?
-- Was your current version installed more than three months ago?
+- Was your current version installed **more than three months** ago?
 
 With the fast pace of change for Microsoft Power Platform, leaving updates longer than three months could result in unexpected issues when you do update.
 
@@ -85,7 +85,7 @@ With the fast pace of change for Microsoft Power Platform, leaving updates longe
 
 ## Installing updates
 
-Below are step-by-step instructions to install the latest version of the CoE Starter Kit:
+Below are step-by-step instructions on how to install the latest version of the CoE Starter Kit.
 
 ### Download the latest solution file
 
@@ -100,7 +100,7 @@ Download the latest version of the CoE Starter Kit compressed file ([aka.ms/CoeS
 
 Before installing the upgrade, check that the solution is in a healthy state to receive the new updates.
 
-Making any changes to flows or apps in the solution creates an unmanaged layer. Components with unmanaged layers won't receive updates until you remove that unmanaged layer. Learn more: [Understanding solution layers](/power-platform/alm/solution-layers-alm)
+Making any changes to flows or apps in the solution creates an unmanaged layer. Components with unmanaged layers won't receive updates until you remove that unmanaged layer. Learn more: [Solution layers](/power-platform/alm/solution-layers-alm)
 
 All flows with *Admin \| Sync Template v* in the name are responsible for collecting your tenant's inventory and building the foundation that the CoE Starter Kit relies on. These flows should not be customized. If you have additional requirements on what inventory to collect, raise a [feature ask](https://github.com/microsoft/coe-starter-kit/issues/new?assignees=&labels=coe-starter-kit%2Cenhancement&template=3-coe-starter-kit-feature.yml&title=%5BCoE+Starter+Kit+-+Feature%5D%3A+FEATURE+TITLE) or create your own flow. Learn more: [Extending the CoE Starter Kit](modify-components.md)
 
@@ -112,7 +112,7 @@ Your first check before installing the upgrade is removing unmanaged layers from
 You can check for unmanaged layers on the inventory flows using the [Admin - Command Center](core-components.md#admin---command-center) app.
 
 >[!NOTE]
->The [feature described below](https://github.com/microsoft/coe-starter-kit/issues/2108) was made available with the April 2022 release of the CoE Starter Kit, and requires the April or [later release]((https://github.com/microsoft/coe-starter-kit/releases)) to be installed.
+>The [feature described below](https://github.com/microsoft/coe-starter-kit/issues/2108) was made available with the April 2022 release of the CoE Starter Kit, and requires the April or [later release](https://github.com/microsoft/coe-starter-kit/releases) to be installed.
 
 1. Open the **Admin - Command Center** app from your CoE environment.
 1. Select **Sync flows** from the navigation.
