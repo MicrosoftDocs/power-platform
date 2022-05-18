@@ -132,7 +132,7 @@ Any cloud flow or canvas app that you've changed won't receive updates until you
  
 1. If you don't want to keep your changes, remove all unmanaged layers prior to the update. A good indication that a component has been changed is if the modified date is more recent than the latest install. Read our recommendations for [extending the CoE Starter Kit](modify-components.md) to avoid creating unmanaged layers.
    
-   1. Select **...** > **See solution layers**.
+   1. Select the ellipsis (**...**) > **See solution layers**.
         
       ![See solution layers](/power-platform/guidance/coe/media/upgrade1.png "See solution layers")
         
@@ -142,23 +142,35 @@ Any cloud flow or canvas app that you've changed won't receive updates until you
 
 ## Importing the new solution version
 
-Once you have removed unmanaged layers, you can import the new solution version:
+Once you've removed unmanaged layers, you can import the new solution version:
 
 1. [Import the solution](faq.md#installing-a-solution-in-a-production-environment).
+ 
 1. Select **Upgrade** (default setting). [Solution upgrades](/alm/solution-concepts-alm#solution-lifecycle) will delete components that existed but are no longer included in the upgraded version.
-    ![Select upgrade to install the new solution version](media/coe-upgrade1.png "Select upgrade to install the new solution version")
-1. If the upgrade adds new environment variables or connection references, establish connections and update environment variable values. You will find the expected values in our [setup instructions](setup-core-components.md).
-1. Wait for the Upgrade to finish. This can take up to 15 mins. During the upgrade, the new version is installed first and then the old version is deleted. Whilst the upgrade is processing, you may see two solutions with the same name in your solution explorer. Check the [solution history](/powerapps/maker/data-platform/solution-history#view-solution-history) to view the progress of the upgrade.
-    ![Check the solution history](/power-platform/guidance/coe/media/coe-upgrade3.png "Check the solution history")
+ 
+   ![Select upgrade to install the new solution version](media/coe-upgrade1.png "Select upgrade to install the new solution version")
+    
+1. If the upgrade adds new environment variables or connection references, establish connections and update environment variable values. You'll find the expected values in our [setup instructions](setup-core-components.md).
+ 
+1. Wait for the upgrade to finish. This can take up to 15 minutes. During the upgrade, the new version is installed first and then the old version is deleted. While the upgrade is processing, you may see two solutions with the same name in your solution explorer. Check the [solution history](/powerapps/maker/data-platform/solution-history#view-solution-history) to view the progress of the upgrade.
+ 
+   ![Check the solution history](/power-platform/guidance/coe/media/coe-upgrade3.png "Check the solution history")
+    
 1. The upgrade will be complete when the end time is no longer empty.
-    ![Check the end time for the solution import is not empty.](/power-platform/guidance/coe/media/coe-upgrade2.png "Check the end time for the solution import is not empty.")
+ 
+   ![Check that the end time for the solution import is not empty](/power-platform/guidance/coe/media/coe-upgrade2.png "Check that the end time for the solution import is not empty")
+    
 1. The [solution history](/powerapps/maker/data-platform/solution-history#view-solution-history) will also show you if the upgrade has failed and why. [Raise an issue](https://aka.ms/coe-starter-kit-issues) and [provide the solution operation error details](/powerapps/maker/data-platform/solution-history#view-solution-operation-error-details).
-    ![View solution operation error details](/en-us/power-platform/guidance/coe/media/coe-upgrade4.png)
-1. Make sure to check the setup instructions of the solution you're upgrading to see if any new steps are necessary to use the solution and it's new features.
-    1. [Setup core components](/en-us/power-platform/guidance/coe/setup-core-components)
-    1. [Setup governance components](/en-us/power-platform/guidance/coe/before-setup-gov)
-    1. [Setup nurture components](/en-us/power-platform/guidance/coe/setup-nurture-components)
-1. When the upgrade has completed processing, move onto [testing](#testing-strategy).
+ 
+   ![View solution operation error details](/power-platform/guidance/coe/media/coe-upgrade4.png "View solution operation error details")
+    
+1. Make sure to check the setup instructions of the solution you're upgrading to see if any new steps are necessary to use the solution and its new features.
+ 
+   1. [Set up core components](/power-platform/guidance/coe/setup-core-components)
+   1. [Set up governance components](/power-platform/guidance/coe/before-setup-gov)
+   1. [Set up nurture components](/power-platform/guidance/coe/setup-nurture-components)
+
+1. When the upgrade has completed processing, move on to [testing](#testing-strategy).
 
 ## Testing strategy
 
