@@ -117,7 +117,7 @@ You'll also need to provide the following information:
    1. Create users in Microsoft 365/Azure AD.
    2. Assign licenses.
 5. Once the users are created and enabled, the mapping file will need to be generated following the steps <a href="#steps-to-create-the-mapping-file">described later in this topic</a>.
-6. If there are any solutions for Power Apps or Power Automate flows, these need to be exported from the [Power Apps maker portal](https://make.powerapps.com) and imported again into the new environment after the migration.
+6. If there are any solutions for Power Apps or Power Automate flows, these need to be exported from [Power Apps](https://make.powerapps.com) and imported again into the new environment after the migration.
 
 ### Confirm if any of the solutions below are installed in the environments to be migrated, as these may require additional steps either from you or Support:
  
