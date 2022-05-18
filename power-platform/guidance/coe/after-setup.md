@@ -118,22 +118,27 @@ You can check for unmanaged layers on the inventory flows using the [Admin - Com
 1. Select **Sync flows** from the navigation.
 1. Check if any of the flows show the layer icon, indicating they have unmanaged layers
  
-   ![Detect unmanaged layers on flows in the Admin Command Center app](media/coe-upgrade6.png "Detect unmanaged layers on flows in the Admin Command Center app")
+   ![Screenshot showing the layer icon in the Admin Command Center app](media/coe-upgrade6.png "Detect unmanaged layers on flows in the Admin Command Center app")
     
 1. Select the layer icon to go to the solution layer page of the flow and remove the unmanaged layer.
  
-   ![Remove unmanaged layers](media/upgrade2.png "Remove unmanaged layers")
+   ![Screenshot showing the Remove unmanaged layer action](media/upgrade2.png "Remove unmanaged layers")
 
 ### Removing other customizations
 
 Any cloud flow or canvas app that you've changed won't receive updates until you remove the unmanaged layer.
 
-1. If you want to keep your changes, learn more about how to [extend the CoE Starter Kit](modify-components.md)
-1. If you don't want to keep your changes, remove all unmanaged layers prior to update. A good indication that a component has been changed is if the modified date is more recent than the latest install. Read our recommendations for [extending the CoE Starter Kit](modify-components.md) to avoid creating unmanaged layers.
-    1. Select **...** > **See solution layers**.
-        ![See solution layers](/power-platform/guidance/coe/media/upgrade1.png)
-    1. Select **Remove unmanaged layer**
-        ![Remove unmanaged solution layer](/power-platform/guidance/coe/media/upgrade2.png)
+1. If you want to keep your changes, learn more about how to [extend the CoE Starter Kit](modify-components.md).
+ 
+1. If you don't want to keep your changes, remove all unmanaged layers prior to the update. A good indication that a component has been changed is if the modified date is more recent than the latest install. Read our recommendations for [extending the CoE Starter Kit](modify-components.md) to avoid creating unmanaged layers.
+   
+   1. Select **...** > **See solution layers**.
+        
+      ![See solution layers](/power-platform/guidance/coe/media/upgrade1.png "See solution layers")
+        
+   1. Select **Remove unmanaged layer**.
+        
+      ![Remove unmanaged solution layer](/power-platform/guidance/coe/media/upgrade2.png "Remove unmanaged solution layer")
 
 ## Importing the new solution version
 
