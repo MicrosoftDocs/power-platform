@@ -31,26 +31,29 @@ Errors may also appear in the [Topic Checker](authoring-topic-management.md#topi
 
 <!-- FIXME: add other messages when found -->
 <!-- table best viewed and edited without wordwrap -->
-| Error                                                                     | Bot Message                                                                                                                                                                      |
-| ------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [ContentError](#contenterror)                                             |                                                                                                                                                                                  |
-| [DialogNotFound](#dialognotfound)                                         | The Dialog with Id `{0} was not found in the definition. Please check that the Dialog is present and that the Id is correct.                                                     |
-| [FlowActionException](#flowactionexception)                               |                                                                                                                                                                                  |
-| [FlowActionBadRequest](#flowactionbadrequest)                             |                                                                                                                                                                                  |
-| [FlowActionServiceUnavailable](#flowactionserviceunavailable)             |                                                                                                                                                                                  |
-| [InvalidDialogInterruption](#invaliddialoginterruption)                   | Received async response while the dialog is not waiting for an async response. Dialog: {0}, TriggerId: {1}, ActionId: {2}.                                                       |
-| [InfiniteLoopInBotContent](#infiniteloopinbotcontent)                     | Action {0}.{1}.{2} was executed more than {3} times in a row. This indicates a cycle in execution of the dialog and hence dialog execution will be terminated.                   |
-| [InvalidContent](#invalidcontent)                                         |                                                                                                                                                                                  |
-| [LatestPublishedVersionNotFound](#latestpublishedversionnotfound)         |                                                                                                                                                                                  |
-| [RedirectToDisabledDialog](#redirecttodisableddialog)                     | The Dialog with Id {0} is disabled in the definition. Please Enable the Dialog before using it.                                                                                  |
-| [RedirectToNonExistentDialog](#redirecttononexistentdialog)               | The Dialog with Id {0} was not found in the definition. Please check that the Dialog is present and that the Id is correct.                                                      |
-| [SystemError](#systemerror)                                               |                                                                                                                                                                                  |
-| [TelephonyHandoffInvalidPhoneNumber](#telephonyhandoffinvalidphonenumber) | The phone number '{0}' used in the transfer to agent activity is not a valid phone number format. Phone number should be in international format without dashes ex: +14251231234 |
-| [TelephonyHandoffMissingPhoneNumber](#telephonyhandoffmissingphonenumber) | The transfer to agent activity failed as the 'TargetPhoneNumber' property is missing from the context.                                                                           |
+| Error                                                                     | Bot Message                                                                                                                                                                                                                 |
+| ------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [ContentError](#contenterror)                                             |                                                                                                                                                                                                                             |
+| [CorruptOrMissingV2ContentInBot](#corruptormissingv2contentinbot)         | A total of {TotalComponents} component(s) exist in the bot, but none are valid.                                                                                                                                             |
+| [DialogNotFound](#dialognotfound)                                         | The Dialog with Id {0} was not found in the definition. Please check that the Dialog is present and that the Id is correct.                                                                                                 |
+| [FlowActionException](#flowactionexception)                               | No output was received from flow {FlowName} ({FlowId}), even though output was expected as per the bot definition.                                                                                                          |
+| [FlowActionBadRequest](#flowactionbadrequest)                             | The parameter with name {KeyName} on flow {FlowName} ({FlowId}) is declared to be of type {ItemTypeKind}. This type is not supported when invoking Power Automate. Currently, only Text, Boolean and Numbers are supported. |
+| [InvalidDialogInterruption](#invaliddialoginterruption)                   | Received async response while the dialog is not waiting for an async response. Dialog: {0}, TriggerId: {1}, ActionId: {2}.                                                                                                  |
+| [InfiniteLoopInBotContent](#infiniteloopinbotcontent)                     | Action {0}.{1}.{2} was executed more than {3} times in a row. This indicates a cycle in execution of the dialog and hence dialog execution will be terminated.                                                              |
+| [InvalidContent](#invalidcontent)                                         |                                                                                                                                                                                                                             |
+| [LatestPublishedVersionNotFound](#latestpublishedversionnotfound)         | Unable to retrieve the latest published version of the bot.                                                                                                                                                                 |
+| [RedirectToDisabledDialog](#redirecttodisableddialog)                     | The Dialog with Id {0} is disabled in the definition. Please Enable the Dialog before using it.                                                                                                                             |
+| [RedirectToNonExistentDialog](#redirecttononexistentdialog)               | The Dialog with Id {0} was not found in the definition. Please check that the Dialog is present and that the Id is correct.                                                                                                 |
+| [TelephonyHandoffInvalidPhoneNumber](#telephonyhandoffinvalidphonenumber) | The phone number '{0}' used in the transfer to agent activity is not a valid phone number format. Phone number should be in international format without dashes ex: +14251231234.                                           |
+| [TelephonyHandoffMissingPhoneNumber](#telephonyhandoffmissingphonenumber) | The transfer to agent activity failed as the 'TargetPhoneNumber' property is missing from the context.                                                                                                                      |
 
 ### ContentError
 
 There is an error in the topic content. Check that your [Power Fx formulas](advanced-power-fx.md) evaluate to a valid result.
+
+### CorruptOrMissingV2ContentInBot
+
+FIXME: add resolution steps
 
 ### DialogNotFound
 
@@ -58,15 +61,22 @@ The topic you're trying to [redirect](authoring-create-edit-topics.md#go-to-anot
 
 ### FlowActionException
 
-[Check the flow for errors](/power-automate/error-checker).
+There is a problem with your flow, [check the flow for errors](/power-automate/error-checker).
+
+You may also see this error with the following messages:
+
+- The output parameter with name {ItemKey} on flow {FlowName} ({FlowId}) is missing from the response data. Please refresh the flow, or ensure the flow returns this value.
+- The output parameter with name {ItemKey} on flow {FlowName} ({FlowId}) is missing from the output schema. Please refresh the flow.
 
 ### FlowActionBadRequest
 
 Check that the [base type](authoring-variables.md#variable-types) of any variables you are passing to the flow [match the parameter type](authoring-variables.md#use-variables-in-action-nodes).
 
-### FlowActionServiceUnavailable
+You may also see this error with the following messages:
 
-Power Automate is not responding, try again later. If the issue persists, contact customer support.
+- The parameter with name {ItemKey} on flow {FlowName} ({FlowId}) is missing in the "Call Flow" action.
+- The parameter with name {KeyName} on flow {FlowName} ({FlowId}) evaluated to type {ResolveType}, expected type {ExpectedType}.
+- The flow {FlowName} ({FlowId}) failed to run with response code {ResponseCode}, error code: {FlowErrorCode}.
 
 ### InvalidDialogInterruption
 
