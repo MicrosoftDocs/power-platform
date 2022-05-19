@@ -242,7 +242,7 @@ The existing Microsoft Power Platform functionality available for use in Microso
 
 ### Is there any new capability coming with Dataverse for Teams to Power Automate rights included with Microsoft 365?
 
-Yes. With Dataverse for Teams, users now can build flows using Power Automate maker portal and that operate in a Dataverse for Teams environment. Please note that a Dataverse for Teams environment needs to be created first by either authoring an app or chatbot.
+Yes. With Dataverse for Teams, users now can build flows using Power Automate portal and that operate in a Dataverse for Teams environment. Please note that a Dataverse for Teams environment needs to be created first by either authoring an app or chatbot.
 
 ### Which Microsoft 365 subscriptions include Dataverse for Teams and Power Virtual Agents capabilities with Teams?
 
