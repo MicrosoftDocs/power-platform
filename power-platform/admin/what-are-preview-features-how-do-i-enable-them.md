@@ -25,7 +25,7 @@ Preview features are features that aren't complete, but are made available on a 
   
 - Are subject to separate [Supplemental Terms of Use](/dynamics365/legal/supp-dynamics365-preview).  
   
-- **Are not supported by [!INCLUDE[pn_Microsoft_Support](../includes/pn-microsoft-support.md)]**.  
+- Are not supported by [!INCLUDE[pn_Microsoft_Support](../includes/pn-microsoft-support.md)] for production use. Microsoft Support is, however, eager to get your feedback on the preview functionality, and may provide best effort support in certain cases. 
   
 - May have limited or restricted functionality.  
   
