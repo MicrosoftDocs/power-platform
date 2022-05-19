@@ -40,17 +40,17 @@ Not following best practices when extending the CoE Starter Kit can lead to unin
 
 ## What components can I customize?
 
-Before explaining how to extend the CoE Starter Kit, here's some guidance on what components we recommend and don't recommend extending:
+Before we explain how to extend the CoE Starter Kit, here's some guidance on what components we do and don't recommend extending:
 
-- Tables and model-driven apps support merging, these resources can easily be extending by creating your own unmanaged solution and making changes (for example, adding new fields) there. During an upgrade, you will receive both our changes and keep your changes.
-- Canvas apps and cloud flows do not support merging, these resources can only be extended and customized by creating a copy in your own unmanaged solution. During an upgrade, you will no longer receive our changes - which should be a deliberate choice in order to customize a process and make it fit to your organization.
-- Cloud flows that are responsible for [gathering inventory](core-components.md#flows) should not be customized. These flows are frequently updated to fix bugs, gather additional data or improve performance. If you have additional requirements for what to inventory to gather, raise a [feature ask](https://github.com/microsoft/coe-starter-kit/issues) or create separate flows for your requirements.
+- Tables and model-driven apps support merging. These resources can easily be extended by creating your own unmanaged solution and making changes there (for example, adding new fields). During an upgrade, you'll receive our changes and also keep your changes.
+- Canvas apps and cloud flows do not support merging. These resources can only be extended and customized by creating a copy in your own unmanaged solution. During an upgrade, you'll no longer receive our changes, which should be a deliberate choice in order to customize a process and make it fit to your organization.
+- Cloud flows that are responsible for [gathering inventory](core-components.md#flows) should not be customized. These flows are frequently updated to fix bugs, gather additional data, or improve performance. If you have additional requirements for what inventory to gather, raise a [feature ask](https://github.com/microsoft/coe-starter-kit/issues) or create separate flows for your requirements.
 
 ## What's the mechanism to extend the CoE Starter Kit?
 
-The CoE Starter Kit is composed of components made by using the capabilities of the Power Platform, therefore it can be extended by using the Power Platform itself. The following article gives guidelines on how to properly customize and deploy your customizations.
+The CoE Starter Kit is composed of components made by using the capabilities of Microsoft Power Platform. It can be extended by using Power Platform itself. The following article gives guidelines on how to properly customize and deploy your customizations.
 
-The CoE Starter Kit is made available as [managed solutions](/power-platform/alm/solution-concepts-alm#managed-and-unmanaged-solutions). Any new components or customizations must be included in an unmanaged solutions so you can keep track of your changes and deploy them to other environments.
+The CoE Starter Kit is made available as [managed solutions](/power-platform/alm/solution-concepts-alm#managed-and-unmanaged-solutions). Any new components or customizations must be included in an unmanaged solution so you can keep track of your changes and deploy them to other environments.
 
 Learn more about solutions:
 
@@ -60,12 +60,16 @@ Learn more about solutions:
 - [Use a solution to customize](/power-platform/alm/use-solutions-for-your-customizations)
 - [Manage solutions in Power Apps and Power Automate](https://docs.microsoft.com/learn/modules/manage-solutions-power-automate)
 
-If you plan on making customizations to a large number of CoE Starter Kit components, use multiple unmanaged solutions to organize your extensions better and reduce the size of each solution. Lighter solutions reduce deployment time. Learn more: [Organize solutions](/power-platform/alm/organize-solutions).
+If you plan to make customizations to a large number of CoE Starter Kit components, use multiple unmanaged solutions to organize your extensions better and reduce the size of each solution. Lighter solutions reduce deployment time. Learn more: [Organize solutions](/power-platform/alm/organize-solutions)
 
  >[!IMPORTANT]
- >Any extensions or customizations to the CoE Starter Kit components should be made in a **non production environment** before being deployed to your production environment as managed.
+ >Any extensions or customizations to the CoE Starter Kit components should be made in a **nonproduction environment** before being deployed to your production environment as managed.
 
 ## Creating a new solution
+
+
+<!-- editing starts here -->
+
 
 1. To create a new unmanaged solution:
     1. Go to [make.powerapps.com](<https://make.powerapps.com>).
