@@ -80,9 +80,10 @@ Identify which type of Email Server Profile is being used:
   
      - https://outlook.office365.com/EWS/Exchange.asmx 
      - outlook.office365.com 
-     - smtp.office365.com
 
-    Use the steps provided [here](connect-exchange-online.md) to create a new Exchange Online profile and update the mailboxes to use the new profile. Begin by testing one mailbox with the new profile before attempting to switch all mailboxes.  
+    If the mailboxes for this profile are hosted in Exchange Online, use the steps provided [here](connect-exchange-online.md) to create a new Exchange Online profile and update the mailboxes to use the new profile. Begin by testing one mailbox with the new profile before attempting to switch all mailboxes.   
+    
+    - If you have a profile with the **Email Server Type Name** value of **Exchange Server (Hybrid)** and the **Auto Discover Server Location** value is set to Yes, you need to verify if any mailboxes associated to this profile are mailboxes that are hosted in Exchange Online. This is not something you can identify based on data available in Dynamics 365. If any mailboxes are hosted in Exchange Online, they need to be configured with one of the Exchange Online profile options documented [here](connect-exchange-online.md). 
 
    **Dynamics 365 on-premises**
    - If you only see a row with the **Email Server Type Name** value of **Exchange Online (Hybrid)**, you're using the correct profile type which uses server-to-server (S2S) authentication instead of username/password.
@@ -93,7 +94,6 @@ Identify which type of Email Server Profile is being used:
 
      - https://outlook.office365.com/EWS/Exchange.asmx 
      - outlook.office365.com 
-     - smtp.office365.com
 
    Use the steps provided [here](/dynamics365/customerengagement/on-premises/admin/connect-dynamics-365-on-premises-exchange-online?view=op-9-1) to create a new **Exchange Online (Hybrid)** profile and update the mailboxes to use the new profile. Begin by testing one mailbox with the new profile before attempting to switch all mailboxes. If you don't see the option for this type of profile, refer to the FAQ section which discusses the version requirement. 
 
