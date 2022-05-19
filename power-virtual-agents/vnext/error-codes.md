@@ -14,7 +14,7 @@ manager: shellyha
 
 When a bot encounters a problem during a conversation, it will respond with an error message.
 
-If you're a bot user, the error message will contain an error code for the specific problem that was encountered.
+If you're a bot user, the error message will contain an error code for the specific problem that was encountered which should be given to your administrator.
 
 :::image type="content" source="media/error-codes/c2-error.png" alt-text="Bot error message displayed to users.":::
 
