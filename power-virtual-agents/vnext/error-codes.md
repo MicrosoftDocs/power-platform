@@ -29,88 +29,98 @@ Errors may also appear in the [Topic Checker](authoring-topic-management.md#topi
 > [!IMPORTANT]
 > The term _dialog_ is used in some error messages when it is referring to a _topic_.
 
-<!-- FIXME: add other messages when found -->
-<!-- table best viewed and edited without wordwrap -->
-| Error                                                                     | Bot Message                                                                                                                                                                                                                 |
-| ------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [ContentError](#contenterror)                                             |                                                                                                                                                                                                                             |
-| [CorruptOrMissingV2ContentInBot](#corruptormissingv2contentinbot)         | A total of {TotalComponents} component(s) exist in the bot, but none are valid.                                                                                                                                             |
-| [DialogNotFound](#dialognotfound)                                         | The Dialog with Id {0} was not found in the definition. Please check that the Dialog is present and that the Id is correct.                                                                                                 |
-| [FlowActionException](#flowactionexception)                               | No output was received from flow {FlowName} ({FlowId}), even though output was expected as per the bot definition.                                                                                                          |
-| [FlowActionBadRequest](#flowactionbadrequest)                             | The parameter with name {KeyName} on flow {FlowName} ({FlowId}) is declared to be of type {ItemTypeKind}. This type is not supported when invoking Power Automate. Currently, only Text, Boolean and Numbers are supported. |
-| [InvalidDialogInterruption](#invaliddialoginterruption)                   | Received async response while the dialog is not waiting for an async response. Dialog: {0}, TriggerId: {1}, ActionId: {2}.                                                                                                  |
-| [InfiniteLoopInBotContent](#infiniteloopinbotcontent)                     | Action {0}.{1}.{2} was executed more than {3} times in a row. This indicates a cycle in execution of the dialog and hence dialog execution will be terminated.                                                              |
-| [InvalidContent](#invalidcontent)                                         |                                                                                                                                                                                                                             |
-| [LatestPublishedVersionNotFound](#latestpublishedversionnotfound)         | Unable to retrieve the latest published version of the bot.                                                                                                                                                                 |
-| [RedirectToDisabledDialog](#redirecttodisableddialog)                     | The Dialog with Id {0} is disabled in the definition. Please Enable the Dialog before using it.                                                                                                                             |
-| [RedirectToNonExistentDialog](#redirecttononexistentdialog)               | The Dialog with Id {0} was not found in the definition. Please check that the Dialog is present and that the Id is correct.                                                                                                 |
-| [TelephonyHandoffInvalidPhoneNumber](#telephonyhandoffinvalidphonenumber) | The phone number '{0}' used in the transfer to agent activity is not a valid phone number format. Phone number should be in international format without dashes ex: +14251231234.                                           |
-| [TelephonyHandoffMissingPhoneNumber](#telephonyhandoffmissingphonenumber) | The transfer to agent activity failed as the 'TargetPhoneNumber' property is missing from the context.                                                                                                                      |
+<!-- table best viewed and edited without word wrap -->
+| Error                                                                     | Description                                                                         |
+| ------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| [CorruptOrMissingV2ContentInBot](#corruptormissingv2contentinbot)         |                                                                                     |
+| [DialogNotFound](#dialognotfound)                                         | A topic you're trying to [redirect][1] to no longer exists.                         |
+| [FlowActionException](#flowactionexception)                               | An error occurred while executing the your [flow][2].                               |
+| [FlowActionBadRequest](#flowactionbadrequest)                             | A request made to your [flow][2] was malformed.                                     |
+| [InvalidDialogInterruption](#invaliddialoginterruption)                   | A topic received an async response from a [flow][2].                                |
+| [InfiniteLoopInBotContent](#infiniteloopinbotcontent)                     | A topic was aborted because an action was executed more than maximum allowed times. |
+| [LatestPublishedVersionNotFound](#latestpublishedversionnotfound)         | Unable to retrieve the published version of the bot.                                |
+| [RedirectToDisabledDialog](#redirecttodisableddialog)                     | A topic is [redirecting][1] to another topic that has been turned off.              |
+| [RedirectToNonExistentDialog](#redirecttononexistentdialog)               | A topic you're trying to [redirect][1] to no longer exists.                         |
+| [TelephonyHandoffInvalidPhoneNumber](#telephonyhandoffinvalidphonenumber) | The phone number provided to [telephony][4] is not valid.                           |
+| [TelephonyHandoffMissingPhoneNumber](#telephonyhandoffmissingphonenumber) | A phone number has not been set for [telephony][4].                                 |
 
-### ContentError
-
-There is an error in the topic content. Check that your [Power Fx formulas](advanced-power-fx.md) evaluate to a valid result.
+[1]: authoring-create-edit-topics.md#go-to-another-topic
+[2]: advanced-flow.md
+[3]: authoring-create-edit-topics.md#edit-topics-with-the-code-editor
+[4]: publication-connect-bot-to-telephony.md
 
 ### CorruptOrMissingV2ContentInBot
 
 FIXME: add resolution steps
 
+When this error occurs, you'll see the following message from your bot: "A total of {TotalComponents} component(s) exist in the bot, but none are valid."
+
 ### DialogNotFound
 
-The topic you're trying to [redirect](authoring-create-edit-topics.md#go-to-another-topic) to no longer exists. [Create a new topic](authoring-create-edit-topics.md#create-a-topic) to redirect to or [remove the redirect node](authoring-create-edit-topics.md#delete-nodes).
+[Create a new topic](authoring-create-edit-topics.md#create-a-topic) to redirect to or [remove the redirect node](authoring-create-edit-topics.md#delete-nodes).
+
+When this error occurs, you'll see the following message from your bot: "The Dialog with Id {DialogId} was not found in the definition. Please check that the Dialog is present and that the Id is correct."
 
 ### FlowActionException
 
-There is a problem with your flow, [check the flow for errors](/power-automate/error-checker).
+[Check the flow for errors](/power-automate/error-checker).
 
-You may also see this error with the following messages:
+When this error occurs, you'll see one of the following messages from your bot:
 
-- The output parameter with name {ItemKey} on flow {FlowName} ({FlowId}) is missing from the response data. Please refresh the flow, or ensure the flow returns this value.
-- The output parameter with name {ItemKey} on flow {FlowName} ({FlowId}) is missing from the output schema. Please refresh the flow.
+- "No output was received from flow {FlowName} ({FlowId}), even though output was expected as per the bot definition."
+- "The output parameter with name {ItemKey} on flow {FlowName} ({FlowId}) is missing from the response data. Please refresh the flow, or ensure the flow returns this value."
+- "The output parameter with name {ItemKey} on flow {FlowName} ({FlowId}) is missing from the output schema. Please refresh the flow."
 
 ### FlowActionBadRequest
 
 Check that the [base type](authoring-variables.md#variable-types) of any variables you are passing to the flow [match the parameter type](authoring-variables.md#use-variables-in-action-nodes).
 
-You may also see this error with the following messages:
+When this error occurs, you'll see one of the following messages from your bot:
 
-- The parameter with name {ItemKey} on flow {FlowName} ({FlowId}) is missing in the "Call Flow" action.
-- The parameter with name {KeyName} on flow {FlowName} ({FlowId}) evaluated to type {ResolveType}, expected type {ExpectedType}.
-- The flow {FlowName} ({FlowId}) failed to run with response code {ResponseCode}, error code: {FlowErrorCode}.
+- "The parameter with name {KeyName} on flow {FlowName} ({FlowId}) is declared to be of type {ItemTypeKind}. This type is not supported when invoking Power Automate. Currently, only Text, Boolean and Numbers are supported."
+- "The parameter with name {ItemKey} on flow {FlowName} ({FlowId}) is missing in the 'Call Flow' action."
+- "The parameter with name {KeyName} on flow {FlowName} ({FlowId}) evaluated to type {ResolveType}, expected type {ExpectedType}."
+- "The flow {FlowName} ({FlowId}) failed to run with response code {ResponseCode}, error code: {FlowErrorCode}."
 
 ### InvalidDialogInterruption
 
 Asynchronous responses from flows are not supported and [must be disabled](advanced-flow.md#disable-asynchronous-responses-from-flows).
 
+When this error occurs, you'll see the following message from your bot: "Received async response while the dialog is not waiting for an async response. Dialog: {DialogId}, TriggerId: {TriggerId}, ActionId: {ActionId}."
+
 ### InfiniteLoopInBotContent
 
 Make sure the topic ends properly, or links to other topics that end properly, such as the **Escalate** system topic.
 
-### InvalidContent
-
-Invalid YAML has been added with the code editor. [Open the code editor](authoring-create-edit-topics.md#edit-topics-with-the-code-editor) to review issues with the content.
+When this error occurs, you'll see the following message from your bot: "Action {DialogId}.{TriggerId}.{ActionId} was executed more than {MaxTurnCount} times in a row. This indicates a cycle in execution of the dialog and hence dialog execution will be terminated."
 
 ### LatestPublishedVersionNotFound
 
 To use this bot, [publish it in Power Virtual Agents](publication-fundamentals-publish-channels.md).  
 
+When this error occurs, you'll see the following message from your bot: "Unable to retrieve the latest published version of the bot."
+
 ### RedirectToDisabledDialog
 
-Your topic is [redirecting](authoring-create-edit-topics.md#go-to-another-topic) to another topic that has been turned off. [Re-enabled the topic](authoring-topic-management.md#topic-status) or [remove the redirect node](authoring-create-edit-topics.md#delete-nodes).  
+[Re-enabled the topic](authoring-topic-management.md#topic-status) or [remove the redirect node](authoring-create-edit-topics.md#delete-nodes).  
+
+When this error occurs, you'll see the following message from your bot: "The Dialog with Id {DialogId} is disabled in the definition. Please Enable the Dialog before using it."
 
 ### RedirectToNonExistentDialog
 
-The topic you're trying to [redirect](authoring-create-edit-topics.md#go-to-another-topic) to no longer exists. [Create a new topic](authoring-create-edit-topics.md#create-a-topic) to redirect to or [remove the redirect node](authoring-create-edit-topics.md#delete-nodes).
+[Create a new topic](authoring-create-edit-topics.md#create-a-topic) to redirect to or [remove the redirect node](authoring-create-edit-topics.md#delete-nodes).
 
-### SystemError
-
-A system error occurred. Contact customer support for more details.  
+When this error occurs, you'll see the following message from your bot: "The Dialog with Id {DialogId} was not found in the definition. Please check that the Dialog is present and that the Id is correct."
 
 ### TelephonyHandoffInvalidPhoneNumber
 
 <!-- FIXME: are telephony errors regarding the hand-off number, or the number provided by the user? -->
-The phone number provided to telephony is not valid. Check your [telephony configuration](publication-connect-bot-to-telephony.md).
+Check your [telephony configuration](publication-connect-bot-to-telephony.md) and ensure the phone number is in an international format. For example, `+14251231234`.
+
+When this error occurs, you'll see the following message from your bot: "The phone number {PhoneNumber} used in the transfer to agent activity is not a valid phone number format. Phone number should be in international format without dashes ex: +14251231234."
 
 ### TelephonyHandoffMissingPhoneNumber
 
 FIXME: resolution steps here
+
+When this error occurs, you'll see the following message from your bot: "The transfer to agent activity failed as the 'TargetPhoneNumber' property is missing from the context."
