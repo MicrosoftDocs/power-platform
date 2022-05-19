@@ -30,19 +30,19 @@ Errors may also appear in the [Topic Checker](authoring-topic-management.md#topi
 > The term _dialog_ is used in some error messages when it is referring to a _topic_.
 
 <!-- table best viewed and edited without word wrap -->
-| Error                                                                     | Description                                                                         |
-| ------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
-| [CorruptOrMissingV2ContentInBot](#corruptormissingv2contentinbot)         |                                                                                     |
-| [DialogNotFound](#dialognotfound)                                         | A topic you're trying to [redirect][1] to no longer exists.                         |
-| [FlowActionException](#flowactionexception)                               | An error occurred while executing the your [flow][2].                               |
-| [FlowActionBadRequest](#flowactionbadrequest)                             | A request made to your [flow][2] was malformed.                                     |
-| [InvalidDialogInterruption](#invaliddialoginterruption)                   | A topic received an async response from a [flow][2].                                |
-| [InfiniteLoopInBotContent](#infiniteloopinbotcontent)                     | A topic was aborted because an action was executed more than maximum allowed times. |
-| [LatestPublishedVersionNotFound](#latestpublishedversionnotfound)         | Unable to retrieve the published version of the bot.                                |
-| [RedirectToDisabledDialog](#redirecttodisableddialog)                     | A topic is [redirecting][1] to another topic that has been turned off.              |
-| [RedirectToNonExistentDialog](#redirecttononexistentdialog)               | A topic you're trying to [redirect][1] to no longer exists.                         |
-| [TelephonyHandoffInvalidPhoneNumber](#telephonyhandoffinvalidphonenumber) | The phone number provided to [telephony][4] is not valid.                           |
-| [TelephonyHandoffMissingPhoneNumber](#telephonyhandoffmissingphonenumber) | A phone number has not been set for [telephony][4].                                 |
+| Error                                                                     | Description                                                            |
+| ------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| [CorruptOrMissingV2ContentInBot](#corruptormissingv2contentinbot)         |                                                                        |
+| [DialogNotFound](#dialognotfound)                                         | A topic you're trying to [redirect][1] to no longer exists.            |
+| [FlowActionException](#flowactionexception)                               | An error occurred while executing the your [flow][2].                  |
+| [FlowActionBadRequest](#flowactionbadrequest)                             | A request made to your [flow][2] was malformed.                        |
+| [InvalidDialogInterruption](#invaliddialoginterruption)                   | A topic received an async response from a [flow][2].                   |
+| [InfiniteLoopInBotContent](#infiniteloopinbotcontent)                     | A topic was stopped because an action was executed too many times.     |
+| [LatestPublishedVersionNotFound](#latestpublishedversionnotfound)         | Unable to retrieve the published version of the bot.                   |
+| [RedirectToDisabledDialog](#redirecttodisableddialog)                     | A topic is [redirecting][1] to another topic that has been turned off. |
+| [RedirectToNonExistentDialog](#redirecttononexistentdialog)               | A topic you're trying to [redirect][1] to no longer exists.            |
+| [TelephonyHandoffInvalidPhoneNumber](#telephonyhandoffinvalidphonenumber) | The phone number provided to [telephony][4] is not valid.              |
+| [TelephonyHandoffMissingPhoneNumber](#telephonyhandoffmissingphonenumber) | A phone number has not been set for [telephony][4].                    |
 
 [1]: authoring-create-edit-topics.md#go-to-another-topic
 [2]: advanced-flow.md
