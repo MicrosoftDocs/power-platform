@@ -5,7 +5,7 @@ author: jimholtz
 ms.component: pa-admin
 ms.topic: conceptual
 ms.custom: intro-internal
-ms.date: 02/23/2022
+ms.date: 05/19/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -35,7 +35,6 @@ The following is a list of regions and their URL for Dynamics 365 (Dynamics 365 
 | SAM           | crm2.dynamics.com | 
 | CAN           | crm3.dynamics.com | 
 | EUR           | crm4.dynamics.com | 
-| FRA           | crm12.dynamics.com | 
 | APJ           | crm5.dynamics.com | 
 | OCE           | crm6.dynamics.com | 
 | JPN           | crm7.dynamics.com | 
@@ -43,11 +42,15 @@ The following is a list of regions and their URL for Dynamics 365 (Dynamics 365 
 | GCC           | crm9.dynamics.com | 
 | GCC High      | crm.microsoftdynamics.us | 
 | GBR           | crm11.dynamics.com | 
+| FRA           | crm12.dynamics.com | 
 | ZAF           | crm14.dynamics.com | 
 | UAE           | crm15.dynamics.com| 
 | GER           | crm16.dynamics.com| 
 | CHE           | crm17.dynamics.com|  
 | CHN           | crm.dynamics.cn | 
+| NOR           | crm19.dynamics.com |
+| SGP           | crm20.dynamics.com |
+| KOR           | crm21.dynamics.com |
 
 ## Migration process  
  This is the overall process for migrating to a new datacenter.  
