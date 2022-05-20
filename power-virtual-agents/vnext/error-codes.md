@@ -1,6 +1,6 @@
 ---
 title: "Troubleshoot error codes"
-description: "Troubleshoot error code responses from your bot."
+description: "Troubleshoot error responses from your bot."
 author: v-alarioza
 ms.author: v-alarioza
 ms.topic: troubleshooting
