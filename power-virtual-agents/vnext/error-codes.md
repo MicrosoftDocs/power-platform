@@ -33,7 +33,6 @@ Errors may also appear in the [Topic Checker](authoring-topic-management.md#topi
 | Error                                                                     | Description                                                      |
 | ------------------------------------------------------------------------- | ---------------------------------------------------------------- |
 | [ContentError](#contenterror)                                             | There is an error in the topic content.                          |
-| [DialogNotFound](#dialognotfound)                                         | FIXME: description                                                                 |
 | [FlowActionException](#flowactionexception)                               | An error occurred while executing a [flow][2].                   |
 | [FlowActionBadRequest](#flowactionbadrequest)                             | A request made to a [flow][2] was malformed.                     |
 | [InvalidContent](#invalidcontent)                                         | Invalid content was added to the [code editor][5].               |
@@ -62,12 +61,6 @@ Common problems include, but are not limited to:
 - A node missing required properties.
 - Invalid YAML added with the [code editor](authoring-create-edit-topics.md#edit-topics-with-the-code-editor).
 - An error in a [Power Fx formula](advanced-power-fx.md).
-
-### DialogNotFound
-
-**Error message:** "The Dialog with Id {DialogId} was not found in the definition. Please check that the Dialog is present and that the Id is correct."
-
-**Resolution:** FIXME: resolution steps
 
 ### FlowActionException
 
