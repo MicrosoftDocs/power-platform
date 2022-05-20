@@ -1,5 +1,5 @@
 ---
-title: "Error Codes"
+title: "Troubleshoot error codes"
 description: "Troubleshoot error code responses from your bot."
 author: v-alarioza
 ms.author: v-alarioza
@@ -10,7 +10,7 @@ ms.reviewer: clmori
 manager: shellyha
 #Customer intent: As a bot maker, I want learn about error codes so that I can resolve issues with my bots.
 ---
-# Error codes: Power Virtual Agents
+# Troubleshoot error codes
 
 When a bot encounters a problem during a conversation, it will respond with an error message.
 
