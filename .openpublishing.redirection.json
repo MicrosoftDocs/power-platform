@@ -1,5 +1,75 @@
 {
-  "redirections": [
+  "redirections": [    {
+      "source_path": "power-platform/admin/web-application-requirements.md",
+      "redirect_url": "online-requirements",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/admin-cds-apps-environments.md",
+      "redirect_url": "admin-documentation",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/assign-security-roles-form.md",
+      "redirect_url": "database-security",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/connect-microsoft-social-engagement.md",
+      "redirect_url": "/dynamics365/social-engagement/eol/discontinuation-faq",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/control-social-data.md",
+      "redirect_url": "/dynamics365/social-engagement/eol/discontinuation-faq",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/create-edit-campaign-template-using-app-marketing-sales.md",
+      "redirect_url": "/dynamics365/sales/create-edit-campaign-using-app-marketing-sales",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/install-social-selling-assistant.md",
+      "redirect_url": "/dynamics365/social-engagement/eol/discontinuation-faq",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/manage-environments.md",
+      "redirect_url": "environments-overview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/manage-users-overview.md",
+      "redirect_url": "grant-users-access",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/onpremises-data-gateway-cluster-management.md",
+      "redirect_url": "wp-onpremises-gateway",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/alm/alm-considerations.md",
+      "redirect_url": "basics-alm",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/adoption/manage-users.md",
+      "redirect_url": "/power-platform/admin/grant-users-access",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/coe/elements-import-managed-solutions.md",
+      "redirect_url": "/power-platform/alm/solution-concepts-alm",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/guidance/coe/modify-components.md",
+      "redirect_url": "/power-platform/alm/component-framework",
+      "redirect_document_id": "false"
+    },
+
     {
       "source_path": "power-platform/admin/government-feature-availability.md",
       "redirect_url": "microsoft-dynamics-365-government#dynamics-365-us-government-feature-limitations",

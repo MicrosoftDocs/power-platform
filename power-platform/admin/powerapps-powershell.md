@@ -394,7 +394,7 @@ View and manage API connections in your tenant.
 Get-AdminPowerAppEnvironment -Default | Get-AdminPowerAppConnection
 ```
 
-Displays a list of all API connections you have in the default environment. Native connections are found under the **Data** > **Connections** tab in the maker portal.
+Displays a list of all API connections you have in the default environment. Native connections are found under the **Data** > **Connections** tab in [Power Apps](https://make.powerapps.com).
 
 #### Display all custom connectors in the tenant
 
