@@ -30,34 +30,40 @@ Errors may also appear in the [Topic Checker](authoring-topic-management.md#topi
 > The term _dialog_ is used in some error messages when it is referring to a _topic_.
 
 <!-- table best viewed and edited without word wrap -->
-| Error                                                                     | Description                                                            |
-| ------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
-| [CorruptOrMissingV2ContentInBot](#corruptormissingv2contentinbot)         |                                                                        |
-| [DialogNotFound](#dialognotfound)                                         | A topic you're trying to [redirect][1] to no longer exists.            |
-| [FlowActionException](#flowactionexception)                               | An error occurred while executing the your [flow][2].                  |
-| [FlowActionBadRequest](#flowactionbadrequest)                             | A request made to your [flow][2] was malformed.                        |
-| [InvalidDialogInterruption](#invaliddialoginterruption)                   | A topic received an async response from a [flow][2].                   |
-| [InfiniteLoopInBotContent](#infiniteloopinbotcontent)                     | A topic was stopped because an action was executed too many times.     |
-| [LatestPublishedVersionNotFound](#latestpublishedversionnotfound)         | Unable to retrieve the published version of the bot.                   |
-| [RedirectToDisabledDialog](#redirecttodisableddialog)                     | A topic is [redirecting][1] to another topic that has been turned off. |
-| [RedirectToNonExistentDialog](#redirecttononexistentdialog)               | A topic you're trying to [redirect][1] to no longer exists.            |
-| [TelephonyHandoffInvalidPhoneNumber](#telephonyhandoffinvalidphonenumber) | The phone number provided to [telephony][4] is not valid.              |
-| [TelephonyHandoffMissingPhoneNumber](#telephonyhandoffmissingphonenumber) | A phone number has not been set for [telephony][4].                    |
+| Error                                                                     | Description                                                      |
+| ------------------------------------------------------------------------- | ---------------------------------------------------------------- |
+| [ContentError](#contenterror)                                             | There is an error in the topic content.                          |
+| [DialogNotFound](#dialognotfound)                                         | FIXME: description                                                                 |
+| [FlowActionException](#flowactionexception)                               | An error occurred while executing a [flow][2].                   |
+| [FlowActionBadRequest](#flowactionbadrequest)                             | A request made to a [flow][2] was malformed.                     |
+| [InvalidContent](#invalidcontent)                                         | Invalid content was added to the [code editor][5].               |
+| [InfiniteLoopInBotContent](#infiniteloopinbotcontent)                     | A node was executed too many times.                              |
+| [LatestPublishedVersionNotFound](#latestpublishedversionnotfound)         | Unable to retrieve the published version of the bot.             |
+| [RedirectToDisabledDialog](#redirecttodisableddialog)                     | A topic is [redirecting][1] to a disabled topic.                 |
+| [RedirectToNonExistentDialog](#redirecttononexistentdialog)               | A topic is [redirecting][1] to another topic that longer exists. |
+| [SystemError](#systemerror)                                               | A system error occurred.                                         |
+| [TelephonyHandoffInvalidPhoneNumber](#telephonyhandoffinvalidphonenumber) | The phone number provided to [telephony][4] is not valid.        |
+| [TelephonyHandoffMissingPhoneNumber](#telephonyhandoffmissingphonenumber) | A phone number has not been set for [telephony][4].              |
 
 [1]: authoring-create-edit-topics.md#go-to-another-topic
 [2]: advanced-flow.md
 [3]: authoring-create-edit-topics.md#edit-topics-with-the-code-editor
 [4]: publication-connect-bot-to-telephony.md
+[5]: authoring-create-edit-topics.md#edit-topics-with-the-code-editor
 
-### CorruptOrMissingV2ContentInBot
+### ContentError
 
-FIXME: add resolution steps
+This is a catch-all error for a variety of problems related to your bot's content. Please refer to the error message for more details.
 
-When this error occurs, you'll see the following message from your bot: "A total of {TotalComponents} component(s) exist in the bot, but none are valid."
+Common problems include, but are not limited to:
+
+- A node is missing required properties.
+- Invalid YAML added with the [code editor](authoring-create-edit-topics.md#edit-topics-with-the-code-editor).
+- There is an error in a [Power Fx formula](advanced-power-fx.md).
 
 ### DialogNotFound
 
-[Create a new topic](authoring-create-edit-topics.md#create-a-topic) to redirect to or [remove the redirect node](authoring-create-edit-topics.md#delete-nodes).
+FIXME: resolution steps
 
 When this error occurs, you'll see the following message from your bot: "The Dialog with Id {DialogId} was not found in the definition. Please check that the Dialog is present and that the Id is correct."
 
@@ -82,11 +88,11 @@ When this error occurs, you'll see one of the following messages from your bot:
 - "The parameter with name {KeyName} on flow {FlowName} ({FlowId}) evaluated to type {ResolveType}, expected type {ExpectedType}."
 - "The flow {FlowName} ({FlowId}) failed to run with response code {ResponseCode}, error code: {FlowErrorCode}."
 
-### InvalidDialogInterruption
+### InvalidContent
 
-Asynchronous responses from flows are not supported and [must be disabled](advanced-flow.md#disable-asynchronous-responses-from-flows).
+[Open the code editor](authoring-create-edit-topics.md#edit-topics-with-the-code-editor) to review issues with the content.
 
-When this error occurs, you'll see the following message from your bot: "Received async response while the dialog is not waiting for an async response. Dialog: {DialogId}, TriggerId: {TriggerId}, ActionId: {ActionId}."
+When this error occurs, you'll see the following message from your bot: "A total of {TotalComponents} component(s) exist in the bot, but none are valid."
 
 ### InfiniteLoopInBotContent
 
@@ -112,15 +118,18 @@ When this error occurs, you'll see the following message from your bot: "The Dia
 
 When this error occurs, you'll see the following message from your bot: "The Dialog with Id {DialogId} was not found in the definition. Please check that the Dialog is present and that the Id is correct."
 
+### SystemError
+
+Contact customer the support for more details.
+
 ### TelephonyHandoffInvalidPhoneNumber
 
-<!-- FIXME: are telephony errors regarding the hand-off number, or the number provided by the user? -->
 Check your [telephony configuration](publication-connect-bot-to-telephony.md) and ensure the phone number is in an international format. For example, `+14251231234`.
 
 When this error occurs, you'll see the following message from your bot: "The phone number {PhoneNumber} used in the transfer to agent activity is not a valid phone number format. Phone number should be in international format without dashes ex: +14251231234."
 
 ### TelephonyHandoffMissingPhoneNumber
 
-FIXME: resolution steps here
+Go to your [telephony configuration](publication-connect-bot-to-telephony.md) and add a phone number.
 
 When this error occurs, you'll see the following message from your bot: "The transfer to agent activity failed as the 'TargetPhoneNumber' property is missing from the context."
