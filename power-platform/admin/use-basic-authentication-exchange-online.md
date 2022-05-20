@@ -23,7 +23,7 @@ search.app:
 
 ## Overview
 
-The [server-side synchronization](server-side-synchronization.md) feature and Dynamics 365 Email Router (deprecated) include configuration options that allowed customers to connect to Exchange Online using Basic authentication (username and password). Server-side synchronization replaces the Email Router option which had been deprecated in July of 2018. If you're using our online service or on-premises (Dynamics CRM on-premises 2016 SP1 or later), server-side synchronization provides options to connect to Exchange Online using modern authentication options that don't depend on Basic authentication. For how to use the required modern authentication options to connect Dynamics 365 Online to Exchange Online, go to [Connect to Exchange Online](connect-exchange-online.md). For how to connect Dynamics 365 on-premises to Exchange Online, go to [Connect Customer Engagement (on-premises) to Exchange Online](/dynamics365/customerengagement/on-premises/admin/connect-dynamics-365-on-premises-exchange-online?view=op-9-1). 
+The [server-side synchronization](server-side-synchronization.md) feature and Dynamics 365 Email Router (deprecated) include configuration options that allowed customers to connect to Exchange Online using Basic authentication (username and password). Server-side synchronization replaces the Email Router option which had been deprecated in July of 2018. If you're using our online service or on-premises (Dynamics CRM on-premises 2016 SP1 or later), server-side synchronization provides options to connect to Exchange Online using modern authentication options that don't depend on Basic authentication. For how to use the required modern authentication options to connect Dynamics 365 Online to Exchange Online, go to [Connect to Exchange Online](connect-exchange-online.md). For how to connect Dynamics 365 on-premises to Exchange Online, go to [Connect Customer Engagement (on-premises) to Exchange Online](/dynamics365/customerengagement/on-premises/admin/connect-dynamics-365-on-premises-exchange-online). 
 
 ## Impact
 
@@ -80,9 +80,10 @@ Identify which type of Email Server Profile is being used:
   
      - https://outlook.office365.com/EWS/Exchange.asmx 
      - outlook.office365.com 
-     - smtp.office365.com
 
-    Use the steps provided [here](connect-exchange-online.md) to create a new Exchange Online profile and update the mailboxes to use the new profile. Begin by testing one mailbox with the new profile before attempting to switch all mailboxes.  
+    If the mailboxes for this profile are hosted in Exchange Online, use the steps provided [here](connect-exchange-online.md) to create a new Exchange Online profile and update the mailboxes to use the new profile. Begin by testing one mailbox with the new profile before attempting to switch all mailboxes.   
+    
+    - If you have a profile with the **Email Server Type Name** value of **Exchange Server (Hybrid)** and the **Auto Discover Server Location** value is set to Yes, you need to verify if any mailboxes associated to this profile are mailboxes that are hosted in Exchange Online. This is not something you can identify based on data available in Dynamics 365. If any mailboxes are hosted in Exchange Online, they need to be configured with one of the Exchange Online profile options documented [here](connect-exchange-online.md). 
 
    **Dynamics 365 on-premises**
    - If you only see a row with the **Email Server Type Name** value of **Exchange Online (Hybrid)**, you're using the correct profile type which uses server-to-server (S2S) authentication instead of username/password.
@@ -93,12 +94,11 @@ Identify which type of Email Server Profile is being used:
 
      - https://outlook.office365.com/EWS/Exchange.asmx 
      - outlook.office365.com 
-     - smtp.office365.com
 
-   Use the steps provided [here](/dynamics365/customerengagement/on-premises/admin/connect-dynamics-365-on-premises-exchange-online?view=op-9-1) to create a new **Exchange Online (Hybrid)** profile and update the mailboxes to use the new profile. Begin by testing one mailbox with the new profile before attempting to switch all mailboxes. If you don't see the option for this type of profile, refer to the FAQ section which discusses the version requirement. 
+   Use the steps provided [here](/dynamics365/customerengagement/on-premises/admin/connect-dynamics-365-on-premises-exchange-online) to create a new **Exchange Online (Hybrid)** profile and update the mailboxes to use the new profile. Begin by testing one mailbox with the new profile before attempting to switch all mailboxes. If you don't see the option for this type of profile, refer to the FAQ section which discusses the version requirement. 
 
    **Dynamics 365 Email Router**
-   - If your company is using the Dynamics 365 Email Router to connect to Exchange Online, you're required to transition to using the server-side synchronization feature and use the steps provided [here](/dynamics365/customerengagement/on-premises/admin/connect-dynamics-365-on-premises-exchange-online?view=op-9-1). The Email Router was deprecated on July 17, 2018. It was previously communicated and [documented](../important-changes-coming.md?msclkid=254384a1c69a11ec9804139c37c818f7#microsoft-dynamics-365-email-router-is-deprecated) that the Email Router would no longer function starting April 12, 2021. Although the Email Router may still have worked with Dynamics 365 on-premises, this configuration is no longer supported. 
+   - If your company is using the Dynamics 365 Email Router to connect to Exchange Online, you're required to transition to using the server-side synchronization feature and use the steps provided [here](/dynamics365/customerengagement/on-premises/admin/connect-dynamics-365-on-premises-exchange-online). The Email Router was deprecated on July 17, 2018. It was previously communicated and [documented](../important-changes-coming.md?msclkid=254384a1c69a11ec9804139c37c818f7#microsoft-dynamics-365-email-router-is-deprecated) that the Email Router would no longer function starting April 12, 2021. Although the Email Router may still have worked with Dynamics 365 on-premises, this configuration is no longer supported. 
 
 ## FAQs
 
