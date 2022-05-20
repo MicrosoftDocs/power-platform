@@ -53,6 +53,8 @@ Errors may also appear in the [Topic Checker](authoring-topic-management.md#topi
 
 ### ContentError
 
+**Error message:** This error produces dynamic messages based on the context of the error.
+
 **Resolution:** This is a catch-all error for a variety of problems related to your bot's content. Please refer to the error message for more details.
 
 Common problems include, but are not limited to:
@@ -119,6 +121,7 @@ Common problems include, but are not limited to:
 **Resolution:** [Create a new topic](authoring-create-edit-topics.md#create-a-topic) to redirect to or [remove the redirect node](authoring-create-edit-topics.md#delete-nodes).
 
 ### SystemError
+**Error message:** This error doesn't produce an error message
 
 **Resolution:** Contact customer the support for more details.
 
