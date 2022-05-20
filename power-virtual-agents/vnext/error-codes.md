@@ -53,83 +53,83 @@ Errors may also appear in the [Topic Checker](authoring-topic-management.md#topi
 
 ### ContentError
 
-This is a catch-all error for a variety of problems related to your bot's content. Please refer to the error message for more details.
+**Resolution:** This is a catch-all error for a variety of problems related to your bot's content. Please refer to the error message for more details.
 
 Common problems include, but are not limited to:
 
-- A node is missing required properties.
+- A node missing required properties.
 - Invalid YAML added with the [code editor](authoring-create-edit-topics.md#edit-topics-with-the-code-editor).
-- There is an error in a [Power Fx formula](advanced-power-fx.md).
+- An error in a [Power Fx formula](advanced-power-fx.md).
 
 ### DialogNotFound
 
-FIXME: resolution steps
+**Error message:** "The Dialog with Id {DialogId} was not found in the definition. Please check that the Dialog is present and that the Id is correct."
 
-When this error occurs, you'll see the following message from your bot: "The Dialog with Id {DialogId} was not found in the definition. Please check that the Dialog is present and that the Id is correct."
+**Resolution:** FIXME: resolution steps
 
 ### FlowActionException
 
-[Check the flow for errors](/power-automate/error-checker).
-
-When this error occurs, you'll see one of the following messages from your bot:
+**Error messages:**
 
 - "No output was received from flow {FlowName} ({FlowId}), even though output was expected as per the bot definition."
 - "The output parameter with name {ItemKey} on flow {FlowName} ({FlowId}) is missing from the response data. Please refresh the flow, or ensure the flow returns this value."
 - "The output parameter with name {ItemKey} on flow {FlowName} ({FlowId}) is missing from the output schema. Please refresh the flow."
 
+**Resolution:** [Check the flow for errors](/power-automate/error-checker).
+
 ### FlowActionBadRequest
 
-Check that the [base type](authoring-variables.md#variable-types) of any variables you are passing to the flow [match the parameter type](authoring-variables.md#use-variables-in-action-nodes).
-
-When this error occurs, you'll see one of the following messages from your bot:
+**Error messages:**
 
 - "The parameter with name {KeyName} on flow {FlowName} ({FlowId}) is declared to be of type {ItemTypeKind}. This type is not supported when invoking Power Automate. Currently, only Text, Boolean and Numbers are supported."
 - "The parameter with name {ItemKey} on flow {FlowName} ({FlowId}) is missing in the 'Call Flow' action."
 - "The parameter with name {KeyName} on flow {FlowName} ({FlowId}) evaluated to type {ResolveType}, expected type {ExpectedType}."
 - "The flow {FlowName} ({FlowId}) failed to run with response code {ResponseCode}, error code: {FlowErrorCode}."
 
+**Resolution:** Check that the [base type](authoring-variables.md#variable-types) of any variables you are passing to the flow [match the parameter type](authoring-variables.md#use-variables-in-action-nodes).
+
 ### InvalidContent
 
-[Open the code editor](authoring-create-edit-topics.md#edit-topics-with-the-code-editor) to review issues with the content.
+**Error message:** "A total of {TotalComponents} component(s) exist in the bot, but none are valid."
 
-When this error occurs, you'll see the following message from your bot: "A total of {TotalComponents} component(s) exist in the bot, but none are valid."
+**Resolution:** [Open the code editor](authoring-create-edit-topics.md#edit-topics-with-the-code-editor) to review issues with the content.
 
 ### InfiniteLoopInBotContent
 
-Make sure the topic ends properly, or links to other topics that end properly, such as the **Escalate** system topic.
+**Error message:** "Action {DialogId}.{TriggerId}.{ActionId} was executed more than {MaxTurnCount} times in a row. This indicates a cycle in execution of the dialog and hence dialog execution will be terminated."
 
-When this error occurs, you'll see the following message from your bot: "Action {DialogId}.{TriggerId}.{ActionId} was executed more than {MaxTurnCount} times in a row. This indicates a cycle in execution of the dialog and hence dialog execution will be terminated."
+**Resolution:** Make sure the topic ends properly, and links to other topics that end properly, such as the **Escalate** system topic.
 
 ### LatestPublishedVersionNotFound
 
-To use this bot, [publish it in Power Virtual Agents](publication-fundamentals-publish-channels.md).  
+**Error message:** "Unable to retrieve the latest published version of the bot."
 
-When this error occurs, you'll see the following message from your bot: "Unable to retrieve the latest published version of the bot."
+**Resolution:** To use this bot, [publish it in Power Virtual Agents](publication-fundamentals-publish-channels.md).  
 
 ### RedirectToDisabledDialog
 
-[Re-enabled the topic](authoring-topic-management.md#topic-status) or [remove the redirect node](authoring-create-edit-topics.md#delete-nodes).  
+**Error message:** "The Dialog with Id {DialogId} is disabled in the definition. Please Enable the Dialog before using it."
 
-When this error occurs, you'll see the following message from your bot: "The Dialog with Id {DialogId} is disabled in the definition. Please Enable the Dialog before using it."
+**Resolution:** [Re-enabled the topic](authoring-topic-management.md#topic-status) or [remove the redirect node](authoring-create-edit-topics.md#delete-nodes).  
 
 ### RedirectToNonExistentDialog
 
-[Create a new topic](authoring-create-edit-topics.md#create-a-topic) to redirect to or [remove the redirect node](authoring-create-edit-topics.md#delete-nodes).
+**Error message:** "The Dialog with Id {DialogId} was not found in the definition. Please check that the Dialog is present and that the Id is correct."
 
-When this error occurs, you'll see the following message from your bot: "The Dialog with Id {DialogId} was not found in the definition. Please check that the Dialog is present and that the Id is correct."
+**Resolution:** [Create a new topic](authoring-create-edit-topics.md#create-a-topic) to redirect to or [remove the redirect node](authoring-create-edit-topics.md#delete-nodes).
 
 ### SystemError
 
-Contact customer the support for more details.
+**Resolution:** Contact customer the support for more details.
 
 ### TelephonyHandoffInvalidPhoneNumber
 
-Check your [telephony configuration](publication-connect-bot-to-telephony.md) and ensure the phone number is in an international format. For example, `+14251231234`.
+**Error message:** "The phone number {PhoneNumber} used in the transfer to agent activity is not a valid phone number format. Phone number should be in international format without dashes ex: +14251231234."
 
-When this error occurs, you'll see the following message from your bot: "The phone number {PhoneNumber} used in the transfer to agent activity is not a valid phone number format. Phone number should be in international format without dashes ex: +14251231234."
+**Resolution:** Check your [telephony configuration](publication-connect-bot-to-telephony.md) and ensure the phone number is in an international format. For example, `+14251231234`.
 
 ### TelephonyHandoffMissingPhoneNumber
 
-Go to your [telephony configuration](publication-connect-bot-to-telephony.md) and add a phone number.
+**Error message:** "The transfer to agent activity failed as the 'TargetPhoneNumber' property is missing from the context."
 
-When this error occurs, you'll see the following message from your bot: "The transfer to agent activity failed as the 'TargetPhoneNumber' property is missing from the context."
+**Resolution:** Go to your [telephony configuration](publication-connect-bot-to-telephony.md) and add a phone number.
