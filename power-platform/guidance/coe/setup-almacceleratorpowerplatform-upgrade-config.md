@@ -37,7 +37,15 @@ To get the latest tag of the pipelines [follow this link](https://github.com/mic
 
 ## Installing the ALM accelerator for Power Platform solution
 
-Go to [https://make.powerapps.com](https://make.powerapps.com) and after selecting the environment you plan to use, select **Solutions** -> **Import solution** -> **Browse** to select the location of the zip file downloaded in the previous section, example: **centerofexcellencealmaccelerator_1.0.20220517.1_managed.zip**. After select **Next**, expand the **Advanced settings**, make sure the **Upgrade** is selected. Select **Import** to finalize the upgrade. The import can take some time but you can continue with the next step, updating the pipelines in Azure DevOps.  
+Go to [https://make.powerapps.com](https://make.powerapps.com) and after selecting the environment you plan to use, select **Solutions** -> **Import solution** -> **Browse** to select the location of the zip file downloaded in the previous section, example: **centerofexcellencealmaccelerator_1.0.20220517.1_managed.zip**. Select **Next** and expand the **Advanced settings**, make sure the **Upgrade** is selected. Select **Import** to finalize the upgrade.
+
+After the import is completed the reactivation of the **CustomAzureDevOps** custom connector needs to be done. The following steps need to be done.
+
+1. Select **Data** -> **Custom Connectors** and edit the **CustomAzureDevOps**
+1. Go straight to the Security tab and select **Edit**
+1. Add your **ClientId**, **Client Secret** & **ResourceUrl**
+1. Select the **Test** tab and select **Test operation**
+1. Confirm the **status** of the response is Ok and select **Update connector** in the top
 
 > [!NOTE]
 > If you already followed these steps before, you can run the **sync-pipeline-repo** pipeline with the new tag copied in the previous section, and **approve** and **complete** the pull request.
