@@ -31,15 +31,15 @@ In every release the version of the solution is updated to the date when was cre
 
 ## Download the latest release
 
-Access the latest release of the ALM accelerator for Power Platform [follow this link](https://github.com/microsoft/coe-starter-kit/releases/latest). The page describes the Change Log, and some instruction about the upgrade. At the end of the page, the assets files created in the new released example: **centerofexcellencealmaccelerator_1.0.20220517.1_managed.zip**.
+Access the latest release of the ALM accelerator for Power Platform [follow this link](https://github.com/microsoft/coe-starter-kit/releases/latest). The page describes the Change Log, and some instructions about the upgrade. At the end of the page, are the assets files created in the release, example: **centerofexcellencealmaccelerator_1.0.20220517.1_managed.zip**.
 
 To get the latest tag of the pipelines [follow this link](https://github.com/microsoft/coe-alm-accelerator-templates) and select **tags** near the branch name, you should find the latest tag in the top of the list, example: **CenterofExcellenceALMAccelerator-May2022**.
 
 ## Installing the ALM accelerator for Power Platform solution
 
-Go to [https://make.powerapps.com](https://make.powerapps.com) and after selecting the environment you plan to use, select **Solutions** -> **Import solution** -> **Browse** to select the location of the zip file downloaded in the previous section, example: **centerofexcellencealmaccelerator_1.0.20220517.1_managed.zip**. Select **Next** and expand the **Advanced settings**, make sure the **Upgrade** is selected. Select **Import** to finalize the upgrade.
+Go to [https://make.powerapps.com](https://make.powerapps.com) and select the environment you plan to use. Select **Solutions** -> **Import solution** -> **Browse** to select the location of the zip file downloaded in the previous section, example: **centerofexcellencealmaccelerator_1.0.20220517.1_managed.zip**. Select **Next** and expand the **Advanced settings**, make sure the **Upgrade** is selected. Select **Import** to finalize the upgrade.
 
-After the import is completed the reactivation of the **CustomAzureDevOps** custom connector needs to be done. The following steps need to be done.
+When the import is completed, the reactivation of the **CustomAzureDevOps** custom connector needs to be done. The following steps need to be done.
 
 1. Select **Data** -> **Custom Connectors** and edit the **CustomAzureDevOps**
 1. Go straight to the Security tab and select **Edit**
@@ -48,8 +48,8 @@ After the import is completed the reactivation of the **CustomAzureDevOps** cust
 1. Confirm the **status** of the response is Ok and select **Update connector** in the top
 
 > [!NOTE]
-> If you already followed these steps before, you can run the **sync-pipeline-repo** pipeline with the new tag copied in the previous section, and **approve** and **complete** the pull request.
-If is the first time you are executing these steps, please continue.
+> If you already followed these steps before, you could run the **sync-pipeline-repo** pipeline with the new tag copied in the previous section, and **approve** and **complete** the pull request.
+If it's the first time you are executing these steps, please continue.
 
 ## Updating the pipelines in Azure DevOps
 
@@ -74,4 +74,4 @@ To simplify this process, there's a pipeline template that will automatically sy
 
 1. Do the following settings: in **SyncFrom** select **Tag** , in **SourceBranchOrTag** enter the tag copied in the previous section (example: **CenterofExcellenceALMAccelerator-May2022**), in  **BranchToCreate** define the name you want, example: update-from-original-repo, in **TargetBranch** define the name you want example: **main**, and then select **Run**.
 
-1. After the pipeline runs, a pull request will be created for the **BranchToCreate** into the **TargetBranch** example: Pull request from **update-from-original-repo** to **main**. To commit the changes, approve and complete the pull request by selecting **Repos** and **Pull requests** .
+1. After the pipeline runs, a pull request will be created for the **BranchToCreate** into the **TargetBranch** example: Pull request from **update-from-original-repo** to **main**. To commit the changes, approve and complete the pull request by selecting **Repos** and **Pull requests**.
