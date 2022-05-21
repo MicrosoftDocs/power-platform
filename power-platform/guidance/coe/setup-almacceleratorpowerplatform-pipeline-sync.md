@@ -19,7 +19,7 @@ search.app:
 # ALM accelerator for Microsoft Power Platform pipeline sync setup (preview)
 
 >[!TIP]
->For a complete upgrade steps of ALM accelerator for Microsoft Power Platform [follow this link](/power-platform/guidance/coe/setup-almacceleratorpowerplatform-upgrade-config.md)
+>For a complete upgrade steps of ALM accelerator for Microsoft Power Platform [follow this link](/power-platform/guidance/coe/setup-almacceleratorpowerplatform-upgrade-config)
 
 The pipeline sync script was created to make synchronizing the application lifecycle management (ALM) accelerator for Microsoft Power Platform pipeline templates simpler. As the pipeline templates grow and change, users are required to update the pipelines with each release of the accelerator.
 
