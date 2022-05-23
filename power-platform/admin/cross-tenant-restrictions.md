@@ -1,7 +1,7 @@
 ---
 title: Restrict cross-tenant inbound and outbound access (preview) 
 description: "Use tenant restrictions to control access to SaaS cloud applications based on the Azure AD tenant. You can also enforce tenant isolation for Power Platform connections."  
-ms.date: 03/07/2022
+ms.date: 05/23/2022
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: conceptual
@@ -104,6 +104,9 @@ In this scenario, the admin adds the Fabrikam tenant to both the inbound and out
 In the Power Platform admin center, tenant isolation is set with **Policies** > **Tenant isolation**.  
 
 :::image type="content" source="media/enable-tenant-isolation.png" alt-text="Enable tenant isolation.":::
+
+> [!NOTE]
+> With tenant isolation **On**, **all** tenants are restricted. You can use rules to add exceptions.
 
 The tenant isolation allowlist can be configured by using **New tenant rule** on the **Tenant Isolation** page. If tenant isolation is **Off**, you can add or edit the rules in the list. However, these rules won't be enforced until you turn tenant isolation **On**. 
 
