@@ -136,16 +136,6 @@
           href: business-continuity-disaster-recovery.md
         - name: Edit environment properties
           href: edit-properties-environment.md
-        - name: Managed environments
-          items: 
-          - name: Overview
-            href: managed-environment-overview.md
-          - name: Enable managed environments
-            href: managed-environment-enable.md
-          - name: Topic two 
-            href: managed-environment-two.md 
-          - name: Topic three 
-            href: managed-environment-three.md
         - name: Administration mode
           href: admin-mode.md
         - name: Customer managed encryption key
@@ -160,6 +150,16 @@
           href: admin-view-apps.md
         - name: Language collations 
           href: language-collations.md            
+      - name: Managed environments      
+        items: 
+        - name: Overview
+          href: managed-environment-overview.md
+        - name: Enable managed environments
+          href: managed-environment-enable.md
+        - name: Topic two 
+          href: managed-environment-two.md 
+        - name: Topic three 
+          href: managed-environment-three.md
       - name: Manage updates
         items:
         - name: Opt in to early access updates
