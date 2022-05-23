@@ -257,7 +257,7 @@ Learn more: [Merge form customizations](/power-platform/alm/how-managed-solution
      
 1. Add the form you want to customize:
  
-    1. Select **...** > **+ Add subcomponents**.
+    1. Select **...** and then select **+ Add subcomponents**.
      
        ![Screenshot showing selection of Add subcomponents](media/coe-extension-5b.png "Screenshot showing selection of Add subcomponents")
                 
@@ -267,7 +267,7 @@ Learn more: [Merge form customizations](/power-platform/alm/how-managed-solution
 1. Customize the form:
 
     1. Select the table and then select **Forms**.
-    1. Select **...** > **Edit form** to edit the form.
+    1. Select **...** and then select **Edit form** to edit the form.
     
     > [!NOTE]
     > Depending on the goal of your customization, you can also create a new form or duplicate the existing form.
@@ -275,7 +275,7 @@ Learn more: [Merge form customizations](/power-platform/alm/how-managed-solution
 1. Add the new form to your model-driven application:
 
     1. If you have created a new form or duplicated the existing form, start by disabling the old one so that it's not shown.
-    1. On the original form, select **...** > **Remove form from this solution**.
+    1. On the original form, select **...** and then select **Remove form from this solution**.
     1. Select **Form settings**.
     1. Make sure the new form's settings are configured correctly, including **Ordering** and **Security roles**.
 
@@ -302,7 +302,7 @@ Learn more: [Create and edit views](/power-apps/maker/model-driven-apps/create-e
 
 1. Add the view you want to customize:
  
-    1. Select **...** > **+ Add subcomponents**.
+    1. Select **...** and then select **+ Add subcomponents**.
      
        ![Screenshot showing how to add a subcomponent](media/coe-extension-5b.png "Screenshot showing how to add a subcomponent")
     
@@ -312,7 +312,7 @@ Learn more: [Create and edit views](/power-apps/maker/model-driven-apps/create-e
 1. Customize the view:
  
     1. Select the table and then select **Views**.
-    1. Select **...** > **Edit view** to edit the view.
+    1. Select **...** and then select **Edit view** to edit the view.
     
     > [!NOTE]
     > Depending on the goal of your customization, you can also create a new view or duplicate the existing view.
@@ -320,7 +320,7 @@ Learn more: [Create and edit views](/power-apps/maker/model-driven-apps/create-e
 1. Add the new view to your model-driven application:
  
     1. If you have created a new view or duplicated the existing view, start by disabling the old one so that it's not shown.
-    1. On the original view, select **...** > **Remove view from this solution**.
+    1. On the original view, select **...** and then select **Remove view from this solution**.
     1. Add your new view to your model-driven application in the **App Designer**.
 
 #### Customize a model-driven app system dashboard
