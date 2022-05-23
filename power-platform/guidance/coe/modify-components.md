@@ -107,7 +107,7 @@ To add a new component to your new solution:
 > [!CAUTION]
 > The CoE Starter Kit is distributed as a managed solution and shouldn't be customized directly.
 
-Most components can be customized by duplicating the component and customizing the copy. The only exception is [adding new fields in an existing table](#adding-a-new-column-within-an-existing-table).
+Most components can be customized by duplicating the component and customizing the copy. The only exception is [adding new fields in an existing table](#add-a-new-column-to-an-existing-table).
 
 Below are common examples of how to customize and extend some of the main components of the CoE Starter Kit.
 
