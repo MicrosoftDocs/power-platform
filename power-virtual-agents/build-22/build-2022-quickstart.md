@@ -44,7 +44,7 @@ Power Virtual Agents now has an app-level home page that is not specific to any 
 
 1. In the side navigation, select **Topics**. Then select the **Greeting** topic.
 
-1. Delete all existing **Message** nodes.
+1. Delete the existing **Message** node.
 
 1. Add a **Message** node. Then add the following greetings as [message variations](authoring-create-edit-topics.md#message-variations):
     - `Good day!`
@@ -55,7 +55,7 @@ Power Virtual Agents now has an app-level home page that is not specific to any 
 
     :::image type="content" source="media/build-2022-quickstart/image-card.png" alt-text="Screenshot of speech mode toggle.":::
 
-1. Add a second **Message** node and add the message `We're open 9am to 5pm Monday through Friday. Please note we will be closed on May 27th.`
+1. Add a second **Message** node and add the message `We're open 9am to 5pm Monday through Friday, and 10am through 8pm on the weekends. Please note, reservations can only be made for the next 7 days.`
 
 1. Change the edit mode to **Speech**.
 
@@ -63,7 +63,7 @@ Power Virtual Agents now has an app-level home page that is not specific to any 
 
     :::image type="content" source="media/build-2022-quickstart/message-speech-mode.png" alt-text="Screenshot of speech mode toggle.":::
 
-1. Add the message `We're open 9am to 5pm Monday through Friday. <emphasis level="strong">Please note</emphasis><break strength="medium" /> we will be closed on May 27th.`
+1. Add the message `We're open 9am to 5pm Monday through Friday, and 10am through 8pm on the weekends. <emphasis level="strong">Please note</emphasis><break strength="medium" />, reservations can only be made for the next 7 days.`
 
    When the message is spoken by the bot over a phone call, it will put emphasis on "Please note" and pause for a moment before continuing.
 
@@ -82,8 +82,8 @@ Power Virtual Agents now has an app-level home page that is not specific to any 
 1. In the side navigation, select **Topics** and then **New topic**.
 
 1. Add the following trigger phrases:
+    - `reserve a table`
     - `make a reservation`
-    - `reserve a time`
 
 1. Add a **Question** node and enter the message `What is the desired time and date of your reservation?`
 
@@ -93,23 +93,29 @@ Power Virtual Agents now has an app-level home page that is not specific to any 
 
 1. [Add a **ConditionItem** node](authoring-create-edit-topics.md#add-a-condition) and [change it to a formula](advanced-power-fx.md#use-power-fx-as-a-condition).
 
-1. Enter the [Power Fx formula](advanced-power-fx.md) `DateDiff(Topic.reservationDateTime, Date(2022,5,27)) = 0`. This formula will evaluate to true if the date the user provided is May 27th 2022.
+1. Enter the [Power Fx formula](advanced-power-fx.md) `Topic.reservationDateTime < Today() || DateDiff(Today(), Topic.reservationDateTime) > 7`. This formula will evaluate to true if the date the user provided is in the past or more than 7 days away.
 
     :::image type="content" source="media/build-2022-quickstart/condition-formula.png" alt-text="Screenshot of Power Fx formula in a condition node.":::
 
-1. Under the **ConditionItem** node add a **Message** node. This node will remind the user that the restaurant is closed on May 5th. Enter the message `Sorry, but we're closed on May 27th. Please make a reservation on another day.`
+1. Under the **ConditionItem** node, add a **Message** node. This message will remind the user that reservations can only be made in the next 7 days. Enter the message `Sorry, I can only make reservations for the next 7 days.`
 
-1. Under the **All Other Conditions** node, add a **Message** node. This node will provide a confirmation of the user's reservation. Enter the message `Your reservation has been made for {Topic.reservationDateTime}. We look forward to seeing you!`.
+1. Under the **All Other Conditions** node, add a **Message** node. This message will provide a confirmation of the user's reservation.
+    1. Enter `Your reservation has been made for`
+    1. Select **Insert variable** and choose **reservationDateTime** from the list
+    1. Enter `. We look forward to seeing you!`
+
+    > [!TIP]
+    > You can also enter the full message by using braces around the variable `Your reservation has been made for {Topic.reservationDateTime}. We look forward to seeing you!`.
 
     :::image type="content" source="media/build-2022-quickstart/variable-reference.png" alt-text="Screenshot of variable in message node.":::
 
-   When the bot responds with this message, the variable reference `{Topic.reservationDateTime}` will be replaced with with the value of the variable.
+    When the bot responds with this message, the variable reference will be replaced with with the value of the variable.
 
     :::image type="content" source="media/build-2022-quickstart/variable-replaced.png" alt-text="Screenshot of the variable's value shown in a message.":::
 
 1. Add an **Redirect** node where the two condition branches meet and choose the **End of conversation** topic.
 
-1. Name the topic `Make a reservation` and select **Save**.
+1. Name the topic `Reservation` and select **Save**.
 
 ## Next steps
 
