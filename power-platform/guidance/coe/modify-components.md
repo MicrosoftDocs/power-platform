@@ -105,43 +105,49 @@ To add a new component to your new solution:
 ## Customizing CoE Starter Kit components
 
 > [!CAUTION]
-> The CoE Starter Kit is distributed as a managed solution and should not be customized directly.
+> The CoE Starter Kit is distributed as a managed solution and shouldn't be customized directly.
 
 Most components can be customized by duplicating the component and customizing the copy. The only exception is [adding new fields in an existing table](#adding-a-new-column-within-an-existing-table).
 
-Below are some common examples of how to customize and extend some of the main components of the CoE Starter Kit.
+Below are common examples of how to customize and extend some of the main components of the CoE Starter Kit.
 
-### Creating  copy of a canvas application
+### Creating a copy of a canvas application
 
-1. Add the canvas app to your unmanaged solution
+Add the canvas app to your unmanaged solution:
 
-    1. Go to [make.powerapps.com](<https://make.powerapps.com>).
-    1. Go to your CoE development environment.
-    1. Go to **Solutions**.
-    1. Select your solution.
-    1. Select **+ Add existing**.
-    1. Select **App > Canvas app**.
+1. Go to [make.powerapps.com](<https://make.powerapps.com>).
+1. Go to your CoE development environment.
+1. Go to **Solutions**.
+1. Select your solution.
+1. Select **+ Add existing**.
+1. Select **App > Canvas app**.
 
-        ![Select to add a canvas app to your solution](media/coe-extension-6.png "Select to add a canvas app to your solution")
-    1. Search for the canvas app you want to customize and select **Add** to add it to your solution.
+   ![Select to add a canvas app to your solution](media/coe-extension-6.png "Select to add a canvas app to your solution")
+   
+1. Search for the canvas app you want to customize and select **Add** to add it to your solution.
 
-        ![Select or search for the app](media/coe-extension-7.png "Select or search for the app")
-1. Create a copy of the canvas app
-    1. Select the canvas app in your solution and select **Edit**.
+   ![Select or search for the app](media/coe-extension-7.png "Select or search for the app")
 
-        ![Select your app and edit](media/coe-extension-8.png "Select your app and edit")
-    1. The app is opened in the Power Apps Studio.
-    1. Select **File**.
+Next, create a copy of the canvas app:
 
-        ![Select the File menu](media/coe-extension-9.png "Select the File menu")
-    1. Go to **Save as**, change the name of the app (for instance add a prefix) and select **Save**.
-    1. Go back to your solution, your copy of the app is displayed in the list (with your publisher prefix)
-    1. Remove the original app from your solution by selecting it and in the menu selecting **Remove** then **Remove from solution**
+1. Select the canvas app in your solution and select **Edit**.
 
-        ![Remove from solution](media/coe-extension-10.png "Remove from solution")
+   ![Select your app and edit](media/coe-extension-8.png "Select your app and edit")
+   
+1. The app is opened in the Power Apps Studio.
+1. Select **File**.
 
-      Remove [unmanaged layers](after-setup.md#removing-other-customizations) to continue receiving updates to the original app. You may want to compare them to your changes.
-    1. You can now safely edit your own copy.
+   ![Select the File menu](media/coe-extension-9.png "Select the File menu")
+   
+1. Go to **Save as**, change the name of the app (for instance add a prefix) and select **Save**.
+1. Go back to your solution, your copy of the app is displayed in the list (with your publisher prefix)
+1. Remove the original app from your solution by selecting it and in the menu selecting **Remove** then **Remove from solution**
+
+   ![Remove from solution](media/coe-extension-10.png "Remove from solution")
+
+   Remove [unmanaged layers](after-setup.md#removing-other-customizations) to continue receiving updates to the original app. You may want to compare them to your changes.
+
+You can now safely edit your own copy.
 
 > [!NOTE]
 > Creating a copy of a canvas application to extend and customize the app means you will no longer receive updates for this app during an upgrade.
