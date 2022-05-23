@@ -17,7 +17,7 @@ search.app:
   - Powerplatform
 ---
 
-<!-- Should line 82 also mention **Name**? -->
+<!-- Should line 82 also mention **Name**? Is the screenshot in line 146 in the right location? It doesn't match the step. -->
 
 
 # Extend and customize CoE Starter Kit components
@@ -113,7 +113,7 @@ Below are common examples of how to customize and extend some of the main compon
 
 ### Creating a copy of a canvas application
 
-Add the canvas app to your unmanaged solution:
+Add a canvas app to your unmanaged solution:
 
 1. Go to [make.powerapps.com](<https://make.powerapps.com>).
 1. Go to your CoE development environment.
@@ -122,22 +122,22 @@ Add the canvas app to your unmanaged solution:
 1. Select **+ Add existing**.
 1. Select **App** > **Canvas app**.
 
-   ![Select to add a canvas app to your solution](media/coe-extension-6.png "Select to add a canvas app to your solution")
+   ![Screenshot showing the canvas app selection](media/coe-extension-6.png "Screenshot showing the canvas app selection")
    
 1. Search for the canvas app you want to customize and select **Add** to add it to your solution.
 
-   ![Select or search for the app](media/coe-extension-7.png "Select or search for the app")
+   ![Screenshot showing how to search for and add a canvas app](media/coe-extension-7.png "Screenshot showing how to search for and add a canvas app")
 
 Next, create a copy of the canvas app:
 
 1. Select the canvas app in your solution and select **Edit**.
 
-   ![Select your app and edit](media/coe-extension-8.png "Select your app and edit")
+   ![Screenshot showing the Edit action](media/coe-extension-8.png "Screenshot showing the Edit action")
    
 1. The app is opened in Power Apps Studio.
 1. Select **File**.
 
-   ![Select the File menu](media/coe-extension-9.png "Select the File menu")
+   ![Screenshot showing the File menu](media/coe-extension-9.png "Screenshot showing the File menu")
    
 1. Go to **Save as**, change the name of the app (for instance, add a prefix), and select **Save**.
 1. Go back to your solution—your copy of the app is displayed in the list (with your publisher prefix).
@@ -155,22 +155,24 @@ You can now safely edit your own copy.
 ### Working with cloud flows
 
 > [!CAUTION]
-> Due to a product limitation, you can't create a copy of a cloud flows triggering child flows. Most CoE Starter Kit flows use child flows.
-> Customizations to cloud flows can be made on the existing flows as unmanaged.
-> Unmanaged changes will take precedence over the managed ones, therefore any customized flows will not be updated as part of a CoE upgrade.
+> Due to a product limitation, you can't create a copy of a cloud flows triggering child flows. Most CoE Starter Kit flows use child flows.</br>
+> Customizations to cloud flows can be made on the existing flows as unmanaged.</br>
+> Unmanaged changes will take precedence over the managed ones, therefore any customized flows will not be updated as part of a CoE upgrade.</br>
 > Learn more: [Solution Layers](/power-platform/alm/solution-layers-alm/)
 
-1. Customizing an existing flow
-    1. Go to [make.powerapps.com](<https://make.powerapps.com>).
-    1. Go to your CoE development environment.
-    1. Go to **Solutions**.
-    1. Select your solution.
-    1. Select **Add existing**.
+Customizing an existing flow
 
-        ![Select add existing in the top menu](media/coe-extension-5.png "Select add existing in the top menu")
-    1. Select **Automation > Cloud flow**.
-    1. Select or search for the flow you want to customize.
-    1. Select the flow in your solution and use the **Edit** button to start customizing the flow.
+1. Go to [make.powerapps.com](<https://make.powerapps.com>).
+1. Go to your CoE development environment.
+1. Go to **Solutions**.
+1. Select your solution.
+1. Select **Add existing**.
+
+   ![Select add existing in the top menu](media/coe-extension-5.png "Select add existing in the top menu")
+   
+1. Select **Automation > Cloud flow**.
+1. Select or search for the flow you want to customize.
+1. Select the flow in your solution and use the **Edit** button to start customizing the flow.
 
 > [!NOTE]
 > Creating a copy of a canvas application to extend and customize the app means you will no longer receive updates for this app during an upgrade.
