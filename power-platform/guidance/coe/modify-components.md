@@ -168,7 +168,7 @@ Customize an existing flow:
 1. Select your solution.
 1. Select **Add existing**.
 
-   ![Select add existing in the top menu](media/coe-extension-5.png "Select add existing in the top menu")
+   ![Screenshot showing the Add existing dropdown menu](media/coe-extension-5.png "Screenshot showing the Add existing dropdown menu")
    
 1. Select **Automation** > **Cloud flow**.
 1. Select or search for the flow you want to customize.
@@ -177,34 +177,38 @@ Customize an existing flow:
 > [!NOTE]
 > Creating a copy of a canvas app to extend and customize the app means you'll no longer receive updates for this app during an upgrade.
 
-### Working with model-driven applications and extending Dataverse tables
+### Working with model-driven apps and extending Dataverse tables
 
-Create your own model-driven app instead of extending the existing one, to avoid your changes being impacted by the upgrade. Learn more: [Overview of building a model-driven app with Power Apps](/power-apps/maker/model-driven-apps/model-driven-app-overview)
+Create your own model-driven app instead of extending the existing one to avoid your changes being impacted by an upgrade. Learn more: [Overview of building a model-driven app with Power Apps](/power-apps/maker/model-driven-apps/model-driven-app-overview)
 
-#### Configuring a new model-driven application
+#### Configure a new model-driven application
 
-1. Create a new model-driven application
-    1. Go to [make.powerapps.com](<https://make.powerapps.com>).
-    1. Go to your CoE development environment.
-    1. Go to **Solutions**.
-    1. Select your solution.
-    1. Select **+ New**.
-    1. Select **App > Model-driven app**.
-    1. Select **Create**.
-    1. Enter a **Name** and a **Unique Name** (technical name for the application).
-    1. Select **Done**.
+First, create a new model-driven application:
 
-        ![Fill in the name of the application](media/coe-extension-16.png "Fill in the name of the application")
-2. Configuring your model-driven application
-    1. In the **App Designer** use menu to select the components for your app.
-    1. Configure the **Site Map** to show the elements in your app's menu.
+1. Go to [make.powerapps.com](<https://make.powerapps.com>).
+1. Go to your CoE development environment.
+1. Go to **Solutions**.
+1. Select your solution.
+1. Select **+ New**.
+1. Select **App** > **Model-driven app**.
+1. Select **Create**.
+1. Enter a **Name** and a **Unique Name** (technical name for the application).
+1. Select **Done**.
 
-        ![Configure the application](media/coe-extension-17.png "Configure the application")
-    1. Select **Save**.
-    1. Select **Validate**, and correct any issues.
-    1. Select **Publish**.
+   ![Fill in the name of the application](media/coe-extension-16.png "Fill in the name of the application")
+        
+Then, configure the new model-driven application:
 
-#### Adding a new column to an existing table
+1. In the **App Designer**, use the menu to select the components for your app.
+1. Configure the **Site Map** to show the elements in your app's menu.
+
+   ![Configure the application](media/coe-extension-17.png "Configure the application")
+        
+1. Select **Save**.
+1. Select **Validate**, and correct any issues.
+1. Select **Publish**.
+
+#### Add a new column to an existing table
 
 1. Start by adding the table you want to add the field to, if it's not already in your solution
     1. Go to [make.powerapps.com](<https://make.powerapps.com>).
