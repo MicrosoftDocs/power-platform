@@ -145,6 +145,8 @@
           href: coe/cli/alm/overview.md
         - name: Set up ALM Accelerator for Power Platform components manually
           href: coe/setup-almacceleratorpowerplatform.md
+        - name: Upgrade ALM Accelerator for Power Platform
+          href: coe/setup-almacceleratorpowerplatform-upgrade-config.md          
         - name: Configuration and data deployment in pipelines
           href: coe/setup-almacceleratorpowerplatform-deployment-config.md
         - name: Configuring pipeline sync

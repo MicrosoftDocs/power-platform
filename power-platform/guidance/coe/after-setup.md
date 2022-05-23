@@ -70,6 +70,9 @@ Install the updates by importing the latest version to the environment where you
     1. [Setup governance components](before-setup-gov.md)
     1. [Setup nurture components](setup-nurture-components.md)
 
+>[!TIP]
+>For a complete upgrade steps of ALM accelerator for Microsoft Power Platform [follow this link](/power-platform/guidance/coe/setup-almacceleratorpowerplatform-upgrade-config)
+
 ## Extending the starter kit
 
 When you're ready to extend the CoE Starter Kit with your own ideas, you'll do so by making modifications to the solution components in your own unmanaged solution:
