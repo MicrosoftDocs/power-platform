@@ -17,7 +17,7 @@ search.app:
   - Powerplatform
 ---
 
-<!-- Should line 82 also mention **Name**? Is the screenshot in line 146 in the right location? It doesn't match the step. -->
+<!-- Should line 82 also mention **Name**? Is the screenshot in line 146 in the right location? It doesn't match the step. In line 158, this is confusing: "a copy of a cloud flows triggering child flows". Should it be "a cloud flow"? -->
 
 
 # Extend and customize CoE Starter Kit components
@@ -155,12 +155,12 @@ You can now safely edit your own copy.
 ### Working with cloud flows
 
 > [!CAUTION]
-> Due to a product limitation, you can't create a copy of a cloud flows triggering child flows. Most CoE Starter Kit flows use child flows.</br>
-> Customizations to cloud flows can be made on the existing flows as unmanaged.</br>
-> Unmanaged changes will take precedence over the managed ones, therefore any customized flows will not be updated as part of a CoE upgrade.</br>
-> Learn more: [Solution Layers](/power-platform/alm/solution-layers-alm/)
+> - Due to a product limitation, you can't create a copy of a cloud flows triggering child flows. Most CoE Starter Kit flows use child flows.
+> - Customizations to cloud flows can be made on the existing flows as unmanaged.
+> - Unmanaged changes will take precedence over the managed ones; therefore, customized flows won't be updated as part of a CoE upgrade.
+> - Learn more: [Solution Layers](/power-platform/alm/solution-layers-alm/)
 
-Customizing an existing flow
+Customize an existing flow:
 
 1. Go to [make.powerapps.com](<https://make.powerapps.com>).
 1. Go to your CoE development environment.
@@ -170,12 +170,12 @@ Customizing an existing flow
 
    ![Select add existing in the top menu](media/coe-extension-5.png "Select add existing in the top menu")
    
-1. Select **Automation > Cloud flow**.
+1. Select **Automation** > **Cloud flow**.
 1. Select or search for the flow you want to customize.
 1. Select the flow in your solution and use the **Edit** button to start customizing the flow.
 
 > [!NOTE]
-> Creating a copy of a canvas application to extend and customize the app means you will no longer receive updates for this app during an upgrade.
+> Creating a copy of a canvas app to extend and customize the app means you'll no longer receive updates for this app during an upgrade.
 
 ### Working with model-driven applications and extending Dataverse tables
 
