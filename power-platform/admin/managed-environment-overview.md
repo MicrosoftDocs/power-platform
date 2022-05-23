@@ -22,10 +22,10 @@ search.app:
 ---
 # Managed environments overview
 
-
-
 ## Weekly digests
 
 ## Sharing limits
 
 ## Data policies
+
+## Licensing

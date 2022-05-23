@@ -22,7 +22,7 @@ search.app:
 ---
 # Enable environment management
 
-
+## Prerequisites
 
 ## Weekly digests
 
@@ -30,6 +30,6 @@ search.app:
 
 ## Data policies
 
-## Licensing
+
 
 
