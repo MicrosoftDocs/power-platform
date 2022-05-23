@@ -12,13 +12,13 @@ manager: shellyha
 ---
 # Troubleshoot error codes
 
-When a bot encounters a problem during a conversation, it will respond with an error message.
+When a bot encounters a problem during a conversation, it will send an error response.
 
-If you're a bot user, the error message will contain an error code for the specific problem that was encountered which should be given to your administrator.
+If you're a bot user, the response will contain an error code for the specific problem that was encountered which should be given to your administrator.
 
 :::image type="content" source="media/error-codes/c2-error.png" alt-text="Bot error message displayed to users.":::
 
-If you're a bot maker testing the bot in the [Test bot pane](authoring-test-bot.md), you'll see an additional message that gives more context about the problem.
+If you're a bot maker testing the bot in the [Test bot pane](authoring-test-bot.md), in addition to the error code, you'll also see an error message that gives more context about the problem.
 
 :::image type="content" source="media/error-codes/c1-error.png" alt-text="Bot error message displayed to bot makers.":::
 
@@ -30,7 +30,7 @@ Errors may also appear in the [Topic Checker](authoring-topic-management.md#topi
 > The term _dialog_ is used in some error messages when it is referring to a _topic_.
 
 <!-- table best viewed and edited without word wrap -->
-| Error                                                                     | Description                                                      |
+| Error code                                                                | Description                                                      |
 | ------------------------------------------------------------------------- | ---------------------------------------------------------------- |
 | [ContentError](#contenterror)                                             | There is an error in the topic content.                          |
 | [FlowActionException](#flowactionexception)                               | An error occurred while executing a [flow][2].                   |
@@ -40,7 +40,7 @@ Errors may also appear in the [Topic Checker](authoring-topic-management.md#topi
 | [LatestPublishedVersionNotFound](#latestpublishedversionnotfound)         | Unable to retrieve the published version of the bot.             |
 | [RedirectToDisabledDialog](#redirecttodisableddialog)                     | A topic is [redirecting][1] to a disabled topic.                 |
 | [RedirectToNonExistentDialog](#redirecttononexistentdialog)               | A topic is [redirecting][1] to another topic that longer exists. |
-| [SystemError](#systemerror)                                               | A system error occurred.                                         |
+| [SystemError](#systemerror)                                               | A system error occurred in Power Virtual Agents.                 |
 | [TelephonyHandoffInvalidPhoneNumber](#telephonyhandoffinvalidphonenumber) | The phone number provided to [telephony][4] is not valid.        |
 | [TelephonyHandoffMissingPhoneNumber](#telephonyhandoffmissingphonenumber) | A phone number has not been set for [telephony][4].              |
 
