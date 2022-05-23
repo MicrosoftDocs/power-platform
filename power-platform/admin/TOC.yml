@@ -113,14 +113,15 @@
       - name: Administer environments 
         items:
         - name: Managed environments
-          href: managed-environment-overview.md
-        - name: Enable managed environments
-          href: managed-environment-enable.md
-        - name: Topic two 
-          href: managed-environment-two.md 
-        - name: Topic three 
-          href: managed-environment-three.md
-        items:
+          items: 
+          - name: Overview
+            href: managed-environment-overview.md
+          - name: Enable managed environments
+            href: managed-environment-enable.md
+          - name: Topic two 
+            href: managed-environment-two.md 
+          - name: Topic three 
+            href: managed-environment-three.md
         - name: Environments overview
           href: environments-overview.md
         - name: Create environment
