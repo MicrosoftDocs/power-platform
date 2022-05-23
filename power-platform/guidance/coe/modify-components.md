@@ -17,6 +17,9 @@ search.app:
   - Powerplatform
 ---
 
+<!-- Should line 82 also mention **Name**? -->
+
+
 # Extend and customize CoE Starter Kit components
 
 There's no "one size fits all" solution for a Center of Excellence (CoE). Some companies will want a more restrictive set of rules for their organization, while others will want to let users personally explore with less limitation.
@@ -67,39 +70,37 @@ If you plan to make customizations to a large number of CoE Starter Kit componen
 
 ## Creating a new solution
 
-
-<!-- editing starts here -->
-
-
 To create a new unmanaged solution:
 
 1. Go to [make.powerapps.com](<https://make.powerapps.com>).
-1. Go to your CoE development environment. This environment should have the managed solutions of the CoE Starter Kit components you are using installed, e.g. Center of Excellence - Core components and Center of Excellence - Innovation Backlog.
+1. Go to your CoE development environment. The managed solutions of the CoE Starter Kit components you are using should already be installed in this environment—for example, Center of Excellence - Core components and Center of Excellence - Innovation Backlog.
 1. Select **Solutions**.
 1. Select **+ New solution**.
 
-   ![Select New Solution](media/coe-extension-2.png "Select New Solution")
+   ![Screenshot showing where to start a new solution](media/coe-extension-2.png "Screenshot showing where to start a new solution")
    
-1. Enter the **Display Name** (e.g. *Contoso CoE Extension*), [**Publisher**](power-platform/alm/solution-concepts-alm#solution-publisher) (author of your solution) and **Version** (leave 1.0.0.0 if it is your first solution).
+1. Enter the **Display name** (for example, *Contoso CoE Extension*), [**Publisher**](power-platform/alm/solution-concepts-alm#solution-publisher) (author of your solution), and **Version** (leave 1.0.0.0 if it's your first solution).
 
-   ![Enter the name, publisher and version to create the solution](media/coe-extension-3.png "Enter the name, publisher and version to create the solution")
+   ![Screenshot showing Display name, Name, Publisher, and Version](media/coe-extension-3.png "Screenshot showing Display name, Name, Publisher, and Version")
    
 1. Select **Create** to create your solution.
 
 ## Creating components in a solution
 
-1. To add a new component to your new solution
+To add a new component to your new solution:
 
-    1. Go to [make.powerapps.com](<https://make.powerapps.com>).
-    1. Go to your CoE development environment.
-    1. Select **Solutions**.
-    1. Select your new solution
-    1. Select **+ New** in the top menu
-        ![Select + New to add a new component](media/coe-extension-4.png "Select + New to add a new component")
-    1. Choose the component type to add this component to your solution.
+1. Go to [make.powerapps.com](<https://make.powerapps.com>).
+1. Go to your CoE development environment.
+1. Select **Solutions**.
+1. Select your new solution.
+1. Select **+ New** in the top menu.
+ 
+   ![Screenshot showing how to add a new component](media/coe-extension-4.png "Screenshot showing how to add a new component")
+        
+1. Choose the component type to add this component to your solution.
 
- >[!IMPORTANT]
- > Create additional components within your own solution rather than the existing CoE Starter Kit solutions so that  your publisher's (author) prefix is applied to the name of the component. Your publisher's prefix enables you to differentiate your components from the components belonging to the CoE Starter Kit.
+> [!IMPORTANT]
+> Create additional components within your own solution rather than the existing CoE Starter Kit solutions so that the prefix of your publisher (author) is applied to the name of the component. Your publisher's prefix enables you to differentiate your components from the components belonging to the CoE Starter Kit.
 
 ## Customizing CoE Starter Kit components
 
