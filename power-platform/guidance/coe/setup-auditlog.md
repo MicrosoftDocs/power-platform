@@ -159,7 +159,9 @@ You should see a (200) status returned, which means the query was successful.
 ![Successful status being returned from the StartSubscription activity.](media/coe44.png "Successful status being returned from the StartSubscription activity")
 
 > [!IMPORTANT]
-> If you don't see a (200) response, the request has failed. There's an error with your setup that's keeping the flow from working. Common issues to check are: 
+> If you have previously enabled the subscription, you will see a (400) response with a **The subscription is already enabled** message. This means the subscription has successfully been enabled in the past. You can ignore this error and continue with the setup.
+> If you don't see the above message or a (200) response, the request may have failed. There could be an error with your setup that's keeping the flow from working. Common issues to check are:
+
 >
 > - Are audit logs enabled, and do you have permission to view the audit logs? Check [protection.office.com](https://protection.office.com) > **Search** > **Audit Log Search**.
 > - If you don't have permissions, see [Before you search the audit log](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?preserve-view=true&view=o365-worldwide#before-you-search-the-audit-log).
