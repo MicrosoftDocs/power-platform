@@ -17,7 +17,7 @@ search.app:
   - Powerplatform
 ---
 
-<!-- Should line 82 also mention **Name**? Is the screenshot in line 146 in the right location? It doesn't match the step. In line 158, this is confusing: "a copy of a cloud flows triggering child flows". Should it be "a cloud flow"? -->
+<!-- Should line 82 also mention **Name**? Is the screenshot in line 146 in the right location? It doesn't match the step. In line 158, this is confusing: "a copy of a cloud flows triggering child flows". Should it be "a cloud flow"? In line 227, there's either an extra word or a missing word here: "so that the components in your solution to only the ones you have modified or created". -->
 
 
 # Extend and customize CoE Starter Kit components
@@ -195,14 +195,14 @@ First, create a new model-driven application:
 1. Enter a **Name** and a **Unique Name** (technical name for the application).
 1. Select **Done**.
 
-   ![Fill in the name of the application](media/coe-extension-16.png "Fill in the name of the application")
+   ![Screenshot showing where to enter Name and Unique Name](media/coe-extension-16.png "Screenshot showing where to enter Name and Unique Name")
         
 Then, configure the new model-driven application:
 
 1. In the **App Designer**, use the menu to select the components for your app.
 1. Configure the **Site Map** to show the elements in your app's menu.
 
-   ![Configure the application](media/coe-extension-17.png "Configure the application")
+   ![Screenshot that shows how to configure the application](media/coe-extension-17.png "Screenshot that shows how to configure the application")
         
 1. Select **Save**.
 1. Select **Validate**, and correct any issues.
@@ -210,25 +210,31 @@ Then, configure the new model-driven application:
 
 #### Add a new column to an existing table
 
-1. Start by adding the table you want to add the field to, if it's not already in your solution
-    1. Go to [make.powerapps.com](<https://make.powerapps.com>).
-    1. Go to your CoE development environment.
-    1. Go to **Solutions**.
-    1. Select your solution.
-    1. Select **Add existing**.
+Start by adding the table you want to add the field to, if it's not already in your solution:
+ 
+1. Go to [make.powerapps.com](<https://make.powerapps.com>).
+1. Go to your CoE development environment.
+1. Go to **Solutions**.
+1. Select your solution.
+1. Select **Add existing**.
 
-        ![Select add existing in the top menu](media/coe-extension-5.png "Select add existing in the top menu")
-    1. Choose **Table**.
-    1. Search for the table you want to add and select **Next**.
-        > [!IMPORTANT]
-        > If you only want to add new fields and not modify the views and forms of the table, do not check the options to include **metadata** or **objects** so that the components in your solution to only the ones you have modified/created.
-        > ![Do not include all objects and table metadata](media/coe-extension-5a.png "Do not include all objects and table metadata")
-    1. Select **Add**.
-1. Adding a new field.
-    1. Select the table just added to the solution.
-    1. In the **Columns** tab, select **Add Column**
-    1. Fill in the form with the details of your new field, such as name and data type, and select **Done**.
-    1. Select **Save Table** at the bottom right of the screen.
+   ![Screenshot showing the Add existing menu](media/coe-extension-5.png "Screenshot showing the Add existing menu")
+        
+1. Choose **Table**.
+1. Search for the table you want to add and select **Next**.
+        
+   > [!IMPORTANT]
+   > If you only want to add new fields and not modify the views and forms of the table, don't check the options to include **metadata** or **objects** so that the components in your solution to only the ones you have modified or created.
+   > ![Screenshot showing the Include all objects and Include table metadata checkboxes](media/coe-extension-5a.png "Screenshot showing the Include all objects and Include table metadata checkboxes")
+    
+1. Select **Add**.
+
+Then, add a new field:
+
+1. Select the table you just added to the solution.
+1. In the **Columns** tab, select **Add Column**.
+1. Fill in the form with the details of your new field, such as name and data type, and select **Done**.
+1. Select **Save Table** at the lower right of the screen.
 
 #### Customizing an existing form
 
