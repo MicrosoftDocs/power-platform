@@ -14,11 +14,11 @@ manager: shellyha
 
 When a bot encounters a problem during a conversation, it will send an error response.
 
-If you're a bot user, the response will contain an error code for the specific problem that was encountered which should be given to your administrator.
+If you're a bot user, the response will contain an **error code** for the specific problem that was encountered which should be given to your administrator.
 
 :::image type="content" source="media/error-codes/c2-error.png" alt-text="Bot error message displayed to users.":::
 
-If you're a bot maker testing the bot in the [Test bot pane](authoring-test-bot.md), in addition to the error code, you'll also see an error message that gives more context about the problem.
+If you're a bot maker testing the bot in the [Test bot pane](authoring-test-bot.md), in addition to the error code, you'll also see an **error message** that gives more context about the problem.
 
 :::image type="content" source="media/error-codes/c1-error.png" alt-text="Bot error message displayed to bot makers.":::
 
