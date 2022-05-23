@@ -236,7 +236,7 @@ Then, add a new field:
 1. Fill in the form with the details of your new field, such as name and data type, and select **Done**.
 1. Select **Save Table** at the lower right of the screen.
 
-#### Customizing an existing form
+#### Customize an existing form
 
 Forms are used within model-driven application and portals to render table data. Forms support merge behavior.
 
@@ -283,42 +283,54 @@ Learn more: [Merge form customizations](/power-platform/alm/how-managed-solution
         
     1. Add your new form to your model-driven app in the **App Designer**.
 
-#### Customizing a view
+#### Customize a view
 
-Views are used in model-driven applications to display table data as lists.
+Views are used in model-driven apps to display table data as lists.
 
-Learn more: [Create and edit views](/power-apps/maker/model-driven-apps/create-edit-views-app-designer).
+Learn more: [Create and edit views](/power-apps/maker/model-driven-apps/create-edit-views-app-designer)
 
-1. Add the table linked to the form to your solution.
+1. Add the table linked to the form to your solution:
+ 
     1. Go to [make.powerapps.com](<https://make.powerapps.com>).
     1. Go to your CoE development environment.
     1. Go to **Solutions**.
     1. Select your solution.
     1. Select **Add existing**.
-    1. Choose **Table**
+    1. Choose **Table**.
     1. Search for the table you want to add and select **Next**.
     1. Select **Add**.
-1. Add the view you want to customize.
-    1. Select **... > + Add subcomponents**.
-        ![Select to add a subcomponent](media/coe-extension-5b.png "Select to add a subcomponent")
+
+1. Add the view you want to customize:
+ 
+    1. Select **...** > **+ Add subcomponents**.
+     
+       ![Select to add a subcomponent](media/coe-extension-5b.png "Select to add a subcomponent")
+    
     1. Select **Views** and select the view you want to customize.
     1. Select **Add**.
-1. Customize the view.
+
+1. Customize the view:
+ 
     1. Select the table and then select **Views**.
-    1. Select **... > Edit view** to edit the view.
+    1. Select **...** > **Edit view** to edit the view.
+    
     > [!NOTE]
     > Depending on the goal of your customization, you can also create a new view or duplicate the existing view.
-1. Add the new view to your model-driven application
-    1. If you have created a new view or duplicated the existing view, start by disabling the old one so that it is not shown.
-    1. On the original view, select **... > Remove view from this solution**.
-    1. Add your new view to your model-driven application in the **App Designer**
+     
+1. Add the new view to your model-driven application:
+ 
+    1. If you have created a new view or duplicated the existing view, start by disabling the old one so that it's not shown.
+    1. On the original view, select **...** > **Remove view from this solution**.
+    1. Add your new view to your model-driven application in the **App Designer**.
 
 #### Customize a model-driven app system dashboard
 
-Dashboards are used in model-driven applications to display table data as graphical components.
-Learn more: [Create or edit model-driven app dashboards](/power-apps/maker/model-driven-apps/create-edit-dashboards).
+Dashboards are used in model-driven apps to display table data as graphical components.
 
-System dashboards cannot be duplicated as system dashboards.
+Learn more: [Create or edit model-driven app dashboards](/power-apps/maker/model-driven-apps/create-edit-dashboards)
+
+System dashboards can't be duplicated as system dashboards.
+
 Two options are available to customize these dashboards:
 
 1. (Recommended option) In your development environment, create a **new system dashboard** and reuse the components from the CoE Starter Kit dashboards.
@@ -328,7 +340,7 @@ Two options are available to customize these dashboards:
 
 ## Deploy and publish your customizations
 
-Deploy the solution with your customizations as a managed solution to test and  production environments.
+Deploy the solution with your customizations as a managed solution to test and production environments.
 
 Learn more: [Implementing healthy project and solution ALM](/power-platform/alm/implement-healthy-alm)
 
