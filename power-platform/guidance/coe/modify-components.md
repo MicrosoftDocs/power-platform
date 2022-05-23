@@ -71,17 +71,20 @@ If you plan to make customizations to a large number of CoE Starter Kit componen
 <!-- editing starts here -->
 
 
-1. To create a new unmanaged solution:
-    1. Go to [make.powerapps.com](<https://make.powerapps.com>).
-    1. Go to your CoE development environment. This environment should have the managed solutions of the CoE Starter Kit components you are using installed, e.g. Center of Excellence - Core components and Center of Excellence - Innovation Backlog.
-    1. Select **Solutions**.
-    1. Select **+ New solution**.
+To create a new unmanaged solution:
 
-        ![Select New Solution](media/coe-extension-2.png "Select New Solution")
-    1. Enter the **Display Name** (e.g. *Contoso CoE Extension*), [**Publisher**](power-platform/alm/solution-concepts-alm#solution-publisher) (author of your solution) and **Version** (leave 1.0.0.0 if it is your first solution).
+1. Go to [make.powerapps.com](<https://make.powerapps.com>).
+1. Go to your CoE development environment. This environment should have the managed solutions of the CoE Starter Kit components you are using installed, e.g. Center of Excellence - Core components and Center of Excellence - Innovation Backlog.
+1. Select **Solutions**.
+1. Select **+ New solution**.
 
-        ![Enter the name, publisher and version to create the solution](media/coe-extension-3.png "Enter the name, publisher and version to create the solution")
-    1. Select **Create** to create your solution.
+   ![Select New Solution](media/coe-extension-2.png "Select New Solution")
+   
+1. Enter the **Display Name** (e.g. *Contoso CoE Extension*), [**Publisher**](power-platform/alm/solution-concepts-alm#solution-publisher) (author of your solution) and **Version** (leave 1.0.0.0 if it is your first solution).
+
+   ![Enter the name, publisher and version to create the solution](media/coe-extension-3.png "Enter the name, publisher and version to create the solution")
+   
+1. Select **Create** to create your solution.
 
 ## Creating components in a solution
 
