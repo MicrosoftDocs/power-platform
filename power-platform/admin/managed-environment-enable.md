@@ -29,3 +29,7 @@ search.app:
 ## Sharing limits
 
 ## Data policies
+
+## Licensing
+
+
