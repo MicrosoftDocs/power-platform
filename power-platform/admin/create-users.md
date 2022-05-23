@@ -8,7 +8,7 @@ ms.author: jimholtz
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/02/2022
+ms.date: 05/19/2022
 search.audienceType: 
   - admin
 search.app:
@@ -276,6 +276,8 @@ An Administrative user is a user who has access to the Settings and Administrati
 You need to have the System Administrator security role or equivalent permissions to create an administrative user. First, you'll create a user account in Microsoft 365, and then in to the customer engagement app, select the **Administrative** access mode for the account.
 
 > [!NOTE]
+> Any admin user with the Global admin, Power Platform admin, or Dynamics 365 Service admin role will receive the **Administrative** access mode as long as there are no user licenses assigned. This is true regardless of enabling app-passes or pay-as-you-go use at the tenant level.
+> 
 > See [Create an administrative user and prevent elevation of security role privilege](prevent-elevation-security-role-privilege.md) for an example of how an Administrative user account can be used.
 
 1. Create a user account in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)].  

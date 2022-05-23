@@ -2,7 +2,7 @@
 title: "Known limitations for data loss prevention (DLP) policies | MicrosoftDocs"
 description:  DLP policies known limitations.
 ms.topic: conceptual
-ms.date: 05/06/2022
+ms.date: 05/17/2022
 ms.subservice: admin
 author: mikferland-msft
 ms.author: miferlan
@@ -27,6 +27,7 @@ Below are known limitations to know about when leveraging our suite of data loss
 ## General
 - There's limited support for DLP actions in the [Power Platform for Admins connector](/connectors/powerplatformforadmins/). The ability to block a connector is only supported in the DLP actions labeled with "V2" (such as "Create DLP Policy V2"). Connector action control, connector endpoint filtering, and DLP for custom connectors can't be configured using the Power Platform for Admins connector.
 - Tabular functions in the [Power Apps expression language](/powerapps/maker/canvas-apps/formula-reference) can't be governed with DLP.
+- Solution flows need to be activated once, to create a runtime representation, before they can be targeted for DLP enforcement exemption using the [Set-PowerAppDlpPolicyExemptResources cmdlet](/powershell/module/microsoft.powerapps.administration.powershell/set-powerappdlppolicyexemptresources). If activation of the flow isn't allowed as-is because of a current DLP violation, then you could make changes to avoid violations, save, activate, add the exemption, then edit as desired with the exemption active.
 
 ## Child flows
 - Blocking the [HTTP with Azure AD](/connectors/webcontents/) connector will also block child flows because those child flows are called using the same HTTP connector technology.
