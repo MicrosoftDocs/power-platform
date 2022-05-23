@@ -244,33 +244,44 @@ Form merge occurs on a section-by-section basis. When you add new elements to an
 
 Learn more: [Merge form customizations](/power-platform/alm/how-managed-solutions-merged#merge-form-customizations)
 
-1. Add the table linked to the form to your solution.
+1. Add the table linked to the form to your solution:
+ 
     1. Go to [make.powerapps.com](<https://make.powerapps.com>).
     1. Go to your CoE development environment.
     1. Go to **Solutions**.
     1. Select your solution.
     1. Select **Add existing**.
-    1. Choose **Table**
+    1. Choose **Table**.
     1. Search for the table you want to add and select **Next**.
     1. Select **Add**.
-1. Add the form you want to customize.
-    1. Select **... > + Add subcomponents**.
-                ![Select to add a subcomponent](media/coe-extension-5b.png "Select to add a subcomponent")
+     
+1. Add the form you want to customize:
+ 
+    1. Select **...** > **+ Add subcomponents**.
+     
+       ![Select to add a subcomponent](media/coe-extension-5b.png "Select to add a subcomponent")
+                
     1. Select **Forms** and select the form you want to customize.
     1. Select **Add**.
-1. Customize the form.
+
+1. Customize the form:
+
     1. Select the table and then select **Forms**.
-    1. Select **... > Edit form** to edit the form.
+    1. Select **...** > **Edit form** to edit the form.
+    
     > [!NOTE]
     > Depending on the goal of your customization, you can also create a new form or duplicate the existing form.
-1. Add the new form to your model-driven application
-    1. If you have created a new form or duplicated the existing form, start by disabling the old one so that it is not shown.
-    1. On the original form, select **... > Remove form from this solution**.
-    1. Select **Form settings**.
-    1. Make sure that the new form's settings are configured correctly including **Ordering** and **Security roles**
+     
+1. Add the new form to your model-driven application:
 
-        ![Configure the form settings](media/coe-extension-19.png "Configure the form settings")
-    1. Add your new form to your model-driven application in the **App Designer**
+    1. If you have created a new form or duplicated the existing form, start by disabling the old one so that it's not shown.
+    1. On the original form, select **...** > **Remove form from this solution**.
+    1. Select **Form settings**.
+    1. Make sure the new form's settings are configured correctly, including **Ordering** and **Security roles**.
+
+       ![Configure the form settings](media/coe-extension-19.png "Configure the form settings")
+        
+    1. Add your new form to your model-driven app in the **App Designer**.
 
 #### Customizing a view
 
