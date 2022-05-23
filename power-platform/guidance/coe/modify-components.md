@@ -120,7 +120,7 @@ Add the canvas app to your unmanaged solution:
 1. Go to **Solutions**.
 1. Select your solution.
 1. Select **+ Add existing**.
-1. Select **App > Canvas app**.
+1. Select **App** > **Canvas app**.
 
    ![Select to add a canvas app to your solution](media/coe-extension-6.png "Select to add a canvas app to your solution")
    
@@ -134,14 +134,14 @@ Next, create a copy of the canvas app:
 
    ![Select your app and edit](media/coe-extension-8.png "Select your app and edit")
    
-1. The app is opened in the Power Apps Studio.
+1. The app is opened in Power Apps Studio.
 1. Select **File**.
 
    ![Select the File menu](media/coe-extension-9.png "Select the File menu")
    
-1. Go to **Save as**, change the name of the app (for instance add a prefix) and select **Save**.
-1. Go back to your solution, your copy of the app is displayed in the list (with your publisher prefix)
-1. Remove the original app from your solution by selecting it and in the menu selecting **Remove** then **Remove from solution**
+1. Go to **Save as**, change the name of the app (for instance, add a prefix), and select **Save**.
+1. Go back to your solution—your copy of the app is displayed in the list (with your publisher prefix).
+1. Remove the original app from your solution by selecting it and, in the menu, selecting **Remove** and then **Remove from solution**.
 
    ![Remove from solution](media/coe-extension-10.png "Remove from solution")
 
@@ -150,7 +150,7 @@ Next, create a copy of the canvas app:
 You can now safely edit your own copy.
 
 > [!NOTE]
-> Creating a copy of a canvas application to extend and customize the app means you will no longer receive updates for this app during an upgrade.
+> Creating a copy of a canvas app to extend and customize it means you'll no longer receive updates for this app during an upgrade.
 
 ### Working with cloud flows
 
