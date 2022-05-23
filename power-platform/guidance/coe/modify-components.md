@@ -259,7 +259,7 @@ Learn more: [Merge form customizations](/power-platform/alm/how-managed-solution
  
     1. Select **...** > **+ Add subcomponents**.
      
-       ![Select to add a subcomponent](media/coe-extension-5b.png "Select to add a subcomponent")
+       ![Screenshot showing selection of Add subcomponents](media/coe-extension-5b.png "Screenshot showing selection of Add subcomponents")
                 
     1. Select **Forms** and select the form you want to customize.
     1. Select **Add**.
@@ -279,7 +279,7 @@ Learn more: [Merge form customizations](/power-platform/alm/how-managed-solution
     1. Select **Form settings**.
     1. Make sure the new form's settings are configured correctly, including **Ordering** and **Security roles**.
 
-       ![Configure the form settings](media/coe-extension-19.png "Configure the form settings")
+       ![Screenshot showing the form settings window](media/coe-extension-19.png "Screenshot showing the form settings window")
         
     1. Add your new form to your model-driven app in the **App Designer**.
 
@@ -304,7 +304,7 @@ Learn more: [Create and edit views](/power-apps/maker/model-driven-apps/create-e
  
     1. Select **...** > **+ Add subcomponents**.
      
-       ![Select to add a subcomponent](media/coe-extension-5b.png "Select to add a subcomponent")
+       ![Screenshot showing how to add a subcomponent](media/coe-extension-5b.png "Screenshot showing how to add a subcomponent")
     
     1. Select **Views** and select the view you want to customize.
     1. Select **Add**.
@@ -336,7 +336,7 @@ Two options are available to customize these dashboards:
 1. (Recommended option) In your development environment, create a **new system dashboard** and reuse the components from the CoE Starter Kit dashboards.
 2. Directly in your production environment, you can create a **personal dashboard** from the system dashboard and then share it with the team.
 
-    ![Select Save As](media/coe-extension-21.png "Select Save As")
+    ![Screenshot showing Save As to customize the dashboard](media/coe-extension-21.png "Screenshot showing Save As to customize the dashboard")
 
 ## Deploy and publish your customizations
 
