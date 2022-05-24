@@ -16,6 +16,10 @@ ms.collection: virtual-agent
 
 This quickstart walks you through making a bot that uses new features and improvements introduced in the technology preview at Build. We'll be creating a simple bot that helps users make a reservation at a fictional restaurant.
 
+>
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4XQgu]
+>
+
 ## Prerequisites
 
 - [Create and edit topics](authoring-create-edit-topics.md)
