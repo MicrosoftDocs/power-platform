@@ -37,7 +37,7 @@ Note that Power Platform tenant isolation is different from Azure AD-wide tenant
 
 The default configuration in Power Platform with tenant isolation **Off** is to allow cross-tenant connections to be established seamlessly, if the user from tenant A establishing the connection to tenant B presents appropriate Azure AD credentials. If admins want to allow only a select set of tenants to establish connections to or from their tenant, they can turn tenant isolation **On**. 
 
-Once tenant isolation is turned on, inbound (connections to the tenant from external tenants) and outbound (connections from the tenant to external tenants) cross-tenant connections are blocked by Power Platform even if the user presents valid credentials to the Azure AD-secured data source.  
+With tenant isolation **On**, **all** tenants are restricted. Inbound (connections to the tenant from external tenants) and outbound (connections from the tenant to external tenants) cross-tenant connections are blocked by Power Platform even if the user presents valid credentials to the Azure AD-secured data source. You can use rules to add exceptions.  
 
 Admins can specify an explicit allowlist of tenants that they want to enable **inbound**, **outbound**, or both, which will bypass tenant isolation controls when configured. Admins can use a special pattern “\*”  to allow *all* tenants in a specific direction when tenant isolation is turned on. All other cross-tenant connections except the ones in the allowlist are rejected by Power Platform. 
 
@@ -104,9 +104,6 @@ In this scenario, the admin adds the Fabrikam tenant to both the inbound and out
 In the Power Platform admin center, tenant isolation is set with **Policies** > **Tenant isolation**.  
 
 :::image type="content" source="media/enable-tenant-isolation.png" alt-text="Enable tenant isolation.":::
-
-> [!NOTE]
-> With tenant isolation **On**, **all** tenants are restricted. You can use rules to add exceptions.
 
 The tenant isolation allowlist can be configured by using **New tenant rule** on the **Tenant Isolation** page. If tenant isolation is **Off**, you can add or edit the rules in the list. However, these rules won't be enforced until you turn tenant isolation **On**. 
 
