@@ -23,10 +23,6 @@ After you've published at least once, you can connect your bot to more channels.
 
 Each time you want to update your bot, you publish it again from within the Power Virtual Agents app itself. Publishing your bot will update the bot across all the channels where you've inserted or connected your bot.
 
->
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mGa9]
->
-
 ## Publish the latest bot content
 
 You need to publish the bot at least once before your customers can interact with it or before you can share it with your teammates. After the first publish, you can publish the bot again whenever you'd like your customers to engage with the latest bot content.

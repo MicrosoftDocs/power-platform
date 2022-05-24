@@ -21,10 +21,6 @@ A big part of bot conversations in Power Virtual Agents is natural language unde
 
 One fundamental aspect of natural language understanding is to identify *entities* in a user dialog. An entity can be viewed as an information unit that represents a certain type of a real-world subject, like a phone number, zip code, city, or even a person's name.
 
->
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mTUN]
->
-
 ## Prebuilt entities
 
 Out of the box, Power Virtual Agents comes with a set of prebuilt entities, which represent the most commonly used stereotype information in real-world dialogs, such as age, colors, numbers, and names.
