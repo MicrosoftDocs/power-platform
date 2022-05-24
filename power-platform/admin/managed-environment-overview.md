@@ -37,4 +37,3 @@ Intro paragraph.
 
 ## Data policies
 
-## Licensing

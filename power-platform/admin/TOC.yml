@@ -156,11 +156,11 @@
           href: managed-environment-overview.md
         - name: Enable environment management
           href: managed-environment-enable.md
-        - name: Topic two 
-          href: managed-environment-two.md 
-        - name: Topic three 
-          href: managed-environment-three.md
-      - name: Manage updates
+        - name: Weekly digests
+          href: managed-environment-weekly-digests.md 
+        - name: Sharing limits
+          href: managed-environment-sharing-limits.md
+      - name: Environment updates
         items:
         - name: Opt in to early access updates
           href: opt-in-early-access-updates.md
@@ -168,7 +168,7 @@
           href: general-availability-deployment.md
         - name: "Manage maintenance window (preview)"
           href: manage-maintenance-window.md
-      - name: Manage settings 
+      - name: Environment settings 
         items:
         - name: Power Platform 
           href: power-platform-settings.md
