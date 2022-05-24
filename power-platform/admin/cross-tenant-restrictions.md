@@ -1,7 +1,7 @@
 ---
 title: Restrict cross-tenant inbound and outbound access (preview) 
 description: "Use tenant restrictions to control access to SaaS cloud applications based on the Azure AD tenant. You can also enforce tenant isolation for Power Platform connections."  
-ms.date: 03/07/2022
+ms.date: 05/23/2022
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: conceptual
@@ -37,7 +37,7 @@ Note that Power Platform tenant isolation is different from Azure AD-wide tenant
 
 The default configuration in Power Platform with tenant isolation **Off** is to allow cross-tenant connections to be established seamlessly, if the user from tenant A establishing the connection to tenant B presents appropriate Azure AD credentials. If admins want to allow only a select set of tenants to establish connections to or from their tenant, they can turn tenant isolation **On**. 
 
-Once tenant isolation is turned on, inbound (connections to the tenant from external tenants) and outbound (connections from the tenant to external tenants) cross-tenant connections are blocked by Power Platform even if the user presents valid credentials to the Azure AD-secured data source.  
+With tenant isolation **On**, **all** tenants are restricted. Inbound (connections to the tenant from external tenants) and outbound (connections from the tenant to external tenants) cross-tenant connections are blocked by Power Platform even if the user presents valid credentials to the Azure AD-secured data source. You can use rules to add exceptions.  
 
 Admins can specify an explicit allowlist of tenants that they want to enable **inbound**, **outbound**, or both, which will bypass tenant isolation controls when configured. Admins can use a special pattern “\*”  to allow *all* tenants in a specific direction when tenant isolation is turned on. All other cross-tenant connections except the ones in the allowlist are rejected by Power Platform. 
 
