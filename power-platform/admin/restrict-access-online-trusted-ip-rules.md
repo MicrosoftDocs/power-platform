@@ -24,7 +24,7 @@ You can limit access to users with block access by location to reduce unauthoriz
 
 **Requirements**  
   
-- A subscription to [Azure Active Directory Premium](https://www.microsoft.com/cloud-platform/azure-active-directory).  
+- A subscription to [Azure Active Directory Premium](https://www.microsoft.com/security/business/identity-access-management/azure-active-directory).  
   
 - A federated [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)] tenant. See [What is Conditional Access?](/azure/active-directory/conditional-access/overview)
 

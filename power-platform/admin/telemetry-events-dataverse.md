@@ -180,7 +180,7 @@ requests
 
 In this chart, we can see the performance of the API endpoint over a period of time against the number of requests being made.
 
-You can also [set up an alert](/azure/azure-monitor/learn/tutorial-alert) based on the performance of a particular API here within Application Insights.
+You can also [set up an alert](/azure/azure-monitor/app/tutorial-alert) based on the performance of a particular API here within Application Insights.
 
 ### Can I drill down on errors or failures at specific times or for specific users to allow for understanding the call stack?
 
