@@ -29,7 +29,7 @@ Storage has important data from your environment. An SAS token provides secure, 
 ## Prerequisites
 This section describes the prerequisites necessary to access the storage with the SAS token and view your data.
 
-- **Environment Maker or System Customizer Role**. You must have the **Environment Maker** role or the **System Customizer** role on the environment where you want to access the SAS token. For more information about environment roles, see [Configure user security to resources in an environment](database-security.md).
+- **System administrator role**. You must have the **system Administrator** role on the environment where you want to access the SAS token. For more information about environment roles, see [Configure user security to resources in an environment](database-security.md).
 
 - **Azure Storage Explorer**. [Get it now](https://azure.microsoft.com/features/storage-explorer/#overview)
 
