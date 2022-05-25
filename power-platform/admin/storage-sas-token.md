@@ -2,11 +2,10 @@
 title: " Access your storage with an SAS token | MicrosoftDocs"
 description: "Learn how to gain access the SAS token for your storage and view the data in your storage."
 author: sama-zaki
-
 ms.component: pa-admin
 ms.topic: conceptual
 ms.custom: intro-internal
-ms.date: 11/01/2021
+ms.date: 05/25/2022
 ms.subservice: admin
 ms.author: zakisama
 ms.reviewer: jimholtz
