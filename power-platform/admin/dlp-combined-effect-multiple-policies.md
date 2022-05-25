@@ -37,28 +37,36 @@ Compared to evaluating the effect of the **Blocked** classification, evaluating 
 Note that the most restrictive grouping is finally imposed when all the policies applicable to an environment are evaluated together. Consider an example of three policies (A, B, and C) across 10 connectors (SharePoint, Twitter, Salesforce, Facebook, Face API, Microsoft 365 Outlook, Basecamp 3, Adobe Sign, Azure Blob storage, and Box). These connectors are classified as **Business** or **Non-Business** as represented by two categories each across the three policies (-E1- and -E2- for policy A, -E3- and -E4- for policy B, and -E5- and -E6- for policy C).
 
 **Policy A** <br />
--E1- **Business** – SharePoint, Twitter, Salesforce, Microsoft 365 Outlook, Basecamp 3 <br />
--E2- **Non-Business** – Facebook, Face API, Adobe Sign, Azure Blob storage, Box
+| Category | Classification | Connectors |
+| -------- | -------------- | ---------- |
+| -E1- | **Business** | SharePoint, Twitter, Salesforce, Microsoft 365 Outlook, Basecamp 3 |
+| -E2- | **Non-Business** | Facebook, Face API, Adobe Sign, Azure Blob storage, Box |
 
 **Policy B** <br />
--E3- **Business**  – SharePoint, Facebook, Face API, Microsoft 365 Outlook, Basecamp 3 <br />
--E4- **Non-Business** – Twitter, Salesforce, Adobe Sign, Azure Blob storage, Box
+| Category | Classification | Connectors |
+| -------- | -------------- | ---------- |
+| -E3- | **Business**  | SharePoint, Facebook, Face API, Microsoft 365 Outlook, Basecamp 3 |
+| -E4- | **Non-Business** | Twitter, Salesforce, Adobe Sign, Azure Blob storage, Box |
 
 **Policy C** <br />
--E5- **Business**  – Facebook, Face API, Twitter, Salesforce, Microsoft 365 Outlook <br />
--E6- **Non-Business** – SharePoint, Adobe Sign, Azure Blob storage, Box, Basecamp 3
+| Category | Classification | Connectors |
+| -------- | -------------- | ---------- |
+| -E5- | **Business** | Facebook, Face API, Twitter, Salesforce, Microsoft 365 Outlook |
+| -E6- | **Non-Business** | SharePoint, Adobe Sign, Azure Blob storage, Box, Basecamp 3 |
 
 When all three policies are applied together to the same environment, the net result is fragmentation of connectors across eight (2<sup>3</sup> = 8) groups, as depicted below. Only connectors in the same group (out of eight possible combinations) can be used in a given app or flow. 
 
 **Consolidated grouping** <br />
--E1-, -E3-, -E5- Group 1 – Microsoft 365 Outlook <br />
--E1-, -E3-, -E6- Group 2 – SharePoint, Basecamp 3 <br />
--E1-, -E4-, -E5- Group 3 – Twitter, Salesforce <br />
--E1-, -E4-, -E6- Group 4 – NULL <br />
--E2-, -E3-, -E5- Group 5 – Facebook, Face API <br />
--E2-, -E3-, -E6- Group 6 – NULL <br />
--E2-, -E4-, -E5- Group 7 – NULL <br />
--E2-, -E4-, -E6- Group 8 – Adobe Sign, Azure Blob storage, Box
+| Categories | Group | Connectors |
+| ---------- | ----- | ---------- |
+| -E1-, -E3-, -E5- | Group 1 | Microsoft 365 Outlook |
+| -E1-, -E3-, -E6- | Group 2 | SharePoint, Basecamp 3 |
+| -E1-, -E4-, -E5- | Group 3 | Twitter, Salesforce |
+| -E1-, -E4-, -E6- | Group 4 | NULL |
+| -E2-, -E3-, -E5- | Group 5 | Facebook, Face API |
+| -E2-, -E3-, -E6- | Group 6 | NULL |
+| -E2-, -E4-, -E5- | Group 7 | NULL |
+| -E2-, -E4-, -E6- | Group 8 | Adobe Sign, Azure Blob storage, Box |
 
 To summarize: an app or flow can only use connectors from these individual groups at any given time, and it can't mix connectors across the eight different groups. From the examples above, note that multiple DLP policies applied to an environment will fragment your connector space in complicated ways. Therefore, we highly recommended that you apply a minimum number of DLP policies to any given environment. 
 
