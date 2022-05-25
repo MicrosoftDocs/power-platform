@@ -7,9 +7,8 @@ ms.subservice: alm
 ms.author: matp
 manager: kvivek
 ms.custom: ""
-ms.date: 05/25/2020
+ms.date: 05/25/2022
 ms.reviewer: ""
-
 ms.topic: "article"
 search.audienceType: 
   - maker
@@ -69,7 +68,8 @@ A component represents something that you can potentially customize. Anything th
 > ![Components in solution.](media/components-in-solution.png "Components in solution") 
 
 > [!NOTE]
-> You can't edit components directly within a managed solution.
+> - A solution can be up to 30 MB in size.
+> - You can't edit components directly within a managed solution.
 
 To view a list of component types that can be added to any solution, see [ComponentType Options](/powerapps/developer/common-data-service/reference/entities/solutioncomponent#componenttype-options). 
 
