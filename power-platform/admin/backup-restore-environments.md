@@ -112,7 +112,7 @@ You can only restore to sandbox environments. To restore to a production environ
   
 4. Select a manual backup to restore, and then select **Restore**. 
 
-5. Select whether to include audit logs. Including audit logs can significantly add to the time it takes to restore an environment and by default is not done. See the [Restore audit logs](#restore-audit-logs) section.
+5. Select whether to include audit logs. Including audit logs can significantly add to the time it takes to restore an environment and by default is not done. See the [Restore audit logs](#restoring-audit-logs) section.
 
    :::image type="content" source="media/restore-backup-audit-logs.png" alt-text="Include audit logs when restoring a backup.":::
 
