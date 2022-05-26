@@ -28,7 +28,7 @@ landingContent:
             url: get-started-developers.md
           - text: "Developers: Understand terminology"
             url: understand-terminology.md
-       - linkListsType: reference
+       - linkListType: reference
          links:
           - text: Fusion development ebook
             url: ../../power-apps/guidance/fusion-dev-ebook/
