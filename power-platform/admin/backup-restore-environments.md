@@ -131,7 +131,7 @@ Restoring audit logs can significantly add to the time it takes to copy an envir
 
 2. Under **Audit logs**, select **Click here**.
 
-   :::image type="content" source="media/copy-environment-audit-logs.png" alt-text="Select click here to include audit logs.":::
+   :::image type="content" source="media/restore-backup-audit-logs.png" alt-text="Select click here to include audit logs.":::
 
 3. Enable copying audit logs.
 
