@@ -24,8 +24,7 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Managed Environments is a suite of capabilities that allow admins to manage Power Platform at scale with more control, less effort, and  
-more insights. There are three primary elements of managed environments: weekly digests, sharing limits, and data policies.
+Managed Environments is a suite of capabilities that allow admins to manage Power Platform at scale with more control, less effort, and more insights. There are three primary elements of managed environments: weekly digests, sharing limits, and data policies.
 
 > [!IMPORTANT]
 > - This is a preview feature.
