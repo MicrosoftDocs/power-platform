@@ -24,36 +24,44 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Managed Environments is a suite of capabilities that allow admins to manage Power Platform at scale with more control, less effort, and more insights. There are three primary elements of managed environments: weekly digests, sharing limits, and data policies.
+Managed environments is a suite of capabilities that allow admins to manage Power Platform at scale with more control, less effort, and more insights. Admins can enable environment management on any type of environment. There are three primary elements of managed environments: 
+
+- [Weekly digests](managed-environment-weekly-digests.md)
+- [Sharing limits](managed-environment-sharing-limits.md)
+- [Data policies](#data-policies) 
 
 > [!IMPORTANT]
 > - This is a preview feature.
 > - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 > - This feature is being gradually rolled out across regions and might not be available yet in your region.
 
-## Weekly digests
-
-## Sharing limits
-
-Managed environments allow admins to influence how broadly makers can share canvas apps. There are two sharing controls.  
-
-
-|Sharing control   |System behavior when checked?   |
-|---------|---------|
-|**Exclude sharing with security groups**      | Makers cannot share canvas apps with any security groups. <br />Admins get the option to proceed with setting a limit on  individuals shared to.          |
-|**Limit total individuals who can be shared to**     |  Makers cannot share canvas apps with more individuals than specified in the text box.        |
-
-**Limit total individuals who can be shared to** is only enabled if **Exclude sharing with security groups** is checked. This is because security groups may have unbounded membership. For instance, a Maker could share an app with a security group that has 5 members one day and, in the future after the app was shared, the security group could grow to 500 members.  
-
-> [!NOTE]
-> Sharing rules are enforced when makers attempt to share an app. Sharing rules do not change the audience apps in an environment are already shared with.  
-
-screenshot
-
 ## Data policies
 
-Another capability of a managed environment is enforcing policies that define the consumer connectors that specific data can be shared with. These policies are called data loss prevention (DLP) policies. DLP policies ensure that data is managed in a uniform manner across your organization, and they prevent important business data from being accidentally published to connectors such as social media sites. For more information on creating and managing DLP policies, see [Data loss prevention policies](wp-data-loss-prevention.md).
+A principal capability of a managed environment is enforcing policies that define the consumer connectors that specific data can be shared with. These policies are called data loss prevention (DLP) policies. DLP policies ensure that data is managed in a uniform manner across your organization, and they prevent important business data from being accidentally published to connectors such as social media sites. For more information on creating and managing DLP policies, see [Data loss prevention policies](wp-data-loss-prevention.md).
 
+## Enabling environment management
+
+Admins can enable environment management using the [Power Platform admin center](managed-environment-enable.md) or by calling the API from PowerShell. 
+
+<UX workflow here> 
+
+Admins can remove the Managed Environment property on an environment using the available API if respective environment is not using any of the capabilities available. The following is an example on how to call the API to set the Managed Environment property using PowerShell: 
+
+## Permissions
+
+- Users with either the global admin, Power Platform service admin or Dynamics 365 admin AAD roles are allowed to enable environment management. 
+- Any user with permission to see environment details can retrieve the Managed Environment property for the environment.  
+- Users with the delegated admin role are not allowed to change the Managed Environment property on an environment. 
+- Users with the Environment Admin security role are not allowed to change the Managed Environment property on an environment.  
+
+> [!IMPORTANT]
+> Copy and restore environment lifecycle operations require Managed Environment property to be the same between source and destination before the respective environment lifecycle operation can start. 
+
+## Licensing
+
+Managed Environments represent a value-add for Power Platform premium licenses. All applications and flows in an Managed Environment are premium and can be licensed using any of the Power Platform licensing options (per user, per app/flow or pay-as-you-go) or D365 licenses that give premium usage rights. 
+
+During the public preview the premium license requirement for applications and flows within a Managed Environment is not enforced. 
 
 ### See also  
 
