@@ -187,6 +187,7 @@ Copying audit logs can significantly add to the time it takes to copy an environ
 
    :::image type="content" source="media/copy-environment-audit-logs-enable.png" alt-text="Enable copying audit logs.":::
 
+4. Continue with steps 6-9 above.
 
 ### Next steps after copying an environment  
  To ensure the newly created copy (target) environment does not impact your production environment, once the copy operation is complete, two things happen:  
