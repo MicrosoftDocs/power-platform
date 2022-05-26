@@ -1,5 +1,5 @@
 ---
-title: "Fusion development"
+title: "Fusion development overview"
 description: "Overview of fusion development."
 keywords: 
 author: marcelbf
@@ -18,7 +18,7 @@ search.app:
   - Azure
 ---
 
-# Fusion development
+# Fusion development overview
 
 Fusion development or fusion teams development, is defined by Gartner as "distributed and multidiciplinary digital busdiness teams that blend technology and other types of domain expertise." (Source: 2019 Gartner Digital Business Teams Survey)
 Fusion development allows your business to build better applications, faster by bringing together professional developers with citizen, or low-code, developers.
