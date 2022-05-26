@@ -24,7 +24,7 @@ landingContent:
     linkLists:
        - linkListType: overview
          links:
-          - text: "Developers: Get started"
+          - text: "Introduction to Microsoft Power Platform for Developers"
             url: get-started-developers.md
           - text: "Fusion development"
             url: fusion-development.md
@@ -40,7 +40,7 @@ landingContent:
             url: /learn/paths/transform-business-applications-with-fusion-development/  
           
   # Card
-  - title: For back end
+  - title: Back end developer
     linkLists:
        - linkListType: overview
          links:
@@ -56,7 +56,7 @@ landingContent:
             url: ./dataverse-sql-query.md
 
   # Card
-  - title: For DevOps Engineer
+  - title: Front end developer
     linkLists:
       - linkListType: overview
         links:
@@ -70,7 +70,6 @@ landingContent:
             url: ./import-data.md
           - text: Data Export Service
             url: ./data-export-service.md
-      
 
   # Card
   - title: Tools and resources
@@ -89,71 +88,6 @@ landingContent:
         links:
           - text: Write and register a plug-in
             url: ./tutorial-write-plug-in.md
-  
-  # Card
-  - title: Deploy and publish
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Solution concepts
-            url: ./introduction-solutions.md
-          - text: ALM for developers
-            url: /power-platform/alm/alm-for-developers
-      - linkListType: sample
-        links:
-          - text: Work with solutions using the SDK APIs
-            url: /power-platform/alm/solution-api
-      - linkListType: how-to-guide
-        links:
-          - text: Publish your app on AppSource
-            url: ./publish-app-appsource.md
-
-    # Card
-  - title: Create client applications
-    linkLists: 
-       - linkListType: overview
-         links:
-          - text: Authentication and the web services
-            url: authentication.md
-          - text: Build web applications using Server-to-Server (S2S) authentication
-            url: build-web-applications-server-server-s2s-authentication.md
-          - text: Use OAuth with CORS to connect an SPA
-            url: ./oauth-cross-origin-resource-sharing-connect-single-page-application.md
-          - text: Build Windows client applications using the XRM tools
-            url: xrm-tooling/build-windows-client-applications-xrm-tools.md
-       - linkListType: tutorial
-         links:  
-          - text: Register an app with Azure Active Directory
-            url: walkthrough-register-app-azure-active-directory.md
-
-  # Card
-  - title: Tools and resources
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: View the developer resources page
-            url: ./view-download-developer-resources.md
-          - text: Developer tools
-            url: ./developer-tools.md
-          - text: Microsoft Power Platform CLI
-            url: ./powerapps-cli.md
-          - text: Community tools
-            url: ./community-tools.md
-  
-  # Card
-  - title: Table and API reference
-    linkLists:
-      - linkListType: reference
-        links:
-          - text: Table reference
-            url: reference/about-entity-reference.md
-          - text: SDK API class libraries
-            url: /dotnet/api/?view=dataverse-sdk-latest
-          - text: Web API
-            url: /dynamics365/customer-engagement/web-api/about
-          - text: XRM Tooling API Reference
-            url: /dotnet/api/microsoft.xrm.tooling.connector
-
 
   # Card
   - title: Related resources
