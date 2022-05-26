@@ -44,16 +44,16 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Azure integration
+          - text: Overview
             url: ./azure-integration.md
-          - text: Webhooks
-            url: ./use-webhooks.md
-          - text: Synchronize data with external system
-            url: ./data-synchronization.md
-          - text: Import data
-            url: ./import-data.md
-          - text: Data Export Service
-            url: ./data-export-service.md
+      - linkListType: quickstart
+        links:
+          - text: Build a PCF control
+            url: pcf.md
+      - linkListType: reference
+        links:
+          - text: PCF documentation
+            url: pcf-2.md
 
   # Card
   - title: Back-end developer
