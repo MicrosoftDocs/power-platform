@@ -26,8 +26,8 @@ landingContent:
          links:
           - text: "Developers: Get started"
             url: get-started-developers.md
-          - text: "Developers: Understand terminology"
-            url: understand-terminology.md
+          - text: "Fusion development"
+            url: fusion-development.md
        - linkListType: reference
          links:
           - text: Fusion development ebook
@@ -35,11 +35,12 @@ landingContent:
        - linkListType: learn
          links:
           - text: Introduction to developing with Microsoft Power Platform
-            url: /learn/paths/intro-developing-power-platform/
-         
+            url: /learn/paths/intro-developing-power-platform/   
+          - text: Transform your business applications with fusion development
+            url: /learn/paths/transform-business-applications-with-fusion-development/  
           
   # Card
-  - title: Work with data
+  - title: For back end
     linkLists:
        - linkListType: overview
          links:
@@ -55,7 +56,7 @@ landingContent:
             url: ./dataverse-sql-query.md
 
   # Card
-  - title: Integrate external data
+  - title: For DevOps Engineer
     linkLists:
       - linkListType: overview
         links:
@@ -72,7 +73,7 @@ landingContent:
       
 
   # Card
-  - title: Apply business logic
+  - title: Tools and resources
     linkLists:
       - linkListType: concept
         links:
