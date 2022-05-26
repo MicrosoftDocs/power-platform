@@ -106,7 +106,9 @@ In addition, organizations can use [Content Security Policy](../content-security
 
 ### Does Power Platform support Content Security Policy?
 
-Power Platform supports [Content security policy](../content-security-policy.md) for model-driven apps. 
+Power Platform supports [Content security policy](../content-security-policy.md) for model-driven apps. We do not support the following headers which are replaced by CSP:
+- `X-XSS-Protection`
+- `X-Frame-Options`
 
 ### How can we connect to SQL Server securely?
 
