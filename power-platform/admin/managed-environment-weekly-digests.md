@@ -1,5 +1,5 @@
 ---
-title: "Enable weekly digests | MicrosoftDocs"
+title: "Weekly digests | MicrosoftDocs"
 description: Learn how to use environment management to enable weekly digests.
 ms.component: pa-admin
 ms.topic: conceptual
@@ -20,7 +20,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Enable weekly digests
+# Weekly digests
 
 
 
