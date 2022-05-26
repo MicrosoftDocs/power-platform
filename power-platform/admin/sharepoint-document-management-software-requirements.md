@@ -47,7 +47,7 @@ Server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)]
  Users who access [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] from an app must have appropriate permissions on the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site collection where the document management components are installed. For more information about how to grant membership on a site collection, see the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] Help.  
  
 > [!NOTE]
-> Sharepoint integration can only be enabled by a user with global administrator permissions. Delegate administrators are not able to enable Sharepoint functionality.
+> SharePoint integration can only be enabled by a user with global administrator permissions. Delegate administrators are not able to enable SharePoint functionality.
 
 ### See also  
 
