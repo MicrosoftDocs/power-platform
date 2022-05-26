@@ -43,7 +43,7 @@ A principal capability of a managed environment is enforcing policies that defin
 
 Admins can enable environment management using the [Power Platform admin center](managed-environment-enable.md) or by calling the API from PowerShell. 
 
-<UX workflow here> 
+UX workflow here
 
 Admins can remove the Managed Environment property on an environment using the available API if respective environment is not using any of the capabilities available. The following is an example on how to call the API to set the Managed Environment property using PowerShell: 
 
