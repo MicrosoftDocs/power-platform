@@ -1,6 +1,6 @@
 ---
 title: "Introduction to Microsoft Power Platform for Developers"
-description: "Overview of how to extend power platform for azure developers."
+description: "Overview of how to extend power platform for Azure developers."
 keywords: 
 author: marcelbf
 ms.subservice: alm
@@ -24,7 +24,7 @@ Microsoft Power Platform is a low-code platform for building business apps quick
 
 The platform uses a low-code approach to build solutions rapidly. It allows everyone in an organization, from frontline workers to professional developers, to participate in building apps that drive positive business outcomes. Developers can work seamlessly with the makers in an organization to help fill gaps and solve complex challenges using a rich extensibility model provided by the platform components. Using native integration with Azure, developers can also use their cloud development skills to extend Microsoft Power Platform. This approach to low-code development is a transformative way to achieve application development objectives within an organization quickly.
 
-To be an efficient developer on the platform, it's important to understand the basics of what the platform offers. The following is a high-level overview of each of the core components and their key extensibility points.
+To be an efficient developer on the platform, it's important to understand the basics of what the platform offers. Bellow is a high-level overview of each of the core components and their key extensibility points.
 
 ## Power Apps applications 
 
@@ -34,7 +34,7 @@ Apps created with Power Apps are consumed by users using their desktop or mobile
 | ---- | ---- |
 | **Canvas** | Provide the maker with complete control over the pixel-perfect screen contents and navigation between multiple screens. Canvas applications use connectors to work with data and services. Canvas applications can be embedded into SharePoint, Teams, Power BI, and Dynamics 365 applications. |
 | **Model Driven** | data-driven applications that are built on top of Microsoft Dataverse. Other data sources and services can be used by model-driven applications by embedding a canvas application. |
-| **Power Apps Portal** | used to create external-facing websites that allow users outside an organization to sign in with a wide variety of identities, create and view data from Dataverse, or even browse content anonymously. |
+| **Power Apps Portal** | Used to create external-facing websites that allow users outside an organization to sign in with a wide variety of identities, create and view data from Dataverse, or even browse content anonymously. |
 
 > [!TIP]
 > The following are the key developer extensibility points for Power Apps:

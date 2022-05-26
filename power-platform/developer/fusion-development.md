@@ -32,7 +32,7 @@ Apps created with Power Apps are consumed by users using their desktop or mobile
 
 | Persona | Description | Skills |
 | ---- | ---- | --- |
-| **Citizen Developer** or maker | A business user with business knowledge looking for ways to improve a business process. Use visual, drag and drop and low code tools. Usually does not have a technical background. |
+| **Citizen Developer** or maker | A business user with business knowledge looking for ways to improve a business process. Use visual, drag and drop and low code tools. Usually don't have a technical background. |
 | **Professional Developer** or code-first developer | Pro devs use pro dev tools to accomplish pro dev tasks. For example, white code in VS or VS Code using pro languages like C#. |
 | **IT Professional** or DevOps Engineer | An IT professional responsible for the Application Lifecycle Management (ALM) of business applications. |
 
