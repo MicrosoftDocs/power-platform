@@ -75,4 +75,15 @@ Power Virtual Agents lets you create powerful chatbots that can answer questions
 > - Build Bot Framework Skills
 > - Extend bots with Bot Framework Composer
 
+## Dataverse
+
+Dataverse is a cloud scale data store that build on Microsoft's data technologies and abstracts away data management complexity from the app maker. It lets you securely store and manage data that is used by business applications. Business data within Dataverse is stored within a set of data tables. Role-based security allows businesses to control access to the data tables and even individual records for different users within your organization. Developers can extend or customize Dataverse functionality by adding custom business logic. You can define calculated table columns, business rules, workflows, and business process flows to ensure data quality and drive business processes.
+
+> [!TIP]
+> The following are the key developer extensibility points:
+> - Create plug-ins, similar to event handlers, that customize or extend Dataverse data processing with custom business logic (code)
+> - Use webhooks and Azure Service Bus to integrate with external systems
+> - Extend the Dataverse API with your own custom API that implements your business logic
+> - Use virtual tables to integrate data stored in external systems into Dataverse without replicating the data
+
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
