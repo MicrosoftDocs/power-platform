@@ -146,7 +146,7 @@ After modifying and enabling some of the plug-ins, the developer sandbox environ
 4. Select the desired copy over level.
   
    > [!div class="mx-imgBorder"] 
-   > ![Copy environment.](media/copy-environment1.png "Copy environment")
+   > ![Select the desired copy over level.](media/copy-environment1.png "Select the desired copy over level.")
 
 5. If you selected **Everything** to copy, select whether to copy over audit logs. See the [Copying audit logs](#copying-audit-logs) section.
 
@@ -162,14 +162,14 @@ After modifying and enabling some of the plug-ins, the developer sandbox environ
 8. Edit the details for the copied environment, and then select **Copy**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Copy environment.](media/copy-environment2.png "Copy environment")
+   > ![Select Copy.](media/copy-environment2.png "Select Copy.")
 
 9. Select **Confirm** to overwrite the target environment.
 
 The overwrite process starts.
 
 > [!div class="mx-imgBorder"] 
-> ![Copy environment status.](media/copy-environment-status.png "Copy environment status")
+> ![Copy environment status.](media/copy-environment-status.png "Copy environment status.")
   
 Once the copy process is complete, the target environment is placed in [Administration mode](sandbox-environments.md#administration-mode) and background operations are disabled. The next section describes recommended Administrator actions for the newly created copy (target) environment.  
  
