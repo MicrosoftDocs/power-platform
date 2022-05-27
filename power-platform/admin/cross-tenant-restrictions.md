@@ -33,7 +33,7 @@ Microsoft Power Platform has a rich ecosystem of connectors based on Azure Activ
 > - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 > - This feature is being gradually rolled out across regions and might not be available yet in your region.
 
-Note that Power Platform tenant isolation is different from Azure AD-wide tenant restriction. It *doesn't* impact Azure AD-based access outside of Power Platform. Power Platform tenant isolation only works for connectors using Azure AD-based authentication such as Office 365 Outlook or Sharepoint. 
+Note that Power Platform tenant isolation is different from Azure AD-wide tenant restriction. It *doesn't* impact Azure AD-based access outside of Power Platform. Power Platform tenant isolation only works for connectors using Azure AD-based authentication such as Office 365 Outlook or SharePoint. 
 
 The default configuration in Power Platform with tenant isolation **Off** is to allow cross-tenant connections to be established seamlessly, if the user from tenant A establishing the connection to tenant B presents appropriate Azure AD credentials. If admins want to allow only a select set of tenants to establish connections to or from their tenant, they can turn tenant isolation **On**. 
 
