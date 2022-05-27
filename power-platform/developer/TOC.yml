@@ -4,7 +4,7 @@
     href: ./index.yml
   - name: Introduction to Microsoft Power Platform for Developers   
     href: get-started-developers.md     
-  - name: Fusion development overview
+  - name: Fusion development
     href: fusion-development.md
   - name: Front-end developer
     items:
