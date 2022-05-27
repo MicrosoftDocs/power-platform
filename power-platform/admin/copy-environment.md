@@ -3,7 +3,7 @@ title: "Copy an environment"
 description: "Learn how to copy apps and data from an environment. Review next steps for administrators in the target environment." 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/02/2022
+ms.date: 05/26/2022
 ms.subservice: admin
 author: ChrisGarty
 ms.author: cgarty
@@ -148,21 +148,23 @@ After modifying and enabling some of the plug-ins, the developer sandbox environ
    > [!div class="mx-imgBorder"] 
    > ![Copy environment.](media/copy-environment1.png "Copy environment")
 
-5. Select a target environment.
+5. If you selected **Everything** to copy, select whether to copy over audit logs. See the [Copying audit logs](#copying-audit-logs) section.
+
+6. Select a target environment.
   
    A target environment can be a sandbox or preview environment, not a production environment. If you're copying an environment of type **Trial (subscription-based)**, you'll be able to see and select target environments of the same type, that is **Trial (subscription-based)**.
   
    > [!WARNING]
    >  The target environment will be deleted and replaced with a copy of the data and customizations from the source environment. You won’t be able to recover any deleted data.  
 
-6. To restrict environment access to people in a security group select **Edit** (![Edit.](media/edit-button.png)).
+7. To restrict environment access to people in a security group select **Edit** (![Edit.](media/edit-button.png)).
 
-7. Edit the details for the copied environment, and then select **Copy**.
+8. Edit the details for the copied environment, and then select **Copy**.
 
    > [!div class="mx-imgBorder"] 
    > ![Copy environment.](media/copy-environment2.png "Copy environment")
 
-8. Select **Confirm** to overwrite the target environment.
+9. Select **Confirm** to overwrite the target environment.
 
 The overwrite process starts.
 
@@ -171,6 +173,22 @@ The overwrite process starts.
   
 Once the copy process is complete, the target environment is placed in [Administration mode](sandbox-environments.md#administration-mode) and background operations are disabled. The next section describes recommended Administrator actions for the newly created copy (target) environment.  
  
+### Copying audit logs
+
+Copying audit logs can significantly add to the time it takes to copy an environment and by default is not done. Do the following steps to include audit logs in the environment copy.
+
+1. Complete steps 1-5 above.
+
+2. Under **Audit logs**, select **Click here**.
+
+   :::image type="content" source="media/copy-environment-audit-logs.png" alt-text="Select click here to include audit logs.":::
+
+3. Enable copying audit logs.
+
+   :::image type="content" source="media/copy-environment-audit-logs-enable.png" alt-text="Enable copying audit logs.":::
+
+4. Continue with steps 6-9 above.
+
 ### Next steps after copying an environment  
  To ensure the newly created copy (target) environment does not impact your production environment, once the copy operation is complete, two things happen:  
   
