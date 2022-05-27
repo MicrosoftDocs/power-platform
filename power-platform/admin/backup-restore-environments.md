@@ -4,7 +4,7 @@ description: Covers how to back up and restore environments
 services: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/22/2022
+ms.date: 05/26/2022
 ms.subservice: admin
 author: ChrisGarty
 ms.author: cgarty
@@ -112,13 +112,32 @@ You can only restore to sandbox environments. To restore to a production environ
   
 4. Select a manual backup to restore, and then select **Restore**. 
 
-5. Select an environment to restore to (overwrite), and then select **Restore**.
+5. Select whether to include audit logs. Including audit logs can significantly add to the time it takes to restore an environment and by default is not done. See the [Restoring audit logs](#restoring-audit-logs) section.
+
+   :::image type="content" source="media/restore-backup-audit-logs.png" alt-text="Include audit logs when restoring a backup.":::
+
+6. Select an environment to restore to (overwrite), and then select **Restore**.
 
    > [!NOTE]
    > Only sandbox environments can be restored to.
 
-6. Confirm overwrite of the environment. 
+7. Confirm overwrite of the environment. 
 
+### Restoring audit logs
+
+Restoring audit logs can significantly add to the time it takes to copy an environment and by default is not done. Do the following steps to include audit logs when restoring a manual backup.
+
+1. Complete steps 1-5 above.
+
+2. Under **Audit logs**, select **Click here**.
+
+   :::image type="content" source="media/restore-backup-audit-logs-click-here.png" alt-text="Select click here to include audit logs.":::
+
+3. Enable copying audit logs.
+
+   :::image type="content" source="media/copy-environment-audit-logs-enable.png" alt-text="Enable copying audit logs.":::
+
+4. Continue with steps 6 and 7 above.
 
 ### Delete a manual backup  
  You can  delete manual backups. You can't delete system backups.  
