@@ -160,6 +160,8 @@
           href: managed-environment-weekly-digests.md 
         - name: Sharing limits
           href: managed-environment-sharing-limits.md
+        - name: Data policies
+          href: managed-environment-data-policies.md
       - name: Environment updates
         items:
         - name: Opt in to early access updates

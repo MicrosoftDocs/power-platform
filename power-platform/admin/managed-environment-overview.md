@@ -35,10 +35,6 @@ Managed environments is a suite of capabilities that allow admins to manage Powe
 > - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 > - This feature is being gradually rolled out across regions and might not be available yet in your region.
 
-## Data policies
-
-A principal capability of a managed environment is enforcing policies that define the consumer connectors that specific data can be shared with. These policies are called data loss prevention (DLP) policies. DLP policies ensure that data is managed in a uniform manner across your organization, and they prevent important business data from being accidentally published to connectors such as social media sites. For more information on creating and managing DLP policies, see [Data loss prevention policies](wp-data-loss-prevention.md).
-
 ## Enabling environment management
 
 Admins can enable environment management using the [Power Platform admin center](managed-environment-enable.md) or by calling the API from PowerShell. 
