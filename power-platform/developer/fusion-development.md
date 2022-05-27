@@ -46,10 +46,10 @@ The Power Platform is designed to empower fusion teams allowing three key audien
 
 ![[Fusion team.](media/fusion-team.png "Fusion team")](media/fusion-team.png "Fusion team")
 
-The role of the professional developer and IT Professional is to create a safe environment where citizen developer can be empowered to achieve more with minimum friction.
-
 > [!TIP]
 > Citizen maker and pro-dev tools should integrate smoothly to enable both communities to work together effectively.
+
+The role of the professional developer and IT Professional is to create a safe environment where citizen developer can be empowered to achieve more with minimum friction.
 
 > [!NOTE]
 > Everyone should use citizen maker tools to accomplish citizen maker tasks. For example, pro devs use same visual tooling as citizen makers when creating apps on Power Platform
