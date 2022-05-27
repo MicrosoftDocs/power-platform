@@ -112,6 +112,7 @@ If you get a connection authorization error turning on a flow, you might need to
 
 The following flows support the inventory setup and need to be turned on before proceeding:
 
+
 - Admin | Add Maker to Group
 - Admin | Excuse Support Envts from Governance Flows
 - Admin | Sync Template v3 Configure Emails
