@@ -125,7 +125,7 @@ You can only restore to sandbox environments. To restore to a production environ
 
 ### Restoring audit logs
 
-Restoring audit logs can significantly add to the time it takes to copy an environment and by default isn't done. Do the following steps to include audit logs when restoring a manual backup.
+Restoring audit logs can significantly add to the time it takes to restore an environment and by default isn't done. Do the following steps to include audit logs when restoring a manual backup.
 
 1. Complete steps 1-5 above.
 
