@@ -43,6 +43,9 @@ Apps created with Power Apps are consumed by users using their desktop or mobile
 ## Collaboration
 
 The Power Platform is designed to empower fusion teams allowing three key audiences to come together.
+
+![[Fusion team.](media/fusion-team.png "Fusion team")](media/fusion-team.png "Fusion team")
+
 The role of the professional developer and IT Professional is to create a safe environment where citizen developer can be empowered to achieve more with minimum friction.
 
 > [!TIP]
