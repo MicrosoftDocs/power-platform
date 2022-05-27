@@ -24,19 +24,20 @@ Fusion development or fusion teams development, is defined by Gartner as "distri
 
 Fusion development allows your business to build better applications, faster by bringing together professional developers with citizen, or low-code, developers.
 
+![Fusion development.](media/fusion-development.png "Fusion development")
 
 
 ## Personas for fusion development
 
 Apps created with Power Apps are consumed by users using their desktop or mobile devices. There are different types of Power Apps: canvas, model-driven, and portal.
 
-| Persona | Description | Skills |
-| ---- | ---- | --- |
+| Persona | Description |
+| ---- | ---- | 
 | **Citizen Developer** or maker | A business user with business knowledge looking for ways to improve a business process. Use visual, drag and drop and low code tools. Usually don't have a technical background. |
 | **Professional Developer** or code-first developer | Pro devs use pro dev tools to accomplish pro dev tasks. For example, white code in VS or VS Code using pro languages like C#. |
 | **IT Professional** or DevOps Engineer | An IT professional responsible for the Application Lifecycle Management (ALM) of business applications. |
 
->[!important]
+>[!IMPORTANT]
 > We’re not trying to make citizen makers into pro devs, or vice versa. We are focused on helping them build together doing what they are best at doing.
 
 ## Collaboration
@@ -47,7 +48,11 @@ The role of the professional developer and IT Professional is to create a safe e
 > [!TIP]
 > Citizen maker and pro-dev tools should integrate smoothly to enable both communities to work together effectively.
 
-> [!TIP]
+> [!NOTE]
 > Everyone should use citizen maker tools to accomplish citizen maker tasks. For example, pro devs use same visual tooling as citizen makers when creating apps on Power Platform
+
+### See Also
+
+[Fusion Development ebook](../../power-apps/guidance/fusion-dev-ebook/)  
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
