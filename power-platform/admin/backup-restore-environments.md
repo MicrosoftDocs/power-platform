@@ -102,7 +102,7 @@ There's no status as the backup is processing. When the backup is completed, you
 You can only restore to sandbox environments. To restore to a production environment, first switch it to a sandbox environment. See [Switch an environment](switch-environment.md).
 
 > [!IMPORTANT]
-> Note that changing an environment type to sandbox will immediately reduce backup retention to 7 days. If you do not need backups (restore points) older than 7 days, then you can safely switch the type. If you think you may need restore points older than 7 days, we strongly recommend that you keep the environment as production and consider restoring to a different environment of type sandbox.
+> Note that changing an environment type to sandbox will immediately reduce backup retention to 7 days. If you don't need backups (restore points) older than 7 days, then you can safely switch the type. If you think you may need restore points older than 7 days, we strongly recommend that you keep the environment as production and consider restoring to a different environment of type sandbox.
 
 1. Browse to the Power Platform admin center and sign in using administrator credentials.
   
