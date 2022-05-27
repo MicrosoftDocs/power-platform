@@ -28,7 +28,7 @@ Managed environments is a suite of capabilities that allow admins to manage Powe
 
 - [Weekly digests](managed-environment-weekly-digests.md)
 - [Sharing limits](managed-environment-sharing-limits.md)
-- [Data policies](#data-policies) 
+- [Data policies](managed-environment-data-policies.md) 
 
 > [!IMPORTANT]
 > - This is a preview feature.
