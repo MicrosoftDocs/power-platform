@@ -14,3 +14,32 @@
     items: 
     - name: Overview
       href: back-end-overview.md
+  - name: Tools
+    items:
+      - name: Microsoft Power Platform CLI 
+        items:
+          - name: CLI reference
+            items:
+              - name: admin
+                href:
+              - name: applications
+                href:
+              - name: auth
+                href:
+              - name: canvas
+                href:
+              - name: org 
+                href:
+              - name: package
+                href:
+              - name: paportal
+                href:
+              - name: pcf
+                href:
+              - name: plugin
+                href:
+              - name: solution
+                href: 
+              - name: telemetry
+                href: 
+          
