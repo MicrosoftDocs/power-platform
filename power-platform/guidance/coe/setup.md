@@ -61,6 +61,13 @@ In particular, consider the following:
 
 We recommend using three [Microsoft 365 groups](/microsoft-365/admin/create-groups/compare-groups#microsoft-365-groups) for this, one for each persona. This group type is an email-enabled security group and can be associated with a Microsoft team for collaboration between the people in the group.  
 
+In addition to the above you will also need a individual admin to sign up to receive those communciations that cannot go to a group. Namely, when a chat or approval cannot or should not be sent to a Maker persona, it is sent to admin. But you cannot send these things to a group. 
+So you will also need, on top of the above:
+
+- **Individual Admin**
+  - Individual to recieve chat bot chats
+  - Individual to recieve approvals 
+
 ## Prepare your environment
 
 ### Decide what environment type to use (production or Dataverse for Teams)
