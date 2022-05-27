@@ -22,14 +22,13 @@ search.app:
 
 Fusion development or fusion teams development, is defined by Gartner as "distributed and multidisciplinary digital business teams that blend technology and other types of domain expertise." (Source: 2019 Gartner Digital Business Teams Survey)
 
-Fusion development allows your business to build better applications, faster by bringing together professional developers with citizen, or low-code, developers.
-
 ![Fusion development.](media/fusion-development.png "Fusion development")
 
+Fusion development allows your business to build better applications, faster by bringing together professional developers with citizen, or low-code, developers.
 
 ## Personas for fusion development
 
-Apps created with Power Apps are consumed by users using their desktop or mobile devices. There are different types of Power Apps: canvas, model-driven, and portal.
+Bellow you can find the personas and the definition in a fusion team:
 
 | Persona | Description |
 | ---- | ---- | 
@@ -38,7 +37,9 @@ Apps created with Power Apps are consumed by users using their desktop or mobile
 | **IT Professional** or DevOps Engineer | An IT professional responsible for the Application Lifecycle Management (ALM) of business applications. |
 
 >[!IMPORTANT]
-> We’re not trying to make citizen makers into pro devs, or vice versa. We are focused on helping them build together doing what they are best at doing.
+> We’re not trying to make citizen developer into pro devs, or vice versa. We are focused on helping them build together doing what they are best at doing.
+
+Empowering the citizen developer can enable the pro developers to focus on specialized problems, avoiding simple and repetitive tasks that can be performed by the citizen developer himself.
 
 ## Collaboration
 
