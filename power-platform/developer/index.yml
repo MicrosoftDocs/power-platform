@@ -74,22 +74,12 @@ landingContent:
             url: ./dataverse-sql-query.md
 
   # Card
-  - title: Tools and resources
+  - title: Tools
     linkLists:
-      - linkListType: concept
+      - linkListType: reference
         links:
-          - text: Event framework
+          - text: Power Platform CLI
             url: ./event-framework.md
-      - linkListType: overview
-        links:
-          - text: Plug-ins
-            url: ./plug-ins.md
-          - text: Workflow extensions
-            url: ./workflow/workflow-extensions.md
-      - linkListType: tutorial
-        links:
-          - text: Write and register a plug-in
-            url: ./tutorial-write-plug-in.md
 
   # Card
   - title: Related resources
