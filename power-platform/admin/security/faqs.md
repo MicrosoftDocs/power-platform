@@ -142,6 +142,8 @@ Power Platform scopes session cookies to the parent domain to allow authenticati
 
 Power Platform uses Azure AD for identity and access management. It follows [Azure AD's recommended session management configuration](/azure/active-directory/develop/access-tokens#access-token-lifetime) for an optimal user experience.
 
+However, you can customize environments to have explicit session and/or activity timeouts.  For more information, see [User session and access management](../user-session-management).
+
 With Power Platform's upcoming implementation of Azure AD [Continuous Access Evaluation](/azure/active-directory/conditional-access/concept-continuous-access-evaluation), user identification and authentication will be even more secure and reliable.
 
 ### The application allows the same user to access from more than one machine or browser at the same time. How can we prevent that?
