@@ -17,7 +17,7 @@ This article provides information about the official collection of icons for Mic
 
 - Use the icon to illustrate how products can work together
 - In diagrams, we recommend including the product name somewhere close to the icon
-- Use the icons as they would appear within Microsoft Power Platform or individual products (Power Apps, Power Automate, Power BI, and Power Virtual Agents)
+- Use the icons as they would appear within Microsoft Power Platform or individual products (Power Apps, Power Automate, Power BI, Power Pages, Power Virtual Agents, Dataverse, and AI Builder)
 
 ### Don’ts
 
