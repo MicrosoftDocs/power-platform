@@ -162,6 +162,15 @@ Microsoft has assessed that no Log4j vulnerabilities impact Power Platform. See 
 
 The Power Apps security model doesn't include the concept of disabled controls. Disabling controls is a UI enhancement. You shouldn't rely on disabled controls to provide security. Instead, use Dataverse controls such as field-level security to prevent unauthorized transactions.
 
+### Which HTTP security headers are used to protect response data?
+| Name | Details |
+| ---- | ------- |
+| [Strict-Transport-Security](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security) | This is set to `max-age=31536000; includeSubDomains` on all responses. |
+| [X-Frame-Options](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options) | This is deprecated in favor of CSP. |
+| [X-Content-Type-Options](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options) | This is set to `nosniff` on all asset responses. |
+| [Content-Security-Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy) | This is set if user [enables CSP](https://docs.microsoft.com/en-us/power-platform/admin/content-security-policy). |
+| [X-XSS-Protection](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-XSS-Protection) | This is deprecated in favor of CSP. |
+
 ### Related articles
 
 [Security in Microsoft Power Platform](overview.md)  
