@@ -24,6 +24,8 @@ Microsoft Power Platform is a low-code platform for building business apps quick
 
 The platform uses a low-code approach to build solutions rapidly. It allows everyone in an organization, from frontline workers to professional developers, to participate in building apps that drive positive business outcomes. Developers can work seamlessly with the makers in an organization to help fill gaps and solve complex challenges using a rich extensibility model provided by the platform components. Using native integration with Azure, developers can also use their cloud development skills to extend Microsoft Power Platform. This approach to low-code development is a transformative way to achieve application development objectives within an organization quickly.
 
+![Power platform.](media/power-platform.png "Power platform")
+
 To be an efficient developer on the platform, it's important to understand the basics of what the platform offers. Bellow is a high-level overview of each of the core components and their key extensibility points.
 
 ## Power Apps applications 
