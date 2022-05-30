@@ -93,6 +93,9 @@ The import can take up to 15 minutes to be completed.
 
 There are several child flows, check to make sure all of these flows are on:
 
+>[!NOTE]
+>These flows are configured to turn on automatically after import. However billing policies, DLP policies or connection issues may prevent them from being turned on. Always double-check to make sure all flows listed here are on!
+
 1. HELPER – Send Email
 1. HELPER – Maker Check
 1. HELPER – CloudFlowOperations
@@ -112,6 +115,9 @@ If you get a connection authorization error turning on a flow, you might need to
 ## Turn on setup flows
 
 The following flows support the inventory setup and need to be turned on before proceeding:
+
+>[!NOTE]
+>Some of these flows are configured to turn on automatically after import. However billing policies, DLP policies or connection issues may prevent them from being turned on. Always double-check to make sure all flows listed here are on!
 
 - Admin | Add Maker to Group
 - Admin | Excuse Support Envts from Governance Flows
@@ -137,6 +143,9 @@ The Admin \| Sync Template flows part of this solution crawl through all the res
 > ![Error when turning on a flow with an insufficient license.](media/flowpaginationerror.png "Error when turning on a flow with an insufficient license.")
 >
 > Learn more: [Power Automate performance profiles](/power-automate/limits-and-config#performance-profiles) and [Concurrency looping and pagination limits](/power-automate/limits-and-config#concurrency-looping-and-debatching-limits)
+
+>[!NOTE]
+>Some of these flows are configured to turn on automatically after import. However billing policies, DLP policies or connection issues may prevent them from being turned on. Always double-check to make sure all flows listed here are on!
 
 - Admin | Sync Template v3 (Apps)
 - Admin | Sync Template v3 (Connection Identities)

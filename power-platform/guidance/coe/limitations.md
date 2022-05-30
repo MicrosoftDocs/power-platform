@@ -70,7 +70,7 @@ It currently isn't possible to retrieve the model-driven apps, chatbots, and Des
 
 ## Supported languages
 
-The CoE Starter Kit solutions are not localized, and only support English. Add the English language pack to your environment to make sure all apps and flows work. More information: [Regional and language options for your environment](/power-platform/admin/enable-languages.md)
+The CoE Starter Kit solutions are not localized, and only support English. Add the English language pack to your environment to make sure all apps and flows work. More information: [Regional and language options for your environment](/power-platform/admin/enable-languages)
 
 ## Security groups and approvals
 
@@ -103,6 +103,16 @@ Due to a product limitation, model-driven apps that are not published are not su
 ## Large desktop flows
 
 Due to a product limitation, large Desktop Flows may not show up in the inventory as the content field is too large for cloud flows to process.
+
+## Desktop flow runs
+
+In order to see desktop flow runs in the inventory, one of the following must be true:
+
+- Have [attended or unattended desktop flow runs](/power-automate/desktop-flows/run-desktop-flow) in the environment
+- Another user has [shared their desktop flow](/power-automate/create-team-flows#share-a-cloud-flow-with-run-only-permissions) with you, which has attended or unattended runs
+- You have [permission](/power-platform/admin/database-security) to view all data in the environment
+
+Learn more: [Monitor Desktop Flow runs](/power-automate/desktop-flows/monitor-desktop-flow-runs)
 
 ## Missing custom connectors
 
