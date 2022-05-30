@@ -187,6 +187,8 @@
             href: coe/power-bi-govern.md
           - name: Nurture
             href: coe/power-bi-nurture.md
+          - name: Compliance and Adoption
+            href: coe/power-bi-compliance.md
         - name: Sample audit process
           href: coe/example-processes.md  
         - name: Dataverse for Teams environment management
