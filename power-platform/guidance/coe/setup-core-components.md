@@ -36,7 +36,7 @@ The flows in this solution sync all your resources into tables and build admin a
 We recommend that you create connections to all connectors used in the solution prior to importing the solution. This will make the setup faster.
 
 1. Go to [flow.microsoft.com](https://flow.microsoft.com/).
-1. Select your CoE environment, and go to **Data** > **Connections** > **+ New connection**.
+1. Select your CoE environment, and go to **Dataverse** > **Connections** > **+ New connection**.
 1. Create connections for the following:
     - [Approvals](/connectors/approvals/)
     - [Microsoft Dataverse](/connectors/commondataserviceforapps/)
