@@ -16,7 +16,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Remove a large amount of specific, targeted data with bulk deletion 
+# Remove a large amount of specific, targeted data with bulk deletion  
 
 The *bulk deletion* feature helps you to maintain data quality and manage the consumption of system storage by deleting data that you no longer need.  
   
