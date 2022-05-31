@@ -143,7 +143,7 @@ The Admin \| Sync Template flows part of this solution crawl through all the res
 
 >[!NOTE]
 >Only turn on the **Admin | Sync Template v3 (Flow Action Details)** flow if you are likely to perform analytics on the action level of the flow - for example, looking at how is using the Send Email or Get Item actions.
->This flow temporarily makes the account running the the **Admin | Sync Template v3 (Flow Action Details)** an owner of each flow to retrieve the action details, and removes owner access once the details have been retrieved. The admin running this flow will receive email notifications to let them know the flows they've just been made an owner of.
+>This flow temporarily makes the account running the the **Admin | Sync Template v3 (Flow Action Details)** an owner of each flow that is using HTTP actions to retrieve further details of those actions (for example, the HTTP host), and removes owner access once the details have been retrieved. The admin running this flow will receive email notifications to let them know the flows they've just been made an owner of.
 
 - Admin | Sync Template v3 (Apps)
 - Admin | Sync Template v3 (Connection Identities)
