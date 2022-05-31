@@ -1,9 +1,9 @@
 ---
 ROBOTS: NOINDEX,NOFOLLOW
 title: Customize speech responses with SSML
-description: Define speech specific messages with SSML (Speech Synthesis Markup Language) to control how the message is spoken by the speech service
+description: Use SSML (Speech Synthesis Markup Language) in speech-specific responses to control how your bot speaks a message.
 keywords: PVA, speech, ssml, voice
-ms.date: 05/12/2022
+ms.date: 05/31/2022
 ms.topic: article
 author: emgrol
 ms.author: v-eolshefski
@@ -15,42 +15,38 @@ ms.collection: virtual-agent
 
 [!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
 
-SSML (Speech Synthesis Markup Language) lets you customize your bot's speech responses, and is one of the many ways Power Virtual Agents makes your bots sound natural. SSML is an XML-based markup language that allows bot makers to specify how input text is converted into synthesized speech. It can be used in bots that are connected to the [Telephony channel](publication-connect-bot-to-telephony.md).
+SSML (Speech Synthesis Markup Language) is an XML-based markup language that specifies how text is converted into synthesized speech. It's one of the many ways Power Virtual Agents makes your bot's responses sound like natural speech. You can use SSML in bots that are connected to the [Telephony channel](publication-connect-bot-to-telephony.md).
 
 ## Prerequisites
 
 - [Create and edit topics](authoring-create-edit-topics.md)
-- [Telephony](publication-connect-bot-to-telephony.md)
+- [Connect your bot to the Telephony channel](publication-connect-bot-to-telephony.md)
 
 ## Create a speech message
 
-Before customizing speech responses with SSML, you need to create a speech message in a topic.
-
 1. Go to the authoring canvas of the topic you want to add a speech response to.
 
-1. Add a node by selecting plus (**+**) icon on the line or branch between or after nodes. Then select **Send a message**.
+1. Select the plus (**+**) icon, and then select **Send a message** to add a message node.
 
-    :::image type="content" source="media/advanced-custom-speech-ssml/node-send-message.png" alt-text="Send a message on the authoring canvas.":::
+1. Select **Text**, and then select **Speech** to change the response mode from text to speech.
 
-1. Select the **Speech** mode in the **Message** to change the response from text to speech.
-
-    :::image type="content" source="media/advanced-custom-speech-ssml/select-speech-mode-message.png" alt-text="Select Speech mode for the message.":::
+    :::image type="content" source="media/advanced-custom-speech-ssml/select-speech-mode-message.png" alt-text="Screenshot of a message node, with the Speech mode selection highlighted.":::
 
     The following message will show after you switch from text to speech.
 
-    :::image type="content" source="media/advanced-custom-speech-ssml/variation-message.png" alt-text="Add speech response variation.":::
+    :::image type="content" source="media/advanced-custom-speech-ssml/variation-message.png" alt-text="Screenshot of the notice that appears when Speech mode is selected in a message node.":::
 
-1. Select **+ Add** then **Message variation** to add speech response variations. Enter what you want the bot to say and add as many [message variations](authoring-create-edit-topics.md#message-variations) as needed.
+1. Select **+ Add**, and then select **Message variation**.
 
-You've created a speech message and can now add SSML to your message variations.
+1. Enter what you want the bot to say. Add as many [message variations](authoring-create-edit-topics.md#message-variations) as needed.
+
+Now that you've created a speech message, you can add SSML to your message variations.
 
 ## Use SSML to customize speech responses
 
-You can use SSML tags to customize your speech responses.
+In the message, select **SSML tags**, and then select the tags you want to add.
 
-Select **SSML tags** from the Message. Then select the tags you want to add.
-
-:::image type="content" source="media/advanced-custom-speech-ssml/ssml-tag-options.png" alt-text="SSML helper options.":::
+:::image type="content" source="media/advanced-custom-speech-ssml/ssml-tag-options.png" alt-text="Screenshot of SSML tags in a speech message.":::
 
 The table below describes what each tag does:
 
@@ -58,8 +54,10 @@ The table below describes what each tag does:
 |---|---|
 | Audio | Add prerecorded audio. |
 | Break | Insert pauses or breaks between words. |
-| Emphasis | Increase the level of stress with which the contained text is spoken. |
+| Emphasis | Add levels of stress to words or phrases. |
 | Prosody | Specify changes to pitch, contour, range, rate, and volume. |
 |||
 
-You can add multiple tags to a single speech variation, as well as other SSML tags not shown above. For more information about SSML, see [Improve synthesis with SSML](/azure/cognitive-services/speech-service/speech-synthesis-markup).
+:::image type="content" source="media/advanced-custom-speech-ssml/ssml-tagged-speech.png" alt-text="Screenshot of a speech message with SSML tags added.":::
+
+You can add multiple tags to a single speech variation. You can also add SSML tags that don't appear in the helper menu. [Learn more about SSML](/azure/cognitive-services/speech-service/speech-synthesis-markup).
