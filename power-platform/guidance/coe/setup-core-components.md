@@ -89,12 +89,12 @@ During solution import, you'll configure environment variable values. Make sure 
 
 The import can take up to 15 minutes to be completed.
 
+>[!NOTE]
+>The next steps walk you through turning on flows that. Some of these flows are configured to turn on automatically after import. However billing policies, DLP policies or connection issues may prevent them from being turned on. Always double-check to make sure all flows listed here are on!
+
 ## Turn on child flows
 
 There are several child flows, check to make sure all of these flows are on:
-
->[!NOTE]
->These flows are configured to turn on automatically after import. However billing policies, DLP policies or connection issues may prevent them from being turned on. Always double-check to make sure all flows listed here are on!
 
 1. HELPER – Send Email
 1. HELPER – Maker Check
@@ -115,9 +115,6 @@ If you get a connection authorization error turning on a flow, you might need to
 ## Turn on setup flows
 
 The following flows support the inventory setup and need to be turned on before proceeding:
-
->[!NOTE]
->Some of these flows are configured to turn on automatically after import. However billing policies, DLP policies or connection issues may prevent them from being turned on. Always double-check to make sure all flows listed here are on!
 
 - Admin | Add Maker to Group
 - Admin | Excuse Support Envts from Governance Flows
@@ -145,14 +142,15 @@ The Admin \| Sync Template flows part of this solution crawl through all the res
 > Learn more: [Power Automate performance profiles](/power-automate/limits-and-config#performance-profiles) and [Concurrency looping and pagination limits](/power-automate/limits-and-config#concurrency-looping-and-debatching-limits)
 
 >[!NOTE]
->Some of these flows are configured to turn on automatically after import. However billing policies, DLP policies or connection issues may prevent them from being turned on. Always double-check to make sure all flows listed here are on!
+>Only turn on the **Admin | Sync Template v3 (Flow Action Details)** flow if you are likely to perform analytics on the action level of the flow - for example, looking at how is using the Send Email or Get Item actions.
+>This flow temporarily makes the account running the the **Admin | Sync Template v3 (Flow Action Details)** an owner of each flow to retrieve the action details, and removes owner access once the details have been retrieved. The admin running this flow will receive email notifications to let them know the flows they've just been made an owner of.
 
 - Admin | Sync Template v3 (Apps)
 - Admin | Sync Template v3 (Connection Identities)
 - Admin | Sync Template v3 (Custom Connectors)
 - Admin | Sync Template v3 (Desktop Flow - Runs)
 - Admin | Sync Template v3 (Desktop flows)
-- Admin | Sync Template v3 (Flow Action Details)
+- (optional) Admin | Sync Template v3 (Flow Action Details)
 - Admin | Sync Template v3 (Flows)
 - Admin | Sync Template v3 (Model Driven Apps)
 - Admin | Sync Template v3 (Portals)
