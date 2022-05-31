@@ -1,9 +1,8 @@
 ---
 title: "Error management and troubleshooting for data integration projects"
 description: "Troubleshoot issues and manage errors when executing data integration projects using the Data Integrator service."
-
-ms.topic: how-to
-ms.component: cds
+ms.topic: conceptual
+ms.component: pa-admin
 ms.date: 11/19/2021
 author: sabinn-msft
 ms.subservice: admin
@@ -18,6 +17,8 @@ search.app:
   - Flow
 ---
 # Data Integrator error management and troubleshooting
+
+<!-- Don't upgrade this content. See email. -->
 
 The Data Integrator is a point-to-point integration service used to integrate data from multiple sources--for example, Finance and Operations apps, Dynamics 365 Sales, Salesforce, and Microsoft SQL (Preview)--into Microsoft Dataverse. It also supports integrating data into Finance and Operations apps and Dynamics 365 Sales. The [Integrate data into Dataverse](data-integrator.md) topic provides detailed step-by-step instructions to help you set up projects for process-based integration scenarios like Prospect to Cash, Field Service, and Project Service integrations. 
 
