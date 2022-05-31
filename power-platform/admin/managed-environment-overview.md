@@ -24,8 +24,9 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Managed environments is a suite of capabilities that allow admins to manage Power Platform at scale with more control, less effort, and more insights. Admins can enable environment management on any type of environment. There are three primary elements of managed environments: 
+Managed environments is a suite of capabilities that allow admins to manage Power Platform at scale with more control, less effort, and more insights. Admins can enable environment management on any type of environment. There are four primary elements of managed environments: 
 
+- [Enable environment management](managed-environment-enable.md)
 - [Weekly digests](managed-environment-weekly-digests.md)
 - [Sharing limits](managed-environment-sharing-limits.md)
 - [Data policies](managed-environment-data-policies.md) 
@@ -35,29 +36,17 @@ Managed environments is a suite of capabilities that allow admins to manage Powe
 > - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 > - This feature is being gradually rolled out across regions and might not be available yet in your region.
 
-## Enabling environment management
+## No new license
 
-Admins can enable environment management using the [Power Platform admin center](managed-environment-enable.md) or by calling the API from PowerShell. 
+Managed environments represent a value-add for Power Platform premium licenses. All applications and flows in an managed environment are premium and can be licensed using any of the Power Platform licensing options (per user, per app/flow or pay-as-you-go) or D365 licenses that give premium usage rights. 
 
-UX workflow here
+During the public preview the premium license requirement for applications and flows within a managed environment is not enforced. 
 
-Admins can remove the Managed Environment property on an environment using the available API if respective environment is not using any of the capabilities available. The following is an example on how to call the API to set the Managed Environment property using PowerShell: 
+|  | | |
+|---------|---------|---------|
+|:::image type="content" source="media/non-managed-environment-left.png" alt-text="Non-managed environment":::     | :::image type="content" source="media/managed-environment-arrow.png" alt-text="arrow":::        | :::image type="content" source="media/managed-environment-right.png" alt-text="Managed environment":::        |
+|No managed environment features​ <br />Premium and non-premium assets (apps/flows)​<br />Users with qualifying and non-qualifying licenses     |         | Includes managed environment features​ <br />All low code assets (apps/flows) become premium ​<br /> Users must have a qualifying license to access the assets        |
 
-## Permissions
-
-- Users with either the global admin, Power Platform service admin or Dynamics 365 admin AAD roles are allowed to enable environment management. 
-- Any user with permission to see environment details can retrieve the Managed Environment property for the environment.  
-- Users with the delegated admin role are not allowed to change the Managed Environment property on an environment. 
-- Users with the Environment Admin security role are not allowed to change the Managed Environment property on an environment.  
-
-> [!IMPORTANT]
-> Copy and restore environment lifecycle operations require Managed Environment property to be the same between source and destination before the respective environment lifecycle operation can start. 
-
-## Licensing
-
-Managed Environments represent a value-add for Power Platform premium licenses. All applications and flows in an Managed Environment are premium and can be licensed using any of the Power Platform licensing options (per user, per app/flow or pay-as-you-go) or D365 licenses that give premium usage rights. 
-
-During the public preview the premium license requirement for applications and flows within a Managed Environment is not enforced. 
 
 ### See also  
 
