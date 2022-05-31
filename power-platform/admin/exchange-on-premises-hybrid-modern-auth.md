@@ -43,7 +43,7 @@ Review the following documents:
 - [Hybrid Configuration wizard](/exchange/hybrid-configuration-wizard)
 - [What is Azure AD Connect?](/azure/active-directory/hybrid/whatis-azure-ad-connect)
 - [Deploy Azure AD Pass-through Authentication](/azure/active-directory/hybrid/how-to-connect-pta-quick-start)
-- [Enabling Hybrid Modern Authentication](https://docs.microsoft.com/microsoft-365/enterprise/configure-exchange-server-for-hybrid-modern-authentication?view=o365-worldwide)
+- [Enabling Hybrid Modern Authentication](/microsoft-365/enterprise/configure-exchange-server-for-hybrid-modern-authentication?view=o365-worldwide) 
  
 ### A certificate is required for this authentication scheme 
 
