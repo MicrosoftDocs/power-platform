@@ -64,13 +64,7 @@
         "source_path": "power-platform/guidance/coe/elements-import-managed-solutions.md",
         "redirect_url": "/power-platform/alm/solution-concepts-alm",
         "redirect_document_id": "false"
-      },
-      {
-        "source_path": "power-platform/guidance/coe/modify-components.md",
-        "redirect_url": "/power-platform/alm/component-framework",
-        "redirect_document_id": "false"
-      },
-  
+      },  
       {
         "source_path": "power-platform/admin/government-feature-availability.md",
         "redirect_url": "microsoft-dynamics-365-government#dynamics-365-us-government-feature-limitations",
