@@ -45,7 +45,7 @@ To view the details of a release:
 
 1. Navigate to the [CoE Starter Kit repository](https://github.com/microsoft/coe-starter-kit) in GitHub.
 1. Select the [latest release](https://github.com/microsoft/coe-starter-kit/releases) notes.
- 
+
    ![Screenshot showing where to find the latest release notes for the CoE Starter Kit](media/coe-upgrade5.png "View new releases on GitHub")
 
 Release notes contain a change log of issues (bug fixes and enhancements) addressed by the new version and may also include specific upgrade instructions that are new for the release. This could mean turning on a new flow or notes on deprecated features.

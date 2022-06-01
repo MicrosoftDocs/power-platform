@@ -25,7 +25,7 @@ That's why the CoE Starter Kit intends to provide a starting point for administr
 
 There are many reasons for why you may want to extend the CoE Starter Kit:
 
-- Capturing additional metadata for apps and flows—for example, as part of the [Compliance process](sample-process.md).
+- Capturing additional metadata for apps and flows—for example, as part of the [Compliance process](example-processes.md).
 - Modifying the apps and flows to fit existing processes you may have in place—for example, asking makers to provide additional information in the [Developer Compliance Center](governance-components.md#developer-compliance-center).
 - Customizing the apps to fit with your organization's brand and theme, especially for broadly used apps like the [App Catalog](core-components.md#app-catalog).
 - Building additional apps and flows on top of the inventory gathered by the CoE Starter Kit.
@@ -58,7 +58,7 @@ Learn more about solutions:
 - [Solution concepts](/power-platform/alm/solution-concepts-alm)
 - [How managed solutions are merged](/power-platform/alm/how-managed-solutions-merged)
 - [Use a solution to customize](/power-platform/alm/use-solutions-for-your-customizations)
-- [Manage solutions in Power Apps and Power Automate](https://docs.microsoft.com/learn/modules/manage-solutions-power-automate)
+- [Manage solutions in Power Apps and Power Automate](/learn/modules/manage-solutions-power-automate)
 
 If you plan to make customizations to a large number of CoE Starter Kit components, use multiple unmanaged solutions to organize your extensions better and reduce the size of each solution. Lighter solutions reduce deployment time. Learn more: [Organize solutions](/power-platform/alm/organize-solutions)
 
@@ -76,7 +76,7 @@ To create a new unmanaged solution:
 
    ![Screenshot showing where to start a new solution](media/coe-extension-2.png "Screenshot showing where to start a new solution")
    
-1. Enter the **Display name** (for example, *Contoso CoE Extension*), **Name** (for example, *ContosoCoEExtension*),[**Publisher**](power-platform/alm/solution-concepts-alm#solution-publisher) (author of your solution), and **Version** (leave 1.0.0.0 if it's your first solution).
+1. Enter the **Display name** (for example, *Contoso CoE Extension*), **Name** (for example, *ContosoCoEExtension*),[**Publisher**](/power-platform/alm/solution-concepts-alm#solution-publisher) (author of your solution), and **Version** (leave 1.0.0.0 if it's your first solution).
 
    ![Screenshot showing Display name, Name, Publisher, and Version](media/coe-extension-3.png "Screenshot showing Display name, Name, Publisher, and Version")
    
