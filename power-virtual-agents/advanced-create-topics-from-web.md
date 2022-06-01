@@ -44,8 +44,6 @@ You can [test the topics in the test chat](authoring-test-bot.md), but you'll ne
 
 ## Supported content
 
-The **Suggest topics** capability is built to extract content from FAQ/support webpages or online files. Other types of content with a different structure might not work as expected.
-
 Uploading files is not supported, instead you must provide a URL that meets the following requirements:
 
 - Points to a webpage or supported file type
@@ -53,7 +51,9 @@ Uploading files is not supported, instead you must provide a URL that meets the 
 - Doesn't require a user to login
 - Uses HTTPS (starts with `https://`)
 
-### File types
+The **Suggest topics** capability is built to extract topics from content with a FAQ/support structure. Webpages with a different structure might not work as expected. If you're unable to extract content from your webpage, try providing the content as a CSV file.
+
+### Supported file types
 
 Tabular file types require a _two-column format_ where each row represents a question and answer pair: the first column contains the question and the second column contains the answer.
 
