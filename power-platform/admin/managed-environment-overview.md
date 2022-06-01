@@ -36,7 +36,7 @@ Managed environments is a suite of capabilities that allow admins to manage Powe
 > - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 > - This feature is being gradually rolled out across regions and might not be available yet in your region.
 
-## No new license
+## License considerations
 
 Managed environments represent a value-add for Power Platform premium licenses. All applications and flows in an managed environment are premium and can be licensed using any of the Power Platform licensing options (per user, per app/flow or pay-as-you-go) or Dynamics 365 licenses that give premium usage rights. 
 
