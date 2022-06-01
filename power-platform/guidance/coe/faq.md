@@ -65,7 +65,7 @@ This article will provide you with answers to frequently asked questions and tip
 
 ## Set flow run-only users properties
 
-1. Remove [unmanaged layers](after-setup.md#installing-upgrades) for all flows.
+1. Remove [unmanaged layers](after-setup.md) for all flows.
 1. Go to the details page, and then select the **Run only users** edit button.
 
     ![Find the setting for run-only users.](media/tips-flow2.png "Find the setting for run-only users")
