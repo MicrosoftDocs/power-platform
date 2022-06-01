@@ -57,7 +57,16 @@ In particular, consider the following:
 - **User persona**
   - Power Platform users to be contacted by Power Platform admins.
 
-We recommend using three [Microsoft 365 groups](/microsoft-365/admin/create-groups/compare-groups#microsoft-365-groups) for this, one for each persona. This group type is an email-enabled security group and can be associated with a Microsoft team for collaboration between the people in the group.  
+We recommend using three [Microsoft 365 groups](/microsoft-365/admin/create-groups/compare-groups#microsoft-365-groups) for this, one for each persona. This group type is an email-enabled security group and can be associated with a Microsoft team for collaboration between the people in the group. 
+
+>[!IMPORTANT]
+>The admin configuring the [inventory components](setup-core-components.md) needs to be an owner of these groups. 
+
+Some processes part of the CoE Starter Kit send [Power Automate Approvals](/power-automate/get-started-approvals) and [Adaptive Cards for Microsoft Teams](/power-automate/overview-adaptive-cards). These can't be assigned to a group. You therefore also need an individual named admin that these communications can go to. In addition to the above groups, you will therefore also need:
+
+- **Individual Admin**
+  - Individual to receive chat bot chats
+  - Individual to receive approvals
 
 ## Prepare your environment
 
@@ -74,7 +83,7 @@ The CoE Starter Kit can be used in both production environments and Dataverse fo
 | Data capacity | 2 GB | Unlimited through capacity purchases |
 | Collecting telemetry information from the audit log | No | Yes
 | Power Platform admin view to view and filter resources | Canvas app | Model-driven app |
-| Power BI Dashboard | Yes | Yes |
+| Power BI Dashboard | Yes, except the [Compliance and Adoption dashboard](power-bi-compliance.md) | Yes, all dashboards |
 | Canvas apps part of core components (DLP Editor, Set App Permissions and Set Flow Permissions apps) | Yes | Yes |
 | Apps and flows part of governance components | Yes | Yes |
 | Apps and flows part of nurture components | Yes | Yes |

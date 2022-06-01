@@ -36,7 +36,7 @@ The flows in this solution sync all your resources into tables and build admin a
 We recommend that you create connections to all connectors used in the solution prior to importing the solution. This will make the setup faster.
 
 1. Go to [flow.microsoft.com](https://flow.microsoft.com/).
-1. Select your CoE environment, and go to **Data** > **Connections** > **+ New connection**.
+1. Select your CoE environment, and go to **Dataverse** > **Connections** > **+ New connection**.
 1. Create connections for the following:
     - [Approvals](/connectors/approvals/)
     - [Microsoft Dataverse](/connectors/commondataserviceforapps/)
@@ -67,6 +67,7 @@ During solution import, you'll configure environment variable values. Make sure 
 | Name | Description |
 |------|---------------|
 |Admin eMail |This is the email address to which most admin communications in the starter kit will be sent. More information: [How will you communicate with your admins, makers, and users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-end-users)  |
+|Individual Admin |This is the email address to which communications in the starter kit will be sent which cannot be sent to a group. More information: [How will you communicate with your admins, makers, and users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-end-users)  |
 | Power Platform Maker Microsoft 365 Group | Get the ID of the Microsoft 365 group which will contain all your Power Platform makers. [Create a new group](/microsoft-365/admin/create-groups/create-groups#create-a-microsoft-365-group) if needed. You'll use this to communicate and share apps with them. Makers are automatically added to this group with the **Admin \| Add Maker to Group** flow and as part of the [Admin | Welcome Email v3](core-components.md#flows-2). More information: [How will you communicate with your admins, makers and end users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-end-users) |
 |Power Automate environment variable | The URL used by Power Automate for your cloud.<br> For an environment in the commercial cloud: <https://flow.microsoft.com/manage/environments/> <br>For GCC, GCC High, or DoD environment, check [Power Automate US government service URLs](/power-automate/us-govt#power-automate-us-government-service-urls). |
 |PowerApp Maker environment variable | The URL used byA the Power Apps maker portal for your cloud, including the trailing slash. <br> For an environment in the commercial cloud: <https://make.powerapps.com/> <br>For a GCC, GCC High, or DoD environment, check [Power Apps US Government service URLs](../../admin/powerapps-us-government.md#power-apps-us-government-service-urls). |
@@ -87,6 +88,9 @@ During solution import, you'll configure environment variable values. Make sure 
 1. Update environment variable values by using the [relevant information](#gather-environment-variable-values). The environment variables are used to store application and flow configuration data with data specific to your organization or environment. This means that you only have to set the value once per environment and it will be used in all necessary flows and apps in that environment. All the flows in the solution depend on all environment variables' being configured.
 
 The import can take up to 15 minutes to be completed.
+
+>[!NOTE]
+>The next steps walk you through turning on flows that. Some of these flows are configured to turn on automatically after import. However billing policies, DLP policies or connection issues may prevent them from being turned on. Always double-check to make sure all flows listed here are on!
 
 ## Turn on child flows
 
@@ -121,9 +125,10 @@ The following flows support the inventory setup and need to be turned on before 
 - Command Center App > Set CoE Flows State
 - DLP Editor > Parse impacted resources into CSV
 - Admin | Sync Template v3 (Connectors)
+- Admin | Sync Template v3 CoE Solution Metadata
 
 >[!IMPORTANT]
-> Before proceeding, ensure that the **Admin | Sync Template v3 Configure Emails** and **Admin | Sync Template v3 (Connectors)** flows runs and complete.
+> Before proceeding, ensure that the **Admin | Sync Template v3 Configure Emails**, and **Admin | Sync Template v3 (Connectors)** flows runs and complete.
 
 ## Turn on inventory flows
 
@@ -136,11 +141,16 @@ The Admin \| Sync Template flows part of this solution crawl through all the res
 >
 > Learn more: [Power Automate performance profiles](/power-automate/limits-and-config#performance-profiles) and [Concurrency looping and pagination limits](/power-automate/limits-and-config#concurrency-looping-and-debatching-limits)
 
+>[!NOTE]
+>Only turn on the **Admin | Sync Template v3 (Flow Action Details)** flow if you are likely to perform analytics on the action level of the flow - for example, looking at how is using the Send Email or Get Item actions.
+>This flow temporarily makes the account running the the **Admin | Sync Template v3 (Flow Action Details)** an owner of each flow that is using HTTP actions to retrieve further details of those actions (for example, the HTTP host), and removes owner access once the details have been retrieved. The admin running this flow will receive email notifications to let them know the flows they've just been made an owner of.
+
 - Admin | Sync Template v3 (Apps)
+- Admin | Sync Template v3 (Connection Identities)
 - Admin | Sync Template v3 (Custom Connectors)
 - Admin | Sync Template v3 (Desktop Flow - Runs)
 - Admin | Sync Template v3 (Desktop flows)
-- Admin | Sync Template v3 (Flow Action Details)
+- (optional) Admin | Sync Template v3 (Flow Action Details)
 - Admin | Sync Template v3 (Flows)
 - Admin | Sync Template v3 (Model Driven Apps)
 - Admin | Sync Template v3 (Portals)
@@ -286,6 +296,7 @@ Environment variables are used to store application and flow configuration data 
 |------|---------------|------|
 |Admin eMail |CoE Admin eMail. Email address used in flows to send notifications to admins; this should be either your email address or a distribution list. | Not applicable |
 | Admin eMail Preferred Language | The preferred language for the emails sent to the admin email alias, which is specified in the Admin eMail environment variable. | en-US |
+|Individual Admin |CThis is the email address to which communications in the starter kit will be sent which cannot be sent to a group. More information: [How will you communicate with your admins, makers, and users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-end-users) | Not applicable |
 |Also Delete from CoE | When running the "Admin \| Sync Template v2 (Check Deleted)" flow, delete the items from CoE (yes) or just mark deleted (no)  | Yes |
 | Command Center - Application Client ID | (optional) The application client ID from the [Create an Azure AD app registration to connect to Microsoft Graph](#create-an-azure-ad-app-registration-to-connect-to-microsoft-graph) step earlier in this article. Leave empty if you'd like to use Azure Key Vault to store your client ID and secret. | Not applicable |
 | Command Center - Client Secret | (optional) The application client secret from the [Create an Azure AD app registration to connect to Microsoft Graph](#create-an-azure-ad-app-registration-to-connect-to-microsoft-graph) step earlier in this article. Leave empty if you'd like to use Azure Key Vault to store your client ID and secret. | Not applicable |
