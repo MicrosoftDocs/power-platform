@@ -2,7 +2,7 @@
 title: "Updating the Center of Excellence (CoE) Starter Kit"
 description: "The CoE Starter Kit is updated each month. Learn best practices for managing the update process in your organization."
 author: stjeffer
-manager: phtopnes
+manager: topness-msft
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/10/2022
@@ -17,17 +17,13 @@ search.app:
   - Powerplatform
 ---
 
-<!-- questions from editor: Is it one release note per release, or more than one per release? (Sentence in line 44 said "a release notes".) Are "release" and "version" the same thing? If so, change line 30 to "release" so it's consistent with the rest of that list. I couldn't get to pages using links in the following lines: 149, 155, 163, 204. Please check to make sure the URLs are correct. -->
-
-
-
 # Updating the Center of Excellence (CoE) Starter Kit
 
 This article prepares you to upgrade the CoE Starter Kit. It provides guidance on:
 
 - How to stay up to date with the latest release.
 - How often and why to apply upgrades.
-- How to install the latest version.
+- How to install the latest release.
 - How to test the latest release.
 
 > [!NOTE]
@@ -41,7 +37,7 @@ Updates (bug fixes, enhancements, new features, and deprecations) are announced 
 
 ### GitHub release notes
 
-Each release of the CoE Starter Kit is accompanied with a release note that details bug fixes and enhancements addressed by the release. You should review release notes prior to installing the updated version in your organization.
+Each release of the CoE Starter Kit is accompanied with a release note that details bug fixes and enhancements addressed by the release. You should review the release note prior to installing the new version in your organization.
 
 #### Viewing release notes
 

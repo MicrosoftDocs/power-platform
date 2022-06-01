@@ -2,7 +2,7 @@
 title: "Extend and customize CoE Starter Kit components"
 description: "Extend and modify the components of the Power Platform Center of Excellence (CoE) Starter Kit."
 author: conorto
-manager: phtopnes
+manager: topness-msft
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/28/2022
@@ -16,9 +16,6 @@ search.app:
   - PowerApps
   - Powerplatform
 ---
-
-<!-- Should line 82 also mention **Name**? Is the screenshot in line 146 in the right location? It doesn't match the step. In line 158, this is confusing: "a copy of a cloud flows triggering child flows". Should it be "a cloud flow"? In line 227, there's either an extra word or a missing word here: "so that the components in your solution to only the ones you have modified or created". -->
-
 
 # Extend and customize CoE Starter Kit components
 
@@ -79,7 +76,7 @@ To create a new unmanaged solution:
 
    ![Screenshot showing where to start a new solution](media/coe-extension-2.png "Screenshot showing where to start a new solution")
    
-1. Enter the **Display name** (for example, *Contoso CoE Extension*), [**Publisher**](power-platform/alm/solution-concepts-alm#solution-publisher) (author of your solution), and **Version** (leave 1.0.0.0 if it's your first solution).
+1. Enter the **Display name** (for example, *Contoso CoE Extension*), **Name** (for example, *ContosoCoEExtension*),[**Publisher**](power-platform/alm/solution-concepts-alm#solution-publisher) (author of your solution), and **Version** (leave 1.0.0.0 if it's your first solution).
 
    ![Screenshot showing Display name, Name, Publisher, and Version](media/coe-extension-3.png "Screenshot showing Display name, Name, Publisher, and Version")
    
@@ -143,7 +140,7 @@ Next, create a copy of the canvas app:
 1. Go back to your solution—your copy of the app is displayed in the list (with your publisher prefix).
 1. Remove the original app from your solution by selecting it and, in the menu, selecting **Remove** and then **Remove from solution**.
 
-   ![Remove from solution](media/coe-extension-10.png "Remove from solution")
+   ![Remove from solution](media/coe-extension-11.png "Remove from solution")
 
    Remove [unmanaged layers](after-setup.md#removing-other-customizations) to continue receiving updates to the original app. You may want to compare them to your changes.
 
@@ -155,7 +152,7 @@ You can now safely edit your own copy.
 ### Working with cloud flows
 
 > [!CAUTION]
-> - Due to a product limitation, you can't create a copy of a cloud flows triggering child flows. Most CoE Starter Kit flows use child flows.
+> - Due to a product limitation, you can't create a copy of a parent cloud flows triggering child flows. Most CoE Starter Kit flows use child flows.
 > - Customizations to cloud flows can be made on the existing flows as unmanaged.
 > - Unmanaged changes will take precedence over the managed ones; therefore, customized flows won't be updated as part of a CoE upgrade.
 > - Learn more: [Solution Layers](/power-platform/alm/solution-layers-alm/)
@@ -219,14 +216,14 @@ Start by adding the table you want to add the field to, if it's not already in y
 1. Select **Add existing**.
 
    ![Screenshot showing the Add existing menu](media/coe-extension-5.png "Screenshot showing the Add existing menu")
-        
+
 1. Choose **Table**.
 1. Search for the table you want to add and select **Next**.
-        
+
    > [!IMPORTANT]
-   > If you only want to add new fields and not modify the views and forms of the table, don't check the options to include **metadata** or **objects** so that the components in your solution to only the ones you have modified or created.
+   > If you only want to add new fields and not modify the views and forms of the table, don't check the options to include **metadata** or **objects**.
    > ![Screenshot showing the Include all objects and Include table metadata checkboxes](media/coe-extension-5a.png "Screenshot showing the Include all objects and Include table metadata checkboxes")
-    
+
 1. Select **Add**.
 
 Then, add a new field:
