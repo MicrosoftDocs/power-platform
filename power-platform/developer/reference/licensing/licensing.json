@@ -219,7 +219,7 @@
           {
             "in": "path",
             "name": "billingPolicyId",
-            "description": "The billing policy Id",
+            "description": "The billing policy ID",
             "required": true,
             "type": "string"
           },
@@ -356,6 +356,113 @@
         }
       }
     },
+    "/licensing/environments/{environmentId}/allocations": {
+      "get": {
+        "tags": [
+          "CurrencyAllocation"
+        ],
+        "summary": "Get currency allocations for the environment.",
+        "operationId": "GetCurrencyAllocationByEnvironment",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/AllocationsByEnvironmentResponseModelV1"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "patch": {
+        "tags": [
+          "CurrencyAllocation"
+        ],
+        "summary": "Allocate and Deallocate the currencies for environment.",
+        "operationId": "PatchCurrencyAllocationByEnvironment",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Environment currency allocation",
+            "schema": {
+              "$ref": "#/definitions/AllocationsByEnvironmentPatchRequestModelV1"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/AllocationsByEnvironmentResponseModelV1"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
     "/licensing/billingPolicies/{billingPolicyId}/refreshProvisioningStatus": {
       "post": {
         "tags": [
@@ -473,7 +580,7 @@
           {
             "in": "path",
             "name": "billingPolicyId",
-            "description": "The billing policy Id",
+            "description": "The billing policy ID",
             "required": true,
             "type": "string"
           },
@@ -558,16 +665,390 @@
           }
         }
       }
+    },
+    "/licensing/isvContracts": {
+      "get": {
+        "tags": [
+          "IsvContract"
+        ],
+        "summary": "Get the list of ISV contracts for the tenant.",
+        "description": "Get the list of ISV contracts for the tenant.",
+        "operationId": "ListISVContracts",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "$top",
+            "description": "Top limit of results",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/IsvContractResponseModelResponseWithOdataContinuation"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IsvContract"
+        ],
+        "summary": "Create an ISV contract.",
+        "description": "Create an ISV contract.",
+        "operationId": "CreateISVContract",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "The ISV contract",
+            "schema": {
+              "$ref": "#/definitions/IsvContractPostRequestModel"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/IsvContractResponseModel"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      }
+    },
+    "/licensing/isvContracts/{isvContractId}": {
+      "get": {
+        "tags": [
+          "IsvContract"
+        ],
+        "summary": "Get an ISV contract by its ID.",
+        "description": "Get an ISV contract by its ID.",
+        "operationId": "GetISVContract",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "isvContractId",
+            "description": "The ISV contract Id",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/IsvContractResponseModel"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "IsvContract"
+        ],
+        "summary": "Update an ISV contract.",
+        "description": "Update an ISV contract.",
+        "operationId": "UpdateISVContract",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "isvContractId",
+            "description": "The ISV contract Id",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "The ISV contract",
+            "schema": {
+              "$ref": "#/definitions/IsvContractPutRequestModel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/IsvContractResponseModel"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IsvContract"
+        ],
+        "summary": "Delete an ISV contract.",
+        "description": "Delete an ISV contract.",
+        "operationId": "DeleteISVContract",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "isvContractId",
+            "description": "The ISV contract Id",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Success"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
     }
   },
   "definitions": {
+    "AllocationsByEnvironmentPatchRequestModelV1": {
+      "type": "object",
+      "properties": {
+        "currencyAllocations": {
+          "description": "Specify the request body with environment id and currency details",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/CurrencyAllocationRequestModelV1"
+          }
+        }
+      }
+    },
+    "AllocationsByEnvironmentResponseModelV1": {
+      "description": "The response body includes environment id and allocated currencies",
+      "type": "object",
+      "properties": {
+        "environmentId": {
+          "description": "The environment Id for which the currency has been allocated",
+          "type": "string",
+          "example": "00000000-0000-0000-0000-000000000000"
+        },
+        "currencyAllocations": {
+          "description": "The collection of currencies with allocation count",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/CurrencyAllocationResponseModelV1"
+          }
+        }
+      }
+    },
+    "CurrencyAllocationRequestModelV1": {
+      "type": "object",
+      "properties": {
+        "currencyType": {
+          "$ref": "#/definitions/ExternalCurrencyType"
+        },
+        "allocated": {
+          "format": "int32",
+          "description": "Specify the currency count",
+          "type": "integer",
+          "example": 10
+        }
+      }
+    },
+    "CurrencyAllocationResponseModelV1": {
+      "type": "object",
+      "properties": {
+        "currencyType": {
+          "$ref": "#/definitions/ExternalCurrencyType"
+        },
+        "allocated": {
+          "format": "int32",
+          "description": "The allocated count of curreny type",
+          "type": "integer",
+          "example": 10
+        }
+      }
+    },
+    "ExternalCurrencyType": {
+      "description": "Available currency type which can be allocated to environment",
+      "enum": [
+        "AppPass",
+        "AI",
+        "PortalLogins",
+        "PortalViews",
+        "PerFlowPlan",
+        "VAConversations",
+        "AppPassForTeams",
+        "PAUnattendedRPA"
+      ],
+      "type": "string",
+      "example": "AppPass"
+    },
+    "BillingPolicyConditionsModel": {
+      "description": "The ISV Contract API filter conditions.",
+      "type": "object",
+      "properties": {
+        "apiFilter": {
+          "$ref": "#/definitions/BillingPolicyConditionsApiFilterModel"
+        }
+      },
+      "example": {
+        "apiFilter": {
+          "allowOtherPremiumConnectors": true,
+          "requiredApis": [
+            {
+              "name": "connector1"
+            },
+            {
+              "name": "connector2"
+            }
+          ]
+        }
+      }
+    },
+    "BillingPolicyConditionsApiFilterModel": {
+      "description": "The Power Platform connector filter.",
+      "type": "object",
+      "properties": {
+        "allowOtherPremiumConnectors": {
+          "description": "A flag indicating whether metered usage that involves premium connectors may be attributed.",
+          "type": "boolean"
+        },
+        "requiredApis": {
+          "description": "A list of connectors, at least one of which which must be involved in the metered usage to be attributed.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/BillingPolicyConditionsApiModel"
+          }
+        }
+      }
+    },
+    "BillingPolicyConditionsApiModel": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "The name of an API connector.",
+          "type": "string"
+        }
+      }
+    },
     "BillingInstrumentModel": {
+      "description": "The ISV billing instrument information.",
       "type": "object",
       "properties": {
         "subscriptionId": {
-          "type": "string"
+          "format": "uuid",
+          "description": "The tenant subscription Id.",
+          "type": "string",
+          "example": {
+            "subscriptionId": "00000000-0000-0000-0000-000000000000"
+          }
         },
         "resourceGroup": {
+          "description": "The resource group within the tenant subscription.",
           "type": "string"
         },
         "id": {
@@ -699,13 +1180,206 @@
       }
     },
     "BillingPolicyStatus": {
+      "description": "The desired ISV contract status.",
       "enum": [
         "Enabled",
-        "Disabled",
-        "DisabledBySubscription",
-        "Deleted"
+        "Disabled"
       ],
       "type": "string"
+    },
+    "ConsumerIdentityModel": {
+      "description": "The consumer identity for ISV contract.",
+      "type": "object",
+      "properties": {
+        "tenantId": {
+          "format": "uuid",
+          "description": "The ID of the customer tenant.",
+          "type": "string",
+          "example": {
+            "tenantId": "00000000-0000-0000-0000-000000000000"
+          }
+        }
+      }
+    },
+    "IsvContractPostRequestModel": {
+      "description": "The ISV contract model for update operations.",
+      "required": [
+        "name",
+        "location",
+        "status",
+        "consumer",
+        "conditions",
+        "powerAutomatePolicy",
+        "billingInstrument"
+      ],
+      "type": "object",
+      "properties": {
+        "name": {
+          "maxLength": 64,
+          "minLength": 10,
+          "pattern": "/^[a-zA-Z\\d]+$/",
+          "type": "string"
+        },
+        "status": {
+          "$ref": "#/definitions/BillingPolicyStatus"
+        },
+        "location": {
+          "description": "Specify the desired resource location for creation of Azure Power Platform account for billing. Once set, this property cannot be updated. Power Platform Environments using this ISV Contract for pay-as-you-go billing must be in the same location.",
+          "type": "string",
+          "items": {
+            "example": [
+              "asia",
+              "australia",
+              "canada",
+              "europe",
+              "france",
+              "germany",
+              "india",
+              "japan",
+              "korea",
+              "norway",
+              "southafrica",
+              "southamerica",
+              "switzerland",
+              "unitedarabemirates",
+              "unitedkingdom",
+              "unitedstates"
+            ]
+          },
+          "example": "unitedstates"
+        },
+        "consumer": {
+          "$ref": "#/definitions/ConsumerIdentityModel"
+        },
+        "conditions": {
+          "$ref": "#/definitions/BillingPolicyConditionsModel"
+        },
+        "billingInstrument": {
+          "$ref": "#/definitions/BillingInstrumentModel"
+        },
+        "powerAutomatePolicy": {
+          "$ref": "#/definitions/PowerAutomatePolicyModel"
+        }
+      },
+      "example": {
+        "name": "exampleContract",
+        "location": "unitedstates",
+        "status": "Enabled",
+        "consumer": {
+          "tenantId": "00000000-0000-0000-0000-000000000000"
+        },
+        "conditions": {
+          "apiFilter": {
+            "allowOtherPremiumConnectors": true,
+            "requiredApis": [
+              {
+                "name": "example-connector-1"
+              },
+              {
+                "name": "example-connector-2"
+              }
+            ]
+          }
+        },
+        "powerAutomatePolicy": {
+          "cloudFlowRunsPayAsYouGoState": "Enabled",
+          "desktopFlowUnattendedRunsPayAsYouGoState": "Enabled",
+          "desktopFlowAttendedRunsPayAsYouGoState": "Enabled"
+        },
+        "billingInstrument": {
+          "subscriptionId": "00000000-0000-0000-0000-000000000000",
+          "resourceGroup": "resourceGroupName"
+        }
+      }
+    },
+    "IsvContractPutRequestModel": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "status": {
+          "$ref": "#/definitions/BillingPolicyStatus"
+        },
+        "conditions": {
+          "$ref": "#/definitions/BillingPolicyConditionsModel"
+        },
+        "powerAutomatePolicy": {
+          "$ref": "#/definitions/PowerAutomatePolicyModel"
+        }
+      }
+    },
+    "IsvContractResponseModel": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "status": {
+          "$ref": "#/definitions/BillingPolicyStatus"
+        },
+        "location": {
+          "type": "string"
+        },
+        "consumer": {
+          "$ref": "#/definitions/ConsumerIdentityModel"
+        },
+        "conditions": {
+          "$ref": "#/definitions/BillingPolicyConditionsModel"
+        },
+        "billingInstrument": {
+          "$ref": "#/definitions/BillingInstrumentModel"
+        },
+        "powerAutomatePolicy": {
+          "$ref": "#/definitions/PowerAutomatePolicyModel"
+        },
+        "createdOn": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "createdBy": {
+          "$ref": "#/definitions/Principal"
+        },
+        "lastModifiedOn": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "lastModifiedBy": {
+          "$ref": "#/definitions/Principal"
+        }
+      }
+    },
+    "IsvContractResponseModelResponseWithOdataContinuation": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/IsvContractResponseModel"
+          }
+        },
+        "@odata.nextLink": {
+          "type": "string"
+        }
+      }
+    },
+    "PowerAutomatePolicyModel": {
+      "description": "The Power Platform Requests policies.",
+      "type": "object",
+      "properties": {
+        "cloudFlowRunsPayAsYouGoState": {
+          "$ref": "#/definitions/PayAsYouGoState"
+        },
+        "desktopFlowUnattendedRunsPayAsYouGoState": {
+          "$ref": "#/definitions/PayAsYouGoState"
+        },
+        "desktopFlowAttendedRunsPayAsYouGoState": {
+          "$ref": "#/definitions/PayAsYouGoState"
+        }
+      }
     },
     "PayAsYouGoState": {
       "enum": [
