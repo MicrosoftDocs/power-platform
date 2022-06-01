@@ -29,9 +29,9 @@ The underlying capability identifies the structure and content on a webpage or o
 
 There are three main steps to using the feature:
 
-1. Select **Suggest topics** on the Topics page to extract content from FAQ/support pages or online files.
-1. Add the suggested topics to your bot.
-1. Enable the topics.
+1. [Select **Suggest topics** on the Topics page to extract content](#extract-content-from-webpages-or-online-files).
+1. [Add the suggested topics to your bot](#add-suggested-topics-to-an-existing-bot).
+1. [Enable the suggested topics](#enable-topics-in-your-bot).
 
 You can [test the topics in the test chat](authoring-test-bot.md), but you'll need to [publish your bot for customers](publication-fundamentals-publish-channels.md) to see the latest changes.
 
@@ -44,11 +44,16 @@ You can [test the topics in the test chat](authoring-test-bot.md), but you'll ne
 
 ## Supported content
 
-The **Suggest topics** capability is built to run on online FAQ or support content. Other types of content with a different structure might not work as expected.
+The **Suggest topics** capability is built to extract content from FAQ/support webpages or online files. Other types of content with a different structure might not work as expected.
 
-Uploading files is not supported, instead you must provide a URL to a webpage or supported file.
+Uploading files is not supported, instead you must provide a URL that meets the following requirements:
 
-URLs must start with `https://` and be publicly available, that is, they can't need a user to log in to access them.
+- Points to a webpage or supported file type
+- Accessible by anyone on the internet
+- Doesn't require a user to login
+- Uses HTTPS (starts with `https://`)
+
+### File types
 
 Tabular file types require a _two-column format_ where each row represents a question and answer pair: the first column contains the question and the second column contains the answer.
 
