@@ -1,7 +1,7 @@
 ---
 title: Power Platform security FAQs
 description: Get answers to common questions about Power Platform security.
-ms.date: 03/24/2022
+ms.date: 05/27/2022
 ms.service: power-platform
 ms.topic: conceptual
 ms.custom: 
@@ -106,7 +106,9 @@ In addition, organizations can use [Content Security Policy](../content-security
 
 ### Does Power Platform support Content Security Policy?
 
-Power Platform supports [Content security policy](../content-security-policy.md) for model-driven apps. 
+Power Platform supports [Content security policy](../content-security-policy.md) (CSP) for model-driven apps. We do not support the following headers which are replaced by CSP:
+- `X-XSS-Protection`
+- `X-Frame-Options`
 
 ### How can we connect to SQL Server securely?
 
@@ -139,6 +141,8 @@ Power Platform scopes session cookies to the parent domain to allow authenticati
 ### How can we set the application session to time out after, say, 15 minutes?
 
 Power Platform uses Azure AD for identity and access management. It follows [Azure AD's recommended session management configuration](/azure/active-directory/develop/access-tokens#access-token-lifetime) for an optimal user experience.
+
+However, you can customize environments to have explicit session and/or activity timeouts.  For more information, see [User session and access management](../user-session-management).
 
 With Power Platform's upcoming implementation of Azure AD [Continuous Access Evaluation](/azure/active-directory/conditional-access/concept-continuous-access-evaluation), user identification and authentication will be even more secure and reliable.
 

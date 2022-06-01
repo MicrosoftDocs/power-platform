@@ -27,8 +27,6 @@ This article will prepare you to install the CoE Starter Kit and provides guidan
 - The environment type to use for your solutions.
 - All pre-requisites needed to use the CoE Starter Kit.
 
-It will also help you understand how to extend the CoE Starter Kit, how to apply upgrades, and where to post issues.
-
 ## What identity should I install the CoE Starter Kit with?
 
 The CoE Starter Kit requires access to your tenant's Power Platform environments. Therefore, the identity you set up for the CoE Starter Kit needs the following:
@@ -170,5 +168,12 @@ The content package contains various files that support different features of th
 
 > [!div class="nextstepaction"]
 > [Next step: Set up inventory components](setup-core-components.md)
+
+## What's next: After installing the CoE Starter Kit
+
+If you have already installed the CoE Starter Kit, please check our instructions for
+
+- [Updating the CoE Starter Kit](after-setup.md) with a new release
+- [Extending the CoE Starter Kit](modify-components.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
