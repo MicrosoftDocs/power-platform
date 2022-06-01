@@ -78,7 +78,7 @@ The [sync flows](#flows) of the CoE Starter Kit sync your tenant resources to th
   - Type (scope, for each, Microsoft 365 users)
   - Operation (for connectors, such as Send Email and List Items)
   - Is trigger (yes/no)
-  - Flow Action Detail Metadata (stores things like host for Http calls)
+  - Flow Action Detail Metadata (for example, host for HTTP calls)
 
 - **PowerApps Connector** represents a standard or custom connector. The following information is available for each connector:
   - Connector ID
@@ -89,7 +89,7 @@ The [sync flows](#flows) of the CoE Starter Kit sync your tenant resources to th
   - Publisher
   - Tier (standard/premium)
 
-- **Connection Reference** The linking table for the many-to-many relationships among connectors (PowerApps Connector) and cloud flows (Flows) or apps (PowerApps App).
+- **Connection Reference** represents the linking table for the many-to-many relationships among connectors (PowerApps Connector) and cloud flows (Flows) or apps (PowerApps App).
 
 - **Connection Reference Identity** stores the connections for each environment including their identity
   - Environment
@@ -212,15 +212,15 @@ Additional to the above listed inventory tables, the following helper tables sup
   - Environment
   - Created on
 
-- **CoE Solution Metadata** holds the CoE Starter Kit apps and flows in a table so that the metadata can be used in various locations like the Admin | Command Center:
-  - CoESolution (ex Core, Governance, ...)
-  - CoESolutionArea (ex Inventory, Compliance, ...)
-  - ObjectType
-  - ObjectURL
-  - ObjectGUID
-  - ShipOn
+- **CoE Solution Metadata** holds meta-data about flows and apps part of the CoE Starter Kit in a table and is used in the [Admin | Command Center](#admin---command-center):
+  - CoE Solution (Core, Governance, Nurture, Audit Log)
+  - CoE Solution Area (for example, Inventory, Compliance, ...)
+  - Object Type (app or flow)
+  - Object URL
+  - Object GUID
+  - Ship On
   - Flag
-  - HelpLink
+  - Help Link (link to documentation)
 
 > [!NOTE]
 > To easily explore and manage data stored in Dataverse, we recommend that you install the [Microsoft Power Apps Office Add-in](https://appsource.microsoft.com/product/office/WA104380330?tab=Overview). More information: [Working with data in Dataverse using the Excel Add-in!](https://powerapps.microsoft.com/blog/cds-for-apps-excel-importexport/)
