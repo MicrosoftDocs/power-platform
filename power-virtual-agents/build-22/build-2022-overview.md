@@ -21,7 +21,7 @@ This year at Microsoft Build 2022, we are excited to announce the evolution of P
 
 The new intelligent bot authoring experience unifies the sophistication of Azure Bot Framework Composer pro-code capabilities with the simplicity of the Power Virtual Agents low-code platform, making it even easier for professional developers and subject matter experts to build collaboratively in one Microsoft bot building studio.
 
-This evolution brings new features including:
+This evolution brings new features, including:
 
 - Updates to authoring experience
   - [Multimedia cards​](advanced-cards.md)
@@ -42,18 +42,18 @@ For a guided tutorial on how to use these new features, please refer to the [Bui
 
 To get answers and tips directly from other users in the technology preview, visit the [community forums](https://aka.ms/PVABuild22Forum).
 
-This technology preview doesn't yet support some of the existing features you're used to in Power Virtual Agents, such as, custom entities, agent transfers, and bot authoring in Teams. For the full list, see [Limitations of technology preview](build-2022-limitations.md).
+This technology preview doesn't yet support some of the existing features you're used to in Power Virtual Agents, such as custom entities, agent transfers, and bot authoring in Teams. For the complete list, see [Limitations of technology preview](build-2022-limitations.md).
 
 ## For desktop Composer users
 
-There are a number of differences and similarities in how bots are designed in Bot Framework Composer and in the Power Virtual Agents technology preview.
+There are a number of differences and similarities in how bots are designed in the Bot Framework Composer and the Power Virtual Agents technology preview.
 The following table lists some key concepts in Composer and describes where to find information about similar concepts in Power Virtual Agents.
 
 <!-- best viewed without wordwrap -->
 | Composer concept               | Power Virtual Agents concept                        | Description                                                                                                                                                                                                                                        |
 | :----------------------------- | :-------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Dialogs and triggers           | [Topics][]                                          | Use topics to organize conversation flow or paths. A topic has a set of _trigger phrases_ that indicate when the bot should start the topic and a set of _nodes_ that describe the conversation path for the topic.                                |
-| Intents                        | [Trigger phrases][]                                 | Add trigger phrases to a topic for phrases, keywords, and questions that a user is likely to type that are related to a specific issue. Natural language understanding is used to parse what a customer types and find the most appropriate topic. |
+| Intents                        | [Trigger phrases][]                                 | Add trigger phrases to a topic for phrases, keywords, and questions that a user is likely to type related to a specific issue. Natural language understanding is used to parse what a customer types and find the most appropriate topic. |
 | Actions and prompts            | [Nodes][]                                           | Use nodes on the authoring canvas to create the conversation path for each topic, such as messages, questions, and conditional branches.                                                                                                           |
 | Bot response variation         | [Response variations][] and [question variations][] | Use response and question variations to add variety to your bot's messages and questions.                                                                                                                                                          |
 | Suggested actions              | [Quick replies][]                                   | Use quick replies to provide default reply options to the user.                                                                                                                                                                                    |
