@@ -589,6 +589,9 @@
         href: view-self-service-capacity.md
       - name: Free up storage space
         href: free-storage-space.md        
+## remove next row before publish
+      - name: Clean up records from AsyncOperationBase and WorkflowLogBase tables
+        href: cleanup-asyncoperationbase-table.md
       - name: Add storage capacity
         href: add-storage.md      
       - name: Access storage with SAS token
