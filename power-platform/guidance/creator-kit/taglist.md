@@ -33,7 +33,7 @@ A control used to display data.
 This code component provides a Tag List that provides flexible width rendering bound to a collection.
 
 > [!NOTE]
-> Component source code and more information available at the [Creator kit GitHub repository](https://github.com/microsoft/powercat-creator-kit).
+> Component source code and more information in the [GitHub code components repository](https://github.com/microsoft/powercat-code-components/tree/main/TagList).
 
 ## Limitations
 

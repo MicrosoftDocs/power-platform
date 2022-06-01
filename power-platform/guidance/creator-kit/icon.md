@@ -34,7 +34,7 @@ This control renders Fluent UI icons based on the name. Allows you to easily cre
 For a list of icons, go to [Fluent UI icons](https://developer.microsoft.com/fluentui#/styles/web/icons).
 
 > [!NOTE]
-> Component source code and more information available at the [Creator kit GitHub repository](https://github.com/microsoft/powercat-creator-kit).
+> Component source code and more information in the [GitHub code components repository](https://github.com/microsoft/powercat-code-components/tree/main/Icon).
 
 ## Limitations
 

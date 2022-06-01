@@ -35,7 +35,7 @@ A details list (`DetailsList`) is a robust way to display an information-rich co
 The `DetailsList` code component allows using of the [Fluent UI `DetailsList` component](https://developer.microsoft.com/fluentui#/controls/web/detailslist) from inside canvas apps and custom pages.
 
 > [!NOTE]
-> Component source code and more information available at the [Creator kit GitHub repository](https://github.com/microsoft/powercat-creator-kit).
+> Component source code and more information in the [GitHub code components repository](https://github.com/microsoft/powercat-code-components/tree/main/DetailsList).
 
 ## Limitations
 
