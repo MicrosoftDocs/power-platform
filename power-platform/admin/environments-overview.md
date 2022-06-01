@@ -4,7 +4,7 @@ description: Learn about environments in Power Apps and how to use them.
 author: jimholtz
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 05/16/2022
+ms.date: 06/01/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
