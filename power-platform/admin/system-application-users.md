@@ -1,9 +1,8 @@
 ---
 title: "Special system users and application users"
 description: "Learn about the special system and application users created when the system is provisioned, including assigned security role, user name, and purpose." 
-
 ms.component: pa-admin
-ms.topic: quickstart
+ms.topic: conceptual
 ms.date: 01/14/2022
 author: paulliew
 ms.subservice: admin
@@ -34,37 +33,37 @@ Most of these users are hidden from user views but they can be found by using th
 | | App Management User | capam@microsoft.com | To allow App Management Services to query tenant details such as Tenant country | System admin |
 | | Dataverse Dataverse search | RelevanceSearch@onmicrosoft.com | To fetch table data and metadata for Dataverse search feature | System admin |
 | | Dynamics 365 Office Data Service | diofficedata@microsoft.com |Service Application to perform data integration between Microsoft Dataverse and Microsoft 365. | DataLakeWorkspaceAppAccess |
-| | Dynamics 365 Athena-CDStoAzuredatalake | Dynamics365Athena-CDStoAzuredatalake@onmicrosoft.com |Service application to perform data integration between Microsoft Dataverse to Azure Data Lake. |DataLakeWorkspaceAppAccess |
-| | Dynamics 365 Athena2-CDStoAzuredatalake | Dynamics365Athena2-CDStoAzuredatalake@onmicrosoft.com |Service application to perform data integration between Dataverse to Azure Data Lake. |DataLakeWorkspaceAppAccess |
+| | Dynamics 365 Athena-CDStoAzuredatalake | Dynamics365Athena-<br />CDStoAzuredatalake<br />@onmicrosoft.com |Service application to perform data integration between Microsoft Dataverse to Azure Data Lake. |DataLakeWorkspaceAppAccess |
+| | Dynamics 365 Athena2-CDStoAzuredatalake | Dynamics365Athena2-<br />CDStoAzuredatalake<br />@onmicrosoft.com |Service application to perform data integration between Dataverse to Azure Data Lake. |DataLakeWorkspaceAppAccess |
 | | EnterpriseSales | EnterpriseSales@onmicrosoft.com |Service application to perform data integration between Dataverse (Sales) to Azure Data Lake. |N/A |
-| | Finance and Operations Runtime Integration User | FinanceandOperationsRuntimeIntegrationUser@onmicrosoft.com |Service application to perform dual-write data integration between Dataverse and Finance and Operations. |Finance and Operations Integration User |
+| | Finance and Operations Runtime Integration User | FinanceandOperations<br />RuntimeIntegrationUser<br />@onmicrosoft.com |Service application to perform dual-write data integration between Dataverse and Finance and Operations. |Finance and Operations Integration User |
 | | # SIAutoCapture | SIAutoCapture@onmicrosoft.com | To be used for Auto Capture solution business requirements to perform data query and execute plugins from backend services. | SalesInsights AutoCapture Admin |
 | | # Dynamics 365 Sales | Dynamics365Sales@onmicrosoft.com | To allow Dynamics 365 Sales to communicate with Dataverse and Azure Data Lake for analysis and data updates. | Sales system data sync and EAC App Access |
 | | Microsoft Project | Project@microsoft.com |Allow Project for the Web and Roadmap Service to communicate with Dataverse. |Project System and Portfolio User |
 | | Power Apps Checker Application | Pacheckerapp@microsoft.com |To perform static analysis of Power Apps solutions to assist in identifying performance and stability risks. |Export customizations and Solution checker |
-| | Powerqueryonline-CDStoAzuredatalake | Powerqueryonline-CDStoAzuredatalake@onmicrosoft.com |Service application to perform data query between Dataverse and Azure Data Lake. |N/A |
+| | Powerqueryonline-CDStoAzuredatalake | Powerqueryonline-<br />CDStoAzuredatalake<br />@onmicrosoft.com |Service application to perform data query between Dataverse and Azure Data Lake. |N/A |
 | | Provision User | provisionapp@fabrikam.com |To perform Application installation from AppSource or System updates from Microsoft. |System admin |
 | | DataLakeStorage | DataLakeStorage@onmicrosoft.com | To allow solutions to manage workspaces, workspace permissions and the discovery of workspaces. | DataLakeWorkspaceAppAccess |
-| | JobServicePreProd| JobServicePreProd@onmicrosoft.com| Enable satellite services to schedule and dispatch messages to independently built workloads with guaranteed delivery of messages based on service-defined policies. | System admin |
+| | JobServicePreProd| JobServicePreProd<br />@onmicrosoft.com| Enable satellite services to schedule and dispatch messages to independently built workloads with guaranteed delivery of messages based on service-defined policies. | System admin |
 | | JobServiceProd| JobServiceProd@onmicrosoft.com| Enable satellite services to schedule and dispatch messages to independently built workloads with guaranteed delivery of messages based on service-defined policies. | System admin |
 | | # CCADataAnalyticsML | CCADAAdmins@onmicrosoft.com | To allow AI insights in customer care apps like Customer Service, Field Service, etc. | System Customizer and System admin |
 | | # CDSReportService | CDSReportService@onmicrosoft.com | To allow user to run reports. |N/A |
 | | Power Platform Dataflows | ppdfcdsclient@onmicrosoft.com | Power Platform Dataflows service application to perform data preparation and loading into Dataverse and Azure Data Lake. | System Administrator
 | | AIBuilderProd | aibuilderfpapp@onmicrosoft.com | To perform authentication for AI Builder. | System admin |
-| | PowerAutomate-ProcessMining | PowerAutomate-ProcessMining@onmicrosoft.com | To allow Process Advisor service to interact with Dataverse. | Environment Maker, Process Advisor Application |
+| | PowerAutomate-ProcessMining | PowerAutomate-ProcessMining<br />@onmicrosoft.com | To allow Process Advisor service to interact with Dataverse. | Environment Maker, Process Advisor Application |
 | | AriaMdlExporter | AriaMdlExporter@onmicrosoft.com | To export data from Engagement Insights to Managed Data Lake. | DataLakeWorkspaceAppAccess |
 | | CDSFileStorage | CDSFileStorage@onmicrosoft.com | To perform background operations like Organization Lifecycle (OLC) operations, file reconciliation and migration. | FileStoreService App Access |
-| | CDSUserManagement | CDSUserManagement@onmicrosoft.com | To provision and synchronize users into Dataverse from Active Directory. | System Administrator |
-| |GDSGlobalDiscovery | GDSGlobalDiscovery@onmicrosoft.com | To validate which environments that users can access. | Global Discovery Service  |
+| | CDSUserManagement | CDSUserManagement<br />@onmicrosoft.com | To provision and synchronize users into Dataverse from Active Directory. | System Administrator |
+| |GDSGlobalDiscovery | GDSGlobalDiscovery<br />@onmicrosoft.com | To validate which environments that users can access. | Global Discovery Service  |
 | | BAP | BAP@onmicrosoft.com | To perform administrative operations on Dataverse linked environments: fetch user roles, provision users, assign roles in Power Platform portals.| N/A |
-| | Microsoft Forms Pro | enterprisesurveyappuser@contoso.com | To perform data integration between Dynamics 365 Customer Voice and Dataverse | System Administrator  |
-| | PowerVIrtualAgents  | PowerVirtualAgents@onmicrosoft.com | To manage the PVA capabilities within Dataverse environments | CCI Admin, System Customizer, and Environment Maker    |
+| | Microsoft Forms Pro | enterprisesurveyappuser<br />@contoso.com | To perform data integration between Dynamics 365 Customer Voice and Dataverse | System Administrator  |
+| | PowerVIrtualAgents  | PowerVirtualAgents<br />@onmicrosoft.com | To manage the PVA capabilities within Dataverse environments | CCI Admin, System Customizer, and Environment Maker    |
 | | BizQA | BizQA@onmicrosoft.com | To access search telemetry to improve search experience | BizQAApp   |
 | | ProductInsights | ProductInsights@onmicrosoft.com | To export data from Customer Insights to Engagement Insights | DataLakeWorkspaceAppAccess    |
-| | Dynamics365 SalesForecasting | Dynamics365SalesForecasting@onmicrosoft.com | To fetch table data and metadata for forecasting feature | ForecastAppUser    |
+| | Dynamics365 SalesForecasting | Dynamics365SalesForecasting<br />@onmicrosoft.com | To fetch table data and metadata for forecasting feature | ForecastAppUser    |
 | | # Omnichannel | Ominichannel@onmicrosoft.com | To perform data integration between Omnichannel for Customer Service and Dataverse | System admin    |
 | | # Flow-RP | Flow-RP@onmicrosoft.com | To allow Power Automate to integrate with Dataverse | Flow-RP Role, Service Reader |
-| | # DataSyncService-\<REGION\> | DataSyncService-\<REGION\>@onmicrosoft.com | To read data for Azure Data Lake sync | Data Sync Service  |
+| | # DataSyncService-\<REGION\> | DataSyncService-\<REGION\><br />@onmicrosoft.com | To read data for Azure Data Lake sync | Data Sync Service  |
 | | # DataSyncFramework-\<REGION\> | DataSyncFramework-\<REGION\>@onmicrosoft.com | To read data for Azure Data Lake sync | Data Sync Framework  |
 
 **The purpose of the system account?** 

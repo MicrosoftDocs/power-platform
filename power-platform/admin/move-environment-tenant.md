@@ -1,7 +1,7 @@
 ---
 title: "Migrate an environment to a different tenant"
 description: "Learn about the impact of migrating an environment from one tenant to another. Review the prerequisites and considerations before submitting a request." 
-ms.date: 03/31/2022
+ms.date: 05/17/2022
 ms.topic: conceptual
 applies_to: 
   - "Dynamics 365 (online)"
@@ -43,6 +43,8 @@ There are no user interface changes or version changes as part of this move. You
 > Geographical region changes aren't supported into or out of US GCC, US GCC High, US DoD, OCE, IND, or China.
 > 
 > Existing source database backups won't be migrated to destination tenant.
+> 
+> Linking a Dataverse organization to a Finance and Operations organization is not supported.
 
 ### Supported applications and platforms
 
@@ -115,7 +117,7 @@ You'll also need to provide the following information:
    1. Create users in Microsoft 365/Azure AD.
    2. Assign licenses.
 5. Once the users are created and enabled, the mapping file will need to be generated following the steps <a href="#steps-to-create-the-mapping-file">described later in this topic</a>.
-6. If there are any solutions for Power Apps or Power Automate flows, these need to be exported from the [Power Apps maker portal](https://make.powerapps.com) and imported again into the new environment after the migration.
+6. If there are any solutions for Power Apps or Power Automate flows, these need to be exported from [Power Apps](https://make.powerapps.com) and imported again into the new environment after the migration.
 
 ### Confirm if any of the solutions below are installed in the environments to be migrated, as these may require additional steps either from you or Support:
  
@@ -223,9 +225,6 @@ After the migration:
 1. Sign in to the environment.
 2. Open the [Power Apps Portals admin center](/powerapps/maker/portals/admin/admin-overview#open-power-apps-portals-admin-center).
 3. Provision the portal with the same portal type and language.
-
-> [!NOTE]
-> The following configurations are not preserved by the portal reset and must be configured again in the new portal. 
 
 #### For Dynamics 365 Marketing:
 

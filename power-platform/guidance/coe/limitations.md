@@ -27,14 +27,12 @@ The following sections describe limitations for some components.
 
 There are some flows, which crawl the tenant in order to do their work. Specifically, the inventory flows in Core solution and the start archival flows in Governance solution.
 
-To help ensure service levels, availability, and quality, there are entitlement limits to the number of requests users can make each day across Power Apps, Power Automate. Learn more: [Requests limits and allocations](../../admin/api-request-limits-allocations.md)
+To help ensure service levels, availability, and quality, there are entitlement limits to the number of requests users can make each day across Power Apps, Power Automate. Learn more: [Requests limits and allocations](/power-platform/admin/api-request-limits-allocations)
 
-Larger tenants might require a per flow license in order for these flows to complete in a timely manner. More information: [Power Automate License Pricing](https://flow.microsoft.com/pricing/)
+Larger tenants might require a [Power Automate Per Flow](https://flow.microsoft.com/pricing/) license or may need to set up [pay-as-you go for Power Platform requests](/power-platform/admin/pay-as-you-go-overview) in order for these flows to complete in a timely manner.
 
-Whilst we work on a long term solution, you can also request for your [limits to be raised](https://github.com/microsoft/coe-starter-kit/issues/917). 
-
->[!TIP]
->The first run of the Sync flows in the Core Solution will run long as it will do an update for every flow/app/etc in the tenant. Subsequent runs  will only update apps/flows/etc that have changed since the last run and so these will not require a per flow license for most tenants.
+>[!NOTE]
+>The first run of the sync flows will perform a full inventory and will run long as it will do an update for every flow/app/etc in the tenant. Subsequent runs  will only update apps/flows/etc that have changed since the last run and so these will not go over Power Platform request entitlements for most tenants.
 
 ## Dataverse for Teams
 
@@ -72,7 +70,7 @@ It currently isn't possible to retrieve the model-driven apps, chatbots, and Des
 
 ## Supported languages
 
-The CoE Starter Kit solutions are not localized, and only support English. Add the English language pack to your environment to make sure all apps and flows work. More information: [Regional and language options for your environment](../../admin/enable-languages.md)
+The CoE Starter Kit solutions are not localized, and only support English. Add the English language pack to your environment to make sure all apps and flows work. More information: [Regional and language options for your environment](/power-platform/admin/enable-languages)
 
 ## Security groups and approvals
 
@@ -112,13 +110,13 @@ We are able to collect only the intersect of all custom connectors outside of so
 
 ## Inventory and telemetry differences between PowerShell, Power Platform Admin Center, and CoE Starter Kit
 
-If you are using [PowerShell for Power Platform Administrators](../../admin/powershell-getting-started.md) and the [Power Platform Admin Center](../../admin/wp-work-with-admin-portals.md) together with the CoE Starter Kit, you may be noticing a discrepancy in inventory - for example, the number of apps returned by PowerShell looks different than the number of apps returned by the CoE Starter Kit.
+If you are using [PowerShell for Power Platform Administrators](/power-platform/admin/powershell-getting-started) and the [Power Platform Admin Center](/power-platform/admin/wp-work-with-admin-portals) together with the CoE Starter Kit, you may be noticing a discrepancy in inventory - for example, the number of apps returned by PowerShell looks different than the number of apps returned by the CoE Starter Kit.
 
 There are expected differences, and the below information should help you understand what to expect.
 
 ### App usage
 
-The CoE Starter Kit will display usage (session and unique users) information as far back as to when the [audit log](setup-auditlog.md) was first set up, and gather data to show usage trends over time. The longer you have the CoE starter kit installed for, the more usage data will be gathered. The usage reports in the [Power Platform Admin Center](/admin/powerapps-analytics-reports#power-apps---usage-reports) show usage data for the past 30 days only.
+The CoE Starter Kit will display usage (session and unique users) information as far back as to when the [audit log](setup-auditlog.md) was first set up, and gather data to show usage trends over time. The longer you have the CoE starter kit installed for, the more usage data will be gathered. The usage reports in the [Power Platform Admin Center](/power-platform/admin/powerapps-analytics-reports#power-apps---usage-reports) show usage data for the past 30 days only.
 
 ### PowerShell
 
@@ -130,11 +128,11 @@ The CoE Starter Kit will display usage (session and unique users) information as
 
 ### Power Platform Admin Center
 
-[Power Apps](../../admin/admin-manage-apps.md) and [Power Automate](../../admin/manage-power-automate.md) resources will always return the latest and most up-to-date inventory of the environment you're looking at. Make sure to refresh the page in the Admin Center to show the latest information.
+[Power Apps](/power-platform/admin/admin-manage-apps) and [Power Automate](/power-platform/admin/manage-power-automate) resources will always return the latest and most up-to-date inventory of the environment you're looking at. Make sure to refresh the page in the Admin Center to show the latest information.
 
-[Power Apps resources](../../admin/admin-manage-apps.md) returns canvas apps and published and unpublished model-driven apps, but not SharePoint custom forms.
+[Power Apps resources](/power-platform/admin/admin-manage-apps) returns canvas apps and published and unpublished model-driven apps, but not SharePoint custom forms.
 
-[Power Automate resources](../../admin/manage-power-automate.md) returns all cloud flows.
+[Power Automate resources](/power-platform/admin/manage-power-automate) returns all cloud flows.
 
 ### CoE Starter Kit
 
@@ -148,7 +146,7 @@ The CoE Starter Kit shows all cloud flows.
 
 ### SharePoint custom forms
 
-SharePoint custom forms apps can be either in the Default environment or a [designated SharePoint form environment](../../admin/powerapps-powershell.md#designate-sharepoint-custom-form-environment) – or both. For example, if you have existing SharePoint custom forms in the Default environment before you designate a SharePoint form environment, existing forms will remain in the Default environment and will not be migrated.
+SharePoint custom forms apps can be either in the Default environment or a [designated SharePoint form environment](/power-platform/admin/powerapps-powershell#designate-sharepoint-custom-form-environment) – or both. For example, if you have existing SharePoint custom forms in the Default environment before you designate a SharePoint form environment, existing forms will remain in the Default environment and will not be migrated.
 
 ### Deleted apps and flows
 

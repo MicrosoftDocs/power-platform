@@ -1,6 +1,6 @@
 ---
 title: View Power Automate audit logs. | Microsoft Docs
-description: View Power Automate logs in the Microsoft 365 compliance center.
+description: View Power Automate logs in the Microsoft Purview compliance portal.
 services: ''
 suite: flow
 documentationcenter: na
@@ -9,7 +9,7 @@ manager: kvivek
 editor: ''
 tags: ''
 ms.devlang: na
-ms.topic: article
+ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/23/2021
@@ -23,7 +23,7 @@ search.audienceType:
 ---
 # View Power Automate audit logs 
 
-You can find logs of Power Automate activities in the [Microsoft 365 compliance center](https://compliance.microsoft.com/). These logs are also accessible to developers via the [Office 365 Management API](/office/office-365-management-api/office-365-management-apis-overview).
+You can find logs of Power Automate activities in the [Microsoft Purview compliance portal](https://compliance.microsoft.com/). These logs are also accessible to developers via the [Office 365 Management API](/office/office-365-management-api/office-365-management-apis-overview).
 
 ## Access the logs
 
@@ -61,7 +61,7 @@ All logging is done at the SDK layer, so a single action can trigger multiple lo
 
 ## Get details on base schema for logging
 
-Schemas define the Power Automate fields that are sent to the Microsoft 365 compliance center. Some fields are common to all applications that send audit data to Microsoft 365, while others are specific to Power Automate. The base schema contains these common fields.
+Schemas define the Power Automate fields that are sent to the Microsoft Purview compliance portal. Some fields are common to all applications that send audit data to Microsoft 365, while others are specific to Power Automate. The base schema contains these common fields.
 
 |Field display name | Logical name | Type | Mandatory | Description|
 |-|-|-|-|-|
@@ -87,5 +87,5 @@ Microsoft retains the audit data for 90 days. You can export the audit data in .
 Events become available in the logs within 90 minutes of their occurance.
 
 ## Limitations
-Only activity from cloud flows is available in the [Microsoft 365 compliance center](https://compliance.microsoft.com/). Activity for desktop flows is in the Microsoft Dataverse audit logs.
+Only activity from cloud flows is available in the [Microsoft Purview compliance portal](https://compliance.microsoft.com/). Activity for desktop flows is in the Microsoft Dataverse audit logs.
 

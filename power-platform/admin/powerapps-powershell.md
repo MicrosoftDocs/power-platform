@@ -1,14 +1,13 @@
 ---
 title: PowerShell support | Microsoft Docs
 description: Description of the different PowerShell cmdlets and a walkthrough of how to install and run them.
-author: jimholtz
+author: laneswenka
 ms.reviewer: jimholtz
-
 ms.component: pa-admin
 ms.topic: reference
 ms.date: 02/14/2022
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: laswenka
 search.audienceType: 
   - admin
 search.app:
@@ -395,7 +394,7 @@ View and manage API connections in your tenant.
 Get-AdminPowerAppEnvironment -Default | Get-AdminPowerAppConnection
 ```
 
-Displays a list of all API connections you have in the default environment. Native connections are found under the **Data** > **Connections** tab in the maker portal.
+Displays a list of all API connections you have in the default environment. Native connections are found under the **Data** > **Connections** tab in [Power Apps](https://make.powerapps.com).
 
 #### Display all custom connectors in the tenant
 
@@ -540,10 +539,10 @@ The governance error message URL and email can be shown independently or togethe
 |     #    |     Experience                                                                                                     |     Availability           |
 |----------|--------------------------------------------------------------------------------------------------------------------|----------------------------|
 |     1    |     User launches a Power Apps app that’s not DLP compliant                                                        |     Generally available    |
-|     2    |     Maker shares a Power Apps canvas app but doesn’t have share privilege                                        |     Generally available    |
-|     3    |     Maker shares a Power Apps canvas app with ‘Everyone’ but doesn’t have privilege to share with ‘Everyone’    |     Generally available    |
-|     4    |     Maker saves a Power Apps app that’s not DLP compliant                                                          |     Generally available     |
-|     5    |     Maker saves a flow that’s not DLP compliant                                                                    |     Not yet available     |
+|     2    |     Maker shares a Power Apps canvas app but doesn’t have share privilege                                          |     Generally available    |
+|     3    |     Maker shares a Power Apps canvas app with ‘Everyone’ but doesn’t have privilege to share with ‘Everyone’       |     Generally available    |
+|     4    |     Maker saves a Power Apps app that’s not DLP compliant                                                          |     Generally available    |
+|     5    |     Maker saves a Power Automate flow that’s not DLP compliant                                                     |     Generally available    |
 
 #### Display governance error message content 
 

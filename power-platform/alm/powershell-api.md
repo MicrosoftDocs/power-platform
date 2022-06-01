@@ -45,7 +45,7 @@ In addition, there is a checker task in the Azure DevOps build tools include a c
 
 ### See also
 [PowerShell modules](tools-apps-used-alm.md#powershell-modules)  
-[Online Management API (REST) to manage environments](/powerapps/developer/data-platform/online-management-api/overview.md)
+[Online Management API (REST) to manage environments](/powerapps/developer/data-platform/online-management-api/overview)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

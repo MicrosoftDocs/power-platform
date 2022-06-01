@@ -3,9 +3,8 @@ title: "Microsoft Dataverse language collations | MicrosoftDocs"
 description: "Understand the Microsoft Dataverse language collations"
 keywords: ""
 ms.date: 06/30/2020
-
 ms.custom: 
-ms.topic: article
+ms.topic: conceptual
 author: "NHelgren"
 ms.subservice: admin
 ms.author: nhelgren

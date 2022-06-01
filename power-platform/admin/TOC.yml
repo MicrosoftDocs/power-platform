@@ -384,8 +384,10 @@
         href: security/overview.md
       - name: Authenticating to Power Platform services
         href: security/authenticate-services.md
-      - name: Data storage in Power Platform
+      - name: Data storage and governance
         href: security/data-storage.md
+      - name: Securely access customer data using Customer Lockbox (preview)
+        href: about-lockbox.md
       - name: Connecting and authenticating to data sources
         href: security/connect-data-sources.md
       - name: Security and governance considerations
@@ -431,6 +433,8 @@
             href: dlp-endpoint-input-formats-examples.md
           - name: DLP for custom connectors
             href: dlp-custom-connector-parity.md 
+          - name: DLP for Power Automate
+            href: /power-automate/prevent-data-loss
           - name: DLP for desktop flows
             href: /power-automate/prevent-data-loss#data-loss-prevention-dlp-for-desktop-flows-preview 
           - name: Disable new connectors
@@ -545,17 +549,14 @@
           href: analytics-flow.md
         - name: Analytics for UI flows
           href: analytics-ui-flow.md 
-      - name: Reports (preview)
+      - name: Reports
         items:
-        - name: "Tenant-level analytics (default)" 
+        - name: Tenant-level analytics (default)
           href: tenant-level-analytics.md
-        - name: "Power Apps analytics"
+        - name: Power Apps analytics
           href: powerapps-analytics-reports.md
-        - name: "Power Automate analytics"
+        - name: Power Automate analytics
           href: power-automate-analytics-reports.md
-        # Comment out the next topics before publish      
-        # - name: "Power Apps license utilization"
-        #   href: powerapps-license-utilization.md
       - name: Data export (preview)
         items:
         - name: "Export Power Apps inventory and usage data"
@@ -564,17 +565,17 @@
           href: self-service-analytics-schema-definition.md
         - name: "Create custom dashboards using Power Apps inventory and usage data"
           href: build-custom-reports.md
-      - name: "Analyze telemetry with Application Insights (preview)"
+      - name: Analyze telemetry with Application Insights
         items:
-        - name: "Model-driven apps and Microsoft Dataverse telemetry"
+        - name: Model-driven apps and Microsoft Dataverse telemetry
           href: analyze-telemetry.md
-        - name: "Overview of integration with Application Insights"
+        - name: Overview of integration with Application Insights
           href: overview-integration-application-insights.md
-        - name: "Telemetry events for model-driven apps" 
+        - name: Telemetry events for model-driven apps
           href: telemetry-events-model-driven-apps.md
-        - name: "Telemetry events for Dataverse"
+        - name: Telemetry events for Dataverse
           href: telemetry-events-dataverse.md   
-        - name: "Set up export to Application Insights"
+        - name: Set up export to Application Insights
           href: set-up-export-application-insights.md
     - name: Storage
       items: 
@@ -821,6 +822,8 @@
             href: supported-email-service-configurations-server-side-synchronization.md
           - name: Connect to Exchange Online
             href: connect-exchange-online.md
+          - name: Use of Basic authentication with Exchange Online
+            href: use-basic-authentication-exchange-online.md
           - name: Exchange Online cross tenant authentication
             href: connect-exchange-online-server-profile-oauth.md 
           - name: Connect to Exchange Server (on-premises)
@@ -853,6 +856,8 @@
               href: email-message-filtering-correlation.md 
             - name: Associate an email address with a row
               href: associate-email-address.md
+            - name: How is an email record owner determined
+              href: email-record-owner.md
             - name: Create queue items from incoming email
               href: create-queue-items-from-synchronized-email-messages.md
           - name: Configure appointment, contact, and task synchronization
