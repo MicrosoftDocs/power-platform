@@ -155,8 +155,10 @@
           href: coe/setup-almacceleratorpowerplatform-deployment-profiles.md
         - name: Set up ALM Accelerator for Makers components
           href: coe/setup-almaccelerator.md
-      - name: What's next - after setting up the CoE Starter Kit
+      - name: What's next - updating the CoE Starter Kit
         href: coe/after-setup.md
+      - name: What's next - extending the CoE Starter Kit
+        href: coe/modify-components.md
     - name: What's in the CoE starter kit
       items:  
       - name: CoE starter kit modules
