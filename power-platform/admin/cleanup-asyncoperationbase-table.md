@@ -69,18 +69,6 @@ On the next page of the wizard you can set the frequency your bulk deletion job 
 
 :::image type="content" source="media/bulk-deletion-job-duration.png" alt-text="Set duration of bulk deletion job.":::
 
-## How to run synchronous bulk deletion jobs 
-
-For bulk deletion of workflow system job records, you also have the option of performing a synchronous bulk deletion of the records by selecting **Immediately**. This delete is performed with direct SQL execution rather than passing each record through the delete event pipeline which results in a large performance gain. This is a great option if you want to quickly clean up the extra workflow records and not have your bulk deletion job wait in the async queue for processing. 
-
-The **Immediately** option will be enabled if the following criteria are met: 
-
-1. The bulk deletion job is for entity **System Jobs**.
-2. The search criteria has the condition **System Job Type Equals Workflow**.
-3. The user creating the bulk deletion job has global depth for the delete privilege on the AsyncOperation entity. The System Administrator security role is one of the roles that has this privilege. 
-
-Synchronous bulk deletion will only delete AsyncOperation records in the completed state. A maximum of one million records each invocation. You will need to perform the delete multiple times if you have more than one million records you want to clean up. 
-
 ## Best practices for designing workflows 
 
 Once you have deleted the unneeded records in your workflow tables, there are a few steps you can take in your workflow design to prevent the tables from growing as fast in the future. 
@@ -101,6 +89,7 @@ For more information on Dataverse storage model and reporting, see [New Microsof
 
 ### See also
 [Reduce database storage](free-storage-space.md#reduce-database-storage) <br />
+[Remove a large amount of specific, targeted data with bulk deletion](delete-bulk-records.md) <br />
 [Microsoft Dataverse real-time workflows](/power-apps/maker/data-platform/overview-realtime-workflows) <br />
 [Classic Dataverse background workflows](/power-automate/workflow-processes) <br />
 [Automatically delete completed background workflow jobs](/power-automate/best-practices-workflow-processes) <br />
