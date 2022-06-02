@@ -35,7 +35,7 @@ The `Pivot` control and related tabs pattern are used for navigating frequently 
 This code component provides a wrapper around the [Fluent UI `Pivot`](https://developer.microsoft.com/fluentui#/controls/web/pivot) control for use in canvas and custom pages.
 
 > [!NOTE]
-> Component source code and more information available at the [Creator kit GitHub repository](https://github.com/microsoft/powercat-creator-kit).
+> Component source code and more information in the [GitHub code components repository](https://github.com/microsoft/powercat-code-components/tree/main/Pivot).
 
 ## Limitations
 

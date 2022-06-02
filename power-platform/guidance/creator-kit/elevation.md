@@ -33,7 +33,7 @@ A control used to construct cards and flyouts.
 Fluent UI `Elevation` support with mouse hover events.
 
 > [!NOTE]
-> Component source code and more information available at the [Creator kit GitHub repository](https://github.com/microsoft/powercat-creator-kit).
+> Component source code and more information in the [GitHub code components repository](https://github.com/microsoft/powercat-code-components/tree/main/Elevation).
 
 ## Limitations
 
