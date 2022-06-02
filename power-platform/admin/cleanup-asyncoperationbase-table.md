@@ -48,52 +48,51 @@ If you open one of these recurring bulk deletion system job records, you can see
 
 ## Create your own bulk deletion jobs
 
-If the out-of-the-box system bulk delete jobs do not meet your organization’s needs, you can create your own bulk delete job. From the Bulk Record Deletion grid, click the ‘New’ command bar button. This will open a wizard that allows you to define a query for the records you want deleted. The wizard also provides the ability to preview the set of records the query will pick up for deletion to allow you to test that you have constructed your query correctly. 
+If the out-of-the-box system bulk deletion jobs do not meet your organization’s needs, you can create your own bulk deletion job. From the **Bulk Record Deletion** grid, select **New** on the command bar. This will open a wizard that allows you to define a query for the records you want deleted. The wizard also provides the ability to preview the set of records the query will pick up for deletion to allow you to test that you have constructed your query correctly. 
 
-To clean up workflow records from the AsyncOperationBase table you will need to select the ‘System Jobs’ entity and select ‘[new]’ in the view selector to indicate you want to create your own query. You can only delete completed workflows. Workflows waiting to run or currently in progress cannot and should not be cleaned up by your system job. 
+To clean up workflow records from the AsyncOperationBase table, you will need to select the **System Jobs** entity and select **[new]** in **Use Saved View:** to indicate you want to create your own query. You can only delete completed workflows. Workflows waiting to run or currently in progress cannot and should not be cleaned up by your system job. 
 
 Add the following conditions to your query: 
 
-- **System Job Type** equals **workflow** — target workflow records 
-- **Status** equals **completed** — only completed workflows are valid to complete 
+- **System Job Type Equals Workflow** — target workflow records 
+- **Status Equals Completed** — only completed workflows are valid to complete 
 - [Optional] filter on the **StatusCodes** (succeeded/failed/canceled) that are valid for completed StateCode 
-- [Optional] filter on **completed on** field to only delete older workflows 
+- [Optional] filter on **Completed On** field to only delete older workflows 
 - [Optional] Any additional filters you wish to apply 
 
 :::image type="content" source="media/bulk-deletion-define-search-criteria.png" alt-text="Define search criteria.":::
 
-The next page of the wizard will allow you to set the frequency your bulk delete job will run at. You can create a one-time bulk deletion job or define a schedule to allow your job to run at set intervals. 
+On the next page of the wizard you can set the frequency your bulk deletion job will run at. You can create a one-time bulk deletion job or define a schedule to allow your job to run at set intervals. 
 
 :::image type="content" source="media/bulk-deletion-job-duration.png" alt-text="Set duration of bulk deletion job.":::
 
 ## How to run synchronous bulk deletion jobs 
 
-For bulk deletion of workflow system job records, you also have the option of performing a synchronous bulk delete of the records by selecting the ‘Immediately’ radio button option. This delete is performed with direct SQL execution rather than passing each record through the delete event pipeline which results in a large performance gain. This is a great option if you want to quickly clean up the extra workflow records and not have your bulk delete job wait in the async queue for processing. 
+For bulk deletion of workflow system job records, you also have the option of performing a synchronous bulk deletion of the records by selecting **Immediately**. This delete is performed with direct SQL execution rather than passing each record through the delete event pipeline which results in a large performance gain. This is a great option if you want to quickly clean up the extra workflow records and not have your bulk deletion job wait in the async queue for processing. 
 
-The **Immediately** radio button will be enabled if the following criteria are met: 
+The **Immediately** option will be enabled if the following criteria are met: 
 
-1. Bulk deletion job is for entity **System Jobs**.
-2. Search Criteria has the condition **system job type** equals **workflow**.
-3. User creating the bulk delete job has global depth for the delete privilege on the AsyncOperation entity (System Administrator security role is one of the roles that has this privilege). 
+1. The bulk deletion job is for entity **System Jobs**.
+2. The search criteria has the condition **System Job Type Equals Workflow**.
+3. The user creating the bulk deletion job has global depth for the delete privilege on the AsyncOperation entity. The System Administrator security role is one of the roles that has this privilege. 
 
-Synchronous bulk delete will only delete AsyncOperation records in the completed state. A maximum of one million records each invocation. You will need to perform the delete multiple times if you have more than one million records you want to clean up. 
+Synchronous bulk deletion will only delete AsyncOperation records in the completed state. A maximum of one million records each invocation. You will need to perform the delete multiple times if you have more than one million records you want to clean up. 
 
 ## Best practices for designing workflows 
 
 Once you have deleted the unneeded records in your workflow tables, there are a few steps you can take in your workflow design to prevent the tables from growing as fast in the future. 
 
-For asynchronous workflows, it is recommended to check the ‘Automatically delete completed workflow jobs (to save disk space)’ checkbox in the workflow editor. Checking this box will allow the system to delete workflow logs for successful executions to save space. Logs from failed workflow executions will always be saved for troubleshooting. 
-
+For asynchronous workflows, we recommend enabling **Automatically delete completed workflow jobs (to save disk space)** in the workflow editor. This will allow the system to delete workflow logs for successful executions to save space. Logs from failed workflow executions will always be saved for troubleshooting. 
 
 :::image type="content" source="media/bulk-deletion-automatically-delete.png" alt-text="Set Workflow Job Retention to automatically delete completed workflow jobs.":::
 
-For synchronous workflows, it is recommended to check the ‘Keep logs for workflow jobs that encountered errors’ checkbox in the workflow editor. Checking this box will allow logs from failed workflow executions to be saved for troubleshooting. Logs from successful workflow executions will always be deleted to save space. 
+For synchronous workflows, we recommend enabling **Keep logs for workflow jobs that encountered errors** in the workflow editor. This will allow logs from failed workflow executions to be saved for troubleshooting. Logs from successful workflow executions will always be deleted to save space. 
 
 :::image type="content" source="media/bulk-deletion-keep-logs.png" alt-text="Set Workflow Log Retention to keep logs for workflow jobs that encountered errors.":::
 
 ## AsyncOperationBase file capacity usage 
 
-Historically, the entire async operation context used to be serialized directly in the AsyncOperationBase table (as **data** property), leading to very quick growth in size in case of asynchronous plugin registrations on large entities (such as attachment). Since early 2021, the data portion of async operations is moved to file capacity. As a result, async operation data size is partially counted in database capacity and partially as file capacity. This helps reduce the cost (since file capacity is charged at a lower rate than database capacity) and improves overall performance of their organization (since queries against the Async Operation entity are more performant). 
+Historically, the entire async operation context used to be serialized directly in the Async Operation table (as **data** property), leading to very quick growth in size in case of asynchronous plugin registrations on large entities (such as attachment). Since early 2021, the data portion of async operations is moved to file capacity. As a result, async operation data size is partially counted in database capacity and partially in file capacity. This helps reduce the cost (since file capacity is charged at a lower rate than database capacity) and improves overall performance of their organization (since queries against the Async Operation table are more performant). 
 
 For more information on Dataverse storage model and reporting, see [New Microsoft Dataverse storage capacity](capacity-storage.md). 
 
