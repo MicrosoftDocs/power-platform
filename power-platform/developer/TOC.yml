@@ -1,8 +1,8 @@
-- name: Code first developer
+- name: Power Platform developer docs
   items:
-  - name: Code first developer
+  - name: Power Platform developer docs
     href: ./index.yml
-  - name: Introduction to Microsoft Power Platform for Developers   
+  - name: Microsoft Power Platform for Developers   
     href: get-started-developers.md     
   - name: Fusion development
     href: fusion-development.md
