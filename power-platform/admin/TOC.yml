@@ -590,9 +590,9 @@
 ## remove next row before publish
       - name: Free up storage
         items:
-        - name: Free up storage space
+        - name: Recover storage space
           href: free-storage-space.md  
-        - name: Clean up records from AsyncOperationBase and WorkflowLogBase tables
+        - name: Clean up AsyncOperationBase and WorkflowLogBase tables
           href: cleanup-asyncoperationbase-table.md
       - name: Add storage capacity
         href: add-storage.md      

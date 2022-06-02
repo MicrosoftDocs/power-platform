@@ -30,7 +30,7 @@ If your organization has heavy use of workflows or business process flows, these
 
 All environments are configured with an out-of-the-box bulk deletion job to delete successfully completed workflow system jobs older than 30 days. Customers can configure additional Bulk bulk deletion to delete AsyncOperationBase records. It is recommended that the customer configures a job that deletes any completed system job (regardless of type or result) older than 30 days so that completed jobs do not accumulate in the AsyncOperationBase table. 
 
-You can leverage the bulk delete system jobs to delete unneeded records from both AsyncOperationBase and WorkflowLogBase tables. To view the bulk deletion system jobs:
+You can leverage the bulk deletion system jobs to delete unneeded records from both AsyncOperationBase and WorkflowLogBase tables. To view the bulk deletion system jobs:
 
 1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 2. Select **Environments** in the left navigation pane, select your environment, and then select **Settings** on the top menu bar.
@@ -40,16 +40,56 @@ You can specify which system jobs to view, such as **Recurring bulk system jobs*
 
 :::image type="content" source="media/recurring-bulk-deletion-system-jobs.png" alt-text="Recurring bulk deletion system jobs":::
 
-## Next steps
+From the Bulk Record Deletion grid, you can use the view selector to view the completed, in-progress, pending, and recurring bulk deletion system jobs. The **Recurring Bulk Deletion System Jobs** view shows the job definitions for the bulk deletion system jobs that are included out-of-the-box. 
 
-For information on: 
-- Leveraging out of the box system bulk delete jobs
-- Creating your own bulk deletion jobs
-- How to run synchronous bulk deletion jobs
-- Best practices for designing workflows
+If you open one of these recurring bulk deletion system job records, you can see the query the job uses to identify which records to delete as well as the schedule the job runs on. For these out-of-the-box system jobs, you cannot modify the query used by the system job, but you can modify the schedule the job runs on. If you update the view selector to show jobs that have already been scheduled, in-progress or executed, you can cancel, resume, or postpone the job. You can find these options in the **Actions** menu when you open the record. 
 
-See [Cleaning up records from the AsyncOperationBase / WorkflowLogBase table](https://cloudblogs.microsoft.com/dynamics365/it/2018/06/21/cleaning-up-records-from-the-asyncoperationbase-workflowlogbase-table/).
+:::image type="content" source="media/bulk-deletion-operation-actions.png" alt-text="Bulk deletion operation Action menu":::
 
+## Create your own bulk deletion jobs
+
+If the out-of-the-box system bulk delete jobs do not meet your organization’s needs, you can create your own bulk delete job. From the Bulk Record Deletion grid, click the ‘New’ command bar button. This will open a wizard that allows you to define a query for the records you want deleted. The wizard also provides the ability to preview the set of records the query will pick up for deletion to allow you to test that you have constructed your query correctly. 
+
+To clean up workflow records from the AsyncOperationBase table you will need to select the ‘System Jobs’ entity and select ‘[new]’ in the view selector to indicate you want to create your own query. You can only delete completed workflows. Workflows waiting to run or currently in progress cannot and should not be cleaned up by your system job. 
+
+Add the following conditions to your query: 
+
+- **System Job Type** equals **workflow** — target workflow records 
+- **Status** equals **completed** — only completed workflows are valid to complete 
+- [Optional] filter on the **StatusCodes** (succeeded/failed/canceled) that are valid for completed StateCode 
+- [Optional] filter on **completed on** field to only delete older workflows 
+- [Optional] Any additional filters you wish to apply 
+
+image
+
+The next page of the wizard will allow you to set the frequency your bulk delete job will run at. You can create a one-time bulk deletion job or define a schedule to allow your job to run at set intervals. 
+
+image
+
+## How to run synchronous bulk deletion jobs 
+
+For bulk deletion of workflow system job records, you also have the option of performing a synchronous bulk delete of the records by selecting the ‘Immediately’ radio button option. This delete is performed with direct SQL execution rather than passing each record through the delete event pipeline which results in a large performance gain. This is a great option if you want to quickly clean up the extra workflow records and not have your bulk delete job wait in the async queue for processing. 
+
+The **Immediately** radio button will be enabled if the following criteria are met: 
+
+1. Bulk deletion job is for entity **System Jobs**.
+2. Search Criteria has the condition **system job type** equals **workflow**.
+3. User creating the bulk delete job has global depth for the delete privilege on the AsyncOperation entity (System Administrator security role is one of the roles that has this privilege). 
+
+Synchronous bulk delete will only delete AsyncOperation records in the completed state. A maximum of one million records each invocation. You will need to perform the delete multiple times if you have more than one million records you want to clean up. 
+
+
+## Best practices for designing workflows 
+
+Once you have deleted the unneeded records in your workflow tables, there are a few steps you can take in your workflow design to prevent the tables from growing as fast in the future. 
+
+For asynchronous workflows, it is recommended to check the ‘Automatically delete completed workflow jobs (to save disk space)’ checkbox in the workflow editor. Checking this box will allow the system to delete workflow logs for successful executions to save space. Logs from failed workflow executions will always be saved for troubleshooting. 
+
+image
+
+For synchronous workflows, it is recommended to check the ‘Keep logs for workflow jobs that encountered errors’ checkbox in the workflow editor. Checking this box will allow logs from failed workflow executions to be saved for troubleshooting. Logs from successful workflow executions will always be deleted to save space. 
+
+image
 
 ## AsyncOperationBase file capacity usage 
 
