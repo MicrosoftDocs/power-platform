@@ -14,7 +14,7 @@ ms.custom: authoring, topics, variables, ceX
 ms.collection: virtual-agent
 ---
 
-# Add multimedia cards to bot responses
+# Add multimedia cards to messages
 
 [!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
 

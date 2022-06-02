@@ -1,6 +1,6 @@
 ---
 ROBOTS: NOINDEX,NOFOLLOW
-title: Fundamentals - Publish a chatbot to various channels (contains video)
+title: Fundamentals - Publish a chatbot to various channels
 description: Publish your bot to a channel so that your customers can engage with it where they are.
 keywords: "Publish; demo; demo website; channels, PVA"
 ms.date: 05/31/2022
