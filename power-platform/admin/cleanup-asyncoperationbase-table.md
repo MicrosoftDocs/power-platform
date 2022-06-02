@@ -36,11 +36,9 @@ You can leverage the bulk deletion system jobs to delete unneeded records from b
 2. Select **Environments** in the left navigation pane, select your environment, and then select **Settings** on the top menu bar.
 3. Select **Data management** > **Bulk deletion**.
 
-You can specify which system jobs to view, such as **Recurring bulk system jobs**.
-
 :::image type="content" source="media/recurring-bulk-deletion-system-jobs.png" alt-text="Recurring bulk deletion system jobs":::
 
-From the Bulk Record Deletion grid, you can use the view selector to view the completed, in-progress, pending, and recurring bulk deletion system jobs. The **Recurring Bulk Deletion System Jobs** view shows the job definitions for the bulk deletion system jobs that are included out-of-the-box. 
+From the **Bulk Record Deletion** grid, you can use the view selector to view the completed, in-progress, pending, and recurring bulk deletion system jobs. The **Recurring Bulk Deletion System Jobs** view shows the job definitions for the bulk deletion system jobs that are included out-of-the-box. 
 
 If you open one of these recurring bulk deletion system job records, you can see the query the job uses to identify which records to delete as well as the schedule the job runs on. For these out-of-the-box system jobs, you cannot modify the query used by the system job, but you can modify the schedule the job runs on. If you update the view selector to show jobs that have already been scheduled, in-progress or executed, you can cancel, resume, or postpone the job. You can find these options in the **Actions** menu when you open the record. 
 
@@ -48,7 +46,9 @@ If you open one of these recurring bulk deletion system job records, you can see
 
 ## Create your own bulk deletion jobs
 
-If the out-of-the-box system bulk deletion jobs do not meet your organization’s needs, you can create your own bulk deletion job. From the **Bulk Record Deletion** grid, select **New** on the command bar. This will open a wizard that allows you to define a query for the records you want deleted. The wizard also provides the ability to preview the set of records the query will pick up for deletion to allow you to test that you have constructed your query correctly. 
+If the out-of-the-box system bulk deletion jobs do not meet your organization’s needs, you can create your own bulk deletion job. From the **Bulk Record Deletion** grid, select **New** on the command bar. This will open the Bulk Deletion wizard that allows you to define a query for the records you want deleted. The wizard also provides the ability to preview the set of records the query will pick up for deletion to allow you to test that you have constructed your query correctly. 
+
+:::image type="content" source="media/bulk-deletion-new-operation.png" alt-text="Create a new bulk deletion operation.":::
 
 To clean up workflow records from the AsyncOperationBase table, you will need to select the **System Jobs** entity and select **[new]** in **Use Saved View:** to indicate you want to create your own query. You can only delete completed workflows. Workflows waiting to run or currently in progress cannot and should not be cleaned up by your system job. 
 
