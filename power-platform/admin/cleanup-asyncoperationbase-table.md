@@ -26,6 +26,9 @@ When an async workflow is triggered in your Dataverse organization, a record wil
 
 If your organization has heavy use of workflows or business process flows, these tables will grow over time and eventually become large enough to introduce performance issues as well as consume excessive storage in your organization database.
 
+> [!NOTE]
+> The use of entity-related terminology depends on the protocol or class library used. See [Terminology use depending on protocol or technology](/power-apps/developer/data-platform/understand-terminology).
+
 ## Bulk deletion jobs
 
 All environments are configured with an out-of-the-box bulk deletion job to delete successfully completed workflow system jobs older than 30 days. Customers can configure additional Bulk bulk deletion to delete AsyncOperationBase records. It is recommended that the customer configures a job that deletes any completed system job (regardless of type or result) older than 30 days so that completed jobs do not accumulate in the AsyncOperationBase table. 
@@ -50,7 +53,7 @@ If the out-of-the-box system bulk deletion jobs do not meet your organization’
 
 :::image type="content" source="media/bulk-deletion-new-operation.png" alt-text="Create a new bulk deletion operation.":::
 
-To clean up workflow records from the AsyncOperationBase table, you will need to select the **System Jobs** entity and select **[new]** in **Use Saved View:** to indicate you want to create your own query. You can only delete completed workflows. Workflows waiting to run or currently in progress cannot and should not be cleaned up by your system job. 
+To clean up workflow records from the AsyncOperationBase table, you will need to select the **System Jobs** entity and select **[new]** in **Use Saved View** to create your own query. You can only delete completed workflows. Workflows waiting to run or currently in progress cannot and should not be cleaned up by your system job. 
 
 Add the following conditions to your query: 
 
