@@ -44,7 +44,7 @@ The `Picker` code component provides the following features:
 1. Styled to closely match the PILL Spec.
 
 > [!NOTE]
-> Component source code and more information available at the [Creator kit GitHub repository](https://github.com/microsoft/powercat-creator-kit).
+> Component source code and more information in the [GitHub code components repository](https://github.com/microsoft/powercat-code-components/tree/main/Picker).
 
 ## Datasets
 
