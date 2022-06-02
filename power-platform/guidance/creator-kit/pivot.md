@@ -1,6 +1,6 @@
 ---
 title: Pivot control reference | Creator Kit
-description: Learn about the details and properties of Pivot control in the Creator Kit.
+description: Learn about the details and properties of the Pivot control in the Creator Kit.
 author: denisem-msft
 manager: devkeydet
 ms.component: pa-maker
@@ -32,10 +32,10 @@ A control used to provide navigation.
 
 The `Pivot` control and related tabs pattern are used for navigating frequently accessed, distinct content categories. Pivots allow for navigation between two or more content views and rely on text headers to articulate the different sections of content.
 
-This code component provides a wrapper around the [Fluent UI `Pivot`](https://developer.microsoft.com/fluentui#/controls/web/pivot) control for use in canvas and custom pages.
+This code component provides a wrapper around the [Fluent UI `Pivot`](https://developer.microsoft.com/fluentui#/controls/web/pivot) control for use in canvas apps and custom pages.
 
 > [!NOTE]
-> Component source code and more information available at the [Creator kit GitHub repository](https://github.com/microsoft/powercat-creator-kit).
+> You can find component source code and more information at the [Creator Kit GitHub repository](https://github.com/microsoft/powercat-creator-kit).
 
 ## Limitations
 
@@ -49,7 +49,7 @@ This code component can only be used in canvas apps and custom pages.
 
 ## Items structure
 
-Each item uses the below schema to visualize data in the component. 
+Each item uses the following schema to visualize data in the component. 
 
 | Name | Description |
 | ------ | ----------- |
@@ -83,7 +83,7 @@ Table(
 
 Coordinate tab pages by associating the `Visible` property of dependent components in your app (for example, a container that represents a page) with the value of `Pivot1.Selected.ItemKey`.
 
-`Visible` property of a dependent control that is displayed when the **tabFile** itemKey is selected:
+`Visible` property of a dependent control that's displayed when the **tabFile** itemKey is selected:
 
   ```powerapps-dot
 Pivot1.Selected.ItemKey = "tabFile"
@@ -91,6 +91,6 @@ Pivot1.Selected.ItemKey = "tabFile"
 
 ## Best practices
 
-See [Fluent UI `Pivot` control best practices](https://developer.microsoft.com/fluentui#/controls/web/pivot).
+Go to [Fluent UI Pivot control best practices](https://developer.microsoft.com/fluentui#/controls/web/pivot).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

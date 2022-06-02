@@ -262,19 +262,19 @@
       href: coe/release-notes.md
     - name: Feedback and support
       href: coe/feedback-support.md
-  - name: Power Platform Creator Kit (preview)
+  - name: Power Platform Creator Kit<!--note from editor: If "Power Platform" should be part of this branding, why not sprinkle it in references throughout?-->
     items:
     - name: Overview
       href: creator-kit/overview.md
-    - name: Install the Creator Kit
+    - name: Install the creator kit
       href: creator-kit/setup.md
-    - name: Use the Creator Kit
+    - name: Use the creator kit
       href: creator-kit/creator-kit-explained.md
-    - name: Creator Kit components
+    - name: Creator kit components
       items:
       - name: Overview
         href: creator-kit/components.md
-      - name: Basic Inputs
+      - name: Basic inputs
         items:
         - name: AutoWidthLabel
           href: creator-kit/autowidthlabel.md
@@ -284,7 +284,7 @@
           href: creator-kit/resizabletextarea.md
         - name: SearchBox
           href: creator-kit/searchbox.md
-      - name: Commands, Menus & Navs
+      - name: Commands, menus, and navigation
         items:
         - name: Breadcrumb
           href: creator-kit/breadcrumb.md
@@ -302,7 +302,7 @@
         href: creator-kit/detailslist.md
       - name: Pickers
         items:
-        - name: TagsPicker
+        - name: TagPicker<!--note from editor: It's "Tag Picker" in the article.-->
           href: creator-kit/picker.md
         - name: TagList
           href: creator-kit/taglist.md

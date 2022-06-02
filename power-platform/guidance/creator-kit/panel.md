@@ -1,6 +1,6 @@
 ---
 title: Panel control reference | Creator Kit
-description: Learn about the details and properties of Panel control in the Creator Kit.
+description: Learn about the details and properties of the Panel control in the Creator Kit.
 author: denisem-msft
 manager: devkeydet
 ms.component: pa-maker
@@ -29,11 +29,12 @@ A control used to group content.
 
 ## Description
 
-Panels are overlays that contain supplementary content and are used for complex creation, edit, or management experiences. For example, viewing details about an item in a list or editing settings.
+Panels are overlays that contain supplementary content and are used for complex creation, edit, or management experiences—for example, viewing details about an item in a list or editing settings.
 
 This canvas component mimics the style and behavior of the [Fluent UI Panel control](https://developer.microsoft.com/fluentui#/controls/web/Panel).
 
-[View component in the Creator Kit GitHub repository](https://github.com/microsoft/powercat-creator-kit/tree/main/CreatorKitCore/SolutionPackage/CanvasApps/cat_powercatcomponentlibrary_0be3a_DocumentUri_msapp_src)
+<!--note from editor: Is there a reason that this reference is different from the majority of similar links that go to the main GitHub repo, https://github.com/microsoft/powercat-creator-kit?-->
+[View the component in the Creator Kit GitHub repository](https://github.com/microsoft/powercat-creator-kit/tree/main/CreatorKitCore/SolutionPackage/CanvasApps/cat_powercatcomponentlibrary_0be3a_DocumentUri_msapp_src).
 
 ## Limitations
 
@@ -43,26 +44,26 @@ This canvas component can only be used in canvas apps and custom pages.
 
 | Property | Description |
 | -------- | ----------- |
-| `Buttons` | A data set that defines the buttons. |
+| `Buttons` | A dataset that defines the buttons. |
 | `Title` | Text displayed in the title section. |
 | `Overlay Color` | Color displayed in the overlay area. |
 | `DialogWidth` | The width of the panel (not to be confused with the control width, which should span the app width). |
 | `Subtitle` | Text displayed under the title |
-| `Position of the panel` | Provide the text value `Right` or `Left` to indicate which side of the screen the panel should be rendered. |
-| `OnCloseSelect` | Action expression that executes when the close button is selected. |
-| `OnButtonSelect` | Action expression that executes when one of the action buttons are selected. |
+| `Position of the panel` | Provide the text value `Right` or `Left` to indicate which side of the screen the panel should be rendered on. |
+| `OnCloseSelect` | Action expression that's executed when the close button is selected. |
+| `OnButtonSelect` | Action expression that's executed when one of the action buttons are selected. |
 
 ## Configure panel visibility
 
-Make the `Panel` control itself (or the surface it's located within) visible when a boolean (true/false) type variable changes to true, assign that variable to the panel's visibility property. Once the panel is displayed, you can hide the panel by updating the variable on the reset property, which is triggered when the close icon is clicked.
-
-Power Fx formula to open the dialog, in an action formula on another component somewhere in the app (for example, the `OnSelect` property of a button):
+Make the `Panel` control itself (or the surface it's located within) visible when a Boolean (true/false) type variable changes to true, and assign that variable to the panel's visibility property. After the panel is displayed, you can hide the panel by updating the variable on the reset property, which is triggered when the close icon is selected.
+<!--note from editor: In the following lines and examples, should "dialog" be "panel"?-->
+The following is the Power Fx formula to open the dialog in an action formula on another component somewhere in the app (for example, the `OnSelect` property of a button):
 
 ```powerapps-dot
 UpdateContext({ showHideDialog: true })
 ```
 
-Power Fx formula to close the dialog, in the `OnCloseSelect` property of the panel:
+The following is the Power Fx formula to close the dialog in the `OnCloseSelect` property of the panel:
 
 ```powerapps-dot
 UpdateContext({ showHideDialog: true })
@@ -106,6 +107,6 @@ Table(
 
 ## Best practices
 
-See [Fluent UI Panel control best practices](https://developer.microsoft.com/fluentui#/controls/web/Panel)
+Go to [Fluent UI Panel control best practices](https://developer.microsoft.com/fluentui#/controls/web/Panel).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

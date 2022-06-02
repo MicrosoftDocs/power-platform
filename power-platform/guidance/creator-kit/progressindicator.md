@@ -1,6 +1,6 @@
 ---
 title: ProgressIndicator control reference | Creator Kit
-description: Learn about the details and properties of ProgressIndicator control in the Creator Kit.
+description: Learn about the details and properties of the ProgressIndicator control in the Creator Kit.
 author: denisem-msft
 manager: devkeydet
 ms.component: pa-maker
@@ -30,11 +30,12 @@ A control used to create a loading experience.
 
 ## Description
 
-Progress indicators are used to show the completion status of an operation lasting more than two seconds. If the state of progress can't be determined, use a **Spinner** instead. Progress indicators can appear in a new panel, a flyout, under the UI initiating the operation, or even replacing the initiating UI&mdash;as long as the UI can return if you cancel or stop the activity.
+Progress indicators are used to show the completion status of an operation lasting more than two seconds. If the state of progress can't be determined, use a **Spinner** instead. Progress indicators can appear in a new panel, in a flyout window, under the UI that initiated the operation, or they can even replace the initiating UI&mdash;as long as the UI can return if you cancel or stop the activity.
 
 This canvas component mimics the style and behavior of the [Fluent UI ProgressIndicator control](https://developer.microsoft.com/fluentui#/controls/web/ProgressIndicator).
 
-[View component in the Creator Kit GitHub repository](https://github.com/microsoft/powercat-creator-kit/tree/main/CreatorKitCore/SolutionPackage/CanvasApps/cat_powercatcomponentlibrary_0be3a_DocumentUri_msapp_src)
+<!--note from editor: Is there a reason that this reference is different from the majority of similar links that go to the main GitHub repo, https://github.com/microsoft/powercat-creator-kit?-->
+[View the component in the Creator Kit GitHub repository](https://github.com/microsoft/powercat-creator-kit/tree/main/CreatorKitCore/SolutionPackage/CanvasApps/cat_powercatcomponentlibrary_0be3a_DocumentUri_msapp_src).
 
 ## Limitations
 
@@ -44,11 +45,11 @@ This canvas component can only be used in canvas apps and custom pages.
 
 | Property | Description |
 | -------- | ----------- |
-| `Value` | The value of the progress that is rendered, which should be an integer between 0 and 100. |
+| `Value` | The value of the progress that's rendered, which should be an integer between 0 and 100. |
 
 ## Configure loading behavior
 
-Make the `ProgressIndicator` control itself (or the surface it's located within) visible when a process begins, then update a variable with the value as segments of the process are completed. Hide it when the process is complete. Use a variable to control the visibility of the control and update the values between the process' major code block that need indication.
+Make the `ProgressIndicator` control itself (or the surface it's located within) visible when a process begins, then update a variable with the value as segments of the process are completed. Hide it when the process is complete. Use a variable to control the visibility of the control, and update the values between the major code blocks of the process that need to be indicated.<!--note from editor: Edit okay?-->
 
 ```powerapps-dot
 UpdateContext({ var_showProgress: true , var_progressValue: 0 });
@@ -79,6 +80,6 @@ Provide the `var_showProgress` variable as the value for the `Visible` property 
 
 ## Best practices
 
-See [Fluent UI ProgressIndicator control best practices](https://developer.microsoft.com/fluentui#/controls/web/ProgressIndicator)
+Go to [Fluent UI ProgressIndicator control best practices](https://developer.microsoft.com/fluentui#/controls/web/ProgressIndicator).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

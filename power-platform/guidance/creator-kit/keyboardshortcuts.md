@@ -1,6 +1,6 @@
 ---
 title: KeyboardShortcuts control reference | Creator Kit
-description: Learn about the details and properties of KeyboardShortcuts control in the Creator Kit.
+description: Learn about the details and properties of the KeyboardShortcuts control in the Creator Kit.
 author: denisem-msft
 manager: devkeydet
 ms.component: pa-maker
@@ -28,14 +28,14 @@ A control used to capture and act on keyboard events.
 
 ## Description
 
-This code component registers Key Press event handlers to allow keyboard short cuts to be used inside canvas apps or custom pages. It isn't intended for use in model-driven or portal apps.
+This code component registers keypress event handlers to allow keyboard shortcuts to be used inside canvas apps or custom pages. It isn't intended for use in model-driven or portal apps.
 
 > [!NOTE]
-> Component source code and more information available at the [Creator kit GitHub repository](https://github.com/microsoft/powercat-creator-kit).
+> You can find component source code and more information at the [Creator Kit GitHub repository](https://github.com/microsoft/powercat-creator-kit).
 
 ## Limitations
 
-Some keyboard shortcuts are used by Power Apps when using maker studio, and some are used by the browser. For this reason, this component won't work for all keyboard shortcuts until the user places focus inside the app.
+Some keyboard shortcuts are used by Power Apps when using maker studio<!--note from editor: By "Power Apps," do you mean "apps created with Power Apps" here? Should it be "Power Apps Studio" (as described in the Cloud Style Guide? As often happens with gerunds, the agent of action is ambiguous here - should it be "Some keyboard shortcuts are used in Power Apps Studio and some are used in the browser"?-->, and some are used by the browser. For this reason, this component won't work for all keyboard shortcuts until the user places focus inside the app.
 
 This code component can only be used in canvas apps and custom pages.
 
@@ -43,10 +43,10 @@ This code component can only be used in canvas apps and custom pages.
 
 | Property | Description |
 | -------- | ----------- |
-| `KeyConfig` | An array of strings indicating which keyboard short cuts to listen for. The string must be serialized using JSON (see below). |
-| `OnKey` | The keyboard key code that was detected. |
+| `KeyConfig` | An array of strings indicating which keyboard shortcuts to listen for. The string must be serialized by using JSON (example given in the following section). |
+| `OnKey` | The keyboard shortcut that was detected. |
 
-After adding the `KeyboardShortcuts` code component to the form, configure the `KeyConfig` property with an  array of key combinations.
+After adding the `KeyboardShortcuts` code component to the form, configure the `KeyConfig` property with an array of key combinations.
 
 For example:
 
@@ -54,13 +54,13 @@ For example:
 ["alt + r","alt + a","alt + d","alt + b","alt + p","alt + l","alt + t","alt + k"]
 ```
 
-For more information about the keyboard combination strings, see [the KeyboardJS library](http://itsgreggreg.github.io/KeyboardJS/).
+For more information about the keyboard combination strings, go to [the KeyboardJS library](http://itsgreggreg.github.io/KeyboardJS/).
 
-## Responding to the key press events
+## Responding to the keystroke events
 
 When a key combination is used, the `OnChange` event is raised. The `OnKey` property then holds the combination.
 
-You could have an `OnChange` event similar to:
+You might have an `OnChange` event similar to:
 
 ```powerapps-dot
 If( Self.OnKey = "alt + a",
@@ -86,6 +86,6 @@ If( Self.OnKey = "alt + t",
 );
 ```
 
-This event handler sets focus on various controls given the key combination used.
+This event handler sets focus on various controls, given the key combination used.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
