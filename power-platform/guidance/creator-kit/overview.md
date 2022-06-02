@@ -33,7 +33,7 @@ The Creator Kit helps you create Power Apps experiences on the web and mobile pl
 All included controls and components utilize the [Fluent UI](https://developer.microsoft.com/fluentui#/) framework to help you easily create consistent, beautiful, and effective user experiences for custom business applications.
 
 > [!NOTE]
-> Before you download and install the Creator Kit, ensure that you [enable code-components](/power-apps/developer/component-framework/component-framework-for-canvas-apps#enable-the-power-apps-component-framework-feature) in your environment first.
+> Before you download and install the Creator Kit, ensure that you [enable code components](/power-apps/developer/component-framework/component-framework-for-canvas-apps#enable-the-power-apps-component-framework-feature) in your environment first.
 
 > [!div class="nextstepaction"]
 > [Download the Creator Kit](https://aka.ms/creatorkitdownload)
