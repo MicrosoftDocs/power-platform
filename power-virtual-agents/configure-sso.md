@@ -66,11 +66,13 @@ There are four main steps to configuring SSO for Power Virtual Agents:
 
 ### Create an app registration in Azure AD for your custom canvas
 
-To enable single sign-on, you need to register the custom canvas as an app in Azure AD.
+To enable single sign-on, you'll need two separate app registrations:
 
-The custom canvas app registration needs to be a separate app registration from the one you [created when you configured authentication with Azure AD](configuration-end-user-authentication.md#use-azure-active-directory-as-your-identity-provider).
+- One for your bot to enable user authentication with Azure AD.
+- One for your custom canvas to enable single sign-on.
 
-You then need to redirect the app registration to point to your custom canvas.
+> [!IMPORTANT]
+> You can't reuse the same app registration for both your bot's user authentication and your custom canvas.
 
 #### Create an app registration for the bot's canvas
 
