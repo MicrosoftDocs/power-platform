@@ -1,10 +1,10 @@
 ---
-title: "Finance and Operations storage capacity  | MicrosoftDocs"
+title: "Finance and Operations storage capacity (Preview) | MicrosoftDocs"
 description: About Finance and Operations storage capacity reporting that provides administrators way to visualize and understand storage usage vs. entitlement.
 author: jimholtz
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/24/2022
+ms.date: 06/07/2022
 ms.subservice: admin
 ms.author: jimholtz 
 ms.reviewer: 
@@ -47,6 +47,8 @@ To see whether you have any of these licenses, sign in to the [Microsoft 365 adm
 > - Operations Sandbox Tier 4 and 5 per User Subscription License incremental capacity  
 > 
 > If you have these licenses, reach out to your account team to get a full view of your entitlement.  
+>
+> For some environments under the **Finance and Operations** tab, the **Last updated** field is not available.
 
 ## Capacity page details 
 
@@ -76,11 +78,22 @@ This feature is currently in preview and for information only. It will not impac
 
 You can always free up storage, delete unwanted environments/data, or buy more capacity to be compliant with Finance and Operations storage usage. To learn more about Finance and Operations capacity add-ons, see the [Dynamics 365 Licensing Guide](https://www.microsoft.com/licensing/product-licensing/dynamics365). You can work through your organization’s standard procurement process to purchase Finance and Operations capacity add-ons. 
 
+Review the following for information on how to clean up Finance and Operations data:
+
+-	[Cleanup routines in Dynamics 365 Finance and Dynamics 365 Supply Chain Management](/dynamics365/fin-ops-core/dev-itpro/sysadmin/cleanuproutines)
+-	[Archive inventory transactions - Supply Chain Management](/dynamics365/supply-chain/inventory/archive-inventory-transactions) 
+-	[Archive credit card transaction data - Commerce](/dynamics365/commerce/dev-itpro/archive-cc-data) 
+
+[Jim note: these appear to be internal and not available publicly]
+-	[General Guidelines to reduce FO storage size.docx](https://microsoft.sharepoint.com/:w:/t/CaravanAngels/EdOSoN1ZexpAnPyiZnldtHgB79JAAgdetYK_Zs0qNW8dRw?e=nzDIGg)
+-	[App specific guidelines to reduce FO DB storage size.docx](https://microsoft.sharepoint.com/:w:/t/CaravanAngels/EbQHnvi6ILpFsz67rlSxYuABVbDFobRzKKD_eqyeeoECsA?e=mL1bfN)
+
+
 ## FAQ 
 
 ### Why is Finance and Operations storage reporting separate from Dataverse? 
 
-Microsoft Business Application products work across multiple underlying platform technologies. Dataverse storage powers many experiences across Power Platform and Dynamics 365 apps.  Dataverse reporting is tracked across database, log, and file storage categories.  Finance and Operations products are currently managed on separate database and file platform layers.  Dual-write technologies allow certain Finance and Operations actions to be stored on the Dataverse platform. 
+Microsoft Business Application products work across multiple underlying platform technologies. Dataverse storage powers many experiences across Power Platform and Dynamics 365 apps.  Dataverse reporting is tracked across database, log, and file storage categories.  Finance and Operations products are currently managed on separate database and file platform layers. [Dual-write technologies](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-overview) allow certain Finance and Operations actions to be stored on the Dataverse platform. 
 
 ### How is my usage and entitlement calculated? 
 
