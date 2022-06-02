@@ -19,19 +19,6 @@ Power Virtual Agents supports single sign-on (SSO), which means chatbots can sig
 
 For example, the bot is hosted on the corporate intranet or in an app that the user is already signed in to.
 
-> [!IMPORTANT]
-> SSO is only supported for Azure Active Directory (Azure AD) V2. Other account types such as Microsoft Account or other OAuth accounts are not supported for SSO in Power Virtual Agents.  
->
-> You can suggest support for additional account types [at the Power Virtual Agents ideas forum](https://powerusers.microsoft.com/t5/Power-Virtual-Agents-Ideas/idb-p/pva_ideas).
-
-> [!IMPORTANT]
-> SSO is only supported on the [live website publication channel](publication-connect-bot-to-web-channels.md) and the Teams channel. Other channels are not supported. SSO on SharePoint is not supported.
->
-> You can suggest support for additional channels [at the Power Virtual Agents ideas forum](https://powerusers.microsoft.com/t5/Power-Virtual-Agents-Ideas/idb-p/pva_ideas).
-
-> [!IMPORTANT]
-> If you also have Teams channel enabled, you need to follow the configuration instructions on the [Configure single sign-on for Teams channel](configure-sso-teams.md) documentation. Failing to configure the Teams SSO settings as instructed on that page will lead your users to always fail authentication when using the Teams channel.
-
 There are four main steps to configuring SSO for Power Virtual Agents:
 
 1. Create an app registration in Azure AD for your custom canvas.
@@ -42,11 +29,38 @@ There are four main steps to configuring SSO for Power Virtual Agents:
 
 1. Configure your custom canvas HTML code to enable single sign-on.
 
+> [!IMPORTANT]
+> SSO on SharePoint is not supported.
+
 ## Prerequisites
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
-- [Enable end-user authentication with Azure Active Directory](configuration-end-user-authentication.md#use-azure-active-directory-as-your-identity-provider) and [add an authentication topic to your bot](advanced-end-user-authentication.md)
-- [Use a custom canvas](customize-default-canvas.md)
+- [Enable end-user authentication with Azure Active Directory](configuration-end-user-authentication.md#use-azure-active-directory-as-your-identity-provider).
+  - SSO is only supported for Azure Active Directory (Azure AD) V2. Other account types such as Microsoft Account or other OAuth accounts are not supported.
+- [Add an authentication topic to your bot](advanced-end-user-authentication.md).
+- [Use a custom canvas](customize-default-canvas.md).
+
+## Supported channels
+
+The following table details the [channels](publication-fundamentals-publish-channels.md) that currently support SSO. You can suggest support for additional channels [at the Power Virtual Agents ideas forum](https://powerusers.microsoft.com/t5/Power-Virtual-Agents-Ideas/idb-p/pva_ideas).
+
+| Channel                          | Supported |
+| -------------------------------- | :-------: |
+| [Azure Bot Service channels][6]  |           |
+| [Custom Website][3]              |     ✔     |
+| [Demo Website][2]                |           |
+| [Facebook][5]                    |           |
+| [Microsoft Teams][1]<sup>1</sup> |     ✔     |
+| [Mobile App][4]                  |           |
+
+[1]: publication-add-bot-to-microsoft-teams.md
+[2]: publication-connect-bot-to-web-channels.md#demo-website
+[3]: publication-connect-bot-to-web-channels.md#custom-website
+[4]: publication-connect-bot-to-custom-application.md
+[5]: publication-add-bot-to-facebook.md
+[6]: publication-connect-bot-to-azure-bot-service-channels.md
+
+<sup>1</sup> If you also have the Teams channel enabled, you need to follow the configuration instructions on the [Configure single sign-on for Teams channel](configure-sso-teams.md) documentation. Failing to configure the Teams SSO settings as instructed on that page will cause your users to always fail authentication when using the Teams channel.
 
 ## Technical overview
 
