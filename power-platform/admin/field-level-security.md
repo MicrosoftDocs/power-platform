@@ -1,7 +1,6 @@
 ---
 title: "Field-level security  | MicrosoftDocs"
 description: Field-level security 
-
 ms.component: pa-admin
 ms.topic: overview
 ms.date: 10/21/2021
