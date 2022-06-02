@@ -101,4 +101,6 @@ For more information on Dataverse storage model and reporting, see [New Microsof
 
 ### See also
 [Reduce database storage](free-storage-space.md#reduce-database-storage) <br />
+[Microsoft Dataverse real-time workflows](/power-apps/maker/data-platform/overview-realtime-workflows) <br />
+[Classic Dataverse background workflows](/power-automate/workflow-processes) <br />
 [Asynchronous service](/power-apps/developer/data-platform/asynchronous-service)
