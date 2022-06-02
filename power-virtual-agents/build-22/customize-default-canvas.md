@@ -1,10 +1,9 @@
 ---
 ROBOTS: NOINDEX,NOFOLLOW
-title: "Customize the web chat canvas"
-description: "Change the name, icon, and color of your bot with CSS and JavaScript styling."
+title: Customize your bot
+description: Change the name, icon, and color of your bot with CSS and JavaScript styling.
 keywords: "PVA"
-ms.date: 04/19/2022
-
+ms.date: 06/02/2022
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -13,58 +12,51 @@ ms.custom: "customization, ce06102020"
 ms.collection: virtual-agent
 ---
 
-# Customize the look and feel of the bot's default canvas
+# Customize the look and feel of your bot
 
 [!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
 
-After you create and [publish a bot](publication-fundamentals-publish-channels.md), your customers can [use the bot's Web Chat canvas to interact with it](publication-connect-bot-to-web-channels.md).
+Your bot's look and feel is defined by the bot's canvas. You can customize the canvas in two ways, depending on the complexity of the customizations:
 
-The default look and feel of the bot is defined by the bot's canvas. You can customize the canvas in two ways, depending on the complexity of the customizations:
+- [Customize the default canvas](#customize-the-default-canvas-simple) with JavaScript-based styling in the HTML code of the website where you deploy your bot.  
+    This approach is useful if you want to make small customizations without investing in code development.
 
-1. You can [customize the default canvas](#customize-the-default-canvas-simple) with JavaScript-based styling in the HTML code for the website where you deploy your bot.  
-    Customizing the default canvas is useful if you want to make small customizations without investing in code development.
-
-1. You can use a [custom canvas](#customize-and-host-your-chat-canvas-advanced), based on the [Bot Framework Web Chat canvas](https://github.com/microsoft/BotFramework-WebChat).  
-    Connecting to a custom canvas requires extensive developer knowledge and is useful for organizations that want to customize the experience completely.
-
-You can also combine the customized canvas with configuring your bot to automatically start the conversation.
+- [Use a custom canvas](#customize-and-host-your-chat-canvas-advanced) that's based on the [Bot Framework Web Chat canvas](https://github.com/microsoft/BotFramework-WebChat).  
+    This approach requires extensive developer knowledge. It's useful for organizations that want a completely custom experience.
 
 > [!IMPORTANT]
-> You may install and use the sample code included in this documentation only for use with the Microsoft Power Virtual Agents product. The sample code is licensed "as is" and is excluded from any service level agreements or support services. You bear the risk of using it.  
+> You may install and use the sample code included in this article only for use with Microsoft Power Virtual Agents. The sample code is licensed "as is" and is excluded from any service level agreements or support services. You bear the risk of using it.  
 >
 > Microsoft gives no express warranties, guarantees, or conditions and excludes all implied warranties, including merchantability, fitness for a particular purpose, and non-infringement.
 
-## Change the bot name
+## Change your bot's name
 
-You can change the bot's name.
+If all you want to change is your bot's name, you can do that easily in your bot's settings in Power Virtual Agents.
 
-1. Select **Manage** on the side pane, and then go to the **Details** tab.
+1. In the left side panel, select **Settings**, and then select **General**.
 
-1. Change the bot's name.
+1. Type a new name for your bot, and then select **Save**.
 
-1. Select **Save** to commit your changes.
+    :::image type="content" source="media/customize-default-canvas/custom-canvas-name-icon.png" alt-text="Screenshot of a bot's general settings page, with the bot name highlighted.":::
 
-    :::image type="content" source="media/customize-default-canvas/custom-canvas-name-icon.png" alt-text="The bot details pane lets you change the name.":::
+## Find your bot's app ID and tenant ID
 
-> [!IMPORTANT]
-> After updating your bot's icon, it may take up to 24 hours for the new icon to appear everywhere.
+You'll need to know your bot's app ID and tenant ID to customize the canvas, whether it's the default canvas or a custom one you connect to.
 
-## Retrieve bot ID and tenant ID details
+1. In the left side panel, select **Settings**, and then select **General**.
 
-To customize your canvas, whether it's the default canvas or a custom one you connect to, you need to retrieve your bot details.
+1. Select the **Advanced** tab.
 
-You can get the Bot ID and Tenant ID by going to the Mobile app under Channels.
+    :::image type="content" source="media/customize-default-canvas/bot-id-tenant-id.png" alt-text="Screenshot of a bot's metadata on the general settings page, with the bot app ID and tenant ID highlighted.":::
 
 ## Customize the default canvas (simple)
 
-You can configure how the chat canvas looks with some simple CSS and JavaScript styling options.
+You can customize your bot's default canvas with some simple CSS and JavaScript styling in an HTML file.
 
-First, you need to configure where you're deploying your bot canvas.
+1. [Publish your bot](publication-connect-bot-to-web-channels.md).
 
-1. Create and publish a bot.
-
-1. Copy and paste the HTML code below and save it as *index.html*.  
-    You can also copy and paste the code below into the [w3schools.com HTML try it editor](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default). You will still need to add your Bot ID.  
+1. Copy the HTML code below and save it to a local drive as *index.html*.  
+    If you just want to try it out, you can paste the code into the [w3schools.com Tryit Editor](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default) instead of saving it to a file.  
 
     ```HTML
     <!DOCTYPE html>
@@ -157,24 +149,23 @@ First, you need to configure where you're deploying your bot canvas.
     </html>
     ```
 
-1. In the *index.html* file you created, enter your Bot ID at the line `var BOT_ID = "<ENTER YOUR BOT ID>"`.
+1. In the HTML code, find the line that starts with `var BOT_ID =` and replace `<ENTER YOUR BOT ID>` with your bot's app ID.
 
-1. Open *index.html* using a modern browser (for example, Microsoft Edge) to open the bot in the custom canvas.
+1. Open *index.html* in a modern browser (for example, Microsoft Edge) to open the bot in the custom canvas.  
+    If you're using the Tryit Editor, select **Run**.
 
-1. Test the bot to ensure you are receiving responses from your bot and that it's working correctly.  
-    If you encounter problems, make sure you've published your bot, and that your Bot ID has been inserted in the correct place. It should be after the equals sign (=) at the line `var BOT_ID`, and surrounded by double quotation marks (").
+1. Test the bot to make sure it's working correctly.  
+    If you encounter problems, make sure you've published your bot, and that you inserted your bot ID in the right place. It should be after the equals sign (=) in the line `var BOT_ID`, and surrounded by double quotation marks (").
 
 ### Customize the bot icon, background color, and name
 
-Once you get the customized canvas working with your bot, you can make changes to it.
-
-You can use the JavaScript `styleOptions` options to configure a number of pre-defined styles.
+Use the JavaScript constant `styleOptions` to change pre-defined styles that define your bot's look and feel.
 
 See [Web Chat customization](/azure/bot-service/bot-builder-webchat-customization?view=azure-bot-service-4.0&preserve-view=true) for links to the defaultStyleOptions.js file and more information on what you can customize and how it will look.
 
 #### Change the bot icon
 
-1. Update the *index.html* file with the following sample code:
+1. Add the following sample code to the *index.html* file:
 
     ```js
     const styleOptions = {
@@ -186,8 +177,11 @@ See [Web Chat customization](/azure/bot-service/bot-builder-webchat-customizatio
             };  
     ```
 
-1. Replace the bot and user avatar images with your company images.  
+1. Replace the bot and user avatar images in the code with your company images.  
     If you don't have an image URL, you can use a Base64-encoded image string instead.
+
+> [!IMPORTANT]
+> It may take up to 24 hours for the new image to appear everywhere after you change your bot's icon.
 
 #### Change the background color
 
@@ -201,11 +195,11 @@ See [Web Chat customization](/azure/bot-service/bot-builder-webchat-customizatio
             };  
     ```
 
-1. Change `backgroundColor` to any color you wish. You can use standard CSS color names, RGB values, or HEX.
+1. Change `backgroundColor` to any color you wish, using standard CSS color names, RGB values, or HEX values.
 
-#### Change the bot name
+#### Change the bot's name
 
-1. Update the `<h1>` text in the *index.html* file with the following:
+1. Update the `<h1>` text in the *index.html* file with the following code:
 
     ```HTML
     <body>
@@ -216,11 +210,11 @@ See [Web Chat customization](/azure/bot-service/bot-builder-webchat-customizatio
 
     ```
 
-1. Change the text to whatever you want to call the bot. You can also insert an image, although you may need to style it to ensure it fits within the heading section.
+1. Change the text to whatever you want to call your bot. You can also insert an image, although you may need to style it to make sure it fits in the heading section.
 
 ## Customize and host your chat canvas (advanced)
 
-You can connect your Power Virtual Agents bot with a custom canvas that is hosted as a standalone web app. This option is best if you need to embed a customized iFrame across multiple web pages.
+The other way to change your bot's look and feel is to connect it to a custom canvas that's hosted as a web app. This approach is best if you need to embed a customized iFrame across multiple web pages.
 
 > [!NOTE]
 > Hosting a custom canvas requires software development. Our guidance here is intended for experienced IT professionals, such as IT admins or developers who have a good understanding of developer tools, utilities, and IDEs.
@@ -239,13 +233,13 @@ We recommend starting with one of these samples custom-built to work with Power 
 
 Or you can pick from [other sample web chat canvases](https://github.com/microsoft/BotFramework-WebChat/#samples-list) provided by Bot Framework.
 
-### Customize canvas using `stylesetOptions`
+### Customize the canvas using `stylesetOptions`
 
 As with customizing the default canvas, you can use `styleSetOptions` to customize the custom canvas. All customizable properties are listed in [defaultStyleOptions.js](https://github.com/microsoft/BotFramework-WebChat/blob/main/packages/api/src/defaultStyleOptions.ts). For more information on what you can customize and how it will look, see [Web Chat customization](/azure/bot-service/bot-builder-webchat-customization?view=azure-bot-service-4.0&preserve-view=true).
 
 ### Deploy your customized canvas
 
-In order to host your custom canvas, deploy all files to a web app.
+Deploy all files to a web app.
 
 ## See also
 
