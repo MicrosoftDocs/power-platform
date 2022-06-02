@@ -32,6 +32,16 @@ For example, the bot is hosted on the corporate intranet or in an app that the u
 > [!IMPORTANT]
 > If you also have Teams channel enabled, you need to follow the configuration instructions on the [Configure single sign-on for Teams channel](configure-sso-teams.md) documentation. Failing to configure the Teams SSO settings as instructed on that page will lead your users to always fail authentication when using the Teams channel.
 
+There are four main steps to configuring SSO for Power Virtual Agents:
+
+1. Create an app registration in Azure AD for your custom canvas.
+
+1. Define a custom scope for your bot.
+
+1. Configure authentication in Power Virtual Agents to enable single sign-on.
+
+1. Configure your custom canvas HTML code to enable single sign-on.
+
 ## Prerequisites
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
@@ -52,19 +62,7 @@ The following illustration shows how a user is signed in without seeing a login 
 
 1. On receipt of the OBO token, the bot exchanges the OBO token for an "access token" and fills in the `AuthToken` variable using the access token's value. The `IsLoggedIn` variable is also set at this time.
 
-## Configure single sign-on
-
-There are four main steps to configuring SSO for Power Virtual Agents:
-
-1. Create an app registration in Azure AD for your custom canvas.
-
-1. Define a custom scope for your bot in the bot's authentication app registration. Defining a scope creates a trust relationship between your canvas and authentication app registrations.
-
-1. Configure authentication in Power Virtual Agents to enable single sign-on.
-
-1. Configure your custom canvas HTML code to enable single sign-on.
-
-### Create an app registration in Azure AD for your custom canvas
+## Create an app registration in Azure AD for your custom canvas
 
 To enable single sign-on, you'll need two separate app registrations:
 
@@ -74,7 +72,7 @@ To enable single sign-on, you'll need two separate app registrations:
 > [!IMPORTANT]
 > You can't reuse the same app registration for both your bot's user authentication and your custom canvas.
 
-#### Create an app registration for the bot's canvas
+### Create an app registration for the bot's canvas
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 
@@ -98,7 +96,7 @@ To enable single sign-on, you'll need two separate app registrations:
 
 1. After the registration is completed, it will open to the **Overview** page. Go to **Manifest**. Confirm that `accessTokenAcceptedVersion` is set to `2`. If it isn't, change it to `2` and then select **Save**.
 
-#### Add the redirect URL
+### Add the redirect URL
 
 1. With the registration open, go to **Authentication** and then select **Add a platform**.
 
@@ -121,7 +119,7 @@ To enable single sign-on, you'll need two separate app registrations:
 
     :::image type="content" source="media/configure-sso/sso-grant-consent.png" alt-text="Screenshot highlight the Grant admin consent for tenant-name button." border="false":::
 
-### Define a custom scope for your bot
+## Define a custom scope for your bot
 
 Define a custom scope by exposing an API for the canvas app registration within the authentication app registration. [Scopes](/azure/active-directory/develop/developer-glossary#scopes) allow you to determine user and admin roles and access rights.
 
@@ -148,13 +146,11 @@ This step creates a trust relationship between the authentication app registrati
 
 1. Select **Add application**.
 
-### Configure authentication in Power Virtual Agents to enable single sign-on
+## Configure authentication in Power Virtual Agents to enable single sign-on
 
 The **Token Exchange URL** in the Power Virtual Agents authentication configuration page is used to exchange the OBO token for the requested access token through the bot framework.
 
 Power Virtual Agents calls into Azure AD to perform the actual exchange.
-
-#### Add the token exchange URL to your bot's authentication page
 
 1. Sign in to Power Virtual Agents.
 
@@ -172,7 +168,7 @@ Power Virtual Agents calls into Azure AD to perform the actual exchange.
 
 1. Select **Save** and then publish the bot content.
 
-### Configure your custom canvas HTML code to enable single sign-on
+## Configure your custom canvas HTML code to enable single sign-on
 
 Update the custom canvas page where the bot is located to intercept the login card request and exchange the OBO token.
 
@@ -344,7 +340,7 @@ Update the custom canvas page where the bot is located to intercept the login ca
     </script>
     ```
 
-#### Full sample code
+### Full sample code
 
 For reference, you can find the full sample code, with the MSAL and store conditional scripts already included [at our GitHub repo](https://github.com/microsoft/PowerVirtualAgentsSamples/blob/master/BuildYourOwnCanvasSamples/3.single-sign-on/index.html).
 
