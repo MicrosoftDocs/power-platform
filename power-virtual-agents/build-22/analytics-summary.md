@@ -16,7 +16,7 @@ ms.collection: virtual-agent
 
 [!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
 
-The Summary page gives you a broad overview of your bot's performance. It uses AI to show you which topics are having the greatest impact on [escalation rate](#escalation-rate-drivers-chart), [abandon rate](#abandon-rate-drivers-chart), and [resolution rate](#resolution-rate-drivers-chart), among other key performance indicators.
+The Summary page gives you a broad overview of your bot's performance. It uses AI to show you which topics are having the greatest impact on [escalation rate](#escalation-rate-drivers), [abandon rate](#abandon-rate-drivers), and [resolution rate](#resolution-rate-drivers), among other key performance indicators.
 
 :::image type="content" source="media/analytics-summary/overview-analytics.png" alt-text="Screenshot that shows the Analytics > Summary page.":::
 
