@@ -1,11 +1,10 @@
 ---
 title: "Fusion development overview"
-description: "Overview of fusion development."
+description: "Overview of fusion development u=in Power Platform."
 keywords: 
 author: marcelbf
 ms.subservice: developer
 ms.author: marcelbf
-manager: 
 ms.custom: ""
 ms.date: 05/25/2022
 ms.reviewer: 
