@@ -80,7 +80,7 @@ The following illustration shows how a user is signed in without seeing a login 
 
 To enable single sign-on, you'll need two separate app registrations:
 
-- One for your bot to enable user authentication with Azure AD.
+- [One for your bot to enable user authentication with Azure AD](configuration-end-user-authentication.md#use-azure-active-directory-as-your-identity-provider).
 - One for your custom canvas to enable single sign-on.
 
 > [!IMPORTANT]
