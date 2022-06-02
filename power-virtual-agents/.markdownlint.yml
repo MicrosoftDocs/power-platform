@@ -13,7 +13,7 @@
     # ordered list item prefix: prefer ones
     "MD029": { "style": "one" },
     # no inline html: generally not preferred, but following are allowed in special circumstances
-    "MD033": { "allowed_elements": ["br", "ol", "ul", "li", "div"] },
+    "MD033": { "allowed_elements": ["br", "ol", "ul", "li", "sup", "div"] },
     # no bare urls: disabled because we have video links that require these to not have angle brackets
     "MD034": false,
     # code fence style: prefer ticks
