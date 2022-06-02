@@ -35,7 +35,7 @@ A navigation pane (`Nav`) provides links to the main areas of an app or site.
 The `Nav` code component allows using the [Fluent UI `Nav` menu component](https://developer.microsoft.com/fluentui#/controls/web/nav) from inside canvas apps and custom pages.
 
 > [!NOTE]
-> You can find component source code and more information at the [Creator Kit GitHub repository](https://github.com/microsoft/powercat-creator-kit).
+> Component source code and more information in the [GitHub code components repository](https://github.com/microsoft/powercat-code-components/tree/main/Nav).
 
 ## Limitations
 

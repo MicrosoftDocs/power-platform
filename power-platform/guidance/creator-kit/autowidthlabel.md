@@ -33,7 +33,7 @@ A control used to display data.
 The behavior of this code component is similar to that of the standard canvas app label, but it expands dynamically in width to accommodate the text and return the new width. This functionality is currently not supported in canvas apps.
 
 > [!NOTE]
-> You can find component source code and more information at the [Creator Kit GitHub repository](https://github.com/microsoft/powercat-creator-kit).
+> Component source code and more information in the [GitHub code components repository](https://github.com/microsoft/powercat-code-components/tree/main/AutoWidthLabel).
 
 ## Limitations
 

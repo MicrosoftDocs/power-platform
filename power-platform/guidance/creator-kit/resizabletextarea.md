@@ -34,7 +34,7 @@ Text areas give people a way to enter and edit text. They're used in forms, moda
 This component allows the user to resize the text area for convenience.
 
 > [!NOTE]
-> You can find component source code and more information at the [Creator Kit GitHub repository](https://github.com/microsoft/powercat-creator-kit).
+> Component source code and more information in the [GitHub code components repository](https://github.com/microsoft/powercat-code-components/tree/main/ResizableTextarea).
 
 ## Limitations
 

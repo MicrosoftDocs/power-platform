@@ -35,7 +35,7 @@ A control used to input commands.
 This code component provides a wrapper around the [Fluent UI CommandBar](https://developer.microsoft.com/fluentui#/controls/web/commandbar) control for use in canvas apps and custom pages.
 
 > [!NOTE]
-> You can find component source code and more information at the [Creator Kit GitHub repository](https://github.com/microsoft/powercat-creator-kit).
+> Component source code and more information in the [GitHub code components repository](https://github.com/microsoft/powercat-code-components/tree/main/CommandBar).
 
 ## Limitations
 

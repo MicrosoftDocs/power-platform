@@ -31,7 +31,7 @@ A control used to capture and act on keyboard events.
 This code component registers keypress event handlers to allow keyboard shortcuts to be used inside canvas apps or custom pages. It isn't intended for use in model-driven or portal apps.
 
 > [!NOTE]
-> You can find component source code and more information at the [Creator Kit GitHub repository](https://github.com/microsoft/powercat-creator-kit).
+> Component source code and more information in the [GitHub code components repository](https://github.com/microsoft/powercat-code-components/tree/main/KeyboardShortcuts).
 
 ## Limitations
 

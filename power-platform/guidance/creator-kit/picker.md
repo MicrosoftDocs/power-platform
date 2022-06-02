@@ -44,7 +44,7 @@ The Tag Picker code component provides the following features:
 1. Is styled to closely match the Pills spec.
 
 > [!NOTE]
-> You can find component source code and more information at the [Creator Kit GitHub repository](https://github.com/microsoft/powercat-creator-kit).
+> Component source code and more information in the [GitHub code components repository](https://github.com/microsoft/powercat-code-components/tree/main/Picker).
 
 ## Datasets
 <!--note from editor: Edits suggested to avoid duplicating descriptions. It's confusing to have the exact same text occur twice.-->

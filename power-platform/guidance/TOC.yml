@@ -1,0 +1,384 @@
+- name: Power Platform guidance
+  href: index.yml
+  items: 
+  - name: Power Platform adoption best practices
+    href: adoption/methodology.md
+    items: 
+    - name: Adoption maturity model
+      items: 
+      - name: Overview
+        href: adoption/maturity-model.md
+      - name: Goals and opportunities
+        href: adoption/maturity-model-goals.md
+      - name: Detailed capabilities
+        href: adoption/maturity-model-details.md
+    - name: Strategy and vision
+      href: adoption/strategy-best-practices.md
+      items:
+      - name: Establishing a Center of Excellence
+        href: adoption/coe.md
+      - name: Roles and responsibilities
+        href: adoption/roles.md
+      - name: Delivery models
+        href: adoption/delivery-models.md
+      - name: "Case study: Success Hub"
+        items: 
+        - name: Overview
+          href: successhub/overview.md
+        - name: Digitizing Digital Transformation Platform group
+          href: successhub/digitizing-digital-transformation-platform-group.md
+    - name: Admin and governance 
+      items:
+      - name: Best practices checklist
+        href: adoption/admin-best-practices.md
+      - name: Manage
+        items: 
+          - name: Designate a Power Platform admin
+            href: adoption/pp-admin.md
+          - name: Plan and manage licenses and capacity
+            href: adoption/capacity-and-licenses.md
+          - name: Establish an environment strategy
+            href: adoption/environment-strategy.md
+          - name: Manage Dataverse for Teams environments 
+            href: adoption/teams-environment-strategy.md
+      - name: Secure
+        items: 
+          - name: Establish DLP policies
+            href: adoption/dlp-strategy.md
+          - name: Set up Azure AD Conditional Access
+            href: adoption/conditional-access.md
+          - name: Enable cross-tenant isolation
+            href: /power-platform/admin/cross-tenant-restrictions
+      - name: Monitor and alert
+        items: 
+          - name: Report on resource usage
+            href: adoption/resource-usage.md
+          - name: Track user access
+            href: adoption/access-usage.md
+          - name: Monitor Microsoft Dataverse usage
+            href: adoption/cds-usage.md
+          - name: Monitor new connectors
+            href: adoption/new-connectors.md
+          - name: Set up sharing alerts and mitigations
+            href: adoption/sharing-alerts.md
+    - name: Nurture and educate
+      items:
+      - name: Best practices checklist
+        href: adoption/nurture-best-practices.md
+      - name: Community
+        items:
+          - name: Identify champions
+            href: adoption/champions.md
+          - name: Onboard new makers
+            href: adoption/onboard-makers.md
+          - name: Create an internal wiki and community
+            href: adoption/wiki-community.md
+          - name: Share your own templates and re-usable components
+            href: adoption/reusable.md
+      - name: Evangelism
+        items:
+          - name: Share success stories
+            href: adoption/show-and-tell.md
+          - name: Organize hackathons
+            href: adoption/hackathons.md
+      - name: Training
+        items:
+          - name: Training and upskilling strategy
+            href: adoption/training-strategy.md
+          - name: Internal training events
+            href: adoption/in-a-day.md
+          - name: Solution envisioning workshops
+            href: adoption/solution-envisioning.md 
+    - name: Support
+      items:
+      - name: Support strategy - Overview
+        href: adoption/support-strategy.md
+      - name: End-user support
+        href: adoption/support-strategy-solutions.md
+      - name: Maker support
+        href: adoption/support-strategy-makers.md
+      - name: Support strategy - Maturity Levels
+        href: adoption/support-strategy-maturity.md
+  - name: Power Platform Center of Excellence (CoE) Kit
+    href: coe/starter-kit.md
+    items: 
+    - name: Overview
+      href: coe/overview.md
+    - name: Establishing a Center of Excellence
+      href: coe/motivation.md   
+    - name: Set-up the CoE starter kit    
+      items: 
+      - name: Get started with set-up
+        href: coe/setup.md
+      - name: Set up inventory components
+        href: coe/setup-core-components.md  
+      - name: Set up environment request management
+        href: coe/setup-environment-components.md 
+      - name: Set up other core components
+        href: coe/setup-othercore-components.md
+      - name: Get started with setting up governance components
+        href: coe/before-setup-gov.md  
+      - name: Set up compliance processes
+        href: coe/setup-governance-components.md 
+      - name: Set up archival processes
+        href: coe/setup-archive-components.md 
+      - name: Set up Microsoft Teams governance processes
+        href: coe/setup-teams-components.md  
+      - name: Set up cleanup for orphaned resources
+        href: coe/setup-orphan-components.md 
+      - name: Set up app quarantine components
+        href: coe/setup-quarantine-components.md 
+      - name: Collect audit log data
+        href: coe/setup-auditlog.md
+      - name: Set-up Power BI reporting
+        href: coe/setup-powerbi.md
+      - name: Set up nurture components
+        href: coe/setup-nurture-components.md
+      - name: Set up Innovation Backlog components
+        href: coe/setup-innovationbacklog.md
+      - name: Set up theming components
+        href: coe/setup-theming.md
+      - name: Set up ALM Accelerator for Power Platform components
+        href: coe/setup-almacceleratorpowerplatform-cli.md
+        items:
+        - name: Set up ALM Accelerator for Power Platform using CoE CLI
+          href: coe/cli/alm/overview.md
+        - name: Set up ALM Accelerator for Power Platform components manually
+          href: coe/setup-almacceleratorpowerplatform.md
+        - name: Upgrade ALM Accelerator for Power Platform
+          href: coe/setup-almacceleratorpowerplatform-upgrade-config.md          
+        - name: Configuration and data deployment in pipelines
+          href: coe/setup-almacceleratorpowerplatform-deployment-config.md
+        - name: Configuring pipeline sync
+          href: coe/setup-almacceleratorpowerplatform-pipeline-sync.md
+        - name: Configuring user permissions
+          href: coe/setup-almacceleratorpowerplatform-users.md
+        - name: Configuring deployment user settings and profiles
+          href: coe/setup-almacceleratorpowerplatform-deployment-profiles.md
+        - name: Set up ALM Accelerator for Makers components
+          href: coe/setup-almaccelerator.md
+      - name: What's next - updating the CoE Starter Kit
+        href: coe/after-setup.md
+      - name: What's next - extending the CoE Starter Kit
+        href: coe/modify-components.md
+    - name: What's in the CoE starter kit
+      items:  
+      - name: CoE starter kit modules
+        href: coe/starter-kit-explained.md  
+      - name: Components overview     
+        items:  
+        - name: Core components
+          href: coe/core-components.md
+        - name: Governance components
+          href: coe/governance-components.md
+        - name: Nurture components
+          href: coe/nurture-components.md  
+        - name: Theming components
+          href: coe/theming-components.md   
+        - name: Innovation backlog components
+          href: coe/innovationbacklog-components.md   
+    - name: How to use the CoE Starter Kit
+      items:
+        - name: CoE dashboard explained
+          items:
+          - name: Overview     
+            href: coe/power-bi.md
+          - name: Monitor
+            href: coe/power-bi-monitor.md
+          - name: Govern
+            href: coe/power-bi-govern.md
+          - name: Nurture
+            href: coe/power-bi-nurture.md
+          - name: Compliance and Adoption
+            href: coe/power-bi-compliance.md
+        - name: Sample audit process
+          href: coe/example-processes.md  
+        - name: Dataverse for Teams environment management
+          href: coe/teams-governance.md  
+        - name: Use the Innovation Backlog app
+          href: coe/use-innovationbacklog.md 
+        - name: Use the ALM Accelerator for Power Platform
+          href: coe/almacceleratorpowerplatform-components.md
+          items:
+          - name: Use the Advanced Maker experience     
+            href: coe/almacceleratorpowerplatform-advancedmaker.md
+          - name: Use the New Maker experience
+            href: coe/almacceleratorpowerplatform-newmaker.md
+          - name: Use the Administrator experience
+            href: coe/setup-almacceleratorpowerplatform-deployment-profiles.md
+          - name: Use the ALM Accelerator for Makers (preview)
+            href: coe/almaccelerator-components.md
+
+        - name: Environment management
+          href: coe/env-mgmt.md
+        - name: Capacity alerting and reporting
+          href: coe/capacity-alerting.md
+    - name: CoE command line interface
+      href: coe/cli/overview.md
+      items:
+      - name: Install CoE CLI
+        href: coe/cli/install.md
+      - name: Install CoE CLI using Docker
+        href: coe/cli/sample-docker-install.md
+      - name: Install CoE CLI using local machine
+        href: coe/cli/sample-local-install.md
+      - name: Upgrade CoE CLI
+        href: coe/cli/upgrade.md
+      - name: ALM Accelerator for Power Platform
+        href: coe/cli/alm/overview.md
+        items:
+        - name: Set up ALM Accelerator for Power Platform
+          href: coe/cli/alm/admin-install.md
+        - name: Before you start
+          href: coe/cli/alm/before-you-start.md
+        - name: Branching and merging
+          href: coe/cli/alm/branching-and-merging.md
+        - name: Development environments
+          href: coe/cli/alm/development-environments.md
+        - name: Key concepts
+          href: coe/cli/alm/key-concepts.md
+        - name: Maker set-up
+          href: coe/cli/alm/maker-setup.md
+        - name: Maturity
+          href: coe/cli/alm/personas.md
+        - name: Personas
+          href: coe/cli/alm/personas.md
+      - name: Maturity model
+        href: coe/cli/alm/maturity/overview.md
+      - name: Scenarios
+        href: coe/cli/alm/scenarios/overview.md
+        items: 
+        - name: DevOps deployment model
+          href: coe/cli/alm/scenarios/devops-deployment-model.md
+        - name: Tenant deployments
+          href: coe/cli/alm/scenarios/tenant-deployments.md
+      - name: CLI development
+        href: coe/cli/cli-development/overview.md
+        items: 
+        - name: Adding a new command
+          href: coe/cli/cli-development/adding-new-command.md
+        - name: Documentation
+          href: coe/cli/cli-development/documentation.md
+
+    - name: FAQ and Tips
+      href: coe/faq.md
+    - name: Limitations
+      href: coe/limitations.md
+    - name: Release notes
+      href: coe/release-notes.md
+    - name: Feedback and support
+      href: coe/feedback-support.md
+  - name: Power Platform Creator Kit (preview)
+    items:
+    - name: Overview
+      href: creator-kit/overview.md
+    - name: Install the Creator Kit
+      href: creator-kit/setup.md
+    - name: Use the Creator Kit
+      href: creator-kit/creator-kit-explained.md
+    - name: Creator Kit components
+      items:
+      - name: Overview
+        href: creator-kit/components.md
+      - name: Basic Inputs
+        items:
+        - name: AutoWidthLabel
+          href: creator-kit/autowidthlabel.md
+        - name: Icon
+          href: creator-kit/icon.md
+        - name: ResizableTextArea
+          href: creator-kit/resizabletextarea.md
+        - name: SearchBox
+          href: creator-kit/searchbox.md
+      - name: Commands, Menus & Navs
+        items:
+        - name: Breadcrumb
+          href: creator-kit/breadcrumb.md
+        - name: ContextMenu
+          href: creator-kit/contextmenu.md
+        - name: CommandBar
+          href: creator-kit/commandbar.md
+        - name: ExpandMenu
+          href: creator-kit/expandmenu.md
+        - name: Nav
+          href: creator-kit/nav.md
+        - name: Pivot
+          href: creator-kit/pivot.md
+      - name: DetailsList
+        href: creator-kit/detailslist.md
+      - name: Pickers
+        items:
+        - name: TagsPicker
+          href: creator-kit/picker.md
+        - name: TagList
+          href: creator-kit/taglist.md
+      - name: Progress
+        items:
+        - name: Spinner
+          href: creator-kit/spinner.md
+        - name: ProgressIndicator
+          href: creator-kit/progressindicator.md
+      - name: Surfaces
+        items:
+        - name: Dialog
+          href: creator-kit/dialog.md
+        - name: Panel
+          href: creator-kit/panel.md
+      - name: Utilities
+        items:
+        - name: Elevation
+          href: creator-kit/elevation.md
+        - name: KeyboardShortcuts
+          href: creator-kit/keyboardshortcuts.md      
+  - name: Automation adoption best practices
+    items:
+    - name: Overview
+      href: automation-coe/overview.md
+    - name: Strategy
+      href: automation-coe/strategy.md
+    - name: Holistic enterprise automation techniques
+      href: automation-coe/heat.md
+    - name: Automation admin and governance
+      href: automation-coe/automation-admin-gov.md
+    - name: Automation CoE starter kit (preview)
+      href: automation-coe/automation-coe-starter-kit.md
+    - name: Manage Power Automate for desktop on Windows
+      href: automation-coe/manage-pad-on-windows.md      
+  - name: Real-world architecture examples
+    items: 
+    - name: Overview
+      href: architecture/real-world-examples/overview.md
+    - name: Using the SharePoint connector with canvas apps
+      href: architecture/real-world-examples/sharepoint-canvas.md
+    - name: Using Dataverse with canvas apps
+      href: architecture/real-world-examples/dataverse-canvas-app.md    
+    - name: Using Azure Functions to extend a canvas app
+      href: architecture/real-world-examples/azure-function-canvas.md
+    - name: Using REST APIs through custom connectors with canvas apps
+      href: architecture/real-world-examples/custom-connector-canvas.md
+    - name: Using business process flows, Dataverse, custom connectors, and Power Automate with canvas apps
+      href: architecture/real-world-examples/bpf-dataverse-powerautomate.md
+    - name: Using on-premises SQL Server with canvas apps
+      href: architecture/real-world-examples/sql-gateway-canvas.md
+    - name: Using Power Apps component framework with canvas apps
+      href: architecture/real-world-examples/pcf-canvas-components.md
+  - name: ExpressRoute and Power Platform
+    items: 
+    - name: Overview     
+      href: expressroute/overview.md
+    - name: Benefits of using ExpressRoute    
+      href: expressroute/benefits.md
+    - name: How ExpressRoute works     
+      href: expressroute/how-expressroute-works.md
+    - name: Before you use ExpressRoute 
+      href: expressroute/things-to-consider.md
+    - name: Understand Microsoft Power Platform architecture 
+      href: expressroute/understanding-architecture.md
+    - name: Plan an ExpressRoute deployment
+      href: expressroute/planning-expressroute.md
+    - name: Set up ExpressRoute for Microsoft Power Platform
+      href: expressroute/setup.md
+    - name: ExpressRoute readiness checklist
+      href: expressroute/checklist.md
+  - name: Icons
+    href: icons.md
