@@ -47,11 +47,11 @@ You can [test the topics in the test chat](authoring-test-bot.md), but you'll ne
 Uploading files is not supported, instead you must provide a URL that meets the following requirements:
 
 - Points to a webpage or supported file type
-- Accessible by anyone on the internet
+- Is accessible by anyone on the internet
 - Doesn't require a user to login
 - Uses HTTPS (starts with `https://`)
 
-The **Suggest topics** capability is built to extract topics from content with a FAQ/support structure. Webpages with a different structure might not work as expected. If you're unable to extract content from your webpage, try providing the content as a CSV file.
+The **Suggest topics** capability is built to extract topics from content with a FAQ or support structure. Webpages with a different structure might not work as expected. If you can't extract content from your webpage, try providing the content as a CSV file.
 
 ### Supported file types
 
@@ -102,7 +102,7 @@ After the extraction is complete, you'll be shown the suggested topics for furth
     :::image type="content" source="media/advanced-create-topics-from-web/suggested-web-wait.png" alt-text="An alert that says Getting your suggestions. This may take several minutes appears at the top of the page.":::
 
     > [!IMPORTANT]
-    > You won't be able to add more URLs while the **Suggest topics** command is running.
+    > You can't add more URLs while the **Suggest topics** command is running.
 
 The tool provides explicit feedback about errors so that you can understand and address any issues. For example, you might be unable to extract content because the site you're referencing is down or it may be gated behind a user login, such as a SharePoint page.
 
