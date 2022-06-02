@@ -60,11 +60,11 @@ Add the following conditions to your query:
 - [Optional] filter on **completed on** field to only delete older workflows 
 - [Optional] Any additional filters you wish to apply 
 
-image
+:::image type="content" source="media/bulk-deletion-define-search-criteria.png" alt-text="Define search criteria.":::
 
 The next page of the wizard will allow you to set the frequency your bulk delete job will run at. You can create a one-time bulk deletion job or define a schedule to allow your job to run at set intervals. 
 
-image
+:::image type="content" source="media/bulk-deletion-job-duration.png" alt-text="Set duration of bulk deletion job.":::
 
 ## How to run synchronous bulk deletion jobs 
 
@@ -78,18 +78,18 @@ The **Immediately** radio button will be enabled if the following criteria are m
 
 Synchronous bulk delete will only delete AsyncOperation records in the completed state. A maximum of one million records each invocation. You will need to perform the delete multiple times if you have more than one million records you want to clean up. 
 
-
 ## Best practices for designing workflows 
 
 Once you have deleted the unneeded records in your workflow tables, there are a few steps you can take in your workflow design to prevent the tables from growing as fast in the future. 
 
 For asynchronous workflows, it is recommended to check the ‘Automatically delete completed workflow jobs (to save disk space)’ checkbox in the workflow editor. Checking this box will allow the system to delete workflow logs for successful executions to save space. Logs from failed workflow executions will always be saved for troubleshooting. 
 
-image
+
+:::image type="content" source="media/bulk-deletion-automatically-delete.png" alt-text="Set Workflow Job Retention to automatically delete completed workflow jobs.":::
 
 For synchronous workflows, it is recommended to check the ‘Keep logs for workflow jobs that encountered errors’ checkbox in the workflow editor. Checking this box will allow logs from failed workflow executions to be saved for troubleshooting. Logs from successful workflow executions will always be deleted to save space. 
 
-image
+:::image type="content" source="media/bulk-deletion-keep-logs.png" alt-text="Set Workflow Log Retention to keep logs for workflow jobs that encountered errors.":::
 
 ## AsyncOperationBase file capacity usage 
 
