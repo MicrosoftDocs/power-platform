@@ -1,6 +1,6 @@
 ---
 ROBOTS: NOINDEX,NOFOLLOW
-title: "Technology preview quickstart"
+title: "Technology preview quick start"
 description: "Discover the new features introduced in the technology preview at Build."
 ms.date: 05/10/2022
 ms.topic: article
@@ -14,7 +14,7 @@ ms.collection: virtual-agent
 
 [!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
 
-This quickstart walks you through making a bot that uses new features and improvements introduced in the technology preview at Build. We'll create a simple bot that helps users make a reservation at a fictional restaurant.
+This quick start walks you through making a bot that uses new features and improvements introduced in the technology preview at Build. We'll create a simple bot that helps users make a reservation at a fictional restaurant.
 
 >
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4XQgu]
@@ -35,6 +35,8 @@ Power Virtual Agents now has an app-level home page that is not specific to any 
 >
 > :::image type="content" source="media/build-2022-quickstart/go-home.png" alt-text="Screenshot of Power Virtual Agents top menu bar.":::
 
+<!--Note from Sweeny: Since we are creating a reservation bot for a restaurant here, please add a lead in before the steps for more clarity. -->
+
 1. In the side navigation, select **Create**, or select **Home** and select **Create a bot**.
 
 1. Name the bot `Reservation Bot` and select **Create**.
@@ -44,22 +46,22 @@ Power Virtual Agents now has an app-level home page that is not specific to any 
 > [!IMPORTANT]
 > Bots can only be created in English in the technology preview.
 
-## Customize greeting topic
+## Customize the greeting topic
 
-1. In the side navigation, select **Topics**. Then select the **Greeting** topic.
+1. In the side navigation, select **Topics**an then select the **Greeting** topic.
 
-1. Delete the existing **Message** node.
+1. Click on the **Delete** button in the elipsis menu and delete the existing **Message** node.
 
-1. Add a **Message** node. Then add the following greetings as [message variations](authoring-create-edit-topics.md#message-variations):
+1. To add a new **Message** node, click on the **Send a message** option in the next node menu.  Type the following greetings as [message variations](authoring-create-edit-topics.md#message-variations):
     - `Good day!`
     - `Hi there!`
     - `Hi!`
 
-1. [Add an image card](advanced-cards.md#image-card) and provide an image of the restaurant. Providing an image helps the user visually confirm that they're looking at the correct location.
+1. Click on the **+Add** button and paste the Image URL in the **Image** box to [Add an image card](advanced-cards.md#image-card), . The image of the restaurant will help the user visually confirm that they're looking at the correct location.
 
     :::image type="content" source="media/build-2022-quickstart/image-card.png" alt-text="Screenshot of speech mode toggle.":::
 
-1. Add a second **Message** node and add the message `We're open 9 am to 5 pm Monday through Friday, and 10 am through 8 pm on the weekends. Please note that reservations can only be made for the next 7 days.`
+1. Click on the next node, to add a second **Message** node, and type the message `We're open 9 am to 5 pm Monday through Friday, and 10 am through 8 pm on the weekends. Please note that reservations can only be made for the next 7 days.`
 
 1. Change the edit mode to **Speech**.
 
@@ -71,19 +73,23 @@ Power Virtual Agents now has an app-level home page that is not specific to any 
 
    When the bot speaks the message over a phone call, it will emphasize on "Please note" and pause for a moment before continuing.
 
-1. Add a third **Message** node and add the message `If you'd like, I can help you make a reservation.` to provide a call to action for the user.
+1. Add a third **Message** node and type the message `If you'd like, I can help you make a reservation.` to provide a call to action for the user.
 
 1. Add a [quick reply](authoring-create-edit-topics.md#quick-replies) with the message `make a reservation`.
 
-   Adding a quick reply gives the user the option to select "make a reservation" instead of having to type it out.
+   A quick reply gives the user the option to select "make a reservation" instead of having to type it out.
 
    :::image type="content" source="media/build-2022-quickstart/quick-reply.png" alt-text="Screenshot of the reservation quick reply.":::
 
-1. Select **Save**.
+1. Click **Save**.
+
+1. Click on the **Test** button to trigger the greeting.
 
 ## Add a reservation topic
 
-1. In the side navigation, select **Topics** and then **New topic**.
+1. In the side navigation, click on the **Topics** option and then **New topic**.
+
+1. Rename the topic to Reservation
 
 1. Add the following trigger phrases:
     - `Reserve a table`
@@ -118,8 +124,13 @@ Power Virtual Agents now has an app-level home page that is not specific to any 
     :::image type="content" source="media/build-2022-quickstart/variable-replaced.png" alt-text="Screenshot of the variable's value shown in a message.":::
 
 1. Add a **Redirect** node where the two condition branches meet and choose the **End of conversation** topic.
+The **End of conversation** topic is a pre-built topic designed to check if the user is satisfied and asks them to rate their experience.
 
 1. Name the topic `Reservation` and select **Save**.
+
+1. Click on the **Test** button to open the test canvas.
+
+1. Interact with the bot by clicking on the **Make a reservation** quick reply. The bot will reply based on the conditions added till it redirects to the end of the conversation topic and asks you to rate your experience.
 
 ## Next steps
 
