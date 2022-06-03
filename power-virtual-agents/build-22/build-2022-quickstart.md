@@ -14,7 +14,7 @@ ms.collection: virtual-agent
 
 [!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
 
-This quickstart walks you through making a bot that uses new features and improvements introduced in the technology preview at Build. We'll be creating a simple bot that helps users make a reservation at a fictional restaurant.
+This quickstart walks you through making a bot that uses new features and improvements introduced in the technology preview at Build. We'll create a simple bot that helps users make a reservation at a fictional restaurant.
 
 >
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4XQgu]
@@ -26,7 +26,7 @@ This quickstart walks you through making a bot that uses new features and improv
 
 ## Create a bot
 
-Power Virtual Agents now has an app-level home page that is not specific to any bot. On this page you can create a new bot and view a list of bots that you've previously created.
+Power Virtual Agents now has an app-level home page that is not specific to any bot. You can create a new bot and view a list of bots you've previously created on this page.
 
 :::image type="content" source="media/build-2022-quickstart/new-bot1.png" alt-text="Screenshot of the app-level home page.":::
 
@@ -35,7 +35,7 @@ Power Virtual Agents now has an app-level home page that is not specific to any 
 >
 > :::image type="content" source="media/build-2022-quickstart/go-home.png" alt-text="Screenshot of Power Virtual Agents top menu bar.":::
 
-1. In the side navigation select **Create**, or select **Home** and select **Create a bot**.
+1. In the side navigation, select **Create**, or select **Home** and select **Create a bot**.
 
 1. Name the bot `Reservation Bot` and select **Create**.
 
@@ -55,11 +55,11 @@ Power Virtual Agents now has an app-level home page that is not specific to any 
     - `Hi there!`
     - `Hi!`
 
-1. [Add an image card](advanced-cards.md#image-card) and provide an image of the restaurant. Providing an image helps the user visually confirm that they're booking at the correct location.
+1. [Add an image card](advanced-cards.md#image-card) and provide an image of the restaurant. Providing an image helps the user visually confirm that they're looking at the correct location.
 
     :::image type="content" source="media/build-2022-quickstart/image-card.png" alt-text="Screenshot of speech mode toggle.":::
 
-1. Add a second **Message** node and add the message `We're open 9am to 5pm Monday through Friday, and 10am through 8pm on the weekends. Please note, reservations can only be made for the next 7 days.`
+1. Add a second **Message** node and add the message `We're open 9 am to 5 pm Monday through Friday, and 10 am through 8 pm on the weekends. Please note that reservations can only be made for the next 7 days.`
 
 1. Change the edit mode to **Speech**.
 
@@ -69,7 +69,7 @@ Power Virtual Agents now has an app-level home page that is not specific to any 
 
 1. Add the message `We're open 9am to 5pm Monday through Friday, and 10am through 8pm on the weekends. <emphasis level="strong">Please note</emphasis><break strength="medium" />, reservations can only be made for the next 7 days.`
 
-   When the message is spoken by the bot over a phone call, it will put emphasis on "Please note" and pause for a moment before continuing.
+   When the bot speaks the message over a phone call, it will emphasize on "Please note" and pause for a moment before continuing.
 
 1. Add a third **Message** node and add the message `If you'd like, I can help you make a reservation.` to provide a call to action for the user.
 
@@ -86,8 +86,8 @@ Power Virtual Agents now has an app-level home page that is not specific to any 
 1. In the side navigation, select **Topics** and then **New topic**.
 
 1. Add the following trigger phrases:
-    - `reserve a table`
-    - `make a reservation`
+    - `Reserve a table`
+    - `Make a reservation`
 
 1. Add a **Question** node and enter the message `What is the desired time and date of your reservation?`
 
@@ -103,7 +103,7 @@ Power Virtual Agents now has an app-level home page that is not specific to any 
 
 1. Under the **ConditionItem** node, add a **Message** node. This message will remind the user that reservations can only be made in the next 7 days. Enter the message `Sorry, I can only make reservations for the next 7 days.`
 
-1. Under the **All Other Conditions** node, add a **Message** node. This message will provide a confirmation of the user's reservation.
+1. Under the **All Other Conditions** node, add a **Message** node. This message will confirm the user's reservation.
     1. Enter `Your reservation has been made for`
     1. Select **Insert variable** and choose **reservationDateTime** from the list
     1. Enter `. We look forward to seeing you!`
@@ -113,11 +113,11 @@ Power Virtual Agents now has an app-level home page that is not specific to any 
 
     :::image type="content" source="media/build-2022-quickstart/variable-reference.png" alt-text="Screenshot of variable in message node.":::
 
-    When the bot responds with this message, the variable reference will be replaced with with the value of the variable.
+    When the bot responds with this message, the variable reference will be replaced with the value of the variable.
 
     :::image type="content" source="media/build-2022-quickstart/variable-replaced.png" alt-text="Screenshot of the variable's value shown in a message.":::
 
-1. Add an **Redirect** node where the two condition branches meet and choose the **End of conversation** topic.
+1. Add a **Redirect** node where the two condition branches meet and choose the **End of conversation** topic.
 
 1. Name the topic `Reservation` and select **Save**.
 
@@ -129,4 +129,4 @@ Power Virtual Agents now has an app-level home page that is not specific to any 
 
 1. [Publish your bot](publication-fundamentals-publish-channels.md).
 
-1. Test your bot using the [demo website](publication-connect-bot-to-web-channels.md), or by calling the phone number configured in Telephony.
+1. Test your bot using the [demo website](publication-connect-bot-to-web-channels.md), or call the phone number configured in Telephony.
