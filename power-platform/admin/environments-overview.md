@@ -4,7 +4,7 @@ description: Learn about environments in Power Apps and how to use them.
 author: jimholtz
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 05/16/2022
+ms.date: 06/01/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -110,7 +110,7 @@ A single default environment is automatically created by Power Apps for each ten
 > [!NOTE]
 > - No users will be added to the Environment Admin role of the default environment automatically. 
 > - You can't delete the default environment.
-> - You can't backup and restore the default environment.
+> - The default environment can't be backed up.
 > - The default environment has the following included storage capacity: 3GB Dataverse Database Capacity, 3GB Dataverse File Capacity, and 1GB Dataverse Log Capacity.
 > - The capacity check conducted prior to creating new environments will exclude the default environment's included storage capacity when calculating whether you have  sufficient capacity to create a new environment.
 
