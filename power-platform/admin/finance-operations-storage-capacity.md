@@ -23,8 +23,7 @@ search.app:
 Finance and Operations storage capacity reporting provides administrators a way to visualize and understand storage usage versus entitlement. The current release scope covers Finance and Operations database storage capacity at both the tenant and environment level. Table-level database storage analytics and Finance and Operations file storage capacity will be available at a later date.
 
 > [!IMPORTANT]
-> - This is a preview feature and won't impact the service and performance you will receive from Microsoft Dynamics products cloud services in the short term.
-> - You will be notified in advance before Microsoft starts enforcement.
+> - This report is in preview and should be used by customers to strategize managing their storage efficiently. If the storage consumption goes over the entitled limit, customers are encouraged to manage the excess storage consumption by deleting unused data or purchasing additional operations storage capacity to meet the growing needs of their business. There is no functional or performance impact to your service based on the situation presented in this report.
 > - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 > - This feature is being gradually rolled out across regions and might not be available yet in your region.
 
@@ -74,7 +73,18 @@ To view this page, select **Resources** > **Capacity** > **Finance and Operation
 
 ## Actions to take for a Finance and Operations capacity deficit 
 
-This feature is currently in preview and for information only. It will not impact the service and performance you'll receive from Microsoft Dynamics cloud services in the short term. Customers will be notified in advance before Microsoft starts enforcement. 
+> [!NOTE]
+> This report is in preview and should be used by customers to strategize managing their storage efficiently. If the storage consumption goes over the entitled limit, customers are encouraged to manage the excess storage consumption by deleting unused data or purchasing additional storage capacity to meet the growing needs of their business. There is no functional or performance impact to your service based on the configuration presented in this report.
+
+Use the **Summary** tab to determine if you have a capacity deficit.
+
+**New storage model**
+
+:::image type="content" source="media/finance-operations-overage-new-model.png" alt-text="Determine if you are using more storage capacity than allocated - new storage model.":::
+
+**Legacy storage model**
+
+:::image type="content" source="media/finance-operations-overage-legacy-model.png" alt-text="Determine if you are using more storage capacity than allocated - legacy storage model.":::
 
 You can always free up storage, delete unwanted environments/data, or buy more capacity to be compliant with Finance and Operations storage usage. To learn more about Finance and Operations capacity add-ons, see the [Dynamics 365 Licensing Guide](https://www.microsoft.com/licensing/product-licensing/dynamics365). You can work through your organization’s standard procurement process to purchase Finance and Operations capacity add-ons. 
 
