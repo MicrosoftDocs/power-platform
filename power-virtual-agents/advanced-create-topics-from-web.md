@@ -62,13 +62,13 @@ Tabular file types require a _two-column format_ where each row represents a que
 
 | Supported file type                  | Requires two-column format |
 | ------------------------------------ | :------------------------: |
-| Comma separated values (.csv)        |             ✔              |
-| Microsoft Excel (.xlsx) <sup>1</sup> |             ✔              |
+| Comma separated values (.csv)        |            Yes             |
+| Microsoft Excel (.xlsx) <sup>1</sup> |            Yes             |
 | Microsoft Power Point (.pptx)        |                            |
 | Microsoft Word (.docx)               |                            |
 | Plain text (.txt)                    |                            |
 | Portable Document Format (.pdf)      |                            |
-| Tab separated values (.tsv)          |             ✔              |
+| Tab separated values (.tsv)          |            Yes             |
 
 <sup>1</sup> _Only the first sheet is imported._
 
