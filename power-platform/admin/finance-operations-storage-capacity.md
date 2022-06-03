@@ -120,3 +120,5 @@ For now, your account team will work with you to stay within your entitlement li
 No, there won't be billing in arrears for past overage because usage versus entitlements reporting wasn't available in the past. 
 
 
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

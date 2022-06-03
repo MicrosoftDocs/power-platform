@@ -3,11 +3,13 @@ title: "Field-level security  | MicrosoftDocs"
 description: Field-level security 
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 10/21/2021
-author: jimholtz
+ms.date: 06/15/2022
+author: praveenmantha
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: pmantha
 ms.reviewer: jimholtz
+contributors:
+  - srpoduri
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
@@ -58,7 +60,6 @@ A combination of these three permissions can be configured to determine the user
 > [!IMPORTANT]
 >  Unless one or more security profiles are assigned to a security enabled field, only users with the system administrator security role will have access to the field.  
   
-<a name="BKMK_FLSexample"></a>   
 ## Example for restricting the mobile phone field for the Contact entity  
  Imagine your company's policy is that sales members should have different levels of access to contact mobile phone numbers as described here.  
   
@@ -70,24 +71,37 @@ A combination of these three permissions can be configured to determine the user
   
  To restrict this field, you would do the following tasks.  
   
- Secure the field.  
+ **Secure the field**
 
-1. In the web app, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
+1. Sign in to [Power Apps](https://make.powerapps.com/).
 
-2. Select **Settings** > **Customizations**.
+2. Select **Dataverse** > **Tables**.
 
-3. Select **Customize the System**.  
-  
-4. Select **Entities** > **Contact** > **Fields**.  
-  
-5. Select **mobile phone**, select **Edit**.  
-  
-6. Next to **Field Security**, select **Enable**, select **Save and Close**.  
-  
-7. Publish the customization.  
+3. Select the **Contact** table.
 
-Configure the security profiles.  
+4. Under **Schema**, select **Columns**.
+
+5. Scroll down in the Columns list and open **Mobile Phone**.
+
+6. Expand **Advanced options**, and then under **General**, enable **Enable column security**.
+
+7. Select **Save**.
+
+**Configure the security profiles**
   
+1. From the Microsoft [Power Platform admin center](https://admin.powerplatform.microsoft.com), select the environment to which you want to configure security profiles. 
+
+2. Select **Settings** > **Users + permissions** > **Field security profiles**. 
+
+3. Select **New Profile**, enter a name, such as *Sales Manager*, enter a description, and then select **Save**.  
+
+4. Select the newly created field security profile, and then 
+
+
+
+
+
+
 1. Create the field security profile for sales managers.  
 
    1. In the web app, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
@@ -117,7 +131,7 @@ Configure the security profiles.
   
 Any users not defined in the previously created field security profiles won't have access to the mobile phone field on contact forms or views. The field value displays ![Lock icon.](../admin/media/admin-field-level-security-lock.png "Lock icon") ********, indicating that the field is secured.  
   
-<a name="BKMK_FLS_fields"></a>   
+
 ## Which fields can be secured?  
  Every field in the system contains a setting for whether field security is allowed. You can view this in the field definition from Solution Explorer. In Solution Explorer expand **Entities**, expand the entity that you want, select **Fields**, and then open the field that you want. If **Enable** can be selected, the field can be enabled for field security. 
 
@@ -134,7 +148,7 @@ Although most attributes can be secured, there are system attributes, such as ID
 
 You can view the entity metadata for your organization including which fields can be enabled for field security, by installing the Metadata Browser solution described in [Browse the Metadata for Your Organization](/powerapps/developer/common-data-service/browse-your-metadata). You can also view the metadata for an uncustomized organization in the [!INCLUDE[pn_MS_Excel_Full](../includes/pn-ms-excel-full.md)] file called EntityMetadata.xlsx included in the top-level folder of the SDK. [Download the SDK](https://go.microsoft.com/fwlink/p/?LinkId=691153)  
    
-<a name="BKMK_FLSbestprac"></a>   
+ 
 ## Best practices when you use field security  
  When you use calculated fields that include a field that is secured, data may be displayed in the calculated field to users that don't have permission to the secured field. In this situation, both the original field and the calculated field should be secured.  
   
