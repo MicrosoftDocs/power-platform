@@ -84,11 +84,6 @@ Review the following for information on how to clean up Finance and Operations d
 -	[Archive inventory transactions - Supply Chain Management](/dynamics365/supply-chain/inventory/archive-inventory-transactions) 
 -	[Archive credit card transaction data - Commerce](/dynamics365/commerce/dev-itpro/archive-cc-data) 
 
-[Jim note: these appear to be internal and not available publicly]
--	[General Guidelines to reduce FO storage size.docx](https://microsoft.sharepoint.com/:w:/t/CaravanAngels/EdOSoN1ZexpAnPyiZnldtHgB79JAAgdetYK_Zs0qNW8dRw?e=nzDIGg)
--	[App specific guidelines to reduce FO DB storage size.docx](https://microsoft.sharepoint.com/:w:/t/CaravanAngels/EbQHnvi6ILpFsz67rlSxYuABVbDFobRzKKD_eqyeeoECsA?e=mL1bfN)
-
-
 ## FAQ 
 
 ### Why is Finance and Operations storage reporting separate from Dataverse? 
