@@ -5,7 +5,7 @@ author: denisem-msft
 manager: devkeydet
 ms.component: pa-maker
 ms.topic: conceptual
-ms.date: 05/16/2022
+ms.date: 06/01/2022
 ms.subservice: guidance
 ms.author: demora
 ms.reviewer: tapanm
@@ -31,6 +31,9 @@ contributors:
 The Creator Kit helps you create Power Apps experiences on the web and mobile platforms by making several easy to use sample controls and components available. The toolkit contains a component library, several commonly used [Power Apps component framework controls](/power-apps/developer/component-framework/overview), and other utilities that increase developer productivity. 
 
 All included controls and components utilize the [Fluent UI](https://developer.microsoft.com/fluentui#/) framework to help you easily create consistent, beautiful, and effective user experiences for custom business applications.
+
+> [!NOTE]
+> Before you download and install the Creator Kit, ensure that you [enable code components](/power-apps/developer/component-framework/component-framework-for-canvas-apps#enable-the-power-apps-component-framework-feature) in your environment first.
 
 > [!div class="nextstepaction"]
 > [Download the Creator Kit](https://aka.ms/creatorkitdownload)
