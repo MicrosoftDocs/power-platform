@@ -587,8 +587,11 @@
         href: legacy-capacity-storage.md
       - name: View self-service capacity
         href: view-self-service-capacity.md
-      - name: Free up storage space
-        href: free-storage-space.md        
+        items:
+        - name: Recover storage space
+          href: free-storage-space.md  
+        - name: Clean up AsyncOperationBase and WorkflowLogBase tables
+          href: cleanup-asyncoperationbase-table.md
       - name: Add storage capacity
         href: add-storage.md      
       - name: Access storage with SAS token
@@ -615,6 +618,8 @@
         href: logging-power-automate.md 
       - name: Data loss prevention activity logging
         href: dlp-activity-logging.md
+      - name: Manage Dataverse Auditing
+        href: manage-dataverse-auditing.md
       - name: Audit data and user activity for Dynamics 365 entities
         href: audit-data-user-activity.md
       - name: Dataverse and model-driven apps
