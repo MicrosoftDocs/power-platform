@@ -21,9 +21,7 @@ search.app:
 ---
 # Field-level security to control access 
 
-<!-- legacy procedure -->
-
-Record-level permissions are granted at the table level, but you may have certain columns associated with an entity that contain data that is more sensitive than the other fields. For these situations, you use field-level security to control access to specific columns.  
+Record-level permissions are granted at the table level, but you may have certain columns associated with a table that contain data that is more sensitive than the other columns. For these situations, you use field-level security to control access to specific columns.  
   
  The scope of field-level security is organization-wide and applies to all data access requests including the following:  
   
@@ -32,6 +30,9 @@ Record-level permissions are granted at the table level, but you may have certai
 - Web service calls using the Microsoft Dataverse web services (for use in plug-ins, custom workflow activities, and custom code)  
 - Reporting (using Filtered Views)  
   
+> [!NOTE]
+> The use of entity-related terminology depends on the protocol or class library used. See [Terminology use depending on protocol or technology](/power-apps/developer/data-platform/understand-terminology).
+
 ## Overview of field-level security  
  Field-level security is available for the default columns on most out-of-box entities, custom columns, and custom columns on custom tables. Field-level security is managed by the security profiles. To implement field-level security, a system administrator performs the following tasks.  
   
@@ -53,7 +54,7 @@ A security profile determines the following:
 A combination of these three permissions can be configured to determine the user privileges for a specific data column.  
   
 > [!IMPORTANT]
->  Unless one or more security profiles are assigned to a security enabled column, only users with the system administrator security role will have access to the column.  
+> Unless one or more security profiles are assigned to a security enabled column, only users with the system administrator security role will have access to the column.  
   
 ## Example for restricting the mobile phone field for the Contact entity  
  Imagine your company's policy is that sales members should have different levels of access to contact mobile phone numbers as described here.  
@@ -84,7 +85,7 @@ A combination of these three permissions can be configured to determine the user
 
 **Configure the security profiles**
   
-1. From the Microsoft [Power Platform admin center](https://admin.powerplatform.microsoft.com), select the environment to which you want to configure security profiles. 
+1. From the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select the environment to configure security profiles for. 
 
 2. Select **Settings** > **Users + permissions** > **Field security profiles**. 
 
@@ -93,7 +94,7 @@ A combination of these three permissions can be configured to determine the user
 4. Select the **Users** tab, select **Add User**, select the users that you want to grant access to the mobile phone number on the contact form, and then select **Add**.   
 
    > [!TIP]
-   >  Instead of adding each user, create one or more teams that include all users that you want to grant access.  
+   > Instead of adding each user, create one or more teams that include all users that you want to grant access.  
 
 5. Repeat the above steps and create a field security profile for *Vice President*.  
 
@@ -140,7 +141,11 @@ You can view the entity metadata for your organization including which columns c
 ### See also  
  [Create a field security profile](set-up-security-permissions-field.md)   
  [Add or remove security from a field](enable-disable-security-field.md)   
- [Hierarchy security](../admin/hierarchy-security.md)
+ [Hierarchy security](hierarchy-security.md)
+
+
+
+
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
