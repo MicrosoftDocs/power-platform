@@ -587,6 +587,7 @@
         href: legacy-capacity-storage.md
       - name: View self-service capacity
         href: view-self-service-capacity.md
+      - name: Free up storage
         items:
         - name: Recover storage space
           href: free-storage-space.md  
@@ -618,8 +619,9 @@
         href: logging-power-automate.md 
       - name: Data loss prevention activity logging
         href: dlp-activity-logging.md
-      - name: Manage Dataverse Auditing
-        href: manage-dataverse-auditing.md
+  # remove following before live
+  #    - name: Manage Dataverse Auditing
+  #      href: manage-dataverse-auditing.md
       - name: Audit data and user activity for Dynamics 365 entities
         href: audit-data-user-activity.md
       - name: Dataverse and model-driven apps
