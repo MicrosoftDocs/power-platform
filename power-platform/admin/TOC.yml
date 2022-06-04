@@ -589,9 +589,10 @@
         href: view-self-service-capacity.md
 ## remove next row before publish
       - name: Free up storage
+        href: free-storage-space.md  
         items:
-        - name: Recover storage space
-          href: free-storage-space.md  
+    #    - name: Recover storage space
+    #      href: free-storage-space.md  
         - name: Clean up AsyncOperationBase and WorkflowLogBase tables
           href: cleanup-asyncoperationbase-table.md
       - name: Add storage capacity
