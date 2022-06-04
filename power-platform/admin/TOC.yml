@@ -587,6 +587,7 @@
         href: legacy-capacity-storage.md
       - name: View self-service capacity
         href: view-self-service-capacity.md
+      - name: Free up storage
         items:
         - name: Recover storage space
           href: free-storage-space.md  
