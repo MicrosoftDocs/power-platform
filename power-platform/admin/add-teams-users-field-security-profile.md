@@ -19,26 +19,21 @@ search.app:
 ---
 # Add teams or users to a field security profile to control access
 
-Role-based security controls access to a specific table type, record-based security controls access to individual records, and field-level security controls access to specific columns. You can use a field security profile to manage the permission of users and teams to read, create, or write in secured columns. For example, the System Administrator field security profile gives full access to all secured columns.  
+Role-based security controls access to a specific table type, record-based security controls access to individual rows, and field-level security controls access to specific columns. You can use a field security profile to manage the permission of users and teams to read, create, or write in secured columns. For example, the System Administrator field security profile gives full access to all secured columns.  
 
 > [!NOTE]
 > The use of entity-related terminology depends on the protocol or class library used. See [Terminology use depending on protocol or technology](/power-apps/developer/data-platform/understand-terminology).
   
-1. [!INCLUDE[proc_settings_security](../includes/proc-settings-security.md)]  
-  
-2. Choose **Field Security Profiles**.  
-  
-3. Choose the profile name that you want to add teams or users to.  
-  
-4. Under Related, choose **Teams** or **Users**.  
-  
-5. On the Actions toolbar, choose **Add**.  
-  
-6. Select a team or user from the list. You can search for a team or user first.  
-  
-7. Choose **Add**.  
-  
-8. Close the field security profile record.  
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) with System Administrator security role or equivalent permissions.
+
+2. Select the environment to add teams or users to a field security profile. 
+
+3. Select **Settings** > **Users + permissions** > **Field security profiles**.  
+
+4. Select the **Teams** or **Users** tab to add teams or users. 
+
+5. When finished adding teams or users, select **Add**. 
+
   
 ### See also  
  [Control data access](security-roles-privileges.md)   

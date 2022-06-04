@@ -53,7 +53,7 @@ After you create the profile, you assign users and or teams to that profile, and
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) with System Administrator security role or equivalent permissions.
 
-2. select the environment to configure security profiles for. 
+2. Select the environment to configure security profiles for. 
 
 3. Select **Settings** > **Users + permissions** > **Field security profiles**. 
 
@@ -70,7 +70,7 @@ After you create the profile, you assign users and or teams to that profile, and
 
 8. select the **Field Permissions** tab, select **Mobile Phone**, and then select **Edit**. Set the **Read** setting to **Allowed**, and then select **Save**.
 
-Any users not defined in the previously created field security profiles won't have access to the mobile phone column on contact forms or views. The field value displays ![Lock icon.](../admin/media/admin-field-level-security-lock.png "Lock icon") ********, indicating that the field is secured.  
+Any users not defined in the previously created field security profiles won't have access to the mobile phone column on contact forms or views. The column value displays ![Lock icon.](../admin/media/admin-field-level-security-lock.png "Lock icon") ********, indicating that the column is secured.  
   
 ### See also  
  [Enable or disable security for a field](enable-disable-security-field.md)
