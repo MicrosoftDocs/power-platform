@@ -180,9 +180,6 @@ See [Web Chat customization](/azure/bot-service/bot-builder-webchat-customizatio
 1. Replace the bot and user avatar images in the code with your company images.  
     If you don't have an image URL, you can use a Base64-encoded image string instead.
 
-> [!IMPORTANT]
-> It may take up to 24 hours for the new image to appear everywhere after you change your bot's icon.
-
 #### Change the background color
 
 1. Update the *index.html* file with following sample code:
