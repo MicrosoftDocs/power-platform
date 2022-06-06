@@ -19,7 +19,7 @@ ms.collection: virtual-agent
 
 As you design your bot in Power Virtual Agents, you can use the **Test bot** pane to see how the bot leads a customer through the bot conversation.
 
-To help you find and fix unexpected behavior, you can enable tracking between topics to take you through the bot conversation step-by-step, and go to the corresponding node in the authoring canvas.
+To help you find and fix unexpected behavior, you can enable tracking between topics to take you through the bot conversation step-by-step and go to the corresponding node in the authoring canvas.
 
 ## Test a topic in the Test bot pane
 
@@ -27,7 +27,7 @@ To help you find and fix unexpected behavior, you can enable tracking between to
 
    :::image type="content" source="media/authoring-test-bot/test-bot-menu.png" alt-text="The Test your bot button is at the bottom of the side pane." border="false":::
 
-1. It's a good idea to select **Reset** at the top of the **Test bot** pane to clear previous conversations. Clearing previous conversations makes it easier to see the flow of the topic you want to see without getting confused by previous conversations.
+1. It's good to select **Reset** at the top of the **Test bot** pane to clear previous conversations. Clearing previous conversations make it easier to see the flow of the topic you want to see without getting confused by previous conversations.
 
    :::image type="content" source="media/authoring-test-bot/test-bot-reset.png" alt-text="Click Reset at the top of the Test bot pane to clear conversation history." border="false":::
 
@@ -41,7 +41,7 @@ To help you find and fix unexpected behavior, you can enable tracking between to
 
   :::image type="content" source="media/authoring-test-bot/test-bot-response.png" alt-text="Select any response in the conversation to see the authoring canvas highlighted to that response." border="false":::
 
-You can return to the authoring canvas for the topic  at any time to revise it's conversation path. The **Test chat** pane will automatically refresh itself when you save changes to a topic.
+You can return to the authoring canvas for the topic  at any time to revise its conversation path. The **Test chat** pane will automatically refresh when you save changes to a topic.
 
 ## Save conversation snapshots
 
@@ -58,7 +58,7 @@ While testing your bot in the **Test bot** pane, you can use the **Save snapshot
 
     :::image type="content" source="media/authoring-test-bot/save-snapshot-window.png" alt-text="Save snapshot message.":::
 
-1. The bot's content and conversational diagnostics will be saved in a .zip archive file called *DSAT.zip*.
+1. This will save the bot's content and conversational diagnostics in a .zip archive file called *DSAT.zip*.
 
     :::image type="content" source="media/authoring-test-bot/dsat.png" alt-text="Conversational diagnostics archive.":::
 
@@ -70,7 +70,7 @@ While testing your bot in the **Test bot** pane, you can use the **Save snapshot
 
     1. *botContent.json* contains the bot's topics and other content, including entities and variables used in the bot.
 
-Help us improve Power Virtual Agents by flagging issues with the **Flag an issue** command on the test bot pane. This submits your conversation ID to Microsoft, which is a unique identifier that Microsoft uses to troubleshoot the issue of the conversation. Other information, such as that in the *DSAT.zip* file, is not sent when you flag an issue.
+Help us improve Power Virtual Agents by flagging issues with the **Flag an issue** command on the test bot pane. The **Flag and issue** command submits your conversation ID to Microsoft, which is a unique identifier that Microsoft uses to troubleshoot the issue of the conversation. Other information, such as that in the *DSAT.zip* file, is not sent when you flag an issue.
 
 :::image type="content" source="media/authoring-test-bot/flag-issue.png" alt-text="Flag an issue.":::
 
