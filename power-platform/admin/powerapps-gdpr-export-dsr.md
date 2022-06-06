@@ -71,11 +71,11 @@ Administrators can export all environments created by a specific user from the [
    > ![Environment details.](media/environment-details.png "Environment details")
 
 ### PowerShell cmdlets for app creators
-Users can export the environments they have access to in Power Apps by using the **Get-PowerAppsEnvironment** function in the [Power Apps App creator PowerShell cmdlets](./powerapps-powershell.md):
+Users can export the environments they have access to in Power Apps by using the **Get-PowerAppEnvironment** function in the [Power Apps App creator PowerShell cmdlets](./powerapps-powershell.md):
 
 ```powershell
 Add-PowerAppsAccount
-Get-PowerAppsEnvironment | ConvertTo-Json | Out-File -FilePath "UserDetails.json"
+Get-PowerAppEnvironment | ConvertTo-Json | Out-File -FilePath "UserDetails.json"
 ```
 
 ### PowerShell cmdlets for admins
@@ -166,7 +166,7 @@ Users can export the app role assignments for all apps that they have access to 
 
 ```powershell
 Add-PowerAppsAccount
-Get-AppRoleAssignment | ConvertTo-Json | Out-File -FilePath "UserDetails.json"
+Get-AdminPowerAppRoleAssignment | ConvertTo-Json | Out-File -FilePath "UserDetails.json"
 ```
 
 ### Power Platform admin center 
@@ -199,11 +199,11 @@ Get-AdminAppRoleAssignment -UserId $userId | ConvertTo-Json | Out-File -FilePath
 Connections are used in conjunction with connectors when establishing connectivity with other APIs and SaaS systems. Connections include references to the user who created them and, as a result, can be deleted to remove any references to the user.
 
 ### PowerShell cmdlets for app creators
-Users can export all of the connections they have access to by using the **Get-Connection** function in the [Power Apps App creator PowerShell cmdlets](./powerapps-powershell.md):
+Users can export all of the connections they have access to by using the **Get-AdminPowerAppConnection** function in the [Power Apps App creator PowerShell cmdlets](./powerapps-powershell.md):
 
 ```powershell
 Add-PowerAppsAccount
-Get-Connection | ConvertTo-Json | out-file -FilePath "UserDetails.json"
+Get-AdminPowerAppConnection | ConvertTo-Json | out-file -FilePath "UserDetails.json"
 ```
 
 ### PowerShell cmdlets for admins
@@ -218,11 +218,11 @@ Get-AdminConnection -CreatedBy $userId | ConvertTo-Json | Out-File -FilePath "Us
 ## Step 6: Export the user's permissions to shared connections
 
 ### PowerShell cmdlets for app creators
-Users can export the connection role assignments for all connections that they have access to by using the **Get-ConnectionRoleAssignment** function in the [Power Apps App creator PowerShell cmdlets](./powerapps-powershell.md):
+Users can export the connection role assignments for all connections that they have access to by using the **Get-AdminPowerAppConnectionRoleAssignment** function in the [Power Apps App creator PowerShell cmdlets](./powerapps-powershell.md):
 
 ```powershell
 Add-PowerAppsAccount
-Get-ConnectionRoleAssignment | ConvertTo-Json | Out-file -FilePath "UserDetails.json"
+Get-AdminPowerAppConnectionRoleAssignment | ConvertTo-Json | Out-file -FilePath "UserDetails.json"
 ```
 
 ### PowerShell cmdlets for admins
@@ -238,11 +238,11 @@ Get-AdminConnectionRoleAssignment -PrincipalObjectId $userId | ConvertTo-Json | 
 Custom Connectors supplement the existing out-of-box connectors and allow for connectivity to other APIs, SaaS, and custom-developed systems.
 
 ### Power Apps App creator PowerShell cmdlets
-Users can export all custom connectors they've created by using the **Get-Connector** function in the [Power Apps App creator PowerShell cmdlets](./powerapps-powershell.md):
+Users can export all custom connectors they've created by using the **Get-AdminPowerAppConnector** function in the [Power Apps App creator PowerShell cmdlets](./powerapps-powershell.md):
 
 ```powershell
 Add-PowerAppsAccount  
-Get-Connector -FilterNonCustomConnectors | ConvertTo-Json | Out-File -FilePath "UserDetails.json"
+Get-AdminPowerAppConnector -FilterNonCustomConnectors | ConvertTo-Json | Out-File -FilePath "UserDetails.json"
 ```
 
 ### PowerShell cmdlets for admins
