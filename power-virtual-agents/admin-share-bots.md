@@ -36,9 +36,9 @@ Bot owners and managers from [sharing a bot for collaboration](#share-a-bot-for-
 
 You can share your bot with security groups so their members can chat with the bot.
 
-1. Select **Share** at the top of the bot's home page.
+1. Select **Share** at the top of the bot's overview page.
 
-  :::image type="content" source="media/admin-share-bots/sharing-home.png" alt-text="Sharing UI entry point in bot homepage." border="false":::
+  :::image type="content" source="media/admin-share-bots/sharing-home.png" alt-text="Sharing UI entry point in bot overview page." border="false":::
 
 1. Specify the security group name that you would like to share the bot with.
 
@@ -62,7 +62,7 @@ You can share your bot with security groups so their members can chat with the b
 
 You can share your bot to allow everyone in the same organization the bot to chat with it.
 
-1. Select **Share** at the top of the bot's home page.
+1. Select **Share** at the top of the bot's overview page.
 
 1. Select **Everyone in _your organization's name_**.
 
@@ -81,7 +81,7 @@ You can stop sharing the bot with a security group or everyone in your organizat
 
 #### Stop sharing with a security group
 
-1. Select **Share** at the top of the bot's home page.
+1. Select **Share** at the top of the bot's overview page.
 
 1. Select **X** next to the security groups that you want to stop sharing the bot with.
 
@@ -91,7 +91,7 @@ You can stop sharing the bot with a security group or everyone in your organizat
 
 #### Stop sharing with everyone in the organization
 
-1. Select **Share** on the bot's homepage.
+1. Select **Share** on the bot's overview page.
 
 1. Select **Everyone in _your organization's name_**.
 
@@ -114,9 +114,9 @@ Everyone you share the bot with can view, edit, configure, share, and publish th
 > [!NOTE]
 > You can only share the bot with users who have Microsoft Power Platform licenses. Users who don't have a license can [sign up for a free trial](sign-up-individual.md) so they can edit the bot.
 
-1. To share a bot, sign in to Power Virtual Agents and select **Share** at the top of the bot's home page.
+1. To share a bot, sign in to Power Virtual Agents and select **Share** at the top of the bot's overview page.
 
-    :::image type="content" source="media/admin-share-bots/sharing-home.png" alt-text="Power Virtual Agents bot homepage with the Share button highlighted." border="false":::
+    :::image type="content" source="media/admin-share-bots/sharing-home.png" alt-text="Power Virtual Agents bot overview page with the Share button highlighted." border="false":::
 
 1. Specify the name or email address of each user that you would like to share the bot with.  
 
@@ -170,7 +170,7 @@ To let other users edit or add flows you'll need to share them in Power Automate
 
 You can stop sharing a bot with a user, and any shared user can stop the bot from being shared with other users, except for the owner. The owner will always have access to the bot.
 
-1. Sign in to Power Virtual Agents and select **Share** at the top of the bot's home page.
+1. Sign in to Power Virtual Agents and select **Share** at the top of the bot's overview page.
 
 1. Select **X** next to the users that you want to stop sharing the bot with.
 

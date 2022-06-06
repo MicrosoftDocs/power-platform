@@ -69,7 +69,7 @@ In addition to this guide, you can also [download and use templates to help you 
 
 1. Select **Create**. The process of creating your first bot in a new environment can take up to 15 minutes; subsequent bots will be created much faster.
 
-1. After a few minutes, you'll land on the home page and be able to interact with the bot in read-only mode. You can't save any edits during this time, but you can:
+1. After a few minutes, you'll land on the bot overview page and be able to interact with the bot in read-only mode. You can't save any edits during this time, but you can:
     - explore the overall user interface
     - look at topics
     - experiment with the preloaded user topics and system topics
