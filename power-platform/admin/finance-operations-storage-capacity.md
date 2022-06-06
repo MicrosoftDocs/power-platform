@@ -1,6 +1,6 @@
 ---
-title: "Finance and Operations storage capacity (Preview) | MicrosoftDocs"
-description: About Finance and Operations storage capacity reporting that provides administrators way to visualize and understand storage usage vs. entitlement.
+title: Finance and operations storage capacity
+description: Use the finance and operations storage capacity report to visualize and understand storage usage vs. entitlement.
 author: jimholtz
 ms.component: pa-admin
 ms.topic: conceptual
@@ -16,114 +16,111 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Finance and Operations storage capacity 
+# Finance and operations storage capacity
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Finance and Operations storage capacity reporting provides administrators a way to visualize and understand storage usage versus entitlement. The current release scope covers Finance and Operations database storage capacity at both the tenant and environment level. Table-level database storage analytics and Finance and Operations file storage capacity will be available at a later date.
+The finance and operations storage capacity report gives you a way to visualize your organization's storage usage versus your entitlement.
+
+Currently, the report covers finance and operations database storage capacity at both the tenant and environment level. Table-level analytics and file storage capacity reporting will be available later. For some environments, the **Last updated** field isn't available.
 
 > [!IMPORTANT]
-> - This report is in preview and should be used by customers to strategize managing their storage efficiently. If the storage consumption goes over the entitled limit, customers are encouraged to manage the excess storage consumption by deleting unused data or purchasing additional operations storage capacity to meet the growing needs of their business. There is no functional or performance impact to your service based on the situation presented in this report.
+>
+> - This report is in preview. You may use it to manage your storage efficiently. If the storage consumption goes over the entitled limit, we encourage you to manage the excess consumption by deleting unused data or purchasing additional operations storage capacity. There is no functional or performance impact to your service if storage consumption exceeds your entitlement.
 > - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 > - This feature is being gradually rolled out across regions and might not be available yet in your region.
 
-## Licenses for Finance and Operations storage 
+## Licenses for finance and operations storage
 
-The following licenses / product categories are entitled to Finance and Operations storage capacity: 
+The following product and capacity licenses include storage for finance and operations data:
 
-- Dynamics 365 Commerce / Finance / Human Resource / Project Operations / Supply Chain Management 
-- Dynamics 365 Unified Operations plan 
-- Dynamics 365 Operations – Activity / Device 
-- Dynamics 365 Operations - Database capacity / File add-on storage capacity 
-- Dynamics 365 Operations– Sandbox 
+- Dynamics 365 Commerce, Finance, Human Resources, Project Operations, and Supply Chain Management
+- Dynamics 365 Unified Operations plan
+- Dynamics 365 Operations – Activity/Device
+- Dynamics 365 Operations database capacity/file capacity
+- Dynamics 365 Operations Sandbox
+<!-- I got the above revised names from the Dynamics 365 Licensing Guide, https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409 -->
 
 To see whether you have any of these licenses, sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/), and then select **Billing** > **Licenses**.  
 
 > [!NOTE]
-> Due to technical limitations, certain licenses are eligible for entitlements but aren't represented in the current reporting. These limitations include:
-> - Dynamics AX Online licenses 
-> - D365 Finance and Operations China specific licenses 
-> - Operations Sandbox Tier 4 and 5 per User Subscription License incremental capacity  
-> 
-> If you have these licenses, reach out to your account team to get a full view of your entitlement.  
+> Due to technical limitations, the following licenses are eligible for entitlements but aren't represented in the current reporting:
 >
-> For some environments under the **Finance and Operations** tab, the **Last updated** field is not available.
+> - Dynamics AX (Online) licenses
+> - China-specific licenses for Dynamics 365 finance and operations apps
+> - Operations Sandbox Tier 4 and Tier 5 per user subscription license incremental capacity  
+>
+> If you have these licenses, reach out to your account team to get a full view of your entitlement.  
 
-## Capacity page details 
+## Summary page
 
-### Summary page 
+The **Summary** page provides a tenant-level view of where your organization is using finance and operations storage capacity.
 
-This page provides a tenant-level view of where your organization is using Finance and Operations storage capacity. 
+To view the **Summary** page, sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com), and then select **Resources** > **Capacity** > **Summary** tab.
 
-To view the **Summary** page, sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com), and then select **Resources** > **Capacity** > **Summary** tab. 
+:::image type="content" source="media/finance-operations-storage-summary-tab.png" alt-text="Screenshot of the Capacity Summary page including finance and operations data.":::
 
-:::image type="content" source="media/finance-operations-storage-summary-tab.png" alt-text="Storage Summary page with Finance and Operations.":::
+If you're using the [legacy Dataverse storage capacity model](legacy-capacity-storage.md), your **Summary** page will look like this:  
 
-If you are on the [legacy Dataverse storage capacity model](legacy-capacity-storage.md), your **Summary** page will look like this:  
+:::image type="content" source="media/finance-operations-storage-summary-tab-legacy.png" alt-text="Screenshot of the legacy Summary page including finance and operations data.":::
 
-:::image type="content" source="media/finance-operations-storage-summary-tab-legacy.png" alt-text="Legacy Summary page with Finance and Operations.":::
+## Finance and Operations page
 
-### Finance and Operations page 
+The **Finance and Operations** page provides an environment-level view of where your organization is using finance and operations storage capacity.
 
-The Finance and Operations page provides similar information to the **Summary** page, but with an environment-level view of where your organization is using capacity. 
+To view the **Finance and Operations** page, select **Resources** > **Capacity** > **Finance and Operations** tab.
 
-To view this page, select **Resources** > **Capacity** > **Finance and Operations** tab.
+:::image type="content" source="media/finance-operations-storage-finops-tab.png" alt-text="Screenshot of the Finance and Operations page with capacity data by environment.":::
 
-:::image type="content" source="media/finance-operations-storage-finops-tab.png" alt-text="Finance and Operations page with capacity data.":::
-
-## Actions to take for a Finance and Operations capacity deficit 
-
-> [!NOTE]
-> This report is in preview and should be used by customers to strategize managing their storage efficiently. If the storage consumption goes over the entitled limit, customers are encouraged to manage the excess storage consumption by deleting unused data or purchasing additional storage capacity to meet the growing needs of their business. There is no functional or performance impact to your service based on the configuration presented in this report.
+## Actions to take for a finance and operations capacity deficit
 
 Use the **Summary** tab to determine if you have a capacity deficit.
 
-**New storage model**
+New storage model:
 
-:::image type="content" source="media/finance-operations-overage-new-model.png" alt-text="Determine if you are using more storage capacity than allocated - new storage model.":::
+:::image type="content" source="media/finance-operations-overage-new-model.png" alt-text="Screenshot of the Summary page in the new storage model, with a capacity deficit shown.":::
 
-**Legacy storage model**
+Legacy storage model:
 
-:::image type="content" source="media/finance-operations-overage-legacy-model.png" alt-text="Determine if you are using more storage capacity than allocated - legacy storage model.":::
+:::image type="content" source="media/finance-operations-overage-legacy-model.png" alt-text="Screenshot of the Summary page in the legacy storage model, with a capacity deficit shown.":::
 
-You can always free up storage, delete unwanted environments/data, or buy more capacity to be compliant with Finance and Operations storage usage. To learn more about Finance and Operations capacity add-ons, see the [Dynamics 365 Licensing Guide](https://www.microsoft.com/licensing/product-licensing/dynamics365). You can work through your organization’s standard procurement process to purchase Finance and Operations capacity add-ons. 
+If your organization has used more storage than you're entitled to, you can delete unneeded environments and data or buy more capacity. Learn more about finance and operations capacity add-ons in the [Dynamics 365 Licensing Guide](https://www.microsoft.com/licensing/product-licensing/dynamics365). Work through your organization’s standard procurement process to purchase finance and operations capacity add-ons.
 
-Review the following for information on how to clean up Finance and Operations data:
+Learn how to clean up your finance and operations data:
 
--	[Cleanup routines in Dynamics 365 Finance and Dynamics 365 Supply Chain Management](/dynamics365/fin-ops-core/dev-itpro/sysadmin/cleanuproutines)
--	[Archive inventory transactions - Supply Chain Management](/dynamics365/supply-chain/inventory/archive-inventory-transactions) 
--	[Archive credit card transaction data - Commerce](/dynamics365/commerce/dev-itpro/archive-cc-data) 
+- [Cleanup routines in Dynamics 365 Finance and Dynamics 365 Supply Chain Management](/dynamics365/fin-ops-core/dev-itpro/sysadmin/cleanuproutines)
+- [Archive inventory transactions - Supply Chain Management](/dynamics365/supply-chain/inventory/archive-inventory-transactions)
+- [Archive credit card transaction data - Commerce](/dynamics365/commerce/dev-itpro/archive-cc-data)
 
-## FAQ 
+## FAQ
 
-### Why is Finance and Operations storage reporting separate from Dataverse? 
+### Why is finance and operations storage reporting separate from Dataverse?
 
-Microsoft Business Application products work across multiple underlying platform technologies. Dataverse storage powers many experiences across Power Platform and Dynamics 365 apps.  Dataverse reporting is tracked across database, log, and file storage categories.  Finance and Operations products are currently managed on separate database and file platform layers. [Dual-write technologies](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-overview) allow certain Finance and Operations actions to be stored on the Dataverse platform. 
+Microsoft business applications work across multiple underlying technologies. Dataverse powers many experiences across Power Platform and Dynamics 365 apps. Dataverse reporting is tracked across database, log, and file storage categories. Finance and operations products are currently managed on separate database and file platform layers. [Dual-write technologies](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-overview) allow certain finance and operations actions to be stored in Dataverse.
+<!-- This paragraph isn't clear. Is it saying that finance and operations data is stored separately from Dataverse, and that's why the reporting is separate? -->
 
-### How is my usage and entitlement calculated? 
+### How are my usage and entitlement calculated?
 
-Reach out to your account team who will be able to help you understand how your entitlement is calculated. 
+Reach out to your account team for help with understanding how your entitlement is calculated.
 
 ### Why don’t I see which tables are causing the overage?  
 
-In the initial launch of reporting, details for specific usage at the table level won't be available.  It will be available in a future release.  
+Details at the table level aren't available in the initial launch of reporting. Table analytics will be available in a future release.
 
-### Is there any reporting for Finance and Operations File capacity? 
+### Is there any reporting for file capacity?
 
-In the initial launch of reporting, there won't be any file capacity reporting. It will be available in a future release. 
+File capacity reporting isn't available in the initial launch of reporting. File capacity analytics will be available in a future release.
 
-### What happens if my consumption is over the entitled limit? 
+### What happens if my consumption is over the entitled limit?
 
-Although there's no impact to runtime experience, we strongly recommend customers to review their data consumption and delete old data that isn't required to be maintained in the platform. Reach out to your account team to purchase additional capacity entitlement to match your needs. 
+The runtime experience isn't affected. However, we strongly recommend that you review your data consumption and delete old data that you don't need to maintain. Reach out to your account team to purchase more capacity if needed.
 
-### How is Microsoft helping customers to stay within their storage entitlement limits? 
+### How is Microsoft helping customers to stay within their storage entitlement limits?
 
 For now, your account team will work with you to stay within your entitlement limit.  
 
-### Our storage usage is over, do we owe a true-up for past months we've been over? 
+### Our storage usage is over, do we owe a true-up for past months we've been over?
 
-No, there won't be billing in arrears for past overage because usage versus entitlements reporting wasn't available in the past. 
-
-
+You won't be billed in arrears for past overage because usage versus entitlements reporting wasn't available in the past.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
