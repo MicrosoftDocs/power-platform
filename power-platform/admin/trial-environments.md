@@ -188,6 +188,15 @@ It might take several hours to convert to a production environment.
 
 ## Frequently asked questions
 
+### What type of account can create a free trial environment?
+
+For the best trial experience, it's recommended to use your work or school email address that's managed by .[Microsoft Azure Acitve Directory.](https://azure.microsoft.com/en-us/services/active-directory/#overview)
+If you carete a standard trial environment from .[https://trials.dynamics.com/](https://trials.dynamics.com/), some product may support consumer email account that's not managed by Microsoft Azure Active Directory. 
+> .[NOTE]
+> If you use a consumer email account to create a trial environmnet, there will be limitations in your trial experience - 
+> - Cannot access Power Platform admin center to manage the trial environment or user security roles. 
+> - Cannot add other users or manage users in the trial environment.    
+
 ### Who can convert a trial environment to a production environment?
 
 The organization (tenant) admin can determine who's allowed to create trial environments and convert them to production. If you're allowed to, and you have 1 GB of available production database capacity, you can convert a trial environment to production. You might need to free up or purchase additional capacity if the trial environment database exceeds available production capacity. To determine the size of the trial environment database, see [Dataverse storage capacity](capacity-storage.md).
