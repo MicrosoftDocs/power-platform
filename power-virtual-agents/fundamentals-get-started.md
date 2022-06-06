@@ -163,9 +163,9 @@ Once you're fine with the content authored in your bot, you can publish your bot
 
 1. Select the **Publish** tab on the side pane.
 
-    :::image type="content" source="media/fundamentals-get-started/channel-publish-latest-content.png" alt-text="Deploy bot to demo website." border="false":::
-
 1. Select **Publish** to activate your bot with a single click. If the publish is successful, you'll see a green banner on the top of the page.
+
+    :::image type="content" source="media/fundamentals-get-started/channel-publish-latest-content.png" alt-text="Deploy bot to demo website." border="false":::
 
 1. Select the demo website link under **Share your bot** to see it in action on a demo website.
 
