@@ -10,7 +10,7 @@ contributors:
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/27/2022
+ms.date: 06/16/2022
 search.audienceType: 
   - admin
 search.app:
@@ -19,7 +19,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-<!-- Don't publish TODO content, see 73-77 lines -->
+<!-- Don't publish TODO content, see 73-77 lines --> 
 # Configure user security to resources in an environment
 
 Microsoft Dataverse uses a role-based security model to help secure access to the database. This article explains how to create the security artifacts that you must have to help secure resources in an environment. Security roles can be used to configure environment-wide access to all resources in the environment, or to configure access to specific apps and data in the environment. Security roles control a user's access to an environment's resources through a set of access levels and permissions. The combination of access levels and permissions that are included in a specific security role governs the limitations on the user's view of apps and data, and on the user's interactions with that data. 
@@ -35,6 +35,14 @@ These security roles can be assigned to the user, [owner team](manage-teams.md#t
 There is another set of security roles that is assigned to [application users](system-application-users.md). Those security roles are installed by our services and cannot be updated.
 
 Which predefined security roles are available in your environment depends on the environment type.
+
+## Edit predefined security roles  
+You can [edit predefined security roles](create-edit-security-role.md#edit-a-security-role) and your updates will remain in the environment and will not be reverted to the default system settings during subsequent system updates. This provides you with the capability to use the system’s predefined security roles and customize them based on your business needs. 
+
+> [!NOTE]
+> When you add or remove privileges from the predefined security roles, it affects your application and user experience. Subsequent releases of the application might not work for your users whose predefined security role was modified. 
+
+You can [remove all your predefined security role updates](create-edit-security-role.md#remove-predefined-security-role-edits) and reset the security role back to the default system settings. This allows you to restore the security role’s privileges.  
 
 ### Environments without a Dataverse database
 
