@@ -39,7 +39,7 @@ When your bot hands off a conversation, it shares the full history of the conver
 
 1. Select **Enable**.
 
-    - If the [required extensions](#required-extensions) aren't installed, you'll see a message that your bot doesn't have access to the variables or actions it needs.
+    - If the [required extensions](#recommended-extensions) aren't installed, you'll see a message that your bot doesn't have access to the variables or actions it needs.
 
         :::image type="content" source="./media/configuration-hand-off-omnichannel/handoff-no-extension.png" alt-text="Message at the top of the Omnichannel configuration pane that says your bot doesn't have access.":::
 
@@ -221,13 +221,15 @@ If your topics include Markdown content, the voice bot will read the asterisk (*
 
 See [limitations when using Power Virtual Agents with the Chat Add-in for Dynamics 365 Customer Service](/dynamics365/omnichannel/administrator/configure-bot-virtual-agent#limitations).
 
-## Required extensions
+## Recommended extensions
 
-The extensions required for Customer Service omnichannel capabilities should automatically be installed in the same environment as your bot. However, if the extensions are missing, you'll need to manually install them.
+The following extensions are recommended for Customer Service omnichannel capabilities and are automatically installed in your omnichannel environment.
+
+However, if the environment that you connected omnichannel to is not the same environment your bot is in, you'll need to manually install the extensions.
 
 ### For both text and voice hand-off
 
-To use both text and voice hand-off, you must install the following extensions in this order:
+To use both text and voice hand-off, install the following extensions in this order:
 
   1. [Power Virtual Agents telephony extension](https://appsource.microsoft.com/product/dynamics-crm/mscrm.mspva_telephony_extension)
   1. [Omnichannel Power Virtual Agent extension](https://appsource.microsoft.com/product/dynamics-365/mscrm.omnichannelpvaextension)
@@ -235,6 +237,6 @@ To use both text and voice hand-off, you must install the following extensions i
 
 ### For only text (messaging) hand-off
 
-To use only text hand-off, you must install [Omnichannel Power Virtual Agent extension](https://appsource.microsoft.com/product/dynamics-365/mscrm.omnichannelpvaextension).
+To use only text hand-off, install [Omnichannel Power Virtual Agent extension](https://appsource.microsoft.com/product/dynamics-365/mscrm.omnichannelpvaextension).
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
