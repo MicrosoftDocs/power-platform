@@ -46,6 +46,17 @@ In addition to this guide, you can also [download and use templates to help you 
 
 1. On the website, select **Start free**, and then sign in with your work email address. Note that personal Microsoft accounts are currently not supported.
 
+1. Power Virtual Agents has an app-level home page that is not specific to any bot. On this page you can create a new bot and view a list of bots that you've previously created.
+
+    :::image type="content" source="media/fundamentals-get-started/new-bot1.png" alt-text="Screenshot of the app-level home page.":::
+
+    > [!TIP]
+    > To navigate back to the home page from a bot, select **Power Virtual Agents** in the top menu bar.
+    >
+    > :::image type="content" source="media/fundamentals-get-started/go-home.png" alt-text="Screenshot of Power Virtual Agents top menu bar.":::
+
+1. In the side navigation select **Create**, or select **Home** and select **Create a bot**.
+
 1. Choose a name for your bot. This can be something generic to your company or specific to the scenario you are tailoring your bot to.
 
     Your bot is created in the default Power Apps environment that was made for you on sign up. For most users, this is sufficient. However, if you want to specify a custom Power Apps environment for your Power Virtual Agents, expand the **More options** menu and select a different environment.
