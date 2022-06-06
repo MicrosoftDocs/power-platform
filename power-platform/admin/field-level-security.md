@@ -34,7 +34,7 @@ Record-level permissions are granted at the table level, but you may have certai
 > The use of entity-related terminology depends on the protocol or class library used. See [Terminology use depending on protocol or technology](/power-apps/developer/data-platform/understand-terminology).
 
 ## Overview of field-level security  
- Field-level security is available for the default columns on most out-of-box entities, custom columns, and custom columns on custom tables. Field-level security is managed by the security profiles. To implement field-level security, a system administrator performs the following tasks.  
+Field-level security is available for the default columns on most out-of-box entities, custom columns, and custom columns on custom tables. Field-level security is managed by the security profiles. To implement field-level security, a system administrator performs the following tasks.  
   
 1. Enable column security on one or more columns for a given table.  
   
@@ -43,7 +43,7 @@ Record-level permissions are granted at the table level, but you may have certai
 A security profile determines the following:  
   
 - Permissions to the secure columns  
-- Users and Teams  
+- Users and teams assigned access 
   
   A security profile can be configured to grant user or team members the following permissions at the column level:  
   
@@ -57,7 +57,7 @@ A combination of these three permissions can be configured to determine the user
 > Unless one or more security profiles are assigned to a security enabled column, only users with the system administrator security role will have access to the column.  
   
 ## Example for restricting the mobile phone field for the Contact entity  
- Imagine your company's policy is that sales members should have different levels of access to contact mobile phone numbers as described here.  
+Imagine your company's policy is that sales members should have different levels of access to contact mobile phone numbers as described here.  
   
 |User or Team|Access|  
 |------------------|------------|  
@@ -75,11 +75,19 @@ A combination of these three permissions can be configured to determine the user
 
 3. Select the **Contact** table.
 
+   :::image type="content" source="media/field-security-tables-contact.png" alt-text="Select the Contact table.":::
+
 4. Under **Schema**, select **Columns**.
+
+   :::image type="content" source="media/field-security-schema-columns.png" alt-text="Under Schema, select Columns.":::
 
 5. Scroll down in the Columns list and open **Mobile Phone**.
 
+   :::image type="content" source="media/field-security-mobile-phone.png" alt-text="Select the Mobile Phone column.":::
+
 6. Expand **Advanced options**, and then under **General**, enable **Enable column security**.
+
+   :::image type="content" source="media/field-security-advanced-options-enable.png" alt-text="Expand Advanced options and enable column security.":::
 
 7. Select **Save**.
 
@@ -91,24 +99,34 @@ A combination of these three permissions can be configured to determine the user
 
 3. Select **New Profile**, enter a name, such as *Sales Manager*, enter a description, and then select **Save**.  
 
-4. Select the **Users** tab, select **Add User**, select the users that you want to grant access to the mobile phone number on the contact form, and then select **Add**.   
+   :::image type="content" source="media/field-security-new-profile.png" alt-text="Create a new field security profile.":::
+
+4. Select **Sales Manager**, select the **Users** tab, select **+ Add Users**, select the users that you want to grant access to the mobile phone number on the contact form, and then select **Add**.   
+
+   :::image type="content" source="media/field-security-add-users.png" alt-text="Add users to the field security profile.":::
 
    > [!TIP]
    > Instead of adding each user, create one or more teams that include all users that you want to grant access.  
 
 5. Repeat the above steps and create a field security profile for *Vice President*.  
 
-6. With Vice President selected, select the **Field Permissions** tab, select **Mobile Phone**, and then select **Edit**. Set all three settings to **Allowed**, and then select **Save**.  
+**Configure field permissions**
 
-7. Select the **Field Security Profiles** tab, and then select **Sales Manager**. 
+1. Select the **Field Security Profiles** tab, and then select **Sales Manager**. 
 
-8. select the **Field Permissions** tab, select **Mobile Phone**, and then select **Edit**. Set the **Read** setting to **Allowed**, and then select **Save**.
+2. Select the **Field Permissions** tab, select **mobilephone**, and then select **Edit**. Set the **Read** setting to **Allowed**, leave the others as **Not Allowed**, and then select **Save**.
+
+   :::image type="content" source="media/field-security-edit-field-permission.png" alt-text="Edit field security permissions.":::
+
+3. Select the **Field Security Profiles** tab, and then select **Vice President**. 
+
+4. Select the **Field Permissions** tab, select **mobilephone**, and then select **Edit**. Set all three settings to **Allowed**, and then select **Save**.  
 
 Any users not defined in the previously created field security profiles won't have access to the mobile phone column on contact forms or views. The field value displays ![Lock icon.](../admin/media/admin-field-level-security-lock.png "Lock icon") ********, indicating that the field is secured.  
   
 
 ## Which columns can be secured?  
- Every column in the system contains a setting for whether column security is allowed. Use the following steps to view column security settings.
+Every column in the system contains a setting for whether column security is allowed. Use the following steps to view column security settings.
 
 1. Sign in to [Power Apps](https://make.powerapps.com/).
 
@@ -120,7 +138,7 @@ Any users not defined in the previously created field security profiles won't ha
 
 If **Enable column security** can be selected, the column can be enabled for column security. 
 
-image
+   :::image type="content" source="media/field-security-enable-column-security.png" alt-text="Enable column security is possible.":::
  
 Although most attributes can be secured, there are system attributes, such as IDs, timestamps, and record tracking attributes, that can't. Below are a few examples of attributes that can't be enabled for column security. 
 -    ownerid, processid, stageid, accountid, contactid, businessunitid, organizationid, solutionid, supportingsolutionid, transactioncurrencyid, goalownerid, subscriptionid, userpuid, yammeruserid

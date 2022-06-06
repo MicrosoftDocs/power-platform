@@ -57,18 +57,16 @@ After you create the profile, you assign users and or teams to that profile, and
 
 3. Select **Settings** > **Users + permissions** > **Field security profiles**. 
 
-4. Select **New Profile**, enter a name, enter a description, and then select **Save**.  
+4. Select an existing profile, or select **New Profile**, enter a name, enter a description, and then select **Save**.  
 
-5. Select the **Users** tab, select **Add User**, select the users that you want to control access, and then select **Add**. 
+5. Select the **Users** tab, select **+ Add Users**, select the users that you want to control access, and then select **Add**. 
 
   > [!TIP]
   > Instead of adding each user, create one or more teams that include all users that you want to control access. 
 
-6. Select the **Field Permissions** tab, in the Name column select a column, and then select **Edit**. Configure the three fields for the desired access.  
+6. Select the **Field Permissions** tab, in the Name column select one or more columns, and then select **Edit**. Configure the three fields for the desired access.  
 
-7. Select the **Field Security Profiles** tab, and then select **Sales Manager**. 
-
-8. select the **Field Permissions** tab, select **Mobile Phone**, and then select **Edit**. Set the **Read** setting to **Allowed**, and then select **Save**.
+7. Select **Save**.
 
 Any users not defined in the previously created field security profiles won't have access to the mobile phone column on contact forms or views. The column value displays ![Lock icon.](../admin/media/admin-field-level-security-lock.png "Lock icon") ********, indicating that the column is secured.  
   
