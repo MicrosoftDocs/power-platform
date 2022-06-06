@@ -41,11 +41,19 @@ After you create the profile, you assign users and or teams to that profile, and
 
 3. Select a table.
 
+   :::image type="content" source="media/field-security-tables-contact.png" alt-text="Select the Contact table.":::
+
 4. Under **Schema**, select **Columns**.
+
+   :::image type="content" source="media/field-security-schema-columns.png" alt-text="Under Schema, select Columns.":::
 
 5. In the Columns list, select a column.
 
+   :::image type="content" source="media/field-security-mobile-phone.png" alt-text="Select the Mobile Phone column.":::
+
 6. Expand **Advanced options**, and then under **General**, enable **Enable column security**.
+
+   :::image type="content" source="media/field-security-advanced-options-enable.png" alt-text="Expand Advanced options and enable column security.":::
 
 7. Select **Save**.
 
@@ -61,10 +69,14 @@ After you create the profile, you assign users and or teams to that profile, and
 
 5. Select the **Users** tab, select **+ Add Users**, select the users that you want to control access, and then select **Add**. 
 
+   :::image type="content" source="media/field-security-add-users.png" alt-text="Add users to the field security profile.":::
+
   > [!TIP]
   > Instead of adding each user, create one or more teams that include all users that you want to control access. 
 
 6. Select the **Field Permissions** tab, in the Name column select one or more columns, and then select **Edit**. Configure the three fields for the desired access.  
+
+   :::image type="content" source="media/field-security-edit-field-permission.png" alt-text="Edit field security permissions.":::
 
 7. Select **Save**.
 
