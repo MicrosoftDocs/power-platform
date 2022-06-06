@@ -23,13 +23,13 @@ Power Virtual Agents includes a set of three samples from which you can see exam
 
 When a bot is created, several samples are automatically created as topics.
 
-While the topics are functional, they are examples for the purposes of learning how to create content for your bots. The topics aren't designed for production use.
+While the topics are functional, they are examples to learn how to create content for your bots. The topics aren't designed for production use.
 
 **Use sample topics to understand how topics work:**
 
 1. Go to the **Topics** tab.
 
-1. Select **Sample 1** and work through to **Sample 3**. Review the title and description, and see which trigger phrases are being used.  
+1. Select **Sample 1** and work through to **Sample 3**. Review the title and description, and see which trigger phrases are used.  
 
 1. To see the bot's flow, select each topic. The flow includes the bot's comments, expected user responses, decision points, and entity references.
 
@@ -50,14 +50,14 @@ This sample shows you how to create a simple topic with multiple text variation 
 
 ### Sample 2 - Question with images, quick replies, and a condition
 
-This sample shows you how you to create a simple question with an image and quick reply that identifies an [entity](advanced-entities-slot-filling.md) and stores it as [a variable](authoring-variables.md), a condition, and a redirect to the [next sample topic](#sample-3---set-variable-with-function).
+This sample shows you how to create a simple question with an image and quick reply that identifies an [entity](advanced-entities-slot-filling.md) and stores it as [a variable](authoring-variables.md), a condition, and a redirect to the [next sample topic](#sample-3---set-variable-with-function).
 
-When you use entities in your topic, the bot can identify key information from user response and automatically fills in that information into your variables. A variable is a name for an item that will be used later in the topic flow.
+When you use entities in your topic, the bot identifies key information from user responses and automatically fills in that information into your variables. A variable is a name for an item used later in the topic flow.
 
-In this sample, the bot uses the State entity to recognize any US state the user enters and stores it as the `state` variable. This variable is used in the condition, which determines which shipping message to send the user. The topic ends by redirecting to the next sample topic.
+In this sample, the bot uses the State entity to recognize any US state the user enters and stores it as the `state` variable. This variable is used in the condition, to determine which shipping message to send the user. The topic ends by redirecting to the next sample topic.
 
 ### Sample 3 - Set variable with function
 
-This sample shows you how you to create a topic with [a variable](authoring-variables.md) and set it to the value of a function. This variable is used in the a message about shipping time, and finishes by redirecting to the End of Conversation topic.
+Sample 3 shows you how to create a topic with [a variable](authoring-variables.md) and set it to the value of a function. The shipping time message uses the variable and finishes by redirecting to the End of Conversation topic.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
