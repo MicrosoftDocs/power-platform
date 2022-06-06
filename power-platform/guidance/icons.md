@@ -1,6 +1,6 @@
 ---
 title: "Microsoft Power Platform icons | MicrosoftDocs"
-description: "Official icons for use in building architecture diagrams and illustrations for Microsoft Power Platform."
+description: "Official icons for use in building architecture diagrams and illustrations for Microsoft Power Platform (Power Platform, Power Apps, Power Automate, Power BI, Power Pages, Power Virtual Agents, Dataverse, AI Builder, and Power Fx)."
 author: KumarVivek
 ms.topic: conceptual
 ms.date: 06/06/2022
@@ -11,7 +11,7 @@ ms.reviewer: kvivek
 
 # Microsoft Power Platform icons
 
-This article provides information about the official collection of icons for Microsoft Power Platform (Power Platform, Power Apps, Power Automate, Power BI, Power Pages, Power Virtual Agents, Dataverse, and AI Builder) that you can use in architectural diagrams, training materials, or documentation.
+This article provides information about the official collection of icons for Microsoft Power Platform (Power Platform, Power Apps, Power Automate, Power BI, Power Pages, Power Virtual Agents, Dataverse, AI Builder, and Power Fx) that you can use in architectural diagrams, training materials, or documentation.
 
 ### Do’s
 
