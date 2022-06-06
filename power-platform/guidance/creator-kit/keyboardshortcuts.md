@@ -35,7 +35,7 @@ This code component registers keypress event handlers to allow keyboard shortcut
 
 ## Limitations
 
-Some keyboard shortcuts are used by Power Apps when using maker studio<!--note from editor: By "Power Apps," do you mean "apps created with Power Apps" here? Should it be "Power Apps Studio" (as described in the Cloud Style Guide? As often happens with gerunds, the agent of action is ambiguous here - should it be "Some keyboard shortcuts are used in Power Apps Studio and some are used in the browser"?-->, and some are used by the browser. For this reason, this component won't work for all keyboard shortcuts until the user places focus inside the app.
+Some keyboard shortcuts are used by Power Apps Studio while editing the app, and some are used by the browser. For this reason, this component won't work for all keyboard shortcuts until the user places focus inside the app.
 
 This code component can only be used in canvas apps and custom pages.
 

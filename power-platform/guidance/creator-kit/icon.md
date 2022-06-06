@@ -57,7 +57,7 @@ This code component can only be used in canvas apps and custom pages.
 | `Border radius` | The roundness of the corners |
 
 ## Additional properties
-<!--note from editor: The "on hover" wording is from the Writing Style Guide. "While hovering" was a bit ambiguous as to the agent of action.-->
+
 | Property | Description |
 | -------- | ----------- |
 | `Hover icon color` | The color of the icon that appears on hover |

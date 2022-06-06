@@ -46,7 +46,7 @@ This code component can only be used in canvas apps and custom pages.
 | Property | Description |
 | -------- | ----------- |
 | `Items` | Required. The data source items table to render. |
-| `Fields` | Required. The fields needed are indicated.<!--note from editor: Should this be "Lists the fields that are needed" or something similar? Not sure what "indicated" means here.--> |
+| `Fields` | Required. The fields that are needed. |
 | `Columns` | Required. Table mapping definition between the component column and the data source. Use this property to map field names and define specific column behavior. |
 
 ## Additional properties

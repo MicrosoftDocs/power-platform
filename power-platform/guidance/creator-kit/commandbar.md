@@ -46,7 +46,7 @@ This code component can only be used in canvas apps and custom pages.
 | Property | Description |
 | -------- | ----------- |
 | `Items` | Table with the component items. |
-| `Input event` | Action that is triggered upon a mouse-click.<!--note from editor: Would "selection" work here?--> |
+| `Input event` | Action that is triggered upon a selection. |
 
 ## Items structure
 

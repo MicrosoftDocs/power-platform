@@ -57,7 +57,7 @@ Each item uses the following schema to visualize data in the component.
 | ------ | ----------- |
 | `ItemKey` | Arbitrary unique string associated with the breadcrumb item. |
 | `ItemDisplayName` | Text to display in the breadcrumb item. |
-| `ItemClickable` | If set to true, enables the item to be selectable<!--note from editor: Edit okay?-->. |
+| `ItemClickable` | If set to true, enables the item to be selectable. |
 
 Example:
 

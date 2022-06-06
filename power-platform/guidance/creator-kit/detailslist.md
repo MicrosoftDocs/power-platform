@@ -46,7 +46,7 @@ This code component can only be used in canvas apps and custom pages.
 | Property | Description |
 | -------- | ----------- |
 | `Items` | Required. The data source items table to render. Items can be from any data source because values are mapped in the Columns property (which acts as a schema definition). |
-| `Fields` | Required. The fields needed are indicated.<!--note from editor: Should this be "Lists the fields that are needed" or something similar? Not sure what "indicated" means here.--> |
+| `Fields` | Required. The fields that are needed. |
 | `Columns` | Required. Table mapping definition between the component column and the data source. Use this property to map field names and define specific column behavior. |
 
 ## Additional properties
@@ -86,7 +86,7 @@ The following table schema must be used in the `Columns` (`column_Items`) proper
 | `ColIsBold` | Determines whether the text is bold or not. |
 | `ColResizable` | Determines whether the column can be resized. |
 | `ColShowAsSubTextOf` | The ColName value of the parent column this text. Leave blank to display in a separate column. |
-| `ColCellType` | Provide **link**<!--note from editor: If the quotation marks are necessary, they should be bold too.--> as the value to make the column selectable. Leave blank for regular text without style. |
+| `ColCellType` | Provide **link** as the value to make the column selectable. Leave blank for regular text without style. |
 
 Example:
 

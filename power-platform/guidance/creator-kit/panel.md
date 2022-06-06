@@ -33,7 +33,6 @@ Panels are overlays that contain supplementary content and are used for complex 
 
 This canvas component mimics the style and behavior of the [Fluent UI Panel control](https://developer.microsoft.com/fluentui#/controls/web/Panel).
 
-<!--note from editor: Is there a reason that this reference is different from the majority of similar links that go to the main GitHub repo, https://github.com/microsoft/powercat-creator-kit?-->
 [View the component in the Creator Kit GitHub repository](https://github.com/microsoft/powercat-creator-kit/tree/main/CreatorKitCore/SolutionPackage/CanvasApps/cat_powercatcomponentlibrary_0be3a_DocumentUri_msapp_src).
 
 ## Limitations
@@ -56,7 +55,7 @@ This canvas component can only be used in canvas apps and custom pages.
 ## Configure panel visibility
 
 Make the `Panel` control itself (or the surface it's located within) visible when a Boolean (true/false) type variable changes to true, and assign that variable to the panel's visibility property. After the panel is displayed, you can hide the panel by updating the variable on the reset property, which is triggered when the close icon is selected.
-<!--note from editor: In the following lines and examples, should "dialog" be "panel"?-->
+
 The following is the Power Fx formula to open the dialog in an action formula on another component somewhere in the app (for example, the `OnSelect` property of a button):
 
 ```powerapps-dot

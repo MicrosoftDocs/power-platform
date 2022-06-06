@@ -30,7 +30,7 @@ A control used to create a navigation experience.
 
 ## Description
 
-Expand menus are like `Nav` components used to provide navigation, which consists of links to the main areas of an app or site. You can also expand and collapse the menu, which gives the user an option for more space if they want it. The ExpandMenu control should be used with layout containers to make sure the experience is responsive due to its nature of varying width during runtime.<!--note from editor: What does "during runtime" refer to - the responsive experience or the varying width? I can't picture what this is saying.-->
+Expand menus are like `Nav` components used to provide navigation, which consists of links to the main areas of an app or site. You can also expand and collapse the menu, which gives the user an option for more space if they want it. The ExpandMenu control should be used with layout containers to make sure the experience is responsive due to its nature of varying width when the app is played.
 
 This canvas component mimics the style and *limited* behavior of the [Fluent UI Nav control](https://developer.microsoft.com/fluentui#/controls/web/Nav).
 

@@ -60,7 +60,7 @@ This code component can only be used in canvas apps, custom pages, and model-dri
 | `Max height` | The maximum height the user is allowed to resize to |
 | `Min width` | The minimum width the user is allowed to resize to |
 | `Max width` | The maximum width the user is allowed to resize to |
-| `Left padding adjustment` | Compensation for padding on the right<!--note from editor: Not sure what this means.--> |
+| `Left padding adjustment` | Compensate for padding on the right |
 
 Other properties are the same as the standard [text input control](/power-apps/maker/canvas-apps/controls/control-text-input).
 

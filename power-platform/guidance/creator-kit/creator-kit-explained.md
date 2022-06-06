@@ -42,7 +42,7 @@ After the kit has been [installed](setup.md), learn how to add the components to
 
 ## Create the building blocks
 
-In this section, you'll learn details about the different apps, templates, and components included with the Creator Kit.<!--note from editor: I deleted the descriptive text from the list below because you already have a descriptive list in lines 31 - 34 and descriptions in the sections that follow. So much description was a bit numbing.-->
+In this section, you'll learn details about the different apps, templates, and components included with the Creator Kit.
 
 - [Reference app](#reference-app) 
 - [Templates](#templates) 
@@ -57,7 +57,7 @@ In this section, you'll learn details about the different apps, templates, and c
 Use this app to learn about each component, get recommended best practices for the optimal user experience, interact with each component, and see behind the properties to the implementation code that enables their behavior. We recommend exploring the components of interest in the reference app before you use them in an actual app.
 
 - Observe how the component behaves and renders data.
-- Select the **Code** tab to see the underlying Power Fx formulas.<!--note from editor: Suggested.-->
+- Select the **Code** tab to see the underlying Power Fx formulas.
 - Learn best practices from the inline guidance related to the control.
 
 :::image type="content" source="media/ReferenceApp.png" alt-text="Screenshot of a page in the reference app that describes a control." border="false":::
@@ -89,7 +89,7 @@ Make a copy of this page to create a new custom page for a [converged app](/powe
 
 :::image type="content" source="media/custom-page-studio.png" alt-text="Custom page template.":::
 
-Follow the preceding steps to [make a copy of the canvas template app](#canvas-app-template), except this time you'll select the **Save As** option in the upper-right corner:<!--note from editor: Edit okay?-->
+Follow the preceding steps to [make a copy of the canvas template app](#canvas-app-template), except this time you'll select the **Save As** option in the upper-right corner:
 
 1. In the upper-right corner, expand the menu next to the **Save** icon, and then select **Save as**.
 
@@ -112,7 +112,7 @@ Use this app to generate a **Theme JSON** object for styling components consiste
 > [!IMPORTANT]
 > A *Theme JSON* object is a code block containing a set of colors. Creator Kit components are designed to accept the code block and map the color values to component properties. Save the object as a variable in your app (as described in the following instructions). Although a Theme JSON object is designed to be easily referenced by kit components, any component outside of the kit can also reference these values, which helps easily maintain consistency across all app components.
 
-1. Play<!--note from editor: Why is this "Play" rather than "Open"? Is this truly the name of an app?--> the Theme Editor App.
+1. Play the Theme Editor App.
 
 1. Modify the **Primary color**, **Text color**, and **Background color** values.
 
@@ -166,7 +166,7 @@ ColorValue( AppTheme.palette.themePrimary )
 
 ### Canvas components
 
-Canvas components are defined in the **Power CAT Component Library**<!--note from editor: Is this really the name? It doesn't appear in the screenshot.-->, and are implemented by using [canvas components](/power-apps/maker/canvas-apps/create-component).<!--note from editor: Is this the latest screenshot? "CustomIcon" and "Header" are listed, but they aren't described in the docset.-->
+Canvas components are defined in the **Power CAT Component Library**, and are implemented by using [canvas components](/power-apps/maker/canvas-apps/create-component).
 
 :::image type="content" source="media/canvascomponents.png" alt-text="Canvas components." border="false":::
 
@@ -174,13 +174,13 @@ Canvas components are defined in the **Power CAT Component Library**<!--note fro
 
 Code components, implemented with the [Power Apps component framework](/power-apps/developer/component-framework/custom-controls-overview), are defined as individual custom controls in the solution.
 
-You can view the code components on the [components reference page](components.md).<!--note from editor: Is it okay that the name is "FluentDetailsList" in the screenshot? And that "ThemeDesigner" isn't described in the docset?-->
+You can view the code components on the [components reference page](components.md).
 
 :::image type="content" source="media/pcfcomponents.png" alt-text="Screenshot of the Custom controls menu." border="false":::
 
 ## Deploying apps that use Creator Kit components
 
-If you configure solutions properly, you can avoid solution dependency issues when you deploy an app. Apps that use kit components can't be built outside of a solution, and they must be imported and exported as part of solutions.<!--note from editor: Is this what "require solutions" means?-->
+If you configure solutions properly, you can avoid solution dependency issues when you deploy an app. Apps that use kit components can't be built outside of a solution, and they must be imported and exported as part of solutions.
 
 - During development, build apps that use Creator Kit components in their own separate and unmanaged solution.
 - When deploying an app that includes the components, make sure the Creator Kit (managed solution) is already installed in the target environment, or explicitly include the components used in the app in the solution.

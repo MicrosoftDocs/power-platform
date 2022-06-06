@@ -34,7 +34,6 @@ A search box (`SearchBox`) provides an input field for searching within a site o
 
 This canvas component mimics the style and behavior of the [Fluent UI SearchBox control](https://developer.microsoft.com/fluentui#/controls/web/searchbox).
 
-<!--note from editor: Is there a reason that this reference is different from the majority of similar links that go to the main GitHub repo, https://github.com/microsoft/powercat-creator-kit?-->
 [View the component in the Creator Kit GitHub repository](https://github.com/microsoft/powercat-creator-kit/tree/main/CreatorKitCore/SolutionPackage/CanvasApps/cat_powercatcomponentlibrary_0be3a_DocumentUri_msapp_src).
 
 ## Limitations

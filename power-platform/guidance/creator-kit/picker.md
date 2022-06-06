@@ -32,7 +32,7 @@ A control used to provide a search experience.
 
 Pickers are used to select one or more items, such as tags or files, from a large list.
 
-Picker code components allow the [Fluent UI picker menu components](https://developer.microsoft.com/fluentui#/controls/web/Pickers) to be used from inside canvas apps and custom pages.<!--note from editor: The article you cite implies that "Pickers" refers to a group of components, not one individual component named "Picker." If my edit is wrong, would it be helpful to discuss the difference between the "Picker" and the "Tag Picker" components referenced here? Also - note that the TOC has this as "TagsPicker."-->
+Picker code components allow the [Fluent UI picker menu components](https://developer.microsoft.com/fluentui#/controls/web/Pickers) to be used from inside canvas apps and custom pages.
 
 The Tag Picker code component provides the following features:
 
@@ -47,7 +47,7 @@ The Tag Picker code component provides the following features:
 > Component source code and more information in the [GitHub code components repository](https://github.com/microsoft/powercat-code-components/tree/main/Picker).
 
 ## Datasets
-<!--note from editor: Edits suggested to avoid duplicating descriptions. It's confusing to have the exact same text occur twice.-->
+
 The Tag Picker has the following input datasets, which are described in detail in [Key properties](#key-properties) later in this article.
 
 - `Tags` 
@@ -70,7 +70,7 @@ This code component can only be used in canvas apps and custom pages.
 
 | Property | Description |
 | -------- | ----------- |
-| `Tags` | A collection (table) of tags. The app is responsible for adding or removing tags in response to the component's<!--note from editor: The possessive is necessary.--> raising Add or Remove events (described in the following [OnChange event section](#onchange-event)). |
+| `Tags` | A collection (table) of tags. The app is responsible for adding or removing tags in response to the component's raising Add or Remove events (described in the following [OnChange event section](#onchange-event)). |
 | `TagDisplayName` | Set to the name of the column that holds the tag display name. |
 | `Suggestions` | A collection (table) of suggestions. |
 | `SuggestionDisplayName` | Set to the name of the column that holds the suggestion display name. |

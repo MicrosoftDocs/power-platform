@@ -32,7 +32,7 @@ contributors:
 ## Install the solution
 
 1. [Download](https://aka.ms/creatorkitdownload) the solution.
-1. In [Power Apps](https://make.powerapps.com), go to the Microsoft Power Platform environment.<!--note from editor: Edit okay? You usually want to say where the user needs to go, then give them the step to take.-->
+1. In [Power Apps](https://make.powerapps.com), select your Microsoft Power Platform environment.
 1. Import the solution.
 
 > [!div class="nextstepaction"]
