@@ -1,6 +1,6 @@
 ---
 title: ResizableTextArea control reference | Creator Kit
-description: Learn about the details and properties of ResizableTextArea control in the Creator Kit.
+description: Learn about the details and properties of the ResizableTextArea control in the Creator Kit.
 author: denisem-msft
 manager: devkeydet
 ms.component: pa-maker
@@ -38,7 +38,7 @@ This component allows the user to resize the text area for convenience.
 
 ## Limitations
 
-This code component can only be used in canvas apps, custom pages and model-driven apps.
+This code component can only be used in canvas apps, custom pages, and model-driven apps.
 
 ## Key properties
 
@@ -48,7 +48,7 @@ This code component can only be used in canvas apps, custom pages and model-driv
 | `Default` | Initial text value of the control |
 | `Default height` | Initial height of the control |
 | `Default width` | Initial width of the control |
-| `Allow resize` | Determines if resize is available and has options for direction (horizontal, vertical) |
+| `Allow resize` | Determines whether resize is available and has options for direction (horizontal, vertical) |
 
 ## Additional properties
 
@@ -56,16 +56,16 @@ This code component can only be used in canvas apps, custom pages and model-driv
 | -------- | ----------- |
 | `Resized height` | The current value of the control |
 | `Resized width` | The current width of the control |
-| `Min height` | Min height the user is allowed to resize |
-| `Max height` | Max height the user is allowed to resize |
-| `Min width` | Min width the user is allowed to resize |
-| `Max width` | Max width the user is allowed to resize |
-| `Left padding adjustment` | Compensates for padding on the right |
+| `Min height` | The minimum height the user is allowed to resize to |
+| `Max height` | The maximum height the user is allowed to resize to |
+| `Min width` | The minimum width the user is allowed to resize to |
+| `Max width` | The maximum width the user is allowed to resize to |
+| `Left padding adjustment` | Compensate for padding on the right |
 
 Other properties are the same as the standard [text input control](/power-apps/maker/canvas-apps/controls/control-text-input).
 
 ## Best practices
 
-See [Fluent UI text field control best practices](https://developer.microsoft.com/fluentui#/controls/web/textfield).
+Go to [Fluent UI TextField control best practices](https://developer.microsoft.com/fluentui#/controls/web/textfield).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
