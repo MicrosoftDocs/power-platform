@@ -20,11 +20,11 @@ searchScope:
 
 [!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
 
-In Power Virtual Agents, a topic defines a how a bot conversation plays out.
+In Power Virtual Agents, a topic defines how a bot conversation plays out.
 
-To author topics, you can [customize provided templates](authoring-template-topics.md), create topics from scratch, or get suggestions from existing help sites.
+You can [customize provided templates](authoring-template-topics.md), create topics from scratch, or get suggestions from existing help sites to author topics.
 
-A topic has _trigger phrases_ and _conversation nodes_. Trigger phrases are phrases, keywords, and questions that a user is likely to type that are related to a specific issue. Conversation nodes define how a bot should respond to a trigger phrase and what it should do.
+A topic has _trigger phrases_ and _conversation nodes_. Trigger phrases are phrases, keywords, and questions that a user is likely to type related to a specific issue. Conversation nodes define how a bot should respond to a trigger phrase and what it should do.
 
 The AI uses natural language understanding (NLU) to parse what a customer types and find the most appropriate trigger phrase or node.
 
@@ -34,7 +34,7 @@ The **Test bot** pane shows how the bot conversation plays out at every step. Yo
 
 ## Use system and sample topics
 
-When you create a bot, several topics are created for you.
+When you create a bot, it creates several topics for you.
 
 :::image type="content" source="media/authoring-template-topics/template-list.png" alt-text="Screenshot of the Topics list showing sample topics and system topics.":::
 
@@ -76,7 +76,7 @@ These automatically created topics fall into two categories:
 
     The bot uses the **Display name** when it needs to know which topic the person is asking about.
 
-    The **Description** is never shown to users. Use it to describe the purpose of the topic to yourself and other bot makers.
+    The **Description** is not visible to users. It is use to describe the purpose of the topic to yourself and other bot makers.
 
     :::image type="content" source="media/authoring-create-edit-topics/details-pane.png" alt-text="Screenshot of the topic details pane showing Name, Display name, and Description.":::
 
@@ -94,7 +94,7 @@ These automatically created topics fall into two categories:
 
     For existing or system topics, several nodes are created automatically. You can edit these nodes just as you would edit other nodes.
 
-    When you create a new topic, a **Trigger phrases** node and a blank **Message** node are inserted for you.
+    When you create a new topic, it inserts a **Trigger phrases** node and a blank **Message** node for you.
 
 1. To add a node, select the plus (**+**) icon on the line or branch between or after nodes.
 
@@ -131,9 +131,9 @@ When you add a node after the **Trigger Phrases** node or between **Message node
 
 1. Depending on what you selected in **Identify**, enter the options the user should have.
 
-   For example, if you selected **Multiple choice options**, enter the choices the user can specify in **Options for user**. Each choice is presented to the user as a multiple choice button, but users can also type their answer.
+   For example, if you selected **Multiple choice options**, enter the choices the user can specify in **Options for user**. Each choice is presented as a multiple-choice button, but users can also type their answers.
 
-1. In **Save response as**, select an existing variable or create a new one in which to save the user response.
+1. In **Save response as**, select an existing variable or create a new one to save the user response.
 
    - For **Save response as**, you can use an existing variable or create a new one.
    - If you create a new variable, select the variable name to display the variable properties, where you can modify the variable's settings, including its name.
@@ -216,8 +216,8 @@ Use the following nodes to design conversation flow in your bots.
 
    - Select **End conversation** to notify the user's client that the session is over. The behavior varies based on the client. On the telephony channel, for example, the client ends the call.
    - Select **End all topics** to clear all active topics and start the conversation from the beginning. However, this does not clear or reset any global variables. To clear global variables, redirect to the Start over system topic.
-   - Select **End current topic** to end the current topic and return to the calling topic, if any. You can use this node to create a one conversation branch that exits the topic while another branch continues.
-   - Select **Go to another topic** to _call_ or redirect to another topic. When that topic ends, control returns to calling topic.
+   - Select **End current topic** to end the current topic and return to the calling topic, if any. You can use this node to create a conversation branch that exits the topic while another branch continues.
+   - Select **Go to another topic** to _call_ or redirect to another topic. When that topic ends, control returns to the calling topic.
 
 #### Add a condition
 
@@ -226,7 +226,7 @@ Use the following nodes to design conversation flow in your bots.
 1. In the first condition node, select the variable and condition that will determine how the bot conversation should branch at this point.
 
     - For example, if you've set up user authentication, you might specify a different message if the user is signed in (which may have happened earlier in the conversation).
-    - You can create a condition using the basic editor or you can switch to a the Power Fx formula editor and manually enter an expression.
+    - You can create a condition using the basic editor or switch to the Power Fx formula editor and manually enter an expression.
     - To switch from the formula editor back to the basic editor, reset the node; however, you will need to enter your condition again.
     - Use the _node menu_ (&vellip;) to switch editing modes or reset the node.
 
@@ -239,7 +239,7 @@ Use the following nodes to design conversation flow in your bots.
 ### Quick replies
 
 The **Message** and **Question** nodes allow you to add _quick replies_.
-To add a quick replies select **Add**, then **Quick reply**, and then provide information for each _quick reply_.
+To add a quick reply, select **Add**, then **Quick reply**, and provide information for each _quick reply_.
 
 - A quick reply generates a button the user can select.
 - You can select what type of action the button initiates, such as sending a message from the user's client, opening a URL, or calling a phone number.
@@ -260,28 +260,28 @@ See [Set variable value](authoring-variables.md#set-a-variable).
 
 The **Message** and **Question** nodes allow you to add message variations. When you do this, the bot will respond randomly with one of the variations.
 
-1. Select **Add** and then **Message variation**. This will add an additional text box for a message variation.
+1. Select **Add** and then select **Message variation** to add a text box for a message variation.
 
     :::image type="content" source="media/authoring-create-edit-topics/message-node-variation.png" alt-text="Select the synonyms icon." border="false":::
 
-1. Enter what you want the bot to say. You can apply some basic formatting, such as bold, italics, and numbering.
+1. Enter what you want the bot to say. You can apply basic formattings, such as bold, italics, and numbering.
 
 1. Repeat to add as many variations as you like.
 
 ### Delete nodes
 
-Select the menu icon at the top of the node's title, and then select **Delete**.
+Select the menu icon at the top of the node's title and select **Delete**.
 
 :::image type="content" source="media/authoring-create-edit-topics/topics-delete.png" alt-text="Screenshot highlighting the node menu button and the Delete button.":::
 
 ## Edit topics with the code editor
 
-The code editor shows the topic in [YAML](https://yaml.org/), a markup language which is easy to read and understand. Use the code editor to copy and paste topics from other bots, even ones created by other authors.
+The code editor shows the topic in [YAML](https://yaml.org/), a markup language that is easy to read and understand. Use the code editor to copy and paste topics from other bots, even ones created by other authors.
 
 > [!IMPORTANT]
 > Designing a topic entirely in the code editor is currently not fully supported.
 
-In this example you'll copy and paste YAML into the code editor to quickly add a topic that asks the user if they prefer cats or dogs.
+In this example, you'll copy and paste YAML into the code editor to quickly add a topic that asks the user if they prefer cats or dogs.
 
 1. On the topic list, create a **New topic**.
 
@@ -362,13 +362,13 @@ In this example you'll copy and paste YAML into the code editor to quickly add a
     disabled: false
     ```
 
-1. Select the three dots icon then select **Close code editor**. On the authoring canvas you'll see the new conversation path generated from the YAML.
+1. Click on the three dots icon, then select **Close code editor**. You'll see the new conversation path generated from the YAML on the authoring canvas.
 
     :::image type="content" source="media/authoring-create-edit-topics/code-editor-conversation.png" alt-text="Screenshot conversation created from YAML.":::
 
 ## Test and publish your bot
 
-[Test your bot](authoring-test-bot.md) when you make changes to your topics, to make sure that everything is working as expected.
+[Test your bot](authoring-test-bot.md) when you make changes to your topics, to ensure that everything is working as expected.
 
 After you've designed and tested your bot, [publish it to the web, mobile or native apps, or Microsoft Bot Framework channels](publication-fundamentals-publish-channels.md).
 
