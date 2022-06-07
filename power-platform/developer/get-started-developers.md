@@ -74,7 +74,7 @@ Power Virtual Agents lets you create powerful chatbots that can answer questions
 
 ## Power Pages
 
-Power Pages is a secure, enterprise-grade, low-code software as a service (SaaS) platform for creating, hosting, and administering modern external-facing business websites. Low-code maker can rapidly design, configure, and publish websites that seamlessly work across web browsers and devices. Professional developers can extend these capabilities to address advanced business requirements.
+Power Pages is a secure, enterprise-grade, low-code software as a service (SaaS) platform for creating, hosting, and administering modern external-facing business websites. Power Pages is built on the foundation of Power Apps portals. Low-code makers can rapidly design, configure, and publish websites that seamlessly work across web browsers and devices. Professional developers can extend these capabilities to address advanced business requirements.
 
 > #### Key developer extensibility points
 > - Custom web page templates built with HTML, CSS, and [Liquid](/power-pages/configure/liquid-overview)
