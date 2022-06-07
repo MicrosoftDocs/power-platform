@@ -1,6 +1,6 @@
 ---
 title: ContextMenu control reference | Creator Kit
-description: Learn about the details and properties of ContextMenu control in the Creator Kit.
+description: Learn about the details and properties of the ContextMenu control in the Creator Kit.
 author: denisem-msft
 manager: devkeydet
 ms.component: pa-maker
@@ -30,12 +30,12 @@ A control used to input commands.
 
 ## Description
 
-A contextual menu (`ContextMenu`) is a list of commands that are based on the context of selection, mouse hover or keyboard focus. They're one of the most effective and highly used command surfaces, and can be used in various places.
+A contextual menu (`ContextMenu`) is a list of commands that are based on the context of selection, mouse hover, or keyboard focus. They're one of the most effective and highly used command surfaces, and can be used in various places.
 
-This code component provides a wrapper around the [Fluent UI `ContextMenu`](https://developer.microsoft.com/fluentui#/controls/web/contextualmenu) control bound to a button for use in canvas apps and custom pages.
+This code component provides a wrapper around the [Fluent UI ContextualMenu](https://developer.microsoft.com/fluentui#/controls/web/contextualmenu) control bound to a button for use in canvas apps and custom pages.
 
 > [!NOTE]
-> Component source code and more information available at the [Creator kit GitHub repository](https://github.com/microsoft/powercat-creator-kit).
+> Component source code and more information in the [GitHub code components repository](https://github.com/microsoft/powercat-code-components/tree/main/ContextMenu).
 
 ## Limitations
 
@@ -47,11 +47,11 @@ This code component can only be used in canvas apps and custom pages.
 | -------- | ----------- |
 | `Items` | Table with the component items. |
 | `Chevron` | Set to true to display the chevron icon, indicating more options. |
-| `Input event` | Action that is triggered upon button-click. |
+| `Input event` | Action that's triggered upon button selection<!--note from editor: Edit okay?-->. |
 
 ## Items structure
 
-Each item uses the below schema to visualize data in the component.
+Each item uses the following schema to visualize data in the component.
 
 | Name | Description |
 | ------ | ----------- |
@@ -101,6 +101,6 @@ Replace the `false` values with appropriate expressions in the Power Fx language
 
 ## Best practices
 
-See [Fluent UI `ContextMenu` control best practices](https://developer.microsoft.com/fluentui#/controls/web/contextmenu).
+Go to [Fluent UI ContextualMenu control best practices](https://developer.microsoft.com/fluentui#/controls/web/contextmenu).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

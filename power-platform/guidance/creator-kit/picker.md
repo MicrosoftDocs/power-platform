@@ -1,6 +1,6 @@
 ---
 title: Picker control reference | Creator Kit
-description: Learn about the details and properties of Picker control in the Creator Kit.
+description: Learn about the details and properties of the Picker control in the Creator Kit.
 author: denisem-msft
 manager: devkeydet
 ms.component: pa-maker
@@ -32,31 +32,31 @@ A control used to provide a search experience.
 
 Pickers are used to select one or more items, such as tags or files, from a large list.
 
-The `Picker` code component allows using of the [Fluent UI `Picker` menu component](https://developer.microsoft.com/fluentui#/controls/web/Pickers) from inside canvas apps and custom pages.
+Picker code components allow the [Fluent UI picker menu components](https://developer.microsoft.com/fluentui#/controls/web/Pickers) to be used from inside canvas apps and custom pages.
 
-The `Picker` code component provides the following features:
+The Tag Picker code component provides the following features:
 
 1. Binds to an input collection for the chosen tags.
 1. Binds to an input collection for suggested tags.
-1. Allows users to select from suggestions or enter a free text tag.
-1. Raises **On Change** event when a user adds or removes a tag.
+1. Allows users to select from suggestions or enter a free-text tag.
+1. Raises an **On Change** event when a user adds or removes a tag.
 1. Allows programmatic **Set Focus**.
-1. Styled to closely match the PILL Spec.
+1. Is styled to closely match the Pills spec.
 
 > [!NOTE]
-> Component source code and more information available at the [Creator kit GitHub repository](https://github.com/microsoft/powercat-creator-kit).
+> Component source code and more information in the [GitHub code components repository](https://github.com/microsoft/powercat-code-components/tree/main/Picker).
 
 ## Datasets
 
-The Tag Picker has the following input datasets:
+The Tag Picker has the following input datasets, which are described in detail in [Key properties](#key-properties) later in this article.
 
-- `Tags` - A collection/table of tags. The app is responsible for adding/removing tags in responsive to the component raising Add/Remove events (see below).
-  - `TagDisplayName` - set to the name of the column that holds the tag display name.
-- `Suggestions` - A collection/table of suggestions.
-  - `SuggestionDisplayName` - set to the name of the column that holds the suggestion display name.
-  - `SuggestionSubDisplayName` (Optional) - set to the name of the column that holds the secondary line of text.
+- `Tags` 
+  - `TagDisplayName` 
+- `Suggestions` 
+  - `SuggestionDisplayName` 
+  - `SuggestionSubDisplayName`
 
-The suggestions dataset should be filtered using the `SearchTerm` output property. For example:
+The `Suggestions` dataset should be filtered by using the `SearchTerm` output property, for example:
 
 ```powerapps-dot
 Search(colSuggestions,TagPicker.SearchTerm,"name")
@@ -70,18 +70,18 @@ This code component can only be used in canvas apps and custom pages.
 
 | Property | Description |
 | -------- | ----------- |
-| `Tags` | A collection/table of tags. The app is responsible for adding/removing tags in responsive to the component raising Add/Remove events (see below). |
+| `Tags` | A collection (table) of tags. The app is responsible for adding or removing tags in response to the component's raising Add or Remove events (described in the following [OnChange event section](#onchange-event)). |
 | `TagDisplayName` | Set to the name of the column that holds the tag display name. |
-| `Suggestions` | A collection/table of suggestions. |
-| `SuggestionDisplayName` | set to the name of the column that holds the suggestion display name. |
-| `SuggestionSubDisplayName`| Optional. Set to the name of the column that holds the secondary line of text.
+| `Suggestions` | A collection (table) of suggestions. |
+| `SuggestionDisplayName` | Set to the name of the column that holds the suggestion display name. |
+| `SuggestionSubDisplayName`| Optional. Set to the name of the column that holds the secondary line of text. |
 
 ## OnChange event
 
-The `TagPicker` component raises an `OnChange` event when tags are added or removed. The properties used are:
+The `TagPicker`component raises an `OnChange` event when tags are added or removed. The properties used are:
 
-- **TagEvent** - the name of the event raised
-- **TagKey** - the key of the item that has raised the event (if the event is related to a tag)
+- **TagEvent**: The name of the event raised
+- **TagKey**: The key of the item that has raised the event (if the event is related to a tag)
 
 The event should contain an expression similar to:
 
@@ -97,6 +97,6 @@ If(TagPicker.TagEvent="Remove",
 
 ## Best practices
 
-See [Fluent UI Picker control best practices](https://developer.microsoft.com/fluentui#/controls/web/Picker)
+Go to [Fluent UI pickers best practices](https://developer.microsoft.com/fluentui#/controls/web/pickers).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
