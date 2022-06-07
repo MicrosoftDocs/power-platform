@@ -2,11 +2,11 @@
 title: Microsoft Power Platform CLI Application command | Microsoft Docs
 description: "Descriptions and supported parameters for the auth command."
 keywords: Microsoft Power Platform CLI, code components, component framework, CLI
-ms.subservice: dataverse-developer
+ms.subservice: 
 ms.author: jdaly
 author: kkanakas
 manager: kvivek
-ms.date: 03/22/2022
+ms.date: 06/07/2022
 ms.topic: "article"
 ---
 
