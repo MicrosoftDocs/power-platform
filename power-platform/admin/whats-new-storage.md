@@ -1,12 +1,12 @@
 ---
 title: "What's new for storage administration in Microsoft Power Platform"
 description: "Learn about enhancements for storage that affect administrators, including reporting and reaching Dataverse database capacity limits."
-author: cpdSeattle
+author: mayadumesh
 ms.component: pa-admin
 ms.topic: overview
 ms.date: 05/25/2022
 ms.subservice: admin
-ms.author: camdebay
+ms.author: mayadu
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
