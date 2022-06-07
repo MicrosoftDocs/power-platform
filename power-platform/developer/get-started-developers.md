@@ -36,7 +36,7 @@ Apps created with Power Apps are consumed by users using their desktop or mobile
 | ---- | ---- |
 | **Canvas** | Provide the maker with complete control over the pixel-perfect screen contents and navigation between multiple screens. Canvas applications use connectors to work with data and services. Canvas applications can be embedded into SharePoint, Teams, Power BI, and Dynamics 365 applications. |
 | **Model-driven** | Data-driven applications that are built on top of Microsoft Dataverse. Other data sources and services can be used by model-driven applications by embedding a canvas application. |
-|**Portals** | Used to create external-facing websites that allow users outside an organization to sign in with a wide variety of identities, create and view data from Dataverse, or even browse content anonymously. We recently launched **Power Pages**, which is an evolution of portals and brings in new no-code/low-code capabilities and experiences to empower more people to create and deliver business-centric, data-powered, modern, and secure websites. More information: [Power Pages](power-pages]  
+|**Portals** | Used to create external-facing websites that allow users outside an organization to sign in with a wide variety of identities, create and view data from Dataverse, or even browse content anonymously. We recently launched **Power Pages**, which is an evolution of portals and brings in new no-code/low-code capabilities and experiences to empower more people to create and deliver business-centric, data-powered, modern, and secure websites. More information: [Power Pages](#power-pages]  
 
 > #### Key developer extensibility points
 > - Building custom visual controls using Power Apps component framework
