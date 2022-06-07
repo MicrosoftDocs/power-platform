@@ -19,7 +19,7 @@
       - name: Microsoft Power Platform CLI 
         href: cli\power-platform-cli.md
         items:
-          - name: CLI reference
+          - name: PAC CLI reference
             items:
               - name: admin
                 href: cli\reference\admin-command.md
