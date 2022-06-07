@@ -18,11 +18,11 @@ contributors:
 
 Commands for working with canvas app source files. Edit, manage, and collaborate on your app outside of Power Apps Studio with tools such as VS Code and GitHub.
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../../../../includes/cc-beta-prerelease-disclaimer.md)]]
+[!INCLUDE [cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
   > [!IMPORTANT]
   > - The Canvas commands are in public preview. 
-  > - [!INCLUDE [cc-preview-features-definition](../../../../includes/cc-preview-features-definition.md)]
+  > - [!INCLUDE [cc-preview-features-definition](../../../includes/cc-preview-features-definition.md)]
 
 ## Parameters
 
