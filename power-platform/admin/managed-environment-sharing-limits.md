@@ -1,6 +1,6 @@
 ---
 title: "Sharing limits | MicrosoftDocs"
-description: Learn how to use environment management to enable sharing limits.
+description: Learn how to use Managed Environment to enable sharing limits.
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 06/27/2022
@@ -22,7 +22,7 @@ search.app:
 ---
 # Sharing limits 
 
-Managed environments allow admins to influence how broadly makers can share canvas apps. There are two sharing controls.  
+Managed Environment allow admins to influence how broadly makers can share canvas apps. There are two sharing controls.  
 
 |Sharing control   |System behavior when checked?   |
 |---------|---------|
@@ -34,7 +34,7 @@ Managed environments allow admins to influence how broadly makers can share canv
 > [!NOTE]
 > Sharing rules are enforced when makers attempt to share an app. Sharing rules do not change the audience apps in an environment are already shared with.  
 
-screenshot
+:::image type="content" source="media/managed-environment-limit-sharing.png" alt-text="Managed Environment limit sharing":::
 
 
 ### See also  

@@ -24,7 +24,7 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Managed environments is a suite of capabilities that allow admins to manage Power Platform at scale with more control, less effort, and more insights. Admins can enable environment management on any type of environment. There are four primary elements of managed environments: 
+Managed Environments is a suite of capabilities that allow admins to manage Power Platform at scale with more control, less effort, and more insights. Admins can enable environment management on any type of environment. There are four primary elements of Managed Environment: 
 
 - [Enable environment management](managed-environment-enable.md)
 - [Weekly digests](managed-environment-weekly-digests.md)
@@ -38,14 +38,14 @@ Managed environments is a suite of capabilities that allow admins to manage Powe
 
 ## License considerations
 
-Managed environments represent a value-add for Power Platform premium licenses. All applications and flows in an managed environment are premium and can be licensed using any of the Power Platform licensing options (per user, per app/flow or pay-as-you-go) or Dynamics 365 licenses that give premium usage rights. 
+Managed Environment represent a value-add for Power Platform premium licenses. All applications and flows in a managed environment are premium and can be licensed using any of the Power Platform licensing options (per user, per app/flow or pay-as-you-go) or Dynamics 365 licenses that give premium usage rights. 
 
 During the public preview the premium license requirement for applications and flows within a managed environment is not enforced. 
 
 |  | | |
 |---------|---------|---------|
 |:::image type="content" source="media/non-managed-environment-left.png" alt-text="Non-managed environment" border="false":::     | :::image type="content" source="media/managed-environment-arrow.png" alt-text="arrow" border="false":::        | :::image type="content" source="media/managed-environment-right.png" alt-text="Managed environment" border="false":::        |
-|<ul><li>No managed environment features​</li> <br /><li>Premium and non-premium assets (apps/flows)​</li><br /><li>Users with qualifying and non-qualifying licenses</li></ul>     |         | <ul><li>Includes managed environment features​ </li><br /><li>All low code assets (apps/flows) become premium ​</li><br /> <li>Users must have a qualifying license to access the assets </li></ul>       |
+|<ul><li>No Managed Environment features​</li> <br /><li>Premium and non-premium assets (apps/flows)​</li><br /><li>Users with qualifying and non-qualifying licenses</li></ul>     |         | <ul><li>Includes managed environment features​ </li><br /><li>All low code assets (apps/flows) become premium ​</li><br /> <li>Users must have a qualifying license to access the assets </li></ul>       |
 
 
 ### See also  
