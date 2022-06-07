@@ -13,4 +13,33 @@
   - name: Back-end developer
     items: 
     - name: Overview
-      href: back-end-overview.md          
+      href: back-end-overview.md
+  - name: Tools
+    items:
+      - name: Microsoft Power Platform CLI 
+        href: cli\power-platform-cli.md
+        items:
+          - name: PAC CLI reference
+            items:
+              - name: admin
+                href: cli\reference\admin-command.md
+              - name: application
+                href: cli\reference\application-command.md
+              - name: auth
+                href: cli\reference\auth-command.md
+              - name: canvas
+                href: cli\reference\canvas-command.md
+              - name: org 
+                href: cli\reference\org-command.md
+              - name: package
+                href: cli\reference\package-command.md
+              - name: paportal
+                href: cli\reference\paportal-command.md
+              - name: pcf
+                href: cli\reference\pcf-command.md
+              - name: plugin
+                href: cli\reference\plugin-command.md
+              - name: solution
+                href: cli\reference\solution-command.md
+              - name: telemetry
+                href: cli\reference\telemetry-command.md
