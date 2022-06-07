@@ -38,7 +38,7 @@ Apps created with Power Apps are consumed by users using their desktop or mobile
 | **Model Driven** | data-driven applications that are built on top of Microsoft Dataverse. Other data sources and services can be used by model-driven applications by embedding a canvas application. |
 | **Power Apps Portal** | Used to create external-facing websites that allow users outside an organization to sign in with a wide variety of identities, create and view data from Dataverse, or even browse content anonymously. |
 
-> [!TIP]
+### Key developer extensibility points
 > The following are the key developer extensibility points for Power Apps:
 > - Building custom visual controls using Power Apps Component Framework (PCF)
 > - Implementing client business logic using JavaScript and the client API
@@ -54,7 +54,7 @@ Power Automate is used to automate tasks and orchestrate activities across vario
 | **Cloud flows** | can be triggered manually, configured to run when specific events occur, such as when a record is created, or scheduled to run at a specific time. Power Automate is built on top of Azure Logic Apps but offers unique integration with Microsoft Power Platform. |
 | **Desktop flows** | used to automate repetitive interactive tasks on the web or the desktop. |
 
-> [!TIP]
+### Key developer extensibility points
 > The following are the key developer extensibility points:
 > - Building custom connectors using tools like Azure Functions and Azure API Management
 > - Use workflow definition functions to build complex expressions
@@ -63,7 +63,7 @@ Power Automate is used to automate tasks and orchestrate activities across vario
 
 Power BI is Microsoft's business analytics solution that provides interactive data visualization BI tools to help users visualize and share data and insights across their organization.
 
-> [!TIP]
+### Key developer extensibility points
 > The following are the key developer extensibility points:
 > - Embed Power BI in apps, websites, and portals
 > - Create custom visuals using the open-source SDK
@@ -72,7 +72,7 @@ Power BI is Microsoft's business analytics solution that provides interactive da
 
 Power Virtual Agents lets you create powerful chatbots that can answer questions from your customers, other employees, or visitors to your website or service. Power Virtual Agents is built on Microsoft Bot Framework and provides a low-code experience to build and manage chatbots.
 
-> [!TIP]
+### Key developer extensibility points
 > The following are the key developer extensibility points:
 > - Build Bot Framework Skills
 > - Extend bots with Bot Framework Composer
@@ -81,7 +81,7 @@ Power Virtual Agents lets you create powerful chatbots that can answer questions
 
 Dataverse is a cloud scale data store that build on Microsoft's data technologies and abstracts away data management complexity from the app maker. It lets you securely store and manage data that is used by business applications. Business data within Dataverse is stored within a set of data tables. Role-based security allows businesses to control access to the data tables and even individual records for different users within your organization. Developers can extend or customize Dataverse functionality by adding custom business logic. You can define calculated table columns, business rules, workflows, and business process flows to ensure data quality and drive business processes.
 
-> [!TIP]
+### Key developer extensibility points
 > The following are the key developer extensibility points:
 > - Create plug-ins, similar to event handlers, that customize or extend Dataverse data processing with custom business logic (code)
 > - Use webhooks and Azure Service Bus to integrate with external systems
