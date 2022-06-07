@@ -143,6 +143,6 @@ If you're a private preview participant and have an older version of CLI, follow
 
 ### See also
 
-[Power Apps component framework](../component-framework/overview.md)
+[Power Apps component framework](/power-apps/developer/component-framework/overview)<br />
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

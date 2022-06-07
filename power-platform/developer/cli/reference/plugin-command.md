@@ -15,7 +15,7 @@ contributors:
 
 # Plugin
 
-Manages to create a [plug-in](./../../plug-ins.md) project.
+Command to create a [plug-in](/power-apps/developer/data-platform/plug-ins) project.
 
 ## Parameters
 

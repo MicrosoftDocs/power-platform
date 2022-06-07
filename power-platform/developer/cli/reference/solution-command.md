@@ -38,9 +38,6 @@ Commands for working with [Dataverse solution projects](/power-apps/maker/data-p
 |upgrade|Command to upgrade the solution. It has the following parameters: <ul><li> *solution-name*: Name of the solution (alias:-sn).</li><li> *async*: Upgrades the solution asynchronously (alias: -a).</li><li>*max-async-wait-time*: Maximum asynchronous wait time in minutes. Default value is 60 minutes (alias: -wt).</li></ul>|`pac solution upgrade --solution-name SampleSolution --async --max-async-wait-time 60`|
 |version|Updates the version of the existing solution. It has the following parameters:<ul><li>*patchversion*: Patch version of the solution (alias: -pv).</li><li> *strategy*: Updates patch version for `Solution.xml` file using specified strategy. It has the following values: <ul><li>*gittags*: Use Git tags to decide whether a particular solution's patch version needs to be updated. Set the personal access token in the `PacCli.PAT` environment variable (alias: -s).</li><li>*filetracking*: Use a .csv file to decide whether a particular solution's patch version needs to be updated.</li><li>*solution*: The solution file whose patch version should be updated.</li></ul><li> *filename*: CSV file name to be used when using `filetracking` as a stategy. Default value is `ControlStateVersionInfo.csv` (alias: -fn).|`pac solution version --patchversion 2`  <br/><br/> `pac solution version --strategy gittags`|
 
-
-
-
 ## Differences between pac solution clone and export
 
 There are situations where you're unsure when to use `pac solution clone` or `pac solution export` command. You can use one of the commands in the following scenarios:

@@ -15,7 +15,7 @@ contributors:
 
 # PCF
 
-Commands to work with [Power Apps component framework](../../../component-framework/overview.md). 
+Commands to work with [Power Apps component framework](/power-apps/developer/component-framework/overview).
 
 ## Parameters
 
