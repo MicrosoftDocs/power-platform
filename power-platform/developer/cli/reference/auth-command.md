@@ -15,7 +15,7 @@ contributors:
 
 # Auth
 
-Commands to [authenticate to Dataverse](../../../component-framework/import-custom-controls.md#connecting-to-your-environment).
+Commands to [connect to your environment](/power-apps/developer/component-framework/import-custom-controls#connecting-to-your-environment).
 
 ## Parameters
 

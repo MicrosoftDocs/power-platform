@@ -15,7 +15,7 @@ contributors:
 
 # Paportal
 
-Commands to work with [Power Apps portals (Preview)](../../../../maker/portals/power-apps-cli.md).
+Commands to work with [Portals support for Microsoft Power Platform CLI](/power-apps/maker/portals/power-apps-cli).
 
 ## Parameters
 
