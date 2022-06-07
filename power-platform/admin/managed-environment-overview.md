@@ -38,7 +38,9 @@ Managed Environments is a suite of capabilities that allow admins to manage Powe
 
 ## License considerations
 
-Managed Environment represent a value-add for Power Platform premium licenses. All applications and flows in a managed environment are premium and can be licensed using any of the Power Platform licensing options (per user, per app/flow or pay-as-you-go) or Dynamics 365 licenses that give premium usage rights. 
+Managed Environment represent a value-add on top of  existing premium Power Platform capabilities. All applications and flows in a managed environment are premium and can be licensed using any of the Power Platform licensing options (per user, per app/flow or pay-as-you-go) or Dynamics 365 licenses that give premium usage rights. 
+
+Any type of environment can be managed. The semantics of trial environment type do not change when the environment is managed. Details on licensing implications for assets in the Default environment will be announced before GA.
 
 During the public preview the premium license requirement for applications and flows within a managed environment is not enforced. 
 
@@ -53,4 +55,5 @@ During the public preview the premium license requirement for applications and f
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+
 
