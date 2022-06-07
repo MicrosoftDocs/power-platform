@@ -46,9 +46,9 @@ Power Virtual Agents supports the following authentication providers:
 
 Power Virtual Agents supports several authentication options. Choose the one that meets your needs.
 
-To change your bot's authentication settings, go to **Manage** on the side pane, and then go to the **Security** tab and select the **Authentication** card.
+To change your bot's authentication settings, go to **Settings** on the side pane, and then go to the **Security** tab and select the **Authentication** card.
 
-:::image type="content" source="media/configuration-end-user-authentication/security-authentication.png" alt-text="Screenshot of the Security page under the Manage menu, highlighting the Authentication card.":::
+:::image type="content" source="media/configuration-end-user-authentication/auth-manage-sm.png" alt-text="Screenshot of the Security page under the Settings menu, highlighting the Authentication card.":::
 
 The following authentication options are available:
 
@@ -194,7 +194,7 @@ Make sure to configure the redirect URL to `https://token.botframework.com/.auth
 
 1. Open your bot.
 
-1. Select **Manage** on the side pane, and then go to the **Security** tab and select the **Authentication** card.
+1. Select **Settings** on the side pane, and then go to the **Security** tab and select the **Authentication** card.
 
     :::image type="content" source="media/configuration-end-user-authentication/auth-manage-sm.png" alt-text="Screenshot of selecting the Authentication card.":::
 
@@ -307,7 +307,7 @@ After the setup steps are complete, save your configuration and test it by [crea
 
 ## Remove the authentication configuration
 
-1. Edit your bot and select **Manage** on the side pane, and then go to the **Security** tab and select the **Authentication** card.
+1. Edit your bot and select **Settings** on the side pane, and then go to the **Security** tab and select the **Authentication** card.
 1. Select **No authentication**.
 1. Publish the bot.
 

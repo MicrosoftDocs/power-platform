@@ -66,7 +66,7 @@ After publishing your bot at least once, you can add channels to make the bot re
 
 To configure channels:
 
-1. Select **Manage**.
+1. Select **Settings**.
 1. In the left side pane, select the **Channels** tab.
 
 :::image type="content" source="media/publication-fundamentals-publish-channels/channel-channels-menu.png" alt-text="Channel settings." border="false":::

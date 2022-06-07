@@ -37,12 +37,12 @@ To use these advanced AI capabilities in Power Virtual Agents:
 
 1. Open a bot you want to enable or disable the features for.
 
-1. Expand **Manage** on the side pane, then go to the **AI capabilities** tab.
+1. Expand **Settings** on the side pane, then go to the **AI capabilities** tab.
 
 1. For each feature, select the checkbox to turn the feature on or off.
 
 1. Select **Save** at the top of the tab.
 
-:::image type="content" source="../media/advanced-ai-features/enable-features-teams.png" alt-text="Screenshot showing the AI capabilities section under the Manage tab in Teams.":::
+:::image type="content" source="../media/advanced-ai-features/enable-features.png" alt-text="Screenshot showing the AI capabilities section under the Manage tab in Teams.":::
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

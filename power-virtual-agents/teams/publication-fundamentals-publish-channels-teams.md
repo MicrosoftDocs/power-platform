@@ -42,7 +42,7 @@ After the first publish, you can do subsequent publishes whenever you would like
 
 1. Select **Publish** to make the latest bot content available to your customers.
 
-    :::image type="content" source="../media/publication-fundamentals-publish-channels/channel-publish-latest-content-teams.png" alt-text="Publish latest bot content.":::
+    :::image type="content" source="../media/publication-fundamentals-publish-channels/channel-publish-latest-content.png" alt-text="Publish latest bot content.":::
 
 The publishing process will check for errors in the latest bot content.
 

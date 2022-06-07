@@ -46,14 +46,14 @@ Add the Bot Framework bot's app ID to the allowlist for the Power Virtual Agents
 
     :::image type="content" source="media/advanced-use-pva-as-a-skill/Composer_BotAppID.png" alt-text="Screenshot highlighting where to find a Bot Framework bot's app ID.":::
 
-1. In Power Virtual Agents, open the bot you want to use as a skill. In the left pane, select **Manage**, and then select **Skills**.
+1. In Power Virtual Agents, open the bot you want to use as a skill. In the left pane, select **Settings**, and then select **Skills**.
 
 1. Select **Manage allowlist**.
 
     :::image type="content" source="media/advanced-use-pva-as-a-skill/Skill_ManageAllowlistMenu.png" alt-text="Screenshot highlighting the Manage, Skills, and Manage allowlist elements in the web portal.":::
 
     > [!TIP]  
-    > You can also get to your bot's allowlist on the Security page. In the left pane, select **Manage**, and then select **Security**.
+    > You can also get to your bot's allowlist on the Security page. In the left pane, select **Settings**, and then select **Security**.
     >
     > :::image type="content" source="media/advanced-use-pva-as-a-skill/Skill_ManageAllowlistSecurity.png" alt-text="Screenshot highlighting the Allowlist tile on the Security page.":::
 
@@ -114,7 +114,7 @@ Both skill manifests are shown on the **Manage allowlist** panel.
 
 :::image type="content" source="media/advanced-use-pva-as-a-skill/Skill_Manifest1.png" alt-text="Screenshot of the Manage allowlist panel showing the Power Virtual Agents bot manifests.":::
 
-The skill manifests are also shown on the bot's Details page. In the left pane, select **Manage**, and then select **Details**. The Details page shows other metadata, including **Environment ID**, **Tenant ID**, and **Bot app ID**.
+The skill manifests are also shown on the bot's Details page. In the left pane, select **Settings**, and then select **General**. The Details page shows other metadata, including **Environment ID**, **Tenant ID**, and **Bot app ID**.
 
 :::image type="content" source="media/advanced-use-pva-as-a-skill/Skill_Manifest2.png" alt-text="Screenshot of the Details page highlighting where to download the Power Virtual Agents bot manifests.":::
 

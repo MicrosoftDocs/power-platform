@@ -69,7 +69,7 @@ You will need to get your Teams app ID:
 
 1. Log in to the Power Virtual Agents web app at [https://web.powerva.microsoft.com](https://web.powerva.microsoft.com) and open the bot that you want to configure SSO for.
 
-1. Expand **Manage** on the side pane, and then select **Channels**. Select the **Microsoft Teams** tile.
+1. Expand **Settings** on the side pane, and then select **Channels**. Select the **Microsoft Teams** tile.
 
 1. In the pane that appears to the side, select **Edit detail**, expand **More** and then copy the app ID by selecting **Copy**.
 
@@ -164,7 +164,7 @@ To add Teams SSO configuration information in the Power Virtual Agents bot:
 
 1. Log in to the Power Virtual Agents web app at [https://web.powerva.microsoft.com](https://web.powerva.microsoft.com) and open the bot that you want to configure SSO for.
 
-1. Expand **Manage** on the side pane, and then select **Channels**. Select the **Microsoft Teams** tile.
+1. Expand **Settings** on the side pane, and then select **Channels**. Select the **Microsoft Teams** tile.
 
 1. Select **Edit details**.
 

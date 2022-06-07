@@ -67,7 +67,7 @@ To connect to the bot you have built with Power Virtual Agents, you will need to
 
    :::image type="content" source="media/publication-connect-bot-to-azure-bot/channel-get-bot-name.png" alt-text="Get bot name." border="false":::
 
-1. On the side pane, go to **Manage** > **Channels**.
+1. On the side pane, go to **Settings** > **Channels**.
 
 1. Select the channel you want to connect to. This topic uses Slack as an example.
 

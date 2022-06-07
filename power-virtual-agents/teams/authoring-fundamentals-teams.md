@@ -50,7 +50,7 @@ At any time, pressing these hotkeys on a route anchor will read out the properti
 - ```Alt + Shift + B``` will read out the target node.
 
 > [!NOTE]
-> If you are using a screen reader, note that the sidebar menu entry labeled **Manage** might not get read as "Collapsed", but it is an expandable control which can be selected and expanded.
+> If you are using a screen reader, note that the sidebar menu entry labeled **Settings** might not get read as "Collapsed", but it is an expandable control which can be selected and expanded.
 
 ## In this section
 

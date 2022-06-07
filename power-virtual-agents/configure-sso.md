@@ -158,7 +158,7 @@ Power Virtual Agents calls into Azure AD to perform the actual exchange.
 
 1. Confirm you've selected the bot for which you want to enable authentication by selecting the bot icon on the top menu and choosing the correct bot.
 
-1. Select **Manage** on the side pane, and then go to the **Authentication** tab.
+1. Select **Settings** on the side pane, and then go to the **Authentication** tab.
 
     :::image type="content" source="media/configure-sso/auth-manage-sm.png" alt-text="Go to Manage and then Authentication." border="false":::
 
