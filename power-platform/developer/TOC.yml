@@ -17,29 +17,30 @@
   - name: Tools
     items:
       - name: Microsoft Power Platform CLI 
+        href: cli\power-platform-cli.md
         items:
           - name: CLI reference
             items:
               - name: admin
-                href:
-              - name: applications
-                href:
+                href: cli\reference\admin-command.md
+              - name: application
+                href: cli\reference\application-command.md
               - name: auth
-                href:
+                href: cli\reference\auth-command.md
               - name: canvas
-                href:
+                href: cli\reference\canvas-command.md
               - name: org 
-                href:
+                href: cli\reference\org-command.md
               - name: package
-                href:
+                href: cli\reference\package-command.md
               - name: paportal
-                href:
+                href: cli\reference\paportal-command.md
               - name: pcf
-                href:
+                href: cli\reference\pcf-command.md
               - name: plugin
-                href:
+                href: cli\reference\plugin-command.md
               - name: solution
-                href: 
+                href: cli\reference\solution-command.md
               - name: telemetry
-                href: 
+                href: cli\reference\telemetry-command.md
           
