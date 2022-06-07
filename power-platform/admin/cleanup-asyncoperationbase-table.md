@@ -20,14 +20,14 @@ search.app:
 ---
 # Clean up records from AsyncOperationBase and WorkflowLogBase tables
 
-The AsyncOperationBase table is used to store system jobs. System jobs represent asynchronous extensions, such as asynchronous registered workflows and plugins, and other background operations such as bulk deletion, bulk import, and rollup operations. After an event occurs and any synchronous extensions have been processed, the platform serializes the context for any asynchronous extensions and saves it to the database as an AsyncOperation entity. 
+The AsyncOperationBase table is used to store system jobs. System jobs represent asynchronous extensions, such as asynchronous registered workflows and plug-ins, and other background operations such as bulk deletion, bulk import, and rollup operations. After an event occurs and any synchronous extensions have been processed, the platform serializes the context for any asynchronous extensions and saves it to the database as an AsyncOperation entity. 
 
-When an async workflow is triggered in your Dataverse organization, a record will be created in the AsyncOperationBase table to track the processing of the async job. Additional records will also be created in the WorkflowLogBase table to maintain logs for the workflow execution. [Business process flows](/power-automate/business-process-flows-overview) (BPF) also store BPF stage transition and action logs for the BPF in the WorkflowLogBase table. 
+When an async workflow is triggered in your Dataverse organization, a record will be created in the AsyncOperationBase table to track the processing of the async job. Additional records also will be created in the WorkflowLogBase table to maintain logs for the workflow execution. [Business process flows](/power-automate/business-process-flows-overview) (BPF) also store BPF stage transition and action logs for the BPF in the WorkflowLogBase table. 
 
 If your organization has heavy use of workflows or business process flows, these tables will grow over time and eventually become large enough to introduce performance issues and consume excessive storage in your organization database.
 
 > [!NOTE]
-> The use of entity-related terminology depends on the protocol or class library used. See [Terminology use depending on protocol or technology](/power-apps/developer/data-platform/understand-terminology).
+> The use of entity-related terminology depends on the protocol or class library used. See [Terminology use depending on protocol or technology](/power-apps/developer/data-platform/understand-terminology#terminology-use-depending-on-protocol-or-technology).
 
 ## Bulk deletion jobs
 
