@@ -40,11 +40,11 @@ Flows typically use variables to input and output information. The variables can
 
 1. Click on the plus (**+**) button below an existing node to add a new node.
 
-1. Select **Call an action** in the node selection window,, and then select **Create a flow**.
+1. Select **Call an action** in the node selection window,, and then select **Create a new flow**.
 
     :::image type="content" source="media/advanced-flow/UseCreateFlowOption.jpg" alt-text="Create a new Power Automate flow." border="false":::
 
-Using the **Create a flow** option opens a starter flow template in the [Power Automate portal](https://flow.microsoft.com/) in a separate tab.
+Using the **Create a new flow** option opens a starter flow template in the [Power Automate portal](https://flow.microsoft.com/) in a separate tab.
 
 :::image type="content" source="media/advanced-flow/PVAConnectorTemplate.JPG" alt-text="Power Automate flow template." border="false":::
 
