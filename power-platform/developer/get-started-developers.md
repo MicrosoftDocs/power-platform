@@ -3,7 +3,7 @@ title: "Introduction to Microsoft Power Platform for Developers"
 description: "Overview of how to extend power platform for Azure developers."
 keywords: 
 author: marcelbf
-ms.subservice: alm
+ms.subservice: developer
 ms.author: marcelbf
 manager: 
 ms.custom: ""
@@ -20,7 +20,7 @@ search.app:
 
 # Introduction to Microsoft Power Platform for Developers
 
-Microsoft Power Platform is a low-code platform for building business apps quickly. It includes four main components: Power Apps, Power Automate, Power BI, and Power Virtual Agents. Each component can be used individually or together. When used together, they're designed to interact with the others to achieve business objectives, be it building analytics, process automation, or data-driven productivity apps.
+Microsoft Power Platform is a low-code platform for building business apps quickly. It includes five main components: Power Apps, Power Automate, Power BI, Power Virtual Agents, and Power Pages. Each component can be used individually or together. When used together, they're designed to interact with the others to achieve business objectives, be it building analytics, process automation, or data-driven productivity apps.
 
 The platform uses a low-code approach to build solutions rapidly. It allows everyone in an organization, from frontline workers to professional developers, to participate in building apps that drive positive business outcomes. Developers can work seamlessly with the makers in an organization to help fill gaps and solve complex challenges using a rich extensibility model provided by the platform components. Using native integration with Azure, developers can also use their cloud development skills to extend Microsoft Power Platform. This approach to low-code development is a transformative way to achieve application development objectives within an organization quickly.
 
@@ -35,14 +35,25 @@ Apps created with Power Apps are consumed by users using their desktop or mobile
 | Type | Description |
 | ---- | ---- |
 | **Canvas** | Provide the maker with complete control over the pixel-perfect screen contents and navigation between multiple screens. Canvas applications use connectors to work with data and services. Canvas applications can be embedded into SharePoint, Teams, Power BI, and Dynamics 365 applications. |
-| **Model Driven** | data-driven applications that are built on top of Microsoft Dataverse. Other data sources and services can be used by model-driven applications by embedding a canvas application. |
-| **Power Apps Portal** | Used to create external-facing websites that allow users outside an organization to sign in with a wide variety of identities, create and view data from Dataverse, or even browse content anonymously. |
+| **Model-driven** | Data-driven applications that are built on top of Microsoft Dataverse. Other data sources and services can be used by model-driven applications by embedding a canvas application. |
+|**Portals** | Used to create external-facing websites that allow users outside an organization to sign in with a wide variety of identities, create and view data from Dataverse, or even browse content anonymously. We recently launched **Power Pages**, which is an evolution of portals and brings in new no-code/low-code capabilities and experiences to empower more people to create and deliver business-centric, data-powered, modern, and secure websites. More information: [Power Pages](#power-pages)  
 
 > #### Key developer extensibility points
-> - Building custom visual controls using Power Apps Component Framework (PCF)
+> - Building custom visual controls using Power Apps component framework
 > - Implementing client business logic using JavaScript and the client API
 > - Building custom connectors for external data sources and services using tools like Azure Functions and Azure API Management
 > - Building HTML web resources 
+
+## Power Pages
+
+Power Pages is a secure, enterprise-grade, low-code software as a service (SaaS) platform for creating, hosting, and administering modern external-facing business websites. Power Pages is built on the foundation of Power Apps portals. Low-code makers can rapidly design, configure, and publish websites that seamlessly work across web browsers and devices. Professional developers can extend these capabilities to address advanced business requirements.
+
+
+
+> #### Key developer extensibility points
+> - Custom web page templates built with HTML, CSS, and [Liquid](/power-pages/configure/liquid-overview)
+> - Extend site integration with Dataverse with the [portals Web API](/power-pages/configure/web-api-overview)
+> - Use Visual Studio Code and the Power Platform CLI to enable metadata editing and CI/CD (Continuous Integration/Continuous Deployment) of site configurations
 
 ## Power Automate
 
@@ -56,14 +67,6 @@ Power Automate is used to automate tasks and orchestrate activities across vario
 > #### Key developer extensibility points
 > - Building custom connectors using tools like Azure Functions and Azure API Management
 > - Use workflow definition functions to build complex expressions
-
-## Power BI
-
-Power BI is Microsoft's business analytics solution that provides interactive data visualization BI tools to help users visualize and share data and insights across their organization.
-
-> #### Key developer extensibility points
-> - Embed Power BI in apps, websites, and portals
-> - Create custom visuals using the open-source SDK
 
 ## Power Virtual Agents
 
@@ -82,5 +85,14 @@ Dataverse is a cloud scale data store that build on Microsoft's data technologie
 > - Use webhooks and Azure Service Bus to integrate with external systems
 > - Extend the Dataverse API with your own custom API that implements your business logic
 > - Use virtual tables to integrate data stored in external systems into Dataverse without replicating the data
+
+## Power BI
+
+Power BI is Microsoft's business analytics solution that provides interactive data visualization BI tools to help users visualize and share data and insights across their organization.
+
+> #### Key developer extensibility points
+> - Embed Power BI in apps, websites, and portals
+> - Create custom visuals using the open-source SDK
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
