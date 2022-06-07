@@ -40,7 +40,10 @@ Role-based security controls access to a specific table type, record-based secur
 
   
 ### See also  
- [Control data access](security-roles-privileges.md)   
+ [Field-level security to control access](field-level-security.md) 
+ [Set up security permissions for a column](set-up-security-permissions-field.md)   
+ [Enable or disable security for a column to control access](enable-disable-security-field.md)   
+ 
 
 
 

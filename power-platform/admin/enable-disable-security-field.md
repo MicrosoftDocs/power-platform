@@ -50,7 +50,10 @@ Field-level security lets you set which columns users can see or edit. For examp
   
 ### See also  
  [Field-level security](field-level-security.md)   
- [Set up security permissions for a field](set-up-security-permissions-field.md)
+ [Set up security permissions for a column](set-up-security-permissions-field.md)   
+ [Add teams or users to a field security profile to control access](add-teams-users-field-security-profile.md)
+
+
 
 
 
