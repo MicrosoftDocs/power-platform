@@ -157,10 +157,10 @@ You can view the entity metadata for your organization including which columns c
  Some data, such as addresses, are made up of multiple columns. Therefore, to completely secure data that includes multiple columns, such as addresses, you must secure and configure the appropriate column security profiles on multiple columns for the entity. For example, to completely secure addresses for a table, secure all relevant address columns, such as address_line1, address_line2, address_line3, address1_city, address1_composite, and so on.  
   
 ### See also  
- [Set up security permissions for a column](set-up-security-permissions-field.md)   
- [Enable or disable security for a column to control access](enable-disable-security-field.md)   
- [Add teams or users to a field security profile to control access](add-teams-users-field-security-profile.md)
- [Hierarchy security](hierarchy-security.md)
+[Set up security permissions for a column](set-up-security-permissions-field.md) <br />
+[Enable or disable security for a column to control access](enable-disable-security-field.md)   <br />
+[Add teams or users to a field security profile to control access](add-teams-users-field-security-profile.md) <br />
+[Hierarchy security](hierarchy-security.md)
 
 
 

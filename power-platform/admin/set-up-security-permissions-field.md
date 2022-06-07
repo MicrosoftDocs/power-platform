@@ -83,8 +83,8 @@ After you create the profile, you assign users and or teams to that profile, and
 Any users not defined in the previously created field security profiles won't have access to the mobile phone column on contact forms or views. The column value displays ![Lock icon.](../admin/media/admin-field-level-security-lock.png "Lock icon") ********, indicating that the column is secured.  
   
 ### See also  
- [Field-level security to control access](field-level-security.md) 
- [Enable or disable security for a column to control access](enable-disable-security-field.md)  
+[Field-level security to control access](field-level-security.md) <br />
+[Enable or disable security for a column to control access](enable-disable-security-field.md)  
 
 
 
