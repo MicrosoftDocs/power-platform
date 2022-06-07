@@ -36,7 +36,6 @@ Apps created with Power Apps are consumed by users using their desktop or mobile
 | ---- | ---- |
 | **Canvas** | Provide the maker with complete control over the pixel-perfect screen contents and navigation between multiple screens. Canvas applications use connectors to work with data and services. Canvas applications can be embedded into SharePoint, Teams, Power BI, and Dynamics 365 applications. |
 | **Model Driven** | data-driven applications that are built on top of Microsoft Dataverse. Other data sources and services can be used by model-driven applications by embedding a canvas application. |
-| **Power Apps Portal** | Used to create external-facing websites that allow users outside an organization to sign in with a wide variety of identities, create and view data from Dataverse, or even browse content anonymously. |
 
 > #### Key developer extensibility points
 > - Building custom visual controls using Power Apps Component Framework (PCF)
@@ -72,6 +71,15 @@ Power Virtual Agents lets you create powerful chatbots that can answer questions
 > #### Key developer extensibility points
 > - Build Bot Framework Skills
 > - Extend bots with Bot Framework Composer
+
+## Power Pages
+
+Power Pages is a secure, enterprise-grade, low-code software as a service (SaaS) platform for creating, hosting, and administering modern external-facing business websites. Low-code maker can rapidly design, configure, and publish websites that seamlessly work across web browsers and devices. Professional developers can extend these capabilities to address advanced business requirements.
+
+> #### Key developer extensibility points
+> - Custom web page templates built with HTML, CSS, and [Liquid](/power-pages/configure/liquid-overview)
+> - Extend site integration with Dataverse with the [portals Web API](/power-pages/configure/web-api-overview)
+> - Use Visual Studio Code and the Power Platform CLI to enable metadata editing and CI/CD (Continuous Integration/Continuous Deployment) of site configurations
 
 ## Dataverse
 
