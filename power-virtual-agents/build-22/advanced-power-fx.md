@@ -20,7 +20,7 @@ ms.custom: ceX, advanced-authoring
 
 Power Fx is a low-code language that makers can work with directly in an Excel-like formula bar. Use Power Fx to create complex bot logic via formulas to manipulate data, such as setting the value of variables, parsing a string, or using expressions in conditionals.
 
-For more information, see [Power Fx overview](/power-platform/power-fx/overview) and [formula reference](https://aka.ms/pfx-reference) documentation.
+For more information, see the [Power Fx overview](/power-platform/power-fx/overview) and [formula reference](https://aka.ms/pfx-reference) documentation.
 
 ## Prerequisites
 
@@ -73,15 +73,15 @@ In this example, a Power Fx expression is used to convert the user's name to upp
 
 ## Use Power Fx as a condition
 
-To evaluate more complex expressions, Condition nodes can be configured to use Power Fx formulas.
+To evaluate more complex expressions, configure Condition nodes to use Power Fx formulas.
 
-In this example, the bot will determine if a booking date qualifies for discount. To do this, it checks if the booking date provided by the user is 14 days or more from the current date.
+In this example, the bot will determine if a booking date qualifies for a discount. To do this, it checks if the booking date provided by the user is 14 days or more from the current date.
 
 1. Create a new topic.
 
 1. Select the **+** icon and then choose **Ask a question**.
 
-1. For **Enter a response**, enter `Booking date?`.
+1. For **Enter a response**, enter the `Booking date?`.
 
 1. In the **Identify** box, select the **>** arrow and choose **Date and time**.
 
@@ -91,7 +91,7 @@ In this example, the bot will determine if a booking date qualifies for discount
 
 1. Select the **+** icon and then choose **Add a condition**.
 
-1. In the **ConditionItem** node, select **Node menu** (vertical three dots), then **Change to formula**.
+1. In the **ConditionItem** node, click on the **Node menu** (vertical three dots), then **Change to formula**.
 
 1. In the **Enter or select a value** box, select the **>**.
 
@@ -101,6 +101,6 @@ In this example, the bot will determine if a booking date qualifies for discount
 
 1. Under the **ConditionItem** node, add a **Send a message** node to let the user know they qualify for a discount. Enter the message `You qualify for a discount`.
 
-1. Under the **All Other Conditions** node, add a **Send a message** node. Enter the message `Sorry, you don't qualify for a discount`.
+1. Under the **All Other Conditions** node, add a **Send a message** node. Enter the message, `Sorry, you don't qualify for a discount`.
 
     :::image type="content" source="media/advanced-power-fx/condition-messages.png" alt-text="Screenshot of message nodes in condition branches.":::
