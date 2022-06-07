@@ -18,7 +18,7 @@ ms.collection: virtual-agent
 
 [!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
 
-Save customers' responses in a bot conversation to variables and reuse them later in the conversation. Or, use variables to create logical expressions that dynamically route the customer down different conversation paths.
+Save customers' responses in a bot conversation to variables and reuse them later in the conversation. Or use variables to create logical expressions that dynamically route the customer down different conversation paths.
 
 For example, save a customer's name in a variable called `UserName`, and the bot can address the customer by name as the conversation continues.
 
@@ -96,7 +96,7 @@ Variables can be created in any node that prompts you to select a variable, such
 
     :::image type="content" source="media/authoring-variables/create-variable.png" alt-text="Screenshot of Create a new variable button.":::
 
-A new variable will be created with a type that's appropriate for its usage. Use the [variable properties pane](#variable-properties-pane) to rename it.
+A new variable will be created with an appropriate type for its usage. Use the [variable properties pane](#variable-properties-pane) to rename it.
 
 ## Set a variable
 
@@ -140,7 +140,7 @@ Some system variables are hidden from the variable context menu and must be acce
 
 ## Use literal values
 
-You can type a literal value into any variable input field instead of selecting a variable from the menu.
+Instead of selecting a variable from the menu, you can type a literal value into any variable input field .
 
 :::image type="content" source="media/authoring-variables/set-variable-to-literal.png" alt-text="Screenshot showing the use of literal values for action inputs.":::
 
@@ -161,7 +161,7 @@ Values entered directly will always be treated as a string. To set a specific ty
 
 ## Variables pane
 
-To open the variables pane, select **Variables** in the topic's menu bar.
+Select **Variables** in the topic's menu bar to open the variables pane.
 
 :::image type="content" source="media/authoring-variables/open-variable-button.png" alt-text="Screenshot of the variables button.":::
 
@@ -177,7 +177,7 @@ You can also open the variable properties pane by selecting a variable in any no
 
 :::image type="content" source="media/authoring-variables/select-a-variable.png" alt-text="Screenshot of selecting a variable to open the variable properties pane.":::
 
-In the variable properties pane, you can rename a variable, see where a variable is used, or convert a variable to a [global variable](authoring-variables-bot.md).
+In the variable properties pane you can rename a variable, see where a variable is used, or convert a variable to a [global variable](authoring-variables-bot.md).
 
 :::image type="content" source="media/authoring-variables/variable-properties.png" alt-text="Screenshot of the properties pane.":::
 
@@ -200,7 +200,7 @@ When a topic defines a variable (for example, by a question node), the bot asks 
 
 To receive values from other topics, set the variable's property:
 
-1. In the **Question** node, select the variable that you want to receive values from other topics.
+1. Select the variable that you want to receive values from other topics in the **Question** node.
 
 1. In the **Variables properties** pane,  under **Topic (limited scope)** select **Receive values from other topics**.
 
@@ -228,9 +228,9 @@ To receive values from other topics, set the variable's property:
 
 ### Return values to original topics
 
-When a topic asks a question, or obtains a variable from an action in some other way, the variable can be returned to the original topic that redirected to it.
+When a topic asks a question or obtains a variable from an action in some other way, the variable can be returned to the original topic that redirected to it.
 
-In this case, the variable also becomes part of the original topic and can be used like any other variable. This helps you construct the topic so that information the bot obtains is available across topics, reducing the need for global variables.
+In this case, the variable also becomes part of the original topic and can be used like any other variable. This helps you construct the topic, so that information the bot obtains is available across topics, reducing the need for global variables.
 
 To return a variable to the original topic, set the variable's property:
 
