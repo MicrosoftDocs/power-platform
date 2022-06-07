@@ -3,7 +3,7 @@ title: "Introduction to Microsoft Power Platform for Developers"
 description: "Overview of how to extend power platform for Azure developers."
 keywords: 
 author: marcelbf
-ms.subservice: alm
+ms.subservice: developer
 ms.author: marcelbf
 manager: 
 ms.custom: ""
@@ -44,6 +44,17 @@ Apps created with Power Apps are consumed by users using their desktop or mobile
 > - Building custom connectors for external data sources and services using tools like Azure Functions and Azure API Management
 > - Building HTML web resources 
 
+## Power Pages
+
+Power Pages is a secure, enterprise-grade, low-code software as a service (SaaS) platform for creating, hosting, and administering modern external-facing business websites. Power Pages is built on the foundation of Power Apps portals. Low-code makers can rapidly design, configure, and publish websites that seamlessly work across web browsers and devices. Professional developers can extend these capabilities to address advanced business requirements.
+
+
+
+> #### Key developer extensibility points
+> - Custom web page templates built with HTML, CSS, and [Liquid](/power-pages/configure/liquid-overview)
+> - Extend site integration with Dataverse with the [portals Web API](/power-pages/configure/web-api-overview)
+> - Use Visual Studio Code and the Power Platform CLI to enable metadata editing and CI/CD (Continuous Integration/Continuous Deployment) of site configurations
+
 ## Power Automate
 
 Power Automate is used to automate tasks and orchestrate activities across various services that use connectors. Using Power Automate you can create cloud flows or desktop flows.
@@ -57,14 +68,6 @@ Power Automate is used to automate tasks and orchestrate activities across vario
 > - Building custom connectors using tools like Azure Functions and Azure API Management
 > - Use workflow definition functions to build complex expressions
 
-## Power BI
-
-Power BI is Microsoft's business analytics solution that provides interactive data visualization BI tools to help users visualize and share data and insights across their organization.
-
-> #### Key developer extensibility points
-> - Embed Power BI in apps, websites, and portals
-> - Create custom visuals using the open-source SDK
-
 ## Power Virtual Agents
 
 Power Virtual Agents lets you create powerful chatbots that can answer questions from your customers, other employees, or visitors to your website or service. Power Virtual Agents is built on Microsoft Bot Framework and provides a low-code experience to build and manage chatbots.
@@ -72,17 +75,6 @@ Power Virtual Agents lets you create powerful chatbots that can answer questions
 > #### Key developer extensibility points
 > - Build Bot Framework Skills
 > - Extend bots with Bot Framework Composer
-
-## Power Pages
-
-Power Pages is a secure, enterprise-grade, low-code software as a service (SaaS) platform for creating, hosting, and administering modern external-facing business websites. Power Pages is built on the foundation of Power Apps portals. Low-code makers can rapidly design, configure, and publish websites that seamlessly work across web browsers and devices. Professional developers can extend these capabilities to address advanced business requirements.
-
-
-
-> #### Key developer extensibility points
-> - Custom web page templates built with HTML, CSS, and [Liquid](/power-pages/configure/liquid-overview)
-> - Extend site integration with Dataverse with the [portals Web API](/power-pages/configure/web-api-overview)
-> - Use Visual Studio Code and the Power Platform CLI to enable metadata editing and CI/CD (Continuous Integration/Continuous Deployment) of site configurations
 
 ## Dataverse
 
@@ -93,5 +85,14 @@ Dataverse is a cloud scale data store that build on Microsoft's data technologie
 > - Use webhooks and Azure Service Bus to integrate with external systems
 > - Extend the Dataverse API with your own custom API that implements your business logic
 > - Use virtual tables to integrate data stored in external systems into Dataverse without replicating the data
+
+## Power BI
+
+Power BI is Microsoft's business analytics solution that provides interactive data visualization BI tools to help users visualize and share data and insights across their organization.
+
+> #### Key developer extensibility points
+> - Embed Power BI in apps, websites, and portals
+> - Create custom visuals using the open-source SDK
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
