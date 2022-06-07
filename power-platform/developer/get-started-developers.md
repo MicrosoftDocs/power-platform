@@ -20,7 +20,7 @@ search.app:
 
 # Introduction to Microsoft Power Platform for Developers
 
-Microsoft Power Platform is a low-code platform for building business apps quickly. It includes four main components: Power Apps, Power Automate, Power BI, and Power Virtual Agents. Each component can be used individually or together. When used together, they're designed to interact with the others to achieve business objectives, be it building analytics, process automation, or data-driven productivity apps.
+Microsoft Power Platform is a low-code platform for building business apps quickly. It includes five main components: Power Apps, Power Automate, Power BI, Power Virtual Agents, and Power Pages. Each component can be used individually or together. When used together, they're designed to interact with the others to achieve business objectives, be it building analytics, process automation, or data-driven productivity apps.
 
 The platform uses a low-code approach to build solutions rapidly. It allows everyone in an organization, from frontline workers to professional developers, to participate in building apps that drive positive business outcomes. Developers can work seamlessly with the makers in an organization to help fill gaps and solve complex challenges using a rich extensibility model provided by the platform components. Using native integration with Azure, developers can also use their cloud development skills to extend Microsoft Power Platform. This approach to low-code development is a transformative way to achieve application development objectives within an organization quickly.
 
