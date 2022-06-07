@@ -27,6 +27,7 @@ Commands to work with [Power Apps component framework](../../../component-framew
 
 ### See also
 
-[Power Apps component framework overview](../../../component-framework/overview.md)
+[Power Apps component framework overview](/power-apps/developer/component-framework/overview)<br />
+[What is Microsoft Power Platform CLI?](../power-platform-cli.md)
 
-[What is Microsoft Power Platform CLI](../../powerapps-cli.md)
+[!INCLUDE [footer-banner](../../../includes/footer-banner.md)]

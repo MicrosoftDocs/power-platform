@@ -25,6 +25,6 @@ Command to work with Dataverse organizations.
 
 ### See also
 
-[Power Apps component framework overview](../../../component-framework/overview.md)
+[What is Microsoft Power Platform CLI?](../power-platform-cli.md)
 
-[What is Microsoft Power Platform CLI](../../powerapps-cli.md)
+[!INCLUDE [footer-banner](../../../includes/footer-banner.md)]

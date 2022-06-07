@@ -79,6 +79,6 @@ The canvas commands in Microsoft Power Platform CLI are open source. Discuss imp
 
 ### See also
 
-[Power Apps component framework overview](../../../component-framework/overview.md)
+[What is Microsoft Power Platform CLI?](../power-platform-cli.md)
 
-[What is Microsoft Power Platform CLI](../../powerapps-cli.md)
+[!INCLUDE [footer-banner](../../../includes/footer-banner.md)]

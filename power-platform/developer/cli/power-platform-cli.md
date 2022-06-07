@@ -2,7 +2,6 @@
 title: Microsoft Power Platform CLI | Microsoft Docs
 description: "Install Microsoft Power Platform CLI to create, debug, and deploy code components by using Power Apps component framework."
 keywords: Microsoft Power Platform CLI, code components, component framework, CLI
-ms.subservice: dataverse-developer
 ms.author: jdaly
 author: kkanakas
 manager: kvivek
@@ -112,28 +111,28 @@ This table lists some of the common commands used in the CLI.
 
 |Command|Description|
 |-------|-----------|
-|[Admin](cli/reference/admin-command.md)|Commands for environment lifecycle features.|
-|[Auth](cli/reference/auth-command.md)|Commands to [authenticate to Dataverse](../component-framework/import-custom-controls.md#connecting-to-your-environment).|
-|[Application](cli/reference/application-command.md)| Commands to install AppSource applications that are pre-requisites for the solution work in the target environment (Preview). |
-|[Canvas](cli/reference/canvas-command.md)|Commands for working with canvas app source files (Preview).|
-|[Org](cli/reference/org-command.md)|Commands for working with Dataverse environments.|
-|[Package](cli/reference/package-command.md)|Commands for working with [solution packages](/power-platform/alm/package-deployer-tool).|
-|[Paportal](cli/reference/paportal-command.md)|Commands for working with [Power Apps portals (Preview)](../../maker/portals/power-apps-cli.md).|
-|[PCF](cli/reference/pcf-command.md)|Commands for working with [Power Apps component framework](../component-framework/overview.md).|
-|[Plugin](cli/reference/plugin-command.md)|Command to create a [plug-in](./plug-ins.md) project.|
-|[Solution](cli/reference/solution-command.md)|Commands for working with [Dataverse solution projects](../../maker/data-platform/solutions-overview.md).|
-|[Telemetry](cli/reference/telemetry-command.md)|Manages the telemetry settings.|
+|[Admin](reference/admin-command.md)|Commands for environment lifecycle features.|
+|[Auth](reference/auth-command.md)|Commands to [connect to your environment](/power-apps/developer/component-framework/import-custom-controls#connecting-to-your-environment).|
+|[Application](reference/application-command.md)| Commands to install AppSource applications that are pre-requisites for the solution work in the target environment (Preview). |
+|[Canvas](reference/canvas-command.md)|Commands for working with canvas app source files (Preview).|
+|[Org](reference/org-command.md)|Commands for working with Dataverse environments.|
+|[Package](reference/package-command.md)|Commands for working with [solution packages](../../alm/package-deployer-tool.md).|
+|[Paportal](reference/paportal-command.md)|Commands for working with [Portals support for Microsoft Power Platform CLI](/power-apps/maker/portals/power-apps-cli).|
+|[PCF](reference/pcf-command.md)|Commands for working with [Power Apps component framework](/power-apps/developer/component-framework/overview).|
+|[Plugin](reference/plugin-command.md)|Command to create a [plug-in](/power-apps/developer/data-platform/plug-ins) project.|
+|[Solution](reference/solution-command.md)|Commands for working with [Dataverse solution projects](/power-apps/maker/data-platform/solutions-overview).|
+|[Telemetry](reference/telemetry-command.md)|Manages the telemetry settings.|
 
 > [!TIP]
 > For the complete list of supported commands, run the `pac` command or `pac` \<subcommand> - for example: `pac solution`.
 
 ## Uninstall Microsoft Power Platform CLI
 
-To uninstall Microsoft Power Platform CLI tooling, run the MSI from [here](/powerapps/developer/data-platform/powerapps-cli).
+To uninstall Microsoft Power Platform CLI tooling, run the MSI from [https://aka.ms/PowerAppsCLI](https://aka.ms/PowerAppsCLI).
 
 To uninstall the Visual Studio Code extension, follow the same steps as installing the extension, except this time select the **Uninstall** button.
 
-If you're a Private Preview participant and have an older version of CLI, follow these steps:
+If you're a private preview participant and have an older version of CLI, follow these steps:
 
 1. To find out where Microsoft Power Platform CLI is installed, open a command prompt and enter `where pac`.
 1. Delete the PowerAppsCLI folder.
