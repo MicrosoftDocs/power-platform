@@ -26,7 +26,7 @@ A principal capability of a managed environment is enforcing policies that defin
 
 ## New environment filters
 
-New environment filters have been introduced to the data policies page in the Power Platform admin center that will help you identify all the data policies that are applied to an environment.
+New environment filters have been introduced to the data policies page in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) that will help you identify all the data policies that are applied to an environment.
 
 > [!NOTE]
 > The environment filters are exclusively available for managed environments.
@@ -35,11 +35,11 @@ Open the “Edit Environment Management” settings panel for a managed environm
 
 :::image type="content" source="media/managed-environment-weekly-see-active-data-policies.png" alt-text="Managed environment - see active data policies for this environment":::
 
-You can see the managed environment data policies in the Power Platform admin center.
+You can see the managed environment data policies in the **Data policies** page in the Power Platform admin center.
 
 :::image type="content" source="media/managed-environment-data-policies.png" alt-text="Managed environment - data policies in Power Platform admin center":::
 
-If there are no data policies applied to the Managed Environment, the data policies page will be empty. We highly recommend that all environments in your tenant are protected by DLP.
+If there are no data policies applied to the managed environment, the data policies page will be empty. We highly recommend that all environments in your tenant are protected by DLP.
 
 
 
