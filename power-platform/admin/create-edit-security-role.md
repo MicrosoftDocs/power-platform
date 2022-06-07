@@ -135,6 +135,16 @@ All edits done to predefined security roles by the environment admin are managed
 
 7. Select **Advanced** in the action bar, and then select **See solution layers**. 
 
+   :::image type="content" source="media/security-select-see-solution-layers.png" alt-text="Select Advanced > See solution layers.":::
+
+8. Select the row with a solution name of **Unmanaged** layer. 
+
+9. Select **Remove unmanaged layer button** on the action bar. 
+
+   :::image type="content" source="media/security-remove-unmanaged-layer.png" alt-text="Select Unmanaged layer > Remove unmanaged layer.":::
+
+All your edits to the security role will be removed. 
+
 ## Minimum privileges for common tasks  
  It's helpful to keep in mind the minimum privileges that are needed for some common tasks. This means that a user is required to have a security role with these privileges in order to run applications. 
  
