@@ -4,7 +4,7 @@ description: "Learn about known issues with document management"
 keywords: encrypt
 ms.date: 05/06/2022
 ms.custom: 
-ms.topic: article
+ms.topic: conceptual
 applies_to: 
   - PowerApps
 ms.assetid: 
