@@ -1,6 +1,6 @@
 ---
 title: Icon control reference | Creator Kit
-description: Learn about the details and properties of Icon control in the Creator Kit.
+description: Learn about the details and properties of the Icon control in the Creator Kit.
 author: denisem-msft
 manager: devkeydet
 ms.component: pa-maker
@@ -29,7 +29,7 @@ A control used to display Fluent UI icons.
 
 ## Description
 
-This control renders Fluent UI icons based on the name. Allows you to easily create an Icon Button and Action Button with custom styling.
+This control renders Fluent UI icons based on the name. You can use it to easily create an icon button and action button with custom styling.
 
 For a list of icons, go to [Fluent UI icons](https://developer.microsoft.com/fluentui#/styles/web/icons).
 
@@ -48,25 +48,25 @@ This code component can only be used in canvas apps and custom pages.
 | `Icon type` | Renders the icon as an action button, icon button, or icon only. |
 | `Text` | Text displayed (action button type only) |
 | `Text alignment` | Position of the text (action button type only) |
-| `Icon color` | Color of the icon |
-| `Icon size` | Size of the icon |
-| `Font size` | Size of the font (action button type only) |
-| `Font color` | Color of the font |
-| `Fill color` | Background fill color of the icon |
-| `Border color` | Border color of the icon |
-| `Border radius` | Roundness of the corners |
+| `Icon color` | The color of the icon |
+| `Icon size` | The size of the icon |
+| `Font size` | The size of the font (action button type only) |
+| `Font color` | The color of the font |
+| `Fill color` | The color of the background fill of the icon |
+| `Border color` | The color of the border of the icon |
+| `Border radius` | The roundness of the corners |
 
 ## Additional properties
 
 | Property | Description |
 | -------- | ----------- |
-| `Hover icon color` | Color of the icon while hovering |
-| `Hover font color` | Color of the font while hovering |
-| `Hover fill color` | Color of the fill while hovering |
-| `Hover border color` | Color of the border while hovering |
+| `Hover icon color` | The color of the icon that appears on hover |
+| `Hover font color` | The color of the font that appears on hover |
+| `Hover fill color` | The color of the fill that appears on hover |
+| `Hover border color` | The color of the border that appears on hover |
 
 ## Best practices
 
-See [Fluent UI `Icon` control best practices](https://developer.microsoft.com/fluentui#/controls/web/contextmenu)
+Go to [Fluent UI Icon control best practices](https://developer.microsoft.com/fluentui#/controls/web/icon).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

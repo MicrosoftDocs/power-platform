@@ -5,7 +5,7 @@ author: jimholtz
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/17/2021
+ms.date: 06/05/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -53,8 +53,8 @@ Specify to audit specific areas of the product, as described in the following ta
 |Marketing Entities|Campaign|  
 |Customer Service Entities|Article, Case, Client Feedback, Contract, and Service|  
   
-### See also  
- [Audit data and user activity](/powerapps/developer/common-data-service/audit-user-access)
+### See also
 
+[Dataverse developer guide: Configure auditing](/power-apps/developer/data-platform/auditing/configure)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
