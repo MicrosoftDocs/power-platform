@@ -4,7 +4,7 @@ description: This topic covers information on how customers can review and appro
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/16/2022
+ms.date: 06/08/2022
 author: mihaelablendea
 ms.author: mihaelab
 ms.reviewer: jimholtz
@@ -42,7 +42,7 @@ All updates to a lockbox request are recorded and made available to your organiz
 Power Platform applications and services store customer data in several Azure storage technologies. When you turn on Customer Lockbox for an environment, customer data associated with the respective environment is protected by the lockbox policy, irrespective of the storage type.  
  
 > [!NOTE]
-> Currently, the applications and services where lockbox policy is going to be enforced once enabled are Power Apps (including AI Builder, Power Apps portals), Power Automate, and Dataverse.
+> Currently, the applications and services where lockbox policy is going to be enforced once enabled are Power Apps (including AI Builder, Power Apps portals), Power Automate, Dataverse, and Customer Insights.
 
 ## Workflow 
 
