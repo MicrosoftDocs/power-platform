@@ -37,7 +37,7 @@ There is another set of security roles that is assigned to [application users](s
 Which predefined security roles are available in your environment depends on the environment type.
 
 ## Edit predefined security roles  
-You can [Edit a predefined security role](create-edit-security-role.md#edit-a-predefined-security-role) and your updates will remain in the environment and will not be reverted to the default system settings during subsequent system updates. This provides you with the capability to use the system’s predefined security roles and customize them based on your business needs. 
+You can [Edit a predefined security role](create-edit-security-role.md#edit-a-security-role) and your updates will remain in the environment and will not be reverted to the default system settings during subsequent system updates. This provides you with the capability to use the system’s predefined security roles and customize them based on your business needs.  
 
 > [!NOTE]
 > When you add or remove privileges from the predefined security roles, it affects your application and user experience. Subsequent releases of the application might not work for your users whose predefined security role was modified. 
