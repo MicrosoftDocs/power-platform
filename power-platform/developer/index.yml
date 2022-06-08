@@ -79,7 +79,7 @@ landingContent:
       - linkListType: reference
         links:
           - text: Power Platform CLI
-            url: ./event-framework.md
+            url: ./cli/power-platform-cli.md
 
   # Card
   - title: Related resources
