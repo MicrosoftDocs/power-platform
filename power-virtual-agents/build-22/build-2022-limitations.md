@@ -34,7 +34,7 @@ This technology preview doesn't yet support some of the existing features you're
 - Passing uninitialized variables to [flows](advanced-flow.md) causes an error.
 - The bot offers support to the user only in the English language.
 
-## Upcoming future releases
+## Upcoming releases
 
 - Custom entities
 - Skills
