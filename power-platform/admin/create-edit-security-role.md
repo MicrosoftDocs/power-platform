@@ -81,7 +81,7 @@ For information on predefined security roles, see [Predefined security roles](da
 >  To cycle through the access levels, you can also select the privilege column heading, or select the record type multiple times.  
 >  There are a set of minimum privileges that are required in order for the new security role to be used - see below Minimum Privileges for common tasks.
 
-## Edit a predefined security role  
+## Edit a security role  
  Before you edit an existing security role, make sure that you understand the principles of data access. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Controlling Data Access](../admin/security-roles-privileges.md)  
   
 > [!NOTE]
@@ -113,7 +113,7 @@ For information on predefined security roles, see [Predefined security roles](da
   
 ## Remove predefined security role edits
 
-All edits done to predefined security roles by the environment admin are managed by our solution layering. These edits can be removed to restore the predefined security role to the default system settings. 
+All edits done to [predefined security roles](database-security.md#predefined-security-roles) by the environment admin are managed by our solution layering. These edits can be removed to restore the predefined security role to the default system settings. 
 
 1. Sign in to [Power Apps](https://make.powerapps.com/) as an admin (local environment admin, Dynamics 365 admin, Global admin, or Microsoft Power Platform admin). 
 
