@@ -59,9 +59,11 @@ This weekly admin digest is sent to all users with the [Power Platform administr
 
 :::image type="content" source="media/managed-environment-weekly-digest-email-recipients.png" alt-text="Managed Environment email recipients to get weekly digest":::
 
-
-
 ### See also  
+[Managed Environment overview](managed-environment-overview.md) <br />
+[Enable Managed Environment](managed-environment-enable.md) <br />
+[Sharing limits](managed-environment-sharing-limits.md)  <br />
+[Data policies](managed-environment-data-policies.md)
 
 
 

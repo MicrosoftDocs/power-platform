@@ -54,16 +54,7 @@ Follow these steps to enable Managed Environment.
 |**[Data policies](managed-environment-data-policies.md)**     |         |
 |See active data policies for this environment     | Create policies that define the consumer connectors that specific data can be shared with.         |
 
-
-
-
-
-
-
-
-
-
-
+## Enable Managed Environment using PowerShell
 
 Admins can remove the Managed Environment property on an environment using the available API if respective environment is not using any of the capabilities available. The following is an example on how to call the API to set the Managed Environment property using PowerShell: 
 
@@ -76,7 +67,7 @@ Set-AdminPowerAppEnvironmentGovernanceConfiguration -EnvironmentName <Environmen
 
 ## Permissions
 
-- Users with either the global admin, Power Platform service admin or Dynamics 365 admin AAD roles are allowed to enable environment management. 
+- Users with either the global admin, Power Platform service admin or Dynamics 365 admin Azure Active Directory roles are allowed to enable environment management. 
 - Any user with permission to see environment details can retrieve the Managed Environment property for the environment.  
 - Users with the delegated admin role are not allowed to change the Managed Environment property on an environment. 
 - Users with the Environment Admin security role are not allowed to change the Managed Environment property on an environment.  
@@ -85,6 +76,11 @@ Set-AdminPowerAppEnvironmentGovernanceConfiguration -EnvironmentName <Environmen
 > Copy and restore environment lifecycle operations require Managed Environment property to be the same between source and destination before the respective environment lifecycle operation can start. 
 
 ### See also  
+[Managed Environment overview](managed-environment-overview.md) <br />
+[Weekly digests](managed-environment-weekly-digests.md) <br />
+[Sharing limits](managed-environment-sharing-limits.md)  <br />
+[Data policies](managed-environment-data-policies.md)
+
 
 
 

@@ -41,9 +41,15 @@ You can see the managed environment data policies in the **Data policies** page 
 
 If there are no data policies applied to the managed environment, the data policies page will be empty. We highly recommend that all environments in your tenant are protected by DLP.
 
-
-
 ### See also  
+[Managed Environment overview](managed-environment-overview.md) <br />
+[Enable Managed Environment](managed-environment-enable.md) <br />
+[Weekly digests](managed-environment-weekly-digests.md) <br />
+[Sharing limits](managed-environment-sharing-limits.md)  <br />
+
+
+
+
 
 
 

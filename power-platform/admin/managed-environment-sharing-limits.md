@@ -4,8 +4,8 @@ description: Learn how to use Managed Environment to enable sharing limits.
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 06/27/2022
-author: mikferland-msft
-ms.author: miferlan
+author: alaug 
+ms.author: alaug
 ms.reviewer: jimholtz
 contributors:
   - mikferland-msft
@@ -38,6 +38,11 @@ Managed Environment allow admins to influence how broadly makers can share canva
 
 
 ### See also  
+[Managed Environment overview](managed-environment-overview.md) <br />
+[Enable Managed Environment](managed-environment-enable.md) <br />
+[Weekly digests](managed-environment-weekly-digests.md) <br />
+[Data policies](managed-environment-data-policies.md)
+
 
 
 
