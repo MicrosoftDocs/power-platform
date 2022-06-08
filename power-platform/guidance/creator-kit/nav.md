@@ -1,6 +1,6 @@
 ---
 title: Nav control reference | Creator Kit
-description: Learn about the details and properties of Nav control in the Creator Kit.
+description: Learn about the details and properties of the Nav control in the Creator Kit.
 author: denisem-msft
 manager: devkeydet
 ms.component: pa-maker
@@ -32,7 +32,7 @@ A control used to provide navigation.
 
 A navigation pane (`Nav`) provides links to the main areas of an app or site.
 
-The `Nav` code component allows using of the [Fluent UI `Nav` menu component](https://developer.microsoft.com/fluentui#/controls/web/nav) from inside canvas apps and custom pages.
+The `Nav` code component allows using the [Fluent UI `Nav` menu component](https://developer.microsoft.com/fluentui#/controls/web/nav) from inside canvas apps and custom pages.
 
 > [!NOTE]
 > Component source code and more information in the [GitHub code components repository](https://github.com/microsoft/powercat-code-components/tree/main/Nav).
@@ -46,18 +46,18 @@ This code component can only be used in canvas apps and custom pages.
 | Property | Description |
 | -------- | ----------- |
 | `Items` | Required. The data source items table to render. |
-| `Fields` | Required. The fields needed are indicated. |
+| `Fields` | Required. The fields that are needed. |
 | `Columns` | Required. Table mapping definition between the component column and the data source. Use this property to map field names and define specific column behavior. |
 
 ## Additional properties
 
 | Property | Description |
 | -------- | ----------- |
-| `Selected key` | The key that is selected by default |
+| `Selected key` | The key that's selected by default |
 
 ## Items structure
 
-Each item uses the below schema to visualize data in the component. 
+Each item uses the following schema to visualize data in the component. 
 
 | Name | Description |
 | ------ | ----------- |
@@ -65,7 +65,7 @@ Each item uses the below schema to visualize data in the component.
 | `ItemDisplayName` | Text to display in the breadcrumb item. |
 | `ItemIconName` | Name of the [Fluent UI icon](https://developer.microsoft.com/fluentui#/styles/web/icons) for the item |
 | `ItemIconColor` | Color of the item icon |
-| `ItemExpanded` | Whether the item is expanded by default, if there are children items |
+| `ItemExpanded` | Whether the item is expanded by default, if there are child items |
 | `ItemVisible` | Whether the item is rendered |
 | `ItemParentKey` | ItemKey of the parent the item is nested under |
 
@@ -133,6 +133,6 @@ Replace the `false` values with appropriate expressions in the Power Fx language
 
 ## Best practices
 
-See [Fluent UI `Nav` control best practices](https://developer.microsoft.com/fluentui#/controls/web/nav)
+Go to [Fluent UI Nav control best practices](https://developer.microsoft.com/fluentui#/controls/web/nav).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

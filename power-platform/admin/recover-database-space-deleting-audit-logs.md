@@ -5,7 +5,7 @@ author: jimholtz
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/18/2022
+ms.date: 06/05/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -42,9 +42,10 @@ When you enable auditing, customer engagement apps (Dynamics 365 Sales, Dynamics
    > [!NOTE]
    >  You can only delete the oldest audit log in the system. To delete more than one audit log, continue to delete the oldest audit log until you have deleted enough logs.  
   
-### See also  
+### See also
+
 [Audit data and user activity](audit-data-user-activity.md)<br />
-[Retrieve and delete the history of audited data changes](/powerapps/developer/common-data-service/retrieve-and-delete-the-history-of-audited-data-changes)
+[Dataverse developer guide: Delete audit data](/power-apps/developer/data-platform/auditing/delete-audit-data)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

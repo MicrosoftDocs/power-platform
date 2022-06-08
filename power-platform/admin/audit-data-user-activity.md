@@ -3,7 +3,7 @@ title: "Audit data and user activity for security and compliance"
 description: "Learn how to use auditing to log changes to records and user access. System admins and customizers can use this feature to meet security and compliance policies."
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/16/2021
+ms.date: 06/05/2022
 author: tjvass
 ms.subservice: admin
 ms.author: tjvass
@@ -44,7 +44,8 @@ System administrators and customizers can start or stop auditing for an organiza
 > [!IMPORTANT]
 > For Customer Engagement (on-premises), you may notice that auditing can significantly increase the size of the organization database over time. You can delete audit logs by going to **Settings** > **Auditing** > **Audit Log Management**. Additionally, you may want to stop auditing for maintenance purposes. Stopping auditing stops tracking for the organization during the period until auditing is started again. When you start auditing again, the same auditing selection is maintained that was previously used.  
   
-## Start/stop auditing and set retention policy  
+## Start/stop auditing and set retention policy
+
 This task requires the system administrator or customizer security role or equivalent permissions.  
   
 1. Browse to the Microsoft Power Platform admin center and sign in using administrator credentials. 
@@ -72,6 +73,8 @@ This task requires the system administrator or customizer security role or equiv
    Each audit log is stamped with the currently active retention period. Changing the retention period will not change already existing audit logs and is only applied to newly created audit logs. 
 
 4. Select **Save**.
+
+More information: [Dataverse developer guide: Configure auditing > Configure organization settings](/power-apps/developer/data-platform/auditing/configure#configure-organization-settings)
   
 ## Set specific areas of the product to audit
 
@@ -90,7 +93,8 @@ This task requires the system administrator or customizer security role or equiv
   
 5. Select **OK**.  
 
-## View audit logging details  
+## View audit logging details
+
 System administrators can see activity for the entities that are enabled for audit logging.  
   
 1. Browse to the Power Platform admin center and sign in using administrator credentials. 
@@ -105,6 +109,8 @@ System administrators can see activity for the entities that are enabled for aud
 
 > [!IMPORTANT]
 > Large attribute values, such as [Email.description](/powerapps/developer/common-data-service/reference/entities/email) or [Annotation](/powerapps/developer/common-data-service/reference/entities/annotation), are limited (capped) at 5KB or ~5,000 characters. A capped attribute value can be recognized by three dots at the end of the text, for example, “lorem ipsum, lorem ip…”.
+
+More information: [Dataverse developer guide: Retrieve the history of audited data changes](/power-apps/developer/data-platform/auditing/retrieve-audit-data)
 
 ## Enable or disable entities and fields for auditing  
 
@@ -128,7 +134,7 @@ System administrators or customizers can change the default audit settings for e
   
 7. Publish the customization. To publish for a single entity, choose the entity, such as Account, and then select **Publish** on the toolbar.  
   
-### Enable or disable auditing for specific fields on an entity 
+### Enable or disable auditing for specific fields on an entity
   
 1. Under the entity for which you want to enable or disable auditing with specific fields, select **Fields**.  
   
@@ -140,8 +146,11 @@ System administrators or customizers can change the default audit settings for e
   
 4. Publish the customization. To publish for a single entity, choose the entity, such as Account, and then select **Publish** on the Actions toolbar.  
 
+More information: [Dataverse developer guide: Configure auditing > Configure tables and columns](/power-apps/developer/data-platform/auditing/configure#configure-tables-and-columns)
 
+### See also
 
-
+[Dataverse developer guide: Configure auditing](/power-apps/developer/data-platform/auditing/configure)<br />
+[Dataverse developer guide: Retrieve the history of audited data changes](/power-apps/developer/data-platform/auditing/retrieve-audit-data)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
