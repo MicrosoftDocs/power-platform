@@ -1,6 +1,6 @@
 ---
-title: "Managed environments overview | MicrosoftDocs"
-description: Use managed environments to gain more visibility and control of your Dynamics 365 applications and flows, with less effort.
+title: "Managed Environment overview | MicrosoftDocs"
+description: Use Managed Environment to gain more visibility and control of your Dynamics 365 applications and flows, with less effort.
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 06/27/2022
@@ -20,11 +20,11 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Managed environments overview
+# Managed Environment overview
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Managed Environments is a suite of capabilities that allow admins to manage Power Platform at scale with more control, less effort, and more insights. Admins can enable environment management on any type of environment. There are four primary elements of Managed Environment: 
+Managed Environment is a suite of capabilities that allow admins to manage Power Platform at scale with more control, less effort, and more insights. Admins can enable environment management on any type of environment. There are four primary elements of Managed Environment: 
 
 - [Enable environment management](managed-environment-enable.md)
 - [Weekly digests](managed-environment-weekly-digests.md)

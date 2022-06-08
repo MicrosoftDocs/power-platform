@@ -1,6 +1,6 @@
 ---
-title: "Enable environment management | MicrosoftDocs"
-description: Learn how to enable environment management.
+title: "Enable Managed Environment | MicrosoftDocs"
+description: Learn how to enable Managed Environment.
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 06/27/2022
@@ -20,20 +20,50 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Enable environment management
+# Enable Managed Environment
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Intro paragraph.
+Admins can enable Managed Environment using the [Power Platform admin center](managed-environment-enable.md) or by using PowerShell. 
 
 > [!IMPORTANT]
 > - This is a preview feature.
 > - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 > - This feature is being gradually rolled out across regions and might not be available yet in your region.
 
-Admins can enable environment management using the [Power Platform admin center](managed-environment-enable.md) or by calling the API from PowerShell. 
+## Enable Managed Environment in the Power Platform admin center
 
-UX workflow here
+Follow these steps to enable Managed Environment.
+
+1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
+
+2. On the command bar, select **Managed Environment**.
+
+3. Configure Managed Environment settings and then select **Enable**.
+
+:::image type="content" source="media/managed-environment-enable.png" alt-text="Select Managed Environment.":::
+
+|Setting  |Description  |
+|---------|---------|
+|**[Weekly digest](managed-environment-weekly-digests.md)**     |         |
+|Include this environment     | Select to have the selected environment be managed.       |
+|Email recipients     | Add the email addresses of those who will receive weekly analytics about your top apps and flows, your most impactful makers, and inactive resources you can safely clean up.        |
+|**[Limit sharing](managed-environment-sharing-limits.md)**     |         |
+|Exclude sharing with security groups     | Enable so [makers](/power-apps/learning-catalog/app-maker) cannot share canvas apps with any security groups. <br />Admins get the option to proceed with setting a limit on individuals shared to.        |
+|Limit total individuals who can be shared to    | Enable so makers cannot share canvas apps with more individuals than specified in the text box. <br /> You must enable **Exclude sharing with security groups** to enable this setting.        |
+|**[Data policies](managed-environment-data-policies.md)**     |         |
+|See active data policies for this environment     | Create policies that define the consumer connectors that specific data can be shared with.         |
+
+
+
+
+
+
+
+
+
+
+
 
 Admins can remove the Managed Environment property on an environment using the available API if respective environment is not using any of the capabilities available. The following is an example on how to call the API to set the Managed Environment property using PowerShell: 
 
