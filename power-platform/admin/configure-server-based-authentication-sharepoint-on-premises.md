@@ -2,10 +2,9 @@
 title: "Configure server-based authentication with SharePoint on-premises | MicrosoftDocs"
 description: Configure server-based authentication with SharePoint on-premises
 author: Mattp123
-
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/04/2020
+ms.date: 06/08/2022
 ms.subservice: admin
 ms.author: matp
 search.audienceType: 
@@ -24,20 +23,17 @@ Server-based [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint-long.
   
 <a name="perms"></a>   
 
-## Permissions required  
-[!INCLUDE[pn_Office_365](../includes/pn-office-365.md)]
+## Permissions required
+
+The following memberships and privileges are required to enable SharePoint document management.
+
+- [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] Global admin membership - this is required for administrative-level access to the [!INCLUDE[pn_MS_Office_365](../includes/pn-ms-office-365.md)] subscription and to run the [!INCLUDE[pn_Windows_Azure](../includes/pn-windows-azure.md)][!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] cmdlets.  
   
-- Global admin membership - this is required for administrative-level access to the [!INCLUDE[pn_MS_Office_365](../includes/pn-ms-office-365.md)] subscription and to run the [!INCLUDE[pn_Windows_Azure](../includes/pn-windows-azure.md)][!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] cmdlets.  
+- Power Apps **Run SharePoint Integration Wizard** privilege. This is required to run the Enable Server-based Authentication wizard.  
   
-Customer engagement apps 
+     By default, the System Administrator security role has this privilege.  
   
-- **Run SharePoint Integration Wizard** privilege. This is required to run the Enable Server-based Authentication wizard.  
-  
-     By default, the System Administrator security role has this permission.  
-  
-  [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises  
-  
-- Farm Administrators group membership - this is required to run most of the [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] commands on the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] server.  
+- For  [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises integration, SharePoint Farm Administrators group membership. This is required to run most of the [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] commands on the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] server.  
   
 <a name="setups2s"></a>   
 
@@ -48,8 +44,9 @@ Customer engagement apps
 > The steps described here must be completed in the order provided. If a task is not completed, such as a [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] command that returns an error message, the issue must be resolved before you continue to the next command, task, or step.  
   
   
-### Verify prerequisites  
- Before you configure customer engagement apps and [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises for server-based authentication, the following prerequisites must be met:  
+### Verify prerequisites
+
+Before you configure customer engagement apps and [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises for server-based authentication, the following prerequisites must be met:  
   
 <a name="BKMK_SP_prereq"></a>   
 
