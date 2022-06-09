@@ -17,7 +17,7 @@ ms.collection: virtual-agent
 
 [!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
 
-You can enable your bot to perform an action by calling a Microsoft Power Automate flow. Flows can help you automate activities or call backend systems. For example, you can use flows with end-user authentication to retrieve information about a user after they've signed in.
+You can help your bot to perform an action by calling a Microsoft Power Automate flow. Flows can help you automate activities or call backend systems. For example, you can use flows with end-user authentication to retrieve information about a user after they've signed in.
 
 Your call flows from within topics as a discrete **Call an action** node. You can utilize flows that have already been created in your Power Apps environment or create a flow from within the Power Virtual Agents [authoring canvas](authoring-create-edit-topics.md).
 
@@ -40,7 +40,7 @@ Flows typically use variables to input and output information. The variables can
 
 1. Click on the plus (**+**) button below an existing node to add a new node.
 
-1. Select **Call an action** in the node selection window,, and then select **Create a new flow**.
+1. Select **Call an action** in the node selection window, and then select **Create a new flow**.
 
     :::image type="content" source="media/advanced-flow/UseCreateFlowOption.jpg" alt-text="Create a new Power Automate flow." border="false":::
 
@@ -65,17 +65,17 @@ If you make changes to a flow in the Power Automate portal after adding the flow
 
 :::image type="content" source="media/advanced-flow/refresh-flow-node.png" alt-text="Screenshot of flow refresh button." border="false":::
 
-The flow will then be re-validated, and any problems detected will need to be fixed before you can save.
+The flow will then be revalidated, and any problems detected will need to be fixed before you can save.
 
 ## Input and output parameters
 
-There is no upper limit on how many input or output parameters Power Automate flow for a bot can have. Bots can use the following types of inputs and outputs with Power Automate flows:
+There's no upper limit on how many input or output parameters Power Automate flow for a bot can have. Bots can use the following types of inputs and outputs with Power Automate flows:
 
 - Number
 - String
 - Boolean
 
-The following types are not supported:
+The following types aren't supported:
 
 - Object
 - Date
@@ -136,7 +136,7 @@ In Power Virtual Agents, you can now see this new flow on the list of available 
 
 ## Optionally move a flow from Default Solution to another solution
 
-To be available to your bots, flows must be stored in a solution in Power Automate. If you do not want to use the **Default Solution** for this purpose, you can move your flows to another solution.
+To be available to your bots, flows must be stored in a solution in Power Automate. If you don't want to use the **Default Solution** for this purpose, you can move your flows to another solution.
 
 1. On the Power Automate portal, go to the **Solutions** tab, to see the available solutions. Use any of the existing solutions or create a new solution for your flows.
 
