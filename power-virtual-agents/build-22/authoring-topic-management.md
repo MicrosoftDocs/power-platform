@@ -23,7 +23,7 @@ There are a number of ways you can manage your topics. Power Virtual Agents incl
   - [Topic errors](#topic-errors)
     - [Types of errors](#types-of-errors)
   - [Topic status](#topic-status)
-  - [Copying a topic](#copying-a-topic)
+  - [Copy a topic](#copy-a-topic)
 
 ## Topic errors
 
