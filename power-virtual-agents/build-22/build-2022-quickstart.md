@@ -26,7 +26,7 @@ This quick start walks you through making a bot that uses new features and impro
 
 ## Create a bot
 
-Power Virtual Agents now has an app-level home page that is not specific to any bot. You can create a new bot and view a list of bots you've previously created on this page.
+Power Virtual Agents now has an app-level home page that isn't specific to any bot. You can create a new bot and view a list of bots you've previously created on this page.
 
 :::image type="content" source="media/build-2022-quickstart/new-bot1.png" alt-text="Screenshot of the app-level home page.":::
 
@@ -57,11 +57,11 @@ Power Virtual Agents now has an app-level home page that is not specific to any 
     - `Hi there!`
     - `Hi!`
 
-1. Click on the **+Add** button and paste the Image URL in the **Image** box to [Add an image card](advanced-cards.md#image-card), . The image of the restaurant will help the user visually confirm that they're looking at the correct location.
+1. Click on the **+Add** button and paste the Image URL in the **Image** box to [Add an image card](advanced-cards.md#image-card). The image of the restaurant will help the user visually confirm that they're looking at the correct location.
 
     :::image type="content" source="media/build-2022-quickstart/image-card.png" alt-text="Screenshot of speech mode toggle.":::
 
-1. Click on the next node, to add a second **Message** node, and type the message `We're open 9 am to 5 pm Monday through Friday, and 10 am through 8 pm on the weekends. Please note that reservations can only be made for the next 7 days.`
+1. Click on the next node, to add a second **Message** node, and type the message `We're open 9 am to 5 pm Monday through Friday, and 10 am through 8 pm on the weekends. Please note that reservations can only be made for the next seven days.`
 
 1. Change the edit mode to **Speech**.
 
@@ -69,7 +69,7 @@ Power Virtual Agents now has an app-level home page that is not specific to any 
 
     :::image type="content" source="media/build-2022-quickstart/message-speech-mode.png" alt-text="Screenshot of speech mode toggle.":::
 
-1. Add the message `We're open 9am to 5pm Monday through Friday, and 10am through 8pm on the weekends. <emphasis level="strong">Please note</emphasis><break strength="medium" />, reservations can only be made for the next 7 days.`
+1. Add the message `We're open 9am to 5pm Monday through Friday, and 10am through 8pm on the weekends. <emphasis level="strong">Please note</emphasis><break strength="medium" />, reservations can only be made for the next seven days.`
 
    When the bot speaks the message over a phone call, it will emphasize on "Please note" and pause for a moment before continuing.
 
@@ -103,11 +103,11 @@ Power Virtual Agents now has an app-level home page that is not specific to any 
 
 1. [Add a **ConditionItem** node](authoring-create-edit-topics.md#add-a-condition) and [change it to a formula](advanced-power-fx.md#use-power-fx-as-a-condition).
 
-1. Enter the [Power Fx formula](advanced-power-fx.md) `Topic.reservationDateTime < Today() || DateDiff(Today(), Topic.reservationDateTime) > 7`. This formula will evaluate to true if the date the user provided is in the past or more than 7 days away.
+1. Enter the [Power Fx formula](advanced-power-fx.md) `Topic.reservationDateTime < Today() || DateDiff(Today(), Topic.reservationDateTime) > 7`. This formula will evaluate to true if the date the user provided is in the past or more than seven days away.
 
     :::image type="content" source="media/build-2022-quickstart/condition-formula.png" alt-text="Screenshot of Power Fx formula in a condition node.":::
 
-1. Under the **ConditionItem** node, add a **Message** node. This message will remind the user that reservations can only be made in the next 7 days. Enter the message `Sorry, I can only make reservations for the next 7 days.`
+1. Under the **ConditionItem** node, add a **Message** node. This message will remind the user that reservations can only be made in the next seven days. Enter the message `Sorry, I can only make reservations for the next seven days.`
 
 1. Under the **All Other Conditions** node, add a **Message** node. This message will confirm the user's reservation.
     1. Enter `Your reservation has been made for`
@@ -130,11 +130,11 @@ The **End of conversation** topic is a pre-built topic designed to check if the 
 
 1. Click on the **Test** button to open the test canvas.
 
-1. Interact with the bot by clicking on the **Make a reservation** quick reply. The bot will reply based on the conditions added till it redirects to the end of the conversation topic and asks you to rate your experience.
+1. Interact with the bot by clicking on the **Make a reservation** quick reply. The bot will reply based on the conditions added until it redirects to the end of the conversation topic and asks you to rate your experience.
 
 ## Next steps
 
-1. To allows users to call your bot, you need to [enable and configure the Telephony channel](publication-connect-bot-to-telephony.md).
+1. To allow users to call your bot, you need to [enable and configure the Telephony channel](publication-connect-bot-to-telephony.md).
 
 1. Optionally, [customize your bot's voice font](advanced-speech-settings.md).
 
