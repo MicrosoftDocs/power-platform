@@ -68,7 +68,7 @@ A component represents something that you can potentially customize. Anything th
 > ![Components in solution.](media/components-in-solution.png "Components in solution") 
 
 > [!NOTE]
-> - A solution can be up to 30 MB in size.
+> - A solution can be up to 32 MB in size.
 > - You can't edit components directly within a managed solution.
 
 To view a list of component types that can be added to any solution, see [ComponentType Options](/powerapps/developer/common-data-service/reference/entities/solutioncomponent#componenttype-options). 
