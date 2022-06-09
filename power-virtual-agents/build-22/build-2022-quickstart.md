@@ -97,9 +97,9 @@ Power Virtual Agents now has an app-level home page that is not specific to any 
 
 1. Add a **Question** node and enter the message `What is the desired time and date of your reservation?`
 
-1. For **Identify** choose **Date and time**. This [entity](advanced-entities-slot-filling.md) enables your bot to extract a date and time from the user's response.
+1. For **Identify**, choose **Date and time**. This [entity](advanced-entities-slot-filling.md) enables your bot to extract a date and time from the user's response.
 
-1. For **Save response as** [create a new variable](authoring-variables.md) named `reservationDateTime`.
+1. For **Save response as**, [create a new variable](authoring-variables.md) named `reservationDateTime`.
 
 1. [Add a **ConditionItem** node](authoring-create-edit-topics.md#add-a-condition) and [change it to a formula](advanced-power-fx.md#use-power-fx-as-a-condition).
 
