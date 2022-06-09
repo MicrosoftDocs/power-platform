@@ -80,7 +80,7 @@ By default, new topics will be created with their status set to **On**.
 > [!NOTE]
 > The Topic Checker will identify an error if a topic redirects to an 'off' topic.
 
-## Copying a topic
+## Copy a topic
 
 Once you have created a few topics, you may want to use a previous topic as a baseline when creating new topics.
 
