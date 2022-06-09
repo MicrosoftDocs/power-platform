@@ -1,6 +1,6 @@
 ---
 title: "Weekly digests | MicrosoftDocs"
-description: Learn how to use environment management to enable weekly digests.
+description: Learn how to use Managed Environment to enable weekly digests.
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 06/27/2022
@@ -48,19 +48,19 @@ The third section of the email provides the most popular applications and flows 
 
 ## Which environments are included in the weekly digest?
 
-This weekly digest provides insights into all managed environments in your tenant. You can exclude a managed environment from the weekly digest with the **Include this environment** checkbox under the **Weekly digest** section of the **Edit Environment Management** settings panel. If you have five managed environments and one of them is excluded from the analysis, then your weekly digest will provide insights into four managed environments. If you exclude all your managed environments, Power Platform will not send your weekly digest.
+This weekly digest provides insights into all managed environments in your tenant. You can exclude a managed environment from the weekly digest with the **Include this environment** checkbox under the **Weekly digest** section of the **Edit Managed Environment** settings panel. If you have five managed environments and one of them is excluded from the analysis, then your weekly digest will provide insights into four managed environments. If you exclude all your managed environments, Power Platform will not send your weekly digest.
 
 :::image type="content" source="media/managed-environment-weekly-digest-include-environment.png" alt-text="Managed Environment include this environment":::
 
 ## Who can receive the weekly digest?
 
-The weekly digest is sent to all users with the [Power Platform administrator](use-service-admin-role-manage-tenant.md#power-platform-administrator) and [Dynamics 365 service administrator](use-service-admin-role-manage-tenant.md#dynamics-365-administrator) roles. You can add additional recipients by adding their email addresses in the **Email recipients** textbox under the **Weekly digest** section of the **Edit Managed Environments** settings panel in the Power Platform admin center. If you add “anotherAdmin@email.com”, then the weekly digest will be sent to Power Platform administrators, Dynamics 365 administrators, and “anotherAdmin@email.com”.
+The weekly digest is sent to all users with the [Power Platform administrator](use-service-admin-role-manage-tenant.md#power-platform-administrator) and [Dynamics 365 service administrator](use-service-admin-role-manage-tenant.md#dynamics-365-administrator) roles. You can add additional recipients by adding their email addresses in the **Email recipients** textbox under the **Weekly digest** section of the **Edit Managed Environment** settings panel in the Power Platform admin center. If you add “anotherAdmin@email.com”, then the weekly digest will be sent to Power Platform administrators, Dynamics 365 administrators, and “anotherAdmin@email.com”.
 
 :::image type="content" source="media/managed-environment-weekly-digest-email-recipients.png" alt-text="Managed Environment email recipients to get weekly digest":::
 
 ### Use PowerShell to configure weekly digest
 
-You can use PowerShell to configure additional email recipients. The followin script is an example for adding two additional email recipients. When you run the script, two email addresses will appear in the **Email recipients** textbox under the **Weekly digest** section of the **Edit Managed Environments** settings panel in the Power Platform admin center. 
+You can use PowerShell to configure additional email recipients. The followin script is an example for adding two additional email recipients. When you run the script, two email addresses will appear in the **Email recipients** textbox under the **Weekly digest** section of the **Edit Managed Environment** settings panel in the Power Platform admin center. 
 
 #### Add additional email recipients
 ```PowerShell

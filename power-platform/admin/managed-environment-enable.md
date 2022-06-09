@@ -31,13 +31,15 @@ Admins can enable Managed Environment using the [Power Platform admin center](ma
 > - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 > - This feature is being gradually rolled out across regions and might not be available yet in your region.
 
-## Enable Managed Environment in the Power Platform admin center
+## Enable or edit Managed Environment in the Power Platform admin center
 
 Follow these steps to enable Managed Environment.
 
 1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
 
-2. On the command bar, select **Managed Environment**.
+2. Select the check mark to the left of an environment. 
+
+3. On the command bar, for an unmanaged environment, select **Enable Managed Environment**. For a managed environment, select **Edit Managed Environment**.
 
 3. Configure Managed Environment settings and then select **Enable**.
 
@@ -65,9 +67,11 @@ $UpdatedGovernanceConfiguration = [pscustomobject]@{
 Set-AdminPowerAppEnvironmentGovernanceConfiguration -EnvironmentName <EnvironmentID> -UpdatedGovernanceConfiguration $UpdatedGovernanceConfiguration
 ```
 
+## Edit
+
 ## Permissions
 
-- Users with either the global admin, Power Platform service admin or Dynamics 365 admin Azure Active Directory roles are allowed to enable environment management. 
+- Users with either the global admin, Power Platform service admin or Dynamics 365 admin Azure Active Directory roles are allowed to enable Managed Environment. 
 - Any user with permission to see environment details can retrieve the Managed Environment property for the environment.  
 - Users with the Delegated Admin role aren't allowed to change the Managed Environment property in an environment. 
 - Users with the Environment Admin security role aren't allowed to change the Managed Environment property in an environment.  
