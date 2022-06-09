@@ -50,7 +50,7 @@ Power Virtual Agents now has an app-level home page that isn't specific to any b
 
 1. In the side navigation, select **Topics**an then select the **Greeting** topic.
 
-1. Click on the **Delete** button in the elipsis menu and delete the existing **Message** node.
+1. Click on the **Delete** button in the ellipsis menu and delete the existing **Message** node.
 
 1. To add a new **Message** node, click on the **Send a message** option in the next node menu.  Type the following greetings as [message variations](authoring-create-edit-topics.md#message-variations):
     - `Good day!`
