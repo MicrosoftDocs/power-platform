@@ -25,7 +25,7 @@ Protecting your data in customer engagement apps (Dynamics 365 Sales, Dynamics 3
 - [Dynamics 365 Finance](/dynamics365/fin-ops-core/dev-itpro/database/dbmovement-operations)
 - [Dynamics 365 Customer service](/dynamics365/customer-service/export-import-omnichannel-data)
 - [Azure Synapse Link for Dataverse](/power-apps/maker/data-platform/azure-synapse-link-olc)
-- [Power Page](/power-apps/maker/portals/admin/migrate-portal-configuration?tabs=CLI)
+- [Power Apps portal](/power-apps/maker/portals/admin/migrate-portal-configuration?tabs=CLI)
  
 ## System backups  
 Some backups take place without you having to do anything.  
