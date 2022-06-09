@@ -16,7 +16,7 @@ searchScope:
 
 [!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
 
-This technology preview doesn't yet support some of the existing features you're used to in Power Virtual Agents and available features have some limitations.
+This technology preview currently doesn't support some of the existing features you're used to in Power Virtual Agents and available features have some limitations.
 
 ## Limitations of current features
 
