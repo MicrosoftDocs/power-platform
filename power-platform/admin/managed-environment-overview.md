@@ -24,7 +24,7 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Managed Environment is a suite of capabilities that allow admins to manage Power Platform at scale with more control, less effort, and more insights. Admins can enable environment management on any type of environment. There are four primary elements of Managed Environment: 
+Managed Environment is a suite of capabilities that allows admins to manage Power Platform at scale with more control, less effort, and more insights. Admins can enable environment management on any type of environment. There are four primary elements of Managed Environment: 
 
 - [Enable environment management](managed-environment-enable.md)
 - [Weekly digests](managed-environment-weekly-digests.md)

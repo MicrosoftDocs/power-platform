@@ -49,14 +49,14 @@ Follow these steps to enable Managed Environment.
 |Include this environment     | Select to have the selected environment be managed.       |
 |Email recipients     | Add the email addresses of those who will receive weekly analytics about your top apps and flows, your most impactful makers, and inactive resources you can safely clean up.        |
 |**[Limit sharing](managed-environment-sharing-limits.md)**     |         |
-|Exclude sharing with security groups     | Enable so [makers](/power-apps/learning-catalog/app-maker) cannot share canvas apps with any security groups. <br />Admins get the option to proceed with setting a limit on individuals shared to.        |
-|Limit total individuals who can be shared to    | Enable so makers cannot share canvas apps with more individuals than specified in the text box. <br /> You must enable **Exclude sharing with security groups** to enable this setting.        |
+|Exclude sharing with security groups     | Enable so [makers](/power-apps/learning-catalog/app-maker) can't share canvas apps with any security groups. <br />Admins get the option to proceed with setting a limit on individuals shared to.        |
+|Limit total individuals who can be shared to    | Enable so makers can't share canvas apps with more individuals than specified in the text box. <br /> You must enable **Exclude sharing with security groups** to enable this setting.        |
 |**[Data policies](managed-environment-data-policies.md)**     |         |
 |See active data policies for this environment     | Create policies that define the consumer connectors that specific data can be shared with.         |
 
 ## Enable Managed Environment using PowerShell
 
-Admins can remove the Managed Environment property on an environment using the available API if respective environment is not using any of the capabilities available. The following is an example on how to call the API to set the Managed Environment property using PowerShell: 
+Admins can remove the Managed Environment property on an environment using the available API if respective environment is not using any of the capabilities available. The following is an example script on how to call the API to set the Managed Environment property using PowerShell: 
 
 ```powershell
 $UpdatedGovernanceConfiguration = [pscustomobject]@{
@@ -69,11 +69,11 @@ Set-AdminPowerAppEnvironmentGovernanceConfiguration -EnvironmentName <Environmen
 
 - Users with either the global admin, Power Platform service admin or Dynamics 365 admin Azure Active Directory roles are allowed to enable environment management. 
 - Any user with permission to see environment details can retrieve the Managed Environment property for the environment.  
-- Users with the delegated admin role are not allowed to change the Managed Environment property on an environment. 
-- Users with the Environment Admin security role are not allowed to change the Managed Environment property on an environment.  
+- Users with the Delegated Admin role aren't allowed to change the Managed Environment property in an environment. 
+- Users with the Environment Admin security role aren't allowed to change the Managed Environment property in an environment.  
 
 > [!IMPORTANT]
-> Copy and restore environment lifecycle operations require Managed Environment property to be the same between source and destination before the respective environment lifecycle operation can start. 
+> Copy and restore environment lifecycle operations requires the Managed Environment property to be the same between source and destination before the respective environment lifecycle operation can start. 
 
 ### See also  
 [Managed Environment overview](managed-environment-overview.md) <br />

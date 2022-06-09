@@ -31,7 +31,7 @@ New environment filters have been introduced to the data policies page in the [P
 > [!NOTE]
 > The environment filters are exclusively available for managed environments.
 
-Open the “Edit Environment Management” settings panel for a managed environment. In the “Data policies” section, click the “See active data policies for this environment” button. That will open the data policies page in a new tab and only the data policies applied to the managed environment will be displayed. To remove the environment filter in the data policies page, click on “Clear filter”.
+Open the **Edit Environment Management** settings panel for a managed environment. In the **Data policies** section, select the **See active data policies for this environment**. The data policies page opens in a new tab and displays only the data policies applied to the managed environment. To remove the environment filter in the data policies page, select **Clear filter**.
 
 :::image type="content" source="media/managed-environment-weekly-see-active-data-policies.png" alt-text="Managed Environment - see active data policies for this environment":::
 

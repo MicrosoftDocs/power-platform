@@ -26,13 +26,13 @@ Managed Environment allow admins to influence how broadly makers can share canva
 
 |Sharing control   |System behavior when checked?   |
 |---------|---------|
-|**Exclude sharing with security groups**      | Makers cannot share canvas apps with any security groups. <br />Admins get the option to proceed with setting a limit on  individuals shared to.          |
+|**Exclude sharing with security groups**      | Makers cannot share canvas apps with any security group. <br />Admins get the option to proceed with setting a limit on  individuals shared to.          |
 |**Limit total individuals who can be shared to**     |  Makers cannot share canvas apps with more individuals than specified in the text box.        |
 
 **Limit total individuals who can be shared to** is only enabled if **Exclude sharing with security groups** is checked. This is because security groups may have unbounded membership. For instance, a Maker could share an app with a security group that has 5 members one day and, in the future after the app was shared, the security group could grow to 500 members.  
 
 > [!NOTE]
-> Sharing rules are enforced when makers attempt to share an app. Sharing rules do not change the audience apps in an environment are already shared with.  
+> Sharing rules are enforced when makers attempt to share an app. Sharing rules do not change the audience apps in an environment that are already shared with.  
 
 :::image type="content" source="media/managed-environment-limit-sharing.png" alt-text="Managed Environment limit sharing":::
 
