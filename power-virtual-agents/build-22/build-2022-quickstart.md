@@ -35,8 +35,6 @@ Power Virtual Agents now has an app-level home page that isn't specific to any b
 >
 > :::image type="content" source="media/build-2022-quickstart/go-home.png" alt-text="Screenshot of Power Virtual Agents top menu bar.":::
 
-<!--Note from Sweeny: Since we are creating a reservation bot for a restaurant here, please add a lead in before the steps for more clarity. -->
-
 1. In the side navigation, select **Create**, or select **Home** and select **Create a bot**.
 
 1. Name the bot `Reservation Bot` and select **Create**.
