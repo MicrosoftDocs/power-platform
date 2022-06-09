@@ -10,7 +10,7 @@ contributors:
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/27/2022
+ms.date: 06/09/2022
 search.audienceType: 
   - admin
 search.app:
@@ -35,6 +35,16 @@ These security roles can be assigned to the user, [owner team](manage-teams.md#t
 There is another set of security roles that is assigned to [application users](system-application-users.md). Those security roles are installed by our services and cannot be updated.
 
 Which predefined security roles are available in your environment depends on the environment type.
+
+## Edit predefined security roles  
+You can [edit a predefined security role](create-edit-security-role.md#edit-a-security-role), such as Environment Maker or Basic User, and any changes to either add, remove, or update the role privileges will remain in the environment. Your updates will not be reverted to the default system settings during subsequent system updates. This provides you with the capability to use the system’s predefined security roles and customize them based on your business needs.  
+
+> [!NOTE]
+> When you add or remove privileges from the predefined security roles, it affects your application and user experience. Subsequent releases of the application might not work for your users whose predefined security role was modified. 
+>
+> You can [remove all your predefined security role updates](create-edit-security-role.md#remove-predefined-security-role-edits) and reset the security role back to the default system settings. This allows you to restore the security role’s privileges.  
+> 
+> New role privileges can continue to be added by Solution/system updates.
 
 ### Environments without a Dataverse database
 
@@ -68,9 +78,15 @@ For users who make apps that connect to the database and need to create or updat
 
 *The scope of these privileges is global, unless specified otherwise.
 
-Other security roles you have that are not in the above table might have been provided when you installed Dynamics 365 apps.
+In addition to the predefined security roles listed above for Dataverse, there might be other security roles available in your environment depending on the Power Platform components (Power Apps, Power Automate, Power Virtual Agents) you have. 
 
-### Dataverse for Teams environments
+|Power Platform component  | Information  |
+|---------|---------|
+|Power Apps     |    [Predefined security roles for environments with a Dataverse database](#environments-with-a-dataverse-database)    |
+|Power Automate     |  [Security and privacy ](/power-automate/process-advisor-security)   |
+|Power Virtual Agents     |   [Assign environment security roles](../../power-virtual-agents/admin-share-bots.md#assign-environment-security-roles) |
+
+### Dataverse for Teams environments 
 
 For information on Dataverse for Teams environment security roles, see [User access to Dataverse for Teams environments](about-teams-environment.md#user-access-to-dataverse-for-teams-environments).
 
@@ -80,13 +96,14 @@ If you deploy Dynamics 365 apps in your Dataverse environment, such as Dynamics 
 
 |Dynamics 365 app  |Security role docs  |
 |---------|---------|
-| Dynamics 365 Sales     | [Assign a security role to a user](/dynamics365/sales-professional/manage-users)        |
-| Dynamics 365 Marketing  |  [Manage user accounts, user licenses, and security roles](/dynamics365/marketing/admin-users-licenses-roles) <br />[Manage roles for a team  ](/dynamics365/marketing/manage-teams) <br />[Enable users to work with the LinkedIn Lead Gen connector](/dynamics365/marketing/linkedin-configuration)     |
-| Dynamics 365 Field Service     | [Set up Dynamics 365 Field Service users and security profiles](/dynamics365/field-service/view-user-accounts-security-roles) <br /> [Security roles for Connected Field Service](/dynamics365/field-service/cfs-security-roles) <br />  [Assign security roles to the Field Service mobile app](/dynamics365/field-service/mobile-power-app-get-started)     |
-| Dynamics 365 Customer Service    | [Assign roles and enable users for Omnichannel for Customer Service ](/dynamics365/customer-service/add-users-assign-roles) <br /> [Manage users in Omnichannel for Customer Service](/dynamics365/customer-service/users-user-profiles)     |
-| Dynamics 365 Customer Insights        | [User permissions](/dynamics365/customer-insights/permissions)        |
+| Dynamics 365 Sales     | [Predefined security roles for Sales](/dynamics365/sales/security-roles-for-sales)        |
+| Dynamics 365 Marketing  |  [Security roles added by Dynamics 365 Marketing](/dynamics365/marketing/admin-users-licenses-roles#security-roles-added-by-dynamics-365-marketing)   |
+| Dynamics 365 Field Service     | [Dynamics 365 Field Service roles + definitions ](/dynamics365/field-service/view-user-accounts-security-roles#dynamics-365-field-service-roles--definitions)  |
+| Dynamics 365 Customer Service    | [Roles in Omnichannel for Customer Service](/dynamics365/customer-service/add-users-assign-roles#roles-in-omnichannel-for-customer-service)  |
+| Dynamics 365 Customer Insights        | [Customer Insights roles](/dynamics365/customer-insights/permissions)        |
 | App profile manager        | [Roles and privileges associated with app profile manager](/dynamics365/app-profile-manager/security-roles)        |
-| Finance and Operations (in Power Platform) | [Security roles in Microsoft Power Platform](/dynamics365/fin-ops-core/dev-itpro/power-platform/authentication-and-authorization)     |
+| Dynamics 365 Finance | [Security roles in the public sector](/dynamics365/finance/public-sector/security-roles-public-sector)   |
+| Finance and operations apps | [Security roles in Microsoft Power Platform](/dynamics365/fin-ops-core/dev-itpro/power-platform/authentication-and-authorization)  |
 
 ## Summary of resources available for predefined security roles 
 The following table describes which resources can be authored by each security role.
