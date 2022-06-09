@@ -21,10 +21,10 @@ search.app:
 
 Protecting your data in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), and providing continuous availability of service are important. You have multiple options for backing up and restoring your environments. For  information about app specific backup and restore, see the respective app's documentation:
 
-- [Dynamics 365 Marketing](/dynamics365/marketing/manage-marketing-environments.md#create-and-restore-backups)
+- [Dynamics 365 Marketing](/dynamics365/marketing/manage-marketing-environments#create-and-restore-backups)
 - [Dynamics 365 Finance](/dynamics365/fin-ops-core/dev-itpro/database/dbmovement-operations)
 - [Dynamics 365 Customer service](/dynamics365/customer-service/export-import-omnichannel-data)
-- [Azure Synapse Link for Dataverse](/power-apps/maker/data-platform/azure-synapse-link-olc.md#backup-and-restore-an-environment)
+- [Azure Synapse Link for Dataverse](/power-apps/maker/data-platform/azure-synapse-link-olc#backup-and-restore-an-environment)
 - [Power Apps portals](/power-apps/maker/portals/admin/migrate-portal-configuration?tabs=CLI)
  
 ## System backups 
