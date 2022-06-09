@@ -42,7 +42,7 @@ The second section of the email depicts applications that have not been launched
 
 :::image type="content" source="media/managed-environment-weekly-digest-second-section.png" alt-text="Managed Environment weekly digest second section":::
 
-The third section of the email depicts the most popular applications and the most popular flows within your managed environments in the past month. The most popular applications are the ones that have the highest number of sessions. When an end user opens and interacts with an application, that is considered as one session. If that same end user repeats the process another time, that is considered as another session. The most popular flows are the ones that have been executed the highest number of times.
+The third section of the email depicts the most popular applications and the most popular flows within your managed environments in the past month. The most popular applications are the ones that have the highest number of sessions in the past month. When an end user opens and interacts with an application, that is considered as one session. The most popular flows are the ones that have the most runs in the past month.
 
 :::image type="content" source="media/managed-environment-weekly-digest-third-section.png" alt-text="Managed Environment weekly digest third section":::
 
@@ -58,6 +58,35 @@ This weekly digest provides insights into all managed environments in your tenan
 This weekly admin digest is sent to all users with the [Power Platform administrator](use-service-admin-role-manage-tenant.md#power-platform-administrator) and [Dynamics 365 service administrator](use-service-admin-role-manage-tenant.md#dynamics-365-administrator) roles. You can add additional recipients by adding their email addresses in the “Email recipients” textbox under the “Weekly digest” section of the “Edit Managed Environments” settings panel in the Power Platform admin center. If you add “anotherAdmin@email.com”, then the weekly digest will be sent to Power Platform administrators, Dynamics 365 administrators, and “anotherAdmin@email.com”.
 
 :::image type="content" source="media/managed-environment-weekly-digest-email-recipients.png" alt-text="Managed Environment email recipients to get weekly digest":::
+
+### Use PowerShell to configure weekly digest
+
+You can use PowerShell to configure additional email recipients. The script below is an example for adding two additional recipients. When you run the script, two email addresses will appear in the “Email recipients” textbox under the “Weekly digest” section of the “Edit Managed Environments” settings panel in the Power Platform admin center. 
+
+#### Add additional email recipients
+```PowerShell
+$tenantSettings = Get-TenantSettings  
+($tenantSettings.powerPlatform.governance) | Add-Member -MemberType NoteProperty -Name additionalAdminDigestEmailRecipients -Value 'fakeEmail@contoso.com;otherFakeEmail@contoso.com'  
+Set-TenantSettings -RequestBody $tenantSettings 
+```
+
+You can use PowerShell to unsubscribe your entire organization from the weekly digest. Nobody from your organization will receive the weekly digest regardless if additional recipients have been configured. 
+
+#### Unsubscribe to the weekly digest 
+```PowerShell
+$tenantSettings = Get-TenantSettings  
+$tenantSettings.powerPlatform.governance.disableAdminDigest = $True  
+Set-TenantSettings -RequestBody $tenantSettings 
+```
+
+To resubscribe, you can reset the value for $tenantSettings.powerPlatform.governance.disableAdminDigest to $False. 
+
+#### Resubscribe to the weekly digest 
+```PowerShell
+$tenantSettings = Get-TenantSettings  
+$tenantSettings.powerPlatform.governance.disableAdminDigest = $False  
+Set-TenantSettings -RequestBody $tenantSettings 
+```
 
 ### See also  
 [Managed Environment overview](managed-environment-overview.md) <br />
