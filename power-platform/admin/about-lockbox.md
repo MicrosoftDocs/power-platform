@@ -4,7 +4,7 @@ description: This topic covers information on how customers can review and appro
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/08/2022
+ms.date: 06/10/2022
 author: mihaelablendea
 ms.author: mihaelab
 ms.reviewer: jimholtz
@@ -144,6 +144,6 @@ Customer Lockbox requests are also not triggered by external legal demands for d
 
 - Customer Lockbox Preview isn't available in sovereign clouds at this time. 
 
-
+- Tenant-to-tenant migration isn't supported when Customer Lockbox is enabled. You must disable Customer Lockbox to move an environment to another tenant.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
