@@ -408,7 +408,7 @@
         "tags": [
           "CurrencyAllocation"
         ],
-        "summary": "Allocate and Deallocate the currencies for environment.",
+        "summary": "Allocate and deallocate the currencies for the environment.",
         "operationId": "PatchCurrencyAllocationByEnvironment",
         "consumes": [
           "application/json"
@@ -669,7 +669,7 @@
     "/licensing/isvContracts": {
       "get": {
         "tags": [
-          "IsvContract"
+          "ISVContract"
         ],
         "summary": "Get the list of ISV contracts for the tenant.",
         "description": "Get the list of ISV contracts for the tenant.",
@@ -713,7 +713,7 @@
       },
       "post": {
         "tags": [
-          "IsvContract"
+          "ISVContract"
         ],
         "summary": "Create an ISV contract.",
         "description": "Create an ISV contract.",
@@ -764,10 +764,10 @@
     "/licensing/isvContracts/{isvContractId}": {
       "get": {
         "tags": [
-          "IsvContract"
+          "ISVContract"
         ],
-        "summary": "Get an ISV contract by its ID.",
-        "description": "Get an ISV contract by its ID.",
+        "summary": "Get an ISV contract by its identifier (ID).",
+        "description": "Get an ISV contract by its identifier (ID).",
         "operationId": "GetISVContract",
         "produces": [
           "application/json"
@@ -776,7 +776,7 @@
           {
             "in": "path",
             "name": "isvContractId",
-            "description": "The ISV contract Id",
+            "description": "The ISV contract ID",
             "required": true,
             "type": "string"
           },
@@ -812,7 +812,7 @@
       },
       "put": {
         "tags": [
-          "IsvContract"
+          "ISVContract"
         ],
         "summary": "Update an ISV contract.",
         "description": "Update an ISV contract.",
@@ -827,7 +827,7 @@
           {
             "in": "path",
             "name": "isvContractId",
-            "description": "The ISV contract Id",
+            "description": "The ISV contract ID",
             "required": true,
             "type": "string"
           },
@@ -871,7 +871,7 @@
       },
       "delete": {
         "tags": [
-          "IsvContract"
+          "ISVContract"
         ],
         "summary": "Delete an ISV contract.",
         "description": "Delete an ISV contract.",
@@ -880,7 +880,7 @@
           {
             "in": "path",
             "name": "isvContractId",
-            "description": "The ISV contract Id",
+            "description": "The ISV contract ID",
             "required": true,
             "type": "string"
           },
@@ -918,7 +918,7 @@
       "type": "object",
       "properties": {
         "currencyAllocations": {
-          "description": "Specify the request body with environment id and currency details",
+          "description": "Specify the request body with environment ID and currency details",
           "type": "array",
           "items": {
             "$ref": "#/definitions/CurrencyAllocationRequestModelV1"
@@ -927,11 +927,11 @@
       }
     },
     "AllocationsByEnvironmentResponseModelV1": {
-      "description": "The response body includes environment id and allocated currencies",
+      "description": "The response body includes environment ID and allocated currencies",
       "type": "object",
       "properties": {
         "environmentId": {
-          "description": "The environment Id for which the currency has been allocated",
+          "description": "The environment ID for which the currency has been allocated",
           "type": "string",
           "example": "00000000-0000-0000-0000-000000000000"
         },
@@ -966,7 +966,7 @@
         },
         "allocated": {
           "format": "int32",
-          "description": "The allocated count of curreny type",
+          "description": "The allocated count of currency type",
           "type": "integer",
           "example": 10
         }
@@ -1205,7 +1205,7 @@
       "description": "The ISV contract model for update operations.",
       "required": [
         "name",
-        "location",
+        "geo",
         "status",
         "consumer",
         "conditions",
@@ -1223,7 +1223,7 @@
         "status": {
           "$ref": "#/definitions/BillingPolicyStatus"
         },
-        "location": {
+        "geo": {
           "description": "Specify the desired resource location for creation of Azure Power Platform account for billing. Once set, this property cannot be updated. Power Platform Environments using this ISV Contract for pay-as-you-go billing must be in the same location.",
           "type": "string",
           "items": {
@@ -1263,7 +1263,7 @@
       },
       "example": {
         "name": "exampleContract",
-        "location": "unitedstates",
+        "geo": "unitedstates",
         "status": "Enabled",
         "consumer": {
           "tenantId": "00000000-0000-0000-0000-000000000000"
@@ -1321,7 +1321,7 @@
         "status": {
           "$ref": "#/definitions/BillingPolicyStatus"
         },
-        "location": {
+        "geo": {
           "type": "string"
         },
         "consumer": {
