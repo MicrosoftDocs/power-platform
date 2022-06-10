@@ -32,17 +32,26 @@ To be an efficient developer on the platform, it's important to understand the b
 
 Apps created with Power Apps are consumed by users using their desktop or mobile devices. There are different types of Power Apps: canvas, model-driven, and portal.
 
-| Type | Description |
-| ---- | ---- |
-| **Canvas** | Provide the maker with complete control over the pixel-perfect screen contents and navigation between multiple screens. Canvas applications use connectors to work with data and services. Canvas applications can be embedded into SharePoint, Teams, Power BI, and Dynamics 365 applications. |
-| **Model-driven** | Data-driven applications that are built on top of Microsoft Dataverse. Other data sources and services can be used by model-driven applications by embedding a canvas application. |
-|**Portals** | Used to create external-facing websites that allow users outside an organization to sign in with a wide variety of identities, create and view data from Dataverse, or even browse content anonymously. We recently launched **Power Pages**, which is an evolution of portals and brings in new no-code/low-code capabilities and experiences to empower more people to create and deliver business-centric, data-powered, modern, and secure websites. More information: [Power Pages](#power-pages)  
+### Canvas
+
+Provide the maker with complete control over the pixel-perfect screen contents and navigation between multiple screens. Canvas applications use connectors to work with data and services. Canvas applications can be embedded into SharePoint, Teams, Power BI, and Dynamics 365 applications.
 
 > #### Key developer extensibility points
-> - Building custom visual controls using Power Apps component framework
-> - Implementing client business logic using JavaScript and the client API
+> - Building custom visual controls using Power Apps component framework (PCF)
 > - Building custom connectors for external data sources and services using tools like Azure Functions and Azure API Management
-> - Building HTML web resources 
+
+### Model-driven  
+
+Data-driven applications that are built on top of [Microsoft Dataverse](#dataverse). Other data sources and services can be used by model-driven applications by embedding a canvas application.
+
+> #### Key developer extensibility points
+> - Building custom visual controls using Power Apps component framework (PCF)
+> - Implementing client business logic using JavaScript and the client API
+> - Building HTML web resources
+
+### Portals
+
+Used to create external-facing websites that allow users outside an organization to sign in with a wide variety of identities, create and view data from Dataverse, or even browse content anonymously. We recently launched **Power Pages**, which is an evolution of portals and brings in new no-code/low-code capabilities and experiences to empower more people to create and deliver business-centric, data-powered, modern, and secure websites. More information: [Power Pages](#power-pages)  
 
 ## Power Pages
 
@@ -94,5 +103,8 @@ Power BI is Microsoft's business analytics solution that provides interactive da
 > - Embed Power BI in apps, websites, and portals
 > - Create custom visuals using the open-source SDK
 
+### See Also
+
+[Fusion Development](fusion-development.md)  
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
