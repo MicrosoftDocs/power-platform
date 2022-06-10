@@ -46,16 +46,8 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Overview
-            url: ./azure-integration.md
-      - linkListType: quickstart
-        links:
-          - text: Build a PCF control
-            url: pcf.md
-      - linkListType: reference
-        links:
-          - text: PCF documentation
-            url: pcf-2.md
+          - text: Power Apps component framework
+            url: 
 
   # Card
   - title: Back-end developer
@@ -87,8 +79,8 @@ landingContent:
       - linkListType: overview
         links:
           - text: Canvas apps Developer Guide
-            url: ../../maker/canvas-apps/dev-enterprise-intro.md
+            url: ../../power-apps/maker/canvas-apps/dev-enterprise-intro.md
           - text: Model-driven apps Developer Guide
-            url: ../model-driven-apps/index.yml
+            url: ../../power-apps/developer/model-driven-apps/index.yml
           - text: Power Apps component framework
-            url: ../component-framework/overview.md
+            url: ../../power-apps/developer/component-framework/overview.md
