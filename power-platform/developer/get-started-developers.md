@@ -20,43 +20,42 @@ search.app:
 
 # Introduction to Microsoft Power Platform for Developers
 
-Microsoft Power Platform is a low-code platform for building business apps quickly. It includes five main components: Power Apps, Power Automate, Power BI, Power Virtual Agents, and Power Pages. Each component can be used individually or together. When used together, they're designed to interact with the others to achieve business objectives, be it building analytics, process automation, or data-driven productivity apps.
+Microsoft Power Platform is a low-code platform for rapidly building customized end-to-end business solutions. It consists of five product areas: Power Apps, Power Automate, Power BI, Power Virtual Agents, and Power Pages. Each area can be used individually or together. United by the underlying Microsoft Dataverse technology, all areas are designed for a connected experience to achieve your business goals, whether it's creating analytics, process automation or data-driven productivity applications.
 
-The platform uses a low-code approach to build solutions rapidly. It allows everyone in an organization, from frontline workers to professional developers, to participate in building apps that drive positive business outcomes. Developers can work seamlessly with the makers in an organization to help fill gaps and solve complex challenges using a rich extensibility model provided by the platform components. Using native integration with Azure, developers can also use their cloud development skills to extend Microsoft Power Platform. This approach to low-code development is a transformative way to achieve application development objectives within an organization quickly.
+The platform's low-code approach enables everyone in an organization - from frontline workers to professional developers - to participate in the development of business solutions that drive positive business outcomes. Developers can collaborate with citizen developers to enhance business solutions and solve complex requirements by leveraging the platform's various extension capabilities with code. Thanks to a native integration with Azure, developers can use their cloud development skills to extend Microsoft Power Platform with different Azure services. With a low-code integrated development approach, business goals can be achieved faster and frees up time for the developers.
 
 ![Power platform.](media/power-platform.png "Power platform")
 
-To be an efficient developer on the platform, it's important to understand the basics of what the platform offers. Bellow is a high-level overview of each of the core components and their key extensibility points.
+As a developer interacting with the platform, it's important to understand the basics of what the platform offers. In the following, you will find a high-level overview of each of the core product areas and their key extensibility points.
 
 ## Power Apps 
 
-Apps created with Power Apps are consumed by users using their desktop or mobile devices. There are different types of Power Apps: canvas, model-driven, and portal.
+Apps created with Power Apps can be shared with internal users and can be run in a browser or on a mobile device. There are different types of Power Apps: canvas vs. model-driven vs. portal.
 
 ### Canvas
 
-Provide the maker with complete control over the pixel-perfect screen contents and navigation between multiple screens. Canvas applications use connectors to work with data and services. Canvas applications can be embedded into SharePoint, Teams, Power BI, and Dynamics 365 applications.
+Provides the Power Apps Maker with complete control over the pixel-perfect screen contents and navigation between multiple screens. Canvas applications use different connectors to work with data and services. Canvas applications can be embedded into SharePoint, Teams, Power BI, and Dynamics 365 applications.
 
 > #### Key developer extensibility points
-> - Building custom visual controls using Power Apps component framework (PCF)
-> - Building custom connectors for external data sources and services using tools like Azure Functions and Azure API Management
+> - Build custom UI components using [Power Apps component framework (PCF)](https://docs.microsoft.com/en-us/power-apps/developer/component-framework/overview)
+> - Create [custom connectors](https://docs.microsoft.com/en-us/connectors/custom-connectors/) to communicate to your external data sources and services. A custom connector is a wrapper around a REST API and can be created using tools like Azure Functions and Azure API Management
 
 ### Model-driven  
 
 Data-driven applications that are built on top of [Microsoft Dataverse](#dataverse). Other data sources and services can be used by model-driven applications by embedding a canvas application.
 
 > #### Key developer extensibility points
-> - Building custom visual controls using Power Apps component framework (PCF)
-> - Implementing client business logic using JavaScript and the client API
-> - Building HTML web resources
+> - Build custom UI components using [Power Apps component framework (PCF)](https://docs.microsoft.com/en-us/power-apps/developer/component-framework/overview)
+> - Implement client business logic using JavaScript and the client API
+> - Build HTML web resources
 
 ### Portals
 
-Used to create external-facing websites that allow users outside an organization to sign in with a wide variety of identities, create and view data from Dataverse, or even browse content anonymously. We recently launched **Power Pages**, which is an evolution of portals and brings in new no-code/low-code capabilities and experiences to empower more people to create and deliver business-centric, data-powered, modern, and secure websites. More information: [Power Pages](#power-pages)  
+Used to create external-facing websites that allow users outside an organization to sign in with a wide variety of identities, create and view data from Dataverse, or even browse content anonymously. **Power Pages** have recently been announced and are currently in preview. Power Pages extend Portals capabilitites and enable organizations to securely build websites with exciting new aesthetic features and advanced capabilities for customization.
 
 ## Power Pages
 
-Power Pages is a secure, enterprise-grade, low-code software as a service (SaaS) platform for creating, hosting, and administering modern external-facing business websites. Power Pages is built on the foundation of Power Apps portals. Low-code makers can rapidly design, configure, and publish websites that seamlessly work across web browsers and devices. Professional developers can extend these capabilities to address advanced business requirements.
-
+[Power Pages](#power-pages) is a secure, enterprise-grade, low-code software as a service (SaaS) platform for creating, hosting, and administering modern external-facing business websites. Power Pages is built on the foundation of Power Apps portals. Low-code makers can rapidly design, configure, and publish websites that seamlessly work across web browsers and devices. Professional developers can extend these capabilities to address advanced business requirements.
 
 
 > #### Key developer extensibility points
@@ -66,7 +65,7 @@ Power Pages is a secure, enterprise-grade, low-code software as a service (SaaS)
 
 ## Power Automate
 
-Power Automate is used to automate tasks and orchestrate activities across various services that use connectors. Using Power Automate you can create cloud flows or desktop flows.
+Power Automate is used to automate tasks and orchestrate activities across various services that use integrated or custom connectors. Using Power Automate you can create cloud flows or desktop flows.
 
 | Type | Description |
 | ---- | ---- |
@@ -74,7 +73,7 @@ Power Automate is used to automate tasks and orchestrate activities across vario
 | **Desktop flows** | used to automate repetitive interactive tasks on the web or the desktop. |
 
 > #### Key developer extensibility points
-> - Building custom connectors using tools like Azure Functions and Azure API Management
+> - Create [custom connectors](https://docs.microsoft.com/en-us/connectors/custom-connectors/) to communicate to your external data sources and services. A custom connector is a wrapper around a REST API and can be created using tools like Azure Functions and Azure API Management
 > - Use workflow definition functions to build complex expressions
 
 ## Power Virtual Agents
@@ -83,11 +82,11 @@ Power Virtual Agents lets you create powerful chatbots that can answer questions
 
 > #### Key developer extensibility points
 > - Build Bot Framework Skills
-> - Extend bots with Bot Framework Composer
+> - Extend your bots with [Bot Framework Composer](https://docs.microsoft.com/en-us/power-virtual-agents/advanced-bot-framework-composer)
 
 ## Dataverse
 
-Dataverse is a cloud scale data store that build on Microsoft's data technologies and abstracts away data management complexity from the app maker. It lets you securely store and manage data that is used by business applications. Business data within Dataverse is stored within a set of data tables. Role-based security allows businesses to control access to the data tables and even individual records for different users within your organization. Developers can extend or customize Dataverse functionality by adding custom business logic. You can define calculated table columns, business rules, workflows, and business process flows to ensure data quality and drive business processes.
+Dataverse is a cloud scale data store that builds on Microsoft's data technologies and abstracts away data management complexity from the Power App Maker. It lets you securely store and manage data that is used by business applications. Business data within Dataverse is stored within a set of data tables. Role-based security allows businesses to control access to the data tables and even individual records for different users within your organization. Developers can extend or customize Dataverse functionality by adding custom business logic. You can define calculated table columns, business rules, workflows, and business process flows to ensure data quality and drive business processes.
 
 > #### Key developer extensibility points
 > - Create plug-ins, similar to event handlers, that customize or extend Dataverse data processing with custom business logic (code)
