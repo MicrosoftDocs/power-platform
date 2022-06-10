@@ -32,17 +32,17 @@ Errors may also appear in the [Topic Checker](authoring-topic-management.md#topi
 <!-- table best viewed and edited without word wrap -->
 | Error code                                                                | Description                                                      |
 | ------------------------------------------------------------------------- | ---------------------------------------------------------------- |
-| [ContentError](#contenterror)                                             | There is an error in the topic content.                          |
+| [ContentError](#contenterror)                                             | There's an error in the topic content.                          |
 | [FlowActionException](#flowactionexception)                               | An error occurred while executing a [flow][2].                   |
 | [FlowActionBadRequest](#flowactionbadrequest)                             | A request made to a [flow][2] was malformed.                     |
 | [InvalidContent](#invalidcontent)                                         | Invalid content was added to the [code editor][5].               |
 | [InfiniteLoopInBotContent](#infiniteloopinbotcontent)                     | A node was executed too many times.                              |
 | [LatestPublishedVersionNotFound](#latestpublishedversionnotfound)         | Unable to retrieve the published version of the bot.             |
 | [RedirectToDisabledDialog](#redirecttodisableddialog)                     | A topic is [redirecting][1] to a disabled topic.                 |
-| [RedirectToNonExistentDialog](#redirecttononexistentdialog)               | A topic is [redirecting][1] to another topic that longer exists. |
+| [RedirectToNonExistentDialog](#redirecttononexistentdialog)               | A topic is [redirecting][1] to another topic that no longer exists. |
 | [SystemError](#systemerror)                                               | A system error occurred in Power Virtual Agents.                 |
-| [TelephonyHandoffInvalidPhoneNumber](#telephonyhandoffinvalidphonenumber) | The phone number provided to [telephony][4] is not valid.        |
-| [TelephonyHandoffMissingPhoneNumber](#telephonyhandoffmissingphonenumber) | A phone number has not been set for [telephony][4].              |
+| [TelephonyHandoffInvalidPhoneNumber](#telephonyhandoffinvalidphonenumber) | The phone number provided to [telephony][4] isn't valid.        |
+| [TelephonyHandoffMissingPhoneNumber](#telephonyhandoffmissingphonenumber) | A phone number hasn't been set for [telephony][4].              |
 
 [1]: authoring-create-edit-topics.md#go-to-another-topic
 [2]: advanced-flow.md
@@ -54,9 +54,9 @@ Errors may also appear in the [Topic Checker](authoring-topic-management.md#topi
 
 **Error message:** This error produces dynamic messages based on the context of the error.
 
-**Resolution:** This is a catch-all error for various problems related to your bot's content. Please refer to the error message for more details.
+**Resolution:** This is a catch-all error for various problems related to your bot's content. Refer to the error message for more details.
 
-Common problems include, but are not limited to:
+Common problems include, but aren't limited to:
 
 - A node missing required properties.
 - Invalid YAML added with the [code editor](authoring-create-edit-topics.md#edit-topics-with-the-code-editor).
@@ -67,8 +67,8 @@ Common problems include, but are not limited to:
 **Error messages:**
 
 - "No output was received from flow {FlowName} ({FlowId}), even though output was expected as per the bot definition."
-- "The output parameter with name {ItemKey} on flow {FlowName} ({FlowId}) is missing from the response data. Please refresh the flow, or ensure the flow returns this value."
-- "The output parameter with name {ItemKey} on flow {FlowName} ({FlowId}) is missing from the output schema. Please refresh the flow."
+- "The output parameter with name {ItemKey} on flow {FlowName} ({FlowId}) is missing from the response data. Refresh the flow, or ensure the flow returns this value."
+- "The output parameter with name {ItemKey} on flow {FlowName} ({FlowId}) is missing from the output schema. Refresh the flow."
 
 **Resolution:** [Check the flow for errors](/power-automate/error-checker).
 
@@ -76,7 +76,7 @@ Common problems include, but are not limited to:
 
 **Error messages:**
 
-- "The parameter with name {KeyName} on flow {FlowName} ({FlowId}) is declared to be of type {ItemTypeKind}. This type is not supported when invoking Power Automate. Currently, only Text, Boolean, and Numbers are supported."
+- "The parameter with name {KeyName} on flow {FlowName} ({FlowId}) is declared to be of type {ItemTypeKind}. This type isn't supported when invoking Power Automate. Currently, only Text, Boolean, and Numbers are supported."
 - "The parameter with name {ItemKey} on flow {FlowName} ({FlowId}) is missing in the 'Call Flow' action."
 - "The parameter with name {KeyName} on flow {FlowName} ({FlowId}) evaluated to type {ResolveType}, expected type {ExpectedType}."
 - "The flow {FlowName} ({FlowId}) failed to run with response code {ResponseCode}, error code: {FlowErrorCode}."
@@ -103,13 +103,13 @@ Common problems include, but are not limited to:
 
 ### RedirectToDisabledDialog
 
-**Error message:** "The Dialog with Id {DialogId} is disabled in the definition. Please Enable the Dialog before using it."
+**Error message:** "The Dialog with Id {DialogId} is disabled in the definition. Enable the Dialog before using it."
 
 **Resolution:** [Re-enabled the topic](authoring-topic-management.md#topic-status) or [remove the redirect node](authoring-create-edit-topics.md#delete-nodes).  
 
 ### RedirectToNonExistentDialog
 
-**Error message:** "The Dialog with Id {DialogId} was not found in the definition. Please check that the Dialog is present and that the Id is correct."
+**Error message:** "The Dialog with Id {DialogId} wasn't found in the definition. Check that the Dialog is present and that the Id is correct."
 
 **Resolution:** [Create a new topic](authoring-create-edit-topics.md#create-a-topic) to redirect to or [remove the redirect node](authoring-create-edit-topics.md#delete-nodes).
 
@@ -120,7 +120,7 @@ Common problems include, but are not limited to:
 
 ### TelephonyHandoffInvalidPhoneNumber
 
-**Error message:** "The phone number {PhoneNumber} used in the transfer to agent activity is not a valid phone number format. Phone number should be in international format without dashes ex: +14251231234."
+**Error message:** "The phone number {PhoneNumber} used in the transfer to agent activity isn't a valid phone number format. Phone number should be in international format without dashes ex: +14251231234."
 
 **Resolution:** Check your [telephony configuration](publication-connect-bot-to-telephony.md) and ensure the phone number is in an international format, for example, `+14251231234`.
 
