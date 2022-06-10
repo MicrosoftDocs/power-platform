@@ -22,6 +22,8 @@ search.app:
 ---
 # Sharing limits 
 
+<!-- https://go.microsoft.com/fwlink/?linkid=2194484 -->
+
 Managed Environment allow admins to influence how broadly makers can share canvas apps. There are two sharing controls.  
 
 |Sharing control   |System behavior when checked?   |

@@ -22,6 +22,8 @@ search.app:
 ---
 # Enable Managed Environment
 
+<!-- https://go.microsoft.com/fwlink/?linkid=2194805 -->
+
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 Admins can enable Managed Environment using the [Power Platform admin center](managed-environment-enable.md) or by using PowerShell. 

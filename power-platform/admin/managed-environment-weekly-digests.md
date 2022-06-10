@@ -21,6 +21,9 @@ search.app:
   - Flow
 ---
 # Weekly digests
+
+<!-- https://go.microsoft.com/fwlink/?linkid=2194598 -->
+
 Stay informed about what’s happening in your managed environments with Power Platform’s new weekly admin digest. Analytics about your top apps and flows, your most impactful makers, and inactive resources you can safely clean up are distilled and delivered to your mailbox once per week.
 
 :::image type="content" source="media/managed-environment-weekly-digest.png" alt-text="Managed Environment weekly admin digest":::
