@@ -223,7 +223,7 @@ See [limitations when using Power Virtual Agents with the Chat Add-in for Dynami
 
 ## Recommended extensions
 
-The following extensions are recommended for Customer Service omnichannel capabilities and are automatically installed in your omnichannel environment.
+The following extensions are recommended for Customer Service omnichannel capabilities and are automatically installed in your omnichannel environment. While they're not required to hand-off to Omnichannel, they provide bot authors with a better experience by providing additional variables and actions.
 
 However, if the environment that you connected omnichannel to is not the same environment your bot is in, you'll need to manually install the extensions.
 
