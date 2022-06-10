@@ -1,7 +1,7 @@
 ---
 title: "Migrate an environment to a different tenant"
 description: "Learn about the impact of migrating an environment from one tenant to another. Review the prerequisites and considerations before submitting a request." 
-ms.date: 05/17/2022
+ms.date: 06/10/2022
 ms.topic: conceptual
 applies_to: 
   - "Dynamics 365 (online)"
@@ -20,7 +20,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Tenant-to-tenant migration
+# Tenant-to-tenant migration 
 
 ## Migrate an environment to a different tenant
 
@@ -36,15 +36,12 @@ You need to [submit a support request](get-help-support.md) to initiate tenant-t
 There are no user interface changes or version changes as part of this move. You can move one or multiple environments. Once complete, your environment(s) will appear in your new tenant.
 
 > [!IMPORTANT]
-> If moving individual environments from one tenant to another requires a geographical region change, your tenant becomes a multiregional tenant. Regional features are enabled in the Power Platform admin center by support team. More information: [Geo to geo migrations](geo-to-geo-migrations.md).
-> 
-> You might need to reconfigure some applications and settings after tenant-to-tenant migration, such as Microsoft Dynamics 365 for Outlook, server-side sync, SharePoint integration, or others.
->
-> Geographical region changes aren't supported into or out of US GCC, US GCC High, US DoD, OCE, IND, or China.
-> 
-> Existing source database backups won't be migrated to destination tenant.
-> 
-> Linking a Dataverse organization to a Finance and Operations organization is not supported.
+> - If moving individual environments from one tenant to another requires a geographical region change, your tenant becomes a multiregional tenant. Regional features are enabled in the Power Platform admin center by support team. More information: [Geo to geo migrations](geo-to-geo-migrations.md). 
+> - You might need to reconfigure some applications and settings after tenant-to-tenant migration, such as Microsoft Dynamics 365 for Outlook, server-side sync, SharePoint integration, or others.
+> - Geographical region changes aren't supported into or out of US GCC, US GCC High, US DoD, OCE, IND, or China.
+> - Existing source database backups won't be migrated to destination tenant.
+> - Linking a Dataverse organization to a Finance and Operations organization is not supported.
+> - Tenant-to-tenant migration isn't supported when [Customer Lockbox](about-lockbox.md#enable-the-lockbox-policy) is enabled. You must disable Customer Lockbox to move an environment to another tenant. You can re-enable Customer Lockbox once the migration is completed.
 
 ### Supported applications and platforms
 
