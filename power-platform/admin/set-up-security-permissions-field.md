@@ -59,6 +59,8 @@ After you create the profile, you assign users and or teams to that profile, and
 
 ## Associate security profiles and set permissions
 
+<!-- fwlink  https://go.microsoft.com/fwlink/?linkid=2193903 -->
+
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) with System Administrator security role or equivalent permissions.
 
 2. Select the environment to configure security profiles for. 
