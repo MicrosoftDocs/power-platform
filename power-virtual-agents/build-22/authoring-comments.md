@@ -24,7 +24,7 @@ Comments are notes that are associated with items in your bot. Use comments to h
 
 In Power Virtual Agents, comments can be attached to topics and individual nodes within topics. The comments are stored in a table in Dataverse in the default solution.  
 
-Comments are common questions, feedback, or ideas that provide important context for other makers working on your bot's topics.
+Comments are commonly questions, feedback, or ideas that provide important context for other makers working on your bot's topics.
 
 You can create comment threads to track single or multiple issues and delete or resolve them if they're no longer relevant.
 
