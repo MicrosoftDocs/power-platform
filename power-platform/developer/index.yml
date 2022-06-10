@@ -41,30 +41,6 @@ landingContent:
           - text: Transform your business applications with fusion development
             url: /learn/paths/transform-business-applications-with-fusion-development/  
 
-# Card
-  - title: Front-end developer
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Power Apps component framework
-            url: 
-
-  # Card
-  - title: Back-end developer
-    linkLists:
-       - linkListType: overview
-         links:
-          - text: Work with data using code
-            url: work-with-data.md
-          - text: Types and operations (Web API)
-            url: ./webapi/web-api-types-operations.md
-          - text: Entity operations (Organization service)
-            url: ./org-service/entity-operations.md
-          - text: Use FetchXML to query data
-            url: ./use-fetchxml-construct-query.md
-          - text: Use SQL to query data
-            url: ./dataverse-sql-query.md
-
   # Card
   - title: Tools
     linkLists:
