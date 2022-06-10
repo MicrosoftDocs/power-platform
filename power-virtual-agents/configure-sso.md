@@ -25,9 +25,9 @@ There are four main steps to configuring SSO for Power Virtual Agents:
 
 1. Define a custom scope for your bot.
 
-1. Configure authentication in Power Virtual Agents to enable single sign-on.
+1. Configure authentication in Power Virtual Agents to enable SSO.
 
-1. Configure your custom canvas HTML code to enable single sign-on.
+1. Configure your custom canvas HTML code to enable SSO.
 
 > [!IMPORTANT]
 > SSO on SharePoint is not supported.
@@ -60,7 +60,7 @@ The following table details the [channels](publication-fundamentals-publish-chan
 [5]: publication-add-bot-to-facebook.md
 [6]: publication-connect-bot-to-azure-bot-service-channels.md
 
-<sup>1</sup> If you also have the Teams channel enabled, you need to follow the configuration instructions on the [Configure single sign-on for Teams channel](configure-sso-teams.md) documentation. Failing to configure the Teams SSO settings as instructed on that page will cause your users to always fail authentication when using the Teams channel.
+<sup>1</sup> If you also have the Teams channel enabled, you need to follow the configuration instructions on the [Configure SSO for Teams channel](configure-sso-teams.md) documentation. Failing to configure the Teams SSO settings as instructed on that page will cause your users to always fail authentication when using the Teams channel.
 
 ## Technical overview
 
@@ -78,10 +78,10 @@ The following illustration shows how a user is signed in without seeing a login 
 
 ## Create an app registration in Azure AD for your custom canvas
 
-To enable single sign-on, you'll need two separate app registrations:
+To enable SSO, you'll need two separate app registrations:
 
 - [One for your bot to enable user authentication with Azure AD](configuration-end-user-authentication.md#use-azure-active-directory-as-your-identity-provider).
-- One for your custom canvas to enable single sign-on.
+- One for your custom canvas to enable SSO.
 
 > [!IMPORTANT]
 > You can't reuse the same app registration for both your bot's user authentication and your custom canvas.
@@ -150,7 +150,7 @@ This step creates a trust relationship between the authentication app registrati
 
     :::image type="content" source="media/configure-sso/sso-expose-an-api-scopes.png" alt-text="Screenshot showing Expose an api and then add a scope." border="false":::
 
-1. Enter a name for the scope, along with the display information that should be shown to users when they come to the single sign-on screen. Select **Add scope**.
+1. Enter a name for the scope, along with the display information that should be shown to users when they come to the SSO screen. Select **Add scope**.
 
     :::image type="content" source="media/configure-sso/sso-add-scope-bladed.png" alt-text="Screenshot showing the Add scope blade." border="false":::
 
@@ -160,7 +160,7 @@ This step creates a trust relationship between the authentication app registrati
 
 1. Select **Add application**.
 
-## Configure authentication in Power Virtual Agents to enable single sign-on
+## Configure authentication in Power Virtual Agents to enable SSO
 
 The **Token Exchange URL** in the Power Virtual Agents authentication configuration page is used to exchange the OBO token for the requested access token through the bot framework.
 
@@ -182,7 +182,7 @@ Power Virtual Agents calls into Azure AD to perform the actual exchange.
 
 1. Select **Save** and then publish the bot content.
 
-## Configure your custom canvas HTML code to enable single sign-on
+## Configure your custom canvas HTML code to enable SSO
 
 Update the custom canvas page where the bot is located to intercept the login card request and exchange the OBO token.
 
