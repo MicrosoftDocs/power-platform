@@ -38,7 +38,7 @@ Bellow you can find the personas and the definition in a fusion team:
 >[!IMPORTANT]
 > We’re not trying to make citizen developer into pro devs, or vice versa. We are focused on helping them build together doing what they are best at doing.
 
-Empowering the citizen developer can enable the pro developers to focus on specialized problems, avoiding simple and repetitive tasks that can be performed by the citizen developer himself.
+Empowering the citizen developer can enable the pro developers to focus on specialized problems, avoiding simple and repetitive tasks that can be performed by the citizen developer.
 
 ## Collaboration
 
