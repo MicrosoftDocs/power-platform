@@ -4,7 +4,7 @@ description: Administer and manage Microsoft Dataverse for Teams environment
 author: jimholtz
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/11/2022
+ms.date: 06/09/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -206,9 +206,6 @@ The consumption of capacity by Dataverse for Teams environments won't count towa
 The following actions will be taken when customers approach and exceed the environment-level or tenant-wide Microsoft Teams limits. 
 
 #### Environment-level enforcement actions  
-
-> [!NOTE]
-> These environment-level enforcement actions will take effect soon after general availability. 
 
 When a Dataverse for Teams environment in a team approaches or reaches the 2 GB capacity limit, the following actions will be taken: 
 - At 80 percent of the limit, the Microsoft Teams users will see in the Microsoft Teams maker experience a message informing them the capacity limit is about to be reached. At this point, customers are encouraged to either reduce storage usage or contact their admin for other options.  
