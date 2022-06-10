@@ -144,6 +144,6 @@ Customer Lockbox requests are also not triggered by external legal demands for d
 
 - Customer Lockbox Preview isn't available in sovereign clouds at this time. 
 
-- Tenant-to-tenant migration isn't supported when Customer Lockbox is enabled. You must disable Customer Lockbox to move an environment to another tenant.
+- Tenant-to-tenant migration isn't supported when Customer Lockbox is enabled. You must disable Customer Lockbox to move an environment to another tenant. You can re-enable Customer Lockbox once the migration is completed.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
