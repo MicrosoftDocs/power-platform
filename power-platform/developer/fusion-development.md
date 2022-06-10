@@ -57,5 +57,6 @@ The role of the professional developer and IT Professional is to create a safe e
 ### See Also
 
 [Fusion Development ebook](../../power-apps/guidance/fusion-dev-ebook/)  
+[Power Platform for developers](get-started-developers.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
