@@ -3,7 +3,7 @@ title: "Clean up records from AsyncOperationBase and WorkflowLogBase tables"
 description: "Learn how to clean up records from AsyncOperationBase and WorkflowLogBase tables."
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/04/2022
+ms.date: 06/10/2022
 author: viveke
 ms.subservice: admin
 ms.author: vielango
