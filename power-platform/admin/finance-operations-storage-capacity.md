@@ -39,7 +39,6 @@ The following product and capacity licenses include storage for finance and oper
 - Dynamics 365 Operations – Activity/Device
 - Dynamics 365 Operations database capacity/file capacity
 - Dynamics 365 Operations Sandbox
-<!-- I got the above revised names from the Dynamics 365 Licensing Guide, https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409 -->
 
 To see whether you have any of these licenses, sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/), and then select **Billing** > **Licenses**.  
 
@@ -97,7 +96,6 @@ Learn how to clean up your finance and operations data:
 ### Why is finance and operations storage reporting separate from Dataverse?
 
 Microsoft business applications work across multiple underlying technologies. Dataverse powers many experiences across Power Platform and Dynamics 365 apps. Dataverse reporting is tracked across database, log, and file storage categories. Finance and operations products are currently managed on separate database and file platform layers. [Dual-write technologies](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-overview) allow certain finance and operations actions to be stored in Dataverse.
-<!-- This paragraph isn't clear. Is it saying that finance and operations data is stored separately from Dataverse, and that's why the reporting is separate? -->
 
 ### How are my usage and entitlement calculated?
 
