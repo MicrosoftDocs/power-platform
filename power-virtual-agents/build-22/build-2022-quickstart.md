@@ -14,7 +14,7 @@ ms.collection: virtual-agent
 
 [!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
 
-This quick start walks you through making a bot that uses new features and improvements introduced in the technology preview at Build. We'll create a simple bot that helps users make a reservation at a fictional restaurant.
+This quick start walks you through making a bot that uses new features and improvements introduced in the technology preview at Build. We'll create a bot that helps users make a reservation at a fictional restaurant.
 
 >
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4XQgu]
@@ -48,9 +48,9 @@ Power Virtual Agents now has an app-level home page that isn't specific to any b
 
 1. In the side navigation, select **Topics**an then select the **Greeting** topic.
 
-1. Click on the **Delete** button in the ellipsis menu and delete the existing **Message** node.
+1. Select the **Delete** button in the ellipsis menu and delete the existing **Message** node.
 
-1. To add a new **Message** node, click on the **Send a message** option in the next node menu.  Type the following greetings as [message variations](authoring-create-edit-topics.md#message-variations):
+1. To add a new **Message** node, select **Send a message** option in the next node menu.  Type the following greetings as [message variations](authoring-create-edit-topics.md#message-variations):
     - `Good day!`
     - `Hi there!`
     - `Hi!`
@@ -79,7 +79,7 @@ Power Virtual Agents now has an app-level home page that isn't specific to any b
 
    :::image type="content" source="media/build-2022-quickstart/quick-reply.png" alt-text="Screenshot of the reservation quick reply.":::
 
-1. Click **Save**.
+1. Select **Save**.
 
 1. Click on the **Test** button to trigger the greeting.
 
