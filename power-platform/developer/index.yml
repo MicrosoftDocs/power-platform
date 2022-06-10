@@ -54,9 +54,11 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Canvas apps Developer Guide
+          - text: Canvas apps developer guide
             url: ../../power-apps/maker/canvas-apps/dev-enterprise-intro.md
           - text: Model-driven apps Developer Guide
             url: ../../power-apps/developer/model-driven-apps/index.yml
           - text: Power Apps component framework
             url: ../../power-apps/developer/component-framework/overview.md
+          - text: Dataverse developer documentation
+            url: ../../power-apps/developer/data-platform/index.yml
