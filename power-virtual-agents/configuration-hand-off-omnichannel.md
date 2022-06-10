@@ -229,7 +229,7 @@ Normally the extensions are automatically installed in your omnichannel environm
 
 ### For both text and voice hand-off
 
-To use both text and voice hand-off, install the following extensions in this order:
+Install the following extensions in this order:
 
   1. [Power Virtual Agents telephony extension](https://appsource.microsoft.com/product/dynamics-crm/mscrm.mspva_telephony_extension)
   1. [Omnichannel Power Virtual Agent extension](https://appsource.microsoft.com/product/dynamics-365/mscrm.omnichannelpvaextension)
@@ -237,6 +237,6 @@ To use both text and voice hand-off, install the following extensions in this or
 
 ### For only text (messaging) hand-off
 
-To use only text hand-off, install [Omnichannel Power Virtual Agent extension](https://appsource.microsoft.com/product/dynamics-365/mscrm.omnichannelpvaextension).
+Install [Omnichannel Power Virtual Agent extension](https://appsource.microsoft.com/product/dynamics-365/mscrm.omnichannelpvaextension).
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
