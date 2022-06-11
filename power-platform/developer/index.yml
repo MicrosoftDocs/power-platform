@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
 title: Microsoft Power Platform developer documentation
-summary: Learn how to extend the Microsoft Power Platform using code first components and integrating with back-end services.
+summary: Learn how to extend Microsoft Power Platform using code first components and integrating with back-end services.
 
 metadata:
   title: Power Platform developer documentation
@@ -33,7 +33,7 @@ landingContent:
        - linkListType: reference
          links:
           - text: Fusion development ebook
-            url: ../../power-apps/guidance/fusion-dev-ebook/
+            url: /power-apps/guidance/fusion-dev-ebook
        - linkListType: learn
          links:
           - text: Introduction to developing with Microsoft Power Platform
@@ -55,10 +55,11 @@ landingContent:
       - linkListType: overview
         links:
           - text: Canvas apps developer guide
-            url: ../../power-apps/maker/canvas-apps/dev-enterprise-intro.md
+            url: /power-apps/maker/canvas-apps/dev-enterprise-intro
           - text: Model-driven apps Developer Guide
-            url: ../../power-apps/developer/model-driven-apps/index.yml
-          - text: Power Apps component framework
-            url: ../../power-apps/developer/component-framework/overview.md
+            url: /power-apps/developer/model-driven-apps/
           - text: Dataverse developer documentation
-            url: ../../power-apps/developer/data-platform/index.yml
+            url: /power-apps/developer/data-platform
+          - text: Power Apps component framework
+            url: /power-apps/developer/component-framework/overview
+          
