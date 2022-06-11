@@ -25,7 +25,7 @@ landingContent:
        - linkListType: overview
          links:
           - text: "Introduction to Microsoft Power Platform for Developers"
-            url: get-started-developers.md
+            url: get-started.md
        - linkListType: concept
          links:
           - text: "Fusion development"
