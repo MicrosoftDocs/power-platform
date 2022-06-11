@@ -22,11 +22,11 @@ search.app:
 
 Microsoft Power Platform is a low-code platform for rapidly building customized end-to-end business solutions. It consists of five product areas: Power Apps, Power Automate, Power BI, Power Virtual Agents, and Power Pages. Each area can be used individually or together. United by the underlying Microsoft Dataverse technology, all areas are designed for a connected experience to achieve your business goals, whether it's creating analytics, process automation or data-driven productivity applications.
 
-The platform's low-code approach enables everyone in an organization&mdash;from frontline workers to professional developers&mdash;to participate in the development of business solutions that drive positive business outcomes. Developers can collaborate with citizen developers to enhance business solutions and solve complex requirements by leveraging the platform's various extension capabilities with code. Thanks to a native integration with Azure, developers can use their cloud development skills to extend Microsoft Power Platform with different Azure services. With a low-code integrated development approach, business goals can be achieved faster and frees up time for the developers.
+The platform's low-code approach enables everyone in an organization&mdash;from frontline workers to professional developers&mdash;to participate in the development of business solutions that drive positive business outcomes. Developers can collaborate with citizen developers to enhance business solutions and solve complex requirements by using the platform's various extension capabilities with code. Thanks to a native integration with Azure, developers can use their cloud development skills to extend Microsoft Power Platform with different Azure services. With a low-code integrated development approach, business goals can be achieved faster and frees up time for the developers.
 
 ![Power platform.](media/power-platform.png "Power platform")
 
-As a developer interacting with the platform, it's important to understand the basics of what the platform offers. In the following, you will find a high-level overview of each of the core product areas and their key extensibility points.
+As a developer interacting with the platform, it's important to understand the basics of what the platform offers. In the following, you'll find a high-level overview of each of the core product areas and their key extensibility points.
 
 ## Power Apps 
 
@@ -78,7 +78,7 @@ Power BI is Microsoft's business analytics solution that provides interactive da
 
 ## Power Pages
 
-[Power Pages](#power-pages) is a secure, enterprise-grade, low-code software as a service (SaaS) platform for creating, hosting, and administering modern external-facing business websites. Power Pages is built on the foundation of Power Apps portals. Low-code makers can rapidly design, configure, and publish websites that seamlessly work across web browsers and devices. Professional developers can extend these capabilities to address advanced business requirements.
+Power Pages is a secure, enterprise-grade, low-code software as a service (SaaS) platform for creating, hosting, and administering modern external-facing business websites. Power Pages is built on the foundation of Power Apps portals. Low-code makers can rapidly design, configure, and publish websites that seamlessly work across web browsers and devices. Professional developers can extend these capabilities to address advanced business requirements.
 
 > #### Key developer extensibility points
 > - Custom web page templates built with HTML, CSS, and [Liquid](/power-pages/configure/liquid-overview)
