@@ -46,8 +46,8 @@ Data-driven applications that are built on top of [Microsoft Dataverse](#dataver
 
 > #### Key developer extensibility points
 > - Build custom UI components using [Power Apps component framework](/power-apps/developer/component-framework/overview)
-> - Implement client business logic using JavaScript and the client API
-> - Build HTML web resources
+> - Implement client business logic using [JavaScript and the client API](/power-apps/developer/model-driven-apps/client-scripting)
+> - Build [HTML web resources](/power-apps/developer/model-driven-apps/webpage-html-web-resources)
 
 ### Portals
 
@@ -66,7 +66,7 @@ Power Automate is used to automate tasks and orchestrate activities across vario
 
 > #### Key developer extensibility points
 > - Create [custom connectors](/connectors/custom-connectors/) to communicate to your external data sources and services. A custom connector is a wrapper around a REST API and can be created using tools like Azure Functions and Azure API Management
-> - Use workflow definition functions to build complex expressions
+> - Use [workflow definition functions](/power-automate/developer/custom-cds-for-apps-workflow-activities) to build complex expressions
 
 ## Power BI
 
@@ -74,7 +74,7 @@ Power BI is Microsoft's business analytics solution that provides interactive da
 
 > #### Key developer extensibility points
 > - Embed Power BI in apps, websites, and portals
-> - Create custom visuals using the open-source SDK
+> - Create [custom visuals](/power-bi/developer/visuals/power-bi-custom-visuals) using the open-source SDK
 
 ## Power Pages
 
@@ -83,7 +83,7 @@ Power Pages is a secure, enterprise-grade, low-code software as a service (SaaS)
 > #### Key developer extensibility points
 > - Custom web page templates built with HTML, CSS, and [Liquid](/power-pages/configure/liquid-overview)
 > - Extend site integration with Dataverse with the [portals Web API](/power-pages/configure/web-api-overview)
-> - Use Visual Studio Code and the Power Platform CLI to enable metadata editing and CI/CD (Continuous Integration/Continuous Deployment) of site configurations
+> - [Use Visual Studio Code and the Power Platform CLI](/power-pages/configure/cli-tutorial) to enable metadata editing and CI/CD (Continuous Integration/Continuous Deployment) of site configurations
 
 ## Power Virtual Agents
 
