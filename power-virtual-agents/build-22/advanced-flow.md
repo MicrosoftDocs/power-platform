@@ -38,7 +38,7 @@ Flows typically use variables to input and output information. The variables can
 
 1. Open the authoring canvas for the topic from which you want to call a flow.
 
-1. Click on the plus (**+**) button below an existing node to add a new node.
+1. Select the plus (**+**) button below an existing node to add a new node.
 
 1. Select **Call an action** in the node selection window, and then select **Create a new flow**.
 
@@ -238,7 +238,7 @@ These instructions use adding weather information to a flow as an example. If yo
 
     :::image type="content" source="media/advanced-flow/TopicDialogQuestions.jpg" alt-text="Add Topic Dialog questions." border="false":::
 
-1. Click on the the plus (**+**) button under the question nodes to add a new node. Select **Call an action** in the node selection window,  and select the flow you created earlier called **Get weather forecast**.
+1. Select the plus (**+**) button under the question nodes to add a new node. Select **Call an action** in the node selection window,  and select the flow you created earlier called **Get weather forecast**.
 
     :::image type="content" source="media/advanced-flow/SelectFlowGetWeatherForecast.png" alt-text="Call action." border="false":::
 
@@ -283,7 +283,7 @@ If you've enabled [Asynchronous Response](/azure/connectors/connectors-native-ht
 
 1. In your Power Automate flow, locate the Power Virtual Agents step that returns values.
 
-1. Click on the three dots, next to the flow's name, and then select **Settings**.
+1. Select the three dots, next to the flow's name, and then select **Settings**.
 
     :::image type="content" source="media/advanced-flow/async1.png" alt-text="Open step settings.":::
 
