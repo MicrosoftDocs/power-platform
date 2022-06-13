@@ -8,7 +8,7 @@ ms.reviewer: jimholtz
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/09/2022
+ms.date: 06/13/2022
 search.audienceType: 
   - admin
 search.app:
@@ -111,9 +111,9 @@ For information on predefined security roles, see [Predefined security roles](da
     
 6. When you have finished configuring the security role, on the toolbar, select or tap **Save and Close**.  
   
-## Remove predefined security role edits
+## Remove predefined and imported Solution security role edits
 
-All edits done to [predefined security roles](database-security.md#predefined-security-roles) by the environment admin are managed by our solution layering. These edits can be removed to restore the predefined security role to the default system settings. 
+All edits done to [predefined](database-security.md#predefined-security-roles) and imported Solution security roles by the environment admin are managed by our solution layering. These edits can be removed to restore the predefined security role to the default system settings. 
 
 1. Sign in to [Power Apps](https://make.powerapps.com/) as an admin (local environment admin, Dynamics 365 admin, Global admin, or Microsoft Power Platform admin). 
 
