@@ -31,7 +31,7 @@ With the knowledge granted by entities, a bot can smartly recognize the relevant
 
 1. Go to the [**Topics page**](./authoring-create-edit-topics.md) for the bot you want to edit.
 
-1. Open the authoring canvas to add an entity to the desired topic.
+1. Open the authoring canvas for the topic you want to add an entity to.
 
 1. Select the plus (**+**) icon and then select **Ask a question**.
 
