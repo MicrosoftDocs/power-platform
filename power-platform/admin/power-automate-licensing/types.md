@@ -4,7 +4,7 @@ description: "Types of Power Automate licenses."
 author: PriyaKodukula
 ms.subservice: admin
 ms.topic: overview
-ms.date: 03/30/2022
+ms.date: 06/13/2022
 ms.author: prkoduku
 search.audienceType: 
   - admin
@@ -300,9 +300,9 @@ To know which users have the free plan, admins can go to the [O365 Admin portal]
 
 Select **Assigned licenses** to see which users have free license.
 
-## Community plan
+## Power Apps Developer plan
 
-There is a [free community plan to learn about Power Platform](https://powerapps.microsoft.com/communityplan/). You are not allowed to use it in production but can try out things and have access to all premium connectors. You can use this free community plan also in a free [Microsoft 365 developer tenant](https://developer.microsoft.com/microsoft-365/dev-program). Business process flows and RPA flows cannot be created in an environment with community plan.
+There is a [free Power Apps Developer plan to learn about Power Platform](https://powerapps.microsoft.com/communityplan/). You are not allowed to use it in production but can try out things and have access to all premium connectors. You can use this free developer plan also in a free [Microsoft 365 developer tenant](https://developer.microsoft.com/microsoft-365/dev-program). Business process flows and RPA flows cannot be created in an environment with the Power Apps Developer plan.
 
 ## Trials
 
