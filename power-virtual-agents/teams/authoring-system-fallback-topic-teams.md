@@ -29,7 +29,7 @@ You customize these fallback behaviors by adding the system **Fallback** topic. 
 
 ## Prerequisites
 
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations-teams.md)]
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents-teams.md).
 
 ## Add a system fallback topic
 

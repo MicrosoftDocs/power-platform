@@ -37,7 +37,7 @@ For bot and topic limits, see the [Quotas, limits, and configuration values](../
 
 ## Prerequisites
 
-[!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations-teams.md)]
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents-teams.md).
 
 ## Use system and sample topics
 

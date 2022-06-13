@@ -25,7 +25,7 @@ Power Virtual Agents has advanced features that let you create a personalized lo
 
 ## Prerequisites
 
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations-teams.md)]
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents-teams.md).
 
 ## In this section
 
