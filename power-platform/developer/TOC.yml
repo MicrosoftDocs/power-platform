@@ -2,8 +2,8 @@
   items:
   - name: Microsoft Power Platform developer documentation
     href: ./index.yml
-  - name: Power Platform for developers   
-    href: get-started.md     
+  - name: Power Platform for developers
+    href: get-started.md
   - name: Fusion development
     href: fusion-development.md
   - name: Tools

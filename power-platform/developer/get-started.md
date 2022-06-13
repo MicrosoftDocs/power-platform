@@ -20,7 +20,7 @@ search.app:
 
 # Introduction to Microsoft Power Platform for Developers
 
-Microsoft Power Platform is a low-code platform for rapidly building customized end-to-end business solutions. It consists of five product areas: Power Apps, Power Automate, Power BI, Power Virtual Agents, and Power Pages. Each area can be used individually or together. United by the underlying Microsoft Dataverse technology, all areas are designed for a connected experience to achieve your business goals, whether it's creating analytics, process automation or data-driven productivity applications.
+Microsoft Power Platform is a low-code platform for rapidly building customized end-to-end business solutions. It consists of five product areas: Power Apps, Power Automate, Power BI, Power Virtual Agents, and Power Pages. Each area can be used individually or together. United by the underlying Microsoft Dataverse technology, all areas are designed for a connected experience to achieve your business goals, whether it's creating analytics, process automation, or data-driven productivity applications.
 
 The platform's low-code approach enables everyone in an organization&mdash;from frontline workers to professional developers&mdash;to participate in the development of business solutions that drive positive business outcomes. Developers can collaborate with citizen developers to enhance business solutions and solve complex requirements by using the platform's various extension capabilities with code. Thanks to a native integration with Azure, developers can use their cloud development skills to extend Microsoft Power Platform with different Azure services. With a low-code integrated development approach, business goals can be achieved faster and frees up time for the developers.
 
@@ -108,6 +108,5 @@ Dataverse is a cloud scale data store that builds on Microsoft's data technologi
 ### See Also
 
 [Fusion Development](fusion-development.md)<br/>
-[Power Platform documentation](../index.yml) 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
