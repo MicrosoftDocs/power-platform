@@ -37,8 +37,8 @@ Custom dialogs added with Bot Framework Composer are deployed, hosted, and execu
 
 ## Prerequisites
 
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 - [Introduction to Bot Framework Composer](/composer/introduction)
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 
 ## Access Bot Framework Composer from within Power Virtual Agents
 

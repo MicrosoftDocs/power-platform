@@ -24,6 +24,10 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](advanced-ai-features.md)
 > - [Power Virtual Agents app in Microsoft Teams](teams/advanced-ai-features-teams.md)
 
+## Prerequisites
+
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents-teams.md).
+
 ## AI models in Power Virtual Agents - background
 
 :::image type="content" source="media/advanced-ai-features/nlu-models.png" alt-text="In Power Virtual Agents conversational AI is infused in each step of the bot building journey wrapped in an experience friendly to business users.":::

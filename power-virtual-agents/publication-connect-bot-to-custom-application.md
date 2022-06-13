@@ -25,10 +25,10 @@ Connecting your bot to a web-based app is relatively straightforward as it invol
 
 ## Prerequisites
 
-- [.NET Core SDK](https://dotnet.microsoft.com/download) version 2.1
-- Nuget package [Microsoft.Bot.Connector.DirectLine](https://www.nuget.org/packages/Microsoft.Bot.Connector.DirectLine)
-- A bot created in Power Virtual Agents that you want to connect to your app
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- [.NET Core SDK](https://dotnet.microsoft.com/download) version 2.1.
+- Nuget package [Microsoft.Bot.Connector.DirectLine](https://www.nuget.org/packages/Microsoft.Bot.Connector.DirectLine).
+- A bot created in Power Virtual Agents that you want to connect to your app.
 
 ## Connect your bot to a web-based app
 

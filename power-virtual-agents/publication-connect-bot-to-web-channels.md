@@ -27,7 +27,7 @@ When publishing the bot to the web, you can publish to a prebuilt demo website (
 
 ## Prerequisites
 
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 
 ## Demo website
 

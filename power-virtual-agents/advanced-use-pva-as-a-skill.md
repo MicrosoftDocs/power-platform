@@ -32,11 +32,11 @@ To set up your Power Virtual Agents bot as a skill:
 
 ## Prerequisites
 
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 - [Understand how Bot Framework skills work](/azure/bot-service/skills-conceptual?view=azure-bot-service-4.0&preserve-view=true).
 - [Understand how to use Bot Framework Composer](/composer/introduction).
 - [Understand how to use skills in Bot Framework Composer](/composer/concept-skills).
 - [Get your Bot Framework bot's app ID](/azure/bot-service/bot-service-manage-overview#get-azure-bot-resource-app-id).
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 
 ## Add your Bot Framework bot to the allowlist for your Power Virtual Agents bot
 
