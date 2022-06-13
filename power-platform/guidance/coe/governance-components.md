@@ -295,6 +295,9 @@ And if the reason is sound, they can choose to exempt the object from future run
 
 ## Microsoft Teams governance
 
+>[!NOTE]
+>These components will not work in GCC, GCC High and DoD as posting adaptive cards to Teams is not supported in those regions.
+
 ### Flows
 
 | Flow | Type | Schedule |
@@ -340,6 +343,9 @@ Learn more about the Microsoft Teams governance process in the CoE Starter Kit: 
 This flow sends a daily reminder email to environment owners who have been asked for a business justification for their Dataverse for Teams environment but haven't yet provided one. The email additionally provides information on how to turn on flow integration in Microsoft Teams.
 
 ## Cleanup for orphaned resources
+
+>[!NOTE]
+>These components will not work in GCC, GCC High and DoD as posting adaptive cards to Teams is not supported in those regions.
 
 ### Flows
 
