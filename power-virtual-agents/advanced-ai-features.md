@@ -26,7 +26,7 @@ Select the version of Power Virtual Agents you're using here:
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents-teams.md).
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 
 ## AI models in Power Virtual Agents - background
 
