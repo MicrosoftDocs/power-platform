@@ -1,4 +1,4 @@
-- name: Microsoft Power Platform developer documentation
+- name: For developers
   items:
   - name: Microsoft Power Platform developer documentation
     href: ./index.yml
@@ -8,9 +8,11 @@
     href: fusion-development.md
   - name: Tools
     items:
-      - name: Microsoft Power Platform CLI 
-        href: cli\introduction.md
+      - name: Power Platform CLI 
         items:
+        - name: What is Power Platform CLI
+          href: cli\introduction.md
+          items:          
           - name: PAC CLI reference
             items:
               - name: admin
