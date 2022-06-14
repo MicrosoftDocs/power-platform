@@ -52,6 +52,10 @@ To run the CoE CLI application, you'll need to install the components below.
 
    a. [Install Azure CLI](/cli/azure/install-azure-cli)
 
+### Non Administrator Install
+
+If you do not have administration rights you can use the [Non Administration Install](./non-administrator-local-install.md)
+
 ### Checking prerequisites
 
 To check that the prerequisites have been installed correctly and the correct versions are installed, use the following commands at the command prompt.
