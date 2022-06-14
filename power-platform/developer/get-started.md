@@ -1,14 +1,12 @@
 ---
-title: "Introduction to Microsoft Power Platform for Developers"
-description: "Overview of how to extend power platform for Azure developers."
-keywords: 
+title: "Introduction to Microsoft Power Platform for developers"
+description: "Overview of how developers can extend Power Platform."
 author: marcelbf
 ms.subservice: developer
 ms.author: marcelbf
-manager: 
 ms.custom: ""
 ms.date: 05/25/2022
-ms.reviewer: 
+ms.reviewer: kvivek
 ms.topic: "article"
 search.audienceType: 
   - developer
@@ -18,7 +16,7 @@ search.app:
   - Azure
 ---
 
-# Introduction to Microsoft Power Platform for Developers
+# Introduction to Microsoft Power Platform for developers
 
 Microsoft Power Platform is a low-code platform for rapidly building customized end-to-end business solutions. It consists of five product areas: Power Apps, Power Automate, Power BI, Power Virtual Agents, and Power Pages. Each area can be used individually or together. United by the underlying Microsoft Dataverse technology, all areas are designed for a connected experience to achieve your business goals, whether it's creating analytics, process automation, or data-driven productivity applications.
 

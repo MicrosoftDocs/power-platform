@@ -4,7 +4,7 @@ title: Microsoft Power Platform developer documentation
 summary: Learn how to extend Microsoft Power Platform using code first components and integrating with back-end services.
 
 metadata:
-  title: Power Platform developer documentation
+  title: Microsoft Power Platform developer documentation
   description: Provides access to highlighted areas within the developer documentation
   services: service
   ms.subservice: developer
@@ -22,7 +22,7 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: "Power Platform for Developers"
+          - text: "Power Platform for developers"
             url: get-started.md
       - linkListType: concept
         links:
