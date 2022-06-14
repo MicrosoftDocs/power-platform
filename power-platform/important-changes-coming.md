@@ -29,7 +29,7 @@ Effective September 2022, [Power Apps](https://apps.microsoft.com/store/detail/p
 
 On June 20, 2022  [Power Apps](https://apps.microsoft.com/store/detail/power-apps/9NBLGGH5Z8F3?hl) for Windows will be renamed to **Power Apps for Windows 8**. After Sept 20, 2022, the app will be removed from the Microsoft Store, and will no longer be supported.
 
-On June 20, 2022 the new app for Windows that’s currently in preview will be available for general availability. The app will be renamed from [Power Apps (Preview)](https://apps.microsoft.com/store/detail/power-apps-preview/9MVC8P1Q3B29?hl) to **Power Apps**. For more information, see [Install Powers Apps for Windows](/power-apps/mobile/windows-app-install.md).
+On June 20, 2022 the new app for Windows that’s currently in preview will be available for general availability. The app will be renamed from [Power Apps (Preview)](https://apps.microsoft.com/store/detail/power-apps-preview/9MVC8P1Q3B29?hl) to **Power Apps**. For more information, see [Install Powers Apps for Windows](/power-apps/mobile/windows-app-install).
 
 
 ## Data Export Service deprecation
