@@ -132,6 +132,8 @@ This task requires the System Administrator or System Customizer role or equival
 
 4. Select **Save**.
 
+More information: [Dataverse developer guide: Configure auditing > Configure organization settings](/power-apps/developer/data-platform/auditing/configure#configure-organization-settings)
+
 ## Enable auditing for a specific app in a web app 
 
 This task requires the System Administrator or System Customizer role or equivalent permissions. 
