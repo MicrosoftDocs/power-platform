@@ -3,7 +3,7 @@ title: "Manage Dataverse auditing"
 description: "Learn how to use Dataverse auditing to log changes to records and user access. System admins and customizers can use this feature to meet security and compliance policies."
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/17/2022
+ms.date: 06/14/2022
 author: Bluebear73
 ms.subservice: admin
 ms.author: munzinge
@@ -17,6 +17,8 @@ search.app:
   - Flow
 ---
 # Manage Dataverse auditing
+
+<!-- legacy procedure -->
 
 The Dataverse auditing feature is designed to meet the external and internal auditing, compliance, security, and governance policies that are common to many enterprises. Dataverse auditing logs changes that are made to customer records in a Dataverse environment database. Dataverse auditing also logs user access through an app or through the SDK in a Dataverse environment. 
 
@@ -118,7 +120,7 @@ This task requires the System Administrator or System Customizer role or equival
    |      Setting |     Description    |
    |--------------------|---------------------|
    | Set the retention policy for these logs   | Default: Forever   |
-   | Set a custom retention policy | Maximum: 24,855 days  |  
+   | Set a custom retention policy | Maximum: 24,855 days. Visible if you select "Custom" in the above setting.   |  
 
    When the audit retention period is set to Forever, logs will never be deleted. When the audit retention period is set to any other value, logs will be deleted continuously starting at the time an audit record exceeds the time defined in the retention policy. 
 
@@ -162,25 +164,39 @@ This task requires the System Administrator or System Customizer role or equival
    > [!NOTE]
    > We recommend that you manage the audit configuration as part of a solution. This enables you to easily find your customizations, apply your own solution published prefix, and export your solution for distribution to other environments. To learn more about solutions, see [Use a solution to customize](../alm/use-solutions-for-your-customizations.md). When using a solution, add all tables you want to configure for auditing to your solution, then perform steps 3-8 before saving and publishing your solution.
 
-3. Select **More Commands** (...) for a table, and then select **Edit**.
+3. Select **Dataverse** > **Tables**.
 
-4. On the command bar, select **Settings**.
+4. Select a table.
 
-5. Expand **Advanced options**.
+   :::image type="content" source="media/field-security-tables-contact.png" alt-text="Select the Contact table.":::
 
-6. Select the **Audit changes to its data** checkbox.
+5. On the command bar, select **Edit**.
+
+6. On the command bar, select **Edit table properties**.
+
+7. Expand **Advanced options**.
+
+8. Select the **Audit changes to its data** checkbox.
 
    :::image type="content" source="media/dataverse-audit-changes-to-data.png" alt-text="Select Audit changes to its data":::
 
-7. Select **Save**. 
+8. Select **Save**. 
 
-8. Select a column you want to enable for auditing, and then expand **Advanced options**. 
+9. On the command bar, select **<- Back**.
+
+10. Under **Schema**, select **Columns**. 
+
+   :::image type="content" source="media/field-security-schema-columns.png" alt-text="Under Schema, select Columns.":::
+
+11. Select a column you want to enable for auditing, and then expand **Advanced options**. 
+
+   :::image type="content" source="media/field-security-mobile-phone.png" alt-text="Select the Mobile Phone column.":::
 
 9. Select the **Enable auditing** checkbox. 
 
    :::image type="content" source="media/dataverse-audit-enable-auditing.png" alt-text="Select Enable auditing":::
 
-10. Select **Done**. 
+10. Select **Save**. 
 
 11. Repeat steps 3 – 10 for all tables and columns you want to edit. 
 
