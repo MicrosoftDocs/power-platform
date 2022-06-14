@@ -9,7 +9,7 @@
   - name: Tools
     items:
       - name: Microsoft Power Platform CLI 
-        href: cli\power-platform-cli.md
+        href: cli\introduction.md
         items:
           - name: PAC CLI reference
             items:

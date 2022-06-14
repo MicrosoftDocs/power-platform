@@ -4,17 +4,16 @@ description: "Install Microsoft Power Platform CLI to create, debug, and deploy 
 keywords: Microsoft Power Platform CLI, code components, component framework, CLI
 ms.author: jdaly
 author: kkanakas
-manager: kvivek
+ms.reviewer: jdaly
 ms.date: 06/07/2022
 ms.topic: overview
 ---
 
 # What is Microsoft Power Platform CLI?
 
-> [!NOTE]
-> Effective June 2021, Microsoft Power Apps CLI is rebranded to Microsoft Power Platform CLI. More information: [Blog: Microsoft Power Platform is the best way for teams to build together](https://cloudblogs.microsoft.com/powerplatform/2021/05/25/microsoft-power-platform-is-the-best-way-for-teams-to-build-together/)<p/>Microsoft Power Platform CLI is now available for use in the GCC and GCC High (US Sovereign cloud) regions. Use the command `pac auth create` for help on the `--cloud` parameter to find out about supported US Sovereign cloud environments.
+Microsoft Power Platform CLI is a simple, one-stop developer CLI that empowers developers and ISVs to perform various operations in Microsoft Power Platform related to environment lifecycle, authentication, and work with Microsoft Dataverse environments, solution packages, portals, code components, and so on.
 
-Microsoft Power Platform CLI is a simple, one-stop developer CLI that empowers developers and ISVs to perform various operations in Microsoft Power Platform related to environment lifecycle, authentication, and work with Microsoft Dataverse environments, solution packages, portals, code components, and so on.  
+Microsoft Power Platform CLI is available for use in the GCC and GCC High (US Sovereign cloud) regions. Use the command `pac auth create` for help on the `--cloud` parameter to find out about supported US Sovereign cloud environments.  
 
 ## Install Microsoft Power Platform CLI
 
@@ -68,7 +67,7 @@ This is will download a file with a .vsix extension on to your workstation.
    > [!div class="mx-imgBorder"]
    > ![Extension file downloaded.](media/side-load-install-2.png "Downloaded extension")
 
-Launch Visual Studio Code and select the **Extensions** icon, click on the ellipsis on the **Extensions** side bar, and then select **Install from VSIX**.
+Launch Visual Studio Code and select the **Extensions** icon, select the ellipsis on the **Extensions** side bar, and then select **Install from VSIX**.
 
    > [!div class="mx-imgBorder"]
    > ![Initiate install with the downloaded file.](media/side-load-install-3.png "Install from VSIX")
@@ -86,7 +85,7 @@ To install standalone Power Platform CLI:
     ```
 > [!NOTE]
 > - Currently, Microsoft Power Platform CLI is supported only on Windows 10 and Windows 11.
-> - Power Platform Tools for Visual Studio Code, and works on Windows 10, Windows 11, Linux, and MacOS.
+> - Power Platform Tools for Visual Studio Code, and works on Windows 10, Windows 11, Linux, and macOS.
 
 ## Successful installation
 
@@ -95,7 +94,7 @@ Once the installation is successful, you will need to restart Visual Studio Code
    > [!div class="mx-imgBorder"]
    > ![Install notification ](media/installation-success-1.png "Install notification")
 
-On the **Activity** bar you will notice the icon for the Power Platform Tools.
+On the **Activity** bar. you'll notice the icon for the Power Platform Tools.
 
    > [!div class="mx-imgBorder"]
    > ![Power Platform Tools icon ](media/installation-success-3.png "icon")
