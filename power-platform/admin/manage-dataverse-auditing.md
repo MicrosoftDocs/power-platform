@@ -257,6 +257,8 @@ System administrators or customizers can change the default audit settings for e
   
 4. Publish the customization. To publish for a single entity, choose the entity, such as Account, and then select **Publish** on the Actions toolbar.  
 
+More information: [Dataverse developer guide: Configure auditing > Configure tables and columns](/power-apps/developer/data-platform/auditing/configure#configure-tables-and-columns)
+
 ## Use the Audit History in a model-driven app 
 
 Audit History is a valuable resource for users to understand the update history of a single record. It answers questions such as “When was this record created and by whom?”, “Who changed a particular field and what was the previous value?”, “Who shared the record with another user?”. 
