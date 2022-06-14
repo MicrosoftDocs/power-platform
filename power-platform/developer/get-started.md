@@ -93,7 +93,7 @@ Power Virtual Agents lets you create powerful chatbots that can answer questions
 
 ## Dataverse
 
-Dataverse is a cloud scale data store that builds on Microsoft's data technologies and abstracts away data management complexity from the Power App Maker. It lets you securely store and manage data that is used by business applications. Business data within Dataverse is stored within a set of data tables. Role-based security allows businesses to control access to the data tables and even individual records for different users within your organization. Developers can extend or customize Dataverse functionality by adding custom business logic. You can define calculated table columns, business rules, workflows, and business process flows to ensure data quality and drive business processes.
+Dataverse is a cloud scale data store that builds on Microsoft's data technologies and abstracts away data management complexity from the app maker. It lets you securely store and manage data that is used by business applications. Business data within Dataverse is stored within a set of data tables. Role-based security allows businesses to control access to the data tables and even individual records for different users within your organization. Developers can extend or customize Dataverse functionality by adding custom business logic. You can define calculated table columns, business rules, workflows, and business process flows to ensure data quality and drive business processes.
 
 > #### Key developer extensibility points
 > - Create [plug-ins](/power-apps/developer/data-platform/plug-ins), similar to event handlers, that customize or extend Dataverse data processing with custom business logic (code)
