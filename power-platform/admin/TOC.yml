@@ -619,7 +619,7 @@
         href: logging-power-automate.md 
       - name: Data loss prevention activity logging
         href: dlp-activity-logging.md
-      - name: Manage Dataverse Auditing
+      - name: Manage Dataverse auditing
         href: manage-dataverse-auditing.md
       - name: Dataverse and model-driven apps
         href: enable-use-comprehensive-auditing.md   
