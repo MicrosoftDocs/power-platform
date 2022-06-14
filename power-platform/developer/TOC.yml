@@ -7,6 +7,7 @@
   - name: Fusion development
     href: fusion-development.md
   - name: Tools
+    expanded: true
     items:
       - name: Power Platform CLI 
         items:
