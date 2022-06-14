@@ -180,25 +180,25 @@ This task requires the System Administrator or System Customizer role or equival
 
    :::image type="content" source="media/dataverse-audit-changes-to-data.png" alt-text="Select Audit changes to its data":::
 
-8. Select **Save**. 
+9. Select **Save**. 
 
-9. On the command bar, select **<- Back**.
+10. On the command bar, select **<- Back**.
 
-10. Under **Schema**, select **Columns**. 
+11. Under **Schema**, select **Columns**. 
 
     :::image type="content" source="media/field-security-schema-columns.png" alt-text="Under Schema, select Columns.":::
 
-11. Select a column you want to enable for auditing, and then expand **Advanced options**. 
+12. Select a column you want to enable for auditing, and then expand **Advanced options**. 
 
     :::image type="content" source="media/field-security-mobile-phone.png" alt-text="Select the Mobile Phone column.":::
 
-12. Select the **Enable auditing** checkbox. 
+13. Select the **Enable auditing** checkbox. 
 
     :::image type="content" source="media/dataverse-audit-enable-auditing.png" alt-text="Select Enable auditing":::
 
-13. Select **Save**. 
+14. Select **Save**. 
 
-14. Repeat steps 3 – 10 for all tables and columns you want to edit. 
+15. Repeat steps 3 – 10 for all tables and columns you want to edit. 
 
 ## Enable or disable entities and fields for auditing  
 
