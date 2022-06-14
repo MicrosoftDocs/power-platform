@@ -103,7 +103,7 @@ Dataverse is a cloud scale data store that builds on Microsoft's data technologi
 
 
 
-### See Also
+### See also
 
 [Fusion Development](fusion-development.md)<br/>
 
