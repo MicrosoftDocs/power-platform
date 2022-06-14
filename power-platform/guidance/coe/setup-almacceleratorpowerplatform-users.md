@@ -1,14 +1,13 @@
 ---
 title: "Configuring the ALM Accelerator for Power Platform app user permissions | MicrosoftDocs"
 description: "Configuring user permissions to access the ALM Accelerator for Power Platform app and pipelines."
-author: mikefactorial
+author: jenschristianschroder
 manager: devkeydet
-
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 10/14/2021
 ms.subservice: guidance
-ms.author: v-mikeochs
+ms.author: jeschro
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
@@ -22,7 +21,7 @@ search.app:
 The ALM Accelerator for Power Platform app is intended to be used by makers to increase productivity while developing solutions in Microsoft Power Platform. The following instructions are for setting up a maker's user account in Microsoft Dataverse and Azure DevOps.
 
 > [!NOTE]
-> The ALM accelerator for Microsoft Power Platform is currently in public preview. While in preview we will be prioritizing feedback and bugs via GitHub [New issue](https://github.com/microsoft/coe-starter-kit/labels/alm-accelerator). If the issue is something in the platform all we can do is funnel feedback to the responsible product teams. For more information on the current preview status of the ALM Accelerator for Power Platform see [follow this link](https://github.com/microsoft/coe-starter-kit/blob/main/CenterofExcellenceALMAccelerator/PREVIEW.md).
+> The ALM accelerator for Microsoft Power Platform is currently in public preview. While in preview we will be prioritizing feedback and bugs via GitHub [New issue](https://github.com/microsoft/coe-starter-kit/labels/alm-accelerator). If the issue is something in the platform all we can do is funnel feedback to the responsible product teams. For more information on the current preview status of the ALM Accelerator for Power Platform [follow this link](https://github.com/microsoft/coe-starter-kit/blob/main/CenterofExcellenceALMAccelerator/PREVIEW.md).
 
 ## Dataverse user setup
 

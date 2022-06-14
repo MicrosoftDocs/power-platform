@@ -1,12 +1,12 @@
 ---
 title: "What's new for storage administration in Microsoft Power Platform"
 description: "Learn about enhancements for storage that affect administrators, including reporting and reaching Dataverse database capacity limits."
-author: cpdSeattle
+author: mayadumesh
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 03/09/2022
+ms.date: 05/25/2022
 ms.subservice: admin
-ms.author: camdebay
+ms.author: mayadu
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
@@ -53,11 +53,14 @@ There are two versions for storage capacity reporting:
 
 ## What happens when my organization exceeds storage entitlements?
 
-If you exceed your storage capacity, you'll receive email notifications alerting you to the over-capacity usage.  For new model email notification details, see [Changes for exceeding storage capacity entitlements](capacity-storage.md#changes-for-exceeding-storage-capacity-entitlements). For legacy model email notification details, see [Changes for exceeding storage capacity entitlements](legacy-capacity-storage.md#changes-for-exceeding-storage-capacity-entitlements). There is also a notification banner in the Power Platform admin center when a tenant has exceeded storage capacity. The following admin operations won't be available when a tenant exceeds storage capacity entitlements:
+If you exceed your storage capacity, you'll receive email notifications alerting you to the over-capacity usage.  For new model email notification details, see [Changes for exceeding storage capacity entitlements](capacity-storage.md#changes-for-exceeding-storage-capacity-entitlements). For legacy model email notification details, see [Changes for exceeding storage capacity entitlements](legacy-capacity-storage.md#changes-for-exceeding-storage-capacity-entitlements). There is also a notification banner in the Power Platform admin center when a tenant has exceeded storage capacity. There are currently no performance degradations when storage usage is above licensed entitlements, however the following admin operations won't be available when a tenant exceeds storage capacity entitlements:
 
 - Create new environment (requires minimum 1GB capacity available)
 - Copy an environment (requires minimum 1GB capacity available)
 - Restore an environment (requires minimum 1GB capacity available)
+- Convert a trial environment to paid (requires minimum 1GB capacity available)
+- Recover an environment (requires minimum 1GB capacity available)
+- Add Dataverse database to an environment
 
 Please review:
 - [Do we have any database size restriction to take a backup or restore an organization through user interface (UI) or API?](backup-restore-environments.md#do-we-have-any-database-size-restriction-to-take-a-backup-or-restore-an-organization-through-user-interface-ui-or-api)

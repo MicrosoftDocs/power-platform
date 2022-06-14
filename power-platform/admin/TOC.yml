@@ -384,9 +384,9 @@
         href: security/overview.md
       - name: Authenticating to Power Platform services
         href: security/authenticate-services.md
-      - name: Dataverse data governance in Power Platform
+      - name: Data storage and governance
         href: security/data-storage.md
-      - name: Customer Lockbox
+      - name: Securely access customer data using Customer Lockbox (preview)
         href: about-lockbox.md
       - name: Connecting and authenticating to data sources
         href: security/connect-data-sources.md
@@ -549,7 +549,7 @@
           href: analytics-flow.md
         - name: Analytics for UI flows
           href: analytics-ui-flow.md 
-      - name: Reports (preview)
+      - name: Reports
         items:
         - name: Tenant-level analytics (default)
           href: tenant-level-analytics.md
@@ -587,8 +587,12 @@
         href: legacy-capacity-storage.md
       - name: View self-service capacity
         href: view-self-service-capacity.md
-      - name: Free up storage space
-        href: free-storage-space.md        
+      - name: Free up storage
+        items:
+        - name: Recover storage space
+          href: free-storage-space.md  
+        - name: Clean up AsyncOperationBase and WorkflowLogBase tables
+          href: cleanup-asyncoperationbase-table.md
       - name: Add storage capacity
         href: add-storage.md      
       - name: Access storage with SAS token
@@ -615,6 +619,9 @@
         href: logging-power-automate.md 
       - name: Data loss prevention activity logging
         href: dlp-activity-logging.md
+  # remove following before live
+  #    - name: Manage Dataverse Auditing
+  #      href: manage-dataverse-auditing.md
       - name: Audit data and user activity for Dynamics 365 entities
         href: audit-data-user-activity.md
       - name: Dataverse and model-driven apps
@@ -822,6 +829,8 @@
             href: supported-email-service-configurations-server-side-synchronization.md
           - name: Connect to Exchange Online
             href: connect-exchange-online.md
+          - name: Use of Basic authentication with Exchange Online
+            href: use-basic-authentication-exchange-online.md
           - name: Exchange Online cross tenant authentication
             href: connect-exchange-online-server-profile-oauth.md 
           - name: Connect to Exchange Server (on-premises)

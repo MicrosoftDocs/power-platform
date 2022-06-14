@@ -76,7 +76,7 @@ Add-RoleGroupMember "Compliance Management" -Member user1
 
 If your organization uses a Security Information and Event Management (SIEM) server, you can learn how to enable integration with activity logging. More information: [SIEM Server Integration](/microsoft-365/security/office-365-security/siem-server-integration)
 
-You might also find Microsoft Compliance Manager helpful to manage your compliance efforts across Microsoft cloud services in a single place. More information: [Compliance Manager](https://aka.ms/compliancemanager)
+You might also find Microsoft Purview Compliance Manager helpful to manage your compliance efforts across Microsoft cloud services in a single place. More information: [Compliance Manager](https://aka.ms/compliancemanager)
 
 As an administrator, you should:
 

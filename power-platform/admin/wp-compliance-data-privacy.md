@@ -71,7 +71,7 @@ The following links point to detailed information to help you respond to DSR req
 
 ## Microsoft 365 Security and Compliance Center
 
-You may also find Microsoft Compliance Manager helpful to manage your compliance efforts across Microsoft cloud services in a single place. More details about Compliance Manager can be found here https://aka.ms/compliancemanager.
+You may also find Microsoft Purview Compliance Manager helpful to manage your compliance efforts across Microsoft cloud services in a single place. More details about Compliance Manager can be found here https://aka.ms/compliancemanager.
 
 ## Power Automate Audit Log Events
 

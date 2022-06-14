@@ -38,18 +38,18 @@ You can share your bot with security groups so their members can chat with the b
 
 1. Select **Share** at the top of the bot's home page.
 
-  :::image type="content" source="media/admin-share-bots/sharing-home.png" alt-text="Sharing UI entry point in bot homepage." border="false":::
+    :::image type="content" source="media/admin-share-bots/sharing-home.png" alt-text="Sharing UI entry point in bot homepage." border="false":::
 
 1. Specify the security group name that you would like to share the bot with.
 
     > [!NOTE]
     > You can only share a bot with security groups. You cannot share with Microsoft 365 groups or individual users directly. You can manage individual user access by adding or removing users from the security group.
 
-  :::image type="content" source="media/admin-share-bots/sharing-bot-specify-security-group.PNG" alt-text="Specify security group in Sharing UI":::
+    :::image type="content" source="media/admin-share-bots/sharing-bot-specify-security-group.PNG" alt-text="Specify security group in Sharing UI":::
 
 1. Review the security group's permission
 
-  :::image type="content" source="media/admin-share-bots/sharing-review-sg-permission.PNG" alt-text="Review security group permission in Sharing UI.":::
+    :::image type="content" source="media/admin-share-bots/sharing-review-sg-permission.PNG" alt-text="Review security group permission in Sharing UI.":::
 
 1. If you want to let users know you've shared the bot with them, select the **Send an email invitation to new users** check box.
 
@@ -85,7 +85,7 @@ You can stop sharing the bot with a security group or everyone in your organizat
 
 1. Select **X** next to the security groups that you want to stop sharing the bot with.
 
-  :::image type="content" source="media/admin-share-bots/sharing-unshare-sg.PNG" alt-text="Unshare security group in Sharing UI":::
+    :::image type="content" source="media/admin-share-bots/sharing-unshare-sg.PNG" alt-text="Unshare security group in Sharing UI":::
 
 1. Select **Share** to stop sharing the bot with the security groups.
 
@@ -97,7 +97,7 @@ You can stop sharing the bot with a security group or everyone in your organizat
 
 1. Select **None** option.
 
-  :::image type="content" source="media/admin-share-bots/sharing-unshare-everyone-in-org.PNG" alt-text="Unshare everyone in the organization in Sharing UI":::
+    :::image type="content" source="media/admin-share-bots/sharing-unshare-everyone-in-org.PNG" alt-text="Unshare everyone in the organization in Sharing UI":::
 
 1. Select **Share** to stop sharing the bot with everyone in the organization.
 
@@ -158,11 +158,11 @@ To let other users edit or add flows you'll need to share them in Power Automate
 
 1. Select **View flow details** to go to the flow's details page in Power Automate.
 
-  :::image type="content" source="media/admin-share-bots/sharing-view-flow-details.png" alt-text="Highlight of the view flow details on a flow in a topic." border="false":::
+    :::image type="content" source="media/admin-share-bots/sharing-view-flow-details.png" alt-text="Highlight of the view flow details on a flow in a topic." border="false":::
 
 1. Select **Edit** in the **Owners** section.
 
-  :::image type="content" source="media/admin-share-bots/sharing-flow-owners.png" alt-text="Select the Edit link." border="false":::
+    :::image type="content" source="media/admin-share-bots/sharing-flow-owners.png" alt-text="Select the Edit link." border="false":::
 
 1. Enter the name or email address of the user you want to give editing permissions to.
 

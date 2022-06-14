@@ -6,10 +6,9 @@ ms.subservice: admin
 ms.author: paulliew
 ms.reviewer: jimholtz
 ms.custom: "admin-security"
-
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/18/2022
+ms.date: 06/13/2022
 search.audienceType: 
   - admin
 search.app:
@@ -18,7 +17,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Create or edit a security role to manage access
+# Create or edit a security role to manage access 
 
 You can create new security roles to accommodate changes in your business requirements or you can edit the privileges associated with an existing security role.
   
@@ -112,12 +111,46 @@ For information on predefined security roles, see [Predefined security roles](da
     
 6. When you have finished configuring the security role, on the toolbar, select or tap **Save and Close**.  
   
+## Remove predefined and imported Solution security role edits
+
+All edits done to [predefined](database-security.md#predefined-security-roles) and imported Solution security roles by the environment admin are managed by our solution layering. These edits can be removed to restore the predefined security role to the default system settings. 
+
+1. Sign in to [Power Apps](https://make.powerapps.com/) as an admin (local environment admin, Dynamics 365 admin, Global admin, or Microsoft Power Platform admin). 
+
+2. In the environment selector, select the environment that your security role resides.  
+
+   :::image type="content" source="media/security-select-environment.png" alt-text="Select an environment.":::
+
+3. From the left-navigation, select **Solutions**. 
+
+4. Scroll down and double-click on **Default Solution**. 
+
+5. In the Objects column, scroll down and select **Security roles**. 
+
+   :::image type="content" source="media/security-objects-security-roles.png" alt-text="Select Objects > Security roles.":::
+
+6. Select the check mark to the left of the security role that you want to update. 
+
+   :::image type="content" source="media/security-select-security-role.png" alt-text="Select a security role.":::
+
+7. Select **Advanced** in the action bar, and then select **See solution layers**. 
+
+   :::image type="content" source="media/security-select-see-solution-layers.png" alt-text="Select Advanced > See solution layers.":::
+
+8. Select the row with a solution name of **Unmanaged** layer. 
+
+9. Select **Remove unmanaged layer button** on the action bar. 
+
+   :::image type="content" source="media/security-remove-unmanaged-layer.png" alt-text="Select Unmanaged layer > Remove unmanaged layer.":::
+
+All your edits to the security role will be removed. 
+
 ## Minimum privileges for common tasks  
  It's helpful to keep in mind the minimum privileges that are needed for some common tasks. This means that a user is required to have a security role with these privileges in order to run applications. 
  
  We've created a solution you can import that provides a security role with the required minimum privileges.
 
-Start by downloading the solution from the Download Center: [Microsoft Dataverse minimum privilege security role](https://download.microsoft.com/download/6/5/5/6552A30E-05F4-45F0-AEE3-9BB01E13118A/MinprivilegeSecRole_1_0_0_0.zip).
+Start by downloading the solution from the Download Center: [Microsoft Dataverse minimum privilege security role](https://download.microsoft.com/download/6/5/5/6552A30E-05F4-45F0-AEE3-9BB01E13118A/MinprivilegeSecRole_1_0_0_2.zip).
 
 Then, follow the directions to import the solution: [Import, update, and export solutions](/powerapps/maker/common-data-service/import-update-export-solutions).
 

@@ -2,10 +2,9 @@
 title: "About the Microsoft Dataverse for Teams environment | MicrosoftDocs"
 description: Administer and manage Microsoft Dataverse for Teams environment
 author: jimholtz
-
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/01/2022
+ms.date: 06/09/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -62,7 +61,7 @@ This section provides a summary of key lifecycle operations that will be allowed
 |Create     | Only through Microsoft Teams. Note: these Dataverse for Teams environments will be limited to a 1:1 mapping to the Microsoft Teams team it was created in and bound to the Microsoft 365 group associated with the team.        | No        |
 |Delete     | The environment can be deleted by the team owner. Note: the environment will be deleted automatically if the team it was created in is also deleted.| Yes  |
 |Reset     | Not available by default for Dataverse for Teams environments.        | No        |
-|Upgrade     | Unlocks all the functionality of Dataverse services for the environment.         | No        | 
+|Upgrade     | Unlocks all the functionality of Dataverse services for the environment.         | Yes        | 
 
 The lifetime of the environment will be tied to the team it was created in. If you upgrade an environment to Dataverse, the 1:1 mapping isn't guaranteed because the environment can now be used by applications outside of Microsoft Teams. The upgraded environment is bound by the lifecycle rules associated with the Power Apps license and the configuration of the environment.
 
@@ -208,17 +207,11 @@ The following actions will be taken when customers approach and exceed the envir
 
 #### Environment-level enforcement actions  
 
-> [!NOTE]
-> These environment-level enforcement actions will take effect soon after general availability. 
-
 When a Dataverse for Teams environment in a team approaches or reaches the 2 GB capacity limit, the following actions will be taken: 
 - At 80 percent of the limit, the Microsoft Teams users will see in the Microsoft Teams maker experience a message informing them the capacity limit is about to be reached. At this point, customers are encouraged to either reduce storage usage or contact their admin for other options.  
 - At 100 percent of the limit, any existing apps, chatbots, and flows will continue to work and existing apps can be updated. However, new apps, bots, flows, and tables can't be created or installed as a result of having reached the capacity limit. 
 
 #### Tenant-level enforcement  
-
-> [!NOTE]
-> These tenant-level enforcement actions will take effect at general availability.
 
 When a tenant approaches or reaches their tenant-wide Microsoft Teams limits described earlier, the following actions will be taken: 
 - At 80 percent of the limit, a notification that capacity is reaching its limit will be sent to the tenant admin (Microsoft 365 Global admin, Power Platform admin, Dynamics 365 admin). The admin will be encouraged to consider reducing storage usage or upgrading some of the Dataverse for Teams environments.
