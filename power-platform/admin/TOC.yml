@@ -449,7 +449,7 @@
             href: dlp-resource-exemption.md
           - name: Known limitations
             href: dlp-known-issues.md          
-        - name: Configure field-level security
+        - name: Configure column-level security
           items:
           - name: Overview
             href: field-level-security.md
