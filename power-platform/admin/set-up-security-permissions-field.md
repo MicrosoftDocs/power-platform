@@ -76,7 +76,7 @@ After you create the profile, you assign users and or teams to that profile, and
   > [!TIP]
   > Instead of adding each user, create one or more teams that include all users that you want to control access. 
 
-6. Select the **Column Permissions** tab, in the Name column select one or more columns, and then select **Edit**. Configure the three columns for the desired access.  
+6. Select the **Column Permission** tab, in the Name column select one or more columns, and then select **Edit**. Configure the three columns for the desired access.  
 
    :::image type="content" source="media/field-security-edit-field-permission.png" alt-text="Edit column security permissions.":::
 

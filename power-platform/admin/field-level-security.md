@@ -114,7 +114,7 @@ Imagine your company's policy is that sales members should have different levels
 
 1. Select the **Column Security Profiles** tab, and then select **Sales Manager**. 
 
-2. Select the **Column Permissions** tab, select **mobilephone**, and then select **Edit**. Set the **Read** setting to **Allowed**, leave the others as **Not Allowed**, and then select **Save**.
+2. Select the **Column Permission** tab, select **mobilephone**, and then select **Edit**. Set the **Read** setting to **Allowed**, leave the others as **Not Allowed**, and then select **Save**.
 
    :::image type="content" source="media/field-security-edit-field-permission.png" alt-text="Edit column security permissions.":::
 
