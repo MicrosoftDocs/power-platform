@@ -1,10 +1,9 @@
 ---
 title: "Impact of DLP policies on apps and flows  | MicrosoftDocs"
 description: About the impact of DLP policies on apps and flows.
-
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/03/2022
+ms.date: 06/15/2022
 ms.subservice: admin
 author: mikferland-msft
 ms.author: miferlan
@@ -61,7 +60,7 @@ Similarly, Power Automate makers and users won't be able to start a flow that us
 > ![Flow suspension.](media/dlp-flow-suspension.png "Flow suspension")
 
 ## DLP evaluation of Dataverse in Power Apps and Power Automate 
-Power Automate uses the [Microsoft Dataverse](https://docs.microsoft.com/connectors/commondataserviceforapps/) connector. Power Apps can use [Microsoft Dataverse (legacy)](https://docs.microsoft.com/connectors/commondataservice/) or [Dataverse native connections](https://docs.microsoft.com/power-apps/maker/canvas-apps/use-native-cds-connector) which from a DLP perspective is treated the same as [Microsoft Dataverse (legacy)](https://docs.microsoft.com/connectors/commondataservice/).
+Power Automate uses the [Microsoft Dataverse](/connectors/commondataserviceforapps/) connector. Power Apps can use [Microsoft Dataverse (legacy)](/connectors/commondataservice/) or [Dataverse native connections](/power-apps/maker/canvas-apps/use-native-cds-connector) which, from a DLP perspective, are treated the same as [Microsoft Dataverse (legacy)](/connectors/commondataservice/).
 
 ## Providing an admin contact and reference link in DLP error messages
 
