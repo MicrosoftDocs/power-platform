@@ -2,7 +2,6 @@
 title: "Recover database space by deleting audit logs  | MicrosoftDocs"
 description: Recover database space by deleting audit logs
 author: jimholtz
-
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 06/05/2022
@@ -44,7 +43,7 @@ When you enable auditing, customer engagement apps (Dynamics 365 Sales, Dynamics
   
 ### See also
 
-[Audit data and user activity](audit-data-user-activity.md)<br />
+[Manage Dataverse auditing](manage-dataverse-auditing.md)<br />
 [Dataverse developer guide: Delete audit data](/power-apps/developer/data-platform/auditing/delete-audit-data)
 
 

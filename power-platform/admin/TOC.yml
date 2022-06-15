@@ -231,7 +231,7 @@
           - name: Entity and field audit settings 
             href: manage-dataverse-auditing.md#enable-or-disable-entities-and-fields-for-auditing
           - name: System jobs
-            href: monitor-manage-system-jobs.md
+            href: manage-dataverse-auditing.md#monitoring-system-jobs
         - name: Templates
           items:
           - name: Access team templates
