@@ -19,7 +19,7 @@ searchScope:
 > [!IMPORTANT]
 > See the [Important information](#important-information) section for specific usage details.
 
-Power Virtual Agents lets you create powerful chatbots that can answer questions posed by your customers, other employees, or visitors to your website or service.
+Power Virtual Agents lets you create powerful AI-powered chatbots for a range of requests&mdash;from providing simple answers to common questions to resolving issues requiring complex conversations. Engage with customers and employees in multiple languages across websites, mobile apps, Facebook, Microsoft Teams, or any channel supported by the Azure Bot Framework.
 
 These bots can be created easily without the need for data scientists or developers. Some of the ways that Power Virtual Agents bots have been used include:
 
