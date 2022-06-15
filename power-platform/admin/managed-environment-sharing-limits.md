@@ -36,7 +36,7 @@ Managed Environment allow admins to influence how broadly makers can share canva
 > [!NOTE]
 > Sharing rules are enforced when makers attempt to share an app. Sharing rules do not change the audience apps in an environment that are already shared with.
 >   
-> Once sharing rules are set in Power Platform admin center it may take up to 1 hour for the latest sharing rules to be propogated in the system and enforced.
+> Once sharing rules are set in the Power Platform admin center it may take up to 1 hour for the latest sharing rules to be propagated in the system and enforced.
 
 :::image type="content" source="media/managed-environment-limit-sharing.png" alt-text="Managed Environment limit sharing":::
 
