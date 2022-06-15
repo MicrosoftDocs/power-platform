@@ -240,7 +240,7 @@ When audit log search in the Microsoft 365 Security and Compliance Center is tur
 - In future releases, logging will disabled for operations that are determined to not be useful based on a review of the logs. For example, some operations result from automated system activity, not user activity.
 
 ### See also
-[Audit data and user activity for security and compliance](audit-data-user-activity.md)<br />
+[Manage Dataverse auditing](manage-dataverse-auditing.md)<br />
 [Search the audit log in the compliance Center](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-worldwide) <br />
 Search the audit log for user activity using [Office 365 Management APIs overview](/office/office-365-management-api/office-365-management-apis-overview)
 
