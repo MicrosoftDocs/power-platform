@@ -227,9 +227,9 @@
           - name: Audit settings
             href: system-settings-dialog-box-auditing-tab.md
           - name: Audit summary view 
-            href: audit-data-user-activity.md#view-audit-logging-details
+            href: manage-dataverse-auditing.md#view-audit-logging-details
           - name: Entity and field audit settings 
-            href: audit-data-user-activity.md#enable-or-disable-entities-and-fields-for-auditing
+            href: manage-dataverse-auditing.md#enable-or-disable-entities-and-fields-for-auditing
           - name: System jobs
             href: monitor-manage-system-jobs.md
         - name: Templates
@@ -619,11 +619,8 @@
         href: logging-power-automate.md 
       - name: Data loss prevention activity logging
         href: dlp-activity-logging.md
-  # remove following before live
-  #    - name: Manage Dataverse Auditing
-  #      href: manage-dataverse-auditing.md
-      - name: Audit data and user activity for Dynamics 365 entities
-        href: audit-data-user-activity.md
+      - name: Manage Dataverse auditing
+        href: manage-dataverse-auditing.md
       - name: Dataverse and model-driven apps
         href: enable-use-comprehensive-auditing.md   
     - name: Programmability and extensibility
@@ -769,8 +766,6 @@
         href: delete-bulk-records.md
       - name: View and take action on bulk deletion jobs
         href: view-take-action-bulk-deletion-jobs.md
-      - name: Monitor and manage system jobs
-        href: monitor-manage-system-jobs.md
       - name: Remove user personal data
         href: remove-user-personal-data.md
       - name: Recover database space by deleting audit logs
