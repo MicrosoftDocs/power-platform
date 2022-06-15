@@ -1,6 +1,6 @@
 ---
-title: "Enable or disable field-level security"
-description: "Power Platform's field-level security lets you set which columns users can see or edit. Follow these steps to enable or disable security for a column."
+title: "Enable or disable column-level security"
+description: "Power Platform's column-level security lets you set which columns users can see or edit. Follow these steps to enable or disable security for a column."
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 06/15/2022
@@ -19,7 +19,7 @@ search.app:
 ---
 # Enable or disable security for a column to control access
 
-Field-level security lets you set which columns users can see or edit. For example, if want to prevent users from accidentally changing an account name, you can restrict them from editing that column. You can set field-level security for custom columns and some default columns. More information: [Field-level security](field-level-security.md)  
+Column-level security lets you set which columns users can see or edit. For example, if want to prevent users from accidentally changing an account name, you can restrict them from editing that column. You can set column-level security for custom columns and some default columns. More information: [Column-level security](field-level-security.md)  
   
  To set which users and teams have read or write access to column, see [Set up security permissions for a column](set-up-security-permissions-field.md).  
   
@@ -49,9 +49,9 @@ Field-level security lets you set which columns users can see or edit. For examp
 7. Select **Save**.
   
 ### See also  
- [Field-level security](field-level-security.md)   
+ [Column-level security](field-level-security.md)   
  [Set up security permissions for a column](set-up-security-permissions-field.md)   
- [Add teams or users to a field security profile to control access](add-teams-users-field-security-profile.md)
+ [Add teams or users to a column security profile to control access](add-teams-users-field-security-profile.md)
 
 
 

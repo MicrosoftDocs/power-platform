@@ -1,6 +1,6 @@
 ---
 title: "Set up security permissions for a column  | MicrosoftDocs"
-description: Set up security permissions for a column.
+description: Information on how to set up security permissions for a column.
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 06/15/2022
@@ -30,7 +30,7 @@ After you create the profile, you assign users and or teams to that profile, and
 [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Security concepts](wp-security-cds.md)  
 
 > [!NOTE]
-> The use of entity-related terminology depends on the protocol or class library used. See [Terminology use depending on protocol or technology](/power-apps/developer/data-platform/understand-terminology).
+> The use of table-related terminology depends on the protocol or class library used. See [Terminology use depending on protocol or technology](/power-apps/developer/data-platform/understand-terminology).
 
 
 ## Enable column security
@@ -65,27 +65,27 @@ After you create the profile, you assign users and or teams to that profile, and
 
 2. Select the environment to configure security profiles for. 
 
-3. Select **Settings** > **Users + permissions** > **Field security profiles**. 
+3. Select **Settings** > **Users + permissions** > **Column security profiles**. 
 
 4. Select an existing profile, or select **New Profile**, enter a name, enter a description, and then select **Save**.  
 
 5. Select the **Users** tab, select **+ Add Users**, select the users that you want to control access, and then select **Add**. 
 
-   :::image type="content" source="media/field-security-add-users.png" alt-text="Add users to the field security profile.":::
+   :::image type="content" source="media/field-security-add-users.png" alt-text="Add users to the column security profile.":::
 
   > [!TIP]
   > Instead of adding each user, create one or more teams that include all users that you want to control access. 
 
-6. Select the **Field Permissions** tab, in the Name column select one or more columns, and then select **Edit**. Configure the three fields for the desired access.  
+6. Select the **Column Permissions** tab, in the Name column select one or more columns, and then select **Edit**. Configure the three columns for the desired access.  
 
-   :::image type="content" source="media/field-security-edit-field-permission.png" alt-text="Edit field security permissions.":::
+   :::image type="content" source="media/field-security-edit-field-permission.png" alt-text="Edit column security permissions.":::
 
 7. Select **Save**.
 
-Any users not defined in the previously created field security profiles won't have access to the mobile phone column on contact forms or views. The column value displays ![Lock icon.](../admin/media/admin-field-level-security-lock.png "Lock icon") ********, indicating that the column is secured.  
+Any users not defined in the previously created column security profiles won't have access to the mobile phone column on contact forms or views. The column value displays ![Lock icon.](../admin/media/admin-field-level-security-lock.png "Lock icon") ********, indicating that the column is secured.  
   
 ### See also  
-[Field-level security to control access](field-level-security.md) <br />
+[Column-level security to control access](field-level-security.md) <br />
 [Enable or disable security for a column to control access](enable-disable-security-field.md)  
 
 

@@ -1,6 +1,6 @@
 ---
 title: "Add teams or users to a column security profile to control access"
-description: "Learn how to control team and user access to columns by using field security profiles. Manage permission to read, create, or write in secured column."
+description: "Learn how to control team and user access to columns by using column security profiles. Manage permission to read, create, or write in secured column."
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 06/15/2022
@@ -17,18 +17,18 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Add teams or users to a field security profile to control access
+# Add teams or users to a column security profile to control access
 
-Role-based security controls access to a specific table type, record-based security controls access to individual rows, and field-level security controls access to specific columns. You can use a field security profile to manage the permission of users and teams to read, create, or write in secured columns. For example, the System Administrator field security profile gives full access to all secured columns.  
+Role-based security controls access to a specific table type, row-based security controls access to individual rows, and column-level security controls access to specific columns. You can use a column security profile to manage the permission of users and teams to read, create, or write in secured columns. For example, the System Administrator column security profile gives full access to all secured columns.  
 
 > [!NOTE]
-> The use of entity-related terminology depends on the protocol or class library used. See [Terminology use depending on protocol or technology](/power-apps/developer/data-platform/understand-terminology).
+> The use of table-related terminology depends on the protocol or class library used. See [Terminology use depending on protocol or technology](/power-apps/developer/data-platform/understand-terminology).
   
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) with System Administrator security role or equivalent permissions.
 
-2. Select the environment to add teams or users to a field security profile. 
+2. Select the environment to add teams or users to a column security profile. 
 
-3. Select **Settings** > **Users + permissions** > **Field security profiles**.  
+3. Select **Settings** > **Users + permissions** > **Column security profiles**.  
 
 4. Select an existing profile, or select **New Profile**, enter a name, enter a description, and then select **Save**.  
 
@@ -40,7 +40,7 @@ Role-based security controls access to a specific table type, record-based secur
 
   
 ### See also  
-[Field-level security to control access](field-level-security.md) <br />
+[Column-level security to control access](field-level-security.md) <br />
 [Set up security permissions for a column](set-up-security-permissions-field.md)   <br />
 [Enable or disable security for a column to control access](enable-disable-security-field.md)  
  

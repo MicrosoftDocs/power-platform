@@ -453,11 +453,11 @@
           items:
           - name: Overview
             href: field-level-security.md
-          - name: Set permissions for a field
+          - name: Set permissions for a column
             href: set-up-security-permissions-field.md
-          - name: Enable or disable field security
+          - name: Enable or disable column security
             href: enable-disable-security-field.md
-          - name: Add teams or users to field security profile
+          - name: Add teams or users to column security profile
             href: add-teams-users-field-security-profile.md
         - name: Configure teams and team templates
           items:
