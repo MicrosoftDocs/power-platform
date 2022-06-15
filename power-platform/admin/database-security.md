@@ -42,7 +42,7 @@ You can [edit a predefined security role](create-edit-security-role.md#edit-a-se
 > [!NOTE]
 > When you add or remove privileges from the predefined security roles, it affects your application and user experience. Subsequent releases of the application might not work for your users whose predefined security role was modified. 
 >
-> You can [remove all your predefined security role updates](create-edit-security-role.md#remove-predefined-security-role-edits) and reset the security role back to the default system settings. This allows you to restore the security role’s privileges.  
+> You can [remove predefined and imported Solution security role edits](create-edit-security-role.md#remove-predefined-and-imported-solution-security-role-edits) and reset the security role back to the default system settings. This allows you to restore the security role’s privileges. 
 > 
 > New role privileges can continue to be added by Solution/system updates.
 
