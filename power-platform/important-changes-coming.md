@@ -1,7 +1,7 @@
 ---
 title: "Important changes (deprecations) coming in Power Apps and Power Automate"
 description: Important changes (deprecations) coming in Power Apps and Power Automate 
-ms.date: 05/18/2022
+ms.date: 06/15/2022
 ms.topic: "article"
 ms.assetid: 994cc854-17f6-45d6-bc20-fcf1a3f2d6d6
 searchScope:
@@ -158,7 +158,7 @@ We won't make other changes to forms or controls.  Makers are encouraged to make
 - Evaluate other deprecated controls to determine if they're still useful within existing forms.
 
 ## Microsoft Dynamics 365 Email Router is deprecated
-The Microsoft Dynamics 365 Email Router will no longer function on April 21, 2021. For information on migrating email routing functionality to use the server-side synchronization feature, see: [Migrate settings from the Email Router to server-side synchronization](/previous-versions/dynamicscrm-2016/administering-dynamics-365/dn832114(v=crm.8)).
+The Email Router was deprecated on July 17, 2018 and it will no longer function starting April 12, 2021. Although the Email Router might still have worked with Dynamics 365 on-premises, this configuration is no longer supported. All email routing functionality should be migrated to use server-side synchronization. For information on migrating email routing functionality to use the server-side synchronization feature, see: [Migrate settings from the Email Router to server-side synchronization](/previous-versions/dynamicscrm-2016/administering-dynamics-365/dn832114(v=crm.8)).
 
 
 ## The Microsoft Dynamics 365 application for Windows is deprecated
