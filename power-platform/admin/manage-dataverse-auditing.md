@@ -161,13 +161,13 @@ System administrators can see activity for the entities that are enabled for aud
   
 1. Browse to the Power Platform admin center and sign in using administrator credentials. 
   
-2. Go to **Environments** > [select an environment] > **Settings** > expand **Audit and logs** > **Audit Summary View**.
+2. Go to **Environments** > [select an environment] > **Settings** > expand **Audit and logs** > **Audit summary view**.
   
 3. In the **Audit Summary View**, you can do the following:  
   
    - Select **Enable/Disable Filters** to turn on filtering. Then, you can filter on a specific event, such as **Delete** actions.  
    - Choose an event to view specific details about the activity, such as field changes that were made during an update to a record and who performed the update.  
-   - Select the **Refresh** button  ![Refresh button.](media/html-viewer-grid-refresh.png "Refresh button") to view the most recent activity. 
+   - Select **Refresh** to view the most recent activity. 
 
 > [!IMPORTANT]
 > Large attribute values, such as [Email.description](/powerapps/developer/common-data-service/reference/entities/email) or [Annotation](/powerapps/developer/common-data-service/reference/entities/annotation), are limited (capped) at 5KB or ~5,000 characters. A capped attribute value can be recognized by three dots at the end of the text, for example, “lorem ipsum, lorem ip…”.
