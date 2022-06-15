@@ -84,7 +84,7 @@ To find a user and his or her personal data, go to the [Power Platform admin cen
     ![Power Apps User Form.](./media/common-data-service-gdpr-dsr-guide/powerapps-user-form.png)
 
 #### Audit history
-When [audit tracking](audit-data-user-activity.md) is enabled for a table in Dataverse, a user's personal data is logged in the audit history along with the actions that the user performs.
+When [audit tracking](manage-dataverse-auditing.md) is enabled for a table in Dataverse, a user's personal data is logged in the audit history along with the actions that the user performs.
 
 ### Rectify
 If a data subject asks you to rectify the personal data that resides in your organization's data, you and your organization must determine whether it's appropriate to honor the request. Rectifying data may include editing, redacting, or removing personal data from a document or other type of item.
