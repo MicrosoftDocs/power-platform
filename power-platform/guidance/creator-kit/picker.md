@@ -41,7 +41,6 @@ The Tag Picker code component provides the following features:
 1. Allows users to select from suggestions or enter a free-text tag.
 1. Raises an **On Change** event when a user adds or removes a tag.
 1. Allows programmatic **Set Focus**.
-1. Is styled to closely match the Pills spec.
 
 > [!NOTE]
 > Component source code and more information in the [GitHub code components repository](https://github.com/microsoft/powercat-code-components/tree/main/Picker).
