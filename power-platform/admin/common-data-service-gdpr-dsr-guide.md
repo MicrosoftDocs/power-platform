@@ -5,7 +5,7 @@ author: jimholtz
 ms.reviewer: paulliew
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/24/2022
+ms.date: 06/15/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -18,6 +18,35 @@ search.app:
 ---
 
 # Responding to Data Subject Rights (DSR) requests for Microsoft Dataverse customer data
+
+## Introduction to DSR requests
+The European Union (EU) General Data Protection Regulation (GDPR) gives rights to people (known in the regulation as *data subjects*) to manage the personal data that's been collected by an employer or other type of agency or organization (known as the *data controller* or just *controller*). Personal data is defined very broadly under the GDPR as any data that relates to an identified or identifiable natural person. The GDPR gives data subjects the right to do the following, as it pertains to their personal data:
+
+* Obtain copies
+* Request corrections
+* Restrict processing
+* Delete it
+* Receive it in electronic format so it can be moved to another controller
+
+A formal request by a data subject to a controller to take an action on his or her personal data is called a Data Subject Rights (DSR) request.
+
+This article describes how Microsoft is preparing for the GDPR, and also provides examples of steps you can take to support GDPR compliance when using Power Apps, Power Automate, and Dataverse. You'll learn how to use Microsoft products, services, and administrative tools to help controller customers find, access, and act on personal data in the Microsoft cloud in response to DSR requests.
+
+The following actions are covered in this article:
+
+* **Discover** — Use search and discovery tools to more easily find customer data that may be the subject of a DSR request. Once potentially responsive documents are collected, you can perform one or more of the following DSR actions to respond to the request. Alternatively, you may determine that the request doesn't meet your organization's guidelines for responding to DSR requests.
+
+* **Access** — Retrieve personal data that resides in the Microsoft cloud and, if requested, make a copy of that data available to the data subject.
+
+* **Rectify** — Make changes or implement other requested actions on the personal data, where applicable.
+
+* **Restrict** — Restrict the processing of personal data, either by removing licenses for various online services or turning off the desired services where possible. You can also remove data from the Microsoft cloud and retain it on-premises or at another location.
+
+* **Delete** — Permanently remove personal data that resides in the Microsoft cloud.
+
+* **Export** — Provide an electronic copy (in a machine-readable format) of personal data to the data subject.
+
+## Dataverse customer data
 
 > [!IMPORTANT]
 > Applies to both Dataverse and the previous version of Dataverse.
@@ -32,10 +61,6 @@ You can identify which type of Dataverse environment you have by logging into [P
     Your environment is Dataverse if you see the following tables listed:
 
     ![Power Apps tables list.](./media/common-data-service-gdpr-dsr-guide/powerapps-entities-list.png)
-
-    Your environment is the previous version of Dataverse if you see the following tables listed:
-
-    ![Power Apps Legacy tables list.](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-entities-list.png)
 
 After you determine which type of Dataverse environment you have, follow the steps in the following sections to identify personal data.
 
