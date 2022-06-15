@@ -34,7 +34,9 @@ Managed Environment allow admins to influence how broadly makers can share canva
 **Limit total individuals who can be shared to** is only enabled if **Exclude sharing with security groups** is checked. This is because security groups may have unbounded membership. For instance, a Maker could share an app with a security group that has 5 members one day and, in the future after the app was shared, the security group could grow to 500 members.  
 
 > [!NOTE]
-> Sharing rules are enforced when makers attempt to share an app. Sharing rules do not change the audience apps in an environment that are already shared with.  
+> Sharing rules are enforced when makers attempt to share an app. Sharing rules do not change the audience apps in an environment that are already shared with.
+>   
+> Once sharing rules are set in Power Platform admin center it may take up to 1 hour for the latest sharing rules to be propogated in the system and enforced.
 
 :::image type="content" source="media/managed-environment-limit-sharing.png" alt-text="Managed Environment limit sharing":::
 
