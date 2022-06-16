@@ -51,7 +51,6 @@ Use the following methods to free up storage for each of the capacity types.
 |     | **Method 9**: Delete bulk deletion job instances using a bulk deletion job        |
 |     | **Method 11**: Remove unrequired tables and columns from Dataverse search        |
 
-
 ## Reduce file storage
 
 ### Method 3: Remove email attachments using Advanced Find  
