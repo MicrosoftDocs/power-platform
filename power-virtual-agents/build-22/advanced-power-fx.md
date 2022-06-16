@@ -91,7 +91,7 @@ In this example, the bot will determine if a booking date qualifies for a discou
 
 1. Select the **+** icon and then choose **Add a condition**.
 
-1. In the **ConditionItem** node, click on the **Node menu** (vertical three dots), then **Change to formula**.
+1. In the **ConditionItem** node, select the **Node menu** (vertical three dots), then **Change to formula**.
 
 1. In the **Enter or select a value** box, select the **>**.
 
