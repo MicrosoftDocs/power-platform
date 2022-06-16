@@ -4,7 +4,7 @@ description: "Frequently asked questions about Power Automate licensing."
 author: PriyaKodukula
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 05/11/2022
+ms.date: 06/16/2022
 ms.author: prkoduku
 ms.reviewer: MSFTMan
 search.audienceType: 
@@ -32,10 +32,11 @@ The standard user license plan for Power Automate is the Power Automate per user
 
 ### When should I choose Power Automate "per flow" versus "per user"?
 
-Our recommendation for almost all companies in almost all situations is to buy the per user with attended RPA license for every user in their organization. Optionally, purchase the unattended bot addon  for every machine that will be running unattended automation. 
+Our recommendation, for almost all companies in almost all situations, is to buy the per user with attended Robotic Process Automation (RPA) license for every user in their organization. Optionally, purchase the unattended bot add-on for every machine that will be running unattended automation. 
 
 The per user plan is intended for personal automation to support the broad adoption of an automation culture in an organization.
-The per flow plan is intended for enterprise process automation. If a flow is providing value to a team, either every one in the team needs a per user license or the flow needs a per flow license. If a flow has per flow license, it doesn't use nor require any other license when it's run. It provides an organization with the flexibility to pay for licenses based on the number of flows it uses, instead of licensing each user accessing the flows individually with the per user plan. Larger organizations or solutions that affect many will benefit from the fixed monthly cost. If your flow uses premium connectors and your organization has many guest users using the flow, but you don't know if the guest users home tenant provides them with premium licenses. In this case, it is best to use per flow license . 
+
+The per flow plan is intended for enterprise process automation. If a flow is providing value to a team, either every one in the team needs a per user license or the flow needs a per flow license. If a flow has per flow license, it doesn't use nor require any other license when it's run. It provides an organization with the flexibility to pay for licenses based on the number of flows it uses, instead of licensing each user accessing the flows individually with the per user plan. Larger organizations or solutions that affect many will benefit from the fixed monthly cost. It's best to use per flow license if your flow uses premium connectors and your organization has many guest users using the flow, but you don't know if the guest users home tenant provides them with premium licenses. 
 
 ### Who needs to purchase a premium license?
 
@@ -97,7 +98,7 @@ Yes. The guest user must have a Power Automate license assigned through one of t
 - The home tenant of the guest user.
 
 For example, if a guest user has a Power Automate per user license assigned in the home tenant, they can use premium features in the guest tenant that is hosting the flow. 
-Power Automate, included with Office, Power Automate per user, per user with attended Robotic Process Automation (RPA), Power Apps per user, and Dynamics user plans, will have the following characteristics:
+Power Automate, included with Office, Power Automate per user, per user with attended RPA, Power Apps per user, and Dynamics user plans, will have the following characteristics:
 - In the Azure public cloud, the above plans are recognized across tenants in guest scenarios because they aren't bound to a specific environment.
 - In Azure national or sovereign clouds, the above plans are recognized across tenants in guest scenarios. More information: [National clouds](/azure/active-directory/develop/authentication-national-cloud), [Azure geographies](https://azure.microsoft.com/global-infrastructure/geographies/#geographies)
  - Licenses are not recognized across tenants in difference Azure clouds.
