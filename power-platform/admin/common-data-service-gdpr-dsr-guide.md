@@ -3,10 +3,9 @@ title: Responding to DSR requests for Microsoft Dataverse customer data | Micros
 description: Walkthrough of how to respond to DSR requests for Microsoft Dataverse customer data
 author: jimholtz
 ms.reviewer: paulliew
-
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/11/2021
+ms.date: 06/15/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -63,10 +62,6 @@ You can identify which type of Dataverse environment you have by logging into [P
 
     ![Power Apps tables list.](./media/common-data-service-gdpr-dsr-guide/powerapps-entities-list.png)
 
-    Your environment is the previous version of Dataverse if you see the following tables listed:
-
-    ![Power Apps Legacy tables list.](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-entities-list.png)
-
 After you determine which type of Dataverse environment you have, follow the steps in the following sections to identify personal data.
 
 > [!NOTE]
@@ -114,7 +109,7 @@ To find a user and his or her personal data, go to the [Power Platform admin cen
     ![Power Apps User Form.](./media/common-data-service-gdpr-dsr-guide/powerapps-user-form.png)
 
 #### Audit history
-When [audit tracking](audit-data-user-activity.md) is enabled for a table in Dataverse, a user's personal data is logged in the audit history along with the actions that the user performs.
+When [audit tracking](manage-dataverse-auditing.md) is enabled for a table in Dataverse, a user's personal data is logged in the audit history along with the actions that the user performs.
 
 ### Rectify
 If a data subject asks you to rectify the personal data that resides in your organization's data, you and your organization must determine whether it's appropriate to honor the request. Rectifying data may include editing, redacting, or removing personal data from a document or other type of item.

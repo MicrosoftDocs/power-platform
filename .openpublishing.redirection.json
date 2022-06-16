@@ -1,6 +1,16 @@
 {
     "redirections": [
-      {
+    {
+      "source_path": "power-platform/admin/audit-data-user-activity.md",
+      "redirect_url": "manage-dataverse-auditing",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/admin/monitor-manage-system-jobs.md",
+      "redirect_url": "manage-dataverse-auditing",
+      "redirect_document_id": "false"
+    },
+    {
         "source_path": "power-platform/admin/web-application-requirements.md",
         "redirect_url": "online-requirements",
         "redirect_document_id": "false"
