@@ -74,8 +74,6 @@ Some of the key fields you'll find in the Content JSON include:
 | `SessionInfo` | The type (`unengaged` or `engaged`), outcome (`Escalated`, `Resolved`, `Abandon`), and the turn count of the session. |
 | `VariableAssignment` | A value has been assigned to a variable. |
 
-You can use the bot's content to convert the ID of the dialog being redirected to.
-<!-- Can you provide more information and instructions about how to do this and why you might want to? -->
 
 ## Build custom reports from conversation transcripts
 

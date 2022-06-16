@@ -52,7 +52,6 @@ The session transcript is a CSV (comma-separated values) file that contains the 
 - **TopicId**: The unique identifier of the last authored topic triggered in the session
 
 ## Download conversation transcripts in Power Apps
-<!-- It looks like the Power Apps UI changed since this article was written. The original instructions no longer apply. -->
 
 1. In the left side panel, select **Dataverse**, and then select **Tables**.
 
