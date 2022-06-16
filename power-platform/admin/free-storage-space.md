@@ -4,7 +4,7 @@ description: Methods for reducing storage space consumed.
 author: Bluebear73
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/24/2022
+ms.date: 06/16/2022
 ms.subservice: admin
 ms.author: munzinge 
 ms.reviewer: jimholtz
@@ -477,15 +477,15 @@ Tables and tables fields enabled for Dataverse search have an impact on the data
 - To revise the list of fields selected for each table for Dataverse search results, see [Select searchable fields and filters for each table](configure-relevance-search-organization.md#select-searchable-fields-and-filters-for-each-table).
 
 ### Method 12: Remove unrequired data from activity tables
-These tables store records for [activities](https://docs.microsoft.com/en-us/power-apps/developer/data-platform/activity-entities) such as emails, appointments, tasks, calls, etc. To learn more about what data these tables contain, see [Activities data model and storage](https://docs.microsoft.com/en-us/power-apps/developer/data-platform/activity-entities).
+These tables store records for [activities](/power-apps/developer/data-platform/activity-entities) such as emails, appointments, tasks, calls, etc. To learn more about what data these tables contain, see [Activities data model and storage](/power-apps/developer/data-platform/activity-entities).
 
 ### Method 13: Remove unrequired Activity Feeds records
-These tables store post related records for [Activity Feeds](https://docs.microsoft.com/en-us/dynamics365/customerengagement/on-premises/basics/stay-up-date-with-customer-news-with-activity-feed?view=op-9-1) functionality. To free space you can delete any Post records which are no longer required. 
+These tables store post related records for [Activity Feeds](/dynamics365/customerengagement/on-premises/basics/stay-up-date-with-customer-news-with-activity-feed?view=op-9-1) functionality. To free space you can delete any Post records which are no longer required. 
 
 ### Method 14: Modify Item Level Monitoring Settings
 The ExchangeSyncIdMappingBase table contains references between Dynamics 365 records and the corresponding records in Microsoft Exchange. This table is used by the Server-Side Synchronization feature which enables synchronization of emails, appointments, contacts, and tasks between Dynamics 365 and Microsoft Exchange. 
 
-Additional rows are stored in this table to help with troubleshooting the synchronization of specific items. For additional information, see [Troubleshoot item level Server-Side Synchronization issues with Microsoft Dynamics 365](https://docs.microsoft.com/en-US/troubleshoot/dynamics-365/sales/troubleshoot-item-level-server-side-synchronization-issues). This article provides details regarding how you can reduce the default duration (3 days) of how long these troubleshooting records exist. This troubleshooting feature can also be disabled. 
+Additional rows are stored in this table to help with troubleshooting the synchronization of specific items. For additional information, see [Troubleshoot item level Server-Side Synchronization issues with Microsoft Dynamics 365](/troubleshoot/dynamics-365/sales/troubleshoot-item-level-server-side-synchronization-issues). This article provides details regarding how you can reduce the default duration (3 days) of how long these troubleshooting records exist. This troubleshooting feature can also be disabled. 
 
 ## Free up storage used by flow approvals
 
