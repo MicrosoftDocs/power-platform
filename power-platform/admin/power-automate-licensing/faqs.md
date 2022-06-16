@@ -32,9 +32,10 @@ The standard user license plan for Power Automate is the Power Automate per user
 
 ### When should I choose Power Automate "per flow" versus "per user"?
 
-The per user plan is intended for personal automation to support the broad adoption of an automation culture in an organization.
+Our recommendation for almost all companies in almost all situations is to buy the per user with attended RPA license for every user in their organization. Optionally, purchase the unattended bot addon  for every machine that will be running unattended automation. 
 
-The per flow plan is intended for enterprise process automation. If a flow is providing value to a team, either every one in the team needs a per user license or the flow needs a per flow license. If a flow has per flow license, it doesn't use nor require any other license when it's run. It provides an organization with the flexibility to pay for licenses based on the number of flows it uses, instead of licensing each user accessing the flows individually with the per user plan. Larger organizations or solutions that affect many will benefit from the fixed monthly cost versus a comparable per use cost in a pure Azure function. For example, if you have a flow with premium connectors that is sending a summary report in email to the entire organization,it is best to get a per flow license for the flow. Similarly, if your flow uses premium connectors and your organization has many guest users using the flow, but you don't know if the guest users home tenant provides them with premium licenses. In this case, it is best to use per flow license . 
+The per user plan is intended for personal automation to support the broad adoption of an automation culture in an organization.
+The per flow plan is intended for enterprise process automation. If a flow is providing value to a team, either every one in the team needs a per user license or the flow needs a per flow license. If a flow has per flow license, it doesn't use nor require any other license when it's run. It provides an organization with the flexibility to pay for licenses based on the number of flows it uses, instead of licensing each user accessing the flows individually with the per user plan. Larger organizations or solutions that affect many will benefit from the fixed monthly cost. If your flow uses premium connectors and your organization has many guest users using the flow, but you don't know if the guest users home tenant provides them with premium licenses. In this case, it is best to use per flow license . 
 
 ### Who needs to purchase a premium license?
 
@@ -320,8 +321,5 @@ You can either license the parent flow or license the child flow with a per flow
 
 Who needs a license is independent from whose connections are used in the flow. Automated/scheduled flows always run under the owner's license and manual/power apps flows always run under the users who ran the flow. 
 
-### A premium flow consolidates Azure Dev Ops items, generates a report, and then sends an email to the entire organization. The users in the organization get value from the flow but do not interact with the flow directly.
-
-Yes they are getting indirect value from the flow and every user needs a license.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
