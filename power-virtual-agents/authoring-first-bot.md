@@ -37,45 +37,36 @@ To help get you started and tailor the bot to your specific needs, Power Virtual
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 
-## Create your first bot
+## Create a bot
 
-Creating your first bot requires you to have a license (or trial) to Power Virtual Agents.
+> [!NOTE]
+> If this is your first time creating a bot in Power Virtual Agents, please see [Create your first bot](fundamentals-get-started.md)
 
-1. Go to [Power Virtual Agents marketing page](https://go.microsoft.com/fwlink/?linkid=2106332) and select **Start free**. Sign in using your work account.
+1. Select **Power Virtual Agents** in the top menu bar to go to the home page.
 
-   If you don't have a license, you can sign up for one by following the prompts.
+    :::image type="content" source="media/authoring-first-bot/go-home.png" alt-text="Screenshot of the Power Virtual Agents menu bar." border="false":::
 
-1. In the **Create a new bot** dialog box, enter a name for your bot. This can be something generic to your company or specific to the scenario you are tailoring your bot to.
+1. In the side pane select **Create**, or select **Home** and select **Create a bot**.
 
-   :::image type="content" source="media/authoring-first-bot/create-new-bot-screen.png" alt-text="New bot dialog." border="false":::
+1. Choose a name for your bot. This can be something generic to your company or specific to the scenario you are tailoring your bot to.
 
-1. Your bot is created in the [default Power Apps environment for your organization or tenant](environments-first-run-experience.md). Usually this is sufficient, but if necessary you can choose a different environment by selecting **More options** to see a list of available environments.
-  
-1. Select **Create** to begin the bot-building process, which can take up to 15 minutes for the first bot you create in an environment. Subsequent bots take less than a few minutes to create.
+    :::image type="content" source="media/authoring-first-bot/create-new-bot-screen.png" alt-text="Screen shot of new bot dialog." border="false":::
 
-During the building process, you'll see a notification at the top of the Power Virtual Agents portal indicating that the bot is still being built.
-
-You can navigate to some tabs during this period, after which the banner will change and you'll have full access to the Power Virtual Agents portal.
-
-## Create additional bots
-
-If you have already created a bot, you can create a new bot by selecting the icon on the title bar to open the **Bots** pane and then selecting **New bot**.
-
-   :::image type="content" source="media/authoring-first-bot/first-bot-new.png" alt-text="New bot icon in title bar." border="false":::
+1. Select **Create**.
 
 ## Delete a bot
 
 You can delete bots to remove them from your environment.
 
-1. Select the bot icon on the top menu bar, and then select the bot you want to delete.
+1. Select **Power Virtual Agents** in the top menu bar to go to the home page.
 
-1. Select the **Settings** icon on the top menu bar, then select **General settings**.
+    :::image type="content" source="media/authoring-first-bot/go-home.png" alt-text="Screenshot of the Power Virtual Agents menu." border="false":::
 
-   :::image type="content" source="media/authoring-first-bot/general-settings.png" alt-text="General settings." border="false":::
+1. In the side pane, select **Chatbots**. Select the bot you want to delete, then select **Delete**.
 
-1. Select **Delete bot**.
+    :::image type="content" source="media/authoring-first-bot/delete-bot.png" alt-text="General settings." border="false":::
 
-You'll be asked to confirm the deletion of the bot, after which all bot content is immediately deleted.
+1. You'll be asked to confirm the deletion of the bot by typing the bot's name. Once you confirm, all bot content will be deleted after a few minutes.
 
 If your license has expired, you can delete your bot(s) by selecting **Permanently delete your bots**.
 

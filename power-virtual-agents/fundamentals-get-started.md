@@ -59,7 +59,7 @@ In addition to this guide, you can also [download and use templates to help you 
 
 1. Choose a name for your bot. This can be something generic to your company or specific to the scenario you are tailoring your bot to.
 
-    Your bot is created in the default Power Apps environment that was made for you on sign up. For most users, this is sufficient. However, if you want to specify a custom Power Apps environment for your Power Virtual Agents, expand the **More options** menu and select a different environment.
+    Your bot is created in the [default Power Apps environment](environments-first-run-experience.md) that was made for you on sign up. For most users, this is sufficient. However, if you want to specify a custom Power Apps environment for your Power Virtual Agents, expand the **More options** menu and select a different environment.
 
    > [!NOTE]
    > Power Virtual Agents is supported only in the locations listed in the [supported data locations](data-location.md) topic, with data stored in respective data centers. If your company is located outside of the supported data locations, you'll need to create a custom environment with **Region** set to a supported data location before you create your bot.  
@@ -69,13 +69,12 @@ In addition to this guide, you can also [download and use templates to help you 
 
 1. Select **Create**. The process of creating your first bot in a new environment can take up to 15 minutes; subsequent bots will be created much faster.
 
-1. After a few minutes, you'll land on the bot overview page and be able to interact with the bot in read-only mode. You can't save any edits during this time, but you can:
+1. After a few minutes, you'll land on the bot overview page. You'll see a banner at the top of the Power Virtual Agents portal indicating that the bot is still being built. You can't save any edits during this time, but you can:
     - explore the overall user interface
     - look at topics
     - experiment with the preloaded user topics and system topics
     - interact with your bot using the Test Canvas
-
-    During this time, you can also review additional documentation on authoring topics in your bot. See [Authoring key concepts](authoring-fundamentals.md) for more information.
+    - review [additional documentation on authoring topics](authoring-fundamentals.md) in your bot
 
 1. When the bot creation process completes, the banner changes. You now have full functionality in the bot and can modify any User or System topic, test out your content changes, or deploy your bot.
 
