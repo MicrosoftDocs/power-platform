@@ -38,7 +38,7 @@ With the Power Virtual Agents model, you only need to provide a few examples whe
 
 Shorter trigger phrases are better, and you should aim for 2 to 10 words. You just need to make sure trigger phrases are semantically different: changing a single verb or noun could be enough to expand a topic's coverage. Adding things like new articles (changing or adding 'the' or 'a' or 'an'), changing capitalization, adding contractions (you're or don't), or adding plurals won't improve the triggering because contractions are already accounted for in the AI model.
 
-Entities will automatically be identified in user intents when matching them to trigger phrases. For example the user intent "I want to book a ticket to Boston" will match with the trigger phrase "I want to book a ticket to Paris".
+Entities used in corresponding topics will automatically be identified in user intents when matched with their trigger phrases. For example the user intent "I want to book a ticket to Boston" will match with the trigger phrase "I want to book a ticket to Paris".
 
 > [!NOTE]
 > The AI capabilities listed in this topic are in preview, available to bots created with English as the set language.
