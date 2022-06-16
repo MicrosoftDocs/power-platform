@@ -55,24 +55,23 @@ The solution requires that you create a unique key on the Name column of the Sec
 
 3. Under **Components**, expand **Entities**, and then select **Security Role**.
 
-duplicate-security-role-customization.png
+:::image type="content" source="media/duplicate-security-role-customization.png" alt-text="Select Settings > Customizations > Customize the System.":::
 
 4. Select **Keys**, and then select **New**.
 
-duplicate-security-role-customization-keys-new.png
+:::image type="content" source="media/duplicate-security-role-customization-keys-new.png" alt-text="Select Keys > New.":::
 
 5. Under **Available Attributes**, select **Name (name)**, add then select **Add**.
 
-duplicate-security-role-customization-name-add.png
+:::image type="content" source="media/duplicate-security-role-customization-name-add.png" alt-text="Select Available Attributes > Name > Add.":::
 
 6. Enter a display name, and then select **Ok**.
 
-duplicate-security-role-customization-display-name.png
+:::image type="content" source="media/duplicate-security-role-customization-display-name.png" alt-text="Enter a display name and then select OK.":::
 
 7. Select **Publish All Customizations**.
 
-duplicate-security-role-customization-publish.png
-
+:::image type="content" source="media/duplicate-security-role-customization-publish.png" alt-text="Select Publish All Customizations":::
 
 
 
