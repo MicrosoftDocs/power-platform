@@ -50,7 +50,7 @@ These automatically created topics fall into two categories:
 
 ## Create a topic
 
-1. In the left pane, select Topics and click on **+New Topic** to create a new topic.
+1. In the left pane, select Topics and select **+New Topic** to create a new topic.
 
    :::image type="content" source="media/authoring-create-edit-topics/topics-menu.png" alt-text="Screenshot of the Power Virtual Agents navigation pane, highlighting Topics.":::  
 
@@ -86,7 +86,7 @@ These automatically created topics fall into two categories:
 
 ## Design the topic's conversation path
 
-1. Click on **Topics** in the left pane and select the topic you want to edit.
+1. Select **Topics** in the left pane and select the topic you want to edit.
 
     Power Virtual Agents opens the topic in the authoring canvas and displays the topic's trigger phrases. The authoring canvas is where you define the conversation path between a customer and the bot.
 
@@ -360,7 +360,7 @@ In this example, you'll copy and paste YAML into the code editor to quickly add 
     disabled: false
     ```
 
-1. Click on the three dots icon, then select **Close code editor**. You'll see the new conversation path generated from the YAML on the authoring canvas.
+1. Select the three dots icon, then select **Close code editor**. You'll see the new conversation path generated from the YAML on the authoring canvas.
 
     :::image type="content" source="media/authoring-create-edit-topics/code-editor-conversation.png" alt-text="Screenshot conversation created from YAML.":::
 
