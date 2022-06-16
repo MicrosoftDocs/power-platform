@@ -110,10 +110,10 @@
           href: enable-hybrid-experience.md
     - name: Environments
       items:
+      - name: Environments overview
+        href: environments-overview.md
       - name: Manage environments 
-        items:
-        - name: Environments overview
-          href: environments-overview.md
+        items:        
         - name: Create environment
           href: create-environment.md
         - name: Control environment creation
