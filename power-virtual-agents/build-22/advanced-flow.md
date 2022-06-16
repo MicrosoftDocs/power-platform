@@ -61,7 +61,7 @@ This template is an example of a flow that bots can use. To be suitable for bots
 
     :::image type="content" source="media/advanced-flow/PVAConnectorResponse.JPG" alt-text="Power Virtual Agents response." border="false":::
 
-If you make changes to a flow in the Power Automate portal after adding the flow to Power Virtual Agents, you can reload the flow by clicking on the **Node menu** (vertical three dots), then **Refresh**.
+If you make changes to a flow in the Power Automate portal after adding the flow to Power Virtual Agents, you can reload the flow by selecting the **Node menu** (vertical three dots), then **Refresh**.
 
 :::image type="content" source="media/advanced-flow/refresh-flow-node.png" alt-text="Screenshot of flow refresh button." border="false":::
 
