@@ -55,11 +55,11 @@ Power Virtual Agents now has an app-level home page that isn't specific to any b
     - `Hi there!`
     - `Hi!`
 
-1. Click on the **+Add** button and paste the Image URL in the **Image** box to [Add an image card](advanced-cards.md#image-card). The image of the restaurant will help the user visually confirm that they're looking at the correct location.
+1. Select the **+Add** button and paste the Image URL in the **Image** box to [Add an image card](advanced-cards.md#image-card). The image of the restaurant will help the user visually confirm that they're looking at the correct location.
 
     :::image type="content" source="media/build-2022-quickstart/image-card.png" alt-text="Screenshot of speech mode toggle.":::
 
-1. Click on the next node, to add a second **Message** node, and type the message `We're open 9 am to 5 pm Monday through Friday, and 10 am through 8 pm on the weekends. Please note that reservations can only be made for the next seven days.`
+1. Select the next node, to add a second **Message** node, and type the message `We're open 9 am to 5 pm Monday through Friday, and 10 am through 8 pm on the weekends. Please note that reservations can only be made for the next seven days.`
 
 1. Change the edit mode to **Speech**.
 
@@ -81,11 +81,11 @@ Power Virtual Agents now has an app-level home page that isn't specific to any b
 
 1. Select **Save**.
 
-1. Click on the **Test** button to trigger the greeting.
+1. Select the **Test** button to trigger the greeting.
 
 ## Add a reservation topic
 
-1. In the side navigation, click on the **Topics** option and then **New topic**.
+1. In the side navigation, select **Topics** and then **New topic**.
 
 1. Rename the topic to Reservation
 
@@ -126,9 +126,9 @@ The **End of conversation** topic is a pre-built topic designed to check if the 
 
 1. Name the topic `Reservation` and select **Save**.
 
-1. Click on the **Test** button to open the test canvas.
+1. Select the **Test** button to open the test canvas.
 
-1. Interact with the bot by clicking on the **Make a reservation** quick reply. The bot will reply based on the conditions added until it redirects to the end of the conversation topic and asks you to rate your experience.
+1. Interact with the bot by selecting the **Make a reservation** quick reply. The bot will reply based on the conditions added until it redirects to the end of the conversation topic and asks you to rate your experience.
 
 ## Next steps
 
