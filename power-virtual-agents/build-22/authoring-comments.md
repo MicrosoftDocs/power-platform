@@ -74,7 +74,7 @@ Select the menu icon at the top of the comment thread to edit the initial commen
 
 ### Edit and delete individual comments
 
-Click on the menu icon at the top of an individual comment, next to your name, to edit or delete a comment.
+Select the menu icon at the top of an individual comment, next to your name, to edit or delete a comment.
 
 You can only edit or delete comments that you created.
 
