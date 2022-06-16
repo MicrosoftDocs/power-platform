@@ -66,7 +66,7 @@ These automatically created topics fall into two categories:
 
     You can specify more than one trigger phrase for a topic. You can include punctuation in a trigger phrase, but it's best to use short phrases rather than long sentences.
 
-1. Click on **Properties** to open the topic details pane.
+1. Select **Properties** to open the topic details pane.
 
     :::image type="content" source="media/authoring-create-edit-topics/open-details-pane.png" alt-text="Screenshot of the topic authoring canvas, highlighting Details."::: <!--Note from Sweeny: Kindly update the screenshot as per the new experience-->
 
