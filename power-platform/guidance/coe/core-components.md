@@ -89,7 +89,7 @@ The [sync flows](#flows) of the CoE Starter Kit sync your tenant resources to th
   - Publisher
   - Tier (standard/premium)
 
-- **Connection Reference** represents the linking table for the many-to-many relationships among connectors (PowerApps Connector) and cloud flows (Flows) or apps (PowerApps App).
+- **CoE Connection Reference** represents the linking table for the many-to-many relationships among connectors (PowerApps Connector) and cloud flows (Flows) or apps (PowerApps App).
 
 - **Connection Reference Identity** stores the connections for each environment including their identity
   - Environment
@@ -164,12 +164,12 @@ The [sync flows](#flows) of the CoE Starter Kit sync your tenant resources to th
   - Type (topic, table)
   - Uses flow (yes/no)
 
-- **PVA Component Flow** represents a flow triggered as part of Power Virtual Agents. The following information is available for each bot component flow:
+- **PVA Component Flow Lookup** represents a flow triggered as part of Power Virtual Agents. The following information is available for each bot component flow:
   - Name
   - ID
   - Created on/by
 
-- **RPA** represents a desktop flow. The following information is available for each desktop flow:
+- **Desktop Flow** represents a desktop flow. The following information is available for each desktop flow:
   - Display name
   - ID
   - Created on
@@ -188,6 +188,17 @@ The [sync flows](#flows) of the CoE Starter Kit sync your tenant resources to th
   - Completed On
   - Error Code
   - Error Message
+
+- **Business Process Flow** represents a business process flow. The following information is available for each BPF:
+  - Display name
+  - ID
+  - Created on
+  - Owner
+  - Modified on
+  - Type (Background, Task)
+  - State
+  - Environment
+  - Primary Entity 
 
 - **Environment Capacity** stores capacity information for an environment
   - Capacity Type (File, Database, Log)
@@ -221,6 +232,16 @@ Additional to the above listed inventory tables, the following helper tables sup
   - Ship On
   - Flag
   - Help Link (link to documentation)
+
+- **Customized Email** holds meta-data about emails sent from flows in the Core Solution to allow for admins to tailor them without making unmanaged layers on the flows:
+  - Flow Name
+  - Action Name
+  - Subject
+  - Body
+  - CC
+  - ReplyTo
+  - Send on Behalf
+
 
 > [!NOTE]
 > To easily explore and manage data stored in Dataverse, we recommend that you install the [Microsoft Power Apps Office Add-in](https://appsource.microsoft.com/product/office/WA104380330?tab=Overview). More information: [Working with data in Dataverse using the Excel Add-in!](https://powerapps.microsoft.com/blog/cds-for-apps-excel-importexport/)

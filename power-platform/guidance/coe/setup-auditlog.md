@@ -210,6 +210,8 @@ A Power Automate flow uses the custom connector, queries the audit log daily, an
     > [!IMPORTANT]
     > Learn how to about environment variables: [Update Environment Variables](faq.md#update-environment-variables)
 
+
+### Example configurations for environment variables
     Here are some example configurations for these values:
 
     | StartTime-Interval | StartTime-Unit | TimeInterval-Interval | TimeInterval-Unit | TimeSegment-CountLimit | Expectation                                                                                                                                               |

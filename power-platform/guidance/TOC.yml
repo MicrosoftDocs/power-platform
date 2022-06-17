@@ -120,7 +120,7 @@
         href: coe/before-setup-gov.md  
       - name: Set up compliance processes
         href: coe/setup-governance-components.md 
-      - name: Set up archival processes
+      - name: Set up inactivity notifications
         href: coe/setup-archive-components.md 
       - name: Set up Microsoft Teams governance processes
         href: coe/setup-teams-components.md  

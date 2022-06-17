@@ -35,6 +35,7 @@ You can get the CoE Power BI dashboard by downloading the CoE Starter Kit compre
 >
 > - Before setting up the Power BI dashboard, you must have installed the [CoE core components solution](setup-core-components.md).<br>
 > - Before you see data in the dashboard, the [core components solution sync flows](core-components.md#flows) will need to have completed their runs.
+> - Before you see data about app usage (ex last launched), you must have installed the [Audit Log solution](setup-auditlog.md)
 
 ## Get the environment URL
 
@@ -88,7 +89,7 @@ The *A connection was successfully established with the server, but then an erro
 
 ![Error message: A connection was successfully established with the server, but then an error occurred .](media/pbi_error2.PNG "Error message:A connection was successfully established with the server, but then an error occurred ")
 
-When you see *Unable to open document: The queries were authored with a newer version of Power BI Desktop and might not work with your version* as an error message and you are on the current version of Power BI Desktop, select **Close** to continue to setup as it will work.
+When you see *Unable to open document: The queries were authored with a newer version of Power BI Desktop and might not work with your version* as an error message and you are on the current version of Power BI Desktop, select **Close** to continue, and [setup latest version](https://www.microsoft.com/download/details.aspx?id=58494).
 
 ![Error message: Unable to open document .](media/pbi_error3.PNG "Error message: Unable to open document ")
 

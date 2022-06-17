@@ -101,6 +101,7 @@ There are several child flows, check to make sure all of these flows are on:
 1. HELPER – CloudFlowOperations
 1. HELPER – CanvasAppOperations
 1. HELPER – ObjectOperations
+1. CLEANUP HELPER - Check Deleted (Business Process Flows)
 1. CLEANUP HELPER – Check Deleted (Canvas Apps)
 1. CLEANUP HELPER – Check Deleted (Cloud Flows)
 1. CLEANUP HELPER – Check Deleted (Custom Connectors)
@@ -128,7 +129,10 @@ The following flows support the inventory setup and need to be turned on before 
 - Admin | Sync Template v3 CoE Solution Metadata
 
 >[!IMPORTANT]
-> Before proceeding, ensure that the **Admin | Sync Template v3 Configure Emails**, and **Admin | Sync Template v3 (Connectors)** flows runs and complete.
+> Before proceeding, ensure that these flows run to completion: 
+> - **Admin | Sync Template v3 Configure Emails**
+> - **Admin | Sync Template v3 (Connectors)**
+> - **Admin | Sync Template v3 CoE Solution Metadata**
 
 ## Turn on inventory flows
 
@@ -146,6 +150,7 @@ The Admin \| Sync Template flows part of this solution crawl through all the res
 >This flow temporarily makes the account running the the **Admin | Sync Template v3 (Flow Action Details)** an owner of each flow that is using HTTP actions to retrieve further details of those actions (for example, the HTTP host), and removes owner access once the details have been retrieved. The admin running this flow will receive email notifications to let them know the flows they've just been made an owner of.
 
 - Admin | Sync Template v3 (Apps)
+- Admin | Sync Template v3 (Business Process Flows)
 - Admin | Sync Template v3 (Connection Identities)
 - Admin | Sync Template v3 (Custom Connectors)
 - Admin | Sync Template v3 (Desktop Flow - Runs)
