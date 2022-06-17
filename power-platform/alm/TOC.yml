@@ -50,6 +50,8 @@
       href: team-development-alm.md
     - name: "Scenario 6: Embrace citizen developers"
       href: embrace-citizen-devs.md
+    - name: "Scenario 7: Add canvas apps in solutions by default"
+      href: canvas-apps-solution-default.md
   - name: Implementing healthy component ALM
     items:
     - name: Maintaining healthy model-driven app form ALM
