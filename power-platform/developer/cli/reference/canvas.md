@@ -40,11 +40,11 @@ Operating with Power Apps .msapp files
 ### canvas create Parameters
 
 > [!div class="mx-tdCol2BreakAll"]
-> |Parameter<br />Alias|Description|
+> |--Parameter/<br />-Alias|Description|
 > |---------|---------|
-> |`--msapp`<br />|Path to .msapp file to be generated<br />**Required**|
-> |`--connector-id`<br />|The ID of the Connector from which the Power App will be generated<br />**Required**|
-> |`--environment`<br />|The target Environment ID.  Default value is the environment of your currently active Dataverse Auth Profile.|
+> |`--msapp`/<br />|Path to .msapp file to be generated<br />**Required**|
+> |`--connector-id`/<br />|The ID of the Connector from which the Power App will be generated<br />**Required**|
+> |`--environment`/<br />|The target Environment ID.  Default value is the environment of your currently active Dataverse Auth Profile.|
 
 [!INCLUDE [canvas-create-remarks](includes/canvas-create-remarks.md)]
 
@@ -57,10 +57,10 @@ Operating with Power Apps .msapp files
 ### canvas pack Parameters
 
 > [!div class="mx-tdCol2BreakAll"]
-> |Parameter<br />Alias|Description|
+> |--Parameter/<br />-Alias|Description|
 > |---------|---------|
-> |`--sources`<br />|Directory to sources to be packed<br />**Required**|
-> |`--msapp`<br />|Path to .msapp file<br />**Required**|
+> |`--sources`/<br />|Directory to sources to be packed<br />**Required**|
+> |`--msapp`/<br />|Path to .msapp file<br />**Required**|
 
 [!INCLUDE [canvas-pack-remarks](includes/canvas-pack-remarks.md)]
 
@@ -73,10 +73,10 @@ Operating with Power Apps .msapp files
 ### canvas unpack Parameters
 
 > [!div class="mx-tdCol2BreakAll"]
-> |Parameter<br />Alias|Description|
+> |--Parameter/<br />-Alias|Description|
 > |---------|---------|
-> |`--sources`<br />|Directory to sources to be unpacked|
-> |`--msapp`<br />|Path to .msapp file<br />**Required**|
+> |`--sources`/<br />|Directory to sources to be unpacked|
+> |`--msapp`/<br />|Path to .msapp file<br />**Required**|
 
 [!INCLUDE [canvas-unpack-remarks](includes/canvas-unpack-remarks.md)]
 

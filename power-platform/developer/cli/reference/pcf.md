@@ -40,14 +40,14 @@ Initializes a directory with a new PowerApps component framework project
 ### pcf init Parameters
 
 > [!div class="mx-tdCol2BreakAll"]
-> |Parameter<br />Alias|Description|
+> |--Parameter/<br />-Alias|Description|
 > |---------|---------|
-> |`--namespace`<br />`-ns`|The namespace for the component<br />**Required**<br />**Note**: Only characters within the ranges [A - Z], [a - z], [0 - 9], or '.' are allowed. The first and last character may not be the '.' character. Consecutive '.' characters are not allowed. Numbers are not allowed as the first character or immediately after a period.|
-> |`--name`<br />`-n`|The name for the component<br />**Required**<br />**Note**: Only characters within the ranges [A - Z], [a - z] or [0 - 9] are allowed. The first character may not be a number.|
-> |`--template`<br />`-t`|Choose a template for the component<br />**Required**<br />Use one of these values:<br />- `field`<br />- `dataset`|
-> |`--framework`<br />`-fw`|The rendering framework for control. Default value is 'none' [none: HTML, react: React]<br />Use one of these values:<br />- `none`<br />- `react`|
-> |`--outputDirectory`<br />`-o`|Output directory|
-> |`--run-npm-install`<br />`-npm`|Auto run 'npm install' after the control is created. Default value is 'true'<br />This parameter requires no value. It is a switch.|
+> |`--namespace`/<br />`-ns`|The namespace for the component<br />**Required**<br />**Note**: Only characters within the ranges [A - Z], [a - z], [0 - 9], or '.' are allowed. The first and last character may not be the '.' character. Consecutive '.' characters are not allowed. Numbers are not allowed as the first character or immediately after a period.|
+> |`--name`/<br />`-n`|The name for the component<br />**Required**<br />**Note**: Only characters within the ranges [A - Z], [a - z] or [0 - 9] are allowed. The first character may not be a number.|
+> |`--template`/<br />`-t`|Choose a template for the component<br />**Required**<br />Use one of these values:<br />- `field`<br />- `dataset`|
+> |`--framework`/<br />`-fw`|The rendering framework for control. Default value is 'none' [none: HTML, react: React]<br />Use one of these values:<br />- `none`<br />- `react`|
+> |`--outputDirectory`/<br />`-o`|Output directory|
+> |`--run-npm-install`/<br />`-npm`|Auto run 'npm install' after the control is created. Default value is 'true'<br />This parameter requires no value. It is a switch.|
 
 [!INCLUDE [pcf-init-remarks](includes/pcf-init-remarks.md)]
 
@@ -60,11 +60,11 @@ Import the PowerApps component framework project into the current Dataverse Orga
 ### pcf push Parameters
 
 > [!div class="mx-tdCol2BreakAll"]
-> |Parameter<br />Alias|Description|
+> |--Parameter/<br />-Alias|Description|
 > |---------|---------|
-> |`--publisher-prefix`<br />`-pp`|Customization prefix value for the Dataverse solution publisher<br />**Required**<br />**Note**: The prefix must be 2 to 8 characters long, can only consist of alpha-numerics, must start with a letter, and cannot start with 'mscrm'.|
-> |`--verbosity`<br />`-v`|Verbosity level for MSBuild when building the temporary solution wrapper.<br />Use one of these values:<br />- `minimal`<br />- `normal`<br />- `detailed`<br />- `diagnostic`|
-> |`--force-import`<br />`-f`|Force a full update of the control<br />This parameter requires no value. It is a switch.|
+> |`--publisher-prefix`/<br />`-pp`|Customization prefix value for the Dataverse solution publisher<br />**Required**<br />**Note**: The prefix must be 2 to 8 characters long, can only consist of alpha-numerics, must start with a letter, and cannot start with 'mscrm'.|
+> |`--verbosity`/<br />`-v`|Verbosity level for MSBuild when building the temporary solution wrapper.<br />Use one of these values:<br />- `minimal`<br />- `normal`<br />- `detailed`<br />- `diagnostic`|
+> |`--force-import`/<br />`-f`|Force a full update of the control<br />This parameter requires no value. It is a switch.|
 
 [!INCLUDE [pcf-push-remarks](includes/pcf-push-remarks.md)]
 
@@ -77,14 +77,14 @@ Patch version for controls
 ### pcf version Parameters
 
 > [!div class="mx-tdCol2BreakAll"]
-> |Parameter<br />Alias|Description|
+> |--Parameter/<br />-Alias|Description|
 > |---------|---------|
-> |`--strategy`<br />`-s`|Updates patch version for 'ControlManifest.xml' files using specified strategy. If using gittags, set personal access token in the following environment variable "PacCli.PAT"<br />Use one of these values:<br />- `gittags`<br />- `filetracking`<br />- `manifest`|
-> |`--patchversion`<br />`-pv`|Patch version for controls<br />**Note**: The value must be a positive integer|
-> |`--path`<br />`-p`|Absolute/Relative path of the 'ControlManifest.xml' for updating.|
-> |`--allmanifests`<br />`-a`|Updates patch version for all 'ControlManifest.xml' files<br />This parameter requires no value. It is a switch.|
-> |`--updatetarget`<br />`-ut`|Specify which target manifest needs to be updated<br />Use one of these values:<br />- `build`<br />- `project`|
-> |`--filename`<br />`-fn`|Tracker CSV file name to be used when using filetracking as a strategy. Default value is ControlsStateVersionInfo.csv|
+> |`--strategy`/<br />`-s`|Updates patch version for 'ControlManifest.xml' files using specified strategy. If using gittags, set personal access token in the following environment variable "PacCli.PAT"<br />Use one of these values:<br />- `gittags`<br />- `filetracking`<br />- `manifest`|
+> |`--patchversion`/<br />`-pv`|Patch version for controls<br />**Note**: The value must be a positive integer|
+> |`--path`/<br />`-p`|Absolute/Relative path of the 'ControlManifest.xml' for updating.|
+> |`--allmanifests`/<br />`-a`|Updates patch version for all 'ControlManifest.xml' files<br />This parameter requires no value. It is a switch.|
+> |`--updatetarget`/<br />`-ut`|Specify which target manifest needs to be updated<br />Use one of these values:<br />- `build`<br />- `project`|
+> |`--filename`/<br />`-fn`|Tracker CSV file name to be used when using filetracking as a strategy. Default value is ControlsStateVersionInfo.csv|
 
 [!INCLUDE [pcf-version-remarks](includes/pcf-version-remarks.md)]
 
