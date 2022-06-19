@@ -73,10 +73,10 @@ Creates a Dataverse Environment in your tenant.
 |`--currency`|`-c`|Sets the currency used for your environment. [defaults to USD]|
 |`--language`|`-l`|Sets the language used for your environment. [defaults to English]|
 |`--templates`|`-tm`|Sets Dynamics365 app that needs to be deployed. [passed as comma separated values] e.g : -tm "D365_Sample, D365_Sales"|
-|`--domain`|`-d`|The domain name is part of the environment URL. If domain name is already in use, a numeric value will be appended to the domain name. Eg: If 'contoso' is already in use, then the environment URL will be updated to https://{contoso}0.crm.dynamics.com.<br /><br />Validation Error: Only characters within the ranges [A - Z], [a - z], [0 - 9], or '-' are allowed. The first and last character cannot be the '-' character. Consecutive '-' characters are not allowed.|
+|`--domain`|`-d`|The domain name is part of the environment URL. If domain name is already in use, a numeric value will be appended to the domain name. Eg: If 'contoso' is already in use, then the environment URL will be updated to https://{contoso}0.crm.dynamics.com.<br /><br />Validation Error: `Only characters within the ranges [A - Z], [a - z], [0 - 9], or '-' are allowed. The first and last character cannot be the '-' character. Consecutive '-' characters are not allowed.`|
 |`--input-file`|`-if`|The verb arguments to be passed in a .json input file. Eg: {"name" : "contoso"}. The arguments passed through command-line will take precedence over arguments from the .json input file.|
 |`--async`|`-a`|Optional boolean argument to run pac verbs asynchronously, defaults to false.<br />This parameter requires no value. It is a switch.|
-|`--team-id`|`-tid`|Team Id as Guid<br /><br />Validation Error: The Team Id is not a valid Guid.|
+|`--team-id`|`-tid`|Team Id as Guid<br /><br />Validation Error: `The Team Id is not a valid Guid.`|
 
 [!INCLUDE [admin-create-remarks](includes/admin-create-remarks.md)]
 
@@ -194,7 +194,7 @@ Copy Source Environment to Destination Environment
 |`--source-id`|`-si`|**Deprecated**: Use `--source-env` instead.|
 |`--target-id`|`-ti`|**Deprecated**: Use `--target-env` instead.|
 |`--name`|`-n`|Name of the target environment|
-|`--type`|`-t`|<br />Use one of these values:<br />- `MinimalCopy`<br />- `FullCopy`|
+|`--type`|`-t`|Use one of these values:<br />- `MinimalCopy`<br />- `FullCopy`|
 |`--async`|`-a`|Optional boolean argument to run pac verbs asynchronously, defaults to false.<br />This parameter requires no value. It is a switch.|
 
 [!INCLUDE [admin-copy-remarks](includes/admin-copy-remarks.md)]
