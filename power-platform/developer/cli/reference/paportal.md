@@ -50,8 +50,8 @@ Download portal website content from the current Dataverse Organization
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--path`|`-p`|Path where the website content will be downloaded|
-|`--webSiteId`|`-id`|Portal website id to download|
+|`--path`|`-p`|Path where the website content will be downloaded<br />**Required**|
+|`--webSiteId`|`-id`|Portal website id to download<br />**Required**|
 |`--includeEntities`|`-ie`|Download only the entities specified for this argument in comma separated entity logical name|
 |`--excludeEntities`|`-xe`|Comma separated list of entity logical names to exclude downloading|
 |`--overwrite`|`-o`|Portal website content to overwrite|
@@ -70,7 +70,7 @@ Upload portal website content to current Dataverse Organization
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--path`|`-p`|Path from where the website content will be uploaded|
+|`--path`|`-p`|Path from where the website content will be uploaded<br />**Required**|
 |`--deploymentProfile`|`-dp`|Deployment profile name to be used. Defaults to 'default'|
 
 [!INCLUDE [paportal-upload-remarks](includes/paportal-upload-remarks.md)]
@@ -85,8 +85,8 @@ Bundle portal website content in CMT supported XML format
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--path`|`-p`|Path from where the website content will be bundled|
-|`--output`|`-o`|Path to which the XML files(s) will be saved|
+|`--path`|`-p`|Path from where the website content will be bundled<br />**Required**|
+|`--output`|`-o`|Path to which the XML files(s) will be saved<br />**Required**|
 |`--split`|`-s`|If this flag is true a separate xml will be created for each entity|
 |`--excludePK`|`-ep`|If this flag is true Primary key fields are not included in data xml so that CMT generates new record ids when importing.|
 |`--deploymentProfile`|`-dp`|Deployment profile name to be used. Defaults to 'default'|
@@ -103,7 +103,7 @@ Assigns new guid to primary key attribute for all records of a website
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--path`|`-p`|Path where website files are located|
+|`--path`|`-p`|Path where website files are located<br />**Required**|
 
 [!INCLUDE [paportal-reguid-remarks](includes/paportal-reguid-remarks.md)]
 
@@ -117,7 +117,7 @@ Merges localized content back to portal yaml files
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--path`|`-p`|Path where website files are located|
+|`--path`|`-p`|Path where website files are located<br />**Required**|
 
 [!INCLUDE [paportal-mergelocale-remarks](includes/paportal-mergelocale-remarks.md)]
 

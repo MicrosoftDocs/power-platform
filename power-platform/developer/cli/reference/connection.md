@@ -39,7 +39,7 @@ List all Connections from the passed environment.
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--environment-id`|`-id`|Id of the environment that has connections.|
+|`--environment-id`|`-id`|Id of the environment that has connections.<br />**Required**|
 
 [!INCLUDE [connection-list-remarks](includes/connection-list-remarks.md)]
 

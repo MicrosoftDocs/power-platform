@@ -41,9 +41,9 @@ Initializes a directory with a new PowerApps component framework project
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--namespace`|`-ns`|The namespace for the component|
-|`--name`|`-n`|The name for the component|
-|`--template`|`-t`|Choose a template for the component|
+|`--namespace`|`-ns`|The namespace for the component<br />**Required**|
+|`--name`|`-n`|The name for the component<br />**Required**|
+|`--template`|`-t`|Choose a template for the component<br />**Required**|
 |`--framework`|`-fw`|The rendering framework for control. Default value is 'none' [none: HTML, react: React]|
 |`--outputDirectory`|`-o`|Output directory|
 |`--run-npm-install`|`-npm`|Auto run 'npm install' after the control is created. Default value is 'true'|
@@ -60,7 +60,7 @@ Import the PowerApps component framework project into the current Dataverse Orga
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--publisher-prefix`|`-pp`|Customization prefix value for the Dataverse solution publisher|
+|`--publisher-prefix`|`-pp`|Customization prefix value for the Dataverse solution publisher<br />**Required**|
 |`--verbosity`|`-v`|Verbosity level for MSBuild when building the temporary solution wrapper.|
 |`--force-import`|`-f`|Force a full update of the control|
 

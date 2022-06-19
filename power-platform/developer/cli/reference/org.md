@@ -54,7 +54,7 @@ Display the results of a query against Dataverse
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--sql`|`-s`|The SQL SELECT query to run|
+|`--sql`|`-s`|The SQL SELECT query to run<br />**Required**|
 
 [!INCLUDE [org-query-remarks](includes/org-query-remarks.md)]
 

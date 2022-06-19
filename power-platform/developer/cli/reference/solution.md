@@ -56,8 +56,8 @@ Initializes a directory with a new Dataverse solution project
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--publisher-name`|`-pn`|Name of the Dataverse solution publisher|
-|`--publisher-prefix`|`-pp`|Customization prefix value for the Dataverse solution publisher|
+|`--publisher-name`|`-pn`|Name of the Dataverse solution publisher<br />**Required**|
+|`--publisher-prefix`|`-pp`|Customization prefix value for the Dataverse solution publisher<br />**Required**|
 |`--outputDirectory`|`-o`|Output directory|
 
 [!INCLUDE [solution-init-remarks](includes/solution-init-remarks.md)]
@@ -72,7 +72,7 @@ Adds a reference from the project in the current directory to the project at 'pa
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--path`|`-p`|The path to the referenced project|
+|`--path`|`-p`|The path to the referenced project<br />**Required**|
 
 [!INCLUDE [solution-add-reference-remarks](includes/solution-add-reference-remarks.md)]
 
@@ -101,7 +101,7 @@ Delete Dataverse Solution from the current Dataverse Environment
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--solution-name`|`-sn`|Name of the solution|
+|`--solution-name`|`-sn`|Name of the solution<br />**Required**|
 
 [!INCLUDE [solution-delete-remarks](includes/solution-delete-remarks.md)]
 
@@ -115,8 +115,8 @@ Sets version for solution loaded in Dataverse environment.
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--solution-name`|`-sn`|Name of the solution|
-|`--solution-version`|`-sv`|Specify the solution version number.|
+|`--solution-name`|`-sn`|Name of the solution<br />**Required**|
+|`--solution-version`|`-sv`|Specify the solution version number.<br />**Required**|
 
 [!INCLUDE [solution-online-version-remarks](includes/solution-online-version-remarks.md)]
 
@@ -172,8 +172,8 @@ Export a Dataverse Solution from the current Dataverse Environment
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--path`|`-p`|Path where the exported solution zip file will be written|
-|`--name`|`-n`|The name of the solution to be exported|
+|`--path`|`-p`|Path where the exported solution zip file will be written<br />**Required**|
+|`--name`|`-n`|The name of the solution to be exported<br />**Required**|
 |`--managed`|`-m`|Whether the solution should be exported as a managed solution|
 |`--targetversion`|`-v`|The version that the exported solution will support|
 |`--include`|`-i`|Which settings should be included in the solution being exported|
@@ -192,7 +192,7 @@ Create a solution project based on an existing solution in your Organization
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--name`|`-n`|The name of the solution to be exported|
+|`--name`|`-n`|The name of the solution to be exported<br />**Required**|
 |`--targetversion`|`-v`|The version that the exported solution will support|
 |`--include`|`-i`|Which settings should be included in the solution being exported|
 |`--outputDirectory`|`-o`|Output directory|
@@ -226,7 +226,7 @@ Option to stage the Dataverse solution for upgrade
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--solution-name`|`-sn`|Name of the solution|
+|`--solution-name`|`-sn`|Name of the solution<br />**Required**|
 |`--async`|`-a`|Upgrades solution asynchronously|
 |`--max-async-wait-time`|`-wt`|Max asynchronous wait time in minutes. Default value is 60 minutes|
 
@@ -242,8 +242,8 @@ Add license and plan info to solution
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--planDefinitionFile`|`-pd`|License plan definition file in CSV format; expected columns: Service ID, Display name, More info URL|
-|`--planMappingFile`|`-pm`|License plan mapping file in CSV format; expected columns: Service ID, Component name|
+|`--planDefinitionFile`|`-pd`|License plan definition file in CSV format; expected columns: Service ID, Display name, More info URL<br />**Required**|
+|`--planMappingFile`|`-pm`|License plan mapping file in CSV format; expected columns: Service ID, Component name<br />**Required**|
 
 [!INCLUDE [solution-add-license-remarks](includes/solution-add-license-remarks.md)]
 
@@ -294,7 +294,7 @@ Package solution components on local filesystem into solution.zip (SolutionPacka
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--zipfile`|`-z`|The full path to the solution ZIP file|
+|`--zipfile`|`-z`|The full path to the solution ZIP file<br />**Required**|
 |`--folder`|`-f`|The path to the root folder on the local filesystem. When unpacking/extractins, this will be written to, when packing this will be read from.|
 |`--packagetype`|`-p`|When unpacking/extracting, use to specify dual Managed and Unmanaged operation. When packing, use to specify Managed or Unmanaged from a previous unpack 'Both'. Can be: 'Unmanaged', 'Managed' or 'Both'; default: 'Unmanaged'|
 |`--log`|`-l`|The path to the log file.|
@@ -323,7 +323,7 @@ Extract solution components from solution.zip onto local filesystem (SolutionPac
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--zipfile`|`-z`|The full path to the solution ZIP file|
+|`--zipfile`|`-z`|The full path to the solution ZIP file<br />**Required**|
 |`--folder`|`-f`|The path to the root folder on the local filesystem. When unpacking/extractins, this will be written to, when packing this will be read from.|
 |`--packagetype`|`-p`|When unpacking/extracting, use to specify dual Managed and Unmanaged operation. When packing, use to specify Managed or Unmanaged from a previous unpack 'Both'. Can be: 'Unmanaged', 'Managed' or 'Both'; default: 'Unmanaged'|
 |`--log`|`-l`|The path to the log file.|
@@ -352,9 +352,9 @@ Adds a solution component to the target unmanaged solution in the connected Data
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--solutionUniqueName`|`-sn`|Name of the solution|
-|`--component`|`-c`|The schema name or ID of the component to add to the target solution|
-|`--componentType`|`-ct`|The value that represents the solution component that you are adding|
+|`--solutionUniqueName`|`-sn`|Name of the solution<br />**Required**|
+|`--component`|`-c`|The schema name or ID of the component to add to the target solution<br />**Required**|
+|`--componentType`|`-ct`|The value that represents the solution component that you are adding<br />**Required**|
 |`--AddRequiredComponents`|`-arc`|Indicates whether other solution components that are required by the solution component that you are adding should also be added to the unmanaged solution|
 |`--environment`|`-env`|Environment URL or ID of the target Dataverse environment|
 

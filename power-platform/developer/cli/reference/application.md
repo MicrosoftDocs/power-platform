@@ -55,7 +55,7 @@ Installs Dataverse application to given environment
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--environment-id`|`-id`|Target environment application will be installed to|
+|`--environment-id`|`-id`|Target environment application will be installed to<br />**Required**|
 |`--application-name`|`-an`|Unique name of the application that will be installed to target environment|
 |`--application-list`|`-al`|Location of the JSON file with list of the Dataverse applications from AppSource to be installed|
 

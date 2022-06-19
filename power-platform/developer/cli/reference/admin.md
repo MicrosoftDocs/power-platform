@@ -69,7 +69,7 @@ Creates a Dataverse Environment in your tenant.
 |---------|---------|---------|
 |`--name`|`-n`|Sets the name of the environment.|
 |`--region`|`-r`|Sets the environment's region name. [defaults to unitedstates]|
-|`--type`|`-t`|Sets the environment Type.|
+|`--type`|`-t`|Sets the environment Type.<br />**Required**|
 |`--currency`|`-c`|Sets the currency used for your environment. [defaults to USD]|
 |`--language`|`-l`|Sets the language used for your environment. [defaults to English]|
 |`--templates`|`-tm`|Sets Dynamics365 app that needs to be deployed. [passed as comma separated values] e.g : -tm "D365_Sample, D365_Sales"|
@@ -92,7 +92,7 @@ Takes a manual backup of your environment.
 |---------|---------|---------|
 |`--environment`|`-env`|Environment URL or ID of the Environment that requires backup.|
 |`--url`|`-u`|Url of the environment that requires backup.|
-|`--label`|`-l`|Sets the backup label as provided.|
+|`--label`|`-l`|Sets the backup label as provided.<br />**Required**|
 |`--environment-id`|`-id`|Id of the environment that requires backup.|
 |`--notes`|`-n`|**ignored**: Additional notes for this backup.|
 
@@ -171,7 +171,7 @@ Restores an environment to a given backup.
 |`--target-url`|`-tu`|Environment URL of target environment required for restore. This would default to source URL if not provided.|
 |`--source-id`|`-si`|Environment Id of source environment required for restore.|
 |`--target-id`|`-ti`|Environment Id of target environment required for restore. This would default to source Id if not provided.|
-|`--selected-backup`|`-sb`|DateTime of the backup in 'mm/dd/yyyy hh:mm' format OR string 'latest'.|
+|`--selected-backup`|`-sb`|DateTime of the backup in 'mm/dd/yyyy hh:mm' format OR string 'latest'.<br />**Required**|
 |`--name`|`-n`|Optional name of the restored environment.|
 |`--async`|`-a`|Optional boolean argument to run pac verbs asynchronously, defaults to false.|
 
@@ -215,9 +215,9 @@ Assign a user to a target environment.
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--environment`|`-env`|ID or URL of the environment to assign a user to.|
-|`--user`|`-u`|Object ID of AAD user to be assigned to environment|
-|`--role`|`-r`|Name or ID of security role to be applied to user|
+|`--environment`|`-env`|ID or URL of the environment to assign a user to.<br />**Required**|
+|`--user`|`-u`|Object ID of AAD user to be assigned to environment<br />**Required**|
+|`--role`|`-r`|Name or ID of security role to be applied to user<br />**Required**|
 |`--async`|`-a`|Optional boolean argument to run pac verbs asynchronously, defaults to false.|
 
 [!INCLUDE [admin-assign-user-remarks](includes/admin-assign-user-remarks.md)]

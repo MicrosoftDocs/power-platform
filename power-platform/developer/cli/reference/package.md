@@ -61,8 +61,8 @@ Adds an external package to a PD Package project
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--path`|`-p`|Path to the external package|
-|`--package-type`|`-t`|The type of the package being added. e.g. 'xpp' for FnO packages.|
+|`--path`|`-p`|Path to the external package<br />**Required**|
+|`--package-type`|`-t`|The type of the package being added. e.g. 'xpp' for FnO packages.<br />**Required**|
 |`--import-order`||A whole number that indicates the order to insert this item into the final ImportConfig.xml file at build time. Negative numbers are inserted before existing elements. Positive numbers are added after existing elements.|
 |`--skip-validation`|`-sv`|Adds the item to the project file even if the file does not exist or appears to be invalid. Note, this will not affect any validation that is performed by MSBuild.|
 
@@ -78,7 +78,7 @@ Adds a prebuilt Dataverse solution file to a PD Package project
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--path`|`-p`|Path to the Dataverse solution file (must be *.zip)|
+|`--path`|`-p`|Path to the Dataverse solution file (must be *.zip)<br />**Required**|
 |`--import-order`||A whole number that indicates the order to insert this item into the final ImportConfig.xml file at build time. Negative numbers are inserted before existing elements. Positive numbers are added after existing elements.|
 |`--skip-validation`|`-sv`|Adds the item to the project file even if the file does not exist or appears to be invalid. Note, this will not affect any validation that is performed by MSBuild.|
 |`--publish-workflows-activate-plugins`||Explicitly indicates whether to publish the workflows and activate plugins when this solution is imported.|
@@ -101,7 +101,7 @@ Adds reference to Dataverse solution project
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--path`|`-p`|The path to the referenced Dataverse solution project|
+|`--path`|`-p`|The path to the referenced Dataverse solution project<br />**Required**|
 |`--import-order`||A whole number that indicates the order to insert this item into the final ImportConfig.xml file at build time. Negative numbers are inserted before existing elements. Positive numbers are added after existing elements.|
 |`--publish-workflows-activate-plugins`||Explicitly indicates whether to publish the workflows and activate plugins when this solution is imported.|
 |`--overwrite-unmanaged-customizations`||Explicitly indicates whether to overwrite unmanaged customizations when this solution is imported.|
@@ -125,7 +125,7 @@ Deploys package to Dataverse environment
 |---------|---------|---------|
 |`--logFile`|`-lf`|Log file path|
 |`--logConsole`|`-c`|Output log to console|
-|`--package`|`-p`|path to a package dll or zip file with a package|
+|`--package`|`-p`|path to a package dll or zip file with a package<br />**Required**|
 
 [!INCLUDE [package-deploy-remarks](includes/package-deploy-remarks.md)]
 
@@ -139,7 +139,7 @@ Shows details of Dataverse package
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--package`|`-p`|path to a package dll or zip file with a package|
+|`--package`|`-p`|path to a package dll or zip file with a package<br />**Required**|
 
 [!INCLUDE [package-show-remarks](includes/package-show-remarks.md)]
 

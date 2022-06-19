@@ -41,8 +41,8 @@ Operating with Power Apps .msapp files
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--sources`||Directory to sources to be packed|
-|`--msapp`||Path to .msapp file|
+|`--sources`||Directory to sources to be packed<br />**Required**|
+|`--msapp`||Path to .msapp file<br />**Required**|
 
 [!INCLUDE [canvas-pack-remarks](includes/canvas-pack-remarks.md)]
 
@@ -57,7 +57,7 @@ Operating with Power Apps .msapp files
 |Parameter|Alias|Description|
 |---------|---------|---------|
 |`--sources`||Directory to sources to be unpacked|
-|`--msapp`||Path to .msapp file|
+|`--msapp`||Path to .msapp file<br />**Required**|
 
 [!INCLUDE [canvas-unpack-remarks](includes/canvas-unpack-remarks.md)]
 
@@ -71,8 +71,8 @@ Operating with Power Apps .msapp files
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--msapp`||Path to .msapp file to be generated|
-|`--connector-id`||The ID of the Connector from which the Power App will be generated|
+|`--msapp`||Path to .msapp file to be generated<br />**Required**|
+|`--connector-id`||The ID of the Connector from which the Power App will be generated<br />**Required**|
 |`--environment`||The target Environment ID.  Default value is the environment of your currently active Dataverse Auth Profile.|
 
 [!INCLUDE [canvas-create-remarks](includes/canvas-create-remarks.md)]

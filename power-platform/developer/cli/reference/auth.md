@@ -105,7 +105,7 @@ Update name or target environment of an existing authentication profile
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--index`|`-i`|The index of the profile to be named/renamed|
+|`--index`|`-i`|The index of the profile to be named/renamed<br />**Required**|
 |`--name`|`-n`|The name you want to give to this authentication profile (maximum 12 characters)|
 |`--environment`|`-env`|Default environment (id, url, unique name or partial name)|
 
@@ -121,8 +121,8 @@ Name or rename an existing authentication profile
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--index`|`-i`|The index of the profile to be named/renamed|
-|`--name`|`-n`|The name you want to give to this authentication profile (maximum 12 characters)|
+|`--index`|`-i`|The index of the profile to be named/renamed<br />**Required**|
+|`--name`|`-n`|The name you want to give to this authentication profile (maximum 12 characters)<br />**Required**|
 
 [!INCLUDE [auth-name-remarks](includes/auth-name-remarks.md)]
 
