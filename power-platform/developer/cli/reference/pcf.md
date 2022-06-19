@@ -41,8 +41,8 @@ Initializes a directory with a new PowerApps component framework project
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--namespace`|`-ns`|The namespace for the component<br />**Required**|
-|`--name`|`-n`|The name for the component<br />**Required**|
+|`--namespace`|`-ns`|The namespace for the component<br />**Required**<br />Validation: Only characters within the ranges [A - Z], [a - z], [0 - 9], or '.' are allowed. The first and last character may not be the '.' character. Consecutive '.' characters are not allowed. Numbers are not allowed as the first character or immediately after a period.|
+|`--name`|`-n`|The name for the component<br />**Required**<br />Validation: Only characters within the ranges [A - Z], [a - z] or [0 - 9] are allowed. The first character may not be a number.|
 |`--template`|`-t`|Choose a template for the component<br />**Required**|
 |`--framework`|`-fw`|The rendering framework for control. Default value is 'none' [none: HTML, react: React]|
 |`--outputDirectory`|`-o`|Output directory|
@@ -60,7 +60,7 @@ Import the PowerApps component framework project into the current Dataverse Orga
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--publisher-prefix`|`-pp`|Customization prefix value for the Dataverse solution publisher<br />**Required**|
+|`--publisher-prefix`|`-pp`|Customization prefix value for the Dataverse solution publisher<br />**Required**<br />Validation: The prefix must be 2 to 8 characters long, can only consist of alpha-numerics, must start with a letter, and cannot start with 'mscrm'.|
 |`--verbosity`|`-v`|Verbosity level for MSBuild when building the temporary solution wrapper.|
 |`--force-import`|`-f`|Force a full update of the control<br />This parameter requires no value. It is a switch.|
 
@@ -77,7 +77,7 @@ Patch version for controls
 |Parameter|Alias|Description|
 |---------|---------|---------|
 |`--strategy`|`-s`|Updates patch version for 'ControlManifest.xml' files using specified strategy. If using gittags, set personal access token in the following environment variable "PacCli.PAT"|
-|`--patchversion`|`-pv`|Patch version for controls|
+|`--patchversion`|`-pv`|Patch version for controls<br />Validation: The value must be a positive integer|
 |`--path`|`-p`|Absolute/Relative path of the 'ControlManifest.xml' for updating.|
 |`--allmanifests`|`-a`|Updates patch version for all 'ControlManifest.xml' files<br />This parameter requires no value. It is a switch.|
 |`--updatetarget`|`-ut`|Specify which target manifest needs to be updated|

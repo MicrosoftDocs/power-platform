@@ -85,9 +85,9 @@ Adds a prebuilt Dataverse solution file to a PD Package project
 |`--overwrite-unmanaged-customizations`||Explicitly indicates whether to overwrite unmanaged customizations when this solution is imported.|
 |`--import-mode`||Explicitly specifies the required mode when importing this solution.|
 |`--missing-dependency-behavior`||Specifies the behavior on import when a dependency of this solution is missing from the target environment.|
-|`--dependency-overrides`||A semicolon delimited list of overrides. This value overrides any dependency information encoded in the solution's metadata. Each override should be in the format: `<uniquename>:<minVersion>:<maxVersion>`. Where the minVersion and maxVersion is optional but should be in .Net version format syntax.|
+|`--dependency-overrides`||A semicolon delimited list of overrides. This value overrides any dependency information encoded in the solution's metadata. Each override should be in the format: `<uniquename>:<minVersion>:<maxVersion>`. Where the minVersion and maxVersion is optional but should be in .Net version format syntax.<br />Validation: Expected a semicolon delimited list of dependency overrides of the format <uniquename>:<minVersion>:<maxVersion>.|
 |`--layer-order-behavior`||This argument is applicable only for 1st party solutions.|
-|`--layer-order-solution-unique-names`||This argument is applicable only for 1st party solutions.|
+|`--layer-order-solution-unique-names`||This argument is applicable only for 1st party solutions.<br />Validation: Expected a semicolon delimited list of solution uniquenames.|
 
 [!INCLUDE [package-add-solution-remarks](includes/package-add-solution-remarks.md)]
 
@@ -107,9 +107,9 @@ Adds reference to Dataverse solution project
 |`--overwrite-unmanaged-customizations`||Explicitly indicates whether to overwrite unmanaged customizations when this solution is imported.|
 |`--import-mode`||Explicitly specifies the required mode when importing this solution.|
 |`--missing-dependency-behavior`||Specifies the behavior on import when a dependency of this solution is missing from the target environment.|
-|`--dependency-overrides`||A semicolon delimited list of overrides. This value overrides any dependency information encoded in the solution's metadata. Each override should be in the format: `<uniquename>:<minVersion>:<maxVersion>`. Where the minVersion and maxVersion is optional but should be in .Net version format syntax.|
+|`--dependency-overrides`||A semicolon delimited list of overrides. This value overrides any dependency information encoded in the solution's metadata. Each override should be in the format: `<uniquename>:<minVersion>:<maxVersion>`. Where the minVersion and maxVersion is optional but should be in .Net version format syntax.<br />Validation: Expected a semicolon delimited list of dependency overrides of the format <uniquename>:<minVersion>:<maxVersion>.|
 |`--layer-order-behavior`||This argument is applicable only for 1st party solutions.|
-|`--layer-order-solution-unique-names`||This argument is applicable only for 1st party solutions.|
+|`--layer-order-solution-unique-names`||This argument is applicable only for 1st party solutions.<br />Validation: Expected a semicolon delimited list of solution uniquenames.|
 
 [!INCLUDE [package-add-reference-remarks](includes/package-add-reference-remarks.md)]
 

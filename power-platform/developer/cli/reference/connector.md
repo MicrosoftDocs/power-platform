@@ -56,7 +56,7 @@ Download a Connector's OpenApiDefinition file
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--connector-id`|`-id`|The ID of the Connector<br />**Required**|
+|`--connector-id`|`-id`|The ID of the Connector<br />**Required**<br />Validation: The Connector Id is not a valid Guid.|
 |`--output`|`-o`|The filename and path to output the Connector OpenApiDefinition file.<br />**Required**|
 |`--environment`|`-env`|The target Environment ID or URL.  Default value is the environment of your currently active Dataverse Auth Profile.|
 
@@ -72,7 +72,7 @@ Creates a new row in the Connector table in the Dataverse environment.
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--name`|`-n`|The Name of the Connector<br />**Required**|
+|`--name`|`-n`|The Name of the Connector<br />**Required**<br />Validation: start with a alphanumeric prefix with length between 2~8 and followed by  '_' and alphanumeric name|
 |`--display-name`|`-dn`|The display name of the Connector<br />**Required**|
 |`--api-definition-file`|`-f`|The filename and path to read the the Connector's OpenApiDefinition.<br />**Required**|
 |`--environment`|`-env`|The target Environment ID or URL.  Default value is the environment of your currently active Dataverse Auth Profile.|
@@ -89,7 +89,7 @@ Updates a Connector Entity in the Dataverse environment.
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--connector-id`|`-id`|The ID of the Connector<br />**Required**|
+|`--connector-id`|`-id`|The ID of the Connector<br />**Required**<br />Validation: The Connector Id is not a valid Guid.|
 |`--api-definition-file`|`-f`|The filename and path to read the the Connector's OpenApiDefinition.<br />**Required**|
 |`--environment`|`-env`|The target Environment ID or URL.  Default value is the environment of your currently active Dataverse Auth Profile.|
 
