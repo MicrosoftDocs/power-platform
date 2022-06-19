@@ -47,7 +47,7 @@ Initializes a directory with a new Dataverse package project
 |`--outputDirectory`|`-o`|Output directory|
 |`--template`||The name of the template to instantiate. Note: the template 'legacy' will be removed in a future release.|
 |`--package-name`||Sets the default name of the package. Applies to the generation of ImportExtension.GetNameOfImport.|
-|`--include-PkgAssets-Content`||Indicates whether to also include some sample files for the PkgAssets/Content folder.|
+|`--include-PkgAssets-Content`||Indicates whether to also include some sample files for the PkgAssets/Content folder.<br />This parameter requires no value. It is a switch.|
 
 [!INCLUDE [package-init-remarks](includes/package-init-remarks.md)]
 
@@ -64,7 +64,7 @@ Adds an external package to a PD Package project
 |`--path`|`-p`|Path to the external package<br />**Required**|
 |`--package-type`|`-t`|The type of the package being added. e.g. 'xpp' for FnO packages.<br />**Required**|
 |`--import-order`||A whole number that indicates the order to insert this item into the final ImportConfig.xml file at build time. Negative numbers are inserted before existing elements. Positive numbers are added after existing elements.|
-|`--skip-validation`|`-sv`|Adds the item to the project file even if the file does not exist or appears to be invalid. Note, this will not affect any validation that is performed by MSBuild.|
+|`--skip-validation`|`-sv`|Adds the item to the project file even if the file does not exist or appears to be invalid. Note, this will not affect any validation that is performed by MSBuild.<br />This parameter requires no value. It is a switch.|
 
 [!INCLUDE [package-add-external-package-remarks](includes/package-add-external-package-remarks.md)]
 
@@ -80,7 +80,7 @@ Adds a prebuilt Dataverse solution file to a PD Package project
 |---------|---------|---------|
 |`--path`|`-p`|Path to the Dataverse solution file (must be *.zip)<br />**Required**|
 |`--import-order`||A whole number that indicates the order to insert this item into the final ImportConfig.xml file at build time. Negative numbers are inserted before existing elements. Positive numbers are added after existing elements.|
-|`--skip-validation`|`-sv`|Adds the item to the project file even if the file does not exist or appears to be invalid. Note, this will not affect any validation that is performed by MSBuild.|
+|`--skip-validation`|`-sv`|Adds the item to the project file even if the file does not exist or appears to be invalid. Note, this will not affect any validation that is performed by MSBuild.<br />This parameter requires no value. It is a switch.|
 |`--publish-workflows-activate-plugins`||Explicitly indicates whether to publish the workflows and activate plugins when this solution is imported.|
 |`--overwrite-unmanaged-customizations`||Explicitly indicates whether to overwrite unmanaged customizations when this solution is imported.|
 |`--import-mode`||Explicitly specifies the required mode when importing this solution.|
@@ -124,7 +124,7 @@ Deploys package to Dataverse environment
 |Parameter|Alias|Description|
 |---------|---------|---------|
 |`--logFile`|`-lf`|Log file path|
-|`--logConsole`|`-c`|Output log to console|
+|`--logConsole`|`-c`|Output log to console<br />This parameter requires no value. It is a switch.|
 |`--package`|`-p`|path to a package dll or zip file with a package<br />**Required**|
 
 [!INCLUDE [package-deploy-remarks](includes/package-deploy-remarks.md)]

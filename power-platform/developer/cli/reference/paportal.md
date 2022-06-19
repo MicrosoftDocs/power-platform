@@ -54,8 +54,8 @@ Download portal website content from the current Dataverse Organization
 |`--webSiteId`|`-id`|Portal website id to download<br />**Required**|
 |`--includeEntities`|`-ie`|Download only the entities specified for this argument in comma separated entity logical name|
 |`--excludeEntities`|`-xe`|Comma separated list of entity logical names to exclude downloading|
-|`--overwrite`|`-o`|Portal website content to overwrite|
-|`--exportTranslations`|`-et`|Export translation content in locale folder: Value 'All' extracts all content for C1 & C2 customers. Value 'SupportedLang' extracts localizable content for C2 customers|
+|`--overwrite`|`-o`|Portal website content to overwrite<br />This parameter requires no value. It is a switch.|
+|`--exportTranslations`|`-et`|Export translation content in locale folder: Value 'All' extracts all content for C1 & C2 customers. Value 'SupportedLang' extracts localizable content for C2 customers<br />This parameter requires no value. It is a switch.|
 |`--translationsFormat`|`-tf`|Locale file format [Json or Yaml]|
 
 [!INCLUDE [paportal-download-remarks](includes/paportal-download-remarks.md)]
@@ -87,8 +87,8 @@ Bundle portal website content in CMT supported XML format
 |---------|---------|---------|
 |`--path`|`-p`|Path from where the website content will be bundled<br />**Required**|
 |`--output`|`-o`|Path to which the XML files(s) will be saved<br />**Required**|
-|`--split`|`-s`|If this flag is true a separate xml will be created for each entity|
-|`--excludePK`|`-ep`|If this flag is true Primary key fields are not included in data xml so that CMT generates new record ids when importing.|
+|`--split`|`-s`|If this flag is true a separate xml will be created for each entity<br />This parameter requires no value. It is a switch.|
+|`--excludePK`|`-ep`|If this flag is true Primary key fields are not included in data xml so that CMT generates new record ids when importing.<br />This parameter requires no value. It is a switch.|
 |`--deploymentProfile`|`-dp`|Deployment profile name to be used. Defaults to 'default'|
 
 [!INCLUDE [paportal-bundle-remarks](includes/paportal-bundle-remarks.md)]

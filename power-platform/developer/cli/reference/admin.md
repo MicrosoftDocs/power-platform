@@ -75,7 +75,7 @@ Creates a Dataverse Environment in your tenant.
 |`--templates`|`-tm`|Sets Dynamics365 app that needs to be deployed. [passed as comma separated values] e.g : -tm "D365_Sample, D365_Sales"|
 |`--domain`|`-d`|The domain name is part of the environment URL. If domain name is already in use, a numeric value will be appended to the domain name. Eg: If 'contoso' is already in use, then the environment URL will be updated to https://{contoso}0.crm.dynamics.com.|
 |`--input-file`|`-if`|The verb arguments to be passed in a .json input file. Eg: {"name" : "contoso"}. The arguments passed through command-line will take precedence over arguments from the .json input file.|
-|`--async`|`-a`|Optional boolean argument to run pac verbs asynchronously, defaults to false.|
+|`--async`|`-a`|Optional boolean argument to run pac verbs asynchronously, defaults to false.<br />This parameter requires no value. It is a switch.|
 |`--team-id`|`-tid`|Team Id as Guid|
 
 [!INCLUDE [admin-create-remarks](includes/admin-create-remarks.md)]
@@ -111,7 +111,7 @@ Deletes Environment from your tenant
 |`--environment`|`-env`|Environment URL or ID of the Environment that needs to be deleted from your tenant.|
 |`--url`|`-u`|**Deprecated** use `--environment` instead.<br />URL of the Environment that needs to be deleted from your tenant|
 |`--environment-id`|`-id`|**Deprecated** use `--environment` instead.<br />Id of the environment to delete|
-|`--async`|`-a`|Optional boolean argument to run pac verbs asynchronously, defaults to false.|
+|`--async`|`-a`|Optional boolean argument to run pac verbs asynchronously, defaults to false.<br />This parameter requires no value. It is a switch.|
 
 [!INCLUDE [admin-delete-remarks](includes/admin-delete-remarks.md)]
 
@@ -135,7 +135,7 @@ Reset environment from your tenant
 |`--purpose`|`-p`|Sets the description used to associate the environment with a specific intent.|
 |`--templates`|`-t`|Sets Dynamics365 app that needs to be deployed. [passed as comma separated values] e.g : -tm "D365_Sample, D365_Sales"|
 |`--input-file`|`-if`|The verb arguments to be passed in a .json input file. Eg: {"name" : "contoso"}. The arguments passed through command-line will take precedence over arguments from the .json input file.|
-|`--async`|`-a`|Optional boolean argument to run pac verbs asynchronously, defaults to false.|
+|`--async`|`-a`|Optional boolean argument to run pac verbs asynchronously, defaults to false.<br />This parameter requires no value. It is a switch.|
 
 [!INCLUDE [admin-reset-remarks](includes/admin-reset-remarks.md)]
 
@@ -173,7 +173,7 @@ Restores an environment to a given backup.
 |`--target-id`|`-ti`|**Deprecated** use `--target-env` instead.<br />Environment Id of target environment required for restore. This would default to source Id if not provided.|
 |`--selected-backup`|`-sb`|DateTime of the backup in 'mm/dd/yyyy hh:mm' format OR string 'latest'.<br />**Required**|
 |`--name`|`-n`|Optional name of the restored environment.|
-|`--async`|`-a`|Optional boolean argument to run pac verbs asynchronously, defaults to false.|
+|`--async`|`-a`|Optional boolean argument to run pac verbs asynchronously, defaults to false.<br />This parameter requires no value. It is a switch.|
 
 [!INCLUDE [admin-restore-remarks](includes/admin-restore-remarks.md)]
 
@@ -195,7 +195,7 @@ Copy Source Environment to Destination Environment
 |`--target-id`|`-ti`|**Deprecated** use `--target-env` instead.<br />Id of the target environment|
 |`--name`|`-n`|Name of the target environment|
 |`--type`|`-t`||
-|`--async`|`-a`|Optional boolean argument to run pac verbs asynchronously, defaults to false.|
+|`--async`|`-a`|Optional boolean argument to run pac verbs asynchronously, defaults to false.<br />This parameter requires no value. It is a switch.|
 
 [!INCLUDE [admin-copy-remarks](includes/admin-copy-remarks.md)]
 
@@ -218,7 +218,7 @@ Assign a user to a target environment.
 |`--environment`|`-env`|ID or URL of the environment to assign a user to.<br />**Required**|
 |`--user`|`-u`|Object ID of AAD user to be assigned to environment<br />**Required**|
 |`--role`|`-r`|Name or ID of security role to be applied to user<br />**Required**|
-|`--async`|`-a`|Optional boolean argument to run pac verbs asynchronously, defaults to false.|
+|`--async`|`-a`|Optional boolean argument to run pac verbs asynchronously, defaults to false.<br />This parameter requires no value. It is a switch.|
 
 [!INCLUDE [admin-assign-user-remarks](includes/admin-assign-user-remarks.md)]
 

@@ -46,7 +46,7 @@ Initializes a directory with a new PowerApps component framework project
 |`--template`|`-t`|Choose a template for the component<br />**Required**|
 |`--framework`|`-fw`|The rendering framework for control. Default value is 'none' [none: HTML, react: React]|
 |`--outputDirectory`|`-o`|Output directory|
-|`--run-npm-install`|`-npm`|Auto run 'npm install' after the control is created. Default value is 'true'|
+|`--run-npm-install`|`-npm`|Auto run 'npm install' after the control is created. Default value is 'true'<br />This parameter requires no value. It is a switch.|
 
 [!INCLUDE [pcf-init-remarks](includes/pcf-init-remarks.md)]
 
@@ -62,7 +62,7 @@ Import the PowerApps component framework project into the current Dataverse Orga
 |---------|---------|---------|
 |`--publisher-prefix`|`-pp`|Customization prefix value for the Dataverse solution publisher<br />**Required**|
 |`--verbosity`|`-v`|Verbosity level for MSBuild when building the temporary solution wrapper.|
-|`--force-import`|`-f`|Force a full update of the control|
+|`--force-import`|`-f`|Force a full update of the control<br />This parameter requires no value. It is a switch.|
 
 [!INCLUDE [pcf-push-remarks](includes/pcf-push-remarks.md)]
 
@@ -79,7 +79,7 @@ Patch version for controls
 |`--strategy`|`-s`|Updates patch version for 'ControlManifest.xml' files using specified strategy. If using gittags, set personal access token in the following environment variable "PacCli.PAT"|
 |`--patchversion`|`-pv`|Patch version for controls|
 |`--path`|`-p`|Absolute/Relative path of the 'ControlManifest.xml' for updating.|
-|`--allmanifests`|`-a`|Updates patch version for all 'ControlManifest.xml' files|
+|`--allmanifests`|`-a`|Updates patch version for all 'ControlManifest.xml' files<br />This parameter requires no value. It is a switch.|
 |`--updatetarget`|`-ut`|Specify which target manifest needs to be updated|
 |`--filename`|`-fn`|Tracker CSV file name to be used when using filetracking as a strategy. Default value is ControlsStateVersionInfo.csv|
 

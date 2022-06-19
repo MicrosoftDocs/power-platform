@@ -42,8 +42,8 @@ Export data
 |---------|---------|---------|
 |`--schemaFile`|`-sf`|Schema file name. It can be created using Configuration Migration Tool<br />**Required**|
 |`--dataFile`|`-df`|File name for data zip file. Default data.zip|
-|`--overwrite`|`-o`|Allow overwrite output data file if it already exists|
-|`--verbose`|`-v`|Output more diagnostic information during data import/export|
+|`--overwrite`|`-o`|Allow overwrite output data file if it already exists<br />This parameter requires no value. It is a switch.|
+|`--verbose`|`-v`|Output more diagnostic information during data import/export<br />This parameter requires no value. It is a switch.|
 |`--environment`|`-env`|Environment (id, org id, url, unique name or partial name)|
 
 [!INCLUDE [data-export-remarks](includes/data-export-remarks.md)]
@@ -59,7 +59,7 @@ Import data
 |Parameter|Alias|Description|
 |---------|---------|---------|
 |`--dataDirectory`|`-dd`|Directory name with data for import<br />**Required**|
-|`--verbose`|`-v`|Output more diagnostic information during data import/export|
+|`--verbose`|`-v`|Output more diagnostic information during data import/export<br />This parameter requires no value. It is a switch.|
 |`--environment`|`-env`|Environment (id, org id, url, unique name or partial name)|
 
 [!INCLUDE [data-import-remarks](includes/data-import-remarks.md)]
