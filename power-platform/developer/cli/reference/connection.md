@@ -40,7 +40,7 @@ List all Connections from the passed environment.
 > [!div class="mx-tdCol2BreakAll"]
 > |--Parameter/<br />-Alias|Description|
 > |---------|---------|
-> |`&#8209;&#8209;environment&#8209;id`/<br />`-id`|Id of the environment that has connections.<br />**Required**|
+> |`‑‑environment‑id`/<br />`-id`|Id of the environment that has connections.<br />**Required**|
 
 [!INCLUDE [connection-list-remarks](includes/connection-list-remarks.md)]
 
