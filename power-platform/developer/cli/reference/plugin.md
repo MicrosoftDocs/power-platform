@@ -40,9 +40,9 @@ Initializes a directory with a new Dataverse plugin class library.
 > [!div class="mx-tdCol2BreakAll"]
 > |--Parameter/<br />-Alias|Description|
 > |---------|---------|
-> |`--signing-key-file-path`/<br />`-sk`|Relative path to the Dataverse plugin assembly originator key file for signing.|
-> |`--outputDirectory`/<br />`-o`|Output directory|
-> |`--author`/<br />`-a`|Author(s) of the Dataverse Plug-in Package.|
+> |`&#8209;&#8209;signing&#8209;key&#8209;file&#8209;path`/<br />`-sk`|Relative path to the Dataverse plugin assembly originator key file for signing.|
+> |`&#8209;&#8209;outputDirectory`/<br />`-o`|Output directory|
+> |`&#8209;&#8209;author`/<br />`-a`|Author(s) of the Dataverse Plug-in Package.|
 
 [!INCLUDE [plugin-init-remarks](includes/plugin-init-remarks.md)]
 

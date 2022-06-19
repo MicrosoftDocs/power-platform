@@ -42,7 +42,7 @@ Launch Configuration Migration Tool
 > [!div class="mx-tdCol2BreakAll"]
 > |--Parameter/<br />-Alias|Description|
 > |---------|---------|
-> |`--install`/<br />`-i`|Install latest version.<br />This parameter requires no value. It is a switch.|
+> |`&#8209;&#8209;install`/<br />`-i`|Install latest version.<br />This parameter requires no value. It is a switch.|
 
 [!INCLUDE [tool-cmt-remarks](includes/tool-cmt-remarks.md)]
 
@@ -57,7 +57,7 @@ Launch Package Deployer
 > [!div class="mx-tdCol2BreakAll"]
 > |--Parameter/<br />-Alias|Description|
 > |---------|---------|
-> |`--install`/<br />`-i`|Install latest version.<br />This parameter requires no value. It is a switch.|
+> |`&#8209;&#8209;install`/<br />`-i`|Install latest version.<br />This parameter requires no value. It is a switch.|
 
 [!INCLUDE [tool-pd-remarks](includes/tool-pd-remarks.md)]
 
@@ -72,7 +72,7 @@ Launch Plugin Registration Tool
 > [!div class="mx-tdCol2BreakAll"]
 > |--Parameter/<br />-Alias|Description|
 > |---------|---------|
-> |`--install`/<br />`-i`|Install latest version.<br />This parameter requires no value. It is a switch.|
+> |`&#8209;&#8209;install`/<br />`-i`|Install latest version.<br />This parameter requires no value. It is a switch.|
 
 [!INCLUDE [tool-prt-remarks](includes/tool-prt-remarks.md)]
 
