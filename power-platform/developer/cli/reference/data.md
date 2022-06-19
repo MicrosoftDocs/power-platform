@@ -38,14 +38,14 @@ Export data
 
 ### data export Parameters
 
-[!div class="mx-tdCol2BreakAll"]
-|Parameter<br />Alias|Description|
-|---------|---------|
-|`--schemaFile`<br />`-sf`|Schema file name. It can be created using Configuration Migration Tool<br />**Required**|
-|`--dataFile`<br />`-df`|File name for data zip file. Default data.zip|
-|`--overwrite`<br />`-o`|Allow overwrite output data file if it already exists<br />This parameter requires no value. It is a switch.|
-|`--verbose`<br />`-v`|Output more diagnostic information during data import/export<br />This parameter requires no value. It is a switch.|
-|`--environment`<br />`-env`|Environment (id, org id, url, unique name or partial name)|
+> [!div class="mx-tdCol2BreakAll"]
+> |Parameter<br />Alias|Description|
+> |---------|---------|
+> |`--schemaFile`<br />`-sf`|Schema file name. It can be created using Configuration Migration Tool<br />**Required**|
+> |`--dataFile`<br />`-df`|File name for data zip file. Default data.zip|
+> |`--overwrite`<br />`-o`|Allow overwrite output data file if it already exists<br />This parameter requires no value. It is a switch.|
+> |`--verbose`<br />`-v`|Output more diagnostic information during data import/export<br />This parameter requires no value. It is a switch.|
+> |`--environment`<br />`-env`|Environment (id, org id, url, unique name or partial name)|
 
 [!INCLUDE [data-export-remarks](includes/data-export-remarks.md)]
 
@@ -57,12 +57,12 @@ Import data
 
 ### data import Parameters
 
-[!div class="mx-tdCol2BreakAll"]
-|Parameter<br />Alias|Description|
-|---------|---------|
-|`--dataDirectory`<br />`-dd`|Directory name with data for import<br />**Required**|
-|`--verbose`<br />`-v`|Output more diagnostic information during data import/export<br />This parameter requires no value. It is a switch.|
-|`--environment`<br />`-env`|Environment (id, org id, url, unique name or partial name)|
+> [!div class="mx-tdCol2BreakAll"]
+> |Parameter<br />Alias|Description|
+> |---------|---------|
+> |`--dataDirectory`<br />`-dd`|Directory name with data for import<br />**Required**|
+> |`--verbose`<br />`-v`|Output more diagnostic information during data import/export<br />This parameter requires no value. It is a switch.|
+> |`--environment`<br />`-env`|Environment (id, org id, url, unique name or partial name)|
 
 [!INCLUDE [data-import-remarks](includes/data-import-remarks.md)]
 

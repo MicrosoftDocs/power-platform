@@ -37,10 +37,10 @@ List all Connections from the passed environment.
 
 ### connection list Parameters
 
-[!div class="mx-tdCol2BreakAll"]
-|Parameter<br />Alias|Description|
-|---------|---------|
-|`--environment-id`<br />`-id`|Id of the environment that has connections.<br />**Required**|
+> [!div class="mx-tdCol2BreakAll"]
+> |Parameter<br />Alias|Description|
+> |---------|---------|
+> |`--environment-id`<br />`-id`|Id of the environment that has connections.<br />**Required**|
 
 [!INCLUDE [connection-list-remarks](includes/connection-list-remarks.md)]
 
