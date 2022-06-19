@@ -26,8 +26,8 @@ Commands for working with PowerApps Studio online service
 
 |Command|Description|
 |---------|---------|
-|[pac portal pubs](#pac-portal-pubs)|Commands to list publishers for current user|
 |[pac portal apps](#pac-portal-apps)|Commands to list applications and download counts for current user|
+|[pac portal pubs](#pac-portal-pubs)|Commands to list publishers for current user|
 
 
 ## pac portal apps

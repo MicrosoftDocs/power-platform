@@ -26,9 +26,9 @@ Operating with Power Apps .msapp files
 
 |Command|Description|
 |---------|---------|
+|[pac canvas create](#pac-canvas-create)|(Preview) Generate Power App from custom connector|
 |[pac canvas pack](#pac-canvas-pack)|(Preview) Pack sources into an msapp file|
 |[pac canvas unpack](#pac-canvas-unpack)|(Preview) Extract an msapp file into sources|
-|[pac canvas create](#pac-canvas-create)|(Preview) Generate Power App from custom connector|
 
 
 ## pac canvas create

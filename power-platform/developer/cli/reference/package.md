@@ -26,11 +26,11 @@ Commands for working with Dataverse package projects
 
 |Command|Description|
 |---------|---------|
-|[pac package init](#pac-package-init)|Initializes a directory with a new Dataverse package project|
 |[pac package add-external-package](#pac-package-add-external-package)|Adds an external package to a PD Package project|
-|[pac package add-solution](#pac-package-add-solution)|Adds a prebuilt Dataverse solution file to a PD Package project|
 |[pac package add-reference](#pac-package-add-reference)|Adds reference to Dataverse solution project|
+|[pac package add-solution](#pac-package-add-solution)|Adds a prebuilt Dataverse solution file to a PD Package project|
 |[pac package deploy](#pac-package-deploy)|Deploys package to Dataverse environment|
+|[pac package init](#pac-package-init)|Initializes a directory with a new Dataverse package project|
 |[pac package show](#pac-package-show)|Shows details of Dataverse package|
 
 

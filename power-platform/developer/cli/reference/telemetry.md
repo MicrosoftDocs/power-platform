@@ -26,8 +26,8 @@ Manage telemetry settings
 
 |Command|Description|
 |---------|---------|
-|[pac telemetry enable](#pac-telemetry-enable)|Choose to send usage information to help Microsoft improve this product|
 |[pac telemetry disable](#pac-telemetry-disable)|Choose to not send usage information to help Microsoft improve this product|
+|[pac telemetry enable](#pac-telemetry-enable)|Choose to send usage information to help Microsoft improve this product|
 |[pac telemetry status](#pac-telemetry-status)|Show the current status of telemetry|
 
 

@@ -26,13 +26,13 @@ Manage how you authenticate to various services
 
 |Command|Description|
 |---------|---------|
-|[pac auth create](#pac-auth-create)|Create and store authentication profiles on this computer|
-|[pac auth list](#pac-auth-list)|List the authentication profiles stored on this computer|
-|[pac auth select](#pac-auth-select)|Select which authentication profile should be active|
-|[pac auth delete](#pac-auth-delete)|Delete a particular authentication profile|
-|[pac auth update](#pac-auth-update)|Update name or target environment of an existing authentication profile|
-|[pac auth name](#pac-auth-name)|Name or rename an existing authentication profile|
 |[pac auth clear](#pac-auth-clear)|Clear all authentication profiles stored on this computer|
+|[pac auth create](#pac-auth-create)|Create and store authentication profiles on this computer|
+|[pac auth delete](#pac-auth-delete)|Delete a particular authentication profile|
+|[pac auth list](#pac-auth-list)|List the authentication profiles stored on this computer|
+|[pac auth name](#pac-auth-name)|Name or rename an existing authentication profile|
+|[pac auth select](#pac-auth-select)|Select which authentication profile should be active|
+|[pac auth update](#pac-auth-update)|Update name or target environment of an existing authentication profile|
 
 
 ## pac auth clear

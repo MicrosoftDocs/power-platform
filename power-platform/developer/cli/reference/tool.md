@@ -26,9 +26,9 @@ Power Platform tools that can be installed and launched
 
 |Command|Description|
 |---------|---------|
-|[pac tool prt](#pac-tool-prt)|Launch Plugin Registration Tool|
 |[pac tool cmt](#pac-tool-cmt)|Launch Configuration Migration Tool|
 |[pac tool pd](#pac-tool-pd)|Launch Package Deployer|
+|[pac tool prt](#pac-tool-prt)|Launch Plugin Registration Tool|
 
 
 ## pac tool cmt

@@ -26,12 +26,12 @@ Commands for working with PowerApps portal website
 
 |Command|Description|
 |---------|---------|
-|[pac paportal list](#pac-paportal-list)|List all portal websites from the current Dataverse Organization|
-|[pac paportal download](#pac-paportal-download)|Download portal website content from the current Dataverse Organization|
-|[pac paportal upload](#pac-paportal-upload)|Upload portal website content to current Dataverse Organization|
 |[pac paportal bundle](#pac-paportal-bundle)|Bundle portal website content in CMT supported XML format|
-|[pac paportal reguid](#pac-paportal-reguid)|Assigns new guid to primary key attribute for all records of a website|
+|[pac paportal download](#pac-paportal-download)|Download portal website content from the current Dataverse Organization|
+|[pac paportal list](#pac-paportal-list)|List all portal websites from the current Dataverse Organization|
 |[pac paportal mergelocale](#pac-paportal-mergelocale)|Merges localized content back to portal yaml files|
+|[pac paportal reguid](#pac-paportal-reguid)|Assigns new guid to primary key attribute for all records of a website|
+|[pac paportal upload](#pac-paportal-upload)|Upload portal website content to current Dataverse Organization|
 
 
 ## pac paportal bundle

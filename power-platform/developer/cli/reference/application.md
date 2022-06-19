@@ -26,8 +26,8 @@ Commands for listing and installing available Dataverse applications from AppSou
 
 |Command|Description|
 |---------|---------|
-|[pac application list](#pac-application-list)|List available Dataverse applications from AppSource|
 |[pac application install](#pac-application-install)|Installs Dataverse application to given environment|
+|[pac application list](#pac-application-list)|List available Dataverse applications from AppSource|
 
 
 ## pac application install

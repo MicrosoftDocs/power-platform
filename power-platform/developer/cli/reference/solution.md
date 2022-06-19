@@ -26,24 +26,24 @@ Commands for working with Dataverse solution projects
 
 |Command|Description|
 |---------|---------|
-|[pac solution init](#pac-solution-init)|Initializes a directory with a new Dataverse solution project|
-|[pac solution add-reference](#pac-solution-add-reference)|Adds a reference from the project in the current directory to the project at 'path'|
-|[pac solution list](#pac-solution-list)|List all Solutions from the current Dataverse Organization|
-|[pac solution delete](#pac-solution-delete)|Delete Dataverse Solution from the current Dataverse Environment|
-|[pac solution online-version](#pac-solution-online-version)|Sets version for solution loaded in Dataverse environment.|
-|[pac solution version](#pac-solution-version)|Update build or revision version for solution|
-|[pac solution import](#pac-solution-import)|Import the Dataverse Solution into the current Dataverse Environment|
-|[pac solution export](#pac-solution-export)|Export a Dataverse Solution from the current Dataverse Environment|
-|[pac solution clone](#pac-solution-clone)|Create a solution project based on an existing solution in your Organization|
-|[pac solution publish](#pac-solution-publish)|Publishes all customizations|
-|[pac solution upgrade](#pac-solution-upgrade)|Option to stage the Dataverse solution for upgrade|
 |[pac solution add-license](#pac-solution-add-license)|Add license and plan info to solution|
-|[pac solution check](#pac-solution-check)|Upload a Dataverse Solution project to run against the PowerApps Checker Service|
-|[pac solution create-settings](#pac-solution-create-settings)|Create a settings file from solution zip or solution folder.|
-|[pac solution pack](#pac-solution-pack)|Package solution components on local filesystem into solution.zip (SolutionPackager)|
-|[pac solution unpack](#pac-solution-unpack)|Extract solution components from solution.zip onto local filesystem (SolutionPackager)|
+|[pac solution add-reference](#pac-solution-add-reference)|Adds a reference from the project in the current directory to the project at 'path'|
 |[pac solution add-solution-component](#pac-solution-add-solution-component)|Adds a solution component to the target unmanaged solution in the connected Dataverse environment|
+|[pac solution check](#pac-solution-check)|Upload a Dataverse Solution project to run against the PowerApps Checker Service|
+|[pac solution clone](#pac-solution-clone)|Create a solution project based on an existing solution in your Organization|
+|[pac solution create-settings](#pac-solution-create-settings)|Create a settings file from solution zip or solution folder.|
+|[pac solution delete](#pac-solution-delete)|Delete Dataverse Solution from the current Dataverse Environment|
+|[pac solution export](#pac-solution-export)|Export a Dataverse Solution from the current Dataverse Environment|
+|[pac solution import](#pac-solution-import)|Import the Dataverse Solution into the current Dataverse Environment|
+|[pac solution init](#pac-solution-init)|Initializes a directory with a new Dataverse solution project|
+|[pac solution list](#pac-solution-list)|List all Solutions from the current Dataverse Organization|
+|[pac solution online-version](#pac-solution-online-version)|Sets version for solution loaded in Dataverse environment.|
+|[pac solution pack](#pac-solution-pack)|Package solution components on local filesystem into solution.zip (SolutionPackager)|
+|[pac solution publish](#pac-solution-publish)|Publishes all customizations|
 |[pac solution sync](#pac-solution-sync)|Sync the current Dataverse solution project to the current state of the solution in your Organization.|
+|[pac solution unpack](#pac-solution-unpack)|Extract solution components from solution.zip onto local filesystem (SolutionPackager)|
+|[pac solution upgrade](#pac-solution-upgrade)|Option to stage the Dataverse solution for upgrade|
+|[pac solution version](#pac-solution-version)|Update build or revision version for solution|
 
 
 ## pac solution add-license

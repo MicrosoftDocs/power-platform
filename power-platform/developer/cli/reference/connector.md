@@ -26,9 +26,9 @@ Commands for working with Power Apps Connectors
 
 |Command|Description|
 |---------|---------|
-|[pac connector list](#pac-connector-list)|List the Connectors registered in the Dataverse environment|
-|[pac connector download-api-definition](#pac-connector-download-api-definition)|Download a Connector's OpenApiDefinition file|
 |[pac connector create](#pac-connector-create)|Creates a new row in the Connector table in the Dataverse environment.|
+|[pac connector download-api-definition](#pac-connector-download-api-definition)|Download a Connector's OpenApiDefinition file|
+|[pac connector list](#pac-connector-list)|List the Connectors registered in the Dataverse environment|
 |[pac connector update](#pac-connector-update)|Updates a Connector Entity in the Dataverse environment.|
 
 

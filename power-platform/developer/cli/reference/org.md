@@ -26,10 +26,10 @@ Work with your Dataverse Organization
 
 |Command|Description|
 |---------|---------|
-|[pac org who](#pac-org-who)|Displays information about the current Dataverse Organization|
 |[pac org entity](#pac-org-entity)|Get information about an entity in Dataverse|
-|[pac org query](#pac-org-query)|Display the results of a query against Dataverse|
 |[pac org list](#pac-org-list)|Lists all of the Dataverse Organizations the user has access to|
+|[pac org query](#pac-org-query)|Display the results of a query against Dataverse|
+|[pac org who](#pac-org-who)|Displays information about the current Dataverse Organization|
 
 
 ## pac org entity

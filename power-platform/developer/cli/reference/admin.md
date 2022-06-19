@@ -26,16 +26,16 @@ Work with your PowerPlatform Admin Account
 
 |Command|Description|
 |---------|---------|
-|[pac admin list](#pac-admin-list)|List all environments from your tenant|
-|[pac admin create](#pac-admin-create)|Creates a Dataverse Environment in your tenant.|
-|[pac admin backup](#pac-admin-backup)|Takes a manual backup of your environment.|
-|[pac admin delete](#pac-admin-delete)|Deletes Environment from your tenant|
-|[pac admin reset](#pac-admin-reset)|Reset environment from your tenant|
-|[pac admin list-backups](#pac-admin-list-backups)|Lists all backups of your environment.|
-|[pac admin restore](#pac-admin-restore)|Restores an environment to a given backup.|
-|[pac admin copy](#pac-admin-copy)|Copy Source Environment to Destination Environment|
-|[pac admin status](#pac-admin-status)|This command will list the status of all the operations in progress.|
 |[pac admin assign-user](#pac-admin-assign-user)|Assign a user to a target environment.|
+|[pac admin backup](#pac-admin-backup)|Takes a manual backup of your environment.|
+|[pac admin copy](#pac-admin-copy)|Copy Source Environment to Destination Environment|
+|[pac admin create](#pac-admin-create)|Creates a Dataverse Environment in your tenant.|
+|[pac admin delete](#pac-admin-delete)|Deletes Environment from your tenant|
+|[pac admin list](#pac-admin-list)|List all environments from your tenant|
+|[pac admin list-backups](#pac-admin-list-backups)|Lists all backups of your environment.|
+|[pac admin reset](#pac-admin-reset)|Reset environment from your tenant|
+|[pac admin restore](#pac-admin-restore)|Restores an environment to a given backup.|
+|[pac admin status](#pac-admin-status)|This command will list the status of all the operations in progress.|
 
 
 ## pac admin assign-user
