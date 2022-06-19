@@ -56,8 +56,8 @@ Initializes a directory with a new Dataverse solution project
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--publisher-name`|`-pn`|Name of the Dataverse solution publisher<br />**Required**<br />Validation: Only characters within the ranges [A - Z], [a - z], [0 - 9], or _ are allowed. The first character may only be in the ranges [A - Z], [a - z], or _.|
-|`--publisher-prefix`|`-pp`|Customization prefix value for the Dataverse solution publisher<br />**Required**<br />Validation: The prefix must be 2 to 8 characters long, can only consist of alpha-numerics, must start with a letter, and cannot start with 'mscrm'.|
+|`--publisher-name`|`-pn`|Name of the Dataverse solution publisher<br />**Required**<br /><br />Validation Error: Only characters within the ranges [A - Z], [a - z], [0 - 9], or _ are allowed. The first character may only be in the ranges [A - Z], [a - z], or _.|
+|`--publisher-prefix`|`-pp`|Customization prefix value for the Dataverse solution publisher<br />**Required**<br /><br />Validation Error: The prefix must be 2 to 8 characters long, can only consist of alpha-numerics, must start with a letter, and cannot start with 'mscrm'.|
 |`--outputDirectory`|`-o`|Output directory|
 
 [!INCLUDE [solution-init-remarks](includes/solution-init-remarks.md)]
@@ -132,8 +132,8 @@ Update build or revision version for solution
 |---------|---------|---------|
 |`--strategy`|`-s`|Updates build version for 'Solution.xml' file using specified strategy. If using gittags, set personal access token in the following environment variable "PacCli.PAT"<br />Use one of these values:<br />- `gittags`<br />- `filetracking`<br />- `solution`|
 |`--patchversion`|`-pv`|**Deprecated** This parameter will be ignored.<br />Patch version for solution|
-|`--buildversion`|`-bv`|Build version for solution<br />Validation: The value must be a positive integer|
-|`--revisionversion`|`-rv`|Revision version for solution<br />Validation: The value must be a positive integer|
+|`--buildversion`|`-bv`|Build version for solution<br /><br />Validation Error: The value must be a positive integer|
+|`--revisionversion`|`-rv`|Revision version for solution<br /><br />Validation Error: The value must be a positive integer|
 |`--filename`|`-fn`|Tracker CSV file name to be used when using filetracking as a strategy. Default value is ControlsStateVersionInfo.csv|
 
 [!INCLUDE [solution-version-remarks](includes/solution-version-remarks.md)]

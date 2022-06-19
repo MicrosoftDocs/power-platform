@@ -45,7 +45,7 @@ Create and store authentication profiles on this computer
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--name`|`-n`|The name you want to give to this authentication profile (maximum 12 characters)<br />Validation: The length of the name should be between 1 and 30|
+|`--name`|`-n`|The name you want to give to this authentication profile (maximum 12 characters)<br /><br />Validation Error: The length of the name should be between 1 and 30|
 |`--kind`|`-k`|**Deprecated** This parameter will be ignored.<br />The kind of authentication profile you are creating|
 |`--url`|`-u`|The resource URL to connect to|
 |`--username`|`-un`|Optional: The username to authenticate with; shows AAD dialog if not specified|
@@ -75,8 +75,8 @@ Select which authentication profile should be active
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--index`|`-i`|The index of the profile to be active<br />Validation: The value must be a positive integer|
-|`--name`|`-n`|The name of the profile to be active<br />Validation: The length of the name should be between 1 and 30|
+|`--index`|`-i`|The index of the profile to be active<br /><br />Validation Error: The value must be a positive integer|
+|`--name`|`-n`|The name of the profile to be active<br /><br />Validation Error: The length of the name should be between 1 and 30|
 
 [!INCLUDE [auth-select-remarks](includes/auth-select-remarks.md)]
 
@@ -90,8 +90,8 @@ Delete a particular authentication profile
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--index`|`-i`|The index of the profile to be deleted<br />Validation: The value must be a positive integer|
-|`--name`|`-n`|The name of the profile to be active<br />Validation: The length of the name should be between 1 and 30|
+|`--index`|`-i`|The index of the profile to be deleted<br /><br />Validation Error: The value must be a positive integer|
+|`--name`|`-n`|The name of the profile to be active<br /><br />Validation Error: The length of the name should be between 1 and 30|
 
 [!INCLUDE [auth-delete-remarks](includes/auth-delete-remarks.md)]
 
@@ -105,7 +105,7 @@ Update name or target environment of an existing authentication profile
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--index`|`-i`|The index of the profile to be named/renamed<br />**Required**<br />Validation: The value must be a positive integer|
+|`--index`|`-i`|The index of the profile to be named/renamed<br />**Required**<br /><br />Validation Error: The value must be a positive integer|
 |`--name`|`-n`|The name you want to give to this authentication profile (maximum 12 characters)|
 |`--environment`|`-env`|Default environment (id, url, unique name or partial name)|
 
@@ -121,8 +121,8 @@ Name or rename an existing authentication profile
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--index`|`-i`|The index of the profile to be named/renamed<br />**Required**<br />Validation: The value must be a positive integer|
-|`--name`|`-n`|The name you want to give to this authentication profile (maximum 12 characters)<br />**Required**<br />Validation: The length of the name should be between 1 and 30|
+|`--index`|`-i`|The index of the profile to be named/renamed<br />**Required**<br /><br />Validation Error: The value must be a positive integer|
+|`--name`|`-n`|The name you want to give to this authentication profile (maximum 12 characters)<br />**Required**<br /><br />Validation Error: The length of the name should be between 1 and 30|
 
 [!INCLUDE [auth-name-remarks](includes/auth-name-remarks.md)]
 
