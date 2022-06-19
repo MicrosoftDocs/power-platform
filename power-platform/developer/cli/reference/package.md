@@ -42,13 +42,13 @@ Adds an external package to a PD Package project
 
 ### package add-external-package Parameters
 
-[!div class="mx-tdCol2BreakAll"]
-|Parameter<br />Alias|Description|
-|---------|---------|
-|`--path`<br />`-p`|Path to the external package<br />**Required**|
-|`--package-type`<br />`-t`|The type of the package being added. e.g. 'xpp' for FnO packages.<br />**Required**|
-|`--import-order`<br />|A whole number that indicates the order to insert this item into the final ImportConfig.xml file at build time. Negative numbers are inserted before existing elements. Positive numbers are added after existing elements.|
-|`--skip-validation`<br />`-sv`|Adds the item to the project file even if the file does not exist or appears to be invalid. Note, this will not affect any validation that is performed by MSBuild.<br />This parameter requires no value. It is a switch.|
+> [!div class="mx-tdCol2BreakAll"]
+> |Parameter<br />Alias|Description|
+> |---------|---------|
+> |`--path`<br />`-p`|Path to the external package<br />**Required**|
+> |`--package-type`<br />`-t`|The type of the package being added. e.g. 'xpp' for FnO packages.<br />**Required**|
+> |`--import-order`<br />|A whole number that indicates the order to insert this item into the final ImportConfig.xml file at build time. Negative numbers are inserted before existing elements. Positive numbers are added after existing elements.|
+> |`--skip-validation`<br />`-sv`|Adds the item to the project file even if the file does not exist or appears to be invalid. Note, this will not affect any validation that is performed by MSBuild.<br />This parameter requires no value. It is a switch.|
 
 [!INCLUDE [package-add-external-package-remarks](includes/package-add-external-package-remarks.md)]
 
