@@ -30,21 +30,6 @@ Commands for listing and installing available Dataverse applications from AppSou
 |[pac application install](#pac-application-install)|Installs Dataverse application to given environment|
 
 
-## pac application list
-
-List available Dataverse applications from AppSource
-
-[!INCLUDE [application-list-intro](includes/application-list-intro.md)]
-
-### application list Parameters
-
-|Parameter|Alias|Description|
-|---------|---------|---------|
-|`--environment-id`|`-id`|List available Dataverse applications for given environment; if not specified, list all applications in the tenant (default: list for all environments)|
-|`--output`|`-o`|Location of the JSON file to be created with list of the Dataverse applications from AppSource|
-
-[!INCLUDE [application-list-remarks](includes/application-list-remarks.md)]
-
 ## pac application install
 
 Installs Dataverse application to given environment
@@ -60,6 +45,21 @@ Installs Dataverse application to given environment
 |`--application-list`|`-al`|Location of the JSON file with list of the Dataverse applications from AppSource to be installed|
 
 [!INCLUDE [application-install-remarks](includes/application-install-remarks.md)]
+
+## pac application list
+
+List available Dataverse applications from AppSource
+
+[!INCLUDE [application-list-intro](includes/application-list-intro.md)]
+
+### application list Parameters
+
+|Parameter|Alias|Description|
+|---------|---------|---------|
+|`--environment-id`|`-id`|List available Dataverse applications for given environment; if not specified, list all applications in the tenant (default: list for all environments)|
+|`--output`|`-o`|Location of the JSON file to be created with list of the Dataverse applications from AppSource|
+
+[!INCLUDE [application-list-remarks](includes/application-list-remarks.md)]
 
 [!INCLUDE [application-remarks](includes/application-remarks.md)]
 

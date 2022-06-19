@@ -32,19 +32,22 @@ Commands for working with Power Apps Connectors
 |[pac connector update](#pac-connector-update)|Updates a Connector Entity in the Dataverse environment.|
 
 
-## pac connector list
+## pac connector create
 
-List the Connectors registered in the Dataverse environment
+Creates a new row in the Connector table in the Dataverse environment.
 
-[!INCLUDE [connector-list-intro](includes/connector-list-intro.md)]
+[!INCLUDE [connector-create-intro](includes/connector-create-intro.md)]
 
-### connector list Parameters
+### connector create Parameters
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
+|`--name`|`-n`|The Name of the Connector<br />**Required**<br />**Note**: start with a alphanumeric prefix with length between 2~8 and followed by  '_' and alphanumeric name|
+|`--display-name`|`-dn`|The display name of the Connector<br />**Required**|
+|`--api-definition-file`|`-f`|The filename and path to read the the Connector's OpenApiDefinition.<br />**Required**|
 |`--environment`|`-env`|The target Environment ID or URL.  Default value is the environment of your currently active Dataverse Auth Profile.|
 
-[!INCLUDE [connector-list-remarks](includes/connector-list-remarks.md)]
+[!INCLUDE [connector-create-remarks](includes/connector-create-remarks.md)]
 
 ## pac connector download-api-definition
 
@@ -62,22 +65,19 @@ Download a Connector's OpenApiDefinition file
 
 [!INCLUDE [connector-download-api-definition-remarks](includes/connector-download-api-definition-remarks.md)]
 
-## pac connector create
+## pac connector list
 
-Creates a new row in the Connector table in the Dataverse environment.
+List the Connectors registered in the Dataverse environment
 
-[!INCLUDE [connector-create-intro](includes/connector-create-intro.md)]
+[!INCLUDE [connector-list-intro](includes/connector-list-intro.md)]
 
-### connector create Parameters
+### connector list Parameters
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--name`|`-n`|The Name of the Connector<br />**Required**<br />**Note**: start with a alphanumeric prefix with length between 2~8 and followed by  '_' and alphanumeric name|
-|`--display-name`|`-dn`|The display name of the Connector<br />**Required**|
-|`--api-definition-file`|`-f`|The filename and path to read the the Connector's OpenApiDefinition.<br />**Required**|
 |`--environment`|`-env`|The target Environment ID or URL.  Default value is the environment of your currently active Dataverse Auth Profile.|
 
-[!INCLUDE [connector-create-remarks](includes/connector-create-remarks.md)]
+[!INCLUDE [connector-list-remarks](includes/connector-list-remarks.md)]
 
 ## pac connector update
 

@@ -31,17 +31,17 @@ Manage telemetry settings
 |[pac telemetry status](#pac-telemetry-status)|Show the current status of telemetry|
 
 
-## pac telemetry enable
-
-Choose to send usage information to help Microsoft improve this product
-
-[!INCLUDE [telemetry-enable-remarks](includes/telemetry-enable-remarks.md)]
-
 ## pac telemetry disable
 
 Choose to not send usage information to help Microsoft improve this product
 
 [!INCLUDE [telemetry-disable-remarks](includes/telemetry-disable-remarks.md)]
+
+## pac telemetry enable
+
+Choose to send usage information to help Microsoft improve this product
+
+[!INCLUDE [telemetry-enable-remarks](includes/telemetry-enable-remarks.md)]
 
 ## pac telemetry status
 

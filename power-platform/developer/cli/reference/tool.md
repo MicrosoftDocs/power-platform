@@ -31,20 +31,6 @@ Power Platform tools that can be installed and launched
 |[pac tool pd](#pac-tool-pd)|Launch Package Deployer|
 
 
-## pac tool prt
-
-Launch Plugin Registration Tool
-
-[!INCLUDE [tool-prt-intro](includes/tool-prt-intro.md)]
-
-### tool prt Parameters
-
-|Parameter|Alias|Description|
-|---------|---------|---------|
-|`--install`|`-i`|Install latest version.<br />This parameter requires no value. It is a switch.|
-
-[!INCLUDE [tool-prt-remarks](includes/tool-prt-remarks.md)]
-
 ## pac tool cmt
 
 Launch Configuration Migration Tool
@@ -72,6 +58,20 @@ Launch Package Deployer
 |`--install`|`-i`|Install latest version.<br />This parameter requires no value. It is a switch.|
 
 [!INCLUDE [tool-pd-remarks](includes/tool-pd-remarks.md)]
+
+## pac tool prt
+
+Launch Plugin Registration Tool
+
+[!INCLUDE [tool-prt-intro](includes/tool-prt-intro.md)]
+
+### tool prt Parameters
+
+|Parameter|Alias|Description|
+|---------|---------|---------|
+|`--install`|`-i`|Install latest version.<br />This parameter requires no value. It is a switch.|
+
+[!INCLUDE [tool-prt-remarks](includes/tool-prt-remarks.md)]
 
 [!INCLUDE [tool-remarks](includes/tool-remarks.md)]
 

@@ -38,24 +38,62 @@ Work with your PowerPlatform Admin Account
 |[pac admin assign-user](#pac-admin-assign-user)|Assign a user to a target environment.|
 
 
-## pac admin list
+## pac admin assign-user
 
-List all environments from your tenant
+Assign a user to a target environment.
 
-[!INCLUDE [admin-list-intro](includes/admin-list-intro.md)]
+[!INCLUDE [admin-assign-user-intro](includes/admin-assign-user-intro.md)]
 
-### admin list Parameters
+### admin assign-user Parameters
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--environment`|`-env`|List all environments that contain given string in their name or id.|
-|`--environment-id`|`-id`|**Deprecated**: Use `--environment` instead.|
-|`--url`|`-u`|**Deprecated**: Use `--environment` instead.|
-|`--type`|`-t`|List all environments with the given type.<br />Use one of these values:<br />- `Trial`<br />- `Sandbox`<br />- `Production`<br />- `Developer`<br />- `Teams`<br />- `SubscriptionBasedTrial`|
-|`--name`|`-n`|List all environments that contain given string in their name.|
-|`--organization-id`|`-oi`|List all environments that contain given string in their organization id.|
+|`--environment`|`-env`|ID or URL of the environment to assign a user to.<br />**Required**|
+|`--user`|`-u`|Object ID of AAD user to be assigned to environment<br />**Required**|
+|`--role`|`-r`|Name or ID of security role to be applied to user<br />**Required**|
+|`--async`|`-a`|Optional boolean argument to run pac verbs asynchronously, defaults to false.<br />This parameter requires no value. It is a switch.|
 
-[!INCLUDE [admin-list-remarks](includes/admin-list-remarks.md)]
+[!INCLUDE [admin-assign-user-remarks](includes/admin-assign-user-remarks.md)]
+
+## pac admin backup
+
+Takes a manual backup of your environment.
+
+[!INCLUDE [admin-backup-intro](includes/admin-backup-intro.md)]
+
+### admin backup Parameters
+
+|Parameter|Alias|Description|
+|---------|---------|---------|
+|`--environment`|`-env`|Environment URL or ID of the Environment that requires backup.|
+|`--url`|`-u`|**Deprecated**: Use `--environment` instead.|
+|`--label`|`-l`|**Deprecated**: This parameter will be ignored.|
+|`--environment-id`|`-id`|**Deprecated**: Use `--environment` instead.|
+|`--notes`|`-n`|**Deprecated**: This parameter will be ignored.|
+
+[!INCLUDE [admin-backup-remarks](includes/admin-backup-remarks.md)]
+
+## pac admin copy
+
+Copy Source Environment to Destination Environment
+
+[!INCLUDE [admin-copy-intro](includes/admin-copy-intro.md)]
+
+### admin copy Parameters
+
+|Parameter|Alias|Description|
+|---------|---------|---------|
+|`--source-env`|`-se`|Environment URL or ID of the source environment that is being copied|
+|`--target-env`|`-te`|Environment URL or ID of the target environment|
+|`--source-url`|`-su`|**Deprecated**: Use `--source-env` instead.|
+|`--target-url`|`-tu`|**Deprecated**: Use `--target-env` instead.|
+|`--source-id`|`-si`|**Deprecated**: Use `--source-env` instead.|
+|`--target-id`|`-ti`|**Deprecated**: Use `--target-env` instead.|
+|`--name`|`-n`|Name of the target environment|
+|`--type`|`-t`|Use one of these values:<br />- `MinimalCopy`<br />- `FullCopy`|
+|`--async`|`-a`|Optional boolean argument to run pac verbs asynchronously, defaults to false.<br />This parameter requires no value. It is a switch.|
+
+[!INCLUDE [admin-copy-remarks](includes/admin-copy-remarks.md)]
 
 ## pac admin create
 
@@ -80,24 +118,6 @@ Creates a Dataverse Environment in your tenant.
 
 [!INCLUDE [admin-create-remarks](includes/admin-create-remarks.md)]
 
-## pac admin backup
-
-Takes a manual backup of your environment.
-
-[!INCLUDE [admin-backup-intro](includes/admin-backup-intro.md)]
-
-### admin backup Parameters
-
-|Parameter|Alias|Description|
-|---------|---------|---------|
-|`--environment`|`-env`|Environment URL or ID of the Environment that requires backup.|
-|`--url`|`-u`|**Deprecated**: Use `--environment` instead.|
-|`--label`|`-l`|**Deprecated**: This parameter will be ignored.|
-|`--environment-id`|`-id`|**Deprecated**: Use `--environment` instead.|
-|`--notes`|`-n`|**Deprecated**: This parameter will be ignored.|
-
-[!INCLUDE [admin-backup-remarks](includes/admin-backup-remarks.md)]
-
 ## pac admin delete
 
 Deletes Environment from your tenant
@@ -114,6 +134,41 @@ Deletes Environment from your tenant
 |`--async`|`-a`|Optional boolean argument to run pac verbs asynchronously, defaults to false.<br />This parameter requires no value. It is a switch.|
 
 [!INCLUDE [admin-delete-remarks](includes/admin-delete-remarks.md)]
+
+## pac admin list
+
+List all environments from your tenant
+
+[!INCLUDE [admin-list-intro](includes/admin-list-intro.md)]
+
+### admin list Parameters
+
+|Parameter|Alias|Description|
+|---------|---------|---------|
+|`--environment`|`-env`|List all environments that contain given string in their name or id.|
+|`--environment-id`|`-id`|**Deprecated**: Use `--environment` instead.|
+|`--url`|`-u`|**Deprecated**: Use `--environment` instead.|
+|`--type`|`-t`|List all environments with the given type.<br />Use one of these values:<br />- `Trial`<br />- `Sandbox`<br />- `Production`<br />- `Developer`<br />- `Teams`<br />- `SubscriptionBasedTrial`|
+|`--name`|`-n`|List all environments that contain given string in their name.|
+|`--organization-id`|`-oi`|List all environments that contain given string in their organization id.|
+
+[!INCLUDE [admin-list-remarks](includes/admin-list-remarks.md)]
+
+## pac admin list-backups
+
+Lists all backups of your environment.
+
+[!INCLUDE [admin-list-backups-intro](includes/admin-list-backups-intro.md)]
+
+### admin list-backups Parameters
+
+|Parameter|Alias|Description|
+|---------|---------|---------|
+|`--environment`|`-env`|List all environments that contains given string in their Environment ID or URL.|
+|`--url`|`-u`|**Deprecated**: Use `--environment` instead.|
+|`--environment-id`|`-id`|**Deprecated**: Use `--environment` instead.|
+
+[!INCLUDE [admin-list-backups-remarks](includes/admin-list-backups-remarks.md)]
 
 ## pac admin reset
 
@@ -139,22 +194,6 @@ Reset environment from your tenant
 
 [!INCLUDE [admin-reset-remarks](includes/admin-reset-remarks.md)]
 
-## pac admin list-backups
-
-Lists all backups of your environment.
-
-[!INCLUDE [admin-list-backups-intro](includes/admin-list-backups-intro.md)]
-
-### admin list-backups Parameters
-
-|Parameter|Alias|Description|
-|---------|---------|---------|
-|`--environment`|`-env`|List all environments that contains given string in their Environment ID or URL.|
-|`--url`|`-u`|**Deprecated**: Use `--environment` instead.|
-|`--environment-id`|`-id`|**Deprecated**: Use `--environment` instead.|
-
-[!INCLUDE [admin-list-backups-remarks](includes/admin-list-backups-remarks.md)]
-
 ## pac admin restore
 
 Restores an environment to a given backup.
@@ -177,50 +216,11 @@ Restores an environment to a given backup.
 
 [!INCLUDE [admin-restore-remarks](includes/admin-restore-remarks.md)]
 
-## pac admin copy
-
-Copy Source Environment to Destination Environment
-
-[!INCLUDE [admin-copy-intro](includes/admin-copy-intro.md)]
-
-### admin copy Parameters
-
-|Parameter|Alias|Description|
-|---------|---------|---------|
-|`--source-env`|`-se`|Environment URL or ID of the source environment that is being copied|
-|`--target-env`|`-te`|Environment URL or ID of the target environment|
-|`--source-url`|`-su`|**Deprecated**: Use `--source-env` instead.|
-|`--target-url`|`-tu`|**Deprecated**: Use `--target-env` instead.|
-|`--source-id`|`-si`|**Deprecated**: Use `--source-env` instead.|
-|`--target-id`|`-ti`|**Deprecated**: Use `--target-env` instead.|
-|`--name`|`-n`|Name of the target environment|
-|`--type`|`-t`|Use one of these values:<br />- `MinimalCopy`<br />- `FullCopy`|
-|`--async`|`-a`|Optional boolean argument to run pac verbs asynchronously, defaults to false.<br />This parameter requires no value. It is a switch.|
-
-[!INCLUDE [admin-copy-remarks](includes/admin-copy-remarks.md)]
-
 ## pac admin status
 
 This command will list the status of all the operations in progress.
 
 [!INCLUDE [admin-status-remarks](includes/admin-status-remarks.md)]
-
-## pac admin assign-user
-
-Assign a user to a target environment.
-
-[!INCLUDE [admin-assign-user-intro](includes/admin-assign-user-intro.md)]
-
-### admin assign-user Parameters
-
-|Parameter|Alias|Description|
-|---------|---------|---------|
-|`--environment`|`-env`|ID or URL of the environment to assign a user to.<br />**Required**|
-|`--user`|`-u`|Object ID of AAD user to be assigned to environment<br />**Required**|
-|`--role`|`-r`|Name or ID of security role to be applied to user<br />**Required**|
-|`--async`|`-a`|Optional boolean argument to run pac verbs asynchronously, defaults to false.<br />This parameter requires no value. It is a switch.|
-
-[!INCLUDE [admin-assign-user-remarks](includes/admin-assign-user-remarks.md)]
 
 [!INCLUDE [admin-remarks](includes/admin-remarks.md)]
 

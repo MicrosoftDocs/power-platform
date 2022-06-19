@@ -34,11 +34,23 @@ Commands for working with PowerApps portal website
 |[pac paportal mergelocale](#pac-paportal-mergelocale)|Merges localized content back to portal yaml files|
 
 
-## pac paportal list
+## pac paportal bundle
 
-List all portal websites from the current Dataverse Organization
+Bundle portal website content in CMT supported XML format
 
-[!INCLUDE [paportal-list-remarks](includes/paportal-list-remarks.md)]
+[!INCLUDE [paportal-bundle-intro](includes/paportal-bundle-intro.md)]
+
+### paportal bundle Parameters
+
+|Parameter|Alias|Description|
+|---------|---------|---------|
+|`--path`|`-p`|Path from where the website content will be bundled<br />**Required**|
+|`--output`|`-o`|Path to which the XML files(s) will be saved<br />**Required**|
+|`--split`|`-s`|If this flag is true a separate xml will be created for each entity<br />This parameter requires no value. It is a switch.|
+|`--excludePK`|`-ep`|If this flag is true Primary key fields are not included in data xml so that CMT generates new record ids when importing.<br />This parameter requires no value. It is a switch.|
+|`--deploymentProfile`|`-dp`|Deployment profile name to be used. Defaults to 'default'|
+
+[!INCLUDE [paportal-bundle-remarks](includes/paportal-bundle-remarks.md)]
 
 ## pac paportal download
 
@@ -60,38 +72,25 @@ Download portal website content from the current Dataverse Organization
 
 [!INCLUDE [paportal-download-remarks](includes/paportal-download-remarks.md)]
 
-## pac paportal upload
+## pac paportal list
 
-Upload portal website content to current Dataverse Organization
+List all portal websites from the current Dataverse Organization
 
-[!INCLUDE [paportal-upload-intro](includes/paportal-upload-intro.md)]
+[!INCLUDE [paportal-list-remarks](includes/paportal-list-remarks.md)]
 
-### paportal upload Parameters
+## pac paportal mergelocale
 
-|Parameter|Alias|Description|
-|---------|---------|---------|
-|`--path`|`-p`|Path from where the website content will be uploaded<br />**Required**|
-|`--deploymentProfile`|`-dp`|Deployment profile name to be used. Defaults to 'default'|
+Merges localized content back to portal yaml files
 
-[!INCLUDE [paportal-upload-remarks](includes/paportal-upload-remarks.md)]
+[!INCLUDE [paportal-mergelocale-intro](includes/paportal-mergelocale-intro.md)]
 
-## pac paportal bundle
-
-Bundle portal website content in CMT supported XML format
-
-[!INCLUDE [paportal-bundle-intro](includes/paportal-bundle-intro.md)]
-
-### paportal bundle Parameters
+### paportal mergelocale Parameters
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--path`|`-p`|Path from where the website content will be bundled<br />**Required**|
-|`--output`|`-o`|Path to which the XML files(s) will be saved<br />**Required**|
-|`--split`|`-s`|If this flag is true a separate xml will be created for each entity<br />This parameter requires no value. It is a switch.|
-|`--excludePK`|`-ep`|If this flag is true Primary key fields are not included in data xml so that CMT generates new record ids when importing.<br />This parameter requires no value. It is a switch.|
-|`--deploymentProfile`|`-dp`|Deployment profile name to be used. Defaults to 'default'|
+|`--path`|`-p`|Path where website files are located<br />**Required**|
 
-[!INCLUDE [paportal-bundle-remarks](includes/paportal-bundle-remarks.md)]
+[!INCLUDE [paportal-mergelocale-remarks](includes/paportal-mergelocale-remarks.md)]
 
 ## pac paportal reguid
 
@@ -107,19 +106,20 @@ Assigns new guid to primary key attribute for all records of a website
 
 [!INCLUDE [paportal-reguid-remarks](includes/paportal-reguid-remarks.md)]
 
-## pac paportal mergelocale
+## pac paportal upload
 
-Merges localized content back to portal yaml files
+Upload portal website content to current Dataverse Organization
 
-[!INCLUDE [paportal-mergelocale-intro](includes/paportal-mergelocale-intro.md)]
+[!INCLUDE [paportal-upload-intro](includes/paportal-upload-intro.md)]
 
-### paportal mergelocale Parameters
+### paportal upload Parameters
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--path`|`-p`|Path where website files are located<br />**Required**|
+|`--path`|`-p`|Path from where the website content will be uploaded<br />**Required**|
+|`--deploymentProfile`|`-dp`|Deployment profile name to be used. Defaults to 'default'|
 
-[!INCLUDE [paportal-mergelocale-remarks](includes/paportal-mergelocale-remarks.md)]
+[!INCLUDE [paportal-upload-remarks](includes/paportal-upload-remarks.md)]
 
 [!INCLUDE [paportal-remarks](includes/paportal-remarks.md)]
 

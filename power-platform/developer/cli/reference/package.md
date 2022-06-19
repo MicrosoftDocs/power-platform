@@ -34,23 +34,6 @@ Commands for working with Dataverse package projects
 |[pac package show](#pac-package-show)|Shows details of Dataverse package|
 
 
-## pac package init
-
-Initializes a directory with a new Dataverse package project
-
-[!INCLUDE [package-init-intro](includes/package-init-intro.md)]
-
-### package init Parameters
-
-|Parameter|Alias|Description|
-|---------|---------|---------|
-|`--outputDirectory`|`-o`|Output directory|
-|`--template`||The name of the template to instantiate. Note: the template 'legacy' will be removed in a future release.<br />Use one of these values:<br />- `sdk-style`<br />- `legacy`|
-|`--package-name`||Sets the default name of the package. Applies to the generation of ImportExtension.GetNameOfImport.|
-|`--include-PkgAssets-Content`||Indicates whether to also include some sample files for the PkgAssets/Content folder.<br />This parameter requires no value. It is a switch.|
-
-[!INCLUDE [package-init-remarks](includes/package-init-remarks.md)]
-
 ## pac package add-external-package
 
 Adds an external package to a PD Package project
@@ -67,6 +50,28 @@ Adds an external package to a PD Package project
 |`--skip-validation`|`-sv`|Adds the item to the project file even if the file does not exist or appears to be invalid. Note, this will not affect any validation that is performed by MSBuild.<br />This parameter requires no value. It is a switch.|
 
 [!INCLUDE [package-add-external-package-remarks](includes/package-add-external-package-remarks.md)]
+
+## pac package add-reference
+
+Adds reference to Dataverse solution project
+
+[!INCLUDE [package-add-reference-intro](includes/package-add-reference-intro.md)]
+
+### package add-reference Parameters
+
+|Parameter|Alias|Description|
+|---------|---------|---------|
+|`--path`|`-p`|The path to the referenced Dataverse solution project<br />**Required**|
+|`--import-order`||A whole number that indicates the order to insert this item into the final ImportConfig.xml file at build time. Negative numbers are inserted before existing elements. Positive numbers are added after existing elements.|
+|`--publish-workflows-activate-plugins`||Explicitly indicates whether to publish the workflows and activate plugins when this solution is imported.<br />Use one of these values:<br />- `true`<br />- `false`|
+|`--overwrite-unmanaged-customizations`||Explicitly indicates whether to overwrite unmanaged customizations when this solution is imported.<br />Use one of these values:<br />- `true`<br />- `false`|
+|`--import-mode`||Explicitly specifies the required mode when importing this solution.<br />Use one of these values:<br />- `sync`<br />- `async`|
+|`--missing-dependency-behavior`||Specifies the behavior on import when a dependency of this solution is missing from the target environment.<br />Use one of these values:<br />- `skip`<br />- `fault`|
+|`--dependency-overrides`||A semicolon delimited list of overrides. This value overrides any dependency information encoded in the solution's metadata. Each override should be in the format: `<uniquename>:<minVersion>:<maxVersion>`. Where the minVersion and maxVersion is optional but should be in .Net version format syntax.<br />**Note**: Expected a semicolon delimited list of dependency overrides of the format \<uniquename>:\<minVersion>:\<maxVersion>.|
+|`--layer-order-behavior`||This argument is applicable only for 1st party solutions.<br />Use one of these values:<br />- `above`<br />- `base`<br />- `below`|
+|`--layer-order-solution-unique-names`||This argument is applicable only for 1st party solutions.<br />**Note**: Expected a semicolon delimited list of solution uniquenames.|
+
+[!INCLUDE [package-add-reference-remarks](includes/package-add-reference-remarks.md)]
 
 ## pac package add-solution
 
@@ -91,28 +96,6 @@ Adds a prebuilt Dataverse solution file to a PD Package project
 
 [!INCLUDE [package-add-solution-remarks](includes/package-add-solution-remarks.md)]
 
-## pac package add-reference
-
-Adds reference to Dataverse solution project
-
-[!INCLUDE [package-add-reference-intro](includes/package-add-reference-intro.md)]
-
-### package add-reference Parameters
-
-|Parameter|Alias|Description|
-|---------|---------|---------|
-|`--path`|`-p`|The path to the referenced Dataverse solution project<br />**Required**|
-|`--import-order`||A whole number that indicates the order to insert this item into the final ImportConfig.xml file at build time. Negative numbers are inserted before existing elements. Positive numbers are added after existing elements.|
-|`--publish-workflows-activate-plugins`||Explicitly indicates whether to publish the workflows and activate plugins when this solution is imported.<br />Use one of these values:<br />- `true`<br />- `false`|
-|`--overwrite-unmanaged-customizations`||Explicitly indicates whether to overwrite unmanaged customizations when this solution is imported.<br />Use one of these values:<br />- `true`<br />- `false`|
-|`--import-mode`||Explicitly specifies the required mode when importing this solution.<br />Use one of these values:<br />- `sync`<br />- `async`|
-|`--missing-dependency-behavior`||Specifies the behavior on import when a dependency of this solution is missing from the target environment.<br />Use one of these values:<br />- `skip`<br />- `fault`|
-|`--dependency-overrides`||A semicolon delimited list of overrides. This value overrides any dependency information encoded in the solution's metadata. Each override should be in the format: `<uniquename>:<minVersion>:<maxVersion>`. Where the minVersion and maxVersion is optional but should be in .Net version format syntax.<br />**Note**: Expected a semicolon delimited list of dependency overrides of the format \<uniquename>:\<minVersion>:\<maxVersion>.|
-|`--layer-order-behavior`||This argument is applicable only for 1st party solutions.<br />Use one of these values:<br />- `above`<br />- `base`<br />- `below`|
-|`--layer-order-solution-unique-names`||This argument is applicable only for 1st party solutions.<br />**Note**: Expected a semicolon delimited list of solution uniquenames.|
-
-[!INCLUDE [package-add-reference-remarks](includes/package-add-reference-remarks.md)]
-
 ## pac package deploy
 
 Deploys package to Dataverse environment
@@ -128,6 +111,23 @@ Deploys package to Dataverse environment
 |`--package`|`-p`|path to a package dll or zip file with a package<br />**Required**|
 
 [!INCLUDE [package-deploy-remarks](includes/package-deploy-remarks.md)]
+
+## pac package init
+
+Initializes a directory with a new Dataverse package project
+
+[!INCLUDE [package-init-intro](includes/package-init-intro.md)]
+
+### package init Parameters
+
+|Parameter|Alias|Description|
+|---------|---------|---------|
+|`--outputDirectory`|`-o`|Output directory|
+|`--template`||The name of the template to instantiate. Note: the template 'legacy' will be removed in a future release.<br />Use one of these values:<br />- `sdk-style`<br />- `legacy`|
+|`--package-name`||Sets the default name of the package. Applies to the generation of ImportExtension.GetNameOfImport.|
+|`--include-PkgAssets-Content`||Indicates whether to also include some sample files for the PkgAssets/Content folder.<br />This parameter requires no value. It is a switch.|
+
+[!INCLUDE [package-init-remarks](includes/package-init-remarks.md)]
 
 ## pac package show
 

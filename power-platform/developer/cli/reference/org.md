@@ -32,17 +32,25 @@ Work with your Dataverse Organization
 |[pac org list](#pac-org-list)|Lists all of the Dataverse Organizations the user has access to|
 
 
-## pac org who
-
-Displays information about the current Dataverse Organization
-
-[!INCLUDE [org-who-remarks](includes/org-who-remarks.md)]
-
 ## pac org entity
 
 Get information about an entity in Dataverse
 
 [!INCLUDE [org-entity-remarks](includes/org-entity-remarks.md)]
+
+## pac org list
+
+Lists all of the Dataverse Organizations the user has access to
+
+[!INCLUDE [org-list-intro](includes/org-list-intro.md)]
+
+### org list Parameters
+
+|Parameter|Alias|Description|
+|---------|---------|---------|
+|`--filter`|`-f`|Show only environments containing filter criteria|
+
+[!INCLUDE [org-list-remarks](includes/org-list-remarks.md)]
 
 ## pac org query
 
@@ -58,19 +66,11 @@ Display the results of a query against Dataverse
 
 [!INCLUDE [org-query-remarks](includes/org-query-remarks.md)]
 
-## pac org list
+## pac org who
 
-Lists all of the Dataverse Organizations the user has access to
+Displays information about the current Dataverse Organization
 
-[!INCLUDE [org-list-intro](includes/org-list-intro.md)]
-
-### org list Parameters
-
-|Parameter|Alias|Description|
-|---------|---------|---------|
-|`--filter`|`-f`|Show only environments containing filter criteria|
-
-[!INCLUDE [org-list-remarks](includes/org-list-remarks.md)]
+[!INCLUDE [org-who-remarks](includes/org-who-remarks.md)]
 
 [!INCLUDE [org-remarks](includes/org-remarks.md)]
 

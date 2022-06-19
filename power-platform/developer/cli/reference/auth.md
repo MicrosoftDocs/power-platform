@@ -35,6 +35,12 @@ Manage how you authenticate to various services
 |[pac auth clear](#pac-auth-clear)|Clear all authentication profiles stored on this computer|
 
 
+## pac auth clear
+
+Clear all authentication profiles stored on this computer
+
+[!INCLUDE [auth-clear-remarks](includes/auth-clear-remarks.md)]
+
 ## pac auth create
 
 Create and store authentication profiles on this computer
@@ -59,27 +65,6 @@ Create and store authentication profiles on this computer
 
 [!INCLUDE [auth-create-remarks](includes/auth-create-remarks.md)]
 
-## pac auth list
-
-List the authentication profiles stored on this computer
-
-[!INCLUDE [auth-list-remarks](includes/auth-list-remarks.md)]
-
-## pac auth select
-
-Select which authentication profile should be active
-
-[!INCLUDE [auth-select-intro](includes/auth-select-intro.md)]
-
-### auth select Parameters
-
-|Parameter|Alias|Description|
-|---------|---------|---------|
-|`--index`|`-i`|The index of the profile to be active<br />**Note**: The value must be a positive integer|
-|`--name`|`-n`|The name of the profile to be active<br />**Note**: The length of the name should be between 1 and 30|
-
-[!INCLUDE [auth-select-remarks](includes/auth-select-remarks.md)]
-
 ## pac auth delete
 
 Delete a particular authentication profile
@@ -95,21 +80,11 @@ Delete a particular authentication profile
 
 [!INCLUDE [auth-delete-remarks](includes/auth-delete-remarks.md)]
 
-## pac auth update
+## pac auth list
 
-Update name or target environment of an existing authentication profile
+List the authentication profiles stored on this computer
 
-[!INCLUDE [auth-update-intro](includes/auth-update-intro.md)]
-
-### auth update Parameters
-
-|Parameter|Alias|Description|
-|---------|---------|---------|
-|`--index`|`-i`|The index of the profile to be named/renamed<br />**Required**<br />**Note**: The value must be a positive integer|
-|`--name`|`-n`|The name you want to give to this authentication profile (maximum 12 characters)|
-|`--environment`|`-env`|Default environment (id, url, unique name or partial name)|
-
-[!INCLUDE [auth-update-remarks](includes/auth-update-remarks.md)]
+[!INCLUDE [auth-list-remarks](includes/auth-list-remarks.md)]
 
 ## pac auth name
 
@@ -126,11 +101,36 @@ Name or rename an existing authentication profile
 
 [!INCLUDE [auth-name-remarks](includes/auth-name-remarks.md)]
 
-## pac auth clear
+## pac auth select
 
-Clear all authentication profiles stored on this computer
+Select which authentication profile should be active
 
-[!INCLUDE [auth-clear-remarks](includes/auth-clear-remarks.md)]
+[!INCLUDE [auth-select-intro](includes/auth-select-intro.md)]
+
+### auth select Parameters
+
+|Parameter|Alias|Description|
+|---------|---------|---------|
+|`--index`|`-i`|The index of the profile to be active<br />**Note**: The value must be a positive integer|
+|`--name`|`-n`|The name of the profile to be active<br />**Note**: The length of the name should be between 1 and 30|
+
+[!INCLUDE [auth-select-remarks](includes/auth-select-remarks.md)]
+
+## pac auth update
+
+Update name or target environment of an existing authentication profile
+
+[!INCLUDE [auth-update-intro](includes/auth-update-intro.md)]
+
+### auth update Parameters
+
+|Parameter|Alias|Description|
+|---------|---------|---------|
+|`--index`|`-i`|The index of the profile to be named/renamed<br />**Required**<br />**Note**: The value must be a positive integer|
+|`--name`|`-n`|The name you want to give to this authentication profile (maximum 12 characters)|
+|`--environment`|`-env`|Default environment (id, url, unique name or partial name)|
+
+[!INCLUDE [auth-update-remarks](includes/auth-update-remarks.md)]
 
 [!INCLUDE [auth-remarks](includes/auth-remarks.md)]
 

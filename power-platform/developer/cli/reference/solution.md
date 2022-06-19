@@ -46,21 +46,20 @@ Commands for working with Dataverse solution projects
 |[pac solution sync](#pac-solution-sync)|Sync the current Dataverse solution project to the current state of the solution in your Organization.|
 
 
-## pac solution init
+## pac solution add-license
 
-Initializes a directory with a new Dataverse solution project
+Add license and plan info to solution
 
-[!INCLUDE [solution-init-intro](includes/solution-init-intro.md)]
+[!INCLUDE [solution-add-license-intro](includes/solution-add-license-intro.md)]
 
-### solution init Parameters
+### solution add-license Parameters
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--publisher-name`|`-pn`|Name of the Dataverse solution publisher<br />**Required**<br />**Note**: Only characters within the ranges [A - Z], [a - z], [0 - 9], or _ are allowed. The first character may only be in the ranges [A - Z], [a - z], or _.|
-|`--publisher-prefix`|`-pp`|Customization prefix value for the Dataverse solution publisher<br />**Required**<br />**Note**: The prefix must be 2 to 8 characters long, can only consist of alpha-numerics, must start with a letter, and cannot start with 'mscrm'.|
-|`--outputDirectory`|`-o`|Output directory|
+|`--planDefinitionFile`|`-pd`|License plan definition file in CSV format; expected columns: Service ID, Display name, More info URL<br />**Required**|
+|`--planMappingFile`|`-pm`|License plan mapping file in CSV format; expected columns: Service ID, Component name<br />**Required**|
 
-[!INCLUDE [solution-init-remarks](includes/solution-init-remarks.md)]
+[!INCLUDE [solution-add-license-remarks](includes/solution-add-license-remarks.md)]
 
 ## pac solution add-reference
 
@@ -76,20 +75,79 @@ Adds a reference from the project in the current directory to the project at 'pa
 
 [!INCLUDE [solution-add-reference-remarks](includes/solution-add-reference-remarks.md)]
 
-## pac solution list
+## pac solution add-solution-component
 
-List all Solutions from the current Dataverse Organization
+Adds a solution component to the target unmanaged solution in the connected Dataverse environment
 
-[!INCLUDE [solution-list-intro](includes/solution-list-intro.md)]
+[!INCLUDE [solution-add-solution-component-intro](includes/solution-add-solution-component-intro.md)]
 
-### solution list Parameters
+### solution add-solution-component Parameters
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--environment-id`||**Deprecated**: Use `--environment` instead.|
-|`--environment`|`-env`|The target Environment ID or URL.  Default value is the environment of your currently active Dataverse Auth Profile.|
+|`--solutionUniqueName`|`-sn`|Name of the solution<br />**Required**|
+|`--component`|`-c`|The schema name or ID of the component to add to the target solution<br />**Required**|
+|`--componentType`|`-ct`|The value that represents the solution component that you are adding<br />**Required**|
+|`--AddRequiredComponents`|`-arc`|Indicates whether other solution components that are required by the solution component that you are adding should also be added to the unmanaged solution<br />This parameter requires no value. It is a switch.|
+|`--environment`|`-env`|Environment URL or ID of the target Dataverse environment|
 
-[!INCLUDE [solution-list-remarks](includes/solution-list-remarks.md)]
+[!INCLUDE [solution-add-solution-component-remarks](includes/solution-add-solution-component-remarks.md)]
+
+## pac solution check
+
+Upload a Dataverse Solution project to run against the PowerApps Checker Service
+
+[!INCLUDE [solution-check-intro](includes/solution-check-intro.md)]
+
+### solution check Parameters
+
+|Parameter|Alias|Description|
+|---------|---------|---------|
+|`--path`|`-p`|Path where the to-be-checked solution zip file(s) exist; path can contain glob/wildcard characters|
+|`--solutionUrl`|`-u`|SAS Uri pointing to solution.zip to be analyzed|
+|`--outputDirectory`|`-o`|Output directory|
+|`--geo`|`-g`|Which geographical instance of the PowerApps Checker service to use.<br />Use one of these values:<br />- `PreviewUnitedStates`<br />- `UnitedStates`<br />- `Europe`<br />- `Asia`<br />- `Australia`<br />- `Japan`<br />- `India`<br />- `Canada`<br />- `SouthAmerica`<br />- `UnitedKingdom`<br />- `France`<br />- `Germany`<br />- `UnitedArabEmirates`<br />- `Switzerland`<br />- `USGovernment`<br />- `USGovernmentL4`<br />- `USGovernmentL5DoD`<br />- `China`|
+|`--customEndpoint`|`-ce`|Specify a custom URL as Power Apps Checker endpoint|
+|`--ruleLevelOverride`|`-rl`|Path to a file containing a JSON array rules and levels to override.  Accepted values for OverrideLevel are: Critical, High, Medium, Low, Informational. Example: [{"Id":"meta-remove-dup-reg","OverrideLevel":"Medium"},{"Id":"il-avoid-specialized-update-ops","OverrideLevel":"Medium"}]|
+|`--ruleSet`|`-rs`|Select a rule set that will be executed as part of this build. Values: A valid Guid, "AppSource Certification", "Solution Checker" (default)|
+|`--excludedFiles`|`-ef`|Exclude Files from the Analysis. Pass as comma-separated values|
+
+[!INCLUDE [solution-check-remarks](includes/solution-check-remarks.md)]
+
+## pac solution clone
+
+Create a solution project based on an existing solution in your Organization
+
+[!INCLUDE [solution-clone-intro](includes/solution-clone-intro.md)]
+
+### solution clone Parameters
+
+|Parameter|Alias|Description|
+|---------|---------|---------|
+|`--name`|`-n`|The name of the solution to be exported<br />**Required**|
+|`--targetversion`|`-v`|**Deprecated**: This parameter will be ignored.|
+|`--include`|`-i`|Which settings should be included in the solution being exported<br />Use one or more of these values separated by commas:<br />- `autonumbering`<br />- `calendar`<br />- `customization`<br />- `emailtracking`<br />- `externalapplications`<br />- `general`<br />- `isvconfig`<br />- `marketing`<br />- `outlooksynchronization`<br />- `relationshiproles`<br />- `sales`|
+|`--outputDirectory`|`-o`|Output directory|
+|`--async`|`-a`|Exports solution asynchronously<br />This parameter requires no value. It is a switch.|
+|`--max-async-wait-time`|`-wt`|Max asynchronous wait time in minutes. Default value is 60 minutes|
+
+[!INCLUDE [solution-clone-remarks](includes/solution-clone-remarks.md)]
+
+## pac solution create-settings
+
+Create a settings file from solution zip or solution folder.
+
+[!INCLUDE [solution-create-settings-intro](includes/solution-create-settings-intro.md)]
+
+### solution create-settings Parameters
+
+|Parameter|Alias|Description|
+|---------|---------|---------|
+|`--solution-zip`|`-z`|Path to solution zip file.|
+|`--solution-folder`|`-f`|Path to the local, unpacked solution folder: either the root of the 'Other/Solution.xml' file or a folder with a .cdsproj file.|
+|`--settings-file`|`-s`|The .json file with the deployment settings for connection references and environment variables.|
+
+[!INCLUDE [solution-create-settings-remarks](includes/solution-create-settings-remarks.md)]
 
 ## pac solution delete
 
@@ -105,38 +163,25 @@ Delete Dataverse Solution from the current Dataverse Environment
 
 [!INCLUDE [solution-delete-remarks](includes/solution-delete-remarks.md)]
 
-## pac solution online-version
+## pac solution export
 
-Sets version for solution loaded in Dataverse environment.
+Export a Dataverse Solution from the current Dataverse Environment
 
-[!INCLUDE [solution-online-version-intro](includes/solution-online-version-intro.md)]
+[!INCLUDE [solution-export-intro](includes/solution-export-intro.md)]
 
-### solution online-version Parameters
-
-|Parameter|Alias|Description|
-|---------|---------|---------|
-|`--solution-name`|`-sn`|Name of the solution<br />**Required**|
-|`--solution-version`|`-sv`|Specify the solution version number.<br />**Required**|
-
-[!INCLUDE [solution-online-version-remarks](includes/solution-online-version-remarks.md)]
-
-## pac solution version
-
-Update build or revision version for solution
-
-[!INCLUDE [solution-version-intro](includes/solution-version-intro.md)]
-
-### solution version Parameters
+### solution export Parameters
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--strategy`|`-s`|Updates build version for 'Solution.xml' file using specified strategy. If using gittags, set personal access token in the following environment variable "PacCli.PAT"<br />Use one of these values:<br />- `gittags`<br />- `filetracking`<br />- `solution`|
-|`--patchversion`|`-pv`|**Deprecated**: This parameter will be ignored.|
-|`--buildversion`|`-bv`|Build version for solution<br />**Note**: The value must be a positive integer|
-|`--revisionversion`|`-rv`|Revision version for solution<br />**Note**: The value must be a positive integer|
-|`--filename`|`-fn`|Tracker CSV file name to be used when using filetracking as a strategy. Default value is ControlsStateVersionInfo.csv|
+|`--path`|`-p`|Path where the exported solution zip file will be written<br />**Required**|
+|`--name`|`-n`|The name of the solution to be exported<br />**Required**|
+|`--managed`|`-m`|Whether the solution should be exported as a managed solution<br />This parameter requires no value. It is a switch.|
+|`--targetversion`|`-v`|**Deprecated**: This parameter will be ignored.|
+|`--include`|`-i`|Which settings should be included in the solution being exported<br />Use one or more of these values separated by commas:<br />- `autonumbering`<br />- `calendar`<br />- `customization`<br />- `emailtracking`<br />- `externalapplications`<br />- `general`<br />- `isvconfig`<br />- `marketing`<br />- `outlooksynchronization`<br />- `relationshiproles`<br />- `sales`|
+|`--async`|`-a`|Exports solution asynchronously<br />This parameter requires no value. It is a switch.|
+|`--max-async-wait-time`|`-wt`|Max asynchronous wait time in minutes. Default value is 60 minutes|
 
-[!INCLUDE [solution-version-remarks](includes/solution-version-remarks.md)]
+[!INCLUDE [solution-export-remarks](includes/solution-export-remarks.md)]
 
 ## pac solution import
 
@@ -162,127 +207,51 @@ Import the Dataverse Solution into the current Dataverse Environment
 
 [!INCLUDE [solution-import-remarks](includes/solution-import-remarks.md)]
 
-## pac solution export
+## pac solution init
 
-Export a Dataverse Solution from the current Dataverse Environment
+Initializes a directory with a new Dataverse solution project
 
-[!INCLUDE [solution-export-intro](includes/solution-export-intro.md)]
+[!INCLUDE [solution-init-intro](includes/solution-init-intro.md)]
 
-### solution export Parameters
-
-|Parameter|Alias|Description|
-|---------|---------|---------|
-|`--path`|`-p`|Path where the exported solution zip file will be written<br />**Required**|
-|`--name`|`-n`|The name of the solution to be exported<br />**Required**|
-|`--managed`|`-m`|Whether the solution should be exported as a managed solution<br />This parameter requires no value. It is a switch.|
-|`--targetversion`|`-v`|**Deprecated**: This parameter will be ignored.|
-|`--include`|`-i`|Which settings should be included in the solution being exported<br />Use one or more of these values separated by commas:<br />- `autonumbering`<br />- `calendar`<br />- `customization`<br />- `emailtracking`<br />- `externalapplications`<br />- `general`<br />- `isvconfig`<br />- `marketing`<br />- `outlooksynchronization`<br />- `relationshiproles`<br />- `sales`|
-|`--async`|`-a`|Exports solution asynchronously<br />This parameter requires no value. It is a switch.|
-|`--max-async-wait-time`|`-wt`|Max asynchronous wait time in minutes. Default value is 60 minutes|
-
-[!INCLUDE [solution-export-remarks](includes/solution-export-remarks.md)]
-
-## pac solution clone
-
-Create a solution project based on an existing solution in your Organization
-
-[!INCLUDE [solution-clone-intro](includes/solution-clone-intro.md)]
-
-### solution clone Parameters
+### solution init Parameters
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--name`|`-n`|The name of the solution to be exported<br />**Required**|
-|`--targetversion`|`-v`|**Deprecated**: This parameter will be ignored.|
-|`--include`|`-i`|Which settings should be included in the solution being exported<br />Use one or more of these values separated by commas:<br />- `autonumbering`<br />- `calendar`<br />- `customization`<br />- `emailtracking`<br />- `externalapplications`<br />- `general`<br />- `isvconfig`<br />- `marketing`<br />- `outlooksynchronization`<br />- `relationshiproles`<br />- `sales`|
+|`--publisher-name`|`-pn`|Name of the Dataverse solution publisher<br />**Required**<br />**Note**: Only characters within the ranges [A - Z], [a - z], [0 - 9], or _ are allowed. The first character may only be in the ranges [A - Z], [a - z], or _.|
+|`--publisher-prefix`|`-pp`|Customization prefix value for the Dataverse solution publisher<br />**Required**<br />**Note**: The prefix must be 2 to 8 characters long, can only consist of alpha-numerics, must start with a letter, and cannot start with 'mscrm'.|
 |`--outputDirectory`|`-o`|Output directory|
-|`--async`|`-a`|Exports solution asynchronously<br />This parameter requires no value. It is a switch.|
-|`--max-async-wait-time`|`-wt`|Max asynchronous wait time in minutes. Default value is 60 minutes|
 
-[!INCLUDE [solution-clone-remarks](includes/solution-clone-remarks.md)]
+[!INCLUDE [solution-init-remarks](includes/solution-init-remarks.md)]
 
-## pac solution publish
+## pac solution list
 
-Publishes all customizations
+List all Solutions from the current Dataverse Organization
 
-[!INCLUDE [solution-publish-intro](includes/solution-publish-intro.md)]
+[!INCLUDE [solution-list-intro](includes/solution-list-intro.md)]
 
-### solution publish Parameters
+### solution list Parameters
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--async`|`-a`|Imports solution asynchronously<br />This parameter requires no value. It is a switch.|
-|`--max-async-wait-time`|`-wt`|Max asynchronous wait time in minutes. Default value is 60 minutes|
+|`--environment-id`||**Deprecated**: Use `--environment` instead.|
+|`--environment`|`-env`|The target Environment ID or URL.  Default value is the environment of your currently active Dataverse Auth Profile.|
 
-[!INCLUDE [solution-publish-remarks](includes/solution-publish-remarks.md)]
+[!INCLUDE [solution-list-remarks](includes/solution-list-remarks.md)]
 
-## pac solution upgrade
+## pac solution online-version
 
-Option to stage the Dataverse solution for upgrade
+Sets version for solution loaded in Dataverse environment.
 
-[!INCLUDE [solution-upgrade-intro](includes/solution-upgrade-intro.md)]
+[!INCLUDE [solution-online-version-intro](includes/solution-online-version-intro.md)]
 
-### solution upgrade Parameters
+### solution online-version Parameters
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
 |`--solution-name`|`-sn`|Name of the solution<br />**Required**|
-|`--async`|`-a`|Upgrades solution asynchronously<br />This parameter requires no value. It is a switch.|
-|`--max-async-wait-time`|`-wt`|Max asynchronous wait time in minutes. Default value is 60 minutes|
+|`--solution-version`|`-sv`|Specify the solution version number.<br />**Required**|
 
-[!INCLUDE [solution-upgrade-remarks](includes/solution-upgrade-remarks.md)]
-
-## pac solution add-license
-
-Add license and plan info to solution
-
-[!INCLUDE [solution-add-license-intro](includes/solution-add-license-intro.md)]
-
-### solution add-license Parameters
-
-|Parameter|Alias|Description|
-|---------|---------|---------|
-|`--planDefinitionFile`|`-pd`|License plan definition file in CSV format; expected columns: Service ID, Display name, More info URL<br />**Required**|
-|`--planMappingFile`|`-pm`|License plan mapping file in CSV format; expected columns: Service ID, Component name<br />**Required**|
-
-[!INCLUDE [solution-add-license-remarks](includes/solution-add-license-remarks.md)]
-
-## pac solution check
-
-Upload a Dataverse Solution project to run against the PowerApps Checker Service
-
-[!INCLUDE [solution-check-intro](includes/solution-check-intro.md)]
-
-### solution check Parameters
-
-|Parameter|Alias|Description|
-|---------|---------|---------|
-|`--path`|`-p`|Path where the to-be-checked solution zip file(s) exist; path can contain glob/wildcard characters|
-|`--solutionUrl`|`-u`|SAS Uri pointing to solution.zip to be analyzed|
-|`--outputDirectory`|`-o`|Output directory|
-|`--geo`|`-g`|Which geographical instance of the PowerApps Checker service to use.<br />Use one of these values:<br />- `PreviewUnitedStates`<br />- `UnitedStates`<br />- `Europe`<br />- `Asia`<br />- `Australia`<br />- `Japan`<br />- `India`<br />- `Canada`<br />- `SouthAmerica`<br />- `UnitedKingdom`<br />- `France`<br />- `Germany`<br />- `UnitedArabEmirates`<br />- `Switzerland`<br />- `USGovernment`<br />- `USGovernmentL4`<br />- `USGovernmentL5DoD`<br />- `China`|
-|`--customEndpoint`|`-ce`|Specify a custom URL as Power Apps Checker endpoint|
-|`--ruleLevelOverride`|`-rl`|Path to a file containing a JSON array rules and levels to override.  Accepted values for OverrideLevel are: Critical, High, Medium, Low, Informational. Example: [{"Id":"meta-remove-dup-reg","OverrideLevel":"Medium"},{"Id":"il-avoid-specialized-update-ops","OverrideLevel":"Medium"}]|
-|`--ruleSet`|`-rs`|Select a rule set that will be executed as part of this build. Values: A valid Guid, "AppSource Certification", "Solution Checker" (default)|
-|`--excludedFiles`|`-ef`|Exclude Files from the Analysis. Pass as comma-separated values|
-
-[!INCLUDE [solution-check-remarks](includes/solution-check-remarks.md)]
-
-## pac solution create-settings
-
-Create a settings file from solution zip or solution folder.
-
-[!INCLUDE [solution-create-settings-intro](includes/solution-create-settings-intro.md)]
-
-### solution create-settings Parameters
-
-|Parameter|Alias|Description|
-|---------|---------|---------|
-|`--solution-zip`|`-z`|Path to solution zip file.|
-|`--solution-folder`|`-f`|Path to the local, unpacked solution folder: either the root of the 'Other/Solution.xml' file or a folder with a .cdsproj file.|
-|`--settings-file`|`-s`|The .json file with the deployment settings for connection references and environment variables.|
-
-[!INCLUDE [solution-create-settings-remarks](includes/solution-create-settings-remarks.md)]
+[!INCLUDE [solution-online-version-remarks](includes/solution-online-version-remarks.md)]
 
 ## pac solution pack
 
@@ -313,6 +282,38 @@ Package solution components on local filesystem into solution.zip (SolutionPacka
 
 [!INCLUDE [solution-pack-remarks](includes/solution-pack-remarks.md)]
 
+## pac solution publish
+
+Publishes all customizations
+
+[!INCLUDE [solution-publish-intro](includes/solution-publish-intro.md)]
+
+### solution publish Parameters
+
+|Parameter|Alias|Description|
+|---------|---------|---------|
+|`--async`|`-a`|Imports solution asynchronously<br />This parameter requires no value. It is a switch.|
+|`--max-async-wait-time`|`-wt`|Max asynchronous wait time in minutes. Default value is 60 minutes|
+
+[!INCLUDE [solution-publish-remarks](includes/solution-publish-remarks.md)]
+
+## pac solution sync
+
+Sync the current Dataverse solution project to the current state of the solution in your Organization.
+
+[!INCLUDE [solution-sync-intro](includes/solution-sync-intro.md)]
+
+### solution sync Parameters
+
+|Parameter|Alias|Description|
+|---------|---------|---------|
+|`--solution-folder`|`-f`|Path to the local, unpacked solution folder: either the root of the 'Other/Solution.xml' file or a folder with a .cdsproj file.|
+|`--include`|`-i`|Which settings should be included in the solution being exported<br />Use one or more of these values separated by commas:<br />- `autonumbering`<br />- `calendar`<br />- `customization`<br />- `emailtracking`<br />- `externalapplications`<br />- `general`<br />- `isvconfig`<br />- `marketing`<br />- `outlooksynchronization`<br />- `relationshiproles`<br />- `sales`|
+|`--async`|`-a`|Exports solution asynchronously<br />This parameter requires no value. It is a switch.|
+|`--max-async-wait-time`|`-wt`|Max asynchronous wait time in minutes. Default value is 60 minutes|
+
+[!INCLUDE [solution-sync-remarks](includes/solution-sync-remarks.md)]
+
 ## pac solution unpack
 
 Extract solution components from solution.zip onto local filesystem (SolutionPackager)
@@ -342,40 +343,39 @@ Extract solution components from solution.zip onto local filesystem (SolutionPac
 
 [!INCLUDE [solution-unpack-remarks](includes/solution-unpack-remarks.md)]
 
-## pac solution add-solution-component
+## pac solution upgrade
 
-Adds a solution component to the target unmanaged solution in the connected Dataverse environment
+Option to stage the Dataverse solution for upgrade
 
-[!INCLUDE [solution-add-solution-component-intro](includes/solution-add-solution-component-intro.md)]
+[!INCLUDE [solution-upgrade-intro](includes/solution-upgrade-intro.md)]
 
-### solution add-solution-component Parameters
-
-|Parameter|Alias|Description|
-|---------|---------|---------|
-|`--solutionUniqueName`|`-sn`|Name of the solution<br />**Required**|
-|`--component`|`-c`|The schema name or ID of the component to add to the target solution<br />**Required**|
-|`--componentType`|`-ct`|The value that represents the solution component that you are adding<br />**Required**|
-|`--AddRequiredComponents`|`-arc`|Indicates whether other solution components that are required by the solution component that you are adding should also be added to the unmanaged solution<br />This parameter requires no value. It is a switch.|
-|`--environment`|`-env`|Environment URL or ID of the target Dataverse environment|
-
-[!INCLUDE [solution-add-solution-component-remarks](includes/solution-add-solution-component-remarks.md)]
-
-## pac solution sync
-
-Sync the current Dataverse solution project to the current state of the solution in your Organization.
-
-[!INCLUDE [solution-sync-intro](includes/solution-sync-intro.md)]
-
-### solution sync Parameters
+### solution upgrade Parameters
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--solution-folder`|`-f`|Path to the local, unpacked solution folder: either the root of the 'Other/Solution.xml' file or a folder with a .cdsproj file.|
-|`--include`|`-i`|Which settings should be included in the solution being exported<br />Use one or more of these values separated by commas:<br />- `autonumbering`<br />- `calendar`<br />- `customization`<br />- `emailtracking`<br />- `externalapplications`<br />- `general`<br />- `isvconfig`<br />- `marketing`<br />- `outlooksynchronization`<br />- `relationshiproles`<br />- `sales`|
-|`--async`|`-a`|Exports solution asynchronously<br />This parameter requires no value. It is a switch.|
+|`--solution-name`|`-sn`|Name of the solution<br />**Required**|
+|`--async`|`-a`|Upgrades solution asynchronously<br />This parameter requires no value. It is a switch.|
 |`--max-async-wait-time`|`-wt`|Max asynchronous wait time in minutes. Default value is 60 minutes|
 
-[!INCLUDE [solution-sync-remarks](includes/solution-sync-remarks.md)]
+[!INCLUDE [solution-upgrade-remarks](includes/solution-upgrade-remarks.md)]
+
+## pac solution version
+
+Update build or revision version for solution
+
+[!INCLUDE [solution-version-intro](includes/solution-version-intro.md)]
+
+### solution version Parameters
+
+|Parameter|Alias|Description|
+|---------|---------|---------|
+|`--strategy`|`-s`|Updates build version for 'Solution.xml' file using specified strategy. If using gittags, set personal access token in the following environment variable "PacCli.PAT"<br />Use one of these values:<br />- `gittags`<br />- `filetracking`<br />- `solution`|
+|`--patchversion`|`-pv`|**Deprecated**: This parameter will be ignored.|
+|`--buildversion`|`-bv`|Build version for solution<br />**Note**: The value must be a positive integer|
+|`--revisionversion`|`-rv`|Revision version for solution<br />**Note**: The value must be a positive integer|
+|`--filename`|`-fn`|Tracker CSV file name to be used when using filetracking as a strategy. Default value is ControlsStateVersionInfo.csv|
+
+[!INCLUDE [solution-version-remarks](includes/solution-version-remarks.md)]
 
 [!INCLUDE [solution-remarks](includes/solution-remarks.md)]
 
