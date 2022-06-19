@@ -92,9 +92,9 @@ Takes a manual backup of your environment.
 |---------|---------|---------|
 |`--environment`|`-env`|Environment URL or ID of the Environment that requires backup.|
 |`--url`|`-u`|Url of the environment that requires backup.|
-|`--label`|`-l`|Sets the backup label as provided.<br />**Required**|
+|`--label`|`-l`|**Deprecated** This parameter will be ignored.<br />Sets the backup label as provided.<br />**Required**|
 |`--environment-id`|`-id`|Id of the environment that requires backup.|
-|`--notes`|`-n`|**ignored**: Additional notes for this backup.|
+|`--notes`|`-n`|**Deprecated** This parameter will be ignored.<br />**ignored**: Additional notes for this backup.|
 
 [!INCLUDE [admin-backup-remarks](includes/admin-backup-remarks.md)]
 

@@ -46,7 +46,7 @@ Create and store authentication profiles on this computer
 |Parameter|Alias|Description|
 |---------|---------|---------|
 |`--name`|`-n`|The name you want to give to this authentication profile (maximum 12 characters)|
-|`--kind`|`-k`|The kind of authentication profile you are creating|
+|`--kind`|`-k`|**Deprecated** This parameter will be ignored.<br />The kind of authentication profile you are creating|
 |`--url`|`-u`|The resource URL to connect to|
 |`--username`|`-un`|Optional: The username to authenticate with; shows AAD dialog if not specified|
 |`--password`|`-p`|Optional: The password to authenticate with|
