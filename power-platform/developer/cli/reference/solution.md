@@ -86,7 +86,7 @@ List all Solutions from the current Dataverse Organization
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--environment-id`||The target Environment ID.  Default value is the environment of your currently active Dataverse Auth Profile.|
+|`--environment-id`||**Deprecated** use `--environment` instead.<br />The target Environment ID.  Default value is the environment of your currently active Dataverse Auth Profile.|
 |`--environment`|`-env`|The target Environment ID or URL.  Default value is the environment of your currently active Dataverse Auth Profile.|
 
 [!INCLUDE [solution-list-remarks](includes/solution-list-remarks.md)]
