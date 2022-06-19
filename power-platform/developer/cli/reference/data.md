@@ -38,6 +38,7 @@ Export data
 
 ### data export Parameters
 
+[!div class="mx-tdCol2BreakAll"]
 |Parameter<br />Alias|Description|
 |---------|---------|
 |`--schemaFile`<br />`-sf`|Schema file name. It can be created using Configuration Migration Tool<br />**Required**|
@@ -56,6 +57,7 @@ Import data
 
 ### data import Parameters
 
+[!div class="mx-tdCol2BreakAll"]
 |Parameter<br />Alias|Description|
 |---------|---------|
 |`--dataDirectory`<br />`-dd`|Directory name with data for import<br />**Required**|

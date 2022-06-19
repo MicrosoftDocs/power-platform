@@ -39,6 +39,7 @@ Operating with Power Apps .msapp files
 
 ### canvas create Parameters
 
+[!div class="mx-tdCol2BreakAll"]
 |Parameter<br />Alias|Description|
 |---------|---------|
 |`--msapp`<br />|Path to .msapp file to be generated<br />**Required**|
@@ -55,6 +56,7 @@ Operating with Power Apps .msapp files
 
 ### canvas pack Parameters
 
+[!div class="mx-tdCol2BreakAll"]
 |Parameter<br />Alias|Description|
 |---------|---------|
 |`--sources`<br />|Directory to sources to be packed<br />**Required**|
@@ -70,6 +72,7 @@ Operating with Power Apps .msapp files
 
 ### canvas unpack Parameters
 
+[!div class="mx-tdCol2BreakAll"]
 |Parameter<br />Alias|Description|
 |---------|---------|
 |`--sources`<br />|Directory to sources to be unpacked|

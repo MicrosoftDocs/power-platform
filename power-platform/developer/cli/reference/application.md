@@ -38,6 +38,7 @@ Installs Dataverse application to given environment
 
 ### application install Parameters
 
+[!div class="mx-tdCol2BreakAll"]
 |Parameter<br />Alias|Description|
 |---------|---------|
 |`--environment-id`<br />`-id`|Target environment application will be installed to<br />**Required**|
@@ -54,6 +55,7 @@ List available Dataverse applications from AppSource
 
 ### application list Parameters
 
+[!div class="mx-tdCol2BreakAll"]
 |Parameter<br />Alias|Description|
 |---------|---------|
 |`--environment-id`<br />`-id`|List available Dataverse applications for given environment; if not specified, list all applications in the tenant (default: list for all environments)|

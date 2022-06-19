@@ -40,6 +40,7 @@ Creates a new row in the Connector table in the Dataverse environment.
 
 ### connector create Parameters
 
+[!div class="mx-tdCol2BreakAll"]
 |Parameter<br />Alias|Description|
 |---------|---------|
 |`--name`<br />`-n`|The Name of the Connector<br />**Required**<br />**Note**: start with a alphanumeric prefix with length between 2~8 and followed by  '_' and alphanumeric name|
@@ -57,6 +58,7 @@ Download a Connector's OpenApiDefinition file
 
 ### connector download-api-definition Parameters
 
+[!div class="mx-tdCol2BreakAll"]
 |Parameter<br />Alias|Description|
 |---------|---------|
 |`--connector-id`<br />`-id`|The ID of the Connector<br />**Required**<br />**Note**: The Connector Id is not a valid Guid.|
@@ -73,6 +75,7 @@ List the Connectors registered in the Dataverse environment
 
 ### connector list Parameters
 
+[!div class="mx-tdCol2BreakAll"]
 |Parameter<br />Alias|Description|
 |---------|---------|
 |`--environment`<br />`-env`|The target Environment ID or URL.  Default value is the environment of your currently active Dataverse Auth Profile.|
@@ -87,6 +90,7 @@ Updates a Connector Entity in the Dataverse environment.
 
 ### connector update Parameters
 
+[!div class="mx-tdCol2BreakAll"]
 |Parameter<br />Alias|Description|
 |---------|---------|
 |`--connector-id`<br />`-id`|The ID of the Connector<br />**Required**<br />**Note**: The Connector Id is not a valid Guid.|

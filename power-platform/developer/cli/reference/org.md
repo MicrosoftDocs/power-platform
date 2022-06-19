@@ -46,6 +46,7 @@ Lists all of the Dataverse Organizations the user has access to
 
 ### org list Parameters
 
+[!div class="mx-tdCol2BreakAll"]
 |Parameter<br />Alias|Description|
 |---------|---------|
 |`--filter`<br />`-f`|Show only environments containing filter criteria|
@@ -60,6 +61,7 @@ Display the results of a query against Dataverse
 
 ### org query Parameters
 
+[!div class="mx-tdCol2BreakAll"]
 |Parameter<br />Alias|Description|
 |---------|---------|
 |`--sql`<br />`-s`|The SQL SELECT query to run<br />**Required**|

@@ -49,6 +49,7 @@ Create and store authentication profiles on this computer
 
 ### auth create Parameters
 
+[!div class="mx-tdCol2BreakAll"]
 |Parameter<br />Alias|Description|
 |---------|---------|
 |`--name`<br />`-n`|The name you want to give to this authentication profile (maximum 12 characters)<br />**Note**: The length of the name should be between 1 and 30|
@@ -73,6 +74,7 @@ Delete a particular authentication profile
 
 ### auth delete Parameters
 
+[!div class="mx-tdCol2BreakAll"]
 |Parameter<br />Alias|Description|
 |---------|---------|
 |`--index`<br />`-i`|The index of the profile to be deleted<br />**Note**: The value must be a positive integer|
@@ -94,6 +96,7 @@ Name or rename an existing authentication profile
 
 ### auth name Parameters
 
+[!div class="mx-tdCol2BreakAll"]
 |Parameter<br />Alias|Description|
 |---------|---------|
 |`--index`<br />`-i`|The index of the profile to be named/renamed<br />**Required**<br />**Note**: The value must be a positive integer|
@@ -109,6 +112,7 @@ Select which authentication profile should be active
 
 ### auth select Parameters
 
+[!div class="mx-tdCol2BreakAll"]
 |Parameter<br />Alias|Description|
 |---------|---------|
 |`--index`<br />`-i`|The index of the profile to be active<br />**Note**: The value must be a positive integer|
@@ -124,6 +128,7 @@ Update name or target environment of an existing authentication profile
 
 ### auth update Parameters
 
+[!div class="mx-tdCol2BreakAll"]
 |Parameter<br />Alias|Description|
 |---------|---------|
 |`--index`<br />`-i`|The index of the profile to be named/renamed<br />**Required**<br />**Note**: The value must be a positive integer|

@@ -46,6 +46,7 @@ Assign a user to a target environment.
 
 ### admin assign-user Parameters
 
+[!div class="mx-tdCol2BreakAll"]
 |Parameter<br />Alias|Description|
 |---------|---------|
 |`--environment`<br />`-env`|ID or URL of the environment to assign a user to.<br />**Required**|
@@ -63,6 +64,7 @@ Takes a manual backup of your environment.
 
 ### admin backup Parameters
 
+[!div class="mx-tdCol2BreakAll"]
 |Parameter<br />Alias|Description|
 |---------|---------|
 |`--environment`<br />`-env`|Environment URL or ID of the Environment that requires backup.|
@@ -81,6 +83,7 @@ Copy Source Environment to Destination Environment
 
 ### admin copy Parameters
 
+[!div class="mx-tdCol2BreakAll"]
 |Parameter<br />Alias|Description|
 |---------|---------|
 |`--source-env`<br />`-se`|Environment URL or ID of the source environment that is being copied|
@@ -103,6 +106,7 @@ Creates a Dataverse Environment in your tenant.
 
 ### admin create Parameters
 
+[!div class="mx-tdCol2BreakAll"]
 |Parameter<br />Alias|Description|
 |---------|---------|
 |`--name`<br />`-n`|Sets the name of the environment.|
@@ -126,6 +130,7 @@ Deletes Environment from your tenant
 
 ### admin delete Parameters
 
+[!div class="mx-tdCol2BreakAll"]
 |Parameter<br />Alias|Description|
 |---------|---------|
 |`--environment`<br />`-env`|Environment URL or ID of the Environment that needs to be deleted from your tenant.|
@@ -143,6 +148,7 @@ List all environments from your tenant
 
 ### admin list Parameters
 
+[!div class="mx-tdCol2BreakAll"]
 |Parameter<br />Alias|Description|
 |---------|---------|
 |`--environment`<br />`-env`|List all environments that contain given string in their name or id.|
@@ -162,6 +168,7 @@ Lists all backups of your environment.
 
 ### admin list-backups Parameters
 
+[!div class="mx-tdCol2BreakAll"]
 |Parameter<br />Alias|Description|
 |---------|---------|
 |`--environment`<br />`-env`|List all environments that contains given string in their Environment ID or URL.|
@@ -178,6 +185,7 @@ Reset environment from your tenant
 
 ### admin reset Parameters
 
+[!div class="mx-tdCol2BreakAll"]
 |Parameter<br />Alias|Description|
 |---------|---------|
 |`--environment`<br />`-env`|URL or ID of the Environment that needs to be reset.|
@@ -202,6 +210,7 @@ Restores an environment to a given backup.
 
 ### admin restore Parameters
 
+[!div class="mx-tdCol2BreakAll"]
 |Parameter<br />Alias|Description|
 |---------|---------|
 |`--source-env`<br />`-se`|Environment URL or ID of the source environment required for restore.|

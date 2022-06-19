@@ -39,6 +39,7 @@ Launch Configuration Migration Tool
 
 ### tool cmt Parameters
 
+[!div class="mx-tdCol2BreakAll"]
 |Parameter<br />Alias|Description|
 |---------|---------|
 |`--install`<br />`-i`|Install latest version.<br />This parameter requires no value. It is a switch.|
@@ -53,6 +54,7 @@ Launch Package Deployer
 
 ### tool pd Parameters
 
+[!div class="mx-tdCol2BreakAll"]
 |Parameter<br />Alias|Description|
 |---------|---------|
 |`--install`<br />`-i`|Install latest version.<br />This parameter requires no value. It is a switch.|
@@ -67,6 +69,7 @@ Launch Plugin Registration Tool
 
 ### tool prt Parameters
 
+[!div class="mx-tdCol2BreakAll"]
 |Parameter<br />Alias|Description|
 |---------|---------|
 |`--install`<br />`-i`|Install latest version.<br />This parameter requires no value. It is a switch.|

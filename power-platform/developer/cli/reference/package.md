@@ -42,6 +42,7 @@ Adds an external package to a PD Package project
 
 ### package add-external-package Parameters
 
+[!div class="mx-tdCol2BreakAll"]
 |Parameter<br />Alias|Description|
 |---------|---------|
 |`--path`<br />`-p`|Path to the external package<br />**Required**|
@@ -59,6 +60,7 @@ Adds reference to Dataverse solution project
 
 ### package add-reference Parameters
 
+[!div class="mx-tdCol2BreakAll"]
 |Parameter<br />Alias|Description|
 |---------|---------|
 |`--path`<br />`-p`|The path to the referenced Dataverse solution project<br />**Required**|
@@ -81,6 +83,7 @@ Adds a prebuilt Dataverse solution file to a PD Package project
 
 ### package add-solution Parameters
 
+[!div class="mx-tdCol2BreakAll"]
 |Parameter<br />Alias|Description|
 |---------|---------|
 |`--path`<br />`-p`|Path to the Dataverse solution file (must be *.zip)<br />**Required**|
@@ -104,6 +107,7 @@ Deploys package to Dataverse environment
 
 ### package deploy Parameters
 
+[!div class="mx-tdCol2BreakAll"]
 |Parameter<br />Alias|Description|
 |---------|---------|
 |`--logFile`<br />`-lf`|Log file path|
@@ -120,6 +124,7 @@ Initializes a directory with a new Dataverse package project
 
 ### package init Parameters
 
+[!div class="mx-tdCol2BreakAll"]
 |Parameter<br />Alias|Description|
 |---------|---------|
 |`--outputDirectory`<br />`-o`|Output directory|
@@ -137,6 +142,7 @@ Shows details of Dataverse package
 
 ### package show Parameters
 
+[!div class="mx-tdCol2BreakAll"]
 |Parameter<br />Alias|Description|
 |---------|---------|
 |`--package`<br />`-p`|path to a package dll or zip file with a package<br />**Required**|

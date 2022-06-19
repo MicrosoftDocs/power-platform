@@ -42,6 +42,7 @@ Bundle portal website content in CMT supported XML format
 
 ### paportal bundle Parameters
 
+[!div class="mx-tdCol2BreakAll"]
 |Parameter<br />Alias|Description|
 |---------|---------|
 |`--path`<br />`-p`|Path from where the website content will be bundled<br />**Required**|
@@ -60,6 +61,7 @@ Download portal website content from the current Dataverse Organization
 
 ### paportal download Parameters
 
+[!div class="mx-tdCol2BreakAll"]
 |Parameter<br />Alias|Description|
 |---------|---------|
 |`--path`<br />`-p`|Path where the website content will be downloaded<br />**Required**|
@@ -86,6 +88,7 @@ Merges localized content back to portal yaml files
 
 ### paportal mergelocale Parameters
 
+[!div class="mx-tdCol2BreakAll"]
 |Parameter<br />Alias|Description|
 |---------|---------|
 |`--path`<br />`-p`|Path where website files are located<br />**Required**|
@@ -100,6 +103,7 @@ Assigns new guid to primary key attribute for all records of a website
 
 ### paportal reguid Parameters
 
+[!div class="mx-tdCol2BreakAll"]
 |Parameter<br />Alias|Description|
 |---------|---------|
 |`--path`<br />`-p`|Path where website files are located<br />**Required**|
@@ -114,6 +118,7 @@ Upload portal website content to current Dataverse Organization
 
 ### paportal upload Parameters
 
+[!div class="mx-tdCol2BreakAll"]
 |Parameter<br />Alias|Description|
 |---------|---------|
 |`--path`<br />`-p`|Path from where the website content will be uploaded<br />**Required**|

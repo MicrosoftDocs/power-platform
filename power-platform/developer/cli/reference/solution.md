@@ -54,6 +54,7 @@ Add license and plan info to solution
 
 ### solution add-license Parameters
 
+[!div class="mx-tdCol2BreakAll"]
 |Parameter<br />Alias|Description|
 |---------|---------|
 |`--planDefinitionFile`<br />`-pd`|License plan definition file in CSV format; expected columns: Service ID, Display name, More info URL<br />**Required**|
@@ -69,6 +70,7 @@ Adds a reference from the project in the current directory to the project at 'pa
 
 ### solution add-reference Parameters
 
+[!div class="mx-tdCol2BreakAll"]
 |Parameter<br />Alias|Description|
 |---------|---------|
 |`--path`<br />`-p`|The path to the referenced project<br />**Required**|
@@ -83,6 +85,7 @@ Adds a solution component to the target unmanaged solution in the connected Data
 
 ### solution add-solution-component Parameters
 
+[!div class="mx-tdCol2BreakAll"]
 |Parameter<br />Alias|Description|
 |---------|---------|
 |`--solutionUniqueName`<br />`-sn`|Name of the solution<br />**Required**|
@@ -101,6 +104,7 @@ Upload a Dataverse Solution project to run against the PowerApps Checker Service
 
 ### solution check Parameters
 
+[!div class="mx-tdCol2BreakAll"]
 |Parameter<br />Alias|Description|
 |---------|---------|
 |`--path`<br />`-p`|Path where the to-be-checked solution zip file(s) exist; path can contain glob/wildcard characters|
@@ -122,6 +126,7 @@ Create a solution project based on an existing solution in your Organization
 
 ### solution clone Parameters
 
+[!div class="mx-tdCol2BreakAll"]
 |Parameter<br />Alias|Description|
 |---------|---------|
 |`--name`<br />`-n`|The name of the solution to be exported<br />**Required**|
@@ -141,6 +146,7 @@ Create a settings file from solution zip or solution folder.
 
 ### solution create-settings Parameters
 
+[!div class="mx-tdCol2BreakAll"]
 |Parameter<br />Alias|Description|
 |---------|---------|
 |`--solution-zip`<br />`-z`|Path to solution zip file.|
@@ -157,6 +163,7 @@ Delete Dataverse Solution from the current Dataverse Environment
 
 ### solution delete Parameters
 
+[!div class="mx-tdCol2BreakAll"]
 |Parameter<br />Alias|Description|
 |---------|---------|
 |`--solution-name`<br />`-sn`|Name of the solution<br />**Required**|
@@ -171,6 +178,7 @@ Export a Dataverse Solution from the current Dataverse Environment
 
 ### solution export Parameters
 
+[!div class="mx-tdCol2BreakAll"]
 |Parameter<br />Alias|Description|
 |---------|---------|
 |`--path`<br />`-p`|Path where the exported solution zip file will be written<br />**Required**|
@@ -191,6 +199,7 @@ Import the Dataverse Solution into the current Dataverse Environment
 
 ### solution import Parameters
 
+[!div class="mx-tdCol2BreakAll"]
 |Parameter<br />Alias|Description|
 |---------|---------|
 |`--path`<br />`-p`|Path to solution zip file. If not specified, assumes the current folder is a cdsproj project.|
@@ -215,6 +224,7 @@ Initializes a directory with a new Dataverse solution project
 
 ### solution init Parameters
 
+[!div class="mx-tdCol2BreakAll"]
 |Parameter<br />Alias|Description|
 |---------|---------|
 |`--publisher-name`<br />`-pn`|Name of the Dataverse solution publisher<br />**Required**<br />**Note**: Only characters within the ranges [A - Z], [a - z], [0 - 9], or _ are allowed. The first character may only be in the ranges [A - Z], [a - z], or _.|
@@ -231,6 +241,7 @@ List all Solutions from the current Dataverse Organization
 
 ### solution list Parameters
 
+[!div class="mx-tdCol2BreakAll"]
 |Parameter<br />Alias|Description|
 |---------|---------|
 |`--environment-id`<br />|**Deprecated**: Use `--environment` instead.|
@@ -246,6 +257,7 @@ Sets version for solution loaded in Dataverse environment.
 
 ### solution online-version Parameters
 
+[!div class="mx-tdCol2BreakAll"]
 |Parameter<br />Alias|Description|
 |---------|---------|
 |`--solution-name`<br />`-sn`|Name of the solution<br />**Required**|
@@ -261,6 +273,7 @@ Package solution components on local filesystem into solution.zip (SolutionPacka
 
 ### solution pack Parameters
 
+[!div class="mx-tdCol2BreakAll"]
 |Parameter<br />Alias|Description|
 |---------|---------|
 |`--zipfile`<br />`-z`|The full path to the solution ZIP file<br />**Required**|
@@ -290,6 +303,7 @@ Publishes all customizations
 
 ### solution publish Parameters
 
+[!div class="mx-tdCol2BreakAll"]
 |Parameter<br />Alias|Description|
 |---------|---------|
 |`--async`<br />`-a`|Imports solution asynchronously<br />This parameter requires no value. It is a switch.|
@@ -305,6 +319,7 @@ Sync the current Dataverse solution project to the current state of the solution
 
 ### solution sync Parameters
 
+[!div class="mx-tdCol2BreakAll"]
 |Parameter<br />Alias|Description|
 |---------|---------|
 |`--solution-folder`<br />`-f`|Path to the local, unpacked solution folder: either the root of the 'Other/Solution.xml' file or a folder with a .cdsproj file.|
@@ -322,6 +337,7 @@ Extract solution components from solution.zip onto local filesystem (SolutionPac
 
 ### solution unpack Parameters
 
+[!div class="mx-tdCol2BreakAll"]
 |Parameter<br />Alias|Description|
 |---------|---------|
 |`--zipfile`<br />`-z`|The full path to the solution ZIP file<br />**Required**|
@@ -351,6 +367,7 @@ Option to stage the Dataverse solution for upgrade
 
 ### solution upgrade Parameters
 
+[!div class="mx-tdCol2BreakAll"]
 |Parameter<br />Alias|Description|
 |---------|---------|
 |`--solution-name`<br />`-sn`|Name of the solution<br />**Required**|
@@ -367,6 +384,7 @@ Update build or revision version for solution
 
 ### solution version Parameters
 
+[!div class="mx-tdCol2BreakAll"]
 |Parameter<br />Alias|Description|
 |---------|---------|
 |`--strategy`<br />`-s`|Updates build version for 'Solution.xml' file using specified strategy. If using gittags, set personal access token in the following environment variable "PacCli.PAT"<br />Use one of these values:<br />- `gittags`<br />- `filetracking`<br />- `solution`|
