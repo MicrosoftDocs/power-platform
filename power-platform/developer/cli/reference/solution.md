@@ -176,7 +176,7 @@ Export a Dataverse Solution from the current Dataverse Environment
 |`--name`|`-n`|The name of the solution to be exported<br />**Required**|
 |`--managed`|`-m`|Whether the solution should be exported as a managed solution<br />This parameter requires no value. It is a switch.|
 |`--targetversion`|`-v`|**Deprecated** This parameter will be ignored.<br />The version that the exported solution will support|
-|`--include`|`-i`|Which settings should be included in the solution being exported|
+|`--include`|`-i`|Which settings should be included in the solution being exported<br />Use one or more of these values:<br />- `autonumbering`<br />- `calendar`<br />- `customization`<br />- `emailtracking`<br />- `externalapplications`<br />- `general`<br />- `isvconfig`<br />- `marketing`<br />- `outlooksynchronization`<br />- `relationshiproles`<br />- `sales`|
 |`--async`|`-a`|Exports solution asynchronously<br />This parameter requires no value. It is a switch.|
 |`--max-async-wait-time`|`-wt`|Max asynchronous wait time in minutes. Default value is 60 minutes|
 
@@ -194,7 +194,7 @@ Create a solution project based on an existing solution in your Organization
 |---------|---------|---------|
 |`--name`|`-n`|The name of the solution to be exported<br />**Required**|
 |`--targetversion`|`-v`|**Deprecated** This parameter will be ignored.<br />The version that the exported solution will support|
-|`--include`|`-i`|Which settings should be included in the solution being exported|
+|`--include`|`-i`|Which settings should be included in the solution being exported<br />Use one or more of these values:<br />- `autonumbering`<br />- `calendar`<br />- `customization`<br />- `emailtracking`<br />- `externalapplications`<br />- `general`<br />- `isvconfig`<br />- `marketing`<br />- `outlooksynchronization`<br />- `relationshiproles`<br />- `sales`|
 |`--outputDirectory`|`-o`|Output directory|
 |`--async`|`-a`|Exports solution asynchronously<br />This parameter requires no value. It is a switch.|
 |`--max-async-wait-time`|`-wt`|Max asynchronous wait time in minutes. Default value is 60 minutes|
@@ -371,7 +371,7 @@ Sync the current Dataverse solution project to the current state of the solution
 |Parameter|Alias|Description|
 |---------|---------|---------|
 |`--solution-folder`|`-f`|Path to the local, unpacked solution folder: either the root of the 'Other/Solution.xml' file or a folder with a .cdsproj file.|
-|`--include`|`-i`|Which settings should be included in the solution being exported|
+|`--include`|`-i`|Which settings should be included in the solution being exported<br />Use one or more of these values:<br />- `autonumbering`<br />- `calendar`<br />- `customization`<br />- `emailtracking`<br />- `externalapplications`<br />- `general`<br />- `isvconfig`<br />- `marketing`<br />- `outlooksynchronization`<br />- `relationshiproles`<br />- `sales`|
 |`--async`|`-a`|Exports solution asynchronously<br />This parameter requires no value. It is a switch.|
 |`--max-async-wait-time`|`-wt`|Max asynchronous wait time in minutes. Default value is 60 minutes|
 
