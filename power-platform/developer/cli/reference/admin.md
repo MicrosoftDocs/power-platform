@@ -48,12 +48,12 @@ List all environments from your tenant
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--environment`|`-env`|List all environments that contain given string in their name or id.|
-|`--environment-id`|`-id`|List all environments that contain given string in their id.|
-|`--url`|`-u`|List all environments that contain given string in their url.|
-|`--type`|`-t`|List all environments with the given type.|
-|`--name`|`-n`|List all environments that contain given string in their name.|
-|`--organization-id`|`-oi`|List all environments that contain given string in their organization id.|
+|<span style="white-space: nowrap;">`--environment`</span>|`-env`|List all environments that contain given string in their name or id.|
+|<span style="white-space: nowrap;">`--environment-id`</span>|`-id`|List all environments that contain given string in their id.|
+|<span style="white-space: nowrap;">`--url`</span>|`-u`|List all environments that contain given string in their url.|
+|<span style="white-space: nowrap;">`--type`</span>|`-t`|List all environments with the given type.|
+|<span style="white-space: nowrap;">`--name`</span>|`-n`|List all environments that contain given string in their name.|
+|<span style="white-space: nowrap;">`--organization-id`</span>|`-oi`|List all environments that contain given string in their organization id.|
 
 [!INCLUDE [admin-list-remarks](includes/admin-list-remarks.md)]
 
@@ -67,16 +67,16 @@ Creates a Dataverse Environment in your tenant.
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--name`|`-n`|Sets the name of the environment.|
-|`--region`|`-r`|Sets the environment's region name. [defaults to unitedstates]|
-|`--type`|`-t`|Sets the environment Type.<br />**Required**|
-|`--currency`|`-c`|Sets the currency used for your environment. [defaults to USD]|
-|`--language`|`-l`|Sets the language used for your environment. [defaults to English]|
-|`--templates`|`-tm`|Sets Dynamics365 app that needs to be deployed. [passed as comma separated values] e.g : -tm "D365_Sample, D365_Sales"|
-|`--domain`|`-d`|The domain name is part of the environment URL. If domain name is already in use, a numeric value will be appended to the domain name. Eg: If 'contoso' is already in use, then the environment URL will be updated to https://{contoso}0.crm.dynamics.com.|
-|`--input-file`|`-if`|The verb arguments to be passed in a .json input file. Eg: {"name" : "contoso"}. The arguments passed through command-line will take precedence over arguments from the .json input file.|
-|`--async`|`-a`|Optional boolean argument to run pac verbs asynchronously, defaults to false.|
-|`--team-id`|`-tid`|Team Id as Guid|
+|<span style="white-space: nowrap;">`--name`</span>|`-n`|Sets the name of the environment.|
+|<span style="white-space: nowrap;">`--region`</span>|`-r`|Sets the environment's region name. [defaults to unitedstates]|
+|<span style="white-space: nowrap;">`--type`</span>|`-t`|Sets the environment Type.<br />**Required**|
+|<span style="white-space: nowrap;">`--currency`</span>|`-c`|Sets the currency used for your environment. [defaults to USD]|
+|<span style="white-space: nowrap;">`--language`</span>|`-l`|Sets the language used for your environment. [defaults to English]|
+|<span style="white-space: nowrap;">`--templates`</span>|`-tm`|Sets Dynamics365 app that needs to be deployed. [passed as comma separated values] e.g : -tm "D365_Sample, D365_Sales"|
+|<span style="white-space: nowrap;">`--domain`</span>|`-d`|The domain name is part of the environment URL. If domain name is already in use, a numeric value will be appended to the domain name. Eg: If 'contoso' is already in use, then the environment URL will be updated to https://{contoso}0.crm.dynamics.com.|
+|<span style="white-space: nowrap;">`--input-file`</span>|`-if`|The verb arguments to be passed in a .json input file. Eg: {"name" : "contoso"}. The arguments passed through command-line will take precedence over arguments from the .json input file.|
+|<span style="white-space: nowrap;">`--async`</span>|`-a`|Optional boolean argument to run pac verbs asynchronously, defaults to false.|
+|<span style="white-space: nowrap;">`--team-id`</span>|`-tid`|Team Id as Guid|
 
 [!INCLUDE [admin-create-remarks](includes/admin-create-remarks.md)]
 
@@ -90,11 +90,11 @@ Takes a manual backup of your environment.
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--environment`|`-env`|Environment URL or ID of the Environment that requires backup.|
-|`--url`|`-u`|Url of the environment that requires backup.|
-|`--label`|`-l`|Sets the backup label as provided.<br />**Required**|
-|`--environment-id`|`-id`|Id of the environment that requires backup.|
-|`--notes`|`-n`|**ignored**: Additional notes for this backup.|
+|<span style="white-space: nowrap;">`--environment`</span>|`-env`|Environment URL or ID of the Environment that requires backup.|
+|<span style="white-space: nowrap;">`--url`</span>|`-u`|Url of the environment that requires backup.|
+|<span style="white-space: nowrap;">`--label`</span>|`-l`|Sets the backup label as provided.<br />**Required**|
+|<span style="white-space: nowrap;">`--environment-id`</span>|`-id`|Id of the environment that requires backup.|
+|<span style="white-space: nowrap;">`--notes`</span>|`-n`|**ignored**: Additional notes for this backup.|
 
 [!INCLUDE [admin-backup-remarks](includes/admin-backup-remarks.md)]
 
@@ -108,10 +108,10 @@ Deletes Environment from your tenant
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--environment`|`-env`|Environment URL or ID of the Environment that needs to be deleted from your tenant.|
-|`--url`|`-u`|URL of the Environment that needs to be deleted from your tenant|
-|`--environment-id`|`-id`|Id of the environment to delete|
-|`--async`|`-a`|Optional boolean argument to run pac verbs asynchronously, defaults to false.|
+|<span style="white-space: nowrap;">`--environment`</span>|`-env`|Environment URL or ID of the Environment that needs to be deleted from your tenant.|
+|<span style="white-space: nowrap;">`--url`</span>|`-u`|URL of the Environment that needs to be deleted from your tenant|
+|<span style="white-space: nowrap;">`--environment-id`</span>|`-id`|Id of the environment to delete|
+|<span style="white-space: nowrap;">`--async`</span>|`-a`|Optional boolean argument to run pac verbs asynchronously, defaults to false.|
 
 [!INCLUDE [admin-delete-remarks](includes/admin-delete-remarks.md)]
 
@@ -125,17 +125,17 @@ Reset environment from your tenant
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--environment`|`-env`|URL or ID of the Environment that needs to be reset.|
-|`--currency`|`-c`|Sets the currency used for your environment. [defaults to USD]|
-|`--domain`|`-d`|The domain name is part of the environment URL. If domain name is already in use, a numeric value will be appended to the domain name. Eg: If 'contoso' is already in use, then the environment URL will be updated to https://{contoso}0.crm.dynamics.com.|
-|`--environment-id`|`-id`|Id of the environment to reset|
-|`--url`|`-u`|Url of the environment to reset|
-|`--name`|`-n`|Sets the name of the environment.|
-|`--language`|`-l`|Sets the language used for your environment. [defaults to English]|
-|`--purpose`|`-p`|Sets the description used to associate the environment with a specific intent.|
-|`--templates`|`-t`|Sets Dynamics365 app that needs to be deployed. [passed as comma separated values] e.g : -tm "D365_Sample, D365_Sales"|
-|`--input-file`|`-if`|The verb arguments to be passed in a .json input file. Eg: {"name" : "contoso"}. The arguments passed through command-line will take precedence over arguments from the .json input file.|
-|`--async`|`-a`|Optional boolean argument to run pac verbs asynchronously, defaults to false.|
+|<span style="white-space: nowrap;">`--environment`</span>|`-env`|URL or ID of the Environment that needs to be reset.|
+|<span style="white-space: nowrap;">`--currency`</span>|`-c`|Sets the currency used for your environment. [defaults to USD]|
+|<span style="white-space: nowrap;">`--domain`</span>|`-d`|The domain name is part of the environment URL. If domain name is already in use, a numeric value will be appended to the domain name. Eg: If 'contoso' is already in use, then the environment URL will be updated to https://{contoso}0.crm.dynamics.com.|
+|<span style="white-space: nowrap;">`--environment-id`</span>|`-id`|Id of the environment to reset|
+|<span style="white-space: nowrap;">`--url`</span>|`-u`|Url of the environment to reset|
+|<span style="white-space: nowrap;">`--name`</span>|`-n`|Sets the name of the environment.|
+|<span style="white-space: nowrap;">`--language`</span>|`-l`|Sets the language used for your environment. [defaults to English]|
+|<span style="white-space: nowrap;">`--purpose`</span>|`-p`|Sets the description used to associate the environment with a specific intent.|
+|<span style="white-space: nowrap;">`--templates`</span>|`-t`|Sets Dynamics365 app that needs to be deployed. [passed as comma separated values] e.g : -tm "D365_Sample, D365_Sales"|
+|<span style="white-space: nowrap;">`--input-file`</span>|`-if`|The verb arguments to be passed in a .json input file. Eg: {"name" : "contoso"}. The arguments passed through command-line will take precedence over arguments from the .json input file.|
+|<span style="white-space: nowrap;">`--async`</span>|`-a`|Optional boolean argument to run pac verbs asynchronously, defaults to false.|
 
 [!INCLUDE [admin-reset-remarks](includes/admin-reset-remarks.md)]
 
@@ -149,9 +149,9 @@ Lists all backups of your environment.
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--environment`|`-env`|List all environments that contains given string in their Environment ID or URL.|
-|`--url`|`-u`|Url of the environment that has backups.|
-|`--environment-id`|`-id`|Id of the environment that has backups.|
+|<span style="white-space: nowrap;">`--environment`</span>|`-env`|List all environments that contains given string in their Environment ID or URL.|
+|<span style="white-space: nowrap;">`--url`</span>|`-u`|Url of the environment that has backups.|
+|<span style="white-space: nowrap;">`--environment-id`</span>|`-id`|Id of the environment that has backups.|
 
 [!INCLUDE [admin-list-backups-remarks](includes/admin-list-backups-remarks.md)]
 
@@ -165,15 +165,15 @@ Restores an environment to a given backup.
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--source-env`|`-se`|Environment URL or ID of the source environment required for restore.|
-|`--target-env`|`-te`|Environment URL or ID of the target environment required for restore. This would default to source URL/ID if not provided.|
-|`--source-url`|`-su`|Environment URL of source environment required for restore.|
-|`--target-url`|`-tu`|Environment URL of target environment required for restore. This would default to source URL if not provided.|
-|`--source-id`|`-si`|Environment Id of source environment required for restore.|
-|`--target-id`|`-ti`|Environment Id of target environment required for restore. This would default to source Id if not provided.|
-|`--selected-backup`|`-sb`|DateTime of the backup in 'mm/dd/yyyy hh:mm' format OR string 'latest'.<br />**Required**|
-|`--name`|`-n`|Optional name of the restored environment.|
-|`--async`|`-a`|Optional boolean argument to run pac verbs asynchronously, defaults to false.|
+|<span style="white-space: nowrap;">`--source-env`</span>|`-se`|Environment URL or ID of the source environment required for restore.|
+|<span style="white-space: nowrap;">`--target-env`</span>|`-te`|Environment URL or ID of the target environment required for restore. This would default to source URL/ID if not provided.|
+|<span style="white-space: nowrap;">`--source-url`</span>|`-su`|Environment URL of source environment required for restore.|
+|<span style="white-space: nowrap;">`--target-url`</span>|`-tu`|Environment URL of target environment required for restore. This would default to source URL if not provided.|
+|<span style="white-space: nowrap;">`--source-id`</span>|`-si`|Environment Id of source environment required for restore.|
+|<span style="white-space: nowrap;">`--target-id`</span>|`-ti`|Environment Id of target environment required for restore. This would default to source Id if not provided.|
+|<span style="white-space: nowrap;">`--selected-backup`</span>|`-sb`|DateTime of the backup in 'mm/dd/yyyy hh:mm' format OR string 'latest'.<br />**Required**|
+|<span style="white-space: nowrap;">`--name`</span>|`-n`|Optional name of the restored environment.|
+|<span style="white-space: nowrap;">`--async`</span>|`-a`|Optional boolean argument to run pac verbs asynchronously, defaults to false.|
 
 [!INCLUDE [admin-restore-remarks](includes/admin-restore-remarks.md)]
 
@@ -187,15 +187,15 @@ Copy Source Environment to Destination Environment
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--source-env`|`-se`|Environment URL or ID of the source environment that is being copied|
-|`--target-env`|`-te`|Environment URL or ID of the target environment|
-|`--source-url`|`-su`|Url of the source environment that is being copied|
-|`--target-url`|`-tu`|Url of the target environment|
-|`--source-id`|`-si`|Id of the source environment that is being copied|
-|`--target-id`|`-ti`|Id of the target environment|
-|`--name`|`-n`|Name of the target environment|
-|`--type`|`-t`||
-|`--async`|`-a`|Optional boolean argument to run pac verbs asynchronously, defaults to false.|
+|<span style="white-space: nowrap;">`--source-env`</span>|`-se`|Environment URL or ID of the source environment that is being copied|
+|<span style="white-space: nowrap;">`--target-env`</span>|`-te`|Environment URL or ID of the target environment|
+|<span style="white-space: nowrap;">`--source-url`</span>|`-su`|Url of the source environment that is being copied|
+|<span style="white-space: nowrap;">`--target-url`</span>|`-tu`|Url of the target environment|
+|<span style="white-space: nowrap;">`--source-id`</span>|`-si`|Id of the source environment that is being copied|
+|<span style="white-space: nowrap;">`--target-id`</span>|`-ti`|Id of the target environment|
+|<span style="white-space: nowrap;">`--name`</span>|`-n`|Name of the target environment|
+|<span style="white-space: nowrap;">`--type`</span>|`-t`||
+|<span style="white-space: nowrap;">`--async`</span>|`-a`|Optional boolean argument to run pac verbs asynchronously, defaults to false.|
 
 [!INCLUDE [admin-copy-remarks](includes/admin-copy-remarks.md)]
 
@@ -215,10 +215,10 @@ Assign a user to a target environment.
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--environment`|`-env`|ID or URL of the environment to assign a user to.<br />**Required**|
-|`--user`|`-u`|Object ID of AAD user to be assigned to environment<br />**Required**|
-|`--role`|`-r`|Name or ID of security role to be applied to user<br />**Required**|
-|`--async`|`-a`|Optional boolean argument to run pac verbs asynchronously, defaults to false.|
+|<span style="white-space: nowrap;">`--environment`</span>|`-env`|ID or URL of the environment to assign a user to.<br />**Required**|
+|<span style="white-space: nowrap;">`--user`</span>|`-u`|Object ID of AAD user to be assigned to environment<br />**Required**|
+|<span style="white-space: nowrap;">`--role`</span>|`-r`|Name or ID of security role to be applied to user<br />**Required**|
+|<span style="white-space: nowrap;">`--async`</span>|`-a`|Optional boolean argument to run pac verbs asynchronously, defaults to false.|
 
 [!INCLUDE [admin-assign-user-remarks](includes/admin-assign-user-remarks.md)]
 

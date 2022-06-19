@@ -44,10 +44,10 @@ Initializes a directory with a new Dataverse package project
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--outputDirectory`|`-o`|Output directory|
-|`--template`||The name of the template to instantiate. Note: the template 'legacy' will be removed in a future release.|
-|`--package-name`||Sets the default name of the package. Applies to the generation of ImportExtension.GetNameOfImport.|
-|`--include-PkgAssets-Content`||Indicates whether to also include some sample files for the PkgAssets/Content folder.|
+|<span style="white-space: nowrap;">`--outputDirectory`</span>|`-o`|Output directory|
+|<span style="white-space: nowrap;">`--template`</span>||The name of the template to instantiate. Note: the template 'legacy' will be removed in a future release.|
+|<span style="white-space: nowrap;">`--package-name`</span>||Sets the default name of the package. Applies to the generation of ImportExtension.GetNameOfImport.|
+|<span style="white-space: nowrap;">`--include-PkgAssets-Content`</span>||Indicates whether to also include some sample files for the PkgAssets/Content folder.|
 
 [!INCLUDE [package-init-remarks](includes/package-init-remarks.md)]
 
@@ -61,10 +61,10 @@ Adds an external package to a PD Package project
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--path`|`-p`|Path to the external package<br />**Required**|
-|`--package-type`|`-t`|The type of the package being added. e.g. 'xpp' for FnO packages.<br />**Required**|
-|`--import-order`||A whole number that indicates the order to insert this item into the final ImportConfig.xml file at build time. Negative numbers are inserted before existing elements. Positive numbers are added after existing elements.|
-|`--skip-validation`|`-sv`|Adds the item to the project file even if the file does not exist or appears to be invalid. Note, this will not affect any validation that is performed by MSBuild.|
+|<span style="white-space: nowrap;">`--path`</span>|`-p`|Path to the external package<br />**Required**|
+|<span style="white-space: nowrap;">`--package-type`</span>|`-t`|The type of the package being added. e.g. 'xpp' for FnO packages.<br />**Required**|
+|<span style="white-space: nowrap;">`--import-order`</span>||A whole number that indicates the order to insert this item into the final ImportConfig.xml file at build time. Negative numbers are inserted before existing elements. Positive numbers are added after existing elements.|
+|<span style="white-space: nowrap;">`--skip-validation`</span>|`-sv`|Adds the item to the project file even if the file does not exist or appears to be invalid. Note, this will not affect any validation that is performed by MSBuild.|
 
 [!INCLUDE [package-add-external-package-remarks](includes/package-add-external-package-remarks.md)]
 
@@ -78,16 +78,16 @@ Adds a prebuilt Dataverse solution file to a PD Package project
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--path`|`-p`|Path to the Dataverse solution file (must be *.zip)<br />**Required**|
-|`--import-order`||A whole number that indicates the order to insert this item into the final ImportConfig.xml file at build time. Negative numbers are inserted before existing elements. Positive numbers are added after existing elements.|
-|`--skip-validation`|`-sv`|Adds the item to the project file even if the file does not exist or appears to be invalid. Note, this will not affect any validation that is performed by MSBuild.|
-|`--publish-workflows-activate-plugins`||Explicitly indicates whether to publish the workflows and activate plugins when this solution is imported.|
-|`--overwrite-unmanaged-customizations`||Explicitly indicates whether to overwrite unmanaged customizations when this solution is imported.|
-|`--import-mode`||Explicitly specifies the required mode when importing this solution.|
-|`--missing-dependency-behavior`||Specifies the behavior on import when a dependency of this solution is missing from the target environment.|
-|`--dependency-overrides`||A semicolon delimited list of overrides. This value overrides any dependency information encoded in the solution's metadata. Each override should be in the format: `<uniquename>:<minVersion>:<maxVersion>`. Where the minVersion and maxVersion is optional but should be in .Net version format syntax.|
-|`--layer-order-behavior`||This argument is applicable only for 1st party solutions.|
-|`--layer-order-solution-unique-names`||This argument is applicable only for 1st party solutions.|
+|<span style="white-space: nowrap;">`--path`</span>|`-p`|Path to the Dataverse solution file (must be *.zip)<br />**Required**|
+|<span style="white-space: nowrap;">`--import-order`</span>||A whole number that indicates the order to insert this item into the final ImportConfig.xml file at build time. Negative numbers are inserted before existing elements. Positive numbers are added after existing elements.|
+|<span style="white-space: nowrap;">`--skip-validation`</span>|`-sv`|Adds the item to the project file even if the file does not exist or appears to be invalid. Note, this will not affect any validation that is performed by MSBuild.|
+|<span style="white-space: nowrap;">`--publish-workflows-activate-plugins`</span>||Explicitly indicates whether to publish the workflows and activate plugins when this solution is imported.|
+|<span style="white-space: nowrap;">`--overwrite-unmanaged-customizations`</span>||Explicitly indicates whether to overwrite unmanaged customizations when this solution is imported.|
+|<span style="white-space: nowrap;">`--import-mode`</span>||Explicitly specifies the required mode when importing this solution.|
+|<span style="white-space: nowrap;">`--missing-dependency-behavior`</span>||Specifies the behavior on import when a dependency of this solution is missing from the target environment.|
+|<span style="white-space: nowrap;">`--dependency-overrides`</span>||A semicolon delimited list of overrides. This value overrides any dependency information encoded in the solution's metadata. Each override should be in the format: `<uniquename>:<minVersion>:<maxVersion>`. Where the minVersion and maxVersion is optional but should be in .Net version format syntax.|
+|<span style="white-space: nowrap;">`--layer-order-behavior`</span>||This argument is applicable only for 1st party solutions.|
+|<span style="white-space: nowrap;">`--layer-order-solution-unique-names`</span>||This argument is applicable only for 1st party solutions.|
 
 [!INCLUDE [package-add-solution-remarks](includes/package-add-solution-remarks.md)]
 
@@ -101,15 +101,15 @@ Adds reference to Dataverse solution project
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--path`|`-p`|The path to the referenced Dataverse solution project<br />**Required**|
-|`--import-order`||A whole number that indicates the order to insert this item into the final ImportConfig.xml file at build time. Negative numbers are inserted before existing elements. Positive numbers are added after existing elements.|
-|`--publish-workflows-activate-plugins`||Explicitly indicates whether to publish the workflows and activate plugins when this solution is imported.|
-|`--overwrite-unmanaged-customizations`||Explicitly indicates whether to overwrite unmanaged customizations when this solution is imported.|
-|`--import-mode`||Explicitly specifies the required mode when importing this solution.|
-|`--missing-dependency-behavior`||Specifies the behavior on import when a dependency of this solution is missing from the target environment.|
-|`--dependency-overrides`||A semicolon delimited list of overrides. This value overrides any dependency information encoded in the solution's metadata. Each override should be in the format: `<uniquename>:<minVersion>:<maxVersion>`. Where the minVersion and maxVersion is optional but should be in .Net version format syntax.|
-|`--layer-order-behavior`||This argument is applicable only for 1st party solutions.|
-|`--layer-order-solution-unique-names`||This argument is applicable only for 1st party solutions.|
+|<span style="white-space: nowrap;">`--path`</span>|`-p`|The path to the referenced Dataverse solution project<br />**Required**|
+|<span style="white-space: nowrap;">`--import-order`</span>||A whole number that indicates the order to insert this item into the final ImportConfig.xml file at build time. Negative numbers are inserted before existing elements. Positive numbers are added after existing elements.|
+|<span style="white-space: nowrap;">`--publish-workflows-activate-plugins`</span>||Explicitly indicates whether to publish the workflows and activate plugins when this solution is imported.|
+|<span style="white-space: nowrap;">`--overwrite-unmanaged-customizations`</span>||Explicitly indicates whether to overwrite unmanaged customizations when this solution is imported.|
+|<span style="white-space: nowrap;">`--import-mode`</span>||Explicitly specifies the required mode when importing this solution.|
+|<span style="white-space: nowrap;">`--missing-dependency-behavior`</span>||Specifies the behavior on import when a dependency of this solution is missing from the target environment.|
+|<span style="white-space: nowrap;">`--dependency-overrides`</span>||A semicolon delimited list of overrides. This value overrides any dependency information encoded in the solution's metadata. Each override should be in the format: `<uniquename>:<minVersion>:<maxVersion>`. Where the minVersion and maxVersion is optional but should be in .Net version format syntax.|
+|<span style="white-space: nowrap;">`--layer-order-behavior`</span>||This argument is applicable only for 1st party solutions.|
+|<span style="white-space: nowrap;">`--layer-order-solution-unique-names`</span>||This argument is applicable only for 1st party solutions.|
 
 [!INCLUDE [package-add-reference-remarks](includes/package-add-reference-remarks.md)]
 
@@ -123,9 +123,9 @@ Deploys package to Dataverse environment
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--logFile`|`-lf`|Log file path|
-|`--logConsole`|`-c`|Output log to console|
-|`--package`|`-p`|path to a package dll or zip file with a package<br />**Required**|
+|<span style="white-space: nowrap;">`--logFile`</span>|`-lf`|Log file path|
+|<span style="white-space: nowrap;">`--logConsole`</span>|`-c`|Output log to console|
+|<span style="white-space: nowrap;">`--package`</span>|`-p`|path to a package dll or zip file with a package<br />**Required**|
 
 [!INCLUDE [package-deploy-remarks](includes/package-deploy-remarks.md)]
 
@@ -139,7 +139,7 @@ Shows details of Dataverse package
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--package`|`-p`|path to a package dll or zip file with a package<br />**Required**|
+|<span style="white-space: nowrap;">`--package`</span>|`-p`|path to a package dll or zip file with a package<br />**Required**|
 
 [!INCLUDE [package-show-remarks](includes/package-show-remarks.md)]
 

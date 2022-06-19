@@ -40,8 +40,8 @@ List available Dataverse applications from AppSource
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--environment-id`|`-id`|List available Dataverse applications for given environment; if not specified, list all applications in the tenant (default: list for all environments)|
-|`--output`|`-o`|Location of the JSON file to be created with list of the Dataverse applications from AppSource|
+|<span style="white-space: nowrap;">`--environment-id`</span>|`-id`|List available Dataverse applications for given environment; if not specified, list all applications in the tenant (default: list for all environments)|
+|<span style="white-space: nowrap;">`--output`</span>|`-o`|Location of the JSON file to be created with list of the Dataverse applications from AppSource|
 
 [!INCLUDE [application-list-remarks](includes/application-list-remarks.md)]
 
@@ -55,9 +55,9 @@ Installs Dataverse application to given environment
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--environment-id`|`-id`|Target environment application will be installed to<br />**Required**|
-|`--application-name`|`-an`|Unique name of the application that will be installed to target environment|
-|`--application-list`|`-al`|Location of the JSON file with list of the Dataverse applications from AppSource to be installed|
+|<span style="white-space: nowrap;">`--environment-id`</span>|`-id`|Target environment application will be installed to<br />**Required**|
+|<span style="white-space: nowrap;">`--application-name`</span>|`-an`|Unique name of the application that will be installed to target environment|
+|<span style="white-space: nowrap;">`--application-list`</span>|`-al`|Location of the JSON file with list of the Dataverse applications from AppSource to be installed|
 
 [!INCLUDE [application-install-remarks](includes/application-install-remarks.md)]
 

@@ -54,7 +54,7 @@ Display the results of a query against Dataverse
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--sql`|`-s`|The SQL SELECT query to run<br />**Required**|
+|<span style="white-space: nowrap;">`--sql`</span>|`-s`|The SQL SELECT query to run<br />**Required**|
 
 [!INCLUDE [org-query-remarks](includes/org-query-remarks.md)]
 
@@ -68,7 +68,7 @@ Lists all of the Dataverse Organizations the user has access to
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--filter`|`-f`|Show only environments containing filter criteria|
+|<span style="white-space: nowrap;">`--filter`</span>|`-f`|Show only environments containing filter criteria|
 
 [!INCLUDE [org-list-remarks](includes/org-list-remarks.md)]
 
