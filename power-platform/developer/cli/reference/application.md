@@ -36,16 +36,17 @@ Installs Dataverse application to given environment
 
 [!INCLUDE [application-install-intro](includes/application-install-intro.md)]
 
-### application install Parameters
 
-#### Required Parameters
+### Required Parameters
 
-##### `--environment-id`	`-id`
+#### `--environment-id`	`-id`
 
 
 #### Optional Parameters
 
-##### `--environment-id`	`-id`
+##### `--application-name`	`-an`
+
+##### `--application-list`	`-al`
 
 [!INCLUDE [application-install-remarks](includes/application-install-remarks.md)]
 
@@ -55,9 +56,12 @@ List available Dataverse applications from AppSource
 
 [!INCLUDE [application-list-intro](includes/application-list-intro.md)]
 
-### application list Parameters
 
 #### Optional Parameters
+
+##### `--environment-id`	`-id`
+
+##### `--output`	`-o`
 
 [!INCLUDE [application-list-remarks](includes/application-list-remarks.md)]
 

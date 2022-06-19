@@ -37,20 +37,17 @@ Operating with Power Apps .msapp files
 
 [!INCLUDE [canvas-create-intro](includes/canvas-create-intro.md)]
 
-### canvas create Parameters
 
-#### Required Parameters
+### Required Parameters
 
-##### `--msapp`	``
+#### `--msapp`	``
 
-##### `--connector-id`	``
+#### `--connector-id`	``
 
 
 #### Optional Parameters
 
-##### `--msapp`	``
-
-##### `--connector-id`	``
+##### `--environment`	``
 
 [!INCLUDE [canvas-create-remarks](includes/canvas-create-remarks.md)]
 
@@ -60,13 +57,12 @@ Operating with Power Apps .msapp files
 
 [!INCLUDE [canvas-pack-intro](includes/canvas-pack-intro.md)]
 
-### canvas pack Parameters
 
-#### Required Parameters
+### Required Parameters
 
-##### `--sources`	``
+#### `--sources`	``
 
-##### `--msapp`	``
+#### `--msapp`	``
 
 [!INCLUDE [canvas-pack-remarks](includes/canvas-pack-remarks.md)]
 
@@ -76,16 +72,15 @@ Operating with Power Apps .msapp files
 
 [!INCLUDE [canvas-unpack-intro](includes/canvas-unpack-intro.md)]
 
-### canvas unpack Parameters
 
-#### Required Parameters
+### Required Parameters
 
-##### `--msapp`	``
+#### `--msapp`	``
 
 
 #### Optional Parameters
 
-##### `--msapp`	``
+##### `--sources`	``
 
 [!INCLUDE [canvas-unpack-remarks](includes/canvas-unpack-remarks.md)]
 

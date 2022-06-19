@@ -44,24 +44,19 @@ Assign a user to a target environment.
 
 [!INCLUDE [admin-assign-user-intro](includes/admin-assign-user-intro.md)]
 
-### admin assign-user Parameters
 
-#### Required Parameters
+### Required Parameters
 
-##### `--environment`	`-env`
+#### `--environment`	`-env`
 
-##### `--user`	`-u`
+#### `--user`	`-u`
 
-##### `--role`	`-r`
+#### `--role`	`-r`
 
 
 #### Optional Parameters
 
-##### `--environment`	`-env`
-
-##### `--user`	`-u`
-
-##### `--role`	`-r`
+##### `--async`	`-a`
 
 [!INCLUDE [admin-assign-user-remarks](includes/admin-assign-user-remarks.md)]
 
@@ -71,16 +66,21 @@ Takes a manual backup of your environment.
 
 [!INCLUDE [admin-backup-intro](includes/admin-backup-intro.md)]
 
-### admin backup Parameters
 
-#### Required Parameters
+### Required Parameters
 
-##### `--label`	`-l`
+#### `--label`	`-l`
 
 
 #### Optional Parameters
 
-##### `--label`	`-l`
+##### `--environment`	`-env`
+
+##### `--url`	`-u`
+
+##### `--environment-id`	`-id`
+
+##### `--notes`	`-n`
 
 [!INCLUDE [admin-backup-remarks](includes/admin-backup-remarks.md)]
 
@@ -90,9 +90,26 @@ Copy Source Environment to Destination Environment
 
 [!INCLUDE [admin-copy-intro](includes/admin-copy-intro.md)]
 
-### admin copy Parameters
 
 #### Optional Parameters
+
+##### `--source-env`	`-se`
+
+##### `--target-env`	`-te`
+
+##### `--source-url`	`-su`
+
+##### `--target-url`	`-tu`
+
+##### `--source-id`	`-si`
+
+##### `--target-id`	`-ti`
+
+##### `--name`	`-n`
+
+##### `--type`	`-t`
+
+##### `--async`	`-a`
 
 [!INCLUDE [admin-copy-remarks](includes/admin-copy-remarks.md)]
 
@@ -102,16 +119,31 @@ Creates a Dataverse Environment in your tenant.
 
 [!INCLUDE [admin-create-intro](includes/admin-create-intro.md)]
 
-### admin create Parameters
 
-#### Required Parameters
+### Required Parameters
 
-##### `--type`	`-t`
+#### `--type`	`-t`
 
 
 #### Optional Parameters
 
-##### `--type`	`-t`
+##### `--name`	`-n`
+
+##### `--region`	`-r`
+
+##### `--currency`	`-c`
+
+##### `--language`	`-l`
+
+##### `--templates`	`-tm`
+
+##### `--domain`	`-d`
+
+##### `--input-file`	`-if`
+
+##### `--async`	`-a`
+
+##### `--team-id`	`-tid`
 
 [!INCLUDE [admin-create-remarks](includes/admin-create-remarks.md)]
 
@@ -121,9 +153,16 @@ Deletes Environment from your tenant
 
 [!INCLUDE [admin-delete-intro](includes/admin-delete-intro.md)]
 
-### admin delete Parameters
 
 #### Optional Parameters
+
+##### `--environment`	`-env`
+
+##### `--url`	`-u`
+
+##### `--environment-id`	`-id`
+
+##### `--async`	`-a`
 
 [!INCLUDE [admin-delete-remarks](includes/admin-delete-remarks.md)]
 
@@ -133,9 +172,20 @@ List all environments from your tenant
 
 [!INCLUDE [admin-list-intro](includes/admin-list-intro.md)]
 
-### admin list Parameters
 
 #### Optional Parameters
+
+##### `--environment`	`-env`
+
+##### `--environment-id`	`-id`
+
+##### `--url`	`-u`
+
+##### `--type`	`-t`
+
+##### `--name`	`-n`
+
+##### `--organization-id`	`-oi`
 
 [!INCLUDE [admin-list-remarks](includes/admin-list-remarks.md)]
 
@@ -145,9 +195,14 @@ Lists all backups of your environment.
 
 [!INCLUDE [admin-list-backups-intro](includes/admin-list-backups-intro.md)]
 
-### admin list-backups Parameters
 
 #### Optional Parameters
+
+##### `--environment`	`-env`
+
+##### `--url`	`-u`
+
+##### `--environment-id`	`-id`
 
 [!INCLUDE [admin-list-backups-remarks](includes/admin-list-backups-remarks.md)]
 
@@ -157,9 +212,30 @@ Reset environment from your tenant
 
 [!INCLUDE [admin-reset-intro](includes/admin-reset-intro.md)]
 
-### admin reset Parameters
 
 #### Optional Parameters
+
+##### `--environment`	`-env`
+
+##### `--currency`	`-c`
+
+##### `--domain`	`-d`
+
+##### `--environment-id`	`-id`
+
+##### `--url`	`-u`
+
+##### `--name`	`-n`
+
+##### `--language`	`-l`
+
+##### `--purpose`	`-p`
+
+##### `--templates`	`-t`
+
+##### `--input-file`	`-if`
+
+##### `--async`	`-a`
 
 [!INCLUDE [admin-reset-remarks](includes/admin-reset-remarks.md)]
 
@@ -169,16 +245,29 @@ Restores an environment to a given backup.
 
 [!INCLUDE [admin-restore-intro](includes/admin-restore-intro.md)]
 
-### admin restore Parameters
 
-#### Required Parameters
+### Required Parameters
 
-##### `--selected-backup`	`-sb`
+#### `--selected-backup`	`-sb`
 
 
 #### Optional Parameters
 
-##### `--selected-backup`	`-sb`
+##### `--source-env`	`-se`
+
+##### `--target-env`	`-te`
+
+##### `--source-url`	`-su`
+
+##### `--target-url`	`-tu`
+
+##### `--source-id`	`-si`
+
+##### `--target-id`	`-ti`
+
+##### `--name`	`-n`
+
+##### `--async`	`-a`
 
 [!INCLUDE [admin-restore-remarks](includes/admin-restore-remarks.md)]
 

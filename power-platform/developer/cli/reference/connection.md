@@ -35,11 +35,10 @@ List all Connections from the passed environment.
 
 [!INCLUDE [connection-list-intro](includes/connection-list-intro.md)]
 
-### connection list Parameters
 
-#### Required Parameters
+### Required Parameters
 
-##### `--environment-id`	`-id`
+#### `--environment-id`	`-id`
 
 [!INCLUDE [connection-list-remarks](includes/connection-list-remarks.md)]
 

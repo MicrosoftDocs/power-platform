@@ -47,9 +47,30 @@ Create and store authentication profiles on this computer
 
 [!INCLUDE [auth-create-intro](includes/auth-create-intro.md)]
 
-### auth create Parameters
 
 #### Optional Parameters
+
+##### `--name`	`-n`
+
+##### `--kind`	`-k`
+
+##### `--url`	`-u`
+
+##### `--username`	`-un`
+
+##### `--password`	`-p`
+
+##### `--applicationId`	`-id`
+
+##### `--clientSecret`	`-cs`
+
+##### `--tenant`	`-t`
+
+##### `--cloud`	`-ci`
+
+##### `--deviceCode`	`-dc`
+
+##### `--environment`	`-env`
 
 [!INCLUDE [auth-create-remarks](includes/auth-create-remarks.md)]
 
@@ -59,9 +80,12 @@ Delete a particular authentication profile
 
 [!INCLUDE [auth-delete-intro](includes/auth-delete-intro.md)]
 
-### auth delete Parameters
 
 #### Optional Parameters
+
+##### `--index`	`-i`
+
+##### `--name`	`-n`
 
 [!INCLUDE [auth-delete-remarks](includes/auth-delete-remarks.md)]
 
@@ -77,13 +101,12 @@ Name or rename an existing authentication profile
 
 [!INCLUDE [auth-name-intro](includes/auth-name-intro.md)]
 
-### auth name Parameters
 
-#### Required Parameters
+### Required Parameters
 
-##### `--index`	`-i`
+#### `--index`	`-i`
 
-##### `--name`	`-n`
+#### `--name`	`-n`
 
 [!INCLUDE [auth-name-remarks](includes/auth-name-remarks.md)]
 
@@ -93,9 +116,12 @@ Select which authentication profile should be active
 
 [!INCLUDE [auth-select-intro](includes/auth-select-intro.md)]
 
-### auth select Parameters
 
 #### Optional Parameters
+
+##### `--index`	`-i`
+
+##### `--name`	`-n`
 
 [!INCLUDE [auth-select-remarks](includes/auth-select-remarks.md)]
 
@@ -105,16 +131,17 @@ Update name or target environment of an existing authentication profile
 
 [!INCLUDE [auth-update-intro](includes/auth-update-intro.md)]
 
-### auth update Parameters
 
-#### Required Parameters
+### Required Parameters
 
-##### `--index`	`-i`
+#### `--index`	`-i`
 
 
 #### Optional Parameters
 
-##### `--index`	`-i`
+##### `--name`	`-n`
+
+##### `--environment`	`-env`
 
 [!INCLUDE [auth-update-remarks](includes/auth-update-remarks.md)]
 

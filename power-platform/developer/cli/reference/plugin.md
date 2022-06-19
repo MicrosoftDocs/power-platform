@@ -35,9 +35,14 @@ Initializes a directory with a new Dataverse plugin class library.
 
 [!INCLUDE [plugin-init-intro](includes/plugin-init-intro.md)]
 
-### plugin init Parameters
 
 #### Optional Parameters
+
+##### `--signing-key-file-path`	`-sk`
+
+##### `--outputDirectory`	`-o`
+
+##### `--author`	`-a`
 
 [!INCLUDE [plugin-init-remarks](includes/plugin-init-remarks.md)]
 

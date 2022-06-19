@@ -40,20 +40,19 @@ Adds an external package to a PD Package project
 
 [!INCLUDE [package-add-external-package-intro](includes/package-add-external-package-intro.md)]
 
-### package add-external-package Parameters
 
-#### Required Parameters
+### Required Parameters
 
-##### `--path`	`-p`
+#### `--path`	`-p`
 
-##### `--package-type`	`-t`
+#### `--package-type`	`-t`
 
 
 #### Optional Parameters
 
-##### `--path`	`-p`
+##### `--import-order`	``
 
-##### `--package-type`	`-t`
+##### `--skip-validation`	`-sv`
 
 [!INCLUDE [package-add-external-package-remarks](includes/package-add-external-package-remarks.md)]
 
@@ -63,16 +62,29 @@ Adds reference to Dataverse solution project
 
 [!INCLUDE [package-add-reference-intro](includes/package-add-reference-intro.md)]
 
-### package add-reference Parameters
 
-#### Required Parameters
+### Required Parameters
 
-##### `--path`	`-p`
+#### `--path`	`-p`
 
 
 #### Optional Parameters
 
-##### `--path`	`-p`
+##### `--import-order`	``
+
+##### `--publish-workflows-activate-plugins`	``
+
+##### `--overwrite-unmanaged-customizations`	``
+
+##### `--import-mode`	``
+
+##### `--missing-dependency-behavior`	``
+
+##### `--dependency-overrides`	``
+
+##### `--layer-order-behavior`	``
+
+##### `--layer-order-solution-unique-names`	``
 
 [!INCLUDE [package-add-reference-remarks](includes/package-add-reference-remarks.md)]
 
@@ -82,16 +94,31 @@ Adds a prebuilt Dataverse solution file to a PD Package project
 
 [!INCLUDE [package-add-solution-intro](includes/package-add-solution-intro.md)]
 
-### package add-solution Parameters
 
-#### Required Parameters
+### Required Parameters
 
-##### `--path`	`-p`
+#### `--path`	`-p`
 
 
 #### Optional Parameters
 
-##### `--path`	`-p`
+##### `--import-order`	``
+
+##### `--skip-validation`	`-sv`
+
+##### `--publish-workflows-activate-plugins`	``
+
+##### `--overwrite-unmanaged-customizations`	``
+
+##### `--import-mode`	``
+
+##### `--missing-dependency-behavior`	``
+
+##### `--dependency-overrides`	``
+
+##### `--layer-order-behavior`	``
+
+##### `--layer-order-solution-unique-names`	``
 
 [!INCLUDE [package-add-solution-remarks](includes/package-add-solution-remarks.md)]
 
@@ -101,16 +128,17 @@ Deploys package to Dataverse environment
 
 [!INCLUDE [package-deploy-intro](includes/package-deploy-intro.md)]
 
-### package deploy Parameters
 
-#### Required Parameters
+### Required Parameters
 
-##### `--package`	`-p`
+#### `--package`	`-p`
 
 
 #### Optional Parameters
 
-##### `--package`	`-p`
+##### `--logFile`	`-lf`
+
+##### `--logConsole`	`-c`
 
 [!INCLUDE [package-deploy-remarks](includes/package-deploy-remarks.md)]
 
@@ -120,9 +148,16 @@ Initializes a directory with a new Dataverse package project
 
 [!INCLUDE [package-init-intro](includes/package-init-intro.md)]
 
-### package init Parameters
 
 #### Optional Parameters
+
+##### `--outputDirectory`	`-o`
+
+##### `--template`	``
+
+##### `--package-name`	``
+
+##### `--include-PkgAssets-Content`	``
 
 [!INCLUDE [package-init-remarks](includes/package-init-remarks.md)]
 
@@ -132,11 +167,10 @@ Shows details of Dataverse package
 
 [!INCLUDE [package-show-intro](includes/package-show-intro.md)]
 
-### package show Parameters
 
-#### Required Parameters
+### Required Parameters
 
-##### `--package`	`-p`
+#### `--package`	`-p`
 
 [!INCLUDE [package-show-remarks](includes/package-show-remarks.md)]
 

@@ -38,24 +38,19 @@ Creates a new row in the Connector table in the Dataverse environment.
 
 [!INCLUDE [connector-create-intro](includes/connector-create-intro.md)]
 
-### connector create Parameters
 
-#### Required Parameters
+### Required Parameters
 
-##### `--name`	`-n`
+#### `--name`	`-n`
 
-##### `--display-name`	`-dn`
+#### `--display-name`	`-dn`
 
-##### `--api-definition-file`	`-f`
+#### `--api-definition-file`	`-f`
 
 
 #### Optional Parameters
 
-##### `--name`	`-n`
-
-##### `--display-name`	`-dn`
-
-##### `--api-definition-file`	`-f`
+##### `--environment`	`-env`
 
 [!INCLUDE [connector-create-remarks](includes/connector-create-remarks.md)]
 
@@ -65,20 +60,17 @@ Download a Connector's OpenApiDefinition file
 
 [!INCLUDE [connector-download-api-definition-intro](includes/connector-download-api-definition-intro.md)]
 
-### connector download-api-definition Parameters
 
-#### Required Parameters
+### Required Parameters
 
-##### `--connector-id`	`-id`
+#### `--connector-id`	`-id`
 
-##### `--output`	`-o`
+#### `--output`	`-o`
 
 
 #### Optional Parameters
 
-##### `--connector-id`	`-id`
-
-##### `--output`	`-o`
+##### `--environment`	`-env`
 
 [!INCLUDE [connector-download-api-definition-remarks](includes/connector-download-api-definition-remarks.md)]
 
@@ -88,9 +80,10 @@ List the Connectors registered in the Dataverse environment
 
 [!INCLUDE [connector-list-intro](includes/connector-list-intro.md)]
 
-### connector list Parameters
 
 #### Optional Parameters
+
+##### `--environment`	`-env`
 
 [!INCLUDE [connector-list-remarks](includes/connector-list-remarks.md)]
 
@@ -100,20 +93,17 @@ Updates a Connector Entity in the Dataverse environment.
 
 [!INCLUDE [connector-update-intro](includes/connector-update-intro.md)]
 
-### connector update Parameters
 
-#### Required Parameters
+### Required Parameters
 
-##### `--connector-id`	`-id`
+#### `--connector-id`	`-id`
 
-##### `--api-definition-file`	`-f`
+#### `--api-definition-file`	`-f`
 
 
 #### Optional Parameters
 
-##### `--connector-id`	`-id`
-
-##### `--api-definition-file`	`-f`
+##### `--environment`	`-env`
 
 [!INCLUDE [connector-update-remarks](includes/connector-update-remarks.md)]
 

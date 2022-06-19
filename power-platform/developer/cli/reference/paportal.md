@@ -40,20 +40,21 @@ Bundle portal website content in CMT supported XML format
 
 [!INCLUDE [paportal-bundle-intro](includes/paportal-bundle-intro.md)]
 
-### paportal bundle Parameters
 
-#### Required Parameters
+### Required Parameters
 
-##### `--path`	`-p`
+#### `--path`	`-p`
 
-##### `--output`	`-o`
+#### `--output`	`-o`
 
 
 #### Optional Parameters
 
-##### `--path`	`-p`
+##### `--split`	`-s`
 
-##### `--output`	`-o`
+##### `--excludePK`	`-ep`
+
+##### `--deploymentProfile`	`-dp`
 
 [!INCLUDE [paportal-bundle-remarks](includes/paportal-bundle-remarks.md)]
 
@@ -63,20 +64,25 @@ Download portal website content from the current Dataverse Organization
 
 [!INCLUDE [paportal-download-intro](includes/paportal-download-intro.md)]
 
-### paportal download Parameters
 
-#### Required Parameters
+### Required Parameters
 
-##### `--path`	`-p`
+#### `--path`	`-p`
 
-##### `--webSiteId`	`-id`
+#### `--webSiteId`	`-id`
 
 
 #### Optional Parameters
 
-##### `--path`	`-p`
+##### `--includeEntities`	`-ie`
 
-##### `--webSiteId`	`-id`
+##### `--excludeEntities`	`-xe`
+
+##### `--overwrite`	`-o`
+
+##### `--exportTranslations`	`-et`
+
+##### `--translationsFormat`	`-tf`
 
 [!INCLUDE [paportal-download-remarks](includes/paportal-download-remarks.md)]
 
@@ -92,11 +98,10 @@ Merges localized content back to portal yaml files
 
 [!INCLUDE [paportal-mergelocale-intro](includes/paportal-mergelocale-intro.md)]
 
-### paportal mergelocale Parameters
 
-#### Required Parameters
+### Required Parameters
 
-##### `--path`	`-p`
+#### `--path`	`-p`
 
 [!INCLUDE [paportal-mergelocale-remarks](includes/paportal-mergelocale-remarks.md)]
 
@@ -106,11 +111,10 @@ Assigns new guid to primary key attribute for all records of a website
 
 [!INCLUDE [paportal-reguid-intro](includes/paportal-reguid-intro.md)]
 
-### paportal reguid Parameters
 
-#### Required Parameters
+### Required Parameters
 
-##### `--path`	`-p`
+#### `--path`	`-p`
 
 [!INCLUDE [paportal-reguid-remarks](includes/paportal-reguid-remarks.md)]
 
@@ -120,16 +124,15 @@ Upload portal website content to current Dataverse Organization
 
 [!INCLUDE [paportal-upload-intro](includes/paportal-upload-intro.md)]
 
-### paportal upload Parameters
 
-#### Required Parameters
+### Required Parameters
 
-##### `--path`	`-p`
+#### `--path`	`-p`
 
 
 #### Optional Parameters
 
-##### `--path`	`-p`
+##### `--deploymentProfile`	`-dp`
 
 [!INCLUDE [paportal-upload-remarks](includes/paportal-upload-remarks.md)]
 

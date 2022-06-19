@@ -36,16 +36,21 @@ Export data
 
 [!INCLUDE [data-export-intro](includes/data-export-intro.md)]
 
-### data export Parameters
 
-#### Required Parameters
+### Required Parameters
 
-##### `--schemaFile`	`-sf`
+#### `--schemaFile`	`-sf`
 
 
 #### Optional Parameters
 
-##### `--schemaFile`	`-sf`
+##### `--dataFile`	`-df`
+
+##### `--overwrite`	`-o`
+
+##### `--verbose`	`-v`
+
+##### `--environment`	`-env`
 
 [!INCLUDE [data-export-remarks](includes/data-export-remarks.md)]
 
@@ -55,16 +60,17 @@ Import data
 
 [!INCLUDE [data-import-intro](includes/data-import-intro.md)]
 
-### data import Parameters
 
-#### Required Parameters
+### Required Parameters
 
-##### `--dataDirectory`	`-dd`
+#### `--dataDirectory`	`-dd`
 
 
 #### Optional Parameters
 
-##### `--dataDirectory`	`-dd`
+##### `--verbose`	`-v`
+
+##### `--environment`	`-env`
 
 [!INCLUDE [data-import-remarks](includes/data-import-remarks.md)]
 

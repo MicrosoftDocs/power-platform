@@ -52,13 +52,12 @@ Add license and plan info to solution
 
 [!INCLUDE [solution-add-license-intro](includes/solution-add-license-intro.md)]
 
-### solution add-license Parameters
 
-#### Required Parameters
+### Required Parameters
 
-##### `--planDefinitionFile`	`-pd`
+#### `--planDefinitionFile`	`-pd`
 
-##### `--planMappingFile`	`-pm`
+#### `--planMappingFile`	`-pm`
 
 [!INCLUDE [solution-add-license-remarks](includes/solution-add-license-remarks.md)]
 
@@ -68,11 +67,10 @@ Adds a reference from the project in the current directory to the project at 'pa
 
 [!INCLUDE [solution-add-reference-intro](includes/solution-add-reference-intro.md)]
 
-### solution add-reference Parameters
 
-#### Required Parameters
+### Required Parameters
 
-##### `--path`	`-p`
+#### `--path`	`-p`
 
 [!INCLUDE [solution-add-reference-remarks](includes/solution-add-reference-remarks.md)]
 
@@ -82,24 +80,21 @@ Adds a solution component to the target unmanaged solution in the connected Data
 
 [!INCLUDE [solution-add-solution-component-intro](includes/solution-add-solution-component-intro.md)]
 
-### solution add-solution-component Parameters
 
-#### Required Parameters
+### Required Parameters
 
-##### `--solutionUniqueName`	`-sn`
+#### `--solutionUniqueName`	`-sn`
 
-##### `--component`	`-c`
+#### `--component`	`-c`
 
-##### `--componentType`	`-ct`
+#### `--componentType`	`-ct`
 
 
 #### Optional Parameters
 
-##### `--solutionUniqueName`	`-sn`
+##### `--AddRequiredComponents`	`-arc`
 
-##### `--component`	`-c`
-
-##### `--componentType`	`-ct`
+##### `--environment`	`-env`
 
 [!INCLUDE [solution-add-solution-component-remarks](includes/solution-add-solution-component-remarks.md)]
 
@@ -109,9 +104,24 @@ Upload a Dataverse Solution project to run against the PowerApps Checker Service
 
 [!INCLUDE [solution-check-intro](includes/solution-check-intro.md)]
 
-### solution check Parameters
 
 #### Optional Parameters
+
+##### `--path`	`-p`
+
+##### `--solutionUrl`	`-u`
+
+##### `--outputDirectory`	`-o`
+
+##### `--geo`	`-g`
+
+##### `--customEndpoint`	`-ce`
+
+##### `--ruleLevelOverride`	`-rl`
+
+##### `--ruleSet`	`-rs`
+
+##### `--excludedFiles`	`-ef`
 
 [!INCLUDE [solution-check-remarks](includes/solution-check-remarks.md)]
 
@@ -121,16 +131,23 @@ Create a solution project based on an existing solution in your Organization
 
 [!INCLUDE [solution-clone-intro](includes/solution-clone-intro.md)]
 
-### solution clone Parameters
 
-#### Required Parameters
+### Required Parameters
 
-##### `--name`	`-n`
+#### `--name`	`-n`
 
 
 #### Optional Parameters
 
-##### `--name`	`-n`
+##### `--targetversion`	`-v`
+
+##### `--include`	`-i`
+
+##### `--outputDirectory`	`-o`
+
+##### `--async`	`-a`
+
+##### `--max-async-wait-time`	`-wt`
 
 [!INCLUDE [solution-clone-remarks](includes/solution-clone-remarks.md)]
 
@@ -140,9 +157,14 @@ Create a settings file from solution zip or solution folder.
 
 [!INCLUDE [solution-create-settings-intro](includes/solution-create-settings-intro.md)]
 
-### solution create-settings Parameters
 
 #### Optional Parameters
+
+##### `--solution-zip`	`-z`
+
+##### `--solution-folder`	`-f`
+
+##### `--settings-file`	`-s`
 
 [!INCLUDE [solution-create-settings-remarks](includes/solution-create-settings-remarks.md)]
 
@@ -152,11 +174,10 @@ Delete Dataverse Solution from the current Dataverse Environment
 
 [!INCLUDE [solution-delete-intro](includes/solution-delete-intro.md)]
 
-### solution delete Parameters
 
-#### Required Parameters
+### Required Parameters
 
-##### `--solution-name`	`-sn`
+#### `--solution-name`	`-sn`
 
 [!INCLUDE [solution-delete-remarks](includes/solution-delete-remarks.md)]
 
@@ -166,20 +187,25 @@ Export a Dataverse Solution from the current Dataverse Environment
 
 [!INCLUDE [solution-export-intro](includes/solution-export-intro.md)]
 
-### solution export Parameters
 
-#### Required Parameters
+### Required Parameters
 
-##### `--path`	`-p`
+#### `--path`	`-p`
 
-##### `--name`	`-n`
+#### `--name`	`-n`
 
 
 #### Optional Parameters
 
-##### `--path`	`-p`
+##### `--managed`	`-m`
 
-##### `--name`	`-n`
+##### `--targetversion`	`-v`
+
+##### `--include`	`-i`
+
+##### `--async`	`-a`
+
+##### `--max-async-wait-time`	`-wt`
 
 [!INCLUDE [solution-export-remarks](includes/solution-export-remarks.md)]
 
@@ -189,9 +215,30 @@ Import the Dataverse Solution into the current Dataverse Environment
 
 [!INCLUDE [solution-import-intro](includes/solution-import-intro.md)]
 
-### solution import Parameters
 
 #### Optional Parameters
+
+##### `--path`	`-p`
+
+##### `--activate-plugins`	`-ap`
+
+##### `--force-overwrite`	`-f`
+
+##### `--skip-dependency-check`	`-s`
+
+##### `--import-as-holding`	`-h`
+
+##### `--publish-changes`	`-pc`
+
+##### `--convert-to-managed`	`-cm`
+
+##### `--async`	`-a`
+
+##### `--max-async-wait-time`	`-wt`
+
+##### `--settings-file`	``
+
+##### `--activate-flows`	`-af`
 
 [!INCLUDE [solution-import-remarks](includes/solution-import-remarks.md)]
 
@@ -201,20 +248,17 @@ Initializes a directory with a new Dataverse solution project
 
 [!INCLUDE [solution-init-intro](includes/solution-init-intro.md)]
 
-### solution init Parameters
 
-#### Required Parameters
+### Required Parameters
 
-##### `--publisher-name`	`-pn`
+#### `--publisher-name`	`-pn`
 
-##### `--publisher-prefix`	`-pp`
+#### `--publisher-prefix`	`-pp`
 
 
 #### Optional Parameters
 
-##### `--publisher-name`	`-pn`
-
-##### `--publisher-prefix`	`-pp`
+##### `--outputDirectory`	`-o`
 
 [!INCLUDE [solution-init-remarks](includes/solution-init-remarks.md)]
 
@@ -224,9 +268,12 @@ List all Solutions from the current Dataverse Organization
 
 [!INCLUDE [solution-list-intro](includes/solution-list-intro.md)]
 
-### solution list Parameters
 
 #### Optional Parameters
+
+##### `--environment-id`	``
+
+##### `--environment`	`-env`
 
 [!INCLUDE [solution-list-remarks](includes/solution-list-remarks.md)]
 
@@ -236,13 +283,12 @@ Sets version for solution loaded in Dataverse environment.
 
 [!INCLUDE [solution-online-version-intro](includes/solution-online-version-intro.md)]
 
-### solution online-version Parameters
 
-#### Required Parameters
+### Required Parameters
 
-##### `--solution-name`	`-sn`
+#### `--solution-name`	`-sn`
 
-##### `--solution-version`	`-sv`
+#### `--solution-version`	`-sv`
 
 [!INCLUDE [solution-online-version-remarks](includes/solution-online-version-remarks.md)]
 
@@ -252,16 +298,43 @@ Package solution components on local filesystem into solution.zip (SolutionPacka
 
 [!INCLUDE [solution-pack-intro](includes/solution-pack-intro.md)]
 
-### solution pack Parameters
 
-#### Required Parameters
+### Required Parameters
 
-##### `--zipfile`	`-z`
+#### `--zipfile`	`-z`
 
 
 #### Optional Parameters
 
-##### `--zipfile`	`-z`
+##### `--folder`	`-f`
+
+##### `--packagetype`	`-p`
+
+##### `--log`	`-l`
+
+##### `--errorlevel`	`-e`
+
+##### `--singleComponent`	`-sc`
+
+##### `--allowDelete`	`-ad`
+
+##### `--allowWrite`	`-aw`
+
+##### `--clobber`	`-c`
+
+##### `--map`	`-m`
+
+##### `--sourceLoc`	`-src`
+
+##### `--localize`	`-loc`
+
+##### `--useLcid`	`-lcid`
+
+##### `--useUnmanagedFileForMissingManaged`	`-same`
+
+##### `--disablePluginRemap`	`-dpm`
+
+##### `--processCanvasApps`	`-pca`
 
 [!INCLUDE [solution-pack-remarks](includes/solution-pack-remarks.md)]
 
@@ -271,9 +344,12 @@ Publishes all customizations
 
 [!INCLUDE [solution-publish-intro](includes/solution-publish-intro.md)]
 
-### solution publish Parameters
 
 #### Optional Parameters
+
+##### `--async`	`-a`
+
+##### `--max-async-wait-time`	`-wt`
 
 [!INCLUDE [solution-publish-remarks](includes/solution-publish-remarks.md)]
 
@@ -283,9 +359,16 @@ Sync the current Dataverse solution project to the current state of the solution
 
 [!INCLUDE [solution-sync-intro](includes/solution-sync-intro.md)]
 
-### solution sync Parameters
 
 #### Optional Parameters
+
+##### `--solution-folder`	`-f`
+
+##### `--include`	`-i`
+
+##### `--async`	`-a`
+
+##### `--max-async-wait-time`	`-wt`
 
 [!INCLUDE [solution-sync-remarks](includes/solution-sync-remarks.md)]
 
@@ -295,16 +378,43 @@ Extract solution components from solution.zip onto local filesystem (SolutionPac
 
 [!INCLUDE [solution-unpack-intro](includes/solution-unpack-intro.md)]
 
-### solution unpack Parameters
 
-#### Required Parameters
+### Required Parameters
 
-##### `--zipfile`	`-z`
+#### `--zipfile`	`-z`
 
 
 #### Optional Parameters
 
-##### `--zipfile`	`-z`
+##### `--folder`	`-f`
+
+##### `--packagetype`	`-p`
+
+##### `--log`	`-l`
+
+##### `--errorlevel`	`-e`
+
+##### `--singleComponent`	`-sc`
+
+##### `--allowDelete`	`-ad`
+
+##### `--allowWrite`	`-aw`
+
+##### `--clobber`	`-c`
+
+##### `--map`	`-m`
+
+##### `--sourceLoc`	`-src`
+
+##### `--localize`	`-loc`
+
+##### `--useLcid`	`-lcid`
+
+##### `--useUnmanagedFileForMissingManaged`	`-same`
+
+##### `--disablePluginRemap`	`-dpm`
+
+##### `--processCanvasApps`	`-pca`
 
 [!INCLUDE [solution-unpack-remarks](includes/solution-unpack-remarks.md)]
 
@@ -314,16 +424,17 @@ Option to stage the Dataverse solution for upgrade
 
 [!INCLUDE [solution-upgrade-intro](includes/solution-upgrade-intro.md)]
 
-### solution upgrade Parameters
 
-#### Required Parameters
+### Required Parameters
 
-##### `--solution-name`	`-sn`
+#### `--solution-name`	`-sn`
 
 
 #### Optional Parameters
 
-##### `--solution-name`	`-sn`
+##### `--async`	`-a`
+
+##### `--max-async-wait-time`	`-wt`
 
 [!INCLUDE [solution-upgrade-remarks](includes/solution-upgrade-remarks.md)]
 
@@ -333,9 +444,18 @@ Update build or revision version for solution
 
 [!INCLUDE [solution-version-intro](includes/solution-version-intro.md)]
 
-### solution version Parameters
 
 #### Optional Parameters
+
+##### `--strategy`	`-s`
+
+##### `--patchversion`	`-pv`
+
+##### `--buildversion`	`-bv`
+
+##### `--revisionversion`	`-rv`
+
+##### `--filename`	`-fn`
 
 [!INCLUDE [solution-version-remarks](includes/solution-version-remarks.md)]
 

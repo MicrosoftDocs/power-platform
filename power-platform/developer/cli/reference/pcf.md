@@ -37,24 +37,23 @@ Initializes a directory with a new PowerApps component framework project
 
 [!INCLUDE [pcf-init-intro](includes/pcf-init-intro.md)]
 
-### pcf init Parameters
 
-#### Required Parameters
+### Required Parameters
 
-##### `--namespace`	`-ns`
+#### `--namespace`	`-ns`
 
-##### `--name`	`-n`
+#### `--name`	`-n`
 
-##### `--template`	`-t`
+#### `--template`	`-t`
 
 
 #### Optional Parameters
 
-##### `--namespace`	`-ns`
+##### `--framework`	`-fw`
 
-##### `--name`	`-n`
+##### `--outputDirectory`	`-o`
 
-##### `--template`	`-t`
+##### `--run-npm-install`	`-npm`
 
 [!INCLUDE [pcf-init-remarks](includes/pcf-init-remarks.md)]
 
@@ -64,16 +63,17 @@ Import the PowerApps component framework project into the current Dataverse Orga
 
 [!INCLUDE [pcf-push-intro](includes/pcf-push-intro.md)]
 
-### pcf push Parameters
 
-#### Required Parameters
+### Required Parameters
 
-##### `--publisher-prefix`	`-pp`
+#### `--publisher-prefix`	`-pp`
 
 
 #### Optional Parameters
 
-##### `--publisher-prefix`	`-pp`
+##### `--verbosity`	`-v`
+
+##### `--force-import`	`-f`
 
 [!INCLUDE [pcf-push-remarks](includes/pcf-push-remarks.md)]
 
@@ -83,9 +83,20 @@ Patch version for controls
 
 [!INCLUDE [pcf-version-intro](includes/pcf-version-intro.md)]
 
-### pcf version Parameters
 
 #### Optional Parameters
+
+##### `--strategy`	`-s`
+
+##### `--patchversion`	`-pv`
+
+##### `--path`	`-p`
+
+##### `--allmanifests`	`-a`
+
+##### `--updatetarget`	`-ut`
+
+##### `--filename`	`-fn`
 
 [!INCLUDE [pcf-version-remarks](includes/pcf-version-remarks.md)]
 

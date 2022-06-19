@@ -37,9 +37,10 @@ Launch Configuration Migration Tool
 
 [!INCLUDE [tool-cmt-intro](includes/tool-cmt-intro.md)]
 
-### tool cmt Parameters
 
 #### Optional Parameters
+
+##### `--install`	`-i`
 
 [!INCLUDE [tool-cmt-remarks](includes/tool-cmt-remarks.md)]
 
@@ -49,9 +50,10 @@ Launch Package Deployer
 
 [!INCLUDE [tool-pd-intro](includes/tool-pd-intro.md)]
 
-### tool pd Parameters
 
 #### Optional Parameters
+
+##### `--install`	`-i`
 
 [!INCLUDE [tool-pd-remarks](includes/tool-pd-remarks.md)]
 
@@ -61,9 +63,10 @@ Launch Plugin Registration Tool
 
 [!INCLUDE [tool-prt-intro](includes/tool-prt-intro.md)]
 
-### tool prt Parameters
 
 #### Optional Parameters
+
+##### `--install`	`-i`
 
 [!INCLUDE [tool-prt-remarks](includes/tool-prt-remarks.md)]
 
