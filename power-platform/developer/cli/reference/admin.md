@@ -51,7 +51,7 @@ List all environments from your tenant
 |`--environment`|`-env`|List all environments that contain given string in their name or id.|
 |`--environment-id`|`-id`|**Deprecated** use `--environment` instead.<br />List all environments that contain given string in their id.|
 |`--url`|`-u`|**Deprecated** use `--environment` instead.<br />List all environments that contain given string in their url.|
-|`--type`|`-t`|List all environments with the given type.|
+|`--type`|`-t`|List all environments with the given type.<br />Use one of these values:<br />- `Trial`<br />- `Sandbox`<br />- `Production`<br />- `Developer`<br />- `Teams`<br />- `SubscriptionBasedTrial`|
 |`--name`|`-n`|List all environments that contain given string in their name.|
 |`--organization-id`|`-oi`|List all environments that contain given string in their organization id.|
 
@@ -69,7 +69,7 @@ Creates a Dataverse Environment in your tenant.
 |---------|---------|---------|
 |`--name`|`-n`|Sets the name of the environment.|
 |`--region`|`-r`|Sets the environment's region name. [defaults to unitedstates]|
-|`--type`|`-t`|Sets the environment Type.<br />**Required**|
+|`--type`|`-t`|Sets the environment Type.<br />**Required**<br />Use one of these values:<br />- `Trial`<br />- `Sandbox`<br />- `Production`<br />- `Developer`<br />- `Teams`<br />- `SubscriptionBasedTrial`|
 |`--currency`|`-c`|Sets the currency used for your environment. [defaults to USD]|
 |`--language`|`-l`|Sets the language used for your environment. [defaults to English]|
 |`--templates`|`-tm`|Sets Dynamics365 app that needs to be deployed. [passed as comma separated values] e.g : -tm "D365_Sample, D365_Sales"|
@@ -194,7 +194,7 @@ Copy Source Environment to Destination Environment
 |`--source-id`|`-si`|**Deprecated** use `--source-env` instead.<br />Id of the source environment that is being copied|
 |`--target-id`|`-ti`|**Deprecated** use `--target-env` instead.<br />Id of the target environment|
 |`--name`|`-n`|Name of the target environment|
-|`--type`|`-t`||
+|`--type`|`-t`|<br />Use one of these values:<br />- `MinimalCopy`<br />- `FullCopy`|
 |`--async`|`-a`|Optional boolean argument to run pac verbs asynchronously, defaults to false.<br />This parameter requires no value. It is a switch.|
 
 [!INCLUDE [admin-copy-remarks](includes/admin-copy-remarks.md)]

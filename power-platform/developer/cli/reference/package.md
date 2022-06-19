@@ -45,7 +45,7 @@ Initializes a directory with a new Dataverse package project
 |Parameter|Alias|Description|
 |---------|---------|---------|
 |`--outputDirectory`|`-o`|Output directory|
-|`--template`||The name of the template to instantiate. Note: the template 'legacy' will be removed in a future release.|
+|`--template`||The name of the template to instantiate. Note: the template 'legacy' will be removed in a future release.<br />Use one of these values:<br />- `sdk-style`<br />- `legacy`|
 |`--package-name`||Sets the default name of the package. Applies to the generation of ImportExtension.GetNameOfImport.|
 |`--include-PkgAssets-Content`||Indicates whether to also include some sample files for the PkgAssets/Content folder.<br />This parameter requires no value. It is a switch.|
 
@@ -81,12 +81,12 @@ Adds a prebuilt Dataverse solution file to a PD Package project
 |`--path`|`-p`|Path to the Dataverse solution file (must be *.zip)<br />**Required**|
 |`--import-order`||A whole number that indicates the order to insert this item into the final ImportConfig.xml file at build time. Negative numbers are inserted before existing elements. Positive numbers are added after existing elements.|
 |`--skip-validation`|`-sv`|Adds the item to the project file even if the file does not exist or appears to be invalid. Note, this will not affect any validation that is performed by MSBuild.<br />This parameter requires no value. It is a switch.|
-|`--publish-workflows-activate-plugins`||Explicitly indicates whether to publish the workflows and activate plugins when this solution is imported.|
-|`--overwrite-unmanaged-customizations`||Explicitly indicates whether to overwrite unmanaged customizations when this solution is imported.|
-|`--import-mode`||Explicitly specifies the required mode when importing this solution.|
-|`--missing-dependency-behavior`||Specifies the behavior on import when a dependency of this solution is missing from the target environment.|
+|`--publish-workflows-activate-plugins`||Explicitly indicates whether to publish the workflows and activate plugins when this solution is imported.<br />Use one of these values:<br />- `true`<br />- `false`|
+|`--overwrite-unmanaged-customizations`||Explicitly indicates whether to overwrite unmanaged customizations when this solution is imported.<br />Use one of these values:<br />- `true`<br />- `false`|
+|`--import-mode`||Explicitly specifies the required mode when importing this solution.<br />Use one of these values:<br />- `sync`<br />- `async`|
+|`--missing-dependency-behavior`||Specifies the behavior on import when a dependency of this solution is missing from the target environment.<br />Use one of these values:<br />- `skip`<br />- `fault`|
 |`--dependency-overrides`||A semicolon delimited list of overrides. This value overrides any dependency information encoded in the solution's metadata. Each override should be in the format: `<uniquename>:<minVersion>:<maxVersion>`. Where the minVersion and maxVersion is optional but should be in .Net version format syntax.<br />Validation: Expected a semicolon delimited list of dependency overrides of the format <uniquename>:<minVersion>:<maxVersion>.|
-|`--layer-order-behavior`||This argument is applicable only for 1st party solutions.|
+|`--layer-order-behavior`||This argument is applicable only for 1st party solutions.<br />Use one of these values:<br />- `above`<br />- `base`<br />- `below`|
 |`--layer-order-solution-unique-names`||This argument is applicable only for 1st party solutions.<br />Validation: Expected a semicolon delimited list of solution uniquenames.|
 
 [!INCLUDE [package-add-solution-remarks](includes/package-add-solution-remarks.md)]
@@ -103,12 +103,12 @@ Adds reference to Dataverse solution project
 |---------|---------|---------|
 |`--path`|`-p`|The path to the referenced Dataverse solution project<br />**Required**|
 |`--import-order`||A whole number that indicates the order to insert this item into the final ImportConfig.xml file at build time. Negative numbers are inserted before existing elements. Positive numbers are added after existing elements.|
-|`--publish-workflows-activate-plugins`||Explicitly indicates whether to publish the workflows and activate plugins when this solution is imported.|
-|`--overwrite-unmanaged-customizations`||Explicitly indicates whether to overwrite unmanaged customizations when this solution is imported.|
-|`--import-mode`||Explicitly specifies the required mode when importing this solution.|
-|`--missing-dependency-behavior`||Specifies the behavior on import when a dependency of this solution is missing from the target environment.|
+|`--publish-workflows-activate-plugins`||Explicitly indicates whether to publish the workflows and activate plugins when this solution is imported.<br />Use one of these values:<br />- `true`<br />- `false`|
+|`--overwrite-unmanaged-customizations`||Explicitly indicates whether to overwrite unmanaged customizations when this solution is imported.<br />Use one of these values:<br />- `true`<br />- `false`|
+|`--import-mode`||Explicitly specifies the required mode when importing this solution.<br />Use one of these values:<br />- `sync`<br />- `async`|
+|`--missing-dependency-behavior`||Specifies the behavior on import when a dependency of this solution is missing from the target environment.<br />Use one of these values:<br />- `skip`<br />- `fault`|
 |`--dependency-overrides`||A semicolon delimited list of overrides. This value overrides any dependency information encoded in the solution's metadata. Each override should be in the format: `<uniquename>:<minVersion>:<maxVersion>`. Where the minVersion and maxVersion is optional but should be in .Net version format syntax.<br />Validation: Expected a semicolon delimited list of dependency overrides of the format <uniquename>:<minVersion>:<maxVersion>.|
-|`--layer-order-behavior`||This argument is applicable only for 1st party solutions.|
+|`--layer-order-behavior`||This argument is applicable only for 1st party solutions.<br />Use one of these values:<br />- `above`<br />- `base`<br />- `below`|
 |`--layer-order-solution-unique-names`||This argument is applicable only for 1st party solutions.<br />Validation: Expected a semicolon delimited list of solution uniquenames.|
 
 [!INCLUDE [package-add-reference-remarks](includes/package-add-reference-remarks.md)]

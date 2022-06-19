@@ -130,7 +130,7 @@ Update build or revision version for solution
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--strategy`|`-s`|Updates build version for 'Solution.xml' file using specified strategy. If using gittags, set personal access token in the following environment variable "PacCli.PAT"|
+|`--strategy`|`-s`|Updates build version for 'Solution.xml' file using specified strategy. If using gittags, set personal access token in the following environment variable "PacCli.PAT"<br />Use one of these values:<br />- `gittags`<br />- `filetracking`<br />- `solution`|
 |`--patchversion`|`-pv`|**Deprecated** This parameter will be ignored.<br />Patch version for solution|
 |`--buildversion`|`-bv`|Build version for solution<br />Validation: The value must be a positive integer|
 |`--revisionversion`|`-rv`|Revision version for solution<br />Validation: The value must be a positive integer|
@@ -176,7 +176,7 @@ Export a Dataverse Solution from the current Dataverse Environment
 |`--name`|`-n`|The name of the solution to be exported<br />**Required**|
 |`--managed`|`-m`|Whether the solution should be exported as a managed solution<br />This parameter requires no value. It is a switch.|
 |`--targetversion`|`-v`|**Deprecated** This parameter will be ignored.<br />The version that the exported solution will support|
-|`--include`|`-i`|Which settings should be included in the solution being exported<br />Use one or more of these values:<br />- `autonumbering`<br />- `calendar`<br />- `customization`<br />- `emailtracking`<br />- `externalapplications`<br />- `general`<br />- `isvconfig`<br />- `marketing`<br />- `outlooksynchronization`<br />- `relationshiproles`<br />- `sales`|
+|`--include`|`-i`|Which settings should be included in the solution being exported<br />Use one or more of these values separated by commas:<br />- `autonumbering`<br />- `calendar`<br />- `customization`<br />- `emailtracking`<br />- `externalapplications`<br />- `general`<br />- `isvconfig`<br />- `marketing`<br />- `outlooksynchronization`<br />- `relationshiproles`<br />- `sales`|
 |`--async`|`-a`|Exports solution asynchronously<br />This parameter requires no value. It is a switch.|
 |`--max-async-wait-time`|`-wt`|Max asynchronous wait time in minutes. Default value is 60 minutes|
 
@@ -194,7 +194,7 @@ Create a solution project based on an existing solution in your Organization
 |---------|---------|---------|
 |`--name`|`-n`|The name of the solution to be exported<br />**Required**|
 |`--targetversion`|`-v`|**Deprecated** This parameter will be ignored.<br />The version that the exported solution will support|
-|`--include`|`-i`|Which settings should be included in the solution being exported<br />Use one or more of these values:<br />- `autonumbering`<br />- `calendar`<br />- `customization`<br />- `emailtracking`<br />- `externalapplications`<br />- `general`<br />- `isvconfig`<br />- `marketing`<br />- `outlooksynchronization`<br />- `relationshiproles`<br />- `sales`|
+|`--include`|`-i`|Which settings should be included in the solution being exported<br />Use one or more of these values separated by commas:<br />- `autonumbering`<br />- `calendar`<br />- `customization`<br />- `emailtracking`<br />- `externalapplications`<br />- `general`<br />- `isvconfig`<br />- `marketing`<br />- `outlooksynchronization`<br />- `relationshiproles`<br />- `sales`|
 |`--outputDirectory`|`-o`|Output directory|
 |`--async`|`-a`|Exports solution asynchronously<br />This parameter requires no value. It is a switch.|
 |`--max-async-wait-time`|`-wt`|Max asynchronous wait time in minutes. Default value is 60 minutes|
@@ -260,7 +260,7 @@ Upload a Dataverse Solution project to run against the PowerApps Checker Service
 |`--path`|`-p`|Path where the to-be-checked solution zip file(s) exist; path can contain glob/wildcard characters|
 |`--solutionUrl`|`-u`|SAS Uri pointing to solution.zip to be analyzed|
 |`--outputDirectory`|`-o`|Output directory|
-|`--geo`|`-g`|Which geographical instance of the PowerApps Checker service to use.|
+|`--geo`|`-g`|Which geographical instance of the PowerApps Checker service to use.<br />Use one of these values:<br />- `PreviewUnitedStates`<br />- `UnitedStates`<br />- `Europe`<br />- `Asia`<br />- `Australia`<br />- `Japan`<br />- `India`<br />- `Canada`<br />- `SouthAmerica`<br />- `UnitedKingdom`<br />- `France`<br />- `Germany`<br />- `UnitedArabEmirates`<br />- `Switzerland`<br />- `USGovernment`<br />- `USGovernmentL4`<br />- `USGovernmentL5DoD`<br />- `China`|
 |`--customEndpoint`|`-ce`|Specify a custom URL as Power Apps Checker endpoint|
 |`--ruleLevelOverride`|`-rl`|Path to a file containing a JSON array rules and levels to override.  Accepted values for OverrideLevel are: Critical, High, Medium, Low, Informational. Example: [{"Id":"meta-remove-dup-reg","OverrideLevel":"Medium"},{"Id":"il-avoid-specialized-update-ops","OverrideLevel":"Medium"}]|
 |`--ruleSet`|`-rs`|Select a rule set that will be executed as part of this build. Values: A valid Guid, "AppSource Certification", "Solution Checker" (default)|
@@ -371,7 +371,7 @@ Sync the current Dataverse solution project to the current state of the solution
 |Parameter|Alias|Description|
 |---------|---------|---------|
 |`--solution-folder`|`-f`|Path to the local, unpacked solution folder: either the root of the 'Other/Solution.xml' file or a folder with a .cdsproj file.|
-|`--include`|`-i`|Which settings should be included in the solution being exported<br />Use one or more of these values:<br />- `autonumbering`<br />- `calendar`<br />- `customization`<br />- `emailtracking`<br />- `externalapplications`<br />- `general`<br />- `isvconfig`<br />- `marketing`<br />- `outlooksynchronization`<br />- `relationshiproles`<br />- `sales`|
+|`--include`|`-i`|Which settings should be included in the solution being exported<br />Use one or more of these values separated by commas:<br />- `autonumbering`<br />- `calendar`<br />- `customization`<br />- `emailtracking`<br />- `externalapplications`<br />- `general`<br />- `isvconfig`<br />- `marketing`<br />- `outlooksynchronization`<br />- `relationshiproles`<br />- `sales`|
 |`--async`|`-a`|Exports solution asynchronously<br />This parameter requires no value. It is a switch.|
 |`--max-async-wait-time`|`-wt`|Max asynchronous wait time in minutes. Default value is 60 minutes|
 

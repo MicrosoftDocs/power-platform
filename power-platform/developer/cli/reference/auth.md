@@ -53,7 +53,7 @@ Create and store authentication profiles on this computer
 |`--applicationId`|`-id`|Optional: The application id to authenticate with|
 |`--clientSecret`|`-cs`|Optional: The client secret to authenticate with|
 |`--tenant`|`-t`|Tenant id if using application id & secret.|
-|`--cloud`|`-ci`|Optional: The cloud instance to authenticate with|
+|`--cloud`|`-ci`|Optional: The cloud instance to authenticate with<br />Use one of these values:<br />- `Public`<br />- `UsGov`<br />- `UsGovHigh`<br />- `UsGovDod`<br />- `Mooncake`|
 |`--deviceCode`|`-dc`|Use the AAD DeviceCode flow for interactive login.<br />This parameter requires no value. It is a switch.|
 |`--environment`|`-env`|Default environment (id, url, unique name or partial name)|
 
