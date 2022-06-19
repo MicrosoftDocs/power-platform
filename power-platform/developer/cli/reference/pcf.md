@@ -41,12 +41,12 @@ Initializes a directory with a new PowerApps component framework project
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|<span style="white-space: nowrap;">`--namespace`</span>|`-ns`|The namespace for the component<br />**Required**|
-|<span style="white-space: nowrap;">`--name`</span>|`-n`|The name for the component<br />**Required**|
-|<span style="white-space: nowrap;">`--template`</span>|`-t`|Choose a template for the component<br />**Required**|
-|<span style="white-space: nowrap;">`--framework`</span>|`-fw`|The rendering framework for control. Default value is 'none' [none: HTML, react: React]|
-|<span style="white-space: nowrap;">`--outputDirectory`</span>|`-o`|Output directory|
-|<span style="white-space: nowrap;">`--run-npm-install`</span>|`-npm`|Auto run 'npm install' after the control is created. Default value is 'true'|
+|`--namespace`|`-ns`|The namespace for the component<br />**Required**|
+|`--name`|`-n`|The name for the component<br />**Required**|
+|`--template`|`-t`|Choose a template for the component<br />**Required**|
+|`--framework`|`-fw`|The rendering framework for control. Default value is 'none' [none: HTML, react: React]|
+|`--outputDirectory`|`-o`|Output directory|
+|`--run-npm-install`|`-npm`|Auto run 'npm install' after the control is created. Default value is 'true'|
 
 [!INCLUDE [pcf-init-remarks](includes/pcf-init-remarks.md)]
 
@@ -60,9 +60,9 @@ Import the PowerApps component framework project into the current Dataverse Orga
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|<span style="white-space: nowrap;">`--publisher-prefix`</span>|`-pp`|Customization prefix value for the Dataverse solution publisher<br />**Required**|
-|<span style="white-space: nowrap;">`--verbosity`</span>|`-v`|Verbosity level for MSBuild when building the temporary solution wrapper.|
-|<span style="white-space: nowrap;">`--force-import`</span>|`-f`|Force a full update of the control|
+|`--publisher-prefix`|`-pp`|Customization prefix value for the Dataverse solution publisher<br />**Required**|
+|`--verbosity`|`-v`|Verbosity level for MSBuild when building the temporary solution wrapper.|
+|`--force-import`|`-f`|Force a full update of the control|
 
 [!INCLUDE [pcf-push-remarks](includes/pcf-push-remarks.md)]
 
@@ -76,12 +76,12 @@ Patch version for controls
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|<span style="white-space: nowrap;">`--strategy`</span>|`-s`|Updates patch version for 'ControlManifest.xml' files using specified strategy. If using gittags, set personal access token in the following environment variable "PacCli.PAT"|
-|<span style="white-space: nowrap;">`--patchversion`</span>|`-pv`|Patch version for controls|
-|<span style="white-space: nowrap;">`--path`</span>|`-p`|Absolute/Relative path of the 'ControlManifest.xml' for updating.|
-|<span style="white-space: nowrap;">`--allmanifests`</span>|`-a`|Updates patch version for all 'ControlManifest.xml' files|
-|<span style="white-space: nowrap;">`--updatetarget`</span>|`-ut`|Specify which target manifest needs to be updated|
-|<span style="white-space: nowrap;">`--filename`</span>|`-fn`|Tracker CSV file name to be used when using filetracking as a strategy. Default value is ControlsStateVersionInfo.csv|
+|`--strategy`|`-s`|Updates patch version for 'ControlManifest.xml' files using specified strategy. If using gittags, set personal access token in the following environment variable "PacCli.PAT"|
+|`--patchversion`|`-pv`|Patch version for controls|
+|`--path`|`-p`|Absolute/Relative path of the 'ControlManifest.xml' for updating.|
+|`--allmanifests`|`-a`|Updates patch version for all 'ControlManifest.xml' files|
+|`--updatetarget`|`-ut`|Specify which target manifest needs to be updated|
+|`--filename`|`-fn`|Tracker CSV file name to be used when using filetracking as a strategy. Default value is ControlsStateVersionInfo.csv|
 
 [!INCLUDE [pcf-version-remarks](includes/pcf-version-remarks.md)]
 

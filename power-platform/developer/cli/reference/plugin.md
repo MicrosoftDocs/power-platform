@@ -39,9 +39,9 @@ Initializes a directory with a new Dataverse plugin class library.
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|<span style="white-space: nowrap;">`--signing-key-file-path`</span>|`-sk`|Relative path to the Dataverse plugin assembly originator key file for signing.|
-|<span style="white-space: nowrap;">`--outputDirectory`</span>|`-o`|Output directory|
-|<span style="white-space: nowrap;">`--author`</span>|`-a`|Author(s) of the Dataverse Plug-in Package.|
+|`--signing-key-file-path`|`-sk`|Relative path to the Dataverse plugin assembly originator key file for signing.|
+|`--outputDirectory`|`-o`|Output directory|
+|`--author`|`-a`|Author(s) of the Dataverse Plug-in Package.|
 
 [!INCLUDE [plugin-init-remarks](includes/plugin-init-remarks.md)]
 

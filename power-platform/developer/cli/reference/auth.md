@@ -45,17 +45,17 @@ Create and store authentication profiles on this computer
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|<span style="white-space: nowrap;">`--name`</span>|`-n`|The name you want to give to this authentication profile (maximum 12 characters)|
-|<span style="white-space: nowrap;">`--kind`</span>|`-k`|The kind of authentication profile you are creating|
-|<span style="white-space: nowrap;">`--url`</span>|`-u`|The resource URL to connect to|
-|<span style="white-space: nowrap;">`--username`</span>|`-un`|Optional: The username to authenticate with; shows AAD dialog if not specified|
-|<span style="white-space: nowrap;">`--password`</span>|`-p`|Optional: The password to authenticate with|
-|<span style="white-space: nowrap;">`--applicationId`</span>|`-id`|Optional: The application id to authenticate with|
-|<span style="white-space: nowrap;">`--clientSecret`</span>|`-cs`|Optional: The client secret to authenticate with|
-|<span style="white-space: nowrap;">`--tenant`</span>|`-t`|Tenant id if using application id & secret.|
-|<span style="white-space: nowrap;">`--cloud`</span>|`-ci`|Optional: The cloud instance to authenticate with|
-|<span style="white-space: nowrap;">`--deviceCode`</span>|`-dc`|Use the AAD DeviceCode flow for interactive login.|
-|<span style="white-space: nowrap;">`--environment`</span>|`-env`|Default environment (id, url, unique name or partial name)|
+|`--name`|`-n`|The name you want to give to this authentication profile (maximum 12 characters)|
+|`--kind`|`-k`|The kind of authentication profile you are creating|
+|`--url`|`-u`|The resource URL to connect to|
+|`--username`|`-un`|Optional: The username to authenticate with; shows AAD dialog if not specified|
+|`--password`|`-p`|Optional: The password to authenticate with|
+|`--applicationId`|`-id`|Optional: The application id to authenticate with|
+|`--clientSecret`|`-cs`|Optional: The client secret to authenticate with|
+|`--tenant`|`-t`|Tenant id if using application id & secret.|
+|`--cloud`|`-ci`|Optional: The cloud instance to authenticate with|
+|`--deviceCode`|`-dc`|Use the AAD DeviceCode flow for interactive login.|
+|`--environment`|`-env`|Default environment (id, url, unique name or partial name)|
 
 [!INCLUDE [auth-create-remarks](includes/auth-create-remarks.md)]
 
@@ -75,8 +75,8 @@ Select which authentication profile should be active
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|<span style="white-space: nowrap;">`--index`</span>|`-i`|The index of the profile to be active|
-|<span style="white-space: nowrap;">`--name`</span>|`-n`|The name of the profile to be active|
+|`--index`|`-i`|The index of the profile to be active|
+|`--name`|`-n`|The name of the profile to be active|
 
 [!INCLUDE [auth-select-remarks](includes/auth-select-remarks.md)]
 
@@ -90,8 +90,8 @@ Delete a particular authentication profile
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|<span style="white-space: nowrap;">`--index`</span>|`-i`|The index of the profile to be deleted|
-|<span style="white-space: nowrap;">`--name`</span>|`-n`|The name of the profile to be active|
+|`--index`|`-i`|The index of the profile to be deleted|
+|`--name`|`-n`|The name of the profile to be active|
 
 [!INCLUDE [auth-delete-remarks](includes/auth-delete-remarks.md)]
 
@@ -105,9 +105,9 @@ Update name or target environment of an existing authentication profile
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|<span style="white-space: nowrap;">`--index`</span>|`-i`|The index of the profile to be named/renamed<br />**Required**|
-|<span style="white-space: nowrap;">`--name`</span>|`-n`|The name you want to give to this authentication profile (maximum 12 characters)|
-|<span style="white-space: nowrap;">`--environment`</span>|`-env`|Default environment (id, url, unique name or partial name)|
+|`--index`|`-i`|The index of the profile to be named/renamed<br />**Required**|
+|`--name`|`-n`|The name you want to give to this authentication profile (maximum 12 characters)|
+|`--environment`|`-env`|Default environment (id, url, unique name or partial name)|
 
 [!INCLUDE [auth-update-remarks](includes/auth-update-remarks.md)]
 
@@ -121,8 +121,8 @@ Name or rename an existing authentication profile
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|<span style="white-space: nowrap;">`--index`</span>|`-i`|The index of the profile to be named/renamed<br />**Required**|
-|<span style="white-space: nowrap;">`--name`</span>|`-n`|The name you want to give to this authentication profile (maximum 12 characters)<br />**Required**|
+|`--index`|`-i`|The index of the profile to be named/renamed<br />**Required**|
+|`--name`|`-n`|The name you want to give to this authentication profile (maximum 12 characters)<br />**Required**|
 
 [!INCLUDE [auth-name-remarks](includes/auth-name-remarks.md)]
 

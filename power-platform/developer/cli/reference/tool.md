@@ -41,7 +41,7 @@ Launch Plugin Registration Tool
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|<span style="white-space: nowrap;">`--install`</span>|`-i`|Install latest version.|
+|`--install`|`-i`|Install latest version.|
 
 [!INCLUDE [tool-prt-remarks](includes/tool-prt-remarks.md)]
 
@@ -55,7 +55,7 @@ Launch Configuration Migration Tool
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|<span style="white-space: nowrap;">`--install`</span>|`-i`|Install latest version.|
+|`--install`|`-i`|Install latest version.|
 
 [!INCLUDE [tool-cmt-remarks](includes/tool-cmt-remarks.md)]
 
@@ -69,7 +69,7 @@ Launch Package Deployer
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|<span style="white-space: nowrap;">`--install`</span>|`-i`|Install latest version.|
+|`--install`|`-i`|Install latest version.|
 
 [!INCLUDE [tool-pd-remarks](includes/tool-pd-remarks.md)]
 

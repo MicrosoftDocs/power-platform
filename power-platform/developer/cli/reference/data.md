@@ -40,11 +40,11 @@ Export data
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|<span style="white-space: nowrap;">`--schemaFile`</span>|`-sf`|Schema file name. It can be created using Configuration Migration Tool<br />**Required**|
-|<span style="white-space: nowrap;">`--dataFile`</span>|`-df`|File name for data zip file. Default data.zip|
-|<span style="white-space: nowrap;">`--overwrite`</span>|`-o`|Allow overwrite output data file if it already exists|
-|<span style="white-space: nowrap;">`--verbose`</span>|`-v`|Output more diagnostic information during data import/export|
-|<span style="white-space: nowrap;">`--environment`</span>|`-env`|Environment (id, org id, url, unique name or partial name)|
+|`--schemaFile`|`-sf`|Schema file name. It can be created using Configuration Migration Tool<br />**Required**|
+|`--dataFile`|`-df`|File name for data zip file. Default data.zip|
+|`--overwrite`|`-o`|Allow overwrite output data file if it already exists|
+|`--verbose`|`-v`|Output more diagnostic information during data import/export|
+|`--environment`|`-env`|Environment (id, org id, url, unique name or partial name)|
 
 [!INCLUDE [data-export-remarks](includes/data-export-remarks.md)]
 
@@ -58,9 +58,9 @@ Import data
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|<span style="white-space: nowrap;">`--dataDirectory`</span>|`-dd`|Directory name with data for import<br />**Required**|
-|<span style="white-space: nowrap;">`--verbose`</span>|`-v`|Output more diagnostic information during data import/export|
-|<span style="white-space: nowrap;">`--environment`</span>|`-env`|Environment (id, org id, url, unique name or partial name)|
+|`--dataDirectory`|`-dd`|Directory name with data for import<br />**Required**|
+|`--verbose`|`-v`|Output more diagnostic information during data import/export|
+|`--environment`|`-env`|Environment (id, org id, url, unique name or partial name)|
 
 [!INCLUDE [data-import-remarks](includes/data-import-remarks.md)]
 
