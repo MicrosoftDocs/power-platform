@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: kartikka
 ms.author: kkanakas
-ms.date: 6/18/2022
+ms.date: 6/19/2022
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -86,7 +86,7 @@ List all Solutions from the current Dataverse Organization
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--environment-id`|``|The target Environment ID.  Default value is the environment of your currently active Dataverse Auth Profile.|
+|`--environment-id`||The target Environment ID.  Default value is the environment of your currently active Dataverse Auth Profile.|
 |`--environment`|`-env`|The target Environment ID or URL.  Default value is the environment of your currently active Dataverse Auth Profile.|
 
 [!INCLUDE [solution-list-remarks](includes/solution-list-remarks.md)]
@@ -157,7 +157,7 @@ Import the Dataverse Solution into the current Dataverse Environment
 |`--convert-to-managed`|`-cm`|Convert as Managed Solution|
 |`--async`|`-a`|Imports solution asynchronously|
 |`--max-async-wait-time`|`-wt`|Max asynchronous wait time in minutes. Default value is 60 minutes|
-|`--settings-file`|``|The .json file with the deployment settings for connection references and environment variables.|
+|`--settings-file`||The .json file with the deployment settings for connection references and environment variables.|
 |`--activate-flows`|`-af`|Turn on workflows specified in the deployment settings file using a specified user|
 
 [!INCLUDE [solution-import-remarks](includes/solution-import-remarks.md)]

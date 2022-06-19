@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: kartikka
 ms.author: kkanakas
-ms.date: 6/18/2022
+ms.date: 6/19/2022
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 

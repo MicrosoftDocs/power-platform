@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: kartikka
 ms.author: kkanakas
-ms.date: 6/18/2022
+ms.date: 6/19/2022
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -41,8 +41,8 @@ Operating with Power Apps .msapp files
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--sources`|``|Directory to sources to be packed|
-|`--msapp`|``|Path to .msapp file|
+|`--sources`||Directory to sources to be packed|
+|`--msapp`||Path to .msapp file|
 
 [!INCLUDE [canvas-pack-remarks](includes/canvas-pack-remarks.md)]
 
@@ -56,8 +56,8 @@ Operating with Power Apps .msapp files
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--sources`|``|Directory to sources to be unpacked|
-|`--msapp`|``|Path to .msapp file|
+|`--sources`||Directory to sources to be unpacked|
+|`--msapp`||Path to .msapp file|
 
 [!INCLUDE [canvas-unpack-remarks](includes/canvas-unpack-remarks.md)]
 
@@ -71,9 +71,9 @@ Operating with Power Apps .msapp files
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--msapp`|``|Path to .msapp file to be generated|
-|`--connector-id`|``|The ID of the Connector from which the Power App will be generated|
-|`--environment`|``|The target Environment ID.  Default value is the environment of your currently active Dataverse Auth Profile.|
+|`--msapp`||Path to .msapp file to be generated|
+|`--connector-id`||The ID of the Connector from which the Power App will be generated|
+|`--environment`||The target Environment ID.  Default value is the environment of your currently active Dataverse Auth Profile.|
 
 [!INCLUDE [canvas-create-remarks](includes/canvas-create-remarks.md)]
 
