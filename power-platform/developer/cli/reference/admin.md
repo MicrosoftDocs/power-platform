@@ -49,8 +49,8 @@ List all environments from your tenant
 |Parameter|Alias|Description|
 |---------|---------|---------|
 |`--environment`|`-env`|List all environments that contain given string in their name or id.|
-|`--environment-id`|`-id`|**Deprecated** use `--environment` instead.<br />List all environments that contain given string in their id.|
-|`--url`|`-u`|**Deprecated** use `--environment` instead.<br />List all environments that contain given string in their url.|
+|`--environment-id`|`-id`|**Deprecated**: Use `--environment` instead.|
+|`--url`|`-u`|**Deprecated**: Use `--environment` instead.|
 |`--type`|`-t`|List all environments with the given type.<br />Use one of these values:<br />- `Trial`<br />- `Sandbox`<br />- `Production`<br />- `Developer`<br />- `Teams`<br />- `SubscriptionBasedTrial`|
 |`--name`|`-n`|List all environments that contain given string in their name.|
 |`--organization-id`|`-oi`|List all environments that contain given string in their organization id.|
@@ -91,10 +91,10 @@ Takes a manual backup of your environment.
 |Parameter|Alias|Description|
 |---------|---------|---------|
 |`--environment`|`-env`|Environment URL or ID of the Environment that requires backup.|
-|`--url`|`-u`|**Deprecated** use `--environment` instead.<br />Url of the environment that requires backup.|
-|`--label`|`-l`|**Deprecated** This parameter will be ignored.<br />Sets the backup label as provided.<br />**Required**|
-|`--environment-id`|`-id`|**Deprecated** use `--environment` instead.<br />Id of the environment that requires backup.|
-|`--notes`|`-n`|**Deprecated** This parameter will be ignored.<br />**ignored**: Additional notes for this backup.|
+|`--url`|`-u`|**Deprecated**: Use `--environment` instead.|
+|`--label`|`-l`|**Deprecated**: This parameter will be ignored.|
+|`--environment-id`|`-id`|**Deprecated**: Use `--environment` instead.|
+|`--notes`|`-n`|**Deprecated**: This parameter will be ignored.|
 
 [!INCLUDE [admin-backup-remarks](includes/admin-backup-remarks.md)]
 
@@ -109,8 +109,8 @@ Deletes Environment from your tenant
 |Parameter|Alias|Description|
 |---------|---------|---------|
 |`--environment`|`-env`|Environment URL or ID of the Environment that needs to be deleted from your tenant.|
-|`--url`|`-u`|**Deprecated** use `--environment` instead.<br />URL of the Environment that needs to be deleted from your tenant|
-|`--environment-id`|`-id`|**Deprecated** use `--environment` instead.<br />Id of the environment to delete|
+|`--url`|`-u`|**Deprecated**: Use `--environment` instead.|
+|`--environment-id`|`-id`|**Deprecated**: Use `--environment` instead.|
 |`--async`|`-a`|Optional boolean argument to run pac verbs asynchronously, defaults to false.<br />This parameter requires no value. It is a switch.|
 
 [!INCLUDE [admin-delete-remarks](includes/admin-delete-remarks.md)]
@@ -128,8 +128,8 @@ Reset environment from your tenant
 |`--environment`|`-env`|URL or ID of the Environment that needs to be reset.|
 |`--currency`|`-c`|Sets the currency used for your environment. [defaults to USD]|
 |`--domain`|`-d`|The domain name is part of the environment URL. If domain name is already in use, a numeric value will be appended to the domain name. Eg: If 'contoso' is already in use, then the environment URL will be updated to https://{contoso}0.crm.dynamics.com.|
-|`--environment-id`|`-id`|**Deprecated** use `--environment` instead.<br />Id of the environment to reset|
-|`--url`|`-u`|**Deprecated** use `--environment` instead.<br />Url of the environment to reset|
+|`--environment-id`|`-id`|**Deprecated**: Use `--environment` instead.|
+|`--url`|`-u`|**Deprecated**: Use `--environment` instead.|
 |`--name`|`-n`|Sets the name of the environment.|
 |`--language`|`-l`|Sets the language used for your environment. [defaults to English]|
 |`--purpose`|`-p`|Sets the description used to associate the environment with a specific intent.|
@@ -150,8 +150,8 @@ Lists all backups of your environment.
 |Parameter|Alias|Description|
 |---------|---------|---------|
 |`--environment`|`-env`|List all environments that contains given string in their Environment ID or URL.|
-|`--url`|`-u`|**Deprecated** use `--environment` instead.<br />Url of the environment that has backups.|
-|`--environment-id`|`-id`|**Deprecated** use `--environment` instead.<br />Id of the environment that has backups.|
+|`--url`|`-u`|**Deprecated**: Use `--environment` instead.|
+|`--environment-id`|`-id`|**Deprecated**: Use `--environment` instead.|
 
 [!INCLUDE [admin-list-backups-remarks](includes/admin-list-backups-remarks.md)]
 
@@ -167,10 +167,10 @@ Restores an environment to a given backup.
 |---------|---------|---------|
 |`--source-env`|`-se`|Environment URL or ID of the source environment required for restore.|
 |`--target-env`|`-te`|Environment URL or ID of the target environment required for restore. This would default to source URL/ID if not provided.|
-|`--source-url`|`-su`|**Deprecated** use `--source-env` instead.<br />Environment URL of source environment required for restore.|
-|`--target-url`|`-tu`|**Deprecated** use `--target-env` instead.<br />Environment URL of target environment required for restore. This would default to source URL if not provided.|
-|`--source-id`|`-si`|**Deprecated** use `--source-env` instead.<br />Environment Id of source environment required for restore.|
-|`--target-id`|`-ti`|**Deprecated** use `--target-env` instead.<br />Environment Id of target environment required for restore. This would default to source Id if not provided.|
+|`--source-url`|`-su`|**Deprecated**: Use `--source-env` instead.|
+|`--target-url`|`-tu`|**Deprecated**: Use `--target-env` instead.|
+|`--source-id`|`-si`|**Deprecated**: Use `--source-env` instead.|
+|`--target-id`|`-ti`|**Deprecated**: Use `--target-env` instead.|
 |`--selected-backup`|`-sb`|DateTime of the backup in 'mm/dd/yyyy hh:mm' format OR string 'latest'.<br />**Required**|
 |`--name`|`-n`|Optional name of the restored environment.|
 |`--async`|`-a`|Optional boolean argument to run pac verbs asynchronously, defaults to false.<br />This parameter requires no value. It is a switch.|
@@ -189,10 +189,10 @@ Copy Source Environment to Destination Environment
 |---------|---------|---------|
 |`--source-env`|`-se`|Environment URL or ID of the source environment that is being copied|
 |`--target-env`|`-te`|Environment URL or ID of the target environment|
-|`--source-url`|`-su`|**Deprecated** use `--source-env` instead.<br />Url of the source environment that is being copied|
-|`--target-url`|`-tu`|**Deprecated** use `--target-env` instead.<br />Url of the target environment|
-|`--source-id`|`-si`|**Deprecated** use `--source-env` instead.<br />Id of the source environment that is being copied|
-|`--target-id`|`-ti`|**Deprecated** use `--target-env` instead.<br />Id of the target environment|
+|`--source-url`|`-su`|**Deprecated**: Use `--source-env` instead.|
+|`--target-url`|`-tu`|**Deprecated**: Use `--target-env` instead.|
+|`--source-id`|`-si`|**Deprecated**: Use `--source-env` instead.|
+|`--target-id`|`-ti`|**Deprecated**: Use `--target-env` instead.|
 |`--name`|`-n`|Name of the target environment|
 |`--type`|`-t`|<br />Use one of these values:<br />- `MinimalCopy`<br />- `FullCopy`|
 |`--async`|`-a`|Optional boolean argument to run pac verbs asynchronously, defaults to false.<br />This parameter requires no value. It is a switch.|

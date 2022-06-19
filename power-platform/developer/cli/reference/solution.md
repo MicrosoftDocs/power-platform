@@ -86,7 +86,7 @@ List all Solutions from the current Dataverse Organization
 
 |Parameter|Alias|Description|
 |---------|---------|---------|
-|`--environment-id`||**Deprecated** use `--environment` instead.<br />The target Environment ID.  Default value is the environment of your currently active Dataverse Auth Profile.|
+|`--environment-id`||**Deprecated**: Use `--environment` instead.|
 |`--environment`|`-env`|The target Environment ID or URL.  Default value is the environment of your currently active Dataverse Auth Profile.|
 
 [!INCLUDE [solution-list-remarks](includes/solution-list-remarks.md)]
@@ -131,7 +131,7 @@ Update build or revision version for solution
 |Parameter|Alias|Description|
 |---------|---------|---------|
 |`--strategy`|`-s`|Updates build version for 'Solution.xml' file using specified strategy. If using gittags, set personal access token in the following environment variable "PacCli.PAT"<br />Use one of these values:<br />- `gittags`<br />- `filetracking`<br />- `solution`|
-|`--patchversion`|`-pv`|**Deprecated** This parameter will be ignored.<br />Patch version for solution|
+|`--patchversion`|`-pv`|**Deprecated**: This parameter will be ignored.|
 |`--buildversion`|`-bv`|Build version for solution<br /><br />Validation Error: The value must be a positive integer|
 |`--revisionversion`|`-rv`|Revision version for solution<br /><br />Validation Error: The value must be a positive integer|
 |`--filename`|`-fn`|Tracker CSV file name to be used when using filetracking as a strategy. Default value is ControlsStateVersionInfo.csv|
@@ -175,7 +175,7 @@ Export a Dataverse Solution from the current Dataverse Environment
 |`--path`|`-p`|Path where the exported solution zip file will be written<br />**Required**|
 |`--name`|`-n`|The name of the solution to be exported<br />**Required**|
 |`--managed`|`-m`|Whether the solution should be exported as a managed solution<br />This parameter requires no value. It is a switch.|
-|`--targetversion`|`-v`|**Deprecated** This parameter will be ignored.<br />The version that the exported solution will support|
+|`--targetversion`|`-v`|**Deprecated**: This parameter will be ignored.|
 |`--include`|`-i`|Which settings should be included in the solution being exported<br />Use one or more of these values separated by commas:<br />- `autonumbering`<br />- `calendar`<br />- `customization`<br />- `emailtracking`<br />- `externalapplications`<br />- `general`<br />- `isvconfig`<br />- `marketing`<br />- `outlooksynchronization`<br />- `relationshiproles`<br />- `sales`|
 |`--async`|`-a`|Exports solution asynchronously<br />This parameter requires no value. It is a switch.|
 |`--max-async-wait-time`|`-wt`|Max asynchronous wait time in minutes. Default value is 60 minutes|
@@ -193,7 +193,7 @@ Create a solution project based on an existing solution in your Organization
 |Parameter|Alias|Description|
 |---------|---------|---------|
 |`--name`|`-n`|The name of the solution to be exported<br />**Required**|
-|`--targetversion`|`-v`|**Deprecated** This parameter will be ignored.<br />The version that the exported solution will support|
+|`--targetversion`|`-v`|**Deprecated**: This parameter will be ignored.|
 |`--include`|`-i`|Which settings should be included in the solution being exported<br />Use one or more of these values separated by commas:<br />- `autonumbering`<br />- `calendar`<br />- `customization`<br />- `emailtracking`<br />- `externalapplications`<br />- `general`<br />- `isvconfig`<br />- `marketing`<br />- `outlooksynchronization`<br />- `relationshiproles`<br />- `sales`|
 |`--outputDirectory`|`-o`|Output directory|
 |`--async`|`-a`|Exports solution asynchronously<br />This parameter requires no value. It is a switch.|
