@@ -3,8 +3,8 @@ title: Microsoft Power Platform CLI plugin command group| Microsoft Docs
 description: "Describes commands and parameters for the Microsoft Power Platform CLI plugin command group."
 keywords: "pac cli"
 ms.subservice: developer
-author: kartikka
-ms.author: kkanakas
+author: kkanakas
+ms.author: kartikka
 ms.date: 6/19/2022
 ms.reviewer: jdaly
 ms.topic: reference

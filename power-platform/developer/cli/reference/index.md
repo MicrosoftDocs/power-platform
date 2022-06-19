@@ -3,8 +3,8 @@ title: Microsoft Power Platform CLI Command Groups| Microsoft Docs
 description: "Descriptions for Power Platform Command Line Interface commands."
 keywords: "pac cli"
 ms.subservice: developer
-author: kartikka
-ms.author: kkanakas
+author: kkanakas
+ms.author: kartikka
 ms.date: 6/19/2022
 ms.reviewer: jdaly
 ms.topic: reference
