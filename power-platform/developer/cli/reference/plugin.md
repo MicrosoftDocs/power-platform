@@ -37,12 +37,7 @@ Initializes a directory with a new Dataverse plugin class library.
 
 ### plugin init Parameters
 
-> [!div class="mx-tdCol2BreakAll"]
-> |--Parameter/<br />-Alias|Description|
-> |---------|---------|
-> |`‑‑signing‑key‑file‑path`/<br />`-sk`|Relative path to the Dataverse plugin assembly originator key file for signing.|
-> |`‑‑outputDirectory`/<br />`-o`|Output directory|
-> |`‑‑author`/<br />`-a`|Author(s) of the Dataverse Plug-in Package.|
+#### Optional Parameters
 
 [!INCLUDE [plugin-init-remarks](includes/plugin-init-remarks.md)]
 

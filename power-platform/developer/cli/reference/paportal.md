@@ -42,14 +42,18 @@ Bundle portal website content in CMT supported XML format
 
 ### paportal bundle Parameters
 
-> [!div class="mx-tdCol2BreakAll"]
-> |--Parameter/<br />-Alias|Description|
-> |---------|---------|
-> |`‑‑path`/<br />`-p`|Path from where the website content will be bundled<br />**Required**|
-> |`‑‑output`/<br />`-o`|Path to which the XML files(s) will be saved<br />**Required**|
-> |`‑‑split`/<br />`-s`|If this flag is true a separate xml will be created for each entity<br />This parameter requires no value. It is a switch.|
-> |`‑‑excludePK`/<br />`-ep`|If this flag is true Primary key fields are not included in data xml so that CMT generates new record ids when importing.<br />This parameter requires no value. It is a switch.|
-> |`‑‑deploymentProfile`/<br />`-dp`|Deployment profile name to be used. Defaults to 'default'|
+#### Required Parameters
+
+##### `--path`	`-p`
+
+##### `--output`	`-o`
+
+
+#### Optional Parameters
+
+##### `--path`	`-p`
+
+##### `--output`	`-o`
 
 [!INCLUDE [paportal-bundle-remarks](includes/paportal-bundle-remarks.md)]
 
@@ -61,16 +65,18 @@ Download portal website content from the current Dataverse Organization
 
 ### paportal download Parameters
 
-> [!div class="mx-tdCol2BreakAll"]
-> |--Parameter/<br />-Alias|Description|
-> |---------|---------|
-> |`‑‑path`/<br />`-p`|Path where the website content will be downloaded<br />**Required**|
-> |`‑‑webSiteId`/<br />`-id`|Portal website id to download<br />**Required**|
-> |`‑‑includeEntities`/<br />`-ie`|Download only the entities specified for this argument in comma separated entity logical name|
-> |`‑‑excludeEntities`/<br />`-xe`|Comma separated list of entity logical names to exclude downloading|
-> |`‑‑overwrite`/<br />`-o`|Portal website content to overwrite<br />This parameter requires no value. It is a switch.|
-> |`‑‑exportTranslations`/<br />`-et`|Export translation content in locale folder: Value 'All' extracts all content for C1 & C2 customers. Value 'SupportedLang' extracts localizable content for C2 customers<br />This parameter requires no value. It is a switch.|
-> |`‑‑translationsFormat`/<br />`-tf`|Locale file format [Json or Yaml]|
+#### Required Parameters
+
+##### `--path`	`-p`
+
+##### `--webSiteId`	`-id`
+
+
+#### Optional Parameters
+
+##### `--path`	`-p`
+
+##### `--webSiteId`	`-id`
 
 [!INCLUDE [paportal-download-remarks](includes/paportal-download-remarks.md)]
 
@@ -88,10 +94,9 @@ Merges localized content back to portal yaml files
 
 ### paportal mergelocale Parameters
 
-> [!div class="mx-tdCol2BreakAll"]
-> |--Parameter/<br />-Alias|Description|
-> |---------|---------|
-> |`‑‑path`/<br />`-p`|Path where website files are located<br />**Required**|
+#### Required Parameters
+
+##### `--path`	`-p`
 
 [!INCLUDE [paportal-mergelocale-remarks](includes/paportal-mergelocale-remarks.md)]
 
@@ -103,10 +108,9 @@ Assigns new guid to primary key attribute for all records of a website
 
 ### paportal reguid Parameters
 
-> [!div class="mx-tdCol2BreakAll"]
-> |--Parameter/<br />-Alias|Description|
-> |---------|---------|
-> |`‑‑path`/<br />`-p`|Path where website files are located<br />**Required**|
+#### Required Parameters
+
+##### `--path`	`-p`
 
 [!INCLUDE [paportal-reguid-remarks](includes/paportal-reguid-remarks.md)]
 
@@ -118,11 +122,14 @@ Upload portal website content to current Dataverse Organization
 
 ### paportal upload Parameters
 
-> [!div class="mx-tdCol2BreakAll"]
-> |--Parameter/<br />-Alias|Description|
-> |---------|---------|
-> |`‑‑path`/<br />`-p`|Path from where the website content will be uploaded<br />**Required**|
-> |`‑‑deploymentProfile`/<br />`-dp`|Deployment profile name to be used. Defaults to 'default'|
+#### Required Parameters
+
+##### `--path`	`-p`
+
+
+#### Optional Parameters
+
+##### `--path`	`-p`
 
 [!INCLUDE [paportal-upload-remarks](includes/paportal-upload-remarks.md)]
 

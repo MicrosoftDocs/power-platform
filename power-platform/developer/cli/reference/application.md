@@ -38,12 +38,14 @@ Installs Dataverse application to given environment
 
 ### application install Parameters
 
-> [!div class="mx-tdCol2BreakAll"]
-> |--Parameter/<br />-Alias|Description|
-> |---------|---------|
-> |`‑‑environment‑id`/<br />`-id`|Target environment application will be installed to<br />**Required**|
-> |`‑‑application‑name`/<br />`-an`|Unique name of the application that will be installed to target environment|
-> |`‑‑application‑list`/<br />`-al`|Location of the JSON file with list of the Dataverse applications from AppSource to be installed|
+#### Required Parameters
+
+##### `--environment-id`	`-id`
+
+
+#### Optional Parameters
+
+##### `--environment-id`	`-id`
 
 [!INCLUDE [application-install-remarks](includes/application-install-remarks.md)]
 
@@ -55,11 +57,7 @@ List available Dataverse applications from AppSource
 
 ### application list Parameters
 
-> [!div class="mx-tdCol2BreakAll"]
-> |--Parameter/<br />-Alias|Description|
-> |---------|---------|
-> |`‑‑environment‑id`/<br />`-id`|List available Dataverse applications for given environment; if not specified, list all applications in the tenant (default: list for all environments)|
-> |`‑‑output`/<br />`-o`|Location of the JSON file to be created with list of the Dataverse applications from AppSource|
+#### Optional Parameters
 
 [!INCLUDE [application-list-remarks](includes/application-list-remarks.md)]
 
