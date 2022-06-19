@@ -54,10 +54,10 @@ Add license and plan info to solution
 
 ### solution add-license Parameters
 
-|Parameter|Alias|Description|
-|---------|---------|---------|
-|`--planDefinitionFile`|`-pd`|License plan definition file in CSV format; expected columns: Service ID, Display name, More info URL<br />**Required**|
-|`--planMappingFile`|`-pm`|License plan mapping file in CSV format; expected columns: Service ID, Component name<br />**Required**|
+|Parameter<br />Alias|Description|
+|---------|---------|
+|`--planDefinitionFile`<br />`-pd`|License plan definition file in CSV format; expected columns: Service ID, Display name, More info URL<br />**Required**|
+|`--planMappingFile`<br />`-pm`|License plan mapping file in CSV format; expected columns: Service ID, Component name<br />**Required**|
 
 [!INCLUDE [solution-add-license-remarks](includes/solution-add-license-remarks.md)]
 
@@ -69,9 +69,9 @@ Adds a reference from the project in the current directory to the project at 'pa
 
 ### solution add-reference Parameters
 
-|Parameter|Alias|Description|
-|---------|---------|---------|
-|`--path`|`-p`|The path to the referenced project<br />**Required**|
+|Parameter<br />Alias|Description|
+|---------|---------|
+|`--path`<br />`-p`|The path to the referenced project<br />**Required**|
 
 [!INCLUDE [solution-add-reference-remarks](includes/solution-add-reference-remarks.md)]
 
@@ -83,13 +83,13 @@ Adds a solution component to the target unmanaged solution in the connected Data
 
 ### solution add-solution-component Parameters
 
-|Parameter|Alias|Description|
-|---------|---------|---------|
-|`--solutionUniqueName`|`-sn`|Name of the solution<br />**Required**|
-|`--component`|`-c`|The schema name or ID of the component to add to the target solution<br />**Required**|
-|`--componentType`|`-ct`|The value that represents the solution component that you are adding<br />**Required**|
-|`--AddRequiredComponents`|`-arc`|Indicates whether other solution components that are required by the solution component that you are adding should also be added to the unmanaged solution<br />This parameter requires no value. It is a switch.|
-|`--environment`|`-env`|Environment URL or ID of the target Dataverse environment|
+|Parameter<br />Alias|Description|
+|---------|---------|
+|`--solutionUniqueName`<br />`-sn`|Name of the solution<br />**Required**|
+|`--component`<br />`-c`|The schema name or ID of the component to add to the target solution<br />**Required**|
+|`--componentType`<br />`-ct`|The value that represents the solution component that you are adding<br />**Required**|
+|`--AddRequiredComponents`<br />`-arc`|Indicates whether other solution components that are required by the solution component that you are adding should also be added to the unmanaged solution<br />This parameter requires no value. It is a switch.|
+|`--environment`<br />`-env`|Environment URL or ID of the target Dataverse environment|
 
 [!INCLUDE [solution-add-solution-component-remarks](includes/solution-add-solution-component-remarks.md)]
 
@@ -101,16 +101,16 @@ Upload a Dataverse Solution project to run against the PowerApps Checker Service
 
 ### solution check Parameters
 
-|Parameter|Alias|Description|
-|---------|---------|---------|
-|`--path`|`-p`|Path where the to-be-checked solution zip file(s) exist; path can contain glob/wildcard characters|
-|`--solutionUrl`|`-u`|SAS Uri pointing to solution.zip to be analyzed|
-|`--outputDirectory`|`-o`|Output directory|
-|`--geo`|`-g`|Which geographical instance of the PowerApps Checker service to use.<br />Use one of these values:<br />- `PreviewUnitedStates`<br />- `UnitedStates`<br />- `Europe`<br />- `Asia`<br />- `Australia`<br />- `Japan`<br />- `India`<br />- `Canada`<br />- `SouthAmerica`<br />- `UnitedKingdom`<br />- `France`<br />- `Germany`<br />- `UnitedArabEmirates`<br />- `Switzerland`<br />- `USGovernment`<br />- `USGovernmentL4`<br />- `USGovernmentL5DoD`<br />- `China`|
-|`--customEndpoint`|`-ce`|Specify a custom URL as Power Apps Checker endpoint|
-|`--ruleLevelOverride`|`-rl`|Path to a file containing a JSON array rules and levels to override.  Accepted values for OverrideLevel are: Critical, High, Medium, Low, Informational. Example: [{"Id":"meta-remove-dup-reg","OverrideLevel":"Medium"},{"Id":"il-avoid-specialized-update-ops","OverrideLevel":"Medium"}]|
-|`--ruleSet`|`-rs`|Select a rule set that will be executed as part of this build. Values: A valid Guid, "AppSource Certification", "Solution Checker" (default)|
-|`--excludedFiles`|`-ef`|Exclude Files from the Analysis. Pass as comma-separated values|
+|Parameter<br />Alias|Description|
+|---------|---------|
+|`--path`<br />`-p`|Path where the to-be-checked solution zip file(s) exist; path can contain glob/wildcard characters|
+|`--solutionUrl`<br />`-u`|SAS Uri pointing to solution.zip to be analyzed|
+|`--outputDirectory`<br />`-o`|Output directory|
+|`--geo`<br />`-g`|Which geographical instance of the PowerApps Checker service to use.<br />Use one of these values:<br />- `PreviewUnitedStates`<br />- `UnitedStates`<br />- `Europe`<br />- `Asia`<br />- `Australia`<br />- `Japan`<br />- `India`<br />- `Canada`<br />- `SouthAmerica`<br />- `UnitedKingdom`<br />- `France`<br />- `Germany`<br />- `UnitedArabEmirates`<br />- `Switzerland`<br />- `USGovernment`<br />- `USGovernmentL4`<br />- `USGovernmentL5DoD`<br />- `China`|
+|`--customEndpoint`<br />`-ce`|Specify a custom URL as Power Apps Checker endpoint|
+|`--ruleLevelOverride`<br />`-rl`|Path to a file containing a JSON array rules and levels to override.  Accepted values for OverrideLevel are: Critical, High, Medium, Low, Informational. Example: [{"Id":"meta-remove-dup-reg","OverrideLevel":"Medium"},{"Id":"il-avoid-specialized-update-ops","OverrideLevel":"Medium"}]|
+|`--ruleSet`<br />`-rs`|Select a rule set that will be executed as part of this build. Values: A valid Guid, "AppSource Certification", "Solution Checker" (default)|
+|`--excludedFiles`<br />`-ef`|Exclude Files from the Analysis. Pass as comma-separated values|
 
 [!INCLUDE [solution-check-remarks](includes/solution-check-remarks.md)]
 
@@ -122,14 +122,14 @@ Create a solution project based on an existing solution in your Organization
 
 ### solution clone Parameters
 
-|Parameter|Alias|Description|
-|---------|---------|---------|
-|`--name`|`-n`|The name of the solution to be exported<br />**Required**|
-|`--targetversion`|`-v`|**Deprecated**: This parameter will be ignored.|
-|`--include`|`-i`|Which settings should be included in the solution being exported<br />Use one or more of these values separated by commas:<br />- `autonumbering`<br />- `calendar`<br />- `customization`<br />- `emailtracking`<br />- `externalapplications`<br />- `general`<br />- `isvconfig`<br />- `marketing`<br />- `outlooksynchronization`<br />- `relationshiproles`<br />- `sales`|
-|`--outputDirectory`|`-o`|Output directory|
-|`--async`|`-a`|Exports solution asynchronously<br />This parameter requires no value. It is a switch.|
-|`--max-async-wait-time`|`-wt`|Max asynchronous wait time in minutes. Default value is 60 minutes|
+|Parameter<br />Alias|Description|
+|---------|---------|
+|`--name`<br />`-n`|The name of the solution to be exported<br />**Required**|
+|`--targetversion`<br />`-v`|**Deprecated**: This parameter will be ignored.|
+|`--include`<br />`-i`|Which settings should be included in the solution being exported<br />Use one or more of these values separated by commas:<br />- `autonumbering`<br />- `calendar`<br />- `customization`<br />- `emailtracking`<br />- `externalapplications`<br />- `general`<br />- `isvconfig`<br />- `marketing`<br />- `outlooksynchronization`<br />- `relationshiproles`<br />- `sales`|
+|`--outputDirectory`<br />`-o`|Output directory|
+|`--async`<br />`-a`|Exports solution asynchronously<br />This parameter requires no value. It is a switch.|
+|`--max-async-wait-time`<br />`-wt`|Max asynchronous wait time in minutes. Default value is 60 minutes|
 
 [!INCLUDE [solution-clone-remarks](includes/solution-clone-remarks.md)]
 
@@ -141,11 +141,11 @@ Create a settings file from solution zip or solution folder.
 
 ### solution create-settings Parameters
 
-|Parameter|Alias|Description|
-|---------|---------|---------|
-|`--solution-zip`|`-z`|Path to solution zip file.|
-|`--solution-folder`|`-f`|Path to the local, unpacked solution folder: either the root of the 'Other/Solution.xml' file or a folder with a .cdsproj file.|
-|`--settings-file`|`-s`|The .json file with the deployment settings for connection references and environment variables.|
+|Parameter<br />Alias|Description|
+|---------|---------|
+|`--solution-zip`<br />`-z`|Path to solution zip file.|
+|`--solution-folder`<br />`-f`|Path to the local, unpacked solution folder: either the root of the 'Other/Solution.xml' file or a folder with a .cdsproj file.|
+|`--settings-file`<br />`-s`|The .json file with the deployment settings for connection references and environment variables.|
 
 [!INCLUDE [solution-create-settings-remarks](includes/solution-create-settings-remarks.md)]
 
@@ -157,9 +157,9 @@ Delete Dataverse Solution from the current Dataverse Environment
 
 ### solution delete Parameters
 
-|Parameter|Alias|Description|
-|---------|---------|---------|
-|`--solution-name`|`-sn`|Name of the solution<br />**Required**|
+|Parameter<br />Alias|Description|
+|---------|---------|
+|`--solution-name`<br />`-sn`|Name of the solution<br />**Required**|
 
 [!INCLUDE [solution-delete-remarks](includes/solution-delete-remarks.md)]
 
@@ -171,15 +171,15 @@ Export a Dataverse Solution from the current Dataverse Environment
 
 ### solution export Parameters
 
-|Parameter|Alias|Description|
-|---------|---------|---------|
-|`--path`|`-p`|Path where the exported solution zip file will be written<br />**Required**|
-|`--name`|`-n`|The name of the solution to be exported<br />**Required**|
-|`--managed`|`-m`|Whether the solution should be exported as a managed solution<br />This parameter requires no value. It is a switch.|
-|`--targetversion`|`-v`|**Deprecated**: This parameter will be ignored.|
-|`--include`|`-i`|Which settings should be included in the solution being exported<br />Use one or more of these values separated by commas:<br />- `autonumbering`<br />- `calendar`<br />- `customization`<br />- `emailtracking`<br />- `externalapplications`<br />- `general`<br />- `isvconfig`<br />- `marketing`<br />- `outlooksynchronization`<br />- `relationshiproles`<br />- `sales`|
-|`--async`|`-a`|Exports solution asynchronously<br />This parameter requires no value. It is a switch.|
-|`--max-async-wait-time`|`-wt`|Max asynchronous wait time in minutes. Default value is 60 minutes|
+|Parameter<br />Alias|Description|
+|---------|---------|
+|`--path`<br />`-p`|Path where the exported solution zip file will be written<br />**Required**|
+|`--name`<br />`-n`|The name of the solution to be exported<br />**Required**|
+|`--managed`<br />`-m`|Whether the solution should be exported as a managed solution<br />This parameter requires no value. It is a switch.|
+|`--targetversion`<br />`-v`|**Deprecated**: This parameter will be ignored.|
+|`--include`<br />`-i`|Which settings should be included in the solution being exported<br />Use one or more of these values separated by commas:<br />- `autonumbering`<br />- `calendar`<br />- `customization`<br />- `emailtracking`<br />- `externalapplications`<br />- `general`<br />- `isvconfig`<br />- `marketing`<br />- `outlooksynchronization`<br />- `relationshiproles`<br />- `sales`|
+|`--async`<br />`-a`|Exports solution asynchronously<br />This parameter requires no value. It is a switch.|
+|`--max-async-wait-time`<br />`-wt`|Max asynchronous wait time in minutes. Default value is 60 minutes|
 
 [!INCLUDE [solution-export-remarks](includes/solution-export-remarks.md)]
 
@@ -191,19 +191,19 @@ Import the Dataverse Solution into the current Dataverse Environment
 
 ### solution import Parameters
 
-|Parameter|Alias|Description|
-|---------|---------|---------|
-|`--path`|`-p`|Path to solution zip file. If not specified, assumes the current folder is a cdsproj project.|
-|`--activate-plugins`|`-ap`|Activate plug-ins and workflows on the solution<br />This parameter requires no value. It is a switch.|
-|`--force-overwrite`|`-f`|Force an overwrite of unmanaged customizations<br />This parameter requires no value. It is a switch.|
-|`--skip-dependency-check`|`-s`|Skip dependency check against dependencies flagged as product update<br />This parameter requires no value. It is a switch.|
-|`--import-as-holding`|`-h`|Import the solution as a holding solution<br />This parameter requires no value. It is a switch.|
-|`--publish-changes`|`-pc`|Publish your changes upon a successful import<br />This parameter requires no value. It is a switch.|
-|`--convert-to-managed`|`-cm`|Convert as Managed Solution<br />This parameter requires no value. It is a switch.|
-|`--async`|`-a`|Imports solution asynchronously<br />This parameter requires no value. It is a switch.|
-|`--max-async-wait-time`|`-wt`|Max asynchronous wait time in minutes. Default value is 60 minutes|
-|`--settings-file`||The .json file with the deployment settings for connection references and environment variables.|
-|`--activate-flows`|`-af`|Turn on workflows specified in the deployment settings file using a specified user<br />This parameter requires no value. It is a switch.|
+|Parameter<br />Alias|Description|
+|---------|---------|
+|`--path`<br />`-p`|Path to solution zip file. If not specified, assumes the current folder is a cdsproj project.|
+|`--activate-plugins`<br />`-ap`|Activate plug-ins and workflows on the solution<br />This parameter requires no value. It is a switch.|
+|`--force-overwrite`<br />`-f`|Force an overwrite of unmanaged customizations<br />This parameter requires no value. It is a switch.|
+|`--skip-dependency-check`<br />`-s`|Skip dependency check against dependencies flagged as product update<br />This parameter requires no value. It is a switch.|
+|`--import-as-holding`<br />`-h`|Import the solution as a holding solution<br />This parameter requires no value. It is a switch.|
+|`--publish-changes`<br />`-pc`|Publish your changes upon a successful import<br />This parameter requires no value. It is a switch.|
+|`--convert-to-managed`<br />`-cm`|Convert as Managed Solution<br />This parameter requires no value. It is a switch.|
+|`--async`<br />`-a`|Imports solution asynchronously<br />This parameter requires no value. It is a switch.|
+|`--max-async-wait-time`<br />`-wt`|Max asynchronous wait time in minutes. Default value is 60 minutes|
+|`--settings-file`<br />|The .json file with the deployment settings for connection references and environment variables.|
+|`--activate-flows`<br />`-af`|Turn on workflows specified in the deployment settings file using a specified user<br />This parameter requires no value. It is a switch.|
 
 [!INCLUDE [solution-import-remarks](includes/solution-import-remarks.md)]
 
@@ -215,11 +215,11 @@ Initializes a directory with a new Dataverse solution project
 
 ### solution init Parameters
 
-|Parameter|Alias|Description|
-|---------|---------|---------|
-|`--publisher-name`|`-pn`|Name of the Dataverse solution publisher<br />**Required**<br />**Note**: Only characters within the ranges [A - Z], [a - z], [0 - 9], or _ are allowed. The first character may only be in the ranges [A - Z], [a - z], or _.|
-|`--publisher-prefix`|`-pp`|Customization prefix value for the Dataverse solution publisher<br />**Required**<br />**Note**: The prefix must be 2 to 8 characters long, can only consist of alpha-numerics, must start with a letter, and cannot start with 'mscrm'.|
-|`--outputDirectory`|`-o`|Output directory|
+|Parameter<br />Alias|Description|
+|---------|---------|
+|`--publisher-name`<br />`-pn`|Name of the Dataverse solution publisher<br />**Required**<br />**Note**: Only characters within the ranges [A - Z], [a - z], [0 - 9], or _ are allowed. The first character may only be in the ranges [A - Z], [a - z], or _.|
+|`--publisher-prefix`<br />`-pp`|Customization prefix value for the Dataverse solution publisher<br />**Required**<br />**Note**: The prefix must be 2 to 8 characters long, can only consist of alpha-numerics, must start with a letter, and cannot start with 'mscrm'.|
+|`--outputDirectory`<br />`-o`|Output directory|
 
 [!INCLUDE [solution-init-remarks](includes/solution-init-remarks.md)]
 
@@ -231,10 +231,10 @@ List all Solutions from the current Dataverse Organization
 
 ### solution list Parameters
 
-|Parameter|Alias|Description|
-|---------|---------|---------|
-|`--environment-id`||**Deprecated**: Use `--environment` instead.|
-|`--environment`|`-env`|The target Environment ID or URL.  Default value is the environment of your currently active Dataverse Auth Profile.|
+|Parameter<br />Alias|Description|
+|---------|---------|
+|`--environment-id`<br />|**Deprecated**: Use `--environment` instead.|
+|`--environment`<br />`-env`|The target Environment ID or URL.  Default value is the environment of your currently active Dataverse Auth Profile.|
 
 [!INCLUDE [solution-list-remarks](includes/solution-list-remarks.md)]
 
@@ -246,10 +246,10 @@ Sets version for solution loaded in Dataverse environment.
 
 ### solution online-version Parameters
 
-|Parameter|Alias|Description|
-|---------|---------|---------|
-|`--solution-name`|`-sn`|Name of the solution<br />**Required**|
-|`--solution-version`|`-sv`|Specify the solution version number.<br />**Required**|
+|Parameter<br />Alias|Description|
+|---------|---------|
+|`--solution-name`<br />`-sn`|Name of the solution<br />**Required**|
+|`--solution-version`<br />`-sv`|Specify the solution version number.<br />**Required**|
 
 [!INCLUDE [solution-online-version-remarks](includes/solution-online-version-remarks.md)]
 
@@ -261,24 +261,24 @@ Package solution components on local filesystem into solution.zip (SolutionPacka
 
 ### solution pack Parameters
 
-|Parameter|Alias|Description|
-|---------|---------|---------|
-|`--zipfile`|`-z`|The full path to the solution ZIP file<br />**Required**|
-|`--folder`|`-f`|The path to the root folder on the local filesystem. When unpacking/extractins, this will be written to, when packing this will be read from.|
-|`--packagetype`|`-p`|When unpacking/extracting, use to specify dual Managed and Unmanaged operation. When packing, use to specify Managed or Unmanaged from a previous unpack 'Both'. Can be: 'Unmanaged', 'Managed' or 'Both'; default: 'Unmanaged'|
-|`--log`|`-l`|The path to the log file.|
-|`--errorlevel`|`-e`|Minimum logging level for log output [Verbose\|Info\|Warning\|Error\|Off]; default: Info|
-|`--singleComponent`|`-sc`|Only perform action on a single component type [WebResource\|Plugin\|Workflow\|None]; default: None.|
-|`--allowDelete`|`-ad`|Dictates if delete operations may occur; default: false.<br />This parameter requires no value. It is a switch.|
-|`--allowWrite`|`-aw`|Dictates if write operations may occur; default: false.<br />This parameter requires no value. It is a switch.|
-|`--clobber`|`-c`|Enables that files marked read-only can be deleted or overwritten; default: false.<br />This parameter requires no value. It is a switch.|
-|`--map`|`-m`|The full path to a mapping xml file from which to read component folders to pack.|
-|`--sourceLoc`|`-src`|Generates a template resource file. Valid only on Extract. Possible Values are auto or an LCID/ISO code of the language you wish to export. When Present, this will extract the string resources from the given locale as a neutral .resx. If auto or just the long or short form of the switch is specified the base locale for the solution will be used.|
-|`--localize`|`-loc`|Extract or merge all string resources into .resx files.<br />This parameter requires no value. It is a switch.|
-|`--useLcid`|`-lcid`|Use LCID's (1033) rather than ISO codes (en-US) for language files.<br />This parameter requires no value. It is a switch.|
-|`--useUnmanagedFileForMissingManaged`|`-same`|Use the same XML source file when packaging for Managed and only Unmanaged XML file is found; applies to AppModuleSiteMap, AppModuleMap, FormXml files<br />This parameter requires no value. It is a switch.|
-|`--disablePluginRemap`|`-dpm`|Disabled plugin fully qualified type name remaping. default: false<br />This parameter requires no value. It is a switch.|
-|`--processCanvasApps`|`-pca`|(Preview) Pack/unpack any Canvas apps (.msapp) while processing the solution. default: false<br />This parameter requires no value. It is a switch.|
+|Parameter<br />Alias|Description|
+|---------|---------|
+|`--zipfile`<br />`-z`|The full path to the solution ZIP file<br />**Required**|
+|`--folder`<br />`-f`|The path to the root folder on the local filesystem. When unpacking/extractins, this will be written to, when packing this will be read from.|
+|`--packagetype`<br />`-p`|When unpacking/extracting, use to specify dual Managed and Unmanaged operation. When packing, use to specify Managed or Unmanaged from a previous unpack 'Both'. Can be: 'Unmanaged', 'Managed' or 'Both'; default: 'Unmanaged'|
+|`--log`<br />`-l`|The path to the log file.|
+|`--errorlevel`<br />`-e`|Minimum logging level for log output [Verbose\|Info\|Warning\|Error\|Off]; default: Info|
+|`--singleComponent`<br />`-sc`|Only perform action on a single component type [WebResource\|Plugin\|Workflow\|None]; default: None.|
+|`--allowDelete`<br />`-ad`|Dictates if delete operations may occur; default: false.<br />This parameter requires no value. It is a switch.|
+|`--allowWrite`<br />`-aw`|Dictates if write operations may occur; default: false.<br />This parameter requires no value. It is a switch.|
+|`--clobber`<br />`-c`|Enables that files marked read-only can be deleted or overwritten; default: false.<br />This parameter requires no value. It is a switch.|
+|`--map`<br />`-m`|The full path to a mapping xml file from which to read component folders to pack.|
+|`--sourceLoc`<br />`-src`|Generates a template resource file. Valid only on Extract. Possible Values are auto or an LCID/ISO code of the language you wish to export. When Present, this will extract the string resources from the given locale as a neutral .resx. If auto or just the long or short form of the switch is specified the base locale for the solution will be used.|
+|`--localize`<br />`-loc`|Extract or merge all string resources into .resx files.<br />This parameter requires no value. It is a switch.|
+|`--useLcid`<br />`-lcid`|Use LCID's (1033) rather than ISO codes (en-US) for language files.<br />This parameter requires no value. It is a switch.|
+|`--useUnmanagedFileForMissingManaged`<br />`-same`|Use the same XML source file when packaging for Managed and only Unmanaged XML file is found; applies to AppModuleSiteMap, AppModuleMap, FormXml files<br />This parameter requires no value. It is a switch.|
+|`--disablePluginRemap`<br />`-dpm`|Disabled plugin fully qualified type name remaping. default: false<br />This parameter requires no value. It is a switch.|
+|`--processCanvasApps`<br />`-pca`|(Preview) Pack/unpack any Canvas apps (.msapp) while processing the solution. default: false<br />This parameter requires no value. It is a switch.|
 
 [!INCLUDE [solution-pack-remarks](includes/solution-pack-remarks.md)]
 
@@ -290,10 +290,10 @@ Publishes all customizations
 
 ### solution publish Parameters
 
-|Parameter|Alias|Description|
-|---------|---------|---------|
-|`--async`|`-a`|Imports solution asynchronously<br />This parameter requires no value. It is a switch.|
-|`--max-async-wait-time`|`-wt`|Max asynchronous wait time in minutes. Default value is 60 minutes|
+|Parameter<br />Alias|Description|
+|---------|---------|
+|`--async`<br />`-a`|Imports solution asynchronously<br />This parameter requires no value. It is a switch.|
+|`--max-async-wait-time`<br />`-wt`|Max asynchronous wait time in minutes. Default value is 60 minutes|
 
 [!INCLUDE [solution-publish-remarks](includes/solution-publish-remarks.md)]
 
@@ -305,12 +305,12 @@ Sync the current Dataverse solution project to the current state of the solution
 
 ### solution sync Parameters
 
-|Parameter|Alias|Description|
-|---------|---------|---------|
-|`--solution-folder`|`-f`|Path to the local, unpacked solution folder: either the root of the 'Other/Solution.xml' file or a folder with a .cdsproj file.|
-|`--include`|`-i`|Which settings should be included in the solution being exported<br />Use one or more of these values separated by commas:<br />- `autonumbering`<br />- `calendar`<br />- `customization`<br />- `emailtracking`<br />- `externalapplications`<br />- `general`<br />- `isvconfig`<br />- `marketing`<br />- `outlooksynchronization`<br />- `relationshiproles`<br />- `sales`|
-|`--async`|`-a`|Exports solution asynchronously<br />This parameter requires no value. It is a switch.|
-|`--max-async-wait-time`|`-wt`|Max asynchronous wait time in minutes. Default value is 60 minutes|
+|Parameter<br />Alias|Description|
+|---------|---------|
+|`--solution-folder`<br />`-f`|Path to the local, unpacked solution folder: either the root of the 'Other/Solution.xml' file or a folder with a .cdsproj file.|
+|`--include`<br />`-i`|Which settings should be included in the solution being exported<br />Use one or more of these values separated by commas:<br />- `autonumbering`<br />- `calendar`<br />- `customization`<br />- `emailtracking`<br />- `externalapplications`<br />- `general`<br />- `isvconfig`<br />- `marketing`<br />- `outlooksynchronization`<br />- `relationshiproles`<br />- `sales`|
+|`--async`<br />`-a`|Exports solution asynchronously<br />This parameter requires no value. It is a switch.|
+|`--max-async-wait-time`<br />`-wt`|Max asynchronous wait time in minutes. Default value is 60 minutes|
 
 [!INCLUDE [solution-sync-remarks](includes/solution-sync-remarks.md)]
 
@@ -322,24 +322,24 @@ Extract solution components from solution.zip onto local filesystem (SolutionPac
 
 ### solution unpack Parameters
 
-|Parameter|Alias|Description|
-|---------|---------|---------|
-|`--zipfile`|`-z`|The full path to the solution ZIP file<br />**Required**|
-|`--folder`|`-f`|The path to the root folder on the local filesystem. When unpacking/extractins, this will be written to, when packing this will be read from.|
-|`--packagetype`|`-p`|When unpacking/extracting, use to specify dual Managed and Unmanaged operation. When packing, use to specify Managed or Unmanaged from a previous unpack 'Both'. Can be: 'Unmanaged', 'Managed' or 'Both'; default: 'Unmanaged'|
-|`--log`|`-l`|The path to the log file.|
-|`--errorlevel`|`-e`|Minimum logging level for log output [Verbose\|Info\|Warning\|Error\|Off]; default: Info|
-|`--singleComponent`|`-sc`|Only perform action on a single component type [WebResource\|Plugin\|Workflow\|None]; default: None.|
-|`--allowDelete`|`-ad`|Dictates if delete operations may occur; default: false.<br />This parameter requires no value. It is a switch.|
-|`--allowWrite`|`-aw`|Dictates if write operations may occur; default: false.<br />This parameter requires no value. It is a switch.|
-|`--clobber`|`-c`|Enables that files marked read-only can be deleted or overwritten; default: false.<br />This parameter requires no value. It is a switch.|
-|`--map`|`-m`|The full path to a mapping xml file from which to read component folders to pack.|
-|`--sourceLoc`|`-src`|Generates a template resource file. Valid only on Extract. Possible Values are auto or an LCID/ISO code of the language you wish to export. When Present, this will extract the string resources from the given locale as a neutral .resx. If auto or just the long or short form of the switch is specified the base locale for the solution will be used.|
-|`--localize`|`-loc`|Extract or merge all string resources into .resx files.<br />This parameter requires no value. It is a switch.|
-|`--useLcid`|`-lcid`|Use LCID's (1033) rather than ISO codes (en-US) for language files.<br />This parameter requires no value. It is a switch.|
-|`--useUnmanagedFileForMissingManaged`|`-same`|Use the same XML source file when packaging for Managed and only Unmanaged XML file is found; applies to AppModuleSiteMap, AppModuleMap, FormXml files<br />This parameter requires no value. It is a switch.|
-|`--disablePluginRemap`|`-dpm`|Disabled plugin fully qualified type name remaping. default: false<br />This parameter requires no value. It is a switch.|
-|`--processCanvasApps`|`-pca`|(Preview) Pack/unpack any Canvas apps (.msapp) while processing the solution. default: false<br />This parameter requires no value. It is a switch.|
+|Parameter<br />Alias|Description|
+|---------|---------|
+|`--zipfile`<br />`-z`|The full path to the solution ZIP file<br />**Required**|
+|`--folder`<br />`-f`|The path to the root folder on the local filesystem. When unpacking/extractins, this will be written to, when packing this will be read from.|
+|`--packagetype`<br />`-p`|When unpacking/extracting, use to specify dual Managed and Unmanaged operation. When packing, use to specify Managed or Unmanaged from a previous unpack 'Both'. Can be: 'Unmanaged', 'Managed' or 'Both'; default: 'Unmanaged'|
+|`--log`<br />`-l`|The path to the log file.|
+|`--errorlevel`<br />`-e`|Minimum logging level for log output [Verbose\|Info\|Warning\|Error\|Off]; default: Info|
+|`--singleComponent`<br />`-sc`|Only perform action on a single component type [WebResource\|Plugin\|Workflow\|None]; default: None.|
+|`--allowDelete`<br />`-ad`|Dictates if delete operations may occur; default: false.<br />This parameter requires no value. It is a switch.|
+|`--allowWrite`<br />`-aw`|Dictates if write operations may occur; default: false.<br />This parameter requires no value. It is a switch.|
+|`--clobber`<br />`-c`|Enables that files marked read-only can be deleted or overwritten; default: false.<br />This parameter requires no value. It is a switch.|
+|`--map`<br />`-m`|The full path to a mapping xml file from which to read component folders to pack.|
+|`--sourceLoc`<br />`-src`|Generates a template resource file. Valid only on Extract. Possible Values are auto or an LCID/ISO code of the language you wish to export. When Present, this will extract the string resources from the given locale as a neutral .resx. If auto or just the long or short form of the switch is specified the base locale for the solution will be used.|
+|`--localize`<br />`-loc`|Extract or merge all string resources into .resx files.<br />This parameter requires no value. It is a switch.|
+|`--useLcid`<br />`-lcid`|Use LCID's (1033) rather than ISO codes (en-US) for language files.<br />This parameter requires no value. It is a switch.|
+|`--useUnmanagedFileForMissingManaged`<br />`-same`|Use the same XML source file when packaging for Managed and only Unmanaged XML file is found; applies to AppModuleSiteMap, AppModuleMap, FormXml files<br />This parameter requires no value. It is a switch.|
+|`--disablePluginRemap`<br />`-dpm`|Disabled plugin fully qualified type name remaping. default: false<br />This parameter requires no value. It is a switch.|
+|`--processCanvasApps`<br />`-pca`|(Preview) Pack/unpack any Canvas apps (.msapp) while processing the solution. default: false<br />This parameter requires no value. It is a switch.|
 
 [!INCLUDE [solution-unpack-remarks](includes/solution-unpack-remarks.md)]
 
@@ -351,11 +351,11 @@ Option to stage the Dataverse solution for upgrade
 
 ### solution upgrade Parameters
 
-|Parameter|Alias|Description|
-|---------|---------|---------|
-|`--solution-name`|`-sn`|Name of the solution<br />**Required**|
-|`--async`|`-a`|Upgrades solution asynchronously<br />This parameter requires no value. It is a switch.|
-|`--max-async-wait-time`|`-wt`|Max asynchronous wait time in minutes. Default value is 60 minutes|
+|Parameter<br />Alias|Description|
+|---------|---------|
+|`--solution-name`<br />`-sn`|Name of the solution<br />**Required**|
+|`--async`<br />`-a`|Upgrades solution asynchronously<br />This parameter requires no value. It is a switch.|
+|`--max-async-wait-time`<br />`-wt`|Max asynchronous wait time in minutes. Default value is 60 minutes|
 
 [!INCLUDE [solution-upgrade-remarks](includes/solution-upgrade-remarks.md)]
 
@@ -367,13 +367,13 @@ Update build or revision version for solution
 
 ### solution version Parameters
 
-|Parameter|Alias|Description|
-|---------|---------|---------|
-|`--strategy`|`-s`|Updates build version for 'Solution.xml' file using specified strategy. If using gittags, set personal access token in the following environment variable "PacCli.PAT"<br />Use one of these values:<br />- `gittags`<br />- `filetracking`<br />- `solution`|
-|`--patchversion`|`-pv`|**Deprecated**: This parameter will be ignored.|
-|`--buildversion`|`-bv`|Build version for solution<br />**Note**: The value must be a positive integer|
-|`--revisionversion`|`-rv`|Revision version for solution<br />**Note**: The value must be a positive integer|
-|`--filename`|`-fn`|Tracker CSV file name to be used when using filetracking as a strategy. Default value is ControlsStateVersionInfo.csv|
+|Parameter<br />Alias|Description|
+|---------|---------|
+|`--strategy`<br />`-s`|Updates build version for 'Solution.xml' file using specified strategy. If using gittags, set personal access token in the following environment variable "PacCli.PAT"<br />Use one of these values:<br />- `gittags`<br />- `filetracking`<br />- `solution`|
+|`--patchversion`<br />`-pv`|**Deprecated**: This parameter will be ignored.|
+|`--buildversion`<br />`-bv`|Build version for solution<br />**Note**: The value must be a positive integer|
+|`--revisionversion`<br />`-rv`|Revision version for solution<br />**Note**: The value must be a positive integer|
+|`--filename`<br />`-fn`|Tracker CSV file name to be used when using filetracking as a strategy. Default value is ControlsStateVersionInfo.csv|
 
 [!INCLUDE [solution-version-remarks](includes/solution-version-remarks.md)]
 

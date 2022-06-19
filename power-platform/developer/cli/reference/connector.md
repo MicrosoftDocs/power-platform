@@ -40,12 +40,12 @@ Creates a new row in the Connector table in the Dataverse environment.
 
 ### connector create Parameters
 
-|Parameter|Alias|Description|
-|---------|---------|---------|
-|`--name`|`-n`|The Name of the Connector<br />**Required**<br />**Note**: start with a alphanumeric prefix with length between 2~8 and followed by  '_' and alphanumeric name|
-|`--display-name`|`-dn`|The display name of the Connector<br />**Required**|
-|`--api-definition-file`|`-f`|The filename and path to read the the Connector's OpenApiDefinition.<br />**Required**|
-|`--environment`|`-env`|The target Environment ID or URL.  Default value is the environment of your currently active Dataverse Auth Profile.|
+|Parameter<br />Alias|Description|
+|---------|---------|
+|`--name`<br />`-n`|The Name of the Connector<br />**Required**<br />**Note**: start with a alphanumeric prefix with length between 2~8 and followed by  '_' and alphanumeric name|
+|`--display-name`<br />`-dn`|The display name of the Connector<br />**Required**|
+|`--api-definition-file`<br />`-f`|The filename and path to read the the Connector's OpenApiDefinition.<br />**Required**|
+|`--environment`<br />`-env`|The target Environment ID or URL.  Default value is the environment of your currently active Dataverse Auth Profile.|
 
 [!INCLUDE [connector-create-remarks](includes/connector-create-remarks.md)]
 
@@ -57,11 +57,11 @@ Download a Connector's OpenApiDefinition file
 
 ### connector download-api-definition Parameters
 
-|Parameter|Alias|Description|
-|---------|---------|---------|
-|`--connector-id`|`-id`|The ID of the Connector<br />**Required**<br />**Note**: The Connector Id is not a valid Guid.|
-|`--output`|`-o`|The filename and path to output the Connector OpenApiDefinition file.<br />**Required**|
-|`--environment`|`-env`|The target Environment ID or URL.  Default value is the environment of your currently active Dataverse Auth Profile.|
+|Parameter<br />Alias|Description|
+|---------|---------|
+|`--connector-id`<br />`-id`|The ID of the Connector<br />**Required**<br />**Note**: The Connector Id is not a valid Guid.|
+|`--output`<br />`-o`|The filename and path to output the Connector OpenApiDefinition file.<br />**Required**|
+|`--environment`<br />`-env`|The target Environment ID or URL.  Default value is the environment of your currently active Dataverse Auth Profile.|
 
 [!INCLUDE [connector-download-api-definition-remarks](includes/connector-download-api-definition-remarks.md)]
 
@@ -73,9 +73,9 @@ List the Connectors registered in the Dataverse environment
 
 ### connector list Parameters
 
-|Parameter|Alias|Description|
-|---------|---------|---------|
-|`--environment`|`-env`|The target Environment ID or URL.  Default value is the environment of your currently active Dataverse Auth Profile.|
+|Parameter<br />Alias|Description|
+|---------|---------|
+|`--environment`<br />`-env`|The target Environment ID or URL.  Default value is the environment of your currently active Dataverse Auth Profile.|
 
 [!INCLUDE [connector-list-remarks](includes/connector-list-remarks.md)]
 
@@ -87,11 +87,11 @@ Updates a Connector Entity in the Dataverse environment.
 
 ### connector update Parameters
 
-|Parameter|Alias|Description|
-|---------|---------|---------|
-|`--connector-id`|`-id`|The ID of the Connector<br />**Required**<br />**Note**: The Connector Id is not a valid Guid.|
-|`--api-definition-file`|`-f`|The filename and path to read the the Connector's OpenApiDefinition.<br />**Required**|
-|`--environment`|`-env`|The target Environment ID or URL.  Default value is the environment of your currently active Dataverse Auth Profile.|
+|Parameter<br />Alias|Description|
+|---------|---------|
+|`--connector-id`<br />`-id`|The ID of the Connector<br />**Required**<br />**Note**: The Connector Id is not a valid Guid.|
+|`--api-definition-file`<br />`-f`|The filename and path to read the the Connector's OpenApiDefinition.<br />**Required**|
+|`--environment`<br />`-env`|The target Environment ID or URL.  Default value is the environment of your currently active Dataverse Auth Profile.|
 
 [!INCLUDE [connector-update-remarks](includes/connector-update-remarks.md)]
 
