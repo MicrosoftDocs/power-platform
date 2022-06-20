@@ -45,9 +45,11 @@ Lists all of the Dataverse Organizations the user has access to
 [!INCLUDE [org-list-intro](includes/org-list-intro.md)]
 
 
-#### Optional Parameters
+### Optional Parameters
 
-##### `--filter`	`-f`
+#### `--filter` `-f`
+
+Show only environments containing filter criteria
 
 [!INCLUDE [org-list-remarks](includes/org-list-remarks.md)]
 
@@ -60,7 +62,9 @@ Display the results of a query against Dataverse
 
 ### Required Parameters
 
-#### `--sql`	`-s`
+#### `--sql` `-s`
+
+The SQL SELECT query to run
 
 [!INCLUDE [org-query-remarks](includes/org-query-remarks.md)]
 

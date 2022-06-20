@@ -40,20 +40,48 @@ Initializes a directory with a new PowerApps component framework project
 
 ### Required Parameters
 
-#### `--namespace`	`-ns`
+#### `--name` `-n`
 
-#### `--name`	`-n`
+The name for the component
 
-#### `--template`	`-t`
+**Note**: Only characters within the ranges [A - Z], [a - z] or [0 - 9] are allowed. The first character may not be a number.
+
+#### `--namespace` `-ns`
+
+The namespace for the component
+
+**Note**: Only characters within the ranges [A - Z], [a - z], [0 - 9], or '.' are allowed. The first and last character may not be the '.' character. Consecutive '.' characters are not allowed. Numbers are not allowed as the first character or immediately after a period.
+
+#### `--template` `-t`
+
+Choose a template for the component
+
+Use one of these values:
+
+- `field`
+- `dataset`
 
 
-#### Optional Parameters
+### Optional Parameters
 
-##### `--framework`	`-fw`
+#### `--framework` `-fw`
 
-##### `--outputDirectory`	`-o`
+The rendering framework for control. Default value is 'none' [none: HTML, react: React]
 
-##### `--run-npm-install`	`-npm`
+Use one of these values:
+
+- `none`
+- `react`
+
+#### `--outputDirectory` `-o`
+
+Output directory
+
+#### `--run-npm-install` `-npm`
+
+Auto run 'npm install' after the control is created. Default value is 'true'
+
+This parameter requires no value. It is a switch.
 
 [!INCLUDE [pcf-init-remarks](includes/pcf-init-remarks.md)]
 
@@ -66,14 +94,31 @@ Import the PowerApps component framework project into the current Dataverse Orga
 
 ### Required Parameters
 
-#### `--publisher-prefix`	`-pp`
+#### `--publisher-prefix` `-pp`
+
+Customization prefix value for the Dataverse solution publisher
+
+**Note**: The prefix must be 2 to 8 characters long, can only consist of alpha-numerics, must start with a letter, and cannot start with 'mscrm'.
 
 
-#### Optional Parameters
+### Optional Parameters
 
-##### `--verbosity`	`-v`
+#### `--force-import` `-f`
 
-##### `--force-import`	`-f`
+Force a full update of the control
+
+This parameter requires no value. It is a switch.
+
+#### `--verbosity` `-v`
+
+Verbosity level for MSBuild when building the temporary solution wrapper.
+
+Use one of these values:
+
+- `minimal`
+- `normal`
+- `detailed`
+- `diagnostic`
 
 [!INCLUDE [pcf-push-remarks](includes/pcf-push-remarks.md)]
 
@@ -84,19 +129,46 @@ Patch version for controls
 [!INCLUDE [pcf-version-intro](includes/pcf-version-intro.md)]
 
 
-#### Optional Parameters
+### Optional Parameters
 
-##### `--strategy`	`-s`
+#### `--allmanifests` `-a`
 
-##### `--patchversion`	`-pv`
+Updates patch version for all 'ControlManifest.xml' files
 
-##### `--path`	`-p`
+This parameter requires no value. It is a switch.
 
-##### `--allmanifests`	`-a`
+#### `--filename` `-fn`
 
-##### `--updatetarget`	`-ut`
+Tracker CSV file name to be used when using filetracking as a strategy. Default value is ControlsStateVersionInfo.csv
 
-##### `--filename`	`-fn`
+#### `--patchversion` `-pv`
+
+Patch version for controls
+
+**Note**: The value must be a positive integer
+
+#### `--path` `-p`
+
+Absolute/Relative path of the 'ControlManifest.xml' for updating.
+
+#### `--strategy` `-s`
+
+Updates patch version for 'ControlManifest.xml' files using specified strategy. If using gittags, set personal access token in the following environment variable "PacCli.PAT"
+
+Use one of these values:
+
+- `gittags`
+- `filetracking`
+- `manifest`
+
+#### `--updatetarget` `-ut`
+
+Specify which target manifest needs to be updated
+
+Use one of these values:
+
+- `build`
+- `project`
 
 [!INCLUDE [pcf-version-remarks](includes/pcf-version-remarks.md)]
 

@@ -41,16 +41,26 @@ Creates a new row in the Connector table in the Dataverse environment.
 
 ### Required Parameters
 
-#### `--name`	`-n`
+#### `--api-definition-file` `-f`
 
-#### `--display-name`	`-dn`
+The filename and path to read the the Connector's OpenApiDefinition.
 
-#### `--api-definition-file`	`-f`
+#### `--display-name` `-dn`
+
+The display name of the Connector
+
+#### `--name` `-n`
+
+The Name of the Connector
+
+**Note**: start with a alphanumeric prefix with length between 2~8 and followed by  '_' and alphanumeric name
 
 
-#### Optional Parameters
+### Optional Parameters
 
-##### `--environment`	`-env`
+#### `--environment` `-env`
+
+The target Environment ID or URL.  Default value is the environment of your currently active Dataverse Auth Profile.
 
 [!INCLUDE [connector-create-remarks](includes/connector-create-remarks.md)]
 
@@ -63,14 +73,22 @@ Download a Connector's OpenApiDefinition file
 
 ### Required Parameters
 
-#### `--connector-id`	`-id`
+#### `--connector-id` `-id`
 
-#### `--output`	`-o`
+The ID of the Connector
+
+**Note**: The Connector Id is not a valid Guid.
+
+#### `--output` `-o`
+
+The filename and path to output the Connector OpenApiDefinition file.
 
 
-#### Optional Parameters
+### Optional Parameters
 
-##### `--environment`	`-env`
+#### `--environment` `-env`
+
+The target Environment ID or URL.  Default value is the environment of your currently active Dataverse Auth Profile.
 
 [!INCLUDE [connector-download-api-definition-remarks](includes/connector-download-api-definition-remarks.md)]
 
@@ -81,9 +99,11 @@ List the Connectors registered in the Dataverse environment
 [!INCLUDE [connector-list-intro](includes/connector-list-intro.md)]
 
 
-#### Optional Parameters
+### Optional Parameters
 
-##### `--environment`	`-env`
+#### `--environment` `-env`
+
+The target Environment ID or URL.  Default value is the environment of your currently active Dataverse Auth Profile.
 
 [!INCLUDE [connector-list-remarks](includes/connector-list-remarks.md)]
 
@@ -96,14 +116,22 @@ Updates a Connector Entity in the Dataverse environment.
 
 ### Required Parameters
 
-#### `--connector-id`	`-id`
+#### `--api-definition-file` `-f`
 
-#### `--api-definition-file`	`-f`
+The filename and path to read the the Connector's OpenApiDefinition.
+
+#### `--connector-id` `-id`
+
+The ID of the Connector
+
+**Note**: The Connector Id is not a valid Guid.
 
 
-#### Optional Parameters
+### Optional Parameters
 
-##### `--environment`	`-env`
+#### `--environment` `-env`
+
+The target Environment ID or URL.  Default value is the environment of your currently active Dataverse Auth Profile.
 
 [!INCLUDE [connector-update-remarks](includes/connector-update-remarks.md)]
 

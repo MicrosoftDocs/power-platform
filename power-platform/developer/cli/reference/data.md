@@ -39,18 +39,32 @@ Export data
 
 ### Required Parameters
 
-#### `--schemaFile`	`-sf`
+#### `--schemaFile` `-sf`
+
+Schema file name. It can be created using Configuration Migration Tool
 
 
-#### Optional Parameters
+### Optional Parameters
 
-##### `--dataFile`	`-df`
+#### `--dataFile` `-df`
 
-##### `--overwrite`	`-o`
+File name for data zip file. Default data.zip
 
-##### `--verbose`	`-v`
+#### `--environment` `-env`
 
-##### `--environment`	`-env`
+Environment (id, org id, url, unique name or partial name)
+
+#### `--overwrite` `-o`
+
+Allow overwrite output data file if it already exists
+
+This parameter requires no value. It is a switch.
+
+#### `--verbose` `-v`
+
+Output more diagnostic information during data import/export
+
+This parameter requires no value. It is a switch.
 
 [!INCLUDE [data-export-remarks](includes/data-export-remarks.md)]
 
@@ -63,14 +77,22 @@ Import data
 
 ### Required Parameters
 
-#### `--dataDirectory`	`-dd`
+#### `--dataDirectory` `-dd`
+
+Directory name with data for import
 
 
-#### Optional Parameters
+### Optional Parameters
 
-##### `--verbose`	`-v`
+#### `--environment` `-env`
 
-##### `--environment`	`-env`
+Environment (id, org id, url, unique name or partial name)
+
+#### `--verbose` `-v`
+
+Output more diagnostic information during data import/export
+
+This parameter requires no value. It is a switch.
 
 [!INCLUDE [data-import-remarks](includes/data-import-remarks.md)]
 

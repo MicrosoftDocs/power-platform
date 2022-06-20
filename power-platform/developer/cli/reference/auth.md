@@ -48,29 +48,62 @@ Create and store authentication profiles on this computer
 [!INCLUDE [auth-create-intro](includes/auth-create-intro.md)]
 
 
-#### Optional Parameters
+### Optional Parameters
 
-##### `--name`	`-n`
+#### `--applicationId` `-id`
 
-##### `--kind`	`-k`
+Optional: The application id to authenticate with
 
-##### `--url`	`-u`
+#### `--clientSecret` `-cs`
 
-##### `--username`	`-un`
+Optional: The client secret to authenticate with
 
-##### `--password`	`-p`
+#### `--cloud` `-ci`
 
-##### `--applicationId`	`-id`
+Optional: The cloud instance to authenticate with
 
-##### `--clientSecret`	`-cs`
+Use one of these values:
 
-##### `--tenant`	`-t`
+- `Public`
+- `UsGov`
+- `UsGovHigh`
+- `UsGovDod`
+- `Mooncake`
 
-##### `--cloud`	`-ci`
+#### `--deviceCode` `-dc`
 
-##### `--deviceCode`	`-dc`
+Use the AAD DeviceCode flow for interactive login.
 
-##### `--environment`	`-env`
+This parameter requires no value. It is a switch.
+
+#### `--environment` `-env`
+
+Default environment (id, url, unique name or partial name)
+
+#### `--kind` `-k`
+
+**Deprecated**: This parameter will be ignored.
+#### `--name` `-n`
+
+The name you want to give to this authentication profile (maximum 12 characters)
+
+**Note**: The length of the name should be between 1 and 30
+
+#### `--password` `-p`
+
+Optional: The password to authenticate with
+
+#### `--tenant` `-t`
+
+Tenant id if using application id & secret.
+
+#### `--url` `-u`
+
+The resource URL to connect to
+
+#### `--username` `-un`
+
+Optional: The username to authenticate with; shows AAD dialog if not specified
 
 [!INCLUDE [auth-create-remarks](includes/auth-create-remarks.md)]
 
@@ -81,11 +114,19 @@ Delete a particular authentication profile
 [!INCLUDE [auth-delete-intro](includes/auth-delete-intro.md)]
 
 
-#### Optional Parameters
+### Optional Parameters
 
-##### `--index`	`-i`
+#### `--index` `-i`
 
-##### `--name`	`-n`
+The index of the profile to be deleted
+
+**Note**: The value must be a positive integer
+
+#### `--name` `-n`
+
+The name of the profile to be active
+
+**Note**: The length of the name should be between 1 and 30
 
 [!INCLUDE [auth-delete-remarks](includes/auth-delete-remarks.md)]
 
@@ -104,9 +145,17 @@ Name or rename an existing authentication profile
 
 ### Required Parameters
 
-#### `--index`	`-i`
+#### `--index` `-i`
 
-#### `--name`	`-n`
+The index of the profile to be named/renamed
+
+**Note**: The value must be a positive integer
+
+#### `--name` `-n`
+
+The name you want to give to this authentication profile (maximum 12 characters)
+
+**Note**: The length of the name should be between 1 and 30
 
 [!INCLUDE [auth-name-remarks](includes/auth-name-remarks.md)]
 
@@ -117,11 +166,19 @@ Select which authentication profile should be active
 [!INCLUDE [auth-select-intro](includes/auth-select-intro.md)]
 
 
-#### Optional Parameters
+### Optional Parameters
 
-##### `--index`	`-i`
+#### `--index` `-i`
 
-##### `--name`	`-n`
+The index of the profile to be active
+
+**Note**: The value must be a positive integer
+
+#### `--name` `-n`
+
+The name of the profile to be active
+
+**Note**: The length of the name should be between 1 and 30
 
 [!INCLUDE [auth-select-remarks](includes/auth-select-remarks.md)]
 
@@ -134,14 +191,22 @@ Update name or target environment of an existing authentication profile
 
 ### Required Parameters
 
-#### `--index`	`-i`
+#### `--index` `-i`
+
+The index of the profile to be named/renamed
+
+**Note**: The value must be a positive integer
 
 
-#### Optional Parameters
+### Optional Parameters
 
-##### `--name`	`-n`
+#### `--environment` `-env`
 
-##### `--environment`	`-env`
+Default environment (id, url, unique name or partial name)
+
+#### `--name` `-n`
+
+The name you want to give to this authentication profile (maximum 12 characters)
 
 [!INCLUDE [auth-update-remarks](includes/auth-update-remarks.md)]
 

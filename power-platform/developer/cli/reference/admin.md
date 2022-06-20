@@ -47,16 +47,26 @@ Assign a user to a target environment.
 
 ### Required Parameters
 
-#### `--environment`	`-env`
+#### `--environment` `-env`
 
-#### `--user`	`-u`
+ID or URL of the environment to assign a user to.
 
-#### `--role`	`-r`
+#### `--role` `-r`
+
+Name or ID of security role to be applied to user
+
+#### `--user` `-u`
+
+Object ID of AAD user to be assigned to environment
 
 
-#### Optional Parameters
+### Optional Parameters
 
-##### `--async`	`-a`
+#### `--async` `-a`
+
+Optional boolean argument to run pac verbs asynchronously, defaults to false.
+
+This parameter requires no value. It is a switch.
 
 [!INCLUDE [admin-assign-user-remarks](includes/admin-assign-user-remarks.md)]
 
@@ -69,19 +79,25 @@ Takes a manual backup of your environment.
 
 ### Required Parameters
 
-#### `--label`	`-l`
+#### `--label` `-l`
 
+**Deprecated**: This parameter will be ignored.
 
-#### Optional Parameters
+### Optional Parameters
 
-##### `--environment`	`-env`
+#### `--environment` `-env`
 
-##### `--url`	`-u`
+Environment URL or ID of the Environment that requires backup.
 
-##### `--environment-id`	`-id`
+#### `--environment-id` `-id`
 
-##### `--notes`	`-n`
+**Deprecated**: Use `--environment` instead.
+#### `--notes` `-n`
 
+**Deprecated**: This parameter will be ignored.
+#### `--url` `-u`
+
+**Deprecated**: Use `--environment` instead.
 [!INCLUDE [admin-backup-remarks](includes/admin-backup-remarks.md)]
 
 ## pac admin copy
@@ -91,25 +107,46 @@ Copy Source Environment to Destination Environment
 [!INCLUDE [admin-copy-intro](includes/admin-copy-intro.md)]
 
 
-#### Optional Parameters
+### Optional Parameters
 
-##### `--source-env`	`-se`
+#### `--async` `-a`
 
-##### `--target-env`	`-te`
+Optional boolean argument to run pac verbs asynchronously, defaults to false.
 
-##### `--source-url`	`-su`
+This parameter requires no value. It is a switch.
 
-##### `--target-url`	`-tu`
+#### `--name` `-n`
 
-##### `--source-id`	`-si`
+Name of the target environment
 
-##### `--target-id`	`-ti`
+#### `--source-env` `-se`
 
-##### `--name`	`-n`
+Environment URL or ID of the source environment that is being copied
 
-##### `--type`	`-t`
+#### `--source-id` `-si`
 
-##### `--async`	`-a`
+**Deprecated**: Use `--source-env` instead.
+#### `--source-url` `-su`
+
+**Deprecated**: Use `--source-env` instead.
+#### `--target-env` `-te`
+
+Environment URL or ID of the target environment
+
+#### `--target-id` `-ti`
+
+**Deprecated**: Use `--target-env` instead.
+#### `--target-url` `-tu`
+
+**Deprecated**: Use `--target-env` instead.
+#### `--type` `-t`
+
+
+
+Use one of these values:
+
+- `MinimalCopy`
+- `FullCopy`
 
 [!INCLUDE [admin-copy-remarks](includes/admin-copy-remarks.md)]
 
@@ -122,28 +159,63 @@ Creates a Dataverse Environment in your tenant.
 
 ### Required Parameters
 
-#### `--type`	`-t`
+#### `--type` `-t`
+
+Sets the environment Type.
+
+Use one of these values:
+
+- `Trial`
+- `Sandbox`
+- `Production`
+- `Developer`
+- `Teams`
+- `SubscriptionBasedTrial`
 
 
-#### Optional Parameters
+### Optional Parameters
 
-##### `--name`	`-n`
+#### `--async` `-a`
 
-##### `--region`	`-r`
+Optional boolean argument to run pac verbs asynchronously, defaults to false.
 
-##### `--currency`	`-c`
+This parameter requires no value. It is a switch.
 
-##### `--language`	`-l`
+#### `--currency` `-c`
 
-##### `--templates`	`-tm`
+Sets the currency used for your environment. [defaults to USD]
 
-##### `--domain`	`-d`
+#### `--domain` `-d`
 
-##### `--input-file`	`-if`
+The domain name is part of the environment URL. If domain name is already in use, a numeric value will be appended to the domain name. Eg: If 'contoso' is already in use, then the environment URL will be updated to https://{contoso}0.crm.dynamics.com.
 
-##### `--async`	`-a`
+**Note**: Only characters within the ranges [A - Z], [a - z], [0 - 9], or '-' are allowed. The first and last character cannot be the '-' character. Consecutive '-' characters are not allowed.
 
-##### `--team-id`	`-tid`
+#### `--input-file` `-if`
+
+The verb arguments to be passed in a .json input file. Eg: {"name" : "contoso"}. The arguments passed through command-line will take precedence over arguments from the .json input file.
+
+#### `--language` `-l`
+
+Sets the language used for your environment. [defaults to English]
+
+#### `--name` `-n`
+
+Sets the name of the environment.
+
+#### `--region` `-r`
+
+Sets the environment's region name. [defaults to unitedstates]
+
+#### `--team-id` `-tid`
+
+Team Id as Guid
+
+**Note**: The Team Id is not a valid Guid.
+
+#### `--templates` `-tm`
+
+Sets Dynamics365 app that needs to be deployed. [passed as comma separated values] e.g : -tm "D365_Sample, D365_Sales"
 
 [!INCLUDE [admin-create-remarks](includes/admin-create-remarks.md)]
 
@@ -154,16 +226,24 @@ Deletes Environment from your tenant
 [!INCLUDE [admin-delete-intro](includes/admin-delete-intro.md)]
 
 
-#### Optional Parameters
+### Optional Parameters
 
-##### `--environment`	`-env`
+#### `--async` `-a`
 
-##### `--url`	`-u`
+Optional boolean argument to run pac verbs asynchronously, defaults to false.
 
-##### `--environment-id`	`-id`
+This parameter requires no value. It is a switch.
 
-##### `--async`	`-a`
+#### `--environment` `-env`
 
+Environment URL or ID of the Environment that needs to be deleted from your tenant.
+
+#### `--environment-id` `-id`
+
+**Deprecated**: Use `--environment` instead.
+#### `--url` `-u`
+
+**Deprecated**: Use `--environment` instead.
 [!INCLUDE [admin-delete-remarks](includes/admin-delete-remarks.md)]
 
 ## pac admin list
@@ -173,20 +253,39 @@ List all environments from your tenant
 [!INCLUDE [admin-list-intro](includes/admin-list-intro.md)]
 
 
-#### Optional Parameters
+### Optional Parameters
 
-##### `--environment`	`-env`
+#### `--environment` `-env`
 
-##### `--environment-id`	`-id`
+List all environments that contain given string in their name or id.
 
-##### `--url`	`-u`
+#### `--environment-id` `-id`
 
-##### `--type`	`-t`
+**Deprecated**: Use `--environment` instead.
+#### `--name` `-n`
 
-##### `--name`	`-n`
+List all environments that contain given string in their name.
 
-##### `--organization-id`	`-oi`
+#### `--organization-id` `-oi`
 
+List all environments that contain given string in their organization id.
+
+#### `--type` `-t`
+
+List all environments with the given type.
+
+Use one of these values:
+
+- `Trial`
+- `Sandbox`
+- `Production`
+- `Developer`
+- `Teams`
+- `SubscriptionBasedTrial`
+
+#### `--url` `-u`
+
+**Deprecated**: Use `--environment` instead.
 [!INCLUDE [admin-list-remarks](includes/admin-list-remarks.md)]
 
 ## pac admin list-backups
@@ -196,14 +295,18 @@ Lists all backups of your environment.
 [!INCLUDE [admin-list-backups-intro](includes/admin-list-backups-intro.md)]
 
 
-#### Optional Parameters
+### Optional Parameters
 
-##### `--environment`	`-env`
+#### `--environment` `-env`
 
-##### `--url`	`-u`
+List all environments that contains given string in their Environment ID or URL.
 
-##### `--environment-id`	`-id`
+#### `--environment-id` `-id`
 
+**Deprecated**: Use `--environment` instead.
+#### `--url` `-u`
+
+**Deprecated**: Use `--environment` instead.
 [!INCLUDE [admin-list-backups-remarks](includes/admin-list-backups-remarks.md)]
 
 ## pac admin reset
@@ -213,30 +316,52 @@ Reset environment from your tenant
 [!INCLUDE [admin-reset-intro](includes/admin-reset-intro.md)]
 
 
-#### Optional Parameters
+### Optional Parameters
 
-##### `--environment`	`-env`
+#### `--async` `-a`
 
-##### `--currency`	`-c`
+Optional boolean argument to run pac verbs asynchronously, defaults to false.
 
-##### `--domain`	`-d`
+This parameter requires no value. It is a switch.
 
-##### `--environment-id`	`-id`
+#### `--currency` `-c`
 
-##### `--url`	`-u`
+Sets the currency used for your environment. [defaults to USD]
 
-##### `--name`	`-n`
+#### `--domain` `-d`
 
-##### `--language`	`-l`
+The domain name is part of the environment URL. If domain name is already in use, a numeric value will be appended to the domain name. Eg: If 'contoso' is already in use, then the environment URL will be updated to https://{contoso}0.crm.dynamics.com.
 
-##### `--purpose`	`-p`
+#### `--environment` `-env`
 
-##### `--templates`	`-t`
+URL or ID of the Environment that needs to be reset.
 
-##### `--input-file`	`-if`
+#### `--environment-id` `-id`
 
-##### `--async`	`-a`
+**Deprecated**: Use `--environment` instead.
+#### `--input-file` `-if`
 
+The verb arguments to be passed in a .json input file. Eg: {"name" : "contoso"}. The arguments passed through command-line will take precedence over arguments from the .json input file.
+
+#### `--language` `-l`
+
+Sets the language used for your environment. [defaults to English]
+
+#### `--name` `-n`
+
+Sets the name of the environment.
+
+#### `--purpose` `-p`
+
+Sets the description used to associate the environment with a specific intent.
+
+#### `--templates` `-t`
+
+Sets Dynamics365 app that needs to be deployed. [passed as comma separated values] e.g : -tm "D365_Sample, D365_Sales"
+
+#### `--url` `-u`
+
+**Deprecated**: Use `--environment` instead.
 [!INCLUDE [admin-reset-remarks](includes/admin-reset-remarks.md)]
 
 ## pac admin restore
@@ -248,27 +373,43 @@ Restores an environment to a given backup.
 
 ### Required Parameters
 
-#### `--selected-backup`	`-sb`
+#### `--selected-backup` `-sb`
+
+DateTime of the backup in 'mm/dd/yyyy hh:mm' format OR string 'latest'.
 
 
-#### Optional Parameters
+### Optional Parameters
 
-##### `--source-env`	`-se`
+#### `--async` `-a`
 
-##### `--target-env`	`-te`
+Optional boolean argument to run pac verbs asynchronously, defaults to false.
 
-##### `--source-url`	`-su`
+This parameter requires no value. It is a switch.
 
-##### `--target-url`	`-tu`
+#### `--name` `-n`
 
-##### `--source-id`	`-si`
+Optional name of the restored environment.
 
-##### `--target-id`	`-ti`
+#### `--source-env` `-se`
 
-##### `--name`	`-n`
+Environment URL or ID of the source environment required for restore.
 
-##### `--async`	`-a`
+#### `--source-id` `-si`
 
+**Deprecated**: Use `--source-env` instead.
+#### `--source-url` `-su`
+
+**Deprecated**: Use `--source-env` instead.
+#### `--target-env` `-te`
+
+Environment URL or ID of the target environment required for restore. This would default to source URL/ID if not provided.
+
+#### `--target-id` `-ti`
+
+**Deprecated**: Use `--target-env` instead.
+#### `--target-url` `-tu`
+
+**Deprecated**: Use `--target-env` instead.
 [!INCLUDE [admin-restore-remarks](includes/admin-restore-remarks.md)]
 
 ## pac admin status

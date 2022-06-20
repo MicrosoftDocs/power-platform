@@ -43,18 +43,32 @@ Bundle portal website content in CMT supported XML format
 
 ### Required Parameters
 
-#### `--path`	`-p`
+#### `--output` `-o`
 
-#### `--output`	`-o`
+Path to which the XML files(s) will be saved
+
+#### `--path` `-p`
+
+Path from where the website content will be bundled
 
 
-#### Optional Parameters
+### Optional Parameters
 
-##### `--split`	`-s`
+#### `--deploymentProfile` `-dp`
 
-##### `--excludePK`	`-ep`
+Deployment profile name to be used. Defaults to 'default'
 
-##### `--deploymentProfile`	`-dp`
+#### `--excludePK` `-ep`
+
+If this flag is true Primary key fields are not included in data xml so that CMT generates new record ids when importing.
+
+This parameter requires no value. It is a switch.
+
+#### `--split` `-s`
+
+If this flag is true a separate xml will be created for each entity
+
+This parameter requires no value. It is a switch.
 
 [!INCLUDE [paportal-bundle-remarks](includes/paportal-bundle-remarks.md)]
 
@@ -67,22 +81,40 @@ Download portal website content from the current Dataverse Organization
 
 ### Required Parameters
 
-#### `--path`	`-p`
+#### `--path` `-p`
 
-#### `--webSiteId`	`-id`
+Path where the website content will be downloaded
+
+#### `--webSiteId` `-id`
+
+Portal website id to download
 
 
-#### Optional Parameters
+### Optional Parameters
 
-##### `--includeEntities`	`-ie`
+#### `--excludeEntities` `-xe`
 
-##### `--excludeEntities`	`-xe`
+Comma separated list of entity logical names to exclude downloading
 
-##### `--overwrite`	`-o`
+#### `--exportTranslations` `-et`
 
-##### `--exportTranslations`	`-et`
+Export translation content in locale folder: Value 'All' extracts all content for C1 & C2 customers. Value 'SupportedLang' extracts localizable content for C2 customers
 
-##### `--translationsFormat`	`-tf`
+This parameter requires no value. It is a switch.
+
+#### `--includeEntities` `-ie`
+
+Download only the entities specified for this argument in comma separated entity logical name
+
+#### `--overwrite` `-o`
+
+Portal website content to overwrite
+
+This parameter requires no value. It is a switch.
+
+#### `--translationsFormat` `-tf`
+
+Locale file format [Json or Yaml]
 
 [!INCLUDE [paportal-download-remarks](includes/paportal-download-remarks.md)]
 
@@ -101,7 +133,9 @@ Merges localized content back to portal yaml files
 
 ### Required Parameters
 
-#### `--path`	`-p`
+#### `--path` `-p`
+
+Path where website files are located
 
 [!INCLUDE [paportal-mergelocale-remarks](includes/paportal-mergelocale-remarks.md)]
 
@@ -114,7 +148,9 @@ Assigns new guid to primary key attribute for all records of a website
 
 ### Required Parameters
 
-#### `--path`	`-p`
+#### `--path` `-p`
+
+Path where website files are located
 
 [!INCLUDE [paportal-reguid-remarks](includes/paportal-reguid-remarks.md)]
 
@@ -127,12 +163,16 @@ Upload portal website content to current Dataverse Organization
 
 ### Required Parameters
 
-#### `--path`	`-p`
+#### `--path` `-p`
+
+Path from where the website content will be uploaded
 
 
-#### Optional Parameters
+### Optional Parameters
 
-##### `--deploymentProfile`	`-dp`
+#### `--deploymentProfile` `-dp`
+
+Deployment profile name to be used. Defaults to 'default'
 
 [!INCLUDE [paportal-upload-remarks](includes/paportal-upload-remarks.md)]
 

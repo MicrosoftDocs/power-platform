@@ -38,7 +38,9 @@ List all Connections from the passed environment.
 
 ### Required Parameters
 
-#### `--environment-id`	`-id`
+#### `--environment-id` `-id`
+
+Id of the environment that has connections.
 
 [!INCLUDE [connection-list-remarks](includes/connection-list-remarks.md)]
 
