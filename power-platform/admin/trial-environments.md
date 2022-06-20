@@ -191,7 +191,7 @@ It might take several hours to convert to a production environment.
 ### What type of account can create a free trial environment?
 
 For the best trial experience, it's recommended to use your work or school email address that's managed by [Microsoft Azure Active Directory.](https://azure.microsoft.com/en-us/services/active-directory/#overview)
-If you create a standard trial environment from [https://trials.dynamics.com/](https://trials.dynamics.com/), some product may support consumer email account that's not managed by Microsoft Azure Active Directory. 
+If you create a standard trial environment from [https://trials.dynamics.com/](https://trials.dynamics.com/), some products may support consumer email account that's not managed by Microsoft Azure Active Directory. 
 > .[NOTE]
 > If you use a consumer email account to create a trial environment, there will be limitations in your trial experience, such as - 
 > - Cannot access [Power Platform admin center](https://admin.powerplatform.microsoft.com/) to manage the trial environment, extend the trial, or manage environment users. 
