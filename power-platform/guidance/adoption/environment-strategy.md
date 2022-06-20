@@ -1,10 +1,7 @@
-﻿---
-title: "Establishing an Environment Strategy - Microsoft Power Platform | MicrosoftDocs"
-description: "Environments are containers that administrators can use to manage apps, flows, connections, and other assets, along with permissions to allow organization users to use the resources. This article walks you through important details about environments in Microsoft Power Platform and discusses recommended ways to benefit from proactively managing them."
+---
+title: "Establishing an environment strategy - Microsoft Power Platform | MicrosoftDocs"
+description: "This article walks you through important details about environments in Microsoft Power Platform and discusses recommended ways to benefit from proactively managing them."
 author: manuelap-msft
-manager: devkeydet
-
-ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/09/2020
 ms.subservice: guidance
@@ -19,9 +16,7 @@ search.app:
 ---
 # Establishing an environment strategy
 
-
-
-Environments are containers that administrators can use to manage apps, flows, connections, and other assets, along with permissions to allow organization members to use the resources. This article walks you through important details about environments in Microsoft Power Platform and discusses recommended ways to benefit from proactively managing them. More information: [Microsoft Power Platform environments overview](../../admin/environments-overview.md)
+Power Platform environments are containers that administrators can use to manage apps, flows, connections, and other assets, along with permissions to allow organization members to use the resources. This article walks you through important details about environments in Microsoft Power Platform and discusses recommended ways to benefit from proactively managing them. More information: [Microsoft Power Platform environments overview](../../admin/environments-overview.md)
 
 Developing an environment strategy means configuring environments and other layers of data security in a way that supports productive development in your organization, while securing and organizing resources. A strategy to manage environment provisioning and access, and controlling resources within them, is important to:
 
