@@ -58,7 +58,7 @@ A diagram of limitless extensibility options through using cloud analytics and A
 
 ## Data
 
-The amount of data that you can export depends on your app and flow usage. The initial [Common Data Model](/common-data-model/) schema file contains inventory data of all the Power Apps and Cloud flows across your environment. After the initial export, an incremental data push occurs daily.
+The amount of data that you can export depends on your app and flow usage. The initial export includes inventory data of all the Power Apps and Cloud flows across your environment. After the initial export, an incremental data push occurs daily.
 
 For example, an enterprise customer with two years' worth of inventory data might have 300 MB of data to export. After the initial export, approximately 5 to 10 MB of that data would be pushed daily.
 
