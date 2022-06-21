@@ -33,7 +33,7 @@ Using server-side synchronization makes messaging data available to a web browse
 ## Server-side synchronization frequency
 Server-side synchronization runs on a schedule for each mailbox and has different synchronization delays based on the workload processed. Available workloads are incoming emails, outgoing emails, and appointments, contacts, and tasks synchronization.
 
-After a mailbox has been successfully tested and enabled, server-side synchronization will start processing for the configured workloads continuously. When workload processing starts, server-side synchronization will interact with your mailbox on the external email service provider, and also with your data in the Dynamics 365 environment. These interactions can take time based on the responsiveness of the email service provider, the number of items being synchronized, connection throttling, the amount of data exchanged, and the number of attachments. Furthermore, these interactions can take additional time based on the active customizations deployed to Dynamics 365.
+After a mailbox has been successfully tested and enabled, server-side synchronization will start processing for the configured workloads continuously. When workload processing starts, server-side synchronization will interact with your mailbox on the external email service provider, and also with your data in the environment. These interactions can take time based on the responsiveness of the email service provider, the number of items being synchronized, connection throttling, the amount of data exchanged, and the number of attachments. Furthermore, these interactions can take additional time based on the active customizations deployed to Dynamics 365.
 
 Because the next scheduled synchronization time for a given workload is calculated at the end of its processing cycle, this means that a prolonged synchronization cycle for a workload might affect the overall throughput of a mailbox. As such, there is no defined SLA for the duration of a synchronization cycle because it's directly influenced by the external factors mentioned previously.
 
@@ -46,7 +46,7 @@ After an incoming sync cycle is completed, a mailbox will postpone the processin
 
 ### Outgoing sync frequency
 
-Server-side synchronization scans your Dynamics 365 environment for outgoing email messages that are in a "Pending Send" status and have been sent by using the Send SDK request. It updates the status on outgoing email messages as "Pending Send" for the active mailbox at a frequency of every five minutes and submits these email messages to the configured email service provider.  
+Server-side synchronization scans your environment for outgoing email messages that are in a "Pending Send" status and have been sent by using the Send SDK request. It updates the status on outgoing email messages as "Pending Send" for the active mailbox at a frequency of every five minutes and submits these email messages to the configured email service provider.  
 
 > [!IMPORTANT]
 > Generating a massive amount of outgoing email messages in Dynamics 365 that exceeds your email service capacity can cause a backlog and a delay of new email messages from the same mailbox. 

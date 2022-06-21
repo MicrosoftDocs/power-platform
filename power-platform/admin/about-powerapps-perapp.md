@@ -101,7 +101,7 @@ After completing the first three steps, you can now share apps.
 Share the model-driven app. See [Share a model-driven app with Power Apps](/powerapps/maker/model-driven-apps/share-model-driven-app). 
 
 > [!IMPORTANT]
-> When the user launches the app, we create the user in the required Microsoft Dataverse environment. Users will not get added at the time of app sharing.
+> When the user launches the app, we create the user in the required environment. Users will not get added at the time of app sharing.
 
 ### Sharing canvas apps
 To share canvas apps, see [Share a canvas app in Power Apps](/powerapps/maker/canvas-apps/share-app).  
