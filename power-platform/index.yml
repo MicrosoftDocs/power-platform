@@ -22,6 +22,11 @@ highlightedContent:
   items:
     
     # Card
+    - title: Register for Power Platform Conference
+      itemType: whats-new
+      url: https://go.microsoft.com/fwlink/?linkid=2199049
+    
+    # Card
     - title: What's new in Microsoft Power Platform?
       itemType: whats-new
       url: /dynamics365/release-plans/
@@ -40,6 +45,7 @@ highlightedContent:
     - title: Microsoft Power Platform In a Day workshops
       itemType: get-started
       url: https://aka.ms/PowerPlatformIAD
+    
 
 conceptualContent:
   # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
