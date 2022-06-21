@@ -4,8 +4,9 @@ description: "Types of Power Automate licenses."
 author: PriyaKodukula
 ms.subservice: admin
 ms.topic: overview
-ms.date: 06/13/2022
+ms.date: 06/21/2022
 ms.author: prkoduku
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:
