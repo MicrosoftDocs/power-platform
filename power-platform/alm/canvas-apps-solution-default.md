@@ -20,7 +20,7 @@ search.app:
 # Scenario 7: Add canvas apps in solutions by default for a healthy ALM
 Enable the canvas apps in solution by default through the environment setting **Canvas apps in Dataverse by default**.
 
-To learn about enabling the setting, go to [Environment settings](../admin/settings-features.md). More information: 
+To learn about enabling the setting, go to [Environment settings](../admin/settings-features.md). More information: [Add canvas apps to solution by default](/power-apps/maker/canvas-apps/add-app-solution-default)
 
 ### See also
 [ALM for developers](alm-for-developers.md)
