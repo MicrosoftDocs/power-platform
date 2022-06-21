@@ -45,6 +45,11 @@ highlightedContent:
     - title: Power Platform In a Day workshops
       itemType: get-started
       url: https://aka.ms/PowerPlatformIAD
+
+    # Card
+    - title: Power Platform Community
+      itemType: reference
+      url: https://powerusers.microsoft.com
     
 
 conceptualContent:
