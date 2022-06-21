@@ -20,9 +20,9 @@ search.app:
 
 <!-- legacy procedure -->
 
-The Dataverse auditing feature is designed to meet the external and internal auditing, compliance, security, and governance policies that are common to many enterprises. Dataverse auditing logs changes that are made to customer records in a Dataverse environment database. Dataverse auditing also logs user access through an app or through the SDK in a Dataverse environment. 
+The Dataverse auditing feature is designed to meet the external and internal auditing, compliance, security, and governance policies that are common to many enterprises. Dataverse auditing logs changes that are made to customer records in an environment with a Dataverse database. Dataverse auditing also logs user access through an app or through the SDK in an environment. 
 
-Dataverse auditing is supported on all custom and most customizable tables and columns. Audit logs are stored in Dataverse and consume log storage capacity. Audit logs can be viewed in the Audit History tab for a single record and in the Audit Summary view for all audited operations in a single Dataverse environment. Audit logs can also be retrieved using the Web API or the Organization Service. 
+Dataverse auditing is supported on all custom and most customizable tables and columns. Audit logs are stored in Dataverse and consume log storage capacity. Audit logs can be viewed in the Audit History tab for a single record and in the Audit Summary view for all audited operations in a single environment. Audit logs can also be retrieved using the Web API or the Organization Service. 
 
 > [!NOTE]
 > The use of entity-related terminology depends on the protocol or class library used. See [Terminology use depending on protocol or technology](/power-apps/developer/data-platform/understand-terminology).
@@ -45,7 +45,7 @@ Audit logs help administrators and other privileged users to answer questions li
 
 The following operations can be audited: 
 
-- Audit changes at the entity, attribute, and organization level. For example, enabling audit for a Dataverse environment or a table. 
+- Audit changes at the entity, attribute, and organization level. For example, enabling audit for an environment or a table. 
 - Create, update, and delete operations on records. 
 - Changes to the sharing privileges of a record. 
 - The N:N association or disassociation of records. 
@@ -89,21 +89,21 @@ The following list enumerates the non-customizable tables that cannot be audited
 - Workflow 
 - WorkflowLog 
 
-## Configure auditing for a Dataverse environment 
-There are three levels where auditing can be configured: a Dataverse environment, table, and column. For table auditing to take place, auditing must be enabled at the Dataverse environment level. For column auditing to take place, auditing must be enabled at the Dataverse environment level and the table level. 
+## Configure auditing for an environment 
+There are three levels where auditing can be configured: an environment, table, and column. For table auditing to take place, auditing must be enabled at the environment level. For column auditing to take place, auditing must be enabled at the environment level and the table level. 
 
-To enable user access auditing (Log access) or activity logging (Read logs), auditing must be enabled at the Dataverse environment level. The option to enable activity logging is only visible when the minimum Office licensing requirements are met. 
+To enable user access auditing (Log access) or activity logging (Read logs), auditing must be enabled at the environment level. The option to enable activity logging is only visible when the minimum Office licensing requirements are met. 
 
 You must have System Administrator or System Customizer role or equivalent permissions to enable or disable auditing. 
 
 Auditing can be configured manually via the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) and the [Power Apps portal](https://make.powerapps.com/). Auditing can also be [configured programmatically using either the Web API or the Organization service](/power-apps/developer/data-platform/configure-entities-attributes-auditing). 
 
-## Start/stop auditing for a Dataverse environment and set retention policy
+## Start/stop auditing for an environment and set retention policy
 
 This task requires the System Administrator or System Customizer role or equivalent permissions. 
 
 > [!NOTE]
-> The audit retention period is not available for Dynamics 365 Customer Engagement (on-premises) or for Dataverse environments encrypted with a customer's own encryption key.
+> The audit retention period is not available for Dynamics 365 Customer Engagement (on-premises) or for environments encrypted with a customer's own encryption key.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) using administrator credentials. 
   
@@ -115,7 +115,7 @@ This task requires the System Administrator or System Customizer role or equival
    | Log access | Log whenever the system is accessed, generally by signing in.  |  
    | Read logs  | Logs will be sent to the [Microsoft 365 Security and Compliance Center](https://protection.office.com/homepage). |
 
-3. You can set a retention period for how long audit logs are kept in a Dataverse environment. Under **Retain these logs for**, choose the period of time you wish to retain the logs.
+3. You can set a retention period for how long audit logs are kept in an environment. Under **Retain these logs for**, choose the period of time you wish to retain the logs.
 
    |      Setting |     Description    |
    |--------------------|---------------------|
@@ -277,7 +277,7 @@ Users must have the View Audit History privilege to see the Audit History of a r
 
 ## Use the Audit Summary view 
 
-The Audit Summary view is a comprehensive list of all audit logs in a Dataverse environment. By filtering on various columns, users of the Audit Summary view can understand what happened in the environment over time. It helps to answer questions such as “What actions did a user perform and when”, “Who deleted a particular record?”, or “Who changed a user’s role?”. 
+The Audit Summary view is a comprehensive list of all audit logs in an environment. By filtering on various columns, users of the Audit Summary view can understand what happened in the environment over time. It helps to answer questions such as “What actions did a user perform and when”, “Who deleted a particular record?”, or “Who changed a user’s role?”. 
 
  Users must have the View Audit Summary privilege to see the Audit Summary view. 
 
@@ -296,7 +296,7 @@ The Audit Summary view is a comprehensive list of all audit logs in a Dataverse 
    > [!NOTE]
    > Sorting is only possible on the **Changed Date** column. 
    >
-   > Exporting of Audit logs is currently not supported. Use the Web API or Organization Service to retrieve audit data from your Dataverse environment. See [Retrieve and delete the history of audited data changes](/power-apps/developer/data-platform/retrieve-and-delete-the-history-of-audited-data-changes).
+   > Exporting of Audit logs is currently not supported. Use the Web API or Organization Service to retrieve audit data from your environment. See [Retrieve and delete the history of audited data changes](/power-apps/developer/data-platform/retrieve-and-delete-the-history-of-audited-data-changes).
 
 ## Delete the change history for a record 
 
@@ -304,7 +304,7 @@ Dataverse auditing supports the deletion of a single records entire audit histor
 
 Users must have the **Delete Audit Record Change History** privilege to perform this action. 
 
-The deletion of a record’s audit history can be done in a model-driven application’s Audit History and in the Dataverse environment’s **Audit Summary** view. 
+The deletion of a record’s audit history can be done in a model-driven application’s Audit History and in the environment’s **Audit Summary** view. 
 
 ### Delete the change history for a record in the Audit History tab of a record  
 

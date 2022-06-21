@@ -300,10 +300,10 @@ Custom connectors are not supported in Dataverse for Teams but [support for Azur
 ### Can customers purchase more capacity for a Dataverse for Teams environment?
 
 No. Dataverse for Teams provides support for approximately 1 million rows per team. Although existing apps and chatbots will continue to work when a Dataverse for Teams environment reaches the per environment limit (2GB), users who want to create a new app, flow, chatbot, or table in the environment will need to :
-1.	Purchase Power Apps, Power Automate, and Power Virtual Agents subscriptions based on their needs and start building their new app, flow, or chatbot in a Dataverse environment.
+1.	Purchase Power Apps, Power Automate, and Power Virtual Agents subscriptions based on their needs and start building their new app, flow, or chatbot in an environment.
 2.	[Upgrade](about-teams-environment.md#upgrade-process) the existing Dataverse for Teams environment to Dataverse in the Power Platform admin center and, if needed, purchase Power Apps, Power Automate, or Power Virtual Agents subscriptions based on their needs.
 
-### Can customers package and export their solution (app/flow/chatbots) built in Dataverse for Teams, and then import that into a Dataverse environment (assuming they have the corresponding license including access rights to Microsoft Dataverse)?
+### Can customers package and export their solution (app/flow/chatbots) built in Dataverse for Teams, and then import that into an environment (assuming they have the corresponding license including access rights to Microsoft Dataverse)?
 
 This capability is not available yet, but is included in our roadmap.
 
