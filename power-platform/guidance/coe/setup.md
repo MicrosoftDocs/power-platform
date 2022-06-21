@@ -171,6 +171,9 @@ The content package contains various files that support different features of th
 
 ## What's next: After installing the CoE Starter Kit
 
+>[!IMPORTANT]
+> We recommend upgrading the CoE Starter Kit solution at least **every three months**. With the fast pace of change for Microsoft Power Platform, leaving updates longer than three months could result in unexpected issues when you do update.
+
 If you have already installed the CoE Starter Kit, please check our instructions for
 
 - [Updating the CoE Starter Kit](after-setup.md) with a new release
