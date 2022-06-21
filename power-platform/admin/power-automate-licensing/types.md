@@ -4,8 +4,9 @@ description: "Types of Power Automate licenses."
 author: PriyaKodukula
 ms.subservice: admin
 ms.topic: overview
-ms.date: 06/13/2022
+ms.date: 06/21/2022
 ms.author: prkoduku
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:
@@ -68,7 +69,7 @@ Here's a chart that lays out the limits that are associated with the different l
 
 ## Transition period
 
-All customers are in a transition period. That means that enforcement isn't strict and limits are higher. The transition period ends (First quarter of calendar year 2022), which will be when the full reporting is available in the Power Platform admin center. Organizations will have six months to analyze their usage and purchase licenses that are appropriate before strict enforcement on license limits begins.
+All customers are in a transition period. That means that enforcement isn't strict and limits are higher. The transition period ends after Power Platform admin center reports are generally available. Organizations will have six months to analyze their usage and purchase licenses that are appropriate before strict enforcement on license limits begins.
 
 Here are a few things to be aware of during the transition period.
 
