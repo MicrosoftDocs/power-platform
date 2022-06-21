@@ -1,9 +1,5 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate example below
-
 ### Example
 
 ```powershell
-pac canvas pack
-``` 
--->
+pac canvas pack --sources MyHelloWorldFiles --msapp HelloWorld.msapp
+```

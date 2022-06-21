@@ -1,9 +1,5 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate example below
-
 ### Example
 
 ```powershell
-pac pcf push
+pac pcf push --publisher-prefix dev
 ``` 
--->

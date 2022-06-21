@@ -1,9 +1,5 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate example below
-
 ### Example
 
 ```powershell
-pac solution online-version
-``` 
--->
+pac solution online-version --solution-name Samplesolution --solution-version 1.0.0.2
+```

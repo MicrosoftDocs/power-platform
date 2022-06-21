@@ -1,9 +1,5 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate example below
-
 ### Example
 
 ```powershell
-pac solution import
-``` 
--->
+pac solution import --path c:\Users\Documents\Solution.zip
+```

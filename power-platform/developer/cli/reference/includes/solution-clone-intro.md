@@ -1,9 +1,5 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate example below
-
 ### Example
 
 ```powershell
-pac solution clone
-``` 
--->
+pac solution clone -–name sampleSolution --version 1.0.0.2 --include general
+```

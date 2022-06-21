@@ -1,9 +1,5 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate example below
-
 ### Example
 
 ```powershell
-pac paportal upload
-``` 
--->
+pac paportal upload --path "C:\portals\starter-portal"
+```

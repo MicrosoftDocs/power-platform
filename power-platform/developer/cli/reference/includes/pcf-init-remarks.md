@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
-
 ### Remarks
 
-Add remarks here...
-
--->
+Use `--framework react` with [React controls & platform libraries (Preview)](/power-apps/developer/component-framework/react-controls-platform-libraries).

@@ -1,9 +1,9 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate example below
-
 ### Example
 
 ```powershell
-pac pcf version
+pac pcf version --patchversion 1.0.0.0 --path c:\Users\Downloads\SampleComponent --allmanifests
+```
+
+```powershell
+pac pcf version --strategy gittags
 ``` 
--->

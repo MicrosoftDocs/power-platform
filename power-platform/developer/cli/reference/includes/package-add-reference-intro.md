@@ -1,9 +1,5 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate example below
-
 ### Example
 
 ```powershell
-pac package add-reference
+pac package add-reference --path c:\Users\Downloads\SampleSolution
 ``` 
--->

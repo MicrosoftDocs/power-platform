@@ -1,9 +1,5 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate example below
-
 ### Example
 
 ```powershell
-pac pcf init
-``` 
--->
+pac pcf init --namespace SampleNameSpace --name SampleComponent --template field
+```

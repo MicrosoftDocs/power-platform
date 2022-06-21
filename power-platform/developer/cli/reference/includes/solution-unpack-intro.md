@@ -1,9 +1,5 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate example below
-
 ### Example
 
 ```powershell
-pac solution unpack
+pac solution unpack --zipfile C:\SampleSolution.zip --folder .\SampleSolutionUnpacked\.
 ``` 
--->

@@ -1,9 +1,5 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate example below
-
 ### Example
 
 ```powershell
-pac solution create-settings
-``` 
--->
+pac solution create-settings --solution-zip C:\SampleSolution.zip --settings-file .\SampleDeploymentSettingsDev.json
+```

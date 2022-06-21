@@ -1,9 +1,5 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate example below
-
 ### Example
 
 ```powershell
-pac solution init
-``` 
--->
+pac solution init --publisher-name developer --publisher-prefix dev
+```

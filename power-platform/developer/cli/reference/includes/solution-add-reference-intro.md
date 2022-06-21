@@ -1,9 +1,5 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate example below
-
 ### Example
 
 ```powershell
-pac solution add-reference
-``` 
--->
+pac solution add-reference --path c:\Users\Downloads\SampleComponent
+```

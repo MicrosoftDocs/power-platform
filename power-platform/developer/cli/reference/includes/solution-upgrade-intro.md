@@ -1,9 +1,5 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate example below
-
 ### Example
 
 ```powershell
-pac solution upgrade
-``` 
--->
+pac solution upgrade --solution-name SampleSolution --async --max-async-wait-time 60
+```

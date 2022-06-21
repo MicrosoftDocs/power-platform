@@ -1,9 +1,5 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate example below
-
 ### Example
 
 ```powershell
-pac solution check
-``` 
--->
+pac solution check --path c:\Users\Documents\Solution.zip --outputDirectory c:\samplepackage --geo UnitedStates
+```

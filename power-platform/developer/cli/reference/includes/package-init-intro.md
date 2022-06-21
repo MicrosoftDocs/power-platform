@@ -1,9 +1,5 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate example below
-
 ### Example
 
 ```powershell
-pac package init
-``` 
--->
+pac package init --outputdirectory c:\samplepackage
+```

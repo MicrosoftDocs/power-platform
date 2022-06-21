@@ -1,9 +1,5 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate example below
-
 ### Example
 
 ```powershell
-pac solution export
-``` 
--->
+pac solution export --path c:\Users\Documents\Solution.zip --name SampleComponentSolution --managed true --include general
+```
