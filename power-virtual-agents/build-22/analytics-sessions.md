@@ -83,7 +83,7 @@ First, sign in to [https://www.powerapps.com](https://www.powerapps.com).
 
 ### Cancel the existing bulk delete job
 
-1. At the upper-right, select the **Settings** cog icon, and then select **Advanced settings**.
+1. At the upper-right corner, select the **Settings** cog icon, and then select **Advanced settings**.
 
     :::image type="content" source="media/analytics-sessions/sessions-advanced.png" alt-text="Screenshot of the Power Apps Settings menu with Advanced settings highlighted.":::
 
