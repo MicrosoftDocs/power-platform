@@ -32,4 +32,4 @@ The return value is a Boolean **true** or **false**.
 
 
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

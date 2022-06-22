@@ -75,4 +75,4 @@ Collects read NFC tags for later use.
 Collect( ScannedTags, ReadNFC() )
 ```
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

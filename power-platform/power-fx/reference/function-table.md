@@ -46,4 +46,4 @@ You can also create a single-column table with the **[ value1, value2, ... ]** s
 
 
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

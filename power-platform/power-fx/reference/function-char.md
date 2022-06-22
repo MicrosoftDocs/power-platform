@@ -103,4 +103,4 @@ Finally, to show the characters in a different font, set the **Font** property o
 ![Dancing Script.](media/function-char/chart-higher-dancing-script.png)
 
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

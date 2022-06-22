@@ -318,4 +318,4 @@ For more information and examples, see [record scopes](../working-with-tables.md
 
 
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

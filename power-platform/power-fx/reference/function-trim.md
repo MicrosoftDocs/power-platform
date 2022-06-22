@@ -62,4 +62,4 @@ To create this collection, set the **OnSelect** property of a **[Button](../cont
 
 
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

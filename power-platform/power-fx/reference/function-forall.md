@@ -27,7 +27,7 @@ The **ForAll** function evaluates a formula for all the records in a table.  The
 
 Use the [**Sequence** function](function-sequence.md) with the **ForAll** function to iterate based on a count.
 
-[!INCLUDE [record-scope](../../../includes/record-scope.md)]
+[!INCLUDE [record-scope](../../includes/record-scope.md)]
 
 ### Return value
 
@@ -53,7 +53,7 @@ Many functions in Power Apps can process more than one value at a time through t
 Another consideration is that **ForAll** is not delegable while other functions may be, such as **Filter**.  
 
 ### Delegation
-[!INCLUDE [delegation-no-one](../../../includes/delegation-no-one.md)]
+[!INCLUDE [delegation-no-one](../../includes/delegation-no-one.md)]
 
 ## Syntax
 **ForAll**(*Table*, *Formula*)
@@ -224,4 +224,4 @@ Note that we are not capturing the result of the **ForAll**.  The **Collect** fu
 
 See [Map tables](../map-component-input-fields.md#map-tables).
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

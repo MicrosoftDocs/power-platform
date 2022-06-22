@@ -70,4 +70,4 @@ Each formula returns a single-column table that contains the converted strings.
 
 
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

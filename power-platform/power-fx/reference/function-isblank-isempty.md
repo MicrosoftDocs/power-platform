@@ -176,4 +176,4 @@ You can also use **IsEmpty** to test whether a calculated table is empty, as the
 
 
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

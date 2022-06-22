@@ -55,4 +55,4 @@ The **HashTags** function scans a string for hashtags. Hashtags start with a pou
 
 
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

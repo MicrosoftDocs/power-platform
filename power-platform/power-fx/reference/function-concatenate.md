@@ -27,7 +27,7 @@ The **Concatenate** function concatenates a mix of individual strings and a sing
 
 The **Concat** function concatenates the result of a formula applied across all the [records](../working-with-tables.md#records) of a table, resulting in a single string. Use this function to summarize the strings of a table, just as the **[Sum](function-aggregates.md)** function does for numbers.
 
-[!INCLUDE [record-scope](../../../includes/record-scope.md)]
+[!INCLUDE [record-scope](../../includes/record-scope.md)]
 
 Use the [**Split**](function-split.md) or [**MatchAll**](function-ismatch.md) function to split a string into a table of substrings.
 
@@ -118,4 +118,4 @@ For these examples, add a blank, vertical gallery, set its **Items** property to
 | **Split( Concat(&nbsp;Products,&nbsp;Name&nbsp;&&nbsp;",&nbsp;"&nbsp;), ", " )** | Splits the text string with the separator **", "**. The string ends with a comma and space, so the last row in the result is an empty string.  | ![Table with last row empty.](media/function-concatenate/split.png) |
 | **MatchAll( Concat(&nbsp;Products,&nbsp;Name&nbsp;&&nbsp;",&nbsp;"&nbsp;), "[^\s,]+" ).FullMatch** | Splits the text string based on characters that aren't spaces or commas. This formula removes the extra comma and space at the end of the string. | ![Table with only 3 rows.](media/function-concatenate/matchall.png)
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

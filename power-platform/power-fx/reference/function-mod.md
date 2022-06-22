@@ -33,4 +33,4 @@ The result has the same sign as the divisor.
 
 
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

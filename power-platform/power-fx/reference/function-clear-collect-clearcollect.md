@@ -58,7 +58,7 @@ The **ClearCollect** function deletes all the records from a collection. And the
 **ClearCollect** returns the modified collection as a table.  **ClearCollect** can only be used in a behavior formula.
 
 ### Delegation
-[!INCLUDE [delegation-no](../../../includes/delegation-no.md)]
+[!INCLUDE [delegation-no](../../includes/delegation-no.md)]
 
 ## Syntax
 
@@ -104,4 +104,4 @@ These examples examine how record and table arguments to **Collect** and **Clear
 
 
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

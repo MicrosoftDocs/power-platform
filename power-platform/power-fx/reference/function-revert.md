@@ -64,4 +64,4 @@ You reapply your change on top of the previous change, and your change succeed b
 
 
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

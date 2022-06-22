@@ -75,4 +75,4 @@ First and last calendar weeks of 2021
 | Thursday,&nbsp;December&nbsp;30,&nbsp;2021 | 53 | 52 | 53 |
 | Friday,&nbsp;December&nbsp;31,&nbsp;2021 | 53 | 52 | 53 |
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

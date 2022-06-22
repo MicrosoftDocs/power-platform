@@ -91,4 +91,4 @@ In these examples, a **[Text input](../controls/control-text-input.md)** control
 
 
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

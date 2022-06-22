@@ -52,4 +52,4 @@ If you set the **[Text](../controls/properties-core.md)** property of the label 
     We have done an unusually "deep" globalization and localization.
 ```
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

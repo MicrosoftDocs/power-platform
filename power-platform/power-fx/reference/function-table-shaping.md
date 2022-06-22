@@ -38,7 +38,7 @@ You can't modify the columns of a [data source](../working-with-data-sources.md)
 The **AddColumns** function adds a column to a table, and a formula defines the values in that column. Existing columns remain unmodified.
 
 The formula is evaluated for each record of the table.
-[!INCLUDE [record-scope](../../../includes/record-scope.md)]
+[!INCLUDE [record-scope](../../includes/record-scope.md)]
 
 The **DropColumns** function excludes columns from a table.  All other columns remain unmodified. **DropColumns** excludes columns, and **ShowColumns** includes columns.
 
@@ -141,4 +141,4 @@ Let's try some of the examples from earlier in this topic.
 
 See [Map columns](../map-component-input-fields.md#map-columns).
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

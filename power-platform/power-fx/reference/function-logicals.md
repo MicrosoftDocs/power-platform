@@ -81,4 +81,4 @@ Select the button (by clicking it while you hold down the Alt key), and then set
 | **Or(&nbsp;Len(&nbsp;s&nbsp;)&nbsp;<&nbsp;10, x&nbsp;<&nbsp;100, y&nbsp;<&nbsp;100&nbsp;)** | Tests whether the length of **s** is less than 10, whether **x** is less than 100, and whether **y** is less than 100. The first and third arguments are false, but the second one is true. Therefore, the function returns *true*. | *true* |
 | **Not IsBlank(&nbsp;s&nbsp;)** | Tests whether **s** is *blank*, which returns *false*. **Not** returns the opposite of this result, which is *true*. | *true* |
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

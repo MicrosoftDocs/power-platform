@@ -41,7 +41,7 @@ You need to enable the **Enhanced delegation for Microsoft Dataverse** option in
     > [!div class="mx-imgBorder"]
     > ![Enable delegation.](media/enable-delegation-functions.png)
 
-<!--[!INCLUDE [delegation-no](../../../includes/delegation-no.md)]-->
+<!--[!INCLUDE [delegation-no](../../includes/delegation-no.md)]-->
 
 > [!IMPORTANT]
 > - There is a 50K delegation limit if you use `CountRows` and `CountIf` functions with filters. There is no hard limit on the `CountRows` function when extracted directly from the data source because of the cached count that Dataverse keeps. 
@@ -85,4 +85,4 @@ You need to enable the **Enhanced delegation for Microsoft Dataverse** option in
 
 
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

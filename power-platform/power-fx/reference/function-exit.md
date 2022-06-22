@@ -46,4 +46,4 @@ While authoring the app, calling **Exit** doesn't exit or sign out the user.  Ho
 
 
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

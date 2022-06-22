@@ -72,4 +72,4 @@ RecordInfo( First(MyCollection), RecordInfo.DeletePermission )
 ```
 Creates the `MyCollection` collection and tests the first record to determine if it can be removed.  Since the record's origin is a collection and not a data source, **RecordInfo** will return an error.
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

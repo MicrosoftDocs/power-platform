@@ -65,4 +65,4 @@ Global variables cannot use the same name as an existing collection or control. 
 
 
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

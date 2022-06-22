@@ -233,4 +233,4 @@ To see the results of **MatchAll** in a gallery:
 	![Text property.](media/function-ismatch/pangram-gallery2.png)
 
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

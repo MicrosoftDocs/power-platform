@@ -265,4 +265,4 @@ Error( Filter( AllErrors, Kind <> ErrorKind.Div0 ) )
 [Formula reference for Power Apps](../formula-reference.md)
 
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

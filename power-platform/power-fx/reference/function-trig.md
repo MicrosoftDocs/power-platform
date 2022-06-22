@@ -127,4 +127,4 @@ The examples in this section use a [data source](../working-with-data-sources.md
 
 
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

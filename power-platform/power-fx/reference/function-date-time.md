@@ -59,4 +59,4 @@ If a user typed **14** in a text-input control named **BirthHour**, **50** in a 
 
 
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

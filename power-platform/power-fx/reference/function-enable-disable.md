@@ -39,4 +39,4 @@ These functions have no return value. You can use them only in [behavior formula
 
 
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

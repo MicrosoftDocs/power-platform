@@ -38,7 +38,7 @@ Similar to **UpdateIf**, you can also use the **[Patch](function-patch.md)** fun
 Both **Update** and **UpdateIf** return the modified data source as a [table](../working-with-tables.md). You must use either function in a [behavior formula](../working-with-formulas-in-depth.md).
 
 ### Delegation
-[!INCLUDE [delegation-no](../../../includes/delegation-no.md)]
+[!INCLUDE [delegation-no](../../includes/delegation-no.md)]
 
 ## Syntax
 **Update**( *DataSource*, *OldRecord*, *NewRecord* [, **All** ] )
@@ -77,4 +77,4 @@ In these examples, you'll replace or modify records in a data source that's name
 
 
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
