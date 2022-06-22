@@ -481,7 +481,7 @@ You can use the following settings to tune the performance of Finance and Operat
 - Turning off validations (optional): 
   While the Data Integrator does not bypass any business logic and validations, you may optionally turn off the ones that are not required to improve performance.
 
-Consider the following tips to ensure performance while importing or exporting data from Dataverse environments.
+Consider the following tips to ensure performance while importing or exporting data from environments.
 
 ### Importing/Exporting data to/from customer engagement apps
 

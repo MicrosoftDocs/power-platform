@@ -65,7 +65,7 @@ This section provides a summary of key lifecycle operations that will be allowed
 
 The lifetime of the environment will be tied to the team it was created in. If you upgrade an environment to Dataverse, the 1:1 mapping isn't guaranteed because the environment can now be used by applications outside of Microsoft Teams. The upgraded environment is bound by the lifecycle rules associated with the Power Apps license and the configuration of the environment.
 
-Some operations are blocked by default, such as the Copy and Reset operations. For scenarios where you need this capability, use Dataverse environments. Refer to the previous table for details.
+Some operations are blocked by default, such as the Copy and Reset operations. For scenarios where you need this capability, use an environment with a Dataverse database . Refer to the previous table for details.
 
 > [!IMPORTANT]
 > Dataverse for Teams environments won't be allowed to change types until the upgrade operation has been carried out on the environment. After the upgrade is complete, the Dataverse for Teams environment will have the full capabilities found in Dataverse.  
@@ -86,7 +86,7 @@ Microsoft 365 Groups supports two user membership types: owners and members. Mem
 
 Access to a Dataverse for Teams environment and its resources (apps, data) will be restricted to users in the team. The Microsoft 365 group linked to a team will be automatically associated with the Dataverse for Teams environment, restricting access to users of that group. This Microsoft 365 Group association with the Dataverse for Teams environment won't be editable until the environment is upgraded to Dataverse.
 
-There's a difference in the models for adding users to Dataverse environments and adding them to Dataverse for Teams environments. The following table describes the differences.
+There's a difference in the models for adding users to an environment with a Dataverse database and adding them to Dataverse for Teams environments. The following table describes the differences.
 
 |Feature  |Dataverse for Teams  |Dataverse  |
 |---------|---------|---------|
