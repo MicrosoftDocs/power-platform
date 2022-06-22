@@ -39,8 +39,8 @@ Assertion messages, for both passed and failed assertions, are also contained in
 
 ### See Also
 
-[Test Studio Overview](../test-studio.md) <br>
-[Working with Test Studio](../working-with-test-studio.md)
+[Test Studio Overview]/power-apps/maker/canvas-apps/test-studio.md) <br>
+[Working with Test Studio]/power-apps/maker/canvas-apps/working-with-test-studio.md)
 
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include]../../includes/footer-banner.md)]

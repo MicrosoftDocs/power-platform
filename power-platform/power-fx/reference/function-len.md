@@ -21,7 +21,7 @@ contributors:
 Returns the length of a string of text.
 
 ## Description
-If you specify a single string as the argument, the return value is the length as a number.  If you specify a single-column [table](../working-with-tables.md) that contains strings, the return value is a single-column table that contains the length of each string. If you have a multi-column table, you can shape it into a single-column table, as [working with tables](../working-with-tables.md) describes.
+If you specify a single string as the argument, the return value is the length as a number.  If you specify a single-column [table]/power-apps/maker/canvas-apps/working-with-tables.md) that contains strings, the return value is a single-column table that contains the length of each string. If you have a multi-column table, you can shape it into a single-column table, as [working with tables]/power-apps/maker/canvas-apps/working-with-tables.md) describes.
 
 If you specify a [blank](function-isblank-isempty.md) string, **Len** returns 0.
 
@@ -36,7 +36,7 @@ If you specify a [blank](function-isblank-isempty.md) string, **Len** returns 0.
 
 ## Examples
 ### Single string
-For the examples in this section, the [data source](../working-with-data-sources.md) is a text-input control that's named **Author** and that contains the string "E. E. Cummings".
+For the examples in this section, the [data source]/power-apps/maker/canvas-apps/working-with-data-sources.md) is a text-input control that's named **Author** and that contains the string "E. E. Cummings".
 
 | Formula | Description | Result |
 | --- | --- | --- |
@@ -50,9 +50,9 @@ For the first example in this section, the data source is named **People** and c
 
 | Formula | Description | Result |
 | --- | --- | --- |
-| **Len( ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;) )** |In the **Address** [column](../working-with-tables.md#columns) of the **People** table:<br><ul><li>Measures the length of each string.</li><li>Returns a single-column table that contains the length of each string.</li> | ![Len with ShowColumns.](media/function-len/people-table-len.png) |
+| **Len( ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;) )** |In the **Address** [column]/power-apps/maker/canvas-apps/working-with-tables.md#columns) of the **People** table:<br><ul><li>Measures the length of each string.</li><li>Returns a single-column table that contains the length of each string.</li> | ![Len with ShowColumns.](media/function-len/people-table-len.png) |
 | **Len( [ "Hello", "to the", "World", "" ] )** |In the **[Value](function-value.md)** column of the inline table:<br><ul><li>Measures the length of each string.</li><li>Returns a single-column table that contains the length of each string.</li> |![Len with text values.](media/function-len/people-table-len-inline.png) |
 
 
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include]../../includes/footer-banner.md)]

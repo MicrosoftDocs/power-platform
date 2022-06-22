@@ -24,7 +24,7 @@ Checks a record reference for a specific table type (**IsType**) and treats the 
 
 ## Description
 
-Read [Understand record references and polymorphic lookups](../working-with-references.md) for a broader introduction and more details.
+Read [Understand record references and polymorphic lookups]/power-apps/maker/canvas-apps/working-with-references.md) for a broader introduction and more details.
 
 A lookup field usually refers to records in a particular table. Because the table type is well established, you can access the fields of the lookup by using a simple dot notation. For example, **First( Accounts ).'Primary Contact'.'Full Name'** walks from the **Accounts** table to the **Primary Contact** record in the **Contacts** table and extracts the **Full Name** field.
 
@@ -63,7 +63,7 @@ Similarly, you can use record references with the [**Patch**](function-patch.md)
 Patch( Accounts, First( Accounts ), { Owner: First( Teams ) } )
 ```  
 
-If used in a record context, such as within a [**Gallery**](../controls/control-gallery.md) or [**Edit form**](../controls/control-form-detail.md) control, you might need to use the [global disambiguation operator](operators.md#disambiguation-operator) to reference the table type. For example, this formula would be effective for a gallery that's displaying a list of contacts where **Company Name** is a **Customer** lookup:
+If used in a record context, such as within a [**Gallery**]/power-apps/maker/canvas-apps/controls/control-gallery.md) or [**Edit form**]/power-apps/maker/canvas-apps/controls/control-form-detail.md) control, you might need to use the [global disambiguation operator](operators.md#disambiguation-operator) to reference the table type. For example, this formula would be effective for a gallery that's displaying a list of contacts where **Company Name** is a **Customer** lookup:
 
 ```powerapps-dot
 If( IsType( ThisItem.'Company Name', Accounts ),
@@ -90,7 +90,7 @@ If the record reference is *blank*, **IsType** returns FALSE, and **AsType** ret
 
 ## Example
 
-[Understand record references and polymorphic lookups](../working-with-references.md) contains extensive examples.
+[Understand record references and polymorphic lookups]/power-apps/maker/canvas-apps/working-with-references.md) contains extensive examples.
 
 1. Create a blank canvas app for tablets.
 
@@ -143,4 +143,4 @@ If the record reference is *blank*, **IsType** returns FALSE, and **AsType** ret
     Your results might differ from those in this topic because it uses sample data that was modified to show additional types of results.
 
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include]../../includes/footer-banner.md)]

@@ -18,7 +18,7 @@ contributors:
   - tapanm-msft
 ---
 # RecordInfo function in Power Apps
-Provides information about a [record](../working-with-tables.md#elements-of-a-table) of a [data source](../working-with-data-sources.md).
+Provides information about a [record]/power-apps/maker/canvas-apps/working-with-tables.md#elements-of-a-table) of a [data source]/power-apps/maker/canvas-apps/working-with-data-sources.md).
 
 Use **RecordInfo** to obtain information about a particular record of a data source.  The data source must be tabular and compatible with the [**Remove**](function-remove-removeif.md) and [**Patch**](function-patch.md) functions.  
 
@@ -72,4 +72,4 @@ RecordInfo( First(MyCollection), RecordInfo.DeletePermission )
 ```
 Creates the `MyCollection` collection and tests the first record to determine if it can be removed.  Since the record's origin is a collection and not a data source, **RecordInfo** will return an error.
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include]../../includes/footer-banner.md)]

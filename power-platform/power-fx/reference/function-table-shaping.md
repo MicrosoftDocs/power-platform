@@ -18,7 +18,7 @@ contributors:
   - tapanm-msft
 ---
 # AddColumns, DropColumns, RenameColumns, and ShowColumns functions in Power Apps
-Shapes a [table](../working-with-tables.md) by adding, dropping, renaming, and selecting its [columns](../working-with-tables.md#columns).
+Shapes a [table]/power-apps/maker/canvas-apps/working-with-tables.md) by adding, dropping, renaming, and selecting its [columns]/power-apps/maker/canvas-apps/working-with-tables.md#columns).
 
 ## Overview
 These functions shape a table by adjusting its columns:
@@ -30,15 +30,15 @@ These functions shape a table by adjusting its columns:
 A table is a value in Power Apps, just like a string or a number.  You can specify a table as an argument in a formula, and functions can return a table as a result.
 
 > [!NOTE]
-> The functions that this topic describes don't modify the original table. Instead, they take that table as an argument and return a new table with a transform applied. See [working with tables](../working-with-tables.md) for more details.  
+> The functions that this topic describes don't modify the original table. Instead, they take that table as an argument and return a new table with a transform applied. See [working with tables]/power-apps/maker/canvas-apps/working-with-tables.md) for more details.  
 
-You can't modify the columns of a [data source](../working-with-data-sources.md) by using these functions. You must modify the data at its source. You can add columns to a [collection](../working-with-data-sources.md#collections) with the **[Collect](function-clear-collect-clearcollect.md)** function. See [working with data sources](../working-with-data-sources.md) for more details.  
+You can't modify the columns of a [data source]/power-apps/maker/canvas-apps/working-with-data-sources.md) by using these functions. You must modify the data at its source. You can add columns to a [collection]/power-apps/maker/canvas-apps/working-with-data-sources.md#collections) with the **[Collect](function-clear-collect-clearcollect.md)** function. See [working with data sources]/power-apps/maker/canvas-apps/working-with-data-sources.md) for more details.  
 
 ## Description
 The **AddColumns** function adds a column to a table, and a formula defines the values in that column. Existing columns remain unmodified.
 
 The formula is evaluated for each record of the table.
-[!INCLUDE [record-scope](../../includes/record-scope.md)]
+[!INCLUDE [record-scope]../../includes/record-scope.md)]
 
 The **DropColumns** function excludes columns from a table.  All other columns remain unmodified. **DropColumns** excludes columns, and **ShowColumns** includes columns.
 
@@ -57,7 +57,7 @@ AddColumns( RealEstateAgents,
 )
 ```
 
-However, the output of these functions is subject to the [non-delegation record limit](../delegation-overview.md#non-delegable-limits).  In this example, only 500 records are returned even if the **RealEstateAgents** data source has 501 or more records.
+However, the output of these functions is subject to the [non-delegation record limit]/power-apps/maker/canvas-apps/delegation-overview.md#non-delegable-limits).  In this example, only 500 records are returned even if the **RealEstateAgents** data source has 501 or more records.
 
 If you use **AddColumns** in this manner, **Filter** must make separate calls to the data source for each of those first records in **RealEstateAgents**, which causes a lot of network chatter. If **[dbo].[AllListings]** is small enough and doesn't change often, you could call the **Collect** function in [**OnStart**](signals.md#app) to cache the data source in your app when it starts. As an alternative, you could restructure your app so that you pull in the related records only when the user asks for them.  
 
@@ -104,7 +104,7 @@ None of these examples modify the **IceCreamSales** data source. Each function t
 
 Let's try some of the examples from earlier in this topic.  
 
-1. Create a collection by adding a **[Button](../controls/control-button.md)** control and setting its **OnSelect** property to this formula:
+1. Create a collection by adding a **[Button]/power-apps/maker/canvas-apps/controls/control-button.md)** control and setting its **OnSelect** property to this formula:
 
 	```powerapps-dot
 	ClearCollect( IceCreamSales, 
@@ -139,6 +139,6 @@ Let's try some of the examples from earlier in this topic.
 
 ### Map columns in a component
 
-See [Map columns](../map-component-input-fields.md#map-columns).
+See [Map columns]/power-apps/maker/canvas-apps/map-component-input-fields.md#map-columns).
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include]../../includes/footer-banner.md)]
