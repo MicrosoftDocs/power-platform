@@ -55,7 +55,7 @@ The session transcript is a comma-separated values (CSV) file that contains the 
 
 1. In the left side panel, select **Dataverse**, and then select **Tables**.
 
-1. Select **All**. In the search box at the upper-right, type **Conversation**.
+1. Select **All**. In the search box at the upper-right corner, type **Conversation**.
 
 1. Select the **ConversationTranscript** table.
 
