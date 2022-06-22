@@ -54,7 +54,7 @@ These automatically created topics fall into two categories:
 
     You can edit lesson topics or delete them entirely.
 
-- System topics are topics you're likely to need during a bot conversation.
+- [System topics](authoring-system-topics.md) are topics you're likely to need during a bot conversation.
 
     You can't delete or disable system topics or edit their trigger phrases. However, you can customize the nodes on the authoring canvas. We recommend that you don't customize these topics until you're comfortable creating an end-to-end bot conversation.
 
@@ -196,7 +196,7 @@ When the path for the subtopic is finished, the bot will return to the original 
 
 :::image type="content" source="media/authoring-create-edit-topics/authoring-subtopic-redirect.png" alt-text="Screenshot of the authoring canvas showing nodes under a redirected topic node.":::
 
-If you redirect to any of the following [system topics](#use-system-and-sample-topics), however, the entire conversation will end:
+If you redirect to any of the following [system topics](authoring-system-topics.md), however, the entire conversation will end:
 
 - End of Conversation
 - Confirmed Success
