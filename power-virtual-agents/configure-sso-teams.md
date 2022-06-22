@@ -20,16 +20,10 @@ The Power Virtual Agents app in Microsoft Teams supports single sign-on (SSO), w
 When using Teams the user is already signed-in, so Power Virtual Agents chatbots can use this information for scenarios that require user-specific information like a user's name or other details.
 
 > [!IMPORTANT]
-> SSO in the Power Virtual Agents app in Teams is only supported for Azure Active Directory v2 apps (Azure AD v2 apps). Other app types, such as Azure AD v1, do not support SSO in the Power Virtual Agents app in Microsoft Teams.  
 >
-> You can suggest support for additional account types at the [at the Power Virtual Agents ideas forum](https://powerusers.microsoft.com/t5/Power-Virtual-Agents-Ideas/idb-p/pva_ideas).
-
-> [!IMPORTANT]
-> If you have SSO configured for the web publication channel, the steps documented here need to be followed for authentication to work in Teams bots.  
->
-> If your web publication channel has SSO configured but it is not following the instructions in this documentation, authentication in the Teams channel will fail without an error message.  
->
-> If authentication is not working for your bot on your Teams channel, double check your configuration against this document.
+> - SSO in the Power Virtual Agents app in Teams is only supported for Azure Active Directory v2 apps (Azure AD v2 apps). Other app types, such as Azure AD v1, do not support SSO in the Power Virtual Agents app in Microsoft Teams.
+> - If you have SSO configured for the web publication channel, you must follow this document for authentication to work in Teams bots, otherwise authentication in the Teams channel will fail without an error message.
+> - SSO is not supported when your bot is integrated with [Dynamics 365 Customer Service](configuration-hand-off-omnichannel.md).
 
 ## Prerequisites
 

@@ -65,7 +65,9 @@ No authentication is the standard configuration for bots that aren't created fro
 ### Only for Teams
 
 > [!IMPORTANT]
-> Only the Teams channel is available with this option. All other channels are disabled, and you'll receive a warning if you try to add any.
+> When the **Only for Teams** option is selected, all channels except the Teams channel will be disabled.
+>
+> Additionally, the **Only for Teams** option is not available if your bot is integrated with [Dynamics 365 Customer Service](configuration-hand-off-omnichannel).
 
 Teams authentication, optimized for the Teams channel, is the standard configuration for bots that are created from Teams. It automatically sets up Azure AD authentication for Teams without the need for any manual configuration. Since Teams authentication itself identifies the user, users aren't prompted to sign in while they're in Teams, unless your bot needs expanded scope.
 

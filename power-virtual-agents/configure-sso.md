@@ -30,7 +30,9 @@ There are four main steps to configuring SSO for Power Virtual Agents:
 1. Configure your custom canvas HTML code to enable SSO.
 
 > [!IMPORTANT]
-> SSO on SharePoint is not supported.
+>
+> - SSO on SharePoint is not supported.
+> - SSO is not supported when your bot is integrated with [Dynamics 365 Customer Service](configuration-hand-off-omnichannel.md).
 
 ## Prerequisites
 
