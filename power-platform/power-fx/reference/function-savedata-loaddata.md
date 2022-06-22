@@ -19,10 +19,10 @@ contributors:
   - melzoghbi
 ---
 # SaveData, LoadData, and ClearData functions in Power Apps
-Saves and reloads a [collection](../working-with-data-sources.md#collections) from the app host's storage.
+Saves and reloads a [collection]/power-apps/maker/canvas-apps/working-with-data-sources.md#collections) from the app host's storage.
 
 > [!NOTE]
-> These functions can now be used when playing an app in a web browser as an [experimental feature](../working-with-experimental-preview.md).  This feature is disabled by default. To enable, navigate to **Settings** > **Upcoming features** > **Experimental** > **Enabled SaveData, LoadData, ClearData on web player.**" and turn the switch on.  To submit feedback regarding this experimental feature, go to [Power Apps community forum](https://powerusers.microsoft.com/t5/Power-Apps-Community/ct-p/PowerApps1).
+> These functions can now be used when playing an app in a web browser as an [experimental feature]/power-apps/maker/canvas-apps/working-with-experimental-preview.md).  This feature is disabled by default. To enable, navigate to **Settings** > **Upcoming features** > **Experimental** > **Enabled SaveData, LoadData, ClearData on web player.**" and turn the switch on.  To submit feedback regarding this experimental feature, go to [Power Apps community forum](https://powerusers.microsoft.com/t5/Power-Apps-Community/ct-p/PowerApps1).
 
 ## Description
 The **SaveData** function stores a collection for later use under a name.  
@@ -38,10 +38,10 @@ The **ClearData** function clears the storage under a specific name or clears al
 
 Use these functions to improve app-startup performance by:
 
-- Caching data in the **[App.OnStart](../controls/control-screen.md#additional-properties)** formula on a first run.
+- Caching data in the **[App.OnStart]/power-apps/maker/canvas-apps/controls/control-screen.md#additional-properties)** formula on a first run.
 - Reloading the local cache on next runs.
 
-You can also use these functions to add [simple offline capabilities](../offline-apps.md) to your app.
+You can also use these functions to add [simple offline capabilities]/power-apps/maker/canvas-apps/offline-apps.md) to your app.
 
 You can't use these functions inside a browser when:
 
@@ -57,7 +57,7 @@ These functions are limited by the amount of available app memory as they operat
 
 Test your app with expected scenarios on the type of devices you expect the app to run when storing large data. Expect to have between 30 MB and 70 MB of available memory generally.
 
-These functions depend on the collection being implicitly defined with **[Collect](function-clear-collect-clearcollect.md)** or **[ClearCollect](function-clear-collect-clearcollect.md)**. You don't need to call **Collect** or **ClearCollect** to load data into the collection for defining it. It's a common case when using **LoadData** after a previous **SaveData**.  All that is needed is the presence of these functions in a formula to implicitly define the structure of the collection.  For more information, see [creating and removing variables](../working-with-variables.md#create-and-remove-variables).
+These functions depend on the collection being implicitly defined with **[Collect](function-clear-collect-clearcollect.md)** or **[ClearCollect](function-clear-collect-clearcollect.md)**. You don't need to call **Collect** or **ClearCollect** to load data into the collection for defining it. It's a common case when using **LoadData** after a previous **SaveData**.  All that is needed is the presence of these functions in a formula to implicitly define the structure of the collection.  For more information, see [creating and removing variables]/power-apps/maker/canvas-apps/working-with-variables.md#create-and-remove-variables).
 
 The loaded data will be appended to the collection. Use the **[Clear](function-clear-collect-clearcollect.md)** function before calling **LoadData** if you want to start with an empty collection.
 
@@ -93,13 +93,13 @@ Following simple example captures and stores the names and pictures of everyday 
 > [!NOTE]
 > This example uses a camera control to capture images.  Since **SaveData** is limited to 1 MB of data when running in Teams or a web browser, this example will not work with more than a few images. Also, depending on the camera, it may not work with even one image. Use a device to work through this full example, or remove the camera control and picture part of this example to run in Teams or in a web browser.
 
-1. Create a blank canvas app with a tablet layout.  For more details, read [creating an app from a template](../get-started-test-drive.md) and select **Tablet layout** under **Blank app**.  
+1. Create a blank canvas app with a tablet layout.  For more details, read [creating an app from a template]/power-apps/maker/canvas-apps/get-started-test-drive.md) and select **Tablet layout** under **Blank app**.  
 
-1. Add a [**Text input**](../controls/control-text-input.md) control and a [**Camera**](../controls/control-camera.md) control and arrange them roughly as shown:
+1. Add a [**Text input**]/power-apps/maker/canvas-apps/controls/control-text-input.md) control and a [**Camera**]/power-apps/maker/canvas-apps/controls/control-camera.md) control and arrange them roughly as shown:
     > [!div class="mx-imgBorder"]  
     > ![A text input and camera control added to a blank screen.](media/function-savedata-loaddata/simple-text-camera.png)
 
-1. Add a [**Button**](../controls/control-button.md) control.
+1. Add a [**Button**]/power-apps/maker/canvas-apps/controls/control-button.md) control.
 
 2. Double-click the button control to change the button text to **Add Item** (or modify the **Text** property).
 
@@ -134,7 +134,7 @@ Following simple example captures and stores the names and pictures of everyday 
     > [!div class="mx-imgBorder"] 
     > ![A button control added with the text "Load Data" and the OnSelect property set](media/function-savedata-loaddata/simple-loaddata.png)
 
-1. Add a [**Gallery**](../controls/control-gallery.md) control with a Vertical layout that includes a picture and text areas: 
+1. Add a [**Gallery**]/power-apps/maker/canvas-apps/controls/control-gallery.md) control with a Vertical layout that includes a picture and text areas: 
     > [!div class="mx-imgBorder"] 
     > ![Gallery variety selection, "Vertical" selected with image and text areas](media/function-savedata-loaddata/simple-gallery-add.png)
 
@@ -178,6 +178,6 @@ Following simple example captures and stores the names and pictures of everyday 
  
 ### More advanced offline example
 
-For a detailed example, see the article on [simple offline capabilities](../offline-apps.md).
+For a detailed example, see the article on [simple offline capabilities]/power-apps/maker/canvas-apps/offline-apps.md).
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include]../../includes/footer-banner.md)]

@@ -17,10 +17,10 @@ contributors:
   - tapanm-msft
 ---
 # First, FirstN, Index, Last, and LastN functions in Power Apps
-Returns the first, last, or a specific [record](../working-with-tables.md#records), or a set of first or last records, from a table.
+Returns the first, last, or a specific [record]/power-apps/maker/canvas-apps/working-with-tables.md#records), or a set of first or last records, from a table.
 
 ## Description
-The **First** function returns the first record of a [table](../working-with-tables.md).
+The **First** function returns the first record of a [table]/power-apps/maker/canvas-apps/working-with-tables.md).
 
 The **FirstN** function returns the first set of records of a table; the second argument specifies the number of records to return.
 
@@ -33,7 +33,7 @@ The **Index** function returns a record of a table based on its ordered position
 **First**, **Index**, and **Last** return a single record.  **FirstN** and **LastN** return a table, even if you specify only a single record.
 
 ### Delegation
-[!INCLUDE [delegation-no](../../includes/delegation-no.md)]
+[!INCLUDE [delegation-no]../../includes/delegation-no.md)]
 
 For example, when used with a data source containing a large table with 1 million records, **Last** will be subject to the non-delegation limit and will not return the last record of the entire data source.  Likewise, using **Index** to request a record in the middle of 1 million records will result in an error because the index is out of range based on the non-delegation limit.
 
@@ -54,7 +54,7 @@ For example, when used with a data source containing a large table with 1 millio
 
 ## Examples
 
-For the following examples, we'll use the **IceCream** [data source](../working-with-data-sources.md), which contains the data in this table:
+For the following examples, we'll use the **IceCream** [data source]/power-apps/maker/canvas-apps/working-with-data-sources.md), which contains the data in this table:
 
 :::image type="content" source="media/function-first-last/icecream.png" alt-text="IceCream example.":::
 
@@ -79,4 +79,4 @@ Collect( IceCream, Table( { Flavor: "Chocolate", Quantity: 100 },
 | **Index(&nbsp;IceCream,&nbsp;10&nbsp;)** | Returns an error since the record requested is beyond the bounds of the table. | *Error* |
 
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include]../../includes/footer-banner.md)]

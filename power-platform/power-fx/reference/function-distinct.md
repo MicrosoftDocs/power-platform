@@ -18,14 +18,14 @@ contributors:
   - tapanm-msft
 ---
 # Distinct function in Power Apps
-Summarizes [records](../working-with-tables.md#records) of a [table](../working-with-tables.md), removing duplicates.
+Summarizes [records]/power-apps/maker/canvas-apps/working-with-tables.md#records) of a [table]/power-apps/maker/canvas-apps/working-with-tables.md), removing duplicates.
 
 ## Description
 The **Distinct** function evaluates a formula across each record of a table and returns a one-column table of the results with duplicate values removed.  The name of the column is **Result**.  
 
-[!INCLUDE [record-scope](../../includes/record-scope.md)]
+[!INCLUDE [record-scope]../../includes/record-scope.md)]
 
-[!INCLUDE [delegation-no-one](../../includes/delegation-no-one.md)]
+[!INCLUDE [delegation-no-one]../../includes/delegation-no-one.md)]
 
 ## Syntax
 **Distinct**( *Table*, *Formula* )
@@ -35,7 +35,7 @@ The **Distinct** function evaluates a formula across each record of a table and 
 
 ## Example
 
-1. Insert a [**Button**](../controls/control-button.md) control, and set its **OnSelect** property to this formula.
+1. Insert a [**Button**]/power-apps/maker/canvas-apps/controls/control-button.md) control, and set its **OnSelect** property to this formula.
 
     ```powerapps-dot
     ClearCollect( CityPopulations,
@@ -55,7 +55,7 @@ The **Distinct** function evaluates a formula across each record of a table and 
     > [!div class="mx-imgBorder"]
     > ![CityPopulations collection shown in result view.](media/function-distinct/citypopulations-create.png)
 
-1. Insert a [**Data table**](../controls/control-data-table.md) control, and set its **Items** property to this formula:
+1. Insert a [**Data table**]/power-apps/maker/canvas-apps/controls/control-data-table.md) control, and set its **Items** property to this formula:
 
     ```powerapps-dot
     Distinct( CityPopulations, Country )
@@ -71,7 +71,7 @@ The **Distinct** function evaluates a formula across each record of a table and 
     > [!div class="mx-imgBorder"]
     > ![Output from Distinct function shown in data table.](media/function-distinct/citypopulations-datatable.png)
 
-1. Insert a [**Label**](../controls/control-text-box.md) control, and set its **Text** property to the formula:
+1. Insert a [**Label**]/power-apps/maker/canvas-apps/controls/control-text-box.md) control, and set its **Text** property to the formula:
 
     ```powerapps-dot
     First( Sort( Distinct( CityPopulations, Country ), Result ) ).Result
@@ -85,4 +85,4 @@ The **Distinct** function evaluates a formula across each record of a table and 
      
 
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include]../../includes/footer-banner.md)]

@@ -17,7 +17,7 @@ contributors:
   - tapanm-msft
 ---
 # Filter, Search, and LookUp functions in Power Apps
-Finds one or more [records](../working-with-tables.md#records) in a [table](../working-with-tables.md).
+Finds one or more [records]/power-apps/maker/canvas-apps/working-with-tables.md#records) in a [table]/power-apps/maker/canvas-apps/working-with-tables.md).
 
 Watch this video to learn how to use Filter, Search and LookUp functions:
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWLj3m]
@@ -29,15 +29,15 @@ The **LookUp** function finds the first record in a table that satisfies a formu
 
 For both, the formula is evaluated for each record of the table.  Records that result in *true* are included in the result.  Besides the normal formula [operators](operators.md), you can use the **[in](operators.md#in-and-exactin-operators)** and **[exactin](operators.md#in-and-exactin-operators)** operators for substring matches.
 
-[!INCLUDE [record-scope](../../includes/record-scope.md)]
+[!INCLUDE [record-scope]../../includes/record-scope.md)]
 
 The **Search** function finds records in a table that contain a string in one of their columns. The string may occur anywhere within the column; for example, searching for "rob" or "bert" would find a match in a column that contains "Robert". Searching is case-insensitive. Unlike **Filter** and **LookUp**, the **Search** function uses a single string to match instead of a formula.
 
 **Filter** and **Search** return a table that contains the same columns as the original table and the records that match the criteria. **LookUp** returns only the first record found, after applying a formula to reduce the record to a single value. If no records are found, **Filter** and **Search** return an [empty](function-isblank-isempty.md) table, and **LookUp** returns *blank*.  
 
-[Tables](../working-with-tables.md) are a value in Power Apps, just like a string or number. They can be passed to and returned from functions.  **Filter**, **Search**, and **LookUp** don't modify a table. Instead, they take a table as an argument and return a table, a record, or a single value from it. See [working with tables](../working-with-tables.md) for more details.
+[Tables]/power-apps/maker/canvas-apps/working-with-tables.md) are a value in Power Apps, just like a string or number. They can be passed to and returned from functions.  **Filter**, **Search**, and **LookUp** don't modify a table. Instead, they take a table as an argument and return a table, a record, or a single value from it. See [working with tables]/power-apps/maker/canvas-apps/working-with-tables.md) for more details.
 
-[!INCLUDE [delegation](../../includes/delegation.md)]
+[!INCLUDE [delegation]../../includes/delegation.md)]
 
 ## Syntax
 **Filter**(Table*, *Formula1* [, *Formula2*, ... ] )
@@ -63,7 +63,7 @@ The **Search** function finds records in a table that contain a string in one of
 
 ## Examples
 
-The following examples use the **IceCream** [data source](../working-with-data-sources.md):
+The following examples use the **IceCream** [data source]/power-apps/maker/canvas-apps/working-with-data-sources.md):
 
 ![Ice cream data source.](media/function-filter-lookup/icecream.png "Ice cream data source")
 
@@ -111,7 +111,7 @@ The following example uses the **Account** table in Microsoft Dataverse as data 
 
 ### Search user experience
 
-The following examples use the **IceCream** [data source](../working-with-data-sources.md):
+The following examples use the **IceCream** [data source]/power-apps/maker/canvas-apps/working-with-data-sources.md):
 
 In many apps, you can type one or more characters into a search box to filter a list of records in a large data set. As you type, the list shows only those records that match the search criteria.
 
@@ -119,11 +119,11 @@ The examples in the rest of this topic show the results of searching a list, nam
 
 ![Search on customers.](media/function-filter-lookup/customers.png "Search on customers")
 
-To create this data source as a collection, create a **[Button](../controls/control-button.md)** control and set its **OnSelect** property to this formula:
+To create this data source as a collection, create a **[Button]/power-apps/maker/canvas-apps/controls/control-button.md)** control and set its **OnSelect** property to this formula:
 
 **ClearCollect(Customers, Table({ Name: "Fred Garcia", Company: "Northwind Traders" }, { Name: "Cole Miller", Company: "Contoso" }, { Name: "Glenda Johnson", Company: "Contoso" }, { Name: "Mike Collins", Company: "Adventure Works" }, { Name: "Colleen Jones", Company: "Adventure Works" }) )**
 
-As in this example, you can show a list of records in a [**Gallery control**](../controls/control-gallery.md) at the bottom of a screen. Near the top of the screen, you can add a [**Text input**](../controls/control-text-input.md) control, named **SearchInput**, so that users can specify which records interest them.
+As in this example, you can show a list of records in a [**Gallery control**]/power-apps/maker/canvas-apps/controls/control-gallery.md) at the bottom of a screen. Near the top of the screen, you can add a [**Text input**]/power-apps/maker/canvas-apps/controls/control-text-input.md) control, named **SearchInput**, so that users can specify which records interest them.
 
 ![Search using search input.](media/function-filter-lookup/customers-ux-unfiltered.png "Search using search input")
 
@@ -149,4 +149,4 @@ You can expand your search to include the **Company** column and the **Name** co
 
 
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include]../../includes/footer-banner.md)]

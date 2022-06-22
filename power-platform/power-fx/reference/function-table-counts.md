@@ -19,14 +19,14 @@ contributors:
 ---
 # Count, CountA, CountIf, and CountRows functions in Power Apps
 
-Counts all [records](../working-with-tables.md#records) in a [table](../working-with-tables.md), or counts all records that satisfy a condition.
+Counts all [records]/power-apps/maker/canvas-apps/working-with-tables.md#records) in a [table]/power-apps/maker/canvas-apps/working-with-tables.md), or counts all records that satisfy a condition.
 
 ## Description
 The **Count** function counts the number of records that contain a number in a single-column table.
 
 The **CountA** function counts the number of records that aren't *blank* in a single-column table. This function includes [empty](function-isblank-isempty.md) text ("") in the count.
 
-The **CountIf** function counts the number of records in a table that are **true** for a logical formula.  The formula can reference [columns](../working-with-tables.md#columns) of the table.
+The **CountIf** function counts the number of records in a table that are **true** for a logical formula.  The formula can reference [columns]/power-apps/maker/canvas-apps/working-with-tables.md#columns) of the table.
 
 The **CountRows** function counts the number of records in a table.
 
@@ -41,7 +41,7 @@ You need to enable the **Enhanced delegation for Microsoft Dataverse** option in
     > [!div class="mx-imgBorder"]
     > ![Enable delegation.](media/enable-delegation-functions.png)
 
-<!--[!INCLUDE [delegation-no](../../includes/delegation-no.md)]-->
+<!--[!INCLUDE [delegation-no]../../includes/delegation-no.md)]-->
 
 > [!IMPORTANT]
 > - There is a 50K delegation limit if you use `CountRows` and `CountIf` functions with filters. There is no hard limit on the `CountRows` function when extracted directly from the data source because of the cached count that Dataverse keeps. 
@@ -66,18 +66,18 @@ You need to enable the **Enhanced delegation for Microsoft Dataverse** option in
 
 ## Example
 
-1. Import or create a [collection](../working-with-data-sources.md#collections) named **Inventory**, as the first subprocedure in [Show images and text in a gallery](../show-images-text-gallery-sort-filter.md) describes.
-2. Add a label, and set its **[Text](../controls/properties-core.md)** property to this formula:
+1. Import or create a [collection]/power-apps/maker/canvas-apps/working-with-data-sources.md#collections) named **Inventory**, as the first subprocedure in [Show images and text in a gallery]/power-apps/maker/canvas-apps/show-images-text-gallery-sort-filter.md) describes.
+2. Add a label, and set its **[Text]/power-apps/maker/canvas-apps/controls/properties-core.md)** property to this formula:
    
     **CountIf(Inventory, UnitsInStock < 30)**
    
     The label shows **2** because two products (Ganymede and Callisto) have fewer than 30 units in stock.
-3. Add another label, and set its **[Text](../controls/properties-core.md)** property to this formula:
+3. Add another label, and set its **[Text]/power-apps/maker/canvas-apps/controls/properties-core.md)** property to this formula:
    
     **CountA(Inventory.UnitsInStock)**
    
     The label shows **5**, the number of non-empty cells in the **UnitsInStock** column.
-4. Add another label, and set its **[Text](../controls/properties-core.md)** property to this formula:
+4. Add another label, and set its **[Text]/power-apps/maker/canvas-apps/controls/properties-core.md)** property to this formula:
    
     **CountRows(Inventory)**
    
@@ -85,4 +85,4 @@ You need to enable the **Enhanced delegation for Microsoft Dataverse** option in
 
 
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include]../../includes/footer-banner.md)]

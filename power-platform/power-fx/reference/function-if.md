@@ -31,7 +31,7 @@ The **Switch** function evaluates a formula and determines whether the result ma
 * Use **If** to evaluate multiple unrelated conditions. In Power Apps (unlike Microsoft Excel), you can specify multiple conditions without having to nest **If** formulas.
 * Use **Switch** to evaluate a single condition against multiple possible matches. You can also use **If** in this case, but you'd need to repeat the formula for each possible match.
 
-You can use both of these functions in [behavior formulas](../working-with-formulas-in-depth.md) to branch between two or more actions. Only one branch will trigger an action. Conditions and matches are evaluated in order, and they stop if a condition is **true** or a match is found.
+You can use both of these functions in [behavior formulas]/power-apps/maker/canvas-apps/working-with-formulas-in-depth.md) to branch between two or more actions. Only one branch will trigger an action. Conditions and matches are evaluated in order, and they stop if a condition is **true** or a match is found.
 
 *Blank* is returned if no conditions are **true**, no matches are found, and you don't specify a default result.
 
@@ -67,7 +67,7 @@ In the following examples, a **Slider** control (named **Slider1**) has a value 
 | **Switch( Slider1.Value, 20, "Result1", 10, "Result2", 0, "Result3", "DefaultResult" )** |The slider's value doesn't match any value to be checked.  A *DefaultResult* was provided, so it's returned. |"DefaultResult" |
 
 ### Branching in behavior formulas
-In these examples, a **[Text input](../controls/control-text-input.md)** control named **FirstName** has the value "John" typed into it.
+In these examples, a **[Text input]/power-apps/maker/canvas-apps/controls/control-text-input.md)** control named **FirstName** has the value "John" typed into it.
 
 | Formula | Description | Result |
 | --- | --- | --- |
@@ -76,9 +76,9 @@ In these examples, a **[Text input](../controls/control-text-input.md)** control
 | **Switch( FirstName.Text, "Carlos", Navigate(&nbsp;Screen1, ScreenTransition.None ), "Kirstin", Navigate( Screen2, ScreenTransition.None ), "John", Navigate( Screen3, ScreenTransition.None ) )** |The value of **FirstName.Text** is compared against "Carlos", "Kirstin", and "John" in that order. A match is found with "John", so the app navigates to **Screen3**. |**true**<br><br>The display is changed to **Screen3**. |
 
 ### Step by step
-1. Add a **[Text input](../controls/control-text-input.md)** control, and name it **Text1** if it doesn't have that name by default.
+1. Add a **[Text input]/power-apps/maker/canvas-apps/controls/control-text-input.md)** control, and name it **Text1** if it doesn't have that name by default.
 2. In **Text1**, type **30**.
-3. Add a **Label** control, and set its **[Text](../controls/properties-core.md)** property to this formula:<br>
+3. Add a **Label** control, and set its **[Text]/power-apps/maker/canvas-apps/controls/properties-core.md)** property to this formula:<br>
    **If( Value(Text1.Text) < 20, "Order MANY more!", Value(Text1.Text) < 40, "Order more!", Text1.Text )**
    
     The **Label** control shows **Order more!** because the value of **Text1** is more than 20 but less than 40.
@@ -91,4 +91,4 @@ In these examples, a **[Text input](../controls/control-text-input.md)** control
 
 
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include]../../includes/footer-banner.md)]

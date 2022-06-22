@@ -48,7 +48,7 @@ The **Weekday** function returns the weekday of a Date/Time value.  By default, 
 
 All functions return a number.
 
-See [working with dates and times](../show-text-dates-times.md) for more information.
+See [working with dates and times]/power-apps/maker/canvas-apps/show-text-dates-times.md) for more information.
 
 ## Syntax
 **Day**( *DateTime* )<br>**Month**( *DateTime* )<br>**Year**( *DateTime* )<br>**Hour**( *DateTime* )<br>**Minute**( *DateTime* )<br>**Second**( *DateTime* )
@@ -77,4 +77,4 @@ For the following example, the current time is **3:59:37 PM** on **Thursday, Apr
 
 
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include]../../includes/footer-banner.md)]

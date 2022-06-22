@@ -52,7 +52,7 @@ Decimal places cannot be specified with **Trunc** as it can with Microsoft Excel
 
 ## Single-column tables
 
-These functions support single-column tables.  If you pass a single number, the return value is the rounded version of that number.  If you pass a single-column [table](../working-with-tables.md) that contains numbers, the return value is a single-column table of rounded numbers.  The *DecimalPlaces* parameter can be a single value or a single-column table.  If the single-column table has less values that the *Number*, zero is used for the remaining values.  Use [**ShowColumns**](function-table-shaping.md) and other table shaping functions to extract a single-column table from a larger table.  
+These functions support single-column tables.  If you pass a single number, the return value is the rounded version of that number.  If you pass a single-column [table]/power-apps/maker/canvas-apps/working-with-tables.md) that contains numbers, the return value is a single-column table of rounded numbers.  The *DecimalPlaces* parameter can be a single value or a single-column table.  If the single-column table has less values that the *Number*, zero is used for the remaining values.  Use [**ShowColumns**](function-table-shaping.md) and other table shaping functions to extract a single-column table from a larger table.  
 
 ## Syntax
 
@@ -102,4 +102,4 @@ Rounding a single-column table of values.
 |:----:|:----:|:------------:|:----------:|:--------:|
 | [ 123.456, <br>987.593, <br>542.639 ] | [ 123, <br>987, <br>542 ] | [ 123.46, <br>987.59, <br>542.64 ] | [ 123, <br>987.5, <br>542.63 ] | [ 123.46, <br>988, <br>543 ] |
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include]../../includes/footer-banner.md)]

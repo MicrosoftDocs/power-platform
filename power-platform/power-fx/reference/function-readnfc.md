@@ -42,7 +42,7 @@ Additional **RTD** and **TNF** values may be supported in the future. If more va
 
 **ReadNFC** is only supported when running the app in a native mobile player such as the iOS and Andriod players.  Even with a supported player, a device may not support NFC, in which case a message will be shown to the user and the function will return a *blank* record.  
 
-**ReadNFC** can only be used in [behavior formulas](../working-with-formulas-in-depth.md).
+**ReadNFC** can only be used in [behavior formulas]/power-apps/maker/canvas-apps/working-with-formulas-in-depth.md).
 
 ## Syntax
 
@@ -75,4 +75,4 @@ Collects read NFC tags for later use.
 Collect( ScannedTags, ReadNFC() )
 ```
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include]../../includes/footer-banner.md)]

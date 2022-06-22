@@ -41,7 +41,7 @@ The **Char** function translates a number into a string with the corresponding A
 
 ### Display a character map
 
-1. On an empty screen in a tablet app, add a [**Gallery**](../controls/control-gallery.md) control with a **Blank Horizontal** layout, and then set these properties:
+1. On an empty screen in a tablet app, add a [**Gallery**]/power-apps/maker/canvas-apps/controls/control-gallery.md) control with a **Blank Horizontal** layout, and then set these properties:
 
     - **Items**: `Sequence( 8, 0, 16 ) As HighNibble`
     - **Width**: `Parent.Width`
@@ -103,4 +103,4 @@ Finally, to show the characters in a different font, set the **Font** property o
 ![Dancing Script.](media/function-char/chart-higher-dancing-script.png)
 
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include]../../includes/footer-banner.md)]

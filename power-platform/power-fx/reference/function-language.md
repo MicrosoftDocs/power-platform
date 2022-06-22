@@ -100,4 +100,4 @@ This approach comes with some drawbacks when compared to the previous example wh
 
 
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include]../../includes/footer-banner.md)]

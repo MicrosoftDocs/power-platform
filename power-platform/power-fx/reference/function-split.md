@@ -67,4 +67,4 @@ The examples show how **Split** can be used with the **[First](function-first-la
 
 
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include]../../includes/footer-banner.md)]

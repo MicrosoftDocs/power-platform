@@ -56,4 +56,4 @@ The user running these formulas is located in the United States and has selected
 
 
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include]../../includes/footer-banner.md)]

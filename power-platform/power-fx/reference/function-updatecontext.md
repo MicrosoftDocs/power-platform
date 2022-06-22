@@ -18,17 +18,17 @@ contributors:
   - tapanm-msft
 ---
 # UpdateContext function in Power Apps
-Creates or updates [context variables](../working-with-variables.md#use-a-context-variable) of the current screen.
+Creates or updates [context variables]/power-apps/maker/canvas-apps/working-with-variables.md#use-a-context-variable) of the current screen.
 
 ## Overview
 Use the **UpdateContext** function to create a context variable, which temporarily holds a piece of information, such as the number of times the user has selected a button or the result of a data operation.
 
 Context variables are scoped to a screen, which means that you can't build a formula that refers to a context variable on another screen. If you've used another programming tool, you can think of a context variable as similar to a local variable.  Use the [**Set** function](function-set.md) to work with global variables that are available throughout your app.  
 
-Power Apps are based on formulas that automatically recalculate as the user interacts with an app.  Context variables don't offer this benefit and can make your app harder to create and understand.  Before you use a context variable, review [working with variables](../working-with-variables.md).
+Power Apps are based on formulas that automatically recalculate as the user interacts with an app.  Context variables don't offer this benefit and can make your app harder to create and understand.  Before you use a context variable, review [working with variables]/power-apps/maker/canvas-apps/working-with-variables.md).
 
 ## Description
-To create or update a context variable, pass a single [record](../working-with-tables.md#records) to the **UpdateContext** function. In each record, specify the name of a [column](../working-with-tables.md#columns), which defines or matches the name of the variable, and the value to which you want to set that variable.
+To create or update a context variable, pass a single [record]/power-apps/maker/canvas-apps/working-with-tables.md#records) to the **UpdateContext** function. In each record, specify the name of a [column]/power-apps/maker/canvas-apps/working-with-tables.md#columns), which defines or matches the name of the variable, and the value to which you want to set that variable.
 
 * If you specify the name of a variable that you've previously defined, **UpdateContext** sets the value of the variable to the value that you specify.
 * If you specify the name of a variable that doesn't yet exist, **UpdateContext** creates a variable with that name and sets the value of that variable to the value that you specify.
@@ -52,7 +52,7 @@ A context variable holds its value until the app is closed.  If you define a con
 
 Every context variable is scoped to a screen. If you want to define a context variable on one screen and modify that variable from another screen, you must build a formula that's based on the **[Navigate](function-navigate.md)** function.  Or use a global variable.
 
-**UpdateContext** has no return value, and you can use it only within a [behavior formula](../working-with-formulas-in-depth.md).
+**UpdateContext** has no return value, and you can use it only within a [behavior formula]/power-apps/maker/canvas-apps/working-with-formulas-in-depth.md).
 
 ## Syntax
 **UpdateContext**( *UpdateRecord* )
@@ -77,12 +77,12 @@ Every context variable is scoped to a screen. If you want to define a context va
 
 ### Step-by-step example 1
 1. Name the default screen **Source**, add another screen, and name it **Target**.
-2. On the **Source** screen, add two buttons, and set their **[Text](../controls/properties-core.md)** properties so that one says **English** and the other says **Spanish**.
-3. Set the **[OnSelect](../controls/properties-core.md)** property of the **English** button to this expression:<br>**Navigate(Target, ScreenTransition.Fade, {Language:"English"})**
-4. Set the **[OnSelect](../controls/properties-core.md)** property of the **Spanish** button to this expression:<br>**Navigate(Target, ScreenTransition.Fade, {Language:"Spanish"})**
-5. On the **Target** screen, add a label, and set its **[Text](../controls/properties-core.md)** property to this expression:<br>**If(Language="English", "Hello!", "Hola!")**
+2. On the **Source** screen, add two buttons, and set their **[Text]/power-apps/maker/canvas-apps/controls/properties-core.md)** properties so that one says **English** and the other says **Spanish**.
+3. Set the **[OnSelect]/power-apps/maker/canvas-apps/controls/properties-core.md)** property of the **English** button to this expression:<br>**Navigate(Target, ScreenTransition.Fade, {Language:"English"})**
+4. Set the **[OnSelect]/power-apps/maker/canvas-apps/controls/properties-core.md)** property of the **Spanish** button to this expression:<br>**Navigate(Target, ScreenTransition.Fade, {Language:"Spanish"})**
+5. On the **Target** screen, add a label, and set its **[Text]/power-apps/maker/canvas-apps/controls/properties-core.md)** property to this expression:<br>**If(Language="English", "Hello!", "Hola!")**
 6. On the **Target** screen, select **Shapes** on the **Insert** tab, and then select the Back arrow.
-7. Set the Back arrow's **[OnSelect](../controls/properties-core.md)** property to this formula:<br>**Navigate(Source, ScreenTransition.Fade)**
+7. Set the Back arrow's **[OnSelect]/power-apps/maker/canvas-apps/controls/properties-core.md)** property to this formula:<br>**Navigate(Source, ScreenTransition.Fade)**
 8. From the **Source** screen, press F5, and then select the button for either language.
 
     On the **Target** screen, the label appears in the language that corresponds to the button that you selected.
@@ -95,7 +95,7 @@ Every context variable is scoped to a screen. If you want to define a context va
 
 1. Open the canvas app where you want to use this formula. 
 1. Add a new blank screen by selecting **New screen** from the command bar.
-1. Add a button, and set its **[OnSelect](../controls/properties-core.md)** property to this formula: <br> **UpdateContext( { Name: "Lily", Score: 10 } )**
+1. Add a button, and set its **[OnSelect]/power-apps/maker/canvas-apps/controls/properties-core.md)** property to this formula: <br> **UpdateContext( { Name: "Lily", Score: 10 } )**
 
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include]../../includes/footer-banner.md)]

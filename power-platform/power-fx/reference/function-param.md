@@ -28,7 +28,7 @@ Launches a webpage or a canvas app.  The function supports:
 - **Parameters** (optional), named values to pass to the webpage or canvas app.  In a canvas app, parameters can be read with the [**Param**](#param) function.
 - **Target** (optional), the browser tab in which to launch the webpage or canvas app.
 
-**Launch** can only be used in [behavior formulas](../working-with-formulas-in-depth.md).
+**Launch** can only be used in [behavior formulas]/power-apps/maker/canvas-apps/working-with-formulas-in-depth.md).
 
 ### Address
 
@@ -310,7 +310,7 @@ Simple launch examples above to launch canvas app [from web page](#from-a-web-pa
 
 ### Step by Step examples for Launch and Param
 
-The **Product Showcase** tablet layout template was used for the following examples. To create an app with this template, follow the steps from [create an app](../get-started-test-drive.md) article and select the **Product Showcase** template. You can also use your own app.
+The **Product Showcase** tablet layout template was used for the following examples. To create an app with this template, follow the steps from [create an app]/power-apps/maker/canvas-apps/get-started-test-drive.md) article and select the **Product Showcase** template. You can also use your own app.
 
 #### Example - Launch
 
@@ -331,7 +331,7 @@ The **Product Showcase** tablet layout template was used for the following examp
 1. Select label **Surface tablets in news** to launch news search with keywords *Microsoft Surface tablets*.
 
 > [!TIP]
-> For scalability, you can replace the manually entered keywords in Launch function with [variables](../working-with-variables.md).
+> For scalability, you can replace the manually entered keywords in Launch function with [variables]/power-apps/maker/canvas-apps/working-with-variables.md).
 
 #### Example - Param
 
@@ -378,7 +378,7 @@ The **Product Showcase** tablet layout template was used for the following examp
 
 ### See also
 
-[Canvas app formula reference](../formula-reference.md)
+[Canvas app formula reference]/power-apps/maker/canvas-apps/formula-reference.md)
 
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include]../../includes/footer-banner.md)]
