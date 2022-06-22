@@ -6,6 +6,7 @@ ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm-msft
 ms.date: 04/21/2022
+ms.service: powerapps
 ms.subservice: canvas-maker
 ms.author: gregli
 search.audienceType: 
