@@ -321,12 +321,12 @@ Use this app to:
 
 #### DLP Editor v2
 
-DLP Editor v2 is a canvas app that reads and updates data loss prevention (DLP) policies while showing a list of apps and flows that are impacted by the policy configurations.
+DLP Editor v2 is a canvas app that reads and updates data loss prevention (DLP) policies while showing a list of canvas apps and cloud flows that are impacted by the policy configurations.
 
 Use this app to:
 
 - Make changes to DLP policies.
-- See what impact each change will have.
+- See what impact each change will have on existing canvas apps and cloud flows.
 - Mitigate the risk by contacting makers.
 
 More information: [Data Loss Prevention policies](../../admin/wp-data-loss-prevention.md)
