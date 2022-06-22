@@ -335,6 +335,9 @@ More information: [Data Loss Prevention policies](../../admin/wp-data-loss-preve
 
 ![DLP Editor.](media/dlp_new1.png "DLP Editor")
 
+> [!NOTE]
+> This app cannot check for DLP impact in other object types. However you can explore this other offering for assistance with determining DLP impact of Desktop Flows [RPA CLI](https://github.com/rpapostolis/rpa-cli).
+
 ### Set App Permissions
 
 Set App Permissions is a canvas app that an admin can use to discover apps by app name, environment, or owner name, and to change app permissions.
