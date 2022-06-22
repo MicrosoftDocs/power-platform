@@ -82,7 +82,7 @@ For information on Dataverse for Teams environment security roles, see [User acc
 
 ## App-specific security roles 
 
-If you deploy Dynamics 365 apps in your Dataverse environment, such as Dynamics 365 Sales or Dynamics 365 Field Service,  additional security roles get added as a result of deploying these apps. For information about these additional security roles, see the respective apps’ documentation:
+If you deploy Dynamics 365 apps in your environment, such as Dynamics 365 Sales or Dynamics 365 Field Service,  additional security roles get added as a result of deploying these apps. For information about these additional security roles, see the respective apps’ documentation:
 
 |Dynamics 365 app  |Security role docs  |
 |---------|---------|

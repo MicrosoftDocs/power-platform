@@ -25,7 +25,7 @@ Before a secure connection is established, the protocol and cipher are negotiate
 You can use your on-premises/local servers to integrate with the following Dataverse services:
 1. Syncing emails from your Exchange server.
 2. Running Outbound plug-ins.
-3. Running native/local clients to access your Dataverse environments.
+3. Running native/local clients to access your environments.
 
 To comply with our security policy for a secure connection, your server must have the following: 
 

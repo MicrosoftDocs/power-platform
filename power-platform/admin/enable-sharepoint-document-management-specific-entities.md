@@ -46,7 +46,7 @@ Store the documents related to entity records in [!INCLUDE[pn_ms_SharePoint_long
     If you don't want folders automatically created, clear the **Based on entity** check box.  
    
     > [!IMPORTANT]
-    >  If you have customer engagement apps and [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)], make sure the site is under the same [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] tenant as your Dynamics 365 environments.  
+    >  If you have customer engagement apps and [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)], make sure the site is under the same [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] tenant as your environments.  
       
    - Select **Finish**.  
   

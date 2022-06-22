@@ -180,7 +180,7 @@ An administrator can delete all environment role assignments for a user across a
 Add-PowerAppsAccount
 $deleteDsrUserId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
 
-#find all environment role assignments for the user for environments without a Dataverse environment and delete them
+#find all environment role assignments for the user for environments without a Dataverse database and delete them
 Get-AdminEnvironmentRoleAssignment -UserId $deleteDsrUserId | Remove-AdminEnvironmentRoleAssignment
 ```
 
