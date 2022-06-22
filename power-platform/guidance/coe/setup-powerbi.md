@@ -93,6 +93,13 @@ When you see *Unable to open document: The queries were authored with a newer ve
 
 ![Error message: Unable to open document .](media/pbi_error3.PNG "Error message: Unable to open document ")
 
+When you see some sign in issues, you have have issues with your data source settings being cached to the wrong user or tenant. Here are a few examples of what that might look like:
+![Error message: Unable to sign in .](media/pbi-signin-failure1.PNG "Error message: Unable to sign in")
+![Error message: Unable to sign in .](media/pbi-signin-failure2.PNG "Error message: Unable to sign in")
+
+The solution in this case is to clear the permissions by going through Data source settings 
+![Error message: Unable to sign in .](media/pbi-signin-fix1.PNG "Error message: Unable to sign in")
+![Error message: Unable to sign in .](media/pbi-signin-fix2.PNG "Error message: Unable to sign in")
 ### (Optional) Configure embedded apps in the CoE dashboard
 
 The **Production_CoEDashboard_MMMYY.pbit** and **Teams_CoEDashboard_MMMYY.pbit** dashboards can be configured to use embedded apps to enable you to drive action based on insights you find. With the embedded apps, you can grant yourself access to resources, delete apps and flows, and reach out to the maker via email. You'll have to configure the Power Apps visuals in the Power BI dashboard before you can use them.
