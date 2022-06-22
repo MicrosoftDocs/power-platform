@@ -4,7 +4,7 @@ description: Learn about Power Platform environments and how to use them.
 author: jimholtz
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 06/01/2022
+ms.date: 06/22/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -90,7 +90,7 @@ There are multiple types of environments. The type indicates the purpose of the 
 </tr>
 <tr>
 <td width="20%"> Developer</td>
-<td width="50%">  Developer environments are created by users who have the Developer Plan license. They're special environments intended only for use by the owner. Provisioning developer environments can be restricted to admins. Developer environment will be available as long as you actively use the Power Apps Developer Plan. More information: <a href="/powerapps/maker/developer-plan">Power Apps Developer Plan</a></td>
+<td width="50%">  Developer environments are created by users who have the Developer Plan license. They're special environments intended only for use by the owner. Provisioning developer environments can be restricted to admins (see <a href="powerapps-powershell.md#block-trial-licenses-commands">Block trial licenses commands</a>). The developer environment will be available as long as you actively use the Power Apps Developer Plan. More information: <a href="/powerapps/maker/developer-plan">Power Apps Developer Plan</a></td>
 <td width="30%">  The user with the Developer Plan can choose to add other users as makers. </td>
 </tr>
 <tr>
