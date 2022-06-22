@@ -20,6 +20,8 @@ search.app:
   - Flow
 ---
 
+<!-- This topic was created at the request of Lee but appears to be unneeded. I'm leaving this in the folder for now but likely can delete after a while -->
+
 # Disallow duplicate security roles
 
 Power Platform and Microsoft Dataverse allow you to create security roles with duplicate names. This can cause confusion when assigning security roles.
