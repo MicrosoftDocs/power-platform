@@ -33,7 +33,7 @@ You can download bot session or conversation transcripts from the past 30 days i
 
 The download starts when you select the time period. The file is saved to your browser's default download location.
 
-The session transcript is a CSV (comma-separated values) file that contains the following information:
+The session transcript is a comma-separated values (CSV) file that contains the following information:
 
 - **SessionID**: The session's unique identifier
 - **StartDateTime**: The time the session started (by default, sessions are sorted by this column in descending order)
