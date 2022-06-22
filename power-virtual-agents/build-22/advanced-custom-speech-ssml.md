@@ -1,7 +1,7 @@
 ---
 ROBOTS: NOINDEX,NOFOLLOW
 title: Customize speech responses with SSML
-description: Use SSML (Speech Synthesis Markup Language) in speech-specific responses to control how your bot speaks a message.
+description: Use Speech Synthesis Markup Language (SSML) in speech-specific responses to control how your bot speaks a message.
 keywords: PVA, speech, ssml, voice
 ms.date: 05/31/2022
 ms.topic: article
@@ -15,7 +15,7 @@ ms.collection: virtual-agent
 
 [!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
 
-SSML (Speech Synthesis Markup Language) is an XML-based markup language that specifies how text is converted into synthesized speech. It's one of the many ways Power Virtual Agents makes your bot's responses sound like natural speech. You can use SSML in bots that are connected to the [Telephony channel](publication-connect-bot-to-telephony.md).
+Speech Synthesis Markup Language (SSML) is an XML-based markup language that specifies how text is converted into synthesized speech. It's one of the many ways Power Virtual Agents makes your bot's responses sound like natural speech. You can use SSML in bots that are connected to the [Telephony channel](publication-connect-bot-to-telephony.md).
 
 ## Prerequisites
 
