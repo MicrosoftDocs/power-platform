@@ -439,6 +439,4 @@ Other elements include:
 ## Y
 **[Year](reference/function-datetime-parts.md)** – Retrieves the year portion of a date/time value.  
 
-
-
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
