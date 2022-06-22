@@ -225,7 +225,7 @@ See [limitations when using Power Virtual Agents with the Chat Add-in for Dynami
 
 The following extensions are not required to hand-off to Omnichannel, but they provide bot authors with a better experience by providing [additional variables and actions](#voice-based-capabilities).
 
-Normally the extensions are automatically installed in your omnichannel environment. However, if the environment that you connected omnichannel to is not the same environment your bot is in, you'll need to manually install the extensions.
+Typically, the extensions are automatically installed in your omnichannel environment. However, if the environment that you connected omnichannel to is not the same environment your bot is in, you'll need to manually install the extensions.
 
 ### For both text and voice hand-off
 
