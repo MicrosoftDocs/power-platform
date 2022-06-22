@@ -18,7 +18,7 @@ ms.collection: virtual-agent
 
 The purchase of a Power Virtual Agents license includes a specific number of billed sessions. Power Virtual Agents pools this capacity across the entire tenant.
 
-The consumption of the capacity isn't reported at the tenant level. You can view consumption for individual bots, however.
+The consumption of the capacity isn't reported at the tenant level, however, you can view consumption for individual bots.
 
 ## View your bot's billed sessions
 
