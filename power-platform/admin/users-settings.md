@@ -31,7 +31,7 @@ Managing user settings can now be done in the Power Platform admin center. Use t
 
 |Setting  |Description  |
 |---------|---------|
-|Run diagnostics     | Access diagnostics on a user in a Dataverse environment. See [User diagnostics](troubleshooting-user-needs-read-write-access-organization.md#user-diagnostics).        |
+|Run diagnostics     | Access diagnostics on a user in an environment. See [User diagnostics](troubleshooting-user-needs-read-write-access-organization.md#user-diagnostics).        |
 |Manage security roles     | Assign security roles to control a user's access to data through a set of access levels and permissions. See [Assign a security role to a user](assign-security-roles.md).        |
 |Refresh user     | Re-sync the **User** page from Azure Active Directory.        |
 |Change position     | Specify the position that you want to assign a user. See [Hierarchy security to control access](hierarchy-security.md).   |

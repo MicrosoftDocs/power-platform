@@ -48,7 +48,7 @@ All environments of Microsoft Dataverse use [!INCLUDE[pn_MS_SQL_Server](../inclu
   
  The manage keys feature lets you perform the following tasks.  
   
-- Enable the ability to self-manage database encryption keys that are associated with Dataverse environments.  
+- Enable the ability to self-manage database encryption keys that are associated with environments.  
   
 - Generate new encryption keys or upload existing .PFX or .BYOK encryption key files.  
   
