@@ -23,7 +23,7 @@ contributors:
 
 Formulas combine many elements.  Listed below are:
 
-* **Functions** take parameters, perform an operation, and return a value. For example, **Sqrt(25)** returns **5**. Functions are modeled after Microsoft Excel functions.  Some functions have side effects, such as **SubmitForm**, which are appropriate only in a [behavior formula](working-with-formulas-in-depth.md) such as **Button.OnSelect**.
+* **Functions** take parameters, perform an operation, and return a value. For example, **Sqrt(25)** returns **5**. Functions are modeled after Microsoft Excel functions.  Some functions have side effects, such as **SubmitForm**, which are appropriate only in a [behavior formula](/power-apps/maker/canvas-apps/working-with-formulas-in-depth.md) such as **Button.OnSelect**.
 * **Signals** return information about the environment. For example, **[Location](reference/signals.md)** returns the device's current GPS coordinates. Signals don't take parameters or have side effects.
 * **Enumerations** return a pre-defined constant value. For example, **[Color](reference/function-colors.md)** is an enumeration that has pre-defined values for **Color.Red**, **Color.Blue**, and so forth.  Common enumerations are included here; function-specific enumerations are described with the function.
 * **Named operators**, such as **[ThisItem](reference/operators.md#thisitem-thisrecord-and-as-operators)** and **[Self](reference/operators.md#self-and-parent-operators)**, provide access to information from within a container.
@@ -31,7 +31,7 @@ Formulas combine many elements.  Listed below are:
 Other elements include:
 
 * [Operators and identifiers](reference/operators.md)
-* [Controls and their properties](reference-properties.md)
+* [Controls and their properties](/power-apps/maker/canvas-apps/reference-properties.md)
 * [Data types](reference/data-types.md)
 
 ## <a id="-a"></a> A
@@ -43,7 +43,7 @@ Other elements include:
 
 **[Acot](reference/function-trig.md)** – Returns the arccotangent of a number, in radians.
 
-**[AddColumns](reference/function-table-shaping.md)** – Returns a table with [columns](working-with-tables.md#columns) added.
+**[AddColumns](reference/function-table-shaping.md)** – Returns a table with [columns](/power-apps/maker/canvas-apps/working-with-tables.md#columns) added.
 
 **[And](reference/function-logicals.md)** – Boolean logic AND.  Returns **true** if all arguments are **true**.  You can also use the [**&&** operator](reference/operators.md).
 
@@ -75,9 +75,9 @@ Other elements include:
 
 **[Choices](reference/function-choices.md)** – Returns a table of the possible values for a lookup column.
 
-**[Clear](reference/function-clear-collect-clearcollect.md)** – Deletes all data from a [collection](working-with-data-sources.md#collections).
+**[Clear](reference/function-clear-collect-clearcollect.md)** – Deletes all data from a [collection](/power-apps/maker/canvas-apps/working-with-data-sources.md#collections).
 
-**[ClearCollect](reference/function-clear-collect-clearcollect.md)** – Deletes all data from a collection and then adds a set of [records](working-with-tables.md#records).
+**[ClearCollect](reference/function-clear-collect-clearcollect.md)** – Deletes all data from a collection and then adds a set of [records](/power-apps/maker/canvas-apps/working-with-tables.md#records).
 
 **[ClearData](reference/function-savedata-loaddata.md)** – Clears a collection or all collections from an app host such as a local device.
 
@@ -407,7 +407,7 @@ Other elements include:
 
 **[Update](reference/function-update-updateif.md)** – Replaces a record in a data source.
 
-**[UpdateContext](reference/function-updatecontext.md)** – Sets the value of one or more [context variables](working-with-variables.md#use-a-context-variable) of the current screen.
+**[UpdateContext](reference/function-updatecontext.md)** – Sets the value of one or more [context variables](/power-apps/maker/canvas-apps/working-with-variables.md#use-a-context-variable) of the current screen.
 
 **[UpdateIf](reference/function-update-updateif.md)** – Modifies a set of records in a data source based on a condition.
 
