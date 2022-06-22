@@ -192,7 +192,7 @@ See [Web Chat customization](/azure/bot-service/bot-builder-webchat-customizatio
             };  
     ```
 
-1. Change `backgroundColor` to any color you wish, using standard CSS color names, RGB values, or HEX values.
+1. Change `backgroundColor` to any color using standard CSS color names, RGB values, or HEX values.
 
 #### Change the bot's name
 
