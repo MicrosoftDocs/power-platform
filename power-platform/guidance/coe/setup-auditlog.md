@@ -217,7 +217,7 @@ A Power Automate flow uses the custom connector, queries the audit log daily, an
 
 ### Example configurations for environment variables
 
-    Here are some example configurations for these values:
+Here are some example configurations for these values:
 
    | StartTime-Interval | StartTime-Unit | TimeInterval-Interval | TimeInterval-Unit | TimeSegment-CountLimit | Expectation |
    |--------------------|----------------|-----------------------|-------------------|------------------------|-------------|
