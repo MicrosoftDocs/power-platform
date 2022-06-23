@@ -29,7 +29,7 @@ Use the optional *Signout* argument to sign the current user out of Power Apps. 
 
 While authoring the app, calling **Exit** doesn't exit or sign out the user.  However, it stops the evaluation of the rest of the formula.
 
-**Exit** can only be used in [behavior formulas](/power-apps/maker/canvas-apps/working-with-formulas-in-depth.md).
+**Exit** can only be used in [behavior formulas](/power-apps/maker/canvas-apps/working-with-formulas-in-depth).
 
 ## Syntax
 **Exit**( [*Signout*] )

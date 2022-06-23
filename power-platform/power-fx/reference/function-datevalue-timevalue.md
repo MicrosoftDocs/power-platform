@@ -49,7 +49,7 @@ To convert from numeric hour, minute and second components, read [Time](function
 
 For more information, read:
 
-- [Working with date and time](/power-apps/maker/canvas-apps/show-text-dates-times.md).
+- [Working with date and time](/power-apps/maker/canvas-apps/show-text-dates-times).
 - [Date/time and data types](data-types.md#date-time-and-datetime).
 
 ## Syntax
@@ -65,7 +65,7 @@ For more information, read:
 
 ### DateValue
 
-If you type **10/11/2014** into a text-input control named **Startdate**, and then set the [Text](/power-apps/maker/canvas-apps/controls/properties-core.md) property of a label to these formulas:
+If you type **10/11/2014** into a text-input control named **Startdate**, and then set the [Text](/power-apps/maker/canvas-apps/controls/properties-core) property of a label to these formulas:
 
 - Convert a date from a string in the user's locale and show the result as a long date.
 
@@ -98,7 +98,7 @@ If you typed **October 20, 2014** instead:
 
 ### DateTimeValue
 
-If you typed **10/11/2014 1:50:24.765 PM** into a text-input control named **Start**, and then set the [Text](/power-apps/maker/canvas-apps/controls/properties-core.md) property of a label to the following formula:
+If you typed **10/11/2014 1:50:24.765 PM** into a text-input control named **Start**, and then set the [Text](/power-apps/maker/canvas-apps/controls/properties-core) property of a label to the following formula:
 
 - Convert both a date and time string in the current locale.
  
@@ -131,7 +131,7 @@ If you typed **10/11/2014 1:50:24.765 PM** into a text-input control named **Sta
 
 ### TimeValue
 
-Name a text-input control **FinishedAt**, and set the [Text](/power-apps/maker/canvas-apps/controls/properties-core.md) property of a label to this formula:
+Name a text-input control **FinishedAt**, and set the [Text](/power-apps/maker/canvas-apps/controls/properties-core) property of a label to this formula:
 
 ```powerapps-dot
 If( TimeValue( FinishedAt.Text ) < TimeValue( "5:00:00.000 PM" ), 

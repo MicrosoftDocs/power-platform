@@ -35,7 +35,7 @@ Canvas apps support the [data types](data-types.md) that this table lists with d
 | **Date** | String that contains the date in ISO 8601 **yyyy-mm-dd** format. | `"2019-03-31"` |
 | **DateTime** | String that contains an ISO 8601 date/time. Date/time values are in UTC, as the ending "Z" indicates.  | `"2019-03-31T22:32:06.822Z"`  |
 | **GUID** | String that contains the GUID value. Letters are lowercase. | `"751b58ac-380e-4a04-a925-9f375995cc40"`
-| **Image, Media** | If **IncludeBinaryData** is specified, media files are encoded in a string. Web references that use the http: or https: URL scheme aren't modified. References to in-memory binary data are encoded with the ["data:*mimetype*;base64,..."](https://en.wikipedia.org/wiki/Data_URI_scheme) format. In-memory data includes images that users capture by using the [**Camera**](/power-apps/maker/canvas-apps/controls/control-camera.md) control and any other references with the appres: and blob: URL schemes.| `"data:image/jpeg;base64,/9j/4AA..."` |
+| **Image, Media** | If **IncludeBinaryData** is specified, media files are encoded in a string. Web references that use the http: or https: URL scheme aren't modified. References to in-memory binary data are encoded with the ["data:*mimetype*;base64,..."](https://en.wikipedia.org/wiki/Data_URI_scheme) format. In-memory data includes images that users capture by using the [**Camera**](/power-apps/maker/canvas-apps/controls/control-camera) control and any other references with the appres: and blob: URL schemes.| `"data:image/jpeg;base64,/9j/4AA..."` |
 | **Number** | Number that uses the appropriate decimal separator for the user's language. Scientific notation is used if needed. | `1.345` |
 | **Option&nbsp;set** | Numeric value of the choice, not the label that's used for display. The numeric value is used because it's language independent.  | `1001` |
 | **Time** | String that contains an ISO 8601 *hh:mm:ss.fff* format.  | `"23:12:49.000"` |
@@ -56,7 +56,7 @@ Specify the optional *Format* argument to control how readable the result is and
 
 Use the [**ShowColumns** and **DropColumns**](function-table-shaping.md) functions to control which data the result includes and to remove unsupported data types.
 
-Because **JSON** can be both memory and compute intensive, you can use this function only in [behavior functions](/power-apps/maker/canvas-apps/working-with-formulas-in-depth.md). You can capture the result from **JSON** into a [variable](/power-apps/maker/canvas-apps/working-with-variables.md), which you can then use in data flow.
+Because **JSON** can be both memory and compute intensive, you can use this function only in [behavior functions](/power-apps/maker/canvas-apps/working-with-formulas-in-depth.md). You can capture the result from **JSON** into a [variable](/power-apps/maker/canvas-apps/working-with-variables), which you can then use in data flow.
 
 If a column has both a display name and a logical name, the result contains the logical name. Display names reflect the language of the app user and are, therefore, inappropriate for data transfer to a common service.
 
@@ -71,7 +71,7 @@ If a column has both a display name and a logical name, the result contains the 
 
 ### Hierarchical data
 
-1. Insert a [**Button**](/power-apps/maker/canvas-apps/controls/control-button.md) control, and set its **OnSelect** property to this formula.
+1. Insert a [**Button**](/power-apps/maker/canvas-apps/controls/control-button) control, and set its **OnSelect** property to this formula.
 
     ```powerapps-dot
     ClearCollect( CityPopulations,
@@ -107,7 +107,7 @@ If a column has both a display name and a logical name, the result contains the 
 
 1. Select the button while holding down the Alt key.
 
-1. Insert a [**Label**](/power-apps/maker/canvas-apps/controls/control-text-box.md) control, and set its **Text** property to this variable.
+1. Insert a [**Label**](/power-apps/maker/canvas-apps/controls/control-text-box) control, and set its **Text** property to this variable.
 
     ```powerapps-dot
     CitiesByCountryJSON
@@ -175,11 +175,11 @@ If a column has both a display name and a logical name, the result contains the 
 
 ### Images and media in base64
 
-1. Add an [**Image**](/power-apps/maker/canvas-apps/controls/control-image.md) control.
+1. Add an [**Image**](/power-apps/maker/canvas-apps/controls/control-image) control.
 
     This control brings **SampleImage** with it.
 
-1. Add a [**Button**](/power-apps/maker/canvas-apps/controls/control-button.md) control, and set its **OnSelect** property to this formula.
+1. Add a [**Button**](/power-apps/maker/canvas-apps/controls/control-button) control, and set its **OnSelect** property to this formula.
 
     ```powerapps-dot
     Set( ImageJSON, JSON( SampleImage, JSONFormat.IncludeBinaryData ) )

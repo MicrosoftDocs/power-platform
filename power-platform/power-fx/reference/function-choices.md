@@ -23,13 +23,13 @@ Returns a table of the possible values for a lookup column.
 ## Description
 The **Choices** function returns a table of the possible values for a lookup column.  
 
-Use the **Choices** function to provide a list of choices for your user to select from. This function is commonly used with the [**Combo box**](/power-apps/maker/canvas-apps/controls/control-combo-box.md) control in edit forms.
+Use the **Choices** function to provide a list of choices for your user to select from. This function is commonly used with the [**Combo box**](/power-apps/maker/canvas-apps/controls/control-combo-box) control in edit forms.
 
 For a lookup, the table that **Choices** returns matches the foreign table that's associated with the lookup. By using **Choices**, you eliminate the need to add the foreign table as an additional data source. **Choices** returns all columns of the foreign table.
 
 Because **Choices** returns a table, you can use [**Filter**](function-filter-lookup.md), [**Sort**](function-sort.md), [**AddColumns**](function-table-shaping.md), and all the other table-manipulation functions to filter, sort, and shape the table. 
 
-At this time, you can't [delegate](/power-apps/maker/canvas-apps/delegation-overview.md) **Choices**. If this limitation poses a problem in your app, add the foreign table as a data source, and use it directly. 
+At this time, you can't [delegate](/power-apps/maker/canvas-apps/delegation-overview) **Choices**. If this limitation poses a problem in your app, add the foreign table as a data source, and use it directly. 
 
 **Choices** doesn't require column names to be strings and enclosed in double quotes, unlike the [**ShowColumns**](function-table-shaping.md), [**Search**](function-filter-lookup.md), and other table functions. Provide the formula as if you were referencing the column directly.
 
@@ -60,7 +60,7 @@ At this time, you can use lookup columns only with SharePoint and Microsoft Data
 
     For each account, a contact is designated as the primary contact, or the primary contact is *blank*.
 
-1. [Generate an app](/power-apps/maker/canvas-apps/data-platform-create-app.md) from the **Accounts** table.
+1. [Generate an app](/power-apps/maker/canvas-apps/data-platform-create-app) from the **Accounts** table.
 
 1. In the list of screens and controls near the left edge, scroll down until **EditScreen1** appears, and then select **EditForm1** just under it.
 

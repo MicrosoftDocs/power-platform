@@ -58,13 +58,13 @@ The examples in this section use these global variables:
 - **y** = 100
 - **s** = "Hello World"
 
-To create these global variables in an app, insert a [**Button**](/power-apps/maker/canvas-apps/controls/control-button.md) control, and set its **OnSelect** property to this formula:
+To create these global variables in an app, insert a [**Button**](/power-apps/maker/canvas-apps/controls/control-button) control, and set its **OnSelect** property to this formula:
 
 ```powerapps-dot
 Set( a, false ); Set( b, true ); Set( x, 10 ); Set( y, 100 ); Set( s, "Hello World" )
 ```
 
-Select the button (by clicking it while you hold down the Alt key), and then set the **Text** property of a [**Label**](/power-apps/maker/canvas-apps/controls/control-text-box.md) control to a formula in the first column of the next table.
+Select the button (by clicking it while you hold down the Alt key), and then set the **Text** property of a [**Label**](/power-apps/maker/canvas-apps/controls/control-text-box) control to a formula in the first column of the next table.
 
 | Formula | Description | Result |
 |---------|-------------|--------|

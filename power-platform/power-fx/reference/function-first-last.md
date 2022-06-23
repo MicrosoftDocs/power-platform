@@ -17,10 +17,10 @@ contributors:
   - tapanm-msft
 ---
 # First, FirstN, Index, Last, and LastN functions in Power Apps
-Returns the first, last, or a specific [record](/power-apps/maker/canvas-apps/working-with-tables.md#records), or a set of first or last records, from a table.
+Returns the first, last, or a specific [record](/power-apps/maker/canvas-apps/working-with-tables#records), or a set of first or last records, from a table.
 
 ## Description
-The **First** function returns the first record of a [table](/power-apps/maker/canvas-apps/working-with-tables.md).
+The **First** function returns the first record of a [table](/power-apps/maker/canvas-apps/working-with-tables).
 
 The **FirstN** function returns the first set of records of a table; the second argument specifies the number of records to return.
 
@@ -54,7 +54,7 @@ For example, when used with a data source containing a large table with 1 millio
 
 ## Examples
 
-For the following examples, we'll use the **IceCream** [data source](/power-apps/maker/canvas-apps/working-with-data-sources.md), which contains the data in this table:
+For the following examples, we'll use the **IceCream** [data source](/power-apps/maker/canvas-apps/working-with-data-sources), which contains the data in this table:
 
 :::image type="content" source="media/function-first-last/icecream.png" alt-text="IceCream example.":::
 

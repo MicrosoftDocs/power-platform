@@ -18,10 +18,10 @@ contributors:
   - tapanm-msft
 ---
 # GroupBy and Ungroup functions in Power Apps
-Groups and ungroups [records](/power-apps/maker/canvas-apps/working-with-tables.md#records) of a [table](/power-apps/maker/canvas-apps/working-with-tables.md).
+Groups and ungroups [records](/power-apps/maker/canvas-apps/working-with-tables.md#records) of a [table](/power-apps/maker/canvas-apps/working-with-tables).
 
 ## Description
-The **GroupBy** function returns a table with records grouped together based on the values in one or more [columns](/power-apps/maker/canvas-apps/working-with-tables.md#columns). Records in the same group are placed into a single record, with a column added that holds a nested table of the remaining columns.   
+The **GroupBy** function returns a table with records grouped together based on the values in one or more [columns](/power-apps/maker/canvas-apps/working-with-tables#columns). Records in the same group are placed into a single record, with a column added that holds a nested table of the remaining columns.   
 
 The **Ungroup** function reverses the **GroupBy** process. This function returns a table, breaking into separate records any records that were grouped together.
 
@@ -39,7 +39,7 @@ You can also aggregate results based on a grouping:
 
 **Ungroup** tries to preserve the original order of the records that were fed to **GroupBy**.  This isn't always possible (for example, if the original table contains *blank* records).
 
-A table is a value in Power Apps, just like a string or a number. You can specify a table as an argument for a function, and a function can return a table. **GroupBy** and **Ungroup** don't modify a table; instead they take a table as an argument and return a different table. See [working with tables](/power-apps/maker/canvas-apps/working-with-tables.md) for more details.
+A table is a value in Power Apps, just like a string or a number. You can specify a table as an argument for a function, and a function can return a table. **GroupBy** and **Ungroup** don't modify a table; instead they take a table as an argument and return a different table. See [working with tables](/power-apps/maker/canvas-apps/working-with-tables) for more details.
 
 ## Syntax
 **GroupBy**( *Table*, *ColumnName1* [, *ColumnName2*, ... ], *GroupColumnName* )
@@ -61,8 +61,8 @@ A table is a value in Power Apps, just like a string or a number. You can specif
 
 ## Examples
 ### Create a collection
-1. Add a button, and set its **[Text](/power-apps/maker/canvas-apps/controls/properties-core.md)** property so that the button shows **Original**.
-2. Set the **[OnSelect](/power-apps/maker/canvas-apps/controls/properties-core.md)** property of the **Original** button to this formula:
+1. Add a button, and set its **[Text](/power-apps/maker/canvas-apps/controls/properties-core)** property so that the button shows **Original**.
+2. Set the **[OnSelect](/power-apps/maker/canvas-apps/controls/properties-core)** property of the **Original** button to this formula:
 
 ```powerapps-dot   
 ClearCollect( CityPopulations, 
@@ -80,17 +80,17 @@ ClearCollect( CityPopulations,
 
 3. While holding down the Alt key, select the **Original** button.
    
-    You just created a [collection](/power-apps/maker/canvas-apps/working-with-data-sources.md#collections), named **CityPopulations**, that contains this data:
+    You just created a [collection](/power-apps/maker/canvas-apps/working-with-data-sources#collections), named **CityPopulations**, that contains this data:
    
-    You just created a [collection](/power-apps/maker/canvas-apps/working-with-data-sources.md#collections), named **CityPopulations**, that contains this data:
+    You just created a [collection](/power-apps/maker/canvas-apps/working-with-data-sources#collections), named **CityPopulations**, that contains this data:
     ![CityPopulations example.](media/function-groupby/cities.png)
 4. To display this collection, select **Collections** on the **File** menu and then select the **CityPopulations** collection.  The first five records in the collection appear:
    
     ![CityPopulations collection.](media/function-groupby/citypopulations-collection.png)
 
 ### Group records
-1. Add another button, and set its **[Text](/power-apps/maker/canvas-apps/controls/properties-core.md)** property to **"Group"**.
-2. Set the **[OnSelect](/power-apps/maker/canvas-apps/controls/properties-core.md)** property of this button to this formula:
+1. Add another button, and set its **[Text](/power-apps/maker/canvas-apps/controls/properties-core)** property to **"Group"**.
+2. Set the **[OnSelect](/power-apps/maker/canvas-apps/controls/properties-core)** property of this button to this formula:
    
     **ClearCollect( CitiesByCountry, GroupBy( CityPopulations, "Country", "Cities" ) )**
 3. While holding down the Alt key, select the **Group** button.
@@ -106,8 +106,8 @@ ClearCollect( CityPopulations,
     ![Population - Germany.](media/function-groupby/population-germany.png)
 
 ### Filter and ungroup records
-1. Add another button, and set its **[Text](/power-apps/maker/canvas-apps/controls/properties-core.md)** property so that the button shows **"Filter"**.
-2. Set the **[OnSelect](/power-apps/maker/canvas-apps/controls/properties-core.md)** property of this button to this formula:
+1. Add another button, and set its **[Text](/power-apps/maker/canvas-apps/controls/properties-core)** property so that the button shows **"Filter"**.
+2. Set the **[OnSelect](/power-apps/maker/canvas-apps/controls/properties-core)** property of this button to this formula:
    
     **ClearCollect( CitiesByCountryFiltered, Filter( CitiesByCountry, "e" in Country ) )**
 3. While holding down the Alt key, select the button that you added.
@@ -115,8 +115,8 @@ ClearCollect( CityPopulations,
     You just created a third collection, named **CitiesByCountryFiltered**, that includes only those countries that have an "e" in their names (that is, not Spain or Italy).
    
     ![CitiesByCountryFiltered.](media/function-groupby/cities-grouped-hase.png)
-4. Add one more button, and set its **[Text](/power-apps/maker/canvas-apps/controls/properties-core.md)** property so that the button shows **"Ungroup"**.
-5. Set the **[OnSelect](/power-apps/maker/canvas-apps/controls/properties-core.md)** property of this button to this formula:
+4. Add one more button, and set its **[Text](/power-apps/maker/canvas-apps/controls/properties-core)** property so that the button shows **"Ungroup"**.
+5. Set the **[OnSelect](/power-apps/maker/canvas-apps/controls/properties-core)** property of this button to this formula:
    
     **ClearCollect( CityPopulationsUngrouped, Ungroup( CitiesByCountryFiltered, "Cities" ) )**
    
@@ -127,8 +127,8 @@ ClearCollect( CityPopulations,
 ### Aggregate results
 Something else we can do with a grouped table is to aggregate the results.  In this example, we will sum the population of the major cities in each country.
 
-1. Add another button, and set its **[Text](/power-apps/maker/canvas-apps/controls/properties-core.md)** property so that the button shows **"Sum"**.
-2. Set the **[OnSelect](/power-apps/maker/canvas-apps/controls/properties-core.md)** property of the **"Sum"** button to this formula:
+1. Add another button, and set its **[Text](/power-apps/maker/canvas-apps/controls/properties-core)** property so that the button shows **"Sum"**.
+2. Set the **[OnSelect](/power-apps/maker/canvas-apps/controls/properties-core)** property of the **"Sum"** button to this formula:
    
     **ClearCollect( CityPopulationsSum, AddColumns( CitiesByCountry, "Sum of City Populations", Sum( Cities, Population ) ) )**
    
@@ -140,8 +140,8 @@ Something else we can do with a grouped table is to aggregate the results.  In t
 
     Now that we have the sum that we want, we can use **[DropColumns](function-table-shaping.md)** to remove the sub tables.
   
-3. Add another button, and set its **[Text](/power-apps/maker/canvas-apps/controls/properties-core.md)** property so that the button shows **"SumOnly"**.
-4. Set the **[OnSelect](/power-apps/maker/canvas-apps/controls/properties-core.md)** property of the **"SumOnly"** button to this formula:
+3. Add another button, and set its **[Text](/power-apps/maker/canvas-apps/controls/properties-core)** property so that the button shows **"SumOnly"**.
+4. Set the **[OnSelect](/power-apps/maker/canvas-apps/controls/properties-core)** property of the **"SumOnly"** button to this formula:
 
     **ClearCollect( CityPopulationsSumOnly, DropColumns( CityPopulationsSum, "Cities" ) )**
    

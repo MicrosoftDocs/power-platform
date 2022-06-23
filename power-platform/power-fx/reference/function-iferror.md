@@ -24,8 +24,8 @@ contributors:
 Detects errors and provides an alternative value or takes action.  Create a custom error or pass through an error.
 
 > [!NOTE]
-> - Error, IfError, IsError, and IsBlankOrError functions are part of an experimental feature and are subject to change. More information: [Understand experimental, preview, and deprecated features in Power Apps](/power-apps/maker/canvas-apps/working-with-experimental-preview.md).
-> - The behavior that this article describes is available only when the *Formula-level error management* experimental feature in [Settings > Upcoming features > Experimental](/power-apps/maker/canvas-apps/working-with-experimental-preview.md#controlling-which-features-are-enabled) is turned on (off by default).
+> - Error, IfError, IsError, and IsBlankOrError functions are part of an experimental feature and are subject to change. More information: [Understand experimental, preview, and deprecated features in Power Apps](/power-apps/maker/canvas-apps/working-with-experimental-preview).
+> - The behavior that this article describes is available only when the *Formula-level error management* experimental feature in [Settings > Upcoming features > Experimental](/power-apps/maker/canvas-apps/working-with-experimental-preview#controlling-which-features-are-enabled) is turned on (off by default).
 > - Your feedback is very valuable to us - please let us know what you think in the [Power Apps community forums](https://powerusers.microsoft.com/t5/Expressions-and-Formulas/bd-p/How-To).
 
 ## IfError
@@ -42,7 +42,7 @@ This formula returns `0` if the value of `x` is zero, as `1/x` will produce an e
 
 ### Stopping further processing
 
-When [chaining](operators.md) formulas together in [behavior formulas](/power-apps/maker/canvas-apps/working-with-formulas-in-depth.md), such as:
+When [chaining](operators.md) formulas together in [behavior formulas](/power-apps/maker/canvas-apps/working-with-formulas-in-depth), such as:
 
 ```powerapps-dot
 Patch( DS1, ... );
@@ -121,13 +121,13 @@ Error records include:
 | **Observed** | Text string | Location in where the error is surfaced to the user, used for reporting.  For example, for a formula bound to a control property, this will be in the form *ControlName.PropertyName*.  |
 | **Details** | Record | Details about the error.  At present, details are provided only for network errors.  This record includes **HttpStatusCode** whcih contains the HTTP status code and **HttpResponse** which contains the body of the response from the connector or service. |
 
-For example, consider the following formula as a [**Button**](/power-apps/maker/canvas-apps/controls/control-button.md) control's **OnSelect** property:
+For example, consider the following formula as a [**Button**](/power-apps/maker/canvas-apps/controls/control-button) control's **OnSelect** property:
 
 ```powerapps-dot
 Set( a, 1/0 )
 ```
 
-And this formula on the **OnSelect** property of a second [**Button**](/power-apps/maker/canvas-apps/controls/control-button.md) control:
+And this formula on the **OnSelect** property of a second [**Button**](/power-apps/maker/canvas-apps/controls/control-button) control:
 
 ```powerapps-dot
 IfError( a, Notify( "Internal error: originated on " & FirstError.Source & ", surfaced on " & FirstError.Observed ) )
@@ -242,9 +242,9 @@ Error( Filter( AllErrors, Kind <> ErrorKind.Div0 ) )
 
 ### Step by step
 
-1. Add a **[Text input](/power-apps/maker/canvas-apps/controls/control-text-input.md)** control, and name it **TextInput1** if it doesn't have that name by default.
+1. Add a **[Text input](/power-apps/maker/canvas-apps/controls/control-text-input)** control, and name it **TextInput1** if it doesn't have that name by default.
 
-1. Add a **[Label](/power-apps/maker/canvas-apps/controls/control-text-box.md)** control, and name it **Label1** if it doesn't have that name by default.
+1. Add a **[Label](/power-apps/maker/canvas-apps/controls/control-text-box)** control, and name it **Label1** if it doesn't have that name by default.
 
 1. Set the formula for **Label1**'s **Text** property to:
 
@@ -262,7 +262,7 @@ Error( Filter( AllErrors, Kind <> ErrorKind.Div0 ) )
 
 ### See also
 
-[Formula reference for Power Apps](/power-apps/maker/canvas-apps/formula-reference.md)
+[Formula reference for Power Apps](/power-apps/maker/canvas-apps/formula-reference)
 
 
 [!INCLUDE[footer-include]../../includes/footer-banner.md)]

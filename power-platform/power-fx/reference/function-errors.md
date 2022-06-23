@@ -18,17 +18,17 @@ contributors:
   - tapanm-msft
 ---
 # Errors function in Power Apps
-Provides error information for previous changes to a [data source](/power-apps/maker/canvas-apps/working-with-data-sources.md).
+Provides error information for previous changes to a [data source](/power-apps/maker/canvas-apps/working-with-data-sources).
 
 ## Overview
-Errors can happen when a [record](/power-apps/maker/canvas-apps/working-with-tables.md#records) of a data source is changed.  Many causes are possible, including network outages, inadequate permissions, and edit conflicts.  
+Errors can happen when a [record](/power-apps/maker/canvas-apps/working-with-tables#records) of a data source is changed.  Many causes are possible, including network outages, inadequate permissions, and edit conflicts.  
 
 The **[Patch](function-patch.md)** function and other data functions don't directly return errors. Instead they return the result of their operation. After a data function executes, you can use the **Errors** function to obtain the details of any errors.  You can check for the existence of errors with the **[IsEmpty]** function in the formula **IsEmpty( Errors ( ... ) )**.
 
-You can avoid some errors before they happen by using the **[Validate](function-validate.md)** and **[DataSourceInfo](function-datasourceinfo.md)** functions.  See [working with data sources](/power-apps/maker/canvas-apps/working-with-data-sources.md) for more suggestions on how to work with and avoid errors.
+You can avoid some errors before they happen by using the **[Validate](function-validate.md)** and **[DataSourceInfo](function-datasourceinfo.md)** functions.  See [working with data sources](/power-apps/maker/canvas-apps/working-with-data-sources) for more suggestions on how to work with and avoid errors.
 
 ## Description
-The **Errors** function returns a [table](/power-apps/maker/canvas-apps/working-with-tables.md) of errors that contains the following [columns](/power-apps/maker/canvas-apps/working-with-tables.md#columns):
+The **Errors** function returns a [table](/power-apps/maker/canvas-apps/working-with-tables.md) of errors that contains the following [columns](/power-apps/maker/canvas-apps/working-with-tables#columns):
 
 * **Record**.  The record in the data source that had the error.  If the error occurred during the creation of a record, this column will be *blank*.
 * **Column**.  The column that caused the error, if the error can be attributed to a single column. If not, this will be *blank*.
@@ -69,7 +69,7 @@ For this example, we'll be working with the **IceCream** data source:
 
 ![Ice Cream.](media/function-errors/icecream.png "Ice Cream")
 
-Through the app, a user loads the Chocolate record into a data-entry form and then changes the value of **Quantity** to 90.  The record to be worked with is placed in the [context variable](/power-apps/maker/canvas-apps/working-with-variables.md#use-a-context-variable) **EditRecord**:
+Through the app, a user loads the Chocolate record into a data-entry form and then changes the value of **Quantity** to 90.  The record to be worked with is placed in the [context variable](/power-apps/maker/canvas-apps/working-with-variables#use-a-context-variable) **EditRecord**:
 
 * **UpdateContext( { EditRecord: First( Filter( IceCream, Flavor = "Chocolate" ) ) } )**
 
@@ -91,14 +91,14 @@ which returns **false**, because the **Errors** function returned the following 
 
 You can place a label on the form to show this error to the user.
 
-* To show the error, set the label's **[Text](/power-apps/maker/canvas-apps/controls/properties-core.md)** property to this formula:<br>
+* To show the error, set the label's **[Text](/power-apps/maker/canvas-apps/controls/properties-core)** property to this formula:<br>
   **Label.Text = First(Errors( IceCream, EditRecord )).Message**
 
 You can also add a **Reload** button on the form, so that the user can efficiently resolve the conflict.
 
-* To show the button only when a conflict has occurred, set the button's **[Visible](/power-apps/maker/canvas-apps/controls/properties-core.md)** property to this formula:<br>
+* To show the button only when a conflict has occurred, set the button's **[Visible](/power-apps/maker/canvas-apps/controls/properties-core)** property to this formula:<br>
     **!IsEmpty( Lookup( Errors( IceCream, EditRecord ), Error = ErrorKind.Conflict ) )**
-* To revert the change which the user selects the button, set its **[OnSelect](/power-apps/maker/canvas-apps/controls/properties-core.md)** property to this formula:<br>
+* To revert the change which the user selects the button, set its **[OnSelect](/power-apps/maker/canvas-apps/controls/properties-core)** property to this formula:<br>
     **ReloadButton.OnSelect = Revert( IceCream, EditRecord )**
 
 

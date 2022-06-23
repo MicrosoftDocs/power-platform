@@ -19,7 +19,7 @@ contributors:
 ---
 # ForAll function in Power Apps
 
-Calculates values and performs actions for all the [records](/power-apps/maker/canvas-apps/working-with-tables.md#records) in a [table](/power-apps/maker/canvas-apps/working-with-tables.md).
+Calculates values and performs actions for all the [records](/power-apps/maker/canvas-apps/working-with-tables.md#records) in a [table](/power-apps/maker/canvas-apps/working-with-tables).
 
 ## Description
 
@@ -64,7 +64,7 @@ Another consideration is that **ForAll** is not delegable while other functions 
 ## Examples
 
 ### Calculations
-The following examples use the **Squares** [data source](/power-apps/maker/canvas-apps/working-with-data-sources.md):
+The following examples use the **Squares** [data source](/power-apps/maker/canvas-apps/working-with-data-sources):
 
 ![Example of squares.](media/function-forall/squares.png)
 
@@ -78,7 +78,7 @@ To create this data source as a collection, set the **OnSelect** property of a *
 | **ForAll(&nbsp;Squares, Power(&nbsp;Value,&nbsp;3&nbsp;)&nbsp;)** |For all the records of the input table, raises the **Value** column to the third power.  The **Power** function does not support single-column tables. Therefore, **ForAll** must be used in this case. | ![Example of Power.](media/function-forall/power3.png) |
 
 ### Using a connection
-The following examples use the **Expressions** [data source](/power-apps/maker/canvas-apps/working-with-data-sources.md):
+The following examples use the **Expressions** [data source](/power-apps/maker/canvas-apps/working-with-data-sources):
 
 ![Example of expressions.](media/function-forall/translate.png)
 
@@ -86,7 +86,7 @@ To create this data source as a collection, set the **OnSelect** property of a *
 
 `ClearCollect( Expressions, [ "Hello", "Good morning", "Thank you", "Goodbye" ] )`
 
-This example also uses a [Microsoft Translator](/power-apps/maker/canvas-apps/connections/connection-microsoft-translator.md) connection.  To add this connection to your app, see the article about how to [manage connections](/power-apps/maker/canvas-apps/add-manage-connections.md).
+This example also uses a [Microsoft Translator](/power-apps/maker/canvas-apps/connections/connection-microsoft-translator.md) connection.  To add this connection to your app, see the article about how to [manage connections](/power-apps/maker/canvas-apps/add-manage-connections).
 
 | Formula | Description | Result |
 | --- | --- | --- |
@@ -104,7 +104,7 @@ But before you make that copy, think carefully if it is needed.  Many situations
 * Making a copy can consume much of the computer memory, network bandwidth, and/or time.  
 * For most data sources, copying cannot be delegated, limiting how much data can be moved.      
 
-The following examples use the **Products** [data source](/power-apps/maker/canvas-apps/working-with-data-sources.md):
+The following examples use the **Products** [data source](/power-apps/maker/canvas-apps/working-with-data-sources):
 
 ![Example of products data source.](media/function-forall/prod.png)
 
@@ -142,7 +142,7 @@ ShowColumns(
 )
 ```
 
-A [record scope](/power-apps/maker/canvas-apps/working-with-tables.md#record-scope) is created by the **Filter** and **AddColumns** functions to perform the comparison and subtraction operations, respectively, with the **'Quantity Requested'** and **'Quantity Available'** fields of each record.
+A [record scope](/power-apps/maker/canvas-apps/working-with-tables#record-scope) is created by the **Filter** and **AddColumns** functions to perform the comparison and subtraction operations, respectively, with the **'Quantity Requested'** and **'Quantity Available'** fields of each record.
 
 In this example, the **Filter** function can be delegated.  This is important, as it can find all the products that meet the criteria, even if that is only a few records out of a table of millions.  At this time, **ShowColumns** and **AddColumns** cannot be delegated, so the actual number of products that need to be ordered will be limited.  If you know the size of this result will always be relatively small, this approach is fine.
 
@@ -222,6 +222,6 @@ Note that we are not capturing the result of the **ForAll**.  The **Collect** fu
 
 ### Map table in a component
 
-See [Map tables](/power-apps/maker/canvas-apps/map-component-input-fields.md#map-tables).
+See [Map tables](/power-apps/maker/canvas-apps/map-component-input-fields#map-tables).
 
 [!INCLUDE[footer-include]../../includes/footer-banner.md)]

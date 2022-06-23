@@ -27,7 +27,7 @@ The **StartsWith** function tests whether one text string begins with another.
 
 For both functions, the tests are case insensitive.  The return value of both is a Boolean **true** or **false**.  
 
-Use **EndsWith** and **StartsWith** with the **[Filter](function-filter-lookup.md)** function to search the data within your app. You can also use the **[in](operators.md#in-and-exactin-operators)** operator or the **[Search](function-filter-lookup.md)** function to look anywhere within text strings, not just at the beginning or end.  Your choice of functions will depend on the needs of your app and which function can be [delegated](/power-apps/maker/canvas-apps/delegation-overview.md) for your particular data source.  If one of these functions can't be delegated, a delegation warning will appear at authoring time to warn you of this limitation.
+Use **EndsWith** and **StartsWith** with the **[Filter](function-filter-lookup.md)** function to search the data within your app. You can also use the **[in](operators.md#in-and-exactin-operators)** operator or the **[Search](function-filter-lookup.md)** function to look anywhere within text strings, not just at the beginning or end.  Your choice of functions will depend on the needs of your app and which function can be [delegated](/power-apps/maker/canvas-apps/delegation-overview) for your particular data source.  If one of these functions can't be delegated, a delegation warning will appear at authoring time to warn you of this limitation.
 
 ## Syntax
 **EndsWith**( *Text*, *EndText* )
@@ -63,11 +63,11 @@ The examples in the rest of this topic show the results of searching a **Custome
 
 ![Example of Customers list.](media/function-startswith/customers.png)
 
-To create this data source as a collection, create a **[Button](/power-apps/maker/canvas-apps/controls/control-button.md)** control and set its **OnSelect** property to this formula:
+To create this data source as a collection, create a **[Button](/power-apps/maker/canvas-apps/controls/control-button)** control and set its **OnSelect** property to this formula:
 
 **ClearCollect( Customers, Table( { Name: "Fred Garcia", Company: "Northwind Traders" }, { Name: "Cole Miller", Company: "Contoso" }, { Name: "Glenda Johnson", Company: "Contoso" }, { Name: "Mike Collins", Company: "Adventure Works" }, { Name: "Colleen Jones", Company: "Adventure Works" } ) )**
 
-As in this example, you can show a list of records in a [**Gallery control**](/power-apps/maker/canvas-apps/controls/control-gallery.md) at the bottom of a screen. Near the top of the screen, you can add a [**Text input**](/power-apps/maker/canvas-apps/controls/control-text-input.md) control, named **SearchInput**, so that users can specify which records interest them.
+As in this example, you can show a list of records in a [**Gallery control**](/power-apps/maker/canvas-apps/controls/control-gallery.md) at the bottom of a screen. Near the top of the screen, you can add a [**Text input**](/power-apps/maker/canvas-apps/controls/control-text-input) control, named **SearchInput**, so that users can specify which records interest them.
 
 ![Customers gallery.](media/function-startswith/customers-ux-unfiltered.png)
 

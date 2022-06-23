@@ -25,7 +25,7 @@ Relate and unrelate records of two tables through a one-to-many or many-to-many 
 
 The **Relate** function links two records through a one-to-many or many-to-many relationship in Microsoft Dataverse. The **Unrelate** function reverses the process and removes the link.
 
-For one-to-many relationships, the Many table has a foreign-key field that points to a record of the One table. **Relate** sets this field to point to a specific record of the One table, while **Unrelate** sets this field to *blank*. If the field is already set when **Relate** is called, the existing link is lost in favor of the new link. You can also set this field by using the [**Patch**](function-patch.md) function or an **[Edit form](/power-apps/maker/canvas-apps/controls/control-form-detail.md)** control; you need not use the **Relate** function.
+For one-to-many relationships, the Many table has a foreign-key field that points to a record of the One table. **Relate** sets this field to point to a specific record of the One table, while **Unrelate** sets this field to *blank*. If the field is already set when **Relate** is called, the existing link is lost in favor of the new link. You can also set this field by using the [**Patch**](function-patch.md) function or an **[Edit form](/power-apps/maker/canvas-apps/controls/control-form-detail)** control; you need not use the **Relate** function.
 
 For many-to-many relationships, the system that links the records maintains a hidden join table. You can't access this join table directly; it can be read only through a one-to-many projection and set through the **Relate** and **Unrelate** functions. Neither related table has a foreign key.
 
@@ -33,7 +33,7 @@ The data for the table that you specify in the first argument will be refreshed 
 
 These functions never create or delete a record. They only relate or unrelate two records that already exist.
 
-You can use these functions only in [behavior formulas](/power-apps/maker/canvas-apps/working-with-formulas-in-depth.md).
+You can use these functions only in [behavior formulas](/power-apps/maker/canvas-apps/working-with-formulas-in-depth).
 
 > [!NOTE]
 > These functions are part of a preview feature, and their behavior is available only when the **Relational data, option sets, and other new features for CDS** feature is enabled. This is an app-level setting that's enabled by default for new apps. To find this feature switch, select **Settings**, and then select **Upcoming features**. Your feedback is very valuable to us - please let us know what you think in the [Power Apps community forums](https://powerusers.microsoft.com/t5/Expressions-and-Formulas/bd-p/How-To).
@@ -52,7 +52,7 @@ You can use these functions only in [behavior formulas](/power-apps/maker/canvas
 
 ## Examples
 
-Consider a **Products** table with the following relationships as seen in the [Power Apps portal's table viewer](/power-apps/maker/data-platform/create-edit-entities-portal.md):
+Consider a **Products** table with the following relationships as seen in the [Power Apps portal's table viewer](/power-apps/maker/data-platform/create-edit-entities-portal):
 
 | Relationship display name | Related table | Relationship type |
 | --- | --- |
@@ -87,7 +87,7 @@ or:
 
 The walk through that follows does exactly these operations on these tables using an app with **Gallery** and **Combo box** controls for selecting the records involved.
 
-These examples depend on the sample data being installed in your environment. Either [create a trial environment including sample data](/power-apps/maker/model-driven-apps/overview-model-driven-samples.md#get-sample-apps) or [add sample data to an existing environment](/power-apps/maker/model-driven-apps/overview-model-driven-samples.md#install-or-uninstall-sample-data).
+These examples depend on the sample data being installed in your environment. Either [create a trial environment including sample data](/power-apps/maker/model-driven-apps/overview-model-driven-samples.md#get-sample-apps) or [add sample data to an existing environment](/power-apps/maker/model-driven-apps/overview-model-driven-samples#install-or-uninstall-sample-data).
 
 ### One-to-many
 
@@ -95,14 +95,14 @@ These examples depend on the sample data being installed in your environment. Ei
 
 You'll first create a simple app to view and reassign the reservations that are associated with a product.
 
-1. Create a [tablet app from blank](/power-apps/maker/canvas-apps/data-platform-create-app-scratch.md).
+1. Create a [tablet app from blank](/power-apps/maker/canvas-apps/data-platform-create-app-scratch).
 
 1. On the **View** tab, select **Data sources**.
 
 1. In the **Data** pane, select **Add data** > select **Products**. <br>
     The Products table is part of the sample data loaded above.
 
-1. On the **Insert** tab, add a blank vertical **[Gallery](/power-apps/maker/canvas-apps/controls/control-gallery.md)** control.
+1. On the **Insert** tab, add a blank vertical **[Gallery](/power-apps/maker/canvas-apps/controls/control-gallery)** control.
 
 1. Ensure that the control that you just added is named **Gallery1**, and then move and resize it to fill the left-hand side of the screen.
 
@@ -130,7 +130,7 @@ You'll first create a simple app to view and reassign the reservations that are 
 
     ![Configure Gallery2 Layout.](media/function-relate-unrelate/reservations-gallery-right.png)
 
-1. In **Gallery2**, add a **[Combo box](/power-apps/maker/canvas-apps/controls/control-combo-box.md)** control, ensure that it's named **ComboBox1**, and then move and resize it to avoid blocking the other controls in **Gallery2**.
+1. In **Gallery2**, add a **[Combo box](/power-apps/maker/canvas-apps/controls/control-combo-box)** control, ensure that it's named **ComboBox1**, and then move and resize it to avoid blocking the other controls in **Gallery2**.
 
 1. On the **Properties** tab, set **ComboBox1**'s **Items** property to **Products**.
 

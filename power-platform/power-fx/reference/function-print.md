@@ -73,7 +73,7 @@ An easy way to get started is to use a screen template to size your print to the
 
 ### Screen sizes for common prints 
 
-To build out a print for a specific size, you can build a [responsive app](/power-apps/maker/canvas-apps/build-responsive-apps.md), or create a special screen to manage your print.
+To build out a print for a specific size, you can build a [responsive app](/power-apps/maker/canvas-apps/build-responsive-apps), or create a special screen to manage your print.
 
 |Print size|Screen height|Screen width|
 |----------|----------------|---------|
@@ -92,4 +92,4 @@ To build out a print for a specific size, you can build a [responsive app](/powe
 
 ### See also
 
-[Canvas app formula reference](/power-apps/maker/canvas-apps/formula-reference.md)
+[Canvas app formula reference](/power-apps/maker/canvas-apps/formula-reference)

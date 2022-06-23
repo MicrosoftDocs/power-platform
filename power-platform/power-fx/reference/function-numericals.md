@@ -33,7 +33,7 @@ The **Log** function returns the logarithm of its first argument in the base spe
 
 The **Sqrt** function returns the number that, when multiplied by itself, equals its argument.
 
-If you pass a single number, the return value is a single result based on the function called.  If you pass a single-column [table](/power-apps/maker/canvas-apps/working-with-tables.md) that contains numbers, the return value is a single-column table of results, one result for each record in the argument's table. If you have a multi-column table, you can shape it into a single-column table, as [working with tables](/power-apps/maker/canvas-apps/working-with-tables.md) describes.  
+If you pass a single number, the return value is a single result based on the function called.  If you pass a single-column [table](/power-apps/maker/canvas-apps/working-with-tables.md) that contains numbers, the return value is a single-column table of results, one result for each record in the argument's table. If you have a multi-column table, you can shape it into a single-column table, as [working with tables](/power-apps/maker/canvas-apps/working-with-tables) describes.  
 
 If an argument would result in an undefined valued, the result is *blank*.  This can happen, for example, with square roots and logarithms of negative numbers.
 
@@ -70,7 +70,7 @@ If an argument would result in an undefined valued, the result is *blank*.  This
 | **Sqrt( 9 )** |Returns the number that, when multiplied by itself, results in 9. |3 |
 
 ### Single-column table
-The examples in this section use a [data source](/power-apps/maker/canvas-apps/working-with-data-sources.md) that's named **ValueTable** and that contains this data:
+The examples in this section use a [data source](/power-apps/maker/canvas-apps/working-with-data-sources) that's named **ValueTable** and that contains this data:
 
 ![Table example.](media/function-numericals/values.png)
 
@@ -82,8 +82,8 @@ The examples in this section use a [data source](/power-apps/maker/canvas-apps/w
 | **Sqrt(&nbsp;ValueTable&nbsp;)** |Returns the square root of each number in the table |![Sqrt.](media/function-numericals/values-sqrt.png) |
 
 ### Step-by-step example
-1. Add a **[Text input](/power-apps/maker/canvas-apps/controls/control-text-input.md)** control, and name it **Source**.
-2. Add a **Label** control, and set its **[Text](/power-apps/maker/canvas-apps/controls/properties-core.md)** property to this formula:
+1. Add a **[Text input](/power-apps/maker/canvas-apps/controls/control-text-input)** control, and name it **Source**.
+2. Add a **Label** control, and set its **[Text](/power-apps/maker/canvas-apps/controls/properties-core)** property to this formula:
    <br>
    **Sqrt( Value( Source.Text ) )**
 3. Type a number into **Source**, and confirm that the **Label** control shows the square root of the number that you typed.

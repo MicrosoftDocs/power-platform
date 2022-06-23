@@ -18,12 +18,12 @@ contributors:
   - tapanm-msft
 ---
 # Refresh function in Power Apps
-Refreshes the [records](/power-apps/maker/canvas-apps/working-with-tables.md#records) of a [data source](/power-apps/maker/canvas-apps/working-with-data-sources.md).
+Refreshes the [records](/power-apps/maker/canvas-apps/working-with-tables.md#records) of a [data source](/power-apps/maker/canvas-apps/working-with-data-sources).
 
 ## Description
 The **Refresh** function retrieves a fresh copy of a data source.  You'll see changes that other users made.
 
-**Refresh** has no return value, and you can use it only in [behavior formulas](/power-apps/maker/canvas-apps/working-with-formulas-in-depth.md).
+**Refresh** has no return value, and you can use it only in [behavior formulas](/power-apps/maker/canvas-apps/working-with-formulas-in-depth).
 
 ## Syntax
 **Refresh**( *DataSource* )

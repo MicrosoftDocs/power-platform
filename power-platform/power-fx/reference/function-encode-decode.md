@@ -40,13 +40,13 @@ The return value from these functions is the encoded or decoded string. This fun
 * *String* - Required. String from which HTML and XML tags will be stripped.
 
 ## Examples
-If you show an RSS feed in a text gallery and then set the **[Text](/power-apps/maker/canvas-apps/controls/properties-core.md)** property of a label in that gallery to **ThisItem.description**, the label might show raw HTML or XML code as in this example:
+If you show an RSS feed in a text gallery and then set the **[Text](/power-apps/maker/canvas-apps/controls/properties-core)** property of a label in that gallery to **ThisItem.description**, the label might show raw HTML or XML code as in this example:
 
 ```html
     <p>We have done an unusually&nbsp;&quot;deep&quot; globalization and localization.</p>
 ```
 
-If you set the **[Text](/power-apps/maker/canvas-apps/controls/properties-core.md)** property of the label to **PlainText(ThisItem.description)**, the text appears as in this example:
+If you set the **[Text](/power-apps/maker/canvas-apps/controls/properties-core)** property of the label to **PlainText(ThisItem.description)**, the text appears as in this example:
 
 ```
     We have done an unusually "deep" globalization and localization.

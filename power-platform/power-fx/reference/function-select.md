@@ -23,7 +23,7 @@ Simulates a select action on a control, causing the **OnSelect** formula to be e
 ## Description
 The **Select** function simulates a select action on a control as if the user had clicked or tapped the control. As a result, the **OnSelect** formula on the target control is evaluated.
 
-Use **Select** to propagate a select action to a parent control. This type of propagation is the default behavior in, for example, galleries. By default, the **OnSelect** property of any control in a **[Gallery](/power-apps/maker/canvas-apps/controls/control-gallery.md)** control is set to **Select( Parent )**. That way, you can set the value of the **OnSelect** property of the gallery control itself, and that formula will be evaluated regardless of where in the gallery a user might click or tap.
+Use **Select** to propagate a select action to a parent control. This type of propagation is the default behavior in, for example, galleries. By default, the **OnSelect** property of any control in a **[Gallery](/power-apps/maker/canvas-apps/controls/control-gallery)** control is set to **Select( Parent )**. That way, you can set the value of the **OnSelect** property of the gallery control itself, and that formula will be evaluated regardless of where in the gallery a user might click or tap.
 
 If you want one or more controls in the gallery to perform different actions from the gallery itself, set the **OnSelect** property for those controls to something other than the default value. You can leave the default values for the **OnSelect** properties of most controls in the gallery if you want them to perform the same action as the gallery itself.
 
@@ -33,7 +33,7 @@ You can't use **Select** across screens.
 
 You can use **Select** only with controls that have an **OnSelect** property.
 
-You can use **Select** only in [behavior formulas](/power-apps/maker/canvas-apps/working-with-formulas-in-depth.md).
+You can use **Select** only in [behavior formulas](/power-apps/maker/canvas-apps/working-with-formulas-in-depth).
 
 A control can't **Select** itself directly or indirectly through other controls.
 
@@ -70,7 +70,7 @@ The select function can also be used with a gallery. For example, it can be used
 
 #### Basic usage
 
-1. Add a **[Button](/power-apps/maker/canvas-apps/controls/control-button.md)** control, and rename it **Button1** if it has a different name.
+1. Add a **[Button](/power-apps/maker/canvas-apps/controls/control-button)** control, and rename it **Button1** if it has a different name.
 
 1. Set the **OnSelect** property of **Button1** to this formula:
 
@@ -88,7 +88,7 @@ The select function can also be used with a gallery. For example, it can be used
 
 #### Gallery control
 
-1. Add a vertical **[Gallery](/power-apps/maker/canvas-apps/controls/control-gallery.md)** control that contains other controls.
+1. Add a vertical **[Gallery](/power-apps/maker/canvas-apps/controls/control-gallery)** control that contains other controls.
 
     ![Select a vertical gallery that contains controls.](media/function-select/select-gallery.png)
 

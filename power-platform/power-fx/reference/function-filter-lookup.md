@@ -17,7 +17,7 @@ contributors:
   - tapanm-msft
 ---
 # Filter, Search, and LookUp functions in Power Apps
-Finds one or more [records](/power-apps/maker/canvas-apps/working-with-tables.md#records) in a [table](/power-apps/maker/canvas-apps/working-with-tables.md).
+Finds one or more [records](/power-apps/maker/canvas-apps/working-with-tables.md#records) in a [table](/power-apps/maker/canvas-apps/working-with-tables).
 
 Watch this video to learn how to use Filter, Search and LookUp functions:
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWLj3m]
@@ -35,7 +35,7 @@ The **Search** function finds records in a table that contain a string in one of
 
 **Filter** and **Search** return a table that contains the same columns as the original table and the records that match the criteria. **LookUp** returns only the first record found, after applying a formula to reduce the record to a single value. If no records are found, **Filter** and **Search** return an [empty](function-isblank-isempty.md) table, and **LookUp** returns *blank*.  
 
-[Tables](/power-apps/maker/canvas-apps/working-with-tables.md) are a value in Power Apps, just like a string or number. They can be passed to and returned from functions.  **Filter**, **Search**, and **LookUp** don't modify a table. Instead, they take a table as an argument and return a table, a record, or a single value from it. See [working with tables](/power-apps/maker/canvas-apps/working-with-tables.md) for more details.
+[Tables](/power-apps/maker/canvas-apps/working-with-tables.md) are a value in Power Apps, just like a string or number. They can be passed to and returned from functions.  **Filter**, **Search**, and **LookUp** don't modify a table. Instead, they take a table as an argument and return a table, a record, or a single value from it. See [working with tables](/power-apps/maker/canvas-apps/working-with-tables) for more details.
 
 [!INCLUDE [delegation]../../includes/delegation.md)]
 
@@ -63,7 +63,7 @@ The **Search** function finds records in a table that contain a string in one of
 
 ## Examples
 
-The following examples use the **IceCream** [data source](/power-apps/maker/canvas-apps/working-with-data-sources.md):
+The following examples use the **IceCream** [data source](/power-apps/maker/canvas-apps/working-with-data-sources):
 
 ![Ice cream data source.](media/function-filter-lookup/icecream.png "Ice cream data source")
 
@@ -111,7 +111,7 @@ The following example uses the **Account** table in Microsoft Dataverse as data 
 
 ### Search user experience
 
-The following examples use the **IceCream** [data source](/power-apps/maker/canvas-apps/working-with-data-sources.md):
+The following examples use the **IceCream** [data source](/power-apps/maker/canvas-apps/working-with-data-sources):
 
 In many apps, you can type one or more characters into a search box to filter a list of records in a large data set. As you type, the list shows only those records that match the search criteria.
 
@@ -119,11 +119,11 @@ The examples in the rest of this topic show the results of searching a list, nam
 
 ![Search on customers.](media/function-filter-lookup/customers.png "Search on customers")
 
-To create this data source as a collection, create a **[Button](/power-apps/maker/canvas-apps/controls/control-button.md)** control and set its **OnSelect** property to this formula:
+To create this data source as a collection, create a **[Button](/power-apps/maker/canvas-apps/controls/control-button)** control and set its **OnSelect** property to this formula:
 
 **ClearCollect(Customers, Table({ Name: "Fred Garcia", Company: "Northwind Traders" }, { Name: "Cole Miller", Company: "Contoso" }, { Name: "Glenda Johnson", Company: "Contoso" }, { Name: "Mike Collins", Company: "Adventure Works" }, { Name: "Colleen Jones", Company: "Adventure Works" }) )**
 
-As in this example, you can show a list of records in a [**Gallery control**](/power-apps/maker/canvas-apps/controls/control-gallery.md) at the bottom of a screen. Near the top of the screen, you can add a [**Text input**](/power-apps/maker/canvas-apps/controls/control-text-input.md) control, named **SearchInput**, so that users can specify which records interest them.
+As in this example, you can show a list of records in a [**Gallery control**](/power-apps/maker/canvas-apps/controls/control-gallery.md) at the bottom of a screen. Near the top of the screen, you can add a [**Text input**](/power-apps/maker/canvas-apps/controls/control-text-input) control, named **SearchInput**, so that users can specify which records interest them.
 
 ![Search using search input.](media/function-filter-lookup/customers-ux-unfiltered.png "Search using search input")
 
