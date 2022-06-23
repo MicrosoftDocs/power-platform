@@ -18,16 +18,16 @@ contributors:
   - tapanm-msft
 ---
 # Defaults function in Power Apps
-Returns the default values for a [data source]/power-apps/maker/canvas-apps/working-with-data-sources.md).  
+Returns the default values for a [data source](/power-apps/maker/canvas-apps/working-with-data-sources.md).  
 
 ## Description
 Use the **Defaults** function to pre-populate a data entry form, making it easier to fill.
 
-This function returns a [record]/power-apps/maker/canvas-apps/working-with-tables.md#records) that contains the default values for the data source.  If a [column]/power-apps/maker/canvas-apps/working-with-tables.md#columns) within the data source doesn't have a default value, that property won't be present.
+This function returns a [record](/power-apps/maker/canvas-apps/working-with-tables.md#records) that contains the default values for the data source.  If a [column](/power-apps/maker/canvas-apps/working-with-tables.md#columns) within the data source doesn't have a default value, that property won't be present.
 
-Data sources vary in how much default information they provide, including not providing any at all.  When you work with a [collection]/power-apps/maker/canvas-apps/working-with-data-sources.md#collections) or another data source that doesn't support default values, the **Defaults** function will return an [empty](function-isblank-isempty.md) record.
+Data sources vary in how much default information they provide, including not providing any at all.  When you work with a [collection](/power-apps/maker/canvas-apps/working-with-data-sources.md#collections) or another data source that doesn't support default values, the **Defaults** function will return an [empty](function-isblank-isempty.md) record.
 
-You can combine the **Defaults** function with the **[Patch](function-patch.md)** function to [create a record]/power-apps/maker/canvas-apps/working-with-data-sources.md).
+You can combine the **Defaults** function with the **[Patch](function-patch.md)** function to [create a record](/power-apps/maker/canvas-apps/working-with-data-sources.md).
 
 ## Syntax
 **Defaults**( *DataSource* )

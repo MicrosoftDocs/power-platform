@@ -52,7 +52,7 @@ Decimal places cannot be specified with **Trunc** as it can with Microsoft Excel
 
 ## Single-column tables
 
-These functions support single-column tables.  If you pass a single number, the return value is the rounded version of that number.  If you pass a single-column [table]/power-apps/maker/canvas-apps/working-with-tables.md) that contains numbers, the return value is a single-column table of rounded numbers.  The *DecimalPlaces* parameter can be a single value or a single-column table.  If the single-column table has less values that the *Number*, zero is used for the remaining values.  Use [**ShowColumns**](function-table-shaping.md) and other table shaping functions to extract a single-column table from a larger table.  
+These functions support single-column tables.  If you pass a single number, the return value is the rounded version of that number.  If you pass a single-column [table](/power-apps/maker/canvas-apps/working-with-tables.md) that contains numbers, the return value is a single-column table of rounded numbers.  The *DecimalPlaces* parameter can be a single value or a single-column table.  If the single-column table has less values that the *Number*, zero is used for the remaining values.  Use [**ShowColumns**](function-table-shaping.md) and other table shaping functions to extract a single-column table from a larger table.  
 
 ## Syntax
 

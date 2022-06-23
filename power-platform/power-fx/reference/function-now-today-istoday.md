@@ -34,9 +34,9 @@ The **IsToday** function tests whether a date/time value is between midnight tod
 > [!NOTE]
 > - **UTCNow**, **UTCToday**, and **IsUTCToday** are only available in Microsoft Dataverse for Teams formula columns, and only for time-independent fields and values.
 > - **Now**, **Today**, and **IsToday** are not available in Dataverse for Teams formula columns as evaluations are done without the knowledge of the current user's local time zone.
-> <br> More information: [Work with formula table columns in Dataverse for Teams]/power-apps/teams/formula-columns.md)
+> <br> More information: [Work with formula table columns in Dataverse for Teams](/power-apps/teams/formula-columns.md)
 
-See [Date, Time, and DateTime in the data types documentation](data-types.md#date-time-and-datetime) and [working with dates and times]/power-apps/maker/canvas-apps/show-text-dates-times.md) for more information.
+See [Date, Time, and DateTime in the data types documentation](data-types.md#date-time-and-datetime) and [working with dates and times](/power-apps/maker/canvas-apps/show-text-dates-times.md) for more information.
 
 ## Volatile Functions
 **Now**, **Today**, **UTCNow**, and **UTCToday** are volatile functions. These functions return a different value for each evaluation.
@@ -47,7 +47,7 @@ For example, a label control with **Label1.Text = Now()** will not change while 
 
 The function will be reevaluated if it is part of a formula in which something else has changed.  For example, if we change our example to involve a slider control with **Label1.Text = DateAdd( Now(), Slider1.Value, Minutes )** then the current time is retrieved each time the Slider control's value changes and the label's text property is reevaluated.
 
-When used in a [behavior formula]/power-apps/maker/canvas-apps/working-with-formulas-in-depth.md), volatile functions will be evaluated each time the behavior formula is evaluated.  See below for an example.
+When used in a [behavior formula](/power-apps/maker/canvas-apps/working-with-formulas-in-depth.md), volatile functions will be evaluated each time the behavior formula is evaluated.  See below for an example.
 
 ## Syntax
 
@@ -91,7 +91,7 @@ For the examples in this section, the current time is **8:58 PM** on **July 11, 
 
 #### Display a clock that updates in real time
 
-1. Add a **[Timer]/power-apps/maker/canvas-apps/controls/control-timer.md)** control, set its **Duration** property to **1000**, and set its **Repeat** property to **true**.
+1. Add a **[Timer](/power-apps/maker/canvas-apps/controls/control-timer.md)** control, set its **Duration** property to **1000**, and set its **Repeat** property to **true**.
 
     The timer will run for one second, automatically start over, and continue that pattern. 
 
@@ -103,7 +103,7 @@ For the examples in this section, the current time is **8:58 PM** on **July 11, 
 
 	![A screen containing a timer control with the formula OnTimerEnd = Set(CurrentTime, Now()).](media/function-now-today-istoday/now-set-currenttime.png)
 
-1. Add a **[Label]/power-apps/maker/canvas-apps/controls/control-text-box.md)** control, and set its **Text** property to this formula:
+1. Add a **[Label](/power-apps/maker/canvas-apps/controls/control-text-box.md)** control, and set its **Text** property to this formula:
 
     **Text( CurrentTime, LongTime24 )**
 
@@ -121,7 +121,7 @@ For the examples in this section, the current time is **8:58 PM** on **July 11, 
 
     The timer is invisible and starts automatically.
 
-1. Set the screen's **[OnStart]/power-apps/maker/canvas-apps/controls/control-screen.md)** property so that the **CurrentTime** variable has a valid value, as in this example:
+1. Set the screen's **[OnStart](/power-apps/maker/canvas-apps/controls/control-screen.md)** property so that the **CurrentTime** variable has a valid value, as in this example:
 
     **Set(CurrentTime, Now())**
 

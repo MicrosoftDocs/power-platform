@@ -26,7 +26,7 @@ The **Text** function formats a number or a date/time value based on one of thes
 * A predefined date/time format, which you specify by using the **DateTimeFormat** enumeration. For dates and times, this approach is preferred as it automatically adjusts to each user's language and region.
 * A custom format, which comprises a string of placeholders that define, for example, whether numbers show a decimal separator and dates show the full name of the month, the month as an abbreviation, or the month as a number. Power Apps supports a subset of the placeholders that Microsoft Excel does. In this string, the language placeholder specifies the language in which to interpret the other placeholders. If the custom format includes a period, for example, the language-format placeholder specifies whether the period is a decimal separator (ja-JP) or a thousands separator (es-ES).
 
-See [working with dates and times]/power-apps/maker/canvas-apps/show-text-dates-times.md) for more information.
+See [working with dates and times](/power-apps/maker/canvas-apps/show-text-dates-times.md) for more information.
 
 The **Text** function can also convert any data type to a text representation using a default format. Use this to pass non-text values to text-based functions such as [**Len**](function-len.md), [**Right**](function-left-mid-right.md), and [**IsMatch**](function-ismatch.md).
 

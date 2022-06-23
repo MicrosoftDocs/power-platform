@@ -38,11 +38,11 @@ An appropriate color and icon are used depending on the type of the message.   T
 
 Messages are shown both when authoring your app and when end users are using your app.
 
-**Notify** can only be used in [behavior formulas]/power-apps/maker/canvas-apps/working-with-formulas-in-depth.md).
+**Notify** can only be used in [behavior formulas](/power-apps/maker/canvas-apps/working-with-formulas-in-depth.md).
 
 **Notify** can be paired with the [**IfError**](function-iferror.md) function to detect and report errors with a custom error message.
 
-Power Apps can also send push notifications using an entirely different mechanism from **Notify**.  For more information see [Send a notification in Power Apps]/power-apps/maker/canvas-apps/add-notifications.md).
+Power Apps can also send push notifications using an entirely different mechanism from **Notify**.  For more information see [Send a notification in Power Apps](/power-apps/maker/canvas-apps/add-notifications.md).
 
 **Notify** always returns *true*.
 

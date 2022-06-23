@@ -20,10 +20,10 @@ contributors:
 
 # RequestHide function in Power Apps
 
-Hides the [SharePoint form]/power-apps/maker/canvas-apps/sharepoint-form-integration.md#understand-the-sharepointintegration-control).
+Hides the [SharePoint form](/power-apps/maker/canvas-apps/sharepoint-form-integration.md#understand-the-sharepointintegration-control).
 
 >[!NOTE]
-> Only works with [SharePoint forms]/power-apps/maker/canvas-apps/sharepoint-form-integration.md).
+> Only works with [SharePoint forms](/power-apps/maker/canvas-apps/sharepoint-form-integration.md).
 
 ## Description
 

@@ -25,7 +25,7 @@ The **Replace** function identifies the text to replace by starting position and
 
 The **Substitute** function identifies the text to replace by matching a string. If more than one match is found, you can replace all of them or specify one to replace.
 
-If you pass a single string, the return value is the modified string. If you pass a single-column [table]/power-apps/maker/canvas-apps/working-with-tables.md) that contains strings, the return value is a single-column table of modified strings. If you have a multi-column table, you can shape it into a single-column table, as [working with tables]/power-apps/maker/canvas-apps/working-with-tables.md) describes.
+If you pass a single string, the return value is the modified string. If you pass a single-column [table](/power-apps/maker/canvas-apps/working-with-tables.md) that contains strings, the return value is a single-column table of modified strings. If you have a multi-column table, you can shape it into a single-column table, as [working with tables](/power-apps/maker/canvas-apps/working-with-tables.md) describes.
 
 ## Syntax
 **Replace**( *String*, *StartingPosition*, *NumberOfCharacters*, *NewString* )

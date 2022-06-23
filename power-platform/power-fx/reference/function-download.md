@@ -32,7 +32,7 @@ When used on the web, **Download** is dependent on the browser's settings to det
 
 Only on Windows, **Download** returns the location where the file was stored locally as a text string.
 
-**Download** can only be used in [behavior formulas]/power-apps/maker/canvas-apps/working-with-formulas-in-depth.md).
+**Download** can only be used in [behavior formulas](/power-apps/maker/canvas-apps/working-with-formulas-in-depth.md).
 
 ## Syntax
 
@@ -56,7 +56,7 @@ When run in most web browsers, a new tab will be opened to display the PDF file 
 
 ### Step by Step
 
-The **Product Showcase** tablet layout template was used for the following example. To create an app with this template, follow the steps from [create an app]/power-apps/maker/canvas-apps/get-started-test-drive.md) article and select the **Product Showcase** template. You can also use your own app.
+The **Product Showcase** tablet layout template was used for the following example. To create an app with this template, follow the steps from [create an app](/power-apps/maker/canvas-apps/get-started-test-drive.md) article and select the **Product Showcase** template. You can also use your own app.
 
 1. Go to [Power Apps](https://make.powerapps.com).
 1. Select **Apps** from left navigation pane.
@@ -79,7 +79,7 @@ The **Product Showcase** tablet layout template was used for the following examp
 
 ### See also
 
-[Canvas app formula reference]/power-apps/maker/canvas-apps/formula-reference.md)
+[Canvas app formula reference](/power-apps/maker/canvas-apps/formula-reference.md)
 
 
 [!INCLUDE[footer-include]../../includes/footer-banner.md)]

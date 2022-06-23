@@ -46,7 +46,7 @@ The function will be reevaluated if it's part of a formula in which something el
 
 **TextInput1.Text & " " & GUID()**
 
-When used in a [behavior formula]/power-apps/maker/canvas-apps/working-with-formulas-in-depth.md), **GUID** will be evaluated each time the formula is evaluated. For more information, see the examples later in this topic.
+When used in a [behavior formula](/power-apps/maker/canvas-apps/working-with-formulas-in-depth.md), **GUID** will be evaluated each time the formula is evaluated. For more information, see the examples later in this topic.
 
 ## Syntax
 **GUID**( [ *GUIDString* ] )
@@ -85,7 +85,7 @@ The **Label** control will show **f9168c5e-ceb2-4faa-b6bf-329bf39fa1e4**.
 
 #### Create a table of GUIDs
 
-1. Set the **[OnSelect]/power-apps/maker/canvas-apps/controls/properties-core.md)** property of a **[Button]/power-apps/maker/canvas-apps/controls/control-button.md)** control to this formula:
+1. Set the **[OnSelect](/power-apps/maker/canvas-apps/controls/properties-core.md)** property of a **[Button](/power-apps/maker/canvas-apps/controls/control-button.md)** control to this formula:
 
     ```powerapps-dot
     ClearCollect( NewGUIDs, ForAll( Sequence(5), GUID() ) )
@@ -93,7 +93,7 @@ The **Label** control will show **f9168c5e-ceb2-4faa-b6bf-329bf39fa1e4**.
 
     This formula creates a single-column table that's used to iterate five times, resulting in five GUIDs.
 
-1. Add a **[Data table]/power-apps/maker/canvas-apps/controls/control-data-table.md)** control, set its **Items** property to **NewGUIDs**, and show the **Value** field.
+1. Add a **[Data table](/power-apps/maker/canvas-apps/controls/control-data-table.md)** control, set its **Items** property to **NewGUIDs**, and show the **Value** field.
 
 1. While holding down the Alt key, select the button by clicking or tapping it.
 

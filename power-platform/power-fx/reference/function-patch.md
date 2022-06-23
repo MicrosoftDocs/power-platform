@@ -19,21 +19,21 @@ contributors:
 ---
 # Patch function in Power Apps
 
-Modifies or creates one or more [records]/power-apps/maker/canvas-apps/working-with-tables.md#records) in a [data source]/power-apps/maker/canvas-apps/working-with-data-sources.md), or merges records outside of a data source.
+Modifies or creates one or more [records](/power-apps/maker/canvas-apps/working-with-tables.md#records) in a [data source](/power-apps/maker/canvas-apps/working-with-data-sources.md), or merges records outside of a data source.
 
 Use the **Patch** function to modify records in complex situations, such as when you do updates that require no user interaction or use forms that span multiple screens.
 
-To update records in a data source more easily for simple changes, use the **Edit form** control instead. When you add an **Edit form** control, you provide users with a form to fill in and then save the changes to a data source. For more information, see [Understand data forms]/power-apps/maker/canvas-apps/working-with-forms.md).
+To update records in a data source more easily for simple changes, use the **Edit form** control instead. When you add an **Edit form** control, you provide users with a form to fill in and then save the changes to a data source. For more information, see [Understand data forms](/power-apps/maker/canvas-apps/working-with-forms.md).
 
 Watch this video to learn how to use the Patch function:
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWLgbF]
 
 ## Overview
-Use the **Patch** function to modify one or more records of a data source.  The values of specific [fields]/power-apps/maker/canvas-apps/working-with-tables.md#elements-of-a-table) are modified without affecting other properties. For example, this formula changes the phone number for a customer named Contoso:
+Use the **Patch** function to modify one or more records of a data source.  The values of specific [fields](/power-apps/maker/canvas-apps/working-with-tables.md#elements-of-a-table) are modified without affecting other properties. For example, this formula changes the phone number for a customer named Contoso:
 
 `Patch( Customers, First( Filter( Customers, Name = "Contoso" ) ), { Phone: "1-212-555-1234" } )`
 
-Use **Patch** with the **[Defaults](function-defaults.md)** function to create records. Use this behavior to build a [single screen]/power-apps/maker/canvas-apps/working-with-data-sources.md) for both creating and editing records. For example, this formula creates a record for a customer named Contoso:
+Use **Patch** with the **[Defaults](function-defaults.md)** function to create records. Use this behavior to build a [single screen](/power-apps/maker/canvas-apps/working-with-data-sources.md) for both creating and editing records. For example, this formula creates a record for a customer named Contoso:
 
 `Patch( Customers, Defaults( Customers ), { Name: "Contoso" } )`
 
@@ -45,7 +45,7 @@ Even if you're not working with a data source, you can use **Patch** to merge tw
 ### Modify or create a record in a data source
 To use this function with a data source, specify the data source, and then specify a base record:
 
-* To modify a record, the base record needs to have come from a data source.  The base record may have come through a gallery's **[Items]/power-apps/maker/canvas-apps/controls/properties-core.md)** property, been placed in a [context variable]/power-apps/maker/canvas-apps/working-with-variables.md#use-a-context-variable), or come through some other path. But, you can trace the base record back to the data source.  This is important as the record will include additional information to help find the record again for modification.  
+* To modify a record, the base record needs to have come from a data source.  The base record may have come through a gallery's **[Items](/power-apps/maker/canvas-apps/controls/properties-core.md)** property, been placed in a [context variable](/power-apps/maker/canvas-apps/working-with-variables.md#use-a-context-variable), or come through some other path. But, you can trace the base record back to the data source.  This is important as the record will include additional information to help find the record again for modification.  
 * To create a record, use the **[Defaults](function-defaults.md)** function to create a base record with default values.  
 
 Then specify one or more change records, each of which contains new property values that override property values in the base record. Change records are processed in order from the beginning of the argument list to the end, with later property values overriding earlier ones.
@@ -58,7 +58,7 @@ For example, you use `Set(MyAccount, Patch(Accounts, First(Account), 'Account Na
 LookUp(Accounts, Account = MyAccount.Account).'Primary Contact'.'Full Name'
 ```
 
-When you update a data source, one or more issues may arise. Use the **[Errors](function-errors.md)** function to identify and examine issues, as [Working with Data Sources]/power-apps/maker/canvas-apps/working-with-data-sources.md) describes.
+When you update a data source, one or more issues may arise. Use the **[Errors](function-errors.md)** function to identify and examine issues, as [Working with Data Sources](/power-apps/maker/canvas-apps/working-with-data-sources.md) describes.
 
 Related functions include the **[Update](function-update-updateif.md)** function to replace an entire record, and the **[Collect](function-clear-collect-clearcollect.md)** function to create a record.  Use the **[UpdateIf](function-update-updateif.md)** function to modify specific properties of multiple records based on a condition.
 
@@ -100,7 +100,7 @@ Specify two or more records that you want to merge. Records are processed in the
 
 ## Examples
 #### Modify or create a record (in a data source)
-In these examples, you'll modify or create a record in a data source, named **IceCream**, that contains the data in this [table]/power-apps/maker/canvas-apps/working-with-tables.md) and automatically generates the values in the **ID** [column]/power-apps/maker/canvas-apps/working-with-tables.md#columns):
+In these examples, you'll modify or create a record in a data source, named **IceCream**, that contains the data in this [table](/power-apps/maker/canvas-apps/working-with-tables.md) and automatically generates the values in the **ID** [column](/power-apps/maker/canvas-apps/working-with-tables.md#columns):
 
 ![Example icecream.](media/function-patch/icecream.png "Example icecream")
 

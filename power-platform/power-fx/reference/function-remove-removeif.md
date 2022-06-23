@@ -18,18 +18,18 @@ contributors:
   - tapanm-msft
 ---
 # Remove and RemoveIf functions in Power Apps
-Removes [records]/power-apps/maker/canvas-apps/working-with-tables.md#records) from a [data source]/power-apps/maker/canvas-apps/working-with-data-sources.md).
+Removes [records](/power-apps/maker/canvas-apps/working-with-tables.md#records) from a [data source](/power-apps/maker/canvas-apps/working-with-data-sources.md).
 
 ## Description
 ### Remove function
 Use the **Remove** function to remove a specific record or records from a data source.  
 
-For [collections]/power-apps/maker/canvas-apps/working-with-data-sources.md#collections), the entire record must match. You can use the **All** argument to remove all copies of a record; otherwise, only one copy of the record is removed.
+For [collections](/power-apps/maker/canvas-apps/working-with-data-sources.md#collections), the entire record must match. You can use the **All** argument to remove all copies of a record; otherwise, only one copy of the record is removed.
 
 ### RemoveIf function
-Use the **RemoveIf** function to remove a record or records based on a condition or a set of conditions. Each condition can be any formula that results in a **true** or **false** and can reference [columns]/power-apps/maker/canvas-apps/working-with-tables.md#columns) of the data source by name. Each condition is evaluated individually for each record, and the record is removed if all conditions evaluate to **true**.
+Use the **RemoveIf** function to remove a record or records based on a condition or a set of conditions. Each condition can be any formula that results in a **true** or **false** and can reference [columns](/power-apps/maker/canvas-apps/working-with-tables.md#columns) of the data source by name. Each condition is evaluated individually for each record, and the record is removed if all conditions evaluate to **true**.
 
-**Remove** and **RemoveIf** return the modified data source as a [table]/power-apps/maker/canvas-apps/working-with-tables.md). You can use both functions only in [behavior formulas]/power-apps/maker/canvas-apps/working-with-formulas-in-depth.md).
+**Remove** and **RemoveIf** return the modified data source as a [table](/power-apps/maker/canvas-apps/working-with-tables.md). You can use both functions only in [behavior formulas](/power-apps/maker/canvas-apps/working-with-formulas-in-depth.md).
 
 You can also use the **[Clear](function-clear-collect-clearcollect.md)** function to remove all of the records in a collection.
 
@@ -64,7 +64,7 @@ In these examples, you'll remove a record or records in a data source that's nam
 
 To create a collection with this data:
 
-1. Insert a [**Button**]/power-apps/maker/canvas-apps/controls/control-button.md) control.
+1. Insert a [**Button**](/power-apps/maker/canvas-apps/controls/control-button.md) control.
 1. Set button control's **OnSelect** property to the below formula:
 
     ```powerapps-dot
@@ -74,7 +74,7 @@ To create a collection with this data:
                   { ID: 3, Flavor: "Strawberry", Quantity: 300 }
     )
     ```
-1. Select the button [while holding down the Alt key]/power-apps/maker/canvas-apps/keyboard-shortcuts.md#alternate-behavior):
+1. Select the button [while holding down the Alt key](/power-apps/maker/canvas-apps/keyboard-shortcuts.md#alternate-behavior):
 
 
 #### Remove sample records from collection using a formula
@@ -89,7 +89,7 @@ To create a collection with this data:
 
 ## Examples - remove button outside a gallery
 
-In this example, you'll use a [**Gallery** control]/power-apps/maker/canvas-apps/controls/control-gallery.md) to list the records in a table. And then use the **Remove** function to selectively remove an item.  
+In this example, you'll use a [**Gallery** control](/power-apps/maker/canvas-apps/controls/control-gallery.md) to list the records in a table. And then use the **Remove** function to selectively remove an item.  
 
 ### Prepare for sample data
 
@@ -99,7 +99,7 @@ This example uses the **Contacts** table in Microsoft Dataverse available with t
 
 In this example, you'll remove an item by using a *button* that is outside the gallery.
 
-1. Create a [new blank canvas app]/power-apps/maker/canvas-apps/data-platform-create-app-scratch.md) using a Phone layout.
+1. Create a [new blank canvas app](/power-apps/maker/canvas-apps/data-platform-create-app-scratch.md) using a Phone layout.
 
     ![A blank canvas app using the phone layout.](media/function-remove-removeif/gallery-new.png)
 
@@ -119,7 +119,7 @@ In this example, you'll remove an item by using a *button* that is outside the g
 
     ![Gallery added showing the Contacts table.](media/function-remove-removeif/gallery-data.png)
 
-1. Insert a [**Button**]/power-apps/maker/canvas-apps/controls/control-button.md) control from left pane:
+1. Insert a [**Button**](/power-apps/maker/canvas-apps/controls/control-button.md) control from left pane:
     
     ![Using the Insert tool pane to add a button control.](media/function-remove-removeif/gallery-addbutton.png)
 
@@ -158,7 +158,7 @@ In this example, you'll remove an item by using a *button* that is outside the g
 1. Close the app preview.
 
     > [!TIP]
-    > You can also use alternate behavior with [*Alt key*]/power-apps/maker/canvas-apps/keyboard-shortcuts.md#alternate-behavior) instead of using the app preview with *Play* button or *F5*.
+    > You can also use alternate behavior with [*Alt key*](/power-apps/maker/canvas-apps/keyboard-shortcuts.md#alternate-behavior) instead of using the app preview with *Play* button or *F5*.
 
 ## Examples - trash can icon inside a gallery
 
@@ -168,7 +168,7 @@ In this example, you'll remove an item by using an *icon* placed inside the gall
 
 If you already have [prepared sample data](#prepare-for-sample-data), skip this step and move to [Trash can icon inside a gallery](#trash-can-icon-inside-a-gallery).
 
-1. Add a [**Button**]/power-apps/maker/canvas-apps/controls/control-button.md) control to your screen.
+1. Add a [**Button**](/power-apps/maker/canvas-apps/controls/control-button.md) control to your screen.
 1. Set the **OnSelect** property to the following formula:
 
     ```powerapps-dot
@@ -182,13 +182,13 @@ If you already have [prepared sample data](#prepare-for-sample-data), skip this 
           { 'Full Name': "Rene Valdes (sample)",       'Primary Email': "someone_g@example.com" } 
     )
     ```
-1. Select the button [while holding down the Alt key]/power-apps/maker/canvas-apps/keyboard-shortcuts.md#alternate-behavior).
+1. Select the button [while holding down the Alt key](/power-apps/maker/canvas-apps/keyboard-shortcuts.md#alternate-behavior).
 
 Sample collection is created that you can use in the following example.
 
 ### Trash can icon inside a gallery
 
-1. Create a [new blank canvas app]/power-apps/maker/canvas-apps/data-platform-create-app-scratch.md) using a Phone layout.
+1. Create a [new blank canvas app](/power-apps/maker/canvas-apps/data-platform-create-app-scratch.md) using a Phone layout.
 
     ![A blank canvas app using the phone layout.](media/function-remove-removeif/gallery-new.png)
 

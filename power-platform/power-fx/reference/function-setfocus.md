@@ -21,35 +21,35 @@ contributors:
 Moves input focus to a specific control. 
 
 ## Description
-The **SetFocus** function gives a control the input focus.  The user's keystrokes are then received by that control, allowing them to type into a text input control or use the *Enter* key to select a button.  The user can also use the *Tab* key, touch, mouse, or other gesture to move the input focus themselves. *Tab* key behavior is governed by the [**TabIndex** property]/power-apps/maker/canvas-apps/controls/properties-accessibility.md).
+The **SetFocus** function gives a control the input focus.  The user's keystrokes are then received by that control, allowing them to type into a text input control or use the *Enter* key to select a button.  The user can also use the *Tab* key, touch, mouse, or other gesture to move the input focus themselves. *Tab* key behavior is governed by the [**TabIndex** property](/power-apps/maker/canvas-apps/controls/properties-accessibility.md).
 
 Use the **SetFocus** function to set the focus when (each with an example below):
 - a newly exposed or enabled input control, to guide the user in what comes next and for faster data entry.
 - a form is validated, to focus and display the offending input control for quick resolution.
-- a screen is displayed, to focus the first input control with the **OnVisible** property of the [**Screen**]/power-apps/maker/canvas-apps/controls/control-screen.md).
+- a screen is displayed, to focus the first input control with the **OnVisible** property of the [**Screen**](/power-apps/maker/canvas-apps/controls/control-screen.md).
 
-The control with focus may be visually different based on the [**FocusedBorderColor**]/power-apps/maker/canvas-apps/controls/properties-color-border.md) and [**FocusedBorderThickness**]/power-apps/maker/canvas-apps/controls/properties-color-border.md) properties.
+The control with focus may be visually different based on the [**FocusedBorderColor**](/power-apps/maker/canvas-apps/controls/properties-color-border.md) and [**FocusedBorderThickness**](/power-apps/maker/canvas-apps/controls/properties-color-border.md) properties.
 
 ## Limitations
 
 **SetFocus** can only be used with:
-- [**Button**]/power-apps/maker/canvas-apps/controls/control-button.md) control
-- [**Icon**]/power-apps/maker/canvas-apps/controls/control-shapes-icons.md) control
-- [**Image**]/power-apps/maker/canvas-apps/controls/control-image.md) control
-- [**Label**]/power-apps/maker/canvas-apps/controls/control-text-box.md) control
-- [**TextInput**]/power-apps/maker/canvas-apps/controls/control-text-input.md) control
+- [**Button**](/power-apps/maker/canvas-apps/controls/control-button.md) control
+- [**Icon**](/power-apps/maker/canvas-apps/controls/control-shapes-icons.md) control
+- [**Image**](/power-apps/maker/canvas-apps/controls/control-image.md) control
+- [**Label**](/power-apps/maker/canvas-apps/controls/control-text-box.md) control
+- [**TextInput**](/power-apps/maker/canvas-apps/controls/control-text-input.md) control
 
-You cannot set the focus to controls that are within a [**Gallery**]/power-apps/maker/canvas-apps/controls/control-gallery.md) control, [**Edit form**]/power-apps/maker/canvas-apps/controls/control-form-detail.md) control, or [Component]/power-apps/maker/canvas-apps/create-component.md).  **SetFocus** can be used with a control in a scrollbale screen.
+You cannot set the focus to controls that are within a [**Gallery**](/power-apps/maker/canvas-apps/controls/control-gallery.md) control, [**Edit form**](/power-apps/maker/canvas-apps/controls/control-form-detail.md) control, or [Component](/power-apps/maker/canvas-apps/create-component.md).  **SetFocus** can be used with a control in a scrollbale screen.
 
-You cannot set the focus to controls that are within a [**Container**]/power-apps/maker/canvas-apps/controls/control-container.md) control.
+You cannot set the focus to controls that are within a [**Container**](/power-apps/maker/canvas-apps/controls/control-container.md) control.
 
 You can only set the focus to controls on the same screen as the formula containing the **SetFocus** call.
 
-Attempting to set the focus to a control that has its [**DisplayMode**]/power-apps/maker/canvas-apps/controls/properties-core.md) property set to **Disabled** has no effect.  Focus will remain where it was previously.
+Attempting to set the focus to a control that has its [**DisplayMode**](/power-apps/maker/canvas-apps/controls/properties-core.md) property set to **Disabled** has no effect.  Focus will remain where it was previously.
 
 On Apple iOS, the soft keyboard will only be displayed automatically if **SetFocus** was initiated by a direct user action.  For example, invoking from a button's **OnSelect** property will display the soft keyboard while invoking from a screen's **OnVisible** will not. 
 
-You can use **SetFocus** only in [behavior formulas]/power-apps/maker/canvas-apps/working-with-formulas-in-depth.md).
+You can use **SetFocus** only in [behavior formulas](/power-apps/maker/canvas-apps/working-with-formulas-in-depth.md).
 
 ## Syntax
 **SetFocus**( *Control* )
@@ -74,15 +74,15 @@ The *Tab* key can also be used to move focus quickly from one field to another. 
 
 To create this example:
 1. Create a new app.
-1. Add [**Label** controls]/power-apps/maker/canvas-apps/controls/control-text-box.md) with the text "Shipping address", "Name:", "Address:", "Billing Address", "Name:", and "Address:" and position them as shown in the animation.
-1. Add a [**Text Input** control]/power-apps/maker/canvas-apps/controls/control-text-input.md) and rename it **ShippingName**.
-1. Add a [**Text Input** control]/power-apps/maker/canvas-apps/controls/control-text-input.md) and rename it **ShippingAddress**.
-1. Add a [**Check box** control]/power-apps/maker/canvas-apps/controls/control-check-box.md) and rename it **SyncAddresses**.
+1. Add [**Label** controls](/power-apps/maker/canvas-apps/controls/control-text-box.md) with the text "Shipping address", "Name:", "Address:", "Billing Address", "Name:", and "Address:" and position them as shown in the animation.
+1. Add a [**Text Input** control](/power-apps/maker/canvas-apps/controls/control-text-input.md) and rename it **ShippingName**.
+1. Add a [**Text Input** control](/power-apps/maker/canvas-apps/controls/control-text-input.md) and rename it **ShippingAddress**.
+1. Add a [**Check box** control](/power-apps/maker/canvas-apps/controls/control-check-box.md) and rename it **SyncAddresses**.
 1. Set the **Text** property of this control to the formula `"Use Shipping address as Billing address"`.
-1. Add a [**Text Input** control]/power-apps/maker/canvas-apps/controls/control-text-input.md) and rename it **BillingName**.
+1. Add a [**Text Input** control](/power-apps/maker/canvas-apps/controls/control-text-input.md) and rename it **BillingName**.
 1. Set the **Default** property on this control to the formula `ShippingName`.
 1. Set the **DisplayMode** property on this control to the formula `If( SyncAddresses.Value, DisplayMode.View, DisplayMode.Edit )`.  This will automatically enable or disable this control based on the state of the check box control.
-1. Add a [**Text Input** control]/power-apps/maker/canvas-apps/controls/control-text-input.md) and rename it **BillingAddress**.
+1. Add a [**Text Input** control](/power-apps/maker/canvas-apps/controls/control-text-input.md) and rename it **BillingAddress**.
 1. Set the **Default** property on this control to the formula `ShippingAddress`.
 1. Set the **DisplayMode** property on this control to the formula `If( SyncAddresses.Value, DisplayMode.View, DisplayMode.Edit )`.  This will automatically enable or disable this control based on the state of the check box control.
 1. Set the **Default** property of the check box to the formula `true`.  This will default the Billing address to use the same value as the Shipping address.
@@ -125,7 +125,7 @@ To create this example:
 1. Create a new, blank phone app.
 1. From the **Insert** menu, select **New screen**, and then select **Scrollable**.
 1. In the center section of the screen, add **Text input** controls and name them **Name**, **Street1**, **Street2**, **City**, **County**, **StateProvince**, **PostalCode**, and **Phone**. Add **Label** controls above each one to identify the fields.  You may need to resize the section if it is not long enough to fit all the controls.
-1. Add a checkmark [**Icon** control]/power-apps/maker/canvas-apps/controls/control-shapes-icons.md) at the top of the screen, above the scrollable section.  
+1. Add a checkmark [**Icon** control](/power-apps/maker/canvas-apps/controls/control-shapes-icons.md) at the top of the screen, above the scrollable section.  
 1. Set the **OnSelect** property of the icon control to the formula `If( IsBlank( ...` given above.
 
 ### Focus when displaying a screen
@@ -151,7 +151,7 @@ To create this example:
 1. Create the "Focus on validation issues" app above.
 1. On this screen, set the **OnVisible** property to the formula `SetFocus( Name )`.
 1. Add a second screen.
-1. Add a [**Button** control]/power-apps/maker/canvas-apps/controls/control-button.md).
+1. Add a [**Button** control](/power-apps/maker/canvas-apps/controls/control-button.md).
 1. Set the **OnSelect** property of this control to the formula `Navigate( Screen1 )`.
 1. Preview the app from this screen.  Press the button.  The **OnVisible** formula will be evaluated and the **Name** field will automatically be in focus.
 

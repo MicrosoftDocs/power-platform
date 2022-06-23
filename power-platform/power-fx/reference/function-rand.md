@@ -33,7 +33,7 @@ For example, a label control with **Label1.Text = Rand()** won't change while yo
 
 The function will be reevaluated if it's part of a formula in which something else has changed.  For example, if we change our example to involve a slider control with **Label1.Text = Slider1.Value + Rand()** then a new random number is generated each time the Slider control's value changes and the label's text property is reevaluated.  See below for this example.
 
-When used in a [behavior formula]/power-apps/maker/canvas-apps/working-with-formulas-in-depth.md), **Rand** and **RandBetween** will be evaluated each time the behavior formula is evaluated.  See below for an example.
+When used in a [behavior formula](/power-apps/maker/canvas-apps/working-with-formulas-in-depth.md), **Rand** and **RandBetween** will be evaluated each time the behavior formula is evaluated.  See below for an example.
 
 ## Syntax
 
@@ -57,9 +57,9 @@ When used in a [behavior formula]/power-apps/maker/canvas-apps/working-with-form
 | **RandBetween(&nbsp;-1,&nbsp;1&nbsp;)** | Returns a pseudo-random number that is between -1 and 1 inclusive: **-1**, **0**, or **1**.  | Varies with each evaluation, for example **-1**. |
 
 #### Display a different random number as user input changes with Rand
-1. Add a **[Slider]/power-apps/maker/canvas-apps/controls/control-slider.md)** control, and rename it **Slider1** if it has a different name.
+1. Add a **[Slider](/power-apps/maker/canvas-apps/controls/control-slider.md)** control, and rename it **Slider1** if it has a different name.
 
-1. Add a **[Label]/power-apps/maker/canvas-apps/controls/control-text-box.md)** control, and set its **Text** property to this formula:
+1. Add a **[Label](/power-apps/maker/canvas-apps/controls/control-text-box.md)** control, and set its **Text** property to this formula:
 
     **Slider1.Value + Rand()**
 
@@ -74,13 +74,13 @@ When used in a [behavior formula]/power-apps/maker/canvas-apps/working-with-form
     ![Four screens displaying a label control with four different random decimal values for each of four different slider settings 70.899, 84.667, 90.134, 99.690.](media/function-rand/rand-slider-results.png)
 
 #### Create a table of random numbers with RandBetween
-1. Add a **[Button]/power-apps/maker/canvas-apps/controls/control-button.md)** control, and set its **[OnSelect]/power-apps/maker/canvas-apps/controls/properties-core.md)** property to this formula:
+1. Add a **[Button](/power-apps/maker/canvas-apps/controls/control-button.md)** control, and set its **[OnSelect](/power-apps/maker/canvas-apps/controls/properties-core.md)** property to this formula:
 
     **ClearCollect( RandomNumbers, ForAll( Sequence( 100 ), RandBetween( 1, 20 ) ))**
 
     This formula creates a single-column table that's used to iterate 100 times, resulting in 100 random numbers.
 
-1. Add a **[Data table]/power-apps/maker/canvas-apps/controls/control-data-table.md)**, set its **Items** property to **RandomNumbers**, and show the **Value** field.
+1. Add a **[Data table](/power-apps/maker/canvas-apps/controls/control-data-table.md)**, set its **Items** property to **RandomNumbers**, and show the **Value** field.
 
     ![Data source selection of the RandomNumbers collection.](media/function-rand/set-show-data.png)
 

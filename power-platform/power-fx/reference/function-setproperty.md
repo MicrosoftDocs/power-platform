@@ -50,7 +50,7 @@ The SetProperty function simulates interactions with input controls as if the us
 
 ### See Also
 
-[Test Studio Overview]/power-apps/maker/canvas-apps/test-studio.md) <br>
-[Working with Test Studio]/power-apps/maker/canvas-apps/working-with-test-studio.md)
+[Test Studio Overview](/power-apps/maker/canvas-apps/test-studio.md) <br>
+[Working with Test Studio](/power-apps/maker/canvas-apps/working-with-test-studio.md)
 
 [!INCLUDE[footer-include]../../includes/footer-banner.md)]

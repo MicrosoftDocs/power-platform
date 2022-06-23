@@ -31,7 +31,7 @@ The **Time** function converts individual Hour, Minute, and Second values to a D
 
 See the **[DateValue](function-datevalue-timevalue.md)**, **[TimeValue](function-datevalue-timevalue.md)**, and **[DateTimeValue](function-datevalue-timevalue.md)** functions for information about how to convert a string to a value.  
 
-Also see [working with dates and times]/power-apps/maker/canvas-apps/show-text-dates-times.md) for more information.
+Also see [working with dates and times](/power-apps/maker/canvas-apps/show-text-dates-times.md) for more information.
 
 ## Syntax
 **Date**( *Year*, *Month*, *Day* )

@@ -49,7 +49,7 @@ The **Pi** function returns the transcendental number &pi;, which begins 3.14159
 The **Radians** function converts degrees to radians.  
 
 ### Notes
-If you pass a single number to these functions, the return value is a single result.  If you pass a single-column [table]/power-apps/maker/canvas-apps/working-with-tables.md) that contains numbers, the return value is a single-column table of results, one result for each record in the argument's table. If you have a multi-column table, you can shape it into a single-column table, as [working with tables]/power-apps/maker/canvas-apps/working-with-tables.md) describes.  
+If you pass a single number to these functions, the return value is a single result.  If you pass a single-column [table](/power-apps/maker/canvas-apps/working-with-tables.md) that contains numbers, the return value is a single-column table of results, one result for each record in the argument's table. If you have a multi-column table, you can shape it into a single-column table, as [working with tables](/power-apps/maker/canvas-apps/working-with-tables.md) describes.  
 
 If an argument would result in an undefined value, the result is *blank*.  This can happen, for example, when using inverse functions with arguments that are out of range.
 
@@ -108,7 +108,7 @@ If an argument would result in an undefined value, the result is *blank*.  This 
 | **Radians(&nbsp;15&nbsp;)** |Returns the equivalent number of radians for 15 degrees. |0.261799... |
 
 ### Single-column table
-The examples in this section use a [data source]/power-apps/maker/canvas-apps/working-with-data-sources.md) that's named **ValueTable** and that contains the following data.  The last record in the table is &pi;/2 radians or 90 degrees.
+The examples in this section use a [data source](/power-apps/maker/canvas-apps/working-with-data-sources.md) that's named **ValueTable** and that contains the following data.  The last record in the table is &pi;/2 radians or 90 degrees.
 
 ![List of values.](media/function-trig/values.png)
 

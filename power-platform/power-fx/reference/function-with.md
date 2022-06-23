@@ -18,7 +18,7 @@ contributors:
   - tapanm-msft
 ---
 # With function in Power Apps
-Calculates values and performs actions for a single [record]/power-apps/maker/canvas-apps/working-with-tables.md#records), including inline records of named values.
+Calculates values and performs actions for a single [record](/power-apps/maker/canvas-apps/working-with-tables.md#records), including inline records of named values.
 
 ## Description
 
@@ -77,8 +77,8 @@ The **With** is automatically recalculated as the sliders move and the new loan 
 
 Here are the detailed instructions for creating this app:
 1. Create a new app.
-2. Add a [**Slider** control]/power-apps/maker/canvas-apps/controls/control-slider.md) and name it **RateSlider**.  Set its **Max** property to 48.
-3. Add a [**Label** control]/power-apps/maker/canvas-apps/controls/control-text-box.md) to the left of the slider control.  Set its **Text** property to **"Interest Rate:"**.
+2. Add a [**Slider** control](/power-apps/maker/canvas-apps/controls/control-slider.md) and name it **RateSlider**.  Set its **Max** property to 48.
+3. Add a [**Label** control](/power-apps/maker/canvas-apps/controls/control-text-box.md) to the left of the slider control.  Set its **Text** property to **"Interest Rate:"**.
 3. Add a **Label** control to the right of the slider control.  Set its **Text** property to the formula **RateSlider/8 & "&nbsp;%"**.
 3. Add another **Slider** control and name it **AmountSlider**.  Set its **Max** property to 60.
 3. Add a **Label** control to the left of this slider control.  Set its **Text** property to **"Loan Amount:"**. 
@@ -121,7 +121,7 @@ Note that although the sub-matches contain numbers they are still in a text stri
 
 ### Map a record in a component
 
-See [Map record]/power-apps/maker/canvas-apps/map-component-input-fields.md#map-records).
+See [Map record](/power-apps/maker/canvas-apps/map-component-input-fields.md#map-records).
 
 
 [!INCLUDE[footer-include]../../includes/footer-banner.md)]

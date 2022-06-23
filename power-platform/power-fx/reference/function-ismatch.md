@@ -23,7 +23,7 @@ Tests for a match or extracts portions of a text string based on a pattern.
 ## Description
 The **IsMatch** function tests whether a text string matches a pattern that can comprise ordinary characters, predefined patterns, or a [regular expression](#regular-expressions).  The **Match** and **MatchAll** functions return what was matched, including sub-matches.  
 
-Use **IsMatch** to validate what a user has typed in a **[Text input]/power-apps/maker/canvas-apps/controls/control-text-input.md)** control. For example, you can confirm whether the user has entered a valid email address before the result is saved to your data source. If the entry doesn't match your criteria, add other controls that prompt the user to correct the entry.
+Use **IsMatch** to validate what a user has typed in a **[Text input](/power-apps/maker/canvas-apps/controls/control-text-input.md)** control. For example, you can confirm whether the user has entered a valid email address before the result is saved to your data source. If the entry doesn't match your criteria, add other controls that prompt the user to correct the entry.
 
 Use **Match** to extract the first text string that matches a pattern and **MatchAll** to extract all text strings that match. You can also extract sub-matches to parse complex strings.   
 
@@ -200,7 +200,7 @@ With(
 )
 ```
 
-For these examples, add a [Button]/power-apps/maker/canvas-apps/controls/control-button.md) control, set its **OnSelect** property to this formula, and then select the button:
+For these examples, add a [Button](/power-apps/maker/canvas-apps/controls/control-button.md) control, set its **OnSelect** property to this formula, and then select the button:
 
 ``` powerapps-dot
 Set( pangram, "The quick brown fox jumps over the lazy dog." )
@@ -216,7 +216,7 @@ Set( pangram, "The quick brown fox jumps over the lazy dog." )
 
 To see the results of **MatchAll** in a gallery:
 
-1. In an empty screen, insert a blank vertical **[Gallery]/power-apps/maker/canvas-apps/controls/control-gallery.md)** control.
+1. In an empty screen, insert a blank vertical **[Gallery](/power-apps/maker/canvas-apps/controls/control-gallery.md)** control.
 
 2. Set the gallery's **Items** property to **MatchAll( pangram, "\w+" )** or **MatchAll( pangram, MultipleLetters )**.
 
@@ -224,7 +224,7 @@ To see the results of **MatchAll** in a gallery:
 
 3. Select "Add an item from the Insert tab" in the middle of the gallery control to select the template of the gallery. 
 
-5. Add a **[Label]/power-apps/maker/canvas-apps/controls/control-text-box.md)** control to the gallery's template.  
+5. Add a **[Label](/power-apps/maker/canvas-apps/controls/control-text-box.md)** control to the gallery's template.  
 
 4. Set the label's **Text** property to **ThisItem.FullMatch**.  
  

@@ -31,7 +31,7 @@ The **TimeZoneOffset** function returns the number of minutes between the user's
 
 You can use **DateAdd** with the **TimeZoneOffset** to convert between the user's local time and UTC (Coordinated Universal Time).  Adding **TimeZoneOffset** will convert a local time to UTC, and subtracting it (adding the negative) will convert from UTC to local time.
 
-Also see [Date, Time, and DateTime data types]/power-apps/maker/canvas-apps/functions/data-types.md#date-time-and-datetime) and [working with dates and times]/power-apps/maker/canvas-apps/show-text-dates-times.md) for more information.
+Also see [Date, Time, and DateTime data types](/power-apps/maker/canvas-apps/functions/data-types.md#date-time-and-datetime) and [working with dates and times](/power-apps/maker/canvas-apps/show-text-dates-times.md) for more information.
 
 ## Syntax
 **DateAdd**( *DateTime*, *Addition* [, *Units* ] )

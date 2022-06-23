@@ -19,16 +19,16 @@ contributors:
   - tapanm-msft
 ---
 # Blank, Coalesce, IsBlank, and IsEmpty functions in Power Apps
-Tests whether a value is blank or a [table]/power-apps/maker/canvas-apps/working-with-tables.md) contains no [records]/power-apps/maker/canvas-apps/working-with-tables.md#records), and provides a way to create *blank* values.
+Tests whether a value is blank or a [table](/power-apps/maker/canvas-apps/working-with-tables.md) contains no [records](/power-apps/maker/canvas-apps/working-with-tables.md#records), and provides a way to create *blank* values.
 
 ## Overview
-*Blank* is a placeholder for "no value" or "unknown value."  For example, a **[Combo box]/power-apps/maker/canvas-apps/controls/control-combo-box.md)** control's **Selected** property is *blank* if the user hasn't made a selection. Many data sources can store and return NULL values, which are represented in Power Apps as *blank*.
+*Blank* is a placeholder for "no value" or "unknown value."  For example, a **[Combo box](/power-apps/maker/canvas-apps/controls/control-combo-box.md)** control's **Selected** property is *blank* if the user hasn't made a selection. Many data sources can store and return NULL values, which are represented in Power Apps as *blank*.
 
 Any property or calculated value in Power Apps can be *blank*.  For example, a Boolean value normally has one of two values: **true** or **false**.  But in addition to these two, it can also be *blank* indicating that the state is not known.  This is similar to Microsoft Excel, where a worksheet cell starts out as blank with no contents but can hold the values **TRUE** or **FALSE** (among others). At any time, the contents of the cell can again be cleared, returning it to a *blank* state.
 
 *Empty string* refers to a string that contains no characters.  The [**Len** function](function-len.md) returns zero for such a string and it can be written in a formulas as  two double quotes with nothing in between `""`.  Some controls and data sources use an empty string to indicate a "no value" condition.  To simplify app creation, the **IsBlank** and **Coalesce** functions test for both *blank* values or empty strings.    
 
-In the context of the **IsEmpty** function, *empty* is specific to tables that contain no records. The table structure may be intact, complete with [column]/power-apps/maker/canvas-apps/working-with-tables.md#columns) names, but no data is in the table. A table may start as empty, take on records and no longer be empty, and then have the records removed and again be empty.
+In the context of the **IsEmpty** function, *empty* is specific to tables that contain no records. The table structure may be intact, complete with [column](/power-apps/maker/canvas-apps/working-with-tables.md#columns) names, but no data is in the table. A table may start as empty, take on records and no longer be empty, and then have the records removed and again be empty.
 
 > [!NOTE]
 > We are in a period of transition.  Until now, *blank* has also been used to report errors, making it impossible to differentiate a valid "no value" from an error.  For this reason, at this time, storing *blank* values is supported only for local collections.  You can store *blank* values in other data sources if you turn on the **Formula-level error management** experimental feature under **Settings** > **Upcoming features** > **Experimental**.  We are actively working to finish this feature and complete the proper separation of *blank* values from errors.
@@ -76,7 +76,7 @@ The return value for **IsEmpty** is a Boolean **true** or **false**.
 > At this time, the following example only works for local collections.  You can store *blank* values in other data sources if you turn on the **Formula-level error management** experimental feature under **Settings** > **Upcoming features** > **Experimental**.  We are actively working to finish this feature and complete the separation of *blank* values from errors.
 
 1. Create an app from scratch, and add a **Button** control.
-2. Set the button's **[OnSelect]/power-apps/maker/canvas-apps/controls/properties-core.md)** property to this formula:
+2. Set the button's **[OnSelect](/power-apps/maker/canvas-apps/controls/properties-core.md)** property to this formula:
 
     ```powerapps-dot
     ClearCollect( Cities, { Name: "Seattle", Weather: "Rainy" } )
@@ -119,18 +119,18 @@ The return value for **IsEmpty** is a Boolean **true** or **false**.
 
 ### IsBlank
 1. Create an app from scratch, add a text-input control, and name it **FirstName**.
-2. Add a label, and set its **[Text]/power-apps/maker/canvas-apps/controls/properties-core.md)** property to this formula:
+2. Add a label, and set its **[Text](/power-apps/maker/canvas-apps/controls/properties-core.md)** property to this formula:
 
     ```powerapps-dot
     If( IsBlank( FirstName.Text ), "First Name is a required field." )
     ```
 
-    By default, the **[Text]/power-apps/maker/canvas-apps/controls/properties-core.md)** property of a text-input control is set to **"Text input"**. Because the property contains a value, it isn't blank, and the label doesn't display any message.
+    By default, the **[Text](/power-apps/maker/canvas-apps/controls/properties-core.md)** property of a text-input control is set to **"Text input"**. Because the property contains a value, it isn't blank, and the label doesn't display any message.
 3. Remove all the characters from the text-input control, including any spaces.
 
-    Because the **[Text]/power-apps/maker/canvas-apps/controls/properties-core.md)** property no longer contains any characters, it's an empty string, and **IsBlank( FirstName.Text )** will be **true**. The required field message is displayed.
+    Because the **[Text](/power-apps/maker/canvas-apps/controls/properties-core.md)** property no longer contains any characters, it's an empty string, and **IsBlank( FirstName.Text )** will be **true**. The required field message is displayed.
 
-For information about how to perform validation by using other tools, see the **[Validate](function-validate.md)** function and [working with data sources]/power-apps/maker/canvas-apps/working-with-data-sources.md).  
+For information about how to perform validation by using other tools, see the **[Validate](function-validate.md)** function and [working with data sources](/power-apps/maker/canvas-apps/working-with-data-sources.md).  
 
 Other examples:
 
@@ -139,13 +139,13 @@ Other examples:
 | **IsBlank(&nbsp;Blank()&nbsp;)** |Tests the return value from the **Blank** function, which always returns a *blank* value. |**true** |
 | **IsBlank( "" )** |A string that contains no characters. |**true** |
 | **IsBlank( "Hello" )** |A string that contains one or more characters. |**false** |
-| **IsBlank( *AnyCollection* )** |Because the [collection]/power-apps/maker/canvas-apps/working-with-data-sources.md#collections) exists, it isn't blank, even if it doesn't contain any records. To check for an empty collection, use **IsEmpty** instead. |**false** |
+| **IsBlank( *AnyCollection* )** |Because the [collection](/power-apps/maker/canvas-apps/working-with-data-sources.md#collections) exists, it isn't blank, even if it doesn't contain any records. To check for an empty collection, use **IsEmpty** instead. |**false** |
 | **IsBlank( Mid( "Hello", 17, 2 ) )** |The starting character for **[Mid](function-left-mid-right.md)** is beyond the end of the string.  The result is an empty string. |**true** |
 | **IsBlank( If( false, false ) )** |An **[If](function-if.md)** function with no *ElseResult*.  Because the condition is always **false**, this **[If](function-if.md)** always returns *blank*. |**true** |
 
 ### IsEmpty
 1. Create an app from scratch, and add a **Button** control.
-2. Set the button's **[OnSelect]/power-apps/maker/canvas-apps/controls/properties-core.md)** property to this formula:
+2. Set the button's **[OnSelect](/power-apps/maker/canvas-apps/controls/properties-core.md)** property to this formula:
 
     **Collect( IceCream, { Flavor: "Strawberry", Quantity: 300 }, { Flavor: "Chocolate", Quantity: 100 } )**
 3. Preview your app, click or tap the button that you added, and then close Preview.  
@@ -155,7 +155,7 @@ Other examples:
     ![A table with Strawberry and Chocolate flavours with quantity 300 and 100.](media/function-isblank-isempty/icecream-strawberry-chocolate.png)
 
     This collection has two records and isn't empty. **IsEmpty( IceCream )** returns **false**, and **CountRows( IceCream )** returns **2**.
-4. Add a second button, and set its **[OnSelect]/power-apps/maker/canvas-apps/controls/properties-core.md)** property to this formula:
+4. Add a second button, and set its **[OnSelect](/power-apps/maker/canvas-apps/controls/properties-core.md)** property to this formula:
 
     **Clear( IceCream )**
 5. Preview your app, click or tap the second button, and then close Preview.  

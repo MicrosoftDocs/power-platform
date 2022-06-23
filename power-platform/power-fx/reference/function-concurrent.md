@@ -23,7 +23,7 @@ Evaluates multiple formulas concurrently with one another.
 ## Description
 The **Concurrent** function evaluates multiple formulas at the same time. Normally, multiple formulas are evaluated by chaining them together with the [**;**](operators.md) operator, which evaluates each sequentially in order. When the app performs operations concurrently, users wait less for the same result.
 
-In the [**OnStart**]/power-apps/maker/canvas-apps/controls/control-screen.md) property of your app, use **Concurrent** to improve performance when the app loads data. When data calls don't start until the previous calls finish, the app must wait for the sum of all request times. If data calls start at the same time, the app needs to wait only for the longest request time. Web browsers often improve performance by performing data operations concurrently.
+In the [**OnStart**](/power-apps/maker/canvas-apps/controls/control-screen.md) property of your app, use **Concurrent** to improve performance when the app loads data. When data calls don't start until the previous calls finish, the app must wait for the sum of all request times. If data calls start at the same time, the app needs to wait only for the longest request time. Web browsers often improve performance by performing data operations concurrently.
 
 You can't predict the order in which formulas within the **Concurrent** function start and end evaluation. Formulas within the **Concurrent** function shouldn't contain dependencies on other formulas within the same **Concurrent** function, and Power Apps shows an error if you try. From within, you can safely take dependencies on formulas outside the **Concurrent** function because they will complete before the **Concurrent** function starts. Formulas after the **Concurrent** function can safely take dependencies on formulas within: they'll all complete before the **Concurrent** function finishes and moves on to the next formula in a chain (if you use the **;** operator). Watch out for subtle order dependencies if you're calling functions or service methods that have side effects.
 
@@ -33,7 +33,7 @@ Depending on the device or browser in which the app is running, only a handful o
 
 If you enable **Formula-level error management** (in advanced settings), the first error encountered in argument order is returned from **Concurrent**; otherwise, *blank* is returned. If all formulas are successful, *true* is returned. If one formula fails, the rest of that formula stops, but other formulas continue evaluating.
 
-You can use **Concurrent** only in [behavior formulas]/power-apps/maker/canvas-apps/working-with-formulas-in-depth.md).
+You can use **Concurrent** only in [behavior formulas](/power-apps/maker/canvas-apps/working-with-formulas-in-depth.md).
 
 ## Syntax
 **Concurrent**( *Formula1*, *Formula2* [, ...] )
@@ -50,7 +50,7 @@ You can use **Concurrent** only in [behavior formulas]/power-apps/maker/canvas-a
 
 	![Connect to Adventure Works database in Azure.](media/function-concurrent/connect-database.png)
 
-2. Add a **[Button]/power-apps/maker/canvas-apps/controls/control-button.md)** control, and set its **OnSelect** property to this formula:
+2. Add a **[Button](/power-apps/maker/canvas-apps/controls/control-button.md)** control, and set its **OnSelect** property to this formula:
 
     ```powerapps-dot
     ClearCollect( Product, '[SalesLT].[Product]' );
@@ -73,7 +73,7 @@ You can use **Concurrent** only in [behavior formulas]/power-apps/maker/canvas-a
 
     Power Apps caches data, so selecting the button again won't necessarily cause four new requests. Each time you want to test performance, close and reopen your app. If you turned network throttling on, you may want to turn it off until you're ready for another test.
 
-1. Add a second **[Button]/power-apps/maker/canvas-apps/controls/control-button.md)** control, and set its **OnSelect** property to this formula:
+1. Add a second **[Button](/power-apps/maker/canvas-apps/controls/control-button.md)** control, and set its **OnSelect** property to this formula:
 
     ```powerapps-dot
     Concurrent( 
@@ -102,9 +102,9 @@ You can use **Concurrent** only in [behavior formulas]/power-apps/maker/canvas-a
 
 #### Race condition
 
-1. Add a connection to the [Microsoft Translator]/power-apps/maker/canvas-apps/connections/connection-microsoft-translator.md) service to your app.
+1. Add a connection to the [Microsoft Translator](/power-apps/maker/canvas-apps/connections/connection-microsoft-translator.md) service to your app.
 
-2. Add a [**Text input**]/power-apps/maker/canvas-apps/controls/control-text-input.md) control, and rename it **TextInput1** if it has a different name.
+2. Add a [**Text input**](/power-apps/maker/canvas-apps/controls/control-text-input.md) control, and rename it **TextInput1** if it has a different name.
 
 3. Add a **Button** control, and set its **OnSelect** property to this formula:
 
@@ -126,7 +126,7 @@ You can use **Concurrent** only in [behavior formulas]/power-apps/maker/canvas-a
     )
     ```
 
-4. Add a [**Data table**]/power-apps/maker/canvas-apps/controls/control-data-table.md) control, and set its **Items** property to **Results**.
+4. Add a [**Data table**](/power-apps/maker/canvas-apps/controls/control-data-table.md) control, and set its **Items** property to **Results**.
 
 1. On the **Properties** tab of the right pane, select **Edit fields** to open the **Fields** pane.
 
