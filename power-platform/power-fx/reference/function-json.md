@@ -202,4 +202,4 @@ If a column has both a display name and a logical name, the result contains the 
     ```
 
 
-[!INCLUDE[footer-include]../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

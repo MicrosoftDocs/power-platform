@@ -318,4 +318,4 @@ For more information and examples, see [record scopes](/power-apps/maker/canvas-
 
 
 
-[!INCLUDE[footer-include]../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

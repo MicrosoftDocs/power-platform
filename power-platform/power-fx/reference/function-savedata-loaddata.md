@@ -180,4 +180,4 @@ Following simple example captures and stores the names and pictures of everyday 
 
 For a detailed example, see the article on [simple offline capabilities](/power-apps/maker/canvas-apps/offline-apps).
 
-[!INCLUDE[footer-include]../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

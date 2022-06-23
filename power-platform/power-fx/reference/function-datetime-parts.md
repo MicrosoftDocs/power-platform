@@ -77,4 +77,4 @@ For the following example, the current time is **3:59:37 PM** on **Thursday, Apr
 
 
 
-[!INCLUDE[footer-include]../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

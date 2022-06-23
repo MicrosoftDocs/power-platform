@@ -79,4 +79,4 @@ Collect( IceCream, Table( { Flavor: "Chocolate", Quantity: 100 },
 | **Index(&nbsp;IceCream,&nbsp;10&nbsp;)** | Returns an error since the record requested is beyond the bounds of the table. | *Error* |
 
 
-[!INCLUDE[footer-include]../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -141,4 +141,4 @@ Let's try some of the examples from earlier in this topic.
 
 See [Map columns](/power-apps/maker/canvas-apps/map-component-input-fields#map-columns).
 
-[!INCLUDE[footer-include]../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

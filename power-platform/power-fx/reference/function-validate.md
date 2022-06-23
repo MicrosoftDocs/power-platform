@@ -68,4 +68,4 @@ For these examples, values in the **Percentage** column of the **Scores** data s
 
 
 
-[!INCLUDE[footer-include]../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

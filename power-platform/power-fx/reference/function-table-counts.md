@@ -85,4 +85,4 @@ You need to enable the **Enhanced delegation for Microsoft Dataverse** option in
 
 
 
-[!INCLUDE[footer-include]../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

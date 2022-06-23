@@ -43,4 +43,4 @@ Assertion messages, for both passed and failed assertions, are also contained in
 [Working with Test Studio](/power-apps/maker/canvas-apps/working-with-test-studio)
 
 
-[!INCLUDE[footer-include]../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

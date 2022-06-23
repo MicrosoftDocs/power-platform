@@ -37,4 +37,4 @@ If you stored details about playing cards in a [collection](/power-apps/maker/ca
 
 
 
-[!INCLUDE[footer-include]../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

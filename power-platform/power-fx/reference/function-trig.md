@@ -127,4 +127,4 @@ The examples in this section use a [data source](/power-apps/maker/canvas-apps/w
 
 
 
-[!INCLUDE[footer-include]../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

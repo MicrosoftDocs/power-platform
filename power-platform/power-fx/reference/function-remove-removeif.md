@@ -260,4 +260,4 @@ Sample collection is created that you can use in the following example.
 1. Close the app preview.
 
 
-[!INCLUDE[footer-include]../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -126,4 +126,4 @@ When the **Back** function runs, the inverse transition is used by default. For 
 [Using context variables](/power-apps/maker/canvas-apps/working-with-variables#use-a-context-variable)
 
 
-[!INCLUDE[footer-include]../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

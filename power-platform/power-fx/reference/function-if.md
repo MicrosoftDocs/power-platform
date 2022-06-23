@@ -91,4 +91,4 @@ In these examples, a **[Text input](/power-apps/maker/canvas-apps/controls/contr
 
 
 
-[!INCLUDE[footer-include]../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

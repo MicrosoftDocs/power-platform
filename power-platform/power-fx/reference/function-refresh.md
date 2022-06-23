@@ -45,4 +45,4 @@ After that formula executes, galleries that are bound to the **IceCream** data s
 
 
 
-[!INCLUDE[footer-include]../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

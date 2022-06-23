@@ -46,4 +46,4 @@ Input controls are also reset when their **Default** property changes.
 
 
 
-[!INCLUDE[footer-include]../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

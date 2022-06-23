@@ -38,4 +38,4 @@ Trace messages can also be defined in your app. These can be viewed in the Power
 [Working with Test Studio](/power-apps/maker/canvas-apps/working-with-test-studio)
 
 
-[!INCLUDE[footer-include]../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

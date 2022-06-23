@@ -55,4 +55,4 @@ For the first example in this section, the data source is named **People** and c
 
 
 
-[!INCLUDE[footer-include]../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

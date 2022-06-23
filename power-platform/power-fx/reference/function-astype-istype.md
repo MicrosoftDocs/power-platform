@@ -143,4 +143,4 @@ If the record reference is *blank*, **IsType** returns FALSE, and **AsType** ret
     Your results might differ from those in this topic because it uses sample data that was modified to show additional types of results.
 
 
-[!INCLUDE[footer-include]../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

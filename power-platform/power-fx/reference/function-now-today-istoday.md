@@ -128,4 +128,4 @@ For the examples in this section, the current time is **8:58 PM** on **July 11, 
     The label appears as soon as the app starts (before the timer runs for a full second).
 
 
-[!INCLUDE[footer-include]../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -224,4 +224,4 @@ Note that we are not capturing the result of the **ForAll**.  The **Collect** fu
 
 See [Map tables](/power-apps/maker/canvas-apps/map-component-input-fields#map-tables).
 
-[!INCLUDE[footer-include]../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

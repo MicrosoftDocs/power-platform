@@ -76,4 +76,4 @@ Each example in this section extracts strings from the **Address** [column](/pow
 
 
 
-[!INCLUDE[footer-include]../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

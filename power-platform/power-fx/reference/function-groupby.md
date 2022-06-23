@@ -153,4 +153,4 @@ Something else we can do with a grouped table is to aggregate the results.  In t
 
 
 
-[!INCLUDE[footer-include]../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

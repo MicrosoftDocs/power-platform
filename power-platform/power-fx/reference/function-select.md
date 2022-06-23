@@ -124,4 +124,4 @@ The select function can also be used with a gallery. For example, it can be used
 
 
 
-[!INCLUDE[footer-include]../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

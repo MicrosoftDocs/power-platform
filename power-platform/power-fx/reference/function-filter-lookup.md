@@ -149,4 +149,4 @@ You can expand your search to include the **Company** column and the **Name** co
 
 
 
-[!INCLUDE[footer-include]../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -56,4 +56,4 @@ The current Power Apps user has the following information:
 
 
 
-[!INCLUDE[footer-include]../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -73,4 +73,4 @@ In the United States, with **[Language](function-language.md)** returning "en-US
 
 
 
-[!INCLUDE[footer-include]../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -107,4 +107,4 @@ To run these examples yourself, create the **IceCream** data source as a [collec
 
 
 
-[!INCLUDE[footer-include]../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

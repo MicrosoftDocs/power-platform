@@ -98,4 +98,4 @@ In a baseball field, a pitcher throws a phone from the pitcher's mound to a catc
 
 
 
-[!INCLUDE[footer-include]../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

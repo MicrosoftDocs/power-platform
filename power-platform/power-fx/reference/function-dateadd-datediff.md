@@ -104,4 +104,4 @@ To see the result, use the **Text** function with the format *dd-mm-yyyy hh:mm*,
 
 
 
-[!INCLUDE[footer-include]../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

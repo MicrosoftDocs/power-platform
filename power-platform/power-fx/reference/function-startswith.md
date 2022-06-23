@@ -93,4 +93,4 @@ You can expand your search to include the **Company** column as well as the **Na
 
 
 
-[!INCLUDE[footer-include]../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

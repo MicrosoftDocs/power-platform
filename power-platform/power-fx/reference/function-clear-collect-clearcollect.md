@@ -104,4 +104,4 @@ These examples examine how record and table arguments to **Collect** and **Clear
 
 
 
-[!INCLUDE[footer-include]../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

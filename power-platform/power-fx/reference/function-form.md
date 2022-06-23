@@ -123,4 +123,4 @@ See [Understand data forms](/power-apps/maker/canvas-apps/working-with-forms) fo
 
 
 
-[!INCLUDE[footer-include]../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
