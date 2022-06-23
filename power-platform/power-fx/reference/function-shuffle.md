@@ -18,7 +18,7 @@ contributors:
   - tapanm-msft
 ---
 # Shuffle function in Power Apps
-Randomly reorders the [records](/power-apps/maker/canvas-apps/working-with-tables.md#records) of a [table](/power-apps/maker/canvas-apps/working-with-tables).
+Randomly reorders the [records](/power-apps/maker/canvas-apps/working-with-tables#records) of a [table](/power-apps/maker/canvas-apps/working-with-tables).
 
 ## Description
 The **Shuffle** function reorders the records of a table.

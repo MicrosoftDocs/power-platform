@@ -19,7 +19,7 @@ contributors:
 ---
 # ForAll function in Power Apps
 
-Calculates values and performs actions for all the [records](/power-apps/maker/canvas-apps/working-with-tables.md#records) in a [table](/power-apps/maker/canvas-apps/working-with-tables).
+Calculates values and performs actions for all the [records](/power-apps/maker/canvas-apps/working-with-tables#records) in a [table](/power-apps/maker/canvas-apps/working-with-tables).
 
 ## Description
 
@@ -86,7 +86,7 @@ To create this data source as a collection, set the **OnSelect** property of a *
 
 `ClearCollect( Expressions, [ "Hello", "Good morning", "Thank you", "Goodbye" ] )`
 
-This example also uses a [Microsoft Translator](/power-apps/maker/canvas-apps/connections/connection-microsoft-translator.md) connection.  To add this connection to your app, see the article about how to [manage connections](/power-apps/maker/canvas-apps/add-manage-connections).
+This example also uses a [Microsoft Translator](/power-apps/maker/canvas-apps/connections/connection-microsoft-translator) connection.  To add this connection to your app, see the article about how to [manage connections](/power-apps/maker/canvas-apps/add-manage-connections).
 
 | Formula | Description | Result |
 | --- | --- | --- |

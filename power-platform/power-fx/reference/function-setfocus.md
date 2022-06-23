@@ -28,7 +28,7 @@ Use the **SetFocus** function to set the focus when (each with an example below)
 - a form is validated, to focus and display the offending input control for quick resolution.
 - a screen is displayed, to focus the first input control with the **OnVisible** property of the [**Screen**](/power-apps/maker/canvas-apps/controls/control-screen).
 
-The control with focus may be visually different based on the [**FocusedBorderColor**](/power-apps/maker/canvas-apps/controls/properties-color-border.md) and [**FocusedBorderThickness**](/power-apps/maker/canvas-apps/controls/properties-color-border) properties.
+The control with focus may be visually different based on the [**FocusedBorderColor**](/power-apps/maker/canvas-apps/controls/properties-color-border) and [**FocusedBorderThickness**](/power-apps/maker/canvas-apps/controls/properties-color-border) properties.
 
 ## Limitations
 
@@ -39,7 +39,7 @@ The control with focus may be visually different based on the [**FocusedBorderCo
 - [**Label**](/power-apps/maker/canvas-apps/controls/control-text-box) control
 - [**TextInput**](/power-apps/maker/canvas-apps/controls/control-text-input) control
 
-You cannot set the focus to controls that are within a [**Gallery**](/power-apps/maker/canvas-apps/controls/control-gallery.md) control, [**Edit form**](/power-apps/maker/canvas-apps/controls/control-form-detail.md) control, or [Component](/power-apps/maker/canvas-apps/create-component).  **SetFocus** can be used with a control in a scrollbale screen.
+You cannot set the focus to controls that are within a [**Gallery**](/power-apps/maker/canvas-apps/controls/control-gallery.md) control, [**Edit form**](/power-apps/maker/canvas-apps/controls/control-form-detail) control, or [Component](/power-apps/maker/canvas-apps/create-component).  **SetFocus** can be used with a control in a scrollbale screen.
 
 You cannot set the focus to controls that are within a [**Container**](/power-apps/maker/canvas-apps/controls/control-container) control.
 

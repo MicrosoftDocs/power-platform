@@ -18,7 +18,7 @@ contributors:
   - tapanm-msft
 ---
 # Remove and RemoveIf functions in Power Apps
-Removes [records](/power-apps/maker/canvas-apps/working-with-tables.md#records) from a [data source](/power-apps/maker/canvas-apps/working-with-data-sources).
+Removes [records](/power-apps/maker/canvas-apps/working-with-tables#records) from a [data source](/power-apps/maker/canvas-apps/working-with-data-sources).
 
 ## Description
 ### Remove function
@@ -29,7 +29,7 @@ For [collections](/power-apps/maker/canvas-apps/working-with-data-sources#collec
 ### RemoveIf function
 Use the **RemoveIf** function to remove a record or records based on a condition or a set of conditions. Each condition can be any formula that results in a **true** or **false** and can reference [columns](/power-apps/maker/canvas-apps/working-with-tables#columns) of the data source by name. Each condition is evaluated individually for each record, and the record is removed if all conditions evaluate to **true**.
 
-**Remove** and **RemoveIf** return the modified data source as a [table](/power-apps/maker/canvas-apps/working-with-tables.md). You can use both functions only in [behavior formulas](/power-apps/maker/canvas-apps/working-with-formulas-in-depth).
+**Remove** and **RemoveIf** return the modified data source as a [table](/power-apps/maker/canvas-apps/working-with-tables). You can use both functions only in [behavior formulas](/power-apps/maker/canvas-apps/working-with-formulas-in-depth).
 
 You can also use the **[Clear](function-clear-collect-clearcollect.md)** function to remove all of the records in a collection.
 

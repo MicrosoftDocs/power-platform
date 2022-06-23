@@ -18,7 +18,7 @@ contributors:
   - tapanm-msft
 ---
 # GroupBy and Ungroup functions in Power Apps
-Groups and ungroups [records](/power-apps/maker/canvas-apps/working-with-tables.md#records) of a [table](/power-apps/maker/canvas-apps/working-with-tables).
+Groups and ungroups [records](/power-apps/maker/canvas-apps/working-with-tables#records) of a [table](/power-apps/maker/canvas-apps/working-with-tables).
 
 ## Description
 The **GroupBy** function returns a table with records grouped together based on the values in one or more [columns](/power-apps/maker/canvas-apps/working-with-tables#columns). Records in the same group are placed into a single record, with a column added that holds a nested table of the remaining columns.   

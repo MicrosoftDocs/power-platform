@@ -18,7 +18,7 @@ contributors:
   - tapanm-msft
 ---
 # Distinct function in Power Apps
-Summarizes [records](/power-apps/maker/canvas-apps/working-with-tables.md#records) of a [table](/power-apps/maker/canvas-apps/working-with-tables), removing duplicates.
+Summarizes [records](/power-apps/maker/canvas-apps/working-with-tables#records) of a [table](/power-apps/maker/canvas-apps/working-with-tables), removing duplicates.
 
 ## Description
 The **Distinct** function evaluates a formula across each record of a table and returns a one-column table of the results with duplicate values removed.  The name of the column is **Result**.  

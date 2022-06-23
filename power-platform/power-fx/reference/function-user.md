@@ -29,7 +29,7 @@ The **User** function returns a [record](/power-apps/maker/canvas-apps/working-w
 | --- | --- |
 | **User().Email** |Email address of the current user. The `User().Email` function returns the user's UPN and not the SMTP email address.|
 | **User().FullName** |Full name of the current user, including first and last names. |
-| **User().Image** |Image of the current user. This will be an image URL of the form "blob:*identifier*". Set the **[Image](/power-apps/maker/canvas-apps/controls/properties-visual.md)** property of the **[Image](/power-apps/maker/canvas-apps/controls/control-image)** control to this value to display the image in the app. |
+| **User().Image** |Image of the current user. This will be an image URL of the form "blob:*identifier*". Set the **[Image](/power-apps/maker/canvas-apps/controls/properties-visual)** property of the **[Image](/power-apps/maker/canvas-apps/controls/control-image)** control to this value to display the image in the app. |
 
 > [!NOTE]
 > The information returned is for the current Power Apps user.  It will match the "Account" information that is displayed in the Power Apps players and studio, which can be found outside of any authored apps.  This may not match the current user's information in Office 365 or other services.

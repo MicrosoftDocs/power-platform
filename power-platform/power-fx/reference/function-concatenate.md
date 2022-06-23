@@ -25,7 +25,7 @@ Concatenates individual strings of text and strings in [tables](/power-apps/make
 
 The **Concatenate** function concatenates a mix of individual strings and a single-column table of strings. When you use this function with individual strings, it's equivalent to using the **&** [operator](operators.md).
 
-The **Concat** function concatenates the result of a formula applied across all the [records](/power-apps/maker/canvas-apps/working-with-tables.md#records) of a table, resulting in a single string. Use this function to summarize the strings of a table, just as the **[Sum](function-aggregates.md)** function does for numbers.
+The **Concat** function concatenates the result of a formula applied across all the [records](/power-apps/maker/canvas-apps/working-with-tables.md#records) of a table, resulting in a single string. Use this function to summarize the strings of a table, just as the **[Sum](function-aggregates)** function does for numbers.
 
 [!INCLUDE [record-scope]../../includes/record-scope.md)]
 

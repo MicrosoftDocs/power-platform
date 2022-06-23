@@ -18,7 +18,7 @@ contributors:
   - tapanm-msft
 ---
 # Update and UpdateIf functions in Power Apps
-Updates [records](/power-apps/maker/canvas-apps/working-with-tables.md#records) in a [data source](/power-apps/maker/canvas-apps/working-with-data-sources).
+Updates [records](/power-apps/maker/canvas-apps/working-with-tables#records) in a [data source](/power-apps/maker/canvas-apps/working-with-data-sources).
 
 ## Description
 ### Update function
@@ -35,7 +35,7 @@ To specify a modification, use a change record that contains new property values
 
 Similar to **UpdateIf**, you can also use the **[Patch](function-patch.md)** function to change specific columns of a record without affecting other columns.
 
-Both **Update** and **UpdateIf** return the modified data source as a [table](/power-apps/maker/canvas-apps/working-with-tables.md). You must use either function in a [behavior formula](/power-apps/maker/canvas-apps/working-with-formulas-in-depth).
+Both **Update** and **UpdateIf** return the modified data source as a [table](/power-apps/maker/canvas-apps/working-with-tables). You must use either function in a [behavior formula](/power-apps/maker/canvas-apps/working-with-formulas-in-depth).
 
 ### Delegation
 [!INCLUDE [delegation-no]../../includes/delegation-no.md)]

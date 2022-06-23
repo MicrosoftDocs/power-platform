@@ -85,7 +85,7 @@ The **Label** control will show **f9168c5e-ceb2-4faa-b6bf-329bf39fa1e4**.
 
 #### Create a table of GUIDs
 
-1. Set the **[OnSelect](/power-apps/maker/canvas-apps/controls/properties-core.md)** property of a **[Button](/power-apps/maker/canvas-apps/controls/control-button)** control to this formula:
+1. Set the **[OnSelect](/power-apps/maker/canvas-apps/controls/properties-core)** property of a **[Button](/power-apps/maker/canvas-apps/controls/control-button)** control to this formula:
 
     ```powerapps-dot
     ClearCollect( NewGUIDs, ForAll( Sequence(5), GUID() ) )

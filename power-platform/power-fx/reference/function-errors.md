@@ -28,7 +28,7 @@ The **[Patch](function-patch.md)** function and other data functions don't direc
 You can avoid some errors before they happen by using the **[Validate](function-validate.md)** and **[DataSourceInfo](function-datasourceinfo.md)** functions.  See [working with data sources](/power-apps/maker/canvas-apps/working-with-data-sources) for more suggestions on how to work with and avoid errors.
 
 ## Description
-The **Errors** function returns a [table](/power-apps/maker/canvas-apps/working-with-tables.md) of errors that contains the following [columns](/power-apps/maker/canvas-apps/working-with-tables#columns):
+The **Errors** function returns a [table](/power-apps/maker/canvas-apps/working-with-tables) of errors that contains the following [columns](/power-apps/maker/canvas-apps/working-with-tables#columns):
 
 * **Record**.  The record in the data source that had the error.  If the error occurred during the creation of a record, this column will be *blank*.
 * **Column**.  The column that caused the error, if the error can be attributed to a single column. If not, this will be *blank*.

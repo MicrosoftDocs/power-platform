@@ -36,13 +36,13 @@ The **VarP** function calculates the variance of its arguments.
 You can supply the values for these functions as:
 
 * Separate arguments. For example, **Sum( 1, 2, 3 )** returns 6.
-* A [table](/power-apps/maker/canvas-apps/working-with-tables.md) and a formula to operate over that table.  The aggregate will be calculated on the values of the formula for each [record](/power-apps/maker/canvas-apps/working-with-tables#records).  
+* A [table](/power-apps/maker/canvas-apps/working-with-tables) and a formula to operate over that table.  The aggregate will be calculated on the values of the formula for each [record](/power-apps/maker/canvas-apps/working-with-tables#records).  
 
 [!INCLUDE [record-scope]../../includes/record-scope.md)]
 
 These functions operate on numeric values only. Other types of values, such as strings or records, are ignored. Use the **[Value](function-value.md)** function to convert a string into a number.
 
-The **Average**, **Max**, **Min**, and **Sum** functions can be delegated when used with a [data source that supports delegation for these functions](/power-apps/maker/canvas-apps/delegation-overview.md).  However, **StdevP** and **VarP** can't be delegated for any data sources.  If delegation is not supported, only the first portion of the data will be retrieved and then the function applied locally.  The result may not represent the complete story.  A delegation warning will appear at authoring time to remind you of this limitation and to suggest switching to delegable alternatives where possible. For more information, see the [delegation overview](/power-apps/maker/canvas-apps/delegation-overview).
+The **Average**, **Max**, **Min**, and **Sum** functions can be delegated when used with a [data source that supports delegation for these functions](/power-apps/maker/canvas-apps/delegation-overview).  However, **StdevP** and **VarP** can't be delegated for any data sources.  If delegation is not supported, only the first portion of the data will be retrieved and then the function applied locally.  The result may not represent the complete story.  A delegation warning will appear at authoring time to remind you of this limitation and to suggest switching to delegable alternatives where possible. For more information, see the [delegation overview](/power-apps/maker/canvas-apps/delegation-overview).
 
 ## Syntax
 **Average**( *NumericalFormula1*, [ *NumericalFormula2*, ... ] )<br>**Max**( *NumericalFormula1*, [ *NumericalFormula2*, ... ] )<br>**Min**( *NumericalFormula1*, [ *NumericalFormula2*, ... ] )<br>**Sum**( *NumericalFormula1*, [ *NumericalFormula2*, ... ] )<br>**StdevP**( *NumericalFormula1*, [ *NumericalFormula2*, ... ] )<br>**VarP**( *NumericalFormula1*, [ *NumericalFormula2*, ... ] )
@@ -56,7 +56,7 @@ The **Average**, **Max**, **Min**, and **Sum** functions can be delegated when u
 
 ## Examples
 ### Step by step
-Let's say that you had a [data source](/power-apps/maker/canvas-apps/working-with-data-sources.md) named **Sales** that contained a **CostPerUnit** column and a **UnitsSold** column, and you set the **[Text](/power-apps/maker/canvas-apps/controls/properties-core)** property of a label to this function:<br>
+Let's say that you had a [data source](/power-apps/maker/canvas-apps/working-with-data-sources) named **Sales** that contained a **CostPerUnit** column and a **UnitsSold** column, and you set the **[Text](/power-apps/maker/canvas-apps/controls/properties-core)** property of a label to this function:<br>
 **Sum(Sales, CostPerUnit * UnitsSold)**
 
 The label would show total sales by multiplying the values in those columns for each record and then adding the results from all records together:<br>![Calculate total sales from units sold and cost per unit.](./media/function-aggregates/total-sales.png)

@@ -29,7 +29,7 @@ The **Lower**, **Upper**, and **Proper** functions convert the case of letters i
 
 All three functions ignore characters that aren't letters.
 
-If you pass a single string, the return value is the converted version of that string.  If you pass a single-column [table](/power-apps/maker/canvas-apps/working-with-tables.md) that contains strings, the return value is a single-column table of converted strings. If you have a multi-column table, you can shape it into a single-column table, as [working with tables](/power-apps/maker/canvas-apps/working-with-tables) describes.
+If you pass a single string, the return value is the converted version of that string.  If you pass a single-column [table](/power-apps/maker/canvas-apps/working-with-tables) that contains strings, the return value is a single-column table of converted strings. If you have a multi-column table, you can shape it into a single-column table, as [working with tables](/power-apps/maker/canvas-apps/working-with-tables) describes.
 
 ## Syntax
 **Lower**( *String* )<br>**Upper**( *String* )<br>**Proper**( *String* )

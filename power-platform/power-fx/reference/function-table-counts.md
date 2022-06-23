@@ -19,7 +19,7 @@ contributors:
 ---
 # Count, CountA, CountIf, and CountRows functions in Power Apps
 
-Counts all [records](/power-apps/maker/canvas-apps/working-with-tables.md#records) in a [table](/power-apps/maker/canvas-apps/working-with-tables), or counts all records that satisfy a condition.
+Counts all [records](/power-apps/maker/canvas-apps/working-with-tables#records) in a [table](/power-apps/maker/canvas-apps/working-with-tables), or counts all records that satisfy a condition.
 
 ## Description
 The **Count** function counts the number of records that contain a number in a single-column table.
@@ -66,7 +66,7 @@ You need to enable the **Enhanced delegation for Microsoft Dataverse** option in
 
 ## Example
 
-1. Import or create a [collection](/power-apps/maker/canvas-apps/working-with-data-sources.md#collections) named **Inventory**, as the first subprocedure in [Show images and text in a gallery](/power-apps/maker/canvas-apps/show-images-text-gallery-sort-filter) describes.
+1. Import or create a [collection](/power-apps/maker/canvas-apps/working-with-data-sources#collections) named **Inventory**, as the first subprocedure in [Show images and text in a gallery](/power-apps/maker/canvas-apps/show-images-text-gallery-sort-filter) describes.
 2. Add a label, and set its **[Text](/power-apps/maker/canvas-apps/controls/properties-core)** property to this formula:
    
     **CountIf(Inventory, UnitsInStock < 30)**

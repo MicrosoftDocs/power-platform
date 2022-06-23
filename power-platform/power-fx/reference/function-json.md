@@ -56,7 +56,7 @@ Specify the optional *Format* argument to control how readable the result is and
 
 Use the [**ShowColumns** and **DropColumns**](function-table-shaping.md) functions to control which data the result includes and to remove unsupported data types.
 
-Because **JSON** can be both memory and compute intensive, you can use this function only in [behavior functions](/power-apps/maker/canvas-apps/working-with-formulas-in-depth.md). You can capture the result from **JSON** into a [variable](/power-apps/maker/canvas-apps/working-with-variables), which you can then use in data flow.
+Because **JSON** can be both memory and compute intensive, you can use this function only in [behavior functions](/power-apps/maker/canvas-apps/working-with-formulas-in-depth). You can capture the result from **JSON** into a [variable](/power-apps/maker/canvas-apps/working-with-variables), which you can then use in data flow.
 
 If a column has both a display name and a logical name, the result contains the logical name. Display names reflect the language of the app user and are, therefore, inappropriate for data transfer to a common service.
 

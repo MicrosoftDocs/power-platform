@@ -21,7 +21,7 @@ contributors:
 Tests whether a value is numeric.
 
 ## Description
-The **IsNumeric** function tests whether a value is numeric.  Other kinds of values include Boolean, string, [table](/power-apps/maker/canvas-apps/working-with-tables.md), and [record](/power-apps/maker/canvas-apps/working-with-tables#records).
+The **IsNumeric** function tests whether a value is numeric.  Other kinds of values include Boolean, string, [table](/power-apps/maker/canvas-apps/working-with-tables), and [record](/power-apps/maker/canvas-apps/working-with-tables#records).
 
 The return value is a Boolean **true** or **false**.
 

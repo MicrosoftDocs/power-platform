@@ -27,7 +27,7 @@ The **Left**, **Mid**, and **Right** functions return a portion of a string.
 * **Mid** returns the middle characters of a string.
 * **Right** returns the ending characters of a string.
 
-If you specify a single string as an argument, the function returns the portion that you requested of the string. If you specify a single-column [table](/power-apps/maker/canvas-apps/working-with-tables.md) that contains strings, the function returns a single-column table of the portions that you requested of those strings. If you specify a multi-column table, you can shape it into a single-column table, as [working with tables](/power-apps/maker/canvas-apps/working-with-tables) describes.
+If you specify a single string as an argument, the function returns the portion that you requested of the string. If you specify a single-column [table](/power-apps/maker/canvas-apps/working-with-tables) that contains strings, the function returns a single-column table of the portions that you requested of those strings. If you specify a multi-column table, you can shape it into a single-column table, as [working with tables](/power-apps/maker/canvas-apps/working-with-tables) describes.
 
 If the starting position is negative or beyond the end of the string, **Mid** returns *blank*.  You can check the length of a string by using the **[Len](function-len.md)** function. If you request more characters than the string contains, the function returns as many characters as possible.
 
@@ -67,7 +67,7 @@ Each example in this section extracts strings from the **Address** [column](/pow
 | **Right( ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;), 7 )** |Extracts the last seven characters of each string. |![Right.](media/function-left-mid-right/people-table-right.png) |
 
 ### Step-by-step example
-1. Import or create a [collection](/power-apps/maker/canvas-apps/working-with-data-sources.md#collections) named **Inventory**, and show it in a gallery, as the first procedure in [Show images and text in a gallery](/power-apps/maker/canvas-apps/show-images-text-gallery-sort-filter) describes.
+1. Import or create a [collection](/power-apps/maker/canvas-apps/working-with-data-sources#collections) named **Inventory**, and show it in a gallery, as the first procedure in [Show images and text in a gallery](/power-apps/maker/canvas-apps/show-images-text-gallery-sort-filter) describes.
 2. Set the **[Text](/power-apps/maker/canvas-apps/controls/properties-core)** property of the lower label in the gallery to this function:
    
     **Right(ThisItem.ProductName, 3)**

@@ -19,7 +19,7 @@ contributors:
 ---
 # Collect, Clear, and ClearCollect functions in Power Apps
 
-Creates and clears [collections](/power-apps/maker/canvas-apps/working-with-data-sources.md#collections) and adds [records](/power-apps/maker/canvas-apps/working-with-tables.md#records) to any [data source](/power-apps/maker/canvas-apps/working-with-data-sources).
+Creates and clears [collections](/power-apps/maker/canvas-apps/working-with-data-sources.md#collections) and adds [records](/power-apps/maker/canvas-apps/working-with-tables#records) to any [data source](/power-apps/maker/canvas-apps/working-with-data-sources).
 
 ## Description
 

@@ -74,7 +74,7 @@ When used in a [behavior formula](/power-apps/maker/canvas-apps/working-with-for
     ![Four screens displaying a label control with four different random decimal values for each of four different slider settings 70.899, 84.667, 90.134, 99.690.](media/function-rand/rand-slider-results.png)
 
 #### Create a table of random numbers with RandBetween
-1. Add a **[Button](/power-apps/maker/canvas-apps/controls/control-button.md)** control, and set its **[OnSelect](/power-apps/maker/canvas-apps/controls/properties-core)** property to this formula:
+1. Add a **[Button](/power-apps/maker/canvas-apps/controls/control-button)** control, and set its **[OnSelect](/power-apps/maker/canvas-apps/controls/properties-core)** property to this formula:
 
     **ClearCollect( RandomNumbers, ForAll( Sequence( 100 ), RandBetween( 1, 20 ) ))**
 

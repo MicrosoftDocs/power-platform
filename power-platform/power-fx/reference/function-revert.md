@@ -18,12 +18,12 @@ contributors:
   - tapanm-msft
 ---
 # Revert function in Power Apps
-Refreshes and clears errors for the [records](/power-apps/maker/canvas-apps/working-with-tables.md#records) of a [data source](/power-apps/maker/canvas-apps/working-with-data-sources).
+Refreshes and clears errors for the [records](/power-apps/maker/canvas-apps/working-with-tables#records) of a [data source](/power-apps/maker/canvas-apps/working-with-data-sources).
 
 ## Description
 The **Revert** function refreshes an entire data source or a single record in that data source. You'll see changes that other users made.
 
-For the records reverted, **Revert** also clears any errors from the [table](/power-apps/maker/canvas-apps/working-with-tables.md) that the **[Errors](function-errors.md)** function returned.
+For the records reverted, **Revert** also clears any errors from the [table](/power-apps/maker/canvas-apps/working-with-tables.md) that the **[Errors](function-errors)** function returned.
 
 If the **[Errors](function-errors.md)** function reports a conflict after a **[Patch](function-patch.md)** or other data operation, **Revert** the record to start with the conflicting version and reapply the change.
 

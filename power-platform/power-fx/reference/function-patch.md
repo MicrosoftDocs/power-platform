@@ -19,7 +19,7 @@ contributors:
 ---
 # Patch function in Power Apps
 
-Modifies or creates one or more [records](/power-apps/maker/canvas-apps/working-with-tables.md#records) in a [data source](/power-apps/maker/canvas-apps/working-with-data-sources), or merges records outside of a data source.
+Modifies or creates one or more [records](/power-apps/maker/canvas-apps/working-with-tables#records) in a [data source](/power-apps/maker/canvas-apps/working-with-data-sources), or merges records outside of a data source.
 
 Use the **Patch** function to modify records in complex situations, such as when you do updates that require no user interaction or use forms that span multiple screens.
 
@@ -45,7 +45,7 @@ Even if you're not working with a data source, you can use **Patch** to merge tw
 ### Modify or create a record in a data source
 To use this function with a data source, specify the data source, and then specify a base record:
 
-* To modify a record, the base record needs to have come from a data source.  The base record may have come through a gallery's **[Items](/power-apps/maker/canvas-apps/controls/properties-core.md)** property, been placed in a [context variable](/power-apps/maker/canvas-apps/working-with-variables#use-a-context-variable), or come through some other path. But, you can trace the base record back to the data source.  This is important as the record will include additional information to help find the record again for modification.  
+* To modify a record, the base record needs to have come from a data source.  The base record may have come through a gallery's **[Items](/power-apps/maker/canvas-apps/controls/properties-core)** property, been placed in a [context variable](/power-apps/maker/canvas-apps/working-with-variables#use-a-context-variable), or come through some other path. But, you can trace the base record back to the data source.  This is important as the record will include additional information to help find the record again for modification.  
 * To create a record, use the **[Defaults](function-defaults.md)** function to create a base record with default values.  
 
 Then specify one or more change records, each of which contains new property values that override property values in the base record. Change records are processed in order from the beginning of the argument list to the end, with later property values overriding earlier ones.
@@ -100,7 +100,7 @@ Specify two or more records that you want to merge. Records are processed in the
 
 ## Examples
 #### Modify or create a record (in a data source)
-In these examples, you'll modify or create a record in a data source, named **IceCream**, that contains the data in this [table](/power-apps/maker/canvas-apps/working-with-tables.md) and automatically generates the values in the **ID** [column](/power-apps/maker/canvas-apps/working-with-tables#columns):
+In these examples, you'll modify or create a record in a data source, named **IceCream**, that contains the data in this [table](/power-apps/maker/canvas-apps/working-with-tables) and automatically generates the values in the **ID** [column](/power-apps/maker/canvas-apps/working-with-tables#columns):
 
 ![Example icecream.](media/function-patch/icecream.png "Example icecream")
 

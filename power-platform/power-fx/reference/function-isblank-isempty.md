@@ -19,7 +19,7 @@ contributors:
   - tapanm-msft
 ---
 # Blank, Coalesce, IsBlank, and IsEmpty functions in Power Apps
-Tests whether a value is blank or a [table](/power-apps/maker/canvas-apps/working-with-tables.md) contains no [records](/power-apps/maker/canvas-apps/working-with-tables#records), and provides a way to create *blank* values.
+Tests whether a value is blank or a [table](/power-apps/maker/canvas-apps/working-with-tables) contains no [records](/power-apps/maker/canvas-apps/working-with-tables#records), and provides a way to create *blank* values.
 
 ## Overview
 *Blank* is a placeholder for "no value" or "unknown value."  For example, a **[Combo box](/power-apps/maker/canvas-apps/controls/control-combo-box)** control's **Selected** property is *blank* if the user hasn't made a selection. Many data sources can store and return NULL values, which are represented in Power Apps as *blank*.

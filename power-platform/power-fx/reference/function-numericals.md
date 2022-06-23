@@ -33,7 +33,7 @@ The **Log** function returns the logarithm of its first argument in the base spe
 
 The **Sqrt** function returns the number that, when multiplied by itself, equals its argument.
 
-If you pass a single number, the return value is a single result based on the function called.  If you pass a single-column [table](/power-apps/maker/canvas-apps/working-with-tables.md) that contains numbers, the return value is a single-column table of results, one result for each record in the argument's table. If you have a multi-column table, you can shape it into a single-column table, as [working with tables](/power-apps/maker/canvas-apps/working-with-tables) describes.  
+If you pass a single number, the return value is a single result based on the function called.  If you pass a single-column [table](/power-apps/maker/canvas-apps/working-with-tables) that contains numbers, the return value is a single-column table of results, one result for each record in the argument's table. If you have a multi-column table, you can shape it into a single-column table, as [working with tables](/power-apps/maker/canvas-apps/working-with-tables) describes.  
 
 If an argument would result in an undefined valued, the result is *blank*.  This can happen, for example, with square roots and logarithms of negative numbers.
 

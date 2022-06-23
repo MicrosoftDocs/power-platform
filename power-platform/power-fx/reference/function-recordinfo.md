@@ -18,7 +18,7 @@ contributors:
   - tapanm-msft
 ---
 # RecordInfo function in Power Apps
-Provides information about a [record](/power-apps/maker/canvas-apps/working-with-tables.md#elements-of-a-table) of a [data source](/power-apps/maker/canvas-apps/working-with-data-sources).
+Provides information about a [record](/power-apps/maker/canvas-apps/working-with-tables#elements-of-a-table) of a [data source](/power-apps/maker/canvas-apps/working-with-data-sources).
 
 Use **RecordInfo** to obtain information about a particular record of a data source.  The data source must be tabular and compatible with the [**Remove**](function-remove-removeif.md) and [**Patch**](function-patch.md) functions.  
 

@@ -95,7 +95,7 @@ Following simple example captures and stores the names and pictures of everyday 
 
 1. Create a blank canvas app with a tablet layout.  For more details, read [creating an app from a template](/power-apps/maker/canvas-apps/get-started-test-drive) and select **Tablet layout** under **Blank app**.  
 
-1. Add a [**Text input**](/power-apps/maker/canvas-apps/controls/control-text-input.md) control and a [**Camera**](/power-apps/maker/canvas-apps/controls/control-camera) control and arrange them roughly as shown:
+1. Add a [**Text input**](/power-apps/maker/canvas-apps/controls/control-text-input) control and a [**Camera**](/power-apps/maker/canvas-apps/controls/control-camera) control and arrange them roughly as shown:
     > [!div class="mx-imgBorder"]  
     > ![A text input and camera control added to a blank screen.](media/function-savedata-loaddata/simple-text-camera.png)
 
