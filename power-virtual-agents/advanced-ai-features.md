@@ -2,7 +2,7 @@
 title: "Advanced AI features (contains video)"
 description: "Use advanced AI features in Power Virtual Agents to improve how your bots interact with your bot users."
 keywords: "PVA, AI, advanced, topic intent, intent triggering"
-ms.date: 01/25/2022
+ms.date: 06/23/2022
 
 ms.topic: how-to
 author: iaanw
