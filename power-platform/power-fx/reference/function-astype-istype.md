@@ -63,7 +63,7 @@ Similarly, you can use record references with the [**Patch**](function-patch.md)
 Patch( Accounts, First( Accounts ), { Owner: First( Teams ) } )
 ```  
 
-If used in a record context, such as within a [**Gallery**](/power-apps/maker/canvas-apps/controls/control-gallery) or [**Edit form**](/power-apps/maker/canvas-apps/controls/control-form-detail) control, you might need to use the [global disambiguation operator](operators#disambiguation-operator) to reference the table type. For example, this formula would be effective for a gallery that's displaying a list of contacts where **Company Name** is a **Customer** lookup:
+If used in a record context, such as within a [**Gallery**](/power-apps/maker/canvas-apps/controls/control-gallery) or [**Edit form**](/power-apps/maker/canvas-apps/controls/control-form-detail) control, you might need to use the [global disambiguation operator](operators.md#disambiguation-operator) to reference the table type. For example, this formula would be effective for a gallery that's displaying a list of contacts where **Company Name** is a **Customer** lookup:
 
 ```powerapps-dot
 If( IsType( ThisItem.'Company Name', Accounts ),
