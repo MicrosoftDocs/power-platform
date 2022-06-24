@@ -319,7 +319,7 @@ For information about the programmatic interface for managing configuration and 
   
 #### How to view detailed information about the records that failed to sync (Preview)
 
-You can now download the failed records directly from within the Data Export Service user interface. This feature is currently in Preview and would be great for you to test and provide feedback.
+You can download the failed records directly from within the Data Export Service user interface. This feature is currently in Preview and would be great for you to test and provide feedback.
 
 **Steps to download failed records:**
 
