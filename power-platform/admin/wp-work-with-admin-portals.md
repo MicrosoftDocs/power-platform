@@ -17,7 +17,7 @@ search.app:
 ---
 # Working with the admin portals
 
-In a perfect world, as an administrator you would only visit a single portal to perform all your administrative tasks but given the scope and breadth of the different products involved and their differing release cycles, there are multiple portals with which you will interact. The following outlines the different portals and the most common tasks you perform there.
+We've consolidated most admin tasks into the Power Platform admin center. There are a few other portals you should be aware of. The following outlines the different portals and the most common tasks you perform there.
 
 |Portal  |Common Tasks  |
 |---------|---------|
