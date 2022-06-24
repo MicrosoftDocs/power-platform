@@ -52,7 +52,7 @@ This topic describes how to do these three steps. After you've finished these st
 
 ## Create your Azure AD app
 
-Follow the instructions for [SSO support for tabs](/microsoftteams/platform/tabs/how-to/authentication/tab-sso-overview) to create your Azure AD app.
+Follow the instructions for [SSO support for tabs](/microsoftteams/platform/tabs/how-to/authentication/tab-sso-register-aad) to create your Azure AD app.
 
 ## Update your Azure AD app registration
 
