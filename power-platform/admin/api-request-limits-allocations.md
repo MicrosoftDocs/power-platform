@@ -216,7 +216,7 @@ Here's a sample of a detailed usage report:
 
 ### What tools can I use to monitor and analyze Power Platform requests across the platform?
 
-Reporting for Power Platform Request usage in preview is available now in the Power Platform admin center.
+Reporting for Power Platform Request usage in preview is available in the Power Platform admin center.
 
 ### What are the timelines for Power Platform Request limits?
 

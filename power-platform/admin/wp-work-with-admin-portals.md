@@ -1,6 +1,6 @@
 ---
 title: "Working with the admin portals and admin centers"
-description: "Learn which admin portal or admin center to use for common administrative tasks. Many of these tasks can now be performed in the Microsoft Power Platform admin center."
+description: "Learn which admin portal or admin center to use for common administrative tasks. Many of these tasks can be performed in the Microsoft Power Platform admin center."
 author: jimholtz
 ms.component: pa-admin
 ms.topic: conceptual

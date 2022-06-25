@@ -34,7 +34,7 @@ Power Platform allows makers to create and share [custom connectors](/connectors
 
 ### Environment-level DLP policies
 
-Environment admins can now see all custom connectors in their environments alongside of pre-built connectors in the **Connectors** tab of the **Data Policies** wizard. Similar to pre-built connectors, admins can classify custom connectors into **Blocked**/**Business**/**Non-Business** categories. Custom connectors that are not explicitly classified will be put under the default group (or **Non-business** if no default group setting is chosen by admins explicitly).
+Environment admins can see all custom connectors in their environments alongside of pre-built connectors in the **Connectors** tab of the **Data Policies** wizard. Similar to pre-built connectors, admins can classify custom connectors into **Blocked**/**Business**/**Non-Business** categories. Custom connectors that are not explicitly classified will be put under the default group (or **Non-business** if no default group setting is chosen by admins explicitly).
 
 :::image type="content" source="media/dlp-environment-level-policy.png" alt-text="Environment-level DLP policies":::
 
