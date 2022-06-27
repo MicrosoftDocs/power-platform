@@ -43,7 +43,7 @@ The following web client admin settings have moved.
 
 ### Security settings
 
-These security settings are now managed in the Power Platform admin center.
+These security settings are managed in the Power Platform admin center.
 
 - [Dataverse teams management](manage-teams.md)
 - [Assign security roles to users in an environment that has a Dataverse database](database-security.md#assign-security-roles-to-users-in-an-environment-that-has-a-dataverse-database)

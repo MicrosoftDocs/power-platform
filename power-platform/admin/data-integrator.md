@@ -367,7 +367,7 @@ Additionally, after creating a new integration project, when you choose **Select
 
 ## Advanced data transformation and filtering 
 
-With Power Query support, we now provide advanced filtering and data transformation of source data. Power Query enables users to reshape data to fit their needs, with an easy-to-use, engaging, and no-code user experience. You can enable this on a project-by-project basis. 
+With Power Query support, we provide advanced filtering and data transformation of source data. Power Query enables users to reshape data to fit their needs, with an easy-to-use, engaging, and no-code user experience. You can enable this on a project-by-project basis. 
 
 ### How to enable advanced query and filtering
 
