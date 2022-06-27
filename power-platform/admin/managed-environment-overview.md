@@ -1,6 +1,6 @@
 ---
-title: "Managed Environment overview | MicrosoftDocs"
-description: Use Managed Environment to gain more visibility and control of your Dynamics 365 applications and flows, with less effort.
+title: "Managed Environments overview | MicrosoftDocs"
+description: Use Managed Environments to gain more visibility and control of your Dynamics 365 applications and flows, with less effort.
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 06/27/2022
@@ -20,11 +20,11 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Managed Environment overview
+# Managed Environments for Power Protect overview
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Managed Environment is a suite of capabilities that allows admins to manage Power Platform at scale with more control, less effort, and more insights. Admins can enable Managed Environment on any type of environment. There are four primary elements of Managed Environment: 
+Managed Environments for Power Protect is a suite of capabilities that allows admins to manage Power Platform at scale with more control, less effort, and more insights. Admins can enable Managed Environments on any type of environment. There are four primary elements of Managed Environments: 
 
 - [Enable Managed Environment](managed-environment-enable.md)
 - [Weekly digests](managed-environment-weekly-digests.md)
@@ -38,19 +38,19 @@ Managed Environment is a suite of capabilities that allows admins to manage Powe
 
 ## License considerations
 
-Managed Environment represents a value-add on top of  existing premium Power Platform capabilities. All applications and flows in a managed environment are premium and can be licensed using any of the Power Platform licensing options (per user, per app/flow or pay-as-you-go) or Dynamics 365 licenses that give premium usage rights. 
+Managed Environments represents a value-add on top of  existing premium Power Platform capabilities. All applications and flows in a managed environments are premium and can be licensed using any of the Power Platform licensing options (per user, per app/flow or pay-as-you-go) or Dynamics 365 licenses that give premium usage rights. 
 
-Any type of environment can be managed. The semantics of trial environment type do not change when the environment is managed. Details on licensing implications for assets in the Default environment will be announced before GA.
+Any type of environments can be managed. The semantics of trial environments type do not change when the environments is managed. Details on licensing implications for assets in the Default environments will be announced before GA.
 
-During the public preview the premium license requirement for applications and flows within a managed environment is not enforced. 
+During the public preview the premium license requirement for applications and flows within a managed environments is not enforced. 
 
 |  | | |
 |---------|---------|---------|
 |:::image type="content" source="media/non-managed-environment-left.png" alt-text="Non-managed environments" border="false":::     | :::image type="content" source="media/managed-environment-arrow.png" alt-text="arrow" border="false":::        | :::image type="content" source="media/managed-environment-right.png" alt-text="managed environments" border="false":::        |
-|<ul><li>No Managed Environment features​</li> <br /><li>Premium and non-premium assets (apps/flows)​</li><br /><li>Users with qualifying and non-qualifying licenses</li></ul>     |         | <ul><li>Includes Managed Environment features​ </li><br /><li>All low code assets (apps/flows) become premium ​</li><br /> <li>Users must have a qualifying license to access the assets </li></ul>       |
+|<ul><li>No Managed Environments features​</li> <br /><li>Premium and non-premium assets (apps/flows)​</li><br /><li>Users with qualifying and non-qualifying licenses</li></ul>     |         | <ul><li>Includes Managed Environments features​ </li><br /><li>All low code assets (apps/flows) become premium ​</li><br /> <li>Users must have a qualifying license to access the assets </li></ul>       |
 
 ### See also  
-[Enable Managed Environment](managed-environment-enable.md) <br />
+[Enable Managed Environments](managed-environment-enable.md) <br />
 [Weekly digests](managed-environment-weekly-digests.md) <br />
 [Sharing limits](managed-environment-sharing-limits.md)  <br />
 [Data policies](managed-environment-data-policies.md)

@@ -150,7 +150,7 @@
           href: admin-view-apps.md
         - name: Language collations 
           href: language-collations.md            
-      - name: Managed Environment (preview)     
+      - name: Managed Environments (preview)     
         items: 
         - name: Overview
           href: managed-environment-overview.md
