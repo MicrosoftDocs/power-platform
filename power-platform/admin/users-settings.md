@@ -17,7 +17,7 @@ search.app:
 ---
 # User settings
 
-Managing user settings can now be done in the Power Platform admin center. Use the following steps to change user settings.
+Managing user settings can be done in the Power Platform admin center. Use the following steps to change user settings.
 
 1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment. 
 

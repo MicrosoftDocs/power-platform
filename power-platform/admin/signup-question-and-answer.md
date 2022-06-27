@@ -64,7 +64,7 @@ Finally, if your company wants to restrict the use of its data in Microsoft Powe
 ## Administration of Power Apps
 
 ### Why has the Power Apps icon appeared in the Microsoft 365 app launcher?
-Microsoft Power Apps is a fundamental part of the Microsoft 365 suite and is enabled as a service as a part of existing Microsoft 365 SKU's. As users everywhere in the world can now use Microsoft Power Apps, it appears in 'All apps' in the app launcher screen. See [Licensing overview](pricing-billing-skus.md) to understand which Microsoft 365 SKUs now include Power Apps.
+Microsoft Power Apps is a fundamental part of the Microsoft 365 suite and is enabled as a service as a part of existing Microsoft 365 SKU's. As users everywhere in the world can use Microsoft Power Apps, it appears in 'All apps' in the app launcher screen. See [Licensing overview](pricing-billing-skus.md) to understand which Microsoft 365 SKUs include Power Apps.
 
 See the following section if you'd like to remove the Power Apps tile from 'All apps' by default.
 

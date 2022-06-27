@@ -24,9 +24,9 @@ search.app:
 ## Japan GEO expansion announcement  
   
 ### What is Microsoft announcing?  
-Microsoft Power Platform and Dynamics 365 apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), are now available as a service within the Japan datacenters.  
+Microsoft Power Platform and Dynamics 365 apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), are available as a service within the Japan datacenters.  
   
- In addition, Power Platform and Dynamics 365 apps are currently available in 130 markets and 44 languages enabling us to sell side-by-side with [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] in the majority of the markets worldwide. With the inclusion of Japan, our global customers will now be served from datacenters in 5 global regions around the world.  
+ In addition, Power Platform and Dynamics 365 apps are currently available in 130 markets and 44 languages enabling us to sell side-by-side with [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] in the majority of the markets worldwide. With the inclusion of Japan, our global customers will be served from datacenters in 5 global regions around the world.  
   
  This marks an important step for on our cloud journey to serve our customers and partners in Japan (Japan GEO). By bringing Power Platform and Dynamics 365 apps to the local region we will be able to serve our customers more effectively and with better performance while also ensuring compliance with local requirements.  
   
