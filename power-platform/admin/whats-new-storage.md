@@ -19,6 +19,8 @@ search.app:
 
 # What's new about storage 
 
+<!-- this contains text that should not yet go live, see Girish email -->
+
 We've made some key enhancements to admin experiences for the Microsoft Power Platform admin center:
 
 - Storage reporting is based on customer licenses and capacity add-ons.
