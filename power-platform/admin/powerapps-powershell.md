@@ -5,7 +5,7 @@ author: laneswenka
 ms.reviewer: jimholtz
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 02/14/2022
+ms.date: 06/13/2022
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -105,7 +105,7 @@ Users with a valid Power Apps license can perform the operations in these cmdlet
 | --- | --- |
 | Add a canvas app to a Microsoft Dataverse solution | Set-PowerAppAsSolutionAware |
 | Read environments | Get-PowerAppEnvironment *(previously Get-PowerAppsEnvironment)* <br> Get-FlowEnvironment |
-| Read, update, and delete a canvas app | Get-PowerApp *(previously Get-App)* <br> Remove-PowerApp *(previously Remove-App)* <br> Publish-PowerApp *(previously Publish-App)*<br />Set-AppDisplayName *(previously Set-PowerAppDisplayName)*<br> Get-PowerAppVersion *(previously Get-AppVersion)* <br> [Restore-PowerAppEnvironment](/powershell/module/microsoft.powerapps.administration.powershell/restore-powerappenvironment) *(previously Restore-AppVersion)* |
+| Read, update, and delete a canvas app | Get-PowerApp *(previously Get-App)* <br> Remove-PowerApp *(previously Remove-App)* <br> Publish-PowerApp *(previously Publish-App)*<br />Set-PowerAppDisplayName *(previously Set-AppDisplayName)*<br> Get-PowerAppVersion *(previously Get-AppVersion)* <br> [Restore-PowerAppEnvironment](/powershell/module/microsoft.powerapps.administration.powershell/restore-powerappenvironment) *(previously Restore-AppVersion)* |
 | Read, update, and delete canvas app permissions | [Get-AdminPowerAppRoleAssignment](/powershell/module/microsoft.powerapps.administration.powershell/get-adminpowerapproleassignment) *(previously Get-AppRoleAssignment)* <br>  [Remove-AdminPowerAppRoleAssignment](/powershell/module/microsoft.powerapps.administration.powershell/remove-adminpowerapproleassignment) *(previously Remove-AppRoleAssignment)* |
 | Read, update, and delete a flow | [Get-AdminFlow](/powershell/module/microsoft.powerapps.administration.powershell/get-adminflow) <br> [Enable-AdminFlow](/powershell/module/microsoft.powerapps.administration.powershell/enable-adminflow) <br> [Disable-AdminFlow](/powershell/module/microsoft.powerapps.administration.powershell/disable-adminflow) <br> [Remove-AdminFlow](/powershell/module/microsoft.powerapps.administration.powershell/remove-adminflow) |
 | Read, update, and delete flow permissions | [Get-AdminFlowOwnerRole](/powershell/module/microsoft.powerapps.administration.powershell/get-adminflowownerrole) <br> [Set-AdminFlowOwnerRole](/powershell/module/microsoft.powerapps.administration.powershell/set-adminflowownerrole) <br> [Remove-AdminFlowOwnerRole](/powershell/module/microsoft.powerapps.administration.powershell/remove-adminflowownerrole) |
@@ -402,7 +402,7 @@ Displays a list of all API connections you have in the default environment. Nati
 Get-AdminPowerAppConnector
 ```
 
-Returns a list of all custom connector details in the tenant.
+Returns a list of all custom connector details in the tenant. Does not return custom connectors that are in a solution. This is a known limitation.
 
 ### Data loss prevention (DLP) policy commands 
 

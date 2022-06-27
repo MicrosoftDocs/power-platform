@@ -38,7 +38,7 @@ Due to certain technological dependencies, the following features listed will no
 - [Manage your documents using SharePoint](manage-documents-using-sharepoint.md) isn’t supported with Dataverse services operated by 21Vianet. 
 - [Search for rows in an app](/powerapps/user/search) or **Categorized Search** used for searching rows across multiple tables will be unavailable.
 - [Microsoft 365 Groups](/dynamics365/customerengagement/on-premises/basics/collaborate-with-colleagues-using-office-365-groups) feature used for shared workspace for emails, conversations, files, and events in Dataverse services will be unavailable.
-- [Online Management API](/powerapps/developer/common-data-service/online-management-api) (Admin API) enables customers to create and manage the Dataverse environments using REST API will be unavailable.
+- [Online Management API](/powerapps/developer/common-data-service/online-management-api) (Admin API) enables customers to create and manage the environments using REST API will be unavailable.
 - [Company News Timeline](/dynamics365/customer-engagement/company-news-timeline/get-company-news-timeline-dynamics-365-phones-tablets) provides valuable insights from the latest news about tenant customers on the phone or tablet. This feature will be unavailable.
 - [Global Discovery Service API](/powerapps/developer/common-data-service/webapi/discover-url-organization-web-api) which programmatically enables customer applications to discover user organization (also known as environment) and find environments across regions will not be available.
 - The service health Organization Insights feature will be unavailable.

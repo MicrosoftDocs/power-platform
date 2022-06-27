@@ -319,7 +319,7 @@ For information about the programmatic interface for managing configuration and 
   
 #### How to view detailed information about the records that failed to sync (Preview)
 
-You can now download the failed records directly from within the Data Export Service user interface. This feature is currently in Preview and would be great for you to test and provide feedback.
+You can download the failed records directly from within the Data Export Service user interface. This feature is currently in Preview and would be great for you to test and provide feedback.
 
 **Steps to download failed records:**
 
@@ -572,7 +572,7 @@ EXEC SP_EXECUTESQL @sql;
   
 ## Azure SQL database static IP addresses used by the Data Export Service  
 
- In [!INCLUDE[pn_Azure_SQL_Database_long](../includes/pn-azure-sql-database-long.md)], click **Set server firewall**, turn **Allow access to Azure services** to **OFF**, click **Add client IP**, and then add the IP addresses appropriate for the region of your Dynamics 365 environment. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Azure: Configure an Azure SQL Database server-level firewall rule using the Azure Porta](/azure/azure-sql/database/firewall-configure)l  
+ In [!INCLUDE[pn_Azure_SQL_Database_long](../includes/pn-azure-sql-database-long.md)], click **Set server firewall**, turn **Allow access to Azure services** to **OFF**, click **Add client IP**, and then add the IP addresses appropriate for the region of your environment. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Azure: Configure an Azure SQL Database server-level firewall rule using the Azure Porta](/azure/azure-sql/database/firewall-configure)l  
   
 |Region| New IP address| Old IP address |
 |------------|----------------|  

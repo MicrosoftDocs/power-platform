@@ -1,7 +1,7 @@
 ---
 title: "Migrate an environment to a different tenant"
 description: "Learn about the impact of migrating an environment from one tenant to another. Review the prerequisites and considerations before submitting a request." 
-ms.date: 06/10/2022
+ms.date: 06/13/2022
 ms.topic: conceptual
 applies_to: 
   - "Dynamics 365 (online)"
@@ -47,7 +47,7 @@ There are no user interface changes or version changes as part of this move. You
 
 | Supported | Not fully supported<sup>*</sup> |
 |-------------------------|-------------------------|
-| <ul></br><li>Dataverse</li></br><li>Dynamics apps</li></br></ul> | <ul></br><li>Power Apps</li></br><li>Power Automate</li></br><li>Power Virtual Agents</li></br></ul> |
+| <ul><li>Dataverse</li><li>Dynamics apps</li></ul> | <ul><li>Canvas app</li><li>[Component library](/power-apps/maker/canvas-apps/component-library)</li><li>[Custom pages](/power-apps/maker/model-driven-apps/model-app-page-overview)</li><li>Power Automate</li><li>Power Virtual Agents</li></ul> |
 
 <sup>*</sup>There may be potential data loss during migration and additional steps required. [Confirm if any of the solutions below are installed in the environments to be migrated, as these may require additional steps either from you or Support.](#confirm-if-any-of-the-solutions-below-are-installed-in-the-environments-to-be-migrated-as-these-may-require-additional-steps-either-from-you-or-support)
 
@@ -55,7 +55,7 @@ There are no user interface changes or version changes as part of this move. You
 
 | Supported | Not supported |
 |-------------------------|-------------------------|
-| <ul></br><li>Migrating production environment</li></br><li>Migrating sandbox environment</li></br><li>Migrating tenants from GCC to GCC</li></br><li>One or multiple environments</li></br></ul> | <ul></br><li>Migrating default environment</li></br><li>Migrating teams environment</li></br><li>Migrating trial environment</li></br><li>Migrating demo environment</li></br><li>Migrating  developer environment</li></br><li>Migrating tenants from GCC to another geo or from another geo to GCC</li></ul> |
+| <ul><li>Migrating production environment</li><li>Migrating sandbox environment</li><li>Migrating tenants from GCC to GCC</li><li>One or multiple environments</li></ul> | <ul><li>Migrating default environment</li><li>Migrating teams environment</li><li>Migrating trial environment</li><li>Migrating demo environment</li><li>Migrating  developer environment</li><li>Migrating tenants from GCC to another geo or from another geo to GCC</li></ul> |
 
 ### Migration flow
 Once a migration request is submitted, the support team is engaged to review the request manually. Below is the list of steps performed during the entire migration process.
