@@ -1,7 +1,6 @@
 - name: Microsoft Power Fx
   items:
     - name: Power Fx
-      expanded: true
       items: 
         - name: Overview
           href: overview.md
