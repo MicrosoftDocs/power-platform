@@ -1,6 +1,7 @@
 - name: Microsoft Power Fx
   items:
     - name: Power Fx
+      expanded: true
       items: 
         - name: Overview
           href: overview.md
@@ -410,5 +411,5 @@
             href: reference/function-with.md
           - name: Year
             href: reference/function-datetime-parts.md
-        - name: Power Apps Documentation 
-          href: /powerapps
+        - name: Use Power Fx formulas in Power Apps 
+          href: /power-apps/maker/canvas-apps/working-with-formulas
