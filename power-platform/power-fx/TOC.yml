@@ -1,414 +1,414 @@
 - name: Power Fx
   items:
-    name: Microsoft Power Fx
-    items: 
-    - name: Overview
-      href: overview.md
-    - name: Expression grammar
-      href: expression-grammar.md
-    - name: YAML formula grammar
-      href: yaml-formula-grammar.md
-    - name: Global apps
-      href: global.md
-    - name: Data types
-      href: data-types.md 
-    - name: Imperatives
-      href: imperative.md
-    - name: Operators
-      href: operators.md
-    - name: Tables
-      href: tables.md 
-    - name: Variables
-      href: variables.md
-    - name: Formula reference
-      items:
-      - name: Overview
-        href: formula-reference.md
-      - name: Abs
-        href: reference/function-numericals.md
-      - name: Acceleration
-        href: reference/signals.md
-      - name: Acos
-        href: reference/function-trig.md
-      - name: Acot
-        href: reference/function-trig.md
-      - name: AddColumns
-        href: reference/function-table-shaping.md
-      - name: And
-        href: reference/function-logicals.md
-      - name: App
-        href: reference/object-app.md
-      - name: As
-        href: reference/operators.md#thisitem-thisrecord-and-as-operators
-      - name: Asin
-        href: reference/function-trig.md
-      - name: Assert
-        href: reference/function-assert.md
-      - name: AsType
-        href: reference/function-astype-istype.md
-      - name: Atan
-        href: reference/function-trig.md
-      - name: Atan2
-        href: reference/function-trig.md
-      - name: Average
-        href: reference/function-aggregates.md
-      - name: Back
-        href: reference/function-navigate.md
-      - name: Blank
-        href: reference/function-isblank-isempty.md
-      - name: Calendar
-        href: reference/function-clock-calendar.md
-      - name: Char
-        href: reference/function-char.md
-      - name: Choices
-        href: reference/function-choices.md
-      - name: Clear
-        href: reference/function-clear-collect-clearcollect.md
-      - name: ClearCollect
-        href: reference/function-clear-collect-clearcollect.md
-      - name: Clock
-        href: reference/function-clock-calendar.md
-      - name: Coalesce
-        href: reference/function-isblank-isempty.md
-      - name: Collect
-        href: reference/function-clear-collect-clearcollect.md
-      - name: Color
-        href: reference/function-colors.md
-      - name: ColorFade
-        href: reference/function-colors.md
-      - name: ColorValue
-        href: reference/function-colors.md
-      - name: Compass
-        href: reference/signals.md
-      - name: Concat
-        href: reference/function-concatenate.md
-      - name: Concatenate
-        href: reference/function-concatenate.md
-      - name: Concurrent
-        href: reference/function-concurrent.md
-      - name: Connection
-        href: reference/signals.md
-      - name: Count
-        href: reference/function-table-counts.md
-      - name: Cos
-        href: reference/function-trig.md
-      - name: Cot
-        href: reference/function-trig.md
-      - name: CountA
-        href: reference/function-table-counts.md
-      - name: CountIf
-        href: reference/function-table-counts.md
-      - name: CountRows
-        href: reference/function-table-counts.md
-      - name: Data types
-        href: reference/data-types.md
-      - name: DataSourceInfo
-        href: reference/function-datasourceinfo.md
-      - name: Date
-        href: reference/function-date-time.md
-      - name: DateAdd
-        href: reference/function-dateadd-datediff.md
-      - name: DateDiff
-        href: reference/function-dateadd-datediff.md
-      - name: DateTimeValue
-        href: reference/function-datevalue-timevalue.md
-      - name: DateValue
-        href: reference/function-datevalue-timevalue.md
-      - name: Day
-        href: reference/function-datetime-parts.md
-      - name: Defaults
-        href: reference/function-defaults.md
-      - name: Degrees
-        href: reference/function-trig.md
-      - name: Disable
-        href: reference/function-enable-disable.md
-      - name: Distinct
-        href: reference/function-distinct.md
-      - name: Download
-        href: reference/function-download.md
-      - name: DropColumns
-        href: reference/function-table-shaping.md
-      - name: EditForm
-        href: reference/function-form.md
-      - name: Enable
-        href: reference/function-enable-disable.md
-      - name: EncodeUrl
-        href: reference/function-encode-decode.md
-      - name: EndsWith
-        href: reference/function-startswith.md
-      - name: Error
-        href: reference/function-iferror.md
-      - name: Errors
-        href: reference/function-errors.md
-      - name: exactin
-        href: reference/operators.md#in-and-exactin-operators
-      - name: Exit
-        href: reference/function-exit.md
-      - name: Exp
-        href: reference/function-numericals.md
-      - name: Filter
-        href: reference/function-filter-lookup.md
-      - name: Find
-        href: reference/function-find.md
-      - name: First
-        href: reference/function-first-last.md
-      - name: FirstN
-        href: reference/function-first-last.md
-      - name: ForAll
-        href: reference/function-forall.md
-      - name: GroupBy
-        href: reference/function-groupby.md
-      - name: GUID
-        href: reference/function-guid.md
-      - name: HashTags
-        href: reference/function-hashtags.md
-      - name: Hour
-        href: reference/function-datetime-parts.md
-      - name: Identifiers
-        href: reference/operators.md
-      - name: If
-        href: reference/function-if.md
-      - name: IfError
-        href: reference/function-iferror.md
-      - name: in
-        href: reference/operators.md#in-and-exactin-operators
-      - name: Index
-        href: reference/function-first-last.md
-      - name: Int
-        href: reference/function-round.md
-      - name: IsBlank
-        href: reference/function-isblank-isempty.md
-      - name: IsBlankOrError
-        href: reference/function-iferror.md    
-      - name: IsEmpty
-        href: reference/function-isblank-isempty.md
-      - name: IsError
-        href: reference/function-iferror.md
-      - name: IsMatch
-        href: reference/function-ismatch.md
-      - name: IsNumeric
-        href: reference/function-isnumeric.md
-      - name: ISOWeekNum
-        href: reference/function-weeknum.md    
-      - name: IsToday
-        href: reference/function-now-today-istoday.md
-      - name: IsType
-        href: reference/function-astype-istype.md
-      - name: IsUTCToday
-        href: reference/function-now-today-istoday.md    
-      - name: JSON
-        href: reference/function-json.md
-      - name: Language
-        href: reference/function-language.md
-      - name: Last
-        href: reference/function-first-last.md
-      - name: LastN
-        href: reference/function-first-last.md
-      - name: Launch
-        href: reference/function-param.md
-      - name: Left
-        href: reference/function-left-mid-right.md
-      - name: Len
-        href: reference/function-len.md
-      - name: Ln
-        href: reference/function-numericals.md
-      - name: LoadData
-        href: reference/function-savedata-loaddata.md
-      - name: Location
-        href: reference/signals.md
-      - name: LookUp
-        href: reference/function-filter-lookup.md
-      - name: Lower
-        href: reference/function-lower-upper-proper.md
-      - name: Match
-        href: reference/function-ismatch.md
-      - name: MatchAll
-        href: reference/function-ismatch.md
-      - name: Max
-        href: reference/function-aggregates.md
-      - name: Mid
-        href: reference/function-left-mid-right.md
-      - name: Min
-        href: reference/function-aggregates.md
-      - name: Minute
-        href: reference/function-datetime-parts.md
-      - name: Mod
-        href: reference/function-mod.md
-      - name: Month
-        href: reference/function-datetime-parts.md
-      - name: Navigate
-        href: reference/function-navigate.md
-      - name: NewForm
-        href: reference/function-form.md
-      - name: Not
-        href: reference/function-logicals.md
-      - name: Notify
-        href: reference/function-showerror.md
-      - name: Now
-        href: reference/function-now-today-istoday.md
-      - name: Operators
-        href: reference/operators.md
-      - name: Or
-        href: reference/function-logicals.md
-      - name: Param
-        href: reference/function-param.md
-      - name: Parent
-        href: reference/operators.md#self-and-parent-operators
-      - name: Patch
-        href: reference/function-patch.md
-      - name: Pi
-        href: reference/function-trig.md
-      - name: PlainText
-        href: reference/function-encode-decode.md
-      - name: Power
-        href: reference/function-numericals.md
-      - name: Print
-        href: reference/function-print.md
-      - name: Proper
-        href: reference/function-lower-upper-proper.md
-      - name: Radians
-        href: reference/function-trig.md
-      - name: Rand
-        href: reference/function-rand.md
-      - name: RandBetween
-        href: reference/function-rand.md    
-      - name: ReadNFC
-        href: reference/function-readnfc.md
-      - name: RecordInfo
-        href: reference/function-recordinfo.md    
-      - name: Refresh
-        href: reference/function-refresh.md
-      - name: Relate
-        href: reference/function-relate-unrelate.md
-      - name: Remove
-        href: reference/function-remove-removeif.md
-      - name: RemoveIf
-        href: reference/function-remove-removeif.md
-      - name: RenameColumns
-        href: reference/function-table-shaping.md
-      - name: Replace
-        href: reference/function-replace-substitute.md
-      - name: Reset
-        href: reference/function-reset.md
-      - name: ResetForm
-        href: reference/function-form.md
-      - name: Revert
-        href: reference/function-revert.md
-      - name: RequestHide
-        href: reference/function-requesthide.md
-      - name: RGBA
-        href: reference/function-colors.md
-      - name: Right
-        href: reference/function-left-mid-right.md
-      - name: Round
-        href: reference/function-round.md
-      - name: RoundDown
-        href: reference/function-round.md
-      - name: RoundUp
-        href: reference/function-round.md
-      - name: SaveData
-        href: reference/function-savedata-loaddata.md
-      - name: Search
-        href: reference/function-filter-lookup.md
-      - name: Second
-        href: reference/function-datetime-parts.md
-      - name: Select
-        href: reference/function-select.md
-      - name: Self
-        href: reference/operators.md#self-and-parent-operators
-      - name: Set
-        href: reference/function-set.md
-      - name: SetFocus
-        href: reference/function-setfocus.md
-      - name: SetProperty
-        href: reference/function-setproperty.md
-      - name: Sequence
-        href: reference/function-sequence.md
-      - name: ShowColumns
-        href: reference/function-table-shaping.md
-      - name: Shuffle
-        href: reference/function-shuffle.md
-      - name: Sin
-        href: reference/function-trig.md
-      - name: Sort
-        href: reference/function-sort.md
-      - name: SortByColumns
-        href: reference/function-sort.md
-      - name: Split
-        href: reference/function-split.md
-      - name: Sqrt
-        href: reference/function-numericals.md
-      - name: StartsWith
-        href: reference/function-startswith.md
-      - name: StdevP
-        href: reference/function-aggregates.md
-      - name: Substitute
-        href: reference/function-replace-substitute.md
-      - name: SubmitForm
-        href: reference/function-form.md
-      - name: Sum
-        href: reference/function-aggregates.md
-      - name: Switch
-        href: reference/function-if.md
-      - name: Table
-        href: reference/function-table.md
-      - name: Tan
-        href: reference/function-trig.md
-      - name: Text
-        href: reference/function-text.md
-      - name: ThisItem
-        href: reference/operators.md#thisitem-thisrecord-and-as-operators
-      - name: ThisRecord
-        href: reference/operators.md#thisitem-thisrecord-and-as-operators
-      - name: Time
-        href: reference/function-date-time.md
-      - name: TimeValue
-        href: reference/function-datevalue-timevalue.md
-      - name: TimeZoneOffset
-        href: reference/function-dateadd-datediff.md
-      - name: Today
-        href: reference/function-now-today-istoday.md
-      - name: Trace
-        href: reference/function-trace.md
-      - name: Trim
-        href: reference/function-trim.md
-      - name: TrimEnds
-        href: reference/function-trim.md
-      - name: Trunc
-        href: reference/function-round.md    
-      - name: Ungroup
-        href: reference/function-groupby.md
-      - name: Unrelate
-        href: reference/function-relate-unrelate.md
-      - name: Update
-        href: reference/function-update-updateif.md
-      - name: UpdateContext
-        href: reference/function-updatecontext.md
-      - name: UpdateIf
-        href: reference/function-update-updateif.md
-      - name: Upper
-        href: reference/function-lower-upper-proper.md
-      - name: User
-        href: reference/function-user.md
-      - name: UTCNow
-        href: reference/function-now-today-istoday.md
-      - name: UTCToday
-        href: reference/function-now-today-istoday.md    
-      - name: Validate
-        href: reference/function-validate.md
-      - name: Value
-        href: reference/function-value.md
-      - name: VarP
-        href: reference/function-aggregates.md
-      - name: ViewForm
-        href: reference/function-form.md
-      - name: Weekday
-        href: reference/function-datetime-parts.md
-      - name: WeekNum
-        href: reference/function-weeknum.md
-      - name: With
-        href: reference/function-with.md
-      - name: Year
-        href: reference/function-datetime-parts.md
-    - name: Power Apps Documentation 
-      href: /powerapps
+    - name: Microsoft Power Fx
+      items: 
+        - name: Overview
+          href: overview.md
+        - name: Expression grammar
+          href: expression-grammar.md
+        - name: YAML formula grammar
+          href: yaml-formula-grammar.md
+        - name: Global apps
+          href: global.md
+        - name: Data types
+          href: data-types.md 
+        - name: Imperatives
+          href: imperative.md
+        - name: Operators
+          href: operators.md
+        - name: Tables
+          href: tables.md 
+        - name: Variables
+          href: variables.md
+        - name: Formula reference
+          items:
+          - name: Overview
+            href: formula-reference.md
+          - name: Abs
+            href: reference/function-numericals.md
+          - name: Acceleration
+            href: reference/signals.md
+          - name: Acos
+            href: reference/function-trig.md
+          - name: Acot
+            href: reference/function-trig.md
+          - name: AddColumns
+            href: reference/function-table-shaping.md
+          - name: And
+            href: reference/function-logicals.md
+          - name: App
+            href: reference/object-app.md
+          - name: As
+            href: reference/operators.md#thisitem-thisrecord-and-as-operators
+          - name: Asin
+            href: reference/function-trig.md
+          - name: Assert
+            href: reference/function-assert.md
+          - name: AsType
+            href: reference/function-astype-istype.md
+          - name: Atan
+            href: reference/function-trig.md
+          - name: Atan2
+            href: reference/function-trig.md
+          - name: Average
+            href: reference/function-aggregates.md
+          - name: Back
+            href: reference/function-navigate.md
+          - name: Blank
+            href: reference/function-isblank-isempty.md
+          - name: Calendar
+            href: reference/function-clock-calendar.md
+          - name: Char
+            href: reference/function-char.md
+          - name: Choices
+            href: reference/function-choices.md
+          - name: Clear
+            href: reference/function-clear-collect-clearcollect.md
+          - name: ClearCollect
+            href: reference/function-clear-collect-clearcollect.md
+          - name: Clock
+            href: reference/function-clock-calendar.md
+          - name: Coalesce
+            href: reference/function-isblank-isempty.md
+          - name: Collect
+            href: reference/function-clear-collect-clearcollect.md
+          - name: Color
+            href: reference/function-colors.md
+          - name: ColorFade
+            href: reference/function-colors.md
+          - name: ColorValue
+            href: reference/function-colors.md
+          - name: Compass
+            href: reference/signals.md
+          - name: Concat
+            href: reference/function-concatenate.md
+          - name: Concatenate
+            href: reference/function-concatenate.md
+          - name: Concurrent
+            href: reference/function-concurrent.md
+          - name: Connection
+            href: reference/signals.md
+          - name: Count
+            href: reference/function-table-counts.md
+          - name: Cos
+            href: reference/function-trig.md
+          - name: Cot
+            href: reference/function-trig.md
+          - name: CountA
+            href: reference/function-table-counts.md
+          - name: CountIf
+            href: reference/function-table-counts.md
+          - name: CountRows
+            href: reference/function-table-counts.md
+          - name: Data types
+            href: reference/data-types.md
+          - name: DataSourceInfo
+            href: reference/function-datasourceinfo.md
+          - name: Date
+            href: reference/function-date-time.md
+          - name: DateAdd
+            href: reference/function-dateadd-datediff.md
+          - name: DateDiff
+            href: reference/function-dateadd-datediff.md
+          - name: DateTimeValue
+            href: reference/function-datevalue-timevalue.md
+          - name: DateValue
+            href: reference/function-datevalue-timevalue.md
+          - name: Day
+            href: reference/function-datetime-parts.md
+          - name: Defaults
+            href: reference/function-defaults.md
+          - name: Degrees
+            href: reference/function-trig.md
+          - name: Disable
+            href: reference/function-enable-disable.md
+          - name: Distinct
+            href: reference/function-distinct.md
+          - name: Download
+            href: reference/function-download.md
+          - name: DropColumns
+            href: reference/function-table-shaping.md
+          - name: EditForm
+            href: reference/function-form.md
+          - name: Enable
+            href: reference/function-enable-disable.md
+          - name: EncodeUrl
+            href: reference/function-encode-decode.md
+          - name: EndsWith
+            href: reference/function-startswith.md
+          - name: Error
+            href: reference/function-iferror.md
+          - name: Errors
+            href: reference/function-errors.md
+          - name: exactin
+            href: reference/operators.md#in-and-exactin-operators
+          - name: Exit
+            href: reference/function-exit.md
+          - name: Exp
+            href: reference/function-numericals.md
+          - name: Filter
+            href: reference/function-filter-lookup.md
+          - name: Find
+            href: reference/function-find.md
+          - name: First
+            href: reference/function-first-last.md
+          - name: FirstN
+            href: reference/function-first-last.md
+          - name: ForAll
+            href: reference/function-forall.md
+          - name: GroupBy
+            href: reference/function-groupby.md
+          - name: GUID
+            href: reference/function-guid.md
+          - name: HashTags
+            href: reference/function-hashtags.md
+          - name: Hour
+            href: reference/function-datetime-parts.md
+          - name: Identifiers
+            href: reference/operators.md
+          - name: If
+            href: reference/function-if.md
+          - name: IfError
+            href: reference/function-iferror.md
+          - name: in
+            href: reference/operators.md#in-and-exactin-operators
+          - name: Index
+            href: reference/function-first-last.md
+          - name: Int
+            href: reference/function-round.md
+          - name: IsBlank
+            href: reference/function-isblank-isempty.md
+          - name: IsBlankOrError
+            href: reference/function-iferror.md    
+          - name: IsEmpty
+            href: reference/function-isblank-isempty.md
+          - name: IsError
+            href: reference/function-iferror.md
+          - name: IsMatch
+            href: reference/function-ismatch.md
+          - name: IsNumeric
+            href: reference/function-isnumeric.md
+          - name: ISOWeekNum
+            href: reference/function-weeknum.md    
+          - name: IsToday
+            href: reference/function-now-today-istoday.md
+          - name: IsType
+            href: reference/function-astype-istype.md
+          - name: IsUTCToday
+            href: reference/function-now-today-istoday.md    
+          - name: JSON
+            href: reference/function-json.md
+          - name: Language
+            href: reference/function-language.md
+          - name: Last
+            href: reference/function-first-last.md
+          - name: LastN
+            href: reference/function-first-last.md
+          - name: Launch
+            href: reference/function-param.md
+          - name: Left
+            href: reference/function-left-mid-right.md
+          - name: Len
+            href: reference/function-len.md
+          - name: Ln
+            href: reference/function-numericals.md
+          - name: LoadData
+            href: reference/function-savedata-loaddata.md
+          - name: Location
+            href: reference/signals.md
+          - name: LookUp
+            href: reference/function-filter-lookup.md
+          - name: Lower
+            href: reference/function-lower-upper-proper.md
+          - name: Match
+            href: reference/function-ismatch.md
+          - name: MatchAll
+            href: reference/function-ismatch.md
+          - name: Max
+            href: reference/function-aggregates.md
+          - name: Mid
+            href: reference/function-left-mid-right.md
+          - name: Min
+            href: reference/function-aggregates.md
+          - name: Minute
+            href: reference/function-datetime-parts.md
+          - name: Mod
+            href: reference/function-mod.md
+          - name: Month
+            href: reference/function-datetime-parts.md
+          - name: Navigate
+            href: reference/function-navigate.md
+          - name: NewForm
+            href: reference/function-form.md
+          - name: Not
+            href: reference/function-logicals.md
+          - name: Notify
+            href: reference/function-showerror.md
+          - name: Now
+            href: reference/function-now-today-istoday.md
+          - name: Operators
+            href: reference/operators.md
+          - name: Or
+            href: reference/function-logicals.md
+          - name: Param
+            href: reference/function-param.md
+          - name: Parent
+            href: reference/operators.md#self-and-parent-operators
+          - name: Patch
+            href: reference/function-patch.md
+          - name: Pi
+            href: reference/function-trig.md
+          - name: PlainText
+            href: reference/function-encode-decode.md
+          - name: Power
+            href: reference/function-numericals.md
+          - name: Print
+            href: reference/function-print.md
+          - name: Proper
+            href: reference/function-lower-upper-proper.md
+          - name: Radians
+            href: reference/function-trig.md
+          - name: Rand
+            href: reference/function-rand.md
+          - name: RandBetween
+            href: reference/function-rand.md    
+          - name: ReadNFC
+            href: reference/function-readnfc.md
+          - name: RecordInfo
+            href: reference/function-recordinfo.md    
+          - name: Refresh
+            href: reference/function-refresh.md
+          - name: Relate
+            href: reference/function-relate-unrelate.md
+          - name: Remove
+            href: reference/function-remove-removeif.md
+          - name: RemoveIf
+            href: reference/function-remove-removeif.md
+          - name: RenameColumns
+            href: reference/function-table-shaping.md
+          - name: Replace
+            href: reference/function-replace-substitute.md
+          - name: Reset
+            href: reference/function-reset.md
+          - name: ResetForm
+            href: reference/function-form.md
+          - name: Revert
+            href: reference/function-revert.md
+          - name: RequestHide
+            href: reference/function-requesthide.md
+          - name: RGBA
+            href: reference/function-colors.md
+          - name: Right
+            href: reference/function-left-mid-right.md
+          - name: Round
+            href: reference/function-round.md
+          - name: RoundDown
+            href: reference/function-round.md
+          - name: RoundUp
+            href: reference/function-round.md
+          - name: SaveData
+            href: reference/function-savedata-loaddata.md
+          - name: Search
+            href: reference/function-filter-lookup.md
+          - name: Second
+            href: reference/function-datetime-parts.md
+          - name: Select
+            href: reference/function-select.md
+          - name: Self
+            href: reference/operators.md#self-and-parent-operators
+          - name: Set
+            href: reference/function-set.md
+          - name: SetFocus
+            href: reference/function-setfocus.md
+          - name: SetProperty
+            href: reference/function-setproperty.md
+          - name: Sequence
+            href: reference/function-sequence.md
+          - name: ShowColumns
+            href: reference/function-table-shaping.md
+          - name: Shuffle
+            href: reference/function-shuffle.md
+          - name: Sin
+            href: reference/function-trig.md
+          - name: Sort
+            href: reference/function-sort.md
+          - name: SortByColumns
+            href: reference/function-sort.md
+          - name: Split
+            href: reference/function-split.md
+          - name: Sqrt
+            href: reference/function-numericals.md
+          - name: StartsWith
+            href: reference/function-startswith.md
+          - name: StdevP
+            href: reference/function-aggregates.md
+          - name: Substitute
+            href: reference/function-replace-substitute.md
+          - name: SubmitForm
+            href: reference/function-form.md
+          - name: Sum
+            href: reference/function-aggregates.md
+          - name: Switch
+            href: reference/function-if.md
+          - name: Table
+            href: reference/function-table.md
+          - name: Tan
+            href: reference/function-trig.md
+          - name: Text
+            href: reference/function-text.md
+          - name: ThisItem
+            href: reference/operators.md#thisitem-thisrecord-and-as-operators
+          - name: ThisRecord
+            href: reference/operators.md#thisitem-thisrecord-and-as-operators
+          - name: Time
+            href: reference/function-date-time.md
+          - name: TimeValue
+            href: reference/function-datevalue-timevalue.md
+          - name: TimeZoneOffset
+            href: reference/function-dateadd-datediff.md
+          - name: Today
+            href: reference/function-now-today-istoday.md
+          - name: Trace
+            href: reference/function-trace.md
+          - name: Trim
+            href: reference/function-trim.md
+          - name: TrimEnds
+            href: reference/function-trim.md
+          - name: Trunc
+            href: reference/function-round.md    
+          - name: Ungroup
+            href: reference/function-groupby.md
+          - name: Unrelate
+            href: reference/function-relate-unrelate.md
+          - name: Update
+            href: reference/function-update-updateif.md
+          - name: UpdateContext
+            href: reference/function-updatecontext.md
+          - name: UpdateIf
+            href: reference/function-update-updateif.md
+          - name: Upper
+            href: reference/function-lower-upper-proper.md
+          - name: User
+            href: reference/function-user.md
+          - name: UTCNow
+            href: reference/function-now-today-istoday.md
+          - name: UTCToday
+            href: reference/function-now-today-istoday.md    
+          - name: Validate
+            href: reference/function-validate.md
+          - name: Value
+            href: reference/function-value.md
+          - name: VarP
+            href: reference/function-aggregates.md
+          - name: ViewForm
+            href: reference/function-form.md
+          - name: Weekday
+            href: reference/function-datetime-parts.md
+          - name: WeekNum
+            href: reference/function-weeknum.md
+          - name: With
+            href: reference/function-with.md
+          - name: Year
+            href: reference/function-datetime-parts.md
+        - name: Power Apps Documentation 
+          href: /powerapps
