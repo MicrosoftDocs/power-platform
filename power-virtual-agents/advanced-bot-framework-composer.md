@@ -126,32 +126,18 @@ For a deep-dive on Bot Framework Composer **dialogs**, **events**, **triggers**,
 
 The following Bot Framework Composer features are not supported with Power Virtual Agents:
 
-- LUIS Recognizer  
-Default Recognizer in Composer is set to Power Virtual Agents NLU.
-
-- Bot Framework Orchestrator  
-Bot Framework Orchestrator is not supported in Composer for Power Virtual Agents.
-
-- Custom recognizer  
-Custom recognizer is not supported in Composer for Power Virtual Agents.
-
-- Bot skills  
-Cannot invoke Bot skills in Composer content meant for Power Virtual Agents.
-
-- QnA Maker  
-This feature is not available in Composer for Power Virtual Agents.
-
-- OAuth Login and User Sign Out  
-These types of actions are not supported in Composer for Power Virtual Agents.
-
-- Dialog Inputs and Outputs  
-Dialog Inputs and Outputs are not supported in Composer for Power Virtual Agents.
-
-- Entity detection in trigger phrases in Composer  
-Cannot use `# getUserName  - my name is {username=userName}` in Composer.
-
-- Testing in Bot Framework Emulator  
-All Composer content should be published and then tested in Power Virtual Agents.  
+<!-- best viewed/edited without wordwrap -->
+| Unsupported feature                             | Additional information                                                                              |
+| ----------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| LUIS Recognizer                                 | Default Recognizer in Composer is set to Power Virtual Agents Natural Language Understanding (NLU). |
+| Bot Framework Orchestrator                      | Bot Framework Orchestrator is not supported in Composer for Power Virtual Agents.                   |
+| Custom recognizer                               | Custom recognizer is not supported in Composer for Power Virtual Agents.                            |
+| Bot skills                                      | Cannot invoke Bot skills in Composer content meant for Power Virtual Agents.                        |
+| QnA Maker                                       | This feature is not available in Composer for Power Virtual Agents.                                 |
+| OAuth Login and User Sign Out                   | These types of actions are not supported in Composer for Power Virtual Agents.                      |
+| Dialog Inputs and Outputs                       | Dialog Inputs and Outputs are not supported in Composer for Power Virtual Agents.                   |
+| Entity detection in trigger phrases in Composer | Cannot use `# getUserName my name is {username=userName}` in Composer.                              |
+| Testing in Bot Framework Emulator               | All Composer content should be published and then tested in Power Virtual Agents.                   |
 
 ## Use and update Power Virtual Agents variables in Bot Framework Composer
 
