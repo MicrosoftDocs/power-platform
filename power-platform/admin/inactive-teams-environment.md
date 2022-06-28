@@ -36,23 +36,23 @@ The following table describes the schedule for notifications and actions for Dat
 
 |State of Dataverse for Teams  |Power Platform action  |
 |---------|---------|
-|83 days after no [user activity](#definition-of-user-activity).     | Warning of disablement email notification sent. The environment state updated on the Environments list page<sup>1 and the Environments page <sup>2.       |
-|87 days after no user activity.    |  Warning of disablement email notification sent. Warning of disablement email notification sent. The inactive environment state updated on the Environments list page<sup>1 and the Environments page <sup>2.      |
-|90 days after no user activity.      | Environment disabled. Disabled email notification sent. Warning of disablement email notification sent. The disabled environment state updated on the Environments list page<sup>1 and the Environments page <sup>3.      |
-|113 days after no user activity.     | Warning of deletion email notification sent. Warning of disablement email notification sent. The disabled environment state updated on the Environments list page<sup>1 and the Environments page <sup>3.         |
-|117 days after no user activity.     | Warning of deletion email notification sent. Warning of disablement email notification sent. The disabled environment state updated on the Environments list page<sup>1 and the Environments page <sup>3.        |
+|83 days after no [user activity](#definition-of-user-activity).     | Warning of disablement email notification sent. The environment state updated on the Environments list page<sup>1</sup> and the Environments page <sup>2</sup>.       |
+|87 days after no user activity.    |  Warning of disablement email notification sent. Warning of disablement email notification sent. The inactive environment state updated on the Environments list page<sup>1</sup> and the Environments page <sup>2</sup>.      |
+|90 days after no user activity.      | Environment disabled. Disabled email notification sent. Warning of disablement email notification sent. The disabled environment state updated on the Environments list page<sup>1</sup> and the Environments page <sup>3</sup>.      |
+|113 days after no user activity.     | Warning of deletion email notification sent. Warning of disablement email notification sent. The disabled environment state updated on the Environments list page<sup>1</sup> and the Environments page <sup>3</sup>.         |
+|117 days after no user activity.     | Warning of deletion email notification sent. Warning of disablement email notification sent. The disabled environment state updated on the Environments list page<sup>1</sup> and the Environments page <sup>3</sup>.        |
 |120 days after no user activity.     | Environment deleted. Deletion email notification sent.           |
 
-<sup>1 Environment state
+<sup>1</sup> Environment state
 :::image type="content" source="media/inactive-environment-state.png" alt-text="Inactive environment state":::
 
-<sup>2
+<sup>2</sup>ddddddddd
 :::image type="content" source="media/inactive-environment-state-box.png" alt-text="Inactive environment state box":::
 
 To reactivate the Dataverse for Teams environment, select **Trigger environment activity**.
 
-<sup>3
-:::image type="content" source="media/inactive-environment-state-box.png" alt-text="Disabled environment state box":::
+<sup>3</sup>ddddddddd
+:::image type="content" source="media/disable-environment-state-box.png" alt-text="Disabled environment state box":::
 
 To renable the Dataverse for Teams environment, select **Re-enable environment**.
 
