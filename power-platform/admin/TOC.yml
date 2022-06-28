@@ -146,6 +146,8 @@
           href: sandbox-environments.md
         - name: Dataverse for Teams environment
           href: about-teams-environment.md
+        - name: Inactive Dataverse for Teams environments
+          href: inactive-teams-environment.md
         - name: View apps in your environments 
           href: admin-view-apps.md
         - name: Language collations 
