@@ -4,8 +4,7 @@ description: Learn about deploying packages using Package Deployer and Windows P
 ms.custom: 
 ms.date: 08/12/2021
 ms.reviewer: 
-
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 27676d3a-d35c-4452-9ff3-bcdadd943bef
 caps.latest.revision: 36
 author: Mattp123
@@ -21,7 +20,7 @@ search.app:
 ---
 # Deploy packages using Package Deployer and Windows PowerShell
 
-[!INCLUDE[pn_package_deployer_long](../includes/pn-package-deployer-long.md)] enables administrators to deploy packages to a Microsoft Dataverse environment. 
+[!INCLUDE[pn_package_deployer_long](../includes/pn-package-deployer-long.md)] enables administrators to deploy packages to an environment. 
 
 > [!NOTE]
 > Package deployer also works with Dynamics 365 Customer Engagement (on-premises) organizations.
@@ -32,7 +31,7 @@ A “package” can consist of any or all of the following:
   
 - Flat files or exported data files from the Configuration Migration tool. For information about the Configuration Migration tool, see [Manage your configuration data](manage-configuration-data.md).  
   
-- Custom code that can run during or after the package is deployed to Dataverse environment.  
+- Custom code that can run during or after the package is deployed to an environment.  
   
 - HTML content specific to the package that can display at the beginning and end of the package deployment process. This can be useful to provide a description of the solutions and files that are deployed in the package.  
   

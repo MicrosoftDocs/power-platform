@@ -2,11 +2,10 @@
 title: " Access your storage with an SAS token | MicrosoftDocs"
 description: "Learn how to gain access the SAS token for your storage and view the data in your storage."
 author: sama-zaki
-
 ms.component: pa-admin
 ms.topic: conceptual
 ms.custom: intro-internal
-ms.date: 11/01/2021
+ms.date: 05/25/2022
 ms.subservice: admin
 ms.author: zakisama
 ms.reviewer: jimholtz
@@ -29,7 +28,7 @@ Storage has important data from your environment. An SAS token provides secure, 
 ## Prerequisites
 This section describes the prerequisites necessary to access the storage with the SAS token and view your data.
 
-- **Environment Maker or System Customizer Role**. You must have the **Environment Maker** role or the **System Customizer** role on the environment where you want to access the SAS token. For more information about environment roles, see [Configure user security to resources in an environment](database-security.md).
+- **System Administrator role**. You must have the **System Administrator** role on the environment where you want to access the SAS token. For more information about environment roles, see [Configure user security to resources in an environment](database-security.md).
 
 - **Azure Storage Explorer**. [Get it now](https://azure.microsoft.com/features/storage-explorer/#overview)
 

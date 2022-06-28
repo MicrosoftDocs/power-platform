@@ -1,12 +1,11 @@
 ---
 title: "Security concepts in Microsoft Dataverse | MicrosoftDocs"
 description: Provides detailed information about the security model and concepts in Microsoft Dataverse.
-ms.date: 10/29/2021
-
-ms.topic: "article"
-author: jimholtz
+ms.date: 03/29/2022
+ms.topic: conceptual
+author: paulliew
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: paulliew
 ms.reviewer: jimholtz
 ms.custom: "admin-security"
 search.audienceType: 
@@ -22,7 +21,7 @@ search.app:
 One of the key features of [Dataverse](/powerapps/maker/common-data-service/data-platform-intro) is its rich security model that can adapt to many business usage scenarios. This security model is only in play when there is a Dataverse database in the environment. As an administrator, you likely won't be building the entire security model yourself, but will often be involved in the process of managing users and making sure they have the proper configuration and troubleshooting security access related issues.
 
 > [!TIP]
-> ![Video symbol](../admin/media/video-thumbnail-4.png "Video symbol") Check out the following video: [Microsoft Dataverse – Security Concepts Shown In Demos](https://youtu.be/8UWSj-vvxzU)  
+> ![Video symbol](../admin/media/video-thumbnail-4.png "Video symbol") Check out the following video: [Microsoft Dataverse – Security Concepts Shown In Demos](https://youtu.be/8UWSj-vvxzU).  
 
 ## Role-based security
 
@@ -31,22 +30,20 @@ Dataverse uses role-based security to group together a collection of privileges.
 ## Business units
 
 > [!TIP]
-> ![Video symbol](../admin/media/video-thumbnail-4.png "Video symbol") Check out the following video: [Modernize business units](https://youtu.be/NBBYinF9B7g) 
+> ![Video symbol](../admin/media/video-thumbnail-4.png "Video symbol") Check out the following video: [Modernize business units](https://www.microsoft.com/videoplayer/embed/RWOdR4). 
 
 
 Business units work with security roles to determine the effective security that a user has. Business units are a security modeling building block that helps in managing users and the data they can access. Business units define a security boundary. Every Dataverse database has a single root business unit.
 
-You can [create child business units](./create-edit-business-units.md) to help further segment your users and data. Every user assigned to a Dataverse environment will belong to a business unit. While business units could be used to model 1:1 a true organization hierarchy, more often they lean more towards just defined security boundaries to help achieve the security model needs.
+You can [create child business units](./create-edit-business-units.md) to help further segment your users and data. Every user assigned to an environment will belong to a business unit. While business units could be used to model 1:1 a true organization hierarchy, more often they lean more towards just defined security boundaries to help achieve the security model needs.
 
-To better understand let’s look at the following example. We have three business units. Woodgrove is the root business unit and will always be at the top, that is unchangeable. We've created two other child business units A and B. Users in these business units have very different access needs. When we associate a user with this Dataverse environment, we can set the user to be in one of these three business units. Where the user is associated will determine which business unit owns the records that user is the owner of. By having that association allows us to tailor a security role to allow the user to see all records in that business unit.
-
-To better understand let’s look at two examples. The two examples have three business units. Woodgrove is the root business unit and will always be at the top; that is unchangeable. We've created two other child business units A and B. Users in these business units have very different access needs. 
+To better understand let’s look at the following example. We have three business units. Woodgrove is the root business unit and will always be at the top, that is unchangeable. We've created two other child business units A and B. Users in these business units have very different access needs. When we associate a user with this environment, we can set the user to be in one of these three business units. Where the user is associated will determine which business unit owns the records that user is the owner of. Having that association allows us to tailor a security role to allow the user to see all records in that business unit.
 
 ### Hierarchical data access structure  
 
 Customers can use an organization structure where data and user are compartmentalized in a tree-like hierarchy.  
 
-When we associate a user with this Dataverse environment, we can set the user to be in one of these three business units and assign a security role from the business unit to the user. The business unit the user is associated with determines which business unit owns the records when the user creates a record. By having that association it allows us to tailor a security role which allows the user to see records in that business unit. 
+When we associate a user with this environment, we can set the user to be in one of these three business units and assign a security role from the business unit to the user. The business unit the user is associated with determines which business unit owns the records when the user creates a record. By having that association it allows us to tailor a security role which allows the user to see records in that business unit. 
 
 User A is associated with Division A and assigned a security role Y from Division A. This allows user A to access the Contact #1 and Contact #2 records. While user B in Division B cannot access Division A’s Contact records but can access Contact #3 record. 
 
@@ -57,7 +54,7 @@ User A is associated with Division A and assigned a security role Y from Divisio
 
 Customers can use an organization structure where data is compartmentalized in a tree-like hierarchy, and users can work and access any business unit’s data regardless of what the business unit the user is assigned to. 
 
-When we associate a user with this Dataverse environment, we can set the user to be in one of these three business units. For each business unit that a user needs to access data, a security role from that business unit is assigned to the user. When the user creates a record, the user can set the business unit to own the record.  
+When we associate a user with this environment, we can set the user to be in one of these three business units. For each business unit that a user needs to access data, a security role from that business unit is assigned to the user. When the user creates a record, the user can set the business unit to own the record.  
 
 User A can be associated with any of the business units, including the root business unit. A security role Y from Division A is assigned to user A which gives the user access to Contact #1 and Contact #2 records.  A security role Y from Division B is assigned to user A which gives the user access to Contact #3 record. 
 
@@ -74,11 +71,25 @@ User A can be associated with any of the business units, including the root busi
 3. Select **Settings** > **Product** > **Features**. 
 4. Turn **On** the **Record ownership across business units** switch. 
 
-Once this feature switch is turned on, you can select Business unit when you [assign a security role to a user](assign-security-roles.md). This allows you to assign security from different business units to a user.
+Once this feature switch is turned on, you can select Business unit when you [assign a security role to a user](assign-security-roles.md). This allows you to assign security role from different business units to a user. The user also requires a security role from the business unit that the user is assigned to with [user settings privileges](assign-security-roles.md#user-settings-privileges-for-record-ownership-across-business-units) to run model-driven apps. You can refer to the [Basic User](database-security.md#predefined-security-roles) security role to find how these user settings privileges are enabled.
 
 > [!NOTE]
 > This feature switch is stored in the **EnableOwnershipAcrossBusinessUnits** [environment database settings](environment-database-settings.md) and can also be set using the [OrgDBOrgSettings tool for Microsoft Dynamics CRM](
 https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm).
+
+### Associate a business unit with an Azure AD security group
+
+You can use an Azure AD security group to map your business unit for streamlining your user administration and role assignment.  
+
+**Create an Azure AD security group for each business unit and assign the respective business unit security role to each group team.**
+
+:::image type="content" source="media/business-unit-with-aad-sec-group2.png" alt-text="Create an Azure AD security group for each business unit.":::
+
+For each business unit, create an Azure AD security group. Create a [Dataverse group team](manage-group-teams.md) for each Azure AD security group. Assign the respective security role from the business unit to each Dataverse group team. The user in the above diagram will be created in the root business unit when the user accesses the environment. It's fine to have the user and the Dataverse group teams to be in the root business unit. They only have access to data in the business unit where the security role is assigned.  
+
+Add users into the respective Azure AD security group to grant them access to the business unit. The users can immediately run the app and access its resources/data. 
+
+In the [matrix data access](wp-security-cds.md#matrix-data-access-structure-modernize-business-units---preview), where users can work and access data from multiple business units, add the users to the Azure AD security groups that mapped to those business units.  
 
 ### Owning Business Unit
 
@@ -121,7 +132,7 @@ In the above you can see the standard privilege types for each table Create, Rea
 
 In the above example, we have given organization level access to Contact which means that the user in Division A could see and update contacts owned by anyone. In fact, one of the most common administrative mistakes is getting frustrated with permissions and just over granting access. Very quickly a well-crafted security model starts looking like swiss cheese (full of holes!).
 
-## Teams
+## Teams (including [group teams](manage-group-teams.md))
 
 Teams are another important security building block. Teams are owned by a Business Unit. Every Business Unit has one default team that is automatically created when the Business Unit is created. The default team members are managed by Dataverse and always contain all users associated with that Business Unit. You can’t manually add or remove members from the default team, they're dynamically adjusted by the system as [new users are associated/disassociated with business units](./create-edit-business-units.md). There are two types of teams, owning teams and access teams.
 - Owning Teams can own records, which give any team member direct access to that record. Users can be members of multiple teams. This will allow it to be a powerful way of granting permissions to users in a broad way without micromanaging access at the individual user level. 
@@ -143,7 +154,7 @@ Field-level security is enabled on a field by field basis. Access is then manage
 
 ### Managing security across multiple environments
 
-Security roles and Field Security Profiles can be packaged up and moved from one environment to the next using Dataverse solutions. Business Units and Teams must be created and managed in each Dataverse environment along with the assignment of users to the necessary security components.
+Security roles and Field Security Profiles can be packaged up and moved from one environment to the next using Dataverse solutions. Business Units and Teams must be created and managed in each environment along with the assignment of users to the necessary security components.
 
 ### Configuring users environment security
 

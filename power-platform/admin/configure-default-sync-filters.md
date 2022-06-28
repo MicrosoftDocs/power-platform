@@ -5,9 +5,9 @@ description: Configure default sync filters for appointments, contacts, or task 
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 08/12/2021
-author: revachauhan
+author: mduelae
 ms.subservice: admin
-ms.author: rechauha
+ms.author: mkaur
 ms.reviewer: mkaur
 search.audienceType: 
   - admin
@@ -188,7 +188,7 @@ Changing default synchronization filter logic can change row synchronization sig
 
 - Activity parties and their party types shouldn't be changed, because they're tied to values in Exchange. A good example is the Owner participation type, which has nothing to do with row ownership. For a breakdown of Activity Party SDK values, go to [ActivityParty TableType](/dynamics365/customer-engagement/web-api/activityparty?view=dynamics-ce-odata-9).
 
-- The best approach to applying more restrictive filter criteria is to add a custom field to the table being modifie, and add the field as a condition for synchronization. A common modification is to add the **Sync This Record** Boolean field to the contact table, and set the contact table synchronization filter criteria to require that this field be set to **yes** or **true**.
+- The best approach to applying more restrictive filter criteria is to add a custom field to the table being modified, and add the field as a condition for synchronization. A common modification is to add the **Sync This Record** Boolean field to the contact table, and set the contact table synchronization filter criteria to require that this field be set to **yes** or **true**.
 
 ## Frequently asked questions
 

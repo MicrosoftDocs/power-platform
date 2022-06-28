@@ -61,13 +61,16 @@ Using the **Create a flow** option opens a starter flow template in the [Power A
 
 :::image type="content" source="media/advanced-flow/PVAConnectorTemplate.JPG" alt-text="Power Automate flow template." border="false":::
 
-This template is an example of a flow that can be used by bots. To be suitable for bots, a Power Automate flow requires a special **Power Virtual Agents** trigger and response action:
+> [!NOTE]
+> The Power Automate portal automatically opens in the same environment as the bot (using the same user credentials).
 
-- Flow trigger:  **Power Virtual Agents**  
+This template is an example of a flow that can be used by bots. To be suitable for bots, a Power Automate flow requires a special **Power Virtual Agents** flow trigger and response action:
 
-    :::image type="content" source="media/advanced-flow/PVAConnectorTrigger.JPG" alt-text="Power Virtual Agents trigger." border="false":::
+- Flow trigger:  **When Power Virtual Agents calls a flow**  
 
-- Response action:  **Power Virtual Agents**  
+    :::image type="content" source="media/advanced-flow/PVAConnectorTrigger.JPG" alt-text="Power Virtual Agents flow trigger." border="false":::
+
+- Response action:  **Return value(s) to Power Virtual Agents**  
 
     :::image type="content" source="media/advanced-flow/PVAConnectorResponse.JPG" alt-text="Power Virtual Agents response." border="false":::
 
@@ -96,20 +99,20 @@ The following types are not supported:
 
 ### Input parameters
 
-To specify a flow to accept input parameters from a bot, select the **Add an input** option in the **Power Virtual Agents trigger** user interface, and then select the type: `string`, `number`, or `boolean`.
+To specify a flow to accept input parameters from a bot, select the **Add an input** option in the **Power Virtual Agents** flow trigger, and then select the type a - `string`, `number`, or a `boolean`.
 
-:::image type="content" source="media/advanced-flow/PVAConnector_Inputs_1.JPG" alt-text="Power Virtual Agents trigger input types." border="false":::
+:::image type="content" source="media/advanced-flow/PVAConnector_Inputs_1.JPG" alt-text="Power Virtual Agents flow trigger input types." border="false":::
 
 For example, select **Text** and **Number** to add the following input parameters to the flow:
 
 - **String_Input** of type `string`
 - **Number_Input** of type `number`
 
-:::image type="content" source="media/advanced-flow/PVAConnector_Inputs_2.JPG" alt-text="Power Virtual Agents trigger inputs." border="false":::
+:::image type="content" source="media/advanced-flow/PVAConnector_Inputs_2.JPG" alt-text="Power Virtual Agents flow trigger inputs." border="false":::
 
 ### Output parameters
 
-To return output parameters to the bot that can be a `string`, `number`, or `boolean`, select the **Add an output** option in the **Power Virtual Agents response** user interface, and then select the type for the output.
+To return output parameters to the bot that can be a `string`, `number`, or a `boolean`, select **Add an output** option in **Return value(s) to Power Virtual Agents** response, and then select the type for the output.
 
 :::image type="content" source="media/advanced-flow/PVAConnector_Output_1.JPG" alt-text="Power Virtual Agents response output types." border="false":::
 
@@ -188,14 +191,14 @@ You can rename and modify your flow on the Power Automate portal. For example, t
 
         :::image type="content" source="media/advanced-flow/EditFlow.jpg" alt-text="Open your flow for editing." border="false":::
 
-1. Rename the flow to **Get weather forecast** and then add the following flow input parameters to the **Power Virtual Agents** trigger:
+1. Rename the flow to **Get weather forecast** and then add the following flow input parameters to **Power Virtual Agents** flow trigger:
 
     - City (String)
     - Zipcode (Number)
 
     :::image type="content" source="media/advanced-flow/RenameFlow.jpg" alt-text="Add inputs to the flow." border="false":::
 
-1. Choose **Add an action** to create a new action below the **Power Virtual Agents** trigger.
+1. Choose **Add an action** to create a new action below the **Power Virtual Agents** flow trigger.
 
     :::image type="content" source="media/advanced-flow/AddAction.jpg" alt-text="Add flow action." border="false":::
 

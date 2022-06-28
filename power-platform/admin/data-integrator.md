@@ -368,7 +368,7 @@ Additionally, after creating a new integration project, when you choose **Select
 
 ## Advanced data transformation and filtering 
 
-With Power Query support, we now provide advanced filtering and data transformation of source data. Power Query enables users to reshape data to fit their needs, with an easy-to-use, engaging, and no-code user experience. You can enable this on a project-by-project basis. 
+With Power Query support, we provide advanced filtering and data transformation of source data. Power Query enables users to reshape data to fit their needs, with an easy-to-use, engaging, and no-code user experience. You can enable this on a project-by-project basis. 
 
 ### How to enable advanced query and filtering
 
@@ -482,7 +482,7 @@ You can use the following settings to tune the performance of Finance and Operat
 - Turning off validations (optional): 
   While the Data Integrator does not bypass any business logic and validations, you may optionally turn off the ones that are not required to improve performance.
 
-Consider the following tips to ensure performance while importing or exporting data from Dataverse environments.
+Consider the following tips to ensure performance while importing or exporting data from environments.
 
 ### Importing/Exporting data to/from customer engagement apps
 

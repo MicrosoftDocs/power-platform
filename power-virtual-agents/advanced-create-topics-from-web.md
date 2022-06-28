@@ -29,27 +29,54 @@ The underlying capability identifies the structure and content on a webpage or o
 
 There are three main steps to using the feature:
 
-1. Select **Suggest topics** on the Topics page to extract content from FAQ/support pages or online files.
-1. Add the suggested topics to your bot.
-1. Enable the topics.
+1. [Select **Suggest topics** on the Topics page to extract content](#extract-content-from-webpages-or-online-files).
+1. [Add the suggested topics to your bot](#add-suggested-topics-to-an-existing-bot).
+1. [Enable the suggested topics](#enable-topics-in-your-bot).
 
 You can [test the topics in the test chat](authoring-test-bot.md), but you'll need to [publish your bot for customers](publication-fundamentals-publish-channels.md) to see the latest changes.
 
 >
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4mNOt]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mNOt]
 
 ## Prerequisites
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+
+## Supported content
+
+Uploading files is not supported, instead you must provide a URL that meets the following requirements:
+
+- Points to a webpage or supported file type
+- Is accessible by anyone on the internet
+- Doesn't require a user to login
+- Uses HTTPS (starts with `https://`)
+
+The **Suggest topics** capability is built to extract topics from content with a FAQ or support structure. Webpages with a different structure might not work as expected. If you can't extract content from your webpage, try providing the content as a CSV file.
+
+### Supported file types
+
+Tabular file types require a _two-column format_ where each row represents a question and answer pair: the first column contains the question and the second column contains the answer.
+
+> [!IMPORTANT]
+> You must provide the full URL to the location of the file, including the file extension, as in the example `https://www.microsoft.com/thisisafile.pdf`.
+
+| Supported file type                  | Requires two-column format |
+| ------------------------------------ | :------------------------: |
+| Comma separated values (.csv)        |            Yes             |
+| Microsoft Excel (.xlsx) <sup>1</sup> |            Yes             |
+| Microsoft Power Point (.pptx)        |                            |
+| Microsoft Word (.docx)               |                            |
+| Plain text (.txt)                    |                            |
+| Portable Document Format (.pdf)      |                            |
+| Tab separated values (.tsv)          |            Yes             |
+
+<sup>1</sup> _Only the first sheet is imported._
 
 ## Extract content from webpages or online files
 
 First, you'll need to point to the webpages or online files from which you want to extract content.
 
 After the extraction is complete, you'll be shown the suggested topics for further review. Suggested topics aren't automatically added to your bot, but you can [easily add them](#add-suggested-topics-to-an-existing-bot).
-
-> [!IMPORTANT]
-> The **Suggest topics** command is built to run on online FAQ or support content. Other types of content with a different structure might not work as expected.
 
 1. Select **Topics** on the side pane.
 
@@ -63,26 +90,19 @@ After the extraction is complete, you'll be shown the suggested topics for furth
 
 1. Select **Get started** or **Suggest topics**.
 
-1. Enter links to each webpage or online file from which you want to extract content, and then select **Add**. If you add a link by mistake, you can remove it by selecting **Delete** :::image type="content" source="media/advanced-create-topics-from-web/delete-suggested-topic.png" alt-text="Delete." border="false":::.
+1. Enter links to each [supported webpage or online file](#supported-content) from which you want to extract content, and then select **Add**. If you add a link by mistake, you can remove it by selecting **Delete** :::image type="content" source="media/advanced-create-topics-from-web/delete-suggested-topic.png" alt-text="Delete." border="false":::.
 
     :::image type="content" source="media/advanced-create-topics-from-web/suggested-web-wizard.png" alt-text="The Suggest topics page, where you enter URLs to extract suggested topics from." border="false":::
 
-    > [!IMPORTANT]
-    >
-    > - The URLs must be secure (they must start with *https://*).
-    > - The URLs must be publicly available, that is, they can't need a user to log in.
-    > - For online files, we do not support file upload. You must provide the full URL to the location of the file, including the file extension, as in the example *https://www.microsoft.com/thisisafile.pdf*.
-    > - For online files, we currently support PDF, DOCX, PPTX, TXT files and 2-column formats in TSV, XLSX (first sheet only), and CSV. The file extension must be included in the URL.
+    > [!TIP]
+    > You can add multiple webpages and links to online files, but we recommend that you include only a few at a time to keep the list of suggestions manageable.
 
 1. When you're done adding links to webpages and/or online files, select **Start**. The process can take several minutes, depending on the complexity and number of webpages or files you added. The message "Getting your suggestions. This may take several minutes" appears at the top of the screen while the extraction is in progress.
 
     :::image type="content" source="media/advanced-create-topics-from-web/suggested-web-wait.png" alt-text="An alert that says Getting your suggestions. This may take several minutes appears at the top of the page.":::
 
-> [!TIP]
-> You can add multiple webpages and links to online files, but we recommend that you include only a few at a time to keep the list of suggestions manageable.
-
-> [!IMPORTANT]
-> You won't be able to add more URLs while the **Suggest topics** command is running.
+    > [!IMPORTANT]
+    > You can't add more URLs while the **Suggest topics** command is running.
 
 The tool provides explicit feedback about errors so that you can understand and address any issues. For example, you might be unable to extract content because the site you're referencing is down or it may be gated behind a user login, such as a SharePoint page.
 

@@ -167,7 +167,7 @@ For those customers that implement network restrictions, ensure access to the fo
 *.dynamics365portals.us
 
 
-Also, refer to the [Required IP Ranges](https://www.microsoft.com/download/confirmation.aspx?id=57063) to enable access to Dataverse environments that users and administrators may create within your tenants well as other Azure services leveraged by the platform:
+Also, refer to the [Required IP Ranges](https://www.microsoft.com/download/confirmation.aspx?id=57063) to enable access to environments that users and administrators may create within your tenants well as other Azure services leveraged by the platform:
 
 - GCC and GCC High: (Focus on AzureCloud.usgovtexas and AzureCloud.usgovvirginia)
 - DoD:  Focus on USDoD East and USDoD Central 
@@ -190,7 +190,7 @@ Also, refer to the [Required IP Ranges](https://www.microsoft.com/download/confi
 *.crm.appsplatform.us (DoD) <br />
 *.appsplatformportals.us (DoD) 
 
-Also, refer to the [Required IP Ranges](https://www.microsoft.com/download/confirmation.aspx?id=57063) to enable access to Dataverse environments that users and administrators may create within your tenant as well as other Azure services leveraged by the platform:
+Also, refer to the [Required IP Ranges](https://www.microsoft.com/download/confirmation.aspx?id=57063) to enable access to environments that users and administrators may create within your tenant as well as other Azure services leveraged by the platform:
 
 - GCC and GCC High: (Focus on AzureCloud.usgovtexas and AzureCloud.usgovvirginia)
 - DoD:  Focus on USDoD East and USDoD Central 

@@ -1,18 +1,17 @@
 ---
 title: "Migrate an environment to a different tenant"
-description: "Learn about the impact of moving an environment from one tenant to another. Review the prerequisites and considerations before submitting a request." 
-ms.custom: ""
-ms.date: 02/07/2022
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+description: "Learn about the impact of migrating an environment from one tenant to another. Review the prerequisites and considerations before submitting a request." 
+ms.date: 06/13/2022
+ms.topic: conceptual
 applies_to: 
   - "Dynamics 365 (online)"
 author: matapg007
+contributors:
+  - ImadYanni
+  - bevans 
 ms.subservice: admin
 ms.author: matgupta
 ms.reviewer: jimholtz
-ms.assetid: 
 search.audienceType: 
   - admin
 search.app:
@@ -21,33 +20,34 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Tenant-to-tenant migration
+# Tenant-to-tenant migration 
 
-## Move an environment to a different tenant
+## Migrate an environment to a different tenant
 
-You can use the tenant-to-tenant migration feature to request an environment in one tenant be moved to another tenant. This feature enables customers to support the following cases:
+You can use the tenant-to-tenant migration feature to request an environment in one tenant be moved<sup>*</sup> to another tenant. This feature enables customers to support the following cases:
 
 - Consolidate multiple tenants under one tenant
 - Support acquisition from Company A to Company B
+
+<sup>*</sup>The environment is not actually physically moved but instead is associated with another tenant. The environment still exists but is no longer under the source tenant. It is available and managed under the destination tenant.
 
 You need to [submit a support request](get-help-support.md) to initiate tenant-to-tenant migration. 
 
 There are no user interface changes or version changes as part of this move. You can move one or multiple environments. Once complete, your environment(s) will appear in your new tenant.
 
 > [!IMPORTANT]
-> If moving individual environments from one tenant to another requires a geographical region change, your tenant becomes a multiregional tenant. Regional features are enabled in the Power Platform admin center by support team. More information: [Geo to geo migrations](geo-to-geo-migrations.md).
-> 
-> You might need to reconfigure some applications and settings after tenant-to-tenant migration, such as Microsoft Dynamics 365 for Outlook, server-side sync, SharePoint integration, or others.
->
-> Geographical region changes aren't supported into or out of US GCC, US GCC High, US DoD, OCE, IND, or China.
-> 
-> Existing source database backups won't be migrated to destination tenant.
+> - If moving individual environments from one tenant to another requires a geographical region change, your tenant becomes a multiregional tenant. Regional features are enabled in the Power Platform admin center by support team. More information: [Geo to geo migrations](geo-to-geo-migrations.md). 
+> - You might need to reconfigure some applications and settings after tenant-to-tenant migration, such as Microsoft Dynamics 365 for Outlook, server-side sync, SharePoint integration, or others.
+> - Geographical region changes aren't supported into or out of US GCC, US GCC High, US DoD, OCE, IND, or China.
+> - Existing source database backups won't be migrated to destination tenant.
+> - Linking a Dataverse organization to a Finance and Operations organization is not supported.
+> - Tenant-to-tenant migration isn't supported when [Customer Lockbox](about-lockbox.md#enable-the-lockbox-policy) is enabled. You must disable Customer Lockbox to move an environment to another tenant. You can re-enable Customer Lockbox once the migration is completed.
 
 ### Supported applications and platforms
 
 | Supported | Not fully supported<sup>*</sup> |
 |-------------------------|-------------------------|
-| <ul></br><li>Dataverse</li></br><li>Dynamics apps</li></br></ul> | <ul></br><li>Power Apps</li></br><li>Power Automate</li></br><li>Power Virtual Agents</li></br></ul> |
+| <ul><li>Dataverse</li><li>Dynamics apps</li></ul> | <ul><li>Canvas app</li><li>[Component library](/power-apps/maker/canvas-apps/component-library)</li><li>[Custom pages](/power-apps/maker/model-driven-apps/model-app-page-overview)</li><li>Power Automate</li><li>Power Virtual Agents</li></ul> |
 
 <sup>*</sup>There may be potential data loss during migration and additional steps required. [Confirm if any of the solutions below are installed in the environments to be migrated, as these may require additional steps either from you or Support.](#confirm-if-any-of-the-solutions-below-are-installed-in-the-environments-to-be-migrated-as-these-may-require-additional-steps-either-from-you-or-support)
 
@@ -55,7 +55,7 @@ There are no user interface changes or version changes as part of this move. You
 
 | Supported | Not supported |
 |-------------------------|-------------------------|
-| <ul></br><li>Migrating production environment</li></br><li>Migrating sandbox environment</li></br><li>Migrating tenants from GCC to GCC</li></br><li>One or multiple environments</li></br></ul> | <ul></br><li>Migrating default environment</li></br><li>Migrating teams environment</li></br><li>Migrating trial environment</li></br><li>Migrating demo environment</li></br><li>Migrating  developer environment</li></br><li>Migrating tenants from GCC to another geo or from another geo to GCC</li></ul> |
+| <ul><li>Migrating production environment</li><li>Migrating sandbox environment</li><li>Migrating tenants from GCC to GCC</li><li>One or multiple environments</li></ul> | <ul><li>Migrating default environment</li><li>Migrating teams environment</li><li>Migrating trial environment</li><li>Migrating demo environment</li><li>Migrating  developer environment</li><li>Migrating tenants from GCC to another geo or from another geo to GCC</li></ul> |
 
 ### Migration flow
 Once a migration request is submitted, the support team is engaged to review the request manually. Below is the list of steps performed during the entire migration process.
@@ -114,20 +114,22 @@ You'll also need to provide the following information:
    1. Create users in Microsoft 365/Azure AD.
    2. Assign licenses.
 5. Once the users are created and enabled, the mapping file will need to be generated following the steps <a href="#steps-to-create-the-mapping-file">described later in this topic</a>.
-6. If there are any solutions for Power Apps or Power Automate flows, these need to be exported from the [Power Apps maker portal](https://make.powerapps.com) and imported again into the new environment after the migration.
+6. If there are any solutions for Power Apps or Power Automate flows, these need to be exported from [Power Apps](https://make.powerapps.com) and imported again into the new environment after the migration.
 
 ### Confirm if any of the solutions below are installed in the environments to be migrated, as these may require additional steps either from you or Support:
  
 - Power Apps or Power Automate
 - Power Virtual Agents
 - Dynamics 365 Customer Voice
-- Power Apps portals
+- Power Apps Portals
 - Power Apps Checker App
 - Café X
 - Forms Pro
 - SharePoint
-- Mailboxes (If the mapped user has a mailbox in the destination environment, then the mailbox is automatically provisioned during the migration. For all other users, you will need to reconfigure the mailbox.)
 - Dynamics 365 Marketing 
+- Mailboxes. If the mapped user has a mailbox in the destination environment, then the mailbox is automatically configured during the migration. For all other users, you will need to reconfigure the mailbox:
+  1. If the same mailbox is used in the target tenant (test@microsoft.com) then the mailbox will be enabled by default. Before the tenant-to-tenant process, customers need to migrate/configure their mailboxes on the target tenant.
+  2. If you are using the default onmicrosoft domain (test@sourcecompanyname.onmicrosoft.com), the post migration domain name is changed (test@targetcompanyname.onmicrosoft.com). Customers need to reconfigure the mailbox. To configure the mailbox, see [Connect to Exchange Online](connect-exchange-online.md).
 
 ### Steps to create the mapping file
  
@@ -162,7 +164,7 @@ For administrative access users:
       Note: If the destination user is not assigned any license, the migration will fail.
    3. Save the CSV file which has both full access users and administrative access users mapped.
 
-### Do the following steps for Power Apps, Power Automate, Power Virtual Agents, Power Apps portals, and Marketing before and after the migration: 
+### Do the following steps for Power Apps, Power Automate, Power Virtual Agents, Power Apps Portals, and Marketing before and after the migration: 
 
 #### For Power Apps and Power Automate: 
 
@@ -209,20 +211,17 @@ After the migration:
 2. Select **Import** and use the file selector to pick the packages exported from the above steps.
 3. Confirm that the import was successfully completed by checking the solution contents in the target environment. 
 
-#### For Power Apps portals (must be done for each portal in the environment(s)): 
+#### For Power Apps Portals (must be done for each portal in the environment(s)): 
               
 Before the migration: 
 1. Sign in to the environment.
-2. Open the [Power Apps portals admin center](/powerapps/maker/portals/admin/admin-overview#open-power-apps-portals-admin-center).
+2. Open the [Power Apps Portals admin center](/powerapps/maker/portals/admin/admin-overview#open-power-apps-portals-admin-center).
 3. [Reset](/powerapps/maker/portals/admin/reset-portal) the portal.
 
 After the migration: 
 1. Sign in to the environment.
-2. Open the [Power Apps portals admin center](/powerapps/maker/portals/admin/admin-overview#open-power-apps-portals-admin-center).
+2. Open the [Power Apps Portals admin center](/powerapps/maker/portals/admin/admin-overview#open-power-apps-portals-admin-center).
 3. Provision the portal with the same portal type and language.
-
-> [!NOTE]
-> The following configurations are not preserved by the portal reset and must be configured again in the new portal. 
 
 #### For Dynamics 365 Marketing:
 

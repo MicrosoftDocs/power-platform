@@ -1,10 +1,9 @@
 ---
 title: "Microsoft Power Platform icons | MicrosoftDocs"
-description: "Icons for use in building architecture diagrams and illustrations for Microsoft Power Platform."
+description: "Official icons for use in building architecture diagrams and illustrations for Microsoft Power Platform (Power Platform, Power Apps, Power Automate, Power BI, Power Pages, Power Virtual Agents, Dataverse, AI Builder, and Power Fx)."
 author: KumarVivek
-
 ms.topic: conceptual
-ms.date: 06/03/2021
+ms.date: 06/06/2022
 ms.subservice: guidance
 ms.author: kvivek
 ms.reviewer: kvivek
@@ -12,13 +11,13 @@ ms.reviewer: kvivek
 
 # Microsoft Power Platform icons
 
-This article provides information about the official collection of icons for Microsoft Power Platform (Power Apps, Power Automate, Power BI, and Power Virtual Agents) that you can use in architectural diagrams, training materials, or documentation.
+This article provides information about the official collection of icons for Microsoft Power Platform (Power Platform, Power Apps, Power Automate, Power BI, Power Pages, Power Virtual Agents, Dataverse, AI Builder, and Power Fx) that you can use in architectural diagrams, training materials, or documentation.
 
 ### Do’s
 
 - Use the icon to illustrate how products can work together
 - In diagrams, we recommend including the product name somewhere close to the icon
-- Use the icons as they would appear within Microsoft Power Platform or individual products (Power Apps, Power Automate, Power BI, and Power Virtual Agents)
+- Use the icons as they would appear within Microsoft Power Platform or individual products (Power Apps, Power Automate, Power BI, Power Pages, Power Virtual Agents, Dataverse, and AI Builder)
 
 ### Don’ts
 
@@ -30,6 +29,8 @@ This article provides information about the official collection of icons for Mic
 
 |Month|Change description|
 |---|---|
+|June 2022|Added icon for Power Fx.|
+|May 2022|Added icons for Power Platform, Power Pages, and AI Builder.|
 |June 2021|This article was created with the download location of the official icons.|
 
 ## Terms

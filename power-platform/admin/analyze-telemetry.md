@@ -1,10 +1,10 @@
 ---
-title: "Analyze model-driven apps and Dataverse telemetry with Application Insights (preview) | Microsoft Docs"
+title: "Analyze model-driven apps and Dataverse telemetry with Application Insights  | Microsoft Docs"
 description: About analyzing model-driven apps and Microsoft Dataverse telemetry with Application Insights
 services: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/27/2021
+ms.date: 05/06/2022
 author: tjvass
 ms.subservice: admin
 ms.author: tjvass
@@ -17,17 +17,10 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Analyze model-driven apps and Microsoft Dataverse telemetry with Application Insights (preview)
+# Analyze model-driven apps and Microsoft Dataverse telemetry with Application Insights
 <!-- fwlink: 2147020 2151390 -->
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
-
 You can set up an Application Insights environment to receive telemetry on diagnostics and performance captured by the Dataverse platform.
-
-> [!IMPORTANT]
-> - This is a preview feature.
-> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
-> - This feature is being gradually rolled out across regions and might not be available yet in your region.
 
 You can subscribe to receive telemetry about operations that applications perform on your Dataverse database and within model-driven apps. This telemetry provides information that you can use to diagnose and troubleshoot issues related to errors and performance.
 
@@ -36,7 +29,7 @@ You don't need to write any code to enable this telemetry. You can enable or dis
 [Application Insights](/azure/azure-monitor/app/app-insights-overview) is part of the Azure Monitor ecosystem. It's widely used by enterprises for monitoring and diagnostics. Many customers have added code to their extensions to capture this data into their Application Insights environments. This additional code has a cost, however&mdash;not only the cost to write and maintain, but also a performance cost at runtime. These costs can be avoided by using Application Insights built-in integration.
 
 > [!NOTE]
-> Enablement of Application Insights is limited to customers with a paid/premium Dataverse licenses available for the tenant. Details of additional licensing requirements will be provided in admin documentation and in general availability [release plans](/dynamics365/release-plans/). Additional details on minimum Dataverse capacity requirements to access the Data Export features will be announced in advance of general availability.
+> Enablement of Application Insights is limited to customers with a paid/premium Dataverse licenses available for the tenant.
         
 ## Why do I need telemetry?
 
@@ -48,7 +41,7 @@ You can also use telemetry to observe overall performance trends so you can proa
 
 ## How does it work?
 
-Microsoft already gathers extensive telemetry on Dataverse and model-driven apps. With Application Insights integration, an environment or tenant admin provides the Application Insights instrumentation key while setting up the data export process in the Power Platform admin center. As soon as setup is complete, telemetry that Microsoft gathers about your Dataverse environment and any model-driven apps that use Application Insights are sent to your Application Insights environment. More information: [Create an Application Insights resource](/azure/azure-monitor/app/create-new-resource)
+Microsoft already gathers extensive telemetry on Dataverse and model-driven apps. With Application Insights integration, an environment or tenant admin provides the Application Insights instrumentation key while setting up the data export process in the Power Platform admin center. As soon as setup is complete, telemetry that Microsoft gathers about your environment and any model-driven apps that use Application Insights are sent to your Application Insights environment. More information: [Create an Application Insights resource](/azure/azure-monitor/app/create-new-resource)
 
 If you decide to opt out, you can go to the Power Platform admin center and delete the data export connection. This will stop the data export process. You can restart the process any time.
 
@@ -82,5 +75,8 @@ For canvas apps, an [existing capability](https://powerapps.microsoft.com/blog/l
 
 Dataverse includes all the requests made on the server. You'll be able to see how the requests are processed within the web server. You won't get detailed information from the database itself, except for the duration of time spent processing the operation. You also won't have telemetry related to the physical resources of the server, such as memory consumption. More information: [Telemetry events for Dataverse](telemetry-events-dataverse.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
 
 

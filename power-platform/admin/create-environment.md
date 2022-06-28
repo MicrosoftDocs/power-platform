@@ -3,8 +3,8 @@ title: Create and manage environments in the Power Platform admin center | Micro
 description: About creating and manage environments in the Power Platform admin center
 author: jimholtz
 ms.component: pa-admin
-ms.topic: quickstart
-ms.date: 02/08/2022
+ms.topic: conceptual
+ms.date: 06/24/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -18,16 +18,6 @@ search.app:
 # Create and manage environments in the Power Platform admin center
 
 An environment is a space to store, manage, and share your organization's business data, apps, and flows. It also serves as a container to separate apps that may have different roles, security requirements, or target audiences. Power Apps automatically creates a single default environment for each tenant, which is shared by all users in that tenant.
-
-## Provisioning a new environment
-You can provision a new environment based on [available capacity](capacity-storage.md). See the section [Create an environment in the Power Platform admin center](#create-an-environment-in-the-power-platform-admin-center).
-
-### What's new in provisioning environments
-We're consolidating how you view, create, and manage environments. 
-
-- **Environments can now be provisioned in the Microsoft Power Platform admin center**: You can create environments in the Power Platform admin center. Previously, environments could only be created in the Dynamics 365 admin center and the Power Apps admin center. 
-- **Admins can govern environment creation**: To limit environment creation to admins (Dynamics 365 admins, Global admins, or Power Platform admins), see [Control who can create environments in the Power Platform admin center](control-environment-creation.md). Previously, limiting was done by controlling who had Power Apps P2 licenses.  
-- **Trial environment provisioning**: You can create one trial environment per user. Previously, you could create two per user. See [About trial environments](trial-environments.md).
 
 ## Who can create environments?
 

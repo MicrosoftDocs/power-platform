@@ -2,11 +2,9 @@
 title: "View and manage settings for Microsoft Power Platform"
 description: "Configure settings for Microsoft Power Platform, including governance, themes, notifications, password, and contact preferences."
 author: jimholtz
-manager: kvivek
-
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/17/2020
+ms.date: 04/06/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -28,7 +26,10 @@ Configuring the settings for Power Platform admin center, such as the view theme
 > [!div class="mx-imgBorder"] 
 > ![Power Platform settings.](media/power-platform-settings.png "Microsoft Power Platform settings")
 
-Review and modify the following settings:
+## Prerequisites
+The [Power Platform administrator role](use-service-admin-role-manage-tenant.md#power-platform-administrator) is required to view these settings and the [Global admin role](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide) to update these settings.
+
+## Settings
 
 |Setting |Description |
 |---------|---------|

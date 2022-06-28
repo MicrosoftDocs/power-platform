@@ -1,13 +1,14 @@
 ---
-title: "Overview of integration with Application Insights (preview) | Microsoft Docs"
+title: "Overview of integration with Application Insights  | Microsoft Docs"
 description: About integration with Application Insights
 services: powerapps
-author: jimholtz
 ms.component: pa-admin
-ms.topic: conceptual
-ms.date: 07/16/2021
+ms.topic: overview
+ms.date: 05/06/2022
+author: tjvass
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: tjvass
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:
@@ -16,16 +17,9 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Overview of integration with Application Insights (preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Overview of integration with Application Insights 
 
 Application Insights, a feature of Azure Monitor, is widely used within the enterprise landscape for monitoring and diagnostics. Data that has already been collected from a specific tenant or environment is pushed to your own Application Insights environment. The data is stored in Azure Monitor logs by Application Insights, and visualized in [Performance](/azure/azure-monitor/learn/tutorial-performance) and [Failures](/azure/azure-monitor/learn/tutorial-runtime-exceptions) panels under **Investigate** on the left pane. The data is exported to your Application Insights environment in the standard schema defined by Application Insights. The support, developer, and admin personas can use this feature to triage and resolve issues.
-
-> [!IMPORTANT]
-> - This is a preview feature.
-> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
-> - This feature is being gradually rolled out across regions and might not be available yet in your region.
 
 ## What telemetry and which tables are being populated in Application Insights?
 
@@ -40,9 +34,9 @@ Application Insights, a feature of Azure Monitor, is widely used within the ente
 
 Application Insights has a wide range of features to help you use this data:
 
-- [Create a dashboard](/azure/azure-monitor/learn/tutorial-logs-dashboards) for an overview of the health of your org.
+- [Create a dashboard](/azure/azure-monitor/visualize/tutorial-logs-dashboards) for an overview of the health of your org.
 - Perform proactive monitoring by using [Smart Detection](/azure/azure-monitor/app/proactive-diagnostics).
-- [Set up alerts](/azure/azure-monitor/learn/tutorial-alert) for important scenarios based on your org.
+- [Set up alerts](/azure/azure-monitor/app/tutorial-alert) for important scenarios based on your org.
 - Visualize and track common [navigation patterns](/azure/azure-monitor/app/usage-flows) from a usage perspective. This will help you understand, for example, whether a user always selects a specific tab first before navigating back to the main tab and closing the form. If so, this might indicate that a field should be positioned on the first tab, instead of another tab, to save the user time every time they open this record.
 - Create custom queries to troubleshoot performance and errors by using the [**Logs**](/azure/azure-monitor/log-query/log-query-overview) panel under **Monitoring** on the left pane.
 
@@ -134,3 +128,10 @@ All the [tables](#what-telemetry-and-which-tables-are-being-populated-in-applica
 - **client_Type**: The value here is **Browser** if the logs are coming from Unified Interface and **Server** if the logs are coming from Dataverse. Note that the userAgent can be found in the **requests** table under **customDimensions**, when available.
 
 Because the Application Insights schema is fixed, and this feature pushed data into Application Insights as an export process, the **customDimensions** fields in Application Insights are used to add properties.
+
+
+
+
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

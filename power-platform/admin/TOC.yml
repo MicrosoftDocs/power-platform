@@ -110,10 +110,10 @@
           href: enable-hybrid-experience.md
     - name: Environments
       items:
+      - name: Environments overview
+        href: environments-overview.md
       - name: Manage environments 
-        items:
-        - name: Environments overview
-          href: environments-overview.md
+        items:        
         - name: Create environment
           href: create-environment.md
         - name: Control environment creation
@@ -130,8 +130,6 @@
           href: reset-environment.md
         - name: Copy environment
           href: copy-environment.md
-        - name: Move environment
-          href: move-environment-tenant.md
         - name: Back up and restore environment
           href: backup-restore-environments.md
         - name: Business continuity and disaster recovery
@@ -229,11 +227,11 @@
           - name: Audit settings
             href: system-settings-dialog-box-auditing-tab.md
           - name: Audit summary view 
-            href: audit-data-user-activity.md#view-audit-logging-details
+            href: manage-dataverse-auditing.md#view-audit-logging-details
           - name: Entity and field audit settings 
-            href: audit-data-user-activity.md#enable-or-disable-entities-and-fields-for-auditing
+            href: manage-dataverse-auditing.md#enable-or-disable-entities-and-fields-for-auditing
           - name: System jobs
-            href: monitor-manage-system-jobs.md
+            href: manage-dataverse-auditing.md#monitoring-system-jobs
         - name: Templates
           items:
           - name: Access team templates
@@ -362,6 +360,10 @@
         items:
         - name: Environment cleanup process
           href: automatic-environment-cleanup.md
+        - name: Migrate environment
+          href: move-environment-tenant.md          
+        - name: Geo to geo migrations
+          href: geo-to-geo-migrations.md  
         - name: Power Platform Geos
           href: regions-overview.md
         - name: Multiple online environments or tenants
@@ -382,8 +384,10 @@
         href: security/overview.md
       - name: Authenticating to Power Platform services
         href: security/authenticate-services.md
-      - name: Data storage in Power Platform
+      - name: Data storage and governance
         href: security/data-storage.md
+      - name: Securely access customer data using Customer Lockbox (preview)
+        href: about-lockbox.md
       - name: Connecting and authenticating to data sources
         href: security/connect-data-sources.md
       - name: Security and governance considerations
@@ -429,6 +433,8 @@
             href: dlp-endpoint-input-formats-examples.md
           - name: DLP for custom connectors
             href: dlp-custom-connector-parity.md 
+          - name: DLP for Power Automate
+            href: /power-automate/prevent-data-loss
           - name: DLP for desktop flows
             href: /power-automate/prevent-data-loss#data-loss-prevention-dlp-for-desktop-flows-preview 
           - name: Disable new connectors
@@ -543,37 +549,33 @@
           href: analytics-flow.md
         - name: Analytics for UI flows
           href: analytics-ui-flow.md 
-      - name: Reports (preview)
+      - name: Reports
         items:
-        - name: "Tenant-level analytics (default)" 
+        - name: Tenant-level analytics (default)
           href: tenant-level-analytics.md
-        - name: "Power Apps analytics"
+        - name: Power Apps analytics
           href: powerapps-analytics-reports.md
-        - name: "Power Automate analytics"
+        - name: Power Automate analytics
           href: power-automate-analytics-reports.md
-        # Comment out the next topics before publish      
-        # - name: "Power Apps license utilization"
-        #   href: powerapps-license-utilization.md
       - name: Data export (preview)
         items:
         - name: "Export Power Apps inventory and usage data"
           href: self-service-analytics.md
-        # Comment out the next topic before publish    
-        # - name: "Self-service analytics schema definition"
-        #   href: self-service-analytics-schema-definition.md
+        - name: "Self-service analytics schema definition"
+          href: self-service-analytics-schema-definition.md
         - name: "Create custom dashboards using Power Apps inventory and usage data"
           href: build-custom-reports.md
-      - name: "Analyze telemetry with Application Insights (preview)"
+      - name: Analyze telemetry with Application Insights
         items:
-        - name: "Model-driven apps and Microsoft Dataverse telemetry"
+        - name: Model-driven apps and Microsoft Dataverse telemetry
           href: analyze-telemetry.md
-        - name: "Overview of integration with Application Insights"
+        - name: Overview of integration with Application Insights
           href: overview-integration-application-insights.md
-        - name: "Telemetry events for model-driven apps" 
+        - name: Telemetry events for model-driven apps
           href: telemetry-events-model-driven-apps.md
-        - name: "Telemetry events for Dataverse"
+        - name: Telemetry events for Dataverse
           href: telemetry-events-dataverse.md   
-        - name: "Set up export to Application Insights"
+        - name: Set up export to Application Insights
           href: set-up-export-application-insights.md
     - name: Storage
       items: 
@@ -585,8 +587,12 @@
         href: legacy-capacity-storage.md
       - name: View self-service capacity
         href: view-self-service-capacity.md
-      - name: Free up storage space
-        href: free-storage-space.md        
+      - name: Free up storage
+        items:
+        - name: Recover storage space
+          href: free-storage-space.md  
+        - name: Clean up AsyncOperationBase and WorkflowLogBase tables
+          href: cleanup-asyncoperationbase-table.md
       - name: Add storage capacity
         href: add-storage.md      
       - name: Access storage with SAS token
@@ -613,8 +619,8 @@
         href: logging-power-automate.md 
       - name: Data loss prevention activity logging
         href: dlp-activity-logging.md
-      - name: Audit data and user activity for Dynamics 365 entities
-        href: audit-data-user-activity.md
+      - name: Manage Dataverse auditing
+        href: manage-dataverse-auditing.md
       - name: Dataverse and model-driven apps
         href: enable-use-comprehensive-auditing.md   
     - name: Programmability and extensibility
@@ -624,11 +630,19 @@
       - name: Versioning and support
         href: programmability-versioning-support.md
       - name: Authentication
-        href: programmability-authentication.md
+        items:
+        - name: Authentication - legacy
+          href: programmability-authentication.md
+        - name: Authentication (preview)
+          href: programmability-authentication-v2.md
+      - name: Permission reference (preview)
+        href: programmability-permission-reference.md
       - name: Tutorials
         items:
         - name: "Create a daily capacity report (preview)"
           href: programmability-tutorial-create-daily-capacity-report.md
+        - name: "Install an application to a target environment (preview)"
+          href: programmability-tutorial-install-application-environment.md
       - name: PowerShell
         items:
         - name: Getting started
@@ -637,25 +651,27 @@
           href: powershell-installation.md
         - name: Creating a service principal
           href: powershell-create-service-principal.md
-        - name: Cmdlet Reference
-          href: /powershell/module/microsoft.powerapps.administration.powershell/?view=pa-ps-latest
+        - name: Cmdlet reference
+          href: /powershell/module/microsoft.powerapps.administration.powershell
       - name: Connectors
         items:
         - name: Getting started
           href: connectors-getting-started.md
         - name: Connector reference
           href: /connectors/powerplatformforadmins/
-      - name: Power Platform API
+      - name: Power Platform API (preview)
         items:
         - name: Getting started
           href: powerplatform-api-getting-started.md
-        - name: "Creating a service principal (preview)"
+        - name: Creating a service principal
           href: powerplatform-api-create-service-principal.md
         - name: Reference
           items:
+          - name: "2022-03-01-preview"
+            href: /rest/api/power-platform
           - name: "2020-10-01"
             items:
-            - name: Environments (preview)
+            - name: Environments
               items:
               - name: "List environments"
                 href: list-environments.md
@@ -663,7 +679,7 @@
                 href: create-dataverseapplicationuser.md
             - name: Tenant Settings
               items:
-              - name: "List tenant settings (preview)"
+              - name: "List tenant settings"
                 href: list-tenantsettings.md
     - name: PowerShell support for Power Apps 
       items:
@@ -750,8 +766,6 @@
         href: delete-bulk-records.md
       - name: View and take action on bulk deletion jobs
         href: view-take-action-bulk-deletion-jobs.md
-      - name: Monitor and manage system jobs
-        href: monitor-manage-system-jobs.md
       - name: Remove user personal data
         href: remove-user-personal-data.md
       - name: Recover database space by deleting audit logs
@@ -810,6 +824,8 @@
             href: supported-email-service-configurations-server-side-synchronization.md
           - name: Connect to Exchange Online
             href: connect-exchange-online.md
+          - name: Use of Basic authentication with Exchange Online
+            href: use-basic-authentication-exchange-online.md
           - name: Exchange Online cross tenant authentication
             href: connect-exchange-online-server-profile-oauth.md 
           - name: Connect to Exchange Server (on-premises)
@@ -842,6 +858,8 @@
               href: email-message-filtering-correlation.md 
             - name: Associate an email address with a row
               href: associate-email-address.md
+            - name: How is an email record owner determined
+              href: email-record-owner.md
             - name: Create queue items from incoming email
               href: create-queue-items-from-synchronized-email-messages.md
           - name: Configure appointment, contact, and task synchronization

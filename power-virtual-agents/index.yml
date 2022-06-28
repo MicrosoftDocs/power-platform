@@ -12,7 +12,7 @@ metadata:
   ms.topic: hub-page # Required
   author: iaanw #Required; your GitHub user alias, with correct capitalization.
   ms.author: iawilt #Required; microsoft alias of author; optional team alias.
-  ms.date: 09/22/2020 #Required; mm/dd/yyyy format.
+  ms.date: 05/24/2022 #Required; mm/dd/yyyy format.
   ms.custom: intro-internal
   hide_bc: false
 
@@ -50,7 +50,7 @@ highlightedContent:
     # Card
     - title: Register for a free virtual Power Virtual Agents in a Day workshop
       itemType: learn
-      url: https://powerplatform.microsoft.com/en-us/training-workshops/?accordion=1&tab=6
+      url: https://powerplatform.microsoft.com/training-workshops/?accordion=1&tab=6
 
 # conceptualContent section
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -157,6 +157,9 @@ additionalContent:
         - title: Power BI
           summary: Turn your unrelated sources of data into coherent, visually immersive, and interactive insights.
           url: /power-bi
+        - title: Power Pages
+          summary: Design, host, and administer secure, modern, and low-code business websites.
+          url: /power-pages
 
     - title: See also
       items:

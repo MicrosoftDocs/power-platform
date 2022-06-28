@@ -78,6 +78,7 @@ The [sync flows](#flows) of the CoE Starter Kit sync your tenant resources to th
   - Type (scope, for each, Microsoft 365 users)
   - Operation (for connectors, such as Send Email and List Items)
   - Is trigger (yes/no)
+  - Flow Action Detail Metadata (for example, host for HTTP calls)
 
 - **PowerApps Connector** represents a standard or custom connector. The following information is available for each connector:
   - Connector ID
@@ -88,6 +89,14 @@ The [sync flows](#flows) of the CoE Starter Kit sync your tenant resources to th
   - Publisher
   - Tier (standard/premium)
 
+- **Connection Reference** represents the linking table for the many-to-many relationships among connectors (PowerApps Connector) and cloud flows (Flows) or apps (PowerApps App).
+
+- **Connection Reference Identity** stores the connections for each environment including their identity
+  - Environment
+  - Connector
+  - accountName (the account used to create the connection)
+  - NoneOrCrossTenantIdentity (true if not @yourTenant account)
+
 - **Power Apps Portal** represents a Power Apps portal. The following information is available for each portal:
   - Portal Website ID
   - Portal Website Name
@@ -97,8 +106,6 @@ The [sync flows](#flows) of the CoE Starter Kit sync your tenant resources to th
   - Created on
   - Modified on
   - Portal is orphaned
-
-- **Connection Reference** The linking table for the many-to-many relationships among connectors (PowerApps Connector) and cloud flows (Flows) or apps (PowerApps App).
 
 - **Maker** represents a user who has created an app, flow, custom connector, or environment. The following information is available for each maker (retrieved from Microsoft 365 Users profiles):
   - Display name
@@ -205,6 +212,16 @@ Additional to the above listed inventory tables, the following helper tables sup
   - Environment
   - Created on
 
+- **CoE Solution Metadata** holds meta-data about flows and apps part of the CoE Starter Kit in a table and is used in the [Admin | Command Center](#admin---command-center):
+  - CoE Solution (Core, Governance, Nurture, Audit Log)
+  - CoE Solution Area (for example, Inventory, Compliance, ...)
+  - Object Type (app or flow)
+  - Object URL
+  - Object GUID
+  - Ship On
+  - Flag
+  - Help Link (link to documentation)
+
 > [!NOTE]
 > To easily explore and manage data stored in Dataverse, we recommend that you install the [Microsoft Power Apps Office Add-in](https://appsource.microsoft.com/product/office/WA104380330?tab=Overview). More information: [Working with data in Dataverse using the Excel Add-in!](https://powerapps.microsoft.com/blog/cds-for-apps-excel-importexport/)
 
@@ -224,6 +241,8 @@ Additional to the above listed inventory tables, the following helper tables sup
 | Admin \| Sync Template v3 (Apps) | Automated | triggered by Admin \| Sync Template v3 | This flow gets app information by using [Get Apps as Admin](/connectors/powerappsforadmins/#get-apps-as-admin). This information is then created or updated in the PowerApps App table. |
 | Admin \| Sync Template v3 (Connectors) | Scheduled | Daily | This flow gets connector information by using [Get Connectors](/connectors/powerappsforappmakers/#get-connectors), and stores information such as the connector name, publisher, and tier. |
 | Admin \| Sync Template v3 (Custom Connector) | Automated | triggered by Admin \| Sync Template v3 | This flow gets custom connector information by using [Get Custom Connectors as Admin](/connectors/powerappsforadmins/#get-custom-connectors-as-admin), and stores information such as the name, endpoint, and created by/on. |
+| Admin \| Sync Template v3 (Connection Identities) | Automated | triggered by Admin \| Sync Template v3 | This flow gets connection identity information by using Get Connections as Admin. This information is then created or updated in the Connection Reference Identity table. |
+| Admin \| Sync Template v3 CoE Solution Metadata | Scheduled | weekly | Updates the CoE Solution Metadata table with values from MSFT CoE team after upgrades in order to track the solution contents of the CoE solutions. |
 | Admin \| Sync Template v3 (Desktop Flow - Runs) | Scheduled | Daily | This flow gets desktop flow run history and session details. Turning on this flow is optional, only turn this flow on if a tenant-level overview of desktop flows is important. |
 | Admin \| Sync Template v3 (Desktop Flow) | Automated | triggered by Admin \| Sync Template v3 | This flow retrieves desktop flow information. This information is retrieved from underlying Dataverse tables and requires the user running the flow to have system administrator privileges in the environment. Turning on this flow is optional, only turn this flow on if a tenant-level overview of desktop flows is important. |
 | Admin \| Sync Template v3 (Flow Action Details) | Scheduled | Daily | This flow gets the actions and triggers for all flows. This flow uses [Get Flow as Admin](/connectors/flowmanagement/#get-flow-as-admin) to get action and trigger details for every individual flow in your tenant. Thus, it can be a very time-consuming and resource-consuming flow to run. Turning on this flow is optional, only do so to perform action-level reporting or analysis, such as reporting on who's using the Send Email action of the Microsoft 365 Outlook connector. |
@@ -272,7 +291,7 @@ Use this app to:
 
 **Permission**: Intended to be used only by admins. Power Platform Service Admin or Global Admin permission is required. Share this app with your CoE Admins.
 
-**Prerequisite**: This app uses Microsoft Dataverse. If you have installed this solution in a Production environment, a Premium license is required for every app user. If you have installed this solution in a Dataverse for Teams environment, a Microsoft 365 license is required for every user.
+**Prerequisite**: This app uses Microsoft Dataverse and other premium connectors. A premium license is required for every app user in both Production and Dataverse for Teams environments.
 
 >[!NOTE]
 > When you first launch the app, bookmarks to all apps included in the CoE Starter Kit get created. Additionally add other relevant bookmarks such as links to the Power BI dashboard and your Power Platform wiki and community by selecting **Edit bookmarks**.
@@ -344,6 +363,7 @@ Use this app to:
 - Add additional information, such as notes and risk assessments, to your resources.
 - Set approved capacity for environments, and see capacity and add-on information per environment.
 - Complete [app audits](example-processes.md).
+- Manage capacity alerts.
 
 **Permission**: This app is intended to be used only by admins. Power Platform Service Admin or Global Admin permission is required. Share this app with your CoE admins.
 
@@ -352,8 +372,6 @@ Use this app to:
 You can use this app to see who an app is shared with, what roles (editor or viewer) the users have, and&mdash;for groups&mdash;what the size of the group is, all in a quick glance.
 
 ![Use Power Platform Admin View to see who an app is shared with.](media/coe-mda2.png "Use Power Platform Admin View to see who an app is shared with")
-
-You can use this app to see Microsoft Teams environments.
 
 ### Power BI report
 
@@ -421,7 +439,7 @@ Use this app to:
 
 **Prerequisite**: This app uses Microsoft Dataverse. If you have installed this solution in a Production environment, end users need to have a Per User license, or the app needs to be assigned a Per App license, or the environment needs to be covered by pay-as-you-go.  If you have installed this solution in a Dataverse for Teams environment, a Microsoft 365 license is required for every user.
 
-![Power Platform Resource RMS canvas app.](media\dev-resources-admin-details.png "Power Platform Resource RMS canvas app")
+![Admin - Environment Request canvas app.](media\dev-resources-admin-details.png "Admin - Environment Request canvas app")
 
 #### Environment Requests
 
@@ -436,7 +454,7 @@ Use this app to:
 
 **Prerequisite**: This app uses Microsoft Dataverse. If you have installed this solution in a Production environment, end users need to have a Per User license, or the app needs to be assigned a Per App license, or the environment needs to be covered by pay-as-you-go. If you have installed this solution in a Dataverse for Teams environment, a Microsoft 365 license is required for every user.
 
-![Power Platform Developer Resources canvas app.](media\dev-resources-maker-env.png "Power Platform Resource RMS canvas app")
+![Maker - Environment Request canvas app.](media\dev-resources-maker-env.png "Maker - Environment Request canvas app")
 
 ## Other core components
 

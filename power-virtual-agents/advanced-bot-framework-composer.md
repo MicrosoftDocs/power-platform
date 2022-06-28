@@ -116,14 +116,11 @@ There are a few key guidelines to follow when using Composer to create your bot 
 For a deep-dive on Bot Framework Composer **dialogs**, **events**, **triggers**, and how to create advanced bot content with Bot Framework, refer to the following resources:
 
 - [Bot Framework Composer dialogs](/composer/concept-dialog)
-- [Bot Framework Composer events and triggers](/composer/concept-events-and-trigger)
+- [Bot Framework Composer events and triggers](/composer/how-to-define-triggers)
 - [Language Generation](/composer/concept-language-generation)
 - [Conversation flow and memory](/composer/concept-memory)
 
-> [!NOTE]
-> Selecting **Publish** in Composer makes the changes available for testing, but does not automatically publish your Power Virtual Agents bot.  
->
-> Use the [Publish](publication-fundamentals-publish-channels.md) feature in Power Virtual Agents to publish your bot changes to channels.
+[!INCLUDE [Publish Composer](includes/composer-publish-note.md)]
 
 ## Composer features not supported with Power Virtual Agents
 
@@ -207,10 +204,7 @@ To learn more on how to set up and use Application Insights and create queries f
 
 ## Testing Bot Framework content with Power Virtual Agents
 
-> [!NOTE]
-> Selecting **Publish** in Composer makes the changes available for testing, but does not automatically publish your Power Virtual Agents bot.  
->
-> Use the [Publish](publication-fundamentals-publish-channels.md) feature in Power Virtual Agents to publish your bot changes to channels.
+[!INCLUDE [Publish Composer](includes/composer-publish-note.md)]
 
 Test the content you've created in Bot Framework Composer by publishing it to Power Virtual Agents and using the **Test bot** pane in Power Virtual Agents.
 

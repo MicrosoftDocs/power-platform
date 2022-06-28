@@ -65,7 +65,7 @@ This article will provide you with answers to frequently asked questions and tip
 
 ## Set flow run-only users properties
 
-1. Remove [unmanaged layers](after-setup.md#installing-upgrades) for all flows.
+1. Remove [unmanaged layers](after-setup.md) for all flows.
 1. Go to the details page, and then select the **Run only users** edit button.
 
     ![Find the setting for run-only users.](media/tips-flow2.png "Find the setting for run-only users")
@@ -166,6 +166,8 @@ If you aren't using the [Admin - Command Center](core-components.md#admin---comm
 ## Get a Power Apps URL from a production environment
 
 1. Go to [make.powerapps.com](https://make.powerapps.com), and then select your CoE environment.
+1. Select **Apps**.
+1. Select the app of which you need the URL from.
 1. Select **...** > **Details**.
 1. Select the **Web link**.
 

@@ -1,7 +1,7 @@
 ### YamlMime:Hub
 
 title: Microsoft Power Platform documentation # < 60 chars
-summary: Learn how to analyze data for insights using Power BI, quickly and easily build custom apps using Power Apps, automate workflows to improve business productivity using Power Automate, and build intelligent bots with a no-code interface using Power Virtual Agents.
+summary: Learn how to quickly and easily build custom apps using Power Apps, automate workflows to improve business productivity using Power Automate, analyze data for insights using Power BI, rapidly design, configure, and publish modern websites using Power Pages, and build intelligent bots with a no-code interface using Power Virtual Agents.
 # brand: aspnet | azure | dotnet | dynamics | m365 | office | sql | windows | visual-studio | xamarin
 brand: dynamics
 
@@ -12,7 +12,7 @@ metadata:
   ms.topic: hub-page # Required
   author: KumarVivek #Required; your GitHub user alias, with correct capitalization.
   ms.author: kvivek #Required; microsoft alias of author; optional team alias.
-  ms.date: 07/06/2021 #Required; mm/dd/yyyy format.
+  ms.date: 05/24/2022 #Required; mm/dd/yyyy format.
   hide_bc: false
 
 highlightedContent:
@@ -22,24 +22,35 @@ highlightedContent:
   items:
     
     # Card
-    - title: What's new in Microsoft Power Platform?
+    - title: Register for Power Platform Conference
+      itemType: whats-new
+      url: https://go.microsoft.com/fwlink/?linkid=2199049
+    
+    # Card
+    - title: What's new in Power Platform?
       itemType: whats-new
       url: /dynamics365/release-plans/
 
     # Card
-    - title: Microsoft Power Platform videos
+    - title: Power Platform videos
       itemType: video
       url: https://www.youtube.com/c/mspowerplatform/
 
     # Card
-    - title: Microsoft Power Platform training on Microsoft Learn
+    - title: Power Platform training on Microsoft Learn
       itemType: learn
       url: /learn/powerplatform/
       
     # Card
-    - title: Microsoft Power Platform In a Day workshops
+    - title: Power Platform In a Day workshops
       itemType: get-started
       url: https://aka.ms/PowerPlatformIAD
+
+    # Card
+    - title: Power Platform Community
+      itemType: reference
+      url: https://powerusers.microsoft.com
+    
 
 conceptualContent:
   # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -78,6 +89,14 @@ conceptualContent:
       - url: https://www.youtube.com/user/mspowerbi
         itemType: video
         text: Videos    
+    - title: Power Pages
+      links:
+      - url: /power-pages/
+        itemType: overview
+        text: Documentation      
+      - url: /power-pages/training-videos
+        itemType: video
+        text: Videos
     - title: Power Virtual Agents
       links:
       - url: /power-virtual-agents/
