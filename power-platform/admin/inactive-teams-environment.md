@@ -52,7 +52,7 @@ The following table describes the schedule for notifications and actions for Dat
 To reactivate the Dataverse for Teams environment, select **Trigger environment activity**.
 
 <sup>3</sup>ddddddddd
-:::image type="content" source="media/disable-environment-state-box.png" alt-text="Disabled environment state box":::
+:::image type="content" source="media/disabled-environment-state-box.png" alt-text="Disabled environment state box":::
 
 To renable the Dataverse for Teams environment, select **Re-enable environment**.
 
