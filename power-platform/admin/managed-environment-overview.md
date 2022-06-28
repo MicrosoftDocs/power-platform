@@ -20,11 +20,11 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Managed Environments for Power Protect overview
+# Managed Environments for Power Platform overview
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Managed Environments for Power Protect is a suite of capabilities that allows admins to manage Power Platform at scale with more control, less effort, and more insights. Admins can enable Managed Environments on any type of environment. There are four primary elements of Managed Environments: 
+Managed Environments for Power Platform is a suite of capabilities that allows admins to manage Power Platform at scale with more control, less effort, and more insights. Admins can enable Managed Environments on any type of environment. There are four primary elements of Managed Environments: 
 
 - [Enable Managed Environment](managed-environment-enable.md)
 - [Weekly digests](managed-environment-weekly-digests.md)
