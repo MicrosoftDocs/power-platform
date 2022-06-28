@@ -2,7 +2,7 @@
 title: "Use Bot Framework Composer adaptive cards in chatbots"
 description: "Use Bot Framework Composer to add Adaptive Cards to your Power Virtual Agents chatbot."
 keywords: "composer, adaptive card"
-ms.date: 01/06/2022
+ms.date: 06/27/2022
 
 ms.topic: article
 author: iaanw
@@ -216,7 +216,14 @@ Add the **Activity** that will display this Adaptive Card in the Bot Framework d
 
 Go back to the **Create** tab in Composer and select the **Meals** dialog. Select **BeginDialog** and add **Send a response** to your dialog. We'll use this node to display the Adaptive Card we have created in the **Bot Responses** tab.
 
-Select the new **Send a response** action to open the **Properties pane**. Under **Bot responses**, select **Show code**. Add the following expression to this window to show the Adaptive Card, and pass the Power Virtual Agents global variable `user_city` as a parameter:
+Select the new **Send a response** action to open the **Properties pane**. Under **Bot responses**, select **Show code** to switch to the code editor.
+
+:::image type="content" source="media/Composer_Example1/response_code_editor.png" alt-text="Screenshot of show code button":::
+
+> [!WARNING]
+> Adding the following expression to the _response_ editor instead of the _code_ editor will result in the bot responding with raw JSON instead of an Adaptive Card.
+
+Add the following expression to the code editor to show the Adaptive Card, and pass the Power Virtual Agents global variable `user_city` as a parameter:
 
 ```lg
 - ${AdaptiveCardMeals(virtualagent.user_city)}
