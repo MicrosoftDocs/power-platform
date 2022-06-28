@@ -60,7 +60,7 @@ If you don't have Composer installed, you can download it from the **download Co
 
 :::image type="content" source="media/advanced-bot-framework-composer/composer-not-present.png" alt-text="Screenshot of the Power Virtual Agents Composer window indicating that Composer is not installed.":::
 
-During installation, make sure to clear the **Run Bot Framework Composer** checkbox, since you'll need to open Composer from within Power Virtual Agents to use it with your bot.
+During installation, make sure to clear the **Run Bot Framework Composer** checkbox, because you'll need to open Composer from within Power Virtual Agents to use it with your bot.
 
 :::image type="content" source="media/advanced-bot-framework-composer/Composer_InstallWizardFinish.png" alt-text="Bot Framework Composer Install Complete.":::
 
