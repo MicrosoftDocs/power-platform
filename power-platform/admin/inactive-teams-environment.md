@@ -43,20 +43,18 @@ The following table describes the schedule for notifications and actions for Dat
 |117 days after no user activity.     | Warning of deletion email notification sent. Warning of disablement email notification sent. The disabled environment state updated on the Environments list page<sup>1</sup> and the Environments page <sup>3</sup>.        |
 |120 days after no user activity.     | Environment deleted. Deletion email notification sent.           |
 
-<sup>1</sup> Environment state
+<sup>1</sup> Environment state on the Environments list page
 :::image type="content" source="media/inactive-environment-state.png" alt-text="Inactive environment state":::
 
-<sup>2</sup>ddddddddd
-:::image type="content" source="media/inactive-environment-state-box.png" alt-text="Inactive environment state box":::
+<sup>2</sup>Environment alert on the Environments page
 
 To reactivate the Dataverse for Teams environment, select **Trigger environment activity**.
+:::image type="content" source="media/inactive-environment-state-box.png" alt-text="Inactive environment state box":::
 
-<sup>3</sup>ddddddddd
-:::image type="content" source="media/disabled-environment-state-box.png" alt-text="Disabled environment state box":::
+<sup>3</sup>Environment alert on the Environments page
 
 To renable the Dataverse for Teams environment, select **Re-enable environment**.
-
-
+:::image type="content" source="media/disabled-environment-state-box.png" alt-text="Disabled environment state box":::
 
 ### Notification recipients
 The following users will receive email notifications described above.
