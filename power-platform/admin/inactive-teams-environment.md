@@ -30,7 +30,7 @@ Administrators can configure how long a Dataverse for Teams environment can be i
 > - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 > - This feature is being gradually rolled out across regions and might not be available yet in your region.
 
-## Timeline for Dataverse for Teams environments
+## Timeline for inactive Dataverse for Teams environments
 
 The following table describes the schedule for notifications and actions for Dataverse for Teams environments considered inactive.
 
