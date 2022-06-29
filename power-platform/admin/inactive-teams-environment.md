@@ -36,22 +36,22 @@ The following table describes the schedule for notifications and actions for Dat
 
 |State of Dataverse for Teams  |Power Platform action  |
 |---------|---------|
-|83 days after no [user activity](#definition-of-user-activity).     | Warning of disablement email notification sent. The environment state updated on the Environments list page<sup>1</sup> and the Environments page <sup>2</sup>.       |
-|87 days after no user activity.    |  Warning of disablement email notification sent. Warning of disablement email notification sent. The inactive environment state updated on the Environments list page<sup>1</sup> and the Environments page <sup>2</sup>.      |
-|90 days after no user activity.      | Environment disabled. Disabled email notification sent. Warning of disablement email notification sent. The disabled environment state updated on the Environments list page<sup>1</sup> and the Environments page <sup>3</sup>.      |
-|113 days after no user activity.     | Warning of deletion email notification sent. Warning of disablement email notification sent. The disabled environment state updated on the Environments list page<sup>1</sup> and the Environments page <sup>3</sup>.         |
-|117 days after no user activity.     | Warning of deletion email notification sent. Warning of disablement email notification sent. The disabled environment state updated on the Environments list page<sup>1</sup> and the Environments page <sup>3</sup>.        |
+|83 days after no [user activity](#definition-of-user-activity).     | Warning of disablement email notification sent. The environment state updated on the Environments list page<sup>1</sup> and the Environment page <sup>2</sup>.       |
+|87 days after no user activity.    |  Warning of disablement email notification sent. Warning of disablement email notification sent. The inactive environment state updated on the Environments list page<sup>1</sup> and the Environment page <sup>2</sup>.      |
+|90 days after no user activity.      | Environment disabled. Disabled email notification sent. Warning of disablement email notification sent. The disabled environment state updated on the Environments list page<sup>1</sup> and the Environment page <sup>3</sup>.      |
+|113 days after no user activity.     | Warning of deletion email notification sent. Warning of disablement email notification sent. The disabled environment state updated on the Environments list page<sup>1</sup> and the Environment page <sup>3</sup>.         |
+|117 days after no user activity.     | Warning of deletion email notification sent. Warning of disablement email notification sent. The disabled environment state updated on the Environments list page<sup>1</sup> and the Environment page <sup>3</sup>.        |
 |120 days after no user activity.     | Environment deleted. Deletion email notification sent.           |
 
 <sup>1</sup> Environment state on the Environments list page
 :::image type="content" source="media/inactive-environment-state.png" alt-text="Inactive environment state":::
 
-<sup>2</sup>Inactive environment alert on the Environments page
+<sup>2</sup>Inactive environment alert on the Environment page
 
 To reactivate the Dataverse for Teams environment, select **Trigger environment activity**.
 :::image type="content" source="media/inactive-environment-state-box.png" alt-text="Inactive environment state box":::
 
-<sup>3</sup>Disabled environment alert on the Environments page
+<sup>3</sup>Disabled environment alert on the Environment page
 
 Disablement prevents any meaningful use of the Dataverse for Teams environment and its resources: apps cannot be launched, Flows are suspended, chatbots cannot be interacted with, etc. Administrators will have 30 days to re-enable the environment in the Power Platform admin center before it is deleted.
 
@@ -67,7 +67,7 @@ The following users will receive email notifications described above.
 
 - System administrators of the environment. A Dataverse for Teams environment is paired with a team in Microsoft Teams. The owners of that team are automatically granted the System Administrator role. They will receive the email notifications and can revert the process at any time in the Power Platform admin center.
 - Dataverse for Teams user who created the environment.
-- Additionally, when the Dataverse for Teams environment is disabled, users and makers are notified on the Environments list and Environments pages.
+- Additionally, when the Dataverse for Teams environment is disabled, users and makers are notified on the Environments list and Environment pages.
 
 > [!NOTE]
 > The members of the team in Microsoft Teams won't receive the email notifications.
