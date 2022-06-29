@@ -46,21 +46,28 @@ The following table describes the schedule for notifications and actions for Dat
 <sup>1</sup> Environment state on the Environments list page
 :::image type="content" source="media/inactive-environment-state.png" alt-text="Inactive environment state":::
 
-<sup>2</sup>Environment alert on the Environments page
+<sup>2</sup>Inactive environment alert on the Environments page
 
 To reactivate the Dataverse for Teams environment, select **Trigger environment activity**.
 :::image type="content" source="media/inactive-environment-state-box.png" alt-text="Inactive environment state box":::
 
-<sup>3</sup>Environment alert on the Environments page
+<sup>3</sup>Disabled environment alert on the Environments page
+
+Disablement prevents any meaningful use of the Dataverse for Teams environment and its resources: apps cannot be launched, Flows are suspended, chatbots cannot be interacted with, etc. Administrators will have 30 days to re-enable the environment in the Power Platform admin center before it is deleted.
+
+If the Teams environment remains in the disabled state for 30 days, it will be automatically deleted.  Deleted environments can be recovered up to 7 days after deletion. See [Recover environment](recover-environment.md).
 
 To renable the Dataverse for Teams environment, select **Re-enable environment**.
+
 :::image type="content" source="media/disabled-environment-state-box.png" alt-text="Disabled environment state box":::
+
 
 ### Notification recipients
 The following users will receive email notifications described above.
 
 - System administrators of the environment. A Dataverse for Teams environment is paired with a team in Microsoft Teams. The owners of that team are automatically granted the System Administrator role. They will receive the email notifications and can revert the process at any time in the Power Platform admin center.
 - Dataverse for Teams user who created the environment.
+- Additionally, when the Dataverse for Teams environment is disabled, users and makers are notified on the Environments list and Environments pages.
 
 > [!NOTE]
 > The members of the team in Microsoft Teams won't receive the email notifications.
@@ -88,3 +95,10 @@ A single measure of inactivity is computed for each Dataverse for Teams environm
 - When extending the maximum inactivity period. Suppose a Dataverse for Teams environment that has been inactive for 58 days and the maximum inactivity period is set to 60 days. If the maximum inactivity period is extended to 90 days, that environment is no longer scheduled for disabling.
 - When user activity is detected. Suppose a Dataverse for Teams environment that has been inactive for 88 days. If a single user interacts with a Power App in the Teams channel, that is considered as activity and will reset the environment’s inactivity counter to 0 days. As a result, the email notifications are voided and the status messages in the Power Platform admin center are removed.
 
+### See also
+[Microsoft Dataverse for Teams environments](about-teams-environment.md) <br />
+[Recover environment](recover-environment.md)
+
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
