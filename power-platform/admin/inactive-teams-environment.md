@@ -20,7 +20,7 @@ search.app:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Introducing a cleanup mechanism that will automatically rid your tenant of [Microsoft Dataverse for Teams environments](about-teams-environment.md) that are inactive. Dataverse for Teams environments that are considered inactive will first be disabled for 30 days, and then be subsequently deleted if no further action is taken by the administrators. This entire process is automatic (no intervention is needed).
+Introducing a cleanup mechanism that will automatically remove from your tenant [Microsoft Dataverse for Teams environments](about-teams-environment.md) that are inactive. Dataverse for Teams environments that are considered inactive will first be disabled for 30 days, and then be subsequently deleted if no further action is taken by the administrators. This entire process is automatic (no intervention is needed).
 
 Administrators can configure how long a Dataverse for Teams environment can be inactive before it gets automatically disabled and deleted in the new “Environment policies” page of the Power Platform admin center. The permissible range of values are: 15 days, 30 days, 45 days, 60 days, and 90 days of inactivity.
 **[Jim note: does the "Environment polices" page exist?]**
@@ -29,6 +29,7 @@ Administrators can configure how long a Dataverse for Teams environment can be i
 > - This is a preview feature.
 > - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 > - This feature is being gradually rolled out across regions and might not be available yet in your region.
+> - For information on automatic cleanup of production and sandbox environments, see [Automatic environment cleanup](automatic-environment-cleanup.md).
 
 ## Timeline for inactive Dataverse for Teams environments
 
@@ -95,7 +96,8 @@ A single measure of inactivity is computed for each Dataverse for Teams environm
 
 ### See also
 [Microsoft Dataverse for Teams environments](about-teams-environment.md) <br />
-[Recover environment](recover-environment.md)
+[Recover environment](recover-environment.md) <br />
+[Automatic environment cleanup](automatic-environment-cleanup.md)
 
 
 
