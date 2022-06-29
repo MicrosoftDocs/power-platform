@@ -146,8 +146,6 @@
           href: sandbox-environments.md
         - name: Dataverse for Teams environment
           href: about-teams-environment.md
-        - name: Inactive Dataverse for Teams environments (preview)
-          href: inactive-teams-environment.md
         - name: View apps in your environments 
           href: admin-view-apps.md
         - name: Language collations 
@@ -362,6 +360,8 @@
         items:
         - name: Environment cleanup process
           href: automatic-environment-cleanup.md
+        - name: Inactive Dataverse for Teams environments (preview)
+          href: inactive-teams-environment.md
         - name: Migrate environment
           href: move-environment-tenant.md          
         - name: Geo to geo migrations

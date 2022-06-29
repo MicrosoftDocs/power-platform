@@ -4,7 +4,7 @@ description: This article covers the automatic deletion of inactive Dataverse fo
 author: matapg007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/28/2022
+ms.date: 06/29/2022
 ms.subservice: admin
 ms.author: matgupta 
 ms.reviewer: jimholtz
@@ -22,12 +22,10 @@ search.app:
 
 Introducing a cleanup mechanism that will automatically remove from your tenant [Microsoft Dataverse for Teams environments](about-teams-environment.md) that are inactive. Dataverse for Teams environments that are considered inactive will first be disabled for 30 days, and then be subsequently deleted if no further action is taken by the administrators. This entire process is automatic (no intervention is needed).
 
-Administrators can configure how long a Dataverse for Teams environment can be inactive before it gets automatically disabled and deleted in the new “Environment policies” page of the Power Platform admin center. The permissible range of values are: 15 days, 30 days, 45 days, 60 days, and 90 days of inactivity.
-**[Jim note: does the "Environment polices" page exist?]**
+Administrators can configure how long a Dataverse for Teams environment can be inactive before it gets automatically disabled and deleted in the **Environment policies page** in the Power Platform admin center. The permissible range of values are: 15 days, 30 days, 45 days, 60 days, and 90 days of inactivity.
 
 > [!IMPORTANT]
 > - This is a preview feature.
-> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 > - This feature is being gradually rolled out across regions and might not be available yet in your region.
 > - For information on automatic cleanup of production and sandbox environments, see [Automatic environment cleanup](automatic-environment-cleanup.md).
 
@@ -87,12 +85,20 @@ A single measure of inactivity is computed for each Dataverse for Teams environm
 > [!NOTE]
 > Activity does include automated behaviors such as scheduled flow runs. For example, if there is no explicit user, maker, or admin activity within a Dataverse for Teams environment, but it contains a cloud flow which is executed daily, the Dataverse for Teams environment will be considered as active.
 
-### Example cases
+## Set Dataverse for Teams environment deletion policy
 
-- When turning on the deletion mechanism. Suppose a Dataverse for Teams environment that has been inactive for 90 days. When we turn on the cleanup mechanism, that environment will immediately be flagged and will be scheduled for disabling in 7 days.
-- When reducing the maximum inactivity period. Suppose a Dataverse for Teams environment that has been inactive for 60 days. If the maximum inactivity period is set to 30 days, that environment will immediately be flagged and will be scheduled for disabling in 7 days.
-- When extending the maximum inactivity period. Suppose a Dataverse for Teams environment that has been inactive for 58 days and the maximum inactivity period is set to 60 days. If the maximum inactivity period is extended to 90 days, that environment is no longer scheduled for disabling.
-- When user activity is detected. Suppose a Dataverse for Teams environment that has been inactive for 88 days. If a single user interacts with a Power App in the Teams channel, that is considered as activity and will reset the environment’s inactivity counter to 0 days. As a result, the email notifications are voided and the status messages in the Power Platform admin center are removed.
+Follow these steps to set the deletion policy for Dataverse for Teams environment inactivity.
+
+1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
+
+2. Select **Policies** > **Environment policies**.
+
+3. In **Disable the environment after**, set the number of days for when the Dataverse for Teams environment should be disabled after inactivity.
+
+4. In **Delete the disabled environment after**, set the number of days for when the Dataverse for Teams environment should be deleted after being disabled.
+
+:::image type="content" source="media/inactive-environment-deletion-policy.png" alt-text="Set the Dataverse for Teams environment deletion policy.":::
+
 
 ### See also
 [Microsoft Dataverse for Teams environments](about-teams-environment.md) <br />
