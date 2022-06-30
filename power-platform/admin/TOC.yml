@@ -449,15 +449,15 @@
             href: dlp-resource-exemption.md
           - name: Known limitations
             href: dlp-known-issues.md          
-        - name: Configure column-level security
+        - name: Configure field-level security
           items:
           - name: Overview
             href: field-level-security.md
-          - name: Set permissions for a column
+          - name: Set permissions for a field
             href: set-up-security-permissions-field.md
-          - name: Enable or disable column security
+          - name: Enable or disable field security
             href: enable-disable-security-field.md
-          - name: Add teams or users to column security profile
+          - name: Add teams or users to field security profile
             href: add-teams-users-field-security-profile.md
         - name: Configure teams and team templates
           items:
