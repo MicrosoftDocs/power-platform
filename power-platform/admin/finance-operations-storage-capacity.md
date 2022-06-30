@@ -93,7 +93,7 @@ Learn how to clean up your finance and operations data:
 
 ## FAQ
 
-### Why is finance and operations storage reporting separate from Dataverse?
+### Why is finance and operations storage reporting separate from Microsoft Dataverse?
 
 Microsoft business applications work across multiple underlying technologies. Dataverse powers many experiences across Power Platform and Dynamics 365 apps. Dataverse reporting is tracked across database, log, and file storage categories. Finance and operations products are currently managed on separate database and file platform layers. [Dual-write technologies](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-overview) allow certain finance and operations actions to be stored in Dataverse.
 
@@ -117,7 +117,7 @@ The runtime experience isn't affected. However, we strongly recommend that you r
 
 For now, your account team will work with you to stay within your entitlement limit.  
 
-### Our storage usage is over, do we owe a true-up for past months we've been over?
+### Our storage usage is over, do we owe for past months we've been over?
 
 You won't be billed in arrears for past overage because usage versus entitlements reporting wasn't available in the past.
 
