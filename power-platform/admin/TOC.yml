@@ -587,6 +587,8 @@
         href: capacity-storage.md
       - name: Legacy capacity storage model
         href: legacy-capacity-storage.md
+      - name: Finance and operations storage capacity
+        href: finance-operations-storage-capacity.md
       - name: View self-service capacity
         href: view-self-service-capacity.md
       - name: Free up storage

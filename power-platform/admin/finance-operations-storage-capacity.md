@@ -4,7 +4,7 @@ description: Use the finance and operations storage capacity report to visualize
 author: jimholtz
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/07/2022
+ms.date: 06/30/2022
 ms.subservice: admin
 ms.author: jimholtz 
 ms.reviewer: 
@@ -120,5 +120,12 @@ For now, your account team will work with you to stay within your entitlement li
 ### Our storage usage is over, do we owe a true-up for past months we've been over?
 
 You won't be billed in arrears for past overage because usage versus entitlements reporting wasn't available in the past.
+
+### Is the “multiple Lifecycle Services (LCS) projects (multiple production) in one tenant” scenario considered in all the aspects of storage calculation and reporting? Sometimes we have many projects with multiple LCS in one tenant. 
+
+The storage reporting reports usage at tenant level and environment level. If the tenant has multiple production environments, we will report all of them. 
+
+
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
