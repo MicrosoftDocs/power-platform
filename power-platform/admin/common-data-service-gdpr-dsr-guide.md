@@ -56,7 +56,7 @@ Dataverse and the previous version of Dataverse have separate processes for inte
 You can identify which type of environment you have by logging into [Power Apps](https://make.powerapps.com) and following these steps:
 
 1. In the **Environment** drop-down list, select your environment.
-2. In the navigation pane, select **Data**, and then select **Tables**.
+2. In the navigation pane, select **Dataverse**, and then select **Tables**.
 
     Your environment is Dataverse if you see the following tables listed:
 
@@ -313,7 +313,7 @@ To see a list of your tables, do the following:
 
 1. In the **Environment** drop-down list, select your environment.
 
-2. In the navigation pane, select **Data**, and then select **Tables**.
+2. In the navigation pane, select **Dataverse**, and then select **Tables**.
 
     ![Power Apps Legacy tables.](./media/common-data-service-gdpr-dsr-guide/powerapps-legacy-entities.png)
 

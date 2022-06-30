@@ -204,7 +204,7 @@ To edit the searchable fields of a table:
 
 1. Sign in to [Power Apps](https://make.powerapps.com/).
 
-2. Select **Data** > **Tables**.
+2. Select **Dataverse** > **Tables**.
 
 3. Select the table you want to make the changes for and then select the **Views** tab.
 
