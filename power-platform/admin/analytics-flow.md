@@ -6,7 +6,7 @@ manager: kvivek
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/07/2022
+ms.date: 06/01/2022
 ms.subservice: admin
 ms.author: deonhe
 search.audienceType: 
@@ -45,68 +45,7 @@ The data refresh cycle is about 3 hours and you can find the last refresh time a
 
 ## What are the available reports?
 
-The following tenant-level reports are available for tenant and environment admins. 
-
-### Power Automate - Usage report
-
-Power Automate reports provide insights into tenant and environment usage and inventory of all flows and connectors. The report answers questions such as: 
-
-- What is the total unique Cloud Flow users across the tenant or environments? 
-- What is the count of Successful vs Failed runs across Cloud flows? 
-- What is the total unique Cloud Flow users across the tenant or environments? 
-- What is the count of Successful vs Failed runs across Cloud flows? 
-- How many flows exist in my tenant or environment? 
-- Which of my environments had the most unique users? 
-- What were the top flows across my tenant or environments by runs? 
-
-:::image type="content" source="media/power-automate-usage-report.png" alt-text="Power Automate Usage report":::
-
-> [!NOTE]
-> The service only starts collecting the data visualized in the Usage report when the feature is enabled. It can take up to 12 hours to reflect service activities from the previous day. 
-
-### Power Automate - Maker Activity report 
-
-The Power Automate report provide insights into the activities of citizen authors of Cloud flows across the tenant or environments. The report answers questions such as: 
-
-- What is the total number of flows created Makers across the tenant or environments? 
-- What is the count of first-time makers across Desktop flows? 
-- Who are the top makers across the tenant or environments? 
-- How many of these flows are using premium or standard connectors? 
-- Allow me to filter the above list based on connector dependency. 
-
-:::image type="content" source="media/power-automate-maker-activity.png" alt-text="Power Automate Maker Activity report":::
-
-> [!NOTE]
-> The service only starts collecting the data visualized in the Maker Activity report when the feature is enabled. It can take up to 12 hours to reflect service activities from the previous day. 
-
-### Power Automate - Inventory report 
-
-The Power Automate Inventory report offers a complete catalog of Cloud flows distributed across the tenant. This view includes filters that allow admins to search for flows based on various criteria. The report answers questions such as: 
-
-- What is the total number of Cloud flows across the tenant or environments? 
-- Which flows depend on specific connectors or connector types like Premium? 
-- Who are the owners of the flows hosted in one or more environments? 
-- What is the distribution of Cloud flows apps across the organization? 
-
-:::image type="content" source="media/power-automate-inventory-report.png" alt-text="Power Automate Inventory report":::
-
-> [!NOTE]
-> Depending on the size of the organization, it can take up to 2 hours to initially populate the data sets backing the Inventory report. 
-
-### Download Inventory 
-
-Power Platform admin center reports can be downloaded directly from the report visuals. Users have the option of choosing between Summarized and Underlying data. 
-- Summarized data: select this option to download the data underlying the current report visual 
-- Underlying data: select this option to download the full result set backing the report 
-
-:::image type="content" source="media/power-automate-inventory-report.png" alt-text="Power Automate download reports from Inventory tab":::
-
-For more information on downloading data from the tenant level reports, see [Exporting data from Power BI visuals](/power-bi/consumer/end-user-export). 
-
-## Other reports
-
-The preview contains other reports with multiple KPIs in each report.  The reports within the **Runs**, **Usage**, **Created**, and **Errors** tabs provide insights for Cloud flows and Desktop flows.  By default, you see reports for the last viewed environment.
-
+The following tenant-level reports are available for tenant and environment admins. The reports within the **Runs**, **Usage**, **Created**, and **Errors** tabs provide insights for Cloud flows and Desktop flows.  By default, you see reports for the last viewed environment.
 
 ### Runs report
 

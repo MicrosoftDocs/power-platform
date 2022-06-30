@@ -239,11 +239,11 @@
           - name: Audit settings
             href: system-settings-dialog-box-auditing-tab.md
           - name: Audit summary view 
-            href: audit-data-user-activity.md#view-audit-logging-details
+            href: manage-dataverse-auditing.md#view-audit-logging-details
           - name: Entity and field audit settings 
-            href: audit-data-user-activity.md#enable-or-disable-entities-and-fields-for-auditing
+            href: manage-dataverse-auditing.md#enable-or-disable-entities-and-fields-for-auditing
           - name: System jobs
-            href: monitor-manage-system-jobs.md
+            href: manage-dataverse-auditing.md#monitoring-system-jobs
         - name: Templates
           items:
           - name: Access team templates
@@ -597,10 +597,16 @@
         href: capacity-storage.md
       - name: Legacy capacity storage model
         href: legacy-capacity-storage.md
+      - name: Finance and operations storage capacity
+        href: finance-operations-storage-capacity.md
       - name: View self-service capacity
         href: view-self-service-capacity.md
-      - name: Free up storage space
-        href: free-storage-space.md        
+      - name: Free up storage
+        items:
+        - name: Recover storage space
+          href: free-storage-space.md  
+        - name: Clean up AsyncOperationBase and WorkflowLogBase tables
+          href: cleanup-asyncoperationbase-table.md
       - name: Add storage capacity
         href: add-storage.md      
       - name: Access storage with SAS token
@@ -627,8 +633,8 @@
         href: logging-power-automate.md 
       - name: Data loss prevention activity logging
         href: dlp-activity-logging.md
-      - name: Audit data and user activity for Dynamics 365 entities
-        href: audit-data-user-activity.md
+      - name: Manage Dataverse auditing
+        href: manage-dataverse-auditing.md
       - name: Dataverse and model-driven apps
         href: enable-use-comprehensive-auditing.md   
     - name: Programmability and extensibility
@@ -774,8 +780,6 @@
         href: delete-bulk-records.md
       - name: View and take action on bulk deletion jobs
         href: view-take-action-bulk-deletion-jobs.md
-      - name: Monitor and manage system jobs
-        href: monitor-manage-system-jobs.md
       - name: Remove user personal data
         href: remove-user-personal-data.md
       - name: Recover database space by deleting audit logs

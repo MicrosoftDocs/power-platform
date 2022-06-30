@@ -27,7 +27,7 @@ The following sections describe limitations for some components.
 
 There are some flows, which crawl the tenant in order to do their work. Specifically, the inventory flows in Core solution and the start archival flows in Governance solution.
 
-To help ensure service levels, availability, and quality, there are entitlement limits to the number of requests users can make each day across Power Apps, Power Automate. Learn more: [Requests limits and allocations](/power-platform//admin/api-request-limits-allocations.md)
+To help ensure service levels, availability, and quality, there are entitlement limits to the number of requests users can make each day across Power Apps, Power Automate. Learn more: [Requests limits and allocations](/power-platform/admin/api-request-limits-allocations)
 
 Larger tenants might require a [Power Automate Per Flow](https://flow.microsoft.com/pricing/) license or may need to set up [pay-as-you go for Power Platform requests](/power-platform/admin/pay-as-you-go-overview) in order for these flows to complete in a timely manner.
 
@@ -70,7 +70,7 @@ It currently isn't possible to retrieve the model-driven apps, chatbots, and Des
 
 ## Supported languages
 
-The CoE Starter Kit solutions are not localized, and only support English. Add the English language pack to your environment to make sure all apps and flows work. More information: [Regional and language options for your environment](/power-platform/admin/enable-languages.md)
+The CoE Starter Kit solutions are not localized, and only support English. Add the English language pack to your environment to make sure all apps and flows work. More information: [Regional and language options for your environment](/power-platform/admin/enable-languages)
 
 ## Security groups and approvals
 
@@ -104,13 +104,23 @@ Due to a product limitation, model-driven apps that are not published are not su
 
 Due to a product limitation, large Desktop Flows may not show up in the inventory as the content field is too large for cloud flows to process.
 
+## Desktop flow runs
+
+In order to see desktop flow runs in the inventory, one of the following must be true:
+
+- Have [attended or unattended desktop flow runs](/power-automate/desktop-flows/run-desktop-flow) in the environment
+- Another user has [shared their desktop flow](/power-automate/create-team-flows#share-a-cloud-flow-with-run-only-permissions) with you, which has attended or unattended runs
+- You have [permission](/power-platform/admin/database-security) to view all data in the environment
+
+Learn more: [Monitor Desktop Flow runs](/power-automate/desktop-flows/monitor-desktop-flow-runs)
+
 ## Missing custom connectors
 
 We are able to collect only the intersect of all custom connectors outside of solutions, and all custom connectors to which you have access. As a result, custom connectors in a solution, to which the identity running the sync flows do not have access, will not show up in the inventory.
 
 ## Inventory and telemetry differences between PowerShell, Power Platform Admin Center, and CoE Starter Kit
 
-If you are using [PowerShell for Power Platform Administrators](/power-platform/admin/powershell-getting-started.md) and the [Power Platform Admin Center](/power-platform/admin/wp-work-with-admin-portals.md) together with the CoE Starter Kit, you may be noticing a discrepancy in inventory - for example, the number of apps returned by PowerShell looks different than the number of apps returned by the CoE Starter Kit.
+If you are using [PowerShell for Power Platform Administrators](/power-platform/admin/powershell-getting-started) and the [Power Platform Admin Center](/power-platform/admin/wp-work-with-admin-portals) together with the CoE Starter Kit, you may be noticing a discrepancy in inventory - for example, the number of apps returned by PowerShell looks different than the number of apps returned by the CoE Starter Kit.
 
 There are expected differences, and the below information should help you understand what to expect.
 
@@ -128,11 +138,11 @@ The CoE Starter Kit will display usage (session and unique users) information as
 
 ### Power Platform Admin Center
 
-[Power Apps](/power-platform/admin/admin-manage-apps.md) and [Power Automate](/power-platform/admin/manage-power-automate.md) resources will always return the latest and most up-to-date inventory of the environment you're looking at. Make sure to refresh the page in the Admin Center to show the latest information.
+[Power Apps](/power-platform/admin/admin-manage-apps) and [Power Automate](/power-platform/admin/manage-power-automate) resources will always return the latest and most up-to-date inventory of the environment you're looking at. Make sure to refresh the page in the Admin Center to show the latest information.
 
-[Power Apps resources](/power-platform/admin/admin-manage-apps.md) returns canvas apps and published and unpublished model-driven apps, but not SharePoint custom forms.
+[Power Apps resources](/power-platform/admin/admin-manage-apps) returns canvas apps and published and unpublished model-driven apps, but not SharePoint custom forms.
 
-[Power Automate resources](/power-platform/admin/manage-power-automate.md) returns all cloud flows.
+[Power Automate resources](/power-platform/admin/manage-power-automate) returns all cloud flows.
 
 ### CoE Starter Kit
 
@@ -146,7 +156,7 @@ The CoE Starter Kit shows all cloud flows.
 
 ### SharePoint custom forms
 
-SharePoint custom forms apps can be either in the Default environment or a [designated SharePoint form environment](/power-platform/admin/powerapps-powershell.md#designate-sharepoint-custom-form-environment) – or both. For example, if you have existing SharePoint custom forms in the Default environment before you designate a SharePoint form environment, existing forms will remain in the Default environment and will not be migrated.
+SharePoint custom forms apps can be either in the Default environment or a [designated SharePoint form environment](/power-platform/admin/powerapps-powershell#designate-sharepoint-custom-form-environment) – or both. For example, if you have existing SharePoint custom forms in the Default environment before you designate a SharePoint form environment, existing forms will remain in the Default environment and will not be migrated.
 
 ### Deleted apps and flows
 

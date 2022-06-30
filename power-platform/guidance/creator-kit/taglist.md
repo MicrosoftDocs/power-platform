@@ -1,6 +1,6 @@
 ---
 title: TagList control reference | Creator Kit
-description: Learn about the details and properties of TagList control in the Creator Kit.
+description: Learn about the details and properties of the TagList control in the Creator Kit.
 author: denisem-msft
 manager: devkeydet
 ms.component: pa-maker
@@ -30,10 +30,10 @@ A control used to display data.
 
 ## Description
 
-This code component provides a Tag List that provides flexible width rendering bound to a collection.
+This code component provides a tag list that provides flexible-width rendering bound to a collection.
 
 > [!NOTE]
-> Component source code and more information available at the [Creator kit GitHub repository](https://github.com/microsoft/powercat-creator-kit).
+> Component source code and more information in the [GitHub code components repository](https://github.com/microsoft/powercat-code-components/tree/main/TagList).
 
 ## Limitations
 
@@ -47,17 +47,17 @@ This code component can only be used in canvas apps and custom pages.
 
 ## Items structure
 
-Each item uses the below schema to visualize data in the component.
+Each item uses the following schema to visualize data in the component.
 
 | Name | Description |
 | ------ | ----------- |
-| `ItemDisplayName` | The Display Name of the command/tab/menu item. |
-| `ItemKey` | The key to use to indicate which item is selected, and when adding sub items. The keys must be unique. |
+| `ItemDisplayName` | The display name of the command, tab, or menu item. |
+| `ItemKey` | The key to use to indicate which item is selected, when adding sub-items. The keys must be unique. |
 | `ItemEnabled` | Set to false if the option is disabled. |
 | `ItemVisible` | Set to false if the option isn't visible. |
-| `ItemChecked` | Set to true if the option is checked (for example, split buttons in a command bar). |
-| `ItemIconName` | The Fluent UI icon to use (see [Fluent UI icons](icon.md)). |
-| `ItemIconColor` | The color to render the icon as (for example, named, RGB or hex value). |
+| `ItemChecked` | Set to true if the option is selected (for example, split buttons in a command bar). |
+| `ItemIconName` | The Fluent UI icon to use (for more information, go to [Fluent UI icons](icon.md)). |
+| `ItemIconColor` | The color to render the icon as (for example, named, RGB, or hex value). |
 | `ItemTextColor` | The color of the text inside the tag. |
 | `ItemBackgroundColor` | The color of the tag background. |
 

@@ -1,10 +1,10 @@
 ---
 title: "Securely access customer data using Customer Lockbox in Power Platform (preview) | MicrosoftDocs"
 description: This topic covers information on how customers can review and approve (or reject) data access requests in the rare occasion when data access to customer data is needed.
-ms.service: power-platform
+ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/16/2022
+ms.date: 06/10/2022
 author: mihaelablendea
 ms.author: mihaelab
 ms.reviewer: jimholtz
@@ -42,7 +42,7 @@ All updates to a lockbox request are recorded and made available to your organiz
 Power Platform applications and services store customer data in several Azure storage technologies. When you turn on Customer Lockbox for an environment, customer data associated with the respective environment is protected by the lockbox policy, irrespective of the storage type.  
  
 > [!NOTE]
-> Currently, the applications and services where lockbox policy is going to be enforced once enabled are Power Apps (including AI Builder, Power Apps portals), Power Automate, and Dataverse.
+> Currently, the applications and services where lockbox policy is going to be enforced once enabled are Power Apps (including AI Builder, Power Apps portals), Power Automate, Dataverse, and Customer Insights.
 
 ## Workflow 
 
@@ -144,6 +144,6 @@ Customer Lockbox requests are also not triggered by external legal demands for d
 
 - Customer Lockbox Preview isn't available in sovereign clouds at this time. 
 
-
+- Tenant-to-tenant migration isn't supported when Customer Lockbox is enabled. You must disable Customer Lockbox to move an environment to another tenant. You can re-enable Customer Lockbox once the migration is completed.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

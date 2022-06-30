@@ -2,10 +2,9 @@
 title: "Configure server-based authentication with SharePoint on-premises | MicrosoftDocs"
 description: Configure server-based authentication with SharePoint on-premises
 author: Mattp123
-
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/04/2020
+ms.date: 06/08/2022
 ms.subservice: admin
 ms.author: matp
 search.audienceType: 
@@ -22,22 +21,20 @@ search.app:
 
 Server-based [!INCLUDE[pn_ms_SharePoint_long](../includes/pn-ms-sharepoint-long.md)] integration for document management can  be used to connect customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), with [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises. When using server-based authentication, [Azure AD Domain Services](/azure/active-directory-domain-services/overview) is used as the trust broker and users do not need to sign in to [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)].  
   
-<a name="perms"></a>   
+## Permissions required
 
-## Permissions required  
-[!INCLUDE[pn_Office_365](../includes/pn-office-365.md)]
+The following memberships and privileges are required to enable SharePoint document management.
+
+- [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] Global admin membership - this is required for:
+  - Administrative-level access to the [!INCLUDE[pn_MS_Office_365](../includes/pn-ms-office-365.md)] subscription.
+  - Running Enable Server-based Authentication wizard. 
+  - Running the [!INCLUDE[pn_Windows_Azure](../includes/pn-windows-azure.md)][!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] cmdlets.  
   
-- Global admin membership - this is required for administrative-level access to the [!INCLUDE[pn_MS_Office_365](../includes/pn-ms-office-365.md)] subscription and to run the [!INCLUDE[pn_Windows_Azure](../includes/pn-windows-azure.md)][!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] cmdlets.  
+- Power Apps **Run SharePoint Integration Wizard** privilege. This is required to run the Enable Server-based Authentication wizard.  
   
-Customer engagement apps 
+     By default, the System Administrator security role has this privilege.  
   
-- **Run SharePoint Integration Wizard** privilege. This is required to run the Enable Server-based Authentication wizard.  
-  
-     By default, the System Administrator security role has this permission.  
-  
-  [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises  
-  
-- Farm Administrators group membership - this is required to run most of the [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] commands on the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] server.  
+- For  [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises integration, SharePoint Farm Administrators group membership. This is required to run most of the [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] commands on the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] server.  
   
 <a name="setups2s"></a>   
 
@@ -48,8 +45,9 @@ Customer engagement apps
 > The steps described here must be completed in the order provided. If a task is not completed, such as a [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] command that returns an error message, the issue must be resolved before you continue to the next command, task, or step.  
   
   
-### Verify prerequisites  
- Before you configure customer engagement apps and [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises for server-based authentication, the following prerequisites must be met:  
+### Verify prerequisites
+
+Before you configure customer engagement apps and [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises for server-based authentication, the following prerequisites must be met:  
   
 <a name="BKMK_SP_prereq"></a>   
 
@@ -76,9 +74,6 @@ Customer engagement apps
   
   - For document management functionality when using the Dynamics 365 mobile apps, the on-premises [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] server must be available through the Internet.  
   
-  
-<a name="BKMK_otherPreq"></a>  
- 
 #### Other prerequisites  
   
 - [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)] license. Customer engagement apps to [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises server-based authentication must have the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] service principal name (SPN) registered in [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)]. To achieve this, at least one [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)] user license is required. The [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)] license can derive from a single user license and typically comes from one of the following:  
@@ -100,7 +95,7 @@ Customer engagement apps
   > [!IMPORTANT]
   >  At the time of this writing, there is an issue with the RTW version of Microsoft Online Services Sign-In Assistant for IT Professionals. Until the issue is resolved, we recommend that you use the Beta version. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Microsoft Azure Forums: Cannot install Azure Active Directory Module for Windows PowerShell. MOSSIA is not installed](https://social.msdn.microsoft.com/Forums/azure/46a38822-28a4-4abb-b747-96f7db2a2676/cannot-install-azure-active-directory-module-for-windows-powershell-mossia-is-not-installed?forum=WindowsAzureAD).  
   
-- A suitable claims-based authentication mapping type to use for mapping identities between customer engagement apps and [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises. By default, email address is used. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Grant customer engagement apps permission to access SharePoint and configure the claims-based authentication mapping](../admin/configure-server-based-authentication-sharepoint-on-premises.md#BKMK_grantperm)  
+- A suitable claims-based authentication mapping type to use for mapping identities between customer engagement apps and [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises. By default, email address is used. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Grant customer engagement apps permission to access SharePoint and configure the claims-based authentication mapping](#grant-customer-engagement-apps-permission-to-access-sharepoint-and-configure-the-claims-based-authentication-mapping)  
   
 ### Update the SharePoint Server SPN in Azure Active Directory Domain Services  
  On the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises server, in the SharePoint 2013 Management Shell, run these [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] commands in the order given.  
@@ -204,11 +199,11 @@ Set-SPAuthenticationRealm -Realm $SPOContextId
    $acs = New-SPTrustedSecurityTokenIssuer –Name "ACSInternal" –IsTrustBroker:$true –MetadataEndpoint $metadataEndpoint -RegisteredIssuerName $acsissuer  
    ```  
   
-<a name="BKMK_grantperm"></a>   
-### Grant customer engagement apps permission to access SharePoint and configure the claims-based authentication mapping  
- On the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises server, in the SharePoint 2013 Management Shell, run these [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] commands in the order given.  
+### Grant customer engagement apps permission to access SharePoint and configure the claims-based authentication mapping
+
+On the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises server, in the SharePoint 2013 Management Shell, run these [!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] commands in the order given.  
   
- The following commands require [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site collection administration membership.  
+The following commands require [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site collection administration membership.  
   
 1. Register customer engagement apps with the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site collection.  
   
@@ -245,25 +240,29 @@ Set-SPAuthenticationRealm -Realm $SPOContextId
    $map1 = New-SPClaimTypeMapping -IncomingClaimType "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress" -IncomingClaimTypeDisplayName "EmailAddress" -SameAsIncoming  
    ```  
   
-### Run the Enable server-based SharePoint integration wizard  
+### Run the Enable server-based SharePoint integration wizard
+
 Follow these steps:  
   
+1. Verify that you have the appropriate permission to run the wizard. More information: [Permissions required](#permissions-required)
+
 1. [!INCLUDE[proc_settings_doc_management](../includes/proc-settings-doc-management.md)]  
   
-2. In the **Document Management** area, click **Enable server-based SharePoint integration**.  
+1. In the **Document Management** area, click **Enable server-based SharePoint integration**.  
   
-3. Review the information and then click **Next**.  
+1. Review the information and then click **Next**.  
   
-4. For the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] sites, click **On-premises**, and then **Next**.  
+1. For the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] sites, click **On-premises**, and then **Next**.  
   
-5. Enter the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises site collection URL, such as *<https://sharepoint.contoso.com/sites/crm>*. The site must be configured for SSL.  
+1. Enter the [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] on-premises site collection URL, such as *<https://sharepoint.contoso.com/sites/crm>*. The site must be configured for SSL.  
   
-6. Click **Next**.  
+1. Click **Next**.  
   
-7. The validate sites section appears. If all sites are determined valid, click **Enable**. If one or more sites are determined invalid, see [Troubleshooting server-based authentication](../admin/troubleshooting-server-based-authentication.md).  
+1. The validate sites section appears. If all sites are determined valid, click **Enable**. If one or more sites are determined invalid, see [Troubleshooting server-based authentication](../admin/troubleshooting-server-based-authentication.md).  
   
 ### Select the entities that you want to include in document management  
- By default, Account, Article, Lead, Product, Quote, and Sales Literature entities are included. You can add or remove the entities that will be used for document management with [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] in **Document Management Settings**. Go to **Settings** > **Document Management**. More information:  [Enable document management on entities](enable-sharepoint-document-management-specific-entities.md)  
+
+By default, Account, Article, Lead, Product, Quote, and Sales Literature entities are included. You can add or remove the entities that will be used for document management with [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] in **Document Management Settings**. Go to **Settings** > **Document Management**. More information:  [Enable document management on entities](enable-sharepoint-document-management-specific-entities.md)  
   
 <a name="addOneDrive"></a>   
 

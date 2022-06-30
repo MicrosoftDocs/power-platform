@@ -159,7 +159,9 @@ You should see a (200) status returned, which means the query was successful.
 ![Successful status being returned from the StartSubscription activity.](media/coe44.png "Successful status being returned from the StartSubscription activity")
 
 > [!IMPORTANT]
-> If you don't see a (200) response, the request has failed. There's an error with your setup that's keeping the flow from working. Common issues to check are: 
+> If you have previously enabled the subscription, you will see a **(400) The subscription is already enabled** message. This means the subscription has successfully been enabled in the past. You can ignore this error and continue with the setup.
+> If you don't see the above message or a (200) response, the request may have failed. There could be an error with your setup that's keeping the flow from working. Common issues to check are:
+>
 >
 > - Are audit logs enabled, and do you have permission to view the audit logs? Check [protection.office.com](https://protection.office.com) > **Search** > **Audit Log Search**.
 > - If you don't have permissions, see [Before you search the audit log](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?preserve-view=true&view=o365-worldwide#before-you-search-the-audit-log).
@@ -171,7 +173,7 @@ You should see a (200) status returned, which means the query was successful.
 
 ### Set up the Power Automate flow
 
-A Power Automate flow uses the custom connector, queries the audit log daily, and writes the Power Apps launch events to a Microsoft Dataverse table, which is then used in the Power BI dashboard to report on sessions and unique users of an app.
+A Power Automate flow uses the custom connector, queries the audit log daily, and writes the Power Apps launch events to a Microsoft Dataverse table. This table is then used in the Power BI dashboard to report on sessions and unique users of an app.
 
 1. Follow the instructions in [Set up core components](setup-core-components.md) to download the solution.
 1. Go to [make.powerapps.com](https://make.powerapps.com).
@@ -180,23 +182,23 @@ A Power Automate flow uses the custom connector, queries the audit log daily, an
     ![Import the CoE audit log components solution.](media/coe-custom2.png "Import the CoE audit log components solution")
 
 1. Open the **Center of Excellence – Audit Log solution**.
-1. [Remove the unmanaged layer](after-setup.md#installing-upgrades) from the **\[Child\] Admin | Sync Logs**.
+1. [Remove the unmanaged layer](after-setup.md) from the **\[Child\] Admin | Sync Logs**.
 1. Select the **\[Child\] Admin | Sync Logs**.
 1. Edit the **Run only users** settings.
 
    ![Child flow - run only users.](media/coe49.png "Child flow - run only users")
 
-1. For the custom connector, Dataverse and Office 365 Outlook, change the value to **Use this connection (userPrincipalName\@company.com)**. If there is no connection for any of the connectors, go to **Data** > **Connections**, and create one for the connector.
+1. For the custom connector, Dataverse and Office 365 Outlook, change the value to **Use this connection (userPrincipalName\@company.com)**. If there's no connection for any of the connectors, go to **Dataverse** > **Connections**, and create one for the connector.
 
    ![Configure run only users.](media/coe50.png "Configure run only users")
 
 1. Select **Save**, and then close the **Flow details** tab.
 
-1. (Optional) Edit the TimeInterval-Unit and TimeInterval-Interval environment variables to gather smaller chunks of time. The default value is to chunk 1 day into 1 hour segments. You will receive an alert from this solution if the Audit Log fails to collect all data with your configured time interval.
+1. (Optional) Edit the TimeInterval-Unit and TimeInterval-Interval environment variables to gather smaller chunks of time. The default value is to chunk 1 day into 1 hour segments. You'll receive an alert from this solution if the Audit Log fails to collect all data with your configured time interval.
 
     | Name | Description |
     |------|---------------|
-    |StartTime-Interval | Must be a whole number to represent the start time for how far back to fetch. <br> Default value: 1 (for 1 day back) |
+    |StartTime-Interval | Must be a whole number to represent the start time for how far back to fetch. <br> Default value: 1 (for one day back) |
     |StartTime-Unit | Determines units for how far back in time to go to fetch data. <br>Must be a value from accepted as an input parameter to [Add to Time](/power-automate/desktop-flows/actions-reference/datetime#add). <br> Example legal values: Minute, Hour, Day <br>Default value: Day |
     |TimeInterval-Unit | Determines units for chunking the time since start. <br>Must be a value from accepted as an input parameter to [Add to Time](/power-automate/desktop-flows/actions-reference/datetime#add). <br> Example legal values: Minute, Hour, Day <br>Default value: Hour |
     |TimeInterval-Interval | Must be a whole number to represent the number of chunks of type unit (above).<br> Default value: 1 (for 1 hour chunks) |

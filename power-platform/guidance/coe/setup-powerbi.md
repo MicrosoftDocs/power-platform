@@ -19,7 +19,7 @@ search.app:
 ---
 # Set up the Power BI dashboard
 
-The Power BI dashboard provides a holistic view with visualizations and insights into resources in your tenant: environments, apps, Power Automate flows, connectors, connection references, makers, and audit logs. Telemetry from the audit log is stored from the moment you set up the Center of Excellence (CoE) Starter Kit, so over time you can look back and identify trends.
+The Power BI dashboard provides a holistic view with visualizations and insights into resources in your tenant: environments, apps, Power Automate flows, connectors, connection references, makers, and audit logs. Telemetry from the audit log is stored from the moment you set up the Center of Excellence (CoE) Starter Kit, so you can look back and identify trends over time.
 
 ![CoE Starter Kit Power BI dashboard.](media/pb-1.PNG "CoE Starter Kit Power BI dashboard")
 
@@ -27,8 +27,9 @@ The Power BI dashboard provides a holistic view with visualizations and insights
 
 You can get the CoE Power BI dashboard by downloading the CoE Starter Kit compressed file ([aka.ms/CoeStarterKitDownload](https://aka.ms/CoeStarterKitDownload)). **Extract the zip file** after downloading - it contains two Power BI template files:
 
-- Use the **Production_CoEDashboard_MMMYY.pbit** file if you have installed the CoE Starter Kit in a Production environment.
-- Use the **Teams_CoEDashboard_MMMYY.pbit** if you have installed the CoE Starter Kit in a Dataverse for Teams environment. This version connects to Microsoft Dataverse using the TDS endpoint, therefore the TDS Endpoint has to be enabled for the environment: [Manage feature settings](../../admin/settings-features.md).
+- Use the **Production_CoEDashboard_MMMYY.pbit** file if you've installed the CoE Starter Kit in a Production environment.
+- Use the **Teams_CoEDashboard_MMMYY.pbit** if you've installed the CoE Starter Kit in a Dataverse for Teams environment. This version connects to Microsoft Dataverse using the TDS endpoint, therefore the TDS Endpoint has to be enabled for the environment: [Manage feature settings](../../admin/settings-features.md).
+- Use the **PowerPlatformGovernance_CoEDashboard_MMMYY.pbit** file in addition to the above dashboards to gain further actionable governance and compliance insights into your adoption. This report is only available if you've installed the CoE Starter Kit in a Production environment.
 
 > [!NOTE]
 >
@@ -39,7 +40,7 @@ You can get the CoE Power BI dashboard by downloading the CoE Starter Kit compre
 
 You need the environment URL of the Microsoft Power Platform environment the CoE Starter Kit is installed in. Power BI will connect to the Microsoft Dataverse tables in that environment.
 
-- If you have installed the CoE Starter Kit in a Production environment:
+- If you've installed the CoE Starter Kit in a Production environment:
     1. Go to the [Power Platform admin center](https://aka.ms/ppac).
 
     1. Select **Environments**, and select the environment where the CoE solution is installed.
@@ -52,7 +53,7 @@ You need the environment URL of the Microsoft Power Platform environment the CoE
 
        ![Environment settings available in the Power Platform admin center.](media/coe20.png "Environment settings available in the Power Platform admin center")
 
-- If you have installed the CoE Starter Kit in a Dataverse for Teams environment:
+- If you've installed the CoE Starter Kit in a Dataverse for Teams environment:
     1. Open the Power Apps app in Teams
     1. Select **Build** and select your CoE environment
         ![Select your CoE environment in the Power Apps app in Teams.](media/coe-dft-bi1.png "Select your CoE environment in the Power Apps app in Teams")
@@ -61,13 +62,13 @@ You need the environment URL of the Microsoft Power Platform environment the CoE
 
 ## Configure the Power BI dashboard
 
-You can configure and modify the Power BI dashboard by working directly with the Power BI (.pbit) file and Power BI Desktop. This gives you flexibility in terms of modifying the dashboard to your own branding, and including (or excluding) pages or visuals you want to see (or not see) in the dashboard.
+You can configure and modify the Power BI dashboard by working directly with the Power BI (.pbit) file and Power BI Desktop. Using Power BI Desktop gives you flexibility to modify the dashboard to your own branding, and including (or excluding) pages or visuals you want to see (or not see) in the dashboard.
 
 1. Download and install [Microsoft Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=58494).
 
 1. In Power BI Desktop, open the .pbit file, which can be found in the CoE Starter Kit you downloaded from [aka.ms/CoeStarterKitDownload](https://aka.ms/CoEStarterKitDownload).
 
-1. Enter the URL of your environment instance. If you are using the **Teams_CoEDashboard_MMMYY.pbit**, do not include the https:// prefix or / postfix for **OrgUrl**. If you are using the **Production_CoEDashboard_MMMYY.pbit**, include the https:// prefix for **OrgUrl**. If prompted, sign in to Power BI Desktop with your organization account that has access to the environment you installed the CoE Starter Kit in.
+1. Enter the URL of your environment instance. If you're using the **Teams_CoEDashboard_MMMYY.pbit**, don't include the https:// prefix or / postfix for **OrgUrl**. If you're using the **Production_CoEDashboard_MMMYY.pbit** and **PowerPlatformGovernance_CoEDashboard_MMMYY.pbit**, include the https:// prefix for **OrgUrl**. If prompted, sign in to Power BI Desktop with your organization account that has access to the environment you installed the CoE Starter Kit in.
 
    ![Enter OrgUrl to configure Power BI dashboard.](media/pbit.png "Enter OrgUrl to configure Power BI dashboard")
 
@@ -79,11 +80,11 @@ You can find the report later by going to [app.powerbi.com](https://app.powerbi.
 
 ### Troubleshooting
 
-When you see *Unable to connect (provider Named Pipes Provider, error: 40 – Could not open a connection to SQL Server)* as an error message, the connector fails to connect to the TDS endpoint. This can occur when the URL used with the connector includes https:// and/or the ending /. Remove the https:// and ending forward slash so that the URL is in the form orgname.crm.dynamics.com.
+The *Unable to connect (provider Named Pipes Provider, error: 40 – Couldn't open a connection to SQL Server)* error message means that the connector has failed to connect to the TDS endpoint. This error can occur when the URL used with the connector includes https:// and/or the ending /. Remove the https:// and ending forward slash so that the URL is in the form orgname.crm.dynamics.com.
 
 ![Error message: Unable to connect .](media/pbi_error.PNG "Error message: Unable to connect ")
 
-When you see *A connection was successfully established with the server, but then an error occurred during the pre-login handshake* as an error message, the connector fails to connect to the TDS endpoint. This can also occur if the ports the TDS endpoint uses are blocked. Learn more: [Ports required for using SQL to query data](/powerapps/developer/data-platform/dataverse-sql-query#blocked-ports)
+The *A connection was successfully established with the server, but then an error occurred during the pre-login handshake* error message means that the connector has failed to connect to the TDS endpoint. This error can also occur if the ports the TDS endpoint uses are blocked. Learn more: [Ports required for using SQL to query data](/powerapps/developer/data-platform/dataverse-sql-query#blocked-ports)
 
 ![Error message: A connection was successfully established with the server, but then an error occurred .](media/pbi_error2.PNG "Error message:A connection was successfully established with the server, but then an error occurred ")
 
@@ -93,7 +94,7 @@ When you see *Unable to open document: The queries were authored with a newer ve
 
 ### (Optional) Configure embedded apps in the CoE dashboard
 
-The dashboard can be configured to use embedded apps to enable you to drive action based on insights you find. With the embedded apps, you can grant yourself access to resources, delete apps and flows, and reach out to the maker via email. You'll have to configure the Power Apps visuals in the Power BI dashboard before you can use them.
+The **Production_CoEDashboard_MMMYY.pbit** and **Teams_CoEDashboard_MMMYY.pbit** dashboards can be configured to use embedded apps to enable you to drive action based on insights you find. With the embedded apps, you can grant yourself access to resources, delete apps and flows, and reach out to the maker via email. You'll have to configure the Power Apps visuals in the Power BI dashboard before you can use them.
 
 1. Open the CoE Power BI dashboard in **Power BI Desktop**.
 1. Go to the **App Detail** page.

@@ -54,7 +54,7 @@ These automatically created topics fall into two categories:
 
     You can edit lesson topics or delete them entirely.
 
-- System topics are topics you're likely to need during a bot conversation.
+- [System topics](authoring-system-topics.md) are topics you're likely to need during a bot conversation.
 
     You can't delete or disable system topics or edit their trigger phrases. However, you can customize the nodes on the authoring canvas. We recommend that you don't customize these topics until you're comfortable creating an end-to-end bot conversation.
 
@@ -73,8 +73,6 @@ These automatically created topics fall into two categories:
 1. Specify one or more trigger phrases for the topic in the **Trigger phrases** pane.
 
     :::image type="content" source="media/authoring-create-edit-topics/topics-details-triggers.png" alt-text="Screenshot of the topic authoring canvas, highlighting adding trigger phrases.":::
-
-    A trigger phrase is a phrase that a customer enters in the chat window to start a conversation with the bot. Once the conversation is started, the conversation follows the path you define.
 
     You can specify more than one trigger phrase for a topic. You can include punctuation in a trigger phrase, but it's best to use short phrases rather than long sentences.
 
@@ -196,7 +194,7 @@ When the path for the subtopic is finished, the bot will return to the original 
 
 :::image type="content" source="media/authoring-create-edit-topics/authoring-subtopic-redirect.png" alt-text="Screenshot of the authoring canvas showing nodes under a redirected topic node.":::
 
-If you redirect to any of the following [system topics](#use-system-and-sample-topics), however, the entire conversation will end:
+If you redirect to any of the following [system topics](authoring-system-topics.md), however, the entire conversation will end:
 
 - End of Conversation
 - Confirmed Success
