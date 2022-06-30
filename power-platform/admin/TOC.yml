@@ -360,6 +360,8 @@
         items:
         - name: Environment cleanup process
           href: automatic-environment-cleanup.md
+        - name: Dataverse for Teams environment cleanup (preview)
+          href: inactive-teams-environment.md
         - name: Migrate environment
           href: move-environment-tenant.md          
         - name: Geo to geo migrations
