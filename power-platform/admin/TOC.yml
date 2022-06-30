@@ -110,10 +110,10 @@
           href: enable-hybrid-experience.md
     - name: Environments
       items:
-      - name: Environments overview
-        href: environments-overview.md
-      - name: Manage environments 
-        items:        
+      - name: Administer environments 
+        items:
+        - name: Environments overview
+          href: environments-overview.md
         - name: Create environment
           href: create-environment.md
         - name: Control environment creation
@@ -150,7 +150,19 @@
           href: admin-view-apps.md
         - name: Language collations 
           href: language-collations.md            
-      - name: Manage updates
+      - name: Managed Environments (preview)     
+        items: 
+        - name: Overview
+          href: managed-environment-overview.md
+        - name: Enable environment management
+          href: managed-environment-enable.md
+        - name: Weekly digests
+          href: managed-environment-weekly-digests.md 
+        - name: Sharing limits
+          href: managed-environment-sharing-limits.md
+        - name: Data policies
+          href: managed-environment-data-policies.md
+      - name: Environment updates
         items:
         - name: Opt in to early access updates
           href: opt-in-early-access-updates.md
@@ -158,7 +170,7 @@
           href: general-availability-deployment.md
         - name: "Manage maintenance window (preview)"
           href: manage-maintenance-window.md
-      - name: Manage settings 
+      - name: Environment settings 
         items:
         - name: Power Platform 
           href: power-platform-settings.md
