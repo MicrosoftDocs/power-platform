@@ -7,25 +7,29 @@ ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
 ms.date: 11/07/2015
-ms.subservice: canvas-maker
+ms.subservice: power-fx
 ms.author: gregli
-search.audienceType: 
+search.audienceType:
   - maker
-search.app: 
+search.app:
   - PowerApps
 contributors:
   - gregli-msft
   - tapanm-msft
 ---
+
 # Enable and Disable functions in Power Apps
+
 Turns a [signal](signals.md) on or off.
 
 ## Overview
-Some signals can change often, requiring the app to recalculate as they do.  Rapid changes over a long period of time can drain a device's battery. You can use these functions to manually turn a signal on or off.
+
+Some signals can change often, requiring the app to recalculate as they do. Rapid changes over a long period of time can drain a device's battery. You can use these functions to manually turn a signal on or off.
 
 When a signal isn't being used, it's automatically turned off.
 
 ## Description
+
 The **Enable** and **Disable** functions turn a signal on and off, respectively.
 
 These functions currently only work for the **[Location](signals.md)** signal.
@@ -33,10 +37,9 @@ These functions currently only work for the **[Location](signals.md)** signal.
 These functions have no return value. You can use them only in [behavior formulas](/power-apps/maker/canvas-apps/working-with-formulas-in-depth).
 
 ## Syntax
-**Enable**( *Signal* )<br>**Disable**( *Signal* )
 
-* *Signal* - Required.  The signal to turn on or off.
+**Enable**( _Signal_ )<br>**Disable**( _Signal_ )
 
-
+- _Signal_ - Required. The signal to turn on or off.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

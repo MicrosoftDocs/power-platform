@@ -7,30 +7,32 @@ ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
 ms.date: 11/01/2015
-ms.subservice: canvas-maker
+ms.subservice: power-fx
 ms.author: gregli
-search.audienceType: 
+search.audienceType:
   - maker
-search.app: 
+search.app:
   - PowerApps
 contributors:
   - gregli-msft
   - tapanm-msft
 ---
+
 # Mod function in Power Apps
+
 Returns the remainder of a division.
 
 ## Description
+
 The **Mod** function returns the remainder after a number is divided by a divisor.
 
 The result has the same sign as the divisor.
 
 ## Syntax
-**Mod**( *Number*, *Divisor* )
 
-* *Number* - Required. Number to divide.
-* *Divisor* - Required.  Number to divide by.
+**Mod**( _Number_, _Divisor_ )
 
-
+- _Number_ - Required. Number to divide.
+- _Divisor_ - Required. Number to divide by.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

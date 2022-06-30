@@ -7,40 +7,41 @@ ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
 ms.date: 07/21/2021
-ms.subservice: canvas-maker
+ms.subservice: power-fx
 ms.author: gregli
-search.audienceType: 
+search.audienceType:
   - maker
-search.app: 
+search.app:
   - PowerApps
 contributors:
   - gregli-msft
   - tapanm-msft
 ---
+
 # ReadNFC function in Power Apps
 
 Reads a Near Field Communication (NFC) tag.
 
 ## Description
 
-Use the **ReadNFC** function to read an NFC tag that is close to your device. When invoked, the screen displays instructions for scanning an NFC tag, and only returns after the tag has been scanned or a timeout expires.  
+Use the **ReadNFC** function to read an NFC tag that is close to your device. When invoked, the screen displays instructions for scanning an NFC tag, and only returns after the tag has been scanned or a timeout expires.
 
 **ReadNFC** returns a record of information about the tag that has been read. The record contains:
 
-| Column | Type | Description |
-|----|----|----|
-| **RTD** | Text | The tag's Record Type Definition (RTD).  Only *RTD_TEXT* and *RTD_URI* are supported at this time. |
-| **TNF** | Number | The tag's Type Name Format (TNF). Only *TNF_WELL_KNOWN* is supported at this time.  |
-| **Text** | Text | The text payload of the NFC tag if RTD is *RTD_TEXT*, *blank* otherwise.   | 
-| **URI** | Hyperlink | The URI payload of the NFC tag if RTD is *RTD_URI*, *blank* otherwise.  |
+| Column   | Type      | Description                                                                                       |
+| -------- | --------- | ------------------------------------------------------------------------------------------------- |
+| **RTD**  | Text      | The tag's Record Type Definition (RTD). Only _RTD_TEXT_ and _RTD_URI_ are supported at this time. |
+| **TNF**  | Number    | The tag's Type Name Format (TNF). Only _TNF_WELL_KNOWN_ is supported at this time.                |
+| **Text** | Text      | The text payload of the NFC tag if RTD is _RTD_TEXT_, _blank_ otherwise.                          |
+| **URI**  | Hyperlink | The URI payload of the NFC tag if RTD is _RTD_URI_, _blank_ otherwise.                            |
 
-If the tag is not supported, for example, the TNF is not *TNF_WELL_KNOWN*, or the scan timed out, then the record itself will be *blank* (and all the columns will be *blank* too).
+If the tag is not supported, for example, the TNF is not _TNF_WELL_KNOWN_, or the scan timed out, then the record itself will be _blank_ (and all the columns will be _blank_ too).
 
-Always check the payload value for *blank* using the [**IsBlank**](function-isblank-isempty.md) function before using it.  You do not need to check the **RTD** and **TNF** values yourself as they must be the correct values for **Text** and **URI** to have a non *blank* value.
+Always check the payload value for _blank_ using the [**IsBlank**](function-isblank-isempty.md) function before using it. You do not need to check the **RTD** and **TNF** values yourself as they must be the correct values for **Text** and **URI** to have a non _blank_ value.
 
-Additional **RTD** and **TNF** values may be supported in the future. If more values are supported, additional payload columns will also be added.  The raw **RTD** and **TNF** values are provided for informational purposes and do not need to be consulted if the payload column is checked for *blank*.  More information about these values and their use is available through the [NFC Forum](https://nfc-forum.org) and many other books and articles on NFC.
+Additional **RTD** and **TNF** values may be supported in the future. If more values are supported, additional payload columns will also be added. The raw **RTD** and **TNF** values are provided for informational purposes and do not need to be consulted if the payload column is checked for _blank_. More information about these values and their use is available through the [NFC Forum](https://nfc-forum.org) and many other books and articles on NFC.
 
-**ReadNFC** is only supported when running the app in a native mobile player such as the iOS and Andriod players.  Even with a supported player, a device may not support NFC, in which case a message will be shown to the user and the function will return a *blank* record.  
+**ReadNFC** is only supported when running the app in a native mobile player such as the iOS and Andriod players. Even with a supported player, a device may not support NFC, in which case a message will be shown to the user and the function will return a _blank_ record.
 
 **ReadNFC** can only be used in [behavior formulas](/power-apps/maker/canvas-apps/working-with-formulas-in-depth).
 
@@ -50,12 +51,12 @@ Additional **RTD** and **TNF** values may be supported in the future. If more va
 
 ## Examples
 
-Reads an NFC tag and displays the result.  If the result is Text or URI, displays that value to the user.  The [**With**](function-with.md) function is used to make the columns of the return record easily accessible.  
+Reads an NFC tag and displays the result. If the result is Text or URI, displays that value to the user. The [**With**](function-with.md) function is used to make the columns of the return record easily accessible.
 
 ```powerapps-dot
-With( ReadNFC(), 
-      If( Not IsBlank( Text ), 
-            Notify( "Read Text: " & Text ), 
+With( ReadNFC(),
+      If( Not IsBlank( Text ),
+            Notify( "Read Text: " & Text ),
           Not IsBlank( URI ),
             Notify( "Read URI: " & URI ),
           Notify( "Didn't read Text or URI" )

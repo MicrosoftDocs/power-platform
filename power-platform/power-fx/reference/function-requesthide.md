@@ -7,11 +7,11 @@ ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
 ms.date: 06/18/2020
-ms.subservice: canvas-maker
+ms.subservice: power-fx
 ms.author: emcoope
-search.audienceType: 
+search.audienceType:
   - maker
-search.app: 
+search.app:
   - PowerApps
 contributors:
   - gregli-msft
@@ -22,12 +22,12 @@ contributors:
 
 Hides the [SharePoint form](/power-apps/maker/canvas-apps/sharepoint-form-integration#understand-the-sharepointintegration-control).
 
->[!NOTE]
+> [!NOTE]
 > Only works with [SharePoint forms](/power-apps/maker/canvas-apps/sharepoint-form-integration).
 
 ## Description
 
-Use the **RequestHide** function to hide the SharePoint form. By default, RequestHide() is used for the *OnSuccess* property of a SharePoint form being customized.
+Use the **RequestHide** function to hide the SharePoint form. By default, RequestHide() is used for the _OnSuccess_ property of a SharePoint form being customized.
 
 ![RequestHide example.](media/function-requesthide/requesthide-fuction.png)
 
@@ -37,13 +37,12 @@ This function is not required for the **SharePointIntegration** control's **OnCa
 
 **RequestHide** ( )
 
-* No parameters.
+- No parameters.
 
 ## Examples
 
-| Formula | Description |
-| --- | --- |
+| Formula           | Description     |
+| ----------------- | --------------- |
 | **RequestHide()** | Hides the form. |
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
