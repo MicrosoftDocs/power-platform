@@ -4,7 +4,7 @@ description: This article covers the automatic deletion of inactive Dataverse fo
 author: matapg007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/29/2022
+ms.date: 06/30/2022
 ms.subservice: admin
 ms.author: matgupta 
 ms.reviewer: jimholtz

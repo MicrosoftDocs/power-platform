@@ -4,7 +4,7 @@ description: "Learn about the automatic process to identify and disable environm
 author: jimholtz
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/29/2022
+ms.date: 06/30/2022
 ms.subservice: admin
 ms.author: jimholtz 
 search.audienceType: 
