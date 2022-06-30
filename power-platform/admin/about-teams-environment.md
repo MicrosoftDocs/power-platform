@@ -4,7 +4,7 @@ description: Administer and manage Microsoft Dataverse for Teams environment
 author: jimholtz
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/09/2022
+ms.date: 06/30/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
