@@ -7,16 +7,17 @@ ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
 ms.date: 05/24/2021
-ms.subservice: canvas-maker
+ms.subservice: power-fx
 ms.author: gregli
-search.audienceType: 
+search.audienceType:
   - maker
-search.app: 
+search.app:
   - PowerApps
 contributors:
   - gregli-msft
   - tapanm-msft
 ---
+
 # Relate and Unrelate functions in Power Apps
 
 Relate and unrelate records of two tables through a one-to-many or many-to-many relationship.
@@ -25,7 +26,7 @@ Relate and unrelate records of two tables through a one-to-many or many-to-many 
 
 The **Relate** function links two records through a one-to-many or many-to-many relationship in Microsoft Dataverse. The **Unrelate** function reverses the process and removes the link.
 
-For one-to-many relationships, the Many table has a foreign-key field that points to a record of the One table. **Relate** sets this field to point to a specific record of the One table, while **Unrelate** sets this field to *blank*. If the field is already set when **Relate** is called, the existing link is lost in favor of the new link. You can also set this field by using the [**Patch**](function-patch.md) function or an **[Edit form](/power-apps/maker/canvas-apps/controls/control-form-detail)** control; you need not use the **Relate** function.
+For one-to-many relationships, the Many table has a foreign-key field that points to a record of the One table. **Relate** sets this field to point to a specific record of the One table, while **Unrelate** sets this field to _blank_. If the field is already set when **Relate** is called, the existing link is lost in favor of the new link. You can also set this field by using the [**Patch**](function-patch.md) function or an **[Edit form](/power-apps/maker/canvas-apps/controls/control-form-detail)** control; you need not use the **Relate** function.
 
 For many-to-many relationships, the system that links the records maintains a hidden join table. You can't access this join table directly; it can be read only through a one-to-many projection and set through the **Relate** and **Unrelate** functions. Neither related table has a foreign key.
 
@@ -40,26 +41,26 @@ You can use these functions only in [behavior formulas](/power-apps/maker/canvas
 
 ## Syntax
 
-**Relate**( *Table1RelatedTable*, *Table2Record* )
+**Relate**( _Table1RelatedTable_, _Table2Record_ )
 
-* *Table1RelatedTable* - Required. For a record of *Table1*, the table of *Table2* records related through a one-to-many or many-to-many relationship.
-* *Table2Record* - Required. The *Table2* record to add to the relationship.
+- _Table1RelatedTable_ - Required. For a record of _Table1_, the table of _Table2_ records related through a one-to-many or many-to-many relationship.
+- _Table2Record_ - Required. The _Table2_ record to add to the relationship.
 
-**Unrelate**( *Table1RelatedTable*, *Table2Record* )
+**Unrelate**( _Table1RelatedTable_, _Table2Record_ )
 
-* *Table1RelatedTable* - Required. For a record of *Table1*, the table of *Table2* records related through a one-to-many or many-to-many relationship.
-* *Table2Record* - Required. The *Table2* record to remove from the relationship.
+- _Table1RelatedTable_ - Required. For a record of _Table1_, the table of _Table2_ records related through a one-to-many or many-to-many relationship.
+- _Table2Record_ - Required. The _Table2_ record to remove from the relationship.
 
 ## Examples
 
 Consider a **Products** table with the following relationships as seen in the [Power Apps portal's table viewer](/power-apps/maker/data-platform/create-edit-entities-portal):
 
 | Relationship display name | Related table | Relationship type |
-| --- | --- |
-| Product Reservation | Reservation | One-to-many |
-| Product &harr; Contact | Contact | Many-to-many |
+| ------------------------- | ------------- | ----------------- |
+| Product Reservation       | Reservation   | One-to-many       |
+| Product &harr; Contact    | Contact       | Many-to-many      |
 
-**Products** and **Reservations** are related through a One-to-Many relationship.  To relate the first record of the **Reservations** table with the first record of the **Products** table:
+**Products** and **Reservations** are related through a One-to-Many relationship. To relate the first record of the **Reservations** table with the first record of the **Products** table:
 
 `Relate( First( Products ).Reservations, First( Reservations ) )`
 
@@ -69,7 +70,7 @@ To remove the relationship between these records:
 
 At no time did we create or remove or a record, only the relationship between records was modified.
 
-**Products** and **Contacts** are related through a Many-to-Many relationship.  To relate the first record of the **Contacts** table with the first record of the **Products** table:
+**Products** and **Contacts** are related through a Many-to-Many relationship. To relate the first record of the **Contacts** table with the first record of the **Products** table:
 
 `Relate( First( Products ).Contacts, First( Contacts ) )`
 
@@ -100,7 +101,7 @@ You'll first create a simple app to view and reassign the reservations that are 
 1. On the **View** tab, select **Data sources**.
 
 1. In the **Data** pane, select **Add data** > select **Products**. <br>
-    The Products table is part of the sample data loaded above.
+   The Products table is part of the sample data loaded above.
 
 1. On the **Insert** tab, add a blank vertical **[Gallery](/power-apps/maker/canvas-apps/controls/control-gallery)** control.
 
@@ -108,15 +109,15 @@ You'll first create a simple app to view and reassign the reservations that are 
 
 1. On the **Properties** tab, set **Gallery1**'s **Items** property to **Products** and its **Layout** to **Image and title**.
 
-    ![Configure ProductsGallery.](media/function-relate-unrelate/products-gallery.png)
+   ![Configure ProductsGallery.](media/function-relate-unrelate/products-gallery.png)
 
 1. In **Gallery1**, ensure that the **Label** control is named **Title1**, and then set its **Text** property to **ThisItem.Name**.
 
-    ![Configure the label in Gallery1.](media/function-relate-unrelate/products-title.png)
+   ![Configure the label in Gallery1.](media/function-relate-unrelate/products-title.png)
 
-1. Select the screen to avoid inserting the next item into **Gallery1**.  Add a second blank vertical **Gallery** control, and ensure that it's named **Gallery2**.
+1. Select the screen to avoid inserting the next item into **Gallery1**. Add a second blank vertical **Gallery** control, and ensure that it's named **Gallery2**.
 
-    **Gallery2** will show the reservations for whatever product the user selects in **Gallery1**.
+   **Gallery2** will show the reservations for whatever product the user selects in **Gallery1**.
 
 1. Move and resize **Gallery2** to fill the upper-right quadrant of the screen.
 
@@ -124,35 +125,35 @@ You'll first create a simple app to view and reassign the reservations that are 
 
 1. In the formula bar, set the **Items** property of **Gallery2** to **Gallery1.Selected.Reservations**.
 
-    ![Configure Gallery2 Items.](media/function-relate-unrelate/reservations-gallery.png)
+   ![Configure Gallery2 Items.](media/function-relate-unrelate/reservations-gallery.png)
 
 1. In the properties pane, set **Gallery2**'s **Layout** to **Title**.
 
-    ![Configure Gallery2 Layout.](media/function-relate-unrelate/reservations-gallery-right.png)
+   ![Configure Gallery2 Layout.](media/function-relate-unrelate/reservations-gallery-right.png)
 
 1. In **Gallery2**, add a **[Combo box](/power-apps/maker/canvas-apps/controls/control-combo-box)** control, ensure that it's named **ComboBox1**, and then move and resize it to avoid blocking the other controls in **Gallery2**.
 
 1. On the **Properties** tab, set **ComboBox1**'s **Items** property to **Products**.
 
-    ![Set Items property to Products.](media/function-relate-unrelate/reservations-combo-right.png)
+   ![Set Items property to Products.](media/function-relate-unrelate/reservations-combo-right.png)
 
 1. Scroll down in the **Properties** tab and set **ComboBox1**'s **Allow multiple selection** property to **Off**.
 
-    ![Set Allow multiple selection to Off.](media/function-relate-unrelate/reservations-singleselect-right.png)
+   ![Set Allow multiple selection to Off.](media/function-relate-unrelate/reservations-singleselect-right.png)
 
 1. In the formula bar, set **ComboBox1**'s **DefaultSelectedItems** property to **ThisItem.'Product Reservation'**.
 
-    ![Set DefaultSelectedItems for ReserveCombo.](media/function-relate-unrelate/reservations-combo.png)
+   ![Set DefaultSelectedItems for ReserveCombo.](media/function-relate-unrelate/reservations-combo.png)
 
 1. In **Gallery2**, set **NextArrow2**'s **OnSelect** property to this formula:
 
-    ```powerapps-dot
-    Relate( ComboBox1.Selected.Reservations, ThisItem )
-    ```
+   ```powerapps-dot
+   Relate( ComboBox1.Selected.Reservations, ThisItem )
+   ```
 
-    When the user selects this icon, the current reservation changes to the product that the user selected in **ComboBox1**.
+   When the user selects this icon, the current reservation changes to the product that the user selected in **ComboBox1**.
 
-    ![Configure NextArrow2.](media/function-relate-unrelate/reservations-relate.png)
+   ![Configure NextArrow2.](media/function-relate-unrelate/reservations-relate.png)
 
 1. Press F5 to test the app in Preview mode.
 
@@ -170,14 +171,15 @@ At this point, you can move the relationship from one record to another, but you
 
 1. In **Gallery2**, set the **OnSelect** formula for **NextArrow2** to this formula:
 
-    ```powerapps-dot
-    If( IsBlank( ComboBox1.Selected ),
-        Unrelate( Gallery1.Selected.Reservations, ThisItem ),
-        Relate( ComboBox1.Selected.Reservations, ThisItem )
-    );
-    Refresh( Reservations )
-    ```
-    ![Configure Right icon.](media/function-relate-unrelate/reservations-relate-unrelate.png)
+   ```powerapps-dot
+   If( IsBlank( ComboBox1.Selected ),
+       Unrelate( Gallery1.Selected.Reservations, ThisItem ),
+       Relate( ComboBox1.Selected.Reservations, ThisItem )
+   );
+   Refresh( Reservations )
+   ```
+
+   ![Configure Right icon.](media/function-relate-unrelate/reservations-relate-unrelate.png)
 
 1. Copy **Gallery2** to the Clipboard by selecting it and then pressing Ctrl-C.
 
@@ -187,17 +189,17 @@ At this point, you can move the relationship from one record to another, but you
 
 1. Ensure that the duplicate of **Gallery2** is named **Gallery2_1**, and then set its **Items** property to this formula:
 
-    ```powerapps-dot
-    Filter( Reservations, IsBlank( 'Product Reservation' ) )
-    ```
+   ```powerapps-dot
+   Filter( Reservations, IsBlank( 'Product Reservation' ) )
+   ```
 
-    A delegation warning appears, but it won't matter with the small amount of data in this example.
+   A delegation warning appears, but it won't matter with the small amount of data in this example.
 
-    ![Set the Items property of Gallery2_1.](media/function-relate-unrelate/reservations-lost.png)
+   ![Set the Items property of Gallery2_1.](media/function-relate-unrelate/reservations-lost.png)
 
 With these changes, users can clear the selection in **ComboBox1** for a contact if that person hasn't reserved a product. Contacts who haven't reserved a product appear in **Gallery2_1** where users can assign each contact to a product.
 
-   ![Demonstrate Relate and Unrelate functions in one-to-many app.](media/function-relate-unrelate/reservations-lostandfound.gif)
+![Demonstrate Relate and Unrelate functions in one-to-many app.](media/function-relate-unrelate/reservations-lostandfound.gif)
 
 ### Many-to-many
 
@@ -207,13 +209,13 @@ The sample data doesn't include a many-to-many relationship, but you'll create o
 
 1. From [this page](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), select **Data** in the left navigation bar, and then select **Tables**.
 
-    ![Open list of table.](media/function-relate-unrelate/entity-list.png)
+   ![Open list of table.](media/function-relate-unrelate/entity-list.png)
 
 1. Change the table filter to include all tables.
 
-    By default, sample tables don't appear.
+   By default, sample tables don't appear.
 
-    ![Remove table filter.](media/function-relate-unrelate/entity-all.png)
+   ![Remove table filter.](media/function-relate-unrelate/entity-all.png)
 
 1. Scroll down, open the **Product** table, and select **Relationships**.
 
@@ -231,31 +233,31 @@ You'll create another app that resembles the one you created earlier in this top
 
 1. Add another blank vertical **Gallery** control, ensure that it's named **Gallery2**, and then move it into the upper-right corner of the screen.
 
-    Later in this topic, you'll add a **Combo box** control under **Gallery2**.
+   Later in this topic, you'll add a **Combo box** control under **Gallery2**.
 
 1. In the formula bar, set **Gallery2**'s **Items** property to **Gallery1.Selected.Contacts**.
 
-    ![Configure ContactsGallery - Items property.](media/function-relate-unrelate/contacts-gallery.png)
+   ![Configure ContactsGallery - Items property.](media/function-relate-unrelate/contacts-gallery.png)
 
 1. On the **Properties** tab, set **Layout** to **Image and title**.
 
-    ![Configure ContactsGallery - Layout.](media/function-relate-unrelate/contacts-gallery-right.png)
+   ![Configure ContactsGallery - Layout.](media/function-relate-unrelate/contacts-gallery-right.png)
 
 1. In **Gallery2**, ensure that the **Label** control is named **Title2**, and then set its **Text** property to **ThisItem.'Full Name'**.
 
-    No text will appear in that control until you finish this procedure and assign a contact to a product.
+   No text will appear in that control until you finish this procedure and assign a contact to a product.
 
-    ![Show contact name.](media/function-relate-unrelate/contacts-title.png)
+   ![Show contact name.](media/function-relate-unrelate/contacts-title.png)
 
 1. Delete **NextArrow2**, insert a **Cancel** icon, and ensure that it's named **icon1**.
 
-1. Set the **Cancel** icon's **OnSelect** property to this formula: 
+1. Set the **Cancel** icon's **OnSelect** property to this formula:
 
-    ```powerapps-dot
-    Unrelate( Gallery1.Selected.Contacts, ThisItem )
-    ```
+   ```powerapps-dot
+   Unrelate( Gallery1.Selected.Contacts, ThisItem )
+   ```
 
-    ![Configure Cancel icon.](media/function-relate-unrelate/contacts-unrelate.png)
+   ![Configure Cancel icon.](media/function-relate-unrelate/contacts-unrelate.png)
 
 1. On the **View** tab, select **Data sources**.
 
@@ -263,26 +265,26 @@ You'll create another app that resembles the one you created earlier in this top
 
 1. Under **Gallery2**, add a **Combo box** control, ensure that it's named **ComboBox1**, and then set its **Items** property to **Contacts**.
 
-    ![Configure the combo box Items property.](media/function-relate-unrelate/contacts-combo.png)
+   ![Configure the combo box Items property.](media/function-relate-unrelate/contacts-combo.png)
 
 1. On the **Properties** tab, set **Allow multiple selection** to **Off**.
 
-    ![Configure the combo box Layout property.](media/function-relate-unrelate/contacts-combo-right.png)
+   ![Configure the combo box Layout property.](media/function-relate-unrelate/contacts-combo-right.png)
 
-1. Insert an **Add** icon, and set its **OnSelect** property to this formula: 
+1. Insert an **Add** icon, and set its **OnSelect** property to this formula:
 
-    ```powerapps-dot
-    Relate( Gallery1.Selected.Contacts, ComboBox1.Selected )
-    ```
+   ```powerapps-dot
+   Relate( Gallery1.Selected.Contacts, ComboBox1.Selected )
+   ```
 
-    ![Configure Add icon.](media/function-relate-unrelate/contacts-relate.png)
+   ![Configure Add icon.](media/function-relate-unrelate/contacts-relate.png)
 
 With this app, users can now freely relate and unrelate a set of contacts to each product.
 
 - To add a contact to a product, select the contact in the combo box at the bottom of the screen, and then select the **Add** icon.
 - To remove a contact from a product, select the **Cancel** icon for that contact.
 
-    Unlike one-to-many, a many-to-many relationship allows users to associate the same contact with multiple products.
+  Unlike one-to-many, a many-to-many relationship allows users to associate the same contact with multiple products.
 
 ![Demonstrate Relate and Unrelate functions in many-to-many app.](media/function-relate-unrelate/contacts-relate-unrelate.gif)
 
@@ -292,39 +294,38 @@ Many-to-many relationships are symmetric. You can extend the example to add prod
 
 1. Set the **OnVisible** property of **Screen1** to **Refresh( Products )**.
 
-    When you update a one-to-many or many-to-many relationship, only the data of the first argument table of the **Relate** or **Unrelate** call is refreshed. The second must be refreshed manually if you want to flip between the screens of this app.
+   When you update a one-to-many or many-to-many relationship, only the data of the first argument table of the **Relate** or **Unrelate** call is refreshed. The second must be refreshed manually if you want to flip between the screens of this app.
 
-    ![Set OnVisible property to Refresh function.](media/function-relate-unrelate/contacts-refresh.png)
+   ![Set OnVisible property to Refresh function.](media/function-relate-unrelate/contacts-refresh.png)
 
 1. Duplicate **Screen1**.
 
-    The duplicate will be named **Screen1_1** and form the basis for looking at the relationships from the contacts side.
+   The duplicate will be named **Screen1_1** and form the basis for looking at the relationships from the contacts side.
 
-    ![Duplicate a screen.](media/function-relate-unrelate/contacts-duplicate.png)
+   ![Duplicate a screen.](media/function-relate-unrelate/contacts-duplicate.png)
 
 1. To create the reverse view, change these formulas on the controls of **Screen1_1**:
 
-    - Screen1_1.OnVisible = `Refresh( Contacts )`
-    - Gallery1_1.Items = `Contacts`
-    - Title1_1.Text = `ThisItem.'Full Name'`
-    - Label1_1.Text = `"Selected Contact Products"`
-    - Gallery2_1.Items = `Gallery1_1.Selected.Products`
-    - Title2_1.Text = `ThisItem.Name`
-    - Icon1_1.OnSelect = `Unrelate( Gallery1_1.Selected.Products, ThisItem )`
-    - ComboBox1_1.Items = `Products`
-    - Icon2_1.OnSelect = `Relate( Gallery1_1.Selected.Products, ComboBox1_1.Selected )`
+   - Screen1_1.OnVisible = `Refresh( Contacts )`
+   - Gallery1_1.Items = `Contacts`
+   - Title1_1.Text = `ThisItem.'Full Name'`
+   - Label1_1.Text = `"Selected Contact Products"`
+   - Gallery2_1.Items = `Gallery1_1.Selected.Products`
+   - Title2_1.Text = `ThisItem.Name`
+   - Icon1_1.OnSelect = `Unrelate( Gallery1_1.Selected.Products, ThisItem )`
+   - ComboBox1_1.Items = `Products`
+   - Icon2_1.OnSelect = `Relate( Gallery1_1.Selected.Products, ComboBox1_1.Selected )`
 
-    The result will look very similar to the previous screen but comes at the relationship from the **Contacts** side.
+   The result will look very similar to the previous screen but comes at the relationship from the **Contacts** side.
 
-    ![Show many-to-many relationship starting with contacts.](media/function-relate-unrelate/reverse-screen.png)
+   ![Show many-to-many relationship starting with contacts.](media/function-relate-unrelate/reverse-screen.png)
 
-1. Insert an **Arrows up down** icon and set its **OnSelect** property to **Navigate( Screen1, None )**.  Do the same thing on **Screen1** with the formula **Navigate( Screen1_1, None )**.
+1. Insert an **Arrows up down** icon and set its **OnSelect** property to **Navigate( Screen1, None )**. Do the same thing on **Screen1** with the formula **Navigate( Screen1_1, None )**.
 
-    ![Add navigation between screens.](media/function-relate-unrelate/reverse-navigate.png)
+   ![Add navigation between screens.](media/function-relate-unrelate/reverse-navigate.png)
 
 With this new screen, users can add a contact to a product and then flip to a view of contacts and see the associated product. The relationships are symmetric and shared between the two screens.
 
 ![Demonstrate many-to-many relationship from either side.](media/function-relate-unrelate/contacts-reverse.gif)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
