@@ -31,7 +31,8 @@ There are four main steps to configuring SSO for Power Virtual Agents:
 
 > [!IMPORTANT]
 >
-> - SSO on SharePoint is not supported.
+> - SSO on SharePoint is not currently supported.
+> - SSO for PowerApps is not currently supported.
 > - SSO is not supported when your bot is integrated with [Dynamics 365 Customer Service](configuration-hand-off-omnichannel.md).
 
 ## Prerequisites
