@@ -7,52 +7,58 @@ ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
 ms.date: 11/07/2015
-ms.subservice: canvas-maker
+ms.subservice: power-fx
 ms.author: gregli
-search.audienceType: 
+search.audienceType:
   - maker
-search.app: 
+search.app:
   - PowerApps
 contributors:
   - gregli-msft
   - tapanm-msft
 ---
+
 # HashTags function in Power Apps
+
 Extracts the hashtags (#strings) from a string of text.
 
 ## Description
+
 The **HashTags** function scans a string for hashtags. Hashtags start with a pound character (#), which is followed by any combination of:
 
-* uppercase and lowercase letters
-* numerals
-* underscores
-* currency symbols (such as $)
+- uppercase and lowercase letters
+- numerals
+- underscores
+- currency symbols (such as $)
 
-**HashTags** returns a one-column [table](/power-apps/maker/canvas-apps/working-with-tables) that contains the hashtags in the string.  If the string contains no hashtags, the function returns a one-column table that's [empty](function-isblank-isempty.md).
+**HashTags** returns a one-column [table](/power-apps/maker/canvas-apps/working-with-tables) that contains the hashtags in the string. If the string contains no hashtags, the function returns a one-column table that's [empty](function-isblank-isempty.md).
 
 ## Syntax
-**HashTags**( *String* )
 
-* *String* - Required.  String to scan for hashtags.
+**HashTags**( _String_ )
+
+- _String_ - Required. String to scan for hashtags.
 
 ## Examples
+
 ### Step by step
+
 1. Add a **[Text input](/power-apps/maker/canvas-apps/controls/control-text-input)** control, name it **Tweet**, and type this sentence into it:
-   
-    **This #app is #AMAZING and can #coUnt123 or #123abc but not #1-23 or #$\*(#\@")**
+
+   **This #app is #AMAZING and can #coUnt123 or #123abc but not #1-23 or #$\*(#\@")**
+
 2. Add a vertical custom gallery, and set its **[Items](/power-apps/maker/canvas-apps/controls/properties-core)** property to this function:
-   
-    **HashTags(Tweet.Text)**
+
+   **HashTags(Tweet.Text)**
+
 3. Add a **[Label](/power-apps/maker/canvas-apps/controls/control-text-box)** control to the gallery template.
-   
-    The gallery shows these hashtags:
-   
-   * **\#app**
-   * **\#AMAZING**
-   * **\#coUnt123**
-   * **\#123abc**
-   * **\#1**
 
+   The gallery shows these hashtags:
 
+   - **\#app**
+   - **\#AMAZING**
+   - **\#coUnt123**
+   - **\#123abc**
+   - **\#1**
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
