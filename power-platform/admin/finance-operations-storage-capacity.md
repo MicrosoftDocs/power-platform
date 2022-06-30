@@ -22,8 +22,6 @@ search.app:
 
 The finance and operations storage capacity report gives you a way to visualize your organization's storage usage versus your entitlement.
 
-Currently, the report covers finance and operations database storage capacity at both the tenant and environment level. Table-level analytics and file storage capacity reporting will be available later. For some environments, the **Last updated** field isn't available.
-
 > [!IMPORTANT]
 >
 > - This report is in preview. You may use it to manage your storage efficiently. If the storage consumption goes over the entitled limit, we encourage you to manage the excess consumption by deleting unused data or purchasing additional operations storage capacity. There is no functional or performance impact to your service if storage consumption exceeds your entitlement.
