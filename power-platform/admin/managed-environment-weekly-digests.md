@@ -3,7 +3,7 @@ title: "Weekly digests | MicrosoftDocs"
 description: Learn how to use Managed Environments to enable weekly digests.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/27/2022
+ms.date: 07/01/2022
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: jimholtz
