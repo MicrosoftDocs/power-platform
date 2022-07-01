@@ -3,7 +3,7 @@ title: "Sharing limits | MicrosoftDocs"
 description: Learn how to use Managed Environments to enable sharing limits.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/27/2022
+ms.date: 07/01/2022
 author: alaug 
 ms.author: alaug
 ms.reviewer: jimholtz

@@ -3,7 +3,7 @@ title: "Managed Environments overview | MicrosoftDocs"
 description: Use Managed Environments to gain more visibility and control of your Dynamics 365 applications and flows, with less effort.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/27/2022
+ms.date: 07/01/2022
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: jimholtz
@@ -26,7 +26,7 @@ search.app:
 
 Managed Environments for Power Platform is a suite of capabilities that allows admins to manage Power Platform at scale with more control, less effort, and more insights. Admins can enable Managed Environments on any type of environment. There are four primary elements of Managed Environments: 
 
-- [Enable Managed Environment](managed-environment-enable.md)
+- [Enable Managed Environments](managed-environment-enable.md)
 - [Weekly digests](managed-environment-weekly-digests.md)
 - [Sharing limits](managed-environment-sharing-limits.md)
 - [Data policies](managed-environment-data-policies.md) 
@@ -38,11 +38,11 @@ Managed Environments for Power Platform is a suite of capabilities that allows a
 
 ## License considerations
 
-Managed Environments represents a value-add on top of  existing premium Power Platform capabilities. All applications and flows in a managed environments are premium and can be licensed using any of the Power Platform licensing options (per user, per app/flow or pay-as-you-go) or Dynamics 365 licenses that give premium usage rights. 
+Managed Environments represents a value-add on top of  existing premium Power Platform capabilities. All applications and flows in a managed environment are premium and can be licensed using any of the Power Platform licensing options (per user, per app/flow or pay-as-you-go) or Dynamics 365 licenses that give premium usage rights. 
 
 Any type of environments can be managed. The semantics of trial environments type do not change when the environments is managed. Details on licensing implications for assets in the Default environments will be announced before GA.
 
-During the public preview the premium license requirement for applications and flows within a managed environments is not enforced. 
+During the public preview the premium license requirement for applications and flows within a managed environment is not enforced. 
 
 |  | | |
 |---------|---------|---------|
