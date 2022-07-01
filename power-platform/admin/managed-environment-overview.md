@@ -42,6 +42,21 @@ Managed Environments represents a value-add on top of  existing premium Power Pl
 
 During the public preview the premium license requirement for applications and flows within a managed environment is not enforced. 
 
+<table style="width:100%">
+<thead>
+  <tr>
+    <th colspan="3">:::image type="content" source="media/managed-environment-licensing.png" alt-text="Non-managed environments" border="false"::: </th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td width="40%"><ul><li>No Managed Environments features​</li> <br /><li>Premium and non-premium assets (apps/flows)​</li><br /><li>Users with qualifying and non-qualifying licenses</li></ul></td>
+    <td width="20%"></td>
+    <td width="40%"><ul><li>Includes Managed Environments features​ </li><br /><li>All low code assets (apps/flows) become premium ​</li><br /> <li>Users must have a qualifying license to access the assets </li></ul> </td>
+  </tr>
+</tbody>
+</table>
+
 |  | | |
 |---------|---------|---------|
 |:::image type="content" source="media/managed-environment-licensing.png" alt-text="Non-managed environments" border="false":::     |  |  |
