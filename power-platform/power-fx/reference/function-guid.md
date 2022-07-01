@@ -3,25 +3,27 @@ title: GUID function in Power Apps
 description: Reference information including syntax and examples for the GUID function in Power Apps.
 author: gregli-msft
 
-
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
 ms.date: 07/17/2020
-ms.subservice: canvas-maker
+ms.subservice: power-fx
 ms.author: gregli
-search.audienceType: 
+search.audienceType:
   - maker
-search.app: 
+search.app:
   - PowerApps
 contributors:
   - gregli-msft
   - tapanm-msft
 ---
+
 # GUID function in Power Apps
+
 Converts a GUID ([Globally Unique Identifier](https://en.wikipedia.org/wiki/Universally_unique_identifier)) string to a GUID value or creates a new GUID value.
 
 ## Description
+
 Use the **GUID** function to convert a string that contains the hexadecimal representation of a GUID into a GUID value that can be passed to a database. GUID values are used as keys by database systems such as Microsoft Dataverse and SQL Server.
 
 The string passed can contain uppercase or lowercase letters, but it must be 32 hexadecimal digits in either of these formats:
@@ -31,12 +33,13 @@ The string passed can contain uppercase or lowercase letters, but it must be 32 
 
 If you don't specify an argument, this function creates a new GUID.
 
-To convert a GUID value to a string, simply use it in a string context. The GUID value will be converted to a hexadecimal representation string with hyphens and lowercase letters. 
+To convert a GUID value to a string, simply use it in a string context. The GUID value will be converted to a hexadecimal representation string with hyphens and lowercase letters.
 
 When generating a new GUID, this function uses pseudo-random numbers to create a version 4 [IETF RFC 4122](https://www.ietf.org/rfc/rfc4122.txt) GUID. When converting a string to a GUID, this function supports any GUID version by accepting any string of 32 hexadecimal digits.
 
 ## Volatile functions
-**GUID** is a volatile function when used without an argument. Each time the function is evaluated, it returns a different value.  
+
+**GUID** is a volatile function when used without an argument. Each time the function is evaluated, it returns a different value.
 
 When used in a data-flow formula, a volatile function will return a different value only if the formula in which it appears is reevaluated. If nothing else changes in the formula, it will have the same value throughout the execution of your app.
 
@@ -49,9 +52,10 @@ The function will be reevaluated if it's part of a formula in which something el
 When used in a [behavior formula](/power-apps/maker/canvas-apps/working-with-formulas-in-depth), **GUID** will be evaluated each time the formula is evaluated. For more information, see the examples later in this topic.
 
 ## Syntax
+
 **GUID**( [ *GUIDString* ] )
 
-* *GUIDString* – Optional.  A text string that contains the hexadecimal representation of a GUID. If no string is supplied, a new GUID is created.
+- _GUIDString_ – Optional. A text string that contains the hexadecimal representation of a GUID. If no string is supplied, a new GUID is created.
 
 ## Examples
 
@@ -87,29 +91,28 @@ The **Label** control will show **f9168c5e-ceb2-4faa-b6bf-329bf39fa1e4**.
 
 1. Set the **[OnSelect](/power-apps/maker/canvas-apps/controls/properties-core)** property of a **[Button](/power-apps/maker/canvas-apps/controls/control-button)** control to this formula:
 
-    ```powerapps-dot
-    ClearCollect( NewGUIDs, ForAll( Sequence(5), GUID() ) )
-    ```
+   ```powerapps-dot
+   ClearCollect( NewGUIDs, ForAll( Sequence(5), GUID() ) )
+   ```
 
-    This formula creates a single-column table that's used to iterate five times, resulting in five GUIDs.
+   This formula creates a single-column table that's used to iterate five times, resulting in five GUIDs.
 
 1. Add a **[Data table](/power-apps/maker/canvas-apps/controls/control-data-table)** control, set its **Items** property to **NewGUIDs**, and show the **Value** field.
 
 1. While holding down the Alt key, select the button by clicking or tapping it.
 
-    The data table shows a list of GUIDs:
+   The data table shows a list of GUIDs:
 
-    ![A screen showing a data table with five different GUID values.](media/function-guid/guid-collection-1.png)
+   ![A screen showing a data table with five different GUID values.](media/function-guid/guid-collection-1.png)
 
 1. Select the button again to show a different list of GUIDs:
 
-    ![The same screen showing a data table with a new set of five different GUID values.](media/function-guid/guid-collection-2.png)
+   ![The same screen showing a data table with a new set of five different GUID values.](media/function-guid/guid-collection-2.png)
 
 To generate a single GUID instead of a table, use this formula:
 
 ```powerapps-dot
 Set( NewGUID, GUID() )
 ```
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

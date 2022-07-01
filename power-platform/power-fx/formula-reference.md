@@ -6,34 +6,35 @@ ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm-msft
 ms.date: 04/21/2022
-ms.service: powerapps
-ms.subservice: canvas-maker
+ms.subservice: power-fx
 ms.author: gregli
-search.audienceType: 
+search.audienceType:
   - maker
-search.app: 
+search.app:
   - PowerApps
 contributors:
   - tapanm-msft
   - gregli-msft
 ---
+
 # Power Fx formula reference for Power Apps
 
-Formulas combine many elements.  Listed below are:
+Formulas combine many elements. Listed below are:
 
-* **Functions** take parameters, perform an operation, and return a value. For example, **Sqrt(25)** returns **5**. Functions are modeled after Microsoft Excel functions.  Some functions have side effects, such as **SubmitForm**, which are appropriate only in a [behavior formula](/power-apps/maker/canvas-apps/working-with-formulas-in-depth) such as **Button.OnSelect**.
-* **Signals** return information about the environment. For example, **[Location](reference/signals.md)** returns the device's current GPS coordinates. Signals don't take parameters or have side effects.
-* **Enumerations** return a pre-defined constant value. For example, **[Color](reference/function-colors.md)** is an enumeration that has pre-defined values for **Color.Red**, **Color.Blue**, and so forth.  Common enumerations are included here; function-specific enumerations are described with the function.
-* **Named operators**, such as **[ThisItem](reference/operators.md#thisitem-thisrecord-and-as-operators)** and **[Self](reference/operators.md#self-and-parent-operators)**, provide access to information from within a container.
+- **Functions** take parameters, perform an operation, and return a value. For example, **Sqrt(25)** returns **5**. Functions are modeled after Microsoft Excel functions. Some functions have side effects, such as **SubmitForm**, which are appropriate only in a [behavior formula](/power-apps/maker/canvas-apps/working-with-formulas-in-depth) such as **Button.OnSelect**.
+- **Signals** return information about the environment. For example, **[Location](reference/signals.md)** returns the device's current GPS coordinates. Signals don't take parameters or have side effects.
+- **Enumerations** return a pre-defined constant value. For example, **[Color](reference/function-colors.md)** is an enumeration that has pre-defined values for **Color.Red**, **Color.Blue**, and so forth. Common enumerations are included here; function-specific enumerations are described with the function.
+- **Named operators**, such as **[ThisItem](reference/operators.md#thisitem-thisrecord-and-as-operators)** and **[Self](reference/operators.md#self-and-parent-operators)**, provide access to information from within a container.
 
 Other elements include:
 
-* [Operators and identifiers](reference/operators.md)
-* [Controls and their properties](/power-apps/maker/canvas-apps/reference-properties)
-* [Data types](reference/data-types.md)
+- [Operators and identifiers](reference/operators.md)
+- [Controls and their properties](/power-apps/maker/canvas-apps/reference-properties)
+- [Data types](reference/data-types.md)
 
 ## <a id="-a"></a> A
-**[Abs](reference/function-numericals.md)** – Absolute value of a number.  
+
+**[Abs](reference/function-numericals.md)** – Absolute value of a number.
 
 **[Acceleration](reference/signals.md)** – Reads the acceleration sensor in your device.
 
@@ -43,7 +44,7 @@ Other elements include:
 
 **[AddColumns](reference/function-table-shaping.md)** – Returns a table with [columns](/power-apps/maker/canvas-apps/working-with-tables#columns) added.
 
-**[And](reference/function-logicals.md)** – Boolean logic AND.  Returns **true** if all arguments are **true**.  You can also use the [**&&** operator](reference/operators.md).
+**[And](reference/function-logicals.md)** – Boolean logic AND. Returns **true** if all arguments are **true**. You can also use the [**&&** operator](reference/operators.md).
 
 **[App](reference/object-app.md)** – Provides information about the currently running app and control over the app's behavior.
 
@@ -57,16 +58,18 @@ Other elements include:
 
 **[Atan](reference/function-trig.md)** – Returns the arctangent of a number, in radians.
 
-**[Atan2](reference/function-trig.md)** – Returns the arctangent based on an (*x*,*y*) coordinate, in radians.
+**[Atan2](reference/function-trig.md)** – Returns the arctangent based on an (_x_,_y_) coordinate, in radians.
 
 **[Average](reference/function-aggregates.md)** – Calculates the average of a table expression or a set of arguments.
 
 ## B
-**[Back](reference/function-navigate.md)** – Displays the previous screen.  
 
-**[Blank](reference/function-isblank-isempty.md)** – Returns a *blank* value that can be used to insert a NULL value in a data source.
+**[Back](reference/function-navigate.md)** – Displays the previous screen.
+
+**[Blank](reference/function-isblank-isempty.md)** – Returns a _blank_ value that can be used to insert a NULL value in a data source.
 
 ## C
+
 **[Calendar](reference/function-clock-calendar.md)** – Retrieves information about the calendar for the current locale.
 
 **[Char](reference/function-char.md)** – Translates a character code into a string.
@@ -81,7 +84,7 @@ Other elements include:
 
 **[Clock](reference/function-clock-calendar.md)** – Retrieves information about the clock for the current locale.
 
-**[Coalesce](reference/function-isblank-isempty.md)** – Replaces *blank* values while leaving non-*blank* values unchanged.
+**[Coalesce](reference/function-isblank-isempty.md)** – Replaces _blank_ values while leaving non-_blank_ values unchanged.
 
 **[Collect](reference/function-clear-collect-clearcollect.md)** – Creates a collection or adds data to a data source.
 
@@ -89,15 +92,15 @@ Other elements include:
 
 **[ColorFade](reference/function-colors.md)** – Fades a color value.
 
-**[ColorValue](reference/function-colors.md)** – Translates a CSS color name or a hex code to a color value.  
+**[ColorValue](reference/function-colors.md)** – Translates a CSS color name or a hex code to a color value.
 
 **[Compass](reference/signals.md)** – Returns your compass heading.
 
-**[Concat](reference/function-concatenate.md)** – Concatenates strings in a data source.  
+**[Concat](reference/function-concatenate.md)** – Concatenates strings in a data source.
 
 **[Concatenate](reference/function-concatenate.md)** – Concatenates strings.
 
-**[Concurrent](reference/function-concurrent.md)** – Evaluates multiple formulas concurrently with one another. 
+**[Concurrent](reference/function-concurrent.md)** – Evaluates multiple formulas concurrently with one another.
 
 **[Connection](reference/signals.md)** – Returns information about your network connection.
 
@@ -109,14 +112,15 @@ Other elements include:
 
 **[CountA](reference/function-table-counts.md)** – Counts table records that aren't [empty](reference/function-isblank-isempty.md).
 
-**[CountIf](reference/function-table-counts.md)** – Counts table records that satisfy a condition.  
+**[CountIf](reference/function-table-counts.md)** – Counts table records that satisfy a condition.
 
-**[CountRows](reference/function-table-counts.md)** – Counts table records.   
+**[CountRows](reference/function-table-counts.md)** – Counts table records.
 
 ## D
+
 **[DataSourceInfo](reference/function-datasourceinfo.md)** – Provides information about a data source.
 
-**[Date](reference/function-date-time.md)** – Returns a date/time value, based on **Year**, **Month**, and **Day** values.  
+**[Date](reference/function-date-time.md)** – Returns a date/time value, based on **Year**, **Month**, and **Day** values.
 
 **[DateAdd](reference/function-dateadd-datediff.md)** – Adds days, months, quarters, or years to a date/time value.
 
@@ -126,7 +130,7 @@ Other elements include:
 
 **[DateValue](reference/function-datevalue-timevalue.md)** – Converts a date-only string to a date/time value.
 
-**[Day](reference/function-datetime-parts.md)** – Retrieves the day portion of a date/time value.  
+**[Day](reference/function-datetime-parts.md)** – Retrieves the day portion of a date/time value.
 
 **[Defaults](reference/function-defaults.md)** – Returns the default values for a data source.
 
@@ -134,13 +138,14 @@ Other elements include:
 
 **[Disable](reference/function-enable-disable.md)** – Disables a signal, such as **[Location](reference/signals.md)** for reading the GPS.
 
-**[Distinct](reference/function-distinct.md)** – Summarizes records of a table, removing duplicates.  
+**[Distinct](reference/function-distinct.md)** – Summarizes records of a table, removing duplicates.
 
 **[Download](reference/function-download.md)** – Downloads a file from the web to the local device.
 
 **[DropColumns](reference/function-table-shaping.md)** – Returns a table with one or more columns removed.
 
 ## E
+
 **[EditForm](reference/function-form.md)** – Resets a form control for editing of an item.
 
 **[Enable](reference/function-enable-disable.md)** – Enables a signal, such as **[Location](reference/signals.md)** for reading the GPS.
@@ -153,13 +158,14 @@ Other elements include:
 
 **[Errors](reference/function-errors.md)** – Provides error information for previous changes to a data source.
 
-**[exactin](reference/operators.md#in-and-exactin-operators)** – Checks if a text string is contained within another text string or table, case dependent.  Also used to check if a record is in a table.  
+**[exactin](reference/operators.md#in-and-exactin-operators)** – Checks if a text string is contained within another text string or table, case dependent. Also used to check if a record is in a table.
 
 **[Exit](reference/function-exit.md)** – Exits the currently running app and optionally signs out the current user.
 
-**[Exp](reference/function-numericals.md)** - Returns *e* raised to a power.
+**[Exp](reference/function-numericals.md)** - Returns _e_ raised to a power.
 
 ## F
+
 **[Filter](reference/function-filter-lookup.md)** – Returns a filtered table based on one or more criteria.
 
 **[Find](reference/function-find.md)** – Checks whether one string appears within another and returns the location.
@@ -171,21 +177,24 @@ Other elements include:
 **[ForAll](reference/function-forall.md)** – Calculates values and performs actions for all records of a table.
 
 ## G
+
 **[GroupBy](reference/function-groupby.md)** – Returns a table with records grouped together.
 
 **[GUID](reference/function-guid.md)** – Converts a GUID string to a GUID value or creates a new GUID value.
 
 ## H
+
 **[HashTags](reference/function-hashtags.md)** – Extracts the hashtags (#strings) from a string.
 
 **[Hour](reference/function-datetime-parts.md)** – Returns the hour portion of a date/time value.
 
 ## I
-**[If](reference/function-if.md)** – Returns one value if a condition is true and another value if not. 
 
-**[IfError](reference/function-iferror.md)** - Detects errors and provides an alternative value or takes action. 
+**[If](reference/function-if.md)** – Returns one value if a condition is true and another value if not.
 
-**[in](reference/operators.md#in-and-exactin-operators)** – Checks if a text string is contained within another text string or table, case independent.  Also used to check if a record is in a table.
+**[IfError](reference/function-iferror.md)** - Detects errors and provides an alternative value or takes action.
+
+**[in](reference/operators.md#in-and-exactin-operators)** – Checks if a text string is contained within another text string or table, case independent. Also used to check if a record is in a table.
 
 **[Index](reference/function-first-last.md)** – Returns a record from a table based on ordered position.
 
@@ -199,7 +208,7 @@ Other elements include:
 
 **[IsError](reference/function-iferror.md)** – Checks for an error.
 
-**[IsMatch](reference/function-ismatch.md)** – Checks a string against a pattern.  Regular expressions can be used.
+**[IsMatch](reference/function-ismatch.md)** – Checks a string against a pattern. Regular expressions can be used.
 
 **[IsNumeric](reference/function-isnumeric.md)** – Checks for a numeric value.
 
@@ -207,14 +216,16 @@ Other elements include:
 
 **[IsToday](reference/function-now-today-istoday.md)** – Checks whether a date/time value is sometime today in the user's time zone.
 
-**[IsType](reference/function-astype-istype.md)** – Checks whether a record reference  refers to a specific table type.
+**[IsType](reference/function-astype-istype.md)** – Checks whether a record reference refers to a specific table type.
 
 **[IsUTCToday](reference/function-now-today-istoday.md)** – Checks whether a date/time value is sometime today in Coordinated Universal Time (UTC).
 
 ## J
+
 **[JSON](reference/function-json.md)** - Generates a JSON text string for a table, a record, or a value.
 
 ## L
+
 **[Language](reference/function-language.md)** – Returns the language tag of the current user.
 
 **[Last](reference/function-first-last.md)** – Returns the last record of a table.
@@ -240,9 +251,10 @@ Other elements include:
 **[Lower](reference/function-lower-upper-proper.md)** – Converts letters in a string of text to all lowercase.
 
 ## M
-**[Match](reference/function-ismatch.md)** – Extracts a substring based on a pattern.  Regular expressions can be used.
 
-**[MatchAll](reference/function-ismatch.md)** – Extracts multiple substrings based on a pattern.  Regular expressions can be used.
+**[Match](reference/function-ismatch.md)** – Extracts a substring based on a pattern. Regular expressions can be used.
+
+**[MatchAll](reference/function-ismatch.md)** – Extracts multiple substrings based on a pattern. Regular expressions can be used.
 
 **[Max](reference/function-aggregates.md)** – Maximum value of a table expression or a set of arguments.
 
@@ -250,27 +262,30 @@ Other elements include:
 
 **[Min](reference/function-aggregates.md)** – Minimum value of a table expression or a set of arguments.
 
-**[Minute](reference/function-datetime-parts.md)** – Retrieves the minute portion of a date/time value.  
+**[Minute](reference/function-datetime-parts.md)** – Retrieves the minute portion of a date/time value.
 
 **[Mod](reference/function-mod.md)** – Returns the remainder after a dividend is divided by a divisor.
 
 **[Month](reference/function-datetime-parts.md)** – Retrieves the month portion of a date/time value.
 
 ## N
+
 **[Navigate](reference/function-navigate.md)** – Changes which screen is displayed.
 
 **[NewForm](reference/function-form.md)** – Resets a form control for creation of an item.
 
-**[Not](reference/function-logicals.md)** – Boolean logic NOT.  Returns **true** if its argument is **false**, and returns **false** if its argument is **true**.  You can also use the [**!** operator](reference/operators.md).
+**[Not](reference/function-logicals.md)** – Boolean logic NOT. Returns **true** if its argument is **false**, and returns **false** if its argument is **true**. You can also use the [**!** operator](reference/operators.md).
 
 **[Notify](reference/function-showerror.md)** – Displays a banner message to the user.
 
 **[Now](reference/function-now-today-istoday.md)** – Returns the current date/time value in the user's time zone.
 
 ## O
-**[Or](reference/function-logicals.md)** – Boolean logic OR.  Returns **true** if any of its arguments are **true**.  You can also use the [**||** operator](reference/operators.md).
+
+**[Or](reference/function-logicals.md)** – Boolean logic OR. Returns **true** if any of its arguments are **true**. You can also use the [**||** operator](reference/operators.md).
 
 ## P
+
 **[Param](reference/function-param.md)** – Access parameters passed to a canvas app when launched.
 
 **[Parent](reference/operators.md#self-and-parent-operators)** – Provides access to a container control's properties.
@@ -281,11 +296,12 @@ Other elements include:
 
 **[PlainText](reference/function-encode-decode.md)** – Removes HTML and XML tags from a string.
 
-**[Power](reference/function-numericals.md)** – Returns a number raised to a power.  You can also use the [**^** operator](reference/operators.md).
+**[Power](reference/function-numericals.md)** – Returns a number raised to a power. You can also use the [**^** operator](reference/operators.md).
 
 **[Proper](reference/function-lower-upper-proper.md)** – Converts the first letter of each word in a string to uppercase, and converts the rest to lowercase.
 
 ## R
+
 **[Radians](reference/function-trig.md)** - Converts degrees to radians.
 
 **[Rand](reference/function-rand.md)** – Returns a pseudo-random number between 0 and 1.
@@ -327,9 +343,10 @@ Other elements include:
 **[RoundUp](reference/function-round.md)** – Rounds up to the smallest next number.
 
 ## S
+
 **[SaveData](reference/function-savedata-loaddata.md)** – Saves a collection to an app host such as a local device.
 
-**[Search](reference/function-filter-lookup.md)** – Finds records in a table that contain a string in one of their columns.  
+**[Search](reference/function-filter-lookup.md)** – Finds records in a table that contain a string in one of their columns.
 
 **[Second](reference/function-datetime-parts.md)** – Retrieves the second portion of a date/time value.
 
@@ -361,18 +378,19 @@ Other elements include:
 
 **[StartsWith](reference/function-startswith.md)** – Checks if a text string begins with another text string.
 
-**[StdevP](reference/function-aggregates.md)** – Returns the standard deviation of its arguments.  
+**[StdevP](reference/function-aggregates.md)** – Returns the standard deviation of its arguments.
 
 **[Substitute](reference/function-replace-substitute.md)** – Replaces part of a string with another string, by matching strings.
 
 **[SubmitForm](reference/function-form.md)** – Saves the item in a form control to the data source.
 
-**[Sum](reference/function-aggregates.md)** – Calculates the sum of a table expression or a set of arguments.  
+**[Sum](reference/function-aggregates.md)** – Calculates the sum of a table expression or a set of arguments.
 
 **[Switch](reference/function-if.md)** – Matches with a set of values and then evaluates a corresponding formula.
 
 ## T
-**[Table](reference/function-table.md)** – Creates a temporary table.  
+
+**[Table](reference/function-table.md)** – Creates a temporary table.
 
 **[Tan](reference/function-trig.md)** - Returns the tangent of an angle specified in radians.
 
@@ -382,7 +400,7 @@ Other elements include:
 
 **[ThisRecord](reference/operators.md#thisitem-thisrecord-and-as-operators)** – Returns the record for the current item in a record scope function, such as **ForAll**, **With**, and **Sum**.
 
-**[Time](reference/function-date-time.md)** – Returns a date/time value, based on **Hour**, **Minute**, and **Second** values.  
+**[Time](reference/function-date-time.md)** – Returns a date/time value, based on **Hour**, **Minute**, and **Second** values.
 
 **[TimeValue](reference/function-datevalue-timevalue.md)** – Converts a time-only string to a date/time value.
 
@@ -399,6 +417,7 @@ Other elements include:
 **[Trunc](reference/function-round.md)** – Truncates the number to only the integer portion by removing any decimal portion.
 
 ## U
+
 **[Ungroup](reference/function-groupby.md)** – Removes a grouping.
 
 **[Unrelate](reference/function-relate-unrelate.md)** – Unrelates records of two tables from a one-to-many or many-to-many relationship.
@@ -418,15 +437,17 @@ Other elements include:
 **[UTCToday](reference/function-now-today-istoday.md)** – Returns the current date-only value in Coordinated Universal Time (UTC).
 
 ## V
+
 **[Validate](reference/function-validate.md)** – Checks whether the value of a single column or a complete record is valid for a data source.
 
 **[Value](reference/function-value.md)** – Converts a string to a number.
 
-**[VarP](reference/function-aggregates.md)** – Returns the variance of its arguments.  
+**[VarP](reference/function-aggregates.md)** – Returns the variance of its arguments.
 
 **[ViewForm](reference/function-form.md)** – Resets a form control for viewing of an existing item.
 
 ## W
+
 **[Weekday](reference/function-datetime-parts.md)** – Retrieves the weekday portion of a date/time value.
 
 **[WeekNum](reference/function-weeknum.md)** – Returns the week number of a date/time value.
@@ -434,6 +455,7 @@ Other elements include:
 **[With](reference/function-with.md)** – Calculates values and performs actions for a single record, including inline records of named values.
 
 ## Y
-**[Year](reference/function-datetime-parts.md)** – Retrieves the year portion of a date/time value.  
+
+**[Year](reference/function-datetime-parts.md)** – Retrieves the year portion of a date/time value.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

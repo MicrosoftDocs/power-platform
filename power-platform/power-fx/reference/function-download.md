@@ -7,11 +7,11 @@ ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
 ms.date: 05/04/2020
-ms.subservice: canvas-maker
+ms.subservice: power-fx
 ms.author: gregli
-search.audienceType: 
+search.audienceType:
   - maker
-search.app: 
+search.app:
   - PowerApps
 contributors:
   - gregli-msft
@@ -26,7 +26,7 @@ Downloads a file from the web to the local device.
 
 The **Download** function downloads a file from the web to the local device.
 
-In native players (Windows, Android, and iOS), the user is prompted for a location to save the file.  
+In native players (Windows, Android, and iOS), the user is prompted for a location to save the file.
 
 When used on the web, **Download** is dependent on the browser's settings to determine what happens with the file. For images, videos, PDFs, and other file types that the browser natively supports, a new browser tab is opened to display the file. Many browsers support saving the contents to the local file system.
 
@@ -36,9 +36,9 @@ Only on Windows, **Download** returns the location where the file was stored loc
 
 ## Syntax
 
-**Download**( *Address* )
+**Download**( _Address_ )
 
-* *Address* – Required.  The URL address of a web resource to download.
+- _Address_ – Required. The URL address of a web resource to download.
 
 ## Examples
 
@@ -50,9 +50,9 @@ The following formula will download the user's guide for the Surface Book, a PDF
 Download( "https://go.microsoft.com/fwlink/?linkid=827480" )
 ```
 
-When run in a mobile device, the user will be prompted for a location to save the file.  
+When run in a mobile device, the user will be prompted for a location to save the file.
 
-When run in most web browsers, a new tab will be opened to display the PDF file as most browsers natively support this file type. 
+When run in most web browsers, a new tab will be opened to display the PDF file as most browsers natively support this file type.
 
 ### Step by Step
 
@@ -63,12 +63,12 @@ The **Product Showcase** tablet layout template was used for the following examp
 1. Select your app and then select **Edit**.
 1. Select **Insert** from the menu and then select **Label**.
 1. Move the label to the bottom right of the screen.
-1. From the properties pane on the right-side, select **Color** as *white* and set **Border thickness** at *1*.
-1. Select the **Text** property from right-side and enter text as *Download User Guide*.
+1. From the properties pane on the right-side, select **Color** as _white_ and set **Border thickness** at _1_.
+1. Select the **Text** property from right-side and enter text as _Download User Guide_.
 1. From property list on top left, select **OnSelect**.
 1. Enter formula as `Download("https://go.microsoft.com/fwlink/?linkid=827480")`. You can also use any other URL of your choice.
 
-    ![Download example.](media/function-download/download-example-onselect.png "Download example")
+   ![Download example.](media/function-download/download-example-onselect.png "Download example")
 
 1. Save and publish the app.
 1. Play the app.
@@ -80,6 +80,5 @@ The **Product Showcase** tablet layout template was used for the following examp
 ### See also
 
 [Canvas app formula reference](/power-apps/maker/canvas-apps/formula-reference)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

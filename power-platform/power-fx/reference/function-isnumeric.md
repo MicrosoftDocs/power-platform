@@ -7,29 +7,31 @@ ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
 ms.date: 11/01/2015
-ms.subservice: canvas-maker
+ms.subservice: power-fx
 ms.author: gregli
-search.audienceType: 
+search.audienceType:
   - maker
-search.app: 
+search.app:
   - PowerApps
 contributors:
   - gregli-msft
   - tapanm-msft
 ---
+
 # IsNumeric function in Power Apps
+
 Tests whether a value is numeric.
 
 ## Description
-The **IsNumeric** function tests whether a value is numeric.  Other kinds of values include Boolean, string, [table](/power-apps/maker/canvas-apps/working-with-tables), and [record](/power-apps/maker/canvas-apps/working-with-tables#records).
+
+The **IsNumeric** function tests whether a value is numeric. Other kinds of values include Boolean, string, [table](/power-apps/maker/canvas-apps/working-with-tables), and [record](/power-apps/maker/canvas-apps/working-with-tables#records).
 
 The return value is a Boolean **true** or **false**.
 
 ## Syntax
-**IsNumeric**( *Value* )
 
-* *Value* – Required. Value to test.
+**IsNumeric**( _Value_ )
 
-
+- _Value_ – Required. Value to test.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

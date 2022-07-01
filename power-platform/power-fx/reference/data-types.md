@@ -6,53 +6,54 @@ ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
 ms.date: 04/18/2022
-ms.subservice: canvas-maker
+ms.subservice: power-fx
 ms.author: gregli
-search.audienceType: 
+search.audienceType:
   - maker
-search.app: 
+search.app:
   - PowerApps
 contributors:
   - gregli-msft
   - tapanm-msft
 ---
+
 # Data types in Power Apps
 
 Information flows through an app in small, discrete values, very much like the cells of a spreadsheet. For example, data in a **Birthday** field and an **Anniversary** field would both flow through as a **Date** value that includes the year, the month, and the day. The app knows how to format these values, constrain input to what is appropriate for each, and share the values with a database. Birthdays differ from anniversaries to people, but the system handles them in exactly the same manner. In this case, **Date** is an example of a [data type](https://en.wikipedia.org/wiki/Data_type).
 
 This article provides details for the data types that canvas apps support. When an app connects to an external data source, each data type in that source is mapped to a data type for canvas apps.
 
-| Data type | Description | Examples |
-|-----------|-------------|---------|
-| **Boolean** | A *true* or *false* value.  Can be used directly in **If**, **Filter** and other functions without a comparison.  | *true* |
-| **Color** | A color specification, including an alpha channel. | **Color.Red**<br>**ColorValue( "#102030" )**<br>**RGBA( 255, 128, 0, 0.5 )** |
-| **Currency** | A currency value that's stored in a floating-point number. Currency values are the same as number values with currency-formatting options.  | **123**<br>**4.56** |
-| **Date** | A date without a time, in the time zone of the app's user. | **Date( 2019, 5, 16 )** |
-| **DateTime** | A date with a time, in the time zone of the app's user. | **DateTimeValue( "May 16, 2019 1:23:09 PM" )** |
-| **GUID** | A [Globally Unique Identifier](https://en.wikipedia.org/wiki/Universally_unique_identifier). | **GUID()**<br>**GUID( "123e4567-e89b-12d3-a456-426655440000" )** |
-| **Hyperlink** | A text string that holds a hyperlink. | **"https://powerapps.microsoft.com"** |
-| **Image** | A [Universal Resource Identifier (URI)](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) text string to an image in .jpeg, .png, .svg, .gif, or other common web-image format. | **MyImage** added as an app resource<br>**"https://northwindtraders.com/logo.jpg"**<br>**"appres://blobmanager/7b12ffa2..."** |
-| **Media** | A URI text string to a video or audio recording. | **MyVideo** added as an app resource<br>**"https://northwindtraders.com/intro.mp4"**<br>**"appres://blobmanager/3ba411c..."** |
-| **Number** | A floating-point number. | **123**<br>**-4.567**<br>**8.903e121** |
-| **Choice** | A choice from a set of options, backed by a number. This data type combines a localizable text label with a numeric value. The label appears in the app, and the numeric value is stored and used for comparisons. | **ThisItem.OrderStatus** |
-| **Record** | A record of data values. This compound data type contains instances of other data types that are listed in this topic. More information: [Working with tables](/power-apps/maker/canvas-apps/working-with-tables). | **{ Company: "Northwind Traders",<br>Staff: 35, <br>NonProfit: false }** |
-| **Record reference** | A reference to a record in a table. Such references are often used with polymorphic lookups. More information: [Working with references](/power-apps/maker/canvas-apps/working-with-references).| **First(Accounts).Owner** |
-| **Table** | A table of records.  All of the records must have the same names for their fields with the same data types, and omitted fields are treated as *blank*. This compound data type contains instances of other data types that are listed in this topic. More information: [Working with tables](/power-apps/maker/canvas-apps/working-with-tables). | **Table( { FirstName: "Sidney",<br>LastName: "Higa" }, <br>{ FirstName: "Nancy",<br>LastName: "Anderson" } )**
-| **Text** | A Unicode text string. | **"Hello, World"** |
-| **Time** | A time without a date, in the time zone of the app's user. | **Time( 11, 23, 45 )** |
-| **Two option** | A choice from a set of two options, backed by a boolean value. This data type combines a localizable text label with a boolean value. The label appears in the app, and the boolean value is stored and used for comparisons. | **ThisItem.Taxable** |
+| Data type            | Description                                                                                                                                                                                                                                                                                                                                     | Examples                                                                                                                      |
+| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| **Boolean**          | A _true_ or _false_ value. Can be used directly in **If**, **Filter** and other functions without a comparison.                                                                                                                                                                                                                                 | _true_                                                                                                                        |
+| **Color**            | A color specification, including an alpha channel.                                                                                                                                                                                                                                                                                              | **Color.Red**<br>**ColorValue( "#102030" )**<br>**RGBA( 255, 128, 0, 0.5 )**                                                  |
+| **Currency**         | A currency value that's stored in a floating-point number. Currency values are the same as number values with currency-formatting options.                                                                                                                                                                                                      | **123**<br>**4.56**                                                                                                           |
+| **Date**             | A date without a time, in the time zone of the app's user.                                                                                                                                                                                                                                                                                      | **Date( 2019, 5, 16 )**                                                                                                       |
+| **DateTime**         | A date with a time, in the time zone of the app's user.                                                                                                                                                                                                                                                                                         | **DateTimeValue( "May 16, 2019 1:23:09 PM" )**                                                                                |
+| **GUID**             | A [Globally Unique Identifier](https://en.wikipedia.org/wiki/Universally_unique_identifier).                                                                                                                                                                                                                                                    | **GUID()**<br>**GUID( "123e4567-e89b-12d3-a456-426655440000" )**                                                              |
+| **Hyperlink**        | A text string that holds a hyperlink.                                                                                                                                                                                                                                                                                                           | **"https://powerapps.microsoft.com"**                                                                                         |
+| **Image**            | A [Universal Resource Identifier (URI)](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) text string to an image in .jpeg, .png, .svg, .gif, or other common web-image format.                                                                                                                                                        | **MyImage** added as an app resource<br>**"https://northwindtraders.com/logo.jpg"**<br>**"appres://blobmanager/7b12ffa2..."** |
+| **Media**            | A URI text string to a video or audio recording.                                                                                                                                                                                                                                                                                                | **MyVideo** added as an app resource<br>**"https://northwindtraders.com/intro.mp4"**<br>**"appres://blobmanager/3ba411c..."** |
+| **Number**           | A floating-point number.                                                                                                                                                                                                                                                                                                                        | **123**<br>**-4.567**<br>**8.903e121**                                                                                        |
+| **Choice**           | A choice from a set of options, backed by a number. This data type combines a localizable text label with a numeric value. The label appears in the app, and the numeric value is stored and used for comparisons.                                                                                                                              | **ThisItem.OrderStatus**                                                                                                      |
+| **Record**           | A record of data values. This compound data type contains instances of other data types that are listed in this topic. More information: [Working with tables](/power-apps/maker/canvas-apps/working-with-tables).                                                                                                                              | **{ Company: "Northwind Traders",<br>Staff: 35, <br>NonProfit: false }**                                                      |
+| **Record reference** | A reference to a record in a table. Such references are often used with polymorphic lookups. More information: [Working with references](/power-apps/maker/canvas-apps/working-with-references).                                                                                                                                                | **First(Accounts).Owner**                                                                                                     |
+| **Table**            | A table of records. All of the records must have the same names for their fields with the same data types, and omitted fields are treated as _blank_. This compound data type contains instances of other data types that are listed in this topic. More information: [Working with tables](/power-apps/maker/canvas-apps/working-with-tables). | **Table( { FirstName: "Sidney",<br>LastName: "Higa" }, <br>{ FirstName: "Nancy",<br>LastName: "Anderson" } )**                |
+| **Text**             | A Unicode text string.                                                                                                                                                                                                                                                                                                                          | **"Hello, World"**                                                                                                            |
+| **Time**             | A time without a date, in the time zone of the app's user.                                                                                                                                                                                                                                                                                      | **Time( 11, 23, 45 )**                                                                                                        |
+| **Two option**       | A choice from a set of two options, backed by a boolean value. This data type combines a localizable text label with a boolean value. The label appears in the app, and the boolean value is stored and used for comparisons.                                                                                                                   | **ThisItem.Taxable**                                                                                                          |
 
-Many of these data types are similar and have the same underlying representation, such as a **Hyperlink** field being treated as **Text**.  The additional data types provide better default experiences in forms and other controls.
+Many of these data types are similar and have the same underlying representation, such as a **Hyperlink** field being treated as **Text**. The additional data types provide better default experiences in forms and other controls.
 
 ## Blank
 
-All data types can have a value of *blank* (in other words, no value). The term "null" is often used in databases for this concept.  
+All data types can have a value of _blank_ (in other words, no value). The term "null" is often used in databases for this concept.
 
-Use the **Blank** function with the **Set** or **Patch** function to set a variable or field to *blank*. For example, **Set( x, Blank() )** removes any value in the global variable **x**.  
+Use the **Blank** function with the **Set** or **Patch** function to set a variable or field to _blank_. For example, **Set( x, Blank() )** removes any value in the global variable **x**.
 
-Test for a *blank* value by using the [**IsBlank**](function-isblank-isempty.md) function. Replace possible *blank* values with non-*blank* values by using the [**Coalesce**](function-isblank-isempty.md) function.
+Test for a _blank_ value by using the [**IsBlank**](function-isblank-isempty.md) function. Replace possible _blank_ values with non-_blank_ values by using the [**Coalesce**](function-isblank-isempty.md) function.
 
-Because all data types support *blank*, the **Boolean** and **Two option** data types effectively have three possible values.
+Because all data types support _blank_, the **Boolean** and **Two option** data types effectively have three possible values.
 
 ## Text, Hyperlink, Image, and Media
 
@@ -60,7 +61,7 @@ All four of these data types are based on a [Unicode](https://en.wikipedia.org/w
 
 ### Embedded text
 
-Embedded text strings in a formula are enclosed in double quotation marks.  Use two double quotes together to represent a single double quote in the text string.  For example, using the following formula in the **OnSelect** property of a [**Button**](/power-apps/maker/canvas-apps/controls/control-button) control:
+Embedded text strings in a formula are enclosed in double quotation marks. Use two double quotes together to represent a single double quote in the text string. For example, using the following formula in the **OnSelect** property of a [**Button**](/power-apps/maker/canvas-apps/controls/control-button) control:
 
 ```powerapps-dot
 Notify( "Jane said ""Hello, World!""" )
@@ -70,49 +71,48 @@ results in a banner when the button is pressed, where the first and last double 
 
 ![pop up notification with the message Jane said "Hello, World."](media/data-types/literal-string.png)
 
-
-Single quotation marks are used for [identifier names](operators.md#identifier-names) that contain special characters and have no special significance within a text string.  
+Single quotation marks are used for [identifier names](operators.md#identifier-names) that contain special characters and have no special significance within a text string.
 
 ### String interpolation
 
-Use string interpolation to embed formulas within a text string.  This is often easier to work with and visualize the output than using the [**Concatenate**](function-concatenate.md) function or [**&**](operators.md) operator.  
+Use string interpolation to embed formulas within a text string. This is often easier to work with and visualize the output than using the [**Concatenate**](function-concatenate.md) function or [**&**](operators.md) operator.
 
-Prefix the text string with a dollar sign **$** and enclose the formula to be embedded with curly braces **{ }**.  To include a curly brace in the text string, use repeated curly braces: **{{** or **}}**.  String interpolation can be used anywhere a standard text string can be used.
+Prefix the text string with a dollar sign **$** and enclose the formula to be embedded with curly braces **{ }**. To include a curly brace in the text string, use repeated curly braces: **{{** or **}}**. String interpolation can be used anywhere a standard text string can be used.
 
 For example, consider this formula with global variables **Apples** set to 3 and **Bananas** set to 4:
 
 ```powerapps-dot
-$"We have {Apples} apples, {Bananas} bananas, yielding {Apples+Bananas} fruit total." 
+$"We have {Apples} apples, {Bananas} bananas, yielding {Apples+Bananas} fruit total."
 ```
 
-This formula returns the text string **We have 3 apples, 4 bananas, yielding 7 fruit total.**  The variables **Apples** and **Bananas** are inserted in the text replacing the curly braces, along with the result of the mathematical formula **Apples+Bananas**.  Spaces and other characters around the curly braces are preserved as they are.
+This formula returns the text string **We have 3 apples, 4 bananas, yielding 7 fruit total.** The variables **Apples** and **Bananas** are inserted in the text replacing the curly braces, along with the result of the mathematical formula **Apples+Bananas**. Spaces and other characters around the curly braces are preserved as they are.
 
-Embedded formulas can include any functions or operators.  All that is requires is that the result of the formula can be coerced to a text string.  For example, this formula will insert **NickName** if it's supplied, or the **FirstName** if not, in a greeting:
+Embedded formulas can include any functions or operators. All that is requires is that the result of the formula can be coerced to a text string. For example, this formula will insert **NickName** if it's supplied, or the **FirstName** if not, in a greeting:
 
 ```powerapps-dot
 $"Welcome {Coalesce( NickName, FirstName )}, it's great to meet you!" )
 ```
 
-If **NickName** is set to "Joe", then this formula produces the text string **Welcome Joe, it's great to meet you!**.  But if **NickName** is *blank* and **FirstName** is "Joseph", then this formula produces **Dear Joseph, great to meet you!** instead.
+If **NickName** is set to "Joe", then this formula produces the text string **Welcome Joe, it's great to meet you!**. But if **NickName** is _blank_ and **FirstName** is "Joseph", then this formula produces **Dear Joseph, great to meet you!** instead.
 
-String interpolation can include standard text strings in the embedded formula.  For example, if neither **NickName** nor **FirstName** were supplied, we could still provide **"Friend"** as a substitute:
+String interpolation can include standard text strings in the embedded formula. For example, if neither **NickName** nor **FirstName** were supplied, we could still provide **"Friend"** as a substitute:
 
 ```powerapps-dot
-$"Welcome {Coalesce( NickName, FirstName, "Friend" )}!"  
+$"Welcome {Coalesce( NickName, FirstName, "Friend" )}!"
 ```
 
-String interpolations can even be nested.  Consider this example where **First**, **Middle**, and **Last** names are combined into a greeting.  Even if one or two of these values are *blank*, the correct number of spaces will be between the name parts.  If none of the parts are provided, the inner string interpolation will collapse to an empty string, and be replaced by the [**Coalesce**](function-isblank-isempty.md) function by "Friend".  
+String interpolations can even be nested. Consider this example where **First**, **Middle**, and **Last** names are combined into a greeting. Even if one or two of these values are _blank_, the correct number of spaces will be between the name parts. If none of the parts are provided, the inner string interpolation will collapse to an empty string, and be replaced by the [**Coalesce**](function-isblank-isempty.md) function by "Friend".
 
 ```powerapps-dot
 $"Welcome {Coalesce( Trim( $"{First} {Middle} {Last}"}), "Friend" )}!"
 ```
 
-| First | Middle | Last | Result |
-|-------|--------|------|--------|
-| John | Qunicy | Doe | `Welcome John Quincy Doe!` |
-| John | *blank* | Doe | `Welcome John Doe!` |
-| *blank* | *blank* | Doe | `Welcome Doe!` |
-| *blank* | *blank* | *blank* | `Welcome Friend!` |
+| First   | Middle  | Last    | Result                     |
+| ------- | ------- | ------- | -------------------------- |
+| John    | Qunicy  | Doe     | `Welcome John Quincy Doe!` |
+| John    | _blank_ | Doe     | `Welcome John Doe!`        |
+| _blank_ | _blank_ | Doe     | `Welcome Doe!`             |
+| _blank_ | _blank_ | _blank_ | `Welcome Friend!`          |
 
 ### Newlines
 
@@ -121,7 +121,7 @@ Embedded text strings can contain newlines. For example, consider setting the **
 ```powerapps-dot
 "Line 1
 Line 2
-Line 3" 
+Line 3"
 ```
 
 The above formula results in three lines shown in the label control:
@@ -133,7 +133,7 @@ Newlines are also supported with string interpolation, as shown below:
 ```powerapps-dot
 $"Line {1}
 Line {1+1}
-Line {1+1+1}" 
+Line {1+1+1}"
 ```
 
 The above formula results in the same output:
@@ -190,7 +190,7 @@ As a best practice, hold data in memory only as long as necessary. Upload images
 
 Canvas apps can exactly represent whole numbers (or integers) between –9,007,199,254,740,991 (–(2<sup>53</sup> – 1)) and 9,007,199,254,740,991 (2<sup>53</sup> – 1), inclusive. This range is larger than the 32-bit (or 4-byte) integer data types that databases commonly use. However, canvas apps can't represent 64-bit (or 8-byte) integer data types. You might want to store the number in a text field or use a calculated column to make a copy of the number in a text field, so that it's mapped into a **Text** data type in the canvas app. In this manner, you can hold, display, and enter these values, as well as comparing them to determine whether they're equal; however, you can't perform numerical calculations on them in this form.
 
-Floating-point arithmetic is approximate, so it can sometimes give unexpected results with many documented examples. You might expect the formula **55 / 100 * 100** to return exactly 55 and **(55 / 100 * 100) - 55** to return exactly zero. However, the latter formula returns 7.1054 x 10<sup>–15</sup>, which is very small but not zero. That tiny difference doesn't normally cause a problem, and the app rounds it away when showing the result. However, small differences can compound in subsequent calculations and appear to give the wrong answer.
+Floating-point arithmetic is approximate, so it can sometimes give unexpected results with many documented examples. You might expect the formula **55 / 100 \* 100** to return exactly 55 and **(55 / 100 \* 100) - 55** to return exactly zero. However, the latter formula returns 7.1054 x 10<sup>–15</sup>, which is very small but not zero. That tiny difference doesn't normally cause a problem, and the app rounds it away when showing the result. However, small differences can compound in subsequent calculations and appear to give the wrong answer.
 
 Database systems often store currencies and perform calculations by using decimal math, which offers a smaller range but greater control over the precision. By default, canvas apps map currencies in and out of floating-point values; therefore, the result might differ from calculations that are done in a native decimal data type. If this type of discrepancy will cause problems, you might want to work with these values as **Text**, just as you might with large integers described earlier in this section.
 
@@ -205,14 +205,14 @@ Date/time values fall in these categories:
 
 This table shows some examples:
 
-| Date/time type | Value stored in the database | Value displayed and entered 7 hours west of UTC | Value displayed and entered 4 hours east of UTC |
-|--------------------------|------------------------------|------------------------------|
-| **User local** | Sunday,&nbsp;May&nbsp;19,&nbsp;2019<br>4:00 AM | Saturday,&nbsp;May&nbsp;18,&nbsp;2019<br>9:00 PM | Sunday,&nbsp;May&nbsp;19,&nbsp;2019<br>8:00 AM |
-| **Time zone independent** | Sunday,&nbsp;May&nbsp;19,&nbsp;2019<br>4:00 AM | Sunday,&nbsp;May&nbsp;19,&nbsp;2019<br>4:00 AM | Sunday,&nbsp;May&nbsp;19,&nbsp;2019<br>4:00 AM | 
+| Date/time type            | Value stored in the database                   | Value displayed and entered 7 hours west of UTC  | Value displayed and entered 4 hours east of UTC |
+| ------------------------- | ---------------------------------------------- | ------------------------------------------------ | ----------------------------------------------- |
+| **User local**            | Sunday,&nbsp;May&nbsp;19,&nbsp;2019<br>4:00 AM | Saturday,&nbsp;May&nbsp;18,&nbsp;2019<br>9:00 PM | Sunday,&nbsp;May&nbsp;19,&nbsp;2019<br>8:00 AM  |
+| **Time zone independent** | Sunday,&nbsp;May&nbsp;19,&nbsp;2019<br>4:00 AM | Sunday,&nbsp;May&nbsp;19,&nbsp;2019<br>4:00 AM   | Sunday,&nbsp;May&nbsp;19,&nbsp;2019<br>4:00 AM  |
 
 For **User local** date/times, canvas apps use the time zone of the browser or device, but model-driven apps use the user's setting in Dataverse. These settings typically match, but results will differ if these settings differ.
 
-Use the [**DateAdd**](function-dateadd-datediff.md) and [**TimeZoneInformation**](function-dateadd-datediff.md) functions to convert local time to UTC and back again.  See the examples at the end of the documentation for these functions.
+Use the [**DateAdd**](function-dateadd-datediff.md) and [**TimeZoneInformation**](function-dateadd-datediff.md) functions to convert local time to UTC and back again. See the examples at the end of the documentation for these functions.
 
 ### Numeric equivalents
 
@@ -226,16 +226,16 @@ Because every date/time value is held in UTC, the formula **Value( Date( 1970, 1
 
 Returning to our example from above:
 
-| Date/time type | Value stored in the database | Value displayed and entered 7 hours west of UTC | **Value** function returns |
-|--------------------------|------------------------------|------------------------------|
-| **User local** | Sunday,&nbsp;May&nbsp;19,&nbsp;2019<br>4:00 AM | Saturday,&nbsp;May&nbsp;18,&nbsp;2019<br>9:00 PM | 1,558,238,400,000<br> (Sunday,&nbsp;May&nbsp;19,&nbsp;2019<br>4:00 AM UTC) |
-| **Time zone independent** | Sunday,&nbsp;May&nbsp;19,&nbsp;2019<br>4:00 AM | Sunday,&nbsp;May&nbsp;19,&nbsp;2019<br>4:00 AM |1,558,263,600,000<br> (Sunday,&nbsp;May&nbsp;19,&nbsp;2019<br>11:00 AM UTC) |
+| Date/time type            | Value stored in the database                   | Value displayed and entered 7 hours west of UTC  | **Value** function returns                                                  |
+| ------------------------- | ---------------------------------------------- | ------------------------------------------------ | --------------------------------------------------------------------------- |
+| **User local**            | Sunday,&nbsp;May&nbsp;19,&nbsp;2019<br>4:00 AM | Saturday,&nbsp;May&nbsp;18,&nbsp;2019<br>9:00 PM | 1,558,238,400,000<br> (Sunday,&nbsp;May&nbsp;19,&nbsp;2019<br>4:00 AM UTC)  |
+| **Time zone independent** | Sunday,&nbsp;May&nbsp;19,&nbsp;2019<br>4:00 AM | Sunday,&nbsp;May&nbsp;19,&nbsp;2019<br>4:00 AM   | 1,558,263,600,000<br> (Sunday,&nbsp;May&nbsp;19,&nbsp;2019<br>11:00 AM UTC) |
 
 ### Converting Unix times
 
 Unix times reflect the number of seconds since January 1, 1970 00:00:00 UTC. Because canvas apps use milliseconds instead of seconds, you can convert between the two by multiplying or dividing by 1,000.
 
-For example, Unix time shows September 9, 2001, at 01:46:40 UTC as 1,000,000,000. To show that date/time value in a canvas app, multiply that number by 1,000 to convert it to milliseconds, and then use it in a [**Text**](function-text.md) function. The formula **Text( 1000000000 * 1000, DateTimeFormat.UTC )** returns the string **2001-09-09T01:46:40.000Z**.
+For example, Unix time shows September 9, 2001, at 01:46:40 UTC as 1,000,000,000. To show that date/time value in a canvas app, multiply that number by 1,000 to convert it to milliseconds, and then use it in a [**Text**](function-text.md) function. The formula **Text( 1000000000 \* 1000, DateTimeFormat.UTC )** returns the string **2001-09-09T01:46:40.000Z**.
 
 However, that function returns **Saturday, September 8, 2001 18:46:40** if you use the **DateTimeFormat.LongDateTime24** format in a time zone that's -7 hours offset from UTC (7 hours west of UTC). This result shows the **DateTime** value correctly based on the local time zone.
 
@@ -254,7 +254,7 @@ Canvas apps use the included time-zone information in **Datetimeoffset** fields 
 Canvas apps read and write values of the [**Time**](/sql/t-sql/data-types/time-transact-sql) data type in SQL Server as text strings in the [ISO 8601 duration format](https://en.wikipedia.org/wiki/ISO_8601#Durations). For example, you must parse this string format and use the [**Time**](function-date-time.md) function to convert the text string **"PT2H1M39S"** to a **Time** value:
 
 ```powerapps-dot
-With( 
+With(
     Match( "PT2H1M39S", "PT(?:(?<hours>\d+)H)?(?:(?<minutes>\d+)M)?(?:(?<seconds>\d+)S)?" ),
     Time( Value( hours ), Value( minutes ), Value( seconds ) )
 )
@@ -264,7 +264,7 @@ With(
 
 ### Mixing date and time information
 
-**Date**, **Time**, and **DateTime** have different names, but they all hold the same information about dates and times. 
+**Date**, **Time**, and **DateTime** have different names, but they all hold the same information about dates and times.
 
 A **Date** value can include time information with it, which is usually midnight. A **Time** value can carry date information, which is usually January 1, 1970. Dataverse also stores time information with a **Date Only** field but shows only the date information by default. Similarly, canvas apps sometimes distinguish between these data types to determine default formats and controls.
 
@@ -288,13 +288,12 @@ But you can use this formula:
 
 For global choices (which tables share), the name of the option-set enumeration matches the name of the global choice. For local choices (which are scoped to a table), the name might contain the name of the table. This behavior avoids conflicts if multiple tables have choices that have the same name. For example, the **Accounts** table might have an **OrderStatus** choice, and its name might be **OrderStatus (Accounts)**. That name contains one or more spaces and parentheses, so you must surround it with single quotation marks if you reference it in a formula.
 
-In addition, two-option values can also behave as boolean values. For example, a two-option value named **TaxStatus** might have the labels **Taxable** and **Non-Taxable**, which correspond to *true* and *false* respectively. To demonstrate, you can use this formula:
+In addition, two-option values can also behave as boolean values. For example, a two-option value named **TaxStatus** might have the labels **Taxable** and **Non-Taxable**, which correspond to _true_ and _false_ respectively. To demonstrate, you can use this formula:
 
 `If( ThisItem.Taxable = TaxStatus.Taxable, ...`
 
 You can also use this equivalent formula:
 
 `If( ThisItem.Taxable, ...`
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
