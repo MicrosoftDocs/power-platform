@@ -1,7 +1,7 @@
 ---
 title: "Integrate with QnA Maker"
 description: "Use an existing QnA Maker knowledge base as content in your fallback topic."
-keywords: ""
+keywords: "qna maker, fallback, knowledge base, question, answer, faq"
 ms.date: 06/30/2022
 
 ms.topic: article
@@ -18,10 +18,10 @@ ms.collection: virtual-agent
 
 ## Prerequisites
 
-- [A Power Virtual Agents bot](authoring-first-bot.md)
-- [Configure a fallback topic](authoring-system-fallback-topic.md)
-- [A QnA Maker knowledge base](/azure/cognitive-services/qnamaker/quickstarts/create-publish-knowledge-base)
-- [Automate chatbot actions with flows](advanced-flow.md)
+- [A Power Virtual Agents bot](authoring-first-bot.md).
+- [Configure a fallback topic](authoring-system-fallback-topic.md).
+- [A QnA Maker knowledge base](/azure/cognitive-services/qnamaker/quickstarts/create-publish-knowledge-base).
+- [Automate chatbot actions with flows](advanced-flow.md).
 
 ## Use QnA Maker in fallback topic
 
