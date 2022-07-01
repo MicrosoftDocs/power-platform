@@ -61,8 +61,14 @@
         "**.*": [ "Power Apps", "Power Automate", "Power Platform" ]
       },
       "ms.service": {
-        "**.*": "power-platform",
-        "power-fx/reference/**.*": "powerapps"
+        "**.*": "power-platform"        
+      },
+      "ms.subservice": {
+        "power-fx/**.*": "power-fx",
+        "guidance/**.*": "guidance",
+        "alm/**.*": "alm",
+        "admin/**.*": "admin",
+        "developer/**.*": "developer"
       }
     },
     "template": [],

@@ -3,7 +3,7 @@ title: "Important changes (deprecations) coming in Power Apps and Power Automate
 description: Important changes (deprecations) coming in Power Apps and Power Automate 
 ms.date: 06/15/2022
 ms.topic: "article"
-ms.assetid: 994cc854-17f6-45d6-bc20-fcf1a3f2d6d6
+ms.subservice: admin
 searchScope:
   - "Power Platform"  
 ms.custom:
