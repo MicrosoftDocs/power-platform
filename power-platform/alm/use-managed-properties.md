@@ -23,7 +23,7 @@ You can control which of your managed solution components are customizable by us
 
 The `IsCustomizable` managed property will ensure that only a solution from the same publisher will be able to change the component.  It will only affect managed components and does not force this in the development environments where the component is still unmanaged.  The use of this managed property is intended to ensure that no other solution layer from any other publisher, and no active customizations can be done on the component once it is installed as a managed solution.
 
-The following table lists the managed properties for each solution component.  
+The following table lists some managed properties for a subset of available solution components.  
   
 |Component|Display Name|Property|  
 |---------------|------------------|--------------|  
