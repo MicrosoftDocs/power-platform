@@ -37,7 +37,7 @@ Portals are typically considered the primary path for completing administrative 
 - **PowerApps for App Makers** can be used by the makers themselves, though some actions being an overlay to administrational tasks, such as settings permissions to a Power Apps app as mentioned previously ([https://docs.microsoft.com/connectors/powerappsforappmakers/](/connectors/powerappsforappmakers/)).
 - **Power Platform for Admins** can be used to perform tasks against platform components, such as creating an environment or provisioning a Microsoft Dataverse database or creating a DLP policy for a specific environment ([https://docs.microsoft.com/connectors/powerplatformforadmins/](/connectors/powerplatformforadmins/)).
 
-Check out the Admin-in-a-day content that can be found in the GitHub repository ([https://aka.ms/powerapps/admininaday](https://aka.ms/powerapps/admininaday)) that walks you through examples via hands-on labs with step-by-step instructions. 
+Check out the Admin-in-a-day content that can be found in the GitHub repository ([https://aka.ms/adminIADApps](https://aka.ms/adminIADApps)) that walks you through examples via hands-on labs with step-by-step instructions. 
 
 The [Center of Excellence Starter Kit](../guidance/coe/starter-kit.md) offers a template implementation using the Management and Admin connectors, and comes with a Power BI dashboard that can be leveraged to gain tenant-wide insights.
 
