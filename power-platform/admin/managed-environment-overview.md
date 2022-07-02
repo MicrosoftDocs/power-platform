@@ -50,12 +50,28 @@ During the public preview the premium license requirement for applications and f
 </thead>
 <tbody>
   <tr>
-    <td width="40%"><ul><li>No Managed Environments features​</li> <br /><li>Premium and non-premium assets (apps/flows)​</li><br /><li>Users with qualifying and non-qualifying licenses</li></ul></td>
-    <td width="20%"></td>
-    <td width="40%"><ul><li>Includes Managed Environments features​ </li><br /><li>All low code assets (apps/flows) become premium ​</li><br /> <li>Users must have a qualifying license to access the assets </li></ul> </td>
+    <td width="45%"><ul><li>No Managed Environments features​</li> <br /><li>Premium and non-premium assets (apps/flows)​</li><br /><li>Users with qualifying and non-qualifying licenses</li></ul></td>
+    <td width="10%"></td>
+    <td width="45%"><ul><li>Includes Managed Environments features​ </li><br /><li>All low code assets (apps/flows) become premium ​</li><br /> <li>Users must have a qualifying license to access the assets </li></ul> </td>
   </tr>
 </tbody>
 </table>
+
+<table>
+<thead>
+  <tr>
+    <th colspan="3"><img src="media/managed-environment-licensing.png" alt="Standard and Managed Enviroments"></img></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td><ul><li>No Managed Environments features​</li> <br /><li>Premium and non-premium assets (apps/flows)​</li><br /><li>Users with qualifying and non-qualifying licenses</li></ul></td>
+    <td></td>
+    <td><ul><li>Includes Managed Environments features​ </li><br /><li>All low code assets (apps/flows) become premium ​</li><br /> <li>Users must have a qualifying license to access the assets </li></ul> </td>
+  </tr>
+</tbody>
+</table>
+
 
 :::image type="content" source="media/managed-environment-licensing.png" alt-text="Non-managed environments" border="false"::: 
 
