@@ -45,7 +45,7 @@ During the public preview the premium license requirement for applications and f
 <table style="width:100%">
 <thead>
   <tr>
-    <th colspan="3">:::image type="content" source="media/managed-environment-licensing.png" alt-text="Non-managed environments" border="false"::: </th>
+    <th colspan="3"><img src="media/managed-environment-licensing.png" alt="Standard and Managed Enviroments"></img></th>
   </tr>
 </thead>
 <tbody>
