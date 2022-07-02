@@ -75,9 +75,18 @@ During the public preview the premium license requirement for applications and f
 
 :::image type="content" source="media/managed-environment-licensing.png" alt-text="Non-managed environments" border="false"::: 
 
-|  | | |
-|---------|---------|---------|
-|<ul><li>No Managed Environments features​</li> <br /><li>Premium and non-premium assets (apps/flows)​</li><br /><li>Users with qualifying and non-qualifying licenses</li></ul>     |         | <ul><li>Includes Managed Environments features​ </li><br /><li>All low code assets (apps/flows) become premium ​</li><br /> <li>Users must have a qualifying license to access the assets </li></ul>       |
+**Standard environments**
+- No Managed Environments features​
+- Premium and non-premium assets (apps/flows)
+- Users with qualifying and non-qualifying licenses
+
+**Managed Environments**
+- Includes Managed Environments features​
+- All low code assets (apps/flows) become premium
+- Users must have a qualifying license to access the assets
+
+
+
 
 
 |  | | |
