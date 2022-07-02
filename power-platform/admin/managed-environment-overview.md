@@ -42,38 +42,7 @@ Managed Environments represents a value-add on top of  existing premium Power Pl
 
 During the public preview the premium license requirement for applications and flows within a managed environment is not enforced. 
 
-<table style="width:100%">
-<thead>
-  <tr>
-    <th colspan="3"><img src="media/managed-environment-licensing.png" alt="Standard and Managed Enviroments"></img></th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td width="45%"><ul><li>No Managed Environments features​</li> <br /><li>Premium and non-premium assets (apps/flows)​</li><br /><li>Users with qualifying and non-qualifying licenses</li></ul></td>
-    <td width="10%"></td>
-    <td width="45%"><ul><li>Includes Managed Environments features​ </li><br /><li>All low code assets (apps/flows) become premium ​</li><br /> <li>Users must have a qualifying license to access the assets </li></ul> </td>
-  </tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-  <tr>
-    <th colspan="3"><img src="media/managed-environment-licensing.png" alt="Standard and Managed Enviroments"></img></th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td><ul><li>No Managed Environments features​</li> <br /><li>Premium and non-premium assets (apps/flows)​</li><br /><li>Users with qualifying and non-qualifying licenses</li></ul></td>
-    <td></td>
-    <td><ul><li>Includes Managed Environments features​ </li><br /><li>All low code assets (apps/flows) become premium ​</li><br /> <li>Users must have a qualifying license to access the assets </li></ul> </td>
-  </tr>
-</tbody>
-</table>
-
-
-:::image type="content" source="media/managed-environment-licensing.png" alt-text="Non-managed environments" border="false"::: 
+:::image type="content" source="media/managed-environment-licensing.png" alt-text="Standard and Managed Environments" border="false"::: 
 
 **Standard environments**
 - No Managed Environments features​
@@ -84,15 +53,6 @@ During the public preview the premium license requirement for applications and f
 - Includes Managed Environments features​
 - All low code assets (apps/flows) become premium
 - Users must have a qualifying license to access the assets
-
-
-
-
-
-|  | | |
-|---------|---------|---------|
-|:::image type="content" source="media/non-managed-environment-left.png" alt-text="Non-managed environments" border="false":::     | :::image type="content" source="media/managed-environment-arrow.png" alt-text="arrow" border="false":::        | :::image type="content" source="media/managed-environment-right.png" alt-text="managed environments" border="false":::        |
-|<ul><li>No Managed Environments features​</li> <br /><li>Premium and non-premium assets (apps/flows)​</li><br /><li>Users with qualifying and non-qualifying licenses</li></ul>     |         | <ul><li>Includes Managed Environments features​ </li><br /><li>All low code assets (apps/flows) become premium ​</li><br /> <li>Users must have a qualifying license to access the assets </li></ul>       |
 
 ### See also  
 [Enable Managed Environments](managed-environment-enable.md) <br />
