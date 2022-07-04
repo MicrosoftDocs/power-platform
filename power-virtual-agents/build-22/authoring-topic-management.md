@@ -27,16 +27,16 @@ There are a number of ways you can manage your topics. Power Virtual Agents incl
 
 ## Topic errors
 
-When you save a topic, it notifies you if there are errors or warnings. Warnings won't stop the bot from working, but they may cause individual topics not to work as expected, so you should fix them when you see them.
+When you save a topic, Power Virtual Agents notifies you if there are errors or warnings. Warnings won't stop the bot from working, but they may cause individual topics not to work as expected, so you should fix them when you see them.
 
-Errors will prevent the bot from working and must be fixed before publishing your bot.
+Errors will prevent the bot from working and must be fixed before you can publish your bot.
 
 :::image type="content" source="media/authoring-topic-management/topics-errors-save.png" alt-text="The message indicates you have errors you should fix.":::
 
 You can see the error state of a topic on the Topics page.
 
 > [!NOTE]
-> Unlike warnings, the Topics page only shows errors as they will stop your bot from working.
+> Unlike warnings, the Topics page only shows errors because they will stop your bot from working.
 
 :::image type="content" source="media/authoring-topic-management/topics-errors.png" alt-text="The topics page identifies the number of errors in your topic.":::
 
@@ -60,16 +60,15 @@ There are four types of errors that appear in the topic checker and the authorin
 
 Topics can have a status of **On** or **Off**. This refers to their ability to be used or triggered in a bot conversation.
 
-When a topic is **On**, it will trigger as expected, either due to its trigger phrases or when it is redirected from another topic. The majority of your topics are likely to be in the **On** state.
+When a topic is **On**, it will trigger as expected, either as a result of its trigger phrases or when it is redirected from another topic. The majority of your topics are likely to be in the **On** state.
 
 When a topic is **Off**, it will not trigger at all. This means that if its trigger phrases are used in a bot conversation, it will not trigger, just as if the topic doesn't exist. An **Off** topic will also not be redirected to, even if another topic has specified that it should be.
 
-When a bot is published, it will publish all topics (**On** or **Off**), but the **Off** topics will not trigger.
-
+When you publish your bot, all topics are published whether they're **On or Off**. Topics that are **Off** won't trigger, however.
 > [!TIP]
 > Turning a topic to **Off** allows you to work on a particular topic and leave it in a draft state while publishing changes to other topics that are ready to go live.  
 >
-> Leave the topic you are still working on as **Off** before publishing the bot.
+> Leave the topic that you are still working on as **Off** before publishing the bot.
 
 You can change this with the toggle in the **Status** column on the Topics page.
 
@@ -88,12 +87,12 @@ On the Topics page, select the menu icon on a topic's name and then **Make a cop
 
 :::image type="content" source="media/authoring-topic-management/topics-menu-icon.png" alt-text="Make a copy from the menu icon." border="false":::
 
-This option duplicates of the selected topic with *(Copy)* added to the name. All of the topic content - such as the description, trigger phrases, and the entire conversation - is copied over to the new topic.
+This option duplicates the selected topic with *(Copy)* added to the name. All of the topic content - such as the description, trigger phrases, and the entire conversation - is copied over to the new topic.
 
-A copied topic has an **Off** status by default to avoid confusion on which topic will trigger since the trigger phrases are the same as the original topic.
+A copied topic is **Off** by default to avoid confusion with the original topic, which has the same trigger phrases.
 
 Once you are done editing the new topic, you can turn it **On** to [test it in the Test bot](authoring-test-bot.md) and, when ready, publish the new topic.
 
-There is no limit to the number of times you can copy a topic. A number will be added to the name and, each topic will have its own internal ID.
+There is no limit to the number of times you can copy a topic. A number will be added to the name and each topic will have its own internal ID.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
