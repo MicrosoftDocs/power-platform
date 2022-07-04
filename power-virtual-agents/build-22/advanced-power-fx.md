@@ -73,7 +73,7 @@ In this example, a Power Fx expression is used to convert the user's name to upp
 
 ## Use Power Fx as a condition
 
-To evaluate more complex expressions, configure Condition nodes to use Power Fx formulas.
+To evaluate more complex expressions, set up Condition nodes to use Power Fx formulas.
 
 In this example, the bot will determine if a booking date qualifies for a discount. To do this, it checks if the booking date provided by the user is 14 days or more from the current date.
 
