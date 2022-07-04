@@ -52,9 +52,9 @@ This sample shows you how to create a simple topic with multiple text variation 
 
 This sample shows you how to create a simple question with an image and quick reply that identifies an [entity](advanced-entities-slot-filling.md) and stores it as [a variable](authoring-variables.md), a condition, and a redirect to the [next sample topic](#sample-3---set-variable-with-function).
 
-When you use entities in your topic, the bot identifies key information from user responses and automatically fills in that information into your variables. A variable is a name for an item used later in the topic flow.
+When you use entities in your topic, the bot identifies key information from user responses and automatically fills in that information into your variables. A variable is a name for an item that will be used later in the topic flow.
 
-In this sample, the bot uses the State entity to recognize any US state the user enters and stores it as the `state` variable. This variable is used in the condition, to determine which shipping message to send the user. The topic ends by redirecting to the next sample topic.
+In this sample, the bot uses the State entity to recognize any US state the user enters and stores it as the `state` variable. This variable is used in the condition to determine which shipping message to send the user. The topic ends by redirecting to the next sample topic.
 
 ### Sample 3 - Set variable with function
 
