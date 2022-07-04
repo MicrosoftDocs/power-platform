@@ -24,7 +24,7 @@ In Power Virtual Agents, a topic defines how a bot conversation plays out.
 
 You can [customize provided templates](authoring-template-topics.md), create topics from scratch, or get suggestions from existing help sites to author topics.
 
-A topic has _trigger phrases_ and _conversation nodes_. Trigger phrases are phrases, keywords, and questions that a user is likely to type related to a specific issue. Conversation nodes define how a bot should respond to a trigger phrase and what it should do.
+A topic has _trigger phrases_ and _conversation nodes_. Trigger phrases are phrases, keywords, and questions that a user is likely to type that are related to a specific issue. Conversation nodes define how a bot should respond to a trigger phrase and what it should do.
 
 The AI uses natural language understanding (NLU) to parse what a customer types and find the most appropriate trigger phrase or node.
 
@@ -34,7 +34,7 @@ The **Test bot** pane shows how the bot conversation plays out at every step. Yo
 
 ## Use system and sample topics
 
-When you create a bot, it creates several topics for you.
+When you create a bot, Power Virtual Agents creates several topics for you.
 
 :::image type="content" source="media/authoring-template-topics/template-list.png" alt-text="Screenshot of the Topics list showing sample topics and system topics.":::
 
@@ -50,7 +50,7 @@ These automatically created topics fall into two categories:
 
 ## Create a topic
 
-1. In the left pane, select Topics and select **+New Topic** to create a new topic.
+1. In the left pane, select Topics and then select **+New Topic** to create a new topic.
 
    :::image type="content" source="media/authoring-create-edit-topics/topics-menu.png" alt-text="Screenshot of the Power Virtual Agents navigation pane, highlighting Topics.":::  
 
@@ -74,7 +74,7 @@ These automatically created topics fall into two categories:
 
     The bot uses the **Display name** when it needs to know which topic the person is asking about.
 
-    The **Description** is not visible to users. It is use to describe the purpose of the topic to yourself and other bot makers.
+    The **Description** is never shown to users. Use it to describe the purpose of the topic to yourself and other bot makers.
 
     :::image type="content" source="media/authoring-create-edit-topics/details-pane.png" alt-text="Screenshot of the topic details pane showing Name, Display name, and Description.":::
 
@@ -86,13 +86,13 @@ These automatically created topics fall into two categories:
 
 ## Design the topic's conversation path
 
-1. Select **Topics** in the left pane and select the topic you want to edit.
+1. Select **Topics** in the left pane and then select the topic you want to edit.
 
     Power Virtual Agents opens the topic in the authoring canvas and displays the topic's trigger phrases. The authoring canvas is where you define the conversation path between a customer and the bot.
 
     For existing or system topics, several nodes are created automatically. You can edit these nodes just as you would edit other nodes.
 
-    When you create a new topic, it inserts a **Trigger phrases** node and a blank **Message** node for you.
+    When you create a new topic, a **Trigger phrases** node and a blank **Message** node are inserted for you
 
 1. To add a node, select the plus (**+**) icon on the line or branch between or after nodes.
 
@@ -283,7 +283,7 @@ In this example, you'll copy and paste YAML into the code editor to quickly add 
 
 1. On the topic list, create a **New topic**.
 
-1. Select the three dots icon then select **Open code editor**
+1. Select the three dots icon and then select **Open code editor**
 
     :::image type="content" source="media/authoring-create-edit-topics/code-editor-open.png" alt-text="Screenshot of how to open the code editor.":::
 
@@ -366,7 +366,7 @@ In this example, you'll copy and paste YAML into the code editor to quickly add 
 
 ## Test and publish your bot
 
-[Test your bot](authoring-test-bot.md) when you make changes to your topics, to ensure that everything is working as expected.
+[Test your bot](authoring-test-bot.md) when you make changes to your topics, to make sure that everything is working as expected.
 
 After you've designed and tested your bot, [publish it to the web, mobile or native apps, or Microsoft Bot Framework channels](publication-fundamentals-publish-channels.md).
 
