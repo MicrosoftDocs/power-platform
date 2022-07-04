@@ -18,7 +18,7 @@ ms.collection: virtual-agent
 
 [!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
 
-Save customers' responses in a bot conversation to variables and reuse them later in the conversation. Or use variables to create logical expressions that dynamically route the customer down different conversation paths.
+Save customers' responses in a bot conversation to variables and reuse them later in the conversation. Or, use variables to create logical expressions that dynamically route the customer down different conversation paths.
 
 For example, save a customer's name in a variable called `UserName`, and the bot can address the customer by name as the conversation continues.
 
@@ -26,7 +26,7 @@ You can also pass variables to [Power Automate](advanced-flow.md) and [Bot Frame
 
 ## Variable types
 
-A variable is associated with a **type**. The type determines what values the variable can contain and the operators you can use when you construct a logical expression with the corresponding variable.
+A variable is associated with a **type**. The type determines what values the variable can contain and the operators that you can use when you construct a logical expression with the corresponding variable.
 
 <!-- best viewed without wordwrap -->
 | Type     | Description                                                                                                           |
@@ -86,7 +86,7 @@ Power Virtual Agents uses [entities](advanced-entities-slot-filling.md) to ident
 
 Variables can be created in any node that prompts you to select a variable, such as the **Set Variable Value** node.
 
-1. Select **+** to add a node and select **Set a variable value**.
+1. Select **+** to add a node and then select **Set a variable value**.
 
 1. In the **Set variable** box, select the **>** arrow.
 
@@ -102,7 +102,7 @@ A new variable will be created with an appropriate type for its usage. Use the [
 
 Typically you'll use a [question node](authoring-create-edit-topics.md#ask-a-question) to save user input to a variable, but there may be situations where you want to set the value manually.
 
-1. To assign a value to a [variable](authoring-variables.md), select **+** to add a node and select **Set a variable value**.
+1. To assign a value to a [variable](authoring-variables.md), select **+** to add a node and then select **Set a variable value**.
 
 1. For **Set variable**, choose or create a [new variable](#create-a-variable).
 
@@ -140,7 +140,7 @@ Some system variables are hidden from the variable context menu and must be acce
 
 ## Use literal values
 
-Instead of selecting a variable from the menu, you can type a literal value into any variable input field .
+Instead of selecting a variable from the menu, you can type a literal value into any variable input field.
 
 :::image type="content" source="media/authoring-variables/set-variable-to-literal.png" alt-text="Screenshot showing the use of literal values for action inputs.":::
 
@@ -161,7 +161,7 @@ Values entered directly will always be treated as a string. To set a specific ty
 
 ## Variables pane
 
-Select **Variables** in the topic's menu bar to open the variables pane.
+To open the variables pane, in the topic's menu bar, select **Variables**.
 
 :::image type="content" source="media/authoring-variables/open-variable-button.png" alt-text="Screenshot of the variables button.":::
 
@@ -189,7 +189,7 @@ When you use a variable in an action node, if its base type matches a parameter 
 
 ## Passing variables between topics
 
-When you redirect to other topics, you can pass values into variables in the destination topic or get variables back from it. Passing variables between topics is especially useful when you already have information that the topic needs. Your users will appreciate not having to answer the question again. It's also helpful when you refactor and separate your topics into reusable components, and you want to pass variables across the topics.
+When you redirect to other topics, you can pass values into variables in the destination topic or get variables back from it. Passing variables between topics is especially useful when you already have information that the topic needs. Your users will appreciate not having to answer the question again. It's also helpful when you refactor and separate your topics into reusable components and you want to pass variables across the topics.
 
 > [!NOTE]
 > Variables of type `Custom Entity`, `Date Time`, and `Duration` can't be passed between topics.  
@@ -200,7 +200,7 @@ When a topic defines a variable (for example, by a question node), the bot asks 
 
 To receive values from other topics, set the variable's property:
 
-1. Select the variable that you want to receive values from other topics in the **Question** node.
+1. In the **Question** node, select the variable that you want to receive values from other topics.
 
 1. In the **Variables properties** pane,  under **Topic (limited scope)** select **Receive values from other topics**.
 
@@ -230,7 +230,7 @@ To receive values from other topics, set the variable's property:
 
 When a topic asks a question or obtains a variable from an action in some other way, the variable can be returned to the original topic that redirected to it.
 
-In this case, the variable also becomes part of the original topic and can be used like any other variable. This helps you construct the topic, so that information the bot obtains is available across topics, reducing the need for global variables.
+In this case, the variable also becomes part of the original topic and can be used like any other variable. This helps you construct the topic, so that information the bot obtains is available across topics reducing the need for global variables.
 
 To return a variable to the original topic, set the variable's property:
 
