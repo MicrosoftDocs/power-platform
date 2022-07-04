@@ -26,7 +26,7 @@ This quick start walks you through making a bot that uses new features and impro
 
 ## Create a bot
 
-Power Virtual Agents now has an app-level home page that isn't specific to any bot. You can create a new bot and view a list of bots you've previously created on this page.
+Power Virtual Agents now has an app-level home page that isn't specific to any bot. On this page you can create a new bot and view a list of bots that you've previously created.
 
 :::image type="content" source="media/build-2022-quickstart/new-bot1.png" alt-text="Screenshot of the app-level home page.":::
 
@@ -35,7 +35,7 @@ Power Virtual Agents now has an app-level home page that isn't specific to any b
 >
 > :::image type="content" source="media/build-2022-quickstart/go-home.png" alt-text="Screenshot of Power Virtual Agents top menu bar.":::
 
-1. In the side navigation, select **Create**, or select **Home** and select **Create a bot**.
+1. In the side navigation, select **Create**, or select **Home** and then select **Create a bot**.
 
 1. Name the bot `Reservation Bot` and select **Create**.
 
@@ -46,20 +46,20 @@ Power Virtual Agents now has an app-level home page that isn't specific to any b
 
 ## Customize the greeting topic
 
-1. In the side navigation, select **Topics**an then select the **Greeting** topic.
+1. In the side navigation, select **Topics** and then select the **Greeting** topic.
 
 1. Select the **Delete** button in the ellipsis menu and delete the existing **Message** node.
 
-1. To add a new **Message** node, select **Send a message** option in the next node menu.  Type the following greetings as [message variations](authoring-create-edit-topics.md#message-variations):
+1. To add a new **Message** node, select **Send a message** in the node menu.  Type the following greetings as [message variations](authoring-create-edit-topics.md#message-variations):
     - `Good day!`
     - `Hi there!`
     - `Hi!`
 
-1. Select the **+Add** button and paste the Image URL in the **Image** box to [Add an image card](advanced-cards.md#image-card). The image of the restaurant will help the user visually confirm that they're looking at the correct location.
+1.[Add an image card](advanced-cards.md#image-card) and provide an image of the restaurant to help the user visually confirm that they're booking at the correct location.
 
     :::image type="content" source="media/build-2022-quickstart/image-card.png" alt-text="Screenshot of speech mode toggle.":::
 
-1. Select the next node, to add a second **Message** node, and type the message `We're open 9 am to 5 pm Monday through Friday, and 10 am through 8 pm on the weekends. Please note that reservations can only be made for the next seven days.`
+1. Add a second **Message** node and add the message `We're open 9am to 5pm Monday through Friday, and 10am through 8pm on the weekends. Please note, reservations can only be made for the next 7 days.`
 
 1. Change the edit mode to **Speech**.
 
@@ -67,9 +67,9 @@ Power Virtual Agents now has an app-level home page that isn't specific to any b
 
     :::image type="content" source="media/build-2022-quickstart/message-speech-mode.png" alt-text="Screenshot of speech mode toggle.":::
 
-1. Add the message `We're open 9am to 5pm Monday through Friday, and 10am through 8pm on the weekends. <emphasis level="strong">Please note</emphasis><break strength="medium" />, reservations can only be made for the next seven days.`
+1. Add the message `We're open 9am to 5pm Monday through Friday, and 10am through 8pm on the weekends. <emphasis level="strong">Please note</emphasis><break strength="medium" />, reservations can only be made for the next 7 days.`
 
-   When the bot speaks the message over a phone call, it will emphasize on "Please note" and pause for a moment before continuing.
+   When the bot speaks the message over a phone call, it will emphasize "Please note" and pause for a moment before continuing.
 
 1. Add a third **Message** node and type the message `If you'd like, I can help you make a reservation.` to provide a call to action for the user.
 
@@ -87,7 +87,7 @@ Power Virtual Agents now has an app-level home page that isn't specific to any b
 
 1. In the side navigation, select **Topics** and then **New topic**.
 
-1. Rename the topic to Reservation
+1. Rename the topic to **Reservation**
 
 1. Add the following trigger phrases:
     - `Reserve a table`
@@ -124,7 +124,7 @@ Power Virtual Agents now has an app-level home page that isn't specific to any b
 1. Add a **Redirect** node where the two condition branches meet and choose the **End of conversation** topic.
 The **End of conversation** topic is a pre-built topic designed to check if the user is satisfied and asks them to rate their experience.
 
-1. Name the topic `Reservation` and select **Save**.
+1. Name the topic **Reservation**` and select **Save**.
 
 1. Select the **Test** button to open the test canvas.
 
