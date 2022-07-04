@@ -19,7 +19,7 @@ ms.collection: virtual-agent
 
 You can help your bot to perform an action by calling a Microsoft Power Automate flow. Flows can help you automate activities or call backend systems. For example, you can use flows with end-user authentication to retrieve information about a user after they've signed in.
 
-Your call flows from within topics as a discrete **Call an action** node. You can utilize flows that have already been created in your Power Apps environment or create a flow from within the Power Virtual Agents [authoring canvas](authoring-create-edit-topics.md).
+Your call flows from within topics as a discrete **Call an action** node. You can utilize flows that have already been created in your Power Apps environment or you cancreate a flow from within the Power Virtual Agents [authoring canvas](authoring-create-edit-topics.md).
 
 > [!IMPORTANT]
 > To use flows within Power Virtual Agents, they must meet the following requirements:
@@ -40,11 +40,11 @@ Flows typically use variables to input and output information. The variables can
 
 1. Select the plus (**+**) button below an existing node to add a new node.
 
-1. In the node selection window, select **Call an action**, and then select **Create a new flow**..
+1. In the node selection window, select **Call an action**, and then select **Create a flow**..
 
     :::image type="content" source="media/advanced-flow/UseCreateFlowOption.jpg" alt-text="Create a new Power Automate flow." border="false":::
 
-Using the **Create a new flow** option opens a starter flow template in the [Power Automate portal](https://flow.microsoft.com/) in a separate tab.
+Using the **Create a flow** option opens a starter flow template in the [Power Automate portal](https://flow.microsoft.com/) in a separate tab.
 
 :::image type="content" source="media/advanced-flow/PVAConnectorTemplate.JPG" alt-text="Power Automate flow template." border="false":::
 
@@ -92,7 +92,7 @@ The following types aren't supported:
 
 ### Input parameters
 
-To specify a flow to accept input parameters from a bot, select the **Add an input** option in the **Power Virtual Agents trigger** user interface. Then select the type a - `string`, `number`, or a `boolean`.
+To specify a flow to accept input parameters from a bot, select the **Add an input** option in the **Power Virtual Agents trigger** user interface. Then select the type (string, number, or boolean).
 
 :::image type="content" source="media/advanced-flow/PVAConnector_Inputs_1.JPG" alt-text="Power Virtual Agents trigger input types." border="false":::
 
@@ -116,7 +116,7 @@ For example, you can select **Text** and **Number** to add the following output 
 
 :::image type="content" source="media/advanced-flow/PVAConnector_Output_2.JPG" alt-text="Power Virtual Agents response outputs." border="false":::
 
-This example creates a fully functional flow that accepts two parameters, a string, and a number, and returns them to a bot as outputs.
+This example creates a fully functional flow that accepts two parameters, a string and a number, and returns them to a bot as outputs.
 
 Select **Save** to save your new flow.
 
@@ -191,7 +191,7 @@ You can rename and modify your flow on the Power Automate portal. For example, t
 
     :::image type="content" source="media/advanced-flow/AddAction.jpg" alt-text="Add flow action." border="false":::
 
-1. Enter **MSN weather** into the search box and select the **Get forecast for today** action from the list.
+1. Enter **MSN weather** into the search box, and then select the **Get forecast for today** action from the list.
 
     :::image type="content" source="media/advanced-flow/AddMSNWeather.jpg" alt-text="Add Get forecast action." border="false":::
 
@@ -199,7 +199,7 @@ You can rename and modify your flow on the Power Automate portal. For example, t
 
     :::image type="content" source="media/advanced-flow/AddLocationForMSN.jpg" alt-text="Pass flow's input parameters to MSN Weather connector as location." border="false":::
 
-1. In the response node, **Return value(s) to Power Virtual Agents** and add the output parameters that you want to return to the bot. Save your flow.
+1. In the response node **Return value(s) to Power Virtual Agents**, add the output parameters that you want to return to the bot. Save your flow.
 
     - day_summary (String)
     - location (String)
@@ -238,13 +238,13 @@ These instructions use adding weather information to a flow as an example. If yo
 
     :::image type="content" source="media/advanced-flow/TopicDialogQuestions.jpg" alt-text="Add Topic Dialog questions." border="false":::
 
-1. Select the plus (**+**) button under the question nodes to add a new node. Select **Call an action** in the node selection window,  and select the flow you created earlier called **Get weather forecast**.
+1. Select the plus (**+**) button under the question nodes to add a new node. In the node selection window, select **Call an action**, and then select the flow you created earlier called **Get weather forecast**.
 
     :::image type="content" source="media/advanced-flow/SelectFlowGetWeatherForecast.png" alt-text="Call action." border="false":::
 
 1. Map the flow input blocks to the output variables from the question nodes. **City (text)** gets its value from `Var1 (text)` and **Zipcode (number)** gets its value from `Var2 (number)`.
 
-1. Add a **Message** node under the flow's node, and enter a message that uses the flow's outputs. For example:
+1. Under the flow's node, add a **Message** node and then enter a message that uses the flow's outputs. For example:
 
     **Today's forecast for `(x)location`:`{x}day_summary`.
     Chance of rain is `{x}chance_of_rain`%**
@@ -283,7 +283,7 @@ If you've enabled [Asynchronous Response](/azure/connectors/connectors-native-ht
 
 1. In your Power Automate flow, locate the Power Virtual Agents step that returns values.
 
-1. Select the three dots, next to the flow's name, and then select **Settings**.
+1. Next to the name of the flow, select the three dots, and then select **Settings**.
 
     :::image type="content" source="media/advanced-flow/async1.png" alt-text="Open step settings.":::
 
