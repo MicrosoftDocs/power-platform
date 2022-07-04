@@ -31,7 +31,7 @@ Global variables apply during a single user session. Specify the global variable
 
 1. Create a [new variable](authoring-variables.md#create-a-variable) or [use the variables pane](authoring-variables.md#variables-pane) to open an existing variable.
 
-1. On the **Variable properties** pane, select **Bot (any topic can access)**, under **Usage**.
+1. On the **Variable properties** pane, under **Usage**, select **Bot (any topic can access)**.
 
 1. The variable name will be given a prefix string `global.`, to differentiate it from the topic-level variables. For example, the variable `UserName` is displayed as `global.UserName`.
 
@@ -44,7 +44,7 @@ Global variables apply during a single user session. Specify the global variable
 
 After you set a global variable, it will be available to all topics.
 
-When you're composing a bot message in a message node or question node, select the `{x}` button to see the global variable. Variables are sorted in alphabetical order, so you'll find that all global variables are grouped in the variable menu because they all begin with `Global.`.
+When you're composing a bot message in a message node or question node, select the `{x}` button to see the global variable. Variables are sorted in alphabetical order. Global variables are grouped together because their names all begin with "Global."
 
 :::image type="content" source="media/authoring-variables-bot/bot-variable-message.png" alt-text="Screenshot showing selection of the x variable icon to display a list of variables." border="false":::
 
@@ -52,7 +52,7 @@ When you use a condition node, a flow action node, or a skill node, you'll also 
 
 ## Manage global variables
 
-After you've created a global variable, you can see where it's first defined and what other topics are using it. This can be useful if you're working on a new bot, or having multiple variables and [complex topic branching](authoring-create-edit-topics.md#add-a-condition).
+After you've created a global variable, you can see where it's first defined and what other topics are using it. This can be useful if you're working on a new bot, or if you have multiple variables and [complex topic branching](authoring-create-edit-topics.md#add-a-condition).
 
 ### Go to the source of a global variable's definition
 
@@ -74,7 +74,7 @@ This will take you to the node in the topic where the global variable was create
 
 ## Global variable initialization
 
-If a global variable is triggered before initialization (or "filled in"), the bot will automatically trigger the part of the topic where the global variable is first defined&mdash;even when it's in a different topic&mdash;before returning to the original topic. This allows the bot to fill in all the variables without interrupting the conversation.  
+If a global variable is triggered before it has been initialized (or "filled in"), the bot will automatically trigger the part of the topic where the global variable is first defined&mdash;even when it's in a different topic&mdash;before returning to the original topic. This allows the bot to have all the variables filled in without interrupting the conversation.  
 
 For example, the customer starts the conversation on the "Appointment booking" topic, in which a global variable `global.UserName` is used. However, the `global.UserName` variable is first defined in the "Welcome" topic.
 
@@ -106,7 +106,7 @@ For example, if your site already knows a user's name, then when they bring up a
 
 1. Select any variable in the authoring canvas.
 
-1. On the **Variable properties** pane, select the checkbox **External sources can set values**, in the **Usage** section.
+1. On the **Variable properties** pane, in the **Usage** section, select the checkbox **External sources can set values**.
 
 :::image type="content" source="media/authoring-variables-bot/bot-variable-external.png" alt-text="Screenshot of the Usage section on the Variable Properties pane, with the Bot option and External sources can set values checkbox both selected":::
 
@@ -125,7 +125,7 @@ The described examples make a simple declaration for the variables. In a product
     - Your bot's URL is _https://web.powerva.microsoft.com/webchat/bots/12345_.
     - To pass in the user name when starting a bot conversation on a website, you can attach the `UserName=` query string as: _https://web.powerva.microsoft.com/webchat/bots/12345?UserName=Renata_.
 
-1. The parameter name is case-insensitive. The `username=Renata` will also work in this example.
+1. The parameter name is case-insensitive. This means `username=Renata` will also work in this example.
 
 **To add the variable to a [custom canvas](customize-default-canvas.md)**
 
@@ -149,7 +149,7 @@ The described examples make a simple declaration for the variables. In a product
         });
     ```
 
-1. Within your `<script>` section, call the `store` when you embed your bot, as in the following example where the `store` is called just above where `styleOptions` is called (you'll need to replace the `BOT_ID` with your ID):
+1. Within your `<script>` section, call the `store` when you embed your bot, as in the following example where `store` is called just above where `styleOptions` is called (you'll need to replace the `BOT_ID` with your ID):
 
     ```html
     const BOT_ID = "12345-5678";
