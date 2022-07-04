@@ -16,7 +16,7 @@ searchScope:
 
 [!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
 
-This technology preview currently doesn't support some of the existing features you're used to in Power Virtual Agents and available features have some limitations.
+This technology preview currently doesn't support some of the existing features you're used to in Power Virtual Agents, and available features have some limitations.
 
 ## Limitations of current features
 
@@ -32,7 +32,7 @@ This technology preview currently doesn't support some of the existing features 
 - Global variables that are configured to persist across sessions will not work for all channels and are specifically not supported for the [Telephony channel](publication-connect-bot-to-telephony.md).
 - Default values in multiple-choice questions don't work.
 - Passing uninitialized variables to [flows](advanced-flow.md) causes an error.
-- The bot offers support to the user only in the English language.
+- The Power Virtual Agents preview is available in English only.
 
 ## Upcoming releases
 
