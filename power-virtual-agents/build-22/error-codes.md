@@ -14,7 +14,7 @@ manager: shellyha
 
 When a bot encounters a problem during a conversation, it will send an error response.
 
-If you're a bot user, the response will contain an **error code** for the specific problem encountered which should be given to your administrator.
+If you're a bot user, the response will contain an **error code** for the specific problem that was encountered which should be given to your administrator.
 
 :::image type="content" source="media/error-codes/c2-error.png" alt-text="Bot error message displayed to users.":::
 
@@ -103,13 +103,13 @@ Common problems include, but aren't limited to:
 
 ### RedirectToDisabledDialog
 
-**Error message:** "The Dialog with Id {DialogId} is disabled in the definition. Enable the Dialog before using it."
+**Error message:** "The dialog with Id {DialogId} is disabled in the definition. Enable the dialog before using it."
 
 **Resolution:** [Re-enabled the topic](authoring-topic-management.md#topic-status) or [remove the redirect node](authoring-create-edit-topics.md#delete-nodes).  
 
 ### RedirectToNonExistentDialog
 
-**Error message:** "The Dialog with Id {DialogId} wasn't found in the definition. Check that the Dialog is present and that the Id is correct."
+**Error message:** "The dialog with Id {DialogId} wasn't found in the definition. Check that the dialog is present and that the Id is correct."
 
 **Resolution:** [Create a new topic](authoring-create-edit-topics.md#create-a-topic) to redirect to or [remove the redirect node](authoring-create-edit-topics.md#delete-nodes).
 
@@ -120,9 +120,9 @@ Common problems include, but aren't limited to:
 
 ### TelephonyHandoffInvalidPhoneNumber
 
-**Error message:** "The phone number {PhoneNumber} used in the transfer to agent activity isn't a valid phone number format. Phone number should be in international format without dashes ex: +14251231234."
+**Error message:** "The phone number {PhoneNumber} used in the transfer to agent activity isn't a valid phone number format. Phone number should be in international format without dashes; for example, +14251231234."
 
-**Resolution:** Check your [telephony configuration](publication-connect-bot-to-telephony.md) and ensure the phone number is in an international format, for example, `+14251231234`.
+**Resolution:** Check your [telephony configuration](publication-connect-bot-to-telephony.md) and ensure the phone number is in an international format, for example; `+14251231234`.
 
 ### TelephonyHandoffMissingPhoneNumber
 
