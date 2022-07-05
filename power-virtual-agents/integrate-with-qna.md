@@ -2,7 +2,7 @@
 title: "Integrate with QnA Maker"
 description: "Use an existing QnA Maker knowledge base as content in your fallback topic."
 keywords: "qna maker, fallback, knowledge base, question, answer, faq"
-ms.date: 06/30/2022
+ms.date: 07/05/2022
 
 ms.topic: article
 author: v-alarioza
@@ -13,6 +13,9 @@ ms.collection: virtual-agent
 ---
 
 # Integrate with QnA Maker
+
+> [!IMPORTANT]
+> The QnA Maker service is being retired on the 31st of March, 2025. A newer version of the question and answering capability is now available as part of [Azure Cognitive Service for Language](/azure/cognitive-services/language-service/). For question answering capabilities within the Language Service, see [question answering](/azure/cognitive-services/language-service/question-answering/overview). Starting 1st October, 2022 you won’t be able to create new QnA Maker resources. For information on migrating existing QnA Maker knowledge bases to question answering, consult the [migration guide](/azure/cognitive-services/language-service/question-answering/how-to/migrate-qnamaker).
 
 [QnA Maker](https://www.qnamaker.ai/) is a cloud-based Natural Language Processing service that allows you to create a natural conversational layer over your data. It imports your content into a knowledge base of question and answer pairs. The import process extracts information about the relationship between the parts of your structured and semi-structured content to imply relationships between the question and answer pairs.
 
