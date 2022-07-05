@@ -210,18 +210,26 @@ A Power Automate flow uses the custom connector, queries the audit log daily, an
     > [!IMPORTANT]
     > Learn how to about environment variables: [Update Environment Variables](faq.md#update-environment-variables)
 
-    Here are some example configurations for these values:
-
-    | StartTime-Interval | StartTime-Unit | TimeInterval-Interval | TimeInterval-Unit | TimeSegment-CountLimit | Expectation                                                                                                                                               |
-    |--------------------|----------------|-----------------------|-------------------|------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-    |          1         |       day      |           1           |        hour       |           60           | Will   create 24 child flows, which is within the limit of 60.<br>Each child flow will do the work to pull back 1 hour of logs from the past   24 hours |
-    |          2         |       day      |           1           |        hour       |           60           | Will   create 48 child flows, which is within the limit of 60.<br>Each child flow will do the work to pull back 1 hour of logs from the past   48 hours |
-    |          1         |       day      |           5           |       minute      |           300          | Will   create 288 child flows, which is within the limit of 300.<br>Each child flow will do the work to pull back 5 minutes of from the past 24   hours |
-    |          1         |       day      |           15          |       minute      |           100          | Will create 96 child flows, which is within the limit of 100.<br>Each child flow will do the work to pull back 15 minutes of from the past   24 hours   |
-
+   
 1. Back in the solution, turn on both the \[Child\] Admin | Sync Logs flow and the Admin | Sync Audit Logs flow.
 
    ![Turn audit log flows on.](media/coe-custom4.PNG "Turn audit log flows on")
+
+### Example configurations for environment variables
+
+Here are some example configurations for these values:
+
+   | StartTime-Interval | StartTime-Unit | TimeInterval-Interval | TimeInterval-Unit | TimeSegment-CountLimit | Expectation |
+   |--------------------|----------------|-----------------------|-------------------|------------------------|-------------|
+   | 1 | day | 1 | hour | 60 | Will create 24 child flows, which is within the limit of 60.<br>Each child flow will do the work to pull back 1 hour of logs from the past 24 hours |
+   | 2 | day | 1 | hour | 60 | Will create 48 child flows, which is within the limit of 60.<br>Each child flow will do the work to pull back 1 hour of logs from the past 48 hours |
+   | 1 | day | 5 | minute | 300 | Will create 288 child flows, which is within the limit of 300.<br>Each child flow will do the work to pull back 5 minutes of from the past 24 hours |
+   | 1 | day | 15 | minute | 100 | Will create 96 child flows, which is within the limit of 100.<br>Each child flow will do the work to pull back 15 minutes of from the past 24 hours |
+
+## How to get older data
+This system is intended to collect app launches going forward. It does not help with historical launches. <br>
+While this service cannot go back far into the past, you can load older launch data if you would like by doing so manually. <br>
+We have a helper flow used to assist with this, and a write up, in our GitHub repository. Plesae see [How to import old Audit Logs](https://github.com/microsoft/coe-starter-kit/issues/3040)
 
 ## It looks like I found a bug with the CoE Starter Kit; where should I go?
 
