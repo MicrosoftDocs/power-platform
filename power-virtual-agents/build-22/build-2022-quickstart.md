@@ -1,6 +1,6 @@
 ---
 ROBOTS: NOINDEX,NOFOLLOW
-title: "Technology preview quick start"
+title: "Technology preview quickstart"
 description: "Discover the new features introduced in the technology preview at Build."
 ms.date: 05/10/2022
 ms.topic: article
@@ -10,11 +10,11 @@ manager: shellyha
 ms.collection: virtual-agent
 ---
 
-# Quick start
+# Quickstart
 
 [!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
 
-This quick start walks you through making a bot that uses new features and improvements introduced in the technology preview at Build. We'll create a bot that helps users make a reservation at a fictional restaurant.
+This quickstart walks you through making a bot that uses new features and improvements introduced in the technology preview at Build. We'll create a bot that helps users make a reservation at a fictional restaurant.
 
 >
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4XQgu]
