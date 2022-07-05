@@ -21,7 +21,7 @@ search.app:
 > [!NOTE]
 > The ALM accelerator for Microsoft Power Platform is currently in public preview. While in preview we will be prioritizing feedback and bugs via GitHub [New issue](https://github.com/microsoft/coe-starter-kit/labels/alm-accelerator). If the issue is something in the platform all we can do is funnel feedback to the responsible product teams. For more information on the current preview status of the ALM Accelerator for Power Platform [follow this link](https://github.com/microsoft/coe-starter-kit/blob/main/CenterofExcellenceALMAccelerator/PREVIEW.md).
 
-The ALM Accelerator for Power Platform pipeline templates has a number of extension points that you can use to customize the pipelines. Using these extension points, or hooks, allow you to customize the pipelines while minimizing the noise from merge conflicts in upgrade scenarios.
+The ALM Accelerator for Power Platform pipeline templates has several extension points that you can use to customize the pipelines. Using these extension points, or hooks, allow you to customize the pipelines while minimizing the noise from merge conflicts in upgrade scenarios.
 
 ## Available extension points in ALM Accelerator for Power Platform yaml templates
 
@@ -33,7 +33,7 @@ The following table lists the extension points currently supported
 | Templates/export-Solution.yml | Solution Unpack Pre Hook  | Extension point to add customizations before the unpack solution process | Hooks/export-solution-unpack-pre-hook.yml |
 | Templates/export-Solution.yml | Manipulate Pre Hook  | Extension point to add customizations before the manipulation of solution files | Hooks/export-solution-manipulate-pre-hook.yml |
 | Templates/export-Solution.yml | Update deployment settings Pre Hook  | Extension point to add customizations before the updating the deployment settings | Hooks/export-solution-update-deploymentsettings-pre-hook.yml |
-| Templates/export-Solution.yml | Solution Commit Pre Hook  | Extension point to add customizations before the Solution source code is commit to git | Hooks/export-solution-commit-pre-hook.yml |
+| Templates/export-Solution.yml | Solution Commit Pre Hook  | Extension point to add customizations before the Solution source code is committed to git | Hooks/export-solution-commit-pre-hook.yml |
 | Templates/export-Solution.yml | Export Solution Post Hook  | Extension point to add customizations as the final step in the export solution pipeline | Hooks/export-solution-post-hook.yml |
 | Templates/build-Solution.yml | Build Solution Pre Hook  | Extension point to add customizations as the initial step in the build solution pipeline | Hooks/build-solution-pre-hook.yml |
 | Templates/build-Solution.yml | Manipulate Pre Hook  | Extension point to add customizations before the manipulation of solution files | Hooks/build-solution-manipulate-pre-hook.yml |
@@ -46,7 +46,7 @@ The following table lists the extension points currently supported
 
 ## Using extension points in ALM Accelerator for Power Platform yaml templates
 
-To use the extension points to extend the ALM Accelerator pipeline functionalities you should add you extension to either a custom YAML template in the Hooks/CustomTemplates directory or directly to the extension YAML file for the extension point you want to use.
+To use the extension points to extend the ALM Accelerator pipeline functionalities, you should add your extension to either a custom YAML template in the Hooks/CustomTemplates folder,, or directly to the extension YAML file for the extension point you want to use.
 
 The following example implements the custom template **output-environment-variables.yml** located in the **Hooks\CustomTemplates** folder in the **export-solution.yml** pipeline via the **Export Solution Pre Hook** extension point:
 
@@ -72,8 +72,8 @@ steps:
 > [!NOTE]
 > To help resolve merge conflicts when upgrading to a new release of ALM Accelerator pipeline templates we recommend the use of the [**Pull Request Merge Conflict Extension**](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.conflicts-tab) for Azure DevOps.
 
-If you make customizations to the ALM Accelerator pipeline templates in any way you will have merge conflicts when upgrading the ALM Accelerator pipeline templates to a new release.
+If you make customizations to the ALM Accelerator pipeline templates in any way, you will have merge conflicts when upgrading the ALM Accelerator pipeline templates to a new release.
 
 The extension points are implemented in a way that should make it simple to handle such merge conflicts if you use the extension points for customizations of the pipelines.
 
-When upgrading to a new release of the ALM Accelerator pipeline templates you should keep you own changes of any file in the **Hooks** folder and accept any additions to the folder.
+When upgrading to a new release of the ALM Accelerator pipeline templates, you should keep your own changes of any file in the **Hooks** folder and accept any additions to the folder.
