@@ -92,7 +92,7 @@ While testing your bot in the **Test bot** pane, you can use the **Save snapshot
 
     1. *botContent.json* contains the bot's topics and other content, including entities and variables used in the bot.
 
-Help us improve Power Virtual Agents by flagging issues with the **Flag an issue** command on the test bot pane. The **Flag an issue** command submits your conversation ID to Microsoft, which is a unique identifier that Microsoft uses to troubleshoot the issue of the conversation. Other information, such as that in the *DSAT.zip* file, is not sent when you flag an issue.
+Help us improve Power Virtual Agents by flagging issues with the **Flag an issue** command on the test bot pane. This submits your conversation ID to Microsoft, which is a unique identifier that Microsoft uses to troubleshoot the issue of the conversation. Other information, such as that in the *DSAT.zip* file, is not sent when you flag an issue.
 
 :::image type="content" source="media/authoring-test-bot/flag-issue.png" alt-text="Flag an issue.":::
 
