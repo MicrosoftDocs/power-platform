@@ -57,6 +57,7 @@ To comply with our security policy for a secure connection, your server must hav
 
 
 For Public/PROD: [PKIs in Azure | website (eng.ms)](https://eng.ms/docs/products/onecert-certificates-key-vault-and-dsms/key-vault-dsms/autorotationandecr/cadetails)
+
 |Certificate Authority  |Expiry date  |Serial Number/Thumbprint  |Download  |
 |---------|---------|---------|---------|
 |DigiCert Global Root G2     | Jan 15 2038        | 0x033af1e6a711a9a0bb2864b11d09fae5<br />DF3C24F9BFD666761B268073FE06D1CC8D4F82A4  |  PEM       |
@@ -66,6 +67,7 @@ For Public/PROD: [PKIs in Azure | website (eng.ms)](https://eng.ms/docs/products
 
 
 For Fairfax/Arlington/US Gov Cloud: [PKIs in Azure | website (eng.ms)](https://eng.ms/docs/products/onecert-certificates-key-vault-and-dsms/key-vault-dsms/autorotationandecr/cadetails)
+
 |Certificate Authority  |Expiry date  |Serial Number/Thumbprint  |Download  |
 |---------|---------|---------|---------|
 |DigiCert Global Root CA     | Nov 10, 2031      | 0x083be056904246b1a1756ac95991c74a<br />A8985D3A65E5E5C4B2D7D66D40C6DD2FB19C5436  |  PEM   |
@@ -73,6 +75,7 @@ For Fairfax/Arlington/US Gov Cloud: [PKIs in Azure | website (eng.ms)](https://e
 |DigiCert TLS Hybrid ECC SHA384 2020 CA1    | Sep 22, 2030        | 0x0a275fe704d6eecb23d5cd5b4b1a4e04<br />51E39A8BDB08878C52D6186588A0FA266A69CF28 | PEM   |
 
 For Mooncake/Gallatin/China Gov Cloud: [PKIs in Azure | website (eng.ms)](https://eng.ms/docs/products/onecert-certificates-key-vault-and-dsms/key-vault-dsms/autorotationandecr/cadetails)
+
 |Certificate Authority  |Expiry date  |Serial Number/Thumbprint  |Download  |
 |---------|---------|---------|---------|
 |DigiCert Global Root CA     | Nov 10, 2031      | 0x083be056904246b1a1756ac95991c74a<br />A8985D3A65E5E5C4B2D7D66D40C6DD2FB19C5436 |  PEM   |
