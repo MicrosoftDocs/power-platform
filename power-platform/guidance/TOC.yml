@@ -208,6 +208,8 @@
             href: coe/setup-almacceleratorpowerplatform-deployment-profiles.md
           - name: Use the ALM Accelerator for Makers (preview)
             href: coe/almaccelerator-components.md
+          - name: ALM Accelerator learning catalog     
+            href: coe/almacceleratorpowerplatform-learningcatalog.md
 
         - name: Environment management
           href: coe/env-mgmt.md
