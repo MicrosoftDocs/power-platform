@@ -27,7 +27,7 @@ The  ALM Accelerator for Power Platform  includes a canvas app that sits on top 
 
 The  ALM Accelerator for Power Platform is a complement to the ALM guidance available under the [Overview of application lifecycle management with Microsoft Power Platform](/power-platform/alm/overview-alm). It was originally developed to facilitate ALM for the CoE Starter Kit team. We are now sharing what we’ve built for our own use and open sourcing it to help you understand how you can apply ALM patterns & practices with the Power Platform. You can use the ALM Accelerator as-is, customize it to meet your requirements, or as a reference implementation to see how we’ve addressed ALM scenarios.
 
-The shortcut for this page is [https://aka.ms/AA4PPResources](https://aka.ms/AA4PPLearning).
+The shortcut for this page is [https://aka.ms/AA4PPLearning](https://aka.ms/AA4PPLearning).
 
 ## Blogs
 
