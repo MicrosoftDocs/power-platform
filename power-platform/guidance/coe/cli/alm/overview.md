@@ -96,6 +96,8 @@ For an administrator, the quick start guide should take about 30 minutes. By the
 
 1. [Update permissions for the project build service](../../setup-almacceleratorpowerplatform.md#update-permissions-for-the-project-build-service) to enable build pipelines to interact with Git repositories.
 
+1. [Update pipeline permissions to resources](../../setup-almacceleratorpowerplatform.md#setting-resource-access-permissions-for-pipelines) to allow access to required resources.
+
 1. When your makers create [development environments](./development-environments.md), run `CoE ALM maker add` to add the makers to Azure DevOps and share the ALM Accelerator for Power Platform canvas app.
 
    ```bash

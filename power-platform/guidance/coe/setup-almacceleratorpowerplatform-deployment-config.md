@@ -23,7 +23,7 @@ search.app:
 
 The ALM accelerator uses JSON formatted files for updating connection references, setting environment variables, and setting permissions for Azure AD Groups and Microsoft Dataverse teams, in addition to sharing canvas apps and updating ownership of solution components such as Power Automate flows. The instructions in this article are optional and depend on what type of components your solution pipelines deploy. For instance, if your solution contains only Dataverse tables, columns, and model-driven apps with no per-environment configuration or data needed, some of these steps might not be necessary and can be skipped. The following configuration files allow you to fully automate the deployment of your solutions and specify how to configure items that are specific to the environment to which the solution is being deployed.
 
-For an example of configuration and data deployment configuration, go to the ALMAcceleratorSampleSolution [deployment settings](https://github.com/microsoft/coe-starter-kit/blob/ALMAcceleratorSampleSolution/ALMAcceleratorSampleSolution/config/deploymentSettings.json) and [custom deployment settings](https://github.com/microsoft/coe-starter-kit/blob/ALMAcceleratorSampleSolution/ALMAcceleratorSampleSolution/config/customDeploymentSettings.json).
+For an example of configuration and data deployment configuration, go to the ALMAcceleratorSampleSolution [deployment settings](https://github.com/microsoft/coe-starter-kit/blob/main/ALMAcceleratorSampleSolution/config/deploymentSettings.json) and [custom deployment settings](https://github.com/microsoft/coe-starter-kit/blob/main/ALMAcceleratorSampleSolution/config/customDeploymentSettings.json).
 
 ## Before you start
 
