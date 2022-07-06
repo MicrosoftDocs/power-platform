@@ -20,17 +20,18 @@ search.app:
 ---
 # Pay-as-you-go meters
 
-If you're using a pay-as-you-go plan, usage of apps and any Dataverse or Microsoft Power Platform request usage that goes above the included amounts are billed against your Azure subscription using Azure meters. The Power Apps per-app meter measures the usage by app. The Microsoft Dataverse capacity add-on meter measures Dataverse usage across database, files, and logs. The Power Platform requests capacity add-on meter measures the number of API calls. As soon as you link your environment to an Azure subscription, all three meters are automatically enabled.
+If you're using a pay-as-you-go plan, usage of apps and any Dataverse or Microsoft Power Platform request usage that goes above the included amounts are billed against your Azure subscription using Azure meters. The Power Apps and Power Automate per-app meter measures the usage by app. The Microsoft Dataverse capacity add-on meter measures Dataverse usage across database, files, and logs. The Power Platform requests capacity add-on meter measures the number of API calls. As soon as you link your environment to an Azure subscription, all three meters are automatically enabled.
 
 ## How do meters work?
 
 | Meter | What is counted? | What is billed? |
 |------|--------|--------|
-| Power Apps per-app | The total number of unique monthly active users of each app and portal in a pay-as-you-go environment. </br>An active user is someone who opens an app/portal at least once in the given month. </br>Repeat access of an app/portal by a user is not counted. Users with Power Apps per-user licenses are not counted. Users with a Dynamics 365 license that provides access to per user license will not be counted.| $10 per active user/app/month |
+| Power Apps and Power Automate per-app | The total number of unique monthly active users of each app and portal in a pay-as-you-go environment. </br>An active user is someone who opens an app/portal at least once in the given month. </br>Repeat access of an app/portal by a user is not counted. Users with Power Apps and Power Automate per-user licenses are not counted. Users with a Dynamics 365 license that provides access to per user license will not be counted.| $10 per active user/app/month |
+| Power Automate flow runs (preview)| Flow runs for premium cloud flows and desktop flows. <br /> Users with Power Automate per user licenses (for example Power Automate Per User, Power Automate Per User with attended RPA) are excluded from flow run charges when using a feature within their license entitlements. <br />Flows using a Power Automate per flow license are excluded from the meter charges.  | $0.60 per flow run for Power Automate cloud flow runs and desktop flow runs (attended mode) <br /> $3.00 per flow run for Power Automate desktop flow runs (unattended mode)  |
 | Dataverse | For database storage, any usage above 1 GB per pay-as-you-go environment. </br>For file storage, any usage above 1 GB per pay-as-you-go environment. </br>If auditing is enabled, any resulting log storage usage will be counted. | For usage above 1 GB for database: $48 per GB/month</br>For usage above 1 GB for file: $2.40 per GB/month </br>For any log usage: $12 per GB/month |
-| Power Platform requests (coming soon) | Each user in a pay-as-you-go enabled environment will get a daily entitlement of Power Platform requests based on their license. With the Power Apps per-app meter, you get an entitlement of 6,000 API calls per user/app/day. This will be sufficient for most customers. For those with high-scale scenarios, any Power Platform requests above that entitlement will be counted. | 0.00004$ per request/day above the daily entitled limits |
+| Power Platform requests (coming soon) | Each user in a pay-as-you-go enabled environment will get a daily entitlement of Power Platform requests based on their license. With the Power Apps and Power Automate per-app meter, you get an entitlement of 6,000 API calls per user/app/day. This will be sufficient for most customers. For those with high-scale scenarios, any Power Platform requests above that entitlement will be counted. | 0.00004$ per request/day above the daily entitled limits |
 
-For detailed pricing information, see [Power Apps pricing.](https://powerapps.microsoft.com/pricing/)
+For detailed pricing information, see [Power Apps and Power Automate pricing.](https://powerapps.microsoft.com/pricing/)
 
 > [!NOTE]
 > In May 2022, we will release a preview of the Power Platform requests meter. During this preview we will report on usage of Power Platform requests, however, we will not bill for this usage until we reach general availability (GA) for this meter. If you link an environment to an Azure subscription, users and flows in the environment can consume more than their entitled usage without being throttled or paying for overages.
@@ -86,6 +87,45 @@ If a user has a Power Apps per-user license, the user is not counted in the mete
 > [!NOTE]
 > If an environment already has [app passes assigned](about-powerapps-perapp.md) and is enabled for pay-as-you-go, app passes are ignored and not consumed. You can reallocate those app passes to a different environment. 
 
+### Power Automate meters (preview)
+
+The Power Automate meters enable users to build and/or run premium Power Automate flows and to pay for their usage based on the number of times these flows run instead of purchasing standalone Power Automate licenses.   
+
+A flow can either run in the cloud, on a desktop with a user (attended), or on a desktop without user interaction (unattended): 
+
+- Flows that run in the cloud or attended cost $0.60 per run 
+- Flows that run unattended cost $3.00 per run  
+
+To make it easy to test and fix your flows no charges will be incurred if you are testing your flow in the designer or resubmitting failed runs.  
+
+Additionally, if you use the "Child flow" feature for cloud flows or attended flows, there will only be a single charge for the parent flow run, no charges will be incurred for child flow runs. For unattended flows, both parent and child flow runs will be charged.  
+
+#### Users and flows with standalone Power Automate licenses 
+
+Flow runs triggered by users with Power Automate per user licenses (for example Power Automate Per User, Power Automate Per User with attended RPA) are not charged provided they are using a Power Automate feature within their license entitlements.  
+
+Example: if a user with a Power Automate per user license runs a cloud flow in a pay-as-you-go environment, that flow run will not be charged as it is part of the Power Automate per user license entitlement. But, if the same user runs a flow with attended RPA, that flow run will be charged to the customer’s Azure subscription because RPA is not part of the Power Automate per user license entitlement.  
+
+If a flow is licensed with a Power Automate per flow plan, any flow runs of that flow will not be changed to the customer’s Azure subscription.  
+
+Note that when determining whether a flow run should be charged or not:  
+
+- For automated or scheduled flows, the license entitlements of the flow owner will apply.  
+- For instant and Power Apps-triggered flows, the license entitlements of the user running the flow will apply. 
+
+Note that customers cannot use the Power Automate unattended RPA add-on subscription in a pay-as-you-go environment.  
+
+Example: if an environment has Unattended bot add-on units assigned and then PAYG is enabled for that environment, every unattended flow run in the environment will be charged. Any Unattended bots add-on units are ignored and can be reassigned to other environments.  
+
+#### Flows running in the context of a Power App 
+
+Power Automate flows can either be triggered directly via a user in a Power App, or, run in the background automatically in response to automated triggers, such as a new item being added to a SharePoint list. Charges are different depending on the method: 
+
+- Flows triggered directly from a Power App will have no additional cost since by running the Power App, the user’s standalone Power Apps license or the Power Apps PAYG meter will cover their usage of Power Automate.  
+- For flows running in response to an automated trigger (owned by a user without a Power Apps or Power Automate license), you have the flexibility to choose between the following options: 
+  - Pay the normal run rates called out above -- charged $0.60 or $3.00 depending on where it runs (this in the default behavior), or, 
+  - For cloud flows only, if the flow uses the same data sources as a Power App, you can link that flow to the app using a PowerShell script that will be provided in mid-July 2022. When you link a flow to an app, usage will be covered by the user’s standalone Power Apps license or the Power Apps PAYG meter.   
+
 ### Dataverse capacity meter
 
 Dataverse pay-as-you-go meters let you pay for your usage of all three categories of Dataverse storage (database, log, and file) using an Azure subscription.
@@ -132,9 +172,9 @@ Each Power Platform license includes a large entitlement of Power Platform reque
 
 For more information on Power Platform requests and the entitlements that are included in each license, go to [Requests limits and allocations](api-request-limits-allocations.md).
 
-Power Platform request entitlements are structured as daily entitlements (requests/day). In pay-as-you-go environments, users and flows that go above their daily entitlement will be billed to the linked Azure subscription. With the Power Apps per-app meter, you get an entitlement of 6,000 API calls per user/app/day. Note that flows still need to be licensed with a base license (either Power Automate per-user, Power Automate per-flow, or Office).
+Power Platform request entitlements are structured as daily entitlements (requests/day). In pay-as-you-go environments, users and flows that go above their daily entitlement will be billed to the linked Azure subscription. With the Power Apps and Power Automate per-app meter, you get an entitlement of 6,000 API calls per user/app/day. Note that flows still need to be licensed with a base license (either Power Automate per-user, Power Automate per-flow, or Office).
 
-In the example below, User A is licensed with a Power Apps per-user license and Flow A is licensed with a Power Automate per-flow license. The number of Power Platform requests consumed by User A and Flow B are measured daily and any usage above the daily entitlement is multiplied by a $/request rate and shown in Azure Cost Management. The total amount will be summed and billed based on the customer's Azure billing cycle.
+In the example below, User A is licensed with a Power Apps and Power Automate per-user license and Flow A is licensed with a Power Automate per-flow license. The number of Power Platform requests consumed by User A and Flow B are measured daily and any usage above the daily entitlement is multiplied by a $/request rate and shown in Azure Cost Management. The total amount will be summed and billed based on the customer's Azure billing cycle.
 
 > [!NOTE]
 > The prices shown in this example are illustrative only. Your organization's pricing may vary based on your contract with Microsoft.
@@ -149,8 +189,8 @@ Measured usage *above* limits
 
 |   |Month #1  |Month #2  |Month #3  |
 |---------|---------|---------|---------|
-|**User A** <br />Power Apps per <br />user license with <br />40 K requests/day <br /> entitlement |  0 K     | 10 K        | 0 K        |
-|**Flow A** <br />Power Automate <br />per flow license <br /> with 250 K requests/day <br /> entitlement  | 0 K          |  100 K         |  50 K         |
+|**User A** <br />Power Apps and Power Automate <br />per user license with <br />40 K requests/day <br /> entitlement |  0 K     | 10 K        | 0 K        |
+|**Flow A** <br />Power Automate and Power Automate <br />per flow license <br /> with 250 K requests/day <br /> entitlement  | 0 K          |  100 K         |  50 K         |
 
 Example pricing
 

@@ -100,7 +100,29 @@ No, you can't use add-ons in a pay-as-you-go environment. Overages for both Data
 ### What storage model does the Dataverse capacity meter use?
 All environments enabled for pay-as-you-go will use the [new Dataverse storage model](capacity-storage.md)  that has three separate categories of storage usage. If a tenant is still on the [legacy storage model](legacy-capacity-storage.md), the tenant’s storage model status will not change when an environment is enabled for pay-as-you-go.
 
+### Will customers running flows in the context of a Dynamics 365 App be charged for the Power Automate pay-as-you-go meters?  
 
+Charges depend on whether a flow is in the context or out of the context of a Dynamics 365 app, and the flow user/owner’s Dynamics 365 license.  
+
+Flows that run outside the context of the Dynamics 365 application will be charged for the Power Automate pay-as-you-go meters, regardless of the flow owner/user’s Dynamics 365 license.  
+
+Flows that run in the context of the Dynamics 365 application will not be charged for the Power Automate pay-as-you-go meters. But please note the following:  
+
+During the public preview of the Power Automate pay-as-you-go meter (which starts on July 19, 2022), the following criteria will be used to establish that a flow is running in the context of a Dynamics 365 App:  
+
+If it’s an instant flow, the user running the flow has a Dynamics 365 Enterprise, Professional or Team member license.
+
+If it’s an automated or scheduled flow, the owner of the flow has a Dynamics 365 Enterprise, Professional or Team member license.
+
+These criteria will change to align with our licensing guide when we reach GA of the Power Automate pay-as-you-go meters.  
+
+### Will users Microsoft Project licenses be charged for the Power Automate pay-as-you-go meters if their flows use Dataverse?  
+
+Yes. 
+
+### Will users with legacy Flow plans (for example, Flow P1 and Flow P2) be charged for the Power Automate pay-as-you-go meters?  
+
+Yes, if their flows use any premium connectors.   
 
 
 
