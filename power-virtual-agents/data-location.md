@@ -72,7 +72,7 @@ Data will be stored in the United States if a bot author's tenant location isn't
 | South America                     | Brazil South (Sao Paulo State) &nbsp;(As there is only one region in Brazil, customer data in Brazil South may be replication to South Central US (Texas) for disaster recovery purposes) |
 | Switzerland                       | Switzerland North (Zurich), Switzerland west (Geneva)                                                                                                                                     |
 | United Kingdom                    | UK South (London), UK West (Cardiff, Durham)                                                                                                                                              |
-| United States                     | East US (Blue Ridge, VA), South Central US (Des Moines, IA), West US (Quincy, WA)                                                                                                         |
+| United States                     | East US (Virginia), South Central US (Texas), West US 2 (Washington)                                                                                                         |
 
 ## Customer data  
 
