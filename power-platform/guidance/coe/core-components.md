@@ -255,8 +255,8 @@ Additional to the above listed inventory tables, the following helper tables sup
 - **Power Platform User SR**  Gives read-only access to the resources in the custom tables.
 
 > [!NOTE]
-> These secruity roles only give permissions to the custom tables, not to the environment generally. If you would like them to see apps and flows in the environment you will need to grant them access individually to each object, or add them to another security role like System Admin or Environment Maker. <br>
-Please see [Security roles and privileges](/power-platform/admin/security-roles-privileges) to learn more about Security Roles
+> These security roles only give permissions to the custom tables, not to the environment generally. If you would like users to see apps and flows in the environment you will need to grant them access individually to each object, or add them to another security role like System Admin or Environment Maker. 
+Learn more: [Security roles and privileges](/power-platform/admin/security-roles-privileges)
 
 ### Flows
 

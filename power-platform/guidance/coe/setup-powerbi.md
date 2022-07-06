@@ -93,13 +93,17 @@ When you see *Unable to open document: The queries were authored with a newer ve
 
 ![Error message: Unable to open document .](media/pbi_error3.PNG "Error message: Unable to open document ")
 
-When you see some sign in issues, you have have issues with your data source settings being cached to the wrong user or tenant. Here are a few examples of what that might look like:
-![Error message: Unable to sign in example error.](media/pbi-signin-failure1.PNG "Error message: Unable to sign in example error")
-![Error message: Unable to sign in second example error.](media/pbi-signin-failure2.PNG "Error message: Unable to sign in second example error")
+When you see sign in issues, you may have issues with your data source settings being cached to the wrong user or tenant. Here are a few examples of what that might look like:
+![Error message: Data Source Error. The remote name could not be resolved.](media/pbi-signin-failure1.PNG "Error message: Data Source Error. The remote name could not be resolved")
+![Error message: Authorization wasn't specified.](media/pbi-signin-failure2.PNG "Error message: Authorization wasn't specified")
 
-The solution in this case is to clear the permissions by going through Data source settings 
-![Sign in fix step1.](media/pbi-signin-fix1.PNG "Sign in fix step 1")
-![Sign in fix step2.](media/pbi-signin-fix2.PNG "Sign in fix step 2")
+The solution in this case is to clear the permissions:
+
+1. Open Power BI Desktop.
+1. Select **File > Options and settings > Data source settings**.
+1. Select the data source you need to connect to (for example, https://mycoe.crm.dynamics.com) and select **Clear Permissions**.
+1. Then, try and open the Power BI template file again.
+
 ### (Optional) Configure embedded apps in the CoE dashboard
 
 The **Production_CoEDashboard_MMMYY.pbit** and **Teams_CoEDashboard_MMMYY.pbit** dashboards can be configured to use embedded apps to enable you to drive action based on insights you find. With the embedded apps, you can grant yourself access to resources, delete apps and flows, and reach out to the maker via email. You'll have to configure the Power Apps visuals in the Power BI dashboard before you can use them.

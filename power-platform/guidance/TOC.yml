@@ -155,6 +155,8 @@
           href: coe/setup-almacceleratorpowerplatform-users.md
         - name: Configuring deployment user settings and profiles
           href: coe/setup-almacceleratorpowerplatform-deployment-profiles.md
+        - name: Using the Pipeline extension points
+          href: coe/setup-almacceleratorforpowerplatform-hook-extensions.md
         - name: Set up ALM Accelerator for Makers components
           href: coe/setup-almaccelerator.md
       - name: What's next - updating the CoE Starter Kit
