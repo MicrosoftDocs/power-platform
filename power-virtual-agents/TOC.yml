@@ -98,6 +98,8 @@
          href: publication-connect-bot-to-custom-application.md
        - name: Add bot to Azure Bot Service channels
          href: publication-connect-bot-to-azure-bot-service-channels.md
+       - name: Integrate with QnA Maker
+         href: integrate-with-qna.md
        - name: Integrate with Bot Framework
          items:
           - name: Configure a skill for use in Power Virtual Agents
