@@ -83,7 +83,7 @@ The CoE Starter Kit can be used in both production environments and Dataverse fo
 | Data capacity | 2 GB | Unlimited through capacity purchases |
 | Collecting telemetry information from the audit log | No | Yes
 | Power Platform admin view to view and filter resources | Canvas app | Model-driven app |
-| Power BI Dashboard | Yes, except the [Compliance and Adoption dashboard](power-bi-compliance.md) | Yes, all dashboards |
+| Power BI Dashboard | Yes, except the [Compliance and Adoption dashboard](power-bi-compliance.md). Only DirectQuery is supported. | Yes, all dashboards |
 | Canvas apps part of core components (DLP Editor, Set App Permissions and Set Flow Permissions apps) | Yes | Yes |
 | Apps and flows part of governance components | Yes | Yes |
 | Apps and flows part of nurture components | Yes | Yes |
@@ -91,11 +91,11 @@ The CoE Starter Kit can be used in both production environments and Dataverse fo
 | Sharing the App Catalog app | Share with colleagues who have a Microsoft 365 license in Teams | Sharing requires users to have a Power Apps Per User or Per App license or for the environment to be covered with pay-as-you-go. |
 | Sharing the Training in a day app | Share with colleagues who have a Microsoft 365 license in Teams | Sharing requires users to have a Power Apps Per User or Per App license or for the environment to be covered with pay-as-you-go.|
 | Sharing the Admin - Command Center app | Sharing requires users to have a Power Apps Per User or Per App license  | Sharing requires users to have a Power Apps Per User or Per App license or for the environment to be covered with pay-as-you-go. |
-| Power BI Dashboard | Yes | Yes, using the [Dataverse](/powerapps/maker/data-platform/data-platform-powerbi-connector#connect-to-dataverse-using-the-connector) connector only |
 | Data Permissions | Team members have full access, and [pre-built table permissions](/powerapps/teams/set-perms-and-share#assign-table-permissions) can be applied to colleagues with access | Granular permissions through [Dataverse security roles](/security-roles-privileges) that can be tailored to your requirements |
 | Sharing apps | Share with colleagues who have a Microsoft 365 license in Teams | Sharing requires users to have a Power Apps Per User or Per App license or for the environment to be covered with pay-as-you-go.|
 | Accessing apps | Apps can only be accessed within Microsoft Teams | Apps can be viewed in the browser or mobile app |
 | Application Lifecycle Management | No | Yes |
+| Update Dataverse properties | Not available | Dataverse settings and values for choices can get updated |
 
 ### Create your environment
 
@@ -170,6 +170,9 @@ The content package contains various files that support different features of th
 > [Next step: Set up inventory components](setup-core-components.md)
 
 ## What's next: After installing the CoE Starter Kit
+
+>[!IMPORTANT]
+> We recommend upgrading the CoE Starter Kit solution at least **every three months**. With the fast pace of change for Microsoft Power Platform, leaving updates longer than three months could result in unexpected issues when you do update.
 
 If you have already installed the CoE Starter Kit, please check our instructions for
 

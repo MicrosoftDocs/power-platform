@@ -120,7 +120,7 @@
         href: coe/before-setup-gov.md  
       - name: Set up compliance processes
         href: coe/setup-governance-components.md 
-      - name: Set up archival processes
+      - name: Set up inactivity notifications
         href: coe/setup-archive-components.md 
       - name: Set up Microsoft Teams governance processes
         href: coe/setup-teams-components.md  
@@ -155,6 +155,8 @@
           href: coe/setup-almacceleratorpowerplatform-users.md
         - name: Configuring deployment user settings and profiles
           href: coe/setup-almacceleratorpowerplatform-deployment-profiles.md
+        - name: Using the Pipeline extension points
+          href: coe/setup-almacceleratorforpowerplatform-hook-extensions.md
         - name: Set up ALM Accelerator for Makers components
           href: coe/setup-almaccelerator.md
       - name: What's next - updating the CoE Starter Kit
@@ -208,6 +210,8 @@
             href: coe/setup-almacceleratorpowerplatform-deployment-profiles.md
           - name: Use the ALM Accelerator for Makers (preview)
             href: coe/almaccelerator-components.md
+          - name: ALM Accelerator learning catalog     
+            href: coe/almacceleratorpowerplatform-learningcatalog.md
 
         - name: Environment management
           href: coe/env-mgmt.md
