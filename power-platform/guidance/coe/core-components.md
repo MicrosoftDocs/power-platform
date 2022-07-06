@@ -89,7 +89,7 @@ The [sync flows](#flows) of the CoE Starter Kit sync your tenant resources to th
   - Publisher
   - Tier (standard/premium)
 
-- **Connection Reference** represents the linking table for the many-to-many relationships among connectors (PowerApps Connector) and cloud flows (Flows) or apps (PowerApps App).
+- **CoE Connection Reference** represents the linking table for the many-to-many relationships among connectors (PowerApps Connector) and cloud flows (Flows) or apps (PowerApps App).
 
 - **Connection Reference Identity** stores the connections for each environment including their identity
   - Environment
@@ -164,12 +164,12 @@ The [sync flows](#flows) of the CoE Starter Kit sync your tenant resources to th
   - Type (topic, table)
   - Uses flow (yes/no)
 
-- **PVA Component Flow** represents a flow triggered as part of Power Virtual Agents. The following information is available for each bot component flow:
+- **PVA Component Flow Lookup** represents a flow triggered as part of Power Virtual Agents. The following information is available for each bot component flow:
   - Name
   - ID
   - Created on/by
 
-- **RPA** represents a desktop flow. The following information is available for each desktop flow:
+- **Desktop Flow** represents a desktop flow. The following information is available for each desktop flow:
   - Display name
   - ID
   - Created on
@@ -188,6 +188,17 @@ The [sync flows](#flows) of the CoE Starter Kit sync your tenant resources to th
   - Completed On
   - Error Code
   - Error Message
+
+- **Business Process Flow** represents a business process flow. The following information is available for each BPF:
+  - Display name
+  - ID
+  - Created on
+  - Owner
+  - Modified on
+  - Type (Background, Task)
+  - State
+  - Environment
+  - Primary Entity 
 
 - **Environment Capacity** stores capacity information for an environment
   - Capacity Type (File, Database, Log)
@@ -222,6 +233,16 @@ Additional to the above listed inventory tables, the following helper tables sup
   - Flag
   - Help Link (link to documentation)
 
+- **Customized Email** holds meta-data about emails sent from flows in the Core Solution to allow for admins to tailor them without making unmanaged layers on the flows:
+  - Flow Name
+  - Action Name
+  - Subject
+  - Body
+  - CC
+  - ReplyTo
+  - Send on Behalf
+
+
 > [!NOTE]
 > To easily explore and manage data stored in Dataverse, we recommend that you install the [Microsoft Power Apps Office Add-in](https://appsource.microsoft.com/product/office/WA104380330?tab=Overview). More information: [Working with data in Dataverse using the Excel Add-in!](https://powerapps.microsoft.com/blog/cds-for-apps-excel-importexport/)
 
@@ -232,6 +253,10 @@ Additional to the above listed inventory tables, the following helper tables sup
 - **Power Platform Maker SR** Gives read and write access to the custom tables (environments, apps, and so on).
 
 - **Power Platform User SR**  Gives read-only access to the resources in the custom tables.
+
+> [!NOTE]
+> These security roles only give permissions to the custom tables, not to the environment generally. If you would like users to see apps and flows in the environment you will need to grant them access individually to each object, or add them to another security role like System Admin or Environment Maker. 
+Learn more: [Security roles and privileges](/power-platform/admin/security-roles-privileges)
 
 ### Flows
 
@@ -300,12 +325,12 @@ Use this app to:
 
 #### DLP Editor v2
 
-DLP Editor v2 is a canvas app that reads and updates data loss prevention (DLP) policies while showing a list of apps and flows that are impacted by the policy configurations.
+DLP Editor v2 is a canvas app that reads and updates data loss prevention (DLP) policies while showing a list of canvas apps and cloud flows that are impacted by the policy configurations.
 
 Use this app to:
 
 - Make changes to DLP policies.
-- See what impact each change will have.
+- See what impact each change will have on existing canvas apps and cloud flows.
 - Mitigate the risk by contacting makers.
 
 More information: [Data Loss Prevention policies](../../admin/wp-data-loss-prevention.md)
@@ -313,6 +338,9 @@ More information: [Data Loss Prevention policies](../../admin/wp-data-loss-preve
 **Permission**: Intended to be used only by admins. Power Platform Service Admin or Global Admin permission is required. Share this app with your CoE admins.
 
 ![DLP Editor.](media/dlp_new1.png "DLP Editor")
+
+> [!NOTE]
+> This app cannot check for DLP impact in other object types. However you can explore this other offering for assistance with determining DLP impact of Desktop Flows [RPA CLI](https://github.com/rpapostolis/rpa-cli).
 
 ### Set App Permissions
 
