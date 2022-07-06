@@ -7,7 +7,7 @@ ms.author: paulliew
 ms.reviewer: jimholtz
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/11/2022
+ms.date: 07/06/2022
 search.audienceType: 
   - admin
 search.app:
@@ -53,10 +53,10 @@ To comply with our security policy for a secure connection, your server must hav
    1. Test your hostname using [SSLLABS](https://www.ssllabs.com/ssltest/analyze.html), or
    2. Scan your server using [NMAP](https://nmap.org/)
 
-3. The following Root CA Certificates installed:
+3. The following Root CA Certificates installed. Install only those that correspond to your cloud environment.
 
 
-   **Microsoft PKI Root Certificate Authorities**
+   **For Public/PROD**
 
    |Certificate Authority  |Expiry date  |Serial Number/Thumbprint  |Download  |
    |---------|---------|---------|---------|
@@ -66,7 +66,7 @@ To comply with our security policy for a secure connection, your server must hav
    |Microsoft RSA Root Certificate Authority 2017   |  Jul 18, 2042       | 0x1ed397095fd8b4b347701eaabe7f45b3<br />3A5E64A3BFF8316FF0EDCCC618A906E4EAE4D74     | [PEM](https://crt.sh/?d=2565151295)     |
 
 
-   **DigiCert in Public and US Gov Cloud Certificate Authorities**
+   **For Fairfax/Arlington/US Gov Cloud**
 
    |Certificate Authority  |Expiry date  |Serial Number/Thumbprint  |Download  |
    |---------|---------|---------|---------|
@@ -74,7 +74,7 @@ To comply with our security policy for a secure connection, your server must hav
    |DigiCert SHA2 Secure Server CA     |  Sep 22, 2030       |  0x02742eaa17ca8e21c717bb1ffcfd0ca0<br />626D44E704D1CEABE3BF0D53397464AC8080142C  | [PEM](https://crt.sh/?d=3422153451)   |
    |DigiCert TLS Hybrid ECC SHA384 2020 CA1    | Sep 22, 2030        | 0x0a275fe704d6eecb23d5cd5b4b1a4e04<br />51E39A8BDB08878C52D6186588A0FA266A69CF28 | [PEM](https://crt.sh/?d=3422153452)   |
 
-   **DigiCert in China Government Cloud Certificate Authorities**
+   **For Mooncake/Gallatin/China Gov Cloud**
 
    |Certificate Authority  |Expiry date  |Serial Number/Thumbprint  |Download  |
    |---------|---------|---------|---------|
