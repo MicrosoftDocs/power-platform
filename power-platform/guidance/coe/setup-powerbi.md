@@ -35,6 +35,7 @@ You can get the CoE Power BI dashboard by downloading the CoE Starter Kit compre
 >
 > - Before setting up the Power BI dashboard, you must have installed the [CoE core components solution](setup-core-components.md).<br>
 > - Before you see data in the dashboard, the [core components solution sync flows](core-components.md#flows) will need to have completed their runs.
+> - Before you see data about app usage (ex last launched), you must have installed the [Audit Log solution](setup-auditlog.md)
 
 ## Get the environment URL
 
@@ -88,9 +89,20 @@ The *A connection was successfully established with the server, but then an erro
 
 ![Error message: A connection was successfully established with the server, but then an error occurred .](media/pbi_error2.PNG "Error message:A connection was successfully established with the server, but then an error occurred ")
 
-When you see *Unable to open document: The queries were authored with a newer version of Power BI Desktop and might not work with your version* as an error message and you are on the current version of Power BI Desktop, select **Close** to continue to setup as it will work.
+When you see *Unable to open document: The queries were authored with a newer version of Power BI Desktop and might not work with your version* as an error message and you are on the current version of Power BI Desktop, select **Close** to continue, and [setup latest version](https://www.microsoft.com/download/details.aspx?id=58494).
 
 ![Error message: Unable to open document .](media/pbi_error3.PNG "Error message: Unable to open document ")
+
+When you see sign in issues, you may have issues with your data source settings being cached to the wrong user or tenant. Here are a few examples of what that might look like:
+![Error message: Data Source Error. The remote name could not be resolved.](media/pbi-signin-failure1.PNG "Error message: Data Source Error. The remote name could not be resolved")
+![Error message: Authorization wasn't specified.](media/pbi-signin-failure2.PNG "Error message: Authorization wasn't specified")
+
+The solution in this case is to clear the permissions:
+
+1. Open Power BI Desktop.
+1. Select **File > Options and settings > Data source settings**.
+1. Select the data source you need to connect to (for example, https://mycoe.crm.dynamics.com) and select **Clear Permissions**.
+1. Then, try and open the Power BI template file again.
 
 ### (Optional) Configure embedded apps in the CoE dashboard
 
