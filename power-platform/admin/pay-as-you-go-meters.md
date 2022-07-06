@@ -20,7 +20,7 @@ search.app:
 ---
 # Pay-as-you-go meters
 
-If you're using a pay-as-you-go plan, usage of apps and any Dataverse or Microsoft Power Platform request usage that goes above the included amounts are billed against your Azure subscription using Azure meters. The Power Apps and Power Automate per-app meter measures the usage by app. The Microsoft Dataverse capacity add-on meter measures Dataverse usage across database, files, and logs. The Power Platform requests capacity add-on meter measures the number of API calls. As soon as you link your environment to an Azure subscription, all three meters are automatically enabled.
+When you choose to use pay-as-you-go, usage of Power Platform services is billed to your Azure subcription using Azure meters. The table below describes each meter and how it measures usage. Note that when you link an environment to an Azure subscription, all of these meters are automatically enabled for the environment, so any usage of Power Platform services in that environment will be billed according to the details shown in this article.
 
 ## How do meters work?
 
