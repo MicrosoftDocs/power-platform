@@ -83,7 +83,7 @@ The CoE Starter Kit can be used in both production environments and Dataverse fo
 | Data capacity | 2 GB | Unlimited through capacity purchases |
 | Collecting telemetry information from the audit log | No | Yes
 | Power Platform admin view to view and filter resources | Canvas app | Model-driven app |
-| Power BI Dashboard | Yes, except the [Compliance and Adoption dashboard](power-bi-compliance.md). And supports only Direct Query | Yes, all dashboards |
+| Power BI Dashboard | Yes, except the [Compliance and Adoption dashboard](power-bi-compliance.md). Only DirectQuery is supported. | Yes, all dashboards |
 | Canvas apps part of core components (DLP Editor, Set App Permissions and Set Flow Permissions apps) | Yes | Yes |
 | Apps and flows part of governance components | Yes | Yes |
 | Apps and flows part of nurture components | Yes | Yes |
@@ -95,7 +95,7 @@ The CoE Starter Kit can be used in both production environments and Dataverse fo
 | Sharing apps | Share with colleagues who have a Microsoft 365 license in Teams | Sharing requires users to have a Power Apps Per User or Per App license or for the environment to be covered with pay-as-you-go.|
 | Accessing apps | Apps can only be accessed within Microsoft Teams | Apps can be viewed in the browser or mobile app |
 | Application Lifecycle Management | No | Yes |
-| Update Dataverse properties | Not able to do this | Able to update things like Choices offered for Compliance and other Dataverse settings |
+| Update Dataverse properties | Not available | Dataverse settings and values for choices can get updated |
 
 ### Create your environment
 
