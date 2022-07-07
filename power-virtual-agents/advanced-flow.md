@@ -36,8 +36,6 @@ Flows are called from within topics, as a discrete **Call an action** node. You 
 >
 > - [Flow values must be returned synchronously to Power Virtual Agents](#disable-asynchronous-responses-from-flows).
 
-Flows typically use variables to input and output information. The variables can then be used in other nodes within the topic.
-
 ## Prerequisites
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
@@ -148,6 +146,30 @@ You can rename and modify your flow on the Power Automate portal. For example, t
 
     :::image type="content" source="media/advanced-flow/AddDynamicVariables.jpg" alt-text="Add dynamic variables to the flow's response." border="false":::
 
-This flow is now ready to be used in your bots.
+This flow is now ready to be [used in your bots](advanced-use-flow.md).
+
+## Disable asynchronous responses from flows
+
+Power Virtual Agents doesn't support Power Automate flows that return values [asynchronously](/power-automate/guide-staff-through-common-tasks-processes#when-to-use-workflows). When creating a new flow from within Power Virtual Agents, this behavior is disabled by default.
+
+Flows that have the Asynchronous Response feature enabled may cause an error when your bot tries to run the flow. Instead of running the flow, the bot will say, "Something unexpected happened. We're looking into it. Error code: 3000."
+
+If you've enabled [Asynchronous Response](/azure/connectors/connectors-native-http#asynchronous-request-response-behavior), you'll need to disable it for the bot to work properly when it runs the flow.
+
+<!-- At the time of writing, steps to find the async response setting (specifically in the PVA step/action) didn't exist in PA docs. If this has changed, please remove these steps and replace with the relevant link. -->
+
+### To disable Asynchronous Response
+
+1. [Locate and modify your flow](#modify-a-flow-on-the-power-automate-portal).
+
+1. In your Power Automate flow, locate the Power Virtual Agents step that returns values.
+
+1. Next to the name of the flow, select the three dots, and then select **Settings**.
+
+    :::image type="content" source="media/advanced-flow/async1.png" alt-text="Open step settings.":::
+
+1. Set **Asynchronous Response** to **Off**, and then select **Done**.
+
+    :::image type="content" source="media/advanced-flow/async2.png" alt-text="Disable Asynchronous Response.":::
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

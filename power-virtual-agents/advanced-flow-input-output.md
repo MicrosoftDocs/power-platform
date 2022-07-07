@@ -16,14 +16,18 @@ ms.collection: virtual-agent
 
 # Add input and output variables
 
-Select the version of Power Virtual Agents you're using here:
+Flows use variables as input and output parameters to pass information between Power Automate flows and Power Virtual Agents bots.
 
-> [!div class="op_single_selector"]
->
-> - [Power Virtual Agents web app](advanced-flow.md)
-> - [Power Virtual Agents app in Microsoft Teams](teams/advanced-flow-teams.md)
+A bot is only able to _receive_ up to 1 MB of data from a flow in a single action. However, there's no limit on the size of data a bot can send or how many variables a bot can pass.
 
-There's no upper limit on how many input or output parameters a Power Automate flow for a bot can have. Bots can use the following types of inputs and outputs with Power Automate flows:
+## Prerequisites
+
+- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+- [Create a flow](advanced-flow.md).
+
+## Supported parameter types
+
+Bots can use the following types of inputs and outputs with Power Automate flows:
 
 - Number
 - String
@@ -40,14 +44,6 @@ The following types are not supported:
 - List [Object]
 - List [Date]
 - List [Timestamp]
-
-> [!NOTE]
-> A bot is able to receive up to 1 MB of data from a Power Automate flow in a single action. However, there's no limit on the size of data a bot can pass to a Power Automate flow.
-
-## Prerequisites
-
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
-- [Create a flow](advanced-flow.md)
 
 ## Input parameters
 
@@ -84,5 +80,9 @@ Select **Save** to save your new flow.
 Your flow is saved to the **Default Solution** under the **Solutions** tab on the Power Automate portal.
 
 :::image type="content" source="media/advanced-flow/default-solution.png" alt-text="Power Automate flow template - Default Solution." border="false":::
+
+<!-- FIXME: array sounds too technical - database, list, ...? -->
+## Return an array of results
+<!-- FIXME: add array draft -->
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

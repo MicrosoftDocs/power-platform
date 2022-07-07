@@ -16,22 +16,15 @@ ms.collection: virtual-agent
 
 # Call a flow as an action
 
-Select the version of Power Virtual Agents you're using here:
-
-> [!div class="op_single_selector"]
->
-> - [Power Virtual Agents web app](advanced-flow.md)
-> - [Power Virtual Agents app in Microsoft Teams](teams/advanced-flow-teams.md)
-
 You can call a Power Automate flow from a bot topic using the **Call an action** node. You can then pass variables to the flow and receive flow outputs that can be used in a bot conversation.
 
-These instructions use adding weather information to a flow as an example. If you haven't already, follow the steps under the [Modify a flow on the Power Automate portal](#modify-a-flow-on-the-power-automate-portal) section in this topic to create a weather forecast flow.
+These instructions use adding weather information to a flow as an example. If you haven't already, follow the steps under the [Modify a flow on the Power Automate portal](advanced-flow.md#modify-a-flow-on-the-power-automate-portal) to create a weather forecast flow.
 
 ## Prerequisites
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
-- [Create a flow](advanced-flow.md)
-- [Add input and output variables](advanced-flow-input-output.md)
+- [Create a flow](advanced-flow.md).
+- [Add input and output variables](advanced-flow-input-output.md).
 
 ## Call a flow from within a topic
 
@@ -96,30 +89,6 @@ In the **Test bot** pane, start a conversation with the bot by typing in a trigg
 Enter your city and zip code at the prompt to get today's weather forecast from the bot.
 
 :::image type="content" source="media/advanced-flow/GetWeatherE2E.png" alt-text="Test Dialog." border="false":::
-
-## Disable asynchronous responses from flows
-
-Power Virtual Agents doesn't support Power Automate flows that return values [asynchronously](/power-automate/guide-staff-through-common-tasks-processes#when-to-use-workflows). When creating a new flow from within Power Virtual Agents, this behavior is disabled by default.
-
-Flows that have the Asynchronous Response feature enabled may cause an error when your bot tries to run the flow. Instead of running the flow, the bot will say, "Something unexpected happened. We're looking into it. Error code: 3000."
-
-If you've enabled [Asynchronous Response](/azure/connectors/connectors-native-http#asynchronous-request-response-behavior), you'll need to disable it for the bot to work properly when it runs the flow.
-
-<!-- At the time of writing, steps to find the async response setting (specifically in the PVA step/action) didn't exist in PA docs. If this has changed, please remove these steps and replace with the relevant link. -->
-
-### To disable Asynchronous Response
-
-1. [Locate and modify your flow](#modify-a-flow-on-the-power-automate-portal).
-
-1. In your Power Automate flow, locate the Power Virtual Agents step that returns values.
-
-1. Next to the name of the flow, select the three dots, and then select **Settings**.
-
-    :::image type="content" source="media/advanced-flow/async1.png" alt-text="Open step settings.":::
-
-1. Set **Asynchronous Response** to **Off**, and then select **Done**.
-
-    :::image type="content" source="media/advanced-flow/async2.png" alt-text="Disable Asynchronous Response.":::
 
 ## Troubleshoot your bot
 
