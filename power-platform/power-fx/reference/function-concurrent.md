@@ -16,6 +16,7 @@ search.app:
 contributors:
   - gregli-msft
   - tapanm-msft
+  - lezucket
 ---
 
 # Concurrent function in Power Apps
