@@ -22,7 +22,7 @@ search.app:
 ---
 # Content security policy
 
-[Content Security Policy](https://developer.mozilla.org/docs/Web/HTTP/CSP) (CSP) is currently supported in model-driven Power Apps via two organization entity attributes which control whether the CSP header is sent and, to an extent, what it contains. This setting is at the environment level, which means it would be applied to all apps in the environment once turned on. 
+[Content Security Policy](https://developer.mozilla.org/docs/Web/HTTP/CSP) (CSP) is currently supported in model-driven Power Apps via two organization entity attributes. These control whether the CSP header is sent and, to an extent, what it contains. This setting is at the environment level, which means it would be applied to all apps in the environment once turned on. 
 
 > [!NOTE]
 > CSP is currently only supported in model-driven apps.  Canvas app support will reach public preview Summer 2022.
