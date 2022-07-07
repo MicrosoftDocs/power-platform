@@ -24,7 +24,7 @@ Evaluates multiple formulas concurrently with one another.
 
 ## Description
 
-The **Concurrent** function allows multiple formulas specified within the same property to be evaluated at the same time. Normally, multiple formulas are evaluated by chaining them together with the [**;**](operators.md) (semi-colon) operator, which evaluates each formula sequentially. With the Concurrent function, the app will evaluate all formulas within a property concurrently even after using the ; operator. This concurrency will help users wait less for the same result.  
+The **Concurrent** function allows multiple formulas specified within the same property to be evaluated at the same time if they have connector or Dataverse calls. Normally, multiple formulas are evaluated by chaining them together with the [**;**](operators.md) (semi-colon) operator, which evaluates each formula sequentially. With the Concurrent function, the app will evaluate all formulas within a property concurrently even after using the ; operator. This concurrency will help users wait less for the same result.  
 
 In the [**OnStart**](/power-apps/maker/canvas-apps/controls/control-screen) property of your app, use **Concurrent** to improve performance when the app loads data. When data calls don't start until the previous calls finish, the app must wait for the sum of all request times. If data calls start at the same time, the app needs to wait only for the longest request time. Web browsers often improve performance by performing network calls concurrently.
 
