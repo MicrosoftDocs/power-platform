@@ -40,7 +40,7 @@ You can also use the **[Clear](function-clear-collect-clearcollect.md)** functio
 
 ### Delegation
 
-[!INCLUDE [delegation-no]../../includes/delegation-no.md)]
+[!INCLUDE [delegation-no](../../includes/delegation-no.md)]
 
 ## Syntax
 
@@ -226,7 +226,8 @@ Sample collection is created that you can use in the following example.
 
    ![Using the Insert tool pane to add an icon control.](media/function-remove-removeif/gallery-addicon.png)
 
-   > [!NOTE] > **Add icon** inserts a **+** icon on the left side of the gallery, replicated for each item in the gallery.
+    > [!NOTE] 
+    > **Add icon** inserts a **+** icon on the left side of the gallery, replicated for each item in the gallery.
 
 1. In the top item, move the icon to the right side of the screen.
 

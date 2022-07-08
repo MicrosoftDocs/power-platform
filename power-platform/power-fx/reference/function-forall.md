@@ -56,7 +56,7 @@ Another consideration is that **ForAll** is not delegable while other functions 
 
 ### Delegation
 
-[!INCLUDE [delegation-no-one]../../includes/delegation-no-one.md)]
+[!INCLUDE [delegation-no-one](../../includes/delegation-no-one.md)]
 
 ## Syntax
 
