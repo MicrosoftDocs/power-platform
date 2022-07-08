@@ -26,9 +26,9 @@ Summarizes [records](/power-apps/maker/canvas-apps/working-with-tables#records) 
 
 The **Distinct** function evaluates a formula across each record of a table and returns a one-column table of the results with duplicate values removed. The name of the column is **Result**.
 
-[!INCLUDE [record-scope]../../includes/record-scope.md)]
+[!INCLUDE [record-scope](../../includes/record-scope.md)]
 
-[!INCLUDE [delegation-no-one]../../includes/delegation-no-one.md)]
+[!INCLUDE [delegation-no-one](../../includes/delegation-no-one.md)]
 
 ## Syntax
 

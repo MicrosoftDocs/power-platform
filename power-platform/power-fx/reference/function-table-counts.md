@@ -42,7 +42,7 @@ You need to enable the **Enhanced delegation for Microsoft Dataverse** option in
 
    > [!div class="mx-imgBorder"] > ![Enable delegation.](media/enable-delegation-functions.png)
 
-<!--[!INCLUDE [delegation-no]../../includes/delegation-no.md)]-->
+<!--[!INCLUDE [delegation-no](../../includes/delegation-no.md)]-->
 
 > [!IMPORTANT]
 >

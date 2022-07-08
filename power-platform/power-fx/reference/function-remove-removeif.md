@@ -40,7 +40,7 @@ You can also use the **[Clear](function-clear-collect-clearcollect.md)** functio
 
 ### Delegation
 
-[!INCLUDE [delegation-no]../../includes/delegation-no.md)]
+[!INCLUDE [delegation-no](../../includes/delegation-no.md)]
 
 ## Syntax
 
