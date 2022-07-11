@@ -1,6 +1,6 @@
 ---
 title: "ALM Accelerator App Registrations - considerations when designing your Azure App Registration strategy | MicrosoftDocs"
-description: "The ALM accelerator for Microsoft Power Platform relies on Azure App Registrations to communicate with required services such as Azure DevOps, Power Platform and Power Apps Advisor service. This document discuss different approaches to designing your App Registrations for ALM Accelerator."
+description: "The ALM accelerator for Microsoft Power Platform relies on Azure App Registrations to communicate with required services such as Azure DevOps, Power Platform and Power Apps Advisor service. This document gives an overview of different approaches to designing your App Registrations for ALM Accelerator."
 author: jenschristianschroder
 manager: devkeydet
 ms.component: pa-admin
@@ -18,20 +18,20 @@ search.app:
 ---
 # ALM Accelerator App Registrations (preview)
 
-The ALM accelerator for Microsoft Power Platform relies on Azure App Registrations to communicate with required services such as Azure DevOps, Power Platform and Power Apps Advisor service. This document discuss different approaches to designing your App Registrations for ALM Accelerator.
+The ALM accelerator for Microsoft Power Platform relies on Azure App Registrations to communicate with required services such as Azure DevOps, Power Platform and Power Apps Advisor service. This document gives an overview of different approaches to designing your App Registrations for ALM Accelerator.
 
 > [!NOTE]
 > The ALM accelerator for Microsoft Power Platform is currently in public preview. While in preview we will be prioritizing feedback and bugs via GitHub [New issue](https://github.com/microsoft/coe-starter-kit/labels/alm-accelerator). If the issue is something in the platform all we can do is funnel feedback to the responsible product teams. For more information on the current preview status of the ALM Accelerator for Power Platform [follow this link](https://github.com/microsoft/coe-starter-kit/blob/main/CenterofExcellenceALMAccelerator/PREVIEW.md).
 
 ## Required API Permissions for Azure App Registrations
 
-In order for ALM Accelerator to be able to communicate with the required services, you need to configure the App Registration to be allow to use the relevant Apis.
+In order for ALM Accelerator to be able to communicate with the required services, you need to configure the App Registration to be allowed to use the relevant Apis.
 
-Requirements for communication to these services depend on the the functionality of the ALM Accelerator.
+Requirements for communication to these services depend on the functionality of the ALM Accelerator.
 
 ### Canvas App communication with Azure DevOps
 
-When you use the ALM Accelerator Canvas App to trigger an Azure DevOps pipeline or create a Pull Request in Azure DevOps Git repositories, these operations are executed via the CustomAzureDevOps custom connector. In order for the CustomAzureDevOps custom connector to communicate with Azure DevOps, the Azure App Registration used to configure the OAuth security settings in the custom connector must have the required permissions to communicate with the Azure DevOps Rest Api.
+When you use the ALM Accelerator Canvas App to trigger an Azure DevOps pipeline, or to create a Pull Request in Azure DevOps Git repositories, these operations are executed via the CustomAzureDevOps custom connector. In order for the CustomAzureDevOps custom connector to communicate with Azure DevOps, the Azure App Registration used to configure the OAuth security settings in the custom connector must have the required permissions to communicate with the Azure DevOps Rest Api.
 
 ### Azure DevOps pipeline communication with Power Platform
 
@@ -51,24 +51,24 @@ The following table shows what Api permissions that are required for the differe
 
 ## Considerations when designing your Azure App Registration strategy
 
-When designing your strategy for creating and managing Azure App Registrations for ALM Accelerator you should consider the security aspect as well as the maintenance aspect.
+When designing your strategy for creating and managing Azure App Registrations for ALM Accelerator, you should consider both the security aspect and the maintenance aspect.
 
 ### Simplicity of maintenance
 
-From a maintenance perspective you will want to have to do least amount of work to maintain your Azure App Registrations and those services that use them. One of the tasks relating maintaining Azure App Registrations is secret rotation, meaning revoking current secret and creating a new secret. You should consider that for each service where you use the Azure App Registration you need to reconfigure when a secret is rotated.
+From a maintenance perspective you'll want to have to do least amount of work to maintain your Azure App Registrations and those services that use them. One of the tasks relating maintaining Azure App Registrations is secret rotation, meaning revoking current secret and creating a new secret. You should consider that for each service where you use the Azure App Registration you need to reconfigure when a secret is rotated.
 The means the more App Registrations you use the more work is required.
 
 ### Principle of least privilege
 
-From a security perspective you will want to consider the principle of least privilege. This means any one Azure App Registration should have the least privileges required to perform it's necessary operations.
+From a security perspective you'll want to consider the principle of least privilege. This means any one Azure App Registration should have the least privileges required to perform it's necessary operations.
 
 ## Different scenarios for configuring Azure App Registrations for ALM Accelerator
 
 ### One Azure App Registration
 
-The absolute simplest strategy for creating your Azure App Registrations of ALM Accelerator is to create one Azure App Registration for all your needs.
-In doing so you can use the same Azure App Registration for the ALM Accelerator CustomAzureDevOps custom connector and all Azure DevOps service connections you need to access your power platform environments.
-While this will give you the least management it will also violate the principle of least privilege as your will have one Azure App Registration with permissions to do all required operations via the custom connector and all Azure Service Connections you have configured.
+The absolute simplest strategy for creating your Azure App Registrations for ALM Accelerator is to create one Azure App Registration for all your needs.
+This means you use the same Azure App Registration for the ALM Accelerator CustomAzureDevOps custom connector and all Azure DevOps service connections you need to access your power platform environments.
+While this will give you the least management, it will also violate the principle of least privilege, as your will have one Azure App Registration with permissions to do all required operations via the custom connector and all Azure Service Connections you have configured.
 
 | App Registration         | Api Permissions and type | Description       |
 |-------------------|-------------------|-------------------|
@@ -79,7 +79,7 @@ While this will give you the least management it will also violate the principle
 ### One Azure App Registration for accessing Azure DevOps and one Azure App Registration accessing Power Platform
 
 A more granular configuration of Azure App Registration for ALM Accelerator is to have one Azure App Registration for the CustomAzureDevOps custom connector and one for the Azure Pipelines to communicate with Power Platform environments.
-With this configuration you will have better alignment with the principle of least privilege as only the Azure App Registration used for the CustomAzureDevOps custom connector will be allowed to access the Azure DevOps Api and only the App Registrations used to connect to Power Platform will have permissions for to use the Power Platform (Dynamics CRM) Api.
+With this configuration, you will have better alignment with the principle of least privilege. In this configuration, only the Azure App Registration used for the CustomAzureDevOps custom connector 's access to access the Azure DevOps Api and only the App Registrations used to connect to Power Platform will allowed to use the Power Platform (Dynamics CRM) Api.
 
 | App Registration         | Api Permissions and type | Description       |
 |-------------------|-------------------|-------------------|
@@ -90,7 +90,7 @@ With this configuration you will have better alignment with the principle of lea
 ### One App Registration for accessing Azure DevOps and several Azure App Registrations for accessing Power Platform
 
 Even more granular configuration, with close alignment to the principle of least privilege, would be to narrow the scope of Azure App Registrations that have access to Power Platform. You can do this by creating Azure App Registrations for accessing different Power Platform environments. This approach can be as granular as having one Azure App Registration per environment you will need to access via the ALM Accelerator Azure DevOps pipelines. Or, one Azure App Registration per Power Platform project that you support via the ALM Accelerator.
-This is were you should also consider the maintenance task and ensure that you maintain a structured way of identifying which Azure App Registration is used for which environment. This will come in handy when you will be rotating the Azure App Registration secrets.
+With this configuration, you should also consider the maintenance task and ensure that you maintain a structured way of identifying which Azure App Registration is used for which environment. This will come in handy when you will be rotating the Azure App Registration secrets.
 
 The following table shows how you can create Azure App Registrations per Power Platform project to restrict Azure App Registrations to only have access to relevant Power Platform environment.
 
