@@ -2,7 +2,6 @@
 title: Microsoft Power Platform CLI canvas command| Microsoft Docs
 description: "Includes descriptions and supported parameters for the canvas command."
 keywords: Microsoft Power Platform CLI, code components, component framework, CLI
-ms.subservice:
 author: kkanakas
 ms.author: kartikka
 manager: pemikkel
