@@ -7,7 +7,7 @@ ms.author: paulliew
 ms.reviewer: jimholtz
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/06/2022
+ms.date: 07/11/2022
 search.audienceType: 
   - admin
 search.app:
@@ -54,7 +54,6 @@ To comply with our security policy for a secure connection, your server must hav
    2. Scan your server using [NMAP](https://nmap.org/)
 
 3. The following Root CA Certificates installed. Install only those that correspond to your cloud environment.
-
 
    **For Public/PROD**
 
