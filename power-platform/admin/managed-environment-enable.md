@@ -3,7 +3,7 @@ title: "Enable Managed Environments | MicrosoftDocs"
 description: Learn how to enable Managed Environments.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/01/2022
+ms.date: 07/11/2022
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: jimholtz
@@ -81,7 +81,7 @@ Set-AdminPowerAppEnvironmentGovernanceConfiguration -EnvironmentName <Environmen
 
 ## Known limitations
 1. The Managed Environments state cannot be activated on Developer environments. 
-2. In Power Platform Admin Center, Environment Admins are not allowed to activate managed environments. Environment Admins are able to see the 'Enable Managed Environment' action in the environment details page.
+2. In the Power Platform admin center, Environment Admins are not allowed to activate managed environments. Environment Admins are able to see the 'Enable Managed Environment' action in the environment details page.
 
 ### See also  
 [Managed Environments overview](managed-environment-overview.md) <br />
