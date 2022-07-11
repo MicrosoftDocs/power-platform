@@ -4,12 +4,13 @@ description: "Learn how to clean up records from AsyncOperationBase and Workflow
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 06/10/2022
-author: viveke
+author: swylezol
 ms.subservice: admin
-ms.author: vielango
+ms.author: swylezol
 ms.reviewer: jimholtz 
 contributors:
   - cpdSeattle
+  - viveke
 search.audienceType: 
   - admin
 search.app:
