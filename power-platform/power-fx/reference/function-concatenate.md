@@ -28,7 +28,7 @@ The **Concatenate** function concatenates a mix of individual strings and a sing
 
 The **Concat** function concatenates the result of a formula applied across all the [records](/power-apps/maker/canvas-apps/working-with-tables.md#records) of a table, resulting in a single string. Use this function to summarize the strings of a table, just as the **[Sum](function-aggregates.md)** function does for numbers.
 
-[!INCLUDE [record-scope]../../includes/record-scope.md)]
+[!INCLUDE [record-scope](../../includes/record-scope.md)]
 
 Use the [**Split**](function-split.md) or [**MatchAll**](function-ismatch.md) function to split a string into a table of substrings.
 
