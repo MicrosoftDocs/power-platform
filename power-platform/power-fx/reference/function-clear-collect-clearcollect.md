@@ -60,7 +60,7 @@ The **ClearCollect** function deletes all the records from a collection. And the
 
 ### Delegation
 
-[!INCLUDE [delegation-no]../../includes/delegation-no.md)]
+[!INCLUDE [delegation-no](../../includes/delegation-no.md)]
 
 ## Syntax
 

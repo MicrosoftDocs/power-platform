@@ -20,6 +20,10 @@ search.app:
 
 # Set up Dataverse for Teams environment management
 
+>[!IMPORTANT]
+>The flows supporting this processes post adaptive cards to users using the [Microsoft Teams](/connectors/teams/) connector. The ability to post adaptive cards in Teams is not available in GCC, GCC High and DoD.
+> It is important that these flows remain **turned off** in these regions as they will not work fully. If turned on, makers will never receive the request to submit a business justification via an adaptive card and the [weekly cleanup](teams-governance.md#monitoring-and-weekly-cleanup-process) will remove all Dataverse for Teams environments as none have a business justification submitted. 
+
 This article will help you to setup the Dataverse for Teams environment management components of the Governance solution. Learn more: [Microsoft Dataverse for Teams environment management](teams-governance.md)
 
 This set of functionality allows you to monitor new Dataverse for Teams environments.
