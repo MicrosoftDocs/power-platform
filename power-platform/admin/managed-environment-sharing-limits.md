@@ -39,6 +39,8 @@ In managed environments, admins can limit how broadly makers can share canvas ap
 > Sharing rules are enforced when makers try to share an app. Sharing rules don't change who an app has already been shared with.
 >
 > After sharing rules are set in the Power Platform admin center, it may take up to an hour for them to propagate and start being enforced.
+>
+> Sharing limits in Teams environments do not impact sharing to a Team when you click “publish to Teams”. However, when a maker attempts to share with individuals or groups other than the Team bound to the environment, the sharing limits are enforced. 
 
 ### See also
 
