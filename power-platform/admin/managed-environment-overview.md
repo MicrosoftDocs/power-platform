@@ -1,9 +1,9 @@
 ---
-title: "Managed Environments overview | MicrosoftDocs"
-description: Use Managed Environments to gain more visibility and control of your Dynamics 365 applications and flows, with less effort.
+title: Managed Environments overview
+description: Use Managed Environments to view and control your Dynamics 365 applications and flows with less effort.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/01/2022
+ms.date: 07/07/2022
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: jimholtz
@@ -20,50 +20,49 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Managed Environments for Power Platform overview
+# Managed Environments overview
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Managed Environments for Power Platform is a suite of capabilities that allows admins to manage Power Platform at scale with more control, less effort, and more insights. Admins can enable Managed Environments on any type of environment. There are four primary elements of Managed Environments: 
+Managed Environments is a suite of capabilities that allows admins to manage Power Platform at scale with more control, less effort, and more insights. Admins can use Managed Environments with any type of environment. [Learn how to enable Managed Environments](managed-environment-enable.md).
 
-- [Enable Managed Environments](managed-environment-enable.md)
+There are three primary elements of Managed Environments:
+
 - [Weekly digests](managed-environment-weekly-digests.md)
 - [Sharing limits](managed-environment-sharing-limits.md)
 - [Data policies](managed-environment-data-policies.md) 
 
 > [!IMPORTANT]
+>
 > - This is a preview feature.
 > - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 > - This feature is being gradually rolled out across regions and might not be available yet in your region.
 
 ## License considerations
 
-Managed Environments represents a value-add on top of  existing premium Power Platform capabilities. All applications and flows in a managed environment are premium and can be licensed using any of the Power Platform licensing options (per user, per app/flow or pay-as-you-go) or Dynamics 365 licenses that give premium usage rights. 
+Managed Environments adds value to your existing premium Power Platform capabilities. All applications and flows in a managed environment are premium. They can be licensed using any of the Power Platform licensing options (per user, per app or flow, or pay-as-you-go) or Dynamics 365 licenses that give premium usage rights. [Learn more about Power Platform licensing](pricing-billing-skus.md).
 
-During the public preview the premium license requirement for applications and flows within a managed environment is not enforced. 
+During the public preview, we are not enforcing the premium license requirement for applications and flows in a managed environment.
 
-:::image type="content" source="media/managed-environment-licensing.png" alt-text="Standard and Managed Environments" border="false"::: 
+:::image type="content" source="media/managed-environment-licensing.png" alt-text="Illustration of premium apps in a standard and a managed environment.":::
 
-**Standard environments**
-- No Managed Environments features​
-- Premium and non-premium assets (apps/flows)
-- Users with qualifying and non-qualifying licenses
+Standard environments:
 
-**Managed Environments**
-- Includes Managed Environments features​
-- All low code assets (apps/flows) become premium
-- Users must have a qualifying license to access the assets
+- No Managed Environments features​ are available.
+- Apps and flows can be either premium or non-premium.
+- Users with either qualifying or non-qualifying licenses can run apps and flows.
 
-### See also  
-[Enable Managed Environments](managed-environment-enable.md) <br />
-[Weekly digests](managed-environment-weekly-digests.md) <br />
-[Sharing limits](managed-environment-sharing-limits.md)  <br />
+Managed environments:
+
+- All Managed Environments features​ are available.
+- All apps and flows become premium.
+- Users must have a qualifying license to run apps and flows.
+
+### See also
+
+[Enable Managed Environments](managed-environment-enable.md)  
+[Weekly digests](managed-environment-weekly-digests.md)  
+[Sharing limits](managed-environment-sharing-limits.md)  
 [Data policies](managed-environment-data-policies.md)
 
-
-
-
-
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
-
-
