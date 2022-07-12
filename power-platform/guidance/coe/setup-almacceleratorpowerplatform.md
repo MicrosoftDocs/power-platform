@@ -88,7 +88,7 @@ The following steps guide you through setting up the foundations of the ALM acce
 
 Creating an app registration for the ALM accelerator is a one-time setup step to grant permissions to the app and the associated pipelines, permissions required to perform operations in Azure DevOps and Power Apps or Dataverse. The following steps show how to create a single app registration with permissions for both Dataverse and Azure DevOps. However, you might want to separate responsibilities specifically into Dataverse and Azure DevOps by creating separate app registrations.
 
-> ![NOTE]
+> [!NOTE]
 > When separating the responsibilities of Azure App registration you should consider both maintenance and security aspect. Read the [Considerations for App Registrations](almaccelerator-app-registrations.md) page to understand more.
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
