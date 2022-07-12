@@ -49,7 +49,8 @@ The following table shows what Api permissions that are required for the differe
 | Deploy Test pipelines     | Dynamics CRM - user_impersonation   | Delegated       | The Azure DevOps pipeline to deploy solutions to the Test environment needs to have permissions to use the Power Platform (Dynamics CRM) Api to do solution operations |
 | Deploy Prod pipelines     | Dynamics CRM - user_impersonation   | Delegated       | The Azure DevOps pipeline to deploy solutions to the Prod environment needs to have permissions to use the Power Platform (Dynamics CRM) Api to do solution operations |
 | Export solution pipeline     | Dynamics CRM - user_impersonation   | Delegated       | The Azure DevOps pipeline to export solutions from the Maker development environment needs to have permissions to use the Power Platform (Dynamics CRM) Api to do solution operations |
-
+| Import solution pipeline     | Dynamics CRM - user_impersonation   | Delegated       | The Azure DevOps pipeline to import solutions from Azure Git source control to the Maker development environment needs to have permissions to use the Power Platform (Dynamics CRM) Api to do solution operations |
+| Delete solution pipeline     | Dynamics CRM - user_impersonation   | Delegated       | The Azure DevOps pipeline to delete solutions in the Maker development environment needs to have permissions to use the Power Platform (Dynamics CRM) Api to do solution operations |
 
 ## Considerations when designing your Azure App Registration strategy
 
