@@ -4,7 +4,7 @@ description: Covers how to back up and restore environments
 services: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/09/2022
+ms.date: 07/12/2022
 ms.subservice: admin
 author: ChrisGarty
 ms.author: cgarty
@@ -34,7 +34,8 @@ Some backups take place without you having to do anything.
 > ![System backups.](media/system-backup.png "System backups")
 
 About **system backups**:  
-  
+
+- System backups are not counted toward capacity.  
 - Copy and restore operations can take up to 8 hours unless a lot of data, including audit data, needs to be copied or restored, in which case they could take up to 24 hours.
 - All your environments, except Trial environments (standard and subscription-based), are backed up.  
 - System backups occur continuously. The underlying technology used is Azure SQL Database. See SQL Database documentation [Automated backups](/azure/sql-database/sql-database-automated-backups) for details.
