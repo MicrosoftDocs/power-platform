@@ -5,7 +5,7 @@ author: mikepenaMS
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 07/13/2022
+ms.date: 07/25/2022
 ms.subservice: power-fx
 ms.author: mikepena
 search.audienceType:
@@ -41,7 +41,7 @@ A single **NDEFRecord** contains the following columns:
 | Text       | Text      | The text payload of the NFC tag if RTD is *TEXT*, *blank* otherwise.                       |
 | URI        | Hyperlink | The URI payload of the NFC tag if RTD is *URI*, *blank* otherwise.                         |
 
-If the NDEF record isn't supported (for example, the TNF isn't of type *Well Known*) then it will not be returned as part of the**NDEFRecords** table.
+If the NDEF record isn't supported (for example, the TNF isn't of type *Well Known*) then it will not be returned as part of the **NDEFRecords** table.
 
 Always check the payload values for *blank* using the [**IsBlank**](function-isblank-isempty.md) function before using it. You don't need to check the **RTD** and **TNF** values yourself as they must be the correct values for **Text** and **URI** to have a non-*blank* value.
 
@@ -77,8 +77,8 @@ Additional **RTD** and **TNF** values may be supported in the future. If mor
 
     ```powerapps-dot
     With(ReadNFC(),
-    Set(id, Coalesce(Identifier, "No ID"));
-    ForAll(NDEFRecords, Collect(tagRecords, {ID: id, Value: Coalesce(Text, URI)})))
+        Set(id, Coalesce(Identifier, "No ID"));
+        ForAll(NDEFRecords, Collect(tagRecords, {ID: id, Value: Coalesce(Text, URI)})))
     ```
 
     :::image type="content" source="media/function-readnfc/onselect-formula.png" alt-text="Above formula entered as the OnSelect property of the button.":::
@@ -104,7 +104,7 @@ Additional **RTD** and **TNF** values may be supported in the future. If mor
 1. Since the function `ReadNFC()` can't be used in Power Apps Studio or in a web browser, open your app on a mobile device.
 
     > [!TIP]
-    > App might take a few moments to appear on your mobile device. If you don't see the app listed, try refreshing your app list.
+    > The app might take a few moments to appear on your mobile device. If you don't see the app listed, try refreshing your app list.
 
 1. Select **Read NFC Tag** and scan a tag. Repeat the process to add multiple tags to your collection.
 
