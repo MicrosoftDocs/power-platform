@@ -336,6 +336,44 @@ Set-TenantSettings -RequestBody $settings
 
 If you specify governance error message content to appear in error messages, it will be included in the error message displayed when makers observe they don’t have permission to share apps with 'Everyone'. See [PowerShell governance error message content commands.](powerapps-powershell.md#governance-error-message-content-commands).
 
+#### Assosciate  in context flows to a Power App
+
+Assosciate flows in context of a Power App to the Power App to create a dependency between the app and flows.Click [here](https://docs.microsoft.com/en-us/power-platform/admin/power-automate-licensing/faqs#what-power-automate-capabilities-are-included-in-power-apps-licenses) to learn about in context flows.
+
+```powershell
+   Add-AdminFlowPowerAppContext -EnvironmentName <String> -FlowName <String> -AppName <String> [-ApiVersion <String>]
+    [<CommonParameters>]
+```
+EnvironmentName and FlowName can be found in the flow url:
+ - For a Non-Solution flow, the URL will look like this
+  https://preview.flow.microsoft.com/manage/environments/839eace6-59ab-4243-97ec-a5b8fcc104e7/flows/6df8ec2d-3a2b-49ef-8e91-942b8be3202t/details
+  The GUID after environments/ is the EnvironmentName and the GUID after flows/ is the FlowName
+ - For Solution flow, the URL will look like this
+  https://us.flow.microsoft.com/manage/environments/66495a1d-e34e-e330-9baf-0be559e6900b/solutions/fd140aaf-4df4-11dd-bd17-0019b9312238/flows/53d829c4-a5db-4f9f-8ed8-4fb49da69ee1/details
+  The GUID after environments/ is the EnvironmentName and the GUID after flows/ is the FlowName
+  - The AppName for canvas app can be found in Canvas app details page
+  ![image](https://user-images.githubusercontent.com/62711514/178654001-94235e7a-db95-4785-8175-a2994e0039e3.png)
+
+ - The AppName for model driven app can be found in solution explorer
+  
+![image](https://user-images.githubusercontent.com/62711514/178653658-1f0a347d-d68b-4faa-881b-5396e5c29361.png)
+
+    - To see the examples, type: "get-help Add-AdminFlowPowerAppContext -examples".
+    - For more information, type: "get-help Add-AdminFlowPowerAppContext -detailed".
+    - For technical information, type: "get-help Add-AdminFlowPowerAppContext -full".
+
+#### Remove in context flows of a Power App
+Remove the dependency between flows and a Power App with this powershell command.The Remove-AdminFlowPowerAppContext removes Powerapp context from the specific flow.
+  
+```powershell
+    Remove-AdminFlowPowerAppContext -EnvironmentName <String> -FlowName <String> -AppName <String> [-ApiVersion
+    <String>] [<CommonParameters>]
+
+     - To see the examples, type: "get-help Remove-AdminFlowPowerAppContext -examples".
+     - For more information, type: "get-help Remove-AdminFlowPowerAppContext -detailed".
+     - For technical information, type: "get-help Remove-AdminFlowPowerAppContext -full".
+```
+ 
 ### Power Automate commands
 
 Use these commands to view and modify data related to Power Automate.
