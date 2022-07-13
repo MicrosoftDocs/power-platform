@@ -341,7 +341,7 @@ If you specify governance error message content to appear in error messages, it 
 Associate flows in context of a Power App to the Power App to create a dependency between the app and flows. To learn more about context flows, see [What Power Automate capabilities are included in Power Apps licenses?](power-automate-licensing/faqs.md#what-power-automate-capabilities-are-included-in-power-apps-licenses)
 
 ```powershell
-   Add-AdminFlowPowerAppContext -EnvironmentName <String> -FlowName <String> -AppName <String> [-ApiVersion <String>][<CommonParameters>]
+   Add-AdminFlowPowerAppContext -EnvironmentName <String> -FlowName <String> -AppName <String> [-ApiVersion <String>] [<CommonParameters>]
 ```
 
 EnvironmentName and FlowName can be found in the flow url:
@@ -364,12 +364,11 @@ EnvironmentName and FlowName can be found in the flow url:
 Remove the dependency between flows and a Power App with this PowerShell command. The Remove-AdminFlowPowerAppContext removes Power App context from the specific flow.
   
 ```powershell
-    Remove-AdminFlowPowerAppContext -EnvironmentName <String> -FlowName <String> -AppName <String> [-ApiVersion
-    <String>] [<CommonParameters>]
+    Remove-AdminFlowPowerAppContext -EnvironmentName <String> -FlowName <String> -AppName <String> [-ApiVersion <String>] [<CommonParameters>]
 
-     - To see the examples, type: "get-help Remove-AdminFlowPowerAppContext -examples".
-     - For more information, type: "get-help Remove-AdminFlowPowerAppContext -detailed".
-     - For technical information, type: "get-help Remove-AdminFlowPowerAppContext -full".
+    - To see the examples, type: "get-help Remove-AdminFlowPowerAppContext -examples".
+    - For more information, type: "get-help Remove-AdminFlowPowerAppContext -detailed".
+    - For technical information, type: "get-help Remove-AdminFlowPowerAppContext -full".
 ```
  
 ### Power Automate commands
