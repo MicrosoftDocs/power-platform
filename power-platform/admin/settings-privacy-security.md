@@ -50,6 +50,7 @@ Make sure you have the System Administrator or System Customizer security role o
 > |How long before the session expires do you want to show a timeout warning?|Default: 20. After the time you set is reached, users receive an expiration warning.|  
 > |**Inactivity timeout**|More information: [Inactivity timeout](user-session-management.md#inactivity-timeout) |  
 > |Set inactivity timeout|Default: Off. Enable to automatically sign out a user. |  
+> |**Content security policy**|More information: [Content security policy](content-security-policy.md) |  
 
 ## Replace the privacy statement for the organization  
  By default, the [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] privacy statement is always shown to users with an administrator role only, and not to other (business) users. As an administrator, you can add a link to specify your organization's privacy statement, which is then shown to other users in your organization.  
