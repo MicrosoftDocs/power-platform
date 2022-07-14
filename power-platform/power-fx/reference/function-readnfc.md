@@ -41,9 +41,12 @@ A single **NDEFRecord** contains the following columns:
 | Text       | Text      | The text payload of the NFC tag if RTD is *TEXT*, *blank* otherwise.                       |
 | URI        | Hyperlink | The URI payload of the NFC tag if RTD is *URI*, *blank* otherwise.                         |
 
-If the NDEF record isn't supported (for example, the TNF isn't of type *Well Known*) then it will not be returned as part of the **NDEFRecords** table.
+If the NDEF record isn't supported (for example, the TNF isn't of type *Well Known*), then it won't be returned as part of the **NDEFRecords** table.
 
 Always check the payload values for *blank* using the [**IsBlank**](function-isblank-isempty.md) function before using it. You don't need to check the **RTD** and **TNF** values yourself as they must be the correct values for **Text** and **URI** to have a non-*blank* value.
+
+
+
 
 Additional **RTD** and **TNF** values may be supported in the future. If more values are supported, additional payload columns will also be added. The raw **RTD** and **TNF** values are provided for informational purposes and don't need to be consulted if the payload column is checked for *blank*. More information about these values and their use is available through the [NFC Forum](https://nfc-forum.org/).
 
