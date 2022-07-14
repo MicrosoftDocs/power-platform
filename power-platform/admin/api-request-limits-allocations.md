@@ -1,16 +1,15 @@
 ---
 title: Requests limits and allocations | Microsoft Docs
 description: Requests limits and allocations
-author: cpdSeattle
+author: MicroSri
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 06/28/2022
 ms.subservice: admin
-ms.author: camdebay 
+ms.author: sriknair 
 ms.reviewer: jimholtz
 contributors: 
-  - viveke 
-  - snandi 
+  - ShawnNandiMSFT 
   - PriyaKodukula 
 search.audienceType: 
   - admin

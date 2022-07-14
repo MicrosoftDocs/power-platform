@@ -9,8 +9,7 @@ ms.subservice: admin
 ms.author: swylezol
 ms.reviewer: jimholtz 
 contributors:
-  - cpdSeattle
-  - viveke
+  - MicroSri
 search.audienceType: 
   - admin
 search.app:
