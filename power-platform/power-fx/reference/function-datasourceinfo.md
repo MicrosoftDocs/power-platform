@@ -63,7 +63,8 @@ You can also use **DataSourceInfo** to obtain information about a data source as
 | **DataSourceInfo.EditPermission**   | Boolean     | Does the current user have permission to edit records in this data source? If not set by the data source, returns **true**.   |
 | **DataSourceInfo.ReadPermission**   | Boolean     | Does the current user have permission to read records in this data source? If not set by the data source, returns **true**.   |
 
-> [!NOTE] > **DataSourceInfo** returns _true_ if it cannot determine whether the current user has the requested permission. Permissions will be checked again by the server when the actual operation is carried out and an error is displayed if it was not allowed. At this time, permissions checking with **DataSourceInfo** is only possible when using Microsoft Dataverse.
+> [!NOTE] 
+> **DataSourceInfo** returns _true_ if it cannot determine whether the current user has the requested permission. Permissions will be checked again by the server when the actual operation is carried out and an error is displayed if it was not allowed. At this time, permissions checking with **DataSourceInfo** is only possible when using Microsoft Dataverse.
 
 ## Syntax
 
