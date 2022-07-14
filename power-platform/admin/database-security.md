@@ -36,16 +36,6 @@ There is another set of security roles that is assigned to [application users](s
 
 Which predefined security roles are available in your environment depends on the environment type.
 
-## Edit predefined or imported Solution security roles  
-You can [edit a predefined security role](create-edit-security-role.md#edit-a-security-role), such as Environment Maker or Basic User, or any imported Solution security role, and any changes to either add, remove, or update the role privileges will remain in the environment. Your updates will not be reverted to the default system settings during subsequent system or Solution updates. This provides you with the capability to use the system’s predefined security roles and customize them based on your business needs.  
-
-> [!NOTE]
-> When you add or remove privileges from the predefined security roles, it affects your application and user experience. Subsequent releases of the application might not work for your users whose predefined security role was modified. 
->
-> You can [remove predefined and imported Solution security role edits](create-edit-security-role.md#remove-predefined-and-imported-solution-security-role-edits) and reset the security role back to the default system settings. This allows you to restore the security role’s privileges. 
-> 
-> New role privileges can continue to be added by Solution/system updates.
-
 ### Environments without a Dataverse database
 
 Environment Maker and Environment Admin are the only predefined roles for environments that have no Dataverse database. These roles are defined in the following table.
@@ -84,7 +74,7 @@ In addition to the predefined security roles listed above for Dataverse, there m
 |---------|---------|
 |Power Apps     |    [Predefined security roles for environments with a Dataverse database](#environments-with-a-dataverse-database)    |
 |Power Automate     |  [Security and privacy ](/power-automate/process-advisor-security)   |
-|Power Virtual Agents     |   [Assign environment security roles](../../power-virtual-agents/admin-share-bots#assign-environment-security-roles) |
+|Power Virtual Agents     |   [Assign environment security roles](/power-virtual-agents/admin-share-bots#assign-environment-security-roles) |
 
 ### Dataverse for Teams environments 
 
@@ -92,7 +82,7 @@ For information on Dataverse for Teams environment security roles, see [User acc
 
 ## App-specific security roles 
 
-If you deploy Dynamics 365 apps in your Dataverse environment, such as Dynamics 365 Sales or Dynamics 365 Field Service,  additional security roles get added as a result of deploying these apps. For information about these additional security roles, see the respective apps’ documentation:
+If you deploy Dynamics 365 apps in your environment, such as Dynamics 365 Sales or Dynamics 365 Field Service,  additional security roles get added as a result of deploying these apps. For information about these additional security roles, see the respective apps’ documentation:
 
 |Dynamics 365 app  |Security role docs  |
 |---------|---------|

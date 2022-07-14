@@ -64,7 +64,7 @@ Follow these steps to assign a service admin role.
 6. Select **Save changes**.
 
 > [!NOTE]
-> If you are using the [Azure AD Privileged Identity Management (PIM)](/azure/active-directory/privileged-identity-management/pim-configure#what-does-it-do) time-based role activation to manage your service admin roles, the service administrator permission is NOT removed from the Dataverse environment when the time-based role activation expires.  
+> If you are using the [Azure AD Privileged Identity Management (PIM)](/azure/active-directory/privileged-identity-management/pim-configure#what-does-it-do) time-based role activation to manage your service admin roles, the service administrator permission is NOT removed from the environment when the time-based role activation expires.  
 > 
 > Service Admin roles must be assigned directly to users, as inheriting from security groups is not fully supported.
 

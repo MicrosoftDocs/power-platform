@@ -1,7 +1,7 @@
 ---
 title: "Securely access customer data using Customer Lockbox in Power Platform (preview) | MicrosoftDocs"
 description: This topic covers information on how customers can review and approve (or reject) data access requests in the rare occasion when data access to customer data is needed.
-ms.service: power-platform
+ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 06/10/2022
