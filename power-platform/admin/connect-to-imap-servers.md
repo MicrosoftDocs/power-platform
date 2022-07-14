@@ -5,10 +5,10 @@ description: Connect to IMAP, POP, or SMTP servers
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/24/2021
-author: mduelae
+author: jimholtz
 ms.subservice: admin
-ms.author: mkaur
-ms.reviewer: mkaur
+ms.author: jimholtz
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:
