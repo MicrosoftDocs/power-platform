@@ -35,7 +35,7 @@ A table is a value in Power Apps, just like a string or a number. You can specif
 > [!NOTE]
 > The functions that this topic describes don't modify the original table. Instead, they take that table as an argument and return a new table with a transform applied. See [working with tables](/power-apps/maker/canvas-apps/working-with-tables) for more details.
 
-You can't modify the columns of a [data source](/power-apps/maker/canvas-apps/working-with-data-sources.md) by using these functions. You must modify the data at its source. You can add columns to a [collection](/power-apps/maker/canvas-apps/working-with-data-sources.md#collections) with the **[Collect](function-clear-collect-clearcollect.md)** function. See [working with data sources](/power-apps/maker/canvas-apps/working-with-data-sources) for more details.
+You can't modify the columns of a [data source](/power-apps/maker/canvas-apps/working-with-data-sources) by using these functions. You must modify the data at its source. You can add columns to a [collection](/power-apps/maker/canvas-apps/working-with-data-sources#collections) with the **[Collect](function-clear-collect-clearcollect.md)** function. See [working with data sources](/power-apps/maker/canvas-apps/working-with-data-sources) for more details.
 
 ## Description
 
