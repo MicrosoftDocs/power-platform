@@ -71,7 +71,7 @@ Example pricing
 |**App A**     | 2 active users        | 0 active users         | 2 active users         |
 |**App B**     | 3 active users         | 0 active users         | 2 active users         |
 |**App C**     | 4 active users         | 0 active users         | 2 active users         |
-|**Total cost:**     | **$90** <br /> (9 * $10/active user/app)       | **$0** <br />(0 * $10/active user/app)        | **$60** <br /> (6 * $10/active user/app)       |
+|**Total cost:**     | **$90** <br /> (9 x $10/active user/app)       | **$0** <br />(0 x $10/active user/app)        | **$60** <br /> (6 x $10/active user/app)       |
 
 ---
 
@@ -172,9 +172,9 @@ Example pricing
 
 |         |Month #1  |Month #2  |Month #3  |
 |---------|---------|---------|---------|
-|**Database**     |  0.5 GB * $48 = $24       | 1.5 GB * $48 = $72         | 2.5 GB * $48 = $120         |
-|**File**     | 2 GB * $2.40 = $4.80         | 5 GB * $2.40 = $12         | 10 GB * $2.40 = $24         |
-|**Log**     | No usage         | 0.2 GB * $12 = $2.40         | 0.4 GB * $12 = $4.80         |
+|**Database**     |  0.5 GB x $48 = $24       | 1.5 GB x $48 = $72         | 2.5 GB x $48 = $120         |
+|**File**     | 2 GB x $2.40 = $4.80         | 5 GB x $2.40 = $12         | 10 GB x $2.40 = $24         |
+|**Log**     | No usage         | 0.2 GB x $12 = $2.40         | 0.4 GB x $12 = $4.80         |
 |**Total cost:**     | **$28.80**        |  **$86.40**      |  **$148.80**       |
 
 ---
@@ -212,7 +212,7 @@ Example pricing
 
 |   |Month #1  |Month #2  |Month #3  |
 |---------|---------|---------|---------|
-|**Power Platform** <br />**Requests**     | No usage        | 110 K * $0.00004 = $4.40       | 50 K * $0.00004 = $2.00        |
+|**Power Platform** <br />**Requests**     | No usage        | 110 K x $0.00004 = $4.40       | 50 K x $0.00004 = $2.00        |
 |**Total cost:**     |  $0.00       | $4.40        | $2.00        |
 
 ---
