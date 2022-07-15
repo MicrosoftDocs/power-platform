@@ -29,7 +29,7 @@ We continue to open new datacenter regions for business services, and to add dat
 > - Geo migrations are not supported into or out of US GCC, US GCC High, OCE, IND, or China.
 > - The Dynamics 365 Marketing app does not support geo migration, due to component dependencies. For more information, see [Manage your Dynamics 365 Marketing instances](/dynamics365/marketing/manage-marketing-instances).
 > - Geo migration is not supported for Microsoft Dataverse for Teams environments.
-> - Dataverse organization linked to a Finance and Operations organization is not supported.
+> - Dataverse organization linked to a finance and operations organization is not supported.
 
 ### Supported environment types
 
