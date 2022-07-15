@@ -239,7 +239,7 @@
           - name: Audit settings
             href: system-settings-dialog-box-auditing-tab.md
           - name: Audit summary view 
-            href: manage-dataverse-auditing.md#view-audit-logging-details
+            href: manage-dataverse-auditing.md#use-the-audit-summary-view
           - name: Entity and field audit settings 
             href: manage-dataverse-auditing.md#enable-or-disable-entities-and-fields-for-auditing
           - name: System jobs
