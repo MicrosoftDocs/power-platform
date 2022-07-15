@@ -134,7 +134,7 @@ Prepaid flows and Pay-as-you-go flows can co-exist in same environments as Pay-a
 |---------|---------|---------|---------|-------------|-------------|------------|
 |**Flow1** - Automated/Scheduled flow -  1 user running the flow | 100      |  25       |   20     | 3months x $15 Per user license = $45| 145 runs x $0.60/run = $87|Power Automate per user license|
 |**Flow 2**- Instant flow – 10 users running the flow| 100      |  25       |   20     |3months x 10 users x $15per user license = $450| 145 runs x $0.60/run = $87|Pay-as-you-go|
-|**Flow 3** – attended RPA- 10 users running the flow | 100      |  25       |   20     | 3months x 10 users x $40 per user with attended RPA = $1200| 145 runs x $0.60/run = $87)|Pay-as-you-go|
+|**Flow 3** – attended RPA - 10 users running the flow | 100      |  25       |   20     | 3months x 10 users x $40 per user with attended RPA = $1200| 145 runs x $0.60/run = $87)|Pay-as-you-go|
 | **Flow 4** – Unattended RPA – 2 concurrent runs| 100      |  25       |   20     |3 months x ($40 per user with attended RPA+2 bots x $150 per unattended addon) = $1020|145 runs x $3/run = $435 |Pay-as-you-go|
 | **Flow 5** – Seasonal flow - 1 user running the flow| 0      |  0      |   40     |3 month x $15 Per user license = $45|40 runs x $0.60/run = $24|Pay-as-you-go|
 |**Flow 6** – Organizational flow running under service account/service principal | 100      |  25       |   20     | 3months x $100 per flow license = $300| 145 runs x $0.60/run = $87|Pay-as-you-go|
