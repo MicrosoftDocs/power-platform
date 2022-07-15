@@ -74,7 +74,7 @@ The Azure AD account management services are hosted on physical servers managed 
 - [Dataflows in Power Apps](/powerapps/maker/common-data-service/create-and-use-dataflows) 
 - [Integrate data into Microsoft Dataverse](./data-integrator.md)
 - [Export to Azure Data Lake (aka Athena)](/powerapps/maker/common-data-service/export-to-data-lake)
-- [Dual-write from Dataverse to Dynamics 365 Finance and Operations apps](https://powerapps.microsoft.com/blog/announcing-dual-write-preview/)
+- [Dual-write from Dataverse to Dynamics 365 finance and operations apps](https://powerapps.microsoft.com/blog/announcing-dual-write-preview/)
 - [Dataverse analytics](./analytics-common-data-service.md) 
 - [AI Builder](/ai-builder/), a separate add-on offering for Microsoft Power Platform.
 - [Connectors](/connectors/connector-reference/): The most popular connectors in use in our commercial service (based on usage telemetry) have been published; if there is a connector available in the commercial offering that you do not see deployed, please contact support, and we will review your request. 

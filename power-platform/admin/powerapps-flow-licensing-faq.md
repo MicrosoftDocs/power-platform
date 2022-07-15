@@ -196,9 +196,9 @@ Power Apps use rights with Dynamics 365 licenses: Dynamics 365 *Enterprise* li
 
 Power Automate use rights with Dynamics 365 licenses: Dynamics 365 licenses will no longer include general purpose Power Automate capabilities. Power Automate flows will need to map to licensed Dynamics 365 application context - Power Automate flows should trigger from OR connect to data sources within use rights of licensed Dynamics 365 application(s). Use of standalone flows will require a Power Automate license.
 
-### Can I connect to Microsoft Dynamics for Finance and Operations?
+### Can I connect to Microsoft Dynamics for finance and operations apps?
 
-Yes, you can use the Dynamics 365 Finance and Operations connector to build canvas apps using this data.
+Yes, you can use the Dynamics 365 finance and operations apps connector to build canvas apps using this data.
 
 ## Power Automate
 
