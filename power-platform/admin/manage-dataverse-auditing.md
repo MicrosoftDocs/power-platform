@@ -27,7 +27,7 @@ Dataverse auditing is supported on all custom and most customizable tables and c
 > [!NOTE]
 > The use of entity-related terminology depends on the protocol or class library used. See [Terminology use depending on protocol or technology](/power-apps/developer/data-platform/understand-terminology).
 > 
-> Audit logs may show up with a delay in the Audit History tab of a record and in the Audit Summary view. This is due to audit logs are stored in the Dataverse log storage and no longer in the database storage.
+> Audit logs may show up with a delay in the Audit History tab of a record and in the Audit Summary view. This is because audit logs are stored in the Dataverse log storage and no longer in the database storage.
 
 **Audit History for a single record** 
 
