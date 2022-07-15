@@ -2,10 +2,9 @@
 title: Manage Power Apps | Microsoft Docs
 description: How to manage Power Apps apps created in your organization.
 author: alaug
-
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/15/2021
+ms.date: 04/25/2022
 ms.subservice: admin
 ms.author: alaug
 ms.reviewer: jimholtz
@@ -29,8 +28,8 @@ Admins can do the following from the Power Platform admin center:
 ## Prerequisites
 
 - Either a Power Apps plan or Power Automate plan. Alternatively, you can sign up for a [free Power Apps trial](/powerapps/maker/signup-for-powerapps).
-
 - Power Apps Environment Admin, Global admin, or Power Platform admin permissions. For more information, see [Environments administration in Power Apps](environments-overview.md).
+
 
 ## Manage Power Apps
 
@@ -85,7 +84,7 @@ Do the following to limit maker privileges to only be able to create and edit Sh
 
 #### Can I edit privileges in the SharePoint custom form maker security role? 
 
-No, the SharePoint custom form maker security role is added to an environment by importing a non-customizable solution. Note, SharePoint custom form creation requires a user to have permissions in SharePoint and Power Platform. The platform verifies a user has write permissions for the targeted SharePoint list and the user has permission in Power Platform to create or update the SharePoint custom form. For a SharePoint custom form maker to satisfy the Power Platform check, the user must have the SharePoint custom form security role or the Environment Maker security role.
+No, the SharePoint custom form maker security role is added to an environment by importing a non-customizable solution. Note, SharePoint custom form creation requires a user to have permissions in SharePoint and Power Platform. The platform verifies a user has write permissions for the targeted list created using Microsoft Lists and the user has permission in Power Platform to create or update the SharePoint custom form. For a SharePoint custom form maker to satisfy the Power Platform check, the user must have the SharePoint custom form security role or the Environment Maker security role.
 
 #### Will a user with only the SharePoint custom form maker role see an environment in the make.powerapps.com environment picker? 
 
@@ -94,7 +93,7 @@ No, a maker that doesn’t have a security role called out in the [Choose enviro
    > [!div class="mx-imgBorder"] 
    > ![Power Apps missing permission dialog.](media/admin-manage-apps/power_apps_missing_permission_to_create.png "Power Apps missing permission dialog")
 
-## Manage app quarantine state (preview)
+## Manage app quarantine state
 
 As a complement to [Power Platform’s data loss prevention policies](wp-data-loss-prevention.md), Power platform enables admins to 'quarantine' a resource, setting guardrails for low-code development. A resource’s quarantine state is managed by admins and controls whether a resource is accessible to end users. In Power Apps, this capability allows admins to directly limit availability of apps that may need attention to meet an organization’s compliance requirements. 
 
@@ -115,7 +114,7 @@ The following table reflects quarantine support:
 
 | Power Apps type  | Quarantine support   |
 |------------------|----------------------|
-| Canvas app       | Preview availability |
+| Canvas app       | Generally Available  |
 | Model-driven app | Not supported yet    |
 
 ### Quarantine an app

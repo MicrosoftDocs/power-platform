@@ -5,10 +5,10 @@ description: Connect to IMAP, POP, or SMTP servers
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/24/2021
-author: revachauhan
+author: jimholtz
 ms.subservice: admin
-ms.author: rechauha
-ms.reviewer: mkaur
+ms.author: jimholtz
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:
@@ -93,7 +93,7 @@ Follow these steps to connect customer engagement apps (such as [Dynamics 365 Sa
    |   Description   |  Enter a short description about the objective of the email server profile.       |
    | Incoming Server Location and Outgoing Server Location  |  Enter the **Incoming Server Location** and **Outgoing Server Location**<br /><br /> For example, Incoming: imap.mail.yahoo.com  and Outgoing: smtp.mail.yahoo.com  |
    |  **Credentials**  |    |
-   |  Authenticate Using  | Select a method to authenticate while connecting to the specified email server.<br /><br /> <ul><li> **Credentials Specified by a User or Queue**. If you select this option, the credentials specified in the mailbox record of a user or queue are used for sending or receiving email for the respective user or queue.<br> **Note:** To ensure that the credentials are secured, SQL encryption is used to encrypt the credentials stored in the mailbox.</li><br /><li> **Credentials Specified in Email Server Profile**. If you select this option, the credentials specified in the email server profile are used for sending or receiving email for the mailboxes of all users and queues associated with this profile. The credentials must have impersonation or delegation permissions on the mailboxes associated with the profile. This option requires some configuration on the email server, for example, configuring impersonation rights on [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] for the mailboxes associated with the profile.<br>**Note:** To ensure that the credentials are secured, SQL encryption is used to encrypt the credentials stored in the email server profile if you're processing email by using server-side synchronization.<!--note from editor: Please see editor's note on line 74 of connect-exchange-server-on-premises.md --></li><br /><li> **Windows Integrated Authentication**. This option applies only to [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] and SMTP email server types. If you select this option, the credentials with which the Asynchronous Service has been configured will be used.</li><br /><li> **Without Credentials (Anonymous)**. Not a valid setting. </li></ul>|
+   |  Authenticate Using  | Select a method to authenticate while connecting to the specified email server.<br /><br /> <ul><li> **Credentials Specified by a User or Queue**. If you select this option, the credentials specified in the mailbox record of a user or queue are used for sending or receiving email for the respective user or queue.<br> **Note:** To ensure that the credentials are secured, SQL encryption is used to encrypt the credentials stored in the mailbox.</li><br /><li> **Credentials Specified in Email Server Profile**. If you select this option, the credentials specified in the email server profile are used for sending or receiving email for the mailboxes of all users and queues associated with this profile. The credentials must have impersonation or delegation permissions on the mailboxes associated with the profile. This option requires some configuration on the email server, for example, configuring impersonation rights on [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] for the mailboxes associated with the profile.<br>**Note:** To ensure that the credentials are secured, SQL encryption is used to encrypt the credentials stored in the email server profile if you're processing email by using server-side synchronization.</li><br /><li> **Windows Integrated Authentication**. This option applies only to [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] and SMTP email server types. If you select this option, the credentials with which the Asynchronous Service has been configured will be used.</li><br /><li> **Without Credentials (Anonymous)**. Not a valid setting. </li></ul>|
    | User Name   | Enter the username used to connect to the email server for sending or receiving email for the mailboxes of all users and queues associated with this profile. This field is enabled and valid only if **Authenticate Using** is set to **Credentials Specified in Email Server Profile**. The username that you specify must have permission to send and receive email from the mailboxes of users and queues associated with this profile.<br>**Note:**  If you're using HTTP for customer engagement apps, the **User Name** and **Password** fields will be disabled. To enable the option, change the value of the deployment property AllowCredentialsEntryViaNonSecureChannels to 1.  |
    |  Password   |  Specify the password of the user that will be used together with the username to connect to the email server for sending or receiving email for the mailboxes of users and queues associated with this profile. The password is stored securely. <br>**Note:** If you're using HTTP for customer engagement apps, the **User Name** and **Password** fields will be disabled. To enable the option, change the value of the deployment property AllowCredentialsEntryViaNonSecureChannels to 1. |
    | Use same settings for Outgoing |  If you want to use the same credential settings for the incoming and outgoing connections, choose **Yes**.  |
@@ -133,12 +133,12 @@ Set server-side synchronization to be the default configuration method.
 
    - **Outgoing Email**: Server-Side Synchronization or Email Router  
 
-   - **Appointments, Contacts, and Tasks**: Server-Side Synchronization or Email Router<!--note from editor: If this setting isn't available, how can they select it? -->
+   - **Appointments, Contacts, and Tasks**: Server-Side Synchronization or Email Router
 
        > [!NOTE]
        >  The **Server-Side Synchronization or Email Router** setting for appointments, contacts, and tasks isn't supported for the IMAP profile.  
 
-     If you leave **Email processing for unapproved user and queues**<!--note from editor: Edit okay?--> at the default values (selected), you'll need to approve emails and queues for user mailboxes as directed in [**Approve email**](#approve-email), later in this topic.  
+     If you leave **Email processing for unapproved user and queues** at the default values (selected), you'll need to approve emails and queues for user mailboxes as directed in [**Approve email**](#approve-email), later in this topic.  
 
      ![Screenshot showing System Settings for server-side synchronization.](../admin/media/imap-profile.png "System Settings for server-side synchronization")  
 
@@ -151,8 +151,7 @@ To set mailboxes to use the default profile, you must first set the server profi
 In addition to administrator permissions, you must have Read and Write privileges on the Mailbox table to set the delivery method for the mailbox.  
 
 Choose *one* of the following methods: set mailboxes to the default profile, or edit mailboxes to set profile and delivery methods.
-
-<!--markdownlint-disable MD036--> 
+ 
 **To set mailboxes to the default profile**
 
 1. Do one of the following: 

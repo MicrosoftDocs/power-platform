@@ -5,7 +5,7 @@ author: jimholtz
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/17/2021
+ms.date: 06/05/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -42,9 +42,6 @@ Enable auditing to track changes to your organization's data and maintain a log 
 | Audit user access | Default: Off. If enabled, customer engagement apps (such as Dynamics 365 Sales and Customer Service) track when the user started accessing customer engagement apps and whether or not the user accessed the application by using the web application or Dynamics 365 for Outlook.  |  
 | Start Read Auditing | Default: Off. Logs will be sent to the [Microsoft 365 Security and Compliance Center](https://protection.office.com/homepage). |
 
-<!--
-| Audit user access  | If enabled, customer engagement apps, such as Dynamics 365 Sales and Customer Service, tracks when the user started accessing customer engagement apps and whether or not the user accessed the application by using the web application or [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)]. | 
--->
 
 Specify to audit specific areas of the product, as described in the following table. 
 
@@ -56,8 +53,8 @@ Specify to audit specific areas of the product, as described in the following ta
 |Marketing Entities|Campaign|  
 |Customer Service Entities|Article, Case, Client Feedback, Contract, and Service|  
   
-### See also  
- [Audit data and user activity](/powerapps/developer/common-data-service/audit-user-access)
+### See also
 
+[Dataverse developer guide: Configure auditing](/power-apps/developer/data-platform/auditing/configure)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

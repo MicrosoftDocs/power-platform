@@ -1,14 +1,13 @@
 ---
 title: "Connect Gmail accounts using OAuth 2.0| MicrosoftDocs"
 description: "Connect Gmail accounts using OAuth 2.0 "
-
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/11/2021
-author: revachauhan
+ms.date: 04/04/2022
+author: jimholtz
 ms.subservice: admin
-ms.author: rechauha
-ms.reviewer: mkaur
+ms.author: jimholtz
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:
@@ -20,28 +19,10 @@ search.app:
 
 # Connect Gmail accounts by using OAuth 2.0 
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
-
 Follow the steps in this article to set up server-side synchronization to send and receive email in customer engagement apps (such as [Dynamics 365 Sales](/dynamics365/sales-professional/help-hub), [Dynamics 365 Customer Service](/dynamics365/customer-service/help-hub), [Dynamics 365 Marketing](/dynamics365/marketing/help-hub), [Dynamics 365 Field Service](/dynamics365/field-service/overview), and [Dynamics 365 Project Service Automation](/dynamics365/project-operations/psa/overview)) from Gmail accounts by using OAuth 2.0 as the authorization mechanism.
 
 > [!NOTE]
 > The Gmail OAuth email server profile works for up to 100 users. Create multiple OAuth profiles (steps 1 through 4) if you want to associate the same profile with multiple users.
-
-## Availability
-
-We're in the process of rolling out this feature. To determine whether your environment can connect Gmail accounts using OAuth 2.0, do the following:
-
-1. Do one of the following: 
-
-   - In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.    
-   - In the legacy web client in the upper-right corner, select ![Gear icon.](media/selection-rule-gear-button.png), and then select **Advanced settings**. 
-
-2. Select **Settings** > **Email** > **Mailboxes**. 
-
-3. Select a mailbox and check the top menu bar for the **Signin To Gmail** icon. If it's present, the feature is enabled for this environment.
-
-   > [!div class="mx-imgBorder"] 
-   > ![Determine feature availability.](media/gmail-how-to-know.png "Determine feature availability")
 
 ## Step 1. Enable IMAP or POP in Gmail
 

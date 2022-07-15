@@ -31,7 +31,7 @@ The following is a high-level overview of how security model is implemented in D
 - A user's ability to see and use apps is controlled by sharing the application with the user. Sharing of [canvas apps](/powerapps/maker/canvas-apps/getting-started) is done directly with a user or Azure AD group but is still subject to Dataverse security roles. Sharing of [model-driven apps](/powerapps/maker/model-driven-apps/model-driven-app-overview) is done via Dataverse security roles.
 - Environments act as security boundaries allowing different security needs to be implemented in each environment.
 - Flows and Canvas apps use connectors, the specific connections credentials and associated service entitlements determine permissions when apps use the connectors.
-- Environments with Dataverse add support for more advanced security models that are specific to controlling access to data and services in the Dataverse environment.
+- Environments with Dataverse add support for more advanced security models that are specific to controlling access to data and services in the environment with a Dataverse database.
 
 > [!TIP]
 > To learn about how to help secure and govern Microsoft Power Platform apps like Power Automate, check out the [Microsoft Learn: Introduction to Power Automate security and governance](/learn/modules/security-governance-intro/).

@@ -1,12 +1,12 @@
 ---
 title: "What's new for storage administration in Microsoft Power Platform"
 description: "Learn about enhancements for storage that affect administrators, including reporting and reaching Dataverse database capacity limits."
-author: cpdSeattle
+author: mayadumesh
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 03/09/2022
+ms.date: 06/30/2022
 ms.subservice: admin
-ms.author: camdebay
+ms.author: mayadu
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
@@ -53,11 +53,14 @@ There are two versions for storage capacity reporting:
 
 ## What happens when my organization exceeds storage entitlements?
 
-If you exceed your storage capacity, you'll receive email notifications alerting you to the over-capacity usage.  For new model email notification details, see [Changes for exceeding storage capacity entitlements](capacity-storage.md#changes-for-exceeding-storage-capacity-entitlements). For legacy model email notification details, see [Changes for exceeding storage capacity entitlements](legacy-capacity-storage.md#changes-for-exceeding-storage-capacity-entitlements). There is also a notification banner in the Power Platform admin center when a tenant has exceeded storage capacity. The following admin operations won't be available when a tenant exceeds storage capacity entitlements:
+If you exceed your storage capacity, you'll receive email notifications alerting you to the over-capacity usage.  For new model email notification details, see [Changes for exceeding storage capacity entitlements](capacity-storage.md#changes-for-exceeding-storage-capacity-entitlements). For legacy model email notification details, see [Changes for exceeding storage capacity entitlements](legacy-capacity-storage.md#changes-for-exceeding-storage-capacity-entitlements). There is also a notification banner in the Power Platform admin center when a tenant has exceeded storage capacity. There are currently no performance degradations when storage usage is above licensed entitlements, however the following admin operations won't be available when a tenant exceeds storage capacity entitlements:
 
 - Create new environment (requires minimum 1GB capacity available)
 - Copy an environment (requires minimum 1GB capacity available)
 - Restore an environment (requires minimum 1GB capacity available)
+- Convert a trial environment to paid (requires minimum 1GB capacity available)
+- Recover an environment (requires minimum 1GB capacity available)
+- Add Dataverse database to an environment
 
 Please review:
 - [Do we have any database size restriction to take a backup or restore an organization through user interface (UI) or API?](backup-restore-environments.md#do-we-have-any-database-size-restriction-to-take-a-backup-or-restore-an-organization-through-user-interface-ui-or-api)
@@ -108,6 +111,7 @@ You can request a temporary (30-day) extension that allows copy and restore oper
 
 |Date  |Description  |
 |---------|---------|
+| June 2022 | The new finance and operations storage capacity report gives you a way to visualize your organization's storage usage versus your entitlement. |
 | September 2021 | We're providing included initial storage capacity for the default environment: 3GB Dataverse database capacity, 3GB Dataverse file capacity, and 1GB Dataverse log capacity. See [The default environment](environments-overview.md#the-default-environment).|
 | June 2021 | Storage capacity notification emails have been introduced and will be rolled out in phases.  Tenant admins now receive emails when their tenant’s entitled storage capacity is running out of, or exceeding available capacity.  For details for new model storage, see [Changes for exceeding storage capacity entitlements](capacity-storage.md#changes-for-exceeding-storage-capacity-entitlements). For legacy model details, see [Changes for exceeding storage capacity entitlements](legacy-capacity-storage.md#changes-for-exceeding-storage-capacity-entitlements). |
 | January 2021 | We've added database, log, and file storage capacity that is included with the Project for the Web licenses. See [Project for the web and Microsoft Dataverse](/office365/servicedescriptions/project-online-service-description/project-online-service-description#project-roadmap-and-power-automate). |

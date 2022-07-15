@@ -3,7 +3,7 @@ title: "Replicate data to Azure SQL Database using Data Export Service | Microso
 description: Replicate data to Azure SQL Database using Data Export Service 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/16/2022
+ms.date: 07/14/2022
 ms.subservice: admin
 ms.author: sabinn
 author: sabinn-msft
@@ -319,7 +319,7 @@ For information about the programmatic interface for managing configuration and 
   
 #### How to view detailed information about the records that failed to sync (Preview)
 
-You can now download the failed records directly from within the Data Export Service user interface. This feature is currently in Preview and would be great for you to test and provide feedback.
+You can download the failed records directly from within the Data Export Service user interface. This feature is currently in Preview and would be great for you to test and provide feedback.
 
 **Steps to download failed records:**
 
@@ -572,27 +572,28 @@ EXEC SP_EXECUTESQL @sql;
   
 ## Azure SQL database static IP addresses used by the Data Export Service  
 
- In [!INCLUDE[pn_Azure_SQL_Database_long](../includes/pn-azure-sql-database-long.md)], click **Set server firewall**, turn **Allow access to Azure services** to **OFF**, click **Add client IP**, and then add the IP addresses appropriate for the region of your Dynamics 365 environment. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Azure: Configure an Azure SQL Database server-level firewall rule using the Azure Porta](/azure/azure-sql/database/firewall-configure)l  
+ In [!INCLUDE[pn_Azure_SQL_Database_long](../includes/pn-azure-sql-database-long.md)], click **Set server firewall**, turn **Allow access to Azure services** to **OFF**, click **Add client IP**, and then add the IP addresses appropriate for the region of your environment. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Azure: Configure an Azure SQL Database server-level firewall rule using the Azure Porta](/azure/azure-sql/database/firewall-configure)l  
   
-|Region|IP address|  
+|Region| New IP address| Old IP address |
 |------------|----------------|  
-|West US|40.112.139.218|  
-|East US|23.96.92.86|  
-|West Europe|40.68.252.224|  
-|East Asia|104.208.84.217|  
-|Southeast Asia|52.163.231.218|  
-|Central India|20.198.113.107|  
-|South India|104.211.204.18|  
-|North Europe|52.169.117.212|  
-|Japan West|104.214.144.93|  
-|Japan East|20.89.138.246|  
-|Brazil South|20.197.186.17|  
-|Australia Southeast|40.115.78.163|  
-|Australia East|13.73.202.160|  
-|Canada Central|52.228.26.31|  
-|Canada East|40.86.251.81|  
-|United Kingdom South|51.140.71.166|  
-|United Kingdom West|51.141.44.218|  
+|West US|13.64.148.9  |40.112.139.218|  
+|East US|20.228.153.81  |23.96.92.86|  
+|East Asia|No change  |104.208.84.217|  
+|Southeast Asia|20.205.153.14  |52.163.231.218|  
+|Central India| No change |20.198.113.107|  
+|South India| No change |104.211.204.18|  
+|West Europe| 40.68.244.253 |40.68.252.224|  
+|North Europe| 20.238.83.32 |52.169.117.212|  
+|Japan West| No change |104.214.144.93|  
+|Japan East| No change |20.89.138.246|  
+|Brazil South| No change |20.197.186.17|  
+|Australia Southeast|20.70.112.80  |40.115.78.163|  
+|Australia East|20.213.58.3  |13.73.202.160|  
+|Canada Central|No change  |52.228.26.31|  
+|Canada East|52.229.109.91  |40.86.251.81|  
+|United Kingdom West|20.68.113.18  |51.141.44.218|  
+|United Kingdom South|20.117.89.184  |51.140.71.166|  
+
   
 > [!NOTE]
 > North America customers should add IP addresses to an approved list for both East US and West US.

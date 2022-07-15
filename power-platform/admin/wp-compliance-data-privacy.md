@@ -71,11 +71,11 @@ The following links point to detailed information to help you respond to DSR req
 
 ## Microsoft 365 Security and Compliance Center
 
-You may also find Microsoft Compliance Manager helpful to manage your compliance efforts across Microsoft cloud services in a single place. More details about Compliance Manager can be found here https://aka.ms/compliancemanager.
+You may also find Microsoft Purview Compliance Manager helpful to manage your compliance efforts across Microsoft cloud services in a single place. More details about Compliance Manager can be found here https://aka.ms/compliancemanager.
 
 ## Power Automate Audit Log Events
 
-In the compliance center Audit Log Search, administrators can now search and view Power Automate events. Events include Created flow, Edited flow, Deleted flow, Edited Permissions, Deleted Permissions, Started a paid trial, Renewed a paid trial. Using the portal you can choose what you want to search and a time window.
+In the compliance center Audit Log Search, administrators can search and view Power Automate events. Events include Created flow, Edited flow, Deleted flow, Edited Permissions, Deleted Permissions, Started a paid trial, Renewed a paid trial. Using the portal you can choose what you want to search and a time window.
 
 > [!div class="mx-imgBorder"] 
 > ![Power Automate audit log events.](media/flow-audit-log-events.png "Power Automate audit log events")

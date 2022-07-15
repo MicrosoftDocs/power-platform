@@ -1,14 +1,13 @@
 ---
 title: "Configuring the ALM Accelerator for Power Platform deployment user settings and profiles | MicrosoftDocs"
 description: "Deployment user settings and profiles direct the ALM Accelerator for Power Platform app on how to display UI components and how to source-control and deploy solutions."
-author: mikefactorial
+author: jenschristianschroder
 manager: devkeydet
-
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 10/14/2021
 ms.subservice: guidance
-ms.author: v-mikeochs
+ms.author: jeschro
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
@@ -20,19 +19,22 @@ search.app:
 # Configuring deployment user settings and profiles for the ALM Accelerator for Power Platform app (preview)
 
 > [!NOTE]
-> The ALM accelerator for Microsoft Power Platform is currently in public preview. Go to [Issues currently tagged as vnext](https://github.com/microsoft/coe-starter-kit/issues?q=is%3Aopen+is%3Aissue+label%3Aalm-accelerator+label%3Avnext) for the roadmap to be completed prior to general availability. While the tool is in public preview, there will be breaking changes and frequent updates to address feedback from preview members. Additionally, the public preview is reliant on the experimental [Power Apps Source File Pack and Unpack Utility](https://github.com/microsoft/PowerApps-Language-Tooling) that's being developed separately from the ALM accelerator for Microsoft Power Platform.
+> The ALM accelerator for Microsoft Power Platform is currently in public preview. While in preview we will be prioritizing feedback and bugs via GitHub [New issue](https://github.com/microsoft/coe-starter-kit/labels/alm-accelerator). If the issue is something in the platform all we can do is funnel feedback to the responsible product teams. For more information on the current preview status of the ALM Accelerator for Power Platform [follow this link](https://github.com/microsoft/coe-starter-kit/blob/main/CenterofExcellenceALMAccelerator/PREVIEW.md).
 
 Depending on a user's role, you can configure the application lifecycle management (ALM) accelerator by turning on and off certain features in the UI, based on user preference and experience. To help all users use the app effectively, a common scenario is to create both a maker experience (for users who are unfamiliar with ALM) and an advanced maker experience (for users who are very familiar with ALM concepts). Deployment profiles are linked to user settings. The app uses deployment profiles to make decisions for the user on where and how to create branches and approvals for deployment.
 
-In this section, we'll describe how to use the Power Platform ALM Accelerator Administration app to configure these settings for use by the ALM accelerator.
+> [!NOTE]
+> For more information on different experience see [Advanced Maker experience](/power-platform/guidance/coe/almacceleratorpowerplatform-advancedmaker) and  [Maker experience](/power-platform/guidance/coe/almacceleratorpowerplatform-newmaker).
 
-## Creating user settings and profiles with the Power Platform ALM Accelerator Administration app
+In this section, we'll describe how to use the ALM Accelerator for Power Platform Administration app to configure these settings for use by the ALM accelerator.
+
+## Creating user settings and profiles with the ALM Accelerator for Power Platform Administration app
 
 To create user settings for the ALM accelerator for Microsoft Power Platform, follow these steps:
 
-1. Open the **Power Platform ALM Accelerator Administration App**, and then select **Deployment User Settings**.
+1. Open the **ALM Accelerator for Power Platform Administration**, and then select **Deployment User Settings**.
 
-   ![The Power Platform ALM Accelerator Administration app.](media/setup-almacceleratorpowerplatform-deployment-profiles/image-20211126094411050.png)
+   ![The ALM Accelerator for Power Platform Administration app.](media/setup-almacceleratorpowerplatform-deployment-profiles/image-20211126094411050.png)
 
 1. Select **New**, and then **Provide a Name** for the user setting. This name will only be displayed to users who have access to more than one user setting option.
 
@@ -43,9 +45,11 @@ To create user settings for the ALM accelerator for Microsoft Power Platform, fo
     - **Manage Solutions** - This function shows the **Manage Solutions** command in the app.
     - **Drillthrough Status** - This function allows users to drill into the Azure DevOps pipeline runs for the promote and deploy functionality.
     - **Profile Creation** - This function provides users with the ability to create new deployment profiles in the app.
+    - **Profile Updates** - This function provides users with the ability to update deployment profiles settings in the app.
     - **Advanced Promote** - This function provides users with the ability to change between using the advanced promote functionality. They can specify a source and target branch, or create a new branch.
     - **Advanced Deploy** - This function provides users with the ability to switch between using the advanced deploy functionality. They can specify a source and target branch for a pull request.
     - **Bypass Prepare** - This function provides the user with the ability to skip the preparation step during the promotion of a solution. They can bypass needing to configure deployment settings before committing to source control.
+    - **Show All Solutions** - This function provides users with the ability to see all solutions in the selected environment.
 
 1. Update **User Labels**. The following areas are configurable in the app related to user labels for functions. These values also appear in the **Deployment History** view under the action that was executed:
 
@@ -56,10 +60,10 @@ To create user settings for the ALM accelerator for Microsoft Power Platform, fo
 
 1. Select **Save** to save your user settings.
 
-Next, you'll add new deployment profiles to your user settings. Deployment profiles are used by the ALM Accelerator for Power Platform app to determine where and how to create branches during the commit stage, and how to create pull requests when deploying. The following section describes the steps to create a deployment profile with the Power Platform ALM Accelerator Administration app to associate with one or many deployment user settings.
+Next, you'll add new deployment profiles to your user settings. Deployment profiles are used by the ALM Accelerator for Power Platform app to determine where and how to create branches during the commit stage, and how to create pull requests when deploying. The following section describes the steps to create a deployment profile with the ALM Accelerator for Power Platform Administration app to associate with one or many deployment user settings.
 
    > [!NOTE]
-   > In addition to your creating deployment profiles by using the Power Platform ALM Accelerator Administration app, users who have **Create Profile** privileges in the ALM Accelerator for Power Platform app can create deployment profiles in the app. The ALM Accelerator for Power Platform app makes some assumptions about the setup of your pipelines based on the documentation for setting up your pipelines, and doesn't provide the flexibility that the Power Platform ALM Accelerator Administration app does. It does, however, allow you to jump-start this process.
+   > In addition to your creating deployment profiles by using the ALM Accelerator for Power Platform Administration app, users who have **Create Profile** privileges in the ALM Accelerator for Power Platform app can create deployment profiles in the app. The ALM Accelerator for Power Platform app makes some assumptions about the setup of your pipelines based on the documentation for setting up your pipelines, and doesn't provide the flexibility that the ALM Accelerator for Power Platform Administration app does. It does, however, allow you to jump-start this process.
 
 ## Creating ALM accelerator profiles by using the ALM Accelerator for Power Platform app
 
@@ -94,7 +98,7 @@ After the profile is saved, you'll be able to commit and deploy your solution.<!
 
 ![Solution actions in the ALM Accelerator for Power Platform app are enabled after creating a new profile.](media/setup-almacceleratorpowerplatform-deployment-profiles/image-20211126135223693.png)
 
-## Sharing ALM accelerator user settings and profiles by using the Power Platform ALM Accelerator Administration app
+## Sharing ALM accelerator user settings and profiles by using the ALM Accelerator for Power Platform Administration app
 
 To share user settings created for a particular user profile, we recommend that you share the user setting row with an Azure Active Directory (Azure AD) Group team. Sharing with an Azure AD Group team allows you to manage access to user settings and deployment profiles from Azure AD by adding the user to the group in Azure AD. The following steps describe how to share and provide the appropriate roles to an Azure AD Group team after installing the ALM Accelerator for Power Platform app.
 
@@ -104,13 +108,13 @@ To share user settings created for a particular user profile, we recommend that 
 
    1. Under **Access -Teams**, select **See all**, and then select **Create Team**.
 
-   1. Enter the required fields, and select **AAD Group Team** as the **Team Type**.
+   1. Enter the required fields, and select **AAD Group Team** (AAD Security Group or AAD Office Group) as the **Team Type**.
 
    1. Select the **AAD Group** to use for this team, and then select **Next**.
 
    1. Select **ALM Power App Access** and **Basic User** as the roles for the team, and then select **Save**.
 
-1. Open the Power Platform ALM Accelerator Administration app, and go to **Deployment User Settings**.
+1. Open the ALM Accelerator for Power Platform Administration app, and go to **Deployment User Settings**.
 
 1. Open the **Deployment User Setting** that you want to share with your team, and then select **Share**.
 

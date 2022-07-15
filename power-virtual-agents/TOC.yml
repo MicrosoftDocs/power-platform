@@ -42,6 +42,8 @@
          href: authoring-first-bot.md
        - name: Use lesson topics
          href: authoring-template-topics.md
+       - name: Use system topics
+         href: authoring-system-topics.md
        - name: Create and edit topics
          href: authoring-create-edit-topics.md
        - name: Use system fallback topic
@@ -96,8 +98,8 @@
          href: publication-connect-bot-to-custom-application.md
        - name: Add bot to Azure Bot Service channels
          href: publication-connect-bot-to-azure-bot-service-channels.md
-       - name: Use a Bot Framework bot with Power Virtual Agents
-         href: advanced-use-dispatcher.md
+       - name: Integrate with QnA Maker
+         href: integrate-with-qna.md
        - name: Integrate with Bot Framework
          items:
           - name: Configure a skill for use in Power Virtual Agents
@@ -194,6 +196,8 @@
          href: teams/authoring-first-bot-teams.md
        - name: Use lesson topics
          href: teams/authoring-template-topics-teams.md
+       - name: Use system topics
+         href: teams/authoring-system-topics-teams.md
        - name: Create and edit topics
          href: teams/authoring-create-edit-topics-teams.md
        - name: Use system fallback topic

@@ -22,12 +22,38 @@ search.app:
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
 > [!NOTE]
-> The ALM accelerator for Microsoft Power Platform is currently in public preview. Go to [Issues currently tagged as vnext](https://github.com/microsoft/coe-starter-kit/issues?q=is%3Aopen+is%3Aissue+label%3Aalm-accelerator+label%3Avnext) for the roadmap to be completed prior to general availability. While the tool is in public preview, there will be breaking changes and frequent updates to address feedback from preview members. Additionally, the public preview is reliant on the experimental [Power Apps Source File Pack and Unpack Utility](https://github.com/microsoft/PowerApps-Language-Tooling) that's being developed separately from the ALM accelerator for Microsoft Power Platform.
+> The ALM accelerator for Microsoft Power Platform is currently in public preview. While in preview we will be prioritizing feedback and bugs via GitHub [New issue](https://github.com/microsoft/coe-starter-kit/labels/alm-accelerator). If the issue is something in the platform all we can do is funnel feedback to the responsible product teams. For more information on the current preview status of the ALM Accelerator for Power Platform [follow this link](https://github.com/microsoft/coe-starter-kit/blob/main/CenterofExcellenceALMAccelerator/PREVIEW.md).
 
 ## Demo: ALM accelerator advanced maker experience
 
 Watch how to use the ALM Accelerator for Power Platform.
 [Demo Videos](https://github.com/microsoft/coe-starter-kit/blob/main/CenterofExcellenceALMAccelerator/WALKTHROUGHS.md)
+
+## Configuration of the ALM accelerator advanced maker user settings
+
+In the following table, you can see how the **User Functions** are configured for the **advanced maker** user settings.
+
+| Field        | Value     | Description |
+|--------------|-----------|------------|
+| Import Solutions | Allowed  | Allowing this function shows the **Import Solution** command in the app.|
+| Delete Solutions | Allowed  | This function shows the **Delete Solution** command in the app.|
+| Manage Solutions | Allowed  | This function shows the **Manage Solutions** command in the app.|
+| Drillthrough Status | Allowed  | This function allows users to drill into the Azure DevOps pipeline runs for the promote and deploy functionality.|
+| Profile Creation | Allowed  | This function provides users with the ability to create new deployment profiles in the app.|
+| Profile Updates | Allowed  | This function provides users with the ability to updates deployment profiles in the app.|
+| Advanced Promote | Allowed  | This function provides users with the ability to change between using the advanced promote functionality. They can specify a source and target branch, or create a new branch.|
+| Advanced Deploy | Allowed  | This function provides users with the ability to switch between using the advanced deploy functionality. They can specify a source and target branch for a pull request.|
+| Bypass Prepare | Allowed  | This function provides the user with the ability to skip the preparation step during the promotion of a solution. They can bypass needing to configure deployment settings before committing to source control.|
+| Show All Solutions | Allowed  | This function provides the user with the ability to see all solutions in the selected environment.|
+
+The below table shows how the **User Labels** are configured for the **advanced maker** user settings
+
+| Field        | Value     | Description |
+|--------------|-----------|------------|
+| Deploy Solution |  | Setting the value to blank will use the default label. Default label is **DEPLOY SOLUTION**.|
+| Commit Solution |  | Setting the value to blank will use the default label. Default label is **COMMIT SOLUTION**.|
+| Import Solution |  | Setting the value to blank will use the default label. Default label is **IMPORT SOLUTION**.|
+| Delete Solution |  | Setting the value to blank will use the default label. Default label is **DELETE SOLUTION**.|
 
 ## Walk-through: ALM accelerator advanced maker experience
 
@@ -102,7 +128,7 @@ Watch how to use the ALM Accelerator for Power Platform.
       - For standard environment variables—such as string, number, or JSON—enter the value in the text box to the right of the environment variable name.
       - For data source environment variables, use the dropdown lists to select the appropriate data source to use in the downstream environment.
 
-   - **App Sharing**
+   - **Canvas Apps**
 
       :::image type="content" source="media/almacceleratorpowerplatform-components/aa4pp-deployment-settings-app-sharing.png" alt-text="App Sharing configuration.":::
 
@@ -111,20 +137,39 @@ Watch how to use the ALM Accelerator for Power Platform.
       - To view the group details, select the details icon. This button opens a new browser tab with a link to the Azure AD Group in the Azure portal.
       - To set the permissions, select the permissions dropdown list and set the permissions to either **Can View**, **Can Edit**, or **Can View and Share**.
 
-   - **Component Ownership**
+   - **Group Teams**
 
-      :::image type="content" source="media/almacceleratorpowerplatform-components/aa4pp-deployment-settings-comp-ownership.png" alt-text="Component Ownership configuration.":::
+      :::image type="content" source="media/almacceleratorpowerplatform-components/aa4pp-deployment-settings-group-teams.png" alt-text="Group Teams configuration":::
 
-      - This screen lists all of the flows in your solution. Users can configure the owner of the flow in the downstream environment by selecting a Dataverse user.
-      - Use the dropdown list to select a Dataverse user to own the flow in the downstream environment.
+      - This screen allows the user to configure new Dataverse Teams of type AAD Security Group that can be used for sharing Flows and Custom Connectors
+      - Click the **'+'** icon to add a new Group Team configuration
+      - Enter a **Team Name**, select an **AAD Group** that the team should be linked to and select **Security Roles** as required. The list of security roles is based on those available in the currently selected development environment. Make sure to add any custom security roles to the solution to ensure the security roles are available in the target environment.
+      - Users can add multiple Group Team configurations by clicking the **'+'** to add additional rows
+
+   - **Flows**
+
+      :::image type="content" source="media/almacceleratorpowerplatform-components/aa4pp-deployment-settings-flows.png" alt-text="Deployment settings flows":::
+
+      - This screen lists all of the flows in your solution. Users can configure the owner of the flow, Dataverse Team sharing of the flow, the user with which to activate the flow, whether a flow should be activated or not, and, the sequence of flow activation in the downstream environment.
       - To view the flow, select the name of the flow to open a new tab with the flow definition.
+      - Use the **Owner** dropdown list to select a Dataverse user to own the flow in the downstream environment.
+      - Use the **Team Sharing** dropdown list to select the Dataverse Team to share the flow to. Note, this dropdown will list Dataverse Teams in the downstream environment and Dataverse teams configured in the Group Teams configuration.
+      - Use the **Activation User** dropdown list to select the user that will be used to activate the flow
+      - In the **Flows to Activate and Order** column, the checkbox can be used to configure whether a specific flow should be activated or not. The up and down arrows can be used to organize the rows into the desired sequence in which the flows will be activated. The sequencing of activation is particularly useful if the solution include parent and child flows where child flows must be activated before parent flows.
 
-1. After you've configured your solution, you can push your changes to Git by using the **Commit Solution** command for your solution. Depending on the permissions you're given, a **Show Advanced** toggle might appear. You can select **Show Advanced** to choose an existing branch or to create a new one with a specific naming convention. If you haven't been granted permissions to these options, the app creates a new branch based on your username and deployment profile data.
+   - **Custom Connectors**
+
+      :::image type="content" source="media/almacceleratorpowerplatform-components/aa4pp-deployment-settings-custom-connectors.png" alt-text="Deployment settings custom connectors.":::
+
+      - This screen lists all the custom connectors in the solution. Users can configure sharing of customer connectors to Dataverse Teams in the downstream environment
+      - Use the **Sharing** dropdown list to select the Dataverse Team to share the custom connector to. Note, this dropdown will list Dataverse Teams in the downstream environment and Dataverse teams configured in the Group Teams configuration.
+  
+2. After you've configured your solution, you can push your changes to Git by using the **Commit Solution** command for your solution. Depending on the permissions you're given, a **Show Advanced** toggle might appear. You can select **Show Advanced** to choose an existing branch or to create a new one with a specific naming convention. If you haven't been granted permissions to these options, the app creates a new branch based on your username and deployment profile data.
 
    > [!NOTE]
    > Be sure to publish any app changes before initiating the push.
 
-1. Select **Commit Solution**.
+3. Select **Commit Solution**.
 
  1. In the **Commit Solution** dialog, select an existing branch, or create a new branch based on an existing branch and enter a comment. Use the hashtag notation (for example, **#123**) to link the changes to a specific work item in Azure DevOps, and then select **Prepare Solution**.
  
@@ -135,7 +180,7 @@ Watch how to use the ALM Accelerator for Power Platform.
    > [!NOTE]
    > Using the progress icons links to visualize what's happening in the pipelines in Azure DevOps can be disabled for makers.
 
-1. After you've finished the changes in your solution and you're ready to deploy them across other environments, select the **Deploy Solution** button.
+4. After you've finished the changes in your solution and you're ready to deploy them across other environments, select the **Deploy Solution** button.
 
     > [!NOTE]
     > Be sure to publish any app changes before initiating the push.
@@ -146,17 +191,17 @@ Watch how to use the ALM Accelerator for Power Platform.
 
     - Using the **Advanced Settings**, specify the **Source** and **Target** branch, enter a **Title** and **Comment** for your pull request, and then select **Deploy Solution**.
 
-1. After you deploy the solution, the next steps depend on the approval type of the deployment step.
+5. After you deploy the solution, the next steps depend on the approval type of the deployment step.
 
      - **Pull Request**: A pull request is created for your changes. The remaining steps to merge and release to the test environment occur in Azure DevOps. Depending on the branch policies and triggers configured for your target branch, an Azure DevOps user can approve or reject your pull request based on their findings in the submitted changes. The status of the pull request appears in the app.
 
      - **Environment**: The pipeline to deploy the solution to the target environment will be triggered. The remaining approval steps will occur in Azure DevOps.
 
-1. To initiate a solution upgrade in the target environment, you can tag a pull request with the **solution-upgrade** tag.
+6. To initiate a solution upgrade in the target environment, you can tag a pull request with the **solution-upgrade** tag.
 
-1. Approving the pull request or the pipeline execution (depending on the approval type selected for the step/environment) starts the deployment of your solution to the selected environment. If you get the approval for either your pull request or pipeline execution, the progress indicator states the deployment has started. You can select the right angle bracket (**>**) to visualize the request history.
+7. Approving the pull request or the pipeline execution (depending on the approval type selected for the step/environment) starts the deployment of your solution to the selected environment. If you get the approval for either your pull request or pipeline execution, the progress indicator states the deployment has started. You can select the right angle bracket (**>**) to visualize the request history.
 
       ![Request history for a solution.](media/almacceleratorpowerplatform-components/aa4pp-request-history.png "Request history for a solution")
 
-1. For production, you can either go into **Advanced settings** for the deployment and choose the main branch used to trigger the deployment to production, or create the pull request directly in Azure DevOps.
+8. For production, you can either go into **Advanced settings** for the deployment and choose the main branch used to trigger the deployment to production, or create the pull request directly in Azure DevOps.
    [!INCLUDE[footer-include](../../includes/footer-banner.md)]

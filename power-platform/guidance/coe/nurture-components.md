@@ -102,6 +102,9 @@ The Maker Assessment app can be used to ask users a series of questions regardin
 
 ## Pulse survey components
 
+>[!NOTE]
+>These components will not work in GCC, GCC High and DoD as posting adaptive cards to Teams is not supported in those regions.
+
 ### Tables
 
 | Name | Description |
@@ -113,11 +116,21 @@ The Maker Assessment app can be used to ask users a series of questions regardin
 | Flow | Type | Schedule | Description |
 | --- | --- | --- | --- |
 | Pulse - Survey Makers for CoE feedback | Schedule | Weekly on Thursdays | Posts an adaptive card to randomly identified makers to ask them for feedback on how they feel about the Power Platform support and adoption strategy.. |
-| Pulse [Child] - post adaptive cards to maker | Manual | child flow | Uses AI Builder to translate and analyse the feedback response and stores the response in the Pulse Feedback table.|
+| Pulse [Child] - post adaptive cards to maker | Manual | child flow | Uses AI Builder to translate and analyze the feedback response and stores the response in the Pulse Feedback table.|
+
+Makers receive adaptive cards sent by the **Pulse [Child] - post adaptive cards to maker** flow to provide feedback:
+
+![Makers receive adaptive cards to provide feedback.](media/pulse-1.png "Makers receive adaptive cards to provide feedback.")
 
 ### Power BI
 
 Pulse feedback Power BI Dashboard to display feedback and sentiment over time.
+
+![Pulse overview.](media/pulse-2.png "Pulse overview.")
+
+The dashboard also provides the ability to view detailed feedback with and filter by department that provided it.
+
+![Pulse details.](media/pulse-3.png "Pulse details.")
 
 ## Other nurture components
 
@@ -138,6 +151,6 @@ A canvas app that CoE admins can use to share app and component templates, in ad
 **Prerequisite**: This app uses Microsoft Dataverse. If you have installed this solution in a Production environment, end users need to have a Per User license, or the app needs to be assigned a Per App license, or the environment needs to be covered by pay-as-you-go. If you have installed this solution in a Dataverse for Teams environment, a Microsoft 365 license is required for every user.
 
 > [!NOTE]
-> This app can't be used in the managed solution; it can only be tested and used after you've [imported it into your extended unmanaged solution](modify-components.md). This is due to some limitations in the environment variables and data sources in the canvas apps. For more information, go to [Set up the Template Catalog and upload components](modify-components.md#set-up-the-template-catalog-and-upload-components).
+> This app can't be used in the managed solution; it can only be tested and used after you've [imported it into your extended unmanaged solution](modify-components.md). This is due to some limitations in the environment variables and data sources in the canvas apps.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

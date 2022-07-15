@@ -1,13 +1,13 @@
 ---
-title: "Preview: Microsoft Power Platform self-service analytics export Power Apps inventory and usage data"
+title: "Microsoft Power Platform self-service analytics export Power Platform inventory and usage data (preview)"
 description: Export Power Apps canvas apps inventory and usage data to use with your organization's line-of-business scenarios.
-author: jimholtz
-
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/14/2021
+ms.date: 06/21/2022
 ms.subservice: admin
-ms.author: jimholtz
+author: tjvass
+ms.author: tjvass
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:
@@ -17,11 +17,16 @@ search.app:
   - Flow
 ---
 
-# Preview: Set up Microsoft Power Platform self-service analytics to export Power Apps inventory and usage data
+# Set up Microsoft Power Platform self-service analytics to export Power Platform inventory and usage data (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-With the Power Platform admin center, you can export Power Apps inventory and usage data directly into [Azure Data Lake Storage](https://azure.microsoft.com/solutions/data-lake/) to use with your organization's line-of-business scenarios. By using your own Data Lake Storage, you can "slice and dice" the data based on your unique requirements. You can build custom reports with Power BI, including views at the individual business unit level and detailed app-level reports at the tenant and environment level. Having the data in your own data lake also means that you can store data for the durations specified in your organization's data retention policies.
+With the Power Platform admin center, you can export Power Platform inventory and usage data directly into [Azure Data Lake Storage](https://azure.microsoft.com/solutions/data-lake/) to use with your organization's line-of-business scenarios. By using your own Data Lake Storage, you can "slice and dice" the data based on your unique requirements. You can build custom reports with Power BI, including views at the individual business unit level and detailed app-level reports at the tenant and environment level. Having the data in your own data lake also means that you can store data for the durations specified in your organization's data retention policies.
+
+> [!IMPORTANT]
+> - This is a preview feature.
+> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+> - This feature is being gradually rolled out across regions and might not be available yet in your region.
 
 Data Lake Storage is a key part of Cortana Intelligence, meaning that it works with Azure Synapse Analytics, Power BI, and Azure Data Factory for a complete cloud big-data and advanced analytics platform that helps you with everything from data preparation to doing interactive analytics on large-scale datasets. Architected from the ground up for cloud scale and performance, Data Lake Storage is a cost-effective solution to run big data workloads. With Data Lake Storage, your organization can analyze all its data in a single place with no artificial constraints. 
 
@@ -41,11 +46,11 @@ Data Lake Storage is a key part of Cortana Intelligence, meaning that it works w
 
 [Data Lake Storage](/azure/architecture/data-guide/scenarios/data-lake) enables you to store captured data of any size, type, or ingestion speed in one single, secure location for operational and exploratory analytics. You can use Microsoft Power Platform self-service analytics to export Power Apps inventory and usage data directly to your [Data Lake Storage Gen2](/power-bi/transform-model/dataflows/dataflows-azure-data-lake-storage-integration) locations.
 
-You can store exported data for extended durations, and you can move data to data warehouses. To learn more about building custom reports at tenant and environment levels across business units, see [Create custom dashboards by using Power Apps inventory and usage data](build-custom-reports.md).
+You can store exported data for extended durations, and you can move data to data warehouses. To learn more about building custom reports at tenant and environment levels across business units, see [Create custom dashboards by using Power Platform inventory and usage data](build-custom-reports.md).
 
 ## Extensible analytics with Data Lake Storage
 
-You can use Power Platform admin center self-service options based on Data Lake Storage to extend Power Apps telemetry by using data from other sources. Use cloud analytics and AI to take advantage of predictive analytics within service monitoring solutions. The following diagram illustrates an example of how to derive intelligence from Power Apps telemetry data. 
+You can use Power Platform admin center self-service options based on Data Lake Storage to extend Power Apps telemetry by using data from other sources. Use cloud analytics and AI to take advantage of predictive analytics within service monitoring solutions. The following diagram illustrates an example of how to derive intelligence from Power Platform telemetry data. 
 
 :::image type="complex" source="media/azure-resources.png" alt-text="Diagram showing Azure resources.":::
 A diagram of limitless extensibility options through using cloud analytics and AI is divided into three areas. Microsoft Power Platform apps - Power BI, Power Apps, and Power Automate - are shown collectively supplying governance, monitoring, and management to the middle area, the customer's Data Lake Storage. The data lake includes Power Platform admin center analytics and organizational datasets, all informed by cloud intelligence. On the right, the customer's dashboard is the core of an app workspace where data lake data is analyzed and acted on.
@@ -53,24 +58,18 @@ A diagram of limitless extensibility options through using cloud analytics and A
 
 ## Data
 
-The amount of data that you can export depends on your Power Apps app usage. The initial [Common Data Model](/common-data-model/) schema file contains inventory data of all the Power Apps in your related information. After the initial export, an incremental data push occurs daily.
+The amount of data that you can export depends on your app and flow usage. The initial export includes inventory data of all the Power Apps and Cloud flows across your environment. After the initial export, an incremental data push occurs daily.
 
 For example, an enterprise customer with two years' worth of inventory data might have 300 MB of data to export. After the initial export, approximately 5 to 10 MB of that data would be pushed daily.
 
-<!--
-## Simplify data with Azure Data Lake Store
 
-[Azure Data Lake Store](/azure/architecture/data-guide/scenarios/data-lake) enables you to store captured data of any size, type, and ingestion speed in one single secure location for operational and exploratory analytics. You can use Power Platform self-service analytics to export Power Apps inventory and usage data directly to your [Azure Data Lake Gen2](/power-bi/transform-model/dataflows/dataflows-azure-data-lake-storage-integration) storage locations.
-
-You can store exported data for extended durations, as well as move data to data warehouses. To learn more about building custom reports at tenant and environment levels across business units, see [Prepare Power Apps inventory and usage data for consumption and displaying data insights](build-custom-reports.md).
--->
 ## Set up the data export process for your tenant
 
 Admins should use the Power Platform admin center to set up the data export. Before you begin exporting data, ensure that your Data Lake Storage Gen2 account has been set up as described in this section. Be certain that the admin who sets up the data export already has access to your storage account.
 
 Follow these steps to set up the data lake.
 
-1. Sign in to the Power Platform admin center as an Azure AD global admin, select **Export to Azure Data Lake**, and then select **Power Apps**.
+1. Sign in to the Power Platform admin center as an Azure AD global admin, select **Export to Azure Data Lake**, and then select **Power Apps** or **Cloud flows**.
 
    :::image type="content" source="media/export-data-lake-power-apps.png" alt-text="Screenshot showing Power Apps selected for export to data lake.":::
 
@@ -95,36 +94,11 @@ Microsoft requires that the first time you set up a data export to your organiza
 
 > [!IMPORTANT]
 > A connection with Microsoft's tenant service is required because your tenant must enable principal access to your organization's property; in this case, a [Data Lake Storage Gen2 account](/power-bi/transform-model/dataflows/dataflows-azure-data-lake-storage-integration). This is a one-time setup, which must be performed by your Azure AD admin. When your Azure AD admin grants access permissions to your Azure AD tenant, the process temporarily allows the Microsoft service principal account to export and write data to your Data Lake Storage Gen2 specified storage account only. The Microsoft service principal account used for this will not be granted any permissions for other operations in your Data Lake Storage account.
-<!-- 
-**Set up using the Power Platform admin center portal**
 
-Follow the steps below for setting up your data lake using the [Power Platform Admin Center](https://aka.ms/ppac) portal, and for setting up an Azure Data Lake Gen 2 connection for the first time:
-
-1. Have your Azure AD global admin log into the PPAC portal at [https://aka.ms/ppac](https://aka.ms/ppac).
-
-2. Select the **Export to Azure Data Lake** option.
-
-3. Select **Power Apps**.
-
-4. Choose a subscription from the list that the admin has access to.
-
-5. Choose a resource group from the list in the **Subscription** group.
-
-6. Choose a storage account from the list of accounts in the **Resource** group.
-
-7. Select **Create** to provide consent for the Power Platform admin center to set up the connection to your Azure Data Lake Gen2 account.
-
-> [!NOTE]
-> This option also provides *write* permissions for export of the data to the specified storage account only. No other permissions are being consented to by the customer's global tenant admin.
-
-8. You will now be taken to a dashboard that displays the connection name.
-
-The setup process is now complete, and your data will be exported within 48 hours. The data will then be exported to your tenant's data lake every 24 hours.
--->
 
 
 ### See also
-[Create custom dashboards by using Power Apps inventory and usage data](build-custom-reports.md)
+[Create custom dashboards by using Power Platform inventory and usage data](build-custom-reports.md) <br />
 
 
 

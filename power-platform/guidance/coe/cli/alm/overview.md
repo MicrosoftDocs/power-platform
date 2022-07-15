@@ -23,6 +23,9 @@ You can use the CLI application lifecycle management (ALM) accelerator for Micro
 - [Quick start](#quick-start) guides you through the process of a [demo tenant installation](./scenarios/tenant-deployments.md#demonstration-deployment).
 - [Understand the concepts](#understand-the-concepts) covers scenarios, personas, key concepts, and the installation process of using the Center of Excellence (CoE) CLI.
 
+> [!NOTE]
+> The ALM accelerator for Microsoft Power Platform is currently in public preview. While in preview we will be prioritizing feedback and bugs via GitHub [New issue](https://github.com/microsoft/coe-starter-kit/labels/alm-accelerator). If the issue is something in the platform all we can do is funnel feedback to the responsible product teams. For more information on the current preview status of the ALM Accelerator for Power Platform [follow this link](https://github.com/microsoft/coe-starter-kit/blob/main/CenterofExcellenceALMAccelerator/PREVIEW.md).
+
 ## Prerequisites
 
 To set up the ALM accelerator for Microsoft Power Platform, you'll need to first [install the CoE CLI](../install.md).
@@ -89,9 +92,11 @@ For an administrator, the quick start guide should take about 30 minutes. By the
 
    Deploying to your enterprise? For more information, go to [Enterprise deployment](./scenarios/tenant-deployments.md#enterprise-deployment).
 
-   If you're prompted to create an HTTP with Azure Active Directory (AD) connection, enter **https&semi;\/\/graph&period;microsoft&period;com** for both the **Base Resource URL** and **Azure AD Resource URI**.
+   If you're prompted to create an HTTP with Azure Active Directory (AD) connection, enter **https&colon;\/\/graph&period;microsoft&period;com** for both the **Base Resource URL** and **Azure AD Resource URI**.
 
 1. [Update permissions for the project build service](../../setup-almacceleratorpowerplatform.md#update-permissions-for-the-project-build-service) to enable build pipelines to interact with Git repositories.
+
+1. [Update pipeline permissions to resources](../../setup-almacceleratorpowerplatform.md#setting-resource-access-permissions-for-pipelines) to allow access to required resources.
 
 1. When your makers create [development environments](./development-environments.md), run `CoE ALM maker add` to add the makers to Azure DevOps and share the ALM Accelerator for Power Platform canvas app.
 

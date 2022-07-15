@@ -3,7 +3,7 @@ title: "Microsoft Dataverse and model-driven apps activity logging  | MicrosoftD
 description: Learn how to enable auditing to be used for reports in the Microsoft 365 Security Compliance Center.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/28/2020
+ms.date: 03/29/2020
 author: tjvass
 ms.subservice: admin
 ms.author: tjvass
@@ -23,7 +23,7 @@ Protecting data, preserving privacy, and complying with regulations such as the 
 This topic covers how you can set customer engagement apps to audit a broad range of data processing activities and use the [Microsoft 365 Security and Compliance Center](https://support.office.com/article/go-to-the-office-365-security-compliance-center-7e696a40-b86b-4a20-afcc-559218b7b1b8?ui=en-US&rs=en-US&ad=US) to review the data in activity reports.
 
 ## Requirements
-- A Microsoft 365 Enterprise [E3](https://products.office.com/business/office-365-enterprise-e3-business-software) or [E5](https://products.office.com/business/office-365-enterprise-e5-business-software) subscription is required to do Activity Logging.
+- At least one user assigned a Microsoft/Office 365 [E1](https://www.microsoft.com/microsoft-365/enterprise/office-365-e1) or greater license.
 - Available for production and not sandbox environments.
 
 ## What events are audited
@@ -240,7 +240,7 @@ When audit log search in the Microsoft 365 Security and Compliance Center is tur
 - In future releases, logging will disabled for operations that are determined to not be useful based on a review of the logs. For example, some operations result from automated system activity, not user activity.
 
 ### See also
-[Audit data and user activity for security and compliance](audit-data-user-activity.md)<br />
+[Manage Dataverse auditing](manage-dataverse-auditing.md)<br />
 [Search the audit log in the compliance Center](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-worldwide) <br />
 Search the audit log for user activity using [Office 365 Management APIs overview](/office/office-365-management-api/office-365-management-apis-overview)
 

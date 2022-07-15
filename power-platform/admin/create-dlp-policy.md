@@ -1,10 +1,9 @@
 ---
 title: Create a data loss prevention (DLP) policy | Microsoft Docs
-description: In this quickstart, you learn how to create a data loss prevention (DLP) policy in Power Apps
-
+description: In this topic, you learn how to create a data loss prevention (DLP) policy in Power Apps
 ms.component: pa-admin
-ms.topic: quickstart
-ms.date: 10/11/2021
+ms.topic: conceptual
+ms.date: 06/29/2022
 author: jimholtz
 ms.subservice: admin
 ms.author: jimholtz
@@ -65,10 +64,7 @@ In this example walkthrough, we'll create a tenant-level DLP policy. We'll add S
 
 After this policy is saved, any Power Apps or Power Automate maker who is part of the DLP policy's environment can create an app or a flow that shares data between SharePoint or Salesforce. Any Power Apps or Power Automate resource that includes an existing connection with a connector in the **Non-business** data group won't be allowed to establish connections with SharePoint or Salesforce connectors, and vice versa. Also, these makers won't be able to add Facebook or Twitter connectors to any Power Apps or Power Automate resource.
 
-1. In Power Platform admin center, select **Data policies** > **New policy**.
-
-   > [!div class="mx-imgBorder"] 
-   > ![New data policy.](media/dlp-new-policy.png "New data policy")
+1. In Power Platform admin center, select **Policies** > **Data policies** > **New policy**.
 
    If no policies exist in the tenant, you'll see the following page.
 

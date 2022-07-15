@@ -6,10 +6,9 @@ ms.reviewer: jimholtz
 ms.subservice: admin
 ms.author: jimholtz
 ms.custom: "admin-security"
-
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/18/2021
+ms.date: 05/19/2022
 search.audienceType: 
   - admin
 search.app:
@@ -20,7 +19,7 @@ search.app:
 ---
 # Create users
 
-You use the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] to create user accounts for every user who needs access to apps created using Power Apps and customer engagement apps in Dynamics 365 (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation). The user account registers the user with [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-online-services-environment.md)]. 
+You use the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] to create user accounts for every user who needs access to apps, flows, or chatbots. The user account registers the user with [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-online-services-environment.md)]. 
 
 ## Create a user account  
  When you create a user account in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)], the system generates a user ID and temporary password for the user. You have the option to let the service send an email message to the user as clear text. Although the password is temporary, you might consider copying the information to send to the user through a more secure channel, such as from an email service that can digitally encrypt the contents. 
@@ -112,6 +111,15 @@ The following image shows Microsoft 365 user contact fields.
 
 ![Job title, Department, Office, Office phone, Mobile phone, Fax number, Street address, City, State or province, ZIP or postal code, Country or region.](media/office-365-contact-info.png "Job title, Department, Office, Office phone, Mobile phone, Fax number, Street address, City, State or province, ZIP or postal code, Country or region")
 
+## View and edit a user profile
+To view and edit a user's profile in the Power Platform admin center:
+1. Select an environment and go to **Settings** > **Users + permissions** > **Users**.
+2. Select a user in the list.
+
+On the user profile page you can view and make changes to important user profile information such as Security Roles, Team membership, Business Unit, Manager, Position, and more. You can also **Run diagnostics** to troubleshoot access issues or **Refresh User** to re-sync from Azure Active Directory. 
+
+:::image type="content" source="media/edit-user-profile.png" alt-text="Edit a user's profile.":::
+
 ## Add a license to a user account  
 You can license the user when you create the user account, or you can license the user later. You must assign a license to every user account that you want to access the online service. See [Assign licenses](assign-licenses.md).
 
@@ -133,7 +141,7 @@ To disable a user account, remove a license from the user or remove the user fro
 >
 > You can [assign records](/powerapps/user/assign-or-share-records) to a disabled user account and also [share reports](/dynamics365/customer-engagement/basics/share-report-users-teams) and accounts with them. This can be useful when migrating on-premises versions to online. If you need to assign a security role to users who have a Disabled status, you can do so by enabling the allowRoleAssignmentOnDisabledUsers in [OrgDBOrgSettings](https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm).
 > 
-> A Global admin, Power Platform admin, or a Dynamics 365 admin does not need a license to be enabled in a Dataverse environment. See: [Global admins and Power Platform admins can administer without a license](global-service-administrators-can-administer-without-license.md). But since they are unlicensed, they will be set in the [Administrative access mode](create-users.md#create-a-read-write-user-account).  
+> A Global admin, Power Platform admin, or a Dynamics 365 admin does not need a license to be enabled in an environment. See: [Global admins and Power Platform admins can administer without a license](global-service-administrators-can-administer-without-license.md). But since they are unlicensed, they will be set in the [Administrative access mode](create-users.md#create-a-read-write-user-account).  
 
 You must be a member of an appropriate administrator role to do these tasks. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Assign admin roles](/microsoft-365/admin/add-users/assign-admin-roles)  
 
@@ -141,21 +149,21 @@ You must be a member of an appropriate administrator role to do these tasks. [!I
 
 To enable a user in an environment that has a Dataverse database, you enable sign-in for the user, assign a license to the user, and then add the user to a security group.
 
-**To enable sign-in**
+#### To enable sign-in
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).
 2. Select **Users** > **Active users**, and then select the user. 
 3. Ensure that under the user's display name, you see **Sign in allowed**. If you don't, select **Block this user**, and then unblock sign in.
 
 
-**To assign a license**
+#### To assign a license
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).
 2. Select **Users** > **Active users**, and then select the user. 
 3. Select the **Licenses and Apps** tab, and then select the licenses you want to assign. 
 4. Select **Save changes**. 
 
-**To add a user to a security group**
+#### To add a user to a security group
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).
-2. Select **Groups** > **Groups**. 
+2. Select **Teams & groups** > **Active teams & groups**. 
 3. Select the security group that's associated with your environment. 
 4. Select the **Members** tab. 
 5. Under **Members**, select **View all and manage members** >**Add members**.
@@ -165,15 +173,15 @@ To enable a user in an environment that has a Dataverse database, you enable sig
 
 To disable a user account in an environment that has a Dataverse database, you can either remove the user from the security group or remove the license from the user.
 
-**To remove a user from a security group**
+#### To remove a user from a security group
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).
-2. Select **Groups** > **Groups**. 
+2. Select **Teams & groups** > **Active teams & groups**. 
 3. Select the security group that's associated with your environment. 
 4. Select the **Members** tab. 
 5. Under **Members**, select **View all and manage members**
 6. Select the users in the list to remove them, and then select **Save**.
 
-**To remove a license from a user**
+#### To remove a license from a user
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).
 2. Select **Users** > **Active users**, and then select the user. 
 3. Select the **Licenses and Apps** tab, and then select the licenses you want to remove. 
@@ -195,7 +203,7 @@ Note that removing a license from a user might not always result in disabling th
 
 ## Add users to Dataverse 
 
-For users to have access to applications and data in a Dataverse environment, at a minimum the SystemUser table in Dataverse must have a record corresponding to the respective user identity. There are different mechanisms to add users in Dataverse, either automatic or on demand: 
+For users to have access to applications and data in an environment, at a minimum the SystemUser table in Dataverse must have a record corresponding to the respective user identity. There are different mechanisms to add users in Dataverse, either automatic or on demand: 
 
 > [!TIP]
 > Check out the following video: [Adding users to Dataverse](https://www.microsoft.com/videoplayer/embed/RWJBra).
@@ -205,7 +213,7 @@ For users to have access to applications and data in a Dataverse environment, at
    > [!NOTE]
    > Not all users added in Azure AD will be pickup by the automatic synchronization process. [This section](#user-types) details the eligibility criteria the system background process applies to add a user from Azure AD into Dataverse.
 
-2. If users already exist in Azure AD, they are automatically added to SystemUsers table at first attempt to access the Dataverse environment. Note that if a user already exists in Dataverse, but in a disabled state, attempting to access the environment will result in the user’s state to be updated to “enabled”, assuming they are entitled at the time of access. 
+2. If users already exist in Azure AD, they are automatically added to SystemUsers table at first attempt to access the environment. Note that if a user already exists in Dataverse, but in a disabled state, attempting to access the environment will result in the user’s state to be updated to “enabled”, assuming they are entitled at the time of access. 
 
 3. Users that have the necessary permissions, can use the [API](/powershell/module/microsoft.powerapps.administration.powershell/add-adminpowerappssyncuser?view=pa-ps-latest) to add or update users in Dataverse on demand. 
 
@@ -233,12 +241,12 @@ Below criteria must be met for successfully adding the user in the Dataverse tab
    2. Individual users do not need to have a license when the environment has app pass capacity. This only applies to adding users on demand (either at first attempt to access the environment or through API/Power Platform admin center). 
    3. Individual users do not need to have a license when the tenant they are part of has a tenant level Marketing license. This only applies to adding users on demand (either at first attempt to access the environment or through API/Power Platform admin center). 
    4. Non-interactive users do not need a license 
-   5. Free Dataverse plans from M365 license are honored when users added on-demand (either at first attempt to access the environment or through API/Power Platform admin center)  
+   5. Free Dataverse plans from Microsoft 365 license are honored when users added on-demand (either at first attempt to access the environment or through API/Power Platform admin center)  
 
 > [!NOTE]
 > Guest users should also have a license from the environment’s tenant. License from Guest user's tenant is NOT considered as valid license.
 
-3. If the environment has a security group defined, user must be part of the respective security group, unless the user is a Tenant or Power Platform Administrator. Non-admin users or D365 service admin must be in the security group to access the system. When the owner of the security group is added to Dataverse through an on-demand action, the user will be considered a valid member of the security group and will be added to Dataverse successfully.  
+3. If the environment has a security group defined, user must be part of the respective security group, unless the user is a Tenant or Power Platform Administrator. Non-admin users or Dynamics 365 service admin must be in the security group to access the system. When the owner of the security group is added to Dataverse through an on-demand action, the user will be considered a valid member of the security group and will be added to Dataverse successfully.  
 
 Adding users to Dataverse has different implications depending on the environment type: 
 
@@ -268,11 +276,13 @@ An Administrative user is a user who has access to the Settings and Administrati
 You need to have the System Administrator security role or equivalent permissions to create an administrative user. First, you'll create a user account in Microsoft 365, and then in to the customer engagement app, select the **Administrative** access mode for the account.
 
 > [!NOTE]
+> Any admin user with the Global admin, Power Platform admin, or Dynamics 365 Service admin role will receive the **Administrative** access mode as long as there are no user licenses assigned. This is true regardless of enabling app-passes or pay-as-you-go use at the tenant level.
+> 
 > See [Create an administrative user and prevent elevation of security role privilege](prevent-elevation-security-role-privilege.md) for an example of how an Administrative user account can be used.
 
 1. Create a user account in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)].  
   
-    Be sure to assign a license to the account. You'll remove the license (in step 12) after you've assigned the **Administrative** access mode.
+   Be sure to assign a license to the account. You'll remove the license (in step 12) after you've assigned the **Administrative** access mode.
   
 2. In the **Optional settings** form, expand **Roles**.
 
@@ -429,7 +439,7 @@ The following table shows the fields that are populated on the user form (user r
 </table>
 
 
-## FAQ
+## FAQ 
 
 ### If a user that is added to Dataverse SystemUser table becomes disabled or unlicensed in Azure AD, how is that reflected in Dataverse?  
 User record is not deleted, but its state in Dataverse will be updated to “disabled”.  
@@ -443,6 +453,7 @@ Assigning an Azure AD security group to the environment is a best practice in ge
 
 
 ### See also
+[User settings](users-settings.md) <br />
 [Get started with security roles in Dataverse](/learn/modules/get-started-security-roles/) <br />
 [Assign a security role to a user](assign-security-roles.md) <br />
 [Opt-out of automatic license-based user roles management](opt-out-automatic-license.md)

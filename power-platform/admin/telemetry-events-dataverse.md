@@ -1,14 +1,14 @@
 ---
-title: "Preview: Telemetry events for Microsoft Dataverse  | Microsoft Docs"
+title: "Telemetry events for Microsoft Dataverse | Microsoft Docs"
 description: About telemetry events for Microsoft Dataverse 
 services: powerapps
-author: jimholtz
-
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/28/2021
+ms.date: 05/06/2022
+author: tjvass
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: tjvass
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:
@@ -17,9 +17,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Preview: Telemetry events for Microsoft Dataverse
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Telemetry events for Microsoft Dataverse
 
 The data stream currently provides performance data related to Dataverse API incoming calls, Dataverse plug-in execution calls, and Dataverse SDK calls. It also provides data for failures in plug-in and Dataverse SDK operations.
 
@@ -182,7 +180,7 @@ requests
 
 In this chart, we can see the performance of the API endpoint over a period of time against the number of requests being made.
 
-You can also [set up an alert](/azure/azure-monitor/learn/tutorial-alert) based on the performance of a particular API here within Application Insights.
+You can also [set up an alert](/azure/azure-monitor/app/tutorial-alert) based on the performance of a particular API here within Application Insights.
 
 ### Can I drill down on errors or failures at specific times or for specific users to allow for understanding the call stack?
 
@@ -238,3 +236,6 @@ union *
 ```
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

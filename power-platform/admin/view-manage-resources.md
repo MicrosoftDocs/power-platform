@@ -2,10 +2,9 @@
 title: "Resource overview | MicrosoftDocs"
 description: About resources
 author: jimholtz
-
 ms.component: pa-admin
-ms.topic: conceptual
-ms.date: 05/05/2020
+ms.topic: overview
+ms.date: 06/23/2022
 ms.subservice: admin
 ms.author: jimholtz 
 search.audienceType: 
@@ -20,11 +19,9 @@ search.app:
 
 <!-- This was created for fwlink 2126968. Don't delete. -->
 
-You can now install, configure, and manage Dynamics 365 apps in the Power Platform admin center.
+You can install, configure, and manage apps and portals created using Power Apps, flows created using Power Automate, and Dynamics 365 apps in the Power Platform admin center. Dynamics 365 apps refer to Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, and Dynamics 365 Marketing, and also apps purchased from Microsoft AppSource requiring any of these Dynamics 365 licenses.
 
-Apps refer to model-driven applications in Dynamics 365, Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, and Dynamics 365 Marketing as well as apps purchased from Microsoft AppSource requiring any of these Dynamics 365 licenses.
-
-You can manage apps from either the tenant level or the environment level.
+You can manage portals and Dynamics 365 apps at either the tenant level or the environment level. However, apps and flows can only be managed at the environment level.
 
 See the following topics:
 

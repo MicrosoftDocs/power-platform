@@ -1,14 +1,13 @@
 ---
 title: "Send email on another user's behalf  | MicrosoftDocs"
 description: Set up users to send an outgoing email by updating the From field to another user or queue.
-
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/27/2021
-author: revachauhan
+author: jimholtz
 ms.subservice: admin
-ms.author: rechauha
-ms.reviewer: mkaur
+ms.author: jimholtz
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:

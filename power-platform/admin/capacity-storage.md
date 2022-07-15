@@ -1,11 +1,11 @@
 ---
 title: "New Microsoft Dataverse storage capacity  | MicrosoftDocs"
 description: Introducing a new storage model for Microsoft Dataverse.
-ms.date: 03/09/2022
-ms.topic: "quickstart"
-author: cpdSeattle
+ms.date: 06/21/2022
+ms.topic: conceptual
+author: MicroSri
 ms.subservice: admin
-ms.author: camdebay
+ms.author: sriknair
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
@@ -120,12 +120,12 @@ Select the **Details** button (![Storage data details button.](media/storage-dat
 
 The following details are provided:
 
--   Actual database usage
--   Top database tables and their growth over time
--   Actual file usage
--   Top files tables and their growth over time
--   Actual log usage
--   Top tables and their growth over time
+- Actual database usage
+- Top database tables and their growth over time
+- Actual file usage
+- Top files tables and their growth over time
+- Actual log usage
+- Top tables and their growth over time
 
 ### Microsoft Teams tab
 

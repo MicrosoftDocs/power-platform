@@ -1,6 +1,6 @@
 ---
 title: View Power Automate audit logs. | Microsoft Docs
-description: View Power Automate logs in the Microsoft 365 compliance center.
+description: View Power Automate logs in the Microsoft Purview compliance portal.
 services: ''
 suite: flow
 documentationcenter: na
@@ -9,10 +9,10 @@ manager: kvivek
 editor: ''
 tags: ''
 ms.devlang: na
-ms.topic: article
+ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/03/2021
+ms.date: 03/23/2021
 ms.subservice: admin
 ms.author: deonhe
 search.app: 
@@ -23,7 +23,7 @@ search.audienceType:
 ---
 # View Power Automate audit logs 
 
-You can find logs of Power Automate activities in the [Microsoft 365 compliance center](https://compliance.microsoft.com/). These logs are also accessible to developers via the [Office 365 Management API](/office/office-365-management-api/office-365-management-apis-overview).
+You can find logs of Power Automate activities in the [Microsoft Purview compliance portal](https://compliance.microsoft.com/). These logs are also accessible to developers via the [Office 365 Management API](/office/office-365-management-api/office-365-management-apis-overview).
 
 ## Access the logs
 
@@ -54,14 +54,14 @@ All logging is done at the SDK layer, so a single action can trigger multiple lo
 |Flows | Created flow | The time a flow is created|
 |Flows | Edited flow | Any updates made to the flow|
 |Flows | Deleted flow | When the flow is deleted|
-|Flow permissions | Edited permissions | Every time a user's permissions to the flow changes|
+|Flow permissions | Edited permissions | Every time a user's permissions to a flow changes, for example, when a user is added as co-owner.|
 |Flow permissions | Deleted permissions | Every time a user's permissions to the flow is removed|
 |Trials | Started a paid trial | When a user starts a paid trial|
 |Trials | Renewed a paid trial | When a user renews a paid trial|
 
 ## Get details on base schema for logging
 
-Schemas define the Power Automate fields that are sent to the Microsoft 365 compliance center. Some fields are common to all applications that send audit data to Microsoft 365, while others are specific to Power Automate. The base schema contains these common fields.
+Schemas define the Power Automate fields that are sent to the Microsoft Purview compliance portal. Some fields are common to all applications that send audit data to Microsoft 365, while others are specific to Power Automate. The base schema contains these common fields.
 
 |Field display name | Logical name | Type | Mandatory | Description|
 |-|-|-|-|-|
@@ -80,6 +80,12 @@ Schemas define the Power Automate fields that are sent to the Microsoft 365 comp
 |Recipient UPN | RecipientUPN | Edm.String | No | If permission was updated, shows the UPN of the permission recipient |
 |Additional info | More information, for example, the environment name)|
 
-## Limitations
+## Retention
+Microsoft retains the audit data for 90 days. You can export the audit data in .csv format and then further explore the data with Microsoft Excel or Power BI. 
 
-Only activity from cloud flows is recorded in the Microsoft Compliance Center. Recorded activity for desktop flows is in the Microsoft Dataverse audit logs.
+## Timing 
+Events become available in the logs within 90 minutes of their occurance.
+
+## Limitations
+Only activity from cloud flows is available in the [Microsoft Purview compliance portal](https://compliance.microsoft.com/). Activity for desktop flows is in the Microsoft Dataverse audit logs.
+

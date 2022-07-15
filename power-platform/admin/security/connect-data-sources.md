@@ -3,7 +3,7 @@ title: Connecting and authenticating to data sources
 description: Learn how Power Platform connects and authenticates to external data sources.
 ms.date: 02/14/2022
 ms.service: power-platform
-ms.topic: "get-started-article"
+ms.topic: conceptual
 ms.custom: 
   - "admin-security"
   - "intro-internal"
@@ -31,7 +31,7 @@ Let's look first at how Power Platform services connect with data sources. Power
 
 ## Connecting to Microsoft Dataverse
 
-Power Apps canvas and model-driven apps connect directly to Dataverse without the need for a separate connector. (Canvas apps store consent to work with other Dataverse environments in the Power Apps Resource Provider (RP).) Power Automate authenticates using an API Hub, but all data interactions after that are direct to Dataverse. Both Power Apps and Power Automate support legacy connectors that access Dataverse using connectors (for example, [Dynamics 365 (deprecated)](/connectors/dynamicscrmonline/) and [Microsoft Dataverse (legacy)](/connectors/commondataservice/)).
+Power Apps canvas and model-driven apps connect directly to Dataverse without the need for a separate connector. (Canvas apps store consent to work with other environments in the Power Apps Resource Provider (RP).) Power Automate authenticates using an API Hub, but all data interactions after that are direct to Dataverse. Both Power Apps and Power Automate support legacy connectors that access Dataverse using connectors (for example, [Dynamics 365 (deprecated)](/connectors/dynamicscrmonline/) and [Microsoft Dataverse (legacy)](/connectors/commondataservice/)).
 
 >[!NOTE]
 >Creating canvas apps with [Start from data](/powerapps/maker/canvas-apps/data-platform-create-app) uses a placeholder connector icon to connect to Dataverse. However, no actual connector is involved. For more information, see [Connect canvas apps to Microsoft Dataverse](/powerapps/maker/canvas-apps/connections/connection-common-data-service).

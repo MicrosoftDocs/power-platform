@@ -5,7 +5,7 @@ author: jimholtz
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/03/2020
+ms.date: 02/23/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -22,14 +22,14 @@ search.app:
 ## New Microsoft Cloud Services in India  
   
 ### What is Microsoft announcing?  
- We’re announcing the general availability of customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), served from new datacenter regions in Pune and Chennai, joining [!INCLUDE[pn_Windows_Azure](../includes/pn-windows-azure.md)] and [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] in providing the trusted [!INCLUDE[pn_microsoft_cloud](../includes/pn-microsoft-cloud.md)] in India.  
+ We’re announcing the general availability of Microsoft Power Platform and Dynamics 365 apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), served from new datacenter regions in Pune and Chennai, joining [!INCLUDE[pn_Windows_Azure](../includes/pn-windows-azure.md)] and [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] in providing the trusted [!INCLUDE[pn_microsoft_cloud](../includes/pn-microsoft-cloud.md)] in India.  
   
- Built on foundational principles of security, privacy and control, compliance, and transparency, the [!INCLUDE[pn_microsoft_cloud](../includes/pn-microsoft-cloud.md)] delivers trusted cloud services to enable people and organizations to achieve more. Providing flexible platform and productivity solutions [!INCLUDE[pn_Windows_Azure](../includes/pn-windows-azure.md)], [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)], and now customer engagement apps, the local [!INCLUDE[pn_microsoft_cloud](../includes/pn-microsoft-cloud.md)] is designed to fuel innovation and accelerate India’s digital transformation.  
+ Built on foundational principles of security, privacy and control, compliance, and transparency, the [!INCLUDE[pn_microsoft_cloud](../includes/pn-microsoft-cloud.md)] delivers trusted cloud services to enable people and organizations to achieve more. Providing flexible platform and productivity solutions [!INCLUDE[pn_Windows_Azure](../includes/pn-windows-azure.md)], [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)], and Microsoft Power Platform and Dynamics 365 apps, the local [!INCLUDE[pn_microsoft_cloud](../includes/pn-microsoft-cloud.md)] is designed to fuel innovation and accelerate India’s digital transformation.  
   
 ### What is the benefit to customers?  
  The new local [!INCLUDE[pn_microsoft_cloud](../includes/pn-microsoft-cloud.md)] enables data residency for customers in India, bringing enterprise-grade reliability and performance to regulated industries and other businesses. This includes data replication in multiple regions within India for business continuity, reduced network distance, and the option of a private connection to the cloud with [!INCLUDE[pn_azure_expressroute](../includes/pn-azure-expressroute.md)]. The [!INCLUDE[pn_microsoft_cloud](../includes/pn-microsoft-cloud.md)] in India comes with the same deep commitment to high availability as our other regions, including a financially backed service level agreement of 99.9%.  
   
- For customer engagement apps, data residency means that most customer data will be kept within India, except for [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)] data. For the definition of customer data and details on our data flow maps in Geo, see the [Microsoft Trust Center](https://go.microsoft.com/fwlink/p/?LinkID=393409).  
+ For Power Platform and Dynamics 365 apps, data residency means that most customer data will be kept within India, except for [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)] data. For the definition of customer data and details on our data flow maps in Geo, see the [Microsoft Trust Center](https://go.microsoft.com/fwlink/p/?LinkID=393409).  
   
 ### Where are the Microsoft Cloud India regions?  
  The India Geo will consist of datacenters in Central India (Pune) and South India (Chennai).  
@@ -65,7 +65,7 @@ search.app:
  The customer experience will be unchanged, the workloads for the other services will simply be provisioned from other regions.  
   
 ### When will ExpressRoute be available in India for customers, and through which partners?  
- [!INCLUDE[pn_expressroute](../includes/pn-expressroute.md)] is currently available in India. [View a current list of ExpressRoute locations and partners](/azure/expressroute/expressroute-locations). [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] is currently working to enable customers to use [!INCLUDE[pn_expressroute](../includes/pn-expressroute.md)] with customer engagement apps from the India regions.  
+ [!INCLUDE[pn_expressroute](../includes/pn-expressroute.md)] is currently available in India. [View a current list of ExpressRoute locations and partners](/azure/expressroute/expressroute-locations). [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] is currently working to enable customers to use [!INCLUDE[pn_expressroute](../includes/pn-expressroute.md)] with Power Platform and Dynamics 365 apps from the India regions.  
   
 ### Where can I find more about security, data privacy, and compliance?  
  You can find more information at the  [Microsoft Trust Center](https://go.microsoft.com/fwlink/p/?LinkID=393409).  
@@ -93,10 +93,10 @@ search.app:
 ### If I am scheduled for an update to CRM Online 2015 Update or CRM Online 2015 Update 1, will Microsoft apply the update at the same time as their migration to the India datacenter?  
  You must be updated to [!INCLUDE[pn_crm_online_2015_update](../includes/pn-crm-online-2015-update.md)] or later prior to migrating to the India datacenter.  Customers can schedule their update.  
   
-### If I have both Microsoft 365 services and customer engagement apps, how will migration be handled?  
- The migration of each service will be handled separately. For customer engagement apps, you’ll be able to choose their migration date and time. [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] will work with you to schedule the migration. For [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] scheduling and migration, see [Moving core data to new Microsoft 365 datacenter geos](/microsoft-365/enterprise/moving-data-to-new-datacenter-geos).  
+### If I have both Microsoft 365 services and Power Platform and Dynamics 365 apps, how will migration be handled?  
+ The migration of each service will be handled separately. For Power Platform and Dynamics 365 apps, you’ll be able to choose their migration date and time. [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] will work with you to schedule the migration. For [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] scheduling and migration, see [Moving core data to new Microsoft 365 datacenter geos](/microsoft-365/enterprise/moving-data-to-new-datacenter-geos).  
   
-### Can I move Microsoft 365 and customer engagement apps at the same time?  
+### Can I move Microsoft 365 and Power Platform and Dynamics 365 apps at the same time?  
  The move process for each service is handled separately. The move can be requested to coincide with the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] move.  
   
 ### If my content is stored in the India datacenters, can I access my content for work from locations outside of India?  
@@ -105,7 +105,7 @@ search.app:
 <a name="BKMK_Licensing"></a>   
 ## Licensing and pricing  
   
-### Will all versions of customer engagement apps be available?  
+### Will all versions of Power Platform and Dynamics 365 apps be available?  
  Customers will be able to purchase all licenses that are currently available in the market today. Please see local availability at [Microsoft Dynamics CRM Solutions](https://www.microsoft.com/en-au/dynamics/crm-purchase-online.aspx). Global pricing can be found at [Microsoft Dynamics Pricing List](https://go.microsoft.com/fwlink/p/?LinkID=401462).  
   
 ### How will a customer who has an existing volume license agreement outside of India be billed if they add a new tenant to their agreement that resides in India?  

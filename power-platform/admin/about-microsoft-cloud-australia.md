@@ -5,7 +5,7 @@ author: jimholtz
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/03/2020
+ms.date: 02/23/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -24,17 +24,17 @@ search.app:
 ## Australia GEO expansion announcement  
   
 ### What is Microsoft announcing?  
-The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), are currently available in 130 markets and 44 languages enabling us to sell side-by-side with [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] in the majority of the markets worldwide. With the inclusion of datacenters in Japan (recently announced) and Australia, both targeting Q1 CY2015, our global customers will be served by 17 datacenters covering 6 global regions around the world.   
+Microsoft Power Platform and Dynamics 365 apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), are currently available in 130 markets and 44 languages enabling us to sell side-by-side with [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] in the majority of the markets worldwide. With the inclusion of datacenters in Japan (recently announced) and Australia, both targeting Q1 CY2015, our global customers will be served by 17 datacenters covering 6 global regions around the world.   
   
- This marks an important step for customers and partners on our cloud journey to serve our customers in Australia, New Zealand, and Oceania (Australia GEO). By bringing customer engagement apps to the local region, we’ll be able to serve our customers more effectively and with better performance while also ensuring compliance with local requirements.  
+ This marks an important step for customers and partners on our cloud journey to serve our customers in Australia, New Zealand, and Oceania (Australia GEO). By bringing Power Platform and Dynamics 365 apps to the local region, we’ll be able to serve our customers more effectively and with better performance while also ensuring compliance with local requirements.  
   
 ### What prompted Microsoft to undertake this geographic expansion?  
- In order to better serve customer needs for data residency and reduced latency, we continually evaluate where we should expand availability around the world. We are committed to long-term investment in customer engagement apps and expansion over time.  
+ In order to better serve customer needs for data residency and reduced latency, we continually evaluate where we should expand availability around the world. We are committed to long-term investment in Power Platform and Dynamics 365 apps and expansion over time.  
   
  This global expansion will enable us to deliver on the promise of increasing sales productivity while allowing our customers to sell effectively, market smarter, and provide care everywhere to offer amazing experiences to their customers.  
   
-### What are the future geographic expansion plans for customer engagement apps?  
- Geographic expansion of customer engagement apps is a high priority and we’re constantly evaluating market needs. While we have no additional information or specifics on future plans to announce at this time, we will update if and when we have something to share.  
+### What are the future geographic expansion plans for Power Platform and Dynamics 365 apps?  
+Geographic expansion of Power Platform and Dynamics 365 apps is a high priority and we’re constantly evaluating market needs. While we have no additional information or specifics on future plans to announce at this time, we will update if and when we have something to share.  
   
 <a name="BKMK_Overview"></a>   
 
@@ -44,7 +44,7 @@ The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service,
  The Australia Geo will consist of datacenters in the Australia East Region (New South Wales) and the Australia Southeast Region (Victoria).  
   
 ### What does this announcement mean for customers in the Australia Geo?  
- [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] is committed to meeting the growing demand for reliable and connected devices and services for our customers around the globe. We have heard loud and clear that our customers in the Australia Geo need locally delivered services. The growth of customer engagement apps in the Australia Geo means we can better serve the needs of these customers in three ways:  
+ [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] is committed to meeting the growing demand for reliable and connected devices and services for our customers around the globe. We have heard loud and clear that our customers in the Australia Geo need locally delivered services. The growth of Power Platform and Dynamics 365 apps in the Australia Geo means we can better serve the needs of these customers in three ways:  
   
 - Most customer data will be kept within Australia, except for [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)] data*, helping customers meet data residency requirements.  
   
@@ -63,11 +63,11 @@ Services deployed in the Australia East Region will replicate data to the Austra
   
   - If the account country/region is Australia, New Zealand or Fiji, Dataverse resources will be provisioned in the Australia East and Southeast Region datacenters.  
   
-  - If the account country/region is not Australia, New Zealand, or Fiji, the customer will not be able to provision services in the Australia East and Southeast Region datacenters. To do so a customer needs to try or purchase customer engagement apps (such as Dynamics 365 Sales and Customer Service) for an organization located in Australia, New Zealand or Fiji. The customer can create another Web direct account for organizations located in Australia, New Zealand and Fiji, with a billing address in any these regions, if they wish to select and deploy services in the Australia East and Southeast Region datacenters.  
+  - If the account country/region is not Australia, New Zealand, or Fiji, the customer will not be able to provision services in the Australia East and Southeast Region datacenters. To do so a customer needs to try or purchase Power Platform and Dynamics 365 apps (such as Dynamics 365 Sales and Customer Service) for an organization located in Australia, New Zealand or Fiji. The customer can create another Web direct account for organizations located in Australia, New Zealand and Fiji, with a billing address in any these regions, if they wish to select and deploy services in the Australia East and Southeast Region datacenters.  
   
 - For Volume Licensing (VL) customers, access to the datacenters is based on the country/region in which the volume license agreement was signed.  
   
-  - If the VL agreement was signed in Australia, New Zealand, or Fiji, the customer will be able to use services in the Australia East and Southeast region datacenters. Accounts added to the VL agreement will be enabled to use customer engagement apps in the Australia East and Southeast Region datacenters.  
+  - If the VL agreement was signed in Australia, New Zealand, or Fiji, the customer will be able to use services in the Australia East and Southeast region datacenters. Accounts added to the VL agreement will be enabled to use Power Platform and Dynamics 365 apps in the Australia East and Southeast Region datacenters.  
   
   - VL customers can also create a secondary deployment in Australia, New Zealand, or Fiji under an existing VL agreement by either signing an enrollment in Australia, New Zealand, or Fiji or by applying for a multi-tenant amendment through the local Licensing Specialist.  
   
@@ -100,24 +100,24 @@ Services deployed in the Australia East Region will replicate data to the Austra
  A New Zealand and Oceania customer may not place orders under its existing agreement for any affiliate located in Australia, nor grant any affiliate located in Australia administrative rights to manage subscriptions, if the customer elects to access and use services delivered from datacenters located in Australia. An affiliate located in Australia that wants to access and use Online Services delivered from our datacenters located in Australia must enter into its own subscription under its separate [!INCLUDE[pn_MS_Online_Services](../includes/pn-ms-online-services.md)] Agreement.  
   
 ### Will Microsoft Dynamics Marketing, Social Engagement, and Parature be available in the Australia datacenters?  
- These services will be available for purchase in the local market but will be delivered outside of the Australia Datacenters at this time. Note: customer engagement apps leverage [!INCLUDE[pn_microsoft_azure_active_directory](../includes/pn-microsoft-azure-active-directory.md)] and Multi-Factor Authentication, which don’t offer a region choice to customers.  
+ These services will be available for purchase in the local market but will be delivered outside of the Australia Datacenters at this time. Note: Power Platform and Dynamics 365 apps leverage [!INCLUDE[pn_microsoft_azure_active_directory](../includes/pn-microsoft-azure-active-directory.md)] and Multi-Factor Authentication, which don’t offer a region choice to customers.  
   
-### Will customer engagement apps be available on Azure Infrastructure as a Service (IaaS) in Australia?  
- At this time, customer engagement apps are only available for Dev/Test scenarios and isn’t supported for production use cases. Developers can leverage their MSDN subscription and [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] credits for dev/test scenarios. Note: we recently announced intent to support customer engagement apps on [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] IaaS but we’re dependent on [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] Premium Storage availability in each geography. Azure’s Limited Public Preview will only be available in the U.S. and part of Europe.  
+### Will Power Platform and Dynamics 365 apps be available on Azure Infrastructure as a Service (IaaS) in Australia?  
+ At this time, Power Platform and Dynamics 365 apps are only available for Dev/Test scenarios and isn’t supported for production use cases. Developers can leverage their MSDN subscription and [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] credits for dev/test scenarios. Note: we recently announced intent to support Power Platform and Dynamics 365 apps on [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] IaaS but we’re dependent on [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] Premium Storage availability in each geography. Azure’s Limited Public Preview will only be available in the U.S. and part of Europe.  
   
 ### Where can I find more about security, data privacy, and compliance?  
  The [Microsoft Dynamics 365 Trust Center](https://go.microsoft.com/fwlink/p/?LinkID=393409) will be updated as needed when the Australia Datacenters launch into general availability.  
   
 ### What app data be in Australia datacenters at general availability?  
- We’ll store all customer data, including backups, within the Australia Datacenter. For any [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] services that are running in conjunction with customer engagement apps those services will follow the data storage rules for [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)].  
+ We’ll store all customer data, including backups, within the Australia Datacenter. For any [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] services that are running in conjunction with Power Platform and Dynamics 365 apps those services will follow the data storage rules for [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)].  
   
-### Will customer engagement apps be Information Security Registered Assessors Program (IRAP) certified when the datacenters are live in Australia?  
- We’re actively investigating [IRAP](https://www.asd.gov.au/infosec/irap/index.htm) requirements and how they relate specifically to customer engagement apps and we’ll share more information at a later date.  
+### Will Power Platform and Dynamics 365 apps be Information Security Registered Assessors Program (IRAP) certified when the datacenters are live in Australia?  
+ We’re actively investigating [IRAP](https://www.asd.gov.au/infosec/irap/index.htm) requirements and how they relate specifically to Power Platform and Dynamics 365 apps and we’ll share more information at a later date.  
   
-### Where can I find out more about the physical infrastructure for customer engagement apps?  
+### Where can I find out more about the physical infrastructure for Power Platform and Dynamics 365 apps?  
  [Microsoft Cloud Infrastructure and Operations (MCIO)](https://go.microsoft.com/fwlink/p/?LinkID=528551) powers the Microsoft cloud services. MCIO focuses on smart growth, high reliability, operational excellence, cost-effectiveness, environmental sustainability, and a trustworthy online experience for customers and partners worldwide.  
   
- MCIO delivers the core infrastructure and foundational technologies for Microsoft's 200+ online businesses including [!INCLUDE[pn_bing](../includes/pn-bing.md)], [!INCLUDE[pn_outlook_com](../includes/pn-outlook-com.md)], [!INCLUDE[pn_msn](../includes/pn-msn.md)], [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)], [!INCLUDE[pn_xbox_live](../includes/pn-xbox-live.md)], and customer engagement apps. The infrastructure is comprised of a large global portfolio of datacenters, servers, content distribution networks, edge computing nodes, and fiber optic networks.  
+ MCIO delivers the core infrastructure and foundational technologies for Microsoft's 200+ online businesses including [!INCLUDE[pn_bing](../includes/pn-bing.md)], [!INCLUDE[pn_outlook_com](../includes/pn-outlook-com.md)], [!INCLUDE[pn_msn](../includes/pn-msn.md)], [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)], [!INCLUDE[pn_xbox_live](../includes/pn-xbox-live.md)], and Power Platform and Dynamics 365 apps. The infrastructure is comprised of a large global portfolio of datacenters, servers, content distribution networks, edge computing nodes, and fiber optic networks.  
   
 <a name="BKMK_Migration"></a>   
 
@@ -168,24 +168,24 @@ Services deployed in the Australia East Region will replicate data to the Austra
 ### How will Microsoft engage with me on the migration?  
  Once you have been scheduled for migration, a member of the [!INCLUDE[pn_Microsoft_Support](../includes/pn-microsoft-support.md)] team will work directly with you to discuss scheduling and any other issues that may come up during the migration.  
   
-### If I have both Microsoft 365 services and customer engagement apps, how will migration be handled?  
- The migration of each service will be handled separately. For customer engagement apps, you’ll be able to choose their migration date and time. [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] will work with you to schedule the migration. For [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] scheduling and migration, see [Moving core data to new Microsoft 365 datacenter geos](/microsoft-365/enterprise/moving-data-to-new-datacenter-geos).  
+### If I have both Microsoft 365 services and Power Platform and Dynamics 365 apps, how will migration be handled?  
+ The migration of each service will be handled separately. For Power Platform and Dynamics 365 apps, you’ll be able to choose their migration date and time. [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] will work with you to schedule the migration. For [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] scheduling and migration, see [Moving core data to new Microsoft 365 datacenter geos](/microsoft-365/enterprise/moving-data-to-new-datacenter-geos).  
   
-### Can I move Microsoft 365 and customer engagement apps at the same time?  
+### Can I move Microsoft 365 and Power Platform and Dynamics 365 apps at the same time?  
  The move process for each service is handled separately but the move can be scheduled to coincide with the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] move if requested.  
   
 <a name="BKMK_Pricing"></a>   
 
 ## Pricing and licensing  
   
-### Will all versions of customer engagement apps be available?  
+### Will all versions of Power Platform and Dynamics 365 apps be available?  
  Customers will be able to purchase all licenses that are currently available in market today. Please see local availability at [Microsoft Dynamics CRM Solutions](https://www.microsoft.com/en-au/dynamics/crm-purchase-online.aspx). Global pricing can be found at [Microsoft Dynamics Pricing List](https://go.microsoft.com/fwlink/p/?LinkID=401462)  
   
 ### How will a customer who has an existing volume license (VL) agreement outside of Australia be billed if they add a new tenant to their agreement that resides in Australia?  
  The additional seats will be invoiced at the same rate on the customer’s invoice. The business desk will need to provide a multi-tenant amendment to provide an additional tenant in Australia.  
   
 ### Will customers who purchase Dynamics CRM Online and an additional service such as Parature, Dynamics Marketing, or Microsoft Social Engagement be taxed differently per service?  
- [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] has a datacenter footprint that varies according to each online service offered. The customer engagement apps will be provisioned and available from datacenters located within Australia, which makes those services subject to some taxes that do not necessarily apply to tenants located and provisioned outside Australia. [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)] has their own datacenter footprint; they’re offered from to customers in Australia from datacenters outside of Australia. Therefore, these online services are subject to a different tax treatment.  
+ [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] has a datacenter footprint that varies according to each online service offered. The Power Platform and Dynamics 365 apps will be provisioned and available from datacenters located within Australia, which makes those services subject to some taxes that do not necessarily apply to tenants located and provisioned outside Australia. [!INCLUDE[pn_netbreeze_long](../includes/pn-social-engagement-long.md)] has their own datacenter footprint; they’re offered from to customers in Australia from datacenters outside of Australia. Therefore, these online services are subject to a different tax treatment.  
   
 <a name="BKMK_Tax"></a>   
 ## Tax and billing  
