@@ -87,7 +87,7 @@ Additional **RTD** and **TNF** values may be supported in the future. If mor
 
     :::image type="content" source="media/function-readnfc/onselect-formula.png" alt-text="Above formula entered as the OnSelect property of the button.":::
 
-    This formula reads an NFC tag using the `ReadNFC()` function, and displays type information about the result. And then, collects read NFC tags to populate the `tagRecords` collection to be used for the gallery in the next steps.
+    This formula reads an NFC tag using the `ReadNFC()` function, and displays type information about the result. Then it collects the read NFC tags to populate the `tagRecords` collection to be used for the gallery in the next steps.
 
 1. Add a [**Gallery**](/power-apps/maker/canvas-apps/controls/control-gallery) control with a vertical layout.
 
