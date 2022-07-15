@@ -66,7 +66,7 @@ To allocate add-ons, select **Manage**. For detailed information, see [Allocate 
 
 After an admin allocates Power Apps per app plan to an environment, they're assigned to unlicensed users when an app in that environment is shared with them. 
 
-Follow these steps to turn off assigning per app plans for users when an app is shared with them:
+Follow these steps to turn on assigning per app plans for users when an app is shared with them:
 
 1. Choose the app in [Power Apps](https://make.powerapps.com).
 
