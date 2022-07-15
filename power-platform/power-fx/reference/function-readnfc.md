@@ -19,6 +19,10 @@ contributors:
   - anuitz
 ---
 
+<!-- Note from editor: In line 59, looks like a word is missing: "...when running the on a native mobile app ..."   -->
+
+
+
 # ReadNFC function in Power Apps
 
 Reads a Near Field Communication (NFC) tag.
@@ -45,12 +49,9 @@ If the NDEF record isn't supported (for example, the TNF isn't of type *Well Kno
 
 Always check the payload values for *blank* using the [**IsBlank**](function-isblank-isempty.md) function before using it. You don't need to check the **RTD** and **TNF** values yourself as they must be the correct values for **Text** and **URI** to have a non-*blank* value.
 
-
-
-
 Additional **RTD** and **TNF** values may be supported in the future. If more values are supported, additional payload columns will also be added. The raw **RTD** and **TNF** values are provided for informational purposes and don't need to be consulted if the payload column is checked for *blank*. More information about these values and their use is available through the [NFC Forum](https://nfc-forum.org/).
 
-**ReadNFC** doesn't require a tag contain NDEF records to be used, you may still get the tag identifier if one is available.  
+**ReadNFC** doesn't require a tag containing NDEF records to be used, but you may still get the tag identifier if one is available.  
   
 **ReadNFC** can only be used in [behavior formulas](/power-apps/maker/canvas-apps/working-with-formulas-in-depth).
 
