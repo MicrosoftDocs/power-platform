@@ -199,7 +199,7 @@ In the example below, User A is licensed with a Power Apps and Power Automate pe
 
 :::image type="content" source="media/pay-as-you-go-measured-usage-above-entitlements.png" alt-text="Measured usage above entitlements":::
 
-# [Table](#tab/table)
+# [Table](#tab/table) 
 
 Measured usage *above* limits
 
