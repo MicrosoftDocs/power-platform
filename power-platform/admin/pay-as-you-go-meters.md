@@ -4,7 +4,7 @@ description: If you're using a pay-as-you-go plan, three meters determine how mu
 author: Kavishi
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/29/2022
+ms.date: 07/15/2022
 ms.subservice: admin
 ms.author: kaagar
 ms.reviewer: jimholtz 
@@ -122,7 +122,7 @@ Power Automate flows can either be triggered directly via a user in a Power App,
 - Flows triggered directly from a Power App will have no additional cost since by running the Power App, the user’s standalone Power Apps license or the Power Apps PAYG meter will cover their usage of Power Automate.  
 - For flows running in response to an automated trigger (owned by a user without a Power Apps or Power Automate license), you have the flexibility to choose between the following options: 
   - Pay the normal run rates called out above -- charged $0.60 or $3.00 depending on where it runs (this in the default behavior), or, 
-  - For cloud flows only, if the flow uses the same data sources as a Power App, you can link that flow to the app using a [PowerShell script](https://docs.microsoft.com/en-us/power-platform/admin/powerapps-powershell#associate-in-context-flows-to-a-power-app). When you link a flow to an app, usage will be covered by the user’s standalone Power Apps license or the Power Apps PAYG meter.   
+  - For cloud flows only, if the flow uses the same data sources as a Power App, you can link that flow to the app using a [PowerShell script](powerapps-powershell.md#associate-in-context-flows-to-a-power-app). When you link a flow to an app, usage will be covered by the user’s standalone Power Apps license or the Power Apps PAYG meter.  
 
 #### Choose the right subscription to save costs
 Prepaid flows and Pay-as-you-go flows can co-exist in same environments as Pay-as-you-go plan complements prepaid subscriptions. Admins can understand usage patterns using Power platform admin center reports and move users to pre-pay licenses for optimal pricing.
@@ -132,12 +132,12 @@ Prepaid flows and Pay-as-you-go flows can co-exist in same environments as Pay-a
  
 |Flow |Month #1 flow runs  |Month #2 flow runs |Month #3 flow runs |Charges for 3 months using prepaid licenses| Charges for 3 months using Pay-as-you-go| Recommendation|
 |---------|---------|---------|---------|-------------|-------------|------------|
-|**Flow1** - Automated/Scheduled flow -  1 user running the flow | 100      |  25       |   20     | 3months* $15 Per user license = $45| 145 runs* $0.60/run = $87|Power Automate per user license|
-|**Flow 2**- Instant flow – 10 users running the flow| 100      |  25       |   20     |3months* 10 users*$15per user license = $450| 145 runs* $0.60/run = $87|Pay-as-you-go|
-|**Flow 3** – attended RPA- 10 users running the flow | 100      |  25       |   20     | 3months*10 users*$40 per user with attended RPA = $1200| 145 runs* $0.60/run = $87)|Pay-as-you-go|
-| **Flow 4** – Unattended RPA – 2 concurrent runs| 100      |  25       |   20     |3 months*($40 per user with attnd RPA+2 bots*$150 per unattended addon) = $1020|145 runs*$3/run = $435 |Pay-as-you-go|
-| **Flow 5** – Seasonal flow - 1 user running the flow| 0      |  0      |   40     |3 month* $15 Per user license = $45|40 runs*$0.60/run = $24|Pay-as-you-go|
-|**Flow 6** – Organizational flow running under service account/service principal | 100      |  25       |   20     | 3months *$100 per flow license = $300| 145 runs* $0.60/run = $87|Pay-as-you-go|
+|**Flow1** - Automated/Scheduled flow -  1 user running the flow | 100      |  25       |   20     | 3months x $15 Per user license = $45| 145 runs x $0.60/run = $87|Power Automate per user license|
+|**Flow 2**- Instant flow – 10 users running the flow| 100      |  25       |   20     |3months x 10 users x $15per user license = $450| 145 runs x $0.60/run = $87|Pay-as-you-go|
+|**Flow 3** – attended RPA- 10 users running the flow | 100      |  25       |   20     | 3months x 10 users x $40 per user with attended RPA = $1200| 145 runs x $0.60/run = $87)|Pay-as-you-go|
+| **Flow 4** – Unattended RPA – 2 concurrent runs| 100      |  25       |   20     |3 months x ($40 per user with attended RPA+2 bots x $150 per unattended addon) = $1020|145 runs x $3/run = $435 |Pay-as-you-go|
+| **Flow 5** – Seasonal flow - 1 user running the flow| 0      |  0      |   40     |3 month x $15 Per user license = $45|40 runs x $0.60/run = $24|Pay-as-you-go|
+|**Flow 6** – Organizational flow running under service account/service principal | 100      |  25       |   20     | 3months x $100 per flow license = $300| 145 runs x $0.60/run = $87|Pay-as-you-go|
  
 > [!NOTE]
 > The prices shown in this example are illustrative only. Your organization's pricing may vary based on your contract with Microsoft.
