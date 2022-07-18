@@ -41,7 +41,7 @@ Beginning February 2022, eligible customers can choose to deploy Power Virtual A
 
 Microsoft has designed the platform and our operational procedures to meet the requirements aligning with the DISA SRG IL4 compliance framework.  
 
-This option enables and requires the customer to leverage Azure AD Government for customer identities, in contrast to GCC, which leverages the public Azure AD. 
+This option enables and requires the customer to leverage Azure AD Government for customer identities, in contrast to GCC, which leverages the public Azure AD.
 
 For the US Department of Defense contractor customer base, Microsoft operates the service in a manner that enables these customers to meet ITAR commitment and DFARS acquisition regulations, as documented and required by their contracts with the US Department of Defense. A Provisional Authority to Operate has been granted by DISA.
 
@@ -163,18 +163,18 @@ For those customers that implement network restrictions, ensure access to the fo
 
 ### GCC customers
 
-- *.azure.net*
-- *.azure.us*
-- *.azure-apihub.us*
-- *.azureedge.net*
-- *.crm9.dynamics.com*
-- *.microsoft.com*
-- *.microsoft.us*
-- *.microsoftonline.com*
-- *.usgovcloudapi.net*
-- *.windows.net*
+- _.azure.net_
+- _.azure.us_
+- _.azure-apihub.us_
+- _.azureedge.net_
+- _.crm9.dynamics.com_
+- _.microsoft.com_
+- _.microsoft.us_
+- _.microsoftonline.com_
+- _.usgovcloudapi.net_
+- _.windows.net_
 
-Refer to the [IP ranges](https://www.microsoft.com/download/confirmation.aspx?id=57063) for *AzureCloud.usgovtexas* and*AzureCloud.usgovvirginia* to enable access to Dataverse instances that users and administrators may create within your tenant.
+Refer to the [IP ranges](https://www.microsoft.com/download/confirmation.aspx?id=57063) for _AzureCloud.usgovtexas_ and _AzureCloud.usgovvirginia_ to enable access to Dataverse instances that users and administrators may create within your tenant.
 
 ## Connectivity between Power Virtual Agents US Government and Public Azure Cloud services
 
@@ -184,7 +184,7 @@ Azure is distributed among multiple clouds. By default, tenants are allowed to 
 
 - USGov Texas
 
-Refer to the [Azure IP Ranges and Service Tags - US Government Cloud](https://www.microsoft.com/download/confirmation.aspx?id=57063) document, focusing attention on *AzureCloud.usgovtexas*, and*AzureCloud.usgovvirginia*. Also note that these are the IP ranges required for your end users to have access to the service URLs.
+Refer to the [Azure IP Ranges and Service Tags - US Government Cloud](https://www.microsoft.com/download/confirmation.aspx?id=57063) document, focusing attention on _AzureCloud.usgovtexas_, and _AzureCloud.usgovvirginia_. Also note that these are the IP ranges required for your end users to have access to the service URLs.
 
 ## Power Virtual Agents US Government feature limitations
 
