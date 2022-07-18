@@ -1,14 +1,13 @@
 ---
 title: "Important changes (deprecations) coming in Power Apps and Power Automate"
 description: Important changes (deprecations) coming in Power Apps and Power Automate 
-ms.date: 06/15/2022
+ms.date: 07/15/2022
 ms.topic: "article"
 ms.subservice: admin
 searchScope:
   - "Power Platform"  
 ms.custom:
  - dyn365-hub
-
 author: KumarVivek
 ms.author: kvivek
 ---
