@@ -73,7 +73,7 @@ Additionally, users and makers are notified on the Environments list page and En
 
 Power Platform calculates a single measure of inactivity for each Dataverse for Teams environment. The measure accounts for all activity by users, makers, and admins across Power Apps, Power Automate, Power Virtual Agents, and Dataverse.
 
-Most create, read, update, and delete operations on the environment and its resources that a user, maker, or admin initiates are considered activity. Most read operations aren't accounted for.<!-- Doesn't the last sentence in this paragraph contradict the first one? -->
+Most create, read, update, and delete operations on the environment and its resources that a user, maker, or admin initiates are considered activity. Most read operations aren't accounted for.
 
 Here are some examples of the types of activities that are included in the measure:
 
@@ -122,9 +122,11 @@ Administrators can change the length of time Power Platform waits to disable ina
     :::image type="content" source="media/inactive-environment-deletion-policy.png" alt-text="Screenshot of the Teams environment deletion policy settings in Power Platform admin center.":::
 
 ### See also
-
-[Microsoft Dataverse for Teams environments](about-teams-environment.md)  
-[Recover environment](recover-environment.md)  
+[Microsoft Dataverse for Teams environments](about-teams-environment.md)<br />
+[Recover environment](recover-environment.md)  <br />
 [Automatic environment cleanup](automatic-environment-cleanup.md)
+
+
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
