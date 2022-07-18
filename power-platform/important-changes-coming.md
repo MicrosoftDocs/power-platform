@@ -1,14 +1,13 @@
 ---
 title: "Important changes (deprecations) coming in Power Apps and Power Automate"
 description: Important changes (deprecations) coming in Power Apps and Power Automate 
-ms.date: 06/15/2022
+ms.date: 07/15/2022
 ms.topic: "article"
 ms.subservice: admin
 searchScope:
   - "Power Platform"  
 ms.custom:
  - dyn365-hub
-
 author: KumarVivek
 ms.author: kvivek
 ---
@@ -22,6 +21,9 @@ For deprecation information of other products, see [Other deprecation articles](
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability will continue to work and is fully supported until it is officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
 
+## Custom message field deprecated 
+
+Effective July 1, 2022, the Custom message field is deprecated from the environment Edit details page.
 
 ## Power Apps for Windows will be deprecated and replaced with a new app
 
