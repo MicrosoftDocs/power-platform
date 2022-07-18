@@ -85,7 +85,7 @@ To assist with diagnosing and resolving a support issue, you must grant consent 
 
 **Updated consent on ‘new support request’ form**
 
-image
+:::image type="content" source="media/support-allow-access.png" alt-text="Allow access for advanced investigation and creation of support environment.":::
 
 **Consent options**
 
@@ -93,7 +93,7 @@ image
 
 **Consent section On ticket settings** 
 
-image
+:::image type="content" source="media/support-consent-ticket.png" alt-text="Support consent as seen in the request ticket.":::
 
 ### What kind of data access does Microsoft have? 
 
