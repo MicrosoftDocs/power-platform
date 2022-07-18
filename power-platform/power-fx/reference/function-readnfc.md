@@ -41,18 +41,18 @@ A single **NDEFRecord** contains the following columns:
 | Text       | Text      | The text payload of the NFC tag if RTD is *TEXT*, *blank* otherwise.                       |
 | URI        | Hyperlink | The URI payload of the NFC tag if RTD is *URI*, *blank* otherwise.                         |
 
-If the NDEF record isn't supported (for example, the TNF isn't of type *Well Known*) then it will not be returned as part of the **NDEFRecords** table.
+If the NDEF record isn't supported (for example, the TNF isn't of type *Well Known*), then it won't be returned as part of the **NDEFRecords** table.
 
 Always check the payload values for *blank* using the [**IsBlank**](function-isblank-isempty.md) function before using it. You don't need to check the **RTD** and **TNF** values yourself as they must be the correct values for **Text** and **URI** to have a non-*blank* value.
 
 Additional **RTD** and **TNF** values may be supported in the future. If more values are supported, additional payload columns will also be added. The raw **RTD** and **TNF** values are provided for informational purposes and don't need to be consulted if the payload column is checked for *blank*. More information about these values and their use is available through the [NFC Forum](https://nfc-forum.org/).
 
-**ReadNFC** doesn't require a tag contain NDEF records to be used, you may still get the tag identifier if one is available.  
+**ReadNFC** doesn't require a tag containing NDEF records to be used, but you may still get the tag identifier if one is available.  
   
 **ReadNFC** can only be used in [behavior formulas](/power-apps/maker/canvas-apps/working-with-formulas-in-depth).
 
 > [!NOTE]
-> **ReadNFC** is only supported when running the on a native mobile app, such as the [iOS](https://apps.apple.com/us/app/power-apps/id1047318566) and [Android](https://play.google.com/store/apps/details?id=com.microsoft.msapps) apps. Even with a supported player, a device may not support NFC. If your application has **Formula-level error management** turned on, the function will return an error. Otherwise, an error message will be shown to the user and the function will return a *blank* record.
+> **ReadNFC** is only supported when running the app on a native mobile app, such as the [iOS](https://apps.apple.com/us/app/power-apps/id1047318566) and [Android](https://play.google.com/store/apps/details?id=com.microsoft.msapps) apps. Even with a supported player, a device may not support NFC. If your application has **Formula-level error management** turned on, the function will return an error. Otherwise, an error message will be shown to the user and the function will return a *blank* record.
 
 ## Syntax
 
@@ -83,7 +83,7 @@ Additional **RTD** and **TNF** values may be supported in the future. If mor
 
     :::image type="content" source="media/function-readnfc/onselect-formula.png" alt-text="Above formula entered as the OnSelect property of the button.":::
 
-    This formula reads an NFC tag using the `ReadNFC()` function, and displays type information about the result. And then, collects read NFC tags to populate the `tagRecords` collection to be used for the gallery in the next steps.
+    This formula reads an NFC tag using the `ReadNFC()` function, and displays type information about the result. Then it collects the read NFC tags to populate the `tagRecords` collection to be used for the gallery in the next steps.
 
 1. Add a [**Gallery**](/power-apps/maker/canvas-apps/controls/control-gallery) control with a vertical layout.
 
