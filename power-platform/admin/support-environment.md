@@ -87,7 +87,7 @@ To assist with diagnosing and resolving a support issue, you must grant consent 
 
 :::image type="content" source="media/support-allow-access.png" alt-text="Allow access for advanced investigation and creation of support environment.":::
 
-**Consent section On ticket settings** 
+**Consent section in ticket settings** 
 
 :::image type="content" source="media/support-consent-ticket.png" alt-text="Support consent as seen in the request ticket.":::
 
