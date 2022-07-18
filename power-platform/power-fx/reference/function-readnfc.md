@@ -19,10 +19,6 @@ contributors:
   - anuitz
 ---
 
-<!-- Note from editor: In line 59, looks like a word is missing: "...when running the on a native mobile app ..."   -->
-
-
-
 # ReadNFC function in Power Apps
 
 Reads a Near Field Communication (NFC) tag.
@@ -56,7 +52,7 @@ Additional **RTD** and **TNF** values may be supported in the future. If mor
 **ReadNFC** can only be used in [behavior formulas](/power-apps/maker/canvas-apps/working-with-formulas-in-depth).
 
 > [!NOTE]
-> **ReadNFC** is only supported when running the on a native mobile app, such as the [iOS](https://apps.apple.com/us/app/power-apps/id1047318566) and [Android](https://play.google.com/store/apps/details?id=com.microsoft.msapps) apps. Even with a supported player, a device may not support NFC. If your application has **Formula-level error management** turned on, the function will return an error. Otherwise, an error message will be shown to the user and the function will return a *blank* record.
+> **ReadNFC** is only supported when running the app on a native mobile app, such as the [iOS](https://apps.apple.com/us/app/power-apps/id1047318566) and [Android](https://play.google.com/store/apps/details?id=com.microsoft.msapps) apps. Even with a supported player, a device may not support NFC. If your application has **Formula-level error management** turned on, the function will return an error. Otherwise, an error message will be shown to the user and the function will return a *blank* record.
 
 ## Syntax
 
