@@ -150,13 +150,14 @@ The Azure AD account management services are hosted on physical servers managed 
 
 You use a different set of URLs to access Power Virtual Agents US Government environments, as shown in the following table. The table also includes the commercial URLs for contextual reference.
 
-| Commercial version                                                                      | US Government version                                                                                                                                                                                             |
-| --------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [https://web.powerva.microsoft.com](https://web.powerva.microsoft.com)                  | [https://gcc.powerva.microsoft.us](https://gcc.powerva.microsoft.us) (GCC) </br></br>[https://high.powerva.microsoft.us](https://high.powerva.microsoft.us) (GCC High)                                            |
-| [https://flow.microsoft.com](https://flow.microsoft.com/)                               | [https://gov.flow.microsoft.us](https://gov.flow.microsoft.us/) (GCC)</br></br>[https://high.flow.microsoft.us](https://high.flow.microsoft.us/) (GCC High)                                                       |
-| [https://make.powerapps.com](https://make.powerapps.com/)                               | [https://make.gov.powerapps.us](https://make.gov.powerapps.us/) (GCC)</br></br>[https://make.high.powerapps.us](https://make.high.powerapps.us/) (GCC High)                                                       |
-| [https://flow.microsoft.com/connectors](https://flow.microsoft.com/connectors)          | [https://gov.flow.microsoft.us/connectors](https://gov.flow.microsoft.us/connectors)</br></br>[https://high.flow.microsoft.us/connectors](https://high.flow.microsoft.us/connectors) (GCC High)                   |
-| [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com/) | [https://gcc.admin.powerplatform.microsoft.us](https://gcc.admin.powerplatform.microsoft.us/)</br></br>[https://high.admin.powerplatform.microsoft.us](https://high.admin.powerplatform.microsoft.us/) (GCC High) |
+| Commercial                        | US Government (GCC)                  | US Government (GCC High)              |
+| --------------------------------- | ------------------------------------ | ------------------------------------- |
+| web.powerva.microsoft.com         | gcc.powerva.microsoft.us             | high.powerva.microsoft.us             |
+| flow.microsoft.com/               | gov.flow.microsoft.us                | high.flow.microsoft.us                |
+| make.powerapps.com/               | make.gov.powerapps.us                | make.high.powerapps.us                |
+| flow.microsoft.com/connectors     | gov.flow.microsoft.us/connectors     | high.flow.microsoft.us/connectors     |
+| admin.powerplatform.microsoft.com | gcc.admin.powerplatform.microsoft.us | high.admin.powerplatform.microsoft.us |
+| admin.powerplatform.microsoft.com | gcc.api.powerva.microsoft.us         | high.api.powerva.microsoft.us         |
 
 For those customers that implement network restrictions, ensure access to the following domains is made available to your end users' access points:
 
