@@ -25,7 +25,7 @@ search.app:
 
 # About support environments and the consent process
 
-To successfully investigate and/or troubleshoot issues, agents need to perform one or more steps. After customer consent, the agent obtains diagnostic data access and/or creates a simulation of the affected environment by deep delving into the attributes applied or the types of data stored. To simulate the conditions of the issue, the agent could create a support environment to recreate the original environment. After initial customer consent, a support engineer with support user permissions will have access to the data stored in the support environment for troubleshooting purposes. 
+To successfully investigate and/or troubleshoot issues, agents need to perform one or more steps. After customer consent, the agent obtains diagnostic data access and/or creates a simulation of the affected environment by deep delving into the attributes applied or the types of data stored. To simulate the conditions of the issue, the agent might create a support environment to recreate the original environment. With customer consent, a support engineer with support user permissions will have access to the data stored in the support environment for troubleshooting purposes. 
 
 ## Consent information
 
@@ -86,10 +86,6 @@ To assist with diagnosing and resolving a support issue, you must grant consent 
 **Updated consent on ‘new support request’ form**
 
 :::image type="content" source="media/support-allow-access.png" alt-text="Allow access for advanced investigation and creation of support environment.":::
-
-**Consent options**
-
-image
 
 **Consent section On ticket settings** 
 
@@ -160,71 +156,6 @@ A support environment is any non-production environment of Microsoft Dataverse u
 ### Is access and usage of support environment audited? 
 
 Yes. 
-
-
-
-
-
-
-
-
-
-<!-- 
-## What is a support environment?
-
-- It is an environment created in your tenant by Microsoft under your direct instructions, for purposes of preventing, detecting, or repairing problems affecting the operation of your online service.
-- It does not require any additional non-production environment to be purchased.
-- The database size of a support environment does not count towards your storage limit.
-- It resides in the same regional datacenter as your source environment. 
-- Support environments are protected by the same administrative and technical measures implemented by Microsoft to protect your production environment. 
-
-## What data is in a support environment?
-
-- When a support environment is initially created by Microsoft, it contains no customer data or customizations.
-- System admins manage support environments in the Power Platform admin center.
-- System admins can [copy an environment](copy-environment.md) to a support environment, and then choose whether to provide a [Minimal](copy-environment.md#copy-over-customizations-and-schemas-only) or a [Full](copy-environment.md#copy-over-everything) copy of their environment.  
-- Prior to provisioning, system admins must consent to providing a copy of their data to Microsoft.
-
-## Who has access to a support environment?
-
-Minimal copy:
-
--  Microsoft staff who are members of a support security group
-
-Full copy:
-
--  Microsoft staff who are members of an elevated support security group
-
-## What kind of data access does Microsoft have?
-
-Online (via the application):
-
--  System admin privileges
-
-Database (via SQL query tools):
-
--  Read/Write access to all tables
--  Access to the database requires additional approval by Microsoft and it is managed, controlled, and granted as needed.
--  Access to the database is subject to our standard access controls (i.e. Just-in-time); for instance, access is time limited (for example, 30 minutes) and expires automatically.
-
-## How long does a support environment stay in your tenant?
-
-- Seven days or upon resolution of the problem.
-- System admins can [delete](delete-environment.md) the support environment at any time.
-
-### Is access and usage of support environment audited?
-
-Yes.
-
-## What is the consent form in the New support request page?
-
-To assist with diagnosing and resolving a support issue, you must consent to the creation of a [Minimal](copy-environment.md#copy-over-everything) or a [Full](copy-environment.md#copy-over-customizations-and-schemas-only) copy of the environment with the issue. The consent form shown below records your instructions to Microsoft for the creation of a support environment. 
-
-> [!div class="mx-imgBorder"] 
-> ![Consent for support environment.](./media/consent-support-environment.png "Consent for support environment")
--->
-
-
 
 
 
