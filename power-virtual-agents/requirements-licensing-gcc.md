@@ -153,8 +153,8 @@ You use a different set of URLs to access Power Virtual Agents US Government env
 | Commercial                        | US Government (GCC)                  | US Government (GCC High)              |
 | --------------------------------- | ------------------------------------ | ------------------------------------- |
 | web.powerva.microsoft.com         | gcc.powerva.microsoft.us             | high.powerva.microsoft.us             |
-| flow.microsoft.com/               | gov.flow.microsoft.us                | high.flow.microsoft.us                |
-| make.powerapps.com/               | make.gov.powerapps.us                | make.high.powerapps.us                |
+| flow.microsoft.com                | gov.flow.microsoft.us                | high.flow.microsoft.us                |
+| make.powerapps.com                | make.gov.powerapps.us                | make.high.powerapps.us                |
 | flow.microsoft.com/connectors     | gov.flow.microsoft.us/connectors     | high.flow.microsoft.us/connectors     |
 | admin.powerplatform.microsoft.com | gcc.admin.powerplatform.microsoft.us | high.admin.powerplatform.microsoft.us |
 | admin.powerplatform.microsoft.com | gcc.api.powerva.microsoft.us         | high.api.powerva.microsoft.us         |
