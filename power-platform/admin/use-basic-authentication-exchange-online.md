@@ -3,11 +3,11 @@ title: "Use of Basic authentication with Exchange Online   | MicrosoftDocs"
 description: Article discusses the impact of the deprecation of Basic authentication.
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 05/09/2022
+ms.date: 07/19/2022
 author: DanaMartens 
 ms.subservice: admin
 ms.author: dmartens 
-ms.reviewer: mkaur
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:
@@ -94,6 +94,8 @@ Identify which type of Email Server Profile is being used:
 
      - https://outlook.office365.com/EWS/Exchange.asmx 
      - outlook.office365.com 
+
+  - If you have any Email Server Profiles which are configured to use username and password either within the Email Server Profile or the associated mailbox records and the mailboxes are located in Exchange Online, the mailboxes should be configured to use the Exchange Online (Hybrid) profile option. 
 
    Use the steps provided [here](/dynamics365/customerengagement/on-premises/admin/connect-dynamics-365-on-premises-exchange-online) to create a new **Exchange Online (Hybrid)** profile and update the mailboxes to use the new profile. Begin by testing one mailbox with the new profile before attempting to switch all mailboxes. If you don't see the option for this type of profile, refer to the FAQ section which discusses the version requirement. 
 
