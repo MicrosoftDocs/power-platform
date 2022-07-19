@@ -1,0 +1,77 @@
+---
+title: Boolean function in Power Apps
+description: Reference information including syntax and examples for the Boolean function in Power Apps.
+author: gregli-msft
+
+ms.topic: reference
+ms.custom: canvas
+ms.reviewer: tapanm
+ms.date: 06/09/2022
+ms.subservice: power-fx
+ms.author: gregli
+search.audienceType: 
+  - maker
+search.app: 
+  - PowerApps
+contributors:
+  - gregli-msft
+  - tapanm-msft
+---
+# Boolean function in Power Apps
+Converts a text string, number, or untyped value to a Boolean value.
+
+## Description
+Use the **Boolean** function to convert other types to a Boolean value.  A Boolean value is *true*, *false*, or *blank*.
+
+In most cases, type coercion happens automatically and the **Boolean** function need not be used explicilty.  For example, `If( "true", 1, 0 )` will return 1 as the text string `"true"` is automatically converted to a Boolean.  The **Boolean** function is useful when an explicit conversion is desired or when using an untyped value.
+
+## Syntax
+
+**Boolean**( *String* )<br>
+**Boolean**( *StringSingleColumnTable* )
+
+* *String* - Required. The string(s) to convert.  Must be a case insensitive version of `"true"` or `"false"`.  These strings are not localized.  *blank* and empty string are also accepted and converted to a *blank*.  All other text strings retrun an error.
+
+**Boolean**( *Number* )<br>
+**Boolean**( *NumberSingleColumnTable* )
+
+* *Number* - Required.  The number(s) to convert.  `0` is converted to *false* and all other numbers are converted to *true*.  *blank* values are accepted and converted to a *blank*.
+
+**Boolean**( *Untyped* )
+
+* *Untyped* - Required. The untyped value to convert.  Acceptable values are dependent on the untyped provider.  For JSON, JSON boolean values `true`, `false`, and `null` are accepted, corresponding to *true*, *false*, and *blank* values in Power Fx.  All other values will return an error.  Values inside of a string, such as `"true"` and `"false"`, are not accepted. 
+
+## Examples
+
+#### Basic usage
+
+| Formula | Description | Result |
+| --- | --- | --- |
+| **Boolean(&nbsp;"true"&nbsp;)** | Converts the text string `"true"` to a boolean value. | *true* |
+| **Boolean(&nbsp;"false"&nbsp;)** | Converts the text string `"false"` to a boolean value. | *false* |
+| **Boolean(&nbsp;"TRUE"&nbsp;)** | Converts the text string `"TRUE"` to a boolean value. | *true* |
+| **Boolean(&nbsp;"TrUe"&nbsp;)** | Converts the text string `"TrUe"` to a boolean value. | *true* |
+| **Boolean(&nbsp;"Truthful"&nbsp;)** | Attempts to convert the text string `"Truthful"` to a boolean value, but since it is not a case insensitive variation of `true` and `false`, an error is returned. | *error (invalid argument)* |
+| **Boolean(&nbsp;Blank()&nbsp;)** | Convert the *blank* value to a boolean value. | *blank* |
+| **Boolean(&nbsp;0&nbsp;)** | Convert the number `0` to a boolean value. | *false* |
+| **Boolean(&nbsp;1&nbsp;)** | Convert the number `1` to a boolean value. | *true* |
+| **Boolean(&nbsp;-1234&nbsp;)** | Convert the number `-1234` to a boolean value. | *true* |
+
+### Untyped usage
+
+| Formula | Description | Result |
+| --- | --- | --- |
+| **Boolean( ParseJSON( "{&nbsp;""bool"":&nbsp;true&nbsp;}" ).bool )** | Converts the untyped value `true` (a JSON Boolean) to a boolean value. | *true* |
+| **Boolean( ParseJSON( "{&nbsp;""bool"":&nbsp;null&nbsp;}" ).bool )** | Converts the untyped value `null` (a JSON null) to a boolean value. | *blank* |
+| **Boolean( ParseJSON( "{&nbsp;""bool"":&nbsp;"true"&nbsp;}" ).bool )** | Attempts to convert the untyped value `"true"` (a JSON string) to a boolean value, but since it is not a valid boolean value in JSON, an error is returned. | *error (invalid argument)* |
+| **Boolean( ParseJSON( "[&nbsp;true,&nbsp;false,&nbsp;null&nbsp;]" ).bool )** | Attempts to convert an array of boolean values to a single column table.  Single column tables are not supported with untyped values, and instead the formula `ForAll( Table(ParseJSON( "[true, false, null]" )), Boolean( ThisRecord.Value ) )` or `ForAll( ParseJSON( "[true, false, null]" ), Boolean( ThisRecord ) )` should be used. | *error (invalid argument)* |
+
+#### Single column tables
+
+| Formula | Description | Result |
+| --- | --- | --- |
+| **Boolean( [&nbsp;"true",&nbsp;"false",&nbsp;Blank()&nbsp;] )** | Converts the single column table of text strings to a single column table of boolean values. | [ *true*, *false*, *blank* ] |
+| **Boolean( [&nbsp;"true",&nbsp;"falsified"&nbsp;] )** | Converts the single column table of text strings to a single column table of boolean values.  Since the second record in this table is not a case insensitive variation of `true` and `false`, an error is returned for this record. | [ *true*, *error (invalid argument)* ] |
+| **Boolean( [&nbsp;1,&nbsp;2,&nbsp;0 &nbsp;] )** | Converts the single column table of numbers to a single column table of boolean valus. | [ *true*, *true*, *false* ] |
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

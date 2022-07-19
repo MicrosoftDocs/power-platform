@@ -68,6 +68,8 @@ Other elements include:
 
 **[Blank](reference/function-isblank-isempty.md)** – Returns a _blank_ value that can be used to insert a NULL value in a data source.
 
+**[Boolean](reference/function-boolean.md)** – Converts a text string, number, or untyped value to a Boolean value.
+
 ## C
 
 **[Calendar](reference/function-clock-calendar.md)** – Retrieves information about the calendar for the current locale.
@@ -290,6 +292,8 @@ Other elements include:
 
 **[Parent](reference/operators.md#self-and-parent-operators)** – Provides access to a container control's properties.
 
+**[ParseJSON](reference/function-parsejson.md)** – Converts JSON document represented as text to an Untyped Object value.
+
 **[Patch](reference/function-patch.md)** – Modifies or creates a record in a data source, or merges records outside of a data source.
 
 **[Pi](reference/function-trig.md)** – Returns the number &pi;.
@@ -421,6 +425,8 @@ Other elements include:
 **[Ungroup](reference/function-groupby.md)** – Removes a grouping.
 
 **[Unrelate](reference/function-relate-unrelate.md)** – Unrelates records of two tables from a one-to-many or many-to-many relationship.
+
+**[Untyped Object](reference/untyped-object.md)** – Untyped Object Data Type in Power Apps.
 
 **[Update](reference/function-update-updateif.md)** – Replaces a record in a data source.
 

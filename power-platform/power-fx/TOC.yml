@@ -56,6 +56,8 @@
             href: reference/function-navigate.md
           - name: Blank
             href: reference/function-isblank-isempty.md
+          - name: Boolean
+            href: reference/function-boolean.md
           - name: Calendar
             href: reference/function-clock-calendar.md
           - name: Char
@@ -254,6 +256,8 @@
             href: reference/function-param.md
           - name: Parent
             href: reference/operators.md#self-and-parent-operators
+          - name: ParseJSON
+            href: reference/function-parsejson.md
           - name: Patch
             href: reference/function-patch.md
           - name: Pi
@@ -380,6 +384,8 @@
             href: reference/function-groupby.md
           - name: Unrelate
             href: reference/function-relate-unrelate.md
+          - name: Untyped Object
+            href: reference/untyped-object.md
           - name: Update
             href: reference/function-update-updateif.md
           - name: UpdateContext
