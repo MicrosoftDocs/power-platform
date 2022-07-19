@@ -1,9 +1,8 @@
 ---
-# FIXME: metadata
 title: "Create a flow"
-description: ""
+description: "Create a Power Automate flow that automates activities or calls back end systems."
 keywords: "PVA, flow, automate"
-ms.date: 07/07/2022
+ms.date: 07/19/2022
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -157,8 +156,6 @@ Flows that have the Asynchronous Response feature enabled may cause an error whe
 If you've enabled [Asynchronous Response](/azure/connectors/connectors-native-http#asynchronous-request-response-behavior), you'll need to disable it for the bot to work properly when it runs the flow.
 
 <!-- At the time of writing, steps to find the async response setting (specifically in the PVA step/action) didn't exist in PA docs. If this has changed, please remove these steps and replace with the relevant link. -->
-
-### To disable Asynchronous Response
 
 1. [Locate and modify your flow](#modify-a-flow-on-the-power-automate-portal).
 

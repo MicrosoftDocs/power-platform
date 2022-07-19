@@ -1,9 +1,8 @@
 ---
-# FIXME: metadata
 title: "Call a flow as an action"
-description: ""
+description: "Call a Power Automate flow from a bot topic using an action node."
 keywords: "PVA, flow, automate"
-ms.date: 07/07/2022
+ms.date: 07/19/2022
 ms.service: power-virtual-agents
 ms.topic: article
 author: v-alarioza

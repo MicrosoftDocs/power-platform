@@ -1,9 +1,8 @@
 ---
-# FIXME: metadata
 title: "Add input and output variables"
-description: ""
+description: "Pass variables between a Power Automate flow and a Power Virtual Agents bot."
 keywords: "PVA, flow, automate"
-ms.date: 07/07/2022
+ms.date: 07/19/2022
 ms.service: power-virtual-agents
 ms.topic: article
 author: v-alarioza
