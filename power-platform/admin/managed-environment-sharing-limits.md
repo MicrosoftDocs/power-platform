@@ -3,7 +3,7 @@ title: Sharing limits
 description: Limit the number of canvas apps that can be shared in your managed environments.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/12/2022
+ms.date: 07/19/2022
 author: alaug 
 ms.author: alaug
 ms.reviewer: jimholtz
