@@ -95,26 +95,6 @@ At this point, the **Search rows** action returns the variable **List of rows** 
             "@@search.score": {
                 "type": "number"
             },
-            "@@search.highlights": {
-                "type": "object",
-                "properties": {
-                    "name": {
-                        "type": "array",
-                        "items": {
-                            "type": "string"
-                        }
-                    }
-                }
-            },
-            "@@search.entityname": {
-                "type": "string"
-            },
-            "@@search.objectid": {
-                "type": "string"
-            },
-            "@@search.objecttypecode": {
-                "type": "integer"
-            },
             "name": {
                 "type": "string"
             },
@@ -127,10 +107,6 @@ At this point, the **Search rows** action returns the variable **List of rows** 
         },
         "required": [
             "@@search.score",
-            "@@search.highlights",
-            "@@search.entityname",
-            "@@search.objectid",
-            "@@search.objecttypecode",
             "name",
             "address1_city",
             "accountnumber"
