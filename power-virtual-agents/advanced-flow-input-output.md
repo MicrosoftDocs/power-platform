@@ -80,8 +80,4 @@ Your flow is saved to the **Default Solution** under the **Solutions** tab on th
 
 :::image type="content" source="media/advanced-flow/default-solution.png" alt-text="Power Automate flow template - Default Solution." border="false":::
 
-<!-- FIXME: array sounds too technical - database, list, ...? -->
-## Return an array of results
-<!-- FIXME: add array draft -->
-
 [!INCLUDE[footer-include](includes/footer-banner.md)]
