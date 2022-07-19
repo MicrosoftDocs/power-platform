@@ -5,7 +5,7 @@ keywords: Microsoft Power Platform CLI, code components, component framework, CL
 ms.author: jdaly
 author: kkanakas
 ms.reviewer: jdaly
-ms.date: 06/07/2022
+ms.date: 06/20/2022
 ms.topic: overview
 ---
 
@@ -19,21 +19,21 @@ Microsoft Power Platform CLI is available for use in the GCC and GCC High (US So
 
 You can use either of the following ways to install Microsoft Power Platform CLI.
 
-### Standalone Power Platform CLI
+### Power Platform CLI for Windows
 
-To install standalone Power Platform CLI, follow these steps.
+To install Power Platform CLI for Windows, follow these steps.
 
 1. Download and install [Microsoft Power Platform CLI](https://aka.ms/PowerAppsCLI).
 
-1. To take advantage of all the latest capabilities, update Microsoft Power Platform CLI tooling to the latest version by using this command (not applicable for Power Platform VS Code Extension):
+1. To take advantage of all the latest capabilities, update Microsoft Power Platform CLI tooling to the latest version by using this command (not applicable for Power Platform Tools for Visual Studio Code):
 
     ```dotnetcli
     pac install latest
     ```
 
    > [!NOTE]
-   > - Currently, Microsoft Power Platform standalone CLI is supported only on Windows 10 and Windows 11.
-   > - Power Platform Tools for Visual Studio Code is available on Windows 10, Windows 11, Linux, and MacOS.
+   > - Currently, Microsoft Power Platform CLI for Windows is supported only on Windows 10 and Windows 11.
+   > - Power Platform Tools for Visual Studio Code supports Windows 10, Windows 11, Linux, and MacOS.
 
 ### Using Power Platform Tools for Visual Studio Code
 

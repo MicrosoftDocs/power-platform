@@ -20,7 +20,7 @@ search.app:
 
 We continue to open new datacenter regions for business services, and to add datacenters to existing regions.  
 
- The Geo Migration feature will allow customers to move their environments in a single tenant from one region to another. There are no user-interface changes or version changes as part of this move. In the case of an environment residing in an [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] environment in a single tenant, moving the Microsoft Dataverse environment doesn't move the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] environment; they are separate services. Your environment will still appear in your tenant alongside the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] environment.  
+ The Geo Migration feature will allow customers to move their environments in a single tenant from one region to another. There are no user-interface changes or version changes as part of this move. In the case of an environment residing in an [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] environment in a single tenant, moving the environment doesn't move the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] environment; they are separate services. Your environment will still appear in your tenant alongside the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] environment.  
 
 > [!IMPORTANT]
 > - Support for geo migration is limited and generally not available.
@@ -29,7 +29,7 @@ We continue to open new datacenter regions for business services, and to add dat
 > - Geo migrations are not supported into or out of US GCC, US GCC High, OCE, IND, or China.
 > - The Dynamics 365 Marketing app does not support geo migration, due to component dependencies. For more information, see [Manage your Dynamics 365 Marketing instances](/dynamics365/marketing/manage-marketing-instances).
 > - Geo migration is not supported for Microsoft Dataverse for Teams environments.
-> - Dataverse organization linked to a Finance and Operations organization is not supported.
+> - Dataverse organization linked to a finance and operations organization is not supported.
 
 ### Supported environment types
 

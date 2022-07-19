@@ -48,7 +48,7 @@ When you create a bot, a number of topics are automatically created.
 These topics fall into two categories:
   
 - Four pre-populated user topics, titled as lessons. These [lesson topics](authoring-template-topics-teams.md) can be used to help understand simple to complex ways of using nodes to create bot conversations. You can edit these topics in the same manner as for topics you create. You can also choose to delete them entirely.
-- A number of system topics. These are pre-populated topics that you are likely to need during a bot conversation. You can't delete, disable, or edit the trigger phrases of these topics, but you can customize the nodes on the authoring canvas. We recommend not customizing these topics until you are comfortable with creating an end-to-end bot conversation.
+- A number of [system topics](/authoring-system-topics.md). These are pre-populated topics that you are likely to need during a bot conversation. You can't delete, disable, or edit the trigger phrases of these topics, but you can customize the nodes on the authoring canvas. We recommend not customizing these topics until you are comfortable with creating an end-to-end bot conversation.
 
 You can edit both of these topic types in the same manner as for topics you create but you can't delete them.
 
@@ -68,7 +68,7 @@ You can edit both of these topic types in the same manner as for topics you crea
 
 1. Specify one or more trigger phrases for the topic in the **Trigger phrases** pane.
 
-   A trigger phrase is a phrase that a customer enters in the chat window to start a conversation with the bot. Once the conversation is started, the conversation follows the path you define. You can specify more than one trigger phrase for a topic. You can include punctuation in a trigger phrase, but it's best to use short phrases rather than long sentences.
+   You can specify more than one trigger phrase for a topic. You can include punctuation in a trigger phrase, but it's best to use short phrases rather than long sentences.
 
    :::image type="content" source="../media/authoring-create-edit-topics/topics-details-triggers.png" alt-text="Edit trigger phrases in the trigger phrases pane":::
 
@@ -110,7 +110,7 @@ You can edit both of these topic types in the same manner as for topics you crea
 
 1. To move or change the paths between a node, click and drag the node anchor, which looks like a small circle on top of the node. When you drag the node anchor, you'll see a dotted line indicating the original path. You can also double-click the anchor and then select the new place for the anchor (you won't see a dotted line).
 
-   :::image type="content" source="media/authoring-create-edit-topics/move-anchor-node.png" alt-text="Screenshot of moving a node's anchor.":::
+   :::image type="content" source="../media/authoring-create-edit-topics/move-anchor-node.png" alt-text="Screenshot of moving a node's anchor.":::
 
 ### Insert nodes
 
@@ -191,9 +191,9 @@ When you end the conversation, you can have a survey appear that asks the user i
 
     :::image type="content" source="../media/authoring-create-edit-topics/topics-nodes-survey-teams.png" alt-text="End with survey." border="false":::
 
-#### Go to another topic
+#### Redirect to another topic
 
-1. To automatically have the bot move to a separate topic, select **+** to add a node, and then **Go to another topic**.
+1. To automatically have the bot move to a separate topic, select **+** to add a node, and then **Redirect to another topic**.
 
 1. In the flyout menu, select the topic the bot should divert to. For example, you might want to send the user to a specific topic about the closure of a store if they ask about store hours for that store.
 
@@ -205,7 +205,7 @@ You can consider the redirected topic as a "subtopic".
 
 :::image type="content" source="../media/authoring-create-edit-topics/authoring-subtopic-redirect-teams.png" alt-text="Screenshot of the authoring canvas showing nodes under a redirected topic node.":::
 
-If you redirect to any of the following [system topics](#use-system-and-sample-topics), however, the entire conversation will end:
+If you redirect to any of the following [system topics](/authoring-system-topics.md), however, the entire conversation will end:
 
 - End of Conversation
 - Confirmed Success

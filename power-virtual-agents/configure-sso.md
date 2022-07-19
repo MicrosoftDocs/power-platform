@@ -2,7 +2,7 @@
 title: "Configure single sign-on"
 description: "Enable your bot to authenticate an already-signed-in user"
 keywords: "Single Sign-on, SSO, User Authentication, Authentication, AAD, MSA, Identity Provider, PVA"
-ms.date: 01/25/2022
+ms.date: 06/23/2022
 
 ms.topic: article
 author: iaanw
@@ -30,7 +30,9 @@ There are four main steps to configuring SSO for Power Virtual Agents:
 1. Configure your custom canvas HTML code to enable SSO.
 
 > [!IMPORTANT]
-> SSO on SharePoint is not supported.
+>
+> - SSO on SharePoint is not supported.
+> - SSO is not supported when your bot is integrated with [Dynamics 365 Customer Service](configuration-hand-off-omnichannel.md).
 
 ## Prerequisites
 

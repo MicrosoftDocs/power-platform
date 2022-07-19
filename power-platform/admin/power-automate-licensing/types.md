@@ -4,8 +4,9 @@ description: "Types of Power Automate licenses."
 author: PriyaKodukula
 ms.subservice: admin
 ms.topic: overview
-ms.date: 06/13/2022
+ms.date: 07/13/2022
 ms.author: prkoduku
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:
@@ -68,11 +69,11 @@ Here's a chart that lays out the limits that are associated with the different l
 
 ## Transition period
 
-All customers are in a transition period. That means that enforcement isn't strict and limits are higher. The transition period ends (First quarter of calendar year 2022), which will be when the full reporting is available in the Power Platform admin center. Organizations will have six months to analyze their usage and purchase licenses that are appropriate before strict enforcement on license limits begins.
+All customers are in a transition period. That means that enforcement isn't strict and limits are higher. The transition period ends after Power Platform admin center reports are generally available. Organizations will have six months to analyze their usage and purchase licenses that are appropriate before strict enforcement on license limits begins.
 
 Here are a few things to be aware of during the transition period.
 
-1. The transition period doesn't mean that there are no daily limits. It means that the currently enforced limits are more generous than the stated limits to prevent potential unintended impact on your apps or flows. See [Power Platform requests](#transition-period) to understand both plan limits and transition period limits. 
+1. The transition period doesn't mean that there are no daily limits. It means that the currently enforced limits are more generous than the stated limits to prevent potential unintended impact on your apps or flows. See [Requests limits and allocations](../api-request-limits-allocations.md) to understand both plan limits and transition period limits. 
 1. These transition period limits are applied at the flow level during transition period. Once the transition period ends, the limits will be applied at user level for per user plans and flow level for per flow plan.
 1. Since limits are more generous during the transition period, [stacking of user licenses isn't supported](../api-request-limits-allocations.md). If a user has multiple plans, such as a Microsoft 365 plan and a Dynamics 365 plan, the flow will use the higher plan (Dynamics 365 plan).
 1. Power Platform requests capacity add-on packs are not assignable to the users or flows during the transition period. However, Microsoft recommends that you purchase these add-ons to remain within your license terms and to be prepared for when the transition period ends. If your flows are currently being throttled, purchase add-ons and create a support ticket with the flow details and add-on details so that the support team can provide exceptions for your throttled flows.

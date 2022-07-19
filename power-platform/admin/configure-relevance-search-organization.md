@@ -4,7 +4,7 @@ description: Configure Dataverse search to improve search results and performanc
 author: jimholtz
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/05/2022
+ms.date: 07/11/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -20,6 +20,8 @@ search.app:
 Dataverse search delivers fast and comprehensive search results in a single list, sorted by relevance. As an administrator or customizer, you'll be able to enable and configure Dataverse search as described below. Quick Find views are used for configuring Dataverse search, so you can manage global search, quick find, and lookup search behavior in one single place.
 
 With Dataverse search enabled, a search box is always available at the top of every page in all the model-driven apps in the environment. Users can start a new search and quickly find the information they're looking for, from the searchable tables included in the app. Dataverse search also becomes the default and only global search experience in all model-driven apps in the environment. Users won't be able to switch to [quick find search](/powerapps/user/quick-find) formerly known as categorized search.  
+
+[Dataverse search can be extended to additional Microsoft Search canvases](/microsoftsearch/manage-dynamics365), including SharePoint Online, Bing, and Office. Users can search and find information from these canvases similar to searching in the app when the connector is enabled, for example quickly look up a contact’s phone number or email without opening the app. 
 
 ## What is Dataverse search?
 
@@ -204,7 +206,7 @@ To edit the searchable fields of a table:
 
 1. Sign in to [Power Apps](https://make.powerapps.com/).
 
-2. Select **Data** > **Tables**.
+2. Select **Dataverse** > **Tables**.
 
 3. Select the table you want to make the changes for and then select the **Views** tab.
 
