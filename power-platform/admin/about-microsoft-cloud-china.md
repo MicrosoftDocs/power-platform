@@ -81,7 +81,7 @@ To connect Dynamics 365 with your Exchange Online tenant in China and use server
 
 ## Additional resources
 - [Apps Operated by 21Vianet Support](21vianet-support.md)
-- [Finance and Operations operated by 21Vianet](/dynamics365/unified-operations/dev-itpro/deployment/china-local-deployment)
+- [Dynamics 365 Finance operated by 21Vianet](/dynamics365/unified-operations/dev-itpro/deployment/china-local-deployment)
 - [Support site for 21Vianet (in Chinese)](https://www.21vbluecloud.com/Dynamics365/)
 - [Privacy statement (Dynamics 365 隐私声明)](https://www.21vbluecloud.com/Dynamics365/d365-privacy/)
 - [Service Level agreement(世纪互联在线服务的服务级别协议)](https://www.21vbluecloud.com/Dynamics365/d365-sla/)

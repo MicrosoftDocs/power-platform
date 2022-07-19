@@ -26,7 +26,7 @@ Returns information about the app's environment, such as where the user is locat
 
 Signals are values that can change at any time, independent of how the user may be interacting with the app. Formulas that are based on signals automatically recalculate as these values change.
 
-Signals typically return a [record](/power-apps/maker/canvas-apps/working-with-tables.md#records) of information. You can use and store this information as a record, or you can extract individual properties by using the **.** [operator](operators.md).
+Signals typically return a [record](/power-apps/maker/canvas-apps/working-with-tables#records) of information. You can use and store this information as a record, or you can extract individual properties by using the **.** [operator](operators.md).
 
 > [!NOTE]
 > The **Acceleration** and **Compass** functions return accurate values in a native player such as on iOS or Android, but those functions return zero values as you create or modify an app in the browser.
