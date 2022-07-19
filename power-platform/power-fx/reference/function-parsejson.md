@@ -111,4 +111,4 @@ Given the following JSON string in a variable named `JsonString`
     ForAll( Table( ParseJSON( JsonString ).array ), { id: Value(ThisRecord.Value.id), name: Text(ThisRecord.Value.name) })
     ```
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

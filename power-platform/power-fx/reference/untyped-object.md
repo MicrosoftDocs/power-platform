@@ -89,3 +89,5 @@ To convert an array of records to a typed table, you can use the [ForAl()](funct
 ```powerapps-dot
 ForAll( Table(UORecordArray), { FirstField: Value(ThisRecord.Value.FirstField), SecondField: Text(ThisRecord.Value.SecondField) } )
 ```
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

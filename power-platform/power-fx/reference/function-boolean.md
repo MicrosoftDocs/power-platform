@@ -74,4 +74,4 @@ In most cases, type coercion happens automatically and the **Boolean** function 
 | **Boolean( [&nbsp;"true",&nbsp;"falsified"&nbsp;] )** | Converts the single column table of text strings to a single column table of boolean values.  Since the second record in this table is not a case insensitive variation of `true` and `false`, an error is returned for this record. | [ *true*, *error (invalid argument)* ] |
 | **Boolean( [&nbsp;1,&nbsp;2,&nbsp;0 &nbsp;] )** | Converts the single column table of numbers to a single column table of boolean valus. | [ *true*, *true*, *false* ] |
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
