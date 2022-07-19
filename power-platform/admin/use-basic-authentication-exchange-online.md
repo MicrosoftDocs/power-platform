@@ -3,11 +3,11 @@ title: "Use of Basic authentication with Exchange Online   | MicrosoftDocs"
 description: Article discusses the impact of the deprecation of Basic authentication.
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 05/09/2022
+ms.date: 07/19/2022
 author: DanaMartens 
 ms.subservice: admin
 ms.author: dmartens 
-ms.reviewer: mkaur
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:
