@@ -3,7 +3,7 @@ title: "Add teams or users to a column security profile to control access"
 description: "Learn how to control team and user access to columns by using column security profiles. Manage permission to read, create, or write in secured column."
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/15/2022
+ms.date: 07/19/2022
 author: praveenmantha
 ms.subservice: admin
 ms.author: pmantha

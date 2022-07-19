@@ -3,7 +3,7 @@ title: "Column-level security  | MicrosoftDocs"
 description: Overview of column-level security using an example.
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 06/15/2022
+ms.date: 07/19/2022
 author: praveenmantha
 ms.subservice: admin
 ms.author: pmantha
