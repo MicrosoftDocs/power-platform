@@ -2,10 +2,9 @@
 title: "Manage Microsoft Dataverse settings  | MicrosoftDocs"
 description: View and manage Microsoft Dataverse settings.
 author: jimholtz
-
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/11/2022
+ms.date: 06/17/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -49,6 +48,7 @@ These security settings are managed in the Power Platform admin center.
 - [Dataverse teams management](manage-teams.md)
 - [Assign security roles to users in an environment that has a Dataverse database](database-security.md#assign-security-roles-to-users-in-an-environment-that-has-a-dataverse-database)
 - [Manage application users](manage-application-users.md)
+- [Field-level security to control access](field-level-security.md)
 
 ## App settings
 

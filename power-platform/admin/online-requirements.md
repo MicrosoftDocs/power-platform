@@ -63,7 +63,6 @@ Add the following URLs to the allow list to use Dynamics 365 apps such as Dynami
 > - If you are Government cloud customer, go to [Dynamics 365 US Government URLs](microsoft-dynamics-365-government.md#dynamics-365-us-government-urls) 
 > - If you are a customer in China and want to access Dynamics 365 services operated by a local company that stores your data within China, go to [Power Platform and Dynamics 365 apps - operated by 21Vianet in China](about-microsoft-cloud-china.md)
 
-
 ## IP addresses required
 
 All IP addresses for various services for public and government clouds are available in these downloadable JSON files:
