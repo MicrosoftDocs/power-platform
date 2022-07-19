@@ -42,6 +42,9 @@ In managed environments, admins can limit how broadly makers can share canvas ap
 >
 > Sharing limits in Dataverse for Teams environments do not impact sharing to a Team when you select **Publish to Teams**. However, when a maker attempts to share with individuals or groups in a Team other than the one bound to the environment, the sharing limits are enforced. 
 
+### Surface your organization’s governance error content 
+If you specify governance error message content to appear in error messages, it will be included in the error message displayed when users observe they don’t have permission to share apps in an environment. See: [PowerShell governance error message content commands](powerapps-powershell.md#governance-error-message-content-commands).
+
 ### See also
 
 [Managed Environments overview](managed-environment-overview.md)  
