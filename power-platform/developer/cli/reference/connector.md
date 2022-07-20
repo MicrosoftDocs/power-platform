@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: kkanakas
 ms.author: kartikka
-ms.date: 6/19/2022
+ms.date: 7/20/2022
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -28,6 +28,7 @@ Commands for working with Power Apps Connectors
 |---------|---------|
 |[pac connector create](#pac-connector-create)|Creates a new row in the Connector table in the Dataverse environment.|
 |[pac connector download-api-definition](#pac-connector-download-api-definition)|Download a Connector's OpenApiDefinition file|
+|[pac connector init](#pac-connector-init)|Initializes a new API Properties file for a Connector|
 |[pac connector list](#pac-connector-list)|List the Connectors registered in the Dataverse environment|
 |[pac connector update](#pac-connector-update)|Updates a Connector Entity in the Dataverse environment.|
 
@@ -41,7 +42,7 @@ Creates a new row in the Connector table in the Dataverse environment.
 
 ### Required Parameters
 
-#### `--api-definition-file` `-f`
+#### `--api-definition-file` `-df`
 
 The filename and path to read the the Connector's OpenApiDefinition.
 
@@ -53,10 +54,14 @@ The display name of the Connector
 
 The Name of the Connector
 
-**Note**: start with a alphanumeric prefix with length between 2~8 and followed by  '_' and alphanumeric name
+**Note**: Start with a alphanumeric prefix with length between 2~8 and followed by  '_' and alphanumeric name
 
 
 ### Optional Parameters
+
+#### `--api-properties-file` `-pf`
+
+The filename and path to read the the Connector's API Properties file.
 
 #### `--environment` `-env`
 
@@ -77,7 +82,7 @@ Download a Connector's OpenApiDefinition file
 
 The ID of the Connector
 
-**Note**: The Connector Id is not a valid Guid.
+**Note**: The Connector Id must be a valid Guid.
 
 #### `--output` `-o`
 
@@ -91,6 +96,33 @@ The filename and path to output the Connector OpenApiDefinition file.
 The target Environment ID or URL.  Default value is the environment of your currently active Dataverse Auth Profile.
 
 [!INCLUDE [connector-download-api-definition-remarks](includes/connector-download-api-definition-remarks.md)]
+
+## pac connector init
+
+Initializes a new API Properties file for a Connector
+
+[!INCLUDE [connector-init-intro](includes/connector-init-intro.md)]
+
+
+### Optional Parameters
+
+#### `--connection-template` `-ct`
+
+Generate an initial Connection Parameters set with specified template
+
+Use one of these values:
+
+- `NoAuth`
+- `BasicAuth`
+- `ApiKey`
+- `OAuthGeneric`
+- `OAuthAAD`
+
+#### `--outputDirectory` `-o`
+
+Output directory
+
+[!INCLUDE [connector-init-remarks](includes/connector-init-remarks.md)]
 
 ## pac connector list
 
@@ -116,18 +148,22 @@ Updates a Connector Entity in the Dataverse environment.
 
 ### Required Parameters
 
-#### `--api-definition-file` `-f`
-
-The filename and path to read the the Connector's OpenApiDefinition.
-
 #### `--connector-id` `-id`
 
 The ID of the Connector
 
-**Note**: The Connector Id is not a valid Guid.
+**Note**: The Connector Id must be a valid Guid.
 
 
 ### Optional Parameters
+
+#### `--api-definition-file` `-df`
+
+The filename and path to read the the Connector's OpenApiDefinition.
+
+#### `--api-properties-file` `-pf`
+
+The filename and path to read the the Connector's API Properties file.
 
 #### `--environment` `-env`
 

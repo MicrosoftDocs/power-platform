@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: kkanakas
 ms.author: kartikka
-ms.date: 6/19/2022
+ms.date: 7/20/2022
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -29,6 +29,7 @@ Work with your Dataverse Organization
 |[pac org entity](#pac-org-entity)|Get information about an entity in Dataverse|
 |[pac org list](#pac-org-list)|Lists all of the Dataverse Organizations the user has access to|
 |[pac org query](#pac-org-query)|Display the results of a query against Dataverse|
+|[pac org select](#pac-org-select)|Select defualt organization for current authentication profile|
 |[pac org who](#pac-org-who)|Displays information about the current Dataverse Organization|
 
 
@@ -67,6 +68,21 @@ Display the results of a query against Dataverse
 The SQL SELECT query to run
 
 [!INCLUDE [org-query-remarks](includes/org-query-remarks.md)]
+
+## pac org select
+
+Select defualt organization for current authentication profile
+
+[!INCLUDE [org-select-intro](includes/org-select-intro.md)]
+
+
+### Required Parameters
+
+#### `--environment` `-env`
+
+Default environment (id, url, unique name or partial name)
+
+[!INCLUDE [org-select-remarks](includes/org-select-remarks.md)]
 
 ## pac org who
 

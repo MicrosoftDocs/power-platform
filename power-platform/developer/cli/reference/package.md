@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: kkanakas
 ms.author: kartikka
-ms.date: 6/19/2022
+ms.date: 7/20/2022
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -86,7 +86,7 @@ The path to the referenced Dataverse solution project
 
 A semicolon delimited list of overrides. This value overrides any dependency information encoded in the solution's metadata. Each override should be in the format: `<uniquename>:<minVersion>:<maxVersion>`. Where the minVersion and maxVersion is optional but should be in .Net version format syntax.
 
-**Note**: Expected a semicolon delimited list of dependency overrides of the format \<uniquename>:\<minVersion>:\<maxVersion>.
+**Note**: Use a semicolon delimited list of dependency overrides of the format \<uniquename>:\<minVersion>:\<maxVersion>.
 
 #### `--import-mode`
 
@@ -115,7 +115,7 @@ Use one of these values:
 
 This argument is applicable only for 1st party solutions.
 
-**Note**: Expected a semicolon delimited list of solution uniquenames.
+**Note**: Use a semicolon delimited list of solution uniquenames.
 
 #### `--missing-dependency-behavior`
 
@@ -166,7 +166,7 @@ Path to the Dataverse solution file (must be *.zip)
 
 A semicolon delimited list of overrides. This value overrides any dependency information encoded in the solution's metadata. Each override should be in the format: `<uniquename>:<minVersion>:<maxVersion>`. Where the minVersion and maxVersion is optional but should be in .Net version format syntax.
 
-**Note**: Expected a semicolon delimited list of dependency overrides of the format \<uniquename>:\<minVersion>:\<maxVersion>.
+**Note**: Use a semicolon delimited list of dependency overrides of the format \<uniquename>:\<minVersion>:\<maxVersion>.
 
 #### `--import-mode`
 
@@ -195,7 +195,7 @@ Use one of these values:
 
 This argument is applicable only for 1st party solutions.
 
-**Note**: Expected a semicolon delimited list of solution uniquenames.
+**Note**: Use a semicolon delimited list of solution uniquenames.
 
 #### `--missing-dependency-behavior`
 

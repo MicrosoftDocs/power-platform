@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: kkanakas
 ms.author: kartikka
-ms.date: 6/19/2022
+ms.date: 7/20/2022
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -26,19 +26,19 @@ Commands for working with PowerApps Studio online service
 
 |Command|Description|
 |---------|---------|
-|[pac portal apps](#pac-portal-apps)|Commands to list applications and download counts for current user|
-|[pac portal pubs](#pac-portal-pubs)|Commands to list publishers for current user|
+|[pac portal apps](#pac-portal-apps)|Lists applications and download counts for current user|
+|[pac portal pubs](#pac-portal-pubs)|Lists publishers for current user|
 
 
 ## pac portal apps
 
-Commands to list applications and download counts for current user
+Lists applications and download counts for current user
 
 [!INCLUDE [portal-apps-remarks](includes/portal-apps-remarks.md)]
 
 ## pac portal pubs
 
-Commands to list publishers for current user
+Lists publishers for current user
 
 [!INCLUDE [portal-pubs-remarks](includes/portal-pubs-remarks.md)]
 

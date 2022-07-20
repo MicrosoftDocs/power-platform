@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: kkanakas
 ms.author: kartikka
-ms.date: 6/19/2022
+ms.date: 7/20/2022
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -168,7 +168,6 @@ Use one of these values:
 - `Trial`
 - `Sandbox`
 - `Production`
-- `Developer`
 - `Teams`
 - `SubscriptionBasedTrial`
 
@@ -211,7 +210,7 @@ Sets the environment's region name. [defaults to unitedstates]
 
 Team Id as Guid
 
-**Note**: The Team Id is not a valid Guid.
+**Note**: The Team Id must be a valid Guid.
 
 #### `--templates` `-tm`
 
@@ -279,7 +278,6 @@ Use one of these values:
 - `Trial`
 - `Sandbox`
 - `Production`
-- `Developer`
 - `Teams`
 - `SubscriptionBasedTrial`
 
@@ -355,7 +353,7 @@ Sets the name of the environment.
 
 Sets the description used to associate the environment with a specific intent.
 
-#### `--templates` `-t`
+#### `--templates` `-tm`
 
 Sets Dynamics365 app that needs to be deployed. [passed as comma separated values] e.g : -tm "D365_Sample, D365_Sales"
 

@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: kkanakas
 ms.author: kartikka
-ms.date: 6/19/2022
+ms.date: 7/20/2022
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -26,23 +26,19 @@ Operating with Power Apps .msapp files
 
 |Command|Description|
 |---------|---------|
-|[pac canvas create](#pac-canvas-create)|(Preview) Generate Power App from custom connector|
+|[pac canvas create](#pac-canvas-create)|Generate Power App from custom connector|
 |[pac canvas pack](#pac-canvas-pack)|(Preview) Pack sources into an msapp file|
 |[pac canvas unpack](#pac-canvas-unpack)|(Preview) Extract an msapp file into sources|
 
 
 ## pac canvas create
 
-(Preview) Generate Power App from custom connector
+Generate Power App from custom connector
 
 [!INCLUDE [canvas-create-intro](includes/canvas-create-intro.md)]
 
 
 ### Required Parameters
-
-#### `--connector-id`
-
-The ID of the Connector from which the Power App will be generated
 
 #### `--msapp`
 
@@ -50,6 +46,14 @@ Path to .msapp file to be generated
 
 
 ### Optional Parameters
+
+#### `--connector-display-name`
+
+The display name of the Connector from which the Power App will be generated
+
+#### `--connector-id`
+
+The ID of the Connector from which the Power App will be generated
 
 #### `--environment`
 

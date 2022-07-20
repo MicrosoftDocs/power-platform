@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: kkanakas
 ms.author: kartikka
-ms.date: 6/19/2022
+ms.date: 7/20/2022
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -37,6 +37,12 @@ Initializes a directory with a new Dataverse plugin class library.
 
 
 ### Optional Parameters
+
+#### `--add-signing` `-s`
+
+Add signing key to plugin project. Default value is 'false'
+
+This parameter requires no value. It is a switch.
 
 #### `--author` `-a`
 

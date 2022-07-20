@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: kkanakas
 ms.author: kartikka
-ms.date: 6/19/2022
+ms.date: 7/20/2022
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -324,6 +324,12 @@ This parameter requires no value. It is a switch.
 #### `--max-async-wait-time` `-wt`
 
 Max asynchronous wait time in minutes. Default value is 60 minutes
+
+#### `--overwrite` `-ow`
+
+The exported solution file can overwrite the solution zip file on the local file system.
+
+This parameter requires no value. It is a switch.
 
 #### `--targetversion` `-v`
 
