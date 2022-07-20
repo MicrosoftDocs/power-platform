@@ -43,6 +43,8 @@ For more information about authentication, go to:
 
 > [!TIP]
 > To make sure you've got a good connection to [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] (on-premises), run the [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/). For information about which tests to run, see [Test mail flow with the Remote Connectivity Analyzer](https://technet.microsoft.com/library/dn305950\(v=exchg.150\).aspx). 
+>
+> For ports required, see [Network ports for clients and mail flow in Exchange](/exchange/plan-and-deploy/deployment-ref/network-ports?view=exchserver-2019).
 > 
 > To learn more about the protocols and ciphers used to secure the connection between Dynamics 365 and external email services, see [Server cipher suites and TLS requirements](server-cipher-tls-requirements.md).
 
