@@ -23,18 +23,17 @@ It's common to ask a bot to look for data in an external system and return a set
 - format the results
 - return results to Power Virtual Agents
 
-In this article, we'll use the Dataverse connector in Power Automate to search for accounts. Then we'll return a list that includes the account name, city, and account number using Markdown to format the results as a table.
-
-> [!IMPORTANT]
-> Markdown may not render properly on all channels and clients. Additionally, if you have enabled [voice capabilities](configuration-hand-off-omnichannel.md), having the bot read the table may not be ideal for voice-based channels.
+In this article, we'll use the Dataverse connector in Power Automate to search for accounts. Then we'll return a list of results that includes the account name, city, and account number.
 
 ## Prerequisites
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 - [Create and edit topics](authoring-create-edit-topics.md).
+- [Test your bot](authoring-test-bot.md)
+- [Use variables](authoring-variables.md)
 - [Create a flow](advanced-flow.md).
 - [Add input and output variables](advanced-flow-input-output.md).
-- [Learn Markdown syntax](https://www.markdownguide.org/).
+- [Configure Dataverse search for your environment](/power-platform/admin/configure-relevance-search-organization)
 
 ## Create a new bot and topic
 
@@ -64,9 +63,7 @@ In this article, we'll use the Dataverse connector in Power Automate to search f
 
     :::image type="content" source="media/advanced-flow-set-of-results/text-input.png" alt-text="Screenshot of the flow trigger with a text input added.":::
 
-1. Select the plus (**+**) button below the trigger node to add a new node.
-
-1. Under the **Microsoft Dataverse** connector, select the **Search rows** action.
+1. Select the plus (**+**) button. Select the **Microsoft Dataverse** connector, then select the **Search rows** action.
 
     :::image type="content" source="media/advanced-flow-set-of-results/dataverse-connector.png" alt-text="Screenshot of the flow trigger with a text input added.":::
 
@@ -79,74 +76,83 @@ In this article, we'll use the Dataverse connector in Power Automate to search f
 
     :::image type="content" source="media/advanced-flow-set-of-results/search-rows-action.png" alt-text="Graphical user interface, application Description automatically generated":::
 
-## Format results using Markdown
+## Format results
 
-At this point, the **Search rows** action returns the variable **List of rows** which contains an array in the JSON format. To make the data usable, it must be first converted using the **Parse JSON** action.
+The **Search rows** action returns a variable **List of rows** which contains an JSON data. To make the data usable, it must be first parsed using the **Parse JSON** action.
 
-1. We provided a sample JSON output from a previous run of the "Search Rows" connector with the "Generate from sample" option.
+1. Select the plus (**+**) button. Select the **Data Operation** connector, then select the **Parse JSON** action.
 
-<!-- FIXME: move snippet -->
-```json
-{
-    "type": "array",
-    "items": {
-        "type": "object",
-        "properties": {
-            "@@search.score": {
-                "type": "number"
+1. In the **Schema** box, copy and paste the following JSON schema:
+
+    ```json
+    {
+        "type": "array",
+        "items": {
+            "type": "object",
+            "properties": {
+                "@@search.score": {
+                    "type": "number"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "address1_city": {
+                    "type": "string"
+                },
+                "accountnumber": {
+                    "type": "string"
+                }
             },
-            "name": {
-                "type": "string"
-            },
-            "address1_city": {
-                "type": "string"
-            },
-            "accountnumber": {
-                "type": "string"
-            }
-        },
-        "required": [
-            "@@search.score",
-            "name",
-            "address1_city",
-            "accountnumber"
-        ]
+            "required": [
+                "@@search.score",
+                "name",
+                "address1_city",
+                "accountnumber"
+            ]
+        }
     }
-}
-```
+    ```
 
-:::image type="content" source="media/advanced-flow-set-of-results/image5.png" alt-text="Graphical user interface, text, application Description automatically generated":::
+    :::image type="content" source="media/advanced-flow-set-of-results/json-schema.png" alt-text="Screenshot of JSON schema entered into the Parse JSON node.":::
 
-To return the results to Power Virtual Agents in a nicely formatted table, we use the Variable connector and this time choose the "Initialize variable" action. We name the variable "Accounts", set its type to String (at it only contains text), and initialize it with a default value containing our [table headers in Markdown format](https://www.markdownguide.org/extended-syntax/#tables). If you use Markdown, don't forget line breaks so that individually appended display correctly.
+1. Select the plus (**+**) button. Select the **Variable** connector, then select the **Initialize Variable** action.
 
-:::image type="content" source="media/advanced-flow-set-of-results/image6.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
+1. For **Name**, enter `ListOfAccounts`. For **Type**, select **String**.
 
-We add another action of the Variable connector called "Append to string variable". It is used here to add each search result as a new line in the variable table we initialized.
+    :::image type="content" source="media/advanced-flow-set-of-results/init-variable.png" alt-text="Screenshot of the Initialize variable action.":::
 
-As soon as we add an attribute from the "Parse JSON" step, Power Automate understands it must perform an "Apply to Each" and wraps the "Appen to string variable" step in it.
+1. Select the plus (**+**) button. Select the **Control** connector, then select the **Apply to each** action.
 
-:::image type="content" source="media/advanced-flow-set-of-results/image7.png" alt-text="Graphical user interface, application Description automatically generated":::
+1. For **Select an output from previous steps** select **Body**.
 
-We add the row columns we need to return to the user in PVA, and use Markdown formatting so that it adds a line to the table (again, don't forget to add a line break at the end).
+1. Select **Add an action**. Select the **Variable** connector, then select the **Append to string variable** action.
 
-In the last step, we use the Power Virtual Agents connector and the "Return value(s) to Power Virtual Agents" action. We add a text input called "Accounts" to return the Accounts variable containing the formatted table.
+1. For **Name**, select **ListOfAccounts**. For **Value**, copy and paste the following:
 
-:::image type="content" source="media/advanced-flow-set-of-results/image8.png" alt-text="Graphical user interface, application Description automatically generated":::
+   ```powerappsfl
+   - @{items('Apply_to_each')['accountnumber']}: @{items('Apply_to_each')['name']} - @{items('Apply_to_each')['address1_city']}
+   ```
 
-## Calling the flow from Power Virtual Agents
+1. Add a line break after the snippet to make each result appear on its own line.
 
-In the Account Search topic, we add a "Call an action" node, and select the Power Automate cloud flows that has been created. Power Virtual Agents recognizes the inputs and outputs. We map the Organization variable to the Organization input.
+    :::image type="content" source="media/advanced-flow-set-of-results/apply-to-each.png" alt-text="Screenshot of the Apply to each action.":::
 
-As a next node in the topic, we show a message back to the user displaying the returned output of Power Automate.
+1. In the **Return value(s) to Power Virtual Agents** action, add a **Text** output. For **Name**, enter `FoundAccounts`. For **Value**, select **ListOfAccounts**.
 
-:::image type="content" source="media/advanced-flow-set-of-results/image9.png" alt-text="Graphical user interface, application Description automatically generated":::
+    :::image type="content" source="media/advanced-flow-set-of-results/return-to-pva-action.png" alt-text="Screenshot of the Return values(s) to Power Virtual Agents action.":::
 
-When, when a user asks "I'm looking for an account, fabrikam", the "Search Account" topic is automatically identified, and the Organization entity is [automatically recognized and filled](advanced-entities-slot-filling.md) without further questions.
+## Call the flow from Power Virtual Agents
 
-:::image type="content" source="media/advanced-flow-set-of-results/image10.png" alt-text="Graphical user interface, text, application Description automatically generated":::
+1. On the Power Virtual Agents authoring canvas, select the plus (**+**) icon then select **Call an action**. In the flow picker, choose **Search Account**.
 
-Power Automate tracks the history of executions and their success/failures.
+1. Select the plus (**+**) icon then select **Show a message**. Enter the message `Okay, this is what I found.`
 
-:::image type="content" source="media/advanced-flow-set-of-results/image11.png" alt-text="Graphical user interface, application Description automatically generated":::
+1. Add a second **Message** node. Select **Insert variable** and choose **FoundAccounts**.
+
+    :::image type="content" source="media/advanced-flow-set-of-results/show-found-accounts.png" alt-text="Graphical user interface, application Description automatically generated":::
+
+1. Test your bot in the test bot pane.
+
+    :::image type="content" source="media/advanced-flow-set-of-results/test-chat.png" alt-text="Screenshot of the bot conversation in the test bot pane.":::
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
