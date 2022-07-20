@@ -17,7 +17,7 @@ search.app:
 
 # Power Platform automation maturity model: Details
 
-The following sections present detailed characteristics of an organization at [each maturity level of the Power Platform automation maturity model](/automation-maturity-model-overview.md) for each type of capability.
+The following sections present detailed characteristics of an organization at [each maturity level of the Power Platform automation maturity model](automation-maturity-model-overview.md) for each type of capability.
 
 ## Empower
 
