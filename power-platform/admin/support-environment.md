@@ -71,6 +71,10 @@ To assist with diagnosing and resolving a support issue, you must grant consent 
 
 :::image type="content" source="media/support-consent-ticket.png" alt-text="Support consent as seen in the request ticket.":::
 
+### Can I change and/or revoke consent after I create a ticket? 
+
+Yes. Edits can be made to ticket from the ticket's settings page in the Power Platform admin center.  
+
 ### What kind of data access does Microsoft have? 
 
 Online (via the application): 
@@ -80,10 +84,6 @@ Database (via SQL query tools):
 - Read/Write access to all tables 
 - Access to the database requires additional approval by Microsoft and it is managed, controlled, and granted as needed. 
 - Access to the database is subject to our standard access controls (that is, Just-in-time); for instance, access is time limited (for example, 30 minutes) and expires automatically.
-
-### Can I change and/or revoke consent after I create a ticket? 
-
-Yes. Edits can be made to ticket from the ticket's settings page in the Power Platform admin center.  
 
 ## Support environments
 
@@ -110,14 +110,6 @@ A support environment is any non-production environment of Microsoft Dataverse u
 
 - **Minimal copy** - Microsoft staff who are members of a support security group 
 - **Full copy** - Microsoft staff who are members of an elevated support security group 
-
-### What kind of data access does Microsoft have? 
-
-- Online (via the application) - System admin privileges 
-- Database (via SQL query tools) 
-- Read/Write access to all tables 
-- Access to the database requires additional approval by Microsoft and it is managed, controlled, and granted as needed. 
-- Access to the database is subject to our standard access controls (that is, Just-in-time); for instance, access is time limited (for example, 30 minutes) and expires automatically. 
 
 ### How long does a support environment stay in your tenant? 
 
