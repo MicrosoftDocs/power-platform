@@ -88,8 +88,8 @@
             href: advanced-flow-input-output.md
           - name: Call a flow as an action
             href: advanced-use-flow.md
-          - name: Return a set of results
-            href: advanced-flow-set-of-results.md
+          - name: Return a list of results
+            href: advanced-flow-list-of-results.md
     - name: Publish and integrate
       items:
        - name: Key concepts - Publish your bot

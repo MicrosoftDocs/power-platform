@@ -1,6 +1,6 @@
 ---
 #FIXME: meta data
-title: "Return a set of results"
+title: "Return a list of results"
 description: ""
 keywords: "PVA, flow, automate"
 ms.date: 07/19/2022
@@ -14,7 +14,7 @@ ms.custom: flow, ceX, advanced-authoring
 ms.collection: virtual-agent
 ---
 
-# Return a set of results
+# Return a list of results
 
 It's common to ask a bot to look for data in an external system and return a set of results to the user. To do that, Power Virtual Agents can call a Power Automate flow to:
 
