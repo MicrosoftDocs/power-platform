@@ -4,9 +4,9 @@ description: Exchange Online cross tenant authentication
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 01/13/2022
-author: mduelae
+author: gattimassimo 
 ms.author: magatti
-ms.reviewer: magatti
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:

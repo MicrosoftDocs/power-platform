@@ -3,9 +3,9 @@ title: "New Microsoft Dataverse storage capacity  | MicrosoftDocs"
 description: Introducing a new storage model for Microsoft Dataverse.
 ms.date: 06/21/2022
 ms.topic: conceptual
-author: cpdSeattle
+author: MicroSri
 ms.subservice: admin
-ms.author: camdebay
+ms.author: sriknair
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
