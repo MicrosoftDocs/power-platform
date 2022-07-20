@@ -29,7 +29,7 @@ A successful automation implementation requires technology, process, and people 
 
 :::image type="content" source="media/HEAT-Snap.png" alt-text="Diagram explains the various HEAT pillars.":::
 
-This article explains the automation maturity levels. Further details of capabilities at each level are in the next article, [Power Platform automation maturity model: Details](/automation-maturity-model-details.md)
+This article explains the automation maturity levels. Further details of capabilities at each level are in the next article, [Power Platform automation maturity model: Details](automation-maturity-model-details.md).
 
 ## Level 100 – Initial
 
@@ -73,7 +73,7 @@ Here is a high-level snapshot of [The Automation Maturity Model](/automation-mat
 
 
 > [!div class="nextstepaction"]
-> [Next step: Detailed capabilities](/automation-maturity-model-details.md)
+> [Next step: Detailed capabilities](automation-maturity-model-details.md)
 
 ## Resources for rolling out an automation program
 
