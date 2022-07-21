@@ -27,16 +27,31 @@ In this article, we'll use the Dataverse connector in Power Automate to search f
 ## Prerequisites
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
-- [Create and edit topics](authoring-create-edit-topics.md).
-- [Test your bot](authoring-test-bot.md)
-- [Use variables](authoring-variables.md)
 - [Create a flow](advanced-flow.md).
 - [Add input and output variables](advanced-flow-input-output.md).
 - [Configure Dataverse search for your environment](/power-platform/admin/configure-relevance-search-organization)
 
-## Create a new bot and topic
+## Setup Dataverse account table
 
-1. Create a new bot named `Account Search Bot`.
+The Account table is a [standard table](/power-apps/maker/data-platform/types-of-entities) automatically configured in Power Platform environments. However, it isn't prepopulated with account data. For your bot to be able to search for accounts, you must populate the Account table. 
+
+If you already have configured your Account table, skip this step and move on to [Create a new topic](#create-a-new-topic). However, you'll need to use different search terms when testing your bot in later steps.
+
+1. Go to the [Power Apps portal](https://make.powerapps.com/).
+
+1. In the side pane, under **Dataverse**, select **Tables**. 
+
+1. From the list select the **Account** table. Then on the table properties page, select **Edit**.
+
+1. Add the following rows to the table:
+
+    | Address 1: City | Account Name          | Account Number |
+    | --------------- | --------------------- | -------------- |
+    | Seattle         | Contoso Inc           | AC0125         |
+    | San Francisco   | Contoso Residences    | AC0255         |
+    | Olympia         | Contoso Meal Delivery | AC0035         |
+    
+## Create a new topic
 
 1. Create a new topic called `Account Search`.
 
@@ -64,11 +79,11 @@ In this article, we'll use the Dataverse connector in Power Automate to search f
 
     :::image type="content" source="media/advanced-flow-set-of-results/text-input.png" alt-text="Screenshot of the flow trigger with a text input added.":::
 
-1. Select the plus (**+**) button. Choose the **Microsoft Dataverse** connector, then select the **Search rows** action.
+1. Select **Insert a new step** (**+**) and choose **Add an action**. Then select the **Microsoft Dataverse** connector, then choose the **Search rows** action.
 
     This action will use fuzzy matching to find relevant accounts in your [Dataverse Account table](/power-apps/maker/data-platform/entity-overview).
 
-    :::image type="content" source="media/advanced-flow-set-of-results/dataverse-connector.png" alt-text="Screenshot of the flow trigger with a text input added.":::
+    :::image type="content" source="media/advanced-flow-set-of-results/dataverse-connector.png" alt-text="Screenshot of the Dataverse connector's Search rows action.":::
 
 1. For **Search term**, select the **Organization** variable.
 
@@ -77,13 +92,15 @@ In this article, we'll use the Dataverse connector in Power Automate to search f
     - **Sort by Item - 1**: `@search.score desc`
     - **Sort by Item - 2**: `name asc`
 
-    :::image type="content" source="media/advanced-flow-set-of-results/search-rows-action.png" alt-text="Graphical user interface, application Description automatically generated":::
+    :::image type="content" source="media/advanced-flow-set-of-results/search-rows-action.png" alt-text="Screenshot of Search rows actions with advanced options configured.":::
 
 ## Format results
 
 The **Search rows** action returns the **List of rows**  variable which contains JSON data. To make the data usable, it must first be parsed using the **Parse JSON** action.
 
-1. Select the plus (**+**) button. Choose the **Data Operation** connector, then select the **Parse JSON** action.
+1. Select **Insert a new step** (**+**) and choose **Add an action**. Then select the **Data Operation** connector, then choose the **Parse JSON** action.
+
+1. In the **Content** box, under **Search rows**, select the **List of rows** variable.
 
 1. In the **Schema** box, copy and paste the following JSON schema:
 
@@ -118,15 +135,15 @@ The **Search rows** action returns the **List of rows**  variable which contains
 
     :::image type="content" source="media/advanced-flow-set-of-results/json-schema.png" alt-text="Screenshot of JSON schema entered into the Parse JSON node.":::
 
-1. Select the plus (**+**) button. Choose the **Variable** connector, then select the **Initialize Variable** action.
+1. Select **Insert a new step** (**+**) and choose **Add an action**. Then select the **Variable** connector, then choose the **Initialize Variable** action.
 
 1. For **Name**, enter `ListOfAccounts`. For **Type**, select **String**.
 
     :::image type="content" source="media/advanced-flow-set-of-results/init-variable.png" alt-text="Screenshot of the Initialize variable action.":::
 
-1. Select the plus (**+**) button. Choose the **Control** connector, then select the **Apply to each** action.
+1. Select **Insert a new step** (**+**) and choose **Add an action**. Then select the **Control** connector, then choose the **Apply to each** action.
 
-1. For **Select an output from previous steps** select **Body**.
+1. Select the **Select an output from previous steps** box to open the **Dynamic content** flyout menu. Search for `body`, then under **Parse JSON**, select the **Body** variable.
 
 1. Select **Add an action**. Choose the **Variable** connector, then select the **Append to string variable** action.
 
@@ -144,15 +161,20 @@ The **Search rows** action returns the **List of rows**  variable which contains
 
     :::image type="content" source="media/advanced-flow-set-of-results/return-to-pva-action.png" alt-text="Screenshot of the Return values(s) to Power Virtual Agents action.":::
 
+1. Select **Save** to save your flow.
 ## Call the flow from Power Virtual Agents
 
 1. On the Power Virtual Agents authoring canvas, select the plus (**+**) icon then select **Call an action**. In the flow picker, choose **Search Account**.
+
+1. For **Organization gets value from**, select the **organization** variable.
 
 1. Add a **Message** node and enter the message `Okay, this is what I found.`
 
 1. Add a second **Message** node. Select **Insert variable** and choose **FoundAccounts**.
 
-    :::image type="content" source="media/advanced-flow-set-of-results/show-found-accounts.png" alt-text="Graphical user interface, application Description automatically generated":::
+    :::image type="content" source="media/advanced-flow-set-of-results/show-found-accounts.png" alt-text="Screenshot of conversation with bot that has responded with a list of found accounts.":::
+
+1.  Select **Save** to save your topic.
 
 1. Test your bot in the test bot pane.
 
