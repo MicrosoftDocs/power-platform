@@ -1,5 +1,5 @@
 ---
-title: Sharing limits
+title: Sharing limits (preview)
 description: Limit the number of canvas apps that can be shared in your managed environments.
 ms.component: pa-admin
 ms.topic: conceptual
@@ -20,9 +20,11 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Sharing limits
+# Sharing limits (preview)
 
 <!-- https://go.microsoft.com/fwlink/?linkid=2194484 -->
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 In managed environments, admins can limit how broadly makers can share canvas apps. There are two sharing controls.  
 
