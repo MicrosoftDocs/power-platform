@@ -15,7 +15,7 @@ ms.collection: virtual-agent
 
 # Call a flow as an action
 
-You can call a Power Automate flow from a bot topic using the **Call an action** node. You can then pass variables to the flow and receive flow outputs that can be used in a bot conversation.
+Call a Power Automate flow from a bot topic using the **Call an action** node.
 
 These instructions use adding weather information to a flow as an example. If you haven't already, follow the steps under the [Modify a flow on the Power Automate portal](advanced-flow.md#modify-a-flow-on-the-power-automate-portal) to create a weather forecast flow.
 

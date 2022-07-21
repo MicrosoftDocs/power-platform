@@ -82,8 +82,10 @@
          href: advanced-hand-off.md
        - name: Use Power Automate flows
          items:
-          - name: Create a flow
+          - name: Key Concepts - Flows
             href: advanced-flow.md
+          - name: Create a flow
+            href: advanced-flow-create.md
           - name: Add input and output variables
             href: advanced-flow-input-output.md
           - name: Call a flow as an action
