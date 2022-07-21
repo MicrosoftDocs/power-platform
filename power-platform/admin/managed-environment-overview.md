@@ -1,5 +1,5 @@
 ---
-title: Managed Environments overview
+title: Managed Environments overview (preview)
 description: Use Managed Environments to view and control your Dynamics 365 applications and flows with less effort.
 ms.component: pa-admin
 ms.topic: conceptual
@@ -20,7 +20,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Managed Environments overview
+# Managed Environments overview (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 

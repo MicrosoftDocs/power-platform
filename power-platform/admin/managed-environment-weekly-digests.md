@@ -1,5 +1,5 @@
 ---
-title: Weekly digests
+title: Weekly digests (preview)
 description: Stay informed about your managed environments with weekly digests.
 ms.component: pa-admin
 ms.topic: conceptual
@@ -21,9 +21,11 @@ search.app:
   - Flow
 ---
 
-# Weekly digests
+# Weekly digests (preview)
 
 <!-- https://go.microsoft.com/fwlink/?linkid=2194598 -->
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 Stay informed about what’s happening in your managed environments with Power Platform’s weekly admin digest. Analytics about your top apps and flows, your most impactful makers, and inactive resources you can safely clean up are distilled and delivered to your mailbox once a week.
 
