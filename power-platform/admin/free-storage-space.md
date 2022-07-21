@@ -83,11 +83,11 @@ Use the following methods to free up storage for each of the capacity types.
 > [!WARNING]
 > If you delete this data, the email messages and their associated attachments will no longer be available in customer engagement apps. However, if you have them saved in [!INCLUDE[pn_MS_Outlook_Full](../includes/pn-ms-outlook-full.md)], they will still be there.  
   
-1.	In the Power Platform admin center, select an environment.
+1. In the Power Platform admin center, select an environment.
 
    For [Unified Interface](about-unified-interface.md), in the upper-right corner select Settings (![Gear button.](media/selection-rule-gear.png "Gear button")) > **Advanced Settings** > **Settings**.
 
-2.	Select **Settings** > **Data management** > **Bulk deletion**. In the menu bar, select **New**. This opens the Bulk Deletion Wizard.  
+2. Select **Settings** > **Data management** > **Bulk deletion**. In the menu bar, select **New**. This opens the Bulk Deletion Wizard.  
   
 3. Choose **Next**.  
   
@@ -259,13 +259,13 @@ To monitor the status of audit delete jobs, see the next section.
 
 #### Monitor the status of audit delete jobs in the Power Platform admin center
 
-1.	In the Power Platform admin center, select an environment.
+1. In the Power Platform admin center, select an environment.
 
    For [Unified Interface](about-unified-interface.md), in the upper-right corner select Settings (![Gear button.](media/selection-rule-gear.png "Gear button")) > **Advanced Settings** > **Settings**.
 
-2.	Select **Settings** > **Data management** > **Bulk deletion**.
+2. Select **Settings** > **Data management** > **Bulk deletion**.
 
-3.	Select the system job name to open details about your delete job.
+3. Select the system job name to open details about your delete job.
 
 
 ## Reduce database storage
