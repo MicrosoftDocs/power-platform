@@ -4,9 +4,9 @@ description: "Learn how to use Dataverse auditing to log changes to records and 
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 07/21/2022
-author: Bluebear73
+author: jimholtz
 ms.subservice: admin
-ms.author: munzinge
+ms.author: jimholtz
 ms.reviewer: jimholtz 
 search.audienceType: 
   - admin
