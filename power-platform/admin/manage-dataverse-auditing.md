@@ -3,10 +3,10 @@ title: "Manage Dataverse auditing"
 description: "Learn how to use Dataverse auditing to log changes to records and user access. System admins and customizers can use this feature to meet security and compliance policies."
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/14/2022
-author: Bluebear73
+ms.date: 07/21/2022
+author: jimholtz
 ms.subservice: admin
-ms.author: munzinge
+ms.author: jimholtz
 ms.reviewer: jimholtz 
 search.audienceType: 
   - admin
@@ -98,7 +98,7 @@ To enable user access auditing (Log access) or activity logging (Read logs), aud
 
 You must have System Administrator or System Customizer role or equivalent permissions to enable or disable auditing. 
 
-Auditing can be configured manually via the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) and the [Power Apps portal](https://make.powerapps.com/). Auditing can also be [configured programmatically using either the Web API or the Organization service](/power-apps/developer/data-platform/configure-entities-attributes-auditing). 
+Auditing can be configured manually via the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) and the [Power Apps portal](https://make.powerapps.com/). Auditing can also be configured programmatically. See [Auditing overview](/power-apps/developer/data-platform/auditing/overview). 
 
 ## Start/stop auditing for an environment and set retention policy
 
