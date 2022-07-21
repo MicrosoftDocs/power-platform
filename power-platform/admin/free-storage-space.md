@@ -182,8 +182,8 @@ Use the following methods to free up storage for each of the capacity types.
   
    2. With all three rows selected, choose **Group AND**.  
 
-   > [!div class="mx-imgBorder"] 
-   > ![Free up storage method 6.](media/free-storage-method6a.png "Free up storage method 6")  
+      > [!div class="mx-imgBorder"] 
+      > ![Free up storage method 6.](media/free-storage-method6a.png "Free up storage method 6")  
   
 7. Choose **Next**.  
   
@@ -261,7 +261,7 @@ To monitor the status of audit delete jobs, see the next section.
 
 1.	In the Power Platform admin center, select an environment.
 
-    For [Unified Interface](about-unified-interface.md), in the upper-right corner select Settings (![Gear button.](media/selection-rule-gear.png "Gear button")) > **Advanced Settings** > **Settings**.
+   For [Unified Interface](about-unified-interface.md), in the upper-right corner select Settings (![Gear button.](media/selection-rule-gear.png "Gear button")) > **Advanced Settings** > **Settings**.
 
 2.	Select **Settings** > **Data management** > **Bulk deletion**.
 
@@ -277,7 +277,7 @@ To monitor the status of audit delete jobs, see the next section.
   
 1.	In the Power Platform admin center, select an environment.
 
-    For [Unified Interface](about-unified-interface.md), in the upper-right corner select Settings (![Gear button.](media/selection-rule-gear.png "Gear button")) > **Advanced Settings** > **Settings**.
+   For [Unified Interface](about-unified-interface.md), in the upper-right corner select Settings (![Gear button.](media/selection-rule-gear.png "Gear button")) > **Advanced Settings** > **Settings**.
 
 2.	Select **Settings** > **Data management** > **Bulk deletion**. In the menu bar, select **New**. This opens the Bulk Deletion Wizard.  
   
@@ -299,8 +299,8 @@ To monitor the status of audit delete jobs, see the next section.
   
    2. With all three rows selected, choose **Group AND**.  
 
-   > [!div class="mx-imgBorder"] 
-   > ![Free up storage method 10.](media/free-storage-method1b.png "Free up storage method 10")  
+      > [!div class="mx-imgBorder"] 
+      > ![Free up storage method 10.](media/free-storage-method1b.png "Free up storage method 10")  
   
 7. Choose **Next**.  
   
@@ -312,8 +312,8 @@ To monitor the status of audit delete jobs, see the next section.
   
 11. If you want a notification e-mail sent, select the **Send an e-mail to me (email@domain.com) when this job is finished** check box.  
  
-> [!div class="mx-imgBorder"] 
-> ![Free up storage method 10.](media/free-storage-method6b.png "Free up storage method 10")  
+    > [!div class="mx-imgBorder"] 
+    > ![Free up storage method 10.](media/free-storage-method6b.png "Free up storage method 10")  
  
 12. Choose **Next**, review the bulk deletion job, and then choose **Submit** to create the recurring job.  
   
@@ -336,12 +336,12 @@ To monitor the status of audit delete jobs, see the next section.
   
 4. Group the two criteria rows:  
   
-   1.  Choose the arrow next to each criteria row, and then choose **Select Row**.  
+   1. Choose the arrow next to each criteria row, and then choose **Select Row**.  
   
-   2.  With both rows selected, choose **Group AND**.  
+   2. With both rows selected, choose **Group AND**.  
   
-   > [!div class="mx-imgBorder"] 
-   > ![Free up storage method 2.](media/free-storage-method2b.png "Free up storage method 2")  
+      > [!div class="mx-imgBorder"] 
+      > ![Free up storage method 2.](media/free-storage-method2b.png "Free up storage method 2")  
 
 5. Choose **Results**.  
   
@@ -391,12 +391,12 @@ To monitor the status of audit delete jobs, see the next section.
   
 6. Group the three criteria rows:  
   
-   1.  Choose the arrow next to each criteria row, and then choose **Select Row**.  
+   1. Choose the arrow next to each criteria row, and then choose **Select Row**.  
   
-   2.  With all three rows selected, choose **Group AND**.  
+   2. With all three rows selected, choose **Group AND**.  
  
-   > [!div class="mx-imgBorder"] 
-   > ![Free up storage method 8.](media/free-storage-method8a.png "Free up storage method 8")  
+      > [!div class="mx-imgBorder"] 
+      > ![Free up storage method 8.](media/free-storage-method8a.png "Free up storage method 8")  
  
 7. Choose **Next**.  
   
@@ -408,8 +408,8 @@ To monitor the status of audit delete jobs, see the next section.
   
 11. If you want a notification e-mail sent, select the **Send an email to me (email@domain.com) when this job is finished** check box.  
   
-> [!div class="mx-imgBorder"] 
-> ![Free up storage method 8.](media/free-storage-method6b.png "Free up storage method 8")  
+    > [!div class="mx-imgBorder"] 
+    > ![Free up storage method 8.](media/free-storage-method6b.png "Free up storage method 8")  
 
 12. Choose **Next**, review the bulk deletion job, and then choose **Submit** to create the recurring job.  
   
@@ -422,7 +422,7 @@ To monitor the status of audit delete jobs, see the next section.
   
 1.	In the Power Platform admin center, select an environment.
 
-    For [Unified Interface](about-unified-interface.md), in the upper-right corner select Settings (![Gear button.](media/selection-rule-gear.png "Gear button")) > **Advanced Settings** > **Settings**.
+   For [Unified Interface](about-unified-interface.md), in the upper-right corner select Settings (![Gear button.](media/selection-rule-gear.png "Gear button")) > **Advanced Settings** > **Settings**.
 
 2.	Select **Settings** > **Data management** > **Bulk deletion**. In the menu bar, select **New**. This opens the Bulk Deletion Wizard.  
   
@@ -443,12 +443,12 @@ To monitor the status of audit delete jobs, see the next section.
   
 6. Group the three criteria rows:  
   
-   1.  Choose the arrow next to each criteria row, and then choose **Select Row**.  
+   1. Choose the arrow next to each criteria row, and then choose **Select Row**.  
   
-   2.  With all three rows selected, choose **Group AND**.  
+   2. With all three rows selected, choose **Group AND**.  
 
-   > [!div class="mx-imgBorder"] 
-   > ![Free up storage method 9.](media/free-storage-method9a.png "Free up storage method 9")  
+      > [!div class="mx-imgBorder"] 
+      > ![Free up storage method 9.](media/free-storage-method9a.png "Free up storage method 9")  
   
 7. Choose **Next**.  
   
@@ -460,8 +460,8 @@ To monitor the status of audit delete jobs, see the next section.
   
 11. If you want a notification e-mail sent, select the **Send an email to me (email@domain.com) when this job is finished** check box.  
   
-> [!div class="mx-imgBorder"] 
-> ![Free up storage method 9.](media/free-storage-method6b.png "Free up storage method 9")  
+    > [!div class="mx-imgBorder"] 
+    > ![Free up storage method 9.](media/free-storage-method6b.png "Free up storage method 9")  
 
 12. Choose **Next**, review the bulk deletion job, and then choose **Submit** to create the recurring job.  
 
