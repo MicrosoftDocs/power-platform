@@ -160,11 +160,11 @@ Use the following methods to free up storage for each of the capacity types.
 > [!WARNING]
 > If you delete this data, notes and their associated attachments will no longer be available in customer engagement apps.  
   
-1.	In the Power Platform admin center, select an environment.
+1. In the Power Platform admin center, select an environment.
 
    For [Unified Interface](about-unified-interface.md), in the upper-right corner select Settings (![Gear button.](media/selection-rule-gear.png "Gear button")) > **Advanced Settings** > **Settings**.
 
-2.	Select **Settings** > **Data management** > **Bulk deletion**. In the menu bar, select **New**. This opens the Bulk Deletion Wizard.  
+2. Select **Settings** > **Data management** > **Bulk deletion**. In the menu bar, select **New**. This opens the Bulk Deletion Wizard.  
   
 3. Choose **Next**.  
   
@@ -275,11 +275,11 @@ To monitor the status of audit delete jobs, see the next section.
 > [!WARNING]
 > If you delete this data, you will no longer be able to tell if an email was sent through bulk email or if a workflow rule ran against a record. The emails that were sent and the actions that ran against the record in the workflow will remain.  
   
-1.	In the Power Platform admin center, select an environment.
+1. In the Power Platform admin center, select an environment.
 
    For [Unified Interface](about-unified-interface.md), in the upper-right corner select Settings (![Gear button.](media/selection-rule-gear.png "Gear button")) > **Advanced Settings** > **Settings**.
 
-2.	Select **Settings** > **Data management** > **Bulk deletion**. In the menu bar, select **New**. This opens the Bulk Deletion Wizard.  
+2. Select **Settings** > **Data management** > **Bulk deletion**. In the menu bar, select **New**. This opens the Bulk Deletion Wizard.  
   
 3. Choose **Next**.  
   
@@ -420,11 +420,11 @@ To monitor the status of audit delete jobs, see the next section.
 > [!WARNING]
 > After you delete these jobs, you will lose the history of the prior bulk deletion jobs that you've run.  
   
-1.	In the Power Platform admin center, select an environment.
+1. In the Power Platform admin center, select an environment.
 
    For [Unified Interface](about-unified-interface.md), in the upper-right corner select Settings (![Gear button.](media/selection-rule-gear.png "Gear button")) > **Advanced Settings** > **Settings**.
 
-2.	Select **Settings** > **Data management** > **Bulk deletion**. In the menu bar, select **New**. This opens the Bulk Deletion Wizard.  
+2. Select **Settings** > **Data management** > **Bulk deletion**. In the menu bar, select **New**. This opens the Bulk Deletion Wizard.  
   
 3. Choose **Next**.  
   
