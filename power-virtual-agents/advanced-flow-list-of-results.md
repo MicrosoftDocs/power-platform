@@ -165,7 +165,7 @@ The **Search rows** action returns the **List of rows**  variable which contains
 
 ## Call the flow from Power Virtual Agents
 
-1. On the Power Virtual Agents authoring canvas, select the plus (**+**) icon then select **Call an action**. In the flow picker, choose **Search Account**.
+1. On the Power Virtual Agents authoring canvas, select the plus (**+**) icon then select **Call an action**. In the action picker, choose **Search Account**.
 
 1. For **Organization gets value from**, select the **organization** variable.
 

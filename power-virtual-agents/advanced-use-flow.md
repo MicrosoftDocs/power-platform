@@ -79,7 +79,7 @@ Using the node's context menu, you'll see the following options to manage the fl
 
 - **Refresh flow**: If changes have been made to a flow in the Power Automate portal, select this to reload the flow in the Power Virtual Agents authoring canvas. The flow will then be validated, and any problems detected will need to be fixed before you can save.
 
-- **Replace flow**: This will show the flow picker, allowing you to select or create a different flow to use in your dialog.
+- **Replace flow**: This will show the action picker, allowing you to select or create a different flow to use in your dialog.
 
 ## Test your flow and topic
 
