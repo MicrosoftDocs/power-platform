@@ -29,7 +29,7 @@ In this article, we'll use the Dataverse connector in Power Automate to search f
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 - [Create a flow](advanced-flow-create.md).
 - [Add input and output variables](advanced-flow-input-output.md).
-- [Configure Dataverse search for your environment](/power-platform/admin/configure-relevance-search-organization)
+- [Configure Dataverse search for your environment](/power-platform/admin/configure-relevance-search-organization).
 
 ## Setup Dataverse account table
 
@@ -68,6 +68,8 @@ If you already have configured your Account table, skip this step and move on to
     You can also use the **User's entire response**, but choosing the **Organization** entity will leverage the bot's language understanding capabilities to extract the organization name.
 
     :::image type="content" source="media/advanced-flow-set-of-results/bot-setup.png" alt-text="Screenshot of new topic with a message and question node on the canvas.":::
+
+1. For **Save response as**, rename the variable to `organization`.
 
 ## Create a Power Automate flow
 
