@@ -4,7 +4,7 @@ description: Endpoints have to be entered in all possible formats in order to bl
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/03/2021
+ms.date: 07/22/2022
 ms.subservice: admin
 author: mikferland-msft
 ms.author: miferlan
@@ -48,7 +48,7 @@ Below are examples of a few scenarios:
 
 ## Dataverse 
 
-Dataverse endpoints are represented by the environment ID (also known as the org ID); for example, 7b97cd5c-ce38-4930-9497-eec2a95bf5f7. Please note that only the regular Dataverse connector is currently in scope for endpoint filtering. Dataverse dynamics and Dataverse current connectors are not in scope. Also, the local instance of Dataverse (also known as the current environment) can never be blocked for use within an environment. This means that within any given environment, makers can always access the Dataverse current environment. Therefore, a rule that says the following:
+Dataverse endpoints are represented by the [organization ID](determine-org-id-name.md); for example, 7b97cd5c-ce38-4930-9497-eec2a95bf5f7. Please note that only the regular Dataverse connector is currently in scope for endpoint filtering. Dataverse dynamics and Dataverse current connectors are not in scope. Also, the local instance of Dataverse (also known as the current environment) can never be blocked for use within an environment. This means that within any given environment, makers can always access the Dataverse current environment. Therefore, a rule that says the following:
 
 1. Allow `7b97cd5c-ce38-4930-9497-eec2a95bf5f7`
 2. Deny `*`
