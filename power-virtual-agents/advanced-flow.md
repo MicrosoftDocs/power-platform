@@ -15,7 +15,7 @@ ms.collection: virtual-agent
 
 # Key concepts - Use Power Automate flows in Power Virtual Agents
 
-[Power Automate](flow.microsoft.com) is a service that you can use to build automated processes using low-code, drag-and-drop tools. By using [cloud flows](/power-automate/overview-cloud) in Power Virtual Agents, you can extend the capabilities of your bot to automate complex activities or query back-end systems.
+[Power Automate](https://flow.microsoft.com) is a service that you can use to build automated processes using low-code, drag-and-drop tools. By using [cloud flows](/power-automate/overview-cloud) in Power Virtual Agents, you can extend the capabilities of your bot to automate complex activities or query back-end systems.
 
 For example, you can use flows with [end-user authentication](advanced-end-user-authentication.md) to retrieve information about a user after they've signed in.
 

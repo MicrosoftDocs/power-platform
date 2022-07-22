@@ -40,7 +40,7 @@ In this example, you'll learn how to create a flow that provides a weather forec
 
     :::image type="content" source="media/advanced-flow/UseCreateFlowOption.jpg" alt-text="Create a new Power Automate flow." border="false":::
 
-1. A starter flow template is opened in the [Power Automate portal](flow.microsoft.com) in a separate tab. The portal automatically opens in the same environment as the bot and uses the same user credentials.
+1. A starter flow template is opened in the [Power Automate portal](https://flow.microsoft.com) in a separate tab. The portal automatically opens in the same environment as the bot and uses the same user credentials.
 
     :::image type="content" source="media/advanced-flow/PVAConnectorTemplate.JPG" alt-text="Power Automate flow template." border="false":::
 
@@ -117,7 +117,7 @@ Select **View flow details** from the relevant **Action** node.
 
 ### Open a flow in Power Automate
 
-1. Go to the [Power Automate portal](flow.microsoft.com).
+1. Go to the [Power Automate portal](https://flow.microsoft.com).
 
 1. Go to **Solutions** and select **Default Solution**. If you [moved your flow to another solution](#optionally-move-a-flow-to-another-solution) select that solution instead.
 
