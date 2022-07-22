@@ -27,6 +27,7 @@ In this example, you'll learn how to create a flow that provides a weather forec
 ## Prerequisites
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+- [Get started with Power Automate](/power-automate/getting-started)
 
 ## Create a new flow from the authoring canvas
 
