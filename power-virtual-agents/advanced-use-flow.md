@@ -38,19 +38,19 @@ These instructions use adding weather information to a flow as an example. If yo
     - get weather
     - what's the weather
 
-    :::image type="content" source="media/advanced-flow/create-get-weather-topic.png" alt-text="Create a new topic." border="false":::
+    :::image type="content" source="media/advanced-use-flow/create-get-weather-topic.png" alt-text="Create a new topic." border="false":::
 
 1. By default, a message node is created. Enter **I can help you with that** into the node, and then select the plus (**+**) button under it to add a new node.
 
-    :::image type="content" source="media/advanced-flow/handoff-add-node.png" alt-text="Screenshot of adding a node." border="false":::
+    :::image type="content" source="media/advanced-use-flow/handoff-add-node.png" alt-text="Screenshot of adding a node." border="false":::
 
 1. Add two new **Ask a question** nodes to ask users for the **City (String)** and **Zipcode (Number)** inputs.
 
-    :::image type="content" source="media/advanced-flow/TopicDialogQuestions.jpg" alt-text="Add Topic Dialog questions." border="false":::
+    :::image type="content" source="media/advanced-use-flow/TopicDialogQuestions.jpg" alt-text="Add Topic Dialog questions." border="false":::
 
 1. Select the plus (**+**) button under the question nodes to add a new node. In the node selection window, select **Call an action**, and then select the flow you created earlier called **Get weather forecast**.
 
-    :::image type="content" source="media/advanced-flow/SelectFlowGetWeatherForecast.png" alt-text="Call action." border="false":::
+    :::image type="content" source="media/advanced-use-flow/SelectFlowGetWeatherForecast.png" alt-text="Call action." border="false":::
 
 1. Map the flow input blocks to the output variables from the question nodes. **City (text)** gets its value from `Var1 (text)` and **Zipcode (number)** gets its value from `Var2 (number)`.
 
@@ -59,7 +59,7 @@ These instructions use adding weather information to a flow as an example. If yo
     **Today's forecast for `(x)location`:`{x}day_summary`.
     Chance of rain is `{x}chance_of_rain`%**
 
-    :::image type="content" source="media/advanced-flow/ActionNodeGetWeatherForecast.png" alt-text="Input the variables." border="false":::
+    :::image type="content" source="media/advanced-use-flow/ActionNodeGetWeatherForecast.png" alt-text="Input the variables." border="false":::
 
 1. Select **Save** to save your topic.
 
@@ -67,7 +67,7 @@ These instructions use adding weather information to a flow as an example. If yo
 
 Using the node's context menu, you'll see the following options to manage the flow in your dialog:
 
-:::image type="content" source="media/advanced-flow/advanced-flow-nodemanage.png" alt-text="Modify flow from the authoring canvas.":::
+:::image type="content" source="media/advanced-use-flow/advanced-flow-nodemanage.png" alt-text="Modify flow from the authoring canvas.":::
 
 - **Delete**: This will permanently delete the node that runs the flow, which could disrupt the functionality of the dialog.  
 
@@ -81,7 +81,7 @@ In the **Test bot** pane, start a conversation with the bot by typing in a trigg
 
 Enter your city and zip code at the prompt to get today's weather forecast from the bot.
 
-:::image type="content" source="media/advanced-flow/GetWeatherE2E.png" alt-text="Test Dialog." border="false":::
+:::image type="content" source="media/advanced-use-flow/GetWeatherE2E.png" alt-text="Test Dialog." border="false":::
 
 ## Troubleshoot your bot
 
