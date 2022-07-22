@@ -1,5 +1,5 @@
 ---
-title: "Manage non-production support environments in your tenant"
+title: "About support environments and the consent process"
 description: "Learn about support environments created in your tenant by Microsoft to resolve customer issues. These non-production environments are managed by system admins."
 ms.custom: ""
 ms.date: 07/20/2022
