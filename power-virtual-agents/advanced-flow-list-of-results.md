@@ -126,10 +126,7 @@ The **Search rows** action returns the **List of rows**  variable which contains
                 }
             },
             "required": [
-                "@@search.score",
-                "name",
-                "address1_city",
-                "accountnumber"
+                "name"
             ]
         }
     }
