@@ -15,13 +15,6 @@ ms.collection: virtual-agent
 
 # Create a flow
 
-Select the version of Power Virtual Agents you're using here:
-
-> [!div class="op_single_selector"]
->
-> - [Power Virtual Agents web app](advanced-flow.md)
-> - [Power Virtual Agents app in Microsoft Teams](teams/advanced-flow-teams.md)
-
 In this example, you'll learn how to create a flow that provides a weather forecast.
 
 ## Prerequisites
