@@ -15,7 +15,11 @@ ms.collection: virtual-agent
 
 # Create a flow
 
+Launch the Power Automate portal directly from Power Virtual Agents to create flows for your bot.
+
 In this example, you'll learn how to create a flow that provides a weather forecast.
+
+[!INCLUDE [Requirements for Power Automate flows](includes/flow-requirements.md)]
 
 ## Prerequisites
 
