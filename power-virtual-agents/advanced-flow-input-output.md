@@ -57,7 +57,7 @@ The following types are not supported:
 
 1. For **Save response as**, rename the variable to `userResponse`.
 
-    :::image type="content" source="media/advanced-flow-input-output/new-topic.png" alt-text="Power Virtual Agents flow trigger input types.":::
+    :::image type="content" source="media/advanced-flow-input-output/new-topic.png" alt-text="Screenshot of question node.":::
 
 1. On the Power Virtual Agents authoring canvas, select the plus (**+**) icon. Choose **Call an action**, then select **Create a flow**.
 
@@ -67,25 +67,25 @@ The following types are not supported:
 
 1. In the **Power Virtual Agents** flow trigger, select **Add an input**.
 
-    :::image type="content" source="media/advanced-flow-input-output/PVAConnector_Inputs_1.png" alt-text="Power Virtual Agents flow trigger input types.":::
+    :::image type="content" source="media/advanced-flow-input-output/PVAConnector_Inputs_1.png" alt-text="Screenshot of Add an input button highlighted.":::
 
 1. Select **Text** and enter the name `String_Input`.
 
-    :::image type="content" source="media/advanced-flow-input-output/PVAConnector_Inputs_2.png" alt-text="Power Virtual Agents flow trigger inputs.":::
+    :::image type="content" source="media/advanced-flow-input-output/PVAConnector_Inputs_2.png" alt-text="Screenshot of flow trigger input.":::
 
 ## Add output parameters
 
 1. In the **Return value(s) to Power Virtual Agents** response action, select **Add an output**.
 
-    :::image type="content" source="media/advanced-flow-input-output/PVAConnector_Output_1.png" alt-text="Power Virtual Agents response output types." border="false":::
+    :::image type="content" source="media/advanced-flow-input-output/PVAConnector_Output_1.png" alt-text="Screenshot of Add an output highlighted." border="false":::
 
 1. Select **Text** and enter the name `String_Output`.
 
-    :::image type="content" source="media/advanced-flow-input-output/PVAConnector_Output_2.png" alt-text="Power Virtual Agents response outputs." :::
+    :::image type="content" source="media/advanced-flow-input-output/PVAConnector_Output_2.png" alt-text="Screenshot of response action output." :::
 
 1. For the value of **String_Output**, select the **String_Input** variable.
 
-    :::image type="content" source="media/advanced-flow-input-output/use-input-variables-for-output.png" alt-text="Power Virtual Agents response outputs.":::
+    :::image type="content" source="media/advanced-flow-input-output/use-input-variables-for-output.png" alt-text="Screenshot of input parameter being used as the value of the output parameter.":::
 
 1. Select **Save** to save your flow.
 
@@ -97,16 +97,16 @@ The following types are not supported:
 
 1. Add a **Message** node. Select **Insert variable** and choose **String_Output**.
 
-    :::image type="content" source="media/advanced-flow-input-output/action-node.png" alt-text="Pass literal values into action inputs.":::
+    :::image type="content" source="media/advanced-flow-input-output/action-node.png" alt-text="Screenshot of action node for the Echo parameter flow.":::
 
 1. Test your topic in the test bot pane.
 
-    :::image type="content" source="media/advanced-flow-input-output/test-bot.png" alt-text="Pass literal values into action inputs.":::
+    :::image type="content" source="media/advanced-flow-input-output/test-bot.png" alt-text="Screenshot of bot conversation.":::
 
 ## Optionally use literal values for input parameters
 
 Alternatively, instead of using a variable as an action's input parameter, you can type the value directly into the box.
 
-:::image type="content" source="media/advanced-flow-input-output/literal-value.png" alt-text="Pass literal values into action inputs.":::
+:::image type="content" source="media/advanced-flow-input-output/literal-value.png" alt-text="Screenshot of a literal value passed as an input parameter.":::
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
