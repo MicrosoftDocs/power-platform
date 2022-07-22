@@ -23,6 +23,7 @@ A bot is only able to _receive_ up to 1 MB of data from a flow in a single actio
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 - [Create a flow](advanced-flow.md).
+- [Use variables](authoring-variables.md)
 
 ## Supported parameter types
 
