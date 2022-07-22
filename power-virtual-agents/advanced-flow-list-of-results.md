@@ -33,13 +33,13 @@ In this article, we'll use the Dataverse connector in Power Automate to search f
 
 ## Setup Dataverse account table
 
-The Account table is a [standard table](/power-apps/maker/data-platform/types-of-entities) automatically configured in Power Platform environments. However, it isn't prepopulated with account data. For your bot to be able to search for accounts, you must populate the Account table. 
+The Account table is a [standard table](/power-apps/maker/data-platform/types-of-entities) automatically configured in Power Platform environments. However, it isn't prepopulated with account data. For your bot to be able to search for accounts, you must populate the Account table.
 
 If you already have configured your Account table, skip this step and move on to [Create a new topic](#create-a-new-topic). However, you'll need to use different search terms when testing your bot in later steps.
 
 1. Go to the [Power Apps portal](https://make.powerapps.com/).
 
-1. In the side pane, under **Dataverse**, select **Tables**. 
+1. In the side pane, under **Dataverse**, select **Tables**.
 
 1. From the list select the **Account** table. Then on the table properties page, select **Edit**.
 
@@ -50,7 +50,7 @@ If you already have configured your Account table, skip this step and move on to
     | Seattle         | Contoso Inc           | AC0125         |
     | San Francisco   | Contoso Residences    | AC0255         |
     | Olympia         | Contoso Meal Delivery | AC0035         |
-    
+
 ## Create a new topic
 
 1. Create a new topic called `Account Search`.
@@ -162,6 +162,7 @@ The **Search rows** action returns the **List of rows**  variable which contains
     :::image type="content" source="media/advanced-flow-set-of-results/return-to-pva-action.png" alt-text="Screenshot of the Return values(s) to Power Virtual Agents action.":::
 
 1. Select **Save** to save your flow.
+
 ## Call the flow from Power Virtual Agents
 
 1. On the Power Virtual Agents authoring canvas, select the plus (**+**) icon then select **Call an action**. In the flow picker, choose **Search Account**.
@@ -174,7 +175,7 @@ The **Search rows** action returns the **List of rows**  variable which contains
 
     :::image type="content" source="media/advanced-flow-set-of-results/show-found-accounts.png" alt-text="Screenshot of conversation with bot that has responded with a list of found accounts.":::
 
-1.  Select **Save** to save your topic.
+1. Select **Save** to save your topic.
 
 1. Test your bot in the test bot pane.
 

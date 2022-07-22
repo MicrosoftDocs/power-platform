@@ -17,7 +17,7 @@ ms.collection: virtual-agent
 
 Call a Power Automate flow from a bot topic using the **Call an action** node.
 
-These instructions use adding weather information to a flow as an example. If you haven't already, follow the steps under the [Modify a flow on the Power Automate portal](advanced-flow.md#modify-a-flow-on-the-power-automate-portal) to create a weather forecast flow.
+These instructions use adding weather information to a flow as an example. If you haven't already, follow the steps under the [Author a flow on the Power Automate portal](advanced-flow-create.md#author-a-flow-on-the-power-automate-portal) to create a weather forecast flow.
 
 ## Prerequisites
 

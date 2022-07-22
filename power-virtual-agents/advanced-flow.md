@@ -26,9 +26,9 @@ Flows are called from within topics, as a discrete **Call an action** node. You 
 >
 > - A flow can only be called from a topic located in the same [Microsoft Dataverse environment](/powerapps/maker/common-data-service/data-platform-intro) as your bot.
 >
-> - Flows must also be in a solution in Power Automate. You can [move flows into solutions](#optionally-move-a-flow-from-default-solution-to-another-solution) so they're listed in the authoring canvas.
+> - Flows must also be in a solution in Power Automate. You can [move flows into solutions](advanced-flow-create.md#optionally-move-a-flow-to-another-solution) so they're listed in the authoring canvas.
 >
-> - [Flow values must be returned synchronously to Power Virtual Agents](#disable-asynchronous-responses-from-flows).
+> - [Flow values must be returned synchronously to Power Virtual Agents](advanced-flow-create.md#disable-asynchronous-responses-from-flows).
 
 ## In this section
 
@@ -38,6 +38,5 @@ Flows are called from within topics, as a discrete **Call an action** node. You 
 | [Add input and output variables](advanced-flow-input-output.md) | Pass variables between a Power Automate flow and a Power Virtual Agents bot.       |
 | [Call a flow as an action](advanced-use-flow.md)                | Call a Power Automate flow from a bot topic using an action node.                  |
 | [Return a list of results](advanced-flow-list-of-results.md)    | Return a list of results from a Power Automate flow to a Power Virtual Agents bot. |
-
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
