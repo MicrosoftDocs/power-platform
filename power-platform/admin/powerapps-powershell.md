@@ -5,7 +5,7 @@ author: laneswenka
 ms.reviewer: jimholtz
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 07/19/2022
+ms.date: 07/22/2022
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -104,8 +104,8 @@ Users with a valid Power Apps license can perform the operations in these cmdlet
 | Purpose | Cmdlet |
 | --- | --- |
 | Add a canvas app to a Microsoft Dataverse solution | Set-PowerAppAsSolutionAware |
-| Read and update environments | Get-PowerAppEnvironment *(previously Get-PowerAppsEnvironment)* <br> Get-FlowEnvironment <br> [Restore-PowerAppEnvironment](/powershell/module/microsoft.powerapps.administration.powershell/restore-powerappenvironment) *(previously Restore-AppVersion)*|
-| Read, update, and delete a canvas app | Get-PowerApp *(previously Get-App)* <br> Remove-PowerApp *(previously Remove-App)* <br> Publish-PowerApp *(previously Publish-App)*<br />Set-PowerAppDisplayName *(previously Set-AppDisplayName)*<br> Get-PowerAppVersion *(previously Get-AppVersion)* <br> Restore-PowerAppVersion *(previously Restore-AppVersion)*|
+| Read and update environments | [Get-AdminPowerAppEnvironment](/powershell/module/microsoft.powerapps.administration.powershell/get-adminpowerappenvironment) *(previously Get-PowerAppsEnvironment)* <br> Get-FlowEnvironment <br> [Restore-PowerAppEnvironment](/powershell/module/microsoft.powerapps.administration.powershell/restore-powerappenvironment) *(previously Restore-AppVersion)*|
+| Read, update, and delete a canvas app | [Get-AdminPowerApp](/powershell/module/microsoft.powerapps.administration.powershell/get-adminpowerapp) *(previously Get-App)*<br> [Remove-AdminPowerApp](/powershell/module/microsoft.powerapps.administration.powershell/remove-adminpowerapp)  *(previously Remove-App)* <br> Publish-AdminPowerApp *(previously Publish-App)* |
 | Read, update, and delete canvas app permissions | [Get-AdminPowerAppRoleAssignment](/powershell/module/microsoft.powerapps.administration.powershell/get-adminpowerapproleassignment) *(previously Get-AppRoleAssignment)* <br>  [Remove-AdminPowerAppRoleAssignment](/powershell/module/microsoft.powerapps.administration.powershell/remove-adminpowerapproleassignment) *(previously Remove-AppRoleAssignment)* |
 | Read, update, and delete a flow | [Get-AdminFlow](/powershell/module/microsoft.powerapps.administration.powershell/get-adminflow) <br> [Enable-AdminFlow](/powershell/module/microsoft.powerapps.administration.powershell/enable-adminflow) <br> [Disable-AdminFlow](/powershell/module/microsoft.powerapps.administration.powershell/disable-adminflow) <br> [Remove-AdminFlow](/powershell/module/microsoft.powerapps.administration.powershell/remove-adminflow) |
 | Read, update, and delete flow permissions | [Get-AdminFlowOwnerRole](/powershell/module/microsoft.powerapps.administration.powershell/get-adminflowownerrole) <br> [Set-AdminFlowOwnerRole](/powershell/module/microsoft.powerapps.administration.powershell/set-adminflowownerrole) <br> [Remove-AdminFlowOwnerRole](/powershell/module/microsoft.powerapps.administration.powershell/remove-adminflowownerrole) |
