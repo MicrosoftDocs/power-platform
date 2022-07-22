@@ -15,15 +15,17 @@ ms.collection: virtual-agent
 
 # Add input and output variables
 
-Flows use variables as input and output parameters to pass information between Power Automate flows and Power Virtual Agents bots.
+Use variables as input and output parameters to pass information between Power Automate flows and Power Virtual Agents bots.
 
 A bot is only able to _receive_ up to 1 MB of data from a flow in a single action. However, there's no limit on the size of data a bot can send or how many variables a bot can pass.
+
+In this example, you'll create a simple flow with an input parameter and returns it back to the bot as an output parameter.
 
 ## Prerequisites
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 - [Create a flow](advanced-flow-create.md).
-- [Use variables](authoring-variables.md)
+- [Use variables](authoring-variables.md).
 
 ## Supported parameter types
 
@@ -45,40 +47,66 @@ The following types are not supported:
 - List [Date]
 - List [Timestamp]
 
-## Input parameters
+## Create a new topic and flow
 
-To specify a flow to accept input parameters from a bot, select the **Add an input** option in the **Power Virtual Agents** flow trigger, and then select the type a - `string`, `number`, or a `boolean`.
+1. Create a new topic called `Echo message`.
 
-:::image type="content" source="media/advanced-flow/PVAConnector_Inputs_1.JPG" alt-text="Power Virtual Agents flow trigger input types." border="false":::
+1. Add the trigger phrase `echo`.
 
-For example, select **Text** and **Number** to add the following input parameters to the flow:
+1. Add a **Question** node and enter the message `Tell me something and I'll say it back to you`. For **Identify**, choose **User's entire response**.
 
-- **String_Input** of type `string`
-- **Number_Input** of type `number`
+1. For **Save response as**, rename the variable to `userResponse`.
 
-:::image type="content" source="media/advanced-flow/PVAConnector_Inputs_2.JPG" alt-text="Power Virtual Agents flow trigger inputs." border="false":::
+    :::image type="content" source="media/advanced-flow-input-output/new-topic.png" alt-text="Power Virtual Agents flow trigger input types.":::
 
-## Output parameters
+1. On the Power Virtual Agents authoring canvas, select the plus (**+**) icon. Choose **Call an action**, then select **Create a flow**.
 
-To return output parameters to the bot that can be a `string`, `number`, or a `boolean`, select **Add an output** option in **Return value(s) to Power Virtual Agents** response, and then select the type for the output.
+1. In the Power Automate portal, name the flow `Echo parameter`.
 
-:::image type="content" source="media/advanced-flow/PVAConnector_Output_1.JPG" alt-text="Power Virtual Agents response output types." border="false":::
+## Add input parameters
 
-For example, select **Text** and **Number** to add the following output parameters to the flow and assign return values for them.
+1. In the **Power Virtual Agents** flow trigger, select **Add an input**.
 
-- **String_Output** of type `string`
-- **Number_Output** of type `number`
+    :::image type="content" source="media/advanced-flow-input-output/PVAConnector_Inputs_1.png" alt-text="Power Virtual Agents flow trigger input types.":::
 
-:::image type="content" source="media/advanced-flow/PVAConnector_Output_2.JPG" alt-text="Power Virtual Agents response outputs." border="false":::
+1. Select **Text** and enter the name `String_Input`.
 
-This example creates a fully functional flow that accepts two parameters, a `string` and a `number`, and returns them to a bot as outputs.
+    :::image type="content" source="media/advanced-flow-input-output/PVAConnector_Inputs_2.png" alt-text="Power Virtual Agents flow trigger inputs.":::
 
-Select **Save** to save your new flow.
+## Add output parameters
 
-:::image type="content" source="media/advanced-flow/PVAConnectorTemplate_SAVE.jpg" alt-text="Power Automate flow template - Save." border="false":::
+1. In the **Return value(s) to Power Virtual Agents** response action, select **Add an output**.
 
-Your flow is saved to the **Default Solution** under the **Solutions** tab on the Power Automate portal.
+    :::image type="content" source="media/advanced-flow-input-output/PVAConnector_Output_1.png" alt-text="Power Virtual Agents response output types." border="false":::
 
-:::image type="content" source="media/advanced-flow/default-solution.png" alt-text="Power Automate flow template - Default Solution." border="false":::
+1. Select **Text** and enter the name `String_Output`.
+
+    :::image type="content" source="media/advanced-flow-input-output/PVAConnector_Output_2.png" alt-text="Power Virtual Agents response outputs." :::
+
+1. For the value of **String_Output**, select the **String_Input** variable.
+
+    :::image type="content" source="media/advanced-flow-input-output/use-input-variables-for-output.png" alt-text="Power Virtual Agents response outputs.":::
+
+1. Select **Save** to save your flow.
+
+## Select variables on the authoring canvas
+
+1. On the Power Virtual Agents authoring canvas, select the plus (**+**) icon then select **Call an action**. In the action picker, choose **Echo parameter**.
+
+1. For **String_Input(text) gets value from**, select **userResponse**.
+
+1. Add a **Message** node. Select **Insert variable** and choose **String_Output**.
+
+    :::image type="content" source="media/advanced-flow-input-output/action-node.png" alt-text="Pass literal values into action inputs.":::
+
+1. Test your topic in the test bot pane.
+
+    :::image type="content" source="media/advanced-flow-input-output/test-bot.png" alt-text="Pass literal values into action inputs.":::
+
+## Optionally use literal values for input parameters
+
+Alternatively, instead of using a variable as an action's input parameter, you can type the value directly into the box.
+
+:::image type="content" source="media/advanced-flow-input-output/literal-value.png" alt-text="Pass literal values into action inputs.":::
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -63,12 +63,6 @@ These instructions use adding weather information to a flow as an example. If yo
 
 1. Select **Save** to save your topic.
 
-## Pass literal values into action input fields
-
-Alternatively, if you'd rather type in a literal value for an action input instead of using a variable as an action input, you can type the value directly into the field.
-
-:::image type="content" source="media/advanced-flow/LiteralActionInput.png" alt-text="Pass literal values into action inputs.":::
-
 ## Modify a flow on the Power Virtual Agents authoring canvas
 
 Using the node's context menu, you'll see the following options to manage the flow in your dialog:
