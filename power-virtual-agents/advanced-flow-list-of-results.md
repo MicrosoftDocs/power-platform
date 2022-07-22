@@ -27,7 +27,7 @@ In this article, we'll use the Dataverse connector in Power Automate to search f
 ## Prerequisites
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
-- [Create a flow](advanced-flow.md).
+- [Create a flow](advanced-flow-create.md).
 - [Add input and output variables](advanced-flow-input-output.md).
 - [Configure Dataverse search for your environment](/power-platform/admin/configure-relevance-search-organization)
 

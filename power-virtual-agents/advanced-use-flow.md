@@ -22,7 +22,7 @@ These instructions use adding weather information to a flow as an example. If yo
 ## Prerequisites
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
-- [Create a flow](advanced-flow.md).
+- [Create a flow](advanced-flow-create.md).
 - [Add input and output variables](advanced-flow-input-output.md).
 
 ## Call a flow from within a topic
