@@ -30,19 +30,19 @@ Errors may also appear in the [Topic Checker](authoring-topic-management.md#topi
 > The term _dialog_ is used in some error messages when referring to a _topic_.
 
 <!-- table best viewed and edited without word wrap -->
-| Error code                                                                | Description                                                      |
-| ------------------------------------------------------------------------- | ---------------------------------------------------------------- |
-| [ContentError](#contenterror)                                             | There's an error in the topic content.                          |
-| [FlowActionException](#flowactionexception)                               | An error occurred while executing a [flow][2].                   |
-| [FlowActionBadRequest](#flowactionbadrequest)                             | A request made to a [flow][2] was malformed.                     |
-| [InvalidContent](#invalidcontent)                                         | Invalid content was added to the [code editor][5].               |
-| [InfiniteLoopInBotContent](#infiniteloopinbotcontent)                     | A node was executed too many times.                              |
-| [LatestPublishedVersionNotFound](#latestpublishedversionnotfound)         | Unable to retrieve the published version of the bot.             |
-| [RedirectToDisabledDialog](#redirecttodisableddialog)                     | A topic is [redirecting][1] to a disabled topic.                 |
+| Error code                                                                | Description                                                         |
+| ------------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| [ContentError](#contenterror)                                             | There's an error in the topic content.                              |
+| [FlowActionException](#flowactionexception)                               | An error occurred while executing a [flow][2].                      |
+| [FlowActionBadRequest](#flowactionbadrequest)                             | A request made to a [flow][2] was malformed.                        |
+| [InvalidContent](#invalidcontent)                                         | Invalid content was added to the [code editor][5].                  |
+| [InfiniteLoopInBotContent](#infiniteloopinbotcontent)                     | A node was executed too many times.                                 |
+| [LatestPublishedVersionNotFound](#latestpublishedversionnotfound)         | Unable to retrieve the published version of the bot.                |
+| [RedirectToDisabledDialog](#redirecttodisableddialog)                     | A topic is [redirecting][1] to a disabled topic.                    |
 | [RedirectToNonExistentDialog](#redirecttononexistentdialog)               | A topic is [redirecting][1] to another topic that no longer exists. |
-| [SystemError](#systemerror)                                               | A system error occurred in Power Virtual Agents.                 |
-| [TelephonyHandoffInvalidPhoneNumber](#telephonyhandoffinvalidphonenumber) | The phone number provided to [telephony][4] isn't valid.        |
-| [TelephonyHandoffMissingPhoneNumber](#telephonyhandoffmissingphonenumber) | A phone number hasn't been set for [telephony][4].              |
+| [SystemError](#systemerror)                                               | A system error occurred in Power Virtual Agents.                    |
+| [TelephonyHandoffInvalidPhoneNumber](#telephonyhandoffinvalidphonenumber) | The phone number provided to [telephony][4] isn't valid.            |
+| [TelephonyHandoffMissingPhoneNumber](#telephonyhandoffmissingphonenumber) | A phone number hasn't been set for [telephony][4].                  |
 
 [1]: authoring-create-edit-topics.md#go-to-another-topic
 [2]: advanced-flow.md

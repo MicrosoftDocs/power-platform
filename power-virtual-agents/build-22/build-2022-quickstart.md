@@ -48,7 +48,7 @@ Power Virtual Agents now has an app-level home page that isn't specific to any b
 
 1. In the side navigation, select **Topics** and then select the **Greeting** topic.
 
-1. Select the **Delete** button in the ellipsis menu and delete the existing **Message** node.
+1. In the existing **Message** node, select the **Delete** button in the ellipsis menu.
 
 1. To add a new **Message** node, select **Send a message** in the add node menu. Type the following greetings as [message variations](authoring-create-edit-topics.md#message-variations):
     - `Good day!`
@@ -120,9 +120,7 @@ Power Virtual Agents now has an app-level home page that isn't specific to any b
 1. Add a **Redirect** node where the two condition branches meet and choose the **End of conversation** topic.
 The **End of conversation** topic is a pre-built topic designed to check if the user is satisfied and asks them to rate their experience.
 
-1. Name the topic **Reservation**` and select **Save**.
-
-1. Interact with the bot by selecting the **Make a reservation** quick reply. The bot will reply based on the conditions added until it redirects to the end of the conversation topic and asks you to rate your experience.
+1. Name the topic **Reservation** and select **Save**.
 
 ## Next steps
 

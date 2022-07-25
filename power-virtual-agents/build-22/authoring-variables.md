@@ -34,7 +34,7 @@ A variable is associated with a **type**. The type determines what values the va
 | String   | A sequence of characters used to represent text.                                                                      |
 | Boolean  | A logical value that can only be `true` or `false`.                                                                   |
 | Number   | Any real number.                                                                                                      |
-| Table    | A list of any number of values, but all values must be the same type.                                                    |
+| Table    | A list of any number of values, but all values must be the same type.                                                 |
 | Record   | A collection of name-value pairs where values can be any type.                                                        |
 | DateTime | A date, time, day of the week, or month relative to a point in time.                                                  |
 | Choice   | A list of string values that have associated synonyms.                                                                |
@@ -124,7 +124,7 @@ Some system variables are hidden from the variable context menu and must be acce
 | LastActivity.Id                      | string |        | ID of the previously sent [activity][].                         |
 | Activity.Channel                     | choice |        | Channel ID of the current conversation.                         |
 | Activity.ChannelId                   | string | ✔      | Channel ID of the current conversation, as a string.            |
-| Channel.DisplayName                  | string | ✔      | Display the name of the channel.                                    |
+| Channel.DisplayName                  | string | ✔      | Display the name of the channel.                                |
 | Activity.Text                        | string |        | Last message sent by the user.                                  |
 | Activity.ChannelData                 | any    | ✔      | An object that contains channel-specific content.               |
 | Activity.Value                       | any    | ✔      | Open-ended value.                                               |
