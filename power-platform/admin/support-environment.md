@@ -35,9 +35,9 @@ We present four consent options at support request creation time with three of t
 
 - **Allow access to diagnostic information** – with this option you can temporarily grant Microsoft Support access to customer data associated with your tenant and/or environment. Allowing customer data access ensures there's no delay in troubleshooting to identify the root cause and the solution to the issue as it eliminates the back-and-forth to contact you directly for access. This is a read-only access that you can revoke at any time, and it's automatically removed once the case is closed. This is the recommended option, but it isn't set by default and needs to be explicitly selected during ticket creation.
 
-- **Allow minimal copy with access to diagnostic information** – with this option you grant consent to create a copy of your customer environment, which creates a support environment. A support environment is a non-production environment that allows troubleshooting of the issue without impact to your production environment. For this specific option, only a minimal copy of your environment is created which doesn't have customer data but does have attributes and settings. This option also requires customer data access for troubleshooting. 
+- **Allow [minimal copy](copy-environment.md#copy-over-customizations-and-schemas-only) with access to diagnostic information** – with this option you grant consent to create a copy of your customer environment, which creates a support environment. A support environment is a non-production environment that allows troubleshooting of the issue without impact to your production environment. For this specific option, only a minimal copy of your environment is created which doesn't have customer data but does have attributes and settings. This option also requires customer data access for troubleshooting. 
 
-- **Allow full copy with access to diagnostic information** - with this option you grant consent to create a full copy of your customer environment, which creates a support environment. A support environment is a non-production environment that allows troubleshooting of the issue without impact to your production environment. For this specific option, a full copy of your environment is created which is a replication of your production environment including customer data, attributes, and settings. This option also requires customer data access for troubleshooting. 
+- **Allow [full copy](copy-environment.md#copy-over-everything) with access to diagnostic information** - with this option you grant consent to create a full copy of your customer environment, which creates a support environment. A support environment is a non-production environment that allows troubleshooting of the issue without impact to your production environment. For this specific option, a full copy of your environment is created which is a replication of your production environment including customer data, attributes, and settings. This option also requires customer data access for troubleshooting. 
 
 - **Do not allow access to diagnostic information** – with this option you can choose not to grant consent. However, choosing this option could introduce delays in support request resolution. Choosing this option includes the process of Microsoft Support having to make additional contacts to solicit this information and/or scheduling additional calls. If Microsoft Support is unable to resolve the ticket without customer data access and/or replicating the environment, they'll have to schedule diagnostic information. Microsoft Support will have to contact the customer to seek consent. This will slow down the investigation, troubleshooting and/or prevent the successful resolution of the issue.
 
@@ -75,8 +75,8 @@ A support environment is a special kind of non-production Dataverse-based enviro
 
 ### Who has access to a support environment? 
 
-- **[Minimal copy](copy-environment.md#copy-over-customizations-and-schemas-only)** - Microsoft staff who are members of a support security group 
-- **[Full copy](copy-environment.md#copy-over-everything)** - Microsoft staff who are members of an elevated support security group 
+- **Minimal copy** - Microsoft staff who are members of a support security group 
+- **Full copy** - Microsoft staff who are members of an elevated support security group 
 
 ### What kind of data access does Microsoft have within a support environment?
 
