@@ -19,7 +19,7 @@ ms.collection: virtual-agent
 
 You can help your bot to perform an action by calling a Microsoft Power Automate flow. Flows can help you automate activities or call backend systems. For example, you can use flows with end-user authentication to retrieve information about a user after they've signed in.
 
-Your call flows from within topics as a discrete **Call an action** node. You can utilize flows that have already been created in your Power Apps environment or you cancreate a flow from within the Power Virtual Agents [authoring canvas](authoring-create-edit-topics.md).
+Your call flows from within topics as a discrete **Call an action** node. You can utilize flows that have already been created in your Power Apps environment or create a flow from within the Power Virtual Agents [authoring canvas](authoring-create-edit-topics.md).
 
 > [!IMPORTANT]
 > To use flows within Power Virtual Agents, they must meet the following requirements:
