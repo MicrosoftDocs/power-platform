@@ -75,8 +75,8 @@ A support environment is a special kind of non-production Dataverse-based enviro
 
 ### Who has access to a support environment? 
 
-- **Minimal copy** - Microsoft staff who are members of a support security group 
-- **Full copy** - Microsoft staff who are members of an elevated support security group 
+- **[Minimal copy](copy-environment.md#copy-over-customizations-and-schemas-only)** - Microsoft staff who are members of a support security group 
+- **[Full copy](copy-environment.md#copy-over-everything)** - Microsoft staff who are members of an elevated support security group 
 
 ### What kind of data access does Microsoft have within a support environment?
 
