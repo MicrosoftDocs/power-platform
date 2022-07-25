@@ -19,7 +19,7 @@ ms.collection: virtual-agent
 
 A big part of bot conversations in Power Virtual Agents is natural language understanding, which is the ability of the AI to understand a user's intent. For example, natural language understanding is involved when a user might say, "I tried to use my gift card, but it doesn't work", and the bot can route the user to the topic related to gift cards not working—even if that exact phrase isn't listed as a trigger phrase.
 
-One fundamental aspect of natural language understanding is to identify *entities* in a user dialog. An entity can be viewed as an information unit that represents a certain type of real-world subject, like a phone number, zip code, city, or even a person's name.
+One fundamental aspect of natural language understanding is to identify _entities_ in a user dialog. An entity can be viewed as an information unit that represents a certain type of real-world subject, like a phone number, zip code, city, or even a person's name.
 
 ## Prebuilt entities
 

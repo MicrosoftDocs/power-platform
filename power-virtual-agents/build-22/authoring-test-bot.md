@@ -58,19 +58,19 @@ While testing your bot in the **Test bot** pane, you can use the **Save snapshot
 
     :::image type="content" source="media/authoring-test-bot/save-snapshot-window.png" alt-text="Save snapshot message.":::
 
-1. The bot's content and conversational diagnostics will be saved in a .zip archive file called *DSAT.zip*.
+1. The bot's content and conversational diagnostics will be saved in a .zip archive file called _DSAT.zip_.
 
     :::image type="content" source="media/authoring-test-bot/dsat.png" alt-text="Conversational diagnostics archive.":::
 
-1. The *DSAT.zip* file contains two files: *botContent.json* and *dialog.json*.
+1. The _DSAT.zip_ file contains two files: _botContent.json_ and _dialog.json_.
 
-    1. *dialog.json* contains conversational diagnostics, including detailed descriptions of errors.
+    1. _dialog.json_ contains conversational diagnostics, including detailed descriptions of errors.
 
         :::image type="content" source="media/authoring-test-bot/conversation-file.png" alt-text="Conversational diagnostics file.":::
 
-    1. *botContent.json* contains the bot's topics and other content, including entities and variables used in the bot.
+    1. _botContent.json_ contains the bot's topics and other content, including entities and variables used in the bot.
 
-Help us improve Power Virtual Agents by flagging issues with the **Flag an issue** command on the test bot pane. The **Flag an issue** command submits your conversation ID to Microsoft, which is a unique identifier that Microsoft uses to troubleshoot the issue of the conversation. Other information, such as that in the *DSAT.zip* file, is not sent when you flag an issue.
+Help us improve Power Virtual Agents by flagging issues with the **Flag an issue** command on the test bot pane. The **Flag an issue** command submits your conversation ID to Microsoft, which is a unique identifier that Microsoft uses to troubleshoot the issue of the conversation. Other information, such as that in the _DSAT.zip_ file, is not sent when you flag an issue.
 
 :::image type="content" source="media/authoring-test-bot/flag-issue.png" alt-text="Flag an issue.":::
 

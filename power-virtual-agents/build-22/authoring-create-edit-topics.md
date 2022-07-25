@@ -56,7 +56,7 @@ These automatically created topics fall into two categories:
 
 1. The **Trigger phrases** pane should open. If it doesn't open, select **Trigger phrases**.
 
-    :::image type="content" source="media/authoring-create-edit-topics/trigger-phrases-button.png" alt-text="Screenshot of the topic authoring canvas, highlighting Trigger phrases."::: 
+    :::image type="content" source="media/authoring-create-edit-topics/trigger-phrases-button.png" alt-text="Screenshot of the topic authoring canvas, highlighting Trigger phrases.":::
 
 1. Specify one or more trigger phrases for the topic in the **Trigger phrases** pane.
 
@@ -247,7 +247,7 @@ To add a quick reply, select **Add**, then **Quick reply**, and provide informat
 
 A quick reply works like a suggestion that the user can use or ignore. To enforce a choice from a finite list, use a multiple choice question node.
 
-> [TIP]
+> [!TIP]
 > Some user clients do not support quick replies, in which case the client may not render them. Some user clients have an upper limit on the number of quick replies that they allow.
 
 #### Set a variable value

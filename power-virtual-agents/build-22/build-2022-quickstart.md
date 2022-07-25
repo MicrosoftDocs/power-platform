@@ -85,7 +85,6 @@ Power Virtual Agents now has an app-level home page that isn't specific to any b
 
 1. In the side navigation, select **Topics** and then **New topic**.
 
-
 1. Add the following trigger phrases:
     - `Reserve a table`
     - `Make a reservation`

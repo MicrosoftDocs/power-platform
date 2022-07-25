@@ -51,10 +51,10 @@ Select the error count to open the authoring canvas to where the first error is.
 
 There are four types of errors that appear in the topic checker and the authoring canvas:
 
-- *Node*: The entire node is incorrect and is highlighted in red.
-- *Field*: The field might be missing required data and is highlighted in red.
-- *Expression*: The expression might be invalid and is highlighted in red.
-- *Variable deletion*: A variable in a topic was deleted and is highlighted in red wherever it was used. This causes the variable to become "orphaned" and must be either removed or replaced.
+- _Node_: The entire node is incorrect and is highlighted in red.
+- _Field_: The field might be missing required data and is highlighted in red.
+- _Expression_: The expression might be invalid and is highlighted in red.
+- _Variable deletion_: A variable in a topic was deleted and is highlighted in red wherever it was used. This causes the variable to become "orphaned" and must be either removed or replaced.
 
 ## Topic status
 
@@ -87,7 +87,7 @@ On the Topics page, select the menu icon on a topic's name and then **Make a cop
 
 :::image type="content" source="media/authoring-topic-management/topics-menu-icon.png" alt-text="Make a copy from the menu icon." border="false":::
 
-This option duplicates the selected topic with *(Copy)* added to the name. All of the topic content - such as the description, trigger phrases, and the entire conversation - is copied over to the new topic.
+This option duplicates the selected topic with _(Copy)_ added to the name. All of the topic content - such as the description, trigger phrases, and the entire conversation - is copied over to the new topic.
 
 A copied topic is **Off** by default to avoid confusion with the original topic, which has the same trigger phrases.
 

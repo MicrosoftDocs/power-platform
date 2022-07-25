@@ -30,17 +30,17 @@ This evolution brings new features, including:
   - [Quick replies](authoring-create-edit-topics.md#quick-replies)
 
 - Unlock the power of voice
-    - [Speech authoring](advanced-custom-speech-ssml.md)
-    - [Voice font selection](advanced-speech-settings.md)
-    - [Telephony channel](publication-connect-bot-to-telephony.md)
+  - [Speech authoring](advanced-custom-speech-ssml.md)
+  - [Voice font selection](advanced-speech-settings.md)
+  - [Telephony channel](publication-connect-bot-to-telephony.md)
 
 - Power FX and variable management
-    - [Enhanced variable management](authoring-variables.md)
-    - [Power FX support](advanced-power-fx.md)
+  - [Enhanced variable management](authoring-variables.md)
+  - [Power FX support](advanced-power-fx.md)
 
 For a guided tutorial on how to use these new features, please refer to the [Build 2022 quickstart](build-2022-quickstart.md).
 
-To get answers and tips directly from other users in the technology preview, visit the [community forums](https://aka.ms/PVABuild22Forum). 
+To get answers and tips directly from other users in the technology preview, visit the [community forums](https://aka.ms/PVABuild22Forum).
 
 This technology preview doesn't yet support some of the existing features you're used to in Power Virtual Agents, such as custom entities, agent transfers, and bot authoring in Teams. For the complete list, see [Limitations of technology preview](build-2022-limitations.md).
 

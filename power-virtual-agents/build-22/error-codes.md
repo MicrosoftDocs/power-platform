@@ -114,6 +114,7 @@ Common problems include, but aren't limited to:
 **Resolution:** [Create a new topic](authoring-create-edit-topics.md#create-a-topic) to redirect to or [remove the redirect node](authoring-create-edit-topics.md#delete-nodes).
 
 ### SystemError
+
 **Error message:** This error doesn't produce an error message
 
 **Resolution:** Contact customer support for more details.
