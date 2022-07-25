@@ -110,7 +110,7 @@ For example, if your site already knows a user's name, then when they bring up a
 
 :::image type="content" source="media/authoring-variables-bot/bot-variable-external.png" alt-text="Screenshot of the Usage section on the Variable Properties pane, with the Bot option and External sources can set values checkbox both selected":::
 
-1. If you're [embedding your bot in a simple webpage](publication-connect-bot-to-web-channels.md#custom-website), you can append the variables and their definitions. Or, if you'd like a little more control, you can use a `<script>` code block to call and use variables programmatically.
+1. If you're [embedding your bot in a simple webpage](publication-connect-bot-to-web-channels.md#add-your-bot-to-your-website), you can append the variables and their definitions. Or, if you'd like a little more control, you can use a `<script>` code block to call and use variables programmatically.
 
     > [!NOTE]
     > The variable name in the query string must match the global variable without the `global.` prefix. For example, a global variable `global.UserName` must be rendered as `UserName=`.
