@@ -50,7 +50,7 @@ These automatically created topics fall into two categories:
 
 ## Create a topic
 
-1. In the left pane, select Topics and then select **+New Topic** to create a new topic.
+1. In the left pane, select **Topics** and then select **+New Topic** to create a new topic.
 
    :::image type="content" source="media/authoring-create-edit-topics/topics-menu.png" alt-text="Screenshot of the Power Virtual Agents navigation pane, highlighting Topics.":::  
 
@@ -66,9 +66,9 @@ These automatically created topics fall into two categories:
 
     You can specify more than one trigger phrase for a topic. You can include punctuation in a trigger phrase, but it's best to use short phrases rather than long sentences.
 
-1. Select **Properties** to open the topic details pane.
+1. Select **Details** to open the topic details pane.
 
-    :::image type="content" source="media/authoring-create-edit-topics/open-details-pane.png" alt-text="Screenshot of the topic authoring canvas, highlighting Details."::: <!--Note from Sweeny: Kindly update the screenshot as per the new experience-->
+    :::image type="content" source="media/authoring-create-edit-topics/open-details-pane.png" alt-text="Screenshot of the topic authoring canvas, highlighting Details.":::
 
 1. Enter a **Name** for your topic and, optionally, a **Display name** and **Description**.
 
@@ -153,7 +153,7 @@ Later, you can add a condition to create branching logic or add nodes to control
 
 #### Call an action
 
-To [call Power Automate Flows](advanced-flow.md) and insert authentication nodes, select **Call an action**. <!--Note from Sweeny:Please add a screenshot here for more clarity-->
+To [call Power Automate Flows](advanced-flow.md) and insert authentication nodes, select **Call an action**.
 
 If you've configured hand-off to omnichannel with voice-based capabilities, you'll see more actions.
 
@@ -262,7 +262,7 @@ The **Message** and **Question** nodes allow you to add message variations. When
 
     :::image type="content" source="media/authoring-create-edit-topics/message-node-variation.png" alt-text="Select the synonyms icon." border="false":::
 
-1. Enter what you want the bot to say. You can apply basic formattings, such as bold, italics, and numbering.
+1. Enter what you want the bot to say. You can apply basic formatting, such as bold, italics, and numbering.
 
 1. Repeat to add as many variations as you like.
 

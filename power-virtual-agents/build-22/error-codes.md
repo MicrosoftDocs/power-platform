@@ -67,8 +67,8 @@ Common problems include, but aren't limited to:
 **Error messages:**
 
 - "No output was received from flow {FlowName} ({FlowId}), even though output was expected as per the bot definition."
-- "The output parameter with name {ItemKey} on flow {FlowName} ({FlowId}) is missing from the response data. Refresh the flow, or ensure the flow returns this value."
-- "The output parameter with name {ItemKey} on flow {FlowName} ({FlowId}) is missing from the output schema. Refresh the flow."
+- "The output parameter with name {ItemKey} on flow {FlowName} ({FlowId}) is missing from the response data. Please refresh the flow, or ensure the flow returns this value."
+- "The output parameter with name {ItemKey} on flow {FlowName} ({FlowId}) is missing from the output schema. Please refresh the flow."
 
 **Resolution:** [Check the flow for errors](/power-automate/error-checker).
 
@@ -76,7 +76,7 @@ Common problems include, but aren't limited to:
 
 **Error messages:**
 
-- "The parameter with name {KeyName} on flow {FlowName} ({FlowId}) is declared to be of type {ItemTypeKind}. This type isn't supported when invoking Power Automate. Currently, only Text, Boolean, and Numbers are supported."
+- "The parameter with name {KeyName} on flow {FlowName} ({FlowId}) is declared to be of type {ItemTypeKind}. This type is not supported when invoking Power Automate. Currently, only Text, Boolean and Numbers are supported."
 - "The parameter with name {ItemKey} on flow {FlowName} ({FlowId}) is missing in the 'Call Flow' action."
 - "The parameter with name {KeyName} on flow {FlowName} ({FlowId}) evaluated to type {ResolveType}, expected type {ExpectedType}."
 - "The flow {FlowName} ({FlowId}) failed to run with response code {ResponseCode}, error code: {FlowErrorCode}."
@@ -103,13 +103,13 @@ Common problems include, but aren't limited to:
 
 ### RedirectToDisabledDialog
 
-**Error message:** "The dialog with Id {DialogId} is disabled in the definition. Enable the dialog before using it."
+**Error message:** "The Dialog with Id {DialogId} is disabled in the definition. Please Enable the Dialog before using it."
 
 **Resolution:** [Re-enabled the topic](authoring-topic-management.md#topic-status) or [remove the redirect node](authoring-create-edit-topics.md#delete-nodes).  
 
 ### RedirectToNonExistentDialog
 
-**Error message:** "The dialog with Id {DialogId} wasn't found in the definition. Check that the dialog is present and that the Id is correct."
+**Error message:** "The Dialog with Id {DialogId} was not found in the definition. Please check that the Dialog is present and that the Id is correct."
 
 **Resolution:** [Create a new topic](authoring-create-edit-topics.md#create-a-topic) to redirect to or [remove the redirect node](authoring-create-edit-topics.md#delete-nodes).
 
@@ -120,7 +120,7 @@ Common problems include, but aren't limited to:
 
 ### TelephonyHandoffInvalidPhoneNumber
 
-**Error message:** "The phone number {PhoneNumber} used in the transfer to agent activity isn't a valid phone number format. Phone number should be in international format without dashes; for example, +14251231234."
+**Error message:** "The phone number {PhoneNumber} used in the transfer to agent activity is not a valid phone number format. Phone number should be in international format without dashes ex: +14251231234."
 
 **Resolution:** Check your [telephony configuration](publication-connect-bot-to-telephony.md) and ensure the phone number is in an international format, for example; `+14251231234`.
 

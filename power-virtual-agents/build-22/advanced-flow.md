@@ -126,7 +126,7 @@ Your flow is saved to the **Default Solution** under the **Solutions** tab on th
 
 :::image type="content" source="media/advanced-flow/default-solution.png" alt-text="Power Automate flow template - Default Solution." border="false":::
 
-## Flows created from the Power Virtual Agents authoring canvas are immediately available to the bot <!--Note from Sweeny: The heading sounds more like a statement. Can we change it to "Availability of flows"-->
+## Availability of flows
 
 All flows created from the Power Virtual Agents authoring canvas are saved in a **Default Solution** in Power Automate. They can be used by your bots immediately.
 

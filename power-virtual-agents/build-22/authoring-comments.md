@@ -62,7 +62,7 @@ Enter your comment and select **Post comment** at the bottom of the comment entr
 
 A comment icon will appear next to a node that has comments. You can select the icon to open the **Comments** pane and go to the first comment for that node.
 
-### Edit, delete and resolve comment threads
+### Edit, delete, and resolve comment threads
 
 Select the menu icon at the top of the comment thread to edit the initial comment, delete the entire thread, or resolve the entire thread.
 

@@ -41,7 +41,7 @@ To help you find and fix unexpected behavior, you can enable tracking between to
 
   :::image type="content" source="media/authoring-test-bot/test-bot-response.png" alt-text="Select any response in the conversation to see the authoring canvas highlighted to that response." border="false":::
 
-You can return to the authoring canvas for the topic  at any time to revise its conversation path. The **Test chat** pane will automatically refresh when you save changes to a topic.
+You can return to the authoring canvas for the topic at any time to revise its conversation path. The **Test chat** pane will automatically refresh when you save changes to a topic.
 
 ## Save conversation snapshots
 

@@ -50,12 +50,12 @@ Power Virtual Agents now has an app-level home page that isn't specific to any b
 
 1. Select the **Delete** button in the ellipsis menu and delete the existing **Message** node.
 
-1. To add a new **Message** node, select **Send a message** in the node menu.  Type the following greetings as [message variations](authoring-create-edit-topics.md#message-variations):
+1. To add a new **Message** node, select **Send a message** in the add node menu. Type the following greetings as [message variations](authoring-create-edit-topics.md#message-variations):
     - `Good day!`
     - `Hi there!`
     - `Hi!`
 
-1.[Add an image card](advanced-cards.md#image-card) and provide an image of the restaurant to help the user visually confirm that they're booking at the correct location.
+1. [Add an image card](advanced-cards.md#image-card) and provide an image of the restaurant to help the user visually confirm that they're booking at the correct location.
 
     :::image type="content" source="media/build-2022-quickstart/image-card.png" alt-text="Screenshot of speech mode toggle.":::
 
@@ -81,13 +81,10 @@ Power Virtual Agents now has an app-level home page that isn't specific to any b
 
 1. Select **Save**.
 
-1. Select the **Test** button to trigger the greeting.
-
 ## Add a reservation topic
 
 1. In the side navigation, select **Topics** and then **New topic**.
 
-1. Rename the topic to **Reservation**
 
 1. Add the following trigger phrases:
     - `Reserve a table`
@@ -125,8 +122,6 @@ Power Virtual Agents now has an app-level home page that isn't specific to any b
 The **End of conversation** topic is a pre-built topic designed to check if the user is satisfied and asks them to rate their experience.
 
 1. Name the topic **Reservation**` and select **Save**.
-
-1. Select the **Test** button to open the test canvas.
 
 1. Interact with the bot by selecting the **Make a reservation** quick reply. The bot will reply based on the conditions added until it redirects to the end of the conversation topic and asks you to rate your experience.
 
