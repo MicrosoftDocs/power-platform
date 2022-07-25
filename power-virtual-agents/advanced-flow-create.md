@@ -44,7 +44,7 @@ In this example, you'll learn how to create a flow that provides a weather forec
 
 ## Author a flow on the Power Automate portal
 
-To be suitable for bots, a Power Automate flow requires a special **Power Virtual Agents** flow trigger and response action:
+To be suitable for bots, a Power Automate flow requires a special **Power Virtual Agents** flow trigger and response action. Both the trigger and action are automatically added when you create a flow from the [Power Virtual Agents authoring canvas](#create-a-new-flow-from-the-authoring-canvas).
 
 - Flow trigger:  **When Power Virtual Agents calls a flow**  
 
@@ -53,8 +53,6 @@ To be suitable for bots, a Power Automate flow requires a special **Power Virtua
 - Response action:  **Return value(s) to Power Virtual Agents**  
 
     :::image type="content" source="media/advanced-flow-create/PVAConnectorResponse.JPG" alt-text="Screenshot of the Power Virtual Agents response action." border="false":::
-
-Both the trigger and action are automatically added to the flow when you create a flow from the [Power Virtual Agents authoring canvas](#create-a-new-flow-from-the-authoring-canvas).
 
 Now you'll add various actions to your flow to obtain the weather forecast.
 
@@ -127,7 +125,7 @@ Select **View flow details** from the relevant **Action** node.
 
 ## Optionally move a flow to another solution
 
-To be available to your bots, flows must be stored in a solution in Power Automate. If you don't want to use the **Default Solution** for this purpose, you can move your flows to another solution.
+To be available to bots in your environment, flows must be stored in a solution in Power Automate. If you don't want to use the **Default Solution** for this purpose, you can move your flows to another solution.
 
 1. On the Power Automate portal, go to the **Solutions** tab to see the available solutions. Use any of the existing solutions or create a new solution for your flows.
 

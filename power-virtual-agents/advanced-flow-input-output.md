@@ -17,7 +17,8 @@ ms.collection: virtual-agent
 
 Use variables as input and output parameters to pass information between Power Automate flows and Power Virtual Agents bots.
 
-A bot is only able to _receive_ up to 1 MB of data from a flow in a single action. However, there's no limit on the size of data a bot can send or how many variables a bot can pass.
+> [!IMPORTANT]
+> A bot is only able to _receive_ up to 1 MB of data from a flow in a single action. However, there's no limit on the size of data a bot can send or how many variables a bot can pass.
 
 In this example, you'll create a simple flow with an input parameter and returns it back to the bot as an output parameter.
 
