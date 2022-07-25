@@ -141,7 +141,7 @@ To disable a user account, remove a license from the user or remove the user fro
 >
 > You can [assign records](/powerapps/user/assign-or-share-records) to a disabled user account and also [share reports](/dynamics365/customer-engagement/basics/share-report-users-teams) and accounts with them. This can be useful when migrating on-premises versions to online. If you need to assign a security role to users who have a Disabled status, you can do so by enabling the allowRoleAssignmentOnDisabledUsers in [OrgDBOrgSettings](https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm).
 > 
-> A Global admin, Power Platform admin, or a Dynamics 365 admin does not need a license to be enabled in a Dataverse environment. See: [Global admins and Power Platform admins can administer without a license](global-service-administrators-can-administer-without-license.md). But since they are unlicensed, they will be set in the [Administrative access mode](create-users.md#create-a-read-write-user-account).  
+> A Global admin, Power Platform admin, or a Dynamics 365 admin does not need a license to be enabled in an environment. See: [Global admins and Power Platform admins can administer without a license](global-service-administrators-can-administer-without-license.md). But since they are unlicensed, they will be set in the [Administrative access mode](create-users.md#create-a-read-write-user-account).  
 
 You must be a member of an appropriate administrator role to do these tasks. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Assign admin roles](/microsoft-365/admin/add-users/assign-admin-roles)  
 
@@ -203,7 +203,7 @@ Note that removing a license from a user might not always result in disabling th
 
 ## Add users to Dataverse 
 
-For users to have access to applications and data in a Dataverse environment, at a minimum the SystemUser table in Dataverse must have a record corresponding to the respective user identity. There are different mechanisms to add users in Dataverse, either automatic or on demand: 
+For users to have access to applications and data in an environment, at a minimum the SystemUser table in Dataverse must have a record corresponding to the respective user identity. There are different mechanisms to add users in Dataverse, either automatic or on demand: 
 
 > [!TIP]
 > Check out the following video: [Adding users to Dataverse](https://www.microsoft.com/videoplayer/embed/RWJBra).
@@ -213,7 +213,7 @@ For users to have access to applications and data in a Dataverse environment, at
    > [!NOTE]
    > Not all users added in Azure AD will be pickup by the automatic synchronization process. [This section](#user-types) details the eligibility criteria the system background process applies to add a user from Azure AD into Dataverse.
 
-2. If users already exist in Azure AD, they are automatically added to SystemUsers table at first attempt to access the Dataverse environment. Note that if a user already exists in Dataverse, but in a disabled state, attempting to access the environment will result in the user’s state to be updated to “enabled”, assuming they are entitled at the time of access. 
+2. If users already exist in Azure AD, they are automatically added to SystemUsers table at first attempt to access the environment. Note that if a user already exists in Dataverse, but in a disabled state, attempting to access the environment will result in the user’s state to be updated to “enabled”, assuming they are entitled at the time of access. 
 
 3. Users that have the necessary permissions, can use the [API](/powershell/module/microsoft.powerapps.administration.powershell/add-adminpowerappssyncuser?view=pa-ps-latest) to add or update users in Dataverse on demand. 
 

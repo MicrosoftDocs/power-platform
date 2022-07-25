@@ -94,7 +94,7 @@ When users are added to Dataverse, they will get roles assigned automatically ba
 
 3. For the Default environment type, “BasicUser” and “EnvironmentMaker” roles will be assigned automatically to all users added in Dataverse.
 
-4. In the Finance and Operations linked Dataverse environment, Finance and Operations Basic User and Environment Maker security roles are automatically assigned to all active users in Dataverse. 
+4. In the finance and operations linked environment with a Dataverse database, finance and operations Basic User and Environment Maker security roles are automatically assigned to all active users in Dataverse. 
 
 ## License to role mapping
 

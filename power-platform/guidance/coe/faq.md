@@ -65,7 +65,7 @@ This article will provide you with answers to frequently asked questions and tip
 
 ## Set flow run-only users properties
 
-1. Remove [unmanaged layers](after-setup.md#installing-upgrades) for all flows.
+1. Remove [unmanaged layers](after-setup.md) for all flows.
 1. Go to the details page, and then select the **Run only users** edit button.
 
     ![Find the setting for run-only users.](media/tips-flow2.png "Find the setting for run-only users")
@@ -92,7 +92,7 @@ The sync flows in the core component solution will only update resources that ha
 The following limitations apply when updating environment variables:
 
 - You can't update the values for environment variables from within the imported solution.
-- You need to always add or update a current value, not the default value, because the fefault value will be overwritten when you install an upgrade.
+- You need to always add or update a current value, not the default value, because the default value will be overwritten when you install an upgrade.
 - Environment variables are cached in cloud flows until the flow is reset (for example, by turning the cloud flow off and back on).
 
 To update environment variables, you can use the [Admin - Command Center](core-components.md#admin---command-center)

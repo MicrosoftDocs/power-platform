@@ -19,7 +19,7 @@ search.app:
 # Configuring deployment user settings and profiles for the ALM Accelerator for Power Platform app (preview)
 
 > [!NOTE]
-> The ALM accelerator for Microsoft Power Platform is currently in public preview. While in preview we will be prioritizing feedback and bugs via GitHub [New issue](https://github.com/microsoft/coe-starter-kit/labels/alm-accelerator). If the issue is something in the platform all we can do is funnel feedback to the responsible product teams. For more information on the current preview status of the ALM Accelerator for Power Platform see [follow this link](https://github.com/microsoft/coe-starter-kit/blob/main/CenterofExcellenceALMAccelerator/PREVIEW.md).
+> The ALM accelerator for Microsoft Power Platform is currently in public preview. While in preview we will be prioritizing feedback and bugs via GitHub [New issue](https://github.com/microsoft/coe-starter-kit/labels/alm-accelerator). If the issue is something in the platform all we can do is funnel feedback to the responsible product teams. For more information on the current preview status of the ALM Accelerator for Power Platform [follow this link](https://github.com/microsoft/coe-starter-kit/blob/main/CenterofExcellenceALMAccelerator/PREVIEW.md).
 
 Depending on a user's role, you can configure the application lifecycle management (ALM) accelerator by turning on and off certain features in the UI, based on user preference and experience. To help all users use the app effectively, a common scenario is to create both a maker experience (for users who are unfamiliar with ALM) and an advanced maker experience (for users who are very familiar with ALM concepts). Deployment profiles are linked to user settings. The app uses deployment profiles to make decisions for the user on where and how to create branches and approvals for deployment.
 
@@ -108,7 +108,7 @@ To share user settings created for a particular user profile, we recommend that 
 
    1. Under **Access -Teams**, select **See all**, and then select **Create Team**.
 
-   1. Enter the required fields, and select **AAD Group Team** as the **Team Type**.
+   1. Enter the required fields, and select **AAD Group Team** (AAD Security Group or AAD Office Group) as the **Team Type**.
 
    1. Select the **AAD Group** to use for this team, and then select **Next**.
 

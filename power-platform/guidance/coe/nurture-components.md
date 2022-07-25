@@ -102,6 +102,9 @@ The Maker Assessment app can be used to ask users a series of questions regardin
 
 ## Pulse survey components
 
+>[!NOTE]
+>These components will not work in GCC, GCC High and DoD as posting adaptive cards to Teams is not supported in those regions.
+
 ### Tables
 
 | Name | Description |
@@ -148,6 +151,6 @@ A canvas app that CoE admins can use to share app and component templates, in ad
 **Prerequisite**: This app uses Microsoft Dataverse. If you have installed this solution in a Production environment, end users need to have a Per User license, or the app needs to be assigned a Per App license, or the environment needs to be covered by pay-as-you-go. If you have installed this solution in a Dataverse for Teams environment, a Microsoft 365 license is required for every user.
 
 > [!NOTE]
-> This app can't be used in the managed solution; it can only be tested and used after you've [imported it into your extended unmanaged solution](modify-components.md). This is due to some limitations in the environment variables and data sources in the canvas apps. For more information, go to [Set up the Template Catalog and upload components](modify-components.md#set-up-the-template-catalog-and-upload-components).
+> This app can't be used in the managed solution; it can only be tested and used after you've [imported it into your extended unmanaged solution](modify-components.md). This is due to some limitations in the environment variables and data sources in the canvas apps.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

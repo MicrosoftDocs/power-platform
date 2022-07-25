@@ -4,8 +4,9 @@ description: "Types of Power Automate licenses."
 author: PriyaKodukula
 ms.subservice: admin
 ms.topic: overview
-ms.date: 03/30/2022
+ms.date: 07/13/2022
 ms.author: prkoduku
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:
@@ -32,8 +33,7 @@ Power Automate P1 and P2 plans (grand fathered)| These plans are no longer avail
 
 ## Seeded plans
 
-Organizations also gain rights to use Power Automate if they are licensed to use any of the following plans where Power Automate licenses are **seeded**. <!-- if they have any of the following  through other The most important concept that potentially simplifies most licensing questions is "Is power automate capabilities included with my Office 365/Dynamics 365/Power App License?" "Seeded" in this case relates specifically for "inclusion" to another license type. Power Automate rights are included in the following plans: -->
-
+Organizations also gain rights to use Power Automate if they are licensed to use any of the following plans where Power Automate licenses are **seeded**. 
 - Microsoft 365 (formerly Office 365).
 - Dynamics 365 Enterprise.
 - Dynamics 365 Professional.
@@ -69,11 +69,11 @@ Here's a chart that lays out the limits that are associated with the different l
 
 ## Transition period
 
-All customers are in a transition period. That means that enforcement isn't strict and limits are higher. The transition period ends (First quarter of calendar year 2022), which will be when the full reporting is available in the Power Platform admin center. Organizations will have six months to analyze their usage and purchase licenses that are appropriate before strict enforcement on license limits begins.
+All customers are in a transition period. That means that enforcement isn't strict and limits are higher. The transition period ends after Power Platform admin center reports are generally available. Organizations will have six months to analyze their usage and purchase licenses that are appropriate before strict enforcement on license limits begins.
 
 Here are a few things to be aware of during the transition period.
 
-1. The transition period doesn't mean that there are no daily limits. It means that the currently enforced limits are more generous than the stated limits to prevent potential unintended impact on your apps or flows. See [Power Platform requests](#transition-period) to understand both plan limits and transition period limits. 
+1. The transition period doesn't mean that there are no daily limits. It means that the currently enforced limits are more generous than the stated limits to prevent potential unintended impact on your apps or flows. See [Requests limits and allocations](../api-request-limits-allocations.md) to understand both plan limits and transition period limits. 
 1. These transition period limits are applied at the flow level during transition period. Once the transition period ends, the limits will be applied at user level for per user plans and flow level for per flow plan.
 1. Since limits are more generous during the transition period, [stacking of user licenses isn't supported](../api-request-limits-allocations.md). If a user has multiple plans, such as a Microsoft 365 plan and a Dynamics 365 plan, the flow will use the higher plan (Dynamics 365 plan).
 1. Power Platform requests capacity add-on packs are not assignable to the users or flows during the transition period. However, Microsoft recommends that you purchase these add-ons to remain within your license terms and to be prepared for when the transition period ends. If your flows are currently being throttled, purchase add-ons and create a support ticket with the flow details and add-on details so that the support team can provide exceptions for your throttled flows.
@@ -87,19 +87,11 @@ Connectors represent the app/service to which your flows connect. For example, O
 
 [Standard connectors](/connectors/connector-reference/connector-reference-standard-connectors) are included in your standard Microsoft 365 subscription. We are continuously adding more standard connectors.
 
-<!--
-![List of standard connectors](../media/power-automate-licensing/standard-connectors.png)
--->
-
 ### Premium connectors
 
 Premium connectors are not included in the Microsoft 365 license but included in all [standalone plans](#standalone-plans).
 
 Here's the full list of [premium connectors](/connectors/connector-reference/connector-reference-premium-connectors) in Power Automate.
-
-<!--
-![List of premium connectors](../media/power-automate-licensing/premium-connectors.png)
--->
 
 ### Business process flows
 
@@ -162,7 +154,7 @@ Consider the following flow where every email attachment is saved to OneDrive. T
 #### Whose Power Platform request limits are used by the flow?
 
 - If a flow has per flow license, the flow will always use the per flow limits and not the creator/owner/invoking user's limits.
-- [Automated and scheduled flows](/power-automate/flow-types#cloud-flows) always use the flow creator/owner's Power Platform request limits regardless of who started the process or what accounts are used for connections inside of the process. For a solution flow, you can change the owner of the flow using [Web API](/power-automate/web-api#update-a-cloud-flow). After you change the owner, the new owner's API request limits are used. For a non-solution flow, the flow always uses the original creator's limits which can't be changed. If the original creator leaves the company, any co-owners of the flow can export and import the flow as a different owner. <!-- to do: a bunch of ads play before the video starts. Check out the[video tutorial](https://www.youtube.com/watch?v=K7_xWJvEPUc) for me details.--> After you import the flow, it becomes a new flow and starts using limits from the new owner. Alternatively, you can assign a per flow license to the flow.
+- [Automated and scheduled flows](/power-automate/flow-types#cloud-flows) always use the flow creator/owner's Power Platform request limits regardless of who started the process or what accounts are used for connections inside of the process. For a solution flow, you can change the owner of the flow using [Web API](/power-automate/web-api#update-a-cloud-flow). After you change the owner, the new owner's API request limits are used. For a non-solution flow, the flow always uses the original creator's limits which can't be changed. If the original creator leaves the company, any co-owners of the flow can export and import the flow as a different owner. After you import the flow, it becomes a new flow and starts using limits from the new owner. Alternatively, you can assign a per flow license to the flow.
 - [Instant flows (button, power apps, hybrid triggers)](/power-automate/flow-types#cloud-flows) use the invoking user's limits. 
 - If you share an automated/scheduled flow with another user and then that user triggers the same flow, it uses the limits of the original owner and not the new user's limits. But if the user then leverages the flow to make their own new flow, then that new user becomes the owner of the new flow and that flow uses the new user's limits.
 - If a parent flow calls a child flow, the child flow uses the parent flow's limits. For example, if the parent flow is an automated flow, the child flow uses the parent flow creator/owner's limits.
@@ -182,8 +174,6 @@ Here is an example of an email that was sent for a flow that was consistently ex
 The Power Platform admin center will soon contain reports on Power Automate requests. This reporting will help you to quickly view adoption and user metrics for your organization.
 
 Additionally, you can see the action usage for a given flow by selecting the  **Analytics**  action from the flow properties page, and this works across all types of actions. This helps you to understand how many actions are running each day. It can help you understand usage patterns to optimize for capacity.
-
-<!-- ![](RackMultipart20211020-4-1g0es0r_html_506275adcda597da.png) -->
 
 ![Sample of the analytics chart](../media/power-automate-licensing/analytics-chart.png)
 
@@ -311,9 +301,9 @@ To know which users have the free plan, admins can go to the [O365 Admin portal]
 
 Select **Assigned licenses** to see which users have free license.
 
-## Community plan
+## Power Apps Developer plan
 
-There is a [free community plan to learn about Power Platform](https://powerapps.microsoft.com/communityplan/). You are not allowed to use it in production but can try out things and have access to all premium connectors. You can use this free community plan also in a free [Microsoft 365 developer tenant](https://developer.microsoft.com/microsoft-365/dev-program). Business process flows and RPA flows cannot be created in an environment with community plan.
+There is a [free Power Apps Developer plan to learn about Power Platform](https://powerapps.microsoft.com/communityplan/). You are not allowed to use it in production but can try out things and have access to all premium connectors. You can use this free developer plan also in a free [Microsoft 365 developer tenant](https://developer.microsoft.com/microsoft-365/dev-program). Business process flows and RPA flows cannot be created in an environment with the Power Apps Developer plan.
 
 ## Trials
 

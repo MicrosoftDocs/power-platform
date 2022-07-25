@@ -120,7 +120,7 @@
         href: coe/before-setup-gov.md  
       - name: Set up compliance processes
         href: coe/setup-governance-components.md 
-      - name: Set up archival processes
+      - name: Set up inactivity notifications
         href: coe/setup-archive-components.md 
       - name: Set up Microsoft Teams governance processes
         href: coe/setup-teams-components.md  
@@ -145,6 +145,8 @@
           href: coe/cli/alm/overview.md
         - name: Set up ALM Accelerator for Power Platform components manually
           href: coe/setup-almacceleratorpowerplatform.md
+        - name: Upgrade ALM Accelerator for Power Platform
+          href: coe/setup-almacceleratorpowerplatform-upgrade-config.md          
         - name: Configuration and data deployment in pipelines
           href: coe/setup-almacceleratorpowerplatform-deployment-config.md
         - name: Configuring pipeline sync
@@ -153,10 +155,14 @@
           href: coe/setup-almacceleratorpowerplatform-users.md
         - name: Configuring deployment user settings and profiles
           href: coe/setup-almacceleratorpowerplatform-deployment-profiles.md
+        - name: Using the Pipeline extension points
+          href: coe/setup-almacceleratorforpowerplatform-hook-extensions.md
         - name: Set up ALM Accelerator for Makers components
           href: coe/setup-almaccelerator.md
-      - name: What's next - after setting up the CoE Starter Kit
+      - name: What's next - updating the CoE Starter Kit
         href: coe/after-setup.md
+      - name: What's next - extending the CoE Starter Kit
+        href: coe/modify-components.md
     - name: What's in the CoE starter kit
       items:  
       - name: CoE starter kit modules
@@ -185,6 +191,8 @@
             href: coe/power-bi-govern.md
           - name: Nurture
             href: coe/power-bi-nurture.md
+          - name: Compliance and Adoption
+            href: coe/power-bi-compliance.md
         - name: Sample audit process
           href: coe/example-processes.md  
         - name: Dataverse for Teams environment management
@@ -202,6 +210,8 @@
             href: coe/setup-almacceleratorpowerplatform-deployment-profiles.md
           - name: Use the ALM Accelerator for Makers (preview)
             href: coe/almaccelerator-components.md
+          - name: ALM Accelerator learning catalog     
+            href: coe/almacceleratorpowerplatform-learningcatalog.md
 
         - name: Environment management
           href: coe/env-mgmt.md

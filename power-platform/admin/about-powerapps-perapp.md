@@ -4,7 +4,7 @@ description: About Power Apps per app plans
 author: alaug
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/19/2022
+ms.date: 07/18/2022
 ms.subservice: admin
 ms.author: alaug
 ms.reviewer: jimholtz
@@ -66,7 +66,7 @@ To allocate add-ons, select **Manage**. For detailed information, see [Allocate 
 
 After an admin allocates Power Apps per app plan to an environment, they're assigned to unlicensed users when an app in that environment is shared with them. 
 
-Follow these steps to turn off assigning per app plans for users when an app is shared with them:
+Follow these steps to turn on assigning per app plans for users when an app is shared with them:
 
 1. Choose the app in [Power Apps](https://make.powerapps.com).
 
@@ -101,7 +101,7 @@ After completing the first three steps, you can now share apps.
 Share the model-driven app. See [Share a model-driven app with Power Apps](/powerapps/maker/model-driven-apps/share-model-driven-app). 
 
 > [!IMPORTANT]
-> When the user launches the app, we create the user in the required Microsoft Dataverse environment. Users will not get added at the time of app sharing.
+> When the user launches the app, we create the user in the required environment. Users will not get added at the time of app sharing.
 
 ### Sharing canvas apps
 To share canvas apps, see [Share a canvas app in Power Apps](/powerapps/maker/canvas-apps/share-app).  

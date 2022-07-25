@@ -1,6 +1,6 @@
 ---
 title: CommandBar control reference | Creator Kit
-description: Learn about the details and properties of CommandBar control in the Creator Kit.
+description: Learn about the details and properties of the CommandBar control in the Creator Kit.
 author: denisem-msft
 manager: devkeydet
 ms.component: pa-maker
@@ -32,10 +32,10 @@ A control used to input commands.
 
 `CommandBar` is a surface that houses commands that operate on the content of the window, panel, or parent region it resides above.
 
-This code component provides a wrapper around the [Fluent UI `CommandBar`](https://developer.microsoft.com/fluentui#/controls/web/commandbar) control for use in canvas & custom pages.
+This code component provides a wrapper around the [Fluent UI CommandBar](https://developer.microsoft.com/fluentui#/controls/web/commandbar) control for use in canvas apps and custom pages.
 
 > [!NOTE]
-> Component source code and more information available at the [Creator kit GitHub repository](https://github.com/microsoft/powercat-creator-kit).
+> Component source code and more information in the [GitHub code components repository](https://github.com/microsoft/powercat-code-components/tree/main/CommandBar).
 
 ## Limitations
 
@@ -46,11 +46,11 @@ This code component can only be used in canvas apps and custom pages.
 | Property | Description |
 | -------- | ----------- |
 | `Items` | Table with the component items. |
-| `Input event` | Action that is triggered upon a mouse-click. |
+| `Input event` | Action that is triggered upon a selection. |
 
 ## Items structure
 
-Each item uses the below schema to visualize data in the component.
+Each item uses the following schema to visualize data in the component.
 
 | Name | Description |
 | ------ | ----------- |
@@ -119,6 +119,6 @@ Replace the `false` values with appropriate expressions in the Power Fx language
 
 ## Best practices
 
-See [Fluent UI `CommandBar` control best practices](https://developer.microsoft.com/fluentui#/controls/web/commandbar).
+Go to [Fluent UI CommandBar control best practices](https://developer.microsoft.com/fluentui#/controls/web/commandbar).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

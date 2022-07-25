@@ -4,7 +4,7 @@ description: "Frequently asked questions about Power Automate licensing."
 author: PriyaKodukula
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 05/11/2022
+ms.date: 07/22/2022
 ms.author: prkoduku
 ms.reviewer: MSFTMan
 search.audienceType: 
@@ -32,9 +32,11 @@ The standard user license plan for Power Automate is the Power Automate per user
 
 ### When should I choose Power Automate "per flow" versus "per user"?
 
+Our recommendation, for almost all companies in almost all situations, is to buy the per user with attended Robotic Process Automation (RPA) license for every user in their organization. Optionally, purchase the unattended bot add-on for every machine that will be running unattended automation. 
+
 The per user plan is intended for personal automation to support the broad adoption of an automation culture in an organization.
 
-The per flow plan is intended for enterprise process automation. If a flow is providing value to a team, either every one in the team needs a per user license or the flow needs a per flow license. If a flow has per flow license, it doesn't use nor require any other license when it's run. It provides an organization with the flexibility to pay for licenses based on the number of flows it uses, instead of licensing each user accessing the flows individually with the per user plan. Larger organizations or solutions that affect many will benefit from the fixed monthly cost versus a comparable per use cost in a pure Azure function. For example, if you have a flow with premium connectors that is sending a summary report in email to the entire organization,it is best to get a per flow license for the flow. Similarly, if your flow uses premium connectors and your organization has many guest users using the flow, but you don't know if the guest users home tenant provides them with premium licenses. In this case, it is best to use per flow license . 
+The per flow plan is intended for enterprise process automation. If a flow is providing value to a team, either every one in the team needs a per user license or the flow needs a per flow license. If a flow has per flow license, it doesn't use nor require any other license when it's run. It provides an organization with the flexibility to pay for licenses based on the number of flows it uses, instead of licensing each user accessing the flows individually with the per user plan. Larger organizations or solutions that affect many will benefit from the fixed monthly cost. It's best to use per flow license if your flow uses premium connectors and your organization has many guest users using the flow, but you don't know if the guest users home tenant provides them with premium licenses. 
 
 ### Who needs to purchase a premium license?
 
@@ -96,7 +98,7 @@ Yes. The guest user must have a Power Automate license assigned through one of t
 - The home tenant of the guest user.
 
 For example, if a guest user has a Power Automate per user license assigned in the home tenant, they can use premium features in the guest tenant that is hosting the flow. 
-Power Automate, included with Office, Power Automate per user, per user with attended Robotic Process Automation (RPA), Power Apps per user, and Dynamics user plans, will have the following characteristics:
+Power Automate, included with Office, Power Automate per user, per user with attended RPA, Power Apps per user, and Dynamics user plans, will have the following characteristics:
 - In the Azure public cloud, the above plans are recognized across tenants in guest scenarios because they aren't bound to a specific environment.
 - In Azure national or sovereign clouds, the above plans are recognized across tenants in guest scenarios. More information: [National clouds](/azure/active-directory/develop/authentication-national-cloud), [Azure geographies](https://azure.microsoft.com/global-infrastructure/geographies/#geographies)
  - Licenses are not recognized across tenants in difference Azure clouds.
@@ -175,7 +177,7 @@ Dynamics licenses include following Power Automate capabilities.
 - [Business process flows](./types.md#business-process-flows) within app context
 - [Custom connectors](./types.md#custom-connectors) within app context
 - [On premises gateways](./types.md#on-premises-gateway) within app context
-- [Power Platform request](./types.md#power-platform-requests) limits: Dynamics Team member gets 5K requests/day (25K requests/day during the [transition period](./types.md#transition-period)), Dynamics professional gets 10K requests/day (100K requests/day during [transition period](./types.md#transition-period)) and Dynamics Enterprise gets 20K requests/day (100K requests/day during [transition period](./types.md#transition-period)).
+- [Power Platform request](./types.md#power-platform-requests) limits: Dynamics Team member gets 6K requests/day (25K requests/day during the [transition period](./types.md#transition-period)), Dynamics professional gets 40K requests/day (100K requests/day during [transition period](./types.md#transition-period)) and Dynamics Enterprise gets 40K requests/day (100K requests/day during [transition period](./types.md#transition-period)).
 
 The following Power Automate capabilities aren't included in Dynamics licenses.
 
@@ -320,8 +322,5 @@ You can either license the parent flow or license the child flow with a per flow
 
 Who needs a license is independent from whose connections are used in the flow. Automated/scheduled flows always run under the owner's license and manual/power apps flows always run under the users who ran the flow. 
 
-### A premium flow consolidates Azure Dev Ops items, generates a report, and then sends an email to the entire organization. The users in the organization get value from the flow but do not interact with the flow directly.
-
-Yes they are getting indirect value from the flow and every user needs a license.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

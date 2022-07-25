@@ -110,7 +110,7 @@
           href: enable-hybrid-experience.md
     - name: Environments
       items:
-      - name: Manage environments 
+      - name: Administer environments 
         items:
         - name: Environments overview
           href: environments-overview.md
@@ -150,7 +150,19 @@
           href: admin-view-apps.md
         - name: Language collations 
           href: language-collations.md            
-      - name: Manage updates
+      - name: Managed Environments (preview)     
+        items: 
+        - name: Overview
+          href: managed-environment-overview.md
+        - name: Enable environment management
+          href: managed-environment-enable.md
+        - name: Weekly digests
+          href: managed-environment-weekly-digests.md 
+        - name: Sharing limits
+          href: managed-environment-sharing-limits.md
+        - name: Data policies
+          href: managed-environment-data-policies.md
+      - name: Environment updates
         items:
         - name: Opt in to early access updates
           href: opt-in-early-access-updates.md
@@ -158,7 +170,7 @@
           href: general-availability-deployment.md
         - name: "Manage maintenance window (preview)"
           href: manage-maintenance-window.md
-      - name: Manage settings 
+      - name: Environment settings 
         items:
         - name: Power Platform 
           href: power-platform-settings.md
@@ -227,11 +239,11 @@
           - name: Audit settings
             href: system-settings-dialog-box-auditing-tab.md
           - name: Audit summary view 
-            href: audit-data-user-activity.md#view-audit-logging-details
+            href: manage-dataverse-auditing.md#use-the-audit-summary-view
           - name: Entity and field audit settings 
-            href: audit-data-user-activity.md#enable-or-disable-entities-and-fields-for-auditing
+            href: manage-dataverse-auditing.md#enable-or-disable-entities-and-fields-for-auditing
           - name: System jobs
-            href: monitor-manage-system-jobs.md
+            href: manage-dataverse-auditing.md#monitoring-system-jobs
         - name: Templates
           items:
           - name: Access team templates
@@ -360,6 +372,8 @@
         items:
         - name: Environment cleanup process
           href: automatic-environment-cleanup.md
+        - name: Dataverse for Teams environment cleanup (preview)
+          href: inactive-teams-environment.md
         - name: Migrate environment
           href: move-environment-tenant.md          
         - name: Geo to geo migrations
@@ -449,15 +463,15 @@
             href: dlp-resource-exemption.md
           - name: Known limitations
             href: dlp-known-issues.md          
-        - name: Configure field-level security
+        - name: Configure column-level security
           items:
           - name: Overview
             href: field-level-security.md
-          - name: Set permissions for a field
+          - name: Set permissions for a column
             href: set-up-security-permissions-field.md
-          - name: Enable or disable field security
+          - name: Enable or disable column security
             href: enable-disable-security-field.md
-          - name: Add teams or users to field security profile
+          - name: Add teams or users to column security profile
             href: add-teams-users-field-security-profile.md
         - name: Configure teams and team templates
           items:
@@ -585,10 +599,16 @@
         href: capacity-storage.md
       - name: Legacy capacity storage model
         href: legacy-capacity-storage.md
+      - name: Finance and operations storage capacity
+        href: finance-operations-storage-capacity.md
       - name: View self-service capacity
         href: view-self-service-capacity.md
-      - name: Free up storage space
-        href: free-storage-space.md        
+      - name: Free up storage
+        items:
+        - name: Recover storage space
+          href: free-storage-space.md  
+        - name: Clean up AsyncOperationBase and WorkflowLogBase tables
+          href: cleanup-asyncoperationbase-table.md
       - name: Add storage capacity
         href: add-storage.md      
       - name: Access storage with SAS token
@@ -615,8 +635,8 @@
         href: logging-power-automate.md 
       - name: Data loss prevention activity logging
         href: dlp-activity-logging.md
-      - name: Audit data and user activity for Dynamics 365 entities
-        href: audit-data-user-activity.md
+      - name: Manage Dataverse auditing
+        href: manage-dataverse-auditing.md
       - name: Dataverse and model-driven apps
         href: enable-use-comprehensive-auditing.md   
     - name: Programmability and extensibility
@@ -762,8 +782,6 @@
         href: delete-bulk-records.md
       - name: View and take action on bulk deletion jobs
         href: view-take-action-bulk-deletion-jobs.md
-      - name: Monitor and manage system jobs
-        href: monitor-manage-system-jobs.md
       - name: Remove user personal data
         href: remove-user-personal-data.md
       - name: Recover database space by deleting audit logs

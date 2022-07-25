@@ -1,12 +1,12 @@
 ---
 title: "Default OrgDBOrgSettings for server-side synchronization  | MicrosoftDocs"
 description: This topic covers the default options available in OrgDBOrgSettings related to server-side synchronization.
-author: mduelae
+author: jimholtz
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/16/2022
 ms.subservice: admin
-ms.author: mkaur
+ms.author: jimholtz
 search.audienceType: 
   - admin
 search.app:
@@ -28,7 +28,7 @@ This topic covers the default values of OrgDBOrgSettings that are specific to se
 | CreateQueueItemForSynchronizingMailbox | true | Allows queue items to be created for a synchronized mailbox when there's no recipient in the **To:** or **Cc:** field. <br> More information: [Create queue items from synchronized email messages](create-queue-items-from-synchronized-email-messages.md) |
 | UsePlainTextForEmailTemplateBody | false | Changes the email template to use plain text where otherwise text with the following symbols wouldn't appear: &lt;text&gt;. |
 | EmailTemplateRetrieveFallbackContact | false | When referencing a contact on a lead or opportunity in an email template, use fallback logic to pick up a fallback contact such as primarycontactid or parentcontactId when the referenced contact is empty. |
-| ResolveForInactiveEntities | false | When enabled, email addresses for inactive tables are ignored for email address resolution. <br> **Note**: This setting doesn't apply to system users whose accounts have been disabled, who are always excluded. |
+| ResolveForInactiveEntities | false | When enabled, email addresses for inactive tables are ignored for email address resolution of the To and Cc recipient lists. <br> **Note**: This setting doesn't apply to system users whose accounts have been disabled, who are always excluded. This setting also does not apply to the From field.|
 | AllowSaveAsDraftAppointment | false | Setting this value to true provides the capability to create appointments in Dynamics 365 as **draft** without synchronizing with Exchange. The appointment form will have a **Save as Draft** command and a **Send** command, so that you can save, add details, and update an appointment activity without synchronizing to Exchange. The default value is set to false to preserve existing behavior. |
 | AutoTrackSentFolderItems | false | When enabled, server-side synchronization will automatically track emails from the sent items folder by using the user or queue's incoming email filtering method. The default value is set to false to preserve existing behavior. |
 | RestrictIRMEmailItems | false | When enabled, server-side synchronization won't synchronize any emails that are marked as restricted permission in Outlook by using Information Rights Management (IRM). The default value is set to false to preserve existing behavior. |
@@ -54,4 +54,5 @@ This topic covers the default values of OrgDBOrgSettings that are specific to se
 | SSSCreateAdditionalQueueItemsForAlreadyTrackedEmail | false | When enabled, server-side synchronization will create a queue item for the synchronizing queue if an email has already been created by server-side synchronization and the queue item doesn't exist in the synchronizing queue. The default value is false. |
 | SSSSaveOutgoingEmailToExchangeSentFolder | true | When enabled, emails sent from Dynamics 365 will be saved to the sent items folder in Exchange for the mailbox they're sent from. <br> **Note**: this will cause the Sent Items folder to increase in size over time, and can result in Exchange throttling if quota limitations are surpassed. |
 | DoNotCorrelateForwardedEmailsAsReplies | false | If this setting is enabled, Server-side sync will not consider forwarded emails as replies. If this setting is disabled, Server-Side Sync will consider forwarded emails as replies. <br> Example scenario: A Dynamics user received an email A with message ID &lt;msg-A&gt;. The user decides to forward this email to another, thus generating a new email B with message ID &lt;msg-B&gt;. This new email message will have an In-Reply-To header pointing back to email message A. Based solely on this information, Server-Side Sync would consider email message B as a reply to email message A, even though it's a forwarded email. To tell replies apart from forwarded messages, we can look at the recipients of email B. If the sender of email A is a recipient of email B, then we can say it's a reply; otherwise, it's a forwarded email. This OrgDbOrgSetting enables this additional comparison for the In-Reply-To correlation criteria. <br> **Note**: This setting disables conversationIndex correlation as conversationIndex is incompatible with the feature. Smart matching and tracking token correlation will continue to function and have priority over this setting as their purpose is to correlate emails based on other data (recipients, subject words, tracking token in subject). For this reason we recommend disabling smart matching (OFF by default) and tracking token as they could interfere with this setting in certain cases.|
+| SSSTaskDeletionSyncBehaviorFromExchange | 0 | 	Specifies how task deletions in Exchange are synchronized to their linked Dynamics 365 activity record. <br> 0: Tasks deleted in Exchange are deleted in Dynamics (default). <br> 1: Tasks deleted in Exchange are deleted in Dynamics if they are not Completed. <br>2: Tasks deleted in Exchange are never deleted in Dynamics.|
 

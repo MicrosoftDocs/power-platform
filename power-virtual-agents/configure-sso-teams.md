@@ -2,7 +2,7 @@
 title: "Configure single sign-on for the Power Virtual Agents app in Teams"
 description: "Enable your bot to authenticate an already-signed-in Teams user"
 keywords: "Single Sign-on, Teams SSO, User Authentication, Authentication, AAD, MSA, Identity Provider, PVA"
-ms.date: 01/25/2022
+ms.date: 06/23/2022
 
 ms.topic: article
 author: iaanw
@@ -20,16 +20,10 @@ The Power Virtual Agents app in Microsoft Teams supports single sign-on (SSO), w
 When using Teams the user is already signed-in, so Power Virtual Agents chatbots can use this information for scenarios that require user-specific information like a user's name or other details.
 
 > [!IMPORTANT]
-> SSO in the Power Virtual Agents app in Teams is only supported for Azure Active Directory v2 apps (Azure AD v2 apps). Other app types, such as Azure AD v1, do not support SSO in the Power Virtual Agents app in Microsoft Teams.  
 >
-> You can suggest support for additional account types at the [at the Power Virtual Agents ideas forum](https://powerusers.microsoft.com/t5/Power-Virtual-Agents-Ideas/idb-p/pva_ideas).
-
-> [!IMPORTANT]
-> If you have SSO configured for the web publication channel, the steps documented here need to be followed for authentication to work in Teams bots.  
->
-> If your web publication channel has SSO configured but it is not following the instructions in this documentation, authentication in the Teams channel will fail without an error message.  
->
-> If authentication is not working for your bot on your Teams channel, double check your configuration against this document.
+> - SSO in the Power Virtual Agents app in Teams is only supported for Azure Active Directory v2 apps (Azure AD v2 apps). Other app types, such as Azure AD v1, do not support SSO in the Power Virtual Agents app in Microsoft Teams.
+> - If you have SSO configured for the web publication channel, you must follow this document for authentication to work in Teams bots, otherwise authentication in the Teams channel will fail without an error message.
+> - SSO is not supported when your bot is integrated with [Dynamics 365 Customer Service](configuration-hand-off-omnichannel.md).
 
 ## Prerequisites
 
@@ -37,7 +31,7 @@ When using Teams the user is already signed-in, so Power Virtual Agents chatbots
 - [Add an authentication topic to your bot](advanced-end-user-authentication.md)
 - Make sure your bot and Azure AD app are under the same tenant
 
-## Configure single sign-on
+## Configure SSO
 
 The steps required to configure SSO for the Power Virtual Agents app in Microsoft Teams include:
 
@@ -52,7 +46,7 @@ This topic describes how to do these three steps. After you've finished these st
 
 ## Create your Azure AD app
 
-Follow the instructions for [Single sign-on (SSO) support for tabs](/microsoftteams/platform/tabs/how-to/authentication/auth-aad-sso) to create your Azure AD app.
+Follow the instructions for [SSO support for tabs](/microsoftteams/platform/tabs/how-to/authentication/tab-sso-register-aad) to create your Azure AD app.
 
 ## Update your Azure AD app registration
 
@@ -156,7 +150,7 @@ To add the token exchange url:
 
 1. Go to the Azure AD authentication you configured when following the steps to [create the new Azure AD authentication in the Power Virtual Agents web app](configuration-end-user-authentication.md#configure-manual-authentication).
 
-1. Add the Token Exchange URL as described in the [Configure SSO with Azure AD](configure-sso.md#configure-authentication-in-power-virtual-agents-to-enable-single-sign-on) topic, under the **Configure authentication in Power Virtual Agents to Enable SSO** heading.
+1. Add the Token Exchange URL as described in the [Configure SSO with Azure AD](configure-sso.md#configure-authentication-in-power-virtual-agents-to-enable-sso) topic, under the **Configure authentication in Power Virtual Agents to Enable SSO** heading.
 
     :::image type="content" source="media/configure-sso-teams/image9.png" alt-text="Screenshot displaying correct Token Exchange URL configuration.":::
 

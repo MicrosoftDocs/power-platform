@@ -22,7 +22,7 @@ search.app:
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
 > [!NOTE]
-> The ALM accelerator for Microsoft Power Platform is currently in public preview. While in preview we will be prioritizing feedback and bugs via GitHub [New issue](https://github.com/microsoft/coe-starter-kit/labels/alm-accelerator). If the issue is something in the platform all we can do is funnel feedback to the responsible product teams. For more information on the current preview status of the ALM Accelerator for Power Platform see [follow this link](https://github.com/microsoft/coe-starter-kit/blob/main/CenterofExcellenceALMAccelerator/PREVIEW.md).
+> The ALM accelerator for Microsoft Power Platform is currently in public preview. While in preview we will be prioritizing feedback and bugs via GitHub [New issue](https://github.com/microsoft/coe-starter-kit/labels/alm-accelerator). If the issue is something in the platform all we can do is funnel feedback to the responsible product teams. For more information on the current preview status of the ALM Accelerator for Power Platform [follow this link](https://github.com/microsoft/coe-starter-kit/blob/main/CenterofExcellenceALMAccelerator/PREVIEW.md).
 
 ## Demo: The ALM Accelerator for Power Platform app new maker experience
 
@@ -64,7 +64,7 @@ The below table shows how the **User Labels** are configured for the **maker** u
 
 1. When prompted to create connections and grant consent, create the necessary connections or accept the consent dialog.
 
-1. If prompted to create an HTTP with Azure AD connection, enter **https&semi;\/\/graph&period;microsoft&period;com** for both the **Base Resource URL** and **Azure AD Resource URI**.
+1. If prompted to create an HTTP with Azure AD connection, enter **https://graph.microsoft.com** for both the **Base Resource URL** and **Azure AD Resource URI**.
 
 1. Select **Create** for each connection when prompted.
 

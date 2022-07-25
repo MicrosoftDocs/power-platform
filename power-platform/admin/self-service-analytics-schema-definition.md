@@ -144,8 +144,8 @@ The following tables detail the schema definitions of the data. Metadata are con
 | Environmentregion       | Longtext           | Environment geo location                                     |
 | EnvironmentUrl          | Longtext           | Environment URL                                              |
 | isDefault               | Longtext           | Boolean value to indicate whether this is the default environment  |
-| CdsInstanceURL          | Longtext           | Dataverse environment URI                                          |
-| CdsInstanceId           | Guid               | Dataverse environment identifier                                      |
+| CdsInstanceURL          | Longtext           | Environment URI                                          |
+| CdsInstanceId           | Guid               | Environment identifier                                      |
 | createdPrincipalId      | Guid               | Azure AD object ID of the app creator principal                       |
 | CreatedTime             | Datetime           | Date the app was created                                         |
 | lastModifiedPrincipalId | Guid               | Azure AD object ID of the user who last modified the app          |
