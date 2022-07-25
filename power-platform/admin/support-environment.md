@@ -1,5 +1,5 @@
 ---
-title: "About support environments and the consent process"
+title: "Customer data access consent and support environment creation"
 description: "Learn about support environments created in your tenant by Microsoft to resolve customer issues. These non-production environments are managed by system admins."
 ms.custom: ""
 ms.date: 07/20/2022
@@ -23,73 +23,40 @@ search.app:
   - Flow
 ---
 
-# About support environments and the consent process
+# Customer data access consent and support environment creation
 
-To successfully investigate and/or troubleshoot issues associated with a support request, Microsoft Support may need to access data associated with your tenant or environment. Microsoft respects your privacy and puts you in control over the level of consent you provide to access customer data while providing support. Providing advance consent at the time the support ticket is created can streamline the process and lead to faster issue resolution but isn't necessarily required. Sometimes a support environment is required to reproduce an issue or test a mitigation while ensuring no impact to the production environment. You can decide whether to consent to the use of a support environment, and whether a minimal or full copy of environment data is allowed.
+To successfully investigate and/or troubleshoot issues associated with a support request, Microsoft Support may need to access customer data associated with your tenant and/or environment. The troubleshooting could also include the replicating of the environment with or without content for testing purposes. A replicated environment ([a support environment](#support-environments)), is sometimes required to successfully reproduce an issue and/or to evaluate a solution without impact to the production environment. Microsoft respects your privacy and puts you in control over the level of consent you allow as part of providing support. Allowing customer data access with or without allowing the replication of your environment at support request creation eliminates unnecessary delays incurred during issue resolution. The consent is temporary and can be revoked if needed. With consent, Microsoft Support is given customer data access and/or environment copy access for troubleshooting purposes and/or resolving the technical issue described in the Microsoft Support case.
 
 ## Consent information
 
-### Why do I need to give consent? 
+### What does my consent allow?
 
-Consent might be needed to allow Microsoft to take the necessary steps to successfully resolve the issue. Microsoft Support might require additional access while investigating issues. This isn't common but when needed, providing consent in advance can minimize delays in resolving the issue. The engineer might also need to simulate the environment and support issue by recreating the related environment to identify the issue and/or solution. Consent can be granted at ticket creation time or after a ticket has been created from the ticket settings page.
+We present four consent options at support request creation time with three of the options to grant a varying degree of consent and fourth option to deny consent altogether. Here is a closer look at each option:
 
-### What does my consent allow? 
+- **Allow access to diagnostic information** – with this option you can temporarily grant Microsoft Support access to customer data associated with your tenant and/or environment. Allowing customer data access ensures there is no delay in troubleshooting to identify the root cause and the solution to the issue as it eliminates the back-and-forth to contact you directly for access. This is a read-only access that you can revoke at any time, and it is automatically removed once the case is closed. This is the recommended option, but it is not set by default and needs to be explicitly selected during ticket creation.
 
-Admins are presented four options at support ticket creation time. Three of the four options grant consent in varying degrees while the fourth doesn't grant consent. The four options are:
+- **Allow minimal copy with access to diagnostic information** – with this option you grant consent to create a copy of your customer environment which creates a support environment. A support environment is a non-production environment that allows troubleshooting of the issue without impact to your production environment. For this specific option, only a minimal copy of your environment is created which does not have customer content but attributes and settings. This option also requires customer data access for troubleshooting. 
 
-- **Allow Access to Diagnostic Information** - this option allows Microsoft Support to gather the necessary information while troubleshooting and/or investigating issues for resolution. This is read-only access to diagnostic information that can help in identifying root cause of the issue filed. You can grant or revoke access at any time; it is removed automatically when your case is closed. This is the recommended option, but it's not set by default and would need to be explicitly selected during ticket creation.
+- **Allow full copy with access to diagnostic information** - with this option you grant consent to create a full copy of your customer environment which creates a support environment. A support environment is a non-production environment that allows troubleshooting of the issue without impact to your production environment. For this specific option, a full copy of your environment is created which is a replication of your production environment including customer content, attributes, and settings. This option also requires customer data access for troubleshooting. 
 
-- **Allow Minimal Copy with Access to Diagnostic Information** -  this option provides consent for duplication of the customer environment into a support environment to successfully simulate the problems to solve. Microsoft Support performs troubleshooting and testing outside of the production environment to minimize impact. The support environment created in this instance isn't a full copy but a minimal one which doesn't have actual data but just attributes and settings utilized in the actual production environment. Data access is necessary here to access the support environment created.
+- **Do not allow access to diagnostic information** – with this option you can choose not to grant consent. However, choosing this option could introduce delays in support request resolution. Choosing this option includes the process of Microsoft Support having to make additional contacts to solicit this information and/or scheduling additional calls. If Microsoft Support is unable to resolve the ticket without customer data access and/or replicating the environment they will have to schedule diagnostic information. Microsoft Support will have to contact the customer to seek consent. This will slow down the investigation, troubleshooting and/or prevent the successful resolution of the issue.
 
-- **Allow Full Copy with Access to Diagnostic Information** - this option allows for a full copy of the production environment with its data to be replicated into a support environment to simulate the issues seen in the production environment. Microsoft Support would run tests as appropriate to pinpoint or successfully investigate issues. Data access is necessary here to access the support environment created. 
-
-- **Do Not Allow Access to Diagnostic Information** – Consent isn't granted. This option could result in delays in support ticket resolution. If Microsoft Support is unable to resolve the ticket without access to diagnostic information, Microsoft Support will have to contact the customer to seek consent. This will require the customer to update the ticket settings if they agree to provide consent. Failure to provide consent at that point could slow down investigating and troubleshooting, and/or prevent the successful resolution of the issue.
 
 ### What happens if I do not give consent? 
 
-You can deny consent at ticket creation time by simply selecting “Don’t allow advanced diagnostic” or revoke it afterwards by updating the **Consent** field in the ticket settings.  
+You can deny consent at ticket creation time by simply selecting “Don’t allow advanced diagnostic” or revoke it afterwards by updating the **Consent** field value in the ticket settings.  The support environment will expire within seven days and/or once the support request is resolved closed.  However, you can delete a support environment at any time. 
 
 ### How long does the consent last? 
 
-Consent is for the life of the ticket but can be modified in the ticket settings at any time. Consent can either be modified to grant or revoke consent after the ticket is created. A change in consent takes effect immediately.  
+Consent is for the life of the ticket but can be modified in the ticket settings at any time. Consent can either be modified to grant or revoke consent after the ticket is created. A change in consent takes effect immediately.
 
 ### What permissions are needed to set or change consent?  
 
-Only decision making roles are permitted to set and/or change consent. The roles vary depending on the product.  See [Prerequisites](get-help-support.md#prerequisites).
+Permissions needed to manage consent are specific to the environment provided during ticket creation time.  For Dataverse-based products, the Environment Administrator (or System Administrator role in Dataverse) has permission to manage consent for the provided environment.   
 
-## Consent workflow walkthrough
+## What are support environments? 
 
-To assist with diagnosing and resolving a support issue, you must grant consent to the agent either allow advanced diagnostic data and/or with a [Minimal](copy-environment.md#copy-over-everything) or a [Full](copy-environment.md#copy-over-customizations-and-schemas-only) copy of the environment with the issue.  
-
-To assist with diagnosing and resolving a support issue, you must grant consent to the Microsoft Support either allow advanced diagnostic data and/or with a [Minimal](copy-environment.md#copy-over-everything) or a [Full](copy-environment.md#copy-over-customizations-and-schemas-only) copy of the environment with the issue. 
-
-**Updated consent on ‘new support request’ form**
-
-:::image type="content" source="media/support-allow-access.png" alt-text="Allow access for advanced investigation and creation of support environment.":::
-
-**Consent section in ticket settings** 
-
-:::image type="content" source="media/support-consent-ticket.png" alt-text="Support consent as seen in the request ticket.":::
-
-### Can I change and/or revoke consent after I create a ticket? 
-
-Yes. Edits can be made to ticket from the ticket's settings page in the Power Platform admin center.  
-
-### What kind of data access does Microsoft have? 
-
-Online (via the application): 
-- System admin privileges 
-
-Database (via SQL query tools): 
-- Read/Write access to all tables 
-- Access to the database requires additional approval by Microsoft and it is managed, controlled, and granted as needed. 
-- Access to the database is subject to our standard access controls (that is, Just-in-time); for instance, access is time limited (for example, 30 minutes) and expires automatically.
-
-## Support environments
-
-### What are support environments? 
-
-A support environment is any non-production environment of Microsoft Dataverse used by Microsoft support to reproduce and resolve customer issues. When there is an issue affecting the operation of your online service, with your consent, Microsoft can create a support environment in your tenant to troubleshoot and repair the issue. It is isolated from your production environment, so it doesn't impact your business operations. System admins have full control of managing and providing organization data by [copying it](copy-environment.md) to a support environment. 
+A support environment is a special kind of non-production Dataverse-based environment used by Microsoft Support to reproduce and resolve customer issues. When there is an issue affecting the operation of your online service, with your consent Microsoft can create a support environment in your tenant to troubleshoot and fix the issue. It is isolated from your production environment, so it does not impact your business operations. 
  
 ### What are the details of a support environment? 
 
@@ -101,15 +68,23 @@ A support environment is any non-production environment of Microsoft Dataverse u
 
 ### What data is in a support environment? 
 
-- When Microsoft initially creates a support environment, it contains no customer data or customizations. 
-- System admins manage support environments in the Power Platform admin center. 
-- System admins can copy an environment to a support environment, and in the process can choose whether to provide a Minimal or a Full copy of their environment.
-- Prior to provisioning, system admins must consent to providing a copy of their data to Microsoft. 
+- A support environment will initially contain attributes and customizations with no customer data.
+- Support environments are created in the customer’s tenant and will be visible to administrators in the Power Platform admin center.
+- A support environment can be either a minimal or a full copy of the customer environment.
+- A minimal support environment doesn't contain customer content while a full support environment does contain customer content.
 
 ### Who has access to a support environment? 
 
 - **Minimal copy** - Microsoft staff who are members of a support security group 
 - **Full copy** - Microsoft staff who are members of an elevated support security group 
+
+### What kind of data access does Microsoft have within a support environment?
+
+Online (via the application) - System admin privileges
+Database (via SQL query tools):
+Read/Write access to all tables
+Access to the database requires additional approval by Microsoft and it is managed, controlled, and granted as needed.
+Access to the database is subject to our standard access controls (that is, just-in-time); for instance, access is time limited (for example, 30 minutes) and expires automatically.
 
 ### How long does a support environment stay in your tenant? 
 
@@ -119,6 +94,18 @@ A support environment is any non-production environment of Microsoft Dataverse u
 ### Is access and usage of support environment audited? 
 
 Yes. 
+
+## Consent workflow walkthrough
+
+To assist with diagnosing and resolving a support issue, you can grant Microsoft Support consent to access customer data and/or replicate your production environment as [minimal](copy-environment.md#copy-over-customizations-and-schemas-only) or a [full](copy-environment.md#copy-over-everything) copy of the environment with the issue. 
+
+**Updated consent on ‘new support request’ form**    
+
+:::image type="content" source="media/support-allow-access.png" alt-text="Allow access for advanced investigation and creation of support environment.":::
+
+**Consent section in ticket settings** 
+
+:::image type="content" source="media/support-consent-ticket.png" alt-text="Support consent as seen in the request ticket.":::
 
 ### How do I modify consent to either grant it or deny it? 
 
@@ -131,6 +118,7 @@ Yes.
 
 5. Select **Edit** on the top menu bar.
 6. Select the desired consent, and the select **Save**.
+
 
 
 
