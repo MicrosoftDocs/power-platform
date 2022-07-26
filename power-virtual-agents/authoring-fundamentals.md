@@ -29,9 +29,9 @@ Creating a bot with Power Virtual Agents is easy to do with the [no-code authori
 
 It's also easy to [test the bot](authoring-test-bot.md) without having to fully deploy the bot whenever you make a small change.
 
-There are also [lesson topics](authoring-template-topics.md) that guide you through topic authoring - from simple to complex scenarios, as well as default [system topics](authoring-create-edit-topics.md#use-system-and-sample-topics).
+If you need, use the [lesson topics](authoring-template-topics.md) to help guide you through topic authoring&mdash;from simple to complex scenarios, as well as default [system topics](authoring-system-topics.md).
 
-You can also [choose what language you want your bot to use](authoring-language-support.md).
+Finally, you can [choose what language you want your bot to use](authoring-language-support.md) to best fit your needs.
 
 ## Prerequisites
 

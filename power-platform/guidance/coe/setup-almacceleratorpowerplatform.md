@@ -544,6 +544,54 @@ To execute the build pipeline for your solution when a pull request is created, 
 
    ![Select settings for validation build policy.](media/almacceleratorpowerplatform-components/image-20210301104042544.png)
 
+### Setting resource access permissions for pipelines
+
+For Pipelines to run they need to be able to access required resources, such as repositories, variable groups and service connections. To allow access you have the following three options:
+
+1. You can assign access when prompted on first run of a pipeline that requires access to a resource that the pipeline isn't already permitted to access.
+To do so, trigger the pipeline and open the pipeline run in Azure DevOps. Select the **View** button on the permission required banner. Select the **Permit** button for each required resource
+1. You can give explicit permissions for each of your pipelines to access required resources such as repositories, variable groups and service connections.
+
+   To give explicit permissions to repositories, follow these steps:
+
+   1. Open **Project Settings**, select **Repositories and select the repository for which you want to set pipeline access.
+   2. Select the **Security** tab.
+   3. Scroll down to **Pipeline permissions** and select the **+** button.
+   4. Select the pipeline that you want to give access to the repository.
+
+   To give explicit permissions to variable groups, follow these steps:
+
+   1. Open the **Pipelines** menu, select **Library** and select the relevant variable group.
+   2. Select **Pipeline permissions**.
+   3. Select **+** and select the pipeline that you want to give access to the variable group.
+
+   To give explicit permissions to service connections, follow these steps:
+
+   1. Open **Project Settings** and select **Service Connections**.
+   2. Select the **Service Connection** for which you want to give access, select the **More actions** button and select **Security**
+   3. In the Pipeline permissions section, select the **+** button and select the pipeline that you want to give access to the service connection.
+
+1. You can give access to all pipelines (existing and future) to access a repository, variable groups and service connections.
+
+   To give all pipelines access a repository, follow these steps:
+
+   1. Open **Project Settings**, select **Repositories** and select the repository for which you want to set pipeline access.
+   2. Select the **Security** tab.
+   3. Scroll down to **Pipeline permissions**.
+   4. Select the **More actions** button, select **Open access** and confirm.
+
+   To give all pipelines access to a variable group, follow these steps:
+
+   1. Open the **Pipelines** menu, select **Library** and select the relevant variable group.
+   2. Select **Pipeline permissions**
+   3. Select the **More actions** button, select **Open access** and confirm.
+
+   To give all pipelines access to a service connection, follow these steps:
+
+   1. Open **Project Settings** and select **Service Connections**.
+   2. Select the **Service Connection** for which you want to give access, select the **More actions** button and select **Security**
+   3. In the **Pipeline permissions** section, select the **More actions** button, select **Open access** and confirm.
+
 ### Create deployment configuration (optional)
 
 There are several configurations that need to be made in a target environment after a solution is deployed. These configurations are specific to the environment into which the solution is being deployed. Included are connection references, environment variables, and setting permissions for Azure AD Groups and Dataverse teams, in addition to sharing canvas apps and updating the ownership of solution components such as Power Automate flows. In addition to these configurations, sample or configuration data associated with Dataverse tables in the solution is frequently required in a target environment, to provide a full end-to-end ALM experience.

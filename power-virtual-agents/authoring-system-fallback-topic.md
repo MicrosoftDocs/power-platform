@@ -25,7 +25,9 @@ During a conversation, a Power Virtual Agents bot [triggers the appropriate topi
 
 In some scenarios, you might want to customize how the bot behaves when user input doesn't trigger any topic. For example, you can build a catchall topic to capture unrecognized user intent, or use a topic to call back-end systems or route to existing services.
 
-You customize these fallback behaviors by adding the system **Fallback** topic. You can also customize the **Fallback** topic, similar to most other system topics.
+Customize these fallback behaviors by adding the system **Fallback** topic. You can also customize the **Fallback** topic itself, similar to most other system topics.
+
+This topic also includes the unique variable `UnrecognizedTriggerPhrase` to capture the unrecognized input.
 
 ## Prerequisites
 

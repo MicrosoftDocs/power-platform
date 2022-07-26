@@ -3,13 +3,13 @@ title: "Clean up records from AsyncOperationBase and WorkflowLogBase tables"
 description: "Learn how to clean up records from AsyncOperationBase and WorkflowLogBase tables."
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/10/2022
-author: viveke
+ms.date: 07/14/2022
+author: swylezol
 ms.subservice: admin
-ms.author: vielango
+ms.author: swylezol
 ms.reviewer: jimholtz 
 contributors:
-  - cpdSeattle
+  - MicroSri
 search.audienceType: 
   - admin
 search.app:
@@ -83,7 +83,10 @@ For synchronous workflows, we recommend enabling **Keep logs for workflow jobs t
 
 ## AsyncOperationBase file capacity usage 
 
-Historically, the entire async operation context used to be serialized directly in the Async Operation table (as **data** property), leading to very quick growth in size if there are asynchronous plug-in registrations on large entities (such as attachment). Since early 2021, the data portion of async operations is moved to file capacity. As a result, async operation data size is partially counted in database capacity and partially in file capacity. This helps reduce the cost (since file capacity is charged at a lower rate than database capacity) and improves overall performance of their organization (since queries against the Async Operation table are more performant). 
+Historically, the entire async operation context used to be serialized directly in the Async Operation table (as **data** property), leading to very quick growth in size if there are asynchronous plug-in registrations on large entities (such as attachment). Since early 2021, the data portion of async operations is moved to file store. As a result, async operation data size is partially counted in database capacity and partially in file capacity. This helps reduce the cost (since file capacity is charged at a lower rate than database capacity) and improves overall performance (since queries against the Async Operation table are more performant). 
+
+> [!NOTE]
+> Files related to AsyncOperation entities cannot be deleted directly. In order to reclaim file capacity please review retention and cleanup policies of AsyncOperation entities described in this article. When AsyncOperation entites are deleted their corresponding files get deleted as well.
 
 For more information on Dataverse storage model and reporting, see [New Microsoft Dataverse storage capacity](capacity-storage.md). 
 

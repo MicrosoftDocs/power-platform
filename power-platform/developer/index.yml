@@ -1,0 +1,64 @@
+### YamlMime:Landing
+
+title: Microsoft Power Platform developer documentation
+summary: Learn how to extend Microsoft Power Platform using code first components and integrating with back-end services.
+
+metadata:
+  title: Microsoft Power Platform developer documentation
+  description: Provides access to highlighted areas within the developer documentation
+  services: service
+  ms.subservice: developer
+  ms.topic: landing-page
+  ms.collection: collection
+  author: marcelbf
+  ms.author: marcelbf
+  ms.date: 06/13/2022
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+  # Card
+  - title: Get started
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: "Power Platform for developers"
+            url: get-started.md
+      - linkListType: concept
+        links:
+          - text: "Fusion development"
+            url: fusion-development.md
+      - linkListType: reference
+        links:
+          - text: Fusion development ebook
+            url: /power-apps/guidance/fusion-dev-ebook
+      - linkListType: learn
+        links:
+          - text: Introduction to developing with Power Platform
+            url: /learn/paths/intro-developing-power-platform/
+          - text: Transform your business applications with fusion development
+            url: /learn/paths/transform-business-applications-with-fusion-development/
+
+  # Card
+  - title: Tools
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Power Platform CLI
+            url: ./cli/introduction.md
+
+  # Card
+  - title: Related resources
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Canvas apps developer docs
+            url: /power-apps/maker/canvas-apps/dev-enterprise-intro
+          - text: Model-driven apps developer docs
+            url: /power-apps/developer/model-driven-apps/
+          - text: Dataverse developer docs
+            url: /power-apps/developer/data-platform
+          - text: Power Apps component framework
+            url: /power-apps/developer/component-framework/overview
+          - text: Power Platform ALM for developers
+            url: ../alm/alm-for-developers.md

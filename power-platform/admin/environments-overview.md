@@ -1,10 +1,10 @@
 ---
 title: Environments overview | Microsoft Docs
-description: Learn about environments in Power Apps and how to use them.
+description: Learn about Power Platform environments and how to use them.
 author: jimholtz
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 06/01/2022
+ms.date: 06/22/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -18,15 +18,12 @@ search.app:
 
 # Environments overview
 
-An *environment* is a space to store, manage, and share your organization's business data, apps, chatbots, and flows. It also serves as a container to separate apps that might have different roles, security requirements, or target audiences. How you choose to use environments depends on your organization and the apps you're trying to build. For example:
+A *Power Platform environment* is a space to store, manage, and share your organization's business data, apps, chatbots, and flows. It also serves as a container to separate apps that might have different roles, security requirements, or target audiences. How you choose to use environments depends on your organization and the apps you're trying to build. For example:
 
 * You can choose to only build your apps or chatbots in a single environment.
 * You might create separate environments that group the test and production versions of your apps or chatbots.
 * You might create separate environments that correspond to specific teams or departments in your company, each containing the relevant data and apps for each audience.
 * You might also create separate environments for different global branches of your company.  
-
-> [!NOTE]
-> You can get early access to upcoming Power Apps functionality by joining the [Power Apps Preview program](/powerapps/maker/powerapps-preview-program).  
 
 ## Environment scope
 Each environment is created under an Azure Active Directory (Azure AD) tenant, and its resources can only be accessed by users within that tenant. An environment is also bound to a geographic location, like the United States. When you create an app in an environment, that app is routed only to datacenters in that geographic location. Any items that you create in that environment (including chatbots, connections, gateways, flows using Microsoft Power Automate, and more) are also bound to their environment's location.
@@ -93,7 +90,7 @@ There are multiple types of environments. The type indicates the purpose of the 
 </tr>
 <tr>
 <td width="20%"> Developer</td>
-<td width="50%">  Developer environments are created by users who have the Developer Plan license. They're special environments intended only for use by the owner. Provisioning developer environments can't be restricted unless through a support ticket. Developer environment will be available as long as you actively use the Power Apps Developer Plan. More information: <a href="/powerapps/maker/developer-plan">Power Apps Developer Plan</a></td>
+<td width="50%">  Developer environments are created by users who have the Developer Plan license. They're special environments intended only for use by the owner. Provisioning developer environments can be restricted to admins (see <a href="powerapps-powershell.md#block-trial-licenses-commands">Block trial licenses commands</a>). The developer environment will be available as long as you actively use the Power Apps Developer Plan. More information: <a href="/powerapps/maker/developer-plan">Power Apps Developer Plan</a></td>
 <td width="30%">  The user with the Developer Plan can choose to add other users as makers. </td>
 </tr>
 <tr>

@@ -152,7 +152,7 @@ Leave the Azure portal open, because you'll need to copy some information when y
 
 This URL will be used for callbacks from GitHub.
 
-1. On a new tab, go to [make.powerapps.com](https://make.powerapps.com) > **Solutions** > **Power Platform GitHub ALM** solution.
+1. On a new tab, go to [make.powerapps.com](https://make.powerapps.com) > **Solutions** > **ALM Accelerator for Makers** solution.
 
 1. Edit the **WorkflowCompleteNotification** flow.
 

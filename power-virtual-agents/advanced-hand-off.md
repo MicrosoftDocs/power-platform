@@ -66,7 +66,7 @@ This node lets you add a **Private message to agent**, which is sent to the conn
 > [!NOTE]
 > Conversations that reach this node will be marked as **Escalated** sessions in [reporting analytics](./analytics-overview.md).
 
-**Add a**Transfer to agent**node into a topic:**
+**Add a "Transfer to agent" node into a topic:**
 
 1. Go to the [**Topics page**](./authoring-create-edit-topics.md) for the bot you want to edit.
 
