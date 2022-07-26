@@ -2,7 +2,7 @@
 title: "Customer data access consent and support environment creation"
 description: "Learn about support environments created in your tenant by Microsoft to resolve customer issues. These non-production environments are managed by system admins."
 ms.custom: ""
-ms.date: 07/20/2022
+ms.date: 07/26/2022
 ms.reviewer: "yinkafatona"
 ms.suite: ""
 ms.tgt_pltfrm: ""
