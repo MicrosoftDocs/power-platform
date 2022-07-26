@@ -14,6 +14,8 @@
         href: get-help-support.md
       - name: Support overview
         href: support-overview.md
+      - name: Support environments and the consent process
+        href: support-environment.md    
       - name: Determine your organization ID and name
         href: determine-org-id-name.md
       - name: Manage email notifications to admins
@@ -384,8 +386,6 @@
           href: multiple-online-environments-tenants.md
         - name: Administration mode
           href: admin-mode.md        
-        - name: Support environment
-          href: support-environment.md     
         - name: Automation of tasks with PowerShell 
           href: wp-task-automation-powershell.md
         - name: Automation of tasks with Power Automate
