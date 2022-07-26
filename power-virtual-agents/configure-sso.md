@@ -38,7 +38,7 @@ There are four main steps to configuring SSO for Power Virtual Agents:
 
 ## Prerequisites
 
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 - [Enable end-user authentication with Azure Active Directory](configuration-end-user-authentication.md#use-azure-active-directory-as-your-identity-provider).
   - SSO is only supported for Azure Active Directory (Azure AD) V2. Other account types such as Microsoft Account or other OAuth accounts are not supported.
 - [Add an authentication topic to your bot](advanced-end-user-authentication.md).

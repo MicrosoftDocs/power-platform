@@ -39,7 +39,7 @@ Flows typically use variables to input and output information. The variables can
 
 ## Prerequisites
 
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 
 ## Create a new flow from the Power Virtual Agents authoring canvas
 
