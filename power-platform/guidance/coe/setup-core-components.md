@@ -107,6 +107,7 @@ There are several child flows, check to make sure all of these flows are on:
 1. CLEANUP HELPER – Check Deleted (Custom Connectors)
 1. CLEANUP HELPER – Check Deleted (Model Driven Apps)
 1. CLEANUP HELPER – Check Deleted (PVA)
+1. CLEANUP HELPER - Check Deleted (Solutions)
 1. CLEANUP HELPER – Power Apps User Shared With
 
 If you get a connection authorization error turning on a flow, you might need to set the [run-only user properties](faq.md#set-flow-run-only-users-properties) of the flow.
@@ -161,6 +162,7 @@ The Admin \| Sync Template flows part of this solution crawl through all the res
 - Admin | Sync Template v3 (Model Driven Apps)
 - Admin | Sync Template v3 (Portals)
 - Admin | Sync Template v3 (PVA)
+- Admin | Sync Template v3 (Solutions)
 - Admin | Sync Template v3 (Sync Flow Errors)
 - Admin | Sync Template v3
 - CLEANUP - Admin | Sync Template v3 (Check Deleted)
