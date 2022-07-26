@@ -30,7 +30,7 @@ There are a number of ways you can manage your topics. Power Virtual Agents incl
 
 ## Prerequisites
 
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 
 ## Topic errors
 

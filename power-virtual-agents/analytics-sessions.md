@@ -32,7 +32,7 @@ Lastly, you can manage the retention period for transcripts. This can be useful 
 
 ## Prerequisites
 
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 
 ## Download session transcript information from the Power Virtual Agents portal
 

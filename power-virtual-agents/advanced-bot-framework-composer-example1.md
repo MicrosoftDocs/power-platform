@@ -26,9 +26,9 @@ Before you begin, ensure you read [Extend your bot with Bot Framework Composer](
 
 ## Prerequisites
 
-- [Extend your bot with Bot Framework Composer](advanced-bot-framework-composer.md)
-- [Introduction to Bot Framework Composer](/composer/introduction)
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- [Introduction to Bot Framework Composer](/composer/introduction).
+- [Extend your bot with Bot Framework Composer](advanced-bot-framework-composer.md).
 
 ## Show an Adaptive Card
 

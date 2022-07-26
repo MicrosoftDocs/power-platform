@@ -28,7 +28,7 @@ Each time you want to update your bot's content, you publish it again from withi
 
 ## Prerequisites
 
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations-teams.md)]
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents-teams.md).
 
 ## Publish the latest bot content
 
