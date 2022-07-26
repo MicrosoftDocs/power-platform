@@ -34,6 +34,10 @@ Errors may also appear in the [Topic Checker](authoring-topic-management.md#topi
 > [!NOTE]
 > The following errors can occur in both the web app and Microsoft Teams. To view errors that are exclusive to Teams, please refer to [the Teams version of this topic](teams/error-codes-teams.md).
 
+## Prerequisites
+
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+
 ## Error List
 
 <!-- Best viewed and edited without word wrap -->

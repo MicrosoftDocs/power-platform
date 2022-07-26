@@ -39,7 +39,7 @@ For example, you could record someone's answer to a question in one place in the
 
 ## Prerequisites
 
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations-teams.md)]
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents-teams.md).
 
 ## Create a new flow from the Power Virtual Agents authoring canvas
 
