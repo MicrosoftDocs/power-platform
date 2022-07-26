@@ -17,9 +17,9 @@ ms.collection: virtual-agent
 
 [!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
 
-You can enable your bot to perform an action by calling a Microsoft Power Automate flow. Flows can help you automate activities, or call backend systems. For example, you can use flows with end-user authentication to retrieve information about a user after they've signed in.
+You can help your bot to perform an action by calling a Microsoft Power Automate flow. Flows can help you automate activities or call backend systems. For example, you can use flows with end-user authentication to retrieve information about a user after they've signed in.
 
-You call flows from within topics, as a discrete **Call an action** node. You can utilize flows that have already been created in your Power Apps environment, or you can create a flow from within the Power Virtual Agents [authoring canvas](authoring-create-edit-topics.md).
+Your call flows from within topics as a discrete **Call an action** node. You can utilize flows that have already been created in your Power Apps environment or create a flow from within the Power Virtual Agents [authoring canvas](authoring-create-edit-topics.md).
 
 > [!IMPORTANT]
 > To use flows within Power Virtual Agents, they must meet the following requirements:
@@ -40,7 +40,7 @@ Flows typically use variables to input and output information. The variables can
 
 1. Select the plus (**+**) button below an existing node to add a new node.
 
-1. In the node selection window, select **Call an action**, and then select **Create a flow**.
+1. In the node selection window, select **Call an action**, and then select **Create a flow**..
 
     :::image type="content" source="media/advanced-flow/UseCreateFlowOption.jpg" alt-text="Create a new Power Automate flow." border="false":::
 
@@ -51,7 +51,7 @@ Using the **Create a flow** option opens a starter flow template in the [Power A
 > [!NOTE]
 > The Power Automate portal automatically opens in the same environment as the bot (using the same user credentials).
 
-This template is an example of a flow that can be used by bots. To be suitable for bots, a Power Automate flow requires a special **Power Virtual Agents** trigger and response action:
+This template is an example of a flow that bots can use. To be suitable for bots, a Power Automate flow requires a special **Power Virtual Agents** trigger and response action:
 
 - Flow trigger:  **Power Virtual Agents**  
 
@@ -61,21 +61,21 @@ This template is an example of a flow that can be used by bots. To be suitable f
 
     :::image type="content" source="media/advanced-flow/PVAConnectorResponse.JPG" alt-text="Power Virtual Agents response." border="false":::
 
-If you make changes to a flow in the Power Automate portal after adding the flow to Power Virtual Agents, you can reload the flow by selecting **Node menu** (vertical three dots), then **Refresh**.
+If you make changes to a flow in the Power Automate portal after adding the flow to Power Virtual Agents, you can reload the flow by selecting the **Node menu** (vertical three dots), then **Refresh**.
 
 :::image type="content" source="media/advanced-flow/refresh-flow-node.png" alt-text="Screenshot of flow refresh button." border="false":::
 
-The flow will then be re-validated, and any problems detected will need to be fixed before you can save.
+The flow will then be validated again, and any problems detected will need to be fixed before you can save.
 
 ## Input and output parameters
 
-There is no upper limit on how many input or output parameters Power Automate flow for a bot can have. Bots can use the following types of inputs and outputs with Power Automate flows:
+Bots can use any number of the following types of inputs and outputs with Power Automate flows:
 
 - Number
 - String
 - Boolean
 
-The following types are not supported:
+The following types aren't supported:
 
 - Object
 - Date
@@ -88,35 +88,35 @@ The following types are not supported:
 - List [Timestamp]
 
 > [!NOTE]
-> A bot is able to receive up to 1 MB of data from a Power Automate flow in a single action. There is no upper limit on the maximum size of data that a bot can pass to a Power Automate flow.
+> A bot can receive up to 1 MB of data from a Power Automate flow in a single action. A bot can pass any amount of data to a Power Automate flow.
 
 ### Input parameters
 
-To specify a flow to accept input parameters from a bot, select the **Add an input** option in the **Power Virtual Agents trigger** user interface, and then select the type a - `string`, `number`, or a `boolean`.
+To specify a flow to accept input parameters from a bot, select the **Add an input** option in the **Power Virtual Agents trigger** user interface. Then select the type (string, number, or boolean).
 
 :::image type="content" source="media/advanced-flow/PVAConnector_Inputs_1.JPG" alt-text="Power Virtual Agents trigger input types." border="false":::
 
 For example, you can select **Text** and **Number** to add the following input parameters to the flow:
 
 - **String_Input** of type `string`
-- **Number_Input** ot type `number`
+- **Number_Input** of type `number`
 
 :::image type="content" source="media/advanced-flow/PVAConnector_Inputs_2.JPG" alt-text="Power Virtual Agents trigger inputs." border="false":::
 
 ### Output parameters
 
-To return output parameters to the bot that can be a `string`, `number`, or a `boolean`, select **Add an output** option in **Power Virtual Agents response** user interface, and then select the type for the output.
+To return output parameters to the bot that can be a `string`, `number`, or a `boolean`, select **Add an output** option in **Power Virtual Agents response** user interface, and select the output type.
 
 :::image type="content" source="media/advanced-flow/PVAConnector_Output_1.JPG" alt-text="Power Virtual Agents response output types." border="false":::
 
 For example, you can select **Text** and **Number** to add the following output parameters to the flow and assign return values for them.
 
 - **String_Output** of type `string`
-- **Number_Output** ot type `number`
+- **Number_Output** of type `number`
 
 :::image type="content" source="media/advanced-flow/PVAConnector_Output_2.JPG" alt-text="Power Virtual Agents response outputs." border="false":::
 
-This example creates a fully functional flow that accepts two parameters, a `string` and a `number`, and returns them to a bot as outputs.
+This example creates a fully functional flow that accepts two parameters, a string and a number, and returns them to a bot as outputs.
 
 Select **Save** to save your new flow.
 
@@ -126,7 +126,7 @@ Your flow is saved to the **Default Solution** under the **Solutions** tab on th
 
 :::image type="content" source="media/advanced-flow/default-solution.png" alt-text="Power Automate flow template - Default Solution." border="false":::
 
-## Flows created from the Power Virtual Agents authoring canvas are immediately available to the bot
+## Availability of flows
 
 All flows created from the Power Virtual Agents authoring canvas are saved in a **Default Solution** in Power Automate. They can be used by your bots immediately.
 
@@ -136,9 +136,9 @@ In Power Virtual Agents, you can now see this new flow on the list of available 
 
 ## Optionally move a flow from Default Solution to another solution
 
-To be available to your bots, flows must be stored in a solution in Power Automate. If you do not want to use the **Default Solution** for this purpose, you can move your flows to another solution.
+To be available to your bots, flows must be stored in a solution in Power Automate. If you don't want to use the **Default Solution** for this purpose, you can move your flows to another solution.
 
-1. On the Power Automate portal, go to the **Solutions** tab where you can see the available solutions. Use any of the existing solutions or create a new solution for your flows.
+1. On the Power Automate portal, go to the **Solutions** tab to see the available solutions. Use any of the existing solutions or create a new solution for your flows.
 
 1. To create a new solution, select **New solution**.
 
@@ -156,7 +156,7 @@ To be available to your bots, flows must be stored in a solution in Power Automa
 
     :::image type="content" source="media/advanced-flow/move-flow-from-solution.png" alt-text="Add flow to a solution." border="false":::
 
-   To move a flow from **My flows** tab to a solution, select the **Outside solutions** option. Select **Add** to add your flow to the solution.
+   To move a flow from the **My flows** tab to a solution, select the **Outside solutions** option. Select **Add** to add your flow to the solution.
 
     :::image type="content" source="media/advanced-flow/AddExistingFlow_details.jpg" alt-text="Add flow from outside solutions." border="false":::
 
@@ -176,11 +176,11 @@ You can rename and modify your flow on the Power Automate portal. For example, t
 
     :::image type="content" source="media/advanced-flow/FlowEditDetailsPage.png" alt-text="Edit your flow using the Details page." border="false":::
 
-    If you want to open a flow on the Power Automate portal, go to the **Solutions** tab and then open your flow's solution. Use the flow's **Edit menu** to open the flow for editing.
+    To open a flow on the Power Automate portal, go to the **Solutions** tab and open your flow's solution. Use the flow's **Edit menu** to open the flow for editing.
 
     :::image type="content" source="media/advanced-flow/EditFlow.jpg" alt-text="Open your flow for editing." border="false":::
 
-1. Rename the flow to **Get weather forecast** and then add the following flow input parameters to **Power Virtual Agents** trigger:
+1. Rename the flow to **Get weather forecast** and then add the following flow input parameters to the **Power Virtual Agents** trigger:
 
     - City (String)
     - Zipcode (Number)
@@ -199,7 +199,7 @@ You can rename and modify your flow on the Power Automate portal. For example, t
 
     :::image type="content" source="media/advanced-flow/AddLocationForMSN.jpg" alt-text="Pass flow's input parameters to MSN Weather connector as location." border="false":::
 
-1. In the response node **Return value(s) to Power Virtual Agents**, add the output parameters that you want to return to the bot. **Save** your flow.
+1. In the response node **Return value(s) to Power Virtual Agents**, add the output parameters that you want to return to the bot. Save your flow.
 
     - day_summary (String)
     - location (String)
@@ -269,10 +269,9 @@ Enter your city and zip code at the prompt to get today's weather forecast from 
 
 ## Disable asynchronous responses from flows
 
-Power Virtual Agents doesn't support Power Automate flows that return values [asynchronously](/power-automate/guide-staff-through-common-tasks-processes#when-to-use-workflows). When creating a new flow from within Power Virtual Agents, this behavior is disabled by default.
+Power Virtual Agents doesn't support Power Automate flows that return values [asynchronously](/power-automate/guide-staff-through-common-tasks-processes#when-to-use-workflows). Creating a new flow within Power Virtual Agents disables this behavior by default.
 
-<!-- TODO: link to 3000 error code page when it exists -->
-Flows that have the Asynchronous Response feature enabled may cause an error when your bot tries to run the flow. Instead of running the flow, the bot will say "Something unexpected happened. We're looking into it. Error code: 3000.".
+Flows that have the Asynchronous Response feature enabled may cause an error when your bot tries to run the flow. Instead of running the flow, the bot will say, "Something unexpected happened. We're looking into it. Error code: 3000.".
 
 If you've enabled [Asynchronous Response](/azure/connectors/connectors-native-http#asynchronous-request-response-behavior), you'll need to disable it for the bot to work properly when it runs the flow:
 
@@ -293,8 +292,8 @@ If you've enabled [Asynchronous Response](/azure/connectors/connectors-native-ht
 
 ## Troubleshoot your bot
 
-[Test your bot](authoring-test-bot.md) when you make changes to your topics and flows, to ensure everything is working as expected. When a bot encounters a problem during a conversation, it will respond with an error message.
+[Test your bot](authoring-test-bot.md) when you make changes to your topics and flows to ensure everything is working as expected. When a bot encounters a problem during a conversation, it will respond with an error message.
 
-Most flow-related issues can be found in the [Flow Checker](/power-automate/error-checker), but any issues on the authoring canvas will appear in [topic checker](authoring-topic-management.md#topic-errors).
+You can find most flow-related issues in the [Flow Checker](/power-automate/error-checker), but any issues on the authoring canvas will appear in the [topic checker](authoring-topic-management.md#topic-errors).
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
