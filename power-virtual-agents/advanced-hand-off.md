@@ -38,7 +38,7 @@ For more information about how to configure hand-off with [omnichannel for Custo
 ## Prerequisites
 
 - [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
-- A bot built with [Power Virtual Agents](https://aka.ms/TryPVA)
+- A bot built with [Power Virtual Agents](https://aka.ms/TryPVA).
 - An engagement hub that is being used by live agents, such as [omnichannel for Customer Service](/dynamics365/omnichannel/try-channels), and you need to configure the connection, as described in [Configure hand-off to omnichannel for Customer Service](configuration-hand-off-omnichannel.md).
 
 ## Triggering hand-off to a live agent
