@@ -42,7 +42,7 @@ We present four consent options at support request creation time with three of t
 - **Do not allow access to diagnostic information** – with this option you can choose not to grant consent. However, choosing this option could introduce delays in support request resolution. Choosing this option includes the process of Microsoft Support having to make additional contacts to solicit this information and/or scheduling additional calls. If Microsoft Support is unable to resolve the ticket without customer data access and/or replicating the environment, they'll have to schedule diagnostic information. Microsoft Support will have to contact the customer to seek consent. This may slow down the investigation, troubleshooting and/or prevent the successful resolution of the issue.
 
 
-### Can my consent be revoked? 
+### Can I revoke consent?
 
 You can deny consent at ticket creation time by selecting “Do not allow access to diagnostic information” or you can revoke it afterwards by updating the **Consent** field value in the ticket settings.  The support environment will expire within seven days and/or once the support request is resolved closed.  However, you can delete a support environment at any time. 
 
