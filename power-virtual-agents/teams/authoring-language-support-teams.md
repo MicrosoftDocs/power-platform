@@ -23,6 +23,10 @@ Select the version of Power Virtual Agents you're using here:
 
 You can create chatbots in Power Virtual Agents in a number of languages. This means the bot will understand and respond in the language you specify.
 
+## Prerequisites
+
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents-teams.md).
+
 ## Specify a language for your bot
 
 You specify the target language when you first [create a bot](authoring-first-bot-teams.md).

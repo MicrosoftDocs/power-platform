@@ -35,6 +35,10 @@ You can also swap and regenerate secrets and refresh tokens, and you can easily 
 > [!NOTE]
 > Power Virtual Agents uses the [Bot Framework Direct Line channel]( /azure/bot-service/bot-service-channel-directline?view=azure-bot-service-4.0&preserve-view=true) to connect your web page or app to the bot.
 
+## Prerequisites
+
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+
 ## Enable or disable web channel security
 
 You can enforce the use of secrets and tokens for each individual bot.
