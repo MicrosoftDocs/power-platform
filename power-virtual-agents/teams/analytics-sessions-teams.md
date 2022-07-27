@@ -28,7 +28,7 @@ By default, you can download up to seven days of bot conversation transcript ses
 
 ## Prerequisites
 
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations-teams.md)]
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents-teams.md).
 
 ## Download session transcript information from the Power Virtual Agents app in Teams
 

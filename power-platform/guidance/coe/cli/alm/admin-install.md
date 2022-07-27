@@ -52,7 +52,7 @@ Complete [Before You Start](./before-you-start.md) to ensure that:
 
 - The Azure DevOps organization and Azure DevOps project have been created.
 
-- CoE CLI is installed.
+- The latest version of the CoE CLI is installed.
 
 ## Initial install
 

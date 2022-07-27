@@ -37,7 +37,7 @@ Each section in this guide outlines the technical procedures that a data control
 
 ## Prerequisites
 
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 
 ## GDPR terminology
 
