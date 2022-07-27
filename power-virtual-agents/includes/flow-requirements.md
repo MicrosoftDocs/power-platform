@@ -5,4 +5,4 @@
 >
 > - Flows must also be in a solution in Power Automate. You can [move flows into solutions](../advanced-flow-create.md#optionally-move-a-flow-to-another-solution) so they're listed in the authoring canvas.
 >
-> - [Flow values must be returned synchronously to Power Virtual Agents](../advanced-flow-create.md#disable-asynchronous-responses-from-flows).
+> - [Flow values must be returned synchronously to Power Virtual Agents](../advanced-flow-create.md#turn-off-asynchronous-responses-in-the-flow).
