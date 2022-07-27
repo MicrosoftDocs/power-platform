@@ -67,7 +67,7 @@ After you've [installed the CoE Starter Kit solution](setup.md), get familiar wi
 
 ## How to use the CoE Starter Kit alongside Power Platform Admin Center
 
-### Managed Environments
+### Managed Environments for Power Platform
 
 [Managed Environments](/power-platform/admin/managed-environment-overview) is a suite of capabilities that allows admins to manage Power Platform at scale with more control, less effort, and more insights - those capabilities are available out of the box, from within the Power Platform Admin Center. Managed Environment capabilities can be used standalone, or alongside capabilities of the CoE Starter Kit to administer and govern your Power Platform adoption.
 
