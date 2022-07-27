@@ -157,6 +157,8 @@
           href: coe/setup-almacceleratorpowerplatform-deployment-profiles.md
         - name: Using the Pipeline extension points
           href: coe/setup-almacceleratorforpowerplatform-hook-extensions.md
+        - name: Considerations when creating Azure App Registrations
+          href: coe/almaccelerator-app-registrations.md
         - name: Set up ALM Accelerator for Makers components
           href: coe/setup-almaccelerator.md
       - name: What's next - updating the CoE Starter Kit
