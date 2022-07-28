@@ -7,7 +7,7 @@ ms.subservice: alm
 ms.author: pemikkel
 manager: kvivek
 ms.custom: ""
-ms.date: 06/09/2020
+ms.date: 07/27/2022
 ms.reviewer: "pehecke"
 
 ms.topic: "article"
@@ -28,6 +28,11 @@ Package Deployer lets administrators deploy packages on Microsoft Dataverse inst
 - HTML content specific to the package that can display at the beginning and end of the deployment process. This can be useful to provide a description of the solutions and files that are deployed in the package.  
 
 A Visual Studio 2015 or later template (available for download) is used to create packages. After creating a package, use the Package Deployer tool to deploy your package to a Dataverse instance.
+
+> [!TIP]
+> An alternative method to create a package using the latest version (currently 2022) of Visual Studio is to use [Microsoft Power Platform CLI](../developer/cli/introduction.md). Run the `pac package init` command to create the initial package. More information: [Package](../developer/cli/reference/package-command.md)
+>
+> In the created project, you will find the ImportConfig.xml file in the PkgAssets folder, and you will be modifying the PackageImportExtension.cs file instead of the PackageTemplate.cs file mentioned below. You will need to read the rest of this article for details on creating your package.
 
 <a name="Prereq"></a>
  
@@ -455,7 +460,12 @@ A Visual Studio 2015 or later template (available for download) is used to creat
    | <xref:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.IImportExtensions2.OverrideDataImportSafetyChecks> |Property|Use this to specify whether Dynamics 365 Package Deployer will bypass some of its safety checks, which helps in improving the import performance. Specify `true` or `false`. Default is `false`.<br /><br /> You should set this to `true` only if the target Dataverse instance does not contain any data.|
 
 
-4. Save your project, and then build it (**Build** > **Build Solution**) to create the package. Your package is the following files under the *\<Project>*\Bin\Debug folder  
+4. Save your project, and then build it (**Build** > **Build Solution**) to create the package.
+
+> [!IMPORTANT]
+> Because the template used when creating the package project specifies old versions of the required NuGet packages, you will probably need to update the project's NuGet packages to newer versions prior to building the project.
+
+Your package is the following files under the *\<Project>*\Bin\Debug folder  
 
    - **\<PackageName> folder**: The folder name is the same as the one you changed for your package folder name in step 2.g of this section (Step 5: Define custom code for your package). This folder contains  all solutions,  configuration data, flat files, and the contents for your package.  
 
@@ -467,7 +477,7 @@ A Visual Studio 2015 or later template (available for download) is used to creat
   
 ## Deploy a package  
 
- After you create a package, you can deploy it on the Dataverse instance by using either the Package Deployer tool or Windows PowerShell. 
+ After you create a package, you can deploy it on the Dataverse instance by using the Package Deployer tool, Windows PowerShell, or the CLI command `pac package deploy`.
 
  The package deployer tool is distributed as part of the [Microsoft.CrmSdk.XrmTooling.PackageDeployment](https://www.nuget.org/packages/Microsoft.CrmSdk.XrmTooling.PackageDeployment) NuGet package. To download the Package Deployer tool, see [Download tools from NuGet](/powerapps/developer/common-data-service/download-tools-nuget).
 
