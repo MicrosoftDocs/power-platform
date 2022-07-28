@@ -21,6 +21,21 @@ For deprecation information of other products, see [Other deprecation articles](
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability will continue to work and is fully supported until it is officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
 
+## The legacy read-only grid in model-driven apps is deprecated
+The legacy read-only grid control has been deprecated in model-driven apps with the 2022 release wave 1. This control is being replaced by the **Power Apps read-only grid**, which became the default read-only grid experience for all organizations for model-driven apps with the 2022 release wave 1.  
+
+### Why is this needed?
+The legacy read-only grid: 
+-  Doesn’t support the latest Microsoft accessibility standards. 
+-  Doesn’t align with the latest in Microsoft design guidance.
+-  Has limited extensibility options
+
+### Impact
+Entities configured to use the *Read-only Grid (Default)* control will see the *Power Apps read-only grid* in place of the legacy grid (*Read-only Grid*) for view pages and subgrids starting with the 2022 release wave 1. When the Power Apps read-only grid is originally enabled, the jump bar row is not visible; however, makers can re-enable this as needed. 
+
+### Action required by you
+None currently. 
+
 ## Dynamics 365 (Preview) app for Windows is deprecated
 
 The [Microsoft Dynamics 365 (Preview)](https://apps.microsoft.com/store/detail/microsoft-dynamics-365-preview/9N0RWZ9KZZT8?hl=en-us&gl=US) app for Windows was deprecated on June 20, 2022. The app is no longer supported.  
