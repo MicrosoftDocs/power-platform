@@ -26,7 +26,7 @@ In this example, you'll use the Dataverse connector in Power Automate to search 
 
 ## Prerequisites
 
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 - Understand how to [create a flow](advanced-flow-create.md) from the Power Virtual Agents authoring canvas.
 - [Add input and output variables](advanced-flow-input-output.md).
 - [Configure Dataverse search for your environment](/power-platform/admin/configure-relevance-search-organization).

@@ -24,7 +24,7 @@ In this example, you'll create a flow with an input parameter and return it to a
 
 ## Prerequisites
 
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 - Understand how to [create a flow](advanced-flow-create.md) from the Power Virtual Agents authoring canvas.
 
 ## Supported parameter types

@@ -21,7 +21,7 @@ If you haven't already [created the weather forecast flow](advanced-flow-create.
 
 ## Prerequisites
 
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 - [Create a flow](advanced-flow-create.md).
 
 ## Call a flow from a topic

@@ -33,7 +33,7 @@ When you [create a flow](#create-a-flow-to-use-with-a-bot) from the Power Virtua
 
 ## Prerequisites
 
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 - [Get started with Power Automate](/power-automate/getting-started).
 
 ## Create a flow to use with a bot
