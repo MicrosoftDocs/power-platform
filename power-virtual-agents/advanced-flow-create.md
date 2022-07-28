@@ -1,8 +1,8 @@
 ---
-title: "Create a flow"
-description: "Create a Power Automate flow that provides a weather forecast."
+title: Create a flow
+description: Create a Power Automate flow that fetches a weather forecast for use with a bot.
 keywords: "PVA, flow, automate"
-ms.date: 07/19/2022
+ms.date: 07/28/2022
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -15,9 +15,19 @@ ms.collection: virtual-agent
 
 # Create a flow
 
-Launch the Power Automate portal directly from Power Virtual Agents to create flows for your bot.
+Learn how to use a cloud flow in Power Virtual Agents by giving a bot the ability to produce a weather forecast on request. In this first example, you'll create a flow that fetches a weather forecast. In the next example, you'll [call the flow as an action](advanced-use-flow.md) so the bot can respond with the forecast when a customer asks about the weather.
 
-In this example, you'll learn how to create a flow that provides a weather forecast.
+You can create a flow for use with a bot or modify an existing flow. To be suitable for bots, a Power Automate flow requires a special **Power Virtual Agents** flow trigger and response action.
+
+- Flow trigger:  **When Power Virtual Agents calls a flow**  
+
+    :::image type="content" source="media/advanced-flow-create/PVAConnectorTrigger.JPG" alt-text="Screenshot of the Power Virtual Agents flow trigger.":::
+
+- Response action:  **Return value(s) to Power Virtual Agents**  
+
+    :::image type="content" source="media/advanced-flow-create/PVAConnectorResponse.JPG" alt-text="Screenshot of the Power Virtual Agents response action.":::
+
+When you [create a flow](#create-a-flow-to-use-with-a-bot) from the Power Virtual Agents authoring canvas, the trigger and the action are added for you. When you [modify an existing flow](#modify-an-existing-flow-to-use-with-a-bot) for use with a bot, you must add the **Power Virtual Agents** trigger and response action.
 
 [!INCLUDE [Requirements for Power Automate flows](includes/flow-requirements.md)]
 
@@ -26,60 +36,100 @@ In this example, you'll learn how to create a flow that provides a weather forec
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 - [Get started with Power Automate](/power-automate/getting-started).
 
-## Create a new flow from the authoring canvas
+## Create a flow to use with a bot
 
-1. Go to the [**Topics page**](authoring-create-edit-topics.md) for the bot you want to edit.
+1. Go to the [**Topics page**](authoring-create-edit-topics.md) for your bot.
 
 1. Open the authoring canvas for the topic from which you want to call a flow.
 
 1. Select the plus (**+**) button below an existing node to add a new node.
 
-1. In the node selection window, select **Call an action** then **Create a flow**.
+1. In the node selection window, select **Call an action**, and then select **Create a flow**.
 
-    :::image type="content" source="media/advanced-flow-create/UseCreateFlowOption.jpg" alt-text="Screenshot of the Create a flow option in the Call an action menu." border="false":::
+    :::image type="content" source="media/advanced-flow-create/UseCreateFlowOption.jpg" alt-text="Screenshot of the Create a flow option in the Call an action menu.":::
 
-1. A starter flow template is opened in the [Power Automate portal](https://flow.microsoft.com) in a separate tab. The portal automatically opens in the same environment as the bot and uses the same user credentials.
+    The [Power Automate portal](https://flow.microsoft.com) opens in a new tab, with a starter flow template open for editing. The portal opens in the same environment as the bot and uses the same user credentials.
 
-    :::image type="content" source="media/advanced-flow-create/PVAConnectorTemplate.JPG" alt-text="Screenshot of Power Automate flow template." border="false":::
+    :::image type="content" source="media/advanced-flow-create/PVAConnectorTemplate.JPG" alt-text="Screenshot of the Power Automate flow template called from Power Virtual Agents.":::
 
-## Author a flow on the Power Automate portal
+1. Continue to [author the flow in Power Automate](#author-the-flow-on-the-power-automate-portal).
 
-To be suitable for bots, a Power Automate flow requires a special **Power Virtual Agents** flow trigger and response action. Both the trigger and action are automatically added when you create a flow from the [Power Virtual Agents authoring canvas](#create-a-new-flow-from-the-authoring-canvas).
+## Modify an existing flow to use with a bot
 
-- Flow trigger:  **When Power Virtual Agents calls a flow**  
+What if you already have a flow and don't want to create one from scratch to use with your bot? Add the special **Power Virtual Agents** flow trigger and response action yourself. You can open an existing flow for modification in a couple of ways.
 
-    :::image type="content" source="media/advanced-flow-create/PVAConnectorTrigger.JPG" alt-text="Screenshot of the Power Virtual Agents flow trigger." border="false":::
+### Open a flow from the authoring canvas
 
-- Response action:  **Return value(s) to Power Virtual Agents**  
+1. In a topic that's open in the Power Virtual Agents authoring canvas, select the plus (**+**) button.
 
-    :::image type="content" source="media/advanced-flow-create/PVAConnectorResponse.JPG" alt-text="Screenshot of the Power Virtual Agents response action." border="false":::
+1. Select **Call an action**.
 
-Now you'll add various actions to your flow to obtain the weather forecast.
+1. Select **View flow details** under the flow.
 
-1. Select the name of the flow to rename it. Enter `Get weather forecast` as the new name.
+    :::image type="content" source="media/advanced-flow-create/ModifyFlowInPicker.png" alt-text="Screenshot of the Modify a flow button in the action picker.":::
+
+### Open a flow from an Action node
+
+1. In a topic that's open in the Power Virtual Agents authoring canvas, select the relevant **Action** node.
+
+1. Select **View flow details**.
+
+    :::image type="content" source="media/advanced-flow-create/ModifyFlowInAction.png" alt-text="Screenshot of the Modify a flow button in an Action node.":::
+
+### Open a flow in Power Automate
+
+1. Go to the [Power Automate portal](https://flow.microsoft.com).
+
+1. Go to **Solutions** and select **Default Solution**. If you [moved your flow to another solution](#optionally-move-the-flow-to-another-solution), select that one instead.
+
+    :::image type="content" source="media/advanced-flow-create/open-solution.png" alt-text="Screenshot of the Default Solution in the Solutions list.":::
+
+1. Select the flow.
+
+    :::image type="content" source="media/advanced-flow-create/open-flow-in-solution.png" alt-text="Screenshot of the Get weather forecast flow in the Default Solution.":::
+
+### Add the Power Virtual Agents flow trigger and response action
+
+If your flow doesn't already include the special **Power Virtual Agents** flow trigger and response action, you'll need to add them before you can use the flow with your bot.
+
+1. Select **New step**.
+
+1. Search for the **Power Virtual Agents** connector and select **When Power Virtual Agents calls a flow**.
+
+1. Select **New step**.
+
+1. Search for the **Power Virtual Agents** connector and select **Return value(s) to Power Virtual Agents**.
+
+1. Select **Save**.
+
+## Author the flow on the Power Automate portal
+
+Now add actions to your flow. In the current example, the action you'll add fetches the current forecast from MSN Weather.
+
+1. Select the name of the flow and rename it **Get weather forecast**.
 
     :::image type="content" source="media/advanced-flow-create/RenameFlow.png" alt-text="Screenshot of flow name selected.":::
 
-1. Add the following flow input parameters to **Power Virtual Agents** flow trigger:
+1. Add the following input parameters to the **Power Virtual Agents** flow trigger:
 
-    - City (String)
+    - City (Text)
     - Zipcode (Number)
 
     :::image type="content" source="media/advanced-flow-create/input-params.png" alt-text="Screenshot of input parameters for Power Automate flow.":::
 
-1. Choose **Add an action** to create a new action below the **Power Virtual Agents** flow trigger.
+1. Select **Add an action** to create a new action below the **Power Virtual Agents** flow trigger.
 
     :::image type="content" source="media/advanced-flow-create/AddAction.png" alt-text="Screenshot of the Add flow action button.":::
 
-1. Enter **MSN weather** into the search box, and then select the **Get forecast for today** action from the list.
+1. Search for **MSN weather**, and then select the **Get forecast for today** action.
 
     :::image type="content" source="media/advanced-flow-create/AddMSNWeather.png" alt-text="Screenshot of the Get forecast for today action under the MSN Weather connector.":::
 
-1. A new **MSN Weather Connector** is added to the flow. Under **Location**, select **Add dynamic content**. Select **City** and **Zipcode** from the list.
+1. In the **Get forecast for today** action, in the **Location** box, select **Add dynamic content**, and then select **City** and **Zipcode**.
 
     :::image type="content" source="media/advanced-flow-create/AddLocationForMSN.png" alt-text="Screenshot of variables added to the Get forecast for today action":::
 
-1. In the **Return value(s) to Power Virtual Agents** response action, add the following output parameters with the respective variables assigned to them:
+1. In the **Return value(s) to Power Virtual Agents** action, add the following output parameters and variables:
 
     | Output Parameter Name | Type   | Variable        |
     | --------------------- | ------ | --------------- |
@@ -89,86 +139,60 @@ Now you'll add various actions to your flow to obtain the weather forecast.
 
     :::image type="content" source="media/advanced-flow-create/AddDynamicVariables.png" alt-text="Screenshot of dynamic output variables added to the flow response action.":::
 
-1. Select **Save** to save your flow.
+1. Select **Save**.
 
-## Open an existing flow
+The next step is to [turn off asynchronous responses in your flow](#turn-off-asynchronous-responses-in-the-flow).
 
-There are several ways to open an existing flow for modification.
+## Optionally move the flow to another solution
 
-### Open a flow from the authoring canvas
-
-1. Select the plus (**+**) button on the authoring canvas.
-
-1. Select **Call an action**.
-
-1. Select **View flow details** under the flow in the list.
-
-    :::image type="content" source="media/advanced-flow-create/ModifyFlowInPicker.png" alt-text="Screenshot of the Modify a flow button in the action picker." border="false":::
-
-### Open a flow from an Action node
-
-Select **View flow details** from the relevant **Action** node.
-
-:::image type="content" source="media/advanced-flow-create/ModifyFlowInAction.png" alt-text="Screenshot of the Modify a flow button in an Action node." border="false":::
-
-### Open a flow in Power Automate
+To be available to bots in your environment, flows must be stored in a [solution](/power-platform/alm/solution-concepts-alm) in Power Automate. If you don't want to use the **Default Solution**, you can move your flows to a different one.
 
 1. Go to the [Power Automate portal](https://flow.microsoft.com).
 
-1. Go to **Solutions** and select **Default Solution**. If you [moved your flow to another solution](#optionally-move-a-flow-to-another-solution) select that solution instead.
+1. Go to **Solutions** and either select an existing solution or create a solution for your flows.
 
-    :::image type="content" source="media/advanced-flow-create/open-solution.png" alt-text="Screenshot of the Default Solution in the Solutions list.":::
+    To create a solution, select **New solution**.
 
-1. Select the flow from the list.
+    :::image type="content" source="media/advanced-flow-create/NewSolution.jpg" alt-text="Screenshot of the New solution button.":::
 
-    :::image type="content" source="media/advanced-flow-create/open-flow-in-solution.png" alt-text="Screenshot of the Get weather forecast flow in the Default Solution.":::
+    Give your new solution a name, select **CDS Default Publisher** in the **Publisher** field, enter a **Version** number, and then select **Create**.
 
-## Optionally move a flow to another solution
+    :::image type="content" source="media/advanced-flow-create/NewSolution_details.jpg" alt-text="Screenshot of solution properties.":::
 
-To be available to bots in your environment, flows must be stored in a solution in Power Automate. If you don't want to use the **Default Solution** for this purpose, you can move your flows to another solution.
+1. On the **Solutions** tab, go to the solution you want to use. Select **Add existing** to add a flow to it.
 
-1. On the Power Automate portal, go to the **Solutions** tab to see the available solutions. Use any of the existing solutions or create a new solution for your flows.
+    :::image type="content" source="media/advanced-flow-create/AddExistingFlow.jpg" alt-text="Screenshot of the Add existing button.":::
 
-1. To create a new solution, select **New solution**.
+1. On the **Add existing flow** page, select the **From solutions** tab, select your flow, and then select **Add**.
 
-    :::image type="content" source="media/advanced-flow-create/NewSolution.jpg" alt-text="Screenshot of the New solution button." border="false":::
+    :::image type="content" source="media/advanced-flow-create/move-flow-from-solution.png" alt-text="Screenshot of the list existing flows in solutions.":::
 
-1. Give your new solution a name, select **CDS Default Publisher** in the **Publisher** field, enter a **Version** number, and then select **Create**.
+    To move a flow from the **My flows** tab to a solution, select **Outside solutions**, and then select **Add** to add your flow to the solution.
 
-    :::image type="content" source="media/advanced-flow-create/NewSolution_details.jpg" alt-text="Screenshot of solution properties." border="false":::
+    :::image type="content" source="media/advanced-flow-create/AddExistingFlow_details.jpg" alt-text="Screenshot of the list of existing flows outside of solutions.":::
 
-1. On the **Solutions** tab, go to the solution you want to use. Select **Add existing** to add a flow.
+## Turn off asynchronous responses in the flow
 
-    :::image type="content" source="media/advanced-flow-create/AddExistingFlow.jpg" alt-text="Screenshot of the Add existing button." border="false":::
+Flows that you want to use in a bot must return values in real time, or [synchronously](/power-automate/guide-staff-through-common-tasks-processes#when-to-use-workflows). Flows that run in the background, or asynchronously, may cause an error when your bot tries to run them. Instead of running the flow, the bot will say, "Something unexpected happened. We're looking into it. Error code: 3000."
 
-1. On the **Add existing flow** page, select the **From solutions** tab, and then select your flow. Select **Add** to add your flow to the solution.
-
-    :::image type="content" source="media/advanced-flow-create/move-flow-from-solution.png" alt-text="Screenshot of the list existing flows in solutions." border="false":::
-
-    To move a flow from the **My flows** tab to a solution, select the **Outside solutions** option. Select **Add** to add your flow to the solution.
-
-    :::image type="content" source="media/advanced-flow-create/AddExistingFlow_details.jpg" alt-text="Screenshot of the list of existing flows outside of solutions." border="false":::
-
-## Disable asynchronous responses from flows
-
-Power Virtual Agents doesn't support Power Automate flows that return values [asynchronously](/power-automate/guide-staff-through-common-tasks-processes#when-to-use-workflows). When creating a new flow from within Power Virtual Agents, this behavior is disabled by default.
-
-Flows that have the Asynchronous Response feature enabled may cause an error when your bot tries to run the flow. Instead of running the flow, the bot will say, "Something unexpected happened. We're looking into it. Error code: 3000."
-
-If you've enabled [Asynchronous Response](/azure/connectors/connectors-native-http#asynchronous-request-response-behavior), you'll need to disable it for the bot to work properly when it runs the flow.
+When you create a flow from Power Virtual Agents, [asynchronous responses](/azure/connectors/connectors-native-http#asynchronous-request-response-behavior) are turned off by default. If you modified an existing flow that has asynchronous responses turned on, you'll need to change the setting.
 
 <!-- At the time of writing, steps to find the async response setting (specifically in the PVA step/action) didn't exist in PA docs. If this has changed, please remove these steps and replace with the relevant link. -->
 
-1. [Locate and open your flow](#open-an-existing-flow).
+1. [Open your flow](#modify-an-existing-flow-to-use-with-a-bot) and find the **Return value(s) to Power Virtual Agents** step.
 
-1. In your Power Automate flow, locate the Power Virtual Agents step that returns values.
-
-1. Next to the name of the flow, select the three dots, and then select **Settings**.
+1. Select the **Menu** (**...**) icon, and then select **Settings**.
 
     :::image type="content" source="media/advanced-flow-create/async1.png" alt-text="Screenshot of an action's settings menu.":::
 
 1. Set **Asynchronous Response** to **Off**, and then select **Done**.
 
     :::image type="content" source="media/advanced-flow-create/async2.png" alt-text="Screenshot of the Asynchronous Response toggle.":::
+
+## Next steps
+
+[Call the flow as an action in your bot](advanced-use-flow.md).
+
+Learn more about [input and output variables](advanced-flow-input-output.md).
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

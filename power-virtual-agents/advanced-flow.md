@@ -1,8 +1,8 @@
 ---
-title: "Use Power Automate flows in Power Virtual Agents"
-description: "Use Power Automate flows to extend the capabilities of a bot."
+title: Use Power Automate flows in Power Virtual Agents
+description: Use Power Automate flows to extend the capabilities of your bots.
 keywords: "PVA, flow, automate"
-ms.date: 07/19/2022
+ms.date: 07/28/2022
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -15,21 +15,19 @@ ms.collection: virtual-agent
 
 # Key concepts - Use Power Automate flows in Power Virtual Agents
 
-[Power Automate](https://flow.microsoft.com) is a service that you can use to build automated processes using low-code, drag-and-drop tools. By using [cloud flows](/power-automate/overview-cloud) in Power Virtual Agents, you can extend the capabilities of your bot to automate complex activities or query back-end systems.
-
-For example, you can use flows with [end-user authentication](advanced-end-user-authentication.md) to retrieve information about a user after they've signed in.
-
-Flows are called from within topics, as a discrete **Call an action** node. You can use flows that have already been created in your [Power Apps environment](environments-first-run-experience.md), or you can create a flow from within the Power Virtual Agents [authoring canvas](authoring-create-edit-topics.md).
+Extend the capabilities of your bot with [cloud flows](/power-automate/overview-cloud) that you build in [Power Automate](https://flow.microsoft.com) using low-code, drag-and-drop tools. You can use flows that already exist in your [Power Apps environment](environments-first-run-experience.md) or create a flow from the [Power Virtual Agents authoring canvas](authoring-create-edit-topics.md). Call bot-ready flows from bot topics as a discrete **Call an action** node.
 
 [!INCLUDE [Requirements for Power Automate flows](includes/flow-requirements.md)]
 
 ## In this section
 
-| Topic                                                           | Description                                                                        |
-| --------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
-| [Create a flow](advanced-flow-create.md)                        | Create a Power Automate flow that provides a weather forecast.                     |
-| [Add input and output variables](advanced-flow-input-output.md) | Pass variables between a Power Automate flow and a Power Virtual Agents bot.       |
-| [Call a flow as an action](advanced-use-flow.md)                | Call a Power Automate flow from a bot topic using an action node.                  |
-| [Return a list of results](advanced-flow-list-of-results.md)    | Return a list of results from a Power Automate flow to a Power Virtual Agents bot. |
+The examples in this section help you learn to use flows to do more with your bots.<!--NOTE: It makes sense to me to put the two weather-forecast articles one after the other. Please change in the TOC, too.-->
+
+| Article | Description |
+| --- | --- |
+| [Create a flow](advanced-flow-create.md) | Create a Power Automate flow that provides a weather forecast. |
+| [Call a flow as an action](advanced-use-flow.md) | Call a Power Automate flow from a bot topic using an action node. |
+| [Add input and output variables](advanced-flow-input-output.md) | Pass variables between a Power Automate flow and a Power Virtual Agents bot. |
+| [Return a list of results](advanced-flow-list-of-results.md) | Return a list of results from a Power Automate flow to a Power Virtual Agents bot. |
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
