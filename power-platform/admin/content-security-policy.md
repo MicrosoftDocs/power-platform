@@ -22,18 +22,24 @@ search.app:
 ---
 # Content security policy
 
-[Content Security Policy](https://developer.mozilla.org/docs/Web/HTTP/CSP) (CSP) is currently supported in model-driven Power Apps via two organization entity attributes which control whether the CSP header is sent and, to an extent, what it contains. This setting is at the environment level, which means it would be applied to all apps in the environment once turned on. 
+[Content Security Policy](https://developer.mozilla.org/docs/Web/HTTP/CSP) (CSP) is currently supported in model-driven Power Apps via two organization entity attributes. These attributes control whether the CSP header is sent and, to an extent, what it contains. The settings are at the environment level, which means it would be applied to all apps in the environment once turned on. 
 
 > [!NOTE]
 > CSP is currently only supported in model-driven apps.  Canvas app support will reach public preview Summer 2022.
 
-- [IsContentSecurityPolicyEnabled](/powerapps/developer/data-platform/reference/entities/organization#BKMK_IsContentSecurityPolicyEnabled) controls whether the Content-Security-Policy header is sent in the base app page (main.aspx).  By default, the header is set to `script-src * 'unsafe-inline' 'unsafe-eval'; worker-src 'self' blob:; style-src * 'unsafe-inline'; font-src * data:; frame-ancestors 'self';`. Each component of this header value controls the assets that can be downloaded and is described in more detail on the Mozilla Developer Network (MDN):
-  - [script-src](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/script-src)
-  - [worker-src](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/worker-src)
-  - [style-src](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/style-src)
-  - [font-src](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/font-src)
-  - [frame-ancestors](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/frame-ancestors)
-- [ContentSecurityPolicyConfiguration](/powerapps/developer/data-platform/reference/entities/organization#BKMK_ContentSecurityPolicyConfiguration) controls the value of the frame-ancestors portion (as seen above, it is set to ‘self’ if ContentSecurityPolicyConfiguration is not set).  This setting is represented by a JSON object with the following structure – `{ "Frame-Ancestor": { "sources": [ { "source": "foo" }, { "source": "bar" } ] } }`.  This would translate into `script-src * 'unsafe-inline' 'unsafe-eval'; worker-src 'self' blob:; style-src * 'unsafe-inline'; font-src * data:; frame-ancestors 'foo' 'bar';`
+[IsContentSecurityPolicyEnabled](/powerapps/developer/data-platform/reference/entities/organization#BKMK_IsContentSecurityPolicyEnabled) controls whether the Content-Security-Policy header is sent in the base app page (main.aspx). Each component of this header value controls the assets that can be downloaded and is described in more detail on the Mozilla Developer Network (MDN). The default values are as follows:
+
+| Directive | Default value | Customizable |
+| --------- | ------------- | ------------ |
+| [script-src](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/script-src) | `* 'unsafe-inline' 'unsafe-eval'` | No |
+| [worker-src](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/worker-src) | `'self' blob:` | No |
+| [style-src](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/style-src) | `* 'unsafe-inline'` | No |
+| [font-src](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/font-src) | `* data:` | No |
+| [frame-ancestors](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/frame-ancestors) | `'self'` | Yes |
+
+This results in a default CSP of `script-src * 'unsafe-inline' 'unsafe-eval'; worker-src 'self' blob:; style-src * 'unsafe-inline'; font-src * data:; frame-ancestors 'self';`
+
+[ContentSecurityPolicyConfiguration](/powerapps/developer/data-platform/reference/entities/organization#BKMK_ContentSecurityPolicyConfiguration) controls the value of the frame-ancestors portion (as seen above, it is set to `'self'` if `ContentSecurityPolicyConfiguration` is not set).  This setting is represented by a JSON object with the following structure – `{ "Frame-Ancestor": { "sources": [ { "source": "foo" }, { "source": "bar" } ] } }`.  This would translate into `script-src * 'unsafe-inline' 'unsafe-eval'; worker-src 'self' blob:; style-src * 'unsafe-inline'; font-src * data:; frame-ancestors 'foo' 'bar';`
   - (From MDN) The HTTP Content-Security-Policy (CSP) frame-ancestors directive specifies valid parents that may embed a page using `<frame>`, `<iframe>`, `<object>`, `<embed>`, or `<applet>`.
 
 ## Configuring CSP
@@ -49,11 +55,13 @@ Steps:
 
 ```js
 async function enableFrameAncestors(sources) {
-     if (!Array.isArray(sources) || sources.some(s => typeof s !== 'string')) {
+    const baseUrl = Xrm.Utility.getGlobalContext().getClientUrl();
+
+    if (!Array.isArray(sources) || sources.some(s => typeof s !== 'string')) {
         throw new Error('sources must be a string array');
     }
 
-    const orgResponse = await fetch('/api/data/v9.1/organizations');
+    const orgResponse = await fetch(`${baseUrl}/api/data/v9.1/organizations`);
     if (!orgResponse.ok) throw new Error('Failed to retrieve org info');
     const orgs = await orgResponse.json();
     const { organizationid, contentsecuritypolicyconfiguration, iscontentsecuritypolicyenabled } = orgs.value[0];
@@ -62,7 +70,7 @@ async function enableFrameAncestors(sources) {
     console.log(`CSP Enabled?: ${iscontentsecuritypolicyenabled}`);
     console.log(`CSP Config: ${contentsecuritypolicyconfiguration}`);
 
-    const orgProperty = prop => `/api/data/v9.1/organizations(${organizationid})/${prop}`;
+    const orgProperty = prop => `${baseUrl}/api/data/v9.1/organizations(${organizationid})/${prop}`;
 
     console.log('Updating CSP configuration...')
     const config = {
@@ -111,7 +119,9 @@ Steps:
 
 ```js
 async function disableCSP() {
-    const orgResponse = await fetch('/api/data/v9.1/organizations');
+    const baseUrl = Xrm.Utility.getGlobalContext().getClientUrl();
+
+    const orgResponse = await fetch(`${baseUrl}/api/data/v9.1/organizations`);
     if (!orgResponse.ok) throw new Error('Failed to retrieve org info');
     const orgs = await orgResponse.json();
     const { organizationid, iscontentsecuritypolicyenabled } = orgs.value[0];
@@ -119,7 +129,7 @@ async function disableCSP() {
     console.log(`Organization Id: ${organizationid}`);
     console.log(`CSP Enabled?: ${iscontentsecuritypolicyenabled}`);
 
-    const orgProperty = prop => `/api/data/v9.1/organizations(${organizationid})/${prop}`;
+    const orgProperty = prop => `${baseUrl}/api/data/v9.1/organizations(${organizationid})/${prop}`;
 
     if (!iscontentsecuritypolicyenabled) {
         console.log('CSP is already disabled! Skipping update.')

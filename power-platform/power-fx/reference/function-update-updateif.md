@@ -44,7 +44,7 @@ Both **Update** and **UpdateIf** return the modified data source as a [table](/p
 
 ### Delegation
 
-[!INCLUDE [delegation-no]../../includes/delegation-no.md)]
+[!INCLUDE [delegation-no](../../includes/delegation-no.md)]
 
 ## Syntax
 

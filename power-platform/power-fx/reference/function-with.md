@@ -26,7 +26,7 @@ Calculates values and performs actions for a single [record](/power-apps/maker/c
 
 The **With** function evaluates a formula for a single record. The formula can calculate a value and/or perform actions, such as modifying data or working with a connection. Use the [**ForAll** function](function-forall.md) to evaluate a formula for all the records in a table of records.
 
-[!INCLUDE [record-scope]../../includes/record-scope.md)]
+[!INCLUDE [record-scope](../../includes/record-scope.md)]
 
 Use **With** to improve the readability of complex formulas by dividing it into smaller named sub-formulas. These named values act like simple local variables confined to the scope of the **With**. The same inline record syntax that is used with the [**UpdateContext** function](function-updatecontext.md) can be used with **With**. Using **With** is preferred over context or global variables as it is self contained, easy to understand, and can be used in any declarative formula context.
 

@@ -35,14 +35,14 @@ A table is a value in Power Apps, just like a string or a number. You can specif
 > [!NOTE]
 > The functions that this topic describes don't modify the original table. Instead, they take that table as an argument and return a new table with a transform applied. See [working with tables](/power-apps/maker/canvas-apps/working-with-tables) for more details.
 
-You can't modify the columns of a [data source](/power-apps/maker/canvas-apps/working-with-data-sources.md) by using these functions. You must modify the data at its source. You can add columns to a [collection](/power-apps/maker/canvas-apps/working-with-data-sources.md#collections) with the **[Collect](function-clear-collect-clearcollect.md)** function. See [working with data sources](/power-apps/maker/canvas-apps/working-with-data-sources) for more details.
+You can't modify the columns of a [data source](/power-apps/maker/canvas-apps/working-with-data-sources) by using these functions. You must modify the data at its source. You can add columns to a [collection](/power-apps/maker/canvas-apps/working-with-data-sources#collections) with the **[Collect](function-clear-collect-clearcollect.md)** function. See [working with data sources](/power-apps/maker/canvas-apps/working-with-data-sources) for more details.
 
 ## Description
 
 The **AddColumns** function adds a column to a table, and a formula defines the values in that column. Existing columns remain unmodified.
 
 The formula is evaluated for each record of the table.
-[!INCLUDE [record-scope]../../includes/record-scope.md)]
+[!INCLUDE [record-scope](../../includes/record-scope.md)]
 
 The **DropColumns** function excludes columns from a table. All other columns remain unmodified. **DropColumns** excludes columns, and **ShowColumns** includes columns.
 
@@ -63,7 +63,7 @@ AddColumns( RealEstateAgents,
 
 However, the output of these functions is subject to the [non-delegation record limit](/power-apps/maker/canvas-apps/delegation-overview#non-delegable-limits). In this example, only 500 records are returned even if the **RealEstateAgents** data source has 501 or more records.
 
-If you use **AddColumns** in this manner, **Filter** must make separate calls to the data source for each of those first records in **RealEstateAgents**, which causes a lot of network chatter. If **[dbo].[AllListings]** is small enough and doesn't change often, you could call the **Collect** function in [**OnStart**](signals.md#app) to cache the data source in your app when it starts. As an alternative, you could restructure your app so that you pull in the related records only when the user asks for them.
+If you use **AddColumns** in this manner, **Filter** must make separate calls to the data source for each of those first records in **RealEstateAgents**, which causes a lot of network chatter. If **[dbo](.[AllListings]** is small enough and doesn't change often, you could call the **Collect** function in [**OnStart**](signals.md#app) to cache the data source in your app when it starts. As an alternative, you could restructure your app so that you pull in the related records only when the user asks for them.
 
 ## Syntax
 

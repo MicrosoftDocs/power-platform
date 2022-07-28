@@ -26,9 +26,9 @@ Summarizes [records](/power-apps/maker/canvas-apps/working-with-tables#records) 
 
 The **Distinct** function evaluates a formula across each record of a table and returns a one-column table of the results with duplicate values removed. The name of the column is **Result**.
 
-[!INCLUDE [record-scope]../../includes/record-scope.md)]
+[!INCLUDE [record-scope](../../includes/record-scope.md)]
 
-[!INCLUDE [delegation-no-one]../../includes/delegation-no-one.md)]
+[!INCLUDE [delegation-no-one](../../includes/delegation-no-one.md)]
 
 ## Syntax
 
@@ -56,7 +56,8 @@ The **Distinct** function evaluates a formula across each record of a table and 
 
    The formula is evaluatd and the **CityPopulations** collection is created which you can show by selecting **CityPopulations** in the formula bar:
 
-   > [!div class="mx-imgBorder"] > ![CityPopulations collection shown in result view.](media/function-distinct/citypopulations-create.png)
+    > [!div class="mx-imgBorder"] 
+    > ![CityPopulations collection shown in result view.](media/function-distinct/citypopulations-create.png)
 
 1. Insert a [**Data table**](/power-apps/maker/canvas-apps/controls/control-data-table) control, and set its **Items** property to this formula:
 
@@ -66,11 +67,13 @@ The **Distinct** function evaluates a formula across each record of a table and 
 
    You can view the result of this formula in the formula bar by selecting the entire formula:
 
-   > [!div class="mx-imgBorder"] > ![Output from Distinct function shown in result view.](media/function-distinct/citypopulations-distinct.png)
+    > [!div class="mx-imgBorder"] 
+    > ![Output from Distinct function shown in result view.](media/function-distinct/citypopulations-distinct.png)
 
 1. Use the **Edit fields** link in the data table's properties pane to add the **Result** column:
 
-   > [!div class="mx-imgBorder"] > ![Output from Distinct function shown in data table.](media/function-distinct/citypopulations-datatable.png)
+    > [!div class="mx-imgBorder"] 
+    > ![Output from Distinct function shown in data table.](media/function-distinct/citypopulations-datatable.png)
 
 1. Insert a [**Label**](/power-apps/maker/canvas-apps/controls/control-text-box) control, and set its **Text** property to the formula:
 
@@ -80,6 +83,7 @@ The **Distinct** function evaluates a formula across each record of a table and 
 
    This formula sorts the results from **Distinct** with the [**Sort**](function-sort.md) function, takes the first record from the resulting table with the [**First**](function-first-last.md) function, and extracts the **Result** field to obtain just the country name.
 
-   > [!div class="mx-imgBorder"] > ![Output from Distinct function showing the first country by name.](media/function-distinct/citypopulations-first.png)
+    > [!div class="mx-imgBorder"] 
+    > ![Output from Distinct function showing the first country by name.](media/function-distinct/citypopulations-first.png)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

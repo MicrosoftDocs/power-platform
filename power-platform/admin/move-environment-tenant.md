@@ -40,7 +40,7 @@ There are no user interface changes or version changes as part of this move. You
 > - You might need to reconfigure some applications and settings after tenant-to-tenant migration, such as Microsoft Dynamics 365 for Outlook, server-side sync, SharePoint integration, or others.
 > - Geographical region changes aren't supported into or out of US GCC, US GCC High, US DoD, OCE, IND, or China.
 > - Existing source database backups won't be migrated to destination tenant.
-> - Linking a Dataverse organization to a Finance and Operations organization is not supported.
+> - Linking a Dataverse organization to a finance and operations organization is not supported.
 > - Tenant-to-tenant migration isn't supported when [Customer Lockbox](about-lockbox.md#enable-the-lockbox-policy) is enabled. You must disable Customer Lockbox to move an environment to another tenant. You can re-enable Customer Lockbox once the migration is completed.
 
 ### Supported applications and platforms

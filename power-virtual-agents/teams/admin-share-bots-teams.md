@@ -24,13 +24,14 @@ Select the version of Power Virtual Agents you're using here:
 
 Share your bot with other users so they can chat with the bot or collaborate together to author it.
 
+## Prerequisites
+
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents-teams.md).
+- To manage who can chat with the bot in your organization, the bot's [end user authentication setting](configuration-end-user-authentication-teams.md) must be configured to **Only for Teams** or **Manual**, with **Azure Active Directory** or **Azure Active Directory V2** as the provider and **Require user sign-in** enabled.  
+
 ## Share bots for users to chat with
 
 A user can always chat with a bot if it was created in the same team. You can share bots with users outside of the team with the **Share** options available in Power Virtual Agents.
-
-### Prerequisites
-
-- To manage who can chat with the bot in your organization, the bot's [end user authentication setting](configuration-end-user-authentication-teams.md) must be configured to **Only for Teams** or **Manual**, with **Azure Active Directory** or **Azure Active Directory V2** as the provider and **Require user sign-in** enabled.  
 
 ### Share bot with security groups
 

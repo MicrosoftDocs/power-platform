@@ -1,14 +1,13 @@
 ---
 title: "Important changes (deprecations) coming in Power Apps and Power Automate"
 description: Important changes (deprecations) coming in Power Apps and Power Automate 
-ms.date: 06/15/2022
+ms.date: 07/15/2022
 ms.topic: "article"
 ms.subservice: admin
 searchScope:
   - "Power Platform"  
 ms.custom:
  - dyn365-hub
-
 author: KumarVivek
 ms.author: kvivek
 ---
@@ -21,6 +20,16 @@ For deprecation information of other products, see [Other deprecation articles](
 
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability will continue to work and is fully supported until it is officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
+
+## Dynamics 365 (Preview) app for Windows is deprecated
+
+The [Microsoft Dynamics 365 (Preview)](https://apps.microsoft.com/store/detail/microsoft-dynamics-365-preview/9N0RWZ9KZZT8?hl=en-us&gl=US) app for Windows was deprecated on June 20, 2022. The app is no longer supported.  
+
+You can still run your Dynamics 365 apps on Powers Apps for Windows with the same set of features and capabilities. For more information, see [Install Powers Apps for Windows](/power-apps/mobile/windows-app-install).
+
+## Admin mode custom message deprecated 
+
+Effective July 1, 2022, the Custom message field is deprecated from the environment Edit details page.
 
 
 ## Power Apps for Windows will be deprecated and replaced with a new app

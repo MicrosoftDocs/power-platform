@@ -4,7 +4,7 @@ description: "Frequently asked questions about Power Automate licensing."
 author: PriyaKodukula
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 06/16/2022
+ms.date: 07/22/2022
 ms.author: prkoduku
 ms.reviewer: MSFTMan
 search.audienceType: 
@@ -177,7 +177,7 @@ Dynamics licenses include following Power Automate capabilities.
 - [Business process flows](./types.md#business-process-flows) within app context
 - [Custom connectors](./types.md#custom-connectors) within app context
 - [On premises gateways](./types.md#on-premises-gateway) within app context
-- [Power Platform request](./types.md#power-platform-requests) limits: Dynamics Team member gets 5K requests/day (25K requests/day during the [transition period](./types.md#transition-period)), Dynamics professional gets 10K requests/day (100K requests/day during [transition period](./types.md#transition-period)) and Dynamics Enterprise gets 20K requests/day (100K requests/day during [transition period](./types.md#transition-period)).
+- [Power Platform request](./types.md#power-platform-requests) limits: Dynamics Team member gets 6K requests/day (25K requests/day during the [transition period](./types.md#transition-period)), Dynamics professional gets 40K requests/day (100K requests/day during [transition period](./types.md#transition-period)) and Dynamics Enterprise gets 40K requests/day (100K requests/day during [transition period](./types.md#transition-period)).
 
 The following Power Automate capabilities aren't included in Dynamics licenses.
 
