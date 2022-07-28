@@ -21,7 +21,7 @@ Extend the capabilities of your bot with [cloud flows](/power-automate/overview-
 
 ## In this section
 
-The examples in this section help you learn to use flows to do more with your bots.<!--NOTE: It makes sense to me to put the two weather-forecast articles one after the other. Please change in the TOC, too.-->
+The examples in this section help you learn to use flows to do more with your bots.
 
 | Article | Description |
 | --- | --- |
