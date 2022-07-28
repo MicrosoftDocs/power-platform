@@ -2,7 +2,7 @@
 title: Use Power Automate flows in Power Virtual Agents
 description: Use Power Automate flows to extend the capabilities of your bots.
 keywords: "PVA, flow, automate"
-ms.date: 07/27/2022
+ms.date: 07/28/2022
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -15,9 +15,7 @@ ms.collection: virtual-agent
 
 # Key concepts - Use Power Automate flows in Power Virtual Agents
 
-[Power Automate](https://flow.microsoft.com) is a service that you can use to build automated workflows using low-code, drag-and-drop tools. [Cloud flows](/power-automate/overview-cloud) can extend the capabilities of your bot to automate complex activities or query back-end systems. For example, flows with [user authentication](advanced-end-user-authentication.md) can retrieve information about users after they've signed in.
-
-Call flows from topics as a discrete **Call an action** node. You can use flows that already exist in your [Power Apps environment](environments-first-run-experience.md) or create a flow from the Power Virtual Agents [authoring canvas](authoring-create-edit-topics.md).
+Extend the capabilities of your bot with [cloud flows](/power-automate/overview-cloud) that you build in [Power Automate](https://flow.microsoft.com) using low-code, drag-and-drop tools. You can use flows that already exist in your [Power Apps environment](environments-first-run-experience.md) or create a flow from the [Power Virtual Agents authoring canvas](authoring-create-edit-topics.md). Call bot-ready flows from bot topics as a discrete **Call an action** node.
 
 [!INCLUDE [Requirements for Power Automate flows](includes/flow-requirements.md)]
 

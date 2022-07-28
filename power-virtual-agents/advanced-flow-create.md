@@ -2,7 +2,7 @@
 title: Create a flow
 description: Create a Power Automate flow that fetches a weather forecast for use with a bot.
 keywords: "PVA, flow, automate"
-ms.date: 07/27/2022
+ms.date: 07/28/2022
 ms.service: power-virtual-agents
 ms.topic: article
 author: iaanw
@@ -105,15 +105,15 @@ If your flow doesn't already include the special **Power Virtual Agents** flow t
 
 ## Author the flow on the Power Automate portal
 
-Now you'll add actions to your flow to fetch the current forecast from MSN Weather.
+Now add actions to your flow. In the current example, the action you'll add fetches the current forecast from MSN Weather.
 
-1. Select the name of the flow and rename it `Get weather forecast`.
+1. Select the name of the flow and rename it **Get weather forecast**.
 
     :::image type="content" source="media/advanced-flow-create/RenameFlow.png" alt-text="Screenshot of flow name selected.":::
 
-1. Add the following flow input parameters to the **Power Virtual Agents** flow trigger:
+1. Add the following input parameters to the **Power Virtual Agents** flow trigger:
 
-    - City (String)
+    - City (Text)
     - Zipcode (Number)
 
     :::image type="content" source="media/advanced-flow-create/input-params.png" alt-text="Screenshot of input parameters for Power Automate flow.":::
@@ -126,11 +126,11 @@ Now you'll add actions to your flow to fetch the current forecast from MSN Weath
 
     :::image type="content" source="media/advanced-flow-create/AddMSNWeather.png" alt-text="Screenshot of the Get forecast for today action under the MSN Weather connector.":::
 
-1. In the new **MSN Weather Connector** action, in the **Location** box, select **Add dynamic content**, and then select **City** and **Zipcode**.
+1. In the **Get forecast for today** action, in the **Location** box, select **Add dynamic content**, and then select **City** and **Zipcode**.
 
     :::image type="content" source="media/advanced-flow-create/AddLocationForMSN.png" alt-text="Screenshot of variables added to the Get forecast for today action":::
 
-1. In the **Return value(s) to Power Virtual Agents** response action, add the following output parameters and variables:
+1. In the **Return value(s) to Power Virtual Agents** action, add the following output parameters and variables:
 
     | Output Parameter Name | Type   | Variable        |
     | --------------------- | ------ | --------------- |
@@ -164,9 +164,7 @@ To be available to bots in your environment, flows must be stored in a [solution
 
     :::image type="content" source="media/advanced-flow-create/AddExistingFlow.jpg" alt-text="Screenshot of the Add existing button.":::
 
-1. On the **Add existing flow** page, select the **From solutions** tab, and then select your flow.
-
-1. Select **Add**.
+1. On the **Add existing flow** page, select the **From solutions** tab, select your flow, and then select **Add**.
 
     :::image type="content" source="media/advanced-flow-create/move-flow-from-solution.png" alt-text="Screenshot of the list existing flows in solutions.":::
 
@@ -196,5 +194,7 @@ When you create a flow from Power Virtual Agents, [asynchronous responses](/azur
 ## Next steps
 
 [Call the flow as an action in your bot](advanced-use-flow.md).
+
+Learn more about [input and output variables](advanced-flow-input-output.md).
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

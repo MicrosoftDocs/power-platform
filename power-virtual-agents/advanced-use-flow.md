@@ -1,8 +1,8 @@
 ---
-title: "Call a flow as an action"
-description: "Call a Power Automate flow from a bot topic using an action node."
+title: Call a flow as an action
+description: Call a Power Automate flow from a bot topic using an action node.
 keywords: "PVA, flow, automate"
-ms.date: 07/19/2022
+ms.date: 07/28/2022
 ms.service: power-virtual-agents
 ms.topic: article
 author: v-alarioza
@@ -15,17 +15,16 @@ ms.collection: virtual-agent
 
 # Call a flow as an action
 
-Call a Power Automate flow from a bot topic using the **Call an action** node.
+Learn how to use a cloud flow in Power Virtual Agents by giving a bot the ability to produce a weather forecast on request. In the previous example, you [created a flow](advanced-flow-create.md) that fetches a weather forecast. In this example, you'll use a **Call an action** node in a bot topic to call the flow when a customer asks about the weather.
 
-These instructions use adding weather information to a flow as an example. If you haven't already, follow the steps under the [Author a flow on the Power Automate portal](advanced-flow-create.md#author-a-flow-on-the-power-automate-portal) to create a weather forecast flow.
+If you haven't already [created the weather forecast flow](advanced-flow-create.md), do that now.
 
 ## Prerequisites
 
 - [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
 - [Create a flow](advanced-flow-create.md).
-- [Add input and output variables](advanced-flow-input-output.md).
 
-## Call a flow from within a topic
+## Call a flow from a topic
 
 1. In Power Virtual Agents, go to the [**Topics page**](authoring-create-edit-topics.md) for the bot you want to edit.
 
@@ -38,55 +37,59 @@ These instructions use adding weather information to a flow as an example. If yo
     - get weather
     - what's the weather
 
-    :::image type="content" source="media/advanced-use-flow/create-get-weather-topic.png" alt-text="Create a new topic." border="false":::
+    :::image type="content" source="media/advanced-use-flow/create-get-weather-topic.png" alt-text="Screenshot of trigger phrases in a new topic.":::
 
-1. By default, a message node is created. Enter **I can help you with that** into the node, and then select the plus (**+**) button under it to add a new node.
+    A message node is created.
 
-    :::image type="content" source="media/advanced-use-flow/handoff-add-node.png" alt-text="Screenshot of adding a node." border="false":::
+1. Enter **I can help you with that** in the message node, and then select the plus (**+**) button under it to add a new node.
 
-1. Add two new **Ask a question** nodes to ask users for the **City (String)** and **Zipcode (Number)** inputs.
+1. Add two **Ask a question** nodes for the **City** and **Zipcode** inputs the flow needs, as shown in the following example.
 
-    :::image type="content" source="media/advanced-use-flow/TopicDialogQuestions.jpg" alt-text="Add Topic Dialog questions." border="false":::
+    :::image type="content" source="media/advanced-use-flow/TopicDialogQuestions.jpg" alt-text="Screenshot of City and Zipcode question nodes in a topic.":::
 
-1. Select the plus (**+**) button under the question nodes to add a new node. In the node selection window, select **Call an action**, and then select the flow you created earlier called **Get weather forecast**.
+    Note the names of the variables associated with each response, `Var1` for **City** and `Var2` for **Zipcode**. You can leave them as-is or select the pencil icon and give them a more meaningful name such as "City" and "Zipcode."
 
-    :::image type="content" source="media/advanced-use-flow/SelectFlowGetWeatherForecast.png" alt-text="Call action." border="false":::
+1. Select the plus (**+**) button under the **Zipcode** question node.
 
-1. Map the flow input blocks to the output variables from the question nodes. **City (text)** gets its value from `Var1 (text)` and **Zipcode (number)** gets its value from `Var2 (number)`.
+1. In the node selection window, select **Call an action**, and then select the flow you created earlier, **Get weather forecast**.
 
-1. Under the flow's node, add a **Message** node and then enter a message that uses the flow's outputs. For example:
+    :::image type="content" source="media/advanced-use-flow/SelectFlowGetWeatherForecast.png" alt-text="Screenshot of a Call an action node with the Get weather forecast flow highlighted.":::
+
+1. Assign the flow inputs to the output variables from the question nodes. **City (text)** gets its value from `Var1` and **Zipcode (number)** gets its value from `Var2`. If you changed the names of the variables, enter the new names instead.
+
+1. Under the flow node, add a **Message** node, and then enter a message that uses the flow's outputs. For example:
 
     **Today's forecast for `(x)location`:`{x}day_summary`.
     Chance of rain is `{x}chance_of_rain`%**
 
-    :::image type="content" source="media/advanced-use-flow/ActionNodeGetWeatherForecast.png" alt-text="Input the variables." border="false":::
+    :::image type="content" source="media/advanced-use-flow/ActionNodeGetWeatherForecast.png" alt-text="Screenshot of the flow inputs and outputs and the outputs used in a message node.":::
 
-1. Select **Save** to save your topic.
+1. Select **Save**.
 
-## Modify a flow on the Power Virtual Agents authoring canvas
+## Manage a flow used in a bot topic
 
-Using the node's context menu, you'll see the following options to manage the flow in your dialog:
+After you've called a flow from an action node in a bot topic, you can use the node menu to manage the flow. The Power Virtual Agents authoring canvas gives you three options:
 
-:::image type="content" source="media/advanced-use-flow/advanced-flow-nodemanage.png" alt-text="Modify flow from the authoring canvas.":::
+- **Delete**: Select to permanently delete the node, and the flow, from the topic.  
 
-- **Delete**: This will permanently delete the node that runs the flow, which could disrupt the functionality of the dialog.  
+- **Refresh flow**: If you've made changes to the flow in the Power Automate portal, select to reload and validate the flow in the topic. You'll need to fix any problems with the flow before you can save the topic.
 
-- **Refresh flow**: If changes have been made to a flow in the Power Automate portal, select this to reload the flow in the Power Virtual Agents authoring canvas. The flow will then be validated, and any problems detected will need to be fixed before you can save.
+- **Replace flow**: Select to open the action picker, where you can select or create a different flow.
 
-- **Replace flow**: This will show the action picker, allowing you to select or create a different flow to use in your dialog.
+:::image type="content" source="media/advanced-use-flow/advanced-flow-nodemanage.png" alt-text="Screenshot of flow options in the Power Virtual Agents authoring canvas.":::
 
 ## Test your flow and topic
 
-In the **Test bot** pane, start a conversation with the bot by typing in a trigger phrase for the topic that contains the flow.
+It's a good idea to test the flow and the topic that calls it.
 
-Enter your city and zip code at the prompt to get today's weather forecast from the bot.
+In the **Test bot** pane, type one of the topic's trigger phrases to start a conversation with the bot. Enter your city and zip code when the bot asks for them. Make sure the bot returns today's weather forecast and your message looks the way you expect.
 
-:::image type="content" source="media/advanced-use-flow/GetWeatherE2E.png" alt-text="Test Dialog." border="false":::
+:::image type="content" source="media/advanced-use-flow/GetWeatherE2E.png" alt-text="Screenshot of testing a bot.":::
 
 ## Troubleshoot your bot
 
-[Test your bot](authoring-test-bot.md) when you make changes to your topics and flows, to ensure everything is working as expected. When a bot encounters a problem during a conversation, it will respond with an [error message](error-codes.md).
+[Test your bot](authoring-test-bot.md) when you make changes to topics and flows to make sure everything is working. If the bot encounters a problem during a conversation, it will respond with an [error message](error-codes.md).
 
-Most flow-related issues can be found in the [Flow Checker](/power-automate/error-checker), but any issues on the authoring canvas will appear in [topic checker](authoring-topic-management.md#topic-errors).
+You'll find most flow-related issues in the [Flow Checker](/power-automate/error-checker). Any issues on the authoring canvas will appear in the [topic checker](authoring-topic-management.md#topic-errors).
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
