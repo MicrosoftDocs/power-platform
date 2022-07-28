@@ -39,9 +39,6 @@ Tables configured to use the *Read-only Grid (Default)* control are replaced wit
 
 When the Power Apps read-only grid is originally enabled, the jump bar row is not visible; however, makers can re-enable this as needed. More information: [Configure the Power Apps read-only grid control](/power-apps/maker/model-driven-apps/power-apps-grid-control#configure-the-power-apps-read-only-grid-control)
 
-### Action required by you
-
-None currently.
 
 ## Dynamics 365 (Preview) app for Windows is deprecated
 
