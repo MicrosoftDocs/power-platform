@@ -34,6 +34,51 @@ The core components solution is required for the nurture components solution to 
     1. If [Installing to Dataverse for Teams Environment](faq.md#installing-a-solution-in-a-dataverse-for-teams-environment) – use the solution file from the download called  CenterOfExcellenceNurtureComponents_x_x_x_xx_managed.zip.
 1. Leave all environment variables blank on import.
 
+## Set up video hub components
+
+The video hub has two apps:
+
+1. Video hub - admin: this is a model driven app, designed for administrators to add content, moderate comments and curate shared playlists.
+1. Video hub: this is the canvas app that all users access.
+
+### Review and enable video hub canvas app features
+
+The canvas app has two features that can be enabled:
+
+1. Comments
+2. Related video
+
+Either, or both can be enabled by setting the following variables in the apps OnStart event. These variables control the visibility of the related components in the canvas app.
+
+- **gloCommentsEnabled**: true to enable, false to disable.
+- **gloRelatedVideoEnabled**: true to enable, false to disable.
+
+![Set the variables in OnStart to enable or disable features.](media/App-OnStart-Variables.png "Set the variables in OnStart to enable or disable features")
+
+#### Comments
+
+When enabled, video hub users will be able to comment on selected videos. Comment moderation is managed through the admin app - comments must be approved prior to them becoming visible in the video hub.
+
+Approve comments in the admin app by 
+![Approve comments](media/Approve-or-reject-comment.png)
+
+#### Related video
+
+When enabled, video hub users will see a list of similar videos to the one that they've selected. This is filtered by the 'content category' value of content.  
+
+![Related video enabled](media/Video-hub-RelatedVideoEnabled.png)
+
+### Share apps with admins and makers
+
+The video hub components consist of two apps:
+
+- [**Video hub - admin**](nurture-components.md#video-hub---admin) app to manage content, playlists and comments. Share this app with other admins, and assign them the Power Platform SR security role.
+- [**Video hub**](nurture-components.md#video-hub) canvas app for video content. Share this app with your makers and assign them the Power Platform SR security role.
+
+More information:
+
+- [Share a canvas app in Power Apps](faq.md#share-an-app-from-a-production-environment)
+
 ## Set up training in a day components
 
 ### Update environment variables values

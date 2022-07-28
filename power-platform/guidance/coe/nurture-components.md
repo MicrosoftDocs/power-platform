@@ -8,7 +8,7 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/21/2022
 ms.subservice: guidance
-ms.author: mapichle
+ms.author: mapichle, stjeffer
 ms.reviewer: jimholtz
 search.audienceType: 
   - admin
@@ -22,6 +22,50 @@ search.app:
 An essential part of establishing a Center of Excellence (CoE) is nurturing your makers and an internal community. You'll want to share best practices and templates, and onboard new makers. The assets in this solution can help you develop a strategy for this motion.   More information: [Set up nurture components](setup-nurture-components.md) and [Watch](https://www.youtube.com/embed/StqxBgbt_ZM) how to use the core components solution.
 
 The CoE nurture components solution contains assets relevant to everyone in the organization: admins, makers, in addition to users of apps and flows. More information: [Set up nurture components](setup-nurture-components.md)
+
+## Video hub components
+
+### Tables
+
+| Name | Description |
+|------|--------------|
+| Community hub content | Represents video content that is displayed or available via search/ query in the video hub canvas app. |
+| Community hub comment | Represents comments that video hub users have made.  The 'comment status' column controls which comments are approved and viewable in the video hub canvas app. |
+| Playlist | Represents a collection of community hub contents.  Playlists are grouped videos. The playlist type column currently defines two types of playlist: shared, or private. Shared playlist are viewable to all users, whereas private playlists will be available to the playlist creator (this is in development). |
+| Playlist item | Represents the relationship between a playlist and community hub content (video). |
+| Champion profile | Represents a champion in your organization. A champion profile is displayed on the start screen of the video hub canvas app. |
+
+### Apps
+
+#### Video hub - admin
+
+This is a model driven app, designed for administrators and/ or moderators of the video hub.  Users of this app can add video content, manage comment status and playlists.
+
+![Video hub - admin](media/Video-hub-admin-app.png)
+
+**Permission**: Share with CoE admins, community leads or champions community.
+
+**Prerequisite**: This app uses Microsoft Dataverse. If you have installed this solution in a Production environment, end users need to have a Per User license, or the app needs to be assigned a Per App license, or the environment needs to be covered by pay-as-you-go.
+
+#### Video hub
+
+This is the canvas app that users visit for useful video content.
+
+![Related video enabled](media/Video-hub-start-screen.png) 
+
+Content is grouped in one of three in-built categories:
+
+- How-to videos
+- Community calls
+- Success stories
+
+Aside from providing a centralized hub for enterprise video content, administrators can create curated playlists. Playlists are a useful way of grouping related videos for end users.
+
+![Playlist screen](media/Video-hub-playlist-all.png)
+
+Currently, internal (Stream) videos, and external (YouTube) are the only two types of video available in the app.
+
+**Prerequisite**: This app uses Microsoft Dataverse. If you have installed this solution in a Production environment, end users need to have a Per User license, or the app needs to be assigned a Per App license, or the environment needs to be covered by pay-as-you-go.
 
 ## Training in a day components
 
