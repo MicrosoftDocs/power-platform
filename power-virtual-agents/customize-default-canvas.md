@@ -45,7 +45,7 @@ Lastly, you can [change the name and bot icon](#change-the-bot-name-and-icon) (w
 ## Change the bot name and icon
 
 > [!IMPORTANT]
-> If you are using a PVA bot in [Omnichannel for Customer Service](https://docs.microsoft.com/en-us/dynamics365/customer-service/configure-bot-virtual-agent), the bot name is defined by the Azure portal registration. Make sure the App ID registration name is the one you want displayed to your customers.
+> If your bot is connected to [Omnichannel for Customer Service](configuration-hand-off-omnichannel.md), the bot's name is defined by the **Display name** property in the Azure portal registration. 
 
 You can change the bot's name and icon. This will affect the icon in all channels where you publish your bot.
 
