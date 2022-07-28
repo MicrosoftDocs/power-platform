@@ -52,7 +52,7 @@ When you [create a flow](#create-a-flow-to-use-with-a-bot) from the Power Virtua
 
     :::image type="content" source="media/advanced-flow-create/PVAConnectorTemplate.JPG" alt-text="Screenshot of the Power Automate flow template called from Power Virtual Agents.":::
 
-1. Continue to [author the flow in Power Automate](#author-a-flow-on-the-power-automate-portal).
+1. Continue to [author the flow in Power Automate](#author-the-flow-on-the-power-automate-portal).
 
 ## Modify an existing flow to use with a bot
 
@@ -80,7 +80,7 @@ What if you already have a flow and don't want to create one from scratch to use
 
 1. Go to the [Power Automate portal](https://flow.microsoft.com).
 
-1. Go to **Solutions** and select **Default Solution**. If you [moved your flow to another solution](#optionally-move-a-flow-to-another-solution), select that one instead.
+1. Go to **Solutions** and select **Default Solution**. If you [moved your flow to another solution](#optionally-move-the-flow-to-another-solution), select that one instead.
 
     :::image type="content" source="media/advanced-flow-create/open-solution.png" alt-text="Screenshot of the Default Solution in the Solutions list.":::
 
@@ -91,7 +91,6 @@ What if you already have a flow and don't want to create one from scratch to use
 ### Add the Power Virtual Agents flow trigger and response action
 
 If your flow doesn't already include the special **Power Virtual Agents** flow trigger and response action, you'll need to add them before you can use the flow with your bot.
-<!-- I think this is what the instructions for opening an existing flow are for, to cover situations where the flow already exists and the user wants to add it to a bot. The flow would not automatically have the PVA trigger and action, right? So these steps need to be here. They may need to be fleshed out a bit; for instance, would it be clear to the user when in the flow to add the trigger and action? -->
 
 1. Select **New step**.
 
@@ -142,11 +141,11 @@ Now add actions to your flow. In the current example, the action you'll add fetc
 
 1. Select **Save**.
 
-The next step is to [turn off asynchronous responses in your flow](#turn-off-asynchronous-responses-in-your-flow).
+The next step is to [turn off asynchronous responses in your flow](#turn-off-asynchronous-responses-in-the-flow).
 
 ## Optionally move the flow to another solution
 
-To be available to bots in your environment, flows must be stored in a [solution](power-platform/alm/solution-concepts-alm) in Power Automate. If you don't want to use the **Default Solution**, you can move your flows to a different one.
+To be available to bots in your environment, flows must be stored in a [solution](/power-platform/alm/solution-concepts-alm) in Power Automate. If you don't want to use the **Default Solution**, you can move your flows to a different one.
 
 1. Go to the [Power Automate portal](https://flow.microsoft.com).
 
@@ -179,9 +178,8 @@ Flows that you want to use in a bot must return values in real time, or [synchro
 When you create a flow from Power Virtual Agents, [asynchronous responses](/azure/connectors/connectors-native-http#asynchronous-request-response-behavior) are turned off by default. If you modified an existing flow that has asynchronous responses turned on, you'll need to change the setting.
 
 <!-- At the time of writing, steps to find the async response setting (specifically in the PVA step/action) didn't exist in PA docs. If this has changed, please remove these steps and replace with the relevant link. -->
-<!-- NOTE from Rhana: I just looked. Still not there. -->
 
-1. [Open your flow](#open-an-existing-flow) and find the **Return value(s) to Power Virtual Agents** step.
+1. [Open your flow](#modify-an-existing-flow-to-use-with-a-bot) and find the **Return value(s) to Power Virtual Agents** step.
 
 1. Select the **Menu** (**...**) icon, and then select **Settings**.
 
