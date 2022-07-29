@@ -1,8 +1,8 @@
 ---
-title: "Customer data access consent and support environment creation"
-description: "Learn about support environments created in your tenant by Microsoft to resolve customer issues. These non-production environments are managed by system admins."
+title: Support environments and consent to access customer data
+description: Understand why Microsoft Support may need your consent to access your customer data and create a support environment in your tenant to resolve an issue.
 ms.custom: ""
-ms.date: 07/26/2022
+ms.date: 07/28/2022
 ms.reviewer: "yinkafatona"
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -23,9 +23,11 @@ search.app:
   - Flow
 ---
 
-# Customer data access consent and support environment creation
+# Support environments and consent to access customer data
 
-To successfully investigate and/or troubleshoot issues associated with a support request, Microsoft Support may need to access customer data associated with your tenant and/or environment. The troubleshooting could also include the replicating of the environment with or without data for testing purposes. A replicated environment ([a support environment](#what-are-support-environments)), is sometimes required to successfully reproduce an issue and/or to evaluate a solution without impact to the production environment. Microsoft respects your privacy and puts you in control over the level of consent you allow as part of providing support. Allowing customer data access with or without allowing the replication of your environment at support request creation eliminates unnecessary delays incurred during issue resolution. The consent is temporary and can be revoked if needed. With consent, Microsoft Support is given customer data access and/or environment copy access for troubleshooting purposes and/or resolving the technical issue described in the Microsoft Support case.
+To investigate and troubleshoot issues for which you've requested support, Microsoft may need to access customer data in your tenant or environment. We may also need to replicate the environment in your tenant, with or without data, for testing purposes. We can reproduce an issue or evaluate a solution in a replicated [support environment](#what-are-support-environments) without affecting your production environment. We will never access your customer data or replicate your environment without your consent. Microsoft respects your privacy and puts you in control of the level of consent you grant as part of receiving support.
+
+To eliminate delays in resolving an issue, you can give your consent at the time you request support. Your consent is temporary, and you can revoke it at any time.
 
 ## Consent information
 
@@ -44,7 +46,7 @@ We present four consent options at support request creation time with three of t
 
 ### Can I revoke consent?
 
-You can deny consent at ticket creation time by selecting “Do not allow access to diagnostic information” or you can revoke it afterwards by updating the **Consent** field value in the ticket settings.  The support environment will expire within seven days and/or once the support request is resolved closed.  However, you can delete a support environment at any time. 
+You can deny consent at ticket creation time by selecting "Do not allow access to diagnostic information" or you can revoke it afterwards by updating the **Consent** field value in the ticket settings.  The support environment will expire within seven days and/or once the support request is resolved closed.  However, you can delete a support environment at any time. 
 
 ### How long does the consent last? 
 
@@ -69,7 +71,7 @@ A support environment is a special kind of non-production Dataverse-based enviro
 ### What data is in a support environment? 
 
 - A support environment will initially contain attributes and customizations with no customer data.
-- Support environments are created in the customer’s tenant and will be visible to administrators in the Power Platform admin center.
+- Support environments are created in the customer's tenant and will be visible to administrators in the Power Platform admin center.
 - A support environment can be either a minimal or a full copy of the customer environment.
 - A minimal support environment doesn't contain customer data while a full support environment does contain customer data.
 
@@ -99,7 +101,7 @@ Yes.
 
 To assist with diagnosing and resolving a support issue, you can grant Microsoft Support consent to access customer data and/or replicate your production environment as a [minimal](copy-environment.md#copy-over-customizations-and-schemas-only) or a [full](copy-environment.md#copy-over-everything) copy of the environment with the issue. 
 
-**Updated consent on ‘new support request’ form**    
+**Updated consent on 'new support request' form**    
 
 :::image type="content" source="media/support-allow-access.png" alt-text="Allow access for advanced investigation and creation of support environment.":::
 
