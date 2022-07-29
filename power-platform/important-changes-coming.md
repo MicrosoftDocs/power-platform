@@ -25,12 +25,11 @@ Admins and IT professionals can use this information to prepare for future relea
 
 ## Internet Explorer 11 support for Dynamics 365 and Microsoft Power Platform is deprecated
 
-> [!IMPORTANT]
-> With 2022 release wave 2, Internet Explorer 11 will be blocked. Please switch to a modern browser.
-
-Effective December 2020, Microsoft Internet Explorer 11 support for Microsoft Dynamics 365 and Microsoft Power Platform is deprecated, and Internet Explorer 11 won’t be supported after August  2021. 
-
-This will impact customers who use Dynamics 365 and Microsoft Power Platform products that are designed to be used through an Internet Explorer 11 interface. After August 2021, Internet Explorer 11 won't be supported for such Dynamics 365 and Microsoft Power Platform products. We recommend that customers transition to Microsoft Edge. 
+Internet Explorer 11 support for Dynamics 365 and Microsoft Power Platform is deprecated. 
+ 
+Dynamics 365 and Microsoft Power Platform will be blocked in Internet Explorer starting October 31st. From early October 2022, users will be redirected to Microsoft Edge if they have Edge currently installed on their device.  Otherwise, they will receive a non-dismissible message informing them why they are blocked and to try using the site on Microsoft Edge. Starting October 31st, Internet Explorer will be blocked on Dynamics 365 and Microsoft Power Platform and users will see a blocking message informing them to use Microsoft Edge. If users are trying to access Dynamics 365 and Microsoft Power Platform on a Microsoft Edge version that is no longer supported, they will be prompted to use the latest version of Edge. 
+ 
+We recommend that customers transition to Microsoft Edge. 
 
 More information: [Support end for Internet Explorer](admin/support-end-internet-explorer.md).
 
