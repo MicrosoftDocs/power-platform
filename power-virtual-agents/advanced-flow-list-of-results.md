@@ -77,7 +77,7 @@ If you already have an Account table with data, skip this step and move on to [C
 
 ## Create a flow
 
-1. On the authoring canvas, select the plus (**+**) icon. Select **Call an action**, and then select **Create a flow**.
+1. On the authoring canvas, select **Add node** (**+**). Select **Call an action**, and then select **Create a flow**.
 
 1. In the Power Automate portal, name the flow **Search Account**.
 
@@ -172,7 +172,7 @@ The **Search rows** action returns the **List of rows** variable, which contains
 
 ## Call the flow from Power Virtual Agents
 
-1. On the Power Virtual Agents authoring canvas, select the plus (**+**) icon, and then select **Call an action**.
+1. On the Power Virtual Agents authoring canvas, select **Add node** (**+**), and then select **Call an action**.
 
 1. Select the flow you created earlier, **Search Account**.
 

@@ -42,7 +42,7 @@ When you [create a flow](#create-a-flow-to-use-with-a-bot) from the Power Virtua
 
 1. Open the authoring canvas for the topic from which you want to call a flow.
 
-1. Select the plus (**+**) button below an existing node to add a new node.
+1. Select **Add node** (**+**) below an existing node to add a new node.
 
 1. In the node selection window, select **Call an action**, and then select **Create a flow**.
 
@@ -60,7 +60,7 @@ What if you already have a flow and don't want to create one from scratch to use
 
 ### Open a flow from the authoring canvas
 
-1. In a topic that's open in the Power Virtual Agents authoring canvas, select the plus (**+**) button.
+1. In a topic that's open in the Power Virtual Agents authoring canvas, select **Add node** (**+**).
 
 1. Select **Call an action**.
 

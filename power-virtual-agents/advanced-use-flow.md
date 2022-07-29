@@ -41,7 +41,7 @@ If you haven't already [created the weather forecast flow](advanced-flow-create.
 
     A message node is created.
 
-1. Enter **I can help you with that** in the message node, and then select the plus (**+**) button under it to add a new node.
+1. Enter **I can help you with that** in the message node, and then select **Add node** (**+**) under it to add a new node.
 
 1. Add two **Ask a question** nodes for the **City** and **Zipcode** inputs the flow needs, as shown in the following example.
 
@@ -49,7 +49,7 @@ If you haven't already [created the weather forecast flow](advanced-flow-create.
 
     Note the names of the variables associated with each response, `Var1` for **City** and `Var2` for **Zipcode**. You can leave them as-is or select the pencil icon and give them a more meaningful name such as "City" and "Zipcode."
 
-1. Select the plus (**+**) button under the **Zipcode** question node.
+1. Select **Add node** (**+**) under the **Zipcode** question node.
 
 1. In the node selection window, select **Call an action**, and then select the flow you created earlier, **Get weather forecast**.
 
