@@ -1,6 +1,6 @@
 ---
-title: "Microsoft Power Platform automation maturity model details | Microsoft Docs"
-description: "Goals, indicators, and learning resources for each capability at each level of automation maturity for enterprises implementing RPA or hyperautomation."
+title: Microsoft Power Platform automation maturity model details
+description: Goals, indicators, and learning resources for each capability at each level of automation maturity for enterprises implementing RPA or hyperautomation.
 author: ashVancouver
 
 ms.subservice: guidance
@@ -15,7 +15,7 @@ search.app:
   - Powerplatform
 ---
 
-# Power Platform automation maturity model: Details
+# Power Platform automation maturity model details
 
 The following sections present detailed characteristics of an organization at [each maturity level of the Power Platform automation maturity model](automation-maturity-model-overview.md) for each type of capability.
 
