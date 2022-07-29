@@ -44,6 +44,9 @@ Lastly, you can [change the name and bot icon](#change-the-bot-name-and-icon) (w
 
 ## Change the bot name and icon
 
+> [!IMPORTANT]
+> If your bot is connected to [Omnichannel for Customer Service](configuration-hand-off-omnichannel.md), the bot's name is defined by the **Display name** property in the Azure portal registration. 
+
 You can change the bot's name and icon. This will affect the icon in all channels where you publish your bot.
 
 1. Select **Manage** on the side pane, and then go to the **Details** tab.
