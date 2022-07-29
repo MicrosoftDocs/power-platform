@@ -4,7 +4,7 @@ description: If you're using a pay-as-you-go plan, three meters determine how mu
 author: Kavishi
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/15/2022
+ms.date: 07/29/2022
 ms.subservice: admin
 ms.author: kaagar
 ms.reviewer: jimholtz 
@@ -34,7 +34,7 @@ When you choose to use pay-as-you-go, usage of Power Platform services is billed
 For detailed pricing information, see [Power Apps and Power Automate pricing.](https://powerapps.microsoft.com/pricing/)
 
 > [!NOTE]
-> In May 2022, we will release a preview of the Power Platform requests meter. During this preview we will report on usage of Power Platform requests, however, we will not bill for this usage until we reach general availability (GA) for this meter. If you link an environment to an Azure subscription, users and flows in the environment can consume more than their entitled usage without being throttled or paying for overages.
+> In June 2022, we released a preview of the Power Platform requests meter. During this preview we will report on usage of Power Platform requests, however, we will not bill for this usage until we reach general availability (GA) for this meter. If you link an environment to an Azure subscription, users and flows in the environment can consume more than their entitled usage without being throttled or paying for overages.
 
 ### Power Apps per-app meter 
 
@@ -182,7 +182,7 @@ Example pricing
 ### Power Platform request meter (coming soon)
 
 > [!NOTE]
-> In May 2022, we will release a preview of the Power Platform requests meter. During this preview we will report on usage of Power Platform requests, however, we will not bill for this usage until we reach general availability (GA) for this meter. If you link an environment to an Azure subscription, users and flows in the environment can consume more than their entitled usage without being throttled or paying for overages.
+> In June 2022, we released a preview of the Power Platform requests meter. During this preview we will report on usage of Power Platform requests, however, we will not bill for this usage until we reach general availability (GA) for this meter. If you link an environment to an Azure subscription, users and flows in the environment can consume more than their entitled usage without being throttled or paying for overages.
 
 Each Power Platform license includes a large entitlement of Power Platform requests, designed to be sufficient for most customers and scenarios. For customers with extremely high-scale scenarios, the Power Platform requests meter enables them to scale without getting throttled and only pay for the Power Platform requests used above those entitlements.
 
