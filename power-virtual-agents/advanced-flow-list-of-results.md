@@ -85,7 +85,7 @@ If you already have an Account table with data, skip this step and move on to [C
 
     :::image type="content" source="media/advanced-flow-set-of-results/text-input.png" alt-text="Screenshot of the flow trigger with a text input added.":::
 
-1. Select the plus (**+**) icon and select **Add an action**.
+1. Select **Insert a new step** (**+**) and select **Add an action**.
 
 1. Select the **Microsoft Dataverse** connector, and then select the **Search rows** action.
 
@@ -106,7 +106,7 @@ If you already have an Account table with data, skip this step and move on to [C
 
 The **Search rows** action returns the **List of rows** variable, which contains JSON data. Before you can use the data, you'll need to analyze it with the **Parse JSON** action.
 
-1. Select the plus (**+**) icon and select **Add an action**.
+1. Select **Insert a new step** (**+**) and select **Add an action**.
 
 1. Select the **Data Operation** connector, and then select the **Parse JSON** action.
 
@@ -142,17 +142,17 @@ The **Search rows** action returns the **List of rows** variable, which contains
 
     :::image type="content" source="media/advanced-flow-set-of-results/json-schema.png" alt-text="Screenshot of JSON schema entered in the Parse JSON node.":::
 
-1. Select the plus (**+**) icon and select **Add an action**. Select the **Variable** connector, and then select the **Initialize Variable** action.
+1. Select **Insert a new step** (**+**) and select **Add an action**. Select the **Variable** connector, and then select the **Initialize Variable** action.
 
 1. For **Name**, enter **ListOfAccounts**. For **Type**, select **String**.
 
     :::image type="content" source="media/advanced-flow-set-of-results/init-variable.png" alt-text="Screenshot of the Initialize variable action.":::
 
-1. Select the plus (**+**) icon and select **Add an action**. Select the **Control** connector, and then select the **Apply to each** action.
+1. Select **Insert a new step** (**+**) and select **Add an action**. Select the **Control** connector, and then select the **Apply to each** action.
 
 1. Select the **Select an output from previous steps** box to open the **Dynamic content** menu. Search for **body**, and then under **Parse JSON**, select the **Body** variable.
 
-1. Select the plus (**+**) icon and select **Add an action**. Select the **Variable** connector, and then select the **Append to string variable** action.
+1. Select **Insert a new step** (**+**) and select **Add an action**. Select the **Variable** connector, and then select the **Append to string variable** action.
 
 1. For **Name**, select **ListOfAccounts**. Copy the following text and paste it in the **Value** box:
 
