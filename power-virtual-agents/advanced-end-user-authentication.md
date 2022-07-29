@@ -110,11 +110,11 @@ If your authentication option is set to **Only for Teams**, you don't need to ex
 
 1. Open the **Authoring canvas** for the topic you want to add the authentication template to.
 
-1. Select the plus (**+**) icon to add a message node. Enter what the bot should say to indicate that a sign-on experience is about to occur.
+1. Select **Add node** (**+**) to add a message node. Enter what the bot should say to indicate that a sign-on experience is about to occur.
 
     :::image type="content" source="media/advanced-end-user-authentication/handoff-add-node.png" alt-text="Screenshot of adding a node." border="false":::
 
-1. Underneath the message node, select the plus (**+**) icon, select **Call an action**, and then select **Authenticate**.
+1. Underneath the message node, select **Add node** (**+**), select **Call an action**, and then select **Authenticate**.
 
     :::image type="content" source="media/advanced-end-user-authentication/auth-call-action-2.png" alt-text="Select Authenticate." border="false":::
 

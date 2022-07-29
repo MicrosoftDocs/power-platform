@@ -90,7 +90,7 @@ Now that you have full functionality within your bot, you can create your own to
 
     :::image type="content" source="media/fundamentals-get-started/quickstart-add-node.png" alt-text="Add node." border="false":::
 
-1. Select the **+** below the node, and add an **Ask a question** node.
+1. Select **Add node** (**+**) below the node, and add an **Ask a question** node.
 
     Enter the question text, 'Where do you live?', in the **Ask a question** box. To give the customer a choice between different responses, select **Multiple choice options** under **Identify**.
 
@@ -106,7 +106,7 @@ Now that you have full functionality within your bot, you can create your own to
 
 1. In the forked conversation path, each node automatically checks for 'Seattle' in one path, and 'Bellevue' in the other to take the appropriate next step.
 
-1. Finally, click the **+** below each of the Condition nodes to add a **Message** node in each branch.
+1. Finally, select **Add node** (**+**) below each of the Condition nodes to add a **Message** node in each branch.
 
     Add a simple message like 'Hello Seattle!' in the Seattle branch, and 'Hello Bellevue!' in the Bellevue branch.
 
