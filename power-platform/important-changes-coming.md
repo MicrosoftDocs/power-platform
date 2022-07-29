@@ -29,7 +29,7 @@ Internet Explorer 11 support for Dynamics 365 and Microsoft Power Platform is de
  
 Dynamics 365 and Microsoft Power Platform will be blocked in Internet Explorer starting October 31st. From early October 2022, users will be redirected to Microsoft Edge if they have Edge currently installed on their device.  Otherwise, they will receive a non-dismissible message informing them why they are blocked and to try using the site on Microsoft Edge. Starting October 31st, Internet Explorer will be blocked on Dynamics 365 and Microsoft Power Platform and users will see a blocking message informing them to use Microsoft Edge. If users are trying to access Dynamics 365 and Microsoft Power Platform on a Microsoft Edge version that is no longer supported, they will be prompted to use the latest version of Edge. 
  
-We recommend that customers transition to Microsoft Edge. 
+We recommend that customers transition to [Microsoft Edge](https://www.microsoft.com/en-us/edge). 
 
 More information: [Support end for Internet Explorer](admin/support-end-internet-explorer.md).
 
