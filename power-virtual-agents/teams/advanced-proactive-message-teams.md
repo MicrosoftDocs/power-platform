@@ -50,7 +50,7 @@ After you've [published your bot](publication-fundamentals-publish-channels-team
 
 You will need to create a Power Automate flow to send proactive messages with your bot. You can create a new flow from:
 
-- The [Power Virtual Agents authoring canvas](advanced-flow-teams.md#create-a-new-flow-from-the-power-virtual-agents-authoring-canvas).
+- The [Power Virtual Agents authoring canvas](advanced-flow-teams.md).
 - The [Power Apps Teams app](/power-automate/teams/create-flows-power-apps-app).
 - The [Power Automate maker portal](https://powerautomate.com/)'s solutions section of the environment.
 
