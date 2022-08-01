@@ -5,7 +5,7 @@ author: mikepenaMS
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 07/25/2022
+ms.date: 08/01/2022
 ms.subservice: power-fx
 ms.author: mikepena
 search.audienceType:
@@ -52,7 +52,8 @@ Additional **RTD** and **TNF** values may be supported in the future. If mor
 **ReadNFC** can only be used in [behavior formulas](/power-apps/maker/canvas-apps/working-with-formulas-in-depth).
 
 > [!NOTE]
-> **ReadNFC** is only supported when running the app on a native mobile app, such as the [iOS](https://apps.apple.com/us/app/power-apps/id1047318566) and [Android](https://play.google.com/store/apps/details?id=com.microsoft.msapps) apps. Even with a supported player, a device may not support NFC. If your application has **Formula-level error management** turned on, the function will return an error. Otherwise, an error message will be shown to the user and the function will return a *blank* record.
+> - **ReadNFC** is only supported when running the app on a native mobile app, such as the [iOS](https://apps.apple.com/us/app/power-apps/id1047318566) and [Android](https://play.google.com/store/apps/details?id=com.microsoft.msapps) apps. Even with a supported player, a device may not support NFC. If your application has **Formula-level error management** turned on, the function will return an error. Otherwise, an error message will be shown to the user and the function will return a *blank* record.
+> - Ensure your device has the NFC setting enabled to use this capability.
 
 ## Syntax
 
