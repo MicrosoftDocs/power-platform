@@ -13,7 +13,7 @@ ms.custom: flow, ceX, advanced-authoring, teams
 ms.collection: virtual-agent
 ---
 
-# Add actions to a bot using Power Automate  in Teams
+# Add actions to a bot using Power Automate in Teams
 
 Select the version of Power Virtual Agents you're using here:
 
@@ -22,112 +22,7 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](../advanced-flow.md)
 > - [Power Virtual Agents app in Microsoft Teams](advanced-flow-teams.md)
 
-Enable your bot to perform an action by calling a Microsoft Power Automate flow. Flows can help you automate activities or call back-end systems. For example, you can use flows to send messages to a Teams channel, or access files in a SharePoint folder.
-
-> [!IMPORTANT]
-> To use flows within Power Virtual Agents, they must meet the following requirements:
->
-> - A flow can only be called from a topic located in the same [Microsoft Dataverse environment](/powerapps/maker/common-data-service/data-platform-intro) as your bot.
->
-> - Flows must also be in a solution in Power Automate. You can [move flows into solutions](../advanced-flow.md#optionally-move-a-flow-from-default-solution-to-another-solution) so they are listed in the authoring canvas.
->
-> - [Flow values must be returned synchronously to Power Virtual Agents](../advanced-flow.md#disable-asynchronous-responses-from-flows).
-
-Flows typically use variables to input and output information. The variables can then be used in other nodes within the topic.
-
-For example, you could record someone's answer to a question in one place in the bot, then have a flow that "outputs" a special message based on the "input".
-
-## Prerequisites
-
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations-teams.md)]
-
-## Create a new flow from the Power Virtual Agents authoring canvas
-
-1. Go to the [**Topics page**](authoring-create-edit-topics-teams.md) for the bot you want to edit.
-
-1. Open the authoring canvas for the topic from which you want to call a flow.
-
-1. Select the plus (**+**) button below an existing node to add a new node.
-
-1. In the node selection window, select **Call an action** > **Create a flow**.
-
-    :::image type="content" source="../media/advanced-flow/UseCreateFlowOption-teams.png" alt-text="Create a new Power Automate flow.":::
-
-1. You'll find a list of templates to help you get started creating Power Automate flows. For this example, we'll pick the basic "Power Virtual Agents Flow Template".
-
-    :::image type="content" source="../media/advanced-flow/flow-template-tile.png" alt-text="Flow template selection screen.":::
-
-1. You should now see a blank flow template.
-
-    :::image type="content" source="../media/advanced-flow/PVAConnectorTemplate-teams.png" alt-text="The flow action and response boxes of a flow for Power Virtual Agents.":::
-
-## Input and output parameters
-
-See the [Power Virtual Agents web app documentation on flows](../advanced-flow.md) for details on inputs and outputs and restrictions.
-
-### Input parameters
-
-To specify a flow to accept input parameters from a bot, select the **Add an input** option in the **Power Virtual Agents trigger** user interface, and then select the type: a `string`, `number`, or `boolean`.
-
-For example, you can select **Text** and **Number** to add the following input parameters to the flow:
-
-- **String_Input** of type `string`
-- **Number_Input** of type `number`
-
-:::image type="content" source="../media/advanced-flow/PVATemplateInput.png" alt-text="Input and output parameters are defined in the flow.":::
-
-### Output parameters
-
-To return output parameters to the bot that can be a `string`, `number`, or a `boolean`, select the **Add an output** option in the **Power Virtual Agents response** user interface, and then select the type for the output.
-
-For example, you can select **Text** and **Number** to add the following output parameters to the flow and assign return values for them.
-
-- **String_Output** of type `string`
-- **Number_Output** of type `number`
-
-:::image type="content" source="../media/advanced-flow/PVAConnectorTemplate_SAVE-teams.png" alt-text="Input and output parameters that were added are now saved.":::
-
-This example creates a fully functional flow that accepts two parameters, a `string` and a `number`, and returns them to a bot as outputs.
-
-Select **Save** to save your new flow.
-
-Now when you go to call an action and choose **Flow**, you'll see the flow you created. You can select **View flow details** to edit the flow, save it, and make other changes.
-
-:::image type="content" source="../media/advanced-flow/flow-ready.png" alt-text="The flow is now added as a new node with the inputs and outputs that were defined in the flow.":::
-
-## Create simple flow
-
-In this flow, we're going to provide a special message and email when someone asks about conference rooms.
-
-1. Create a new topic with the trigger phrase "**Is there a conference room available?**".
-
-1. Add a **Question** node that asks "**How many people are in the meeting?**". By default, it will be set to accept ("identify") multiple choice options—change that to **Number**. At the bottom, select the variable called "**Var**" and change it to "**Numberguests**".
-
-1. Add a **Question** node that asks "**Do you have any requirements**". By default, it will be set to accept ("identify") multiple choice options—change that to **User's entire response**. At the bottom, select the variable called "**Var**" and change it to "**Requirements**".
-
-    :::image type="content" source="../media/advanced-flow/flow-test-1.png" alt-text="Add a question node to canvas.":::
-
-1. Insert a **Call to action** and choose the flow you created. Set the `String_Input` to **Requirements** and the `Number_Input` to **Numberguests**.
-
-1. Now insert a message node with those variables. You can now add another flow that emails the information.
-
-    :::image type="content" source="../media/advanced-flow/flow-test-2.png" alt-text="Insert message node in canvas.":::
-
-1. Add a **Call an action** node, and select a new flow.
-
-1. Pick the first flow template (Power Virtual Agents Flow Template).
-
-1. In the flow template, enter a string input called **Input_Requirements** and a number input called **Number_Attendees**.
-
-1. Add an Outlook connector after the input to send an Outlook message, and enter the variables in the body. Save the flow and return to the Power Virtual Agents authoring canvas.
-
-    :::image type="content" source="../media/advanced-flow/flow-test-3.png" alt-text="Send a message via Outlook connector.":::
-
-1. Add the flow you just created, and select the two variables as the inputs for the flow.
-
-Now when the bot user tells the bot how many people will be attending the meeting and provides any special requirements, an email will be sent with that information.
-
-:::image type="content" source="../media/advanced-flow/flow-test-4.png" alt-text="Complete topic with a flow call that sends email via Outlook connector.":::
+[Power Automate](https://flow.microsoft.com) is a service that you can use to build automated processes using low-code, drag-and-drop tools. By using [cloud flows](/power-automate/overview-cloud) in Power Virtual Agents, you can extend the capabilities of your bot to automate complex activities or query back-end systems.
 
 See the [Power Virtual Agents web app documentation on using Flows](../advanced-flow.md) for more detailed and complex scenarios.
 

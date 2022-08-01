@@ -6,8 +6,8 @@ ms.topic: overview
 ms.date: 01/21/2022
 author: revachauhan
 ms.subservice: admin
-ms.author: mkaur
-ms.reviewer: mkaur
+ms.author: jimholtz
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:

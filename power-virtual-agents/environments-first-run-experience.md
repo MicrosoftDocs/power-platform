@@ -22,7 +22,7 @@ An environment is a space to store, manage, and share your organization's busine
 
 ## Prerequisites
 
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 
 ## Leverage environments
 

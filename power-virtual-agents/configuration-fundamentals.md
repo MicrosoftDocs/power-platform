@@ -29,7 +29,7 @@ You can sign-in to backend systems, seamlessly integrate between virtual support
 
 ## Prerequisites
 
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 
 ## In this section
 

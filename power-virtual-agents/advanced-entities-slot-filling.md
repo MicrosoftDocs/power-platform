@@ -31,7 +31,7 @@ One fundamental aspect of natural language understanding is to identify *entitie
 
 ## Prerequisites
 
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 
 ## Prebuilt entities
 

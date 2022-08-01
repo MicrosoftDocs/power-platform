@@ -55,11 +55,13 @@ Steps:
 
 ```js
 async function enableFrameAncestors(sources) {
-     if (!Array.isArray(sources) || sources.some(s => typeof s !== 'string')) {
+    const baseUrl = Xrm.Utility.getGlobalContext().getClientUrl();
+
+    if (!Array.isArray(sources) || sources.some(s => typeof s !== 'string')) {
         throw new Error('sources must be a string array');
     }
 
-    const orgResponse = await fetch('/api/data/v9.1/organizations');
+    const orgResponse = await fetch(`${baseUrl}/api/data/v9.1/organizations`);
     if (!orgResponse.ok) throw new Error('Failed to retrieve org info');
     const orgs = await orgResponse.json();
     const { organizationid, contentsecuritypolicyconfiguration, iscontentsecuritypolicyenabled } = orgs.value[0];
@@ -68,7 +70,7 @@ async function enableFrameAncestors(sources) {
     console.log(`CSP Enabled?: ${iscontentsecuritypolicyenabled}`);
     console.log(`CSP Config: ${contentsecuritypolicyconfiguration}`);
 
-    const orgProperty = prop => `/api/data/v9.1/organizations(${organizationid})/${prop}`;
+    const orgProperty = prop => `${baseUrl}/api/data/v9.1/organizations(${organizationid})/${prop}`;
 
     console.log('Updating CSP configuration...')
     const config = {
@@ -117,7 +119,9 @@ Steps:
 
 ```js
 async function disableCSP() {
-    const orgResponse = await fetch('/api/data/v9.1/organizations');
+    const baseUrl = Xrm.Utility.getGlobalContext().getClientUrl();
+
+    const orgResponse = await fetch(`${baseUrl}/api/data/v9.1/organizations`);
     if (!orgResponse.ok) throw new Error('Failed to retrieve org info');
     const orgs = await orgResponse.json();
     const { organizationid, iscontentsecuritypolicyenabled } = orgs.value[0];
@@ -125,7 +129,7 @@ async function disableCSP() {
     console.log(`Organization Id: ${organizationid}`);
     console.log(`CSP Enabled?: ${iscontentsecuritypolicyenabled}`);
 
-    const orgProperty = prop => `/api/data/v9.1/organizations(${organizationid})/${prop}`;
+    const orgProperty = prop => `${baseUrl}/api/data/v9.1/organizations(${organizationid})/${prop}`;
 
     if (!iscontentsecuritypolicyenabled) {
         console.log('CSP is already disabled! Skipping update.')

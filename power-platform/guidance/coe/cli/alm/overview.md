@@ -76,7 +76,8 @@ For an administrator, the quick start guide should take about 30 minutes. By the
       ]
    },
    "importMethod": "api",
-   "endpoint": "prod"
+   "endpoint": "prod",
+   "$schema": "./alm.schema.json
    }
    ```
 
@@ -147,7 +148,7 @@ The following recording shows a sample generating an installation configuration 
 
 1. Use [maker setup](./maker-setup.md) to create and set up environment and solution branches in the Azure DevOps repository.
 
->[!Note]
+>[!NOTE]
 >If this is your first build pipeline, you'll need to set pipeline variables for your environment. At a minimum, you'll need to set the **ServiceConnection** variable to the environment you've set up for validation, test, and production.
 
 ### Read more
