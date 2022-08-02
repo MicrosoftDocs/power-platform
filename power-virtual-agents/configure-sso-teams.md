@@ -2,13 +2,13 @@
 title: "Configure single sign-on for the Power Virtual Agents app in Teams"
 description: "Enable your bot to authenticate an already-signed-in Teams user"
 keywords: "Single Sign-on, Teams SSO, User Authentication, Authentication, AAD, MSA, Identity Provider, PVA"
-ms.date: 06/23/2022
+ms.date: 08/02/2022
 
 ms.topic: article
 author: iaanw
 ms.author: iawilt
 manager: shellyha
-ms.reviewer: clmori
+ms.reviewer: kamrani
 ms.custom: authentication, ceX
 ms.collection: virtual-agent
 ---
