@@ -1,9 +1,8 @@
 ---
 title: "Custom connector parity | MicrosoftDocs"
 description: About allowing makers to create and share custom connectors.
-ms.service: power-platform
 ms.topic: conceptual
-ms.date: 09/08/2021
+ms.date: 04/11/2022
 ms.subservice: admin
 author: mikferland-msft
 ms.author: miferlan
@@ -21,18 +20,21 @@ search.app:
   - Flow
 ---
 
-# Custom connector parity
+# DLP for custom connectors
 
 Power Platform allows makers to create and share [custom connectors](/connectors/custom-connectors/). You can manage custom connectors for tenant and environment level data loss prevention (DLP) policies. Specifically:
 
 1. Environment admins can use the Power Platform admin center to classify individual custom connectors by name for environment-level DLP policies.
 2. Tenant admins can use the Power Platform admin center and PowerShell to classify custom connector by their Host URL endpoints using a pattern matching construct for tenant-level DLP policies.
 
+> [!NOTE]
+> **DLP for custom connectors** is now generally available.
+
 ## User interface
 
 ### Environment-level DLP policies
 
-Environment admins can now see all custom connectors in their environments alongside of pre-built connectors in the **Connectors** tab of the **Data Policies** wizard. Similar to pre-built connectors, admins can classify custom connectors into **Blocked**/**Business**/**Non-Business** categories. Custom connectors that are not explicitly classified will be put under the default group (or **Non-business** if no default group setting is chosen by admins explicitly).
+Environment admins can see all custom connectors in their environments alongside of pre-built connectors in the **Connectors** tab of the **Data Policies** wizard. Similar to pre-built connectors, admins can classify custom connectors into **Blocked**/**Business**/**Non-Business** categories. Custom connectors that are not explicitly classified will be put under the default group (or **Non-business** if no default group setting is chosen by admins explicitly).
 
 :::image type="content" source="media/dlp-environment-level-policy.png" alt-text="Environment-level DLP policies":::
 
@@ -80,6 +82,9 @@ $UrlPatterns = @{
 } 
 ```
 
+> [!NOTE]
+> In the following cmdlets, *PolicyName* refers to the unique GUID. You can retrieve the DLP GUID by running the **Get-DlpPolicy** cmdlet.
+
 ### Retrieve existing custom connector URL patterns for a policy
 ```powershell
 Get-PowerAppPolicyUrlPatterns -TenantId -PolicyName
@@ -125,10 +130,7 @@ $UrlPatterns = @{
 New-PowerAppPolicyUrlPatterns -TenantId $TenantId -PolicyName $PolicyId -NewUrlPatterns $UrlPatterns
 ```
 
-## Known limitation
-
-When an environment admin creates or updates an environment-level DLP policy, they can only view custom connectors for which they are an owner or that have been shared with them.
-
-
-
-
+## Known limitations
+- The use of custom connectors is not enforced by DLP in apps that were last published before October 2020.
+- When an environment admin creates or updates an environment-level DLP policy, they can only view custom connectors for which they are an owner or that have been shared with them.
+- If a custom connector has been added by name to a tenant-level policy (by using PowerShell cmdlets), the custom connector URL pattern rules will be superseded by the existing classification for the connector by name. Use the Remove-DlpPolicy cmdlet to remove the custom connectors from the policy for these rules to take effect. We recommend that tenant-level policies only use custom connector host URL patterns. Don't manage custom connectors by name in tenant-level policies because individual custom connector scope is limited to the environment boundary and a custom connector's name has no significance at the tenant level.

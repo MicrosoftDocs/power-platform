@@ -3,8 +3,7 @@ title: "How do I check my online service health? | MicrosoftDocs"
 description: Check service health.
 ms.date: 09/21/2021
 ms.reviewer: ""
-ms.service: "power-platform"
-ms.topic: "quickstart"
+ms.topic: conceptual
 author: "jimholtz"
 ms.subservice: admin
 ms.author: "jimholtz"

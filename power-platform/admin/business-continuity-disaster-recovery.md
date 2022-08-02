@@ -1,55 +1,68 @@
 ---
-title: Business continuity, disaster recovery for Dynamics 365 SaaS apps
-description: Microsoft provides business continuity and disaster recovery for production instances of Dynamics 365 SaaS applications, in the event of an Azure region-wide outage. 
+title: Business continuity and disaster recovery for Dynamics 365 SaaS apps
+description: Microsoft provides business continuity and disaster recovery for production environments of Dynamics 365 SaaS applications if there's an Azure region-wide outage. 
 author: MicroSri
-ms.date: 07/19/2021
-ms.reviewer: sericks
-ms.service: "power-platform"
+ms.date: 04/19/2022
+ms.reviewer: jimholtz
+contributors: 
+ - sericks 
 ms.topic: conceptual
 ms.subservice: admin
 ms.author: sriknair
 search.audienceType: 
-  - admin
+ - admin
 search.app:
-  - D365CE
-  - PowerApps
-  - Powerplatform
-  - Flow
+ - D365CE
+ - PowerApps
+ - Powerplatform
+ - Flow
 ---
 
 # Business continuity and disaster recovery
 
-Microsoft provides business continuity and disaster recovery for production instances of Dynamics 365 software as a service (SaaS) applications, to provide continuity in the event of an Azure region&ndash;wide outage. Customer engagement apps like  Dynamics 365 Sales, Customer Service, Field Service, Marketing, and  Project Service Automation run on the Microsoft Dataverse platform. Tenant admins can deploy a production instance of a customer engagement app or Dataverse with the purchase of appropriate licenses. For more information, go to [Create and manage environments in the Power Platform admin center](create-environment.md).
+Microsoft provides disaster recovery for production environments of Dynamics 365 software as a service (SaaS) applications for business continuity if there's an Azure region-wide outage. Tenant admins can [deploy a production environment](create-environment.md) of a customer engagement app or Dataverse with appropriate licenses.
 
-For production environments, a replica of the different storage services (Azure SQL and file storage) is established in the secondary region for each environment at the time of deployment. For more information, go to [Environments](environments-overview.md). These replicas are referred to as geo-secondary replicas. The geo-secondary replicas are kept synchronized with the primary instance through continuous data replication. There is a small replication latency, or lag&mdash;typically less than a few minutes&mdash;between the primary data sources and their corresponding geo-secondary replicas. More information: [Ensure business continuity and disaster recovery (BCDR): Azure Paired Regions](/azure/best-practices-availability-paired-regions)
+## Geo-secondary replicas back up production environments
 
-:::image type="content" source="media/dataverse-customer-engagement-apps.png" alt-text="For production environments, a replica of the different storage services (Azure SQL and file storage) is established in the secondary region for each environment.":::
+Microsoft creates a replica of Azure SQL storage and file storage in the secondary region for each [production environment](environments-overview.md) at deployment. These replicas are referred to as [geo-secondary replicas](/azure/best-practices-availability-paired-regions).
 
-As seen in the preceding diagram, similar to data storage services, compute infrastructure is also provisioned in both regions in such a way that it can handle the traffic volume in case of an environment or region-level failover. The following sections describe the different types of failovers that are possible and how Microsoft manages service continuity in either of these situations.
+Geo-secondary replicas are kept synchronized with the primary environment through continuous data replication. There's a small lag between the primary data sources and their geo-secondary replicas. Typically, the latency is less than a few minutes. More information: [Ensure business continuity and disaster recovery (BCDR): Azure Paired Regions](/azure/best-practices-availability-paired-regions).
 
-To learn more about data protection in non-production environments, go to [Back up and restore environments](backup-restore-environments.md).
+:::image type="content" source="media/dataverse-customer-engagement-apps.png" alt-text="Diagram illustrating a geo-secondary replica of data storage and compute infrastructure.":::
 
-## Unplanned failover
+To learn more about data protection in non-production environments, see [Back up and restore environments](backup-restore-environments.md).
 
-In the event of an unanticipated region-wide outage, such as a natural disaster that affects the entire Azure region, and Microsoft has determined that the region won't become available within a reasonable amount of time, Microsoft will notify customers and switch over the traffic to route to the secondary instances. In this case, it's possible that customers might experience a data loss of up to 15 minutes, depending on the nature and timing of the outage. 
+## Failover types and service continuity
 
-## Planned failover
+Customer engagement apps adhere to the Microsoft business continuity and disaster recovery (BCDR) standard. The standard requires each online service to have a BCDR plan reviewed, updated, and tested at least annually. The Microsoft Cloud Business Continuity and Disaster Recovery Plan Validation Report is available to customers on [Service Trust Portal](https://aka.ms/stp).
 
-In the event that Microsoft determines there's a risk to the availability of the primary Azure region, for example if there's an impending hurricane, Microsoft will notify customers and switch over the traffic to route to the secondary region. Users connected to customer engagement and Dataverse apps at the time of the failover will experience a brief disruption. There will be no data loss, because both Azure regions will be online and data will be replicated fast enough to the secondary region.
+As seen in the preceding diagram, Microsoft provisions compute infrastructure so that it can handle the traffic volume if there's an environment or region-level failover, similar to data storage. 
 
-> [!IMPORTANT]
-> During the time the environment is operating out of the secondary region, there might be service degradation of non-production instances. It's possible that deployments of new, non-production environments will also be affected.
+If an outage is caused by faulty hardware or a network interruption, we route the traffic to the secondary region environments. Recovery Point Objective (RPO) is small and could take up to a few seconds or a couple of minutes.
 
-## Failback
+In the event of an unanticipated region-wide outage, such as a natural disaster that affects the entire Azure region, and Microsoft has determined that the region won't become available within a reasonable amount of time, Microsoft will notify customers and switch over the traffic to route to the secondary environments. In this case, it's possible that customers might experience a data loss of up to 15 minutes, depending on the nature and timing of the outage. Recovery Point Objective (RPO) is small and could take up to a few seconds or couple of minutes.  
 
-Microsoft will notify customers and switch back the environments to operate out of the primary region when it determines that the primary region is back online and is fully operational. Users connected to the systems will experience a brief interruption of up to one minute. The service, including all non-production instances, will be fully restored. There will be no data loss.
+Recovery Time Objective (RTO) varies depending on the nature of the outage, and could take up to 4 to 10 hours.
 
-Dataverse for Teams environments don't support secondary replicas, hence this feature of providing business continuity won't be available until such Dataverse for Teams environments are converted to Dataverse production instances by using the upgrade process described in [Upgrade process](about-teams-environment.md#upgrade-process).
+When Microsoft determines that the primary region is back online and is fully operational, we switch the environments back. Users who are connected to affected systems could experience a brief interruption of up to one minute. The service, including all non-production environments, is fully restored. There's no data loss during the planned failback process.
 
-For more information about Dataverse for Teams environments, go to [About the Microsoft Dataverse for Teams environment](about-teams-environment.md).
+## Exception for Dataverse for Teams
+
+[Dataverse for Teams environments](about-teams-environment.md) doesn't support secondary replicas. Dataverse for Teams environments [must be converted to Dataverse production environments](about-teams-environment.md#upgrade-process) to take advantage of geo-secondary replicas for business continuity.
+
+## Responsibilities for disaster recovery
+
+| Microsoft's responsibilities | Customer's responsibilities |
+| --- | --- |
+| Microsoft [provisions a secondary environment in the Azure-paired datacenters](/azure/availability-zones/cross-region-replication-azure) at the time the primary production environment is deployed. | None |
+| Microsoft enables geo redundancy of SQL and Azure storage at the time the primary production environment is deployed. | None  |
+| In an outage, Microsoft determines whether [to execute a failover](https://azure.microsoft.com/blog/azure-sql-database-geo-restore/) and if there will be a data loss. Data loss can be up to 5 seconds.<br>If there's a data loss, Microsoft sends a request to the customer asking for permission. | The customer must provide written permission to trigger the failover there's a data loss. |
+| Microsoft fails back to the production environment in the primary Azure region when the datacenter becomes operational. Normal operations resume and we notify customers. Customers could experience brief interruptions or disconnects during this window, but won't need to take a full downtime. | None |
 
 ### See also
-[Finance and Operations business continuity and disaster recovery](/dynamics365/fin-ops-core/dev-itpro/sysadmin/business-continuity-disaster-recovery)
+
+[Business continuity and disaster recovery](/dynamics365/fin-ops-core/dev-itpro/sysadmin/business-continuity-disaster-recovery)
+
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

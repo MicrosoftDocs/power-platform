@@ -2,7 +2,7 @@
 title: "How does ExpressRoute work with Microsoft Power Platform? | MicrosoftDocs"
 description: "ExpressRoute and Microsoft Power Platform - how do they work together?"
 author: taiki-yoshida
-ms.service: power-platform
+
 ms.topic: conceptual
 ms.date: 06/30/2021
 ms.subservice: guidance
@@ -141,7 +141,7 @@ assigns the URLs and IP addresses for Microsoft Power Platform, Dynamics 365 cus
 applications, and Microsoft 365 services to the Microsoft peering, so any traffic
 routed to them will be advertised and enabled through the Microsoft peering.
 Unlike Microsoft 365, Microsoft Power Platform doesn't have designated BGP
-communities. (BGP communities are [covered here](/power-platform/guidance/expressroute/things-to-consider#ability-to-restrict-expressroute-use-to-only-certain-microsoft-services).)
+communities. (BGP communities are [covered here](things-to-consider.md#ability-to-restrict-expressroute-use-to-only-certain-microsoft-services).)
 
 :::image type="complex" source="media/traffic-using-microsoft-peering.png" alt-text="Diagram showing the traffic using Microsoft peering.":::
     Traffic using Microsoft peering. After a connection reaches the Microsoft edge, it's no longer a designated connection within the Microsoft network.

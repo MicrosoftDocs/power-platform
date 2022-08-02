@@ -67,7 +67,7 @@
         href: devops-build-tools.md
       - name: Microsoft Power Platform Build Tools tasks
         href: devops-build-tool-tasks.md
-      - name: Pre-populate connection references and environment variables (preview)
+      - name: Pre-populate connection references and environment variables
         href: conn-ref-env-variables-build-tools.md
     - name: GitHub Actions
       items:
@@ -126,13 +126,15 @@
           href: checker-api/retrieve-rulesets.md
         - name: Upload a file for analysis
           href: checker-api/upload-file.md
-    - name: Manage solutions using custom code
+    - name: Manage solutions using code
       href: 
       items:
         - name: Use PowerShell
           href: powershell-api.md
-        - name: Work with solutions (SDK API) 
+        - name: Work with solutions 
           href: solution-api.md
+        - name: Stage, import, and export
+          href: solution-async.md
         - name: Create patches 
           href: create-patches-simplify-solution-updates.md
     - name: Edit the customizations file

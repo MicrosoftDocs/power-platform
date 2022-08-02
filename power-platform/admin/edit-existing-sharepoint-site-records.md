@@ -2,7 +2,7 @@
 title: "Edit existing SharePoint site records   | MicrosoftDocs"
 description: Edit existing SharePoint site records
 author: Mattp123
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/17/2021
@@ -58,11 +58,6 @@ Store documents related to your records in [!INCLUDE[pn_ms_SharePoint_long](../i
      - **Absolute URL**. To point this site record to a site collection or site in [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)], specify the fully qualified URL of the site collection or site. You can use this record as a parent site to create other site records with relative URLs for sites inside the site collection or sites on the same [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] site.  
   
      - **Relative URL**. Use this option when you have at least one site record pointing to a site collection in [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)]. In the **Parent Site** box, select an existing  site record. If the site record that you selected as a parent site points to a site collection on SharePoint, specify the name of an existing site in the second box. If the site record that you selected as a parent site points to a site on [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)], specify the name of an existing subordinate site on [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)].  
-  
-  <!--  - **List component is installed**. Select this check box if the URL that you specified is a site collection on [!INCLUDE[pn_sharepoint_server_2010](../includes/pn-sharepoint-server-2010.md)] or [!INCLUDE[pn_sharepoint_server_2013](../includes/pn-sharepoint-server-2013.md)] and if the site collection has the Dynamics 365 apps List component installed. This check box is available only if you use the **Absolute URL** option.  
-  
-     > [!TIP]
-     >  The List component has been deprecated in Dynamics 365 apps. For information on switching from the List component to server-based integration, see [Switching from the list component or changing the deployment](switch-dynamics-crm-online-dynamics-365.md)  -->
   
 6. Select **Save**.  
   

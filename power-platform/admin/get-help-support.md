@@ -2,10 +2,9 @@
 title: "Get Help + Support   | MicrosoftDocs"
 description: Use the Help + support experience to contact a Microsoft support representative to get resolution for your issue.
 author: jimholtz
-ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/27/2021
+ms.date: 07/22/2022
 ms.subservice: admin
 ms.author: jimholtz 
 search.audienceType: 
@@ -29,16 +28,14 @@ An example of solutions provided for Dynamics 365 App for Outlook issues:
 
 - You have a security role that is enabled for creating support requests. Users having one of these security roles can create support requests:
 
-  - AAD Role Admin
-  - Power Apps Full Admin
-  - Power Apps Environment Admin (Environment Admin, System Admin)
+  - AAD Role Admin  
+  - Environment Administrator (or System Administrator role in Dataverse)
   - Company Admin
   - Billing Admin
   - Service Admin
   - CRM Service Admin
   - Power Platform Admin  
   - Security Admin
-  - CRM Organization Admin
   - Partner Delegated Admin
   - SharePoint Admin
   - Teams Admin
@@ -141,7 +138,7 @@ For some support requests, you’ll be asked to request a support environment. C
 ### See also
 [Support overview](support-overview.md)<br />
 [How do I check my online service health?](check-online-service-health.md) <br />
-[Video: How to get the best support for Power Apps, Power Automate, and Dynamics 365](https://youtu.be/An3IfFdZlT8)
+
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

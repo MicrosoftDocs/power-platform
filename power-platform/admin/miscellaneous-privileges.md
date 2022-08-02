@@ -2,7 +2,6 @@
 title: "Miscellaneous privileges  | MicrosoftDocs"
 description: About miscellaneous privileges
 author: jimholtz
-ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/21/2021
@@ -125,7 +124,7 @@ The following table lists the privileges shown in the security role editor misce
 <tr class="even">
 <td><p>View Audit Partitions</p></td>
 <td><p>prvReadAuditPartitions</p></td>
-<td><p><a href="/power-platform/admin/audit-data-user-activity">Audit data and user activity for security and compliance</a></p></td>
+<td><p><a href="/power-platform/admin/manage-dataverse-auditing">Audit data and user activity for security and compliance</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>View Audit Summary</p></td>

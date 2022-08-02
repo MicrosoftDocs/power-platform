@@ -1,60 +1,51 @@
 ### YamlMime:Hub
 
 title: Microsoft Power Platform documentation # < 60 chars
-summary: Learn how to analyze data for insights using Power BI, quickly and easily build custom apps using Power Apps, automate workflows to improve business productivity using Power Automate, and build intelligent bots with a no-code interface using Power Virtual Agents.
+summary: Learn how to quickly and easily build custom apps using Power Apps, automate workflows to improve business productivity using Power Automate, analyze data for insights using Power BI, rapidly design, configure, and publish modern websites using Power Pages, and build intelligent bots with a no-code interface using Power Virtual Agents.
 # brand: aspnet | azure | dotnet | dynamics | m365 | office | sql | windows | visual-studio | xamarin
 brand: dynamics
 
 metadata:
   title: Microsoft Power Platform documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Learn how to analyze data for insights, quickly and easily build custom apps, and automate workflows to improve business productivity with Power BI, Power Apps, and Power Automate. # Required; article description that is displayed in search results. < 160 chars.
-  ms.service: power-platform #Required; service per approved list. service slug assigned to your service by ACOM.
+  
   ms.topic: hub-page # Required
   author: KumarVivek #Required; your GitHub user alias, with correct capitalization.
   ms.author: kvivek #Required; microsoft alias of author; optional team alias.
-  ms.date: 07/06/2021 #Required; mm/dd/yyyy format.
+  ms.date: 05/24/2022 #Required; mm/dd/yyyy format.
   hide_bc: false
 
 highlightedContent:
 
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample tutorial | video | whats-new
 
-  items:
-    
+  items:    
+        
     # Card
-    - title: What's new in Microsoft Power Platform?
+    - title: What's new in Power Platform?
       itemType: whats-new
       url: /dynamics365/release-plans/
 
     # Card
-    - title: Microsoft Power Platform videos
+    - title: Power Platform videos
       itemType: video
       url: https://www.youtube.com/c/mspowerplatform/
 
     # Card
-    - title: Microsoft Power Platform training on Microsoft Learn
+    - title: Power Platform training on Microsoft Learn
       itemType: learn
       url: /learn/powerplatform/
       
     # Card
-    - title: Microsoft Power Platform In a Day workshops
+    - title: Power Platform In a Day workshops
       itemType: get-started
-      url: https://aka.ms/PowerPlatformIAD
+      url: https://aka.ms/PowerPlatformIAD    
+    
 
 conceptualContent:
   # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
-    - title: Power BI
-      links:
-      - url: /power-bi/
-        itemType: overview
-        text: Documentation
-      - url: /learn/powerplatform/power-bi
-        itemType: learn
-        text: Training on Microsoft Learn
-      - url: https://www.youtube.com/user/mspowerbi
-        itemType: video
-        text: Videos            
+              
     - title: Power Apps
       links:
       - url: /powerapps
@@ -75,6 +66,25 @@ conceptualContent:
         itemType: learn
         text: Training on Microsoft Learn
       - url: https://www.youtube.com/channel/UCG98S4lL7nwlN8dxSF322bA
+        itemType: video
+        text: Videos
+    - title: Power BI
+      links:
+      - url: /power-bi/
+        itemType: overview
+        text: Documentation
+      - url: /learn/powerplatform/power-bi
+        itemType: learn
+        text: Training on Microsoft Learn
+      - url: https://www.youtube.com/user/mspowerbi
+        itemType: video
+        text: Videos    
+    - title: Power Pages
+      links:
+      - url: /power-pages/
+        itemType: overview
+        text: Documentation      
+      - url: /power-pages/training-videos
         itemType: video
         text: Videos
     - title: Power Virtual Agents
@@ -116,7 +126,7 @@ conceptualContent:
       - url: ./guidance/expressroute/overview.md
         itemType: overview
         text: Azure ExpressRoute with Power Platform
-    - title: Introducing Microsoft Power Fx
+    - title: Microsoft Power Fx
       links:      
       - url: ./power-fx/overview.md
         itemType: overview
@@ -153,5 +163,5 @@ additionalContent:
         url: /dynamics365/index
       # Card
       - title: Microsoft Azure
-        summary: "Ever-expanding set of cloud computing services to help your organization meet it's business challenges"
+        summary: "Ever-expanding set of cloud computing services to help your organization meet its business challenges"
         url: /azure

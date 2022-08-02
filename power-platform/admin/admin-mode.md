@@ -1,10 +1,9 @@
 ---
 title: "Administration mode  | MicrosoftDocs"
 description: Administration mode
-ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/13/2021
+ms.date: 07/13/2022
 ms.subservice: admin
 author: ChrisGarty
 ms.author: cgarty
@@ -24,6 +23,7 @@ You can set a sandbox, production, or trial (subscription-based) environment in 
 > [!NOTE]
 > - You can place sandbox, production, or trial (subscription-based) environments in administration mode.  
 > - Processes that use code, such as plug-ins or custom workflow assemblies, continue to be processed by the Microsoft Dataverse platform when administration mode is enabled and background operations are disabled.
+> - System Customizers will need to sign in to the environment directly through the URL as the environment in administration mode will not appear to System Customizers in the Environments page of the Power Platform admin center.
   
  On the **Settings** panel, you can set the following:  
   
@@ -31,7 +31,6 @@ You can set a sandbox, production, or trial (subscription-based) environment in 
 |-------------|-----------------|  
 |Administration mode | Select to enable administration mode for the selected sandbox, production, or trial (subscription-based) environment. Only System Administrators or System Customizers will be able to sign in to the selected sandbox or production environment.|  
 |Background operations (optional) | Select to disable all asynchronous operations (see [Asynchronous service](/powerapps/developer/common-data-service/asynchronous-service)) such as workflows and synchronization with Exchange. Emails will not be sent and server-side synchronization for appointments, contacts, and tasks are disabled. **Note:**  Administration mode must be enabled to disable background operations.|  
-|Custom message (optional)| Enter a message that will be displayed to all users when they attempt to sign in.|  
   
 ## Set administration mode  
   
@@ -43,10 +42,15 @@ You can set a sandbox, production, or trial (subscription-based) environment in 
   
 4. Under **Administration mode**, toggle **Disabled** to **Enabled**.
 
-5. Optionally, you can set **Background operations** and **Custom message**, and then select **Save**.
+5. Optionally, you can set **Background operations**.
+
+6. Select **Save**.
 
 ## Known issues
 
 - After taking the environment out of admin mode, flows may not trigger as expected until caches have been cleared; this can take up to 24 hours.
+
+
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,10 +1,10 @@
 ---
 title: "Connector classification  | MicrosoftDocs"
 description: About ways to categorize connectors within a DLP policy.
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/03/2021
+ms.date: 01/05/2022
 ms.subservice: admin
 author: mikferland-msft
 ms.author: miferlan
@@ -65,7 +65,7 @@ The following connectors can't be blocked by using DLP policies.
 
 |Microsoft Enterprise Plan standard connectors | Core Power Platform connectors  |
 |---------|---------|
-|Cloud App Security      | Approvals        |
+|Defender for Cloud Apps      | Approvals        |
 |Dynamics 365 Customer Voice      | Notifications        |
 |Excel Online (Business)     | Dataverse       |
 |Kaizala       | Dataverse (current environment)        |

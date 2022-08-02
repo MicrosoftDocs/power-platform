@@ -2,10 +2,10 @@
 title: "Enable Power Automate integration to automate processes  | MicrosoftDocs"
 description: Enable Power Automate integration to automate processes
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/04/2020
+ms.date: 12/17/2021
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -41,13 +41,19 @@ Once the Power Automate integration feature is enabled, the following privileges
 - One or more flows created in the Power Automate environment to use with customer engagement apps. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Create a flow by using customer engagement apps](/power-automate/connection-dynamics365)  
   
 ## Enable Power Automate in your organization  
- By default, all security roles allow users to run flows on the records that they have access to.  
+By default, all security roles allow users to run flows on the records that they have access to.  
   
- To enable Power Automate integration in your organization, follow these steps.  
+To enable Power Automate integration in your organization, follow these steps.  
 
-   > [!IMPORTANT]
-   >  Once the Power Automate integration option has been enabled, it cannot be disabled.
-   >  
+> [!IMPORTANT]
+> Once the Power Automate integration option has been enabled, it cannot be disabled.
+>  
+> If you’re using Conditional Access polices to limit access to Power Automate and it’s features, the following apps must be included in **Cloud apps** policy application:
+> 
+> - Microsoft PowerApps
+> - Microsoft Flow
+> 
+> Currently, **having conditional access to only Microsoft Flow is not enough**. To learn how to set up Conditional Access policies, see [Plan a Conditional Access deployment](/azure/active-directory/conditional-access/plan-conditional-access) and [Control Access to Power Apps and Power Automate with Azure AD Conditional Access Policies](https://devblogs.microsoft.com/premier-developer/control-access-to-power-apps-and-power-automate-with-azure-ad-conditional-access-policies/#:~:text=Control%20Access%20to%20Power%20Apps%20and%20Power%20Automate,a%20Conditional%20Access%20Policy.%20...%204%20Summary.%20).
 
 1. In the Microsoft Power Platform admin center, select an environment. 
 

@@ -1,12 +1,11 @@
 ---
-title: "Troubleshoot common user access issues for Dataverse environments"
+title: "Troubleshoot common user access issues for environments"
 description: "Learn how to run and interpret diagnostics for user access to environments, including criteria for access."
 author: jimholtz
 ms.subservice: admin
 ms.author: jimholtz
 ms.reviewer: jimholtz
 ms.custom: "admin-security"
-ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 07/07/2021
@@ -20,9 +19,9 @@ search.app:
 ---
 # Troubleshooting: Common user access issues
 
-Multiple factors affect user access to Microsoft Dataverse environments. Administrators can use the **Run diagnostics** command to assess user access to a Dataverse environment, and get details and mitigation suggestions as to why a user can or can't access the environment.
+Multiple factors affect user access to environments. Administrators can use the **Run diagnostics** command to assess user access to an environment, and get details and mitigation suggestions as to why a user can or can't access the environment.
 
-To access a Dataverse environment, a user must meet the following criteria:
+To access an environment, a user must meet the following criteria:
 
 1. Be enabled for sign-in in Azure Active Directory (Azure AD).
 2. Have a valid license that has a Dynamics 365 or Microsoft Power Platform recognized service plan, or the environment must have active per-app plans.
@@ -33,7 +32,7 @@ A user's level of access within the environment and to the resources (apps and d
 
 ## User diagnostics
 
-Use the following steps to run user access diagnostics on a user in a Dataverse environment.
+Use the following steps to run user access diagnostics on a user in an environment.
 
 1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment. 
 
@@ -76,7 +75,7 @@ If you don't see your issue:
 
 ### User access diagnostic tool in the Power Platform admin center
 
-Several factors influence user access in a Microsoft Dataverse environment. To help administrators with diagnosing user access to an environment and reasons for access or no access, the new “Run diagnostics” feature in the Power Platform admin center provides basic access diagnostics for individual users in the environment. The feature helps to detect potential causes to user sign-in and other issues and suggests potential mitigations. See [User diagnostics](#user-diagnostics).
+Several factors influence user access in an environment. To help administrators with diagnosing user access to an environment and reasons for access or no access, the new “Run diagnostics” feature in the Power Platform admin center provides basic access diagnostics for individual users in the environment. The feature helps to detect potential causes to user sign-in and other issues and suggests potential mitigations. See [User diagnostics](#user-diagnostics).
 
 ### User has no roles 
 
@@ -90,13 +89,13 @@ See [How access to a record is determined](how-record-access-determined.md).
 ### User doesn't have a license / user doesn't belong to the organization 
 
 1. Verify if a license has been assigned to the user and assign one if not already. See: [Add a license to a user account](assign-licenses.md).
-2. Once a license is assigned, it may take some time for the license change to sync to the Dataverse environment. To trigger a sync for this user, the system administrator for the environment can re-add the user to the environment. See: [Add users to an environment that has a Dataverse database](add-users-to-environment.md#add-users-to-an-environment-that-has-a-dataverse-database). 
+2. Once a license is assigned, it may take some time for the license change to sync to the environment. To trigger a sync for this user, the system administrator for the environment can re-add the user to the environment. See: [Add users to an environment that has a Dataverse database](add-users-to-environment.md#add-users-to-an-environment-that-has-a-dataverse-database). 
 
 ### User isn't a member of the environment’s security group 
 
-1. As a system administrator of the environment, verify that the Dataverse environment is associated with any Azure Active Directory group. See:  [Associate a security group with a Dataverse environment](control-user-access.md#associate-a-security-group-with-a-dataverse-environment). 
+1. As a system administrator of the environment, verify that the environment is associated with any Azure Active Directory group. See: [Associate a security group with an environment](control-user-access.md#associate-a-security-group-with-an-environment). 
 2. Ensure the user with the access issue is a member of the group associated with the environment. See: [Create a security group and add members to the security group](control-user-access.md#create-a-security-group-and-add-members-to-the-security-group).
-3. Once user membership in the environment’s group is updated, it may take some time for the change to sync to the Dataverse environment. To trigger a sync for this user, the system administrator for the environment can re-add the user to the environment. See: [Add users to an environment that has a Dataverse database](add-users-to-environment.md#add-users-to-an-environment-that-has-a-dataverse-database). 
+3. Once user membership in the environment’s group is updated, it may take some time for the change to sync to the environment. To trigger a sync for this user, the system administrator for the environment can re-add the user to the environment. See: [Add users to an environment that has a Dataverse database](add-users-to-environment.md#add-users-to-an-environment-that-has-a-dataverse-database). 
 
 ### User doesn’t have sufficient permissions 
 
@@ -126,13 +125,13 @@ You don't have sufficient permissions to access customer engagement apps (Dynami
    
 ### User is missing from environment despite meeting all requirements 
 
-In some cases, users are not automatically provisioned into Dataverse environments. 
+In some cases, users are not automatically provisioned into environments. 
 
 If a user meets all access requirements but is still missing from an environment, the user may fall into one of the following cases:
 
-1. Users with only Office licenses (with Dataverse plan enabled) will not be pre-provisioned into Dataverse environments.
+1. Users with only Office licenses (with Dataverse plan enabled) will not be pre-provisioned into environments.
 
-2. Owners of Azure AD groups that are associated with Dataverse environments will not be pre-provisioned.
+2. Owners of Azure AD groups that are associated with environments will not be pre-provisioned.
 
 3. Members of Azure AD groups that are part of a Group Team created for the Azure AD group will not be pre-provisioned. 
 

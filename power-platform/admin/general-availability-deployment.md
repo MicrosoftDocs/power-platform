@@ -1,14 +1,13 @@
 ---
 title: "General availability deployment  | MicrosoftDocs"
 description: About general availability deployment
-author: jimholtz
+author: samathur
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: samathur 
 ms.reviewer: jimholtz
-ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/22/2021
+ms.date: 06/30/2022
 search.audienceType: 
   - admin
 search.app:
@@ -37,14 +36,14 @@ Each notification from the Message Center includes dates, the maintenance window
 
 The general availability deployment is based on the regions where environments are created.
 
-|Regions  |Schedule for 2021 wave 2 general availability deployment|
+|Regions  |Schedule for 2022 wave 2 general availability deployment|
 |---------|---------|
-|South America<br />Canada<br />India<br />France<br />South Africa<br />Germany<br />Switzerland |  Friday, October 1st to Sunday, October 3rd     |
-|Japan<br />Asia Pacific<br />Great Britain<br />Australia <br /> United Arab Emirates     | Friday, October 8th to Sunday, October 10th       |
-|Europe    | Friday, October 15th to Sunday, October 17th      |
-|North America     |  Friday, October 22nd to Sunday, October 24th           |
-|China | Friday, October 29th to Sunday, October 31st      |
-|GCC<br />GCC High<br />DOD  | Friday, October 29th to Sunday, October 31st  <br />See [Dynamics 365 US Government](microsoft-dynamics-365-government.md). |
+| Canada<br />France<br />Germany<br />India<br />Norway <br />South Africa<br />South America<br />South Korea<br />Switzerland  | Friday, September 30th to Sunday, October 2nd     |
+|Asia Pacific<br /> Australia <br /> Great Britain<br />Japan<br />United Arab Emirates     | Friday, October 7th to Sunday, October 9th        |
+|Europe    | Friday, October 14th to Sunday, October 16th      |
+|North America     |  Friday, October 21st to Sunday, October 23rd             |
+|China | Friday, October 28th to Sunday, October 30th       |
+|GCC<br />GCC High<br />DOD  | Friday, October 28th to Sunday, October 30th    <br />See [Dynamics 365 US Government](microsoft-dynamics-365-government.md). |
 
 ### See also
 [Dynamics 365 release schedule](/dynamics365/get-started/release-schedule) <br />

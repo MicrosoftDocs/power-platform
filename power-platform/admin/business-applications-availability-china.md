@@ -2,10 +2,9 @@
 title: "Power Apps operated by 21Vianet and Power Automate operated by 21Vianet | MicrosoftDocs"
 description: Power Apps operated by 21Vianet and Power Automate operated by 21Vianet
 author: jimholtz
-ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/03/2020
+ms.date: 02/23/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -20,7 +19,7 @@ search.app:
 
 ## Overview
 
-Microsoft Power BI, Microsoft Power BI Premium, Microsoft Power BI Embedded, Microsoft Dynamics 365 Customer Service, Microsoft Dynamics 365 Sales, Microsoft Dynamics 365 Field Service, Microsoft Dynamics 365 Finance, and Microsoft Dynamics 365 Supply Chain Management online services operated by 21Vianet are already available in China. Microsoft Power Apps and Microsoft Power Automate are now available to serve customers in regulated industries and commercial organizations that do business with tables in China and require local data residency.  
+Microsoft Power BI, Microsoft Power BI Premium, Microsoft Power BI Embedded, Microsoft Dynamics 365 Customer Service, Microsoft Dynamics 365 Sales, Microsoft Dynamics 365 Field Service, Microsoft Dynamics 365 Finance, and Microsoft Dynamics 365 Supply Chain Management online services operated by 21Vianet are already available in China. Microsoft Power Apps and Microsoft Power Automate are available to serve customers in regulated industries and commercial organizations that do business with tables in China and require local data residency.  
 
 Microsoft Dynamics 365 (Dynamics 365 Customer Service, Dynamics 365 Sales, Dynamics 365 Field Service, Dynamics 365 Finance, and Dynamics 365 Supply Chain Management) and Microsoft Power Platform (Microsoft Power BI, Power BI Premium, Power BI Embedded, Power Apps, and Power Automate) online services collectively known as “Business Applications” operated by 21Vianet are a physically separated instance of cloud services operated and transacted by a local operator, Shanghai Blue Cloud Technology Co., Ltd (“21Vianet”). This is a wholly owned subsidiary of Beijing 21Vianet Broadband Data Center Co., Ltd. located in mainland China.
 
@@ -70,13 +69,13 @@ The Azure AD account management services are hosted on physical servers managed 
 #### Power Apps features not available
 
 - Embed in [Microsoft Teams](https://powerapps.microsoft.com/blog/powerapps-teams/) as Microsoft Teams is not yet available in China.
-- [Power Apps solution checker](/powerapps/maker/common-data-service/use-powerapps-checker) (Planned for end of calendar year 2020.)
-- [Power Query](/powerapps/maker/common-data-service/data-platform-cds-newentity-pq) (Planned for end of calendar year 2020.)
-- [Dataflows in Power Apps](/powerapps/maker/common-data-service/create-and-use-dataflows) (Planned for end of calendar year 2020.)
+- [Power Apps solution checker](/powerapps/maker/common-data-service/use-powerapps-checker) 
+- [Power Query](/powerapps/maker/common-data-service/data-platform-cds-newentity-pq)
+- [Dataflows in Power Apps](/powerapps/maker/common-data-service/create-and-use-dataflows) 
 - [Integrate data into Microsoft Dataverse](./data-integrator.md)
 - [Export to Azure Data Lake (aka Athena)](/powerapps/maker/common-data-service/export-to-data-lake)
-- [Dual-write from Dataverse to Dynamics 365 Finance and Operations apps](https://powerapps.microsoft.com/blog/announcing-dual-write-preview/)
-- [Dataverse analytics](./analytics-common-data-service.md) (Planned for April 2020.)
+- [Dual-write from Dataverse to Dynamics 365 finance and operations apps](https://powerapps.microsoft.com/blog/announcing-dual-write-preview/)
+- [Dataverse analytics](./analytics-common-data-service.md) 
 - [AI Builder](/ai-builder/), a separate add-on offering for Microsoft Power Platform.
 - [Connectors](/connectors/connector-reference/): The most popular connectors in use in our commercial service (based on usage telemetry) have been published; if there is a connector available in the commercial offering that you do not see deployed, please contact support, and we will review your request. 
 

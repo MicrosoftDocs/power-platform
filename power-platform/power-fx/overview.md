@@ -3,10 +3,9 @@ title: Microsoft Power Fx overview | Microsoft Docs
 description: Overview of the Power Fx language
 author: gregli-msft
 manager: kvivek
-ms.service: power-platform
 ms.topic: conceptual
-ms.reviewer: nabuthuk
-ms.date: 02/26/2021
+ms.reviewer: jdaly
+ms.date: 03/06/2022
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType: 
@@ -16,21 +15,19 @@ search.app:
 ---
 # Microsoft Power Fx overview
 
-> [!NOTE]
-> Microsoft Power Fx is the new name for the formula language for canvas apps. This overview and associated articles are a work in progress as we extract the language from canvas apps, integrate it with other Microsoft Power Platform products, and make it available as open source. To learn more about and experience the language today, start with [Get started with formulas in Power Apps](/powerapps/maker/canvas-apps/working-with-formulas) and sign up for a free [Power Apps trial](https://powerapps.microsoft.com).
-
 Power Fx is the low-code language that will be used across Microsoft Power Platform. It's a general-purpose, strong-typed, declarative, and functional programming language.
 
 Power Fx is expressed in human-friendly text. It's a low-code language that makers can work with directly in an Excel-like formula bar or Visual Studio Code text window. The "low" in low-code is due to the concise and simple nature of the language, making common programming tasks easy for both makers and developers. It enables the full spectrum of development from no-code for those who have never programmed before to "pro-code" for the seasoned professional, with no learning or rewriting cliffs in between, enabling diverse teams to collaborate and save time and expense.
 
 > [!NOTE]
-> In this article, we refer to *makers* when we describe a feature that might be used at either end of the programming skill spectrum. We refer to the user as a *developer* if the feature is more advanced and is likely beyond the scope of a typical Excel user.
+> - Microsoft Power Fx is the new name for the formula language for canvas apps in Power Apps. This overview and associated articles are a work in progress as we extract the language from canvas apps, integrate it with other Microsoft Power Platform products, and make it available as open source. To learn more about and experience the language today, start with [Get started with formulas in canvas apps](/powerapps/maker/canvas-apps/working-with-formulas) in the Power Apps documentation and sign up for a free [Power Apps trial](https://powerapps.microsoft.com).
+> - In this article, we refer to *makers* when we describe a feature that might be used at either end of the programming skill spectrum. We refer to the user as a *developer* if the feature is more advanced and is likely beyond the scope of a typical Excel user.
 
 Power Fx binds objects together with declarative spreadsheet-like formulas. For example, think of the **Visible** property of a UI control as a cell in an Excel worksheet, with an associated formula that calculates its value based on the properties of other controls. The formula logic recalculates the value automatically, similar to how a spreadsheet does, which affects the visibility of the control.
 
 Also, Power Fx offers imperative logic when needed. Worksheets don't typically have buttons that can submit changes to a database, but apps often do. The same expression language is used for both declarative and imperative logic.
 
-Power Fx will be made available as open-source software. It's currently integrated into canvas apps, where you can experience it today. We're in the process of extracting it from Power Apps for use in other Microsoft Power Platform products and as open source. More information: [Microsoft Power Fx on GitHub](https://github.com/microsoft/power-fx)
+Power Fx will be made available as open-source software. It's currently integrated into canvas apps, and we're in the process of extracting it from Power Apps for use in other Microsoft Power Platform products and as open source. More information: [Microsoft Power Fx on GitHub](https://github.com/microsoft/power-fx)
 
 This article is an overview of the language and its design principles. To learn more about Power Fx, see the following articles:
 
@@ -57,8 +54,7 @@ Power Fx takes this a step further. An expression by itself says nothing about w
 
 For example, this [formula from Stack Overflow](https://stackoverflow.com/questions/350264/how-can-i-perform-a-reverse-string-search-in-excel-without-using-vba) searches a string in reverse order. In Excel, it looks like the following image.
 
-> [!div class="mx-imgBorder"]
-> ![Reverse search.](media/overview/reverse-search-excel.png "Reverse search")
+:::image type="content" source="media/overview/reverse-search-excel.png" alt-text="Reverse search":::
 
 Screenshot of a formula bar in Excel with the formula:
 =RIGHT(A1,LEN(A1)-
@@ -75,7 +71,7 @@ Power Fx works with this same formula, with the cell references replaced with co
 Screenshot of a Power Fx formula bar in Power Apps. The formula is
 =RIGHT(Input.Text,Len(Input.Text)-
 FIND("|",
-SUBSTITUTE(Input.text," ","|",
+SUBSTITUTE(Input.Text," ","|",
 Len(Input.Text)-Len(Substitute(Input.Text," ",""))))
 In the Input box below the formula, the text "Hello, World! It is great to meet you!" appears, letter by letter. At the same time in the Label box, the letters of the last word appear. When the full text appears in the Input box, the word "you!" appears in the Label box.
 
@@ -274,4 +270,4 @@ Some languages, such as JavaScript, use the concept of an *undefined* value for 
 [Global support](global.md)<br>
 [Expression grammar](expression-grammar.md)<br>
 [YAML formula grammar](yaml-formula-grammar.md)<br/>
-[Formulas in Power Apps](/powerapps/maker/canvas-apps/working-with-formulas)
+[Formulas in canvas apps](/powerapps/maker/canvas-apps/working-with-formulas)

@@ -1,15 +1,13 @@
 ---
-title: "Work with solutions using the SDK APIs | Microsoft Docs"
-description: "Learn about the APIs that are available to manage Microsoft Dataverse solutions."
+title: "Work with solutions using the Dataverse SDK | Microsoft Docs"
+description: "Learn about the .NET APIs that are available to manage Microsoft Dataverse solutions."
 keywords: 
 author: mikkelsen2000
-ms.subservice: alm
 ms.author: pemikkel
 manager: kvivek
 ms.custom: ""
-ms.date: 05/05/2020
-ms.reviewer: "pehecke"
-ms.service: power-platform
+ms.date: 04/05/2022
+ms.reviewer: pehecke
 ms.topic: "article"
 search.audienceType: 
   - developer
@@ -18,7 +16,7 @@ search.app:
   - D365CE
 ---
 
-# Work with solutions using the SDK APIs
+# Work with solutions using the Dataverse SDK
 
 As part of your development to production lifecycle you may want to create
 custom automation to handle certain tasks. For example, in your DevOps project
@@ -26,7 +24,7 @@ pipeline you might want to execute some custom code or script that creates a
 sandbox environment, imports an unmanaged solution, exports that unmanaged
 solution as a managed solution, and, finally, deletes the environment. You can do
 this and more by using the APIs that are available to you. Below are some examples
-of what you can accomplish using the .NET SDK APIs, the SOAP 2011 endpoint, and custom code.
+of what you can accomplish using the [Dataverse SDK for .NET](https://www.nuget.org/packages/Microsoft.CrmSdk.CoreAssemblies/) and custom code.
 
 > [!NOTE]
 > You can also perform these same operations using the Web API. The related actions are: [ImportSolution](/dynamics365/customer-engagement/web-api/importsolution), [ExportSolution](/dynamics365/customer-engagement/web-api/exportsolution), [CloneAsPatch](/dynamics365/customer-engagement/web-api/cloneaspatch), and [CloneAsSolution](/dynamics365/customer-engagement/web-api/cloneassolution).
@@ -64,7 +62,7 @@ Publisher _myPublisher = new Publisher
    UniqueName = "contoso-publisher",
    FriendlyName = "Contoso publisher",
    SupportingWebsiteUrl =
-      "https://docs.microsoft.com/powerapps/developer/common-data-service/overview",
+      "https://docs.microsoft.com/powerapps/developer/data-platform/overview",
    CustomizationPrefix = "contoso",
    EMailAddress = "someone@contoso.com",
    Description = "This publisher was created from sample code"
@@ -135,7 +133,7 @@ Solution solution = new Solution
    Version = "1.0"
 };
 
-//Check whether the solution already exists
+// Check whether the solution already exists
 QueryExpression queryCheckForSampleSolution = new QueryExpression
 {
    EntityName = Solution.EntityLogicalName,
@@ -322,7 +320,7 @@ The following code uses the <xref:Microsoft.Crm.Sdk.Messages.AddSolutionComponen
   
  ```csharp
 // Add an existing Solution Component
-//Add the Account entity to the solution
+// Add the Account entity to the solution
 RetrieveEntityRequest retrieveForAddAccountRequest = new RetrieveEntityRequest()
 {
     LogicalName = Account.EntityLogicalName
@@ -342,8 +340,8 @@ _serviceProxy.Execute(addReq);
 This sample shows how to remove a solution component from an unmanaged solution. The following code uses the <xref:Microsoft.Crm.Sdk.Messages.RemoveSolutionComponentRequest> to remove an entity solution component from an unmanaged solution. The `solution.UniqueName` references the solution created in [Create an unmanaged solution](#create-an-unmanaged-solution).  
   
  ```csharp
- // Remove a Solution Component
-//Remove the Account entity from the solution
+// Remove a Solution Component
+// Remove the Account entity from the solution
 RetrieveEntityRequest retrieveForRemoveAccountRequest = new RetrieveEntityRequest()
 {
     LogicalName = Account.EntityLogicalName
@@ -459,12 +457,12 @@ The `DependencyReport` method is in the following code sample.
   
 ```csharp
 /// <summary>
-   /// Shows how to get a more friendly message based on information within the dependency
-   /// <param name="dependency">A Dependency returned from the RetrieveDependentComponents message</param>
-   /// </summary> 
+/// Shows how to get a more friendly message based on information within the dependency
+/// <param name="dependency">A Dependency returned from the RetrieveDependentComponents message</param>
+/// </summary> 
 public void DependencyReport(Dependency dependency)
-   {
- //These strings represent parameters for the message.
+{
+ // These strings represent parameters for the message.
     String dependentComponentName = "";
     String dependentComponentTypeName = "";
     String dependentComponentSolutionName = "";
@@ -472,7 +470,7 @@ public void DependencyReport(Dependency dependency)
     String requiredComponentTypeName = "";
     String requiredComponentSolutionName = "";
 
- //The ComponentType global Option Set contains options for each possible component.
+ // The ComponentType global Option Set contains options for each possible component.
     RetrieveOptionSetRequest componentTypeRequest = new RetrieveOptionSetRequest
     {
      Name = "componenttype"
@@ -492,7 +490,7 @@ public void DependencyReport(Dependency dependency)
       requiredComponentTypeName = opt.Label.UserLocalizedLabel.Label;
      }
     }
- //The name or display name of the compoent is retrieved in different ways depending on the component type
+ // The name or display name of the compoent is retrieved in different ways depending on the component type
     dependentComponentName = getComponentName(dependency.DependentComponentType.Value, (Guid)dependency.DependentComponentObjectId);
     requiredComponentName = getComponentName(dependency.RequiredComponentType.Value, (Guid)dependency.RequiredComponentObjectId);
 
@@ -514,7 +512,7 @@ public void DependencyReport(Dependency dependency)
       );
     requiredComponentSolutionName = requiredSolution.FriendlyName;
 
- //Display the message
+ // Display the message
      Console.WriteLine("The {0} {1} in the {2} depends on the {3} {4} in the {5} solution.",
      dependentComponentName,
      dependentComponentTypeName,
@@ -522,7 +520,7 @@ public void DependencyReport(Dependency dependency)
      requiredComponentName,
      requiredComponentTypeName,
      requiredComponentSolutionName);
-   }
+}
 ```
   
 ### Detect whether a solution component may be deleted
@@ -545,7 +543,7 @@ RetrieveOptionSetResponse retrieveOptionSetResponse =
 _globalOptionSetId = retrieveOptionSetResponse.OptionSetMetadata.MetadataId;
 if (_globalOptionSetId != null)
 { 
- //Use the global OptionSet MetadataId with the appropriate componenttype
+ // Use the global OptionSet MetadataId with the appropriate componenttype
  // to call RetrieveDependenciesForDeleteRequest
  RetrieveDependenciesForDeleteRequest retrieveDependenciesForDeleteRequest = new RetrieveDependenciesForDeleteRequest 
 { 
@@ -580,6 +578,5 @@ if (_globalOptionSetId != null)
  }
 }
 ```
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

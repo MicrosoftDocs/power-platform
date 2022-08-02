@@ -1,14 +1,12 @@
 ---
 title: "Integrate (synchronize) your email system  | MicrosoftDocs"
 description: Integrate (synchronize) your email system
-author: mduelae
-ms.service: power-platform
+author: jimholtz
 ms.component: pa-admin
-ms.topic: conceptual
-ms.custom: intro-internal
+ms.topic: overview
 ms.date: 09/08/2020
 ms.subservice: admin
-ms.author: mkaur
+ms.author: jimholtz
 search.audienceType: 
   - admin
 search.app:
@@ -25,8 +23,7 @@ One of the main reasons people use customer engagement apps (Dynamics 365 Sales,
    
   
 > [!IMPORTANT]
-> - In previous versions of Dynamics CRM, you could also use the Email Router to synchronize records. The Email Router has been deprecated as of the Dynamics 365 (online), version 9.0. We strongly recommend that you migrate all email routing functionality to use  server-side synchronization. 
-> - Internet Message Access Protocol (IMAP) email servers are not currently supported by server-side synchronization or the Email Router.
+> - In previous versions of Dynamics CRM, you could also use the Email Router to synchronize records. The [Email Router was deprecated](../important-changes-coming.md#microsoft-dynamics-365-email-router-is-deprecated) on July 17, 2018 and it will no longer function starting April 12, 2021. Although the Email Router may still have worked with Dynamics 365 on-premises, this configuration is no longer supported. All email routing functionality should be migrated to use server-side synchronization. 
 > - Effective March 2020, the legacy Dynamics 365 for Outlook (also referred to as Outlook COM add-in) is deprecated. Customers must transition to the modern [Dynamics 365 App for Outlook](/dynamics365/outlook-app/overview) before October 1, 2020. Microsoft will continue to provide support, security and other critical updates to the Outlook COM Add-in until October 1, 2020.
 > 
 > For further information and steps to make a smooth transition, download [Dynamics 365 for Outlook (COM add-in) Playbook](https://aka.ms/OutlookCOMPlaybook).

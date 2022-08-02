@@ -5,10 +5,9 @@ author: paulliew
 ms.subservice: admin
 ms.author: paulliew
 ms.reviewer: jimholtz
-ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/04/2021
+ms.date: 07/11/2022
 search.audienceType: 
   - admin
 search.app:
@@ -26,11 +25,12 @@ Before a secure connection is established, the protocol and cipher are negotiate
 You can use your on-premises/local servers to integrate with the following Dataverse services:
 1. Syncing emails from your Exchange server.
 2. Running Outbound plug-ins.
-3. Running native/local clients to access your Dataverse environments.
+3. Running native/local clients to access your environments.
 
 To comply with our security policy for a secure connection, your server must have the following: 
 
 1. Transport Layer Security (TLS) 1.2 compliance
+
 2. At least one of the following ciphers: 
 
    TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 <br />
@@ -42,16 +42,49 @@ To comply with our security policy for a secure connection, your server must hav
    TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256 <br />
    TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
 
-> [!IMPORTANT]
-> Older TLS 1.0 & 1.1 and cipher suites, (for example TLS_RSA) have been deprecated; see the [announcement](../important-changes-coming.md#tls-rsa-cipher-suites-are-deprecated).
-> 
-> Your servers must have the above security protocol to continue running the Dataverse services.
+   > [!IMPORTANT]
+   > Older TLS 1.0 & 1.1 and cipher suites, (for example TLS_RSA) have been deprecated; see the [announcement](../important-changes-coming.md#tls-rsa-cipher-suites-are-deprecated).
+   > 
+   > Your servers must have the above security protocol to continue running the Dataverse services.
 
-You may either upgrade the [Windows version](/windows/win32/secauthn/cipher-suites-in-schannel) or update the [Windows TLS registry](/windows-server/security/tls/tls-registry-settings) to make sure that your server endpoint supports one of these ciphers.
+   You may either upgrade the [Windows version](/windows/win32/secauthn/cipher-suites-in-schannel) or update the [Windows TLS registry](/windows-server/security/tls/tls-registry-settings) to make sure that your server endpoint supports one of these ciphers.
 
-To verify that your server complies with the security protocol, you can perform a test using a TLS cipher and scanner tool:
-1. Test your hostname using [SSLLABS](https://www.ssllabs.com/ssltest/analyze.html), or
-2. Scan your server using [NMAP](https://nmap.org/)
+   To verify that your server complies with the security protocol, you can perform a test using a TLS cipher and scanner tool:
+   1. Test your hostname using [SSLLABS](https://www.ssllabs.com/ssltest/analyze.html), or
+   2. Scan your server using [NMAP](https://nmap.org/)
+
+3. The following Root CA Certificates installed. Install only those that correspond to your cloud environment.
+
+   **For Public/PROD**
+
+   |Certificate Authority  |Expiry date  |Serial Number/Thumbprint  |Download  |
+   |---------|---------|---------|---------|
+   |DigiCert Global Root G2     | Jan 15 2038        | 0x033af1e6a711a9a0bb2864b11d09fae5<br />DF3C24F9BFD666761B268073FE06D1CC8D4F82A4  |  [PEM](https://crt.sh/?d=8656329)       |
+   |DigiCert Global Root G3     |  Jan 15, 2038       |  0x055556bcf25ea43535c3a40fd5ab4572<br />7E04DE896A3E666D00E687D33FFAD93BE83D349E    | [PEM](https://crt.sh/?d=8568700)        |
+   |Microsoft ECC Root Certificate Authority 2017     | Jul 18, 2042        | 0x66f23daf87de8bb14aea0c573101c2ec<br />999A64C37FF47D9FAB95F14769891460EEC4C3C5     | [PEM](https://crt.sh/?d=2565145421)   |
+   |Microsoft RSA Root Certificate Authority 2017   |  Jul 18, 2042       | 0x1ed397095fd8b4b347701eaabe7f45b3<br />3A5E64A3BFF8316FF0EDCCC618A906E4EAE4D74     | [PEM](https://crt.sh/?d=2565151295)     |
+
+
+   **For Fairfax/Arlington/US Gov Cloud**
+
+   |Certificate Authority  |Expiry date  |Serial Number/Thumbprint  |Download  |
+   |---------|---------|---------|---------|
+   |DigiCert Global Root CA     | Nov 10, 2031      | 0x083be056904246b1a1756ac95991c74a<br />A8985D3A65E5E5C4B2D7D66D40C6DD2FB19C5436  |  [PEM](https://crt.sh/?d=853428)   |
+   |DigiCert SHA2 Secure Server CA     |  Sep 22, 2030       |  0x02742eaa17ca8e21c717bb1ffcfd0ca0<br />626D44E704D1CEABE3BF0D53397464AC8080142C  | [PEM](https://crt.sh/?d=3422153451)   |
+   |DigiCert TLS Hybrid ECC SHA384 2020 CA1    | Sep 22, 2030        | 0x0a275fe704d6eecb23d5cd5b4b1a4e04<br />51E39A8BDB08878C52D6186588A0FA266A69CF28 | [PEM](https://crt.sh/?d=3422153452)   |
+
+   **For Mooncake/Gallatin/China Gov Cloud**
+
+   |Certificate Authority  |Expiry date  |Serial Number/Thumbprint  |Download  |
+   |---------|---------|---------|---------|
+   |DigiCert Global Root CA     | Nov 10, 2031  | 0x083be056904246b1a1756ac95991c74a<br />A8985D3A65E5E5C4B2D7D66D40C6DD2FB19C5436 |  [PEM](https://crt.sh/?d=853428)   |
+   |DigiCert Basic RSA CN CA G2     |  Mar 4, 2030       |  0x02f7e1f982bad009aff47dc95741b2f6<br />4D1FA5D1FB1AC3917C08E43F65015E6AEA571179  | [PEM](https://crt.sh/?d=2545289014)   |
+
+   **Why is this need?**
+
+   See [TLS 1.2 Standards Documentation - Section 7.4.2](https://datatracker.ietf.org/doc/html/rfc5246#section-7.4.2) - certificate-list.
+
+
 
 ### See also
 [Connect to Exchange Server (on-premises)](connect-exchange-server-on-premises.md) <br />

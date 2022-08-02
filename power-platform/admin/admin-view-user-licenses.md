@@ -1,9 +1,8 @@
 ---
 title: "Download a list of active users in your tenant"
 description: "Download a report for a list of active users in your tenant."
-ms.service: power-platform
 ms.component: pa-admin
-ms.topic: quickstart
+ms.topic: conceptual
 ms.date: 08/05/2020
 author: jimholtz
 ms.subservice: admin

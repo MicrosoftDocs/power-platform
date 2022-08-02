@@ -3,7 +3,7 @@ title: "Training and upskilling strategy for makers - Microsoft Power Platform |
 description: "It is important to think about your upskilling strategy for makers - what will be available for new, intermediate, and advanced makers to ensure they are able to learn constantly and can get powered up"
 author: manuelap-msft
 manager: devkeydet
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/11/2020
@@ -30,6 +30,7 @@ Check out:
 - [Microsoft Power Platform documentation](/power-platform)
 - [Business Applications communities](https://powerusers.microsoft.com)
 - [Find a local user group](https://www.powerappsug.com/home)
+- [Leverage Microsoft Learn in your organization](/learn/support/integrations) 
 
 ## Grow your pool of talented people
 

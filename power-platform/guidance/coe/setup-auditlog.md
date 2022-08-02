@@ -3,10 +3,10 @@ title: "Set up audit log components | MicrosoftDocs"
 description: "The Audit Log Sync flow connects to the Audit Log to gather telemetry data (unique users, launches) for apps in Microsoft 365."
 author: manuelap-msft
 manager: devkeydet
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/06/2021
+ms.date: 01/10/2022
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jimholtz
@@ -25,6 +25,9 @@ search.app:
 The Audit Log Sync flow connects to the Microsoft 365 audit log to gather telemetry data (unique users, launches) for apps. The flow uses a custom connector to connect to the Audit Log. In the following instructions, you'll set up the custom connector and configure the flow.
 
 The Center of Excellence (CoE) Starter Kit will work without this flow, but the usage information (app launches, unique users) in the Power BI dashboard will be blank.
+
+>[!IMPORTANT]
+>Complete the instructions in [Before setting up the CoE Starter Kit](setup.md) and [Set up inventory components](setup-core-components.md) before continuing with the setup here. This article assumes you have your [environment set up](setup.md#create-your-environment) and are logged in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
 
 ## Before you use the audit log connector
 
@@ -58,17 +61,11 @@ Using these steps, you'll set up an Azure AD app registration that will be used 
 
       ![Delegated permissions.](media/coe36.png "Delegated permissions")
 
-   1. Select **Application permissions**, and then select **ActivityFeed.Read** and **ServiceHealth.Read**.
-
-      ![Application permissions.](media/coe37.png "Application permissions")
-
    1. Select **Add permissions**.
 
-1. Select **Grant Admin Consent for (your organization)**.
+1. Select **Grant Admin Consent for (your organization)**. Prerequisites: [Grant tenant-wide admin consent to an application](/azure/active-directory/manage-apps/grant-admin-consent#prerequisites)
 
-   The API permissions now reflect delegated **ActivityFeed.Read**, and application **ActivityFeed.Read** and **ServiceHealth.Read** permissions, with a status of **Granted for _(your organization)_**.
-
-   ![API permissions.](media/coe38.png "API permissions")
+   The API permissions now reflect delegated **ActivityFeed.Read** with a status of **Granted for _(your organization)_**.
 
 1. Select **Certificates and secrets**.
 
@@ -93,15 +90,17 @@ Now you'll configure and set up a custom connector that uses the [Office 365 Man
 
   ![Custom connector setup.](media/coe-custom1.png "Custom connector setup")
 
-1. Leave the **1. General** page as-is, and then select **2. Security**.
-    
+1. If your tenant is a commercial tenant, leave the **General** page as is.
+
    >[!IMPORTANT]
-   > - If your tenant is a GCC tenant, change the host to https://manage-gcc.office.com.
-   > - If your tenant is a GCC high tenant, change the host to https://manage.office365.us.
-   > - If your tenant is a DoD tenant, change the host to https://manage.protection.apps.mil.
+   >
+   > - If your tenant is a GCC tenant, change the host to manage-gcc.office.com.
+   > - If your tenant is a GCC high tenant, change the host to manage.office365.us.
+   > - If your tenant is a DoD tenant, change the host to manage.protection.apps.mil.
    >
    > More information: [Activity API operations](/office/office-365-management-api/office-365-management-activity-api-reference?preserve-view=true&view=o365-worldwide#activity-api-operations)
 
+1. Select **Security**.
 1. Select **Edit** at the bottom of the **OAuth 2.0** area to edit the authentication parameters.
 
    ![Edit OAuth configuration.](media/coe42.png "Edit OAuth configuration")
@@ -142,7 +141,7 @@ Go back to the custom connector to set up a connection to the custom connector a
 > [!IMPORTANT]
 > You must complete these steps for subsequent steps to work. If you don't create a new connection and test the connector here, setting up the flow and child flow in later steps will fail.
 
-1. On the **Custom Connector** page, select **4. Test**.
+1. On the **Custom Connector** page, select **Test**.
 
 1. Select **+ New connection**, and then sign in with your account.
 
@@ -150,7 +149,8 @@ Go back to the custom connector to set up a connection to the custom connector a
 
    ![Custom connector Start Subscription.](media/coe43.png "Custom connector Start Subscription")
 
-1. Paste the **directory (tenant) ID**&mdash;copied earlier from the **App Registration** overview page in Azure AD&mdash;into the **Tenant** field, and then paste the **application (client) ID** into **PublisherIdentifier**.
+1. Paste the **directory (tenant) ID** - copied earlier from the **App Registration** overview page in Azure AD - into the **Tenant** field.
+1. Paste the **application (client) ID** into **PublisherIdentifier**.
 
 1. Select **Test Operation**.
 
@@ -159,7 +159,9 @@ You should see a (200) status returned, which means the query was successful.
 ![Successful status being returned from the StartSubscription activity.](media/coe44.png "Successful status being returned from the StartSubscription activity")
 
 > [!IMPORTANT]
-> If you don't see a (200) response, the request has failed. There's an error with your setup that's keeping the flow from working. Common issues to check are: 
+> If you have previously enabled the subscription, you will see a **(400) The subscription is already enabled** message. This means the subscription has successfully been enabled in the past. You can ignore this error and continue with the setup.
+> If you don't see the above message or a (200) response, the request may have failed. There could be an error with your setup that's keeping the flow from working. Common issues to check are:
+>
 >
 > - Are audit logs enabled, and do you have permission to view the audit logs? Check [protection.office.com](https://protection.office.com) > **Search** > **Audit Log Search**.
 > - If you don't have permissions, see [Before you search the audit log](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?preserve-view=true&view=o365-worldwide#before-you-search-the-audit-log).
@@ -171,7 +173,7 @@ You should see a (200) status returned, which means the query was successful.
 
 ### Set up the Power Automate flow
 
-A Power Automate flow uses the custom connector, queries the audit log daily, and writes the Power Apps launch events to a Microsoft Dataverse table, which is then used in the Power BI dashboard to report on sessions and unique users of an app.
+A Power Automate flow uses the custom connector, queries the audit log daily, and writes the Power Apps launch events to a Microsoft Dataverse table. This table is then used in the Power BI dashboard to report on sessions and unique users of an app.
 
 1. Follow the instructions in [Set up core components](setup-core-components.md) to download the solution.
 1. Go to [make.powerapps.com](https://make.powerapps.com).
@@ -180,36 +182,56 @@ A Power Automate flow uses the custom connector, queries the audit log daily, an
     ![Import the CoE audit log components solution.](media/coe-custom2.png "Import the CoE audit log components solution")
 
 1. Open the **Center of Excellence – Audit Log solution**.
-1. [Remove the unmanaged layer](setup.md#installing-updates) from the **Admin \| \[Child\] Admin | Sync Logs**.
-1. Select the **Admin \| \[Child\] Admin | Sync Logs**.
+1. [Remove the unmanaged layer](after-setup.md) from the **\[Child\] Admin | Sync Logs**.
+1. Select the **\[Child\] Admin | Sync Logs**.
 1. Edit the **Run only users** settings.
 
    ![Child flow - run only users.](media/coe49.png "Child flow - run only users")
 
-1. For the custom connector, Dataverse and Office 365 Outlook, change the value to **Use this connection (userPrincipalName\@company.com)**. If there is no connection for any of the connectors, go to **Data** > **Connections**, and create one for the connector.
+1. For the custom connector, Dataverse and Office 365 Outlook, change the value to **Use this connection (userPrincipalName\@company.com)**. If there's no connection for any of the connectors, go to **Dataverse** > **Connections**, and create one for the connector.
 
    ![Configure run only users.](media/coe50.png "Configure run only users")
 
 1. Select **Save**, and then close the **Flow details** tab.
 
-1. (Optional) Edit the TimeInterval-Unit and TimeInterval-Interval environment variables to gather smaller chunks of time. The default value is to chunk 1 day into 1 hour segments. You will receive an alert from this solution if the Audit Log fails to collect all data with your configured time interval.
+1. (Optional) Edit the TimeInterval-Unit and TimeInterval-Interval environment variables to gather smaller chunks of time. The default value is to chunk 1 day into 1 hour segments. You'll receive an alert from this solution if the Audit Log fails to collect all data with your configured time interval.
 
     | Name | Description |
     |------|---------------|
-    |StartTime-Interval | Must be a whole number to represent the start time for how far back to fetch. <br> Default value: 1 (for 1 day back) |
+    |StartTime-Interval | Must be a whole number to represent the start time for how far back to fetch. <br> Default value: 1 (for one day back) |
     |StartTime-Unit | Determines units for how far back in time to go to fetch data. <br>Must be a value from accepted as an input parameter to [Add to Time](/power-automate/desktop-flows/actions-reference/datetime#add). <br> Example legal values: Minute, Hour, Day <br>Default value: Day |
     |TimeInterval-Unit | Determines units for chunking the time since start. <br>Must be a value from accepted as an input parameter to [Add to Time](/power-automate/desktop-flows/actions-reference/datetime#add). <br> Example legal values: Minute, Hour, Day <br>Default value: Hour |
     |TimeInterval-Interval | Must be a whole number to represent the number of chunks of type unit (above).<br> Default value: 1 (for 1 hour chunks) |
     |TimeSegment-CountLimit | Must be a whole number to represent the limit on the number of chunks that can be created.<br> Default value: 60 |
 
     > [!IMPORTANT]
-    > We cannot assist in your attempts to configure these, they have been added as a courtesy for you to test and find settings that work for you. The default values provided work in a medium sized tenant.
+    > The default values provided work in a medium sized tenant. You may have to adjust the values multiple times for this to work for your tenant size.
 
     > [!IMPORTANT]
-    > Learn how to about environment variables: [Update Environment Variables](limitations.md#updating-environment-variables)
+    > Learn how to about environment variables: [Update Environment Variables](faq.md#update-environment-variables)
 
 1. Back in the solution, turn on both the \[Child\] Admin | Sync Logs flow and the Admin | Sync Audit Logs flow.
 
    ![Turn audit log flows on.](media/coe-custom4.PNG "Turn audit log flows on")
+
+### Example configurations for environment variables
+
+Here are some example configurations for these values:
+
+| StartTime-Interval | StartTime-Unit | TimeInterval-Interval | TimeInterval-Unit | TimeSegment-CountLimit | Expectation |
+|--------------------|----------------|-----------------------|-------------------|------------------------|-------------|
+| 1 | day | 1 | hour | 60 | Will create 24 child flows, which is within the limit of 60.<br>Each child flow will do the work to pull back 1 hour of logs from the past 24 hours |
+| 2 | day | 1 | hour | 60 | Will create 48 child flows, which is within the limit of 60.<br>Each child flow will do the work to pull back 1 hour of logs from the past 48 hours |
+| 1 | day | 5 | minute | 300 | Will create 288 child flows, which is within the limit of 300.<br>Each child flow will do the work to pull back 5 minutes of from the past 24 hours |
+| 1 | day | 15 | minute | 100 | Will create 96 child flows, which is within the limit of 100.<br>Each child flow will do the work to pull back 15 minutes of from the past 24 hours |
+
+## How to get older data
+
+This solution collects app launches from the moment it's configured, and is not set up to collect historic app launches. Depending on your [Microsoft 365 license](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance#before-you-search-the-audit-log), historic data will be available for up to a year using the audit log in Microsoft Purview.
+You can load historic data into the CoE Starter Kit tables manually. Learn more: [How to import old Audit Logs](https://github.com/microsoft/coe-starter-kit/issues/3040)
+
+## It looks like I found a bug with the CoE Starter Kit; where should I go?
+
+To file a bug against the solution, go to [aka.ms/coe-starter-kit-issues](https://aka.ms/coe-starter-kit-issues).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

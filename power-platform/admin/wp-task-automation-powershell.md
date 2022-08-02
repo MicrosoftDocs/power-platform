@@ -1,13 +1,13 @@
 ---
 title: "Automation of tasks with PowerShell  | MicrosoftDocs"
 description: Automate tasks with PowerShell
-author: jimholtz
-ms.service: power-platform
+author: laneswenka
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 08/26/2020
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: laswenka
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:
@@ -16,6 +16,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
+
 # Automation of tasks with PowerShell 
 
 The PowerShell cmdlets enable admins to complete admin portal task using script commands. With PowerShell you can sequentially execute multiple commands at once or pipe output commands to automate common tasks. 
@@ -26,13 +27,13 @@ Using PowerShell cmdlets and management connectors, admins can build flows and a
 |---------|---------|
 |Power Apps cmdlets <br/>[PowerShell support for Power Apps](powerapps-powershell.md)  |Designed for app makers and administrators to automate tasks with environments and associated apps, flows, and connectors.      |
 |Microsoft 365 cmdlets<br/> [Get started with PowerShell for Microsoft 365](/microsoft-365/enterprise/getting-started-with-microsoft-365-powershell?view=o365-worldwide)   |Use for Microsoft 365 related tasks to automate user-related actions and tasks. For example, the assignment of licenses.         |
-|Dynamics 365 cmdlets<br/> [Overview of Dynamics 365 Customer Engagement (on-premises) PowerShell](/powershell/dynamics365/customer-engagement/overview?view=dynamics365ce-ps)    |Use for environments with Microsoft Dataverse databases. Modules include support for the Dataverse online admin API, and automating solution deployment to the Dataverse environments.         |
+|Dynamics 365 cmdlets<br/> [Overview of Dynamics 365 Customer Engagement (on-premises) PowerShell](/powershell/dynamics365/customer-engagement/overview?view=dynamics365ce-ps)    |Use for environments with Microsoft Dataverse databases. Modules include support for the Dataverse online admin API, and automating solution deployment to the environments.         |
 |Microsoft Azure cmdlets <br/> [Azure PowerShell documentation](/powershell/azure/?view=azps-4.8.0)    |Use for including any Azure components in your overall solution. You can use for scripting setup of the on-prem application gateway.        |
 
 You can use a combination of all the above cmdlets to build PowerShell scripts to do bulk operations on users, environments, or their resources.
 
 > [!TIP]
-> Examples can also be found when installing and testing the [Center of Excellence Starter Kit](../guidance/coe/starter-kit.md) or using the Admin-in-a-Day hands-on labs that can be found on GitHub ([https://aka.ms/powerapps/admininaday](https://aka.ms/powerapps/admininaday)).
+> Examples can also be found when installing and testing the [Center of Excellence Starter Kit](../guidance/coe/starter-kit.md) or using the Admin-in-a-Day hands-on labs that can be found on GitHub ([Admin in a day](https://github.com/microsoft/powerapps-tools/tree/master/Administration/AdminInADay)).
 
 ## Common PowerShell tasks
 

@@ -1,13 +1,12 @@
 ---
 title: "View the fields that are synchronized between customer engagement apps and Outlook  | MicrosoftDocs"
 description: View the fields that are synchronized between customer engagement apps and Outlook
-author: mduelae
-ms.service: power-platform
+author: jimholtz
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/11/2020
 ms.subservice: admin
-ms.author: mkaur
+ms.author: jimholtz
 search.audienceType: 
   - admin
 search.app:

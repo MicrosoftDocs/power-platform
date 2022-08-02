@@ -3,7 +3,7 @@ title: "Track user access - Microsoft Power Platform | MicrosoftDocs"
 description: "Power Apps and Power Automate activities can be tracked and viewed from the Office 365 Security and Compliance Center. This allows tracking when apps or flows are created, edited, or deleted along with other key activities."
 author: manuelap-msft
 manager: devkeydet
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/09/2020
@@ -76,7 +76,7 @@ Add-RoleGroupMember "Compliance Management" -Member user1
 
 If your organization uses a Security Information and Event Management (SIEM) server, you can learn how to enable integration with activity logging. More information: [SIEM Server Integration](/microsoft-365/security/office-365-security/siem-server-integration)
 
-You might also find Microsoft Compliance Manager helpful to manage your compliance efforts across Microsoft cloud services in a single place. More information: [Compliance Manager](https://aka.ms/compliancemanager)
+You might also find Microsoft Purview Compliance Manager helpful to manage your compliance efforts across Microsoft cloud services in a single place. More information: [Compliance Manager](https://aka.ms/compliancemanager)
 
 As an administrator, you should:
 

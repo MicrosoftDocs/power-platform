@@ -8,11 +8,11 @@ brand: power-virtual-agents
 metadata:
   title: Microsoft Power Virtual Agents documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: See how Power Virtual Agents can be used to build powerful AI-driven chatbots. # Required; article description that is displayed in search results. < 160 chars.
-  ms.service: power-virtual-agents #Required; service per approved list. service slug assigned to your service by ACOM.
+  
   ms.topic: hub-page # Required
   author: iaanw #Required; your GitHub user alias, with correct capitalization.
   ms.author: iawilt #Required; microsoft alias of author; optional team alias.
-  ms.date: 09/22/2020 #Required; mm/dd/yyyy format.
+  ms.date: 05/24/2022 #Required; mm/dd/yyyy format.
   ms.custom: intro-internal
   hide_bc: false
 
@@ -30,7 +30,7 @@ highlightedContent:
     # Card
     - title: What's new in Power Virtual Agents?
       itemType: whats-new
-      url: /power-platform-release-plan/2020wave2/power-virtual-agents/planned-features
+      url: https://go.microsoft.com/fwlink/?linkid=2082154
 
     # Card
     - title: "Power Virtual Agents videos"
@@ -38,9 +38,19 @@ highlightedContent:
       url: https://www.youtube.com/channel/UCn8PsBlVsGUt8J3tZCKsMPA
 
     # Card
+    - title: "Power Virtual Agents Community"
+      itemType: learn
+      url: https://go.microsoft.com/fwlink/?linkid=2058639
+
+    # Card
     - title: Power Virtual Agents training on Microsoft Learn
       itemType: learn
       url: /learn/browse/?expanded=power-platform&products=power-virtual-agents
+
+    # Card
+    - title: Register for a free virtual Power Virtual Agents in a Day workshop
+      itemType: learn
+      url: https://powerplatform.microsoft.com/training-workshops/?accordion=1&tab=6
 
 # conceptualContent section
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -147,6 +157,9 @@ additionalContent:
         - title: Power BI
           summary: Turn your unrelated sources of data into coherent, visually immersive, and interactive insights.
           url: /power-bi
+        - title: Power Pages
+          summary: Design, host, and administer secure, modern, and low-code business websites.
+          url: /power-pages
 
     - title: See also
       items:

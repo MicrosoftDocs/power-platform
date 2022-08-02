@@ -8,7 +8,7 @@ ms.author: kartikka
 ms.custom: ""
 ms.date: 08/30/2021
 ms.reviewer: "pehecke"
-ms.service: power-platform
+
 ms.topic: "article"
 search.audienceType: 
   - developer
@@ -23,7 +23,7 @@ search.app:
 
 GitHub Actions for Microsoft Power Platform include the following capabilities:
 
-- Importing and exporting application metadata (also known as solutions) that contain various platform components such as canvas apps, model-driven apps, UI flows, Power Virtual Agents chatbots, AI Builder models, customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), and connectors between development environments and source control.
+- Importing and exporting application metadata (also known as solutions) that contain various platform components such as canvas apps, model-driven apps, desktop flows, Power Virtual Agents chatbots, AI Builder models, customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), and connectors between development environments and source control.
 
 - Deploying to downstream environments.
 
@@ -35,7 +35,7 @@ You can use GitHub Actions for Microsoft Power Platform along with any other ava
 GitHub Actions for Microsoft Power Platform are available at <https://github.com/marketplace/actions/powerplatform-actions>.
 
 > [!IMPORTANT]
-> GitHub Actions for Microsoft Power Platform are supported only for a Microsoft Dataverse environment with a database. More information: [Create an environment with a database](/power-platform/admin/create-environment#create-an-environment-with-a-database)
+> GitHub Actions for Microsoft Power Platform are supported only for a Microsoft Dataverse environment with a database. More information: [Create an environment with a database](../admin/create-environment.md#create-an-environment-with-a-database)
 
 ## Key concepts
 

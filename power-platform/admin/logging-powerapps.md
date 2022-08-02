@@ -1,7 +1,7 @@
 ---
 title: "Power Apps activity logging| MicrosoftDocs"
 description: Activity logging for Power Apps 
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 10/20/2020
@@ -19,7 +19,7 @@ search.app:
 ---
 # Power Apps activity logging
 
-Power Apps activities are now tracked from the [Microsoft 365 Security & Compliance Center](/microsoft-365/). 
+Power Apps activities are tracked from the [Microsoft 365 Security & Compliance Center](/microsoft-365/). 
 
 Follow these steps.
 
@@ -44,7 +44,7 @@ Logging takes place at the SDK layer which means a single action can trigger mul
 |Marked app as Featured   |Every time the app is marked as Featured|
 |Restored app version   |The version of the app when restored|
 |Edited app    |Any updates made to the app by the maker|
-|Published app     |When the app is published and is now made available to others in the environment|
+|Published app     |When the app is published and is made available to others in the environment|
 |Edited app permission  |Every time a user's permissions to the app is changed|
 |Deleted app |When the app is deleted  |
 |Marked app as Hero |Every time the app is marked as Hero  |

@@ -1,10 +1,9 @@
 ---
 title: "Invite users with Azure Active Directory B2B collaboration  | MicrosoftDocs"
 description: Invite users with Azure Active Directory B2B collaboration
-ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/22/2021
+ms.date: 03/25/2022
 author: jimholtz
 ms.subservice: admin
 ms.author: jimholtz
@@ -17,6 +16,10 @@ search.app:
   - PowerApps
   - Powerplatform
   - Flow
+contributors:
+  - alaug
+  - tapanm-msft
+  - jimholtz
 ---
 # Invite users with Azure Active Directory B2B collaboration
 
@@ -124,7 +127,37 @@ You can invite other users to access your environment. The [!INCLUDE[pn_Office_3
   
 ## Notify your invited users  
  To complete the user invitation, notify your invited users and provide them with the URL for the environment they are invited to (for example, https://contoso.crm.dynamics.com).  
-  
+ 
+ ## Power Apps support for B2B guest maker (preview)
+
+> [!IMPORTANT]
+> - This is a preview feature.
+> - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)] 
+
+B2B guest users can [run Power Apps](/powerapps/maker/canvas-apps/share-app-guests). With this preview feature, B2B guests can create [custom SharePoint forms using Power Apps](/powerapps/maker/canvas-apps/customize-list-form).
+
+Follow these steps to allow B2B guest users to create custom list forms using Power Apps.
+
+> [!NOTE]
+> Ensure that you perform below steps on the **resource tenant**, and not on the **home tenant**.
+> - A **resource tenant** is where the list created using Microsoft Lists exists, and where the user is expected to create the custom list form using Power Apps as a guest.
+> - A **home tenant** is where the user's account resides and authenticates against.
+
+1. Use the following PowerShell cmdlet to enable guests to make Power Apps.
+
+    ```PowerShell
+    $requestBody = Get-TenantSettings 
+    $requestBody.powerPlatform.powerApps.enableGuestsToMake = $True 
+    Set-TenantSettings $requestBody 
+    ```
+
+1. Assign the [Environment Maker](database-security.md) security role to the B2B guest users that you want to be able to create custom list forms using Power Apps.
+
+    > [!TIP]
+    > In addition, you can also review all other members of this security role (especially in the default environment), and remove users that aren't expected to have this privilege.
+
+After the B2B guest users are given the required permissions to edit the list created using Microsoft Lists as a guest, they can now [create](/powerapps/maker/canvas-apps/customize-list-form#open-the-form) custom list forms using Power Apps.
+
 ### See also  
  [Azure AD B2B Collaboration is Generally Available!](https://blogs.technet.microsoft.com/enterprisemobility/2017/04/12/azure-ad-b2b-collaboration-is-generally-available/)   
  [Azure Active Directory B2B collaboration code and PowerShell samples](/azure/active-directory/b2b/code-samples)   

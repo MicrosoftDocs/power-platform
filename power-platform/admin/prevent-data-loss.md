@@ -1,14 +1,16 @@
 ---
 title: "Manage data loss prevention (DLP) policies"
 description: "Learn how to create, edit, and delete data loss prevention (DLP) policies, including the default data group for new connectors."
-ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/24/2020
-author: jimholtz
-ms.subservice: admin
-ms.author: jimholtz
+ms.date: 04/06/2022
+author: mikferland-msft
+ms.author: miferlan
 ms.reviewer: jimholtz
+contributors:
+  - mikferland-msft
+  - mihaelablendea
+ms.subservice: admin
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
@@ -107,7 +109,7 @@ To create, edit, or delete DLP policies, you must have either Environment Admin 
 
 ## Change the default data group
 
-1. Sign in to the Power Platform admin center.
+1. Sign in to the Power Platform admin center as a [global admin](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide).
 
 2. From the list of DLP policies, select an environment, and then select **Edit Policy**. If you have a long list of policies, use the **Search** box to find specific environments.
 

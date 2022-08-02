@@ -6,10 +6,10 @@ ms.subservice: admin
 ms.author: paulliew
 ms.reviewer: jimholtz
 ms.custom: "admin-security"
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/24/2021
+ms.date: 12/16/2021
 search.audienceType: 
   - admin
 search.app:
@@ -21,9 +21,6 @@ search.app:
 # Security roles and privileges
 
 To control data access, you must set up an organizational structure that both protects sensitive data and enables collaboration. You do this by setting up business units, security roles, and field security profiles.  
-
-> [!TIP]
-> Check out the following video: [How to set up security roles](https://go.microsoft.com/fwlink/p/?linkid=2020433).
   
 ## Security roles  
 A security role defines how different users, such as salespeople, access different types of records. To control access to data, you can modify existing security roles, create new security roles, or change which security roles are assigned to each user. Each user can have multiple security roles. See [Predefined security roles](database-security.md#predefined-security-roles).
@@ -89,7 +86,7 @@ This member's privilege inheritance role is applicable to [Owner](manage-teams.m
 #### Prerequisites
 These settings can be found in the Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Users + permissions** > **Security roles**.
 
-Make sure you have the System Administrator or System Customizer security role or equivalent permissions.
+Make sure you have the System Administrator security role or equivalent permissions.
 
 Check your security role:
 - Follow the steps in [View your user profile](/powerapps/user/view-your-user-profile).

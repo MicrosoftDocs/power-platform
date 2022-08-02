@@ -3,10 +3,10 @@ title: "Administrator analytics and reports for Microsoft Power Automate"
 description: "Admins can view Microsoft Power Automate analytics in the Power Platform admin center, including reports on run data of flows, flows created, usage, and errors."
 author: "MSFTMan"
 manager: kvivek
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/15/2021
+ms.date: 06/01/2022
 ms.subservice: admin
 ms.author: deonhe
 search.audienceType: 
@@ -19,8 +19,7 @@ search.app:
 ---
 # View analytics for flows
 
-Environment admins can access analytics for Power Automate in the Microsoft [Power Platform admin center](https://admin.powerplatform.microsoft.com/analytics/flow). The reports provide insights into runs, usage, errors, types of flows created, shared flows, and details on connectors associated with all the different flow types like automated flows, button flows, scheduled flows, approval flows, business process flows. These reports are not available for the UI flows type.
-
+Environment admins can access analytics for Power Automate in the Microsoft [Power Platform admin center](https://admin.powerplatform.microsoft.com/analytics/flow). The reports provide insights into runs, usage, errors, types of flows created, shared flows, and details on connectors associated with all the different flow types like automated flows, button flows, scheduled flows, approval flows, business process flows. These reports do not offer insights for Desktop Flows.
 To access these reports:
 
 1. Go to the navigation bar on the left side.
@@ -44,12 +43,11 @@ When a user creates an environment in a region, the environment is hosted in tha
 
 The data refresh cycle is about 3 hours and you can find the last refresh time at the top right corner of the page.
 
-## Available reports
+## What are the available reports?
 
-The preview contains 6 reports with multiple KPIs in each report.  The reports within the **Runs**, **Usage**, **Created**, and **Errors** tabs provide insights for both Cloud flows and Desktop flows.  By default, you see reports for the last viewed environment.
+The following tenant-level reports are available for tenant and environment admins. The reports within the **Runs**, **Usage**, **Created**, and **Errors** tabs provide insights for Cloud flows and Desktop flows.  By default, you see reports for the last viewed environment.
 
-
-## Runs report
+### Runs report
 
 By default, you see the **Runs** report. It provides a view into the daily, weekly, and monthly run data of all flows in an environment.
 
@@ -57,35 +55,33 @@ By default, you see the **Runs** report. It provides a view into the daily, week
 ![Daily runs.](media/analytics-flow/daily-runs.png)
 
 
-## Usage report
+### Usage report
 
 This report provides insights into the different types of flows in use, the trends, and the flow creator's names.
 
 ![Usage report.](media/analytics-flow/usage-report.png)
 
-## Created report
+### Created report
 
 This report provides insights into the types of flows created, trends, and details like the created date and the creator's email address.
 
 ![Created report.](media/analytics-flow/created-report.png)
 
-
-## Error report
+### Error report
 
 This report provides insights into recurring error types and details like the error count, creator's email address, last occurred time, and the creator's email address for each flow.
 
 ![Error report.](media/analytics-flow/error-report.png)
 
-## Shared report
+### Shared report
 
 This report provides details on the flows shared and trends in the environment.
 
 ![Shared report.](media/analytics-flow/shared-report.png)
 
-## Connectors report
+### Connectors report
 
 This report provides details on connectors and their associated flows. Metrics like the number of calls from each flow per connector, flow runs, and the flow creator's email address are available for both standard and custom connectors.
-
 
 ![Connector report.](media/analytics-flow/connectors-report.png)
 

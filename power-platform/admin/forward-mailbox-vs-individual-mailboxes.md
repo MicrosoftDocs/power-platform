@@ -1,13 +1,12 @@
 ---
 title: "Forward mailbox vs. individual mailboxes   | MicrosoftDocs"
 description: Forward mailbox vs. individual mailboxes 
-author: mduelae
-ms.service: power-platform
+author: jimholtz
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/29/2020
 ms.subservice: admin
-ms.author: mkaur
+ms.author: jimholtz
 search.audienceType: 
   - admin
 search.app:

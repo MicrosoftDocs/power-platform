@@ -1,13 +1,12 @@
 ---
 title: "New Microsoft Dataverse storage capacity  | MicrosoftDocs"
 description: Introducing a new storage model for Microsoft Dataverse.
-ms.date: 10/14/2021
-ms.reviewer: ""
-ms.service: "power-platform"
-ms.topic: "quickstart"
-author: "jimholtz"
+ms.date: 07/26/2022
+ms.topic: conceptual
+author: MicroSri
 ms.subservice: admin
-ms.author: "jimholtz"
+ms.author: sriknair
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:
@@ -94,6 +93,7 @@ Note the following features:
 |Download     | Select **Download** above the list of environments to download an Excel .CSV file with high-level storage information for each environment that the signed-in admin has permission to see in the Power Platform admin center.        |
 |Search     | Use **Search** to search by the environment name and the environment type.         |
 |Details  | See the next section for using the **Details** button (![Storage data details button.](media/storage-data-details-button.png "Storage data details button")) to see environment capacity analytics.   |
+| Default environment tip | The calculated storage usage in this view only displays what is **above** the default environment’s included capacity. Tool tips indicate how to view actual usage in the **Details** section. |
 
 > [!div class="mx-imgBorder"] 
 > ![Storage data per environment details button.](media/storage-data-per-environment2.png "Storage data per environment details button")
@@ -105,8 +105,10 @@ Note the following features:
 >   - Preview
 >   - Support
 >   - Developer
+> - The default environment has the following included storage capacity: 3GB Dataverse database capacity, 3GB Dataverse file capacity, and 1GB Dataverse log capacity.
 > - You can select an environment that's showing 0 GB, and then go to its environment capacity analytics page to see the actual consumption.
-> - For the default environment, the list view will only show the amount of capacity consumed beyond the free quota. Select the **Details** button (![Storage data details button.](media/storage-data-details-button.png "Storage data details button")) to see usage.
+> - For the default environment, the list view will only show the amount of capacity consumed beyond the included quota. Select the **Details** button (![Storage data details button.](media/storage-data-details-button.png "Storage data details button")) to see usage.
+> - The capacity check conducted prior to creating new environments will exclude the default environment's included storage capacity when calculating whether you have sufficient capacity to create a new environment.
 
 
 #### Environment storage capacity details
@@ -118,12 +120,12 @@ Select the **Details** button (![Storage data details button.](media/storage-dat
 
 The following details are provided:
 
--   Actual database usage
--   Top database tables and their growth over time
--   Actual file usage
--   Top files tables and their growth over time
--   Actual log usage
--   Top tables and their growth over time
+- Actual database usage
+- Top database tables and their growth over time
+- Actual file usage
+- Top files tables and their growth over time
+- Actual log usage
+- Top tables and their growth over time
 
 ### Microsoft Teams tab
 
@@ -168,6 +170,8 @@ Notifications for capacity approaching storage limits will be triggered when any
 - Recover an environment (requires minimum 1GB capacity available)
 - Add Dataverse database to an environment
 
+> [!NOTE]
+> The storage driven capacity model calculation of these thresholds also considers the overflow usage allowed in the storage driven model. For example, extra database capacity can be used to cover log and file overuse and extra log capacity can be used to cover file overuse. Therefore, overflow usage has been taken into consideration to reduce the number of emails a tenant admin receives.
 
 These notifications are sent out to tenant admins on a weekly basis. At this time, there is no option for the tenants to opt-out of these notifications or delegate these notifications to someone else. All tenant admins for a tenant will automatically receive these notifications.
 

@@ -6,10 +6,9 @@ ms.reviewer: jimholtz
 ms.subservice: admin
 ms.author: jimholtz
 ms.custom: "admin-security"
-ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/15/2021
+ms.date: 07/25/2022
 search.audienceType: 
   - admin
 search.app:
@@ -26,7 +25,8 @@ search.app:
  - Dataverse provide a default set of security roles. If necessary for your organization, you can create new security roles by editing one of the default security roles and then saving it under a new name. See [Predefined security roles](database-security.md#predefined-security-roles).
  - You can assign more than one security role to a user. The effect of multiple security roles is cumulative, which means that the user has the permissions associated with all security roles assigned to the user.  
 - Security roles are associated with business units. If you've created business units, only those security roles associated with the business unit are available for the users in the business unit. You can use this feature to limit data access to data owned by the business unit.  
-- In order to assign security roles to a user, you need to have the appropriate privileges (minimum privileges are 'Read' and 'Assign' on the Security Role table). To prevent elevation of security role privileges, the person who is assigning the security role cannot assign someone else with a security role that has more privileges than the assignee, for example a CSR Manager cannot assign a System Administrator role to another user. 
+- When the [allow record ownership across business units](wp-security-cds.md#to-enable-this-matrix-data-access-structure-preview) is enabled, you can assign security roles from different business units to your users irrespective of which business unit the users belong to.
+- In order to assign security roles to a user, you need to have the appropriate privileges (minimum privileges are 'Read' and 'Assign' on the Security Role table). To prevent elevation of security role privileges, the person who is assigning the security role cannot assign someone else with a security role that has more privileges than the assigner. For example, a CSR Manager cannot assign a System Administrator role to another user. This privilege validation includes checking each privilege that the assigner has at the privilege depth level and business unit. For example, you cannot assign a security role from a different business unit to another user if you don't have a security role with the appropriate privilege level assigned from that business unit.  
 - By default, the System Administrator security role has all the required privileges to assign security roles to any user including assigning the System Administrator security role. If you have a need to allow non-System Administrators to assign security roles, you should consider creating a custom security role. See [Create an administrative user and prevent elevation of security role privilege](prevent-elevation-security-role-privilege.md). 
 
  For more information about the difference between [!INCLUDE[pn_MS_Online_Services](../includes/pn-ms-online-services.md)] administrator roles and security roles, see [Grant users access](grant-users-access.md).  
@@ -52,9 +52,23 @@ Follow these steps to assign a security role.
 
    :::image type="content" source="media/manage-security-roles-page.png" alt-text="Manage security roles page.":::
 
+When the [allow record ownership across business units](wp-security-cds.md#to-enable-this-matrix-data-access-structure-preview) is enabled, you can select security roles from different business unit. 
+
 > [!IMPORTANT] 
 > You must assign at least one security role to every user either directly or indirectly as a member of a [group team](manage-group-teams.md). The service doesn't allow access to users who don't have at least one security role.
 
+## User settings privileges for record ownership across business units
+  
+If you have enabled [allow record ownership across business units](wp-security-cds.md#to-enable-this-matrix-data-access-structure-preview), your users can access data in other business units by having a security role from these other business units directly assigned to them. The user also needs a security role assigned from the user's business unit with  privileges from the following tables in order to update the user UI settings:  
+  
+- Action Card User Settings
+- Saved View
+- User Chart
+- User Dashboard
+- User Entity Instance Data
+- User Entity UI Settings
+- User Application Metadata
+  
 To assign security roles to users in an environment that has zero or one Microsoft Dataverse database, see [Configure user security to resources in an environment](database-security.md). 
 
 ## (Optional) Assign an administrator role  
@@ -79,7 +93,7 @@ When users are added to Dataverse, they will get roles assigned automatically ba
 
 3. For the Default environment type, “BasicUser” and “EnvironmentMaker” roles will be assigned automatically to all users added in Dataverse.
 
-4. In the Finance and Operations linked Dataverse environment, Finance and Operations Basic User and Environment Maker security roles are automatically assigned to all active users in Dataverse. 
+4. In the finance and operations linked environment with a Dataverse database, the finance and operations Basic User security role is automatically assigned to all active users in Dataverse. 
 
 ## License to role mapping
 

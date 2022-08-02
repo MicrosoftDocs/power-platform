@@ -3,10 +3,9 @@ title: Responding to Data Subject Rights (DSR) requests to delete customer data 
 description: Walkthrough of how to respond to Data Subject Rights (DSR) requests to delete Power Apps customer data.
 author: jimholtz
 ms.reviewer: paulliew
-ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/16/2021
+ms.date: 06/07/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -181,7 +180,7 @@ An administrator can delete all environment role assignments for a user across a
 Add-PowerAppsAccount
 $deleteDsrUserId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
 
-#find all environment role assignments for the user for environments without a Dataverse environment and delete them
+#find all environment role assignments for the user for environments without a Dataverse database and delete them
 Get-AdminEnvironmentRoleAssignment -UserId $deleteDsrUserId | Remove-AdminEnvironmentRoleAssignment
 ```
 
@@ -254,13 +253,13 @@ Get-AdminAppRoleAssignment -UserId $deleteDsrUserId | Remove-AdminAppRoleAssignm
 Connections are used in conjunction with connectors when establishing connectivity with other APIs and SaaS systems.  Connections do include references to the user who created them and, as a result, can be deleted to remove any references to the user.
 
 ### PowerShell cmdlets for app creators
-A user can delete all of their connections by using the Remove-Connection function in the [PowerShell cmdlets for app creators](./powerapps-powershell.md):
+A user can delete all of their connections by using the **Remove-AdminPowerAppConnection** function in the [PowerShell cmdlets for app creators](./powerapps-powershell.md):
 
 ```powershell
 Add-PowerAppsAccount
 
 #Retrieves all connections for the calling user and deletes them
-Get-Connection | Remove-Connection
+Get-AdminPowerAppConnection | Remove-AdminPowerAppConnection
 ```
 
 ### PowerShell cmdlets for Power Apps administrators
@@ -277,13 +276,13 @@ Get-AdminConnection -CreatedBy $deleteDsrUserId | Remove-AdminConnection
 ## Step 6: Delete the user's permissions to shared connections
 
 ### PowerShell cmdlets for app creators
-A user can delete all of their connection role assignments for shared connections by using the Remove-ConnectionRoleAssignment function in the [PowerShell cmdlets for app creators](./powerapps-powershell.md):
+A user can delete all of their connection role assignments for shared connections by using the **Remove-AdminPowerAppConnectionRoleAssignment** function in the [PowerShell cmdlets for app creators](./powerapps-powershell.md):
 
 ```powershell
 Add-PowerAppsAccount
 
 #Retrieves all connection role assignments for the calling users and deletes them
-Get-ConnectionRoleAssignment | Remove-ConnectionRoleAssignment
+Get-AdminPowerAppConnectionRoleAssignment | Remove-AdminPowerAppConnectionRoleAssignment
 ```
 > [!NOTE]
 > Owner role assignments cannot be deleted without deleting the connection resource.

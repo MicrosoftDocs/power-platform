@@ -1,13 +1,12 @@
 ---
 title: "How field security affects synchronization between customer engagement apps and Outlook  | MicrosoftDocs"
 description: How field security affects synchronization between customer engagement apps and Outlook 
-author: mduelae
-ms.service: power-platform
+author: jimholtz
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 02/17/2021
 ms.subservice: admin
-ms.author: mkaur
+ms.author: jimholtz
 search.audienceType: 
   - admin
 search.app:

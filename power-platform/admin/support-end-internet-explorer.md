@@ -1,10 +1,9 @@
 ---
-title: "Support end for Internet Explorer | MicrosoftDocs"
-description: Information about support end for Internet Explorer.
-ms.service: power-platform
+title: "End of support for Internet Explorer | MicrosoftDocs"
+description: Information about end of support for Internet Explorer.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/14/2021
+ms.date: 02/18/2022
 ms.subservice: admin
 ms.author: aorth 
 author: adrianorth
@@ -25,6 +24,7 @@ Users moving to [Microsoft Edge](https://www.microsoft.com/edge) (based on Chrom
 
 The error message will appear at the top of the Power Platform admin center page or the Dynamics 365 app page. 
 
+
 ## Administrator experience 
 
 Administrators in the Power Platform Admin center and in the model-driven apps Advanced Settings will see a warning message if their tenant has Internet Explorer users.  These messages will appear regardless of the browser the administrator is using. 
@@ -41,7 +41,6 @@ All users using Dynamics 365 and Microsoft Power Platform in Internet Explorer w
 
 This message will appear for users trying to access Dynamics 365 and Microsoft Power Platform in an unsupported version of Microsoft Edge ([Edge Legacy] (https://blogs.windows.com/msedgedev/microsoft-edge-legacy-end-of-support))
 
-
 > **Alert** <br />
 > This website will be blocked in this version of Microsoft Edge starting on October 31st. Try using the latest Edge version. Learn more
 
@@ -55,7 +54,6 @@ Starting October 31, this message will appear for users trying to access Dynamic
 > **Alert** <br />
 >Unsupported browser. This website is no longer supported in this version of Microsoft Edge. Try using the latest Edge version. 
 
-
 Administrators wanting to block Internet Explorer for users earlier can request this through support. 
 
-
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

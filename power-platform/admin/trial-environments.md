@@ -5,10 +5,9 @@ author: meeramahabala
 ms.subservice: admin
 ms.author: meeram
 ms.reviewer: jimholtz
-ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/24/2021 
+ms.date: 06/20/2022
 search.audienceType: 
   - admin
 search.app:
@@ -188,6 +187,15 @@ It might take several hours to convert to a production environment.
 
 ## Frequently asked questions
 
+### What type of account can create a free trial environment?
+
+For the best trial experience, we recommend you use your work or school email address that's managed by [Microsoft Azure Active Directory.](https://azure.microsoft.com/services/active-directory/#overview)
+If you create a standard trial environment from [https://trials.dynamics.com/](https://trials.dynamics.com/), some products may support consumer email account that's not managed by Microsoft Azure Active Directory. 
+> [!NOTE]
+> If you use a consumer email account to create a trial environment, there'll be limitations in your trial experience, such as: 
+> - You can't access the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) to manage the trial environment, extend the trial, or manage environment users. 
+> - You can't access the [Microsoft 365 admin center](https://admin.microsoft.com/) to manage tenant users.
+   
 ### Who can convert a trial environment to a production environment?
 
 The organization (tenant) admin can determine who's allowed to create trial environments and convert them to production. If you're allowed to, and you have 1 GB of available production database capacity, you can convert a trial environment to production. You might need to free up or purchase additional capacity if the trial environment database exceeds available production capacity. To determine the size of the trial environment database, see [Dataverse storage capacity](capacity-storage.md).
@@ -215,7 +223,7 @@ Here are some guidelines for exporting resources.
 |Type of resource in the environment  |How do I export it?  |
 |---------|---------|
 |Apps (canvas and model-driven) and flows     |You can use [packaging](/powerapps/maker/data-platform/export-solutions) to export apps and flows from one environment.         |
-|Data in the database (Dataverse environment)     |<ul><li>[Export to Excel](/powerapps/user/export-data-excel) and save the data. You can then [import the data](/powerapps/user/import-data) into another environment.</li><li>Use [Data Integrator services](data-integrator.md) and APIs to export data into another environment.</li></ul> |
+|Data in the database (environment with a Dataverse database)     |<ul><li>[Export to Excel](/powerapps/user/export-data-excel) and save the data. You can then [import the data](/powerapps/user/import-data) into another environment.</li><li>Use [Data Integrator services](data-integrator.md) and APIs to export data into another environment.</li></ul> |
 
 We delete trial (standard) environments that haven't had any activity in the environment databases for 30 days.
 

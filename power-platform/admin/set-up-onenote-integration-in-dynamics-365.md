@@ -2,7 +2,7 @@
 title: "Set up OneNote integration  | MicrosoftDocs"
 description: Learn how to integrate OneNote with customer engagement apps
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 11/10/2020
@@ -125,12 +125,13 @@ Imagine the following events:
 1. User A opens the note in the timeline on a form. For example, **Sales** > **Contacts** > *contact* > **Summary** > **Timeline** section > **+** > **OneNote**.
 
 When this occurs, user A sees the error message "Folder *contact* has been renamed or deleted from SharePoint. It was expected inside *SharePoint folder* path."
+
 :::image type="content" source="media/one-note-error.png" alt-text="Error message due to renamed OneNote file in document grid.":::
 
-<!-- ## Error message: File cannot be found
+## Error message: File cannot be found
 I get this error message: 
 
-    File cannot be found. (Error: 0x80060706)  
+File cannot be found. (Error: 0x80060706)  
 
 In an on-premises deployment, you can get this error when opening the [!INCLUDE[pn_onenote](../includes/pn-onenote.md)] tab in an entity enabled for [!INCLUDE[pn_onenote](../includes/pn-onenote.md)] if you turned off **CreateSPFoldersUsingNameandGuid** using the OrgDBOrgSettings tool.  Set this option to **True**. See: [OrgDBOrgSettings tool for Dynamics CRM](https://support.microsoft.com/kb/2691237).  
 
@@ -144,7 +145,7 @@ On subsequent clicks in [!INCLUDE[pn_onenote](../includes/pn-onenote.md)], this 
 
 Consider this scenario:
 
-User A opens a OneNote note in Dynamics 365 Customer Engagement (on-premises) and adds content (For example: **Sales** > **Accounts** > <account> > **Summary** > Timeline section > **+** > OneNote). User A, or a second user, User B, changes the name of the OneNote file in a document grid (For example: **Sales** > **Accounts** > <account> > **Related** > **Documents**). User A opens the note using Timeline (For example: **Sales** > **Accounts** > <account> > **Summary** > Timeline section > **+** > **OneNote**). User A should see the renamed note with the existing content. Instead, a new note is opened. -->
+User A opens a OneNote note in Dynamics 365 Customer Engagement (on-premises) and adds content (For example: **Sales** > **Accounts** > account > **Summary** > Timeline section > **+** > OneNote). User A, or a second user, User B, changes the name of the OneNote file in a document grid (For example: **Sales** > **Accounts** > account > **Related** > **Documents**). User A opens the note using Timeline (For example: **Sales** > **Accounts** > account > **Summary** > Timeline section > **+** > **OneNote**). User A should see the renamed note with the existing content. Instead, a new note is opened. 
 
 ### See also
 

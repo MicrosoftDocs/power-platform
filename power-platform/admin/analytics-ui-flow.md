@@ -8,9 +8,8 @@ author: msftman
 manager: kvivek
 editor: ''
 tags: ''
-ms.service: power-platform
 ms.devlang: na
-ms.topic: article
+ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/01/2021

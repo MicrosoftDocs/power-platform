@@ -6,10 +6,9 @@ ms.subservice: admin
 ms.author: paulliew
 ms.reviewer: jimholtz
 ms.custom: "admin-security"
-ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/14/2021
+ms.date: 06/17/2022
 search.audienceType: 
   - admin
 search.app:
@@ -18,7 +17,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Create or edit a security role to manage access
+# Create or edit a security role to manage access 
 
 You can create new security roles to accommodate changes in your business requirements or you can edit the privileges associated with an existing security role.
   
@@ -28,7 +27,7 @@ For information on predefined security roles, see [Predefined security roles](da
   
 ## Create a security role  
   
-1. [!INCLUDE[proc_permissions_system_admin_and_customizer](../includes/proc-permissions-system-admin-and-customizer.md)]  
+1. Make sure that you have the System Administrator permission.
   
     Check your security role  
   
@@ -54,7 +53,7 @@ For information on predefined security roles, see [Predefined security roles](da
   
 ## Create a security role by Copy Role
 
-1. [!INCLUDE[proc_permissions_system_admin_and_customizer](../includes/proc-permissions-system-admin-and-customizer.md)]  
+1. Make sure that you have the System Administrator permission.
   
     Check your security role  
   
@@ -86,9 +85,9 @@ For information on predefined security roles, see [Predefined security roles](da
  Before you edit an existing security role, make sure that you understand the principles of data access. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Controlling Data Access](../admin/security-roles-privileges.md)  
   
 > [!NOTE]
->  You can't edit the System Administrator security role. To create a security role similar to the System Administrator security role, copy the System Administrator security role, and make changes to the new role.  
+> You can't edit the System Administrator security role. To create a security role similar to the System Administrator security role, copy the System Administrator security role, and make changes to the new role.  
   
-1. [!INCLUDE[proc_permissions_system_admin_and_customizer](../includes/proc-permissions-system-admin-and-customizer.md)]  
+1. Make sure that you have the System Administrator or equivalent permissions.
   
     Check your security role  
   
@@ -117,7 +116,7 @@ For information on predefined security roles, see [Predefined security roles](da
  
  We've created a solution you can import that provides a security role with the required minimum privileges.
 
-Start by downloading the solution from the Download Center: [Microsoft Dataverse minimum privilege security role](https://download.microsoft.com/download/6/5/5/6552A30E-05F4-45F0-AEE3-9BB01E13118A/MinprivilegeSecRole_1_0_0_0.zip).
+Start by downloading the solution from the Download Center: [Microsoft Dataverse minimum privilege security role](https://download.microsoft.com/download/6/5/5/6552A30E-05F4-45F0-AEE3-9BB01E13118A/MinprivilegeSecRole_1_0_0_2.zip).
 
 Then, follow the directions to import the solution: [Import, update, and export solutions](/powerapps/maker/common-data-service/import-update-export-solutions).
 

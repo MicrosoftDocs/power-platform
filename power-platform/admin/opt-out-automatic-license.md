@@ -5,7 +5,6 @@ author: paulliew
 ms.subservice: admin
 ms.author: paulliew
 ms.reviewer: jimholtz
-ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/28/2021
@@ -19,7 +18,7 @@ search.app:
 ---
 # Opt-out of automatic license-based user roles management 
 
-You can now request to turn off Microsoft Power Platform from automatically adding and removing the user security roles based on the licenses the user has. 
+You can request to turn off Microsoft Power Platform from automatically adding and removing the user security roles based on the licenses the user has. 
 
 ## How to request my organization opt-outs?
 

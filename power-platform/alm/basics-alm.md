@@ -9,7 +9,6 @@ manager: kvivek
 ms.custom: ""
 ms.date: 06/11/2020
 ms.reviewer: "matp"
-ms.service: power-platform
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
@@ -51,19 +50,17 @@ Using the Power Platform admin center, you can create these types of Dataverse e
 -   **Production**  The environment where apps and other software are put into
     operation for their intended use.
 
--   **Community**  The Power Apps Community Plan gives you access to Power Apps
+-   **Developer** (formally called Community). The Power Apps Developer Plan gives you access to Power Apps
     premium functionality, Dataverse, and Power Automate for
-    individual use. This plan is primarily meant for learning purposes or
-    creating business solutions to be distributed for AppSource Test Drive.
-    Although you can't share assets from a Community Plan developer environment
-    with anyone else, you can participate in the Azure DevOps pipeline. A developer environment is a single-user environment, and can't be used to run or share production apps.
+    individual use. This plan is primarily meant to build and test with Power Apps, Power Automate, and Microsoft Dataverse or for learning purposes. A developer environment is a single-user environment, and can't be used to run or share production apps.
     
 -   **Default**  A single default environment is automatically created for each tenant and shared
 by all users in that tenant. The tenant identifies the customer, which can have one or more Microsoft subscriptions and services associated with it. Whenever a new user signs up for Power Apps, they're automatically added to the Maker role of the default environment. The default environment is created in the closest region to the default region of
 the Azure Active Directory (Azure AD) tenant and is named: "{Azure AD tenant name} (default)"
 
-Create and use an environment for specific a purpose, such as development, test,
-or production.
+Create and use the correct environment for a specific purpose, such as development, test, or production.
+
+For more information on environments, see [Environments overview](/power-platform/admin/environments-overview#types-of-environments).
 
 ### Who should have access? 
 
@@ -82,7 +79,7 @@ Dataverse.
 More information: 
 - [Environments overview](../admin/environments-overview.md)
 - [Control user access to environments: security groups and licenses](../admin/control-user-access.md)
-- [Create users and assign security roles](../admin/create-users-assign-online-security-roles.md) 
+- [Create users and assign security roles](../admin/create-users.md) 
 - [Create environments](../admin/create-environment.md)
 
 ## Solutions
@@ -148,7 +145,7 @@ support. Branching means you diverge from the main line of development and
 continue to do work without changing the main line. The process of merging
 consists of combining one branch into another, such as from a development branch
 into a main line branch. Some common branching strategies are trunk-based
-branching, release branching, and feature branching. More information: [Adopt a Git branching strategy](/azure/devops/repos/git/git-branching-guidance?view=azure-devops)
+branching, release branching, and feature branching. More information: [Adopt a Git branching strategy](/azure/devops/repos/git/git-branching-guidance)
 
 ### Source control process using a solution
 
@@ -200,7 +197,7 @@ To get started, you need the following:
 -   An Azure DevOps organization. If you don't have one, you can [create one for
     free](https://dev.azure.com/).
 
-More information: [Create your first pipeline](/azure/devops/pipelines/create-first-pipeline?view=azure-devops)
+More information: [Create your first pipeline](/azure/devops/pipelines/create-first-pipeline)
 
 ## Licensing
 To create or edit apps and flows by using Power Apps and Power Automate,

@@ -1,14 +1,13 @@
 ---
 title: "When would I want to use this check box?  | MicrosoftDocs"
 description: When would I want to use this check box?
-ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/11/2020
-author: revachauhan
+author: jimholtz
 ms.subservice: admin
-ms.author: rechauha
-ms.reviewer: mkaur
+ms.author: jimholtz
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:

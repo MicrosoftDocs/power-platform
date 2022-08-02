@@ -2,7 +2,7 @@
 title: "Deploy Microsoft 365 groups  | MicrosoftDocs"
 description: Deploy Microsoft 365 groups
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 08/26/2021
@@ -28,7 +28,6 @@ Microsoft 365 Groups, available with Dynamics 365 apps, provides a new environme
 > [!TIP]
 >  Check out the following for a quick introduction to Microsoft 365 Groups:  
 > 
-> - ![Video button](../admin/media/video--button.PNG "Video button") Video: [Introducing Groups in Microsoft 365](https://youtu.be/t3OLvYXepvE).  
 > - [Learn more about groups](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)  
 
 ## Requirements  

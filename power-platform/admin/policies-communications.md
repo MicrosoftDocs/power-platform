@@ -3,10 +3,9 @@ title: "Policies and Communications for Power Platform and Dynamics 365 Services
 description: "Policies and Communications for incidents provided for Microsoft 365 services."
 author: astockli
 ms.reviewer: jimholtz
-ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/18/2021
+ms.date: 03/03/2022
 ms.subservice: admin
 ms.author: astockli
 search.audienceType: 
@@ -21,9 +20,11 @@ search.app:
 
 ## Introduction
 
-Microsoft regularly communicates work done to maintain and update Microsoft Power Platform (Power Apps, Power Automate, Power Virtual Agents, and other services), Microsoft Dynamics 365 apps (Sales, Customer Service, Supply Chain Management, and others) to ensure security, performance, availability, and to provide new features and functionality. Microsoft also communicates details of service incidents including the potential user experience, the start and end times of the incident, and any workaround that may be available. For each of these scenarios, communication is provided through the Microsoft 365 admin center in the [Message Center](/microsoft-365/admin/manage/message-center), and the [Service health dashboard](/microsoft-365/enterprise/view-service-health).
+Microsoft regularly communicates work done to maintain and update Microsoft Power Platform (Power Apps, Power Automate, Power Virtual Agents, and other services), and Microsoft Dynamics 365 apps (Sales, Customer Service, Supply Chain Management, and others) to ensure security, performance, availability, and to provide new features and functionality. Microsoft also communicates details of service incidents including the potential user experience, the start and end times of the incident, and any workaround that may be available.
 
-**Please note**: From time-to-time, Microsoft may also send direct email to users with the System Administrator role in a specifically impacted Microsoft Dataverse environment, or Microsoft Lifecycle Services project or environment.  
+For each of these scenarios, communication is provided through the Microsoft 365 admin center in the [Message Center](/microsoft-365/admin/manage/message-center), and the [Service health dashboard](/microsoft-365/enterprise/view-service-health). For each of these scenarios, communication is provided through the Microsoft 365 admin center in the Message Center, and the Service health dashboard. The Microsoft 365 admin center also has the ability to send email for a weekly digest of all messages, emails for major updates only, and emails for data privacy messages. You can opt in to this communication stream by following the instructions [here](/microsoft-365/admin/manage/message-center#preferences).
+
+**Please note**: From time-to-time, Microsoft may also send direct email to users with the System Administrator role in a specifically impacted environment, or Microsoft Lifecycle Services project or environment.  
   
 - If you’re not sure who your admin is, see [Find your administrator or support person](/powerapps/user/find-admin).  
   
@@ -45,13 +46,13 @@ Minor service updates contain customization changes to support new features, pro
 
 - A link to the Weekly Release Notes that contain the list of fixes that are included 
 
-**Please note**: The date the deployment is applied to the infrastructure is not the date the update will be applied to the environment. The Dataverse environment and any apps are updated by an asynchronous process that runs during subsequent Regional Maintenance Windows. Although there is no expected degradation to service performance or availability, during this maintenance window users may see short, intermittent impact such as transient SQL errors or a redirect to the login screen.  
+**Please note**: The date the deployment is applied to the infrastructure is not the date the update will be applied to the environment. The environment and any apps are updated by an asynchronous process that runs during subsequent Regional Maintenance Windows. Although there is no expected degradation to service performance or availability, during this maintenance window users may see short, intermittent impact such as transient SQL errors or a redirect to the login screen.  
 
-You can verify that the update was completed successfully by checking the version number on the About page of the Dataverse environment, or looking at the environment details on the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). A list of service updates can be found on our [Released Versions](/business-applications-release-notes/dynamics/released-versions/dynamics-365ce) page. 
+You can verify that the update was completed successfully by checking the version number on the About page of the environment, or looking at the environment details on the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). A list of service updates can be found on our [Released Versions](/business-applications-release-notes/dynamics/released-versions/dynamics-365ce) page. 
 
 ### Major release events
 
-We deliver two major release events per year with one in April (Wave 1) and the second in October (Wave 2), offering new capabilities and functionality. These updates are backward compatible, so your apps and customizations will continue to work post update. New features with major, disruptive changes to the user experience are off by default which means administrators will be able to first test then enable these features for their organization. Additionally, administrators will have the opportunity to enable the new features using an [“Opt-in” feature](/power-platform/admin/opt-in-early-access-updates) to get early access to the changes. 
+We deliver two major release events per year with one in April (Wave 1) and the second in October (Wave 2), offering new capabilities and functionality. These updates are backward compatible, so your apps and customizations will continue to work post update. New features with major, disruptive changes to the user experience are off by default which means administrators will be able to first test then enable these features for their organization. Additionally, administrators will have the opportunity to enable the new features using an [“Opt-in” feature](opt-in-early-access-updates.md) to get early access to the changes. 
 
 Notifications about when the major release events are scheduled and links to the [Dynamics 365 and Microsoft Power Platform](/dynamics365/release-plans/) release plans are published in the Microsoft 365 admin portal’s Message Center. 
 
@@ -86,17 +87,17 @@ These changes can include:
 
 The Power Platform services and the Dynamics 365 apps (Sales, Customer Service, Supply Chain Management, etc.) may encounter issues that require unplanned changes to protect availability. Microsoft strives to provide as much notification as possible during these events, but because they can’t be predicted, they are not considered planned maintenance. 
 
-When this happens, your organization receives an “Unplanned Maintenance” notification in the Message Center. We also attempt to send an email to all System Administrators in the Dataverse environment that is affected by the unplanned maintenance. You can see the status of current unplanned maintenance activities in the Message Center.  
+When this happens, your organization receives an “Unplanned Maintenance” notification in the Message Center. We also attempt to send an email to all System Administrators in the environment that is affected by the unplanned maintenance. You can see the status of current unplanned maintenance activities in the Message Center.  
 
 ### Regional maintenance windows
 
-To limit the impact on customers and their users, we plan the maintenance window according to the region where the Dataverse environments are deployed. The following maintenance timeline list shows the maintenance window for each region. The times are shown in Coordinated Universal Time (UTC, which is also known as Greenwich Mean Time). For organizations with users around the globe, we recognize that these Maintenance Windows might affect you differently. We apologize for the impact this may have on your users. 
+To limit the impact on customers and their users, we plan the maintenance window according to the region where the environments are deployed. The following maintenance timeline list shows the maintenance window for each region. The times are shown in Coordinated Universal Time (UTC, which is also known as Greenwich Mean Time). For organizations with users around the globe, we recognize that these Maintenance Windows might affect you differently. We apologize for the impact this may have on your users. 
  
 ### Maintenance timeline
 
 To limit the impact on users, the maintenance window is planned according to the region where environments are deployed. The following list shows the maintenance window for each region. The times are shown in Coordinated Universal Time (UTC, which is also known as Greenwich Mean Time).
 
-The following are service update times. Database updates run 24 hours after service updates.
+The following are service update times. Database updates run as soon as possible depending on the system load during the maintenance window of the environment.
 
 |Region | URL | Window (UTC) |
 | ------------- | -------------     | ------------- |
@@ -121,7 +122,7 @@ The following are service update times. Database updates run 24 hours after serv
 
 ## Service incidents 
 
-A service incident occurs when your environment is inaccessible or you’re unable to use one or more of the service components. We communicate service incidents through an authenticated experience on the Microsoft 365 admin portal Service health dashboard to provide visibility of service health to administrators across multiple Cloud services. Examples of service incidents may include: 
+A service incident is a term used to refer to an event (or series of events) that typically causes multiple customers to have a degraded experience with one or more of our services. ​These incidents are effectively platform issues that cause unplanned downtime – including unavailability, performance degradation, and problems interfering with service management. We communicate service incidents through an authenticated experience on the Microsoft 365 admin portal Service health dashboard to provide visibility of service health to administrators across multiple Cloud services. Examples of service incidents may include: 
 
 - Unable to sign-in to a specific environment or admin portal 
 - Slow performance in apps or Dataverse queries 
@@ -129,7 +130,7 @@ A service incident occurs when your environment is inaccessible or you’re unab
 
 **How do I find out about service incidents?**  
 
-Check the [Service health dashboard](/office365/enterprise/view-service-health) to view the status of the service. If you are experiencing an issue that is not displayed in the Service health dashboard, contact Microsoft support by creating a ticket in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+Check the [Service health dashboard](/office365/enterprise/view-service-health) to view the status of the service, details about existing service incidents, and up to 30 days’ worth of history. Service Health (within the Microsoft 365 admin center) knows which tenants you manage, so it shows a much more accurate view of any known issues impacting your services than non-authenticated sources of information. If you are experiencing an issue that is not displayed in the Service health dashboard, contact Microsoft support by creating a ticket in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
 If there is a broad customer impact during a service incident, we may also provide status updates on one of several service-specific support pages, including the [Power Apps support page](https://powerapps.microsoft.com/support/), [Power Automate support page](https://flow.microsoft.com/support/), or the [Power BI support page](https://powerbi.microsoft.com/support/). 
 
@@ -137,9 +138,9 @@ If the Microsoft 365 admin portal is unavailable, we will provide status updates
 
 **What information is provided about service incidents?**
 
-During the event, we include information that is related to the user impact, duration, any feasible workaround, and preliminary root cause. Our goal is to provide status updates on a hourly cadence, although this guideline may be reduced for substantive new information, or extended based on waiting on recovery activities. At the restoration of the service to optimal operation, we will publish a final status update and determine if additional post incident report will be provided based on the breadth and type of impact to customers. 
+During the event, we include information that is related to the user impact, duration, any feasible workaround, and preliminary root cause. Our goal is to provide status updates on a hourly cadence, although this guideline may be reduced for substantive new information or extended based on waiting on recovery activities. At the restoration of the service to optimal operation, we will publish a final status update and determine if additional post incident report will be provided based on the breadth and type of impact to customers. 
 
-A post incident report (PIR) may be published after 5 business days on the Microsoft 365 Service health dashboard for certain events. 
+A post incident report (PIR) may be published after five business days on the Microsoft 365 Service health dashboard for certain events. 
 
 This report summarizes the following details: 
 

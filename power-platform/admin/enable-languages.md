@@ -2,10 +2,10 @@
 title: "Regional and language options for your environment | MicrosoftDocs"
 description: Set regional and language options for your environment 
 author: jimholtz
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/04/2020
+ms.date: 11/29/2021
 ms.subservice: admin
 ms.author: jimholtz 
 search.audienceType: 
@@ -38,7 +38,10 @@ Make sure you have the System Administrator or System Customizer security role o
 - Follow the steps in [View your user profile](/powerapps/user/view-your-user-profile).
 - Don’t have the correct permissions? Contact your system administrator.
 
- Before users can start using a Language Pack to display a language, the Language Pack must be enabled in your organization.  
+Before users can start using a Language Pack to display a language, the Language Pack must be enabled in your organization.
+
+> [!NOTE]
+> To display the translated labels for additional languages imported into an environment from a solution, the language must be enabled in the environment *before* you import the solution. More information: [Label text doesn’t display in additional languages after import](/powerapps/maker/data-platform/import-update-export-solutions#label-text-doesnt-display-in-additional-languages-after-import)
 
 1. Sign in to the Power Platform admin center. 
 
@@ -53,7 +56,7 @@ Make sure you have the System Administrator or System Customizer security role o
 6. Select **OK** on any confirmation dialog boxes that open.  
 
    > [!NOTE]
-   >  It may take several minutes to provision or unprovision the languages.  
+   >  It may take an hour or more to provision or unprovision the languages.  
 
 7. Select **Close** to close the **Language Settings** dialog box.
 

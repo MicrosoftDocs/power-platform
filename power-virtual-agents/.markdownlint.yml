@@ -1,0 +1,25 @@
+{
+    # defined as per style guide https://github.com/MicrosoftDocs/power-platform-pr/wiki
+    # to learn how to config this file, refer to https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md
+
+    # heading style: atx (e.g. "# Heading") preferred
+    "MD003": { "style": "atx" },
+    # unordered list style: we prefer dashes
+    "MD004": { "style": "dash" },
+    # line length: disabled because we're not writing code
+    "MD013": false,
+    # single h1: we use both a single H1 and frontmatter title
+    "MD025": { "front_matter_title": "" },
+    # ordered list item prefix: prefer ones
+    "MD029": { "style": "one" },
+    # no inline html: generally not preferred, but following are allowed in special circumstances
+    "MD033": { "allowed_elements": ["br", "ol", "ul", "li", "sup", "div"] },
+    # no bare urls: disabled because we have video links that require these to not have angle brackets
+    "MD034": false,
+    # code fence style: prefer ticks
+    "MD048": { "style": "backtick" },
+    # emphasis style: prefer underscore
+    "MD049": { "style": "underscore" },
+    # strong emphasis style: prefer asterisk
+    "MD050": { "style": "asterisk" }
+}

@@ -1,12 +1,11 @@
 ---
 title: "Support for Microsoft Power Platform and customer engagement apps in Dynamics 365 | MicrosoftDocs"
 description: Information on support for Microsoft Power Platform and customer engagement apps in Dynamics 365
-ms.date: 06/08/2021
+ms.date: 03/23/2022
 ms.reviewer: ""
-ms.service: power-platform
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: overview
 ms.custom: 
   - "admin-security"
   - "intro-internal"
@@ -48,6 +47,7 @@ Microsoft provides support in English globally and provides additional languages
 
 - Microsoft provides all day, every day support for all Severity A issues and might provide all day, every day assistance for issues of other severity based on your support offering. 
 - For those issues that do not qualify for all day, every day support, Microsoft provides assistance during local business hours only.
+- For finance and operations apps, support times for some features can vary by region and can differ from the following hours listed.
 
 ### What hours are considered local business hours for support? 
 
@@ -107,7 +107,7 @@ We have designed our support plans to meet different business needs:
 
 - All support plans provide access to technical support for break-fix issues. 
 - Higher tiers of support plans offer access to advisory services, and other benefits like technical support on an all day, every day basis with faster initial response times. You can find more information about the existing support plans at [Support Plans](https://dynamics.microsoft.com/support/plans/).
-- Customer engagement Finance and Operations apps, Power Apps and Power Automate are covered by the subscription, professional direct, premier, and unified support plans.
+- Customer engagement finance and operations apps, Power Apps and Power Automate are covered by the subscription, professional direct, premier, and unified support plans.
 
 ### What's the difference between technical support and advisory services?
 
@@ -151,7 +151,7 @@ Public preview and/or beta services may be supported through our [forums](https:
 |Service  |Support portal  |
 |---------|---------|
 |Customer engagement apps and AI apps including mixed reality apps and Insights apps   |[Power Platform admin center](https://admin.powerplatform.microsoft.com)         |
-|Finance and Operations (online and on-premises)     | <a href="https://lcs.dynamics.com">Lifecycle Services</a>    |
+|finance and operations apps (online and on-premises)     | <a href="https://lcs.dynamics.com">Lifecycle Services</a>    |
 |Dynamics 365 Business Central      | Support is provided through partners only. Contact your Cloud Solution Provider (CSP) for assistance.        |
 |**Product**    |     |
 |Dynamics   |<a href="https://support.microsoft.com/supportforbusiness/productselection">Support for Business</a><br /> or <br />  <a href="https://support.microsoft.com/premier">Premier Support</a>   |
@@ -166,12 +166,12 @@ Contacting Support over the phone will not speed up the processing of your reque
 
 ### How do I submit a request for technical support or advisory services?
 
--    Access to technical support is provided through one of the [support plans included with Dynamics 365 apps or through one of the premium support plans](https://dynamics.microsoft.com/support/plans/). Submit a technical support request from the correct support portal for the product or service for which you need assistance (see the table earlier in this topic). To begin the support-request submission process:
-   -    From the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), select **Help + support** from the left navigation pane and then **New support request** from the top navigation.
-   -    From the [Lifecycle Services portal](https://lcs.dynamics.com/), choose a project, select **Support** from the option list, and then select **Submit an incident**.
-   -    From [Support for Business](https://support.microsoft.com/supportforbusiness/productselection), select the Dynamics 365 product family followed by the specific Dynamics 365 product or service for which you need help.
-   -    From the [Premier Portal](https://support.microsoft.com/premier), select **New support request** from the Support requests page navigation, enter your access ID and password or select your associated access ID, and proceed with your submission.
--    Access to subscription management and billing support is included with your subscription. To open a Billing and Subscription Management support request, sign in to the [Microsoft 365 Portal](https://portal.office.com/), select the Admin app, and select the **Support – New Support Request** option from the left navigation. This provides access to the **Need Help?** pane, where you can type your Subscription Management question. If the recommended articles do not address your issue, select the **Contact Support** link at the bottom of the **Need Help?** pane and provide the additional information needed to submit the support request.
+- Access to technical support is provided through one of the [support plans included with Dynamics 365 apps or through one of the premium support plans](https://dynamics.microsoft.com/support/plans/). Submit a technical support request from the correct support portal for the product or service for which you need assistance (see the table earlier in this topic). To begin the support-request submission process:
+  - From the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), select **Help + support** from the left navigation pane and then **New support request** from the top navigation.
+  - From the [Lifecycle Services portal](https://lcs.dynamics.com/), choose a project, select **Support** from the option list, and then select **Submit an incident**.
+  - From [Support for Business](https://support.microsoft.com/supportforbusiness/productselection), select the Dynamics 365 product family followed by the specific Dynamics 365 product or service for which you need help.
+  - From the [Premier Portal](https://support.microsoft.com/premier), select **New support request** from the Support requests page navigation, enter your access ID and password or select your associated access ID, and proceed with your submission.
+- Access to subscription management and billing support is included with your subscription. To open a Billing and Subscription Management support request, sign in to the [Microsoft 365 Portal](https://portal.office.com/), select the Admin app, and select the **Support – New Support Request** option from the left navigation. This provides access to the **Need Help?** pane, where you can type your Subscription Management question. If the recommended articles do not address your issue, select the **Contact Support** link at the bottom of the **Need Help?** pane and provide the additional information needed to submit the support request.
 
 ### How do I submit a support request if I cannot sign in to the support portal for my product or service?
  
@@ -339,6 +339,6 @@ Yes, if you are eligible for these benefits and have activated your support acce
 
 
 ### See also
-[Video: How to get the best support for Power Apps, Power Automate, and Dynamics 365](https://youtu.be/An3IfFdZlT8)
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

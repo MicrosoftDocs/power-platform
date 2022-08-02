@@ -9,7 +9,7 @@ manager: jstrauss
 ms.custom: ""
 ms.date: 10/14/2020
 ms.reviewer: "pehecke"
-ms.service: power-platform
+
 ms.topic: "tutorial"
 search.audienceType: 
   - maker
@@ -46,19 +46,21 @@ You will need to create, or have access to, three Dataverse environments in your
 
     ![New environment.](../media/github-actions-tutorial/gh-lab-0.10.png "New environment")
 
-4. The first environment should be named “Your Name – dev”, set the region to **United States (default)**, set the environment type to *Production* (if available),  if not use **Trial**.
+4. The first environment should be named “Your Name – dev”, set the region to “United States (default)”, set the Environment type to **Sandbox** (if available), if not use “Trial”.
+
+    - Ensure the ***Create a database for this environment*** radio toggle is set to **Yes**
 
     ![Create environment.](../media/github-actions-tutorial/gh-lab-0.50.png "Create environment")
 
-5. Select **Yes** to create a database and then **Next**.
+5. **Click Next.**
 
-6. Set the currency to **USD** and language to **English**. Include the sample apps and data, provide a URL for your business organization, and then select **Save**.
+6. Set the Language and currency as preferred and set the "***Deploy sample apps and data?*** " radio button to **Yes**, then **click Save**
 
-    ![Set currency.](../media/github-actions-tutorial/gh-lab-0.80.png "Set currency")
+    ![Set currency.](../media/github-actions-tutorial/gh-lab-0.70.png "Set currency")
 
-7. Your development environment has been created, follow steps 4 – 8 above to create a second environment called “Your Name – build” , and then create a third environment called “Your Name – prod”. The third environment can be a trial environment type.
+7. Your development environment has been created, follow steps 2 – 7 above to create a second environment called “Your Name – build” , and then finally, create a third environment called “Your Name – prod”
 
-You now have the development, build, and production environments needed in the following modules of this tutorial.
+Now you have the environments that we will need for this and ready to begin the next modules of this Hands-on lab.
 
 ## Create the service principal account and give it rights to the environments created
 
@@ -89,7 +91,7 @@ You now have the development, build, and production environments needed in the f
   ![Client and secrets](../media/github-actions-tutorial/clients-and-secrets.png "Client and secrets")
 
  ###  Application user creation
- 
+
  In order for the GitHub workflow to deploy solutions as part of a CI/CD pipeline an "Application user" needs to be given access to the environment. An "Application user" represents an unlicensed user that is authenticated using the application registration completed in the prior steps.
 
 1. Navigate to your Dataverse environment (https://*[org]*.crm.dynamics.com).
@@ -97,9 +99,9 @@ You now have the development, build, and production environments needed in the f
 2. Navigate to **Settings > Security > Users**.
 
 3. Select the link **app users list**.
-  
+
   ![Application user list](../media/github-actions-tutorial/App-user-link.png "Application user list")
-  
+
 4. Select **+ new app user**. A panel will open on the right hand side of the screen.
 
 5. Select **+ Add an app**. A list of all the application registrations in your Azure AD tenant is shown. Proceed to select the application name from the list of registered apps.

@@ -1,29 +1,27 @@
 ---
-title: "Important changes (deprecations) coming in Power Apps, Power Automate and customer engagement apps"
-description: Important changes (deprecations) coming in Power Apps, Power Automate and customer engagement apps 
-ms.date: 10/14/2021
+title: "Important changes (deprecations) coming in Power Apps and Power Automate"
+description: Important changes (deprecations) coming in Power Apps and Power Automate 
+ms.date: 07/15/2022
 ms.topic: "article"
-ms.assetid: 994cc854-17f6-45d6-bc20-fcf1a3f2d6d6
+ms.subservice: admin
 searchScope:
   - "Power Platform"  
 ms.custom:
  - dyn365-hub
-ms.service: power-platform
 author: KumarVivek
 ms.author: kvivek
-manager: annbe
 ---
 
-# Important changes (deprecations) coming in Power Apps, Power Automate, and customer engagement apps
+# Important changes (deprecations) coming in Power Apps and Power Automate
 
-The announcements and deprecations described in this article apply to Power Apps, Power Automate, and customer engagement apps. Engagement apps include Dynamics 365 Sales, Dynamics 365 Marketing, Dynamics 365 Field Service, and Dynamics 365 Project Service Automation.
+The announcements and deprecations described in this article apply to Power Apps and Power Automate. Admins and IT professionals can use this information to prepare for future releases. This article was first published on June 27, 2017.
 
-Admins and IT professionals can use this information to prepare for future releases. This article was first published on June 27, 2017.
+For deprecation information of other products, see [Other deprecation articles](#other-deprecation-articles) later in this article.
 
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability will continue to work and is fully supported until it is officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
 
-## Internet Explorer 11 support for Dynamics 365 and Microsoft Power Platform is deprecated
+## The legacy read-only grid in model-driven apps is deprecated
 
 Internet Explorer 11 support for Dynamics 365 and Microsoft Power Platform is deprecated. 
  
@@ -39,7 +37,13 @@ If you have more questions, contact your Microsoft Customer Service representati
 
 Effective February 2022, support for Microsoft 365 Groups (previously known as Office Groups) and Yammer in Dynamics 365 will be deprecated. This will impact customers who use Microsoft 365 Groups and/or Yammer for collaboration in Dynamics 365. We recommend that customers transition to Microsoft Teams for more advanced collaboration functionalities. For information about integrating Dynamics 365 with Teams, see [Integrate customer engagement apps in Dynamics 365 with Microsoft Teams](/dynamics365/teams-integration/teams-integration).
 
+Existing customers can create teams from their existing Microsoft 365 Groups and map them to individual records as per the requirements. They can also continue to use Microsoft 365 Groups but have a custom experience to host it inside Dynamics 365.
+
 If you've questions about the deprecation, contact your Microsoft Customer Service representative or Microsoft Partner.
+
+## Support for viewing and managing application users in legacy web client is deprecated
+
+Effective February 2022, the list of "Application Users" will not be available under **Advanced Settings** > **Security** > **Users**. You can use the Power Platform admin center to view and manage application users. See [Manage application users in the Power Platform admin center](admin/manage-application-users.md).
 
 ## The Analyze section, in mobile offline profiles is deprecated
 
@@ -105,35 +109,9 @@ The out of box fields currently on the footer is removed and included on the for
 
 While we understand that these types of changes can be disruptive for makers that use the footer today, we always evaluate the experiences. We do this to ensure they provide a modern experience that improves usability, support accessibility requirements, and improves discoverability for highly used fields and controls on a page.
 
-## Tooltips for column descriptions on model-driven forms
-
-With the upcoming 2021 release wave 2 (public preview in August 2021 and GA in October 2021), hover tooltips on column labels for full descriptions will be removed.
-
-#### Why is this needed? 
-
--	These tooltips aren't discoverable in a way that is accessible for sighted, non-sighted, and mobile users to access additional information about the column. 
-
-#### Impact
-
-- Starting October 2021, these descriptions will no longer be available on hover. 
-- We will be introducing a new fully accessible feature for sighted, non-sighted, and mobile users in April 2022.
-
-## Business recommended icon on model-driven forms
-
-With the upcoming 2021 release wave 2 (public preview in August 2021 and GA in October 2021), business recommended icon on model forms will be removed.
-
-#### Why is this needed? 
-
--	The icon is not presented in an accessible way to identify itself. 
-
-#### Impact
-
-- Starting October 2021, these icons will no longer be available on the form. 
-- We will be introducing a new fully accessible feature for April 2022.
-
 ## Model-driven app controls deprecation
 
-With the upcoming 2021 release wave 1 (public preview in February 2021 and GA in April 2021), some older controls for model-driven apps will be deprecated. These controls include Flip Switch, Calendar Control (V1), Linear Slider, Radial Knob, Arc Knob, Linear Gauge; along with the Website Preview control, MultiSelectPicklistControl (V1), and the Flip Label.
+With the upcoming 2021 release wave 1 (public preview in February 2021 and GA in April 2021), some older controls for model-driven apps will be deprecated. These controls include Flip Switch, Calendar Control (V1), Linear Slider, Radial Knob, Arc Knob, Linear Gauge; along with the Website Preview control, MultiSelectPicklistControl (V1), and the Flip Label (two radio buttons format option).
 
 #### Why is this needed? 
 
@@ -143,7 +121,7 @@ With the upcoming 2021 release wave 1 (public preview in February 2021 and GA in
 #### Impact
 
 - Starting April 2021, these controls can no longer be added to forms. 
-- For instances of Flip Label control, the control will be transitioned to a drop-down.
+- For instances of Flip Label control, the control will be replaced with a dropdown control.
 - For all other controls, they'll continue to work within existing forms until April 2022.
 
 #### Action required by you
@@ -154,7 +132,7 @@ We won't make other changes to forms or controls.  Makers are encouraged to make
 - Evaluate other deprecated controls to determine if they're still useful within existing forms.
 
 ## Microsoft Dynamics 365 Email Router is deprecated
-The Microsoft Dynamics 365 Email Router will no longer function on April 21, 2021. For information on migrating email routing functionality to use the server-side synchronization feature, see: [Migrate settings from the Email Router to server-side synchronization](/previous-versions/dynamicscrm-2016/administering-dynamics-365/dn832114(v=crm.8)).
+The Email Router was deprecated on July 17, 2018 and it will no longer function starting April 12, 2021. Although the Email Router might still have worked with Dynamics 365 on-premises, this configuration is no longer supported. All email routing functionality should be migrated to use server-side synchronization. For information on migrating email routing functionality to use the server-side synchronization feature, see: [Migrate settings from the Email Router to server-side synchronization](/previous-versions/dynamicscrm-2016/administering-dynamics-365/dn832114(v=crm.8)).
 
 
 ## The Microsoft Dynamics 365 application for Windows is deprecated
@@ -179,7 +157,7 @@ Effective October 30, 2020, the following cipher suites are being deprecated fro
 
 Cipher suites are used to encrypt messages to secure a network connection between clients/servers and other servers. We're removing the above list of cipher suites to comply with our current security protocols.
 
-Beginning March 1, 2021, customers can only use our [standard cipher suites](/power-platform/admin/server-cipher-tls-requirements). This change impacts your clients and servers that communicate with our servers, for example, syncing emails from your Microsoft Exchange server, running outbound plug-ins, using native (local) clients to access our servers.
+Beginning March 1, 2021, customers can only use our [standard cipher suites](admin/server-cipher-tls-requirements.md). This change impacts your clients and servers that communicate with our servers, for example, syncing emails from your Microsoft Exchange server, running outbound plug-ins, using native (local) clients to access our servers.
 
 Customers must upgrade their servers before March 1, 2021.  For more information about configuring TLS Cipher Suite order, see [Manage Transport Layer Security (TLS)](/windows-server/security/tls/manage-tls).
 
@@ -216,31 +194,56 @@ It is our goal to deliver a powerful bot experience that allows users to retriev
 
 ## Dynamics 365 Connector is deprecated
 
-Effective May 5, 2020 the [Dynamics 365 connector](/connectors/dynamicscrmonline/) used for Flows, Logic Apps, and Canvas Apps is officially deprecated. We recommend that you don't create new connections using this connector.
+Effective May 5, 2020 the [Dynamics 365 connector](/connectors/dynamicscrmonline/) used for data integrations, flows, Azure Logic Apps, and canvas apps is officially deprecated. We recommend that you don't create new connections using this connector. 
 
-Rather than use the Dynamics 365 connector, the [Microsoft Dataverse connector](/connectors/commondataserviceforapps/) should be your first choice *if you can use it*. You may not be able to use the Microsoft Dataverse connector in every situation today because of the following limitations:
+### Impact
+Starting April 29, 2022, no new connections can be created for data integrations, flows, Logic Apps, and canvas apps using the Dynamics 365 connector. We recommend that any Dynamics 365 connector be replaced with an option below. 
 
-- It isn't available in Logic Apps.
-- It doesn't enable cross-tenant or cross environment connections. 
-- It cannot be used for canvas apps that use the [Power Apps for Windows client](https://www.microsoft.com/p/power-apps/9nblggh5z8f3).
+### The following behaviors will be observed
+#### Data integrator
+- Dynamics 365 connector can't be selected for creating a new integration.
+- Existing connections will continue to run as long as they remain unchanged.
+- Editing an existing integration will not be allowed, if you attempt to edit you will be required to choose a different connector.
 
-If you cannot use the Microsoft Dataverse connector, you should use the [Microsoft Dataverse (legacy)](/connectors/commondataservice/). This connector has all the capabilities of the Dynamics 365 connector, and includes several improvements that increase reliability.
+#### Automate
+- Dynamics 365 connector can't be selected for creating a new flow.
+- Existing flows will continue to run.
+- You will be able to edit an existing flow but you cannot add additional Dynamics 365 connector actions to the flow
 
-The Microsoft Dataverse connector represents the future for connections using Dataverse. This includes Dynamics 365 apps using Dataverse. Work is underway to make this connector the only connector you will need. But at the current time, the previously mentioned limitations mean that you can't use it in all places where the Dynamics 365 connector or Microsoft Dataverse (legacy) connector can be used today.
+#### Logic Apps
+- Dynamics 365 connector can't be selected for creating a new Logic App.
+- Existing Logic Apps will continue to run.
+- You will be able to edit an existing Logic App.
 
-At this time, there's no requirement to convert canvas apps, flows, or logic apps to stop using the Dynamics 365 connector because of the known blocking limitations. But you should stop creating new connections with the Dynamics 365 connector and convert them if you can.
+#### Canvas apps
+- The Windows Player for canvas apps will no longer be able to be used.
 
-|Type|Guidance|
-|---------|---------|
-|Flows|If you can convert existing flows to use the Microsoft Dataverse connector, we recommend you do so.|
-|Logic Apps|We recommend you stop creating new connections using the Dynamics 365 connector and use the Microsoft Dataverse (legacy) instead.|
-|Canvas Apps|Canvas apps created after November 2019 should not have used the connector infrastructure by default. These apps should automatically connect to the Dataverse instance within the same environment. <br /><br />If you have a canvas app that used the  Dynamics 365 connector, find information about how to convert them here: [Converting canvas apps with the Dynamics 365 connector](/powerapps/maker/canvas-apps/use-native-cds-connector#converting-canvas-apps-with-the-dynamics-365-connector).|
+In October 2022, all existing uses of the Dynamics 365 connector for data integrations, flows, Logic Apps, and canvas apps will be disabled. At that time, you must migrate to using one of the available connectors (see below).
 
-### Forward looking guidance
+### Action required by you
+Dynamics 365 connectors must be replaced with a Microsoft Dataverse connector. 
+- Microsoft Dataverse – This is the newest connector and will, in time, become the only connector available for Dataverse usage. All new features, performance work, and enhancements will be available on this connector.
+- Microsoft Dataverse (Legacy) – This is the last generation connector for Microsoft Dataverse. It will continue to operate until it is fully deprecated. It will not receive feature or enhancement updates.
 
-When the Microsoft Dataverse connector represents a viable replacement for all situations where the Dynamics 365 and Microsoft Dataverse (legacy) connectors are used today, we intend to remove both the current Dynamics 365 and Microsoft Dataverse (legacy) connectors so that a single connector based on the Microsoft Dataverse connector will remain. At that time it will be required to convert any Flows, Logic Apps, and Canvas Apps still using the Dynamics 365 and Microsoft Dataverse (legacy) connectors.
+### Recommended action by usage
+#### Data integrator
+- All new integrations should be created with the Microsoft Dataverse (Legacy) connector.
+- Dynamics 365 connectors should be replaced with the Microsoft Dataverse (Legacy) connector. The Microsoft Dataverse connector is not yet available.
+- Data Integrations will need to be recreated in the Data Integrator using the Dataverse (Legacy) connector and then completing setup.
 
-We will announce timelines as they are determined.
+#### Automate
+- All new flows must be created with the Microsoft Dataverse connector.
+- Flows that use the Dynamics 365 connector should be re-created to use the Microsoft Dataverse connector. 
+- Once the Microsoft Dataverse connector is available in summer of 2022, users will have the option to use an automated tool to migrate from the Microsoft Dataverse (Legacy) connector to the Microsoft Dataverse connector.
+
+#### Logic Apps
+- All new Logic Apps should be created with the Microsoft Dataverse (Legacy) connector.
+- Logic Apps using the Dynamics 365 connector are recommended to move to the Microsoft Dataverse (Legacy) connector. 
+- Logic Apps will need to be recreated in the using the Dataverse (Legacy) connector and then completing setup.
+- Once the Microsoft Dataverse connector is available in summer of 2022, no action is needed. The Microsoft Dataverse (Legacy) connector will merge with the Microsoft Dataverse connector. At this time additional actions and triggers will become available. 
+
+#### Canvas apps
+- If you are using the Power Apps Player to launch Power Apps in Windows, you will need to switch over to Power Apps for Windows.
 
 
 ## AI Builder text classification models are deprecated
@@ -335,11 +338,6 @@ Effective March 2, 2020, the *regional* [Discovery Service](/powerapps/developer
 
 Customers must transition to using the [global OData V4 Discovery Service](/powerapps/developer/common-data-service/webapi/discover-url-organization-web-api#global-discovery-service) before April 21, 2021 so their applications aren't impacted. More information: [Modify your code to use global Discovery Service](/powerapps/developer/common-data-service/webapi/discovery-orgsdk-to-webapi).
 
-## Rules feature in canvas apps is deprecated
-
-Effective October 14, 2019, the [rules](/powerapps/maker/canvas-apps/working-with-rules) feature in canvas apps in Power Apps is deprecated. Few people have made use of rules in their canvas apps. From feedback collected through research and discussions with makers of Power Apps, the rules feature was confusing, and expressions were easier to learn, use, and debug. For more information about the rules feature deprecation, see [Blog: Canvas Rules feature deprecation](https://powerapps.microsoft.com/blog/canvas-rules-feature-deprecation/).
-
-
 ## Legacy web client is deprecated
 
 As of September 2019, the legacy web client is deprecated. Customers must transition to Unified Interface before December 4, 2020. Microsoft will continue to provide support, security, and other critical updates to the legacy web client until December 4, 2020 but won't release any more functionality beyond what has already been announced.
@@ -411,7 +409,7 @@ and supported until they are officially removed from a future major release. *A 
 |                     [GridRow.getData](/previous-versions/dynamicscrm-2015/developers-guide/dn932126(v%3dcrm.7)#getdata)                      |                                                                                                                                                                           GridRow.data                                                                                                                                                                            |                                                                                                                                                 GridRow is essentially a form context. This change unifies the interface of GridRow with formContext.                                                                                                                                                  |
 |            [GridRowData.getEntity ](/previous-versions/dynamicscrm-2015/developers-guide/dn932126(v=crm.7)#getentity)             |                                                                                                                                                                        GridRowData.entity                                                                                                                                                                         |                                                                                                                                                    GridRowData is form data. This change unifies the interface of GridRowData with formContextData.                                                                                                                                                    |
 |                           [Xrm.Mobile.offline](/previous-versions/dynamicscrm-2016/developers-guide/mt787123(v=crm.8))                            |                                                                                                                              [Xrm.WebApi.offline](/dynamics365/customer-engagement/developer/clientapi/reference/xrm-webapi/offline)                                                                                                                              |                                                                                                                                                                     Moved the offline-related methods under **Xrm.WebApi.offline**                                                                                                                                                                     |
-|              [parent.Xrm](/previous-versions/dynamicscrm-2015/developers-guide/gg309536(v%3dcrm.7)#reference-other-web-resources-from-an-html-web-resource)               | Use one of the following: <br/><br/>a) Use a custom control created using [Power Apps component framework](/powerapps/developer/component-framework/overview) instead of HTML web resources.<br/><br/>b) On forms, use the [getContentWindow](/powerapps/developer/model-driven-apps/clientapi/reference/controls/getcontentwindow) method of the web resource control.<br/><br/>c) If the [getContentWindow](/powerapps/developer/model-driven-apps/clientapi/reference/controls/getcontentwindow) method doesn't work, you can use `parent.Xrm` to get to the `Xrm` object inside an HTML web resource. If the HTML web resource is opened in a new window, then you should use `opener.Xrm` instead.                                                                                                                                                                                                                                                                                                                                                                  |                 **Earlier**: An HTML web resource may interact with the **Xrm.Page** or **Xrm.Utility** objects within the form by using **parent.Xrm.Page** or **parent.Xrm.Utility**. <br/><br>**Now**: parent.Xrm.\* will work if the HTML web resource is loaded in a form container. It won't work for HTML web resources that are stand alone, or referenced from the site map or any other places.<br/><br/>**NOTE**: `parent.Xrm` will be removed after the removal of the `ClientGlobalContext.js.aspx` page; dates yet to be announced.                  |
+|              [parent.Xrm](/previous-versions/dynamicscrm-2015/developers-guide/gg309536(v%3dcrm.7)#reference-other-web-resources-from-an-html-web-resource)               | Use one of the following: <br/><br/>a) Use a custom control created using [Power Apps component framework](/powerapps/developer/component-framework/overview) instead of HTML web resources.<br/><br/>b) On forms, use the [getContentWindow](/powerapps/developer/model-driven-apps/clientapi/reference/controls/getcontentwindow) method of the web resource control.<br/><br/>c) If the [getContentWindow](/powerapps/developer/model-driven-apps/clientapi/reference/controls/getcontentwindow) method doesn't work, you can use `parent.Xrm` to get to the `Xrm` object inside an HTML web resource. If the HTML web resource is opened in a new window, then you should use `opener.Xrm` instead.                                                                                                                                                                                                                                                                                                                                                                  |                 **Earlier**: An HTML web resource may interact with the **Xrm.Page** or **Xrm.Utility** objects within the form by using **parent.Xrm.Page** or **parent.Xrm.Utility**. <br/><br>**Now**: parent.Xrm.\* will work if the HTML web resource is loaded in a form container. It won't work for HTML web resources that are stand alone, or referenced from the site map or any other places.                  |
 |                              [addOnKeyPress](/previous-versions/dynamicscrm-2016/developers-guide/gg334266(v=crm.8)#addonkeypress)                              |                                                                                                                                                                       Use a custom control created using [Power Apps component framework](/powerapps/developer/component-framework/overview)                                                                                                                                                                        |                                                                                                                                                                                                                                                                                                                                                                                                        |
 |                 [fireOnKeyPress](/previous-versions/dynamicscrm-2016/developers-guide/gg334266(v=crm.8)#fireonkeypress)                  |                                                                                                                                                                       Use a custom control created using [Power Apps component framework](/powerapps/developer/component-framework/overview)                                                                                                                                                                        |                                                                                                                                                                                                                                                                                                                                                                                                        |
 |                 [removeOnKeyPress](/previous-versions/dynamicscrm-2016/developers-guide/gg334266(v=crm.8)#removeonkeypress)                  |                                                                                                                                                                       Use a custom control created using [Power Apps component framework](/powerapps/developer/component-framework/overview)                                                                                                                                                                       |                                                                                                                                                                                                                                                                                                                                                                                                        |
@@ -430,7 +428,6 @@ and supported until they are officially removed from a future major release. *A 
 |                       [globalContext.userSettings.transactionCurrencyId](/powerapps/developer/model-driven-apps/clientapi/reference/xrm-utility/getglobalcontext/usersettings#transactioncurrencyid)                       |                                                                                                                  [globalContext.userSettings.transactionCurrency](/powerapps/developer/model-driven-apps/clientapi/reference/xrm-utility/getglobalcontext/usersettings#transactioncurrency)                                                                                                                   |                                                                                                                                                The replacement method lets you access the display name along with the ID of transaction currency.                                                                                                                                                 |
 |                       [getData](/powerapps/developer/model-driven-apps/clientapi/reference/controls/getdata) and [setData](/powerapps/developer/model-driven-apps/clientapi/reference/controls/setdata) for Silverlight web resources                       |                                                                                                                  None                                                                                                                  |                                                                                                                                                Silverlight is no longer supported. These methods won't be available after October 2020.                                                                                                                                                  |
 |                       [formContext.data.entity.save](/powerapps/developer/model-driven-apps/clientapi/reference/formcontext-data-entity/save)                       |                                                                                                                  [formContext.data.save](/powerapps/developer/model-driven-apps/clientapi/reference/formcontext-data/save)                                                                                                                  |                                                                                                                   |
-|                       [ClientGlobalContext.js.aspx](/powerapps/developer/model-driven-apps/clientapi/reference/getglobalcontext-clientglobalcontext.js.aspx#clientglobalcontextjsaspx)                       |                                                                                                                  None                                                                                                                  |  The ClientGlobalContext.js.aspx page is deprecated and scheduled to be unavailable after April 1, 2022. Alternative methods to access global context information will be available by December  2021.                                                                                                                 |
 |                       [getObject](/powerapps/developer/model-driven-apps/clientapi/reference/getglobalcontext-clientglobalcontext.js.aspx#clientglobalcontextjsaspx)                       |                                                                                                                  [getContentWindow](/powerapps/developer/model-driven-apps/clientapi/reference/controls/getcontentwindow)                                                                                                                  |                       |
 
 For information about the new client APIs, see [Apply business logic using client scripting in model-driven apps using JavaScript](/powerapps/developer/model-driven-apps/client-scripting)
@@ -524,13 +521,21 @@ supported on Unified Interface. Instead of Silverlight web resources, you must u
 controls created using the HTML web resources
 with HTML5 to create UI components to visualize and interact with data.
 
+## Canvas apps
+
+See [Important upcoming changes and deprecations in canvas apps](/powerapps/maker/canvas-apps/important-changes-deprecations).
+
 ## Power Apps portals
 
 See [Important changes coming in Power Apps portals](/powerapps/maker/portals/important-changes-deprecations).
 
-## Release plans
+## Other deprecation articles
+[Deprecated features in Dynamics 365 Sales](/dynamics365/sales/deprecations-sales)<br/>
+[Deprecated features in Dynamics 365 Customer Service](/dynamics365/customer-service/deprecations-customer-service)<br/>
+[Deprecated features in Dynamics 365 Field Service](/dynamics365/field-service/deprecations-field-service)<br/>
+[Deprecated features in Universal Resource Scheduling](/dynamics365/common-scheduler/deprecations)<br/>
+[Removed or deprecated features in Finance and Operations apps](/dynamics365/fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page)<br/>
 
-[Removed or deprecated features in Finance and Operations apps](/dynamics365/fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page)
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

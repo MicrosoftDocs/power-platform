@@ -3,7 +3,7 @@ title: "Microsoft Power Platform nurture best practices | MicrosoftDocs"
 description: "Microsoft Power Platform adoption practices provide admin and governance, nurture and strategy and vision best practices."
 author: manuelap-msft
 manager: devkeydet
-ms.service: power-platform
+
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/10/2020
@@ -34,23 +34,23 @@ In the end, nurture means connecting the dots and creating a whole that is bette
 
 :::row:::
    :::column span="":::
-      <img src="media/i_share.svg" alt="Share icon" width="80"/><br><br>**Community** <br /> 
+      <img src="media/i_share.svg" alt="Decorative Share icon" width="80"/><br><br>**Community** <br /> 
 
 > [!div class="checklist"]
-> * [Identify Champions](champions.md)
+> * [Find and support champions in your organization](champions.md)
 > * [On-boarding new makers](onboard-makers.md)
 > * [Create an internal wiki and community](wiki-community.md)
 > * [Share your own templates and reusable components](reusable.md)
 
    :::column-end:::
    :::column span="":::
-      <img src="media/i_best-practices.svg" alt="Overview icon" width="80"/><br><br>**Evangelism**
+      <img src="media/i_best-practices.svg" alt="Decorative Evangelize icon" width="80"/><br><br>**Evangelism**
 > [!div class="checklist"]
 > * [Share success stories](show-and-tell.md)
 > * [Organize hackathons](hackathons.md)
    :::column-end:::
    :::column span="":::
-      <img src="media/i_advanced.svg" alt="Overview icon" width="80"/><br><br>**Training** <br />  
+      <img src="media/i_advanced.svg" alt="Decorative Training icon" width="80"/><br><br>**Training** <br />  
 
 > [!div class="checklist"]
 > * [Set training and upskilling strategy for makers](training-strategy.md)
@@ -60,5 +60,7 @@ In the end, nurture means connecting the dots and creating a whole that is bette
    :::column-end:::
 :::row-end:::
 
+> [!TIP]
+> In addition to the material found in the section of the documentation, the [Microsoft Power Platform Adoption Workbook](https://aka.ms/powerplatformadoptionworkbook) contains practical step-by-step guidance for nurturing your Power Platform community. You'll find this workbook and other resources on [the Microsoft Power Platform Adoption website](https://adoption.microsoft.com/powerplatform).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

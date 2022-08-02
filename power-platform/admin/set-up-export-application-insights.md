@@ -1,14 +1,14 @@
 ---
-title: "Preview: Set up exporting to Application Insights | Microsoft Docs"
+title: "Set up exporting to Application Insights | Microsoft Docs"
 description: About setting up exporting to Application Insights from the Power Platform admin center
 services: powerapps
-author: jimholtz
-ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/04/2021
+ms.date: 05/06/2022
+author: tjvass
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: tjvass
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:
@@ -17,9 +17,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Preview: Set up exporting to Application Insights  
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Set up exporting to Application Insights 
 
 ## Prerequisites
 
@@ -83,10 +81,11 @@ search.app:
 |South Africa (ZAF)     |  Yes | Jan 2021       |
 |UAE     | Yes | March 2021        |
 |Switzerland (CHE)     | Yes | Jan 2021       |
-|Mooncake     | No |  Fall 2021 |
-|GCC     | No |  Fall 2021 |
-|GCC-Mod     | No |  Fall 2021 |
+|GCC     | No |  Summer 2022 |
+|GCC-Mod     | No |  Summer 2022 |
 |GCC-DOD     | No |  TBD |
+|Mooncake     | No |  Fall 2022 |
 
 
 
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

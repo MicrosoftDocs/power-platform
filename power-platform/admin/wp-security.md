@@ -2,8 +2,8 @@
 title: "Security in Microsoft Dataverse | MicrosoftDocs"
 description: Provides information about the security concepts in Microsoft Dataverse.
 ms.date: 06/30/2020
-ms.service: power-platform
-ms.topic: "get-started-article"
+
+ms.topic: overview
 ms.custom: 
   - "admin-security"
   - "intro-internal"
@@ -21,7 +21,7 @@ search.app:
 ---
 # Security in Microsoft Dataverse
 
-This section provides information on how [**Microsoft Dataverse**](/powerapps/maker/common-data-service/data-platform-intro), the underlying data platform for Power Apps, handles security from user authentication to authorization that allows users to perform actions with data and services. Conceptually, security in Dataverse is there to ensure users can do the work they need to do with the least amount of friction, while still protecting the data and services. Security in Dataverse can be implemented as a simple security model with broad access all the way to highly complex security models where users have specific record and field level access. 
+This section provides information on how [**Microsoft Dataverse**](/powerapps/maker/common-data-service/data-platform-intro), the underlying data platform for Power Platform components, handles security from user authentication to authorization that allows users to perform actions with data and services. Conceptually, security in Dataverse is there to ensure users can do the work they need to do with the least amount of friction, while still protecting the data and services. Security in Dataverse can be implemented as a simple security model with broad access all the way to highly complex security models where users have specific record and field level access. 
 
 The following is a high-level overview of how security model is implemented in Dataverse.
 
@@ -31,12 +31,14 @@ The following is a high-level overview of how security model is implemented in D
 - A user's ability to see and use apps is controlled by sharing the application with the user. Sharing of [canvas apps](/powerapps/maker/canvas-apps/getting-started) is done directly with a user or Azure AD group but is still subject to Dataverse security roles. Sharing of [model-driven apps](/powerapps/maker/model-driven-apps/model-driven-app-overview) is done via Dataverse security roles.
 - Environments act as security boundaries allowing different security needs to be implemented in each environment.
 - Flows and Canvas apps use connectors, the specific connections credentials and associated service entitlements determine permissions when apps use the connectors.
-- Environments with Dataverse add support for more advanced security models that are specific to controlling access to data and services in the Dataverse environment.
+- Environments with Dataverse add support for more advanced security models that are specific to controlling access to data and services in the environment with a Dataverse database.
 
 > [!TIP]
 > To learn about how to help secure and govern Microsoft Power Platform apps like Power Automate, check out the [Microsoft Learn: Introduction to Power Automate security and governance](/learn/modules/security-governance-intro/).
 
 ### See also
+[Security in Power Platform](security/overview.md)<br/>
+[Data storage in Power Platform](security/data-storage.md)<br/>
 [What is Dataverse?](/powerapps/maker/common-data-service/data-platform-intro)<br/>
 [Security concepts in Dataverse](wp-security-cds.md)<br />
 [How access to a record is determined](how-record-access-determined.md)<br />

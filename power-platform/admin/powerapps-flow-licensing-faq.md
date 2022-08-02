@@ -1,10 +1,9 @@
 ---
 title: Power Apps and Power Automate licensing FAQs| Microsoft Docs
 description: "FAQs for licensing Power Apps, Power Automate, Dataverse, Dataverse for Teams, and AI Builder"
-ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/04/2021
+ms.date: 06/15/2022
 author: chrisgarty
 ms.subservice: admin
 ms.author: cgarty
@@ -28,30 +27,33 @@ We have found some common questions on licensing and plan options. We’ve inclu
 
 Power Apps plans:
 
-- **Power Apps per app plan** which allows individual users to run applications (2 apps and a single portal) for a specific business scenario based on the full capabilities of Power Apps for $5/user/app/month. This plan provides an easy way for customers to get started with the platform before broader scale adoption.
+- **Power Apps per app plan** which allows individual users to run applications (one app or one portal) for a specific business scenario based on the full capabilities of Power Apps for $5/user/app/month. This plan provides an easy way for customers to get started with the platform before broader scale adoption.
 
 - **Power Apps per user plan** which equips a user to run unlimited applications (within service limits) based on the full capabilities of Power Apps for $20/user/month.
+
+- **Power Apps pay-as-you-go plan** which allows individual users to run applications (1 app or 1 portal) without any licenses via Azure subscription. You only pay for the number of users who used the app in a month. See [Preview: Pay-as-you-go plan](pay-as-you-go-overview.md).
 
 See [Power Apps pricing](https://powerapps.microsoft.com/pricing/).
 
 Power Automate Plans:
 
-- **Power Automate per user plan** which equips a user to run unlimited flows (within service limits) with the full capabilities of Power Automate based on their unique needs for $15/user/month.
-
-- **Power Automate per flow plan** which enables organizations to implement flows with reserved capacity that serve teams, department, or the entire organization without having to license each end user. This plan starts at $500/month for 5 flows.
-
-More details can be found in [Microsoft Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
+See [Types of Power Automate licenses](power-automate-licensing/types.md), [Frequently asked questions about Power Automate licenses](power-automate-licensing/faqs.md) and  [Microsoft Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130) for details.
 
 ### How do I use Power Apps per app plans? 
-See [Power Apps per app plan](signup-for-powerapps-admin.md#power-apps-per-app-plan).
+See [About Power Apps per app plans](about-powerapps-perapp.md).
+
+### How do I use Power Apps pay-as-you-go plan? 
+See [Preview: Pay-as-you-go plan](pay-as-you-go-overview.md).
 
 ### The Power Apps per app plan allows users to run specific apps. Can you explain what this means in terms of the number and types of apps I can use?
 
-The Power Apps per app plan is designed to help organizations solve for one business scenario at a time, which may involve a combination of individual apps. Each “per app” license provides an individual user with rights to two apps (canvas and/or model-driven) as well as one Power Apps Portal, all within a single environment. A single user might be covered by multiple “per app” licenses to allow the user to use multiple solutions targeted at various business scenarios, without requiring a per-user license. In other words, the “per app” license is stackable.
+The Power Apps per app plan is designed to help organizations solve for one business scenario at a time, which may involve a combination of individual apps. Each “per app” license provides an individual user with rights to one app (canvas and/or model-driven) or one Power Apps Portal, within a single environment. A single user might be covered by multiple “per app” licenses to allow the user to use multiple apps, without requiring a per-user license. In other words, the “per app” license is stackable.
 
-### Do embedded canvas apps in model-driven apps count toward the two-apps limits?
+An important part of this feature simplification is that we will no longer require any standalone plans for maker or admin capabilities. Previously admins required a PowerApps P2 license for certain management operations; this will no longer be the case.
 
-No. Embedded canvas components within the model-driven app will not count towards the two apps limit in the per app licensing model.
+### Do embedded canvas apps in model-driven apps count consume multiple per app plans?
+
+No. Embedded canvas components within the model-driven app are recognized as a single app.
 
 ### What are the self-service purchase options for the Microsoft Power Platform products?
 
@@ -151,7 +153,7 @@ Premium connectors list at October 2019 (will expand over time):
 - Azure Queues  
 - Azure Resource Manager  
 - Azure SQL  
-- Azure SQL Data Warehouse  
+- Azure Synapse Analytics 
 - Azure Table Storage  
 - Dynamics 365  
 - Dynamics 365 Customer Insights  
@@ -190,46 +192,17 @@ Refer to [Licensing guide](https://go.microsoft.com/fwlink/?linkid=2085130) for 
 
 Effective October 1st 2019, there are certain changes made to use rights which are listed below:
 
-Power Apps use rights with Dynamics 365 licenses: Dynamics 365 *Enterprise* licenses will no longer include general purpose Power Apps capabilities. Dynamics 365 Enterprise users will continue to be able to run apps and portals that extend and customize the licensed Dynamics 365 application, as long as those apps and portals are located in the same environment as their licensed Dynamics 365 application. Custom apps or portals outside of the Dynamics 365 environment will require a standalone Power Apps license.
+Power Apps use rights with Dynamics 365 licenses: Dynamics 365 *Enterprise* licenses will no longer include general purpose Power Apps capabilities. Dynamics 365 Enterprise users will continue to be able to run apps and portals that extend and customize the licensed Dynamics 365 application, as long as those apps and portals are located in the same environment as their licensed Dynamics 365 application. Custom apps or portals outside of the environment will require a standalone Power Apps license.
 
 Power Automate use rights with Dynamics 365 licenses: Dynamics 365 licenses will no longer include general purpose Power Automate capabilities. Power Automate flows will need to map to licensed Dynamics 365 application context - Power Automate flows should trigger from OR connect to data sources within use rights of licensed Dynamics 365 application(s). Use of standalone flows will require a Power Automate license.
 
-### Can I connect to Microsoft Dynamics for Finance and Operations?
+### Can I connect to Microsoft Dynamics for finance and operations apps?
 
-Yes, you can use the Dynamics 365 Finance and Operations connector to build canvas apps using this data.
+Yes, you can use the Dynamics 365 finance and operations apps connector to build canvas apps using this data.
 
 ## Power Automate
 
-### Can I get a brief explanation of how Power Automate license plans work?
-
-Each user and flow has a license plan. If the flow is set to the per-flow plan then that is the license plan it will get and it has the highest performance profile. If the flow is set to the per-user plan, then it will get the plan of its primary owner. If a user has multiple plans, such as a Microsoft 365 plan and a Dynamics 365 plan, the flow will use the higher-performance plan. The standard user license plan for Power Automate is the Power Automate per-user plan, but there are a range of other license plans a user could be running with. Users running the free or Office 365 license plans will only be able to access standard connectors, but most of the other license plans provide access to premium connectors. For details about license plans that include Power Automate capabilities, see the Power Platform [Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130). For details about the limits and performance profile of license plans, see the [Power Automate Limits](/power-automate/limits-and-config).
-
-### When would I use the Power Automate per user plan versus the Power Automate per flow plan?
-
-The per user plan is intended to support the broad adoption of an automation culture in an organization. Every user with this plan is entitled to use an unlimited number of flows, within service limits. The per flow plan provides an organization with the flexibility to license by the number of flows, instead of licensing each user accessing the flows individually with the per user plan.
-
-### What do I do if my per user plan flow causes a throttling warning?
-
-The per flow plan provides [higher limits](/power-automate/limits-and-config) than the per user plans. If your flow is approaching license limits, then switching that flow to use a per flow plan should resolve the situation.
-
-### What do I do if my per flow plan flow causes a throttling warning?
-
-The per flow plan provides [high limits](/power-automate/limits-and-config), but if your flow is approaching license limits, then splitting the workload across multiple flows can help.
-
-### Which flows count in the Power Automate per flow plan?
-
-All types of enabled flows count: scheduled flows, automated flows, and instant flows. Flows that are triggered by other flows (child flows) do not count against the plan.
-
-### Do flows always have to be purchased in units of five as part of the Power Automate per flow plan?
-
-No. After the minimum purchase of 5 flows, additional flows can be licensed individually at $100/month per flow.
-
-
-### Do users who run flows need to be licensed, or do only users who create flows need to be licensed?
-
-Any end user running a flow will need to be licensed either by the per user or Power Automate per flow plans.
-
-There are features in Power Automate that are not running a flow directly, such as responding to an approval request or advancing a stage in a business process. These features are built on the Dataverse. Normally, any use of these features requires either a standalone Power Automate per user plan, or, that the flow that creates these business process environments or approval requests to be licensed under the per flow plan.
+See [Frequently asked questions about Power Automate licensing](power-automate-licensing/faqs.md).
 
 ## Dataverse
 
@@ -269,11 +242,11 @@ The existing Microsoft Power Platform functionality available for use in Microso
 
 ### Is there any new capability coming with Dataverse for Teams to Power Automate rights included with Microsoft 365?
 
-Yes. With Dataverse for Teams, users now can build flows using Power Automate maker portal and that operate in a Dataverse for Teams environment. Please note that a Dataverse for Teams environment needs to be created first by either authoring an app or chatbot.
+Yes. With Dataverse for Teams, users now can build flows using Power Automate portal and that operate in a Dataverse for Teams environment. Please note that a Dataverse for Teams environment needs to be created first by either authoring an app or chatbot.
 
 ### Which Microsoft 365 subscriptions include Dataverse for Teams and Power Virtual Agents capabilities with Teams?
 
-Dataverse for Teams and Power Virtual Agents for Teams capabilities will be available as part of select Microsoft 365 subscriptions with Microsoft Power Platform and Teams capabilities, excluding plans for US government environments (GCC High and DoD) and EDU A1 and SUB SKUs. For more information, see the [Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
+Dataverse for Teams and Power Virtual Agents for Teams capabilities will be available as part of select Microsoft 365 subscriptions with Microsoft Power Platform and Teams capabilities, excluding plans for EDU A1 and SUB SKUs. For more information, see the [Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
 
 ### How is Dataverse for Teams environment created? 
 
@@ -327,10 +300,10 @@ Custom connectors are not supported in Dataverse for Teams but [support for Azur
 ### Can customers purchase more capacity for a Dataverse for Teams environment?
 
 No. Dataverse for Teams provides support for approximately 1 million rows per team. Although existing apps and chatbots will continue to work when a Dataverse for Teams environment reaches the per environment limit (2GB), users who want to create a new app, flow, chatbot, or table in the environment will need to :
-1.	Purchase Power Apps, Power Automate, and Power Virtual Agents subscriptions based on their needs and start building their new app, flow, or chatbot in a Dataverse environment.
+1.	Purchase Power Apps, Power Automate, and Power Virtual Agents subscriptions based on their needs and start building their new app, flow, or chatbot in an environment.
 2.	[Upgrade](about-teams-environment.md#upgrade-process) the existing Dataverse for Teams environment to Dataverse in the Power Platform admin center and, if needed, purchase Power Apps, Power Automate, or Power Virtual Agents subscriptions based on their needs.
 
-### Can customers package and export their solution (app/flow/chatbots) built in Dataverse for Teams, and then import that into a Dataverse environment (assuming they have the corresponding license including access rights to Microsoft Dataverse)?
+### Can customers package and export their solution (app/flow/chatbots) built in Dataverse for Teams, and then import that into an environment (assuming they have the corresponding license including access rights to Microsoft Dataverse)?
 
 This capability is not available yet, but is included in our roadmap.
 
@@ -382,10 +355,10 @@ Power Apps Portals can be provisioned without requiring a specific license. User
 
 | **User type**                 | **Model**     | **SKU names**                                                       | **Unit capacity**  | **Price/month** | **Channel** | **Comments**                                                                              |
 |-------------------------------|---------------|---------------------------------------------------------------------|--------------------|-----------------|-------------|-------------------------------------------------------------------------------------------|
-| External user (authenticated) | Per login     | Power Apps portals login capacity add-on                             | 100 logins         | $200           | All         | A login provides the authenticated user with access to a single portal for up to 24 hours |
-|                               |               | Power Apps portals login capacity add-on Tier 2                      | 1000 logins        | $1000          | All         |                                                                                           |
-|                               |               | Power Apps portals login capacity add-on Tier 3                      | 5000 logins        | $3500          | CSP only    |                                                                                           |
-| External user (anonymous) | Per page view | Power Apps portals page view capacity add-on                         | 100,000 page views | $100           | All         |                                                                                           |
+| External user (authenticated) | Per login     | Power Apps Portals login capacity add-on                             | 100 logins         | $200           | All         | A login provides the authenticated user with access to a single portal for up to 24 hours |
+|                               |               | Power Apps Portals login capacity add-on Tier 2                      | 1000 logins        | $1000          | All         |                                                                                           |
+|                               |               | Power Apps Portals login capacity add-on Tier 3                      | 5000 logins        | $3500          | CSP only    |                                                                                           |
+| External user (anonymous) | Per page view | Power Apps Portals page view capacity add-on                         | 100,000 page views | $100           | All         |                                                                                           |
 | Internal user                 | Via license   | Dynamics 365 (various)                                              | n/a                | n/a             | n/a         | Custom portal use rights are aligned with custom app use rights                           |
 |                               |               | Power Apps per app plan                                              |                    |                 |             |                                                                                           |
 |                               |               | Power Apps per user plan                                             |                    |                 |             |                                                                                           |
@@ -407,7 +380,7 @@ Logins are specific to a single portal. So if you access multiple portals belong
 |--------------------------------------------|---------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Provisioning a portal environment**      | **Purchase** Dynamics 365 Additional Portal SKU at $500 per month  | **Provision** a portal—no need to purchase portal addons to provision a portal                                                                         |
 | **Qualifying base offers**                 | Dynamics 365 licenses only                                          | Customers can add on portal external login or page view capacity to Dynamics 365, **Power Apps and Power Automate licenses**                            |
-| **Internal use rights**                    | Dynamics 365 enterprise licenses, Dynamics 365 team member license. | Internal users can now access portals with a **Power Apps per-app/per-user license. For a Dynamics license it is same as custom Power Apps use rights.** |
+| **Internal use rights**                    | Dynamics 365 enterprise licenses, Dynamics 365 team member license. | Internal users can access portals with a **Power Apps per-app/per-user license. For a Dynamics license it is same as custom Power Apps use rights.** |
 | **Monetization**                           | Per portal environment Per page view                                | **Per log in** Per page view                                                                                                                           |
 | **Entitlement for Dynamics 365 customers** | 1 portal environment for the first 10 full Dynamics 365 USLs        | Not applicable―Power Apps Portals environments can be provisioned                                                                                       |
 
@@ -474,26 +447,26 @@ The release status for AI Builder features is available [here](/power-platform-r
 AI models available in public preview do not require paid AI Builder capacity. A full list of all models can be found [here](/ai-builder/model-types#model-types).
 
 ### Is a trial available for AI Builder?
-Users without an existing Power Apps or Power Automate license can access AI Builder trial capacity for 30 days by signing up for either a Power Apps or Power Automate trial. Existing Power Apps and Power Automate users can access AI Builder trial capacity for 30-days by signing into the respective service and accessing AI Builder in the left navigation pane. 
+Users without an existing Power Apps or Power Automate license can access AI Builder trial capacity for 30 days by signing up for either a Power Apps or Power Automate trial. Existing Power Apps and Power Automate users can access AI Builder trial capacity for 30-days by signing into the respective service and accessing AI Builder in the left navigation pane.
 
-## Power Automate RPA license
+## Power Automate RPA add-on
 
-### How can I apply unattended RPA licenses to my flows?
+### How can I apply unattended RPA add-ons to my flows?
 
-Follow these steps to apply unattended RPA licenses to your flows.
+Follow these steps to apply unattended RPA add-ons for your flows.
 
-1. The tenant admin must purchase or get trial a version of the unattended RPA add-on capacity for the tenant. The tenant admin can do this from the [Microsoft 365 admin portal](https://admin.microsoft.com/AdminPortal/Home#/catalog). Just search the purchase services page for the add-on.
+1. The tenant admin must purchase or get a trial version of the unattended RPA add-on capacity for the tenant. The tenant admin can do this from the [Microsoft 365 admin portal](https://admin.microsoft.com/AdminPortal/Home#/catalog). Just search the purchase services page for the add-on.
   
-   ![get unattended license.](./media/RPA-license/unattended-license-M365.JPG)
+   ![Get unattended add-ons.](./media/RPA-license/unattended-license-M365.JPG)
   
 1. The environment admin must assign the available (paid or trial) unattended add-on capacities to a specific environment.
   
-   ![manage unattended license.](./media/RPA-license/unattended-license-manage.png)
+   ![Manage unattended add-ons.](./media/RPA-license/unattended-license-manage.png)
   
-1. Makers can now run unattended desktop flows within the environment that has the unattended capacity. 
+1. Makers can now run unattended desktop flows within the environment that has the unattended capacity.
 
 > [!NOTE]
-> The unattended add-on is environment-specific. So, if you have multiple environments that need to run unattended RPA, you need to assign add-on capacity to each of them. 
+> The unattended add-on is environment-specific. So, if you have multiple environments that need to run unattended RPA, you need to assign add-on capacity to each of them.
 > Also if you need to run multiple unattended desktop flows in parallel in a single environment, you need to assign the right number of unattended add-ons to the environment to support the flow runs.
  
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

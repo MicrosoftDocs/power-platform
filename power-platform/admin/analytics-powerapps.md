@@ -1,13 +1,13 @@
 ---
 title: "Administrator analytics and reports for Microsoft Power Apps"
 description: "Admins can view Microsoft Power Apps analytics in the Power Platform admin center, including reports on environment-level usage, errors, and service performance."
-author: jimholtz
-ms.service: power-platform
+author: tjvass
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/04/2020
+ms.date: 10/18/2020
 ms.subservice: admin
-ms.author: jimholtz
+ms.author: tjvass
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:
@@ -106,6 +106,13 @@ Select the environment and time period from the drop-down lists, and then select
 
 ### Why are some apps missing in my report?
 Currently, Power Apps analytics reports do not display model-driven apps data. Only canvas apps related data is displayed.
+
+
+### See also
+[Tenant-level analytics (default)](tenant-level-analytics.md) <br />
+[Tenant-level Analytics for Power Apps (preview)](powerapps-analytics-reports.md)
+
+
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

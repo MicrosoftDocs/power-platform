@@ -9,7 +9,6 @@ manager: kvivek
 ms.custom: ""
 ms.date: 05/05/2020
 ms.reviewer: "matp"
-ms.service: power-platform
 ms.topic: "article"
 search.audienceType: 
   - maker
@@ -22,7 +21,7 @@ search.app:
 The articles in this section describe how you can implement application lifecycle management (ALM) using Power Apps, Power Automate, Power Virtual Agents, and Microsoft Dataverse. 
 
 ## What is ALM? 
-ALM is the lifecycle management of applications, which includes governance, development, and maintenance. Moreover, it includes these disciplines: requirements management, software architecture, development, testing, maintenance, change management, continuous integration, project management, deployment, and release management. ALM tools provide a
+ALM is the lifecycle management of applications, which includes governance, development, and maintenance. Moreover, it includes these disciplines: requirements management, software architecture, development, testing, maintenance, change management, support, continuous integration, project management, deployment, release management and governance. ALM tools provide a
 standardized system for communication and collaboration between software
 development teams and related departments, such as test and operations. These
 tools can also automate the process of software development and delivery. To
@@ -31,15 +30,14 @@ to achieve the goal of driving efficiency through predictable and repeatable
 software delivery.
 
 ## Key areas of ALM
-1.  **Governance**  includes requirements management, resource management, data
-    security, user access, change tracking, review, audit, deployment control,
-    and rollback.
+1.  **Governance**  includes requirements management, resource management, nurturing and system administration such as data
+    security, user access, change tracking, review, audit, deployment control, and rollback.
 
 2.  **Application development**  includes identifying current problems, and
-    planning, design, building, and testing the application. This area includes
+    planning, design, building, and testing the application and its continuous improvements. This area includes
     traditional developer and app maker roles.
 
-3.  **Maintenance** includes deployment of the app and maintenance of optional and
+3.  **Maintenance** includes deployment of the app, and maintenance of optional and
     dependent technologies.
 
 The *application lifecycle* is the cyclical software development process that involves these areas: plan and track, develop, build and test, deploy, operate, monitor, and learn from discovery.
@@ -48,21 +46,23 @@ The *application lifecycle* is the cyclical software development process that in
 
 ## ALM for Power Apps, Power Automate, Power Virtual Agents, and Dataverse
 
-Dataverse in Microsoft Power Platform lets you securely store and manage data that's used by business applications. To use the features and tools available for ALM, all environments that participate in ALM must include a Dataverse database.
+[Dataverse](/powerapps/maker/data-platform/data-platform-intro) in Microsoft Power Platform lets you securely store and manage data and processes that's used by business applications. To use the Power Platform features and tools available to manage ALM, all environments that participate in ALM must include a Dataverse database.
 
 The following concepts are important for understanding ALM using the Microsoft Power Platform.
 
--   *Solutions* are the mechanism for implementing ALM; you use them to distribute components across environments through export and import. A component represents something that you can potentially customize. Anything that can be included in a solution is a component, such as site maps, apps, chatbots, entities, fields, charts, or plug-ins. 
+-   *Solutions* are the mechanism for implementing ALM; you use them to distribute components across environments through export and import. A component represents an artifact used in your application and something that you can potentially customize. Anything that can be included in a solution is a component, such as tables, columns, canvas and model-driven apps, Power Automate flows, chatbots, charts, and plug-ins.
 
 -   *Dataverse* stores all the artifacts, including solutions.
 
 -   *Source control* should be your source of truth for storing and collaborating on your components.
 
+-   *Continuous integration and continuous delivery (CI/CD) platform* such as [Azure DevOps](/azure/devops/user-guide/what-is-azure-devops) that allows you to automate your build, test, and deployment pipeline.
+
 For more information about how ALM and Azure DevOps technologies&mdash;combined with people and processes&mdash;enable teams to continually provide value to customers, see [DevOps tools on Azure](https://azure.microsoft.com/solutions/devops/).
 
 ### See also
 [ALM basics with Microsoft Power Platform](basics-alm.md)<br/>
-[What is Dataverse?](/powerapps/maker/common-data-service/data-platform-intro) <br/>
+[What is Dataverse?](/powerapps/maker/data-platform/data-platform-intro) <br/>
 [Application lifecycle management for Finance and Operations apps](/learn/modules/application-lifecycle-finance-operations/)
 [ALM for chatbots](/power-virtual-agents/authoring-export-import-bots)
 

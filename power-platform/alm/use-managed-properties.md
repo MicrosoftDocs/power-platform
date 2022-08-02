@@ -2,14 +2,14 @@
 title: "Use managed properties (Microsoft Dataverse) | Microsoft Docs" # Intent and product brand in a unique string of 43-59 chars including spaces
 description: "Managed properties help you define which of the managed solution components can be customized" # 115-145 characters including spaces. This abstract displays in the search result.
 ms.custom: ""
-ms.date: 04/28/2021
+ms.date: 07/15/2022
 ms.reviewer: "pehecke"
-ms.service: power-platform
+
 ms.topic: "article"
 author: "shmcarth" # GitHub ID
 ms.subservice: alm
-ms.author: "jdaly" # MSFT alias of Microsoft employees only
-manager: "ryjones" # MSFT alias of manager or PM counterpart
+ms.author: "shmcarth" # MSFT alias of Microsoft employees only
+manager: "sunilg" # MSFT alias of manager or PM counterpart
 search.audienceType: 
   - developer
 search.app: 
@@ -19,7 +19,11 @@ search.app:
 
 # Use managed properties
 
-You can control which of your managed solution components are customizable by using managed properties. By default, all custom solution components are customizable. Each solution component has a **Can be customized** (`IsCustomizable`) property. As long as this property is true, more properties specific to the type of solution component can be specified. If you set the `IsCustomizable.Value` property to false, after the solution is installed as a managed solution the solution component will not be customizable. The following table lists the managed properties for each solution component.  
+You can control which of your managed solution components are customizable by using managed properties. By default, all custom solution components are customizable. Each solution component has a **Can be customized** (`IsCustomizable`) property. As long as this property value is set to true, more properties specific to the type of solution component can be specified. If you set the `IsCustomizable.Value` property to false, after the solution is installed as a managed solution the solution component will not be customizable.
+
+Managed properties ensure that only a solution from the same publisher will be able to change the component.  Managed properties will only affect managed components and does not force this in the development environments where the component is still unmanaged.  The use of the `IsCustomized` managed property is intended to ensure that no other solution layer from any other publisher, and no active customizations can be done on the component once it is installed as a managed solution.
+
+The following table lists some managed properties for a subset of available solution components.  
   
 |Component|Display Name|Property|  
 |---------------|------------------|--------------|  
@@ -32,6 +36,7 @@ You can control which of your managed solution components are customizable by us
 |Entity|New charts can be created|<xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.CanCreateCharts>.`Value`|  
 |Entity|New views can be created|<xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.CanCreateViews>.`Value`|  
 |Entity|Can change any other entity properties not represented by a managed property|<xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.CanModifyAdditionalSettings>.`Value`|  
+|Entity|Can create attributes|<xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.CanCreateAttributes>.`Value`|  
 |Field (Attribute)|Can be customized|<xref:Microsoft.Xrm.Sdk.Metadata.AttributeMetadata.IsCustomizable>.`Value`|  
 |Field (Attribute)|Display name can be modified|<xref:Microsoft.Xrm.Sdk.Metadata.AttributeMetadata.IsRenameable>.`Value`|  
 |Field (Attribute)|Can change requirement level|<xref:Microsoft.Xrm.Sdk.Metadata.AttributeMetadata.RequiredLevel>.`CanBeChanged`<br /><br /> Note:<br /><br /> `RequiredLevel`is the only managed property to use the `CanBeChanged`property.|  
@@ -52,6 +57,8 @@ You can control which of your managed solution components are customizable by us
 |Mail Merge Template|Can be customized|`MailMergeTemplate.IsCustomizable.Value`|  
 |Dashboard|Can be customized|`SystemForm.IsCustomizable.Value`|  
 |Security Roles|Can be customized|`Role.IsCustomizable.Value`|  
+|System Form|Can be deleted|[CanBeDeleted](/power-apps/developer/data-platform/reference/entities/systemform#BKMK_CanBeDeleted).`Value`|  
+|System Query|Can be deleted|[CanBeDeleted](/power-apps/developer/data-platform/reference/entities/savedquery#BKMK_CanBeDeleted).`Value`|
 
 ### Workflow Is Custom Processing Step Allowed For Other Publishers 
 

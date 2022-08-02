@@ -9,7 +9,7 @@
       "moniker_ranges": [],
       "xref_query_tags": [
         "/dotnet",
-        "/dynamics365/customer-engagement/web-api"
+        "/power-apps/developer/data-platform/webapi/reference"
       ],
       "open_to_public_contributors": true,
       "type_mapping": {
@@ -49,12 +49,18 @@
     {
       "path_to_root": "_themes",
       "url": "https://github.com/Microsoft/templates.docs.msft",
-      "branch": "master",
+      "branch": "main",
       "branch_mapping": {}
     },
     {
       "path_to_root": "_themes.pdf",
       "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
+      "branch": "main",
+      "branch_mapping": {}
+    },
+    {
+      "path_to_root": "powerapps-samples",
+      "url": "https://github.com/microsoft/PowerApps-Samples",
       "branch": "master",
       "branch_mapping": {}
     }
@@ -64,11 +70,15 @@
       "Publish",
       "Pdf"
     ],
-    "master": [
+    "main": [
       "Publish",
       "Pdf"
     ],
     "JimHoltzWorkBranch": [
+      "Publish",
+      "Pdf"
+    ],
+    "build-2022": [
       "Publish",
       "Pdf"
     ]

@@ -2,11 +2,9 @@
 title: "Enable Preview features to get early access"
 description: "Learn how to enable Preview features that have limited functionality to get early access and provide feedback."
 author: jimholtz
-manager: kvivek
-ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/07/2021
+ms.date: 05/19/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -25,7 +23,7 @@ Preview features are features that aren't complete, but are made available on a 
   
 - Are subject to separate [Supplemental Terms of Use](/dynamics365/legal/supp-dynamics365-preview).  
   
-- **Are not supported by [!INCLUDE[pn_Microsoft_Support](../includes/pn-microsoft-support.md)]**.  
+- Are not supported by [!INCLUDE[pn_Microsoft_Support](../includes/pn-microsoft-support.md)] for production use. Microsoft Support is, however, eager to get your feedback on the preview functionality, and might provide best effort support in certain cases. 
   
 - May have limited or restricted functionality.  
   
