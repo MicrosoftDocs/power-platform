@@ -41,7 +41,7 @@ Go to **Topics** in Power Virtual Agents and create a new topic called **Meal de
 
 In the **Authoring canvas**, select the default **Message** node. Select the three vertical dots, then select **Delete**.
 
-Select the **Add node** (+) button under the **Trigger phrases** node, and then select **Ask a question**.
+Select **Add node** (**+**) under the **Trigger phrases** node, and then select **Ask a question**.
 
 For **Ask a question** , enter "What city are you in?".
 

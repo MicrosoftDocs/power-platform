@@ -67,7 +67,7 @@ The list shows each overlapping topic along with a similarity score, which repre
 
 You can sort the list by its similarity score, topic name, or number of trigger phrase overlaps.
 
-If you click an item in the list, the **Topic overlap details** pane will open.
+If you select an item in the list, the **Topic overlap details** pane will open.
 
 :::image type="content" source="media/advanced-ai-features/topic-overlap-details.png" alt-text="Screenshot of the Topic overlap details pane showing overlaps related to Microsoft 365 language topics.":::
 
@@ -93,7 +93,7 @@ This feature analyzes sessions between your bot and users and surfaces suggestio
 
 The topic suggestion analyzer automatically runs once every one to two hours. It scans through all new queries made since the analyzer last ran, groups together queries to which it couldn't match an existing topic, and presents them in the list. Your bot will need at least 100 new conversations (from the last time any suggestion was generated) to trigger the process, and only those suggestions with more than three user sessions will be shown.
 
-When you click on an item in the suggestion list, a topic suggestion window will appear, showing the topic with some suggested trigger phrases. The suggested trigger phrases are based on the queries made by the bot users that couldn't be matched to an existing topic.
+When you select an item in the suggestion list, a topic suggestion window will appear, showing the topic with some suggested trigger phrases. The suggested trigger phrases are based on the queries made by the bot users that couldn't be matched to an existing topic.
 
 After reviewing the suggested trigger phrases, you can choose to delete the entire suggested topic (for example, if it's irrelevant to the bot) or add it to your list of topics by selecting **Add to topics**.
 

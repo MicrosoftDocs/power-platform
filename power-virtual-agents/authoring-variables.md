@@ -76,7 +76,7 @@ In the bot authoring canvas, add a question node. A variable is created automati
 
 1. Go to your bot's [**Topics page**](./authoring-create-edit-topics.md) and open the topic you want to add a variable to.
 
-1. Select the plus (**+**) icon, and then select **Ask a question**.
+1. Select **Add node** (**+**), and then select **Ask a question**.
 
    :::image type="content" source="media/authoring-variables/handoff-add-node.png" alt-text="Screenshot of adding a node.":::
 

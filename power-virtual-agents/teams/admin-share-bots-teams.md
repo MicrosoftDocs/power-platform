@@ -150,7 +150,7 @@ To make sure users who chat with your bot can run the [Power Automate](advanced-
 
 ## Collaborate on bots
 
-In the **Topics** list, you can see who's working on a topic under the **Editing** column. You can hover or click on the person's icon to quickly chat with them in Teams or send them an email.
+In the **Topics** list, you can see who's working on a topic under the **Editing** column. You can select the person's icon to quickly chat with them in Teams or send them an email.
 
 This can help prevent conflicts if multiple people are working on the same topic.
 

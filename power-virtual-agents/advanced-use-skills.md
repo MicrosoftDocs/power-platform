@@ -41,7 +41,7 @@ Next, [register a skill in Power Virtual Agents](configuration-add-skills.md).
 
 1. Open the authoring canvas for the topic you want to call a skill action from.
 
-1. Select the plus (**+**) icon underneath an existing node to add a new node.
+1. Select **Add node** (**+**) underneath an existing node to add a new node.
 
     :::image type="content" source="media/advanced-use-skills/handoff-add-node.png" alt-text="Screenshot of adding a node." border="false":::
 

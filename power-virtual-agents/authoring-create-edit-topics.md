@@ -104,7 +104,7 @@ These automatically created topics fall into two categories:
 
     When you create a new topic, a **Trigger phrases** node and a blank **Message** node are inserted for you.
 
-1. To add a node, select the plus (**+**) icon on the line or branch between or after nodes.
+1. To add a node, select **Add node** (**+**) on the line or branch between or after nodes.
 
    :::image type="content" source="media/authoring-create-edit-topics/handoff-add-node.png" alt-text="Screenshot of adding a node.":::
 
@@ -133,7 +133,7 @@ Additionally, you can **Add a condition** when you insert a node after a **Quest
 
 #### Ask a question
 
-1. To have the bot ask a question and get a response from the user, select **+** to add a node, and then select **Ask a question** to add a new **Question** node.
+1. To have the bot ask a question and get a response from the user, select **Add node** (**+**) to add a node, and then select **Ask a question** to add a new **Question** node.
 
    :::image type="content" source="media/authoring-create-edit-topics/topics-question.png" alt-text="Screenshot of adding a new question mode.":::
 
@@ -172,7 +172,7 @@ If you've configured hand-off to omnichannel with voice-based capabilities, you'
 
 #### Show a message
 
-1. To specify a response from the bot, select **+** to add a node, and then select **Show a message** to add a new **Message** node.
+1. To specify a response from the bot, select **Add node** (**+**) to add a node, and then select **Show a message** to add a new **Message** node.
 
 1. Enter what you want the bot to say in the text box.
 
@@ -180,7 +180,7 @@ If you've configured hand-off to omnichannel with voice-based capabilities, you'
 
 #### Redirect to another topic
 
-1. To have the bot move to a different topic, select **+** to add a node, and then select **Redirect to another topic**.
+1. To have the bot move to a different topic, select **Add node** (**+**) to add a node, and then select **Redirect to another topic**.
 
 1. Select the topic that the bot should divert to. For example, you might send the user to a topic about the closure of a store if they ask about the store's hours.
 
@@ -223,7 +223,7 @@ You can also have the conversation [handed over to a live agent](advanced-hand-o
 
 #### Add a condition
 
-1. To add branching logic based on [variables](authoring-variables.md), select **+** to add a node, select **Add a condition**, and then select **Branch based on a condition**.
+1. To add branching logic based on [variables](authoring-variables.md), select **Add node** (**+**) to add a node, select **Add a condition**, and then select **Branch based on a condition**.
 
 1. Select the variable that will determine whether the bot conversation should branch at this point.
 

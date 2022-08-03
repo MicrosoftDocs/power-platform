@@ -40,7 +40,7 @@ Lastly, you can manage the retention period for transcripts. This can be useful 
 
     If your bot had a high number of sessions, they'll be broken down into multiple rows. Each row contains 2500 sessions.
 
-1. Click on each row to download the session transcripts for the specified time frame.
+1. Select each row to download the session transcripts for the specified time frame.
 
     :::image type="content" source="media/analytics-sessions/analytics-sessions-billing.png" alt-text="Sessions page." border="false":::
 
