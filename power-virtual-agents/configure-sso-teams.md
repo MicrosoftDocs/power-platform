@@ -20,12 +20,12 @@ The Power Virtual Agents app in Microsoft Teams supports single sign-on (SSO), w
 SSO in the Power Virtual Agents app in Teams is only supported when using Azure Active Directory v2 (Azure AD v2). Other service providers, such as Azure AD v1, do not support SSO in the Power Virtual Agents app in Microsoft Teams.
 
 > [!IMPORTANT]
-> SSO is not supported when your bot is integrated with [Dynamics 365 Customer Service](configuration-hand-off-omnichannel).
+> SSO is not supported when your bot is integrated with [Dynamics 365 Customer Service](configuration-hand-off-omnichannel.md).
 
 ## Prerequisites
 
-- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents).
-- [Learn how to use user authentication in a topic](/advanced-end-user-authentication.md).
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- [Learn how to use user authentication in a topic](advanced-end-user-authentication.md).
 - [Configure manual user authentication using the Azure AD v2 service provider](configuration-end-user-authentication.md).
 - Make sure your bot and Azure AD application are under the same tenant.
 
@@ -52,7 +52,7 @@ SSO in the Power Virtual Agents app in Teams is only supported when using Azure 
 
     :::image type="content" source="media/configure-sso-teams/set-app-id-uri.png" alt-text="Screenshot of the location of the Set button for the Application ID URI.":::
 
-1. Enter `api://botid-{teamsbotid}` and replace `{teamsbotid}` with the your [Teams channel app ID](#locate-your-teams-channel-app-id) that you found earlier.
+1. Enter `api://botid-{teamsbotid}` and replace `{teamsbotid}` with the your [Teams channel app ID](#locate-your-microsoft-teams-channel-app-id) that you found earlier.
 
     :::image type="content" source="media/configure-sso-teams/enter-app-id-uri.png" alt-text="Screenshot of a correctly formatted URI entered into the Application ID URI box.":::
 
@@ -149,7 +149,7 @@ To update the Azure AD authentication settings in Power Virtual Agents you'll ne
 
 1. Select **Save**, and then **Close**.
 
-1. [Publish your bot to Microsoft Teams](publication-add-bot-to-microsoft-teams).
+1. [Publish your bot to Microsoft Teams](publication-add-bot-to-microsoft-teams.md).
 
 1. Test your bot in Microsoft Teams to ensure it automatically signs the user in.
 
