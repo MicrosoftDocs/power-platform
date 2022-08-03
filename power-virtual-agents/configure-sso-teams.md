@@ -92,6 +92,9 @@ SSO in the Power Virtual Agents app in Teams is only supported when using Azure 
 
 ## Add Microsoft Teams client IDs
 
+> [!IMPORTANT]
+> In the following steps, the values provided for Microsoft Teams client IDs should be used literally because they are the same across all tenants.
+
 1. In the Azure Portal on your app registration blade, go to **Expose an API** and select **Add a client application**.
 
     :::image type="content" source="media/configure-sso-teams/add-client-application.png" alt-text="Screenshot of the Add a client application button highlighted.":::
@@ -122,7 +125,7 @@ To update the Azure AD authentication settings in Power Virtual Agents you'll ne
 
     :::image type="content" source="media/configure-sso-teams/token-exchange-url.png" alt-text="Screenshot of the Application ID URI entered as the Token exchange URL in Power Virtual Agents.":::
 
-## Add SSO identifiers to your bot's Microsoft Teams channel
+## Add SSO to your bot's Microsoft Teams channel
 
 1. In Power Virtual Agents, expand **Manage** on the side pane, and then select **Channels**.
 
@@ -148,6 +151,6 @@ To update the Azure AD authentication settings in Power Virtual Agents you'll ne
 
 1. [Publish your bot to Microsoft Teams](publication-add-bot-to-microsoft-teams).
 
-1. Test your in Microsoft Teams to ensure it automatically signs the user in.
+1. Test your bot in Microsoft Teams to ensure it automatically signs the user in.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
