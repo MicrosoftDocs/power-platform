@@ -21,9 +21,7 @@ For deprecation information of other products, see [Other deprecation articles](
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability will continue to work and is fully supported until it is officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
 
-## The legacy read-only grid in model-driven apps is deprecated
-
-Internet Explorer 11 support for Dynamics 365 and Microsoft Power Platform is deprecated. 
+## Internet Explorer 11 support for Dynamics 365 and Microsoft Power Platform is deprecated. 
  
 Dynamics 365 and Microsoft Power Platform will be blocked in Internet Explorer starting October 31st. From early October 2022, users will be redirected to Microsoft Edge if they have Edge currently installed on their device.  Otherwise, they will receive a non-dismissible message informing them why they are blocked and to try using the site on Microsoft Edge. Starting October 31st, Internet Explorer will be blocked on Dynamics 365 and Microsoft Power Platform and users will see a blocking message informing them to use Microsoft Edge. If users are trying to access Dynamics 365 and Microsoft Power Platform on a Microsoft Edge version that is no longer supported, they will be prompted to use the latest version of Edge. 
  
@@ -32,6 +30,24 @@ We recommend that customers transition to [Microsoft Edge](https://www.microsoft
 More information: [Support end for Internet Explorer](admin/support-end-internet-explorer.md).
 
 If you have more questions, contact your Microsoft Customer Service representative or Microsoft Partner.
+
+## The legacy read-only grid in model-driven apps is deprecated
+
+The legacy read-only grid control has been deprecated in model-driven apps with the 2022 release wave 1. This control is being replaced by the **Power Apps read-only grid**, which became the default read-only grid experience for all environments for model-driven apps with the 2022 release wave 1.  
+
+### Why is this needed?
+
+The legacy read-only grid:
+
+- Doesn’t support the latest Microsoft accessibility standards.
+- Doesn’t align with the latest in Microsoft design guidance.
+- Has limited extensibility options.
+
+### Impact
+
+Tables configured to use the *Read-only Grid (Default)* control are replaced with the *Power Apps read-only grid* for views and subgrids. This change started with the 2022 release wave 1. 
+
+When the Power Apps read-only grid is originally enabled, the jump bar row is not visible; however, makers can re-enable this as needed. More information: [Configure the Power Apps read-only grid control](/power-apps/maker/model-driven-apps/power-apps-grid-control#configure-the-power-apps-read-only-grid-control)
 
 ## Support for Microsoft 365 Groups and Yammer in Dynamics 365 is deprecated
 
