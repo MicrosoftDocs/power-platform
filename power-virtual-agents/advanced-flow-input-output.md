@@ -63,7 +63,7 @@ The following types aren't supported:
 
     :::image type="content" source="media/advanced-flow-input-output/new-topic.png" alt-text="Screenshot of a Question node.":::
 
-1. On the authoring canvas, select the plus (**+**) icon. Select **Call an action**, and then select **Create a flow**.
+1. On the authoring canvas, select **Add node** (**+**). Select **Call an action**, and then select **Create a flow**.
 
 1. In the Power Automate portal, name the flow **Echo parameter**.
 
@@ -95,7 +95,7 @@ The following types aren't supported:
 
 ## Select variables in the bot topic
 
-1. On the Power Virtual Agents authoring canvas, select the plus (**+**) icon, and then select **Call an action**.
+1. On the Power Virtual Agents authoring canvas, select **Add node** (**+**), and then select **Call an action**.
 
 1. Select the flow you created earlier, **Echo parameter**.
 
