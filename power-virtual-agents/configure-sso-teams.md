@@ -17,7 +17,7 @@ ms.collection: virtual-agent
 
 The Power Virtual Agents app in Microsoft Teams supports single sign-on (SSO), which means bots can automatically sign-in users with their Microsoft Teams credentials.
 
-SSO in the Power Virtual Agents app in Teams is only supported when using Azure Active Directory v2 (Azure AD v2). Other service providers, such as Azure AD v1, do not support SSO in the Power Virtual Agents app in Microsoft Teams.
+SSO in the Power Virtual Agents app in Teams is only supported when using Azure Active Directory v2 (Azure AD v2). Other service providers, such as Azure AD v1, don't support SSO in the Power Virtual Agents app in Microsoft Teams.
 
 > [!IMPORTANT]
 > SSO is not supported when your bot is integrated with [Dynamics 365 Customer Service](configuration-hand-off-omnichannel.md).
@@ -52,7 +52,7 @@ SSO in the Power Virtual Agents app in Teams is only supported when using Azure 
 
     :::image type="content" source="media/configure-sso-teams/set-app-id-uri.png" alt-text="Screenshot of the location of the Set button for the Application ID URI.":::
 
-1. Enter `api://botid-{teamsbotid}` and replace `{teamsbotid}` with the your [Teams channel app ID](#locate-your-microsoft-teams-channel-app-id) that you found earlier.
+1. Enter `api://botid-{teamsbotid}` and replace `{teamsbotid}` with your [Teams channel app ID](#locate-your-microsoft-teams-channel-app-id) that you found earlier.
 
     :::image type="content" source="media/configure-sso-teams/enter-app-id-uri.png" alt-text="Screenshot of a correctly formatted URI entered into the Application ID URI box.":::
 
@@ -62,7 +62,7 @@ SSO in the Power Virtual Agents app in Teams is only supported when using Azure 
 
 <!-- FIXME: I'm unable to do this, due to the app not having a verified publisher. Is there a doc we can link to? -->
 
-1. In the Azure Portal on your app registration blade, go to **API Permissions**.
+1. In the Azure portal on your app registration blade, go to **API Permissions**.
 
 1. Select **Grant admin consent for \<your tenant name\>** and then **Yes**.
 
@@ -73,13 +73,13 @@ SSO in the Power Virtual Agents app in Teams is only supported when using Azure 
 
 ## Define a custom scope for your bot
 
-1. In the Azure Portal on your app registration blade, go to **Expose an API**.
+1. In the Azure portal on your app registration blade, go to **Expose an API**.
 
 1. Select **Add a scope**.
 
     :::image type="content" source="media/configure-sso-teams/add-a-scope.png" alt-text="Screenshot of the Add a scope button highlighted.":::
 
-1. Enter a the follow values:
+1. Enter the following values:
 
    <!-- FIXME: the value "Test.Read" is what was in the old screen shot. Is there a better suggested value we can use to encourage naming scope according to best practices? -->
    | Property                   | Value                                |
@@ -95,7 +95,7 @@ SSO in the Power Virtual Agents app in Teams is only supported when using Azure 
 > [!IMPORTANT]
 > In the following steps, the values provided for Microsoft Teams client IDs should be used literally because they are the same across all tenants.
 
-1. In the Azure Portal on your app registration blade, go to **Expose an API** and select **Add a client application**.
+1. In the Azure portal on your app registration blade, go to **Expose an API** and select **Add a client application**.
 
     :::image type="content" source="media/configure-sso-teams/add-client-application.png" alt-text="Screenshot of the Add a client application button highlighted.":::
 
@@ -113,11 +113,11 @@ SSO in the Power Virtual Agents app in Teams is only supported when using Azure 
 
 ## Add token exchange URL
 
-To update the Azure AD authentication settings in Power Virtual Agents you'll need to add the token exchange URL to allow Microsoft Teams and Power Virtual Agents to share information.
+To update the Azure AD authentication settings in Power Virtual Agents, you'll need to add the token exchange URL to allow Microsoft Teams and Power Virtual Agents to share information.
 
-1. In the Azure Portal on your app registration blade, go to **Expose an API** and copy value in the **Application ID URI** box.
+1. In the Azure portal on your app registration blade, go to **Expose an API** and copy value in the **Application ID URI** box.
 
-    :::image type="content" source="media/configure-sso-teams/application-id-uri.png" alt-text="Screenshot of the Application ID URI in Azure Portal.":::
+    :::image type="content" source="media/configure-sso-teams/application-id-uri.png" alt-text="Screenshot of the Application ID URI in Azure portal.":::
 
 1. In Power Virtual Agents, select **Manage** on the side pane, select **Security**, and then select the **Authentication** tile.
 
@@ -133,17 +133,17 @@ To update the Azure AD authentication settings in Power Virtual Agents you'll ne
 
 1. For **AAD application's client ID**, enter the **Application (client) ID** from your app registration.
 
-   To obtain this value, open the Azure Portal. Then on your app registration blade, go to **Overview**. Copy the value in the **Application (client) ID** box.
+   To obtain this value, open the Azure portal. Then on your app registration blade, go to **Overview**. Copy the value in the **Application (client) ID** box.
 
-   :::image type="content" source="media/configure-sso-teams/azure-application-id.png" alt-text="Screenshot of where to find the Application (client) ID in Azure Portal.":::
+   :::image type="content" source="media/configure-sso-teams/azure-application-id.png" alt-text="Screenshot of where to find the Application (client) ID in Azure portal.":::
 
    :::image type="content" source="media/configure-sso-teams/add-sso-application-id.png" alt-text="Screenshot of the Application (client) ID entered as the AAD application's client ID in Power Virtual Agents.":::
 
 1. For **Resource URI**, enter the **Application ID URI** from your app registration.
 
-   To obtain this value, open the Azure Portal. Then on your app registration blade, go to **Expose an API**. Copy the value in the **Application ID URI** box.
+   To obtain this value, open the Azure portal. Then on your app registration blade, go to **Expose an API**. Copy the value in the **Application ID URI** box.
 
-    :::image type="content" source="media/configure-sso-teams/application-id-uri.png" alt-text="Screenshot of where to find the Application ID URI in Azure Portal.":::
+    :::image type="content" source="media/configure-sso-teams/application-id-uri.png" alt-text="Screenshot of where to find the Application ID URI in Azure portal.":::
 
     :::image type="content" source="media/configure-sso-teams/add-sso-resource-uri.png" alt-text="Screenshot of the Application ID URI entered as the Resource URI in Power Virtual Agents.":::
 
