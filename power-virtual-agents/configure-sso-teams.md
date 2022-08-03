@@ -90,29 +90,23 @@ SSO in the Power Virtual Agents app in Teams is only supported when using Azure 
 
 1. Select **Add scope**.
 
-## Add Microsoft Teams global client IDs
-
-<!-- FIXME: is "global service IDs" the correct term? -->
-Next you'll add the Microsoft Teams global client IDs to your app registration, which are the same for all users:
-
-- Microsoft Teams mobile/desktop application: `1fec8e78-bce4-4aaf-ab1b-5451cc387264`
-- Microsoft Teams on the web: `5e3ce6c0-2b1f-4285-8d4b-75ee78787346`
+## Add Microsoft Teams client IDs
 
 1. In the Azure Portal on your app registration blade, go to **Expose an API** and select **Add a client application**.
 
     :::image type="content" source="media/configure-sso-teams/add-client-application.png" alt-text="Screenshot of the Add a client application button highlighted.":::
 
-1. In the **Client ID** field, enter `1fec8e78-bce4-4aaf-ab1b-5451cc387264`. Select the checkbox for [the scope that you created earlier](#define-a-custom-scope-for-your-bot).
+1. In the **Client ID** field, enter the client ID for Microsoft Teams mobile/desktop, which is  `1fec8e78-bce4-4aaf-ab1b-5451cc387264`. Select the checkbox for [the scope that you created earlier](#define-a-custom-scope-for-your-bot).
 
     :::image type="content" source="media/configure-sso-teams/enter-client-id.png" alt-text="Screenshot of the client ID entered into the Add a client application pane.":::
 
 1. Select **Add application**.
 
-1. Repeat the steps above, but for **Client ID**, enter `5e3ce6c0-2b1f-4285-8d4b-75ee78787346` instead.
+1. Repeat the steps above, but for **Client ID**, enter the client ID for Microsoft Teams on the web, which is `5e3ce6c0-2b1f-4285-8d4b-75ee78787346`.
 
 1. Confirm the **Expose an API** page lists the Microsoft Teams client app IDs.
 
-    :::image type="content" source="media/configure-sso-teams/client-ids-added.png" alt-text="Screenshot of the Expose an API page that correctly lists the Teams global client IDs.":::
+    :::image type="content" source="media/configure-sso-teams/client-ids-added.png" alt-text="Screenshot of the Expose an API page that correctly lists the Microsoft Teams client IDs.":::
 
 ## Add token exchange URL
 
