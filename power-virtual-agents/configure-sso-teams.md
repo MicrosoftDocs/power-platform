@@ -27,7 +27,6 @@ SSO in the Power Virtual Agents app in Teams is only supported when using Azure 
 - [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 - [Learn how to use user authentication in a topic](advanced-end-user-authentication.md).
 - [Configure manual user authentication using the Azure AD v2 service provider](configuration-end-user-authentication.md).
-- Make sure your bot and Azure AD application are under the same tenant.
 
 ## Locate your Microsoft Teams channel app ID
 
