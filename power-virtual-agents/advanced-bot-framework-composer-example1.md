@@ -26,9 +26,9 @@ Before you begin, ensure you read [Extend your bot with Bot Framework Composer](
 
 ## Prerequisites
 
-- [Extend your bot with Bot Framework Composer](advanced-bot-framework-composer.md)
-- [Introduction to Bot Framework Composer](/composer/introduction)
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- [Introduction to Bot Framework Composer](/composer/introduction).
+- [Extend your bot with Bot Framework Composer](advanced-bot-framework-composer.md).
 
 ## Show an Adaptive Card
 
@@ -41,7 +41,7 @@ Go to **Topics** in Power Virtual Agents and create a new topic called **Meal de
 
 In the **Authoring canvas**, select the default **Message** node. Select the three vertical dots, then select **Delete**.
 
-Select the **Add node** (+) button under the **Trigger phrases** node, and then select **Ask a question**.
+Select **Add node** (**+**) under the **Trigger phrases** node, and then select **Ask a question**.
 
 For **Ask a question** , enter "What city are you in?".
 

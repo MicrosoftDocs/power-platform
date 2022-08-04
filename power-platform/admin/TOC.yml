@@ -8,12 +8,54 @@
       href: admin-documentation.md
     - name: Working with the Admin Portals 
       href: wp-work-with-admin-portals.md
+    - name: Get started
+      items:
+      - name: What's the role of a Power Platform administrator? 
+        href: overview-role-powerapps-admin.md
+      - name: Management and monitoring
+        href: wp-management-monitoring.md
+      - name: Power Apps enterprise deployment whitepaper
+        href: admin-powerapps-enterprise-deployment.md
+      - name: Try Power Apps and customer engagement apps
+        href: try-powerapps-dynamics-365.md
+      - name: Move between your apps
+        href: quickly-navigate-office-365-app-launcher.md
+      - name: Sign in to your apps
+        href: sign-in-office-365-apps.md
+      - name: Manage subscription with Microsoft 365 admin center
+        href: use-office-365-admin-center-manage-subscription.md
+      - name: How do I check my online service health?
+        href: check-online-service-health.md
+      - name: Enabling preview features
+        href: what-are-preview-features-how-do-i-enable-them.md
+      - name: Requirements
+        items:
+        - name: URLs and IP address ranges
+          href: online-requirements.md
+        - name: End of support for Internet Explorer
+          href: support-end-internet-explorer.md
+        - name: Plan for deployment and administration
+          href: plan-for-deployment-and-administration.md
+        - name: Server cipher suites and TLS requirements
+          href: server-cipher-tls-requirements.md
+      - name: Unified Interface
+        items:
+        - name: About Unified Interface
+          href: about-unified-interface.md
+        - name: Enable Unified Interface Only
+          href: enable-unified-interface-only.md
+        - name: Update apps to Unified Interface
+          href: update-apps-to-unified-interface.md
+        - name: Enable the hybrid experience
+          href: enable-hybrid-experience.md
     - name: Support
       items:
       - name: Get Help + Support 
         href: get-help-support.md
       - name: Support overview
         href: support-overview.md
+      - name: Support environments and the consent process
+        href: support-environment.md    
       - name: Determine your organization ID and name
         href: determine-org-id-name.md
       - name: Manage email notifications to admins
@@ -68,46 +110,6 @@
           href: pay-as-you-go-issues-faq.md
       - name: Requests limits and allocations
         href: api-request-limits-allocations.md
-    - name: Getting started
-      items:
-      - name: What's the role of a Power Platform administrator? 
-        href: overview-role-powerapps-admin.md
-      - name: Management and monitoring
-        href: wp-management-monitoring.md
-      - name: Power Apps enterprise deployment whitepaper
-        href: admin-powerapps-enterprise-deployment.md
-      - name: Try Power Apps and customer engagement apps
-        href: try-powerapps-dynamics-365.md
-      - name: Move between your apps
-        href: quickly-navigate-office-365-app-launcher.md
-      - name: Sign in to your apps
-        href: sign-in-office-365-apps.md
-      - name: Manage subscription with Microsoft 365 admin center
-        href: use-office-365-admin-center-manage-subscription.md
-      - name: How do I check my online service health?
-        href: check-online-service-health.md
-      - name: Enabling preview features
-        href: what-are-preview-features-how-do-i-enable-them.md
-      - name: Requirements
-        items:
-        - name: URLs and IP address ranges
-          href: online-requirements.md
-        - name: End of support for Internet Explorer
-          href: support-end-internet-explorer.md
-        - name: Plan for deployment and administration
-          href: plan-for-deployment-and-administration.md
-        - name: Server cipher suites and TLS requirements
-          href: server-cipher-tls-requirements.md
-      - name: Unified Interface
-        items:
-        - name: About Unified Interface
-          href: about-unified-interface.md
-        - name: Enable Unified Interface Only
-          href: enable-unified-interface-only.md
-        - name: Update apps to Unified Interface
-          href: update-apps-to-unified-interface.md
-        - name: Enable the hybrid experience
-          href: enable-hybrid-experience.md
     - name: Environments
       items:
       - name: Administer environments 
@@ -384,8 +386,6 @@
           href: multiple-online-environments-tenants.md
         - name: Administration mode
           href: admin-mode.md        
-        - name: Support environment
-          href: support-environment.md     
         - name: Automation of tasks with PowerShell 
           href: wp-task-automation-powershell.md
         - name: Automation of tasks with Power Automate

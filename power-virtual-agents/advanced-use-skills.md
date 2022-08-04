@@ -25,7 +25,7 @@ Power Virtual Agents enables you to extend your bot using Microsoft Bot Framewor
 
 ## Prerequisites
 
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 - [Review restrictions and validation for skills used in Power Virtual Agents](/azure/bot-service/skill-pva)
 - [A standalone Power Virtual Agents subscription](requirements-licensing-subscriptions.md#standalone-power-virtual-agents-subscription). If you have a [Teams plan](requirements-licensing-subscriptions.md#power-virtual-agents-for-microsoft-teams-plan), you can't use Bot Framework skills.
 
@@ -41,7 +41,7 @@ Next, [register a skill in Power Virtual Agents](configuration-add-skills.md).
 
 1. Open the authoring canvas for the topic you want to call a skill action from.
 
-1. Select the plus (**+**) icon underneath an existing node to add a new node.
+1. Select **Add node** (**+**) underneath an existing node to add a new node.
 
     :::image type="content" source="media/advanced-use-skills/handoff-add-node.png" alt-text="Screenshot of adding a node." border="false":::
 

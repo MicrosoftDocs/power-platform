@@ -32,7 +32,7 @@ The very first step is to add the Power Virtual Agents app. Then you can create 
 
 ## Prerequisites
 
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations-teams.md)]
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents-teams.md).
 
 ## Add the Power Virtual Agents app in Microsoft Teams
 
@@ -83,7 +83,7 @@ The first time you create a bot in a team, it will take 1 to 10 minutes to build
 
 You can delete bots to remove them from your team.
 
-1. Click the settings cog icon at the bottom of the Power Virtual Agents side pane.
+1. Select the settings cog icon at the bottom of the Power Virtual Agents side pane.
 
     :::image type="content" source="../media/authoring-first-bot/settings-cog.png" alt-text="The settings icon is at the bottom of the side pane and looks like a cog or gear.":::
 

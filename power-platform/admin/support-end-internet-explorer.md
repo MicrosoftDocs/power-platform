@@ -16,16 +16,14 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# End of support for Internet Explorer 
+# Support end for Internet Explorer 
 
-Microsoft Internet Explorer and Microsoft Edge Legacy support has ended. This topic outlines the experience that administrators and end users will see related to the support end. 
+Microsoft Internet Explorer and Microsoft Edge Legacy support has ended. This topic outlines the experience that administrators and end users will see related to the support end.
+ 
+Users moving to [Microsoft Edge](https://www.microsoft.com/edge) (based on Chromium) or another supported modern browser will have a significantly improved experience. Experiences in Dynamics / Power Apps are twice as fast on [Microsoft Edge](https://www.microsoft.com/edge) than on Internet Explorer.
 
-Users moving to Microsoft Edge (based on Chromium) or another supported modern browser will have a significantly improved experience.  Microsoft Edge (based on Chromium) and Chrome are twice as fast as Internet Explorer. 
+The error message will appear at the top of the Power Platform admin center page or the Dynamics 365 app page. 
 
-> [!NOTE]
-> Dynamics 365 App for Outlook users using Outlook desktop client on Windows 10 lower than 1903 or Office versions lower than 16.0.11629 can continue to use Internet Explorer 11. For more information on Internet Explorer 11 support in Office products [See Microsoft Edge WebView for Office Add-ins](https://devblogs.microsoft.com/microsoft365dev/microsoft-edge-webview-for-office-add-ins/).  
-
-The warning message will appear at the top of the Power Platform admin center page or the Dynamics 365 app page. 
 
 ## Administrator experience 
 
@@ -36,13 +34,26 @@ Administrators in the Power Platform Admin center and in the model-driven apps A
 
 ## User experience 
 
-All users using model-driven apps in Internet Explorer will see a warning message at the top of the app.  By switching to Microsoft Edge Chromium or another modern browser, the user will not see this message.  
+All users using Dynamics 365 and Microsoft Power Platform in Internet Explorer will see an error message at the top of the app. By switching to Microsoft Edge Chromium or another modern browser, the user will not see an error message. From early October 2022, users will be [redirected] (https://www.docs.microsoft.com/deployedge/edge-learnmore-neededge) to Microsoft Edge if they have Edge currently installed on their device. Otherwise, they will receive a non-dismissible message informing them why they are blocked and to try using the site on Microsoft Edge. If a user tries accessing Dynamics 365 or Microsoft Power Platform in Internet Explorer, they will see the following message:
 
 > **Alert** <br />
-> Internet Explorer support has ended. Please switch to Microsoft Edge or another modern browser. 
+> This website will be blocked in Internet Explorer starting on October 31st. Try using this site in Microsoft Edge. Learn more
+
+This message will appear for users trying to access Dynamics 365 and Microsoft Power Platform in an unsupported version of Microsoft Edge ([Edge Legacy] (https://blogs.windows.com/msedgedev/microsoft-edge-legacy-end-of-support))
+
+> **Alert** <br />
+> This website will be blocked in this version of Microsoft Edge starting on October 31st. Try using the latest Edge version. Learn more
+
+Starting October 31, Internet Explorer will be blocked and users will be unable to access Dynamics 365 and Microsoft Power Platform in Internet Explorer. This message will appear for users trying to do so:
+
+> **Alert** <br />
+>Unsupported browser. This website is no longer supported in Internet Explorer. Try using this site in Microsoft Edge.
+
+Starting October 31, this message will appear for users trying to access Dynamics 365 and Microsoft Power Platform in an unsupported version of Microsoft Edge ([Edge Legacy] (https://blogs.windows.com/msedgedev/microsoft-edge-legacy-end-of-support)
+
+> **Alert** <br />
+>Unsupported browser. This website is no longer supported in this version of Microsoft Edge. Try using the latest Edge version. 
 
 Administrators wanting to block Internet Explorer for users earlier can request this through support. 
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

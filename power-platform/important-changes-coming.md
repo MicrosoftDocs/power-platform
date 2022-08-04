@@ -21,45 +21,33 @@ For deprecation information of other products, see [Other deprecation articles](
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability will continue to work and is fully supported until it is officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
 
-## Admin mode custom message deprecated 
-
-Effective July 1, 2022, the Custom message field is deprecated from the environment Edit details page.
-
-## Power Apps for Windows will be deprecated and replaced with a new app
-
-Effective September 2022, [Power Apps](https://apps.microsoft.com/store/detail/power-apps/9NBLGGH5Z8F3?hl) for Windows will be deprecated. Microsoft will continue to provide security and other critical updates for the app until Sept 20, 2022. We won't release any other features or functionalities for the app.
-
-On June 20, 2022  [Power Apps](https://apps.microsoft.com/store/detail/power-apps/9NBLGGH5Z8F3?hl) for Windows will be renamed to **Power Apps for Windows 8**. After Sept 20, 2022, the app will be removed from the Microsoft Store, and will no longer be supported.
-
-On June 20, 2022 the new app for Windows that’s currently in preview will be available for general availability. The app will be renamed from [Power Apps (Preview)](https://apps.microsoft.com/store/detail/power-apps-preview/9MVC8P1Q3B29?hl) to **Power Apps**. For more information, see [Install Powers Apps for Windows](/power-apps/mobile/windows-app-install).
-
-
-## Data Export Service deprecation
-
-Effective November 2021, Data Export Service was deprecated. Data Export Service will continue to work and will be fully supported until it reaches end-of-support and end-of-life in November 2022. This will impact Dynamics 365 and Power Platform customers who use Data Export Service add-on from Microsoft AppSource. The Data Export Service add-on will not be available for download for new customers. Existing customers will be able to download and use this add-on from AppSource. We recommend that customers transition to [Azure Synapse Link for Dataverse](/powerapps/maker/data-platform/export-to-data-lake). For more information, see our [blog](https://powerapps.microsoft.com/blog/do-more-with-data-from-data-export-service-to-azure-synapse-link-for-dataverse/) or download [the deprecation playbook](https://aka.ms/DESDeprecationPlaybook).
-
-## Dataverse OData v2.0 Service removal
-
-We plan to remove the Dataverse OData v2.0 Organization Data Service on November 11, 2022.
-
-> [!NOTE]
-> This announcement does not involve the deprecated Organization Service SOAP endpoint. At this time, no date has been announced for the removal of the SOAP endpoint.
-
-The Organization Data Service is an OData v2.0 endpoint introduced with Dynamics CRM 2011. The Organization Data Service was deprecated with Dynamics 365 Customer Engagement v8.0 in favor of the Web API, an OData v4.0 service. Today, less than .06% of requests to Dataverse use this endpoint. Removing this endpoint will enable Dataverse to improve overall performance.
-
-Any code that uses the Organization Data Service should be migrated to use the Web API before that time. 
-More information: [OData v2.0 Service removal date announcement](https://aka.ms/DataverseODataV2EndpointRemoval).
-
-
-## Internet Explorer 11 support for Dynamics 365 and Microsoft Power Platform is deprecated
-
-Effective December 2020, Microsoft Internet Explorer 11 support for Microsoft Dynamics 365 and Microsoft Power Platform is deprecated, and Internet Explorer 11 won’t be supported after August  2021. 
-
-This will impact customers who use Dynamics 365 and Microsoft Power Platform products that are designed to be used through an Internet Explorer 11 interface. After August 2021, Internet Explorer 11 won't be supported for such Dynamics 365 and Microsoft Power Platform products. We recommend that customers transition to Microsoft Edge. 
+## Internet Explorer 11 support for Dynamics 365 and Microsoft Power Platform is deprecated. 
+ 
+Dynamics 365 and Microsoft Power Platform will be blocked in Internet Explorer starting October 31st. From early October 2022, users will be redirected to Microsoft Edge if they have Edge currently installed on their device.  Otherwise, they will receive a non-dismissible message informing them why they are blocked and to try using the site on Microsoft Edge. Starting October 31st, Internet Explorer will be blocked on Dynamics 365 and Microsoft Power Platform and users will see a blocking message informing them to use Microsoft Edge. If users are trying to access Dynamics 365 and Microsoft Power Platform on a Microsoft Edge version that is no longer supported, they will be prompted to use the latest version of Edge. 
+ 
+We recommend that customers transition to [Microsoft Edge](https://www.microsoft.com/edge). 
 
 More information: [Support end for Internet Explorer](admin/support-end-internet-explorer.md).
 
 If you have more questions, contact your Microsoft Customer Service representative or Microsoft Partner.
+
+## The legacy read-only grid in model-driven apps is deprecated
+
+The legacy read-only grid control has been deprecated in model-driven apps with the 2022 release wave 1. This control is being replaced by the **Power Apps read-only grid**, which became the default read-only grid experience for all environments for model-driven apps with the 2022 release wave 1.  
+
+### Why is this needed?
+
+The legacy read-only grid:
+
+- Doesn’t support the latest Microsoft accessibility standards.
+- Doesn’t align with the latest in Microsoft design guidance.
+- Has limited extensibility options.
+
+### Impact
+
+Tables configured to use the *Read-only Grid (Default)* control are replaced with the *Power Apps read-only grid* for views and subgrids. This change started with the 2022 release wave 1. 
+
+When the Power Apps read-only grid is originally enabled, the jump bar row is not visible; however, makers can re-enable this as needed. More information: [Configure the Power Apps read-only grid control](/power-apps/maker/model-driven-apps/power-apps-grid-control#configure-the-power-apps-read-only-grid-control)
 
 ## Support for Microsoft 365 Groups and Yammer in Dynamics 365 is deprecated
 

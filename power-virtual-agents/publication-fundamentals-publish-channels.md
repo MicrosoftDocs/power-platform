@@ -33,7 +33,7 @@ Each time you want to update your bot, you publish it again from within the Powe
 
 ## Prerequisites
 
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 
 ## Publish the latest bot content
 
