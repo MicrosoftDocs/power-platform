@@ -24,10 +24,6 @@
             href: cli\reference\auth.md
           - name: pac canvas
             href: cli\reference\canvas.md
-          - name: pac connection
-            href: cli\reference\connection.md
-          - name: pac connector
-            href: cli\reference\connector.md
           - name: pac data
             href: cli\reference\data.md
           - name: pac help
@@ -48,5 +44,3 @@
             href: cli\reference\solution.md
           - name: pac telemetry
             href: cli\reference\telemetry.md
-          - name: pac tool
-            href: cli\reference\tool.md
