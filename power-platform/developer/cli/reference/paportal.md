@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: kkanakas
 ms.author: kartikka
-ms.date: 7/20/2022
+ms.date: 8/4/2022
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -26,51 +26,10 @@ Commands for working with PowerApps portal website
 
 |Command|Description|
 |---------|---------|
-|[pac paportal bundle](#pac-paportal-bundle)|Bundle portal website content in CMT supported XML format|
 |[pac paportal download](#pac-paportal-download)|Download portal website content from the current Dataverse Organization|
 |[pac paportal list](#pac-paportal-list)|List all portal websites from the current Dataverse Organization|
-|[pac paportal mergelocale](#pac-paportal-mergelocale)|Merges localized content back to portal yaml files|
-|[pac paportal reguid](#pac-paportal-reguid)|Assigns new guid to primary key attribute for all records of a website|
 |[pac paportal upload](#pac-paportal-upload)|Upload portal website content to current Dataverse Organization|
 
-
-## pac paportal bundle
-
-Bundle portal website content in CMT supported XML format
-
-[!INCLUDE [paportal-bundle-intro](includes/paportal-bundle-intro.md)]
-
-
-### Required Parameters
-
-#### `--output` `-o`
-
-Path to which the XML files(s) will be saved
-
-#### `--path` `-p`
-
-Path from where the website content will be bundled
-
-
-### Optional Parameters
-
-#### `--deploymentProfile` `-dp`
-
-Deployment profile name to be used. Defaults to 'default'
-
-#### `--excludePK` `-ep`
-
-If this flag is true Primary key fields are not included in data xml so that CMT generates new record ids when importing.
-
-This parameter requires no value. It is a switch.
-
-#### `--split` `-s`
-
-If this flag is true a separate xml will be created for each entity
-
-This parameter requires no value. It is a switch.
-
-[!INCLUDE [paportal-bundle-remarks](includes/paportal-bundle-remarks.md)]
 
 ## pac paportal download
 
@@ -96,12 +55,6 @@ Portal website id to download
 
 Comma separated list of entity logical names to exclude downloading
 
-#### `--exportTranslations` `-et`
-
-Export translation content in locale folder: Value 'All' extracts all content for C1 & C2 customers. Value 'SupportedLang' extracts localizable content for C2 customers
-
-This parameter requires no value. It is a switch.
-
 #### `--includeEntities` `-ie`
 
 Download only the entities specified for this argument in comma separated entity logical name
@@ -112,10 +65,6 @@ Portal website content to overwrite
 
 This parameter requires no value. It is a switch.
 
-#### `--translationsFormat` `-tf`
-
-Locale file format [Json or Yaml]
-
 [!INCLUDE [paportal-download-remarks](includes/paportal-download-remarks.md)]
 
 ## pac paportal list
@@ -123,36 +72,6 @@ Locale file format [Json or Yaml]
 List all portal websites from the current Dataverse Organization
 
 [!INCLUDE [paportal-list-remarks](includes/paportal-list-remarks.md)]
-
-## pac paportal mergelocale
-
-Merges localized content back to portal yaml files
-
-[!INCLUDE [paportal-mergelocale-intro](includes/paportal-mergelocale-intro.md)]
-
-
-### Required Parameters
-
-#### `--path` `-p`
-
-Path where website files are located
-
-[!INCLUDE [paportal-mergelocale-remarks](includes/paportal-mergelocale-remarks.md)]
-
-## pac paportal reguid
-
-Assigns new guid to primary key attribute for all records of a website
-
-[!INCLUDE [paportal-reguid-intro](includes/paportal-reguid-intro.md)]
-
-
-### Required Parameters
-
-#### `--path` `-p`
-
-Path where website files are located
-
-[!INCLUDE [paportal-reguid-remarks](includes/paportal-reguid-remarks.md)]
 
 ## pac paportal upload
 
@@ -180,4 +99,5 @@ Deployment profile name to be used. Defaults to 'default'
 
 ### See also
 
+[Microsoft Power Platform CLI Command Groups](index.md)<br />
 [Microsoft Power Platform CLI overview](../introduction.md)

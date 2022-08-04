@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: kkanakas
 ms.author: kartikka
-ms.date: 7/20/2022
+ms.date: 8/4/2022
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -214,4 +214,5 @@ The name you want to give to this authentication profile (maximum 12 characters)
 
 ### See also
 
+[Microsoft Power Platform CLI Command Groups](index.md)<br />
 [Microsoft Power Platform CLI overview](../introduction.md)

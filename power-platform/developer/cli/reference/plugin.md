@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: kkanakas
 ms.author: kartikka
-ms.date: 7/20/2022
+ms.date: 8/4/2022
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -27,6 +27,7 @@ Commands for working with Dataverse plugin class library
 |Command|Description|
 |---------|---------|
 |[pac plugin init](#pac-plugin-init)|Initializes a directory with a new Dataverse plugin class library.|
+|[pac plugin push](#pac-plugin-push)|Import plugin into the current Dataverse Environment|
 
 
 ## pac plugin init
@@ -58,8 +59,44 @@ Relative path to the Dataverse plugin assembly originator key file for signing.
 
 [!INCLUDE [plugin-init-remarks](includes/plugin-init-remarks.md)]
 
+## pac plugin push
+
+Import plugin into the current Dataverse Environment
+
+[!INCLUDE [plugin-push-intro](includes/plugin-push-intro.md)]
+
+
+### Required Parameters
+
+#### `--pluginId` `-id`
+
+Id of plugin assembly or plugin package
+
+
+### Optional Parameters
+
+#### `--configuration` `-c`
+
+Build configuration. Default: Debug
+
+#### `--pluginFile` `-pf`
+
+File name of plugin assembly or plugin package
+
+#### `--type` `-t`
+
+Type of item if not specified explicitly through --pluginFile. Default: Nuget
+
+Use one of these values:
+
+- `Nuget`
+- `Assembly`
+
+[!INCLUDE [plugin-push-remarks](includes/plugin-push-remarks.md)]
+
 [!INCLUDE [plugin-remarks](includes/plugin-remarks.md)]
 
 ### See also
 
+[Microsoft Power Platform CLI Command Groups](index.md)<br />
 [Microsoft Power Platform CLI overview](../introduction.md)

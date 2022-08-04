@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: kkanakas
 ms.author: kartikka
-ms.date: 7/20/2022
+ms.date: 8/4/2022
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -26,18 +26,10 @@ Work with your Dataverse Organization
 
 |Command|Description|
 |---------|---------|
-|[pac org entity](#pac-org-entity)|Get information about an entity in Dataverse|
 |[pac org list](#pac-org-list)|Lists all of the Dataverse Organizations the user has access to|
-|[pac org query](#pac-org-query)|Display the results of a query against Dataverse|
 |[pac org select](#pac-org-select)|Select defualt organization for current authentication profile|
 |[pac org who](#pac-org-who)|Displays information about the current Dataverse Organization|
 
-
-## pac org entity
-
-Get information about an entity in Dataverse
-
-[!INCLUDE [org-entity-remarks](includes/org-entity-remarks.md)]
 
 ## pac org list
 
@@ -53,21 +45,6 @@ Lists all of the Dataverse Organizations the user has access to
 Show only environments containing filter criteria
 
 [!INCLUDE [org-list-remarks](includes/org-list-remarks.md)]
-
-## pac org query
-
-Display the results of a query against Dataverse
-
-[!INCLUDE [org-query-intro](includes/org-query-intro.md)]
-
-
-### Required Parameters
-
-#### `--sql` `-s`
-
-The SQL SELECT query to run
-
-[!INCLUDE [org-query-remarks](includes/org-query-remarks.md)]
 
 ## pac org select
 
@@ -94,4 +71,5 @@ Displays information about the current Dataverse Organization
 
 ### See also
 
+[Microsoft Power Platform CLI Command Groups](index.md)<br />
 [Microsoft Power Platform CLI overview](../introduction.md)
