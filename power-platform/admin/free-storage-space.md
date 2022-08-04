@@ -484,7 +484,7 @@ These tables store post related records for [Activity Feeds](/dynamics365/custom
 ### Method 14: Modify Item Level Monitoring Settings
 The ExchangeSyncIdMappingBase table contains references between Dynamics 365 records and the corresponding records in Microsoft Exchange. This table is used by the Server-Side Synchronization feature which enables synchronization of emails, appointments, contacts, and tasks between Dynamics 365 and Microsoft Exchange. 
 
-Additional rows are stored in this table to help with troubleshooting the synchronization of specific items. For additional information, see [Troubleshoot item level Server-Side Synchronization issues with Microsoft Dynamics 365](/troubleshoot/dynamics-365/sales/troubleshoot-item-level-server-side-synchronization-issues). This article provides details regarding how you can reduce the default duration (3 days) of how long these troubleshooting records exist. This troubleshooting feature can also be disabled.
+Additional rows are stored in this table to help with troubleshooting the synchronization of specific items. For additional information, see [Troubleshoot item level Server-Side Synchronization issues with Microsoft Dynamics 365](/troubleshoot/dynamics-365/sales/troubleshoot-item-level-server-side-synchronization-issues). This article provides details regarding how you can reduce the default duration (3 days) of how long these troubleshooting records exist. This troubleshooting feature can also be disabled. Rows unrelated to this feature cannot be deleted and are required for Appointment, Contact, and Task synchronization.
 
 ## Free up storage used by flow approvals
 
