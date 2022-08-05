@@ -44,6 +44,9 @@ that teams commonly put in place include Initiate, Export from Dev, Build, and R
 > Microsoft Power Platform Build Tools are supported only for a Microsoft Dataverse environment with a database. More information: [Create an environment with a database](../admin/create-environment.md#create-an-environment-with-a-database)
 > 
 > Microsoft Power Platform Build Tools are now available for use in the **GCC** and **GCC High** regions. 
+> Microsoft Power Platform Build Tools version 2.0 are now available 
+
+
 
 ## What are Microsoft Power Platform Build Tools?
 
@@ -64,6 +67,15 @@ changes." The build tasks can largely be categorized into four types:
 - Environment management
 
 For more information about the available tasks, see [Microsoft Power Platform Build Tools tasks](devops-build-tool-tasks.md). 
+
+
+## What is Power Platform Build Tools version 2.0? 
+In addition to what Power Platform Build Tools provide, the version 2.0 of Power Platform Build Tools is Power Platform CLI based. 
+Power Platform Build Tools version 0.* , as in the first release, is based on PowerShell. Going forward Power Platform Build tools 2.0 will be the version that will be serviced and newer features will be added. 
+For the older version of Power Platform Build Tools, we will do critical security updates as needed. We would highly recommend that customers move to the Power Platform Build tools version 2.0 at their earliest.
+
+[!NOTE]
+You cannot mix and match task versions for the Power Platform Build Tools in your build pipeline
 
 ## Get Microsoft Power Platform Build Tools
 
@@ -130,6 +142,14 @@ The Application ID must be added as an Application User in the Microsoft Power P
 Ensure that the added Application User has the system administrator role assigned (available from “Manage Roles” in the security settings for the application user).
 
 ## Frequently asked questions (FAQs)
+
+**I have an old Microsoft Power Platform Build Tool Pipelines, will that continue to work?**
+
+*The older pipelines will continue to work, but newer features will not be added to the older tasks, if you want to exercise the newer features, then we would highly recommend that you change the version of your task in the pipeline.*
+
+**Why did you want base the new task on Power Platform CLI instead of PowerShell?**
+
+*The Power Platform CLI tasks are multi-platform and great flexibility including running on linux runners, these are the same tasks that are available Power Platform actions for GitHub and now you have a consistent experience between Azure DevOps and GitHub*
 
 **Do the Microsoft Power Platform Build Tools only work for Power Apps?**  
 
