@@ -1,7 +1,7 @@
 ---
 title: "Important changes (deprecations) coming in Power Apps and Power Automate"
 description: Important changes (deprecations) coming in Power Apps and Power Automate 
-ms.date: 07/15/2022
+ms.date: 08/08/2022
 ms.topic: "article"
 ms.subservice: admin
 searchScope:
@@ -253,10 +253,10 @@ Dynamics 365 connectors must be replaced with a Microsoft Dataverse connector.
 - Once the Microsoft Dataverse connector is available in summer of 2022, users will have the option to use an automated tool to migrate from the Microsoft Dataverse (Legacy) connector to the Microsoft Dataverse connector.
 
 #### Logic Apps
-- All new Logic Apps should be created with the Microsoft Dataverse (Legacy) connector.
-- Logic Apps using the Dynamics 365 connector are recommended to move to the Microsoft Dataverse (Legacy) connector. 
-- Logic Apps will need to be recreated in the using the Dataverse (Legacy) connector and then completing setup.
-- Once the Microsoft Dataverse connector is available in summer of 2022, no action is needed. The Microsoft Dataverse (Legacy) connector will merge with the Microsoft Dataverse connector. At this time additional actions and triggers will become available. 
+- All new Logic Apps should be created with the Microsoft Dataverse (Legacy) connector. In the Summer of 2022, the Microsoft Dataverse connector will be available and should be used.
+- Logic Apps using the Dynamics 365 connector are recommended to move to the Microsoft Dataverse (Legacy) connector until the Microsoft Dataverse connector is available. 
+- Logic Apps will either need to be recreated to use the Dataverse (Legacy) connector/Dataverse connector or be edited to change the Dynamics 365 connector to the Dataverse (Legacy) connector/Dataverse connector, and then validating all triggers and actions. 
+- Once the Microsoft Dataverse connector is available in the Summer of 2022, users will be able to migrate to the Microsoft Dataverse connector.
 
 #### Canvas apps
 - If you are using the Power Apps Player to launch Power Apps in Windows, you will need to switch over to Power Apps for Windows.
