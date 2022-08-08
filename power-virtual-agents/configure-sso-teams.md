@@ -29,7 +29,7 @@ SSO in the Power Virtual Agents app in Teams is only supported when using Azure 
 
 ## Configure user authentication
 
-Before you can turn on SSO, you'll need to configure user authentication. During this process, you'll create an app registration which you'll use to setup SSO. For more information, see [Configure user authentication with Azure AD](/configuration-authentication-azure-ad.md).
+Before you can turn on SSO, you'll need to configure user authentication. During this process, you'll create an app registration which you'll use to setup SSO. For more information, see [Configure user authentication with Azure AD](configuration-authentication-azure-ad.md).
 
 <!-- Note: the following sections are nearly identical to https://docs.microsoft.com/microsoftteams/platform/tabs/how-to/authentication/tab-sso-register-aad. They were mirrored here to give more specific guidance on the values that needed to be entered. -->
 
