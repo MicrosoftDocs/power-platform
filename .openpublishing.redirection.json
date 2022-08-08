@@ -446,8 +446,8 @@
       "redirect_document_id": "false"
     },
     {
-      "source_path": "power-virtual-agents/build-22/index.yml",
-      "redirect_url": "build-2022-overview",
+      "source_path": "power-virtual-agents/build-22/",
+      "redirect_url": "index",
       "redirect_document_id": "false"
     }
   ]
