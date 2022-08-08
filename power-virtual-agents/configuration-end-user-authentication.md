@@ -136,71 +136,32 @@ When a bot's authentication setting can't control who can chat with it, if you s
 
 The following are all the fields you may see when you're configuring manual authentication. Which fields you'll see depends on your choice for [service provider](#service-provider).
 
-### Authorization URL template
+<!-- table best viewed and edited without wordwrap -->
+| Field name                              | Description                                                                                                                                                                                                                                    |
+| --------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Authorization URL template              | The URL template for authorization, as defined by your identity provider. For example, `https://login.microsoftonline.com/common/oauth2/v2.0/authorize`                                                                                        |
+| Authorization URL query string template | The query template for authorization, as provided by your identity provider. Keys in the query string template will vary depending on the identity provider.                                                                                   |
+| Client ID                               | Your client ID, obtained from the identity provider.                                                                                                                                                                                           |
+| Client secret                           | Your client secret, obtained when you created the identity provider app registration.                                                                                                                                                          |
+| Refresh body template                   | The template for the refresh body.                                                                                                                                                                                                             |
+| Refresh URL query string template       | The refresh URL query string separator for the token URL, usually a question mark (`?`).                                                                                                                                                       |
+| Refresh URL template                    | The URL template for refresh; for example, `https://login.microsoftonline.com/common/oauth2/v2.0/token`.                                                                                                                                       |
+| Scope list delimiter                    | The separator character for the scope list. Empty spaces aren't supported in this field.<sup>1</sup>                                                                                                                                           |
+| Scopes                                  | The list of [scopes][1] that you want users to have after they've signed in. Use the **Scope list delimiter** to separate multiple scopes.<sup>1</sup> Only set necessary scopes and follow the [least privilege access control principle][5]. |
+| Service provider                        | The service provider you want to use for authentication. For more information, see [OAuth generic providers][4].                                                                                                                               |
+| Tenant ID                               | Your Azure AD tenant ID. Refer to [Use an existing Azure AD tenant][2] to learn how to find your tenant ID.                                                                                                                                    |
+| Token body template                     | The template for the token body.                                                                                                                                                                                                               |
+| Token exchange URL (required for SSO)   | This is an optional field used when you're [configuring single sign-on][3].                                                                                                                                                                    |
+| Token URL template                      | The URL template for tokens, as provided by your identity provider; for example, `https://login.microsoftonline.com/common/oauth2/v2.0/token`.                                                                                                 |
+| Token URL query string template         | The query string separator for the token URL, usually a question mark (`?`).                                                                                                                                                                   |
 
-The URL template for authorization, as defined by your identity provider; for example, `https://login.microsoftonline.com/common/oauth2/v2.0/authorize`
+[1]: /azure/active-directory/develop/developer-glossary#scopes
+[2]: /azure/active-directory/develop/quickstart-create-new-tenant#use-an-existing-azure-ad-tenant
+[3]: configure-sso.md
+[4]: /azure/bot-service/bot-builder-concept-identity-providers?view=azure-bot-service-4.0&tabs=adv1%2Cga2&preserve-view=true
+[5]: /windows-server/identity/ad-ds/plan/security-best-practices/implementing-least-privilege-administrative-models
 
-### Authorization URL query string template
-
-The query template for authorization, as provided by your identity provider. Keys in the query string template will vary depending on the identity provider.
-
-### Client ID
-
-Your client ID, obtained from the identity provider.
-
-### Client secret
-
-Your client secret, obtained when you created the identity provider app registration.
-
-### Refresh body template
-
-The template for the refresh body.
-
-### Refresh URL query string template
-
-The refresh URL query string separator for the token URL, usually a question mark (`?`).
-
-### Refresh URL template
-
-The URL template for refresh; for example, `https://login.microsoftonline.com/common/oauth2/v2.0/token`.
-
-### Scope list delimiter
-
-The separator character for the scope list.
-
-Empty spaces aren't supported in this field. You can use them in the **Scopes** field if the identity provider requires it. In that case, enter a comma (`,`) in **Scope list delimiter**, and enter spaces in the **Scopes** field.
-
-### Scopes
-
-The list of [scopes](/azure/active-directory/develop/developer-glossary#scopes) that you want users to have after they've signed in.
-
-Use spaces to separate multiple scopes, only set necessary scopes, and follow the [least privilege access control principle](/windows-server/identity/ad-ds/plan/security-best-practices/implementing-least-privilege-administrative-models).
-
-### Service provider
-
-The service provider you want to use for authentication.
-
-For more information, see [OAuth generic providers](/azure/bot-service/bot-builder-concept-identity-providers?view=azure-bot-service-4.0&tabs=adv1%2Cga2&preserve-view=true).  
-
-### Tenant ID
-
-Your Azure AD tenant ID. Refer to [Use an existing Azure AD tenant](/azure/active-directory/develop/quickstart-create-new-tenant#use-an-existing-azure-ad-tenant) to learn how to find your tenant ID.
-
-### Token body template
-
-The template for the token body.
-
-### Token exchange URL (required for SSO)
-
-This is an optional field used when you're [configuring single sign-on](configure-sso.md).
-
-### Token URL template
-
-The URL template for tokens, as provided by your identity provider; for example, `https://login.microsoftonline.com/common/oauth2/v2.0/token`.
-
-### Token URL query string template
-
-The query string separator for the token URL, usually a question mark (`?`).
+<sup>1</sup> You can use spaces in the **Scopes** field if the identity provider requires it. In that case, enter a comma (`,`) in **Scope list delimiter**, and enter spaces in the **Scopes** field.
 
 ## Test your configuration
 
