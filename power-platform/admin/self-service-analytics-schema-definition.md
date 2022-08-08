@@ -3,7 +3,7 @@ title: "Microsoft Power Platform self-service analytics schema definition (previ
 description: This topic discusses the contents of the data exported from Power Platform to Azure Data Lake Gen2 storage locations. 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/30/2022
+ms.date: 08/04/2022
 ms.subservice: admin
 author: tjvass
 ms.author: tjvass
@@ -49,11 +49,10 @@ The main root folder for Power Apps has the following folder structure:
 
 The main root folder for Power Automate has the following folder structure:
 
-- \Applications
-- \ConnectionReference
-- \Connections
-- \Environments
-- \Usage
+- \Flows
+-	\FlowsConnectionReference
+-	\Usage
+
 
 > [!NOTE] 
 > Data listed in these folders can be viewed through your Azure portal. For information, go to [https://portal.azure.com](https://portal.azure.com/) and navigate to your storage account (**Home** > **Subscriptions** > *your subscription name* > **Resource Groups** > *your resource group* > *your storage accounts* > **Storage Account**).
@@ -69,8 +68,9 @@ The main root folder for Power Automate has the following folder structure:
 
 The following tables detail the schema definitions of the data. Metadata are considered as inventory data.
 
+### Power Apps subfolder
 
-### Apps 
+#### Apps 
 
 | **Property name**       | **Property type**  | **Description**                               |
 |-------------------------|--------------------|-----------------------------------------------|
@@ -78,7 +78,7 @@ The following tables detail the schema definitions of the data. Metadata are con
 | Name                    | Longtext           | App name                                      |
 | Description             | Longtext           | App description (not available currently)         |
 | tenantId                | Guid               | Customer tenant ID                             |
-| Environmentid           | Longtext           | Environment ID                                |
+| EnvironmentId           | Longtext           | Environment ID                                |
 | Type                    | Longtext           | Power Apps app  |
 | Subtype                 | Longtext           | Canvas \| Model \| Pages                      |
 | DocumentVersion         | Datetime           | The date-and-time stamp is used as the app version          |
@@ -91,10 +91,10 @@ The following tables detail the schema definitions of the data. Metadata are con
 | CreatedTime             | Datetime           | Date the app was created                          |
 | lastModifiedPrincipalId | Guid               | Azure AD object ID of last modified user           |
 | lastModifiedTime        | Datetime           | Date the app was last updated          |
-| lastenabledprincipalid  | Guid               | Azure AD object ID of last published user          |
+| lastenabledprincipalId   | Guid               | Azure AD object ID of last published user          |
 | lastEnabledTime         | Datetime           | Date the app was last published        |
 | DeletedTime             | Datetime           | Date the app was last deleted                 |
-| Deletedprincipalid      | Longtext           | Azure AD object ID of the user who deleted the app          |
+| DeletedprincipalId       | Longtext           | Azure AD object ID of the user who deleted the app          |
 | sharedUsers             | Int                | Number of users the app is shared with        |
 | sharedGroups            | Int                | Number of groups the app is shared with       |
 | Solution                | Longtext           | Solution ID the app belongs to             |
@@ -103,34 +103,33 @@ The following tables detail the schema definitions of the data. Metadata are con
 | Settings                | Longtext           | Reserved                                      |
 | customExtensions        | Longtext           | Reserved                                      |
 
-### Connection reference 
+#### Connection reference 
 
 | **Property name** | **Property type** | **Description**                     |
 |-------------------------|-------------------------|-------------------------|
 | resourceId | Guid  | Unique app ID (can be used to join with the Usage table) |
 | Display name | Longtext | User-entered descriptive name&mdash;for example, Office 365 Outlook |
 | connectionrefId | Guid | Unique connection ID |
-| Environmentid | Longtext | Environment ID |
+| EnvironmentId | Longtext | Environment ID |
 | Tier | Longtext | Premium or Standard |
 | Type | Longtext | Connection type&mdash;for example SQL, Office 365, or Azure |
 
-
-### Connections 
+#### Connections 
 
 | **Property name** | **Property type** | **Description**                                              |
 |--------------------|--------------------|------------------------------------------------------------|
-| Connectionid       | Guid               | Unique connection ID                                      |
+| ConnectionId       | Guid               | Unique connection ID                                      |
 | connectionName     | Longtext           | User-entered descriptive name&mdash;for example, Office 365 Outlook |
 | apiId              | Guid               | Connector type                                             |
-| Environmentid      | Longtext           | Environment ID                                             |
+| EnvironmentId      | Longtext           | Environment ID                                             |
 | Displayname        | Longtext           | URI of the connection                                      |
-| isCustomApI        | Longtext           | Yes \| No                                                  |
+| isCustomApi        | Longtext           | Yes \| No                                                  |
 | createdPrincipalId | Guid               | Azure AD object ID of the app creator principal                     |
 | CreatedTime        | Datetime           | Date the app was created                                       |
 | Swaggerurl         | Longtext           | Swagger URL for custom API                                 |
 | tenantId           | Guid               | Customer tenant ID                                          |
 
-### Environments 
+#### Environments 
 
 | **Property name**       | **Property type**  | **Description**                                              |
 |-------------------------|--------------------|--------------------------------------------------------------|
@@ -151,15 +150,15 @@ The following tables detail the schema definitions of the data. Metadata are con
 | lastModifiedPrincipalId | Guid               | Azure AD object ID of the user who last modified the app          |
 | lastModifiedTime        | Datetime           | Date the app was last updated                         |
 | DeletedTime             | Datetime           | Date the app was last deleted                                |
-| Deletedprincipalid      | Longtext           | Azure AD object ID of the user who deleted the app                         |
+| DeletedprincipalId      | Longtext           | Azure AD object ID of the user who deleted the app                         |
 
-### Usage
+#### Usage
 
 | **Property name**  | **Property type** |**Description**                                                |
 |--------------------|--------------------|--------------------------------------------------------------|
 | AppId              | Guid              | Unique app ID (can be used to join tables)                     |
 | environmentId      | Guid              | Environment ID                                      |
-| tenantid           | Guid               | Customer tenant ID                                            |
+| tenantId            | Guid               | Customer tenant ID                                            |
 | ObjectID           | Guid              | Azure AD user object ID                        |
 | SessionId          | Guid              | Session ID                                               |
 | timeaccessed       | Datetime           | Time the user opened or accessed the app                         |
@@ -170,8 +169,55 @@ The following tables detail the schema definitions of the data. Metadata are con
 | Browsername        | Longtext           | Client browser                                               |
 | DataVersion        | Int(11)            | Table data, not user-related                                 |
 
+
+### Power Automate subfolder
+
+#### Flows
+
+| **Property name**             | **Property type** |**Description**                                       |
+|-------------------------------|-------------------|------------------------------------------------------|
+|ResourceId 	                  |Guid	              |Unique flow ID (can be used to join tables) |
+|name 	                        |LongText	          |Flow name |
+|type	                          |LongText	          |Power Automate | 
+|subtype	                      |LongText	          |Cloud Flow | 
+|environmentId                  |Guid	              |Environment ID |
+|resourceVersion	              |LongText	          |Flow version |
+|lifecycleState	                |LongText	          |Draft, Published |
+|events_created_timestamp	      |Datetime 	        |Date the flow was created |
+|events_created_principalId	    |Guid	              |Azure AD object ID of the flow creator principal |
+|events_lastModified_timestamp 	|Datetime 	        |Date the flow was last updated |
+|sharedUsers	                  |int	              |Number of users the flow is shared with |
+|sharedGroups	                  |int	              |Number of groups the flow is shared with |
+
+#### FlowsConnectionReference
+
+| **Property name**  | **Property type** |**Description**                                                |
+|--------------------|--------------------|--------------------------------------------------------------|
+|resourceId	         |Guid	              |Unique flow ID (can be used to join tables) |
+|tenantId	           |Guid	              |Customer tenant ID |
+|environmentId	     |Guid	              |Environment ID |
+|connectionrefId	   |LongText	          |Unique connection reference ID |
+|connectorType	     |LongText	          |Type of connector used by the flow |
+|connectionId	       |LongText	          |Unique connection ID |
+|displayName	       |LongText	          |Name of connection reference |
+|tier	               |LongText	          |Standard, Premium |
+
+#### Usage
+
+| **Property name**  | **Property type** |**Description**                                                |
+|--------------------|--------------------|--------------------------------------------------------------|
+|resourceId 	       |Guid	              |Unique resource ID (can be used to join tables) |
+|environmentId 	     |Guid	              |Environment ID |
+|tenantid	           |Guid	              |Customer tenant ID |
+|timeaccessed 	     |Datetime 	          |Time the user opened or accessed the app |
+|status	             |LongText	          |Succeeded, Failed, Cancelled, Terminated |
+|subType	           |LongText	          |Cloud Flow |
+|runs	               |Int	                |Number of runs |
+
 > [!NOTE]
 > The latest versions of generally well-known platform operating systems should contain data, but in some cases this data might not be available. 
+
+
 
 ### See also
 

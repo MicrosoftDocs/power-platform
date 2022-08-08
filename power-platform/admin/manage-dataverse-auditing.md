@@ -3,10 +3,10 @@ title: "Manage Dataverse auditing"
 description: "Learn how to use Dataverse auditing to log changes to records and user access. System admins and customizers can use this feature to meet security and compliance policies."
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/14/2022
-author: Bluebear73
+ms.date: 07/21/2022
+author: paulliew 
 ms.subservice: admin
-ms.author: munzinge
+ms.author: paulliew 
 ms.reviewer: jimholtz 
 search.audienceType: 
   - admin
@@ -26,6 +26,8 @@ Dataverse auditing is supported on all custom and most customizable tables and c
 
 > [!NOTE]
 > The use of entity-related terminology depends on the protocol or class library used. See [Terminology use depending on protocol or technology](/power-apps/developer/data-platform/understand-terminology).
+> 
+> Audit logs may show up with a delay in the Audit History tab of a record and in the Audit Summary view. This is because audit logs are stored in the Dataverse log storage and no longer in the database storage.
 
 **Audit History for a single record** 
 
@@ -96,7 +98,7 @@ To enable user access auditing (Log access) or activity logging (Read logs), aud
 
 You must have System Administrator or System Customizer role or equivalent permissions to enable or disable auditing. 
 
-Auditing can be configured manually via the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) and the [Power Apps portal](https://make.powerapps.com/). Auditing can also be [configured programmatically using either the Web API or the Organization service](/power-apps/developer/data-platform/configure-entities-attributes-auditing). 
+Auditing can be configured manually via the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) and the [Power Apps portal](https://make.powerapps.com/). Auditing can also be configured programmatically. See [Auditing overview](/power-apps/developer/data-platform/auditing/overview). 
 
 ## Start/stop auditing for an environment and set retention policy
 
@@ -154,25 +156,6 @@ This feature allows you to quickly enable auditing for multiple tables (entities
    - **Customer Service Entities**. Tracks Case, Contract, Queue, and Service entity activity.  
   
 5. Select **OK**.  
-
-## View audit logging details
-
-System administrators can see activity for the entities that are enabled for audit logging.  
-  
-1. Browse to the Power Platform admin center and sign in using administrator credentials. 
-  
-2. Go to **Environments** > [select an environment] > **Settings** > expand **Audit and logs** > **Audit summary view**.
-  
-3. In the **Audit Summary View**, you can do the following:  
-  
-   - Select **Enable/Disable Filters** to turn on filtering. Then, you can filter on a specific event, such as **Delete** actions.  
-   - Choose an event to view specific details about the activity, such as field changes that were made during an update to a record and who performed the update.  
-   - Select **Refresh** to view the most recent activity. 
-
-> [!IMPORTANT]
-> Large attribute values, such as [Email.description](/powerapps/developer/common-data-service/reference/entities/email) or [Annotation](/powerapps/developer/common-data-service/reference/entities/annotation), are limited (capped) at 5KB or ~5,000 characters. A capped attribute value can be recognized by three dots at the end of the text, for example, “lorem ipsum, lorem ip…”.
-
-More information: [Dataverse developer guide: Retrieve the history of audited data changes](/power-apps/developer/data-platform/auditing/retrieve-audit-data)
 
 ## Configure auditing for one or more tables and columns in Power Apps 
 
@@ -297,6 +280,10 @@ The Audit Summary view is a comprehensive list of all audit logs in an environme
    > Sorting is only possible on the **Changed Date** column. 
    >
    > Exporting of Audit logs is currently not supported. Use the Web API or Organization Service to retrieve audit data from your environment. See [Retrieve and delete the history of audited data changes](/power-apps/developer/data-platform/retrieve-and-delete-the-history-of-audited-data-changes).
+   > 
+   > Large attribute values, such as [Email.description](/powerapps/developer/common-data-service/reference/entities/email) or [Annotation](/powerapps/developer/common-data-service/reference/entities/annotation), are limited (capped) at 5KB or ~5,000 characters. A capped attribute value can be recognized by three dots at the end of the text, for example, “lorem ipsum, lorem ip…”.
+
+More information: [Dataverse developer guide: Retrieve the history of audited data changes](/power-apps/developer/data-platform/auditing/retrieve-audit-data)
 
 ## Delete the change history for a record 
 

@@ -28,7 +28,7 @@ For more information about how to configure hand-off with [omnichannel for Custo
 > [!NOTE]
 > You can choose to escalate a bot conversation without linking to an engagement hub:
 >
-> 1. In the **Authoring canvas** for the topic you want to add an escalation option to, at the end of the topic, select the plus (+) icon to add a new node.
+> 1. In the **Authoring canvas** for the topic you want to add an escalation option to, at the end of the topic, select **Add node** (**+**) to add a new node.
 > 1. Select **Go to another topic** and then **Escalate**.
 >
 > **Escalate** is a [system topic](authoring-create-edit-topics.md#use-system-and-sample-topics) that, by default, provides a simple message to a user if they ask for a human agent.
@@ -37,9 +37,9 @@ For more information about how to configure hand-off with [omnichannel for Custo
 
 ## Prerequisites
 
-- You need a bot built with [Power Virtual Agents](https://aka.ms/TryPVA)
-- You need to have an engagement hub that is being used by live agents, such as [omnichannel for Customer Service](/dynamics365/omnichannel/try-channels), and you need to configure the connection, as described in [Configure hand-off to omnichannel for Customer Service](configuration-hand-off-omnichannel.md).
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- A bot built with [Power Virtual Agents](https://aka.ms/TryPVA).
+- An engagement hub that is being used by live agents, such as [omnichannel for Customer Service](/dynamics365/omnichannel/try-channels), and you need to configure the connection, as described in [Configure hand-off to omnichannel for Customer Service](configuration-hand-off-omnichannel.md).
 
 ## Triggering hand-off to a live agent
 
@@ -72,11 +72,11 @@ This node lets you add a **Private message to agent**, which is sent to the conn
 
 1. Open the authoring canvas for the topic you want to add the **Transfer to agent** node to.
 
-1. Click the plus (+) icon to add a message node. Enter what the bot should say to indicate that transferal to a live agent is about to occur.
+1. Select **Add node** (**+**) to add a message node. Enter what the bot should say to indicate that transferal to a live agent is about to occur.
 
     :::image type="content" source="media/advanced-hand-off/handoff-add-node.png" alt-text="Screenshot of adding a node." border="false":::
 
-1. Underneath the message node, click the plus (+) icon, go to **End the conversation** and then select **Transfer to agent**
+1. Underneath the message node, select **Add node** (**+**), go to **End the conversation** and then select **Transfer to agent**
 
     :::image type="content" source="media/advanced-hand-off/handoff-add-transfer-node.png" alt-text="Screenshot of adding the node." border="false":::
 

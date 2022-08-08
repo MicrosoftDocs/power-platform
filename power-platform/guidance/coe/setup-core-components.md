@@ -35,8 +35,8 @@ The flows in this solution sync all your resources into tables and build admin a
 
 We recommend that you create connections to all connectors used in the solution prior to importing the solution. This will make the setup faster.
 
-1. Go to [flow.microsoft.com](https://flow.microsoft.com/).
-1. Select your CoE environment, and go to **Dataverse** > **Connections** > **+ New connection**.
+1. Go to [make.powerautomate.com](https://make.powerautomate.com/).
+1. Select your CoE environment, and go to **Data** > **Connections** > **+ New connection**.
 1. Create connections for the following:
     - [Approvals](/connectors/approvals/)
     - [Microsoft Dataverse](/connectors/commondataserviceforapps/)
@@ -72,6 +72,7 @@ During solution import, you'll configure environment variable values. Make sure 
 | Graph URL Environment Variable |The URL used to connect to Microsoft Graph. For an environment in the commercial cloud: <https://graph.microsoft.com/><br> For a GCC, GCC High and Dod environment, check [Microsoft Graph and Graph Explorer service root endpoints](/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints)|
 |PowerApp Maker environment variable | The URL used byA the Power Apps maker portal for your cloud, including the trailing slash. <br> For an environment in the commercial cloud: <https://make.powerapps.com/> <br>For a GCC, GCC High, or DoD environment, check [Power Apps US Government service URLs](../../admin/powerapps-us-government.md#power-apps-us-government-service-urls). |
 |PowerApp Player environment variable | The URL used by the Power Apps player for your cloud, including the trailing slash.<br> For an environment in the commercial cloud: <https://apps.powerapps.com/> <br> For a GCC environment: <https://apps.gov.powerapps.us/> <br>For a GCC High environment: <https://apps.gov.powerapps.us/> <br>For a DoD environment: <https://play.apps.appsplatform.us> |
+|Power Automate environment variable | The URL used by Power Automate for your cloud.<br> For an environment in the commercial cloud: <https://flow.microsoft.com/manage/environments/> <br>For a GCC, GCC High, or DoD environment, check [Power Automate US government service URLs](/power-automate/us-govt#power-automate-us-government-service-urls). |
 | TenantID | Your Azure tenant ID.|
 
 ## Import the core components solution
@@ -107,6 +108,7 @@ There are several child flows, check to make sure all of these flows are on:
 1. CLEANUP HELPER – Check Deleted (Custom Connectors)
 1. CLEANUP HELPER – Check Deleted (Model Driven Apps)
 1. CLEANUP HELPER – Check Deleted (PVA)
+1. CLEANUP HELPER - Check Deleted (Solutions)
 1. CLEANUP HELPER – Power Apps User Shared With
 
 If you get a connection authorization error turning on a flow, you might need to set the [run-only user properties](faq.md#set-flow-run-only-users-properties) of the flow.
@@ -161,6 +163,7 @@ The Admin \| Sync Template flows part of this solution crawl through all the res
 - Admin | Sync Template v3 (Model Driven Apps)
 - Admin | Sync Template v3 (Portals)
 - Admin | Sync Template v3 (PVA)
+- Admin | Sync Template v3 (Solutions)
 - Admin | Sync Template v3 (Sync Flow Errors)
 - Admin | Sync Template v3
 - CLEANUP - Admin | Sync Template v3 (Check Deleted)

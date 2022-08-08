@@ -1,14 +1,13 @@
 ---
 title: Synchronization logic for appointments, contacts, and tasks
 description: Learn how appointments, contacts, and tasks are synchronized between Dynamics 365 and Outlook.
-author: mduelae
-manager: kvivek
+author: jimholtz
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/18/2022
+ms.date: 08/02/2022
 ms.subservice: admin
-ms.author: mkaur
+ms.author: jimholtz
 search.audienceType: 
   - admin
 search.app:
@@ -180,6 +179,7 @@ How tasks sync between Dynamics 365 and Exchange depends on the sync direction a
 
 - **Deleted tasks:** Faxes, letters, phone calls, and tasks that are deleted in Exchange are deleted in Dynamics 365.
 
+- **Percent Complete:** Tasks that are set as 100% complete sync to Dynamics 365 as **Completed**.
 
 ## Advanced synchronization settings
 

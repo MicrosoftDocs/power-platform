@@ -1,14 +1,13 @@
 ---
 title: "Set up default sync filters for multiple users for appointments, contacts, or tasks | MicrosoftDocs"
 description: Configure default sync filters for appointments, contacts, or task rows.
-
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 08/12/2021
-author: mduelae
+author: jimholtz
 ms.subservice: admin
-ms.author: mkaur
-ms.reviewer: mkaur
+ms.author: jimholtz
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:

@@ -20,9 +20,9 @@ ms.collection: virtual-agent
 
 Save customers' responses in a bot conversation to variables and reuse them later in the conversation. Or, use variables to create logical expressions that dynamically route the customer down different conversation paths.
 
-For example, save a customer's name in a variable called `UserName` and the bot can address the customer by name as the conversation continues.
+For example, save a customer's name in a variable called `UserName`, and the bot can address the customer by name as the conversation continues.
 
-You can also pass variables to [Power Automate](advanced-flow.md) and [Bot Framework skills](/azure/bot-service/bot-builder-skills-overview) as input parameters, and save the output results from those actions.  
+You can also pass variables to [Power Automate](advanced-flow.md) and [Bot Framework skills](/azure/bot-service/bot-builder-skills-overview) as input parameters and save the output results from those actions.  
 
 ## Variable types
 
@@ -34,17 +34,17 @@ A variable is associated with a **type**. The type determines what values the va
 | String   | A sequence of characters used to represent text.                                                                      |
 | Boolean  | A logical value that can only be `true` or `false`.                                                                   |
 | Number   | Any real number.                                                                                                      |
-| Table    | A list of any number of values, but all values must the same type.                                                    |
+| Table    | A list of any number of values, but all values must be the same type.                                                 |
 | Record   | A collection of name-value pairs where values can be any type.                                                        |
 | DateTime | A date, time, day of the week, or month relative to a point in time.                                                  |
 | Choice   | A list of string values that have associated synonyms.                                                                |
 | Blank    | A placeholder for "no value" or "unknown value". See [Blanks in Power Fx](/power-platform/power-fx/data-types#blank). |
 
-A variable's type is set based on the value it is first assigned.
+A variable's type is set based on the first assigned value.
 
 Once a variable has been assigned a type, it can't be assigned values from other types. For example, a variable given the starting value of `1` is assigned the type **Number**. Attempting to assign it to a **String** value of `"apples"` will result in an error.
 
-When you're testing a bot, a variable may appear temporarily as the type **Unspecified**. An **Unspecified** variable is one that hasn't been assigned a value yet.
+When testing a bot, a variable may appear temporarily as the type **Unspecified**. An **Unspecified** variable hasn't been assigned a value yet.
 
 ## Entities
 
@@ -52,7 +52,7 @@ Power Virtual Agents uses [entities](advanced-entities-slot-filling.md) to ident
 
 | Entity                  | Variable Base Type |
 | ----------------------- | ------------------ |
-| Multiple choice options | Choice             |
+| Multiple-choice options | Choice             |
 | User's entire response  | String             |
 | Age                     | Number             |
 | Boolean                 | Boolean            |
@@ -86,7 +86,7 @@ Power Virtual Agents uses [entities](advanced-entities-slot-filling.md) to ident
 
 Variables can be created in any node that prompts you to select a variable, such as the **Set Variable Value** node.
 
-1. Select **+** to add a node, select **Set a variable value**.
+1. Select **+** to add a node and then select **Set a variable value**.
 
 1. In the **Set variable** box, select the **>** arrow.
 
@@ -96,13 +96,13 @@ Variables can be created in any node that prompts you to select a variable, such
 
     :::image type="content" source="media/authoring-variables/create-variable.png" alt-text="Screenshot of Create a new variable button.":::
 
-A new variable will be created with a type that's appropriate for its usage. Use the [variable properties pane](#variable-properties-pane) to rename it.
+A new variable will be created with an appropriate type for its usage. Use the [variable properties pane](#variable-properties-pane) to rename it.
 
 ## Set a variable
 
 Typically you'll use a [question node](authoring-create-edit-topics.md#ask-a-question) to save user input to a variable, but there may be situations where you want to set the value manually.
 
-1. To assign a value to a [variable](authoring-variables.md), select **+** to add a node, select **Set a variable value**.
+1. To assign a value to a [variable](authoring-variables.md), select **+** to add a node and then select **Set a variable value**.
 
 1. For **Set variable**, choose or create a [new variable](#create-a-variable).
 
@@ -114,7 +114,7 @@ There are a number of built-in system variables that provide additional informat
 
 If you want to use system variables in a Power Fx formula, you must add `System.` before the name. For example, you'd need to use `System.User.DisplayName` instead of `User.DisplayName`.
 
-Some system variables are hidden from the variable context menu, and must be accessed with a [Power Fx formula](advanced-power-fx.md).
+Some system variables are hidden from the variable context menu and must be accessed with a [Power Fx formula](advanced-power-fx.md).
 
 <!-- best viewed without wordwrap -->
 | Name                                 | Type   | Hidden | Definition                                                      |
@@ -124,7 +124,7 @@ Some system variables are hidden from the variable context menu, and must be acc
 | LastActivity.Id                      | string |        | ID of the previously sent [activity][].                         |
 | Activity.Channel                     | choice |        | Channel ID of the current conversation.                         |
 | Activity.ChannelId                   | string | ✔      | Channel ID of the current conversation, as a string.            |
-| Channel.DisplayName                  | string | ✔      | Display name of the channel.                                    |
+| Channel.DisplayName                  | string | ✔      | Display the name of the channel.                                |
 | Activity.Text                        | string |        | Last message sent by the user.                                  |
 | Activity.ChannelData                 | any    | ✔      | An object that contains channel-specific content.               |
 | Activity.Value                       | any    | ✔      | Open-ended value.                                               |
@@ -140,7 +140,7 @@ Some system variables are hidden from the variable context menu, and must be acc
 
 ## Use literal values
 
-You can type a literal value into any variable input field instead of selecting a variable from the menu.
+Instead of selecting a variable from the menu, you can type a literal value into any variable input field.
 
 :::image type="content" source="media/authoring-variables/set-variable-to-literal.png" alt-text="Screenshot showing the use of literal values for action inputs.":::
 
@@ -228,9 +228,9 @@ To receive values from other topics, set the variable's property:
 
 ### Return values to original topics
 
-When a topic asks a question, or obtains a variable from an action in some other way, the variable can be returned to the original topic that redirected to it.
+When a topic asks a question or obtains a variable from an action in some other way, the variable can be returned to the original topic that redirected to it.
 
-In this case, the variable also becomes part of the original topic and can be used like any other variable. This helps you construct the topic so that information the bot obtains is available across topics, reducing the need for global variables.
+In this case, the variable also becomes part of the original topic and can be used like any other variable. This helps you construct the topic, so that information the bot obtains is available across topics reducing the need for global variables.
 
 To return a variable to the original topic, set the variable's property:
 

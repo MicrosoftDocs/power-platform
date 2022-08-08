@@ -2,10 +2,9 @@
 title: "Manage Microsoft Dataverse settings  | MicrosoftDocs"
 description: View and manage Microsoft Dataverse settings.
 author: jimholtz
-
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/11/2022
+ms.date: 08/08/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -49,6 +48,7 @@ These security settings are managed in the Power Platform admin center.
 - [Dataverse teams management](manage-teams.md)
 - [Assign security roles to users in an environment that has a Dataverse database](database-security.md#assign-security-roles-to-users-in-an-environment-that-has-a-dataverse-database)
 - [Manage application users](manage-application-users.md)
+- [Field-level security to control access](field-level-security.md)
 
 ## App settings
 
@@ -61,46 +61,46 @@ When the **[Display behavior -> Use updated experience for classic settings wher
 |**Administration** ||
 | System Settings > Goals | Sales Hub|
 |**Business Management**  ||
-| Business Closures    | Customer Service Hub|
+| Business Closures    | Customer Service admin center|
 | Currencies           | App-less unified interface|
-| Facilities/Equipment | Customer Service Hub|
-| Goal Metrics        | Customer Service Hub|
-| Queues              | Customer Service Hub|
-| Resource Groups     | Customer Service Hub|
+| Facilities/Equipment | Customer Service admin center|
+| Goal Metrics        | Customer Service admin center|
+| Queues              | Customer Service admin center|
+| Resource Groups     | Customer Service admin center|
 | Rollup Queries      | Sales Hub |
 | Sales Territories   | Sales Hub |
-| Services            | Customer Service Hub|
-| Sites               | Customer Service Hub|
-| Subjects            | Customer Service Hub|
+| Services            | Customer Service admin center|
+| Sites               | Customer Service admin center|
+| Subjects            | Customer Service admin center|
 | LinkedIn Sales Navigator |  Sales Hub     |
 | **Data Management** | |
-| Similar Record Suggestion Settings | Customer Service Hub|
+| Similar Record Suggestion Settings | Customer Service admin center|
 | **Product Catalog** | |
 |  Discount Lists     | Sales Hub|
 |  Families & Products| Sales Hub|
 |  Price Lists        | Sales Hub|
 |  Unit Groups        | Sales Hub|
 | **Service Management** | |
-| Business Closures   | Customer Service Hub| 
-| Categories          | Customer Service Hub|
-| Customer Service Schedule | Customer Service Hub|
-| Email Templates     | Customer Service Hub|
-| Embedded Knowledge Search | Customer Service Hub|
-| Entitlement Templates | Customer Service Hub|
-| Entitlements         | Customer Service Hub|
-| Facilities/Equipment | Customer Service Hub|
-| Holiday Schedule     | Customer Service Hub|
-| Parent and Child case settings | Customer Service Hub|
-| Queues               | Customer Service Hub|
-| Resource Groups      | Customer Service Hub|
-| Routing Rule Sets    | Customer Service Hub|
-| Service Configuration Settings | Customer Service Hub|
-| Services             | Customer Service Hub|
-| Sites                | Customer Service Hub|
+| Business Closures   | Customer Service admin center| 
+| Categories          | Customer Service admin center|
+| Customer Service Schedule | Customer Service admin center|
+| Email Templates     | Customer Service admin center|
+| Embedded Knowledge Search | Customer Service admin center|
+| Entitlement Templates | Customer Service admin center|
+| Entitlements         | Customer Service admin center|
+| Facilities/Equipment | Customer Service admin center|
+| Holiday Schedule     | Customer Service admin center|
+| Parent and Child case settings | Customer Service admin center|
+| Queues               | Customer Service admin center|
+| Resource Groups      | Customer Service admin center|
+| Routing Rule Sets    | Customer Service admin center|
+| Service Configuration Settings | Customer Service admin center|
+| Services             | Customer Service admin center|
+| Sites                | Customer Service admin center|
 |**Templates** | |
 | Document Templates   | App-less unified interface|
-| Email Signatures     | Customer Service Hub|
-| Email Templates      | Customer Service Hub|
+| Email Signatures     | Customer Service admin center|
+| Email Templates      | Customer Service admin center|
 
 
 ### Settings in Unified Interface apps
@@ -117,6 +117,8 @@ To open settings for legacy client apps, select the arrow next to the app name, 
 > [!div class="mx-imgBorder"] 
 > ![Legacy settings.](media/legacy-settings.png "Legacy settings")
 
+### See also
+[Get started with Customer Service admin center](/dynamics365/customer-service/cs-admin-center)
 
 
 

@@ -27,7 +27,7 @@ You'll then be taken to the Power Virtual Agents sign-in page and you can start 
 
 ## Prerequisites
 
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 
 ## Trial expiration
 

@@ -22,13 +22,13 @@ searchScope:
 
 Comments are notes that are associated with items in your bot. Use comments to help your team collaborate on the bot and provide feedback, or provide additional information on implementation details in your bot.  
 
-In Power Virtual Agents comments can be attached to topics and individual nodes within topics. The comments are stored in a table in Dataverse in the default solution.  
+In Power Virtual Agents, comments can be attached to topics and individual nodes within topics. The comments are stored in a table in Dataverse in the default solution.  
 
-Comments are commonly questions, feedback, or ideas that can provide important context for other makers who work on your bot's topics.
+Comments are commonly questions, feedback, or ideas that provide important context for other makers working on your bot's topics.
 
-You can create comment threads to track a single or multiple issues, and you can delete or resolve them if they're no longer relevant.
+You can create comment threads to track single or multiple issues and delete or resolve them if they're no longer relevant.
 
-Comment threads are created when someone replies to an existing comment. Using threads means you can discuss a single issue without getting confused with lots of replies about different things.
+Comment threads are created when someone replies to an existing comment. Using threads means you can discuss a single issue without getting confused with many replies about different things.
 
 :::image type="content" source="media/authoring-comments/authoring-comments-window.png" alt-text="Screenshot of the Comments pane.":::
 
@@ -40,9 +40,9 @@ You open the pane by selecting the **Comments** icon at the top of the authoring
 
 :::image type="content" source="media/authoring-comments/authoring-comments-open.png" alt-text="Screenshot with the Open comments menu icon selected, the menu icon looks like a chat box.":::
 
-Comment threads can be created at both the topic level and for individual nodes within the topic.
+Comment threads can be created at the topic level and for individual nodes within the topic.
 
-Both types of comment threads are shown in the **Comments** pane. Topic-level topics will show first, in order of when they were created, and node-level topics will show in the order of where the node appears in the topic.
+The **Comments** pane displays both types of comment threads. Topic-level topics will show first, in order of creation, and node-level topics will show where the node appears in the topic.
 
 Selecting a node-level comment thread will move the authoring canvas to the associated node and highlight it.
 
@@ -70,11 +70,11 @@ Select the menu icon at the top of the comment thread to edit the initial commen
 
 - Editing the initial comment lets you change only that comment. Other comments in the thread won't be affected.
 - Deleting a thread removes it completely. You can't restore deleted comments or threads.
-- Resolving a thread causes it to appear faded, and places the label **Resolved** at the top of the thread. Select the arrow icon at the top of the thread to unresolve a thread. Unresolving a thread lets you add more comments.
+- Resolving a thread causes it to appear faded and places the label **Resolved** at the top of the thread. Select the arrow icon at the top of the thread to unresolve a thread. Unresolving a thread lets you add more comments.
 
 ### Edit and delete individual comments
 
-Select the menu icon at the top of an individual comment, next to the your name, to edit or delete a comment.
+Select the menu icon at the top of an individual comment, next to your name, to edit or delete a comment.
 
 You can only edit or delete comments that you created.
 

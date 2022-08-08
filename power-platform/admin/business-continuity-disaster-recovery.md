@@ -61,7 +61,7 @@ When Microsoft determines that the primary region is back online and is fully op
 
 ### See also
 
-[Finance and Operations business continuity and disaster recovery](/dynamics365/fin-ops-core/dev-itpro/sysadmin/business-continuity-disaster-recovery)
+[Business continuity and disaster recovery](/dynamics365/fin-ops-core/dev-itpro/sysadmin/business-continuity-disaster-recovery)
 
 
 

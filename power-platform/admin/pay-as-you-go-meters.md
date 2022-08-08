@@ -4,7 +4,7 @@ description: If you're using a pay-as-you-go plan, three meters determine how mu
 author: Kavishi
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/29/2022
+ms.date: 07/29/2022
 ms.subservice: admin
 ms.author: kaagar
 ms.reviewer: jimholtz 
@@ -34,7 +34,7 @@ When you choose to use pay-as-you-go, usage of Power Platform services is billed
 For detailed pricing information, see [Power Apps and Power Automate pricing.](https://powerapps.microsoft.com/pricing/)
 
 > [!NOTE]
-> In May 2022, we will release a preview of the Power Platform requests meter. During this preview we will report on usage of Power Platform requests, however, we will not bill for this usage until we reach general availability (GA) for this meter. If you link an environment to an Azure subscription, users and flows in the environment can consume more than their entitled usage without being throttled or paying for overages.
+> In June 2022, we released a preview of the Power Platform requests meter. During this preview we will report on usage of Power Platform requests, however, we will not bill for this usage until we reach general availability (GA) for this meter. If you link an environment to an Azure subscription, users and flows in the environment can consume more than their entitled usage without being throttled or paying for overages.
 
 ### Power Apps per-app meter 
 
@@ -71,7 +71,7 @@ Example pricing
 |**App A**     | 2 active users        | 0 active users         | 2 active users         |
 |**App B**     | 3 active users         | 0 active users         | 2 active users         |
 |**App C**     | 4 active users         | 0 active users         | 2 active users         |
-|**Total cost:**     | **$90** <br /> (9 * $10/active user/app)       | **$0** <br />(0 * $10/active user/app)        | **$60** <br /> (6 * $10/active user/app)       |
+|**Total cost:**     | **$90** <br /> (9 x $10/active user/app)       | **$0** <br />(0 x $10/active user/app)        | **$60** <br /> (6 x $10/active user/app)       |
 
 ---
 
@@ -122,7 +122,25 @@ Power Automate flows can either be triggered directly via a user in a Power App,
 - Flows triggered directly from a Power App will have no additional cost since by running the Power App, the user’s standalone Power Apps license or the Power Apps PAYG meter will cover their usage of Power Automate.  
 - For flows running in response to an automated trigger (owned by a user without a Power Apps or Power Automate license), you have the flexibility to choose between the following options: 
   - Pay the normal run rates called out above -- charged $0.60 or $3.00 depending on where it runs (this in the default behavior), or, 
-  - For cloud flows only, if the flow uses the same data sources as a Power App, you can link that flow to the app using a PowerShell script that will be provided in mid-July 2022. When you link a flow to an app, usage will be covered by the user’s standalone Power Apps license or the Power Apps PAYG meter.   
+  - For cloud flows only, if the flow uses the same data sources as a Power App, you can link that flow to the app using a [PowerShell script](powerapps-powershell.md#associate-in-context-flows-to-a-power-app). When you link a flow to an app, usage will be covered by the user’s standalone Power Apps license or the Power Apps PAYG meter.  
+
+#### Choose the right subscription to save costs
+Prepaid flows and Pay-as-you-go flows can co-exist in same environments as Pay-as-you-go plan complements prepaid subscriptions. Admins can understand usage patterns using Power platform admin center reports and move users to pre-pay licenses for optimal pricing.
+
+ - Pay-as-you-go is optimal for seasonal flows or flows with less runs but more users
+ - Prepaid is optimal for personal automation flows and flows with lot of runs
+ 
+|Flow |Month #1 flow runs  |Month #2 flow runs |Month #3 flow runs |Charges for 3 months using prepaid licenses| Charges for 3 months using Pay-as-you-go| Recommendation|
+|---------|---------|---------|---------|-------------|-------------|------------|
+|**Flow1** - Automated/Scheduled flow -  1 user running the flow | 100      |  25       |   20     | 3months x $15 Per user license = $45| 145 runs x $0.60/run = $87|Power Automate per user license|
+|**Flow 2**- Instant flow – 10 users running the flow| 100      |  25       |   20     |3months x 10 users x $15per user license = $450| 145 runs x $0.60/run = $87|Pay-as-you-go|
+|**Flow 3** – attended RPA - 10 users running the flow | 100      |  25       |   20     | 3months x 10 users x $40 per user with attended RPA = $1200| 145 runs x $0.60/run = $87)|Pay-as-you-go|
+| **Flow 4** – Unattended RPA – 2 concurrent runs| 100      |  25       |   20     |3 months x ($40 per user with attended RPA+2 bots x $150 per unattended addon) = $1020|145 runs x $3/run = $435 |Pay-as-you-go|
+| **Flow 5** – Seasonal flow - 1 user running the flow| 0      |  0      |   40     |3 month x $15 Per user license = $45|40 runs x $0.60/run = $24|Pay-as-you-go|
+|**Flow 6** – Organizational flow running under service account/service principal | 100      |  25       |   20     | 3months x $100 per flow license = $300| 145 runs x $0.60/run = $87|Pay-as-you-go|
+ 
+> [!NOTE]
+> The prices shown in this example are illustrative only. Your organization's pricing may vary based on your contract with Microsoft.
 
 ### Dataverse capacity meter
 
@@ -154,9 +172,9 @@ Example pricing
 
 |         |Month #1  |Month #2  |Month #3  |
 |---------|---------|---------|---------|
-|**Database**     |  0.5 GB * $48 = $24       | 1.5 GB * $48 = $72         | 2.5 GB * $48 = $120         |
-|**File**     | 2 GB * $2.40 = $4.80         | 5 GB * $2.40 = $12         | 10 GB * $2.40 = $24         |
-|**Log**     | No usage         | 0.2 GB * $12 = $2.40         | 0.4 GB * $12 = $4.80         |
+|**Database**     |  0.5 GB x $48 = $24       | 1.5 GB x $48 = $72         | 2.5 GB x $48 = $120         |
+|**File**     | 2 GB x $2.40 = $4.80         | 5 GB x $2.40 = $12         | 10 GB x $2.40 = $24         |
+|**Log**     | No usage         | 0.2 GB x $12 = $2.40         | 0.4 GB x $12 = $4.80         |
 |**Total cost:**     | **$28.80**        |  **$86.40**      |  **$148.80**       |
 
 ---
@@ -164,7 +182,7 @@ Example pricing
 ### Power Platform request meter (coming soon)
 
 > [!NOTE]
-> In May 2022, we will release a preview of the Power Platform requests meter. During this preview we will report on usage of Power Platform requests, however, we will not bill for this usage until we reach general availability (GA) for this meter. If you link an environment to an Azure subscription, users and flows in the environment can consume more than their entitled usage without being throttled or paying for overages.
+> In June 2022, we released a preview of the Power Platform requests meter. During this preview we will report on usage of Power Platform requests, however, we will not bill for this usage until we reach general availability (GA) for this meter. If you link an environment to an Azure subscription, users and flows in the environment can consume more than their entitled usage without being throttled or paying for overages.
 
 Each Power Platform license includes a large entitlement of Power Platform requests, designed to be sufficient for most customers and scenarios. For customers with extremely high-scale scenarios, the Power Platform requests meter enables them to scale without getting throttled and only pay for the Power Platform requests used above those entitlements.
 
@@ -181,7 +199,7 @@ In the example below, User A is licensed with a Power Apps and Power Automate pe
 
 :::image type="content" source="media/pay-as-you-go-measured-usage-above-entitlements.png" alt-text="Measured usage above entitlements":::
 
-# [Table](#tab/table)
+# [Table](#tab/table) 
 
 Measured usage *above* limits
 
@@ -194,7 +212,7 @@ Example pricing
 
 |   |Month #1  |Month #2  |Month #3  |
 |---------|---------|---------|---------|
-|**Power Platform** <br />**Requests**     | No usage        | 110 K * $0.00004 = $4.40       | 50 K * $0.00004 = $2.00        |
+|**Power Platform** <br />**Requests**     | No usage        | 110 K x $0.00004 = $4.40       | 50 K x $0.00004 = $2.00        |
 |**Total cost:**     |  $0.00       | $4.40        | $2.00        |
 
 ---
