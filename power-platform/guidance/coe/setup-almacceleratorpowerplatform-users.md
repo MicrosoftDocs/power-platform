@@ -63,6 +63,11 @@ Repeat the preceding steps for each of the service connections you want to share
 
 ## Dataverse user permissions for downstream environments
 
-Explain permissions for users to see Env list and create connections
+The AA4PP will use the permissions of the user currently logged in to show the list of Environments, therefore to show the downstream environments (validation, test, production) the user need to have the appropriated permissions on those environments.
+
+You can customize an existence role with the needed permission or give 'Environment Maker' role to the user, with this role the user will be able to create connections and see the environments under 'Deployment Environments' in AA4PP.
+
+To see the full overview of the different security roles and the respective permissions,  
+[follow this link](/power-platform/admin/database-security#environments-with-a-dataverse-database).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
