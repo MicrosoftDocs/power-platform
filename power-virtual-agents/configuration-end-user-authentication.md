@@ -132,176 +132,75 @@ When a bot's authentication setting can't control who can chat with it, if you s
 
 :::image type="content" source="media/configuration-end-user-authentication/auth-allow-everyone-chat-with-bot.PNG" alt-text="Screenshot of a message stating everyone in the organization can chat with the bot because of its authentication setting.":::
 
-## Register a new app with your identity provider
-
-Before you can configure manual authentication in Power Virtual Agents, you need to register a new app with your identity provider and get a Client ID and client secret. This section describes how to do that with the [Azure portal](https://portal.azure.com) for Azure AD. If you have a different identity provider, you should consult its setup instructions.
-
-Make sure to configure the redirect URL to `https://token.botframework.com/.auth/web/redirect`, and that the assigned API permissions and scopes for the app are the same permissions you need the bot to access.
-
-> [!IMPORTANT]
-> Your app registration redirect URL must be `https://token.botframework.com/.auth/web/redirect`.  
-> Ensure that the app has the correct API permissions and its related scopes.
-
-### Use Azure Active Directory as your identity provider
-
-#### Create an app registration
-
-1. Sign in to the [Azure portal](https://portal.azure.com), using an admin account on the same tenant as your bot.
-
-1. Go to [App registrations](https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade), either by selecting the icon or searching in the top search bar.
-
-1. Create a new **Application Registration**.
-
-1. Select **New registration** and enter a name for the registration.  
-    It can be helpful to use the name of your bot. For example, if your bot is called "Contoso sales help", you might name the app registration "ContosoSalesReg" or something similar.
-
-1. Select **Accounts in any organizational directory (Any Azure AD directory - Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox)**.
-
-1. Leave the **Redirect URI** section blank for now. You'll enter that information in the next steps.
-
-1. Select **Register**.
-
-#### Add the redirect URL
-
-1. Once the registration is complete, the **Overview** page opens. Go to **Authentication** and then select **Add a platform**.
-
-1. Under **Platform configurations** select **Add a platform**, then select **Web**.
-
-1. Under **Redirect URIs**, enter `https://token.botframework.com/.auth/web/redirect`.
-
-1. Under the **Implicit grant and hybrid flows** section, turn on both **ID tokens (used for implicit and hybrid flows)** and **Access tokens (used for implicit flows)**.
-
-1. Select **Configure** to confirm your changes.
-
-#### Generate a client secret
-
-1. Go to **Certificates & Secrets**.
-
-1. Under the **Client secrets** section, select **New client secret**.
-
-1. (Optional) Enter a description. One will be provided if you leave it blank.
-
-1. Select the expiry period. Select the shortest period that's relevant for the life of your bot.
-
-1. Select **Add** to create the secret.
-
-1. Store the secret's **Value** in a temporary place. You'll need it when you configure your bot's authentication.
-
-> [!IMPORTANT]
-> If you navigate away from the page, the secret's **Value** is obfuscated and you'll need to generate a new client secret.
-
-## Configure manual authentication
-
-1. Sign in to Power Virtual Agents. If you're using Azure AD as your identity provider, make sure to sign in on the same tenant where you created the app registration.
-
-1. Open your bot.
-
-1. Select **Manage** on the side pane, and then go to the **Security** tab and select the **Authentication** card.
-
-    :::image type="content" source="media/configuration-end-user-authentication/auth-manage-sm.png" alt-text="Screenshot of selecting the Authentication card.":::
-
-1. Select **Manual (for any channel including Teams)**.
-
-    :::image type="content" source="media/configuration-end-user-authentication/auth-select-manual.png" alt-text="Screenshot of selecting the manual authentication option.":::
-
-1. [Enter the required information](#manual-authentication-fields).  
-    The information you need to enter depends on your setup and provider. If you have questions about what to enter, contact your administrator or identity provider.
-
-1. Select **Save** to finish the configuration.
-
-### Manual authentication fields
+## Manual authentication fields
 
 The following are all the fields you may see when you're configuring manual authentication. Which fields you'll see depends on your choice for [service provider](#service-provider).
 
-#### Authorization URL template
+### Authorization URL template
 
 The URL template for authorization, as defined by your identity provider; for example, `https://login.microsoftonline.com/common/oauth2/v2.0/authorize`
 
-To find this information when you're using Azure AD as your identity provider: Go to the app registration's **Overview** page and select **Endpoints**. The URL template for authorization is shown as **OAuth 2.0 token endpoint (v2)**.
-
-#### Authorization URL query string template
+### Authorization URL query string template
 
 The query template for authorization, as provided by your identity provider. Keys in the query string template will vary depending on the identity provider.
 
-When you're using Azure AD, enter `?client_id={ClientId}&response_type=code&redirect_uri={RedirectUrl}&scope={Scopes}&state={State}`.
-
-#### Client ID
+### Client ID
 
 Your client ID, obtained from the identity provider.
 
-To find this information when you're using Azure AD as your identity provider: Go to the app registration's **Overview** page. The Client ID is shown as **Application (client) ID**.
+### Client secret
 
-#### Client secret
+Your client secret, obtained when you created the identity provider app registration.
 
-Your client secret, obtained when you created the identity provider app registration. If you navigate away from the **Certificates & secrets** page before you record the client secret, its **Value** is obfuscated and you'll need to create a new one.
-
-To find this information when you're using Azure AD as your identity provider: Generate a new client secret.
-
-#### Refresh body template
+### Refresh body template
 
 The template for the refresh body.
 
-When you're using Azure AD as your identity provider, enter `refresh_token={RefreshToken}&redirect_uri={RedirectUrl}&grant_type=refresh_token&client_id={ClientId}&client_secret={ClientSecret}`.
-
-#### Refresh URL query string template
+### Refresh URL query string template
 
 The refresh URL query string separator for the token URL, usually a question mark (`?`).
 
-#### Refresh URL template
+### Refresh URL template
 
-The URL template for refresh; for example, `https://login.microsoftonline.com/common/oauth2/v2.0/token`. For Azure apps, replace the base URL with your Azure app URL.
+The URL template for refresh; for example, `https://login.microsoftonline.com/common/oauth2/v2.0/token`.
 
-To find this information when you're using Azure AD as your identity provider: Go to the app registration's **Overview** page and select **Endpoints**. The refresh URL template is shown as **OAuth 2.0 token endpoint (v2)**.
+### Scope list delimiter
 
-#### Scope list delimiter
-
-The separator character for the scope list. When you're using Azure AD as your identity provider, enter a comma (`,`).
+The separator character for the scope list.
 
 Empty spaces aren't supported in this field. You can use them in the **Scopes** field if the identity provider requires it. In that case, enter a comma (`,`) in **Scope list delimiter**, and enter spaces in the **Scopes** field.
 
-#### Scopes
+### Scopes
 
 The list of [scopes](/azure/active-directory/develop/developer-glossary#scopes) that you want users to have after they've signed in.
 
 Use spaces to separate multiple scopes, only set necessary scopes, and follow the [least privilege access control principle](/windows-server/identity/ad-ds/plan/security-best-practices/implementing-least-privilege-administrative-models).
 
-To find this information when you're using Azure AD as your identity provider: Go to the **API permissions** page under **API / Permissions**.
-
-For custom scopes that are defined by an exposed API, you'll need to use the full URI, including the exposed Application ID URI. On the **Expose an API** page, add the **Application ID URI** and ending slash (`/`) at the beginning of the scope name. For example, if your custom scope name is `app.scope.sso`, and the **Application ID URI** is `api://1234-4567`, then you would enter `api://1234-4567/app.scope.sso` as the scope.
-
-#### Service provider
+### Service provider
 
 The service provider you want to use for authentication.
 
-If you're using Azure AD as your identity provider, we recommend using "Azure Active Directory" or "Azure Active Directory V2" for easier configuration.
-
 For more information, see [OAuth generic providers](/azure/bot-service/bot-builder-concept-identity-providers?view=azure-bot-service-4.0&tabs=adv1%2Cga2&preserve-view=true).  
 
-#### Tenant ID
+### Tenant ID
 
 Your Azure AD tenant ID. Refer to [Use an existing Azure AD tenant](/azure/active-directory/develop/quickstart-create-new-tenant#use-an-existing-azure-ad-tenant) to learn how to find your tenant ID.
 
-#### Token body template
+### Token body template
 
 The template for the token body.
 
-When you're using Azure AD as your identity provider, enter `code={Code}&grant_type=authorization_code&redirect_uri={RedirectUrl}&client_id={ClientId}&client_secret={ClientSecret}`.
-
-#### Token exchange URL (required for SSO)
+### Token exchange URL (required for SSO)
 
 This is an optional field used when you're [configuring single sign-on](configure-sso.md).
 
-#### Token URL template
+### Token URL template
 
-The URL template for tokens, as provided by your identity provider; for example, `https://login.microsoftonline.com/common/oauth2/v2.0/token`. For Azure apps, replace the base URL with your Azure app URL.
+The URL template for tokens, as provided by your identity provider; for example, `https://login.microsoftonline.com/common/oauth2/v2.0/token`.
 
-To find this information when using Azure AD as your identity provider: Go to the app registration's **Overview** page and select **Endpoints**. The token URL template is shown as **OAuth 2.0 token endpoint (v2)**.
-
-#### Token URL query string template
+### Token URL query string template
 
 The query string separator for the token URL, usually a question mark (`?`).
-
-When you're using Azure AD as your identity provider, enter a question mark (`?`).
 
 ## Test your configuration
 
