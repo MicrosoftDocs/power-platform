@@ -61,4 +61,8 @@ For users to use the service connection from the ALM Accelerator for Power Platf
 
 Repeat the preceding steps for each of the service connections you want to share.
 
+## Dataverse user permissions for downstream environments
+
+Explain permissions for users to see Env list and create connections
+
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
