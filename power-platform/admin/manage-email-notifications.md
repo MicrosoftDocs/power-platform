@@ -4,7 +4,7 @@ description: Manage email notifications
 author: jimholtz
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/17/2020
+ms.date: 08/08/2022
 ms.subservice: admin
 ms.author: jimholtz
 ms.reviewer: jimholtz
@@ -17,19 +17,25 @@ search.app:
   - Flow
 ---
 # Manage email notifications to admins
-The service team regularly sends email notifications to the administrators in your organization. Now, using a new cmdlets for Microsoft Power Platform admin center, you have control over who should receive these email communications. As an administrator, you can set up a list of additional recipients that you choose. For example, you can add to the list of recipients:  
+The service team regularly sends email notifications to the System Administrators of an organization. As an admin, you can set up a list of additional recipients to receive notifications using a cmdlet. For example, you can add to the list of recipients: 
 - People outside of your organization, such as your partners.  
-- People inside and outside of your company.  
- If you have been added as an additional recipient, and you want to stop receiving email notifications, please contact your admin. If you’re not sure who your admin is, see: [Find your administrator or support person](/powerapps/user/find-admin).  
+- People or distribution lists inside your company responsible for Power Platform services.
 
 For a complete overview of Cmdlets, see [PowerShell support for Power Apps](powerapps-powershell.md).
 
-## Obtain a list of email to be notified
-If you need to pull a list of email addresses that will receive admin notification use the [Get-AdminPowerAppCdsAdditionalNotificationEmails cmdlet](/powershell/module/microsoft.powerapps.administration.powershell/get-adminpowerappcdsadditionalnotificationemails?view=pa-ps-latest).  It will return email addresses of users, other than default admins, linked to an environment that receive notifications.
+## Send email notifications to additional recipients 
 
-## Send email notifications to multiple recipients  
+By default, admins will receive email notifications. You can add additional recipients to the list using the [Set-AdminPowerAppCdsAdditionalNotificationEmails cmdlet](/powershell/module/microsoft.powerapps.administration.powershell/set-adminpowerappcdsadditionalnotificationemails?view=pa-ps-latest). This will allow you to add email addresses, other than users with the System Administrator role to receive email notifications 
 
-By default, admins will receive update notifications. You can add others to receive update notifications using the [Set-AdminPowerAppCdsAdditionalNotificationEmails cmdlet](/powershell/module/microsoft.powerapps.administration.powershell/set-adminpowerappcdsadditionalnotificationemails?view=pa-ps-latest).  It will allow you to set email addresses of users linked to an environment, other than default admins, that should receive notifications.
+> [!NOTE]
+> If you were added as a recipient and want to stop receiving email notifications, contact your organizations’ admin. If you’re not sure who your admin is, see: [Find your administrator or support person](/powerapps/user/find-admin). 
+
+## Obtain a list of Additional Notification email addresses 
+
+To view the full list of email addresses that are receiving notifications, you can use the [Get-AdminPowerAppCdsAdditionalNotificationEmails cmdlet](/powershell/module/microsoft.powerapps.administration.powershell/get-adminpowerappcdsadditionalnotificationemails?view=pa-ps-latest). This will return the list of email addresses of users who are receiving notifications.  
+
+
+
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
