@@ -152,6 +152,8 @@
          href: configuration-fundamentals.md
        - name: Configure end-user authentication
          href: configuration-end-user-authentication.md
+       - name: Configure user authentication with Azure Active Directory
+         href: configuration-authentication-azure-ad.md
        - name: Configure web and Direct Line channel security
          href: configure-web-security.md
        - name: Configure single sign-on for Web

@@ -1,6 +1,6 @@
 ---
 #FIXME: metadata
-title: 
+title: Configure user authentication with Azure Active Directory
 description: 
 keywords: "Authentication, IdP, PVA, AAD"
 ms.date: 06/23/2022
@@ -14,7 +14,7 @@ ms.collection: virtual-agent
 ---
 
 <!-- FIXME: confirm this doc works standalone from SSO -->
-# Configure user authentication for Azure Active Directory
+# Configure user authentication with Azure Active Directory
 
 <!-- FIXME: intro -->
 
