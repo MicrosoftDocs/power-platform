@@ -31,6 +31,8 @@ SSO in the Power Virtual Agents app in Teams is only supported when using Azure 
 
 Before you can turn on SSO, you'll need to configure user authentication. During this process, you'll create an app registration which you'll use to setup SSO. For more information, see [Configure user authentication](configuration-end-user-authentication.md) and follow the steps for manual user authentication using Azure AD v2 as your service provider.
 
+<!-- Note: the following sections are nearly identical to https://docs.microsoft.com/microsoftteams/platform/tabs/how-to/authentication/tab-sso-register-aad. They were mirrored here to give more specific guidance on the values that needed to be entered. -->
+
 ## Locate your Microsoft Teams channel app ID
 
 1. In Power Virtual Agents, open the bot that you want to configure SSO for.
@@ -92,6 +94,10 @@ Before you can turn on SSO, you'll need to configure user authentication. During
 
 1. Select **Add scope**.
 
+1. Under **Scopes**, select **Copy to clipboard**, and save the scope to a temporary place. You'll use it in a later step.
+
+    :::image type="content" source="media/configure-sso-teams/copy-scope.png" alt-text="Screenshot of the Copy to clipboard button..":::
+
 ## Add Microsoft Teams client IDs
 
 > [!IMPORTANT]
@@ -126,6 +132,12 @@ To update the Azure AD authentication settings in Power Virtual Agents, you'll n
 1. For **Token exchange URL (required for SSO)**, paste the application ID URI you copied earlier.
 
     :::image type="content" source="media/configure-sso-teams/token-exchange-url.png" alt-text="Screenshot of the Application ID URI entered as the Token exchange URL in Power Virtual Agents.":::
+
+1. For scopes, add the scope you copied earlier after the existing ones.
+
+    :::image type="content" source="media/configure-sso-teams/enter-scope.png" alt-text="Screenshot of the custom scope added.":::
+
+1. Select **Save**.
 
 ## Add SSO to your bot's Microsoft Teams channel
 

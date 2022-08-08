@@ -28,8 +28,6 @@ ms.collection: virtual-agent
 
 1. Go to [App registrations](https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade), either by selecting the icon or searching in the top search bar.
 
-1. Create a new **Application Registration**.
-
 1. Select **New registration** and enter a name for the registration.  
 
     It can be helpful to use the name of your bot. For example, if your bot is called "Contoso sales help", you might name the app registration "ContosoSalesReg" or something similar.
@@ -94,11 +92,6 @@ ms.collection: virtual-agent
     - **Scopes**: Enter `profile openid`.
 
     <!-- FIXME: add screenshot -->
-
-    <!-- FIXME: is this needed here? -->
-    <!-- To find this information when you're using Azure AD as your identity provider: Go to the **API permissions** page under **API / Permissions**.
-
-    For custom scopes that are defined by an exposed API, you'll need to use the full URI, including the exposed Application ID URI. On the **Expose an API** page, add the **Application ID URI** and ending slash (`/`) at the beginning of the scope name. For example, if your custom scope name is `app.scope.sso`, and the **Application ID URI** is `api://1234-4567`, then you would enter `api://1234-4567/app.scope.sso` as the scope. -->
 
 1. Select **Save** to finish the configuration.
 

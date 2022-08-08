@@ -163,10 +163,6 @@ The following are all the fields you may see when you're configuring manual auth
 
 <sup>1</sup> You can use spaces in the **Scopes** field if the identity provider requires it. In that case, enter a comma (`,`) in **Scope list delimiter**, and enter spaces in the **Scopes** field.
 
-## Test your configuration
-
-After the setup steps are complete, save your configuration and test it by [creating a new topic using authentication](advanced-end-user-authentication.md).
-
 ## Remove the authentication configuration
 
 1. Edit your bot and select **Manage** on the side pane, and then go to the **Security** tab and select the **Authentication** card.
