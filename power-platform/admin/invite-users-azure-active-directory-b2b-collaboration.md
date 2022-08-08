@@ -65,11 +65,11 @@ You can invite other users to access your environment. The [!INCLUDE[pn_Office_3
 
 2. Invite users to your environment that does not have a security group.  
   
-   -   See [Admins adding guest users to the directory](/azure/active-directory/active-directory-b2b-admin-add-users).  
+   - See [Admins adding guest users to the directory](/azure/active-directory/active-directory-b2b-admin-add-users).  
   
 3. Bulk-invite guest users using a .csv file.  
   
-   -   See [PowerShell example](/azure/active-directory/b2b/code-samples).  
+   - See [PowerShell example](/azure/active-directory/b2b/code-samples).  
   
    Your invited user will receive an email invitation to get started with B2B user collaboration.  
   
@@ -80,7 +80,7 @@ You can invite other users to access your environment. The [!INCLUDE[pn_Office_3
    ![Accept the invitation.](../admin/media/accept-invitation-dynamics-365.png "Accept the invitation")  
   
 > [!NOTE]
->  Until you add a license to the user account, the user will not have access to customer engagement apps. Follow the steps below to add a license through the [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] portal.  
+> Until you add a license to the user account, the user will not have access to customer engagement apps. Follow the steps below to add a license through the [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] portal.  
   
 ## Update user’s name and usage location  
  To assign a license, the invited user’s **Usage location** must be specified. Admins can update the invited user’s profile on the [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] portal.  
@@ -124,7 +124,7 @@ You can invite other users to access your environment. The [!INCLUDE[pn_Office_3
 ## Notify your invited users  
  To complete the user invitation, notify your invited users and provide them with the URL for the environment they are invited to (for example, https://contoso.crm.dynamics.com).  
  
- ## Power Apps support for B2B guest maker (preview)
+## Power Apps support for B2B guest maker (preview)
 
 > [!IMPORTANT]
 > - This is a preview feature.
@@ -139,9 +139,9 @@ Follow these steps to allow B2B collaboration users to create Power Apps.
 > - A **resource tenant** is where the app is expected to exist, and where the user is expected to create the app using Power Apps as a guest.
 > - A **home tenant** is where the user's account resides and authenticates against.
 
-1. In Azure Active Directory, [in external collaboration settings set guest user access to "(most inclusive)"](https://docs.microsoft.com/azure/active-directory/b2b/delegate-invitations). For more info about Azure AD B2B check out: [What is guest user access in Azure AD B2B?](https://docs.microsoft.com/azure/active-directory/b2b/what-is-b2b)
+1. In Azure Active Directory, [in external collaboration settings set guest user access to "(most inclusive)"](/azure/active-directory/b2b/delegate-invitations). For more info about Azure AD B2B check out: [What is guest user access in Azure AD B2B?](/azure/active-directory/b2b/what-is-b2b)
 
-1. Use the following PowerShell cmdlet to enable guests to make Power Apps.
+2. Use the following PowerShell cmdlet to enable guests to make Power Apps.
 
     ```PowerShell
     $requestBody = Get-TenantSettings 
@@ -149,7 +149,7 @@ Follow these steps to allow B2B collaboration users to create Power Apps.
     Set-TenantSettings $requestBody 
     ```
 
-1. Assign the [Environment Maker](database-security.md) security role to the B2B guest users that you want to be able to create custom list forms using Power Apps.
+3. Assign the [Environment Maker](database-security.md) security role to the B2B guest users that you want to be able to create custom list forms using Power Apps.
 
     > [!TIP]
     > In addition, you can also review all other members of this security role (especially in the default environment), and remove users that aren't expected to have this privilege.
@@ -158,7 +158,7 @@ After the B2B guest users are given the required permissions to create and edit 
 
 ### Known limitations
 1. To sign in to make.powerapps.com via Azure B2B, a user is required to sign in to an Azure Active Directory tenant. Microsoft Accounts (for example user@outlook.com, user@live.com, user@hotmail.com) cannot directly sign in to https://make.powerapps.com.
-1. If the Azure B2B maker is expected to build an app that uses Dataverse or build apps in a solution, they’ll need a license with Dataverse use rights assigned to them in the resource tenant.
+2. If the Azure B2B maker is expected to build an app that uses Dataverse or build apps in a solution, they’ll need a license with Dataverse use rights assigned to them in the resource tenant.
 
 ### See also  
  [Azure AD B2B Collaboration is Generally Available!](https://blogs.technet.microsoft.com/enterprisemobility/2017/04/12/azure-ad-b2b-collaboration-is-generally-available/)   
