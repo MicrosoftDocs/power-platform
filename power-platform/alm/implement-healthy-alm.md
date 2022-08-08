@@ -37,6 +37,8 @@ The scenarios range from people who are new to Microsoft Power Platform to exist
 
 > [Scenario 6: Embrace citizen developers](embrace-citizen-devs.md)
 
+> [Scenario 7: Add canvas apps in solutions by default](canvas-apps-solution-default.md)
+
 ### See also
 [ALM basics in Power Apps](basics-alm.md)
 
