@@ -4,7 +4,7 @@ description: This topic covers information on how customers can review and appro
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/10/2022
+ms.date: 08/08/2022
 author: mihaelablendea
 ms.author: mihaelab
 ms.reviewer: jimholtz
