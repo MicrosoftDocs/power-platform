@@ -106,10 +106,7 @@ Once the configuration is saved, make sure to publish your bot so the changes ta
 
 :::image type="content" source="media/configuration-end-user-authentication/auth-require-user-to-sign-in.png" alt-text="Screenshot of the Authentication pane showing the Require user to sign in option.":::
 
-This option is _not_ available when:
-
-- The **No authentication** option is chosen.
-- The bot is connected to Dynamics 365 Customer Service.
+This option is _not_ available when the **No authentication** option is chosen.
 
 If you turn off this option, your bot won't ask users to sign in until it encounters a topic that requires them to.
 
