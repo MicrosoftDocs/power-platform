@@ -84,7 +84,7 @@ For an array of records that have a text column called `Field`, the **Table()** 
 Text( Index( Table(UORecordArray), 2 ).Value.Field )
 ```
 
-To convert an array of records to a typed table, you can use the [ForAl()](function-forall.md) function to get the single-column `Value` representing the **untyped object** record, and converting each individual field:
+To convert an array of records to a typed table, you can use the [ForAll()](function-forall.md) function to get the single-column `Value` representing the **untyped object** record, and converting each individual field:
 
 ```powerapps-dot
 ForAll( Table(UORecordArray), { FirstField: Value(ThisRecord.Value.FirstField), SecondField: Text(ThisRecord.Value.SecondField) } )

@@ -45,6 +45,10 @@ To convert date and time values, use the [**DateValue**](function-datevalue-time
 - _String_ - Required. String to convert to a numeric value.
 - _LanguageTag_ - Optional. The language tag in which to parse the string. If not specified, the language of the current user is used.
 
+**Value**( _Untyped_ )
+
+- _Untyped_ - Required. [**Untyped object**](untyped-object.md) that represents a number. Acceptable values are dependent on the untyped provider.  For [**JSON**](function-parsejson.md), the untyped object is expected to be a JSON number. Values inside of a string, such as `"15"` or `"12.5"`, are not accepted. Consider converting such untyped objects to [**Text**](function-text.md) first, then to a value. Keep in mind that locale-related formats are important considerations when communicating with external systems.
+
 ## Examples
 
 The user running these formulas is located in the United States and has selected English as their language. The **Language** function is returning "en-US".

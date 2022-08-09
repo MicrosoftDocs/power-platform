@@ -39,7 +39,7 @@ In most cases, type coercion happens automatically and the **Boolean** function 
 
 **Boolean**( *Untyped* )
 
-* *Untyped* - Required. The untyped value to convert.  Acceptable values are dependent on the untyped provider.  For JSON, JSON boolean values `true`, `false`, and `null` are accepted, corresponding to *true*, *false*, and *blank* values in Power Fx.  All other values will return an error.  Values inside of a string, such as `"true"` and `"false"`, are not accepted. 
+* *Untyped* - Required. The untyped value to convert.  Acceptable values are dependent on the untyped provider.  For [**JSON**](function-parsejson.md), JSON boolean values `true`, `false`, and `null` are accepted, corresponding to *true*, *false*, and *blank* values in Power Fx.  All other values will return an error.  Values inside of a string, such as `"true"` and `"false"`, are not accepted. 
 
 ## Examples
 

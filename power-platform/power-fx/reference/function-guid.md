@@ -57,6 +57,10 @@ When used in a [behavior formula](/power-apps/maker/canvas-apps/working-with-for
 
 - _GUIDString_ – Optional. A text string that contains the hexadecimal representation of a GUID. If no string is supplied, a new GUID is created.
 
+**GUID**( _Untyped_ )
+
+- _Untyped_ - Required. [**Untyped object**](untyped-object.md) that represents a GUID. Acceptable values are dependent on the untyped provider.  For [**JSON**](function-parsejson.md), the untyped object is expected to be GUID represented as a JSON string.
+
 ## Examples
 
 #### Basic usage
