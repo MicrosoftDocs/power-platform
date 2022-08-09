@@ -102,9 +102,14 @@ Once the configuration is saved, make sure to publish your bot so the changes ta
 
 ## Required user sign in and bot sharing
 
-**Require users to sign in** determines whether a user needs to sign in before talking with the bot. It's available only with **Only for Teams** and **Manual** authentication. We highly recommended that you turn on this setting when your bot needs to access sensitive or restricted information.
+**Require users to sign in** determines whether a user needs to sign in before talking with the bot. We highly recommended that you turn on this setting when your bot needs to access sensitive or restricted information.
 
 :::image type="content" source="media/configuration-end-user-authentication/auth-require-user-to-sign-in.png" alt-text="Screenshot of the Authentication pane showing the Require user to sign in option.":::
+
+This option is _not_ available when:
+
+- The **No authentication** option is chosen.
+- The bot is connected to Dynamics 365 Customer Service.
 
 If you turn off this option, your bot won't ask users to sign in until it encounters a topic that requires them to.
 
