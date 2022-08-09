@@ -5,7 +5,7 @@ author: ashVancouver
 
 ms.subservice: guidance
 ms.topic: conceptual
-ms.date: 08/08/2022
+ms.date: 08/09/2022
 ms.author: ashwinrajuk
 ms.reviewer: deonhe
 search.audienceType: 
@@ -22,8 +22,6 @@ Microsoft Power Automate helps organizations to drive their digital journey. Aut
 It is our goal to empower everyone to use Power Automate to automate their processes with flows. Using low-code, drag-and-drop tools, and hundreds of pre-built connectors that automate repetitive, mundane tasks with ease, Power Automate empowers business users to build automation. Through lessons learnt and best practices observed from many customer engagements, we have curated a sequence of patterns across a progressive scale.
 
 The [Automation adoption best practices overview](https://aka.ms/autocoeblueprint) contains proven guidance for establishing and scaling an Automation Center of Excellence in your organization. The goal of the automation maturity model is to help organizations and their partners think through how they can improve their current capabilities and align them to business outcomes.
-
-<!--Todo The pngs are not displaying in the doc-->
 
 :::image type="content" source="media/autocoe.png" alt-text="The Automation CoE layer cake details the activities that various stakeholders would perform. The stakeholders considered here are citizen developers, automation CoE members, infrastructure ops, automation/M365 CoE team and executive sponsors.":::
 
