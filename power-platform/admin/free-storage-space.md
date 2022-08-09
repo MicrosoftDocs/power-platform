@@ -4,7 +4,7 @@ description: Methods for reducing storage space consumed.
 author: peakerbl 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/24/2022
+ms.date: 08/09/2022
 ms.subservice: admin
 ms.author: peakerbl  
 ms.reviewer: jimholtz
@@ -60,12 +60,16 @@ Use the following methods to free up storage for each of the capacity types.
   
 > [!WARNING]
 > If you delete this data, the attachments will no longer be available in customer engagement apps. However, if you have them saved in [!INCLUDE[pn_MS_Outlook_Full](../includes/pn-ms-outlook-full.md)], they will still be there.  
+
+1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com).
+
+2. Select **Environments**, select an environment from the list, and then select **Open**.
+
+3. In the upper-right corner, select **Advanced Find** (![Advanced find button.](media/advanced-find-button2.png)).  
   
-1. In the upper-right corner, select **Advanced Find** (![Advanced find button.](media/advanced-find-button2.png)).  
+4. In the **Look for** list, select **Email Messages**.  
   
-2. In the **Look for** list, select **Email Messages**.  
-  
-3. In the search criteria area, add criteria similar to the following:  
+5. In the search criteria area, add criteria similar to the following:  
   
    **Attachments (Item)**  
   
@@ -74,12 +78,12 @@ Use the following methods to free up storage for each of the capacity types.
    > [!div class="mx-imgBorder"] 
    > ![Free up storage method 3.](media/free-storage-method3a.png "Free up storage method 3")  
  
-4. Choose **Results**.  
+6. Choose **Results**.  
   
-5. You will now have a list of email messages that have attachments that are larger than 'X' bytes. Review the emails and delete the attachments as needed.  
+7. You will now have a list of email messages that have attachments that are larger than 'X' bytes. Review the emails and delete the attachments as needed.  
   
-> [!div class="mx-imgBorder"] 
-> ![Free up storage method 3.](media/free-storage-method3b.png "Free up storage method 3")  
+   > [!div class="mx-imgBorder"] 
+   > ![Free up storage method 3.](media/free-storage-method3b.png "Free up storage method 3")  
 
 ### Method 4: Remove email messages with attachments using a bulk deletion job  
   
@@ -87,8 +91,6 @@ Use the following methods to free up storage for each of the capacity types.
 > If you delete this data, the email messages and their associated attachments will no longer be available in customer engagement apps. However, if you have them saved in [!INCLUDE[pn_MS_Outlook_Full](../includes/pn-ms-outlook-full.md)], they will still be there.  
   
 1. In the Power Platform admin center, select an environment.
-
-   For [Unified Interface](about-unified-interface.md), in the upper-right corner select Settings (![Gear button.](media/selection-rule-gear.png "Gear button")) > **Advanced Settings** > **Settings**.
 
 2. Select **Settings** > **Data management** > **Bulk deletion**. In the menu bar, select **New**. This opens the Bulk Deletion Wizard.  
   
@@ -135,28 +137,32 @@ Use the following methods to free up storage for each of the capacity types.
 > [!WARNING]
 > If you delete this data, notes and their associated attachments will no longer be available in customer engagement apps.  
   
-1. In the upper-right corner, select **Advanced Find** (![Advanced find button.](media/advanced-find-button2.png)).  
+1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com).
+
+2. Select **Environments**, select an environment from the list, and then select **Open**.
+
+3. In the upper-right corner, select **Advanced Find** (![Advanced find button.](media/advanced-find-button2.png)).  
   
-2. In the **Look for** list, select **Notes**.  
+4. In the **Look for** list, select **Notes**.  
   
-3. In the search criteria area, add criteria similar to the following:  
+5. In the search criteria area, add criteria similar to the following:  
   
    **File Size (Bytes)** – **Is Greater Than** – In the text box, type a byte value, such as 1048576.  
 
    > [!div class="mx-imgBorder"] 
    > ![Free up storage method 5.](media/free-storage-method5a.png "Free up storage method 5")
   
-4. Choose **Results**.  
+6. Choose **Results**.  
   
-5. You will now have a list of attachments that are larger than the size you specified.  
+7. You will now have a list of attachments that are larger than the size you specified.  
   
    > [!div class="mx-imgBorder"] 
    > ![Free up storage method 5.](media/free-storage-method5b.png "Free up storage method 5")
 
-6. Select individual or a multiple attachments, and then choose **Delete** (X).  
+8. Select individual or a multiple attachments, and then choose **Delete** (X).  
   
-> [!div class="mx-imgBorder"] 
-> ![Free up storage method 5.](media/free-storage-method5c.png "Free up storage method 5")
+   > [!div class="mx-imgBorder"] 
+   > ![Free up storage method 5.](media/free-storage-method5c.png "Free up storage method 5")
 
 ### Method 6: Remove notes with attachments using a bulk deletion job  
   
@@ -164,8 +170,6 @@ Use the following methods to free up storage for each of the capacity types.
 > If you delete this data, notes and their associated attachments will no longer be available in customer engagement apps.  
   
 1. In the Power Platform admin center, select an environment.
-
-   For [Unified Interface](about-unified-interface.md), in the upper-right corner select Settings (![Gear button.](media/selection-rule-gear.png "Gear button")) > **Advanced Settings** > **Settings**.
 
 2. Select **Settings** > **Data management** > **Bulk deletion**. In the menu bar, select **New**. This opens the Bulk Deletion Wizard.  
   
@@ -214,17 +218,21 @@ Microsoft is migrating audit logs to a new storage location. Environments whose 
   
 > [!WARNING]
 > When you delete an audit log, you can no longer view the audit history for the period covered by that audit log.  
-  
-1. In the upper-right corner of an app, select Settings (![Gear button.](media/selection-rule-gear.png "Gear button"))  > **Advanced Settings** > **Settings** > **Auditing**.
 
-2. In the **Audit** area choose **Audit Log Management**.  
+1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com).
+
+2. Select **Environments**, select an environment from the list, and then select **Open**.
   
-3. Select the oldest audit log, then choose **Delete Logs**.  
+3. In the upper-right corner of an app, select **Settings** (![Gear button.](media/selection-rule-gear.png "Gear button"))  > **Advanced Settings** > **Settings** > **Auditing**.
+
+4. In the **Audit** area choose **Audit Log Management**.  
+  
+5. Select the oldest audit log, then choose **Delete Logs**.  
  
    > [!div class="mx-imgBorder"] 
    > ![Free up storage method 10.](media/free-storage-method10a.png "Free up storage method 10")  
  
-4. In the confirmation message choose **OK**.  
+6. In the confirmation message choose **OK**.  
   
 > [!NOTE]
 > You can only delete the oldest audit log in the system. To delete more than one audit log repeat deleting the oldest available audit log until you have deleted enough logs.  
@@ -264,8 +272,6 @@ To monitor the status of audit delete jobs, see the next section.
 
 1. In the Power Platform admin center, select an environment.
 
-   For [Unified Interface](about-unified-interface.md), in the upper-right corner select Settings (![Gear button.](media/selection-rule-gear.png "Gear button")) > **Advanced Settings** > **Settings**.
-
 2. Select **Settings** > **Data management** > **Bulk deletion**.
 
 3. Select the system job name to open details about your delete job.
@@ -279,8 +285,6 @@ To monitor the status of audit delete jobs, see the next section.
 > If you delete this data, you will no longer be able to tell if an email was sent through bulk email or if a workflow rule ran against a record. The emails that were sent and the actions that ran against the record in the workflow will remain.  
   
 1. In the Power Platform admin center, select an environment.
-
-   For [Unified Interface](about-unified-interface.md), in the upper-right corner select Settings (![Gear button.](media/selection-rule-gear.png "Gear button")) > **Advanced Settings** > **Settings**.
 
 2. Select **Settings** > **Data management** > **Bulk deletion**. In the menu bar, select **New**. This opens the Bulk Deletion Wizard.  
   
@@ -327,17 +331,21 @@ To monitor the status of audit delete jobs, see the next section.
 > [!WARNING]
 > Some workflows will be in a suspended state because they are waiting for a condition that has not yet been met, which is expected. For example, a workflow may be waiting for a task to be completed.  
   
-1. In the upper-right corner, select **Advanced Find** (![Advanced find button.](media/advanced-find-button2.png)).  
+1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com).
+
+2. Select **Environments**, select an environment from the list, and then select **Open**.
+
+3. In the upper-right corner, select **Advanced Find** (![Advanced find button.](media/advanced-find-button2.png)).  
   
-2. In the **Look for** list, select **System Jobs**.  
+4. In the **Look for** list, select **System Jobs**.  
   
-3. In the search criteria area, add criteria similar to the following:  
+5. In the search criteria area, add criteria similar to the following:  
   
    **System Job Type** – **Equals** – **Workflow**  
   
    **Status Reason** – **Equals** – **Waiting**  
   
-4. Group the two criteria rows:  
+6. Group the two criteria rows:  
   
    1. Choose the arrow next to each criteria row, and then choose **Select Row**.  
   
@@ -346,17 +354,15 @@ To monitor the status of audit delete jobs, see the next section.
       > [!div class="mx-imgBorder"] 
       > ![Free up storage method 2.](media/free-storage-method2b.png "Free up storage method 2")  
 
-5. Choose **Results**.  
+7. Choose **Results**.  
   
-6. In the results window, you can open each item to determine whether the workflow can be deleted.  
+8. In the results window, you can open each item to determine whether the workflow can be deleted.  
   
 ### Method 7: Remove bulk duplicate detection jobs and associated copies of duplicate records  
 
  Every time that a duplicate detection job runs, a copy of each duplicate record is stored in the database as part of the duplicate detection job. For example, if you have 100 duplicate records, every time that you run a duplicate detection job that finds these duplicates, whether it is manual or reoccurring, those 100 duplicate records will be stored in the database under that instance of that duplicate job until the duplicates are merged or deleted, or until the instance of that duplicate detection job is deleted.  
   
 1.	In the Power Platform admin center, select an environment.
-
-    For [Unified Interface](about-unified-interface.md), in the upper-right corner select Settings (![Gear button.](media/selection-rule-gear.png "Gear button")) > **Advanced Settings** > **Settings**.
 
 2.	Select **Settings** > **Data management** > **Duplicate Detection Jobs**.  
   
@@ -375,8 +381,6 @@ To monitor the status of audit delete jobs, see the next section.
 > After you delete these bulk import jobs, you will not be able to see what data was imported and you cannot roll back the import.  
   
 1.	In the Power Platform admin center, select an environment.
-
-    For [Unified Interface](about-unified-interface.md), in the upper-right corner select Settings (![Gear button.](media/selection-rule-gear.png "Gear button")) > **Advanced Settings** > **Settings**.
 
 2.	Select **Settings** > **Data management** > **Bulk deletion**. In the menu bar, select **New**. This opens the Bulk Deletion Wizard.  
   
@@ -424,8 +428,6 @@ To monitor the status of audit delete jobs, see the next section.
 > After you delete these jobs, you will lose the history of the prior bulk deletion jobs that you've run.  
   
 1. In the Power Platform admin center, select an environment.
-
-   For [Unified Interface](about-unified-interface.md), in the upper-right corner select Settings (![Gear button.](media/selection-rule-gear.png "Gear button")) > **Advanced Settings** > **Settings**.
 
 2. Select **Settings** > **Data management** > **Bulk deletion**. In the menu bar, select **New**. This opens the Bulk Deletion Wizard.  
   
