@@ -27,7 +27,7 @@ The [Automation adoption best practices overview](https://aka.ms/autocoeblueprin
 
 :::image type="content" source="media/autocoe.png" alt-text="The Automation CoE layer cake details the activities that various stakeholders would perform. The stakeholders considered here are citizen developers, automation CoE members, infrastructure ops, automation/M365 CoE team and executive sponsors.":::
 
-A successful automation implementation requires technology, process, and people to be aligned. The automation maturity model is inspired by HEAT – [Holistic Enterprise Automation Techniques](https://docs.microsoft.com/power-platform/guidance/automation-coe/heat) and the [Capability Maturity Model](https://cmmiinstitute.com/learning/appraisals/levels)
+A successful automation implementation requires technology, process, and people to be aligned. The automation maturity model is inspired by HEAT – [Holistic Enterprise Automation Techniques](heat.md) and the [Capability Maturity Model](https://cmmiinstitute.com/learning/appraisals/levels).
 
 :::image type="content" source="media/HEAT-Snap.png" alt-text="Diagram explains the various HEAT pillars.":::
 
@@ -100,4 +100,5 @@ The detailed Automation Maturity Model captures goals, indicators, and required 
 - [Automate It](https://aka.ms/AutomateIt)
 - [Holistic Enterprise Automation Techniques (HEAT)](https://aka.ms/rpapnp)
 - [RPA in a Day training](https://aka.ms/RPAinaDayPackage)
-- [Power Automate learn](https://docs.microsoft.com/learn/browse/?expanded=power-platform&amp;products=power-automate&amp;resource_type=learning%20path&amp;roles=maker")
+- [Power Automate learn](/learn/browse/?expanded=power-platform&amp%3Bproducts=power-automate&amp%3Bresource_type=learning%20path&amp%3Broles=maker)
+
