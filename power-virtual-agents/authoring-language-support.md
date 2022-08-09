@@ -58,11 +58,14 @@ Power Virtual Agents supports languages in three stages. The stage indicates how
 | ---------------------- | -------------------- |
 | Chinese (Simplified)   | Preview              |
 | Chinese (Traditional)  | Preview              |
+| Czech                  | Preview              |
 | Danish                 | General availability |
 | Dutch                  | General availability |
 | English                | General availability |
+| Finnish                | Preview              |
 | French                 | General availability |
 | German                 | General availability |
+| Greek                  | Preview              |
 | Hindi                  | Preview              |
 | Indonesian             | General availability |
 | Italian                | General availability |
@@ -74,6 +77,7 @@ Power Virtual Agents supports languages in three stages. The stage indicates how
 | Russian                | General availability |
 | Spanish                | General availability |
 | Swedish                | General availability |
+| Thai                   | Preview              |
 | Turkish                | General availability |
 
 ### See also
