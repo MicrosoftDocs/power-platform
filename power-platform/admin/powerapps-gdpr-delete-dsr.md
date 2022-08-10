@@ -302,13 +302,13 @@ Get-AdminConnectionRoleAssignment -PrincipalObjectId $deleteDsrUserId | Remove-A
 Custom Connectors supplement the existing out of box connectors and allow for connectivity to other APIs, SaaS and custom-developed systems. You may want to transfer Custom Connector ownership to other users in the organization or delete the Custom Connector.
 
 ### PowerShell cmdlets for app creators
-A user can delete all of their custom connectors by using the Remove-Connector function in the [PowerShell cmdlets for app creators](./powerapps-powershell.md):
+A user can delete all of their custom connectors by using the **Remove-ConnectionRoleAssignment** function in the [PowerShell cmdlets for app creators](./powerapps-powershell.md):
 
 ```powershell
 Add-PowerAppsAccount
 
 #Retrieves all custom connectors for the calling user and deletes them
-Get-Connector -FilterNonCustomConnectors | Remove-Connector
+Get-ConnectionRoleAssignment -FilterNonCustomConnectors | Remove-ConnectionRoleAssignment
 ```
 
 ### PowerShell cmdlets for admins
