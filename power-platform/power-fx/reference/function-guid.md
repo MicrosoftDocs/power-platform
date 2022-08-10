@@ -59,7 +59,7 @@ When used in a [behavior formula](/power-apps/maker/canvas-apps/working-with-for
 
 **GUID**( _Untyped_ )
 
-- _Untyped_ - Required. [**Untyped object**](untyped-object.md) that represents a GUID. Acceptable values are dependent on the untyped provider.  For [**JSON**](function-parsejson.md), the untyped object is expected to be GUID represented as a JSON string.
+- _Untyped_ - Required. [**Untyped object**](../untyped-object.md) that represents a GUID. Acceptable values are dependent on the untyped provider.  For [**JSON**](function-parsejson.md), the untyped object is expected to be GUID represented as a JSON string.
 
 ## Examples
 

@@ -47,7 +47,7 @@ To convert date and time values, use the [**DateValue**](function-datevalue-time
 
 **Value**( _Untyped_ )
 
-- _Untyped_ - Required. [**Untyped object**](untyped-object.md) that represents a number. Acceptable values are dependent on the untyped provider.  For [**JSON**](function-parsejson.md), the untyped object is expected to be a JSON number. Values inside of a string, such as `"15"` or `"12.5"`, are not accepted. Consider converting such untyped objects to [**Text**](function-text.md) first, then to a value. Keep in mind that locale-related formats are important considerations when communicating with external systems.
+- _Untyped_ - Required. [**Untyped object**](../untyped-object.md) that represents a number. Acceptable values are dependent on the untyped provider.  For [**JSON**](function-parsejson.md), the untyped object is expected to be a JSON number. Values inside of a string, such as `"15"` or `"12.5"`, are not accepted. Consider converting such untyped objects to [**Text**](function-text.md) first, then to a value. Keep in mind that locale-related formats are important considerations when communicating with external systems.
 
 ## Examples
 

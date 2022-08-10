@@ -68,7 +68,7 @@ Other elements include:
 
 **[Blank](reference/function-isblank-isempty.md)** – Returns a _blank_ value that can be used to insert a NULL value in a data source.
 
-**[Boolean](reference/function-boolean.md)** – Converts a text string, number, or untyped value to a Boolean value.
+**[Boolean](function-boolean.md)** – Converts a text string, number, or untyped value to a Boolean value.
 
 ## C
 

@@ -40,7 +40,7 @@ You can also create a single-column table with the **[ value1, value2, ... ]** s
 
 **Table**( _Untyped_ )
 
-- _Untyped_ - Required. [**Untyped object**](untyped-object.md) that represents a table or array. Acceptable values are dependent on the untyped provider.  For [**JSON**](function-parsejson.md), the untyped object is expected to be a JSON array. Note that regardless of the content type of the Untyped array, the resulting table will be a single-column table of Untyped objects.
+- _Untyped_ - Required. [**Untyped object**](../untyped-object.md) that represents a table or array. Acceptable values are dependent on the untyped provider.  For [**JSON**](function-parsejson.md), the untyped object is expected to be a JSON array. Note that regardless of the content type of the Untyped array, the resulting table will be a single-column table of Untyped objects.
 
 ## Examples
 

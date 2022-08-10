@@ -66,7 +66,7 @@ For more information, read:
 **DateTimeValue**( _Untyped_ )<br>
 **TimeValue**( _Untyped_ )
 
-- _Untyped_ - Required. [**Untyped object**](untyped-object.md) that represents a date or time. Acceptable values are dependent on the untyped provider.  For [**JSON**](function-parsejson.md), the untyped object is expected to be a JSON string that contains a date and time in ISO 8601 format. Dates or times in other formats will result in an error. Consider converting such values to [**Text**](function-text.md) first, then to a date or time. Keep in mind that time zones and locale-related formats are important considerations when communicating with external systems.
+- _Untyped_ - Required. [**Untyped object**](../untyped-object.md) that represents a date or time. Acceptable values are dependent on the untyped provider.  For [**JSON**](function-parsejson.md), the untyped object is expected to be a JSON string that contains a date and time in ISO 8601 format. Dates or times in other formats will result in an error. Consider converting such values to [**Text**](function-text.md) first, then to a date or time. Keep in mind that time zones and locale-related formats are important considerations when communicating with external systems.
 
 ## Examples
 

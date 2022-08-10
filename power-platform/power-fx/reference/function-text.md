@@ -160,7 +160,7 @@ By default, **Text** uses the language of the user running the app. The **Langua
 - _AnyValue_ - Required. Value to convert to a text representation. A default format is used.
 
 **Text** ( _Untyped_ )
-- _Untyped_ - Required. [**Untyped object**](untyped-object.md) that represents a string. Acceptable values are dependent on the untyped provider.  For [**JSON**](function-parsejson.md), the untyped object is expected to be a JSON string. Values not inside of a string, such as `false` or `12.5`, are not accepted. Consider converting such untyped objects to their respective types first, then to text.
+- _Untyped_ - Required. [**Untyped object**](../untyped-object.md) that represents a string. Acceptable values are dependent on the untyped provider.  For [**JSON**](function-parsejson.md), the untyped object is expected to be a JSON string. Values not inside of a string, such as `false` or `12.5`, are not accepted. Consider converting such untyped objects to their respective types first, then to text.
 
 ## Examples
 

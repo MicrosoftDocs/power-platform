@@ -17,10 +17,10 @@ contributors:
   - jorisdg
 ---
 # ParseJSON function in Power Apps
-Interprets a JSON string and returns an [untyped object](untyped-object.md).
+Interprets a JSON string and returns an [untyped object](../untyped-object.md).
 
 ## Description
-The ParseJSON function will parse a valid JSON string and return an [untyped object](untyped-object.md) representing the JSON structure. 
+The ParseJSON function will parse a valid JSON string and return an [untyped object](../untyped-object.md) representing the JSON structure. 
 
 The ParseJSON function may return errors if the text is not valid JSON according to the JavaScript Object Notation (JSON) format described in [ECMA-404](https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf) and [IETF RFC 8259](https://tools.ietf.org/html/rfc8259).
 
@@ -33,7 +33,7 @@ Any JSON array becomes a single-column table of **untyped object**, even if the 
 * *JSONString* – Required. The JSON structure represented as text.
 
 ## Converting Untyped Object Data Type
-ParseJSON returns an [untyped object](untyped-object.md) which requires explicit conversion of field values in supported data types. The following table lists the [data types](data-types.md) in Power Apps and a corresponding JSON data type and how to convert it.
+ParseJSON returns an [untyped object](../untyped-object.md) which requires explicit conversion of field values in supported data types. The following table lists the [data types](data-types.md) in Power Apps and a corresponding JSON data type and how to convert it.
 
 | Data Type | JSON Examples | Description  | Example Conversion |
 | --- | --- | --- | --- |
