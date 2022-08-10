@@ -12,6 +12,8 @@
           href: global.md
         - name: Data types
           href: data-types.md 
+        - name: Untyped objects
+          href: untyped-object.md
         - name: Imperatives
           href: imperative.md
         - name: Operators
@@ -384,8 +386,6 @@
             href: reference/function-groupby.md
           - name: Unrelate
             href: reference/function-relate-unrelate.md
-          - name: Untyped Object
-            href: reference/untyped-object.md
           - name: Update
             href: reference/function-update-updateif.md
           - name: UpdateContext
