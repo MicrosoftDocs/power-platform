@@ -145,7 +145,7 @@ Once you've removed unmanaged layers, you can import the new solution version:
 
 1. [Import the solution](faq.md#installing-a-solution-in-a-production-environment).
  
-1. Select **Upgrade** (default setting). [Solution upgrades](/alm/solution-concepts-alm#solution-lifecycle) will delete components that existed but are no longer included in the upgraded version.
+1. Select **Upgrade** (default setting). [Solution upgrades](/power-platform/alm/solution-concepts-alm#solution-lifecycle) will delete components that existed but are no longer included in the upgraded version.
  
    ![Select upgrade to install the new solution version](media/coe-upgrade1.png "Select upgrade to install the new solution version")
     
