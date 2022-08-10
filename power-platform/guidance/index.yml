@@ -74,6 +74,8 @@ landingContent:
             url: ./automation-coe/overview.md
           - text: Holistic Enterprise Automation Techniques (HEAT)
             url: ./automation-coe/heat.md
+          - text: Automation Maturity Model
+            url: ./automation-coe/automation-maturity-model-overview.md
        - linkListType: how-to-guide
          links:
           - text: Automation admin and governance
