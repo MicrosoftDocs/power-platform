@@ -91,4 +91,4 @@ ForAll( Table(UORecordArray), { FirstField: Value(ThisRecord.Value.FirstField), 
 ```
 
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
