@@ -2,7 +2,7 @@
 title: "Add user authentication to chatbot topics"
 description: "Insert user authentication into a topic to allow your users to sign in directly within a conversation."
 keywords: "User Authentication, Authentication, AAD, MSA, Identity Provider, PVA"
-ms.date: 2/11/2020
+ms.date: 08/11/2022
 
 ms.topic: article
 author: iaanw
