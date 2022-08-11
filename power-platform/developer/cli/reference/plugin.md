@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: kkanakas
 ms.author: kartikka
-ms.date: 8/4/2022
+ms.date: 8/11/2022
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -39,12 +39,6 @@ Initializes a directory with a new Dataverse plugin class library.
 
 ### Optional Parameters
 
-#### `--add-signing` `-s`
-
-Add signing key to plugin project. Default value is 'false'
-
-This parameter requires no value. It is a switch.
-
 #### `--author` `-a`
 
 Author(s) of the Dataverse Plug-in Package.
@@ -56,6 +50,12 @@ Output directory
 #### `--signing-key-file-path` `-sk`
 
 Relative path to the Dataverse plugin assembly originator key file for signing.
+
+#### `--skip-signing` `-ss`
+
+Skip plug-in assembly signing which gives plug-in assembly strong name. Default value is 'false'
+
+This parameter requires no value. It is a switch.
 
 [!INCLUDE [plugin-init-remarks](includes/plugin-init-remarks.md)]
 

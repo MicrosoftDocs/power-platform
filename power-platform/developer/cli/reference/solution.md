@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: kkanakas
 ms.author: kartikka
-ms.date: 8/4/2022
+ms.date: 8/11/2022
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -40,6 +40,7 @@ Commands for working with Dataverse solution projects
 |[pac solution online-version](#pac-solution-online-version)|Sets version for solution loaded in Dataverse environment.|
 |[pac solution pack](#pac-solution-pack)|Package solution components on local filesystem into solution.zip (SolutionPackager)|
 |[pac solution publish](#pac-solution-publish)|Publishes all customizations|
+|[pac solution sync](#pac-solution-sync)|Sync the current Dataverse solution project to the current state of the solution in your Organization.|
 |[pac solution unpack](#pac-solution-unpack)|Extract solution components from solution.zip onto local filesystem (SolutionPackager)|
 |[pac solution upgrade](#pac-solution-upgrade)|Option to stage the Dataverse solution for upgrade|
 |[pac solution version](#pac-solution-version)|Update build or revision version for solution|
@@ -226,6 +227,16 @@ Max asynchronous wait time in minutes. Default value is 60 minutes
 #### `--outputDirectory` `-o`
 
 Output directory
+
+#### `--packagetype` `-p`
+
+When unpacking/extracting, use to specify dual Managed and Unmanaged operation. When packing, use to specify Managed or Unmanaged from a previous unpack 'Both'. Can be: 'Unmanaged', 'Managed' or 'Both'; default: 'Unmanaged'
+
+#### `--processCanvasApps` `-pca`
+
+(Preview) Pack/unpack any Canvas apps (.msapp) while processing the solution. default: false
+
+This parameter requires no value. It is a switch.
 
 #### `--targetversion` `-v`
 
@@ -587,6 +598,59 @@ This parameter requires no value. It is a switch.
 Max asynchronous wait time in minutes. Default value is 60 minutes
 
 [!INCLUDE [solution-publish-remarks](includes/solution-publish-remarks.md)]
+
+## pac solution sync
+
+Sync the current Dataverse solution project to the current state of the solution in your Organization.
+
+[!INCLUDE [solution-sync-intro](includes/solution-sync-intro.md)]
+
+
+### Optional Parameters
+
+#### `--async` `-a`
+
+Exports solution asynchronously
+
+This parameter requires no value. It is a switch.
+
+#### `--include` `-i`
+
+Which settings should be included in the solution being exported
+
+Use one or more of these values separated by commas:
+
+- `autonumbering`
+- `calendar`
+- `customization`
+- `emailtracking`
+- `externalapplications`
+- `general`
+- `isvconfig`
+- `marketing`
+- `outlooksynchronization`
+- `relationshiproles`
+- `sales`
+
+#### `--max-async-wait-time` `-wt`
+
+Max asynchronous wait time in minutes. Default value is 60 minutes
+
+#### `--packagetype` `-p`
+
+When unpacking/extracting, use to specify dual Managed and Unmanaged operation. When packing, use to specify Managed or Unmanaged from a previous unpack 'Both'. Can be: 'Unmanaged', 'Managed' or 'Both'; default: 'Unmanaged'
+
+#### `--processCanvasApps` `-pca`
+
+(Preview) Pack/unpack any Canvas apps (.msapp) while processing the solution. default: false
+
+This parameter requires no value. It is a switch.
+
+#### `--solution-folder` `-f`
+
+Path to the local, unpacked solution folder: either the root of the 'Other/Solution.xml' file or a folder with a .cdsproj file.
+
+[!INCLUDE [solution-sync-remarks](includes/solution-sync-remarks.md)]
 
 ## pac solution unpack
 

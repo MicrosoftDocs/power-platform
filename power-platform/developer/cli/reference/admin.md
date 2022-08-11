@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: kkanakas
 ms.author: kartikka
-ms.date: 8/4/2022
+ms.date: 8/11/2022
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -32,6 +32,7 @@ Work with your PowerPlatform Admin Account
 |[pac admin create](#pac-admin-create)|Creates a Dataverse Environment in your tenant.|
 |[pac admin delete](#pac-admin-delete)|Deletes Environment from your tenant|
 |[pac admin list](#pac-admin-list)|List all environments from your tenant|
+|[pac admin list-app-templates](#pac-admin-list-app-templates)|Lists all supported Dataverse database templates of model-driven apps in Dynamics 365.|
 |[pac admin list-backups](#pac-admin-list-backups)|Lists all backups of your environment.|
 |[pac admin reset](#pac-admin-reset)|Reset environment from your tenant|
 |[pac admin restore](#pac-admin-restore)|Restores an environment to a given backup.|
@@ -285,6 +286,21 @@ Use one of these values:
 
 **Deprecated**: Use `--environment` instead.
 [!INCLUDE [admin-list-remarks](includes/admin-list-remarks.md)]
+
+## pac admin list-app-templates
+
+Lists all supported Dataverse database templates of model-driven apps in Dynamics 365.
+
+[!INCLUDE [admin-list-app-templates-intro](includes/admin-list-app-templates-intro.md)]
+
+
+### Optional Parameters
+
+#### `--region` `-r`
+
+Sets the environment's region name. [defaults to unitedstates]
+
+[!INCLUDE [admin-list-app-templates-remarks](includes/admin-list-app-templates-remarks.md)]
 
 ## pac admin list-backups
 
