@@ -492,11 +492,11 @@ The ExchangeSyncIdMappingBase table contains references between Dynamics 365 rec
 Additional rows are stored in this table to help with troubleshooting the synchronization of specific items. For additional information, see [Troubleshoot item level Server-Side Synchronization issues with Microsoft Dynamics 365](/troubleshoot/dynamics-365/sales/troubleshoot-item-level-server-side-synchronization-issues). This article provides details regarding how you can reduce the default duration (3 days) of how long these troubleshooting records exist. This troubleshooting feature can also be disabled. Rows unrelated to this feature cannot be deleted and are required for Appointment, Contact, and Task synchronization.
 
 ### Method 15: Remove unrequired Alerts (trace logs)
-The [Server-Side Synchronization](/power-platform/admin/server-side-synchronization) feature logs alerts when different events occur such as a mailbox encountering an error or warning. There are also informational alerts logged when you enable a mailbox. You can view these Alerts when you view a Mailbox or Email Server profile within the Email Configuration area of Advanced Settings. While these records appear in a tab called Alerts, these are actually Trace records. To free space consumed by these Alerts, you can delete any Trace records which are no longer required. Trace records can be deleted within the Alerts tab of an Email Server Profile or Mailbox record. They can also be deleted using Advanced Find or a [Bulk Delete](power-platform/admin/delete-bulk-records) job. 
+The [Server-Side Synchronization](server-side-synchronization.md) feature logs alerts when different events occur such as a mailbox encountering an error or warning. There are also informational alerts logged when you enable a mailbox. You can view these Alerts when you view a Mailbox or Email Server profile within the Email Configuration area of Advanced Settings. While these records appear in a tab called Alerts, these are actually Trace records. To free space consumed by these Alerts, you can delete any Trace records which are no longer required. Trace records can be deleted within the Alerts tab of an Email Server Profile or Mailbox record. They can also be deleted using Advanced Find or a [Bulk Delete](delete-bulk-records.md) job. 
 
-You can also configure which levels of alerts are logged. See [System Settings Email tab](/power-platform/admin/system-settings-dialog-box-email-tab).
+You can also configure which levels of alerts are logged. See [System Settings Email tab](system-settings-dialog-box-email-tab.md).
 
-## Free up storage used by flow approvals
+## Free up storage used by flow approvals 
 
 See [Delete approval history from Power Automate](/power-automate/gdpr-dsr-delete#delete-approval-history-from-power-automate).
 
