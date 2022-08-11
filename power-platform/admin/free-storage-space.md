@@ -4,10 +4,12 @@ description: Methods for reducing storage space consumed.
 author: peakerbl 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/09/2022
+ms.date: 08/11/2022
 ms.subservice: admin
 ms.author: peakerbl  
 ms.reviewer: jimholtz
+contributors:
+  - DanaMartens
 search.audienceType: 
   - admin
 search.app:
@@ -36,23 +38,24 @@ Use the following methods to free up storage for each of the capacity types.
 | Storage | Affected Table(s) |  Method |
 |---------|---------|---------|
 |**File**     |        | |
-|     | Attachment | **Method 3**: Remove email attachments using Advanced Find         |
-|     | Attachment, ActivityPointerBase | **Method 4**: Remove email messages with attachments using a bulk deletion job        | 
-|     | Attachment, AnnotationBase  | **Method 5**: Remove notes with attachments using Advanced Find        | 
-|     | Attachment, AnnotationBase  | **Method 6**: Remove notes with attachments using a bulk deletion job        | 
+|     | Attachment | **[Method 3](#method-3-remove-email-attachments-using-advanced-find)**: Remove email attachments using Advanced Find         |
+|     | Attachment | **[Method 4](#method-4-remove-email-messages-with-attachments-using-a-bulk-deletion-job)**: Remove email messages with attachments using a bulk deletion job        | 
+|     | Attachment  | **[Method 5](#method-5-remove-notes-with-attachments-using-advanced-find)**: Remove notes with attachments using Advanced Find        | 
+|     | Attachment  | **[Method 6](#method-6-remove-notes-with-attachments-using-a-bulk-deletion-job)**: Remove notes with attachments using a bulk deletion job        | 
 |**Log**     |         | |
-|     | AuditBase | **Method 10**: Delete audit logs        | 
+|     | AuditBase | **[Method 10](#method-10-delete-audit-logs---legacy-process)**: Delete audit logs        | 
 |     | PluginTraceLogBase | Delete plug-in trace logs using a [bulk deletion job](delete-bulk-records.md) | 
 |**Database**     |         | |
-|     | WorkflowLogBase | **Method 1**: Delete bulk email and workflow instances using a bulk deletion job        | 
-|     | AsyncOperationBase | **Method 2**: Evaluate and delete suspended workflows        | 
-|     | DuplicateRecordBase| **Method 7**: Remove bulk duplicate detection jobs and associated copies of duplicate records        |
-|     | ImportJobBase | **Method 8**: Delete bulk import instances using a bulk deletion job        | 
-|     | BulkDeleteOperationBase| **Method 9**: Delete bulk deletion job instances using a bulk deletion job        | 
-|     | various | **Method 11**: Remove unrequired tables and columns from Dataverse search        | 
-|     | ActivityPointerBase, EmailBase, ActivityPartyBase, and other activity tables | **Method 12**: Remove unrequired data from activity tables |
-|     | Postbase, PostCommentBase, PostFollowBase, PostLikeBase, PostRegardingBase, PostRoleBase  | **Method 13**: Remove unrequired Activity Feeds records |
-|     | ExchangeSyncIdMappingBase  | **Method 14**: Modify Item Level Monitoring Settings |
+|     | WorkflowLogBase | **[Method 1](#method-1-delete-bulk-email-and-workflow-instances-using-a-bulk-deletion-job)**: Delete bulk email and workflow instances using a bulk deletion job        | 
+|     | AsyncOperationBase | **[Method 2](#method-2-evaluate-and-delete-suspended-workflows)**: Evaluate and delete suspended workflows        | 
+|     | DuplicateRecordBase| **[Method 7](#method-7-remove-bulk-duplicate-detection-jobs-and-associated-copies-of-duplicate-records)**: Remove bulk duplicate detection jobs and associated copies of duplicate records        |
+|     | ImportJobBase | **[Method 8](#method-8-delete-bulk-import-instances-using-a-bulk-deletion-job)**: Delete bulk import instances using a bulk deletion job        | 
+|     | BulkDeleteOperationBase| **[Method 9](#method-9-delete-bulk-deletion-job-instances-using-a-bulk-deletion-job)**: Delete bulk deletion job instances using a bulk deletion job        | 
+|     | various | **[Method 11](#method-11-remove-unrequired-tables-and-columns-from-dataverse-search)**: Remove unrequired tables and columns from Dataverse search        | 
+|     | ActivityPointerBase, EmailBase, ActivityPartyBase, and other activity tables | **[Method 12](#method-12-remove-unrequired-data-from-activity-tables)**: Remove unrequired data from activity tables |
+|     | Postbase, PostCommentBase, PostFollowBase, PostLikeBase, PostRegardingBase, PostRoleBase  | **[Method 13](#method-13-remove-unrequired-activity-feeds-records)**: Remove unrequired Activity Feeds records |
+|     | ExchangeSyncIdMappingBase  | **[Method 14](#method-14-modify-item-level-monitoring-settings)**: Modify Item Level Monitoring Settings |
+|     | TraceLogBase  | **[Method 15](#method-15-remove-unrequired-alerts-trace-logs)**: Remove unrequired Trace (Alert) records |
 
 ## Reduce file storage
 
@@ -487,6 +490,11 @@ These tables store post related records for [Activity Feeds](/dynamics365/custom
 The ExchangeSyncIdMappingBase table contains references between Dynamics 365 records and the corresponding records in Microsoft Exchange. This table is used by the Server-Side Synchronization feature which enables synchronization of emails, appointments, contacts, and tasks between Dynamics 365 and Microsoft Exchange. 
 
 Additional rows are stored in this table to help with troubleshooting the synchronization of specific items. For additional information, see [Troubleshoot item level Server-Side Synchronization issues with Microsoft Dynamics 365](/troubleshoot/dynamics-365/sales/troubleshoot-item-level-server-side-synchronization-issues). This article provides details regarding how you can reduce the default duration (3 days) of how long these troubleshooting records exist. This troubleshooting feature can also be disabled. Rows unrelated to this feature cannot be deleted and are required for Appointment, Contact, and Task synchronization.
+
+### Method 15: Remove unrequired Alerts (trace logs)
+The [Server-Side Synchronization](/power-platform/admin/server-side-synchronization) feature logs alerts when different events occur such as a mailbox encountering an error or warning. There are also informational alerts logged when you enable a mailbox. You can view these Alerts when you view a Mailbox or Email Server profile within the Email Configuration area of Advanced Settings. While these records appear in a tab called Alerts, these are actually Trace records. To free space consumed by these Alerts, you can delete any Trace records which are no longer required. Trace records can be deleted within the Alerts tab of an Email Server Profile or Mailbox record. They can also be deleted using Advanced Find or a [Bulk Delete](power-platform/admin/delete-bulk-records) job. 
+
+You can also configure which levels of alerts are logged. See [System Settings Email tab](/power-platform/admin/system-settings-dialog-box-email-tab).
 
 ## Free up storage used by flow approvals
 
