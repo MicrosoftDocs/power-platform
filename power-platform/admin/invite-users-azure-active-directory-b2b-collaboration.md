@@ -156,7 +156,7 @@ Follow these steps to allow B2B collaboration users to create Power Apps.
 
 After the B2B guest users are given the required permissions to create and edit apps, they can now create Power Apps and Microsoft List [custom forms](/powerapps/maker/canvas-apps/customize-list-form#open-the-form) using Power Apps.
 
-4. B2B guests can [follow these steps](https://docs.microsoft.com/power-apps/maker/canvas-apps/intro-maker-portal#sign-in-using-azure-b2b-collaboration-preview) to sign in the preferred Azure AD tenant to build apps. 
+4. B2B guests can [follow these steps](/power-apps/maker/canvas-apps/intro-maker-portal) to sign in the preferred Azure AD tenant to build apps.   
 
 ### Known limitations
 1. To sign in to make.powerapps.com via Azure B2B, a user is required to sign in to an Azure Active Directory tenant. Microsoft Accounts (for example user@outlook.com, user@live.com, user@hotmail.com) cannot directly sign in to https://make.powerapps.com.
