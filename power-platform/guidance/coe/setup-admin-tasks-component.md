@@ -120,6 +120,18 @@ The following table illustrates the purpose for each column:
 
 The Power BI dashboard provides visualizations and insights into what your administration story looks like based on your task metadata. Providing insights into: your team structure, automation and outsourcing impact, proactive/ reactive task balance, persona and experience requirements. Follow the steps outlined to setup your dashboard.
 
-### Get
+### Configure the Power BI dashboard
+
+You can configure and modify the Power BI dashboard by working directly with the Power BI (.pbit) file and Power BI Desktop.  Using Power BI desktop gives you flexibility to modify the dashboard to your own branding and include or exclude visuals that you want to see in the the dashboard.
+
+1. Download and install [Microsoft Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=58494)
+
+1. In Power BI Desktop, open the .pbit file, which can be found in the CoE Starter Kit you downloaded from [aka.ms/CoEStarterKitDownload](https://aka.ms/CoEStarterKitDownload). The template file title is **PowerPlatformAdminPlanner.pbit**
+
+1. CONNECT <!TBD>
+
+1. Save the dashboard locally, or select **Publish** and choose the workspace you want to publish the report to.
+
+1. [Configure scheduled refresh](/power-bi/connect-data/refresh-data#configure-scheduled-refresh) for your Power BI Dataset to update the report daily.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
