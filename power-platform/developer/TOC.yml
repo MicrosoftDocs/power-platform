@@ -38,8 +38,6 @@
             href: cli\reference\pcf.md
           - name: pac plugin
             href: cli\reference\plugin.md
-          - name: pac portal
-            href: cli\reference\portal.md
           - name: pac solution
             href: cli\reference\solution.md
           - name: pac telemetry

@@ -33,7 +33,6 @@ Use the includes/index-intro.md or includes/index-remarks.md files to add additi
 |[pac paportal](paportal.md)|Commands for working with PowerApps portal website|
 |[pac pcf](pcf.md)|Commands for working with PowerApps component framework projects|
 |[pac plugin](plugin.md)|Commands for working with Dataverse plugin class library|
-|[pac portal](portal.md)|Commands for working with PowerApps Studio online service|
 |[pac solution](solution.md)|Commands for working with Dataverse solution projects|
 |[pac telemetry](telemetry.md)|Manage telemetry settings|
 
