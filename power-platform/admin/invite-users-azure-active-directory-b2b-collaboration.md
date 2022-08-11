@@ -149,12 +149,14 @@ Follow these steps to allow B2B collaboration users to create Power Apps.
     Set-TenantSettings $requestBody 
     ```
 
-3. Assign the [Environment Maker](database-security.md) security role to the B2B guest users that you want to be able to create custom list forms using Power Apps.
+3. Assign the [Environment Maker](database-security.md) security role to the B2B guest users that you want to be able to create apps and Microsoft list custom forms using Power Apps.
 
     > [!TIP]
-    > In addition, you can also review all other members of this security role (especially in the default environment), and remove users that aren't expected to have this privilege.
+    > In addition, you can also review all other guests of this security role (especially in the default environment), and remove users that aren't expected to have this privilege.
 
 After the B2B guest users are given the required permissions to create and edit apps, they can now create Power Apps and Microsoft List [custom forms](/powerapps/maker/canvas-apps/customize-list-form#open-the-form) using Power Apps.
+
+4. B2B guests can [follow these steps](/power-apps/maker/canvas-apps/intro-maker-portal) to sign in the preferred Azure AD tenant to build apps.   
 
 ### Known limitations
 1. To sign in to make.powerapps.com via Azure B2B, a user is required to sign in to an Azure Active Directory tenant. Microsoft Accounts (for example user@outlook.com, user@live.com, user@hotmail.com) cannot directly sign in to https://make.powerapps.com.
