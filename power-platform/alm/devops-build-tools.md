@@ -74,7 +74,7 @@ In addition to what Power Platform Build Tools provide, version 2.0 of Power Pla
 Power Platform Build Tools version 0.* , as in the first release, is based on PowerShell. Going forward Power Platform Build Tools 2.0 is the version that will be serviced and newer features added. 
 For previous versions of Power Platform Build Tools, we will do critical security updates as needed. We would highly recommend that customers move to Power Platform Build Tools version 2.0 at their earliest.
 
-> [!IMPORTAN]
+> [!IMPORTANT]
 > You cannot mix and match task versions for Power Platform Build Tools in your build pipeline.
 
 ## Get Microsoft Power Platform Build Tools
