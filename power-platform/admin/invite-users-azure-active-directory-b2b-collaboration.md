@@ -168,7 +168,11 @@ After the B2B guest users are given the required permissions to create and edit 
  [Azure Active Directory B2B collaboration frequently-asked questions (FAQ)](/azure/active-directory/active-directory-b2b-faq)   
  [Azure Active Directory B2B Collaboration](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)   
  [Azure AD B2B: New updates make cross-business collab easy](https://blogs.technet.microsoft.com/enterprisemobility/2017/02/01/azure-ad-b2b-new-updates-make-cross-business-collab-easy/)
-
-[Share a canvas app with guest users](/powerapps/maker/canvas-apps/share-app-guests)
+ 
+ [Azure Active Directory cross-tenant access overview](https://docs.microsoft.com/azure/active-directory/external-identities/cross-tenant-access-overview)
+ 
+ [Restrict cross-tenant inbound and outbound access](https://docs.microsoft.com/power-platform/admin/cross-tenant-restrictions)
+ 
+ [Share a canvas app with guest users](/powerapps/maker/canvas-apps/share-app-guests)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
