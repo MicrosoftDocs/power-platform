@@ -35,7 +35,7 @@ The Power Platform Administration Planning component contains:
 
 Install the solution following the steps below:
 
-## Import the core components solution
+## Import the Power Platform Administration Planning component solution
 
 1. Download the CoE Starter Kit compressed file ([aka.ms/CoeStarterKitDownload](https://aka.ms/CoeStarterKitDownload)).
 
@@ -43,25 +43,23 @@ Install the solution following the steps below:
     > **Extract the zip file** after downloading and before moving on to the next step. The CoE Starter Kit compressed file contains all solution components in addition to the non–solution-aware components that make up the CoE Starter Kit.
 
 1. Import the solution:
-    1. If you're [installing to a production environment](faq.md#installing-a-solution-in-a-production-environment), use the CenterOfExcellenceCoreComponents_x_x_x_xx_managed.zip solution file from the download.
-
-1. Update environment variable values by using the [relevant information](#gather-environment-variable-values). The environment variables are used to store application and flow configuration data with data specific to your organization or environment. This means that you only have to set the value once per environment and it will be used in all necessary flows and apps in that environment. All the flows in the solution depend on all environment variables' being configured.
+    1. If you're [installing to a production environment](faq.md#installing-a-solution-in-a-production-environment), use the PowerPlatformAdministrationPlanning_x_x_x_xx_managed.zip solution file from the download.
 
 The import can take up to 15 minutes to be completed.
 
 >[!NOTE]
->The next steps walk you through turning on the Import-SampleTaskData cloud flow.
+>The next steps are optional, if you want to import sample task data (recommended).
 
 ## Importing sample admin task data
 
-If you're getting started or simply want to populate the solution with common administrative tasks, then you should import data from the sample admin tasks spreadsheet.
+If you're getting started or want to populate the solution with common administrative tasks, then import data from the sample admin tasks spreadsheet.
 
 ### Extending the Power Platform administration planning solution
 
 Power Platform administration planning is a 'managed solution'. The following instructions create an unmanaged solution that contains your configuration changes.  Read ['Extend and customize CoE Starter kit'](/power-platform/guidance/coe/modify-components) document to learn more about extending components of the CoE Starter Kit.
 
-1. Create a solution. In solution explorer select **'+ New solution'**
-1. Complete the **Display name** and **Name** fields, then select a **Publisher** (or create one)
+1. [Create a solution](power-apps/maker/data-platform/create-solution).
+1. Complete the **Display name** and **Name** fields, then select a **Publisher** (or [create a solution publisher](power-apps/maker/data-platform/create-solution#solution-publisher))
 1. When the solution has been created, open it, then select **'Cloud flows'** > **Add existing** > **Automation** > **Cloud flow** > Select the **Import-SampleTaskData** Cloud flow > **Add**
 1. Select *...* > **Edit** > **Edit**
 1. Expand the second action, labeled **'List rows present in a table'** and update the following parameters:
@@ -106,23 +104,23 @@ The following table illustrates the purpose for each column:
 | Outsourced task | Choice | 'Yes' / 'No' - Is the task outsourced? |
 | Automation | Choice | 'Yes' / 'No' - Is the task automated? |
 | Owner | User | User that created the record. |
-| Frequency | Choice | Choice of daily, weekly, monthly, ad-hoc, etc | 
+| Frequency | Choice | Choice of daily, weekly, monthly, ad-hoc. | 
 | Anticipated task iterations | Number | How many times do you believe the task will be performed in one year? **This column is managed by a business rule calculating the number of iterations for you, unless you select 'Ad-hoc'**|
 | Duration | Number | How many minutes will the task take to complete? |
 | Experience required | Choice | What level of experience is required to complete the task. |
 | Core admin persona | Choice | Who in the core team will primarily perform the task (for example: Environment Admin, Product Owner). |
-| Peripheral admin persona | Choice | Who else is required to complete the task (e.g. Azure AD Administrator, SharePoint Administrator, etc.) |
-| Primary task category | Choice | Select a category that the task predominantly fits into (e.g. reporting, security, etc.) |
-| Secondary task category | Choice | Select a second category that the task predominantly fits into (e.g. Capacity, Performance, etc.)  |
+| Peripheral admin persona | Choice | Who else is required to complete the task (for example: Azure AD Administrator, SharePoint Administrator). |
+| Primary task category | Choice | Select a category that the task predominantly fits into (for example: reporting, security, etc.) |
+| Secondary task category | Choice | Select a second category that the task predominantly fits into (for example: Capacity, Performance)  |
 | Product or service | Choice | Select the Power Platform Product or service |
 
-## Setup the Power BI dashboard
+## Set up the Power BI dashboard
 
-The Power BI dashboard provides visualizations and insights into what your administration story looks like based on your task metadata. Providing insights into: your team structure, automation and outsourcing impact, proactive/ reactive task balance, persona and experience requirements. Follow the steps outlined to setup your dashboard.
+The Power BI dashboard provides visualizations and insights into what your administration story looks like based on your task metadata. Providing insights into: your team structure, automation and outsourcing gains, proactive/ reactive task balance, persona and experience requirements. Follow the steps outlined to set up your dashboard.
 
 ### Configure the Power BI dashboard
 
-You can configure and modify the Power BI dashboard by working directly with the Power BI (.pbit) file and Power BI Desktop.  Using Power BI desktop gives you flexibility to modify the dashboard to your own branding and include or exclude visuals that you want to see in the the dashboard.
+You can configure and modify the Power BI dashboard by working directly with the Power BI (.pbit) file and Power BI Desktop.  Using Power BI desktop gives you flexibility to modify the dashboard to your own branding and include or exclude visuals that you want to see in the dashboard.
 
 1. Download and install [Microsoft Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=58494)
 
