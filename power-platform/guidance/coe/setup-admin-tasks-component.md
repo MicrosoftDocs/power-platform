@@ -26,7 +26,7 @@ If your organization is just getting started, or already using Power Platform, d
 - Plan your team structure.
 - Expose opportunities for automation and innovation.
 
-The Power Platform Administration Planning component contains the following:
+The Power Platform Administration Planning component contains:
 
 - Dataverse table
 - Model driven app
@@ -54,22 +54,22 @@ The import can take up to 15 minutes to be completed.
 
 ## Importing sample admin task data
 
-If you are getting started or simply want to populate the solution with common administrative tasks, then you should import data from the sample admin tasks spreadsheet.
+If you're getting started or simply want to populate the solution with common administrative tasks, then you should import data from the sample admin tasks spreadsheet.
 
 ### Extending the Power Platform administration planning solution
 
-The Power Platform administration planning solution is managed.  This means, making changes will create an unmanaged layer.  The steps outlined here walk through creating an unmanaged solution that contains your configuration changes.
+Power Platform administration planning is a 'managed solution'. The following instructions create an unmanaged solution that contains your configuration changes.  Read ['Extend and customize CoE Starter kit'](/power-platform/guidance/coe/modify-components) document to learn more about extending components of the CoE Starter Kit.
 
 1. Create a solution. In solution explorer select **'+ New solution'**
 1. Complete the **Display name** and **Name** fields, then select a **Publisher** (or create one)
 1. When the solution has been created, open it, then select **'Cloud flows'** > **Add existing** > **Automation** > **Cloud flow** > Select the **Import-SampleTaskData** Cloud flow > **Add**
 1. Select *...* > **Edit** > **Edit**
 1. Expand the second action, labeled **'List rows present in a table'** and update the following parameters:
-    1. Location: the root location that you have copied the 'Sample-task-data.xlsx' spreadsheet to (e.g. SharePoint Site URL, OneDrive for Business')
+    1. Location: the root location that you copied the 'Sample-task-data.xlsx' spreadsheet to (for example: SharePoint Site URL, OneDrive for Business')
     1. Document library: the document library that you copied the 'Sample-task-data.xlsx' file to
     1. File: Select the file
     1. Table: Set to Table1
-  1. Select **Save**
+1. Select **Save**
 
 Screenshot:
 ![Launch the admin tasks app](media/Import-SampleTaskData-CloudFlow.png "Launch the Admin tasks app")
@@ -93,27 +93,27 @@ Launch the Admin tasks app to start adding your own, or configuring tasks that y
 
 ### Configuring and creating tasks
 
-The dashboard and insights this solution provides derive from admin task data which you interact with via the Admin tasks app.
+The dashboard and insights this solution provides derive from admin task data that you interact with via the Admin tasks app.
 
 The following table illustrates the purpose for each column:
 
 |Column   |Type | Purpose |
 |----------|-----------|---|
-|Name   | Text | Display name of task, e.g. 'Create an environment'  |
+|Name   | Text | Display name of task, for example: 'Create an environment'  |
 |Task description| Text | Brief description of the task. |
 |Task documentation link | URL | Url link to documentation. |
 |Active task | Choice | 'Yes'/ 'No' - Active tasks are tasks that you perform as an organization. |
 | Outsourced task | Choice | 'Yes' / 'No' - Is the task outsourced? |
 | Automation | Choice | 'Yes' / 'No' - Is the task automated? |
 | Owner | User | User that created the record. |
-| Frequency | Choice | Choice of daily, weekly, monthly, ad-hoc, etc. | 
+| Frequency | Choice | Choice of daily, weekly, monthly, ad-hoc, etc | 
 | Anticipated task iterations | Number | How many times do you believe the task will be performed in one year? **This column is managed by a business rule calculating the number of iterations for you, unless you select 'Ad-hoc'**|
 | Duration | Number | How many minutes will the task take to complete? |
 | Experience required | Choice | What level of experience is required to complete the task. |
-| Core admin persona | Choice | Who in the core team will primarily perform the task (e.g. Environment Admin, Product Owner, etc) |
-| Peripheral admin persona | Choice | Who else is required to complete the task (e.g. Azure AD Administrator, SharePoint Administrator, etc) |
-| Primary task category | Choice | Select a category that the task predominantly fits into (e.g. reporting, security, etc) |
-| Secondary task category | Choice | Select a second category that the task predominantly fits into (e.g. Capacity, Performance, etc)  |
+| Core admin persona | Choice | Who in the core team will primarily perform the task (for example: Environment Admin, Product Owner). |
+| Peripheral admin persona | Choice | Who else is required to complete the task (e.g. Azure AD Administrator, SharePoint Administrator, etc.) |
+| Primary task category | Choice | Select a category that the task predominantly fits into (e.g. reporting, security, etc.) |
+| Secondary task category | Choice | Select a second category that the task predominantly fits into (e.g. Capacity, Performance, etc.)  |
 | Product or service | Choice | Select the Power Platform Product or service |
 
 ## Setup the Power BI dashboard
@@ -128,7 +128,10 @@ You can configure and modify the Power BI dashboard by working directly with the
 
 1. In Power BI Desktop, open the .pbit file, which can be found in the CoE Starter Kit you downloaded from [aka.ms/CoEStarterKitDownload](https://aka.ms/CoEStarterKitDownload). The template file title is **PowerPlatformAdminPlanner.pbit**
 
-1. CONNECT <!TBD>
+1. Enter the URL of your environment instance where you imported the solution.
+
+> [!NOTE]
+> Do not include the https:// prefix, or the '/' suffix when adding the environment URL 
 
 1. Save the dashboard locally, or select **Publish** and choose the workspace you want to publish the report to.
 
