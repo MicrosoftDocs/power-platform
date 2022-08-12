@@ -43,8 +43,8 @@ that teams commonly put in place include Initiate, Export from Dev, Build, and R
 > [!NOTE] 
 > Microsoft Power Platform Build Tools are supported only for a Microsoft Dataverse environment with a database. More information: [Create an environment with a database](../admin/create-environment.md#create-an-environment-with-a-database)
 > 
-> Microsoft Power Platform Build Tools are now available for use in the **GCC** and **GCC High** regions. 
-> Microsoft Power Platform Build Tools version 2.0 are now available 
+> Microsoft Power Platform Build Tools version 1.0.*) are now available for use in the **GCC** and **GCC High** regions. <br/>
+> Microsoft Power Platform Build Tools version 2.0 are now available except in **GCC** or **GCC High** regions.
 
 
 
@@ -71,7 +71,7 @@ For more information about the available tasks, see [Microsoft Power Platform Bu
 
 ## What is Power Platform Build Tools version 2.0? 
 In addition to what Power Platform Build Tools provide, version 2.0 of Power Platform Build Tools is Power Platform CLI based. 
-Power Platform Build Tools version 0.* , as in the first release, is based on PowerShell. Going forward Power Platform Build Tools 2.0 is the version that will be serviced and newer features added. 
+Power Platform Build Tools version 1.0 , as in the first release, is based on PowerShell. Going forward Power Platform Build Tools 2.0 is the version that will be serviced and newer features added. 
 For previous versions of Power Platform Build Tools, we will do critical security updates as needed. We would highly recommend that customers move to Power Platform Build Tools version 2.0 at their earliest.
 
 > [!IMPORTANT]
