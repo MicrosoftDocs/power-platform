@@ -27,7 +27,7 @@ Work with your Dataverse Organization
 |Command|Description|
 |---------|---------|
 |[pac org list](#pac-org-list)|Lists all of the Dataverse Organizations the user has access to|
-|[pac org select](#pac-org-select)|Select defualt organization for current authentication profile|
+|[pac org select](#pac-org-select)|Select default organization for current authentication profile|
 |[pac org who](#pac-org-who)|Displays information about the current Dataverse Organization|
 
 
