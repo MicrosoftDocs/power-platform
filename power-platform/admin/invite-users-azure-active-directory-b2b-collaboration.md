@@ -163,14 +163,14 @@ After the B2B guest users are given the required permissions to create and edit 
 2. If the Azure B2B maker is expected to build an app that uses Dataverse or build apps in a solution, they’ll need a license with Dataverse use rights assigned to them in the resource tenant.
 
 ### See also  
- [Azure AD B2B Collaboration is Generally Available!](https://blogs.technet.microsoft.com/enterprisemobility/2017/04/12/azure-ad-b2b-collaboration-is-generally-available/)   
- [Azure Active Directory B2B collaboration code and PowerShell samples](/azure/active-directory/b2b/code-samples)   
- [Azure Active Directory B2B collaboration frequently-asked questions (FAQ)](/azure/active-directory/active-directory-b2b-faq)   
- [Azure Active Directory B2B Collaboration](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)   
- [Azure AD B2B: New updates make cross-business collab easy](https://blogs.technet.microsoft.com/enterprisemobility/2017/02/01/azure-ad-b2b-new-updates-make-cross-business-collab-easy/)
- [Azure Active Directory cross-tenant access overview](/azure/active-directory/external-identities/cross-tenant-access-overview)
- [Restrict cross-tenant inbound and outbound access](cross-tenant-restrictions.md)
- [Share a canvas app with guest users](/powerapps/maker/canvas-apps/share-app-guests)
+[Azure AD B2B Collaboration is Generally Available!](https://blogs.technet.microsoft.com/enterprisemobility/2017/04/12/azure-ad-b2b-collaboration-is-generally-available/) <br />  
+[Azure Active Directory B2B collaboration code and PowerShell samples](/azure/active-directory/b2b/code-samples)   <br /> 
+[Azure Active Directory B2B collaboration frequently-asked questions (FAQ)](/azure/active-directory/active-directory-b2b-faq)   <br /> 
+[Azure Active Directory B2B Collaboration](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)   <br /> 
+[Azure AD B2B: New updates make cross-business collab easy](https://blogs.technet.microsoft.com/enterprisemobility/2017/02/01/azure-ad-b2b-new-updates-make-cross-business-collab-easy/) <br /> 
+[Azure Active Directory cross-tenant access overview](/azure/active-directory/external-identities/cross-tenant-access-overview) <br /> 
+[Restrict cross-tenant inbound and outbound access](cross-tenant-restrictions.md) <br /> 
+[Share a canvas app with guest users](/powerapps/maker/canvas-apps/share-app-guests)
 
 
 
