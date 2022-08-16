@@ -1,10 +1,10 @@
 ---
-title: Automatic deletion of inactive Microsoft Dataverse for Teams environments (preview)
+title: Automatic deletion of inactive Microsoft Dataverse for Teams environments 
 description: Admins can configure an automatic cleanup process that removes inactive Dataverse for Teams environments from their tenants.
 author: matapg007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/13/2022
+ms.date: 08/16/2022
 ms.subservice: admin
 ms.author: matgupta 
 ms.reviewer: jimholtz
@@ -17,9 +17,7 @@ search.app:
   - Flow
 ---
 
-# Automatic deletion of inactive Microsoft Dataverse for Teams environments (preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Automatic deletion of inactive Microsoft Dataverse for Teams environments 
 
 Power Platform provides a cleanup mechanism that automatically removes inactive [Dataverse for Teams environments](about-teams-environment.md) from your tenant. Dataverse for Teams environments that are considered inactive are first disabled. They're deleted after a period of time if no action is taken by the administrators.
 
@@ -29,11 +27,7 @@ Administrators can [set the Teams environment deletion policy](#set-dataverse-fo
 
 Disabling a Dataverse for Teams environment prevents any meaningful use of the environment and its resources. Apps can't be launched, flows are suspended, chatbots can't be interacted with, and so on.
 
-> [!IMPORTANT]
->
-> - This is a preview feature.
-> - This feature is being gradually rolled out across regions and might not be available yet in your region.
-> - For information on automatic cleanup of production and sandbox environments, see [Automatic environment cleanup](automatic-environment-cleanup.md).
+For information on automatic cleanup of production and sandbox environments, see [Automatic environment cleanup](automatic-environment-cleanup.md).
 
 ## Timeline for inactive Dataverse for Teams environments
 
@@ -54,8 +48,14 @@ The following table describes the schedule of notifications and actions for Data
 <sup>2</sup>**Inactive environment alert on the Environment page in Power Platform admin center**
 :::image type="content" source="media/inactive-environment-state-box.png" alt-text="Screenshot of the inactive environment alert on the Environment page, with the Trigger environment activity checkbox highlighted.":::
 
+> [!NOTE]
+> The **Environment inactive** warning tile only displays if the Teams environment is <= 7 days until disablement.
+
 <sup>3</sup>**Disabled environment alert on the Environment page in Power Platform admin center**
 :::image type="content" source="media/disabled-environment-state-box.png" alt-text="Screenshot of the disabled environment alert on the Environment page, with the Re-enable environment checkbox highlighted.":::
+
+> [!NOTE]
+> The **Environment disabled** tile displays anytime a Teams environment is disabled due to inactivity.
 
 ### Notification recipients
 
