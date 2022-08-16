@@ -61,11 +61,23 @@ For users to use the service connection from the ALM Accelerator for Power Platf
 
 Repeat the preceding steps for each of the service connections you want to share.
 
-## Dataverse user permissions for downstream environments
+## Permissions for downstream environments
 
-The AA4PP will use the permissions of the user currently logged in to show the list of Environments, therefore to show the downstream environments (validation, test, production) the user need to have the appropriated permissions on those environments.
+The AA4PP has different scenarios that need to list the environments. For each scenario, the currently logged-in user will need different permissions. To list the environments, the user has access to, the app uses the "Power Apps for Makers" connector and the AA4PP rely on that connector permission.
 
-You can customize an existence role with the needed permission or give 'Environment Maker' role to the user, with this role the user will be able to create connections and see the environments under 'Deployment Environments' in AA4PP.
+> [!NOTE]
+    > The "Power Apps for Makers" connector will list all environments the user has "Environment Maker" role or is Owner or Co-Owner of an App (can edit any app). When you change the role of a user, in an environment, there is a sync process that might take some time to replicate the changes. To test if the changes has been sync you can create a test Canvas App and call the "Power Apps for Maker" connector to retrieve the list of environments.  
+
+The following table lists the permissions needed for each scenario:
+
+| Scenario                    | Dataverse Role    | Description           |
+| --------------------------- | ----------------- | --------------------- |
+| Select Maker environment    | Environment Maker or permission to edit any app | List all the environments the user can import solutions or list solutions to commit |
+| Create a Deployment Profile | Environment Maker or permission to edit any app | Get the list of all environments the solution can be deployed to |
+| List the Deployment Profile |         -         | If the logged-in user isn't the owner of the Profile, the owner can share the profile in the AA4PP Admin App, and no extra Dataverse permission is needed |
+| Configure the deployment settings | Basic User* | *If the user needs to create or list connections will need a "Basic user" role in the corresponding environment, otherwise no permission is needed in the corresponding downstream environment |
+
+The deployment process of the solutions to the downstream environment isn't based on the currently logged-in user, the service principle is used by the Azure DevOps pipelines. For more information about different strategies, [follow this link](/power-platform/guidance/coe/almaccelerator-app-registrations).
 
 To see the full overview of the different security roles and the respective permissions,  
 [follow this link](/power-platform/admin/database-security#environments-with-a-dataverse-database).
