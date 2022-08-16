@@ -66,7 +66,7 @@ Repeat the preceding steps for each of the service connections you want to share
 The AA4PP has different scenarios that need to list the environments. For each scenario, the currently logged-in user will need different permissions. To list the environments, the user has access to, the app uses the "Power Apps for Makers" connector and the AA4PP rely on that connector permission.
 
 > [!NOTE]
-    > The "Power Apps for Makers" connector will list all environments the user has "Environment Maker" role or is Owner or Co-Owner of an App (can edit any app). When you change the role of a user, in an environment, there is a sync process that might take some time to replicate the changes. To test if the changes has been sync you can create a test Canvas App and call the "Power Apps for Maker" connector to retrieve the list of environments.  
+> The "Power Apps for Makers" connector will list all environments the user has "Environment Maker" role or is Owner or Co-Owner of an App (can edit any app). When you change the role of a user, in an environment, there is a sync process that might take some time to replicate the changes. To test if the changes has been sync you can create a test Canvas App and call the "Power Apps for Maker" connector to retrieve the list of environments.  
 
 The following table lists the permissions needed for each scenario:
 
