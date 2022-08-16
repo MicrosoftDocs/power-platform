@@ -193,7 +193,7 @@ All business process flows are disabled by default. To enable them, do the follo
 
 1. Repeat the previous step for **Flow Approval BPF**, **Custom Connector Approval BPF**, and **Chatbot Approval BPF**.
 
-## Inactivity notifications processes
+## Inactivity processes
 
 ### Tables
 
@@ -212,6 +212,7 @@ Represents inactivity notifications approval tasks started during the Admin | In
 | [Admin \| Inactivity notifications (Start Approval for Apps)](#admin--inactivity-notifications-v2-start-approval-for-apps) | Schedule | Weekly |
 | [Admin \| Inactivity notifications (Start Approval for Flows)](#admin--inactivity-notifications-v2-start-approval-for-flows) | Schedule | Weekly |
 | [Admin \| Email Managers Ignored Approvals](#admin--email-managers-ignored-inactivity-notifications-approvals) | Instant | Weekly |
+| [Admin \| Broken Connection Cleanup](#admin--broken-connection-cleanup) | Instant | Weekly |
 
 #### Admin \| Inactivity notifications v2 (Start Approval for Apps)
 
@@ -260,6 +261,11 @@ Runs daily and does two cleanup tasks for the workflow.
 This flow works with the other Inactivity notifications flows in that it looks for approvals from this system that have been ignored by makers for one month or more and sends their manager a list of these, asking they help by encouraging their employees to approve or reject the request.
 
 ![Mail sent to managers.](media/ArchiveApps1.png "Mail sent to managers")
+
+#### Admin \| Broken Connection Cleanup
+
+Runs weekly deletes connection references that are errored out and which were last modified at least 30 days ago (configurable).
+
 
 ### Apps
 
