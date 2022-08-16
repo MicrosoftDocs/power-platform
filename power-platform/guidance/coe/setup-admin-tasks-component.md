@@ -43,7 +43,7 @@ Install the solution following the steps below:
     > **Extract the zip file** after downloading and before moving on to the next step. The CoE Starter Kit compressed file contains all solution components in addition to the non–solution-aware components that make up the CoE Starter Kit.
 
 1. Import the solution:
-    1. If you're [installing to a production environment](faq.md#installing-a-solution-in-a-production-environment), use the PowerPlatformAdministrationPlanning_x_x_x_xx_managed.zip solution file from the download.
+    1. If you're [installing to a production environment](faq.md#installing-a-solution-in-a-production-environment), use the admintaskanalysis_core_x_x_x_xx_managed.zip solution file from the download.
 
 The import can take up to 15 minutes to be completed.
 
@@ -54,32 +54,22 @@ The import can take up to 15 minutes to be completed.
 
 If you're getting started or want to populate the solution with common administrative tasks, then import data from the sample admin tasks spreadsheet.
 
-### Extending the Power Platform administration planning solution
+1. Launch the 'admin tasks' app
+1. From the command bar, select '...' > 'Import from Excel'
+1. Select 'Choose File'
+1. Navigate to the location where you saved the 'Sample-task-data.xlsx' file > 'Open'
+1. Select 'Next' > 'Review mapping'
+1. Decide which fields you want to import. This is  
+1. Click 'Finish'
 
-Power Platform administration planning is a 'managed solution'. The following instructions create an unmanaged solution that contains your configuration changes.  Read ['Extend and customize CoE Starter kit'](/power-platform/guidance/coe/modify-components) document to learn more about extending components of the CoE Starter Kit.
+An import job has been created at this point, you can track progress by selecting the button labeled 'Track Progress'.
 
-1. [Create a solution](power-apps/maker/data-platform/create-solution).
-1. Complete the **Display name** and **Name** fields, then select a **Publisher** (or [create a solution publisher](power-apps/maker/data-platform/create-solution#solution-publisher))
-1. When the solution has been created, open it, then select **'Cloud flows'** > **Add existing** > **Automation** > **Cloud flow** > Select the **Import-SampleTaskData** Cloud flow > **Add**
-1. Select *...* > **Edit** > **Edit**
-1. Expand the second action, labeled **'List rows present in a table'** and update the following parameters:
-    1. Location: the root location that you copied the 'Sample-task-data.xlsx' spreadsheet to (for example: SharePoint Site URL, OneDrive for Business')
-    1. Document library: the document library that you copied the 'Sample-task-data.xlsx' file to
-    1. File: Select the file
-    1. Table: Set to Table1
-1. Select **Save**
-
-Screenshot:
-![Launch the admin tasks app](media/Import-SampleTaskData-CloudFlow.png "Launch the Admin tasks app")
-
-1. Turn on the cloud flow
-1. Run the cloud flow
-
-Once the cloud flow has completed successfully, check that the sample data is present.
+> [!NOTE]
+> If you are new to Power Platform administration, importing all sample columns data can be helpful.  You should review the duration and anticipated number of iterations columns to reflect your planning.
 
 #### Check sample data
 
-If the cloud flow successfully completes, all sample tasks should be present in the Dataverse table named 'Admin tasks'. Launch the Admin tasks app to check tasks were successfully imported. When you've successfully launched the app, you should see the sample admin tasks:
+If the import job successfully completes, all sample tasks should be present in the Dataverse table named 'Admin tasks'. Launch the Admin tasks app to check tasks were successfully imported. When you've successfully launched the app, you should see the sample admin tasks:
 
 ![Launch the admin tasks app](media/Admin-task-app.png "Launch the Admin tasks app")
 
