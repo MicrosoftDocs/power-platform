@@ -6,7 +6,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 11/11/2015
+ms.date: 08/15/2022
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -26,7 +26,9 @@ Provides error information for previous changes to a [data source](/power-apps/m
 
 Errors can happen when a [record](/power-apps/maker/canvas-apps/working-with-tables#records) of a data source is changed. Many causes are possible, including network outages, inadequate permissions, and edit conflicts.
 
-The **[Patch](function-patch.md)** function and other data functions don't directly return errors. Instead they return the result of their operation. After a data function executes, you can use the **Errors** function to obtain the details of any errors. You can check for the existence of errors with the **[IsEmpty]** function in the formula **IsEmpty( Errors ( ... ) )**.
+The **[Patch](function-patch.md)** will return errors directly with its return value.  This is the preferred way to detect if there has been a problem with a **Patch** call.
+
+The **[Collect](function-collect-clearcollect.md)** function and other data functions don't directly return errors. Instead they return the result of their operation. After a data function executes, you can use the **Errors** function to obtain the details of any errors. You can check for the existence of errors with the **[IsEmpty]** function in the formula **IsEmpty( Errors ( ... ) )**.  **Patch** will also report errors through **Errors**.
 
 You can avoid some errors before they happen by using the **[Validate](function-validate.md)** and **[DataSourceInfo](function-datasourceinfo.md)** functions. See [working with data sources](/power-apps/maker/canvas-apps/working-with-data-sources) for more suggestions on how to work with and avoid errors.
 

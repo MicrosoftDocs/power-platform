@@ -5,7 +5,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 04/21/2022
+ms.date: 08/15/2022
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -18,8 +18,6 @@ contributors:
 ---
 
 # Error, IfError, IsError, IsBlankOrError functions in Power Apps
-
-[This article is pre-release documentation and is subject to change.]
 
 Detects errors and provides an alternative value or takes action. Create a custom error or pass through an error.
 
