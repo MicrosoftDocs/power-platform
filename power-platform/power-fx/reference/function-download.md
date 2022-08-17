@@ -6,7 +6,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 05/04/2020
+ms.date: 08/17/2022
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -39,6 +39,12 @@ Only on Windows, **Download** returns the location where the file was stored loc
 **Download**( _Address_ )
 
 - _Address_ – Required. The URL address of a web resource to download.
+
+> [!NOTE]
+> Power Apps cannot authenticate download requests to the address provided in the Download() function.
+>
+> For example, when using this function to download a file stored on a SharePoint site that requires authentication, the request might work when using a web browser since the browser session might authenticate against the SharePoint site using cached credentials. However, in Power Apps mobile app, the request will not work since authenticating the download request is not handled by the mobile device.
+
 
 ## Examples
 
