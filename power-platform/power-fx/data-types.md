@@ -203,7 +203,7 @@ A **Date** value can include time information with it, which is usually midnight
 
 Adding and subtracting date and time values directly isn't recommended because time-zone and other conversions could cause confusing results. Either use the **Value** function to convert date/time values to milliseconds first and take into account the app user's time zone, or use the [**DateAdd**](/powerapps/maker/canvas-apps/functions/function-dateadd-datediff) and [**DateDiff**](/powerapps/maker/canvas-apps/functions/function-dateadd-datediff) functions to add or subtract from one of these values.
 
-## Option sets and Two options
+## Option sets and Two options (Choice(s))
 
 Option sets and two-option data types provide a two or more choices for an app user to select. For example, an **Order Status** option set might offer the choices **New**, **Shipped**, **Invoiced**, and **Closed**. The two-option data type offers only two choices.
 
@@ -228,3 +228,22 @@ In addition, two-option values can also behave as boolean values. For example, a
 You can also use this equivalent formula:
 
 `If( ThisItem.Taxable, ...`
+
+In case if you need to compare text content with **Option Set** (**Choice(s)**), you might want to use,
+
+```
+With(
+    {
+        result: If(
+            TextInput1.Text = "Active",
+            OrderStatus.Active,
+            TextInput1.Text = "Inactive",
+            OrderStatus.Active
+        )
+    },
+    Filter(
+        'Orders',
+         OrderStatus = result
+    )
+)
+```
