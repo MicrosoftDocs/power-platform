@@ -22,8 +22,9 @@ Microsoft Internet Explorer and Microsoft Edge Legacy support has ended. This to
  
 Users moving to [Microsoft Edge](https://www.microsoft.com/edge) (based on Chromium) or another supported modern browser will have a significantly improved experience. Experiences in Dynamics / Power Apps are twice as fast on [Microsoft Edge](https://www.microsoft.com/edge) than on Internet Explorer.
 
-The error message will appear at the top of the Power Platform admin center page or the Dynamics 365 app page. 
+The error message will appear at the top of the Power Platform admin center page or the Dynamics 365 app page.
 
+Dynamics 365 App for Outlook users using Outlook desktop client are recommended to upgrade their clients to Microsoft Outlook versions that use Edge WebView2 or use Microsoft Outlook on the Web.
 
 ## Administrator experience 
 
@@ -34,7 +35,7 @@ Administrators in the Power Platform Admin center and in the model-driven apps A
 
 ## User experience 
 
-All users using Dynamics 365 and Microsoft Power Platform in Internet Explorer will see an error message at the top of the app. By switching to Microsoft Edge Chromium or another modern browser, the user will not see an error message. From early October 2022, users will be [redirected] (https://www.docs.microsoft.com/deployedge/edge-learnmore-neededge) to Microsoft Edge if they have Edge currently installed on their device. Otherwise, they will receive a non-dismissible message informing them why they are blocked and to try using the site on Microsoft Edge. If a user tries accessing Dynamics 365 or Microsoft Power Platform in Internet Explorer, they will see the following message:
+All users using Dynamics 365 and Canvas apps in the Microsoft Power Platform in Internet Explorer will see an error message at the top of the app. By switching to Microsoft Edge Chromium or another modern browser, the user will not see an error message. From early October 2022, users will be [redirected] (https://www.docs.microsoft.com/deployedge/edge-learnmore-neededge) to Microsoft Edge if they have Edge currently installed on their device. Otherwise, they will receive a message informing them why they are blocked and to try using the site on Microsoft Edge. If a user tries accessing Dynamics 365 or Canvas apps in the Microsoft Power Platform in Internet Explorer, they will see the following messages:
 
 > **Alert** <br />
 > This website will be blocked in Internet Explorer starting on October 31st. Try using this site in Microsoft Edge. Learn more

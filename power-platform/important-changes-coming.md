@@ -27,6 +27,8 @@ Dynamics 365 and Microsoft Power Platform will be blocked in Internet Explorer s
  
 We recommend that customers transition to [Microsoft Edge](https://www.microsoft.com/edge). 
 
+Dynamics 365 App for Outlook users using Outlook desktop client are recommended to upgrade their clients to Microsoft Outlook versions that use Edge WebView2 or use Microsoft Outlook on the Web.
+
 More information: [Support end for Internet Explorer](admin/support-end-internet-explorer.md).
 
 If you have more questions, contact your Microsoft Customer Service representative or Microsoft Partner.
