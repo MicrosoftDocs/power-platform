@@ -2,7 +2,7 @@
 title: Configure hand-off to Dynamics 365 Customer Service
 description: Escalate bot conversations to live agents using omnichannel engagement capabilities of Dynamics 365 Customer Service.
 keywords: "PVA"
-ms.date: 04/01/2022
+ms.date: 08/17/2022
 ms.topic: article
 author: iaanw  
 ms.author: iawilt
@@ -239,5 +239,9 @@ Install the following extensions in this order:
 ### For only text (messaging) hand-off
 
 Install [Omnichannel Power Virtual Agent extension](https://appsource.microsoft.com/product/dynamics-365/mscrm.omnichannelpvaextension).
+
+If you still see the following warning after installing the Omnichannel Power Virtual Agent extension, you can safely ignore it.
+
+:::image type="content" source="media/configuration-hand-off-omnichannel/handoff-no-extension.png" alt-text="Screenshot of the yellow warning that can be ignored.":::
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
