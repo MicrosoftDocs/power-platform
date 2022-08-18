@@ -1,7 +1,7 @@
 ---
 title: "Important changes (deprecations) coming in Power Apps and Power Automate"
 description: Important changes (deprecations) coming in Power Apps and Power Automate 
-ms.date: 08/08/2022
+ms.date: 08/18/2022
 ms.topic: "article"
 ms.subservice: admin
 searchScope:
@@ -27,7 +27,7 @@ Dynamics 365 and Microsoft Power Platform will be blocked in Internet Explorer s
  
 We recommend that customers transition to [Microsoft Edge](https://www.microsoft.com/edge). 
 
-Dynamics 365 App for Outlook users using Outlook desktop client are recommended to upgrade their clients to Microsoft Outlook versions that use Edge WebView2 or use Microsoft Outlook on the Web.
+We recommend Dynamics 365 App for Outlook users that are using the Outlook desktop client upgrade their clients to Microsoft Outlook versions that use Edge WebView2 or  Microsoft Outlook on the web (OWA).
 
 More information: [Support end for Internet Explorer](admin/support-end-internet-explorer.md).
 
