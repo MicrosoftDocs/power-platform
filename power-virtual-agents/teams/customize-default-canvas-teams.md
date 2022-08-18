@@ -33,7 +33,7 @@ and the bot name at any time, and add a long and short description when you publ
 
 ## Change the bot avatar icon and name
 
-1. On the side pane, select **Settings** > **General**.
+1. On the side pane, select **Settings** and then **Details**.
 
     :::image type="content" source="../media/customize-default-canvas/custom-canvas-name-icon.png" alt-text="The Details tab is found in the Manage section on the side pane.":::
 
