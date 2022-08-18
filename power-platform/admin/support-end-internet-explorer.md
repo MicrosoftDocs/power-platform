@@ -40,7 +40,7 @@ All users using Dynamics 365 and canvas apps in the Microsoft Power Platform in 
 > **Alert** <br />
 > This website will be blocked in Internet Explorer starting on October 31st. Try using this site in Microsoft Edge. Learn more
 
-This message will appear for users trying to access Dynamics 365 and Microsoft Power Platform in an unsupported version of Microsoft Edge ([Edge Legacy](https://blogs.windows.com/msedgedev/microsoft-edge-legacy-end-of-support))
+This message will appear for users trying to access Dynamics 365 and Microsoft Power Platform in an unsupported version of Microsoft Edge ([Edge Legacy](https://blogs.windows.com/msedgedev/microsoft-edge-legacy-end-of-support)).
 
 > **Alert** <br />
 > This website will be blocked in this version of Microsoft Edge starting on October 31st. Try using the latest Edge version. Learn more
@@ -50,10 +50,10 @@ Starting October 31, Internet Explorer will be blocked and users will be unable 
 > **Alert** <br />
 >Unsupported browser. This website is no longer supported in Internet Explorer. Try using this site in Microsoft Edge.
 
-Starting October 31, this message will appear for users trying to access Dynamics 365 and Microsoft Power Platform in an unsupported version of Microsoft Edge ([Edge Legacy](https://blogs.windows.com/msedgedev/microsoft-edge-legacy-end-of-support)
+Starting October 31, this message will appear for users trying to access Dynamics 365 and Microsoft Power Platform in an unsupported version of Microsoft Edge ([Edge Legacy](https://blogs.windows.com/msedgedev/microsoft-edge-legacy-end-of-support)).
 
 > **Alert** <br />
->Unsupported browser. This website is no longer supported in this version of Microsoft Edge. Try using the latest Edge version. 
+> Unsupported browser. This website is no longer supported in this version of Microsoft Edge. Try using the latest Edge version. 
 
 Administrators wanting to block Internet Explorer for users earlier can request this through support. 
 
