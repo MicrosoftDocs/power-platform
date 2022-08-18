@@ -86,12 +86,14 @@ Before you can turn on SSO, you'll need to configure user authentication. During
 
 1. Enter the following values:
 
-   <!-- FIXME: the value "Test.Read" is what was in the old screen shot. Is there a better suggested value we can use to encourage naming scope according to best practices? -->
    | Property                   | Value                                |
    | -------------------------- | ------------------------------------ |
    | Scope name                 | `Test.Read`                          |
    | Admin consent display name | `Test.Read`                          |
    | Admin consent description  | `Allows the app to log in the user.` |
+
+   > [!NOTE]
+   > The scope name `Test.Read` is a placeholder value and should be replaced with a name that makes sense in your environment.
 
 1. Select **Add scope**.
 
