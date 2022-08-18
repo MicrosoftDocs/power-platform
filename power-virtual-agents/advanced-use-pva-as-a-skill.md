@@ -46,16 +46,11 @@ Add the Bot Framework bot's app ID to the allowlist for the Power Virtual Agents
 
     :::image type="content" source="media/advanced-use-pva-as-a-skill/Composer_BotAppID.png" alt-text="Screenshot highlighting where to find a Bot Framework bot's app ID.":::
 
-1. In Power Virtual Agents, open the bot you want to use as a skill. In the left pane, select **Settings**, and then select **Skills**.
+1. In Power Virtual Agents, open the bot you want to use as a skill.
 
-1. Select **Manage allowlist**.
+1. In the left pane, go to **Settings** and select **Security**. Then select **Allowlist**.
 
-    :::image type="content" source="media/advanced-use-pva-as-a-skill/Skill_ManageAllowlistMenu.png" alt-text="Screenshot highlighting the Manage, Skills, and Manage allowlist elements in the web portal.":::
-
-    > [!TIP]  
-    > You can also get to your bot's allowlist on the Security page. In the left pane, select **Settings**, and then select **Security**.
-    >
-    > :::image type="content" source="media/advanced-use-pva-as-a-skill/Skill_ManageAllowlistSecurity.png" alt-text="Screenshot highlighting the Allowlist tile on the Security page.":::
+    :::image type="content" source="media/advanced-use-pva-as-a-skill/Skill_ManageAllowlistSecurity.png" alt-text="Screenshot highlighting the Allowlist tile on the Security page.":::
 
 1. Select **Add allowed caller**.
 
