@@ -2,7 +2,7 @@
 title: Configure user authentication
 description: Configure authentication with your identity provider to enable users to sign in when having a bot conversation.
 keywords: "Authentication, IdP, PVA, AAD"
-ms.date: 06/23/2022
+ms.date: 08/18/2022
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -21,7 +21,7 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](configuration-end-user-authentication.md)
 > - [Power Virtual Agents app in Microsoft Teams](teams/configuration-end-user-authentication-teams.md)
 
-Authentication allows users to sign in, giving your bot access to a restricted resource or information. Users can sign in with an Azure Active Directory (Azure AD) account, or with any [OAuth2 identity provider](/azure/active-directory/develop/v2-oauth2-auth-code-flow) such as Google or Facebook.
+Authentication allows users to sign in, giving your bot access to a restricted resource or information. Users can sign in with [Azure Active Directory (Azure AD)](configuration-authentication-azure-ad.md), or with any [OAuth2 identity provider](/azure/active-directory/develop/v2-oauth2-auth-code-flow) such as Google or Facebook.
 
 You can [add user authentication to your bot](advanced-end-user-authentication.md) when you edit a topic.
 

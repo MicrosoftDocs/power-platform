@@ -1,9 +1,8 @@
 ---
-#FIXME: metadata
 title: Configure user authentication with Azure Active Directory
-description: 
+description: Use Azure Active Directory as your service provider for user authentication.
 keywords: "Authentication, IdP, PVA, AAD"
-ms.date: 06/23/2022
+ms.date: 08/18/2022
 ms.topic: article
 author: v-alarioza
 ms.author: v-alarioza
@@ -13,14 +12,16 @@ ms.custom: authentication, ceX
 ms.collection: virtual-agent
 ---
 
-<!-- FIXME: confirm this doc works standalone from SSO -->
 # Configure user authentication with Azure Active Directory
 
-<!-- FIXME: intro -->
+Adding authentication allows users to sign in, giving your bot access to a restricted resource or information.
+
+This article covers how to configure Azure Active Directory (Azure AD) as your service provider. To learn about other service providers and user authentication in general, see [Configure user authentication](configuration-end-user-authentication.md).
 
 ## Prerequisites
-<!-- FIXME: prereqs -->
+
 - [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+- [Learn how to use user authentication in a topic](advanced-end-user-authentication.md).
 
 ## Create an app registration
 
@@ -90,8 +91,6 @@ ms.collection: virtual-agent
     - **Client secret**: Enter the client secret you generated earlier from the Azure portal.
 
     - **Scopes**: Enter `profile openid`.
-
-    <!-- FIXME: add screenshot -->
 
 1. Select **Save** to finish the configuration.
 
