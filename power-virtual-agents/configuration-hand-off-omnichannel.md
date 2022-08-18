@@ -240,7 +240,7 @@ Install the following extensions in this order:
 
 Install [Omnichannel Power Virtual Agent extension](https://appsource.microsoft.com/product/dynamics-365/mscrm.omnichannelpvaextension).
 
-If you still see the following warning after installing the Omnichannel Power Virtual Agent extension, you can safely ignore it.
+If you still see the following warning after installing the Omnichannel Power Virtual Agent extension, and you don't need voice capabilities, you can safely ignore it.
 
 :::image type="content" source="media/configuration-hand-off-omnichannel/handoff-no-extension.png" alt-text="Screenshot of the yellow warning that can be ignored.":::
 
