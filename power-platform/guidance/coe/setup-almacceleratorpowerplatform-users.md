@@ -18,7 +18,7 @@ search.app:
 ---
 # Configuring user permissions for ALM Accelerator for Power Platform user setup (preview)
 
-The ALM Accelerator for Power Platform app is intended to be used by makers to increase productivity while developing solutions in Microsoft Power Platform. The following instructions are for setting up a maker's user account in Microsoft Dataverse and Azure DevOps.
+The ALM Accelerator for Power Platform (AA4PP) app is intended to be used by makers to increase productivity while developing solutions in Microsoft Power Platform. The following instructions are for setting up a maker's user account in Microsoft Dataverse and Azure DevOps.
 
 > [!NOTE]
 > The ALM accelerator for Microsoft Power Platform is currently in public preview. While in preview we will be prioritizing feedback and bugs via GitHub [New issue](https://github.com/microsoft/coe-starter-kit/labels/alm-accelerator). If the issue is something in the platform all we can do is funnel feedback to the responsible product teams. For more information on the current preview status of the ALM Accelerator for Power Platform [follow this link](https://github.com/microsoft/coe-starter-kit/blob/main/CenterofExcellenceALMAccelerator/PREVIEW.md).
@@ -73,13 +73,11 @@ The following table lists the permissions needed for each scenario in AA4PP:
 | Scenario                    | Dataverse Role    | Description           |
 | --------------------------- | ----------------- | --------------------- |
 | Select Maker environment    | Environment Maker or permission to edit any app | The logged-in user will be able to list all the environments where can import solutions or list solutions to commit |
-| Create a Deployment Profile | Environment Maker or permission to edit any app | The logged-in user will be able to get the list of all environments the solution can be deployed to. In case you only provide the url you might have limited functionality in the "Deployment Settings" regarding "Connections References", we are investigating a possible solution to alleviate this situation.    |
-| Use the Deployment Profile |         -         | The logged-in user can use the deployment profile if it's the owner or was shared with. No Dataverse role is needed |
-| Configure the deployment settings | Basic User* | *If the logged-in user needs to create or list connections will need a "Basic user" role in the corresponding environment, otherwise no permission is needed in the corresponding downstream environment |
+| Create a Deployment Profile | Environment Maker or permission to edit any app | The logged-in user will be able to get the list of all environments the solution can be deployed to. In case you only provide the url you might have limited functionality in the "Deployment Settings" regarding "Connections References". |
+| Configure the deployment settings | Basic User | If the logged-in user needs to create/list connections, list "Teams" for sharing in "Flows", and list of "Teams" to share in "Custom connector" the user will need a "Basic user" role in the corresponding environment, otherwise no permission is needed |
 
 The deployment process of the solutions to the downstream environment isn't based on the currently logged-in user, the service principle is used by the Azure DevOps pipelines. For more information about different strategies, [follow this link](/power-platform/guidance/coe/almaccelerator-app-registrations).
 
-To see the full overview of the different security roles and the respective permissions,  
-[follow this link](/power-platform/admin/database-security#environments-with-a-dataverse-database).
+To see the full overview of the different security roles and the respective permissions,[follow this link](/power-platform/admin/database-security#environments-with-a-dataverse-database).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
