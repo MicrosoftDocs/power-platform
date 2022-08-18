@@ -24,7 +24,7 @@ Users moving to [Microsoft Edge](https://www.microsoft.com/edge) (based on Chrom
 
 The error message will appear at the top of the Power Platform admin center page or the Dynamics 365 app page.
 
-We recommend Dynamics 365 App for Outlook users that use the Outlook desktop client upgrade their clients to Microsoft Outlook versions that use Edge WebView2 or use Microsoft Outlook on the web (OWA).
+We recommend Dynamics 365 App for Outlook users that use the Outlook desktop client upgrade their clients to Microsoft Outlook versions that use Edge WebView2 or  Microsoft Outlook on the web (OWA).
 
 ## Administrator experience 
 
