@@ -76,7 +76,7 @@ Select a gateway cluster and then select **Details** to see the following inform
 - **Version**: The gateway software version installed on the machine.
 - **State**: Select to enable or disable a gateway member.
 
-After selecting a gateway member, you can select **Remove** to remove it. This does not uninstall the gateway from the physical machine but removes all the metadata regarding the gateway.
+After selecting a gateway member, you can select **Remove** to remove it. This does not uninstall the gateway from the physical machine but removes all the metadata regarding the gateway. It is not possible to change the gateway member's name once it is installed and configured.
 
 ## Settings
 
