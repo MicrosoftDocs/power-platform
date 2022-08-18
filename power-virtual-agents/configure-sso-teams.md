@@ -26,6 +26,7 @@ SSO in the Power Virtual Agents app in Teams is only supported when using Azure 
 
 - [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 - [Learn how to use user authentication in a topic](advanced-end-user-authentication.md).
+- [Add your bot to Microsoft Teams](publication-add-bot-to-microsoft-teams.md).
 
 ## Configure user authentication
 
@@ -157,8 +158,10 @@ To update the Azure AD authentication settings in Power Virtual Agents, you'll n
 
 1. Select **Save**, and then **Close**.
 
-1. [Publish your bot to Microsoft Teams](publication-add-bot-to-microsoft-teams.md).
+1. On the side pane, select the **Publish** tab.
 
-1. Test your bot in Microsoft Teams to ensure it automatically signs the user in.
+1. Select **Publish** to make the latest bot content available to your customers.
+
+1. Start a new conversation with your bot in Microsoft Teams to test if it automatically signs you in.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
