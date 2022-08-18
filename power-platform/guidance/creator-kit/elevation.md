@@ -1,6 +1,6 @@
 ---
 title: Elevation control reference | Creator Kit
-description: Learn about the details and properties of Elevation control in the Creator Kit.
+description: Learn about the details and properties of the Elevation control in the Creator Kit.
 author: denisem-msft
 manager: devkeydet
 ms.component: pa-maker
@@ -24,9 +24,9 @@ contributors:
 
 [This article is pre-release documentation and is subject to change.]
 
-A control used to construct cards and flyouts.
+A control used to construct cards and flyout menus.
 
-:::image type="content" source="media/elevation.png" alt-text="Elevation control":::
+:::image type="content" source="media/elevation.png" alt-text="Elevation control.":::
 
 ## Description
 
@@ -43,20 +43,20 @@ This code component can only be used in canvas apps and custom pages.
 
 | Property | Description |
 | -------- | ----------- |
-| `Fill color` | Background color of the `Elevation` control. |
-| `Depth` | Depth of the shadow. |
+| `Fill color` | The background color of the `Elevation` control. |
+| `Depth` | The depth of the shadow. |
 
 ## Additional properties
 
 | Property | Description |
 | -------- | ----------- |
-| `Hover fill color` | Background color of the `Elevation` control while hovering. |
-| `Hover depth` | Depth of the shadow while hovering. |
-| `Padding` | Distance between the `Elevation` card and the edge of the control (in each direction: left, right, top, and bottom). |
-| `Dark overlay padding` | Enable for a dark overlay effect in the padded area. |
+| `Hover fill color` | The background color of the `Elevation` control that appears on hover. |
+| `Hover depth` | The depth of the shadow that appears on hover. |
+| `Padding` | The distance between the `Elevation` card and the edge of the control (in each direction: left, right, top, and bottom). |
+| `Dark overlay padding` | When enabled, displays a dark overlay effect in the padded area. |
 
 ## Best practices
 
-See [Fluent UI `Elevation` control best practices](https://developer.microsoft.com/fluentui#/styles/web/elevation).
+Go to [Fluent UI Elevation control best practices](https://developer.microsoft.com/fluentui#/styles/web/elevation).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

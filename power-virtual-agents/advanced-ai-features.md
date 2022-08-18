@@ -2,7 +2,7 @@
 title: "Advanced AI features (contains video)"
 description: "Use advanced AI features in Power Virtual Agents to improve how your bots interact with your bot users."
 keywords: "PVA, AI, advanced, topic intent, intent triggering"
-ms.date: 01/25/2022
+ms.date: 06/23/2022
 
 ms.topic: how-to
 author: iaanw
@@ -24,6 +24,10 @@ Select the version of Power Virtual Agents you're using here:
 > - [Power Virtual Agents web app](advanced-ai-features.md)
 > - [Power Virtual Agents app in Microsoft Teams](teams/advanced-ai-features-teams.md)
 
+## Prerequisites
+
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
+
 ## AI models in Power Virtual Agents - background
 
 :::image type="content" source="media/advanced-ai-features/nlu-models.png" alt-text="In Power Virtual Agents conversational AI is infused in each step of the bot building journey wrapped in an experience friendly to business users.":::
@@ -35,7 +39,10 @@ Traditionally, intent triggering (how an AI model determines the intent of a que
 Power Virtual Agents, however, employs a language understanding model that uses an example-based approach, powered by a deep neural model. This type of large-scale model only needs to be trained once with large amounts of data using AI supercomputing, and can then be used for specific tasks with few examples without further training. The use of this model is part of the [AI at Scale](https://innovation.microsoft.com/ai-at-scale) initiative by Microsoft, and means the way AI is developed and used is changing. Specifically for Power Virtual Agents, the use of this model allows for an intuitive way for bot makers to work on their bot content confidently, without having to involve AI experts.
 
 With the Power Virtual Agents model, you only need to provide a few examples when you craft trigger phrases for a topic. The examples for a single topic usually consist of 5 to 10 phrases.
+
 Shorter trigger phrases are better, and you should aim for 2 to 10 words. You just need to make sure trigger phrases are semantically different: changing a single verb or noun could be enough to expand a topic's coverage. Adding things like new articles (changing or adding 'the' or 'a' or 'an'), changing capitalization, adding contractions (you're or don't), or adding plurals won't improve the triggering because contractions are already accounted for in the AI model.
+
+Entities used in corresponding topics will automatically be identified in user intents when matched with their trigger phrases. For example the user intent "I want to book a ticket to Boston" will match with the trigger phrase "I want to book a ticket to Paris".
 
 > [!NOTE]
 > The AI capabilities listed in this topic are in preview, available to bots created with English as the set language.
@@ -60,11 +67,11 @@ The list shows each overlapping topic along with a similarity score, which repre
 
 You can sort the list by its similarity score, topic name, or number of trigger phrase overlaps.
 
-If you click an item in the list, the **Topic overlap details** pane will open.
+If you select an item in the list, the **Topic overlap details** pane will open.
 
 :::image type="content" source="media/advanced-ai-features/topic-overlap-details.png" alt-text="Screenshot of the Topic overlap details pane showing overlaps related to Microsoft 365 language topics.":::
 
-In this example, there's one trigger phrase in the "Languages support in Microsoft 365?" topic (*For which languages is Microsoft 365 available?*) that semantically overlaps with a trigger phrase in the "Use Microsoft 365 in other languages?" topic (*Can I use Microsoft 365 in languages other than the one I originally purchased?*). Here, the AI has determined that both trigger phrases are semantically similar (they contain similar phrases, words, and grammar).
+In this example, there's one trigger phrase in the "Languages support in Microsoft 365?" topic (_For which languages is Microsoft 365 available?_) that semantically overlaps with a trigger phrase in the "Use Microsoft 365 in other languages?" topic (_Can I use Microsoft 365 in languages other than the one I originally purchased?_). Here, the AI has determined that both trigger phrases are semantically similar (they contain similar phrases, words, and grammar).
 
 Using semantically similar trigger phrases for two different topics can lead to confusion as the bot may not know which topic to open, and will need to ask follow-up questions to the bot user.
 
@@ -86,7 +93,7 @@ This feature analyzes sessions between your bot and users and surfaces suggestio
 
 The topic suggestion analyzer automatically runs once every one to two hours. It scans through all new queries made since the analyzer last ran, groups together queries to which it couldn't match an existing topic, and presents them in the list. Your bot will need at least 100 new conversations (from the last time any suggestion was generated) to trigger the process, and only those suggestions with more than three user sessions will be shown.
 
-When you click on an item in the suggestion list, a topic suggestion window will appear, showing the topic with some suggested trigger phrases. The suggested trigger phrases are based on the queries made by the bot users that couldn't be matched to an existing topic.
+When you select an item in the suggestion list, a topic suggestion window will appear, showing the topic with some suggested trigger phrases. The suggested trigger phrases are based on the queries made by the bot users that couldn't be matched to an existing topic.
 
 After reviewing the suggested trigger phrases, you can choose to delete the entire suggested topic (for example, if it's irrelevant to the bot) or add it to your list of topics by selecting **Add to topics**.
 

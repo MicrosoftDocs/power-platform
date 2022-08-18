@@ -34,7 +34,7 @@ Both types of Azure AD groups—Office and Security—can be used to secure user
 
 Both types of Azure AD groups — Office and Security — with a Membership type *Assigned* can be used to secure user-access rights. Membership type *Dynamic User* and *Dynamic Device* is not supported. Using groups lets administrators assign a security role with its respective privileges to all the members of the group, instead of having to provide the access rights to an individual team member.
 
-The administrator can create Azure AD group teams that are associated to the Azure AD groups in each of the Dataverse environments and assign a security role to these group teams. For each Azure AD group, the administrator can create group teams based on the Azure AD group **Members**, and/or **Owners**, or **Guests**. For each Azure AD group, an administrator can create separate group teams for owners, members, guests, and members and guests, and assign a respective security role to each of these teams.
+The administrator can create Azure AD group teams that are associated to the Azure AD groups in each of the environments and assign a security role to these group teams. For each Azure AD group, the administrator can create group teams based on the Azure AD group **Members**, and/or **Owners**, or **Guests**. For each Azure AD group, an administrator can create separate group teams for owners, members, guests, and members and guests, and assign a respective security role to each of these teams.
 
 When members of these group teams access these environments, their access rights are automatically granted based on the group team's security role.
 
@@ -104,7 +104,7 @@ For more information, see [Assign a record to a user or team](/powerapps/user/as
 
 6. If the team type is Azure AD Security group or Azure AD Office group, you must also enter these fields:
 
-   - **Group name:** Start entering text to select an existing Azure AD group names.These groups are pre-created in Azure AD.
+   - **Group name:** Start entering text to select an existing Azure AD group name.These groups are pre-created in Azure AD.
    - **Membership type:** Select the membership type from the dropdown list. See [How Azure AD security group members match to Dataverse group team members](#how-azure-ad-security-group-members-match-to-dataverse-group-team-members).
    
    :::image type="content" source="media/dataverse-team-manage-new-team-azuread.png" alt-text="Screenshot of settings for a new Azure AD team.":::

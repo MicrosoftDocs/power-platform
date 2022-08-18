@@ -36,7 +36,7 @@ Most of these users are hidden from user views but they can be found by using th
 | | Dynamics 365 Athena-CDStoAzuredatalake | Dynamics365Athena-<br />CDStoAzuredatalake<br />@onmicrosoft.com |Service application to perform data integration between Microsoft Dataverse to Azure Data Lake. |DataLakeWorkspaceAppAccess |
 | | Dynamics 365 Athena2-CDStoAzuredatalake | Dynamics365Athena2-<br />CDStoAzuredatalake<br />@onmicrosoft.com |Service application to perform data integration between Dataverse to Azure Data Lake. |DataLakeWorkspaceAppAccess |
 | | EnterpriseSales | EnterpriseSales@onmicrosoft.com |Service application to perform data integration between Dataverse (Sales) to Azure Data Lake. |N/A |
-| | Finance and Operations Runtime Integration User | FinanceandOperations<br />RuntimeIntegrationUser<br />@onmicrosoft.com |Service application to perform dual-write data integration between Dataverse and Finance and Operations. |Finance and Operations Integration User |
+| | Finance and Operations Runtime Integration User | FinanceandOperations<br />RuntimeIntegrationUser<br />@onmicrosoft.com |Service application to perform dual-write data integration between Dataverse and finance and operations apps. |Finance and Operations Integration User |
 | | # SIAutoCapture | SIAutoCapture@onmicrosoft.com | To be used for Auto Capture solution business requirements to perform data query and execute plugins from backend services. | SalesInsights AutoCapture Admin |
 | | # Dynamics 365 Sales | Dynamics365Sales@onmicrosoft.com | To allow Dynamics 365 Sales to communicate with Dataverse and Azure Data Lake for analysis and data updates. | Sales system data sync and EAC App Access |
 | | Microsoft Project | Project@microsoft.com |Allow Project for the Web and Roadmap Service to communicate with Dataverse. |Project System and Portfolio User |
@@ -57,7 +57,7 @@ Most of these users are hidden from user views but they can be found by using th
 | |GDSGlobalDiscovery | GDSGlobalDiscovery<br />@onmicrosoft.com | To validate which environments that users can access. | Global Discovery Service  |
 | | BAP | BAP@onmicrosoft.com | To perform administrative operations on Dataverse linked environments: fetch user roles, provision users, assign roles in Power Platform portals.| N/A |
 | | Microsoft Forms Pro | enterprisesurveyappuser<br />@contoso.com | To perform data integration between Dynamics 365 Customer Voice and Dataverse | System Administrator  |
-| | PowerVIrtualAgents  | PowerVirtualAgents<br />@onmicrosoft.com | To manage the PVA capabilities within Dataverse environments | CCI Admin, System Customizer, and Environment Maker    |
+| | PowerVIrtualAgents  | PowerVirtualAgents<br />@onmicrosoft.com | To manage the PVA capabilities within environments | CCI Admin, System Customizer, and Environment Maker    |
 | | BizQA | BizQA@onmicrosoft.com | To access search telemetry to improve search experience | BizQAApp   |
 | | ProductInsights | ProductInsights@onmicrosoft.com | To export data from Customer Insights to Engagement Insights | DataLakeWorkspaceAppAccess    |
 | | Dynamics365 SalesForecasting | Dynamics365SalesForecasting<br />@onmicrosoft.com | To fetch table data and metadata for forecasting feature | ForecastAppUser    |

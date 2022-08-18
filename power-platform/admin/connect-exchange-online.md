@@ -1,14 +1,13 @@
 ---
 title: "Connect to Exchange Online | MicrosoftDocs"
 description: Connect to Exchange Online
-
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 12/09/2021
-author: mduelae
+author: jimholtz
 ms.subservice: admin
-ms.author: mkaur
-ms.reviewer: mkaur
+ms.author: jimholtz
+ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app:
@@ -35,6 +34,8 @@ With both [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-excha
   
 > [!TIP]
 >  To make sure you've got a good connection to [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)], run the [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/). For information about which tests to run, see [Test mail flow with the Remote Connectivity Analyzer](https://technet.microsoft.com/library/dn305950\(v=exchg.150\).aspx).
+> 
+> For ports required, see [Network ports for clients and mail flow in Exchange](/exchange/plan-and-deploy/deployment-ref/network-ports?view=exchserver-2019).
 
 
 ## Create an email server profile for Exchange Online

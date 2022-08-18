@@ -37,7 +37,7 @@ For bot and topic limits, see the [Quotas, limits, and configuration values](../
 
 ## Prerequisites
 
-[!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations-teams.md)]
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents-teams.md).
 
 ## Use system and sample topics
 
@@ -48,7 +48,7 @@ When you create a bot, a number of topics are automatically created.
 These topics fall into two categories:
   
 - Four pre-populated user topics, titled as lessons. These [lesson topics](authoring-template-topics-teams.md) can be used to help understand simple to complex ways of using nodes to create bot conversations. You can edit these topics in the same manner as for topics you create. You can also choose to delete them entirely.
-- A number of system topics. These are pre-populated topics that you are likely to need during a bot conversation. You can't delete, disable, or edit the trigger phrases of these topics, but you can customize the nodes on the authoring canvas. We recommend not customizing these topics until you are comfortable with creating an end-to-end bot conversation.
+- A number of [system topics](/authoring-system-topics.md). These are pre-populated topics that you are likely to need during a bot conversation. You can't delete, disable, or edit the trigger phrases of these topics, but you can customize the nodes on the authoring canvas. We recommend not customizing these topics until you are comfortable with creating an end-to-end bot conversation.
 
 You can edit both of these topic types in the same manner as for topics you create but you can't delete them.
 
@@ -68,7 +68,7 @@ You can edit both of these topic types in the same manner as for topics you crea
 
 1. Specify one or more trigger phrases for the topic in the **Trigger phrases** pane.
 
-   A trigger phrase is a phrase that a customer enters in the chat window to start a conversation with the bot. Once the conversation is started, the conversation follows the path you define. You can specify more than one trigger phrase for a topic. You can include punctuation in a trigger phrase, but it's best to use short phrases rather than long sentences.
+   You can specify more than one trigger phrase for a topic. You can include punctuation in a trigger phrase, but it's best to use short phrases rather than long sentences.
 
    :::image type="content" source="../media/authoring-create-edit-topics/topics-details-triggers.png" alt-text="Edit trigger phrases in the trigger phrases pane":::
 
@@ -104,13 +104,13 @@ You can edit both of these topic types in the same manner as for topics you crea
 
 1. When you create a new topic, a **Trigger phrases** node and a blank **Message** node are inserted for you.
 
-1. You can add additional nodes by selecting the **Plus** (**+**) icon on the line or branch between or after a node.
+1. You can add additional nodes by selecting **Add node** (**+**) on the line or branch between or after a node.
 
    :::image type="content" source="../media/authoring-create-edit-topics/handoff-add-node-teams.png" alt-text="Screenshot of adding a node." border="false":::
 
-1. To move or change the paths between a node, click and drag the node anchor, which looks like a small circle on top of the node. When you drag the node anchor, you'll see a dotted line indicating the original path. You can also double-click the anchor and then select the new place for the anchor (you won't see a dotted line).
+1. To move or change the paths between a node, drag the node anchor. It looks like a small circle on top of the node. When you drag the node anchor, you'll see a dotted line indicating the original path. You can also double-click the anchor and then select the new place for the anchor (you won't see a dotted line).
 
-   :::image type="content" source="media/authoring-create-edit-topics/move-anchor-node.png" alt-text="Screenshot of moving a node's anchor.":::
+   :::image type="content" source="../media/authoring-create-edit-topics/move-anchor-node.png" alt-text="Screenshot of moving a node's anchor.":::
 
 ### Insert nodes
 
@@ -132,7 +132,7 @@ If the node you are adding is the last in a topic, you can also add a **Go to an
 
 #### Ask a question
 
-1. To have the bot ask a question and get a response from the user, select **+** to add a node, and then **Ask a question** to add a new **Question** node.
+1. To have the bot ask a question and get a response from the user, select **Add node** (**+**) to add a node, and then **Ask a question** to add a new **Question** node.
 
     :::image type="content" source="../media/authoring-create-edit-topics/topics-question-teams.png" alt-text="Add a new question mode." border="false":::
 
@@ -165,7 +165,7 @@ If the node you are adding is the last in a topic, you can also add a **Go to an
 
 #### Add a condition
 
-1. To add branching logic based on [variables](authoring-variables-teams.md), select **+** to add a node, and then **Add a condition**.
+1. To add branching logic based on [variables](authoring-variables-teams.md), select **Add node** (**+**) to add a node, and then **Add a condition**.
 
 1. Choose the variable you want to use to determine if the bot conversation should branch at this point.
 
@@ -177,7 +177,7 @@ You can [call Power Automate Flows](advanced-flow-teams.md) by selecting **Call 
 
 #### Show a message
 
-1. To specify a response from the bot, select **+** to add a node, and then **Show a message** to add a new **Message** node.
+1. To specify a response from the bot, select **Add node** (**+**) to add a node, and then **Show a message** to add a new **Message** node.
 
 1. Enter what you want the bot to say in the text box. You can apply some basic formatting, such as bold, italics, and numbering.
 
@@ -191,9 +191,9 @@ When you end the conversation, you can have a survey appear that asks the user i
 
     :::image type="content" source="../media/authoring-create-edit-topics/topics-nodes-survey-teams.png" alt-text="End with survey." border="false":::
 
-#### Go to another topic
+#### Redirect to another topic
 
-1. To automatically have the bot move to a separate topic, select **+** to add a node, and then **Go to another topic**.
+1. To automatically have the bot move to a separate topic, select **Add node** (**+**) to add a node, and then **Redirect to another topic**.
 
 1. In the flyout menu, select the topic the bot should divert to. For example, you might want to send the user to a specific topic about the closure of a store if they ask about store hours for that store.
 
@@ -205,7 +205,7 @@ You can consider the redirected topic as a "subtopic".
 
 :::image type="content" source="../media/authoring-create-edit-topics/authoring-subtopic-redirect-teams.png" alt-text="Screenshot of the authoring canvas showing nodes under a redirected topic node.":::
 
-If you redirect to any of the following [system topics](#use-system-and-sample-topics), however, the entire conversation will end:
+If you redirect to any of the following [system topics](/authoring-system-topics.md), however, the entire conversation will end:
 
 - End of Conversation
 - Confirmed Success

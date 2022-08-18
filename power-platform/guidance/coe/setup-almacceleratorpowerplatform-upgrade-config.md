@@ -25,7 +25,7 @@ The ALM accelerator for Power Platform (AA4PP), apart from the solution componen
 
 ## Before you start
 
-If you're installing the ALM accelerator for the first time, [follow this link](/power-platform/guidance/coe/setup-almacceleratorpowerplatform.md) and skip this document.
+If you're installing the ALM accelerator for the first time, [follow this link](/power-platform/guidance/coe/setup-almacceleratorpowerplatform) and skip this document.
 
 In every release the version of the solution is updated to the date when was created, example: 1.0.20220406.1 would mean version 1.0 created on 20220406 (yyyyMMdd) April 6 of 2022.
 

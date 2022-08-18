@@ -24,14 +24,14 @@ In 2018, we introduced [Unified Interface](/powerapps/user/unified-interface), t
 
 ### New environments
 
-All new Microsoft Dataverse environments and Dataverse environments, including those created in existing tenants, will be provisioned in Unified Interface Only mode per the schedule below. 
+All new environments with a Dataverse database, including those created in existing tenants, will be provisioned in Unified Interface Only mode per the schedule below. 
 
 **Note**: Some geographical regions will get the changes ahead of schedule by as much as 2-3 weeks. 
 
 |Environment types  |Release date  |
 |---------|---------|
 |New trial environments     | December 12, 2018         |
-|New trial and production Dataverse environments     | February 2, 2019        |
+|New trial and production environments with a Dataverse database     | February 2, 2019        |
 |New production and sandbox environments     | June 8, 2019       |
 
 ### Existing environments

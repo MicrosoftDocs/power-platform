@@ -108,7 +108,7 @@ To share user settings created for a particular user profile, we recommend that 
 
    1. Under **Access -Teams**, select **See all**, and then select **Create Team**.
 
-   1. Enter the required fields, and select **AAD Group Team** as the **Team Type**.
+   1. Enter the required fields, and select **AAD Group Team** (AAD Security Group or AAD Office Group) as the **Team Type**.
 
    1. Select the **AAD Group** to use for this team, and then select **Next**.
 

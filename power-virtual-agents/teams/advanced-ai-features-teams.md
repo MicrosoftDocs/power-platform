@@ -31,6 +31,10 @@ You can read more about the AI behind Power Virtual Agents in the [Enable advanc
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWKo4a]
 >  
 
+## Prerequisites
+
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents-teams.md).
+
 ## Enable or disable AI capabilities
 
 To use these advanced AI capabilities in Power Virtual Agents:

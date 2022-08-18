@@ -1,6 +1,6 @@
 ---
 title: Dialog control reference | Creator Kit
-description: Learn about the details and properties of Dialog control in the Creator Kit.
+description: Learn about the details and properties of the Dialog control in the Creator Kit.
 author: denisem-msft
 manager: devkeydet
 ms.component: pa-maker
@@ -29,11 +29,11 @@ A control used to group content.
 
 ## Description
 
-A dialog box (Dialog) is a temporary pop-up that takes focus from the page or app and requires people to interact with it. It’s primarily used for confirming actions, such as deleting a file, or asking people to make a choice.
+A dialog box (Dialog) is a temporary pop-up window that takes focus from the page or app and requires people to interact with it. It's primarily used for confirming actions, such as deleting a file, or asking people to make a choice.
 
 This canvas component mimics the style and behavior of the [Fluent UI Dialog control](https://developer.microsoft.com/fluentui#/controls/web/Dialog).
 
-[View component in the Creator Kit GitHub repository](https://github.com/microsoft/powercat-creator-kit/tree/main/CreatorKitCore/SolutionPackage/CanvasApps/cat_powercatcomponentlibrary_0be3a_DocumentUri_msapp_src)
+[View the component in the Creator Kit GitHub repository](https://github.com/microsoft/powercat-creator-kit/tree/main/CreatorKitCore/SolutionPackage/CanvasApps/cat_powercatcomponentlibrary_0be3a_DocumentUri_msapp_src).
 
 ## Limitations
 
@@ -43,26 +43,26 @@ This canvas component can only be used in canvas apps and custom pages.
 
 | Property | Description |
 | -------- | ----------- |
-| `Buttons` | A data set that defines the buttons. |
+| `Buttons` | A dataset that defines the buttons. |
 | `Title` | Text displayed in the title section. |
 | `Overlay Color` | Color displayed in the overlay area. |
-| `DialogWidth` | The width of the Dialog (not to be confused with the control width, which should span the app width). |
-| `DialogHeight` | The height of the Dialog (not to be confused with the control height, which should span the app height). |
+| `DialogWidth` | The width of the dialog (not to be confused with the control width, which should span the app width). |
+| `DialogHeight` | The height of the dialog (not to be confused with the control height, which should span the app height). |
 | `SubTitle` | Text displayed under the title |
-| `OnCloseSelect` | Action expression that executes when the close button is selected. |
-| `OnButtonSelect` | Action expression that executes when one of the action buttons are selected. |
+| `OnCloseSelect` | Action expression that's executed when the close button is selected. |
+| `OnButtonSelect` | Action expression that's executed when one of the action buttons are selected. |
 
 ## Configure Dialog visibility
 
-Make the `Dialog` control itself (or the surface it's located within) visible when a boolean (true/false) type variable changes to true, and assign that variable to the dialog's visibility property. Once the dialog is displayed, you can hide the dialog by updating the variable on the reset property, which is triggered when the close icon is clicked.
+Make the `Dialog` control itself (or the surface it's located within) visible when a Boolean (true/false) type variable changes to true, and assign that variable to the dialog's visibility property. After the dialog is displayed, you can hide the dialog by updating the variable on the reset property, which is triggered when the close icon is selected.
 
-Power Fx formula to open the dialog, in an action formula on another component somewhere in the app (for example, the `OnSelect` property of a button):
+The following shows the Power Fx formula to open the dialog in an action formula on another component somewhere in the app (for example, the `OnSelect` property of a button):
 
 ```powerapps-dot
 UpdateContext({ showHideDialog: true })
 ```
 
-Power Fx formula to close the dialog, in the `OnCloseSelect` property of the Dialog:
+The following is the Power Fx formula to close the dialog in the `OnCloseSelect` property of the dialog:
 
 ```powerapps-dot
 UpdateContext({ showHideDialog: true })
@@ -106,6 +106,6 @@ Table(
 
 ## Best practices
 
-See [Fluent UI `Elevation` control best practices](https://developer.microsoft.com/fluentui#/styles/web/elevation).
+Got to [Fluent UI Dialog control best practices](https://developer.microsoft.com/fluentui#/controls/web/Dialog).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

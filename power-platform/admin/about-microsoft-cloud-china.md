@@ -38,7 +38,7 @@ Due to certain technological dependencies, the following features listed will no
 - [Manage your documents using SharePoint](manage-documents-using-sharepoint.md) isn’t supported with Dataverse services operated by 21Vianet. 
 - [Search for rows in an app](/powerapps/user/search) or **Categorized Search** used for searching rows across multiple tables will be unavailable.
 - [Microsoft 365 Groups](/dynamics365/customerengagement/on-premises/basics/collaborate-with-colleagues-using-office-365-groups) feature used for shared workspace for emails, conversations, files, and events in Dataverse services will be unavailable.
-- [Online Management API](/powerapps/developer/common-data-service/online-management-api) (Admin API) enables customers to create and manage the Dataverse environments using REST API will be unavailable.
+- [Online Management API](/powerapps/developer/common-data-service/online-management-api) (Admin API) enables customers to create and manage the environments using REST API will be unavailable.
 - [Company News Timeline](/dynamics365/customer-engagement/company-news-timeline/get-company-news-timeline-dynamics-365-phones-tablets) provides valuable insights from the latest news about tenant customers on the phone or tablet. This feature will be unavailable.
 - [Global Discovery Service API](/powerapps/developer/common-data-service/webapi/discover-url-organization-web-api) which programmatically enables customer applications to discover user organization (also known as environment) and find environments across regions will not be available.
 - The service health Organization Insights feature will be unavailable.
@@ -81,7 +81,7 @@ To connect Dynamics 365 with your Exchange Online tenant in China and use server
 
 ## Additional resources
 - [Apps Operated by 21Vianet Support](21vianet-support.md)
-- [Finance and Operations operated by 21Vianet](/dynamics365/unified-operations/dev-itpro/deployment/china-local-deployment)
+- [Dynamics 365 Finance operated by 21Vianet](/dynamics365/unified-operations/dev-itpro/deployment/china-local-deployment)
 - [Support site for 21Vianet (in Chinese)](https://www.21vbluecloud.com/Dynamics365/)
 - [Privacy statement (Dynamics 365 隐私声明)](https://www.21vbluecloud.com/Dynamics365/d365-privacy/)
 - [Service Level agreement(世纪互联在线服务的服务级别协议)](https://www.21vbluecloud.com/Dynamics365/d365-sla/)

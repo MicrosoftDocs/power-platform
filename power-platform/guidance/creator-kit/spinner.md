@@ -1,6 +1,6 @@
 ---
 title: Spinner control reference | Creator Kit
-description: Learn about the details and properties of Spinner control in the Creator Kit.
+description: Learn about the details and properties of the Spinner control in the Creator Kit.
 author: denisem-msft
 manager: devkeydet
 ms.component: pa-maker
@@ -30,13 +30,13 @@ A control used to create a loading experience.
 
 ## Description
 
-A Spinner is an outline of a circle that animates around itself indicating to the user that things are processing. It appears when the process is unsure how long a task will take making it the indeterminate version of a [ProgressIndicator control](progressindicator.md).
+A Spinner is an outline of a circle that animates around itself indicating to the user that things are processing. It appears when the process is unsure how long a task will take, making it the indeterminate version of a [ProgressIndicator control](progressindicator.md).<!--note from editor: Very nice!-->
 
 Spinners can vary in size, and can be located inline with content or centered. Spinners generally appear after an action is being processed or committed. They're subtle and generally don't take up much space, but are transitions from the completed task.
 
 This canvas component mimics the style and behavior of the [Fluent UI Spinner control](https://developer.microsoft.com/fluentui#/controls/web/spinner).
 
-[View component in the Creator Kit GitHub repository](https://github.com/microsoft/powercat-creator-kit/tree/main/CreatorKitCore/SolutionPackage/CanvasApps/cat_powercatcomponentlibrary_0be3a_DocumentUri_msapp_src)
+[View the component in the Creator Kit GitHub repository](https://github.com/microsoft/powercat-creator-kit/tree/main/CreatorKitCore/SolutionPackage/CanvasApps/cat_powercatcomponentlibrary_0be3a_DocumentUri_msapp_src).
 
 ## Limitations
 
@@ -46,7 +46,7 @@ This canvas component can only be used in canvas apps and custom pages.
 
 | Property | Description |
 | -------- | ----------- |
-| `AnimatedGIF` | A text field that renders the image displayed in the spinner such as a URL to a publicly hosted image   |
+| `AnimatedGIF` | A text field that renders the image displayed in the spinner, such as a URL to a publicly hosted image   |
 | `Text` | Text displayed under the Spinner control |
 | `IsLoading` | Whether the spinner control is visible |
 
@@ -75,6 +75,6 @@ Then, provide the `var_showLoader` variable as the value for the `IsLoading` pro
 
 ## Best practices
 
-See [Fluent UI Spinner control best practices](https://developer.microsoft.com/fluentui#/controls/web/spinner)
+Go to [Fluent UI Spinner control best practices](https://developer.microsoft.com/fluentui#/controls/web/spinner).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

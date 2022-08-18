@@ -3,7 +3,6 @@ title: "Work with solutions using the Dataverse SDK | Microsoft Docs"
 description: "Learn about the .NET APIs that are available to manage Microsoft Dataverse solutions."
 keywords: 
 author: mikkelsen2000
-ms.service: powerapps
 ms.author: pemikkel
 manager: kvivek
 ms.custom: ""

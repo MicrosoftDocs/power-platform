@@ -1,6 +1,6 @@
 ---
 title: Breadcrumb control reference | Creator Kit
-description: Learn about the details and properties of Breadcrumb control in the Creator Kit.
+description: Learn about the details and properties of the Breadcrumb control in the Creator Kit.
 author: denisem-msft
 manager: devkeydet
 ms.component: pa-maker
@@ -30,12 +30,12 @@ A control used to provide navigation.
 
 ## Description
 
-`Breadcrumb` controls should be used as a navigational aid in your app or site. They indicate the current page's location within a hierarchy and help the user understand where they are in relation to the rest of that hierarchy. Breadcrumb also provides one-click access to higher levels of that hierarchy.
+`Breadcrumb` controls should be used as a navigational aid in your app or site. They indicate the current page's location within a hierarchy and help the user understand where they are in relation to the rest of that hierarchy. A breadcrumb also provides one-click access to higher levels of that hierarchy.
 
-This code component provides a wrapper around the [Fluent UI `Breadcrumb`](https://developer.microsoft.com/fluentui#/controls/web/breadcrumb) control for use in canvas and custom pages. 
+This code component provides a wrapper around the [Fluent UI Breadcrumb](https://developer.microsoft.com/fluentui#/controls/web/breadcrumb) control for use in canvas apps and custom pages. 
 
 > [!NOTE]
-> Component source code and more information available at the [Creator kit GitHub repository](https://github.com/microsoft/powercat-creator-kit).
+> You can find component source code and more information at the [Creator Kit GitHub repository](https://github.com/microsoft/powercat-creator-kit).
 
 ## Limitations
 
@@ -51,13 +51,13 @@ This code component can only be used in canvas apps and custom pages.
 
 ## Items structure
 
-Each item uses the below schema to visualize data in the component. 
+Each item uses the following schema to visualize data in the component. 
 
 | Name | Description |
 | ------ | ----------- |
 | `ItemKey` | Arbitrary unique string associated with the breadcrumb item. |
 | `ItemDisplayName` | Text to display in the breadcrumb item. |
-| `ItemClickable` | If set to true, enables the item to be clickable. |
+| `ItemClickable` | If set to true, enables the item to be selectable. |
 
 Example:
 
@@ -83,7 +83,7 @@ Use the [**Switch()**](/power-apps/maker/canvas-apps/functions/function-if) form
 
 Replace the `false` values with appropriate expressions in the Power Fx language. 
 
-As this control is used for navigation, a logical action is to use [navigation functions](/power-apps/maker/canvas-apps/functions/function-navigate) (ideally to a relevant screen with the related data loaded).
+Because this control is used for navigation, a logical action is to use [navigation functions](/power-apps/maker/canvas-apps/functions/function-navigate) (ideally to a relevant screen with the related data loaded).
 
   ```powerapps-dot
     Switch( Self.Selected.ItemKey,
@@ -100,6 +100,6 @@ As this control is used for navigation, a logical action is to use [navigation f
 
 ## Best practices
 
-See [Fluent UI `Breadcrumb` control best practices](https://developer.microsoft.com/fluentui#/controls/web/breadcrumb).
+Go to [Fluent UI Breadcrumb control best practices](https://developer.microsoft.com/fluentui#/controls/web/breadcrumb).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

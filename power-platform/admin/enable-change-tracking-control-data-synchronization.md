@@ -18,7 +18,7 @@ search.app:
 ---
 # Enable change tracking to control data synchronization
 
-Large organizations that synchronize their data with external data sources can now enable entities for change tracking. You can export or retrieve a selected set of data, and then keep the external data warehouse in sync.  
+Large organizations that synchronize their data with external data sources can enable entities for change tracking. You can export or retrieve a selected set of data, and then keep the external data warehouse in sync.  
   
  By selecting, or deselecting, change tracking for specific entities you can reduce the load on your server resources and save processing time when extracting data and synchronizing it to an external store. You can enable change tracking for both system and custom entities.  
   

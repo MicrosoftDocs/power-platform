@@ -32,6 +32,7 @@ After you've [published your bot](publication-fundamentals-publish-channels-team
 
 ## Prerequisites
 
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents-teams.md).
 - The bot must have been [published at least once](publication-fundamentals-publish-channels-teams.md).
 - The bot must be [made available to end users in Microsoft Teams](publication-add-bot-to-microsoft-teams-teams.md), and the end users must have the bot installed. The bot can't deliver the message to the recipient if:
   - The recipient hasn't installed the bot in Microsoft Teams.
@@ -39,7 +40,6 @@ After you've [published your bot](publication-fundamentals-publish-channels-team
   - The recipient has blocked the bot.
   - The recipient doesn't have permission to chat with the bot - in which case you'll need to [share the bot with users](admin-share-bots-teams.md).
 - [Power Automate](/power-automate/getting-started) flows used by the bot must be created in the same environment.
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations-teams.md)]
 
 > [!IMPORTANT]
 > You can only send proactive messages to recipients who have installed the bot in Microsoft Teams.  
@@ -50,7 +50,7 @@ After you've [published your bot](publication-fundamentals-publish-channels-team
 
 You will need to create a Power Automate flow to send proactive messages with your bot. You can create a new flow from:
 
-- The [Power Virtual Agents authoring canvas](advanced-flow-teams.md#create-a-new-flow-from-the-power-virtual-agents-authoring-canvas).
+- The [Power Virtual Agents authoring canvas](advanced-flow-teams.md).
 - The [Power Apps Teams app](/power-automate/teams/create-flows-power-apps-app).
 - The [Power Automate maker portal](https://powerautomate.com/)'s solutions section of the environment.
 

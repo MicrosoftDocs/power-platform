@@ -8,7 +8,7 @@ ms.reviewer: jimholtz
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/23/2022
+ms.date: 06/17/2022
 search.audienceType: 
   - admin
 search.app:
@@ -17,7 +17,7 @@ search.app:
   - Powerplatform
   - Flow
 ---
-# Create or edit a security role to manage access
+# Create or edit a security role to manage access 
 
 You can create new security roles to accommodate changes in your business requirements or you can edit the privileges associated with an existing security role.
   

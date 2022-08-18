@@ -60,7 +60,7 @@ There are various ways to add or create a database:
 
 ## Security model for the databases
 When a database is created, the users who have environment roles assigned to them, will continue to maintain those privileges.  
-    Users with **Environment Admin** role are now assigned to **System Administrator** role. 
+    Users with **Environment Admin** role are assigned to **System Administrator** role. 
     Users with **Environment Maker** continue to possess the same role.
 
 You can assign additional users to pre-defined roles or even create custom roles. See [Database Security](database-security.md) for more details.

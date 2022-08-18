@@ -5,10 +5,9 @@ author: samathur
 ms.subservice: admin
 ms.author: samathur
 ms.reviewer: jimholtz
-
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/02/2022
+ms.date: 07/28/2022
 search.audienceType: 
   - admin
 search.app:
@@ -85,8 +84,8 @@ Some apps require additional steps to enable early access features. If you have 
 |Early access apps  |Description of manual steps  |
 |---------|---------|
 |Dynamics 365 Project Service Automation and Project Operations    | As part of April Wave 1 2022, Project Operations and Project Service Automation will be releasing an update to enable the Modern Approvals feature. For more information, see [Upgrade considerations for Modern Approvals](/dynamics365/project-operations/upgrade/upgrade-considerations-modern-approvals).  |
-| Dynamics 365 Resource Scheduling Optimization | If you have Dynamics 365 Resource Scheduling Optimization, you will need to update or deploy Resource Scheduling Optimization in the Power Platform admin center. For instructions, see [Manage Dynamics 365 apps](manage-apps.md), [Update RSO](/dynamics365/field-service/upgrade-field-service#resource-scheduling-optimization), and [Deploy RSO](/dynamics365/field-service/rso-deployment). |
 |Microsoft Cloud for Healthcare | If you have Microsoft Cloud for Healthcare solutions powered by Dynamics 365, you will need to update or deploy from the [Microsoft Cloud Solution Center](https://solutions.microsoft.com/Microsoft%20Cloud%20for%20Healthcare#). For detailed instructions, see [Deploy Microsoft Cloud for Healthcare](/dynamics365/industry/healthcare/deploy). | 
+| Dynamics 365 Service Scheduling | Once you opt-in to early access: <br /> 1. Sign in to the Power Platform admin center as a tenant admin. <br />2. Select **Dynamics 365 Service Scheduling**. <br /> 3. Select **Install** and follow the steps. |
 
 > [!IMPORTANT]
 > Be sure to enable the early access updates in the Power Platform admin center first. If you run the Dynamics 365 Marketing setup wizard to update your Marketing app to a new release wave before activating the early access updates in the Power Platform admin center, you must [run the Dynamics 365 Marketing setup wizard again](/dynamics365/customer-engagement/marketing/re-run-setup) after opting in to install and enable the early access features. 
@@ -94,7 +93,7 @@ Some apps require additional steps to enable early access features. If you have 
 
 ## Update status and Retry 
 
-To check the update status, sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com/) and select the environment. From **Updates**, you'll see the update process of each of the applications. 
+To check the update status, sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) and select the environment. From **Updates**, you'll see the update process of each of the applications. 
 
 ### Retry 
 If an application update failed during the opt-in update, you can use the **Retry** button to restart the update for the failed application.

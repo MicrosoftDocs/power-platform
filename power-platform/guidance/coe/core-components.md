@@ -89,7 +89,7 @@ The [sync flows](#flows) of the CoE Starter Kit sync your tenant resources to th
   - Publisher
   - Tier (standard/premium)
 
-- **Connection Reference** represents the linking table for the many-to-many relationships among connectors (PowerApps Connector) and cloud flows (Flows) or apps (PowerApps App).
+- **CoE Connection Reference** represents the linking table for the many-to-many relationships among connectors (PowerApps Connector) and cloud flows (Flows) or apps (PowerApps App).
 
 - **Connection Reference Identity** stores the connections for each environment including their identity
   - Environment
@@ -164,12 +164,12 @@ The [sync flows](#flows) of the CoE Starter Kit sync your tenant resources to th
   - Type (topic, table)
   - Uses flow (yes/no)
 
-- **PVA Component Flow** represents a flow triggered as part of Power Virtual Agents. The following information is available for each bot component flow:
+- **PVA Component Flow Lookup** represents a flow triggered as part of Power Virtual Agents. The following information is available for each bot component flow:
   - Name
   - ID
   - Created on/by
 
-- **RPA** represents a desktop flow. The following information is available for each desktop flow:
+- **Desktop Flow** represents a desktop flow. The following information is available for each desktop flow:
   - Display name
   - ID
   - Created on
@@ -188,6 +188,27 @@ The [sync flows](#flows) of the CoE Starter Kit sync your tenant resources to th
   - Completed On
   - Error Code
   - Error Message
+
+- **Business Process Flow** represents a business process flow. The following information is available for each BPF:
+  - Display name
+  - ID
+  - Created on
+  - Owner
+  - Modified on
+  - Type (Background, Task)
+  - State
+  - Environment
+  - Primary Entity 
+
+- **Power Platform Solution** represents a solution. The following information is available for each solution:
+  - Display name
+  - Unique name
+  - Environment
+  - Publisher
+  - isManaged
+  - Version
+  - Creator
+  - Description
 
 - **Environment Capacity** stores capacity information for an environment
   - Capacity Type (File, Database, Log)
@@ -222,6 +243,16 @@ Additional to the above listed inventory tables, the following helper tables sup
   - Flag
   - Help Link (link to documentation)
 
+- **Customized Email** holds meta-data about emails sent from flows in the Core Solution to allow for admins to tailor them without making unmanaged layers on the flows:
+  - Flow Name
+  - Action Name
+  - Subject
+  - Body
+  - CC
+  - ReplyTo
+  - Send on Behalf
+
+
 > [!NOTE]
 > To easily explore and manage data stored in Dataverse, we recommend that you install the [Microsoft Power Apps Office Add-in](https://appsource.microsoft.com/product/office/WA104380330?tab=Overview). More information: [Working with data in Dataverse using the Excel Add-in!](https://powerapps.microsoft.com/blog/cds-for-apps-excel-importexport/)
 
@@ -233,12 +264,17 @@ Additional to the above listed inventory tables, the following helper tables sup
 
 - **Power Platform User SR**  Gives read-only access to the resources in the custom tables.
 
+> [!NOTE]
+> These security roles only give permissions to the custom tables, not to the environment generally. If you would like users to see apps and flows in the environment you will need to grant them access individually to each object, or add them to another security role like System Admin or Environment Maker. 
+Learn more: [Security roles and privileges](/power-platform/admin/security-roles-privileges)
+
 ### Flows
 
 | Flow Name | Type | Interval | Description |
 | ---- | ---- | --- | ---- |
 | Admin \| Sync Template v3 | Schedule | Daily | This flow retrieves the environments in your tenant by using [List Environments as Admin](/connectors/powerplatformforadmins/#list-environments-as-admin), and creates or updates a record for each environment in the Dataverse Environment table. Running this flow will also trigger the rest of the sync flows indirectly by updating the environment records in the Dataverse instance. |
 | Admin \| Sync Template v3 (Apps) | Automated | triggered by Admin \| Sync Template v3 | This flow gets app information by using [Get Apps as Admin](/connectors/powerappsforadmins/#get-apps-as-admin). This information is then created or updated in the PowerApps App table. |
+| Admin \| Sync Template v3 (Business Process Flows) | Automated | triggered by Admin \| Sync Template v3 | This flow retrieves business process flow information. This information is retrieved from underlying Dataverse tables and requires the user running the flow to have system administrator privileges in the environment. Turning on this flow is optional, only turn this flow on if a tenant-level overview of business process flows is important. |
 | Admin \| Sync Template v3 (Connectors) | Scheduled | Daily | This flow gets connector information by using [Get Connectors](/connectors/powerappsforappmakers/#get-connectors), and stores information such as the connector name, publisher, and tier. |
 | Admin \| Sync Template v3 (Custom Connector) | Automated | triggered by Admin \| Sync Template v3 | This flow gets custom connector information by using [Get Custom Connectors as Admin](/connectors/powerappsforadmins/#get-custom-connectors-as-admin), and stores information such as the name, endpoint, and created by/on. |
 | Admin \| Sync Template v3 (Connection Identities) | Automated | triggered by Admin \| Sync Template v3 | This flow gets connection identity information by using Get Connections as Admin. This information is then created or updated in the Connection Reference Identity table. |
@@ -249,17 +285,20 @@ Additional to the above listed inventory tables, the following helper tables sup
 | Admin \| Sync Template v3 (Flows) | Automated | triggered by Admin \| Sync Template v3 | This flow gets cloud flow information by using [List Flows as Admin](/connectors/flowmanagement/#list-flows-as-admin). Also updates the record if flows have been deleted. |
 | Admin \| Sync Template v3 (Model Driven Apps) | Automated | triggered by Admin \| Sync Template v3 | This flow gets model-driven app information. This information is retrieved from underlying Dataverse tables and requires the user running the flow to have system administrator privileges in the environment. |
 | Admin \| Sync Template v3 (Portals) | Automated | triggered by Admin \| Sync Template v3 | This flow retrieves Power Apps Portal information. This information is retrieved from underlying Dataverse tables and requires the user running the flow to have system administrator privileges in the environment. Turning on this flow is optional, only turn this flow if you're using portals in your tenant and are interested in getting a tenant-wide overview. |
-| Admin \| Sync Template v3 (PVA) | Automated | triggered by Admin \| Sync Template v3 | This flow retrieves Power Virtual Agents (bot) information. This information is retrieved from underlying Dataverse tables and requires the user running the flow to have system administrator privileges in the environment. Turning on this flow is optional, only turn this flow on if a tenant-level overview of chatbots is important. |
+| Admin \| Sync Template v3 (PVA) | Automated | triggered by Admin \| Sync Template v3 | This flow retrieves Solution information. This information is retrieved from underlying Dataverse tables and requires the user running the flow to have system administrator privileges in the environment. Turning on this flow is optional, only turn this flow on if a tenant-level overview of solutions is important. |
+| Admin \| Sync Template v3 (Solutions) | Automated | triggered by Admin \| Sync Template v3 | This flow retrieves Power Virtual Agents (bot) information. This information is retrieved from underlying Dataverse tables and requires the user running the flow to have system administrator privileges in the environment. Turning on this flow is optional, only turn this flow on if a tenant-level overview of chatbots is important. |
 | Admin \| Sync Template v3 (Sync Flow Errors) | Scheduled | Daily | This flow sends an email to the admin about environments that failed to sync (with a link to the flow instance). |
 | CLEANUP - Admin \| Sync Template v3 (Check Deleted) | Scheduled | Every two weeks | This long running flow runs every other week, and compares CoE to the tenant to determine if any objects were deleted since last run. Either just marks them as deleted (if env var Also Delete from CoE = no) or deletes them from the CoE (if Also Delete from CoE = yes). The audit log solution is able to find this information in on a daily basis for apps and flows, but not for other resources such as environments, desktop flows and chatbots. Run this flow periodically to check for deleted resources. |
 | CLEANUP - Admin \| Sync Template v3 (Connection Status) | Scheduled | Weekly | This flow runs weekly, and checks if any apps or flows have unresolved connections.|
 | CLEANUP - Admin \| Sync Template v3 (Delete Bad Data) | Scheduled | Daily | This flow runs daily, and looks for data in the inventory that is not complete, for example flows without an environment, and removes this data. |
 | CLEANUP - Admin \| Sync Template v3 (Orphaned Makers) | Scheduled | Weekly | This flow runs weekly, and checks if any makers have left the organization - if maker information can not be found in Azure AD/Office 365 Users, any resources created by the maker (apps, cloud and desktop flows, environments, chatbots) are marked as orphaned. |
 | CLEANUP - Admin \| Sync Template v3 (Power Apps User Shared With) | Scheduled | Every two weeks | This long running flow runs every other week, and gets who the app is shared with by using [Get App Role Assignments as Admin](/connectors/powerappsforadmins/#get-app-role-assignments-as-admin). |
+| CLEANUP HELPER - Check Deleted (Business Process Flows) | Child flow | called from Check Deleted | Does the check deleted work for a given environment for business process flows  |
 | CLEANUP HELPER - Check Deleted (Canvas Apps) | Child flow | called from Check Deleted | Does the check deleted work for a given environment for canvas apps  |
 | CLEANUP HELPER - Check Deleted (Cloud Flows) | Child flow | called from Check Deleted | Does the check deleted work for a given environment for cloud flows  |
 | CLEANUP HELPER - Check Deleted (Model Driven Apps) | Child flow | called from Check Deleted | Does the check deleted work for a given environment for model driven apps  |
 | CLEANUP HELPER - Check Deleted (PVA) | Child Flow | called from Check Deleted | Does the check deleted work for a given environment for chatbots  |
+| CLEANUP HELPER - Check Deleted (Solutions) | Child Flow | called from Check Deleted | Does the check deleted work for a given environment for solutions  |
 | CLEANUP HELPER - Check Deleted (Custom Connectors) | Child Flow | called from Check Deleted | Does the check deleted work for a given environment for custom connectors  |
 | CLEANUP HELPER - Power Apps User Shared With | Child Flow | called from CLEANUP - Admin \| Sync Template v3 (Power Apps User Shared With) | runs once per environment to check |
 | HELPER - CanvasAppOperations | Child Flow | Instant | This flow takes in the environment, app, and operation to perform as well as the GUID for the new maker if the operation is to reassign ownership. The operations supported are Delete and Assign (which reassigns owner). It performs the action on the actual object in the tenant and also updates the inventory. |
@@ -300,12 +339,12 @@ Use this app to:
 
 #### DLP Editor v2
 
-DLP Editor v2 is a canvas app that reads and updates data loss prevention (DLP) policies while showing a list of apps and flows that are impacted by the policy configurations.
+DLP Editor v2 is a canvas app that reads and updates data loss prevention (DLP) policies while showing a list of canvas apps and cloud flows that are impacted by the policy configurations.
 
 Use this app to:
 
 - Make changes to DLP policies.
-- See what impact each change will have.
+- See what impact each change will have on existing canvas apps and cloud flows.
 - Mitigate the risk by contacting makers.
 
 More information: [Data Loss Prevention policies](../../admin/wp-data-loss-prevention.md)
@@ -313,6 +352,9 @@ More information: [Data Loss Prevention policies](../../admin/wp-data-loss-preve
 **Permission**: Intended to be used only by admins. Power Platform Service Admin or Global Admin permission is required. Share this app with your CoE admins.
 
 ![DLP Editor.](media/dlp_new1.png "DLP Editor")
+
+> [!NOTE]
+> This app cannot check for DLP impact in other object types. However you can explore this other offering for assistance with determining DLP impact of Desktop Flows [RPA CLI](https://github.com/rpapostolis/rpa-cli).
 
 ### Set App Permissions
 

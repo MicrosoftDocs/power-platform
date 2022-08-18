@@ -86,7 +86,7 @@ Microsoft services are developed using the Microsoft Secure Development Lifecycl
 
 **Report**
 
-The GDPR sets new standards in transparency, accountability, and record-keeping. Organizations processing personal data will need to keep detailed records to be compliant. Microsoft provides capabilities to help meet data reporting requirements. With Microsoft Dynamics 365 and Dataverse environments, you can: 
+The GDPR sets new standards in transparency, accountability, and record-keeping. Organizations processing personal data will need to keep detailed records to be compliant. Microsoft provides capabilities to help meet data reporting requirements. With environments, you can: 
 
 - Track and record changes to personal data using the audit functionality. 
 - Track and record processing activities relevant to a Data Protection Impact Assessment (DPIA) using audit capabilities. 

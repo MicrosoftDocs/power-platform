@@ -8,7 +8,6 @@ manager: kvivek
 ms.custom: ""
 ms.date: 04/05/2022
 ms.reviewer: "pehecke"
-ms.service: powerapps
 ms.topic: "article"
 search.audienceType: 
   - developer

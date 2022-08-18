@@ -1,0 +1,44 @@
+- name: For developers
+  items:
+  - name: Microsoft Power Platform developer documentation
+    href: ./index.yml
+  - name: Power Platform for developers
+    href: get-started.md
+  - name: Fusion development
+    href: fusion-development.md
+  - name: Tools
+    expanded: true
+    items:
+      - name: Power Platform CLI 
+        items:
+        - name: What is Power Platform CLI
+          href: cli\introduction.md
+        - name: Power Platform CLI Reference
+          href: cli\reference\index.md
+          items:
+          - name: pac admin
+            href: cli\reference\admin.md
+          - name: pac application
+            href: cli\reference\application.md
+          - name: pac auth
+            href: cli\reference\auth.md
+          - name: pac canvas
+            href: cli\reference\canvas.md
+          - name: pac data
+            href: cli\reference\data.md
+          - name: pac help
+            href: cli\reference\help.md
+          - name: pac org
+            href: cli\reference\org.md
+          - name: pac package
+            href: cli\reference\package.md
+          - name: pac paportal
+            href: cli\reference\paportal.md
+          - name: pac pcf
+            href: cli\reference\pcf.md
+          - name: pac plugin
+            href: cli\reference\plugin.md
+          - name: pac solution
+            href: cli\reference\solution.md
+          - name: pac telemetry
+            href: cli\reference\telemetry.md

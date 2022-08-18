@@ -1,10 +1,9 @@
 ---
 ROBOTS: NOINDEX,NOFOLLOW
-title: "Fundamentals - Publish a chatbot to various channels (contains video)"
-description: "Publish your bot to the web, Microsoft Teams, Facebook, or even use an existing Azure Bot Service framework."
+title: Fundamentals - Publish a chatbot to various channels
+description: Publish your bot to a channel so that your customers can engage with it where they are.
 keywords: "Publish; demo; demo website; channels, PVA"
-ms.date: 01/25/2022
-
+ms.date: 05/31/2022
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -13,35 +12,33 @@ ms.custom: "publication, fundamentals, ceX"
 ms.collection: virtual-agent
 ---
 
-# Key concepts - Publish your bot
+# Publish your bot
 
 [!INCLUDE [Build 2022](includes/build-22-disclaimer.md)]
 
-With Power Virtual Agents, you can publish bots to engage with your customers on multiple platforms or channels. These include live websites, mobile apps, and messaging platforms like Microsoft Teams and Facebook.
+You need to publish your bot before your customers can engage with it. You can publish your bot on multiple platforms, or channels. Channels available in Power Virtual Agents include live websites, mobile apps, and messaging platforms like Microsoft Teams and Facebook.
 
-After you've published at least once, you can connect your bot to more channels.
-
-Each time you want to update your bot, you publish it again from within the Power Virtual Agents app itself. Publishing your bot will update the bot across all the channels where you've inserted or connected your bot.
+After you've published your bot to at least one channel, you can connect it to more channels. Remember to publish your bot again after you make any changes to it. Publishing your bot updates it across all the channels it's connected to.
 
 ## Publish the latest bot content
 
-You need to publish the bot at least once before your customers can interact with it or before you can share it with your teammates. After the first publish, you can publish the bot again whenever you'd like your customers to engage with the latest bot content.
+You need to publish your bot at least once before your customers can interact with it or you can share it with your teammates. You must publish the bot again if you update it. If you don't, your customers won't be engaging with the latest content.
 
-1. On the left side pane, select the **Publish** tab.
+1. With your bot open for editing, on the left side pane, select **Publish**.
 
-1. Select **Publish** to make the latest bot content available to your customers.
+1. Select **Publish**, and then confirm, to make the latest content available to your customers.
 
-    :::image type="content" source="media/publication-fundamentals-publish-channels/channel-publish-latest-content.png" alt-text="Publish latest bot content." border="false":::
+    :::image type="content" source="media/publication-fundamentals-publish-channels/channel-publish-latest-content.png" alt-text="Screenshot that shows where to find the Publish button in the bot authoring experience.":::
 
-    The publishing process will take less than a few minutes as it checks for errors in the latest bot content.
+    Publishing can take up to a few minutes.
 
-1. After publishing completes, select the **demo website** link. The link will open a new tab and display a prebuilt demo website where you and your team can interact with the bot. The demo website is useful to gather feedback from stakeholders involved in the bot.
+Test your bot after publishing completes. Select the **demo website** link to open a prebuilt demo website in a new tab. You and your team can interact with the bot here. The demo website is also useful to gather feedback from stakeholders before you roll your bot out to customers.
 
 For details on updating the welcome message and help text on the demo website, go to [Configure the demo website and add the bot to your live website](publication-connect-bot-to-web-channels.md).
 
 > [!TIP]
 > **What's the difference between the test chat and the demo website?**  
-> On the demo website, you can share a URL with members of your team, or other stakeholders who want to try out the bot.  However, the website isn't intended for production use, and you shouldn't use it directly with customers.  
-> You can use the test chat to see whether conversation flows as expected, and to spot any errors during the bot creation process.
+> Use the test chat while you're building your bot to make sure conversation flows as expected and to spot errors.
+> Share the demo website URL with members of your team or other stakeholders who want to try out the bot. The demo website isn't intended for production use. You shouldn't share the URL with customers.  
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

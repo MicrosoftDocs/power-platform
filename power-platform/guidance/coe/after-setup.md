@@ -29,6 +29,9 @@ This article prepares you to upgrade the CoE Starter Kit. It provides guidance o
 > [!NOTE]
 > If you are setting up the CoE Starter Kit for the first time, check out our [setup instructions](setup.md). If you are looking to extend the CoE Starter Kit with your own customizations, refer to our guidance for [extending the CoE Starter Kit](modify-components.md).
 
+>[!IMPORTANT]
+> We recommend upgrading the CoE Starter Kit solution at least **every three months**. With the fast pace of change for Microsoft Power Platform, leaving updates longer than three months could result in unexpected issues when you do update.
+
 ## How often new versions are released
 
 A new version of the CoE Starter Kit is released monthly, usually in the first full week of each month. This release cadence is important to know so you can review, organize, plan, and test the latest version.

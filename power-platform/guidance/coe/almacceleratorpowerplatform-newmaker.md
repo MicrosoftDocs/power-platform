@@ -64,7 +64,7 @@ The below table shows how the **User Labels** are configured for the **maker** u
 
 1. When prompted to create connections and grant consent, create the necessary connections or accept the consent dialog.
 
-1. If prompted to create an HTTP with Azure AD connection, enter **https&semi;\/\/graph&period;microsoft&period;com** for both the **Base Resource URL** and **Azure AD Resource URI**.
+1. If prompted to create an HTTP with Azure AD connection, enter **https://graph.microsoft.com** for both the **Base Resource URL** and **Azure AD Resource URI**.
 
 1. Select **Create** for each connection when prompted.
 

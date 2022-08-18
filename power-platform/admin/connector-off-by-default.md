@@ -1,6 +1,6 @@
 ﻿---
 title: "Disable new connectors by default | MicrosoftDocs"
-description: Describes how new connectors are now disabled by default in GCC High and DoD.
+description: Describes how new connectors are disabled by default in GCC High and DoD.
 
 ms.component: pa-admin
 ms.topic: conceptual
@@ -24,7 +24,7 @@ search.app:
 
 All new connectors that are introduced by Microsoft and partners to the Power Platform will be disabled by default for customers operating in the following US government clouds: GCC High and DoD. Administrators will be able to review these new connectors before  authorizing their use across the organization in the **Data policy** page of the Power Platform admin center. Connectors already published in GCC High and DoD will remain enabled.
 
-Power Platform and third parties continuously release new connectors and administrators can set a [default classification](dlp-connector-classification.md#default-data-group-for-new-connectors) for those connectors via its DLP policies. Depending on how these DLP policies are configured within the customer's tenant, new connectors can unintentionally become available to makers in certain environments without administrators approving their use. Such occurrences must be avoided in US government clouds where strict compliance is mandated. Administrators can now rely on this safeguard mechanism in GCC High and DoD to better control the use of connectors.
+Power Platform and third parties continuously release new connectors and administrators can set a [default classification](dlp-connector-classification.md#default-data-group-for-new-connectors) for those connectors via its DLP policies. Depending on how these DLP policies are configured within the customer's tenant, new connectors can unintentionally become available to makers in certain environments without administrators approving their use. Such occurrences must be avoided in US government clouds where strict compliance is mandated. Administrators can rely on this safeguard mechanism in GCC High and DoD to better control the use of connectors.
 
 > [!NOTE]
 > - Custom connectors can't be disabled via this new DLP control.

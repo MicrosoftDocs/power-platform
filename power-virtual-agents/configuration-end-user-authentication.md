@@ -2,7 +2,7 @@
 title: Configure user authentication
 description: Configure authentication with your identity provider to enable users to sign in when having a bot conversation.
 keywords: "Authentication, IdP, PVA, AAD"
-ms.date: 04/01/2022
+ms.date: 06/23/2022
 ms.topic: article
 author: iaanw
 ms.author: iawilt
@@ -40,7 +40,7 @@ Power Virtual Agents supports the following authentication providers:
 
 ## Prerequisites
 
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations.md)]
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents.md).
 
 ## Choose an authentication option
 
@@ -65,7 +65,9 @@ No authentication is the standard configuration for bots that aren't created fro
 ### Only for Teams
 
 > [!IMPORTANT]
-> Only the Teams channel is available with this option. All other channels are disabled, and you'll receive a warning if you try to add any.
+> When the **Only for Teams** option is selected, all channels except the Teams channel will be disabled.
+>
+> Additionally, the **Only for Teams** option is not available if your bot is integrated with [Dynamics 365 Customer Service](configuration-hand-off-omnichannel.md).
 
 Teams authentication, optimized for the Teams channel, is the standard configuration for bots that are created from Teams. It automatically sets up Azure AD authentication for Teams without the need for any manual configuration. Since Teams authentication itself identifies the user, users aren't prompted to sign in while they're in Teams, unless your bot needs expanded scope.
 
@@ -100,9 +102,11 @@ Once the configuration is saved, make sure to publish your bot so the changes ta
 
 ## Required user sign in and bot sharing
 
-**Require users to sign in** determines whether a user needs to sign in before talking with the bot. It's available only with **Only for Teams** and **Manual** authentication. We highly recommended that you turn on this setting when your bot needs to access sensitive or restricted information.
+**Require users to sign in** determines whether a user needs to sign in before talking with the bot. We highly recommended that you turn on this setting when your bot needs to access sensitive or restricted information.
 
 :::image type="content" source="media/configuration-end-user-authentication/auth-require-user-to-sign-in.png" alt-text="Screenshot of the Authentication pane showing the Require user to sign in option.":::
+
+This option is not available when the **No authentication** option is chosen.
 
 If you turn off this option, your bot won't ask users to sign in until it encounters a topic that requires them to.
 

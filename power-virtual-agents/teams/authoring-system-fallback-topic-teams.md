@@ -27,9 +27,11 @@ In some scenarios, you might want to customize how the bot behaves when user inp
 
 You customize these fallback behaviors by adding the system **Fallback** topic. You can also customize the **Fallback** topic, similar to most other system topics.
 
+This topic also includes the unique variable `UnrecognizedTriggerPhrase` to capture the unrecognized input. In some scenarios, you might want to customize how the bot behaves when user input doesn't trigger any topic.
+
 ## Prerequisites
 
-- [!INCLUDE [Medical and emergency usage](includes/pva-usage-limitations-teams.md)]
+- [Learn more about what you can do with Power Virtual Agents](fundamentals-what-is-power-virtual-agents-teams.md).
 
 ## Add a system fallback topic
 
