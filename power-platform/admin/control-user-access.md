@@ -59,6 +59,7 @@ Note the following about security groups:
 
 > [!NOTE]
 > All licensed users, whether or not they are members of the security groups, must be assigned security roles to access data in the environments. You assign the security roles in the web application.  If users don’t have a security role, they will get a data access denied error when trying to run an app. Users can't access environments until they are assigned at least one security role for that environment. For more information, see [Configure environment security](database-security.md).
+> Automatic user assignment to an environment is not supported for trial environments. Users must for trial environments must be assigned manually. 
   
 ## Create a security group and add members to the security group  
 
