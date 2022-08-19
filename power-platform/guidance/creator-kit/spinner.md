@@ -18,6 +18,7 @@ search.app:
 contributors:
   - tapanm-msft
   - mehdis-msft
+  - Ramakrishnan24689
 ---
 
 # :::no-loc text="Spinner"::: control
@@ -26,35 +27,33 @@ contributors:
 
 A control used to create a loading experience.
 
+> [!NOTE]
+> Full documentation and source code found in the [GitHub code components repository](https://github.com/microsoft/powercat-code-components/tree/main/Spinner).
+
 :::image type="content" source="media/spinner.png" alt-text="Spinner control.":::
 
 ## Description
 
-A Spinner is an outline of a circle that animates around itself indicating to the user that things are processing. It appears when the process is unsure how long a task will take, making it the indeterminate version of a [ProgressIndicator control](progressindicator.md).<!--note from editor: Very nice!-->
+A Spinner is an outline of a circle that animates around itself indicating to the user that things are processing. It appears when the process is unsure how long a task will take, making it the indeterminate version of a [ProgressIndicator](progressindicator.md) control.<!--note from editor: Very nice!-->
 
 Spinners can vary in size, and can be located inline with content or centered. Spinners generally appear after an action is being processed or committed. They're subtle and generally don't take up much space, but are transitions from the completed task.
 
-This canvas component mimics the style and behavior of the [Fluent UI Spinner control](https://developer.microsoft.com/fluentui#/controls/web/spinner).
-
-[View the component in the Creator Kit GitHub repository](https://github.com/microsoft/powercat-creator-kit/tree/main/CreatorKitCore/SolutionPackage/CanvasApps/cat_powercatcomponentlibrary_0be3a_DocumentUri_msapp_src).
-
-## Limitations
-
-This canvas component can only be used in canvas apps and custom pages.
+This code component provides a wrapper around the [Fluent UI Spinner](https://developer.microsoft.com/en-us/fluentui#/controls/web/spinner) control for use in canvas & custom pages.
 
 ## Key properties
 
 | Property | Description |
 | -------- | ----------- |
-| `AnimatedGIF` | A text field that renders the image displayed in the spinner, such as a URL to a publicly hosted image   |
-| `Text` | Text displayed under the Spinner control |
-| `IsLoading` | Whether the spinner control is visible |
+| `Label` | Optional label for spinner.
+| `SpinnerSize` | The size of spinner to be rendered. Choices: `xSmall`, `Small`, `Medium`, `Large` |
+| `LabelPosition` | Optional placing of spinner label to a particular position. Choices: `Bottom`, `Top`, `Left`, `Right` |
 
-## Style properties
+### Style properties
 
 | Property | Description |
 | -------- | ----------- |
-| `Theme` | The Theme JSON object |
+| `Theme` | Accepts a JSON string that is generated using [Fluent UI Theme Designer (windows.net)](https://fabricweb.z5.web.core.windows.net/pr-deploy-site/refs/heads/master/theming-designer/). Leaving this blank will use the default theme defined by Power Apps. |
+| `AccessibilityLabel` | Screen reader aria-label |
 
 ## Configuring spinner loading behavior
 
@@ -72,6 +71,11 @@ UpdateContext({ var_showLoader: false });
 ```
 
 Then, provide the `var_showLoader` variable as the value for the `IsLoading` property of the spinner.
+
+
+## Limitations
+
+This code component can only be used in canvas apps and custom pages.
 
 ## Best practices
 

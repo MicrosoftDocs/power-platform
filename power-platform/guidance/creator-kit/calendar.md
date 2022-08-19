@@ -36,8 +36,8 @@ A control used to input date values.
 
 This code component provides a wrapper around the [Fluent UI Calendar](https://developer.microsoft.com/en-us/fluentui#/controls/web/calendar) control bound to a button for use in canvas & custom pages.
 
-
-## Key properties
+## Properties
+### Key properties
 
 | Property | Description |
 | -------- | ----------- |
@@ -67,6 +67,8 @@ This code component provides a wrapper around the [Fluent UI Calendar](https://d
 | Property | Description |
 | -------- | ----------- |
 | `InputEvent` | An event to send to the control. E.g. `SetFocus`. See below. |
+
+## Behavior 
 
 ### Using OnChange
 
