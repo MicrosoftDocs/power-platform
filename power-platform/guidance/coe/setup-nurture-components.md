@@ -38,8 +38,56 @@ The core components solution is required for the nurture components solution to 
 
 The video hub has two apps:
 
-1. Video hub - admin: this is a model driven app, designed for administrators to add content, moderate comments and curate shared playlists.
+1. Video hub - admin: a model driven app, designed for administrators to add content, moderate comments and curate shared playlists.
 1. Video hub: this is the canvas app that all users access.
+
+### Manage content in the Video hub - admin app
+
+#### Video content
+
+Administrators manage video content in the admin app. The following table describes the schema for video content:
+
+|Column|Column type|Description|
+|------|-----|------|
+|Name| Text | The title of the video, for example 'Building responsive Power Apps'|
+|Owner| User| The creator of the record|
+|Content description| Text | Detailed description of the video |
+| Content URL | Text (URL) | The URL to the video | 
+| View count | Number | This is updated via the video hub canvas app. When a user watches a video, the view count is updated |
+| Power Platform product | Choice | Categorizes the video based on Power Platform product |
+| Content category | Choice | Select the type of video; for example: How-to, Success story, Community session |
+
+#### Playlists
+
+Playlists are managed by administrators.  Playlists are curated lists of video content.  Playlists have the following schema:
+
+|Column|Column type|Description|
+|------|-----|------|
+| Name | Text | Represents the display name for the playlist |
+| Owner | User | The creator of the record | 
+| Playlist description | Text | Represents a detailed decription of the playlist |
+| Playlist type | Choice | Represents the playlist type.  Options available are Personal or shared. Shared playlists are visible to all users, whereas private playlists are only visible to the person that created it. **Note** - private playlists are in development. |
+
+Playlists are a curated collection of videos. One playlist has many playlist items, the schema for a playlist item is represented in the following table:
+
+|Column|Column type|Description|
+|------|-----|------|
+| Name | Text | This can be set to any value, it is not used in the video hub canvas app |
+| Playlist | Lookup | This lookup column returns a list of playlists|
+| Community hub content | Lookup| This lookup column returns a list of video content |
+
+#### Comments
+
+Comments are created by users of the video hub canvas app.  Comments are moderated and only visible when an administrator has set the 'Comment status' column value to 'Approved'.
+
+By default, the comment functionality is hidden in the video hub canvas app. This can be updated (see following section).  Comments have the following schema:
+
+|Column|Column type|Description|
+|------|-----|------|
+| Name | Text | Unused in admin app. The name column is populated when comments are created via video hub canvas app|
+| Comment text | Text | Represents the users comment text| 
+| Comment status | Choice | Approved or rejected.  Only approved comments will appear in the video hub canvas app |
+| Community hub content | Lookup | Represents the video related to the comment |
 
 ### Review and enable video hub canvas app features
 
