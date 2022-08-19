@@ -38,14 +38,16 @@ A Spinner is an outline of a circle that animates around itself indicating to th
 
 Spinners can vary in size, and can be located inline with content or centered. Spinners generally appear after an action is being processed or committed. They're subtle and generally don't take up much space, but are transitions from the completed task.
 
-This code component provides a wrapper around the [Fluent UI Spinner](https://developer.microsoft.com/en-us/fluentui#/controls/web/spinner) control for use in canvas & custom pages.
+This code component provides a wrapper around the [Fluent UI Spinner](https://developer.microsoft.com/en-us/fluentui#/controls/web/spinner) control for use in canvas & custom pages. See component documentation for best practices.
 
-## Key properties
+## Properties
+### Key properties
 
 | Property | Description |
 | -------- | ----------- |
 | `Label` | Optional label for spinner.
 | `SpinnerSize` | The size of spinner to be rendered. Choices: `xSmall`, `Small`, `Medium`, `Large` |
+| `SpinnerAlignment` | The alignment of the spinner within the control boundaries. Choices: `Left`, `Center`, `Right` |
 | `LabelPosition` | Optional placing of spinner label to a particular position. Choices: `Bottom`, `Top`, `Left`, `Right` |
 
 ### Style properties
@@ -55,7 +57,8 @@ This code component provides a wrapper around the [Fluent UI Spinner](https://de
 | `Theme` | Accepts a JSON string that is generated using [Fluent UI Theme Designer (windows.net)](https://fabricweb.z5.web.core.windows.net/pr-deploy-site/refs/heads/master/theming-designer/). Leaving this blank will use the default theme defined by Power Apps. |
 | `AccessibilityLabel` | Screen reader aria-label |
 
-## Configuring spinner loading behavior
+## Behavior
+### Display the spinner when loading
 
 Make the spinner control visible when a process begins, then hide it when the process is complete.
 
