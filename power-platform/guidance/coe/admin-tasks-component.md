@@ -107,7 +107,7 @@ Focus on how many tasks are ad-hoc, or reactive. By displaying the percentage of
 Aggregates duration for all tasks, grouped by the frequency, and provides insight into:
 
 1. **Experience levels** required. Illustrates the experience required across all tasks, which can be useful in estimating training requirements for your existing team.
-1. **Core & peripheral** personas.  Illustrating how many tasks are assigned to the different personas in your core administration team, and how many require other teams to complete.  For example: creating an environment, which could require the Power Platform administrator, and an Azure AD administrator to create the environment and create security groups for managing access.
+1. **Core & peripheral** personas.  Illustrating how many tasks are assigned to the different personas in your core administration team, and how many require other teams to complete.  For example: Create an environment, which could require the Power Platform administrator, and an Azure AD administrator to create the environment and create security groups for managing access.
 
 #### Task overview - experience, persona and categorization
 
