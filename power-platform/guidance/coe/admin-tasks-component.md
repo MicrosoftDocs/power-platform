@@ -20,17 +20,16 @@ search.app:
 
 # Use Power Platform Administration Planning component
 
-Organizations have unique requirements for governance and administration of Power Platform, making standardized guidance for planning administration, and best practices for customers hard.  
+Organizations have unique requirements for governance and administration of Microsoft Power Platform. The Power Platform Administration Planning solution provides insight to your administrative tasks, and is useful if:
 
-The Power Platform Administration Planning solution aims to help provide insights to organizations to help plan and analyze if:
+1. Your organization is setting up an administration team.  Knowing which administrative tasks need to be performed, the frequency, how long they take & what level of expertise is required is a common challenge.  The solution helps you get started by providing over 70 common administrative tasks across the Microsoft Power Platform.
 
-1. Your organization is setting up an administration team.  Knowing which administrative tasks need to be performed, the frequency, how long they take & what level of expertise is required is a common challenge.
-1. Your organization already administrates Power Platform. Having access to insights about:
-    1. Where you focus time (for example: reporting, security, configuration). 
+1. Your organization already administrates Power Platform. The solution provides insights over:
+    1. Where your team focuses time (for example: reporting, security, configuration).
     1. Understanding how reactive / proactive your team is.
-    1. The effects that automation and outsourcing have (or can have) on the team workload
-
-Help your team mature.
+    1. The effects that automation and outsourcing have (or can have) on the team workload.
+    1. What level of experience is required to complete administrative tasks.
+    1. How many tasks rely other teams and departments.
 
 ## What is the Power Platform Administration Planning component?
 
@@ -83,22 +82,37 @@ If you want to start by adding your own tasks, the table below describes the fie
 
 ### How to use the Power BI dashboard
 
-The dashboard is structured in a way to help you focus on what you do, how reactive your team is and the impact that automation and outsourcing have on overall efficiency.
+The dashboard is structured in a way to help you focus on what you do, how reactive your team is and the effect that automation and outsourcing have on overall efficiency.
 
 #### Team, outsourcing and automation
 
 ![Team, outsourcing and automation](media\PPAP-TeamOutsourcingAndAutomation.png "Team, outsourcing and automation dashboard section")
 
-This section aggregates administrative task data and indicates:
+Aggregated administrative task data illustrating:
 
-1. **Team workload**: enter the number of team members, and based on aggregated task data (duration, anticipated number of iterations & frequency) the number of hours required per day are calculated.  This is then divided by the number of team members, and 80% of an 8 hour working day to estimate if you have enough people in your team.
-1. **Outsourcing**: this illustrates the impact that outsourcing is having on your overall workload.  The number of tasks, expertise required and duration (hours) are used to display this.
-1. **Automation**: this illustrates how much time is being saved, what this translates into resources and the expertise required.
+1. **Team workload**: enter the number of team members, and based on aggregated task data (duration, anticipated number of iterations & frequency) the number of hours required per day are calculated. It's then divided by the number of team members, and 80% of an 8 hour working day to estimate if you have enough people in your team.
+1. **Outsourcing**: illustrates the effect that outsourcing is having on your overall workload.  The number of tasks, expertise required and duration (hours) are displayed.
+1. **Automation**: illustrates how much time is being saved, how it translates into resources and the expertise required.
 
 #### Task breakdown - proactive & reactive balance
 
 ![Task breakdown - proactive & reactive balance](media\PPAP-TaskBreakdownProactiveAndReactiveBalance.png "Task breakdown - proactive and reactive balance")
 
-This section helps focus on how many tasks are ad-hoc, or reactive. By displaying the percentage of tasks that have been categorized as ad-hoc and providing a filtered list, it encourages you to look for automation, outsourcing or innovation opportunities.
+Focus on how many tasks are ad-hoc, or reactive. By displaying the percentage of tasks that have been categorized as ad-hoc and providing a filtered list, it encourages you to look for automation, outsourcing or innovation opportunities.
+
+#### Task breakdown - experience & personas
+
+![Task breakdown - experience & personas](media\PPAP-ExperienceAndPersonas.png "Task breakdown - experience and personas")
+
+Aggregates duration for all tasks, grouped by the frequency, and provides insight into:
+
+1. **Experience levels** required. Illustrates the experience required across all tasks, which can be useful in estimating training requirements for your existing team.
+1. **Core & peripheral** personas.  Illustrating how many tasks are assigned to the different personas in your core administration team, and how many require other teams to complete.  For example: creating an environment, which could require the Power Platform administrator, and an Azure AD administrator to create the environment and create security groups for managing access.
+
+#### Task overview - experience, persona and categorization
+
+![Task breakdown - experience, persona and categorization](media/PPAP-TaskOverviewPersonaAndCategorization.png "Task breakdown - experience, persona and categorization")
+
+Tasks are categorized. Useful as it illustrates where your team spends the most time. Tasks have a primary and secondary category to provide further insight, for example: selecting 'Reporting' refines a list of tasks and illustrates how much time is spent, and in which area, example: 'Capacity' or 'Performance'.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
