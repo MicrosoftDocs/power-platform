@@ -22,8 +22,6 @@ contributors:
 
 # :::no-loc text="DetailsList"::: control
 
-[This article is pre-release documentation and is subject to change.]
-
 A control used to display a set of data.
 
 :::image type="content" source="media/details-list.png" alt-text="DetailsList control.":::

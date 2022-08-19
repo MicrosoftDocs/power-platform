@@ -22,8 +22,6 @@ contributors:
 
 # :::no-loc text="CommandBar"::: control
 
-[This article is pre-release documentation and is subject to change.]
-
 A control used to input commands.
 
 :::image type="content" source="media/command-bar.png" alt-text="CommandBar control.":::

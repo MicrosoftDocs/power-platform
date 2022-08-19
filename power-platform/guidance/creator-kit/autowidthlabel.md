@@ -22,8 +22,6 @@ contributors:
 
 # :::no-loc text="AutoWidthLabel"::: control
 
-[This article is pre-release documentation and is subject to change.]
-
 A control used to display data.
 
 :::image type="content" source="media/autowidthlabel.png" alt-text="Auto width label.":::

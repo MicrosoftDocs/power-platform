@@ -22,8 +22,6 @@ contributors:
 
 # :::no-loc text="Elevation"::: control
 
-[This article is pre-release documentation and is subject to change.]
-
 A control used to construct cards and flyout menus.
 
 :::image type="content" source="media/elevation.png" alt-text="Elevation control.":::
