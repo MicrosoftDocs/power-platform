@@ -314,12 +314,16 @@
         href: creator-kit/detailslist.md
       - name: Pickers
         items:
+        - name: Calendar
+          href: creator-kit/calendar.md
         - name: TagsPicker
           href: creator-kit/picker.md
         - name: TagList
           href: creator-kit/taglist.md
       - name: Progress
         items:
+        - name: Shimmer
+          href: creator-kit/shimmer.md
         - name: Spinner
           href: creator-kit/spinner.md
         - name: ProgressIndicator
