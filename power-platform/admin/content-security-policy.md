@@ -84,7 +84,7 @@ The effective headers would be:
 
 ### Example 2
 
-![CSP example 2](media/csp-example-1.png "CSP example 2")
+![CSP example 2](media/csp-example-2.png "CSP example 2")
 
 In the above example:
 - Reporting is turned on
