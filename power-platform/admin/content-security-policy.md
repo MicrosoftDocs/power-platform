@@ -56,9 +56,43 @@ The final section is "Configure directives". This section allows you to control 
 
 ![Configure CSP directives](media/csp-directives.png "Configure CSP directives")
 
-Leaving the default directive toggled on uses the default value specified above. Turning off the toggle allows admins to specify custom values for the directive. The example below sets custom values for `frame-ancestors`. The directive would be set to `frame-ancestors: https://www.foo.com https://www.bar.com` in this example, meaning the app could be hosted in `https://www.foo.com` and `https://www.bar.com`, but not in other origins.
+Leaving the default directive toggled on uses the default value specified above. Turning off the toggle allows admins to specify custom values for the directive. The example below sets custom values for `frame-ancestors`. The directive would be set to `frame-ancestors: https://www.foo.com https://www.bar.com` in this example, meaning the app could be hosted in `https://www.foo.com` and `https://www.bar.com`, but not in other origins. Use the Add button to add entries to the list and the delete icon to remove them.
 
 ![Setting custom CSP directives](media/csp-default-directive.png "Setting custom CSP directives")
+
+**Notes:**
+- Turning off the default directive does not send the default value as part of the response. For example, using custom `frame-ancestors` would not send `'self'` as part of the directive. Admins would need to manually add `'self'` to the list.
+- Turning off the default directive and saving with an empty list *turns the directive off completely*, i.e. does not send it as part of the response.
+
+### Examples
+
+Let's take a look at a couple examples of CSP configuration:
+
+![CSP example 1](media/csp-example-1.png "CSP example 1")
+
+In the above example:
+- Reporting is turned off
+- Model-driven enforcement is enabled
+  - `frame-ancestors` is customized to `https://www.foo.com` and `https://www.bar.com`
+- Canvas enforcement is disabled
+
+The effective headers would be:
+- Model-driven apps: `Content-Security-Policy: script-src * 'unsafe-inline' 'unsafe-eval'; worker-src 'self' blob:; style-src * 'unsafe-inline'; font-src * data:; frame-ancestors https://www.foo.com https://www.bar.com;`
+- Canvas apps: CSP header would not be sent
+
+![CSP example 2](media/csp-example-1.png "CSP example 2")
+
+In the above example:
+- Reporting is turned on
+  - Reporting endpoint is set to `https://www.mysite.com/myreportingendpoint`
+- Model-driven enforcement is enabled
+  - `frame-ancestors` is kept as default
+- Canvas enforcement is disabled
+  - `frame-ancestors` is customized to `https://www.baz.com`
+
+The effective CSP values would be:
+- Model-driven apps: `Content-Security-Policy: script-src * 'unsafe-inline' 'unsafe-eval'; worker-src 'self' blob:; style-src * 'unsafe-inline'; font-src * data:; frame-ancestors 'self' report-uri https://www.mysite.com/myreportingendpoint;`
+- Canvas apps: `Content-Security-Policy-Report-Only: script-src * 'unsafe-inline' 'unsafe-eval'; worker-src 'self' blob:; style-src * 'unsafe-inline'; font-src * data:; frame-ancestors https://www.baz.com report-uri https://www.mysite.com/myreportingendpoint;`
 
 ## Organization 
 
