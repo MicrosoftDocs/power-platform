@@ -50,9 +50,11 @@ The "Enable reporting" toggle controls whether model-driven and canvas apps send
 
 Enforcement of CSP is controlled independently for model-driven and canvas apps to provide granular control over policies. Use the Model-driven / Canvas pivot to modify the intended app type.
 
-The "Enforce content security policy" toggle turns on the default settings, as specified above, for the given app type. Turning this toggle on will change the behavior of apps in this environment to adhere to the policy, so it is suggested to enable on a dev/test environment, then enable report-only mode in production before enforcing in production.
+The "Enforce content security policy" toggle turns on the default policy for enforcement, as specified above, for the given app type. Turning this toggle on will change the behavior of apps in this environment to adhere to the policy, so it is suggested to enable on a dev/test environment, then enable report-only mode in production before enforcing in production.
 
 The final section is "Configure directives". This section allows you to control individual directives within the policy. Currently, only `frame-ancestors` can be customized.
+
+![Configure CSP directives](media/csp-directives.png "Configure CSP directives")
 
 ## Organization 
 
