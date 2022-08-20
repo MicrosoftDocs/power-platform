@@ -60,7 +60,7 @@ Leaving the default directive toggled on uses the default value specified above.
 
 ![Setting custom CSP directives](media/csp-default-directive.png "Setting custom CSP directives")
 
-**Notes:**
+**Important considerations:**
 - Turning off the default directive does not send the default value as part of the response. For example, using custom `frame-ancestors` would not send `'self'` as part of the directive. Admins would need to manually add `'self'` to the list.
 - Turning off the default directive and saving with an empty list *turns the directive off completely*, i.e. does not send it as part of the response.
 
