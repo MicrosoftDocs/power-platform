@@ -46,6 +46,8 @@ To configure CSP, navigate to [PPAC](https://admin.powerplatform.microsoft.com) 
 
 The "Enable reporting" toggle controls whether model-driven and canvas apps send violation reports. Enabling it requires an endpoint to be specified. Violation reports will be sent to this endpoint regardless of whether CSP is enforced or not (using report-only mode if CSP is not enforced).
 
+![Enabling reporting endpoint](media/csp-reporting.png "Enabling reporting endpoint")
+
 Enforcement of CSP is controlled independently for model-driven and canvas apps to provide granular control over policies. Use the Model-driven / Canvas pivot to modify the intended app type.
 
 The "Enforce content security policy" turns on the default settings, as specified above, for the given app type. Turning this toggle on will change the behavior of apps in this environment to adhere to the policy, so it is suggested to enable on a dev/test environment, then enable report-only mode in production before enforcing in production.
