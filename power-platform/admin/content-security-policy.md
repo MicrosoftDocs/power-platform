@@ -52,7 +52,9 @@ The "Enforce content security policy" turns on the default settings, as specifie
 
 The final section is "Configure directives". This section allows you to control individual directives within the policy. Currently, only `frame-ancestors` can be customized.
 
-## Organization settings
+## Organization 
+
+CSP can be configured without using UI by modifying the following organization settings directly:
 
 - [IsContentSecurityPolicyEnabled](/powerapps/developer/data-platform/reference/entities/organization#BKMK_IsContentSecurityPolicyEnabled) controls whether the Content-Security-Policy header is sent in model-driven apps.
 
