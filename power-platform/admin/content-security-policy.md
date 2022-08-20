@@ -68,6 +68,8 @@ Leaving the default directive toggled on uses the default value specified above.
 
 Let's take a look at a couple examples of CSP configuration:
 
+#### Example 1
+
 ![CSP example 1](media/csp-example-1.png "CSP example 1")
 
 In the above example:
@@ -79,6 +81,8 @@ In the above example:
 The effective headers would be:
 - Model-driven apps: `Content-Security-Policy: script-src * 'unsafe-inline' 'unsafe-eval'; worker-src 'self' blob:; style-src * 'unsafe-inline'; font-src * data:; frame-ancestors https://www.foo.com https://www.bar.com;`
 - Canvas apps: CSP header would not be sent
+
+#### Example 2
 
 ![CSP example 2](media/csp-example-1.png "CSP example 2")
 
