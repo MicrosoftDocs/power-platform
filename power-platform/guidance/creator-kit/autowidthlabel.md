@@ -24,28 +24,26 @@ contributors:
 
 A control used to display data.
 
+> [!NOTE]
+> Full documentation and source code found in the [GitHub code components repository](https://github.com/microsoft/powercat-code-components/tree/main/AutoWidthLabel).
+
 :::image type="content" source="media/autowidthlabel.png" alt-text="Auto width label.":::
 
 ## Description
+The behavior of this code component is similar to that of the standard canvas app label, but it expands dynamically in width to accommodate the text and return the new width.
 
-The behavior of this code component is similar to that of the standard canvas app label, but it expands dynamically in width to accommodate the text and return the new width. This functionality is currently not supported in canvas apps.
+Go to [Fluent UI Label control](https://developer.microsoft.com/en-us/fluentui#/controls/web/label) for best practices.
 
-> [!NOTE]
-> Component source code and more information in the [GitHub code components repository](https://github.com/microsoft/powercat-code-components/tree/main/AutoWidthLabel).
-
-## Limitations
-
-This code component can only be used in canvas apps<!--note from editor: Is it okay that above, you say it isn't currently supported by canvas apps?--> and custom pages.
-
-## Key properties
+## Properties
+### Key properties
 
 | Property | Description |
 | -------- | ----------- |
-| `Text` | Data displayed in the label |
-| `AutoWidth` | The new width of the label, based on the text |
+| `Text` | The text value of the label. |
+| `AutoWidth` | (Output) The new width of the label, based on the text. |
 
-## Best practices
+## Limitations
 
-Go to [Fluent UI Label control best practices](https://developer.microsoft.com/en-us/fluentui#/controls/web/label).
+This code component can only be used in canvas apps and custom pages.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
