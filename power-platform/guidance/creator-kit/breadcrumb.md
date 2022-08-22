@@ -44,7 +44,7 @@ This code component provides a wrapper around the [Fluent UI Breadcrumb](https:/
 | `SelectedKey ` | This denotes the key selected. This will be updated via the OnChange event when the user interacts with the control. |
 | `Items` | The action items to render |
 
-### Items table structure
+#### `Items` properties
 
 Each item uses the following schema to visualize data in the component. 
 
