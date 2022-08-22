@@ -23,6 +23,9 @@ contributors:
 
 A component for user input.
 
+> [!NOTE]
+> Full documentation and source code found in the [GitHub code components repository](https://github.com/microsoft/powercat-code-components/tree/main/ResizableTextarea).
+
 :::image type="content" source="media/resizable-textarea.png" alt-text="Resizable text area control.":::
 
 ## Description
@@ -34,36 +37,72 @@ This component allows the user to resize the text area for convenience.
 > [!NOTE]
 > Component source code and more information in the [GitHub code components repository](https://github.com/microsoft/powercat-code-components/tree/main/ResizableTextarea).
 
+## Properties
+
+### Key properties
+
+| Property | Description |
+| -------- | ----------- |
+| `Text` | The text value set in the control. This is the default bound property when used in a model-driven app.
+| `Default` | The default value that the control will have when the control is reset, or the default value is changed. This allows the control to work in a similar way to controls inside canvas app forms. 
+| `Max Length` | The maximum number of characters that can be entered
+| `Hint Text` | The text to display when there is no text value set
+| `Empty Placeholder Text` | The text to display when there is no value, and the control does not have focus. This provides a similar style when the model-driven text control that displays **---** when there is no value populated.
+| `Default Height` | The height to set the text area to initially.If this is not set in a canvas app/custom page, the size will default to the code component height. For model-driven apps, this is required since the form does not provide an initial height.
+| `Default Width` | The width to set the text area to initially. If this is not set in a canvas app/custom page, the size will default to the code component height. For model-driven apps, this is not required, since the default width will be the width of the form column.
+| `Min Height` | The minimum height that the `textarea` can be resized to. Set to zero for no limit.
+| `Max Height` | The maximum height that the `textarea` can be resized to. Set to zero for no limit.
+| `Min Width` | The minimum width that the `textarea` can be resized to. Set to zero for no limit.
+| `Max Width` | The maximum width that the `textarea` can be resized to. Set to zero for no limit.
+| `Allow Resize` | Defines which direction the `textarea` can be resized in. None, Both, Vertical or Horizontal.
+| `Enable Spell Check` | Defines if the `textarea` should be spell checked by the browser or not.
+
+### Output properties
+
+| Property | Description |
+| -------- | ----------- |
+| `Resized Height** (output) - The user adjusted height
+| `Resized Width** (output) - The user adjusted width
+
+### Style Properties
+| `Padding Left` | The padding to add inside the `textarea`.
+
+| `Padding Right` | The padding to add inside the `textarea`.            
+| `Padding Top` | The padding to add inside the `textarea`.
+| `Padding Bottom` | The padding to add inside the `textarea`.
+| `Left Padding Adjustment` | Inside a model driven app, even when the label is hidden there is padding on the left of the code component to hold icons (e.g. lock icon). To correct for this, the width must be reduced by setting the Left Padding Adjustment to 21. When there is also a label, the Left Padding Adjustment must be set to the width of the label.
+| `Render Border Style` | This can be either **Normal** or Centered**.** When set to Normal, the border width will increase inside the text area box, however using **Centered** will center the border around the edge of the text area box. Use Centered to be compatible with the Power Apps **Classic** controls, and normal for model-driven and **Fluent UI** controls.
+| `Accessibility Label` | The aria label
+
+Not all combinations of style/state are implemented by every component. See the [State Dependent Style Properties](https://github.com/microsoft/powercat-code-components/tree/main/ResizableTextarea#state-dependent-style-properties) in the GitHub component documentation.
+
+### Event Properties
+| Property | Description |
+| -------- | ----------- |
+| `Input Event` | Set the Input Event property to a string starting in `SetFocus` to set focus on the control. You must include a random suffix for the event to trigger.
+
+Other properties are the same as the standard [text input control](/power-apps/maker/canvas-apps/controls/control-text-input).
+
+## Behavior
+
+### Setting Focus on the control
+
+When a new dialog is shown, and the default focus should be on the control, an explicit set focus will be needed. 
+
+To make calls to the input event, you can set a context variable that is bound to the Input Event property to a string that starts with `SetFocus` and followed by a random element to ensure that the app detects it as a change.
+
+E.g.
+
+```powerapps-dot
+UpdateContext({ctxResizableTextareaEvent:"SetFocus" & Text(Rand())}));
+```
+
+The context variable `ctxResizableTextareaEvent` would then be bound to the property `Input Event` property.
+
 ## Limitations
 
 This code component can only be used in canvas apps, custom pages, and model-driven apps.
 
-## Key properties
-
-| Property | Description |
-| -------- | ----------- |
-| `Text` | Text value currently populating the control |
-| `Default` | Initial text value of the control |
-| `Default height` | Initial height of the control |
-| `Default width` | Initial width of the control |
-| `Allow resize` | Determines whether resize is available and has options for direction (horizontal, vertical) |
-
-## Additional properties
-
-| Property | Description |
-| -------- | ----------- |
-| `Resized height` | The current value of the control |
-| `Resized width` | The current width of the control |
-| `Min height` | The minimum height the user is allowed to resize to |
-| `Max height` | The maximum height the user is allowed to resize to |
-| `Min width` | The minimum width the user is allowed to resize to |
-| `Max width` | The maximum width the user is allowed to resize to |
-| `Left padding adjustment` | Compensate for padding on the right |
-
-Other properties are the same as the standard [text input control](/power-apps/maker/canvas-apps/controls/control-text-input).
-
-## Best practices
-
-Go to [Fluent UI TextField control best practices](https://developer.microsoft.com/fluentui#/controls/web/textfield).
+See more limitation notes in the [design challenges](https://github.com/microsoft/powercat-code-components/tree/main/ResizableTextarea#design-challenges) section of the GitHub documentation.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
