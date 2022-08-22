@@ -24,40 +24,36 @@ contributors:
 
 A control used to display data.
 
+> [!NOTE]
+> Full documentation and source code found in the [GitHub code components repository](https://github.com/microsoft/powercat-code-components/tree/main/TagList).
+
 :::image type="content" source="media/taglist.png" alt-text="TagList control.":::
 
 ## Description
 
 This code component provides a tag list that provides flexible-width rendering bound to a collection.
 
-> [!NOTE]
-> Component source code and more information in the [GitHub code components repository](https://github.com/microsoft/powercat-code-components/tree/main/TagList).
+## Properties
 
-## Limitations
-
-This code component can only be used in canvas apps and custom pages.
-
-## Key properties
+### Key properties
 
 | Property | Description |
 | -------- | ----------- |
-| `Items` | Table with the items |
+| `SelectedKey` |  The key to select. This will be updated via the **OnChange** event when the user interacts with the control. |
+| `Items` |  The action items to render |
 
-## Items structure
+#### `Items` properties
 
 Each item uses the following schema to visualize data in the component.
 
 | Name | Description |
 | ------ | ----------- |
-| `ItemDisplayName` | The display name of the command, tab, or menu item. |
-| `ItemKey` | The key to use to indicate which item is selected, when adding sub-items. The keys must be unique. |
-| `ItemEnabled` | Set to false if the option is disabled. |
-| `ItemVisible` | Set to false if the option isn't visible. |
-| `ItemChecked` | Set to true if the option is selected (for example, split buttons in a command bar). |
-| `ItemIconName` | The Fluent UI icon to use (for more information, go to [Fluent UI icons](icon.md)). |
-| `ItemIconColor` | The color to render the icon as (for example, named, RGB, or hex value). |
-| `ItemTextColor` | The color of the text inside the tag. |
-| `ItemBackgroundColor` | The color of the tag background. |
+  | `ItemDisplayName` |  The Display Name of the command/tab/menu item |
+  | `ItemKey` |  The key to use to indicate which item is selected, and when adding sub items. The keys must be unique. |
+  | `ItemIconName` |  The Fluent UI icon to use (see [Fluent UI icons](https://developer.microsoft.com/en-us/fluentui#/styles/web/icons)) |
+  | `ItemIconColor` |  The color to render the icon as (e.g. named, rgb or hex value) |
+  | `ItemTextColor` |  The color of the text inside the tag |
+  | `ItemBackgroundColor` |  The color of the tag background |
 
 Example:
 
@@ -93,5 +89,39 @@ Table(
     }
 )
   ```
+
+  ### Style properties
+
+| Name | Description |
+| ------ | ----------- |
+  | `Theme` |  Accepts a JSON string that is generated using [Fluent UI Theme Designer (windows.net)](https://fabricweb.z5.web.core.windows.net/pr-deploy-site/refs/heads/master/theming-designer/). Leaving this blank will use the default theme defined by Power Apps. |
+| `AccessibilityLabel` |  Screen reader aria-label |
+
+  ### Event properties
+
+| Name | Description |
+| ------ | ----------- |
+  | `InputEvent` |  An event to send to the control. E.g. `SetFocus`. See below. |
+
+  ## Behavior
+
+  ### Setting Focus on the control
+
+When a new dialog is shown, and the default focus should be on the control, an explicit set focus will be needed. 
+
+To make calls to the input event, you can set a context variable that is bound to the Input Event property to a string that starts with `SetFocus` and followed by a random element to ensure that the app detects it as a change.
+
+E.g.
+
+```powerapps-dot
+UpdateContext({ctxResizableTextareaEvent:"SetFocus" & Text(Rand())}));
+```
+
+The context variable `ctxResizableTextareaEvent` would then be bound to the property `Input Event` property.
+
+
+  ## Limitations
+
+This code component can only be used in canvas apps and custom pages.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

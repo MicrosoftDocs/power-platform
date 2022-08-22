@@ -23,6 +23,8 @@ contributors:
 
 # :::no-loc text="Spinner"::: control
 
+[This article is pre-release documentation and is subject to change.]
+
 A control used to create a loading experience.
 
 > [!NOTE]
@@ -39,6 +41,7 @@ Spinners can vary in size, and can be located inline with content or centered. S
 This code component provides a wrapper around the [Fluent UI Spinner](https://developer.microsoft.com/en-us/fluentui#/controls/web/spinner) control for use in canvas & custom pages. See component documentation for best practices.
 
 ## Properties
+
 ### Key properties
 
 | Property | Description |
@@ -56,6 +59,7 @@ This code component provides a wrapper around the [Fluent UI Spinner](https://de
 | `AccessibilityLabel` | Screen reader aria-label |
 
 ## Behavior
+
 ### Display the spinner when loading
 
 Make the spinner control visible when a process begins, then hide it when the process is complete.
@@ -77,9 +81,5 @@ Then, provide the `var_showLoader` variable as the value for the `IsLoading` pro
 ## Limitations
 
 This code component can only be used in canvas apps and custom pages.
-
-## Best practices
-
-Go to [Fluent UI Spinner control best practices](https://developer.microsoft.com/fluentui#/controls/web/spinner).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

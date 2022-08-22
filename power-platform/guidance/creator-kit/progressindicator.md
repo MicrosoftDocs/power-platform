@@ -23,6 +23,8 @@ contributors:
 
 # :::no-loc text="ProgressIndicator"::: control
 
+[This article is pre-release documentation and is subject to change.]
+
 A control used to create a loading experience.
 
 > [!NOTE]
