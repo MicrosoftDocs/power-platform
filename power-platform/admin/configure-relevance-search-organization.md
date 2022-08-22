@@ -308,6 +308,10 @@ If **Can enable sync to external search index** is set to **False**, you'll s
 
 ### See also  
 [Search for tables and rows by using Dataverse search](/powerapps/user/relevance-search) <br />
+[Dynamics 365 results in Microsoft Search](/microsoftsearch/manage-dynamics365) 
  
+
+
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -325,7 +325,7 @@ Get-AdminConnector -CreatedBy $deleteDsrUserId | Remove-AdminConnector
 ## Step 8: Delete the user's permissions to shared custom connectors
 
 ### PowerShell cmdlets for app creators
-A user can delete all of their connector role assignments for shared custom connectors with the Remove-ConnectorRoleAssignment function in the [PowerShell cmdlets for app creators](./powerapps-powershell.md):
+A user can delete all of their connector role assignments for shared custom connectors with the **Remove-ConnectorRoleAssignment** function in the [PowerShell cmdlets for app creators](./powerapps-powershell.md):
 
 ```powershell
 Add-PowerAppsAccount
