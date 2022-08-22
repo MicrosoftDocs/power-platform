@@ -219,7 +219,7 @@ Table(
 ```
 
 The result will be a table that looks like the following:  
-![image-20220323115627812](media/README/image-20220323115627812.png)
+![image-20220323115627812](media/details-list-columns-subtext.png)
 
 ## Cell Types
 
@@ -246,7 +246,7 @@ If(Self.EventName="CellAction" && Self.EventColumn="expand",
 This searches for the row that has had the Cell Action invoked on using the index (if no `RecordKey` is set, then the `EventRowKey` will contain the row number), and then toggles the expand value.
 
 This will give the following result:  
-![](media/README/ExpandCollapse.gif)
+![](media/details-list-columns-expand.gif)
 
 ### Tag & Indicator Tag
 
@@ -300,7 +300,7 @@ You could then add the column metadata to add two columns, one displayed as a ta
 ```
 
 This will give the following result:  
-![image-20220323150248449](media/README/image-20220323150248449.png)
+![image-20220323150248449](media//details-list-columns-tags.png)
 
 ### Image & Clickable Image
 
@@ -358,7 +358,7 @@ and the column metadata:
 ```
 
 This would give the result:  
-![image-20220323161817524](media/README/image-20220323161817524.png)
+![image-20220323161817524](media/details-list-columns-image.png)
 
 For the `clickableimage` column,  `OnChange` event can then handle when a user selects (mouse or keyboard) and icon (assuming that it is not disabled) using:
 
@@ -387,11 +387,40 @@ The column metadata for a link is configured as follows:
 ```
 
 This will result in the cell content being rendered as:  
-![image-20220323162653369](media/README/image-20220323162653369.png)
+![image-20220323162653369](media/details-list-columns-link.png)
 
 The `OnChange` event is again fired when the link is clicked, with the `EventColumn` being the name of the column that contains the link, and the `EventRowKey` populated with the column value defined as the `RecordKey` property.
 
-## Sort Events
+### Multi-valued columns
+
+If a column value can has multiple values by setting it to a Table/Collection. This will then render the values as multiple cell values. E.g.:
+
+```powerapps-dot
+ {
+        id: "1",
+        name: "Contoso",
+        tags:["#PowerApps","#PowerPlatform"]
+    },
+```
+
+The column metadata then could be:
+
+```powerapps-dot
+ {
+        ColName: "tags",
+        ColDisplayName: "Tags",
+        ColWidth: 250,
+        ColFirstMultiValueBold :true,
+        ColMultiValueDelimiter:" "
+    }
+```
+
+This would result in the table showing:  
+![image-20220324160725874](media/details-list-columns-multi.png)
+
+## Behavior
+
+### Sort Events
 
 A column is defined as being sortable by setting the `ColSortable` property to true. If the column shows a text value that is different to the sort order required (e.g. a formatted date or status column), then a different sort column can be specified using the `ColSortBy` property.
 
@@ -441,7 +470,7 @@ Manual Sorting is supported outside of the component to allow for custom connect
 
 When the OnChange event is fired after the user clicks on the column header to change the sort, the sort context variables are updated, using the new sort information provided, which causes the input dataset to be re-sorted and the table is updated accordingly.
 
-## Paging
+### Paging
 
 Paging is handled internally by the component, however the buttons to move back/forwards must be created by the hosting app, and events sent to the component.
 
@@ -471,7 +500,7 @@ The number of records label can be set to an expression similar to:
 grid.TotalRecords & " record(s)  " & Text(CountRows(grid.SelectedItems)+0) & " selected" 
 ```
 
-## Input Events
+### Input Events
 
 The `InputEvent` property can be set to one or more of the following:
 
@@ -486,7 +515,7 @@ To ensure that the input event is picked up, it must be sufficed with a random v
 
 See below for more details.
 
-## Selected Items and Row Actions
+### Selected Items and Row Actions
 
 The component supports **Single**, **Multiple** or **None** selection modes.
 
@@ -529,35 +558,6 @@ E.g. If you had a dataset as follows:
 `{RecordKey:1, RecordSelected:true, name:"Row1"}`
 
 To select and select the first row you can set the `InputEvent` to be `"SetFocusOnRowSetSelection"&Text(Rand())` or `"SetSelection"&Text(Rand())`
-
-## Multi-valued columns
-
-If a column value can has multiple values by setting it to a Table/Collection. This will then render the values as multiple cell values. E.g.:
-
-```powerapps-dot
- {
-        id: "1",
-        name: "Contoso",
-        tags:["#PowerApps","#PowerPlatform"]
-    },
-```
-
-The column metadata then could be:
-
-```powerapps-dot
- {
-        ColName: "tags",
-        ColDisplayName: "Tags",
-        ColWidth: 250,
-        ColFirstMultiValueBold :true,
-        ColMultiValueDelimiter:" "
-    }
-```
-
-This would result in the table showing:  
-![image-20220324160725874](media/README/image-20220324160725874.png)
-
-## Behavior
 
 ### Configure "On Change" behavior
 
