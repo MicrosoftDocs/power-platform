@@ -31,9 +31,6 @@ This control renders Fluent UI icons based on the name. You can use it to easily
 
 For a list of icons, go to [Fluent UI icons](https://developer.microsoft.com/fluentui#/styles/web/icons).
 
-> [!NOTE]
-> Component source code and more information in the [GitHub code components repository](https://github.com/microsoft/powercat-code-components/tree/main/Icon).
-
 ## Limitations
 
 This code component can only be used in canvas apps and custom pages.

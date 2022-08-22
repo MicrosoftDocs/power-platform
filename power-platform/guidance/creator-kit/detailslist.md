@@ -92,7 +92,7 @@ These attributes must be available in the data source to enable the related func
 | `ColLabelAbove` | Moves the label above the child cell value if it is shown as a Sub Text column. |
 | `ColMultiValueDelimiter` |  Joins multi value array values together with this delimiter. See below under multi-valued columns. |
 | `ColFirstMultiValueBold` | When showing a multi-valued array value, the first item is shown as bold.
-| `ColInlineLabel` | If set to a string value, then this is used to show a label inside the cell value that could be different to the column name. E.g. ![image-20220322144857658](media/colinlinelabel.png) 
+| `ColInlineLabel` | If set to a string value, then this is used to show a label inside the cell value that could be different to the column name. E.g. <br> ![image-20220322144857658](media/colinlinelabel.png) 
 | `ColHideWhenBlank` | When true, any cell inline label & padding will be hidden if the cell value is blank. |
 | `ColSubTextRow` | When showing multiple cells on a sub text cell, set to the row index. Zero indicates the main cell content row. |
 | `ColAriaTextColumn` | The column that contains the aria description for cells (e.g. icon cells). |

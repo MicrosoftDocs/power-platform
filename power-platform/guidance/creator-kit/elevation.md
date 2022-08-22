@@ -30,9 +30,6 @@ A control used to construct cards and flyout menus.
 
 Fluent UI `Elevation` support with mouse hover events.
 
-> [!NOTE]
-> Component source code and more information in the [GitHub code components repository](https://github.com/microsoft/powercat-code-components/tree/main/Elevation).
-
 ## Limitations
 
 This code component can only be used in canvas apps and custom pages.
