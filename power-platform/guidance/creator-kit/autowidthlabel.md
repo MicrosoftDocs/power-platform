@@ -36,15 +36,29 @@ The behavior of this code component is similar to that of the standard canvas ap
 Go to [Fluent UI Label control](https://developer.microsoft.com/en-us/fluentui#/controls/web/label) for best practices.
 
 ## Properties
+
 ### Key properties
 
 | Property | Description |
 | -------- | ----------- |
 | `Text` | The text value of the label. |
-| `AutoWidth` | (Output) The new width of the label, based on the text. |
+| `AutoWidth` | (Output) The width set by the component to accommodate the text. |
+
+### Style properties
+
+| Property | Description |
+| -------- | ----------- |
+| `Padding Left` | The padding to add inside the label. |
+| `Padding Right` | The padding to add inside the label. |
+| `Padding Top` | The padding to add inside the label. |
+| `Padding Bottom` | The padding to add inside the label. |
+
+Not all combinations of style/state are implemented by every component. See more details in the [state dependent style properties](https://github.com/microsoft/powercat-code-components/blob/main/AutoWidthLabel/README.md#state-dependent-style-properties) section of the GitHub documentation.
 
 ## Limitations
 
 This code component can only be used in canvas apps and custom pages.
+
+See more limitation notes in the [design challenges](https://github.com/microsoft/powercat-code-components/blob/main/AutoWidthLabel/README.md#design-challenges) section of the GitHub documentation.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
