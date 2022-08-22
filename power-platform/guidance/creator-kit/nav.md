@@ -40,7 +40,7 @@ The `Nav` code component allows using the [Fluent UI `Nav` menu component](https
 
 ## Properties
 
-### Key Properties
+### Key properties
 
 | Property | Description |
 | -------- | ----------- |
