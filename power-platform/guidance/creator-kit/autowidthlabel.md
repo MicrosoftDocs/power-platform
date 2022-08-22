@@ -30,6 +30,7 @@ A control used to display data.
 :::image type="content" source="media/autowidthlabel.png" alt-text="Auto width label.":::
 
 ## Description
+
 The behavior of this code component is similar to that of the standard canvas app label, but it expands dynamically in width to accommodate the text and return the new width.
 
 Go to [Fluent UI Label control](https://developer.microsoft.com/en-us/fluentui#/controls/web/label) for best practices.
