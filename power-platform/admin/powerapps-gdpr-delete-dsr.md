@@ -5,7 +5,7 @@ author: jimholtz
 ms.reviewer: paulliew
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/07/2022
+ms.date: 08/22/2022
 ms.subservice: admin
 ms.author: jimholtz
 search.audienceType: 
@@ -308,7 +308,7 @@ A user can delete all of their custom connectors by using the **Remove-Connector
 Add-PowerAppsAccount
 
 #Retrieves all custom connectors for the calling user and deletes them
-Get-Connector -FilterNonCustomConnectors | Remove-ConnectorRoleAssignment
+Get-ConnectionRoleAssignment -FilterNonCustomConnectors | Remove-ConnectorRoleAssignment
 ```
 
 ### PowerShell cmdlets for admins
