@@ -41,7 +41,10 @@ You'll need to download the COE Starter Kit file to install the Administration P
 
    The CoE Starter Kit compressed file contains all solution and non-solution components that make up the CoE Starter Kit.
 
-1. Import the <!--Can we please put the solution name here? I don't know what it is-->solution. (If you're [installing to a production environment](faq.md#installing-a-solution-in-a-production-environment), use the admintaskanalysis_core_x_x_x_xx_managed.zip solution file from the download.)
+>[!IMPORTANT]
+>The solution name contains the version number. In the following step use the **admintaskanalysis_core_x_x_x_xx_managed** zip solution from the download.
+
+1. Import the solution.
 
 The import can take up to 15 minutes to be completed.
 
@@ -68,15 +71,13 @@ If the import job successfully completes, all sample tasks should be present in 
 
 ![Launch the Admin Tasks app](media/Admin-task-app.png "Launch the Admin Tasks app")
 
-By default, all tasks are set as Active.
-
-<!--It's not clear to me whether the sample data is only the list of tasks or also all the rest of the columns filled out with example data too...?-->
+By default, all tasks are set as Active and all task metadata is completed with example values for duration, frequency, expertise, etc.
 
 ## Configure the admin task data
 
-The dashboard and insights this solution provides derive from admin task data that you interact with via the Admin Tasks app. <!--You could add more here if you want. I removed the table as it was redundant with the other page and didn't seem to add significant value here.-->
+The dashboard and insights this solution provides derive from admin task data that you interact with via the Admin Tasks app.  If you are new to administration in Microsoft Power Platform, you should review the tasks that you think you will be performing and update the task metadata where appropriate.  If you are already administrating Microsoft Power Platform, you should review tasks that you perform with the exact data.
 
-Launch the Admin Tasks app to start adding your own tasks or configuring tasks that you [imported from sample data](#importing-sample-admin-task-data). <!--Will it be obvious to them how to find and launch the app after they install the component?-->
+Launch the Admin Tasks app to start adding your own tasks or configuring tasks that you [imported from sample data](#importing-sample-admin-task-data). 
 
 ## Set up the Power BI dashboard
 
