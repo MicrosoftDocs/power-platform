@@ -14,6 +14,8 @@
           href: data-types.md 
         - name: Untyped objects
           href: untyped-object.md
+        - name: Working with JSON
+          href: working-with-json.md
         - name: Imperatives
           href: imperative.md
         - name: Operators
