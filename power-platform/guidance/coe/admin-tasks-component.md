@@ -1,7 +1,7 @@
 ---
 title: "Using the Power Platform Administration Planning tasks component | Microsoft Docs"
 description: "Get insights into the tasks and time involved in administering the Microsoft Power Platform."
-author: stjeffer, joalva
+author: stjeffer, alvarezskinner
 manager: phtopnes
 
 ms.component: pa-admin
@@ -13,15 +13,12 @@ ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app: 
-  - D365CE
   - PowerApps
   - Powerplatform
 ---
 
-<!-- Is the D365CE app there intentionally, or just a leftover? -->
-
 # Use Power Platform Administration Planning component
-<!-- I stole from the blog post to add more explanation here. -->
+
 Behind the scenes, your IT and Center of Excellence team spends time configuring, managing and nurturing the adoption of Microsoft Power Platform. Understanding how that time is spent can help you plan who you need on your team and find the highest-impact opportunities to streamline the administrative effort.
 
 The Power Platform Administration Planning is designed to help you better:
@@ -56,7 +53,8 @@ You can start either by adding your own tasks or by importing a set of example t
 Follow the steps describing how to [set up and configure](setup-admin-tasks-component.md) the Power Platform Administration Planning component.
 
 ## Update the admin task data
-The dashboard and insights this solution provides derive from admin task data that you interact with via the Admin Tasks app. Launch the Admin Tasks app to manage the task list.<!-- Would be good to provide guidance on how often to review and update the data-->
+
+The dashboard and insights this solution provides derive from admin task data that you interact with via the Admin Tasks app. Launch the Admin Tasks app to manage the task list. Try to review task metadata frequently (monthly or quarterly) so that the dashboard accurately represents data.  
 
 The table below describes the fields used to define a task:
 
@@ -69,7 +67,7 @@ The table below describes the fields used to define a task:
 | Outsourced task | Two options (Boolean) | Specifies if the task is outsourced |
 | Automation | Two options (Boolean) | Specifies if the task is automated |
 | Frequency | Choice | Specifies the frequency that the task is performed |
-| Anticipated task iterations | Number | How many times in a year you anticipate performing this task. *This column is populated by a business rule calculating the number of iterations for you based on the Frequency, unless you select 'Ad-hoc'.*<!--I slightly changed this italic line; is it correct?--> |
+| Anticipated task iterations | Number | How many times in a year you anticipate performing this task. *This column is populated by a business rule calculating the number of iterations for you based on the Frequency, unless you select 'Ad-hoc'.*|
 | Duration | Number | Specifies how long the task should take to complete, in minutes |
 | Experience required | Choice | Specifies the level of experience required to complete the task |
 | Core admin persona | Choice | Who in the core team will primarily perform the task (for example: Environment Admin, Product Owner) |
@@ -88,7 +86,7 @@ The dashboard is structured in a way to help you focus on what you do, how react
 
 The first section of the report contains aggregated administrative task data, illustrating:
 
-- **Team workload**: Enter the number of team members <!-- Are you saying they enter it here in the report, not in the model-driven app? -->, and based on aggregated task data (duration, anticipated number of iterations & frequency) the number of hours required per day are calculated. It's then divided by the number of team members, and 80% of an 8 hour working day to estimate if you have enough people in your team.
+- **Team workload**: Enter the number of team members in the dashboard input box, and based on aggregated task data (duration, anticipated number of iterations & frequency) the number of hours required per day are calculated. It's then divided by the number of team members, and 80% of an 8 hour working day to estimate if you have enough people in your team.
 - **Outsourcing**: Illustrates the effect that outsourcing is having on your overall workload.  The number of tasks, expertise required, and duration (hours) are displayed.
 - **Automation**: Illustrates how much time is being saved, how it translates into resources, and the expertise required.
 
@@ -107,10 +105,10 @@ This section of the report aggregates duration for all tasks, grouped by task fr
 - **Experience levels** required. Illustrates the experience required across all tasks, which can be useful in estimating training requirements for your existing team.
 - **Core & peripheral** personas.  Illustrates how many tasks are assigned to the different personas in your core administration team and how many require other teams to complete.  For example, creating an environment could require the Power Platform administrator and an Azure AD administrator to create the environment and security groups for managing access.
 
-### Task overview - experience, persona and categorization
-<!--I don't understand the title of this section. It seems like this is categorization but not persona & experience? -->
+### Task overview - categorization
+
 ![Task breakdown - experience, persona and categorization](media/PPAP-TaskOverviewPersonaAndCategorization.png "Task breakdown - experience, persona and categorization")
 
-Tasks are categorized to show where your team spends the most time. Tasks have a primary and secondary category to provide further insight.
+Tasks are categorized to show where your team spends the most time. Tasks have a primary and secondary category to provide further insight into where your administration team spends their time.  Selecting a category refines a list of tasks to provide further insight.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
