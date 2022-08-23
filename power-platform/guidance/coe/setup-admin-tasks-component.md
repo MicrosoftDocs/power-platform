@@ -13,7 +13,6 @@ ms.reviewer: jimholtz
 search.audienceType: 
   - admin
 search.app: 
-  - D365CE
   - PowerApps
   - Powerplatform
 ---
@@ -77,7 +76,7 @@ By default, all tasks are set as Active and all task metadata is completed with 
 
 The dashboard and insights this solution provides derive from admin task data that you interact with via the Admin Tasks app.  If you are new to administration in Microsoft Power Platform, you should review the tasks that you think you will be performing and update the task metadata where appropriate.  If you are already administrating Microsoft Power Platform, you should review tasks that you perform with the exact data.
 
-Launch the Admin Tasks app to start adding your own tasks or configuring tasks that you [imported from sample data](#importing-sample-admin-task-data). 
+Launch the Admin Tasks app to start adding your own tasks or configuring tasks that you [imported from sample data](#import-sample-admin-task-data).
 
 ## Set up the Power BI dashboard
 

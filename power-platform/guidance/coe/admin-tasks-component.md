@@ -1,7 +1,7 @@
 ---
 title: "Using the Power Platform Administration Planning tasks component | Microsoft Docs"
 description: "Get insights into the tasks and time involved in administering the Microsoft Power Platform."
-author: stjeffer, alvarezskinner
+author: stjeffer
 manager: phtopnes
 
 ms.component: pa-admin
