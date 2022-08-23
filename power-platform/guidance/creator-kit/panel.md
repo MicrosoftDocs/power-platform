@@ -59,13 +59,13 @@ This canvas component mimics the style and behavior of the [Fluent UI Panel cont
 
 ```powerapps-dot
 Table(
-    {
-        Label: "Cancel", 
-        ButtonType:'Microsoft.CoreControls.Button.ButtonType'.Standard 
-    },{
-        Label: "Ok", 
-        ButtonType:'Microsoft.CoreControls.Button.ButtonType'.Primary
-    }
+  {
+    Label: "Cancel",
+    ButtonType: 'Microsoft.CoreControls.Button.ButtonType'.Standard 
+  },{
+    Label: "Ok", 
+    ButtonType: 'Microsoft.CoreControls.Button.ButtonType'.Primary
+  }
 )
 ```
 
