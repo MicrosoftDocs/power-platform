@@ -136,6 +136,8 @@
         href: coe/setup-nurture-components.md
       - name: Set up Innovation Backlog components
         href: coe/setup-innovationbacklog.md
+      - name: Set up Administration planning components
+        href: coe/setup-admin-tasks-component.md
       - name: Set up theming components
         href: coe/setup-theming.md
       - name: Set up ALM Accelerator for Power Platform components
@@ -201,6 +203,8 @@
           href: coe/teams-governance.md  
         - name: Use the Innovation Backlog app
           href: coe/use-innovationbacklog.md 
+        - name: Use the Administration planning components
+          href: coe/admin-tasks-component.md 
         - name: Use the ALM Accelerator for Power Platform
           href: coe/almacceleratorpowerplatform-components.md
           items:
