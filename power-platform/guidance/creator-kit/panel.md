@@ -89,35 +89,32 @@ Table(
 
 ### Configure panel visibility
 
-Make the `Panel` control itself (or the surface it's located within) visible when a Boolean (true/false) type variable changes to true, and assign that variable to the panel's visibility property. After the panel is displayed, you can hide the panel by updating the variable on the reset property, which is triggered when the close icon is selected.
+The `Panel`'s visibility can be toggled with a Boolean (true/false) type variable.
 
-The following is the Power Fx formula to open the dialog in an action formula on another component somewhere in the app (for example, the `OnSelect` property of a button):
+1. Use the following Power Fx formula to display the dialog (e.g., the `OnSelect` property of a button control):
 
-```powerapps-dot
-UpdateContext({ showHideDialog: true })
-```
+    ```powerapps-dot
+    UpdateContext({ showHideDialog: true })
+    ```
 
-The following is the Power Fx formula to close the dialog in the `OnCloseSelect` property of the panel:
+1. Assign the following values to the `Panel`:
 
-```powerapps-dot
-UpdateContext({ showHideDialog: false })
-```
-
-Assign the variable to the `Visible` property of the dialog:
-
-```powerapps-dot
-showHideDialog
-```
+    |Property|Value|
+    |-|-|
+    |`OnCloseSelect`|`UpdateContext({ showHideDialog: false })`|
+    |`Visible`| `showHideDialog` |
 
 ### Configure button actions
 
-In the `OnButtonSelect` property of the panel, provide actions in an `If()` or `Switch()` condition based on the `Self.SelectedButton.Label` text value to define the action. Depending on the action, it might make sense to also close the panel after the action is completed.
+In the `OnButtonSelect` property of the panel, provide actions in an `If()` or `Switch()` condition based on the `Self.SelectedButton.Label` text value to define the action. Depending on the action, it is common to hide the `Panel` after the action is completed.
 
 ```powerapps-dot
-    If( Self.SelectedButton.Label = "Send", 
-        Notify("Email Sent")
-    );
-    UpdateContext({ showHideDialog: false })
+Switch( Self.SelectedButton.Label,
+  "Ok", Notify("The Ok button was pressed.");
+);
+
+// Closes the panel
+UpdateContext({ showHideDialog: false })
 ```
 
 ### Format panel content
