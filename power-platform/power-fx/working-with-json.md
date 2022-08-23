@@ -35,7 +35,7 @@ Power Fx allows makers to read **JSON** into an [Untyped object](untyped-object.
 }
 ```
 
-Each of the fields can be accessed using the dot notation on the **Untyped object** value return from **ParseJSON**.
+Each of the fields can be accessed using the dot notation on the **Untyped object** value returned from **ParseJSON**.
 
 ```powerapps-dot
 Set( untyped, ParseJSON( jsonStringVariable ) );
@@ -58,7 +58,7 @@ As accessing fields on **Untyped objects** is not evaluated when writing the for
 ```powerapps-dot
 Set( myText, Boolean( ParseJSON( "true" ) ) );
 
-Set( myNumber, Boolean( ParseJSON( "123.456" ) ) );
+Set( myNumber, Value( ParseJSON( "123.456" ) ) );
 ```
 
 Finally, **JSON** supports nested records. Converting such **JSON** to **Untyped object** results in nested objects, and the dot notation can be used to traverse the hierarchy.
