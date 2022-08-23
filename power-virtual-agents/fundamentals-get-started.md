@@ -51,9 +51,9 @@ In addition to this guide, you can also [download and use templates to help you 
     :::image type="content" source="media/fundamentals-get-started/new-bot1.png" alt-text="Screenshot of the app-level home page.":::
 
     > [!TIP]
-    > To navigate back to the home page from a bot, select **Power Virtual Agents** in the top menu bar.
+    > To navigate back to the home page from a bot, select **Chatbots** in the side pane.
     >
-    > :::image type="content" source="media/fundamentals-get-started/go-home.png" alt-text="Screenshot of Power Virtual Agents top menu bar.":::
+    > :::image type="content" source="media/fundamentals-get-started/go-home.png" alt-text="Screenshot of Chatbots button in the side pane.":::
 
 1. In the side navigation select **Create**, or select **Home** and select **Create a bot**.
 
