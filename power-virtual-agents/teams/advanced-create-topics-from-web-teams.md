@@ -198,4 +198,4 @@ Suggested topics are added to the **Existing** tab with their status set to **Of
 - [Create and edit topics](authoring-create-edit-topics-teams.md)  
 - [Fundamentals - Publish your bot](publication-fundamentals-publish-channels-teams.md)
 
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
