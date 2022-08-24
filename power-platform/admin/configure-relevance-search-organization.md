@@ -114,7 +114,7 @@ Setting up Dataverse search after enabling it in the **Power Platform admin cent
 
 2. Review the columns that will be searched, the columns that will be displayed, and the filter conditions that will be applied in model-driven Power Apps (see below).
 
-3. Ensure the tables enabled for Dataverse search are included in the model-driven app. Use the Power Apps app designer to verify that the table is included in an app's components. For more information, see [Add or edit model-driven app components](/powerapps/maker/model-driven-apps/add-edit-app-components#add-a-component).
+3. Ensure the tables enabled for Dataverse search are included in the model-driven app. Use the app designer to verify that the table is included in an app's components. For more information, see [Add or edit model-driven app components](/powerapps/maker/model-driven-apps/add-edit-app-components#add-a-component).
 
 ### Select tables for Dataverse search
 
