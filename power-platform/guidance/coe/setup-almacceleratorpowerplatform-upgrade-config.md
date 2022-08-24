@@ -75,3 +75,6 @@ To simplify this process, there's a pipeline template that will automatically sy
 1. Do the following settings: in **SyncFrom** select **Tag** , in **SourceBranchOrTag** enter the tag copied in the previous section (example: **CenterofExcellenceALMAccelerator-May2022**), in  **BranchToCreate** define the name you want, example: update-from-original-repo, in **TargetBranch** define the name you want example: **main**, and then select **Run**.
 
 1. After the pipeline runs, a pull request will be created for the **BranchToCreate** into the **TargetBranch** example: Pull request from **update-from-original-repo** to **main**. To commit the changes, approve and complete the pull request by selecting **Repos** and **Pull requests**.
+
+> [!NOTE]
+> If the generated Pull Request has merge conflicts these needs to be resolved to complete the upgrade. A free Azure DevOps extension called **Pull Request Merge Conflict Extension** developed by Microsoft DevLaps can be install from [Visual Studio Market Place](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.conflicts-tab)
