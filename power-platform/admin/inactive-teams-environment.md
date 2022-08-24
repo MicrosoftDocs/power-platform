@@ -4,7 +4,7 @@ description: Admins can configure an automatic cleanup process that removes inac
 author: matapg007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/16/2022
+ms.date: 08/24/2022
 ms.subservice: admin
 ms.author: matgupta 
 ms.reviewer: jimholtz
@@ -23,7 +23,7 @@ Power Platform provides a cleanup mechanism that automatically removes inactive 
 
 The process is automatic. If you no longer need an inactive Dataverse for Teams environment, you don't need to do anything.
 
-Administrators can [set the Teams environment deletion policy](#set-dataverse-for-teams-environment-deletion-policy) to configure how long an environment can be inactive before it's automatically disabled. The policy also determines how long an environment can be disabled before it's automatically deleted.
+Administrators can [set the Teams environment deletion policy](#set-dataverse-for-teams-environment-deletion-policy) to configure how long an environment can be inactive before it's automatically disabled. The permissible range of values are: 15 days, 30 days, 45 days, 60 days, and 90 days of inactivity. The policy also determines how long an environment can be disabled before it's automatically deleted. 
 
 Disabling a Dataverse for Teams environment prevents any meaningful use of the environment and its resources. Apps can't be launched, flows are suspended, chatbots can't be interacted with, and so on.
 
@@ -63,7 +63,7 @@ The following users will receive email notifications on the schedule described i
 
 - The environment's system administrators
 
-    A Dataverse for Teams environment is paired with a team in Microsoft Teams. The owners of the team are automatically granted the System Administrator role for the environment. They receive email notifications and can [trigger activity, re-enable, and recover the environment](#trigger-activity-re-enable-and-recover-a-dataverse-for-teams-environment) in the Power Platform admin center. Team members and guests don't receive the email notifications.
+  A Dataverse for Teams environment is paired with a team in Microsoft Teams. The owners of the team are automatically granted the System Administrator role for the environment. They receive email notifications and can [trigger activity, re-enable, and recover the environment](#trigger-activity-re-enable-and-recover-a-dataverse-for-teams-environment) in the Power Platform admin center. Team members and guests don't receive the email notifications.
 
 - The user who created the environment 
 
@@ -119,6 +119,9 @@ For more information, see [recover environment](recover-environment.md).
 
 Administrators can change the length of time Power Platform waits to disable inactive and delete disabled Dataverse for Teams environments.
 
+> [!NOTE]
+> We are in the process of rolling out this policy setting to all customers.
+
 1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
 2. Select **Policies** > **Environment policies**.
@@ -127,9 +130,15 @@ Administrators can change the length of time Power Platform waits to disable ina
 
 4. In **Delete the disabled environment after**, select the number of days Power Platform should wait to delete a Dataverse for Teams environment that has been disabled.
 
+   > [!NOTE]
+   > Ninety days is the maximum number of days you can set for Power Platform to wait to disable a Dataverse for Teams environment that becomes inactive. The permissible range of values are: 15 days, 30 days, 45 days, 60 days, and 90 days of inactivity.
+
+
 5. Select **Save**.
 
-    :::image type="content" source="media/inactive-environment-deletion-policy.png" alt-text="Screenshot of the Teams environment deletion policy settings in Power Platform admin center.":::
+   :::image type="content" source="media/inactive-environment-deletion-policy.png" alt-text="Screenshot of the Teams environment deletion policy settings in Power Platform admin center.":::
+
+
 
 ### See also
 [Microsoft Dataverse for Teams environments](about-teams-environment.md)<br />
