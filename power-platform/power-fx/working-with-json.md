@@ -110,7 +110,7 @@ If any of the fields in the dot notation expression do not exist, **Blank()** wi
 }
 ```
 
-This **JSON** contains a record with a field named `OrderLines` which contains an array of records. Each record has two field: `Item` and `Quantity`. If the **JSON** is converted into an **Untyped object** using the **ParseJSON** function and set to a variable named `jsonOrder`, we can access the individual order lines in several ways.
+This **JSON** contains a record with a field named `OrderLines` which contains an array of records. Each record has two fields: `Item` and `Quantity`. If the **JSON** is converted into an **Untyped object** using the **ParseJSON** function and set to a variable named `jsonOrder`, we can access the individual order lines in several ways.
 
 ```powerapps-dot
 Set( jsonOrder, ParseJSON( jsonStringVariable ) );
