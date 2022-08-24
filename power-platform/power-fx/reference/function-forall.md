@@ -28,7 +28,7 @@ The **ForAll** function evaluates a formula for all the records in a table. The 
 
 Use the [**Sequence** function](function-sequence.md) with the **ForAll** function to iterate based on a count.
 
-[!INCLUDE [record-scope]../../includes/record-scope.md)]
+[!INCLUDE [record-scope](../../includes/record-scope.md)]
 
 ### Return value
 
