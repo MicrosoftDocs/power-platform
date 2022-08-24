@@ -44,11 +44,9 @@ After the extraction is complete, you'll be shown the suggested topics for furth
 
 ### Extract content from existing webpages
 
-1. Select **Topics** on the side pane.
+1. Select **Topics** on the side pane, then select the **Suggested** tab.
 
     :::image type="content" source="../media/advanced-create-topics-from-web/topics-web-tab.png" alt-text="The Topics menu item on the side pane.":::
-
-1. Go to the **Suggested** tab.
 
 1. If it's the first time you're getting suggestions, the list of suggested topics will be blank. A link to **Get started** or **Learn more** appears instead.
 
