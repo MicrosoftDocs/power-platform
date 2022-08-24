@@ -131,15 +131,15 @@ The original content's structure or hierarchy (such as headings and subheadings)
 
 The Power Virtual Agents AI engine applies a number of steps to the content when it extracts topics and generates suggestions. These steps utilize AI to identify and parse visual and semantic cues from the content.
 
-1. *Document parsing:* the Power Virtual Agents engine identifies and extracts the basic components of the document, such as text and image blocks.
+1. _Document parsing:_ the Power Virtual Agents engine identifies and extracts the basic components of the document, such as text and image blocks.
 
-1. *Layout understanding:* the document is segmented into different zones that consist of the blocks of content.
+1. _Layout understanding:_ the document is segmented into different zones that consist of the blocks of content.
 
-1. *Structure understanding:* the logical structure of the content is analyzed by determining the "role" of each zone (for example, what is actual content and what are headings). Power Virtual Agents creates a hierarchical map or "heading tree" of the content, based on the headings and their associated content.
+1. _Structure understanding:_ the logical structure of the content is analyzed by determining the "role" of each zone (for example, what is actual content and what are headings). Power Virtual Agents creates a hierarchical map or "heading tree" of the content, based on the headings and their associated content.
 
-1. *Augmentation:* the Power Virtual Agents AI engine adds context to the tree by analyzing how the headings relate to each other and their content. At this point, it generates single-turn topics from identified simple "question-and-answer" pairs of headings and content.
+1. _Augmentation:_ the Power Virtual Agents AI engine adds context to the tree by analyzing how the headings relate to each other and their content. At this point, it generates single-turn topics from identified simple "question-and-answer" pairs of headings and content.
 
-1. *Dialog generation:* multi-turn topics are generated from the augmented knowledge tree, depending on whether the topic's intent is a simple answer from a group of many, or if the topic has multiple solutions that are equally different, and are chosen based on a user's input or choices.
+1. _Dialog generation:_ multi-turn topics are generated from the augmented knowledge tree, depending on whether the topic's intent is a simple answer from a group of many, or if the topic has multiple solutions that are equally different, and are chosen based on a user's input or choices.
 
 ## Add suggested topics to an existing bot
 
