@@ -63,9 +63,9 @@ The following users will receive email notifications on the schedule described i
 
 - The environment's system administrators
 
-    A Dataverse for Teams environment is paired with a team in Microsoft Teams. The owners of the team are automatically granted the System Administrator role for the environment. They receive email notifications and can [reactivate and re-enable the environment](#reactivate-and-re-enable-a-dataverse-for-teams-environment) in the Power Platform admin center. Team members and guests don't receive the email notifications.
+    A Dataverse for Teams environment is paired with a team in Microsoft Teams. The owners of the team are automatically granted the System Administrator role for the environment. They receive email notifications and can [trigger activity, re-enable, and recover the environment](#trigger-activity-re-enable-and-recover-a-dataverse-for-teams-environment) in the Power Platform admin center. Team members and guests don't receive the email notifications.
 
-- The user who created the environment
+- The user who created the environment 
 
 Additionally, users and makers are notified on the Environments list page and Environment page when the Dataverse for Teams environment is disabled.
 
@@ -85,25 +85,35 @@ Here are some examples of the types of activities that are included in the measu
 
 Activity includes automated behaviors such as scheduled flow runs. For example, if there's no user, maker, or admin activity in an environment, but it contains a cloud flow that runs daily, then the environment is considered active.
 
-## Reactivate and re-enable a Dataverse for Teams environment
+## Trigger activity, re-enable, and recover a Dataverse for Teams environment
 
-By default, administrators have 30 days to re-enable an environment. If the environment remains disabled for 30 days, it's automatically deleted. Administrators have seven days to [recover a deleted environment](recover-environment.md).
+By default, administrators have 30 days to re-enable an environment. If the environment remains disabled for 30 days, it's automatically deleted. Administrators have seven days to recover a deleted environment. See [Recover a deleted Dataverse for Teams environment](#recover-a-deleted-dataverse-for-teams-environment).
 
-### Reactivate a Dataverse for Teams environment
-
-1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-
-1. Select **Environments**, and then select the inactive Dataverse for Teams environment.
-
-1. On the Environment page, select **Trigger environment activity**.
-
-### Re-enable a Dataverse for Teams environment
+### Trigger activity for an inactive Dataverse for Teams environment 
 
 1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
-1. Select **Environments**, and then select the disabled Dataverse for Teams environment.
+2. Select **Environments**, and then select the inactive Dataverse for Teams environment.
 
-1. On the Environment page, select **Re-enable environment**.
+3. On the Environment page, select **Trigger environment activity**.
+
+### Re-enable a disabled Dataverse for Teams environment
+
+1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+
+2. Select **Environments**, and then select the disabled Dataverse for Teams environment.
+
+3. On the Environment page, select **Re-enable environment**.
+
+### Recover a deleted Dataverse for Teams environment
+
+1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+
+2. Select **Environments**, and then select **Recover deleted environments**.
+
+3. Select an environment to recover, and then select **Recover**.
+
+For more information, see [recover environment](recover-environment.md).
 
 ## Set Dataverse for Teams environment deletion policy
 
