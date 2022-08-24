@@ -58,19 +58,29 @@ The **Suggest topics** capability is built to extract topics from content with a
 Tabular file types require a _two-column format_ where each row represents a question and answer pair: the first column contains the question and the second column contains the answer.
 
 > [!IMPORTANT]
-> You must provide the full URL to the location of the file, including the file extension, as in the example `https://www.microsoft.com/thisisafile.pdf`.
+> You must provide the full URL to the location of the file, including the file extension. For example `https://www.example.com/thisisafile.pdf`.
 
-| Supported file type                  | Requires two-column format |
-| ------------------------------------ | :------------------------: |
-| Comma separated values (.csv)        |            Yes             |
-| Microsoft Excel (.xlsx) <sup>1</sup> |            Yes             |
-| Microsoft Power Point (.pptx)        |                            |
-| Microsoft Word (.docx)               |                            |
-| Plain text (.txt)                    |                            |
-| Portable Document Format (.pdf)      |                            |
-| Tab separated values (.tsv)          |            Yes             |
+| Supported file type             | Requires two-column format |
+| ------------------------------- | :------------------------: |
+| Comma separated values (.csv)   |            Yes             |
+| [Microsoft Excel (.xlsx)][1]    |            Yes             |
+| Microsoft Power Point (.pptx)   |                            |
+| Microsoft Word (.docx)          |                            |
+| Plain text (.txt)               |                            |
+| Portable Document Format (.pdf) |                            |
+| Tab separated values (.tsv)     |            Yes             |
 
-<sup>1</sup> _Only the first sheet is imported._
+[1]: #microsoft-excel
+
+#### Microsoft Excel
+
+When using Microsoft Excel files, only the first sheet is imported.
+
+You can enter more than one question in the first column and they'll all be added as trigger phrases to the topic suggestion.
+
+:::image type="content" source="media/advanced-create-topics-from-web/multiple-triggers-excel.png" alt-text="The Topics menu item on the side pane.":::
+
+:::image type="content" source="media/advanced-create-topics-from-web/multiple-triggers-pva.png" alt-text="The Topics menu item on the side pane.":::
 
 ## Extract content from webpages or online files
 
@@ -82,27 +92,35 @@ After the extraction is complete, you'll be shown the suggested topics for furth
 
     :::image type="content" source="media/advanced-create-topics-from-web/menu-topics.png" alt-text="The Topics menu item on the side pane." border="false":::
 
-1. Go to the **Suggested** tab.
+1. Select **Suggest topics**.
 
-1. If it's the first time you're getting suggestions, the list of suggested topics will be blank. A link to **Get started** or **Learn more** appears instead.
+    :::image type="content" source="media/advanced-create-topics-from-web/suggest-topics-button.png" alt-text="The Topics menu item on the side pane." border="false":::
 
-    :::image type="content" source="media/advanced-create-topics-from-web/suggested-web-get.png" alt-text="An empty Topics page, with a link to Get started or Learn more." border="false":::
+1. Enter a URL for a [supported webpage or online file](#supported-content) from which you want to extract content, and then select **Add**.
 
-1. Select **Get started** or **Suggest topics**.
+    > [!IMPORTANT]
+    > When using an online file, you must provide the full URL to the location of the file, including the file extension. For example `https://www.contoso.com/support.pdf`.
 
-1. Enter links to each [supported webpage or online file](#supported-content) from which you want to extract content, and then select **Add**. If you add a link by mistake, you can remove it by selecting **Delete** :::image type="content" source="media/advanced-create-topics-from-web/delete-suggested-topic.png" alt-text="Delete." border="false":::.
+    :::image type="content" source="media/advanced-create-topics-from-web/suggested-web-wizard.png" alt-text="The Suggest topics page, where you enter URLs to extract suggested topics from.":::
 
-    :::image type="content" source="media/advanced-create-topics-from-web/suggested-web-wizard.png" alt-text="The Suggest topics page, where you enter URLs to extract suggested topics from." border="false":::
+1. Repeat the previous step as many times as you need to add more URLs. We recommend that you add only a few at a time to keep the list of suggestions manageable.
 
-    > [!TIP]
-    > You can add multiple webpages and links to online files, but we recommend that you include only a few at a time to keep the list of suggestions manageable.
+1. If you add a URL by mistake, you can remove it by selecting **Delete** :::image type="content" source="media/advanced-create-topics-from-web/delete-suggested-topic.png" alt-text="Delete." border="false":::.
 
-1. When you're done adding links to webpages and/or online files, select **Start**. The process can take several minutes, depending on the complexity and number of webpages or files you added. The message "Getting your suggestions. This may take several minutes" appears at the top of the screen while the extraction is in progress.
+1. When you're done adding URLs to webpages and/or online files, select **Start**. The process can take several minutes, depending on the complexity and number of webpages or files you added. The message "Getting your suggestions. This may take several minutes" appears at the top of the screen while the extraction is in progress.
 
     :::image type="content" source="media/advanced-create-topics-from-web/suggested-web-wait.png" alt-text="An alert that says Getting your suggestions. This may take several minutes appears at the top of the page.":::
 
     > [!IMPORTANT]
     > You can't add more URLs while the **Suggest topics** command is running.
+
+1. Once extraction is complete, go to the **Suggested** tab. A number of suggestions will appear. These may be either [single-turn or multi-turn topics](#single-turn-and-multi-turn-topic-suggestions).
+
+    :::image type="content" source="media/advanced-create-topics-from-web/suggestion-tab.png" alt-text="An alert that says Getting your suggestions. This may take several minutes appears at the top of the page.":::
+
+1. Review these suggestions to see which ones you want to [add to your bot](#add-suggested-topics-to-an-existing-bot).
+
+## Troubleshoot errors
 
 The tool provides explicit feedback about errors so that you can understand and address any issues. For example, you might be unable to extract content because the site you're referencing is down or it may be gated behind a user login, such as a SharePoint page.
 
@@ -110,18 +128,13 @@ The tool provides explicit feedback about errors so that you can understand and 
 
 :::image type="content" source="media/advanced-create-topics-from-web/suggested-web-error-detail.png" alt-text="A pop-up window that describes the errors encountered when trying to get suggestions from a web page." border="false":::
 
-After you've successfully extracted content, a number of suggestions will appear. These may be either [single-turn or multi-turn topics](#single-turn-and-multi-turn-topic-suggestions). You can now review these suggestions to see which ones you want to add to your bot.
-
-:::image type="content" source="media/advanced-create-topics-from-web/suggested-web-topics.png" alt-text="The Suggested tab on the Topics page lists each topic by name, trigger phrase, source, and date it was received." border="false":::
-
 ## Single-turn and multi-turn topic suggestions
 
 When Power Virtual Agents extracts content, it generates single-turn or multi-turn topic suggestions, based on the structure of the document.
 
 A **single-turn topic** has a trigger phrase that contains a single answer. Topics such as these are typically generated if your online content has simple "question-and-answer" pairs, such as an FAQ page.
 
-A **multi-turn topic** contains multiple bot responses, and is often associated with multiple dialog branches.  
-It provides a guided experience for your bot's users to navigate through a problem and reach a solution. These topics are typically generated when your online content is similar to a troubleshooting page or a reference manual or guidebook.
+A **multi-turn topic** contains multiple bot responses, and is often associated with multiple dialog branches. It provides a guided experience for your bot's users to navigate through a problem and reach a solution. These topics are typically generated when your online content is similar to a troubleshooting page or a reference manual or guidebook.
 
 The original content's structure or hierarchy (such as headings and subheadings) will [contribute to whether a multi-turn or single-turn topic is generated](#how-the-ai-creates-topic-suggestions).
 
